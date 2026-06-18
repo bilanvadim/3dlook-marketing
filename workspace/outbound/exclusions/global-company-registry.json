@@ -1,0 +1,14 @@
+{
+  "last_updated": "2026-04-30",
+  "companies": {
+    "safariland": {"covered_by_profile": null, "status": "existing_customer_excluded"},
+    "burlington-medical": {"covered_by_profile": null, "status": "existing_customer_excluded"},
+    "uk-meds": {"covered_by_profile": null, "status": "existing_customer_excluded"},
+    "yazen": {"covered_by_profile": null, "status": "existing_customer_excluded"},
+    "jims-formal-wear": {"covered_by_profile": null, "status": "existing_customer_excluded"},
+    "generation-tux": {"covered_by_profile": null, "status": "existing_customer_excluded"},
+    "tailoor": {"covered_by_profile": null, "status": "existing_customer_excluded"},
+    "redthread": {"covered_by_profile": null, "status": "existing_customer_excluded"},
+    "healthyr": {"covered_by_profile": null, "status": "existing_customer_excluded"}
+  }
+}
