@@ -28,7 +28,7 @@ seo-planner → [QC + VADIM checkpoint] → seo-writer → seo-editor → seo-pu
 | `draft.md` | Ready for `edit` |
 | `final.md` | Ready for `publish` |
 | `publish-package.md` (not approved) | Waiting for checkpoint 2 |
-| `publish-package.md` (approved) | Done — Вадим публикует |
+| `publish-package.md` (approved) | Done — trigger social posts |
 
 ## Auto-QC points
 
@@ -44,3 +44,15 @@ If QC < 12 → STOP, recommend regeneration.
 **Checkpoint 1 (after plan):** Вадиму — title + outline summary. Approve → write. Edit → replan.
 
 **Checkpoint 2 (after publish):** Вадиму — final text + meta title + meta description + checklist. Approve all → publish. Edit → back to editor or meta.
+
+## После апрува publish-package (Checkpoint 2)
+
+Когда Вадим апрувит `publish-package.md` — автоматически запусти социальный пайплайн:
+
+```
+/post-from-article {slug}
+```
+
+Где `{slug}` — директория статьи (например `2026-05-21-online-pharmacy-bmi-verification`).
+
+Это создаст посты для всех активных профилей LinkedIn на основе статьи и пингует Вадима через Telegram.

@@ -82,18 +82,26 @@
 
 ## 5. Профили в социальных сетях
 
-**Детальная per-profile config: `brand-assets/social-profiles-config.md`** — posts_per_week, product_bias, tone, content_types.
+**Детальная per-profile config: `brand-assets/social-profiles-config.md`** — posts_per_week, product_bias, tone, content_types, length, hashtags.
 
-| Профиль | Owner | Posts/week | Product bias |
-|---------|-------|------------|--------------|
-| 3DLOOK Company (LinkedIn) | Vadim manages | 2 | 70% FX / 10% MT / 20% mixed |
-| Katerina Galich (LinkedIn) | Katerina (CEO) | 1 | 70% FX / 10% MT / 20% mixed |
-| Whitney Cathcart (LinkedIn) | Whitney (CCO) | 1 | 20% FX / 60% MT / 20% mixed |
-| Vadim Bilan (LinkedIn) | Vadim | 1 | 50% FX / 30% MT / 20% mixed |
-| [Profile 4] (LinkedIn) | TBD | 0 (disabled) | TBD |
+**Активные профили (9 штук):**
 
-**Кол-во постов регулируется** — меняй `posts_per_week` в config.
-**Для outbound:** те же 4 профиля используются для рассылок с exclusion registry (см. `workspace/outbound/exclusions/`).
+| profile_id | Платформа | Owner | Product bias |
+|------------|-----------|-------|--------------|
+| `twitter-company` | Twitter / X | Vadim manages | 70% FX / 10% MT / 20% mixed |
+| `instagram-company` | Instagram | Vadim manages | 70% FX / 10% MT / 20% mixed |
+| `facebook-company` | Facebook | Vadim manages | 70% FX / 10% MT / 20% mixed |
+| `linkedin-company` | LinkedIn Company | Vadim manages | 70% FX / 10% MT / 20% mixed |
+| `linkedin-katerina` | LinkedIn Personal | Katerina Galich (CEO) | 70% FX / 10% MT / 20% mixed |
+| `linkedin-vadim` | LinkedIn Personal | Vadim Bilan (Marketing) | 50% FX / 30% MT / 20% mixed |
+| `linkedin-nick` | LinkedIn Personal | Nick Omelchak (BD, USA) | 80% FX / 10% MT / 10% mixed |
+| `linkedin-olena` | LinkedIn Personal | Olena Kudryavtseva (BD, Europe) | 55% FX / 30% MT / 15% mixed |
+| `linkedin-katya` | LinkedIn Personal | Katya Boychuk (BD, Israel) | 75% FX / 10% MT / 15% mixed |
+
+**Вимкнені:** `linkedin-whitney` (Whitney Cathcart, CCO) — posts_per_week: 0.
+
+**Активувати/вимкнути профіль:** зміни `posts_per_week` в `brand-assets/social-profiles-config.md`.
+**Для outbound:** LinkedIn-профілі використовуються для рассылок з exclusion registry (см. `workspace/outbound/exclusions/`).
 
 ---
 
@@ -160,14 +168,17 @@
 
 | Роль | Кто | Что делает |
 |------|-----|------------|
-| Quarterly стратег | `quarterly-strategist` | План тематик на квартал per-product per-profile |
-| Копирайтер | `post-drafter` (заменяет Нигар) | Черновики постов |
+| Копирайтер | `post-drafter` | 1 пост per профиль на основе SEO-статьи |
 | Бриф-мейкер | `visual-brief` | Бриф для дизайнера в Canva |
 | Дизайнер | Человек | Делает визуал |
 | Апрувер | Вадим (через Telegram) | Все чекпоинты |
 | Outbound | пайплайн `outbound/*` | Hypothesis → ... → Campaign analysis |
-| SEO | пайплайн `seo/*` | Keywords → ... → Publish |
+| SEO | пайплайн `seo/*` | Keywords → ... → Publish → trigger social |
 | Brand guardian | `brand-checker` (shared) | Проверка тона / no-go / AI-сигнатур |
+
+**Social workflow:** SEO publish-package апрувлен → `/post-from-article {slug}` → `post-drafter` × N профилей → Telegram апрув → `visual-brief`. Квартальный план для соцсетей не используется.
+
+**Social workspace:** `workspace/social/articles/{slug}/{profile}/post.md`
 
 ---
 
@@ -212,6 +223,8 @@
 | 2026-05-20 | Changed 3DLOOK Company product_bias: 50/30/20 → 70/10/20 (FX/MT/mixed) | Claude / Vadim |
 | 2026-05-22 | Built blog style infrastructure: 9 past-articles saved, blog-style-guide.md created, Assel Sekerova author profile added, section 15 (Blog Authoring Standards) added | Claude / Vadim |
 | 2026-06-09 | Added `editorial-guardrails.md` (11 principles from v2-asselya FAQ-article review cycle with Whitney + Asselya) and referenced it as hard requirement #5 in section 15 — applies to ALL 3DLOOK content, not just blog/SEO | Claude / Vadim |
+| 2026-06-27 | Reworked social pipeline: removed quarterly plan dependency. Posts now created from SEO articles via `/post-from-article`. post-drafter rewritten, seo-runner updated to trigger social after publish-package approval, /weekly-posts deprecated | Claude / Vadim |
+| 2026-06-27 | Expanded social profiles from 4 LinkedIn to 9 profiles across 4 platforms. Added Twitter, Instagram, Facebook company accounts. Added BD profiles: Nick Omelchak (USA), Olena Kudryavtseva (Europe), Katya Boychuk (Israel). Whitney disabled. post-drafter updated with platform-specific rules. | Claude / Vadim |
 
 ---
 
