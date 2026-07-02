@@ -88,15 +88,15 @@
 
 | profile_id | Платформа | Owner | Product bias |
 |------------|-----------|-------|--------------|
-| `twitter-company` | Twitter / X | Vadim manages | 70% FX / 10% MT / 20% mixed |
-| `instagram-company` | Instagram | Vadim manages | 70% FX / 10% MT / 20% mixed |
-| `facebook-company` | Facebook | Vadim manages | 70% FX / 10% MT / 20% mixed |
-| `linkedin-company` | LinkedIn Company | Vadim manages | 70% FX / 10% MT / 20% mixed |
-| `linkedin-katerina` | LinkedIn Personal | Katerina Galich (CEO) | 70% FX / 10% MT / 20% mixed |
-| `linkedin-vadim` | LinkedIn Personal | Vadim Bilan (Marketing) | 50% FX / 30% MT / 20% mixed |
-| `linkedin-nick` | LinkedIn Personal | Nick Omelchak (BD, USA) | 80% FX / 10% MT / 10% mixed |
-| `linkedin-olena` | LinkedIn Personal | Olena Kudryavtseva (BD, Europe) | 55% FX / 30% MT / 15% mixed |
-| `linkedin-katya` | LinkedIn Personal | Katya Boychuk (BD, Israel) | 75% FX / 10% MT / 15% mixed |
+| `twitter-company` | Twitter / X | Vadim manages | 100% FX |
+| `instagram-company` | Instagram | Vadim manages | 100% FX |
+| `facebook-company` | Facebook | Vadim manages | 100% FX |
+| `linkedin-company` | LinkedIn Company | Vadim manages | 100% FX |
+| `linkedin-katerina` | LinkedIn Personal | Katerina Galich (CEO) | 100% FX — UK market only |
+| `linkedin-vadim` | LinkedIn Personal | Vadim Bilan (Marketing) | 100% FX |
+| `linkedin-nick` | LinkedIn Personal | Nick Omelchak (BD, USA) | 100% FX |
+| `linkedin-olena` | LinkedIn Personal | Olena Kudryavtseva (BD, Europe) | 100% FX |
+| `linkedin-katya` | LinkedIn Personal | Katya Boychuk (BD, Israel) | 100% FX |
 
 **Вимкнені:** `linkedin-whitney` (Whitney Cathcart, CCO) — posts_per_week: 0.
 
@@ -225,6 +225,13 @@
 | 2026-06-09 | Added `editorial-guardrails.md` (11 principles from v2-asselya FAQ-article review cycle with Whitney + Asselya) and referenced it as hard requirement #5 in section 15 — applies to ALL 3DLOOK content, not just blog/SEO | Claude / Vadim |
 | 2026-06-27 | Reworked social pipeline: removed quarterly plan dependency. Posts now created from SEO articles via `/post-from-article`. post-drafter rewritten, seo-runner updated to trigger social after publish-package approval, /weekly-posts deprecated | Claude / Vadim |
 | 2026-06-27 | Expanded social profiles from 4 LinkedIn to 9 profiles across 4 platforms. Added Twitter, Instagram, Facebook company accounts. Added BD profiles: Nick Omelchak (USA), Olena Kudryavtseva (Europe), Katya Boychuk (Israel). Whitney disabled. post-drafter updated with platform-specific rules. | Claude / Vadim |
+| 2026-07-01 | linkedin-katerina reworked: product_bias → 100% FitXpress, market → UK only. ICP focus updated to UK telehealth, UK pharmacies, UK insurers, UK employer health. Tone updated with UK regulatory context (MHRA, CQC, NHS). MT topics and US/EU regulatory framing added to avoid list. | Claude / Vadim |
+| 2026-07-01 | All active profiles: product_bias → 100% FitXpress across all 9 profiles. Mobile Tailor and mixed content removed from social pipeline entirely. | Claude / Vadim |
+| 2026-07-01 | Hashtags removed from all profiles. hashtags: none in social-profiles-config.md. Hashtag instructions removed from post-drafter.md (Instagram, Facebook, LinkedIn sections + post template). | Claude / Vadim |
+| 2026-07-01 | /post-from-article now assembles review-digest.md after all drafts — one file per article slug with all posts in read order for copywriter review. Design tips added: post-drafter generates a 3-line design tip (format / visual idea / notes) per post; digest includes it as a blockquote under each post. | Claude / Vadim |
+| 2026-07-01 | post-drafter.md and post-from-article.md rewritten in English. Hard rule added: all output (post text, angle, design tip, CTA) must be in English. | Claude / Vadim |
+| 2026-07-01 | Design tip logic reworked: social post visuals now adapt from the article's OG image direction (publish-package.md section 4). Fields: article visual / format / adaptation / keep. Designer adapts one asset, not creates from scratch. | Claude / Vadim |
+| 2026-07-01 | Post formats defined: text, text + photo, carousel, infographic, lead magnet, poll, screenshot. post-drafter selects format per post with platform constraints (poll: LinkedIn/Twitter only; lead magnet: LinkedIn/Facebook only). | Claude / Vadim |
 
 ---
 

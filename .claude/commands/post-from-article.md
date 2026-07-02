@@ -1,35 +1,79 @@
 ---
-description: Создаёт посты для всех профилей соцсетей на основе готовой SEO-статьи
+description: Creates posts for all active social profiles based on a ready SEO article
 argument-hint: "<article-slug>"
 ---
 
-Создай посты для всех активных профилей на основе статьи $1.
+Create posts for all active profiles based on article $1.
 
-## Шаги
+## Steps
 
-1. **Найди publish-package.md** статьи:
+1. **Find the publish-package.md** for the article:
    `workspace/seo/articles/$1/publish-package.md`
-   Если файл не найден — STOP, сообщи Вадиму.
-   Если `status` в frontmatter не `approved_for_publish` — STOP, сообщи что статья ещё не прошла апрув.
+   If the file is not found — STOP, notify Vadim.
+   If `status` in frontmatter is not `approved_for_publish` — STOP, notify that the article hasn't been approved yet.
 
-2. **Определи список профилей** из CLAUDE.md секция 5. Бери только те, у которых `posts_per_week > 0`.
+2. **Get the profile list** from CLAUDE.md section 5. Only include profiles with `posts_per_week > 0`.
 
-3. **Для каждого профиля последовательно** запусти субагент `post-drafter` с параметрами:
+3. **For each profile sequentially** run the `post-drafter` subagent with:
    - `article_path`: `workspace/seo/articles/$1/publish-package.md`
-   - `profile`: текущий профиль
+   - `profile`: current profile
 
-4. **Если `AUTO_QC_ENABLED=true`** в CLAUDE.md секция 14 — после каждого `post-drafter` запусти `quality-controller`:
+4. **If `AUTO_QC_ENABLED=true`** in CLAUDE.md section 14 — after each `post-drafter` run `quality-controller`:
    ```
    Use quality-controller to evaluate workspace/social/articles/$1/{profile}/post.md.
    Pass: agent_name=post-drafter, track=social, artifact_type=post.
    ```
 
-5. **После всех профилей** — убедись что `workspace/social/articles/$1/manifest.json` обновлён с `ready_for_review: true` и QC scores.
+5. **After all profiles** — confirm that `workspace/social/articles/$1/manifest.json` is updated with `ready_for_review: true` and QC scores.
 
-6. Выведи итог: «Готовы N постов для статьи $1. Telegram-бот отправит Вадиму на апрув».
+6. **Assemble the review digest** — read all finished `post.md` files and write to `workspace/social/articles/$1/review-digest.md`:
 
-## Правила
+   ```markdown
+   # Review digest — {slug}
 
-- **Не запускай post-drafter параллельно** — по одному на профиль, чистый контекст.
-- Если для какого-то профиля `posts_per_week = 0` или профиль задизейблен — пропусти, укажи в финале.
-- `visual-brief` **не запускать** здесь — только после апрува текста Вадимом в Telegram.
+   Article: `workspace/seo/articles/{slug}/publish-package.md`
+   Date: {YYYY-MM-DD}
+   Profiles: N
+
+   ---
+
+   ## twitter-company
+
+   {full post text}
+
+   **CTA:** ...
+
+   > **Design tip**
+   > Article visual: ...
+   > Format: [text | text + photo | carousel | infographic | lead magnet | poll | screenshot]
+   > Adaptation: ...
+   > Keep: ...
+
+   ---
+
+   ## {profile}
+
+   {full post text}
+
+   **CTA:** ...
+
+   > **Design tip**
+   > Article visual: ...
+   > Format: [text | text + photo | carousel | infographic | lead magnet | poll | screenshot]
+   > Adaptation: ...
+   > Keep: ...
+
+   ---
+   ```
+
+   Order: company accounts first (twitter → instagram → facebook → linkedin-company), then personal LinkedIn alphabetically.
+   Include only profiles with a finished `post.md`.
+   Copy the design tip verbatim from the `### Design tip` block in each `post.md`.
+
+7. Report: "N posts ready for article $1. Digest: `workspace/social/articles/$1/review-digest.md`. Telegram bot will send to Vadim for approval."
+
+## Rules
+
+- **Do not run post-drafter in parallel** — one profile at a time, clean context.
+- If a profile has `posts_per_week = 0` or is disabled — skip it, note it in the final report.
+- `visual-brief` **is not triggered here** — only after Vadim approves the text in Telegram.
