@@ -1,7 +1,7 @@
 ---
 track: seo
 product: fitxpress
-status: ready_for_vadim_review
+status: approved_for_publish
 article_slug: clinical-trial-anthropometric-measurement-software-obesity-trials
 target_url: https://3dlook.ai/content-hub/clinical-trial-anthropometric-measurement-software-obesity-trials/
 publish_type: new_post (no existing live URL for this topic)

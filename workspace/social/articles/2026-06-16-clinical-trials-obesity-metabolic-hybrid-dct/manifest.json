@@ -1,0 +1,106 @@
+{
+  "article_slug": "2026-06-16-clinical-trials-obesity-metabolic-hybrid-dct",
+  "article_path": "workspace/seo/articles/2026-06-16-clinical-trials-obesity-metabolic-hybrid-dct/v3/publish-package.md",
+  "product": "fitxpress",
+  "created": "2026-07-05",
+  "drafts": [
+    {
+      "profile": "twitter-company",
+      "file": "workspace/social/articles/2026-06-16-clinical-trials-obesity-metabolic-hybrid-dct/twitter-company/post.md",
+      "status": "qc_passed",
+      "qc_score": "19/20",
+      "qc_report": "workspace/_quality/social/2026-07-05-post-drafter-clinical-trials-twitter.md",
+      "needs_visual": true,
+      "visual_brief_ready": true,
+      "visual_brief_file": "workspace/social/articles/2026-06-16-clinical-trials-obesity-metabolic-hybrid-dct/twitter-company/visual-brief.md"
+    },
+    {
+      "profile": "instagram-company",
+      "file": "workspace/social/articles/2026-06-16-clinical-trials-obesity-metabolic-hybrid-dct/instagram-company/post.md",
+      "status": "qc_passed",
+      "qc_score": "19/20",
+      "qc_report": "workspace/_quality/social/2026-07-05-post-drafter-clinical-trials-instagram.md",
+      "needs_visual": true,
+      "visual_brief_ready": true,
+      "visual_brief_file": "workspace/social/articles/2026-06-16-clinical-trials-obesity-metabolic-hybrid-dct/instagram-company/visual-brief.md"
+    },
+    {
+      "profile": "facebook-company",
+      "file": "workspace/social/articles/2026-06-16-clinical-trials-obesity-metabolic-hybrid-dct/facebook-company/post.md",
+      "status": "qc_passed",
+      "qc_score": "19/20",
+      "qc_report": "workspace/_quality/social/2026-07-05-post-drafter-clinical-trials-facebook.md",
+      "needs_visual": true,
+      "visual_brief_ready": true,
+      "visual_brief_file": "workspace/social/articles/2026-06-16-clinical-trials-obesity-metabolic-hybrid-dct/facebook-company/visual-brief.md"
+    },
+    {
+      "profile": "linkedin-company",
+      "file": "workspace/social/articles/2026-06-16-clinical-trials-obesity-metabolic-hybrid-dct/linkedin-company/post.md",
+      "status": "qc_passed",
+      "qc_score": "19/20",
+      "qc_report": "workspace/_quality/social/2026-07-05-post-drafter-clinical-trials-linkedin-company.md",
+      "needs_visual": true,
+      "visual_brief_ready": true,
+      "visual_brief_file": "workspace/social/articles/2026-06-16-clinical-trials-obesity-metabolic-hybrid-dct/linkedin-company/visual-brief.md"
+    },
+    {
+      "profile": "linkedin-katerina",
+      "file": "workspace/social/articles/2026-06-16-clinical-trials-obesity-metabolic-hybrid-dct/linkedin-katerina/post.md",
+      "status": "qc_passed",
+      "qc_score": "19/20 (v2)",
+      "qc_report": "workspace/_quality/social/2026-07-05-post-drafter-clinical-trials-linkedin-katerina-v2.md",
+      "needs_visual": false,
+      "visual_brief_ready": true,
+      "visual_brief_file": "workspace/social/articles/2026-06-16-clinical-trials-obesity-metabolic-hybrid-dct/linkedin-katerina/visual-brief.md",
+      "note": "v1 FAILED quality-controller (10/20) for asserting an unsourced external regulatory claim (MHRA ICH-membership date, UK ICH E6(R3) fold-in date) not present in the source article or any brand-assets file. v2 removed the claim entirely, regenerated with no external-tool use; UK-market framing now a general, hedged, non-specific reference to UK depth in clinical research/life sciences. Re-checked by quality-controller 2026-07-05: 19/20, PASS. Prior QC report (v1 fail) preserved at workspace/_quality/social/2026-07-05-post-drafter-clinical-trials-linkedin-katerina.md for the record."
+    },
+    {
+      "profile": "linkedin-katya",
+      "file": "workspace/social/articles/2026-06-16-clinical-trials-obesity-metabolic-hybrid-dct/linkedin-katya/post.md",
+      "status": "qc_passed",
+      "qc_score": "18/20",
+      "qc_report": "workspace/_quality/social/2026-07-05-post-drafter-clinical-trials-linkedin-katya.md",
+      "needs_visual": true,
+      "visual_brief_ready": true,
+      "visual_brief_file": "workspace/social/articles/2026-06-16-clinical-trials-obesity-metabolic-hybrid-dct/linkedin-katya/visual-brief.md",
+      "note": "Generated 2026-07-05. No WebSearch/WebFetch used per hard constraint. Israeli health-tech ecosystem angle kept as Katya's hedged personal opinion (no named companies, no market-size figures, no regulatory specifics) since brand-assets/product-info/icp-detail.md has no Israel-specific segment data to cite. All measurement/trial claims trace directly to the source article. Self-checked against brand-checker.md before saving: PASS on first pass (past-posts/linkedin-katya is empty, so tone-of-voice check applied without historical comparison)."
+    },
+    {
+      "profile": "linkedin-nick",
+      "file": "workspace/social/articles/2026-06-16-clinical-trials-obesity-metabolic-hybrid-dct/linkedin-nick/post.md",
+      "status": "qc_passed",
+      "qc_score": "18/20",
+      "qc_report": "workspace/_quality/social/2026-07-05-post-drafter-clinical-trials-linkedin-nick.md",
+      "needs_visual": true,
+      "visual_brief_ready": true,
+      "visual_brief_file": "workspace/social/articles/2026-06-16-clinical-trials-obesity-metabolic-hybrid-dct/linkedin-nick/visual-brief.md",
+      "note": "Generated 2026-07-05. No WebSearch/WebFetch or any external tool used per hard constraint — all claims trace to the source article (FDA DHT guidance citation, twelve-month monitoring window, manual-vs-scan comparison) or to the pre-existing 'Clinical Trials (CROs, Sponsors)' segment in brand-assets/product-info/icp-detail.md section 7. No specific CRO names (e.g. IQVIA, Parexel) used to avoid implying a customer relationship that isn't sourced. US market framing kept general/hedged (industry-wide FDA guidance already cited in the article, no market-size or regulatory-status claims invented). Self-checked against brand-checker.md before saving: PASS on first pass (past-posts/linkedin-nick is empty, so tone-of-voice check applied without historical comparison; structure/length benchmarked against the linkedin-katya draft in this same manifest as the closest available personal-profile analog)."
+    },
+    {
+      "profile": "linkedin-olena",
+      "file": "workspace/social/articles/2026-06-16-clinical-trials-obesity-metabolic-hybrid-dct/linkedin-olena/post.md",
+      "status": "qc_passed",
+      "qc_score": "19/20",
+      "qc_report": "workspace/_quality/social/2026-07-05-post-drafter-clinical-trials-linkedin-olena.md",
+      "needs_visual": true,
+      "visual_brief_ready": true,
+      "visual_brief_file": "workspace/social/articles/2026-06-16-clinical-trials-obesity-metabolic-hybrid-dct/linkedin-olena/visual-brief.md",
+      "note": "Generated 2026-07-05. No WebSearch/WebFetch or any external tool used per hard constraint. European market angle kept to a general, hedged framing (multi-country trials carry more site-to-site variability than single-site studies) drawn directly from the source article's own site-variability thesis, not from any invented market-size or regulatory-status claim. No FDA/US-specific regulatory content and no ICH E6(R3) mention included, to stay clear of the exact failure mode that hit linkedin-katerina v1 (unsourced regulatory date claim) and to respect the profile's 'avoid US-specific regulatory context' rule. GDPR/data-handling claims (follows GDPR principles, photo deletion immediate-or-within-30-days per client policy, no personal identifiers processed) are sourced verbatim from CLAUDE.md section 12 and brand-assets/product-info/proof-points.md 'Compliance & security' table. No specific EU CRO names from icp-detail.md section 7 (ICON, PSI CRO, SGS, Eurofins) were used, to avoid implying an unverified customer/prospect relationship. Self-checked against brand-checker.md before saving: PASS on first pass (past-posts/linkedin-olena is empty, so tone-of-voice check applied without historical comparison; structure/length (1335-char post body) benchmarked against the linkedin-katya and linkedin-nick drafts in this same manifest as the closest available personal-profile analogs)."
+    },
+    {
+      "profile": "linkedin-vadim",
+      "file": "workspace/social/articles/2026-06-16-clinical-trials-obesity-metabolic-hybrid-dct/linkedin-vadim/post.md",
+      "status": "qc_passed",
+      "qc_score": "18/20",
+      "qc_report": "workspace/_quality/social/2026-07-05-post-drafter-clinical-trials-linkedin-vadim.md",
+      "needs_visual": false,
+      "visual_brief_ready": true,
+      "visual_brief_file": "workspace/social/articles/2026-06-16-clinical-trials-obesity-metabolic-hybrid-dct/linkedin-vadim/visual-brief.md",
+      "note": "Generated 2026-07-05. No WebSearch/WebFetch or any external tool used per hard constraint (post-drafter tools are Read/Write/Grep/Glob only). Marketing/GTM angle, distinct from the buyer-facing profiles: how writing this article under 8 explicit compliance guardrails (frontmatter compliance_guardrails list in publish-package.md) forced sharper 'operational standardization and documentation layer' positioning instead of weakening the copy, tying to CLAUDE.md section 3's accuracy-to-outcomes positioning shift. All claims trace to the source article (8-guardrail count from its own frontmatter, the 'operational standardization and documentation layer' framing quoted near-verbatim, the 'may help reduce avoidable screen failures' quote taken verbatim from the Remote pre-checks section) or to CLAUDE.md section 3. No product performance numbers (accuracy %, pricing, customer names) used, so no proof-points.md citation was needed. Format chosen: text (no visual) — fits 'personal LinkedIn profile, authenticity over polish' per post-drafter.md format table and the profile's practitioner/peer-to-peer tone; needs_visual set to false accordingly. Self-checked against brand-checker.md before saving: PASS on first pass (past-posts/linkedin-vadim directory does not exist, so tone-of-voice check applied without historical comparison per post-drafter.md step 4; no banned words/no-go phrases found via direct grep against the CLAUDE.md section 6 list; no em-dash rhetorical constructions; length 1527 chars, at the top of the profile's 1000-1500 char target and within the platform-wide 800-1800 range)."
+    }
+  ],
+  "ready_for_review": true,
+  "avg_qc_score": "18.7/20",
+  "note": "All 9 active profiles (per social-profiles-config.md) have drafts, all QC'd: twitter-company 19/20, instagram-company 19/20, facebook-company 19/20, linkedin-company 19/20, linkedin-katerina 19/20 (v2, after v1 failed 10/20 for an unsourced regulatory claim — corrected and re-checked), linkedin-katya 18/20, linkedin-nick 18/20, linkedin-olena 19/20, linkedin-vadim 18/20. Review digest at workspace/social/articles/2026-06-16-clinical-trials-obesity-metabolic-hybrid-dct/review-digest.md. Recurring non-blocking QC note across twitter/instagram/facebook drafts: the compliance-hedge sentence required by this article's guardrails reads as boilerplate/jargon in the more casual platform tones — worth a light copyedit pass before publish, not a rewrite."
+}
