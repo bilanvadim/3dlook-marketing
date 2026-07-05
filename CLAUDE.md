@@ -62,21 +62,27 @@
 
 ## 4. ICP — детально по каждому продукту
 
-См. полные документы в `brand-assets/product-info/icp-detail.md`. Краткое резюме:
+См. полные документы в `brand-assets/product-info/icp-detail.md` (обновлено 2026-07-05, 10 сегментов FX + 4 сегмента MT, revenue-пороги и named company examples по каждому). Краткое резюме:
 
 ### FitXpress ICP
-- **Telehealth & weight loss / GLP-1:** virtual clinics, coaching apps. Buyer: VP Product / Chief Medical Officer / Head of Clinical Operations
-- **Online pharmacies / digital prescribers:** BMI verification. Buyer: Head of Compliance / Chief Pharmacist
-- **Life & disability insurers:** underwriting verification. Buyer: VP Underwriting / Chief Underwriting Officer
-- **Health plans / employer wellness:** rewards programs. Buyer: VP Member Engagement / Head of Wellness
+- **Telehealth & weight loss / GLP-1:** virtual clinics, coaching apps, longitudinal/RPM programs. $2M+ revenue. Buyer: Founder/CEO / Chief Medical Officer / Head of Clinical Operations / Head of Member Engagement
+- **Online pharmacies / digital prescribers:** BMI verification, UK — приоритетный рынок. $2M+ revenue. Buyer: Head of Compliance & Risk / Chief Medical Officer / Clinical Operations Director
+- **Life & disability insurers:** underwriting verification. $5M+ revenue, enterprise. Buyer: Chief Underwriting Officer / Chief Risk Officer
+- **Health plans / employer wellness:** rewards & verification programs. $5M+ revenue, enterprise. Buyer: CHRO / Head of Wellness / VP Population Health
 - **Bariatric / metabolic clinics:** pre-qualification. Buyer: Director of Operations / Medical Director
 - **Occupational health providers:** screening. Buyer: VP Operations / Chief Medical Officer
 - **CROs / pharma sponsors:** clinical trials. Buyer: Director of Clinical Operations / Head of DCT
+- **Connected & digital fitness:** $1M+ revenue. Buyer: Founder/CEO / CPO / Head of Growth
+- **Plastic surgery clinics (новый, 2026-07):** Turkey — приоритетное гео (медтуризм), $1M+ revenue. Buyer: Clinic Owner/Director / Plastic Surgeon
+- **BCRL detection & monitoring (новый, 2026-07):** oncology/survivorship RPM. $2M+ revenue. Buyer: Chief Medical Officer / Oncology Program Director / RPM Director
 
 ### Mobile Tailor ICP
-- **MTM brands & tailors:** menswear, womenswear, bridal, formalwear. Buyer: Founder / Head of E-commerce / VP Operations
-- **On-demand manufacturers:** integrating scans в pattern-making. Buyer: VP Manufacturing / Head of Product Development
-- **Uniform companies:** workwear, healthcare, public safety. Buyer: VP Operations / Director of Procurement
+- **MTM brands & tailors:** menswear, womenswear, bridal, formalwear. $1M+ revenue. Buyer: Founder / Head of E-commerce / VP Operations
+- **On-demand manufacturers:** integrating scans в pattern-making. $2M+ revenue. Buyer: VP Manufacturing / Head of Product Development
+- **Uniform companies:** workwear, healthcare, public safety. $2M+ revenue. Buyer: VP Operations / Director of Procurement
+- **Wrist / limb measurement (nishe):** wearables, jewelry, medical devices. Buyer: VP Product / Head of Customization
+
+**Гео-расширение (2026-07):** новый ICP-документ добавляет Canada, Germany, UAE, Australia, Nordics, Turkey как целевые гео по разным сегментам — до первой кампании в новом гео проверить compliance-статус с Вадимом (см. секцию 12).
 
 ---
 
@@ -232,6 +238,7 @@
 | 2026-07-01 | post-drafter.md and post-from-article.md rewritten in English. Hard rule added: all output (post text, angle, design tip, CTA) must be in English. | Claude / Vadim |
 | 2026-07-01 | Design tip logic reworked: social post visuals now adapt from the article's OG image direction (publish-package.md section 4). Fields: article visual / format / adaptation / keep. Designer adapts one asset, not creates from scratch. | Claude / Vadim |
 | 2026-07-01 | Post formats defined: text, text + photo, carousel, infographic, lead magnet, poll, screenshot. post-drafter selects format per post with platform constraints (poll: LinkedIn/Twitter only; lead magnet: LinkedIn/Facebook only). | Claude / Vadim |
+| 2026-07-05 | `icp-detail.md` rewritten from internal ICP/Sales Google Doc (12-segment playbook): added precise buyer titles, categorized pain points, revenue thresholds, named company examples, and buying signals for every existing FitXpress/Mobile Tailor segment. Added 2 new segments: FitXpress Plastic Surgery (Turkey-first geo) and FitXpress BCRL Detection & Monitoring. Section 4 summary and geo list updated. `context-pack-builder.md` updated to pull segment-specific ICP context (persona + pain points) for SEO/social, not just outbound. | Claude / Vadim |
 
 ---
 

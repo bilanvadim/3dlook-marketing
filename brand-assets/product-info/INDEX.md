@@ -9,7 +9,7 @@
 | `overview.md` | 1-pager 3DLOOK + два продукта | post-drafter, hypothesis-generator, seo-section-writer |
 | `how-it-works.md` | Техническое описание стека | seo-section-writer (technical articles) |
 | `proof-points.md` | Все цифры со ссылками на источник | message-sequencer, post-drafter, all SEO |
-| `icp-detail.md` | Развёрнутый ICP по обоим продуктам | hypothesis-generator, icp-validator |
+| `icp-detail.md` | Развёрнутый ICP по обоим продуктам (10 сегментов FX + 4 MT, buyer titles, боли, revenue-пороги, примеры компаний) | hypothesis-generator, icp-validator, company-researcher, context-pack-builder (для SEO/social персонализации) |
 | `pricing.md` | FitXpress tiers, free trial | message-sequencer, faq |
 | `competitors.md` | Prism Labs / Bodygram / Size Stream / Apple risk | hypothesis-generator, seo-outline-builder |
 | `compliance.md` | HIPAA, GDPR, encryption, photo retention | message-sequencer (insurance/healthcare) |
@@ -36,6 +36,12 @@
 - `use-cases/mt-on-demand-manufacturing.md`
 - `use-cases/mt-uniform-fitting.md`
 - `use-cases/mt-wrist-measurement.md`
+
+### Новые сегменты без use-case файла (см. icp-detail.md, добавлены 2026-07-05)
+- FitXpress — Plastic Surgery Clinics (нет `use-cases/fx-plastic-surgery.md`)
+- FitXpress — BCRL Detection & Monitoring (нет `use-cases/fx-bcrl-monitoring.md`)
+
+Создать эти файлы перед первой кампанией/статьёй по этим сегментам — hypothesis-generator ожидает use-case файл по продукту.
 
 ## Case studies
 

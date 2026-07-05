@@ -64,7 +64,17 @@ target_agent: post-drafter | hypothesis-generator | seo-planner | etc.
 - Из competitors.md — только 2-3 предложения про конкурентов релевантных для этого product + objective
 - Не вся конкурентная аналитика — только positioning angle
 
-### 7. Select exclusions (для outbound)
+### 7. Select ICP context (persona + pain points)
+- Прочитай `brand-assets/product-info/icp-detail.md`
+- Определи **целевой сегмент** по `objective` (например, objective «BMI verification for online pharmacies» → сегмент «Online Pharmacies / Digital Prescribers»; «GLP-1 retention post» → «Telehealth & GLP-1 / Weight Loss Programs»)
+- Если сегмент не очевиден из objective — для `track = social` или `seo` бери **основной сегмент профиля/статьи** (не гадай слишком узко); для `track = outbound` сегмент уже зафиксирован в гипотезе
+- Включи компактно:
+  - `buyer_persona`: 1-2 ключевых buyer title из сегмента
+  - `pain_points`: 3-5 самых релевантных болей (дословно или близко к тексту из icp-detail.md — это то, на что должен отвечать контент)
+  - `hero_message`: positioning/hero message сегмента, если есть в icp-detail.md
+- **Зачем:** без этого шага статьи и посты пишутся generic-тоном продукта, не отвечая на конкретную боль читателя. Этот шаг делает контент направленным на конкретного buyer persona.
+
+### 8. Select exclusions (для outbound)
 - Если `track = outbound`: прочитай `workspace/outbound/exclusions/{profile}-registry.json`
 - Включи список excluded company_ids и person_ids для этого profile
 
@@ -144,6 +154,15 @@ context_pack:
     Prism Labs is primary FX competitor — strong in GLP-1/insurance.
     Our angle: workflow integration + two-product breadth + compliance depth.
     Never name competitors in cold outbound.
+
+  icp_context:
+    segment: "Telehealth & GLP-1 / Weight Loss Programs"
+    buyer_persona: "Head of Member Engagement / Chief Medical Officer"
+    pain_points:
+      - "Members drop off after onboarding when there is no visible progress"
+      - "Self-report and manual progress photos feel behind the market"
+      - "Small real changes get lost in measurement noise with weak repeatability"
+    hero_message: "Make body progress more visible — before members drop off."
 
   exclusions: null  # only for outbound track
 ```
