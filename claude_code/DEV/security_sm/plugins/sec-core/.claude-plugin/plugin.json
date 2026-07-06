@@ -1,0 +1,6 @@
+{
+  "name": "sec-core",
+  "description": "Security core: security-bounty-hunter skill (exploitability-first vuln triage) + silent-failure-hunter agent (fail-open / swallowed-error hunting). Vetted adoptions from ECC (MIT). See ATTRIBUTION.md.",
+  "version": "0.1.0",
+  "author": { "name": "Sergiy" }
+}

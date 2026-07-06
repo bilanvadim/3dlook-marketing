@@ -1,0 +1,20 @@
+[Unit]
+Description=Hermes Conductor — autonomous Fullstack-agents worker (Claude Agent SDK → Postgres hc_*)
+After=network-online.target docker.service
+Wants=network-online.target
+Requires=docker.service
+
+[Service]
+Type=simple
+User=sergiy_prod
+Environment=HOME=/home/sergiy_prod
+Environment=PATH=/usr/local/bin:/usr/bin:/bin
+EnvironmentFile=/srv/sergiy_prod/ai-agents-config/claude_code/DEV/full_stack_sm/conductor/.env
+WorkingDirectory=/srv/sergiy_prod/ai-agents-config/claude_code/DEV/full_stack_sm/conductor
+ExecStart=/srv/sergiy_prod/ai-agents-config/hermes_agent/ops/conductor-run.sh
+Restart=always
+RestartSec=5
+# Cost is not capped by design; the only runaway control is the in-process breaker.
+
+[Install]
+WantedBy=multi-user.target

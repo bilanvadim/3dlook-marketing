@@ -1,0 +1,38 @@
+{
+  "name": "ai-agents-mkt",
+  "owner": {
+    "name": "Sergiy",
+    "url": "https://github.com/SergeMiro"
+  },
+  "metadata": {
+    "description": "Digital marketing system for Claude Code — a team of specialist agents (strategy, content, paid media, lifecycle, analytics) + skills for planning and running campaigns. Switch into it via profile 'marketing'.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "mkt-core",
+      "source": "./plugins/mkt-core",
+      "description": "Orchestration core: marketing-strategist (campaign director) + marketing-strategy skill + /mkt-campaign command"
+    },
+    {
+      "name": "mkt-content",
+      "source": "./plugins/mkt-content",
+      "description": "content-marketer: content strategy, copywriting, storytelling, editorial calendar, organic social & distribution + content-calendar skill"
+    },
+    {
+      "name": "mkt-paid",
+      "source": "./plugins/mkt-paid",
+      "description": "paid-media-buyer: paid acquisition (search/social/display), budgets, bidding, ROAS, creative A/B testing + paid-media skill"
+    },
+    {
+      "name": "mkt-lifecycle",
+      "source": "./plugins/mkt-lifecycle",
+      "description": "lifecycle-marketer: email/CRM, nurture, automation, segmentation, retention & reactivation (opt-in, deliverability)"
+    },
+    {
+      "name": "mkt-analytics",
+      "source": "./plugins/mkt-analytics",
+      "description": "marketing-analyst: attribution, funnel & cohort analysis, GA4, CAC/LTV/ROAS, dashboards + marketing-measurement skill"
+    }
+  ]
+}

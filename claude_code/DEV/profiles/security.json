@@ -1,0 +1,14 @@
+{
+  "name": "security",
+  "description": "Security-focused profile: security-auditor + QA + verification + vetted ECC security content (security-bounty-hunter, silent-failure-hunter).",
+  "marketplaces": {
+    "ai-agents-config": "full_stack_sm",
+    "ai-agents-sec": "security_sm"
+  },
+  "enabledPlugins": [
+    "hermes-core@ai-agents-config",
+    "hermes-quality@ai-agents-config",
+    "hermes-verify@ai-agents-config",
+    "sec-core@ai-agents-sec"
+  ]
+}

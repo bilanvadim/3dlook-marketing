@@ -1,0 +1,17 @@
+{
+  "name": "marketing",
+  "description": "Digital marketing system (marketing_sm) + shared orchestration/verification base.",
+  "marketplaces": {
+    "ai-agents-config": "full_stack_sm",
+    "ai-agents-mkt": "marketing_sm"
+  },
+  "enabledPlugins": [
+    "hermes-core@ai-agents-config",
+    "hermes-verify@ai-agents-config",
+    "mkt-core@ai-agents-mkt",
+    "mkt-content@ai-agents-mkt",
+    "mkt-paid@ai-agents-mkt",
+    "mkt-lifecycle@ai-agents-mkt",
+    "mkt-analytics@ai-agents-mkt"
+  ]
+}

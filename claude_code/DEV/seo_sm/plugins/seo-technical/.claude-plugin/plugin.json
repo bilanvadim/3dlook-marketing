@@ -1,0 +1,6 @@
+{
+  "name": "seo-technical",
+  "description": "Technical SEO: crawlability, indexation, sitemaps, robots, canonical, hreflang, redirects, structured data (JSON-LD), Core Web Vitals, render/JS, log analysis. Agent technical-seo-engineer + technical-seo-audit skill.",
+  "version": "0.1.0",
+  "author": { "name": "Sergiy" }
+}

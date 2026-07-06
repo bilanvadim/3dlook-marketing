@@ -1,0 +1,8 @@
+[Unit]
+Description=Hermes model-tier morning refresh (pick Go/free model tiers, notify Telegram)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 %h/.hermes/model-router/refresh.py

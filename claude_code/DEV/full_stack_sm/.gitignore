@@ -1,0 +1,15 @@
+# conductor (TS service)
+conductor/node_modules/
+conductor/dist/
+conductor/.env
+*.log
+
+# python caches (scout scripts)
+**/__pycache__/
+*.pyc
+
+# transient working state: scratchpad handoff + evaluator reports (not source of truth)
+.claude/scratchpad/
+
+# os
+.DS_Store

@@ -1,0 +1,6 @@
+{
+  "name": "hermes-core",
+  "description": "Orchestration core: product-architect agent, project-planning (deep interview → detailed plan), scratchpad-protocol (inter-agent), session-handoff (across /clear & compaction, auto + /sm-handoff), commands /sm-feature /sm-docs /sm-handoff",
+  "version": "0.3.0",
+  "author": { "name": "Sergiy" }
+}

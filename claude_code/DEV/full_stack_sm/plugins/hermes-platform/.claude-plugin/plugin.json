@@ -1,0 +1,1 @@
+{ "name": "hermes-platform", "description": "platform-engineer agent: hosting, cloud, IaC, CI/CD via gh CLI", "version": "0.1.0", "author": { "name": "Sergiy" } }

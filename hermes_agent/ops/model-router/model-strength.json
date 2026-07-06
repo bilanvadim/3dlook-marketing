@@ -1,0 +1,16 @@
+{
+  "_comment": "Daily Go model picker. score = strength - cost_weight*output_cost_per_M + ctx_bonus*(context>=ctx_big). The pick balances a STRONG model against leaving big Go headroom (cheaper output = lighter on the subscription limit). Retune by editing weights or per-model strength (0-100). Unknown models get default_strength.",
+  "cost_weight": 3.0,
+  "ctx_bonus": 4.0,
+  "ctx_big": 1000000,
+  "default_strength": 60,
+  "strength": {
+    "glm-5.2": 92, "glm-5.1": 88, "glm-5": 82,
+    "deepseek-v4-pro": 90, "deepseek-v4-flash": 70,
+    "kimi-k2.7-code": 88, "kimi-k2.6": 85, "kimi-k2.5": 80,
+    "qwen3.7-max": 86, "qwen3.7-plus": 78, "qwen3.6-plus": 74, "qwen3.5-plus": 68,
+    "minimax-m3": 72, "minimax-m2.7": 66, "minimax-m2.5": 64,
+    "mimo-v2.5-pro": 80, "mimo-v2-pro": 76, "mimo-v2-omni": 70, "mimo-v2.5": 62,
+    "hy3-preview": 55
+  }
+}

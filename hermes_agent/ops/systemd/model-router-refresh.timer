@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Hermes model-tier refresh every morning at 07:00 (server time)
+
+[Timer]
+OnCalendar=*-*-* 07:00:00
+Persistent=true
+RandomizedDelaySec=120
+
+[Install]
+WantedBy=timers.target
