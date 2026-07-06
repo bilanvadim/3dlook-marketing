@@ -1,0 +1,6 @@
+{
+  "name": "mvb-seo",
+  "description": "Vadim SEO team: seo-planner (keywords → title → outline), seo-writer (fact-only sections from approved plan + context pack), seo-editor (4-pass edit), seo-publisher (meta + final package).",
+  "version": "0.1.0",
+  "author": { "name": "Vadim Bilan" }
+}
