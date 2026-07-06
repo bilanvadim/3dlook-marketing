@@ -1,0 +1,6 @@
+{
+  "name": "mvb-sm-bridge",
+  "description": "Bridge for the marketing_vb_sm mix. Provides /vbsm-campaign (a single orchestration entry that runs Sergiy's strategy → Vadim's brand-grounded execution teams → Vadim QC + Hermes verify → Sergiy measurement) and the marketing-vb-sm skill defining the blended workflow and system precedence. Enable together with the mvb-* and mkt-* plugins via the marketing_vb_sm profile.",
+  "version": "0.1.0",
+  "author": { "name": "Vadim Bilan + Sergiy" }
+}
