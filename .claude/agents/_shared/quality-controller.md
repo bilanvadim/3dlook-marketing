@@ -31,6 +31,9 @@ tools: Read, Write, Grep, Glob
 3. **Рубрикатор** — `docs/quality-rubric.md`
 4. **Контекст:**
    - `CLAUDE.md` (для tone, no-go)
+   - **`about-me.md`** (для FitXpress health-контента) — voice fingerprint + claims discipline: карай за нарушение hard rules (диагностика / decisioning / замена клинициста), за точность сведённую к одному числу, за repeatability не в формате `< 1 cm`. Это ложится в критерий C (Brand & tone) и B (Factual accuracy).
+   - **`audience.md`** (для FitXpress) — проверь что артефакт бьёт в боль/hook нужного сегмента и не нарушает его «Don't».
+   - **`DESIGN.md`** (для визуальных брифов) — токены: accent `#143DFF` не `#2962FF`, Satoshi не Inter, значения со шкал.
    - `brand-assets/product-info/messaging.md` (banned words, anti-positioning)
    - `brand-assets/product-info/proof-points.md` (для проверки чисел)
 5. **Входы артефакта** (что было дано агенту):

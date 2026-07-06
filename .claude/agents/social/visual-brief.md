@@ -15,11 +15,12 @@ tools: Read, Write, Grep, Glob
 ## Алгоритм
 
 1. **Прочитай пост** — текст, тему, CTA, какой профиль, **`product:` из frontmatter**.
-2. **Прочитай бренд-ассеты:**
-   - `brand-assets/brand-guidelines/*` — все доки (если есть)
-   - `brand-assets/color-palette/colors.md` — точные HEX (3DLOOK Blue `#2962FF`, чёрный, белый — НЕ purple-pink AI gradients!)
-   - `brand-assets/fonts/fonts.md` — Inter (Bold/Regular/Medium)
-   - `brand-assets/logos/` — что есть (Glob)
+2. **Прочитай `DESIGN.md` (корень репо) — единственный источник правды по дизайну.** Оттуда бери ВСЕ токены дословно:
+   - Цвета: electric blue accent `#143DFF` (единственный резкий акцент, НЕ большая заливка), navy `#050F40` (hero/proof/CTA/footer, 60–70% веса), белый доминирует на контенте. Полные blue/gray шкалы — §2. **НЕ purple-pink AI-градиенты.**
+   - Типографика: **Satoshi** (заголовки и body), eyebrow-техника, oversized numerals для proof-моментов — §3.
+   - Spacing (§4), border-radius (§5), кнопки (§6), art direction / imagery (§10), do/don't (§14).
+   - ⚠️ `brand-assets/color-palette/colors.md` (`#2962FF`) и `brand-assets/fonts/fonts.md` (Inter) — **устарели**, не использовать. Каноничны `#143DFF` и Satoshi.
+   - `brand-assets/brand-guidelines/*` — все доки (если есть); `brand-assets/logos/` — что есть (Glob).
 3. **Критично: Figma references.** Прочитай `brand-assets/past-posts/_figma-exports/`:
    - `blog-banners/` — официальные баннеры с сайта (стиль, композиция)
    - `website/` — страницы сайта (цвета, типографика, hero pattern)
@@ -61,14 +62,16 @@ tools: Read, Write, Grep, Glob
 - Sub: «...»
 - Source/footer: «...»
 
-## Colors
-- Primary: #XXXXXX (из палитры)
-- Accent: #XXXXXX
-- Text: #XXXXXX
+## Colors (tokens из DESIGN.md — дословно)
+- Surface: navy `#050F40` (dark) / white `#FFFFFF` (light) — доминирует по правилу веса
+- Accent: electric blue `#143DFF` — единственный резкий акцент (цифра/CTA/линия), не большая заливка
+- Text: white на navy / `#1A1A1A` (`--ink`) на light; muted `#808080`
+- Navy-зоны: radial glow, не плоская заливка (§2)
 
-## Typography
-- Headline: [font name from fonts.md] — size, weight
-- Body: [font name] — size, weight
+## Typography (DESIGN.md §3)
+- Headline: **Satoshi** Bold 700 — size из type-scale (Display/H1/H2…)
+- Body: **Satoshi** Regular 400 — 17/20px
+- Eyebrow: Satoshi 700, 13px, uppercase, letter-spacing 0.14em, цвет `#143DFF`
 
 ## Reference / inspiration
 [2-3 прошлых поста этого профиля как референс по стилю — пути к файлам]
@@ -88,9 +91,10 @@ tools: Read, Write, Grep, Glob
 
 ## Designer checklist
 - [ ] Логотип на всех слайдах
-- [ ] Шрифт из brand-guidelines
-- [ ] Цвета из палитры (только)
-- [ ] Контраст текста ≥ 4.5:1
+- [ ] Шрифт **Satoshi** (DESIGN.md §3) — не Inter
+- [ ] Цвета только из DESIGN.md (`#143DFF` акцент, navy `#050F40`) — без `#2962FF`, без purple-pink
+- [ ] Electric blue как один акцент, не большая заливка
+- [ ] Контраст текста ≥ 4.5:1 (AA); scrim под текстом на imagery
 - [ ] Экспорт в нужном формате
 ```
 

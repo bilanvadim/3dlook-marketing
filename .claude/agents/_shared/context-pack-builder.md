@@ -32,6 +32,10 @@ target_agent: post-drafter | hypothesis-generator | seo-planner | etc.
 ### 1. Read core
 - `CLAUDE.md` — извлеки ТОЛЬКО: company one-liner, product (only the requested one), tone rules, banned phrases, compliance summary (если track requires it)
 - `brand-assets/product-info/messaging.md` — извлеки hero message для этого product + use case, banned words list
+- **Если `product = fitxpress`** (health-контент) — прочитай канонические doc'и голоса и аудитории:
+  - `about-me.md` (корень репо) — voice fingerprint, claims discipline (hard rules), accuracy/repeatability framing, words we USE / NEVER use, CTA discipline. Это источник правды по голосу; при конфликте с CLAUDE.md секция 6 — приоритет у `about-me.md`.
+  - `audience.md` (корень репо) — shared spine + 7 сегментов (who · core pain · hook · what NOT to say). Используешь в шаге 7 для точного сегмент-слоя.
+  - Для `product = mobile_tailor` эти файлы НЕ применяются (они про FitXpress health) — используй messaging.md + icp-detail.md как раньше.
 
 ### 2. Select approved claims
 - Прочитай `brand-assets/product-info/proof-points.md`
@@ -48,6 +52,7 @@ target_agent: post-drafter | hypothesis-generator | seo-planner | etc.
 
 ### 4. Select tone
 - Из CLAUDE.md секция 6 + messaging.md tone calibrations
+- **Если `product = fitxpress`** — вытяни из `about-me.md` компактный `voice_fingerprint` (3-5 самых применимых пунктов: the reframe move, declarative/unhurried, concrete-over-abstract, honest-about-limits, buyer-framing-not-you-spam) + `claims_discipline` (что FitXpress NEVER claims — diagnose / decisioning / replace clinician-DEXA-scale) + `accuracy_framing` (никогда не сводить точность к одному числу; repeatability писать как `< 1 cm`; два бенчмарка не смешивать). Эти поля идут в output pack — именно они удерживают контент от generic-AI-тона.
 - Специфично для `channel` и `profile`:
   - katerina → founder voice, strategic, AI risk themes
   - whitney → industry insider, MTM/apparel, conferences
@@ -68,11 +73,14 @@ target_agent: post-drafter | hypothesis-generator | seo-planner | etc.
 - Прочитай `brand-assets/product-info/icp-detail.md`
 - Определи **целевой сегмент** по `objective` (например, objective «BMI verification for online pharmacies» → сегмент «Online Pharmacies / Digital Prescribers»; «GLP-1 retention post» → «Telehealth & GLP-1 / Weight Loss Programs»)
 - Если сегмент не очевиден из objective — для `track = social` или `seo` бери **основной сегмент профиля/статьи** (не гадай слишком узко); для `track = outbound` сегмент уже зафиксирован в гипотезе
+- **Если `product = fitxpress`** — сопоставь сегмент с одним из 7 слоёв в `audience.md` (Telehealth/GLP-1, UK BMI verification, Connected fitness, Wellness rewards, Insurance underwriting, BCRL/oncology, Plastic surgery) и вытяни оттуда `hook` (что именно «заходит» этому сегменту) и `do_not_say` (список из «Don't» этого слоя — жёсткие границы для сегмента, напр. «never detects lymphedema», «supports compliant workflows, never makes you compliant»). Это дополняет icp-detail.md, а не заменяет: icp-detail.md даёт buyer titles + revenue + компании, audience.md — угол и границы.
 - Включи компактно:
-  - `buyer_persona`: 1-2 ключевых buyer title из сегмента
-  - `pain_points`: 3-5 самых релевантных болей (дословно или близко к тексту из icp-detail.md — это то, на что должен отвечать контент)
+  - `buyer_persona`: 1-2 ключевых buyer title из сегмента (icp-detail.md)
+  - `pain_points`: 3-5 самых релевантных болей (дословно или близко к тексту из icp-detail.md / audience.md core pain)
   - `hero_message`: positioning/hero message сегмента, если есть в icp-detail.md
-- **Зачем:** без этого шага статьи и посты пишутся generic-тоном продукта, не отвечая на конкретную боль читателя. Этот шаг делает контент направленным на конкретного buyer persona.
+  - `segment_hook`: угол из audience.md (только FX)
+  - `do_not_say`: границы сегмента из audience.md «Don't» (только FX)
+- **Зачем:** без этого шага статьи и посты пишутся generic-тоном продукта, не отвечая на конкретную боль читателя и легко нарушая границы сегмента (диагностика, decisioning). Этот шаг делает контент направленным на конкретного buyer persona и безопасным по claims.
 
 ### 8. Select exclusions (для outbound)
 - Если `track = outbound`: прочитай `workspace/outbound/exclusions/{profile}-registry.json`
@@ -144,6 +152,18 @@ context_pack:
     format: "hook in first 2 lines, 1-2 proof points, soft CTA"
     dont: "no clickbait, no emoji flood, no generic openers"
 
+  # fitxpress only — sourced from about-me.md
+  voice_fingerprint:
+    - "The reframe move: turn the obvious question into the sharper one ('accurate enough for which decision?')"
+    - "Declarative and unhurried; concrete over abstract (every claim carries a number, source, or disclosed limit)"
+    - "Honest about limits in the same breath as capability; buyer framing, not 'you'-spam"
+  claims_discipline:
+    - "NEVER: diagnose, make treatment/underwriting/eligibility decisions, replace clinician/DEXA/scale, guarantee compliance, auto-detect fraud"
+    - "Position AS: mobile body-scanning / structured-data-capture / intake & documentation layer supporting review"
+  accuracy_framing:
+    - "Never reduce accuracy to one universal number — qualify by decision/reference/protocol/population/tolerance"
+    - "Repeatability written as `< 1 cm`; the two benchmarks are never combined"
+
   examples:
     - file: "past-posts/linkedin-company/2026-01-15-fx-bmi-verification.md"
       performance: "top10, ER 4.2%"
@@ -163,6 +183,10 @@ context_pack:
       - "Self-report and manual progress photos feel behind the market"
       - "Small real changes get lost in measurement noise with weak repeatability"
     hero_message: "Make body progress more visible — before members drop off."
+    segment_hook: "Make body progress visible → repeat check-ins → adherence → retention; defensible longitudinal outcomes for payer/employer partners."  # audience.md, FX only
+    do_not_say:  # audience.md 'Don't', FX only
+      - "No diagnostic claims; not a DEXA or calibrated-scale replacement"
+      - "No eligibility decisioning; keep separate from UK online-pharmacy BMI compliance unless the piece is explicitly the bridge"
 
   exclusions: null  # only for outbound track
 ```

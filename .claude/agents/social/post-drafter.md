@@ -18,6 +18,7 @@ Parameters from /post-from-article:
 ## Steps
 
 1. **Read `CLAUDE.md`** — tone of voice, no-go phrases, profile list from section 5.
+1b. **Read `about-me.md` and `audience.md` (repo root)** — all 9 active profiles are 100% FitXpress, so these always apply. `about-me.md` sets the voice (the reframe move, concrete-over-abstract, honest-about-limits) and the hard claims discipline (no diagnosis / decisioning / clinician-replacement claims; repeatability as `< 1 cm`; never one universal accuracy number). `audience.md` gives the segment hook and the "what NOT to say" boundary for the article's vertical — use it to pick the post angle and stay inside segment limits. (If a context pack is provided, `voice_fingerprint` / `claims_discipline` / `segment_hook` / `do_not_say` already summarise these — you may rely on the pack instead of re-reading.)
 2. **Read the profile block** from `brand-assets/social-profiles-config.md` — `platform`, `tone`, `avoid`, `product_bias`, `length`, `cta`.
 3. **Read the article** from `article_path`:
    - Frontmatter: `product`, `slug`, `target_keyword`

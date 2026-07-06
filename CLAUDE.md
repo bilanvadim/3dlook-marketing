@@ -113,6 +113,12 @@
 
 ## 6. Tone of Voice
 
+> **Канонические источники голоса и аудитории (читать перед любой задачей на письмо):**
+> - `about-me.md` (корень репо) — brand voice FitXpress: voice fingerprint, register, claims discipline (hard rules), accuracy/repeatability framing, слова которые USE / NEVER use, структура статьи, CTA discipline. Это источник правды по тому, *как* писать health-контент.
+> - `audience.md` (корень репо) — *для кого* пишем: shared spine + 7 health-сегментов (who · core pain · hook · «what NOT to say»).
+>
+> Секция 6 ниже — краткое операционное резюме. При конфликте `about-me.md` имеет приоритет по голосу и claims discipline. Фактура (числа, кейсы) — всегда из `brand-assets/product-info/`, а не из этих файлов.
+
 **Что мы:**
 - Экспертные, опираемся на данные (96-97% accuracy, ±3.5%, 45 sec, 80+ measurements)
 - Конкретные — числа, проценты, имена клиентов (UK Meds, Safariland, Burlington Medical), market sizing ($25-200M TAM)
@@ -145,11 +151,14 @@
 
 ## 7. Бренд-ассеты
 
-См. `brand-assets/`. Перед визуальным брифом или постом агент **обязательно** читает:
+**Дизайн — единый источник правды: `DESIGN.md` (корень репо).** Подтверждённый экспорт из официальной Figma: цвета (electric blue `#143DFF`, navy `#050F40`, полные blue/gray/neutral шкалы), типографика (**Satoshi**), spacing, border-radius, кнопки, header/footer, motion, art direction, copy-paste `:root` CSS. Читать перед любым визуальным артефактом (бриф, лендинг, HTML-прототип, 2-pager, deck, email).
+
+См. также `brand-assets/`. Перед визуальным брифом или постом агент **обязательно** читает:
+- `DESIGN.md` — **все токены дизайна** (заменяет старые `colors.md` / `fonts.md`)
 - `brand-assets/brand-guidelines/` — гайдлайны (если есть PDF)
-- `brand-assets/color-palette/colors.md` — точные HEX
-- `brand-assets/fonts/fonts.md` — шрифты
 - `brand-assets/past-posts/` — последние посты под каждый профиль
+
+> ⚠️ `brand-assets/color-palette/colors.md` (`#2962FF`) и `brand-assets/fonts/fonts.md` (Inter) — **устарели** (это были placeholder-ы до получения Figma). Каноничны `#143DFF` и **Satoshi** из `DESIGN.md`. Оба старых файла переведены в redirect-заглушки. Не воскрешать `#2962FF` / Inter (см. `DESIGN.md` §15 superseded).
 
 **Visual references (Figma):**
 - Blog banners: https://www.figma.com/design/zWV1W9fs7cbp7Jc0pVDTDX/Blog-banners
@@ -239,6 +248,7 @@
 | 2026-07-01 | Design tip logic reworked: social post visuals now adapt from the article's OG image direction (publish-package.md section 4). Fields: article visual / format / adaptation / keep. Designer adapts one asset, not creates from scratch. | Claude / Vadim |
 | 2026-07-01 | Post formats defined: text, text + photo, carousel, infographic, lead magnet, poll, screenshot. post-drafter selects format per post with platform constraints (poll: LinkedIn/Twitter only; lead magnet: LinkedIn/Facebook only). | Claude / Vadim |
 | 2026-07-05 | `icp-detail.md` rewritten from internal ICP/Sales Google Doc (12-segment playbook): added precise buyer titles, categorized pain points, revenue thresholds, named company examples, and buying signals for every existing FitXpress/Mobile Tailor segment. Added 2 new segments: FitXpress Plastic Surgery (Turkey-first geo) and FitXpress BCRL Detection & Monitoring. Section 4 summary and geo list updated. `context-pack-builder.md` updated to pull segment-specific ICP context (persona + pain points) for SEO/social, not just outbound. | Claude / Vadim |
+| 2026-07-06 | Added 3 canonical top-level docs — `about-me.md` (FitXpress brand voice + claims discipline), `audience.md` (7 health segments: hook + what-not-to-say), `DESIGN.md` (confirmed Figma design system). Wired them into the agent system: section 6 now points to about-me/audience as voice source of truth; section 7 makes DESIGN.md the single design source of truth; section 15 adds them as mandatory read #0 for seo-planner/seo-writer. **Resolved stale-token conflict:** `DESIGN.md` (`#143DFF`, Satoshi) supersedes placeholder `colors.md` (`#2962FF`) and `fonts.md` (Inter) — both converted to redirect stubs. Updated `context-pack-builder` (voice_fingerprint + audience-layer fields sourced from about-me/audience), `brand-checker` (checks against about-me claims discipline + DESIGN tokens), `post-drafter` (reads about-me/audience), `visual-brief` (reads DESIGN.md, correct tokens). | Claude / Vadim |
 
 ---
 
@@ -295,6 +305,7 @@ top_issue: [1 sentence] | none
 
 `seo-planner` and `seo-writer` MUST, before planning or writing:
 
+0. **Read `about-me.md` and `audience.md` (repo root) first.** `about-me.md` governs voice and claims discipline (the reframe move, "accurate enough for which decision?", the two-benchmarks rule, repeatability written as `< 1 cm`, the standard 12-part article structure, CTA-by-funnel-stage). `audience.md` fixes the target segment and its hook + "what NOT to say" before a single line is written. These override generic product tone. On any conflict with the summary in section 6, these files win on voice/audience; facts still come from `brand-assets/product-info/`.
 1. **Read `brand-assets/style-guides/blog-style-guide.md` in full** — the voice, structural templates (Article Types A–F), banned patterns, and per-vertical vocabulary are not optional.
 2. **Read 2–3 relevant past-articles from `brand-assets/past-articles/blog/`** that match the target vertical:
    - FitXpress topics → read at least one of: `mobile-body-scanning-insurance-underwriting.md`, `wellness-rewards-verification-employers-insurers-using-ai-3d-body-scanning.md`, `3dlook-turns-two-photos-structured-body-data.md`
