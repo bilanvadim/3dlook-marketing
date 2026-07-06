@@ -7,7 +7,7 @@
 # agents/skills/commands load. A Claude Code RESTART is required to apply.
 #
 # Usage:
-#   switch-profile.sh <dev|seo|marketing|security>   activate a profile
+#   switch-profile.sh <dev|seo|marketing|security|marketing_vb|marketing_vb_sm>   activate a profile
 #   switch-profile.sh --list                          list available profiles
 #   switch-profile.sh --current                       show the active profile
 #

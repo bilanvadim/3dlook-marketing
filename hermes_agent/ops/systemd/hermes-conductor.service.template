@@ -6,12 +6,15 @@ Requires=docker.service
 
 [Service]
 Type=simple
-User=sergiy_prod
-Environment=HOME=/home/sergiy_prod
+# Tokens below are filled by install.sh (user, home, repo root, stack env path).
+User=@USER@
+Environment=HOME=@HOME@
 Environment=PATH=/usr/local/bin:/usr/bin:/bin
-EnvironmentFile=/srv/sergiy_prod/ai-agents-config/claude_code/DEV/full_stack_sm/conductor/.env
-WorkingDirectory=/srv/sergiy_prod/ai-agents-config/claude_code/DEV/full_stack_sm/conductor
-ExecStart=/srv/sergiy_prod/ai-agents-config/hermes_agent/ops/conductor-run.sh
+Environment=HERMES_REPO_ROOT=@REPO_ROOT@
+Environment=STACK_ENV=@STACK_ENV@
+EnvironmentFile=@REPO_ROOT@/claude_code/DEV/full_stack_sm/conductor/.env
+WorkingDirectory=@REPO_ROOT@/claude_code/DEV/full_stack_sm/conductor
+ExecStart=@REPO_ROOT@/hermes_agent/ops/conductor-run.sh
 Restart=always
 RestartSec=5
 # Cost is not capped by design; the only runaway control is the in-process breaker.

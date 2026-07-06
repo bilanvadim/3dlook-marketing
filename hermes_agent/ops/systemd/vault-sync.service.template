@@ -1,0 +1,12 @@
+[Unit]
+Description=Sync AI Second Brain vault to git (commit+push branch main)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+# install.sh fills @REPO_ROOT@. The vault lives inside the repo, so VAULT_REPO
+# defaults correctly; set WIKI_PATH only if a tool needs the absolute vault dir.
+Environment=WIKI_PATH=@REPO_ROOT@/hermes_agent/AI-Second-Brain
+Environment=VAULT_REPO=@REPO_ROOT@
+ExecStart=@REPO_ROOT@/hermes_agent/ops/vault-sync.sh

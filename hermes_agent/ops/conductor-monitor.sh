@@ -16,8 +16,8 @@
 #   --dry-run   print what it WOULD send, send nothing
 set -uo pipefail
 
-ENVF="${HERMES_ENV_FILE:-/home/sergiy_prod/.hermes/.env}"
-STATE="${CONDUCTOR_MONITOR_STATE:-/home/sergiy_prod/.hermes/.conductor-monitor-state}"
+ENVF="${HERMES_ENV_FILE:-$HOME/.hermes/.env}"
+STATE="${CONDUCTOR_MONITOR_STATE:-$HOME/.hermes/.conductor-monitor-state}"
 PG_CONTAINER="${HC_PG_CONTAINER:-supabase-db}"
 MODE="${1:-notify}"
 

@@ -4,9 +4,12 @@
 # Commits ONLY that subfolder, so unrelated repo changes are untouched. $0 cost.
 set -uo pipefail
 
-REPO="/srv/sergiy_prod/ai-agents-config"
+# Portable: REPO defaults to the checkout root inferred from this script's path
+# (hermes_agent/ops/vault-sync.sh -> repo root). Override with $VAULT_REPO.
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO="${VAULT_REPO:-$(cd "$SCRIPT_DIR/../.." && pwd)}"
 SUBDIR="hermes_agent/AI-Second-Brain"
-BRANCH="main"
+BRANCH="${VAULT_BRANCH:-main}"
 cd "$REPO" 2>/dev/null || { echo "repo not found: $REPO" >&2; exit 1; }
 [ -d .git ] || { echo "not a git repo: $REPO" >&2; exit 1; }
 

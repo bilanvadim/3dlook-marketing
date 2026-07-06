@@ -1,0 +1,8 @@
+# rendered, machine-specific systemd units
+hermes_agent/ops/systemd/generated/
+# conductor runtime
+claude_code/DEV/full_stack_sm/conductor/node_modules/
+claude_code/DEV/full_stack_sm/conductor/.env
+# node / python noise
+**/__pycache__/
+**/*.pyc

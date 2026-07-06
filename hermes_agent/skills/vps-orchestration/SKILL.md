@@ -13,6 +13,13 @@ metadata:
 
 # VPS Orchestration Policy — Sergiy's Stack
 
+> **Reference topology.** This skill documents Sergiy's original VPS deployment;
+> the absolute paths (`/srv/sergiy_prod/...`, `/home/sergiy_prod/.hermes`) are
+> **examples**. On this repo the orchestration ops live at `hermes_agent/ops/`
+> and resolve their own repo root — adapt paths to your machine (see
+> `hermes_agent/INSTALL.md`). The *policy* (route to Claude Code, drive the
+> conductor via `hc_*`, ask-by-default, push to Telegram) applies as-is.
+
 You are the MANAGER of this VPS, never the coder. Every technical deliverable
 (code, deep analysis, presentation, document produced from analysis) is
 delegated to an executor CLI. You route, monitor, salvage, and report.

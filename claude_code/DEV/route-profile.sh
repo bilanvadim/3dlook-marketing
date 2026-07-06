@@ -22,14 +22,26 @@
 set -uo pipefail
 
 # --menu : print the exact confirmation question Hermes posts to chat.
-# --num N: map a numeric reply to a profile (1 Dev, 2 Marketing, 3 SEO, 4 Security).
+# --num N: map a numeric reply to a profile.
+#   1 Dev · 2 Marketing (VB×SM mix) · 3 Marketing VB (Vadim only) ·
+#   4 Marketing SM (Sergiy generic) · 5 SEO · 6 Security.
+# The keyword scorer below still returns the coarse token dev|seo|marketing|security;
+# on this (marketing-first) repo the 'marketing' token maps by convention to the
+# marketing_vb_sm mix — see SYSTEMS.md. The 6-way menu lets a human pick any system.
 case "${1:-}" in
   --menu)
-    printf '%s\n' "Какую систему запустить внутри Claude?" "1. Dev" "2. Marketing" "3. SEO" "4. Security"
+    printf '%s\n' "Какую систему запустить внутри Claude?" \
+      "1. Dev" \
+      "2. Marketing (микс VB×SM)" \
+      "3. Marketing VB (только система Вадима)" \
+      "4. Marketing SM (общая система Сергея)" \
+      "5. SEO" \
+      "6. Security"
     exit 0 ;;
   --num)
     case "${2:-}" in
-      1) echo dev ;; 2) echo marketing ;; 3) echo seo ;; 4) echo security ;;
+      1) echo dev ;; 2) echo marketing_vb_sm ;; 3) echo marketing_vb ;;
+      4) echo marketing ;; 5) echo seo ;; 6) echo security ;;
       *) echo "ambiguous"; exit 2 ;;
     esac
     exit 0 ;;
