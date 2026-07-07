@@ -1,12 +1,11 @@
-# rendered, machine-specific systemd units
-hermes_agent/ops/systemd/generated/
-# conductor runtime
-claude_code/DEV/full_stack_sm/conductor/node_modules/
-claude_code/DEV/full_stack_sm/conductor/.env
-# node / python noise
+# dependencies & build noise (anywhere)
+**/node_modules/
 **/__pycache__/
 **/*.pyc
-# conductor libSQL local state
+# secrets & local runtime state
+**/.env
 claude_code/DEV/full_stack_sm/conductor/*.db
 claude_code/DEV/full_stack_sm/conductor/*.db-wal
 claude_code/DEV/full_stack_sm/conductor/*.db-shm
+# rendered systemd units (machine-specific)
+hermes_agent/ops/systemd/generated/
