@@ -1,5 +1,5 @@
 /**
- * Fullstack agents Conductor — per-step runner (orchestration).
+ * Fullstack agents Orchestrator — per-step runner (orchestration).
  *
  * Runs ONE plan step through the verification loop: executor → independent gates →
  * reviewer (score) → runtime (when approved) → decideStep → persist. Retries with

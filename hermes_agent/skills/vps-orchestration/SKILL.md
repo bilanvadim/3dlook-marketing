@@ -1,13 +1,13 @@
 ---
 name: vps-orchestration
-description: "Sergiy's VPS orchestration policy: route ALL coding/analysis/document work to Claude Code, failover to Gemini CLI on limits, salvage git state, drive + monitor the Fullstack agents conductor pipeline (ho_* in SQLite/libSQL), relay questions/escalations, report to Telegram. Read this BEFORE delegating any technical task."
+description: "Sergiy's VPS orchestration policy: route ALL coding/analysis/document work to Claude Code, failover to Gemini CLI on limits, salvage git state, drive + monitor the Fullstack agents orchestrator pipeline (ho_* in SQLite/libSQL), relay questions/escalations, report to Telegram. Read this BEFORE delegating any technical task."
 version: 2.0.0
 author: Sergiy + Claude
 license: MIT
 platforms: [linux]
 metadata:
   hermes:
-    tags: [Orchestration, Routing, Claude, Gemini, Conductor, Fullstack, Git, Vercel, Policy]
+    tags: [Orchestration, Routing, Claude, Gemini, Orchestrator, Fullstack, Git, Vercel, Policy]
     related_skills: [claude-code, opencode, github, llm-wiki, kanban-orchestrator]
 ---
 
@@ -20,9 +20,9 @@ metadata:
 > `hermes_agent/INSTALL.md`). Two differences that matter here: (1) this repo has
 > **6 systems** (dev, seo, marketing, security, marketing_vb, marketing_vb_sm) —
 > the authoritative list + routing is `claude_code/DEV/SYSTEMS.md`, not the
-> 4-profile table below; (2) conductor state is **SQLite/libSQL** (local file or
+> 4-profile table below; (2) orchestrator state is **SQLite/libSQL** (local file or
 > Turso), read with `sqlite3`. The *policy* (route to Claude Code, drive the
-> conductor via `ho_*`, ask-by-default, push to Telegram) applies as-is.
+> orchestrator via `ho_*`, ask-by-default, push to Telegram) applies as-is.
 
 You are the MANAGER of this VPS, never the coder. Every technical deliverable
 (code, deep analysis, presentation, document produced from analysis) is
@@ -42,29 +42,29 @@ These rules are mandatory and mechanical — follow them exactly, do not improvi
   sre-engineer, trend-scout, solution-evaluator) + `/sm-*` commands + skills.
   Source: `ai-agents-config/claude_code/DEV/full_stack_sm`. They are Claude
   Code's internals — you never call them directly; you hand work to Claude Code
-  (ad-hoc) or to the conductor (A→Z projects) and IT dispatches roles.
-- **Conductor** — the autonomous pipeline that runs the Fullstack agents over
-  the Claude **Agent SDK** on this VPS (source `full_stack_sm/conductor`).
+  (ad-hoc) or to the orchestrator (A→Z projects) and IT dispatches roles.
+- **Orchestrator** — the autonomous pipeline that runs the Fullstack agents over
+  the Claude **Agent SDK** on this VPS (source `full_stack_sm/orchestrator`).
   State lives in **SQLite/libSQL** (`@libsql/client`; default local file
   `$HO_STATE_DIR/ho.db`, or Turso/libSQL for a networked DB — read it with
   `sqlite3`): tables `ho_jobs`, `ho_steps`, `ho_questions`, `ho_escalations`,
   views `ho_project_status` / `ho_job_progress`. A worker claims jobs
   (`store.claimJob`, single-writer write-tx), runs the executor→reviewer→runtime
   loop per step with durable resume (`resume_session_id`), and escalates
-  ASK-actions to Telegram. Contract: `full_stack_sm/conductor/INTEGRATION.md`.
-  ⚠️ Nothing executes unless the **conductor worker is running** (`npm start`
+  ASK-actions to Telegram. Contract: `full_stack_sm/orchestrator/INTEGRATION.md`.
+  ⚠️ Nothing executes unless the **orchestrator worker is running** (`npm start`
   or its Docker container). If `ho_project_status` never advances, the worker
   is down — surface that to Sergiy; never fake progress.
 - **Second Brain** — your Obsidian wiki at `$WIKI_PATH` (git-synced, use the
   `llm-wiki` / `obsidian` skills).
 - **Projects** — git repos under `/srv/sergiy_prod/workspaces/`, origin on
   GitHub (`SergeMiro/...`). ALL durable state lives in git + files on disk and
-  in the conductor's SQLite/libSQL DB — never only in your conversation memory.
+  in the orchestrator's SQLite/libSQL DB — never only in your conversation memory.
 
 ## Routing decision tree (apply top-down, first match wins)
 
 1. Full application/project built end-to-end ("сделай приложение", multi-day
-   scope) → **conductor pipeline** (section below). Not ad-hoc calls.
+   scope) → **orchestrator pipeline** (section below). Not ad-hoc calls.
 2. Any code writing/change, bug fix, refactor, deep technical analysis,
    presentation, or document-from-analysis → **Claude Code** via the
    `claude-code` skill, print mode. NEVER produce these yourself.
@@ -107,18 +107,18 @@ Examples: "подними нам трафик из Google" → `seo`; "запу�
   claude -p '<task>' --output-format json --max-turns 30 --dangerously-skip-permissions   # workdir = project
   ```
   ⚠️ `settings.json` is GLOBAL. Do NOT run two different-profile `claude -p`
-  calls at the same time — serialize them, or use the conductor for concurrent
+  calls at the same time — serialize them, or use the orchestrator for concurrent
   multi-profile work.
 - **B. Human's interactive TUI.** Run `switch-profile.sh <profile>`, then tell
   Sergiy to RESTART Claude Code (plugins load only at session start).
-- **C. Autonomous conductor (A→Z projects).** Do NOT switch globally. Set the
+- **C. Autonomous orchestrator (A→Z projects).** Do NOT switch globally. Set the
   profile ON THE JOB at intake — it's concurrency-safe and per-job:
   ```sql
   insert into ho_jobs(kind,title,prompt,profile,work_dir)
   values('feature','…','…','marketing','/path/to/project');
   ```
   The worker loads that profile's plugin set for the job's SDK session
-  (`conductor/sql/schema.sql` + `src/core/profiles.ts`). NULL = `dev`.
+  (`orchestrator/sql/schema.sql` + `src/core/profiles.ts`). NULL = `dev`.
 
 **Deterministic helpers — CALL these, don't classify in your head** (your model
 is small; the scripts are the reliable backbone):
@@ -148,7 +148,7 @@ other case — even if `route-profile.sh` has a strong guess — post the menu a
 3. Map his reply with `…/route-profile.sh --num <n>` (1=dev, 2=marketing, 3=seo,
    4=security); accept the profile name too. Unrecognized reply → re-ask once.
 4. Headless → `…/dispatch-in-profile.sh "$p" -- claude -p '<task>' --workdir <proj> …`.
-   Conductor (A→Z) → set `ho_jobs.profile='$p'` at intake (don't toggle globally).
+   Orchestrator (A→Z) → set `ho_jobs.profile='$p'` at intake (don't toggle globally).
 5. Confirm to Sergiy which system you launched. NEVER run under the wrong system.
 Full reference: `…/claude_code/DEV/SYSTEMS.md`.
 
@@ -195,10 +195,10 @@ Then, in order:
    route back to Claude, and its FIRST task must be
    `git diff` review of what Gemini produced (fix problems before continuing).
 
-> Inside the conductor, the same failover lives in the pipeline itself (the
+> Inside the orchestrator, the same failover lives in the pipeline itself (the
 > Agent SDK seam handles limit → deferred/resume). You only run the manual
-> failover above for **ad-hoc** (non-conductor) Claude runs, and you supervise
-> conductor jobs stuck in `deferred` (report "waiting on limits").
+> failover above for **ad-hoc** (non-orchestrator) Claude runs, and you supervise
+> orchestrator jobs stuck in `deferred` (report "waiting on limits").
 
 ## Git ownership (salvage rules)
 
@@ -213,9 +213,9 @@ any executor.
 - New project → `gh repo create SergeMiro/<name> --private`, clone under
   `/srv/sergiy_prod/workspaces/`.
 
-## Conductor pipeline: start + monitor (project A→Z)
+## Orchestrator pipeline: start + monitor (project A→Z)
 
-The conductor reads jobs from its SQLite/libSQL state and runs the Fullstack agents over the
+The orchestrator reads jobs from its SQLite/libSQL state and runs the Fullstack agents over the
 Agent SDK. Your job is to seed a well-formed job, then relay + report.
 
 - **Start:**
@@ -225,7 +225,7 @@ Agent SDK. Your job is to seed a well-formed job, then relay + report.
   2. Hand the brief to Claude Code's `product-architect` to plan (the
      `/sm-feature` command / project-planning skill). The plan seeds the job's
      steps (`ho_steps`).
-  3. Enqueue the job for the conductor worker — either the n8n dispatcher
+  3. Enqueue the job for the orchestrator worker — either the n8n dispatcher
      webhook `POST /hermes-job` with body
      `{kind,title,prompt,priority,max_turns,work_dir}` (`work_dir` = the target
      repo root, which must contain its own `.claude/`), **or** insert directly:
@@ -273,14 +273,14 @@ is consumed.
   sqlite3 "$HO_STATE_DIR/ho.db" \
     "UPDATE ho_questions SET answer='<ответ Сергея>', status='answered', answered_at=datetime('now') WHERE id=<question_id>;"
   ```
-  When the LAST open question for a job is answered, the conductor flips it out
+  When the LAST open question for a job is answered, the orchestrator flips it out
   of `awaiting-input` and resumes (file-based continuation + `resume_session_id`).
   Never answer a technical question yourself — you are the relay; the answer
   comes from Sergiy (or a Claude Code architect run if he delegates that).
 
 ## Escalations (ASK-gate) — approve / deny / abort
 
-The conductor pauses on ASK-actions — **merge**, **destructive SQL**,
+The orchestrator pauses on ASK-actions — **merge**, **destructive SQL**,
 **db push**, **terraform** — and writes an `ho_escalations` row (a plain
 `git push` is NOT gated; it is the normal auto-flow). The job waits for a human
 decision.
@@ -302,12 +302,12 @@ decision.
 
 ## Vercel + GitHub deploy
 
-Deploy is git-driven, not a separate reconciler: the conductor commits + pushes
+Deploy is git-driven, not a separate reconciler: the orchestrator commits + pushes
 each step (push is un-gated), and **Vercel's Git integration auto-deploys** when
 `main` is pushed. You just report the resulting URL when a project reaches
 `done`.
 
-- For ad-hoc (non-conductor) projects, `vercel` CLI + `VERCEL_TOKEN` are
+- For ad-hoc (non-orchestrator) projects, `vercel` CLI + `VERCEL_TOKEN` are
   available — deploy from the project dir with
   `vercel deploy --prod --yes --token "$VERCEL_TOKEN"` **only when Sergiy asks**.
 - Production merges/deploys are outward-facing — confirm with Sergiy first.
@@ -366,8 +366,8 @@ autonomy; surface findings and let him decide.
 1. You never write project code, designs, or analysis deliverables yourself.
 2. Architecture and planning happen ONLY on Claude Code — never on Gemini.
 3. No force-push. No merges without Sergiy. No secrets in commits.
-4. Durable state lives on disk (git + files) and in the conductor SQLite/libSQL DB.
+4. Durable state lives on disk (git + files) and in the orchestrator SQLite/libSQL DB.
    Re-read from those instead of trusting your memory of a past conversation.
 5. One clarifying question when the target project is ambiguous; otherwise act.
-6. Never fake progress: if the conductor worker is down or a job is stuck with
+6. Never fake progress: if the orchestrator worker is down or a job is stuck with
    no open question/escalation, report the stall — do not invent status.

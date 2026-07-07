@@ -1,7 +1,7 @@
 /**
- * Fullstack agents Conductor — Telegram escalation notifier.
+ * Fullstack agents Orchestrator — Telegram escalation notifier.
  * Sends the human a message when a run pauses for a decision. The actual approve/deny
- * is recorded back into ho_escalations (by a tiny bot webhook or by n8n); the conductor
+ * is recorded back into ho_escalations (by a tiny bot webhook or by n8n); the orchestrator
  * polls the row via Store.waitEscalation. This module only PUSHES the notification.
  *
  * Kept dependency-free (uses fetch) so it works in any Node 18+ / container.

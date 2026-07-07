@@ -1,6 +1,6 @@
 # ai-agents-config
 
-Этот репозиторий — **Claude Code plugin marketplace** (подключается напрямую) **плюс** автономный дирижёр в подпапке `conductor/`.
+Этот репозиторий — **Claude Code plugin marketplace** (подключается напрямую) **плюс** автономный дирижёр в подпапке `orchestrator/`.
 
 > Полное описание всей системы и порядка работы — в **FULLSTACK-AGENTS.md**. Прочитай его первым.
 
@@ -9,7 +9,7 @@
 | Зона | Что это | Как используется |
 |---|---|---|
 | Корень (`.claude-plugin/`, `plugins/`, `CLAUDE.md`, `.claude/`) | Claude Code plugin marketplace: 9 агентов + trend-scout, правила оркестрации, enforcement безопасности | `/plugin marketplace add <repo>` в Claude Code |
-| `conductor/` | Автономный дирижёр (TypeScript-сервис вокруг Agent SDK) | `npm install && npm test`, затем Docker — см. `conductor/README.md` |
+| `orchestrator/` | Автономный дирижёр (TypeScript-сервис вокруг Agent SDK) | `npm install && npm test`, затем Docker — см. `orchestrator/README.md` |
 
 ## Быстрый старт (marketplace)
 ```
@@ -22,7 +22,7 @@
 
 ## Быстрый старт (дирижёр)
 ```
-cd conductor
+cd orchestrator
 cp .env.example .env   # заполнить Postgres + (опц.) Telegram
 npm install && npm test
 ```

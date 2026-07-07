@@ -1,4 +1,4 @@
--- Hermes Orchestrator — conductor state schema (SQLite / libSQL).
+-- Hermes Orchestrator — orchestrator state schema (SQLite / libSQL).
 -- Apply: sqlite3 ho.db < sql/schema.sql   (or via @libsql/client / Turso `turso db shell`).
 -- Single-file, single-writer store. For a networked/shared DB point the same code
 -- at a libSQL server or Turso (DATABASE_URL=libsql://…) — identical schema.
@@ -21,7 +21,7 @@ create table if not exists ho_jobs (
   priority      integer not null default 100,        -- lower = sooner
   status        text not null default 'queued'
                 check (status in ('queued','claimed','running','paused','planning','awaiting-input','verifying','done','failed','deferred','escalated','aborted')),
-  -- per-job circuit-breaker overrides (null = use conductor defaults). NO budget cap by design.
+  -- per-job circuit-breaker overrides (null = use orchestrator defaults). NO budget cap by design.
   max_turns      integer,
   max_wall_secs  integer,
   permission_mode text default 'acceptEdits'

@@ -4,7 +4,7 @@
 
 > **Две сущности — не путай:**
 > - **Fullstack agents** — ЭТА система (внутри Claude Code): 10 агентов + команды `/sm-*` + скиллы. Исполнительный слой («рабочие»).
-> - **Hermes Agent AI** — ВНЕШНИЙ оркестратор/менеджер (продукт NoSearch на VPS). Управляющий слой: маршрутизирует задачи между проектами/каналами (Claude Code-код, Claude Code-SEO, Canva-дизайн…), независимо проверяет результат Claude Code и держит связь с человеком. `conductor/` — первый кусок интеграции Hermes именно с каналом Claude Code (очередь/resume/эскалации), а не сам Hermes.
+> - **Hermes Agent AI** — ВНЕШНИЙ оркестратор/менеджер (продукт NoSearch на VPS). Управляющий слой: маршрутизирует задачи между проектами/каналами (Claude Code-код, Claude Code-SEO, Canva-дизайн…), независимо проверяет результат Claude Code и держит связь с человеком. `orchestrator/` — первый кусок интеграции Hermes именно с каналом Claude Code (очередь/resume/эскалации), а не сам Hermes.
 
 ## Кто ты в этой системе?
 Определи свою роль — от неё зависит всё:
@@ -34,7 +34,7 @@ ai-agents-config/
 │   ├── hermes-sre/       → sre-engineer (ошибки+кэш+rate limit+доступность)
 │   ├── hermes-scout/     → trend-scout (ежедневный скан) + solution-evaluator (/sm-evaluate конкретного решения)
 │   └── hermes-verify/    → code-reviewer (0-100+evidence) + runtime-verifier (e2e front+back+db) + verification-protocol + ultracite-lint + policy-packs
-└── conductor/            ← автономный дирижёр (TS-сервис, запускает всё это без человека)
+└── orchestrator/            ← автономный дирижёр (TS-сервис, запускает всё это без человека)
 ```
 
 ## Сценарий A — построить фичу (ты = оркестратор)
@@ -69,10 +69,10 @@ ai-agents-config/
 3. Результат — дайджест в `.claude/scratchpad/scout/`. **Scout НИЧЕГО НЕ УСТАНАВЛИВАЕТ** — только рекомендует. Решение за человеком.
 
 ## Сценарий D — автономный запуск (ты = дирижёр / разворачиваешь его)
-1. `cd conductor && cp .env.example .env` — DATABASE_URL по умолчанию `file:./ho.db` (+ опц. TELEGRAM_*).
+1. `cd orchestrator && cp .env.example .env` — DATABASE_URL по умолчанию `file:./ho.db` (+ опц. TELEGRAM_*).
 2. `npm install && npm test` — юнит-тесты (breaker/steploop/steprunner) + libSQL store smoke.
-3. Создать схему: `sqlite3 ho.db < conductor/sql/schema.sql` (для file:; или `turso db shell` для Turso).
-4. Запуск: `docker build -t hermes-conductor conductor/ && docker run --env-file conductor/.env -v $(pwd):/work hermes-conductor`. Ставь `work_dir=/work` в job (там лежит `.claude/`).
+3. Создать схему: `sqlite3 ho.db < orchestrator/sql/schema.sql` (для file:; или `turso db shell` для Turso).
+4. Запуск: `docker build -t hermes-orchestrator orchestrator/ && docker run --env-file orchestrator/.env -v $(pwd):/work hermes-orchestrator`. Ставь `work_dir=/work` в job (там лежит `.claude/`).
 5. Поставить задачу: `insert into ho_jobs(kind,title,prompt,...)` или через n8n webhook.
 
 ## 🔒 Незыблемые правила (нарушение = поломка системы)
@@ -103,7 +103,7 @@ Fullstack agents — это система, которая позволяет в
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│  conductor/  (слой C)  —  «ДИРИЖЁР»                            │
+│  orchestrator/  (слой C)  —  «ДИРИЖЁР»                            │
 │  Автономный TS-сервис. Запускает Claude Code без человека,     │
 │  держит безопасность + durable resume, эскалирует в Telegram.  │
 │                          │ запускает через Agent SDK           │
@@ -116,7 +116,7 @@ Fullstack agents — это система, которая позволяет в
 └──────────────────────────────────────────────────────────────┘
 ```
 
-**Аналогия:** marketplace — это оркестр (музыканты) и партитура (правила). Conductor — дирижёр, который запускает оркестр автономно. Fullstack agents как «роль оркестратора» живёт внутри marketplace (главная сессия Claude Code, ведомая CLAUDE.md); Fullstack agents как «автономный сервис» — это conductor.
+**Аналогия:** marketplace — это оркестр (музыканты) и партитура (правила). Orchestrator — дирижёр, который запускает оркестр автономно. Fullstack agents как «роль оркестратора» живёт внутри marketplace (главная сессия Claude Code, ведомая CLAUDE.md); Fullstack agents как «автономный сервис» — это orchestrator.
 
 ---
 
@@ -148,18 +148,18 @@ Fullstack agents — это система, которая позволяет в
     └── hermes-scout/                ← trend-scout (ежедневный скан экосистемы; report-only)
 ```
 
-### C — `conductor/`  (автономный сервис НАД Claude Code)
+### C — `orchestrator/`  (автономный сервис НАД Claude Code)
 TypeScript-сервис вокруг `@anthropic-ai/claude-agent-sdk`. НЕ Claude Code plugin — это процесс, который Claude Code запускает.
 
 ```
-conductor/
+orchestrator/
 ├── ARCHITECTURE.md                  ← 5-слойная схема и обоснования
 ├── sql/schema.sql                   ← очередь задач, прогоны (session_id для resume), эскалации
 │                                      + ho_claim_job() (атомарный захват) + ho_recover_stale() (resume упавших)
 ├── src/core/
 │   ├── breaker.ts                   ← CIRCUIT BREAKER. Сердце. Логика остановки. 11 тестов.
 │   ├── store.ts                     ← доступ к Postgres
-│   └── conductor.ts                 ← главный цикл: SDK ↔ breaker ↔ store ↔ escalation
+│   └── orchestrator.ts                 ← главный цикл: SDK ↔ breaker ↔ store ↔ escalation
 ├── src/escalation/
 │   ├── telegram.ts                  ← уведомление человеку (кнопки approve/deny/abort)
 │   └── bot-callback.ts              ← приём решения человека → в ho_escalations
@@ -178,7 +178,7 @@ conductor/
    ▼
 n8n  ──POST /hermes-job──►  libSQL: insert into ho_jobs (status=queued)
    ▼
-conductor/ (воркер)
+orchestrator/ (воркер)
    │ 1. store.claimJob() — атомарно берёт задачу (write-транзакция SQLite, single-writer)
    │ 2. preflight: есть resume_session_id? (упавший/приостановленный прогон — продолжаем)
    │ 3. query() из Agent SDK с settingSources:['project'] (+ resume:<session_id> если есть)
@@ -204,7 +204,7 @@ Telegram: "🟡 approve / deny / abort"  ──►  человек жмёт кн
    │                                          ▼
    │                              bot-callback пишет решение в ho_escalations
    ▼                                          │
-conductor.waitEscalation() ◄─────────────────┘  (resume или abort)
+orchestrator.waitEscalation() ◄─────────────────┘  (resume или abort)
    ▼
 терминал: done | failed | deferred | escalated | aborted
    ▼
@@ -218,7 +218,7 @@ Telegram: "✅/❌ job <status> + summary"
 1. **Контекст между агентами — через файлы**, не через summary. Субагенты изолированы и не общаются; всё идёт через `.claude/scratchpad/<feature>/` (см. скилл `scratchpad-protocol`). Это же делает безопасным `/clear` для экономии токенов — состояние поднимается с диска.
 2. **Тиринг моделей.** Opus последняя (`claude-opus-4-8`) — на ВСЁ (архитектура, код, дизайн, БД, тесты, безопасность, SRE, scout). Sonnet — только рутина, которая мало что значит. Затраты сознательно НЕ оптимизируем — приоритет качество.
 3. **commit/push авто, merge — человек.** После каждого хода `Stop`-хук коммитит+пушит ветку → Vercel деплоит сам (Git-интеграция). Гейтятся только: `gh pr merge`, destructive SQL, `supabase db push`, terraform. Два уровня: `guard.py` (внутри Claude Code) и ask-gate (в дирижёре). На `main`/`master` авто-push выключен.
-4. **Дирижёр — это про остановку и про возобновление, не про бюджет.** Agent SDK по умолчанию НЕ лимитирует ходы. Бюджет/деньги НЕ контролируем. Единственный runaway-контроль — детект зацикливания (`stuck`) + щедрые backstop'ы по ходам/времени. При исчерпании токенов/лимита — пауза и **durable resume** по `session_id` (хоть через 5–25 часов). Всё в `breaker.ts` + `conductor.ts`.
+4. **Дирижёр — это про остановку и про возобновление, не про бюджет.** Agent SDK по умолчанию НЕ лимитирует ходы. Бюджет/деньги НЕ контролируем. Единственный runaway-контроль — детект зацикливания (`stuck`) + щедрые backstop'ы по ходам/времени. При исчерпании токенов/лимита — пауза и **durable resume** по `session_id` (хоть через 5–25 часов). Всё в `breaker.ts` + `orchestrator.ts`.
 5. **Никогда `bypassPermissions` в автономе.** Он раздаёт full-access всем субагентам и снимает guard. Только `acceptEdits`.
 6. **scout ничего не устанавливает.** Только дайджест; решение об установке — за человеком (после статистики: 13.4% публичных скиллов имели критические уязвимости).
 7. **Падающий тест — это находка, а не препятствие.** Не ослаблять и не удалять тесты ради зелёной сборки.
@@ -234,9 +234,9 @@ TypeScript strict / Next.js (App Router, Route Handlers) или FastAPI (Python)
 ## 5. Развёртывание (порядок)
 
 1. **Marketplace.** Залить `<repo root>/` в git. В рабочем проекте: `/plugin marketplace add <repo>`, поставить `hermes-core` + нужные слои. Внешние компаньоны: `frontend-design@claude-plugins-official`, `superpowers@claude-plugins-official`, `trailofbits/skills`.
-2. **State.** Создать схему: `sqlite3 ho.db < conductor/sql/schema.sql` (file:; или Turso `turso db shell`).
-3. **Проверка ядра.** В `conductor/`: `npm install && npm test` (breaker/steploop/steprunner + libSQL store smoke, без сети/API).
-4. **Conductor.** Заполнить `.env` (см. `.env.example`; DATABASE_URL по умолчанию `file:./ho.db`). `npm start` (или `docker build`/`docker run --env-file .env -v <repo>:/work`). Рабочий репозиторий должен содержать `.claude/` от marketplace.
+2. **State.** Создать схему: `sqlite3 ho.db < orchestrator/sql/schema.sql` (file:; или Turso `turso db shell`).
+3. **Проверка ядра.** В `orchestrator/`: `npm install && npm test` (breaker/steploop/steprunner + libSQL store smoke, без сети/API).
+4. **Orchestrator.** Заполнить `.env` (см. `.env.example`; DATABASE_URL по умолчанию `file:./ho.db`). `npm start` (или `docker build`/`docker run --env-file .env -v <repo>:/work`). Рабочий репозиторий должен содержать `.claude/` от marketplace.
 5. **Triggers.** Импортировать `n8n/hermes-dispatcher.json`, подключить БД-креды (libSQL/Turso) и Telegram-бота.
 6. **Первый прогон.** Поставить тестовую задачу (`insert into ho_jobs` или webhook) с небольшим `max_turns` и смотреть статусы в `ho_jobs` / `ho_runs`. Проверить, что `resume_session_id` проставляется, и что пауза по лимиту переводит job в `deferred`, а не в `failed`.
 
@@ -257,7 +257,7 @@ TypeScript strict / Next.js (App Router, Route Handlers) или FastAPI (Python)
 **НЕ реализовано / осознанно убрано:**
 - **Контроль денег убран полностью.** Бюджет/ledger/дневной пул не считаем — приоритет качество, защита только от зацикливания.
 - **Авто-`/clear` каждые N запросов в интерактиве — невозможно хуком** (хук не умеет запускать слэш-команды). Сделан только счётчик-напоминание (`clear-counter.py`); реальная экономия — встроенная авто-компакция Claude Code и изоляция контекста по scratchpad. В дирижёре каждый job — это и так свежая сессия.
-- **Единая точка связи с SDK** — `mapSdkMessage()` в `conductor.ts`. SDK быстро меняется (TS V2 в preview); если форма сообщений уедет, правится только эта функция.
+- **Единая точка связи с SDK** — `mapSdkMessage()` в `orchestrator.ts`. SDK быстро меняется (TS V2 в preview); если форма сообщений уедет, правится только эта функция.
 - Observability/дашборды — нет (осознанно). Приоритизация задач — примитивная (priority + FIFO).
 - Эвалы для агентов/скиллов — отложены; полагаемся на ручную проверку на реальной фиче.
 
@@ -269,7 +269,7 @@ TypeScript strict / Next.js (App Router, Route Handlers) или FastAPI (Python)
 - **Skill** — знание («как делать»). Progressive disclosure: ~100 токенов описания на старте, тело — по триггеру. Дёшево.
 - **MCP server** — доступ к внешним системам («руки»). Самый дорогой по токенам. У Fullstack agents подключается per-project, не глобально.
 - **Orchestrator (Fullstack agents-роль)** — главная сессия Claude Code, ведомая CLAUDE.md, делегирует субагентам через Task tool.
-- **Conductor (Fullstack agents-сервис)** — внешний автономный процесс, запускающий оркестратор без человека.
+- **Orchestrator (Fullstack agents-сервис)** — внешний автономный процесс, запускающий оркестратор без человека.
 - **scratchpad** — `.claude/scratchpad/<feature>/` — файловый канал передачи контекста между агентами.
 - **circuit breaker** — модуль остановки/паузы автономного прогона: детект зацикливания, backstop по ходам/времени, пауза по rate-лимиту (→ durable resume), ask-gate. Бюджет НЕ контролирует.
 - **durable resume** — продолжение прогона по сохранённому `session_id` после паузы по лимиту или падения процесса (через минуты или часы).

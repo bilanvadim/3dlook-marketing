@@ -19,4 +19,4 @@ The quality & verification layer — makes **"done" mean the code actually works
 ## Defaults
 `PASS_SCORE=85` · `NEEDS_REVIEW=70` · `MIN_PROGRESS_DELTA=3` · `MAX_ATTEMPTS=3`.
 
-> Autonomous step-state (per-step retry/resume in the conductor via an `ho_steps` table) is the next phase — this plugin defines the logic; the conductor will execute it deterministically.
+> Autonomous step-state (per-step retry/resume in the orchestrator via an `ho_steps` table) is the next phase — this plugin defines the logic; the orchestrator will execute it deterministically.

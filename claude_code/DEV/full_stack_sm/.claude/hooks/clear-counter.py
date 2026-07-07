@@ -8,8 +8,8 @@ command — there is no hook output that resets the context window. So this hook
 does the only thing it can: on every 5th prompt it injects a visible reminder
 to run /clear (your context lives in .claude/scratchpad/, so clearing is safe).
 
-For the AUTONOMOUS conductor, the real periodic reset is done in code
-(fresh SDK session every N turns) — see conductor/src/core/conductor.ts.
+For the AUTONOMOUS orchestrator, the real periodic reset is done in code
+(fresh SDK session every N turns) — see orchestrator/src/core/orchestrator.ts.
 
 Counter is per-session, stored under the git dir. Exit 0 always.
 """

@@ -60,8 +60,8 @@ cd claude_code/DEV      # (inside your checkout of this repo)
 - **Headless (`claude -p …`):** each `claude -p` is a fresh process that reads
   settings at start. Run `switch-profile.sh <p>` **before** the call.
   `settings.json` is global, so don't run two different-profile headless calls
-  at once — serialize, or use the conductor.
-- **Conductor (autonomous A→Z jobs):** don't switch globally. Put the profile on
+  at once — serialize, or use the orchestrator.
+- **Orchestrator (autonomous A→Z jobs):** don't switch globally. Put the profile on
   the job; the worker loads that profile's plugins per-job (concurrency-safe):
   ```sql
   insert into ho_jobs(kind,title,prompt,profile,work_dir)

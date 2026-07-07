@@ -1,7 +1,7 @@
-# conductor (TS service)
-conductor/node_modules/
-conductor/dist/
-conductor/.env
+# orchestrator (TS service)
+orchestrator/node_modules/
+orchestrator/dist/
+orchestrator/.env
 *.log
 
 # python caches (scout scripts)

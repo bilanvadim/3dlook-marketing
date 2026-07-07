@@ -4,30 +4,30 @@
 # it prepares everything and PRINTS the privileged commands for you to review & run.
 #
 # Usage:
-#   ./install.sh                      # checks + prepare conductor + render systemd units
+#   ./install.sh                      # checks + prepare orchestrator + render systemd units
 #   ./install.sh --profile <name>     # also activate a Claude Code system now
-#   ./install.sh --no-conductor       # skip conductor npm/test (Claude Code side only)
+#   ./install.sh --no-orchestrator       # skip orchestrator npm/test (Claude Code side only)
 #   ./install.sh --user <u> --home <h>                      # values baked into systemd units
 #
-# Conductor state is SQLite/libSQL (default local file); no Postgres/Supabase needed.
+# Orchestrator state is SQLite/libSQL (default local file); no Postgres/Supabase needed.
 # Profiles: dev | seo | marketing | security | marketing_vb | marketing_vb_sm
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DEV_DIR="$REPO_ROOT/claude_code/DEV"
-CONDUCTOR_DIR="$REPO_ROOT/claude_code/DEV/full_stack_sm/conductor"
+ORCHESTRATOR_DIR="$REPO_ROOT/claude_code/DEV/full_stack_sm/orchestrator"
 SYSTEMD_SRC="$REPO_ROOT/hermes_agent/ops/systemd"
 GEN_DIR="$SYSTEMD_SRC/generated"
 
 PROFILE=""
-DO_CONDUCTOR=1
+DO_ORCHESTRATOR=1
 SVC_USER="${SUDO_USER:-$USER}"
 SVC_HOME="$HOME"
 
 while [ $# -gt 0 ]; do
   case "$1" in
     --profile) PROFILE="$2"; shift 2 ;;
-    --no-conductor) DO_CONDUCTOR=0; shift ;;
+    --no-orchestrator) DO_ORCHESTRATOR=0; shift ;;
     --user) SVC_USER="$2"; shift 2 ;;
     --home) SVC_HOME="$2"; shift 2 ;;
     -h|--help) grep '^#' "$0" | sed 's/^# \{0,1\}//'; exit 0 ;;
@@ -49,7 +49,7 @@ for bin in claude python3; do
   have "$bin" && ok "$bin: $(command -v "$bin")" || warn "$bin NOT found (required for Claude Code systems)"
 done
 for bin in node npm sqlite3; do
-  have "$bin" && ok "$bin: $(command -v "$bin")" || warn "$bin NOT found (needed for the Hermes conductor / libSQL state)"
+  have "$bin" && ok "$bin: $(command -v "$bin")" || warn "$bin NOT found (needed for the Hermes orchestrator / libSQL state)"
 done
 
 # ---------------------------------------------------------------------------
@@ -68,34 +68,34 @@ else
 fi
 
 # ---------------------------------------------------------------------------
-if [ "$DO_CONDUCTOR" = 1 ]; then
-  say "3) Hermes conductor (autonomous worker)"
-  if [ -d "$CONDUCTOR_DIR" ]; then
+if [ "$DO_ORCHESTRATOR" = 1 ]; then
+  say "3) Hermes orchestrator (autonomous worker)"
+  if [ -d "$ORCHESTRATOR_DIR" ]; then
     if have npm; then
       info "installing deps (npm ci)…"
-      ( cd "$CONDUCTOR_DIR" && (npm ci --no-audit --no-fund 2>/dev/null || npm install --no-audit --no-fund) ) && ok "deps installed"
+      ( cd "$ORCHESTRATOR_DIR" && (npm ci --no-audit --no-fund 2>/dev/null || npm install --no-audit --no-fund) ) && ok "deps installed"
       info "running core tests (no API/network)…"
-      ( cd "$CONDUCTOR_DIR" && npm test >/dev/null 2>&1 ) && ok "conductor tests pass" || warn "conductor tests failed — inspect: (cd $CONDUCTOR_DIR && npm test)"
+      ( cd "$ORCHESTRATOR_DIR" && npm test >/dev/null 2>&1 ) && ok "orchestrator tests pass" || warn "orchestrator tests failed — inspect: (cd $ORCHESTRATOR_DIR && npm test)"
     else
-      warn "npm missing — skipping conductor build"
+      warn "npm missing — skipping orchestrator build"
     fi
-    if [ ! -f "$CONDUCTOR_DIR/.env" ]; then
-      cp "$CONDUCTOR_DIR/.env.example" "$CONDUCTOR_DIR/.env"
-      warn "created conductor/.env from example — default DATABASE_URL=file:./ho.db (edit for ANTHROPIC auth / Telegram / Turso)"
+    if [ ! -f "$ORCHESTRATOR_DIR/.env" ]; then
+      cp "$ORCHESTRATOR_DIR/.env.example" "$ORCHESTRATOR_DIR/.env"
+      warn "created orchestrator/.env from example — default DATABASE_URL=file:./ho.db (edit for ANTHROPIC auth / Telegram / Turso)"
     else
-      ok "conductor/.env present"
+      ok "orchestrator/.env present"
     fi
     # create the local libSQL schema (file: mode) so the queue is ready
     if have sqlite3; then
-      ( cd "$CONDUCTOR_DIR" && sqlite3 ho.db < sql/schema.sql ) && ok "libSQL schema applied → $CONDUCTOR_DIR/ho.db"
+      ( cd "$ORCHESTRATOR_DIR" && sqlite3 ho.db < sql/schema.sql ) && ok "libSQL schema applied → $ORCHESTRATOR_DIR/ho.db"
     else
-      warn "sqlite3 missing — create state later: (cd $CONDUCTOR_DIR && sqlite3 ho.db < sql/schema.sql)"
+      warn "sqlite3 missing — create state later: (cd $ORCHESTRATOR_DIR && sqlite3 ho.db < sql/schema.sql)"
     fi
   else
-    warn "conductor dir not found: $CONDUCTOR_DIR"
+    warn "orchestrator dir not found: $ORCHESTRATOR_DIR"
   fi
 else
-  say "3) Hermes conductor — skipped (--no-conductor)"
+  say "3) Hermes orchestrator — skipped (--no-orchestrator)"
 fi
 
 # ---------------------------------------------------------------------------
@@ -116,18 +116,18 @@ info "user=$SVC_USER home=$SVC_HOME"
 # ---------------------------------------------------------------------------
 say "Next steps (privileged / manual) — see INSTALL.md for detail"
 cat <<EOF
-  # A. (done above for file: mode) conductor state = SQLite/libSQL. Networked/Turso
-  #    instead? set DATABASE_URL=libsql://… in conductor/.env and load the schema:
-  #      turso db shell <db> < "$CONDUCTOR_DIR/sql/schema.sql"
+  # A. (done above for file: mode) orchestrator state = SQLite/libSQL. Networked/Turso
+  #    instead? set DATABASE_URL=libsql://… in orchestrator/.env and load the schema:
+  #      turso db shell <db> < "$ORCHESTRATOR_DIR/sql/schema.sql"
 
-  # B. Install the conductor service (review the rendered unit first):
-  sudo cp "$GEN_DIR/hermes-conductor.service" /etc/systemd/system/
-  sudo systemctl daemon-reload && sudo systemctl enable --now hermes-conductor
+  # B. Install the orchestrator service (review the rendered unit first):
+  sudo cp "$GEN_DIR/hermes-orchestrator.service" /etc/systemd/system/
+  sudo systemctl daemon-reload && sudo systemctl enable --now hermes-orchestrator
 
-  # C. Conductor push-notifier (open questions/escalations/done → Telegram), cron every 5 min:
-  ( crontab -l 2>/dev/null; echo "*/5 * * * * $REPO_ROOT/hermes_agent/ops/conductor-monitor.sh >> \$HOME/.hermes/conductor-monitor.log 2>&1" ) | crontab -
+  # C. Orchestrator push-notifier (open questions/escalations/done → Telegram), cron every 5 min:
+  ( crontab -l 2>/dev/null; echo "*/5 * * * * $REPO_ROOT/hermes_agent/ops/orchestrator-monitor.sh >> \$HOME/.hermes/orchestrator-monitor.log 2>&1" ) | crontab -
 
   # D. Enqueue a job (profile ∈ the 6 systems):
-  sqlite3 "$CONDUCTOR_DIR/ho.db" "insert into ho_jobs(kind,title,prompt,profile,work_dir) values('feature','smoke','say hi','marketing_vb_sm','$REPO_ROOT');"
+  sqlite3 "$ORCHESTRATOR_DIR/ho.db" "insert into ho_jobs(kind,title,prompt,profile,work_dir) values('feature','smoke','say hi','marketing_vb_sm','$REPO_ROOT');"
 EOF
 ok "install.sh done"

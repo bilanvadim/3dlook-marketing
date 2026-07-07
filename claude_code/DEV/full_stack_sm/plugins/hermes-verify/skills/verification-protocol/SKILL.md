@@ -5,7 +5,7 @@ description: The loop that makes "done" mean working code. After any implementat
 
 # Verification protocol — never trust "it works", prove it
 
-"The executor said it's done" is a claim. This protocol turns claims into evidence. The orchestrator (or the conductor in autonomous mode) runs it per implementation task; the same logic applies whether one person or a robot drives it.
+"The executor said it's done" is a claim. This protocol turns claims into evidence. The orchestrator (or the orchestrator in autonomous mode) runs it per implementation task; the same logic applies whether one person or a robot drives it.
 
 ## The non-negotiable rule
 **Re-run every gate yourself. Never accept a self-reported gate.** The executor's `quality_gates` block is a hint; ground truth is you running the command and reading the output.
@@ -57,7 +57,7 @@ Keep `.claude/scratchpad/<feature>/review/critiques.json` as an append-only arra
 Every acceptance criterion must end the loop as `verified` with concrete evidence (test name + result, file:line, endpoint response, Playwright trace). `not_verifiable` counts against the score — if you can't prove it, it isn't done.
 
 ## Escalation (autonomous mode)
-On BLOCK or NEEDS_REVIEW the conductor opens an escalation (Telegram) with the score, the top issues, and the diff — the human decides retry/approve/abort. In interactive mode, surface the same to the operator.
+On BLOCK or NEEDS_REVIEW the orchestrator opens an escalation (Telegram) with the score, the top issues, and the diff — the human decides retry/approve/abort. In interactive mode, surface the same to the operator.
 
 ## Policy packs
 Before reviewing/implementing a task, load the relevant `plugins/hermes-verify/policy-packs/<layer>.md` (by the task's tags) — they are the shared per-layer standard the executor builds to and the reviewer checks against.

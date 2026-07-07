@@ -17,7 +17,7 @@ Fullstack agents default stack (the thing you're judging fit against): TypeScrip
 4. **SECURITY GATE.** Apply the same scrutiny as trend-scout: read source for risky patterns (network calls, shell-out, secret handling, postinstall scripts, over-broad permissions/tools). Any red flag → it must appear in the verdict; never recommend something past an unaddressed flag. (Reminder: 13.4% of public skills had critical vulns — assume nothing.)
 5. **FIT vs OUR SYSTEM.** Map it to a Fullstack agents layer. Is there an incumbent (e.g. plain PostgreSQL, Drizzle, pg-boss, the app's own auth, an existing agent/skill/plugin)? Note overlap and conflicts with the default stack.
 6. **DECISION.** One of: **REPLACE** an incumbent (name it; justify concretely why better — "new" is NOT "better"), **ADD** as a new additive capability (name the gap it fills), **TRIAL** (worth a scoped pilot before commitment), or **SKIP** (say why). Be decisive.
-7. **INTEGRATION PLAN.** Concrete, system-specific steps: which plugin/agent/skill/command, which stack default or `CLAUDE.md` rule changes, config/env/MCP wiring, conductor implications, migration path if replacing, and rollback. Do NOT apply changes — propose them.
+7. **INTEGRATION PLAN.** Concrete, system-specific steps: which plugin/agent/skill/command, which stack default or `CLAUDE.md` rule changes, config/env/MCP wiring, orchestrator implications, migration path if replacing, and rollback. Do NOT apply changes — propose them.
 8. **REPORT.** Write the full report to `.claude/scratchpad/evaluate/<slug>-YYYY-MM-DD.md` AND print the short version (below) to the human.
 
 ## Short report format (what the human reads)

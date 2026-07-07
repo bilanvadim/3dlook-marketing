@@ -4,7 +4,7 @@ This branch (`sergiy_config`) adds Sergiy's two-layer agent system on top of
 Vadim's existing marketing project:
 
 - **Claude Code layer** — 6 switchable "systems" (profiles), see `claude_code/DEV/SYSTEMS.md`.
-- **Hermes layer** — an autonomous orchestrator (Telegram bot + conductor worker
+- **Hermes layer** — an autonomous orchestrator (Telegram bot + orchestrator worker
   that drives Claude Code over a SQLite/libSQL `ho_*` job queue).
 
 > Vadim's original system is **untouched** under [`marketing_vb/`](marketing_vb).
@@ -16,8 +16,8 @@ Vadim's existing marketing project:
 |---|---|---|
 | `claude` CLI | all Claude Code systems | logged in (subscription) or `ANTHROPIC_API_KEY` |
 | `python3` | switch-profile.sh | stdlib only |
-| `node` + `npm` | Hermes conductor | Node 20+ |
-| `sqlite3` | conductor state (libSQL file) | ships with most distros; state is a local file — **no Postgres/Supabase** |
+| `node` + `npm` | Hermes orchestrator | Node 20+ |
+| `sqlite3` | orchestrator state (libSQL file) | ships with most distros; state is a local file — **no Postgres/Supabase** |
 | Turso / libSQL server | optional | only if you want a networked/shared DB instead of the local file |
 | Telegram bot token | Hermes escalations | optional but recommended |
 
@@ -25,9 +25,9 @@ Vadim's existing marketing project:
 
 ```bash
 git clone -b sergiy_config <this-repo> && cd 3dlook-marketing
-./install.sh                       # checks deps, prepares conductor, renders systemd units
+./install.sh                       # checks deps, prepares orchestrator, renders systemd units
 # or Claude-Code-only:
-./install.sh --no-conductor
+./install.sh --no-orchestrator
 ```
 
 `install.sh` never runs sudo — it prepares files and **prints** the privileged
@@ -58,13 +58,13 @@ time, so no path editing is needed regardless of where you cloned the repo.
 
 Full details: `claude_code/DEV/SYSTEMS.md`.
 
-## 3. Hermes conductor (autonomous worker)
+## 3. Hermes orchestrator (autonomous worker)
 
-The conductor pulls jobs from its SQLite/libSQL `ho_*` queue, runs them through
+The orchestrator pulls jobs from its SQLite/libSQL `ho_*` queue, runs them through
 the Claude Agent SDK in the profile named on the job, and escalates to Telegram.
 
 ```bash
-cd claude_code/DEV/full_stack_sm/conductor
+cd claude_code/DEV/full_stack_sm/orchestrator
 npm ci && npm test                 # unit + libSQL store smoke, no API/network
 cp .env.example .env               # then edit:
 #   DATABASE_URL   → file:./ho.db (default, zero infra) — or libsql://…/Turso for a networked DB
@@ -79,12 +79,12 @@ sqlite3 ho.db < sql/schema.sql            # file: mode (install.sh already did t
 Run as a service (unit was rendered to `hermes_agent/ops/systemd/generated/`):
 
 ```bash
-sudo cp hermes_agent/ops/systemd/generated/hermes-conductor.service /etc/systemd/system/
-sudo systemctl daemon-reload && sudo systemctl enable --now hermes-conductor
-systemctl status hermes-conductor
+sudo cp hermes_agent/ops/systemd/generated/hermes-orchestrator.service /etc/systemd/system/
+sudo systemctl daemon-reload && sudo systemctl enable --now hermes-orchestrator
+systemctl status hermes-orchestrator
 ```
 
-`conductor-run.sh` defaults `DATABASE_URL` to `file:$HO_STATE_DIR/ho.db`
+`orchestrator-run.sh` defaults `DATABASE_URL` to `file:$HO_STATE_DIR/ho.db`
 (`$HO_STATE_DIR` = `$HOME/.hermes`) and auto-creates the schema for file: mode;
 set `DATABASE_URL=libsql://…` in `.env` to use Turso/a libSQL server instead.
 
@@ -94,9 +94,9 @@ Pushes new open questions / escalations / terminal jobs to Telegram:
 
 ```bash
 ( crontab -l 2>/dev/null; \
-  echo "*/5 * * * * $PWD/hermes_agent/ops/conductor-monitor.sh >> \$HOME/.hermes/conductor-monitor.log 2>&1" ) | crontab -
+  echo "*/5 * * * * $PWD/hermes_agent/ops/orchestrator-monitor.sh >> \$HOME/.hermes/orchestrator-monitor.log 2>&1" ) | crontab -
 # first run: mark current state as seen (no backlog spam)
-hermes_agent/ops/conductor-monitor.sh --init
+hermes_agent/ops/orchestrator-monitor.sh --init
 ```
 
 It reads `$HOME/.hermes/.env` for `TELEGRAM_BOT_TOKEN` / `TELEGRAM_ALLOWED_USERS`
@@ -105,7 +105,7 @@ It reads `$HOME/.hermes/.env` for `TELEGRAM_BOT_TOKEN` / `TELEGRAM_ALLOWED_USERS
 ## 5. Telegram bot (chat entry point)
 
 Vadim already ships a bot under `marketing_vb/telegram-bot/`. Two options:
-- **Keep Vadim's bot** for marketing chat; use the conductor + monitor above for
+- **Keep Vadim's bot** for marketing chat; use the orchestrator + monitor above for
   autonomous jobs. (Simplest.)
 - **Run Sergiy-style Hermes** (OpenCode gateway) as the single orchestrator that
   routes to Claude Code by profile — that's the reference in
@@ -114,7 +114,7 @@ Vadim already ships a bot under `marketing_vb/telegram-bot/`. Two options:
 ## 6. Enqueue a job
 
 ```bash
-DB=claude_code/DEV/full_stack_sm/conductor/ho.db   # or your Turso shell
+DB=claude_code/DEV/full_stack_sm/orchestrator/ho.db   # or your Turso shell
 sqlite3 "$DB" \
  "insert into ho_jobs(kind,title,prompt,profile,work_dir)
   values('feature','smoke','напиши hello в файл hi.txt','marketing_vb_sm','$PWD');"
@@ -130,7 +130,7 @@ so you never switch the global `settings.json` for autonomous runs.
 
 - `hermes_agent/skills/vps-orchestration/SKILL.md` documents Sergiy's reference
   VPS; its absolute paths are examples — adapt to your machine.
-- The conductor **does not cap cost** by design (quality-first); the only
+- The orchestrator **does not cap cost** by design (quality-first); the only
   runaway guard is the in-process circuit breaker.
 - The `marketing_vb` plugins are copies of `marketing_vb/.claude/`; if Vadim
   edits the originals, re-sync the plugin copies.

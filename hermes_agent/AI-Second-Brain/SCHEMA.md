@@ -42,7 +42,7 @@ sha256: <hex digest тела источника после фронтматте�
 ## Tag Taxonomy
 Добавлять новые теги СЮДА перед использованием.
 - Инфраструктура: vps, docker, supabase, n8n, hermes, model-router, networking, security
-- Проекты: project, conductor, fullstack-agents, ascofacade, simplifyeu
+- Проекты: project, orchestrator, fullstack-agents, ascofacade, simplifyeu
 - Сущности: person, company, lab, model, service, tool
 - Техника: architecture, decision, research, comparison, howto, postmortem
 - Мета: timeline, controversy, prediction, open-question
