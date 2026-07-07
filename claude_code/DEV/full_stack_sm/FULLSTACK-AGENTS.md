@@ -69,11 +69,11 @@ ai-agents-config/
 3. Результат — дайджест в `.claude/scratchpad/scout/`. **Scout НИЧЕГО НЕ УСТАНАВЛИВАЕТ** — только рекомендует. Решение за человеком.
 
 ## Сценарий D — автономный запуск (ты = дирижёр / разворачиваешь его)
-1. `cd conductor && cp .env.example .env` — заполни DATABASE_URL (+ опц. TELEGRAM_*).
-2. `npm install && npm test` — 11 тестов circuit breaker должны пройти.
-3. Применить `conductor/sql/schema.sql` к Postgres.
+1. `cd conductor && cp .env.example .env` — DATABASE_URL по умолчанию `file:./ho.db` (+ опц. TELEGRAM_*).
+2. `npm install && npm test` — юнит-тесты (breaker/steploop/steprunner) + libSQL store smoke.
+3. Создать схему: `sqlite3 ho.db < conductor/sql/schema.sql` (для file:; или `turso db shell` для Turso).
 4. Запуск: `docker build -t hermes-conductor conductor/ && docker run --env-file conductor/.env -v $(pwd):/work hermes-conductor`. Ставь `work_dir=/work` в job (там лежит `.claude/`).
-5. Поставить задачу: `insert into hc_jobs(kind,title,prompt,...)` или через n8n webhook.
+5. Поставить задачу: `insert into ho_jobs(kind,title,prompt,...)` или через n8n webhook.
 
 ## 🔒 Незыблемые правила (нарушение = поломка системы)
 1. **commit + push — автоматически, merge — НИКОГДА сам.** После каждого хода `Stop`-хук коммитит и пушит ветку (push триггерит Vercel-деплой через Git-интеграцию). Запрещены и требуют человека только: `gh pr merge`, destructive SQL (DROP/TRUNCATE), `supabase db push`, terraform apply/destroy. Enforced в `guard.py` и в ask-gate дирижёра. **На ветках `main`/`master` авто-push отключён.**
@@ -155,14 +155,14 @@ TypeScript-сервис вокруг `@anthropic-ai/claude-agent-sdk`. НЕ Clau
 conductor/
 ├── ARCHITECTURE.md                  ← 5-слойная схема и обоснования
 ├── sql/schema.sql                   ← очередь задач, прогоны (session_id для resume), эскалации
-│                                      + hc_claim_job() (атомарный захват) + hc_recover_stale() (resume упавших)
+│                                      + ho_claim_job() (атомарный захват) + ho_recover_stale() (resume упавших)
 ├── src/core/
 │   ├── breaker.ts                   ← CIRCUIT BREAKER. Сердце. Логика остановки. 11 тестов.
 │   ├── store.ts                     ← доступ к Postgres
 │   └── conductor.ts                 ← главный цикл: SDK ↔ breaker ↔ store ↔ escalation
 ├── src/escalation/
 │   ├── telegram.ts                  ← уведомление человеку (кнопки approve/deny/abort)
-│   └── bot-callback.ts              ← приём решения человека → в hc_escalations
+│   └── bot-callback.ts              ← приём решения человека → в ho_escalations
 ├── n8n/hermes-dispatcher.json       ← webhook для постановки задач + дневной cron для scout
 ├── test/breaker.test.ts             ← 11 юнит-тестов ядра
 ├── Dockerfile, .env.example
@@ -176,10 +176,10 @@ conductor/
 [человек или cron]
    │  ставит задачу
    ▼
-n8n  ──POST /hermes-job──►  Postgres: insert into hc_jobs (status=queued)
+n8n  ──POST /hermes-job──►  libSQL: insert into ho_jobs (status=queued)
    ▼
-conductor/ (воркер крутится в Docker)
-   │ 1. hc_claim_job() — атомарно берёт задачу (FOR UPDATE SKIP LOCKED)
+conductor/ (воркер)
+   │ 1. store.claimJob() — атомарно берёт задачу (write-транзакция SQLite, single-writer)
    │ 2. preflight: есть resume_session_id? (упавший/приостановленный прогон — продолжаем)
    │ 3. query() из Agent SDK с settingSources:['project'] (+ resume:<session_id> если есть)
    │      └─► наследует ВСЁ из marketplace (корень репо):
@@ -202,7 +202,7 @@ conductor/ (воркер крутится в Docker)
    ▼
 Telegram: "🟡 approve / deny / abort"  ──►  человек жмёт кнопку
    │                                          ▼
-   │                              bot-callback пишет решение в hc_escalations
+   │                              bot-callback пишет решение в ho_escalations
    ▼                                          │
 conductor.waitEscalation() ◄─────────────────┘  (resume или abort)
    ▼
@@ -227,18 +227,18 @@ Telegram: "✅/❌ job <status> + summary"
 ---
 
 ## 4. Стек по умолчанию
-TypeScript strict / Next.js (App Router, Route Handlers) или FastAPI (Python) / **plain PostgreSQL** (RLS; расширения `pg_cron`/`pgvector`/`pgmq`/`pg_net`) / Drizzle ORM или SQLAlchemy+Alembic / **Better Auth** (MIT, self-host) / **PGMQ** очереди / Valkey кэш / gh CLI. По требованию: SeaweedFS (файлы) · Centrifugo (realtime) · PgBouncer · Keycloak. Gateway — Traefik. **Supabase НЕ используем** (исключение — way2buy; Studio на `supabase.smiro.dev`). **Полная карта замены Supabase→OSS — в `STACK.md`.** Состояние дирижёра — Postgres. Триггеры — n8n. Эскалации — Telegram. Изоляция — Docker.
+TypeScript strict / Next.js (App Router, Route Handlers) или FastAPI (Python) / **plain PostgreSQL** (RLS; расширения `pg_cron`/`pgvector`/`pgmq`/`pg_net`) / Drizzle ORM или SQLAlchemy+Alembic / **Better Auth** (MIT, self-host) / **PGMQ** очереди / Valkey кэш / gh CLI. По требованию: SeaweedFS (файлы) · Centrifugo (realtime) · PgBouncer · Keycloak. Gateway — Traefik. **Supabase НЕ используем** (исключение — way2buy; Studio на `supabase.smiro.dev`). **Полная карта замены Supabase→OSS — в `STACK.md`.** Состояние дирижёра — SQLite/libSQL (file: или Turso), НЕ Postgres. Триггеры — n8n. Эскалации — Telegram.
 
 ---
 
 ## 5. Развёртывание (порядок)
 
 1. **Marketplace.** Залить `<repo root>/` в git. В рабочем проекте: `/plugin marketplace add <repo>`, поставить `hermes-core` + нужные слои. Внешние компаньоны: `frontend-design@claude-plugins-official`, `superpowers@claude-plugins-official`, `trailofbits/skills`.
-2. **State.** Применить `conductor/sql/schema.sql` к Postgres.
-3. **Проверка ядра.** В `conductor/`: `npm install && npm test` (11 тестов breaker, без сети/API).
-4. **Conductor.** Заполнить `.env` (см. `.env.example`). `docker build` + `docker run --env-file .env -v <repo>:/work`. Рабочий репозиторий должен содержать `.claude/` от marketplace.
-5. **Triggers.** Импортировать `n8n/hermes-dispatcher.json`, подключить Postgres-креды и Telegram-бота.
-6. **Первый прогон.** Поставить тестовую задачу (`insert into hc_jobs` или webhook) с небольшим `max_turns` и смотреть статусы в `hc_jobs` / `hc_runs`. Проверить, что `resume_session_id` проставляется, и что пауза по лимиту переводит job в `deferred`, а не в `failed`.
+2. **State.** Создать схему: `sqlite3 ho.db < conductor/sql/schema.sql` (file:; или Turso `turso db shell`).
+3. **Проверка ядра.** В `conductor/`: `npm install && npm test` (breaker/steploop/steprunner + libSQL store smoke, без сети/API).
+4. **Conductor.** Заполнить `.env` (см. `.env.example`; DATABASE_URL по умолчанию `file:./ho.db`). `npm start` (или `docker build`/`docker run --env-file .env -v <repo>:/work`). Рабочий репозиторий должен содержать `.claude/` от marketplace.
+5. **Triggers.** Импортировать `n8n/hermes-dispatcher.json`, подключить БД-креды (libSQL/Turso) и Telegram-бота.
+6. **Первый прогон.** Поставить тестовую задачу (`insert into ho_jobs` или webhook) с небольшим `max_turns` и смотреть статусы в `ho_jobs` / `ho_runs`. Проверить, что `resume_session_id` проставляется, и что пауза по лимиту переводит job в `deferred`, а не в `failed`.
 
 ---
 
@@ -251,7 +251,7 @@ TypeScript strict / Next.js (App Router, Route Handlers) или FastAPI (Python)
 - Все JSON-манифесты валидны, у 10 агентов корректный frontmatter (все Opus), Python-хуки парсятся.
 
 **Реализовано в этой итерации (но НЕ обкатано на живом автономном прогоне):**
-- **Durable resume.** `session_id` пишется на job сразу; пауза по token/rate-лимиту → `deferred` с backoff (хоть часы) → следующий claim продолжает сессию через `resume:`. Упавший процесс ловит `hc_recover_stale()` и переочередает с resume. Логика есть, сквозной прогон против живого SDK ещё не гонялся.
+- **Durable resume.** `session_id` пишется на job сразу; пауза по token/rate-лимиту → `deferred` с backoff (хоть часы) → следующий claim продолжает сессию через `resume:`. Упавший процесс ловит `ho_recover_stale()` и переочередает с resume. Логика есть, сквозной прогон против живого SDK ещё не гонялся.
 - **Авто commit+push+deploy** через `Stop`-хук (push → Vercel Git-деплой). Логика есть; нужна git-аутентификация на VPS/в контейнере.
 
 **НЕ реализовано / осознанно убрано:**

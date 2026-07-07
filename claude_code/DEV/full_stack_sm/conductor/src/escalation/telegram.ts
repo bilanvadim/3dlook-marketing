@@ -1,7 +1,7 @@
 /**
  * Fullstack agents Conductor — Telegram escalation notifier.
  * Sends the human a message when a run pauses for a decision. The actual approve/deny
- * is recorded back into hc_escalations (by a tiny bot webhook or by n8n); the conductor
+ * is recorded back into ho_escalations (by a tiny bot webhook or by n8n); the conductor
  * polls the row via Store.waitEscalation. This module only PUSHES the notification.
  *
  * Kept dependency-free (uses fetch) so it works in any Node 18+ / container.
@@ -39,9 +39,9 @@ export async function notifyEscalation(
       parse_mode: 'Markdown',
       reply_markup: {
         inline_keyboard: [[
-          { text: '✅ Approve', callback_data: `hc:approve:${e.escalationId}` },
-          { text: '⛔ Deny',    callback_data: `hc:deny:${e.escalationId}` },
-          { text: '🛑 Abort',   callback_data: `hc:abort:${e.escalationId}` },
+          { text: '✅ Approve', callback_data: `ho:approve:${e.escalationId}` },
+          { text: '⛔ Deny',    callback_data: `ho:deny:${e.escalationId}` },
+          { text: '🛑 Abort',   callback_data: `ho:abort:${e.escalationId}` },
         ]],
       },
     }),

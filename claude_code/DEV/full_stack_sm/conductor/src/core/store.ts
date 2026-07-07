@@ -1,18 +1,19 @@
 /**
- * Fullstack agents Conductor — Postgres state access (direct `pg`, no Supabase layer).
+ * Hermes Orchestrator — conductor state access (SQLite / libSQL via @libsql/client).
  *
- * Talks straight to PostgreSQL via a connection pool — no PostgREST / Supabase client.
- * The DB engine is plain Postgres (the hc_* schema in schema.sql). Point DATABASE_URL at
- * any Postgres (a dedicated container, or the existing self-hosted instance).
+ * DATABASE_URL selects the backend with ONE code path:
+ *   file:./ho.db            local single-file SQLite (default, zero infra)
+ *   libsql://<host>[?authToken=…] / http://…  a libSQL server or Turso Cloud
+ * SQLite is single-writer, so the claim/next-step/recover logic runs inside a
+ * write transaction and is race-free by construction — no FOR UPDATE SKIP LOCKED,
+ * no stored procedures (those lived in the old Postgres schema).
  *
- * Minimal by design: queue + runs (session_id for DURABLE RESUME) + escalations + steps +
- * interview questions. No cost ledger / event audit (cost not tracked; loops caught in-memory).
+ * Minimal by design: queue + runs (session_id for DURABLE RESUME) + escalations +
+ * steps + interview questions. No cost ledger (cost not tracked; loops caught in-memory).
+ * Array/JSON columns (tags, depends_on, acceptance, quality_bar, *_report, context)
+ * are stored as JSON TEXT and (de)serialized here.
  */
-import pg from 'pg';
-
-const { Pool, types } = pg;
-// bigint (int8, oid 20) → JS number (our ids/counts fit well within Number.MAX_SAFE_INTEGER)
-types.setTypeParser(20, (v: string | null) => (v === null ? null : Number(v)));
+import { createClient, type Client, type InArgs, type Row } from '@libsql/client';
 
 export interface Job {
   id: number; kind: string; title: string; prompt: string; priority: number;
@@ -20,7 +21,7 @@ export interface Job {
   permission_mode: string; work_dir: string;
   resume_session_id: string | null;   // set → resume an earlier SDK session instead of starting fresh
   attempts: number;
-  profile: string;                     // which Claude Code system to run under: dev|seo|marketing|security
+  profile: string;                     // Claude Code system: dev|seo|marketing|security|marketing_vb|marketing_vb_sm
 }
 
 // ---- steps, questions, status surfaces ----
@@ -43,55 +44,128 @@ export interface ProjectStatus {
   open_questions: number; open_escalations: number; last_activity: string;
 }
 
+const num = (v: unknown): number | null => (v == null ? null : Number(v));
+const parseJson = <T>(v: unknown, fallback: T): T => {
+  if (v == null) return fallback;
+  try { return JSON.parse(String(v)) as T; } catch { return fallback; }
+};
+
+function mapJob(r: Row): Job {
+  return {
+    id: Number(r.id), kind: String(r.kind), title: String(r.title), prompt: String(r.prompt),
+    priority: Number(r.priority), status: String(r.status),
+    max_turns: num(r.max_turns), max_wall_secs: num(r.max_wall_secs),
+    permission_mode: String(r.permission_mode), work_dir: String(r.work_dir),
+    resume_session_id: (r.resume_session_id as string | null) ?? null,
+    attempts: Number(r.attempts), profile: String(r.profile ?? 'dev'),
+  };
+}
+function mapStep(r: Row): Step {
+  return {
+    id: Number(r.id), job_id: Number(r.job_id), step_no: Number(r.step_no), title: String(r.title),
+    agent: (r.agent as string | null) ?? null,
+    tags: parseJson<string[]>(r.tags, []), description: (r.description as string | null) ?? null,
+    acceptance: parseJson<unknown>(r.acceptance, []), quality_bar: parseJson<unknown>(r.quality_bar, null),
+    depends_on: parseJson<number[]>(r.depends_on, []), status: String(r.status),
+    attempts: Number(r.attempts), score: num(r.score),
+  };
+}
+
 export class Store {
-  private pool: pg.Pool;
-  constructor(connectionString = process.env.DATABASE_URL) {
-    if (!connectionString) throw new Error('DATABASE_URL required (postgres connection string)');
-    this.pool = new Pool({ connectionString, max: Number(process.env.HC_PG_POOL ?? 4) });
+  private db: Client;
+  constructor(url = process.env.DATABASE_URL) {
+    if (!url) throw new Error('DATABASE_URL required (e.g. file:./ho.db or libsql://…)');
+    this.db = createClient({ url });
   }
 
-  private async q<T = any>(text: string, params: unknown[] = []): Promise<T[]> {
-    const res = await this.pool.query(text, params as any[]);
-    return res.rows as T[];
+  private async q<T = any>(sql: string, args: InArgs = []): Promise<T[]> {
+    const res = await this.db.execute({ sql, args });
+    return res.rows as unknown as T[];
   }
 
-  async close(): Promise<void> { await this.pool.end(); }
+  async close(): Promise<void> { this.db.close(); }
 
-  /** Atomically claim the next pickable job (FOR UPDATE SKIP LOCKED inside the function). */
+  /** Atomically claim the next pickable job. Single-writer tx replaces FOR UPDATE SKIP LOCKED. */
   async claimJob(worker: string): Promise<Job | null> {
-    const rows = await this.q<Job>('select * from hc_claim_job($1)', [worker]);
-    const j = rows[0];
-    return j && j.id != null ? j : null;
+    const tx = await this.db.transaction('write');
+    try {
+      const sel = await tx.execute({
+        sql: `select * from ho_jobs
+                where status in ('queued','deferred')
+                  and (not_before is null or not_before <= datetime('now'))
+                order by priority, created_at limit 1`,
+        args: [],
+      });
+      const row = sel.rows[0];
+      if (!row) { await tx.rollback(); return null; }
+      await tx.execute({
+        sql: `update ho_jobs set status='claimed', claimed_by=?, claimed_at=datetime('now') where id=?`,
+        args: [worker, row.id as number],
+      });
+      const after = await tx.execute({ sql: 'select * from ho_jobs where id=?', args: [row.id as number] });
+      await tx.commit();
+      return mapJob(after.rows[0]);
+    } catch (e) { await tx.rollback(); throw e; }
   }
 
   /** Requeue jobs whose worker died mid-run, carrying their session_id so they resume. */
   async recoverStale(staleSecs: number): Promise<number> {
-    const rows = await this.q<{ n: number }>('select hc_recover_stale($1) as n', [staleSecs]);
-    return Number(rows[0]?.n ?? 0);
+    const tx = await this.db.transaction('write');
+    try {
+      const stale = await tx.execute({
+        sql: `select id from ho_jobs
+                where status in ('running','claimed')
+                  and coalesce(claimed_at, created_at) < datetime('now', ?)`,
+        args: [`-${staleSecs} seconds`],
+      });
+      let n = 0;
+      for (const j of stale.rows) {
+        const jobId = j.id as number;
+        const sidRow = await tx.execute({
+          sql: 'select session_id from ho_runs where job_id=? order by id desc limit 1', args: [jobId],
+        });
+        const sid = (sidRow.rows[0]?.session_id as string | null) ?? null;
+        await tx.execute({
+          sql: `update ho_runs set status='failed', stop_reason='stale_recovered', ended_at=datetime('now')
+                 where job_id=? and status in ('running','paused')`,
+          args: [jobId],
+        });
+        await tx.execute({
+          sql: `update ho_jobs
+                   set status='deferred', not_before=datetime('now'), claimed_by=null,
+                       resume_session_id=coalesce(?, resume_session_id), attempts=attempts+1
+                 where id=?`,
+          args: [sid, jobId],
+        });
+        n++;
+      }
+      await tx.commit();
+      return n;
+    } catch (e) { await tx.rollback(); throw e; }
   }
 
   async startRun(jobId: number, attempt = 1): Promise<number> {
-    await this.q("update hc_jobs set status='running', error=null where id=$1", [jobId]);
-    const rows = await this.q<{ id: number }>('insert into hc_runs(job_id, attempt) values($1,$2) returning id', [jobId, attempt]);
-    return rows[0].id;
+    await this.q("update ho_jobs set status='running', error=null where id=?", [jobId]);
+    const res = await this.db.execute({ sql: 'insert into ho_runs(job_id, attempt) values(?,?)', args: [jobId, attempt] });
+    return Number(res.lastInsertRowid);
   }
 
   /** Persist the SDK session id on BOTH the run and the job, so resume survives a crash. */
   async setSession(runId: number, jobId: number, sessionId: string): Promise<void> {
-    await this.q('update hc_runs set session_id=$1 where id=$2', [sessionId, runId]);
-    await this.q('update hc_jobs set resume_session_id=$1 where id=$2', [sessionId, jobId]);
+    await this.q('update ho_runs set session_id=? where id=?', [sessionId, runId]);
+    await this.q('update ho_jobs set resume_session_id=? where id=?', [sessionId, jobId]);
   }
 
   async finishRun(runId: number, status: string, stopReason: string, turns: number, error?: string): Promise<void> {
     await this.q(
-      'update hc_runs set status=$1, stop_reason=$2, turns=$3, error=$4, ended_at=now() where id=$5',
+      "update ho_runs set status=?, stop_reason=?, turns=?, error=?, ended_at=datetime('now') where id=?",
       [status, stopReason, turns, error ?? null, runId],
     );
   }
 
   async finishJob(jobId: number, status: string, summary?: string, error?: string): Promise<void> {
     await this.q(
-      'update hc_jobs set status=$1, result_summary=$2, error=$3, resume_session_id=null, finished_at=now() where id=$4',
+      "update ho_jobs set status=?, result_summary=?, error=?, resume_session_id=null, finished_at=datetime('now') where id=?",
       [status, summary ?? null, error ?? null, jobId],
     );
   }
@@ -99,29 +173,29 @@ export class Store {
   /** Pause a job for `backoffSecs` (can be hours) but KEEP its resume_session_id. */
   async deferJob(jobId: number, backoffSecs: number): Promise<void> {
     await this.q(
-      "update hc_jobs set status='deferred', not_before = now() + make_interval(secs => $2), claimed_by=null where id=$1",
-      [jobId, backoffSecs],
+      "update ho_jobs set status='deferred', not_before=datetime('now', ?), claimed_by=null where id=?",
+      [`+${backoffSecs} seconds`, jobId],
     );
   }
 
   async openEscalation(runId: number, jobId: number, reason: string, question: string, context: unknown): Promise<number> {
-    await this.q("update hc_jobs set status='escalated' where id=$1", [jobId]);
-    const rows = await this.q<{ id: number }>(
-      'insert into hc_escalations(run_id, job_id, reason, question, context) values($1,$2,$3,$4,$5::jsonb) returning id',
-      [runId, jobId, reason, question, JSON.stringify(context ?? null)],
-    );
-    return rows[0].id;
+    await this.q("update ho_jobs set status='escalated' where id=?", [jobId]);
+    const res = await this.db.execute({
+      sql: 'insert into ho_escalations(run_id, job_id, reason, question, context) values(?,?,?,?,?)',
+      args: [runId, jobId, reason, question, JSON.stringify(context ?? null)],
+    });
+    return Number(res.lastInsertRowid);
   }
 
   /** Poll an escalation until decided or timeout (ms). Returns final status. */
   async waitEscalation(id: number, timeoutMs = 1000 * 60 * 30, pollMs = 5000): Promise<string> {
     const deadline = Date.now() + timeoutMs;
     for (;;) {
-      const rows = await this.q<{ status: string }>('select status from hc_escalations where id=$1', [id]);
+      const rows = await this.q<{ status: string }>('select status from ho_escalations where id=?', [id]);
       const st = rows[0]?.status ?? 'open';
       if (st !== 'open') return st;
       if (Date.now() > deadline) {
-        await this.q("update hc_escalations set status='expired' where id=$1", [id]);
+        await this.q("update ho_escalations set status='expired' where id=?", [id]);
         return 'expired';
       }
       await new Promise((r) => setTimeout(r, pollMs));
@@ -130,39 +204,61 @@ export class Store {
 
   // ---------- steps ----------
   async hasSteps(jobId: number): Promise<boolean> {
-    const rows = await this.q<{ n: number }>('select count(*)::int as n from hc_steps where job_id=$1', [jobId]);
-    return (rows[0]?.n ?? 0) > 0;
+    const rows = await this.q<{ n: number }>('select count(*) as n from ho_steps where job_id=?', [jobId]);
+    return Number(rows[0]?.n ?? 0) > 0;
   }
 
   async insertSteps(jobId: number, steps: PlanStepInput[]): Promise<void> {
     for (const s of steps) {
       await this.q(
-        `insert into hc_steps(job_id, step_no, title, agent, tags, description, acceptance, quality_bar, depends_on)
-         values($1,$2,$3,$4,$5,$6,$7::jsonb,$8::jsonb,$9)`,
-        [jobId, s.step_no, s.title, s.agent ?? null, s.tags ?? [], s.description ?? null,
-         JSON.stringify(s.acceptance ?? []), JSON.stringify(s.quality_bar ?? null), s.depends_on ?? []],
+        `insert into ho_steps(job_id, step_no, title, agent, tags, description, acceptance, quality_bar, depends_on)
+         values(?,?,?,?,?,?,?,?,?)`,
+        [jobId, s.step_no, s.title, s.agent ?? null, JSON.stringify(s.tags ?? []), s.description ?? null,
+         JSON.stringify(s.acceptance ?? []), JSON.stringify(s.quality_bar ?? null), JSON.stringify(s.depends_on ?? [])],
       );
     }
   }
 
-  /** Atomically claim the next runnable step (deps done). Returns null when none ready. */
+  /** Atomically claim the next runnable step (all deps done). Returns null when none ready. */
   async nextStep(jobId: number): Promise<Step | null> {
-    const rows = await this.q<Step>('select * from hc_next_step($1)', [jobId]);
-    const s = rows[0];
-    return s && s.id != null ? s : null;
+    const tx = await this.db.transaction('write');
+    try {
+      const pend = await tx.execute({
+        sql: `select * from ho_steps where job_id=? and status='pending' order by step_no`,
+        args: [jobId],
+      });
+      // find first whose dependencies are all 'done'
+      let chosen: Row | null = null;
+      for (const st of pend.rows) {
+        const deps = parseJson<number[]>(st.depends_on, []);
+        if (deps.length === 0) { chosen = st; break; }
+        const q = `select count(*) as n from ho_steps
+                     where job_id=? and step_no in (${deps.map(() => '?').join(',')}) and status<>'done'`;
+        const undone = await tx.execute({ sql: q, args: [jobId, ...deps] });
+        if (Number(undone.rows[0].n) === 0) { chosen = st; break; }
+      }
+      if (!chosen) { await tx.rollback(); return null; }
+      await tx.execute({
+        sql: `update ho_steps set status='running', attempts=attempts+1, updated_at=datetime('now') where id=?`,
+        args: [chosen.id as number],
+      });
+      const after = await tx.execute({ sql: 'select * from ho_steps where id=?', args: [chosen.id as number] });
+      await tx.commit();
+      return mapStep(after.rows[0]);
+    } catch (e) { await tx.rollback(); throw e; }
   }
 
   async recordAttempt(stepId: number): Promise<void> {
-    await this.q('update hc_steps set attempts=attempts+1, updated_at=now() where id=$1', [stepId]);
+    await this.q("update ho_steps set attempts=attempts+1, updated_at=datetime('now') where id=?", [stepId]);
   }
 
   async setStepStatus(stepId: number, status: string): Promise<void> {
-    await this.q('update hc_steps set status=$1, updated_at=now() where id=$2', [status, stepId]);
+    await this.q("update ho_steps set status=?, updated_at=datetime('now') where id=?", [status, stepId]);
   }
 
   async finishStep(stepId: number, f: { status: string; score?: number; reviewer_report?: unknown; runtime_report?: unknown; error?: string }): Promise<void> {
     await this.q(
-      `update hc_steps set status=$1, score=$2, reviewer_report=$3::jsonb, runtime_report=$4::jsonb, error=$5, updated_at=now() where id=$6`,
+      `update ho_steps set status=?, score=?, reviewer_report=?, runtime_report=?, error=?, updated_at=datetime('now') where id=?`,
       [f.status, f.score ?? null,
        f.reviewer_report === undefined ? null : JSON.stringify(f.reviewer_report),
        f.runtime_report === undefined ? null : JSON.stringify(f.runtime_report),
@@ -174,7 +270,7 @@ export class Store {
   async askQuestions(jobId: number, stepNo: number | null, questions: { seq: number; layer?: string; question: string }[]): Promise<void> {
     for (const qq of questions) {
       await this.q(
-        'insert into hc_questions(job_id, step_no, seq, layer, question) values($1,$2,$3,$4,$5)',
+        'insert into ho_questions(job_id, step_no, seq, layer, question) values(?,?,?,?,?)',
         [jobId, stepNo, qq.seq, qq.layer ?? null, qq.question],
       );
     }
@@ -182,20 +278,20 @@ export class Store {
   }
 
   async openQuestions(jobId: number): Promise<Question[]> {
-    return this.q<Question>("select * from hc_questions where job_id=$1 and status='open' order by seq", [jobId]);
+    return this.q<Question>("select * from ho_questions where job_id=? and status='open' order by seq", [jobId]);
   }
 
   async answerQuestion(qid: number, answer: string): Promise<void> {
-    await this.q('select hc_answer_question($1,$2)', [qid, answer]);
+    await this.q("update ho_questions set answer=?, status='answered', answered_at=datetime('now') where id=?", [answer, qid]);
   }
 
   async setJobStatus(jobId: number, status: string): Promise<void> {
-    await this.q('update hc_jobs set status=$1 where id=$2', [status, jobId]);
+    await this.q('update ho_jobs set status=? where id=?', [status, jobId]);
   }
 
   // ---------- status surface (Hermes reads this) ----------
   async projectStatus(jobId: number): Promise<ProjectStatus | null> {
-    const rows = await this.q<any>('select * from hc_project_status where job_id=$1', [jobId]);
+    const rows = await this.q<any>('select * from ho_project_status where job_id=?', [jobId]);
     const r = rows[0];
     if (!r) return null;
     return {

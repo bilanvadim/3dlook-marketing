@@ -1,18 +1,18 @@
 [Unit]
-Description=Hermes Conductor — autonomous Fullstack-agents worker (Claude Agent SDK → Postgres hc_*)
-After=network-online.target docker.service
+Description=Hermes Orchestrator Conductor — autonomous worker (Claude Agent SDK → SQLite/libSQL ho_*)
+After=network-online.target
 Wants=network-online.target
-Requires=docker.service
 
 [Service]
 Type=simple
-# Tokens below are filled by install.sh (user, home, repo root, stack env path).
+# Tokens below are filled by install.sh (user, home, repo root).
 User=@USER@
 Environment=HOME=@HOME@
 Environment=PATH=/usr/local/bin:/usr/bin:/bin
 Environment=HERMES_REPO_ROOT=@REPO_ROOT@
-Environment=STACK_ENV=@STACK_ENV@
-EnvironmentFile=@REPO_ROOT@/claude_code/DEV/full_stack_sm/conductor/.env
+# State is SQLite/libSQL — no docker/Postgres dependency. conductor-run.sh defaults
+# DATABASE_URL to file:$HOME/.hermes/ho.db; set libsql://…/Turso in the .env to go networked.
+EnvironmentFile=-@REPO_ROOT@/claude_code/DEV/full_stack_sm/conductor/.env
 WorkingDirectory=@REPO_ROOT@/claude_code/DEV/full_stack_sm/conductor
 ExecStart=@REPO_ROOT@/hermes_agent/ops/conductor-run.sh
 Restart=always

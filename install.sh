@@ -7,8 +7,9 @@
 #   ./install.sh                      # checks + prepare conductor + render systemd units
 #   ./install.sh --profile <name>     # also activate a Claude Code system now
 #   ./install.sh --no-conductor       # skip conductor npm/test (Claude Code side only)
-#   ./install.sh --user <u> --home <h> --stack-env <path>   # values baked into systemd units
+#   ./install.sh --user <u> --home <h>                      # values baked into systemd units
 #
+# Conductor state is SQLite/libSQL (default local file); no Postgres/Supabase needed.
 # Profiles: dev | seo | marketing | security | marketing_vb | marketing_vb_sm
 set -euo pipefail
 
@@ -22,7 +23,6 @@ PROFILE=""
 DO_CONDUCTOR=1
 SVC_USER="${SUDO_USER:-$USER}"
 SVC_HOME="$HOME"
-STACK_ENV="${STACK_ENV:-/path/to/supabase/stack/.env}"
 
 while [ $# -gt 0 ]; do
   case "$1" in
@@ -30,7 +30,6 @@ while [ $# -gt 0 ]; do
     --no-conductor) DO_CONDUCTOR=0; shift ;;
     --user) SVC_USER="$2"; shift 2 ;;
     --home) SVC_HOME="$2"; shift 2 ;;
-    --stack-env) STACK_ENV="$2"; shift 2 ;;
     -h|--help) grep '^#' "$0" | sed 's/^# \{0,1\}//'; exit 0 ;;
     *) echo "unknown arg: $1" >&2; exit 2 ;;
   esac
@@ -49,8 +48,8 @@ have() { command -v "$1" >/dev/null 2>&1; }
 for bin in claude python3; do
   have "$bin" && ok "$bin: $(command -v "$bin")" || warn "$bin NOT found (required for Claude Code systems)"
 done
-for bin in node npm docker psql; do
-  have "$bin" && ok "$bin: $(command -v "$bin")" || warn "$bin NOT found (needed for the Hermes conductor)"
+for bin in node npm sqlite3; do
+  have "$bin" && ok "$bin: $(command -v "$bin")" || warn "$bin NOT found (needed for the Hermes conductor / libSQL state)"
 done
 
 # ---------------------------------------------------------------------------
@@ -82,9 +81,15 @@ if [ "$DO_CONDUCTOR" = 1 ]; then
     fi
     if [ ! -f "$CONDUCTOR_DIR/.env" ]; then
       cp "$CONDUCTOR_DIR/.env.example" "$CONDUCTOR_DIR/.env"
-      warn "created conductor/.env from example — EDIT IT (DATABASE_URL, ANTHROPIC auth, Telegram)"
+      warn "created conductor/.env from example — default DATABASE_URL=file:./ho.db (edit for ANTHROPIC auth / Telegram / Turso)"
     else
       ok "conductor/.env present"
+    fi
+    # create the local libSQL schema (file: mode) so the queue is ready
+    if have sqlite3; then
+      ( cd "$CONDUCTOR_DIR" && sqlite3 ho.db < sql/schema.sql ) && ok "libSQL schema applied → $CONDUCTOR_DIR/ho.db"
+    else
+      warn "sqlite3 missing — create state later: (cd $CONDUCTOR_DIR && sqlite3 ho.db < sql/schema.sql)"
     fi
   else
     warn "conductor dir not found: $CONDUCTOR_DIR"
@@ -101,22 +106,19 @@ render() {
   sed -e "s#@REPO_ROOT@#$REPO_ROOT#g" \
       -e "s#@USER@#$SVC_USER#g" \
       -e "s#@HOME@#$SVC_HOME#g" \
-      -e "s#@STACK_ENV@#$STACK_ENV#g" \
       "$tpl" > "$out"
   ok "rendered $(basename "$out")"
 }
 for t in "$SYSTEMD_SRC"/*.template; do [ -e "$t" ] && render "$t"; done
 info "units written to: $GEN_DIR"
-info "user=$SVC_USER home=$SVC_HOME stack-env=$STACK_ENV"
-[ "$STACK_ENV" = "/path/to/supabase/stack/.env" ] && warn "STACK_ENV is a placeholder — re-run with --stack-env <path> or set DATABASE_URL in conductor/.env"
+info "user=$SVC_USER home=$SVC_HOME"
 
 # ---------------------------------------------------------------------------
 say "Next steps (privileged / manual) — see INSTALL.md for detail"
 cat <<EOF
-  # A. Apply the conductor DB schema (hc_* tables) to your Postgres:
-  psql "\$DATABASE_URL" -f "$CONDUCTOR_DIR/sql/schema.sql"
-  psql "\$DATABASE_URL" -f "$CONDUCTOR_DIR/sql/002_steps_questions.sql"
-  psql "\$DATABASE_URL" -f "$CONDUCTOR_DIR/sql/003_profiles.sql"
+  # A. (done above for file: mode) conductor state = SQLite/libSQL. Networked/Turso
+  #    instead? set DATABASE_URL=libsql://… in conductor/.env and load the schema:
+  #      turso db shell <db> < "$CONDUCTOR_DIR/sql/schema.sql"
 
   # B. Install the conductor service (review the rendered unit first):
   sudo cp "$GEN_DIR/hermes-conductor.service" /etc/systemd/system/
@@ -126,6 +128,6 @@ cat <<EOF
   ( crontab -l 2>/dev/null; echo "*/5 * * * * $REPO_ROOT/hermes_agent/ops/conductor-monitor.sh >> \$HOME/.hermes/conductor-monitor.log 2>&1" ) | crontab -
 
   # D. Enqueue a job (profile ∈ the 6 systems):
-  psql "\$DATABASE_URL" -c "insert into hc_jobs(kind,title,prompt,profile,work_dir) values('feature','smoke','say hi','marketing_vb_sm','$REPO_ROOT');"
+  sqlite3 "$CONDUCTOR_DIR/ho.db" "insert into ho_jobs(kind,title,prompt,profile,work_dir) values('feature','smoke','say hi','marketing_vb_sm','$REPO_ROOT');"
 EOF
 ok "install.sh done"

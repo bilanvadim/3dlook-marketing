@@ -1,7 +1,7 @@
 /**
  * Fullstack agents Conductor — profile → plugin resolver.
  *
- * A job's `profile` (hc_jobs.profile: dev|seo|marketing|security|marketing_vb|marketing_vb_sm) selects a
+ * A job's `profile` (ho_jobs.profile: dev|seo|marketing|security) selects a
  * MUTUALLY-EXCLUSIVE set of Claude Code plugins, so only that domain system's
  * agents/skills/commands load into the Agent SDK session. This mirrors the
  * interactive switch-profile.sh, but per-session: we resolve the profile's
@@ -9,7 +9,7 @@
  * independent of the target project's own .claude/.
  *
  * Source of truth = claude_code/DEV/profiles/<profile>.json (same files the
- * interactive switcher reads). Override the dir with HC_PROFILES_DIR.
+ * interactive switcher reads). Override the dir with HO_PROFILES_DIR.
  */
 import { readFileSync, existsSync } from 'node:fs';
 import { dirname, isAbsolute, join, resolve } from 'node:path';
@@ -29,7 +29,7 @@ const HERE = dirname(fileURLToPath(import.meta.url)); // .../conductor/src/core
 const DEFAULT_PROFILES_DIR = resolve(HERE, '../../../../profiles');
 
 export function profilesDir(): string {
-  return process.env.HC_PROFILES_DIR ?? DEFAULT_PROFILES_DIR;
+  return process.env.HO_PROFILES_DIR ?? DEFAULT_PROFILES_DIR;
 }
 
 /**
@@ -54,9 +54,9 @@ export function resolveProfilePlugins(profile: string | null | undefined): Local
   }
 
   const marketplaces = manifest.marketplaces ?? {};
-  // Marketplace paths in profiles/*.json are relative to claude_code/DEV
+  // Marketplace paths in profiles/*.json may be relative to claude_code/DEV
   // (= the parent of the profiles dir), matching switch-profile.sh. Absolute
-  // paths are honored as-is for backward compatibility.
+  // paths are honored as-is.
   const devDir = dirname(profilesDir());
   const out: LocalPlugin[] = [];
   for (const entry of manifest.enabledPlugins ?? []) {

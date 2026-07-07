@@ -5,7 +5,7 @@ Vadim's existing marketing project:
 
 - **Claude Code layer** — 6 switchable "systems" (profiles), see `claude_code/DEV/SYSTEMS.md`.
 - **Hermes layer** — an autonomous orchestrator (Telegram bot + conductor worker
-  that drives Claude Code over a Postgres `hc_*` job queue).
+  that drives Claude Code over a SQLite/libSQL `ho_*` job queue).
 
 > Vadim's original system is **untouched** under [`marketing_vb/`](marketing_vb).
 > Nothing here modifies it; it is only *also* packaged as a switchable system.
@@ -17,8 +17,8 @@ Vadim's existing marketing project:
 | `claude` CLI | all Claude Code systems | logged in (subscription) or `ANTHROPIC_API_KEY` |
 | `python3` | switch-profile.sh | stdlib only |
 | `node` + `npm` | Hermes conductor | Node 20+ |
-| Postgres (`psql`) | conductor state + Hermes | self-hosted Supabase or any Postgres |
-| `docker` | Supabase stack / conductor isolation | optional if you point at a remote PG |
+| `sqlite3` | conductor state (libSQL file) | ships with most distros; state is a local file — **no Postgres/Supabase** |
+| Turso / libSQL server | optional | only if you want a networked/shared DB instead of the local file |
 | Telegram bot token | Hermes escalations | optional but recommended |
 
 ## 1. Bootstrap
@@ -34,7 +34,7 @@ git clone -b sergiy_config <this-repo> && cd 3dlook-marketing
 commands. Pass machine values for the systemd units:
 
 ```bash
-./install.sh --user vadim --home /home/vadim --stack-env /srv/vadim/supabase/.env
+./install.sh --user vadim --home /home/vadim
 ```
 
 ## 2. Claude Code — the 6 systems
@@ -60,21 +60,20 @@ Full details: `claude_code/DEV/SYSTEMS.md`.
 
 ## 3. Hermes conductor (autonomous worker)
 
-The conductor pulls jobs from Postgres `hc_*`, runs them through the Claude
-Agent SDK in the profile named on the job, and escalates to Telegram.
+The conductor pulls jobs from its SQLite/libSQL `ho_*` queue, runs them through
+the Claude Agent SDK in the profile named on the job, and escalates to Telegram.
 
 ```bash
 cd claude_code/DEV/full_stack_sm/conductor
-npm ci && npm test                 # 27 core tests, no API/network
+npm ci && npm test                 # unit + libSQL store smoke, no API/network
 cp .env.example .env               # then edit:
-#   DATABASE_URL   → your Postgres (self-hosted Supabase reachable as supabase-db)
+#   DATABASE_URL   → file:./ho.db (default, zero infra) — or libsql://…/Turso for a networked DB
 #   ANTHROPIC_API_KEY (or leave empty to use the logged-in Claude plan)
 #   TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID (escalations)
 
-# apply schema (hc_jobs, hc_runs, hc_steps, hc_questions, hc_escalations, …)
-psql "$DATABASE_URL" -f sql/schema.sql
-psql "$DATABASE_URL" -f sql/002_steps_questions.sql
-psql "$DATABASE_URL" -f sql/003_profiles.sql
+# create the state (tables ho_jobs, ho_runs, ho_steps, ho_questions, ho_escalations + views)
+sqlite3 ho.db < sql/schema.sql            # file: mode (install.sh already did this)
+#   Turso/libSQL instead:  turso db shell <db> < sql/schema.sql
 ```
 
 Run as a service (unit was rendered to `hermes_agent/ops/systemd/generated/`):
@@ -85,9 +84,9 @@ sudo systemctl daemon-reload && sudo systemctl enable --now hermes-conductor
 systemctl status hermes-conductor
 ```
 
-`conductor-run.sh` resolves the Postgres IP + password fresh at each start
-(from `STACK_ENV`'s `POSTGRES_PASSWORD`), or uses `DATABASE_URL` if you set it
-directly in `.env`.
+`conductor-run.sh` defaults `DATABASE_URL` to `file:$HO_STATE_DIR/ho.db`
+(`$HO_STATE_DIR` = `$HOME/.hermes`) and auto-creates the schema for file: mode;
+set `DATABASE_URL=libsql://…` in `.env` to use Turso/a libSQL server instead.
 
 ## 4. Push-notifier (cron)
 
@@ -115,11 +114,12 @@ Vadim already ships a bot under `marketing_vb/telegram-bot/`. Two options:
 ## 6. Enqueue a job
 
 ```bash
-psql "$DATABASE_URL" -c \
- "insert into hc_jobs(kind,title,prompt,profile,work_dir)
+DB=claude_code/DEV/full_stack_sm/conductor/ho.db   # or your Turso shell
+sqlite3 "$DB" \
+ "insert into ho_jobs(kind,title,prompt,profile,work_dir)
   values('feature','smoke','напиши hello в файл hi.txt','marketing_vb_sm','$PWD');"
 # watch it move queued → running → done
-psql "$DATABASE_URL" -c "select id,status,profile,result_summary from hc_jobs order by created_at desc limit 5;"
+sqlite3 "$DB" "select id,status,profile,result_summary from ho_jobs order by created_at desc limit 5;"
 ```
 
 `profile` ∈ `dev | seo | marketing | security | marketing_vb | marketing_vb_sm`.

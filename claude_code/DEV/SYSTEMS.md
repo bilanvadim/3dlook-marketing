@@ -64,7 +64,7 @@ cd claude_code/DEV      # (inside your checkout of this repo)
 - **Conductor (autonomous A→Z jobs):** don't switch globally. Put the profile on
   the job; the worker loads that profile's plugins per-job (concurrency-safe):
   ```sql
-  insert into hc_jobs(kind,title,prompt,profile,work_dir)
+  insert into ho_jobs(kind,title,prompt,profile,work_dir)
   values('feature','…','…','marketing_vb_sm','/path/to/project');
   -- profile ∈ dev|seo|marketing|security|marketing_vb|marketing_vb_sm
   ```

@@ -8,7 +8,7 @@
     {
       "parameters": {
         "operation": "executeQuery",
-        "query": "insert into hc_jobs (kind, title, prompt, priority, max_turns, work_dir) values ($1,$2,$3,$4,$5,$6) returning id;",
+        "query": "insert into ho_jobs (kind, title, prompt, priority, max_turns, work_dir) values ($1,$2,$3,$4,$5,$6) returning id;",
         "additionalFields": {}
       },
       "name": "Enqueue (Postgres)", "type": "n8n-nodes-base.postgres", "typeVersion": 2, "position": [520, 200],
@@ -25,7 +25,7 @@
     {
       "parameters": {
         "operation": "executeQuery",
-        "query": "insert into hc_jobs (kind, title, prompt, priority, max_turns) values ('scout','Daily ecosystem scan','Run the trend-scout agent per the trend-scan skill. Produce today''s digest, persist to Postgres, and send the digest to Telegram.',50,40);"
+        "query": "insert into ho_jobs (kind, title, prompt, priority, max_turns) values ('scout','Daily ecosystem scan','Run the trend-scout agent per the trend-scan skill. Produce today''s digest, persist to Postgres, and send the digest to Telegram.',50,40);"
       },
       "name": "Enqueue scout job", "type": "n8n-nodes-base.postgres", "typeVersion": 2, "position": [520, 440]
     }

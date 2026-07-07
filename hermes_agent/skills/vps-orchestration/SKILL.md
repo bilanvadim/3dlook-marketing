@@ -1,6 +1,6 @@
 ---
 name: vps-orchestration
-description: "Sergiy's VPS orchestration policy: route ALL coding/analysis/document work to Claude Code, failover to Gemini CLI on limits, salvage git state, drive + monitor the Fullstack agents conductor pipeline (hc_* in Postgres), relay questions/escalations, report to Telegram. Read this BEFORE delegating any technical task."
+description: "Sergiy's VPS orchestration policy: route ALL coding/analysis/document work to Claude Code, failover to Gemini CLI on limits, salvage git state, drive + monitor the Fullstack agents conductor pipeline (ho_* in SQLite/libSQL), relay questions/escalations, report to Telegram. Read this BEFORE delegating any technical task."
 version: 2.0.0
 author: Sergiy + Claude
 license: MIT
@@ -13,12 +13,16 @@ metadata:
 
 # VPS Orchestration Policy — Sergiy's Stack
 
-> **Reference topology.** This skill documents Sergiy's original VPS deployment;
-> the absolute paths (`/srv/sergiy_prod/...`, `/home/sergiy_prod/.hermes`) are
-> **examples**. On this repo the orchestration ops live at `hermes_agent/ops/`
-> and resolve their own repo root — adapt paths to your machine (see
-> `hermes_agent/INSTALL.md`). The *policy* (route to Claude Code, drive the
-> conductor via `hc_*`, ask-by-default, push to Telegram) applies as-is.
+> **Reference topology.** This skill documents Sergiy's original VPS deployment.
+> On this (Vadim) repo the orchestration ops live at `hermes_agent/ops/` and
+> resolve their own repo root — absolute paths here (`/srv/sergiy_prod/…`,
+> `$HOME/.hermes`) are **examples**; adapt to your machine (see
+> `hermes_agent/INSTALL.md`). Two differences that matter here: (1) this repo has
+> **6 systems** (dev, seo, marketing, security, marketing_vb, marketing_vb_sm) —
+> the authoritative list + routing is `claude_code/DEV/SYSTEMS.md`, not the
+> 4-profile table below; (2) conductor state is **SQLite/libSQL** (local file or
+> Turso), read with `sqlite3`. The *policy* (route to Claude Code, drive the
+> conductor via `ho_*`, ask-by-default, push to Telegram) applies as-is.
 
 You are the MANAGER of this VPS, never the coder. Every technical deliverable
 (code, deep analysis, presentation, document produced from analysis) is
@@ -41,20 +45,21 @@ These rules are mandatory and mechanical — follow them exactly, do not improvi
   (ad-hoc) or to the conductor (A→Z projects) and IT dispatches roles.
 - **Conductor** — the autonomous pipeline that runs the Fullstack agents over
   the Claude **Agent SDK** on this VPS (source `full_stack_sm/conductor`).
-  State lives in **plain Postgres** inside the `supabase-db` container, DB
-  `postgres`: tables `hc_jobs`, `hc_steps`, `hc_questions`, `hc_escalations`,
-  views `hc_project_status` / `hc_job_progress`. A worker claims jobs
-  (`hc_claim_job`, FOR UPDATE SKIP LOCKED), runs the executor→reviewer→runtime
+  State lives in **SQLite/libSQL** (`@libsql/client`; default local file
+  `$HO_STATE_DIR/ho.db`, or Turso/libSQL for a networked DB — read it with
+  `sqlite3`): tables `ho_jobs`, `ho_steps`, `ho_questions`, `ho_escalations`,
+  views `ho_project_status` / `ho_job_progress`. A worker claims jobs
+  (`store.claimJob`, single-writer write-tx), runs the executor→reviewer→runtime
   loop per step with durable resume (`resume_session_id`), and escalates
   ASK-actions to Telegram. Contract: `full_stack_sm/conductor/INTEGRATION.md`.
   ⚠️ Nothing executes unless the **conductor worker is running** (`npm start`
-  or its Docker container). If `hc_project_status` never advances, the worker
+  or its Docker container). If `ho_project_status` never advances, the worker
   is down — surface that to Sergiy; never fake progress.
 - **Second Brain** — your Obsidian wiki at `$WIKI_PATH` (git-synced, use the
   `llm-wiki` / `obsidian` skills).
 - **Projects** — git repos under `/srv/sergiy_prod/workspaces/`, origin on
   GitHub (`SergeMiro/...`). ALL durable state lives in git + files on disk and
-  in the conductor Postgres — never only in your conversation memory.
+  in the conductor's SQLite/libSQL DB — never only in your conversation memory.
 
 ## Routing decision tree (apply top-down, first match wins)
 
@@ -109,11 +114,11 @@ Examples: "подними нам трафик из Google" → `seo`; "запу�
 - **C. Autonomous conductor (A→Z projects).** Do NOT switch globally. Set the
   profile ON THE JOB at intake — it's concurrency-safe and per-job:
   ```sql
-  insert into hc_jobs(kind,title,prompt,profile,work_dir)
+  insert into ho_jobs(kind,title,prompt,profile,work_dir)
   values('feature','…','…','marketing','/path/to/project');
   ```
   The worker loads that profile's plugin set for the job's SDK session
-  (`conductor/sql/003_profiles.sql` + `src/core/profiles.ts`). NULL = `dev`.
+  (`conductor/sql/schema.sql` + `src/core/profiles.ts`). NULL = `dev`.
 
 **Deterministic helpers — CALL these, don't classify in your head** (your model
 is small; the scripts are the reliable backbone):
@@ -143,7 +148,7 @@ other case — even if `route-profile.sh` has a strong guess — post the menu a
 3. Map his reply with `…/route-profile.sh --num <n>` (1=dev, 2=marketing, 3=seo,
    4=security); accept the profile name too. Unrecognized reply → re-ask once.
 4. Headless → `…/dispatch-in-profile.sh "$p" -- claude -p '<task>' --workdir <proj> …`.
-   Conductor (A→Z) → set `hc_jobs.profile='$p'` at intake (don't toggle globally).
+   Conductor (A→Z) → set `ho_jobs.profile='$p'` at intake (don't toggle globally).
 5. Confirm to Sergiy which system you launched. NEVER run under the wrong system.
 Full reference: `…/claude_code/DEV/SYSTEMS.md`.
 
@@ -210,7 +215,7 @@ any executor.
 
 ## Conductor pipeline: start + monitor (project A→Z)
 
-The conductor reads jobs from Postgres and runs the Fullstack agents over the
+The conductor reads jobs from its SQLite/libSQL state and runs the Fullstack agents over the
 Agent SDK. Your job is to seed a well-formed job, then relay + report.
 
 - **Start:**
@@ -219,14 +224,14 @@ Agent SDK. Your job is to seed a well-formed job, then relay + report.
      NOT author technical questions — the architect does (relayed below).
   2. Hand the brief to Claude Code's `product-architect` to plan (the
      `/sm-feature` command / project-planning skill). The plan seeds the job's
-     steps (`hc_steps`).
+     steps (`ho_steps`).
   3. Enqueue the job for the conductor worker — either the n8n dispatcher
      webhook `POST /hermes-job` with body
      `{kind,title,prompt,priority,max_turns,work_dir}` (`work_dir` = the target
      repo root, which must contain its own `.claude/`), **or** insert directly:
      ```
-     docker exec -i supabase-db psql -U postgres -d postgres -c \
-       "INSERT INTO hc_jobs(kind,title,prompt,work_dir,max_turns) \
+     sqlite3 "$HO_STATE_DIR/ho.db" \
+       "INSERT INTO ho_jobs(kind,title,prompt,work_dir,max_turns) \
         VALUES('project','<title>','<brief>','<repo-root>',40);"
      ```
   4. The worker runs autonomously. ⚠️ Confirm the worker is up (see Glossary);
@@ -235,14 +240,14 @@ Agent SDK. Your job is to seed a well-formed job, then relay + report.
 
 - **Monitor (read-only SQL, $0)** — one read drives a Telegram status update:
   ```
-  docker exec -i supabase-db psql -U postgres -d postgres -c \
+  sqlite3 "$HO_STATE_DIR/ho.db" \
     "SELECT job_id,job_status,percent,done_steps,total_steps,open_questions,open_escalations \
-     FROM hc_project_status WHERE job_status NOT IN ('done','failed','aborted');"
+     FROM ho_project_status WHERE job_status NOT IN ('done','failed','aborted');"
   ```
   Per-step detail (what's happening now / why stalled):
   ```
-  docker exec -i supabase-db psql -U postgres -d postgres -c \
-    "SELECT step_no,title,status,attempts,score FROM hc_steps WHERE job_id=<id> ORDER BY step_no;"
+  sqlite3 "$HO_STATE_DIR/ho.db" \
+    "SELECT step_no,title,status,attempts,score FROM ho_steps WHERE job_id=<id> ORDER BY step_no;"
   ```
 - **Status report format to Telegram:**
   `▶ <title>: шаг done_steps/total_steps, percent%, статус <job_status>`.
@@ -250,7 +255,7 @@ Agent SDK. Your job is to seed a well-formed job, then relay + report.
 - `blocked` / `needs_review` / `open_escalations>0` → this needs a human
   decision; relay it (escalation section below).
 
-## Async interview (hc_questions ↔ answers) — YOUR core relay job
+## Async interview (ho_questions ↔ answers) — YOUR core relay job
 
 When a step can't proceed without a human decision, the architect writes an
 OPEN QUESTION instead of guessing, and the job goes `awaiting-input`
@@ -259,14 +264,14 @@ is consumed.
 
 - **Poll:**
   ```
-  docker exec -i supabase-db psql -U postgres -d postgres -c \
-    "SELECT id,job_id,step_no,question FROM hc_questions WHERE status='open' ORDER BY id;"
+  sqlite3 "$HO_STATE_DIR/ho.db" \
+    "SELECT id,job_id,step_no,question FROM ho_questions WHERE status='open' ORDER BY id;"
   ```
 - **Relay:** send the question text to Sergiy in Telegram, collect his answer.
 - **Answer:**
   ```
-  docker exec -i supabase-db psql -U postgres -d postgres -c \
-    "SELECT hc_answer_question(<question_id>, '<ответ Сергея>');"
+  sqlite3 "$HO_STATE_DIR/ho.db" \
+    "UPDATE ho_questions SET answer='<ответ Сергея>', status='answered', answered_at=datetime('now') WHERE id=<question_id>;"
   ```
   When the LAST open question for a job is answered, the conductor flips it out
   of `awaiting-input` and resumes (file-based continuation + `resume_session_id`).
@@ -276,21 +281,21 @@ is consumed.
 ## Escalations (ASK-gate) — approve / deny / abort
 
 The conductor pauses on ASK-actions — **merge**, **destructive SQL**,
-**db push**, **terraform** — and writes an `hc_escalations` row (a plain
+**db push**, **terraform** — and writes an `ho_escalations` row (a plain
 `git push` is NOT gated; it is the normal auto-flow). The job waits for a human
 decision.
 
 - **Poll:**
   ```
-  docker exec -i supabase-db psql -U postgres -d postgres -c \
-    "SELECT id,job_id,reason,question FROM hc_escalations WHERE status='open' ORDER BY id;"
+  sqlite3 "$HO_STATE_DIR/ho.db" \
+    "SELECT id,job_id,reason,question FROM ho_escalations WHERE status='open' ORDER BY id;"
   ```
 - **Relay** the reason + question to Sergiy; get approve / deny / abort.
 - **Record his decision** (the worker's `waitEscalation` reads it):
   ```
-  docker exec -i supabase-db psql -U postgres -d postgres -c \
-    "UPDATE hc_escalations SET status='approved', decided_by='sergiy', \
-     decision_note='<опц.>', decided_at=now() WHERE id=<id>;"
+  sqlite3 "$HO_STATE_DIR/ho.db" \
+    "UPDATE ho_escalations SET status='approved', decided_by='sergiy', \
+     decision_note='<опц.>', decided_at=datetime('now') WHERE id=<id>;"
   ```
   (`status` = `approved` / `denied` / `aborted`.) Merges to production are
   ALWAYS Sergiy's call — never approve a merge yourself.
@@ -361,7 +366,7 @@ autonomy; surface findings and let him decide.
 1. You never write project code, designs, or analysis deliverables yourself.
 2. Architecture and planning happen ONLY on Claude Code — never on Gemini.
 3. No force-push. No merges without Sergiy. No secrets in commits.
-4. Durable state lives on disk (git + files) and in the conductor Postgres.
+4. Durable state lives on disk (git + files) and in the conductor SQLite/libSQL DB.
    Re-read from those instead of trusting your memory of a past conversation.
 5. One clarifying question when the target project is ambiguous; otherwise act.
 6. Never fake progress: if the conductor worker is down or a job is stuck with

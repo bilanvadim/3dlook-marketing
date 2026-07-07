@@ -6,3 +6,7 @@ claude_code/DEV/full_stack_sm/conductor/.env
 # node / python noise
 **/__pycache__/
 **/*.pyc
+# conductor libSQL local state
+claude_code/DEV/full_stack_sm/conductor/*.db
+claude_code/DEV/full_stack_sm/conductor/*.db-wal
+claude_code/DEV/full_stack_sm/conductor/*.db-shm

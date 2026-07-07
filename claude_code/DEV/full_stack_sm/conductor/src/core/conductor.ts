@@ -24,9 +24,9 @@ import { makeSdkDeps } from './agent-runner';
 import { resolveProfilePlugins } from './profiles';
 import { tgConfigFromEnv, notifyEscalation, notifyDone, TelegramConfig } from '../escalation/telegram';
 
-const WORKER_ID = process.env.HC_WORKER_ID ?? `hc-${process.pid}`;
-const RESUME_BACKOFF_SECS = Number(process.env.HC_RESUME_BACKOFF_SECS ?? 3600); // wait when limit gives no retry-after
-const STALE_RUN_SECS = Number(process.env.HC_STALE_RUN_SECS ?? 900);            // requeue runs stuck this long
+const WORKER_ID = process.env.HO_WORKER_ID ?? `ho-${process.pid}`;
+const RESUME_BACKOFF_SECS = Number(process.env.HO_RESUME_BACKOFF_SECS ?? 3600); // wait when limit gives no retry-after
+const STALE_RUN_SECS = Number(process.env.HO_STALE_RUN_SECS ?? 900);            // requeue runs stuck this long
 const HERMES_SYSTEM_PROMPT =
   'You are the Fullstack-agents orchestrator described in this project\'s CLAUDE.md. Plan, delegate to ' +
   'the specialized subagents, coordinate via the scratchpad protocol, and run the quality gate ' +
@@ -96,11 +96,11 @@ function asksForGatedAction(signature?: string): string | null {
   return null;
 }
 
-/** PHASE 2 — run a job that was decomposed into hc_steps: per-step verified loop with
+/** PHASE 2 — run a job that was decomposed into ho_steps: per-step verified loop with
  * progress, escalation and durable step state. The agent SDK calls live in agent-runner.ts
  * (integration seam); the loop decisions in steprunner.ts/steploop.ts are unit-tested. */
 async function runJobAsSteps(store: Store, job: Job, tg: TelegramConfig | null): Promise<void> {
-  const runId = await store.startRun(job.id); // anchors escalations (hc_escalations.run_id FK)
+  const runId = await store.startRun(job.id); // anchors escalations (ho_escalations.run_id FK)
   await store.setJobStatus(job.id, 'running');
   const deps = makeSdkDeps(job.work_dir, job.profile);
   let finalStatus = 'done';
@@ -265,7 +265,7 @@ class BreakStop extends Error {}
 /** Long-running worker loop: recover stale runs, poll for jobs, sleep when idle. */
 export async function workerLoop() {
   const store = new Store();
-  const idleMs = Number(process.env.HC_IDLE_MS ?? 10000);
+  const idleMs = Number(process.env.HO_IDLE_MS ?? 10000);
   console.log(`[${WORKER_ID}] conductor up. polling…`);
   for (;;) {
     let worked = false;

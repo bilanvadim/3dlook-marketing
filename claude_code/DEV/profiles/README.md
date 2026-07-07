@@ -30,7 +30,7 @@ the active profile in `~/.claude/.active-profile`.
 
 ## Switching (automated — conductor)
 
-Each job carries a `profile` (column on `hc_jobs`, migration
+Each job carries a `profile` (column on `ho_jobs`, migration
 `conductor/sql/003_profiles.sql`). When the conductor starts an Agent SDK
 session for a job it should activate that profile before dispatching. Hermes
 sets the profile at intake:

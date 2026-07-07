@@ -16,13 +16,13 @@
 │ n8n: cron (scout daily) | webhook (новая задача) | вручную│
 └───────────────┬───────────────────────────────────────────┘
                 │ enqueue job
-┌─ STATE (Postgres) ─────────────────────────────────────────┐
+┌─ STATE (SQLite/libSQL) ────────────────────────────────────┐
 │ jobs (resume_session_id) · runs (session_id) · escalations │
 └───────────────┬───────────────────────────────────────────┘
                 │ poll next queued job
 ┌─ CONDUCTOR CORE (этот сервис, TS) ─────────────────────────┐
 │ 0. recoverStale(): упавшие run'ы → deferred с session_id  │
-│ 1. claim job (atomic, FOR UPDATE SKIP LOCKED)              │
+│ 1. claim job (atomic write-tx; SQLite single-writer)       │
 │ 2. есть resume_session_id? → продолжаем сессию            │
 │ 3. query() c options: settingSources:['project'],         │
 │    permissionMode, resume:<session_id> если есть          │
@@ -41,7 +41,7 @@
 ```
 
 ## Поток одного прогона (happy path)
-1. n8n кладёт job в Postgres (`status=queued`, тип, промпт, `max_turns`/`max_wall_secs` опц.).
+1. n8n кладёт job в libSQL (`status=queued`, тип, промпт, `max_turns`/`max_wall_secs` опц.).
 2. Воркер сначала `recoverStale()` (переочередь упавших с их `session_id`), затем забирает job атомарно.
 3. Если у job есть `resume_session_id` — продолжаем ту же сессию; иначе старт с нуля.
 4. `query()` с `settingSources:['project']` (наследует marketplace), `permissionMode`, `resume:<session_id>` если есть, системным промптом = роль Fullstack agents из CLAUDE.md.
@@ -63,24 +63,24 @@
 | RateLimit/token-лимит = rejected | — | **пауза + backoff → durable resume**, job=deferred |
 | RateLimit = allowed_warning | — | продолжить, снизить параллелизм |
 | Запрос ASK-действия (merge / destructive SQL / db push / terraform) | — | пауза, эскалация человеку. `git push` НЕ гейтится |
-| Падение процесса посреди прогона | `HC_STALE_RUN_SECS` | `hc_recover_stale()` → deferred с `session_id` → resume |
+| Падение процесса посреди прогона | `HO_STALE_RUN_SECS` | `ho_recover_stale()` → deferred с `session_id` → resume |
 
-## State-модель (Postgres, см. sql/schema.sql) — минимальная, ради resume
+## State-модель (SQLite/libSQL, см. sql/schema.sql) — минимальная, ради resume
 - `jobs` — очередь задач (queued/claimed/running/paused/done/failed/deferred/escalated/aborted) + `resume_session_id` + `attempts`.
 - `runs` — попытки исполнения job; ключевое поле — `session_id` (для durable resume) + `stop_reason` + `error`.
 - `escalations` — открытые вопросы к человеку + их разрешения.
-- `hc_claim_job()` — атомарный захват; `hc_recover_stale()` — переочередь упавших с их session_id.
+- `ho_claim_job()` — атомарный захват; `ho_recover_stale()` — переочередь упавших с их session_id.
 - Нет `run_events` и `budget_ledger` — полный аудит и подсчёт денег осознанно убраны.
 
 ## Почему так (ключевые решения)
 1. **TS, не Python** — стек Sergiy (Next.js/TS), и SDK на TS bundle'ит native Claude Code binary (один npm install).
-2. **Postgres как state** — уже его паттерн из OrchestrAgent; FOR UPDATE SKIP LOCKED даёт безопасную многопоточную очередь без отдельного брокера.
+2. **SQLite/libSQL как state** — ноль инфраструктуры (локальный файл), тем же кодом → Turso/libSQL для сетевой БД. Claim в write-транзакции; SQLite single-writer, поэтому очередь безопасна без брокера (ценой одного писателя — для одного дирижёра достаточно; флот воркеров = повод вернуть Postgres).
 3. **n8n только как trigger** — не как место бизнес-логики. Логика и лимиты — в коде (тестируемо), n8n дёргает и доставляет уведомления.
 4. **Эскалация через Telegram** — у Sergiy уже есть бот; человек остаётся в петле на дорогих/опасных решениях, но не на рутине.
 5. **Docker-изоляция executor** — его паттерн; дирижёр и Claude Code крутятся в контейнере с смонтированным рабочим репозиторием и без доступа к хостовым секретам.
 
 ## Статус и что НЕ покрывает (честно)
-- **Durable resume реализован** (pause-on-limit + `hc_recover_stale` + `resume:`), но сквозной прогон против живого SDK ещё не обкатан.
+- **Durable resume реализован** (pause-on-limit + `ho_recover_stale` + `resume:`), но сквозной прогон против живого SDK ещё не обкатан.
 - **Деньги/бюджет/стоимость — убраны полностью** (осознанно, по требованию: приоритет качество).
 - **Авто `/clear` каждые N запросов в интерактиве — невозможно хуком** (хук не запускает слэш-команды); сделан счётчик-напоминание, реальная экономия — встроенная авто-компакция + scratchpad. В дирижёре каждый job — свежая сессия.
 - Мульти-тенантность и RBAC; observability/дашборды — нет (осознанно).

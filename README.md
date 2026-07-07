@@ -51,7 +51,7 @@ workflow and precedence rules.
 ## Hermes orchestrator
 
 `hermes_agent/` + the conductor in `full_stack_sm/conductor/` let jobs run
-autonomously: a Telegram/queue request becomes an `hc_jobs` row with a `profile`,
+autonomously: a Telegram/queue request becomes an `ho_jobs` row (SQLite/libSQL) with a `profile`,
 and the conductor runs Claude Code in that system, verifies with evidence, and
 escalates to a human only when needed.
 
