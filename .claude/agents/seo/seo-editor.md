@@ -51,6 +51,16 @@ tools: Read, Write, Grep
    - Проверь: не начинаются ли 3+ абзаца подряд одинаково (The..., This..., The...)
    - Проверь: нет ли 2+ предложений подряд одинаковой длины (monotone rhythm)
 
+### Pass 3b — Content strategy compliance (FitXpress)
+
+Сверься с блоком **Content Strategy Fit** из plan.md и `content-strategy-guidelines.md`:
+- **Positioning (§8):** ни одного запрещённого claim (diagnoses / treatment-underwriting-hiring-clearance decisions / replaces clinician-DEXA-reference / guarantees compliance / detects fraud / standalone medical authority). Найдёшь — перефразируй в «supports / helps standardize / provides structured records». Секция «What FitXpress does NOT do» должна присутствовать.
+- **Vertical boundary (§9):** статья не выходит за границу vertical (telehealth ≠ GLP-1 eligibility, insurance = underwriting-support, occ. health = intake/documentation). Sensitive vertical → scope note присутствует рано.
+- **Cannibalization (§5):** статья держит узкий угол из плана и не дублирует existing_urls. Если разрослась в near-duplicate хаба — сузь.
+- **Internal links (§11):** присутствуют 4 направления (up/side/down/trust). Отсутствует — добавь из плана.
+- **FAQ (§14):** секция есть, ответы 2-5 предложений, включает «what FitXpress does not do» / «used for decisioning?» где relevant.
+- **CTA (§15):** соответствует intent (soft/evaluation/direct), не форсированный demo в TOFU.
+
 ### Pass 4 — Final polish
 - Проверь все banned words (список из messaging.md). Если нашёл — перефразируй.
 - Проверь все числа — каждое должно быть в approved_claims из context pack. Если нет — удали.

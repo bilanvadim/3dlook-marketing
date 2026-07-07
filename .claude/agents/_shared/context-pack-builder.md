@@ -82,6 +82,18 @@ target_agent: post-drafter | hypothesis-generator | seo-planner | etc.
   - `do_not_say`: границы сегмента из audience.md «Don't» (только FX)
 - **Зачем:** без этого шага статьи и посты пишутся generic-тоном продукта, не отвечая на конкретную боль читателя и легко нарушая границы сегмента (диагностика, decisioning). Этот шаг делает контент направленным на конкретного buyer persona и безопасным по claims.
 
+### 7b. Select content-strategy row (только для `track = seo`, FitXpress)
+- Прочитай `brand-assets/content-strategy/content-plan.md` (hub/cluster editorial matrix — офлайн-копия стратегической таблицы) и найди **строку**, соответствующую `objective`/теме статьи (сопоставь по hub + cluster + intent).
+- Если строка не найдена → верни `content_strategy: not_in_plan` с пометкой, чтобы seo-planner Phase 0 остановился и спросил Вадима о размещении. **Не выдумывай размещение.**
+- Из найденной строки вытяни компактно (это ГЕЙТ для seo-planner):
+  - `hub`, `cluster`, `intent`, `action_type`, `priority`
+  - `existing_urls`: URL из «URL of already published articles» (refresh target / internal-link source / cannibalization warning)
+  - `cannibalization_guardrail`: дословно из строки
+  - `recommendation`: дословный угол/решение из строки
+- Из `content-strategy-guidelines.md` §9 добавь `vertical_boundary` для этого vertical (что owns + что НЕЛЬЗЯ: decisioning / диагностика / clearance / замена reference-методов).
+- Собери `internal_link_targets` в 4 направления (§11): up (hub), sideways (related clusters), down (FitXpress/BOFU product page), trust (accuracy framework `mobile-body-scanning-accuracy` + central Privacy/Regulatory FAQ).
+- **Зачем:** без строки стратегии статьи пишутся от title и дублируют существующие хабы. Этот блок даёт seo-planner action_type-гейт, cannibalization guardrail и vertical boundary ещё до кластеризации ключей.
+
 ### 8. Select exclusions (для outbound)
 - Если `track = outbound`: прочитай `workspace/outbound/exclusions/{profile}-registry.json`
 - Включи список excluded company_ids и person_ids для этого profile
@@ -188,8 +200,28 @@ context_pack:
       - "No diagnostic claims; not a DEXA or calibrated-scale replacement"
       - "No eligibility decisioning; keep separate from UK online-pharmacy BMI compliance unless the piece is explicitly the bridge"
 
+  # track=seo + fitxpress only — sourced from content-plan.md + content-strategy-guidelines.md
+  content_strategy:
+    hub: "AI in Telehealth: Workflows, Privacy, Patient Experience, Remote Body Data"
+    cluster: "BMI verification / remote eligibility support"
+    intent: "BOFU"
+    action_type: "refresh-expand-existing"  # GATE: seo-planner Phase 0 acts on this
+    priority: "P0"
+    existing_urls:
+      - "https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/  # refresh target / owner of intent"
+    cannibalization_guardrail: "Highest cannibalization risk. Do not create a near-duplicate of Online Pharmacy BMI Verification. Differentiate on telehealth program workflows, patient-submitted data, remote eligibility support, audit trail, provider review — not pharmacy compliance."
+    recommendation: "Add a Telehealth BMI Verification section to the existing article; standalone BOFU page only if 'telehealth BMI verification' search demand is materially different."
+    vertical_boundary: "Telehealth owns remote-care workflows, patient experience, documentation, privacy. Keep separate from GLP-1 eligibility & online-pharmacy compliance unless explicitly the bridge. No eligibility decisioning."
+    internal_link_targets:
+      up: "AI in Telehealth hub"
+      sideways: ["GLP-1 compliance", "Bariatric pre-qualification"]
+      down: "https://3dlook.ai/fitxpress/for-telehealth-and-weight-loss/"
+      trust: ["mobile-body-scanning-accuracy", "Data/Privacy/Security/Regulatory FAQ"]
+
   exclusions: null  # only for outbound track
 ```
+
+> `content_strategy` присутствует только для `track = seo` + `product = fitxpress`. Для social/outbound и для Mobile Tailor — поле отсутствует.
 
 ## Размер context pack
 

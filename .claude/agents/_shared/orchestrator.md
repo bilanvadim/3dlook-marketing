@@ -30,7 +30,7 @@ Orchestrator (ты)
 |---------------|----------|--------|
 | «Напиши пост для LinkedIn» / `/weekly-posts` | **Social** | context-pack-builder → post-drafter → brand-checker → QC → [Vadim] → visual-brief |
 | «Запусти outbound кампанию» / `/outbound` | **Outbound** | context-pack-builder → hypothesis-generator → [Vadim] → company-researcher → ... |
-| «Напиши статью» / `/new-article` | **SEO** | context-pack-builder → seo-planner → [Vadim] → seo-writer → seo-editor → seo-publisher → [Vadim] |
+| «Напиши статью» / `/new-article` | **SEO** | context-pack-builder → seo-planner (**Phase 0 strategy gate**) → [Vadim] → seo-writer → seo-editor → seo-publisher → [Vadim] |
 | «Спланируй квартал» / `/quarterly-review` | **Strategy** | context-pack-builder → quarterly-strategist → [Vadim] |
 | «Проверь качество» / `/qc` | **QC** | quality-controller → coordinator review |
 | «Улучши агентов» / `/improve-agents` | **Meta** | agent-improver |
@@ -116,13 +116,19 @@ context-pack-builder
 
 ### SEO workflow
 ```
-context-pack-builder
-  → seo-planner → QC → [VADIM checkpoint: plan + title]
+context-pack-builder (эмитит content_strategy: строка из content-plan.md — FitXpress)
+  → seo-planner Phase 0 (strategy gate) — сверяет hub/cluster/action_type/cannibalization
+       ├─ action_type = create-net-new / publish-planned-hub → продолжай
+       └─ action_type = refresh / section-first / review-decide / lead-magnet
+             → верни рекомендацию и СТОП (не пиши новую статью)
+  → seo-planner Phase 1-3 (keywords → title → outline) → QC → [VADIM checkpoint: plan + title]
   → seo-writer (full or per-section) → QC per section
-  → seo-editor (4 passes)
-  → seo-publisher (meta + checklist) → QC → [VADIM checkpoint: text + meta]
+  → seo-editor (4 passes + strategy compliance)
+  → seo-publisher (meta + SEO checklist + strategy checklist) → QC → [VADIM checkpoint: text + meta]
   → [Вадим: publish в CMS]
 ```
+
+> **Content strategy gate (FitXpress):** каждая новая health-статья должна иметь строку в `brand-assets/content-strategy/content-plan.md`. Нет строки → seo-planner останавливается и спрашивает Вадима о размещении (hub/cluster/action type). Правила размещения — `brand-assets/content-strategy/content-strategy-guidelines.md`.
 
 ## Facts → Copy → Review pattern
 
