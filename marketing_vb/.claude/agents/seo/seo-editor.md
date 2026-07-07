@@ -51,8 +51,20 @@ tools: Read, Write, Grep
    - Проверь: не начинаются ли 3+ абзаца подряд одинаково (The..., This..., The...)
    - Проверь: нет ли 2+ предложений подряд одинаковой длины (monotone rhythm)
 
+### Pass 3b — Content strategy compliance (FitXpress)
+
+Сверься с блоком **Content Strategy Fit** из plan.md и `content-strategy-guidelines.md`:
+- **Positioning (§8):** ни одного запрещённого claim (diagnoses / treatment-underwriting-hiring-clearance decisions / replaces clinician-DEXA-reference / guarantees compliance / detects fraud / standalone medical authority). Найдёшь — перефразируй в «supports / helps standardize / provides structured records». Секция «What FitXpress does NOT do» должна присутствовать.
+- **Vertical boundary (§9):** статья не выходит за границу vertical (telehealth ≠ GLP-1 eligibility, insurance = underwriting-support, occ. health = intake/documentation). Sensitive vertical → scope note присутствует рано.
+- **Cannibalization (§5):** статья держит узкий угол из плана и не дублирует existing_urls. Если разрослась в near-duplicate хаба — сузь.
+- **Internal links (§11):** присутствуют 4 направления (up/side/down/trust). Отсутствует — добавь из плана.
+- **FAQ (§14):** секция есть, ответы 2-5 предложений, включает «what FitXpress does not do» / «used for decisioning?» где relevant.
+- **CTA (§15):** соответствует intent (soft/evaluation/direct), не форсированный demo в TOFU.
+
 ### Pass 4 — Final polish
-- Проверь все banned words (список из messaging.md). Если нашёл — перефразируй.
+- Проверь все banned words (список из messaging.md, + `utilize` / `utilizing`). Если нашёл — перефразируй.
+- **Abbreviations (guardrail M1):** пройди по тексту сверху вниз. Каждая аббревиатура при ПЕРВОМ появлении должна быть расшифрована — `Body Mass Index (BMI)`, `dual-energy X-ray absorptiometry (DEXA)`, `glucagon-like peptide-1 (GLP-1)`, `Food and Drug Administration (FDA)`, `International Council for Harmonisation (ICH)` и т.д. Правило универсальное: касается и «очевидных» (BMI), и регуляторов, которых цитируешь как авторитет (FDA, ICH, GCP) — их чаще всего оставляют без расшифровки. Не расшифровано → разверни.
+- **Stacked negation (guardrail M2):** найди двойные / вложенные отрицания в одном предложении («does not… nor does it…», «is — and is not —», «necessary but not sufficient», «do not, on their own, …»). Переформулируй в позитивную рамку, где смысл сохраняется («endpoint validation stays with the sponsor» вместо «does not validate… nor does it…»). Оставляй ровно одно чёткое негативное утверждение границы (§6 «not positioned as»), не цепляй второе отрицание в том же предложении. Повтор дисклеймера между секциями (когда он к месту) — НЕ трогай, это про плотность отрицаний внутри предложения.
 - Проверь все числа — каждое должно быть в approved_claims из context pack. Если нет — удали.
 - Проверь что primary keyword встречается в H1, первом абзаце, и 1-2 H2.
 - Word count: ±10% от target из плана.

@@ -57,15 +57,46 @@ Any unresolved trade-off (an asymmetry, a dropped number, a possible contradicti
 
 ---
 
+## Mechanical writing rules
+
+> Added 2026-07-07 from the Clinical Trials use-case review (Vadim). Lower-level than the 11 principles above, but apply to **all** 3DLOOK content and are enforced in the writing and editing passes. These fix recurring drafting slips, not positioning.
+
+### M1. Expand every abbreviation at first use
+
+Spell out each acronym the first time it appears in the body, then use the short form: *Body Mass Index (BMI)*, *dual-energy X-ray absorptiometry (DEXA)*, *glucagon-like peptide-1 (GLP-1)*, *Food and Drug Administration (FDA)*, *International Council for Harmonisation (ICH)*, *Contract Research Organization (CRO)*, *decentralized clinical trial (DCT)*, *Electronic Data Capture (EDC)*, *electronic Clinical Outcome Assessment (eCOA)*, *Quality Assurance (QA)*, *Digital Health Technology (DHT)*, *API / SDK* (spelled out on first use).
+
+First-use expansion is **universal** — it does not depend on which section the term lands in, and it still applies to:
+- terms that feel obvious (BMI), and
+- regulators or standards you cite as authority (FDA, ICH, GCP) — these are the ones most often left bare.
+
+A term that appears only inside a cited document's italicized title still needs its own gloss at its first standalone use.
+
+### M2. Prefer positive scoping over stacked negation
+
+Compliance-heavy copy tends to negate twice in one breath. State a boundary **once, clearly**, and prefer the positive framing where the meaning survives.
+
+Avoid:
+- chained negatives — *"It does not replace DEXA… **nor does it** independently validate endpoints."*
+- interrupted / parenthetical negation — *"the scope FitXpress **is — and is not —** designed for"*
+- double-negative idioms — *"**necessary but not sufficient**"*, *"not uncommon"*, *"they **do not, on their own,** make a study compliant"*
+
+Prefer:
+- *"Endpoint validation stays with the sponsor; FitXpress standardizes and documents capture."*
+- *"FitXpress supports pre-check workflows; eligibility remains the investigator's determination."*
+
+Keep exactly one clear negative statement of scope where a boundary must be stated (per #6, *"not positioned as…"*); do not chain a second negation onto it in the same sentence. (Repeating the scope disclaimer across sections, when each restatement fits its section, is acceptable — this rule is about negation density within a sentence, not about how often the disclaimer appears.)
+
+---
+
 ## How to apply
 
 | Phase | Application |
 |-------|-------------|
 | Brief intake | Include this file (or a link to it) in the brief. Don't write a sentence without confirming none of the 11 are broken. |
 | Phase 1 fact-check | Run the 11 as an explicit checklist. Flag every #1, #2, #3, #4, #6 risk before approving the brief. |
-| Phase 3 writing | Enforce naскрізь — especially #1 (substantiation), #2 (one number everywhere), #3 (reserved words), #4 (no bare percentages without methodology), #6 (medical framing). |
-| Phase 4 self-critique | List any place a guardrail was bent. Per #11, surface to Open Items for Asselya, not a silent edit. |
-| Phase 5 metrics | Add a "Guardrails audit" subsection — pass/fail for each of the 11. |
+| Phase 3 writing | Enforce naскрізь — especially #1 (substantiation), #2 (one number everywhere), #3 (reserved words), #4 (no bare percentages without methodology), #6 (medical framing), and **M1 (expand every abbreviation at first use) / M2 (no stacked negation)**. |
+| Phase 4 self-critique | List any place a guardrail was bent. Per #11, surface to Open Items for Asselya, not a silent edit. Run a first-use scan for every acronym (M1) and a stacked-negation scan (M2). |
+| Phase 5 metrics | Add a "Guardrails audit" subsection — pass/fail for each of the 11 principles + M1/M2. |
 
 ## Related references
 

@@ -40,13 +40,25 @@ tools: Read, Write
 - [ ] Нет banned words
 - [ ] Word count в пределах ±10% от target
 - [ ] Intro hook в первых 2 предложениях
-- [ ] CTA placement где указано в плане
-- [ ] Internal links (если доступны)
+- [ ] CTA placement где указано в плане; тип CTA соответствует intent (soft/evaluation/direct)
 - [ ] No generic AI patterns (тройные параллелизмы, em-dash rhetoric)
 - [ ] Images / alt text suggestions (если нужны)
 ```
 
-Если ≥2 пункта ❌ → STOP, вернуть в seo-editor.
+**Content strategy checklist (FitXpress, из `content-strategy-guidelines.md` §16):**
+```
+- [ ] Статья привязана к правильному hub (из плана)
+- [ ] Соблюдён action_type (не создан net-new там, где нужен refresh/section)
+- [ ] Не дублирует existing_urls; соблюдён cannibalization guardrail
+- [ ] Соблюдена vertical boundary; для sensitive vertical есть scope note
+- [ ] Internal links в 4 направления (up → hub, side → clusters, down → FitXpress/BOFU, trust → accuracy/privacy FAQ)
+- [ ] Есть FAQ-секция (GEO/AEO-friendly, 2-5 предложений на ответ)
+- [ ] Есть секция «What FitXpress does NOT do»; нет запрещённых positioning-claims (§8)
+- [ ] Нет неподтверждённых medical / legal / underwriting / employment / clinical-trial claims (compliance-claims → на review legal/product/security)
+- [ ] Статья owns один distinct search intent
+```
+
+Если ≥2 пункта ❌ в любом из чек-листов → STOP, вернуть в seo-editor. Любой ❌ в блоке positioning/compliance/cannibalization → STOP независимо от количества.
 
 ### 3. CMS-ready package
 
@@ -93,7 +105,7 @@ Notify Вадиму:
 SEO ready: {slug}
 Meta title ({XX}/60 chars): {title}
 Meta desc ({XXX}/160 chars): {description}
-Checklist: {N}/11 passed
+SEO checklist: {N}/10 passed · Strategy checklist: {M}/9 passed
 File: workspace/seo/articles/{slug}/publish-package.md
 ```
 

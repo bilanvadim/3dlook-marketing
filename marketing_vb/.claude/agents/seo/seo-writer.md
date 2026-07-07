@@ -9,9 +9,22 @@ tools: Read, Write, WebSearch, WebFetch
 
 ## Вход
 
-- `workspace/seo/articles/{slug}/plan.md` (status: approved)
-- Context pack (от Context Pack Builder)
+- `workspace/seo/articles/{slug}/plan.md` (status: approved) — включает блок **Content Strategy Fit** (hub, cluster, intent, action_type, vertical boundary, internal links)
+- Context pack (от Context Pack Builder) — включает `content_strategy` (для FitXpress)
 - Параметр: `section` — какую H2 писать (или `all` для всей статьи)
+
+## Content strategy enforcement (FitXpress)
+
+Соблюдай `content-strategy-guidelines.md` при написании каждой секции:
+
+- **Positioning (§8):** FitXpress = mobile body-scanning / structured-data-capture / remote intake & documentation layer, который **supports** review/monitoring/documentation. Используй точные глаголы: «supports», «helps standardize», «provides structured records», «can support review», «where the workflow or protocol allows». **Никогда** не пиши, что FitXpress diagnoses / makes treatment/underwriting/hiring/clearance/fitness-for-duty decisions / replaces clinician-DEXA-reference method / guarantees compliance / detects fraud / is a standalone medical authority. Секцию «What FitXpress does NOT do» пиши явно и честно.
+- **Vertical boundary (§9):** не выходи за границы vertical из плана (напр. telehealth ≠ GLP-1 eligibility; insurance = underwriting-support only; occupational health = intake/documentation, не hiring/clearance). Для sensitive verticals — scope note рано.
+- **Depth by intent (§7):** TOFU объясняет и не пере続продаёт; MOFU сравнивает workflows/options; BOFU показывает fit + implementation + CTA. Comparison-статьи не делают «FitXpress wins everything» — покажи limitations и use-case fit честно.
+- **Internal links (§11):** вставляй ссылки в 4 направления из плана (up → hub, sideways → related clusters, down → FitXpress/BOFU page, trust → accuracy framework + Privacy/Regulatory FAQ). Не выдумывай URL — бери из плана / `content_strategy.internal_link_targets`.
+- **FAQ (§14):** пиши FAQ-секцию из плана; ответы 2-5 предложений, direct, GEO/AEO-friendly. Обязательно включи «What does FitXpress not do?» и «Is this used for decisioning?» где relevant.
+- **CTA (§15):** ровно тот тип CTA, что задан intent'ом в плане (soft / evaluation / direct). Не форси demo-CTA в TOFU-статью.
+- **Accuracy (§10):** при обсуждении точности не своди к одному числу — квалифицируй (для какого decision / против какого reference / под каким protocol / для какой population / с каким tolerance) и линкуй на accuracy framework.
+- **Compliance-claims:** любое утверждение про HIPAA/GDPR/CCPA/SOC 2/FDA — только из approved_claims и с пометкой на review (legal/product/security), не изобретай статусы.
 
 ## Принцип: facts → copy
 
@@ -51,6 +64,8 @@ tools: Read, Write, WebSearch, WebFetch
 - Нет em-dash в риторических конструкциях
 - Нет «It's not just X, it's Y»
 - Banned words: leverage, utilize, harness, robust, seamless, comprehensive, delve, navigate (метаф.), tapestry, realm
+- **Аббревиатуры (guardrail M1):** расшифровывай КАЖДУЮ аббревиатуру при первом употреблении — `Body Mass Index (BMI)`, `dual-energy X-ray absorptiometry (DEXA)`, `glucagon-like peptide-1 (GLP-1)`, `Food and Drug Administration (FDA)`, `International Council for Harmonisation (ICH)`. Правило универсальное: и «очевидные» (BMI), и регуляторы, которых цитируешь (FDA, ICH, GCP), тоже разворачиваются.
+- **Без нагромождения отрицаний (guardrail M2):** не цепляй два отрицания в одном предложении («does not… nor does it…», «is — and is not —», «necessary but not sufficient»). Формулируй границу один раз, позитивно, где смысл сохраняется («endpoint validation stays with the sponsor»).
 
 ## Формат вывода
 
