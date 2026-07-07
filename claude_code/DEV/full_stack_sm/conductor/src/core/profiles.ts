@@ -1,5 +1,5 @@
 /**
- * Fullstack agents Orchestrator — profile → plugin resolver.
+ * Fullstack agents Conductor — profile → plugin resolver.
  *
  * A job's `profile` (ho_jobs.profile: dev|seo|marketing|security) selects a
  * MUTUALLY-EXCLUSIVE set of Claude Code plugins, so only that domain system's
@@ -24,8 +24,8 @@ interface ProfileManifest {
   enabledPlugins?: string[];
 }
 
-const HERE = dirname(fileURLToPath(import.meta.url)); // .../orchestrator/src/core
-// profiles live at claude_code/DEV/profiles (four levels up: core→src→orchestrator→full_stack_sm→DEV)
+const HERE = dirname(fileURLToPath(import.meta.url)); // .../conductor/src/core
+// profiles live at claude_code/DEV/profiles (four levels up: core→src→conductor→full_stack_sm→DEV)
 const DEFAULT_PROFILES_DIR = resolve(HERE, '../../../../profiles');
 
 export function profilesDir(): string {

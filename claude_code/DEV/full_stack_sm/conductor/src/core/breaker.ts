@@ -1,5 +1,5 @@
 /**
- * Fullstack agents Orchestrator — circuit breaker.
+ * Fullstack agents Conductor — circuit breaker.
  * Pure decision logic, no SDK/network deps, so it is unit-testable in isolation.
  * The core loop feeds it every event; it returns whether to continue, pause, or stop.
  *

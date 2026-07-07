@@ -2,7 +2,7 @@
  * Hermes Orchestrator — Telegram callback handler.
  * Run as a tiny webhook (or wire into n8n). When the human taps Approve/Deny/Abort,
  * Telegram sends a callback_query with data "ho:<decision>:<escalationId>".
- * We record the decision into ho_escalations; the orchestrator's waitEscalation picks it up.
+ * We record the decision into ho_escalations; the conductor's waitEscalation picks it up.
  */
 import { createClient } from '@libsql/client';
 

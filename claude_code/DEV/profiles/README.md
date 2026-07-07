@@ -28,10 +28,10 @@ It registers any needed marketplaces, then rewrites `~/.claude/settings.json`
 the active profile in `~/.claude/.active-profile`.
 **A Claude Code restart is required** — plugins load only at session start.
 
-## Switching (automated — orchestrator)
+## Switching (automated — conductor)
 
 Each job carries a `profile` (column on `ho_jobs`, migration
-`orchestrator/sql/003_profiles.sql`). When the orchestrator starts an Agent SDK
+`conductor/sql/003_profiles.sql`). When the conductor starts an Agent SDK
 session for a job it should activate that profile before dispatching. Hermes
 sets the profile at intake:
 

@@ -1,5 +1,5 @@
 {
-  "name": "hermes-orchestrator",
+  "name": "hermes-conductor",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "start": "tsx src/core/orchestrator.ts",
+    "start": "tsx src/core/conductor.ts",
     "test": "tsx test/breaker.test.ts && tsx test/steploop.test.ts && tsx test/steprunner.test.ts && tsx test/store.test.ts",
     "typecheck": "tsc --noEmit"
   },

@@ -1,4 +1,4 @@
-# Hermes Orchestrator — Orchestrator
+# Hermes Orchestrator — Conductor
 
 Автономный дирижёр над Claude Code. Берёт задачи из очереди, прогоняет их через Claude Agent SDK (тот же движок, что и Claude Code), держит безопасность и **durable resume** через circuit breaker, эскалирует человеку в Telegram только когда нужно. **Деньги/бюджет НЕ контролирует** — приоритет качество, единственная защита от runaway — детект зацикливания. Наследует весь marketplace (агенты, CLAUDE.md, settings.json, guard.py) через `settingSources: ['project']`.
 
@@ -6,9 +6,9 @@
 
 ## Как это соотносится с marketplace
 - **hermes-marketplace** (слои A+B) = агенты + правила для Claude Code. «Оркестр и партитура».
-- **hermes-orchestrator** (слой C, это репо) = сервис, который запускает Claude Code автономно. «Дирижёр».
+- **hermes-conductor** (слой C, это репо) = сервис, который запускает Claude Code автономно. «Дирижёр».
 
-Дирижёр живёт в `orchestrator/`, но `.claude/` от marketplace лежит в корне репозитория (на уровень выше). Поэтому **`work_dir` каждой job должен указывать на корень репо** (или на целевой проект, в котором есть свой `.claude/`).
+Дирижёр живёт в `conductor/`, но `.claude/` от marketplace лежит в корне репозитория (на уровень выше). Поэтому **`work_dir` каждой job должен указывать на корень репо** (или на целевой проект, в котором есть свой `.claude/`).
 
 ## Быстрый старт
 ```bash
@@ -17,7 +17,7 @@ cp .env.example .env && $EDITOR .env
 
 # 2. State — создать/обновить схему (идемпотентно)
 npm install
-sqlite3 ho.db < sql/schema.sql          # для file: ; orchestrator-run.sh делает это сам при старте
+sqlite3 ho.db < sql/schema.sql          # для file: ; conductor-run.sh делает это сам при старте
 #   Turso/сетевой libSQL: turso db shell <db> < sql/schema.sql
 
 # 3. Проверка ядра (безопасно, без API/сети)
@@ -47,7 +47,7 @@ npm start
 - Для авто commit+push+deploy нужна git-аутентификация (deploy-токен/SSH-ключ) и подключённая Vercel Git-интеграция.
 
 ## Step mode (фаза 2) — пошаговое исполнение
-Если у job есть строки в `ho_steps`, orchestrator идёт пошаговым путём:
+Если у job есть строки в `ho_steps`, conductor идёт пошаговым путём:
 `store.nextStep` (следующий шаг с выполненными `depends_on`) → `runStep` (executor → независимые гейты → `code-reviewer` 0-100 → `runtime-verifier` когда нужно → решение `decideStep`: done/retry/needs_review/blocked) → прогресс/эскалация. Контракт с менеджером Hermes — в **`INTEGRATION.md`**; surface для Hermes: вью `ho_project_status` (статус+%), таблицы `ho_steps`, `ho_questions` (async-интервью). Claim/next-step/recover/answer-логика — в `store.ts` (транзакции SQLite вместо PL/pgSQL-функций). Логика (`steploop.ts`/`steprunner.ts`) покрыта тестами; SDK-вызовы изолированы в `agent-runner.ts`.
 
 ## Файлы
@@ -60,7 +60,7 @@ src/core/steploop.ts       решение per-step цикла (progress-delta/pl
 src/core/steprunner.ts     оркестрация одного шага (executor→gates→review→runtime→retry) — тестируемая
 src/core/agent-runner.ts   SDK-адаптер для шагов (integration seam)
 src/core/store.ts          доступ к SQLite/libSQL (jobs/runs/steps/questions/status; claim/next-step в транзакциях)
-src/core/orchestrator.ts      главный цикл: whole-job ИЛИ step-mode (если есть ho_steps) + durable resume
+src/core/conductor.ts      главный цикл: whole-job ИЛИ step-mode (если есть ho_steps) + durable resume
 src/escalation/*           Telegram уведомления + приём решения человека
 test/{breaker,steploop,steprunner,store}.test.ts  юнит-тесты + libSQL store smoke
 Dockerfile, .env.example

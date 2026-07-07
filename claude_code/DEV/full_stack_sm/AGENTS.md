@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Этот репозиторий — система **Fullstack agents**: команда из 10 специализированных Claude Code субагентов под управлением оркестратора + автономный дирижёр (`orchestrator/`).
+Этот репозиторий — система **Fullstack agents**: команда из 10 специализированных Claude Code субагентов под управлением оркестратора + автономный дирижёр (`conductor/`).
 
 ## 👉 Главный документ — FULLSTACK-AGENTS.md
 **Прежде чем что-либо делать, прочитай `FULLSTACK-AGENTS.md` целиком.** Он содержит операционный гайд (раздел «⚡ ДЛЯ AI-АГЕНТА» в начале): кто ты в системе, сценарии работы, таблицу делегирования и незыблемые правила безопасности.
@@ -19,4 +19,4 @@
 
 ## Структура
 - Корень = Claude Code plugin marketplace (`.claude-plugin/`, `plugins/`, `.claude/`, `CLAUDE.md`).
-- `orchestrator/` = автономный дирижёр (TypeScript, см. `orchestrator/README.md` и `orchestrator/ARCHITECTURE.md`).
+- `conductor/` = автономный дирижёр (TypeScript, см. `conductor/README.md` и `conductor/ARCHITECTURE.md`).

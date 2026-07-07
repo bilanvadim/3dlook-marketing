@@ -1,5 +1,5 @@
 /**
- * Fullstack agents Orchestrator — per-step loop decision logic (pure, unit-tested).
+ * Fullstack agents Conductor — per-step loop decision logic (pure, unit-tested).
  *
  * Given the history of attempts on ONE plan step (each: did gates pass, reviewer score,
  * critical-issue count, did runtime pass), decide what to do next:

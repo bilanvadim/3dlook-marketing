@@ -1,5 +1,5 @@
 /**
- * Fullstack agents Orchestrator — main control loop.
+ * Fullstack agents Conductor — main control loop.
  *
  * Wires the Agent SDK to the circuit breaker, Supabase state, and Telegram escalation.
  * One worker process can run several of these; jobs are claimed atomically so they don't collide.
@@ -266,7 +266,7 @@ class BreakStop extends Error {}
 export async function workerLoop() {
   const store = new Store();
   const idleMs = Number(process.env.HO_IDLE_MS ?? 10000);
-  console.log(`[${WORKER_ID}] orchestrator up. polling…`);
+  console.log(`[${WORKER_ID}] conductor up. polling…`);
   for (;;) {
     let worked = false;
     try {
@@ -278,6 +278,6 @@ export async function workerLoop() {
   }
 }
 
-if (process.argv[1] && process.argv[1].endsWith('orchestrator.ts')) {
+if (process.argv[1] && process.argv[1].endsWith('conductor.ts')) {
   workerLoop().catch((e) => { console.error(e); process.exit(1); });
 }

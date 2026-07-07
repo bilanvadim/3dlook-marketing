@@ -1,5 +1,5 @@
 /**
- * Fullstack agents Orchestrator — SDK adapter that builds the per-step runner deps.
+ * Fullstack agents Conductor — SDK adapter that builds the per-step runner deps.
  *
  * ⚠️ INTEGRATION SEAM (not unit-tested; needs a live SDK + real project to validate).
  * The decision/orchestration logic it feeds (steploop.ts, steprunner.ts) IS tested.

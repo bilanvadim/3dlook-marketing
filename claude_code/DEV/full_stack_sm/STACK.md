@@ -5,7 +5,7 @@ The canonical stack for projects built by Fullstack agents. **No Supabase for ne
 ## Project decisions (2026-06-20)
 - **way2buy — KEEPS Supabase.** Heavy user (Auth 45 · Realtime 17 · Storage 8 · RLS 11 · pgvector 8). Not worth migrating now.
 - **`supabase.smiro.dev` → Supabase Studio** — already live: Traefik → `oauth2-proxy-supabase` (GitHub OAuth, user `SergeMiro` only) → `supabase-studio:3000`; API paths `/rest /auth /storage` → kong. Don't disturb (way2buy depends on it).
-- **All other projects → plain PostgreSQL** per the map below. Status: SimplifyEU (Auth+Data+RLS — good pilot), ASCoFacade (Auth+Data, light storage/realtime), smiro.dev (trivial). The orchestrator itself does NOT use this Postgres — its `ho_*` orchestration state is **SQLite/libSQL** (`@libsql/client`; local file by default, or Turso/libSQL for a networked DB), independent of whatever DB the built apps use.
+- **All other projects → plain PostgreSQL** per the map below. Status: SimplifyEU (Auth+Data+RLS — good pilot), ASCoFacade (Auth+Data, light storage/realtime), smiro.dev (trivial). The conductor itself does NOT use this Postgres — its `ho_*` orchestration state is **SQLite/libSQL** (`@libsql/client`; local file by default, or Turso/libSQL for a networked DB), independent of whatever DB the built apps use.
 - **New projects** start clean on this stack — no migration needed.
 
 ## What PostgreSQL already has (do NOT replace)

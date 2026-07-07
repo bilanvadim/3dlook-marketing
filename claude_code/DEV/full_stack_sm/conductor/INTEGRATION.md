@@ -1,11 +1,11 @@
 # Hermes Agent AI ↔ Fullstack agents — integration contract
 
-This is the boundary between the **external manager** (Hermes Agent AI, NoSearch, on the VPS) and the **Fullstack agents** system (Claude Code + this orchestrator). Hermes is a *thin, non-technical manager*: it talks to the human over Telegram, gathers a product brief, hands work down, and reports status. All technical work, planning, execution and **verification** live on the Fullstack side. Hermes only **reads state and relays**.
+This is the boundary between the **external manager** (Hermes Agent AI, NoSearch, on the VPS) and the **Fullstack agents** system (Claude Code + this conductor). Hermes is a *thin, non-technical manager*: it talks to the human over Telegram, gathers a product brief, hands work down, and reports status. All technical work, planning, execution and **verification** live on the Fullstack side. Hermes only **reads state and relays**.
 
-> Source of truth for a project lives HERE (orchestrator libSQL state + scratchpad files in the workspace), never inside Hermes. If Hermes restarts, it rehydrates everything from the surfaces below. Hermes holds only its Telegram thread.
+> Source of truth for a project lives HERE (conductor libSQL state + scratchpad files in the workspace), never inside Hermes. If Hermes restarts, it rehydrates everything from the surfaces below. Hermes holds only its Telegram thread.
 
 ## Responsibility split
-| | Hermes Agent AI (manager) | Fullstack agents (Claude Code + orchestrator) |
+| | Hermes Agent AI (manager) | Fullstack agents (Claude Code + conductor) |
 |---|---|---|
 | Telegram channel + notifications | ✅ owns | — |
 | Product intake (what/who/scale/design/i18n/payments/SEO/deadline) | ✅ asks the human | — |
@@ -39,7 +39,7 @@ planning ──▶ awaiting-input ──▶ running ──▶ verifying ──�
 ## The awaiting-input (interview) flow — where context lives
 1. `product-architect` needs human input → writes its questions + partial state to **scratchpad files** in the workspace, inserts rows into **`ho_questions`** (status=open), sets job `awaiting-input`. **The Claude Code run ends** (no idle session, no token burn).
 2. Hermes reads open questions → asks the human in Telegram → writes answers back with `ho_answer_question(...)`.
-3. When no open questions remain, the orchestrator flips the job back to `queued/running` and **resumes by re-reading the scratchpad files** (file-based continuation; `resume_session_id` is best-effort for short gaps).
+3. When no open questions remain, the conductor flips the job back to `queued/running` and **resumes by re-reading the scratchpad files** (file-based continuation; `resume_session_id` is best-effort for short gaps).
 
 → Authoritative project context = **scratchpad files + libSQL** (Fullstack side). Hermes = thin relay. Hermes' own long-term cross-project memory (Obsidian Graph) is separate and added later.
 

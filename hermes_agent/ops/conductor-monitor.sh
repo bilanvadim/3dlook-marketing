@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# orchestrator-monitor.sh — Hermes-side PUSH notifier for the Hermes Orchestrator orchestrator.
+# conductor-monitor.sh — Hermes-side PUSH notifier for the Hermes Orchestrator conductor.
 #
-# Reads the orchestrator's SQLite/libSQL state (ho_questions / ho_escalations / ho_jobs)
+# Reads the conductor's SQLite/libSQL state (ho_questions / ho_escalations / ho_jobs)
 # and Telegram-pushes anything NEW that needs the human: open interview questions,
 # open ASK-escalations, and newly-terminal jobs. Dedups via a state file so it
 # never re-notifies the same item. Runs from cron every ~5 min.
@@ -21,7 +21,7 @@
 set -uo pipefail
 
 ENVF="${HERMES_ENV_FILE:-$HOME/.hermes/.env}"
-STATE="${ORCHESTRATOR_MONITOR_STATE:-$HOME/.hermes/.orchestrator-monitor-state}"
+STATE="${CONDUCTOR_MONITOR_STATE:-$HOME/.hermes/.conductor-monitor-state}"
 HO_STATE_DIR="${HO_STATE_DIR:-$HOME/.hermes}"
 MODE="${1:-notify}"
 

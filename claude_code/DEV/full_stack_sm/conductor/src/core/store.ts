@@ -1,5 +1,5 @@
 /**
- * Hermes Orchestrator — orchestrator state access (SQLite / libSQL via @libsql/client).
+ * Hermes Orchestrator — conductor state access (SQLite / libSQL via @libsql/client).
  *
  * DATABASE_URL selects the backend with ONE code path:
  *   file:./ho.db            local single-file SQLite (default, zero infra)

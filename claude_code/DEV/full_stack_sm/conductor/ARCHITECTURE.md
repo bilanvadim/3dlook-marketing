@@ -1,4 +1,4 @@
-# Fullstack agents Orchestrator — автономный дирижёр над Claude Code
+# Fullstack agents Conductor — автономный дирижёр над Claude Code
 
 Слой C. Сервис, который запускает Claude-Code-стек (marketplace из слоёв A+B) **без человека за рулём**: берёт задачу, прогоняет через Agent SDK, держит безопасность и **durable resume**, эскалирует человеку только когда нужно. Бюджет/деньги НЕ контролирует (осознанно).
 
@@ -20,7 +20,7 @@
 │ jobs (resume_session_id) · runs (session_id) · escalations │
 └───────────────┬───────────────────────────────────────────┘
                 │ poll next queued job
-┌─ ORCHESTRATOR CORE (этот сервис, TS) ─────────────────────────┐
+┌─ CONDUCTOR CORE (этот сервис, TS) ─────────────────────────┐
 │ 0. recoverStale(): упавшие run'ы → deferred с session_id  │
 │ 1. claim job (atomic write-tx; SQLite single-writer)       │
 │ 2. есть resume_session_id? → продолжаем сессию            │

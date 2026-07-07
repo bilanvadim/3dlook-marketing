@@ -16,7 +16,7 @@
 # - Headless `claude -p` is a fresh process, so no restart is needed — this
 #   switch takes effect for the command run here.
 # - For the human's interactive TUI, use switch-profile.sh + restart instead.
-# - For concurrent multi-profile work, use the orchestrator (ho_jobs.profile), NOT
+# - For concurrent multi-profile work, use the conductor (ho_jobs.profile), NOT
 #   this global toggle.
 set -euo pipefail
 
