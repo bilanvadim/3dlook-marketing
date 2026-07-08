@@ -1,5 +1,16 @@
 # marketing_vb — Vadim's marketing system as switchable plugins
 
+> ## ⚠️ Run Claude Code **from inside `/marketing_vb`**
+> These agents read brand context by **relative path** (`about-me.md`,
+> `audience.md`, `DESIGN.md`, `CLAUDE.md`, `brand-assets/`, `workspace/`). Those
+> files live at the repo root under [`/marketing_vb`](../../../marketing_vb), so:
+> ```bash
+> cd marketing_vb && claude          # profile marketing_vb or marketing_vb_sm
+> ```
+> Start from anywhere else and the agents won't find the brand files. The
+> profile (plugins) loads globally regardless of directory — only the working
+> directory decides whether the *content* is visible. Details below.
+
 This marketplace (`ai-agents-mvb`) packages Vadim's original 3DLOOK
 marketing-automation system into Claude Code plugins so it can be activated
 uniformly through `switch-profile.sh` alongside the other systems.

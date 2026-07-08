@@ -140,6 +140,19 @@ claude_code/DEV/switch-profile.sh marketing_vb_sm   # then restart Claude Code
 ```
 Full setup → [INSTALL.md](INSTALL.md) · systems guide → [claude_code/DEV/SYSTEMS.md](claude_code/DEV/SYSTEMS.md) · Conductor internals → [conductor/ARCHITECTURE.md](claude_code/DEV/full_stack_sm/conductor/ARCHITECTURE.md).
 
+> ### ⚠️ Run the marketing profiles **from inside `marketing_vb/`**
+> The `mvb-*` agents read brand context by **relative path** (`about-me.md`,
+> `audience.md`, `DESIGN.md`, `CLAUDE.md`, `brand-assets/`, `workspace/`) — the
+> same way Vadim's original system did. Those files live in
+> [`marketing_vb/`](marketing_vb), so start Claude Code there:
+> ```bash
+> cd marketing_vb && claude
+> ```
+> Launching from the repo root instead will make the agents look for
+> `about-me.md` / `brand-assets/` at the top level and **not find them**. The
+> profile (plugins) is global; only the working directory decides whether the
+> brand context is visible.
+
 > Vadim's original system stays untouched under [`marketing_vb/`](marketing_vb);
 > the `mvb-*` plugins are packaged copies of its `.claude/` — re-sync if the
 > originals change.
