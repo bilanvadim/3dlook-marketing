@@ -25,7 +25,9 @@ async function runQuery(prompt: string, workDir: string, plugins: LocalPlugin[],
   let ok = false;
   const stream = query({
     prompt,
-    options: { settingSources: ['project'], plugins, permissionMode: 'acceptEdits', systemPrompt: SYS, cwd: workDir, maxTurns } as any,
+    // allowedTools pre-approves read-only web tools (acceptEdits auto-denies them in
+    // headless); additive — does not restrict other tools. See conductor.ts for rationale.
+    options: { settingSources: ['project'], plugins, permissionMode: 'acceptEdits', allowedTools: ['WebSearch', 'WebFetch'], systemPrompt: SYS, cwd: workDir, maxTurns } as any,
   });
   for await (const msg of stream as any) {
     if (msg?.type === 'assistant') {

@@ -181,6 +181,11 @@ export async function runOneJob(store: Store): Promise<boolean> {
         settingSources: ['project'],        // inherit our .claude/ marketplace, CLAUDE.md, settings.json, hooks
         plugins,                            // profile-selected system (dev|seo|marketing|security), loaded by absolute path
         permissionMode: job.permission_mode as any, // 'acceptEdits' recommended for autonomy
+        // Pre-approve read-only web tools: acceptEdits auto-denies them in headless
+        // ("you haven't granted it yet"), which blocks the outbound/SEO research flows.
+        // allowedTools is ADDITIVE (auto-allow only these) — it does NOT restrict other
+        // tools and does NOT bypass the ask-gate below. Applies to subagents too.
+        allowedTools: ['WebSearch', 'WebFetch'],
         systemPrompt: HERMES_SYSTEM_PROMPT,
         cwd: job.work_dir,
         ...(job.resume_session_id ? { resume: job.resume_session_id } : {}),
