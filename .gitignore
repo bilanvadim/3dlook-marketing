@@ -4,6 +4,9 @@
 **/*.pyc
 # secrets & local runtime state
 **/.env
+**/.venv/
+logs/
+**/*.log
 claude_code/DEV/full_stack_sm/conductor/*.db
 claude_code/DEV/full_stack_sm/conductor/*.db-wal
 claude_code/DEV/full_stack_sm/conductor/*.db-shm
