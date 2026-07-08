@@ -1,0 +1,13 @@
+{
+  "name": "marketing_vb",
+  "description": "Vadim's original 3DLOOK marketing-automation system (packaged as plugins): orchestrator + brand/quality control + social/SEO/outbound teams. Pure — no Hermes base, faithful to the pristine project under /marketing_vb.",
+  "marketplaces": {
+    "ai-agents-mvb": "marketing_vb"
+  },
+  "enabledPlugins": [
+    "mvb-core@ai-agents-mvb",
+    "mvb-social@ai-agents-mvb",
+    "mvb-seo@ai-agents-mvb",
+    "mvb-outbound@ai-agents-mvb"
+  ]
+}

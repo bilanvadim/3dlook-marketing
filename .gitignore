@@ -1,0 +1,11 @@
+# dependencies & build noise (anywhere)
+**/node_modules/
+**/__pycache__/
+**/*.pyc
+# secrets & local runtime state
+**/.env
+claude_code/DEV/full_stack_sm/conductor/*.db
+claude_code/DEV/full_stack_sm/conductor/*.db-wal
+claude_code/DEV/full_stack_sm/conductor/*.db-shm
+# rendered systemd units (machine-specific)
+hermes_agent/ops/systemd/generated/

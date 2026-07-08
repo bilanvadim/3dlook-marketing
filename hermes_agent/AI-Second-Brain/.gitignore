@@ -1,0 +1,10 @@
+# Obsidian local UI state (per-device, not knowledge)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/.DS_Store
+
+# Trash & OS noise
+.trash/
+.DS_Store
+*~

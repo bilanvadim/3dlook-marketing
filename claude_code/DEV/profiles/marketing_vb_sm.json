@@ -1,0 +1,24 @@
+{
+  "name": "marketing_vb_sm",
+  "description": "MIX: Vadim's brand-driven 3DLOOK marketing teams (marketing_vb) blended with Sergiy's marketing specialists (marketing_sm) + Hermes base. Entry: /vbsm-campaign. Strategy & measurement from Sergiy, brand-grounded execution & QC from Vadim.",
+  "marketplaces": {
+    "ai-agents-config": "full_stack_sm",
+    "ai-agents-mvb": "marketing_vb",
+    "ai-agents-mkt": "marketing_sm",
+    "ai-agents-mvb-sm": "marketing_vb_sm"
+  },
+  "enabledPlugins": [
+    "hermes-core@ai-agents-config",
+    "hermes-verify@ai-agents-config",
+    "mvb-core@ai-agents-mvb",
+    "mvb-social@ai-agents-mvb",
+    "mvb-seo@ai-agents-mvb",
+    "mvb-outbound@ai-agents-mvb",
+    "mkt-core@ai-agents-mkt",
+    "mkt-content@ai-agents-mkt",
+    "mkt-paid@ai-agents-mkt",
+    "mkt-lifecycle@ai-agents-mkt",
+    "mkt-analytics@ai-agents-mkt",
+    "mvb-sm-bridge@ai-agents-mvb-sm"
+  ]
+}

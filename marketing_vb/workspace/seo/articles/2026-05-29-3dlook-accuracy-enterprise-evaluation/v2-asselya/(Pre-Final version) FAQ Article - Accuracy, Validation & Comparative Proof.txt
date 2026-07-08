@@ -1,0 +1,139 @@
+Body Scanning Accuracy: A Framework for Enterprise Decisions
+One of the first questions enterprise teams ask when evaluating mobile body scanning: "How accurate is it? 
+The better diligence question is: accurate enough for which decision? A measurement system used for apparel sizing, uniform allocation, GLP-1 progress tracking, remote screening, or underwriting support does not need to be evaluated against the same operational standard in every case. Accuracy only becomes meaningful when the reference method, measurement protocol, population tested, and intended workflow are clearly defined.
+This article provides a practical framework for evaluating the quality of mobile body-scanning measurements. It explains how to interpret 3DLOOK’s accuracy, repeatability, validation evidence, and limitations in that context as a working example of how these dimensions can be characterized in practice.
+What enterprise teams should evaluate
+A headline accuracy figure is not enough on its own. The same percentage can represent very different levels of performance depending on the reference method, test population, measurement protocol, and number of repeated scans.
+For any enterprise deployment, five dimensions should be evaluated together:
+1. Measurement accuracy
+2. Scan-to-scan repeatability
+3. Real-world robustness
+4. Output breadth and use-case fit
+5. Validation strength
+Together, these dimensions give buyers a more reliable sense of whether a body-scanning system is well-suited to the specific decision it is being asked to support.
+The five dimensions of measurement quality
+Dimension 1 — Measurement accuracy
+Measurement accuracy is the difference between the system's output and the chosen reference's estimate of the true value. The choice of reference matters: even on the same person, a 3D scanner reference produces a different headline number than a manual measurement reference.
+Internal validation across multiple real-world scan events with five repeated scans per person against expert pattern-maker manual measurements shows 3DLOOK’s measurement accuracy of approximately 96-97% across body metrics, with a typical absolute error of 1.5-2.0 cm per measurement, varying by body part. The internal validation population included participants aged 16–78, heights of 150–205 cm, weights of 38–210 kg, and participants from the U.S. and Europe. These ranges define the population scope to which the reported accuracy figures apply.
+Dimension 2 — Repeatability
+Repeatability is scan-to-scan consistency for the same person under the same conditions. It is the dimension that matters most for longitudinal use cases, including weight tracking in a GLP-1 program, year-over-year underwriting refreshes, and before-and-after compliance checks in clinical trials. For any body-scanning solution, the key diligence question is whether the vendor clearly explains how repeatability was measured, how many repeated scans or sessions were included, which measurements were evaluated, and what level of variation was observed.
+Internal repeatability testing on a real-world customer dataset, using five repeated scans per participant, showed strong scan-to-scan consistency across the majority of evaluated measurements. For most measurements, repeated scans produced typical differences of less than 1 cm. Detailed methodology, including sample size, measurement-level results, and the definition of repeatability used in the analysis, is available under NDA.
+Dimension 3 — Real-world robustness
+Production conditions are not lab conditions. Users stand in odd lighting, wear sweaters over t-shirts, hold the phone at the wrong angle, or stand slightly off-axis. A measurement system that only works under controlled conditions creates a workflow problem at scale — every borderline scan becomes a retake, a support ticket, or a silent error in the data.
+The key diligence question is what prevents a poor-quality scan from becoming a poor-quality measurement. For a mobile body-scanning system, the core controls are capture-time validation, garment-aware adjustment, and model training across varied real-world conditions. 3DLOOK applies these controls in its capture and measurement pipeline. These controls reduce the risk of low-quality inputs, but they do not eliminate the need for clear capture instructions, retake logic, and deployment-specific quality thresholds.
+Dimension 4 — Output breadth and use-case fit
+Different verticals need different outputs. A telehealth or weight-management program may need BMI estimation and longitudinal progress visualization; a uniform manufacturer may need a specific subset of girth and length measurements; an underwriting workflow may need BMI, waist circumference, and body-composition estimates as supporting data.
+A single scan workflow can support multiple output types, but each use case requires its own output configuration, accuracy expectations, and limitation disclosures.
+
+
+Vertical
+	Primary output
+	Why it matters
+	Limitation to disclose
+	Telehealth and weight-loss (GLP-1, coaching apps)
+	BMI estimation, longitudinal scan-to-scan progress, body-composition trends
+	Verified BMI without requiring the user to own a scale; 3D progress visualization supports adherence
+	Not a clinical diagnosis; not a replacement for calibrated bioimpedance, DEXA, or a calibrated scale when those are required 
+	Online pharmacy and digital prescriber
+	BMI or weight-related screening support at intake or refill
+	Anti-fraud check against self-reported weight; eligibility screening
+	Designed to support screening workflows, not to serve as a standalone clinical determination
+	Life and disability underwriting
+	BMI, waist circumference, and body-composition estimates
+	Supports remote intake and may reduce friction in underwriting workflows
+	Internal validation only; not a replacement for medical examination or required reference methods
+	Made-to-measure apparel
+	80+ body measurements, including girth and linear dimensions
+	Supports remote measuring at scale and can help reduce fit-related friction
+	Measurement tolerance depends on garment type, fit standard, pattern rules, and how each measurement is used
+	Uniform, PPE, and workwear
+	Subset of girth and length measurements relevant to the garment block
+	Supports measurement consistency across distributed users and workforce programs
+	Measurement tolerance depends on garment type, protective equipment requirements, pattern rules, and use-case risk
+	Clinical trials and decentralized screening
+	Body-composition estimates for exploratory or supportive tracking
+	Decentralized measurement with low participant burden
+	Not third-party validated, not peer-reviewed, and not intended as a primary clinical endpoint without study-specific validation
+	The limitation disclosure is part of the product-fit assessment. Buyers should confirm that each output is appropriate for the workflow, decision threshold, and required reference standard before deployment. For related use cases in employer wellness, insurance rewards, and remote eligibility verification, see our deep dive on wellness rewards verification.
+Dimension 5 — Validation strength
+Validation strength describes the evidence behind any accuracy or repeatability claim. For 3DLOOK, the evidence should be understood in three categories: internal validation, benchmark participation, and dataset enrichment.
+The ISO benchmark, which uses 3D scanner averages as the reference (a different reference than the internal pattern-maker comparison), placed 3DLOOK’s session-to-session repeatability at 0.40 cm. The numbers from the two studies should not be combined because the references differ.
+Through a 2022 partnership with NCSU Wilson College of Textiles — publicly listed as a funding-partner project on NCSU’s 3D Body Scanning research projects page — 3DLOOK’s training dataset was expanded with ground-truth scans from the university’s body scanning lab. This was dataset enrichment work, not independent validation of 3DLOOK’s measurement claims, and no peer-reviewed publication on the collaboration is on file.
+Where direct comparative validation against a specific reference method has not been completed, 3DLOOK should not be positioned as equivalent to that method for that use case.
+How a 3DLOOK measurement is produced
+3DLOOK’s mobile body scanning uses a proprietary statistical generative human body model and produces a 3D body model and 80+ measurements from two smartphone photos. The capture-to-result pipeline runs in four steps:
+1. Photo capture. The user takes two photos with any smartphone on any background, fully clothed, with real-time pose validation guiding alignment.
+2. Body detection under clothing. Computer vision algorithms detect the body under clothing, and AI clothing detection adjusts the 3D output to compensate for garment interference. 
+3. 3D model construction. Statistical modeling and 3D matching algorithms construct a 3D body model in under 30 seconds.
+4. Measurement and composition output. The model computes 80+ body measurements and body composition outputs, including BMI, BMR, body fat percentage, lean body mass, and fat body mass. The full pipeline completes in under 45 seconds.
+The patented body-shape segmentation step enables the system to accept photos of fully clothed users against any background.
+The model is trained on a proprietary dataset of thousands of participants across the U.S. and Europe, within the demographic ranges disclosed in the validation section.
+Production reliability features
+Production reliability is the layer that decides which scans reach the model in the first place, and which get sent back to the user for a retake before they become a measurement.
+* Real-time skeletal tracking. Subpixel keypoint detection evaluates posture during capture. The user sees red markers on misaligned joints; voice prompts walk through the adjustment; markers turn green as alignment improves. The scan does not advance until alignment is correct.
+* AI clothing detection. A neural network classifies the user’s clothing as sport, regular, or oversized, and garment-aware corrections compensate for visual obstruction during 3D reconstruction. 
+* Face obfuscation. The user’s face is blurred at capture, before any image leaves the device, so that downstream processing operates on anonymous body imagery. This pairs with the data minimization principle described in the compliance section.
+Enterprise deployments typically encounter device fragmentation; a system that only works on flagship phones produces a coverage problem at scale. 3DLOOK’s full stack runs cross-platform on Android and iOS, from older devices to current models, with no depth sensor or accessory hardware required.
+Body composition outputs
+3DLOOK generates body-composition-related outputs from two smartphone photos, the reconstructed 3D body model, and a small number of user-provided values. These outputs include BMI, BMR, body fat percentage, lean body mass, fat body mass, and Smart Scales weight estimation. Each output has its own calculation method, intended use, and limitation.
+* BMI is calculated as weight in kilograms divided by height in meters squared. When the user supplies weight, the standard formula applies directly. When the user does not provide weight, 3DLOOK’s Smart Scales weight output feeds the BMI calculation. Internal testing of BMI calculated from Smart Scales weight showed 89% accuracy, with 76% of users falling within 5% of the reference. Because the calculation depends on whether the weight is user-provided or generated by Smart Scales, buyers should evaluate which BMI workflow applies to their use case.
+* BMR uses the Mifflin-St Jeor formula, an established anthropometric equation that accounts for weight, height, age, and biological sex. The output is calculated by applying that formula to the relevant user inputs and 3DLOOK-generated data.
+* Body fat percentage is generated using the U.S. Navy formula, selected through internal comparative evaluation of established anthropometric methods. The formula uses height, neck circumference, waist circumference, and hip circumference for women — measurements generated by the 3DLOOK pipeline from the 3D body model.
+* Smart Scales is 3DLOOK’s software-based weight output generated from the scan pipeline, not a physical scale. Internal testing shows a mean absolute error of 2.1 kg, a mean relative error of 3.11%, and an average prediction error of approximately 3.5%. Smart Scales is designed for contexts where a calibrated scale is unavailable or impractical — early-stage telehealth onboarding, remote screening, and multi-month longitudinal tracking where the user does not own a scale. It is not designed as a replacement for a calibrated scale in clinical, compliance, or underwriting workflows where calibrated weight is the requirement.
+Where mobile body scanning fits among body-measurement methods
+Body-measurement methods span a wide operational range: in-clinic reference standards such as DEXA and certified manual anthropometry; in-clinic estimation methods such as bioimpedance; consumer convenience tools such as smart scales; and remote vision-based measurement via mobile body scanning. For a fuller landscape view, see our body scanning technology comparison.
+The right framing is that different measurement methods serve different purposes. A DEXA scan in a clinical research protocol and a smartphone scan during a remote telehealth check-in solve different operational problems. Each can be appropriate when matched to the right decision, workflow, and required evidence standard.
+3DLOOK sits on the remote, vision-based, mobile end of the spectrum. It produces 80+ measurements and body composition outputs from two smartphone photos in under 45 seconds, with no hardware setup required. Its design point is remote, repeated, longitudinal measurement at scale — the conditions in which in-clinic methods become impractical. 
+Where a study, regulatory protocol, or clinical workflow requires direct comparative validation against a specific reference method, 3DLOOK should not be positioned as equivalent to that method.
+Compliance, privacy, and governance
+Compliance posture is as important as measurement quality for healthcare, insurance, wellness, and pharma deployments. The 3DLOOK FitXpress data and privacy framework is structured around five principles:
+* Storage. All data is stored in Amazon S3 with mandatory server-side encryption using S3-managed keys (SSE-S3). Storage encryption is always on and cannot be disabled.
+* Encryption in transit. All data is encrypted in transit using TLS, enforced by default.
+* Photo retention and deletion. Photos are permanently removed either immediately after processing or within 30 days after results are generated, depending on the client’s data retention requirements. When temporary storage is selected, retained photos are automatically blurred to add a layer of privacy protection. Users may exercise their privacy rights by contacting privacy@3dlook.me.
+* Data minimization. 3DLOOK does not process user names, contact details, or other personal identifiers that would link a photo or measurement output to a specific individual. End-user images are never shared with third parties.
+* Regulatory framework. FitXpress maintains HIPAA compliance in US healthcare contexts and adheres to GDPR principles for European deployments. Continuous security monitoring is in place.
+Since FitXpress does not provide medical advice, diagnosis, or treatment recommendations, it is not positioned as a medical device. Compliance evaluation is based on data privacy frameworks, such as HIPAA, GDPR, and SOC 2, where applicable, rather than on medical device frameworks, such as FDA Class II or CE-MDR.
+Eight diligence questions for evaluating mobile body scanning
+What reference method was used to measure accuracy, and what is the typical error margin?
+3DLOOK’s internal validation uses expert pattern-maker manual measurements as the reference, with typical absolute error generally in the 1.5–2.0 cm range, depending on measurement type. Detailed methodology, including sample size and measurement-level results, should be reviewed as part of deployment diligence. See Dimension 1.
+How is repeatability measured, and over how many sessions?
+3DLOOK has conducted repeatability testing using five repeated scans per participant across a real-world customer dataset. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm. The definition of repeatability, sample size, and measurement-level results should be reviewed during diligence. See Dimension 2.
+What real-world conditions has the system been tested under?
+3DLOOK’s pipeline is designed for varied real-world capture conditions and includes production-time skeletal tracking, clothing detection, and retake logic to reduce the risk of poor-quality scans reaching the model. See the production reliability section.
+What outputs does the system produce, and how do they map to the actual use case?
+80+ measurements plus body composition outputs such as BMI, BMR, body fat percentage, lean body mass, and fat body mass. The use-case mapping table in Dimension 4 shows which outputs fit which vertical, and what to disclose alongside each.
+What external validation exists, and what is its scope?
+3DLOOK’s disclosed evidence includes internal validation against expert pattern-maker manual measurements, participation in a multi-company benchmark using ISO 8559-1:2017, and a 2022 partnership with NCSU Wilson College of Textiles for dataset enrichment. The NCSU work was not an independent validation of 3DLOOK’s measurement claims. 3DLOOK’s accuracy claims have not been peer-reviewed or externally validated through a third-party clinical study.
+What privacy, security, and compliance controls are in place?
+3DLOOK maintains HIPAA compliance in U.S. healthcare environments and adheres to GDPR principles for European deployments. Data is encrypted in transit using TLS and at rest using AWS S3 SSE-S3. Photos are deleted immediately or within 30 days, depending on client policy; retained photos are auto-blurred. 3DLOOK does not process user names, contact details, or other direct personal identifiers.
+What prevents a poor-quality scan from becoming a poor-quality measurement?
+3DLOOK uses real-time skeletal tracking, guided pose feedback with red and green markers, voice prompts, required alignment checks, and AI clothing detection with garment-aware adjustment to reduce the risk of poor-quality inputs reaching the measurement pipeline.
+How should 3DLOOK be used within enterprise workflows?
+3DLOOK is designed to support remote body measurement, workflow integration, longitudinal tracking, and use-case-specific decision support. It helps enterprise teams collect consistent body data at scale when in-person measurement, lab-based methods, or hardware-dependent workflows are impractical. For workflows that require medical diagnosis, treatment recommendations, DEXA, BIA, calibrated-scale weight, certified manual anthropometry, or another mandated reference method, 3DLOOK should be used as a supporting data layer rather than as a replacement for that required method.
+Disclaimer
+* 3DLOOK’s accuracy and repeatability figures cited throughout this article are derived from internal validation testing against 3DLOOK’s proprietary datasets and reference measurements. These figures are intended to help enterprise teams evaluate workflow fit, measurement consistency, and use-case-specific decision support.
+* 3DLOOK measurements are designed to support workflow integration, longitudinal tracking, and use-case-specific decisions; they are not intended as a substitute for clinical examination, medical diagnosis, treatment recommendation, or any decision that requires a medical device under applicable regulatory frameworks. 
+* The demographic scope of 3DLOOK’s internal validation dataset (ages 16 to 78, heights 150 to 205 cm, weights 38 to 210 kg, US and Europe) defines the population to which the accuracy figures apply. Performance outside this scope has not been characterized. 
+* 3DLOOK should not be positioned as equivalent to DEXA, BIA, calibrated scales, or certified manual anthropometry methods when the workflow, protocol, or regulatory standard requires those methods.
+________________
+
+
+Frequently asked questions
+Is 3DLOOK clinically validated?
+3DLOOK’s accuracy and repeatability figures are based on internal validation testing against expert pattern-maker manual measurements. The technology is designed for remote body measurement, workflow integration, longitudinal tracking, and use-case-specific decision support. It has not been clinically validated through peer-reviewed research or third-party clinical studies, and it is not positioned as a medical device — see Dimensions 1 and 2.
+Is 3DLOOK comparable to DEXA?
+DEXA and 3DLOOK serve different operational contexts. DEXA is a clinical reference method used in controlled settings. 3DLOOK is a remote, vision-based body-data solution designed for scalable measurement, longitudinal tracking, and workflow integration. 3DLOOK should not be positioned as equivalent to DEXA, where DEXA is the required reference method — see the methods section.
+Is 3DLOOK comparable to InBody or bioimpedance scales?
+Bioimpedance and 3DLOOK use different methodologies. Bioimpedance estimates body composition using electrical impedance; 3DLOOK generates body data from two smartphone photos, a reconstructed 3D body model, and relevant user inputs. 3DLOOK should not be positioned as equivalent to BIA, where bioimpedance is the required reference method. See the methods section.
+Can 3DLOOK replace a calibrated scale?
+No. Smart Scales is 3DLOOK’s software-based weight output, not a physical scale. Internal testing shows a mean absolute error of 2.1 kg and a mean relative error of 3.11%. It is designed for contexts where a calibrated scale is unavailable or impractical, not as a replacement for a calibrated weight.
+What is the typical measurement error margin?
+In 3DLOOK’s internal validation benchmark, the typical absolute error is generally in the 1.5-2.0 cm range, depending on the measurement type and body part evaluated. See Dimension 1.
+Has the technology been peer-reviewed or third-party validated?
+No peer-reviewed publication specific to 3DLOOK’s accuracy claims is currently on record. 3DLOOK’s disclosed validation evidence includes internal validation testing, a multi-company benchmark using ISO 8559-1:2017, and dataset enrichment work with NCSU Wilson College of Textiles. The NCSU partnership was dataset enrichment work, not independent validation of 3DLOOK’s measurement claims.
+Does 3DLOOK work for every body type, age, and ethnicity?
+3DLOOK’s internal validation dataset covers ages 16 to 78, heights 150 to 205 cm, weights 38 to 210 kg, and participants across the U.S. and Europe. These ranges define the disclosed population scope for the reported measurement-quality figures. Use cases involving populations outside this scope should be evaluated separately.
+Is patient data HIPAA-compliant?
+Yes. FitXpress maintains HIPAA compliance in U.S. healthcare settings and adheres to GDPR principles for European deployments. Data is encrypted in transit using TLS and at rest using AWS S3 SSE-S3. Photos are deleted immediately or within 30 days, depending on client policy, and retained photos are auto-blurred. 3DLOOK does not process user names, contact details, or other personal identifiers that would link a photo or measurement output to a specific individual.
+Why is FitXpress not positioned as a medical device?
+FitXpress does not provide medical advice, diagnosis, or treatment recommendations. It is designed as a workflow and body-data layer for remote measurement, longitudinal tracking, and use-case-specific decision support. Based on its current intended use and claims, FitXpress is not positioned as a medical device.

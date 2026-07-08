@@ -1,0 +1,6 @@
+{
+  "name": "seo-core",
+  "description": "SEO orchestration core: seo-strategist (audit director), seo-methodology skill (audit → ICE prioritization → plan), /seo-audit command",
+  "version": "0.1.0",
+  "author": { "name": "Sergiy" }
+}

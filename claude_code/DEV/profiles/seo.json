@@ -1,0 +1,17 @@
+{
+  "name": "seo",
+  "description": "SEO system (seo_sm) + shared orchestration/verification base.",
+  "marketplaces": {
+    "ai-agents-config": "full_stack_sm",
+    "ai-agents-seo": "seo_sm"
+  },
+  "enabledPlugins": [
+    "hermes-core@ai-agents-config",
+    "hermes-verify@ai-agents-config",
+    "seo-core@ai-agents-seo",
+    "seo-technical@ai-agents-seo",
+    "seo-content@ai-agents-seo",
+    "seo-authority@ai-agents-seo",
+    "seo-analytics@ai-agents-seo"
+  ]
+}

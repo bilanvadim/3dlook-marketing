@@ -1,0 +1,20 @@
+{
+  "name": "dev",
+  "description": "Full-stack development system (full_stack_sm). Architect → design → front/back/data/platform → QA/security → verify.",
+  "marketplaces": {
+    "ai-agents-config": "full_stack_sm"
+  },
+  "enabledPlugins": [
+    "hermes-core@ai-agents-config",
+    "hermes-design@ai-agents-config",
+    "hermes-frontend@ai-agents-config",
+    "hermes-backend@ai-agents-config",
+    "hermes-data@ai-agents-config",
+    "hermes-platform@ai-agents-config",
+    "hermes-quality@ai-agents-config",
+    "hermes-sre@ai-agents-config",
+    "hermes-scout@ai-agents-config",
+    "hermes-verify@ai-agents-config",
+    "hermes-ecc@ai-agents-config"
+  ]
+}

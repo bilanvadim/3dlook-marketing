@@ -1,0 +1,38 @@
+{
+  "name": "Hermes Dispatcher",
+  "nodes": [
+    {
+      "parameters": { "httpMethod": "POST", "path": "hermes-job", "responseMode": "responseNode" },
+      "name": "New job (webhook)", "type": "n8n-nodes-base.webhook", "typeVersion": 1, "position": [240, 200]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "insert into ho_jobs (kind, title, prompt, priority, max_turns, work_dir) values ($1,$2,$3,$4,$5,$6) returning id;",
+        "additionalFields": {}
+      },
+      "name": "Enqueue (Postgres)", "type": "n8n-nodes-base.postgres", "typeVersion": 2, "position": [520, 200],
+      "notesInFlow": true, "notes": "Params from webhook body: kind,title,prompt,priority,max_turns,work_dir (no budget cap by design)"
+    },
+    {
+      "parameters": { "respondWith": "json", "responseBody": "={{ { \"queued\": true, \"job_id\": $json.id } }}" },
+      "name": "Respond", "type": "n8n-nodes-base.respondToWebhook", "typeVersion": 1, "position": [800, 200]
+    },
+    {
+      "parameters": { "rule": { "interval": [{ "field": "cronExpression", "expression": "0 7 * * *" }] } },
+      "name": "Daily 07:00 (scout)", "type": "n8n-nodes-base.scheduleTrigger", "typeVersion": 1, "position": [240, 440]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "insert into ho_jobs (kind, title, prompt, priority, max_turns) values ('scout','Daily ecosystem scan','Run the trend-scout agent per the trend-scan skill. Produce today''s digest, persist to Postgres, and send the digest to Telegram.',50,40);"
+      },
+      "name": "Enqueue scout job", "type": "n8n-nodes-base.postgres", "typeVersion": 2, "position": [520, 440]
+    }
+  ],
+  "connections": {
+    "New job (webhook)": { "main": [[{ "node": "Enqueue (Postgres)", "type": "main", "index": 0 }]] },
+    "Enqueue (Postgres)": { "main": [[{ "node": "Respond", "type": "main", "index": 0 }]] },
+    "Daily 07:00 (scout)": { "main": [[{ "node": "Enqueue scout job", "type": "main", "index": 0 }]] }
+  }
+}

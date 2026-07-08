@@ -1,0 +1,33 @@
+{
+  "name": "ai-agents-mvb",
+  "owner": {
+    "name": "Vadim Bilan",
+    "url": "https://github.com/bilanvadim"
+  },
+  "metadata": {
+    "description": "Vadim's 3DLOOK marketing-automation system, packaged as switchable Claude Code plugins: orchestrator + brand/quality control, social, SEO and outbound agent teams. Source of truth is the pristine project under /marketing_vb. Switch into it via profile 'marketing_vb'.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "mvb-core",
+      "source": "./plugins/mvb-core",
+      "description": "Orchestration core: orchestrator (single entry point), brand-checker, quality-controller, context-pack-builder, agent-improver + all workflow commands (/new-article, /weekly-posts, /outbound, /post-from-article, /qc, /quarterly-review, /improve-agents)"
+    },
+    {
+      "name": "mvb-social",
+      "source": "./plugins/mvb-social",
+      "description": "Social team: post-drafter, quarterly-strategist, social-analytics, visual-brief — LinkedIn/organic social from brand assets"
+    },
+    {
+      "name": "mvb-seo",
+      "source": "./plugins/mvb-seo",
+      "description": "SEO team: seo-planner, seo-writer, seo-editor, seo-publisher — fact-checked long-form articles from approved plans"
+    },
+    {
+      "name": "mvb-outbound",
+      "source": "./plugins/mvb-outbound",
+      "description": "Outbound team: hypothesis-generator, icp-validator, company-researcher, people-extractor, message-sequencer, closelyhq-importer, campaign-analyzer, response-classifier"
+    }
+  ]
+}
