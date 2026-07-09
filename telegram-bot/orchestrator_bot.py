@@ -21,10 +21,13 @@ Design:
 """
 import os
 import json
+import time
+import signal
 import asyncio
 import logging
 import pathlib
 import sqlite3
+import tempfile
 import subprocess
 import functools
 
@@ -44,7 +47,9 @@ WORKDIR = pathlib.Path(os.environ.get(
     "ORCH_WORKDIR", "/home/vadim_prod/3dlook-marketing/marketing_vb")).resolve()
 CLAUDE_BIN = os.environ.get("CLAUDE_BIN", "/home/vadim_prod/.local/bin/claude")
 MAX_TURNS = int(os.environ.get("ORCH_MAX_TURNS", "60"))
-RUN_TIMEOUT = int(os.environ.get("ORCH_TIMEOUT", "1800"))  # 30 min hard cap
+RUN_TIMEOUT = int(os.environ.get("ORCH_TIMEOUT", "300"))  # 5 min hard cap (a hung run freezes the bot until this fires)
+STALL_TIMEOUT = int(os.environ.get("ORCH_STALL_TIMEOUT", "120"))  # watchdog: kill a run stalled at 0% CPU this long
+_WD_POLL = 10  # seconds between watchdog liveness checks
 STATE_DIR = pathlib.Path(os.environ.get(
     "ORCH_STATE_DIR", "/home/vadim_prod/.hermes/tg-bridge")).resolve()
 LOG_DIR = pathlib.Path(os.environ.get(
@@ -162,31 +167,128 @@ def _parse_json(out: str):
     return None
 
 
+def _group_cpu(pgid: int) -> int:
+    """Total CPU jiffies (utime+stime) across every process in process-group pgid —
+    the claude run and any child processes it spawns. Subagents run as in-process
+    threads, so their CPU is already in the leader's own counters. Scoped by pgid so
+    unrelated claude processes (the conductor, other chats) can't mask a stall.
+    Returns -1 if the group is unreadable/gone. comm (field 2) can hold spaces and
+    parens, so fields are parsed from after the last ')'."""
+    total, seen = 0, False
+    try:
+        entries = os.listdir("/proc")
+    except OSError:
+        return -1
+    for d in entries:
+        if not d.isdigit():
+            continue
+        try:
+            with open(f"/proc/{d}/stat", "rb") as f:
+                rest = f.read().rpartition(b")")[2].split()
+            # rest[0]=state(f3); f5 pgrp=rest[2]; f14 utime=rest[11]; f15 stime=rest[12]
+            if int(rest[2]) == pgid:
+                total += int(rest[11]) + int(rest[12])
+                seen = True
+        except (OSError, ValueError, IndexError):
+            continue
+    return total if seen else -1
+
+
+def _terminate(proc: subprocess.Popen):
+    """Kill the whole run — the claude process group — so any child processes die too."""
+    try:
+        pgid = os.getpgid(proc.pid)
+    except OSError:
+        pgid = None
+    for sig in (signal.SIGTERM, signal.SIGKILL):
+        try:
+            os.killpg(pgid, sig) if pgid is not None else proc.send_signal(sig)
+        except ProcessLookupError:
+            return
+        except OSError:
+            pass
+        try:
+            proc.wait(timeout=10 if sig is signal.SIGTERM else 5)
+            return
+        except subprocess.TimeoutExpired:
+            continue
+
+
+def _run_watched(cmd: list) -> tuple:
+    """Run cmd to completion under a liveness watchdog. Output goes to temp files
+    (not PIPEs) so a large final JSON blob can't fill a pipe buffer and deadlock us.
+    Returns (returncode, stdout, stderr, reason): reason is None if the run finished
+    on its own, 'stall' if the watchdog killed it for zero CPU across STALL_TIMEOUT
+    (a hung network read — the exact failure that froze the bot), or 'timeout' at the
+    RUN_TIMEOUT hard cap."""
+    with tempfile.TemporaryFile() as out_f, tempfile.TemporaryFile() as err_f:
+        proc = subprocess.Popen(cmd, cwd=str(WORKDIR), stdout=out_f, stderr=err_f,
+                                start_new_session=True)  # own group -> clean kill + per-run CPU
+        start = time.monotonic()
+        last_active = start
+        cpu_hi = _group_cpu(proc.pid)
+        reason = None
+        while proc.poll() is None:
+            time.sleep(_WD_POLL)
+            now = time.monotonic()
+            if now - start >= RUN_TIMEOUT:
+                log.warning(f"watchdog: hard timeout {RUN_TIMEOUT}s — killing run pid={proc.pid}")
+                _terminate(proc)
+                reason = "timeout"
+                break
+            cpu = _group_cpu(proc.pid)
+            if cpu < 0:
+                continue  # transient /proc miss (or group exiting) — re-check next tick
+            if cpu > cpu_hi:            # burned CPU since last check => still alive
+                cpu_hi, last_active = cpu, now
+            elif now - last_active >= STALL_TIMEOUT:
+                log.warning(f"watchdog: run stalled {STALL_TIMEOUT}s (0% CPU) — killing pid={proc.pid}")
+                _terminate(proc)
+                reason = "stall"
+                break
+        out_f.seek(0)
+        err_f.seek(0)
+        out = out_f.read().decode("utf-8", "replace")
+        err = err_f.read().decode("utf-8", "replace")
+    return proc.returncode, out, err, reason
+
+
+def _kill_msg(reason: str) -> str:
+    if reason == "stall":
+        return (f"⏱️ Запуск завис — {STALL_TIMEOUT // 60} мин без активности (0% CPU), "
+                "watchdog его снял. Попробуй ещё раз; для долгих задач — /job.")
+    return (f"⏱️ Задача шла дольше {RUN_TIMEOUT // 60} мин — прервал по таймауту. "
+            "Разбей на шаги или запусти как джобу дирижёра: /job.")
+
+
 def run_claude(prompt: str, session: str | None) -> dict:
-    """Run claude -p once; on a resume failure, retry once fresh."""
+    """Run claude -p once under the watchdog; on a resume parse failure, retry once fresh."""
     def _invoke(sess):
         cmd = [CLAUDE_BIN, "-p", prompt, "--output-format", "json",
                "--max-turns", str(MAX_TURNS), "--dangerously-skip-permissions"]
         if sess:
             cmd += ["--resume", sess]
-        proc = subprocess.run(
-            cmd, cwd=str(WORKDIR), capture_output=True, text=True, timeout=RUN_TIMEOUT)
-        return proc
+        return _run_watched(cmd)
 
-    proc = _invoke(session)
-    data = _parse_json(proc.stdout)
+    rc, out, err, reason = _invoke(session)
+    if reason:  # watchdog killed it — surface why; do NOT auto-retry (would re-hang under the lock)
+        return {"ok": False, "text": _kill_msg(reason), "session": session}
+
+    data = _parse_json(out)
 
     # resume can fail if the session is gone → retry once without it
     if data is None and session:
         log.warning("parse failed with --resume; retrying fresh")
-        proc = _invoke(None)
-        data = _parse_json(proc.stdout)
+        rc, out, err, reason = _invoke(None)
         session = None
+        if reason:
+            return {"ok": False, "text": _kill_msg(reason), "session": None}
+        data = _parse_json(out)
 
     if data is None:
-        tail = (proc.stderr or proc.stdout or "").strip()[-600:]
+        tail = (err or out or "").strip()[-600:]
         return {"ok": False,
-                "text": f"⚠️ Не разобрал ответ claude (rc={proc.returncode}).\n{tail}",
+                "text": f"⚠️ Не разобрал ответ claude (rc={rc}).\n{tail}",
                 "session": session}
 
     is_err = bool(data.get("is_error")) or data.get("subtype") not in (None, "success")
@@ -369,12 +471,9 @@ async def on_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
         session = get_session(cid)
         loop = asyncio.get_event_loop()
         try:
+            # run_claude handles its own timeout/stall (watchdog) and returns a
+            # message; this only catches unexpected crashes in the worker thread.
             res = await loop.run_in_executor(None, run_claude, prompt, session)
-        except subprocess.TimeoutExpired:
-            await placeholder.edit_text(
-                "⏱️ Задача идёт дольше 30 мин — прервал запуск. "
-                "Разбей на шаги или запусти как джобу дирижёра.")
-            return
         except Exception as e:
             log.exception("run failed")
             await placeholder.edit_text(f"❌ Ошибка запуска: {e}")
