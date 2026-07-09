@@ -20,11 +20,17 @@ check "improve our search rankings and fix Core Web Vitals" seo
 check "проанализируй ссылочный профиль и бэклинки" seo
 
 # MARKETING
-check "запусти рекламную кампанию в Google Ads" marketing
-check "сделай контент-план и email-рассылку" marketing
-check "нужна маркетинговая стратегия и позиционирование бренда" marketing
-check "plan a paid media funnel and social campaign" marketing
-check "напиши копирайт для лендинга кампании" marketing
+check "запусти рекламную кампанию в Google Ads" marketing_vb_sm
+check "сделай контент-план и email-рассылку" marketing_vb_sm
+check "нужна маркетинговая стратегия и позиционирование бренда" marketing_vb_sm
+check "plan a paid media funnel and social campaign" marketing_vb_sm
+check "напиши копирайт для лендинга кампании" marketing_vb_sm
+# content/social phrasing (previously misrouted to dev — no marketing keyword)
+check "сделай пост про телехелс в поддержку партнёра" marketing_vb_sm
+check "напиши статью для блога про body composition" marketing_vb_sm
+check "запусти сторис и пост в инстаграм" marketing_vb_sm
+# no signal at all on a marketing-first box -> marketing_vb_sm baseline
+check "помоги мне с этим" marketing_vb_sm
 
 # SECURITY
 check "проверь приложение на уязвимости и OWASP" security
@@ -49,9 +55,11 @@ check "keyword research and a newsletter" ambiguous  # seo=1 (keyword), marketin
 # number → profile mapping (Hermes parses the user's "2")
 checknum() { local got; got="$("$R" --num "$1")"; if [[ "$got" == "$2" ]]; then pass=$((pass+1)); printf '  ok    [--num %s ] %s\n' "$1" "$2"; else fail=$((fail+1)); printf '  FAIL  --num %s expected %s got %s\n' "$1" "$2" "$got"; fi; }
 checknum 1 dev
-checknum 2 marketing
-checknum 3 seo
-checknum 4 security
+checknum 2 marketing_vb_sm
+checknum 3 marketing_vb
+checknum 4 marketing
+checknum 5 seo
+checknum 6 security
 checknum 9 ambiguous
 
 # menu text present
