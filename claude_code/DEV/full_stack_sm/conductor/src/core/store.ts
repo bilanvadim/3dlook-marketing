@@ -178,6 +178,21 @@ export class Store {
     );
   }
 
+  /**
+   * True if this job's run immediately before `beforeRunId` also ended paused on a
+   * rate/token limit. Used to push the "paused — will resume" notice only on the FIRST
+   * pause of a limit streak: a deferred job is re-claimed every ~1 min, so notifying on
+   * every cycle spams Telegram. DB-backed, so it survives a conductor restart.
+   */
+  async prevRunWasRateLimited(jobId: number, beforeRunId: number): Promise<boolean> {
+    const rows = await this.q<{ status: string; stop_reason: string | null }>(
+      'select status, stop_reason from ho_runs where job_id=? and id<? order by id desc limit 1',
+      [jobId, beforeRunId],
+    );
+    const r = rows[0];
+    return r?.status === 'paused' && r?.stop_reason === 'ratelimit';
+  }
+
   async openEscalation(runId: number, jobId: number, reason: string, question: string, context: unknown): Promise<number> {
     await this.q("update ho_jobs set status='escalated' where id=?", [jobId]);
     const res = await this.db.execute({

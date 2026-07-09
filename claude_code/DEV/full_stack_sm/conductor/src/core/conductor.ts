@@ -150,6 +150,20 @@ async function runJobAsSteps(store: Store, job: Job, tg: TelegramConfig | null):
   if (tg) await notifyDone(tg, job.title, finalStatus, summary);
 }
 
+/**
+ * Push the "job paused — will resume" notice only on the FIRST pause of a rate-limit
+ * streak. A deferred job is re-claimed and resumed every ~1 min; without this, every
+ * cycle would fire a Telegram message. The done/failed/escalation notifications are
+ * unaffected — only the repeat "paused" pushes are suppressed.
+ */
+async function notifyPauseOnce(
+  tg: ReturnType<typeof tgConfigFromEnv>, store: Store, job: Job, runId: number, detail: string,
+): Promise<void> {
+  if (!tg) return;
+  if (await store.prevRunWasRateLimited(job.id, runId)) return; // repeat pause → stay quiet
+  await notifyDone(tg, job.title, 'paused', detail);
+}
+
 export async function runOneJob(store: Store): Promise<boolean> {
   const job = await store.claimJob(WORKER_ID);
   if (!job) return false; // nothing to do
@@ -221,7 +235,7 @@ export async function runOneJob(store: Store): Promise<boolean> {
           // token/rate limit → defer WITH session id; a later claim resumes it
           await store.deferJob(job.id, d.backoffSecs);
           await store.finishRun(runId, 'paused', 'ratelimit', state.turns);
-          if (tg) await notifyDone(tg, job.title, 'paused',
+          await notifyPauseOnce(tg, store, job, runId,
             `rate/token limit — will resume in ~${Math.round(d.backoffSecs / 60)} min`);
           return true;
         }
@@ -249,7 +263,7 @@ export async function runOneJob(store: Store): Promise<boolean> {
         // thrown limit error → pause + resume rather than fail
         await store.deferJob(job.id, RESUME_BACKOFF_SECS);
         await store.finishRun(runId, 'paused', 'ratelimit', state.turns, detail);
-        if (tg) await notifyDone(tg, job.title, 'paused',
+        await notifyPauseOnce(tg, store, job, runId,
           `limit hit — will resume in ~${Math.round(RESUME_BACKOFF_SECS / 60)} min`);
         return true;
       }
