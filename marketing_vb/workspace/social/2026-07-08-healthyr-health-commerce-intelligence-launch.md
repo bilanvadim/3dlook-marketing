@@ -17,12 +17,14 @@ tags: [@Healthyr, @StaceyFinster, FitXpress by 3DLOOK]
 
 **Key message (revised 2026-07-09 per partner request):** Health Commerce Intelligence is Healthyr's announcement, delivered through Healthyr Horizon. FitXpress by 3DLOOK is a complementary part of that broader Horizon experience — adding a measurable layer of body composition progress (body composition data, waist-to-hip changes) that a traditional scale may not fully capture. This combination matters most in metabolic health, obesity, diabetes, and GLP-1 support.
 
-**Revision note:** Healthyr asked to decouple the Health Commerce Intelligence announcement from FitXpress's body composition capabilities in the LinkedIn post — FitXpress should read as complementary to the Horizon experience, not co-billed as a joint "together" achievement. Applied the same separation across Instagram, Facebook, and Twitter/X for consistency. LinkedIn copy uses the partner's suggested wording verbatim; other platforms adapted to length/tone. Twitter rewritten to fit the 280-char limit after the added framing (276 chars incl. 23-char t.co link).
+**Revision note (1):** Healthyr asked to decouple the Health Commerce Intelligence announcement from FitXpress's body composition capabilities. FitXpress should read as complementary to the Horizon experience, not co-billed as a joint "together" achievement. Applied that separation across all four platforms. LinkedIn copy uses the partner's suggested wording; other platforms adapted to length/tone.
+
+**Revision note (2), brand-check 2026-07-09:** Ran brand-checker (FAIL → fixed). Removed all hashtags (config: hashtags none since 2026-07-01); removed em-dash rhetorical constructions (banned AI-signature, §6); fixed the Twitter co-billing regression (HCI and FitXpress now in separate clauses, retrimmed to ~256 chars); added the "Smart Patient Companion" gloss for SCOUT on Instagram/Facebook; trimmed the LinkedIn behavior list from 7 items to 3; de-duplicated the Instagram/Facebook opening; reduced Instagram emoji to 2; simplified Facebook to a warmer register. GLP-1 left unexpanded per Vadim.
 
 **Press release (in body of every post):**
 https://www.einpresswire.com/article/924920612/healthyr-launches-health-commerce-intelligence-layer-to-connect-consumer-behavior-with-personalized-health-support
 
-**Compliance checklist (all posts):** link in body ✓ · "FitXpress by 3DLOOK" (never "3D Body Scan" alone) ✓ · no medical / diagnose-treat-prevent claims ✓ · partnership not overstated ✓ · HCI and FitXpress positioned separately, not merged as "together" ✓ · @Healthyr + @StaceyFinster tagged ✓ · congratulatory close ✓ · no visuals described ✓
+**Compliance checklist (all posts):** link in body ✓ · "FitXpress by 3DLOOK" (never "3D Body Scan" alone) ✓ · no medical / diagnose-treat-prevent claims ✓ · partnership not overstated ✓ · HCI and FitXpress positioned separately, not merged as "together" ✓ (incl. Twitter, fixed) · no hashtags per config ✓ · no em-dash AI-signatures ✓ · @Healthyr + @StaceyFinster tagged ✓ · congratulatory close ✓ · no visuals described ✓
 
 ---
 
@@ -32,9 +34,9 @@ https://www.einpresswire.com/article/924920612/healthyr-launches-health-commerce
 
 Most of what shapes our health never shows up in a clinical record.
 
-Claims, labs, diagnoses, refills — these capture what already happened. But health is shaped much earlier: in the grocery cart, the kitchen, the pharmacy aisle, the meal before a long shift. Those everyday choices usually stay invisible, right up until they surface as an outcome.
+Claims, labs, diagnoses and refills capture what already happened. But health is shaped much earlier: in the grocery cart, the kitchen, the pharmacy aisle, the meal before a long shift. Those everyday choices usually stay invisible, right up until they surface as an outcome.
 
-That's why the launch from @Healthyr is worth paying attention to. The new Health Commerce Intelligence layer inside Healthyr Horizon connects real-life behavior — food, grocery patterns, hydration, protein intake, glucose-supportive habits, movement, and recovery — with personalized guidance through SCOUT, Healthyr's Smart Patient Companion.
+That's why the launch from @Healthyr is worth paying attention to. The new Health Commerce Intelligence layer inside Healthyr Horizon connects real-life behavior, like food choices, movement and recovery, with personalized guidance through SCOUT, Healthyr's Smart Patient Companion.
 
 As part of the broader Healthyr Horizon experience, FitXpress by 3DLOOK helps add another layer of measurable progress: showing physical change over time through body composition data and waist-to-hip changes, progress that a traditional scale may not fully capture.
 
@@ -45,23 +47,19 @@ https://www.einpresswire.com/article/924920612/healthyr-launches-health-commerce
 
 Congratulations to @StaceyFinster and the entire @Healthyr team on a launch that moves whole-person health forward.
 
-#DigitalHealth #MetabolicHealth #HealthTech #GLP1 #PopulationHealth
-
 ---
 
 ## Instagram
 
 > Shorter, simpler, more human. ~130 words.
 
-Health doesn't start in the doctor's office. It starts in the grocery cart, the kitchen, the meal before work — everyday choices that usually stay invisible. 🛒🥗
+Health doesn't start in the doctor's office. It starts earlier, in the grocery cart and the kitchen, in choices that usually stay invisible. 🛒
 
-Huge congrats to @Healthyr on launching Health Commerce Intelligence inside Healthyr Horizon! Paired with SCOUT, it turns those daily choices into personalized next steps. As part of the broader Horizon experience, FitXpress by 3DLOOK adds another layer of measurable progress: showing physical change over time through body composition and waist-to-hip changes — progress a scale may miss. That combination matters most in metabolic health, obesity, diabetes, and GLP-1 support. 💙
+Huge congrats to @Healthyr on launching Health Commerce Intelligence inside Healthyr Horizon! Paired with SCOUT, Healthyr's Smart Patient Companion, it turns those daily choices into personalized next steps. As part of the broader Horizon experience, FitXpress by 3DLOOK adds another layer of measurable progress: showing physical change over time through body composition and waist-to-hip changes, progress a scale may miss. That combination matters most in metabolic health, obesity, diabetes, and GLP-1 support.
 
 Read more: https://www.einpresswire.com/article/924920612/healthyr-launches-health-commerce-intelligence-layer-to-connect-consumer-behavior-with-personalized-health-support
 
 So proud to support this milestone, @StaceyFinster and team! 🎉
-
-#MetabolicHealth #DigitalHealth #HealthTech #WholePersonHealth #GLP1 #3DLOOK #Healthyr
 
 ---
 
@@ -69,22 +67,20 @@ So proud to support this milestone, @StaceyFinster and team! 🎉
 
 > Warm and accessible. ~150 words.
 
-So much of our health is shaped long before it shows up in a lab result — in everyday moments like the grocery cart, the kitchen, and the meal before work. Those choices stay invisible, and that's exactly the gap our partner @Healthyr is closing with its new Health Commerce Intelligence Layer inside Healthyr Horizon.
+So much of our health is shaped long before it shows up in a lab result. It's shaped in everyday moments, like what ends up in the grocery cart or on the dinner table. Those choices usually stay invisible, and that's exactly the gap our partner @Healthyr is closing with its new Health Commerce Intelligence Layer inside Healthyr Horizon.
 
-It pairs daily behavior with personalized guidance through SCOUT. As part of the broader Horizon experience, FitXpress by 3DLOOK adds another layer of measurable progress — showing physical change over time through body composition data and waist-to-hip changes a scale may not fully capture.
+It pairs daily behavior with personalized guidance through SCOUT, Healthyr's Smart Patient Companion. As part of the broader Horizon experience, FitXpress by 3DLOOK adds another layer of measurable progress: showing physical change over time through body composition data and waist-to-hip changes a scale may not fully capture.
 
-That combination of real-world health context and measurable body composition insight matters most in metabolic health, obesity, diabetes, and GLP-1 support, where daily behavior and physical change over time both count.
+Layered like this, everyday behavior and body-composition progress give a fuller picture, and that matters most for people managing metabolic health, obesity, diabetes, or GLP-1 support.
 
 Congratulations to @StaceyFinster and the Healthyr team on moving whole-person metabolic health forward!
 
 https://www.einpresswire.com/article/924920612/healthyr-launches-health-commerce-intelligence-layer-to-connect-consumer-behavior-with-personalized-health-support
 
-#MetabolicHealth #DigitalHealth #HealthTech #Partnership
-
 ---
 
 ## X / Twitter
 
-> Concise and direct. Single post, 276 chars (link counted as 23 via t.co).
+> Concise and direct. Single post, ~256 chars (link counted as 23 via t.co).
 
-Care tracks what already happened. But health starts in everyday choices. @Healthyr's Health Commerce Intelligence, inside Healthyr Horizon, pairs with FitXpress by 3DLOOK to track body change over time. Congrats @StaceyFinster & team! https://www.einpresswire.com/article/924920612/healthyr-launches-health-commerce-intelligence-layer-to-connect-consumer-behavior-with-personalized-health-support #MetabolicHealth
+Health starts in everyday choices, long before a lab result. @Healthyr just launched Health Commerce Intelligence inside Healthyr Horizon. FitXpress by 3DLOOK adds a complementary view of body change. Congrats @StaceyFinster & team! https://www.einpresswire.com/article/924920612/healthyr-launches-health-commerce-intelligence-layer-to-connect-consumer-behavior-with-personalized-health-support
