@@ -1,0 +1,6 @@
+{
+  "name": "mvb-social",
+  "description": "Vadim social media team: social-planner (Opus), post-drafter (Opus), social-editor (Opus), social-publisher (Sonnet), brand-checker (Sonnet), social-analytics, quarterly-strategist, visual-brief. 5-agent pipeline for social content creation across 9 profiles (LinkedIn company + personal, Twitter/X, Instagram, Facebook). Organic/LinkedIn social content grounded in brand assets and past posts.",
+  "version": "0.2.0",
+  "author": { "name": "Vadim Bilan" }
+}

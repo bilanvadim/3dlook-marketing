@@ -1,0 +1,6 @@
+{
+  "name": "mvb-core",
+  "description": "Vadim marketing orchestration core: orchestrator (single entry point that picks the workflow and drives agents), brand-checker, quality-controller, context-pack-builder, agent-improver + workflow commands (/new-article, /weekly-posts, /outbound, /post-from-article, /qc, /quarterly-review, /improve-agents). Reads brand context from the working project (brand-assets/, workspace/, about-me.md, audience.md).",
+  "version": "0.2.0",
+  "author": { "name": "Vadim Bilan" }
+}
