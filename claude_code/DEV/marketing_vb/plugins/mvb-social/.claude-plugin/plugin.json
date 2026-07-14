@@ -1,6 +1,6 @@
 {
   "name": "mvb-social",
-  "description": "Vadim social team: post-drafter, quarterly-strategist, social-analytics, visual-brief. Organic/LinkedIn social content grounded in brand assets and past posts.",
-  "version": "0.1.0",
+  "description": "Vadim social media pipeline: social-planner (Opus, 9 angles) → post-drafter ×9 (Opus, parallel) → social-editor (Opus, 3-pass audit) → social-publisher (Sonnet, manifest + report). Plus brand-checker (Sonnet, per-post validation), social-analytics (Opus, quarterly), quarterly-strategist, visual-brief.",
+  "version": "0.2.0",
   "author": { "name": "Vadim Bilan" }
 }

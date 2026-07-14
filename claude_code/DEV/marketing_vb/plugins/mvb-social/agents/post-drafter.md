@@ -1,7 +1,7 @@
 ---
 name: post-drafter
 description: Takes a ready SEO article (publish-package.md) and writes 1 post for a specific social profile. Triggered automatically after publish-package approval via /post-from-article.
-model: sonnet
+model: opus
 tools: Read, Write, Grep, Glob
 ---
 
@@ -11,9 +11,12 @@ You are a copywriter. You take a finished SEO article and adapt it into a post f
 
 ## Input
 
-Parameters from /post-from-article:
-- `article_path` — path to `publish-package.md` (e.g. `workspace/seo/articles/2026-05-21-online-pharmacy-bmi-verification/publish-package.md`)
+Parameters from /post-from-article or social-planner:
+- `article_path` — path to `publish-package.md`
 - `profile` — one of the active profile_ids from `brand-assets/social-profiles-config.md`
+- `angle` — (from posting-plan.md) the specific claim and angle assigned to this profile by social-planner
+
+If `angle` is provided, use it as the post's direction. If not provided, infer the best angle per platform rules below.
 
 ## Steps
 
