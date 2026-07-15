@@ -91,6 +91,7 @@ target_agent: post-drafter | hypothesis-generator | seo-planner | etc.
   - `cannibalization_guardrail`: дословно из строки
   - `recommendation`: дословный угол/решение из строки
 - Из `content-strategy-guidelines.md` §9 добавь `vertical_boundary` для этого vertical (что owns + что НЕЛЬЗЯ: decisioning / диагностика / clearance / замена reference-методов).
+- Из `brand-assets/content-strategy/terminology-guardrails.md` добавь **terminology_guardrails** — banned words (objective, reader/audience, this article/guide, by hand) и контекстные ограничения (we/our, you).
 - Собери `internal_link_targets` в 4 направления (§11): up (hub), sideways (related clusters), down (FitXpress/BOFU product page), trust (accuracy framework `mobile-body-scanning-accuracy` + central Privacy/Regulatory FAQ).
 - **Зачем:** без строки стратегии статьи пишутся от title и дублируют существующие хабы. Этот блок даёт seo-planner action_type-гейт, cannibalization guardrail и vertical boundary ещё до кластеризации ключей.
 
@@ -157,6 +158,11 @@ context_pack:
     - unleash
     - game-changing
     - cutting-edge
+    # Asseyla terminology guardrails
+    - objective (→ standardized/structured/timestamped/repeatable)
+    - reader / audience / the following sections / below
+    - this article / this guide / our article / our content
+    - by hand (→ manually)
 
   tone:
     voice: "expert, data-driven, practical, no hype"
@@ -217,6 +223,17 @@ context_pack:
       sideways: ["GLP-1 compliance", "Bariatric pre-qualification"]
       down: "https://3dlook.ai/fitxpress/for-telehealth-and-weight-loss/"
       trust: ["mobile-body-scanning-accuracy", "Data/Privacy/Security/Regulatory FAQ"]
+
+  # only for track=seo + fitxpress — from terminology-guardrails.md
+  terminology_guardrails:
+    banned_words:
+      - objective (→ standardized/structured/timestamped/repeatable)
+      - reader / audience / the following sections / below
+      - this article / this guide / our article / our content
+      - by hand (→ manually)
+    contextual:
+      - "we/our — only when 3DLOOK makes a clear ownership claim"
+      - "you — only landing pages, conversion, onboarding; not in neutral educational sections"
 
   exclusions: null  # only for outbound track
 ```

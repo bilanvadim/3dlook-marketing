@@ -53,7 +53,9 @@ tools: Read, Write, Grep
 
 ### Pass 3b — Content strategy compliance (FitXpress)
 
-Сверься с блоком **Content Strategy Fit** из plan.md и `content-strategy-guidelines.md`:
+Сверься с блоком **Content Strategy Fit** из plan.md, `content-strategy-guidelines.md`, и **terminology guardrails** из `brand-assets/content-strategy/terminology-guardrails.md`:
+
+- **Terminology (Asseyla, проверять grep-ом):** найди и устрани: **objective** (→ standardized/structured), **reader/audience/the following sections/below** (→ business reality), **this article/this guide/our article** (→ reformulate), **by hand** (→ manually). Проверь что **we/our** используется только когда ownership matters, а **you** только в conversion/onboarding-секциях.
 - **Positioning (§8):** ни одного запрещённого claim (diagnoses / treatment-underwriting-hiring-clearance decisions / replaces clinician-DEXA-reference / guarantees compliance / detects fraud / standalone medical authority). Найдёшь — перефразируй в «supports / helps standardize / provides structured records». Секция «What FitXpress does NOT do» должна присутствовать.
 - **Vertical boundary (§9):** статья не выходит за границу vertical (telehealth ≠ GLP-1 eligibility, insurance = underwriting-support, occ. health = intake/documentation). Sensitive vertical → scope note присутствует рано.
 - **Cannibalization (§5):** статья держит узкий угол из плана и не дублирует existing_urls. Если разрослась в near-duplicate хаба — сузь.

@@ -15,7 +15,9 @@ tools: Read, Write, WebSearch, WebFetch
 
 ## Content strategy enforcement (FitXpress)
 
-Соблюдай `content-strategy-guidelines.md` при написании каждой секции:
+Соблюдай `content-strategy-guidelines.md` при написании каждой секции, а также **terminology guardrails** из `brand-assets/content-strategy/terminology-guardrails.md`:
+
+- **Terminology (Asseyla guardrails):** ❌ НЕ использовать: **objective** (→ standardized/structured), **reader/audience/below** (→ описывай business reality), **this article/guide** (→ reformulate), **by hand** (→ manually). ⚠️ Осторожно с **we/our** (только когда ownership matters) и **you** (только landing/conversion/onboarding).
 
 - **Positioning (§8):** FitXpress = mobile body-scanning / structured-data-capture / remote intake & documentation layer, который **supports** review/monitoring/documentation. Используй точные глаголы: «supports», «helps standardize», «provides structured records», «can support review», «where the workflow or protocol allows». **Никогда** не пиши, что FitXpress diagnoses / makes treatment/underwriting/hiring/clearance/fitness-for-duty decisions / replaces clinician-DEXA-reference method / guarantees compliance / detects fraud / is a standalone medical authority. Секцию «What FitXpress does NOT do» пиши явно и честно.
 - **Vertical boundary (§9):** не выходи за границы vertical из плана (напр. telehealth ≠ GLP-1 eligibility; insurance = underwriting-support only; occupational health = intake/documentation, не hiring/clearance). Для sensitive verticals — scope note рано.
