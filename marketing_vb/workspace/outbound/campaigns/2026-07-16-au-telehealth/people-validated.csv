@@ -1,0 +1,440 @@
+person_id,full_name,title,company_name,decision,priority,reason,recommended_message_angle
+f0c328aedec0,Daisy Wong,Head of Security Awareness,Medibank,FAIL,,Head of Security Awareness at Medibank — security/cybersecurity role; not in FitXpress buying chain.,
+971735404aae,Dani Rutman,Head of Integrated Healthcare Experience,Medibank,PASS,1,Head of Integrated Healthcare Experience at Medibank — directly owns health/preventive program design; strong FitXpress fit.,preventive-health
+0f44c2c1bcb1,David McHale,Program Director,Bupa Australia,PASS,3,Program Director at Bupa Australia — executive role at target insurer; may influence digital health strategy.,digital-transformation
+9e93f3a533b8,James Taylor,Chief Product Officer,Mosh,PASS,1,Chief Product Officer at Mosh — product leadership owns digital health tool strategy.,digital-transformation
+d21adea4d88b,JoAnne Christodouleas,"Director Operations and Enablement, Health Insurance",Bupa Australia,PASS,3,"Director Operations and Enablement, Health Insurance at Bupa Australia — executive role at target insurer; may influence digital health strategy.",digital-transformation
+dadaa17a9ef2,Andrea Christie-David,Director - Mental Health (Mindplace),Bupa Australia,PASS,3,Director - Mental Health (Mindplace) at Bupa Australia — executive role at target insurer; may influence digital health strategy.,digital-transformation
+a12c5d7f6e32,Pawan Verma,Head of MarTech and Delivery,Bupa Australia,FAIL,,Head of MarTech and Delivery at Bupa Australia — Director-level non-health role at insurer; not in FitXpress buying chain.,
+f7e0bd83aba8,Kernow Craig,Head of Design Digital Transformation,Bupa Australia,PASS,2,Head of Design Digital Transformation at Bupa Australia — health-relevant senior role at target company; potential FitXpress champion.,digital-transformation
+a2ee480b97d8,Shona Sundaraj,Group Medical Director,Medibank,PASS,1,Group Medical Director at Medibank — clinical/medical leadership role directly relevant to FitXpress telehealth and preventive health programs.,clinical-operations
+403a70e472a0,Ben Vanden Boom,"Director Bupa Dental, Optical & Hearing",Bupa Australia,FAIL,,"Director Bupa Dental, Optical & Hearing at Bupa Australia — dental division role; explicitly excluded per hypothesis anti-cases.",
+a608f6af27cd,Karen Birner,Head of Assurance and Regulatory Programs,HCF Australia,WEAK,,Head of Assurance and Regulatory Programs at HCF Australia — director-level at target company; unclear health program ownership.,compliance
+01b1068fb0ad,John O'Driscoll,"Head of Risk - Technology, Security and Data",Medibank,FAIL,,"Head of Risk - Technology, Security and Data at Medibank — security/cybersecurity role; not in FitXpress buying chain.",
+b645c10e3675,Liam John Ward,Transformation Director Health Insurance,Bupa Australia,PASS,3,Transformation Director Health Insurance at Bupa Australia — executive role at target insurer; may influence digital health strategy.,digital-transformation
+2df40423be25,Emma Harrington,Chief of - Member Experience,HCF Australia,PASS,1,Chief of - Member Experience at HCF Australia — member/customer experience leader; FitXpress plugs into member engagement and retention KPIs.,member-engagement
+36b893d85001,Paul Lo Russo,Creative | Senior Art Director,Medibank,FAIL,,Creative | Senior Art Director at Medibank — creative/art direction role; not in FitXpress buying chain.,
+c5cc7322e840,Yash Sodhi,Chief Strategy Officer,Medibank,PASS,3,Chief Strategy Officer at Medibank — C-Level executive at target insurer; may sponsor digital health initiatives.,member-engagement
+d5568e7e786c,Janelle McGuinness GAICD,"General Manager, Digital and Data",HCF Australia,PASS,3,"General Manager, Digital and Data at HCF Australia — C-Level executive at target insurer; may sponsor digital health initiatives.",digital-transformation
+3b7af242de21,Merryn Olifent,Head of Customer Insights and Experience Design,Medibank,PASS,1,Head of Customer Insights and Experience Design at Medibank — customer experience leader; FitXpress value prop maps to member engagement KPIs.,member-engagement
+fb142712a5e2,Jean Jacobs,Head of Health Insights,Bupa Australia,PASS,1,Head of Health Insights at Bupa Australia — directly owns health/preventive program design; strong FitXpress fit.,preventive-health
+36039de86641,David Lumb,"Chief Officer, Member Growth",HCF Australia,PASS,1,"Chief Officer, Member Growth at HCF Australia — member/customer experience leader; FitXpress plugs into member engagement and retention KPIs.",member-engagement
+98b1e420e53c,Milosh Milisavljevic,Group Lead - Chief Customer Officer,Medibank,PASS,1,Group Lead - Chief Customer Officer at Medibank — member/customer experience leader; FitXpress plugs into member engagement and retention KPIs.,member-engagement
+5f59d9c40771,Aarti Olsson,Head of Health Advisory,Medibank,PASS,1,Head of Health Advisory at Medibank — directly owns health/preventive program design; strong FitXpress fit.,preventive-health
+534333ea7731,Lucy Chen,Head of Healthcare Programs,Bupa Australia,PASS,1,Head of Healthcare Programs at Bupa Australia — directly owns health/preventive program design; strong FitXpress fit.,preventive-health
+01cae4896b7e,Peter Coon,Head of Competitive and Market Insights,Medibank,WEAK,,Head of Competitive and Market Insights at Medibank — director at target company; may influence digital health tool decisions.,preventive-health
+afc5b0b43e5e,Erin Lawless,Acting GM RT Health (Division of HCF),HCF Australia,WEAK,,Acting GM RT Health (Division of HCF) at HCF Australia — health-relevant but Individual Contributor level at large insurer lacks purchasing authority; internal champion potential.,preventive-health
+72b0202effca,Dr Jonathan Brown,Medical Director - BUPA Medical,Bupa Australia,PASS,1,Medical Director - BUPA Medical at Bupa Australia — clinical/medical leadership role directly relevant to FitXpress telehealth and preventive health programs.,clinical-operations
+ec01927f9dd3,Nicholas Holden,Chief Marketing Officer,Mosh,PASS,2,Chief Marketing Officer at Mosh — senior executive at digital health company; broad decision-making scope.,member-engagement
+b37f8e700418,Lydia Windels,Partnership Manager - overseas,Medibank,FAIL,,Partnership Manager - overseas at Medibank — role does not align with FitXpress buyer personas.,
+f926cf0914ed,Mads Langbjerg Larsen,Head of Strategy and Delivery ANZ,Bupa Australia,WEAK,,Head of Strategy and Delivery ANZ at Bupa Australia — senior role at target company; unclear if they own health program decisions.,member-engagement
+b9fcd2a5fb54,Adeline Chang,"Head of Technology, Dental Optical and Hearing",Bupa Australia,FAIL,,"Head of Technology, Dental Optical and Hearing at Bupa Australia — dental division role; explicitly excluded per hypothesis anti-cases.",
+63764df8cc7e,Jonno Seidler,Creative Director,Mosh,WEAK,,Creative Director at Mosh — creative role at digital health company; adjacent but not in health product decision chain.,member-engagement
+c404b0fa18eb,Tim Thorne,"Director, HCF Life",HCF Australia,PASS,3,"Director, HCF Life at HCF Australia — executive role at target insurer; may influence digital health strategy.",digital-transformation
+97b93837bc21,Ian Maytom,"General Manager, Hospital & Medical",HCF Australia,PASS,3,"General Manager, Hospital & Medical at HCF Australia — C-Level executive at target insurer; may sponsor digital health initiatives.",preventive-health
+6d117ee7782d,Gerard Dalbosco,Non Executive Director,Medibank,WEAK,,Non Executive Director at Medibank — board role; strategic influence but not operational decision-maker for health program tools.,digital-transformation
+3ed17394163c,Glenn McPhee,"Managing Director, Government Services",Bupa Australia,PASS,3,"Managing Director, Government Services at Bupa Australia — C-Level executive at target insurer; may sponsor digital health initiatives.",preventive-health
+5bab98f7b731,Lesley Brinckley,Head of IT Risk and Governance,HCF Australia,WEAK,,Head of IT Risk and Governance at HCF Australia — director-level at target company; unclear health program ownership.,compliance
+a52077bfe567,David Lochrie,Digital Director - Transformation,Bupa Australia,PASS,3,Digital Director - Transformation at Bupa Australia — executive role at target insurer; may influence digital health strategy.,digital-transformation
+ac117c2bb541,Glenn O'Sullivan,Chief Operating Officer,Mosh,PASS,2,Chief Operating Officer at Mosh — senior executive at digital health company; broad decision-making scope.,clinical-operations
+b47ceb894d8a,Stephanie Sealy,"Head of Mental Health, Health Ventures",Medibank,PASS,2,"Head of Mental Health, Health Ventures at Medibank — health-relevant senior role at target company; potential FitXpress champion.",preventive-health
+b396db811476,Christian Panariello,Head of Growth,Bupa Australia,WEAK,,Head of Growth at Bupa Australia — senior role at target company; unclear if they own health program decisions.,member-engagement
+9dc0fe0ddb06,Jonathan Goh,Head of Marketing Technology and Orchestration,Medibank,WEAK,,Head of Marketing Technology and Orchestration at Medibank — senior role at target company; unclear if they own health program decisions.,digital-transformation
+87e34630e1f2,Aleks Devic,Head of External Communications,Bupa Australia,FAIL,,Head of External Communications at Bupa Australia — Director-level non-health role at insurer; not in FitXpress buying chain.,
+4e210cfe4699,Michelle Karolik,Head of Customer Engagement,Bupa Australia,PASS,1,Head of Customer Engagement at Bupa Australia — customer experience leader; FitXpress value prop maps to member engagement KPIs.,member-engagement
+330792824081,Joanne Casha,Head of Corporate Partnerships,Bupa Australia,WEAK,,Head of Corporate Partnerships at Bupa Australia — director at target company; commercial/design role not directly in health program decisions.,preventive-health
+983154b8b9dd,Robert Ashmore,Head of Business Insights,HCF Australia,WEAK,,Head of Business Insights at HCF Australia — senior role at target company; unclear if they own health program decisions.,preventive-health
+93b3aa19328e,Chris Leech,Head of Data Governance,Medibank,WEAK,,Head of Data Governance at Medibank — senior role at target company; unclear if they own health program decisions.,compliance
+2f02c2bf2d5f,Andrew Wilkinson,"Director, Domestic Portfolio APAC (aka Chief Customer Officer)",Bupa Australia,PASS,1,"Director, Domestic Portfolio APAC (aka Chief Customer Officer) at Bupa Australia — member/customer experience leader; FitXpress plugs into member engagement and retention KPIs.",member-engagement
+4b378704aa59,René Cunningham,"General Manager - Growth, Government Services",Bupa Australia,PASS,3,"General Manager - Growth, Government Services at Bupa Australia — C-Level executive at target insurer; may sponsor digital health initiatives.",member-engagement
+f5e43ad5d628,Tony Johnson,Chair,Bupa Australia,WEAK,,Chair at Bupa Australia — board role; strategic influence but not operational decision-maker for health program tools.,digital-transformation
+998a96079bfc,Linda Opie,Head of Health and Wellbeing,HCF Australia,PASS,1,Head of Health and Wellbeing at HCF Australia — directly owns health/preventive program design; strong FitXpress fit.,preventive-health
+5ea5461ddf3c,Tom Bosna,Head of Operations | Workplace Health & Wellbeing. Ventures,Medibank,PASS,2,Head of Operations | Workplace Health & Wellbeing. Ventures at Medibank — health-relevant senior role at target company; potential FitXpress champion.,preventive-health
+036cd239a035,Cameron McCafferty,Squad Lead / Head of Technology - Architecture,Medibank,WEAK,,Squad Lead / Head of Technology - Architecture at Medibank — senior role at target company; unclear if they own health program decisions.,digital-transformation
+517ab8304268,Pauline Smyth,"Head of Virtual Health, Amplar Health",Medibank,PASS,1,"Head of Virtual Health, Amplar Health at Medibank — directly owns telehealth/virtual care strategy; perfect FitXpress target.",virtual-care
+f3159685f292,Carl James,"Chief Operating Officer Dental, Optical & Hearing",Bupa Australia,WEAK,,"Chief Operating Officer Dental, Optical & Hearing at Bupa Australia — optical/hearing division leader; non-core for FitXpress but may have broader health portfolio.",other
+862e945a40da,Maunish Patel,Head of Security Engineering,Medibank,FAIL,,Head of Security Engineering at Medibank — security/cybersecurity role; not in FitXpress buying chain.,
+b744fd9a7074,Jamie Hempenstall,Head of Procurement - Category Management,Medibank,FAIL,,Head of Procurement - Category Management at Medibank — Director-level non-health role at insurer; not in FitXpress buying chain.,
+503cc6317f3d,Stuart Robbins,Head of Property and Procurement,HCF Australia,FAIL,,Head of Property and Procurement at HCF Australia — Director-level non-health role at insurer; not in FitXpress buying chain.,
+b0976ba55ec1,Jennifer Vo-Phuoc,Head of Health Policy,Medibank,PASS,1,Head of Health Policy at Medibank — directly owns health/preventive program design; strong FitXpress fit.,preventive-health
+1be8e15c0286,Annie M.,"Manager, Health Policy",Medibank,PASS,1,"Manager, Health Policy at Medibank — directly owns health/preventive program design; strong FitXpress fit.",preventive-health
+23a28c7d2c63,Michelle Urquhart,Head of Employee Communications,Medibank,FAIL,,Head of Employee Communications at Medibank — Director-level non-health role at insurer; not in FitXpress buying chain.,
+e5033951fd68,David Koczkar,Chief Executive Officer,Medibank,PASS,1,Chief Executive Officer at Medibank — CEO/Founder at target company; ultimate decision-maker for new digital health partnerships.,preventive-health
+16cd5a2d54fd,Liz Green,Head of Content & Campaigns,Medibank,WEAK,,Head of Content & Campaigns at Medibank — senior role at target company; unclear if they own health program decisions.,digital-transformation
+250c5bdd5a41,Sarah Trainor,Head of Overseas Partnerships and Sales,Medibank,WEAK,,Head of Overseas Partnerships and Sales at Medibank — director at target company; commercial/design role not directly in health program decisions.,preventive-health
+2ce1e6dd99e8,Pamela Zaldarriaga,Engagement and Support Coordinator,Bupa Australia,PASS,3,Engagement and Support Coordinator at Bupa Australia — executive role at target insurer; may influence digital health strategy.,digital-transformation
+07ac50e78850,Alexander Godfrey,"Partner - Digital, Data, & AI Risk | Technology APAC",Bupa Australia,WEAK,,"Partner - Digital, Data, & AI Risk | Technology APAC at Bupa Australia — innovation/tech role at insurer; may touch member-facing digital health tools.",digital-transformation
+fe2fc4fb2628,Cameron Towt,Head of Data and AI Governance,Bupa Australia,WEAK,,Head of Data and AI Governance at Bupa Australia — senior role at target company; unclear if they own health program decisions.,digital-transformation
+f558a6aadc48,Mark Rogers,"Group Executive, Chief Financial Officer & Group Strategy",Medibank,PASS,3,"Group Executive, Chief Financial Officer & Group Strategy at Medibank — C-Level executive at target insurer; may sponsor digital health initiatives.",preventive-health
+c56774308886,Morgan Chen,"Technical Director, Cybersecurity & Data Resilience",HCF Australia,FAIL,,"Technical Director, Cybersecurity & Data Resilience at HCF Australia — security/cybersecurity role; not in FitXpress buying chain.",
+35982697d46f,Andrew Wilson,Group Chief Medical Officer,Medibank,PASS,1,Group Chief Medical Officer at Medibank — clinical/medical leadership role directly relevant to FitXpress telehealth and preventive health programs.,clinical-operations
+c6f8f8a751c9,Paul Berghofer,Head of Hospital Commercial Partnerships,Medibank,WEAK,,Head of Hospital Commercial Partnerships at Medibank — senior role at target company; unclear if they own health program decisions.,preventive-health
+db5856d2a39c,Anton Eksteen,Head of Networks and Reliability Engineering,HCF Australia,WEAK,,Head of Networks and Reliability Engineering at HCF Australia — director-level at target company; unclear health program ownership.,preventive-health
+31f4e6dfb59c,Rima Dagher,Victorian Branch Manager,HCF Australia,PASS,3,Victorian Branch Manager at HCF Australia — executive role at target insurer; may influence digital health strategy.,digital-transformation
+fcdbbacf4e49,Antony Ugoni,Chief Data Scientist,HCF Australia,PASS,3,Chief Data Scientist at HCF Australia — C-Level executive at target insurer; may sponsor digital health initiatives.,digital-transformation
+52d0e32f3162,Mark Compton,Non Executive Director,HCF Australia,WEAK,,Non Executive Director at HCF Australia — board role; strategic influence but not operational decision-maker for health program tools.,digital-transformation
+6deca391a7fe,Felicia Trewin,Group Lead - Data & Technology | CIO,Medibank,PASS,3,Group Lead - Data & Technology | CIO at Medibank — executive role at target insurer; may influence digital health strategy.,digital-transformation
+7d690d4e56b3,David Hill,Chief Financial Officer,Mosh,PASS,2,Chief Financial Officer at Mosh — senior executive at digital health company; broad decision-making scope.,compliance
+c171a78bb7e1,Wael Hanna,Co-Founder,Medmate,PASS,1,Co-Founder at Medmate — CEO/Founder at target company; ultimate decision-maker for new digital health partnerships.,digital-transformation
+bd7894b766a2,Hayley Y.,Finance Business Partner - Technology & Digital,Bupa Australia,FAIL,,Finance Business Partner - Technology & Digital at Bupa Australia — role does not align with FitXpress buyer personas.,
+35f2c153abf5,James McDonald,Head of Telehealth Operations,Bupa Australia,PASS,1,Head of Telehealth Operations at Bupa Australia — directly owns telehealth/virtual care strategy; perfect FitXpress target.,virtual-care
+4e422f504cab,Deleine G.,Head of International Direct,Bupa Australia,WEAK,,Head of International Direct at Bupa Australia — director-level at target company; unclear health program ownership.,preventive-health
+a5e62a4fc7c3,Saskia T.,Senior Business Partner - People and Culture,HCF Australia,FAIL,,Senior Business Partner - People and Culture at HCF Australia — role not in FitXpress buying chain.,
+7814f63c68d3,Santhana Gopalan Narayanaswamy,Head of Health Technology Platforms and Services (Amplar Health),Medibank,PASS,2,Head of Health Technology Platforms and Services (Amplar Health) at Medibank — health-relevant senior role at target company; potential FitXpress champion.,digital-transformation
+f4f71dda5fef,Dean Italia,Head of Investments APAC,Bupa Australia,WEAK,,Head of Investments APAC at Bupa Australia — director-level at target company; unclear health program ownership.,preventive-health
+2a68bd615bdf,Philip Mackney,Co-Founder,Hopstep,FAIL,,"Co-Founder at Hopstep — healthcare recruitment platform, not a telehealth provider or health insurer.",
+21a50aba1aba,Saurabh Mehta,Head of Business Analysis and Quality Engineering,HCF Australia,WEAK,,Head of Business Analysis and Quality Engineering at HCF Australia — director-level at target company; unclear health program ownership.,preventive-health
+002f101b050e,Martin Brown,Experience Design Manager,Bupa Australia,FAIL,,Experience Design Manager at Bupa Australia — role does not align with FitXpress buyer personas.,
+de91b87041fb,Suren Wickramasinghe,Chief Technology Officer,Mosh,PASS,2,Chief Technology Officer at Mosh — senior executive at digital health company; broad decision-making scope.,digital-transformation
+fc6c003e9041,Josh Lambert,Head of Business Development - Digital Health & Ventures,Medibank,PASS,1,Head of Business Development - Digital Health & Ventures at Medibank — directly owns telehealth/virtual care strategy; perfect FitXpress target.,virtual-care
+37790e63dd65,Nishan Rudrakumar,"Head of Digital, Financial Products",Medibank,PASS,2,"Head of Digital, Financial Products at Medibank — health-relevant senior role at target company; potential FitXpress champion.",digital-transformation
+bb63fcabb7f5,AJIT JOSHI,Head of Technology Strategy Development,HCF Australia,WEAK,,Head of Technology Strategy Development at HCF Australia — senior role at target company; unclear if they own health program decisions.,digital-transformation
+b84aabc74b3d,Olivia Wardlaw,Head of Data & Technology Governance Performance Transformation,Medibank,WEAK,,Head of Data & Technology Governance Performance Transformation at Medibank — senior role at target company; unclear if they own health program decisions.,digital-transformation
+0f6d583c1c01,Greg Baster,Chief Information Officer,HCF Australia,PASS,3,Chief Information Officer at HCF Australia — C-Level executive at target insurer; may sponsor digital health initiatives.,digital-transformation
+3f9bd43e3d29,asher freilich,Managing Director and Founder,InstantScripts,PASS,1,Managing Director and Founder at InstantScripts — CEO/Founder at target company; ultimate decision-maker for new digital health partnerships.,digital-transformation
+83293e43b6d2,Amy Dougherty,"Head of Performance, Insight & Reporting",Bupa Australia,WEAK,,"Head of Performance, Insight & Reporting at Bupa Australia — senior role at target company; unclear if they own health program decisions.",preventive-health
+d2e6d1087862,Soumya Nair,Head of Technology-Healthcare( Bupa Villages & Aged Care),Bupa Australia,PASS,2,Head of Technology-Healthcare( Bupa Villages & Aged Care) at Bupa Australia — health-relevant senior role at target company; potential FitXpress champion.,digital-transformation
+4bd0b8bbd199,Anna Speranza,"Strategic People Partner, Health Insurance",Bupa Australia,WEAK,,"Strategic People Partner, Health Insurance at Bupa Australia — health-relevant but Individual Contributor level at large insurer lacks purchasing authority; internal champion potential.",preventive-health
+e3824279ba92,Melissa Dodge,Leadership Development Consultant,Medibank,FAIL,,Leadership Development Consultant at Medibank — role not in FitXpress buying chain.,
+d23fb650bf2a,Lintyn Basha,"Head of Homecare, Health Prevention and Specialist Partnerships",Medibank,PASS,1,"Head of Homecare, Health Prevention and Specialist Partnerships at Medibank — directly owns health/preventive program design; strong FitXpress fit.",preventive-health
+4cb67b93f78b,Nicola Piteo,Head of Strategic Workforce Programs,Bupa Australia,WEAK,,Head of Strategic Workforce Programs at Bupa Australia — director-level at target company; unclear health program ownership.,preventive-health
+83d912e29815,Ezra Israel,General Manager,Bupa Australia,PASS,3,General Manager at Bupa Australia — C-Level executive at target insurer; may sponsor digital health initiatives.,preventive-health
+500a9152b478,Andrew Galbraith,Risk Business Partner | Customer Channels and Growth (CCG),Bupa Australia,FAIL,,Risk Business Partner | Customer Channels and Growth (CCG) at Bupa Australia — role does not align with FitXpress buyer personas.,
+e79a9cd929a8,Tom Robinson,Head of Innovation,HCF Australia,WEAK,,Head of Innovation at HCF Australia — senior role at target company; unclear if they own health program decisions.,digital-transformation
+dad9ec2c641b,Briony Cliffe,Head of Marketing - Customer,Bupa Australia,PASS,2,Head of Marketing - Customer at Bupa Australia — health-relevant senior role at target company; potential FitXpress champion.,member-engagement
+08fae46d7e1c,Daryn Wedd,"Hub Lead, IT Security and Networks / CISO",Medibank,FAIL,,"Hub Lead, IT Security and Networks / CISO at Medibank — security/cybersecurity role; not in FitXpress buying chain.",
+0e250d56edff,Daniel Cogan,Head of Workforce Transformation,Medibank,WEAK,,Head of Workforce Transformation at Medibank — director at target company; may influence digital health tool decisions.,digital-transformation
+a1fec2ec65a4,Gustavo Giudice,General Manager / National Sapphire Services Manager,Bupa Australia,PASS,3,General Manager / National Sapphire Services Manager at Bupa Australia — C-Level executive at target insurer; may sponsor digital health initiatives.,preventive-health
+cdd47598f938,Benson Low,Head of Design Capabilities,Bupa Australia,WEAK,,Head of Design Capabilities at Bupa Australia — senior role at target company; unclear if they own health program decisions.,preventive-health
+c964e3e95223,"Daniel Zocco, CPA",Finance Business Partner- Technology,Bupa Australia,FAIL,,Finance Business Partner- Technology at Bupa Australia — role does not align with FitXpress buyer personas.,
+e03918b31d09,Lorraine Thomas,CEO & MD,HCF Australia,PASS,1,CEO & MD at HCF Australia — CEO/Founder at target company; ultimate decision-maker for new digital health partnerships.,preventive-health
+b11071414cc1,Erin Gooey,"Head of Health, Safety and Wellbeing",Medibank,PASS,1,"Head of Health, Safety and Wellbeing at Medibank — directly owns health/preventive program design; strong FitXpress fit.",preventive-health
+946b5c763e0d,Aaron Green,"National Property Manager, Group Property",Medibank Private,FAIL,,"National Property Manager, Group Property at Medibank Private — role not in FitXpress buying chain.",
+f31197c50773,Binnu Verma,Head of Digital Analytics,HCF Australia,PASS,2,Head of Digital Analytics at HCF Australia — health-relevant senior role at target company; potential FitXpress champion.,digital-transformation
+cf70ddd02227,Shaun Nicholls,General Manager,Bupa Australia,PASS,3,General Manager at Bupa Australia — C-Level executive at target insurer; may sponsor digital health initiatives.,preventive-health
+605ea73ca6c1,Sean Bluett,Global Group Executive Chairman,Medibank,PASS,1,Global Group Executive Chairman at Medibank — CEO/Founder at target company; ultimate decision-maker for new digital health partnerships.,digital-transformation
+7d030f49c855,Nathan McLeod,Head of Wellbeing and Injury Management,Bupa Australia,PASS,1,Head of Wellbeing and Injury Management at Bupa Australia — directly owns health/preventive program design; strong FitXpress fit.,preventive-health
+214dfc07bb05,Scott Beattie,Director - Primary Care,Bupa Australia,PASS,3,Director - Primary Care at Bupa Australia — executive role at target insurer; may influence digital health strategy.,digital-transformation
+1b73e3e21fc1,Susan Cullen,"National Partnership Manager, Overseas",Medibank,FAIL,,"National Partnership Manager, Overseas at Medibank — role does not align with FitXpress buyer personas.",
+7e5affc3e8e0,Sam McBain,Head of Workforce Optimisation - Bupa Villages and Aged Care Australia,Bupa Australia,PASS,2,Head of Workforce Optimisation - Bupa Villages and Aged Care Australia at Bupa Australia — health-relevant director at target company; potential program decision-maker.,preventive-health
+6a61dfc94c73,Liz Sleeman,"Senior Executive, Group Clinical Governance",Medibank,PASS,1,"Senior Executive, Group Clinical Governance at Medibank — clinical/medical leadership role directly relevant to FitXpress telehealth and preventive health programs.",clinical-operations
+a286f1392889,Georgina Anderson,Head of Employee Communications and Social Impact,HCF Australia,FAIL,,Head of Employee Communications and Social Impact at HCF Australia — Director-level non-health role at insurer; not in FitXpress buying chain.,
+4d198d1c40d7,Joanna Wang,Vice President Clinical Operations,Mosh,PASS,2,Vice President Clinical Operations at Mosh — executive at digital health company; relevant to FitXpress.,clinical-operations
+c0d07dca8c82,Rebecca Hetherington,Executive Assistant to Managing Director,Bupa Australia,PASS,3,Executive Assistant to Managing Director at Bupa Australia — C-Level executive at target insurer; may sponsor digital health initiatives.,preventive-health
+b5a40557bff9,Swati Ram,Group Reporting Manager - ANZ,Bupa Australia,FAIL,,Group Reporting Manager - ANZ at Bupa Australia — role not in FitXpress buying chain.,
+f7f6e55a1cab,Maria Ruberto,Member - Mental Health Reference Group,Medibank,WEAK,,Member - Mental Health Reference Group at Medibank — health-relevant but Individual Contributor level at large insurer lacks purchasing authority; internal champion potential.,member-engagement
+527ba3966463,Chloe Dwyer,People and Culture Business Partner,HCF Australia,FAIL,,People and Culture Business Partner at HCF Australia — role not in FitXpress buying chain.,
+572d8e8d082c,Kylee Dean-Willcocks,General Manager Transformation,Bupa Australia,PASS,3,General Manager Transformation at Bupa Australia — C-Level executive at target insurer; may sponsor digital health initiatives.,digital-transformation
+d89e352cdddd,Nick Malham,New Ventures and AI Product Strategy,Medibank,WEAK,,New Ventures and AI Product Strategy at Medibank — innovation/tech role at insurer; may touch member-facing digital health tools.,digital-transformation
+2c580a91e11b,Annette King,Chair,HCF Australia,WEAK,,Chair at HCF Australia — board role; strategic influence but not operational decision-maker for health program tools.,digital-transformation
+52faa9da05f1,Lee-Helena Rosolen,Head of Performance,Mosh,WEAK,,Head of Performance at Mosh — senior role at target company; unclear if they own health program decisions.,weight-management
+c15e4aabc366,Ann K.,Regional Manager,HCF Australia,FAIL,,Regional Manager at HCF Australia — role not in FitXpress buying chain.,
+d94c047569eb,Rob Lackey,"General Manager, Ancillary Partnerships & Provider Operations",Bupa Australia,PASS,3,"General Manager, Ancillary Partnerships & Provider Operations at Bupa Australia — C-Level executive at target insurer; may sponsor digital health initiatives.",clinical-operations
+bc6d0f732cbb,Rafael Vasconcelos Silva,Data & Analytics Manager,Mosh,WEAK,,Data & Analytics Manager at Mosh — relevant role at digital health company; smaller orgs mean broader decision influence even at Manager level.,weight-management
+a9910244fd10,Samantha H.,Head of Delivery,HCF Australia,WEAK,,Head of Delivery at HCF Australia — senior role at target company; unclear if they own health program decisions.,preventive-health
+6569676b26fb,Rob Bakker,Head of Strategy and Development,Medibank,WEAK,,Head of Strategy and Development at Medibank — senior role at target company; unclear if they own health program decisions.,member-engagement
+070c3e9532d1,Alison Madden,Head of Internal Communications,Bupa Australia,FAIL,,Head of Internal Communications at Bupa Australia — Director-level non-health role at insurer; not in FitXpress buying chain.,
+a8f81f0b8769,Dean Burgess,"Head of Operations, Core Customer Systems",Medibank,PASS,2,"Head of Operations, Core Customer Systems at Medibank — health-relevant senior role at target company; potential FitXpress champion.",clinical-operations
+357081c059ba,Sarah McRae,Chief Executive Amplar Health Home Hospital,Amplar Health,PASS,3,Chief Executive Amplar Health Home Hospital at Amplar Health — executive role at target insurer; may influence digital health strategy.,digital-transformation
+e628ce7d7742,Leesa Devine,"Personal Assistant to Director (Dental, Optical & Hearing)",Bupa Australia,FAIL,,"Personal Assistant to Director (Dental, Optical & Hearing) at Bupa Australia — dental division role; explicitly excluded per hypothesis anti-cases.",
+cc756111c4f4,Crystal P.,Head of Product,HCF Australia,PASS,1,Head of Product at HCF Australia — product leadership owns digital health tool strategy.,digital-transformation
+88c4b882fa45,Built Varinporn Amporndanai,Medical Director InstantCosmetics,InstantScripts,PASS,1,Medical Director InstantCosmetics at InstantScripts — clinical/medical leadership role directly relevant to FitXpress telehealth and preventive health programs.,clinical-operations
+513470102cc0,Dan Anderson,Head of Digital Workplace Optimisation,Medibank,PASS,2,Head of Digital Workplace Optimisation at Medibank — health-relevant senior role at target company; potential FitXpress champion.,digital-transformation
+e5a866e65371,Mark Liberatore,Technology Domain Manager - MarTech,Bupa Australia,WEAK,,Technology Domain Manager - MarTech at Bupa Australia — innovation/tech role at insurer; may touch member-facing digital health tools.,digital-transformation
+759962915180,Don Raissis,Non Executive Director,Mosh,WEAK,,Non Executive Director at Mosh — board role; strategic influence but not operational decision-maker for health program tools.,digital-transformation
+48b0614177ae,Marco Bouman,"Head of Risk and Management Assurance, Healthcare & Strategy Division",Medibank,PASS,2,"Head of Risk and Management Assurance, Healthcare & Strategy Division at Medibank — health-relevant director at target company; potential program decision-maker.",compliance
+091b6938fd93,Katherine Rellos,"Director, External Communications at Bupa APAC",Bupa Australia,PASS,3,"Director, External Communications at Bupa APAC at Bupa Australia — executive role at target insurer; may influence digital health strategy.",digital-transformation
+4be7fce2e3d7,David Fletcher,Head of Enterprise Architecture,HCF Australia,WEAK,,Head of Enterprise Architecture at HCF Australia — director-level at target company; unclear health program ownership.,preventive-health
+1b1ce6ba4ff7,Lucy Turner,Cluster Manager,Bupa Australia,FAIL,,Cluster Manager at Bupa Australia — role not in FitXpress buying chain.,
+6b2b9facd9b4,Mel Anders,"Head of Contract & Supplier Management, Procurement",Bupa Australia,FAIL,,"Head of Contract & Supplier Management, Procurement at Bupa Australia — Director-level non-health role at insurer; not in FitXpress buying chain.",
+3b93937f4d67,Hayden Harris,Local Community Leader,Medibank,FAIL,,Local Community Leader at Medibank — role not in FitXpress buying chain.,
+f143d46254b8,Andrea Tuckey,Head of Provider Strategy,Medibank,WEAK,,Head of Provider Strategy at Medibank — senior role at target company; unclear if they own health program decisions.,member-engagement
+9e3872fd019d,Tushar Yadav,Medical Director,Mosh,PASS,1,Medical Director at Mosh — clinical/medical leadership role directly relevant to FitXpress telehealth and preventive health programs.,clinical-operations
+f967fd95f968,Tim Arvanitis,Head of Employee Technology Operations,Medibank,WEAK,,Head of Employee Technology Operations at Medibank — director at target company; may influence digital health tool decisions.,digital-transformation
+2bfafc40b442,Terry Agnew,Non Executive Director,HCF Australia,WEAK,,Non Executive Director at HCF Australia — board role; strategic influence but not operational decision-maker for health program tools.,digital-transformation
+07b8f5e80f6a,Claire Kinghorn,Head of Leadership,Medibank,WEAK,,Head of Leadership at Medibank — director-level at target company; unclear health program ownership.,preventive-health
+b25b111a0eed,Julie Andrews,Chief Officer Member Health,HCF Australia,PASS,3,Chief Officer Member Health at HCF Australia — executive role at target insurer; may influence digital health strategy.,digital-transformation
+0a75f483148f,Bridget Lodge,General Manager Health and Wellbeing,Bupa Australia,PASS,3,General Manager Health and Wellbeing at Bupa Australia — C-Level executive at target insurer; may sponsor digital health initiatives.,preventive-health
+e0e1e7cddb4d,Temple Connolly,Conversion Optimisation Manager - Acquisition & Growth,Bupa Australia,FAIL,,Conversion Optimisation Manager - Acquisition & Growth at Bupa Australia — role not in FitXpress buying chain.,
+e3f2f6fdedb6,Nicholas Gudde,Head of AI Strategy & Capability,Medibank,WEAK,,Head of AI Strategy & Capability at Medibank — senior role at target company; unclear if they own health program decisions.,digital-transformation
+5b39461cb204,Tianni Becker,Head of Operations,Bupa Australia,WEAK,,Head of Operations at Bupa Australia — senior role at target company; unclear if they own health program decisions.,clinical-operations
+07d9c6f489b6,Paul Baulch,Head of Property Development,Bupa Australia,FAIL,,Head of Property Development at Bupa Australia — Director-level non-health role at insurer; not in FitXpress buying chain.,
+1f93ff21cbaf,Amanda Hagan,Non Executive Director,HCF Australia,WEAK,,Non Executive Director at HCF Australia — board role; strategic influence but not operational decision-maker for health program tools.,digital-transformation
+b84fee2adcdd,Amanda Li,Branch Manager,HCF Australia,FAIL,,Branch Manager at HCF Australia — role not in FitXpress buying chain.,
+d82799e11062,Grant Davis,Chief Risk Officer,Bupa Australia,PASS,3,Chief Risk Officer at Bupa Australia — executive role at target insurer; may influence digital health strategy.,digital-transformation
+8034924e8ebc,Megan McNaughton,General Manager,Bupa Australia,PASS,3,General Manager at Bupa Australia — C-Level executive at target insurer; may sponsor digital health initiatives.,preventive-health
+d45b8963aabb,Lucy Foster,General Manager Hospital and Medical Partnerships,Bupa Australia,PASS,3,General Manager Hospital and Medical Partnerships at Bupa Australia — C-Level executive at target insurer; may sponsor digital health initiatives.,preventive-health
+2f8f5f3cb575,Peter Everingham,Non Executive Director and Chair of the Investment & Capital Committee,Medibank,WEAK,,Non Executive Director and Chair of the Investment & Capital Committee at Medibank — board role; strategic influence but not operational decision-maker for health program tools.,digital-transformation
+2bf343e44cbc,Liam Gilligan,Head of Innovation,HCF Australia,WEAK,,Head of Innovation at HCF Australia — senior role at target company; unclear if they own health program decisions.,digital-transformation
+60589cf5c3c9,Aifric Boylan,Chief Executive Officer,Qoctor,PASS,1,Chief Executive Officer at Qoctor — CEO/Founder at target company; ultimate decision-maker for new digital health partnerships.,digital-transformation
+914c91319432,Christopher Pettigrew,Head of HCF Research Foundation,HCF Australia,WEAK,,Head of HCF Research Foundation at HCF Australia — director-level at target company; unclear health program ownership.,preventive-health
+c34112cc6c5f,Helen O'Leary,Head of Procurement Operations,Medibank,FAIL,,Head of Procurement Operations at Medibank — Director-level non-health role at insurer; not in FitXpress buying chain.,
+3ca52cde437f,Daniel Tencic,Roving Maintenance Supervisor,Bupa Australia,WEAK,,Roving Maintenance Supervisor at Bupa Australia — innovation/tech role at insurer; may touch member-facing digital health tools.,digital-transformation
+9f034736862e,Havhisha B.,People and Culture Business Partner,HCF Australia,FAIL,,People and Culture Business Partner at HCF Australia — role not in FitXpress buying chain.,
+8eb8313be739,Michael S.,Head Of Internal Audit,Medibank,WEAK,,Head Of Internal Audit at Medibank — director-level at target company; unclear health program ownership.,preventive-health
+0d51300a04dd,Craig Muller,Head of Platform Services,HCF Australia,WEAK,,Head of Platform Services at HCF Australia — director-level at target company; unclear health program ownership.,preventive-health
+db0930ba1e2b,Frank Doyle,Head of Retention and Customer Value at Medibank,Medibank,PASS,2,Head of Retention and Customer Value at Medibank at Medibank — health-relevant senior role at target company; potential FitXpress champion.,member-engagement
+be0255c58dd8,Herbert Boshoff Van Der Merwe,Head of Actuarial - Health,HCF Australia,PASS,2,Head of Actuarial - Health at HCF Australia — health-relevant director at target company; potential program decision-maker.,preventive-health
+bd36214d8e8b,Gabriel Goh,Engineering Manager - Mobile,Medibank,FAIL,,Engineering Manager - Mobile at Medibank — role does not align with FitXpress buyer personas.,
+5a84c14e7b39,Sebastian Klich,"Chief Officer, Product & Diversified Business",HCF Australia,PASS,3,"Chief Officer, Product & Diversified Business at HCF Australia — executive role at target insurer; may influence digital health strategy.",digital-transformation
+67ca4e74ab08,Maya Rivis,"Senior Manager, Sustainability and Social Impact, Bupa",Bupa Australia,WEAK,,"Senior Manager, Sustainability and Social Impact, Bupa at Bupa Australia — innovation/tech role at insurer; may touch member-facing digital health tools.",digital-transformation
+bd671d175cac,Pearl Backhouse,Head of P&C Business Partnering,HCF Australia,WEAK,,Head of P&C Business Partnering at HCF Australia — director-level at target company; unclear health program ownership.,preventive-health
+0a15cb5a5117,Matt Thorley,Head of Cyber Threat Management,Bupa Australia,FAIL,,Head of Cyber Threat Management at Bupa Australia — security/cybersecurity role; not in FitXpress buying chain.,
+75bc1d030ff7,Andrew Van Elswyk,Head of Cyber Defence Centre,Bupa Australia,FAIL,,Head of Cyber Defence Centre at Bupa Australia — security/cybersecurity role; not in FitXpress buying chain.,
+a3dd9662196e,Harry S,Head of Identity and Access Management,Medibank,WEAK,,Head of Identity and Access Management at Medibank — director-level at target company; unclear health program ownership.,preventive-health
+154abb722588,Tim Silverton,Continuous Improvement/Transformation,Medibank,FAIL,,Continuous Improvement/Transformation at Medibank — role not in FitXpress buying chain.,
+3eeea6c35a50,Caitlin van den Berg,Head of Voice of Customer,Bupa Australia,PASS,2,Head of Voice of Customer at Bupa Australia — health-relevant director at target company; potential program decision-maker.,member-engagement
+4625ca6e1040,Maxim Sharshun,Chief Commercial Officer - Health,Bupa Australia,PASS,3,Chief Commercial Officer - Health at Bupa Australia — executive role at target insurer; may influence digital health strategy.,digital-transformation
+4303a373048a,Lisa McIntyre,Non Executive Director,Medibank,WEAK,,Non Executive Director at Medibank — board role; strategic influence but not operational decision-maker for health program tools.,digital-transformation
+ca4b297440b8,Liz Turner,Strategic People Partner,Bupa Australia,FAIL,,Strategic People Partner at Bupa Australia — role not in FitXpress buying chain.,
+2b13f0285e6a,Elisha Frenkel,Customer Engagement Manager,InstantScripts,WEAK,,Customer Engagement Manager at InstantScripts — customer-facing role at Manager level; potential internal champion for digital health tools.,member-engagement
+537e5743b570,Isabella Lynch,Chief of Staff,Bupa Australia,PASS,3,Chief of Staff at Bupa Australia — executive role at target insurer; may influence digital health strategy.,digital-transformation
+0427b401bd3f,Robyn Rushton,Branch Manager,HCF Australia,FAIL,,Branch Manager at HCF Australia — role not in FitXpress buying chain.,
+7f9d2eb6954f,Amanda Sim,Head of Transformation Delivery,Bupa Australia,WEAK,,Head of Transformation Delivery at Bupa Australia — director at target company; may influence digital health tool decisions.,digital-transformation
+ab582adaed16,Nick Bradley,"Head of Organic Strategy, Group Strategy",Medibank,WEAK,,"Head of Organic Strategy, Group Strategy at Medibank — director at target company; may influence digital health tool decisions.",member-engagement
+3e70bb4451d0,Trent Marsh,Operations Manager,Medibank,FAIL,,Operations Manager at Medibank — role does not align with FitXpress buyer personas.,
+70a10d49fe92,Gabriele Accadia,Group Property Strategic Planning and Leasing Manager,Medibank,FAIL,,Group Property Strategic Planning and Leasing Manager at Medibank — role not in FitXpress buying chain.,
+56729be91d56,Melissa Ironside,Head of Customer,InstantScripts,PASS,1,Head of Customer at InstantScripts — customer experience leader; FitXpress value prop maps to member engagement KPIs.,member-engagement
+6e4a6ea6f622,Sam Wijesinha,Product Owner,Bupa Australia,WEAK,,Product Owner at Bupa Australia — product role at insurer; may touch member-facing tools if relevant to health products.,digital-transformation
+cb5cbf6c8402,Eric Peterson,"Head of Experience Design, Research and Loyalty",HCF Australia,WEAK,,"Head of Experience Design, Research and Loyalty at HCF Australia — director at target company; commercial/design role not directly in health program decisions.",preventive-health
+78dfdbbe0c39,Joshua Hayward,Head of Internal Audit,Medibank,WEAK,,Head of Internal Audit at Medibank — director-level at target company; unclear health program ownership.,preventive-health
+510fca5f77bc,Claudia Wu,Head of Expansion (APAC),Mosh,WEAK,,Head of Expansion (APAC) at Mosh — senior role at target company; unclear if they own health program decisions.,weight-management
+6da007c15908,Gayle Kean,"Manager, Branch Operations",HCF Australia,FAIL,,"Manager, Branch Operations at HCF Australia — role does not align with FitXpress buyer personas.",
+887ecfbd9a18,Shahbaz Rana,Head of Engineering Enbalement,Bupa Australia,WEAK,,Head of Engineering Enbalement at Bupa Australia — director-level at target company; unclear health program ownership.,preventive-health
+3d5fd5488fa0,Malcolm Middleton,Head of IT Business Operations,HCF Australia,WEAK,,Head of IT Business Operations at HCF Australia — director-level at target company; unclear health program ownership.,clinical-operations
+c53eb563d9b8,Peter Schofield,"General Manager, Branch Network",HCF Australia,PASS,3,"General Manager, Branch Network at HCF Australia — C-Level executive at target insurer; may sponsor digital health initiatives.",preventive-health
+f449cb341166,Conan Chiles,Commercial & Pricing Manager,Bupa Australia,FAIL,,Commercial & Pricing Manager at Bupa Australia — role not in FitXpress buying chain.,
+f0898b2bbbf3,Angela Legg,People & Culture Business Partner,Medibank,FAIL,,People & Culture Business Partner at Medibank — role not in FitXpress buying chain.,
+e3d16b73397e,Ashleigh Clemmens (nee Costanzo),People Partner - GEO Transformation,Medibank,FAIL,,People Partner - GEO Transformation at Medibank — role not in FitXpress buying chain.,
+f5694e1345ac,Tanner Strickland,Chief of Staff to the CEO,HCF Australia,PASS,3,Chief of Staff to the CEO at HCF Australia — executive role at target insurer; may influence digital health strategy.,digital-transformation
+d02f198839d1,Julia Fowler,Head of Provider Solutions,Medibank,WEAK,,Head of Provider Solutions at Medibank — senior role at target company; unclear if they own health program decisions.,preventive-health
+c448d3fa0351,Jeff Hill,Head of Controls Mastery (Line 2 Risk & Compliance),Medibank,WEAK,,Head of Controls Mastery (Line 2 Risk & Compliance) at Medibank — director-level at target company; unclear health program ownership.,compliance
+36ecb206e4c6,Alana Russ,Finance Business Partner - ahm Health Insurance,Medibank,WEAK,,Finance Business Partner - ahm Health Insurance at Medibank — health-relevant but Individual Contributor level at large insurer lacks purchasing authority; internal champion potential.,compliance
+b75600d187ed,JULIEN D.,Head of Procurement Excellence,Bupa Australia,FAIL,,Head of Procurement Excellence at Bupa Australia — Director-level non-health role at insurer; not in FitXpress buying chain.,
+508e44e0d321,Elaine Matta,Quality Partner,Bupa Australia,FAIL,,Quality Partner at Bupa Australia — role not in FitXpress buying chain.,
+9b68ab7e3c4b,Ryan Ala,Digital Product Manager,Bupa Australia,WEAK,,Digital Product Manager at Bupa Australia — product role at insurer; may touch member-facing tools if relevant to health products.,digital-transformation
+76b288856066,Lucienne Flynn,IT Business Partner | Business Analyst,HCF Australia,FAIL,,IT Business Partner | Business Analyst at HCF Australia — role not in FitXpress buying chain.,
+e5d3beaa56e7,John Lim,Finance Business Partner - Amplar Health,Medibank,WEAK,,Finance Business Partner - Amplar Health at Medibank — health-relevant but Individual Contributor level at large insurer lacks purchasing authority; internal champion potential.,compliance
+3fe07c743614,Samantha Tonkin,Head Of Finance,Medibank,FAIL,,Head Of Finance at Medibank — Director-level non-health role at insurer; not in FitXpress buying chain.,
+1cc718fbb0cb,Nicola Geddes,Initiative Owner,Bupa Australia,FAIL,,Initiative Owner at Bupa Australia — role not in FitXpress buying chain.,
+a7a636ac0cd3,Chloe Mitchell (Harkness),Senior Manager - Group Strategy,Medibank,WEAK,,Senior Manager - Group Strategy at Medibank — business/strategy role at insurer; may touch digital health innovation but unclear decision authority.,member-engagement
+f662447c5254,Anoop Mohan,Program Director - Regulatory Uplift,Medibank,PASS,3,Program Director - Regulatory Uplift at Medibank — executive role at target insurer; may influence digital health strategy.,digital-transformation
+0f6cc94c297c,Conor Condell,Head of Program Management,Medibank,WEAK,,Head of Program Management at Medibank — director-level at target company; unclear health program ownership.,preventive-health
+1f740543ed2a,Deborah Jacobs,Customer Retention Principal,Bupa Australia,FAIL,,Customer Retention Principal at Bupa Australia — role not in FitXpress buying chain.,
+61a085711799,Crystal Townsend,Quality Education Manager,Bupa Australia,FAIL,,Quality Education Manager at Bupa Australia — role not in FitXpress buying chain.,
+c15cd1fcc94f,Rachael Harwood,Co-Chair RAISE Disability and Inclusion ERG,HCF Australia,WEAK,,Co-Chair RAISE Disability and Inclusion ERG at HCF Australia — innovation/tech role at insurer; may touch member-facing digital health tools.,digital-transformation
+6db82b0ea619,James Brigham,Head of Risk Management,HCF Australia,WEAK,,Head of Risk Management at HCF Australia — director-level at target company; unclear health program ownership.,compliance
+4a37e9b1d067,Kieran Dang,Chief Medical Officer,Mosh,PASS,1,Chief Medical Officer at Mosh — clinical/medical leadership role directly relevant to FitXpress telehealth and preventive health programs.,clinical-operations
+644e2440aad6,Simon Seiffert,Continuous Improvement & Systems Lead,Medibank,FAIL,,Continuous Improvement & Systems Lead at Medibank — role not in FitXpress buying chain.,
+7e868aabb8fb,Nicola Ivory,Squad Lead - Customer Health Navigator,Medibank,WEAK,,Squad Lead - Customer Health Navigator at Medibank — health-relevant but Manager level at large insurer lacks purchasing authority; internal champion potential.,member-engagement
+14889f87c08b,Paul Bonello,Head of Risk Medibank,Medibank,WEAK,,Head of Risk Medibank at Medibank — director-level at target company; unclear health program ownership.,compliance
+cfd53ee10fdb,Phillip L.,Property Design Delivery Manager,Bupa Australia,FAIL,,Property Design Delivery Manager at Bupa Australia — role not in FitXpress buying chain.,
+11971caa8ff3,Jon Chai,Loyalty Partnerships Manager,HCF Australia,FAIL,,Loyalty Partnerships Manager at HCF Australia — role not in FitXpress buying chain.,
+a80839b7b250,Jacqueline H.,Non Executive Director,Medibank,WEAK,,Non Executive Director at Medibank — board role; strategic influence but not operational decision-maker for health program tools.,digital-transformation
+12f24c9437e5,Melvin Kurian,Principal Architect,Bupa Australia,FAIL,,Principal Architect at Bupa Australia — role does not align with FitXpress buyer personas.,
+90fde53d053f,Ravikanth Kitchannagari,Branch Manager,HCF Eyecare,FAIL,,Branch Manager at HCF Eyecare — role not in FitXpress buying chain.,
+f12688f3f0e9,Mikaela Salazar,Clinic Coordinator,Bupa Australia,PASS,3,Clinic Coordinator at Bupa Australia — executive role at target insurer; may influence digital health strategy.,digital-transformation
+6d167df0063f,Liam Jansen,Head of Provider Analytics,Medibank,WEAK,,Head of Provider Analytics at Medibank — senior role at target company; unclear if they own health program decisions.,preventive-health
+1dadc520c1e5,Stuart Barnard,Head of Legal and Compliance/HCF Privacy Officer,HCF Australia,FAIL,,Head of Legal and Compliance/HCF Privacy Officer at HCF Australia — Director-level non-health role at insurer; not in FitXpress buying chain.,
+86701e26b5ee,Katerina Komis,Senior Subsidised Health Partnerships Manager,Medibank,WEAK,,Senior Subsidised Health Partnerships Manager at Medibank — health-relevant but Manager level at large insurer lacks purchasing authority; internal champion potential.,preventive-health
+eb8390d8e732,Simon Uzunovski,Director International & Corporate Portfolio,Bupa Australia,PASS,3,Director International & Corporate Portfolio at Bupa Australia — executive role at target insurer; may influence digital health strategy.,digital-transformation
+aeeccec026c6,Colin Ryan,Head of Business Operations - Technology APAC,Bupa Australia,WEAK,,Head of Business Operations - Technology APAC at Bupa Australia — director at target company; may influence digital health tool decisions.,digital-transformation
+c8d63152718f,Megan Bowen,HSW Partner,Medibank,FAIL,,HSW Partner at Medibank — role not in FitXpress buying chain.,
+7d4c86656b0d,Joanne Lee,Corporate Communications Manager,Bupa Australia,FAIL,,Corporate Communications Manager at Bupa Australia — role not in FitXpress buying chain.,
+80784e9467d4,Shannon Orbons,Blua Product Director,Bupa Australia,PASS,3,Blua Product Director at Bupa Australia — executive role at target insurer; may influence digital health strategy.,digital-transformation
+274f7b614180,Nicole Hibbert,Capability & Process Manager,Bupa Australia,FAIL,,Capability & Process Manager at Bupa Australia — role not in FitXpress buying chain.,
+75428cd32559,Shaikh Zama,Branch Manager,HCF Australia,FAIL,,Branch Manager at HCF Australia — role not in FitXpress buying chain.,
+6ca6caf30cf0,Margaret Canavan,Head of Customer Process Improvement,Medibank,PASS,1,Head of Customer Process Improvement at Medibank — customer experience leader; FitXpress value prop maps to member engagement KPIs.,member-engagement
+e00b642bf950,Anthony Joyce FIAA,Head of Capital and Reserving,Medibank,WEAK,,Head of Capital and Reserving at Medibank — director-level at target company; unclear health program ownership.,preventive-health
+155f54252571,Freya Peel,People and Culture Business Partner,HCF Australia,FAIL,,People and Culture Business Partner at HCF Australia — role not in FitXpress buying chain.,
+064690e5e400,Kylie Simpson,Executive Assistant to the Managing Director,Medibank,PASS,3,Executive Assistant to the Managing Director at Medibank — C-Level executive at target insurer; may sponsor digital health initiatives.,preventive-health
+16ab6654283a,Celine Dickson,General Manager - International Business,HCF Australia,PASS,3,General Manager - International Business at HCF Australia — C-Level executive at target insurer; may sponsor digital health initiatives.,preventive-health
+da04452949d7,Merima Ahmetasevic,Acting Quality Partner,Bupa Australia,FAIL,,Acting Quality Partner at Bupa Australia — role not in FitXpress buying chain.,
+5457ba588d66,Virpi Tuite,People & Culture Business Partner,HCF Australia,FAIL,,People & Culture Business Partner at HCF Australia — role not in FitXpress buying chain.,
+fdde7510efac,Aimee Mensink,Operational Excellence Partner,Bupa Australia,FAIL,,Operational Excellence Partner at Bupa Australia — role not in FitXpress buying chain.,
+d54f2eab57c7,Jason Leon,Branch Manager,HCF Australia,FAIL,,Branch Manager at HCF Australia — role not in FitXpress buying chain.,
+62a614936a96,Laurel Tennent,Territory Manager,Medibank,FAIL,,Territory Manager at Medibank — role not in FitXpress buying chain.,
+2ae7ee3c6b9d,Helen Saunders,Head of Commercial Performance,Medibank,WEAK,,Head of Commercial Performance at Medibank — senior role at target company; unclear if they own health program decisions.,preventive-health
+716c04208ef8,Natalie Nicoll,Head of Design,Medibank,WEAK,,Head of Design at Medibank — senior role at target company; unclear if they own health program decisions.,preventive-health
+c1534521b103,Will Mitchell,Head of Consumer Proposition,Medibank,WEAK,,Head of Consumer Proposition at Medibank — director-level at target company; unclear health program ownership.,preventive-health
+4ed58ad00256,Harry Robertson,Chief Financial Officer,HCF Australia,PASS,3,Chief Financial Officer at HCF Australia — C-Level executive at target insurer; may sponsor digital health initiatives.,compliance
+b2257a0698a6,Jeremy Dufner,Head of Work Architecture and Enablement,Medibank,WEAK,,Head of Work Architecture and Enablement at Medibank — director-level at target company; unclear health program ownership.,preventive-health
+a19f9657a53a,Marcos Faria-Silva,"Head of Legal - Technology, Procurement & Spaces",Medibank,FAIL,,"Head of Legal - Technology, Procurement & Spaces at Medibank — Director-level non-health role at insurer; not in FitXpress buying chain.",
+92f65dbd8c9e,Huy Nguyen,Data Scientist,Medibank,FAIL,,Data Scientist at Medibank — technology role without clear health program connection.,
+50b0c242b279,Roman Z.,Group Senior Manager • Strategy,Bupa Australia,WEAK,,Group Senior Manager • Strategy at Bupa Australia — business/strategy role at insurer; may touch digital health innovation but unclear decision authority.,member-engagement
+5a2688b07f83,Joslyn Swan,Practice Manager,Bupa Australia,FAIL,,Practice Manager at Bupa Australia — role not in FitXpress buying chain.,
+5c2352c0039f,Ben Liu,Analytics Manager - Payment Integrity,Medibank,FAIL,,Analytics Manager - Payment Integrity at Medibank — role not in FitXpress buying chain.,
+4445e3b8bb08,Sabrina Goldhahn,Head of Corporate Strategy,HCF Australia,WEAK,,Head of Corporate Strategy at HCF Australia — senior role at target company; unclear if they own health program decisions.,member-engagement
+1a2ab9918ea6,Naomi Hickey-Humble,Head of Legal Operations,Medibank,FAIL,,Head of Legal Operations at Medibank — Director-level non-health role at insurer; not in FitXpress buying chain.,
+45bbd5663195,Lance Harvey,Finance Business Partner,Medibank,FAIL,,Finance Business Partner at Medibank — role does not align with FitXpress buyer personas.,
+91eefedd2515,Michael Norton,Head of PHI Operations,Medibank,WEAK,,Head of PHI Operations at Medibank — director-level at target company; unclear health program ownership.,clinical-operations
+743a44e7a30e,Saroja McDonnell,"Head of Commercial, Delivery & Performance",Bupa Australia,WEAK,,"Head of Commercial, Delivery & Performance at Bupa Australia — senior role at target company; unclear if they own health program decisions.",preventive-health
+867ebcd02ec9,Kate T.,Employee Change & Communications Partner,Medibank,FAIL,,Employee Change & Communications Partner at Medibank — role not in FitXpress buying chain.,
+a9e1e281bef2,Bryant Da Silva,Head of Operations and Planning,HCF Australia,WEAK,,Head of Operations and Planning at HCF Australia — senior role at target company; unclear if they own health program decisions.,clinical-operations
+fb37cf43bbd0,Les Schilling,End User Services Manager,HCF Australia,FAIL,,End User Services Manager at HCF Australia — role not in FitXpress buying chain.,
+e01d3e86eb23,Brian Smith,Manager Growth and Engagement Overseas Partnerships,Medibank,FAIL,,Manager Growth and Engagement Overseas Partnerships at Medibank — role does not align with FitXpress buyer personas.,
+bb97317d1009,Gabor Devenyi,Continuous Delivery Manager,Bupa Australia,FAIL,,Continuous Delivery Manager at Bupa Australia — role not in FitXpress buying chain.,
+4c41a15bb45c,Lauren Bartlett,Integration Director,Bupa Australia,PASS,3,Integration Director at Bupa Australia — executive role at target insurer; may influence digital health strategy.,digital-transformation
+32baf45b3442,Natalie Lambie,Pharmacist in Charge,Bupa Australia,WEAK,,Pharmacist in Charge at Bupa Australia — frontline clinical role; limited program/strategy authority but health-adjacent; potential internal champion.,preventive-health
+edcbd19e871f,Andy Pavalache,VP of Customer,Mosh,PASS,1,VP of Customer at Mosh — customer experience leader; FitXpress value prop maps to member engagement KPIs.,member-engagement
+fe2bd25519b8,Phoebe Aluquin,Integrated Care Partnerships Manager,HCF Australia,WEAK,,Integrated Care Partnerships Manager at HCF Australia — health-relevant but Manager level at large insurer lacks purchasing authority; internal champion potential.,preventive-health
+4c8f3a5394d2,Jeremy Forrester,Chief Technology Officer,qoctor,PASS,2,Chief Technology Officer at qoctor — senior executive at digital health company; broad decision-making scope.,digital-transformation
+58e13d21703a,Charbel H.,Head of Financial Wellbeing,Medibank,PASS,2,Head of Financial Wellbeing at Medibank — health-relevant director at target company; potential program decision-maker.,preventive-health
+e1613fb96ad5,Bernadette Fallon,Head of Department,HCF Australia,WEAK,,Head of Department at HCF Australia — director-level at target company; unclear health program ownership.,preventive-health
+6ea29d706149,Peta Gale,Center Manager,Bupa Australia,FAIL,,Center Manager at Bupa Australia — role does not align with FitXpress buyer personas.,
+875f15ffca74,Andrew Kelson,Program Director,HCF Australia,PASS,3,Program Director at HCF Australia — executive role at target insurer; may influence digital health strategy.,digital-transformation
+32fb0878e319,Ang Diki Sherpa,Technology Application Owner - Clinical,Bupa Australia,WEAK,,Technology Application Owner - Clinical at Bupa Australia — health-relevant but Individual Contributor level at large insurer lacks purchasing authority; internal champion potential.,digital-transformation
+2de7df870412,Robin Low,Non Executive Director,HCF Australia,WEAK,,Non Executive Director at HCF Australia — board role; strategic influence but not operational decision-maker for health program tools.,digital-transformation
+7c207e9d6935,Sian McConnell,Director of Strategic Projects & Planning,Bupa Australia,PASS,3,Director of Strategic Projects & Planning at Bupa Australia — executive role at target insurer; may influence digital health strategy.,digital-transformation
+1dc1cfe24e40,David Given,Head of Planning and Reporting,Medibank,WEAK,,Head of Planning and Reporting at Medibank — director-level at target company; unclear health program ownership.,preventive-health
+e9705e5611f1,Sophie Dutton,Health Policy Manager,Medibank,PASS,1,Health Policy Manager at Medibank — directly owns health/preventive program design; strong FitXpress fit.,preventive-health
+b64bf90cbda3,Catherine Hallinan,Non Executive Director,HCF Australia,WEAK,,Non Executive Director at HCF Australia — board role; strategic influence but not operational decision-maker for health program tools.,digital-transformation
+13fd608c34cf,Katherine Howson,Clinical Technology Application Owner,Bupa Australia,WEAK,,Clinical Technology Application Owner at Bupa Australia — health-relevant but Individual Contributor level at large insurer lacks purchasing authority; internal champion potential.,digital-transformation
+f696621a0315,David Ung,Enterprise Architect - Healthcare,Bupa Australia,WEAK,,Enterprise Architect - Healthcare at Bupa Australia — health-relevant but Individual Contributor level at large insurer lacks purchasing authority; internal champion potential.,preventive-health
+212e92061c45,Peter Evans,"Finance Business Partner - JV and Invested Assets, Amplar Health",Medibank,WEAK,,"Finance Business Partner - JV and Invested Assets, Amplar Health at Medibank — health-relevant but Individual Contributor level at large insurer lacks purchasing authority; internal champion potential.",compliance
+34000611b9fa,Francesca Marney,People and Culture Business Partner,HCF Australia,FAIL,,People and Culture Business Partner at HCF Australia — role not in FitXpress buying chain.,
+e61247cf310d,Benjamin Ho,Head of Tax,Medibank,WEAK,,Head of Tax at Medibank — director-level at target company; unclear health program ownership.,preventive-health
+584d0b15a2e1,Gagan Sandhu,Product Owner,Bupa Australia,WEAK,,Product Owner at Bupa Australia — product role at insurer; may touch member-facing tools if relevant to health products.,digital-transformation
+d9d889ce49fb,Prue M.,Head of HealthStrong,Medibank,PASS,2,Head of HealthStrong at Medibank — health-relevant senior role at target company; potential FitXpress champion.,preventive-health
+c6e0e1cd3da2,Suja Pillai,Customer Support Manager,InstantScripts,WEAK,,Customer Support Manager at InstantScripts — relevant role at digital health company; smaller orgs mean broader decision influence even at Manager level.,weight-management
+357e5d60679e,Chris Carr,Cloud Security Architect,HCF Australia,FAIL,,Cloud Security Architect at HCF Australia — security/cybersecurity role; not in FitXpress buying chain.,
+d018a6e0c4d3,Catherine Conte,Head of Privacy Legal,Medibank,FAIL,,Head of Privacy Legal at Medibank — Director-level non-health role at insurer; not in FitXpress buying chain.,
+0bf47f9d444c,James Howgate,Provider Network Manager,Medibank,FAIL,,Provider Network Manager at Medibank — role does not align with FitXpress buyer personas.,
+30035d2e1c67,Judit Kovacs,National Manager Operational Excellence,Bupa Australia,FAIL,,National Manager Operational Excellence at Bupa Australia — role not in FitXpress buying chain.,
+41b6c063d359,Sarah Luff,Head of Remediation,Bupa Australia,WEAK,,Head of Remediation at Bupa Australia — director-level at target company; unclear health program ownership.,preventive-health
+6712fd48542c,Daniela M.,Manager,HCF Australia,FAIL,,Manager at HCF Australia — role does not align with FitXpress buyer personas.,
+ed9f763b94fc,Lisa Townsend,Branch Manager,HCF Australia,FAIL,,Branch Manager at HCF Australia — role not in FitXpress buying chain.,
+06638733130c,Eadaoin Doherty,Head of Product - Ventures,Medibank,PASS,1,Head of Product - Ventures at Medibank — product leadership owns digital health tool strategy.,digital-transformation
+6e81d1209f76,LEONARD MAPANGA,Business Adminstration Manager,Bupa Australia,FAIL,,Business Adminstration Manager at Bupa Australia — role not in FitXpress buying chain.,
+643c5d8e6dd6,Nicole Olaris,Group Reporting Manager,Medibank,FAIL,,Group Reporting Manager at Medibank — role not in FitXpress buying chain.,
+87aec047fcfd,Funda A.,MarTech Data Manager,Medibank,FAIL,,MarTech Data Manager at Medibank — role not in FitXpress buying chain.,
+e73e2e789185,Saul Lazar,Head of Legal - Providers,Medibank,FAIL,,Head of Legal - Providers at Medibank — Director-level non-health role at insurer; not in FitXpress buying chain.,
+e98fed67e2bc,Linda Hamlyn,Practice Manager,Medibank Health Solutions,FAIL,,Practice Manager at Medibank Health Solutions — role not in FitXpress buying chain.,
+af3a93a81cf8,Gurdeep Sodhi,Branch Manager,HCF Australia,FAIL,,Branch Manager at HCF Australia — role not in FitXpress buying chain.,
+c935f10e9439,Moran Eller O'Neill,Branch Manager,HCF Australia,FAIL,,Branch Manager at HCF Australia — role not in FitXpress buying chain.,
+94129b3bb4c1,Jasmine N.,Experience Design Manager,Bupa Australia,FAIL,,Experience Design Manager at Bupa Australia — role does not align with FitXpress buyer personas.,
+c5b73caf1992,Zakir S,Product Owner,HCF Australia,WEAK,,Product Owner at HCF Australia — product role at insurer; may touch member-facing tools if relevant to health products.,digital-transformation
+395e17088e34,Caitlin Clarke,"Employee Change and Communications Partner, Amplar Health",Medibank,WEAK,,"Employee Change and Communications Partner, Amplar Health at Medibank — health-relevant but Individual Contributor level at large insurer lacks purchasing authority; internal champion potential.",preventive-health
+905e876cb047,Suman Nadimpalli,Head of New Business Delivery,Medibank,WEAK,,Head of New Business Delivery at Medibank — director-level at target company; unclear health program ownership.,preventive-health
+7014a205aa1a,Andrew Carlson,Head of Customer channels,Medibank,PASS,1,Head of Customer channels at Medibank — customer experience leader; FitXpress value prop maps to member engagement KPIs.,member-engagement
+b011e8ca13b6,Tara Houkamau,Head of Wellbeing Legal,Medibank,PASS,1,Head of Wellbeing Legal at Medibank — directly owns health/preventive program design; strong FitXpress fit.,preventive-health
+5d81dca219c3,Dimitri Karatsas,Technology Lead,Medibank,FAIL,,Technology Lead at Medibank — role does not align with FitXpress buyer personas.,
+fa309fdce2cd,Julie Ellis,Branch Manager,HCF Australia,FAIL,,Branch Manager at HCF Australia — role not in FitXpress buying chain.,
+d3514df4b4d8,Radhika Chabbra,Principal Engineer,Medibank,FAIL,,Principal Engineer at Medibank — role not in FitXpress buying chain.,
+d24957d3cc29,Heidi Loureiro,Head of Portfolio Management - HI Growth,Bupa Australia,WEAK,,Head of Portfolio Management - HI Growth at Bupa Australia — senior role at target company; unclear if they own health program decisions.,member-engagement
+18a13c068c35,Henry Pando,IT Finance Procurement Partner,Medibank,FAIL,,IT Finance Procurement Partner at Medibank — role not in FitXpress buying chain.,
+c9f3fe4ebef2,Hakan Hurriyet,Program Director - Community Lead,HCF Australia,PASS,3,Program Director - Community Lead at HCF Australia — executive role at target insurer; may influence digital health strategy.,digital-transformation
+705be05233fd,Ahmed Umair Hassan,Integration Platform Architect,HCF Australia,FAIL,,Integration Platform Architect at HCF Australia — role not in FitXpress buying chain.,
+0e61595f1320,Jacqualine Le Gassick,Finance Business Partner,Medibank,FAIL,,Finance Business Partner at Medibank — role does not align with FitXpress buyer personas.,
+b4d93399ceb8,"Derek Yung, CFA",Head of Treasury & Investments,Medibank,WEAK,,Head of Treasury & Investments at Medibank — director-level at target company; unclear health program ownership.,preventive-health
+4f8d6091006a,Ambuj Jain,Decisioning Manager,Bupa Australia,FAIL,,Decisioning Manager at Bupa Australia — role not in FitXpress buying chain.,
+b3d48dbc8ca7,Sahilpreet Kaur,Care Manager,Bupa Australia,WEAK,,Care Manager at Bupa Australia — health-relevant but Manager level at large insurer lacks purchasing authority; internal champion potential.,preventive-health
+bd12f81355b5,Faiza Kazmi,Dentist,HCF Australia,FAIL,,Dentist at HCF Australia — role not in FitXpress buying chain.,
+51716f121bcc,Alvin Soo,Finance Partner - Amplar & Preventative Health (Secondment),Medibank,WEAK,,Finance Partner - Amplar & Preventative Health (Secondment) at Medibank — health-relevant but Individual Contributor level at large insurer lacks purchasing authority; internal champion potential.,compliance
+1c60bd8089ed,Craig Parker,Senior Manager - Customer Engagement Delivery,Bupa Australia,WEAK,,Senior Manager - Customer Engagement Delivery at Bupa Australia — customer-facing role at Manager level; potential internal champion for digital health tools.,member-engagement
+397d7d7728cd,Kate Tebbutt,Legal Director - Dental Optical Hearing and Property,Bupa Australia,FAIL,,Legal Director - Dental Optical Hearing and Property at Bupa Australia — dental division role; explicitly excluded per hypothesis anti-cases.,
+0f75093d2eb8,Gavin Harrison,Western Aust Medical Director,Medibank Health Solutions,PASS,1,Western Aust Medical Director at Medibank Health Solutions — clinical/medical leadership role directly relevant to FitXpress telehealth and preventive health programs.,clinical-operations
+1a6173e3b20c,Paul Wilson,Non Executive Director,InstantScripts,WEAK,,Non Executive Director at InstantScripts — board role; strategic influence but not operational decision-maker for health program tools.,digital-transformation
+d81ac7e86d9f,Karen Fallon,Manager Griffith NSW Branch,HCF Australia,FAIL,,Manager Griffith NSW Branch at HCF Australia — role does not align with FitXpress buyer personas.,
+a95237ac6c47,Carmen Bannan,Territory Manager,Medibank,FAIL,,Territory Manager at Medibank — role not in FitXpress buying chain.,
+fcfccf5334dc,Christopher Ong,Assistant Manager,Bupa Australia,FAIL,,Assistant Manager at Bupa Australia — role not in FitXpress buying chain.,
+68bf886501f6,Gaynor Anderson,Head of Overseas Portfolio and Proposition,Medibank,WEAK,,Head of Overseas Portfolio and Proposition at Medibank — director-level at target company; unclear health program ownership.,preventive-health
+e1ebf107e2eb,Laura Kane,Head of Legal - Customer,Medibank,FAIL,,Head of Legal - Customer at Medibank — Director-level non-health role at insurer; not in FitXpress buying chain.,
+19ec49f93089,Jackie Robinson,National Dental Director,Medibank Health Solutions,FAIL,,National Dental Director at Medibank Health Solutions — dental division role; explicitly excluded per hypothesis anti-cases.,
+937552edc2b6,Michael Allen,Finance Business Partner - Amplar Health Technology and Change (Projects),Medibank,WEAK,,Finance Business Partner - Amplar Health Technology and Change (Projects) at Medibank — health-relevant but Individual Contributor level at large insurer lacks purchasing authority; internal champion potential.,digital-transformation
+9c346bfafb4c,Emma Stroligo,People & Culture Business Partner,HCF Australia,FAIL,,People & Culture Business Partner at HCF Australia — role not in FitXpress buying chain.,
+38f23c948301,Senad Ameti,Principal Engineer,Medibank,FAIL,,Principal Engineer at Medibank — role not in FitXpress buying chain.,
+7d49f1d31362,Ilana Krasny,Business Practice Manager,Bupa Australia,FAIL,,Business Practice Manager at Bupa Australia — role not in FitXpress buying chain.,
+368044eb10fb,Weng Tak Poon,Chief Operations Officer,qoctor,PASS,2,Chief Operations Officer at qoctor — executive at digital health company; relevant to FitXpress.,clinical-operations
+8aa64d3e260f,Sai kulkarni,Test Manager,Bupa Australia,FAIL,,Test Manager at Bupa Australia — role not in FitXpress buying chain.,
+1fa16770332e,Luis Macedo,Experience Design Manager,Bupa Australia,FAIL,,Experience Design Manager at Bupa Australia — role does not align with FitXpress buyer personas.,
+dbc92896135d,Sophie Eddleston,Employee Change & Communications Partner,Medibank,FAIL,,Employee Change & Communications Partner at Medibank — role not in FitXpress buying chain.,
+2d6df33615f3,Edinson Mejia,Mobile Principal Engineer,Medibank,FAIL,,Mobile Principal Engineer at Medibank — role not in FitXpress buying chain.,
+13a5fe92e494,Cassandra Labrie,Territory Manager,Medibank,FAIL,,Territory Manager at Medibank — role not in FitXpress buying chain.,
+d6482b909592,Rishi Pasricha,Branch Manager,HCF Australia,FAIL,,Branch Manager at HCF Australia — role not in FitXpress buying chain.,
+308ab05644a5,Bruce McCoombe,Group Capital Works Manager,Medibank,FAIL,,Group Capital Works Manager at Medibank — role not in FitXpress buying chain.,
+ee378233cfa2,Daniel C.,Principal Engineer,Medibank,FAIL,,Principal Engineer at Medibank — role not in FitXpress buying chain.,
+8a1e58d74c5f,King H C.,Store Manager,Bupa Australia,FAIL,,Store Manager at Bupa Australia — role not in FitXpress buying chain.,
+bf9dcac7d7bf,Antoinette Knox,Branch Support Manager,HCF Australia,FAIL,,Branch Support Manager at HCF Australia — role not in FitXpress buying chain.,
+dc0690262127,Allina Inkster,Information Technology Business Partner,HCF Australia,FAIL,,Information Technology Business Partner at HCF Australia — role does not align with FitXpress buyer personas.,
+6cdf7cbf680d,Yasmeen Farukh,Head of Connected Health Portfolio,Medibank,PASS,1,Head of Connected Health Portfolio at Medibank — directly owns health/preventive program design; strong FitXpress fit.,preventive-health
+6cb021d9783c,lovepreet kaur,Practice Manager,HCF Australia,FAIL,,Practice Manager at HCF Australia — role not in FitXpress buying chain.,
+00c538ba15b6,Chris Kagiaros,People & Culture Business Partner,Medibank Private,FAIL,,People & Culture Business Partner at Medibank Private — role not in FitXpress buying chain.,
+26c414e0fb89,Elva Zhou,Assistant Manager,Medibank,FAIL,,Assistant Manager at Medibank — role not in FitXpress buying chain.,
+afedd00498d0,Mat Hudson,UXC Managed Services,Medibank,FAIL,,UXC Managed Services at Medibank — role does not align with FitXpress buyer personas.,
+6d5daa95be23,Steve Coleman,Business Improvement Manager,Medibank,FAIL,,Business Improvement Manager at Medibank — role not in FitXpress buying chain.,
+08e733fcddbb,Rebecca Simmons,manager,HCF,FAIL,,manager at HCF — role does not align with FitXpress buyer personas.,
+0931a35c1133,Sherry Green,"Product Manager, Primary Care Technology",Bupa Australia,WEAK,,"Product Manager, Primary Care Technology at Bupa Australia — health-relevant but Manager level at large insurer lacks purchasing authority; internal champion potential.",digital-transformation
+cd6613c0dd32,P S.,Case Manager,Medibank,FAIL,,Case Manager at Medibank — role does not align with FitXpress buyer personas.,
+d89ac747e1f6,Ke Lu,Assistant Manager,HCF Australia,FAIL,,Assistant Manager at HCF Australia — role not in FitXpress buying chain.,
+cc05aa56039e,Isaac Ho,Group Strategy Manager,Medibank,WEAK,,Group Strategy Manager at Medibank — business/strategy role at insurer; may touch digital health innovation but unclear decision authority.,member-engagement
+a92426a57644,Zeki Guler,Principal Engineer,Medibank,FAIL,,Principal Engineer at Medibank — role not in FitXpress buying chain.,
+5e863bbe0ebe,Julianne Kelly,Branch Manager,HCF Australia,FAIL,,Branch Manager at HCF Australia — role not in FitXpress buying chain.,
+f7a0eead6736,Deborah Gumley,Manager,Medibank,FAIL,,Manager at Medibank — role does not align with FitXpress buyer personas.,
+931dc8bdb8d1,GEORGE SAVVIDES,CEO,Medibank,PASS,3,CEO at Medibank — executive role at target insurer; may influence digital health strategy.,digital-transformation
+521bc1028186,Andrew Chang,CEO Head Quater,Medibank,PASS,3,CEO Head Quater at Medibank — executive role at target insurer; may influence digital health strategy.,digital-transformation
+b3e9bd1c08b0,Dayan Trott,Health Manager,Medibank Health Solutions,WEAK,,Health Manager at Medibank Health Solutions — relevant role but Manager level; may inform rather than make decisions.,preventive-health
+8b7b549e439f,Paul Higgs,Local Community Leader at Medibank,Medibank,FAIL,,Local Community Leader at Medibank at Medibank — role not in FitXpress buying chain.,
+65b57b1fe801,jennifer morris,Manager Ezipay,HCF,FAIL,,Manager Ezipay at HCF — role does not align with FitXpress buyer personas.,
+70d5c1d69521,Mithun Prem,Principal Engineer,Medibank,FAIL,,Principal Engineer at Medibank — role not in FitXpress buying chain.,
+59ff9b321b2b,Preet Gill,Retail Store Manager,Medibank,WEAK,,Retail Store Manager at Medibank — innovation/tech role at insurer; may touch member-facing digital health tools.,digital-transformation
+b230be3696e8,Noura Cheded,Call Centre Manager,HCF,FAIL,,Call Centre Manager at HCF — role not in FitXpress buying chain.,
+45979bea296b,Sarah Donato,Practice Manager,Medmate,WEAK,,Practice Manager at Medmate — relevant role at digital health company; smaller orgs mean broader decision influence even at Manager level.,weight-management
+3f064fc0ac61,Chance Chiera,Head of Payment Integrity,Medibank,WEAK,,Head of Payment Integrity at Medibank — director-level at target company; unclear health program ownership.,preventive-health
+8ea991b9f3e7,Dakshnamoorthy Rajendaran,API/Integration Principal Engineer,Medibank,FAIL,,API/Integration Principal Engineer at Medibank — role not in FitXpress buying chain.,
+7e256fba8445,Billy Lau,Product Manager,HCF Australia,WEAK,,Product Manager at HCF Australia — product role at insurer; may touch member-facing tools if relevant to health products.,digital-transformation
+5123065d0dd6,Julie Crawford,Director Of Operations,Medibank,PASS,3,Director Of Operations at Medibank — executive role at target insurer; may influence digital health strategy.,digital-transformation
+277ad99a1c7d,Robert Goaley,Non Ex Director,HCF,WEAK,,Non Ex Director at HCF — board role; strategic influence but not operational decision-maker for health program tools.,digital-transformation
+6d736e0ab9f0,Vi Pham,Partnership Manager,Medibank,FAIL,,Partnership Manager at Medibank — role does not align with FitXpress buyer personas.,
+e47237fccca9,Don Li,Business Develop Manager,Medibank,FAIL,,Business Develop Manager at Medibank — role does not align with FitXpress buyer personas.,
+cf3c42e77fae,Jason Sylver,Assistant Manager,Medibank,FAIL,,Assistant Manager at Medibank — role not in FitXpress buying chain.,
+27138e4c77d4,Peter Sandyford,Manager,HCF,FAIL,,Manager at HCF — role does not align with FitXpress buyer personas.,
+668fe550bcb0,Amanda Tonner,Team Leader,Medibank Health Solutions,FAIL,,Team Leader at Medibank Health Solutions — role not in FitXpress buying chain.,
+18e36d27c246,Jo Ramsbotham,Manager,HCF Australia,FAIL,,Manager at HCF Australia — role does not align with FitXpress buyer personas.,
+0ebe03aea940,Belinda Prior,Zone Manager Launceston,Medibank,FAIL,,Zone Manager Launceston at Medibank — role not in FitXpress buying chain.,
+e906c638065d,Gary Wishart,HSW Business Partner,Medibank,FAIL,,HSW Business Partner at Medibank — role not in FitXpress buying chain.,
+9e1fdb118272,carolyne spies,Business Support Manager,Medibank Health Solutions,FAIL,,Business Support Manager at Medibank Health Solutions — role not in FitXpress buying chain.,
+3ad300dea194,Jo-Ann McAllister,Practice Manager,HCF Australia,FAIL,,Practice Manager at HCF Australia — role not in FitXpress buying chain.,
+1aedc6cdfb2b,sheree scott,practice manager,HCF Australia,FAIL,,practice manager at HCF Australia — role not in FitXpress buying chain.,
+9f6f6ce1b810,Rebecca Hultink,practice manager,Medibank Health Solutions,FAIL,,practice manager at Medibank Health Solutions — role not in FitXpress buying chain.,
+3c1d15206ab7,Jackie Brandner,Practice manager,Medibank Health Solutions,FAIL,,Practice manager at Medibank Health Solutions — role not in FitXpress buying chain.,
+408d0a0222da,Linda Golub,Practice Manager,Medibank Health Solutions,FAIL,,Practice Manager at Medibank Health Solutions — role not in FitXpress buying chain.,
+b7b51530eb16,Tania Repovac,Zone Manager,Medibank,FAIL,,Zone Manager at Medibank — role not in FitXpress buying chain.,
+925ce9aaca4f,Jagath Ratnayake,Zone Manager,Medibank,FAIL,,Zone Manager at Medibank — role not in FitXpress buying chain.,
+d345300c029d,Garry Guff,Zone Manager,Medibank Private,FAIL,,Zone Manager at Medibank Private — role not in FitXpress buying chain.,
+b5d2ffb221d0,Leanne Cossart,Zone Manager,Medibank,FAIL,,Zone Manager at Medibank — role not in FitXpress buying chain.,
+84572961d6cb,Colin Dobson,Test Manager,Medibank Private,FAIL,,Test Manager at Medibank Private — role not in FitXpress buying chain.,
+baee65b954f0,Charlie Lee,branch manager,Medibank,FAIL,,branch manager at Medibank — role not in FitXpress buying chain.,
+38b2326fabf3,Dean Cashmore,Branch Manager,HCF Australia,FAIL,,Branch Manager at HCF Australia — role not in FitXpress buying chain.,
+303f41cfb642,Joe Hong,Retail Centre Manager,Medibank,WEAK,,Retail Centre Manager at Medibank — innovation/tech role at insurer; may touch member-facing digital health tools.,digital-transformation
+09b06a4f49f9,Sindi Sihana,Manager,HCF Australia,FAIL,,Manager at HCF Australia — role does not align with FitXpress buyer personas.,
+8d8f031b33dc,Marg Kilkeary,Regional Manager,Medibank Private,FAIL,,Regional Manager at Medibank Private — role not in FitXpress buying chain.,
+359a7c7a700f,Mez Hoy,Pharmacist,Medibank,WEAK,,Pharmacist at Medibank — frontline clinical role; limited program/strategy authority but health-adjacent; potential internal champion.,preventive-health
+5504ea510637,Andi Crowe,Manager,Medibank Private,FAIL,,Manager at Medibank Private — role does not align with FitXpress buyer personas.,
+d4b343ff6259,Grahame Ferguson,Nursing Manager,Medibank,WEAK,,Nursing Manager at Medibank — frontline clinical role; limited program/strategy authority but health-adjacent; potential internal champion.,preventive-health
+f521604ca5b5,Nancy Sun,Assistant Store Manager,Medibank,FAIL,,Assistant Store Manager at Medibank — role not in FitXpress buying chain.,
+b4821007da3c,Harry Walker,Management Team,Medibank,FAIL,,Management Team at Medibank — role not in FitXpress buying chain.,
+3ade3938b5be,Mary Robson,Practice Manager - Medibank Health Solutions,Medibank,WEAK,,Practice Manager - Medibank Health Solutions at Medibank — health-relevant but Manager level at large insurer lacks purchasing authority; internal champion potential.,preventive-health
+4e3fae0dc995,Brian Loo,General Manager Queensland,Medibank Private,PASS,3,General Manager Queensland at Medibank Private — C-Level executive at target insurer; may sponsor digital health initiatives.,preventive-health
+2451ec0b0b71,John Smith,Business Owner,Medibank,FAIL,,Business Owner at Medibank — role not in FitXpress buying chain.,
+d52fd0d412b5,John Panos,Territory Manager,Medibank,FAIL,,Territory Manager at Medibank — role not in FitXpress buying chain.,
+68992d4a6d6a,David Bass,Owner,Medibank Private,FAIL,,Owner at Medibank Private — role not in FitXpress buying chain.,
+0875e7edb91f,Sunita Prasad,Manager,HCF,FAIL,,Manager at HCF — role does not align with FitXpress buyer personas.,
+7a4986ef0dca,Alan Gormly,Regional Clinical Director,Medibank Health Solutions,PASS,1,Regional Clinical Director at Medibank Health Solutions — clinical/medical leadership role directly relevant to FitXpress telehealth and preventive health programs.,clinical-operations
+c22d4a963ee6,Julie Edwards,Business Projects - Change Management,Medibank Private,FAIL,,Business Projects - Change Management at Medibank Private — role not in FitXpress buying chain.,
+98f484275e3e,Mary Mowle,(Acting) Practice Manager,Medibank,FAIL,,(Acting) Practice Manager at Medibank — role not in FitXpress buying chain.,
+d5936c2d7a2a,Denise Rea,CX Division Manager,Medibank,WEAK,,CX Division Manager at Medibank — business/strategy role at insurer; may touch digital health innovation but unclear decision authority.,preventive-health
+902a92264a3e,colin Kilkolly,Manager,Medibank,FAIL,,Manager at Medibank — role does not align with FitXpress buyer personas.,
+94569ed62622,Amelia Griffith,Team Manager,Medibank Health Solutions,FAIL,,Team Manager at Medibank Health Solutions — role not in FitXpress buying chain.,
+ba40660a6159,Kate McConnon,National Medical Director,Medibank Health Solutions,PASS,1,National Medical Director at Medibank Health Solutions — clinical/medical leadership role directly relevant to FitXpress telehealth and preventive health programs.,clinical-operations
+949b7c51d18b,Michelle Bradbury,Manager,Bupa Australia,FAIL,,Manager at Bupa Australia — role does not align with FitXpress buyer personas.,
+e863693f50de,gary farlow,Team manager,Medibank Health Solutions,FAIL,,Team manager at Medibank Health Solutions — role not in FitXpress buying chain.,
+daf5487a18d0,Debbie Carter,Manager,Medibank,FAIL,,Manager at Medibank — role does not align with FitXpress buyer personas.,
+2fa835ba0ee5,Findlay Blyth,Team Manager,Medibank Private,FAIL,,Team Manager at Medibank Private — role not in FitXpress buying chain.,
+3a05cf3d7a60,dolly sudan,Manager,HCF Australia,FAIL,,Manager at HCF Australia — role does not align with FitXpress buyer personas.,
+4597115c1cf3,Leonie Barritt,Retail Centre Manager Bundaberg,Medibank,WEAK,,Retail Centre Manager Bundaberg at Medibank — innovation/tech role at insurer; may touch member-facing digital health tools.,digital-transformation
+9b509c815027,elena Kourbakova,manager,HCF,FAIL,,manager at HCF — role does not align with FitXpress buyer personas.,
+3cd2a9e2e0f0,Anna Moras,"Assistant to the General Manger, Business Projects",Medibank Private,FAIL,,"Assistant to the General Manger, Business Projects at Medibank Private — role not in FitXpress buying chain.",
+91fca56e421d,Tanja Santangelo,Manager,Medibank,FAIL,,Manager at Medibank — role does not align with FitXpress buyer personas.,
+8d5db30034dd,Greg Radford,Outbound Services Manager,Medibank Private,FAIL,,Outbound Services Manager at Medibank Private — role not in FitXpress buying chain.,
+012f190b5ac8,Tricia Pincini,Manager,Medibank Health Solutions,FAIL,,Manager at Medibank Health Solutions — role does not align with FitXpress buyer personas.,
