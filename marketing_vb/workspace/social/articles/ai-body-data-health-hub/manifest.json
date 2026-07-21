@@ -1,0 +1,92 @@
+{
+  "article": {
+    "slug": "ai-body-data-health-hub",
+    "title": "AI Body Data in Healthcare: A Guide to Verified Body Measurement Across Health Programs",
+    "product": "fitxpress",
+    "date": "2026-07-20"
+  },
+  "profiles": [
+    {
+      "profile_id": "twitter-company",
+      "platform": "twitter",
+      "handle": "@3DLOOK",
+      "post_file": "twitter-company/post.md",
+      "status": "ready",
+      "character_count_body": 256,
+      "format": "text"
+    },
+    {
+      "profile_id": "instagram-company",
+      "platform": "instagram",
+      "handle": "@3dlook.ai",
+      "post_file": "instagram-company/post.md",
+      "status": "ready",
+      "character_count_body": 950,
+      "format": "text+photo"
+    },
+    {
+      "profile_id": "facebook-company",
+      "platform": "facebook",
+      "handle": "3DLOOK",
+      "post_file": "facebook-company/post.md",
+      "status": "ready",
+      "character_count_body": 1120,
+      "format": "text+photo"
+    },
+    {
+      "profile_id": "linkedin-company",
+      "platform": "linkedin",
+      "handle": "3DLOOK",
+      "post_file": "linkedin-company/post.md",
+      "status": "ready",
+      "character_count_body": 1680,
+      "format": "text+photo"
+    },
+    {
+      "profile_id": "linkedin-katerina",
+      "platform": "linkedin",
+      "handle": "Katerina Galich",
+      "post_file": "linkedin-katerina/post.md",
+      "status": "ready",
+      "character_count_body": 1280,
+      "format": "text+photo"
+    },
+    {
+      "profile_id": "linkedin-vadim",
+      "platform": "linkedin",
+      "handle": "Vadim Bilan",
+      "post_file": "linkedin-vadim/post.md",
+      "status": "ready",
+      "character_count_body": 1380,
+      "format": "text+photo"
+    },
+    {
+      "profile_id": "linkedin-nick",
+      "platform": "linkedin",
+      "handle": "Nick Omelchak",
+      "post_file": "linkedin-nick/post.md",
+      "status": "ready",
+      "character_count_body": 1240,
+      "format": "text+photo"
+    },
+    {
+      "profile_id": "linkedin-olena",
+      "platform": "linkedin",
+      "handle": "Olena Kudryavtseva",
+      "post_file": "linkedin-olena/post.md",
+      "status": "ready",
+      "character_count_body": 1290,
+      "format": "text+photo"
+    },
+    {
+      "profile_id": "linkedin-katya",
+      "platform": "linkedin",
+      "handle": "Katya Boychuk",
+      "post_file": "linkedin-katya/post.md",
+      "status": "ready",
+      "character_count_body": 1400,
+      "format": "text+photo"
+    }
+  ],
+  "ready_for_review": true
+}
