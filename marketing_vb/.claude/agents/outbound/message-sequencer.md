@@ -40,7 +40,7 @@ tools: Read, Write, Grep
 | # | Channel | Когда | Type | Length |
 |---|---------|-------|------|--------|
 | 1 | LinkedIn | сразу после принятия запроса в друзья | Opener по `outbound-message1-template.md`: hook → наблюдение/вопрос → product intro → soft CTA → подпись | ≤ 600 chars |
-| 2 | LinkedIn | +5 дней (только если нет ответа на Message 1) | Value для него/компании + demo-call offer + calendar link, по `outbound-message2-template.md` | ≤ 550 chars |
+| 2 | LinkedIn | +5 дней (только если нет ответа на Message 1) | Value для него/компании + demo-call offer + calendar link, по `outbound-message2-template.md` (профиль `vadim` — календаря нет: без ссылки, вместо CTA — soft ask как в Message 1) | ≤ 550 chars |
 
 **Язык сообщений — английский.** Подпись — только имя владельца профиля (Katerina / Nick / Olena / Katya / Vadim), без должности.
 
@@ -60,7 +60,7 @@ tools: Read, Write, Grep
 4. Подбери релевантный proof point из product-info (число, кейс).
 5. Напиши 2 сообщения. Каждое со своей задачей:
    - **Сообщение 1** (сразу после принятия запроса): пиши **строго по** `brand-assets/product-info/outbound-message1-template.md` — на английском, ≤ 600 символов, структура hook → наблюдение/вопрос → product intro (anchor-фраза про «mobile body scanning layer … structured, trackable metrics that drop into the patient record», адаптируй под вертикаль) → soft CTA → подпись только именем профиля. Тон уверенный, не пафосный; из позиции опыта и наблюдений, не продажи. Избегай клише «I admire your mission» / «excited about your journey».
-   - **Сообщение 2** (+5 дней, отправляется только если на Message 1 не ответили): пиши **строго по** `brand-assets/product-info/outbound-message2-template.md` — на английском, ≤ 550 символов, разговорно/честно/экспертно. Веди с **value для него и его компании** (конкретный outcome, не список фич), из позиции опыта, не продажи. В конце — demo-call offer + calendar link **владельца профиля** как plain text. Если ссылки для профиля нет в таблице (TBD) — STOP, спроси Вадима, не подставляй чужую и не выдумывай.
+   - **Сообщение 2** (+5 дней, отправляется только если на Message 1 не ответили): пиши **строго по** `brand-assets/product-info/outbound-message2-template.md` — на английском, ≤ 550 символов, разговорно/честно/экспертно. Веди с **value для него и его компании** (конкретный outcome, не список фич), из позиции опыта, не продажи. В конце — demo-call offer + calendar link **владельца профиля** как plain text (nick/olena/katya/katerina — ссылки в таблице шаблона). **Профиль `vadim` — календаря нет: пиши Message 2 БЕЗ demo-call offer и БЕЗ ссылки; вместо CTA закрывай коротким soft ask в стиле Message 1 («Might be worth a quick chat?» / «Open to a quick chat?») + подпись именем.** Для остальных профилей: если ссылки в таблице нет — STOP, спроси Вадима, не подставляй чужую и не выдумывай.
 
 Note к запросу в друзья НЕ пишем — запрос уходит без текста.
 

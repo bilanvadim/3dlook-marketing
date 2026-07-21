@@ -31,13 +31,13 @@ owner: Vadim
 
 ## Purpose
 
-The follow-up after silence. **Lead with the value we can bring to them and their company**: a concrete outcome for their world, grounded in what we've seen in their vertical, not a feature list. Frame from experience and observation, not selling. Close with a **demo-call offer + calendar link**.
+The follow-up after silence. **Lead with the value we can bring to them and their company**: a concrete outcome for their world, grounded in what we've seen in their vertical, not a feature list. Frame from experience and observation, not selling. Close with a **demo-call offer + calendar link** (the sending profile's own link). **Exception: the `vadim` profile has no calendar account, so instead of the demo-call offer + calendar link it closes with a short soft conversational ask (same style as Message 1: "Might be worth a quick chat?"), then the signature. No calendar link.**
 
 ## Structure (in this order)
 
 1. `Hi {first_name},` (a light re-touch is fine; this is a follow-up, keep it natural).
 2. **One or two sentences of concrete value** for them / their company: the outcome we help with, tied to their vertical and the campaign hypothesis. This is the core of the message.
-3. **Demo-call offer + calendar link** as **plain text** (the sending profile's link, from the table below). Keep the offer short ("Worth 15 min?", "Grab a slot:").
+3. **Demo-call offer + calendar link** as **plain text** (the sending profile's link, from the table below). Keep the offer short ("Worth 15 min?", "Grab a slot:"). **`vadim` profile only: no calendar link. Replace this with a short soft conversational ask in Message 1 style ("Might be worth a quick chat?", "Open to a quick chat?", "Worth a quick chat to explore?"), then the signature.**
 4. **Signature**: first name only.
 
 ## Calendar links (per profile): use the SENDING profile's link
@@ -45,12 +45,12 @@ The follow-up after silence. **Lead with the value we can bring to them and thei
 | profile | calendar link |
 |---------|---------------|
 | katerina | https://meetings.hubspot.com/katerina-galich |
-| nick | TBD (ask Vadim) |
-| olena | TBD (ask Vadim) |
-| katya | TBD (ask Vadim) |
-| vadim | TBD (ask Vadim) |
+| nick | https://meetings.hubspot.com/nick-omelchak |
+| olena | https://meetings.hubspot.com/olena-kudriavtseva |
+| katya | https://meetings.hubspot.com/kateryna-boichuk |
+| vadim | **none — no calendar account. Use a soft ask instead of the CTA (see below).** |
 
-**If the sending profile's link is TBD → STOP and ask Vadim.** Never reuse another person's link, never invent one. Insert the link as plain text (no markdown, no shortener).
+**`vadim` has no calendar: write his Message 2 WITHOUT the demo-call offer and WITHOUT a calendar link. Instead close with a short soft conversational ask in Message 1 style ("Might be worth a quick chat?"), then the first-name signature (structure step 3).** For every other profile, insert its own link as plain text (no markdown, no shortener); never reuse another person's link, never invent one. If a listed link is ever blank/missing → STOP and ask Vadim.
 
 ## Example (Katerina)
 ```
