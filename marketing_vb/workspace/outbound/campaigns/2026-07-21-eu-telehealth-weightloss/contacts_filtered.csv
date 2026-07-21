@@ -1,0 +1,307 @@
+person_id,first_name,last_name,full_name,title,company,country,classification,angle
+73af335b082f,Rami,Madanat,Rami Madanat,Head of Hip and Knee Arthroplasty Centers,Terveystalo,Finland,WEAK,clinical-operations
+a386fb28de4b,Dr. med. Jan-Christoph,Loh,Dr. med. Jan-Christoph Loh,Medical Director,Wellster Healthtech Group,Germany,PASS_P1,weight-management
+8e51f1bae1f6,Anne,Blom,Anne Blom,"Development Director, Digital Development",Terveystalo,Finland,PASS_P3,digital-transformation
+bfeadd4cbfb7,Jari,Haapaniemi,Jari Haapaniemi,MD,Terveystalo,Finland,WEAK,preventive-health
+1c5e2a99f1b9,Markus,Oor,Markus Oor,COO,Dr.Dropin,Sweden,PASS_P3,virtual-care
+53e62be75de5,Ville,Iho,Ville Iho,President & CEO,Terveystalo,Finland,PASS_P3,digital-transformation
+41a92bac1c6e,Paivi,Manni-Pettersson,Paivi Manni-Pettersson,Registered Dietitian,"Terveystalo Forssa + Turku Aininkainen",Finland,WEAK,weight-management
+5df0c54f4d9f,Mikko,Soini,Mikko Soini,"VP, Strategy & TMO",Terveystalo,Finland,PASS_P3,digital-transformation
+095091c0c4ba,Beate,Muller,Beate Muller,Interim VP Operations,Oviva,Germany,PASS_P2,clinical-operations
+f7d30ea076c0,Pekka,Manninen,Pekka Manninen,Commercial Director,Terveystalo,Finland,PASS_P3,digital-transformation
+75c2ada2f07c,Petter,Lade,Petter Lade,Chief Financial Officer,Dr.Dropin,Norway,PASS_P3,virtual-care
+7ae06ff7c485,Ville,Mujunen,Ville Mujunen,"Director, Technology Innovation",Terveystalo,Finland,PASS_P3,digital-transformation
+63803702f9a6,Simo,Taimela,Simo Taimela,Chief Epidemiologist,Terveystalo,Finland,WEAK,preventive-health
+94e1cc3a3bef,Riina-Riitta,Helminen,Riina-Riitta Helminen,Chief Administrative Physician & Director Clinical Research,Terveystalo,Finland,PASS_P3,clinical-operations
+83b20c22e555,Minna,Suonio,Minna Suonio,Business Director,Terveystalo,Finland,WEAK,digital-transformation
+10941934e16e,Francois,Cassette,Francois Cassette,Member of the Board,Doktr,Belgium,WEAK,virtual-care
+657d5cc9d222,Alex,Hill,Alex Hill,Director of Product Marketing,Sidekick Health,Germany,WEAK,member-engagement
+97d3a8a8f9e6,Martin,Eberhart,Martin Eberhart,Chief Commercial Officer,Doctor.One,Germany,PASS_P3,virtual-care
+46fe6eacfb14,Martin,Moller Paarse,Martin Moller Paarse,Chief Executive Officer,Liva Healthcare,Denmark,PASS_P2,weight-management
+91034ab8d350,Travis,Parkinson,Travis Parkinson,"President, Commercial - Healthcare & Life Sciences and Rx",Sidekick Health,Switzerland,PASS_P2,weight-management
+d11e77b84f5b,Maija,Savolainen-Koskinen,Maija Savolainen-Koskinen,"Head of Digital Products, Individual Customers / B2C",Terveystalo,Finland,PASS_P3,digital-transformation
+43d87e583b76,Petri,Castren,Petri Castren,Board Member,Terveystalo,Finland,WEAK,
+c592a1b7b980,Riina,Monthan,Riina Monthan,"Director, New Specialities",Terveystalo,Finland,PASS_P3,digital-transformation
+8c52918f1c78,Jan,Van Wijnendaele,Jan Van Wijnendaele,Managing Director,Doktr,Belgium,PASS_P2,virtual-care
+941b9dad5ca5,Kobus,Dijkhorst,Kobus Dijkhorst,"CEO, shareholder",Nederlandse Obesitas Kliniek,Netherlands,PASS_P2,weight-management
+50026de94c97,Astrid,Ebeling,Astrid Ebeling,Director Public Sector Sales,Terveystalo,Finland,WEAK,
+d1da318e666e,Julia,Venesmaa,Julia Venesmaa,"Development Director, TMO & Strategy",Terveystalo,Finland,PASS_P3,digital-transformation
+47573e9b773b,Harald,Oyen,Harald Oyen,Styremedlem,Edda.ai,Norway,WEAK,
+892b5247631d,Karla,Martinez Majander,Karla Martinez Majander,"Director I Brand, CX, Marketing & Digital Sales",Terveystalo,Finland,WEAK,member-engagement
+ce94d223e3fc,Kenneth,Jensen,Kenneth Jensen,Chief Product & Technology Officer (CPTO),Liva Healthcare,Denmark,PASS_P2,member-engagement
+89a2e09246a9,Jonas,Vig,Jonas Vig,CEO,Min Doktor,Sweden,PASS_P2,virtual-care
+54e68bc7bcb0,Riikka,Sinkkonen,Riikka Sinkkonen,Head of Insurance Business Development,Terveystalo,Finland,PASS_P3,digital-transformation
+4f3c9879508c,Hilkka,Jakola,Hilkka Jakola,Business Director,Terveystalo,Finland,WEAK,digital-transformation
+c1a150f2c808,Aebischer,Olivier,Aebischer Olivier,Product Owner,Medgate Switzerland,Switzerland,WEAK,virtual-care
+604db13a18ea,Erin,McLaine,Erin McLaine,Growth Product Director,Oviva,Germany,PASS_P2,member-engagement
+ecfdef3aa980,Anne,Salonen,Anne Salonen,"Product Owner, Care Paths & Surveys",Terveystalo,Finland,WEAK,digital-transformation
+55a24bf2692a,Krzysztof,Seweryn,Krzysztof Seweryn,Member of The Supervisory Board,Holi,Poland,WEAK,
+b1ec3353d0b1,Sanna,Huttunen,Sanna Huttunen,"Vice President, Digital Development",Terveystalo,Finland,PASS_P3,digital-transformation
+c14b85bbb2f2,Semra,Krasniqi,Semra Krasniqi,Product Owner,hellocare.ai,Kosovo,WEAK,virtual-care
+50ee5d668e30,Sylvie,Nhansana,Sylvie Nhansana,CEO at Qare,Qare,France,PASS_P2,virtual-care
+25cf8b2a6592,Jenni,Rundgren,Jenni Rundgren,Product Owner,Terveystalo,Finland,WEAK,digital-transformation
+df10fabd6abd,Henrik,E.,Henrik E.,"Managing Director, Sidekick Health Germany/Rx",Sidekick Health,Germany,PASS_P2,weight-management
+62540cc9c9c8,Antti,H.,Antti H.,Product Owner,Terveystalo,Finland,WEAK,digital-transformation
+92a030875699,Teemu,Hakkarainen,Teemu Hakkarainen,Product Owner,Terveystalo,Finland,WEAK,digital-transformation
+a4c62488d23f,Tuuli,Tervaskanto,Tuuli Tervaskanto,"Director, Corporate and Public Health, Large Account Sales",Terveystalo,Finland,PASS_P3,preventive-health
+cad41cf85e10,Tiina,Harkonen,Tiina Harkonen,Head of Mental Health Services,Terveystalo,Finland,WEAK,clinical-operations
+a2c7421bb8f7,Tiina,Tissari,Tiina Tissari,"Senior Vice President; Consumer, Insurance and Specialty businesses",Terveystalo,Finland,PASS_P3,digital-transformation
+996ac95a3cbf,Petri,Maenkoski,Petri Maenkoski,Owner,Iin Hyvinvointi ja Terveystalo Oy,Finland,WEAK,preventive-health
+aea7d5a2b470,Arindam,"Ghosh, PhD","Arindam Ghosh, PhD",Vice President AI,Oviva,Germany,PASS_P3,digital-transformation
+d83d3eaee0e3,Niki,Kotilainen,Niki Kotilainen,Senior Vice President Operations / COO Healthcare Services,Terveystalo,Finland,PASS_P3,clinical-operations
+649c487597a5,Mikko,Rantasalo,Mikko Rantasalo,"MD,PhD",Terveystalo,Finland,WEAK,clinical-operations
+7acf988274a5,Pekka,Roto,Pekka Roto,Chief Medical Officer,Suomen Terveystalo OYJ,Finland,PASS_P3,clinical-operations
+6efe0767d5b8,Albert,Castells,Albert Castells,Founder & Co-Ceo (Board Member),Doctor i,Spain,PASS_P2,virtual-care
+fbbbacb60a5a,Rob,Reintjens,Rob Reintjens,Director and co-owner,The Body Clinic,Netherlands,PASS_P2,weight-management
+1528e31fdecd,Klaus,Mitterer,Klaus Mitterer,CFO,Oviva,Germany,PASS_P3,weight-management
+24c66f7271ef,Martin,Lindman,Martin Lindman,Founder/CEO,Doktor.se,Sweden,PASS_P2,virtual-care
+8d1a09af140e,"Olafur ""Oli""",Viggosson,"Olafur ""Oli"" Viggosson",CPTO,SidekickHealth,Iceland,PASS_P2,member-engagement
+3649a1d18d5a,Riitta,Lassila,Riitta Lassila,Regional Director,Terveystalo,Finland,WEAK,clinical-operations
+ed8ca82cf094,Petri,Lempiainen,Petri Lempiainen,Director,Suomen Terveystalo Oyj,Finland,WEAK,digital-transformation
+a2ba2b4cca5a,Kai,Eberhardt,Kai Eberhardt,Co-Founder & CEO,Oviva,Switzerland,PASS_P2,weight-management
+cb0603704e34,JW,Greve,JW Greve,Doctor and Medical Director Weight Doctors Nederland,"Weight Doctors Nederland, Quole Medical Center",Netherlands,PASS_P1,weight-management
+69fd0805bb76,Tommi,Rasi,Tommi Rasi,Head of Psychology,Terveystalo,Finland,WEAK,clinical-operations
+5575679b51c4,Andrine,Forsen Bisbo,Andrine Forsen Bisbo,Chief Medical Officer,Hjemmelegene,Norway,PASS_P2,virtual-care
+76a6bb17ccc2,Marko,Gronholm,Marko Gronholm,Head of Physiotherapy,Terveystalo,Finland,WEAK,clinical-operations
+6376d17af2f2,Dr. Anna,Haas,Dr. Anna Haas,Chief Commercial Officer,Oviva,Germany,PASS_P2,weight-management
+d2d3c4e9fb24,Sami,Leppamaki,Sami Leppamaki,Head of Psychiatry and Addiction Medicine,Terveystalo,Finland,WEAK,clinical-operations
+1e9d1b955ff2,Jan,Verho,Jan Verho,Registered Dietitian,Terveystalo,Finland,WEAK,weight-management
+17f30de788b6,Mari,Takari,Mari Takari,Product owner,Terveystalo,Finland,WEAK,digital-transformation
+1c3e30c1fe2f,Sami,Hyttinen,Sami Hyttinen,Product Owner,Terveystalo,Finland,WEAK,digital-transformation
+3438b3e2f867,Marjo,Hellstrom,Marjo Hellstrom,Product Owner,Terveystalo,Finland,WEAK,digital-transformation
+8f00e634ac3e,Kristoffer,Ingebrigtsen,Kristoffer Ingebrigtsen,CEO & Co-Founder,Dr.Dropin,Norway,PASS_P2,virtual-care
+fe3ec52942df,Tommi,Qvick,Tommi Qvick,Unit Director,Suomen Terveystalo Oyj,Finland,WEAK,clinical-operations
+01a80bd75e6d,Heini,Rauhamaa,Heini Rauhamaa,Development Director,Terveystalo,Finland,PASS_P3,digital-transformation
+0b333e3879d2,Francois-Xavier,TRANCART,Francois-Xavier TRANCART,CEO & Co-founder,Annette,France,PASS_P2,virtual-care
+7675267ef80b,Esa,Ruuskanen,Esa Ruuskanen,Tyoterveyslaakari,Terveystalo,Finland,WEAK,preventive-health
+fc261f12300e,Antti,Vakeva,Antti Vakeva,Occupational Health Physician,Terveystalo,Finland,WEAK,preventive-health
+ccc53c316b5c,Ritva,Mela,Ritva Mela,Account Director,Terveystalo,Finland,WEAK,preventive-health
+cece11d2b27f,Nora,Guthe,Nora Guthe,Chief Operating Officer,Dr.Dropin Psykologi,Norway,PASS_P3,virtual-care
+2f8264e0c0f7,Markku,Partinen,Markku Partinen,Medical Director Sleep Medicine,Terveystalo,Finland,WEAK,clinical-operations
+ea27d7cbd61f,Etienne,Haddad,Etienne Haddad,Chief Operations Officer,myDiabby Healthcare,France,PASS_P3,virtual-care
+39edbdf0e8d4,Luisa,Gerstner,Luisa Gerstner,VP Growth Marketing,Oviva,Switzerland,WEAK,member-engagement
+bf18498ba1d6,Pauli,Vettenranta,Pauli Vettenranta,"Product Owner, Digital Development",Terveystalo,Finland,WEAK,digital-transformation
+a9264ba00749,Hanna,Tohtua,Hanna Tohtua,Product Owner,Terveystalo,Finland,WEAK,digital-transformation
+b0e8979cc740,Boukje,Zijlstra,Boukje Zijlstra,(Leefstijl) coach en fysiotherapeut,Nederlandse Obesitas Kliniek,Netherlands,WEAK,weight-management
+c8127aaea643,Mikko,Rinta,Mikko Rinta,Johtava ravitsemusterapeutti,Terveystalo,Finland,WEAK,weight-management
+637448f0060f,Laura,Karotie,Laura Karotie,"Senior Vice President, Corporate Health",Terveystalo,Finland,PASS_P3,preventive-health
+15cf55cd1b77,Cedric,Berset,Cedric Berset,"Director Marketing, Communications & Sales",Medgate,Switzerland,WEAK,virtual-care
+4aac2fc371dc,Mandana,R.,Mandana R.,Head of Quality Management,Oviva,Switzerland,PASS_P3,compliance
+33199cc8e533,Riina,Hyoky,Riina Hyoky,Product Portfolio Director,Terveystalo,Finland,PASS_P3,digital-transformation
+efbd00e2f4cb,Sari,Tefke,Sari Tefke,Chain Director at Medical Center network,Terveystalo,Finland,WEAK,clinical-operations
+7fcc31accdc6,Jukka,Erkkila,Jukka Erkkila,Director of Medical and Dental Imaging,Terveystalo,Finland,WEAK,clinical-operations
+f7b4735871ac,Harpa,Arnardottir,Harpa Arnardottir,Director of Regulatory & Compliance,Sidekick Health,Iceland,PASS_P3,compliance
+9da994aa87b0,Tarja,Niinisalo,Tarja Niinisalo,"VP, Commercial",Terveystalo,Finland,PASS_P3,digital-transformation
+dee36ca2ba54,Espen,Atland,Espen Atland,Chief Digital Officer,Dr.Dropin,Norway,PASS_P2,virtual-care
+902612a63063,Tomi,Gustafsson,Tomi Gustafsson,Business Director,Terveystalo,Finland,WEAK,clinical-operations
+ded3160ac29d,Hanna-Riikka,Sundberg,Hanna-Riikka Sundberg,Head of Customer Insights,Terveystalo,Finland,WEAK,member-engagement
+c4b12e21d795,Ana,"Mijuskovic, Ph.D.","Ana Mijuskovic, Ph.D.",Senior Director Clinical Trials,Oviva,Germany,PASS_P3,clinical-operations
+07b9588aad00,Stev,Ress,Stev Ress,Head of Customer Service,Oviva AG,Germany,WEAK,member-engagement
+4cda20056eb6,Antti,Aro,Antti Aro,Director occupational health and organizational psychology,Terveystalo,Finland,WEAK,preventive-health
+1adad97a2ee8,Henri,Maenalanen,Henri Maenalanen,"EVP Terveystalo, CEO Rela Oy",Terveystalo,Finland,PASS_P3,digital-transformation
+4f58e111350c,Tapani,Strander,Tapani Strander,"Medical Director, Turku",Terveystalo,Finland,PASS_P3,clinical-operations
+f1cfda5ab8ea,Maciek (Matt),M.,Maciek (Matt) M.,CEO & Co-Founder,Doctor.One,Poland,PASS_P2,virtual-care
+52ace5620662,Pauline,Lebrec,Pauline Lebrec,Head of Marketing Communications,Qare,France,WEAK,virtual-care
+36fae42de7ac,Romain,Fleury,Romain Fleury,Head of product design,Qare,France,WEAK,virtual-care
+bf1142f9b6f7,mieke,van spanje,mieke van spanje,President,Nederlandse Obesitas Stichting,Netherlands,WEAK,weight-management
+514b2b0e5b81,Andreas,Winqvist,Andreas Winqvist,Business Unit Director,Doktor24,Sweden,PASS_P2,virtual-care
+68f51f64e9ac,Marc,de la Fayolle,Marc de la Fayolle,CFO,Qare,France,PASS_P3,virtual-care
+e5f33c23a2f5,Maria,Vargas Gomez,Maria Vargas Gomez,Teleconsultations Medecine Generale,Qare,France,WEAK,virtual-care
+eda7aaa7df2e,Ben,Worner,Ben Worner,Vice President of Product Management,Oviva,Germany,PASS_P2,member-engagement
+76a387205612,Astrid Kristine,Bjerke,Astrid Kristine Bjerke,Chief Commercial Officer,Dr.Dropin,Norway,PASS_P3,virtual-care
+fb926e0072d6,Tryggvi,"Thorgeirsson, MD, MPH","Tryggvi Thorgeirsson, MD, MPH",CEO,Sidekick Health,Iceland,PASS_P2,weight-management
+8d767b9c9ecb,Belinda,Wenger,Belinda Wenger,Head Product Development & Management,Medgate Switzerland,Switzerland,PASS_P2,virtual-care
+92384ba7dd6f,Saskia,Schrauwen,Saskia Schrauwen,Director of Operations,Nederlandse Obesitas Kliniek,Netherlands,PASS_P2,clinical-operations
+7c15811b8694,Taina-Mari,Kaaria,Taina-Mari Kaaria,Manager,Terveystalo,Finland,WEAK,compliance
+3ba9bdd6fc1b,Augustin,Chatenet,Augustin Chatenet,Co-fondateur,Armin Armagnac,France,WEAK,virtual-care
+f6d71e9b6213,Eeva,Nyberg-Oksanen,Eeva Nyberg-Oksanen,"VP of Appointments, Diagnostics, Hospitals & Integrated Care Paths",Terveystalo,Finland,PASS_P3,digital-transformation
+29e06e2a4cde,Damian,Papadopoulos,Damian Papadopoulos,Director TechOps & Business Excellence,Oviva,Switzerland,WEAK,clinical-operations
+3acd88816f11,Raisa,Kangasniemi,Raisa Kangasniemi,Registered Dietitian,Terveystalo,Finland,WEAK,weight-management
+69750e959745,Santtu,Hietaranta,Santtu Hietaranta,Regional Director,Terveystalo,Finland,WEAK,clinical-operations
+5a882cd23a89,Charlotte,Seiler,Charlotte Seiler,Head of Operational Excellence,Qare,France,PASS_P3,virtual-care
+7f81f16c2d40,Katja,Kangaslehto,Katja Kangaslehto,Service Director of Physiotherapy,Terveystalo,Finland,WEAK,clinical-operations
+066e21dbd58a,Katja,Pietila,Katja Pietila,Process Owner,Terveystalo,Finland,WEAK,digital-transformation
+d8c417c19437,Hanna,Kortteinen,Hanna Kortteinen,"Business Unit Director, Rehabilitation",Terveystalo,Finland,WEAK,clinical-operations
+1e9ed8879580,Kristian,Paavonen,Kristian Paavonen,Speciality Director,Terveystalo,Finland,WEAK,clinical-operations
+638737412c89,Melanie,Schwendimann,Melanie Schwendimann,VP Strategy,Oviva,Switzerland,PASS_P2,weight-management
+161c6ab1ef9b,Florian,Kobler,Florian Kobler,Head of Marketing,Wellster Healthtech Group,Germany,WEAK,member-engagement
+6fe209b1835b,Laura,Walter,Laura Walter,Director of Product Management,Oviva,Germany,PASS_P2,member-engagement
+72d3a7fa541f,Ana Violeta,Fonseca,Ana Violeta Fonseca,Principal Quality Partner,mySugr,Austria,WEAK,compliance
+9d03da5b8df3,Valtteri,Helve,Valtteri Helve,Head of Pricing,Terveystalo,Finland,WEAK,digital-transformation
+f5f5ecb82f01,Marion,Allard,Marion Allard,Head of data,Qare,France,WEAK,virtual-care
+42c1258f3b03,Risto,Ojala,Risto Ojala,"Chief, Dept of Radiology. Oulu",Terveystalo,Finland,WEAK,clinical-operations
+1b738b9c9848,Markku,Nissinen,Markku Nissinen,Chief specialist officer in gastroenterology,Terveystalo,Finland,WEAK,clinical-operations
+22dfa4392032,Birgit,Richter,Birgit Richter,Head of Regulatory Affairs,mySugr GmbH,Austria,PASS_P3,compliance
+3fe95ce98829,Dr. Udo,Klotzki,Dr. Udo Klotzki,Managing Director & Co-Founder,The Body Clinic,Germany,PASS_P2,weight-management
+76c9f928da67,Andy,Fischer,Andy Fischer,CEO,Medgate,Switzerland,PASS_P2,virtual-care
+72ff7248d059,Verena,Dohms,Verena Dohms,Co-Founder,The Body Clinic,Germany,PASS_P2,weight-management
+93bcb657db5b,Nicolette,Lammers,Nicolette Lammers,Hoofd medisch afvallen,The Body Clinic,Netherlands,PASS_P1,weight-management
+dcb79120ea11,Kaisa,Honka,Kaisa Honka,Service Director of Occupational Therapy,Terveystalo Kuntoutuspalvelut,Finland,WEAK,clinical-operations
+260db2318faa,Tringa,Kastrati,Tringa Kastrati,Product Owner,hellocare.ai,Kosovo,WEAK,virtual-care
+a6a9f7a7ecab,Lorenz,Fitzi,Lorenz Fitzi,CFO,Medgate,Switzerland,PASS_P3,virtual-care
+546290876597,Pasi,Kotaniemi,Pasi Kotaniemi,Business Director,Terveystalo,Finland,WEAK,clinical-operations
+d1c83c52a9c8,Eveliina,Vigelius,Eveliina Vigelius,Head of Public Affairs and Partner Communications,Terveystalo,Finland,WEAK,compliance
+a1c3711275eb,Toni,Suokas,Toni Suokas,"Director, Corporate Health, SME",Terveystalo,Finland,WEAK,preventive-health
+90d35ad1ff15,Olli,Vaisanen,Olli Vaisanen,Chief Physician,Terveystalo,Finland,PASS_P3,clinical-operations
+c88d1aabf818,Silvia,Wels,Silvia Wels,Senior Director Product Design,Oviva,Switzerland,WEAK,member-engagement
+83e8e1ae1fa6,Lauri,Saarivuori,Lauri Saarivuori,Transformation Director,Terveystalo,Finland,PASS_P3,digital-transformation
+490fbdffa0cb,Jari,Karhu,Jari Karhu,"Director, Diagnostic",Terveystalo,Finland,WEAK,clinical-operations
+a7fbe3ce55fa,Nadine,Schmidt,Nadine Schmidt,Head of Organic Growth,Oviva,Germany,WEAK,member-engagement
+4d91f3dc4f26,Martin,Mangiapia,Martin Mangiapia,VP Communications,Wellster Healthtech Group,Germany,WEAK,member-engagement
+076f0a2ee15f,Stefan,Schmidt,Stefan Schmidt,Senior Director BD & Deputy MD Germany,Oviva,Germany,PASS_P2,weight-management
+70366680329e,Soley,Valdimarsdottir,Soley Valdimarsdottir,Director of Solution Services,Sidekick Health,Iceland,PASS_P3,clinical-operations
+d9c1169479fc,Janne,Kanervisto,Janne Kanervisto,"Chief Medical Officer, Head of sleep medicine",Terveystalo,Finland,WEAK,clinical-operations
+0b0d0e047a94,Linda,Aheristo,Linda Aheristo,Director of Quality,Terveystalo,Finland,WEAK,compliance
+b040fb8d055d,Sebastien,Panchaud,Sebastien Panchaud,Chief Operating Officer (Sales & Operations),Qare.fr,France,PASS_P3,virtual-care
+57011b908074,Lucie,Renault-Dietsche,Lucie Renault-Dietsche,Directeur des affaires publiques,Qare,France,WEAK,compliance
+08bc637e7fbd,Philippa,H.,Philippa H.,Head of Content,Oviva,Germany,WEAK,member-engagement
+b7d4e7d321f7,Lindita,Dautovic,Lindita Dautovic,Verksamhetschef,Doktor.se,Sweden,WEAK,virtual-care
+f75175266a29,Elias Freyr,Gudmundsson,Elias Freyr Gudmundsson,Director of Clinical Research - Cardiometabolic,Sidekick Health,Iceland,PASS_P2,clinical-operations
+f3819bacb297,Cyril,Vincler,Cyril Vincler,CTO,myDiabby,Monaco,PASS_P3,virtual-care
+40ef679ecdb7,Par,Lindvall,Par Lindvall,Tf Verksamhetschef / Regionchef,Min Doktor,Sweden,WEAK,virtual-care
+900abf9c8f3c,Matthias,Schurig,Matthias Schurig,Managing Director Germany,Oviva,Germany,PASS_P2,weight-management
+439b9dcc3c7a,Moritz,Funk,Moritz Funk,COO,Wellster Healthtech Group,Germany,PASS_P2,weight-management
+8ac6f84c9d42,Angela,Hagedoorn,Angela Hagedoorn,Head of Business Intelligence,Wellster Healthtech Group,Germany,WEAK,digital-transformation
+e123c78da10a,Jussi,Sihvonen,Jussi Sihvonen,"Chief Medical Officer, Portfolio Businesses",Terveystalo,Finland,PASS_P3,clinical-operations
+37897a45ea27,Daniel,Perez,Daniel Perez,Founder & COO,Doctor i,Spain,PASS_P2,virtual-care
+8a60383ff843,Anastasia,P.,Anastasia P.,CEO  & co-founder,myDiabby,France,PASS_P2,virtual-care
+09b229ce8d9d,Sanna,Solala,Sanna Solala,Product Owner,Terveystalo,Finland,WEAK,digital-transformation
+866931903376,Lotta,Walden,Lotta Walden,"Development Director, Digital Services",Terveystalo,Finland,PASS_P3,digital-transformation
+1423ee4ade13,Peter,Csonka,Peter Csonka,Director,TamCAM,Finland,WEAK,clinical-operations
+2852d75f5e97,Milla,Keller,Milla Keller,"Director, Tech & Regulatory Legal and Enterprise Risk Management",Terveystalo,Finland,WEAK,compliance
+c1acc7a2a734,Patricia,G.,Patricia G.,Head of Data & AI Department,MediQuo,Spain,WEAK,virtual-care
+bdf5813c7fdd,Viola,Karl,Viola Karl,Commercial Vice President,Wellster Healthtech Group,Germany,PASS_P2,weight-management
+36dea0c9db81,Kristoffer,Angerer,Kristoffer Angerer,CEO Dr. Dropin Legetjenester,Dr.Dropin,Norway,PASS_P2,virtual-care
+3ed2e70b8e12,Satu,Haapala,Satu Haapala,Product Owner,Terveystalo,Finland,WEAK,digital-transformation
+39ac4b9a4ad0,Niina,Matikka,Niina Matikka,Vastaava ravitsemusterapeutti,Terveystalo,Finland,WEAK,weight-management
+b7c2c132614e,Milosz,Wicinski,Milosz Wicinski,International Development Director,Doctor.One,Poland,PASS_P3,virtual-care
+e8cf4ba2d579,Oskar,Niemenoja,Oskar Niemenoja,"Head of Data, Analytics and Business Intelligence",Terveystalo,Finland,PASS_P3,digital-transformation
+83bd7100089b,Nadja,Schwarz,Nadja Schwarz,Head of Marketing & Communications,Medgate Schweiz,Switzerland,WEAK,virtual-care
+bbe0796d069e,Sebastian,Schneider,Sebastian Schneider,General Manager Spring,Wellster Healthtech Group,Germany,PASS_P2,weight-management
+50680ca70869,Ramtin,Vedad,Ramtin Vedad,CEO & Co-founder,LevaHealth,Sweden,PASS_P2,virtual-care
+bd5bf029678b,Teija,Korjala,Teija Korjala,Director of Occupational Healthcare,Terveystalo,Finland,PASS_P3,preventive-health
+96345a9a88a5,Pierre-Camille,ALTMAN,Pierre-Camille ALTMAN,Co-Founder,myDiabby,France,PASS_P2,virtual-care
+74fbd8c3c4e7,Titta-Liisa,Luoma,Titta-Liisa Luoma,Director of Customer Service,Terveystalo,Finland,WEAK,member-engagement
+0cc9ae7db9f4,Hildur,Gudmundsdottir,Hildur Gudmundsdottir,"Senior Director, Solution Delivery & Strategic Projects",Sidekick Health,Iceland,PASS_P3,clinical-operations
+cf4d200854fd,Maxime,Sraiki,Maxime Sraiki,Group Technology Director,HealthHero,France,PASS_P3,virtual-care
+d18137ce58aa,Kaisu,Meusel,Kaisu Meusel,Head of office,Terveystalo Pori and Harjavalta,Finland,WEAK,clinical-operations
+e9180edc39d7,Dorothee,Linnenbrink,Dorothee Linnenbrink,Director Key-Opinion-Leader Relationship & Key Account Management,Sidekick Health,Germany,PASS_P3,member-engagement
+b0e61f92a358,Kari,Kauniskangas,Kari Kauniskangas,Chairperson,Terveystalo,Switzerland,WEAK,
+2967234047ed,Outi,Mustonen,Outi Mustonen,Director of Services,Terveystalo,Finland,WEAK,clinical-operations
+0701eb4b7bc0,Elisabeth,Zilberberg-Trenck,Elisabeth Zilberberg-Trenck,Managing Director mySugr,mySugr GmbH,Austria,PASS_P2,weight-management
+1eac6fb745e1,Marcin,Felski,Marcin Felski,Global Operations Director,Oviva,Poland,PASS_P2,clinical-operations
+2f725bf7c71b,Maria,Lehto,Maria Lehto,"Chief Occupational Health, Work and Organizational Psychology",Terveystalo,Finland,WEAK,preventive-health
+a3589b3fdf32,Nadine,Huttenrauch,Nadine Huttenrauch,Director DTx Pathways (Digital Therapeutics),Oviva,Switzerland,PASS_P2,clinical-operations
+e00e9ffb87fb,Mikko,Welling,Mikko Welling,Account Director,Terveystalo,Finland,WEAK,preventive-health
+c595b163baf3,Therese Borge,Lied,Therese Borge Lied,Co-CEO,Dr.Dropin Psykologi,Norway,PASS_P2,virtual-care
+7a49b18ee56f,Andrzej,Zawada,Andrzej Zawada,Dyrektor ds. relacji z lekarzami,Doctor.One,Poland,WEAK,virtual-care
+6aeb5d5bc494,Anne Marte,Ladim,Anne Marte Ladim,Chief Business Development Officer & Chief Medical Officer,Dr.Dropin,Norway,PASS_P2,virtual-care
+09532f908dca,Katja,Laine,Katja Laine,Johtaja terveyspalvelut,Terveystalo,Finland,WEAK,clinical-operations
+5282485a22fe,Gauthier-Jens,Balkan,Gauthier-Jens Balkan,Head of Business Operations,Qare,France,PASS_P3,virtual-care
+eb9b0aba90ff,Joonas,Kaijala,Joonas Kaijala,"Director, Product and Service Production Steering, Corporate and Public Health",Terveystalo,Finland,PASS_P3,preventive-health
+2e9c2dbf8551,Julie,Salomon,Julie Salomon,Pediatre,APHP,France,PASS_P3,virtual-care
+f8864f2e1285,Maximilian,Gassner,Maximilian Gassner,Vice President Commercial Development,Wellster Healthtech Group,Germany,PASS_P2,weight-management
+afb2fd129dee,Marvin,Becker,Marvin Becker,Head of Paid Growth,Oviva,Germany,WEAK,member-engagement
+51472f0201bc,Maria,Chernevich,Maria Chernevich,Product Manager,Wellster Healthtech Group,Germany,WEAK,member-engagement
+8a3e8d502672,Emine,Gashi,Emine Gashi,AI Product Owner,hellocare.ai,Kosovo,WEAK,virtual-care
+f6a6d6e735d3,Antti,Virta,Antti Virta,Medical Director Occupational Health,Terveystalo,Finland,PASS_P3,preventive-health
+0aef7950c842,Thorkell Viktor,Thorsteinsson,Thorkell Viktor Thorsteinsson,Development Director,Sidekick Health,Iceland,PASS_P3,member-engagement
+fa1dccda6b80,Kacper,Romanowski,Kacper Romanowski,Founder's Associate,Holi,Poland,WEAK,virtual-care
+be9fdd8d89ea,Prof. Dr. Pia,Wulfing,Prof. Dr. Pia Wulfing,Chief Clinical Officer,Sidekick Health,Germany,PASS_P1,clinical-operations
+64cf0ba8eb61,Diana,Wirth,Diana Wirth,Head of CRM,Oviva,Germany,WEAK,member-engagement
+7a6850e252b6,Lena,Serrander,Lena Serrander,Verksamhetschef/Regionchef,Doktor24,Sweden,WEAK,virtual-care
+57dfff487c42,Nathalie,Ahlstrom,Nathalie Ahlstrom,Member of the Board of Directors,Terveystalo,Belgium,WEAK,
+e9c3d3a919c8,Kati,Hynninen,Kati Hynninen,Account Director,Terveystalo,Finland,WEAK,preventive-health
+716670915a86,Titi,Kivilaakso,Titi Kivilaakso,Registered Dietitian,Terveystalo,Finland,WEAK,weight-management
+9fac85ec97f9,Mikko,Rautalahti,Mikko Rautalahti,Medical Director,Terveystalo,Finland,PASS_P3,preventive-health
+de0bc22d37f9,Taki,Archidi,Taki Archidi,Head of CRM,Qare,France,WEAK,member-engagement
+1cd9dc4bf9e2,Yasmina,G.,Yasmina G.,Head of Sales and Business Development,HealthHero,France,PASS_P3,virtual-care
+390e6f78518b,Ilana,Stolberg,Ilana Stolberg,Registered Dietitian,Larate,Finland,WEAK,weight-management
+4ccdc8a516b9,Maria Carlota,Gorosabel,Maria Carlota Gorosabel,Director Strategy,Oviva,Switzerland,PASS_P2,weight-management
+8f6fa9c28c78,Daniel,Sorli,Daniel Sorli,Co-Founder and CMO,Dr.Dropin,Norway,PASS_P2,virtual-care
+0439fbb15409,Noora,Hoppendorff,Noora Hoppendorff,Johtaja tyoterveyspalvelut,Terveystalo,Finland,PASS_P3,preventive-health
+ce0a158b2e6c,Dr. Suzana,Stojiljkovic,Dr. Suzana Stojiljkovic,General Manager Dietetics & Psychotherapy,Oviva,Switzerland,PASS_P2,weight-management
+531e6afb14a8,Aki,Aijala,Aki Aijala,Chief Medical Officer of Appointments,Suomen Terveystalo,Finland,PASS_P3,clinical-operations
+c1859e0943a5,Alexandre,MAISONNEUVE,Alexandre MAISONNEUVE,Co-fondateur & Directeur medical,Qare.fr,France,PASS_P2,virtual-care
+98f414e22f7f,Julia,Tausend,Julia Tausend,Director Clinical Delivery DTx Germany,Oviva,Germany,PASS_P2,clinical-operations
+71d6ff467eb2,Sara,Zhubi,Sara Zhubi,Product Owner,hellocare.ai,Kosovo,WEAK,virtual-care
+af6a652ce41d,Mari,Tarkka,Mari Tarkka,Business Director,Terveystalo,Finland,WEAK,clinical-operations
+5f4b59c7a6ec,Liselotte,Larsson,Liselotte Larsson,Regionchef,Min Doktor,Sweden,WEAK,virtual-care
+a7f66d8b72f3,Kia,Korhonen,Kia Korhonen,Director SME Accounts and Support,Terveystalo,Finland,WEAK,preventive-health
+6ffa9558bb58,Linda,Karlsdottir,Linda Karlsdottir,Senior Behavioural Scientist,Sidekick Health,Iceland,WEAK,clinical-operations
+e95c945275e6,Tiina,Halinen,Tiina Halinen,Business Director,Terveystalo,Finland,WEAK,clinical-operations
+d9ab6a79f4b0,Linda,Bjorling,Linda Bjorling,Verksamhetschef Vingakers Vardcentral,Doktor.se,Sweden,WEAK,virtual-care
+29dff132b2bd,Jocelyn,Herzog,Jocelyn Herzog,Directeur National des Centres de Sante et Directeur Adjoint de Qare Sante,Access Sante & Qare,France,PASS_P3,virtual-care
+6b010abbba92,Susanna,Gronblom,Susanna Gronblom,Account Director,Terveystalo,Finland,WEAK,preventive-health
+d44130eb3b8c,Virpi,Roiha,Virpi Roiha,Business Unit Director,Terveystalo,Finland,WEAK,clinical-operations
+c22674c2e910,Hannu,Lahteenmaki,Hannu Lahteenmaki,Orthopaedic Consultant Surgeon,Terveystalo Pulssi,Finland,WEAK,clinical-operations
+9c5456114b45,Marie-Theres,Scharl,Marie-Theres Scharl,Senior Director Regulatory and Compliance - global - PRRC,Sidekick Health,Germany,PASS_P3,compliance
+ad04e0d07c9f,Kari,Ahonen,Kari Ahonen,Business Director,Terveystalo,Finland,WEAK,clinical-operations
+4a3f45367108,Carolina,Chruzander,Carolina Chruzander,Verksamhetschef Njurunda vardcentral,Doktor.se,Sweden,WEAK,virtual-care
+59b733df34c5,Sabine,Helterlin,Sabine Helterlin,Head of Market Management,Medgate Schweiz,Switzerland,WEAK,virtual-care
+5725e09e8054,Emilia,Tauriala,Emilia Tauriala,Neurologist,Terveystalo,Finland,WEAK,clinical-operations
+5a8aba8f4a57,Teemu,Paatela,Teemu Paatela,Business Director,Terveystalo,Finland,WEAK,clinical-operations
+cb25794a97c2,Evelina,Appelros,Evelina Appelros,Head of Data,Min Doktor,Sweden,WEAK,virtual-care
+c1def7a38880,Can Pierre,Saglam,Can Pierre Saglam,Head of Sales,Oviva,Germany,PASS_P3,weight-management
+1d6b93757485,Stefanie,Gebhardt,Stefanie Gebhardt,Director Service Operations,Medgate Schweiz,Switzerland,PASS_P3,virtual-care
+44b86f21a5ec,Julia,Koskinen,Julia Koskinen,"Head of Development and Digitalization, Public Partnership Solutions",Terveystalo,Finland,PASS_P3,digital-transformation
+0db640f060d3,Laura,Aaltonen-Maatta,Laura Aaltonen-Maatta,Product Owner,Terveystalo,Finland,WEAK,digital-transformation
+5fea36bf79e6,Dr.med. Timo,Rimner,Dr.med. Timo Rimner,Head of Service improvement,Medgate Schweiz,Switzerland,PASS_P3,virtual-care
+3dc6c3df08f3,Titta,Rauhala (Mehtanen),Titta Rauhala (Mehtanen),Registered Dietitian,Terveystalo,Finland,WEAK,weight-management
+a301f3c928cd,J,Neuveux,J Neuveux,Direction generale,Min Doktor,France,WEAK,virtual-care
+8b3583405e92,Poema,Berisha,Poema Berisha,Product Owner,hellocare.ai,Kosovo,WEAK,virtual-care
+7be87ee6c5f0,Janina,Achren,Janina Achren,Director of Occupational Physiotherapy,Terveystalo,Finland,WEAK,preventive-health
+835d9c042c71,Philipp,Sauer,Philipp Sauer,Head of Privacy (Senior Legal Counsel),Oviva,Germany,PASS_P3,compliance
+1d6388f0564e,Kai,Peters,Kai Peters,Director of Sales & Key Account,Sidekick Health,Germany,PASS_P2,weight-management
+ba78dbfda914,Alma,Zariqi,Alma Zariqi,Product Owner,hellocare.ai,Kosovo,WEAK,virtual-care
+56f40ea0fa84,Alexandra,Jorda,Alexandra Jorda,Operativ chef Rimbo-Edsbro vardcentral,Doktor.se,Sweden,WEAK,virtual-care
+6a763c4f1ed1,Hua,Tran,Hua Tran,"Director Aesthetics Germany, Integration & Buy-and-Build",The Body Clinic,Germany,PASS_P2,weight-management
+6c0dd82261e6,Jasmiina,Simula,Jasmiina Simula,Registered Dietitian,Terveystalo,Finland,WEAK,weight-management
+1e563e296d25,Jani,Myller,Jani Myller,Head of Digital Products,Terveystalo,Finland,PASS_P3,digital-transformation
+dd25d8deaacd,Markku,Siltala,Markku Siltala,Director,Oulun Terveystalo,Finland,WEAK,clinical-operations
+6c4340ec35b5,Dr. Felix,Schirmann,Dr. Felix Schirmann,Vice President Science,Oviva,Germany,PASS_P3,clinical-operations
+fd5f3eaec7eb,Mathias,Waizenegger,Mathias Waizenegger,Marketingleiter,Sidekick Health,Germany,WEAK,member-engagement
+2ebe23b81ebb,Astrid,Anderson,Astrid Anderson,Director,Doktor.se,Sweden,WEAK,virtual-care
+45f97221ce02,Teuta,Rrahimi,Teuta Rrahimi,Product Owner,hellocare.ai,Kosovo,WEAK,virtual-care
+f23b2b5e0f81,Donjeta,Pllana,Donjeta Pllana,Product Owner,hellocare.ai,Kosovo,WEAK,virtual-care
+97794ab5ce20,Jasmina,Tervonen,Jasmina Tervonen,Nutritionist,Mehilainen,Finland,WEAK,weight-management
+d2234e8c26c7,Djilly,Ybema,Djilly Ybema,Operationeel directeur & Co-Owner,The Body Clinic,Netherlands,PASS_P2,clinical-operations
+e418106ecb86,Festina,Gashi,Festina Gashi,Product Owner,hellocare.ai,Kosovo,WEAK,virtual-care
+d53b50510e3e,Eevert,Partinen,Eevert Partinen,Deputy Chief Doctor,Lansi-Uudenmaan hyvinvointialue,Finland,WEAK,clinical-operations
+a60f2e3e5d9b,Dr. med. Yalda,S.,Dr. med. Yalda S.,Director Medical Operation,Medgate Schweiz,Germany,PASS_P2,virtual-care
+6a42ecf88345,Cathrine,Borsand,Cathrine Borsand,ceo og medgrunder,Dr.Dropin,Norway,PASS_P2,virtual-care
+5bd5e0479425,Sherife,Begaj,Sherife Begaj,Product Owner,hellocare.ai,Kosovo,WEAK,virtual-care
+c0bbc0c56845,Emma,Raappana,Emma Raappana,Registered Dietitian,Terveystalo,Finland,WEAK,weight-management
+15dff4dd72b2,Simone,Mulder,Simone Mulder,Hoofd Huidtherapie,The Body Clinic,Netherlands,WEAK,weight-management
+b8b9dd0691c3,Cecilia,Tahmasebiepour,Cecilia Tahmasebiepour,Verksamhetschef Adina Halsans vardcentral,Doktor.se,Sweden,WEAK,virtual-care
+939e04e7c3f5,Barbara,Aime,Barbara Aime,Head of HCP success,Qare,France,WEAK,virtual-care
+c489aad85b2f,Matti,Isosavi,Matti Isosavi,CEO & Co-Founder Tuhka Technologies,Tuhka Technologies,Finland,WEAK,clinical-operations
+5aec37ed7ddb,Tina,Osmani,Tina Osmani,Product Owner,hellocare.ai,Kosovo,WEAK,virtual-care
+3cb077d6c69d,Sumea,Zogaj,Sumea Zogaj,Product Owner,hellocare.ai,Kosovo,WEAK,virtual-care
+aecbd63be792,Beatrice,Roldaan,Beatrice Roldaan,Senior arts,Nederlandse Obesitas Kliniek,Netherlands,WEAK,weight-management
+0ead8268dba0,Bodil,Falkoven Andersson,Bodil Falkoven Andersson,Verksamhetschef,Doktor.se,Sweden,WEAK,virtual-care
+0cdaf9949b9f,Niina,Saarenlaita,Niina Saarenlaita,"Johtaja, Terveyspalvelut",Terveystalo,Finland,WEAK,clinical-operations
+8cbb1d0f1fe4,Susanna,Gronblom,Susanna Gronblom,Account Director,Terveystalo,Finland,WEAK,preventive-health
+de9e8c16fc24,Eira,Ranung,Eira Ranung,"Enhetschef, Leg. Psykolog",Capio Sverige,Sweden,WEAK,virtual-care
+3f7be5bdc3b3,Marija,Lindstrom,Marija Lindstrom,verksamhetschef Vasby Lakargrupp,Doktor.se,Sweden,WEAK,virtual-care
+d5b1d6700343,Sanna,Vienonen,Sanna Vienonen,Regional Director,Terveystalo,Finland,WEAK,clinical-operations
+afc8d2253eaa,Anesa,Bulliqi,Anesa Bulliqi,Product Owner,hellocare.ai,Kosovo,WEAK,virtual-care
+115c75c856b0,Satu,Wedenoja,Satu Wedenoja,Director of Obstetrics and Gynecology,Terveystalo,Finland,WEAK,clinical-operations
+a98c3e009d81,Fabio,Conte,Fabio Conte,Direttore del dipartimento di scienze,DOCTORIUM,Italy,WEAK,virtual-care
+611635d579c9,Taina-Riikka,Hakola,Taina-Riikka Hakola,"Johtaja, Terveyspalvelut Lappi",Terveystalo,Finland,WEAK,clinical-operations
+55ef2d58daee,Heidi,Lehtokangas,Heidi Lehtokangas,Chief Physician | Musculoskeletal Disorders,Terveystalo,Finland,WEAK,clinical-operations
+8964e9df133c,Lisa,Larsson,Lisa Larsson,Klinikchef,Min Doktor,Sweden,WEAK,virtual-care
+6bf03fb923c1,Roula,Alyassin,Roula Alyassin,"Bitr Verksamhetschef, Medicinsk ledningsansvarig lakare",Doktor.se,Sweden,PASS_P2,virtual-care
+2038ff86dc3d,Tarek,Shalabi,Tarek Shalabi,VD,Doktor.se Rimbo-Edsbro vardcentral,Sweden,WEAK,virtual-care
+f708cbbac4e8,Jean-Pierre van,Erve,Jean-Pierre van Erve,CFO,Nederlandse Obesitas Kliniek,Netherlands,PASS_P3,weight-management
+c5e67d475293,Pauliina,Riekkinen,Pauliina Riekkinen,Vastaava laakari,Terveystalo,Finland,WEAK,clinical-operations
+f8ef6f6fc1bd,Riitta,Silvennoinen,Riitta Silvennoinen,Yksikon johtaja,Terveystalo,Finland,WEAK,clinical-operations
+4595fbb42e39,Afrim,Visoka,Afrim Visoka,Product Owner,hellocare.ai,Kosovo,WEAK,virtual-care
+f64df7921654,Annika,Ljungstrom,Annika Ljungstrom,Verksamhetschef,Doktor.se,Sweden,WEAK,virtual-care
+bd8445a35e4a,Niklas,Heijne,Niklas Heijne,Verksamhetschef,Doktor.se Tegnergatan Vardcentral,Sweden,WEAK,virtual-care
+5081320b9e14,Jyri,Outinen,Jyri Outinen,Vastaava laakari,Terveystalo,Finland,WEAK,clinical-operations
+132eb55ca685,Jonna,Eklund,Jonna Eklund,Enhetschef,Doktor.se,Sweden,WEAK,virtual-care
+ce7b2aad83e7,Ela,Bytyqi,Ela Bytyqi,Product Owner,hellocare.ai,Kosovo,WEAK,virtual-care
+8f6e54c4649d,Anita,Riipinen,Anita Riipinen,Johtava ttl,Terveystalo,Finland,WEAK,preventive-health
+2bb6191d644a,Camilla,Ostling,Camilla Ostling,Verksamhetschef vardcentral,Doktor.se,Sweden,WEAK,virtual-care
+</content>

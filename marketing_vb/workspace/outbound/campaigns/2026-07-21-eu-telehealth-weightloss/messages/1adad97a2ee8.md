@@ -1,0 +1,34 @@
+---
+product: fitxpress
+campaign: 2026-07-21-eu-telehealth-weightloss
+profile: olena
+person_id: 1adad97a2ee8
+full_name: Henri Maenalanen
+title: EVP Terveystalo, CEO Rela Oy
+company: Terveystalo
+location: Finland
+classification: PASS_P3
+angle: digital-transformation
+sequence: connection_request(no note) -> message_1(day 0, on accept) -> message_2(day +5, if no reply)
+---
+
+# Henri Maenalanen — EVP Terveystalo, CEO Rela Oy — Terveystalo
+
+## Connection request
+(sent WITHOUT a note, per current outbound spec)
+
+## Message 1 (day 0, on accept) — 383/600 chars
+```
+Hi Henri,
+Had a thought after reading about Terveystalo. Digital transformation programs in healthcare increasingly need measurable, auditable patient data, not just more app features.
+We've built a mobile body scanning layer at 3DLOOK: two phone photos produce structured body measurements and composition data that drop straight into the member profile. Open to a quick chat?
+Olena
+```
+
+## Message 2 (day +5, if no reply) — 458/550 chars
+```
+Hi Henri,
+Where this tends to help a digital program like Terveystalo's: it adds a structured, trackable data point without new hardware or extra visits. A European digital health company runs this in production for weight-loss programs. Data handling is GDPR-aligned: photos are deleted immediately or within 30 days, and no personal identifiers are stored.
+Worth 15 min to walk through it? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+Olena
+```

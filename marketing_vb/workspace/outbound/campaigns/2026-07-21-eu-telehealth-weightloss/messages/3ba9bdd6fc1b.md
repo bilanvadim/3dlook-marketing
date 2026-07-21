@@ -1,0 +1,34 @@
+---
+product: fitxpress
+campaign: 2026-07-21-eu-telehealth-weightloss
+profile: olena
+person_id: 3ba9bdd6fc1b
+full_name: Augustin Chatenet
+title: Co-fondateur
+company: Armin Armagnac
+location: France
+classification: WEAK
+angle: virtual-care
+sequence: connection_request(no note) -> message_1(day 0, on accept) -> message_2(day +5, if no reply)
+---
+
+# Augustin Chatenet — Co-fondateur — Armin Armagnac
+
+## Connection request
+(sent WITHOUT a note, per current outbound spec)
+
+## Message 1 (day 0, on accept) — 402/600 chars
+```
+Hi Augustin,
+Had a thought after reading about Armin Armagnac. Virtual care platforms adding weight management often hit the same wall: no objective way to show a patient's progress between calls.
+We've built a mobile body scanning layer at 3DLOOK: two phone photos produce structured body measurements and composition data that drop straight into the member profile. Might be worth a quick chat?
+Olena
+```
+
+## Message 2 (day +5, if no reply) — 436/550 chars
+```
+Hi Augustin,
+Where this tends to help virtual-care teams: patients get an objective progress check between consultations, without an extra visit. A European telehealth provider has this live for weight-loss support. Data handling is GDPR-aligned: photos are deleted immediately or within 30 days, and no personal identifiers are stored.
+Worth 10 min to walk through it? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+Olena
+```
