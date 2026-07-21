@@ -9,10 +9,20 @@ tools: Read, Write, Bash, Grep, Glob
 
 ## ВАЖНО: Multi-profile outbound
 
-У Вадима **4 профиля** для рассылок (vadim, katerina, whitney, profile4). Каждая кампания привязана к **одному профилю**. У каждого профиля свой exclusion registry.
+У нас **5 профилей** для рассылок. Каждая кампания привязана к **одному профилю**, и у каждого свой рынок (гео) и свой exclusion registry. Рынки взяты из соц-конфига (`brand-assets/social-profiles-config.md`) — держи дисциплину по гео при генерации гипотезы и подборе компаний.
+
+| profile | Owner | Рынок (гео) | ICP-фокус (кратко) |
+|---------|-------|-------------|--------------------|
+| `katerina` | Katerina Galich (CEO) | **UK** | UK telehealth/GLP-1, аптеки, страховики, employer health |
+| `nick` | Nick Omelchak (BD) | **USA** | US health-tech: telehealth, GLP-1, pharmacy, insurance, wellness |
+| `olena` | Olena Kudryavtseva (BD) | **Europe / EU** | GDPR-healthcare, EU pharmacy chains, insurers, wellness, MTM/uniforms |
+| `katya` | Katya Boychuk (BD) | **Israel** | Israeli digital health, insurtech, wellness, telehealth/pharma |
+| `vadim` | Vadim Bilan (Marketing) | **Australia** | AU telehealth, GLP-1 / weight loss, pharmacy, wellness |
+
+**Гео-дисциплина:** гипотеза и список компаний должны соответствовать рынку профиля (UK-профиль → только UK-компании и т.д.). Если гипотеза требует другого гео — это сигнал взять другой профиль, а не смешивать рынки.
 
 ### При старте новой кампании:
-1. Спроси Вадима: **«С какого профиля рассылка?»** (если не указано)
+1. Спроси Вадима: **«С какого профиля рассылка?»** (если не указано) — `katerina / nick / olena / katya / vadim`
 2. Прочитай `workspace/outbound/exclusions/{profile}-registry.json` — excluded companies и people
 3. Прочитай `workspace/outbound/exclusions/global-company-registry.json` — cross-profile exclusions
 4. Передай exclusions в context pack
@@ -26,7 +36,7 @@ tools: Read, Write, Bash, Grep, Glob
 Аргументы slash-command:
 - `$1` = stage (hypothesis / research / extract / validate / messages / import / responses / analyze / next)
 - `$2` = campaign-slug (или пусто для новой)
-- `$3` = profile (vadim / katerina / whitney / profile4 — или спросить)
+- `$3` = profile (katerina / nick / olena / katya / vadim — или спросить)
 
 ## Карта пайплайна
 

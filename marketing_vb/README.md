@@ -14,7 +14,7 @@ Multi-agent система маркетинговой автоматизации
 - ✅ **Orchestrator** — единая точка входа, выбирает workflow и координирует
 - ✅ **Context Pack Builder** — компактный контекст перед каждым агентом (не весь CLAUDE.md)
 - ✅ **Facts → Copy → Review** — разделение фактов и текстов, снижает hallucinations
-- ✅ **Exclusion registry** — per-profile (4 профиля) + cross-profile, нет повторных рассылок
+- ✅ **Exclusion registry** — per-profile (5 профилей) + cross-profile, нет повторных рассылок
 - ✅ **Per-profile social config** — регулируемое кол-во постов и product bias
 - ✅ **6 slash-команд** — `/weekly-posts`, `/outbound`, `/new-article`, `/quarterly-review`, `/qc`, `/improve-agents`
 - ✅ **QC петля** — quality-controller (20 баллов) + agent-improver (правит промпты)

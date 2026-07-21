@@ -61,7 +61,7 @@ Orchestrator (ты)
 product: {fitxpress | mobile_tailor}
 track: {social | outbound | seo}
 channel: {linkedin | facebook | instagram | email | blog}
-profile: {company | katerina | whitney | vadim | profile4}
+profile: {company | katerina | nick | olena | katya | vadim}
 objective: {what we're trying to achieve}
 ```
 

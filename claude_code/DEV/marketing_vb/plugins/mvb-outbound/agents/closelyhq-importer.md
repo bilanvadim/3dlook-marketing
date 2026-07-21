@@ -28,8 +28,8 @@ for _, p in people.iterrows():
     if not msg_file.exists():
         continue
     text = msg_file.read_text()
-    # parse out 4 message blocks
-    parts = re.findall(r"## Step (\d) — .+?\n(.+?)\n\*\*Char count", text, re.S)
+    # parse out the 2 message blocks (invite is note-less — no text)
+    parts = re.findall(r"## Message (\d) — .+?\n(.+?)\n\*\*Char count", text, re.S)
     msgs = {int(s): m.strip() for s, m in parts}
     rows.append({
         "first_name": p.first_name,
@@ -38,10 +38,9 @@ for _, p in people.iterrows():
         "company": p.company_name,
         "title": p.title,
         "email": p.get("email_guess", ""),
-        "step_1_invite": msgs.get(1, ""),
-        "step_2_message": msgs.get(2, ""),
-        "step_3_followup": msgs.get(3, ""),
-        "step_4_breakup": msgs.get(4, ""),
+        "connection_note": "",          # запрос в друзья БЕЗ note — by design
+        "message_1": msgs.get(1, ""),   # сразу после принятия запроса
+        "message_2": msgs.get(2, ""),   # +5 дней
     })
 
 out = pd.DataFrame(rows)
@@ -51,10 +50,11 @@ print(f"Ready: {len(out)} rows")
 
 ## Проверки перед записью
 
-1. Каждый row имеет все 4 сообщения. Если нет — лог и пропуск.
-2. step_1_invite ≤ 300 chars (LinkedIn limit).
-3. Никаких пустых fields кроме email.
-4. Дубликаты person_id отфильтрованы.
+1. Каждый row имеет оба сообщения (message_1 и message_2). Если нет — лог и пропуск.
+2. Запрос в друзья уходит БЕЗ note (connection_note пустой) — это by design, не ошибка.
+3. message_1 ≤ 600 chars, message_2 ≤ 550 chars.
+4. Никаких пустых fields кроме email и connection_note.
+5. Дубликаты person_id отфильтрованы.
 
 ## Вывод
 
@@ -66,9 +66,10 @@ print(f"Ready: {len(out)} rows")
 
 - Rows: N
 - Skipped: M (reasons listed below)
-- Estimated daily send: ~50 connection requests / day
+- Estimated daily send: ~30-50 connection requests / day
 - Estimated campaign duration: N days
-- Closely.io credits needed: ~N×4 = M
+- Sequence: note-less invite → Message 1 (сразу после принятия) → Message 2 (+5 дней)
+- Closely.io credits needed: ≈ N connection requests + N×2 messages
 
 ## Skipped people
 - {person_id}: {reason}
@@ -76,9 +77,10 @@ print(f"Ready: {len(out)} rows")
 ## Vadim — next steps
 1. Открой https://app.closelyhq.com/
 2. Импортируй `closelyhq-import.csv`
-3. Настрой расписание (recommended: 30-50 connections/day, business hours US)
-4. Запусти кампанию
-5. Ответь боту в Telegram «started» — мы начнём считать дни до первого checkpoint
+3. Настрой sequence в Closely: запрос в друзья БЕЗ note; Message 1 — сразу после принятия; Message 2 — через 5 дней
+4. Настрой расписание (recommended: 30-50 connections/day, business hours целевого рынка профиля)
+5. Запусти кампанию
+6. Ответь боту в Telegram «started» — мы начнём считать дни до первого checkpoint
 ```
 
 ## Telegram-нотификация

@@ -18,6 +18,8 @@
 | `use-cases/` | Use case + ICP + KPI + market sizing | hypothesis-generator |
 | `faq.md` | Возражения / ответы | message-sequencer |
 | `messaging.md` | Hero messages, anti-positioning | post-drafter, message-sequencer |
+| `outbound-message1-template.md` | Message 1 spec/template: tone, hooks, structure, style phrases, examples, ≤600 chars, signature rule (LinkedIn opener after connection) | message-sequencer |
+| `outbound-message2-template.md` | Message 2 spec/template: value-led follow-up after no reply, demo-call offer + per-profile calendar links, ≤550 chars, signature rule | message-sequencer |
 
 ## Use cases
 

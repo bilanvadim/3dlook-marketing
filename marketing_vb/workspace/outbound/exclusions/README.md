@@ -1,16 +1,29 @@
 # Outbound Exclusion Registry
 
-Система запоминает компании и людей по которым уже запускались рассылки с каждого из 4 профилей. Цель — **никогда не отправлять одному и тому же человеку дважды с одного профиля**, и не рассылать на одну компанию с нескольких профилей одновременно.
+Система запоминает компании и людей по которым уже запускались рассылки с каждого из 5 профилей. Цель — **никогда не отправлять одному и тому же человеку дважды с одного профиля**, и не рассылать на одну компанию с нескольких профилей одновременно.
+
+## Профили и рынки
+
+Рынки взяты из `brand-assets/social-profiles-config.md`. Каждый профиль рассылает **только по своему гео**.
+
+| profile | Owner | Рынок |
+|---------|-------|-------|
+| `katerina` | Katerina Galich (CEO) | UK |
+| `nick` | Nick Omelchak (BD) | USA |
+| `olena` | Olena Kudryavtseva (BD) | Europe / EU |
+| `katya` | Katya Boychuk (BD) | Israel |
+| `vadim` | Vadim Bilan (Marketing) | Australia |
 
 ## Структура
 
 ```
 workspace/outbound/exclusions/
 ├── README.md                         (этот файл)
-├── vadim-registry.json               профиль 1 — Vadim
-├── katerina-registry.json            профиль 2 — Katerina
-├── whitney-registry.json             профиль 3 — Whitney
-├── profile4-registry.json            профиль 4 — [TBD]
+├── katerina-registry.json            профиль — Katerina (UK)
+├── nick-registry.json                профиль — Nick (USA)
+├── olena-registry.json               профиль — Olena (EU)
+├── katya-registry.json               профиль — Katya (Israel)
+├── vadim-registry.json               профиль — Vadim (Australia)
 └── global-company-registry.json      cross-profile: какие компании покрыты каким профилем
 ```
 
@@ -96,7 +109,7 @@ workspace/outbound/exclusions/
 
 ## Workflow для Вадима при запуске нового outbound
 
-1. Orchestrator спрашивает: «С какого профиля рассылка?» (vadim / katerina / whitney / profile4)
+1. Orchestrator спрашивает: «С какого профиля рассылка?» (katerina / nick / olena / katya / vadim)
 2. Context Pack Builder включает exclusions для этого профиля в context pack
 3. Все агенты outbound трека используют exclusions
 4. После запуска кампании — closelyhq-importer автоматически обновляет registry

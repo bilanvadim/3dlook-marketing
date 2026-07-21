@@ -33,7 +33,7 @@ Vadim Request
 | Entry point | Агенты напрямую | Orchestrator → Context Pack → Agent | Стабильность и single entry |
 | Context | Каждый агент сам читает всё | Context Pack Builder даёт compact YAML | Меньше шума, стабильнее |
 | Facts vs Copy | Смешано | Research → Content → Review pattern | Меньше hallucinations |
-| Outbound profiles | 1 | 4 (vadim, katerina, whitney, profile4) | Реальная setup Вадима |
+| Outbound profiles | 1 | 5 (katerina/UK, nick/USA, olena/EU, katya/IL, vadim/AU) | Реальная setup, гео из соц-конфига |
 | Exclusion registry | Нет | Per-profile + cross-profile | Нет повторных рассылок |
 | Social profiles | Generic | Per-profile config с posts_per_week | Регулируемое кол-во |
 
@@ -92,10 +92,11 @@ Review (checks no unsupported claims added)
 
 ```
 workspace/outbound/exclusions/
-├── vadim-registry.json          per-profile: companies + people
-├── katerina-registry.json
-├── whitney-registry.json
-├── profile4-registry.json
+├── katerina-registry.json       per-profile: companies + people (UK)
+├── nick-registry.json           USA
+├── olena-registry.json          Europe/EU
+├── katya-registry.json          Israel
+├── vadim-registry.json          Australia
 └── global-company-registry.json cross-profile coordination
 ```
 
