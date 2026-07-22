@@ -21,6 +21,19 @@ export const DEFAULT_LIMITS: BreakerLimits = {
   stuckRepeats: 6,
 };
 
+/**
+ * Per-job-kind minimum turn limits. Some job kinds (content pipelines, features)
+ * need more turns than a simple fix or daily scout. When the DB value is lower than
+ * this floor, the conductor uses the floor instead. Set to 0 to use DB value as-is.
+ */
+export const KIND_MIN_TURNS: Record<string, number> = {
+  feature: 80,    // content pipeline + full implementation
+  fix: 40,        // targeted fix
+  scout: 40,      // daily scan
+  review: 60,     // full code review
+  custom: 60,     // user-defined — be generous
+};
+
 export type Decision =
   | { action: 'continue' }
   | { action: 'pause'; reason: 'ratelimit'; backoffSecs: number }   // → defer + durable resume

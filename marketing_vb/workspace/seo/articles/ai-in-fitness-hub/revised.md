@@ -1,18 +1,6 @@
----
-title: "AI in Fitness: Structured Body Data for Progress Tracking"
-description: "Structured body data from mobile scans supports progress tracking, personalization, and digital coaching in fitness apps. See how FitXpress fits the workflow."
-hub: fitness
-cluster: body-data-progress-tracking
-product: fitxpress
-status: draft
-last_revised: 2026-07-22
-action_type: refresh-existing
-priority: P0
----
-
 # AI in Fitness: How Structured Body Data Supports Progress Tracking, Personalization, and Digital Coaching
 
-*Scope note: the focus here is fitness apps, digital coaching, and body-transformation platforms. Body data also supports clinical weight-loss programs, telehealth, and insurance workflows, but those use cases are covered in their own hubs and are kept separate from the fitness context here.*
+*Scope note: the focus here is fitness apps, digital coaching, and body-transformation platforms. Body data also supports clinical weight-loss programs, telehealth, and insurance workflows, but those use cases are covered in their own hubs and are kept separate from the fitness context below.*
 
 Fitness apps have largely solved step counting, heart-rate monitoring, and workout logging. The harder question is the one users actually care about: is the body changing in a way they can see?
 
@@ -84,7 +72,7 @@ These categories are complementary. A platform could combine wearable recovery d
 
 ## How mobile body scanning compares to other data sources
 
-Fitness teams choosing a measurement method are really asking which method fits which job. Mobile body scanning can be placed alongside wearables, smart scales, motion tracking, and dual-energy X-ray absorptiometry (DEXA) to see where each one fits.
+Fitness teams choosing a measurement method are really asking which method fits which job. The comparison below places mobile body scanning alongside wearables, smart scales, motion tracking, and dual-energy X-ray absorptiometry (DEXA).
 
 | Data source | What it captures | Best suited to | Main limitation |
 |---|---|---|---|

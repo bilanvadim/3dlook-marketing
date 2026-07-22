@@ -21,25 +21,16 @@ sequence: connection_request(no note) -> message_1(day 0, on accept) -> message_
 ## Message 1 (day 0, on accept) — 396/600 chars
 ```
 Hi Mandana,
-
 Quick thought on Oviva's quality side. The EU Health Data Space and Germany's DiGA framework are tightening what counts as verified, auditable patient data, so self-reported figures carry less weight than before.
-
-We've built a mobile body scanning layer at 3DLOOK: two phone photos produce structured body measurements and composition data that drop straight into the patient record.
-
-Might be worth a quick chat?
-
+We've built a mobile body scanning layer at 3DLOOK: two phone photos produce structured body measurements and composition data that drop straight into the patient record. Might be worth a quick chat?
 Olena
 ```
 
-## Message 2 (day +5, if no reply) — 448/550 chars
+## Message 2 (day +5, if no reply) — 408/550 chars
 ```
 Hi Mandana,
-
-For quality teams, structured measurement data holds up better under audit than self-reported weight. Yazen uses this in their weight-loss app today, with 34,000 scans run in 2025.
-
+The data is structured and traceable, which supports the audit trail regulators are asking for. Yazen uses this in their weight-loss app today, with 34,000 scans run in 2025.
 Data handling is GDPR-aligned: photos are deleted immediately or within 30 days, and no personal identifiers are stored.
-
 Worth 15 min to walk through it? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
-
 Olena
 ```

@@ -18,11 +18,12 @@
  */
 import { query } from '@anthropic-ai/claude-agent-sdk';
 import { Store, Job, Step } from './store';
-import { evaluate, initState, BreakerState, BreakerLimits, DEFAULT_LIMITS, Event } from './breaker';
+import { evaluate, initState, BreakerState, BreakerLimits, DEFAULT_LIMITS, KIND_MIN_TURNS, Event } from './breaker';
 import { runStep, StepRecord } from './steprunner';
 import { makeSdkDeps } from './agent-runner';
 import { resolveProfilePlugins } from './profiles';
 import { tgConfigFromEnv, notifyEscalation, notifyDone, TelegramConfig } from '../escalation/telegram';
+import { startWebhookServer } from '../escalation/bot-callback';
 
 const WORKER_ID = process.env.HO_WORKER_ID ?? `ho-${process.pid}`;
 const RESUME_BACKOFF_SECS = Number(process.env.HO_RESUME_BACKOFF_SECS ?? 3600); // wait when limit gives no retry-after
@@ -34,8 +35,10 @@ const HERMES_SYSTEM_PROMPT =
   'commands without an explicit ask — they are gated.';
 
 function limitsForJob(j: Job): BreakerLimits {
+  const kindMin = KIND_MIN_TURNS[j.kind] ?? 0;
+  const dbMax = j.max_turns ?? DEFAULT_LIMITS.maxTurns;
   return {
-    maxTurns: j.max_turns ?? DEFAULT_LIMITS.maxTurns,
+    maxTurns: Math.max(dbMax, kindMin),  // floor from kind, but never reduce a higher DB value
     maxWallSecs: j.max_wall_secs ?? DEFAULT_LIMITS.maxWallSecs,
     stuckRepeats: DEFAULT_LIMITS.stuckRepeats,
   };
@@ -44,6 +47,14 @@ function limitsForJob(j: Job): BreakerLimits {
 /** Heuristic: does this error look like a token/quota/rate limit we should pause-and-resume on? */
 function isLimitError(detail: string): boolean {
   return /rate.?limit|quota|usage limit|too many requests|overloaded|429|insufficient|credit/i.test(detail);
+}
+
+/** Return the first non-empty string value found in an object (shallow). */
+function firstStringValue(obj: Record<string, unknown>): string | undefined {
+  for (const v of Object.values(obj)) {
+    if (typeof v === 'string' && v.length > 0) return v;
+  }
+  return undefined;
 }
 
 /** Map a raw SDK message to our normalized breaker Event(s) + a log record. THE ONLY SDK-coupling point. */
@@ -59,7 +70,14 @@ function mapSdkMessage(msg: any): { events: Event[]; type: string; toolName?: st
     const tu = Array.isArray(blocks) ? blocks.find((b: any) => b.type === 'tool_use') : null;
     if (tu) {
       toolName = tu.name;
-      const target = tu.input?.file_path ?? tu.input?.path ?? tu.input?.command ?? '';
+      // Extract a distinguishing target: try well-known fields first, then web-tool fields,
+      // then fall back to the first string value in the input. This prevents WebSearch/WebFetch
+      // calls from all collapsing to the same empty-target signature.
+      const target = tu.input?.file_path ?? tu.input?.path ?? tu.input?.url ?? tu.input?.command
+        ?? tu.input?.query   // WebSearch
+        ?? (Array.isArray(tu.input?.urls) ? tu.input.urls[0] : undefined)  // WebFetch (urls array)
+        ?? (tu.input ? firstStringValue(tu.input) : undefined)
+        ?? '';
       signature = `${tu.name}:${String(target).slice(0, 80)}`;
     } else {
       signature = 'assistant:text';
@@ -298,5 +316,6 @@ export async function workerLoop() {
 }
 
 if (process.argv[1] && process.argv[1].endsWith('conductor.ts')) {
+  startWebhookServer();
   workerLoop().catch((e) => { console.error(e); process.exit(1); });
 }
