@@ -563,3 +563,42 @@ Across both products, do NOT pursue:
 - Companies in markets we're not licensed for compliance-wise (currently very strict on health data — US, UK, EU/EEA primarily; новые гео из этого документа — Canada, Germany, UAE, Australia, Nordics, Turkey — проверить compliance-статус с Вадимом до первой кампании в новом гео)
 - Companies that recently announced acquisition / merger (ICP shifting, sales cycle stalls)
 - Existing customers (see `workspace/outbound/exclusions.md`)
+
+---
+
+# IT & Technical Roles — Secondary Buyer Classification
+
+> **Policy change, 2026-07-22:** IT specialists (engineers, architects, tech leads) who don't hold purchasing authority are NOT auto-FAIL. They get classified as **WEAK** with message_angle `technical-integration` because they are often tasked with evaluating and implementing solutions like FitXpress — they can become internal champions who escalate to decision-makers.
+
+**Roles classified as WEAK + `technical-integration` (not FAIL):**
+- CTO / CIO / VP Engineering / Head of Technology (unless already listed as primary buyer in a segment)
+- Technical Director / Director of Engineering / Director of Technology & Architecture
+- Tech Lead / Engineering Manager / Development Director
+- Senior Software Engineer / Solutions Architect / Platform Architect
+- Head of Platform / Head of Digital Development
+- Technical Solution Owner / Technical Product Manager
+
+**Still FAIL:**
+- IT Support / Helpdesk / SysAdmin / Network Engineer (infrastructure, not product)
+- DevOps / SRE / Cloud Engineer (unless at a health-tech company building patient-facing products)
+- Security Engineer / InfoSec (unless the company is evaluating HIPAA compliance tools)
+- QA / Test Engineer
+- Data Engineer / ML Engineer (unless at a health-tech company with patient-data workflows)
+
+**Classification rules for IT roles:**
+1. If title contains "Technical Solution Owner", "Technology & Architecture", "Platform", "Digital Development" AND company is in a FitXpress segment → WEAK + `technical-integration`
+2. If title is CTO/CIO/VP Engineering AND company is in a FitXpress segment → PASS P3 + `technical-integration` (C-suite entry point, may delegate but can open doors)
+3. If title is pure infrastructure (SysAdmin, Network, DevOps) → FAIL
+4. If unsure → classify as WEAK rather than FAIL; Vadim can manually reclassify in review
+
+**Message angle: `technical-integration`**
+For IT/technical audience, messages focus on:
+- API/SDK simplicity and documentation quality
+- Time-to-integrate (typical: 2-4 weeks for basic integration)
+- HIPAA/GDPR compliance architecture (data processed, not stored; photos deleted after measurement extraction)
+- Scalability and reliability (99.9% uptime SLA)
+- No ML expertise required — the model is pre-trained and accessed via API
+- Free trial: 200 requests / 1 month for technical evaluation
+
+Tone: technical, concrete, no marketing fluff. These readers can spot vendor-speak instantly.
+Hook examples: "Evaluating body scanning APIs?" / "If your product team asked you to look at body measurement integration" / "Quick thought on the body-data piece of your platform"
