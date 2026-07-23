@@ -7,6 +7,7 @@
       "WebFetch(domain:prismlabs.tech)",
       "WebFetch(domain:3dlook.ai)",
       "WebSearch",
+      "WebFetch(*)",
       "WebFetch(domain:link.springer.com)",
       "WebFetch(domain:publichealth.jhu.edu)",
       "WebFetch(domain:www.facs.org)",
@@ -21,7 +22,9 @@
       "Bash(awk '/^## Disclaimer/,/^---/' draft-v2.md)",
       "Bash(awk 'BEGIN{print int\\(4460/250\\) \" min\"}')",
       "Bash(awk 'BEGIN{print int\\(3140/250\\)\" min\"}')",
-      "Bash(python3 -c ' *)"
+      "Bash(python3:*)",
+      "Bash(pip3:*)",
+      "Bash(pip:*)"
     ]
   }
 }
