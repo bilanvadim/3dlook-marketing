@@ -81,3 +81,35 @@ export function startWebhookServer(port = Number(process.env.HO_WEBHOOK_PORT ?? 
     console.log(`[webhook] listening on :${port} (POST /telegram-webhook)`);
   });
 }
+
+/** Poll Telegram for callback queries every 2s. This is the fallback when no webhook is registered. */
+let pollingOffset = 0;
+async function pollTelegramCallbacks(): Promise<void> {
+  if (!TELEGRAM_TOKEN) return;
+  try {
+    const url = `https://api.telegram.org/bot${TELEGRAM_TOKEN}/getUpdates`
+      + `?offset=${pollingOffset}&timeout=2&allowed_updates=["callback_query"]`;
+    const res = await fetch(url);
+    const data = await res.json() as any;
+    if (!data?.ok || !Array.isArray(data?.result)) return;
+    for (const update of data.result) {
+      pollingOffset = (update.update_id as number) + 1;
+      const cb = update?.callback_query;
+      if (cb?.data) {
+        const who = cb?.from?.username ?? cb?.from?.id?.toString() ?? 'unknown';
+        const decision = await handleCallback(cb.data, who);
+        await answerCallbackQuery(cb.id,
+          decision === 'ignored' ? undefined : `Escalation ${decision}`);
+      }
+    }
+  } catch (err) {
+    // transient network error — retry next poll
+  }
+}
+
+/** Start long-polling for Telegram callbacks. Runs forever alongside the webhook server. */
+export function startTelegramPolling(intervalMs = 2000): void {
+  pollTelegramCallbacks(); // immediate first poll
+  setInterval(pollTelegramCallbacks, intervalMs);
+  console.log(`[telegram] polling for callback queries every ${intervalMs}ms`);
+}

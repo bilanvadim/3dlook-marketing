@@ -23,7 +23,7 @@ import { runStep, StepRecord } from './steprunner';
 import { makeSdkDeps } from './agent-runner';
 import { resolveProfilePlugins } from './profiles';
 import { tgConfigFromEnv, notifyEscalation, notifyDone, TelegramConfig } from '../escalation/telegram';
-import { startWebhookServer } from '../escalation/bot-callback';
+import { startWebhookServer, startTelegramPolling } from '../escalation/bot-callback';
 
 const WORKER_ID = process.env.HO_WORKER_ID ?? `ho-${process.pid}`;
 const RESUME_BACKOFF_SECS = Number(process.env.HO_RESUME_BACKOFF_SECS ?? 3600); // wait when limit gives no retry-after
@@ -317,5 +317,10 @@ export async function workerLoop() {
 
 if (process.argv[1] && process.argv[1].endsWith('conductor.ts')) {
   startWebhookServer();
+  // getUpdates polling collides with the gateway, which owns @dlookmarketing_bot's
+  // single allowed getUpdates consumer. Escalation callbacks arrive via the gateway,
+  // which forwards ho:* callback_query updates to our :3001 webhook. Opt-in only
+  // (set HO_TELEGRAM_POLLING=1) for standalone runs where the conductor owns the bot.
+  if (process.env.HO_TELEGRAM_POLLING === '1') startTelegramPolling();
   workerLoop().catch((e) => { console.error(e); process.exit(1); });
 }
