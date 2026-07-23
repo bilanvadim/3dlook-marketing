@@ -1,0 +1,10 @@
+[Unit]
+Description=Hermes config-guard safety-net (catch any write the path unit missed)
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=15min
+Persistent=true
+
+[Install]
+WantedBy=default.target

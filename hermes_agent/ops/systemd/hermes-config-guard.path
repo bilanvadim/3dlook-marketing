@@ -1,0 +1,9 @@
+[Unit]
+Description=Watch ~/.hermes/config.yaml — repair the moment Hermes rewrites it
+
+[Path]
+PathModified=/home/vadim_prod/.hermes/config.yaml
+Unit=hermes-config-guard.service
+
+[Install]
+WantedBy=default.target
