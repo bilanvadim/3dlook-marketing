@@ -16,7 +16,7 @@ owner: Vadim
 
 - **Language:** English.
 - **Length:** ≤ **600 characters** total (greeting + body + signature, everything counted).
-- **First person**, from the sending profile owner (Katerina / Nick / Olena / Katya / Vadim).
+- **First person**, from the sending profile owner (Katerina / Nick / Olena / Kateryna / Vadim).
 - **Signature:** first name only, **no title / role**. A simple sign-off ("Best,") before the name is optional.
 - Output **only the message**. No subject line, no preamble, no commentary around it.
 

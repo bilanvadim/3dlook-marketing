@@ -1,0 +1,10 @@
+[Unit]
+Description=Hermes gateway-watchdog safety-net (detect wedged gateway via stuck Telegram pending_update_count)
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=3min
+Persistent=true
+
+[Install]
+WantedBy=default.target

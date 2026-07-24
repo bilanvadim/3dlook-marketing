@@ -218,11 +218,11 @@ avoid: "US-specific regulatory context (FDA, payer system), Israeli market topic
 cta: "Soft — посилання на статтю, «Open to connect»"
 ```
 
-### linkedin-katya — Katya Boychuk (BD, Israel)
+### linkedin-katya — Kateryna Boichuk (BD, Israel)
 ```yaml
 profile_id: linkedin-katya
 platform: linkedin
-owner: Katya Boychuk (Business Development, Israel)
+owner: Kateryna Boichuk (Business Development, Israel)
 posts_per_week: 1
 product_bias:
   fitxpress: 100%

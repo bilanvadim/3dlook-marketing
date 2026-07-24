@@ -1,0 +1,10 @@
+[Unit]
+Description=Hermes conductor-guard safety-net (catch rogue duplicate conductors squatting :3001)
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=2min
+Persistent=true
+
+[Install]
+WantedBy=default.target

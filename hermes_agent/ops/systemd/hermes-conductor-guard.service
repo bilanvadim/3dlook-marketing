@@ -1,0 +1,9 @@
+# ref memory: project_hermes_gateway_wedge_dup_conductor
+[Unit]
+Description=Hermes conductor-guard — kills rogue conductor.ts squatting :3001 (agent nohup restarts) so the managed hermes-conductor.service can bind
+
+[Service]
+Type=oneshot
+Environment=XDG_RUNTIME_DIR=/run/user/1006
+Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1006/bus
+ExecStart=/usr/bin/bash /home/vadim_prod/.hermes/conductor-guard/hermes-conductor-guard.sh

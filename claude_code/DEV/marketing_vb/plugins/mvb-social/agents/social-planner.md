@@ -27,7 +27,7 @@ tools: Read, Write, Grep, Glob
 
 Для кожного з 9 профілів признач унікальний angle. Правила:
 - **Жоден claim не повторюється** у двох профілів як головний хук
-- **Регіональні лінзи:** Katerina = UK/MHRA/NHS, Olena = EU/GDPR, Nick = US/EEOC/ADA, Katya = Israel startup
+- **Регіональні лінзи:** Katerina = UK/MHRA/NHS, Olena = EU/GDPR, Nick = US/EEOC/ADA, Kateryna = Israel startup
 - **Twitter** = один гострий stat, без філера
 - **Instagram** = людська історія / візуальний момент
 - **Facebook** = доступне пояснення + питання
@@ -81,7 +81,7 @@ created: YYYY-MM-DD
 - [ ] Katerina: UK-only, без US/EU контексту
 - [ ] Olena: GDPR/EU regulation присутній де доречно
 - [ ] Nick: US/EEOC контекст
-- [ ] Katya: Israel ecosystem
+- [ ] Kateryna: Israel ecosystem
 - [ ] Company-акаунти (twitter, instagram, facebook, linkedin-company): третя особа / we
 
 ## Article → Post mapping summary
