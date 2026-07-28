@@ -190,13 +190,43 @@ export class Store {
    * conductor restart; the 50-row window is far above any sane streak.
    */
   async noProgressPauseStreak(jobId: number, beforeRunId: number): Promise<number> {
+    return this.trailingPausedStreak(beforeRunId, 'ratelimit', jobId, true);
+  }
+
+  /**
+   * Same count, but ACROSS ALL JOBS. A usage window is an ACCOUNT-level resource, so the
+   * per-job streak understates it: on 2026-07-28 job 35 proved the window was shut (streak 1),
+   * then job 36 was claimed, started its own ladder from scratch at 56s and burned five more
+   * pointless attempts. Callers take max(per-job, global) so a fresh job inherits what the
+   * previous one already learned.
+   */
+  async globalNoProgressPauseStreak(beforeRunId: number): Promise<number> {
+    return this.trailingPausedStreak(beforeRunId, 'ratelimit', null, true);
+  }
+
+  /**
+   * How many runs of this job, immediately before `beforeRunId`, parked waiting on the same
+   * unanswered human decision. Bounds the ask→park→ask cycle so an escalation nobody answers
+   * eventually settles instead of nagging forever.
+   */
+  async awaitHumanStreak(jobId: number, beforeRunId: number): Promise<number> {
+    return this.trailingPausedStreak(beforeRunId, 'await_human', jobId, false);
+  }
+
+  /** Count the unbroken tail of paused runs matching `stopReason` (optionally scoped to one job). */
+  private async trailingPausedStreak(
+    beforeRunId: number, stopReason: string, jobId: number | null, requireZeroTurns: boolean,
+  ): Promise<number> {
     const rows = await this.q<{ status: string; stop_reason: string | null; turns: number }>(
-      'select status, stop_reason, turns from ho_runs where job_id=? and id<? order by id desc limit 50',
-      [jobId, beforeRunId],
+      jobId === null
+        ? 'select status, stop_reason, turns from ho_runs where id<? order by id desc limit 50'
+        : 'select status, stop_reason, turns from ho_runs where id<? and job_id=? order by id desc limit 50',
+      jobId === null ? [beforeRunId] : [beforeRunId, jobId],
     );
     let n = 0;
     for (const r of rows) {
-      if (r.status === 'paused' && r.stop_reason === 'ratelimit' && Number(r.turns) === 0) n += 1;
+      const zeroOk = !requireZeroTurns || Number(r.turns) === 0;
+      if (r.status === 'paused' && r.stop_reason === stopReason && zeroOk) n += 1;
       else break;
     }
     return n;
@@ -211,16 +241,36 @@ export class Store {
     return Number(res.lastInsertRowid);
   }
 
-  /** Poll an escalation until decided or timeout (ms). Returns final status. */
-  async waitEscalation(id: number, timeoutMs = 1000 * 60 * 30, pollMs = 5000): Promise<string> {
-    const deadline = Date.now() + timeoutMs;
+  /**
+   * Poll an escalation until decided or the wait runs out. Returns the recorded decision, or
+   * the sentinel `'timeout'`.
+   *
+   * IT DOES NOT MARK THE ROW 'expired'. It used to, and that broke the buttons: handleCallback
+   * only writes `where status='open'`, so once a row expired the Approve/Deny taps in Telegram
+   * silently did nothing and the job was already gone. Leaving the row OPEN means a late answer
+   * still lands, and the caller parks the job instead of failing it (4 of the first 11
+   * escalations died as silent 'expired').
+   *
+   * `onReminder` fires every `remindMs` while nobody answers — silence reads as a dead conductor.
+   */
+  async waitEscalation(
+    id: number,
+    timeoutMs = 1000 * 60 * 30,
+    pollMs = 5000,
+    onReminder?: (waitedMs: number) => Promise<void>,
+    remindMs = 1000 * 60 * 10,
+  ): Promise<string> {
+    const startedAt = Date.now();
+    const deadline = startedAt + timeoutMs;
+    let nextReminder = startedAt + remindMs;
     for (;;) {
       const rows = await this.q<{ status: string }>('select status from ho_escalations where id=?', [id]);
       const st = rows[0]?.status ?? 'open';
       if (st !== 'open') return st;
-      if (Date.now() > deadline) {
-        await this.q("update ho_escalations set status='expired' where id=?", [id]);
-        return 'expired';
+      if (Date.now() > deadline) return 'timeout';
+      if (onReminder && Date.now() >= nextReminder) {
+        nextReminder = Date.now() + remindMs;
+        await onReminder(Date.now() - startedAt).catch(() => {});
       }
       await new Promise((r) => setTimeout(r, pollMs));
     }

@@ -16,6 +16,7 @@
  * mapped in ONE place — `mapSdkMessage()` — adjust there if the shape drifts. Everything else
  * depends only on our normalized Event type, which is unit-tested.
  */
+import { createHash } from 'node:crypto';
 import { query } from '@anthropic-ai/claude-agent-sdk';
 import { Store, Job, Step } from './store';
 import { evaluate, initState, BreakerState, BreakerLimits, DEFAULT_LIMITS, KIND_MIN_TURNS, Event } from './breaker';
@@ -30,6 +31,18 @@ const RESUME_BACKOFF_SECS = Number(process.env.HO_RESUME_BACKOFF_SECS ?? 3600); 
 const STALE_RUN_SECS = Number(process.env.HO_STALE_RUN_SECS ?? 900);            // requeue runs stuck this long
 /** Notify Telegram on the first pause, then every Nth — silence reads as "dead". */
 const PAUSE_HEARTBEAT_EVERY = Number(process.env.HO_PAUSE_HEARTBEAT_EVERY ?? 3);
+/** Extra turns granted when the human waves a `turns` escalation through. */
+const TURN_GRANT = Number(process.env.HO_TURN_GRANT ?? 60);
+/** How many times ONE run may be resumed by a human "continue" before we stop asking. */
+const MAX_CONTINUES = Number(process.env.HO_MAX_CONTINUES ?? 5);
+/** How long to wait for a human decision before parking the job (escalation stays open). */
+const ESC_WAIT_SECS = Number(process.env.HO_ESC_WAIT_SECS ?? 1800);
+/** Re-ping Telegram this often while an escalation sits unanswered. */
+const ESC_REMIND_SECS = Number(process.env.HO_ESC_REMIND_SECS ?? 600);
+/** How long a job sleeps after an unanswered escalation before it asks again. */
+const ESC_PARK_SECS = Number(process.env.HO_ESC_PARK_SECS ?? 1800);
+/** Give up (leave the job 'escalated') after this many unanswered park cycles. */
+const MAX_ESC_PARKS = Number(process.env.HO_MAX_ESC_PARKS ?? 8);
 
 /**
  * Backoff ladder for CONSECUTIVE no-progress rate-limit pauses, in seconds.
@@ -61,7 +74,8 @@ function limitsForJob(j: Job): BreakerLimits {
   return {
     maxTurns: Math.max(dbMax, kindMin),  // floor from kind, but never reduce a higher DB value
     maxWallSecs: j.max_wall_secs ?? DEFAULT_LIMITS.maxWallSecs,
-    stuckRepeats: DEFAULT_LIMITS.stuckRepeats,
+    stuckRepeats: Number(process.env.HO_STUCK_REPEATS ?? DEFAULT_LIMITS.stuckRepeats),
+    stuckRepeatsReadOnly: Number(process.env.HO_STUCK_REPEATS_READONLY ?? DEFAULT_LIMITS.stuckRepeatsReadOnly),
   };
 }
 
@@ -78,8 +92,48 @@ function firstStringValue(obj: Record<string, unknown>): string | undefined {
   return undefined;
 }
 
+/**
+ * Deterministic JSON. Key order must not change a digest, otherwise the SAME repeated tool
+ * call could hash differently and hide a genuine loop.
+ */
+function stableStringify(v: unknown): string {
+  if (v === null || typeof v !== 'object') return JSON.stringify(v) ?? 'null';
+  if (Array.isArray(v)) return `[${v.map(stableStringify).join(',')}]`;
+  const o = v as Record<string, unknown>;
+  return `{${Object.keys(o).sort().map((k) => `${JSON.stringify(k)}:${stableStringify(o[k])}`).join(',')}}`;
+}
+
+/** Chars of the target kept in the signature for human readability (the tail, so the basename survives). */
+const SIG_HINT_CHARS = 56;
+
+/**
+ * Build the turn signature: `<Tool>:<readable tail>#<digest of the whole input>`.
+ *
+ * THE DIGEST IS THE CORRECTNESS PART. The previous version truncated the target to its FIRST
+ * 80 chars, which is not a discriminator at all for deep paths: every file inside
+ *   /home/vadim_prod/3dlook-marketing/marketing_vb/workspace/outbound/campaigns/<slug>/…
+ * shares its first 80 chars (they end exactly at `campaigns/2026`), so six Reads of six
+ * DIFFERENT files collapsed to one signature and read as a loop. That killed job 37 on
+ * 2026-07-28 and accounted for 8 of the first 11 escalations ever raised.
+ *
+ * Hashing the full input is exact and fixed-length, and makes no assumption about which field
+ * happens to be the distinguishing one. The readable tail exists only so the Telegram
+ * escalation message still says something a human can act on.
+ */
+export function buildSignature(toolName: string, input: unknown): string {
+  const i = (input ?? {}) as Record<string, unknown>;
+  const target = i.file_path ?? i.path ?? i.url ?? i.command
+    ?? i.query                                              // WebSearch
+    ?? (Array.isArray(i.urls) ? i.urls[0] : undefined)      // WebFetch (urls array)
+    ?? firstStringValue(i)
+    ?? '';
+  const hint = String(target).slice(-SIG_HINT_CHARS);
+  const digest = createHash('sha1').update(stableStringify(input ?? null)).digest('hex').slice(0, 12);
+  return `${toolName}:${hint}#${digest}`;
+}
+
 /** Map a raw SDK message to our normalized breaker Event(s) + a log record. THE ONLY SDK-coupling point. */
-function mapSdkMessage(msg: any): { events: Event[]; type: string; toolName?: string; signature?: string } {
+export function mapSdkMessage(msg: any): { events: Event[]; type: string; toolName?: string; signature?: string } {
   const events: Event[] = [];
   let type = msg?.type ?? 'system';
   let toolName: string | undefined;
@@ -91,15 +145,7 @@ function mapSdkMessage(msg: any): { events: Event[]; type: string; toolName?: st
     const tu = Array.isArray(blocks) ? blocks.find((b: any) => b.type === 'tool_use') : null;
     if (tu) {
       toolName = tu.name;
-      // Extract a distinguishing target: try well-known fields first, then web-tool fields,
-      // then fall back to the first string value in the input. This prevents WebSearch/WebFetch
-      // calls from all collapsing to the same empty-target signature.
-      const target = tu.input?.file_path ?? tu.input?.path ?? tu.input?.url ?? tu.input?.command
-        ?? tu.input?.query   // WebSearch
-        ?? (Array.isArray(tu.input?.urls) ? tu.input.urls[0] : undefined)  // WebFetch (urls array)
-        ?? (tu.input ? firstStringValue(tu.input) : undefined)
-        ?? '';
-      signature = `${tu.name}:${String(target).slice(0, 80)}`;
+      signature = buildSignature(tu.name, tu.input);
     } else {
       signature = 'assistant:text';
     }
@@ -207,6 +253,17 @@ async function notifyPauseProgress(
     : `still rate-limited (${streak} tries, no progress) — next try in ~${mins} min`);
 }
 
+/** Nudge Telegram about an escalation nobody has answered yet. The buttons on the ORIGINAL
+ * message still work — the row stays 'open' — so this is a reminder, not a new question. */
+async function notifyEscalationWaiting(
+  tg: TelegramConfig | null, job: Job, escId: number, reason: string, waitedMs: number,
+): Promise<void> {
+  if (!tg) return;
+  const mins = Math.max(1, Math.round(waitedMs / 60000));
+  await notifyDone(tg, job.title, 'paused',
+    `still waiting on escalation #${escId} (${reason}) — ${mins} min, buttons above still work`);
+}
+
 export async function runOneJob(store: Store): Promise<boolean> {
   const job = await store.claimJob(WORKER_ID);
   if (!job) return false; // nothing to do
@@ -230,6 +287,39 @@ export async function runOneJob(store: Store): Promise<boolean> {
   let stopReason = 'completed';
   let finalStatus = 'done';
   let summary = '';
+  /** Set ONLY by an SDK `result` event saying the agent finished. Guards against reporting
+   * success because the stream merely ended or a human waved an escalation through. */
+  let sawCompletion = false;
+  let continues = 0;
+
+  /** Ask the human, reminding them while they are away. Returns the decision or 'timeout'. */
+  const askHuman = async (reason: string, detail: string, context: unknown): Promise<{ id: number; decision: string }> => {
+    const escId = await store.openEscalation(runId, job.id, reason, detail, context);
+    if (tg) await notifyEscalation(tg, { escalationId: escId, jobTitle: job.title, reason, question: detail, context });
+    const decision = await store.waitEscalation(
+      escId, ESC_WAIT_SECS * 1000, 5000,
+      (waited) => notifyEscalationWaiting(tg, job, escId, reason, waited),
+      ESC_REMIND_SECS * 1000,
+    );
+    return { id: escId, decision };
+  };
+
+  /**
+   * Nobody answered. Park the job (durable resume, escalation row left OPEN so a late tap still
+   * lands) rather than killing it. Returns false once we have parked too many times, so the
+   * caller settles the job as 'escalated' instead of nagging forever.
+   */
+  const parkAwaitingHuman = async (escId: number, reason: string): Promise<boolean> => {
+    const parks = await store.awaitHumanStreak(job.id, runId);
+    if (parks >= MAX_ESC_PARKS) return false;
+    const detail = `awaiting human on escalation #${escId} (${reason}) — park ${parks + 1}/${MAX_ESC_PARKS}`;
+    console.warn(`[${WORKER_ID}] job ${job.id} ${detail}`);
+    await store.deferJob(job.id, ESC_PARK_SECS);
+    await store.finishRun(runId, 'paused', 'await_human', state.turns, detail);
+    if (tg) await notifyDone(tg, job.title, 'paused',
+      `${detail} — will ask again in ~${Math.round(ESC_PARK_SECS / 60)} min`);
+    return true;
+  };
 
   try {
     const stream = query({
@@ -259,10 +349,14 @@ export async function runOneJob(store: Store): Promise<boolean> {
       // intercept ask-gated actions BEFORE they execute
       const gated = asksForGatedAction(signature);
       if (gated) {
-        const escId = await store.openEscalation(runId, job.id, 'ask_gate',
-          `Agent wants to run a gated action: ${gated}. Approve?`, { command: gated });
-        if (tg) await notifyEscalation(tg, { escalationId: escId, jobTitle: job.title, reason: 'ask_gate', question: gated, context: { command: gated } });
-        const decision = await store.waitEscalation(escId);
+        const { id: escId, decision } = await askHuman(
+          'ask_gate', `Agent wants to run a gated action: ${gated}. Approve?`, { command: gated });
+        if (decision === 'timeout') {
+          if (await parkAwaitingHuman(escId, 'ask_gate')) return true;
+          stopReason = 'ask_gate'; finalStatus = 'escalated';
+          summary = `gated action (${gated}) unanswered after ${MAX_ESC_PARKS} reminders`;
+          break;
+        }
         if (decision !== 'approved') {
           stopReason = 'ask_gate'; finalStatus = decision === 'aborted' ? 'aborted' : 'escalated';
           summary = `stopped at gated action (${gated}): human ${decision}`;
@@ -279,8 +373,14 @@ export async function runOneJob(store: Store): Promise<boolean> {
           // We take the wait from the ladder rather than d.backoffSecs: when the server
           // supplies retry_after the two agree, but when it does not the breaker falls
           // back to a flat 60s, which is what produced the hammering loop.
-          // A run that made turns is progressing, so its streak restarts at 0.
-          const streak = state.turns > 0 ? 0 : await store.noProgressPauseStreak(job.id, runId);
+          // A run that made turns is progressing, so its streak restarts at 0. Otherwise take
+          // the WORSE of this job's streak and the account-wide one: the usage window is shared,
+          // so a freshly claimed job must not restart the ladder at 60s after another job just
+          // proved the window is shut.
+          const streak = state.turns > 0 ? 0 : Math.max(
+            await store.noProgressPauseStreak(job.id, runId),
+            await store.globalNoProgressPauseStreak(runId),
+          );
           const serverRetry = ev.kind === 'rate_limit' ? ev.retryAfterSecs : undefined;
           const wait = backoffForStreak(streak, serverRetry);
           const detail = `rate limit — streak ${streak}, turns this run ${state.turns}, retry in ${wait}s`;
@@ -291,17 +391,44 @@ export async function runOneJob(store: Store): Promise<boolean> {
           return true;
         }
         if (d.action === 'escalate') {
-          const escId = await store.openEscalation(runId, job.id, d.reason, d.detail, { turns: state.turns });
-          if (tg) await notifyEscalation(tg, { escalationId: escId, jobTitle: job.title, reason: d.reason, question: d.detail });
-          const decision = await store.waitEscalation(escId);
-          finalStatus = decision === 'approved' ? 'done' : decision === 'aborted' ? 'aborted' : 'escalated';
+          const { id: escId, decision } = await askHuman(d.reason, d.detail, { turns: state.turns });
+
+          if (decision === 'timeout') {
+            if (await parkAwaitingHuman(escId, d.reason)) return true;
+            stopReason = d.reason; finalStatus = 'escalated';
+            summary = `${d.reason}: ${d.detail} — unanswered after ${MAX_ESC_PARKS} reminders`;
+            throw new BreakStop();
+          }
+
+          // "Approve" on a BREAKER escalation means CONTINUE — "no, it is not really stuck, keep
+          // going" — NOT "the job is finished". It used to mean the latter: job 37 (2026-07-28)
+          // was closed as `done` with a zero-work result_summary five seconds after the tap.
+          // There is no "mark done" decision on purpose: only the agent's own result event may
+          // declare success (see the sawCompletion guard below).
+          if (decision === 'approved') {
+            if (++continues > MAX_CONTINUES) {
+              stopReason = d.reason; finalStatus = 'escalated';
+              summary = `${d.reason}: ${d.detail} — continued ${MAX_CONTINUES}x already, stopping`;
+              throw new BreakStop();
+            }
+            // Clear the loop window, or the very same tail re-trips on the next turn.
+            state.recentSignatures.length = 0;
+            if (d.reason === 'turns') lim.maxTurns = state.turns + TURN_GRANT;
+            await store.setJobStatus(job.id, 'running');
+            console.log(`[${WORKER_ID}] job ${job.id} continued by human after ${d.reason} `
+              + `(${continues}/${MAX_CONTINUES}, turns ${state.turns}, cap ${lim.maxTurns})`);
+            continue;
+          }
+
+          finalStatus = decision === 'aborted' ? 'aborted' : 'escalated';
           stopReason = d.reason;
           summary = `${d.reason}: ${d.detail} — human ${decision}`;
           throw new BreakStop();
         }
         if (d.action === 'stop') {
           stopReason = d.reason;
-          finalStatus = d.reason === 'completed' ? 'done' : 'failed';
+          if (d.reason === 'completed') { finalStatus = 'done'; sawCompletion = true; }
+          else finalStatus = 'failed';
           summary = d.detail || stopReason;
           throw new BreakStop();
         }
@@ -326,10 +453,27 @@ export async function runOneJob(store: Store): Promise<boolean> {
     }
   }
 
-  await store.finishRun(runId,
-    finalStatus === 'done' ? 'done' : finalStatus === 'aborted' ? 'aborted' : 'failed',
-    stopReason, state.turns, finalStatus === 'failed' ? summary : undefined);
-  await store.finishJob(job.id, finalStatus, summary, finalStatus === 'failed' ? summary : undefined);
+  /**
+   * NEVER report success the agent did not claim. `finalStatus` starts at 'done', so any path
+   * that leaves it untouched — a stream that just ends, an escalation waved through — used to
+   * write a false success into result_summary and clear the resume session, making the job
+   * indistinguishable from real work (job 37, 2026-07-28). Only an SDK `result` event counts.
+   */
+  if (finalStatus === 'done' && !sawCompletion) {
+    finalStatus = 'escalated';
+    if (stopReason === 'completed') stopReason = 'no_result';
+    summary = summary
+      ? `${summary} — NOT marked done: no SDK result event`
+      : 'stream ended without an SDK result event — nothing proves the work finished';
+    console.warn(`[${WORKER_ID}] job ${job.id} withheld 'done': ${summary}`);
+  }
+
+  const runStatus = finalStatus === 'done' ? 'done'
+    : finalStatus === 'aborted' ? 'aborted'
+    : finalStatus === 'escalated' ? 'escalated' : 'failed';
+  const errText = finalStatus === 'done' || finalStatus === 'aborted' ? undefined : summary;
+  await store.finishRun(runId, runStatus, stopReason, state.turns, errText);
+  await store.finishJob(job.id, finalStatus, summary, errText);
   if (tg) await notifyDone(tg, job.title, finalStatus, summary || stopReason);
   return true;
 }

@@ -57,13 +57,31 @@
 ## Circuit breaker — условия (бюджета НЕТ; деньги не контролируем)
 | Триггер | Дефолт | Действие |
 |---|---|---|
-| **Stuck** (нет прогресса: те же файлы/tool-calls подряд) — основной контроль | 6 повторов | эскалация (зациклился) |
+| **Stuck** (нет прогресса: **идентичная** подпись хода подряд) — основной контроль | 6 повторов для мутирующих тулов (Edit/Write/Bash), 15 для read-only (Read/Grep/Glob/Web*/Task) | эскалация (зациклился) |
 | Ходы (turns) — runaway backstop | 300 | эскалация |
 | Wall-clock — runaway backstop | 4 ч | стоп, job=failed(timeout) |
 | RateLimit/token-лимит = rejected | — | **пауза + backoff → durable resume**, job=deferred |
 | RateLimit = allowed_warning | — | продолжить, снизить параллелизм |
 | Запрос ASK-действия (merge / destructive SQL / db push / terraform) | — | пауза, эскалация человеку. `git push` НЕ гейтится |
 | Падение процесса посреди прогона | `HO_STALE_RUN_SECS` | `ho_recover_stale()` → deferred с `session_id` → resume |
+
+### Подпись хода (turn signature) — от чего зависит stuck-детект
+`<Tool>:<хвост цели 56 симв.>#<sha1 всего input, 12 симв.>`. Дискриминирует **хеш полного input**, а не
+префикс. Раньше бралось `target.slice(0, 80)`, и все файлы внутри одной папки кампании
+(`…/outbound/campaigns/<slug>/…`, 128 симв.) давали ОДНУ подпись — 6 чтений разных файлов читались
+как цикл. Так 28.07.2026 умерла job 37; 8 из первых 11 эскалаций были этим ложным срабатыванием.
+
+### Семантика решений человека
+- `approve` на breaker-эскалации (`stuck`/`turns`) = **ПРОДОЛЖАЙ** (окно подписей очищается,
+  для `turns` лимит поднимается на `HO_TURN_GRANT`). Максимум `HO_MAX_CONTINUES` продолжений на прогон.
+- `deny` = стоп, job=`escalated` (человеку разбираться). `abort` = job=`aborted`.
+- **Решения «пометить done» нет намеренно.** Успех объявляет только сам агент событием `result`;
+  иначе job уходит в `escalated` со `stop_reason=no_result`. Раньше `approve` писал `done` с пустым
+  результатом — так job 37 закрылась «успешно», не сделав ничего.
+- Никто не ответил за `HO_ESC_WAIT_SECS` → job парkуется (`stop_reason=await_human`, resume-сессия
+  сохранена, строка эскалации остаётся `open`, поэтому кнопки в Telegram продолжают работать) и
+  спрашивает снова, до `HO_MAX_ESC_PARKS` раз. Раньше строка помечалась `expired`, кнопки немели, а
+  job тихо умирала.
 
 ## State-модель (SQLite/libSQL, см. sql/schema.sql) — минимальная, ради resume
 - `jobs` — очередь задач (queued/claimed/running/paused/done/failed/deferred/escalated/aborted) + `resume_session_id` + `attempts`.

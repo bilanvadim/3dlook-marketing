@@ -10,16 +10,39 @@
  */
 
 export interface BreakerLimits {
-  maxTurns: number;          // generous runaway backstop (NOT a budget)
-  maxWallSecs: number;       // generous per-run wall-clock backstop
-  stuckRepeats: number;      // identical-signature turns before declaring a loop
+  maxTurns: number;              // generous runaway backstop (NOT a budget)
+  maxWallSecs: number;           // generous per-run wall-clock backstop
+  stuckRepeats: number;          // identical-signature turns before declaring a loop (mutating tools)
+  stuckRepeatsReadOnly: number;  // ditto for read-only research tools — see READ_ONLY_TOOLS
 }
 
 export const DEFAULT_LIMITS: BreakerLimits = {
   maxTurns: 300,
   maxWallSecs: 4 * 60 * 60,  // 4h per contiguous run; longer waits handled by resume
   stuckRepeats: 6,
+  stuckRepeatsReadOnly: 15,
 };
+
+/**
+ * Tools whose repetition is normal research rather than a spin. An agent gathering context
+ * legitimately calls Read/Grep dozens of times in a row, and re-reads a file after editing it;
+ * only a MUTATING or EXECUTING tool repeating in place is a real runaway. Read-only calls
+ * therefore get a much longer rope (stuckRepeatsReadOnly).
+ *
+ * WHY: on 2026-07-28 job 37 was killed as "stuck" after 6 Reads of six DIFFERENT files in one
+ * campaign directory. The signature bug that made them look identical is fixed in conductor.ts,
+ * but a 6-repeat threshold on reads was the other half of the false positive.
+ */
+export const READ_ONLY_TOOLS = new Set([
+  'Read', 'Grep', 'Glob', 'NotebookRead', 'WebFetch', 'WebSearch', 'TodoWrite', 'Task',
+]);
+
+/** How many identical turns in a row it takes to call THIS signature a loop. */
+export function repeatsForSignature(sig: string, lim: BreakerLimits): number {
+  const i = sig.indexOf(':');
+  const tool = i < 0 ? sig : sig.slice(0, i);
+  return READ_ONLY_TOOLS.has(tool) ? lim.stuckRepeatsReadOnly : lim.stuckRepeats;
+}
 
 /**
  * Per-job-kind minimum turn limits. Some job kinds (content pipelines, features)
@@ -54,13 +77,19 @@ export function initState(): BreakerState {
  * signatures with no new files/results = spinning. Caller builds it from the event. */
 export function pushSignature(s: BreakerState, sig: string): void {
   s.recentSignatures.push(sig);
-  if (s.recentSignatures.length > 50) s.recentSignatures.shift();
+  // Window must stay comfortably above the largest threshold, or a raised
+  // stuckRepeatsReadOnly could never be reached because the tail got trimmed away.
+  if (s.recentSignatures.length > 200) s.recentSignatures.shift();
 }
 
-function isStuck(s: BreakerState, repeats: number): boolean {
-  if (s.recentSignatures.length < repeats) return false;
+/** Repeat count that tripped, or null when the tail is not a loop. */
+function stuckAfter(s: BreakerState, lim: BreakerLimits): number | null {
+  const last = s.recentSignatures[s.recentSignatures.length - 1];
+  if (!last) return null;
+  const repeats = repeatsForSignature(last, lim);
+  if (repeats <= 1 || s.recentSignatures.length < repeats) return null;
   const tail = s.recentSignatures.slice(-repeats);
-  return tail.every((x) => x === tail[0] && x !== '');
+  return tail.every((x) => x === tail[0] && x !== '') ? repeats : null;
 }
 
 export type Event =
@@ -95,9 +124,10 @@ export function evaluate(s: BreakerState, ev: Event, lim: BreakerLimits): Decisi
   if (ev.kind === 'turn') {
     s.turns += 1;
     pushSignature(s, ev.signature);
-    if (isStuck(s, lim.stuckRepeats)) {
+    const repeats = stuckAfter(s, lim);
+    if (repeats !== null) {
       return { action: 'escalate', reason: 'stuck',
-               detail: `loop: repeated ${lim.stuckRepeats}x: ${s.recentSignatures.slice(-1)[0]}` };
+               detail: `loop: repeated ${repeats}x: ${s.recentSignatures[s.recentSignatures.length - 1]}` };
     }
     const wall = (Date.now() - s.startedAtMs) / 1000;
     if (wall >= lim.maxWallSecs) {

@@ -1,4 +1,4 @@
-import { evaluate, initState, DEFAULT_LIMITS, BreakerLimits } from '../src/core/breaker';
+import { evaluate, initState, DEFAULT_LIMITS, BreakerLimits, repeatsForSignature } from '../src/core/breaker';
 
 let pass = 0, fail = 0;
 function check(name: string, cond: boolean) {
@@ -64,6 +64,56 @@ const L: BreakerLimits = { ...DEFAULT_LIMITS, maxTurns: 5, maxWallSecs: 999, stu
   const s = initState();
   const d: any = evaluate(s, { kind: 'result', ok: false, detail: 'boom' }, L);
   check('result: error -> stop error', d.action === 'stop' && d.reason === 'error');
+}
+
+// ---- read-only tools get a longer rope (2026-07-28 job 37 false positive) ----
+// Reading files IS how an agent gathers context; six reads in a row is research, not a spin.
+const RO: BreakerLimits = { ...DEFAULT_LIMITS, maxTurns: 500, maxWallSecs: 999, stuckRepeats: 3, stuckRepeatsReadOnly: 10 };
+
+// 10. threshold is chosen per tool, from the signature prefix
+check('repeatsFor: Read uses the read-only threshold', repeatsForSignature('Read:a.md#deadbeef', RO) === 10);
+check('repeatsFor: Grep uses the read-only threshold', repeatsForSignature('Grep:foo#deadbeef', RO) === 10);
+check('repeatsFor: Edit uses the mutating threshold', repeatsForSignature('Edit:a.ts#deadbeef', RO) === 3);
+check('repeatsFor: Bash uses the mutating threshold', repeatsForSignature('Bash:rm -rf x#deadbeef', RO) === 3);
+check('repeatsFor: a signature with no colon still resolves', repeatsForSignature('weird', RO) === 3);
+
+// 11. the mutating threshold must NOT be applied to reads
+{
+  const s = initState();
+  let d: any;
+  for (let i = 0; i < 9; i++) d = evaluate(s, { kind: 'turn', signature: 'Read:same.md#deadbeef' }, RO);
+  check('read-only: 9 identical reads still continue (mutating limit is 3)', d.action === 'continue');
+  d = evaluate(s, { kind: 'turn', signature: 'Read:same.md#deadbeef' }, RO);
+  check('read-only: the 10th identical read escalates', d.action === 'escalate' && d.reason === 'stuck');
+  check('read-only: detail reports the threshold that tripped', /repeated 10x/.test(d.detail));
+}
+
+// 12. a mutating tool spinning in place is still caught fast — that is the control we keep
+{
+  const s = initState();
+  let d: any;
+  for (let i = 0; i < 3; i++) d = evaluate(s, { kind: 'turn', signature: 'Edit:a.ts#deadbeef' }, RO);
+  check('mutating: 3 identical edits escalate', d.action === 'escalate' && d.reason === 'stuck');
+  check('mutating: detail reports the mutating threshold', /repeated 3x/.test(d.detail));
+}
+
+// 13. distinct reads never trip, however many — the job-37 shape
+{
+  const s = initState();
+  let d: any;
+  for (let i = 0; i < 60; i++) d = evaluate(s, { kind: 'turn', signature: `Read:file${i}.md#hash${i}` }, RO);
+  check('read-only: 60 DIFFERENT reads never trip loop detection', d.action === 'continue');
+}
+
+// 14. an interleaved read breaks a mutating streak (tail-based, not count-based)
+{
+  const s = initState();
+  let d: any;
+  evaluate(s, { kind: 'turn', signature: 'Edit:a.ts#1' }, RO);
+  evaluate(s, { kind: 'turn', signature: 'Edit:a.ts#1' }, RO);
+  evaluate(s, { kind: 'turn', signature: 'Read:b.md#2' }, RO);
+  d = evaluate(s, { kind: 'turn', signature: 'Edit:a.ts#1' }, RO);
+  check('tail-based: an interleaved turn breaks the streak', d.action === 'continue');
 }
 
 console.log(`\n${pass} passed, ${fail} failed`);

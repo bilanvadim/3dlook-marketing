@@ -72,8 +72,23 @@ async function main() {
   // escalation round-trip
   const runId = await store.startRun(jobId);
   const escId = await store.openEscalation(runId, jobId, 'ask_gate', 'deploy?', { cmd: 'vercel deploy' });
-  const st = await store.waitEscalation(escId, 100, 20); // will time out → 'expired'
-  check('waitEscalation times out to expired when undecided', st === 'expired');
+  const st = await store.waitEscalation(escId, 100, 20);
+  check('waitEscalation returns the timeout sentinel when undecided', st === 'timeout');
+  // It must NOT mark the row expired: handleCallback only writes `where status='open'`, so an
+  // expired row makes the Telegram buttons silently dead while the job is already gone.
+  const stillOpen = await raw.execute({ sql: 'select status from ho_escalations where id=?', args: [escId] });
+  check('waitEscalation leaves the row OPEN so a late button tap still lands',
+        String(stillOpen.rows[0].status) === 'open');
+
+  // reminders fire while nobody answers — silence reads as a dead conductor
+  let reminders = 0;
+  await store.waitEscalation(escId, 260, 20, async () => { reminders++; }, 50);
+  check('waitEscalation nudges via onReminder while waiting', reminders >= 2);
+
+  // a decision recorded mid-wait is picked up
+  await raw.execute({ sql: "update ho_escalations set status='approved' where id=?", args: [escId] });
+  check('waitEscalation returns the recorded decision',
+        (await store.waitEscalation(escId, 100, 20)) === 'approved');
 
   // project status surface
   const ps = await store.projectStatus(jobId);
@@ -120,6 +135,44 @@ async function main() {
   const afterError = await addRun('running', null, 0);
   check('a non-ratelimit failure does not extend the streak',
         (await store.noProgressPauseStreak(streakJob, afterError)) === 0);
+
+  // ---- globalNoProgressPauseStreak: a usage window is an ACCOUNT resource ----
+  // 2026-07-28: job 35 proved the window was shut, then job 36 was claimed and restarted its
+  // ladder from 56s, burning five more attempts. The global streak carries that knowledge over.
+  await raw.execute({
+    sql: "insert into ho_jobs(kind,title,prompt,profile,work_dir) values('feature','other','p','marketing_vb_sm','/tmp')",
+    args: [],
+  });
+  const otherJob = Number((await raw.execute('select max(id) as id from ho_jobs')).rows[0].id as number);
+  const addRunFor = async (job: number, status: string, stop: string | null, turns: number): Promise<number> => {
+    const r = await raw.execute({
+      sql: 'insert into ho_runs(job_id,attempt,status,stop_reason,turns) values(?,1,?,?,?)',
+      args: [job, status, stop, turns],
+    });
+    return Number(r.lastInsertRowid);
+  };
+  await addRunFor(streakJob, 'paused', 'ratelimit', 0);
+  await addRunFor(streakJob, 'paused', 'ratelimit', 0);
+  await addRunFor(streakJob, 'paused', 'ratelimit', 0);
+  const freshCursor = await addRunFor(otherJob, 'running', null, 0);
+  check('a freshly claimed job sees a per-job streak of 0',
+        (await store.noProgressPauseStreak(otherJob, freshCursor)) === 0);
+  check('…but inherits the account-wide streak of 3',
+        (await store.globalNoProgressPauseStreak(freshCursor)) === 3);
+
+  await addRunFor(otherJob, 'done', 'completed', 12);
+  const afterGlobalProgress = await addRunFor(otherJob, 'running', null, 0);
+  check('any run that made progress clears the global streak',
+        (await store.globalNoProgressPauseStreak(afterGlobalProgress)) === 0);
+
+  // ---- awaitHumanStreak: bounds the ask → park → ask cycle ----
+  await addRunFor(streakJob, 'paused', 'await_human', 0);
+  await addRunFor(streakJob, 'paused', 'await_human', 7);   // turns must NOT reset this one
+  const parkCursor = await addRunFor(streakJob, 'running', null, 0);
+  check('awaitHumanStreak counts parks regardless of turns made',
+        (await store.awaitHumanStreak(streakJob, parkCursor)) === 2);
+  check('awaitHumanStreak ignores rate-limit pauses',
+        (await store.awaitHumanStreak(otherJob, afterGlobalProgress)) === 0);
 
   raw.close();
   await store.close();

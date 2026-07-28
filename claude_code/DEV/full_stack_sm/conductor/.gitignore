@@ -2,3 +2,6 @@ node_modules/
 .env
 *.log
 dist/
+# throwaway DBs from store.test.ts (left behind if a run is interrupted mid-test).
+# ho.db itself is covered by the repo-root .gitignore.
+test/.store-test-*
