@@ -86,6 +86,41 @@ async function main() {
   const n = await store.recoverStale(900);
   check('recoverStale requeues the crashed job', n === 1);
 
+  // ---- noProgressPauseStreak: drives the rate-limit backoff ladder in conductor.ts ----
+  // Regression guard for the 2026-07-27 loop (job 30: 193 zero-turn paused runs in 3h22m).
+  await raw.execute({
+    sql: "insert into ho_jobs(kind,title,prompt,profile,work_dir) values('feature','streak','p','marketing_vb_sm','/tmp')",
+    args: [],
+  });
+  const streakJob = Number((await raw.execute('select max(id) as id from ho_jobs')).rows[0].id as number);
+  const addRun = async (status: string, stop: string | null, turns: number): Promise<number> => {
+    const r = await raw.execute({
+      sql: 'insert into ho_runs(job_id,attempt,status,stop_reason,turns) values(?,1,?,?,?)',
+      args: [streakJob, status, stop, turns],
+    });
+    return Number(r.lastInsertRowid);
+  };
+
+  check('streak is 0 with no history', (await store.noProgressPauseStreak(streakJob, 1)) === 0);
+
+  await addRun('paused', 'ratelimit', 0);   // older — must NOT be counted…
+  await addRun('paused', 'ratelimit', 13);  // …because this run made progress, breaking the streak
+  await addRun('paused', 'ratelimit', 0);
+  await addRun('paused', 'ratelimit', 0);
+  const cursor = await addRun('running', null, 0);
+  check('streak counts only the trailing zero-turn pauses',
+        (await store.noProgressPauseStreak(streakJob, cursor)) === 2);
+
+  await addRun('done', 'completed', 5);
+  const afterSuccess = await addRun('running', null, 0);
+  check('streak resets after a run that succeeded',
+        (await store.noProgressPauseStreak(streakJob, afterSuccess)) === 0);
+
+  await addRun('failed', 'error', 0);
+  const afterError = await addRun('running', null, 0);
+  check('a non-ratelimit failure does not extend the streak',
+        (await store.noProgressPauseStreak(streakJob, afterError)) === 0);
+
   raw.close();
   await store.close();
   rmSync(DB_PATH, { force: true });

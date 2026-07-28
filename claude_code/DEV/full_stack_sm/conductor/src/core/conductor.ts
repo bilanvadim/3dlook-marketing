@@ -26,8 +26,29 @@ import { tgConfigFromEnv, notifyEscalation, notifyDone, TelegramConfig } from '.
 import { startWebhookServer, startTelegramPolling } from '../escalation/bot-callback';
 
 const WORKER_ID = process.env.HO_WORKER_ID ?? `ho-${process.pid}`;
-const RESUME_BACKOFF_SECS = Number(process.env.HO_RESUME_BACKOFF_SECS ?? 3600); // wait when limit gives no retry-after
+const RESUME_BACKOFF_SECS = Number(process.env.HO_RESUME_BACKOFF_SECS ?? 3600); // result-shaped / thrown limit errors
 const STALE_RUN_SECS = Number(process.env.HO_STALE_RUN_SECS ?? 900);            // requeue runs stuck this long
+/** Notify Telegram on the first pause, then every Nth — silence reads as "dead". */
+const PAUSE_HEARTBEAT_EVERY = Number(process.env.HO_PAUSE_HEARTBEAT_EVERY ?? 3);
+
+/**
+ * Backoff ladder for CONSECUTIVE no-progress rate-limit pauses, in seconds.
+ * The last entry repeats forever.
+ *
+ * WHY A LADDER: the structured `rate_limit` SDK message usually carries no `retry_after`,
+ * so breaker.ts falls back to a flat 60s. Anthropic's usage windows are measured in HOURS,
+ * so 60s retries can never clear one — on 2026-07-27 job 30 burned 193 zero-turn runs over
+ * 3h22m waiting out a 5-hour window. The ladder waits out the same window in ~8 attempts.
+ * Capped at 30 min so a job never idles longer than that once the window actually clears.
+ */
+const PAUSE_LADDER = [60, 300, 900, Number(process.env.HO_PAUSE_MAX_BACKOFF_SECS ?? 1800)];
+
+/** Pick the wait before re-claiming a rate-limited job. A server-supplied retry_after always wins. */
+export function backoffForStreak(streak: number, retryAfterSecs?: number): number {
+  if (retryAfterSecs && retryAfterSecs > 0) return retryAfterSecs;
+  const base = PAUSE_LADDER[Math.min(Math.max(streak, 0), PAUSE_LADDER.length - 1)];
+  return Math.max(30, Math.round(base * (0.8 + Math.random() * 0.4))); // ±20% jitter, de-synchronises workers
+}
 const HERMES_SYSTEM_PROMPT =
   'You are the Fullstack-agents orchestrator described in this project\'s CLAUDE.md. Plan, delegate to ' +
   'the specialized subagents, coordinate via the scratchpad protocol, and run the quality gate ' +
@@ -169,17 +190,21 @@ async function runJobAsSteps(store: Store, job: Job, tg: TelegramConfig | null):
 }
 
 /**
- * Push the "job paused — will resume" notice only on the FIRST pause of a rate-limit
- * streak. A deferred job is re-claimed and resumed every ~1 min; without this, every
- * cycle would fire a Telegram message. The done/failed/escalation notifications are
- * unaffected — only the repeat "paused" pushes are suppressed.
+ * Push the "job paused — will resume" notice on the FIRST pause of a rate-limit streak,
+ * then as a HEARTBEAT every Nth pause. Notifying every cycle spams Telegram; notifying
+ * only once (the previous behaviour) left a 3.5h silence after a message promising to
+ * resume "in ~1 min", which reads as a dead conductor. The done/failed/escalation
+ * notifications are unaffected.
  */
-async function notifyPauseOnce(
-  tg: ReturnType<typeof tgConfigFromEnv>, store: Store, job: Job, runId: number, detail: string,
+async function notifyPauseProgress(
+  tg: ReturnType<typeof tgConfigFromEnv>, job: Job, streak: number, waitSecs: number,
 ): Promise<void> {
   if (!tg) return;
-  if (await store.prevRunWasRateLimited(job.id, runId)) return; // repeat pause → stay quiet
-  await notifyDone(tg, job.title, 'paused', detail);
+  if (streak > 0 && streak % PAUSE_HEARTBEAT_EVERY !== 0) return; // between heartbeats → stay quiet
+  const mins = Math.max(1, Math.round(waitSecs / 60));
+  await notifyDone(tg, job.title, 'paused', streak === 0
+    ? `rate/token limit — will resume in ~${mins} min`
+    : `still rate-limited (${streak} tries, no progress) — next try in ~${mins} min`);
 }
 
 export async function runOneJob(store: Store): Promise<boolean> {
@@ -250,11 +275,19 @@ export async function runOneJob(store: Store): Promise<boolean> {
         const d = evaluate(state, ev, lim);
         if (d.action === 'continue') continue;
         if (d.action === 'pause') {
-          // token/rate limit → defer WITH session id; a later claim resumes it
-          await store.deferJob(job.id, d.backoffSecs);
-          await store.finishRun(runId, 'paused', 'ratelimit', state.turns);
-          await notifyPauseOnce(tg, store, job, runId,
-            `rate/token limit — will resume in ~${Math.round(d.backoffSecs / 60)} min`);
+          // Token/rate limit → defer WITH session id; a later claim resumes it.
+          // We take the wait from the ladder rather than d.backoffSecs: when the server
+          // supplies retry_after the two agree, but when it does not the breaker falls
+          // back to a flat 60s, which is what produced the hammering loop.
+          // A run that made turns is progressing, so its streak restarts at 0.
+          const streak = state.turns > 0 ? 0 : await store.noProgressPauseStreak(job.id, runId);
+          const serverRetry = ev.kind === 'rate_limit' ? ev.retryAfterSecs : undefined;
+          const wait = backoffForStreak(streak, serverRetry);
+          const detail = `rate limit — streak ${streak}, turns this run ${state.turns}, retry in ${wait}s`;
+          console.warn(`[${WORKER_ID}] job ${job.id} paused: ${detail}`);
+          await store.deferJob(job.id, wait);
+          await store.finishRun(runId, 'paused', 'ratelimit', state.turns, detail);
+          await notifyPauseProgress(tg, job, streak, wait);
           return true;
         }
         if (d.action === 'escalate') {
@@ -278,11 +311,15 @@ export async function runOneJob(store: Store): Promise<boolean> {
     if (!(err instanceof BreakStop)) {
       const detail = String(err).slice(0, 500);
       if (isLimitError(detail)) {
-        // thrown limit error → pause + resume rather than fail
-        await store.deferJob(job.id, RESUME_BACKOFF_SECS);
-        await store.finishRun(runId, 'paused', 'ratelimit', state.turns, detail);
-        await notifyPauseOnce(tg, store, job, runId,
-          `limit hit — will resume in ~${Math.round(RESUME_BACKOFF_SECS / 60)} min`);
+        // Thrown limit error → pause + resume rather than fail. Same ladder as the
+        // structured path: isLimitError also matches transient "overloaded", which clears
+        // in seconds, so a flat RESUME_BACKOFF_SECS (1h) idled the job far longer than needed.
+        const streak = state.turns > 0 ? 0 : await store.noProgressPauseStreak(job.id, runId);
+        const wait = backoffForStreak(streak);
+        console.warn(`[${WORKER_ID}] job ${job.id} paused on thrown limit: streak ${streak}, retry in ${wait}s — ${detail}`);
+        await store.deferJob(job.id, wait);
+        await store.finishRun(runId, 'paused', 'ratelimit', state.turns, `${detail} (streak ${streak}, retry in ${wait}s)`);
+        await notifyPauseProgress(tg, job, streak, wait);
         return true;
       }
       finalStatus = 'failed'; stopReason = 'error'; summary = detail;

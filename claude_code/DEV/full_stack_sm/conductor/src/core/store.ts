@@ -179,18 +179,27 @@ export class Store {
   }
 
   /**
-   * True if this job's run immediately before `beforeRunId` also ended paused on a
-   * rate/token limit. Used to push the "paused — will resume" notice only on the FIRST
-   * pause of a limit streak: a deferred job is re-claimed every ~1 min, so notifying on
-   * every cycle spams Telegram. DB-backed, so it survives a conductor restart.
+   * How many runs IMMEDIATELY before `beforeRunId` ended paused on a rate limit without
+   * making a single turn. The streak resets the moment any run made progress (turns > 0)
+   * or ended for another reason, so a job that is genuinely inching forward is never
+   * penalised. Feeds the pause backoff ladder in conductor.ts.
+   *
+   * WHY: a flat backoff re-claims a limited job every ~60s. Anthropic's windows are hours
+   * long, so that produced 193 zero-turn runs over 3h22m on job 30 (2026-07-27) — pure
+   * API hammering with no work done, and no record of why. DB-backed so it survives a
+   * conductor restart; the 50-row window is far above any sane streak.
    */
-  async prevRunWasRateLimited(jobId: number, beforeRunId: number): Promise<boolean> {
-    const rows = await this.q<{ status: string; stop_reason: string | null }>(
-      'select status, stop_reason from ho_runs where job_id=? and id<? order by id desc limit 1',
+  async noProgressPauseStreak(jobId: number, beforeRunId: number): Promise<number> {
+    const rows = await this.q<{ status: string; stop_reason: string | null; turns: number }>(
+      'select status, stop_reason, turns from ho_runs where job_id=? and id<? order by id desc limit 50',
       [jobId, beforeRunId],
     );
-    const r = rows[0];
-    return r?.status === 'paused' && r?.stop_reason === 'ratelimit';
+    let n = 0;
+    for (const r of rows) {
+      if (r.status === 'paused' && r.stop_reason === 'ratelimit' && Number(r.turns) === 0) n += 1;
+      else break;
+    }
+    return n;
   }
 
   async openEscalation(runId: number, jobId: number, reason: string, question: string, context: unknown): Promise<number> {
