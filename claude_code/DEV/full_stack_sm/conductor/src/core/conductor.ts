@@ -29,8 +29,22 @@ import { startWebhookServer, startTelegramPolling } from '../escalation/bot-call
 const WORKER_ID = process.env.HO_WORKER_ID ?? `ho-${process.pid}`;
 const RESUME_BACKOFF_SECS = Number(process.env.HO_RESUME_BACKOFF_SECS ?? 3600); // result-shaped / thrown limit errors
 const STALE_RUN_SECS = Number(process.env.HO_STALE_RUN_SECS ?? 900);            // requeue runs stuck this long
-/** Notify Telegram on the first pause, then every Nth — silence reads as "dead". */
-const PAUSE_HEARTBEAT_EVERY = Number(process.env.HO_PAUSE_HEARTBEAT_EVERY ?? 3);
+/**
+ * Turns a run must make before we treat it as REAL progress against a usage window.
+ *
+ * WHY NOT 1: on an exhausted window the agent still pushes 2–5 turns through before the limit
+ * bites. Treating "any turn at all" as progress reset the streak to 0 on every pause, which held
+ * the backoff at its first rung (~50s) and re-armed the "first pause" Telegram notice each time —
+ * job 41 on 2026-07-28 produced 6 pauses in 7 minutes, all streak 0, one message each. A couple of
+ * turns is not the window opening, it is the run-up to the same wall.
+ */
+const MIN_PROGRESS_TURNS = Number(process.env.HO_MIN_PROGRESS_TURNS ?? 10);
+/**
+ * Only announce a rate-limit pause when the wait is long enough to be worth a human's attention
+ * (or when it is this job's first). Throttling on the STREAK could never work: the streak is
+ * exactly the thing that breaks when the signal is wrong.
+ */
+const PAUSE_NOTIFY_MIN_SECS = Number(process.env.HO_PAUSE_NOTIFY_MIN_SECS ?? 600);
 /** Extra turns granted when the human waves a `turns` escalation through. */
 const TURN_GRANT = Number(process.env.HO_TURN_GRANT ?? 60);
 /** How many times ONE run may be resumed by a human "continue" before we stop asking. */
@@ -236,17 +250,25 @@ async function runJobAsSteps(store: Store, job: Job, tg: TelegramConfig | null):
 }
 
 /**
- * Push the "job paused — will resume" notice on the FIRST pause of a rate-limit streak,
- * then as a HEARTBEAT every Nth pause. Notifying every cycle spams Telegram; notifying
- * only once (the previous behaviour) left a 3.5h silence after a message promising to
- * resume "in ~1 min", which reads as a dead conductor. The done/failed/escalation
- * notifications are unaffected.
+ * Push the "job paused — will resume" notice when it carries information: the job's FIRST
+ * rate-limit pause, or any wait long enough that silence would read as a dead conductor.
+ * Short retries stay quiet.
+ *
+ * This used to key off the streak (`first pause, then every Nth`), which inverted under load:
+ * with the streak wrongly pinned at 0 every pause looked like a first pause, so a job retrying
+ * every ~50s sent a Telegram message every ~50s. Gating on the WAIT WE ARE ABOUT TO TAKE is
+ * self-limiting — the ladder caps at 30 min, so a genuine hours-long outage reports every rung
+ * and a fast retry loop reports nothing.
  */
+export function shouldNotifyPause(waitSecs: number, isFirstPause: boolean): boolean {
+  return isFirstPause || waitSecs >= PAUSE_NOTIFY_MIN_SECS;
+}
+
 async function notifyPauseProgress(
-  tg: ReturnType<typeof tgConfigFromEnv>, job: Job, streak: number, waitSecs: number,
+  tg: ReturnType<typeof tgConfigFromEnv>, job: Job, streak: number, waitSecs: number, isFirstPause: boolean,
 ): Promise<void> {
   if (!tg) return;
-  if (streak > 0 && streak % PAUSE_HEARTBEAT_EVERY !== 0) return; // between heartbeats → stay quiet
+  if (!shouldNotifyPause(waitSecs, isFirstPause)) return; // short retry → stay quiet
   const mins = Math.max(1, Math.round(waitSecs / 60));
   await notifyDone(tg, job.title, 'paused', streak === 0
     ? `rate/token limit — will resume in ~${mins} min`
@@ -373,21 +395,24 @@ export async function runOneJob(store: Store): Promise<boolean> {
           // We take the wait from the ladder rather than d.backoffSecs: when the server
           // supplies retry_after the two agree, but when it does not the breaker falls
           // back to a flat 60s, which is what produced the hammering loop.
-          // A run that made turns is progressing, so its streak restarts at 0. Otherwise take
-          // the WORSE of this job's streak and the account-wide one: the usage window is shared,
-          // so a freshly claimed job must not restart the ladder at 60s after another job just
-          // proved the window is shut.
-          const streak = state.turns > 0 ? 0 : Math.max(
-            await store.noProgressPauseStreak(job.id, runId),
-            await store.globalNoProgressPauseStreak(runId),
+          // A run that made REAL progress (>= MIN_PROGRESS_TURNS) proves the window is open, so
+          // its streak restarts at 0. A run that only managed a turn or two hit the same wall and
+          // must keep climbing. Otherwise take the WORSE of this job's streak and the account-wide
+          // one: the usage window is shared, so a freshly claimed job must not restart the ladder
+          // at 60s after another job just proved the window is shut.
+          const madeProgress = state.turns >= MIN_PROGRESS_TURNS;
+          const streak = madeProgress ? 0 : Math.max(
+            await store.noProgressPauseStreak(job.id, runId, MIN_PROGRESS_TURNS),
+            await store.globalNoProgressPauseStreak(runId, MIN_PROGRESS_TURNS),
           );
+          const isFirstPause = (await store.ratelimitPauseCount(job.id, runId)) === 0;
           const serverRetry = ev.kind === 'rate_limit' ? ev.retryAfterSecs : undefined;
           const wait = backoffForStreak(streak, serverRetry);
           const detail = `rate limit — streak ${streak}, turns this run ${state.turns}, retry in ${wait}s`;
           console.warn(`[${WORKER_ID}] job ${job.id} paused: ${detail}`);
           await store.deferJob(job.id, wait);
           await store.finishRun(runId, 'paused', 'ratelimit', state.turns, detail);
-          await notifyPauseProgress(tg, job, streak, wait);
+          await notifyPauseProgress(tg, job, streak, wait, isFirstPause);
           return true;
         }
         if (d.action === 'escalate') {
@@ -441,12 +466,16 @@ export async function runOneJob(store: Store): Promise<boolean> {
         // Thrown limit error → pause + resume rather than fail. Same ladder as the
         // structured path: isLimitError also matches transient "overloaded", which clears
         // in seconds, so a flat RESUME_BACKOFF_SECS (1h) idled the job far longer than needed.
-        const streak = state.turns > 0 ? 0 : await store.noProgressPauseStreak(job.id, runId);
+        const streak = state.turns >= MIN_PROGRESS_TURNS ? 0 : Math.max(
+          await store.noProgressPauseStreak(job.id, runId, MIN_PROGRESS_TURNS),
+          await store.globalNoProgressPauseStreak(runId, MIN_PROGRESS_TURNS),
+        );
+        const isFirstPause = (await store.ratelimitPauseCount(job.id, runId)) === 0;
         const wait = backoffForStreak(streak);
         console.warn(`[${WORKER_ID}] job ${job.id} paused on thrown limit: streak ${streak}, retry in ${wait}s — ${detail}`);
         await store.deferJob(job.id, wait);
         await store.finishRun(runId, 'paused', 'ratelimit', state.turns, `${detail} (streak ${streak}, retry in ${wait}s)`);
-        await notifyPauseProgress(tg, job, streak, wait);
+        await notifyPauseProgress(tg, job, streak, wait, isFirstPause);
         return true;
       }
       finalStatus = 'failed'; stopReason = 'error'; summary = detail;

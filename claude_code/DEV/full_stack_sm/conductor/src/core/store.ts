@@ -189,8 +189,26 @@ export class Store {
    * API hammering with no work done, and no record of why. DB-backed so it survives a
    * conductor restart; the 50-row window is far above any sane streak.
    */
-  async noProgressPauseStreak(jobId: number, beforeRunId: number): Promise<number> {
-    return this.trailingPausedStreak(beforeRunId, 'ratelimit', jobId, true);
+  /**
+   * `progressTurns` is the number of turns a run must have made to count as REAL progress and
+   * break the streak. It is not 1 by accident of history: on an exhausted usage window an agent
+   * still gets a couple of turns through before the limit bites, so "made any turn at all" is a
+   * false signal for "the window is open" — it pinned the streak at 0, held the backoff at ~50s
+   * and made every pause look like a first pause (job 41, 2026-07-28: 6 pauses in 7 minutes, all
+   * streak 0, one Telegram message each). Callers pass the real threshold; 1 keeps the original
+   * turns-must-be-zero meaning.
+   */
+  async noProgressPauseStreak(jobId: number, beforeRunId: number, progressTurns = 1): Promise<number> {
+    return this.trailingPausedStreak(beforeRunId, 'ratelimit', jobId, progressTurns);
+  }
+
+  /** How many times this job has already been paused by a rate limit. 0 → this pause is its first. */
+  async ratelimitPauseCount(jobId: number, beforeRunId: number): Promise<number> {
+    const rows = await this.q<{ n: number }>(
+      "select count(*) as n from ho_runs where job_id=? and id<? and status='paused' and stop_reason='ratelimit'",
+      [jobId, beforeRunId],
+    );
+    return Number(rows[0]?.n ?? 0);
   }
 
   /**
@@ -200,8 +218,8 @@ export class Store {
    * pointless attempts. Callers take max(per-job, global) so a fresh job inherits what the
    * previous one already learned.
    */
-  async globalNoProgressPauseStreak(beforeRunId: number): Promise<number> {
-    return this.trailingPausedStreak(beforeRunId, 'ratelimit', null, true);
+  async globalNoProgressPauseStreak(beforeRunId: number, progressTurns = 1): Promise<number> {
+    return this.trailingPausedStreak(beforeRunId, 'ratelimit', null, progressTurns);
   }
 
   /**
@@ -210,12 +228,16 @@ export class Store {
    * eventually settles instead of nagging forever.
    */
   async awaitHumanStreak(jobId: number, beforeRunId: number): Promise<number> {
-    return this.trailingPausedStreak(beforeRunId, 'await_human', jobId, false);
+    return this.trailingPausedStreak(beforeRunId, 'await_human', jobId, null);
   }
 
-  /** Count the unbroken tail of paused runs matching `stopReason` (optionally scoped to one job). */
+  /**
+   * Count the unbroken tail of paused runs matching `stopReason` (optionally scoped to one job).
+   * `progressTurns`: a run with `turns >= progressTurns` made real progress and breaks the streak;
+   * `null` means ignore turns entirely.
+   */
   private async trailingPausedStreak(
-    beforeRunId: number, stopReason: string, jobId: number | null, requireZeroTurns: boolean,
+    beforeRunId: number, stopReason: string, jobId: number | null, progressTurns: number | null,
   ): Promise<number> {
     const rows = await this.q<{ status: string; stop_reason: string | null; turns: number }>(
       jobId === null
@@ -225,8 +247,8 @@ export class Store {
     );
     let n = 0;
     for (const r of rows) {
-      const zeroOk = !requireZeroTurns || Number(r.turns) === 0;
-      if (r.status === 'paused' && r.stop_reason === stopReason && zeroOk) n += 1;
+      const noProgress = progressTurns === null || Number(r.turns) < progressTurns;
+      if (r.status === 'paused' && r.stop_reason === stopReason && noProgress) n += 1;
       else break;
     }
     return n;

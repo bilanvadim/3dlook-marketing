@@ -6,7 +6,7 @@
  * 193 zero-turn runs over 3h22m re-claiming itself every ~63s against a 5-hour window.
  * The ladder must grow, must cap, and must always yield to a server-supplied retry_after.
  */
-import { backoffForStreak } from '../src/core/conductor';
+import { backoffForStreak, shouldNotifyPause } from '../src/core/conductor';
 
 let pass = 0, fail = 0;
 function check(name: string, cond: boolean) {
@@ -54,6 +54,19 @@ check('jitter de-synchronises retries', new Set(Array.from({ length: 50 }, () =>
 let waited = 0, attempts = 0;
 while (waited < 5 * 3600 && attempts < 100) { waited += backoffForStreak(attempts); attempts++; }
 check(`clears a 5h window in <15 attempts (took ${attempts})`, attempts < 15);
+
+// ---- Telegram pause notice gating ----
+// REGRESSION GUARD for the 2026-07-28 spam: job 41 ("Telehealth Hub — Full Publish Pack v3")
+// paused 6 times in 7 minutes, every one at streak 0, and the old streak-parity gate read every
+// one as a "first pause" → a Telegram message every ~50s. The gate now keys off the WAIT.
+check('first pause always reports', shouldNotifyPause(50, true));
+check('a short retry stays quiet', !shouldNotifyPause(50, false));
+check('a 5-min retry still stays quiet', !shouldNotifyPause(300, false));
+check('a 10-min wait reports', shouldNotifyPause(600, false));
+check('a capped 30-min wait reports', shouldNotifyPause(1800, false));
+// the whole point: a fast retry loop must be silent at EVERY rung the ladder can produce below 10 min
+check('no rung under 10 min ever spams', ![0, 1].some((s) => shouldNotifyPause(backoffForStreak(s), false)));
+check('the upper rungs do report', [2, 3, 50].every((s) => shouldNotifyPause(backoffForStreak(s), false)));
 
 console.log(`\nbackoff.test: ${pass} passed, ${fail} failed`);
 if (fail) process.exit(1);

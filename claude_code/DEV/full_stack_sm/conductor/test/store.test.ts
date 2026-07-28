@@ -165,6 +165,35 @@ async function main() {
   check('any run that made progress clears the global streak',
         (await store.globalNoProgressPauseStreak(afterGlobalProgress)) === 0);
 
+  // ---- progress threshold: "any turn at all" is NOT proof the window opened ----
+  // 2026-07-28 job 41: each retry pushed 2–5 turns through before the limit bit again, which under
+  // the old turns>0 rule reset the streak every time — backoff pinned at ~50s and a Telegram
+  // message on every pause. A couple of turns is the run-up to the same wall, not progress.
+  await raw.execute({
+    sql: "insert into ho_jobs(kind,title,prompt,profile,work_dir) values('feature','partial','p','marketing_vb_sm','/tmp')",
+    args: [],
+  });
+  const partialJob = Number((await raw.execute('select max(id) as id from ho_jobs')).rows[0].id as number);
+  await addRunFor(partialJob, 'paused', 'ratelimit', 0);
+  await addRunFor(partialJob, 'paused', 'ratelimit', 2);
+  await addRunFor(partialJob, 'paused', 'ratelimit', 5);
+  const partialCursor = await addRunFor(partialJob, 'running', null, 0);
+  check('threshold 1 (old behaviour): the trailing 5-turn pause zeroes the streak',
+        (await store.noProgressPauseStreak(partialJob, partialCursor, 1)) === 0);
+  check('threshold 10: partial-progress pauses keep the streak climbing',
+        (await store.noProgressPauseStreak(partialJob, partialCursor, 10)) === 3);
+
+  await addRunFor(partialJob, 'paused', 'ratelimit', 40);
+  const realProgressCursor = await addRunFor(partialJob, 'running', null, 0);
+  check('threshold 10: a genuinely productive run still resets the streak',
+        (await store.noProgressPauseStreak(partialJob, realProgressCursor, 10)) === 0);
+
+  // ---- ratelimitPauseCount: drives "is this the first pause worth announcing" ----
+  check('ratelimitPauseCount is 0 before a job has ever paused',
+        (await store.ratelimitPauseCount(otherJob, 1)) === 0);
+  check('ratelimitPauseCount counts this job\'s rate-limit pauses only',
+        (await store.ratelimitPauseCount(partialJob, realProgressCursor)) === 4);
+
   // ---- awaitHumanStreak: bounds the ask → park → ask cycle ----
   await addRunFor(streakJob, 'paused', 'await_human', 0);
   await addRunFor(streakJob, 'paused', 'await_human', 7);   // turns must NOT reset this one

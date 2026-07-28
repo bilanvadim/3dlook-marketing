@@ -43,6 +43,24 @@ create table if not exists ho_jobs (
 create index if not exists ho_jobs_pickable on ho_jobs (priority, created_at)
   where status in ('queued','deferred');
 
+-- IDEMPOTENT ENQUEUE: at most one ACTIVE job per (title, work_dir).
+--
+-- The queue accepts whatever it is given, and callers are not always in a position to know what
+-- they already submitted. On 2026-07-28 the Hermes agent's session was auto-compressed mid-task
+-- (406 messages -> 9, 234k tokens -> 3.2k) exactly as it was told to run a publish pack; having
+-- lost the memory of its own enqueue, it re-read the same prompt file and inserted the same job
+-- three times (39, 40, 41 — byte-identical prompts), killing the conductor between attempts to
+-- "reset" it. Three copies then split one exhausted usage window, which is what produced both the
+-- retry hammering and the Telegram spam.
+--
+-- A second insert now FAILS LOUDLY instead of becoming a silent duplicate, no matter how confused
+-- the caller is. 'escalated' is deliberately NOT in the active set: a job parked pending a human
+-- decision would otherwise block re-running the same topic forever (there are such jobs sitting
+-- from 2026-07-21 onward). Terminal states are free to repeat, so the same work can be redone.
+create unique index if not exists ho_jobs_one_active_per_title
+  on ho_jobs (title, work_dir)
+  where status in ('queued','deferred','claimed','running','planning','verifying','awaiting-input');
+
 -- ============ runs: one execution attempt of a job ============
 create table if not exists ho_runs (
   id            integer primary key autoincrement,
