@@ -1,0 +1,5 @@
+93,asher freilich,Managing Director and Founder,InstantScripts,https://au.linkedin.com/in/asher-freilich-0a36a773,PASS,1,Founder/MD of a telehealth/eScripts platform — top ICP founder buyer,executive-outcomes
+141,Built Varinporn Amporndanai,Medical Director InstantCosmetics,InstantScripts,https://au.linkedin.com/in/built-amporndanai,PASS,1,ICP title match — decision-maker in relevant function,clinical-operations
+191,Elisha Frenkel,Customer Engagement Manager,InstantScripts,https://au.linkedin.com/in/elisha-frenkel-2b203b81,PASS,3,ICP title match — decision-maker in relevant function,member-retention
+198,Melissa Ironside,Head of Customer,InstantScripts,https://au.linkedin.com/in/melissa-ironside-77b8a139,PASS,2,ICP title match — decision-maker in relevant function,member-retention
+338,Paul Wilson,Non Executive Director,InstantScripts,https://au.linkedin.com/in/paul-wilson-6a1288145,PASS,1,ICP title match — decision-maker in relevant function,product-integration
