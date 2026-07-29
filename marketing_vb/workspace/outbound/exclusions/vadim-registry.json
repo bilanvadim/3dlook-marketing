@@ -1,8 +1,15 @@
 {
   "profile": "vadim",
   "market": "Australia",
-  "last_updated": "2026-07-21",
-  "campaigns": [],
+  "last_updated": "2026-07-28",
+  "campaigns": [
+    {
+      "slug": "2026-07-27-australia-telehealth",
+      "date": "2026-07-28",
+      "contacts_generated": 224,
+      "contacts_excluded": 0
+    }
+  ],
   "excluded_companies": [],
   "excluded_people_urls": []
 }

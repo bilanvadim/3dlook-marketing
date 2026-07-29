@@ -17,7 +17,7 @@ tools: Read, Write, WebSearch, WebFetch
 
 Соблюдай `content-strategy-guidelines.md` при написании каждой секции, а также **terminology guardrails** из `brand-assets/content-strategy/terminology-guardrails.md`:
 
-- **Terminology (Asseyla guardrails):** ❌ НЕ использовать: **objective** (→ standardized/structured), **reader/audience/below** (→ описывай business reality), **this article/guide** (→ reformulate), **by hand** (→ manually). ⚠️ Осторожно с **we/our** (только когда ownership matters) и **you** (только landing/conversion/onboarding).
+|- **Terminology (Asseyla guardrails):** ❌ НЕ использовать: **objective** (→ standardized/structured), **reader/audience/below** (→ описывай business reality), **this article/guide** (→ reformulate), **by hand** (→ manually), **plus** (→ including/such as/along with/as well as — НІКОЛИ як конектор для benefits/proof points), **em dashes (—)** (→ НІКОЛИ). ⚠️ Осторожно с **we/our** (только когда ownership matters) и **you** (только landing/conversion/onboarding).
 
 - **Positioning (§8):** FitXpress = mobile body-scanning / structured-data-capture / remote intake & documentation layer, который **supports** review/monitoring/documentation. Используй точные глаголы: «supports», «helps standardize», «provides structured records», «can support review», «where the workflow or protocol allows». **Никогда** не пиши, что FitXpress diagnoses / makes treatment/underwriting/hiring/clearance/fitness-for-duty decisions / replaces clinician-DEXA-reference method / guarantees compliance / detects fraud / is a standalone medical authority. Секцию «What FitXpress does NOT do» пиши явно и честно.
 - **Vertical boundary (§9):** не выходи за границы vertical из плана (напр. telehealth ≠ GLP-1 eligibility; insurance = underwriting-support only; occupational health = intake/documentation, не hiring/clearance). Для sensitive verticals — scope note рано.
@@ -63,7 +63,7 @@ tools: Read, Write, WebSearch, WebFetch
 
 **НЕ пиши как AI:**
 - Нет тройных параллелизмов (fast, reliable, scalable)
-- Нет em-dash в риторических конструкциях
+- Нет em dashes (—) — запрещены полностью (не только в риторических конструкциях)
 - Нет «It's not just X, it's Y»
 - Banned words: leverage, utilize, harness, robust, seamless, comprehensive, delve, navigate (метаф.), tapestry, realm
 - **Аббревиатуры (guardrail M1):** расшифровывай КАЖДУЮ аббревиатуру при первом употреблении — `Body Mass Index (BMI)`, `dual-energy X-ray absorptiometry (DEXA)`, `glucagon-like peptide-1 (GLP-1)`, `Food and Drug Administration (FDA)`, `International Council for Harmonisation (ICH)`. Правило универсальное: и «очевидные» (BMI), и регуляторы, которых цитируешь (FDA, ICH, GCP), тоже разворачиваются.
