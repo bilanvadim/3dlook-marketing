@@ -1,0 +1,157 @@
+context_pack:
+  created: 2026-08-01
+  product: fitxpress
+  track: seo
+  channel: blog
+  profile: company
+  objective: "Refresh/expand GLP-1 Market hub — market growth + patient progress-tracking gap for GLP-1/weight-loss programs (telehealth, clinics, pharmacy-led)"
+  target_agent: seo-planner
+
+  company_oneliner: "3DLOOK turns two smartphone photos into 80+ body measurements and 3D model in 45 seconds."
+
+  product_summary: |
+    FitXpress: verified body data / progress tracking / BMI-build verification for
+    telehealth, GLP-1/weight-loss, insurance, wellness, bariatrics. This hub covers
+    the GLP-1 MARKET broadly — growth, and why weight-alone tracking under-serves
+    longitudinal programs. Market-level piece, not one buyer persona.
+
+  content_strategy:
+    hub: "GLP-1 Market & Progress Tracking (Hub 3)"
+    article: "GLP-1 Market Growth and the Need for Better Patient Progress Tracking"
+    cluster: "Main hub"
+    intent: "Hub"
+    action_type: "Refresh / expand hub"   # verbatim from content-plan.csv row
+    priority: "P0"
+    existing_urls:
+      - "https://3dlook.ai/content-hub/glp-1-market/  # refresh target, live since Oct 2024, SAME URL kept"
+      - "https://3dlook.ai/content-hub/glp-1-compliance-challenge/  # supporting page"
+    recommendation: "Refresh GLP-1 Market as market hub. Add progress tracking, body composition, telehealth, and clinic workflow sections."
+    cannibalization_guardrail: "Avoid duplicating GLP-1 Market, Visual Progress Tracking, Beyond BMI, and Online Pharmacy BMI Verification. Make each page own a distinct intent."
+    vertical_boundary: "GLP-1 Market hub owns: market growth, program models, the progress-tracking gap as an industry problem, operator/clinic workflow view. Does NOT own: diagnosis, treatment/eligibility/underwriting decisions, replacement of clinicians/DEXA/BIA/calibrated scales, guaranteed weight-loss/adherence/compliance outcomes, automatic fraud detection, medical-device framing, GLP-1 drug clinical-efficacy claims."
+    GATE_OVERRIDE_NOTE: >
+      This action_type ("Refresh / expand hub") would normally stop Phase 0 with a
+      recommendation-only output per the generic gate. Vadim explicitly authorized
+      proceeding through the FULL pipeline (Phases 0-3, actual outline + draft) in
+      this request, because the content-plan.csv row itself already carries a
+      specific, detailed recommendation for THIS hub (not a generic duplicate-content
+      case), and the deliverable replaces content in place on the SAME live URL
+      (no new URL, no competing page created). Treat this as authorized
+      refresh-in-place, equivalent to "publish planned hub" for gate purposes.
+
+  internal_link_targets:
+    up:
+      - "Main Health hub: https://3dlook.ai/content-hub/ai-body-data-health-hub/"
+      - "AI in Fitness hub: https://3dlook.ai/content-hub/ai-in-fitness-industry/"
+    sideways:
+      - "Visual Progress Tracking (GLP-1): https://3dlook.ai/content-hub/visual-progress-tracking-glp1-adherence-retention/ (owns adherence/retention mechanics — link, don't re-explain)"
+      - "Beyond BMI: https://3dlook.ai/content-hub/beyond-bmi-business/ (owns BMI-vs-body-comp education — link, don't duplicate)"
+      - "Online Pharmacy BMI Verification: https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/ (owns pharmacy compliance workflow — link only)"
+      - "GLP-1 Compliance Challenge: https://3dlook.ai/content-hub/glp-1-compliance-challenge/ (supporting — link, don't absorb)"
+      - "Weight Loss Industry Overview: https://3dlook.ai/content-hub/weight-loss-industry-overview/"
+      - "Body Scanning Technology for Weight Loss: https://3dlook.ai/content-hub/body-scanning-technology-for-weight-loss/"
+      - "Top 10 Weight Loss Clinic Marketing Tips: https://3dlook.ai/content-hub/top-10-weight-loss-clinic-marketing-tips/"
+      - "Bariatric Pre-Qualification: https://3dlook.ai/content-hub/bariatric-pre-qualification-mobile-3d-body-scanning/"
+      - "Two Photos → Structured Body Data: https://3dlook.ai/content-hub/3dlook-turns-two-photos-structured-body-data/"
+    down: "https://3dlook.ai/fitxpress/for-telehealth-and-weight-loss/"
+    trust:
+      - "Accuracy framework: https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/"
+      - "https://3dlook.ai/legal/  (interim — dedicated Privacy/Regulatory FAQ not yet published; do not invent its URL)"
+
+  approved_claims:
+    - id: FX-001
+      text: "96-97% accuracy vs manual measurements"
+      note: "qualify per about-me.md, never a bare universal number"
+    - id: FX-003
+      text: "Scan-to-scan repeatability < 1 cm"
+      note: "primary claim for this hub — repeatability is the progress-tracking differentiator, not raw accuracy"
+    - id: FX-004
+      text: "Weight estimation ±3.5% average error (Smart Scales)"
+      note: "software output signal, not a scale replacement"
+    - id: FX-005
+      text: "Under 45 seconds, 2 photos (front + side)"
+    - id: FX-006
+      text: "80+ body measurements"
+    - id: FX-007
+      text: "BMI, BMR, fat %, lean mass, fat mass — body composition outputs"
+    - id: FX-010
+      text: "Yazen — 34,000 scans in 2025, weight-loss program support"
+      note: "primary named customer proof point for this hub"
+    - id: FX-009
+      text: "UK Meds — BMI verification for online pharmacy"
+      note: "cross-vertical mention only, per cannibalization guardrail — pharmacy compliance owns its own page"
+    - id: FX-012
+      text: "HIPAA-compliant, GDPR-aligned, AWS S3 SSE-S3 encryption, photos deleted after processing, no personal identifiers processed"
+      note: "for scope-note/FAQ compliance mentions only"
+
+  banned_claims:
+    - "GLP-1 drug clinical-efficacy claims (weight-loss %, adherence rates tied to the medication itself)"
+    - "Diagnosis of any condition"
+    - "Treatment or prescribing decisions"
+    - "Guaranteed weight-loss or adherence outcomes"
+    - "Automatic fraud detection"
+    - "Universal DEXA/BIA/calibrated-scale replacement claim"
+    - "Eligibility/underwriting decisioning language"
+    - "'Most accurate body scanning' / 'best-in-class' without a specific benchmarked figure"
+    - "Any number not in approved_claims above — invented market stats are banned; unsourceable figures become qualitative statements"
+    - "Naming competitors directly (Prism Labs, Bodygram, Size Stream) — compare by method/role only"
+    - "Medical-device framing"
+
+  banned_words:
+    - leverage, utilize, harness, robust, seamless, comprehensive, delve, navigate (metaphorical), tapestry, realm, unlock, unleash, game-changing, cutting-edge, revolutionary, disrupt, transforming
+    - also (editorial-guardrails / this brief): em dash (—), "objective", "reader", "audience", "this article", "this guide", "by hand", "plus" (as connector)
+    - "Furthermore/Moreover/Additionally" as sentence starters (minimize)
+
+  tone:
+    voice: "expert, evidence-led, unhurried, no hype — about-me.md is source of truth"
+    structure: "12-part per this brief: opening → scope note → market growth → progress-tracking gap → why tracking is table stakes → body composition beyond the scale → program models → telehealth/remote check-ins → clinic workflow at scale → where FitXpress fits → what FitXpress does NOT do → FAQs+CTA"
+    dont: "no clickbait, no em-dash rhetorical constructs, no triple parallelisms; GLP-1 is a sensitive vertical — needs scope note early"
+    cta: "Hub page — BOFU close: 'See how FitXpress supports GLP-1 programs with structured progress tracking' → https://3dlook.ai/fitxpress/for-telehealth-and-weight-loss/ + scope disclaimer"
+
+  voice_fingerprint:
+    - "The reframe move: 'weight alone isn't the full picture' → 'what should GLP-1 programs actually be tracking?'"
+    - "Declarative, unhurried; every claim carries a number/source/disclosed limit"
+    - "Honest about limits in the same breath as capability; buyer framing not 'you'-spam"
+
+  claims_discipline:
+    - "NEVER: diagnose, make treatment/eligibility/underwriting decisions, replace clinician/DEXA/BIA/scale, guarantee outcomes, auto-detect fraud"
+    - "Position AS: structured body-data capture layer, supports clinician review, supports scan-to-scan comparison, supports remote check-ins"
+
+  accuracy_framing:
+    - "Repeatability (`< 1 cm`) is the lead differentiator here, not accuracy — GLP-1 progress tracking is longitudinal"
+    - "Never combine the two benchmarks; route deep accuracy discussion to the central accuracy-framework article"
+
+  examples:
+    - file: "workspace/seo/articles/2026-05-25-mobile-body-scanning-apis-telehealth/publish-package.md"
+      note: "published, GLP-1/telehealth buyer's-guide tone and CTA reference"
+    - file: "brand-assets/past-articles/blog/wellness-rewards-verification-employers-insurers-using-ai-3d-body-scanning.md"
+      note: "health-vertical structure/CTA pattern, Assel Sekerova byline"
+    - file: "brand-assets/past-articles/blog/clinical-trials-anthropometric-measurement.md"
+      note: "best model for scope-note/FAQ structure and compliance-scoping language in a regulated vertical"
+
+  competitors_context: |
+    Prism Labs is the primary competitor in this exact market — strong narrative on
+    "body composition beyond BMI," established in GLP-1/weight-loss and insurance
+    population-health. Our differentiation: repeatability (<1cm) for longitudinal
+    tracking, workflow-layer positioning, HIPAA/GDPR compliance depth, two-product
+    breadth. Never name Prism directly; never lead with "most accurate."
+
+  icp_context:
+    segment: "Broad market hub — spans Telehealth & GLP-1/Weight-Loss (primary) + touches pharmacy-led programs (sideways only)"
+    buyer_persona:
+      - "Founder/CEO"
+      - "Chief Medical Officer / Medical Director"
+      - "Head of Clinical Operations"
+      - "Head of Member Engagement/Retention"
+    pain_points:
+      - "Members drop off after onboarding when progress isn't visible"
+      - "Self-report and manual progress photos feel outdated and are hard to verify"
+      - "Small real changes get lost in measurement noise with weak repeatability"
+      - "Payers/employer partners increasingly expect measurable, defensible outcomes"
+    hero_message: "Make body progress more visible — before members drop off."
+    segment_hook: "Make body progress visible → repeat check-ins → adherence → retention; <1cm repeatability so small real changes aren't lost in noise; defensible longitudinal outcomes for payer/employer partners"
+    do_not_say:
+      - "No diagnostic claims; not a DEXA/calibrated-scale replacement"
+      - "No GLP-1 eligibility-decisioning language; no drug clinical-efficacy claims"
+      - "Keep separate from UK online-pharmacy BMI compliance unless explicitly the bridge (it is not, here)"
+
+  exclusions: null
