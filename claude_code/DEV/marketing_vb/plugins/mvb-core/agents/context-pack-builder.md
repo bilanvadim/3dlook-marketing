@@ -95,6 +95,15 @@ target_agent: post-drafter | hypothesis-generator | seo-planner | etc.
 - Собери `internal_link_targets` в 4 направления (§11): up (hub), sideways (related clusters), down (FitXpress/BOFU product page), trust (accuracy framework `mobile-body-scanning-accuracy` + central Privacy/Regulatory FAQ).
 - **Зачем:** без строки стратегии статьи пишутся от title и дублируют существующие хабы. Этот блок даёт seo-planner action_type-гейт, cannibalization guardrail и vertical boundary ещё до кластеризации ключей.
 
+### 7c. Select published-articles inventory (тільки для `track = seo`, FitXpress)
+- Прочитай `brand-assets/content-strategy/published-articles-inventory.md` — це **live-реєстр усіх опублікованих статей** по хабах (slug, title, дата публікації, статус hub/supporting/TOFU).
+- Для `objective`-теми витягни компактно:
+  - `published_hub_articles`: статті того ж hub (включно з refresh-цілями) — вони є **up/sideways internal-link targets** і джерела cannibalization-попереджень.
+  - `recently_published`: будь-які статті, опубліковані за останні 30 днів у суміжних хабах — на них можна/треба посилатися як на свіжі сусіди.
+  - `refresh_status`: для теми-рефрешу — чи вже позначено як опублікований (напр. `ai-in-fitness-industry` = **Published 31.07.2026**), щоб seo-planner не планував повторний refresh.
+- Якщо тема вже є в inventory як опублікована — передай це явно: `already_live: true` + URL. **seo-planner тоді не створює net-new і не рефрешить те, що вже live.**
+- **Зачем:** content-plan.md описує *план*, а inventory — *факт*. Агенти, які бачать тільки план, можуть переписати/продублювати вже опубліковану статтю або не злінкувати на свіжий live-контент.
+
 ### 8. Select exclusions (для outbound)
 - Если `track = outbound`: прочитай `workspace/outbound/exclusions/{profile}-registry.json`
 - Включи список excluded company_ids и person_ids для этого profile
@@ -234,6 +243,20 @@ context_pack:
     contextual:
       - "we/our — only when 3DLOOK makes a clear ownership claim"
       - "you — only landing pages, conversion, onboarding; not in neutral educational sections"
+
+  # only for track=seo + fitxpress — from published-articles-inventory.md (LIVE registry, fact not plan)
+  published_inventory:
+    already_live: false  # true → тема вже опублікована; seo-planner не створює net-new і не рефрешить
+    published_hub_articles:
+      - slug: "ai-in-fitness-industry"
+        title: "AI in Fitness: How Structured Body Data Powers Progress Tracking, Personalization, and Digital Coaching"
+        published: "2026-07-31"
+        role: "hub"
+    recently_published:
+      - slug: "breast-cancer-related-lymphedema-..."
+        published: "2026-07-08"
+        hub: "BCRL / Oncology (NEW)"
+    refresh_status: "ai-in-fitness-industry → published 31.07.2026; the-potential-of-ai-in-telehealth & glp-1-market still pending refresh"
 
   exclusions: null  # only for outbound track
 ```

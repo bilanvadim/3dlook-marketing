@@ -54,7 +54,7 @@ Refresh the existing `ai-in-fitness-industry` page into the hub; keep ONE AI-in-
 
 | Cluster | Article | Intent | Action | Pri | Notes / guardrail |
 |---|---|---|---|---|---|
-| Main hub | AI in Fitness: Body Data, Progress Tracking, Personalization, Digital Coaching | Hub | Refresh / expand | P0 | Refresh `ai-in-fitness-industry`. No second broad AI-in-fitness page. |
+| Main hub | AI in Fitness: Body Data, Progress Tracking, Personalization, Digital Coaching | Hub | Refresh / expand | P0 | **Published:** `ai-in-fitness-industry` (31.07.2026) — refreshed & live. No second broad AI-in-fitness page. |
 | Digital coaching | Remote Body Measurement for Online Fitness Coaching Programs | MOFU/BOFU | Create net-new | P1 | Targets coaches/platform workflows, not generic apps. BOFU → `/fitxpress/for-connected-and-digital-fitness/`. |
 | Comparison | Smart Scale vs AI Body Scan: What Fitness Apps Should Track | GEO/comparison | Create net-new | P1 | Consider one shared fitness/wellness comparison page vs two near-duplicates. |
 | Privacy/trust | Privacy Considerations for AI Body Scanning in Fitness Apps | Objection | Create net-new | P1 | Practical (consent, image handling, retention), non-legal. |

@@ -26,7 +26,7 @@
 | 1 | Main Health Hub | P0 | ✅ Jul 24 | — | None |
 | 2 | Accuracy / Buyer Evaluation | P0 | ✅ Jul 3 | DEXA vs, Tech Comparison, Accuracy ROI, Daily Changes | None (trust assets pending) |
 | 3 | Data, Privacy, Security & Regulatory FAQ | P0 | ❌ | — | **OVERDUE** |
-| 4 | AI in Fitness | P0 hub + P1/P2 | ⚠️ Old hub exists | AI in Fitness Industry, Fitness Tech Companies, AI Body Scanning for Fitness, Connected Fitness, Fitness Apps, Fitness Trends | Needs hub refresh |
+| 4 | AI in Fitness | P0 hub + P1/P2 | ✅ Jul 31 | AI in Fitness (refreshed hub), Fitness Tech Companies, AI Body Scanning for Fitness, Connected Fitness, Fitness Apps, Fitness Trends | Hub refreshed & live Jul 31, 2026; P1/P2 clusters pending |
 | 5 | AI in Telehealth | P0 hub + P1/P2 | ⚠️ Old hub exists | Potential of AI in Telehealth | Needs hub refresh |
 | 6 | GLP-1 Market | P0 hub + P1/P2 | ✅ Old hub exists | Pharmacy BMI, GLP-1 Compliance, Visual Progress, Weight Loss Industry, Weight Loss Clinic Tips, Body Scanning for Weight Loss, Beyond BMI | Needs 2026 hub refresh |
 | 7 | Insurance Underwriting | P0 | ✅ Jun 17 | — | None |
@@ -75,7 +75,7 @@
 - `top-10-weight-loss-clinic-marketing-tips/` — **Top 10 Weight Loss Clinic Marketing Tips** — Dec 2024 — TOFU
 
 ### Fitness (Hub #4)
-- `ai-in-fitness-industry/` — **AI in Fitness Industry** — Sep 2024 — Old hub (needs refresh)
+- `ai-in-fitness-industry/` — **AI in Fitness: How Structured Body Data Powers Progress Tracking, Personalization, and Digital Coaching** — Jul 31, 2026 — Hub (refreshed from Sep 2024)
 - `top-fitness-tech-companies/` — **Top Fitness Tech Companies** — May 2024 — TOFU listicle
 - `ai-body-scanning-for-fitness/` — **AI Body Scanning for Fitness** — pre-2026 — Education
 - `top-fitness-industry-trends/` — **Top Fitness Industry Trends** — pre-2026 — TOFU
@@ -285,7 +285,7 @@ Main Health Hub (ai-body-data-health-hub) — Jul 24, 2026
   │   └── top-10-weight-loss-clinic-marketing-tips (Dec 2024)
   │
   ├── Fitness
-  │   ├── ai-in-fitness-industry (Sep 2024) ← OLD hub — needs refresh
+  │   ├── ai-in-fitness-industry (Jul 31, 2026) ← HUB (refreshed)
   │   ├── top-fitness-tech-companies (May 2024)
   │   ├── ai-body-scanning-for-fitness
   │   ├── connected-fitness-industry
@@ -319,7 +319,7 @@ Main Health Hub (ai-body-data-health-hub) — Jul 24, 2026
 | Article | Hub | Action |
 |---------|-----|--------|
 | Data, Privacy, Security & Regulatory FAQ | #3 Trust Assets | Create net-new — **MOST OVERDUE** |
-| AI in Fitness hub refresh | #4 Fitness | Refresh old `ai-in-fitness-industry/` article |
+| ~~AI in Fitness hub refresh~~ ✅ | #4 Fitness | **DONE Jul 31, 2026** — `ai-in-fitness-industry/` refreshed & live |
 | AI in Telehealth hub refresh | #5 Telehealth | Refresh old `the-potential-of-ai-in-telehealth/` article |
 | GLP-1 Market 2026 hub refresh | #6 GLP-1 | Refresh old `glp-1-market/` article |
 

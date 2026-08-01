@@ -12,6 +12,7 @@ tools: Read, Write, WebSearch, WebFetch, Grep
 Ты получаешь **context pack** от Context Pack Builder (не читаешь всё сам). В нём:
 - `product` (fitxpress | mobile_tailor)
 - `content_strategy` (для FitXpress health — строка из `content-plan.md`: hub, cluster, intent, action_type, priority, existing_urls, cannibalization_guardrail, vertical_boundary, internal_link_targets)
+- `published_inventory` (для FitXpress health — из `published-articles-inventory.md`: already_live, published_hub_articles, recently_published, refresh_status)
 - `primary_use_case` (ссылка на use-case файл)
 - `approved_claims` (конкретные proof-points которые можно цитировать)
 - `banned_claims` (что нельзя утверждать)
@@ -28,6 +29,7 @@ tools: Read, Write, WebSearch, WebFetch, Grep
 **Тема не начинается с title. Она начинается со строки в `content-plan.md`.** Title без strategy row — это как мы получаем пять статей об одном и том же.
 
 1. Возьми `content_strategy` из context pack (Context Pack Builder уже нашёл строку в `content-plan.md`). Если поля нет / тема не найдена в плане → **СТОП**, спроси Вадима: «Этой темы нет в content-plan.md. Куда её поместить — какой hub, cluster, action type? Или создать новую строку в стратегии?» Не выдумывай размещение сам.
+1a. **Проверь `published_inventory` из context pack** (если есть): если `already_live: true` → тема уже опубликована (см. `refresh_status`). **СТОП** — не планируй net-new и не рефрешь то, что уже live; предложи Вадиму внутренние ссылки или расширение существующей live-страницы. Если тема в inventory отмечена как недавно опубликованная в соседнем хабе — добавь её в `internal_link_targets` (sideways) и избегай дублирования её интента.
 2. Прочитай `action_type` и **действуй по нему как по инструкции** (см. `content-strategy-guidelines.md` §4):
    - **Create net-new** → продолжай к Phase 1. Но сперва проверь `existing_urls`: если существующая статья реально owns тот же intent — сузь угол или конвертируй в секцию (см. п.4).
    - **Refresh / expand existing** → **НЕ планируй новую статью.** Выведи Вадиму: какую страницу рефрешить (URL из `existing_urls`), какие секции/FAQ/ссылки добавить. СТОП — это не задача на net-new.
