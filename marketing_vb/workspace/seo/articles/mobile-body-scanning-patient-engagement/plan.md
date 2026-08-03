@@ -289,3 +289,21 @@ Target 6–9 internal links total (style guide §6). Related cluster siblings (T
 ## Open items for review (guardrail #11)
 - **External stats for H2.3** must be fetched and cited with named source + link by the writer; if a clean methodology-backed figure is unavailable, convert to a qualitative statement (guardrails #1, #4). Flag any unsourced figure to Asselya rather than shipping it.
 - **Sibling sideways links** (Telehealth BMI Verification, Remote Body Measurement Workflows, etc.) are planned-but-maybe-unpublished — writer/publisher confirms which URLs are live before linking; do not link to placeholders.
+
+## Revision 1 structural update (2026-08-03)
+
+Review 1 (Legal/Product/Editorial, see `review1-comments.md`) required a structural simplification. The H2.1–H2.12 outline above is superseded by this 9-part structure in `draft-v5-revision1.md` (old outline kept above for rationale/history, not as the current structure):
+
+| New section | Replaces / absorbs |
+|---|---|
+| The engagement challenge in remote care | H2.1 (engagement problem) + the telehealth-adoption stat from H2.3 (Why this matters now). The GLP-1 discontinuation stat from H2.3 is removed, not relocated (see checklist item 4 in the publish package). |
+| What mobile body scanning adds | H2.2 (short answer) |
+| Five ways it can support patient engagement | H2.4 (engagement mechanics), trimmed from 6 mechanics to 5 and rewritten with hedged language |
+| How the scan-to-scan experience works | H2.5 (loop) + H2.6 (what improves operationally), merged per Review 1's explicit instruction |
+| Applications beyond GLP-1 | H2.9 (broader than GLP-1) — now the ONLY place GLP-1 links appear |
+| Implementation considerations | H2.10 (implementation and evaluation considerations) |
+| Where FitXpress fits, and where other methods remain necessary | H2.7 (where FitXpress fits) + H2.8 (what FitXpress does NOT do), merged and the boundaries list cut from 7 items to 4 (fraud detection and underwriting removed as out of scope for this article) |
+| FAQs | H2.11, content updated to match revised claims |
+| Next steps | H2.12, with the repeated medical-device disclaimer removed from the close |
+
+Estimated word count for Revision 1: ~2,300 words (article body), still inside the 2,200–3,000 target band despite the merge. CTA placement, author, and AEO approach are unchanged from the original plan.
