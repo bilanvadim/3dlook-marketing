@@ -57,12 +57,46 @@
 - **Reason:** Too plain
 - **Replace with:** Manually
 
+### ❌ Plus
+- **When:** Corporate content — connecting product capabilities, outputs, benefits, or proof points
+- **To apply:** NEVER
+- **To avoid:** Always
+- **Reason:** "Plus" can make capabilities feel like informal add-ons or promotional feature stacking
+- **Replace with:** including, such as, along with, as well as, or a separate sentence when the list is long
+
+### ❌ Let
+- **When:** Corporate content
+- **To apply:** NEVER
+- **To avoid:** Always
+- **Reason:** Too plain
+- **Replace with:** Allow
+
+### ❌ So
+- **When:** When "so" introduces a result, consequence, or business benefit in formal B2B content
+- **To apply:** NEVER
+- **To avoid:** Always
+- **Reason:** "So" can sound conversational and may present the stated benefit as an automatic consequence
+- **Replace with:** reducing…, helping to reduce…, allowing…, which can reduce…, thereby reducing… (select wording that reflects the certainty of the evidence)
+
+### ❌ Em dashes (—)
+- **When:** Corporate content
+- **To apply:** NEVER
+- **To avoid:** Always
+- **Reason:** Banned in all contexts
+
+### ❌ Corrective negation
+- **When:** Corporate content
+- **To apply:** Avoid "X, not Y" constructions when they sound corrective, dismissive, or overly instructive. Lead with the recommended approach and explain its purpose or benefit
+- **To avoid:** Always
+- **Reason:** Sounds corrective/dismissive/overly instructive
+- **Exception:** Negation is acceptable when it communicates a necessary product, clinical, legal, or regulatory boundary. Acceptable example: «FitXpress supports clinician review; it is not a diagnostic tool»
+
 ---
 
 ## Application in SEO Articles
 
 При написанні SEO-статей через пайплайн (planner → writer → editor → publisher):
 
-1. **Writer:** не використовувати objective, reader/audience, this article/guide, by hand. Обережно з we/our і you.
+1. **Writer:** не використовувати objective, reader/audience, this article/guide, by hand, plus, let, so (як конектор результату/вигоди), corrective negation «X, not Y», em dashes (—). Обережно з we/our і you.
 2. **Editor:** Pass 3b повинен включати перевірку термінології — grep по забороненим словам.
 3. **Publisher:** checklist повинен включати terminology check.

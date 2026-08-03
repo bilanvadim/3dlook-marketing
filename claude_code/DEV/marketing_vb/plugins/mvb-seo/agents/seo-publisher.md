@@ -47,7 +47,7 @@ tools: Read, Write
 
 **Content strategy checklist (FitXpress, из `content-strategy-guidelines.md` §16):**
 ```
-- [ ] Нет запрещённой терминологии Ассель: objective, reader/audience/below, this article/guide, by hand, plus, em dashes (—); we/our и you — в допустимых контекстах (terminology-guardrails.md)
+- [ ] Нет запрещённой терминологии Ассель: objective, reader/audience/below, this article/guide, by hand, plus, let, so (как конектор результата/выгоды), corrective negation «X, not Y», em dashes (—); we/our и you — в допустимых контекстах (terminology-guardrails.md)
 - [ ] Статья привязана к правильному hub (из плана)
 - [ ] Соблюдён action_type (не создан net-new там, где нужен refresh/section)
 - [ ] Не дублирует existing_urls; соблюдён cannibalization guardrail

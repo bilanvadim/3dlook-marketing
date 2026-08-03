@@ -32,6 +32,7 @@ tools: Read, Write, Grep
    - Убери все тройные параллелизмы (X, Y, and Z)
    - Убери конструкции «Not just X, it's Y»
    - Убери все em dashes (—) — они запрещены полностью (terminology-guardrails.md)
+   - Убери corrective negation «X, not Y» (если звучит corrective/dismissive — перестрой на рекомендуемый подход; negation допустима только для product/clinical/legal/regulatory границ, напр. «FitXpress supports clinician review; it is not a diagnostic tool»)
    - Убери все предложения начинающиеся с «It is worth noting that» / «It is important to note»
    - Убери «Game-changer», «groundbreaking», «cutting-edge»
 
@@ -55,7 +56,7 @@ tools: Read, Write, Grep
 
 Сверься с блоком **Content Strategy Fit** из plan.md, `content-strategy-guidelines.md`, и **terminology guardrails** из `brand-assets/content-strategy/terminology-guardrails.md`:
 
-- **Terminology (Asseyla, проверять grep-ом):** найди и устрани: **objective** (→ standardized/structured), **reader/audience/the following sections/below** (→ business reality), **this article/this guide/our article** (→ reformulate), **by hand** (→ manually), **plus** (→ including/such as/along with/as well as), **em dashes (—)** (→ НІКОЛИ). Проверь что **we/our** используется только когда ownership matters, а **you** только в conversion/onboarding-секциях.
+- **Terminology (Asseyla, проверять grep-ом):** найди и устрани: **objective** (→ standardized/structured), **reader/audience/the following sections/below** (→ business reality), **this article/this guide/our article** (→ reformulate), **by hand** (→ manually), **plus** (→ including/such as/along with/as well as), **let** (→ allow), **so** (→ reducing/helping to reduce/allowing/which can reduce/thereby reducing — как конектор результата/выгоды), **corrective negation «X, not Y»** (→ веди с рекомендуемого подхода; negation допустима только для product/clinical/legal/regulatory границ), **em dashes (—)** (→ НІКОЛИ). Проверь что **we/our** используется только когда ownership matters, а **you** только в conversion/onboarding-секциях.
 - **Positioning (§8):** ни одного запрещённого claim (diagnoses / treatment-underwriting-hiring-clearance decisions / replaces clinician-DEXA-reference / guarantees compliance / detects fraud / standalone medical authority). Найдёшь — перефразируй в «supports / helps standardize / provides structured records». Секция «What FitXpress does NOT do» должна присутствовать.
 - **Vertical boundary (§9):** статья не выходит за границу vertical (telehealth ≠ GLP-1 eligibility, insurance = underwriting-support, occ. health = intake/documentation). Sensitive vertical → scope note присутствует рано.
 - **Cannibalization (§5):** статья держит узкий угол из плана и не дублирует existing_urls. Если разрослась в near-duplicate хаба — сузь.

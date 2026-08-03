@@ -172,6 +172,11 @@ context_pack:
     - reader / audience / the following sections / below
     - this article / this guide / our article / our content
     - by hand (→ manually)
+    - plus (as connector for benefits/proof points)
+    - let (→ allow)
+    - so (as connector of result/benefit → reducing/helping to reduce/allowing/which can reduce/thereby reducing)
+    - corrective negation «X, not Y» (if corrective/dismissive; negation only for product/clinical/legal/regulatory boundaries)
+    - em dashes (—)
 
   tone:
     voice: "expert, data-driven, practical, no hype"
@@ -240,6 +245,11 @@ context_pack:
       - reader / audience / the following sections / below
       - this article / this guide / our article / our content
       - by hand (→ manually)
+      - plus (as connector for benefits/proof points)
+      - let (→ allow)
+      - so (as connector of result/benefit → reducing/helping to reduce/allowing/which can reduce/thereby reducing)
+      - corrective negation «X, not Y» (if corrective/dismissive; negation only for product/clinical/legal/regulatory boundaries)
+      - em dashes (—)
     contextual:
       - "we/our — only when 3DLOOK makes a clear ownership claim"
       - "you — only landing pages, conversion, onboarding; not in neutral educational sections"
