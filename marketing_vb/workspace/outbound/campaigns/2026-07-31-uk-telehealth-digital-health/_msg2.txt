@@ -1,0 +1,2 @@
+Julie, following up in case this landed at a busy moment. For a weight-management product, visible progress often decides whether a member renews after month two. Body composition change (fat lost, lean mass kept) tends to show up before the scale moves, a stronger renewal signal than weight alone. Our API returns that from two smartphone photos in under 45 seconds, GDPR-aligned, photos deleted after processing. Worth a short call to see if it fits ZOE's roadmap: https://meetings.hubspot.com/katerina-galich
+Katerina
