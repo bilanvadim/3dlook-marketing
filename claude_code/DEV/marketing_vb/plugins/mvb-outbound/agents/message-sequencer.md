@@ -42,7 +42,7 @@ tools: Read, Write, Grep
 | 1 | LinkedIn | сразу после принятия запроса в друзья | Opener по `outbound-message1-template.md`: hook → наблюдение/вопрос → product intro → soft CTA → подпись | ≤ 600 chars |
 | 2 | LinkedIn | +5 дней (только если нет ответа на Message 1) | Value для него/компании + demo-call offer + calendar link, по `outbound-message2-template.md` (профиль `vadim` — календаря нет: без ссылки, вместо CTA — soft ask как в Message 1) | ≤ 550 chars |
 
-**Язык сообщений — английский.** Подпись — только имя владельца профиля (Katerina / Nick / Olena / Kateryna / Vadim), без должности.
+**Язык сообщений — английский.** Подпись — ТОЛЬКО имя владельца профиля (Katerina / Nick / Olena / Kateryna / Vadim), БЕЗ должности и БЕЗ названия компании. НЕ пиши «Katerina, 3DLOOK» и «, 3DLOOK» — контакт уже видит профиль отправителя (компанию и должность) при подключении, приписка компании в подписи избыточна. Подпись должна быть ровно одно имя.
 
 **В обоих сообщениях запрещены:** длинные тире (— и –), тройные параллелизмы («quick, visual, data-backed»), «It's not just X, it's Y». Это AI-сигнатуры из CLAUDE.md §6 — brand-checker их ловит (FAIL). Используй точку / запятую / обычный дефис «-» и максимум 1-2 конкретных пункта вместо перечислений из трёх.
 
