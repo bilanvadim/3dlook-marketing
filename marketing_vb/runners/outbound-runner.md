@@ -85,6 +85,7 @@ QC = автозапуск `quality-controller` (если `AUTO_QC_ENABLED=true` 
 6. **Если `stage=import`:**
    - Проверь, что messages approved
    - Запусти `closelyhq-importer`
+   - **ОБЯЗАТЕЛЬНО:** проверь, что в итоговом CSV есть колонка `linkedin_url` и она заполнена для всех строк (правка 2026-08-05: все файлы для рассылок должны содержать ссылки на LinkedIn-профили, без них список не готов к импорту). Если колонки нет — восстанови из `people-validated.csv` по (contact_id) или (first_name, last_name, company)
    - Пингуй Вадима с инструкцией: «загрузи CSV в closely.io, ответь `started` когда запустил»
    - **СТОП.** Здесь Вадим работает руками с closely.io.
 
