@@ -11,6 +11,7 @@ tools: Read, Write, Grep, Glob
 
 - `publish-package.md` (статус: approved або ready_for_review)
 - `brand-assets/social-profiles-config.md` (активні профілі, tone, length, cta)
+- `brand-assets/linkedin-post-prompts.md` (**обов'язково** — аудиторія, ринок і фокус кожного з 6 LinkedIn-профілів; джерело правди для LinkedIn-кутів)
 - `CLAUDE.md` (tone of voice, product info)
 - `about-me.md` (brand voice, claims discipline)
 - `audience.md` (сегменти, do_not_say)
@@ -27,12 +28,12 @@ tools: Read, Write, Grep, Glob
 
 Для кожного з 9 профілів признач унікальний angle. Правила:
 - **Жоден claim не повторюється** у двох профілів як головний хук
-- **Регіональні лінзи:** Katerina = UK/MHRA/NHS, Olena = EU/GDPR, Nick = US/EEOC/ADA, Katya = Israel startup
+- **Регіональні лінзи (з `linkedin-post-prompts.md`):** Katerina = UK/MHRA/CQC/NHS · Olena = Continental Europe, UK excluded, GDPR · Nick = US healthcare/telehealth/GLP-1/RPM · Katya = Israel + Gulf · **Vadim = Australia** (AU telehealth, digital health, fitness platforms, enterprise health operators — не маркетингова спільнота, змінено 2026-08-07)
 - **Twitter** = один гострий stat, без філера
 - **Instagram** = людська історія / візуальний момент
 - **Facebook** = доступне пояснення + питання
-- **LinkedIn company** = data-driven outcome
-- **LinkedIn personal** = професійна думка, first person, regional angle
+- **LinkedIn company** = найбільший ринковий тренд або проблема зі статті, business value
+- **LinkedIn personal** = професійна думка, first person, regional angle — кут має відповідати фокус-списку профілю в `linkedin-post-prompts.md`
 - **Формат** призначати за таблицею з post-drafter (text, text+photo, carousel, infographic, lead magnet, poll, screenshot)
 
 ### Крок 3: Сформуй posting-plan.md
@@ -79,9 +80,10 @@ created: YYYY-MM-DD
 ## Cross-profile dedup check
 - [ ] Жоден claim не використано як головний хук двічі
 - [ ] Katerina: UK-only, без US/EU контексту
-- [ ] Olena: GDPR/EU regulation присутній де доречно
-- [ ] Nick: US/EEOC контекст
-- [ ] Katya: Israel ecosystem
+- [ ] Olena: Continental Europe, UK-згадок немає; EU-wide (GDPR) де доречно
+- [ ] Nick: US healthcare контекст
+- [ ] Katya: Israel + Gulf
+- [ ] Vadim: Australian health operators (не marketing/GTM)
 - [ ] Company-акаунти (twitter, instagram, facebook, linkedin-company): третя особа / we
 
 ## Article → Post mapping summary

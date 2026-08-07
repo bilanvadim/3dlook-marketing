@@ -54,12 +54,13 @@ target_agent: post-drafter | hypothesis-generator | seo-planner | etc.
 - Из CLAUDE.md секция 6 + messaging.md tone calibrations
 - **Если `product = fitxpress`** — вытяни из `about-me.md` компактный `voice_fingerprint` (3-5 самых применимых пунктов: the reframe move, declarative/unhurried, concrete-over-abstract, honest-about-limits, buyer-framing-not-you-spam) + `claims_discipline` (что FitXpress NEVER claims — diagnose / decisioning / replace clinician-DEXA-scale) + `accuracy_framing` (никогда не сводить точность к одному числу; repeatability писать как `< 1 cm`; два бенчмарка не смешивать). Эти поля идут в output pack — именно они удерживают контент от generic-AI-тона.
 - Специфично для `channel` и `profile`:
-  - katerina → founder voice (CEO), UK market lens, strategic, AI risk themes
-  - nick → BD voice, US market lens, relationship-first, outcome-driven
-  - olena → BD voice, EU market lens (GDPR/CE), considered, relationship-focused
-  - katya → BD voice, Israeli market lens, direct, innovation-friendly
-  - company → balanced both products, expert data-driven
-  - vadim → practitioner / outbound tone (AU market для outbound), direct, peer-to-peer
+  - katerina → founder voice (CEO), UK market lens, calm/executive/visionary, strategic, AI risk themes
+  - nick → BD voice, US market lens, confident/practical/consultative, relationship-first, outcome-driven
+  - olena → BD voice, Continental Europe (UK excluded), GDPR-aware, practical/consultative/conversational
+  - katya → BD voice, Israel + Gulf market lens, direct, innovation-friendly, commercially framed
+  - company → expert, data-driven, enterprise B2B SaaS, business value over product promotion
+  - vadim → practitioner voice, **AU market для social і outbound**, operations/privacy/implementation focus, direct, peer-to-peer
+- **Если `channel`/`profile` = LinkedIn** — источник правды по тону и аудитории профиля: `brand-assets/linkedin-post-prompts.md` (офлайн-копия Google Doc Вадима). Хинты выше — краткое резюме; при конфликте выигрывает тот файл. House rules всегда поверх него: **хештегов нет, 1-2 эмодзи макс**.
 
 ### 5. Select examples
 - Если `track = social`: найди 3 лучших поста (by `performance: top10`) из `brand-assets/past-posts/{profile}/`
