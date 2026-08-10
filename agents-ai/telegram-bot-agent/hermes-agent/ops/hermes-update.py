@@ -22,6 +22,33 @@ HOME = os.path.expanduser("~")
 # Re-apply the canonical orchestrator persona from the repo after every update.
 REPO_SOUL = "/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/hermes-agent/SOUL.md"
 LIVE_SOUL = f"{HOME}/.hermes/SOUL.md"
+
+
+def _render_identity(text: str) -> str:
+    """Substitute the install-time identity tokens in a kit template.
+
+    Values are written to ~/.hermes/.env by install.sh (HERMES_OWNER,
+    HERMES_GH_OWNER, HERMES_PROJECT_ROOT). A token with no value is left ALONE
+    rather than replaced by an empty string: "merges are 's decision" reads as
+    corruption, while an untouched @OWNER@ is visibly an unfinished install.
+    """
+    env = {}
+    try:
+        with open(f"{HOME}/.hermes/.env", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    k, v = line.split("=", 1)
+                    env[k.strip()] = v.strip().strip("\"'")
+    except OSError:
+        pass
+    for token, key in (("@OWNER@", "HERMES_OWNER"),
+                       ("@GH_OWNER@", "HERMES_GH_OWNER"),
+                       ("@PROJECT_ROOT@", "HERMES_PROJECT_ROOT")):
+        val = (env.get(key) or os.environ.get(key) or "").strip()
+        if val:
+            text = text.replace(token, val)
+    return text
 sys.path.insert(0, f"{HOME}/.hermes/model-router")
 import router_lib as rl  # noqa: E402  (telegram, restart_gateway, env)
 
@@ -73,12 +100,21 @@ def main():
         return 1
 
     # Guard against persona drift: restore the orchestrator SOUL.md if update reset it.
+    #
+    # The repo copy is a TEMPLATE — it carries @OWNER@ / @GH_OWNER@ / @PROJECT_ROOT@
+    # so the kit does not ship one person's name as another person's instructions.
+    # Rendering here is not cosmetic: this function copies the repo file into the live
+    # persona every morning, so an unrendered copy would leave the manager addressing
+    # a literal "@OWNER@" and pushing to "@GH_OWNER@". Compare against the RENDERED
+    # text too, otherwise every run sees a difference and rewrites the file forever.
     try:
         if os.path.exists(REPO_SOUL):
+            soul = _render_identity(open(REPO_SOUL, encoding="utf-8").read())
             same = (os.path.exists(LIVE_SOUL)
-                    and open(LIVE_SOUL, encoding="utf-8").read() == open(REPO_SOUL, encoding="utf-8").read())
+                    and open(LIVE_SOUL, encoding="utf-8").read() == soul)
             if not same:
-                shutil.copyfile(REPO_SOUL, LIVE_SOUL)
+                with open(LIVE_SOUL, "w", encoding="utf-8") as f:
+                    f.write(soul)
                 log("restored canonical SOUL.md from repo (persona had drifted)")
     except Exception as e:
         log(f"SOUL.md restore failed: {e}")

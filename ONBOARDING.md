@@ -92,8 +92,26 @@ nano secrets.env
 
 ```bash
 cd ~/3dlook-marketing
-QDRANT_HTTP_PORT=6353 QDRANT_GRPC_PORT=6354 ./install.sh --secrets secrets.env
+QDRANT_HTTP_PORT=6353 QDRANT_GRPC_PORT=6354 ./install.sh --secrets secrets.env \
+  --owner "Vadim" --gh-owner bilanvadim
 ```
+
+Про эти два флага: в системе есть файлы, которые агент читает **как инструкции** —
+`SOUL.md` («менеджер владельца», «наружу от лица владельца — ничего») и скилл
+`vps-orchestration` («мёрж — решение владельца», «новый репо → `gh repo create
+<аккаунт>/<name>`»). В ките там стоят токены `@OWNER@` / `@GH_OWNER@`, установщик
+подставляет твои значения. Без флагов он возьмёт их из `gh api user` — если ты уже
+залогинен как `bilanvadim`, можно не указывать. Проверить после установки:
+
+```bash
+grep -m1 оркестратор ~/.hermes/SOUL.md        # → «владельца этого VPS (Vadim)»
+grep -m1 "gh repo create" /srv/vadim_prod/ai-agents-config/agents-ai/telegram-bot-agent/hermes-agent/skills/vps-orchestration/SKILL.md
+```
+
+**Корень проектов** установщик определяет сам: видит `marketing_vb/` рядом с китом
+→ берёт папку репозитория. Переопределить — `--project-root <путь>`. От него зависят
+`runFrom` профилей и дефолтная папка задач, так что мимо — и профили загрузятся, но
+ничего не увидят.
 
 Установщик сам: поставит пакеты, поднимет upstream `hermes-agent`, перепишет все
 пути и имя аккаунта с `sergiy_prod` на `vadim_prod`, разложит и закроет (0600)
@@ -119,6 +137,17 @@ cd /srv/vadim_prod/ai-agents-config/agents-ai/telegram-bot-agent/claude-code-age
 ./switch-profile.sh marketing_vb_sm        # микс: твои команды + маркетологи Сергея
 # или ./switch-profile.sh marketing_vb     # только твоя система, без чужой базы
 ```
+
+Переключатель сам скажет, откуда запускаться, и запишет это для бота:
+
+```
+runFrom: /home/vadim_prod/3dlook-marketing/marketing_vb  (recorded → ~/.claude/.active-profile-cwd)
+→  Start it from there:  cd /home/vadim_prod/3dlook-marketing/marketing_vb && claude
+```
+
+Этот файл читает Telegram-switcher: вкладка без явного `/cwd` теперь по умолчанию
+уезжает **в папку активного профиля**, а не в общий корень проектов. Если папки нет
+— переключатель громко предупредит и не станет врать, что всё в порядке.
 
 Затем **перезапусти Claude Code** — плагины грузятся только при старте сессии.
 

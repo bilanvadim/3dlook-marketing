@@ -14,6 +14,13 @@
 #    --skip-apt        don't apt-install system packages (assume present)
 #    --skip-enroll     don't run the interactive MTProto/userbot Telegram login
 #    --skip-claude     don't scaffold the Claude Code side
+#    --owner NAME      the human this manager serves (default: your GitHub name, else $USER)
+#    --gh-owner LOGIN  GitHub account new repos belong to (default: `gh api user`, else $USER)
+#    --project-root D  where YOUR projects/content live (default: the kit dir if it
+#                      carries content next to the kit, else ~/workspaces). Profiles
+#                      bound to one directory (`runFrom`) and the job defaults resolve
+#                      against it — the SYSTEM installs under --dest, your content
+#                      does not move.
 #
 #  It does every mechanical step, writes+locks the secrets, binds to YOUR bot,
 #  starts the gateway, and verifies "telegram: connected". Steps that truly need
@@ -25,7 +32,7 @@ set -uo pipefail
 KIT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DEST="/srv/$USER/ai-agents-config"
 SECRETS_FILE="$KIT/secrets.env"
-ASSUME_YES=0; SKIP_APT=0; SKIP_ENROLL=0; SKIP_CLAUDE=0
+ASSUME_YES=0; SKIP_APT=0; SKIP_ENROLL=0; SKIP_CLAUDE=0; PROJECT_ROOT=""; OWNER=""; GH_OWNER=""
 while [ $# -gt 0 ]; do case "$1" in
   --dest) DEST="$2"; shift 2;;
   --secrets) SECRETS_FILE="$2"; shift 2;;
@@ -33,6 +40,9 @@ while [ $# -gt 0 ]; do case "$1" in
   --skip-apt) SKIP_APT=1; shift;;
   --skip-enroll) SKIP_ENROLL=1; shift;;
   --skip-claude) SKIP_CLAUDE=1; shift;;
+  --project-root) PROJECT_ROOT="$2"; shift 2;;
+  --owner) OWNER="$2"; shift 2;;
+  --gh-owner) GH_OWNER="$2"; shift 2;;
   *) echo "unknown flag: $1"; exit 2;;
 esac; done
 
@@ -40,6 +50,28 @@ esac; done
 # `--dest /srv/foo/` made the chown below take ownership of the shared /srv — a
 # root-owned directory holding other accounts' trees — instead of its parent.
 DEST="${DEST%"${DEST##*[!/]}"}"; [ -z "$DEST" ] && die "--dest не может быть /"
+
+# Where the USER's own content lives. Distinct from --dest on purpose: the system
+# installs into /srv/<user>/…, while content stays wherever the person keeps it (for
+# the 3dlook kit that is the repo itself, which carries marketing_vb/ beside the
+# kit). A profile bound to one directory resolves against this, so guessing it wrong
+# means those profiles load and see nothing.
+if [ -z "$PROJECT_ROOT" ]; then
+  if [ -d "$KIT/marketing_vb" ]; then PROJECT_ROOT="$KIT"; else PROJECT_ROOT="$HOME/workspaces"; fi
+fi
+PROJECT_ROOT="${PROJECT_ROOT%/}"
+
+# WHO this system serves. SOUL.md and the vps-orchestration skill name the owner in
+# sentences the agent obeys — "merges are <owner>'s decision", "ask <owner> first" —
+# and the skill tells it to create repos under a GitHub account. Shipped with the
+# author's name baked in, a fresh install produces a manager that defers to a person
+# who is not its user and pushes to an account it cannot write to.
+if [ -z "$GH_OWNER" ]; then
+  GH_OWNER="$(gh api user --jq .login 2>/dev/null || true)"; : "${GH_OWNER:=$USER}"
+fi
+if [ -z "$OWNER" ]; then
+  OWNER="$(gh api user --jq '.name // .login' 2>/dev/null || true)"; : "${OWNER:=$USER}"
+fi
 
 HHOME="${HERMES_HOME:-$HOME/.hermes}"
 BOT="$DEST/agents-ai/telegram-bot-agent"
@@ -99,7 +131,11 @@ else ok "running in place at $DEST"; fi
 # someone else's account.
 grep -rlI -e "sergiy_prod" -e "YOUR_USER" "$DEST/agents-ai" 2>/dev/null \
   | xargs -r sed -i "s|/srv/sergiy_prod/ai-agents-config|$DEST|g; s|/srv/sergiy_prod|/srv/$USER|g; s|/home/sergiy_prod|$HOME|g; s|sergiy_prod|$USER|g; s|YOUR_USER|$USER|g"
-ok "paths rewritten to $USER / $DEST / $HOME"
+# @PROJECT_ROOT@ cannot ride the rewrite above: content does not live under /srv with
+# the system, so there is no author path to swap — the token carries the answer.
+grep -rlI -e "@PROJECT_ROOT@" -e "@OWNER@" -e "@GH_OWNER@" "$DEST/agents-ai" 2>/dev/null \
+  | xargs -r sed -i "s|@PROJECT_ROOT@|$PROJECT_ROOT|g; s|@GH_OWNER@|$GH_OWNER|g; s|@OWNER@|$OWNER|g"
+ok "paths rewritten to $USER / $DEST / $HOME; projects=$PROJECT_ROOT; owner=$OWNER ($GH_OWNER)"
 
 # ── 2. upstream hermes-agent ─────────────────────────────────────────────────
 c "2/8 Upstream hermes-agent"
@@ -153,6 +189,11 @@ _set TELEGRAM_BOT_TOKEN "${S[TELEGRAM_BOT_TOKEN]}"; _set TELEGRAM_ALLOWED_USERS 
 _set OPENCODE_GO_API_KEY "${S[OPENCODE_GO_API_KEY]}"; _set OPENCODE_ZEN_API_KEY "${S[OPENCODE_ZEN_API_KEY]}"
 _set GEMINI_API_KEY "${S[GEMINI_API_KEY]}"; _set OPENAI_API_KEY "${S[GEMINI_API_KEY]}"; _set GROQ_API_KEY "${S[GROQ_API_KEY]}"
 _set WIKI_PATH "$HSRC/AI-Second-Brain"; _set OBSIDIAN_VAULT_PATH "$HSRC/AI-Second-Brain"
+# The Telegram switcher's projects root, and the fallback for conductor jobs that
+# name no work_dir. Without it both fall back to ~/workspaces, which on a box where
+# projects live elsewhere is an empty or missing directory.
+_set HERMES_CLAUDE_SWITCHER_WORKDIR "$PROJECT_ROOT"
+_set HERMES_OWNER "$OWNER"; _set HERMES_GH_OWNER "$GH_OWNER"; _set HERMES_PROJECT_ROOT "$PROJECT_ROOT"
 # --- config.yaml / mem0 / SOUL ---
 [ -f "$HHOME/config.yaml" ] || cp "$HSRC/config.yaml.example" "$HHOME/config.yaml"
 [ -f "$HHOME/mem0.json" ]    || cp "$HSRC/mem0.json.example"    "$HHOME/mem0.json"
@@ -164,7 +205,7 @@ if [ -n "${S[TG_API_ID]}" ]; then
   printf 'TG_API_ID=%s\nTG_API_HASH=%s\nTG_PHONE=%s\nTG_PASSWORD=%s\n' "${S[TG_API_ID]}" "${S[TG_API_HASH]}" "${S[TG_PHONE]}" "${S[TG_PASSWORD]}" > "$HHOME/telegram-userbot/.env"
 fi
 mkdir -p "$HHOME/conductor-bridge"
-printf 'CONDUCTOR_BRIDGE_TOKEN=%s\nBRIDGE_HOST=172.20.0.1\nBRIDGE_PORT=8790\nBRIDGE_DEFAULT_PROFILE=dev-sm\nBRIDGE_DEFAULT_WORKDIR=%s/workspaces/mvlink\nBRIDGE_DEFAULT_MAX_TURNS=40\n' "${S[CONDUCTOR_BRIDGE_TOKEN]}" "$HOME" > "$HHOME/conductor-bridge/bridge.env"
+printf 'CONDUCTOR_BRIDGE_TOKEN=%s\nBRIDGE_HOST=172.20.0.1\nBRIDGE_PORT=8790\nBRIDGE_DEFAULT_PROFILE=dev-sm\nBRIDGE_DEFAULT_WORKDIR=%s\nBRIDGE_DEFAULT_MAX_TURNS=40\n' "${S[CONDUCTOR_BRIDGE_TOKEN]}" "$PROJECT_ROOT" > "$HHOME/conductor-bridge/bridge.env"
 chmod 600 "$HHOME/.env" "$HHOME/config.yaml" "$HHOME/mem0.json" 2>/dev/null
 chmod 600 "$HHOME/mtproto/creds.env" "$HHOME/telegram-userbot/.env" "$HHOME/conductor-bridge/bridge.env" 2>/dev/null
 # The source file too. secrets.env.example promises "install.sh chmod 600's

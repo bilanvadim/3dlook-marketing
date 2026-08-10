@@ -34,7 +34,7 @@ echo 'export XDG_RUNTIME_DIR=/run/user/$(id -u)' >> ~/.bash_profile
 sudo mkdir -p /srv/$USER
 sudo chown $USER:$USER /srv/$USER
 cd /srv/$USER
-git clone https://github.com/SergeMiro/ai-agents-config.git
+git clone https://github.com/@GH_OWNER@/ai-agents-config.git
 cd ai-agents-config
 ```
 

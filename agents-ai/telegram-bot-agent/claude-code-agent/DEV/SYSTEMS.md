@@ -104,8 +104,8 @@ Hermes routes by intent and switches for you — see the `vps-orchestration` ski
 just describe a marketing/SEO/security/dev task and Hermes picks the profile,
 switches, runs it, and reports which system it used.
 
-**Ask-by-default (Sergiy's rule): if <100% sure, ASK — don't guess.**
-Unless Sergiy explicitly names the system, Hermes posts a menu and waits:
+**Ask-by-default (@OWNER@'s rule): if <100% sure, ASK — don't guess.**
+Unless @OWNER@ explicitly names the system, Hermes posts a menu and waits:
 ```
 Какую систему запустить внутри Claude?
 1. Dev
@@ -113,7 +113,7 @@ Unless Sergiy explicitly names the system, Hermes posts a menu and waits:
 3. SEO
 4. Security
 ```
-Sergiy replies with a number (e.g. `2`). Helpers make this deterministic:
+@OWNER@ replies with a number (e.g. `2`). Helpers make this deterministic:
 - `route-profile.sh --menu` → the exact question above.
 - `route-profile.sh --num <n>` → `1=dev-sm 2=marketing-sm 3=seo-sm 4=security-sm`.
 - `route-profile.sh "<task>"` → an optional suggested default to show in the ask.

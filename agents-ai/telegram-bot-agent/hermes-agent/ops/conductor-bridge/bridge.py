@@ -46,7 +46,7 @@ import subprocess
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
-log = logging.getLogger("mvlink.bridge")
+log = logging.getLogger("hermes.conductor-bridge")
 
 HOME = Path(os.path.expanduser("~"))
 HO_DB = os.environ.get("HO_DB", str(HOME / ".hermes" / "ho.db"))
@@ -54,9 +54,12 @@ TOKEN = os.environ.get("CONDUCTOR_BRIDGE_TOKEN", "")
 BRIDGE_HOST = os.environ.get("BRIDGE_HOST", "172.20.0.1")
 BRIDGE_PORT = int(os.environ.get("BRIDGE_PORT", "8790"))
 DEFAULT_PROFILE = os.environ.get("BRIDGE_DEFAULT_PROFILE", "dev-sm")
-DEFAULT_WORKDIR = os.environ.get(
-    "BRIDGE_DEFAULT_WORKDIR", str(HOME / "workspaces" / "mvlink")
-)
+# Named a specific project of the author's (mvlink) — a project that has since been
+# torn down, so the default pointed every job at a directory that exists on no
+# machine at all. The projects ROOT is the honest default: a job that does not say
+# where to work should land somewhere real and let the agent cd into the repo.
+DEFAULT_WORKDIR = os.environ.get("BRIDGE_DEFAULT_WORKDIR") or os.environ.get(
+    "HERMES_CLAUDE_SWITCHER_WORKDIR") or str(HOME / "workspaces")
 DEFAULT_MAX_TURNS = int(os.environ.get("BRIDGE_DEFAULT_MAX_TURNS", "40"))
 
 # ho_jobs.profile CHECK constraint — reject anything else early with a clean 400.
@@ -114,7 +117,7 @@ def enqueue(payload: dict) -> dict:
 
     _ensure_workdir(work_dir)
 
-    marker = f"<!-- mvlink-idem:{idem} -->" if idem else None
+    marker = f"<!-- conductor-idem:{idem} -->" if idem else None
     full_prompt = f"{marker}\n{prompt}" if marker else prompt
 
     conn = _connect()
@@ -168,7 +171,7 @@ def status(job_id: str) -> dict | None:
 
 
 class Handler(BaseHTTPRequestHandler):
-    server_version = "mvlink-bridge/1.0"
+    server_version = "conductor-bridge/1.0"
 
     def _send(self, code: int, body: dict) -> None:
         data = json.dumps(body).encode()

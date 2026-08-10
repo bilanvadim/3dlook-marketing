@@ -206,7 +206,44 @@ def _state_path() -> str:
     return os.path.join(_hermes_home(), "claude-switcher-state.json")
 
 
-WORKDIR = os.environ.get("HERMES_CLAUDE_SWITCHER_WORKDIR", "/home/sergiy_prod/workspaces")
+# The ROOT that holds project directories — what `/cwd <name>` searches and what a
+# tab falls back to. Expanded from ~ rather than written out: a literal author home
+# only works because install.sh rewrites it, and a kit unpacked WITHOUT that rewrite
+# (a manual copy, a fresh clone, a dev checkout) then pointed every tab at a home
+# that does not exist on this machine.
+WORKDIR = os.environ.get("HERMES_CLAUDE_SWITCHER_WORKDIR") or os.path.expanduser("~/workspaces")
+
+# Some Claude Code systems must run from ONE exact directory, not from a projects
+# root: their agents read context by RELATIVE path (Vadim's marketing_vb reads
+# brand-assets/, workspace/, about-me.md that way), so a session started anywhere
+# else silently sees none of it. Such a profile declares `runFrom` and
+# switch-profile.sh records the resolved directory here when it is activated.
+_PROFILE_CWD_FILE = os.path.join(
+    os.environ.get("CLAUDE_CONFIG_DIR") or os.path.expanduser("~/.claude"),
+    ".active-profile-cwd")
+
+
+def _profile_cwd() -> Optional[str]:
+    """Directory the ACTIVE profile must run from, or None.
+
+    Read on every use, never cached: the profile can be switched between two turns
+    of the same conversation, and a cached value would keep sending work to the
+    previous system's directory."""
+    try:
+        with open(_PROFILE_CWD_FILE, encoding="utf-8") as f:
+            p = f.read().strip()
+    except OSError:
+        return None
+    return p if p and os.path.isdir(p) else None
+
+
+def _default_cwd() -> str:
+    """Fallback working directory: the active profile's own dir wins over the root.
+
+    A tab with no explicit /cwd used to land in the projects ROOT. For a profile
+    that is bound to one directory that is the wrong answer — the agents load, find
+    no brand context, and produce confidently generic output instead of failing."""
+    return _profile_cwd() or WORKDIR
 CLAUDE_MAX_TURNS = os.environ.get("HERMES_CLAUDE_SWITCHER_MAX_TURNS", "40")
 # `--max-turns` is a budget per LEG, not per task. Claude Code answers a spent
 # budget with subtype=error_max_turns and an empty result — which used to surface as
@@ -867,7 +904,7 @@ async def _maybe_show_bar(runner: Any, source: Any, key: str) -> None:
 
 def _claude_on_text(key: str) -> str:
     cwd = _get_cwd(key)
-    where = cwd if cwd else f"{WORKDIR} (общая; задай /cwd <проект>)"
+    where = cwd or _profile_cwd() or f"{WORKDIR} (общая; задай /cwd <проект>)"
     return ("🤖 Claude Code включён (эта вкладка) — чат как в терминале.\n"
             f"Пиши, наговаривай голосом или шли скриншоты. 📂 {where}\n"
             "/cwd <путь|имя> — папка проекта. 📇 Hermes — выйти к менеджеру.")
@@ -1243,7 +1280,7 @@ async def handle_command(runner: Any, event: Any, canonical: str,
         resolved = _resolve_workspace(arg)
         if not resolved:
             return (f"⚠️ Не нашёл папку «{arg}». Дай абсолютный путь "
-                    "или точное имя из ~/workspaces (/cwd без аргумента — список).")
+                    f"или точное имя из {WORKDIR} (/cwd без аргумента — список).")
         _set_cwd(key, resolved)
         return f"📂 Вкладка привязана к: {resolved}"
     if canonical == "name":
@@ -1607,7 +1644,7 @@ def _run_claude_sync(key: str, prompt: str, cwd: Optional[str] = None) -> str:
     claude = _claude_bin()
     if not (shutil.which(claude) or os.path.exists(claude)):
         return "⚠️ Не найден бинарь claude в PATH."
-    run_cwd = cwd if (cwd and os.path.isdir(cwd)) else WORKDIR
+    run_cwd = cwd if (cwd and os.path.isdir(cwd)) else _default_cwd()
     env = dict(os.environ)
     local_bin = os.path.expanduser("~/.local/bin")
     if local_bin not in env.get("PATH", ""):
@@ -3682,7 +3719,7 @@ def _entry_prompt(profile: str, task: str) -> str:
 def _dispatch_job(key: str, profile: str, task: str):
     # Prefer the tab's bound repo; else the workspaces ROOT (so the orchestrator
     # can see all repos and cd into the right one).
-    wd = _get_cwd(key) or WORKDIR
+    wd = _get_cwd(key) or _default_cwd()
     try:
         os.makedirs(wd, exist_ok=True)
     except Exception:

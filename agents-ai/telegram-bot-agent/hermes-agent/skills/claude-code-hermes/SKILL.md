@@ -21,7 +21,7 @@ Hermes НЕ редактирует файлы проекта напрямую (`
 ```bash
 # 1. Запиши промпт в файл (write_file в /tmp/prompts/claude-<N>.txt)
 # 2. Запусти Claude:
-terminal: cd /home/sergiy_prod/workspaces/PROJECT && claude -p "$(cat /tmp/prompts/claude-task.txt)" --output-format json --max-turns 20 --dangerously-skip-permissions
+terminal: cd @PROJECT_ROOT@/PROJECT && claude -p "$(cat /tmp/prompts/claude-task.txt)" --output-format json --max-turns 20 --dangerously-skip-permissions
 ```
 
 Это надёжнее чем `execute_code`:

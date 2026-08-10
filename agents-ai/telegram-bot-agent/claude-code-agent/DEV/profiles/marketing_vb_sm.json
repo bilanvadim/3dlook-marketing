@@ -1,6 +1,7 @@
 {
   "name": "marketing_vb_sm",
   "description": "MIX: Vadim's brand-driven 3DLOOK teams blended with Sergiy's marketing specialists + the Hermes base. Entry: /vbsm-campaign. Strategy and measurement from Sergiy, brand-grounded execution and QC from Vadim. Run Claude Code FROM marketing_vb/.",
+  "runFrom": "@PROJECT_ROOT@/marketing_vb",
   "marketplaces": {
     "dev-sm": "/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev-sm",
     "marketing-sm": "/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/claude-code-agent/DEV/marketing-sm",
