@@ -86,6 +86,26 @@ auxiliary:
   # OPENROUTER_API_KEY). true restricts that fallback to :free SKUs — mandatory
   # for a deliberately free-only stack. Default is false.
   free_only: true
+  title_generation:
+    # NOT optional on a free-only stack, and free_only above does NOT cover it:
+    # that flag only constrains the OpenRouter step-2 fallback. Titling is the one
+    # task in the agent's _FAST_MODEL_TASKS set, so in "auto" mode it REPLACES the
+    # configured model with the provider's registered fast model — for opencode-zen
+    # that is `gemini-3-flash`, a PAID SKU. On a zero-balance workspace every title
+    # then 401s with CreditsError (observed 10.08.2026). An explicit per-task model
+    # wins over that swap.
+    #
+    # The model must accept `response_format: json_schema` with strict:true — the
+    # titler always sends it. Measured across every free zen SKU (10.08.2026):
+    #   mimo-v2.5-free      200 in  2.3s, valid {"title": …}   ← chosen
+    #   laguna-s-2.1-free   200 in 24.9s, valid
+    #   longcat-2.0-free    200 but EMPTY content
+    #   deepseek-v4-flash-free  200, EMPTY (reasoning eats the 64-token budget)
+    #   ling-3.0-tiny/flash-free  503 upstream (no json_schema support)
+    #   north-mini-code-free      401
+    # If titles start failing again, re-run that sweep — the free catalogue rots.
+    provider: opencode-zen
+    model: mimo-v2.5-free
   vision:
     provider: opencode-zen
     # MUST be a vision-capable model. deepseek-v4-* are TEXT-only → image analysis
@@ -130,6 +150,22 @@ tts:
 stt:
   enabled: true
   provider: groq
+  # SET THIS. The upstream default for `stt.language` is "en", and it applies to every
+  # provider — so leaving it out does NOT mean auto-detect, it means "transcribe as
+  # English". Whisper obeys: Russian speech comes back as broken English prose and the
+  # parts that do not fit are simply dropped. Measured on the same 24s Russian clip:
+  #   language: en  → 335 chars, 0 Cyrillic — "Hello, this is a test of knowledge of
+  #                   the speech. I need to, to be the system, to turn the marketing…"
+  #   language: ru  → 343 chars, full text, 100% of the source
+  # Use the language you actually speak; "" (empty) for real auto-detect when the
+  # audio language varies (forwarded client voice notes in another language).
+  language: ru
+  # Silence trimming before the cloud upload saves quota, but at the default -40 dB it
+  # eats quiet speech: an observed 38.6s voice message was cut to 10.8s (-72%) and the
+  # transcript lost the middle of the sentence. A complete transcript is worth more
+  # than the saved seconds. Raise cloud_trim_threshold_db to about -50 if you want the
+  # trim back.
+  cloud_trim_silence: false
   local:
     model: base
   openai:

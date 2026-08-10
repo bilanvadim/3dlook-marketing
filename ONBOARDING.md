@@ -134,7 +134,7 @@ nano secrets.env
 |---|---|---|
 | `OPENCODE_ZEN_API_KEY` | там же, часто **тот же ключ**; пусто → подставится GO | бесплатный тир запасного кодера |
 | `GEMINI_API_KEY` | [aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey) | **долговременная память (mem0) не работает вообще** |
-| `GROQ_API_KEY` | [console.groq.com/keys](https://console.groq.com/keys) | голосовые сообщения боту не расшифровываются |
+| `GROQ_API_KEY` | [console.groq.com/keys](https://console.groq.com/keys) | голосовые сообщения боту не расшифровываются. ⚠️ И проверь `stt.language` в `~/.hermes/config.yaml`: upstream-дефолт = `en`, то есть «расшифровывать КАК английский», а не «определить язык». Русское голосовое приходит поломанным английским и с потерей смысла — замеряно: 335 знаков английской чепухи против 343 знаков полного русского текста на одном файле. В шаблоне уже стоит `ru`; если аудио бывает на разных языках — поставь `""`. Там же `cloud_trim_silence: false` — обрезка тишины при -40 дБ съедала речь (38.6 с → 10.8 с) |
 | `NVIDIA_API_KEY` | [build.nvidia.com](https://build.nvidia.com) — нужна верификация по телефону | минус самый широкий бесплатный каталог моделей |
 | `MODELSCOPE_API_KEY` | [modelscope.cn/my/myaccesstoken](https://modelscope.cn/my/myaccesstoken), потом **обязательно** привязать аккаунт Alibaba Cloud на `modelscope.ai/my/settings/account` | 2-й каталог. Без привязки токен валиден, но генерация отдаёт 401 — не ищи «битый ключ» |
 | `CLOUDFLARE_API_KEY` | [dash.cloudflare.com/profile/api-tokens](https://dash.cloudflare.com/profile/api-tokens) (Workers AI) | 3-й каталог. Токен `cfat_…` не проходит `/user/tokens/verify` — это норма |
