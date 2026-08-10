@@ -46,6 +46,72 @@ marketing_vb_sm   МИКС: твоя + маркетологи Сергея    �
 
 ---
 
+## ШАГ −1 — у тебя это УЖЕ стоит. Читай, прежде чем что-то запускать
+
+На `vadim_prod` система уже работает — июльская версия из PR #1:
+
+```
+hermes-gateway.service    active   ← бот уже поднят на твоём токене
+hermes-conductor.service  active   ← ExecStart: ~/3dlook-marketing/hermes_agent/ops/conductor-run.sh
+hermes-qdrant.service     active   ← 127.0.0.1:6333/6334
+~/.claude/.active-profile = marketing_vb_sm   (старая раскладка claude_code/DEV/)
+```
+
+Значит это **не установка с нуля, а обновление**. Что из этого следует:
+
+1. **Не запускай `install.sh` в дефолтную папку.** По умолчанию он поставит в
+   `/srv/vadim_prod/ai-agents-config` — второе дерево рядом с работающим в
+   `~/3dlook-marketing`, и перепишет systemd-юниты на него. Твоя текущая установка
+   живёт **в репозитории**, поэтому ставь туда же:
+
+   ```bash
+   cd ~/3dlook-marketing && git fetch origin && git checkout v2
+   ./install.sh --secrets secrets.env --dest ~/3dlook-marketing \
+     --owner "Vadim" --gh-owner bilanvadim
+   ```
+
+2. **Порты Qdrant не задавай.** У тебя сервис уже на `6333/6334`. Установщик теперь
+   читает порт из существующего `~/.hermes/qdrant-server/qdrant.env` и оставляет его
+   как есть; если передать `QDRANT_HTTP_PORT`, он предупредит и проигнорирует.
+   Раньше он бы переписал `mem0.json` на новый порт, которого никто не слушает, и
+   память умерла бы молча. Проверить после установки:
+
+   ```bash
+   python3 -c "import json;print(json.load(open('$HOME/.hermes/mem0.json'))['oss']['vector_store']['config']['port'])"
+   grep HTTP_PORT ~/.hermes/qdrant-server/qdrant.env      # должны совпадать
+   ```
+
+3. **Твои секреты не перезапишутся.** Существующие `~/.hermes/.env`, `config.yaml`,
+   `ai-models.env` установщик не трогает — обновляет только те значения, что ты дал.
+   В твоём `.env` уже есть `TELEGRAM_BOT_TOKEN`, `TELEGRAM_ALLOWED_USERS`,
+   `OPENCODE_GO/ZEN_API_KEY`, `GOOGLE_API_KEY`, `OPENAI_API_KEY`.
+   **Нет** `GROQ_API_KEY`, `NVIDIA_API_KEY`, `MODELSCOPE_API_KEY`,
+   `CLOUDFLARE_API_KEY`, `OPENROUTER_API_KEY` — это ровно то, чего не хватает для
+   бесплатного стека моделей и голосовых. Таблица в ШАГЕ 0 — про них.
+
+4. **Старая раскладка остаётся рядом.** `claude_code/` и `hermes_agent/` — июльские,
+   в них живут твои профили `marketing_vb`/`marketing_vb_sm` со СТАРЫМИ именами
+   (`full_stack_sm`, `marketing_sm`, …). Новые лежат в `agents-ai/…/DEV/`. После
+   переключения на новый профиль в `~/.claude/settings.json` останутся старые записи
+   `extraKnownMarketplaces` (`ai-agents-mvb`, `ai-agents-mvb-sm`) — они безвредны, но
+   если хочешь чисто, удали их вручную. Юнит дирижёра указывает на старый
+   `hermes_agent/ops/conductor-run.sh`; установщик перепишет юниты на новые пути —
+   после этого **проверь, что дирижёр поднялся**, а не упал на отсутствующем файле:
+
+   ```bash
+   systemctl --user status hermes-conductor --no-pager | head -5
+   ```
+
+5. **Твой `marketing_vb/telegram-bot/bot.py` сейчас НЕ запущен** — токен занял
+   hermes-gateway. Это осознанно: один токен = один процесс, два поллера отбирают
+   сообщения друг у друга. Если тебе нужны кнопки Approve/Edit/Reject из твоего
+   собственного пайплайна — заведи ВТОРОЙ бот у @BotFather и запусти `bot.py` на его
+   токене. Иначе `/post-from-article` соберёт `review-digest.md` в
+   `workspace/social/articles/<slug>/`, но в Telegram его никто не пришлёт — читай
+   файл напрямую. **Это решение за тобой, спроси, если не уверен.**
+
+---
+
 ## ШАГ 0 — собери данные (сделай это ПЕРВЫМ)
 
 ```bash
@@ -86,13 +152,15 @@ nano secrets.env
 
 ## ШАГ 1 — установка одной командой
 
-⚠️ **Обязательно смени порты Qdrant.** VPS общий: на `sergiy_prod` уже занято
-`127.0.0.1:6343/6344`, а установщик берёт их по умолчанию — без своих портов
-твоя память просто не поднимется.
+⚠️ **Порты Qdrant не задавай** — см. ШАГ −1: твой сервис уже на `6333/6334`, и
+установщик возьмёт порт из существующего `qdrant.env`. Переданный
+`QDRANT_HTTP_PORT` он проигнорирует с предупреждением. Задавать порты нужно только
+на ЧИСТОЙ машине, где рядом уже есть чей-то Qdrant (на этом VPS у `sergiy_prod`
+занято `6343/6344`).
 
 ```bash
-cd ~/3dlook-marketing
-QDRANT_HTTP_PORT=6353 QDRANT_GRPC_PORT=6354 ./install.sh --secrets secrets.env \
+cd ~/3dlook-marketing && git checkout v2
+./install.sh --secrets secrets.env --dest ~/3dlook-marketing \
   --owner "Vadim" --gh-owner bilanvadim
 ```
 

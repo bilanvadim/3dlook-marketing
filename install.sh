@@ -260,7 +260,23 @@ QENV
   chmod 600 "$HHOME/qdrant-server/qdrant.env"
   ok "qdrant.env written (127.0.0.1:$QHTTP, API key generated)"
 else
+  # A re-run on a box that ALREADY runs Qdrant used to read back only the API key,
+  # leaving $QHTTP at the default (or whatever the caller exported) while the live
+  # service kept listening on the port inside this file. mem0.json below was then
+  # rewired to a port nothing answers on, and long-term memory died silently — the
+  # exact outcome for anyone told "pass QDRANT_HTTP_PORT=<free port>" on a machine
+  # whose Qdrant is already on another one. The existing file is the truth: it is what
+  # the running unit reads.
   QKEY="$(grep '^QDRANT__SERVICE__API_KEY=' "$HHOME/qdrant-server/qdrant.env" | cut -d= -f2-)"
+  _QH="$(grep '^QDRANT__SERVICE__HTTP_PORT=' "$HHOME/qdrant-server/qdrant.env" | cut -d= -f2-)"
+  _QG="$(grep '^QDRANT__SERVICE__GRPC_PORT=' "$HHOME/qdrant-server/qdrant.env" | cut -d= -f2-)"
+  if [ -n "$_QH" ]; then
+    if [ -n "${QDRANT_HTTP_PORT:-}" ] && [ "$QDRANT_HTTP_PORT" != "$_QH" ]; then
+      warn "QDRANT_HTTP_PORT=$QDRANT_HTTP_PORT ignored — qdrant.env already says $_QH (the running service uses that). Edit qdrant.env + restart hermes-qdrant to actually move it."
+    fi
+    QHTTP="$_QH"; ok "qdrant already configured on 127.0.0.1:$QHTTP (kept)"
+  fi
+  [ -n "$_QG" ] && QGRPC="$_QG"
 fi
 # Point mem0 at the SERVER and pin https:false — qdrant-client silently switches to
 # HTTPS as soon as api_key is set, then fails with SSL: WRONG_VERSION_NUMBER.
