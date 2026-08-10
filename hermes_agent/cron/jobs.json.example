@@ -1,0 +1,33 @@
+{
+  "_comment": "Hermes' NATIVE cron store — copy to ~/.hermes/cron/jobs.json (chmod 600). This is separate from systemd timers and the OS crontab: Hermes' embedded scheduler runs these prompts on a cron expression and delivers the result to the given Telegram chat. Below is one representative job (schema-complete). Replace chat_id with YOUR Telegram user id; add more jobs to the array. The runtime file also carries per-job state (last_run_at, repeat.completed, etc.) which regenerates.",
+  "jobs": [
+    {
+      "id": "example0001",
+      "name": "Hermes Voice Feature Watch",
+      "prompt": "Check the Hermes Agent changelog for any mention of new voice features (speech-to-speech, voice calls, WebRTC audio). Only report back if something NEW is found; otherwise stay silent.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": { "kind": "cron", "expr": "0 10 * * 1", "display": "0 10 * * 1" },
+      "schedule_display": "0 10 * * 1",
+      "repeat": { "times": null, "completed": 0 },
+      "enabled": true,
+      "state": "scheduled",
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "YOUR_TELEGRAM_USER_ID",
+        "chat_name": "You",
+        "thread_id": null
+      },
+      "enabled_toolsets": ["web", "browser"],
+      "workdir": null,
+      "profile": null
+    }
+  ]
+}

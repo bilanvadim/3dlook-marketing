@@ -1,0 +1,9 @@
+[Unit]
+Description=Sync AI Second Brain vault to git (commit+push branch main)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+Environment=WIKI_PATH=/home/vadim_prod/3dlook-marketing/hermes_agent/AI-Second-Brain
+ExecStart=/home/vadim_prod/.hermes/vault-sync.sh

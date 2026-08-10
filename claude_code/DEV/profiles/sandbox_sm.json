@@ -1,0 +1,12 @@
+{
+  "name": "sandbox_sm",
+  "description": "Sandbox: trial ONE candidate (plugin/skill/MCP) in isolation before adopting it into a real system. Base is hermes-core only, so a candidate that fails to load or never gets picked is obvious. Manual only — never routed automatically.",
+  "marketplaces": {
+    "ai-agents-config": "full_stack_sm",
+    "ai-agents-sbx": "sandbox_sm"
+  },
+  "enabledPlugins": [
+    "hermes-core@ai-agents-config",
+    "sbx-probe@ai-agents-sbx"
+  ]
+}

@@ -1,6 +1,7 @@
 {
   "name": "marketing_vb",
-  "description": "Vadim's original 3DLOOK marketing-automation system (packaged as plugins): orchestrator + brand/quality control + social/SEO/outbound teams. Pure — no Hermes base, faithful to the pristine project under /marketing_vb.",
+  "description": "Vadim's original 3DLOOK marketing-automation system (packaged as plugins): orchestrator + brand/quality control + social/SEO/outbound teams. Pure — no Hermes base, faithful to the pristine project under /marketing_vb. Run Claude Code FROM marketing_vb/ — the agents read brand-assets/ and workspace/ by relative path.",
+  "runFrom": "../../marketing_vb",
   "marketplaces": {
     "ai-agents-mvb": "marketing_vb"
   },

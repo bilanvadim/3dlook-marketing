@@ -36,6 +36,19 @@ CLAUDE_CONFIG_DIR="${CLAUDE_CONFIG_DIR:-$HOME/.claude}"
 ECC_REPO="${ECC_REPO:-https://github.com/affaan-m/ECC.git}"
 
 name="${1:?usage: install-skill.sh <name> --source <src> [--force] [--strict]}"; shift
+# The name lands in `dest="$CLAUDE_CONFIG_DIR/skills/$name"`, and line ~117 runs
+# `rm -rf "$dest"`. Hermes composes this call unattended from a third-party
+# catalog (see skills/vps-orchestration), so the name is untrusted input to a
+# recursive delete: `install-skill.sh '../../.hermes' --force` would have taken
+# out the whole runtime — .env, the encrypted MTProto session, qdrant storage.
+# One flat path component, nothing else.
+case "$name" in
+  ""|.|..|*/*|*'\'*|-*) echo "ERR: недопустимое имя скилла: '$name'" >&2; exit 2 ;;
+esac
+[[ "$name" =~ ^[A-Za-z0-9][A-Za-z0-9._-]*$ ]] || {
+  echo "ERR: имя скилла может содержать только A-Z a-z 0-9 . _ - и начинаться с буквы или цифры: '$name'" >&2
+  exit 2
+}
 source_spec=""; force=0; strict=0
 while (( $# )); do
   case "$1" in

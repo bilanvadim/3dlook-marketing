@@ -12,3 +12,28 @@ claude_code/DEV/full_stack_sm/conductor/*.db-wal
 claude_code/DEV/full_stack_sm/conductor/*.db-shm
 # rendered systemd units (machine-specific)
 hermes_agent/ops/systemd/generated/
+
+# --- merged from v2 ---
+
+# secrets & live runtime state — only *.example templates belong in git.
+# `**/.env` alone is NOT enough: the file you actually fill in is `secrets.env`,
+# and it holds the bot token, the Telegram api_hash and a GitHub PAT at once.
+**/secrets.env
+**/config.yaml
+**/auth.json
+**/mem0.json
+**/creds.env
+**/*.session
+**/*.session-journal
+**/*.enc
+**/*.key
+**/*.pem
+
+# conductor state. A schema-only ho.db used to be tracked and shipped in every
+# release zip; it fills with real job prompts as soon as a conductor runs.
+**/*.db
+**/*.db-wal
+**/*.db-shm
+
+# rebuilt release kits (the checked-in zip is the reference one)
+dist/

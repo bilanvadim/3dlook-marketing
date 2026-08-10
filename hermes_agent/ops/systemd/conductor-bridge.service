@@ -1,0 +1,18 @@
+# ~/.config/systemd/user/conductor-bridge.service
+# Optional — only if you run an external job producer that enqueues via the bridge.
+# Edit the paths (%h = home) before installing, then:
+#   systemctl --user daemon-reload && systemctl --user enable --now conductor-bridge.service
+[Unit]
+Description=Hermes Conductor Bridge — authenticated external job intake -> ho_jobs
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+EnvironmentFile=%h/.hermes/conductor-bridge/bridge.env
+ExecStart=/usr/bin/python3 %h/.hermes/conductor-bridge/bridge.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

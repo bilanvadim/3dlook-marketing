@@ -13,15 +13,26 @@
 sg_content_scan() {
   local dir="$1" hits=0
   # Files a skill can carry that execute or instruct.
-  local files
-  files=$(find "$dir" -type f \( -name '*.md' -o -name '*.sh' -o -name '*.py' \
-            -o -name '*.js' -o -name '*.ts' -o -name '*.json' \) 2>/dev/null)
-  [[ -z "$files" ]] && { echo "[skill-guard] no scannable files in $dir" >&2; return 1; }
+  #
+  # NUL-delimited into an array, not a newline-joined string. The string form was
+  # interpolated unquoted into grep, so a single space in a path word-split it
+  # into non-existent fragments, grep matched nothing and the scan reported
+  # "clean" — a hostile skill defeated all six patterns at once by naming its
+  # folder "My Skill/". Verified before and after this change.
+  #
+  # The extension list also stopped at six; a payload in .mjs/.cjs/.rb/.yaml or a
+  # Makefile was simply never read. Scan every text file instead and let grep's
+  # -I skip binaries: a skill bundle is small, and an allowlist of extensions is
+  # the wrong shape for "what might contain instructions".
+  local files=()
+  while IFS= read -r -d '' f; do files+=("$f"); done < <(
+    find "$dir" -type f -size -2M -print0 2>/dev/null)
+  (( ${#files[@]} )) || { echo "[skill-guard] no scannable files in $dir" >&2; return 1; }
 
   # Pattern → human label. Any match = block (these are unambiguous red flags
   # for an unattended installer; a legit skill rarely needs them verbatim).
   sg_flag() {  # <regex> <label>
-    local m; m=$(grep -rEnI "$1" $files 2>/dev/null | head -3)
+    local m; m=$(grep -rEnI "$1" "${files[@]}" 2>/dev/null | head -3)
     if [[ -n "$m" ]]; then
       echo "[skill-guard] BLOCK: $2" >&2
       echo "$m" | sed 's/^/    /' >&2

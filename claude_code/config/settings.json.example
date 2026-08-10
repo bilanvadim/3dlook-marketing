@@ -1,0 +1,29 @@
+{
+  "_comment": "Copy to ~/.claude/settings.json. 'enabledPlugins' is rewritten by DEV/switch-profile.sh — this shows the default (full_stack_sm) active set. Replace YOUR_USER in the marketplace paths (they must be absolute). The 'test' system (ai-agents-mvb*) points at the repo-captured copies.",
+  "model": "opus[1m]",
+  "effortLevel": "xhigh",
+  "theme": "dark-daltonized",
+  "tui": "default",
+  "skipDangerousModePermissionPrompt": true,
+  "enabledPlugins": {
+    "hermes-core@full_stack_sm": true,
+    "hermes-design@full_stack_sm": true,
+    "hermes-frontend@full_stack_sm": true,
+    "hermes-backend@full_stack_sm": true,
+    "hermes-data@full_stack_sm": true,
+    "hermes-platform@full_stack_sm": true,
+    "hermes-quality@full_stack_sm": true,
+    "hermes-sre@full_stack_sm": true,
+    "hermes-scout@full_stack_sm": true,
+    "hermes-verify@full_stack_sm": true,
+    "hermes-ecc@full_stack_sm": true
+  },
+  "extraKnownMarketplaces": {
+    "full_stack_sm":        { "source": { "source": "directory", "path": "/srv/YOUR_USER/ai-agents-config/claude_code/DEV/full_stack_sm" } },
+    "seo_sm":        { "source": { "source": "directory", "path": "/srv/YOUR_USER/ai-agents-config/claude_code/DEV/seo_sm" } },
+    "marketing_sm":  { "source": { "source": "directory", "path": "/srv/YOUR_USER/ai-agents-config/claude_code/DEV/marketing_sm" } },
+    "security_sm":   { "source": { "source": "directory", "path": "/srv/YOUR_USER/ai-agents-config/claude_code/DEV/security_sm" } },
+    "ai-agents-mvb":    { "source": { "source": "directory", "path": "/srv/YOUR_USER/ai-agents-config/claude_code/DEV/marketing_vb" } },
+    "ai-agents-mvb-sm": { "source": { "source": "directory", "path": "/srv/YOUR_USER/ai-agents-config/claude_code/DEV/marketing_vb_sm" } }
+  }
+}

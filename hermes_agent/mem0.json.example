@@ -1,0 +1,42 @@
+{
+  "_comment": [
+    "Hermes memory (mem0 OSS). Two things here were silently fatal once:",
+    "1) vector_store used 'path' (embedded qdrant) — the client locks that folder, so the",
+    "   second process to open it dies with 'already accessed by another instance' and mem0",
+    "   never initializes. Use host+port against hermes-qdrant.service instead.",
+    "2) 'https': false is MANDATORY — qdrant-client silently switches to HTTPS as soon as",
+    "   api_key is set, and a plain-HTTP server then fails with SSL: WRONG_VERSION_NUMBER.",
+    "Also keep the llm model current: a retired model id (e.g. gemini-2.5-flash on a new",
+    "key) returns 404 and every extraction fails while the store looks healthy.",
+    "chmod 600 — this file holds the Qdrant API key."
+  ],
+  "mode": "oss",
+  "agent_id": "hermes",
+  "oss": {
+    "llm": {
+      "provider": "openai",
+      "config": {
+        "model": "gemini-flash-latest",
+        "openai_base_url": "https://generativelanguage.googleapis.com/v1beta/openai/"
+      }
+    },
+    "embedder": {
+      "provider": "openai",
+      "config": {
+        "model": "gemini-embedding-001",
+        "embedding_dims": 3072,
+        "openai_base_url": "https://generativelanguage.googleapis.com/v1beta/openai/"
+      }
+    },
+    "vector_store": {
+      "provider": "qdrant",
+      "config": {
+        "collection_name": "hermes_mem0",
+        "host": "127.0.0.1",
+        "port": 6343,
+        "api_key": "SAME_KEY_AS_qdrant.env",
+        "https": false
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_comment": [
+    "~/.claude/settings.json — ЛИЧНЫЕ настройки Claude Code на машине.",
+    "НЕ профиль: профили лежат в profiles/*.json и описывают только marketplaces +",
+    "enabledPlugins. switch-profile.sh мержит профиль в этот файл, а перечисленные",
+    "ниже личные ключи не трогает — поэтому их держим отдельно, как образец для",
+    "новой машины, а не как то, что перезаписывается при каждом переключении.",
+    "extraKnownMarketplaces/enabledPlugins здесь показаны для примера — их пишет",
+    "switch-profile.sh, руками править не нужно."
+  ],
+  "model": "opus[1m]",
+  "effortLevel": "high",
+  "tui": "default",
+  "theme": "dark-daltonized",
+  "skipDangerousModePermissionPrompt": true,
+  "extraKnownMarketplaces": {
+    "full_stack_sm": {
+      "source": {
+        "source": "directory",
+        "path": "/home/vadim_prod/3dlook-marketing/claude_code/DEV/full_stack_sm"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "hermes-core@full_stack_sm": true
+  }
+}

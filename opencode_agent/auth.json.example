@@ -1,0 +1,14 @@
+{
+  "_comment": [
+    "~/.local/share/opencode/auth.json — provider credentials for the OpenCode CLI.",
+    "chmod 600. NEVER commit the real file.",
+    "Keys are per provider, named the way models.dev names them: 'opencode' is the",
+    "free Zen tier, 'google'/'openrouter'/'nvidia' are the third-party free providers.",
+    "The model-router writes the winning provider's key here (set_opencode_auth) so",
+    "the backup agent works no matter who launches it — Hermes' terminal tool, cron,",
+    "or a human shell. Without an entry for the provider in `model`, `opencode run`",
+    "prints nothing and exits 0."
+  ],
+  "opencode": { "type": "api", "key": "YOUR_OPENCODE_ZEN_KEY" },
+  "google":   { "type": "api", "key": "YOUR_GOOGLE_AI_STUDIO_KEY" }
+}

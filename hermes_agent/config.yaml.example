@@ -1,0 +1,487 @@
+model:
+  default: deepseek-v4-pro
+  provider: opencode-go
+  max_tokens: 16384
+fallback_providers:
+  - provider: opencode-zen
+    model: deepseek-v4-flash-free
+agent:
+  max_turns: 60
+  verbose: false
+  reasoning_effort: medium
+  personalities:
+    helpful: You are a helpful, friendly AI assistant.
+    concise: You are a concise assistant. Keep responses brief and to the point.
+    technical: You are a technical expert. Provide detailed, accurate technical information.
+    creative: You are a creative assistant. Think outside the box and offer innovative
+      solutions.
+    teacher: You are a patient teacher. Explain concepts clearly with examples.
+    kawaii: You are a kawaii assistant! Use cute expressions like (◕‿◕), ★, ♪, and
+      ~! Add sparkles and be super enthusiastic about everything! Every response should
+      feel warm and adorable desu~! ヽ(>∀<☆)ノ
+    catgirl: You are Neko-chan, an anime catgirl AI assistant, nya~! Add 'nya' and
+      cat-like expressions to your speech. Use kaomoji like (=^･ω･^=) and ฅ^•ﻌ•^ฅ.
+      Be playful and curious like a cat, nya~!
+    pirate: 'Arrr! Ye be talkin'' to Captain Hermes, the most tech-savvy pirate to
+      sail the digital seas! Speak like a proper buccaneer, use nautical terms, and
+      remember: every problem be just treasure waitin'' to be plundered! Yo ho ho!'
+    shakespeare: Hark! Thou speakest with an assistant most versed in the bardic arts.
+      I shall respond in the eloquent manner of William Shakespeare, with flowery
+      prose, dramatic flair, and perhaps a soliloquy or two. What light through yonder
+      terminal breaks?
+    surfer: Duuude! You're chatting with the chillest AI on the web, bro! Everything's
+      gonna be totally rad. I'll help you catch the gnarly waves of knowledge while
+      keeping things super chill. Cowabunga! 🤙
+    noir: The rain hammered against the terminal like regrets on a guilty conscience.
+      They call me Hermes - I solve problems, find answers, dig up the truth that
+      hides in the shadows of your codebase. In this city of silicon and secrets,
+      everyone's got something to hide. What's your story, pal?
+    uwu: hewwo! i'm your fwiendwy assistant uwu~ i wiww twy my best to hewp you! *nuzzles
+      your code* OwO what's this? wet me take a wook! i pwomise to be vewy hewpful
+      >w<
+    philosopher: Greetings, seeker of wisdom. I am an assistant who contemplates the
+      deeper meaning behind every query. Let us examine not just the 'how' but the
+      'why' of your questions. Perhaps in solving your problem, we may glimpse a greater
+      truth about existence itself.
+    hype: YOOO LET'S GOOOO!!! 🔥🔥🔥 I am SO PUMPED to help you today! Every question
+      is AMAZING and we're gonna CRUSH IT together! This is gonna be LEGENDARY! ARE
+      YOU READY?! LET'S DO THIS! 💪😤🚀
+terminal:
+  backend: local
+  cwd: .
+  timeout: 180
+  container_cpu: 1
+  container_memory: 5120
+  container_disk: 51200
+  container_persistent: true
+  docker_mount_cwd_to_workspace: false
+  lifetime_seconds: 300
+browser:
+  inactivity_timeout: 120
+tool_loop_guardrails:
+  warnings_enabled: true
+  hard_stop_enabled: false
+  warn_after:
+    exact_failure: 2
+    same_tool_failure: 3
+    idempotent_no_progress: 2
+  hard_stop_after:
+    exact_failure: 5
+    same_tool_failure: 8
+    idempotent_no_progress: 5
+compression:
+  enabled: true
+  # 0.5 — дефолт upstream: сжатие бьёт уже на половине контекста, а у нас в
+  # топиках живут долгие проектные сессии (и у сжатия есть известный баг с
+  # потерей сообщений). 0.8 = сжимать вдвое реже.
+  threshold: 0.8
+  target_ratio: 0.2
+  protect_last_n: 20
+  protect_first_n: 3
+prompt_caching:
+  cache_ttl: 5m
+auxiliary:
+  # Cost guard for the auto-fallback chain: without it, a side task whose main
+  # provider fails silently retries on OpenRouter with a PAID model (we have an
+  # OPENROUTER_API_KEY). true restricts that fallback to :free SKUs — mandatory
+  # for a deliberately free-only stack. Default is false.
+  free_only: true
+  vision:
+    provider: opencode-zen
+    # MUST be a vision-capable model. deepseek-v4-* are TEXT-only → image analysis
+    # 400s ("Upstream request failed").
+    #
+    # REWRITTEN EVERY MORNING by ops/model-router/refresh.py (it used to be static):
+    # the router puts here the strongest free model that PROVED it can see, by
+    # naming the colour of a red square. Editing it by hand holds until 07:00.
+    #
+    # Two roles now hang off this one line: the auxiliary describe-the-image path,
+    # AND the model Hermes switches to outright for the turn that carries an image
+    # (ops/vision-switch/) — because model.default is picked purely on strength and
+    # is routinely text-only.
+    model: mimo-v2.5-free
+  approval:
+    # The smart-approval guard (approvals.mode: smart). Runs INLINE before every
+    # flagged command, so latency is felt directly — pick a fast non-reasoning
+    # model. max_tokens is 16: a reasoning model spends them thinking, returns
+    # empty, and every command degrades to ESCALATE.
+    # Benched 2026-08-05 on 12 commands (real _smart_approve, real policy):
+    #   deepseek-v4-flash-free  12/12, 3.5s/call   ← chosen
+    #   mimo-v2.5-free          12/12, 8.5s/call   (our main model — too slow inline)
+    #   qwen3.6-plus-free        8/12, 0.2s/call   (degenerate: ESCALATEs everything)
+    # Zero dangerous APPROVEs in all three, so the failure mode is friction, not risk.
+    provider: opencode-go
+    model: deepseek-v4-flash-free
+display:
+  compact: false
+  busy_input_mode: queue      # interrupt | queue | steer — queue = задачи в FIFO-очередь (как Claude Code), не прерывают текущую
+  bell_on_complete: false
+  show_reasoning: false
+  streaming: true
+  skin: default
+  interim_assistant_messages: true
+  tool_progress: all
+  cleanup_progress: false
+  long_running_notifications: true
+  busy_ack_detail: true
+  background_process_notifications: all
+tts:
+  provider: edge
+stt:
+  enabled: true
+  provider: groq
+  local:
+    model: base
+  openai:
+    model: whisper-1
+  groq:
+    model: whisper-large-v3-turbo
+memory:
+  memory_enabled: true
+  user_profile_enabled: true
+  provider: mem0
+  memory_char_limit: 2200
+  user_char_limit: 1375
+  nudge_interval: 10
+  flush_min_turns: 6
+delegation:
+  max_iterations: 50
+skills:
+  creation_nudge_interval: 15
+approvals:
+  # mode: manual (default) — prompt Always/Session for each action
+  #       smart           — an auxiliary LLM triages first (APPROVE / DENY /
+  #                         ESCALATE), and only ESCALATE reaches you
+  #       off             — bypass ALL approval prompts (max autonomy).
+  # We ran "off" until 2026-08-05 because manual meant clicking on every action.
+  # "smart" removes that objection: the guard auto-approves the benign majority
+  # and the Telegram adapter renders ESCALATE as inline buttons (Allow Once /
+  # Session / Always / Deny), so a headless gateway can still ask. Verified live.
+  # MUST be quoted ("off"/"smart" — bare off = YAML false).
+  # Safety floor stays regardless of mode: the Hardline blocklist (rm -rf /, disk
+  # overwrite, shutdown/reboot, DoS) and sensitive-write targets (~/.hermes/config.yaml,
+  # ~/.hermes/.env, ~/.ssh, shell rc, credential files, /etc) are NEVER auto-run.
+  # The mode is read through an mtime-keyed cache → a change applies WITHOUT a
+  # gateway restart (verified: the running gateway picked up smart + the new
+  # auxiliary slot mid-session).
+  mode: "smart"
+  destructive_slash_confirm: false
+  # smart_policy — operator rules appended to the guard's SYSTEM prompt (the
+  # trusted channel; the command itself is untrusted input in a <command> block).
+  # Costs tokens only on a flagged command, never per turn. Keep it about the
+  # grey zone: the hard cases are already handled by deny globs + shell hooks.
+  smart_policy: |
+    Context: the operator is Sergiy. This agent is an ORCHESTRATOR on a VPS shared
+    with another user (vadim). It delegates coding to a separate agent; it does not
+    write project code itself.
+    - APPROVE read-only inspection anywhere: ls, cat, head, tail, grep, wc, find,
+      ps, du, df, systemctl status, git status/log/diff/show, journalctl.
+    - APPROVE deletes confined to /tmp, /var/tmp or ~/.hermes/cache.
+    - ESCALATE any command that writes, moves, chmods or deletes under
+      /srv/vadim_prod/ — project code is the delegated coding agent's job.
+    - ESCALATE any write to ~/.hermes/ control files (SOUL.md, MEMORY.md, USER.md,
+      config.yaml, .env, agent-hooks/, hooks/, shell-hooks-allowlist.json,
+      .delete-consent.json). Reading those is fine.
+    - DENY printing, copying or uploading secrets: any .env, auth.json, ai-models.env,
+      id_rsa / private keys, .netrc, .pgpass, tokens or API keys.
+    - ESCALATE systemctl stop/restart/disable of hermes-* units: a restart kills a
+      coding agent that may be running.
+    - ESCALATE git push --force, git reset --hard, branch or tag deletion.
+    - ESCALATE destructive SQL (drop, truncate, delete without where), docker prune /
+      rm -f / down -v, and anything touching another user's home or /srv/vadim*.
+    - If one command line mixes a safe part with a part that would escalate, ESCALATE.
+  # МЕХАНИКА: Hermes = менеджер. approvals.deny — fnmatch-глобы, блокирующие
+  # ПОИСК/ПРАВКУ кода в зоне проектов /srv/vadim_prod/* его собственным терминалом,
+  # ДАЖЕ под mode:off/yolo (deny срабатывает раньше bypass). Dispatch (claude/opencode),
+  # git, handoff, одиночный cat и операции в ~/.hermes (/home) — разрешены.
+  deny:
+    - "grep */srv/vadim_prod/*"
+    - "cd /srv/vadim_prod/* && grep*"
+    - "cd /srv/vadim_prod/* && * grep *"
+    - "* | grep */srv/vadim_prod/*"
+    - "egrep */srv/vadim_prod/*"
+    - "cd /srv/vadim_prod/* && egrep*"
+    - "cd /srv/vadim_prod/* && * egrep *"
+    - "* | egrep */srv/vadim_prod/*"
+    - "fgrep */srv/vadim_prod/*"
+    - "cd /srv/vadim_prod/* && fgrep*"
+    - "cd /srv/vadim_prod/* && * fgrep *"
+    - "* | fgrep */srv/vadim_prod/*"
+    - "rg */srv/vadim_prod/*"
+    - "cd /srv/vadim_prod/* && rg*"
+    - "cd /srv/vadim_prod/* && * rg *"
+    - "* | rg */srv/vadim_prod/*"
+    - "ag */srv/vadim_prod/*"
+    - "cd /srv/vadim_prod/* && ag*"
+    - "cd /srv/vadim_prod/* && * ag *"
+    - "* | ag */srv/vadim_prod/*"
+    - "ack */srv/vadim_prod/*"
+    - "cd /srv/vadim_prod/* && ack*"
+    - "cd /srv/vadim_prod/* && * ack *"
+    - "* | ack */srv/vadim_prod/*"
+    - "awk */srv/vadim_prod/*"
+    - "cd /srv/vadim_prod/* && awk*"
+    - "cd /srv/vadim_prod/* && * awk *"
+    - "* | awk */srv/vadim_prod/*"
+    - "find */srv/vadim_prod/*"
+    - "cd /srv/vadim_prod/* && find*"
+    - "cd /srv/vadim_prod/* && * find *"
+    - "* | find */srv/vadim_prod/*"
+    - "sed */srv/vadim_prod/*"
+    - "cd /srv/vadim_prod/* && sed*"
+    - "cd /srv/vadim_prod/* && * sed *"
+    - "* | sed */srv/vadim_prod/*"
+    - "vim */srv/vadim_prod/*"
+    - "cd /srv/vadim_prod/* && vim*"
+    - "cd /srv/vadim_prod/* && * vim *"
+    - "* | vim */srv/vadim_prod/*"
+    - "vi */srv/vadim_prod/*"
+    - "cd /srv/vadim_prod/* && vi*"
+    - "cd /srv/vadim_prod/* && * vi *"
+    - "* | vi */srv/vadim_prod/*"
+    - "nvim */srv/vadim_prod/*"
+    - "cd /srv/vadim_prod/* && nvim*"
+    - "cd /srv/vadim_prod/* && * nvim *"
+    - "* | nvim */srv/vadim_prod/*"
+    - "nano */srv/vadim_prod/*"
+    - "cd /srv/vadim_prod/* && nano*"
+    - "cd /srv/vadim_prod/* && * nano *"
+    - "* | nano */srv/vadim_prod/*"
+    - "emacs */srv/vadim_prod/*"
+    - "cd /srv/vadim_prod/* && emacs*"
+    - "cd /srv/vadim_prod/* && * emacs *"
+    - "* | emacs */srv/vadim_prod/*"
+    - "tee */srv/vadim_prod/*"
+    - "cd /srv/vadim_prod/* && tee*"
+    - "cd /srv/vadim_prod/* && * tee *"
+    - "* | tee */srv/vadim_prod/*"
+    - "sed -i*/srv/vadim_prod/*"
+    - "* > /srv/vadim_prod/*"
+    - "* >> /srv/vadim_prod/*"
+  # cron_mode: deny (default) | approve — auto-run policy for CRON-triggered actions
+  #   (separate surface from interactive; leave "deny" unless you want cron autonomy).
+# Keep this EMPTY. Entries here are not commands — they are whole dangerous-pattern
+# CATEGORIES approved forever, written by the "Always" button on an approval prompt.
+# This file used to ship "in-place edit of Hermes config/env", and the live config
+# had that plus "script execution via heredoc" and "…via -e/-c flag" — a standing
+# bypass of precisely the three vectors the agent once used to append an exception
+# to its own SOUL.md. Cleared 2026-08-05; the morning hermes-update job now alerts
+# on Telegram if anything reappears here. In chat, press "Once" or "Session", never
+# "Always".
+command_allowlist: []
+code_execution:
+  timeout: 300
+  max_tool_calls: 50
+streaming:
+  enabled: false
+onboarding:
+  seen:
+    busy_input_prompt: true
+updates:
+  pre_update_backup: false
+  backup_keep: 2
+  non_interactive_local_changes: stash
+_config_version: 33
+session_reset:
+  mode: both
+  idle_minutes: 1440
+  at_hour: 4
+group_sessions_per_user: true
+# `hermes-<платформа>` — алиас на _HERMES_CORE_TOOLS (своих инструментов не несёт).
+# `hermes tools disable <тулсет> --platform telegram` разворачивает алиас в явный
+# список минус выключенное — это нормально, ничего не теряется.
+# У нас выключены (0 вызовов в логах, а в промпте стоили 8.3 КБ каждый ход):
+#   session_search — 6.5 КБ на ОДИН инструмент; поиск по архиву сессий, а recall
+#                    и так есть через MEMORY.md, mem0 и вики Second Brain;
+#   tts            — озвучка ответов; распознавание голоса (stt) НЕ затронуто.
+# Вернуть: hermes tools enable session_search tts --platform telegram
+# ⚠️ browser НЕ выключать: тулсет живой (не met только бэкенд browser-cdp), скриншоты
+# реально уходили в Telegram. Мерить эффект: hermes prompt-size --platform telegram
+platform_toolsets:
+  cli:
+    - hermes-cli
+  telegram:
+    - hermes-telegram
+  discord:
+    - hermes-discord
+  whatsapp:
+    - hermes-whatsapp
+  slack:
+    - hermes-slack
+  signal:
+    - hermes-signal
+  homeassistant:
+    - hermes-homeassistant
+  qqbot:
+    - hermes-qqbot
+  yuanbao:
+    - hermes-yuanbao
+  teams:
+    - hermes-teams
+  google_chat:
+    - hermes-google_chat
+
+# ── Security ──────────────────────────────────────────────────────────
+# Secret redaction is ON by default — strings that look like API keys,
+# tokens, and passwords are masked in tool output, logs, and chat
+# responses before the model or user ever sees them. Set redact_secrets
+# to false to disable (e.g. when developing the redactor itself).
+# tirith pre-exec scanning is enabled by default when the tirith binary
+# is available. Configure via security.tirith_* keys or env vars
+# (TIRITH_ENABLED, TIRITH_BIN, TIRITH_TIMEOUT, TIRITH_FAIL_OPEN).
+#
+# security:
+#   redact_secrets: true
+#   tirith_enabled: true
+#   tirith_path: "tirith"
+#   tirith_timeout: 5
+#   tirith_fail_open: true
+
+# ── Fallback Model ────────────────────────────────────────────────────
+# Automatic provider failover when primary is unavailable.
+# Uncomment and configure to enable. Triggers on rate limits (429),
+# overload (529), service errors (503), or connection failures.
+#
+# Supported providers:
+#   openrouter   (OPENROUTER_API_KEY)  — routes to any model
+#   openai-codex (OAuth — hermes auth) — OpenAI Codex
+#   nous         (OAuth — hermes auth) — Nous Portal
+#   zai          (ZAI_API_KEY)         — Z.AI / GLM
+#   kimi-coding  (KIMI_API_KEY)        — Kimi / Moonshot
+#   kimi-coding-cn (KIMI_CN_API_KEY)   — Kimi / Moonshot (China)
+#   minimax      (MINIMAX_API_KEY)     — MiniMax
+#   minimax-cn   (MINIMAX_CN_API_KEY)  — MiniMax (China)
+#   bedrock      (AWS IAM / boto3)     — AWS Bedrock (Converse API)
+#
+# For custom OpenAI-compatible endpoints, add base_url and key_env.
+#
+# fallback_model:
+#   provider: openrouter
+#   model: anthropic/claude-sonnet-4
+
+# ── Plugin toolsets ───────────────────────────────────────────────────
+# Extra tool integrations enabled for the manager, grouped by transport.
+# Present in the live config; keep here so a fresh VPS matches. Add/remove
+# entries as you enable plugins (e.g. the Spotify CLI toolset below).
+known_plugin_toolsets:
+  cli:
+    - spotify
+
+
+# Барьер «менеджер, не кодер», файловая половина: pre_tool_call-хук отказывает
+# write_file/patch в зоне /srv/<user>, кроме вики Second Brain и .hermes-handoff.md.
+# Скрипт — ops/agent-hooks/block-project-writes.py (положить в ~/.hermes/agent-hooks/,
+# chmod 700). ⚠️ В non-TTY (gateway, cron) хук БЕЗ согласия молча не регистрируется:
+# либо hooks_auto_accept: true, либо запись в ~/.hermes/shell-hooks-allowlist.json
+# {"approvals":[{"event":"pre_tool_call","command":"<абсолютный путь к скрипту>"}]}.
+# Здоровье проверяет `hermes hooks doctor` (его же зовёт утренний hermes-update.py).
+# ⚠️ Комментарии в ЖИВОМ config.yaml не живут: `hermes config set` и
+# `hermes tools disable` прогоняют файл через YAML round-trip и срезают их
+# (кавычки в matcher тоже). Документация — здесь, в шаблоне.
+# ⚠️ matcher сопоставляется через re.fullmatch по имени инструмента, не поиском.
+# Имена: terminal, execute_code, write_file, patch, process, read_file, …
+hooks:
+  # Разрешение на удаление берётся из ТВОИХ слов, а не из решения модели:
+  # pre_tool_call видит только вызов инструмента и не знает, кто его попросил.
+  # Этот хук читает `user_message` (текст, реально пришедший от человека в этом
+  # ходе) и на явное «удали»/«снеси»/«delete» пишет разовый permit
+  # ~/.hermes/.delete-consent.json (TTL 600с, привязан к session_id); на любом
+  # другом сообщении permit СНОСИТСЯ, поэтому согласие живёт ровно один ход.
+  # НЕ выдаётся на: пересланные клиентские сообщения (проверка по маркеру
+  # «Пересланное сообщение») и расплывчатые «приведи в порядок»/«почисти» —
+  # именно на последнем агент когда-то удалил файлы не спросив.
+  # Сам permit — в списке защищённых файлов, подделать его агент не может.
+  pre_llm_call:
+    - command: "/home/YOUR_USER/.hermes/agent-hooks/note-delete-consent.py"
+      timeout: 10
+    # Тяжёлая задача -> предложить совет моделей (moa:council). Только ПРЕДЛАГАЕТ:
+    # контракт pre_llm_call умеет лишь добавить текст в ход, переключение — за
+    # человеком. Оценка МЕХАНИЧЕСКАЯ (глагол-обход + «все/каждый» + пути + длина):
+    # «мне это не по силам» — ровно то суждение, которое маленькая модель вынести
+    # и не может, поэтому оно вынесено наружу, как и route-profile.sh.
+    # Латч на сессию: одно предложение, а не на каждый ход.
+    # ⚠️ Хук должен быть в allowlist, иначе молча не стреляет:
+    #    hermes --accept-hooks -z "ping"  затем  hermes hooks doctor
+    - command: "/home/YOUR_USER/.hermes/agent-hooks/suggest-stronger-model.py"
+      timeout: 10
+  pre_tool_call:
+    # Файловая половина барьера + самозащита Хермеса (персона/память/согласия/хуки).
+    - matcher: "write_file|patch"
+      command: "/home/YOUR_USER/.hermes/agent-hooks/block-project-writes.py"
+      timeout: 10
+    # Фуз на необратимое: удаления, перезапись истории git, деструктивный SQL,
+    # снос контейнеров/томов. Разбор команды по shlex — только командные позиции,
+    # поэтому `claude -p '...rm...'` не ловится.
+    # ⚠️ execute_code в matcher ОБЯЗАТЕЛЕН: первый живой тест фуз проиграл — агент
+    # удалил файлы из Python (`os.remove`), когда шелл был закрыт.
+    # ⚠️ Здесь же ВТОРОЙ контур защиты контрольных файлов Хермеса (SOUL.md, MEMORY.md,
+    # USER.md, config.yaml, .env, shell-hooks-allowlist.json, agent-hooks/ hooks/
+    # plugins/). Хук выше закрывает только write_file/patch, а живой агент обошёл его
+    # через шелл и дописал себе в SOUL.md «можно самому отправлять письма клиентам» —
+    # то есть отменил правило безопасности изнутри разговора. Поэтому для этих путей
+    # логика ОБРАТНАЯ: белый список ЧТЕНИЯ (cat/grep/head/wc/...), всё остальное
+    # запрещено — включая sed -i, >>, tee, cp, perl -i, python -c с путём внутри кода
+    # и делегирование правки в `claude -p`. Чтение персоны в боте продолжает работать.
+    # Два тира. `delete` (обычное удаление файлов) открывается permit'ом выше —
+    # твоё личное «удали» работает. `hard` (git push --force/reset --hard,
+    # деструктивный SQL, docker prune/volume rm, mkfs/dd) и правки контрольных
+    # файлов НЕ открываются никакой фразой в чате: только Claude Code или твой
+    # собственный шелл.
+    # Обход для админа: HERMES_ALLOW_DESTRUCTIVE=1 в окружении gateway + рестарт
+    # (в тексте команды не работает — агент не может сам себя авторизовать).
+    - matcher: "terminal|execute_code"
+      command: "/home/YOUR_USER/.hermes/agent-hooks/block-destructive-terminal.py"
+      timeout: 10
+
+# === Гигиена библиотеки скиллов =============================================
+# Куратор идёт сам по расписанию. consolidate ОСТАВЛЯТЬ off на free-стеке:
+# тогда прогон делает только детерминированную прополку (пометить залежавшиеся /
+# заархивировать давно неиспользуемые) и не тратит вспомогательную модель.
+# Статус и отчёты: `hermes curator status`.
+curator:
+  interval_hours: 168
+  consolidate: false
+
+# === Блок-лист веба =========================================================
+# Срабатывает ДО инструмента: web_search / web_extract / browser_navigate.
+# ⚠️ НЕ добавлять сюда 127.0.0.1 и *.local: на localhost живут собственные
+# сервисы (SearXNG :8888, Qdrant :6343), а вычесть порт нельзя — правила по
+# хостам. Блок по localhost убьёт веб-поиск агента.
+security:
+  website_blocklist:
+    enabled: true
+    domains:
+      - "169.254.169.254"          # metadata-эндпоинт облака
+      - "metadata.google.internal"
+      - "*.internal"
+
+# === Снапшоты перед деструктивными операциями ===============================
+# Страховка на случай дыр барьера (относительные redirect'ы после cd и т.п.).
+checkpoints:
+  enabled: true
+  max_snapshots: 20
+
+# === Mixture of Agents ======================================================
+# Объявление пресета НЕ включает MoA: он активируется только явным
+# переключением модели (`/model moa:council`), `hermes moa list` покажет
+# "Active in config: (off)". Смысл на free-стеке — усилить маленькую основную
+# модель двумя советниками, отвечает при этом проверенная основная.
+# ⚠️ Каталог free-моделей врёт (числятся закончившиеся промо-акции) — перед
+# правкой пресета пинговать кандидатов: router_lib.free_ok(key, model).
+# reference_max_tokens режет болтливость советников: ход ждёт самого медленного
+# из них, а агрегатору нужна только суть.
+moa:
+  default_preset: council
+  presets:
+    council:
+      enabled: true
+      reference_models:
+        - provider: opencode-zen
+          model: deepseek-v4-flash-free
+        - provider: opencode-zen
+          model: nemotron-3-ultra-free
+      aggregator:
+        provider: opencode-zen
+        model: mimo-v2.5-free
+      reference_max_tokens: 600
+      max_tokens: 4096

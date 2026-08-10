@@ -97,6 +97,37 @@ PY
 
 echo "$PROFILE" > "$ACTIVE_FILE"
 
+# 4) A profile may be BOUND to one directory (`runFrom` in its manifest). Systems
+#    whose agents read context by relative path — marketing_vb reads brand-assets/,
+#    workspace/, about-me.md that way — only work when the session starts there.
+#    Record the resolved directory so the Telegram switcher uses it as a tab's
+#    default cwd, and clear it for profiles that are not bound, otherwise the
+#    previous system's directory would leak into the next one.
+#    Relative runFrom is resolved against this script's dir, like the marketplaces.
+RUN_FROM="$(python3 -c "
+import json,os,sys
+v = json.load(open(sys.argv[1])).get('runFrom') or ''
+print(v if (not v or os.path.isabs(v)) else os.path.normpath(os.path.join(sys.argv[2], v)))
+" "$MANIFEST" "$SCRIPT_DIR")"
+CWD_FILE="$CONFIG_DIR/.active-profile-cwd"
+if [ -n "$RUN_FROM" ]; then
+  if [ -d "$RUN_FROM" ]; then
+    printf '%s\n' "$RUN_FROM" > "$CWD_FILE"
+    echo "  runFrom: $RUN_FROM  (recorded → $CWD_FILE)"
+  else
+    # Loud, not fatal: the profile is still switched, but say plainly what will
+    # break. Silently falling back to the projects root is how a brand-driven
+    # system ends up producing confidently generic output.
+    rm -f "$CWD_FILE"
+    echo "  ⚠  runFrom '$RUN_FROM' does not exist on this machine."
+    echo "     '$PROFILE' expects to run FROM that directory — its agents read"
+    echo "     context by relative path and will see none of it from anywhere else."
+    echo "     Fix the 'runFrom' path in $MANIFEST, then switch again."
+  fi
+else
+  rm -f "$CWD_FILE"
+fi
+
 echo "  enabled plugins now:"
 python3 -c "
 import json,sys
@@ -106,3 +137,4 @@ print('\n'.join('    - '+k for k in json.load(open(sys.argv[1]))['enabledPlugins
 echo
 echo "✔ Profile '$PROFILE' is active in $SETTINGS"
 echo "⚠  RESTART Claude Code for it to take effect (plugins load at session start)."
+[ -n "$RUN_FROM" ] && [ -d "$RUN_FROM" ] && echo "→  Start it from there:  cd $RUN_FROM && claude"

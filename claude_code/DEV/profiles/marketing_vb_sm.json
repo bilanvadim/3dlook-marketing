@@ -1,6 +1,7 @@
 {
   "name": "marketing_vb_sm",
-  "description": "MIX: Vadim's brand-driven 3DLOOK marketing teams (marketing_vb) blended with Sergiy's marketing specialists (marketing_sm) + Hermes base. Entry: /vbsm-campaign. Strategy & measurement from Sergiy, brand-grounded execution & QC from Vadim.",
+  "description": "MIX: Vadim's brand-driven 3DLOOK marketing teams (marketing_vb) blended with Sergiy's marketing specialists (marketing_sm) + Hermes base. Entry: /vbsm-campaign. Strategy & measurement from Sergiy, brand-grounded execution & QC from Vadim. Run Claude Code FROM marketing_vb/.",
+  "runFrom": "../../marketing_vb",
   "marketplaces": {
     "ai-agents-config": "full_stack_sm",
     "ai-agents-mvb": "marketing_vb",
