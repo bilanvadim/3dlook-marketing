@@ -1,0 +1,17 @@
+{
+  "name": "marketing-sm",
+  "description": "Digital marketing system (marketing-sm) + shared orchestration/verification base.",
+  "marketplaces": {
+    "dev-sm": "/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev-sm",
+    "marketing-sm": "/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/claude-code-agent/DEV/marketing-sm"
+  },
+  "enabledPlugins": [
+    "hermes-core@dev-sm",
+    "hermes-verify@dev-sm",
+    "mkt-core@marketing-sm",
+    "mkt-content@marketing-sm",
+    "mkt-paid@marketing-sm",
+    "mkt-lifecycle@marketing-sm",
+    "mkt-analytics@marketing-sm"
+  ]
+}

@@ -4,6 +4,18 @@
 **/*.pyc
 # secrets & local runtime state
 **/.env
+# `**/.env` does NOT cover secrets.env — and that is the one file holding the bot
+# token, the TG api_hash and the PAT all at once. Same for the other live configs
+# install.sh writes; only *.example templates belong in git.
+**/secrets.env
+**/config.yaml
+**/auth.json
+**/mem0.json
+**/creds.env
+**/*.session
+**/*.enc
+**/*.key
+**/*.pem
 **/.venv/
 logs/
 **/*.log
@@ -12,3 +24,5 @@ claude_code/DEV/full_stack_sm/conductor/*.db-wal
 claude_code/DEV/full_stack_sm/conductor/*.db-shm
 # rendered systemd units (machine-specific)
 hermes_agent/ops/systemd/generated/
+# rebuilt release kits (the checked-in one is enough)
+hermes-system/dist/

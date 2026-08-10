@@ -1,0 +1,6 @@
+{
+  "name": "mkt-core",
+  "description": "Marketing orchestration core: marketing-strategist (campaign director), marketing-strategy skill (diagnose → ICE prioritization → plan), /mkt-campaign command; + vetted ECC market-research skill (MIT — see ATTRIBUTION.md)",
+  "version": "0.1.0",
+  "author": { "name": "Sergiy" }
+}

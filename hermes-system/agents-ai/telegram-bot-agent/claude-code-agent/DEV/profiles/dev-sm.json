@@ -1,0 +1,20 @@
+{
+  "name": "dev-sm",
+  "description": "Full-stack development system (dev-sm). Architect → design → front/back/data/platform → QA/security → verify.",
+  "marketplaces": {
+    "dev-sm": "/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev-sm"
+  },
+  "enabledPlugins": [
+    "hermes-core@dev-sm",
+    "hermes-design@dev-sm",
+    "hermes-frontend@dev-sm",
+    "hermes-backend@dev-sm",
+    "hermes-data@dev-sm",
+    "hermes-platform@dev-sm",
+    "hermes-quality@dev-sm",
+    "hermes-sre@dev-sm",
+    "hermes-scout@dev-sm",
+    "hermes-verify@dev-sm",
+    "hermes-ecc@dev-sm"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "_comment": [
+    "~/.claude/settings.json — ЛИЧНЫЕ настройки Claude Code на машине.",
+    "НЕ профиль: профили лежат в profiles/*.json и описывают только marketplaces +",
+    "enabledPlugins. switch-profile.sh мержит профиль в этот файл, а перечисленные",
+    "ниже личные ключи не трогает — поэтому их держим отдельно, как образец для",
+    "новой машины, а не как то, что перезаписывается при каждом переключении.",
+    "extraKnownMarketplaces/enabledPlugins здесь показаны для примера — их пишет",
+    "switch-profile.sh, руками править не нужно."
+  ],
+  "model": "opus[1m]",
+  "effortLevel": "high",
+  "tui": "default",
+  "theme": "dark-daltonized",
+  "skipDangerousModePermissionPrompt": true,
+  "extraKnownMarketplaces": {
+    "dev-sm": {
+      "source": {
+        "source": "directory",
+        "path": "/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev-sm"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "hermes-core@dev-sm": true
+  }
+}

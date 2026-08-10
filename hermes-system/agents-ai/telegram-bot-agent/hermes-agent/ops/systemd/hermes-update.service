@@ -1,0 +1,8 @@
+[Unit]
+Description=Hermes Agent morning auto-update (git pull + reinstall, restart gateway, notify Telegram)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 %h/.hermes/hermes-update.py

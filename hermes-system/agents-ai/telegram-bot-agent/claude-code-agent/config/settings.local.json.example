@@ -1,0 +1,24 @@
+{
+  "_comment": "Copy to ~/.claude/settings.local.json. 'enabledMcpjsonServers' gates which project MCP servers from ~/.mcp.json load — the reproducible bit. 'permissions.allow' is machine-specific; the list below is a minimal safe baseline — extend on the box as needed. Never add secret-reading commands here.",
+  "enabledMcpjsonServers": [
+    "filesystem",
+    "git",
+    "github",
+    "memory",
+    "sequential-thinking",
+    "fetch",
+    "postgres",
+    "playwright"
+  ],
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(docker ps:*)",
+      "Bash(docker compose:*)",
+      "Bash(find:*)",
+      "Bash(curl:*)",
+      "Edit",
+      "Write"
+    ]
+  }
+}
