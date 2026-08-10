@@ -1,0 +1,45 @@
+11,Karen Birner,Head of Assurance and Regulatory Programs,HCF Australia,https://au.linkedin.com/in/karen-birner,WEAK,,"Regulatory/assurance function — possible privacy stakeholder, not a program buyer",data-privacy
+14,Emma Harrington,Chief of - Member Experience,HCF Australia,https://au.linkedin.com/in/emma-ls-harrington,PASS,1,C-level Member Experience owner — prime ICP for retention/engagement via visible progress,member-retention
+17,Janelle McGuinness GAICD,"General Manager, Digital and Data",HCF Australia,https://au.linkedin.com/in/janelle-mcguinness-gaicd-ab1a574,PASS,2,GM Digital and Data — owns digital roadmap where structured body data would land,digital-health-strategy
+20,David Lumb,"Chief Officer, Member Growth",HCF Australia,https://au.linkedin.com/in/david-lumb,PASS,1,C-level Member Growth — ICP buyer for acquisition/retention engagement tools,member-retention
+25,Erin Lawless,Acting GM RT Health (Division of HCF),HCF Australia,https://au.linkedin.com/in/erin-lawless-28b68239,PASS,2,GM of an HCF health division — operating leader with program authority,operational-scale
+32,Tim Thorne,"Director, HCF Life",HCF Australia,https://au.linkedin.com/in/timjohnthorne,WEAK,,Life-insurance product director — insurer but not digital-health/weight program,digital-health-strategy
+33,Ian Maytom,"General Manager, Hospital & Medical",HCF Australia,https://au.linkedin.com/in/ian-maytom-b44aab20,PASS,2,GM Hospital & Medical — clinical-program operating leader fit,clinical-operations
+50,Linda Opie,Head of Health and Wellbeing,HCF Australia,https://au.linkedin.com/in/warren-opie-b3aab535,PASS,2,Head of Health and Wellbeing — ICP wellness-program owner for remote verification,wellness-programs
+90,AJIT JOSHI,Head of Technology Strategy Development,HCF Australia,https://au.linkedin.com/in/ajit-joshi-b3b1341,WEAK,,Technology-strategy lead at a FitXpress-segment insurer — possible technical champion,technical-integration
+92,Greg Baster,Chief Information Officer,HCF Australia,https://au.linkedin.com/in/gregbaster,PASS,3,CIO at a FitXpress-segment insurer — C-suite technical entry point per IT policy,technical-integration
+102,Tom Robinson,Head of Innovation,HCF Australia,https://au.linkedin.com/in/tomrobbo,PASS,2,Head of Innovation — ICP innovation buyer for new member-engagement tools,digital-health-strategy
+109,Lorraine Thomas,CEO & MD,HCF Australia,https://au.linkedin.com/in/lorraine-thomas,PASS,1,CEO & MD of HCF — top executive sponsor for digital-health outcomes,executive-outcomes
+112,Binnu Verma,Head of Digital Analytics,HCF Australia,https://au.linkedin.com/in/binnu-verma-b090223b,WEAK,,Title has ICP signal but function is analytics/insights/design — influence without clear buying authority,product-integration
+120,Georgina Anderson,Head of Employee Communications and Social Impact,HCF Australia,https://au.linkedin.com/in/georgina-anderson-a162573b,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+134,Samantha H.,Head of Delivery,HCF Australia,https://au.linkedin.com/in/samantha-page-9b851293,PASS,2,ICP title match — decision-maker in relevant function,operational-scale
+140,Crystal P.,Head of Product,HCF Australia,https://au.linkedin.com/in/crystal-petkoff,PASS,2,ICP title match — decision-maker in relevant function,product-integration
+147,David Fletcher,Head of Enterprise Architecture,HCF Australia,https://au.linkedin.com/in/dpfletcher,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+154,Terry Agnew,Non Executive Director,HCF Australia,https://au.linkedin.com/in/terry-agnew-ba8293119,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+156,Julie Andrews,Chief Officer Member Health,HCF Australia,https://au.linkedin.com/in/julie-andrews-652bb544,PASS,1,ICP title match — decision-maker in relevant function,member-retention
+162,Amanda Hagan,Non Executive Director,HCF Australia,https://au.linkedin.com/in/amanda-n-hagan,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+168,Liam Gilligan,Head of Innovation,HCF Australia,https://www.linkedin.com/in/liamgilligan/,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+170,Christopher Pettigrew,Head of HCF Research Foundation,HCF Australia,https://au.linkedin.com/in/christopher-pettigrew-01a7235a,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+175,Craig Muller,Head of Platform Services,HCF Australia,https://au.linkedin.com/in/craig-muller-32995011,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+177,Herbert Boshoff Van Der Merwe,Head of Actuarial - Health,HCF Australia,https://au.linkedin.com/in/herbert-boshoff-van-der-merwe-97b9481b,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+179,Sebastian Klich,"Chief Officer, Product & Diversified Business",HCF Australia,https://au.linkedin.com/in/sebastian-klich,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+182,Pearl Backhouse,Head of P&C Business Partnering,HCF Australia,https://au.linkedin.com/in/pearl-backhouse-85211554,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+200,Eric Peterson,"Head of Experience Design, Research and Loyalty",HCF Australia,https://www.linkedin.com/in/eric-peterson-0967533/,WEAK,,Title has ICP signal but function is analytics/insights/design — influence without clear buying authority,member-retention
+203,Gayle Kean,"Manager, Branch Operations",HCF Australia,https://au.linkedin.com/in/gayle-kean-52515957,PASS,3,ICP title match — decision-maker in relevant function,operational-scale
+205,Malcolm Middleton,Head of IT Business Operations,HCF Australia,https://au.linkedin.com/in/malcolm-middleton-b060048,PASS,2,ICP title match — decision-maker in relevant function,operational-scale
+206,Peter Schofield,"General Manager, Branch Network",HCF Australia,https://www.linkedin.com/in/peter-schofield-89396120/,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+210,Tanner Strickland,Chief of Staff to the CEO,HCF Australia,https://au.linkedin.com/in/tanner-strickland-92ab06214,PASS,1,ICP title match — decision-maker in relevant function,executive-outcomes
+233,Jon Chai,Loyalty Partnerships Manager,HCF Australia,https://au.linkedin.com/in/jchai-,PASS,3,ICP title match — decision-maker in relevant function,digital-health-strategy
+239,Stuart Barnard,Head of Legal and Compliance/HCF Privacy Officer,HCF Australia,https://au.linkedin.com/in/stuart-barnard-b01842168,WEAK,,"Relevant domain expertise but compliance/risk function — possible privacy stakeholder, not program buyer",data-privacy
+252,Celine Dickson,General Manager - International Business,HCF Australia,https://au.linkedin.com/in/celine-dickson,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+261,Harry Robertson,Chief Financial Officer,HCF Australia,https://www.linkedin.com/in/harryrobertson000/,PASS,1,ICP title match — decision-maker in relevant function,digital-health-strategy
+268,Sabrina Goldhahn,Head of Corporate Strategy,HCF Australia,https://au.linkedin.com/in/sabrinagoldhahn,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+274,Bryant Da Silva,Head of Operations and Planning,HCF Australia,https://au.linkedin.com/in/bryant-da-silva-4664a631,PASS,2,ICP title match — decision-maker in relevant function,operational-scale
+281,Phoebe Aluquin,Integrated Care Partnerships Manager,HCF Australia,https://au.linkedin.com/in/phoebe-aluquin-0485b6178,PASS,3,ICP title match — decision-maker in relevant function,digital-health-strategy
+284,Bernadette Fallon,Head of Department,HCF Australia,https://au.linkedin.com/in/bernadette-fallon-9518aa133,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+286,Andrew Kelson,Program Director,HCF Australia,https://au.linkedin.com/in/andrew-kelson-49138997,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+288,Robin Low,Non Executive Director,HCF Australia,https://au.linkedin.com/in/robin-low-b4b4164,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+292,Catherine Hallinan,Non Executive Director,HCF Australia,https://au.linkedin.com/in/catherinehallinan,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+327,Hakan Hurriyet,Program Director - Community Lead,HCF Australia,https://au.linkedin.com/in/hakan-hurriyet-47648711b,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+360,Allina Inkster,Information Technology Business Partner,HCF Australia,https://au.linkedin.com/in/allina-inkster-83015629,PASS,3,ICP title match — decision-maker in relevant function,product-integration
+387,Billy Lau,Product Manager,HCF Australia,https://au.linkedin.com/in/billy-lau-aaa49287,PASS,3,ICP title match — decision-maker in relevant function,product-integration

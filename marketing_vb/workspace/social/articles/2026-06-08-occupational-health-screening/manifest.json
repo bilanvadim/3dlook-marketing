@@ -1,0 +1,18 @@
+{
+  "article_slug": "occupational-health-screening-software",
+  "article_path": "workspace/seo/articles/2026-06-08-occupational-health-screening/v2-asselya/publish-package.md",
+  "product": "fitxpress",
+  "created": "2026-07-13",
+  "drafts": [
+    {"profile": "twitter-company", "file": "twitter-company/post.md", "status": "draft", "needs_visual": true},
+    {"profile": "instagram-company", "file": "instagram-company/post.md", "status": "draft", "needs_visual": true},
+    {"profile": "facebook-company", "file": "facebook-company/post.md", "status": "draft", "needs_visual": true},
+    {"profile": "linkedin-company", "file": "linkedin-company/post.md", "status": "draft", "needs_visual": true},
+    {"profile": "linkedin-katerina", "file": "linkedin-katerina/post.md", "status": "draft", "needs_visual": false},
+    {"profile": "linkedin-vadim", "file": "linkedin-vadim/post.md", "status": "draft", "needs_visual": false},
+    {"profile": "linkedin-olena", "file": "linkedin-olena/post.md", "status": "draft", "needs_visual": false},
+    {"profile": "linkedin-katya", "file": "linkedin-katya/post.md", "status": "draft", "needs_visual": false},
+    {"profile": "linkedin-nick", "file": "linkedin-nick/post.md", "status": "draft", "needs_visual": true}
+  ],
+  "ready_for_review": true
+}

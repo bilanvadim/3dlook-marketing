@@ -1,0 +1,31 @@
+# dependencies & build noise (anywhere)
+**/node_modules/
+**/__pycache__/
+**/*.pyc
+**/.venv/
+logs/
+**/*.log
+
+# secrets & live runtime state — only *.example templates belong in git.
+# `**/.env` alone is NOT enough: the file you actually fill in is `secrets.env`,
+# and it holds the bot token, the Telegram api_hash and a GitHub PAT at once.
+**/.env
+**/secrets.env
+**/config.yaml
+**/auth.json
+**/mem0.json
+**/creds.env
+**/*.session
+**/*.session-journal
+**/*.enc
+**/*.key
+**/*.pem
+
+# conductor state. A schema-only ho.db used to be tracked and shipped in every
+# release zip; it fills with real job prompts as soon as a conductor runs.
+**/*.db
+**/*.db-wal
+**/*.db-shm
+
+# rebuilt release kits (the checked-in zip is the reference one)
+dist/

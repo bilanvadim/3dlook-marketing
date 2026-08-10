@@ -1,0 +1,23 @@
+4,James Taylor,Chief Product Officer,Mosh,https://au.linkedin.com/in/jamesmtaylor,PASS,1,CPO at a weight-loss/telehealth platform — exact ICP buyer for product integration,product-integration
+27,Nicholas Holden,Chief Marketing Officer,Mosh,https://au.linkedin.com/in/nicholasholden1,PASS,2,CMO at weight-loss telehealth — ICP growth/retention buyer for program credibility,member-retention
+38,Glenn O'Sullivan,Chief Operating Officer,Mosh,https://au.linkedin.com/in/glennosullivan,PASS,1,COO at weight-loss telehealth — ICP operations buyer for scalable remote intake,operational-scale
+87,Suren Wickramasinghe,Chief Technology Officer,Mosh,https://au.linkedin.com/in/suren-wickramasinghe-ab5917b,PASS,2,CTO at weight-loss telehealth — ICP technical buyer for API/SDK integration,product-integration
+121,Joanna Wang,Vice President Clinical Operations,Mosh,https://au.linkedin.com/in/joanna-wang-8857bb4a,PASS,2,ICP title match — decision-maker in relevant function,clinical-operations
+129,Lee-Helena Rosolen,Head of Performance,Mosh,https://au.linkedin.com/in/lee-helena-rosolen,WEAK,,Title has ICP signal but function is analytics/insights/design — influence without clear buying authority,digital-health-strategy
+133,Rafael Vasconcelos Silva,Data & Analytics Manager,Mosh,https://au.linkedin.com/in/rvasconcelossilva,WEAK,,Title has ICP signal but function is analytics/insights/design — influence without clear buying authority,technical-integration
+144,Don Raissis,Non Executive Director,Mosh,https://au.linkedin.com/in/donraissis,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+152,Tushar Yadav,Medical Director,Mosh,https://au.linkedin.com/in/tushar-yadav-1b5031144,PASS,1,ICP title match — decision-maker in relevant function,clinical-operations
+202,Claudia Wu,Head of Expansion (APAC),Mosh,https://au.linkedin.com/in/claudia-wu-01b98a1a3,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+228,Kieran Dang,Chief Medical Officer,Mosh,https://au.linkedin.com/in/kieran-dang,PASS,1,ICP title match — decision-maker in relevant function,clinical-operations
+280,Andy Pavalache,VP of Customer,Mosh,https://au.linkedin.com/in/andy-pavalache-0aa4b0180,PASS,2,ICP title match — decision-maker in relevant function,member-retention
+93,asher freilich,Managing Director and Founder,InstantScripts,https://au.linkedin.com/in/asher-freilich-0a36a773,PASS,1,Founder/MD of a telehealth/eScripts platform — top ICP founder buyer,executive-outcomes
+141,Built Varinporn Amporndanai,Medical Director InstantCosmetics,InstantScripts,https://au.linkedin.com/in/built-amporndanai,PASS,1,ICP title match — decision-maker in relevant function,clinical-operations
+191,Elisha Frenkel,Customer Engagement Manager,InstantScripts,https://au.linkedin.com/in/elisha-frenkel-2b203b81,PASS,3,ICP title match — decision-maker in relevant function,member-retention
+198,Melissa Ironside,Head of Customer,InstantScripts,https://au.linkedin.com/in/melissa-ironside-77b8a139,PASS,2,ICP title match — decision-maker in relevant function,member-retention
+338,Paul Wilson,Non Executive Director,InstantScripts,https://au.linkedin.com/in/paul-wilson-6a1288145,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+77,Wael Hanna,Co-Founder,Medmate,https://au.linkedin.com/in/wael-hanna-9a555a50,PASS,1,Co-Founder of a telehealth/prescription platform — top ICP founder buyer,executive-outcomes
+169,Aifric Boylan,Chief Executive Officer,Qoctor,https://au.linkedin.com/in/aifric-boylan-53ab67114,PASS,1,ICP title match — decision-maker in relevant function,digital-health-strategy
+282,Jeremy Forrester,Chief Technology Officer,qoctor,https://au.linkedin.com/in/jeremy-forrester-5569ba1,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+349,Weng Tak Poon,Chief Operations Officer,qoctor,https://au.linkedin.com/in/weng-tak-poon-560080137,PASS,1,ICP title match — decision-maker in relevant function,operational-scale
+138,Sarah McRae,Chief Executive Amplar Health Home Hospital,Amplar Health,https://au.linkedin.com/in/sarah-mcrae-071164227,PASS,1,ICP title match — decision-maker in relevant function,clinical-operations
+84,Philip Mackney,Co-Founder,Hopstep,https://www.linkedin.com/in/philip-mackney-a350a450/,WEAK,,Founder but healthcare-workforce/recruitment platform — borderline company fit,digital-health-strategy

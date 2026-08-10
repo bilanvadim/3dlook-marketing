@@ -1,0 +1,18 @@
+{
+  "name": "marketing_vb_sm",
+  "owner": {
+    "name": "Vadim Bilan + Sergiy",
+    "url": "https://github.com/bilanvadim/3dlook-marketing"
+  },
+  "metadata": {
+    "description": "Mixed marketing system: Vadim's brand-driven 3DLOOK teams (marketing_vb) blended with Sergiy's marketing specialists (marketing_sm). This marketplace ships the bridge plugin (unified /vbsm-campaign orchestration + marketing-vb-sm skill); the mix profile also enables the mvb-* and mkt-* plugins. Switch into it via profile 'marketing_vb_sm'.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "mvb-sm-bridge",
+      "source": "./plugins/mvb-sm-bridge",
+      "description": "Bridge orchestration for the Vadim×Sergiy mix: /vbsm-campaign command + marketing-vb-sm skill defining the blended workflow (Sergiy strategy → Vadim brand-grounded execution → Vadim QC + Hermes verify → Sergiy measurement) and the precedence rules between the two systems"
+    }
+  ]
+}

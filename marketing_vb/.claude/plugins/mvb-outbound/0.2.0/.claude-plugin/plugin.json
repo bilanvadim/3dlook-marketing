@@ -1,0 +1,6 @@
+{
+  "name": "mvb-outbound",
+  "description": "Vadim outbound team: hypothesis-generator, icp-validator, company-researcher, people-extractor, message-sequencer, closelyhq-importer, campaign-analyzer, response-classifier. ICP → hypothesis → shortlist → sequencing → analysis outbound flow.",
+  "version": "0.2.0",
+  "author": { "name": "Vadim Bilan" }
+}

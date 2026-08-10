@@ -1,0 +1,16 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  // ~/.config/opencode/opencode.jsonc — the BACKUP coding agent (Claude Code is
+  // primary; OpenCode takes over when Claude hits its usage limit).
+  //
+  // GENERATED every morning by hermes-agent/ops/model-router/refresh.py, which
+  // picks the fastest usable FREE model across the top-3 free providers and writes
+  // both fields here. Editing it by hand only lasts until 07:00.
+  //
+  // `small_model` is NOT cosmetic: OpenCode titles every session with its built-in
+  // small model (gpt-5-nano), which is PAID on zen. With no balance that call 401s
+  // with CreditsError, the stream dies, and `opencode run` exits 0 having printed
+  // NOTHING. Both ids must point at a free model.
+  "model": "google/gemini-3.5-flash-lite",
+  "small_model": "google/gemini-3.5-flash-lite"
+}

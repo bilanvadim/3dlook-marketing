@@ -1,0 +1,4 @@
+person_id,full_name,title,company_name,decision,priority,reason,recommended_message_angle
+3ade3938b5be,Mary Robson,Practice Manager - Medibank Health Solutions,Medibank,WEAK,,Practice Manager - Medibank Health Solutions at Medibank — health-relevant but Manager level at large insurer lacks purchasing authority; internal champion potential.,preventive-health
+d5936c2d7a2a,Denise Rea,CX Division Manager,Medibank,WEAK,,CX Division Manager at Medibank — business/strategy role at insurer; may touch digital health innovation but unclear decision authority.,preventive-health
+4597115c1cf3,Leonie Barritt,Retail Centre Manager Bundaberg,Medibank,WEAK,,Retail Centre Manager Bundaberg at Medibank — innovation/tech role at insurer; may touch member-facing digital health tools.,digital-transformation

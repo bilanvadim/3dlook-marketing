@@ -1,0 +1,457 @@
+person_id,first_name,last_name,job_title,company_name,location_country,seniority,decision,priority,reason,message_angle
+73af335b082f,Rami,Madanat,"Head of Hip and Knee Arthroplasty Centers",Terveystalo,Finland,Director,FAIL,,"Pure orthopedic surgery specialty director; no digital/virtual care program ownership (anti-case match)",
+4d300f3b3a94,Noel,Silveira,"Chief Digital Officer","Medgate Solution",Bahrain,C-Level,FAIL,,"Geo-excluded: Bahrain (explicit anti-case); profile skews fintech not digital health",
+2171db7141aa,Holger,Ottleben,"Member of the Scientific Advisory Board","iBET - Instituto de Biologia Experimental e Tecnológica",Germany,Board/Advisor,FAIL,,"Biotech research institute advisor; no patient-facing digital program (anti-case)",
+a386fb28de4b,"Dr. med. Jan-Christoph",Loh,"Medical Director","Wellster Healthtech Group",Germany,C-Level,PASS,P1,"Medical Director at a European digital health/weight-management platform; direct clinical buyer",weight-management
+8e51f1bae1f6,Anne,Blom,"Development Director","Terveystalo",Finland,C-Level,PASS,P2,"Development Director, Digital Development at Terveystalo; owns digital transformation adjacent to telehealth expansion",digital-transformation
+bfeadd4cbfb7,Jari,Haapaniemi,MD,Terveystalo,Finland,"Individual Contributor",FAIL,,"Occupational medicine clinician; no digital program scope",
+1c5e2a99f1b9,Markus,Oor,COO,Dr.Dropin,Sweden,C-Level,PASS,P3,"COO at Nordic virtual-care/telehealth provider; executive sponsor",virtual-care
+53e62be75de5,Ville,Iho,"President & CEO",Terveystalo,Finland,C-Level,PASS,P3,"Top executive sponsor at company explicitly expanding digital health/telehealth stack per hypothesis evidence",digital-transformation
+84b7732cd693,Carmine,Catalano,"Dirigente medico","Azienda Ospedaliera Universitaria Renato Dulbecco",Italy,"Individual Contributor",FAIL,,"Public hospital ophthalmologist; pure clinician, no digital program",
+41a92bac1c6e,Päivi,Manni-Pettersson,"Registered Dietitian","Terveystalo Forssa + Turku Aininkainen",Finland,"Individual Contributor",FAIL,,"Clinical dietitian; no digital/virtual care ownership",
+5df0c54f4d9f,Mikko,Soini,"VP, Strategy & TMO",Terveystalo,Finland,"Individual Contributor",PASS,P2,"VP Strategy/Transformation Management Office; owns digital development and AI transformation",digital-transformation
+095091c0c4ba,Beate,Müller,"Interim VP Operations",Oviva,Germany,Director,PASS,P3,"Interim VP Operations at Oviva (core weight-management digital health platform); operational executive sponsor",weight-management
+99d89aad3ce8,Tiina,Järvinen,"Technical Solution Owner, Service Management",Terveystalo,Finland,"Individual Contributor",WEAK,,"Technical Solution Owner - IT/technical evaluator, no purchasing authority (IT policy)",technical-integration
+0f30180dc825,Björn,Schulmeister,"VP Finance","Wellster Healthtech Group",Germany,Director,FAIL,,"Pure finance VP, not full CFO; no clinical/tech/product influence",
+f7d30ea076c0,Pekka,Manninen,"Commercial Director",Terveystalo,Finland,C-Level,FAIL,,"Generic commercial director, unspecified vertical, no digital tie",
+76be4d86776e,Ehsan,"Yazdan Panah","Director of Technology and Architecture",Doktor.se,Sweden,C-Level,WEAK,,"Director of Technology & Architecture - explicit IT policy WEAK example",technical-integration
+75c2ada2f07c,Petter,Lade,CFO,Dr.Dropin,Norway,C-Level,PASS,P3,"CFO at Nordic virtual-care telehealth provider; executive sponsor",virtual-care
+7ae06ff7c485,Ville,Mujunen,"Director, Technology Innovation",Terveystalo,Finland,C-Level,PASS,P2,"Director of Technology Innovation/Digital transformation, AI, startup co-operation",digital-transformation
+63803702f9a6,Simo,Taimela,"Chief Epidemiologist",Terveystalo,Finland,C-Level,WEAK,,"Senior clinical/research leadership, not a digital-health/virtual-care program owner",clinical-operations
+94e1cc3a3bef,Riina-Riitta,Helminen,"Chief Administrative Physician, Terveystalo & Director, Terveystalo Clinical Research",Terveystalo,Finland,C-Level,WEAK,,"Senior physician-executive/board member; administrative not digital-health specific",clinical-operations
+5defa5ccb351,Olivier,Thierry,Member,"Board Project",France,"Individual Contributor",FAIL,,"Vague company (Board Project); insufficient info to confirm ICP fit",
+83b20c22e555,Minna,Suonio,"Business Director",Terveystalo,Finland,C-Level,FAIL,,"Generic business director, unspecified vertical",
+2ad65a47e911,Carlos,Blanco,"Chairman & CEO","Encomenda Capital Partners SGEIC",Spain,C-Level,FAIL,,"VC/PE investor firm, not an operating buyer company",
+10941934e16e,Francois,Cassette,"Member of the Board",Doktr,Belgium,Board/Advisor,WEAK,,"Board member at core telehealth platform (Doktr)",virtual-care
+90b796b4c9e9,Ivan,Sandqvist,"Founder and Part Owner",Softpay,Denmark,C-Level,FAIL,,"Fintech/payments company, unrelated to digital health",
+657d5cc9d222,Alex,Hill,"Director of Product Marketing","Sidekick Health",Germany,C-Level,PASS,P2,"Product marketing director at digital therapeutics platform, patient engagement adjacent",member-engagement
+97d3a8a8f9e6,Martin,Eberhart,"Chief Commercial Officer","Doctor.One",Germany,C-Level,PASS,P2,"CCO at core digital health platform (physician-patient communication)",digital-transformation
+46fe6eacfb14,Martin,"Møller Paarse","Chief Executive Officer","Liva Healthcare",Denmark,C-Level,PASS,P3,"CEO of digital coaching/weight-management health platform; executive sponsor",weight-management
+91034ab8d350,Travis,Parkinson,"President, Commercial - Healthcare & Life Sciences and Rx","Sidekick Health",Switzerland,C-Level,PASS,P2,"Commercial president at digital therapeutics platform; payer/health-plan facing",clinical-operations
+e2e016c06195,Elina,Saviharju,"Senior Vice President, Legal",Terveystalo,Finland,C-Level,FAIL,,"Legal function, no digital/clinical/tech influence",
+18b69f046d52,Denis,Silva,"Senior Director of Engineering",Oviva,Germany,C-Level,WEAK,,"Director-level engineering leader at digital health company",technical-integration
+d11e77b84f5b,Maija,"Savolainen-Koskinen","Head of Digital Products, Individual Customers / B2C",Terveystalo,Finland,Director,PASS,P2,"Head of Digital Products B2C; direct product ownership in digital transformation",digital-transformation
+43d87e583b76,Petri,Castren,"Board Member",Terveystalo,Finland,Board/Advisor,WEAK,,"Board member, strategic not operational",
+c592a1b7b980,Riina,Monthan,"Director, New Specialities | Consumer and insurance business and specialities",Terveystalo,Finland,C-Level,FAIL,,"Consumer/insurance business line; fits insurance/wellness segment, not this telehealth campaign",
+8c52918f1c78,Jan,"Van Wijnendaele","Managing Director",Doktr,Belgium,C-Level,PASS,P3,"Managing Director of core telehealth platform (Doktr); executive sponsor",virtual-care
+941b9dad5ca5,Kobus,Dijkhorst,"CEO, shareholder","Nederlandse Obesitas Kliniek",Netherlands,C-Level,PASS,P3,"CEO/shareholder of obesity/weight-management clinic; clear FitXpress buyer (adjacent bariatric segment)",weight-management
+7360b590af71,Kati,Kaksonen,"Director of Investor Relations",Framery,Finland,C-Level,FAIL,,"Acoustic office pod manufacturer, unrelated industry",
+50026de94c97,Astrid,Ebeling,"Director Public Sector Sales",Terveystalo,Finland,C-Level,FAIL,,"Public-sector B2B sales, off-segment for telehealth",
+d1da318e666e,Julia,Venesmaa,"Development Director, TMO & Strategy",Terveystalo,Finland,C-Level,PASS,P2,"Development Director in strategy/transformation management office",digital-transformation
+d9c4641334dd,Sikko,Zoer,"Managing Partner","Qwinn Business Partners",Netherlands,"Individual Contributor",FAIL,,"Consulting/advisory firm, not an operating ICP company",
+47573e9b773b,Harald,Øyen,Styremedlem,Edda.ai,Norway,"Individual Contributor",WEAK,,"Board member (Styremedlem) at digital health company",virtual-care
+a35c10fe9e45,Liisa,Häkkinen,"Consultant IVF/Infertility","Mehiläinen Oy Felicitas",Finland,"Individual Contributor",FAIL,,"Pure clinician at a different traditional healthcare provider",
+892b5247631d,Karla,"Martinez Majander","Director I Brand, CX, Marketing & Digital Sales",Terveystalo,Finland,C-Level,PASS,P2,"Director of CX/Digital Sales; member-experience adjacent",member-engagement
+ce94d223e3fc,Kenneth,Jensen,"Chief Product & Technology Officer (CPTO)","Liva Healthcare",Denmark,C-Level,PASS,P3,"CPTO - C-suite technical/product entry point (CTO-equivalent)",technical-integration
+771df7423c44,Robin,Rutili,"Co-Founder & CEO","Vincero AB",Sweden,C-Level,FAIL,,"Unclear industry/insufficient info to confirm ICP fit",
+89a2e09246a9,Jonas,Vig,CEO,"Min Doktor",Sweden,C-Level,PASS,P3,"CEO of Swedish telehealth platform; executive sponsor",virtual-care
+d8c01af81e61,Monika,"Frosteman ♦️","Business Director ICA Special","ICA Gruppen",Sweden,C-Level,FAIL,,"Grocery retail group, unrelated industry",
+54e68bc7bcb0,Riikka,Sinkkonen,"Head of Insurance Business Development",Terveystalo,Finland,Director,FAIL,,"Insurance business development; fits a different ICP segment, not this telehealth campaign",
+4f3c9879508c,Hilkka,Jakola,"Business Director",Terveystalo,Finland,C-Level,FAIL,,"Generic business director, unspecified vertical",
+625a4ffcc6a3,"Dr. Fei",Tian,Principal,"MIG Capital",Germany,Manager,FAIL,,"VC firm, not an operating buyer company",
+c1a150f2c808,Aebischer,Olivier,"Product Owner","Medgate Switzerland",Switzerland,"Individual Contributor",WEAK,,"Product Owner - technical/implementation role, no purchasing authority",technical-integration
+229b2085fec1,Mikko,Tykkä,"Head of ICT Projects",Terveystalo,Finland,Director,WEAK,,"IT project management lead",technical-integration
+5dc26ae2c67e,Guy,Shauli,"Customer Excellence Director","Novo Nordisk",Israel,C-Level,FAIL,,"Geo mismatch (Israel is katya's market); Novo Nordisk is a pharma manufacturer, not a digital health platform",
+604db13a18ea,Erin,McLaine,"Growth Product Director",Oviva,Germany,C-Level,PASS,P2,"Growth/Product director at weight-management digital health platform",weight-management
+ecfdef3aa980,Anne,Salonen,"Product Owner, Care Paths & Surveys",Terveystalo,Finland,"Individual Contributor",WEAK,,"Product Owner - IT/technical evaluator role",technical-integration
+55a24bf2692a,Krzysztof,Seweryn,"Member of The Supervisory Board",Holi,Poland,Board/Advisor,WEAK,,"Supervisory board member at digital health/wellness platform",virtual-care
+8025f48779ae,Erika,Aallonvuori,"Director of Technology",Terveystalo,Finland,C-Level,FAIL,,"Role is Procurement/Premises/Technology (facilities), not digital health platform",
+b1ec3353d0b1,Sanna,Huttunen,"Vice President, Digital Development",Terveystalo,Finland,C-Level,PASS,P2,"VP Digital Development",digital-transformation
+c14b85bbb2f2,Semra,Krasniqi,"Product Owner",hellocare.ai,Kosovo,"Individual Contributor",FAIL,,"Geo-excluded: Kosovo (explicit anti-case, non-EU)",
+50ee5d668e30,Sylvie,Nhansana,"CEO at Qare",Qare,France,C-Level,PASS,P3,"CEO of French telehealth platform; executive sponsor",virtual-care
+60060419e423,Anne-Cécile,Galloy,Partner,"50 Partners",France,"Individual Contributor",FAIL,,"PE/investment firm, not an operating buyer company",
+25cf8b2a6592,Jenni,Rundgren,"Product Owner",Terveystalo,Finland,"Individual Contributor",WEAK,,"Product Owner - IT/technical evaluator role",technical-integration
+df10fabd6abd,Henrik,E.,"Managing Director, Sidekick Health Germany/Rx","Sidekick Health",Germany,C-Level,PASS,P3,"Country Managing Director at digital therapeutics platform",clinical-operations
+62540cc9c9c8,Antti,H.,"Product Owner",Terveystalo,Finland,"Individual Contributor",WEAK,,"Product Owner - IT/technical evaluator role",technical-integration
+8c3b7d985419,Clara,"Campàs Moya","Managing Partner and co-founder","Asabys Partners",Spain,C-Level,FAIL,,"VC firm, not an operating buyer company",
+38e8d386b45f,Andrew,Crookston,"VP of Engineering",Doktor.se,Sweden,Director,PASS,P3,"VP Engineering - C-suite technical entry point per IT policy rule",technical-integration
+92a030875699,Teemu,Hakkarainen,"Product Owner",Terveystalo,Finland,"Individual Contributor",WEAK,,"Product Owner - IT/technical evaluator role",technical-integration
+a4c62488d23f,Tuuli,Tervaskanto,"Director, Corporate and Public Health, Large Account Sales",Terveystalo,Finland,C-Level,FAIL,,"B2B corporate/public account sales, off-segment for telehealth",
+cad41cf85e10,Tiina,Härkönen,"Head of Mental Health Services",Terveystalo,Finland,Director,FAIL,,"Clinical service-line director, not digital/virtual-care owner",
+6d9779ba6024,Mikael,Sabbah,"Director, Head of Career Services",Terveystalo,Finland,C-Level,FAIL,,"HR/recruiting function, unrelated",
+26183e08e59a,Denis,Rageot,"Interim CFO","Self-employed",France,C-Level,FAIL,,"Independent consultant, no specific target company",
+9de2a6e70a12,David,Sloff,"Angel Investor & Start-Up Advisor in HealthTech, Femtech, Climate Ventures","Self-employed",Netherlands,Board/Advisor,FAIL,,"Independent investor/advisor, no single operating company to target",
+7985522427c2,Olli,Helminen,"Business Director, Massage Therapy at Rela-Hierojat & Suomen Hierojakoulut / Terveystalo",Terveystalo,Finland,C-Level,FAIL,,"Clinical service-line director (massage therapy), not digital",
+a2c7421bb8f7,Tiina,Tissari,"Senior Vice President; Consumer, Insurance and Specialty businesses",Terveystalo,Finland,C-Level,FAIL,,"Consumer/insurance business line, off-segment for telehealth",
+ff164c57dc71,Kirsi,Mäki-Kuutti,"Director, Financial Control and Reporting",Terveystalo,Finland,C-Level,FAIL,,"Finance function, no digital/clinical influence",
+996ac95a3cbf,Petri,Mäenkoski,Owner,"Iin Hyvinvointi ja Terveystalo Oy",Finland,"Individual Contributor",FAIL,,"Small local franchise, unrelated to group digital program",
+4adb517dbc96,Petri,Niemi,"Vice President, Finance and Business Control & Deputy CFO",Terveystalo,Finland,C-Level,WEAK,,"Deputy CFO - potential budget influence but pure finance function at a non-core-digital-health company",digital-transformation
+aea7d5a2b470,Arindam,"Ghosh, PhD","Vice President AI",Oviva,Germany,C-Level,PASS,P3,"VP AI - senior technical executive, CTO-equivalent entry point",technical-integration
+d83d3eaee0e3,Niki,Kotilainen,"Senior Vice President Operations / COO Healthcare Services",Terveystalo,Finland,C-Level,PASS,P3,"SVP Operations/COO-equivalent; executive sponsor",digital-transformation
+649c487597a5,Mikko,Rantasalo,"MD,PhD",Terveystalo,Finland,"Individual Contributor",FAIL,,"Senior orthopedic consultant, pure clinician",
+7acf988274a5,Pekka,Roto,"Chief Medical Officer","Suomen Terveystalo OYJ",Finland,C-Level,PASS,P1,"Group-wide Chief Medical Officer; direct clinical buyer",clinical-operations
+6efe0767d5b8,Albert,Castells,"Founder & Co-Ceo (Board Member)","Doctor i",Spain,C-Level,PASS,P3,"Founder/Co-CEO of Spanish telehealth platform group",virtual-care
+fbbbacb60a5a,Rob,Reintjens,"Director and co-owner","The Body Clinic",Netherlands,C-Level,PASS,P3,"Co-owner/director of weight-management clinic",weight-management
+1528e31fdecd,Klaus,Mitterer,CFO,Oviva,Germany,C-Level,PASS,P3,"CFO at weight-management digital health platform",weight-management
+a3f77af9a6ec,Tapio,Kuusisto,"Director, Architecture & Engineering",Terveystalo,Finland,C-Level,WEAK,,"Director Architecture & Engineering, digital development leaning technical role",technical-integration
+24c66f7271ef,Martin,Lindman,Founder/CEO,Doktor.se,Sweden,C-Level,PASS,P3,"Founder/CEO of Swedish telehealth platform",virtual-care
+a31209835b54,Andre,Moeri,"Co-Founder, Ecosystems & Partnerships",BaselCircular,Switzerland,C-Level,FAIL,,"Circular economy company, unrelated industry",
+86834a3f89d5,Felipe,Costa,"Principal Software Engineer",Oviva,Germany,Manager,WEAK,,"Senior software engineer at digital health company",technical-integration
+8d1a09af140e,"Olafur ""Oli""",Viggosson,CPTO,SidekickHealth,Iceland,"Individual Contributor",PASS,P3,"CPTO - C-suite technical/product entry point (CTO-equivalent)",technical-integration
+3649a1d18d5a,Riitta,Lassila,"Regional Director",Terveystalo,Finland,C-Level,FAIL,,"Regional physical-clinic operations director",
+afb85794d3ee,Demetrius,Rapello,"Director of Engineering",Oviva,Germany,C-Level,WEAK,,"Director-level engineering leader at digital health company",technical-integration
+20627a106cdb,Alison,MacNeil,"Platform Director","Sidekick Health",Iceland,C-Level,WEAK,,"Head of Platform equivalent role - IT policy WEAK example",technical-integration
+ed8ca82cf094,Petri,Lempiainen,Director,"Suomen Terveystalo Oyj",Finland,C-Level,FAIL,,"Generic director title, no specific detail confirming digital scope",
+db83302fadbd,Katja,Louhelainen,"Technical Solution Owner",Terveystalo,Finland,"Individual Contributor",WEAK,,"Technical Solution Owner - IT policy WEAK",technical-integration
+a2ba2b4cca5a,Kai,Eberhardt,"Co-Founder & CEO",Oviva,Switzerland,C-Level,PASS,P3,"Co-founder/CEO of weight-management digital health platform",weight-management
+11b8d5eb72e8,Boris,Bernstein,"Managing Director Europe","Water Street Healthcare Partners",Germany,C-Level,FAIL,,"Healthcare PE investor firm, not an operating buyer company",
+cb0603704e34,JW,Greve,"Doctor and Medical Medical Director Weight Doctors Nederland","Weight Doctors Nederland, Quole Medical Center",Netherlands,C-Level,PASS,P1,"Medical Director of weight-management clinic; direct clinical buyer",weight-management
+993414945fa0,Marja,Saarinen,"Product Owner",Terveystalo,Finland,"Individual Contributor",WEAK,,"Product Owner - IT/technical evaluator role",technical-integration
+69fd0805bb76,Tommi,Rasi,"Head of Psychology",Terveystalo,Finland,Director,FAIL,,"Clinical service-line director (occupational psychology), not digital",
+38d3d3288497,Guðmundur,"Jón Viggósson","Director of Platform Engineering","Sidekick Health",Iceland,C-Level,WEAK,,"Director of Platform Engineering - IT policy WEAK",technical-integration
+9fe10a35b397,Mia,Huppunen,"Senior dental officer / Orthodontics","Helsingin kaupunki – Helsingfors stad – City of Helsinki",Finland,Manager,FAIL,,"Public-sector dental clinician, unrelated",
+5575679b51c4,Andrine,"Forsén Bisbo","Chief Medical Officer",Hjemmelegene,Norway,C-Level,PASS,P1,"CMO of Norwegian home-visit/telehealth provider; direct clinical buyer",virtual-care
+6739a05c8bd6,Teo,L.,"Director, Career Services",Terveystalo,Finland,C-Level,FAIL,,"HR/recruiting function, unrelated",
+76a6bb17ccc2,Marko,Grönholm,"Head of Physiotherapy, Physiotherapist",Terveystalo,Finland,Director,FAIL,,"Clinical service-line director, not digital",
+1075e7322461,Jenny,Håkansson,"Director of Engineering","Min Doktor",Sweden,C-Level,WEAK,,"Director-level engineering leader at telehealth company",technical-integration
+532a602cd1c8,Christina,Hedman,"People & Culture Business Partner","Min Doktor",Sweden,"Individual Contributor",FAIL,,"HR function, unrelated",
+3a8e508d1436,Guido,Hegener,"Managing Partner","Digital Health Ventures / DHV Management GmbH",Germany,"Individual Contributor",FAIL,,"VC fund, not an operating buyer company",
+6376d17af2f2,"Dr. Anna",Haas,"Chief Commercial Officer",Oviva,Germany,C-Level,PASS,P2,"CCO at weight-management digital health platform",weight-management
+d2d3c4e9fb24,Sami,Leppämäki,"Head of Psychiatry and Addiction Medicine",Terveystalo,Finland,Director,FAIL,,"Clinical service-line director, not digital",
+1e9d1b955ff2,Jan,Verho,"Registered Dietitian",Terveystalo,Finland,"Individual Contributor",FAIL,,"Clinical dietitian, no digital ownership",
+17f30de788b6,Mari,Takari,"Product owner",Terveystalo,Finland,"Individual Contributor",WEAK,,"Product Owner - IT/technical evaluator role",technical-integration
+20798208c1f8,Guillaume,Jasmin,"Senior Staff Engineer",Qare.fr,France,Manager,WEAK,,"Senior software engineer at telehealth platform",technical-integration
+1c3e30c1fe2f,Sami,Hyttinen,"Product Owner",Terveystalo,Finland,"Individual Contributor",WEAK,,"Product Owner - IT/technical evaluator role",technical-integration
+2760b5b54f9a,Taneli,Hirvola,"Business Director, Dental health",Terveystalo,Finland,C-Level,FAIL,,"Dental service line - explicit anti-case (Dental/Optical)",
+1f659e76d98e,Thomas,Richner,"Vice President Of Technology",Oviva,Switzerland,C-Level,PASS,P3,"VP Technology - CTO-equivalent C-suite technical entry point",technical-integration
+3438b3e2f867,Marjo,Hellström,"Product Owner",Terveystalo,Finland,"Individual Contributor",WEAK,,"Product Owner - IT/technical evaluator role",technical-integration
+e6d0c803905c,Asta,Hautamäki,"MD, PhD, Specialist in Ophthalmology, Vitreoretinal Surgery","Helsinki University Central Hospital",Finland,"Individual Contributor",FAIL,,"Public hospital clinician, unrelated",
+8f00e634ac3e,Kristoffer,Ingebrigtsen,"CEO & Co-Founder",Dr.Dropin,Norway,C-Level,PASS,P3,"CEO/co-founder of Nordic virtual-care provider",virtual-care
+fe3ec52942df,Tommi,Qvick,"Unit Director","Suomen Terveystalo Oyj",Finland,C-Level,FAIL,,"Generic sales/marketing unit director, no digital tie",
+f8d7ad88ebcc,Riikka,Soikkanen,"Director, Business Control, Portfolio Businesses",Terveystalo,Finland,C-Level,FAIL,,"Finance function, no digital/clinical influence",
+01a80bd75e6d,Heini,Rauhamaa,"Development Director",Terveystalo,Finland,C-Level,WEAK,,"Development director, unspecified area - insufficient detail to confirm digital scope",digital-transformation
+0b333e3879d2,Francois-Xavier,TRANCART,"CEO & Co-founder",Annette,France,C-Level,FAIL,,"Unclear what Annette does; insufficient info to confirm ICP fit",
+a147b42fa27a,Johannes,Grasberger,"Director, Business Control",Terveystalo,Finland,C-Level,FAIL,,"Finance function, no digital/clinical influence",
+7675267ef80b,Esa,Ruuskanen,Työterveyslääkäri,Terveystalo,Finland,"Individual Contributor",FAIL,,"Occupational health physician, pure clinician",
+fc261f12300e,Antti,Väkevä,"Occupational Health Physician",Terveystalo,Finland,"Individual Contributor",FAIL,,"Pure clinician, no digital scope",
+ccc53c316b5c,Ritva,Mela,"Account Director",Terveystalo,Finland,C-Level,FAIL,,"B2B corporate/public account management, off-segment",
+cece11d2b27f,Nora,Guthe,"Chief Operating Officer","Dr.Dropin Psykologi",Norway,C-Level,PASS,P3,"COO of psychology-focused virtual-care provider",virtual-care
+2f8264e0c0f7,Markku,Partinen,"Medical Director, Sleep Medicine",Terveystalo,Finland,C-Level,WEAK,,"Specialty-specific Medical Director (sleep medicine); not enterprise digital/virtual-care owner",clinical-operations
+ea27d7cbd61f,Etienne,Haddad,"Chief Operations Officer","myDiabby Healthcare",France,C-Level,PASS,P3,"COO of diabetes telemedicine platform",clinical-operations
+39edbdf0e8d4,Luisa,Gerstner,"VP Growth Marketing",Oviva,Switzerland,Director,PASS,P2,"VP Growth Marketing at weight-management digital health platform",weight-management
+74a6621fac2e,Bjorgvin,Olafsson,"Principal Software Architect","Sidekick Health",Sweden,Manager,WEAK,,"Solutions/Platform Architect - IT policy WEAK",technical-integration
+bf18498ba1d6,Pauli,Vettenranta,"Product Owner, DS Digital Development ST",Terveystalo,Finland,"Individual Contributor",WEAK,,"Product Owner - IT/technical evaluator role",technical-integration
+a9264ba00749,Hanna,Tohtua,"Product Owner",Terveystalo,Finland,"Individual Contributor",WEAK,,"Product Owner (Digital Development, App) - IT/technical evaluator role",technical-integration
+607936ca4aa9,Adriano,Melo,"Director Engineering",Oviva,Germany,C-Level,WEAK,,"Director-level engineering leader at digital health company",technical-integration
+29a222ec6568,Antti,Kovalainen,"Head of IT",Terveystalo,Finland,Director,WEAK,,"Head of IT - IT policy WEAK",technical-integration
+cd2d9f708489,Michael,Forisch,"Chapter Lead Digitalization and Governance",Roche,Austria,Manager,FAIL,,"Pharma/diagnostics manufacturer corporate role, not a digital-health platform (anti-case)",
+b0e8979cc740,Boukje,Zijlstra,"Bewegingsdeskundige, (Leefstijl) coach en fysiotherapeut","Nederlandse Obesitas Kliniek",Netherlands,"Individual Contributor",FAIL,,"Clinical coach/physiotherapist IC role, no purchasing authority",
+c8127aaea643,Mikko,Rinta,"Johtava ravitsemusterapeutti",Terveystalo,Finland,"Individual Contributor",FAIL,,"Lead dietitian, pure clinician",
+637448f0060f,Laura,Karotie,"Senior Vice President, Corporate Health",Terveystalo,Finland,C-Level,FAIL,,"B2B corporate-health business line, off-segment for telehealth",
+15cf55cd1b77,Cedric,Berset,"Director Marketing, Communications & Sales",Medgate,Switzerland,C-Level,PASS,P2,"Marketing/Comms/Sales director at core telehealth platform",virtual-care
+23acf9a4ae0b,Jeton,Idrizaj,"Director of Information Technology",hellocare.ai,Kosovo,C-Level,FAIL,,"Geo-excluded: Kosovo (explicit anti-case, non-EU)",
+4aac2fc371dc,Mandana,R.,"Head of Quality Management",Oviva,Switzerland,Director,WEAK,,"Quality/regulatory adjacent role at digital health company",compliance
+33199cc8e533,Riina,Hyöky,"Product Portfolio Director",Terveystalo,Finland,C-Level,PASS,P2,"Product Portfolio Director with explicit Digital Transformation remit",digital-transformation
+efbd00e2f4cb,Sari,Tefke,"Chain Director at Medical Center network",Terveystalo,Finland,C-Level,FAIL,,"Physical medical-center chain operations, not digital",
+7fcc31accdc6,Jukka,Erkkilä,"Director of Medical and Dental Imaging / Kuvantamisen johtaja",Terveystalo,Finland,C-Level,FAIL,,"Imaging/diagnostics service-line director, not digital",
+5e212cb3f535,"Leifur Geir","Hafsteinsson Ph.D.","Head of Performance Management","Sidekick Health",Iceland,Director,FAIL,,"HR/performance-management function, unrelated",
+9995567a24ae,Merrick,Sapsford,"Director Engineering",Oviva,Germany,C-Level,WEAK,,"Director-level engineering leader at digital health company",technical-integration
+f7b4735871ac,Harpa,Arnardóttir,"Director of Regulatory & Compliance","Sidekick Health",Iceland,C-Level,WEAK,,"Regulatory/Compliance director at digital therapeutics platform",compliance
+9da994aa87b0,Tarja,Niinisalo,"VP, Commercial",Terveystalo,Finland,"Individual Contributor",FAIL,,"Generic commercial VP, unspecified digital tie",
+dee36ca2ba54,Espen,Åtland,"Chief Digital Officer",Dr.Dropin,Norway,C-Level,PASS,P1,"CDO - direct digital-health/virtual-care program owner",digital-transformation
+b5e80eb75d55,Martin,Sellman,"Group CEO","Oral Care AB",Sweden,C-Level,FAIL,,"Dental/oral-care company, unrelated to telehealth ICP",
+902612a63063,Tomi,Gustafsson,"Business Director (Liiketoimintajohtaja) at Terveystalo",Terveystalo,Finland,C-Level,FAIL,,"Generic business director, unspecified vertical",
+ded3160ac29d,Hanna-Riikka,Sundberg,"Head of Customer Insights",Terveystalo,Finland,Director,PASS,P2,"Head of Customer Insights - matches Health Insights/Member Experience P2 persona",member-engagement
+c4b12e21d795,Ana,"Mijuskovic, Ph.D.","Senior Director Clinical Trials",Oviva,Germany,C-Level,PASS,P1,"Senior Director of Clinical Trials/Development at weight-management digital health platform; direct clinical buyer",weight-management
+07b9588aad00,Stev,Reß,"Head of Customer Service",Oviva,Germany,Director,WEAK,,"Customer service operations, adjacent to member experience but not decision-maker",member-engagement
+4cda20056eb6,Antti,Aro,"Director occupational health and organizational psychology",Terveystalo,Finland,C-Level,FAIL,,"Clinical/occupational-health service line, not digital",
+1adad97a2ee8,Henri,Mäenalanen,"EVP Terveystalo, CEO Rela Oy, Sauma Oy",Terveystalo,Finland,C-Level,PASS,P3,"EVP - top group executive sponsor",digital-transformation
+4f58e111350c,Tapani,Strander,"Medical Director, Turku",Terveystalo,Finland,C-Level,WEAK,,"Regional Medical Director; not enterprise digital/virtual-care owner",clinical-operations
+95c3eb6d3ea4,Sami,Vellonen,"Director, Business IT & InfoSec",Terveystalo,Finland,C-Level,PASS,P3,"Self-described CIO & CISO - C-suite technical entry point",technical-integration
+f1cfda5ab8ea,"Maciek (Matt)",M.,"CEO & Co-Founder","Doctor.One",Poland,C-Level,PASS,P3,"CEO/co-founder of core digital health platform",digital-transformation
+52ace5620662,Pauline,Lebrec,"Head of Marketing Communications",Qare,France,Director,PASS,P2,"Marketing/Comms head at core telehealth platform, patient-facing messaging",member-engagement
+c50d35e748fe,Guillem,Masferrer,Partner,"Asabys Partners",Spain,"Individual Contributor",FAIL,,"VC firm, not an operating buyer company",
+6429a8f27cdc,Marjut,Matikka,"Director, invoicing services",Terveystalo,Finland,C-Level,FAIL,,"Finance/billing function, no digital influence",
+36fae42de7ac,Romain,Fleury,"Head of product design",Qare,France,Director,PASS,P2,"Head of Product Design at core telehealth platform",member-engagement
+bf1142f9b6f7,mieke,"van spanje",President,"Nederlandse Obesitas Stichting",Netherlands,C-Level,FAIL,,"Non-profit advocacy foundation, not a commercial operating company",
+514b2b0e5b81,Andreas,Winqvist,"Business Unit Director",Doktor24,Sweden,C-Level,PASS,P3,"Business Unit Director at Swedish telehealth platform; senior exec",virtual-care
+b95bdfcc4547,Wolfgang,Schwarz,"Vice President Finance",Oviva,Germany,C-Level,FAIL,,"Pure finance VP, not full CFO",
+5b2a0a664f6d,Tuomo,Tikkala,"Technical Solution Owner",Terveystalo,Finland,"Individual Contributor",WEAK,,"Technical Solution Owner - IT policy WEAK",technical-integration
+68f51f64e9ac,Marc,"de la Fayolle",CFO,Qare,France,C-Level,PASS,P3,"CFO at core telehealth platform",virtual-care
+e5f33c23a2f5,María,"Vargas Gómez","Téléconsultations de Médecine Générale","Qare . Permanent Part-time",France,"Individual Contributor",FAIL,,"Frontline teleconsultation physician, no program/purchasing authority",
+eda7aaa7df2e,Ben,Wörner,"Vice President of Product Management",Oviva,Germany,C-Level,PASS,P2,"VP Product Management at weight-management digital health platform",weight-management
+76a387205612,"Astrid Kristine",Bjerke,"Chief Commercial Officer",Dr.Dropin,Norway,C-Level,PASS,P2,"CCO at Nordic virtual-care provider",virtual-care
+fb926e0072d6,Tryggvi,"Thorgeirsson, MD, MPH",CEO,"Sidekick Health",Iceland,C-Level,PASS,P3,"CEO of digital therapeutics platform",clinical-operations
+a9614479bfa6,Olivia,Gerard,"Head of Human Resources",Qare,France,Director,FAIL,,"HR function, unrelated",
+8d767b9c9ecb,Belinda,Wenger,"Head Product Development & Management","Medgate Switzerland",Switzerland,"Individual Contributor",PASS,P2,"Head of Product Development at core telehealth platform",virtual-care
+80d1f9989cf0,Markus,Feuerecker,"Founding Partner & Managing Director","YZR Capital",Germany,C-Level,FAIL,,"VC firm, not an operating buyer company",
+92384ba7dd6f,Saskia,Schrauwen,"Director of Operations","Nederlandse Obesitas Kliniek",Netherlands,C-Level,PASS,P3,"COO-equivalent Operations Director at weight-management clinic",weight-management
+57b5ca871d63,Uwe,Hebbelmann,"Senior Director Engineering",Oviva,Germany,C-Level,WEAK,,"Director-level engineering leader at digital health company",technical-integration
+7c15811b8694,Taina-Mari,Kääriä,Manager,Terveystalo,Finland,Manager,WEAK,,"Compliance/data-privacy/regulation manager (ISO27001, NIS2, CIPP/E)",compliance
+3ba9bdd6fc1b,Augustin,Chatenet,"Co-fondateur","Armin Armagnac",France,"Individual Contributor",FAIL,,"Spirits brand, unrelated to digital health despite Qare mention in bio",
+f6d71e9b6213,Eeva,"Nyberg-Oksanen","VP of Appointments, Diagnostics, Hospitals & Integrated Care Paths",Terveystalo,Finland,Director,PASS,P2,"VP with explicit digital-health-platform/primary-care digital-transformation remit",digital-transformation
+29e06e2a4cde,Damian,Papadopoulos,"Director TechOps & Business Excellence",Oviva,Switzerland,C-Level,WEAK,,"TechOps director - technical/ops role",technical-integration
+41e9ef3ef947,Frida,Inaeus,"Head of Group Business Control",Doktor.se,Sweden,Director,FAIL,,"Finance/business-control function, unrelated",
+f8b4886101d9,"Ellinor ",Berling,"Business Controller & financial accountant",Doktor.se,Sweden,"Individual Contributor",FAIL,,"Finance function, unrelated",
+3acd88816f11,Raisa,Kangasniemi,"Registered Dietitian",Terveystalo,Finland,"Individual Contributor",FAIL,,"Clinical dietitian, no digital ownership",
+33180e7808c9,Mari,Kuusenoja,"Director Of Career Services",Terveystalo,Finland,C-Level,FAIL,,"HR/recruiting function, unrelated",
+69750e959745,Santtu,Hietaranta,"Regional Director at Terveystalo Kaakon seutu",Terveystalo,Finland,C-Level,FAIL,,"Regional physical-clinic operations director",
+20528db75897,aria,Arjun,"supir pribadi","Minyak Bulus","Saudi Arabia","Individual Contributor",FAIL,,"Geo-excluded (Saudi Arabia) and unrelated role/company (personal driver, oil company)",
+db249a8fadb6,Jan-Niklas,Schmitz,"Director FP&A","Sidekick Health",Germany,C-Level,FAIL,,"Finance/FP&A function, unrelated",
+5a882cd23a89,Charlotte,Seiler,"Head of Operational Excellence",Qare,France,Director,WEAK,,"Operational excellence lead, adjacent influence but no clear budget authority",digital-transformation
+7f81f16c2d40,Katja,Kangaslehto,"Service Director of Physiotherapy",Terveystalo,Finland,C-Level,FAIL,,"Clinical service-line director, not digital",
+066e21dbd58a,Katja,Pietilä,"Process Owner",Terveystalo,Finland,"Individual Contributor",WEAK,,"Process/product-adjacent IT-flavored role",technical-integration
+d8c417c19437,Hanna,Kortteinen,"Business Unit Director, Rehabilitation",Terveystalo,Finland,C-Level,FAIL,,"Clinical rehab service-line director, not digital",
+1e9ed8879580,Kristian,Paavonen,"Speciality Director",Terveystalo,Finland,C-Level,FAIL,,"Generic specialty director, no detail confirming digital scope",
+638737412c89,Melanie,Schwendimann,"VP Strategy",Oviva,Switzerland,Director,PASS,P2,"VP Strategy at weight-management digital health platform",weight-management
+c7880ea46a97,Denise,G.,"People & Culture Business Partner",mySugr,Austria,"Individual Contributor",FAIL,,"HR function, unrelated",
+161c6ab1ef9b,Florian,Kobler,"Head of Marketing","Wellster Healthtech Group",Germany,Director,PASS,P2,"Marketing head at digital health platform",weight-management
+6fe209b1835b,Laura,Walter,"Director of Product Management",Oviva,Germany,C-Level,PASS,P2,"Director of Product Management at weight-management digital health platform",weight-management
+72d3a7fa541f,"Ana Violeta",Fonseca,"Principal Quality Partner",mySugr,Austria,Manager,WEAK,,"Quality/compliance role at diabetes digital health company",compliance
+d795c42a27b2,Sanna,Koro,"Career Business Partner",Terveystalo,Finland,"Individual Contributor",FAIL,,"HR function, unrelated",
+9d03da5b8df3,Valtteri,Helve,"Head of Pricing",Terveystalo,Finland,Director,FAIL,,"Commercial pricing function, not digital-specific",
+f62c4597c738,Antti,Kontio,"Career Business Partner",Terveystalo,Finland,"Individual Contributor",FAIL,,"HR function, unrelated",
+f5f5ecb82f01,Marion,Allard,"Head of data",Qare,France,Director,WEAK,,"Data leadership at telehealth platform, technical/analytics function",technical-integration
+42c1258f3b03,Risto,Ojala,"Chief, Dept of Radiology. Oulu",Terveystalo,Finland,C-Level,FAIL,,"Imaging/radiology clinician, not digital",
+1b738b9c9848,Markku,Nissinen,"Chief specialist officer in gastroenterology",Terveystalo,Finland,C-Level,FAIL,,"Pure clinician (gastroenterology), not digital",
+22dfa4392032,Birgit,Richter,"Head of Regulatory Affairs","mySugr GmbH",Austria,Director,WEAK,,"Regulatory affairs head at diabetes digital health company",compliance
+da834462005a,Sanna,Hyvärinen,"Head of Dental, aluejohtaja",Terveystalo,Finland,Director,FAIL,,"Dental service line - explicit anti-case",
+3fe95ce98829,"Dr. Udo",Klotzki,"Managing Director & Co-Founder","The Body Clinic",Germany,C-Level,PASS,P1,"MD/co-founder of medical weight-loss clinic; direct clinical buyer",weight-management
+76c9f928da67,Andy,Fischer,CEO,Medgate,Switzerland,C-Level,PASS,P3,"CEO of core telehealth platform",virtual-care
+72ff7248d059,Verena,Dohms,"Co-Founder","The Body Clinic",Germany,C-Level,PASS,P3,"Co-founder of weight-management clinic",weight-management
+39f4ff42beed,Fredrik,Hellman,"Head of M&A",Doktor.se,Sweden,Director,FAIL,,"M&A/finance function, unrelated",
+93bcb657db5b,Nicolette,Lammers,"Hoofd medisch afvallen","The Body Clinic",Netherlands,"Individual Contributor",PASS,P1,"Head of medical weight-loss program (physician); direct clinical buyer",weight-management
+dcb79120ea11,Kaisa,Honka,"Service Director of Occupational Therapy","Terveystalo Kuntoutuspalvelut",Finland,C-Level,FAIL,,"Clinical service-line director, not digital",
+260db2318faa,Tringa,Kastrati,"Product Owner",hellocare.ai,Kosovo,"Individual Contributor",FAIL,,"Geo-excluded: Kosovo (explicit anti-case, non-EU)",
+7b21931f70c5,Severi,Nordberg,"Head of Group Business Control",Terveystalo,Finland,Director,FAIL,,"Finance function, unrelated",
+a6a9f7a7ecab,Lorenz,Fitzi,CFO,Medgate,Switzerland,C-Level,PASS,P3,"CFO at core telehealth platform",virtual-care
+546290876597,Pasi,Kotaniemi,"Business Director / Liiketoimintajohtaja Itä- ja Keski-Suomi",Terveystalo,Finland,C-Level,FAIL,,"Generic regional business director, unspecified vertical",
+d1c83c52a9c8,Eveliina,Vigelius,"Head of Public Affairs and Partner, Communications",Terveystalo,Finland,Director,FAIL,,"Public affairs/comms function, not digital-health decision",
+a1c3711275eb,Toni,Suokas,"Myyntijohtaja | Director, Corporate Health, SME",Terveystalo,Finland,C-Level,FAIL,,"B2B corporate-health SME sales, off-segment",
+90d35ad1ff15,Olli,Väisänen,"Chief Physician",Terveystalo,Finland,C-Level,FAIL,,"Regional chief physician, clinical ops not digital",
+c88d1aabf818,Silvia,Wels,"Senior Director Product Design",Oviva,Switzerland,C-Level,PASS,P2,"Senior Director Product Design at weight-management digital health platform",weight-management
+83e8e1ae1fa6,Lauri,Saarivuori,"Transformation Director",Terveystalo,Finland,C-Level,PASS,P1,"Transformation Director with explicit Digital Health & AI Transformation remit",digital-transformation
+490fbdffa0cb,Jari,Karhu,"Director, Diagnostic",Terveystalo,Finland,C-Level,FAIL,,"Imaging/diagnostics service-line director, not digital",
+a7fbe3ce55fa,Nadine,Schmidt,"Head of Organic Growth",Oviva,Germany,Director,PASS,P2,"Head of Growth at weight-management digital health platform",weight-management
+4d91f3dc4f26,"Martin ","Mangiapia ","VP Communications","Wellster Healthtech Group",Germany,Director,FAIL,,"Pure comms/PR function, no clinical/tech/product decision",
+08206649da98,Hannu,N.,"Integrations Architect",Terveystalo,Finland,"Individual Contributor",WEAK,,"Solutions/Integrations Architect - IT policy WEAK",technical-integration
+076f0a2ee15f,Stefan,Schmidt,"Senior Director Business Development & Deputy MD Germany",Oviva,Germany,C-Level,PASS,P2,"Senior BD Director/Deputy MD at weight-management digital health platform",weight-management
+f399f8c97dbf,Hämmäinen,Pekka,Consultant,"King Faisal Specialist Hospital and Research Centre (Gen. Org.)",Finland,"Individual Contributor",FAIL,,"Geo-excluded (Saudi Arabia-based hospital) and pure clinician",
+70366680329e,Sóley,Valdimarsdóttir,"Director of Solution Services","Sidekick Health",Iceland,C-Level,PASS,P2,"Solution Services director at digital therapeutics platform",clinical-operations
+d9c1169479fc,Janne,Kanervisto,"Chief Medical Officer, Head of sleep medicine, Terveystalo.",Terveystalo,Finland,C-Level,WEAK,,"CMO title scoped to a specialty unit (sleep medicine), not enterprise digital-health owner",clinical-operations
+0b0d0e047a94,Linda,Aheristo,"Director of Quality",Terveystalo,Finland,C-Level,WEAK,,"Quality director, compliance-adjacent",compliance
+b040fb8d055d,Sébastien,Panchaud,"Chief Operating Officer (Sales & Operations)",Qare.fr,France,C-Level,PASS,P3,"COO of core telehealth platform",virtual-care
+5d975ba0f4c8,Demian,Jäger,"Director Engineering - DevOps",Oviva,Switzerland,C-Level,WEAK,,"Infra/DevOps director at a health-tech patient-facing company",technical-integration
+48f7f230a70c,Mads,Hammer,"Head of FP&A",Dr.Dropin,Norway,Director,FAIL,,"Finance/FP&A function, unrelated",
+57011b908074,Lucie,Renault-Dietsché,"Directeur des affaires publiques",Qare,France,"Individual Contributor",FAIL,,"Public affairs function, unrelated",
+08bc637e7fbd,Philippa,H.,"Head of Content",Oviva,Germany,Director,PASS,P2,"Head of Content - patient-facing messaging, member-engagement adjacent",member-engagement
+b7d4e7d321f7,Lindita,Dautovic,Verksamhetschef,Doktor.se,Sweden,"Individual Contributor",FAIL,,"Local physical-clinic branch manager, not a platform decision-maker",
+f75175266a29,"Elías Freyr",Guðmundsson,"Director of Clinical Research - Cardiometabolic","Sidekick Health",Iceland,C-Level,PASS,P1,"Director of Clinical Research (cardiometabolic); direct clinical program owner",clinical-operations
+f3819bacb297,Cyril,Vincler,CTO,myDiabby,Monaco,C-Level,PASS,P3,"CTO - C-suite technical entry point (Monaco is European geo, in scope)",technical-integration
+40ef679ecdb7,Pär,Lindvall,"Tf Verksamhetschef","Min Doktor",Sweden,"Individual Contributor",FAIL,,"Acting local clinic branch manager, not a platform decision-maker",
+900abf9c8f3c,Matthias,Schurig,"Managing Director Germany",Oviva,Germany,C-Level,PASS,P3,"Country Managing Director at weight-management digital health platform",weight-management
+439b9dcc3c7a,Moritz,Funk,COO,"Wellster Healthtech Group",Germany,C-Level,PASS,P3,"COO of digital health platform",weight-management
+8ac6f84c9d42,Angela,Hagedoorn,"Head of Business Intelligence","Wellster Healthtech Group",Germany,Director,WEAK,,"BI/data analytics function, technical-adjacent",technical-integration
+e123c78da10a,Jussi,Sihvonen,"Chief Medical Officer, Portfolio Businesses",Terveystalo,Finland,C-Level,PASS,P1,"Group Portfolio-wide Chief Medical Officer; direct clinical buyer",clinical-operations
+185b000fee6f,Lotta,Härle,Supportchef,"Min Doktor",Sweden,"Individual Contributor",FAIL,,"Support operations manager, not a decision-maker",
+dfdf529448a4,Irina,Lindberg,"Tax Director",Terveystalo,Finland,C-Level,FAIL,,"Finance/tax function, unrelated",
+37897a45ea27,Daniel,Pérez,"Founder & COO","Doctor i",Spain,C-Level,PASS,P3,"Founder/COO of Spanish telehealth platform (iSalud.com)",virtual-care
+8a60383ff843,Anastasia,P.,"CEO  & co-founder",myDiabby,France,C-Level,PASS,P3,"CEO/co-founder of diabetes telemedicine platform",clinical-operations
+09b229ce8d9d,Sanna,Solala,"Product Owner",Terveystalo,Finland,"Individual Contributor",WEAK,,"Product Owner (digital health/service development) - IT/technical evaluator role",technical-integration
+d1df2e1655db,Timi,Robenius,"Head of Platforms & Networks",Terveystalo,Finland,Director,WEAK,,"Platforms & Networks lead - IT/infrastructure-flavored role",technical-integration
+a248688d7e3c,Fabian,Baier,"Director Finance","Medgate Switzerland",Switzerland,C-Level,FAIL,,"Finance function, unrelated",
+866931903376,Lotta,Waldén,"Development Director, Digital Services",Terveystalo,Finland,C-Level,PASS,P2,"Development Director, Digital Services",digital-transformation
+1423ee4ade13,Peter,Csonka,Director,"Tampere Center for Child, Adolescent and Maternal Health Research - TamCAM",Finland,C-Level,FAIL,,"Academic pediatric research center, not a digital-health platform",
+2852d75f5e97,Milla,Keller,"Director, Tech & Regulatory Legal and Enterprise Risk Management",Terveystalo,Finland,C-Level,WEAK,,"Tech/regulatory legal - compliance-adjacent",compliance
+0d9978735af6,Bart,Calewaert,"Principal Business Analyst","Wellster Healthtech Group",Germany,Manager,WEAK,,"Business analyst, data/product-adjacent technical role",technical-integration
+c1acc7a2a734,Patricia,G.,"Head of Data & AI Department",MediQuo,Spain,Director,WEAK,,"Data/AI department head at digital health platform",technical-integration
+bdf5813c7fdd,Viola,Karl,"Commercial Vice President (all direct-to-patient platforms)","Wellster Healthtech Group",Germany,C-Level,PASS,P2,"Commercial VP over direct-to-patient platforms",weight-management
+36dea0c9db81,Kristoffer,Angerer,"CEO Dr. Dropin Legetjenester",Dr.Dropin,Norway,C-Level,PASS,P3,"CEO of Nordic virtual-care provider",virtual-care
+3ed2e70b8e12,Satu,Haapala,"Product Owner",Terveystalo,Finland,"Individual Contributor",WEAK,,"Product Owner - IT/technical evaluator role",technical-integration
+39ac4b9a4ad0,Niina,Matikka,"Vastaava ravitsemusterapeutti",Terveystalo,Finland,"Individual Contributor",FAIL,,"Registered dietitian, pure clinician",
+b7c2c132614e,Miłosz,Wiciński,"International Development Director","Doctor.One",Poland,C-Level,PASS,P2,"International Development/BD Director at core digital health platform",digital-transformation
+e8cf4ba2d579,Oskar,Niemenoja,"Head of Data, Analytics and Business Intelligence",Terveystalo,Finland,Director,PASS,P2,"VP Data & AI with explicit 'digitalizing healthcare' remit",digital-transformation
+83bd7100089b,Nadja,Schwarz,"Head of Marketing & Communications","Medgate Schweiz",Switzerland,Director,PASS,P2,"Marketing/comms head at core telehealth platform",virtual-care
+bbe0796d069e,Sebastian,Schneider,"General Manager Spring","Wellster Healthtech Group",Germany,Director,PASS,P3,"GM of a Wellster business unit; BU-level executive",weight-management
+50680ca70869,Ramtin,Vedad,"CEO & Co-founder",LevaHealth,Sweden,C-Level,PASS,P1,"Cardiologist CEO/co-founder of cardiology digital health startup; direct clinical+exec buyer",clinical-operations
+bd5bf029678b,Teija,Korjala,"Director of Occupational Healthcare",Terveystalo,Finland,C-Level,FAIL,,"Occupational-health service-line director, not digital",
+87df62074867,Benoit,Bui,"Head of Platform France",Qare,France,Director,WEAK,,"Platform/devops lead, technical-flavored role",technical-integration
+96345a9a88a5,"Pierre-Camille",ALTMAN,"Co-Founder",myDiabby,France,C-Level,PASS,P3,"Co-founder of diabetes telemedicine platform",clinical-operations
+74fbd8c3c4e7,"Titta-Liisa",Luoma,"Director of Customer Service",Terveystalo,Finland,C-Level,WEAK,,"Customer service/CX director, borderline member-experience",member-engagement
+b26e1fcd57a4,Karsten,Wolke,"Vice President Engineering",Oviva,Germany,C-Level,PASS,P3,"VP Engineering - C-suite technical entry point",technical-integration
+0cc9ae7db9f4,Hildur,Gudmundsdottir,"Senior Director, Solution Delivery & Strategic Projects","Sidekick Health",Iceland,C-Level,PASS,P2,"Senior Director Solution Delivery & Strategic Projects at digital therapeutics platform",clinical-operations
+cf4d200854fd,Maxime,Sraïki,"Group Technology Director",HealthHero,France,C-Level,PASS,P3,"CTO (per bio) of core telehealth group - C-suite technical entry point",technical-integration
+d18137ce58aa,Kaisu,Meusel,"Head of office","Terveystalo Pori and Harjavalta",Finland,Director,FAIL,,"Local office head, physical operations",
+4c2403ba28cf,Jan,Horubała,"Head of Software Engineering",Holi,Poland,Director,WEAK,,"Engineering lead at digital health/wellness platform",technical-integration
+e9180edc39d7,Dorothee,Linnenbrink,"Director Key-Opinion-Leader Relationship & Key Account Management","Sidekick Health",Germany,C-Level,PASS,P2,"KOL/key account director - commercial function at digital therapeutics platform",clinical-operations
+8993e817592c,Henry,Kolehmainen,"Lead Career Business Partner",Terveystalo,Finland,Manager,FAIL,,"HR/recruiting function, unrelated",
+b0e61f92a358,Kari,Kauniskangas,Chairperson,Terveystalo,Switzerland,Board/Advisor,WEAK,,"Board chairman, strategic not operational",
+9d979d485b33,Vilma,Vahtermo-Lintu,"Lead Career Business Partner, Hallinnon rekrytoinnit",Terveystalo,Finland,Manager,FAIL,,"HR/recruiting function, unrelated",
+2967234047ed,Outi,Mustonen,"Director of Services",Terveystalo,Finland,C-Level,FAIL,,"Speech/language therapy service-line director, not digital",
+231c769c9c5d,"Alvaro Alexander","Soto Cardona","Head of Engineering","Wellster Healthtech Group",Germany,Director,WEAK,,"Engineering lead at digital health platform",technical-integration
+0701eb4b7bc0,Elisabeth,"Zilberberg-Trenck","Managing Director mySugr",mySugr GmbH,Austria,C-Level,PASS,P3,"Managing Director of diabetes digital health company",clinical-operations
+2aca66e0861c,Diogo,Monteiro,"Director of Engineering",Oviva,Switzerland,C-Level,WEAK,,"Director-level engineering leader at digital health company",technical-integration
+8f4113f1df64,Saara,Mitrunen,"Career Business Partner",Terveystalo,Finland,"Individual Contributor",FAIL,,"HR function, unrelated",
+1eac6fb745e1,Marcin,Felski,"Global Operations Director",Oviva,Poland,C-Level,PASS,P2,"Global Operations Director at weight-management digital health platform",weight-management
+2f725bf7c71b,Maria,Lehto,"Chief Occupational Health, Work and Organizational Psychology",Terveystalo,Finland,C-Level,FAIL,,"Occupational health/org psychology service line, not digital",
+a3589b3fdf32,Nadine,Hüttenrauch,"Director DTx Pathways (Digital Therapeutics)",Oviva,Switzerland,C-Level,PASS,P1,"Director of Digital Therapeutics Pathways; direct clinical/DTx program owner",weight-management
+e00e9ffb87fb,Mikko,Welling,"Account Director",Terveystalo,Finland,C-Level,FAIL,,"Public-services account management, off-segment",
+c595b163baf3,"Therese Borge",Lied,Co-CEO,"Dr.Dropin Psykologi",Norway,C-Level,PASS,P3,"Co-CEO of psychology-focused virtual-care provider",virtual-care
+7a49b18ee56f,Andrzej,Zawada,"Dyrektor ds. relacji z lekarzami","Doctor.One",Poland,"Individual Contributor",PASS,P2,"Physician relations director - commercial/partnerships at core digital health platform",digital-transformation
+6aeb5d5bc494,"Anne Marte",Ladim,"Chief Business Development Officer & Chief Medical Officer",Dr.Dropin,Norway,C-Level,PASS,P1,"Dual CBDO & CMO; direct clinical buyer",clinical-operations
+41cc3168cc9f,Martin,"Kirchberger, Dr.","Senior Director Hearing Functions","Sonova Group",Switzerland,C-Level,FAIL,,"Hearing-aid medtech company, unrelated to telehealth ICP",
+c4c418598409,Nadine,Schellander,"Head of Software Quality Assurance / Engineering Manager",mySugr GmbH,Austria,Director,FAIL,,"QA/Test function - explicit IT policy FAIL",
+00f7252da3bc,Christian,"Tilmann, CFA","Graduate Student, MS Energy Policy & Climate","The Johns Hopkins University",Germany,"Individual Contributor",FAIL,,"Energy/climate policy student, unrelated",
+375b4f764ccd,Sami,Sabour,"Chief physician, occupational health","Keski-Suomen hyvinvointialue",Finland,C-Level,FAIL,,"Public-sector occupational health physician, unrelated",
+a36c09be0cf2,Nikke,Kettunen,"Head of Information Security",Terveystalo,Finland,Director,WEAK,,"InfoSec role - IT policy WEAK (unsure default)",technical-integration
+4fdfc85e8e37,Terhi,Nieminen,Director,Terveystalo,Finland,C-Level,FAIL,,"Corporate/public health accounts director, off-segment",
+5282485a22fe,"Gauthier-Jens",Balkan,"Head of Business Operations",Qare,France,Director,WEAK,,"Operational excellence lead, adjacent influence",digital-transformation
+09532f908dca,Katja,Laine,"Johtaja terveyspalvelut",Terveystalo,Finland,"Individual Contributor",FAIL,,"Local health-services administrative director",
+9809189fa37e,Tiina,Karikoski,"Head of Dental, aluejohtaja",Terveystalo,Finland,Director,FAIL,,"Dental service line - explicit anti-case",
+eb9b0aba90ff,Joonas,Kaijala,"Director, Product and Service Production Steering, Corporate and Public Health",Terveystalo,Finland,C-Level,FAIL,,"B2B corporate/public health production steering, off-segment",
+4ef02aaf25c9,Taina,Veijalainen,"Managing director","Vamar Oy",Finland,C-Level,FAIL,,"Small radiography company, unrelated to telehealth ICP",
+2e9c2dbf8551,Julie,Salomon,Pédiatre,APHP,France,"Individual Contributor",PASS,P1,"Directrice Médicale (Medical Director) at Qare per bio, despite hospital-affiliated title field",clinical-operations
+a411d5f7f51c,Kimpreet,Kaur,"Salesforce Architect",Oviva,Germany,"Individual Contributor",WEAK,,"Solutions Architect - IT policy WEAK",technical-integration
+1b0506269946,Edison,Telaku,"Embedded Software Engineer",hellocare.ai,Kosovo,"Individual Contributor",FAIL,,"Geo-excluded: Kosovo (explicit anti-case, non-EU)",
+f8864f2e1285,Maximilian,Gassner,"Vice President Commercial Development","Wellster Healthtech Group",Germany,C-Level,PASS,P2,"VP Commercial Development at digital health platform",weight-management
+689cd8381c17,Laurie,Plociennik,"Head of Engineering",Qare,France,Director,WEAK,,"Engineering lead at core telehealth platform",technical-integration
+40eb6c1e5df3,Linnea,Calleberg,"Business Controller and Financial Accountant",Doktor.se,Sweden,"Individual Contributor",FAIL,,"Finance function, unrelated",
+afb2fd129dee,Marvin,Becker,"Head of Paid Growth",Oviva,Germany,Director,PASS,P2,"Head of Growth at weight-management digital health platform",weight-management
+51472f0201bc,Maria,Chernevich,"Product Manager","Wellster Healthtech Group",Germany,Manager,WEAK,,"Technical Product Manager - IT policy WEAK",technical-integration
+6a0a64954779,Sara,Myöhänen,Radiographer,Terveystalo,Finland,"Individual Contributor",FAIL,,"Clinical radiographer, no digital ownership",
+8a3e8d502672,Emine,Gashi,"AI Product Owner",hellocare.ai,Kosovo,"Individual Contributor",FAIL,,"Geo-excluded: Kosovo (explicit anti-case, non-EU)",
+f6a6d6e735d3,Antti,Virta,"Medical Director, Occupational Health | Johtava työterveyslääkäri",Terveystalo,Finland,C-Level,WEAK,,"Specialty-specific Medical Director (occupational health); not enterprise digital-health owner",clinical-operations
+0aef7950c842,"Thorkell Viktor",Thorsteinsson,"Development Director","Sidekick Health",Iceland,C-Level,WEAK,,"Development Director - explicit IT policy WEAK example",technical-integration
+fa1dccda6b80,Kacper,Romanowski,"Founder's Associate",Holi,Poland,C-Level,WEAK,,"Founder's associate at digital health platform, no budget authority",digital-transformation
+be9fdd8d89ea,"Prof. Dr. Pia",Wülfing,"Chief Clinical Officer","Sidekick Health",Germany,C-Level,PASS,P1,"Chief Clinical Officer; direct clinical program owner",clinical-operations
+64cf0ba8eb61,Diana,Wirth,"Head of CRM",Oviva,Germany,Director,PASS,P2,"Head of CRM - member engagement/retention (matches Head of Member Engagement persona)",member-engagement
+7a6850e252b6,Lena,Serrander,"Verksamhetschef Sv / Regionchef Syd",Doktor24,Sweden,"Individual Contributor",FAIL,,"Regional/branch clinic manager, not a platform decision-maker",
+aa6a000e0091,Noora,Salokoski,"Executive Assistant to the President and CEO",Terveystalo,Finland,C-Level,FAIL,,"Executive assistant, no decision authority",
+57dfff487c42,Nathalie,Ahlström,"Member of the Board of Directors",Terveystalo,Belgium,C-Level,WEAK,,"Board member, strategic not operational",
+e9c3d3a919c8,Kati,Hynninen,"Account Director",Terveystalo,Finland,C-Level,FAIL,,"Account management, off-segment",
+34ecc685f913,Ph,M,"Assistant Director Of Pharmacy","Min Doktor","Saudi Arabia",C-Level,FAIL,,"Geo-excluded: Saudi Arabia (non-Europe)",
+716670915a86,Titi,Kivilaakso,"Registered Dietitian",Terveystalo,Finland,"Individual Contributor",FAIL,,"Clinical dietitian, no digital ownership",
+9fac85ec97f9,Mikko,Rautalahti,"Medical Director",Terveystalo,Finland,C-Level,WEAK,,"Medical Director scoped to occupational health/consulting; not enterprise digital-health owner",clinical-operations
+de0bc22d37f9,Taki,Archidi,"Head of CRM",Qare,France,Director,PASS,P2,"Head of CRM - member engagement/retention",member-engagement
+1cd9dc4bf9e2,Yasmina,G.,"Head of Sales and Business Development",HealthHero,France,Director,PASS,P2,"Sales/BD director at core telehealth platform",digital-transformation
+390e6f78518b,Ilana,Stolberg,"Registered Dietitian",Larate,Finland,"Individual Contributor",FAIL,,"Solo dietitian private practice, no digital ownership",
+4ccdc8a516b9,"María Carlota",Gorosábel,"Director Strategy",Oviva,Switzerland,C-Level,PASS,P2,"Strategy Director at weight-management digital health platform",weight-management
+8f6fa9c28c78,Daniel,Sørli,"Co-Founder and CMO",Dr.Dropin,Norway,C-Level,PASS,P1,"Co-founder and CMO; direct clinical buyer",clinical-operations
+0439fbb15409,Noora,Hoppendorff,"Johtaja, työterveyspalvelut",Terveystalo,Finland,"Individual Contributor",FAIL,,"Occupational health services director, not digital",
+ce0a158b2e6c,"Dr. Suzana",Stojiljkovic,"General Manager (Geschäftsführerin) Dietetics & Psychotherapy",Oviva,Switzerland,Director,PASS,P1,"GM of clinical service line with P&L; direct clinical program ownership",weight-management
+531e6afb14a8,Aki,Äijälä,"Chief Medical Officer of Appointments - Johtava lääkäri, vastaanottojen operatiivinen työ","Suomen Terveystalo",Finland,C-Level,PASS,P2,"CMO of Appointments - enterprise-wide clinical operations across all specialties",clinical-operations
+e03c7caace12,Milja,Rastas,"Career Business Partner",Terveystalo,Finland,"Individual Contributor",FAIL,,"HR function, unrelated",
+c1859e0943a5,Alexandre,MAISONNEUVE,"Co-fondateur & Directeur médical",Qare.fr,France,"Individual Contributor",PASS,P1,"Co-founder & Directeur Médical (Medical Director); direct clinical buyer",clinical-operations
+98f414e22f7f,Julia,Tausend,"Director Clinical Delivery DTx Germany",Oviva,Germany,C-Level,PASS,P1,"Director Clinical Delivery for Digital Therapeutics; direct clinical program owner",weight-management
+7888b5d66209,Taiwo,Oduwaiye,Pharmacist,"Medgate Pharmacy",Nigeria,"Individual Contributor",FAIL,,"Geo-excluded: Nigeria (non-Europe)",
+6ee2407d397a,Anna,Bellmunt,"Senior Associate","Asabys Partners",Spain,Manager,FAIL,,"VC firm, not an operating buyer company",
+b1bff49a9e28,Ara,Taalas,"Head of Data Platforms & Integrations, Data Scientist - Digital Health",Terveystalo,Finland,Director,WEAK,,"Data scientist/technical role - IT policy WEAK",technical-integration
+b27cd19ea8a5,Minna,Loukkaanhuhta,"Senior Radiographer","HUS Helsingin yliopistollinen sairaala",Finland,Manager,FAIL,,"Public hospital radiographer, unrelated",
+71d6ff467eb2,Sara,Zhubi,"Product Owner",hellocare.ai,Kosovo,"Individual Contributor",FAIL,,"Geo-excluded: Kosovo (explicit anti-case, non-EU)",
+c1faddc5850d,Marika,Erjomaa,"Head of EMR Technology",Terveystalo,Finland,Director,WEAK,,"EMR/health-IT technical lead - IT policy WEAK",technical-integration
+a45af5aa7b82,Jesaja,Kärkkäinen,"Career Business Partner",Terveystalo,Finland,"Individual Contributor",FAIL,,"HR function, unrelated",
+af6a652ce41d,Mari,Tarkka,"Business Director",Terveystalo,Finland,C-Level,FAIL,,"Generic business director, unspecified vertical",
+5f4b59c7a6ec,Liselotte,Larsson,Regionchef,"Min Doktor",Sweden,"Individual Contributor",FAIL,,"Regional clinic manager, not a platform decision-maker",
+a7f66d8b72f3,Kia,Korhonen,"Director SME Accounts and Support",Terveystalo,Finland,C-Level,FAIL,,"B2B SME/occupational-health accounts, off-segment",
+6ffa9558bb58,Linda,Karlsdottir,"Senior Behavioural Scientist","Sidekick Health",Iceland,Manager,WEAK,,"Senior behavioral scientist IC - clinical-adjacent but not decision-maker",clinical-operations
+e95c945275e6,Tiina,Halinen,"Business Director (Liiketoimintajohtaja)",Terveystalo,Finland,C-Level,FAIL,,"Generic business director, unspecified vertical",
+91228adfd072,Sanja,"Jonić, PhD","Staff Data Scientist",Oviva,Germany,"Individual Contributor",WEAK,,"Data scientist - IT policy WEAK",technical-integration
+d9ab6a79f4b0,Linda,Björling,"Verksamhetschef Vingåkers Vårdcentral",Doktor.se,Sweden,"Individual Contributor",FAIL,,"Local physical-clinic branch manager, not a platform decision-maker",
+29dff132b2bd,Jocelyn,Herzog,"Directeur National des Centres de Santé et Directeur Adjoint de Qare Santé","Access Santé & Qare",France,"Individual Contributor",PASS,P2,"National health-centers director/deputy director at Qare; senior expansion role",virtual-care
+b8b5b1174050,Eeva,Löfgren,"MD PHD","MediDive Oy",Finland,"Individual Contributor",FAIL,,"Solo sleep-medicine consultancy, no digital ownership",
+6b010abbba92,Susanna,Grönblom,"Account Director",Terveystalo,Finland,C-Level,FAIL,,"Account management, off-segment",
+41b725153cdc,Jenni,Aallosvirta,"Director, Career Services",Terveystalo,Finland,C-Level,FAIL,,"HR/recruiting function, unrelated",
+d44130eb3b8c,Virpi,Roiha,"Business Unit Director",Terveystalo,Finland,C-Level,FAIL,,"Generic business unit director, unspecified vertical",
+c22674c2e910,Hannu,Lähteenmäki,"Orthopaedic Consultant Surgeon","Terveystalo Pulssi",Finland,"Individual Contributor",FAIL,,"Pure clinician, no digital ownership",
+319a7f8b85f8,Viivi,"Kettukangas Immonen",Entrepreneur,"Keivivee Oy",Finland,"Individual Contributor",FAIL,,"Small personal-training/physiotherapy business, unrelated",
+9c5456114b45,"Marie-Theres",Scharl,"Senior Director Regulatory and Compliance - global - PRRC","Sidekick Health",Germany,C-Level,WEAK,,"Regulatory/compliance director at digital therapeutics platform",compliance
+ad04e0d07c9f,Kari,Ahonen,"Business Director",Terveystalo,Finland,C-Level,FAIL,,"Generic business director, unspecified vertical",
+4a3f45367108,Carolina,Chruzander,"Verksamhetschef Njurunda vårdcentral",Doktor.se,Sweden,"Individual Contributor",FAIL,,"Local physical-clinic branch manager, not a platform decision-maker",
+8b554cdfc186,Max,H.,"Head of IT","Min Doktor",Sweden,Director,WEAK,,"Head of IT - IT policy WEAK",technical-integration
+59b733df34c5,Sabine,Helterlin,"Head of Market Management","Medgate Schweiz",Switzerland,Director,PASS,P2,"Market Management head - commercial/strategy at core telehealth platform",virtual-care
+5725e09e8054,Emilia,Tauriala,Neurologist,Terveystalo,Finland,"Individual Contributor",FAIL,,"Pure clinician, no digital ownership",
+5a8aba8f4a57,Teemu,Paatela,"Business Director",Terveystalo,Finland,C-Level,FAIL,,"Clinical service-line director (orthopedics/traumatology), not digital",
+436652092a29,Kitta,Haukka,"Career Business Partner",Terveystalo,Finland,"Individual Contributor",FAIL,,"HR function, unrelated",
+cb25794a97c2,Evelina,"Appelros ","Head of Data","Min Doktor",Sweden,Director,WEAK,,"Data leadership at telehealth platform, technical/analytics function",technical-integration
+c1def7a38880,"Can Pierre",Sağlam,"Head of Sales",Oviva,Germany,Director,PASS,P2,"Sales head at weight-management digital health platform",weight-management
+1d6b93757485,Stefanie,Gebhardt,"Director Service Operations","Medgate Schweiz",Switzerland,C-Level,PASS,P2,"Service Operations director - clinical-ops-adjacent at core telehealth platform",virtual-care
+44b86f21a5ec,Julia,Koskinen,"Head of Development and Digitalization, Public Partnership Solutions",Terveystalo,Finland,Director,PASS,P2,"Digitalization head for public-partnership solutions",digital-transformation
+0dbf30d63cca,Mervi,Näpärä,"Technical Solution Owner at Terveystalo Oy",Terveystalo,Finland,"Individual Contributor",WEAK,,"Technical Solution Owner - IT policy WEAK",technical-integration
+475091428956,Dagmara,"Wozniak, PhD, MBA","Principal Clinical Research Scientist",Oviva,Poland,Manager,PASS,P2,"Principal Clinical Research Scientist (RWE) at weight-management digital health platform",weight-management
+96a575bd1a49,Andy,Baumann,"Director bei Heine / Bonprix","Heine / Bonprix",Switzerland,C-Level,FAIL,,"Fashion/apparel retail, unrelated to FitXpress health ICP",
+0db640f060d3,Laura,"Aaltonen-Määttä","Product Owner",Terveystalo,Finland,"Individual Contributor",WEAK,,"Product Owner - IT/technical evaluator role",technical-integration
+53a766c81091,Roosa,Niemi,"Career Business Partner",Terveystalo,Finland,"Individual Contributor",FAIL,,"HR/recruiting function, unrelated",
+5fea36bf79e6,"Dr.med. Timo",Rimner,"Head of Service improvement","Medgate Schweiz",Switzerland,Director,PASS,P1,"Physician leading clinical service improvement at core telehealth platform",clinical-operations
+3dc6c3df08f3,Titta,"Rauhala (Mehtänen)","Registered Dietitian",Terveystalo,Finland,"Individual Contributor",FAIL,,"Clinical dietitian, no digital ownership",
+a301f3c928cd,J,Neuveux,"Direction générale","Min Doktor",France,"Individual Contributor",PASS,P3,"General Management (Direction générale) - senior country executive",virtual-care
+8b3583405e92,Poema,Berisha,"Product Owner",hellocare.ai,Kosovo,"Individual Contributor",FAIL,,"Geo-excluded: Kosovo (explicit anti-case, non-EU)",
+e4f3eebaff05,Mohamed,Hamouda,"Directeur sportif","Min Doktor",Algeria,"Individual Contributor",FAIL,,"Geo-excluded: Algeria (non-Europe)",
+7be87ee6c5f0,Janina,Achrén,"Director of Occupational Physiotherapy",Terveystalo,Finland,C-Level,FAIL,,"Clinical service-line director, not digital",
+835d9c042c71,Philipp,Sauer,"Head of Privacy (Senior Legal Counsel)",Oviva,Germany,Director,WEAK,,"Privacy/compliance counsel at digital health platform",compliance
+1d6388f0564e,Kai,Peters,"Director of Sales & Key Account","Sidekick Health",Germany,C-Level,PASS,P2,"Sales/Key Account director at digital therapeutics platform",clinical-operations
+8c4938cd9924,Minna,Laakso,"Director, Mergers and Acquisitions",Terveystalo,Finland,C-Level,FAIL,,"M&A/finance function, unrelated",
+ba78dbfda914,Alma,Zariqi,"Product Owner",hellocare.ai,Kosovo,"Individual Contributor",FAIL,,"Geo-excluded: Kosovo (explicit anti-case, non-EU)",
+7cf760a2a1aa,Ville,Perälä,"Principal Developer",Terveystalo,Finland,Manager,WEAK,,"Senior software developer - IT policy WEAK",technical-integration
+56f40ea0fa84,Alexandra,Jorda,"Operativ chef Rimbo-Edsbro vårdcentral",Doktor.se,Sweden,"Individual Contributor",FAIL,,"Local physical-clinic branch manager, not a platform decision-maker",
+6a763c4f1ed1,Hua,Tran,"Director Aesthetics Germany I Integration & Buy-and-Build","The Body Clinic",Germany,C-Level,PASS,P2,"Director of aesthetics business build/integration at weight-management clinic group",weight-management
+6c0dd82261e6,Jasmiina,Simula,"Registered Dietitian",Terveystalo,Finland,"Individual Contributor",FAIL,,"Clinical dietitian, no digital ownership",
+530577318c22,Liisa,Mustonen,Radiographer,Terveystalo,Finland,"Individual Contributor",FAIL,,"Clinical radiographer, no digital ownership",
+1e563e296d25,Jani,Myller,"Head of Digital Products",Terveystalo,Finland,Director,PASS,P2,"Head of Digital Products",digital-transformation
+bc5f4305a15d,"Rainer ",Christine,"Managing Partner","Earlybird Venture Capital",Germany,"Individual Contributor",FAIL,,"VC firm, not an operating buyer company",
+75c78c652e3b,Camilla,Bjurman,"Head of Finance Sweden",Doktor.se,Sweden,Director,FAIL,,"Finance function, unrelated",
+dd25d8deaacd,Markku,Siltala,Director,"Oulun Terveystalo",Finland,C-Level,FAIL,,"Generic regional director, no detail confirming digital scope",
+6c4340ec35b5,"Dr. Felix",Schirmann,"Vice President Science",Oviva,Germany,C-Level,PASS,P1,"VP Science leading digital-health/behavior-change research; direct scientific/clinical program owner",weight-management
+fd5f3eaec7eb,Mathias,Waizenegger,Marketingleiter,"Sidekick Health",Germany,"Individual Contributor",PASS,P2,"Director of Marketing at digital therapeutics platform",clinical-operations
+2ebe23b81ebb,Astrid,Anderson,Director,Doktor.se,Sweden,C-Level,FAIL,,"Generic director title, no detail confirming digital scope",
+45f97221ce02,Teuta,Rrahimi,"Product Owner",hellocare.ai,Kosovo,"Individual Contributor",FAIL,,"Geo-excluded: Kosovo (explicit anti-case, non-EU)",
+f23b2b5e0f81,Donjeta,Pllana,"Product Owner",hellocare.ai,Kosovo,"Individual Contributor",FAIL,,"Geo-excluded: Kosovo (explicit anti-case, non-EU)",
+edd099ac0ce5,Tech,Wellster,CFO,"Wellster Healthtech Group",Germany,C-Level,PASS,P3,"CFO at digital health platform",weight-management
+4a265f1aaf34,Malaika,Wrobbel,"Global People Development & Innovation Director",Oviva,Germany,C-Level,FAIL,,"HR/people-development function, unrelated",
+8e4bad01ceaa,Jakob,Krütten,"Head of Accounting","Wellster Healthtech Group",Germany,Director,FAIL,,"Finance/accounting function, unrelated",
+0f444306ab4b,Veera,Salo,Pharmacist,Terveystalo,Finland,"Individual Contributor",FAIL,,"Clinical pharmacist, no digital ownership",
+9e65637c4bb5,Salla,Tornberg,"Career Business Partner",Terveystalo,Finland,"Individual Contributor",FAIL,,"HR function, unrelated",
+3cb59f0f7bc4,Lukas,Naske,"Principal Software Engineer",mySugr,Austria,Manager,WEAK,,"Senior software engineer at digital health company",technical-integration
+97794ab5ce20,Jasmina,Tervonen,Nutritionist,Mehiläinen,Finland,"Individual Contributor",FAIL,,"Clinical dietitian at a different traditional healthcare provider",
+d2234e8c26c7,Djilly,Ybema,"Operationeel directeur & Co-Owner","The Body Clinic",Netherlands,"Individual Contributor",PASS,P3,"Director of Operations/co-owner of weight-management clinic",weight-management
+e418106ecb86,Festina,Gashi,"Product Owner",hellocare.ai,Kosovo,"Individual Contributor",FAIL,,"Geo-excluded: Kosovo (explicit anti-case, non-EU)",
+d53b50510e3e,Eevert,Partinen,"Deputy Chief Doctor","Länsi-Uudenmaan hyvinvointialue",Finland,C-Level,FAIL,,"Public-sector deputy chief doctor, no digital-health platform scope",
+a60f2e3e5d9b,"Dr. med. Yalda",S.,"Director Medical Operation","Medgate Schweiz",Germany,C-Level,PASS,P1,"Director of Medical Operations; direct clinical ops leadership at core telehealth platform",clinical-operations
+6a42ecf88345,"Cathrine ",Børsand,"ceo og medgrunder",Dr.Dropin,Norway,C-Level,PASS,P3,"CEO/co-founder of Nordic virtual-care provider",virtual-care
+60df6b433070,Ari,Lehtoranta,Chairman,SRV,Finland,Board/Advisor,FAIL,,"Construction company chairman (Terveystalo is one of several board seats), wrong target company",
+5bd5e0479425,Sherife,Begaj,"Product Owner",hellocare.ai,Kosovo,"Individual Contributor",FAIL,,"Geo-excluded: Kosovo (explicit anti-case, non-EU)",
+9b0b92280485,Daria,Stach,"Global People Partner",Oviva,Poland,"Individual Contributor",FAIL,,"HR function, unrelated",
+c0bbc0c56845,Emma,Raappana,"Registered Dietitian",Terveystalo,Finland,"Individual Contributor",FAIL,,"Clinical dietitian, no digital ownership",
+7c453881dad5,Soile,Raasakka,"Senior Radiographer in MRI",Terveystalo,Finland,Manager,FAIL,,"Clinical radiographer, no digital ownership",
+15dff4dd72b2,Simone,Mulder,"Hoofd Huidtherapie","The Body Clinic",Netherlands,"Individual Contributor",FAIL,,"Skin-therapy department head; narrow clinical service line, not core weight/BMI decision role",
+b8b9dd0691c3,Cecilia,Tahmasebiepour,"Verksamhetschef Adina Hälsans vårdcentral",Doktor.se,Sweden,"Individual Contributor",FAIL,,"Local physical-clinic branch manager, not a platform decision-maker",
+939e04e7c3f5,Barbara,Aimé,"Head of HCP success",Qare,France,Director,WEAK,,"HCP/customer success lead, adjacent influence",member-engagement
+c489aad85b2f,Matti,Isosävi,"CEO & Co-Founder, Tuhka Technologies","Tuhka Technologies",Finland,C-Level,WEAK,,"Small digital-wellness startup co-founder; unclear core telehealth focus, insufficient company info",digital-transformation
+5aec37ed7ddb,Tina,Osmani,"Product Owner",hellocare.ai,Kosovo,"Individual Contributor",FAIL,,"Geo-excluded: Kosovo (explicit anti-case, non-EU)",
+5a66e4095b92,Sanna,Sorasalmi,"Career Business Partner",Terveystalo,Finland,"Individual Contributor",FAIL,,"HR function, unrelated",
+9407ceabce20,Hlynur,Tryggvason,"Principal Software Architect","Sidekick Health",Iceland,Manager,WEAK,,"Solutions/Platform Architect - IT policy WEAK",technical-integration
+3cb077d6c69d,Sumea,Zogaj,"Product Owner",hellocare.ai,Kosovo,"Individual Contributor",FAIL,,"Geo-excluded: Kosovo (explicit anti-case, non-EU)",
+aecbd63be792,Beatrice,Roldaan,"Senior arts","Nederlandse Obesitas Kliniek",Netherlands,Manager,FAIL,,"Clinical physician IC role, no purchasing authority",
+0ead8268dba0,"Bodil ","Falkovén Andersson",Verksamhetschef,Doktor.se,Sweden,"Individual Contributor",FAIL,,"Local physical-clinic branch manager, not a platform decision-maker",
+2329b57aa661,Brian,Munyua,Owner,Liva,Kenya,"Individual Contributor",FAIL,,"Geo-excluded: Kenya (non-Europe); also unrelated small business",
+de9e8c16fc24,Eira,Ranung,"Enhetschef, Leg. Psykolog, Capio Hjärnhälsan privat","Capio Sverige",Sweden,"Individual Contributor",FAIL,,"Clinical psychologist/unit manager at a different traditional healthcare provider",
+3f7be5bdc3b3,Marija,Lindström,"verksamhetschef Väsby Läkargrupp",Doktor.se,Sweden,"Individual Contributor",FAIL,,"Local physical-clinic branch manager, not a platform decision-maker",
+2141607f55cf,Blend,Fetahu,"Product Owner",hellocare.ai,Kosovo,"Individual Contributor",FAIL,,"Geo-excluded: Kosovo (explicit anti-case, non-EU)",
+d5b1d6700343,Sanna,Vienonen,"Regional Director",Terveystalo,Finland,C-Level,FAIL,,"Regional physical-clinic operations director",
+afc8d2253eaa,Anesa,Bulliqi,"Product Owner",hellocare.ai,Kosovo,"Individual Contributor",FAIL,,"Geo-excluded: Kosovo (explicit anti-case, non-EU)",
+115c75c856b0,Satu,Wedenoja,"Director of Obstetrics and Gynecology",Terveystalo,Finland,C-Level,FAIL,,"Clinical service-line director, not digital",
+a98c3e009d81,Fabio,Conte,"Direttore del dipartimento di scienze","DOCTORIUM - Il tuo Dottore online!",Italy,"Individual Contributor",WEAK,,"Italian telehealth platform but minimal profile; unclear seniority/scope, default WEAK",virtual-care
+611635d579c9,"Taina-Riikka",Hakola,"Johtaja, Terveyspalvelut Lappi",Terveystalo,Finland,"Individual Contributor",FAIL,,"Regional health-services director, administrative",
+3c21670d5baa,Alina,Bartakovics,"P&C Business Partner",mySugr,Austria,"Individual Contributor",FAIL,,"HR function, unrelated",
+c6314f4c6f73,Erlindë,Suka,"Product Owner",hellocare.ai,Kosovo,"Individual Contributor",FAIL,,"Geo-excluded: Kosovo (explicit anti-case, non-EU)",
+55ef2d58daee,Heidi,Lehtokangas,"Chief Physician | Musculoskeketal Disorders | Tule-vastuulääkäri | Orthopaedic & Trauma surgeon",Terveystalo,Finland,C-Level,FAIL,,"Pure clinician (orthopedic/trauma surgeon), no digital ownership",
+8964e9df133c,Lisa,Larsson,Klinikchef,"Min Doktor",Sweden,"Individual Contributor",FAIL,,"Local clinic manager, not a platform decision-maker",
+dbe371b09a79,Anila,Januzi,"Product Owner",hellocare.ai,Kosovo,"Individual Contributor",FAIL,,"Geo-excluded: Kosovo (explicit anti-case, non-EU)",
+b8bef942347b,Vjosa,Frangu,"Product Owner",hellocare.ai,Kosovo,"Individual Contributor",FAIL,,"Geo-excluded: Kosovo (explicit anti-case, non-EU)",
+6bf03fb923c1,Roula,Alyassin,"Bitr Verksamhetschef, Medicinsk ledningsansvarig läkare",Doktor.se,Sweden,"Individual Contributor",FAIL,,"Deputy branch manager/medical lead of a single physical clinic, not a platform decision-maker",
+2038ff86dc3d,Tarek,Shalabi,VD,"Doktor.se Rimbo-Edsbro vårdcentral",Sweden,"Individual Contributor",FAIL,,"Single-clinic branch managing director, not a platform decision-maker",
+f708cbbac4e8,"Jean-Pierre van",Erve,CFO,"Nederlandse Obesitas Kliniek",Netherlands,C-Level,PASS,P3,"CFO at weight-management clinic",weight-management
+a569c9e1d74a,Heikki,Arola,"Ylilääkäri, eläkkeellä",Terveystalo,Finland,"Individual Contributor",FAIL,,"Retired chief physician, no current decision authority",
+c5e67d475293,Pauliina,Riekkinen,"Vastaava lääkäri",Terveystalo,Finland,"Individual Contributor",FAIL,,"Clinical physician, no digital ownership",
+f8ef6f6fc1bd,Riitta,Silvennoinen,"Yksikön johtaja",Terveystalo,Finland,"Individual Contributor",FAIL,,"Local unit manager, no detail confirming digital scope",
+4595fbb42e39,Afrim,Visoka,"Product Owner",hellocare.ai,Kosovo,"Individual Contributor",FAIL,,"Geo-excluded: Kosovo (explicit anti-case, non-EU)",
+f64df7921654,"Annika ",Ljungström,Verksamhetschef,Doktor.se,Sweden,"Individual Contributor",FAIL,,"Local physical-clinic branch manager, not a platform decision-maker",
+6c6ad1df3ea0,Hordur,Bjarnason,"VP of Finance","Sidekick Health",Iceland,Director,FAIL,,"Pure finance VP, not full CFO",
+bd8445a35e4a,Niklas,Heijne,Verksamhetschef,"Doktor.se Tegnergatan Vårdcentral",Sweden,"Individual Contributor",FAIL,,"Local physical-clinic branch manager, not a platform decision-maker",
+5081320b9e14,Jyri,Outinen,"Vastaava lääkäri",Terveystalo,Finland,"Individual Contributor",FAIL,,"Site-level clinical lead (single clinic), not enterprise digital-health decision-maker",
+132eb55ca685,Jonna,Eklund,Enhetschef,Doktor.se,Sweden,"Individual Contributor",FAIL,,"Local physical-clinic branch manager, not a platform decision-maker",
+4383be0eb7fe,"Melih Numan",Atalay,Owner,"Liva Food",Netherlands,"Individual Contributor",FAIL,,"Unrelated food business, not Liva Healthcare",
+ce7b2aad83e7,Ela,Bytyqi,"Product Owner",hellocare.ai,Kosovo,"Individual Contributor",FAIL,,"Geo-excluded: Kosovo (explicit anti-case, non-EU)",
+8f6e54c4649d,Anita,Riipinen,"Johtava ttl",Terveystalo,Finland,"Individual Contributor",FAIL,,"Lead occupational health, pure clinician",
+2bb6191d644a,Camilla,Östling,"Verksamhetschef vårdcentral",Doktor.se,Sweden,"Individual Contributor",FAIL,,"Local physical-clinic branch manager, not a platform decision-maker",
+0cdaf9949b9f,Niina,Saarenlaita,"Johtaja, Terveyspalvelut",Terveystalo,Finland,"Individual Contributor",FAIL,,"Regional health-services director, administrative",
+8cbb1d0f1fe4,Susanna,Grönblom,"Account Director",Terveystalo,Finland,C-Level,FAIL,,"Account management, off-segment (duplicate profile entry)",

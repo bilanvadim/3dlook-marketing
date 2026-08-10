@@ -1,0 +1,1 @@
+{ "name": "hermes-quality", "description": "qa-engineer (TDD, Playwright) + security-auditor (Opus, ToB-style audit)", "version": "0.1.0", "author": { "name": "Sergiy" } }

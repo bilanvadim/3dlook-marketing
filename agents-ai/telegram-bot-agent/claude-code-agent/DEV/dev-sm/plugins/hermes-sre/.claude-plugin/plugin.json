@@ -1,0 +1,1 @@
+{ "name": "hermes-sre", "description": "sre-engineer: Sentry/observability, incidents, caching, rate limiting, availability", "version": "0.1.0", "author": { "name": "Sergiy" } }

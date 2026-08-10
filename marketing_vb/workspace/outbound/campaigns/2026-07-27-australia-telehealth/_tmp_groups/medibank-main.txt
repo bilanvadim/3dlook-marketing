@@ -1,0 +1,86 @@
+2,Dani Rutman,Head of Integrated Healthcare Experience,Medibank,https://au.linkedin.com/in/rutmandanielle,PASS,2,Owns integrated healthcare experience at Medibank — direct fit for member progress data in virtual/preventive programs,member-retention
+9,Shona Sundaraj,Group Medical Director,Medibank,https://au.linkedin.com/in/shona-sundaraj,PASS,1,Group Medical Director — top ICP clinical buyer for objective member data,clinical-operations
+16,Yash Sodhi,Chief Strategy Officer,Medibank,https://au.linkedin.com/in/ysodhi,PASS,1,Chief Strategy Officer — ICP innovation/strategy buyer for digital-health differentiation,digital-health-strategy
+18,Merryn Olifent,Head of Customer Insights and Experience Design,Medibank,https://au.linkedin.com/in/merryn-olifent,WEAK,,"Customer insights/experience-design lead, not clearly a program decision-maker",member-retention
+21,Milosh Milisavljevic,Group Lead - Chief Customer Officer,Medibank,https://www.linkedin.com/in/miloshmilisavljevic/,PASS,1,Chief Customer Officer — top ICP member-experience/retention decision-maker,member-retention
+22,Aarti Olsson,Head of Health Advisory,Medibank,https://au.linkedin.com/in/aartiolsson,PASS,2,Leads health advisory — clinical/wellness program owner fit for verified body data,wellness-programs
+39,Stephanie Sealy,"Head of Mental Health, Health Ventures",Medibank,https://au.linkedin.com/in/stephaniesealy,WEAK,,"Ventures role but mental-health focus, not weight/body-composition programs",digital-health-strategy
+51,Tom Bosna,Head of Operations | Workplace Health & Wellbeing. Ventures,Medibank,https://au.linkedin.com/in/tombosna,PASS,2,Runs Workplace Health & Wellbeing ventures ops — wellness-program buyer fit,wellness-programs
+52,Cameron McCafferty,Squad Lead / Head of Technology - Architecture,Medibank,https://au.linkedin.com/in/cameron-mccafferty-4131511,WEAK,,Technology architecture lead at a FitXpress-segment insurer — possible technical champion,technical-integration
+53,Pauline Smyth,"Head of Virtual Health, Amplar Health",Medibank,https://au.linkedin.com/in/pauline-smyth-54b4374,PASS,1,Head of Virtual Health (Amplar) — direct ICP buyer for remote body data in virtual care,clinical-operations
+58,Jennifer Vo-Phuoc,Head of Health Policy,Medibank,https://www.linkedin.com/in/jennifer-vo-phuoc-6b1b5113/,WEAK,,Health-policy lead — influences programs but not a direct product/clinical buyer,digital-health-strategy
+61,David Koczkar,Chief Executive Officer,Medibank,https://au.linkedin.com/in/davidkoczkar,PASS,1,Group CEO of Medibank — top executive sponsor for digital-health outcomes,executive-outcomes
+69,Andrew Wilson,Group Chief Medical Officer,Medibank,https://au.linkedin.com/in/andrew-wilson-37b579a1,PASS,1,Group Chief Medical Officer — top ICP clinical buyer for verified body metrics,clinical-operations
+70,Paul Berghofer,Head of Hospital Commercial Partnerships,Medibank,https://au.linkedin.com/in/paul-berghofer-892399a4,WEAK,,"Hospital commercial partnerships — adjacent commercial role, not a program buyer",digital-health-strategy
+75,Felicia Trewin,Group Lead - Data & Technology | CIO,Medibank,https://au.linkedin.com/in/feliciatrewin,PASS,3,CIO at a FitXpress-segment insurer — C-suite technical entry point who can open doors,technical-integration
+82,Santhana Gopalan Narayanaswamy,Head of Health Technology Platforms and Services (Amplar Health),Medibank,https://au.linkedin.com/in/santhananarayanaswamy,PASS,2,Head of Health Technology Platforms (Amplar) — owns platforms for API/SDK integration,product-integration
+88,Josh Lambert,Head of Business Development - Digital Health & Ventures,Medibank,https://au.linkedin.com/in/josh-lambert-8460554b,PASS,2,Head of BD Digital Health & Ventures — sources new digital-health capabilities,digital-health-strategy
+98,Lintyn Basha,"Head of Homecare, Health Prevention and Specialist Partnerships",Medibank,https://au.linkedin.com/in/lintyn-basha-837101141,PASS,2,Leads homecare/health-prevention — clinical-program owner fit for remote body data,clinical-operations
+110,Erin Gooey,"Head of Health, Safety and Wellbeing",Medibank,https://au.linkedin.com/in/erin-gooey-bb5b3a60,WEAK,,"Internal HSW/employee wellbeing — occupational focus, not member programs",wellness-programs
+117,Susan Cullen,"National Partnership Manager, Overseas",Medibank,https://au.linkedin.com/in/susan-cullen-40334768,PASS,3,ICP title match — decision-maker in relevant function,digital-health-strategy
+119,Liz Sleeman,"Senior Executive, Group Clinical Governance",Medibank,https://au.linkedin.com/in/liz-sleeman-13131081,PASS,3,ICP title match — decision-maker in relevant function,clinical-operations
+124,Maria Ruberto,Member - Mental Health Reference Group,Medibank,https://au.linkedin.com/in/mariaruberto,PASS,3,ICP title match — decision-maker in relevant function,clinical-operations
+127,Nick Malham,New Ventures and AI Product Strategy,Medibank,https://au.linkedin.com/in/nickmalham,PASS,3,ICP title match — decision-maker in relevant function,product-integration
+135,Rob Bakker,Head of Strategy and Development,Medibank,https://au.linkedin.com/in/rob-bakker-00951a60,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+137,Dean Burgess,"Head of Operations, Core Customer Systems",Medibank,https://au.linkedin.com/in/dean-burgess-ab5b06254,PASS,2,ICP title match — decision-maker in relevant function,member-retention
+142,Dan Anderson,Head of Digital Workplace Optimisation,Medibank,https://au.linkedin.com/in/andodan,PASS,2,ICP title match — decision-maker in relevant function,product-integration
+145,Marco Bouman,"Head of Risk and Management Assurance, Healthcare & Strategy Division",Medibank,https://au.linkedin.com/in/marcoboumanmsc,WEAK,,"Relevant domain expertise but compliance/risk function — possible privacy stakeholder, not program buyer",data-privacy
+151,Andrea Tuckey,Head of Provider Strategy,Medibank,https://au.linkedin.com/in/andrea-tuckey,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+153,Tim Arvanitis,Head of Employee Technology Operations,Medibank,https://au.linkedin.com/in/tim-arvanitis-4b22a34,PASS,2,ICP title match — decision-maker in relevant function,product-integration
+155,Claire Kinghorn,Head of Leadership,Medibank,https://au.linkedin.com/in/claire-kinghorn-34349610,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+159,Nicholas Gudde,Head of AI Strategy & Capability,Medibank,https://au.linkedin.com/in/nicholasgudde,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+167,Peter Everingham,Non Executive Director and Chair of the Investment & Capital Committee,Medibank,https://au.linkedin.com/in/peter-everingham-4824711,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+171,Helen O'Leary,Head of Procurement Operations,Medibank,https://www.linkedin.com/in/helen-o-leary-982b4443/?skipRedirect=true,PASS,2,ICP title match — decision-maker in relevant function,operational-scale
+176,Frank Doyle,Head of Retention and Customer Value at Medibank,Medibank,https://au.linkedin.com/in/frank-doyle-0bb016a2,PASS,2,ICP title match — decision-maker in relevant function,member-retention
+181,Aaron W.,Head of Trust and Ethics,Medibank,https://au.linkedin.com/in/aaron-green-a861289,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+185,Harry S,Head of Identity and Access Management,Medibank,https://au.linkedin.com/in/harry-s-211a9373,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+189,Lisa McIntyre,Non Executive Director,Medibank,https://au.linkedin.com/in/lisa-mcintyre-a793942,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+195,Nick Bradley,"Head of Organic Strategy, Group Strategy",Medibank,https://au.linkedin.com/in/nick-bradley-02300513,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+196,Trent Marsh,Operations Manager,Medibank,https://au.linkedin.com/in/trent-marsh-22454354,PASS,3,ICP title match — decision-maker in relevant function,operational-scale
+211,Julia Fowler,Head of Provider Solutions,Medibank,https://au.linkedin.com/in/fowlerjm,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+219,Samantha Tonkin,Head Of Finance,Medibank,https://au.linkedin.com/in/samantha-tonkin-105456142,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+221,Chloe Mitchell (Harkness),Senior Manager - Group Strategy,Medibank,https://au.linkedin.com/in/chloe-mitchell-harkness-b0521910,PASS,3,ICP title match — decision-maker in relevant function,digital-health-strategy
+222,Anoop Mohan,Program Director - Regulatory Uplift,Medibank,https://au.linkedin.com/in/amohan00,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+223,Conor Condell,Head of Program Management,Medibank,https://au.linkedin.com/in/conor-condell-7669a2a5,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+230,Nicola Ivory,Squad Lead - Customer Health Navigator,Medibank,https://au.linkedin.com/in/nicola-ivory-b2a3945b,PASS,3,ICP title match — decision-maker in relevant function,clinical-operations
+234,Jacqueline H.,Non Executive Director,Medibank,https://au.linkedin.com/in/jacqueline-mernone,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+238,Liam Jansen,Head of Provider Analytics,Medibank,https://au.linkedin.com/in/liampeterjansen,WEAK,,Title has ICP signal but function is analytics/insights/design — influence without clear buying authority,digital-health-strategy
+240,Katerina Komis,Senior Subsidised Health Partnerships Manager,Medibank,https://au.linkedin.com/in/katerina-komis,PASS,3,ICP title match — decision-maker in relevant function,clinical-operations
+248,Margaret Canavan,Head of Customer Process Improvement,Medibank,https://au.linkedin.com/in/margaretcanavan,PASS,2,ICP title match — decision-maker in relevant function,member-retention
+249,Anthony Joyce FIAA,Head of Capital and Reserving,Medibank,https://au.linkedin.com/in/anthony-joyce-fiaa-17490b11,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+258,Helen Saunders,Head of Commercial Performance,Medibank,https://au.linkedin.com/in/helen-saunders-8b808426,WEAK,,Title has ICP signal but function is analytics/insights/design — influence without clear buying authority,digital-health-strategy
+259,Natalie Nicoll,Head of Design,Medibank,https://au.linkedin.com/in/natalie-nicoll-41118586,WEAK,,Title has ICP signal but function is analytics/insights/design — influence without clear buying authority,digital-health-strategy
+260,Will Mitchell,Head of Consumer Proposition,Medibank,https://au.linkedin.com/in/will-mitchell-24144845,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+262,Jeremy Dufner,Head of Work Architecture and Enablement,Medibank,https://www.linkedin.com/in/jdufner/,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+263,Marcos Faria-Silva,"Head of Legal - Technology, Procurement & Spaces",Medibank,https://au.linkedin.com/in/marcos-faria-silva-38a00a26,PASS,2,ICP title match — decision-maker in relevant function,product-integration
+264,Huy Nguyen,Data Scientist,Medibank,https://au.linkedin.com/in/huy-xuan-nguyen,PASS,3,ICP title match — decision-maker in relevant function,technical-integration
+267,Ben Liu,Analytics Manager - Payment Integrity,Medibank,https://au.linkedin.com/in/ben-liu96,WEAK,,Title has ICP signal but function is analytics/insights/design — influence without clear buying authority,digital-health-strategy
+269,Naomi Hickey-Humble,Head of Legal Operations,Medibank,https://au.linkedin.com/in/lauren-ziegelaar-806491119,PASS,2,ICP title match — decision-maker in relevant function,operational-scale
+271,Michael Norton,Head of PHI Operations,Medibank,https://au.linkedin.com/in/michael-norton-64b316116,PASS,2,ICP title match — decision-maker in relevant function,operational-scale
+276,Brian Smith,Manager Growth and Engagement Overseas Partnerships,Medibank,https://au.linkedin.com/in/brian-smith-4692062,PASS,3,ICP title match — decision-maker in relevant function,member-retention
+283,Charbel H.,Head of Financial Wellbeing,Medibank,https://www.linkedin.com/in/charbelmarketing,PASS,2,ICP title match — decision-maker in relevant function,wellness-programs
+290,David Given,Head of Planning and Reporting,Medibank,https://au.linkedin.com/in/dgiven,WEAK,,Title has ICP signal but function is analytics/insights/design — influence without clear buying authority,digital-health-strategy
+291,Sophie Dutton,Health Policy Manager,Medibank,https://au.linkedin.com/in/sophie-dutton-58721a123,PASS,3,ICP title match — decision-maker in relevant function,clinical-operations
+297,Benjamin Ho,Head of Tax,Medibank,https://au.linkedin.com/in/benjamin-ho-6a442985,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+299,Prue M.,Head of HealthStrong,Medibank,https://au.linkedin.com/in/prue-m-85700314,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+302,Catherine Conte,Head of Privacy Legal,Medibank,https://au.linkedin.com/in/catherineconte,PASS,2,ICP title match — decision-maker in relevant function,data-privacy
+308,Eadaoin Doherty,Head of Product - Ventures,Medibank,https://au.linkedin.com/in/eadaoindoherty,PASS,2,ICP title match — decision-maker in relevant function,product-integration
+311,Funda A.,MarTech Data Manager,Medibank,https://au.linkedin.com/in/fundaaksan,PASS,3,ICP title match — decision-maker in relevant function,technical-integration
+312,Saul Lazar,Head of Legal - Providers,Medibank,https://au.linkedin.com/in/saul-lazar-4a009522,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+318,Caitlin Clarke,"Employee Change and Communications Partner, Amplar Health",Medibank,https://au.linkedin.com/in/caitlin-clarke-615135204,PASS,3,ICP title match — decision-maker in relevant function,digital-health-strategy
+319,Suman Nadimpalli,Head of New Business Delivery,Medibank,https://au.linkedin.com/in/suman-nadimpalli-28973524,PASS,2,ICP title match — decision-maker in relevant function,operational-scale
+320,Andrew Carlson,Head of Customer channels,Medibank,https://au.linkedin.com/in/andrew-carlson-b310281a,PASS,2,ICP title match — decision-maker in relevant function,member-retention
+321,Tara Houkamau,Head of Wellbeing Legal,Medibank,https://au.linkedin.com/in/tarahoukamau,PASS,2,ICP title match — decision-maker in relevant function,wellness-programs
+322,Dimitri Karatsas,Technology Lead,Medibank,https://au.linkedin.com/in/dimitri-karatsas-591355a,PASS,3,ICP title match — decision-maker in relevant function,product-integration
+330,"Derek Yung, CFA",Head of Treasury & Investments,Medibank,https://au.linkedin.com/in/derek-yung-cfa-b599b32,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+334,Alvin Soo,Finance Partner - Amplar & Preventative Health (Secondment),Medibank,https://au.linkedin.com/in/alvin-soo,PASS,3,ICP title match — decision-maker in relevant function,clinical-operations
+342,Gaynor Anderson,Head of Overseas Portfolio and Proposition,Medibank,https://au.linkedin.com/in/gaynor-anderson-03003325,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+343,Laura Kane,Head of Legal - Customer,Medibank,https://au.linkedin.com/in/laura-kane-legal,PASS,2,ICP title match — decision-maker in relevant function,member-retention
+361,Yasmeen Farukh,Head of Connected Health Portfolio,Medibank,https://ke.linkedin.com/in/yasmeen-farukh-8a17b5381,PASS,2,ICP title match — decision-maker in relevant function,clinical-operations
+372,Isaac Ho,Group Strategy Manager,Medibank,https://au.linkedin.com/in/isaac-ho-64a68493,PASS,3,ICP title match — decision-maker in relevant function,digital-health-strategy
+376,GEORGE SAVVIDES,CEO,Medibank,https://au.linkedin.com/in/georgesavvides,PASS,1,ICP title match — decision-maker in relevant function,executive-outcomes
+377,Andrew Chang,CEO Head Quater,Medibank,https://au.linkedin.com/in/andrew-chang-1b901ab7,PASS,1,ICP title match — decision-maker in relevant function,executive-outcomes
+385,Chance Chiera,Head of Payment Integrity,Medibank,https://au.linkedin.com/in/uy-cherrymae,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+388,Julie Crawford,Director Of Operations,Medibank,https://au.linkedin.com/in/julie-crawford-9b7a08248,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+390,Vi Pham,Partnership Manager,Medibank,https://au.linkedin.com/in/vi-pham-5051b717a,PASS,3,ICP title match — decision-maker in relevant function,digital-health-strategy
+414,Mark Rogers,Head Of School,Medibank,https://au.linkedin.com/in/mark-rogers-78058b20b,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy

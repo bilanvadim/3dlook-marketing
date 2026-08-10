@@ -1,0 +1,12 @@
+{
+  "name": "sandbox-sm",
+  "description": "Sandbox: trial ONE candidate (plugin/skill/MCP) in isolation before adopting it into a real system. Base is hermes-core only, so a candidate that fails to load or never gets picked is obvious. Manual only — never routed automatically.",
+  "marketplaces": {
+    "dev-sm": "/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev-sm",
+    "sandbox-sm": "/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/claude-code-agent/DEV/sandbox-sm"
+  },
+  "enabledPlugins": [
+    "hermes-core@dev-sm",
+    "sbx-probe@sandbox-sm"
+  ]
+}

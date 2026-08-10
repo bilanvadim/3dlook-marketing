@@ -1,0 +1,444 @@
+person_id,full_name,title,company_name,linkedin_url,decision,priority,reason,recommended_message_angle
+1,Daisy Wong,Head of Security Awareness,Medibank,https://www.linkedin.com/in/daisywongcyber/,FAIL,,"Security-awareness function, not a digital-health/clinical/product decision-maker",
+2,Dani Rutman,Head of Integrated Healthcare Experience,Medibank,https://au.linkedin.com/in/rutmandanielle,PASS,2,Owns integrated healthcare experience at Medibank — direct fit for member progress data in virtual/preventive programs,member-retention
+3,David McHale,Program Director,Bupa Australia,https://au.linkedin.com/in/davidgmchale,WEAK,,"Generic Program Director, unclear if digital-health/clinical scope — needs Vadim judgment",digital-health-strategy
+4,James Taylor,Chief Product Officer,Mosh,https://au.linkedin.com/in/jamesmtaylor,PASS,1,CPO at a weight-loss/telehealth platform — exact ICP buyer for product integration,product-integration
+5,JoAnne Christodouleas,"Director Operations and Enablement, Health Insurance",Bupa Australia,https://au.linkedin.com/in/joannechristodouleas,PASS,2,Operations Director in health insurance — ICP operations buyer for intake/scale,operational-scale
+6,Andrea Christie-David,Director - Mental Health (Mindplace),Bupa Australia,https://au.linkedin.com/in/andreachristiedavid,WEAK,,"Clinical program director but mental-health focus, not weight/body composition",clinical-operations
+7,Pawan Verma,Head of MarTech and Delivery,Bupa Australia,https://au.linkedin.com/in/vermapawan,FAIL,,"Marketing-technology delivery role, not a digital-health/clinical buyer",
+8,Kernow Craig,Head of Design Digital Transformation,Bupa Australia,https://au.linkedin.com/in/kernow-craig,FAIL,,Design-led role — excluded per hypothesis creative/design exclusion,
+9,Shona Sundaraj,Group Medical Director,Medibank,https://au.linkedin.com/in/shona-sundaraj,PASS,1,Group Medical Director — top ICP clinical buyer for objective member data,clinical-operations
+10,Ben Vanden Boom,"Director Bupa Dental, Optical & Hearing",Bupa Australia,https://au.linkedin.com/in/ben-vanden-boom-071b051,WEAK,,"Director but dental/optical/hearing line, not weight/body-composition programs",digital-health-strategy
+11,Karen Birner,Head of Assurance and Regulatory Programs,HCF Australia,https://au.linkedin.com/in/karen-birner,WEAK,,"Regulatory/assurance function — possible privacy stakeholder, not a program buyer",data-privacy
+12,John O'Driscoll,"Head of Risk - Technology, Security and Data",Medibank,https://au.linkedin.com/in/john-o-driscoll,FAIL,,"Technology/security risk role, not a product/clinical decision-maker",
+13,Liam John Ward,Transformation Director Health Insurance,Bupa Australia,https://au.linkedin.com/in/liam-john-ward-a9863053,PASS,2,Transformation Director in health insurance — fits digital-health roadmap buyer,digital-health-strategy
+14,Emma Harrington,Chief of - Member Experience,HCF Australia,https://au.linkedin.com/in/emma-ls-harrington,PASS,1,C-level Member Experience owner — prime ICP for retention/engagement via visible progress,member-retention
+15,Paul Lo Russo,Creative | Senior Art Director,Medibank,https://au.linkedin.com/in/paullorusso,FAIL,,Creative/Art Director — explicitly excluded per hypothesis,
+16,Yash Sodhi,Chief Strategy Officer,Medibank,https://au.linkedin.com/in/ysodhi,PASS,1,Chief Strategy Officer — ICP innovation/strategy buyer for digital-health differentiation,digital-health-strategy
+17,Janelle McGuinness GAICD,"General Manager, Digital and Data",HCF Australia,https://au.linkedin.com/in/janelle-mcguinness-gaicd-ab1a574,PASS,2,GM Digital and Data — owns digital roadmap where structured body data would land,digital-health-strategy
+18,Merryn Olifent,Head of Customer Insights and Experience Design,Medibank,https://au.linkedin.com/in/merryn-olifent,WEAK,,"Customer insights/experience-design lead, not clearly a program decision-maker",member-retention
+19,Jean Jacobs,Head of Health Insights,Bupa Australia,https://au.linkedin.com/in/jean-jacobs-5898baab,WEAK,,"Health-insights/analytics role, influence but not a clear buyer",digital-health-strategy
+20,David Lumb,"Chief Officer, Member Growth",HCF Australia,https://au.linkedin.com/in/david-lumb,PASS,1,C-level Member Growth — ICP buyer for acquisition/retention engagement tools,member-retention
+21,Milosh Milisavljevic,Group Lead - Chief Customer Officer,Medibank,https://www.linkedin.com/in/miloshmilisavljevic/,PASS,1,Chief Customer Officer — top ICP member-experience/retention decision-maker,member-retention
+22,Aarti Olsson,Head of Health Advisory,Medibank,https://au.linkedin.com/in/aartiolsson,PASS,2,Leads health advisory — clinical/wellness program owner fit for verified body data,wellness-programs
+23,Lucy Chen,Head of Healthcare Programs,Bupa Australia,https://au.linkedin.com/in/lucy-chen-b0008315a,PASS,2,Head of Healthcare Programs — owns programs that would use remote body data,clinical-operations
+24,Peter Coon,Head of Competitive and Market Insights,Medibank,https://au.linkedin.com/in/petercoon,FAIL,,"Market/competitive insights, not a digital-health or clinical buyer",
+25,Erin Lawless,Acting GM RT Health (Division of HCF),HCF Australia,https://au.linkedin.com/in/erin-lawless-28b68239,PASS,2,GM of an HCF health division — operating leader with program authority,operational-scale
+26,Dr Jonathan Brown,Medical Director - BUPA Medical,Bupa Australia,https://www.linkedin.com/in/dr-jonathan-brown/,PASS,1,Medical Director of Bupa Medical — ICP clinical buyer for objective progress data,clinical-operations
+27,Nicholas Holden,Chief Marketing Officer,Mosh,https://au.linkedin.com/in/nicholasholden1,PASS,2,CMO at weight-loss telehealth — ICP growth/retention buyer for program credibility,member-retention
+28,Lydia Windels,Partnership Manager - overseas,Medibank,https://au.linkedin.com/in/lydiawindels,FAIL,,"Overseas partnerships role, not a digital-health/clinical/product buyer",
+29,Mads Langbjerg Larsen,Head of Strategy and Delivery ANZ,Bupa Australia,https://au.linkedin.com/in/mads-larsen,PASS,2,Head of Strategy and Delivery ANZ — strategy buyer for digital-health roadmap,digital-health-strategy
+30,Adeline Chang,"Head of Technology, Dental Optical and Hearing",Bupa Australia,https://au.linkedin.com/in/adeline-chang-66a30a13,WEAK,,"Technology lead but dental/optical line — possible technical champion, wrong program",technical-integration
+31,Jonno Seidler,Creative Director,Mosh,https://au.linkedin.com/in/jonnoseidler,FAIL,,Creative Director — excluded per hypothesis creative/design exclusion,
+32,Tim Thorne,"Director, HCF Life",HCF Australia,https://au.linkedin.com/in/timjohnthorne,WEAK,,Life-insurance product director — insurer but not digital-health/weight program,digital-health-strategy
+33,Ian Maytom,"General Manager, Hospital & Medical",HCF Australia,https://au.linkedin.com/in/ian-maytom-b44aab20,PASS,2,GM Hospital & Medical — clinical-program operating leader fit,clinical-operations
+34,Gerard Dalbosco,Non Executive Director,Medibank,https://au.linkedin.com/in/gerard-dalbosco,FAIL,,"Non-Executive Director — board role, not an operational buyer",
+35,Glenn McPhee,"Managing Director, Government Services",Bupa Australia,https://au.linkedin.com/in/glennmcphee,WEAK,,"MD Government Services — senior but government-contract line, unclear program fit",digital-health-strategy
+36,Lesley Brinckley,Head of IT Risk and Governance,HCF Australia,https://au.linkedin.com/in/lesley-brinckley-2123014,FAIL,,"IT risk and governance, not a product/clinical decision-maker",
+37,David Lochrie,Digital Director - Transformation,Bupa Australia,https://www.linkedin.com/in/david-lochrie-512a191/,PASS,2,Digital Transformation Director — owns digital roadmap for new body-data workflows,digital-health-strategy
+38,Glenn O'Sullivan,Chief Operating Officer,Mosh,https://au.linkedin.com/in/glennosullivan,PASS,1,COO at weight-loss telehealth — ICP operations buyer for scalable remote intake,operational-scale
+39,Stephanie Sealy,"Head of Mental Health, Health Ventures",Medibank,https://au.linkedin.com/in/stephaniesealy,WEAK,,"Ventures role but mental-health focus, not weight/body-composition programs",digital-health-strategy
+40,Christian Panariello,Head of Growth,Bupa Australia,https://au.linkedin.com/in/christian-panariello-aa555530,PASS,2,Head of Growth — ICP acquisition/retention buyer for engagement differentiation,member-retention
+41,Jonathan Goh,Head of Marketing Technology and Orchestration,Medibank,https://au.linkedin.com/in/jongoh12,FAIL,,"Marketing-technology/orchestration, not a digital-health/clinical buyer",
+42,Aleks Devic,Head of External Communications,Bupa Australia,https://au.linkedin.com/in/aleks-devic-78323155,FAIL,,"External communications, not a product/clinical/operations buyer",
+43,Michelle Karolik,Head of Customer Engagement,Bupa Australia,https://au.linkedin.com/in/michelle-karolik-7279843,PASS,2,Head of Customer Engagement — ICP retention buyer for visible member progress,member-retention
+44,Joanne Casha,Head of Corporate Partnerships,Bupa Australia,https://au.linkedin.com/in/joanne-casha-40992bb0,WEAK,,"Corporate partnerships role — adjacent, not a direct program/clinical buyer",member-retention
+45,Robert Ashmore,Head of Business Insights,HCF Australia,https://au.linkedin.com/in/robashmoresydney,FAIL,,"Business insights/analytics, not a digital-health or clinical buyer",
+46,Chris Leech,Head of Data Governance,Medibank,https://au.linkedin.com/in/chris-leech-259a4216,FAIL,,"Data-governance function, not a product/clinical decision-maker",
+47,Andrew Wilkinson,"Director, Domestic Portfolio APAC (aka Chief Customer Officer)",Bupa Australia,https://au.linkedin.com/in/andrew-wilkinson-1a8b513a,PASS,1,Effective Chief Customer Officer APAC — top ICP member-experience decision-maker,member-retention
+48,René Cunningham,"General Manager - Growth, Government Services",Bupa Australia,https://www.linkedin.com/in/renecunningham1/,WEAK,,Growth GM but government-services line — unclear digital-health program fit,member-retention
+49,Tony Johnson,Chair,Bupa Australia,https://au.linkedin.com/in/tonyjjohnson,FAIL,,"Board Chair — governance role, not an operational buyer",
+50,Linda Opie,Head of Health and Wellbeing,HCF Australia,https://au.linkedin.com/in/warren-opie-b3aab535,PASS,2,Head of Health and Wellbeing — ICP wellness-program owner for remote verification,wellness-programs
+51,Tom Bosna,Head of Operations | Workplace Health & Wellbeing. Ventures,Medibank,https://au.linkedin.com/in/tombosna,PASS,2,Runs Workplace Health & Wellbeing ventures ops — wellness-program buyer fit,wellness-programs
+52,Cameron McCafferty,Squad Lead / Head of Technology - Architecture,Medibank,https://au.linkedin.com/in/cameron-mccafferty-4131511,WEAK,,Technology architecture lead at a FitXpress-segment insurer — possible technical champion,technical-integration
+53,Pauline Smyth,"Head of Virtual Health, Amplar Health",Medibank,https://au.linkedin.com/in/pauline-smyth-54b4374,PASS,1,Head of Virtual Health (Amplar) — direct ICP buyer for remote body data in virtual care,clinical-operations
+54,Carl James,"Chief Operating Officer Dental, Optical & Hearing",Bupa Australia,https://au.linkedin.com/in/carl-james-ab91129,WEAK,,"COO but dental/optical/hearing line, not weight/body-composition programs",operational-scale
+55,Maunish Patel,Head of Security Engineering,Medibank,https://uk.linkedin.com/in/mahuel,FAIL,,"Security engineering — infrastructure, not a product/clinical buyer",
+56,Jamie Hempenstall,Head of Procurement - Category Management,Medibank,https://au.linkedin.com/in/jamie-hempenstall-093257b1,FAIL,,"Procurement role, not a digital-health/clinical decision-maker",
+57,Stuart Robbins,Head of Property and Procurement,HCF Australia,https://au.linkedin.com/in/stuart-robbins-1056849,FAIL,,"Property and procurement, not a product/clinical buyer",
+58,Jennifer Vo-Phuoc,Head of Health Policy,Medibank,https://www.linkedin.com/in/jennifer-vo-phuoc-6b1b5113/,WEAK,,Health-policy lead — influences programs but not a direct product/clinical buyer,digital-health-strategy
+59,Annie M.,"Manager, Health Policy",Medibank,https://au.linkedin.com/in/anniemakar,FAIL,,"Health-policy manager — below buyer seniority, policy not program authority",
+60,Michelle Urquhart,Head of Employee Communications,Medibank,https://au.linkedin.com/in/michellea-urquhart,FAIL,,"Internal/employee communications, not a digital-health/clinical buyer",
+61,David Koczkar,Chief Executive Officer,Medibank,https://au.linkedin.com/in/davidkoczkar,PASS,1,Group CEO of Medibank — top executive sponsor for digital-health outcomes,executive-outcomes
+62,Liz Green,Head of Content & Campaigns,Medibank,https://au.linkedin.com/in/lizgreenb,FAIL,,"Content and campaigns, not a product/clinical/operations buyer",
+63,Sarah Trainor,Head of Overseas Partnerships and Sales,Medibank,https://au.linkedin.com/in/sarah-trainor-a7206a10,FAIL,,"Overseas partnerships/sales, not a digital-health/clinical buyer",
+64,Pamela Zaldarriaga,Engagement and Support Coordinator,Bupa Australia,https://au.linkedin.com/in/pamela-zaldarriaga,FAIL,,"Support coordinator — junior, no program decision authority",
+65,Alexander Godfrey,"Partner - Digital, Data, & AI Risk | Technology APAC",Bupa Australia,https://au.linkedin.com/in/alexandergodfrey,WEAK,,"Digital/AI-risk technology partner — possible technical evaluator, risk-oriented",technical-integration
+66,Cameron Towt,Head of Data and AI Governance,Bupa Australia,https://au.linkedin.com/in/camerontowt,FAIL,,"Data and AI governance, not a product/clinical decision-maker",
+67,Mark Rogers,"Group Executive, Chief Financial Officer & Group Strategy",Medibank,https://au.linkedin.com/in/mark-rogers-78058b20b,FAIL,,"CFO-led role — finance owner, not a digital-health/clinical program buyer",
+68,Morgan Chen,"Technical Director, Cybersecurity & Data Resilience",HCF Australia,https://au.linkedin.com/in/morgan-chen-80967135,FAIL,,"Cybersecurity technical director — infrastructure/security, not a product buyer",
+69,Andrew Wilson,Group Chief Medical Officer,Medibank,https://au.linkedin.com/in/andrew-wilson-37b579a1,PASS,1,Group Chief Medical Officer — top ICP clinical buyer for verified body metrics,clinical-operations
+70,Paul Berghofer,Head of Hospital Commercial Partnerships,Medibank,https://au.linkedin.com/in/paul-berghofer-892399a4,WEAK,,"Hospital commercial partnerships — adjacent commercial role, not a program buyer",digital-health-strategy
+71,Anton Eksteen,Head of Networks and Reliability Engineering,HCF Australia,https://au.linkedin.com/in/anton-eksteen,FAIL,,"Network/reliability engineering — pure infrastructure, FAIL per IT policy",
+72,Rima Dagher,Victorian Branch Manager,HCF Australia,https://au.linkedin.com/in/rima-dagher,FAIL,,"Branch manager — retail operations, not a digital-health/clinical buyer",
+73,Antony Ugoni,Chief Data Scientist,HCF Australia,https://au.linkedin.com/in/antonyugoni,FAIL,,"Data science lead — analytics, not a product/clinical purchasing role",
+74,Mark Compton,Non Executive Director,HCF Australia,https://au.linkedin.com/in/mark-compton-3151005,FAIL,,"Non-Executive Director — board role, not an operational buyer",
+75,Felicia Trewin,Group Lead - Data & Technology | CIO,Medibank,https://au.linkedin.com/in/feliciatrewin,PASS,3,CIO at a FitXpress-segment insurer — C-suite technical entry point who can open doors,technical-integration
+76,David Hill,Chief Financial Officer,Mosh,https://au.linkedin.com/in/davidaehill,FAIL,,"CFO at Mosh — finance owner, not a product/clinical/growth buyer",
+77,Wael Hanna,Co-Founder,Medmate,https://au.linkedin.com/in/wael-hanna-9a555a50,PASS,1,Co-Founder of a telehealth/prescription platform — top ICP founder buyer,executive-outcomes
+78,Hayley Y.,Finance Business Partner - Technology & Digital,Bupa Australia,https://au.linkedin.com/in/hayleycarr,FAIL,,"Finance business partner, not a product/clinical decision-maker",
+79,James McDonald,Head of Telehealth Operations,Bupa Australia,https://au.linkedin.com/in/jamesrmcdonald,PASS,1,Head of Telehealth Operations — exact ICP buyer for remote body-data workflows,clinical-operations
+80,Deleine G.,Head of International Direct,Bupa Australia,https://au.linkedin.com/in/deleine-g-b0517a32,WEAK,,"International direct (sales/distribution) — adjacent, not a program/clinical buyer",member-retention
+81,Saskia T.,Senior Business Partner - People and Culture,HCF Australia,https://au.linkedin.com/in/saskiathurlow,FAIL,,"HR/People and Culture, not a digital-health/clinical buyer",
+82,Santhana Gopalan Narayanaswamy,Head of Health Technology Platforms and Services (Amplar Health),Medibank,https://au.linkedin.com/in/santhananarayanaswamy,PASS,2,Head of Health Technology Platforms (Amplar) — owns platforms for API/SDK integration,product-integration
+83,Dean Italia,Head of Investments APAC,Bupa Australia,https://au.linkedin.com/in/dean-italia-b63a3111,FAIL,,"Investments, not a digital-health/clinical/product buyer",
+84,Philip Mackney,Co-Founder,Hopstep,https://www.linkedin.com/in/philip-mackney-a350a450/,WEAK,,Founder but healthcare-workforce/recruitment platform — borderline company fit,digital-health-strategy
+85,Saurabh Mehta,Head of Business Analysis and Quality Engineering,HCF Australia,https://au.linkedin.com/in/saurabhpmehta,FAIL,,"Business analysis/QA engineering — not a product/clinical buyer, FAIL per IT policy",
+86,Martin Brown,Experience Design Manager,Bupa Australia,https://au.linkedin.com/in/martin-brown-9b39a514,FAIL,,"Experience-design manager — design role, excluded per hypothesis",
+87,Suren Wickramasinghe,Chief Technology Officer,Mosh,https://au.linkedin.com/in/suren-wickramasinghe-ab5917b,PASS,2,CTO at weight-loss telehealth — ICP technical buyer for API/SDK integration,product-integration
+88,Josh Lambert,Head of Business Development - Digital Health & Ventures,Medibank,https://au.linkedin.com/in/josh-lambert-8460554b,PASS,2,Head of BD Digital Health & Ventures — sources new digital-health capabilities,digital-health-strategy
+89,Nishan Rudrakumar,"Head of Digital, Financial Products",Medibank,https://au.linkedin.com/in/nishan-rudrakumar,FAIL,,"Digital lead but financial-products line, not health/clinical programs",
+90,AJIT JOSHI,Head of Technology Strategy Development,HCF Australia,https://au.linkedin.com/in/ajit-joshi-b3b1341,WEAK,,Technology-strategy lead at a FitXpress-segment insurer — possible technical champion,technical-integration
+91,Olivia Wardlaw,Head of Data & Technology Governance Performance Transformation,Medibank,https://www.linkedin.com/in/olivia-wardlaw-312848150/,FAIL,,"Data/technology governance, not a product/clinical buyer",
+92,Greg Baster,Chief Information Officer,HCF Australia,https://au.linkedin.com/in/gregbaster,PASS,3,CIO at a FitXpress-segment insurer — C-suite technical entry point per IT policy,technical-integration
+93,asher freilich,Managing Director and Founder,InstantScripts,https://au.linkedin.com/in/asher-freilich-0a36a773,PASS,1,Founder/MD of a telehealth/eScripts platform — top ICP founder buyer,executive-outcomes
+94,Amy Dougherty,"Head of Performance, Insight & Reporting",Bupa Australia,https://au.linkedin.com/in/amy-dougherty-5b486b23,FAIL,,"Performance/reporting analytics, not a digital-health or clinical buyer",
+95,Soumya Nair,Head of Technology-Healthcare( Bupa Villages & Aged Care),Bupa Australia,https://au.linkedin.com/in/soumya-nair04,WEAK,,"Healthcare technology lead but aged-care line — possible technical champion, wrong program",technical-integration
+96,Anna Speranza,"Strategic People Partner, Health Insurance",Bupa Australia,https://au.linkedin.com/in/anna-speranza-3361293,FAIL,,"HR/People partner, not a digital-health/clinical buyer",
+97,Melissa Dodge,Leadership Development Consultant,Medibank,https://au.linkedin.com/in/melissa-dodge,FAIL,,"Leadership-development/L&D, not a product/clinical buyer",
+98,Lintyn Basha,"Head of Homecare, Health Prevention and Specialist Partnerships",Medibank,https://au.linkedin.com/in/lintyn-basha-837101141,PASS,2,Leads homecare/health-prevention — clinical-program owner fit for remote body data,clinical-operations
+99,Nicola Piteo,Head of Strategic Workforce Programs,Bupa Australia,https://au.linkedin.com/in/nicola-piteo-1bb3b127,FAIL,,"Workforce programs — internal HR/workforce, not a digital-health buyer",
+100,Ezra Israel,General Manager,Bupa Australia,https://au.linkedin.com/in/ezra-israel,WEAK,,"Generic General Manager — scope unclear, needs Vadim judgment",digital-health-strategy
+101,Andrew Galbraith,Risk Business Partner | Customer Channels and Growth (CCG),Bupa Australia,https://www.linkedin.com/in/andrew-galbraith-8a175590/,FAIL,,"Risk business partner, not a product/clinical/growth buyer",
+102,Tom Robinson,Head of Innovation,HCF Australia,https://au.linkedin.com/in/tomrobbo,PASS,2,Head of Innovation — ICP innovation buyer for new member-engagement tools,digital-health-strategy
+103,Briony Cliffe,Head of Marketing - Customer,Bupa Australia,https://au.linkedin.com/in/brionycliffe,WEAK,,Customer marketing lead — borderline; marketing influence but not a program buyer,member-retention
+104,Daryn Wedd,"Hub Lead, IT Security and Networks / CISO",Medibank,https://au.linkedin.com/in/daryn-wedd-a962162,FAIL,,"CISO/IT security — infrastructure, not a product/clinical buyer",
+105,Daniel Cogan,Head of Workforce Transformation,Medibank,https://au.linkedin.com/in/danielrcogan,FAIL,,"Workforce transformation — internal HR/ops, not a digital-health buyer",
+106,Gustavo Giudice,General Manager / National Sapphire Services Manager,Bupa Australia,https://au.linkedin.com/in/gustavo-giudice,WEAK,,Services GM — operating role but unclear digital-health/clinical program fit,operational-scale
+107,Benson Low,Head of Design Capabilities,Bupa Australia,https://au.linkedin.com/in/bensonlow,FAIL,,"Design capabilities — design role, excluded per hypothesis",
+108,"Daniel Zocco, CPA",Finance Business Partner- Technology,Bupa Australia,https://www.linkedin.com/in/daniel-zocco-cpa-22a78397/,FAIL,,"Finance business partner, not a product/clinical buyer",
+109,Lorraine Thomas,CEO & MD,HCF Australia,https://au.linkedin.com/in/lorraine-thomas,PASS,1,CEO & MD of HCF — top executive sponsor for digital-health outcomes,executive-outcomes
+110,Erin Gooey,"Head of Health, Safety and Wellbeing",Medibank,https://au.linkedin.com/in/erin-gooey-bb5b3a60,WEAK,,"Internal HSW/employee wellbeing — occupational focus, not member programs",wellness-programs
+111,Aaron Green,"National Property Manager, Group Property",Medibank Private,https://au.linkedin.com/in/aaron-green-a861289,FAIL,,,
+112,Binnu Verma,Head of Digital Analytics,HCF Australia,https://au.linkedin.com/in/binnu-verma-b090223b,WEAK,,Title has ICP signal but function is analytics/insights/design — influence without clear buying authority,product-integration
+113,Shaun Nicholls,General Manager,Bupa Australia,https://au.linkedin.com/in/shaun-nicholls-363ab05b,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+114,Sean Bluett,Global Group Executive Chairman,Medibank,https://au.linkedin.com/in/sean-bluett-63bb5211,FAIL,,,
+115,Nathan McLeod,Head of Wellbeing and Injury Management,Bupa Australia,https://au.linkedin.com/in/nathan-mcleod,PASS,2,ICP title match — decision-maker in relevant function,wellness-programs
+116,Scott Beattie,Director - Primary Care,Bupa Australia,https://au.linkedin.com/in/scottbeattieau,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+117,Susan Cullen,"National Partnership Manager, Overseas",Medibank,https://au.linkedin.com/in/susan-cullen-40334768,PASS,3,ICP title match — decision-maker in relevant function,digital-health-strategy
+118,Sam McBain,Head of Workforce Optimisation - Bupa Villages and Aged Care Australia,Bupa Australia,https://au.linkedin.com/in/sammcbain,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+119,Liz Sleeman,"Senior Executive, Group Clinical Governance",Medibank,https://au.linkedin.com/in/liz-sleeman-13131081,PASS,3,ICP title match — decision-maker in relevant function,clinical-operations
+120,Georgina Anderson,Head of Employee Communications and Social Impact,HCF Australia,https://au.linkedin.com/in/georgina-anderson-a162573b,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+121,Joanna Wang,Vice President Clinical Operations,Mosh,https://au.linkedin.com/in/joanna-wang-8857bb4a,PASS,2,ICP title match — decision-maker in relevant function,clinical-operations
+122,Rebecca Hetherington,Executive Assistant to Managing Director,Bupa Australia,https://au.linkedin.com/in/rebecca-hetherington-723a731b4,FAIL,,,
+123,Swati Ram,Group Reporting Manager - ANZ,Bupa Australia,https://au.linkedin.com/in/swatiram,FAIL,,,
+124,Maria Ruberto,Member - Mental Health Reference Group,Medibank,https://au.linkedin.com/in/mariaruberto,PASS,3,ICP title match — decision-maker in relevant function,clinical-operations
+125,Chloe Dwyer,People and Culture Business Partner,HCF Australia,https://au.linkedin.com/in/chloe-dwyer-b0a71215b,FAIL,,,
+126,Kylee Dean-Willcocks,General Manager Transformation,Bupa Australia,https://au.linkedin.com/in/kylee-dean-willcocks,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+127,Nick Malham,New Ventures and AI Product Strategy,Medibank,https://au.linkedin.com/in/nickmalham,PASS,3,ICP title match — decision-maker in relevant function,product-integration
+128,Annette King,Chair,HCF Australia,https://au.linkedin.com/in/annette-king-84089426,FAIL,,,
+129,Lee-Helena Rosolen,Head of Performance,Mosh,https://au.linkedin.com/in/lee-helena-rosolen,WEAK,,Title has ICP signal but function is analytics/insights/design — influence without clear buying authority,digital-health-strategy
+130,Ann K.,Regional Manager,HCF Australia,https://au.linkedin.com/in/ann-k-03148160,FAIL,,,
+131,Hayley Smith,National Performance Manager,Bupa Australia,https://au.linkedin.com/in/hayleycarr,WEAK,,Title has ICP signal but function is analytics/insights/design — influence without clear buying authority,digital-health-strategy
+132,Rob Lackey,"General Manager, Ancillary Partnerships & Provider Operations",Bupa Australia,https://au.linkedin.com/in/rob-lackey-8601a743,PASS,2,ICP title match — decision-maker in relevant function,operational-scale
+133,Rafael Vasconcelos Silva,Data & Analytics Manager,Mosh,https://au.linkedin.com/in/rvasconcelossilva,WEAK,,Title has ICP signal but function is analytics/insights/design — influence without clear buying authority,technical-integration
+134,Samantha H.,Head of Delivery,HCF Australia,https://au.linkedin.com/in/samantha-page-9b851293,PASS,2,ICP title match — decision-maker in relevant function,operational-scale
+135,Rob Bakker,Head of Strategy and Development,Medibank,https://au.linkedin.com/in/rob-bakker-00951a60,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+136,Alison Madden,Head of Internal Communications,Bupa Australia,https://au.linkedin.com/in/almadden,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+137,Dean Burgess,"Head of Operations, Core Customer Systems",Medibank,https://au.linkedin.com/in/dean-burgess-ab5b06254,PASS,2,ICP title match — decision-maker in relevant function,member-retention
+138,Sarah McRae,Chief Executive Amplar Health Home Hospital,Amplar Health,https://au.linkedin.com/in/sarah-mcrae-071164227,PASS,1,ICP title match — decision-maker in relevant function,clinical-operations
+139,Leesa Devine,"Personal Assistant to Director (Dental, Optical & Hearing)",Bupa Australia,https://au.linkedin.com/in/leesa-devine-0b36a3124,FAIL,,,
+140,Crystal P.,Head of Product,HCF Australia,https://au.linkedin.com/in/crystal-petkoff,PASS,2,ICP title match — decision-maker in relevant function,product-integration
+141,Built Varinporn Amporndanai,Medical Director InstantCosmetics,InstantScripts,https://au.linkedin.com/in/built-amporndanai,PASS,1,ICP title match — decision-maker in relevant function,clinical-operations
+142,Dan Anderson,Head of Digital Workplace Optimisation,Medibank,https://au.linkedin.com/in/andodan,PASS,2,ICP title match — decision-maker in relevant function,product-integration
+143,Mark Liberatore,Technology Domain Manager - MarTech,Bupa Australia,https://au.linkedin.com/in/mark-liberatore,PASS,3,ICP title match — decision-maker in relevant function,product-integration
+144,Don Raissis,Non Executive Director,Mosh,https://au.linkedin.com/in/donraissis,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+145,Marco Bouman,"Head of Risk and Management Assurance, Healthcare & Strategy Division",Medibank,https://au.linkedin.com/in/marcoboumanmsc,WEAK,,"Relevant domain expertise but compliance/risk function — possible privacy stakeholder, not program buyer",data-privacy
+146,Katherine Rellos,"Director, External Communications at Bupa APAC",Bupa Australia,https://au.linkedin.com/in/katherine-rellos-6810624,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+147,David Fletcher,Head of Enterprise Architecture,HCF Australia,https://au.linkedin.com/in/dpfletcher,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+148,Lucy Turner,Cluster Manager,Bupa Australia,https://au.linkedin.com/in/lucy-turner-538616a1,FAIL,,,
+149,Mel Anders,"Head of Contract & Supplier Management, Procurement",Bupa Australia,https://au.linkedin.com/in/mel-anders-syd,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+150,Hayden Harris,Local Community Leader,Medibank,https://au.linkedin.com/in/hayden-r-harris,FAIL,,,
+151,Andrea Tuckey,Head of Provider Strategy,Medibank,https://au.linkedin.com/in/andrea-tuckey,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+152,Tushar Yadav,Medical Director,Mosh,https://au.linkedin.com/in/tushar-yadav-1b5031144,PASS,1,ICP title match — decision-maker in relevant function,clinical-operations
+153,Tim Arvanitis,Head of Employee Technology Operations,Medibank,https://au.linkedin.com/in/tim-arvanitis-4b22a34,PASS,2,ICP title match — decision-maker in relevant function,product-integration
+154,Terry Agnew,Non Executive Director,HCF Australia,https://au.linkedin.com/in/terry-agnew-ba8293119,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+155,Claire Kinghorn,Head of Leadership,Medibank,https://au.linkedin.com/in/claire-kinghorn-34349610,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+156,Julie Andrews,Chief Officer Member Health,HCF Australia,https://au.linkedin.com/in/julie-andrews-652bb544,PASS,1,ICP title match — decision-maker in relevant function,member-retention
+157,Bridget Lodge,General Manager Health and Wellbeing,Bupa Australia,https://au.linkedin.com/in/bridget-lodge-b7a04a57,PASS,2,ICP title match — decision-maker in relevant function,clinical-operations
+158,Temple Connolly,Conversion Optimisation Manager - Acquisition & Growth,Bupa Australia,https://au.linkedin.com/in/temple-connolly-2247b422,PASS,3,ICP title match — decision-maker in relevant function,member-retention
+159,Nicholas Gudde,Head of AI Strategy & Capability,Medibank,https://au.linkedin.com/in/nicholasgudde,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+160,Tianni Becker,Head of Operations,Bupa Australia,https://au.linkedin.com/in/tianni-becker-b83110174,PASS,2,ICP title match — decision-maker in relevant function,operational-scale
+161,Paul Baulch,Head of Property Development,Bupa Australia,https://au.linkedin.com/in/paul-baulch-34019a91,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+162,Amanda Hagan,Non Executive Director,HCF Australia,https://au.linkedin.com/in/amanda-n-hagan,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+163,Amanda Li,Branch Manager,HCF Australia,https://au.linkedin.com/in/amanda-li-21a7b861,FAIL,,,
+164,Grant Davis,Chief Risk Officer,Bupa Australia,https://au.linkedin.com/in/grant-davis-385b6332,PASS,1,ICP title match — decision-maker in relevant function,data-privacy
+165,Megan McNaughton,General Manager,Bupa Australia,https://au.linkedin.com/in/megan-mcnaughton-532a09231,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+166,Lucy Foster,General Manager Hospital and Medical Partnerships,Bupa Australia,https://au.linkedin.com/in/lucy-foster-bab70440,PASS,2,ICP title match — decision-maker in relevant function,clinical-operations
+167,Peter Everingham,Non Executive Director and Chair of the Investment & Capital Committee,Medibank,https://au.linkedin.com/in/peter-everingham-4824711,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+168,Liam Gilligan,Head of Innovation,HCF Australia,https://www.linkedin.com/in/liamgilligan/,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+169,Aifric Boylan,Chief Executive Officer,Qoctor,https://au.linkedin.com/in/aifric-boylan-53ab67114,PASS,1,ICP title match — decision-maker in relevant function,digital-health-strategy
+170,Christopher Pettigrew,Head of HCF Research Foundation,HCF Australia,https://au.linkedin.com/in/christopher-pettigrew-01a7235a,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+171,Helen O'Leary,Head of Procurement Operations,Medibank,https://www.linkedin.com/in/helen-o-leary-982b4443/?skipRedirect=true,PASS,2,ICP title match — decision-maker in relevant function,operational-scale
+172,Daniel Tencic,Roving Maintenance Supervisor,Bupa Australia,https://au.linkedin.com/in/daniel-tencic-35118098,FAIL,,,
+173,Havhisha B.,People and Culture Business Partner,HCF Australia,https://www.linkedin.com/in/havhisha-b-229750166/,FAIL,,,
+174,Michael S.,Head Of Internal Audit,Medibank,https://au.linkedin.com/in/demi-michael-82b268b7,FAIL,,,
+175,Craig Muller,Head of Platform Services,HCF Australia,https://au.linkedin.com/in/craig-muller-32995011,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+176,Frank Doyle,Head of Retention and Customer Value at Medibank,Medibank,https://au.linkedin.com/in/frank-doyle-0bb016a2,PASS,2,ICP title match — decision-maker in relevant function,member-retention
+177,Herbert Boshoff Van Der Merwe,Head of Actuarial - Health,HCF Australia,https://au.linkedin.com/in/herbert-boshoff-van-der-merwe-97b9481b,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+178,Gabriel Goh,Engineering Manager - Mobile,Medibank,https://au.linkedin.com/in/gabgoh,FAIL,,,
+179,Sebastian Klich,"Chief Officer, Product & Diversified Business",HCF Australia,https://au.linkedin.com/in/sebastian-klich,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+180,Maya Rivis,"Senior Manager, Sustainability and Social Impact, Bupa",Bupa Australia,https://au.linkedin.com/in/maya-rivis-3806377b,FAIL,,,
+181,Aaron W.,Head of Trust and Ethics,Medibank,https://au.linkedin.com/in/aaron-green-a861289,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+182,Pearl Backhouse,Head of P&C Business Partnering,HCF Australia,https://au.linkedin.com/in/pearl-backhouse-85211554,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+183,Matt Thorley,Head of Cyber Threat Management,Bupa Australia,https://au.linkedin.com/in/matt-thorley-80389810,FAIL,,,
+184,Andrew Van Elswyk,Head of Cyber Defence Centre,Bupa Australia,https://www.linkedin.com/in/avanelswyk/,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+185,Harry S,Head of Identity and Access Management,Medibank,https://au.linkedin.com/in/harry-s-211a9373,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+186,Tim Silverton,Continuous Improvement/Transformation,Medibank,https://au.linkedin.com/in/tim-silverton-a1b887259,FAIL,,,
+187,Caitlin van den Berg,Head of Voice of Customer,Bupa Australia,https://www.linkedin.com/in/caitlin-van-den-berg-6306429/,PASS,2,ICP title match — decision-maker in relevant function,member-retention
+188,Maxim Sharshun,Chief Commercial Officer - Health,Bupa Australia,https://www.linkedin.com/in/sharshun/,PASS,1,ICP title match — decision-maker in relevant function,digital-health-strategy
+189,Lisa McIntyre,Non Executive Director,Medibank,https://au.linkedin.com/in/lisa-mcintyre-a793942,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+190,Liz Turner,Strategic People Partner,Bupa Australia,https://au.linkedin.com/in/liz-turner-46194964,FAIL,,,
+191,Elisha Frenkel,Customer Engagement Manager,InstantScripts,https://au.linkedin.com/in/elisha-frenkel-2b203b81,PASS,3,ICP title match — decision-maker in relevant function,member-retention
+192,Isabella Lynch,Chief of Staff,Bupa Australia,https://au.linkedin.com/in/isabella-lynch-15b460197,PASS,1,ICP title match — decision-maker in relevant function,digital-health-strategy
+193,Robyn Rushton,Branch Manager,HCF Australia,https://www.linkedin.com/in/robyn-rushton/,FAIL,,,
+194,Amanda Sim,Head of Transformation Delivery,Bupa Australia,https://au.linkedin.com/in/aforamanda,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+195,Nick Bradley,"Head of Organic Strategy, Group Strategy",Medibank,https://au.linkedin.com/in/nick-bradley-02300513,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+196,Trent Marsh,Operations Manager,Medibank,https://au.linkedin.com/in/trent-marsh-22454354,PASS,3,ICP title match — decision-maker in relevant function,operational-scale
+197,Gabriele Accadia,Group Property Strategic Planning and Leasing Manager,Medibank,https://www.linkedin.com/in/gabriele-accadia-69065848/,FAIL,,,
+198,Melissa Ironside,Head of Customer,InstantScripts,https://au.linkedin.com/in/melissa-ironside-77b8a139,PASS,2,ICP title match — decision-maker in relevant function,member-retention
+199,Sam Wijesinha,Product Owner,Bupa Australia,https://au.linkedin.com/in/swijesinha,FAIL,,,
+200,Eric Peterson,"Head of Experience Design, Research and Loyalty",HCF Australia,https://www.linkedin.com/in/eric-peterson-0967533/,WEAK,,Title has ICP signal but function is analytics/insights/design — influence without clear buying authority,member-retention
+201,Joshua Hayward,Head of Internal Audit,Medibank,https://au.linkedin.com/in/joshua-hayward-bbb6a735,FAIL,,,
+202,Claudia Wu,Head of Expansion (APAC),Mosh,https://au.linkedin.com/in/claudia-wu-01b98a1a3,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+203,Gayle Kean,"Manager, Branch Operations",HCF Australia,https://au.linkedin.com/in/gayle-kean-52515957,PASS,3,ICP title match — decision-maker in relevant function,operational-scale
+204,Shahbaz Rana,Head of Engineering Enbalement,Bupa Australia,https://au.linkedin.com/in/shahbaz-rana-62283517,PASS,2,ICP title match — decision-maker in relevant function,product-integration
+205,Malcolm Middleton,Head of IT Business Operations,HCF Australia,https://au.linkedin.com/in/malcolm-middleton-b060048,PASS,2,ICP title match — decision-maker in relevant function,operational-scale
+206,Peter Schofield,"General Manager, Branch Network",HCF Australia,https://www.linkedin.com/in/peter-schofield-89396120/,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+207,Conan Chiles,Commercial & Pricing Manager,Bupa Australia,https://au.linkedin.com/in/conan-chiles,FAIL,,,
+208,Angela Legg,People & Culture Business Partner,Medibank,https://au.linkedin.com/in/angela-legg-7456a149,FAIL,,,
+209,Ashleigh Clemmens (nee Costanzo),People Partner - GEO Transformation,Medibank,https://au.linkedin.com/in/ashleighclemmens,FAIL,,,
+210,Tanner Strickland,Chief of Staff to the CEO,HCF Australia,https://au.linkedin.com/in/tanner-strickland-92ab06214,PASS,1,ICP title match — decision-maker in relevant function,executive-outcomes
+211,Julia Fowler,Head of Provider Solutions,Medibank,https://au.linkedin.com/in/fowlerjm,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+212,Jeff Hill,Head of Controls Mastery (Line 2 Risk & Compliance),Medibank,https://au.linkedin.com/in/jeff-hill-56703b54,FAIL,,,
+213,Alana Russ,Finance Business Partner - ahm Health Insurance,Medibank,https://www.linkedin.com/in/alana-russ-08081aa3/,FAIL,,,
+214,JULIEN D.,Head of Procurement Excellence,Bupa Australia,https://au.linkedin.com/in/julien-d-b77219180,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+215,Elaine Matta,Quality Partner,Bupa Australia,https://au.linkedin.com/in/elaine-matta-b40b11312,FAIL,,,
+216,Ryan Ala,Digital Product Manager,Bupa Australia,https://au.linkedin.com/in/glenn-sheffield,PASS,3,ICP title match — decision-maker in relevant function,product-integration
+217,Lucienne Flynn,IT Business Partner | Business Analyst,HCF Australia,https://au.linkedin.com/in/lucienne-flynn-63251a100,FAIL,,,
+218,John Lim,Finance Business Partner - Amplar Health,Medibank,https://au.linkedin.com/in/williamlim300619,FAIL,,,
+219,Samantha Tonkin,Head Of Finance,Medibank,https://au.linkedin.com/in/samantha-tonkin-105456142,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+220,Nicola Geddes,Initiative Owner,Bupa Australia,https://au.linkedin.com/in/nicola-geddes-8466438b,FAIL,,,
+221,Chloe Mitchell (Harkness),Senior Manager - Group Strategy,Medibank,https://au.linkedin.com/in/chloe-mitchell-harkness-b0521910,PASS,3,ICP title match — decision-maker in relevant function,digital-health-strategy
+222,Anoop Mohan,Program Director - Regulatory Uplift,Medibank,https://au.linkedin.com/in/amohan00,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+223,Conor Condell,Head of Program Management,Medibank,https://au.linkedin.com/in/conor-condell-7669a2a5,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+224,Deborah Jacobs,Customer Retention Principal,Bupa Australia,https://au.linkedin.com/in/deborah-jacobs,PASS,3,ICP title match — decision-maker in relevant function,member-retention
+225,Crystal Townsend,Quality Education Manager,Bupa Australia,https://au.linkedin.com/in/crystal-townsend-a3b311373,FAIL,,,
+226,Rachael Harwood,Co-Chair RAISE Disability and Inclusion ERG,HCF Australia,https://au.linkedin.com/in/rachael-harwood-2a7a6a1a,FAIL,,,
+227,James Brigham,Head of Risk Management,HCF Australia,https://au.linkedin.com/in/jamesbrigham,FAIL,,,
+228,Kieran Dang,Chief Medical Officer,Mosh,https://au.linkedin.com/in/kieran-dang,PASS,1,ICP title match — decision-maker in relevant function,clinical-operations
+229,Simon Seiffert,Continuous Improvement & Systems Lead,Medibank,https://au.linkedin.com/in/simonseiffert,FAIL,,,
+230,Nicola Ivory,Squad Lead - Customer Health Navigator,Medibank,https://au.linkedin.com/in/nicola-ivory-b2a3945b,PASS,3,ICP title match — decision-maker in relevant function,clinical-operations
+231,Paul Bonello,Head of Risk Medibank,Medibank,https://au.linkedin.com/in/paul-bonello,FAIL,,,
+232,Phillip L.,Property Design Delivery Manager,Bupa Australia,https://au.linkedin.com/in/hoaqlu,FAIL,,,
+233,Jon Chai,Loyalty Partnerships Manager,HCF Australia,https://au.linkedin.com/in/jchai-,PASS,3,ICP title match — decision-maker in relevant function,digital-health-strategy
+234,Jacqueline H.,Non Executive Director,Medibank,https://au.linkedin.com/in/jacqueline-mernone,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+235,Melvin Kurian,Principal Architect,Bupa Australia,https://www.linkedin.com/in/melvinkurian/,FAIL,,,
+236,Ravikanth Kitchannagari,Branch Manager,HCF Eyecare,https://au.linkedin.com/in/ravikanth-kitchannagari-b5467082,FAIL,,,
+237,Mikaela Salazar,Clinic Coordinator,Bupa Australia,https://au.linkedin.com/in/mikaela-salazar-1b2771294,FAIL,,,
+238,Liam Jansen,Head of Provider Analytics,Medibank,https://au.linkedin.com/in/liampeterjansen,WEAK,,Title has ICP signal but function is analytics/insights/design — influence without clear buying authority,digital-health-strategy
+239,Stuart Barnard,Head of Legal and Compliance/HCF Privacy Officer,HCF Australia,https://au.linkedin.com/in/stuart-barnard-b01842168,WEAK,,"Relevant domain expertise but compliance/risk function — possible privacy stakeholder, not program buyer",data-privacy
+240,Katerina Komis,Senior Subsidised Health Partnerships Manager,Medibank,https://au.linkedin.com/in/katerina-komis,PASS,3,ICP title match — decision-maker in relevant function,clinical-operations
+241,Simon Uzunovski,Director International & Corporate Portfolio,Bupa Australia,https://au.linkedin.com/in/simonuzunovski,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+242,Colin Ryan,Head of Business Operations - Technology APAC,Bupa Australia,https://au.linkedin.com/in/colin-ryan-ab0937126,PASS,2,ICP title match — decision-maker in relevant function,product-integration
+243,Megan Bowen,HSW Partner,Medibank,https://au.linkedin.com/in/bowenmegan,FAIL,,,
+244,Joanne Lee,Corporate Communications Manager,Bupa Australia,https://au.linkedin.com/in/joannekylielee,FAIL,,,
+245,Shannon Orbons,Blua Product Director,Bupa Australia,https://au.linkedin.com/in/shannonorbons,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+246,Nicole Hibbert,Capability & Process Manager,Bupa Australia,https://au.linkedin.com/in/nicole-hibbert-b95355245,FAIL,,,
+247,Shaikh Zama,Branch Manager,HCF Australia,https://au.linkedin.com/in/shaikh-zama-7a001610b,FAIL,,,
+248,Margaret Canavan,Head of Customer Process Improvement,Medibank,https://au.linkedin.com/in/margaretcanavan,PASS,2,ICP title match — decision-maker in relevant function,member-retention
+249,Anthony Joyce FIAA,Head of Capital and Reserving,Medibank,https://au.linkedin.com/in/anthony-joyce-fiaa-17490b11,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+250,Freya Peel,People and Culture Business Partner,HCF Australia,https://au.linkedin.com/in/freya-peel-5b7916127,FAIL,,,
+251,Kylie Simpson,Executive Assistant to the Managing Director,Medibank,https://au.linkedin.com/in/kylie-simpson-10019726,FAIL,,,
+252,Celine Dickson,General Manager - International Business,HCF Australia,https://au.linkedin.com/in/celine-dickson,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+253,Merima Ahmetasevic,Acting Quality Partner,Bupa Australia,https://au.linkedin.com/in/ahmetasevicmerima,FAIL,,,
+254,Virpi Tuite,People & Culture Business Partner,HCF Australia,https://au.linkedin.com/in/virpituite,FAIL,,,
+255,Aimee Mensink,Operational Excellence Partner,Bupa Australia,https://au.linkedin.com/in/aimeemensink,FAIL,,,
+256,Jason Leon,Branch Manager,HCF Australia,https://au.linkedin.com/in/jason-leon-403b1b149,FAIL,,,
+257,Laurel Tennent,Territory Manager,Medibank,https://au.linkedin.com/in/laurel-tennent-3757273b,FAIL,,,
+258,Helen Saunders,Head of Commercial Performance,Medibank,https://au.linkedin.com/in/helen-saunders-8b808426,WEAK,,Title has ICP signal but function is analytics/insights/design — influence without clear buying authority,digital-health-strategy
+259,Natalie Nicoll,Head of Design,Medibank,https://au.linkedin.com/in/natalie-nicoll-41118586,WEAK,,Title has ICP signal but function is analytics/insights/design — influence without clear buying authority,digital-health-strategy
+260,Will Mitchell,Head of Consumer Proposition,Medibank,https://au.linkedin.com/in/will-mitchell-24144845,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+261,Harry Robertson,Chief Financial Officer,HCF Australia,https://www.linkedin.com/in/harryrobertson000/,PASS,1,ICP title match — decision-maker in relevant function,digital-health-strategy
+262,Jeremy Dufner,Head of Work Architecture and Enablement,Medibank,https://www.linkedin.com/in/jdufner/,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+263,Marcos Faria-Silva,"Head of Legal - Technology, Procurement & Spaces",Medibank,https://au.linkedin.com/in/marcos-faria-silva-38a00a26,PASS,2,ICP title match — decision-maker in relevant function,product-integration
+264,Huy Nguyen,Data Scientist,Medibank,https://au.linkedin.com/in/huy-xuan-nguyen,PASS,3,ICP title match — decision-maker in relevant function,technical-integration
+265,Roman Z.,Group Senior Manager • Strategy,Bupa Australia,https://au.linkedin.com/in/roman-z,PASS,3,ICP title match — decision-maker in relevant function,digital-health-strategy
+266,Joslyn Swan,Practice Manager,Bupa Australia,https://au.linkedin.com/in/joslyn-swan-a93225b1,FAIL,,,
+267,Ben Liu,Analytics Manager - Payment Integrity,Medibank,https://au.linkedin.com/in/ben-liu96,WEAK,,Title has ICP signal but function is analytics/insights/design — influence without clear buying authority,digital-health-strategy
+268,Sabrina Goldhahn,Head of Corporate Strategy,HCF Australia,https://au.linkedin.com/in/sabrinagoldhahn,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+269,Naomi Hickey-Humble,Head of Legal Operations,Medibank,https://au.linkedin.com/in/lauren-ziegelaar-806491119,PASS,2,ICP title match — decision-maker in relevant function,operational-scale
+270,Lance Harvey,Finance Business Partner,Medibank,https://au.linkedin.com/in/lance-harvey-417a314a,FAIL,,,
+271,Michael Norton,Head of PHI Operations,Medibank,https://au.linkedin.com/in/michael-norton-64b316116,PASS,2,ICP title match — decision-maker in relevant function,operational-scale
+272,Saroja McDonnell,"Head of Commercial, Delivery & Performance",Bupa Australia,https://au.linkedin.com/in/saroja-mcdonnell,WEAK,,Title has ICP signal but function is analytics/insights/design — influence without clear buying authority,operational-scale
+273,Kate T.,Employee Change & Communications Partner,Medibank,https://au.linkedin.com/in/kate-luxmoore,FAIL,,,
+274,Bryant Da Silva,Head of Operations and Planning,HCF Australia,https://au.linkedin.com/in/bryant-da-silva-4664a631,PASS,2,ICP title match — decision-maker in relevant function,operational-scale
+275,Les Schilling,End User Services Manager,HCF Australia,https://au.linkedin.com/in/les-schilling-1296b049,FAIL,,,
+276,Brian Smith,Manager Growth and Engagement Overseas Partnerships,Medibank,https://au.linkedin.com/in/brian-smith-4692062,PASS,3,ICP title match — decision-maker in relevant function,member-retention
+277,Gabor Devenyi,Continuous Delivery Manager,Bupa Australia,https://au.linkedin.com/in/gabordevenyi,FAIL,,,
+278,Lauren Bartlett,Integration Director,Bupa Australia,https://au.linkedin.com/in/laurenjbartlett,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+279,Natalie Lambie,Pharmacist in Charge,Bupa Australia,https://www.linkedin.com/in/natalie-lambie-7599633b2/,FAIL,,,
+280,Andy Pavalache,VP of Customer,Mosh,https://au.linkedin.com/in/andy-pavalache-0aa4b0180,PASS,2,ICP title match — decision-maker in relevant function,member-retention
+281,Phoebe Aluquin,Integrated Care Partnerships Manager,HCF Australia,https://au.linkedin.com/in/phoebe-aluquin-0485b6178,PASS,3,ICP title match — decision-maker in relevant function,digital-health-strategy
+282,Jeremy Forrester,Chief Technology Officer,qoctor,https://au.linkedin.com/in/jeremy-forrester-5569ba1,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+283,Charbel H.,Head of Financial Wellbeing,Medibank,https://www.linkedin.com/in/charbelmarketing,PASS,2,ICP title match — decision-maker in relevant function,wellness-programs
+284,Bernadette Fallon,Head of Department,HCF Australia,https://au.linkedin.com/in/bernadette-fallon-9518aa133,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+285,Peta Gale,Center Manager,Bupa Australia,https://au.linkedin.com/in/peta-gale-85416985,FAIL,,,
+286,Andrew Kelson,Program Director,HCF Australia,https://au.linkedin.com/in/andrew-kelson-49138997,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+287,Ang Diki Sherpa,Technology Application Owner - Clinical,Bupa Australia,https://au.linkedin.com/in/ang-diki-sherpa-580460344,FAIL,,,
+288,Robin Low,Non Executive Director,HCF Australia,https://au.linkedin.com/in/robin-low-b4b4164,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+289,Sian McConnell,Director of Strategic Projects & Planning,Bupa Australia,https://au.linkedin.com/in/sian-mcconnell-66966824,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+290,David Given,Head of Planning and Reporting,Medibank,https://au.linkedin.com/in/dgiven,WEAK,,Title has ICP signal but function is analytics/insights/design — influence without clear buying authority,digital-health-strategy
+291,Sophie Dutton,Health Policy Manager,Medibank,https://au.linkedin.com/in/sophie-dutton-58721a123,PASS,3,ICP title match — decision-maker in relevant function,clinical-operations
+292,Catherine Hallinan,Non Executive Director,HCF Australia,https://au.linkedin.com/in/catherinehallinan,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+293,Katherine Howson,Clinical Technology Application Owner,Bupa Australia,https://au.linkedin.com/in/katherine-howson-rn,FAIL,,,
+294,David Ung,Enterprise Architect - Healthcare,Bupa Australia,https://au.linkedin.com/in/davidung8,PASS,3,ICP title match — decision-maker in relevant function,clinical-operations
+295,Peter Evans,"Finance Business Partner - JV and Invested Assets, Amplar Health",Medibank,https://au.linkedin.com/in/pevansmelb,FAIL,,,
+296,Francesca Marney,People and Culture Business Partner,HCF Australia,https://au.linkedin.com/in/francesca-marney-792619170,FAIL,,,
+297,Benjamin Ho,Head of Tax,Medibank,https://au.linkedin.com/in/benjamin-ho-6a442985,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+298,Gagan Sandhu,Product Owner,Bupa Australia,https://au.linkedin.com/in/gaganksandhu,FAIL,,,
+299,Prue M.,Head of HealthStrong,Medibank,https://au.linkedin.com/in/prue-m-85700314,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+300,Suja Pillai,Customer Support Manager,InstantScripts,https://au.linkedin.com/in/suja-pillai,FAIL,,,
+301,Chris Carr,Cloud Security Architect,HCF Australia,https://au.linkedin.com/in/chriscarr0416096693,FAIL,,,
+302,Catherine Conte,Head of Privacy Legal,Medibank,https://au.linkedin.com/in/catherineconte,PASS,2,ICP title match — decision-maker in relevant function,data-privacy
+303,James Howgate,Provider Network Manager,Medibank,https://au.linkedin.com/in/james-howgate-699488b,FAIL,,,
+304,Judit Kovacs,National Manager Operational Excellence,Bupa Australia,https://au.linkedin.com/in/judit-kovacs-1267a7169,FAIL,,,
+305,Sarah Luff,Head of Remediation,Bupa Australia,https://au.linkedin.com/in/sarah-luff,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+306,Daniela M.,Manager,HCF Australia,https://au.linkedin.com/in/stephany-daniela-borja-920b68123,FAIL,,,
+307,Lisa Townsend,Branch Manager,HCF Australia,https://au.linkedin.com/in/lisa-townsend-31a54660,FAIL,,,
+308,Eadaoin Doherty,Head of Product - Ventures,Medibank,https://au.linkedin.com/in/eadaoindoherty,PASS,2,ICP title match — decision-maker in relevant function,product-integration
+309,LEONARD MAPANGA,Business Adminstration Manager,Bupa Australia,https://au.linkedin.com/in/leonard-mapanga-3a54a286,FAIL,,,
+310,Nicole Olaris,Group Reporting Manager,Medibank,https://au.linkedin.com/in/nicole-olaris-51853494,FAIL,,,
+311,Funda A.,MarTech Data Manager,Medibank,https://au.linkedin.com/in/fundaaksan,PASS,3,ICP title match — decision-maker in relevant function,technical-integration
+312,Saul Lazar,Head of Legal - Providers,Medibank,https://au.linkedin.com/in/saul-lazar-4a009522,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+313,Linda Hamlyn,Practice Manager,Medibank Health Solutions,https://au.linkedin.com/in/linda-hamlyn-871630a1,FAIL,,,
+314,Gurdeep Sodhi,Branch Manager,HCF Australia,https://au.linkedin.com/in/gurdeepsodhi,FAIL,,,
+315,Moran Eller O'Neill,Branch Manager,HCF Australia,https://au.linkedin.com/in/moran-eller-o-neill-ba3683118,FAIL,,,
+316,Jasmine N.,Experience Design Manager,Bupa Australia,https://au.linkedin.com/in/nguyen-jasmine,FAIL,,,
+317,Zakir S,Product Owner,HCF Australia,https://au.linkedin.com/in/zakir-s-aa8ba954,FAIL,,,
+318,Caitlin Clarke,"Employee Change and Communications Partner, Amplar Health",Medibank,https://au.linkedin.com/in/caitlin-clarke-615135204,PASS,3,ICP title match — decision-maker in relevant function,digital-health-strategy
+319,Suman Nadimpalli,Head of New Business Delivery,Medibank,https://au.linkedin.com/in/suman-nadimpalli-28973524,PASS,2,ICP title match — decision-maker in relevant function,operational-scale
+320,Andrew Carlson,Head of Customer channels,Medibank,https://au.linkedin.com/in/andrew-carlson-b310281a,PASS,2,ICP title match — decision-maker in relevant function,member-retention
+321,Tara Houkamau,Head of Wellbeing Legal,Medibank,https://au.linkedin.com/in/tarahoukamau,PASS,2,ICP title match — decision-maker in relevant function,wellness-programs
+322,Dimitri Karatsas,Technology Lead,Medibank,https://au.linkedin.com/in/dimitri-karatsas-591355a,PASS,3,ICP title match — decision-maker in relevant function,product-integration
+323,Julie Ellis,Branch Manager,HCF Australia,https://au.linkedin.com/in/julie-ellis-4050a3152,FAIL,,,
+324,Radhika Chabbra,Principal Engineer,Medibank,https://www.linkedin.com/in/radhika-chabbra-24186b62/,FAIL,,,
+325,Heidi Loureiro,Head of Portfolio Management - HI Growth,Bupa Australia,https://au.linkedin.com/in/heidi-loureiro,PASS,2,ICP title match — decision-maker in relevant function,member-retention
+326,Henry Pando,IT Finance Procurement Partner,Medibank,https://au.linkedin.com/in/henry-pando-40b14bb8,FAIL,,,
+327,Hakan Hurriyet,Program Director - Community Lead,HCF Australia,https://au.linkedin.com/in/hakan-hurriyet-47648711b,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+328,Ahmed Umair Hassan,Integration Platform Architect,HCF Australia,https://au.linkedin.com/in/ahmeduhassan,FAIL,,,
+329,Jacqualine Le Gassick,Finance Business Partner,Medibank,https://www.linkedin.com/in/jacqualine-le-gassick-648b8213/,FAIL,,,
+330,"Derek Yung, CFA",Head of Treasury & Investments,Medibank,https://au.linkedin.com/in/derek-yung-cfa-b599b32,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+331,Ambuj Jain,Decisioning Manager,Bupa Australia,https://www.linkedin.com/in/jainambuj/,FAIL,,,
+332,Sahilpreet Kaur,Care Manager,Bupa Australia,https://au.linkedin.com/in/sahilpreet-kaur-015830142,FAIL,,,
+333,Faiza Kazmi,Dentist,HCF Australia,https://au.linkedin.com/in/faizakazmi,FAIL,,,
+334,Alvin Soo,Finance Partner - Amplar & Preventative Health (Secondment),Medibank,https://au.linkedin.com/in/alvin-soo,PASS,3,ICP title match — decision-maker in relevant function,clinical-operations
+335,Craig Parker,Senior Manager - Customer Engagement Delivery,Bupa Australia,https://au.linkedin.com/in/craig-parker-2abb851,PASS,3,ICP title match — decision-maker in relevant function,member-retention
+336,Kate Tebbutt,Legal Director - Dental Optical Hearing and Property,Bupa Australia,https://www.linkedin.com/in/kate-tebbutt-4a9770b1/,FAIL,,,
+337,Gavin Harrison,Western Aust Medical Director,Medibank Health Solutions,https://au.linkedin.com/in/gavin-harrison-b4b4a856,PASS,1,ICP title match — decision-maker in relevant function,clinical-operations
+338,Paul Wilson,Non Executive Director,InstantScripts,https://au.linkedin.com/in/paul-wilson-6a1288145,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+339,Karen Fallon,Manager Griffith NSW Branch,HCF Australia,https://au.linkedin.com/in/karen-fallon-425713117,FAIL,,,
+340,Carmen Bannan,Territory Manager,Medibank,https://au.linkedin.com/in/carmen-bannan-61252a105,FAIL,,,
+341,Christopher Ong,Assistant Manager,Bupa Australia,https://au.linkedin.com/in/christopher-ong-6037a765,FAIL,,,
+342,Gaynor Anderson,Head of Overseas Portfolio and Proposition,Medibank,https://au.linkedin.com/in/gaynor-anderson-03003325,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+343,Laura Kane,Head of Legal - Customer,Medibank,https://au.linkedin.com/in/laura-kane-legal,PASS,2,ICP title match — decision-maker in relevant function,member-retention
+344,Jackie Robinson,National Dental Director,Medibank Health Solutions,https://au.linkedin.com/in/jackie-robinson-182a4580,FAIL,,,
+345,Michael Allen,Finance Business Partner - Amplar Health Technology and Change (Projects),Medibank,https://au.linkedin.com/in/michael-allen-88a09645,FAIL,,,
+346,Emma Stroligo,People & Culture Business Partner,HCF Australia,https://au.linkedin.com/in/emma-stroligo-92021894,FAIL,,,
+347,Senad Ameti,Principal Engineer,Medibank,https://au.linkedin.com/in/senad-ameti,FAIL,,,
+348,Ilana Krasny,Business Practice Manager,Bupa Australia,https://au.linkedin.com/in/ilana-krasny-995a98256,FAIL,,,
+349,Weng Tak Poon,Chief Operations Officer,qoctor,https://au.linkedin.com/in/weng-tak-poon-560080137,PASS,1,ICP title match — decision-maker in relevant function,operational-scale
+350,Sai kulkarni,Test Manager,Bupa Australia,https://au.linkedin.com/in/sai-kulkarni-480272229,FAIL,,,
+351,Luis Macedo,Experience Design Manager,Bupa Australia,https://au.linkedin.com/in/luis-macedo,FAIL,,,
+352,Sophie Eddleston,Employee Change & Communications Partner,Medibank,https://au.linkedin.com/in/sophieeddleston,FAIL,,,
+353,Edinson Mejia,Mobile Principal Engineer,Medibank,https://au.linkedin.com/in/edinson-mejia-64a11586,FAIL,,,
+354,Cassandra Labrie,Territory Manager,Medibank,https://au.linkedin.com/in/cassandra-labrie-23952b203,FAIL,,,
+355,Rishi Pasricha,Branch Manager,HCF Australia,https://au.linkedin.com/in/rishipasricha,FAIL,,,
+356,Bruce McCoombe,Group Capital Works Manager,Medibank,https://au.linkedin.com/in/bruce-mccoombe-29746295,FAIL,,,
+357,Daniel C.,Principal Engineer,Medibank,https://au.linkedin.com/in/danielcab,FAIL,,,
+358,King H C.,Store Manager,Bupa Australia,https://www.linkedin.com/in/king-h-c-bba280291/,FAIL,,,
+359,Antoinette Knox,Branch Support Manager,HCF Australia,https://au.linkedin.com/in/antoinetteknox-servicedelivery,FAIL,,,
+360,Allina Inkster,Information Technology Business Partner,HCF Australia,https://au.linkedin.com/in/allina-inkster-83015629,PASS,3,ICP title match — decision-maker in relevant function,product-integration
+361,Yasmeen Farukh,Head of Connected Health Portfolio,Medibank,https://ke.linkedin.com/in/yasmeen-farukh-8a17b5381,PASS,2,ICP title match — decision-maker in relevant function,clinical-operations
+362,Bruce McCoombe,Capital Works Manager,Medibank,https://au.linkedin.com/in/bruce-mccoombe-29746295,FAIL,,,
+363,lovepreet kaur,Practice Manager,HCF Australia,https://au.linkedin.com/in/lovepreet-kaur-920597309,FAIL,,,
+364,Chris Kagiaros,People & Culture Business Partner,Medibank Private,https://au.linkedin.com/in/chris-kagiaros-6552bb14,FAIL,,,
+365,Elva Zhou,Assistant Manager,Medibank,https://au.linkedin.com/in/elva-zhou-5a3194245,FAIL,,,
+366,Mat Hudson,UXC Managed Services,Medibank,https://au.linkedin.com/in/mat-hudson-19906a108,FAIL,,,
+367,Steve Coleman,Business Improvement Manager,Medibank,https://au.linkedin.com/in/steve-coleman-0543922a6,FAIL,,,
+368,Rebecca Simmons,manager,HCF,https://au.linkedin.com/in/rebecca-simmons-2b036364,FAIL,,,
+369,Sherry Green,"Product Manager, Primary Care Technology",Bupa Australia,https://au.linkedin.com/in/sherry-green,PASS,3,ICP title match — decision-maker in relevant function,product-integration
+370,P S.,Case Manager,Medibank,https://au.linkedin.com/in/carmen-deane-a78012b8,FAIL,,,
+371,Ke Lu,Assistant Manager,HCF Australia,https://au.linkedin.com/in/ke-lu-277081102,FAIL,,,
+372,Isaac Ho,Group Strategy Manager,Medibank,https://au.linkedin.com/in/isaac-ho-64a68493,PASS,3,ICP title match — decision-maker in relevant function,digital-health-strategy
+373,Zeki Guler,Principal Engineer,Medibank,https://au.linkedin.com/in/zeki-guler-7975b762,FAIL,,,
+374,Julianne Kelly,Branch Manager,HCF Australia,https://au.linkedin.com/in/julianne-kelly-a872391aa,FAIL,,,
+375,Deborah Gumley,Manager,Medibank,https://au.linkedin.com/in/deborah-gumley-6b077a65,FAIL,,,
+376,GEORGE SAVVIDES,CEO,Medibank,https://au.linkedin.com/in/georgesavvides,PASS,1,ICP title match — decision-maker in relevant function,executive-outcomes
+377,Andrew Chang,CEO Head Quater,Medibank,https://au.linkedin.com/in/andrew-chang-1b901ab7,PASS,1,ICP title match — decision-maker in relevant function,executive-outcomes
+378,Dayan Trott,Health Manager,Medibank Health Solutions,https://www.linkedin.com/in/dayan-trott-40128360/,PASS,3,ICP title match — decision-maker in relevant function,clinical-operations
+379,Paul Higgs,Local Community Leader at Medibank,Medibank,https://au.linkedin.com/in/paul-higgs-77262471,FAIL,,,
+380,jennifer morris,Manager Ezipay,HCF,https://au.linkedin.com/in/jennifer-morris-34ab5091,FAIL,,,
+381,Mithun Prem,Principal Engineer,Medibank,https://au.linkedin.com/in/mithunprem,FAIL,,,
+382,Preet Gill,Retail Store Manager,Medibank,https://au.linkedin.com/in/preet-gill-3807a210b,FAIL,,,
+383,Noura Cheded,Call Centre Manager,HCF,https://www.linkedin.com/in/noura-cheded-498293a2/,FAIL,,,
+384,Sarah Donato,Practice Manager,Medmate,https://au.linkedin.com/in/sarah-donato-061552336,FAIL,,,
+385,Chance Chiera,Head of Payment Integrity,Medibank,https://au.linkedin.com/in/uy-cherrymae,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+386,Dakshnamoorthy Rajendaran,API/Integration Principal Engineer,Medibank,https://au.linkedin.com/in/dakshnamoorthy-rajendaran-0a763833,FAIL,,,
+387,Billy Lau,Product Manager,HCF Australia,https://au.linkedin.com/in/billy-lau-aaa49287,PASS,3,ICP title match — decision-maker in relevant function,product-integration
+388,Julie Crawford,Director Of Operations,Medibank,https://au.linkedin.com/in/julie-crawford-9b7a08248,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+389,Robert Goaley,Non Ex Director,HCF,https://au.linkedin.com/in/robert-goaley-64507643,PASS,1,ICP title match — decision-maker in relevant function,product-integration
+390,Vi Pham,Partnership Manager,Medibank,https://au.linkedin.com/in/vi-pham-5051b717a,PASS,3,ICP title match — decision-maker in relevant function,digital-health-strategy
+391,Don Li,Business Develop Manager,Medibank,https://au.linkedin.com/in/don-li-17141b63,FAIL,,,
+392,Jason Sylver,Assistant Manager,Medibank,https://www.linkedin.com/in/jason-sylver-9840a913b/,FAIL,,,
+393,Peter Sandyford,Manager,HCF,https://au.linkedin.com/in/peter-sandyford-0203682b,FAIL,,,
+394,Amanda Tonner,Team Leader,Medibank Health Solutions,https://au.linkedin.com/in/amanda-tonner-24930571,FAIL,,,
+395,Jo Ramsbotham,Manager,HCF Australia,https://au.linkedin.com/in/jo-ramsbotham-61335421a,FAIL,,,
+396,Belinda Prior,Zone Manager Launceston,Medibank,https://au.linkedin.com/in/belinda-prior-b1133b78,FAIL,,,
+397,Gary Wishart,HSW Business Partner,Medibank,https://au.linkedin.com/in/gary-wishart-918938b2,FAIL,,,
+398,carolyne spies,Business Support Manager,Medibank Health Solutions,https://au.linkedin.com/in/carolyne-spies-28723529,FAIL,,,
+399,Jo-Ann McAllister,Practice Manager,HCF Australia,https://au.linkedin.com/in/jo-ann-mcallister-625112158,FAIL,,,
+400,sheree scott,practice manager,HCF Australia,https://au.linkedin.com/in/sheree-scott-ab63a8155,FAIL,,,
+401,Rebecca Hultink,practice manager,Medibank Health Solutions,https://au.linkedin.com/in/rebecca-hultink-686790100,FAIL,,,
+402,Jackie Brandner,Practice manager,Medibank Health Solutions,https://au.linkedin.com/in/jackie-brandner-830b7184,FAIL,,,
+403,Linda Golub,Practice Manager,Medibank Health Solutions,https://au.linkedin.com/in/linda-golub-30128489,FAIL,,,
+404,Tania Repovac,Zone Manager,Medibank,https://www.linkedin.com/in/tania-repovac-b4111762/,FAIL,,,
+405,Jagath Ratnayake,Zone Manager,Medibank,https://au.linkedin.com/in/jagath-ratnayake-338a2770,FAIL,,,
+406,Garry Guff,Zone Manager,Medibank Private,https://au.linkedin.com/in/garry-guff-2a10aa113,FAIL,,,
+407,Leanne Cossart,Zone Manager,Medibank,https://au.linkedin.com/in/leanne-cossart-a7215471,FAIL,,,
+408,Colin Dobson,Test Manager,Medibank Private,https://au.linkedin.com/in/colin-dobson-11089256,FAIL,,,
+409,Charlie Lee,branch manager,Medibank,https://au.linkedin.com/in/jennifer-vo-phuoc-6b1b5113,FAIL,,,
+410,Dean Cashmore,Branch Manager,HCF Australia,https://www.linkedin.com/in/dean-cashmore-6856181ba/,FAIL,,,
+411,Joe Hong,Retail Centre Manager,Medibank,https://au.linkedin.com/in/joe-hong-3aa744a6,FAIL,,,
+412,Sindi Sihana,Manager,HCF Australia,https://au.linkedin.com/in/sindi-sihana-08ba94377,FAIL,,,
+413,Marg Kilkeary,Regional Manager,Medibank Private,https://au.linkedin.com/in/marg-kilkeary-73407558,FAIL,,,
+414,Mark Rogers,Head Of School,Medibank,https://au.linkedin.com/in/mark-rogers-78058b20b,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+415,Mez Hoy,Pharmacist,Medibank,https://au.linkedin.com/in/mez-hoy-2099a64a,FAIL,,,
+416,Andi Crowe,Manager,Medibank Private,https://www.linkedin.com/in/andi-crowe-a91b6529/,FAIL,,,
+417,Grahame Ferguson,Nursing Manager,Medibank,https://www.linkedin.com/in/grahame-ferguson-44b305342/,FAIL,,,
+418,Nancy Sun,Assistant Store Manager,Medibank,https://au.linkedin.com/in/nancy-sun-25a948a1,FAIL,,,
+419,Harry Walker,Management Team,Medibank,https://au.linkedin.com/in/harry-walker-2b8801180,FAIL,,,
+420,Mary Robson,Practice Manager - Medibank Health Solutions,Medibank,https://au.linkedin.com/in/mary-robson-50898189,FAIL,,,
+421,Brian Loo,General Manager Queensland,Medibank Private,https://au.linkedin.com/in/brian-nathan,PASS,2,ICP title match — decision-maker in relevant function,digital-health-strategy
+422,John Smith,Business Owner,Medibank,https://au.linkedin.com/in/boyd-smith-476940270,FAIL,,,
+423,John Panos,Territory Manager,Medibank,https://au.linkedin.com/in/john-panos-94b534317,FAIL,,,
+424,David Bass,Owner,Medibank Private,https://au.linkedin.com/in/david-bass-b3a1259,FAIL,,,
+425,Sunita Prasad,Manager,HCF,https://au.linkedin.com/in/sunita-prasad-76a37972,FAIL,,,
+426,Alan Gormly,Regional Clinical Director,Medibank Health Solutions,https://au.linkedin.com/in/alan-gormly-bb39b34b,PASS,1,ICP title match — decision-maker in relevant function,clinical-operations
+427,Julie Edwards,Business Projects - Change Management,Medibank Private,https://au.linkedin.com/in/julie-edwards-6070b133,FAIL,,,
+428,Mary Mowle,(Acting) Practice Manager,Medibank,https://au.linkedin.com/in/mary-mowle-04968093,FAIL,,,
+429,Denise Rea,CX Division Manager,Medibank,https://au.linkedin.com/in/denise-rea-487876194,FAIL,,,
+430,colin Kilkolly,Manager,Medibank,https://au.linkedin.com/in/colin-kilkolly-95a124173,FAIL,,,
+431,Amelia Griffith,Team Manager,Medibank Health Solutions,https://au.linkedin.com/in/amelia-griffith-530b2921,FAIL,,,
+432,Kate McConnon,National Medical Director,Medibank Health Solutions,https://au.linkedin.com/in/kate-mcconnon-15072587,PASS,1,ICP title match — decision-maker in relevant function,clinical-operations
+433,Michelle Bradbury,Manager,Bupa Australia,https://au.linkedin.com/in/michelle-bradbury-1b3610383,FAIL,,,
+434,gary farlow,Team manager,Medibank Health Solutions,https://au.linkedin.com/in/gary-farlow-84a9193b,FAIL,,,
+435,Debbie Carter,Manager,Medibank,https://au.linkedin.com/in/debbie-carter-527608168,FAIL,,,
+436,Findlay Blyth,Team Manager,Medibank Private,https://au.linkedin.com/in/findlay-blyth-85699629,FAIL,,,
+437,dolly sudan,Manager,HCF Australia,https://au.linkedin.com/in/dolly-sudan-137a14209,FAIL,,,
+438,Leonie Barritt,Retail Centre Manager Bundaberg,Medibank,https://au.linkedin.com/in/leonie-barritt-794361b7,FAIL,,,
+439,elena Kourbakova,manager,HCF,https://au.linkedin.com/in/elena-kourbakova-b4510923,FAIL,,,
+440,Anna Moras,"Assistant to the General Manger, Business Projects",Medibank Private,https://au.linkedin.com/in/anna-moras-52b23a44,FAIL,,,
+441,Tanja Santangelo,Manager,Medibank,https://au.linkedin.com/in/tanja-santangelo-13314ba0,FAIL,,,
+442,Greg Radford,Outbound Services Manager,Medibank Private,https://au.linkedin.com/in/greg-radford-2a47064,FAIL,,,
+443,Tricia Pincini,Manager,Medibank Health Solutions,https://au.linkedin.com/in/tricia-pincini-44094a5b,FAIL,,,

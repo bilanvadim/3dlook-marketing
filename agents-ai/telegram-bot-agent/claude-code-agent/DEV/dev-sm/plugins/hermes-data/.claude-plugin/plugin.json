@@ -1,0 +1,1 @@
+{ "name": "hermes-data", "description": "database-engineer agent: schema, migrations, RLS, query optimization", "version": "0.1.0", "author": { "name": "Sergiy" } }

@@ -1,0 +1,6 @@
+{
+  "name": "seo-analytics",
+  "description": "SEO measurement: Google Search Console & GA4, rank tracking, impact measurement (before/after with indexation lag), forecasting, reporting & dashboards. Agent seo-analyst + seo-reporting skill.",
+  "version": "0.1.0",
+  "author": { "name": "Sergiy" }
+}

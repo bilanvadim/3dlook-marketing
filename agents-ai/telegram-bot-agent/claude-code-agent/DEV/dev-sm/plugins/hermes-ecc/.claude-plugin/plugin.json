@@ -1,0 +1,6 @@
+{
+  "name": "hermes-ecc",
+  "description": "Vetted adoptions from ECC (everything-claude-code, MIT): silent-failure-hunter (swallowed errors/fail-open), react-reviewer + typescript-reviewer (language-deep review lanes), context-budget & codebase-onboarding skills. See ATTRIBUTION.md.",
+  "version": "0.1.0",
+  "author": { "name": "Sergiy" }
+}

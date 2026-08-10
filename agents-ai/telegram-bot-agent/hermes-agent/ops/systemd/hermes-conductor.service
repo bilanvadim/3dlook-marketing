@@ -1,0 +1,25 @@
+[Unit]
+Description=Hermes Orchestrator Conductor — autonomous worker (Claude Agent SDK → SQLite/libSQL ho_*)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+Environment=HOME=/home/sergiy_prod
+# ~/.local/bin first so the conductor finds the `claude` CLI when a job runs.
+Environment=PATH=/home/sergiy_prod/.local/bin:/usr/local/bin:/usr/bin:/bin
+# State is SQLite/libSQL — no docker/Postgres dependency. conductor-run.sh defaults
+# DATABASE_URL to file:$HOME/.hermes/ho.db; override in the .env for Turso/libSQL.
+EnvironmentFile=-/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev-sm/conductor/.env
+WorkingDirectory=/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev-sm/conductor
+ExecStart=/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/hermes-agent/ops/conductor-run.sh
+Restart=always
+RestartSec=5
+# Cost is not capped by design; the only runaway control is the in-process breaker.
+
+# Installed as a systemd --user service (like hermes-gateway), linger enabled so
+# it survives logout/reboot:
+#   cp hermes-conductor.service ~/.config/systemd/user/
+#   systemctl --user daemon-reload && systemctl --user enable --now hermes-conductor.service
+[Install]
+WantedBy=default.target

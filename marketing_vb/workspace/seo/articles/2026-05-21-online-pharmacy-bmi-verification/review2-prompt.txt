@@ -1,0 +1,76 @@
+You are revising the existing 3DLOOK live article "Online Pharmacy BMI Verification: A 2026 Compliance Guide" based on editorial Review 2. This is a REVISION ON TOP of the current approved final draft — NOT a net-new article.
+
+SCOPE (READ these first):
+- Baseline draft: workspace/seo/articles/2026-05-21-online-pharmacy-bmi-verification/draft-v4-expanded-bmi-verification.md
+- Review 2 comments (verbatim): workspace/seo/articles/2026-05-21-online-pharmacy-bmi-verification/review2-comments.md
+- Reference plain-text Version 2 (for context): workspace/seo/articles/2026-05-21-online-pharmacy-bmi-verification/review2-version2.md
+
+TASK: Apply ALL 19 Review 2 items (items 0 through 18) precisely ON TOP of draft-v4-expanded-bmi-verification.md. Then run editor + publisher passes. Then build a publish pack.
+
+The article should remain a canonical BOFU guide covering BOTH pharmacy order-flow BMI verification and the related telehealth remote BMI verification workflow.
+
+===== ALL EDITORIAL COMMENTS (APPLY VERBATIM) =====
+Read every item in review2-comments.md and apply each one. Key requirements distilled:
+
+0. Follow the General Approach & Language Guardrails for Corporate Content - 3DLOOK. In particular "Plus" must be avoided.
+
+1. Substantiate or soften the opening claims. Statements like "Online pharmacy clinical teams across the UK have been having the same conversation for months", "Patients are using free AI tools to alter photos", "Pharmacists are flagging this as a recurring clinical risk", "The pharmacists raising it are working from documented submission behaviour" must either have a published source or be clearly attributed to 3DLOOK customer conversations. Recommended formulation: "In conversations with UK online pharmacy teams, 3DLOOK has heard growing concerns about patients using generative AI tools to alter body photos submitted during weight-loss medication assessments." Remove "documented submission behaviour" unless documentation can be cited.
+
+2. Reduce absolute and adversarial language. The following are too categorical: "Photo upload has stopped working", "No longer satisfies the evidentiary standard", "Trusting that the content tells the truth", "The manipulation door", "Attacker", "Inflation attempt", "What is verifiably real". Identify limitations of camera-roll uploads WITHOUT implying every upload is unreliable or every patient is attempting fraud. Suggested heading "Why camera-roll uploads provide limited verification". Central formulation: "A camera-roll image can support visual review, but it provides limited evidence about when, how, or by whom the image was created."
+
+3. Remove the Munich Re evidence (insurance underwriting, not pharmacy). Remove "BMI is the second-largest driver of misrepresentation" and "misrepresentation rates of 20% or higher".
+
+4. Remove the KFF paragraph entirely (US employer health-plan coverage, does not support the article's central claim).
+
+5. Reframe Katerina's AI experiment. Remove "the easiest variant for an attacker" and "believable enough to pass at a quick clinical glance". Use: "The experiment demonstrated how quickly generative AI tools can produce plausible altered body images. It did not test whether those images would pass a pharmacy's clinical review."
+
+6. Remove the FDA enforcement example. Keep the GPhC requirement only (Feb 2025 guidance requiring independent verification of weight, height and/or BMI for weight-management medicines). Remove the "move from posture to enforcement" conclusion.
+
+7. Do not present the feature list as a regulatory "minimum standard". Change "The minimum standard for online pharmacy BMI verification in 2026" to "Capabilities to evaluate in a remote BMI verification workflow". Change "the floor a serious eligibility gate has to clear" to "a set of capabilities pharmacies can evaluate according to their clinical and governance requirements."
+
+8. Liveness does not prove identity. Liveness indicates a live person completed capture, not that they are the named patient. Revise "can be traced back to the person who created it" and "a real person is on camera" to: "Liveness checks can help confirm that the capture was completed live rather than reproduced from a static image or prerecorded source. Patient identity verification may require a separate control."
+
+9. Correct clothing-detector claims. Detector classifies/flags clothing fit/bulkiness; it cannot determine patient intent. Replace "baggy-clothing inflation attempt" and "oversized attire used to inflate visual BMI" with: "The clothing detector flags clothing that may reduce the reliability of the scan, allowing the workflow to request a retake or route the session for review."
+
+10. Correct the Smart Scales description. "Smart Scales" is the predicted-weight output, not the cross-check itself. Replace "Smart Scales cross-checks the patient's self-reported weight..." with: "FitXpress can generate a predicted-weight estimate through its Smart Scales capability. Where the workflow also collects self-reported weight, the customer can compare the two values and apply its own mismatch threshold and review protocol."
+
+11. Qualify the audit-record claims. Revise use-case summary to: "Outputs: Predicted weight, BMI calculated using supplied height, 80+ body measurements, and structured session data"; "Role: Server-side body-data verification step"; "Business value: Additional evidence for eligibility review and structured data that can support the pharmacy's documentation workflow". Remove "HIPAA/GDPR-compliant audit trail", "audit-ready evidence collection", guaranteed regulator acceptance, exportable logs (unless functionality confirmed).
+
+12. Correct privacy paragraph. Use: "Images are blurred as part of the privacy-protection workflow and deleted after processing by default. Structured outputs are retained according to the customer's configuration and contractual terms." Also use "FitXpress is HIPAA compliant, with a Business Associate Agreement available on request, and supports data protection aligned to GDPR for EU deployments." Avoid calling an audit trail "HIPAA/GDPR compliant".
+
+13. Remove the HHS breach statistic sentence ("That posture matters in a context where the HHS Office for Civil Rights reported..."). Link directly to the security or technology page instead.
+
+14. Strengthen or remove anonymous customer proof "A leading UK online pharmacy is the live reference." Either provide a name, linked case study, or clearly qualified anonymous example; otherwise use "FitXpress is currently deployed in a UK online pharmacy order flow." Remove "They are the proof that the pattern works..." unless production-scale evidence is published.
+
+15. Remove avoid overclaims from the vendor checklist. For the liveness/quality answer replace "Only the second produces a verification signal a regulator will recognise" with "Liveness provides a different verification signal from image-quality validation and can support the pharmacy's wider verification controls." For the scan-derived-estimate answer replace "A scan-derived estimate that matches the self-report is reassuring evidence" with "The program should define acceptable differences and exception-routing thresholds according to its protocol, taking the expected error range of the estimate into account." Remove "If a vendor cannot answer the first two cleanly, the rest does not matter"; replace with "In-session capture and liveness should be evaluated alongside accuracy, privacy, integration, documentation, and clinical workflow requirements."
+
+16. Remove the repeated CDC paragraph from the telehealth section. Keep the CDC 40% finding once in the telehealth section (where it is accurately qualified) and shorten the earlier discussion. The CDC finding concerns population-level prevalence of severe obesity, not submission accuracy.
+
+17. Shorten the telehealth addition. Section grew beyond 500-800 words and repeats privacy/retention, FitXpress inputs/outputs, CDC evidence, review responsibilities, product boundaries. Keep: (1) When additional verification may be needed, (2) four methods, (3) five-step practical workflow, (4) one concise FitXpress subsection. Shorten the final paragraph covering HIPAA, GDPR, retention, DXA and BIA (they appear elsewhere).
+
+18. Adjust the final CTA. Replace "That is what FitXpress does..." and "audit-ready evidence collection" with: "FitXpress replaces camera-roll uploads with guided live capture and provides predicted weight, calculated BMI, body measurements, and structured session data that pharmacies can integrate into their eligibility-review and documentation workflows."
+
+Also update: "FitXpress does not verify previously uploaded or existing photos; it uses guided live capture".
+
+===== STYLE / CONTENT STANDARDS =====
+- Terminology guardrails (no "objective", "reader", "this article", "by hand", "Plus" as connector, "Let"→"Allow", "So" as connector, corrective negation). NO em dashes (—) anywhere.
+- External source links must be preserved (don't strip). All statistics and research claims link to original sources.
+- FitXpress positioning: structured body-data capture layer, supporting layer, NOT a replacement for clinician review, not a decisioning system. No guaranteed compliance, no diagnosis, no treatment decisions, no fraud detection.
+- Proper internal links up (hub) / sideways / down (product/BQFU) / trust assets.
+- Keep product boundaries: FitXpress is a structured body-data capture layer; it supports review, does not make decisions, does not guarantee compliance.
+- Follow Asseyla style guardrails (see eligible skill in repo).
+
+===== OUTPUT TARGET =====
+Work in the SAME directory: workspace/seo/articles/2026-05-21-online-pharmacy-bmi-verification/
+Produce:
+1. draft-v5-revision2.md  (the complete revised final article with YAML frontmatter; meta_description top to the chosen meta)
+2. changelog-revision2.md  (mapping each of the 19 comments to where it was applied)
+3. publish-package.md  (a brand-complete publish pack: meta title, meta description, URL slug, OG/hero image note, internal link plan, external source list, claims used, frontmatter for CMS)
+
+Do NOT create a new directory. Do NOT move the output elsewhere.
+
+===== CRITICAL EXECUTION RULES =====
+- Execute ALL pipeline phases SYNCHRONOUSLY. Do NOT delegate, spawn, or background anything.
+- Before ending, run ls -la on the output directory and confirm draft-v5-revision2.md, changelog-revision2.md, and publish-package.md all exist. If any are missing, continue working until they exist.
+- Word-count: verify the telehealth section stays within/near the 500-800 word recommendation after shortening (Comment 17) and report the count in the changelog.
+- Confirm zero em dashes and zero "Plus" connectors, zero empty [CONFIRM] placeholders in the final file.

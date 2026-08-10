@@ -1,0 +1,37 @@
+# SearXNG — движок веб-поиска для тулсета web Хермеса.
+# Наружу не смотрит: порт прибит к 127.0.0.1 (см. server-hardening).
+#
+# Конфиг живёт в именованном volume, а НЕ bind-mount'ом из ~/.hermes:
+# домашняя папка 700, и контейнеру (uid 977) в неё не пройти — он падал
+# с "Permission denied: /etc/searxng/settings.yml". Источник истины —
+# ./config/settings.yml на хосте; после правки применить ./apply-settings.sh.
+# Внутри volume файл обязан быть 644: под 600 воркеры granian падали с
+# 'Permission denied' даже при владельце 977. На хосте volume лежит под
+# /var/lib/docker (только root), так что секрет наружу не светится.
+services:
+  searxng:
+    image: searxng/searxng:latest
+    container_name: searxng
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8888:8080"
+    volumes:
+      - hermes-searxng-config:/etc/searxng:rw
+    environment:
+      - SEARXNG_BASE_URL=http://127.0.0.1:8888/
+      - SEARXNG_LIMITER=false
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - SETGID
+      - SETUID
+    logging:
+      driver: json-file
+      options:
+        max-size: "1m"
+        max-file: "1"
+
+volumes:
+  hermes-searxng-config:
+    external: true

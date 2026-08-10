@@ -1,0 +1,158 @@
+context_pack:
+  created: 2026-08-02
+  product: fitxpress
+  track: seo
+  channel: blog
+  profile: company
+  objective: "Top 7 Remote Body Composition Tools for GLP-1 Clinics — net-new MOFU/BOFU listicle, GLP-1 Market cluster, targeting GLP-1 clinics and virtual weight-loss teams evaluating remote body composition tracking tools"
+  target_agent: seo-planner
+
+  company_oneliner: "3DLOOK turns two smartphone photos into 80+ body measurements and a 3D model in under 45 seconds, via API/SDK."
+
+  product_summary: |
+    FitXpress: mobile body scanning for telehealth, GLP-1/weight-loss, insurance, wellness,
+    fitness, and adjacent clinical/care workflows. Positioned as a structured body-data
+    capture layer / remote intake-and-documentation layer / progress-tracking and
+    scan-to-scan comparison layer — never as a replacement for clinician review, DEXA,
+    BIA, or calibrated scales, and never as a medical device.
+
+  approved_claims:
+    - id: FX-001
+      text: "96-97% accuracy vs manual measurements (typical error margin 1.5-2.0 cm)"
+      source: "2025 Accuracy & Repeatability Study"
+    - id: FX-002
+      text: "Scan-to-scan repeatability: <1 cm variance, 95%+ consistency — the differentiator for longitudinal/GLP-1 tracking, distinct from accuracy"
+      source: "2025 Accuracy & Repeatability Study"
+    - id: FX-003
+      text: "Weight estimation via Smart Scales: ±3.5% average error margin (software output, not a physical scale)"
+      source: "FitXpress deck"
+    - id: FX-004
+      text: "Two photos (front + side), full pipeline under 45 seconds"
+      source: "FitXpress product spec"
+    - id: FX-005
+      text: "80+ body measurements per scan"
+      source: "FitXpress product spec"
+    - id: FX-006
+      text: "Body composition outputs: BMI, BMR, body fat %, lean mass, fat mass, essential fat, beneficial fat"
+      source: "FitXpress product spec"
+    - id: FX-007
+      text: "Yazen: 34,000 scans in 2025, weight-loss management support use case"
+      source: "Internal customer data"
+    - id: FX-008
+      text: "HIPAA-compliant (US), GDPR-aligned (EU); AWS S3 SSE-S3 encryption; photos deleted immediately or within 30 days; no personal identifiers processed"
+      source: "FitXpress security commitment / CLAUDE.md §12"
+    - id: FX-009
+      text: "9+ years training data, 150K+ photos, 30K+ 3D scans, 430K+ measurements"
+      source: "FitXpress deck"
+
+  banned_claims:
+    - "most accurate body scanning" / any "most accurate" framing
+    - "medical device" / any FDA-clearance implication
+    - "replaces DEXA / BIA / calibrated scale / clinician review" universally
+    - "guaranteed compliance" or automated fraud/eligibility decisioning
+    - any numeric head-to-head vs InBody, Prism Labs, Withings, or other named tool not in proof-points.md
+    - naming competitors as comparison targets in running prose — compare by category/role, not brand-vs-brand
+    - any number not in approved_claims above
+    - never combine FX-001 (accuracy) and FX-002 (repeatability) into one figure
+
+  banned_words:
+    - leverage, utilize, harness, robust, seamless, comprehensive, delve, navigate (metaphorical), tapestry, realm, unlock, unleash, game-changing, cutting-edge, revolutionary, disrupt
+    - "It's not just X, it's Y"
+    - em-dash in rhetorical constructions
+    - "Furthermore/Moreover/Additionally" at sentence starts
+    - also zero: "objective", "reader", "audience", "this article", "this guide", "by hand", "plus" (connector) — per brief style rules
+
+  tone:
+    voice: "expert, data-driven, practical, no hype — calm, specific, evidence-led B2B, authoritative healthcare-enterprise"
+    length: "SEO listicle, MOFU/BOFU depth — 2500-3200 words"
+    format: "buyer problem → short answer → category breakdown (not vendor-only) → where FitXpress fits → what it does NOT do → comparison table → buyer/ICP fit → FAQ → CTA-by-intent"
+    dont: "no clickbait, no emoji, no generic openers, no crowning one 'best' tool, no bare vendor bake-off"
+
+  voice_fingerprint:
+    - "The reframe move: open with the sharper question — not 'which tool is most accurate?' but 'which tool fits which GLP-1 workflow decision?'"
+    - "Declarative and unhurried; concrete over abstract — every claim carries a number, source, or disclosed limit"
+    - "Compare by role, not by hype: this is comparison content, answer 'which method fits which workflow?' — never 'we win everything'"
+    - "Honest about limits in the same breath as capability; buyer framing (GLP-1 clinics, virtual weight-loss programs), not 'you'-spam outside conversion sections"
+  claims_discipline:
+    - "NEVER: diagnose, make treatment/eligibility decisions, replace clinician/DEXA/BIA/calibrated scale, guarantee compliance, auto-detect fraud, act as standalone decisioning system"
+    - "Position FitXpress AS: one category among several (mobile body-scanning / remote structured-data-capture layer) — explicitly 'not a universal replacement for all tools'"
+  accuracy_framing:
+    - "Never reduce accuracy to one universal number — qualify by decision/reference/protocol/population/tolerance for EACH tool category discussed, not just FitXpress"
+    - "Repeatability written as `< 1 cm`; never combine the accuracy benchmark with the repeatability benchmark in one figure"
+
+  examples:
+    - file: "workspace/seo/articles/glp-1-market-hub/"
+      note: "GLP-1 Market hub (same cluster/parent hub, 2026 refresh) — use for voice cadence, GLP-1 progress-tracking-gap framing, sideways-link pattern, claim-tagging convention (<!-- claim: FX-0xx -->)."
+    - file: "workspace/seo/articles/mobile-body-scanning-patient-engagement/"
+      note: "Adjacent-hub reference for patient-engagement framing without crossing into GLP-1 eligibility."
+    - note: "No prior listicle/comparison-format article exists for this exact vertical — closest structural precedent is `body-scanning-technology-comparison.md` (past-articles/blog) for table/decision-framework structure only."
+
+  competitors_context: |
+    Prism Labs is the primary FitXpress competitor, strong in GLP-1/weight-loss and
+    insurance/population-health narratives. Do not name competitors as comparison targets —
+    compare by category (smart scales, BIA, DEXA, mobile scanning, in-clinic workflows,
+    patient photos, wearables), not brand vs brand. Adjacent category context (tool types,
+    not competitors, to cover honestly): connected/smart scales (single weight + rough
+    composition estimate, no 3D model); BIA devices e.g. InBody-style (in-clinic,
+    hardware-based, not remote/scalable); DEXA (clinical-grade reference method, expensive,
+    not scalable for remote longitudinal check-ins); generic self-tracking apps (no
+    verification layer). FitXpress differentiates on repeatability for longitudinal use,
+    remote/smartphone-only capture, and workflow depth — never on "most accurate."
+
+  icp_context:
+    segment: "Telehealth & GLP-1 / Weight Loss Programs"
+    buyer_persona: "Founder/CEO, Chief Medical Officer/Medical Director, Head of Clinical Operations, Head of Member Engagement/Retention"
+    pain_points:
+      - "Members drop off after onboarding when progress isn't visible; weight alone is not enough"
+      - "Self-report and manual progress photos feel outdated and are easy to misrepresent"
+      - "Small real changes get lost in measurement noise with weak repeatability, especially during rapid GLP-1-driven weight change"
+      - "Fragmented data (self-report + scale + photos) blocks clean longitudinal tracking across 30/60/90-day programs"
+      - "Payers/employer partners increasingly expect measurable, defensible outcomes reporting"
+    hero_message: "Make body progress more visible — before members drop off."
+    segment_hook: "Make body progress visible, repeat check-ins support adherence and retention; repeatability under 1 cm means small real changes are not lost in measurement noise; defensible longitudinal outcomes for payer/employer partners."
+    do_not_say:
+      - "No diagnostic claims; not a DEXA or calibrated-scale replacement"
+      - "No eligibility decisioning; keep separate from UK online-pharmacy BMI compliance — this is a tools-evaluation piece, not a compliance piece"
+
+  content_strategy:
+    hub: "GLP-1 Market"
+    cluster: "Tools / listicle / buyer evaluation"
+    intent: "MOFU/BOFU"
+    action_type: "create-net-new (listicle)"
+    priority: "P0"
+    existing_urls:
+      - "https://3dlook.ai/content-hub/glp-1-market/ — parent hub (2026 refresh in progress, same URL)"
+      - "https://3dlook.ai/content-hub/visual-progress-tracking-glp1-adherence-retention/"
+      - "https://3dlook.ai/content-hub/how-to-measure-body-composition/"
+      - "https://3dlook.ai/content-hub/inbody-vs-3dlook-the-future-of-body-composition-measurement/"
+      - "https://3dlook.ai/content-hub/body-composition-scale/"
+      - "https://3dlook.ai/content-hub/ai-body-scanners-vs-dexa-scans/"
+      - "https://3dlook.ai/content-hub/body-scanner-machines-vs-mobile-3d-body-scan/"
+      - "https://3dlook.ai/content-hub/bia-scan/"
+      - "https://3dlook.ai/content-hub/glp-1-compliance-challenge/"
+      - "https://3dlook.ai/content-hub/beyond-bmi-business/"
+      - "https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/"
+    cannibalization_guardrail: "Do not duplicate Smart Scale vs AI Body Scan, DEXA vs Mobile Body Scanning, or How to Measure Body Composition. This page should answer 'which tools should GLP-1 clinics evaluate?' not 'what is body composition?'"
+    recommendation: "Create as a comparison/listicle targeting GLP-1 clinics, telehealth weight-loss platforms, and medical weight-loss programs. Include categories, not only vendors: smart scales, BIA devices, DEXA access, mobile body scanning, clinic measurement workflows, patient-uploaded photos, wearables. FitXpress positioned as the remote structured body-data layer, not as a universal replacement for all tools."
+    vertical_boundary: "GLP-1 cluster owns medication-supported weight-loss progress tracking, body composition, patient records, clinic workflows, baseline data, and tools for GLP-1 clinics. Do not duplicate GLP-1 market page, Visual Progress Tracking, Beyond BMI, or Online Pharmacy BMI Verification. No diagnostic/treatment/eligibility/underwriting-decision claims; no universal clinician/DEXA/BIA/scale replacement claims; no guaranteed adherence/compliance outcomes; no automatic fraud detection; no medical-device framing; no GLP-1 drug clinical-efficacy claims in our own assertions."
+    internal_link_targets:
+      up:
+        - "https://3dlook.ai/content-hub/glp-1-market/"
+        - "https://3dlook.ai/content-hub/ai-body-data-health-hub/"
+      sideways:
+        - "https://3dlook.ai/content-hub/visual-progress-tracking-glp1-adherence-retention/"
+        - "https://3dlook.ai/content-hub/how-to-measure-body-composition/"
+        - "https://3dlook.ai/content-hub/inbody-vs-3dlook-the-future-of-body-composition-measurement/"
+        - "https://3dlook.ai/content-hub/body-composition-scale/"
+        - "https://3dlook.ai/content-hub/ai-body-scanners-vs-dexa-scans/"
+        - "https://3dlook.ai/content-hub/body-scanner-machines-vs-mobile-3d-body-scan/"
+        - "https://3dlook.ai/content-hub/bia-scan/"
+        - "https://3dlook.ai/content-hub/beyond-bmi-business/"
+        - "https://3dlook.ai/content-hub/glp-1-compliance-challenge/"
+        - "https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/ (link, don't re-explain compliance)"
+      down: "https://3dlook.ai/fitxpress/for-telehealth-and-weight-loss/"
+      trust:
+        - "https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/"
+        - "https://3dlook.ai/legal/ (Privacy FAQ not yet published — link to /legal/ only, do not invent a content-hub FAQ URL)"
+
+  exclusions: null
