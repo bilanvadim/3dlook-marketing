@@ -1,6 +1,8 @@
 {
   "name": "mvb-sm-bridge",
-  "description": "Bridge for the marketing_vb_sm mix. Provides /vbsm-campaign (a single orchestration entry that runs Sergiy's strategy → Vadim's brand-grounded execution teams → Vadim QC + Hermes verify → Sergiy measurement) and the marketing-vb-sm skill defining the blended workflow and system precedence. Enable together with the mvb-* and mkt-* plugins via the marketing_vb_sm profile.",
-  "version": "0.1.0",
-  "author": { "name": "Vadim Bilan + Sergiy" }
+  "description": "Bridge for the marketing_vb_sm mix. Provides /vbsm-campaign (Sergiy's strategy → execution DELEGATED to Vadim's own entry points /new-article, /post-from-article, /outbound and his orchestrator → Vadim's brand+QC gate and Hermes verify → measurement) and the marketing-vb-sm skill with the full precedence table. v0.2.0 stopped hardcoding his agent chain: it went stale as his system grew from 21 to 28 agents and deprecated /weekly-posts, silently skipping his editor and publisher. Enable together with the mvb-* and mkt-* plugins via the marketing_vb_sm profile.",
+  "version": "0.2.0",
+  "author": {
+    "name": "Vadim Bilan + Sergiy"
+  }
 }
