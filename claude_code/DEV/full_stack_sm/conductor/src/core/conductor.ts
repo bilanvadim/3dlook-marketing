@@ -17,6 +17,8 @@
  * depends only on our normalized Event type, which is unit-tested.
  */
 import { createHash } from 'node:crypto';
+import { execFile } from 'node:child_process';
+import { promisify } from 'node:util';
 import { query } from '@anthropic-ai/claude-agent-sdk';
 import { Store, Job, Step } from './store';
 import { evaluate, initState, BreakerState, BreakerLimits, DEFAULT_LIMITS, KIND_MIN_TURNS, Event } from './breaker';
@@ -294,9 +296,30 @@ async function notifyEscalationWaiting(
     `still waiting on escalation #${escId} (${reason}) — ${mins} min, buttons above still work`);
 }
 
+/** Pre-run recovery point. autocommit.py deliberately skips main/master and this repo
+ * works on main, so an autonomous run had nothing to roll back to. The pattern guards stop
+ * an `rm -rf`, but a delete inside an allowed python3 script is invisible to them — only a
+ * snapshot taken before the agent starts covers that. Writes refs/hermes/snapshots/job-<id>
+ * without touching HEAD, the branch, the index or the working tree. Never fatal: a job must
+ * still run if the snapshot fails. */
+async function snapshotWorkTree(job: Job): Promise<void> {
+  const script = process.env.HO_SNAPSHOT_SH
+    ?? (process.env.HERMES_REPO_ROOT ? `${process.env.HERMES_REPO_ROOT}/hermes_agent/ops/conductor-snapshot.sh` : '');
+  if (!script) { console.warn(`[snapshot] job ${job.id}: no HERMES_REPO_ROOT / HO_SNAPSHOT_SH — skipped`); return; }
+  try {
+    const { stdout } = await promisify(execFile)(script, [job.work_dir, String(job.id)], { timeout: 120_000 });
+    const line = stdout.trim();
+    if (line) console.log(line);
+  } catch (e) {
+    console.warn(`[snapshot] job ${job.id}: ${String(e).slice(0, 200)}`);
+  }
+}
+
 export async function runOneJob(store: Store): Promise<boolean> {
   const job = await store.claimJob(WORKER_ID);
   if (!job) return false; // nothing to do
+
+  await snapshotWorkTree(job);
 
   // PHASE 2: if the job was decomposed into steps, run the per-step verified loop.
   if (await store.hasSteps(job.id)) {
