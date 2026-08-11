@@ -1,0 +1,2103 @@
+first_name,last_name,company,title,message_1,message_2,campaign_tag,linkedin_url
+"Alberto","Villarreal","Tonal","Senior Director / Head of Product Design (ID, UX, UXR)","Hi Alberto,
+
+Circling back now that we're connected. Tonal's pitch is AI-driven strength training, but from what I've seen, most members still judge progress by the mirror, not the weight stack.
+
+We built FitXpress: two phone photos turn into 80+ measurements and full body composition in under 45 seconds, so members get a real before-after instead of a guess.
+
+Might be worth a quick chat?
+
+Nick","Hi Alberto,
+
+Following up. For a product like Tonal, a fast visual progress check tends to move retention more than another workout metric, and it's easy to underrate until members ask for it.
+
+FitXpress runs at 96-97% accuracy against manual measurements and we don't store personal identifiers, so it's safe to test on member data.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/albertovillarreal"
+"Allison","(King) Gruber, MBA","Personify Health","Director, Strategic Solutions - Ecosystem","Hi Allison,
+
+Saw your background in strategic solutions at Personify Health. A lot of ecosystem partners I talk to want a verified health-data layer without building it themselves.
+
+We built FitXpress, a mobile scanning layer: two phone photos become 80+ body measurements and full body composition in under 45 seconds, available via API/SDK.
+
+Worth a quick chat to explore?
+
+Nick","Hi Allison,
+
+Quick follow-up. For ecosystem partners like Personify Health, the value is usually a verified body-data layer members trust, added without a computer-vision build.
+
+FitXpress runs 96-97% accuracy against manual measurements, is HIPAA-compliant, and processes zero personal identifiers.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/aeking"
+"Andrea","Buch","Hydrow","Senior Director, Production Operations","Hi Andrea,
+
+Quick thought after connecting. Hydrow's hook is immersive rowing plus real coaching feedback, but the one thing rowers still can't see between sessions is how their body is changing.
+
+We built FitXpress: two phone photos give 80+ measurements and full body composition in under 45 seconds, so members get a visual progress read, not just workout stats.
+
+Might be worth a quick chat?
+
+Nick","Hi Andrea,
+
+Following up. For a subscription like Hydrow, a simple way for rowers to see body change between sessions tends to matter more for renewal than another workout metric.
+
+FitXpress runs at 96-97% accuracy against manual measurements and doesn't store personal identifiers, so it holds up for member data.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/andrea-buch"
+"Anna","Savelio","Personify Health","Vice President","Hi Anna,
+
+Noticed your background at Personify Health. Wellbeing platforms at that scale keep running into the same gap: proving program outcomes with more than self-reported numbers.
+
+We built FitXpress, a scanning layer that turns two phone photos into 80+ measurements and full body composition in under 45 seconds, added via API/SDK.
+
+Open to a quick chat?
+
+Nick","Hi Anna,
+
+Quick follow-up. Verified body metrics tend to be the missing data point when platforms like Personify Health try to show real program outcomes, not just engagement.
+
+FitXpress runs 96-97% accuracy against manual measurements, is HIPAA-compliant, and processes zero personal identifiers.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/anna-savelio-156bb7380"
+"Barry","Mosbrucker","Personify Health","Sr Director of Software Engineering","Hi Barry,
+
+Came across your work leading software engineering at Personify Health. Curious how your team thinks about adding verified body-composition data without building the computer vision in-house.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds, HIPAA-compliant end to end.
+
+Worth a quick chat to explore?
+
+Nick","Hi Barry,
+
+Following up on the integration angle. Teams usually care about time to integrate and data handling. FitXpress ships as an API/SDK with SSE-S3 encryption at rest and zero personal identifiers processed.
+
+Accuracy runs 96-97% against manual measurements.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/barrymosbrucker"
+"Berke","D.","Hydrow","Principal Software Engineer","Hi Berke,
+
+Got me thinking after seeing your role at Hydrow. Most engineering teams don't want to own a computer-vision stack just to get body-composition data into the product.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Berke,
+
+Quick follow-up. On the technical side, FitXpress runs at 96-97% accuracy against manual measurements, encrypts at rest with SSE-S3, and processes zero personal identifiers, fitting a compliance-aware architecture.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/bedemiralp"
+"Brian","Peters","iFIT","VP of Data & Analytics","Hi Brian,
+
+Curious about your take, given your data and analytics role at iFIT. A lot of connected-fitness platforms have workout telemetry down cold but still lack a verified body-composition input.
+
+We built FitXpress as an API/SDK: two phone photos become 80+ measurements and full body composition in under 45 seconds, no in-house computer vision needed.
+
+Worth a quick chat to explore?
+
+Nick","Hi Brian,
+
+Following up. For a data function like yours at iFIT, the useful part is structured, trackable body-composition data landing in the same pipeline as the rest of the telemetry.
+
+FitXpress runs 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/brianjpeters"
+"Chelsie","Conaway","Calibrate","Client Experience Manager","Hi Chelsie,
+
+Saw your activity around client experience at Calibrate. GLP-1 members increasingly ask a specific question a few months in: how much of the loss is fat versus muscle.
+
+We built FitXpress: two phone photos give verified body composition, fat percent and lean mass included, in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Chelsie,
+
+Following up. For a program like Calibrate, showing fat-vs-muscle change tends to reassure members more than the scale number alone, especially past month three.
+
+FitXpress runs 96-97% accuracy against manual measurements and is HIPAA-compliant with zero personal identifiers processed.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/chelsie-conaway-690673414"
+"Chris","Getman","Personify Health","Director of Engineering","Hi Chris,
+
+Quick note after seeing your engineering background in healthcare platforms and APIs. Curious how your team is approaching verified body-composition data without an in-house computer-vision build.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds, HIPAA-compliant.
+
+Worth a quick chat to explore?
+
+Nick","Hi Chris,
+
+Following up on the build-vs-buy angle. FitXpress ships as an API/SDK, runs at 96-97% accuracy against manual measurements, encrypts at rest with SSE-S3, and processes zero personal identifiers.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/chris-getman-5bb87054"
+"Christopher","Cotton","Hydrow","Director of Engineering","Hi Christopher,
+
+Spotted something in your engineering background at Hydrow. Connected fitness hardware has telemetry solved, but body-composition data usually still means building or buying computer vision.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Christopher,
+
+Quick follow-up. FitXpress runs at 96-97% accuracy against manual measurements, encrypts at rest with SSE-S3, and processes zero personal identifiers, built for teams that don't want to own the CV stack.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/christopher-cotton-2379"
+"Daniel","Allen","Tonal","Partnership Lead","Hi Daniel,
+
+Thought I'd share, in case helpful. Tonal's partnership pipeline probably hears a lot of hardware and content pitches. The angle I keep seeing work is a data one: verified body-composition change, not another feature.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds, added via API/SDK.
+
+Might be worth a quick chat?
+
+Nick","Hi Daniel,
+
+Following up. For partnerships at a platform like Tonal, a verified body-data layer tends to be an easier "" yes"" than most feature pitches, since it plugs into retention directly.
+
+FitXpress runs 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/daniel-allen-319784177"
+"David","Hays","iFIT","Director of Product Development","Hi David,
+
+Noticed overlap with your product development work at iFIT. Hardware-led fitness platforms tend to have the workout side nailed down, but body-composition tracking is usually still missing or manual.
+
+We built FitXpress: two phone photos give 80+ measurements and full body composition in under 45 seconds, available via API/SDK.
+
+Open to a quick chat?
+
+Nick","Hi David,
+
+Following up. For product development at iFIT, adding a verified body-composition read is usually faster via API than building the computer vision from scratch.
+
+FitXpress runs 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/davidhays1"
+"Doris","Petersen","Tonal","Director of GTM & Revenue Program Management","Hi Doris,
+
+Quick one after connecting. GTM teams at platforms like Tonal are usually looking for a launch story that isn't just another workout feature.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds, so members get a visible progress story worth talking about.
+
+Might be worth a quick chat?
+
+Nick","Hi Doris,
+
+Following up. A verified before-after tends to make for a stronger launch narrative than most fitness features, since members can see it, not just read about it.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/dorismpetersen"
+"Erin","Stein, MS, RDN","Personify Health","Senior Director, Workplace Health & Wellbeing","Hi Erin,
+
+Had a thought after seeing your work in workplace health and wellbeing at Personify Health. Programs at that scale usually rely on self-reported numbers for body outcomes, which makes reporting shaky.
+
+We built FitXpress: two phone photos give verified body composition (fat percent, lean mass, BMI) in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Erin,
+
+Following up. Verified body data tends to hold up better in reporting than self-reported numbers, especially for wellbeing programs under scrutiny.
+
+FitXpress runs 96-97% accuracy against manual measurements and is HIPAA-compliant with zero personal identifiers processed.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/erin-stein-ms-rdn-22a16a4"
+"Geza","Csank","Personify Health","Director, Member Services","Hi Geza,
+
+Quick idea for you, given your member services role at Personify Health. Support teams usually field the "" am I actually progressing"" question a lot, with no good data to point to.
+
+We built FitXpress: two phone photos give members 80+ measurements and full body composition in under 45 seconds, so there's a real answer to point to.
+
+Might be worth a quick chat?
+
+Nick","Hi Geza,
+
+Following up. A verified progress read tends to cut down on the "" is this working"" questions your team fields, since members can check it themselves.
+
+FitXpress runs 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/gcsank"
+"Jacqui","Medel","Echelon","Community Manager","Hi Jacqui,
+
+Caught my eye, your community work at Echelon. Communities like that tend to stay more active when members have something concrete to show off, not just workout streaks.
+
+We built FitXpress: two phone photos give a 3D progress model and full body composition in under 45 seconds, built for exactly that kind of share-worthy moment.
+
+Open to a quick chat?
+
+Nick","Hi Jacqui,
+
+Following up. A visual before-after tends to get shared inside a community more than a streak count, which is useful for a platform like Echelon.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/jacqui-medel-312495199"
+"Jared","Willardson","iFIT","Vice President Of Engineering and Manufacturing","Hi Jared,
+
+Wanted to reach out given your engineering and manufacturing role at iFIT. Hardware teams usually get asked to add a body-tracking feature at some point, without wanting to own a computer-vision build.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Jared,
+
+Following up. If body-composition tracking ever lands on the iFIT roadmap, FitXpress ships as an API/SDK so it doesn't turn into a hardware or CV build.
+
+Accuracy runs 96-97% against manual measurements, zero personal identifiers processed.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/jared-willardson-113a03133"
+"Jennifer","Koster","MyFitnessPal","Director, Content Design","Hi Jennifer,
+
+Had to say hi, given your content design work at MyFitnessPal. MyFitnessPal owns the calorie side well, but the body-composition side, fat versus muscle, is still mostly a manual-entry gap for users.
+
+We built FitXpress: two phone photos give verified body composition in under 45 seconds, a natural companion to logged nutrition.
+
+Worth a quick chat to explore?
+
+Nick","Hi Jennifer,
+
+Following up. Pairing logged nutrition with a verified body-composition read tends to make the "" is this working"" story a lot clearer for users.
+
+FitXpress runs 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/jenniferkoster"
+"Jessica","Barth, MPH","Personify Health","Engagement Manager","Hi Jessica,
+
+This stood out, your engagement management work at Personify Health. Engagement teams usually lean on check-in cadence and messaging, but visible physical progress is the part that's hardest to show.
+
+We built FitXpress: two phone photos give 80+ measurements and full body composition in under 45 seconds, so members can actually see the change.
+
+Might be worth a quick chat?
+
+Nick","Hi Jessica,
+
+Following up. A visible progress read tends to move engagement more than another reminder message, especially a few months into a program.
+
+FitXpress runs 96-97% accuracy against manual measurements and is HIPAA-compliant with zero personal identifiers processed.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/barth"
+"John","Christie","Tonal","Director, Applied Training Science","Hi John,
+
+Made me think, your applied training science work at Tonal. Training methodology gets a lot of attention, but proving the physical result to the member is usually still just a scale number.
+
+We built FitXpress: two phone photos give a 3D progress model and full body composition in under 45 seconds.
+
+Open to a quick chat?
+
+Nick","Hi John,
+
+Following up. Pairing training science with a verified progress read tends to make the "" the program works"" case a lot more concrete for members.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/johnchristierd"
+"John","LaPresto","Personify Health","Sr. Manager Member Services and Operational Governance","Hi John,
+
+Couldn't help but ask, seeing your operational governance role at Personify Health. Member services teams usually hear "" am I making progress"" a lot, without much objective data to answer with.
+
+We built FitXpress: two phone photos give 80+ measurements and full body composition in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi John,
+
+Following up. A verified progress read tends to reduce the volume of "" is this working"" tickets your team fields, since members can check it themselves.
+
+FitXpress runs 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/johnlapresto"
+"Joshua","Naylor","iFIT","Director UX Design","Hi Joshua,
+
+Saw the news around iFIT's product line and figured I'd reach out. UX teams keep pushing personalization further, but the progress visualization piece is usually still a static chart.
+
+We built FitXpress: two phone photos give a 3D progress model and full body composition in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Joshua,
+
+Following up. A 3D before-after tends to be a more compelling design surface than a line chart, and it's the kind of detail that shows up in retention.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/joshuaanaylor"
+"Julie","Doyle, MD MSCP","Found","Medical Director","Hi Julie,
+
+Quick reaction to your work in metabolic medicine and body composition at Found. The fat-versus-muscle question keeps coming up for GLP-1 patients a few months into treatment.
+
+We built FitXpress: two phone photos give verified body composition, fat percent and lean mass included, in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Julie,
+
+Following up. A verified fat-versus-muscle read tends to support exactly the clinical conversations you're describing at Found, without adding visit burden.
+
+FitXpress runs 96-97% accuracy against manual measurements and is HIPAA-compliant with zero personal identifiers processed.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/julie-doyle-md-mscp-745981385"
+"Kade","Cox","iFIT","Embedded Software Architect","Hi Kade,
+
+Circling back after connecting. Embedded software work at iFIT probably doesn't leave much room to also build a computer-vision pipeline for body tracking.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Kade,
+
+Following up. FitXpress ships as an API/SDK so a body-composition feature doesn't turn into an embedded computer-vision project.
+
+Accuracy runs 96-97% against manual measurements, zero personal identifiers processed.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/kade-cox-10a15844"
+"Kate","Maxwell","MyFitnessPal","VP, Partnerships","Hi Kate,
+
+Saw your post history around partnerships at MyFitnessPal. A body-composition data partner is a slightly different pitch than most content or media deals, so figured I'd flag it.
+
+We built FitXpress: two phone photos give verified body composition in under 45 seconds, available via API/SDK.
+
+Open to a quick chat?
+
+Nick","Hi Kate,
+
+Following up. For a partnerships seat at MyFitnessPal, a verified body-data layer tends to be a cleaner "" yes"" than most content deals, since it plugs straight into product.
+
+FitXpress runs 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/maxwellkate"
+"Katie","(Johnstone) McLeod","Personify Health","Director of User Experience","Hi Katie,
+
+Quick thought, your UX work at Personify Health. Data-grounded design usually runs into the same wall on body tracking: no clean visual for members to see change over time.
+
+We built FitXpress: two phone photos give a 3D progress model and full body composition in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Katie,
+
+Following up. A 3D progress model tends to give UX a much stronger surface to design around than a static number.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/kjohnstone"
+"Khem","K.","Personify Health","Principal Product Manager","Hi Khem,
+
+Noticed your background building the health navigation platform at Personify Health. At that scale, verified body metrics tend to be the missing input for proving member outcomes.
+
+We built FitXpress: two phone photos give 80+ measurements and full body composition in under 45 seconds, via API/SDK.
+
+Worth a quick chat to explore?
+
+Nick","Hi Khem,
+
+Following up. For a navigation platform at Personify Health's scale, a verified body-data layer tends to strengthen the outcomes story you report to employer and health-plan clients.
+
+FitXpress runs 96-97% accuracy against manual measurements, zero personal identifiers processed.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/khemarey"
+"Lushi","Li","MyFitnessPal","Senior Director of Engineering, Core Experience","Hi Lushi,
+
+Came across your work leading core experience engineering at MyFitnessPal. Curious how the team is thinking about a body-composition data layer to complement the calorie side.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Lushi,
+
+Following up. FitXpress ships as an API/SDK, so a body-composition feature doesn't need a dedicated computer-vision team to ship.
+
+Accuracy runs 96-97% against manual measurements, zero personal identifiers processed.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/lushi-li"
+"Manuela","Beeck Disston","Found","Creative Operations Director","Hi Manuela,
+
+Got me thinking, your creative operations work at Found. GLP-1 program messaging usually leans on testimonials, when a verified progress visual would carry more weight.
+
+We built FitXpress: two phone photos give a 3D progress model and full body composition in under 45 seconds.
+
+Open to a quick chat?
+
+Nick","Hi Manuela,
+
+Following up. A verified before-after tends to be a stronger creative asset than a testimonial, especially for a GLP-1 program like Found's.
+
+FitXpress runs at 96-97% accuracy against manual measurements and is HIPAA-compliant with zero personal identifiers processed.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/manuelabeeck"
+"Mark","Pemberton","iFIT","Senior Director, Information Technology","Hi Mark,
+
+Curious about your take, leading IT and cloud platforms at iFIT. Adding a body-composition feature usually raises the "" build or buy the computer vision"" question fast.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Mark,
+
+Following up. FitXpress runs as an API/SDK, encrypts at rest with SSE-S3, and processes zero personal identifiers, built to slot into an existing cloud platform strategy.
+
+Accuracy runs 96-97% against manual measurements.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/mark-pemberton-7a243a1"
+"Michael","Moore","Ladder","Director Of Engineering","Hi Michael,
+
+Quick note. Running the whole Ladder backend solo means you likely think hard about what to build versus buy, and body-composition tracking is a classic buy decision.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Michael,
+
+Following up. FitXpress ships as an API/SDK, so it skips the computer-vision build entirely and drops straight into Ladder's existing backend.
+
+Accuracy runs 96-97% against manual measurements, zero personal identifiers processed.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/mikeemoore"
+"Molly","Ritterbeck","Tonal","Vice President, Content","Hi Molly,
+
+Spotted something in your content leadership at Tonal. Workout content keeps members coming back, but the piece that's usually missing is proof the training is actually changing their body.
+
+We built FitXpress: two phone photos give a 3D progress model and full body composition in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Molly,
+
+Following up. Pairing content with a verified progress read tends to make the "" the program works"" story land harder for Tonal members.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/molly-ritterbeck-76291714"
+"Nathan","Davis","iFIT","Director, Technical Program Management","Hi Nathan,
+
+Thought I'd share, in case helpful given your technical program work at iFIT. A body-composition feature usually turns into a multi-quarter program if it means building computer vision internally.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Nathan,
+
+Following up. FitXpress ships as an API/SDK, which usually keeps a body-composition feature to weeks of integration instead of a multi-quarter build.
+
+Accuracy runs 96-97% against manual measurements, zero personal identifiers processed.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/nathan-davis-14192928"
+"Nick","Bragg","Personify Health","Director of Marketing Operations","Hi Nick,
+
+Noticed overlap in our first names and your marketing operations role at Personify Health. Wellbeing programs at that scale usually need cleaner proof points for their outcomes reporting.
+
+We built FitXpress: two phone photos give verified body composition in under 45 seconds, added via API/SDK.
+
+Open to a quick chat?
+
+Nick","Hi Nick,
+
+Following up. Verified body metrics tend to strengthen the outcomes data marketing ops ends up reporting on for programs like Personify Health's.
+
+FitXpress runs 96-97% accuracy against manual measurements, HIPAA-compliant, zero personal identifiers processed.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/nickbraggmarketing"
+"Nick","P.","Personify Health","Director, Member Services","Hi Nick,
+
+Quick one, fellow Nick. Customer service teams at wellbeing platforms like Personify Health tend to hear a lot of "" am I making progress"" questions with no clean data to answer.
+
+We built FitXpress: two phone photos give 80+ measurements and full body composition in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Nick,
+
+Following up. A verified progress read tends to cut down on the "" is this working"" volume your support team handles.
+
+FitXpress runs 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/nick-pantaleo1"
+"Nicole","Theroux, B.S., MBA","Personify Health","Sr. Director Content Operations","Hi Nicole,
+
+Had a thought given your content operations work in wellbeing at Personify Health. Health-behavior content usually leans on tips and testimonials, when a verified progress visual carries more weight.
+
+We built FitXpress: two phone photos give a 3D progress model and full body composition in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Nicole,
+
+Following up. A verified before-after tends to outperform a testimonial for showing that behavior change is actually working.
+
+FitXpress runs at 96-97% accuracy against manual measurements and is HIPAA-compliant with zero personal identifiers processed.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/nicole-theroux-b-s-mba-008379a"
+"Owain","Moss","MyFitnessPal","Sr. Engineering Manager | Ads & CalAI","Hi Owain,
+
+Quick idea for you, given your engineering work on Ads and CalAI at MyFitnessPal. The nutrition side of the app is well covered; body composition is still the harder data gap.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Owain,
+
+Following up. FitXpress ships as an API/SDK, so body composition can sit alongside CalAI's food-recognition pipeline without a separate CV build.
+
+Accuracy runs 96-97% against manual measurements, zero personal identifiers processed.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/owain-moss-020a7039"
+"Ralph","Gifford","Personify Health","Director, Data Analysis","Hi Ralph,
+
+Caught my eye, your data analysis and technical services work at Personify Health. Verified body metrics tend to be the one clean data source missing from most wellbeing reporting.
+
+We built FitXpress: two phone photos give 80+ measurements and full body composition in under 45 seconds, via API/SDK.
+
+Open to a quick chat?
+
+Nick","Hi Ralph,
+
+Following up. A structured body-composition data feed tends to plug cleanly into the kind of reporting pipelines your team already runs at Personify Health.
+
+FitXpress runs 96-97% accuracy against manual measurements, zero personal identifiers processed.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/ralphgifford4"
+"Rebecca","Sliter","MyFitnessPal","Senior Director of Engineering, Monetization and Market Expansion","Hi Rebecca,
+
+Wanted to reach out, your engineering work on monetization and market expansion at MyFitnessPal. New verticals usually need a differentiated feature to justify the launch, not just another tracker.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Rebecca,
+
+Following up. Verified body composition could be a fitting greenfield vertical for MyFitnessPal, and FitXpress ships as an API/SDK so it doesn't need a dedicated build team.
+
+Accuracy runs 96-97% against manual measurements.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/rebecca-sliter-1670bb25"
+"Rick","Hoobler","iFIT","VP of Design","Hi Rick,
+
+Had to say hi, your design leadership at iFIT. AI-native design is the focus right now, but the progress-visualization surface is usually still a flat chart.
+
+We built FitXpress: two phone photos give a 3D progress model and full body composition in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Rick,
+
+Following up. A 3D progress model tends to give a design team a far richer surface to build the member experience around than a static chart.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/ricky-hoobler-ux-design-leadership"
+"Sebastian","Frohm","Calibrate","Director of Engineering","Hi Sebastian,
+
+This stood out, your engineering leadership at Calibrate. GLP-1 platforms increasingly need a body-composition data source, and that usually starts as an engineering build-or-buy call.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Sebastian,
+
+Following up. FitXpress ships as an API/SDK, HIPAA-compliant, so a body-composition feature at Calibrate wouldn't need a dedicated computer-vision team.
+
+Accuracy runs 96-97% against manual measurements.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/sebastianfrohm"
+"Subba","R.","Personify Health","Director, Platform Engineering","Hi Subba,
+
+Made me think, your platform engineering role at Personify Health. Platform teams at that scale usually want a body-data feature that's a clean service call, not a new internal system.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Subba,
+
+Following up. FitXpress ships as an API/SDK with SSE-S3 encryption at rest, so it should slot in cleanly next to your existing services.
+
+Accuracy runs 96-97% against manual measurements, zero personal identifiers processed.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/subba-ravilisetty"
+"Taylor","Marden","Fitbod","Staff Product Manager","Hi Taylor,
+
+Couldn't help but ask, your consumer product background at Fitbod. AI-driven programming adapts every workout, but body composition is usually still something users have to guess at.
+
+We built FitXpress: two phone photos give verified body composition in under 45 seconds, added via API/SDK.
+
+Might be worth a quick chat?
+
+Nick","Hi Taylor,
+
+Following up. Pairing Fitbod's adaptive programming with a verified body-composition read closes a data gap that's currently just a user guess.
+
+FitXpress runs 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/taylorpagefoley"
+"Tim","Wernicke","Personify Health","Director of Software Engineering","Hi Tim,
+
+Saw the news around Personify Health's platform growth and figured I'd reach out. Software teams at that scale usually don't want to own a computer-vision build just for a body-tracking feature.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds.
+
+Open to a quick chat?
+
+Nick","Hi Tim,
+
+Following up. FitXpress ships as an API/SDK, encrypts at rest with SSE-S3, and processes zero personal identifiers, so it fits a HIPAA-aware architecture.
+
+Accuracy runs 96-97% against manual measurements.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/tim-wernicke-6a23b01a"
+"Tyler","Miller","Personify Health","Director, Campaign Operations","Hi Tyler,
+
+Quick reaction to your campaign operations work at Personify Health. Campaigns around wellbeing outcomes usually lean on self-reported numbers, which is a soft spot in the story.
+
+We built FitXpress: two phone photos give verified body composition in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Tyler,
+
+Following up. Verified body data tends to give campaign messaging a sturdier proof point than a self-reported number.
+
+FitXpress runs 96-97% accuracy against manual measurements and is HIPAA-compliant with zero personal identifiers processed.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/tylerstephenmiller"
+"Zach","Selby","Hydrow","Director of Architecture, Digital Platforms","Hi Zach,
+
+Circling back after connecting. Enterprise architecture work at Hydrow probably means you get asked about "" build or buy"" a lot, and body-composition tracking is a good candidate for buy.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Zach,
+
+Following up. FitXpress ships as an API/SDK, so a body-composition feature stays a service integration rather than a new internal platform.
+
+Accuracy runs 96-97% against manual measurements, zero personal identifiers processed.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/zachselby"
+"robin","dick","Future","Art Director","Hi Robin,
+
+Saw your post about art direction at Future and figured I'd say hi. Coaching apps like Future usually rely on photos and testimonials for progress, when a verified 3D read would be sharper.
+
+We built FitXpress: two phone photos give a 3D progress model and full body composition in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Robin,
+
+Following up. A verified 3D progress model tends to give creative a much stronger asset than a before-after photo pair.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/robin-dick-baa6352"
+"wanda","williams","Future","Director","Hi Wanda,
+
+Quick note after connecting at Future. Coaching apps in this space usually need a sharper way to show a member's body is actually changing, beyond a coach's notes.
+
+We built FitXpress: two phone photos give 80+ measurements and full body composition in under 45 seconds.
+
+Open to a quick chat?
+
+Nick","Hi Wanda,
+
+Following up. A verified progress read tends to back up a coach's notes with something the member can see for themselves.
+
+FitXpress runs 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 10 min, if useful? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/wanda-williams-a32a82117"
+"Alice","Sykes","Found","Senior Director of Product, Growth","Hi Alice,
+
+Saw your growth-product work at Found, especially the Ozempic prescribing launch. GLP-1 users increasingly ask how much of the loss is fat versus muscle, past the first few months.
+
+We built FitXpress: two phone photos give verified body composition, fat percent and lean mass included, in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Alice,
+
+Following up. A verified fat-versus-muscle read tends to be the retention lever growth teams reach for once weight loss alone stops being the whole story.
+
+FitXpress runs 96-97% accuracy against manual measurements and is HIPAA-compliant with zero personal identifiers processed.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/alice-sykes-6b24782a"
+"Amanda","Boatright","Personify Health","Vice President of Demand Generation","Hi Amanda,
+
+Quick thought given your health and wellbeing marketing background, now leading demand gen at Personify Health. A lot of wellbeing platforms are still proving outcomes with self-reported numbers.
+
+We built FitXpress: two phone photos become 80+ body measurements and full body composition, fat percent and lean mass included, in under 45 seconds. It drops into the member profile via API/SDK.
+
+Might be worth a quick chat?
+
+Nick","Hi Amanda,
+
+Following up. For demand gen at Personify Health's scale, a verified body-data layer tends to make the outcomes story in your marketing a lot more credible than self-reported change.
+
+FitXpress runs at 96-97% accuracy against manual measurements, is HIPAA-compliant, and processes zero personal identifiers, so it holds up for member health data.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/amandaboatright"
+"Becca","Capell Nielsen","iFIT","Senior Director, Subscription Experience AND Head of Sports Science","Hi Becca,
+
+Curious about your take, owning subscription growth and retention strategy at iFIT. Members usually stay when they can see the training is actually working, not just when the workouts are good.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds, giving members a real visual progress read tied straight to retention.
+
+Worth a quick chat to explore?
+
+Nick","Hi Becca,
+
+Following up. For subscription retention at iFIT's scale, a verified progress model tends to move the churn curve more than another workout variant, especially past the first few months.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/becca-capell-000"
+"Brad","Herr","Echelon","CEO","Hi Brad,
+
+Saw your post about where Echelon is headed. Connected fitness hardware is broad now, and the piece I keep seeing platforms miss is a simple way for members to see their body actually changing.
+
+We built FitXpress: two phone photos give 80+ measurements and full body composition in under 45 seconds, a visible progress story that's hard for competitors to fake.
+
+Might be worth a quick chat?
+
+Nick","Hi Brad,
+
+Following up. A visible before-after tends to be a stronger retention lever for a platform like Echelon than another hardware refresh.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers, and there's a 200-request free trial if you want to test it on a cohort first.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/brad-herr-0354b723"
+"Federico","Locatelli","iFIT","Senior Director User Engagement & Retention","Hi Federico,
+
+Came across your work owning user engagement and retention at iFIT. Curious how the team is thinking about visible progress as a lever, given how much churn tends to trace back to lost motivation.
+
+We built FitXpress: two phone photos become a 3D progress model and full body composition in under 45 seconds, built for exactly that motivation gap.
+
+Worth a quick chat to explore?
+
+Nick","Hi Federico,
+
+Following up. Loss of motivation is usually the single biggest driver of fitness-app cancellations, and a verified 3D progress view is a direct way to counter it.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/federico-locatelli"
+"Gregory","Stewart","Ladder","Chief Executive Officer","Hi Gregory,
+
+Got me thinking after seeing Ladder's coaching model. Strength apps live or die on whether members can see the program working, and that's usually still a guess between check-ins.
+
+We built FitXpress: two phone photos give 80+ measurements and full body composition in under 45 seconds, a visual answer to "" is this working.""
+
+Might be worth a quick chat?
+
+Nick","Hi Gregory,
+
+Following up. A verified progress read tends to be the differentiator a coaching app like Ladder can't easily copy, since it's not another workout, it's proof.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers. There's also a 200-request free trial to test on a cohort first.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/gregoryfstewart"
+"Heather","Fitzpatrick","Personify Health","Vice President, Member Engagement","Hi Heather,
+
+Noticed your background building omnichannel engagement programs, now VP Member Engagement at Personify Health. Visible physical progress is usually the missing piece in an otherwise smooth member journey.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds, dropping straight into the member profile.
+
+Worth a quick chat to explore?
+
+Nick","Hi Heather,
+
+Following up. For member engagement at Personify Health's scale, a verified progress read tends to close the motivation gap that drives a lot of program drop-off.
+
+FitXpress runs at 96-97% accuracy against manual measurements, is HIPAA-compliant, and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/heather-fitzpatrick-8842725"
+"Jenna","Funk (Christensen)","Hydrow","Director of Digital Products & Ecommerce","Hi Jenna,
+
+Curious about your take on digital products and ecommerce at Hydrow. Immersive rowing plus real coaching feedback is a strong hook, but rowers still can't see how their body is changing between sessions.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds, a natural addition to the digital product line.
+
+Might be worth a quick chat?
+
+Nick","Hi Jenna,
+
+Following up. A visual progress feature tends to fit right into the kind of digital product roadmap you're running at Hydrow, and it's a retention lever, not just a nice-to-have.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/christensenjenna"
+"John","Stellato","Hydrow","Chief Executive Officer","Hi John,
+
+Wanted to reach out given your role leading Hydrow. Connected rowing with real coaching is a strong retention hook, but the piece I keep seeing platforms miss is a visible way to show the body actually changing.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds, built for that exact retention lever.
+
+Worth a quick chat to explore?
+
+Nick","Hi John,
+
+Following up. Visible progress tends to move retention more than another feature, since loss of motivation is usually the top reason fitness subscribers cancel.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers. Happy to set up a 200-request trial first if that's useful.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/john-stellato-332357241"
+"Jonny","Arakelian","Ladder","Co-Founder and Vice President of Operations","Hi Jonny,
+
+Had a thought after seeing your co-founder role at Ladder. Strength coaching apps tend to sell on the programming, but members still judge results by what they can see, not the numbers logged.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds, giving members a real visual answer.
+
+Might be worth a quick chat?
+
+Nick","Hi Jonny,
+
+Following up. A visible progress read tends to be a differentiator for a coaching-led app like Ladder, since it proves the program is working instead of asking members to take it on faith.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/jonny-arakelian-409a7961"
+"Kartik","Khanna","iFIT","VP, AI","Hi Kartik,
+
+Quick note given your AI and platform work at iFIT. Curious how the team is thinking about body-composition as an ML problem, since most teams end up buying that computer vision instead of building it.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Kartik,
+
+Following up on the build-vs-buy angle. FitXpress ships as an API/SDK, so it drops into an existing AI platform without a dedicated computer-vision team.
+
+Accuracy runs 96-97% against manual measurements, HIPAA-compliant, zero personal identifiers processed.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/kartik-khanna-2566848"
+"Kelli","Lentine","Echelon","Vice President Strategic Partnerships","Hi Kelli,
+
+Saw your post about growing Echelon's partnership footprint. Connected fitness hardware is broad, and the partnerships that tend to differentiate a platform are usually data ones, not more content deals.
+
+We built FitXpress: two phone photos give members a real visible progress read, 80+ measurements and full body composition, in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Kelli,
+
+Following up. A verified progress feature tends to be a stronger differentiator for Echelon's growth than another content partnership, since members can see it working.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/kelli-lentine-812b2a3b"
+"Lou","Lentine","Echelon","Chief Executive Officer","Hi Lou,
+
+Curious about your take, having built Echelon into a global connected-fitness platform. AI personalization is table stakes now, but verified physical progress is still the harder story to tell credibly.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds, a defensible way to show members the training is working.
+
+Worth a quick chat to explore?
+
+Nick","Hi Lou,
+
+Following up. A verified progress feature tends to hold up as a differentiator longer than most AI features, since it's proof, not personalization.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers. There's a 200-request free trial if useful for testing on a cohort.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/lou-lentine-6b67736"
+"Mandy","Cooper","MyFitnessPal","Chief Executive Officer","Hi Mandy,
+
+Wanted to reach out now that you're leading MyFitnessPal. The nutrition and calorie side of the app is well covered; the body-composition side, fat versus muscle, is still mostly a manual gap for users.
+
+We built FitXpress: two phone photos become verified body composition in under 45 seconds, a natural companion to logged nutrition.
+
+Might be worth a quick chat?
+
+Nick","Hi Mandy,
+
+Following up. Pairing logged nutrition with verified body composition tends to make the "" is this working"" story a lot clearer for MyFitnessPal users, especially on GLP-1.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/mandy-cooper-886696315"
+"Meredith J.","Harris","Future","Chief Product and Technology Officer","Hi Meredith,
+
+Came across your work building 0 to 1 products across health-tech, now CPTO at Future. Coaching apps sell on human coaches, but body-composition data between check-ins is usually still a gap.
+
+We built FitXpress: two phone photos become a 3D progress model and full body composition in under 45 seconds, available via API/SDK.
+
+Worth a quick chat to explore?
+
+Nick","Hi Meredith,
+
+Following up on the build-vs-buy angle. FitXpress ships as an API/SDK, so a body-composition feature at Future wouldn't need a dedicated computer-vision build.
+
+Accuracy runs 96-97% against manual measurements, zero personal identifiers processed.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/meredithharris"
+"Mike","Fisher","MyFitnessPal","Chief Executive Officer","Hi Mike,
+
+Saw your writing on product leadership and figured I'd reach out now that you're CEO at MyFitnessPal. The calorie side of the app is well covered; body composition, fat versus muscle, is still mostly manual for users.
+
+We built FitXpress: two phone photos become verified body composition in under 45 seconds, a natural companion to logged nutrition.
+
+Might be worth a quick chat?
+
+Nick","Hi Mike,
+
+Following up. Pairing nutrition tracking with verified body composition tends to sharpen the "" is this working"" story for users, especially with GLP-1 adoption rising.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/mike-fisher-3317a8"
+"Pete","McCabe","Personify Health","Chief Executive Officer","Hi Pete,
+
+Quick thought now that you're leading Personify Health. Wellbeing and engagement programs at that scale usually still rely on self-reported numbers to prove outcomes, which is a soft spot.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds, added via API/SDK.
+
+Worth a quick chat to explore?
+
+Nick","Hi Pete,
+
+Following up. Verified body metrics tend to strengthen the outcomes story Personify Health reports to employer and health-plan clients, beyond self-reported change.
+
+FitXpress runs at 96-97% accuracy against manual measurements, is HIPAA-compliant, and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/pete-mccabe-57421b44"
+"Rob","Rebak","Calibrate","Board Director and Chief Executive Officer","Hi Rob,
+
+Noticed your background building value-based, tech-enabled health companies, now CEO at Calibrate. GLP-1 members increasingly ask how much of their loss is fat versus muscle a few months in.
+
+We built FitXpress: two phone photos give verified body composition, fat percent and lean mass included, in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Rob,
+
+Following up. A verified fat-versus-muscle read tends to support exactly the outcomes model Calibrate is built on, without adding visit burden for clinicians or coaches.
+
+FitXpress runs at 96-97% accuracy against manual measurements and is HIPAA-compliant with zero personal identifiers processed.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/rob-rebak-4740223"
+"Scott","Symonds","iFIT","Head of Growth | Paid Media and Lifecycle","Hi Scott,
+
+Curious about your take, running growth across paid media and lifecycle at iFIT. Acquisition is one thing, but the retention lever I keep seeing platforms miss is visible physical progress.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds, a lifecycle moment worth building around.
+
+Worth a quick chat to explore?
+
+Nick","Hi Scott,
+
+Following up. A verified progress moment tends to be a strong lifecycle trigger, tied directly to the churn that loss of motivation usually causes.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/jscottsymonds"
+"Todd","Bartee","Tonal","Chief Executive Officer","Hi Todd,
+
+Wanted to reach out now that you're leading Tonal. AI-driven strength training is the core pitch, but members still tend to judge progress by the mirror, not the weight stack.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds, giving members a real before-after.
+
+Might be worth a quick chat?
+
+Nick","Hi Todd,
+
+Following up. A visible progress feature tends to move retention more than another training mode, since loss of motivation is usually the top reason fitness subscribers cancel.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers. Happy to set up a 200-request trial first if useful.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/todd-bartee-02ab8a13"
+"Troy","Taylor","Tonal","Vice President, Performance Innovation & Healthcare","Hi Troy,
+
+Came across your background spanning Olympic performance and connected fitness, now leading performance innovation and healthcare at Tonal. Verified body-composition tracking sits right at that intersection.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds, general-wellness scoped, not diagnostic.
+
+Worth a quick chat to explore?
+
+Nick","Hi Troy,
+
+Following up. A verified progress read tends to fit the operational, non-clinical positioning that a product like Tonal needs to stay in.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/troy-taylor-4577bb38"
+"Zach","Lebovics","Tonal","Senior Director of Product, Software","Hi Zach,
+
+Quick idea for you, given your product background spanning fitness and insurance software, now at Tonal. Body-composition data sits right at that overlap, verified metrics that matter to both sides.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds, via API/SDK.
+
+Might be worth a quick chat?
+
+Nick","Hi Zach,
+
+Following up. A verified progress feature tends to fit well into a product roadmap like Tonal's, especially given your background bridging fitness and regulated data.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/zachlebovics"
+"Alice","Chen","MyFitnessPal","Senior Director of Marketing","Hi Alice,
+
+Saw your marketing leadership work at MyFitnessPal. The calorie side of the app is well covered; body composition, fat versus muscle, is usually still a manual gap for users, especially on GLP-1.
+
+We built FitXpress: two phone photos become verified body composition in under 45 seconds, a natural companion to logged nutrition.
+
+Worth a quick chat to explore?
+
+Nick","Hi Alice,
+
+Following up. A verified body-composition story tends to give marketing a sharper hook than another calorie feature, especially with GLP-1 adoption climbing.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/alicechen1"
+"Ann-Sophie","S.","Calibrate","Director of Product Management","Hi Ann-Sophie,
+
+Noticed your product management background across healthcare and financial services, now at Calibrate. GLP-1 members increasingly ask how much of the loss is fat versus muscle a few months in.
+
+We built FitXpress: two phone photos give verified body composition, fat percent and lean mass included, in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Ann-Sophie,
+
+Following up. A verified fat-versus-muscle read tends to fit the data-driven product approach you described, without adding visit burden for coaches or clinicians.
+
+FitXpress runs at 96-97% accuracy against manual measurements and is HIPAA-compliant with zero personal identifiers processed.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/annschueppert"
+"Anne Marie","Bessacini","MyFitnessPal","Director, Consumer Insights & UX Research","Hi Anne Marie,
+
+Came across your consumer insights and UX research work at MyFitnessPal. Curious what your research shows about the body-composition gap next to the calorie-tracking experience.
+
+We built FitXpress: two phone photos become verified body composition in under 45 seconds, a natural companion feature to logged nutrition.
+
+Worth a quick chat to explore?
+
+Nick","Hi Anne Marie,
+
+Following up. If your research points to body composition as an unmet need, FitXpress ships via API/SDK, so testing the concept doesn't require a big build first.
+
+Accuracy runs 96-97% against manual measurements, zero personal identifiers processed.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/anne-marie-bessacini-a33a124a"
+"Brianna","Bybee","iFIT","Creative Director","Hi Brianna,
+
+Caught my eye, your creative direction at NordicTrack. Progress storytelling usually leans on before-after photos, when a verified 3D read would be a sharper, harder-to-fake asset.
+
+We built FitXpress: two phone photos become a 3D progress model and full body composition in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Brianna,
+
+Following up. A verified 3D progress model tends to give creative a stronger, more credible asset than a standard before-after photo pair.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/brianna-bybee"
+"Caitlin","Klein","Personify Health","Director, Digital Marketing","Hi Caitlin,
+
+Quick note given your digital marketing leadership at Personify Health. Wellbeing campaigns usually run on self-reported numbers, which is a soft spot when proving program outcomes.
+
+We built FitXpress: two phone photos become verified body composition in under 45 seconds, added via API/SDK.
+
+Worth a quick chat to explore?
+
+Nick","Hi Caitlin,
+
+Following up. Verified body data tends to give digital marketing a sturdier outcomes story than self-reported change, especially for employer and health-plan audiences.
+
+FitXpress runs at 96-97% accuracy against manual measurements, is HIPAA-compliant, and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/caitlin-klein-2a257a39"
+"Chris","Lee","Calibrate","Director of Product Management, Data and Growth","Hi Chris,
+
+Got me thinking, your product background at Amazon and Zynga, now data and growth at Calibrate. Growth loops in weight-management programs tend to break once members stop trusting the scale number alone.
+
+We built FitXpress: two phone photos give verified body composition, fat percent and lean mass included, in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Chris,
+
+Following up. A verified fat-versus-muscle read tends to be a strong growth lever for Calibrate, since it directly answers the question members ask once weight loss slows.
+
+FitXpress runs at 96-97% accuracy against manual measurements and is HIPAA-compliant with zero personal identifiers processed.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/cslee48"
+"Christine","May, Ph.D.","Calibrate","Senior Director Clinical Research","Hi Christine,
+
+Noticed your research background at Noom, now clinical research at Calibrate. Curious how the team is evaluating body-composition data sources for outcome measurement on the GLP-1 side.
+
+We built FitXpress: two phone photos give verified body composition, fat percent and lean mass included, in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Christine,
+
+Following up. A verified fat-versus-muscle read tends to be a useful outcome measure for exactly the kind of behavioral-science evaluation your background points to.
+
+FitXpress runs at 96-97% accuracy against manual measurements and is HIPAA-compliant with zero personal identifiers processed.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/christine-may-ph-d-643bb119"
+"Courtney","Lake","iFIT","Social Media & PR Director","Hi Courtney,
+
+Quick reaction to your earned and owned media work at NordicTrack and iFIT. Progress content usually leans on testimonials, when a verified visual would carry more weight with an audience.
+
+We built FitXpress: two phone photos become a 3D progress model and full body composition in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Courtney,
+
+Following up. A verified before-after tends to outperform a testimonial for earned and owned content, since it's something the audience can actually see.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/courtney-lake-087164117"
+"Elena","Bertrand","Personify Health","Director of Product Marketing","Hi Elena,
+
+This stood out, your product marketing work at Personify Health with an insurance and benefits background. Verified body metrics tend to be the missing proof point in most wellbeing program marketing.
+
+We built FitXpress: two phone photos become verified body composition in under 45 seconds, added via API/SDK.
+
+Worth a quick chat to explore?
+
+Nick","Hi Elena,
+
+Following up. Given your benefits background, a verified body-data layer tends to give product marketing a proof point insurance and employer buyers actually trust.
+
+FitXpress runs at 96-97% accuracy against manual measurements, is HIPAA-compliant, and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/elena-bertrand-09666125"
+"Emily","Paskins","iFIT","Head of Content Programming","Hi Emily,
+
+Made me think, your fitness and adventure content work at iFIT. Content drives engagement, but the piece that's usually missing is proof the training is changing a member's body, not just their habits.
+
+We built FitXpress: two phone photos become a 3D progress model and full body composition in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Emily,
+
+Following up. A verified progress read tends to give content programming a stronger "" it's working"" story than workout variety alone.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/emily-l-paskins"
+"Giustina","Clarence-Smith","MyFitnessPal","Director of Product Management","Hi Giustina,
+
+Couldn't help but ask, your product leadership at MyFitnessPal. The calorie side of the app is well covered; body composition, fat versus muscle, is usually still a manual gap for users on GLP-1.
+
+We built FitXpress: two phone photos become verified body composition in under 45 seconds, a natural companion to logged nutrition.
+
+Might be worth a quick chat?
+
+Nick","Hi Giustina,
+
+Following up. Pairing logged nutrition with verified body composition tends to make the "" is this working"" story clearer for users, especially with GLP-1 adoption rising.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/giustina-clarence-smith-9543a325"
+"Jaimie","Fucillo","Personify Health","VP, Partner Ecosystem","Hi Jaimie,
+
+Saw the news around your move to Personify Health after leading the platform business at Mindbody. Curious how the partner ecosystem is thinking about a verified body-data API as part of the roadmap.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds, shipped via API/SDK.
+
+Worth a quick chat to explore?
+
+Nick","Hi Jaimie,
+
+Following up on the API roadmap angle. FitXpress ships as a clean API/SDK layer, HIPAA-compliant, so it fits alongside an existing partner ecosystem without a big build.
+
+Accuracy runs 96-97% against manual measurements, zero personal identifiers processed.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/jaimie-fucillo"
+"Jamin","G.","Tonal","Director of Product Management, Healthcare Platform","Hi Jamin,
+
+Quick reaction to your path from physical therapy into product, now healthcare platform at Tonal. Musculoskeletal and digital-health tools tend to need objective body data, not just self-reported change.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Jamin,
+
+Following up. Given your clinical background, a verified body-composition read tends to fit the kind of accessible, personalized care tools you're building at Tonal.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/jamin-gorham"
+"Joshua","Shapiro","Tonal","Head of Applied Research","Hi Joshua,
+
+Curious about your take, turning AI research into shipped product at Tonal. Body-composition estimation from two photos is exactly the kind of applied computer-vision problem that's usually faster to license than build.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Joshua,
+
+Following up on the build-vs-buy angle. FitXpress ships as an API/SDK, trained on 9+ years of data, so it saves the research time a from-scratch model would take.
+
+Accuracy runs 96-97% against manual measurements, zero personal identifiers processed.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/joshua-shapiro"
+"Kathleen","Deterling","Hydrow","Director of Product Marketing","Hi Kathleen,
+
+Saw your post about product marketing at Hydrow. Connecting great products to the right audience usually needs a fresh story, and verified body-composition data tends to be a stronger hook than another workout feature.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Kathleen,
+
+Following up. A verified before-after tends to give product marketing at Hydrow a sharper story for both acquisition and renewal messaging.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/kathleenwamser"
+"Kellen","Pirri","iFIT","VP, Head of iFIT GTM and Brand","Hi Kellen,
+
+Noticed your role leading GTM and brand at iFIT. Connected fitness brands increasingly compete on proof of results, not just hardware specs or workout variety.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds, a differentiated brand story members can actually see.
+
+Worth a quick chat to explore?
+
+Nick","Hi Kellen,
+
+Following up. A verified progress story tends to travel further in brand and GTM messaging than another hardware spec, since members can point to it directly.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/kellenp"
+"Lauren","Simonelli","Hydrow","Senior Director of Product Management","Hi Lauren,
+
+Quick note given your product management role at Hydrow. Immersive rowing plus coaching feedback is a strong hook, but rowers still can't see how their body is changing between sessions.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Lauren,
+
+Following up. A visual progress feature tends to fit well into a product roadmap like Hydrow's, and it's a retention lever more than a nice-to-have.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/laurensimonelli"
+"Mandy","Baize-Crane","iFIT","Vice President, Head of NordicTrack Brand & GTM","Hi Mandy,
+
+Wanted to reach out given your commercial and marketing leadership across CPG and tech, now Brand and GTM at NordicTrack. Hardware specs are converging across the category; verified progress is a harder feature to copy.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Mandy,
+
+Following up. A verified progress feature tends to be a more durable brand differentiator than another hardware spec, since it's proof members can point to.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/mandybcrane"
+"Matt","Spence","iFIT","Director of Sales & Growth - Subscriptions","Hi Matt,
+
+Quick idea for you, running subscription sales and growth at iFIT. Acquisition channels get a lot of the attention, but the lever I keep seeing missed is retention through visible progress.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Matt,
+
+Following up. A verified progress feature tends to move the retention side of subscriber value more directly than another acquisition channel test.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/matt-spence-b44798a9"
+"Melissa","Koda","Hydrow","SVP, Customer Experience","Hi Melissa,
+
+Had a thought given your customer experience work bridging product and engineering at Hydrow. LTV and loyalty usually come down to whether members can see the machine is actually working for them.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Melissa,
+
+Following up. A verified progress read tends to be the kind of loyalty-building feature that fits directly into the CX metrics you already own at Hydrow.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/melissakoda"
+"Mike","Maxson","iFIT","Director of Product Marketing","Hi Mike,
+
+Caught my eye, your product marketing path through GoPro and Garmin, now at iFIT. Category launches usually need a differentiated hook, and verified body progress is a harder one for competitors to copy than a hardware spec.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Mike,
+
+Following up. A verified progress feature tends to make for a stronger launch story than another spec upgrade, based on what worked in your past launches too.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/mikemaxson"
+"Molly","Bullington","Personify Health","Director of Partner Marketing","Hi Molly,
+
+Wanted to reach out given your partner marketing role at Personify Health. Partner-facing programs usually benefit from a verified data point they can market alongside, not just engagement stats.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds, available via API/SDK.
+
+Worth a quick chat to explore?
+
+Nick","Hi Molly,
+
+Following up. A verified body-data layer tends to give partner marketing a stronger joint story than engagement metrics alone.
+
+FitXpress runs at 96-97% accuracy against manual measurements, is HIPAA-compliant, and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/molly-bullington-22979945"
+"Nathan","Bruce","Personify Health","Senior Director of Product Delivery","Hi Nathan,
+
+Quick note given your growth-focused product background, now leading product delivery at Personify Health. Verified body metrics tend to be the missing data point when platforms try to prove program ROI.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds, via API/SDK.
+
+Might be worth a quick chat?
+
+Nick","Hi Nathan,
+
+Following up. Given your revenue-focused approach to product, a verified body-data layer tends to strengthen the outcomes case for the portfolio you're running.
+
+FitXpress runs at 96-97% accuracy against manual measurements, is HIPAA-compliant, and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/nathanbruce"
+"Philip","Edsel","Ladder","VP, Brand & Creative","Hi Philip,
+
+Saw your creative work at Ladder and your background with Austin FC. Strength coaching content usually leans on the workout itself, when a verified progress visual would carry more brand weight.
+
+We built FitXpress: two phone photos become a 3D progress model and full body composition in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Philip,
+
+Following up. A verified 3D progress model tends to give brand and creative a stronger asset than another workout demo, especially for a coaching-led app like Ladder.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/philipedsel"
+"Rachel","Holland","iFIT","Director of Consumer Insights","Hi Rachel,
+
+Quick thought given your consumer insights work at iFIT. Curious what the research shows about why members lose motivation between check-ins, since that's usually where subscriptions churn.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds, a visible progress signal for exactly that gap.
+
+Might be worth a quick chat?
+
+Nick","Hi Rachel,
+
+Following up. Loss of motivation tends to be the top driver of fitness-app cancellations, and a verified progress read is a direct way to address it.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/rachel-m-holland"
+"Reshma","Harjani","Personify Health","Vice President, TPA & Navigation Solutions","Hi Reshma,
+
+Noticed your value-based care background in health insurance, now TPA and navigation solutions at Personify Health. Member-facing navigation usually needs a verified data point to route people to the right program.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds, via API/SDK.
+
+Worth a quick chat to explore?
+
+Nick","Hi Reshma,
+
+Following up. Verified body metrics tend to sharpen the routing and reporting layer navigation solutions like yours provide to health-plan clients.
+
+FitXpress runs at 96-97% accuracy against manual measurements, is HIPAA-compliant, and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/reshmaharjani"
+"Ryan","Bennett","Hydrow","Senior Vice President Marketing","Hi Ryan,
+
+Came across your background across P&G Beauty and DTC brand turnarounds, now SVP Marketing at Hydrow. Category hardware specs are converging; verified progress is a harder feature for competitors to copy.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Ryan,
+
+Following up. A verified progress feature tends to be a more durable brand story than another spec upgrade, given how quickly hardware gets matched in this category.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/rmbennett018"
+"Shelly","Williams","iFIT","Director, Partnership Marketing","Hi Shelly,
+
+Curious about your take, given your entertainment and health-and-fitness partnership background at iFIT. Subscription acquisition partnerships usually need a fresh hook, and verified body progress tends to travel well.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Shelly,
+
+Following up. A verified progress story tends to make for a stronger partnership pitch than another content tie-in, since it's proof, not promotion.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/shelly-williams-los-angeles"
+"Suzanne","Davis","Calibrate","Vice President Clinical Operations","Hi Suzanne,
+
+Quick note given your clinical operations role at Calibrate. Curious how the team is measuring body-composition change for GLP-1 members past the point where the scale number stops telling the full story.
+
+We built FitXpress: two phone photos give verified body composition, fat percent and lean mass included, in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Suzanne,
+
+Following up. A verified fat-versus-muscle read tends to be a useful metric for exactly the kind of program design your clinical operations role owns.
+
+FitXpress runs at 96-97% accuracy against manual measurements and is HIPAA-compliant with zero personal identifiers processed.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/suzanne-davis-a0591a41"
+"Zachary","Lacroix, MBA","Personify Health","Director Transformation","Hi Zachary,
+
+Spotted something in your work translating digital strategy into operational reality across EHR and payer/provider systems, now Transformation at Personify Health. Verified body metrics tend to be the missing input in that kind of platform modernization.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds, via API/SDK.
+
+Might be worth a quick chat?
+
+Nick","Hi Zachary,
+
+Following up. Given the transformation work you lead, a verified body-data layer tends to fit cleanly into a modernized digital health platform without a big new build.
+
+FitXpress runs at 96-97% accuracy against manual measurements, is HIPAA-compliant, and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/zachary-lacroix"
+"Anand","Kuppusamy","Personify Health","Vice President, Software Engineering, Data ML/AI","Hi Anand,
+
+Curious about your take, leading software engineering and data ML/AI at Personify Health. Body-composition estimation from two photos is a computer-vision problem most teams end up buying rather than building.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds, HIPAA-compliant end to end.
+
+Worth a quick chat to explore?
+
+Nick","Hi Anand,
+
+Following up on the build-vs-buy angle. FitXpress ships as an API/SDK, encrypts at rest with SSE-S3, and processes zero personal identifiers, trained on 9+ years of data so it skips the research phase.
+
+Accuracy runs 96-97% against manual measurements.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/anand-kuppusamy-81865a3"
+"Angelo","Ramsbott","Echelon","President- Echelon Fitness International, LLC.","Hi Angelo,
+
+Saw your post about Echelon's connected fitness lineup since the first Connect Bike. As the hardware line grows, the harder-to-copy differentiator tends to be proof that members are actually changing, not another device.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Angelo,
+
+Following up. A verified progress feature tends to travel further across Echelon's product line than another hardware refresh, since it works the same on a bike, a mirror, or the app alone.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/angelo-ramsbott"
+"Blake","Watterson","iFIT","Chief Operating Officer","Hi Blake,
+
+Quick note now that you're COO at iFIT. Operationally, retention usually comes down to whether members can see the equipment is actually working for them between workouts.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Blake,
+
+Following up. A verified progress feature tends to be a direct lever on the churn iFIT sees when members lose motivation, which is usually the top driver of cancellations.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/blake-watterson-62937925b"
+"Brian","Gambs","Personify Health","Chief Technology Officer","Hi Brian,
+
+Wanted to reach out now that you're CTO at Personify Health. Curious how the team is approaching verified body-composition data without owning the computer-vision build.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds, HIPAA-compliant end to end.
+
+Worth a quick chat to explore?
+
+Nick","Hi Brian,
+
+Following up on the integration angle. FitXpress ships as an API/SDK, encrypts at rest with SSE-S3, and processes zero personal identifiers.
+
+Accuracy runs 96-97% against manual measurements.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/briangambs"
+"Corinne","Marinucci","Personify Health","Vice President of Health Plan Administration Engineering","Hi Corinne,
+
+Noticed your background leading large-scale engineering organizations, now Health Plan Administration Engineering at Personify Health. Verified body metrics tend to be the missing data layer in health-plan administration platforms.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Corinne,
+
+Following up. FitXpress ships as an API/SDK, is HIPAA-compliant, and processes zero personal identifiers, built to slot into administration platforms at your scale.
+
+Accuracy runs 96-97% against manual measurements.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/corinne-marinucci-202b4b3"
+"Derek","Mellencamp","Tonal","Chief Revenue Officer at Tonal | Omnichannel Growth across DTC, Retail, B2B & Strategic Partnerships","Hi Derek,
+
+Came across your work building omnichannel revenue engines at inflection points, now CRO at Tonal. Retention economics usually improve fastest with a feature members can't get anywhere else.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds, a real before-after competitors can't easily copy.
+
+Worth a quick chat to explore?
+
+Nick","Hi Derek,
+
+Following up. A verified progress feature tends to compound retention value across every channel Tonal sells through, DTC and B2B alike.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/derekmellencamp"
+"Eric","Perakslis PhD","Shotsy","Chief Science Officer","Hi Eric,
+
+Noticed your research background across Duke, Takeda, and Harvard, now Chief Science Officer at Shotsy. GLP-1 tracking apps are adding body-fat and lean-mass fields, but most still rely on manual entry or a smart scale.
+
+We built FitXpress: two phone photos give verified body composition, fat percent and lean mass included, in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Eric,
+
+Following up. A verified fat-versus-muscle read tends to be scientifically sturdier than manual entry for the kind of outcome tracking Shotsy runs.
+
+FitXpress runs at 96-97% accuracy against manual measurements and is HIPAA-compliant with zero personal identifiers processed.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/eperakslis"
+"Giuseppe","Barbalinardo, PhD","Tonal","Vice President of Data Science and Artificial Intelligence","Hi Giuseppe,
+
+Curious about your take, leading data science and AI at Tonal after building kALDo. Body-composition estimation from two photos is a computer-vision problem most teams end up licensing rather than building from scratch.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Giuseppe,
+
+Following up on the build-vs-buy angle. FitXpress is trained on 9+ years of data and ships as an API/SDK, so it skips the research and data-collection phase entirely.
+
+Accuracy runs 96-97% against manual measurements, zero personal identifiers processed.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/giuseppe-barbalinardo-phd-887a3586"
+"Hayden","Tollas","Tonal","CFO","Hi Hayden,
+
+Quick thought given your finance leadership across retail and e-commerce, now CFO at Tonal. Retention features usually pay back faster than acquisition spend, and visible progress is one of the clearer levers.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Hayden,
+
+Following up. There's a 200-request free trial if it helps to test the retention impact on a small cohort before any commitment.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/haydentollas"
+"James","Waldrop","Tonal","VP, Software","Hi James,
+
+Quick idea for you, leading software engineering at Tonal. Body-composition estimation from two photos is a computer-vision problem most engineering teams end up buying instead of building.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi James,
+
+Following up on the build-vs-buy angle. FitXpress ships as an API/SDK, so it stays a service integration rather than a new engineering program at Tonal.
+
+Accuracy runs 96-97% against manual measurements, zero personal identifiers processed.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/jawaldrop"
+"Jason","Peterson","MyFitnessPal","Chief Technology Officer","Hi Jason,
+
+Wanted to reach out now that you're CTO at MyFitnessPal. The calorie side of the app is well covered; body composition, fat versus muscle, is still mostly a manual gap for users on GLP-1.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Jason,
+
+Following up. FitXpress ships as an API/SDK, so body composition could sit next to the existing tracking stack without a dedicated computer-vision build.
+
+Accuracy runs 96-97% against manual measurements, zero personal identifiers processed.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/jasonwpeterson"
+"Jeff","Yake","Future","General Manager","Hi Jeff,
+
+Saw your role as General Manager at Future. Coaching apps sell on real human coaches, but body-composition data between check-ins is usually still a gap coaches have to guess at.
+
+We built FitXpress: two phone photos become a 3D progress model and full body composition in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Jeff,
+
+Following up. A verified progress read tends to give Future's coaches a sharper tool for check-ins than notes and photos alone.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/jeff-yake-b8267b1"
+"Josh","Bovarnick","Echelon","Vice President Of Software Engineering","Hi Josh,
+
+Curious about your take, leading software engineering at Echelon Fitness. Adding body-composition tracking to a hardware-plus-app platform usually raises the build-or-buy question fast.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Josh,
+
+Following up on the integration angle. FitXpress ships as an API/SDK, so it fits alongside Echelon's existing app stack without a dedicated computer-vision build.
+
+Accuracy runs 96-97% against manual measurements, zero personal identifiers processed.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/josh-bovarnick-357183134"
+"Kamilah","Williams MD,  DABOM, DABFM, DipABLM","Calibrate","Associate Chief Medical Officer","Hi Kamilah,
+
+Noticed your clinical strategy and workflow implementation work as Associate Chief Medical Officer at Calibrate. GLP-1 members increasingly ask how much of their loss is fat versus muscle a few months in.
+
+We built FitXpress: two phone photos give verified body composition, fat percent and lean mass included, in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Kamilah,
+
+Following up. A verified fat-versus-muscle read tends to support the clinical workflow you help design at Calibrate, without adding visit burden for coaches or clinicians.
+
+FitXpress runs at 96-97% accuracy against manual measurements and is HIPAA-compliant with zero personal identifiers processed.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/kamilahwilliamsmd"
+"Kristina","Bourke","Personify Health","President & General Manager, TPA","Hi Kristina,
+
+Quick note now that you're President and GM of the TPA business at Personify Health. Verified body metrics tend to be the missing data point in the outcomes reporting TPA clients ask for.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds, via API/SDK.
+
+Might be worth a quick chat?
+
+Nick","Hi Kristina,
+
+Following up. A verified body-data layer tends to strengthen the outcomes reporting your TPA business delivers to employer and health-plan clients.
+
+FitXpress runs at 96-97% accuracy against manual measurements, is HIPAA-compliant, and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/kristina-bourke-95b27362"
+"Lindsay","Smith","Tonal","VP, Business Technology & Strategic Programs","Hi Lindsay,
+
+Came across your background across connected fitness, medical devices, and consumer tech, now Business Technology and Strategic Programs at Tonal. A body-composition feature usually turns into a bigger program if it means building computer vision internally.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Lindsay,
+
+Following up. FitXpress ships as an API/SDK, which usually keeps a program like this to weeks of integration instead of a multi-quarter build.
+
+Accuracy runs 96-97% against manual measurements, zero personal identifiers processed.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/lindsay-smith-4824475"
+"Marc","Washington","iFIT","President & CFO","Hi Marc,
+
+Noticed your background founding a gut-health brand alongside your finance career, now President and CFO at iFIT. Retention features usually pay back faster than acquisition spend, and visible body progress is one of the clearer levers.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Marc,
+
+Following up. There's a 200-request free trial if it helps to test the retention impact on a small cohort before any budget commitment.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/marcwashington34"
+"Matt","Holford","MyFitnessPal","VP of Engineering","Hi Matt,
+
+Quick note given your engineering leadership at MyFitnessPal. Curious how the team is thinking about a body-composition data layer to sit next to the calorie side of the product.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Matt,
+
+Following up on the integration angle. FitXpress ships as an API/SDK, so it slots into existing architecture without a dedicated computer-vision team.
+
+Accuracy runs 96-97% against manual measurements, zero personal identifiers processed.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/mattholford"
+"Mehran","M.","Personify Health","Chief Information Officer","Hi Mehran,
+
+Saw your post about governing AI adoption at Personify Health. Curious how that governance lens applies to a body-composition feature, since most teams end up buying that computer vision rather than building it.
+
+We built FitXpress as an API/SDK: two phone photos in, 80+ measurements and full body composition out in under 45 seconds, HIPAA-compliant end to end.
+
+Worth a quick chat to explore?
+
+Nick","Hi Mehran,
+
+Following up on the governance angle. FitXpress ships as an API/SDK, encrypts at rest with SSE-S3, and processes zero personal identifiers, built to hold up under scrutiny.
+
+Accuracy runs 96-97% against manual measurements.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/mehranmt"
+"Paul","Wann","Personify Health","Chief Operating Officer, SVP TPA Operations","Hi Paul,
+
+Noticed your HIPAA and healthcare IT background, now COO at Personify Health. Verified body metrics tend to be the missing data point in wellbeing program outcomes reporting.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds, via API/SDK.
+
+Might be worth a quick chat?
+
+Nick","Hi Paul,
+
+Following up. Given your HIPAA background, it's worth noting FitXpress is HIPAA-compliant, encrypts at rest with SSE-S3, and processes zero personal identifiers.
+
+Accuracy runs 96-97% against manual measurements.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/paul-wann-6604775"
+"Raquel","Rozas","iFIT","Chief Marketing Officer","Hi Raquel,
+
+Came across your work driving transformative growth across Fortune 50 and dynamic environments, now CMO at iFIT. AI personalization is table stakes now, but verified physical progress is still the harder story to tell credibly.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Nick","Hi Raquel,
+
+Following up. A verified progress story tends to be a more durable brand asset than another AI feature claim, since members can see it for themselves.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/raquel-rozas-416760"
+"Rohit","Gupta","Future","Chief Financial Officer","Hi Rohit,
+
+Quick note given your finance leadership across operationally complex, direct-to-consumer startups, now CFO at Future. Retention features usually carry a clearer payback than acquisition spend, and visible progress is one of the sharper levers.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Rohit,
+
+Following up. There's a 200-request free trial if it helps to model the retention impact on a small cohort before any budget decision.
+
+FitXpress runs at 96-97% accuracy against manual measurements and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/rohit-gupta-a7b73130"
+"Scott J.","Charles","Personify Health","Chief Financial Officer","Hi Scott,
+
+Noticed your 20-plus years across life sciences finance, now CFO at Personify Health. Verified body metrics tend to strengthen the outcomes data behind wellbeing program renewals and pricing.
+
+We built FitXpress: two phone photos become 80+ measurements and full body composition in under 45 seconds, via API/SDK.
+
+Worth a quick chat to explore?
+
+Nick","Hi Scott,
+
+Following up. A verified body-data layer tends to give the outcomes story behind program renewals a sturdier foundation than self-reported numbers.
+
+FitXpress runs at 96-97% accuracy against manual measurements, is HIPAA-compliant, and processes zero personal identifiers.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/scott-j-charles-5343456"
+"Warner","Roberts","Calibrate","Chief Commercial Officer","Hi Warner,
+
+Saw your focus on employer strategy and GLP-1 access models, now CCO at Calibrate. Employer buyers increasingly ask how a program proves fat-versus-muscle change, not just weight loss.
+
+We built FitXpress: two phone photos give verified body composition, fat percent and lean mass included, in under 45 seconds.
+
+Might be worth a quick chat?
+
+Nick","Hi Warner,
+
+Following up. A verified fat-versus-muscle read tends to strengthen the employer-facing outcomes story behind Calibrate's GLP-1 access model.
+
+FitXpress runs at 96-97% accuracy against manual measurements and is HIPAA-compliant with zero personal identifiers processed.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/warnerroberts"

@@ -1,0 +1,993 @@
+contact_id,first_name,last_name,email_guess,company_name,job_title,message_m1,message_m2,tag,linkedin_url
+"4c3f684fbcce","Abhilash","K.","","Fitbod","Principal Product Designer & Head of Design","Hi Abhilash,
+Circling back on Fitbod's design work. Strength apps live and die on whether users can see change, and most only show that through a number on a scale.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds, something visual users can actually see.
+Might be worth a quick chat?
+Nick","Hi Abhilash,
+Quick follow up. Progress visualization tends to move retention more than any UI tweak once users hit month two. FitXpress turns two phone photos into a body scan and composition read in under 45 seconds, could slot into Fitbod's progress views if useful.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/abhilash-k-97b7795"
+"9850b3bdb43c","Alex","Panetta","","iFIT","Senior Manager Data & AI","Hi Alex,
+Saw your background in data and AI engineering at iFIT. Body-composition features usually stall on the computer-vision build, not the product idea.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds, so there's no in-house CV team needed.
+Might be worth a quick chat?
+Nick","Hi Alex,
+Quick follow up. Teams building this in-house usually spend months on the CV pipeline before touching the product. FitXpress hands you structured body data, 80+ measurements plus composition, from two phone photos via API in under 45 seconds, with processing and compliance handled on our side.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/panettaalex"
+"ca0e57587af3","Allyson","Reed","","Echelon","Vice President of Instructional Design","Hi Allyson,
+Quick thought on Echelon's instructional content. Members stick with a program longer when they can see their own change, not just follow a class.
+We built FitXpress so two phone photos become a full body scan and progress view in under 45 seconds, something concrete to pair with the training content.
+Worth a quick chat to explore?
+Nick","Hi Allyson,
+Quick follow up. The biggest gap in most connected fitness content is a way for members to see their own physical change, not just watch someone else's. FitXpress fills that from two phone photos in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/allyson-reed-1b0959323"
+"8cb4c6f31342","Anna","Henderson","","Shotsy","Head of Operations","Hi Anna,
+Noticed your operations role at Shotsy. GLP-1 tracking apps are starting to need more than scale weight, since a meaningful share of what's lost on these drugs is lean mass, not fat.
+We built FitXpress to give body composition, fat versus lean mass, from two phone photos in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Anna,
+Quick follow up. GLP-1 users increasingly ask what they're actually losing, fat or muscle, and scale weight alone can't answer that. FitXpress gives fat percentage and lean mass from two phone photos in under 45 seconds, which could sit well inside Shotsy's tracking flow.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/hendersonae"
+"244ef1a7f994","Anuradha","Narayanan","","Personify Health","Senior Manager, Data Engineering","Hi Anuradha,
+Came across your data engineering work at Personify Health. Body-composition features are usually the part of a wellness platform nobody wants to build from scratch.
+FitXpress ships as an API/SDK: two phone photos become 80+ measurements and a composition read in under 45 seconds, no in-house computer vision needed.
+Might be worth a quick chat?
+Nick","Hi Anuradha,
+Quick follow up. For a population-health platform, the harder part of a body-scan feature is usually the data pipeline and compliance, not the UI. FitXpress handles that end via API, structured output in under 45 seconds per scan.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/anuradha-narayanan-97707412"
+"0ac13d04c23a","Becky","Taylor","","Found","Manager","Hi Becky,
+Got me thinking about Found's weight-loss program. Body composition, not scale weight, is becoming the real question GLP-1 patients ask once the number starts moving.
+We built FitXpress to answer that: fat percentage and lean mass from two phone photos in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Becky,
+Quick follow up. Patients on GLP-1s lose a meaningful share of lean mass alongside fat, so a program that can show the split tends to build more trust than one relying on scale weight alone. FitXpress does that from two phone photos in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/becky-taylor-75445126a"
+"67501851a876","Bill","George","","Personify Health","Strategic Manager, Live Services","Hi Bill,
+Curious about your take on digital coaching retention at Personify Health. Coaching programs usually lose members right when motivation dips and there's no visible proof of progress.
+We built FitXpress so two phone photos turn into a body scan and progress read in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Bill,
+Quick follow up. In live coaching programs, members who can see physical change tend to stick around longer than ones tracking a single number. FitXpress gives that from two phone photos in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/bill-geo"
+"64948bd152ef","Brite","Job","","Hydrow","Business Development Director","Hi Brite,
+Saw your activity around partnerships at Hydrow. Connected fitness members tend to stay subscribed longer when they can see physical change, not just workout minutes.
+We built FitXpress so two phone photos become a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Brite,
+Quick follow up. For hardware-plus-subscription platforms, a visible progress feature is one of the few software additions that directly moves retention. FitXpress delivers that from two phone photos in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/stephanie-wilder986"
+"912297c166e7","Cheryl","Waller","","Personify Health","Director, Member Services","Hi Cheryl,
+Quick note on member services at Personify Health. A lot of member drop-off traces back to people losing sight of their own progress.
+We built FitXpress so two phone photos turn into a body scan and progress read in under 45 seconds, something concrete to show members.
+Might be worth a quick chat?
+Nick","Hi Cheryl,
+Quick follow up. Member services teams are often the first to hear that nothing feels like it's changing, even when it is. FitXpress gives members a way to see it, from two phone photos in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/cheryl-waller-8687423"
+"dcc2f897e29b","Chris","Ripple","","iFIT","Director of Engineering","Hi Chris,
+Spotted your engineering work at iFIT. Body-scan features are usually the part of a connected fitness roadmap that stalls on the computer-vision build.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Chris,
+Quick follow up. Building accurate body measurement from phone photos in-house usually takes a dedicated CV team and months of tuning. FitXpress hands you that as an API, structured output in under 45 seconds per scan.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/chris-ripple-5b9b9b24"
+"a64097d4d669","Courtney","Mayer","","Future","Head of Marketplace","Hi Courtney,
+Thought I'd share this given your marketplace role at Future. Coaching subscriptions tend to hold onto members longer when there's visible proof of change, not just workout logs.
+We built FitXpress so two phone photos become a full body scan and progress read in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Courtney,
+Quick follow up. Trainers and coaches usually want a way to show clients real change between check-ins, not just track sessions completed. FitXpress gives that from two phone photos in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/courtney-mayer-84810012"
+"9c850d480c36","Daniel","Gouvêa","","Tonal","Principal Software Engineer","Hi Daniel,
+Noticed overlap with your systems work at Tonal. A body-composition feature usually needs its own computer-vision pipeline, which is a heavy lift to own in-house.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Daniel,
+Quick follow up. The reliability and scale question usually comes up first when a team looks at building body scanning themselves. FitXpress runs that as a hosted API, structured output in under 45 seconds per scan, tested at production scale.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/danielgouvea"
+"b05e1d4aaf2f","Derrick","Anene","","Personify Health","Principal Product Manager","Hi Derrick,
+Quick one on product work at Personify Health. A lot of health platforms are looking at body composition as the next differentiator beyond generic tracking.
+We built FitXpress as a scan layer that drops into an existing product via API/SDK: two phone photos, 80+ measurements, under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Derrick,
+Quick follow up. Adding a body-composition feature usually means choosing between a multi-quarter build and an API that plugs into what you already have. FitXpress is the second option, live in weeks.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/derrickanene"
+"784558785580","Emily","Yeung, PMP, CSM","","Tonal","Staff Product Operations Manager","Hi Emily,
+Had a thought seeing your product operations work at Tonal. Programs that run on visible progress tend to keep members longer than ones tracking effort alone.
+We built FitXpress so two phone photos become a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Emily,
+Quick follow up. Operationally, a progress feature that runs on two phone photos is a lot easier to roll out than most people expect. FitXpress returns the scan and composition read in under 45 seconds per member.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/emilykyeung"
+"f58ffa03520d","Evyn","Whiteley","","iFIT","Community Engagement Manager","Hi Evyn,
+Quick idea for you given your community engagement work at iFIT. Communities stay active longer when members can show real change, not just post workouts.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Evyn,
+Quick follow up. A visible progress feature tends to give community members something worth posting about, beyond a finished workout. FitXpress delivers that from two phone photos in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/evyn-whiteley-56693818a"
+"2de7af8fe58a","Hali","Dengenis","","Personify Health","Chief of Staff","Hi Hali,
+Caught my eye given your Chief of Staff role at Personify Health. Health platforms are under pressure to add differentiated features fast, without a multi-quarter build cycle.
+We built FitXpress as a body-composition layer that drops in via API/SDK: two phone photos, 80+ measurements, under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Hali,
+Quick follow up. When a roadmap decision comes down to build versus buy on a body-scan feature, the API route usually wins on speed. FitXpress is live in weeks, not quarters, with the compliance work already handled.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/hali-dengenis-763b8b52"
+"407ae09987f1","Janelle","Cobeldick","","Calibrate","Manager","Hi Janelle,
+Wanted to reach out given your role at Calibrate. Metabolic-health programs are starting to need more than scale weight to show GLP-1 patients real results.
+We built FitXpress to give body composition, fat versus lean mass, from two phone photos in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Janelle,
+Quick follow up. Patients losing weight on GLP-1s often lose lean mass too, and being able to show that split builds more trust than a single scale number. FitXpress gets you there from two phone photos in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/janelle-cobeldick-b32b31309"
+"32c167483b4d","Jeff","Coulter","","Personify Health","Director of Engineering","Hi Jeff,
+Had to say hi given your engineering leadership at Personify Health. Healthcare-orientated SaaS teams usually don't want to own a computer-vision pipeline just to add body-composition data.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and composition out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Jeff,
+Quick follow up. For engineering teams already carrying a healthcare SaaS stack, the appeal of an API for this is mostly about not adding another support surface. FitXpress handles the CV, compliance and scale on our side.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/jeff-coulter-03a5b912"
+"53f28f6cc17d","Jesse","Duprey","","Personify Health","Vice President, Member Services","Hi Jesse,
+This stood out given your Member Services role at Personify Health. Support teams often hear the same thing from members losing motivation: they can't tell if anything's actually changing.
+We built FitXpress so two phone photos turn into a body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Jesse,
+Quick follow up. Giving members a way to see physical change tends to reduce the "" is this working "" conversations service teams field. FitXpress does that from two phone photos in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/jesseduprey"
+"f63cf622d84b","Jim","Foley","","Personify Health","Principal Director, Solution Consulting","Hi Jim,
+Made me think, given your solution consulting work at Personify Health. Prospective clients keep asking for ways to prove program outcomes beyond a survey or a scale number.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Jim,
+Quick follow up. In solution consulting conversations, ""how do we prove this is working"" comes up constantly. FitXpress gives a verified, structured answer from two phone photos in under 45 seconds, via a straightforward API integration.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/jim-foley-2024662"
+"0715f7a2df8f","John","Gieselmann","","MyFitnessPal","Director of Engineering","Hi John,
+Couldn't help but ask, given your engineering leadership at MyFitnessPal. Adding body composition to a food-logging platform usually means building a computer-vision pipeline from zero.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi John,
+Quick follow up. At the scale MyFitnessPal runs, the question is usually less ""can we build it"" and more ""should we own the CV and compliance surface."" FitXpress takes that off your plate via API, in under 45 seconds per scan.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/johngieselmann"
+"e4e8bdf2b529","Joshua","K.","","MyFitnessPal","Sr. Director, Search & Data Engineering","Hi Joshua,
+Saw the news around MyFitnessPal's data platform growth. Once a data org is built for scale, adding a body-composition source usually just means a clean API to plug in.
+FitXpress does exactly that: two phone photos in, 80+ measurements and composition out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Joshua,
+Quick follow up. A search and data engineering org already built for billions of food logs is a good fit for adding one more structured data source. FitXpress delivers body composition from two phone photos via API in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/joshuaklenk"
+"b9ed325ce6e9","Juan","Padilla","","Future","Manager","Hi Juan,
+Quick reaction to Future's coaching model. Human coaching apps tend to keep clients longer when there's a visual way to show change between check-ins.
+We built FitXpress so two phone photos become a full body scan and progress read in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Juan,
+Quick follow up. Coaches usually want more than a client's word that a program is working. FitXpress gives a verified progress read from two phone photos in under 45 seconds, easy to slot into a check-in flow.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/juan-padilla-ab09b71bb"
+"c95d0be39524","Justin","Walker","","iFIT","Director of Program Management","Hi Justin,
+Circling back on iFIT's product development work. New product features tend to land best when they solve a retention problem, not just add a feature checkbox.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Justin,
+Quick follow up. Retention is the metric most new product development work at a connected fitness company ultimately has to move. FitXpress gives members a visible progress read from two phone photos in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/justin-walker-4b7429b"
+"47b953c240ae","Karthikeyan ( Kads)","Sridharan","","Personify Health","Senior Director of Engineering","Hi Karthikeyan,
+Saw your post about digital health transformation at Personify Health. Teams modernizing an EHR-adjacent stack rarely want to add a new computer-vision system into that mix.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Karthikeyan,
+Quick follow up. Given the scale of platform engineering at Personify Health, an integration like this usually needs to be low-friction and well-architected on the compliance side. FitXpress is built that way, structured output in under 45 seconds per scan.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/karthikeyansridharan"
+"623fc6231160","Katherine","Gauthier","","iFIT","Subscription Winback Manager","Hi Katherine,
+Quick thought on your winback work at iFIT. Members who cancel usually say the same thing: they stopped seeing results, or couldn't tell if they were making any.
+We built FitXpress so two phone photos turn into a body scan and progress read in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Katherine,
+Quick follow up. A visible progress feature is one of the more direct ways to counter the ""not seeing results"" reason members give before cancelling. FitXpress delivers that from two phone photos in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/katherinegauthier"
+"01198dfb1735","Kerin","Lynch","","Personify Health","Senior Director, Solution Consulting","Hi Kerin,
+Noticed your background, given your solution consulting role at Personify Health. Clients in this space keep asking for a way to make outcomes measurable, not just self-reported.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Kerin,
+Quick follow up. When a client asks for verified outcome data, having a fast integration path matters as much as the data itself. FitXpress plugs in via API, output in under 45 seconds per scan.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/kerin-lynch-b196a64"
+"83d03bbff160","Lauren","Davis, MPH","","Personify Health","Associate Director, Solution Architect","Hi Lauren,
+Came across your work in population health at Personify Health. Wellbeing programs are under pressure to show more than a survey score as proof of outcomes.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Lauren,
+Quick follow up. Solution architects usually care most about how cleanly a new data source integrates and whether the compliance story holds up. FitXpress is built for both, structured output in under 45 seconds per scan.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/ldavis71"
+"fae5e0113f53","Mai","Irie","","MyFitnessPal","Senior Engineering Manager","Hi Mai,
+Got me thinking about MyFitnessPal's engineering scale. Body-composition tracking is the kind of feature that's simple to want and hard to build well in-house.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Mai,
+Quick follow up. Most teams underestimate how much tuning a phone-based body-scan pipeline needs before it's production-ready. FitXpress has that already solved, delivered via API in under 45 seconds per scan.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/mirie"
+"273a90e4fecb","Marissa","Tucci","","MyFitnessPal","VP of Business Intelligence","Hi Marissa,
+Curious about your take on engagement analytics at MyFitnessPal. Retention curves usually bend once users stop seeing a change they can point to.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Marissa,
+Quick follow up. From an analytics view, a progress-visualization feature usually shows up fast in cohort retention data once it ships. FitXpress produces that read from two phone photos in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/tuccimarissa"
+"87a67d50a0d1","Megan","Miraglia, MS, RD","","Personify Health","Director, Workplace Health & Wellbeing Team","Hi Megan,
+Saw your activity around workplace wellbeing at Personify Health. Employer wellness programs work best when participants can see a concrete result, not just a step count.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Megan,
+Quick follow up. As a dietitian-led program, being able to show body composition change alongside nutrition coaching tends to reinforce the advice you're already giving. FitXpress produces that from two phone photos in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/meganmiraglia"
+"b3e58ad62cc1","Mike","B.","","Hydrow","Vice President, Quality and Hardware Operations","Hi Mike,
+Quick note given your quality and hardware operations background at Hydrow. Software features that touch a member's body data usually need a tight quality and compliance bar before shipping.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Mike,
+Quick follow up. Given your background across hardware and connected fitness, you'll know how much QA a new sensor-like feature usually needs before launch. FitXpress ships that groundwork already done, structured output in under 45 seconds per scan.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/mike-b-7b84b216"
+"368fadb162a4","Natalie","Jones","","Future","VP, Strategic Initiatives","Hi Natalie,
+Spotted something in Future's strategic direction. Coaching subscriptions tend to hold members longer when progress is visible, not just implied by a workout streak.
+We built FitXpress so two phone photos become a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Natalie,
+Quick follow up. For a coaching-led subscription, showing real physical change tends to reinforce the value of the human coach behind it, not replace it. FitXpress delivers that from two phone photos in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/natalievjones"
+"481773baca61","Nicholas","Schingel","","MyFitnessPal","Principal Product Manager, Ads","Hi Nicholas,
+Came across your work on monetization and measurement at MyFitnessPal. GLP-1 tracking is becoming a real product surface, and body composition is the metric users increasingly ask for.
+We built FitXpress to give fat percentage and lean mass from two phone photos in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Nicholas,
+Quick follow up. A body-composition data point tends to be a strong signal for personalization and measurement, not just a health metric. FitXpress produces it from two phone photos in under 45 seconds, via API.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/nicholas-schingel-90357a101"
+"84c439e77b01","Nick","Karwoski","","iFIT","Senior Director of Content","Hi Nick,
+Circling back on iFIT's content strategy work. Subscriber engagement tends to hold up better when content is paired with something the subscriber can measure about themselves.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Nick,
+Quick follow up. Premium content ecosystems tend to get a retention boost when they're paired with a personal progress element, not just more programming. FitXpress adds that from two phone photos in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/nick-karwoski011"
+"096d31e1b6c4","Nicole","Landry","","MyFitnessPal","Director of Product Design","Hi Nicole,
+Saw your post about growth and retention design work at MyFitnessPal. A lot of retention design problems trace back to users not being able to see the change they're working toward.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Nicole,
+Quick follow up. Design work on growth and retention often runs into the same wall: no visual proof of change to design around. FitXpress solves that input, a body scan and progress read from two phone photos in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/nicolelandry"
+"386bf772625f","Nishant","Gadireddi","","Personify Health","Director Application Engineering","Hi Nishant,
+Quick thought given your application engineering work at Personify Health. Healthcare payor and provider platforms usually can't afford to build a computer-vision feature that isn't compliance-ready from day one.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Nishant,
+Quick follow up. In healthcare payor and provider environments, the integration bar is usually higher on compliance than on the feature itself. FitXpress is built for that, structured output in under 45 seconds per scan.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/nishant-gadireddi-8342b9"
+"27b2e816c8b4","Patrick","McCarty","","Personify Health","Director of Platform Services","Hi Patrick,
+Noticed your background leading platform services at Personify Health. Platform teams usually get pulled into any new feature that touches member data, especially something as sensitive as body scans.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Patrick,
+Quick follow up. For a platform team, the real question on a feature like this is usually how cleanly it integrates and how the data is handled. FitXpress answers both, API-based, under 45 seconds per scan.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/patrick-mccarty-31904044"
+"f550da0be597","Rebecca","Moorhead","","Future","Product Operations Partner","Hi Rebecca,
+Came across your work in product ops at Future. New feature rollouts tend to go smoother when the vendor already has the workflow and compliance side figured out.
+We built FitXpress so two phone photos become a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Rebecca,
+Quick follow up. From a product ops view, the appeal of a feature like this is usually the low lift to stand up. FitXpress runs on two phone photos and returns a scan and composition read in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/rebecca-moorhead-252b85a8"
+"d040cbeb6408","Renee","Zernicke","","Future","Director of Performance","Hi Renee,
+Got me thinking about performance at Future. Coaching apps that can show measurable physical change tend to outperform ones that rely on self-reported progress.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Renee,
+Quick follow up. Performance metrics for a coaching app usually improve once members have an objective way to see change, not just a coach's word for it. FitXpress provides that from two phone photos in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/renee-zernicke-79a994105"
+"b69a60781f20","Samarth","Tewari","","Personify Health","Program Director","Hi Samarth,
+Quick note on program work at Personify Health. Member programs tend to see better engagement once there's a visible way to track physical change alongside the usual metrics.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Samarth,
+Quick follow up. Program directors usually want engagement data that's more concrete than self-reported check-ins. FitXpress gives that from two phone photos in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/samarthtewari"
+"ad7dd151d212","Shah","Brash","","Future","Director","Hi Shah,
+Thought I'd share this given your role at Future. Coaching apps tend to lose members once the initial motivation fades and there's nothing visible to point to.
+We built FitXpress so two phone photos become a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Shah,
+Quick follow up. A visible progress feature usually gives coaching apps a concrete reason for members to stick around past the first plateau. FitXpress delivers that from two phone photos in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/shah-brash-a0a252113"
+"382d4e2aebb4","Tanja","Madzarevic","","Personify Health","Director of Engineering","Hi Tanja,
+Noticed overlap with your engineering leadership at Personify Health. Building consumer-facing body-composition tracking usually means owning a computer-vision system most teams would rather not maintain.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Tanja,
+Quick follow up. Engineering teams building for millions of users usually want a partner that's already solved reliability at scale for this kind of feature. FitXpress runs that as a hosted API, output in under 45 seconds per scan.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/tanja-madzarevic"
+"391b0b2bf6d5","Thiago","Marzagao","","Fitbod","Head of Data Science, Research, and AI","Hi Thiago,
+Quick one on your data science and AI work at Fitbod. Adding body composition to a strength-training algorithm usually means solving a computer-vision problem first.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Thiago,
+Quick follow up. A body-composition input could feed directly into workout personalization without your team having to build or maintain the CV layer. FitXpress delivers it via API, in under 45 seconds per scan.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/thiago-marzagao"
+"8bf972abffc9","Tim","Wilfong","","Calibrate","Director of DevOps and Cloud Infrastructure","Hi Tim,
+Had a thought given your DevOps and cloud infrastructure work at Calibrate. A body-composition feature usually adds real infrastructure weight if built in-house.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Tim,
+Quick follow up. Given your infrastructure background, you'll know what it takes to run a CV pipeline reliably at scale. FitXpress already carries that load, structured output in under 45 seconds per scan via API.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/timwilfong"
+"cbd40594dbb7","Yulia","Wijata","","Hydrow","Lead Principal Software Engineer","Hi Yulia,
+Quick idea for you given your software engineering background at Hydrow. Enterprise-level integrations for a body-scan feature usually come down to how clean the API is.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Yulia,
+Quick follow up. For a connected-hardware platform, adding a phone-based body scan is usually simpler than it sounds, since the CV work is already handled. FitXpress returns structured output in under 45 seconds per scan.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/yulia-wijata-1a78896"
+"fc0b2b341694","Zachary","Zillmer","","MyFitnessPal","Manager of Machine Learning","Hi Zachary,
+Caught my eye given your machine learning work at MyFitnessPal. Body composition is a natural extension of a logging platform's ML stack, if the input data is reliable.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Zachary,
+Quick follow up. A verified body-composition input could sharpen personalization models without your team building a new computer-vision pipeline. FitXpress delivers that via API, in under 45 seconds per scan.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/zachary-zillmer-756313415"
+"51b44a3e7a06","sarah","L.","","Tonal","Director of Product Design","Hi Sarah,
+Wanted to reach out given your product design work at Tonal. Connected strength platforms tend to hold members longer when there's a visual way to see body change, not just lift numbers.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Sarah,
+Quick follow up. Strength numbers alone don't always tell members the full story of their progress. FitXpress adds the body-composition side of that, from two phone photos in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/sarah-l-a67296168"
+"fc35a8a93e13","Ali","Jafari","","Future","CEO","Hi Ali,
+Saw your post about Future's growth. Personal training subscriptions live or die on whether clients can see change between sessions, not just log workouts with their trainer.
+We built FitXpress so a client's two phone photos turn into a full body scan and progress read in under 45 seconds, something tangible to show alongside the coaching.
+Worth a quick chat to explore?
+Nick","Hi Ali,
+Quick follow up. Personal training apps tend to keep clients past the first plateau when there's a visible, verified way to show physical change, not just trainer notes. FitXpress gives that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/aljafari"
+"f89197798dce","Allen","Chen","","Fitbod","Co-founder & CEO","Hi Allen,
+Circling back on Fitbod's growth as a top-ranked strength app. AI-personalized workouts are table stakes now, but showing real physical progress is still mostly a scale number.
+We built FitXpress so two phone photos become a full body scan and progress read in under 45 seconds, something visual to pair with the AI coaching.
+Might be worth a quick chat?
+Nick","Hi Allen,
+Quick follow up. Strength apps differentiate less on the workout algorithm now and more on what a user can actually see change in. FitXpress gives that from two phone photos in under 45 seconds, plugged in via API.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/allen-chen-17a7748"
+"ad5190dfe829","Andrey","Patenko","","iFIT","Owner","Hi Andrey,
+Quick thought on ProForm's connected fitness lineup. Hardware plus subscription models tend to keep members longer when there's a reason to log in beyond the workout itself.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Andrey,
+Quick follow up. A visible progress feature usually gives connected-equipment subscribers one more reason to renew beyond the hardware. FitXpress delivers that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/andrey-patenko-644a9532"
+"554d95e2f7e7","Ben","Gammon","","Ladder","Vice President, Product @ Ladder","Hi Ben,
+Noticed your product work at Ladder. Strength-coaching subscriptions tend to lose members right after the first plateau, when there's no visible proof anything's changing.
+We built FitXpress so two phone photos become a full body scan and progress read in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Ben,
+Quick follow up. A body-composition read tends to be a sharper retention lever than another workout variation, since it answers the ""is this working"" question directly. FitXpress delivers that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/benjamingammon"
+"4e96b903dbb3","Eric","Watterson","","iFIT","Sr Vice President Marketing","Hi Eric,
+Came across your marketing work at iFIT. Retention marketing usually runs into the same wall: members who've stopped seeing visible change are hard to win back with messaging alone.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Eric,
+Quick follow up. A visible progress feature tends to give retention marketing something concrete to point to, rather than another discount or reminder email. FitXpress produces that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/eric-watterson-6a7832249"
+"67886e727fb2","Gary","Weiss","","iFIT","Senior Vice President, Hardware Product Development","Hi Gary,
+Got me thinking about hardware product development at iFIT. Connected equipment differentiates less on specs now and more on what the software layer shows members about their own progress.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Gary,
+Quick follow up. A software-side progress feature is one of the few additions that can meaningfully move retention without a hardware refresh. FitXpress delivers that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/garyrobertweiss"
+"42465ae91c3a","Gregory","Stewart","","Ladder","Chief Executive Officer","Hi Gregory,
+Curious about your take on where Ladder's growth goes next. Strength coaching subscriptions tend to hold onto members longer when progress is visible, not just logged.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Gregory,
+Quick follow up. Fitness apps with the steepest churn are usually the ones where progress lives only in a number on a scale. FitXpress gives verified body composition from two phone photos in under 45 seconds, something concrete between sessions.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/gregory-stewart-b83946242"
+"5329ea960dfc","Janie","Gondek (Pascoe)","","iFIT","Senior Director of Software Product Management","Hi Janie,
+Saw your activity around iFIT's connected device ecosystem. Software product teams are usually the ones asked to find the next retention lever once hardware differentiation flattens.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Janie,
+Quick follow up. A progress-visualization feature tends to be one of the higher-leverage software additions for a connected-device platform, since it directly answers whether the program is working. FitXpress delivers that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/janiepascoe"
+"e0f35998f584","Jeremy","McCarty","","iFIT","Chief Subscription & Content Officer","Hi Jeremy,
+Quick note on subscription and content strategy at iFIT and NordicTrack. Subscription economics tend to improve fastest when members have a visible reason to keep renewing, beyond new content.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Jeremy,
+Quick follow up. Content alone tends to plateau as a retention lever after a certain point, while a visible progress feature keeps giving members a reason to stay. FitXpress delivers that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/jeremymccarty"
+"6b82c6a26576","Jon","Chang","","MyFitnessPal","Vice President of Growth Marketing","Hi Jon,
+Spotted your growth marketing work at MyFitnessPal. Growth usually gets easier once retention improves, and retention usually improves once users can see the change they're working toward.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Jon,
+Quick follow up. A visible progress feature tends to show up in retention curves fast, which usually matters more to a growth function than another acquisition channel. FitXpress delivers that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/jonchangny"
+"66a275b5ad19","Joshua","Gnanayutham","","Fitbod","VP of Product (Head of Product)","Hi Joshua,
+Noticed your background at Fitbod, especially the AI-first coach direction. Strength apps tend to keep members longer when they can see the physical change, not just the workout log.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Joshua,
+Quick follow up. As Fitbod pushes further into AI coaching, the missing input is usually a real progress signal, not another self-reported number. FitXpress gives a verified body scan and composition read from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/gnanayutham"
+"cedd28640f1c","Keith","Hartsfield","","iFIT","Chief Product Officer","Hi Keith,
+Quick thought on iFIT's connected fitness lineup. Equipment-based subscriptions tend to churn most when members stop seeing physical results between workouts.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Keith,
+Quick follow up. For a connected-fitness catalog the size of iFIT's, a visible progress feature usually moves retention more than another workout format. FitXpress delivers that from two phone photos, body scan and composition in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/keithhartsfield"
+"dc001ab4d265","Kevin","Duffy","","iFIT","CEO & Board Member","Hi Kevin,
+Had a thought seeing iFIT's equipment and content portfolio. The apps that hold onto subscribers longest are usually the ones proving physical change, not just tracking workouts completed.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Kevin,
+Quick follow up. At iFIT's scale, even a small retention lift from visible progress compounds fast across the subscriber base. FitXpress gives that from two phone photos: a full body scan and composition read in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/kevin-duffy-65078"
+"d3408548b527","Luca","Ranaldi","","Found","Chief Executive Officer","Hi Luca,
+Came across your work building out Found's weight-loss program. Body composition, not scale weight, is becoming the real question GLP-1 patients ask once the number starts moving.
+We built FitXpress to answer that: fat percentage and lean mass from two phone photos in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Luca,
+Quick follow up. Patients on GLP-1s lose a meaningful share of lean mass alongside fat, so a program that can show the split tends to build more trust than scale weight alone. FitXpress does that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/lucaranaldi"
+"50fe0893e555","Matt","Spettel","","Trainwell","Co-Founder and CEO","Hi Matt,
+Saw your post about Trainwell's coaching model. Programs built around real coaches tend to retain best when members can see the physical change their coach is driving.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Matt,
+Quick follow up. Trainwell's coaches already ask members for progress photos, a verified scan just makes that data structured and comparable over time. FitXpress returns a full body scan and composition read from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/matt-spettel"
+"ff826b702b1c","Michelle","Gattuso","","iFIT","Vice President of Product Management","Hi Michelle,
+This stood out from your background across robotics, automotive and fitness platforms. Connected fitness members tend to stay subscribed longer when they can see physical change, not just log workouts.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Michelle,
+Quick follow up. Across the connected devices you've built, the pattern holds: visible progress keeps people engaged longer than tracking alone. FitXpress gives that from two phone photos, a full body scan and composition read in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/michellegattuso"
+"565deefd4b4c","Mohan","Ramnani","","Echelon","Owner","Hi Mohan,
+Quick note on Echelon's connected fitness lineup. Members tend to stick with a program longer when they can see real physical change, not just miles or reps logged.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Mohan,
+Quick follow up. For a connected-fitness subscription like Echelon's, a visible progress feature is usually one of the simpler retention levers to add. FitXpress gives that from two phone photos, a full body scan and composition read in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/mohan-ramnani-55b79612"
+"d8e99a585aaf","Rachelle L.","Roy","","Personify Health","VP Digital Experience","Hi Rachelle,
+Noticed overlap between your digital experience work and how fast health platforms are racing to add differentiated features. Building a body-composition feature in-house usually means a multi-quarter computer-vision build.
+We built FitXpress as a body-composition layer that drops in via API/SDK: two phone photos, 80+ measurements, under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Rachelle,
+Quick follow up. When a digital experience roadmap comes down to build versus buy on a body-scan feature, the API route usually wins on speed. FitXpress is live in weeks, not quarters, with the compliance work already handled.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/rachelletimmer"
+"107496dd68c3","Sam","Margo","","Found","VP, Strategy, BizOps & Growth","Hi Sam,
+Curious about your take on where Found's growth goes next. Body composition, not scale weight, is becoming the real proof point GLP-1 patients look for once the number starts moving.
+We built FitXpress to give that: fat percentage and lean mass from two phone photos in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Sam,
+Quick follow up. For a growth function at a GLP-1 platform, a metric that shows fat lost versus lean mass kept tends to be a stronger retention story than weight alone. FitXpress reads that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/sam-margo"
+"a8948f1a8479","Tim","Holley","","MyFitnessPal","Chief Product Officer","Hi Tim,
+Spotted something in your product transition work at MyFitnessPal. As GLP-1 use grows among your users, scale weight alone stops answering the question people actually care about: fat lost versus muscle kept.
+We built FitXpress to answer that from two phone photos in under 45 seconds: fat percentage and lean mass.
+Worth a quick chat to explore?
+Nick","Hi Tim,
+Quick follow up. For a logging app the size of MyFitnessPal, adding a verified body-composition read could be the difference between a user trusting the app's read on progress or a smart scale's. FitXpress delivers that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/timholley"
+"3a2357b13995","Tom","Digan","","Ladder","Co-Founder & President","Hi Tom,
+Thought I'd share, given your background in Ladder's strength coaching model. Coaching subscriptions tend to hold onto members longest when the physical change is visible, not just logged in a workout history.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Tom,
+Quick follow up. For a coaching product like Ladder, a verified progress read gives coaches something concrete to point to between check-ins. FitXpress returns a full body scan and composition read from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/tom-digan-b1068b20"
+"6e93c129f430","Will","Sun","","MyFitnessPal","Director of Product Management","Hi Will,
+Quick idea for you, given your product work at MyFitnessPal. Users on GLP-1s increasingly want to know how much of their weight loss is fat versus muscle, not just the number on the scale.
+We built FitXpress to answer that from two phone photos in under 45 seconds: fat percentage and lean mass.
+Worth a quick chat to explore?
+Nick","Hi Will,
+Quick follow up. A verified body-composition read tends to build more user trust than logged weight alone, especially for anyone tracking GLP-1 progress. FitXpress gives that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/iamwillsun"
+"a06583905002","Alexandra","Manning","","Future","Director of Member Experience","Hi Alexandra,
+Caught my eye given your member experience role at Future. Human-coach fitness apps tend to keep members longest when there's a real physical result to point to, not just session logs.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Alexandra,
+Quick follow up. For a coaching experience built on trust with Future's members, a verified progress read gives coaches something concrete to reference each month. FitXpress returns that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/alexandra-manning-3bbb9a46"
+"07c0ba6e2751","Amanda","Mahan","","MyFitnessPal","Vice President Global Marketing","Hi Amanda,
+Wanted to reach out given your marketing communications work at MyFitnessPal. As GLP-1 use grows among users, the story that resonates most is fat lost versus muscle kept, not scale weight alone.
+We built FitXpress to surface that from two phone photos in under 45 seconds: fat percentage and lean mass.
+Worth a quick chat to explore?
+Nick","Hi Amanda,
+Quick follow up. A body-composition story tends to make for stronger brand messaging than a weight number, especially for users following a GLP-1 program. FitXpress reads that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/amandamahan"
+"19127ee8778b","Anna","Fladmark","","iFIT","iFIT Creative Director","Hi Anna,
+Had to say hi given your creative work at iFIT. Connected fitness content tends to land harder when it's paired with a real, visible progress moment rather than a workout summary.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Anna,
+Quick follow up. A verified before-and-after scan gives creative teams a genuine story to build around, not a staged transformation post. FitXpress returns that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/annafladmark"
+"348fc5a6b25b","Anne","Togher","","Personify Health","Vice President, Content & Strategy","Hi Anne,
+Made me think, seeing your content and product management background at Personify Health. Health platforms are under pressure to ship differentiated features fast, without a multi-quarter build.
+We built FitXpress as a body-composition layer that drops in via API/SDK: two phone photos, 80+ measurements, under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Anne,
+Quick follow up. When content strategy needs a fresh, defensible feature to build around, the API route gets there faster than an in-house build. FitXpress is live in weeks, not quarters, with compliance already handled.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/annetogher"
+"8e7ab048fb6d","Brittany","O'Connor","","Personify Health","Director of Product Marketing","Hi Brittany,
+Quick reaction to your product marketing role at Personify Health. Wellness platforms tend to convert and retain better when the value story includes visible physical progress, not just program participation.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Brittany,
+Quick follow up. A verified progress story tends to outperform a generic wellness message in campaigns and onboarding flows alike. FitXpress gives that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/brittany-l-oconnor"
+"7d650ad4ceca","Chaya","Schneider","","iFIT","Senior Director, Analytics and Insights","Hi Chaya,
+Saw your activity around subscription lifecycle and retention analytics at iFIT. A recurring pattern in the data: members churn most once they stop seeing physical results, well before engagement drops.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Chaya,
+Quick follow up. A verified progress metric gives an analytics team something concrete to correlate against churn, beyond session counts and workout completion. FitXpress returns that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/chaya-leder"
+"c54b247c30b1","Christina","Kunst","","Tonal","Senior Director, Partnership Development","Hi Christina,
+Noticed your background running partnership development at Tonal. Connected fitness members tend to stay engaged longest when they can see the physical result their hardware investment is producing.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Christina,
+Quick follow up. A verified progress feature could be a strong addition to a partnership or retail story for Tonal, something concrete beyond the hardware itself. FitXpress gives that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/christina-kunst-22380119"
+"950d4a82a253","Corey","Twedt","","iFIT","Director Of Innovation","Hi Corey,
+Quick note on your innovation role at iFIT. New feature bets tend to land best when they're tied to something members actually feel is missing, like proof of the physical results a workout is producing.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Corey,
+Quick follow up. A verified progress feature is a fairly contained bet compared to most innovation pipeline items, and it plugs straight into an existing app. FitXpress gives that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/corey-twedt-10a61311a"
+"a1265d06a078","Devin","Fabricius","","iFIT","Director of Business Intelligence, Analytics, and Testing (DTC)","Hi Devin,
+Curious about your take, given your growth and analytics work at iFIT. Acquisition gets a lot of attention, but retention curves usually bend on whether members can see physical change between sessions.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Devin,
+Quick follow up. A verified progress metric gives a growth team a real signal to test against retention cohorts, not just proxy engagement events. FitXpress returns that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/devin-fabricius-120a15144"
+"67ac59b2b297","Emily","Glover","","iFIT","Sr. Director of DTC, Digital Product & Site Merchandising","Hi Emily,
+Spotted something in your digital product and site work at iFIT. Members tend to stay subscribed longer when the app itself can show physical progress, not just workout history.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Emily,
+Quick follow up. A progress feature built into the digital experience tends to be a straightforward addition compared to a full merchandising overhaul. FitXpress delivers that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/emily-glover-356ab9102"
+"16d2166acfd1","Erin","Lloyd, MSHCT, MSW","","Personify Health","Vice President, Transformation","Hi Erin,
+Came across your work leading transformation initiatives at Personify Health. Health platforms are under real pressure to ship differentiated features fast, without a multi-quarter build.
+We built FitXpress as a body-composition layer that drops in via API/SDK: two phone photos, 80+ measurements, under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Erin,
+Quick follow up. For a transformation program already spanning technology and operations, an API-based feature is usually easier to fold in than a ground-up build. FitXpress is live in weeks, not quarters, with compliance already handled.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/erin-lloyd-mshct-msw"
+"fa4f9907084d","Irina","Tabac","","Personify Health","Director of Product Management","Hi Irina,
+Noticed your focus on APIs, integrations and partner ecosystems at Personify Health. A body-composition feature is one of the harder ones to build well in-house, since it usually means a computer-vision pipeline from scratch.
+We built FitXpress as a body-composition layer that drops in via API/SDK: two phone photos, 80+ measurements, under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Irina,
+Quick follow up. Given your API-products lens, the build-versus-buy call on a body-scan feature usually comes down to speed and maintenance burden. FitXpress is live in weeks, not quarters, with compliance already handled.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/irinatabac"
+"7e5a09c2d509","James H.","M.","","iFIT","Director of Subscriptions","Hi James,
+Quick thought on your subscription product work at iFIT and NordicTrack. Subscription growth usually comes down to keeping members past month two or three, and visible physical progress is one of the stronger levers for that.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi James,
+Quick follow up. A verified progress feature is a natural addition to a subscription experience already built around consistency and habit. FitXpress gives that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/james-h-mccabe-iii"
+"d2ad5b5e32bc","John","Gallagher","","iFIT","Sports Marketing Partnerships Director","Hi John,
+Quick note given your sports marketing partnerships work at iFIT. Athlete and trainer partnerships tend to land harder when there's a real, verified progress story behind them, not a staged transformation.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi John,
+Quick follow up. A verified scan could give partnership content something authentic to point to, beyond a testimonial. FitXpress returns a full body scan and composition read from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/jpgallagher85"
+"783b462f283b","Kaitlyn P.","McIntyre","","iFIT","Director of Content & Product Strategy","Hi Kaitlyn,
+Saw your activity around content and product strategy at iFIT. Content resonates more when it's tied to a real progress moment a member experienced, not a generic before-and-after claim.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Kaitlyn,
+Quick follow up. A verified scan gives content strategy an authentic data point to build member stories around, rather than self-reported photos. FitXpress returns that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/kaitlynmcintyre"
+"a8b2bbc98700","Kathleen","White","","iFIT","Director of Marketing","Hi Kathleen,
+Quick idea for you, given your marketing role across iFIT's brands. A visible progress story tends to convert better in marketing than a features list, especially in a crowded connected-fitness market.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Kathleen,
+Quick follow up. A verified before-and-after scan gives marketing a real result to feature, not a staged one. FitXpress returns a full body scan and composition read from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/kathleen-white-a92a597"
+"ba771ca9d0ba","Kirsten","S.","","iFIT","Senior Vice President Marketing, Head of International Marketing","Hi Kirsten,
+Couldn't help but ask, given your marketing leadership at iFIT. A verified progress story tends to travel well internationally, since the proof point isn't tied to one market's fitness culture.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Kirsten,
+Quick follow up. A body-scan feature could give international marketing a consistent progress story across markets, without adapting the claim per region. FitXpress delivers that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/kirstenspittelsloan"
+"7057dc85039c","Maddie","McClure","","Ladder","Head of Lifecycle Marketing","Hi Maddie,
+Quick thought given your lifecycle and retention work at Ladder. A lot of retention gaps trace back to the same thing: members can't see the physical change their coaching program is producing.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Maddie,
+Quick follow up. A verified progress signal is a natural fit for a lifecycle program built around check-ins and milestones. FitXpress returns a full body scan and composition read from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/madelinegroves"
+"ac9f4287c071","Mark","Popovitz MBA MPH","","Personify Health","Sr Director of TPA Product","Hi Mark,
+Noticed your TPA product work at Personify Health. Health platforms are under pressure to ship differentiated features fast, without a multi-quarter computer-vision build.
+We built FitXpress as a body-composition layer that drops in via API/SDK: two phone photos, 80+ measurements, under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Mark,
+Quick follow up. For a TPA product roadmap, an API-based body-scan feature is usually a faster path than an in-house build with a comparable compliance footprint. FitXpress is live in weeks, not quarters.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/markpopovitz"
+"84dab85f4c08","Melissa","Jaeger, RD, LD","","MyFitnessPal","Head of Nutrition","Hi Melissa,
+Quick note given your nutrition leadership at MyFitnessPal. Nutrition guidance lands harder for users when they can see body composition change, not just a shift in weight.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds, including fat percentage and lean mass.
+Worth a quick chat to explore?
+Nick","Hi Melissa,
+Quick follow up. A body-composition read gives a nutrition program a clearer signal that the plan is working, beyond scale weight alone. FitXpress delivers that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/melissa-jaeger-rd-ld"
+"4907421216f1","Michael","Hamblin","","iFIT","Vice President Creative Services","Hi Michael,
+Quick reaction to your content leadership work at iFIT. Storytelling around fitness tends to land harder when it's built on a real, verified progress moment rather than a member's self-reported photo.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Michael,
+Quick follow up. A verified scan gives content teams an authentic result to build a story around, without relying on staged transformations. FitXpress returns that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/michael-hamblin-281018162"
+"299f3a152147","Mitch","Hawk","","iFIT","Creative Director","Hi Mitch,
+This stood out from your creative work at iFIT. A real progress story tends to outperform a polished but generic campaign, especially in connected fitness.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Mitch,
+Quick follow up. A verified before-and-after scan gives a creative team something authentic to build a campaign around. FitXpress returns a full body scan and composition read from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/mitchhawk"
+"23912b1a326c","Natalie","Vetica","","iFIT","SR Director, Product Management at iFIT","Hi Natalie,
+Noticed your product management work at iFIT. Feature roadmaps in connected fitness tend to prioritize retention levers, and visible physical progress is one of the stronger ones available.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Natalie,
+Quick follow up. A progress feature is a fairly contained addition to an existing roadmap, since it plugs in via API rather than requiring a new build. FitXpress gives that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/natalie-vetica-pdm"
+"a9366fe57ea7","Nicholas","Kriz","","iFIT","Director, Paid Media","Hi Nicholas,
+Quick note on your paid media attribution work at iFIT. A verified progress story tends to perform well as ad creative, since it's a claim backed by data rather than a testimonial.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Nicholas,
+Quick follow up. A body-scan result could give paid creative a genuine before-and-after to test, something an attribution model can actually tie back to retention. FitXpress delivers that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/nicholas-kriz"
+"538959b75723","Priyam","Prasad","","Trainwell","Director of Influencer Marketing","Hi Priyam,
+Quick idea for you, given your influencer marketing work at Trainwell. Creator partnerships around fitness convert better when there's a verified result behind the story, not just a testimonial.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Priyam,
+Quick follow up. A verified scan could give creator partnerships a real, data-backed result to feature instead of a self-reported before-and-after. FitXpress returns that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/priyam-prasad-012"
+"822b94beef95","Randy","Tomes","","Personify Health","Senior Director, Product Strategy & Operations","Hi Randy,
+Came across your work on product strategy and portfolio at Personify Health. Employer health platforms need differentiated features fast, and a body-composition build usually takes a lot longer in-house than teams expect.
+We built FitXpress as a body-composition layer that drops in via API/SDK: two phone photos, 80+ measurements, under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Randy,
+Quick follow up. Across a multi-line health portfolio, an API-based feature is usually easier to standardize than a bespoke build per product line. FitXpress is live in weeks, not quarters.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/randy-tomes-3ab2a1101"
+"4f1d898a08f6","Robin","March","","Personify Health","Senior Director of Product Management","Hi Robin,
+Spotted something in your health-tech product background at Personify Health. Evidence-based product work tends to run into the same wall: capturing real body-composition data without pulling members into a clinic.
+We built FitXpress as a body-composition layer that drops in via API/SDK: two phone photos, 80+ measurements, under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Robin,
+Quick follow up. For a product built on evidence-based principles, having a verified body-composition input tends to strengthen the case you can make to clients. FitXpress delivers that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/robin-march-86445750"
+"509db0d020aa","Scott","Andrews, MBA, PMP","","Personify Health","Director of Product","Hi Scott,
+Quick note on your technical product management work at Personify Health. A body-composition feature is one of the trickier ones to build cleanly in-house, since it usually means a computer-vision pipeline from zero.
+We built FitXpress as a body-composition layer that drops in via API/SDK: two phone photos, 80+ measurements, under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Scott,
+Quick follow up. Given your cloud and data-platform background, the API route on a body-scan feature usually beats an in-house build on both speed and ongoing maintenance. FitXpress is live in weeks, not quarters.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/scottgandrews"
+"1cf41ad3a0bf","Stephanie","Slade, PhD","","Calibrate","Vice President, Member Care","Hi Stephanie,
+Came across your member care role at Calibrate. Members on a GLP-1 or metabolic program increasingly want to know how much of their weight loss is fat versus muscle, not just the number on the scale.
+We built FitXpress to answer that from two phone photos in under 45 seconds: fat percentage and lean mass.
+Worth a quick chat to explore?
+Nick","Hi Stephanie,
+Quick follow up. A body-composition read tends to reassure members that a program is protecting lean mass, not just driving weight down. FitXpress gives that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/stephanie-b-slade"
+"ded09d9b2806","Vidya","Rao","","Tonal","Director of Member Engagement","Hi Vidya,
+Noticed your member engagement work at Tonal, especially getting churn under 1%. Even at that level, a verified progress signal tends to catch the small group still at risk of drifting off.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Vidya,
+Quick follow up. A body-scan result could slot right into lifecycle messaging and community content, giving members something concrete to celebrate. FitXpress returns that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/vidya-rao-4565715"
+"ed39588ce14e","Amit","Patel","","MyFitnessPal","Chief Revenue Officer","Hi Amit,
+Wanted to reach out given your revenue leadership at MyFitnessPal. As GLP-1 use grows among users, a body-composition read (fat lost versus muscle kept) tends to be a stronger retention story than scale weight alone.
+We built FitXpress to surface that from two phone photos in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Amit,
+Quick follow up. A verified body-composition feature could support both retention and a premium-tier upsell story for GLP-1 users. FitXpress reads that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/patelaa"
+"0c82524d959e","Andrew","Hulsizer","","Ladder","Vice President Of Engineering","Hi Andrew,
+Quick note given your engineering leadership at Ladder. Adding body composition to a coaching app usually means building a computer-vision pipeline from scratch.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Andrew,
+Quick follow up. For an engineering team weighing build versus buy on a body-scan feature, the API route is usually live in weeks, not quarters, with compliance already handled. FitXpress runs the scan and composition read in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/andrewhulsizer"
+"70fa3f0e1b17","Blake","Watterson","","iFIT","Chief Operating Officer","Hi Blake,
+Quick thought given your operations role at iFIT. Retention at scale usually comes down to a handful of levers, and visible physical progress is one of the more reliable ones across connected fitness.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Blake,
+Quick follow up. At iFIT's scale, even a modest retention lift from a progress feature compounds fast across the subscriber base. FitXpress gives that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/blake-watterson-a016aa167"
+"a8f247c33465","Brandon","Bowden","","iFIT","Vice President, Client Engineering","Hi Brandon,
+Quick note given your client engineering role at iFIT. Adding body composition to a connected-fitness app usually means building a computer-vision pipeline from zero.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Brandon,
+Quick follow up. On the client engineering side, the API route on a body-scan feature usually means less integration and compliance work than an in-house build. FitXpress runs the scan and composition read in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/brandon-bowden-459b4b8b"
+"fa019abfa95c","Chris","Michalak","","Personify Health","Chair of the Board of Directors","Hi Chris,
+Saw your board leadership role at Personify Health. Health platforms are under pressure to ship differentiated features fast, and a body-composition build usually takes longer in-house than teams plan for.
+We built FitXpress as a body-composition layer that drops in via API/SDK: two phone photos, 80+ measurements, under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Chris,
+Quick follow up. From a board level, an API-based feature is a lower-risk bet than a multi-quarter in-house build with an uncertain accuracy bar. FitXpress is live in weeks, not quarters.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/christopher-a-michalak"
+"dde12c3d298e","David","Burt","","Hydrow","Chief Financial Officer","Hi David,
+Quick note given your finance leadership at Hydrow. A visible progress feature tends to be a low-cost, high-leverage retention lever compared to most subscription hardware investments.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi David,
+Quick follow up. On the numbers, a small retention lift from a progress feature compounds meaningfully against LTV for a connected-fitness subscription. FitXpress delivers that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/david-burt"
+"6a7bd6d6c1b7","Dustin","Manderfeld","","MyFitnessPal","Vice President, Data & ML/AI Engineering","Hi Dustin,
+Quick note given your data and ML engineering leadership at MyFitnessPal. Adding body composition to a logging app usually means building a computer-vision pipeline in-house.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Dustin,
+Quick follow up. From a data platform view, the API route means you get structured body-composition data without owning the CV model or its drift. FitXpress runs the scan and composition read in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/dmanderfeld"
+"953281e00d83","Gary","Fletcher","","iFIT","Chief Operating Officer","Hi Gary,
+Quick note given your operations background at iFIT. Retention at scale usually rests on a handful of levers, and visible physical progress is one of the more dependable ones in connected fitness.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Gary,
+Quick follow up. Rolling out a progress feature across an operation the size of iFIT's is more of an integration project than a build, since it runs on an existing API. FitXpress delivers that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/garyfletcher1"
+"7e91ff5f97b5","Gregory","de Gunzburg","","Tonal","Chief Strategy Officer","Hi Gregory,
+Quick thought given your strategy role at Tonal. In connected fitness, the strategic bets that tend to pay off fastest are the ones tied directly to retention, and visible progress is one of the clearer ones.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Gregory,
+Quick follow up. A verified progress feature is a fairly low-risk strategic bet since it plugs in via API rather than requiring a new build cycle. FitXpress gives that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/gdegunz"
+"a7c0ba86fcfc","Herving","Sanchez","","MyFitnessPal","Chief Financial Officer","Hi Herving,
+Wanted to reach out given your finance leadership at MyFitnessPal. As GLP-1 use grows among users, a body-composition read tends to be a stronger retention and upsell story than scale weight alone.
+We built FitXpress to surface that from two phone photos in under 45 seconds: fat percentage and lean mass.
+Worth a quick chat to explore?
+Nick","Hi Herving,
+Quick follow up. A verified body-composition feature is a fairly contained cost to add, and the retention upside for GLP-1 users could be meaningful against LTV. FitXpress reads that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/hervingsanchez"
+"7679c39d94b1","Jason","McMurdie","","iFIT","Senior Vice President of Technology","Hi Jason,
+Quick note given your technology leadership at iFIT. Adding body composition to a connected-fitness platform usually means building a computer-vision pipeline from zero.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Jason,
+Quick follow up. Given your digital and AI transformation focus, an API-based body-scan feature usually fits the ""buy the commodity, build the differentiator"" pattern. FitXpress runs the scan and composition read in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/cio-jason"
+"a17f0a29694d","Jason","Poquette","","Personify Health","Vice President of Platform Engineering","Hi Jason,
+Quick note given your platform engineering leadership at Personify Health. Adding body composition to a health platform usually means building a computer-vision pipeline from zero.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Jason,
+Quick follow up. For a platform team focused on predictable operating models, the API route on a body-scan feature keeps the compliance and CV maintenance off your plate. FitXpress runs the scan and composition read in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/jason-poquette"
+"87b4cd4d9929","John","LaGue","","Trainwell","Chief Operating Officer","Hi John,
+Quick thought given your operating role at Trainwell. Coaching subscriptions tend to hold onto members longest when there's a real physical result behind the coaching relationship, not just session logs.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi John,
+Quick follow up. Trainwell's coaches already work off progress photos, a verified scan just makes that comparison structured and repeatable. FitXpress returns a full body scan and composition read from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/john-lague"
+"71ccd3bb6a34","Justis","Weller","","Personify Health","Vice President, Production Engineering","Hi Justis,
+Quick note given your infrastructure and cloud architecture work at Personify Health. Adding body composition to a health platform usually means building a computer-vision pipeline from zero.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Justis,
+Quick follow up. From an infrastructure lens, the API route means no new model to host or retrain, just a call that returns a scan and composition read in under 45 seconds. FitXpress handles that.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/justisweller"
+"7210058e5eeb","Kirk","Rosin","","Personify Health","Chief Commercial Officer (CCO)","Hi Kirk,
+Quick note given your commercial leadership at Personify Health. Health plans and employers are pushing for differentiated features fast, and a body-composition build usually takes longer in-house than teams expect.
+We built FitXpress as a body-composition layer that drops in via API/SDK: two phone photos, 80+ measurements, under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Kirk,
+Quick follow up. From a commercial standpoint, an API-based feature is a faster story to bring to clients than a multi-quarter roadmap item. FitXpress is live in weeks, not quarters.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/kirkrosin"
+"3b944cacc3ce","Lauren","Foundos","","Echelon","President of SaaS Partnerships & Sales","Hi Lauren,
+Quick note given your partnerships and sales leadership at Echelon. Connected fitness members tend to renew longer when they can see the physical result their equipment investment is producing.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Lauren,
+Quick follow up. A verified progress feature could be a strong addition to a SaaS or partner story for Echelon, something concrete beyond the hardware itself. FitXpress gives that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/lfoundos"
+"a07975c39c57","Manuel","Rosso","","Hydrow","President / Chief Commercial Officer","Hi Manuel,
+Quick note given your commercial leadership at Hydrow. Connected fitness members tend to renew longer when they can see the physical result their rower is producing, not just workout minutes.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Manuel,
+Quick follow up. A verified progress feature tends to move retention more than another content drop, and it's a fairly contained cost to add. FitXpress gives that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/manuelrosso"
+"13e36e2ade6d","Marnie","Boyer","","MyFitnessPal","Chief Marketing Officer","Hi Marnie,
+Wanted to reach out given your brand and growth leadership across MyFitnessPal and Cal AI. As GLP-1 use grows among users, a body-composition story tends to build more trust than a scale-weight number alone.
+We built FitXpress to surface that from two phone photos in under 45 seconds: fat percentage and lean mass.
+Worth a quick chat to explore?
+Nick","Hi Marnie,
+Quick follow up. A verified fat-versus-muscle story could give brand and growth a differentiated angle across a two-brand portfolio, backed by real data rather than a testimonial. FitXpress reads that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/marnieboyer"
+"0f4927579e5b","Matt","Krokosz","","Calibrate","Chief Technology Officer","Hi Matt,
+Quick note given your engineering leadership at Calibrate. Adding body composition to a metabolic health platform usually means building a computer-vision pipeline from zero.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Matt,
+Quick follow up. Given your applied AI and platform focus, the API route on body composition means no CV model to own or retrain, just fat percentage and lean mass in under 45 seconds. FitXpress handles that end to end.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/mattkrokosz"
+"339a9874c486","Paul","Merrick","","Calibrate","Chief Operating Officer","Hi Paul,
+Wanted to reach out given your operations background across digital health and metabolic care. As GLP-1 programs scale, a body-composition read tends to matter more to members than scale weight alone.
+We built FitXpress to surface that from two phone photos in under 45 seconds: fat percentage and lean mass.
+Worth a quick chat to explore?
+Nick","Hi Paul,
+Quick follow up. Operationally, a body-composition feature is a fairly contained rollout since it runs on an existing API rather than a new build. FitXpress returns fat percentage and lean mass from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/paul-merrick-01b74462"
+"9d0c59f80fc1","Peter","Vogel","","Hydrow","Distinguished Engineer and Chief Hydrow Architect","Hi Peter,
+Quick note given your architecture work on Hydrow's platform. Adding body composition to a connected rowing platform usually means building a computer-vision pipeline from zero.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Peter,
+Quick follow up. For a backend built around scalability, the API route on a body-scan feature avoids adding a new model to host and maintain. FitXpress runs the scan and composition read in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/pvogel"
+"34c82d04ff9d","Reuben","Kabel","","Hydrow","Chief Technology Officer","Hi Reuben,
+Quick note given your CTO role at Hydrow. Adding body composition to a connected rowing platform usually means building a computer-vision pipeline from zero.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Reuben,
+Quick follow up. From a CTO's seat, the build-versus-buy call on body composition usually comes down to speed and who owns the compliance surface. FitXpress ships that via API, live in weeks, in under 45 seconds per scan.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/reubenkabel"
+"11d111dba604","Savio","Fernandes","","Echelon","Chief Financial Officer","Hi Savio,
+Quick note given your finance leadership across consumer and retail brands. A visible progress feature tends to be a low-cost, high-leverage retention lever compared to most subscription hardware spend.
+We built FitXpress so two phone photos turn into a full body scan and progress read in under 45 seconds.
+Worth a quick chat to explore?
+Nick","Hi Savio,
+Quick follow up. On the margin side, a small retention lift from a progress feature compounds against LTV faster than most connected-fitness product bets. FitXpress delivers that from two phone photos in under 45 seconds.
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/saviofernandesmba"
+"ee5ca1d6a08d","Ummair","Waheed","","Fitbod","VP of Engineering","Hi Ummair,
+Quick note given your engineering role at Fitbod. Adding body composition to a strength training app usually means building a computer-vision pipeline from zero.
+FitXpress ships as an API/SDK: two phone photos in, 80+ measurements and a body composition read out in under 45 seconds.
+Might be worth a quick chat?
+Nick","Hi Ummair,
+Quick follow up. As Fitbod pushes into AI coaching, the API route gets you a verified progress signal without owning a CV model or its upkeep. FitXpress runs the scan and composition read in under 45 seconds.
+Worth 10 min? Link if useful: https://meetings.hubspot.com/nick-omelchak
+Nick","US-DigitalFitness-Aug2026","https://www.linkedin.com/in/ummair"
