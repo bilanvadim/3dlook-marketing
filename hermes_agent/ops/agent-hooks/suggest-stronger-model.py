@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
-"""pre_llm_call hook: offer the council when the task looks too heavy for one small model.
+"""pre_llm_call hook: offer the strong chain when the task looks too heavy for the
+everyday agentic model.
 
-Sergiy's stack is free-only (see the 2026-07-31 decision), so "a stronger model"
-is not a bigger single model — there isn't one available. The escalation target
-is the MoA preset `council`: two free advisors plus the proven primary acting as
-aggregator. This hook is the trigger that was missing; the target already exists.
+The escalation target is llm-failover-proxy's STRONG chain (list A), reached with
+`/heavy` — the switcher borrows the whole chain for this tab, so the model is chosen
+per request by failover instead of being one id that may be dead right now. Returning
+is `/normal`, which drops the override back to the everyday agentic chain (list B).
+
+Was the MoA council until 2026-08-10: at the time there was no stronger single target
+to point at. Now there is a chain, and it is both faster and cheaper in quota than
+running two advisors plus an aggregator on every heavy turn.
 
 Why a hook and not the model's own judgement: the acting model here is small
 (`mimo-v2.5-free`). Asking it to notice "this is beyond me" is exactly the
@@ -34,40 +39,35 @@ STATE = os.path.expanduser("~/.hermes/.moa-suggest-state.json")
 PICK = os.path.expanduser("~/.hermes/model-router/pick.json")
 
 
-def _primary():
-    """Today's model, read fresh. Hardcoding it made the way-back advice wrong
-    within a day: the morning router repicks the primary."""
-    try:
-        with open(PICK, encoding="utf-8") as f:
-            return json.load(f).get("primary") or "модель дня"
-    except Exception:
-        return "модель дня"
-TARGET = "moa:council"
+TARGET = "/heavy"
+BACK = "/normal"
 RESUGGEST_AFTER_S = 6 * 3600      # same session, only after a long gap
-MIN_CHARS = 80                    # below this nothing is heavy, whatever it says
-THRESHOLD = 3
+# The heaviness test lives in ops/task-heaviness.py and is shared with the
+# claude-switcher. It used to be duplicated here, and the two copies disagreed on
+# exactly the traffic that matters — see that file's header. Imported by path because
+# a hook has no package to import from.
+import importlib.util as _ilu
 
-# Verbs that describe work spanning many files/sources, not a single edit.
-_HEAVY = re.compile(
-    r"(?:^|\W)(?:"
-    r"спроектир|архитектур|мигрир|миграци|рефактор|аудит|проанализир|"
-    r"сравн|исследу|разбер|собер[иь]|реестр|каталог|стратеги|"
-    r"design|architect|migrat|refactor|audit|analy[sz]e|compare|research|"
-    r"investigat|inventory|catalog"
-    r")", re.I)
 
-# "all/every" turns one item into a sweep.
-_SWEEP = re.compile(
-    r"(?:^|\W)(?:вес[ьяео]|всех|все|всё|каждо?[йгеюм]|полност|"
-    r"\ball\b|\bevery\b|\bentire\b|\bwhole\b)", re.I)
+def _load_scorer():
+    for cand in (os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "task-heaviness.py"),
+                 os.path.expanduser("~/.hermes/task-heaviness.py")):
+        try:
+            spec = _ilu.spec_from_file_location("task_heaviness", os.path.normpath(cand))
+            if not spec or not spec.loader:
+                continue
+            mod = _ilu.module_from_spec(spec)
+            spec.loader.exec_module(mod)
+            return mod
+        except Exception:
+            continue
+    return None
 
-_PATHISH = re.compile(r"(?:https?://\S+|(?:/[\w.-]+){2,}|\b[\w-]+\.(?:ts|tsx|py|md|json|ya?ml|sql)\b)")
-_LIST_ITEM = re.compile(r"^\s*(?:\d+[.)]|[-*•])\s+\S", re.M)
 
-# Control traffic and one-word replies are never tasks.
-_NOT_A_TASK = re.compile(
-    r"^\s*(?:/|стоп|останов|отмен|пауза|продолж|поехали|go\b|да\b|нет\b|ок\b|ok\b)", re.I)
-
+_TH = _load_scorer()
+RESUGGEST_AFTER_S = 6 * 3600      # same session, only after a long gap
+MIN_CHARS = getattr(_TH, "MIN_CHARS", 80)
+THRESHOLD = getattr(_TH, "THRESHOLD", 3)
 
 def _load_state():
     try:
@@ -91,37 +91,6 @@ def _mark(session_id):
     os.replace(tmp, STATE)
 
 
-def score(text):
-    """Mechanical heaviness score. Every point is something you can point at."""
-    pts = 0
-    why = []
-    n = len(text)
-    if n > 1200:
-        pts += 2; why.append("очень длинный запрос")
-    elif n > 400:
-        pts += 1; why.append("длинный запрос")
-
-    heavy = len(set(m.group(0).strip().lower() for m in _HEAVY.finditer(text)))
-    if heavy:
-        pts += min(heavy, 2); why.append("работа сразу по многим объектам")
-
-    paths = len(_PATHISH.findall(text))
-    if paths >= 3:
-        pts += 1; why.append(f"{paths} путей/ссылок")
-
-    if len(_LIST_ITEM.findall(text)) >= 3:
-        pts += 1; why.append("список из нескольких пунктов")
-
-    # The strongest single signal, and worth two on its own: a sweeping verb
-    # plus "all/every" is a task that repeats over a set, and length says
-    # nothing about how big that set is. "Обойди все страны ЕС" is 25 words and
-    # weeks of work; a 1200-character bug report is one fix.
-    if heavy and _SWEEP.search(text):
-        pts += 2; why.append("«все/каждый» — это обход множества, а не один случай")
-
-    return pts, why
-
-
 def main():
     try:
         payload = json.load(sys.stdin)
@@ -134,22 +103,20 @@ def main():
     model = str(payload.get("model") or "")
     session_id = str(payload.get("session_id") or "")
 
-    # Already on the council (or any MoA preset) — nothing to offer.
-    if "moa" in model.lower() or "council" in model.lower():
+    # Already escalated — nothing to offer. Both the MoA presets and the strong
+    # chain count: the chain answers as "auto" on port 47822, so the model id alone
+    # cannot tell them apart and the base_url is what carries the truth.
+    low = model.lower()
+    if "moa" in low or "council" in low or "47822" in str(payload.get("base_url") or ""):
         return
-    if len(msg.strip()) < MIN_CHARS or _NOT_A_TASK.match(msg):
-        return
-
-    # A forwarded client message is not Sergiy choosing to start heavy work; the
-    # switcher marks those, and the offer would land on the wrong decision.
-    if msg.lstrip().startswith("↪️") or "[Пересланное сообщение" in msg:
-        return
+    # Gates (floor, acks, forwards) live in the shared scorer — it returns 0 points
+    # for all of them, so a single threshold check below covers every case.
 
     last = _load_state().get(session_id)
     if isinstance(last, (int, float)) and time.time() - last < RESUGGEST_AFTER_S:
         return
 
-    pts, why = score(msg)
+    pts, why = (_TH.score(msg) if _TH else (0, []))
     if pts < THRESHOLD:
         return
 
@@ -157,11 +124,11 @@ def main():
     reason = ", ".join(why[:3])
     print(json.dumps({"context": (
         "[Подсказка системы, не от пользователя] Задача оценена как тяжёлая для "
-        f"текущей модели ({reason}). ПЕРВОЙ строкой ответа предложи одним "
-        f"предложением переключиться на совет моделей: `/model {TARGET}` "
-        "(два советника + агрегатор), и упомяни, что вернуться можно через "
-        f"`/model {_primary()}`. Затем ВЫПОЛНЯЙ задачу как обычно — это "
-        "предложение, а не блокировка, и ждать ответа не нужно."
+        f"текущей агентной модели ({reason}). ПЕРВОЙ строкой ответа предложи одним "
+        f"предложением переключиться на сильную цепочку: `{TARGET}` — модель на "
+        "каждый запрос выберет llm-fop перебором по списку A. Упомяни, что "
+        f"вернуться можно командой `{BACK}`. Затем ВЫПОЛНЯЙ задачу как обычно — "
+        "это предложение, а не блокировка, и ждать ответа не нужно."
     )}, ensure_ascii=False))
 
 

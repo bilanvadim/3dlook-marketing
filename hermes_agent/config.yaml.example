@@ -130,6 +130,19 @@ tts:
 stt:
   enabled: true
   provider: groq
+  # SET THIS. `stt.language` defaults to "en" upstream and applies to EVERY provider,
+  # local Whisper included — so leaving it out does NOT mean auto-detect, it means
+  # "transcribe as English". Whisper obeys: Russian speech comes back as broken
+  # English prose and whatever will not fit is dropped. Measured on one 24s Russian
+  # clip: language=en → 335 chars, ZERO Cyrillic ("Hello, this is a test of knowledge
+  # of the speech…"); language=ru → 343 chars against a 344-char source, complete.
+  # Use "" (empty) for real auto-detect when the audio language varies.
+  language: ru
+  # Silence trimming before a CLOUD upload saves quota but at the default -40 dB it
+  # eats quiet speech — an observed 38.6s voice message was cut to 10.8s (-72%) and
+  # the transcript lost the middle of the sentence. Irrelevant while provider: local,
+  # but wrong the moment you switch to groq.
+  cloud_trim_silence: false
   local:
     model: base
   openai:
