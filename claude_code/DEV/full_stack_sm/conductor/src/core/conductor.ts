@@ -188,6 +188,14 @@ export function mapSdkMessage(msg: any): { events: Event[]; type: string; toolNa
 const ASK_PATTERNS = [
   /wrangler\s+(deploy|publish)/i, /terraform\s+(apply|destroy)/i,
   /supabase\s+db\s+push/i, /gh\s+pr\s+merge/i,
+  // Data loss was not represented here at all: a recursive delete, a hard reset or a
+  // DROP proposed mid-run went straight to Claude Code's own permission layer, which is
+  // only as strict as the work_dir's settings. These four put a Telegram gate in front of
+  // them for every profile and every work_dir, regardless of project settings.
+  /\brm\s+-[a-z]*r[a-z]*/i,
+  /\bgit\s+reset\s+--hard\b/i,
+  /\bgit\s+clean\s+-[a-z]*f/i,
+  /\b(DROP\s+(TABLE|DATABASE|SCHEMA)|TRUNCATE)\b/i,
 ];
 function asksForGatedAction(signature?: string): string | null {
   if (!signature) return null;
