@@ -19,7 +19,15 @@
 # ----------------------------------------------------------------------------
 set -uo pipefail
 
-VADIM_CONDUCTOR_DIR="/home/vadim_prod/3dlook-marketing/claude_code/DEV/full_stack_sm/conductor"
+# 2026-08-12: the managed conductor moved to the CANONICAL tree, so the path guard has to
+# cover BOTH — the old project checkout (where a stray nohup could still be started from) and
+# the new runtime dir. Left as only the old path, this guard silently stopped catching anything:
+# a rogue from /srv/vadim_prod/... failed the path test and kept squatting :3001.
+# The cgroup test below is what protects the LEGIT managed process in either location.
+VADIM_CONDUCTOR_DIRS=(
+  "/srv/vadim_prod/ai-agents-config/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev/conductor"
+  "/home/vadim_prod/3dlook-marketing/claude_code/DEV/full_stack_sm/conductor"
+)
 VADIM_UID=1006
 DRY_RUN="${DRY_RUN:-0}"
 ts() { date -u '+%Y-%m-%dT%H:%M:%SZ'; }
@@ -34,10 +42,11 @@ for pid in $(pgrep -f "src/core/conductor.ts" 2>/dev/null); do
 
   # (1) path guard — must be Vadim's conductor, never Sergiy's (/srv/sergiy_prod/*)
   cmdline="$(tr '\0' ' ' < "/proc/$pid/cmdline" 2>/dev/null)" || continue
-  case "$cmdline" in
-    *"$VADIM_CONDUCTOR_DIR"*) : ;;
-    *) continue ;;
-  esac
+  match=0
+  for d in "${VADIM_CONDUCTOR_DIRS[@]}"; do
+    case "$cmdline" in *"$d"*) match=1; break ;; esac
+  done
+  [ "$match" = 1 ] || continue
 
   # (2) owner guard — must be uid 1006
   puid="$(awk '/^Uid:/{print $2; exit}' "/proc/$pid/status" 2>/dev/null)"
