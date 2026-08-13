@@ -36,9 +36,12 @@ BLOCK = [
 ]
 # Confirm (ask the human) — prod-affecting / risky-but-sometimes-legit
 ASK = [
+# NO blanket "rm -r" entry here, deliberately: in a HEADLESS run an ASK is effectively a DENY, so
+# gating every recursive delete would break routine dependency cleanup (rm -rf node_modules).
+# A delete that LEAVES the work_dir is a BLOCK above; anything inside it is gated by the
+# conductor's own ASK_PATTERNS over Telegram, where a human can actually answer.
     # Any other recursive delete (a relative path inside the project) — legitimate
     # sometimes, but a headless run must not decide this on its own.
-    (r"\brm\s+-[a-z]*r[a-z]*", "recursive delete"),
     (r"\b(vercel\s+--prod|vercel\s+deploy|wrangler\s+(deploy|publish))\b", "production deploy"),
     (r"\bterraform\s+(apply|destroy)\b", "infrastructure change"),
     (r"\bsupabase\s+db\s+push\b", "applying migrations to a live database"),
