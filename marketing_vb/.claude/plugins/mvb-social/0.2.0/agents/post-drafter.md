@@ -144,7 +144,7 @@ created: YYYY-MM-DD
 3. **Do not use**: em-dash in rhetorical constructions, "It's not just X, it's Y", triple parallelisms, banned words.
 4. **Profile tone.** Personal profiles — first person. Company — third person or "we".
 5. **LinkedIn: `brand-assets/linkedin-post-prompts.md` is binding.** Never write a `linkedin-*` post without reading that profile's section first. Never exceed 1-2 emoji and never add hashtags, whatever the Doc's own numbers say.
-6. **After writing** — call `brand-checker`. PASS → save. FAIL → rewrite (max 2 iterations, then WARNING).
+6. **After writing** — call `post-brand-checker`. PASS → save. FAIL → rewrite (max 2 iterations, then WARNING).
 
 ## Where to save
 

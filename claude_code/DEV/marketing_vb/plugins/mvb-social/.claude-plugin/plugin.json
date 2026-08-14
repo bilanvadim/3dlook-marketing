@@ -1,6 +1,6 @@
 {
   "name": "mvb-social",
-  "description": "Vadim social media pipeline: social-planner (Opus, 9 angles) → post-drafter ×9 (Opus, parallel) → social-editor (Opus, 3-pass audit) → social-publisher (Sonnet, manifest + report). Plus brand-checker (Sonnet, per-post validation), social-analytics (Opus, quarterly), quarterly-strategist, visual-brief.",
+  "description": "Vadim social media pipeline: social-planner (Opus, 9 angles) → post-drafter ×9 (Opus, parallel) → social-editor (Opus, 3-pass audit) → social-publisher (Sonnet, manifest + report). Plus post-brand-checker (Sonnet, per-post validation), social-analytics (Opus, quarterly), quarterly-strategist, visual-brief.",
   "version": "0.2.0",
   "author": { "name": "Vadim Bilan" }
 }

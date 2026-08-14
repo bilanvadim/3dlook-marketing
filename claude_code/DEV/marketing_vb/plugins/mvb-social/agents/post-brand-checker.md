@@ -1,6 +1,6 @@
 ---
-name: brand-checker
-description: Перевіряє пост на відповідність brand voice (CLAUDE.md + about-me.md). Викликається post-drafter після написання поста. PASS → зберегти, FAIL → переписати.
+name: post-brand-checker
+description: Швидка перевірка ОДНОГО соцпоста на brand voice (10-пунктний чек-лист). Викликається post-drafter після написання поста. PASS → зберегти, FAIL → переписати. Це НЕ глибокий `brand-checker` з mvb-core — той звіряє числа з proof-points.md, токени DESIGN.md і правила M1/M2; для брифів, статей і outbound бери його.
 model: sonnet
 tools: Read, Grep
 ---

@@ -28,7 +28,7 @@ Orchestrator (ты)
 
 | Запрос Вадима | Workflow | Агенты |
 |---------------|----------|--------|
-| «Напиши пост для LinkedIn» / `/weekly-posts` | **Social** | context-pack-builder → post-drafter → brand-checker → QC → [Vadim] → visual-brief |
+| «Напиши пост для LinkedIn» / `/weekly-posts` | **Social** | context-pack-builder → post-drafter → post-brand-checker → QC → [Vadim] → visual-brief |
 | «Запусти outbound кампанию» / `/outbound` | **Outbound** | context-pack-builder → hypothesis-generator → [Vadim] → company-researcher → ... |
 | «Напиши статью» / `/new-article` | **SEO** | context-pack-builder → seo-planner (**Phase 0 strategy gate**) → [Vadim] → seo-writer → seo-editor → seo-publisher → [Vadim] |
 | «Спланируй квартал» / `/quarterly-review` | **Strategy** | context-pack-builder → quarterly-strategist → [Vadim] |
@@ -93,7 +93,7 @@ Next action: {что Вадим делает руками}
 context-pack-builder
   → quarterly-strategist (если нет плана на этот Q)
   → post-drafter (per profile, sequential)
-  → brand-checker (каждый пост)
+  → post-brand-checker (каждый пост)
   → quality-controller (каждый пост)
   → [VADIM checkpoint per post]
   → visual-brief (только для approved posts)
