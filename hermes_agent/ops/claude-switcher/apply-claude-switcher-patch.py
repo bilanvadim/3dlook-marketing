@@ -259,6 +259,25 @@ ADAPTER_IQ_INSERT = (
     '                logger.debug("claude-switcher: fwd prefilter registration failed", exc_info=True)\n'
 )
 
+# 0.20 moved handler registration out of connect() into `_register_handlers(self,
+# app)`: one indent level shallower, and the Application is a parameter (`app`)
+# rather than `self._app`. Derive the variant instead of keeping a second copy —
+# the two must never drift.
+ADAPTER_IQ_ANCHOR_020 = (
+    '        # Handle inline keyboard button callbacks (update prompts)\n'
+    '        app.add_handler(CallbackQueryHandler(self._handle_callback_query))\n'
+)
+
+
+def _dedent_to_register_handlers(text):
+    lines = [ln[4:] if ln.startswith("    ") else ln for ln in text.split("\n")]
+    return "\n".join(lines).replace("self._app.add_handler", "app.add_handler")
+
+
+ADAPTER_IQ_INSERT_020 = _dedent_to_register_handlers(ADAPTER_IQ_INSERT)
+# Distinctive and identical in both variants — safe as the "already applied" test.
+ADAPTER_IQ_PRESENT = "[hermes-switcher] inline-mode system launcher"
+
 # --- adapter.py: preserve forward provenance across text batching ----------
 ADAPTER_FWD_ANCHOR = (
     '            # Merge any media that might be attached\n'
@@ -411,6 +430,15 @@ def _patch_file(path, edits):
     given release simply does not have — never for the switcher's own wiring,
     which must fail loudly so a half-installed bar is not mistaken for a working
     one.
+
+    A missing anchor fails the RUN (caller exits 2) but no longer discards the
+    edits that DID resolve. It used to: ``if missing: return missing`` sat above
+    the write, so 0.20 rewording the *inline-query* seam silently dropped the
+    ``csw:`` panel branch and the ``ho:`` escalation branch too — every inline
+    button in Telegram dead for two days while the reply-keyboard bar (plain
+    text, patched in run.py) kept working and made it look installed. Landing
+    what resolved keeps one cosmetic drift from taking the whole adapter with it;
+    the loud exit 2 still says the install is incomplete.
     """
     with open(path, "r", encoding="utf-8") as f:
         s = f.read()
@@ -435,17 +463,18 @@ def _patch_file(path, edits):
             (skipped if optional else missing).append(name)
             continue
         todo.append((name, hit, replacement(hit) if callable(replacement) else replacement))
-    if missing:
-        return missing
     if skipped:
         print(f"  (skipped, seam absent in this upstream: {', '.join(skipped)})")
-    if not todo:
-        return "already"
-    for _name, hit, replacement in todo:
-        s = s.replace(hit, replacement, 1)
-    with open(path, "w", encoding="utf-8") as f:
-        f.write(s)
-    return "patched"
+    if todo:
+        for _name, hit, replacement in todo:
+            s = s.replace(hit, replacement, 1)
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(s)
+    if missing:
+        if todo:
+            print(f"  (partial: applied {', '.join(n for n, _, _ in todo)})")
+        return missing
+    return "patched" if todo else "already"
 
 
 def after(insert):
@@ -513,7 +542,10 @@ def main():
         ("escalation-callback", [ADAPTER_ANCHOR, ADAPTER_ANCHOR_016],
          lambda a: (a + ADAPTER_HO_INSERT) if a is ADAPTER_ANCHOR else (ADAPTER_HO_INSERT + a),
          ADAPTER_HO_PRESENT, True),
-        ("inline-query", ADAPTER_IQ_ANCHOR, after(ADAPTER_IQ_INSERT)),
+        ("inline-query", [ADAPTER_IQ_ANCHOR_020, ADAPTER_IQ_ANCHOR],
+         lambda a: a + (ADAPTER_IQ_INSERT_020 if a is ADAPTER_IQ_ANCHOR_020
+                        else ADAPTER_IQ_INSERT),
+         ADAPTER_IQ_PRESENT),
         ("fwd-provenance", ADAPTER_FWD_ANCHOR, after(ADAPTER_FWD_INSERT)),
     ])
     if isinstance(r, list):
