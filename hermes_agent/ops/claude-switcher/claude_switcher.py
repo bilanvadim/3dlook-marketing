@@ -189,9 +189,322 @@ _SYS_EXAMPLE: Dict[str, str] = {
                    "и дай отчёт с приоритетами и фиксами",
 }
 
+# --- Marketing pipelines of Vadim's system (profile marketing_vb_sm) --------
+# A ROUTE is what a tap or a keyword actually launches: a conductor profile PLUS
+# the pipeline entry point inside it. Until now the bot could only name a
+# PROFILE, and CMD_TO_PROFILE knows four — none of them Vadim's marketing system.
+# So every article/post/outbound run had to be enqueued by Hermes hand-writing
+# `insert into ho_jobs` SQL, and on 2026-08-17 that produced job 88: work_dir at
+# the repo ROOT (where marketing_vb's brand-assets/ and workspace/ do not exist),
+# the brief re-typed as prose instead of calling /post-from-article, and two
+# ho_steps rows that silently routed the whole run into the dev step-verifier
+# (`npx ultracite lint`, `npm test` in a tree with no package.json) → gates failed
+# 3× → "blocked" → approved by hand in Telegram → job reported `done` with zero
+# posts written.
+#
+# Everything a route needs is therefore decided HERE, once:
+#   profile  — ho_jobs.profile (which plugin set the SDK session loads)
+#   work_dir — the profile manifest's `runFrom`, never the repo root
+#   prompt   — the pipeline's own slash command, not a re-typed brief
+#   prepare  — a precheck that can refuse early, in Telegram, with a reason
+# ho_steps is never written for these: that table is what turns a job into a
+# dev-style step run, and a content pipeline carries its own QC
+# (quality-controller / post-brand-checker) plus Vadim's approval as its gate.
+
+_MVB_PROFILE = "marketing_vb_sm"
+
+
+def _profiles_dir() -> str:
+    """Where profiles/<name>.json live. Env first (same knob the conductor unit
+    uses), then Vadim's canonical tree — the /srv install has no marketing_vb*."""
+    return (os.environ.get("HO_PROFILES_DIR")
+            or os.path.expanduser("~/3dlook-marketing/claude_code/DEV/profiles"))
+
+
+def _profile_run_from(profile: str) -> Optional[str]:
+    """The directory a profile must run FROM (`runFrom` in its manifest), or None.
+
+    Resolved exactly like switch-profile.sh does it: relative to the manifest
+    dir's PARENT (the DEV dir), absolute paths honored as-is. This is the whole
+    reason work_dir is not guessed: marketing_vb's agents read brand-assets/,
+    workspace/ and CLAUDE.md by RELATIVE path, so a session started anywhere
+    else sees none of it and produces confidently generic output."""
+    try:
+        pdir = _profiles_dir()
+        with open(os.path.join(pdir, f"{profile}.json"), encoding="utf-8") as f:
+            v = (json.load(f) or {}).get("runFrom") or ""
+        if not v:
+            return None
+        p = v if os.path.isabs(v) else os.path.normpath(os.path.join(os.path.dirname(pdir), v))
+        return p if os.path.isdir(p) else None
+    except Exception:
+        logger.debug("csw: runFrom lookup failed for %r", profile, exc_info=True)
+        return None
+
+
+def _mvb_dir() -> str:
+    """marketing_vb project root. Manifest first, then the well-known path — a
+    missing manifest must not silently move the run to the projects root."""
+    return _profile_run_from(_MVB_PROFILE) or os.path.expanduser("~/3dlook-marketing/marketing_vb")
+
+
+def _mvb_slug(text: str) -> str:
+    """Accept a slug, a quoted slug, or the live URL of the article."""
+    t = (text or "").strip().strip('"\'' + "`").rstrip("/")
+    if "://" in t:
+        t = t.split("?")[0].rstrip("/").rsplit("/", 1)[-1]
+    return t.split()[0] if t else ""
+
+
+def _mvb_articles(limit: int = 8) -> List[str]:
+    """Newest article slugs in the SEO workspace — shown when a slug is missing,
+    so the answer to "which one?" is in the same message as the question."""
+    d = os.path.join(_mvb_dir(), "workspace", "seo", "articles")
+    try:
+        items = [(os.path.getmtime(os.path.join(d, n)), n) for n in os.listdir(d)
+                 if os.path.isdir(os.path.join(d, n))]
+    except OSError:
+        return []
+    return [n for _, n in sorted(items, reverse=True)[:limit]]
+
+
+def _md_status(path: str) -> str:
+    """`status:` from a markdown artifact's frontmatter ('' if absent)."""
+    try:
+        with open(path, encoding="utf-8", errors="replace") as f:
+            for line in f.read(4000).splitlines()[:25]:
+                if line.startswith("status:"):
+                    return line.split(":", 1)[1].strip()
+    except OSError:
+        pass
+    return ""
+
+
+# Statuses that mean "Vadim signed this off". Not a gate (see below) — only what
+# the confirmation message calls approved vs still-in-review.
+_MVB_APPROVED = ("approved_for_publish", "ready_for_cms_import", "final_approved",
+                 "published", "live")
+
+
+def _mvb_article_source(slug: str) -> Tuple[Optional[str], Optional[str], Optional[str]]:
+    """(source file, note, error) for a social run on `slug`.
+
+    Picks the file the posts will be written FROM, and says which one it picked.
+    Order: top-level publish-package.md → the newest publish-package.md in a
+    version sub-dir (`v3/`, `v2-asselya/`…) → the newest final-ish draft.
+
+    NOT A STATUS GATE, on purpose. /post-from-article used to refuse anything whose
+    status was not `approved_for_publish`, and the SEO pipeline writes that value
+    almost never: across this workspace the real statuses are `ready_for_review`,
+    `revision_ready_for_review`, `awaiting_final_approval`, `ready_for_cms_import`,
+    `draft`, `edited`. A gate on a value nobody produces is a gate that always
+    closes — which is exactly why social runs got briefed as prose instead of
+    through the command. The approval in this system is Vadim asking for the run
+    and then approving the digest (CLAUDE.md §9), so status is REPORTED here, and
+    only a genuinely unusable article (no directory, no readable body) refuses."""
+    root = os.path.join(_mvb_dir(), "workspace", "seo", "articles", slug)
+    if not slug or not os.path.isdir(root):
+        return None, None, f"нет каталога статьи `workspace/seo/articles/{slug or '<slug>'}`"
+
+    # File naming is not consistent across articles — the workspace holds
+    # publish-package.md, publish-pack.md, final.md, draft-v5-revision1.md,
+    # draft-v4-publisher-final.md, revised.md, edited.md, draft.md — and some
+    # slugs keep everything one level down in a version dir (v3/, v2-asselya/).
+    # So: scan root + one level, rank by NAME, and never rank a process file
+    # (plan, changelog, qc, review, log, report) as an article.
+    skip = ("plan", "changelog", "qc-", "review", "log", "phase", "publisher-report",
+            "source-with-comments", "comments")
+
+    def rank(name: str) -> Optional[int]:
+        n = name.lower()
+        if not n.endswith(".md") or n.startswith(skip):
+            return None
+        if "publish-pack" in n:
+            return 1
+        if "final" in n:
+            return 2
+        if "revision" in n:
+            return 3
+        if n in ("revised.md", "edited.md"):
+            return 4
+        if n == "draft.md":
+            return 5
+        return None
+
+    def ver(name: str) -> int:
+        """`draft-v5-revision1.md` → 5. The version number beats the name keyword:
+        v5-revision1 is a later text than v4-publisher-final, and 'final' in a
+        filename only ever meant 'final for that round'."""
+        m = re.search(r"\bv(\d+)", name.lower())
+        return int(m.group(1)) if m else 0
+
+    cands: List[Tuple[int, int, int, float, str]] = []
+    try:
+        paths: List[str] = []
+        for n in os.listdir(root):
+            p = os.path.join(root, n)
+            if os.path.isfile(p):
+                paths.append(p)
+            elif os.path.isdir(p) and not n.startswith("."):
+                paths += [os.path.join(p, n2) for n2 in os.listdir(p)
+                          if os.path.isfile(os.path.join(p, n2))]
+        for p in paths:
+            name = os.path.basename(p)
+            r = rank(name)
+            if r is None:
+                continue
+            # tier: 0 = approved package, 1 = any package, 2 = a draft
+            pkg = "publish-pack" in name.lower()
+            tier = 0 if (pkg and _md_status(p) in _MVB_APPROVED) else (1 if pkg else 2)
+            cands.append((tier, -ver(name), r, -os.path.getmtime(p), p))
+    except OSError:
+        pass
+    cands.sort()
+    for *_rest, p in cands:
+        if os.path.getsize(p) < 3000:
+            continue                      # a stub, not an article
+        st = _md_status(p)
+        rel = os.path.relpath(p, root)
+        note = f"источник `{rel}`" + (f" (статус: {st})" if st else "")
+        if st not in _MVB_APPROVED:
+            note += " — формального апрува нет, беру как есть"
+        return p, note, None
+    return None, None, ("в каталоге статьи нет готового текста "
+                        "(ни publish-package, ни final/revision-драфта > 3 КБ)")
+
+
+def _mvb_brief(cmd: str, cmd_file: str, body: str = "") -> str:
+    """Wrap a pipeline entry command in the minimum context a headless run needs.
+
+    The slash command comes FIRST and verbatim, because the pipeline's rules live
+    in that file and stay in one place; re-typing them into the prompt is what
+    made job 88's brief compete with the agent's own instructions. The fallback
+    line is there because a headless SDK session is not guaranteed to expand a
+    plugin command — if it does not, reading the file is the same work."""
+    return (
+        f"{cmd}\n\n"
+        f"Если команда выше не раскрылась в инструкцию — прочитай `{cmd_file}` "
+        "и выполни её шаги буквально.\n"
+        f"{body}"
+        "Правила прогона: работай в ТЕКУЩЕМ каталоге (это marketing_vb — агенты "
+        "читают CLAUDE.md, brand-assets/ и workspace/ относительными путями). "
+        "Прочитай CLAUDE.md перед работой. Все артефакты — в файлы, не в чат. "
+        "Ничего не публикуй наружу и не отправляй. Эскалируй только критическое "
+        "или необратимое; финальный апрув текста — за Вадимом в Telegram. "
+        "Если чего-то не хватает (нет апрува, нет данных) — остановись и скажи, "
+        "не выдумывай."
+    )
+
+
+def _prep_article(task: str) -> Tuple[Optional[str], Optional[str], Optional[str], Optional[str]]:
+    """(prompt, title, note, error) for the SEO pipeline."""
+    topic = (task or "").strip()
+    if not topic:
+        return None, None, None, ("✍️ Напиши тему статьи, напр.\n"
+                                  "`Стаття telehealth BMI verification`")
+    return (
+        _mvb_brief(f'/new-article "{topic}"', ".claude/commands/new-article.md",
+                   "Тема: " + topic + "\n"
+                   "Phase 0 обязателен: сначала найди тему в "
+                   "`brand-assets/content-strategy/content-plan.md` (hub · cluster · "
+                   "intent · action type). Только `create net-new` / `publish planned "
+                   "hub` идут в новую статью; refresh / section first / review-decide / "
+                   "lead magnet — верни рекомендацию и остановись. Нет строки в плане — "
+                   "спроси Вадима, не придумывай хаб.\n"),
+        f"Article: {topic[:60]}", None, None)
+
+
+def _prep_posts(task: str) -> Tuple[Optional[str], Optional[str], Optional[str], Optional[str]]:
+    """(prompt, title, note, error) for the social pipeline."""
+    slug = _mvb_slug(task)
+    if not slug:
+        have = _mvb_articles()
+        lst = "\n".join(f"• `{s}`" for s in have) or "— (в workspace/seo/articles пусто)"
+        return None, None, None, (f"✍️ Напиши slug статьи, напр.\n`Пости {have[0]}`\n\n"
+                                  f"Последние статьи:\n{lst}" if have else
+                                  f"✍️ Напиши slug статьи.\n\nПоследние статьи:\n{lst}")
+    src, note, err = _mvb_article_source(slug)
+    if err:
+        have = _mvb_articles()
+        lst = "\n".join(f"• `{s}`" for s in have)
+        return None, None, None, f"⚠️ {err}" + (f"\n\nЕсть такие:\n{lst}" if have else "")
+    return (
+        _mvb_brief(f"/post-from-article {slug}", ".claude/commands/post-from-article.md",
+                   f"Slug: {slug}\nИсточник: {src}\n"
+                   "Профили — из `brand-assets/social-profiles-config.md`, только с "
+                   "posts_per_week > 0. Для linkedin-* обязательно читай нужную секцию "
+                   "`brand-assets/linkedin-post-prompts.md`. post-drafter — строго по "
+                   "одному профилю за раз. Факты — только из файла-источника. Хештегов "
+                   "нет ни на одном профиле, эмодзи 1-2. В конце собери "
+                   "`review-digest.md` и `manifest.json` (ready_for_review). "
+                   "visual-brief здесь НЕ запускай.\n"),
+        f"Social posts: {slug}", note, None)
+
+
+def _prep_outbound(task: str) -> Tuple[Optional[str], Optional[str], Optional[str], Optional[str]]:
+    t = (task or "").strip()
+    if not t:
+        return None, None, None, ("✍️ Напиши рынок/сегмент или шаг, напр.\n"
+                                  "`Аутбаунд Australia digital fitness`\n"
+                                  "`Аутбаунд продолжи 2026-08-07-us-digital-fitness с шага 5`")
+    return (
+        _mvb_brief(f"/outbound {t}", ".claude/commands/outbound.md",
+                   f"Задача: {t}\n"
+                   "Гео-дисциплина обязательна: гипотеза и список компаний должны "
+                   "соответствовать рынку профиля (`runners/outbound-runner.md`). "
+                   "Проверь exclusion registry профиля перед списком людей. "
+                   "Ничего не импортируй в closelyhq — только артефакты.\n"),
+        f"Outbound: {t[:60]}", None, None)
+
+
+def _prep_campaign(task: str) -> Tuple[Optional[str], Optional[str], Optional[str], Optional[str]]:
+    t = (task or "").strip()
+    if not t:
+        return None, None, None, ("✍️ Опиши кампанию одним сообщением, напр.\n"
+                                  "`Кампанія запуск FitXpress для UK-аптек: стратегия, "
+                                  "контент, замеры`")
+    return (
+        _mvb_brief(f"/vbsm-campaign {t}", "скилл mvb-sm-bridge:marketing-vb-sm",
+                   f"Задача: {t}\n"
+                   "Стратегия и измерение — команды mkt-*, брендовое исполнение и QC — "
+                   "mvb-*. При конфликте правил бренда выигрывает marketing_vb "
+                   "(CLAUDE.md + about-me.md + DESIGN.md).\n"),
+        f"Campaign: {t[:60]}", None, None)
+
+
+# route id -> {label, profile, example, prepare}
+MVB_ROUTES: Dict[str, Dict[str, Any]] = {
+    "mvb:article": {
+        "label": "📝 Стаття (SEO)", "profile": _MVB_PROFILE, "prepare": _prep_article,
+        "example": "Стаття telehealth BMI verification для UK-аптек",
+    },
+    "mvb:posts": {
+        "label": "📱 Пости зі статті", "profile": _MVB_PROFILE, "prepare": _prep_posts,
+        "example": "Пости mobile-body-scanning-patient-engagement",
+    },
+    "mvb:outbound": {
+        "label": "📬 Outbound", "profile": _MVB_PROFILE, "prepare": _prep_outbound,
+        "example": "Аутбаунд Australia digital fitness",
+    },
+    "mvb:campaign": {
+        "label": "📣 Кампанія (VB×SM)", "profile": _MVB_PROFILE, "prepare": _prep_campaign,
+        "example": "Кампанія запуск FitXpress для UK-аптек",
+    },
+}
+
+PROFILE_NAME.update({rid: r["label"] for rid, r in MVB_ROUTES.items()})
+PROFILE_NAME.setdefault(_MVB_PROFILE, "📣 Marketing VB")
+_SYS_EXAMPLE.update({rid: r["example"] for rid, r in MVB_ROUTES.items()})
+
 # Leading system-keyword patterns (EN + a few RU synonyms). Only a keyword at
 # the very START of the message triggers a system; the rest is the task.
+# MVB routes come FIRST: "маркетинг вб" would otherwise be eaten by the generic
+# `marketing` pattern below and land in Sergiy's system instead of Vadim's.
 _SYS_PREFIX: List[Tuple[Any, str]] = [
+    (re.compile(r"^\s*(стаття|статья|article|сеo-?стаття)\b[\s:,\.\-–—]*(.*)$", re.I | re.S), "mvb:article"),
+    (re.compile(r"^\s*(пости|посты|posts|пост)\b[\s:,\.\-–—]*(.*)$", re.I | re.S), "mvb:posts"),
+    (re.compile(r"^\s*(аутбаунд|outbound|аутбаунд)\b[\s:,\.\-–—]*(.*)$", re.I | re.S), "mvb:outbound"),
+    (re.compile(r"^\s*(кампан\w+|campaign|marketing[ _-]?vb\w*|маркетинг[ _-]?вб)\b[\s:,\.\-–—]*(.*)$", re.I | re.S), "mvb:campaign"),
     (re.compile(r"^\s*(dev|разработка|девелоп\w*)\b[\s:,\.\-–—]*(.*)$", re.I | re.S), "dev"),
     (re.compile(r"^\s*(marketing|маркетинг)\b[\s:,\.\-–—]*(.*)$", re.I | re.S), "marketing"),
     (re.compile(r"^\s*(seo)\b[\s:,\.\-–—]*(.*)$", re.I | re.S), "seo"),
@@ -813,9 +1126,11 @@ def _launcher_intro() -> str:
     return ("👇 Внизу две роли — выбери, кто нужен:\n"
             "🧑‍💼 Менеджер (Hermes) — думает и отвечает сам, помнит контекст, "
             "ставит задачи исполнителю. Внутри: режим моделей, learn, journey.\n"
-            "⚙️ Исполнитель (Claude, OpenCode) — делает работу: Dev · SEO · "
-            "Marketing · Security. Выбери систему, опиши задачу — запущу "
-            "автономный цикл A→Z.\n"
+            "⚙️ Исполнитель (Claude, OpenCode) — делает работу: Marketing VB "
+            "(стаття · пости · outbound · кампанія) · Dev · SEO · Marketing SM · "
+            "Security. Выбери систему, опиши задачу — запущу автономный цикл A→Z.\n"
+            "Можно и словом: `Стаття <тема>` · `Пости <slug>` · "
+            "`Аутбаунд <рынок>` · `Dev <задача>`.\n"
             "Просто текст без кнопок — уйдёт менеджеру.")
 
 
@@ -840,14 +1155,61 @@ def _launcher_kb(placeholder: str = _LAUNCHER_PLACEHOLDER):
 
 
 def _sys_menu_kb():
-    """Inline menu of the four systems (opened by the single bar button)."""
+    """Inline menu of the systems (opened by the single bar button).
+
+    «📣 Marketing VB» is a SUBMENU, not a system: Vadim's marketing box has four
+    distinct entry points (article / posts / outbound / blended campaign) and
+    picking the pipeline is the decision that used to be lost — a job that only
+    says `profile=marketing_vb_sm` still needs someone to type the right slash
+    command, and that someone was Hermes writing SQL by hand."""
     from telegram import InlineKeyboardButton as B, InlineKeyboardMarkup as M
     return M([
+        [B("📣 Marketing VB", callback_data="csw:sys:mvb")],
         [B("🛠 Dev", callback_data="csw:sys:dev"),
          B("🔍 SEO", callback_data="csw:sys:seo")],
-        [B("📣 Marketing", callback_data="csw:sys:marketing"),
+        [B("📣 Marketing SM", callback_data="csw:sys:marketing"),
          B("🛡 Security", callback_data="csw:sys:security")],
     ])
+
+
+def _mvb_menu_kb():
+    """Submenu: the four pipelines of the marketing_vb_sm system."""
+    from telegram import InlineKeyboardButton as B, InlineKeyboardMarkup as M
+    return M([
+        [B("📝 Стаття (SEO)", callback_data="csw:sys:mvb:article")],
+        [B("📱 Пости зі статті", callback_data="csw:sys:mvb:posts")],
+        [B("📬 Outbound", callback_data="csw:sys:mvb:outbound")],
+        [B("📣 Кампанія (VB×SM)", callback_data="csw:sys:mvb:campaign")],
+        [B("⬅️ Системи", callback_data="csw:sys:back")],
+    ])
+
+
+def _sys_menu_intro() -> str:
+    """Header of the systems menu. One text, two callers (the bar button and the
+    «⬅️ Системи» tap inside the marketing submenu) — they used to disagree."""
+    return ("⚙️ Исполнитель (Claude, OpenCode) — кто возьмёт задачу:\n"
+            "📣 Marketing VB — маркетинг 3DLOOK: стаття · пости · outbound · кампанія\n"
+            "🛠 Dev — код, фичи, деплой · 🔍 SEO — аудит, семантика, тексты\n"
+            "📣 Marketing SM — общая маркетинг-система · 🛡 Security — уязвимости\n\n"
+            "Выбери систему и опиши задачу одним сообщением — запущу "
+            "автономный цикл A→Z и отчитаюсь сюда.")
+
+
+def _mvb_menu_intro() -> str:
+    """What each pipeline does, and what it needs from you — so the next message
+    is the right one on the first try."""
+    slugs = _mvb_articles(4)
+    tail = ("\n\nПоследние статьи для постов:\n"
+            + "\n".join(f"• `{s}`" for s in slugs)) if slugs else ""
+    return ("📣 Marketing VB (система marketing_vb_sm) — выбери пайплайн:\n"
+            "📝 Стаття — SEO-цикл: Phase 0 по контент-плану → план → текст → "
+            "редактура → publish-package. 2 чекпоинта у тебя.\n"
+            "📱 Пости — берёт готовую (апрувленную) статью и пишет посты по всем "
+            "активным профилям + review-digest.\n"
+            "📬 Outbound — гипотеза → компании → люди → ICP → сообщения (гео по "
+            "профилю).\n"
+            "📣 Кампанія — блендед VB×SM: стратегия и замеры от mkt-*, брендовое "
+            "исполнение от mvb-*." + tail)
 
 
 def _hermes_menu_kb():
@@ -963,7 +1325,9 @@ def _claude_on_text(key: str) -> str:
 
 def _hermes_on_text() -> str:
     return ("📇 Hermes-менеджер (эта вкладка). Обычный текст — ему.\n"
-            "Полный цикл системы: `Dev <задача>` · `Marketing …` · `SEO …` · "
+            "Маркетинг 3DLOOK: `Стаття <тема>` · `Пости <slug>` · "
+            "`Аутбаунд <рынок>` · `Кампанія <задача>`.\n"
+            "Остальные системы: `Dev <задача>` · `SEO …` · `Marketing …` · "
             "`Security …` — уйдёт в автономного дирижёра, отвечу сюда.")
 
 
@@ -971,11 +1335,32 @@ def _match_tab_label(text: str) -> Optional[str]:
     return TAB_LABELS.get((text or "").strip())
 
 
+_SLUGISH = re.compile(r"^[a-z0-9][a-z0-9\-/:._]*$", re.I)
+
+
 def _match_system_prefix(text: str) -> Tuple[Optional[str], str]:
+    """Leading keyword → route id + the rest as the task.
+
+    The MVB keywords are ordinary Ukrainian/Russian words ("стаття", "пости",
+    "кампанія"), and `dev`/`seo` never were — so they need a discriminator, or
+    «пости вже вийшли?» starts an autonomous 300-turn run. Two rules, both
+    biased towards the manager (a missed trigger costs one retry; a false one
+    costs a repo-mutating job):
+      * a bare keyword with nothing after it is CONVERSATION, not a command —
+        the menu exists for the "forgot the syntax" case;
+      * `Пости <x>` only fires when <x> looks like a slug or a URL, never when
+        it is a sentence or a question."""
     for rx, prof in _SYS_PREFIX:
         m = rx.match(text or "")
-        if m:
-            return prof, (m.group(2) or "").strip()
+        if not m:
+            continue
+        rest = (m.group(2) or "").strip()
+        if prof in MVB_ROUTES:
+            if not rest or rest.endswith("?"):
+                return None, ""
+            if prof == "mvb:posts" and not _SLUGISH.match(rest):
+                return None, ""
+        return prof, rest
     return None, ""
 
 
@@ -1691,14 +2076,35 @@ async def handle_panel_callback(adapter: Any, query: Any, data: str) -> None:
     if rest.startswith("sys:"):
         prof = rest[4:]
         key = _key_from_query(msg)
+        # Two navigation taps that arm NOTHING: the marketing submenu and its
+        # way back. Arming on a navigation tap is how you get an autonomous run
+        # from a message that was meant for the manager.
+        if prof in ("mvb", "back"):
+            _set_pending_sys(key, None)
+            try:
+                await query.edit_message_text(
+                    text=_mvb_menu_intro() if prof == "mvb" else _sys_menu_intro(),
+                    reply_markup=_mvb_menu_kb() if prof == "mvb" else _sys_menu_kb(),
+                    parse_mode=None)
+            except Exception:
+                logger.debug("csw: sys-menu edit failed", exc_info=True)
+            await query.answer()
+            return
         _set_claude(key, False)
         _set_pending_sys(key, prof)
         name = PROFILE_NAME.get(prof, prof)
         ex = _SYS_EXAMPLE.get(prof, "опиши задачу одним сообщением")
+        # For the social pipeline the missing input is always a slug, so answer
+        # "which one?" before it is asked.
+        extra = ""
+        if prof == "mvb:posts":
+            slugs = _mvb_articles(6)
+            if slugs:
+                extra = "\n\nСтатьи:\n" + "\n".join(f"• `{s}`" for s in slugs)
         try:
             await query.edit_message_text(
                 text=(f"{name} выбран. Опиши задачу одним сообщением — запущу "
-                      f"автономный цикл A→Z.\n\n📝 Пример:\n«{ex}»"),
+                      f"автономный цикл A→Z.\n\n📝 Пример:\n«{ex}»{extra}"),
                 reply_markup=None, parse_mode=None)
         except Exception:
             logger.debug("csw: sys-pick edit failed", exc_info=True)
@@ -3973,23 +4379,43 @@ def _entry_prompt(profile: str, task: str) -> str:
     return task
 
 
-def _dispatch_job(key: str, profile: str, task: str):
-    # Prefer the tab's bound repo; else the workspaces ROOT (so the orchestrator
-    # can see all repos and cd into the right one).
-    wd = _get_cwd(key) or _default_cwd()
-    try:
-        os.makedirs(wd, exist_ok=True)
-    except Exception:
-        pass
-    prompt = _entry_prompt(profile, task)
+def _dispatch_job(key: str, route: str, task: str):
+    """Create ONE conductor job for `route` (a bare profile, or an MVB pipeline id).
+
+    Returns (jid, work_dir, error, note). `error` means nothing was created and the
+    text is meant for Telegram; `note` is a non-blocking remark to show alongside
+    the confirmation (e.g. which source file the social run will read).
+
+    ho_steps is deliberately never touched here — see MVB_ROUTES for what writing
+    it did to job 88."""
+    r = MVB_ROUTES.get(route)
+    if r:
+        profile = r["profile"]
+        wd = _mvb_dir()
+        if not os.path.isdir(wd):
+            return None, wd, (f"⚠️ каталог системы не найден: `{wd}`. Проверь "
+                              f"`runFrom` в `{_profiles_dir()}/{profile}.json`."), None
+        prompt, title, note, err = r["prepare"](task)
+        if err:
+            return None, wd, err, None
+    else:
+        profile, note = route, None
+        # Prefer the tab's bound repo; else the workspaces ROOT (so the orchestrator
+        # can see all repos and cd into the right one).
+        wd = _get_cwd(key) or _default_cwd()
+        try:
+            os.makedirs(wd, exist_ok=True)
+        except Exception:
+            pass
+        prompt, title = _entry_prompt(profile, task), task[:80]
     jid = _ho_write(
         "insert into ho_jobs(kind,title,prompt,profile,work_dir,max_turns) "
         "values('feature',?,?,?,?,?)",
-        (task[:80], prompt, profile, wd, CONDUCTOR_MAX_TURNS),
+        (title[:200], prompt, profile, wd, CONDUCTOR_MAX_TURNS),
     )
     if jid:
-        _set_job(key, profile, jid)
-    return jid, wd
+        _set_job(key, route, jid)
+    return jid, wd, None, note
 
 
 _APPROVE = {"approve", "approved", "одобряю", "go", "да", "ок", "ok", "yes", "поехали", "продолжай", "давай"}
@@ -4010,7 +4436,13 @@ def _parse_decision(text: str) -> Optional[str]:
 
 async def _handle_conductor_turn(runner: Any, event: Any, source: Any,
                                  key: str, profile: str,
-                                 message_text: str, session_key: str) -> None:
+                                 message_text: str, session_key: str,
+                                 armed: bool = False) -> None:
+    """`armed` = this message arrived because a system/pipeline was armed from the
+    menu (not because it carried a keyword). It decides ONE thing: whether a
+    refused dispatch stays armed for the retry. Re-arming after a keyword would
+    turn the user's NEXT ordinary message — one meant for the manager — into an
+    autonomous run."""
     task = message_text or ""
     imgs = _extract_image_paths(event)
     if imgs:
@@ -4073,19 +4505,29 @@ async def _handle_conductor_turn(runner: Any, event: Any, source: Any,
                     "напр. `Dev сделай лендинг с формой заявки`.")
         return
 
-    if not task.strip():
+    if not task.strip() and profile not in MVB_ROUTES:
         await _send(runner, source,
                     f"✍️ Напиши задачу после {PROFILE_NAME.get(profile, profile)}, "
                     "напр. `Dev добавь корзину и оплату Stripe`.")
         return
 
-    jid, wd = _dispatch_job(key, profile, task)
+    jid, wd, err, note = _dispatch_job(key, profile, task)
+    if err:
+        # A refusal is not a failure: the pipeline's own precondition (article not
+        # approved, no such slug, no argument) is reported here, before a job
+        # exists, so nothing is claimed and nothing has to be aborted.
+        if armed:
+            _set_pending_sys(key, profile)   # stay armed — the next message is the retry
+            err += "\n\n(система всё ещё выбрана — просто пришли аргумент)"
+        await _send(runner, source, err)
+        return
     if jid:
         await _send(runner, source,
                     f"🚀 {PROFILE_NAME.get(profile, profile)}: создал job #{jid} — "
                     "работаю автономно от А до Я.\n"
                     f"📂 {wd}\n"
-                    "Вопросы/результат придут сюда; на эскалацию — кнопки approve/deny/abort.")
+                    + (f"ℹ️ {note}\n" if note else "")
+                    + "Вопросы/результат придут сюда; на эскалацию — кнопки approve/deny/abort.")
     else:
         await _send(runner, source,
                     "⚠️ Не удалось создать job (conductor/БД недоступны). Проверь "
@@ -5133,11 +5575,7 @@ async def maybe_handle_turn(runner: Any, event: Any, source: Any,
         try:
             await _send_reply_kb(
                 runner, source,
-                "⚙️ Исполнитель (Claude, OpenCode) — кто возьмёт задачу:\n"
-                "🛠 Dev — код, фичи, деплой · 🔍 SEO — аудит, семантика, тексты\n"
-                "📣 Marketing — контент и кампании · 🛡 Security — уязвимости и фиксы\n\n"
-                "Выбери систему и опиши задачу одним сообщением — запущу "
-                "автономный цикл A→Z и отчитаюсь сюда.",
+                _sys_menu_intro(),
                 _sys_menu_kb(),
             )
         except Exception:
@@ -5168,7 +5606,8 @@ async def maybe_handle_turn(runner: Any, event: Any, source: Any,
     if pend and txt and _match_tab_label(txt) is None:
         _set_pending_sys(key, None)
         try:
-            await _handle_conductor_turn(runner, event, source, key, pend, txt, session_key)
+            await _handle_conductor_turn(runner, event, source, key, pend, txt,
+                                         session_key, armed=True)
         except Exception:
             logger.exception("claude-switcher: pending-system dispatch failed")
         return True
