@@ -84,6 +84,7 @@
 
 ### Telehealth (Hub #5)
 - `the-potential-of-ai-in-telehealth/` — **The Potential of AI in Telehealth** — Sep 2024 — Old hub (needs refresh)
+- `mobile-body-scanning-patient-engagement/` — **How Mobile Body Scanning Improves Patient Engagement** — Aug 2026 — P0 Supporting
 
 ### BCRL / Oncology (NEW — not in plan)
 - `breast-cancer-related-lymphedema-explained-3d-body-scanning-can-transform-early-detection-monitoring-care-management/` — **BCRL: AI 3D Scanning in Detection & Care** — Jul 8, 2026 — New vertical
@@ -292,7 +293,8 @@ Main Health Hub (ai-body-data-health-hub) — Jul 24, 2026
   │   └── top-trends-and-features-in-fitness-apps (Nov 2023)
   │
   ├── Telehealth
-  │   └── the-potential-of-ai-in-telehealth (Sep 2024) ← OLD hub — needs refresh
+  │   ├── the-potential-of-ai-in-telehealth (Sep 2024) ← OLD hub — needs refresh
+  │   └── mobile-body-scanning-patient-engagement (Aug 2026) ← P0 Supporting
   │
   ├── BCRL / Oncology (NEW)
   │   └── breast-cancer-related-lymphedema (Jul 8, 2026) ← not in plan
@@ -327,7 +329,6 @@ Main Health Hub (ai-body-data-health-hub) — Jul 24, 2026
 
 | Priority | Article | Hub |
 |----------|---------|-----|
-| P1 | How Mobile Body Scanning Improves Patient Engagement | #5 Telehealth |
 | P1 | What Is Telehealth BMI Verification in 2026 | #5 Telehealth |
 | P1 | Top 7 Remote Body Composition Tools for GLP-1 Clinics | #6 GLP-1 |
 | P1 | Top Mobile Body Scanning Software for Wellness Apps | #8 Wellness |

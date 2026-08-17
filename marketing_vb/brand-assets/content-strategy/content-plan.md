@@ -73,7 +73,7 @@ Refresh `the-potential-of-ai-in-telehealth` into the hub. Keep telehealth on rem
 | Cluster | Article | Intent | Action | Pri | Notes / guardrail |
 |---|---|---|---|---|---|
 | Main hub | AI in Telehealth: Workflows, Privacy, Patient Experience, Remote Body Data | Hub | Refresh / expand | P0 | Refresh `the-potential-of-ai-in-telehealth`. No competing page. |
-| Patient experience | How Mobile Body Scanning Improves Patient Engagement | TOFU/MOFU | Net-new / major hub section | P0 | Broader than GLP-1. **Do not cannibalize** the GLP-1 visual-progress page. |
+| Patient experience | How Mobile Body Scanning Improves Patient Engagement | TOFU/MOFU | `draft-v5-revision1.md` — published 2026-08-14 | P0 | **✅ Published** — `mobile-body-scanning-patient-engagement`. Broader than GLP-1; don't cannibalize the GLP-1 visual-progress page. |
 | BMI verification | What Is Telehealth BMI Verification / How to Verify BMI Remotely in Telehealth 2026 | BOFU | Refresh/expand (not net-new unless distinct) | P0 | **Highest cannibalization risk.** Owner = `online-pharmacy-bmi-verification`. Add a telehealth section there; standalone only if search demand differs. Differentiate on program workflows/provider review, not pharmacy compliance. |
 | Workflow | Remote Body Measurement Workflows for Telehealth Providers | MOFU | Create net-new | P1 | Operational, not trend-led. |
 | GLP-1 bridge | Remote Body Data Tracking for GLP-1 Telehealth Programs | MOFU/BOFU | Create net-new | P1 | Focus longitudinal tracking, not eligibility verification. |
