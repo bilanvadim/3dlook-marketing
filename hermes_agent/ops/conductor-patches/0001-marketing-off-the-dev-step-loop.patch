@@ -1,0 +1,116 @@
+diff --git a/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev/conductor/src/core/conductor.ts b/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev/conductor/src/core/conductor.ts
+index e2b5629..36b156f 100644
+--- a/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev/conductor/src/core/conductor.ts
++++ b/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev/conductor/src/core/conductor.ts
+@@ -24,7 +24,7 @@ import { Store, Job, Step } from './store';
+ import { evaluate, initState, BreakerState, BreakerLimits, DEFAULT_LIMITS, KIND_MIN_TURNS, Event } from './breaker';
+ import { runStep, StepRecord } from './steprunner';
+ import { makeSdkDeps } from './agent-runner';
+-import { resolveProfilePlugins } from './profiles';
++import { resolveProfilePlugins, resolveWorkDir } from './profiles';
+ import { tgConfigFromEnv, notifyEscalation, notifyDone, TelegramConfig } from '../escalation/telegram';
+ import { startWebhookServer, startTelegramPolling } from '../escalation/bot-callback';
+ 
+@@ -398,15 +398,42 @@ async function snapshotWorkTree(job: Job): Promise<void> {
+ }
+ 
+ export async function runOneJob(store: Store): Promise<boolean> {
+-  const job = await store.claimJob(WORKER_ID, MAX_ATTEMPTS);
+-  if (!job) return false; // nothing to do
++  const claimed = await store.claimJob(WORKER_ID, MAX_ATTEMPTS);
++  if (!claimed) return false; // nothing to do
++
++  // A profile bound to a directory (`runFrom`) overrides the enqueued work_dir —
++  // see resolveWorkDir. Done once, here, so the snapshot, the step deps and the
++  // SDK cwd below can never disagree about where this job runs.
++  const job: Job = { ...claimed, work_dir: resolveWorkDir(claimed.profile, claimed.work_dir) };
+ 
+   await snapshotWorkTree(job);
+ 
+-  // PHASE 2: if the job was decomposed into steps, run the per-step verified loop.
++  // PHASE 2: if the job was decomposed into steps, run the per-step verified loop —
++  // but ONLY for profiles whose work that loop can actually verify.
++  //
++  // The step loop is a SOFTWARE pipeline: runExecutor tells the agent to "implement
++  // step N from .claude/scratchpad/*/plan.md" (the job's own prompt is never passed),
++  // and runGates re-runs `npx ultracite lint`, `npm run typecheck`, `npm test`. In a
++  // content repo none of that exists, so every attempt scores 0 and every step ends
++  // 'blocked' → a Telegram escalation whose Approve means "skip the step".
++  //
++  // That is not theory: job 88 (2026-08-17, profile marketing_vb_sm) had two step rows
++  // inserted by hand alongside it, ran the dev loop 3× per step against a tree with no
++  // package.json, escalated twice, was approved twice, and closed as `done — all 2 steps
++  // done` having written zero posts. A content pipeline already carries its own gate
++  // (quality-controller / post-brand-checker, then Vadim approving the digest), so for
++  // these profiles the steps are IGNORED and the job runs as one prompt — the prompt is
++  // the thing that carries the actual brief.
++  const stepProfiles = (process.env.HO_STEP_PROFILES ?? 'dev,security')
++    .split(',').map((s) => s.trim()).filter(Boolean);
+   if (await store.hasSteps(job.id)) {
+-    await runJobAsSteps(store, job, tgConfigFromEnv());
+-    return true;
++    if (stepProfiles.includes(job.profile)) {
++      await runJobAsSteps(store, job, tgConfigFromEnv());
++      return true;
++    }
++    console.warn(`[${WORKER_ID}] job ${job.id} has ho_steps but profile='${job.profile}' is not `
++      + `step-verifiable (HO_STEP_PROFILES=${stepProfiles.join(',')}) — running the job prompt `
++      + 'as ONE run; steps left untouched');
+   }
+ 
+   const tg = tgConfigFromEnv();
+diff --git a/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev/conductor/src/core/profiles.ts b/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev/conductor/src/core/profiles.ts
+index f67e625..89f20ce 100644
+--- a/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev/conductor/src/core/profiles.ts
++++ b/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev/conductor/src/core/profiles.ts
+@@ -32,6 +32,50 @@ export function profilesDir(): string {
+   return process.env.HO_PROFILES_DIR ?? DEFAULT_PROFILES_DIR;
+ }
+ 
++interface ProfileManifestFull extends ProfileManifest { runFrom?: string }
++
++/** Read a manifest, or null if it is missing/unreadable. */
++function readManifest(name: string): ProfileManifestFull | null {
++  const p = join(profilesDir(), `${name}.json`);
++  if (!existsSync(p)) return null;
++  try { return JSON.parse(readFileSync(p, 'utf8')) as ProfileManifestFull; } catch { return null; }
++}
++
++/**
++ * The directory a profile is BOUND to (`runFrom`), or null when it is free to run
++ * anywhere. Resolved relative to the profiles dir's parent — same convention as
++ * switch-profile.sh and the marketplace paths below.
++ */
++export function profileRunFrom(profile: string | null | undefined): string | null {
++  const m = readManifest((profile && profile.trim()) || 'dev');
++  const v = m?.runFrom;
++  if (!v) return null;
++  const p = isAbsolute(v) ? v : resolve(dirname(profilesDir()), v);
++  return existsSync(p) ? p : null;
++}
++
++/**
++ * Where the job must actually run.
++ *
++ * A bound profile (marketing_vb / marketing_vb_sm) has agents that read CLAUDE.md,
++ * brand-assets/ and workspace/ by RELATIVE path — from anywhere else they see none of
++ * it and the run produces confidently generic output with no error anywhere. Job 88
++ * (2026-08-17) was enqueued with work_dir at the repo ROOT, one level above the
++ * project, precisely that way.
++ *
++ * So for a bound profile the manifest wins over whatever the enqueuer wrote, and the
++ * substitution is logged. Unbound profiles (dev, seo, …) keep the given work_dir.
++ */
++export function resolveWorkDir(profile: string | null | undefined, workDir: string): string {
++  const bound = profileRunFrom(profile);
++  if (!bound) return workDir;
++  const given = resolve(workDir || '.');
++  if (given === bound || given.startsWith(`${bound}/`)) return workDir;
++  console.warn(`[profiles] profile '${profile}' is bound to ${bound} — work_dir `
++    + `'${workDir}' is outside it; running from ${bound} instead`);
++  return bound;
++}
++
+ /**
+  * Resolve a profile to a list of local plugin dirs for query({ options.plugins }).
+  * Returns [] on any problem (unknown/missing profile, bad manifest, missing dirs)
