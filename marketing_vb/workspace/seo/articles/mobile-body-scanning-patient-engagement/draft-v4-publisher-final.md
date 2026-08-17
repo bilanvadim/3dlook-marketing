@@ -30,11 +30,19 @@ claims_used:
   - FX-REPEATABILITY
   - FX-PRIVACY
   - FX-NOTDEVICE
-  - EXT-TELEHEALTH
   - EXT-GLP1DROP
 ---
 
-# Publish Package — mobile-body-scanning-patient-engagement
+# Publish Package — mobile-body-scanning-patient-engagement (FINAL)
+
+## Publication Record
+
+- **Published URL:** https://3dlook.ai/content-hub/mobile-body-scanning-patient-engagement/
+- **Published date:** 2026-08-14 (per live JSON-LD `datePublished`)
+- **Base draft:** `draft-v5-revision1.md` — canonical pre-CMS snapshot (Review 1 applied 03.08.2026)
+- **Author:** Asselya Sekerova (per live JSON-LD)
+- **Editorial status:** `published`
+- **Live vs draft delta:** meta description, author name spelling, word count (~6K on live vs ~2.3K in draft), H2 headings are post-CMS edits; draft is intentionally preserved as-original
 
 ## Meta
 
@@ -48,6 +56,14 @@ claims_used:
 1. **How Mobile Body Scanning Improves Patient Engagement** (52 chars) — RECOMMENDED. Exact primary-keyword match, identical to the locked H1, keyword occupies the entire title so it is trivially in the first half. Sits inside 50-60, no brand suffix needed (52 > 49-char suffix threshold).
 2. How Mobile Body Scanning Drives Patient Engagement (50 chars) — same opening ("How Mobile Body Scanning"), swaps "Improves" for "Drives" for a slightly different SERP look if A/B testing.
 3. Mobile Body Scanning for Better Patient Engagement (50 chars) — drops the "How," keeps both core keyword chunks ("Mobile Body Scanning" / "Patient Engagement") in the first and second half respectively.
+
+### Canonical checks
+
+- Canonical: not set (same as liveURL).
+- H1 == Recommended title (52 chars) — confirmed.
+- Primary keyword present in H1, title, first paragraph — confirmed.
+- Description includes primary keyword once — confirmed.
+- Internal links: GLP-1 Visual Progress (sideways), AI Telehealth hub (up), Beyond BMI (sideways).
 
 ### Meta description variants
 

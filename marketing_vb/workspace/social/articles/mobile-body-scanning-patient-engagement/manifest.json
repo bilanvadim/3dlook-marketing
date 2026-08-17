@@ -1,10 +1,111 @@
 {
-  "article_slug": "mobile-body-scanning-patient-engagement",
-  "article_path": "workspace/seo/articles/mobile-body-scanning-patient-engagement/draft-v5-revision1.md",
-  "product": "fitxpress",
-  "created": "2026-08-17",
-  "drafts": [
-    {"profile": "twitter-company", "file": "workspace/social/articles/mobile-body-scanning-patient-engagement/twitter-company/post.md", "status": "draft", "needs_visual": true}
+  "article": {
+    "slug": "mobile-body-scanning-patient-engagement",
+    "title": "How Mobile Body Scanning Improves Patient Engagement",
+    "product": "fitxpress",
+    "source_file": "workspace/seo/articles/mobile-body-scanning-patient-engagement/draft-v5-revision1.md",
+    "source_status": "published",
+    "published_url": "https://3dlook.ai/content-hub/mobile-body-scanning-patient-engagement/",
+    "date": "2026-08-17"
+  },
+  "profiles": [
+    {
+      "profile_id": "twitter-company",
+      "platform": "twitter",
+      "handle": "@3DLOOK",
+      "post_file": "twitter-company/post.md",
+      "status": "ready",
+      "character_count_body": 244,
+      "format": "text",
+      "qc_score": "20/20"
+    },
+    {
+      "profile_id": "instagram-company",
+      "platform": "instagram",
+      "handle": "@3dlook.ai",
+      "post_file": "instagram-company/post.md",
+      "status": "ready",
+      "character_count_body": 919,
+      "format": "carousel",
+      "qc_score": "20/20"
+    },
+    {
+      "profile_id": "facebook-company",
+      "platform": "facebook",
+      "handle": "3DLOOK",
+      "post_file": "facebook-company/post.md",
+      "status": "ready",
+      "character_count_body": 1196,
+      "format": "text+photo",
+      "qc_score": "18/20"
+    },
+    {
+      "profile_id": "linkedin-company",
+      "platform": "linkedin",
+      "handle": "3DLOOK",
+      "post_file": "linkedin-company/post.md",
+      "status": "ready",
+      "word_count_body": 253,
+      "format": "text+photo",
+      "qc_score": "19/20"
+    },
+    {
+      "profile_id": "linkedin-katerina",
+      "platform": "linkedin",
+      "handle": "Katerina Galich",
+      "post_file": "linkedin-katerina/post.md",
+      "status": "ready",
+      "word_count_body": 229,
+      "format": "text",
+      "qc_score": "19/20"
+    },
+    {
+      "profile_id": "linkedin-vadim",
+      "platform": "linkedin",
+      "handle": "Vadim Bilan",
+      "post_file": "linkedin-vadim/post.md",
+      "status": "ready",
+      "word_count_body": 235,
+      "format": "text+photo",
+      "qc_score": "19/20"
+    },
+    {
+      "profile_id": "linkedin-nick",
+      "platform": "linkedin",
+      "handle": "Nick Omelchak",
+      "post_file": "linkedin-nick/post.md",
+      "status": "ready",
+      "word_count_body": 239,
+      "format": "text+photo",
+      "qc_score": "19/20"
+    },
+    {
+      "profile_id": "linkedin-olena",
+      "platform": "linkedin",
+      "handle": "Olena Kudryavtseva",
+      "post_file": "linkedin-olena/post.md",
+      "status": "ready",
+      "word_count_body": 230,
+      "format": "text+photo",
+      "qc_score": "20/20"
+    },
+    {
+      "profile_id": "linkedin-katya",
+      "platform": "linkedin",
+      "handle": "Kateryna Boichuk",
+      "post_file": "linkedin-katya/post.md",
+      "status": "ready_with_flag",
+      "word_count_body": 224,
+      "format": "text",
+      "qc_score": "16/20",
+      "flag": "Design tip specifies an unsourced 'retention curve dropping after week four/six' — the only claim that could support that shape (GLP-1 discontinuation stat) was removed in Review 1 and is explicitly barred from reuse. Post copy itself is clean. Must be corrected before visual-brief / designer hand-off."
+    }
+  ],
+  "profiles_skipped": [
+    {
+      "profile_id": "linkedin-whitney",
+      "reason": "posts_per_week: 0 (disabled 2026-06-27)"
+    }
   ],
   "ready_for_review": true
 }

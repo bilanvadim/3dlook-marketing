@@ -18,8 +18,16 @@ existing_urls:
 cannibalization_guardrail: "Avoid cannibalizing the GLP-1 visual progress page. This article should be broader than GLP-1 and focus on patient engagement across telehealth, weight loss, wellness, and remote monitoring."
 vertical_boundary: "Telehealth owns remote-care workflows, patient experience, documentation, privacy, and remote monitoring. Does NOT own diagnosis, treatment/eligibility/underwriting decisions, replacing clinicians or DEXA/BIA/calibrated scales, guaranteed compliance, or automatic fraud detection. Not positioned as a medical device."
 author: Assel Sekerova
-status: draft
-created: 2026-07-31
+status: published
+published: 2026-08-14
+published_url: https://3dlook.ai/content-hub/mobile-body-scanning-patient-engagement/
+author: Asselya Sekerova
+note: |
+  Base draft is draft-v5-revision1.md (Aug 3 2026, Review 1 applied).
+  Live CMS version differs in meta description, author display name spelling,
+  word count (expanded post-edit), and H2 headings. Those edits live only
+  on the published page; draft-v5-revision1.md remains the canonical
+  pre-CMS snapshot.
 revision: 1
 revised: 2026-08-03
 revision_source: review1-comments.md
