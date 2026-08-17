@@ -1033,11 +1033,22 @@ AGENTIC_CHAIN_URL = os.environ.get(
 
 
 def _chain_alive(url: str, timeout: float = 3.0) -> bool:
-    """Is a failover chain actually listening? Asked before offering to switch: an
-    offer that leads to a dead endpoint is worse than no offer at all."""
+    """Is a failover chain actually listening AND willing to serve us?
+
+    The key is mandatory, not optional: a proxy on 127.0.0.1 is reachable by every
+    account on a shared host, so `server.apiKey` has to be set — and the moment it
+    is, an unauthenticated probe gets 401 and reads as "chain down". That silently
+    disabled heavy mode on both boxes the day auth was turned on: strong_chain()
+    returned None and the mode fell back to the router's daily pick.
+
+    (`_chain_key_env` is defined below — resolved per call, so the order is fine.)"""
     try:
         import urllib.request
-        with urllib.request.urlopen(url.rstrip("/") + "/models", timeout=timeout) as r:
+        req = urllib.request.Request(url.rstrip("/") + "/models")
+        key = os.environ.get(_chain_key_env(url))
+        if key:
+            req.add_header("Authorization", f"Bearer {key}")
+        with urllib.request.urlopen(req, timeout=timeout) as r:
             return r.status == 200
     except Exception:
         return False
@@ -1045,8 +1056,13 @@ def _chain_alive(url: str, timeout: float = 3.0) -> bool:
 
 def _chain_key_env(url: str) -> str:
     """Hermes derives a custom provider's key env var from host+port, e.g.
-    HERMES_CUSTOM_127_0_0_1_47822_API_KEY. Mirror that so the override carries a
-    key the runtime accepts (the proxy itself needs none — server.apiKey is null)."""
+    HERMES_CUSTOM_127_0_0_1_47832_API_KEY. Mirror that so the override carries a
+    key the runtime accepts.
+
+    The "the proxy itself needs none — server.apiKey is null" note that used to sit
+    here stopped being true once auth was turned on: the key is REQUIRED, on the
+    probe as well, which is the whole point of the header in _chain_alive above. A
+    missing key now reads as "chain down" rather than "no auth needed"."""
     body = url.split("://", 1)[-1].split("/", 1)[0]
     return "HERMES_CUSTOM_" + re.sub(r"[^A-Za-z0-9]+", "_", body).upper() + "_API_KEY"
 
@@ -1063,7 +1079,11 @@ def strong_chain() -> Optional[Dict[str, Any]]:
 def strong_model() -> Optional[Dict[str, Any]]:
     """Today's strong model from the morning pick, resolved to something Hermes can
     actually talk to: {model, provider, base_url, api_key, label}. None when the
-    router has not run or the provider's key is missing."""
+    router has not run or the provider's key is missing.
+
+    Kept as the FALLBACK for heavy mode: used only when the strong chain is not
+    listening, so a stopped proxy degrades to the old behaviour instead of removing
+    heavy mode altogether."""
     pick = _read_pick()
     model = pick.get("coder")
     pid = pick.get("coder_provider") or "opencode"
@@ -1232,11 +1252,13 @@ _HEAVY_LAST_MSG: Dict[str, str] = {}   # tab key -> last inbound text (the task 
 
 async def maybe_auto_return(runner: Any, source: Any, key: str,
                             session_key: str, text: str) -> bool:
-    """Judge this message against the heavy task and go back on its own when the
-    work has moved on. Returns True when it switched back.
+    """Judge this message against the heavy task and offer to go back when the work
+    has moved on. Always returns False — see below.
 
-    No question is asked — Sergiy asked for the return to be automatic. The rules,
-    in order of how strongly they say "done":
+    It OFFERS and never switches on its own: staying on the strong chain for a task
+    that merely LOOKS light is a legitimate choice, and a silent downgrade would
+    overrule it. An ignored offer is re-made after _HEAVY_RETURN_ASK_GAP_S. The
+    rules below decide when to ask, in order of how strongly they say "done":
       * a substantive message that shares almost nothing with the running task →
         he switched to something else, return immediately;
       * 30 minutes without anything on-topic → the task died quietly;
@@ -2627,8 +2649,6 @@ async def _report_coder_model(key: str) -> None:
         logger.info("csw: coder model change reported tab=%s %s → %s", key, prev, model)
     except Exception:
         logger.debug("csw: coder-model notice failed", exc_info=True)
-
-
 
 
 def _keys_for_task(task_id: Any) -> Tuple[str, ...]:
