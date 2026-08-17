@@ -7,12 +7,27 @@ Create posts for all active profiles based on article $1.
 
 ## Steps
 
-1. **Find the publish-package.md** for the article:
-   `workspace/seo/articles/$1/publish-package.md`
-   If the file is not found — STOP, notify Vadim.
-   If `status` in frontmatter is not `approved_for_publish` — STOP, notify that the article hasn't been approved yet.
+1. **Find the article source** in `workspace/seo/articles/$1/`, in this order:
+   - `publish-package.md` — the canonical source when it exists;
+   - otherwise the newest final draft: `draft-v5-revision1.md` → `draft-v4-publisher-final.md` → `draft-v3-final.md` → `draft-v3-edited.md`.
 
-2. **Get the profile list** from CLAUDE.md section 5. Only include profiles with `posts_per_week > 0`.
+   Nothing usable in the directory (or no directory) — STOP, notify Vadim.
+
+   **On approval — read this before refusing.** This step used to say «if `status` is not
+   `approved_for_publish` — STOP». That check could never pass: the SEO pipeline never writes
+   that value. Every `publish-package.md` in the workspace carries `ready_for_review`,
+   `revision_ready_for_review` or `awaiting_final_approval` (verified across all of them
+   2026-08-17), so the rule refused every article that has ever existed here — which is part of
+   why social runs got briefed as free-form prose instead of through this command.
+   The approval gate is Vadim asking for the run (Telegram «Пости &lt;slug&gt;», or a manual
+   `/post-from-article`) plus his approval of the finished digest — see CLAUDE.md §9. So:
+   **report** the article's `status:` and the file you took as the source in your final message,
+   and do not refuse on status. Two cases still STOP and ask: the source has no article body
+   (a stub under ~3000 chars), or its frontmatter says the text is mid-rewrite with no readable
+   version on disk.
+
+2. **Get the profile list** from `brand-assets/social-profiles-config.md` (CLAUDE.md section 5
+   summarises it). Only include profiles with `posts_per_week > 0`.
 
 3. **For each profile sequentially** run the `post-drafter` subagent with:
    - `article_path`: `workspace/seo/articles/$1/publish-package.md`
