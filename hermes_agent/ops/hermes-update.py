@@ -9,6 +9,20 @@ is on a fresh version. Runs headless from a systemd --user timer (08:00 UTC).
 - `--backup` : force a pre-update backup each run (rollback safety; updates.backup_keep=5)
 - Notifies Telegram ONLY on an actual version change or on failure (no daily noise).
 Reuses router_lib for telegram() + restart_gateway() (same helpers model-router uses).
+
+THIS FILE LIVES IN TWO PLACES and the two must stay byte-identical:
+  * ~/.hermes/hermes-update.py — the copy hermes-update.service executes. Not in git.
+  * <repo>/hermes_agent/ops/hermes-update.py — the tracked copy, so the wrapper
+    survives a box reinstall.
+Restore after a reinstall:
+
+    cp hermes_agent/ops/hermes-update.py ~/.hermes/hermes-update.py && chmod +x ~/.hermes/hermes-update.py
+
+The tracked copy is a backup, not a second entry point: `import router_lib` at module
+level needs ~/.hermes/model-router on sys.path, so running it straight from a checkout
+fails. Edit one side and copy it across in the SAME sitting — two copies of an ops
+script drifting apart is exactly what let MISSING_ANCHOR adapter.py:inline-query fire
+for five mornings (2026-08-13…17) while the fix sat in a tree nothing invoked.
 """
 import os
 import re
@@ -20,7 +34,7 @@ HOME = os.path.expanduser("~")
 # `hermes update`/`hermes setup` can reset SOUL.md back to the generic NousResearch
 # default (which makes Hermes code things itself instead of delegating to Claude Code).
 # Re-apply the canonical orchestrator persona from the repo after every update.
-REPO_SOUL = "/home/vadim_prod/3dlook-marketing/hermes_agent/SOUL.md"
+REPO_SOUL = "/srv/vadim_prod/ai-agents-config/agents-ai/telegram-bot-agent/hermes-agent/SOUL.md"
 LIVE_SOUL = f"{HOME}/.hermes/SOUL.md"
 
 
@@ -121,7 +135,7 @@ def main():
 
     # Re-apply the file-tool project-code write guard (vendored patch, wiped by update).
     try:
-        guard = "/home/vadim_prod/3dlook-marketing/hermes_agent/ops/apply-file-tool-guard.py"
+        guard = "/srv/vadim_prod/ai-agents-config/agents-ai/telegram-bot-agent/hermes-agent/ops/apply-file-tool-guard.py"
         if os.path.exists(guard):
             g = subprocess.run(["/usr/bin/python3", guard], capture_output=True, text=True)
             log(f"file-tool guard: {(g.stdout + g.stderr).strip()}")
@@ -191,7 +205,7 @@ def main():
     # left alone — copy the sources, never the state.
     try:
         import glob as _glob
-        src_dir = ("/home/vadim_prod/3dlook-marketing/agents-ai/telegram-bot-agent/"
+        src_dir = ("/srv/vadim_prod/ai-agents-config/agents-ai/telegram-bot-agent/"
                    "hermes-agent/ops/model-router")
         dst_dir = f"{HOME}/.hermes/model-router"
         if os.path.isdir(src_dir):
@@ -214,10 +228,26 @@ def main():
     # Re-apply the Claude-Code switcher patch (/dev /seo /marketing /security /hermes
     # sticky mode — vendored inserts in run.py + commands.py, wiped by update).
     try:
-        switcher = "/home/vadim_prod/3dlook-marketing/hermes_agent/ops/claude-switcher/apply-claude-switcher-patch.py"
-        if os.path.exists(switcher):
+        # Vadim's own repo FIRST, /srv only as a fallback. /srv is Sergiy's shared
+        # config repo (SergeMiro/ai-agents-config): a fix made there survives until
+        # the next `git pull`, and the script there also installs ITS OWN
+        # claude_switcher.py from the same directory. That split is what let
+        # MISSING_ANCHOR adapter.py:inline-query fire five mornings straight
+        # (08-13…08-17) — the 08-14 fix had landed in ~/3dlook-marketing, a copy
+        # this line never invoked. The chosen path is logged so a silent switch back
+        # is visible instead of inferred.
+        switcher = next(
+            (p for p in (
+                os.path.expanduser("~/3dlook-marketing/hermes_agent/ops/"
+                                   "claude-switcher/apply-claude-switcher-patch.py"),
+                "/srv/vadim_prod/ai-agents-config/agents-ai/telegram-bot-agent/"
+                "hermes-agent/ops/claude-switcher/apply-claude-switcher-patch.py",
+            ) if os.path.exists(p)),
+            "",
+        )
+        if switcher:
             g = subprocess.run(["/usr/bin/python3", switcher], capture_output=True, text=True)
-            log(f"claude-switcher: {(g.stdout + g.stderr).strip()}")
+            log(f"claude-switcher [{switcher}]: {(g.stdout + g.stderr).strip()}")
             if g.returncode == 2:
                 rl.telegram("⚠️ Hermes update: переключатель Claude Code НЕ переприменён "
                             "(анкер в run.py/commands.py сместился) — /dev /seo /marketing "
@@ -228,7 +258,7 @@ def main():
     # Re-apply the per-turn vision switch (borrow the image reader for the turn
     # that carries a picture — two vendored inserts in run.py, wiped by update).
     try:
-        vsw = ("/home/vadim_prod/3dlook-marketing/agents-ai/telegram-bot-agent/"
+        vsw = ("/srv/vadim_prod/ai-agents-config/agents-ai/telegram-bot-agent/"
                "hermes-agent/ops/vision-switch/apply-vision-switch-patch.py")
         if os.path.exists(vsw):
             g = subprocess.run(["/usr/bin/python3", vsw], capture_output=True, text=True)
