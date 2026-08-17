@@ -1,8 +1,10 @@
 ---
 product: fitxpress
+profile: vadim
 market: Australia
 created: 2026-08-14
-status: draft
+status: approved
+approved: 2026-08-17
 requested_count: 30
 delivered_count: 26
 inspiration: erakulis.com (existing customer, never a target)
