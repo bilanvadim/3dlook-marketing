@@ -5,5 +5,5 @@ Wants=network-online.target
 
 [Service]
 Type=oneshot
-Environment=WIKI_PATH=/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/hermes-agent/AI-Second-Brain
-ExecStart=/home/sergiy_prod/.hermes/vault-sync.sh
+Environment=WIKI_PATH=@DEST@/agents-ai/telegram-bot-agent/hermes-agent/AI-Second-Brain
+ExecStart=@HOME@/.hermes/vault-sync.sh

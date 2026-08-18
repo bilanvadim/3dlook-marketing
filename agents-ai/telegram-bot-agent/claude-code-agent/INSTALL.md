@@ -18,7 +18,7 @@ cp config/project-mcp.json.example     ~/.mcp.json
 #   merge config/user-mcp.json.example → ~/.claude.json "mcpServers", or:
 claude mcp add magic    -s user -- npx -y @21st-dev/magic@latest        # then set API_KEY
 claude mcp add context7 -s user -- npx -y @upstash/context7-mcp@latest
-printf 'dev-sm\n' > ~/.claude/.active-profile
+printf 'dev\n' > ~/.claude/.active-profile
 ```
 Secrets referenced by env keys (not in git): `GITHUB_PERSONAL_ACCESS_TOKEN`,
 `POSTGRES_CONNECTION_STRING`, magic `API_KEY` — export them or put them in the MCP `env` blocks.
@@ -35,7 +35,7 @@ codebase-memory-mcp config set auto_watch false
 `DEV/switch-profile.sh <system>` registers each marketplace and installs its plugins,
 then rewrites `~/.claude/settings.json → enabledPlugins` and `~/.claude/.active-profile`.
 ```bash
-DEV/switch-profile.sh dev-sm        # default — 11 hermes-* plugins + codebase-memory
+DEV/switch-profile.sh dev        # default — 11 hermes-* plugins + codebase-memory
 # others: seo | marketing | security | test    (one active at a time; restart Claude Code after)
 ```
 Profiles live in `DEV/profiles/*.json`. Headless dispatch under a profile:
@@ -44,15 +44,15 @@ Profiles live in `DEV/profiles/*.json`. Headless dispatch under a profile:
 ## Systems
 | Profile | Marketplace(s) | Entry |
 |---|---|---|
-| `dev` | dev-sm (11 hermes-*) | `/sm-feature` `/sm-verify` `/sm-docs` |
-| `seo` | dev base + seo-sm | `/seo-audit` |
-| `marketing` | dev base + marketing-sm | `/mkt-campaign` |
-| `security` | dev base + security-sm | agents · `/sm-verify` |
-| `test` | dev base + marketing-sm + marketing_vb + marketing_vb_sm | `/vbsm-campaign` |
+| `dev` | dev (11 hermes-*) | `/sm-feature` `/sm-verify` `/sm-docs` |
+| `seo` | dev base + seo | `/seo-audit` |
+| `marketing` | dev base + marketing | `/mkt-campaign` |
+| `security` | dev base + security | agents · `/sm-verify` |
+| `test` | dev base + marketing + marketing_vb + marketing_vb_sm | `/vbsm-campaign` |
 
 ## Hooks & permission baseline
-`DEV/dev-sm/.claude/settings.json` defines the project permission baseline
+`DEV/dev/.claude/settings.json` defines the project permission baseline
 (allow safe read/build/test/git; ask for deploy/force-push/db push; deny reading
 secrets + `rm -rf`) and wires the hooks (`guard.py`, `autocommit.py`,
-`clear-counter.py`, `session-handoff.py`). Copy `DEV/dev-sm/.claude/` into each
+`clear-counter.py`, `session-handoff.py`). Copy `DEV/dev/.claude/` into each
 working project so those apply there.

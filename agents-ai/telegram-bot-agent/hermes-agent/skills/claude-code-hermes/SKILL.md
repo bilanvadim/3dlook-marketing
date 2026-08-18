@@ -10,7 +10,7 @@ category: software-development
 
 ## Главное правило
 
-Hermes НЕ редактирует файлы проекта напрямую (`patch`, `write_file`) под путями вроде `/srv/sergiy_prod/*` — срабатывает `hermes-mechanic`. Всегда делегируй правки Claude Code (print mode или tmux), никогда не пытайся сначала прямого редактирования.
+Hermes НЕ редактирует файлы проекта напрямую (`patch`, `write_file`) под путями вроде `/srv/@USER@/*` — срабатывает `hermes-mechanic`. Всегда делегируй правки Claude Code (print mode или tmux), никогда не пытайся сначала прямого редактирования.
 
 ## Print mode (`-p`) — подводные камни
 
@@ -126,13 +126,13 @@ git diff --stat # какие файлы затронуты
 
 ## Создание новых файлов
 
-Hermes блокирует `write_file` в `/srv/sergiy_prod/*`. Обход: записать в `/tmp/`, затем скопировать:
+Hermes блокирует `write_file` в `/srv/@USER@/*`. Обход: записать в `/tmp/`, затем скопировать:
 
 ```bash
 cat > /tmp/new_component.tsx << 'EOF'
 ...код компонента...
 EOF
-cp /tmp/new_component.tsx /srv/sergiy_prod/PROJECT/components/NewComponent.tsx
+cp /tmp/new_component.tsx /srv/@USER@/PROJECT/components/NewComponent.tsx
 # Затем Claude обновит импорты
 claude -p "Add import for NewComponent" --max-turns 3
 ```
@@ -169,12 +169,12 @@ mkdir "/path/to/app/(marketing)/new-page"
 
 То же касается `patch()` внутри `execute_code` — он патчит копию файла в песочнице.
 
-## Deny rules: не юзай find/grep/Python `.find()` в /srv/sergiy_prod
+## Deny rules: не юзай find/grep/Python `.find()` в /srv/@USER@
 
 На VPS настроены deny rules, блокирующие определённые команды в каталоге проектов:
-- `find */srv/sergiy_prod/*` — блокируется
-- `grep` с путём `/srv/sergiy_prod/*` — блокируется
-- Даже Python-скрипты с методом `.find()` в строке блокируются в `/srv/sergiy_prod`
+- `find */srv/@USER@/*` — блокируется
+- `grep` с путём `/srv/@USER@/*` — блокируется
+- Даже Python-скрипты с методом `.find()` в строке блокируются в `/srv/@USER@`
 
 **Что использовать вместо terminal grep/find:**
 - `search_files` — полноценная замена grep и find
@@ -199,7 +199,7 @@ Python `str.replace()` не находит многострочные блоки
 Французские акценты (è, é, ê, à, ç) и апострофы ломают shell escaping в `claude -p`. Когда Claude стабильно падает на простой замене из-за спецсимволов, используй python3 heredoc для прямого редактирования:
 
 ```bash
-cd /srv/sergiy_prod/PROJECT && python3 << 'PYEOF'
+cd /srv/@USER@/PROJECT && python3 << 'PYEOF'
 with open('file.tsx', 'r') as f:
     content = f.read()
 # Правим текст напрямую
@@ -263,7 +263,7 @@ grep -rn "lucide-react" --include="*.tsx" --include="*.ts" . | grep -v node_modu
 TypeScript ошибки на Vercel — самые дорогие, каждая стоит 3-5 минут (push + ожидание + лог). Проверяй локально до пуша:
 
 ```bash
-cd /srv/sergiy_prod/PROJECT && npx tsc --noEmit 2>&1 | head -15
+cd /srv/@USER@/PROJECT && npx tsc --noEmit 2>&1 | head -15
 ```
 
 Если пусто — чисто. Исправляй ошибки, перепроверяй, потом пуш. Одна минута здесь экономит 4+ минуты на Vercel.
@@ -307,7 +307,7 @@ vercel logs --limit 5
 
 ```bash
 # Пуш + ожидание 90 сек + проверка статуса одной командой
-cd /srv/sergiy_prod/PROJECT && git push origin main && sleep 90 && vercel list --prod | head -6
+cd /srv/@USER@/PROJECT && git push origin main && sleep 90 && vercel list --prod | head -6
 ```
 
 После пуша Vercel начинает сборку через ~30 секунд. Полный цикл (build + deploy) занимает 60-90 секунд. `sleep 90` + `vercel list` показывает статус последнего деплоя.
@@ -345,7 +345,7 @@ await createLead({ name, phone, clientType: "pro" } as any);
 После стабилизации кода — выпили `as any` и обнови тип.
 
 ```bash
-cd /srv/sergiy_prod/PROJECT
+cd /srv/@USER@/PROJECT
 export $(grep -v '^#' .env.local | xargs)
 node -e "
 const { createClient } = require('@supabase/supabase-js');

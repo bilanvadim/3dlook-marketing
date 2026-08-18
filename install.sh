@@ -31,7 +31,19 @@ set -uo pipefail
 
 KIT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DEST="/srv/$USER/ai-agents-config"
-SECRETS_FILE="$KIT/secrets.env"
+# Where the credentials come from, in order: --secrets wins, then the XDG store, then the legacy
+# in-kit path.
+#
+# The XDG location is first because the in-kit default puts a file full of API keys INSIDE a git
+# checkout. It is gitignored, but it only survives by that one line, and the tree is something
+# update.sh resets and deploy.sh clones-and-swaps. ~/.config/ai-agent-stack/ is outside all of
+# that and survives a re-clone of the repo.
+#
+# It also removes a real trap: with the in-kit path as the only default, an account whose keys
+# live in the XDG store gets "no secrets file — will prompt" and install.sh starts asking for
+# credentials that are already deployed and working.
+XDG_SECRETS="${XDG_CONFIG_HOME:-$HOME/.config}/ai-agent-stack/secrets.env"
+if [ -f "$XDG_SECRETS" ]; then SECRETS_FILE="$XDG_SECRETS"; else SECRETS_FILE="$KIT/secrets.env"; fi
 ASSUME_YES=0; SKIP_APT=0; SKIP_ENROLL=0; SKIP_CLAUDE=0; PROJECT_ROOT=""; OWNER=""; GH_OWNER=""
 while [ $# -gt 0 ]; do case "$1" in
   --dest) DEST="$2"; shift 2;;
@@ -129,11 +141,29 @@ else ok "running in place at $DEST"; fi
 # that the agent READS AS INSTRUCTIONS — SOUL.md tells Hermes "don't touch anything
 # outside sergiy_prod", which on a ported box points the new owner's manager at
 # someone else's account.
-grep -rlI -e "sergiy_prod" -e "YOUR_USER" "$DEST/agents-ai" 2>/dev/null \
-  | xargs -r sed -i "s|/srv/sergiy_prod/ai-agents-config|$DEST|g; s|/srv/sergiy_prod|/srv/$USER|g; s|/home/sergiy_prod|$HOME|g; s|sergiy_prod|$USER|g; s|YOUR_USER|$USER|g"
+# The template carries @DEST@ / @HOME@ / @USER@ rather than the author's real paths, so this is a
+# token substitution — see scripts/render.sh, which does the same job for an already-deployed tree.
+# @DEST@ goes FIRST: it is the longest token and its expansion contains the others'.
+#
+# YOUR_USER is included here and NOT in render.sh, and the difference is deliberate: install.sh
+# DEPLOYS config.yaml.example into ~/.hermes/config.yaml, so its human placeholder has to be
+# resolved. render.sh only maintains the /srv tree, where an example must stay an example.
+grep -rlI -e "@DEST@" -e "@HOME@" -e "@USER@" -e "YOUR_USER" "$DEST/agents-ai" 2>/dev/null \
+  | xargs -r sed -i "s|@DEST@|$DEST|g; s|@HOME@|$HOME|g; s|@USER@|$USER|g; s|YOUR_USER|$USER|g"
 # @PROJECT_ROOT@ cannot ride the rewrite above: content does not live under /srv with
 # the system, so there is no author path to swap — the token carries the answer.
-grep -rlI -e "@PROJECT_ROOT@" -e "@OWNER@" -e "@GH_OWNER@" "$DEST/agents-ai" 2>/dev/null \
+#
+# hermes-update.py IS EXCLUDED, and that exclusion is load-bearing. It is the renderer that
+# re-applies these same tokens after every `hermes update` (_render_identity), so it holds
+# ("@OWNER@", "HERMES_OWNER") as CODE — a table of token→env-var pairs. Substituting into it
+# rewrote the table to ("Vadim Bilan", "HERMES_OWNER"), which means the updater no longer
+# recognises @OWNER@ at all: the next `hermes update` overwrites SOUL.md with the upstream
+# default and the re-render silently leaves a literal "@OWNER@" in the persona the agent is
+# handed as its instructions. Found live on vadim_prod, in the /srv copy AND in the deployed
+# ~/.hermes/hermes-update.py.
+#
+# It renders itself for its own file anyway; nothing needs us to do it here.
+grep -rlI --exclude='hermes-update.py' -e "@PROJECT_ROOT@" -e "@OWNER@" -e "@GH_OWNER@" "$DEST/agents-ai" 2>/dev/null \
   | xargs -r sed -i "s|@PROJECT_ROOT@|$PROJECT_ROOT|g; s|@GH_OWNER@|$GH_OWNER|g; s|@OWNER@|$OWNER|g"
 ok "paths rewritten to $USER / $DEST / $HOME; projects=$PROJECT_ROOT; owner=$OWNER ($GH_OWNER)"
 
@@ -153,7 +183,13 @@ fi
 c "3/8 Secrets & bot binding"
 declare -A S
 load_secret(){ # name required?  → sets S[name]
-  local n="$1" req="${2:-0}" v="${!n:-}"
+  # `local` expands all of its arguments BEFORE it assigns any of them, so a
+  # v="${!n:-}" written on this same line indirects through an empty name and
+  # bash aborts the expansion with "invalid indirect expansion". The env-var path
+  # then silently never worked — the grep below covered for it — while every call
+  # printed the error twice to stderr. Assign n first, indirect afterwards.
+  local n="$1" req="${2:-0}" v=""
+  v="${!n:-}"
   [ -z "$v" ] && v="$(grep -E "^$n=" "$SECRETS_FILE" 2>/dev/null | head -1 | cut -d= -f2- | sed 's/[[:space:]]*#.*//;s/[[:space:]]*$//')"
   if [ -z "$v" ] && [ "$ASSUME_YES" = 0 ] && [ -t 0 ]; then
     if [ "$req" = secret ]; then read -rsp "  · $n: " v; echo; else read -rp "  · $n${req:+ (required)}: " v; fi
@@ -164,8 +200,15 @@ load_secret(){ # name required?  → sets S[name]
 [ -f "$SECRETS_FILE" ] && { set -a; . "$SECRETS_FILE"; set +a; ok "loaded $(basename "$SECRETS_FILE")"; } || warn "no secrets file — will prompt"
 load_secret TELEGRAM_BOT_TOKEN 1
 load_secret TELEGRAM_ALLOWED_USERS 1
-load_secret OPENCODE_GO_API_KEY 1
-load_secret OPENCODE_ZEN_API_KEY 0; [ -z "${S[OPENCODE_ZEN_API_KEY]}" ] && S[OPENCODE_ZEN_API_KEY]="${S[OPENCODE_GO_API_KEY]}"
+# Model routing goes through llm-failover-proxy only, and its `opencode` provider
+# hits the ZEN endpoint (https://opencode.ai/zen/v1) — so ZEN is the key that matters
+# and GO is no longer part of the stack. GO stays readable but optional: a secrets.env
+# written before the switch carries only GO, and failing an install over a renamed key
+# would be gratuitous. Order matters — GO must load before the fallback runs.
+load_secret OPENCODE_GO_API_KEY 0
+load_secret OPENCODE_ZEN_API_KEY 0
+[ -z "${S[OPENCODE_ZEN_API_KEY]}" ] && S[OPENCODE_ZEN_API_KEY]="${S[OPENCODE_GO_API_KEY]}"
+[ -z "${S[OPENCODE_ZEN_API_KEY]}" ] && die "required secret missing: OPENCODE_ZEN_API_KEY (fill secrets.env or run interactively)"
 # Free-provider keys for the backup coder (optional — the morning report asks
 # for whatever is missing, so an empty value is a valid starting state).
 # Every provider the router can rotate through must be listed: a key filled into
@@ -184,11 +227,19 @@ mkdir -p "$HHOME"
 # --- ~/.hermes/.env (preserve an existing one — only scaffold if absent, so a
 #     re-run on a live box never wipes real keys; _set updates in place below) ---
 [ -f "$HHOME/.env" ] || cp "$HSRC/.env.example" "$HHOME/.env"
-_set(){ local k="$1" v="$2"; [ -z "$v" ] && return; if grep -qE "^$k=" "$HHOME/.env"; then sed -i "s|^$k=.*|$k=$v|" "$HHOME/.env"; else echo "$k=$v" >> "$HHOME/.env"; fi; }
+# A value containing a space MUST be quoted: this file is read back with
+# `set -a; . .env`, and an unquoted HERMES_OWNER=Vadim Bilan makes bash set
+# HERMES_OWNER=Vadim and then try to RUN `Bilan`. Every consumer that sourced the
+# file got a truncated owner name plus "command not found" on stderr. A one-word
+# owner (Sergiy) hid it; the first two-word owner surfaced it.
+_set(){ local k="$1" v="$2"; [ -z "$v" ] && return
+  case "$v" in *[[:space:]]*) v="\"$v\"";; esac
+  if grep -qE "^$k=" "$HHOME/.env"; then sed -i "s|^$k=.*|$k=$v|" "$HHOME/.env"; else echo "$k=$v" >> "$HHOME/.env"; fi; }
 _set TELEGRAM_BOT_TOKEN "${S[TELEGRAM_BOT_TOKEN]}"; _set TELEGRAM_ALLOWED_USERS "${S[TELEGRAM_ALLOWED_USERS]}"
 _set OPENCODE_GO_API_KEY "${S[OPENCODE_GO_API_KEY]}"; _set OPENCODE_ZEN_API_KEY "${S[OPENCODE_ZEN_API_KEY]}"
 _set GEMINI_API_KEY "${S[GEMINI_API_KEY]}"; _set OPENAI_API_KEY "${S[GEMINI_API_KEY]}"; _set GROQ_API_KEY "${S[GROQ_API_KEY]}"
-_set WIKI_PATH "$HSRC/AI-Second-Brain"; _set OBSIDIAN_VAULT_PATH "$HSRC/AI-Second-Brain"
+# Point at the RUNTIME vault, not the seed in the config tree — see the seeding step below.
+_set WIKI_PATH "$HHOME/AI-Second-Brain"; _set OBSIDIAN_VAULT_PATH "$HHOME/AI-Second-Brain"
 # The Telegram switcher's projects root, and the fallback for conductor jobs that
 # name no work_dir. Without it both fall back to ~/workspaces, which on a box where
 # projects live elsewhere is an empty or missing directory.
@@ -205,7 +256,7 @@ if [ -n "${S[TG_API_ID]}" ]; then
   printf 'TG_API_ID=%s\nTG_API_HASH=%s\nTG_PHONE=%s\nTG_PASSWORD=%s\n' "${S[TG_API_ID]}" "${S[TG_API_HASH]}" "${S[TG_PHONE]}" "${S[TG_PASSWORD]}" > "$HHOME/telegram-userbot/.env"
 fi
 mkdir -p "$HHOME/conductor-bridge"
-printf 'CONDUCTOR_BRIDGE_TOKEN=%s\nBRIDGE_HOST=172.20.0.1\nBRIDGE_PORT=8790\nBRIDGE_DEFAULT_PROFILE=dev-sm\nBRIDGE_DEFAULT_WORKDIR=%s\nBRIDGE_DEFAULT_MAX_TURNS=40\n' "${S[CONDUCTOR_BRIDGE_TOKEN]}" "$PROJECT_ROOT" > "$HHOME/conductor-bridge/bridge.env"
+printf 'CONDUCTOR_BRIDGE_TOKEN=%s\nBRIDGE_HOST=172.20.0.1\nBRIDGE_PORT=8790\nBRIDGE_DEFAULT_PROFILE=dev\nBRIDGE_DEFAULT_WORKDIR=%s\nBRIDGE_DEFAULT_MAX_TURNS=40\n' "${S[CONDUCTOR_BRIDGE_TOKEN]}" "$PROJECT_ROOT" > "$HHOME/conductor-bridge/bridge.env"
 chmod 600 "$HHOME/.env" "$HHOME/config.yaml" "$HHOME/mem0.json" 2>/dev/null
 chmod 600 "$HHOME/mtproto/creds.env" "$HHOME/telegram-userbot/.env" "$HHOME/conductor-bridge/bridge.env" 2>/dev/null
 # The source file too. secrets.env.example promises "install.sh chmod 600's
@@ -342,11 +393,37 @@ cp "$HSRC/ops/systemd/"*.service "$HSRC/ops/systemd/"*.timer "$HOME/.config/syst
 sed -i "s|/srv/sergiy_prod|/srv/$USER|g; s|/home/sergiy_prod|$HOME|g" "$HOME/.config/systemd/user/"*.service 2>/dev/null || true
 mkdir -p "$HHOME/model-router/cache"   # BEFORE the copy: the cp silently no-op'd without it
 cp "$HSRC/ops/model-router/"*.py "$HSRC/ops/model-router/"*.json "$HHOME/model-router/" 2>/dev/null || true
-cp "$HSRC/ops/vault-sync.sh" "$HSRC/ops/hermes-update.py" "$HHOME/" 2>/dev/null; chmod +x "$HHOME/vault-sync.sh" 2>/dev/null
+cp "$HSRC/ops/hermes-update.py" "$HHOME/" 2>/dev/null
+# THE VAULT IS RUNTIME CONTENT, so it lives in ~/.hermes — not inside the config tree.
+#
+# It used to live at $HSRC/AI-Second-Brain, i.e. inside a repo that update.sh resets and
+# re-renders. Anything the agent wrote there was one update away from being discarded, and
+# vault-sync.sh existed to paper over that by committing and pushing FROM a runtime replica —
+# which is how a `git pull --rebase --autostash` every 30 minutes came to leave conflict markers
+# in every profiles/*.json on one account.
+#
+# The repo copy is now purely a SEED (a schema, a README and empty directories). Seeded once,
+# never overwritten: a re-run must not touch a vault the owner has since filled.
+if [ ! -d "$HHOME/AI-Second-Brain" ]; then
+  cp -r "$HSRC/AI-Second-Brain" "$HHOME/AI-Second-Brain" 2>/dev/null \
+    && ok "vault seeded → $HHOME/AI-Second-Brain" || warn "could not seed the vault"
+else ok "vault already present — left untouched"; fi
+# The shared heaviness rule. Both the switcher and the suggest-stronger-model hook
+# import it BY PATH and fall back to a weaker built-in copy when it is missing — so a
+# fresh install without this line silently runs the looser rule, which is the exact
+# drift ops/task-heaviness.py exists to end. Observed on a real install.
+cp "$HSRC/ops/task-heaviness.py" "$HHOME/task-heaviness.py" 2>/dev/null && chmod 0644 "$HHOME/task-heaviness.py"
+mkdir -p "$HHOME/agent-hooks"
+cp "$HSRC/ops/agent-hooks/"*.py "$HHOME/agent-hooks/" 2>/dev/null; chmod +x "$HHOME/agent-hooks/"*.py 2>/dev/null
 systemctl --user daemon-reload 2>/dev/null || true
 systemctl --user enable --now hermes-qdrant.service 2>/dev/null && ok "hermes-qdrant enabled+started" || warn "hermes-qdrant not started — memory will be dead"
 systemctl --user enable --now hermes-gateway.service 2>/dev/null && ok "hermes-gateway enabled+started" || { warn "could not start hermes-gateway via systemctl --user"; todo "systemctl --user enable --now hermes-gateway.service"; }
-for t in model-router-refresh.timer hermes-update.timer vault-sync.timer; do systemctl --user enable --now "$t" 2>/dev/null || true; done
+# vault-sync.timer is deliberately NOT here. It ran `git pull --rebase --autostash` on the
+# runtime tree every 30 minutes, which on a rendered tree leaves conflict markers, and in the whole
+# history of this repo its commit half never fired once. Disabling it by hand was not enough while
+# this loop re-enabled it on every install.
+for t in model-router-refresh.timer hermes-update.timer; do systemctl --user enable --now "$t" 2>/dev/null || true; done
+systemctl --user disable --now vault-sync.timer 2>/dev/null || true
 MON="$HSRC/ops/conductor-monitor.sh"
 crontab -l 2>/dev/null | grep -qF "$MON" || { (crontab -l 2>/dev/null; echo "*/5 * * * * $MON >> $HHOME/conductor-monitor.log 2>&1") | crontab - && ok "conductor-monitor cron added"; }
 "$MON" --init >/dev/null 2>&1 || true
@@ -357,17 +434,27 @@ if [ "$SKIP_ENROLL" = 1 ] || [ -z "${S[TG_API_ID]}" ]; then warn "skipped (no TG
 elif [ -t 0 ] && [ "$ASSUME_YES" = 0 ]; then
   ( cd "$HHOME/mtproto" && python3 -m venv venv >/dev/null 2>&1 && ./venv/bin/pip install -q telethon cryptography >/dev/null 2>&1 ) || true
   echo "  A Telegram login code will be sent to ${S[TG_PHONE]}. Follow the prompts."
-  if ( cd "$HHOME/mtproto" && set -a && . creds.env && set +a && ./venv/bin/python - <<'PY'
+  # The program must live in a FILE, not a heredoc: a heredoc IS stdin, so telethon's
+  # input() for the login code hit EOF and enrollment could never succeed interactively.
+  # Passing the phone explicitly also drops one prompt — only the code (and the 2FA
+  # password, when the account has one) is asked for.
+  cat > "$HHOME/mtproto/enroll.py" <<'PY'
 import os
 from telethon.sync import TelegramClient
 from telethon.sessions import StringSession
 from cryptography.fernet import Fernet
-with TelegramClient(StringSession(), int(os.environ["TG_API_ID"]), os.environ["TG_API_HASH"]) as c:
-    s=c.session.save()
-open("session.enc","wb").write(Fernet(os.environ["MTPROTO_SESSION_KEY"].encode()).encrypt(s.encode()))
-os.chmod("session.enc",0o600); print("OK")
+client = TelegramClient(StringSession(), int(os.environ["TG_API_ID"]), os.environ["TG_API_HASH"])
+client.start(phone=os.environ.get("TG_PHONE") or None)
+me = client.get_me(); print(f"signed in as {me.first_name} | @{me.username} | id {me.id}")
+s = client.session.save(); client.disconnect()
+out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "session.enc")
+open(out, "wb").write(Fernet(os.environ["MTPROTO_SESSION_KEY"].encode()).encrypt(s.encode()))
+os.chmod(out, 0o600); print("OK")
 PY
-  ); then ok "MTProto session enrolled (session.enc)"; else warn "MTProto enrollment skipped/failed"; todo "Enroll MTProto later: ops/mtproto/README.md"; fi
+  chmod 600 "$HHOME/mtproto/enroll.py"
+  if ( cd "$HHOME/mtproto" && set -a && . creds.env && set +a && ./venv/bin/python ./enroll.py ); then
+    ok "MTProto session enrolled (session.enc)"
+  else warn "MTProto enrollment skipped/failed"; todo "Enroll MTProto later: ops/mtproto/README.md"; fi
 else warn "non-interactive — cannot receive SMS code"; todo "Enroll MTProto+userbot sessions (interactive): ops/mtproto/README.md, ops/telegram-userbot/README.md"; fi
 
 # ── 7. Claude Code side ──────────────────────────────────────────────────────
@@ -386,7 +473,7 @@ else
   [ -n "${S[POSTGRES_CONNECTION_STRING]}" ] && sed -i "s|REPLACE_WITH_PG_CONN_STRING|${S[POSTGRES_CONNECTION_STRING]}|" "$HOME/.mcp.json" 2>/dev/null || true
   command -v claude >/dev/null && ok "claude CLI present" || todo "Install Claude Code: sudo npm i -g @anthropic-ai/claude-code"
   command -v codebase-memory-mcp >/dev/null || todo "Install codebase-memory: curl -fsSL https://raw.githubusercontent.com/DeusData/codebase-memory-mcp/main/install.sh | bash -s -- --skip-config"
-  [ -x "$CSRC/DEV/switch-profile.sh" ] && todo "Activate default system: $CSRC/DEV/switch-profile.sh dev-sm  (then restart Claude Code)"
+  [ -x "$CSRC/DEV/switch-profile.sh" ] && todo "Activate default system: $CSRC/DEV/switch-profile.sh dev  (then restart Claude Code)"
 fi
 
 # ── 8. verify + report ───────────────────────────────────────────────────────

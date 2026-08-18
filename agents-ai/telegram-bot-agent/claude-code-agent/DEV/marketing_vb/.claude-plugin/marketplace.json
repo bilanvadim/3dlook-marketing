@@ -1,5 +1,5 @@
 {
-  "name": "marketing_vb",
+  "name": "ai-agents-mvb",
   "owner": {
     "name": "Vadim Bilan",
     "url": "https://github.com/bilanvadim"
@@ -17,12 +17,12 @@
     {
       "name": "mvb-social",
       "source": "./plugins/mvb-social",
-      "description": "Social team (8): post-drafter, social-planner, social-editor, social-publisher, brand-checker (social voice), quarterly-strategist, social-analytics, visual-brief — LinkedIn/organic social from brand assets"
+      "description": "Social team: post-drafter, quarterly-strategist, social-analytics, visual-brief — LinkedIn/organic social from brand assets"
     },
     {
       "name": "mvb-seo",
       "source": "./plugins/mvb-seo",
-      "description": "Long-form team (7): seo-planner, seo-writer, seo-editor, seo-publisher + the FitXpress FAQ writers (data-lifecycle, enterprise-faq, rights-compliance) — fact-checked articles from approved plans"
+      "description": "SEO team: seo-planner, seo-writer, seo-editor, seo-publisher — fact-checked long-form articles from approved plans"
     },
     {
       "name": "mvb-outbound",

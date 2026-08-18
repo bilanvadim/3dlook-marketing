@@ -51,7 +51,7 @@
    **`hermes-qdrant.service`** — без него память мертва.
 3. `hermes-agent/ops/claude-switcher/apply-claude-switcher-patch.py` — вкладки,
    `/heavy`, кнопки систем в Telegram.
-4. `claude-code-agent/DEV/switch-profile.sh dev-sm-sm` — профиль Claude Code.
+4. `claude-code-agent/DEV/switch-profile.sh dev` — профиль Claude Code.
 5. `opencode-agent/README.md` — три условия, без которых запасной агент молча
    возвращает пустоту.
 6. Первый прогон роутера: `python3 ~/.hermes/model-router/refresh.py --dry-run`.
@@ -62,7 +62,7 @@
 systemctl --user is-active hermes-gateway hermes-qdrant hermes-conductor
 python3 ~/.hermes/model-router/refresh.py --dry-run          # выбор моделей, без записи
 curl -s -o /dev/null -w '%{http_code}\n' http://127.0.0.1:6343/collections   # → 401 (ключ обязателен)
-cd /srv/sergiy_prod/ai-agents-config && opencode run 'Reply with exactly: BACKUP-OK'
+cd @DEST@ && opencode run 'Reply with exactly: BACKUP-OK'
 claude -p 'ping' --max-turns 1
 ```
 

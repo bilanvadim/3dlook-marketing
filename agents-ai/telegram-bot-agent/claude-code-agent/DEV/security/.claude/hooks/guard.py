@@ -1,0 +1,1 @@
+../../../dev/.claude/hooks/guard.py

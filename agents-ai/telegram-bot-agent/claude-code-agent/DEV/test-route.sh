@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Regression test for route-profile.sh — task text → expected profile.
 # Expectations carry the -sm suffix since the 2026-07-11 profile rename
-# (full_stack_sm→dev-sm etc.). They did not, so 23 of 28 cases failed and the
+# (full_stack_sm→dev etc.). They did not, so 23 of 28 cases failed and the
 # suite could no longer catch a real regression in the classifier.
 # Run: ./test-route.sh   (exit 0 = all pass)
 set -uo pipefail
@@ -16,31 +16,31 @@ check() { # "<text>" <expected>
 }
 
 # SEO
-check "подними нам органический трафик из Google" seo-sm
-check "нужен SEO-аудит сайта и работа с ключевыми словами" seo-sm
-check "проблемы с индексацией и sitemap, поправь canonical" seo-sm
-check "improve our search rankings and fix Core Web Vitals" seo-sm
-check "проанализируй ссылочный профиль и бэклинки" seo-sm
+check "подними нам органический трафик из Google" seo
+check "нужен SEO-аудит сайта и работа с ключевыми словами" seo
+check "проблемы с индексацией и sitemap, поправь canonical" seo
+check "improve our search rankings and fix Core Web Vitals" seo
+check "проанализируй ссылочный профиль и бэклинки" seo
 
 # MARKETING
-check "запусти рекламную кампанию в Google Ads" marketing-sm
-check "сделай контент-план и email-рассылку" marketing-sm
-check "нужна маркетинговая стратегия и позиционирование бренда" marketing-sm
-check "plan a paid media funnel and social campaign" marketing-sm
-check "напиши копирайт для лендинга кампании" marketing-sm
+check "запусти рекламную кампанию в Google Ads" marketing
+check "сделай контент-план и email-рассылку" marketing
+check "нужна маркетинговая стратегия и позиционирование бренда" marketing
+check "plan a paid media funnel and social campaign" marketing
+check "напиши копирайт для лендинга кампании" marketing
 
 # SECURITY
-check "проверь приложение на уязвимости и OWASP" security-sm
-check "сделай security-аудит и проверь RLS политики" security-sm
-check "look for vulnerabilities and secret leaks" security-sm
-check "нужен пентест и проверка auth" security-sm
+check "проверь приложение на уязвимости и OWASP" security
+check "сделай security-аудит и проверь RLS политики" security
+check "look for vulnerabilities and secret leaks" security
+check "нужен пентест и проверка auth" security
 
 # DEV (default / explicit)
-check "сделай новую фичу и почини баг в API" dev-sm
-check "отрефактори бэкенд и напиши миграцию базы данных" dev-sm
-check "build a React component and deploy it" dev-sm
-check "просто помоги разобраться с кодом" dev-sm
-check "напиши unit-тесты для сервиса" dev-sm
+check "сделай новую фичу и почини баг в API" dev
+check "отрефактори бэкенд и напиши миграцию базы данных" dev
+check "build a React component and deploy it" dev
+check "просто помоги разобраться с кодом" dev
+check "напиши unit-тесты для сервиса" dev
 
 # AMBIGUOUS (balanced specialized signals tie → ask). Note: when one domain's
 # keywords dominate by count, the classifier returns that domain (the backbone
@@ -51,10 +51,10 @@ check "keyword research and a newsletter" ambiguous  # seo=1 (keyword), marketin
 
 # number → profile mapping (Hermes parses the user's "2")
 checknum() { local got; got="$("$R" --num "$1")"; if [[ "$got" == "$2" ]]; then pass=$((pass+1)); printf '  ok    [--num %s ] %s\n' "$1" "$2"; else fail=$((fail+1)); printf '  FAIL  --num %s expected %s got %s\n' "$1" "$2" "$got"; fi; }
-checknum 1 dev-sm
-checknum 2 marketing-sm
-checknum 3 seo-sm
-checknum 4 security-sm
+checknum 1 dev
+checknum 2 marketing
+checknum 3 seo
+checknum 4 security
 checknum 9 ambiguous
 
 # menu text present

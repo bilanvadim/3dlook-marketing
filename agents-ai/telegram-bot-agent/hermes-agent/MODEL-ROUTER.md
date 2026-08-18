@@ -271,7 +271,7 @@ journal утреннего запуска теперь видно каждую �
 3. **Запускать внутри git-репозитория.** Вне проекта `opencode run` тихо ничего
    не делает. Всегда `cd <repo> && opencode run '<задача>'`.
 
-Проверка: `cd /srv/sergiy_prod/ai-agents-config && opencode run 'Reply with exactly: BACKUP-OK'`
+Проверка: `cd @DEST@ && opencode run 'Reply with exactly: BACKUP-OK'`
 → должно напечатать `BACKUP-OK`.
 
 Модели у CLI префиксуются `opencode/` (бесплатные) и `opencode-go/` (подписка) —
@@ -370,7 +370,7 @@ systemctl --user status hermes-gateway.service
 ~/.opencode/bin/opencode auth list                    # есть креды провайдера-победителя?
 cat ~/.hermes/model-router/coder-history.json         # история замеров скорости (эталон)
 grep -o '^[A-Z_]*' ~/.hermes/ai-models.env            # какие ключи провайдеров уже лежат
-cd /srv/sergiy_prod/ai-agents-config && opencode run 'Reply with exactly: BACKUP-OK'
+cd @DEST@ && opencode run 'Reply with exactly: BACKUP-OK'
 ```
 
 ## API endpoints

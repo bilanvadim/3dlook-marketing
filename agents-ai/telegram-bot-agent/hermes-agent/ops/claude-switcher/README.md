@@ -27,10 +27,10 @@ keyword** to launch that system's **full autonomous cycle** via the conductor
 
 | Type | Runs |
 |---|---|
-| `Dev <task>` | `dev-sm` — full-stack A→Z (plan → architect → build → verify → security) |
-| `Marketing <task>` | `marketing-sm` |
-| `SEO <task>` | `seo-sm` |
-| `Security <task>` | `security-sm` |
+| `Dev <task>` | `dev` — full-stack A→Z (plan → architect → build → verify → security) |
+| `Marketing <task>` | `marketing` |
+| `SEO <task>` | `seo` |
+| `Security <task>` | `security` |
 
 (Keyword must be at the **start**; RU synonyms accepted, e.g. `Маркетинг`,
 `Безопасность`.) The task becomes a `ho_jobs` row (profile + the tab's repo as
@@ -105,7 +105,7 @@ is recovered via `adapter._message_handler.__self__`.
 ## Config (env)
 | Env | Default | Meaning |
 |---|---|---|
-| `HERMES_CLAUDE_SWITCHER_WORKDIR` | `/home/sergiy_prod/workspaces` | default cwd + project-name search root |
+| `HERMES_CLAUDE_SWITCHER_WORKDIR` | `@HOME@/workspaces` | default cwd + project-name search root |
 | `HERMES_CLAUDE_SWITCHER_MAX_TURNS` | `40` | Claude chat `--max-turns` |
 | `HERMES_CLAUDE_SWITCHER_TIMEOUT` | `900` | Claude chat per-turn timeout (s) |
 | `HERMES_CONDUCTOR_MAX_TURNS` | `300` | conductor job `max_turns` |

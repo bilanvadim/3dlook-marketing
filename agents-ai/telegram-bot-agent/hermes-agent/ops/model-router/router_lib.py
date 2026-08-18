@@ -223,6 +223,25 @@ def restart_gateway():
         return False
 
 # ---- config.yaml editing (single primary model + fallback chain) ----
+def _main_model_is_chain() -> bool:
+    """True when config.yaml points the MAIN model at a local failover chain.
+
+    The chain replaces the daily pick outright: it tries a whole list per request,
+    hedges and cools down dead entries, so overwriting model.default with one id
+    would demote a live router to a frozen guess — and do it at 07:00, silently.
+    Detected from the file rather than a flag, so it holds even if the timer comes
+    back after an update or a reinstall."""
+    try:
+        txt = open(CONFIG, encoding="utf-8").read()
+    except OSError:
+        return False
+    import re as _re
+    m = _re.search(r"^model:\n(?:[ \t]+.*\n)+", txt, _re.M)
+    block = m.group(0) if m else ""
+    return ("provider: custom" in block
+            and ("127.0.0.1" in block or "localhost" in block)) or "llm-failover-proxy" in txt
+
+
 def set_model_default(model, provider=None):
     """Rewrite model.default (and model.provider when given) inside config.yaml.
 
@@ -230,6 +249,8 @@ def set_model_default(model, provider=None):
     lived on `opencode-go` (subscription), the free models live on `opencode-zen`.
     Leaving a free model id under the Go provider yields a 'model not found' and a
     silently dead gateway."""
+    if _main_model_is_chain():
+        return "chain"          # truthy, and distinguishable from a real write
     lines = open(CONFIG).read().split("\n")
     inmodel = False
     done_model = done_prov = False
@@ -317,6 +338,19 @@ def set_opencode_model(model, provider="opencode", base_url=None):
             f'  "model": "{ref}",\n'
             f'  "small_model": "{ref}"{prov_block}\n'
             "}\n")
+    # HANDS OFF when OpenCode is pointed at the local failover proxy. Then model
+    # SELECTION is the proxy's job — it tries a whole chain per request and hedges,
+    # which is strictly better than one id picked at 06:00 and frozen for the day
+    # (the id we pick can be dead by noon; the chain routes around that live).
+    # Rewriting this file from the template below would silently delete the
+    # provider block and put the coder back on a single model, so the failover
+    # would be gone by morning with nothing in the logs to say why.
+    try:
+        cur = open(OPENCODE_CFG, encoding="utf-8").read()
+        if "llm-fop" in cur or "127.0.0.1:4782" in cur:
+            return "proxy"          # truthy, and distinguishable from a real write
+    except OSError:
+        pass
     try:
         os.makedirs(os.path.dirname(OPENCODE_CFG), exist_ok=True)
         write_atomic(OPENCODE_CFG, body)
@@ -422,6 +456,11 @@ def set_auxiliary_vision(model, provider="opencode-zen"):
 
 def set_fallback(model, provider="opencode-zen"):
     """Replace the top-level fallback_providers block with a single entry."""
+    if _main_model_is_chain():
+        # The chain IS the fallback ladder — nine entries deep, with cooldowns.
+        # A single daily fallback under it is at best redundant and at worst a
+        # dead id nobody probes any more.
+        return "chain"
     lines = open(CONFIG).read().split("\n")
     out, i, n = [], 0, len(lines)
     while i < n:

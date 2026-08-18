@@ -139,10 +139,10 @@ copy_if_absent "$CSRC/config/project-mcp.json.example"       "$HOME/.mcp.json"
 copy_if_absent "$CSRC/config/settings.json.example"          "$HOME/.claude/settings.json"
 copy_if_absent "$CSRC/config/settings.local.json.example"    "$HOME/.claude/settings.local.json"
 if [ -e "$HOME/.claude/.active-profile" ]; then ok "exists, kept: ~/.claude/.active-profile"
-else run bash -c "printf 'dev-sm\n' > '$HOME/.claude/.active-profile'"; fi
+else run bash -c "printf 'dev\n' > '$HOME/.claude/.active-profile'"; fi
 command -v codebase-memory-mcp >/dev/null && ok "codebase-memory binary present" || \
   todo "Install codebase-memory: curl -fsSL https://raw.githubusercontent.com/DeusData/codebase-memory-mcp/main/install.sh | bash -s -- --skip-config (then config set auto_index true / auto_watch false)"
-todo "Run: claude-code-agent/DEV/switch-profile.sh dev-sm   (systems: dev-sm|seo-sm|marketing-sm|security-sm|test-sm), restart Claude Code"
+todo "Run: claude-code-agent/DEV/switch-profile.sh dev   (systems: dev|seo|marketing|security|test), restart Claude Code"
 todo "Replace 'YOUR_USER' in ~/.claude/settings.json + fill token placeholders in ~/.mcp.json / user-mcp"
 fi   # end --skip-claude
 

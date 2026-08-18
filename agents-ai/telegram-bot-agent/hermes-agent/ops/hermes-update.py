@@ -20,7 +20,7 @@ HOME = os.path.expanduser("~")
 # `hermes update`/`hermes setup` can reset SOUL.md back to the generic NousResearch
 # default (which makes Hermes code things itself instead of delegating to Claude Code).
 # Re-apply the canonical orchestrator persona from the repo after every update.
-REPO_SOUL = "/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/hermes-agent/SOUL.md"
+REPO_SOUL = "@DEST@/agents-ai/telegram-bot-agent/hermes-agent/SOUL.md"
 LIVE_SOUL = f"{HOME}/.hermes/SOUL.md"
 
 
@@ -121,7 +121,7 @@ def main():
 
     # Re-apply the file-tool project-code write guard (vendored patch, wiped by update).
     try:
-        guard = "/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/hermes-agent/ops/apply-file-tool-guard.py"
+        guard = "@DEST@/agents-ai/telegram-bot-agent/hermes-agent/ops/apply-file-tool-guard.py"
         if os.path.exists(guard):
             g = subprocess.run(["/usr/bin/python3", guard], capture_output=True, text=True)
             log(f"file-tool guard: {(g.stdout + g.stderr).strip()}")
@@ -191,7 +191,7 @@ def main():
     # left alone — copy the sources, never the state.
     try:
         import glob as _glob
-        src_dir = ("/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/"
+        src_dir = ("@DEST@/agents-ai/telegram-bot-agent/"
                    "hermes-agent/ops/model-router")
         dst_dir = f"{HOME}/.hermes/model-router"
         if os.path.isdir(src_dir):
@@ -214,7 +214,7 @@ def main():
     # Re-apply the Claude-Code switcher patch (/dev /seo /marketing /security /hermes
     # sticky mode — vendored inserts in run.py + commands.py, wiped by update).
     try:
-        switcher = "/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/hermes-agent/ops/claude-switcher/apply-claude-switcher-patch.py"
+        switcher = "@DEST@/agents-ai/telegram-bot-agent/hermes-agent/ops/claude-switcher/apply-claude-switcher-patch.py"
         if os.path.exists(switcher):
             g = subprocess.run(["/usr/bin/python3", switcher], capture_output=True, text=True)
             log(f"claude-switcher: {(g.stdout + g.stderr).strip()}")
@@ -228,7 +228,7 @@ def main():
     # Re-apply the per-turn vision switch (borrow the image reader for the turn
     # that carries a picture — two vendored inserts in run.py, wiped by update).
     try:
-        vsw = ("/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/"
+        vsw = ("@DEST@/agents-ai/telegram-bot-agent/"
                "hermes-agent/ops/vision-switch/apply-vision-switch-patch.py")
         if os.path.exists(vsw):
             g = subprocess.run(["/usr/bin/python3", vsw], capture_output=True, text=True)

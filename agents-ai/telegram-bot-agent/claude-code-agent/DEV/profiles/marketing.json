@@ -1,0 +1,17 @@
+{
+  "name": "marketing",
+  "description": "Digital marketing system (marketing) + shared orchestration/verification base.",
+  "marketplaces": {
+    "dev": "@DEST@/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev",
+    "marketing": "@DEST@/agents-ai/telegram-bot-agent/claude-code-agent/DEV/marketing"
+  },
+  "enabledPlugins": [
+    "hermes-core@dev",
+    "hermes-verify@dev",
+    "mkt-core@marketing",
+    "mkt-content@marketing",
+    "mkt-paid@marketing",
+    "mkt-lifecycle@marketing",
+    "mkt-analytics@marketing"
+  ]
+}

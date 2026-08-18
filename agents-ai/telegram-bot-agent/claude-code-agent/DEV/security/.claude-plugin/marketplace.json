@@ -1,0 +1,18 @@
+{
+  "name": "security",
+  "owner": {
+    "name": "Sergiy",
+    "url": "https://github.com/SergeMiro"
+  },
+  "metadata": {
+    "description": "Security system for Claude Code — vetted security review/hunting content. Pairs with the shared security-auditor + verification base. Switch into it via profile 'security'.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "sec-core",
+      "source": "./plugins/sec-core",
+      "description": "Vetted security adoptions from ECC (MIT): security-bounty-hunter skill (exploitability-first triage) + silent-failure-hunter agent (fail-open / swallowed-error hunting). See ATTRIBUTION.md"
+    }
+  ]
+}

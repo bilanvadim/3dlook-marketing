@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Idempotently patch Hermes' file_tools so its WRITE tools (write_file/patch)
-refuse to touch project code under /srv/sergiy_prod — the file-tool half of the
+refuse to touch project code under /srv/@USER@ — the file-tool half of the
 "Hermes is the manager, not the coder" barrier (the terminal half is
 approvals.deny in config.yaml). The Second Brain wiki lives inside that zone and
 is carved out so note-taking keeps working.
@@ -15,7 +15,7 @@ import shutil
 import sys
 import tempfile
 
-TARGET = "/home/sergiy_prod/.hermes/hermes-agent/tools/file_tools.py"
+TARGET = "@HOME@/.hermes/hermes-agent/tools/file_tools.py"
 MARKER = "[hermes-mechanic]"
 # Anchor = the final `return None` of _check_sensitive_path (unique 3-line block).
 ANCHOR = (
@@ -27,15 +27,15 @@ ANCHOR = (
 # and replaced without re-deriving it from GUARD by string surgery.
 GUARD_BODY = (
     "    # [hermes-mechanic] Manager-not-coder: block file-tool WRITES to project\n"
-    "    # code under /srv/sergiy_prod (Claude Code / OpenCode own that); the Second\n"
+    "    # code under /srv/@USER@ (Claude Code / OpenCode own that); the Second\n"
     "    # Brain wiki lives inside that zone and is carved out. Fires under mode:off too.\n"
-    "    _PZ = \"/srv/sergiy_prod/\"\n"
-    "    _WIKI = \"/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/hermes-agent/AI-Second-Brain\"\n"
+    "    _PZ = \"/srv/@USER@/\"\n"
+    "    _WIKI = \"@DEST@/agents-ai/telegram-bot-agent/hermes-agent/AI-Second-Brain\"\n"
     "    for _cand in (resolved, normalized):\n"
     "        if _cand.startswith(_PZ) and not _cand.startswith(_WIKI) and not _cand.endswith(\"/.hermes-handoff.md\"):\n"
     "            return (\n"
     "                \"Refusing (hermes-mechanic): Hermes is the manager, not the coder. \"\n"
-    "                \"Project code under /srv/sergiy_prod must be written by Claude Code / \"\n"
+    "                \"Project code under /srv/@USER@ must be written by Claude Code / \"\n"
     "                \"OpenCode, not Hermes's file tool. Delegate it (claude-code skill / conductor).\"\n"
     "            )\n"
     "    return None\n"

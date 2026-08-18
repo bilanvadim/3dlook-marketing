@@ -4,47 +4,11 @@
 <img src="https://img.shields.io/badge/Hermes-Orchestrator-ff6d00?style=for-the-badge" alt="Hermes"/>
 <img src="https://img.shields.io/badge/Conductor-Agent_SDK_+_libSQL-0f3460?style=for-the-badge" alt="Conductor"/>
 
-# 3DLOOK · ветка `v2`
+# AI Agents Config
 
-**Система Сергея целиком + маркетинговая система Вадима, в одном дереве.**
+**Autonomous full-stack development on Claude Code — Hermes = the orchestrator (brain), Conductor = the A→Z runner, Claude Code = the hands.**
 
 </div>
-
-## Что в этой ветке
-
-`v2` — независимая ветка (в main не мёржится). Здесь собрано всё вместе:
-
-| Что | Где | Чьё |
-|---|---|---|
-| **Hermes + Telegram-бот + Conductor + Claude Code/OpenCode** | `agents-ai/` | Сергея — актуальная версия |
-| **Установщик одной командой + ZIP-кит** | `install.sh` · `ai-agent-bot-*.zip` | Сергея |
-| **Оригинальная система 3DLOOK** | `marketing_vb/` — `CLAUDE.md`, `about-me.md`, `audience.md`, `DESIGN.md`, `brand-assets/`, `workspace/`, `.claude/` | **Вадима, байт-в-байт с его `main`** |
-| **Его агенты как переключаемые плагины** | `agents-ai/…/DEV/marketing_vb/` (28 агентов, 7 команд) | Вадима, синхронизировано с `marketing_vb/.claude/` |
-| **МИКС: его команды + маркетологи Сергея** | `agents-ai/…/DEV/marketing_vb_sm/` → `/vbsm-campaign` | общее |
-| Его прочие файлы | `telegram-bot/`, `scanme-lab/`, `fitxpress-*.md` | Вадима |
-
-Семь систем Claude Code, включается ровно одна:
-
-```
-dev-sm · seo-sm · marketing-sm · security-sm · sandbox-sm      ← Сергея
-marketing_vb        — твоя система как есть, без чужой базы     ← твоя
-marketing_vb_sm     — твоя + маркетологи Сергея + база Hermes   ← микс
-```
-
-⚠️ **`marketing_vb` и `marketing_vb_sm` запускать из папки `marketing_vb/`.**
-Твои агенты читают `brand-assets/`, `workspace/`, `about-me.md` **относительными**
-путями — они резолвятся от рабочей папки сессии, а не от места плагина. Запустишь
-из корня репо — агенты не увидят ни бренд-контекст, ни прошлые посты.
-
-**Старт:** [`ONBOARDING.md`](./ONBOARDING.md) — отдай его своему Claude Code, он
-поставит всё по шагам. Дальше в этом файле — архитектура, таблица всех нужных
-ключей и справка по слоям.
-
-> Архив `ai-agent-bot-*.zip` — только система Сергея (без твоего контента), чтобы
-> её можно было развернуть на любой машине вообще без git. Твоя часть живёт в этой
-> ветке.
-
----
 
 ## Repository layout
 
@@ -186,8 +150,8 @@ cp secrets.env.example secrets.env && nano secrets.env      # заполнить
 |---|---|---|---|
 | **[REQ]** Токен твоего бота | `TELEGRAM_BOT_TOKEN` | [@BotFather](https://t.me/BotFather) → `/newbot` (или `/mybots` → API Token). Вид `8123456789:AAF…` — id бота и секрет в одной строке | нет бота — нет системы |
 | **[REQ]** Твой Telegram user id | `TELEGRAM_ALLOWED_USERS` | [@userinfobot](https://t.me/userinfobot) → `Id`. Число. Несколько — через запятую | бот не ответит никому; это и есть whitelist |
-| **[REQ]** Мозг менеджера | `OPENCODE_GO_API_KEY` | opencode.ai → Dashboard → API keys | Hermes не думает |
-| **[РЕК]** Тот же/второй ключ OpenCode | `OPENCODE_ZEN_API_KEY` | там же — часто **тот же ключ**; пусто → подставится GO | нет бесплатного тира для запасного кодера |
+| **[REQ]** Мозг менеджера | `OPENCODE_ZEN_API_KEY` | opencode.ai → Dashboard → API keys. Роутинг идёт через llm-failover-proxy, провайдер `opencode` = zen-эндпоинт | Hermes не думает |
+| *(legacy)* | `OPENCODE_GO_API_KEY` | GO убран из стека; заполнять не нужно — принимается только чтобы старый `secrets.env` не ломал установку | — |
 | **[РЕК]** NVIDIA NIM | `NVIDIA_API_KEY` | [build.nvidia.com](https://build.nvidia.com) (нужна верификация по телефону) | минус самый широкий бесплатный каталог |
 | **[РЕК]** ModelScope | `MODELSCOPE_API_KEY` | [modelscope.cn/my/myaccesstoken](https://modelscope.cn/my/myaccesstoken) — **потом обязательно** привязать аккаунт Alibaba Cloud (`modelscope.ai/my/settings/account`), иначе 401 при валидном токене | минус 2-й по величине каталог |
 | **[РЕК]** Cloudflare Workers AI | `CLOUDFLARE_API_KEY` (+ `CLOUDFLARE_ACCOUNT_ID`, необязателен) | [dash.cloudflare.com/profile/api-tokens](https://dash.cloudflare.com/profile/api-tokens). Токен `cfat_…` не проходит `/user/tokens/verify` — это норма | минус 3-й каталог |
@@ -204,7 +168,7 @@ cp secrets.env.example secrets.env && nano secrets.env      # заполнить
 1. **Claude Code** — `sudo npm i -g @anthropic-ai/claude-code`, затем `claude` → `/login`
    (подписка Max/Pro; `ANTHROPIC_API_KEY` **не нужен** — дирижёр ходит подпиской).
 2. **`hermes auth`** — OAuth провайдера Hermes, если он его требует.
-3. **Активный профиль** — `claude-code-agent/DEV/switch-profile.sh dev-sm`, затем перезапуск Claude Code.
+3. **Активный профиль** — `claude-code-agent/DEV/switch-profile.sh dev`, затем перезапуск Claude Code.
 4. **codebase-memory** — бинарь графа кода (команду печатает установщик).
 
 ### Проверка, что встало
@@ -230,7 +194,7 @@ reports — **no technical decisions**.
 | `ops/orchestrator-run.sh` · `orchestrator-monitor.sh` | start the worker · push new questions/escalations/done to Telegram |
 | `ops/model-router` · `skill-guard` · `vault-sync` · `systemd/` | provider tiering · gated skill install · Obsidian memory sync · service units |
 
-## Layer ② — Conductor  ·  [`conductor/`](./agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev-sm/conductor/)
+## Layer ② — Conductor  ·  [`conductor/`](./agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev/conductor/)
 TS service over the Claude **Agent SDK**. Pulls a job, runs the per-step loop
 (executor → reviewer → runtime → git), **durable resume**, escalates ASK-actions
 (merge / destructive SQL / db push / terraform) to Telegram. **No cost cap** — only
@@ -257,7 +221,7 @@ Code. Marketplace paths are relative → portable. Guide: [`SYSTEMS.md`](./agent
 
 ## Plugins → agents (one line each)
 
-**`dev-sm` (dev base)**
+**`dev` (dev base)**
 | Plugin | Agents · role |
 |---|---|
 | `hermes-core` | **product-architect** (Opus) — spec/architecture/plan/NFR/risk |
@@ -272,10 +236,10 @@ Code. Marketplace paths are relative → portable. Guide: [`SYSTEMS.md`](./agent
 | `hermes-verify` | **code-reviewer** (0–100+evidence) · **runtime-verifier** (boots front+back+db, e2e) |
 | `hermes-ecc` | advisory read-only reviewers: database / performance / react / typescript / refactor / silent-failure / type-design |
 
-**`seo-sm`** — `seo-strategist` (lead, `/seo-audit`) · `technical-seo-engineer` · `content-strategist` · `link-authority-strategist` · `seo-analyst`
-**`marketing-sm`** — `marketing-strategist` (lead, `/mkt-campaign`) · `content-marketer` · `paid-media-buyer` · `lifecycle-marketer` · `marketing-analyst`
-**`security-sm`** — `sec-core`: `silent-failure-hunter` + `security-bounty-hunter` skill (pairs with `security-auditor`)
-**`sandbox-sm`** — `sbx-probe`: no agents by design. Trial bench for ONE candidate plugin/skill/MCP (`/sbx-check` proves what loaded, then runs the adopt/drop checklist). Not routable — manual switch only.
+**`seo`** — `seo-strategist` (lead, `/seo-audit`) · `technical-seo-engineer` · `content-strategist` · `link-authority-strategist` · `seo-analyst`
+**`marketing`** — `marketing-strategist` (lead, `/mkt-campaign`) · `content-marketer` · `paid-media-buyer` · `lifecycle-marketer` · `marketing-analyst`
+**`security`** — `sec-core`: `silent-failure-hunter` + `security-bounty-hunter` skill (pairs with `security-auditor`)
+**`sandbox`** — `sbx-probe`: no agents by design. Trial bench for ONE candidate plugin/skill/MCP (`/sbx-check` proves what loaded, then runs the adopt/drop checklist). Not routable — manual switch only.
 
 ## Skills (one line each)
 | Skill | Plugin | What |
@@ -286,8 +250,8 @@ Code. Marketplace paths are relative → portable. Guide: [`SYSTEMS.md`](./agent
 | `verification-protocol` | hermes-verify | gates re-run + reviewer + runtime, retry-until-pass |
 | `ultracite-lint` | hermes-verify | the standard lint/format gate (Biome preset) |
 | `codebase-onboarding` · `context-budget` | hermes-ecc | onboard a repo · audit context-window bloat |
-| `seo-methodology` · `technical-seo-audit` · `keyword-research` · `article-writing` · `seo-reporting` | seo-sm | the SEO playbooks |
-| `marketing-strategy` · `market-research` · `content-engine` · `brand-voice` · `content-calendar` · `crosspost` · `paid-media` · `marketing-measurement` | marketing-sm | the marketing playbooks |
+| `seo-methodology` · `technical-seo-audit` · `keyword-research` · `article-writing` · `seo-reporting` | seo | the SEO playbooks |
+| `marketing-strategy` · `market-research` · `content-engine` · `brand-voice` · `content-calendar` · `crosspost` · `paid-media` · `marketing-measurement` | marketing | the marketing playbooks |
 
 ---
 
@@ -303,11 +267,11 @@ Safety hooks: `bash_guard.py`, `n8n_guard.py`, `n8n_audit.py`.
 дирижёр без бота:
 
 ```bash
-cd agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev-sm/conductor
+cd agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev/conductor
 cp .env.example .env && sqlite3 ho.db < sql/schema.sql   # DATABASE_URL defaults to file:./ho.db
 npm install && npm test                                  # breaker + steploop + steprunner + store
 npm start
-# Claude Code side: agents-ai/telegram-bot-agent/claude-code-agent/DEV/switch-profile.sh dev-sm   (then restart Claude Code)
+# Claude Code side: agents-ai/telegram-bot-agent/claude-code-agent/DEV/switch-profile.sh dev   (then restart Claude Code)
 ```
 
 > **Archive:** the retired SDK `agency-orchestrator`, the 170+ static agent

@@ -20,7 +20,7 @@
 # and dead. Same rule per-role: no proven reader today means auxiliary.vision is
 # left exactly as it was rather than pointed at a guess.
 #
-# Run as sergiy_prod. Costs $0: listing + $0 probes on free models only.
+# Run as @USER@. Costs $0: listing + $0 probes on free models only.
 #   --dry-run  → probe and print, touch nothing (no config, no restart, no TG)
 # ============================================================
 import json, logging, re, sys, time, traceback
@@ -504,6 +504,12 @@ if pick and not DRY:
     # the new one — the one value in this whole run where a silent no-op matters
     # most was the only one not checked.
     primary_written = set_model_default(pick, provider=PROVIDER)
+    if primary_written == "chain":
+        # Не тишина и не сбой: главную модель выбирает llm-failover-proxy на каждый
+        # запрос. Пик дня остаётся справочным — но сказать об этом надо, иначе
+        # следующий читатель решит, что роутер сломался.
+        log(f"model.default НЕ тронут: главная модель идёт через llm-failover-proxy "
+            f"(выбор делает цепочка). Пик дня справочно: {PROVIDER}/{pick}")
     if not primary_written:
         log("model.default НЕ записан: в config.yaml нет строки default: внутри model:")
     if fallback:
@@ -515,7 +521,17 @@ if pick and not DRY:
 aux_written = False
 if best_vision and not DRY:
     try:
-        aux_written = set_auxiliary_vision(best_vision, provider=PROVIDER)
+        # Модель для картинок ЗАФИКСИРОВАНА решением владельца: её выбирает не
+        # утренний прогон, а человек. Роутер переписывал auxiliary.vision каждый
+        # день, то есть «фиксация» руками жила максимум до 07:00 — поэтому пин
+        # живёт в окружении, где роутер обязан его увидеть.
+        _pin = (os.environ.get("HERMES_VISION_PINNED") or "").strip()
+        if _pin:
+            log(f"auxiliary.vision НЕ тронут: модель картинок закреплена ({_pin}). "
+                f"Кандидат дня был {PROVIDER}/{best_vision}.")
+            aux_written = True
+        else:
+            aux_written = set_auxiliary_vision(best_vision, provider=PROVIDER)
         log(f"auxiliary.vision → {PROVIDER}/{best_vision}" if aux_written else
             "auxiliary.vision НЕ обновлён: в config нет блока auxiliary.vision")
     except Exception:
@@ -547,7 +563,13 @@ if pick and not DRY:
 # The winner's config was already written (and confirmed) inside the loop above.
 # This only covers the Zen fallback path, where no third-party provider was usable.
 if coder and not DRY and coder_provider == "opencode":
-    set_opencode_model(coder, provider=coder_provider)
+    _oc = set_opencode_model(coder, provider=coder_provider)
+    if _oc == "proxy":
+        # Not a failure and not a no-op worth hiding: the coder is on the failover
+        # proxy, so today's single pick is informational only. Say so in the morning
+        # report, or the next reader concludes the router stopped working.
+        log(f"opencode.jsonc НЕ тронут: кодер ходит через llm-failover-proxy "
+            f"(выбор модели делает цепочка, а не этот пик). Пик дня: {coder_provider}/{coder}")
 
 if not DRY:
     json.dump({"generated_at": time.strftime("%Y-%m-%d %H:%M:%S %Z"),

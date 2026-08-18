@@ -2,7 +2,7 @@
 
 Всё, что относится к Claude Code.
 
-## DEV/dev-sm
+## DEV/dev
 Система **Fullstack agents** (Claude Code plugin marketplace: 10 агентов + команды `/sm-*`
 + скиллы + `conductor/`) — перенесена сюда из бывшей ветки `fullstack-agents`
 (теперь всё живёт в единственной ветке `main`).

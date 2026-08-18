@@ -28,7 +28,7 @@ Claude упирается в лимиты. Модель для него выби
 Проверка живости:
 
 ```bash
-cd /srv/sergiy_prod/ai-agents-config && opencode run 'Reply with exactly: BACKUP-OK'
+cd @DEST@ && opencode run 'Reply with exactly: BACKUP-OK'
 # → BACKUP-OK
 ```
 

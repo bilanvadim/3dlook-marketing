@@ -43,13 +43,36 @@ as a short TODO list. Fully non-interactive for an agent:
 1. **Clone** the repo to `/srv/<user>/ai-agents-config` (paths in templates assume this; adjust `YOUR_USER`).
 2. **Install upstream hermes-agent** into `~/.hermes/hermes-agent` — see [`hermes-agent/SETUP.md`](agents-ai/telegram-bot-agent/hermes-agent/SETUP.md) §2.
 3. **`bash bootstrap-vps.sh`** — scaffolds config, copies ops+skills, applies patches, stages runtime helpers, installs unit/cron templates, scaffolds the Claude Code side.
-4. **Work the printed TODO list** — fill `.env`/`config.yaml`, `hermes auth`, enroll MTProto + userbot sessions, enable systemd units + cron, run `claude-code-agent/DEV/switch-profile.sh dev-sm`, install the codebase-memory binary.
+4. **Work the printed TODO list** — fill `.env`/`config.yaml`, `hermes auth`, enroll MTProto + userbot sessions, enable systemd units + cron, run `claude-code-agent/DEV/switch-profile.sh dev`, install the codebase-memory binary.
 5. **Verify** per SETUP.md §verify: `gateway_state.json.platforms.telegram.state == "connected"`, DM the bot, `/tabs` works, model-router posts "🌅 Модель дня", a forward shows the topic-picker.
 
 ## Detailed guides
 - Hermes side: [`agents-ai/telegram-bot-agent/hermes-agent/SETUP.md`](agents-ai/telegram-bot-agent/hermes-agent/SETUP.md) · [`CONFIG.md`](agents-ai/telegram-bot-agent/hermes-agent/CONFIG.md)
 - Claude Code side: [`agents-ai/telegram-bot-agent/claude-code-agent/INSTALL.md`](agents-ai/telegram-bot-agent/claude-code-agent/INSTALL.md) · [`DEV/SYSTEMS.md`](agents-ai/telegram-bot-agent/claude-code-agent/DEV/SYSTEMS.md)
 - Component enrollment: `ops/mtproto/README.md` · `ops/telegram-userbot/README.md` · `ops/conductor-bridge/README.md`
+
+## ⚠️ llm-failover-proxy на общей машине: обязательно `server.apiKey`
+
+Прокси слушает `127.0.0.1`, и на VPS с несколькими аккаунтами это **не** изоляция:
+loopback общий, а `server.apiKey` по умолчанию `null`. Проверено — с другого
+аккаунта на той же машине `curl http://127.0.0.1:47821/v1/models` отдавал `200`,
+то есть чужой процесс мог тратить твои ключи NVIDIA / OpenRouter / OpenCode через
+твой же прокси.
+
+```bash
+# в config.json прокси
+"server": { "apiKey": "<то же значение, что в ~/.hermes/.env>" }
+```
+
+Значение должно совпадать с тем, что Hermes подставляет для custom-провайдера —
+он берёт его из переменной, собранной по host+port:
+`HERMES_CUSTOM_127_0_0_1_47821_API_KEY`. Тот же ключ нужен OpenCode в
+`~/.local/share/opencode/auth.json` (провайдер `llm-fop-strong`). После правки —
+`llm-failover-proxy restart`, затем проверь: без ключа `401`, с ключом модель
+отвечает.
+
+И **порты у каждого аккаунта свои** (у второго пользователя — свои, например
+`47831/47832`): с одинаковыми портами его агент молча ушёл бы в твою цепочку.
 
 > **Security:** the repo `.gitignore` blocks `.env`, `config.yaml`, `auth.json`,
 > `*.session`, `*.enc`, `creds.env`, `*.key`. Never commit real credentials — only

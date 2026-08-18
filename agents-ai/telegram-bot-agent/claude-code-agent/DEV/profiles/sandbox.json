@@ -1,0 +1,12 @@
+{
+  "name": "sandbox",
+  "description": "Sandbox: trial ONE candidate (plugin/skill/MCP) in isolation before adopting it into a real system. Base is hermes-core only, so a candidate that fails to load or never gets picked is obvious. Manual only — never routed automatically.",
+  "marketplaces": {
+    "dev": "@DEST@/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev",
+    "sandbox": "@DEST@/agents-ai/telegram-bot-agent/claude-code-agent/DEV/sandbox"
+  },
+  "enabledPlugins": [
+    "hermes-core@dev",
+    "sbx-probe@sandbox"
+  ]
+}

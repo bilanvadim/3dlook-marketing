@@ -169,7 +169,7 @@ CODER_STAGE_BUDGET_S = int(os.environ.get("HERMES_CODER_STAGE_BUDGET_S", "1500")
 # `opencode run` outside a project prints nothing and exits 0.
 VERIFY_DIR = os.environ.get(
     "HERMES_OPENCODE_VERIFY_DIR",
-    "/srv/sergiy_prod/ai-agents-config")
+    "@DEST@")
 OPENCODE_BIN = os.environ.get("HERMES_OPENCODE_BIN", f"{HOME}/.opencode/bin/opencode")
 
 

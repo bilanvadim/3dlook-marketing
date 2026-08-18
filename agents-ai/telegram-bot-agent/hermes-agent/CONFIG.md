@@ -23,7 +23,7 @@ model:
 - `provider: opencode-go` — Go-подписка (сильные модели: deepseek-v4-pro, glm-5.2,
   kimi-k2.7-code и др.). Лимит сбрасывается каждые несколько часов.
 - `provider: opencode-zen` — Zen (free модели). Без лимитов, но слабее.
-- `OPENCODE_GO_API_KEY` / `OPENCODE_ZEN_API_KEY` — в `.env`.
+- `OPENCODE_ZEN_API_KEY` — в `.env` (GO убран из стека).
 
 ### `fallback_providers:` — автоматический fallback
 
@@ -41,7 +41,7 @@ Hermes автоматически переключается на fallback, ес
 ```yaml
 terminal:
   backend: local              # local | docker | ssh | modal | daytona
-  cwd: /srv/sergiy_prod       # рабочая директория для Telegram-сессий
+  cwd: /srv/@USER@       # рабочая директория для Telegram-сессий
   timeout: 180                # таймаут команды (сек)
   docker_mount_cwd_to_workspace: false
   lifetime_seconds: 300       # lifetime контейнера (docker backend)
@@ -279,7 +279,7 @@ approvals:
   (матч по всей строке команды, регистронезависимо, по деобфусцированным вариантам),
   которые блокируют команду **раньше** любого bypass — т.е. **даже под `mode: "off"`/yolo**
   (как code-shipped hardline, но пользовательский). У нас забиты глобы, запрещающие
-  Hermes **искать/править код в зоне проектов `/srv/sergiy_prod/*`** его собственным
+  Hermes **искать/править код в зоне проектов `/srv/@USER@/*`** его собственным
   терминалом (`grep`/`rg`/`find`/`awk`/`sed`/редакторы/`> файл`), чтобы он делегировал в
   Claude Code / OpenCode, а не делал сам. **НЕ блокируются** (проверено): dispatch
   `claude`/`opencode` (даже если в промпте есть слово grep/sed), `git`, запись handoff,
@@ -341,8 +341,7 @@ Claude Code (`hermes-verify` + `verification-protocol` + `runtime-verifier`).
 
 | Переменная | Назначение | Где взять |
 |---|---|---|
-| `OPENCODE_GO_API_KEY` | Go-провайдер (primary, сильные модели) | opencode.ai → dashboard |
-| `OPENCODE_ZEN_API_KEY` | Zen-провайдер (free fallback) | opencode.ai → dashboard |
+| `OPENCODE_ZEN_API_KEY` | Единственный ключ OpenCode. Роутинг — через llm-failover-proxy, провайдер `opencode` = `https://opencode.ai/zen/v1` | opencode.ai → dashboard |
 | `TELEGRAM_BOT_TOKEN` | Telegram-бот | @BotFather → `/newbot` |
 | `TELEGRAM_ALLOWED_USERS` | ID разрешённых пользователей (через запятую) | @userinfobot |
 | `WIKI_PATH` | Путь к Obsidian-вики (AI Second Brain) | путь в репо |
@@ -368,7 +367,6 @@ Claude Code (`hermes-verify` + `verification-protocol` + `runtime-verifier`).
 
 ```bash
 # === LLM providers ===
-OPENCODE_GO_API_KEY=sk-REPLACE_WITH_YOUR_KEY
 OPENCODE_ZEN_API_KEY=sk-REPLACE_WITH_YOUR_KEY
 
 # === Telegram ===
@@ -376,8 +374,8 @@ TELEGRAM_BOT_TOKEN=1234567890:REPLACE_WITH_BOTFATHER_TOKEN
 TELEGRAM_ALLOWED_USERS=REPLACE_WITH_YOUR_NUMERIC_ID
 
 # === AI Second Brain ===
-WIKI_PATH=/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/hermes-agent/AI-Second-Brain
-OBSIDIAN_VAULT_PATH=/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/hermes-agent/AI-Second-Brain
+WIKI_PATH=@DEST@/agents-ai/telegram-bot-agent/hermes-agent/AI-Second-Brain
+OBSIDIAN_VAULT_PATH=@DEST@/agents-ai/telegram-bot-agent/hermes-agent/AI-Second-Brain
 
 # === Browser ===
 AGENT_BROWSER_EXECUTABLE_PATH=/usr/bin/chromium-browser

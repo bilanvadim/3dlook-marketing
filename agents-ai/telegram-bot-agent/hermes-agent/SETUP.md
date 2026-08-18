@@ -71,7 +71,7 @@ model:
   max_tokens: 16384
 terminal:
   backend: local
-  cwd: /srv/sergiy_prod             # рабочая директория для Telegram-сессий
+  cwd: /srv/@USER@             # рабочая директория для Telegram-сессий
   timeout: 180
 tool_loop_guardrails:
   warnings_enabled: true
@@ -159,17 +159,16 @@ chmod 600 ~/.hermes/mem0.json ~/.hermes/.env
 ```bash
 cat > ~/.hermes/.env << 'EOF'
 # === Провайдеры LLM ===
-OPENCODE_GO_API_KEY=sk-YOUR_OPencode_GO_KEY
-OPENCODE_ZEN_API_KEY=sk-YOUR_OPencode_ZEN_KEY
-# (GO и ZEN могут быть одним ключом, если провайдер один)
+OPENCODE_ZEN_API_KEY=sk-YOUR_OPENCODE_ZEN_KEY
+# GO убран: роутинг только через llm-failover-proxy (провайдер opencode = zen).
 
 # === Telegram ===
 TELEGRAM_BOT_TOKEN=1234567890:ABC-DEF_your_bot_token_from_BotFather
 TELEGRAM_ALLOWED_USERS=YOUR_TELEGRAM_USER_ID
 
 # === AI Second Brain (Obsidian wiki) ===
-WIKI_PATH=/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/hermes-agent/AI-Second-Brain
-OBSIDIAN_VAULT_PATH=/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/hermes-agent/AI-Second-Brain
+WIKI_PATH=@DEST@/agents-ai/telegram-bot-agent/hermes-agent/AI-Second-Brain
+OBSIDIAN_VAULT_PATH=@DEST@/agents-ai/telegram-bot-agent/hermes-agent/AI-Second-Brain
 
 # === Browser (опционально) ===
 AGENT_BROWSER_EXECUTABLE_PATH=/usr/bin/chromium-browser
@@ -183,7 +182,7 @@ chmod 600 ~/.hermes/.env
 ### Как получить значения:
 | Переменная | Где взять |
 |---|---|
-| `OPENCODE_GO_API_KEY` / `OPENCODE_ZEN_API_KEY` | [opencode.ai](https://opencode.ai) → dashboard → API keys |
+| `OPENCODE_ZEN_API_KEY` | [opencode.ai](https://opencode.ai) → dashboard → API keys |
 | `TELEGRAM_BOT_TOKEN` | Telegram → [@BotFather](https://t.me/BotFather) → `/newbot` |
 | `TELEGRAM_ALLOWED_USERS` | Telegram → [@userinfobot](https://t.me/userinfobot) → свой numeric ID |
 | `GEMINI_API_KEY` | [Google AI Studio](https://aistudio.google.com/apikey) |
@@ -309,9 +308,9 @@ chmod +x ~/.hermes/vault-sync.sh
 cp /srv/$USER/ai-agents-config/agents-ai/telegram-bot-agent/hermes-agent/ops/systemd/vault-sync.service ~/.config/systemd/user/
 cp /srv/$USER/ai-agents-config/agents-ai/telegram-bot-agent/hermes-agent/ops/systemd/vault-sync.timer   ~/.config/systemd/user/
 # ⚠️ Поправить WIKI_PATH в vault-sync.service если путь другой:
-# sed -i "s|/srv/sergiy_prod|/srv/$USER|" ~/.config/systemd/user/vault-sync.service
+# sed -i "s|/srv/@USER@|/srv/$USER|" ~/.config/systemd/user/vault-sync.service
 # ⚠️ Поправить REPO в vault-sync.sh:
-# sed -i "s|/srv/sergiy_prod|/srv/$USER|" ~/.hermes/vault-sync.sh
+# sed -i "s|/srv/@USER@|/srv/$USER|" ~/.hermes/vault-sync.sh
 systemctl --user daemon-reload
 systemctl --user enable --now vault-sync.timer
 ```
@@ -421,7 +420,7 @@ ls ~/.hermes/skills/autonomous-ai-agents/vps-orchestration/SKILL.md
 | `gateway_state.json` | состояние gateway (генерируется) | — |
 | `conductor-monitor.log` | лог monitor-скрипта (cron) | — |
 | `.conductor-monitor-state` | dedup-файл monitor-скрипта | — |
-| `ho.db` | SQLite конду́ктора (опционально) | `agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev-sm/conductor/sql/schema.sql` |
+| `ho.db` | SQLite конду́ктора (опционально) | `agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev/conductor/sql/schema.sql` |
 | `state.db` | SQLite сессий Hermes (генерируется) | — |
 
 ## Обновление

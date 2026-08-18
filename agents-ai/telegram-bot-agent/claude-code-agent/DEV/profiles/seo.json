@@ -1,0 +1,17 @@
+{
+  "name": "seo",
+  "description": "SEO system (seo) + shared orchestration/verification base.",
+  "marketplaces": {
+    "dev": "@DEST@/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev",
+    "seo": "@DEST@/agents-ai/telegram-bot-agent/claude-code-agent/DEV/seo"
+  },
+  "enabledPlugins": [
+    "hermes-core@dev",
+    "hermes-verify@dev",
+    "seo-core@seo",
+    "seo-technical@seo",
+    "seo-content@seo",
+    "seo-authority@seo",
+    "seo-analytics@seo"
+  ]
+}

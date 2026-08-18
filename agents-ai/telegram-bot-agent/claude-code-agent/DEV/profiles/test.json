@@ -1,0 +1,24 @@
+{
+  "name": "test",
+  "description": "TEST / experimental MIX system (mvb): Vadim's brand-driven 3DLOOK marketing teams (marketing_vb) blended with Sergiy's marketing specialists (marketing) + Hermes base. Entry: /vbsm-campaign. Blended workflow orchestrated by mvb-sm-bridge. Captured from the 3dlook-marketing workspace so it survives here.",
+  "marketplaces": {
+    "dev": "@DEST@/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev",
+    "marketing": "@DEST@/agents-ai/telegram-bot-agent/claude-code-agent/DEV/marketing",
+    "ai-agents-mvb": "@DEST@/agents-ai/telegram-bot-agent/claude-code-agent/DEV/marketing_vb",
+    "ai-agents-mvb-sm": "@DEST@/agents-ai/telegram-bot-agent/claude-code-agent/DEV/marketing_vb_sm"
+  },
+  "enabledPlugins": [
+    "hermes-core@dev",
+    "hermes-verify@dev",
+    "mvb-core@ai-agents-mvb",
+    "mvb-social@ai-agents-mvb",
+    "mvb-seo@ai-agents-mvb",
+    "mvb-outbound@ai-agents-mvb",
+    "mkt-core@marketing",
+    "mkt-content@marketing",
+    "mkt-paid@marketing",
+    "mkt-lifecycle@marketing",
+    "mkt-analytics@marketing",
+    "mvb-sm-bridge@ai-agents-mvb-sm"
+  ]
+}

@@ -6,15 +6,15 @@ WHY THIS EXISTS
 The MV-Link Mini App runs on Vercel (serverless) and its MTProto data layer runs
 as an unprivileged Docker container (uid 10001). Neither can safely touch the
 live Hermes conductor queue at ``~/.hermes/ho.db`` — that file and its directory
-are owned by ``sergiy_prod`` and the directory is 0700 (it holds secrets). A
+are owned by ``@USER@`` and the directory is 0700 (it holds secrets). A
 cross-user SQLite bind-mount would mean weakening those permissions, which we
 refuse to do.
 
-So this tiny stdlib HTTP service runs **as ``sergiy_prod``** (same user that owns
+So this tiny stdlib HTTP service runs **as ``@USER@``** (same user that owns
 ``ho.db`` and runs ``hermes-conductor.service``). It accepts an authenticated
 job payload from the MTProto container and inserts a row into ``ho_jobs`` — the
 exact same queue the Telegram bot's ``Dev <task>`` keyword writes to. The live
-conductor then claims the job and runs **Claude Code** (profile ``dev-sm``, the
+conductor then claims the job and runs **Claude Code** (profile ``dev``, the
 11-plugin dev system) as the executor. Hermes remains the manager: it formulates
 the brief (this payload) and monitors via ``ho_jobs`` status.
 
@@ -53,7 +53,7 @@ HO_DB = os.environ.get("HO_DB", str(HOME / ".hermes" / "ho.db"))
 TOKEN = os.environ.get("CONDUCTOR_BRIDGE_TOKEN", "")
 BRIDGE_HOST = os.environ.get("BRIDGE_HOST", "172.20.0.1")
 BRIDGE_PORT = int(os.environ.get("BRIDGE_PORT", "8790"))
-DEFAULT_PROFILE = os.environ.get("BRIDGE_DEFAULT_PROFILE", "dev-sm")
+DEFAULT_PROFILE = os.environ.get("BRIDGE_DEFAULT_PROFILE", "dev")
 # Named a specific project of the author's (mvlink) — a project that has since been
 # torn down, so the default pointed every job at a directory that exists on no
 # machine at all. The projects ROOT is the honest default: a job that does not say
@@ -64,10 +64,10 @@ DEFAULT_MAX_TURNS = int(os.environ.get("BRIDGE_DEFAULT_MAX_TURNS", "40"))
 
 # ho_jobs.profile CHECK constraint — reject anything else early with a clean 400.
 VALID_PROFILES = {
-    "dev-sm",
-    "seo-sm",
-    "marketing-sm",
-    "security-sm",
+    "dev",
+    "seo",
+    "marketing",
+    "security",
     "marketing_vb",
     "marketing_vb_sm",
 }

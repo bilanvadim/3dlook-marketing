@@ -33,18 +33,18 @@ These rules are mandatory and mechanical — follow them exactly, do not improvi
   (agents: product-architect, design-director, frontend/backend/database/
   platform-engineer, qa-engineer, code-reviewer, runtime-verifier,
   sre-engineer, solution-evaluator) + `/sm-*` commands + skills.
-  Source: `ai-agents-config/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev-sm`. They are Claude
+  Source: `ai-agents-config/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev`. They are Claude
   Code's internals — you never call them directly; you hand work to Claude Code
   (ad-hoc) or to the conductor (A→Z projects) and IT dispatches roles.
 - **Conductor** — the autonomous pipeline that runs the Fullstack agents over
-  the Claude **Agent SDK** on this VPS (source `dev-sm/conductor`).
+  the Claude **Agent SDK** on this VPS (source `dev/conductor`).
   State lives in **SQLite/libSQL** (`@libsql/client`; default local file
   `$HO_STATE_DIR/ho.db`, or Turso/libSQL for a networked DB — read it with
   `sqlite3`): tables `ho_jobs`, `ho_steps`, `ho_questions`, `ho_escalations`,
   views `ho_project_status` / `ho_job_progress`. A worker claims jobs
   (`store.claimJob`, single-writer write-tx), runs the executor→reviewer→runtime
   loop per step with durable resume (`resume_session_id`), and escalates
-  ASK-actions to Telegram. Contract: `dev-sm/conductor/INTEGRATION.md`.
+  ASK-actions to Telegram. Contract: `dev/conductor/INTEGRATION.md`.
   ⚠️ Nothing executes unless the **conductor worker is running** (`npm start`
   or its Docker container). If `ho_project_status` never advances, the worker
   is down — surface that to @OWNER@; never fake progress.
@@ -56,7 +56,7 @@ These rules are mandatory and mechanical — follow them exactly, do not improvi
 
 ## Routing decision tree (apply top-down, first match wins)
 
-0. **НИКОГДА не запускай систему (dev-sm / seo-sm / marketing-sm) сам.**
+0. **НИКОГДА не запускай систему (dev / seo / marketing) сам.**
    Это железное правило, важнее любого вывода классификатора. Автономный прогон
    системы — тяжёлая долгая штука, которая правит репозиторий; решение начать её
    принимает Сергий, а не ты и не скрипт. Запуск бывает только вручную и, по
@@ -94,15 +94,15 @@ This is mechanical — do not skip it. Full reference:
 
 | Task is about… | Profile | Entry command inside Claude Code |
 |---|---|---|
-| SEO, search ranking, SERP, crawl, indexation, sitemap, robots, canonical, hreflang, Core Web Vitals, keywords, backlinks | `seo-sm` | `/seo-audit` |
-| campaign, ads, paid media, funnel, email/CRM, social, content, copywriting, positioning, GTM, launch, brand | `marketing-sm` | `/mkt-campaign` |
-| security audit, vulnerability, pentest, OWASP, RLS/auth/secrets review | `security-sm` | (agents; or `/sm-verify`) |
-| code, build, refactor, bug fix, deploy, technical analysis, docs — **the default** | `dev-sm` | `/sm-feature`, `/sm-verify` |
+| SEO, search ranking, SERP, crawl, indexation, sitemap, robots, canonical, hreflang, Core Web Vitals, keywords, backlinks | `seo` | `/seo-audit` |
+| campaign, ads, paid media, funnel, email/CRM, social, content, copywriting, positioning, GTM, launch, brand | `marketing` | `/mkt-campaign` |
+| security audit, vulnerability, pentest, OWASP, RLS/auth/secrets review | `security` | (agents; or `/sm-verify`) |
+| code, build, refactor, bug fix, deploy, technical analysis, docs — **the default** | `dev` | `/sm-feature`, `/sm-verify` |
 
-If genuinely ambiguous, ask ONE question; otherwise default to `dev-sm`.
-Examples: "подними нам трафик из Google" → `seo-sm`; "запусти рекламную кампанию /
-сделай контент-план / email-цепочку" → `marketing-sm`; "проверь на уязвимости /
-проаудь RLS" → `security-sm`; "сделай фичу / почини баг / задеплой" → `dev-sm`.
+If genuinely ambiguous, ask ONE question; otherwise default to `dev`.
+Examples: "подними нам трафик из Google" → `seo`; "запусти рекламную кампанию /
+сделай контент-план / email-цепочку" → `marketing`; "проверь на уязвимости /
+проаудь RLS" → `security`; "сделай фичу / почини баг / задеплой" → `dev`.
 
 **How to switch — depends on HOW you drive Claude Code:**
 
@@ -125,11 +125,11 @@ Examples: "подними нам трафик из Google" → `seo-sm`; "зап
   values('feature','…','…','marketing','/path/to/project');
   ```
   The worker loads that profile's plugin set for the job's SDK session
-  (`conductor/sql/schema.sql` + `src/core/profiles.ts`). NULL = `dev-sm`.
+  (`conductor/sql/schema.sql` + `src/core/profiles.ts`). NULL = `dev`.
 
 **Deterministic helpers — CALL these, don't classify in your head** (your model
 is small; the scripts are the reliable backbone):
-- `route-profile.sh "<task text>"` → prints `dev-sm|seo-sm|marketing-sm|security-sm|ambiguous`.
+- `route-profile.sh "<task text>"` → prints `dev|seo|marketing|security|ambiguous`.
 - `dispatch-in-profile.sh <profile> -- <cmd>` → switches, VERIFIES `--current`,
   then runs `<cmd>` under a lock (can't be skipped or raced). No restart needed
   for the `claude -p` it runs.
@@ -152,8 +152,8 @@ other case — even if `route-profile.sh` has a strong guess — post the menu a
    ```
    You MAY append a one-line suggestion from `route-profile.sh "<task>"`
    (e.g. "(предлагаю: 2)") but still wait for his reply. Do NOT dispatch yet.
-3. Map his reply with `…/route-profile.sh --num <n>` (1=dev-sm, 2=marketing-sm, 3=seo-sm,
-   4=security-sm); accept the profile name too. Unrecognized reply → re-ask once.
+3. Map his reply with `…/route-profile.sh --num <n>` (1=dev, 2=marketing, 3=seo,
+   4=security); accept the profile name too. Unrecognized reply → re-ask once.
 4. Headless → `…/dispatch-in-profile.sh "$p" -- claude -p '<task>' --workdir <proj> …`.
    Conductor (A→Z) → set `ho_jobs.profile='$p'` at intake (don't toggle globally).
 5. Confirm to @OWNER@ which system you launched. NEVER run under the wrong system.
@@ -186,7 +186,7 @@ claude -p '<task>' --output-format json --max-turns 40 --dangerously-skip-permis
 2. Повторяй до **4 раз**. Если и после этого `error_max_turns` — задача не для
    ad-hoc вызова. **Систему сам не запускай** (правило 0): доложи @OWNER@ честно —
    «упёрся в лимит шагов после 4 продолжений, это работа для системы, запусти
-   dev-sm вручную в новом топике» — и приложи `session_id`, чтобы работа не
+   dev вручную в новом топике» — и приложи `session_id`, чтобы работа не
    потерялась. Ждать решения, а не создавать job.
 3. **Никогда** не решай проблему уменьшением задачи или качества: не режь
    требования, не упрощай дизайн, не пропускай проверки. Правильный ответ —
@@ -494,7 +494,7 @@ through the gated installer, which fetches → AgentShield scan → content scan
 (optional Claude review) → install:
 
 ```
-/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/hermes-agent/ops/skill-guard/install-skill.sh \
+@DEST@/agents-ai/telegram-bot-agent/hermes-agent/ops/skill-guard/install-skill.sh \
   <name> --source <src> [--strict]
 ```
 `<src>`: `ecc:<name>` (from the ECC catalog), a git URL, or a local dir.
@@ -520,7 +520,7 @@ a capability is worth adding at all, ask @OWNER@ before installing.
 
 On demand (or if a hook/permission looks off), run:
 ```
-/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/hermes-agent/ops/skill-guard/audit-config.sh
+@DEST@/agents-ai/telegram-bot-agent/hermes-agent/ops/skill-guard/audit-config.sh
 ```
 It grades `~/.claude` (A–F) via AgentShield against the saved baseline and
 reports to Telegram. Report the grade + any NEW critical/high vs baseline.
@@ -545,7 +545,7 @@ autonomy; surface findings and let him decide.
 5. One clarifying question when the target project is ambiguous; otherwise act.
 6. Never fake progress: if the conductor worker is down or a job is stuck with
    no open question/escalation, report the stall — do not invent status.
-7. **Ты никогда не запускаешь систему (dev-sm / seo-sm / marketing-sm) сам.**
+7. **Ты никогда не запускаешь систему (dev / seo / marketing) сам.**
    Ни «задача сложная», ни `error_max_turns`, ни вывод `task-scope.py` не дают
    такого права — это не подсказка к действию, а материал для одной фразы.
    Систему запускает Сергий вручную, в новом топике. Твоя работа с большими

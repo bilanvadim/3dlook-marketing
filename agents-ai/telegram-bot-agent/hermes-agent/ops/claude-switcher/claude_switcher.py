@@ -7,10 +7,10 @@
 #   📇 Hermes → the manager (default). In Hermes mode you can prefix a message
 #               with a SYSTEM keyword to launch that system's full autonomous
 #               cycle via the conductor (non-blocking):
-#                 "Dev <task>"       → dev-sm     (full-stack A→Z)
-#                 "Marketing <task>" → marketing-sm
-#                 "SEO <task>"       → seo-sm
-#                 "Security <task>"  → security-sm
+#                 "Dev <task>"       → dev     (full-stack A→Z)
+#                 "Marketing <task>" → marketing
+#                 "SEO <task>"       → seo
+#                 "Security <task>"  → security
 #               Plain text with no keyword → the normal Hermes agent.
 #
 # A system task becomes an autonomous conductor job (ho_jobs); the bot replies
@@ -109,6 +109,10 @@ _HEAVY_MIN_OVERLAP = 0.2      # share of a follow-up's words seen in the task so
 _HEAVY_MIN_WORDS = 3          # shorter than this is an ack ("ок", "спасибо"), not a new topic
 _HEAVY_MAX_TURNS = 12         # hard ceiling, however on-topic it looks
 _HEAVY_MAX_IDLE_S = 1800.0    # 30 min without anything on-topic = task is done
+# How long an ignored "вернуться на агентную?" offer stays fresh. Short enough that
+# the strong chain is not held for hours by inertia, long enough that ignoring one
+# offer does not produce a second on the next message.
+_HEAVY_RETURN_ASK_GAP_S = 900.0
 
 # Russian/English filler that says nothing about the topic. Kept small on purpose:
 # over-filtering makes every message look off-topic and would bounce heavy mode off
@@ -145,18 +149,18 @@ _CLAUDE = "🤖 Claude"
 
 # System keyword (typed under Hermes) -> conductor profile.
 CMD_TO_PROFILE: Dict[str, str] = {
-    "dev": "dev-sm", "seo": "seo-sm",
-    "marketing": "marketing-sm", "security": "security-sm",
+    "dev": "dev", "seo": "seo",
+    "marketing": "marketing", "security": "security",
 }
 PROFILE_NAME: Dict[str, str] = {
-    "dev-sm": "🛠 Dev", "marketing-sm": "📣 Marketing",
-    "seo-sm": "🔍 SEO", "security-sm": "🛡 Security",
+    "dev": "🛠 Dev", "marketing": "📣 Marketing",
+    "seo": "🔍 SEO", "security": "🛡 Security",
 }
 # Launcher bottom-bar labels → conductor profile (kept for backward-compat with
 # an old cached 4-button keyboard; the live bar is now the single button below).
 _SYS_BAR_LABELS: Dict[str, str] = {
-    "🛠 Dev": "dev-sm", "🔍 SEO": "seo-sm",
-    "📣 Marketing": "marketing-sm", "🛡 Security": "security-sm",
+    "🛠 Dev": "dev", "🔍 SEO": "seo",
+    "📣 Marketing": "marketing", "🛡 Security": "security",
 }
 
 # The persistent bottom bar names the two ROLES, not the tech: the manager that
@@ -175,23 +179,23 @@ _LEGACY_HERMES_BTNS = ("🧠 Hermes",)
 # Per-system example task shown in the topic when a system is picked, so the user
 # sees how to phrase a good prompt.
 _SYS_EXAMPLE: Dict[str, str] = {
-    "dev-sm": "добавь на страницу /contact форму обратной связи с валидацией "
+    "dev": "добавь на страницу /contact форму обратной связи с валидацией "
               "полей и отправкой заявок на email через Resend",
-    "seo-sm": "проведи SEO-аудит сайта: собери семантическое ядро, проверь "
+    "seo": "проведи SEO-аудит сайта: собери семантическое ядро, проверь "
               "метатеги и скорость, дай план правок по приоритету",
-    "marketing-sm": "составь контент-план на месяц для Instagram: рубрики, "
+    "marketing": "составь контент-план на месяц для Instagram: рубрики, "
                     "10 постов с текстами и идеями визуала",
-    "security-sm": "проверь проект на уязвимости (auth, RLS, секреты, OWASP) "
+    "security": "проверь проект на уязвимости (auth, RLS, секреты, OWASP) "
                    "и дай отчёт с приоритетами и фиксами",
 }
 
 # Leading system-keyword patterns (EN + a few RU synonyms). Only a keyword at
 # the very START of the message triggers a system; the rest is the task.
 _SYS_PREFIX: List[Tuple[Any, str]] = [
-    (re.compile(r"^\s*(dev|разработка|девелоп\w*)\b[\s:,\.\-–—]*(.*)$", re.I | re.S), "dev-sm"),
-    (re.compile(r"^\s*(marketing|маркетинг)\b[\s:,\.\-–—]*(.*)$", re.I | re.S), "marketing-sm"),
-    (re.compile(r"^\s*(seo)\b[\s:,\.\-–—]*(.*)$", re.I | re.S), "seo-sm"),
-    (re.compile(r"^\s*(security|безопасност\w*)\b[\s:,\.\-–—]*(.*)$", re.I | re.S), "security-sm"),
+    (re.compile(r"^\s*(dev|разработка|девелоп\w*)\b[\s:,\.\-–—]*(.*)$", re.I | re.S), "dev"),
+    (re.compile(r"^\s*(marketing|маркетинг)\b[\s:,\.\-–—]*(.*)$", re.I | re.S), "marketing"),
+    (re.compile(r"^\s*(seo)\b[\s:,\.\-–—]*(.*)$", re.I | re.S), "seo"),
+    (re.compile(r"^\s*(security|безопасност\w*)\b[\s:,\.\-–—]*(.*)$", re.I | re.S), "security"),
 ]
 
 # Bottom-bar labels → action.
@@ -792,10 +796,10 @@ def _sys_menu_kb():
     """Inline menu of the four systems (opened by the single bar button)."""
     from telegram import InlineKeyboardButton as B, InlineKeyboardMarkup as M
     return M([
-        [B("🛠 Dev", callback_data="csw:sys:dev-sm"),
-         B("🔍 SEO", callback_data="csw:sys:seo-sm")],
-        [B("📣 Marketing", callback_data="csw:sys:marketing-sm"),
-         B("🛡 Security", callback_data="csw:sys:security-sm")],
+        [B("🛠 Dev", callback_data="csw:sys:dev"),
+         B("🔍 SEO", callback_data="csw:sys:seo")],
+        [B("📣 Marketing", callback_data="csw:sys:marketing"),
+         B("🛡 Security", callback_data="csw:sys:security")],
     ])
 
 
@@ -970,10 +974,62 @@ _PROVIDER_ENV = {
 }
 
 
+# The strong chain served by llm-failover-proxy (list A). Heavy mode borrows the
+# CHAIN, not one model id: a single id picked at 06:00 can be dead by the time the
+# hard task arrives, while the chain tries every entry per request and hedges. The
+# everyday agentic chain (list B) lives on the other port and is what config.yaml
+# points at, so returning is simply "drop the override".
+STRONG_CHAIN_URL = os.environ.get(
+    "HERMES_STRONG_CHAIN_URL", "http://127.0.0.1:47822/v1")
+AGENTIC_CHAIN_URL = os.environ.get(
+    "HERMES_AGENTIC_CHAIN_URL", "http://127.0.0.1:47821/v1")
+
+
+def _chain_key_env(url: str) -> str:
+    """Hermes derives a custom provider's key env var from host+port, e.g.
+    HERMES_CUSTOM_127_0_0_1_47822_API_KEY. Mirror that so the override carries a
+    key the runtime accepts (the proxy itself needs none — server.apiKey is null)."""
+    body = url.split("://", 1)[-1].split("/", 1)[0]
+    return "HERMES_CUSTOM_" + re.sub(r"[^A-Za-z0-9]+", "_", body).upper() + "_API_KEY"
+
+
+def _chain_alive(url: str, timeout: float = 3.0) -> bool:
+    """Is a failover chain actually listening AND willing to serve us?
+
+    The key is mandatory, not optional: a proxy on 127.0.0.1 is reachable by every
+    account on a shared host, so `server.apiKey` has to be set — and the moment it
+    is, an unauthenticated probe gets 401 and reads as "chain down". That silently
+    disabled heavy mode on both boxes the day auth was turned on: strong_chain()
+    returned None and the mode fell back to the router's daily pick."""
+    try:
+        import urllib.request
+        req = urllib.request.Request(url.rstrip("/") + "/models")
+        key = os.environ.get(_chain_key_env(url))
+        if key:
+            req.add_header("Authorization", f"Bearer {key}")
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return r.status == 200
+    except Exception:
+        return False
+
+
+def strong_chain() -> Optional[Dict[str, Any]]:
+    """Heavy-mode target: the strong failover chain (list A), or None if it is down."""
+    if not _chain_alive(STRONG_CHAIN_URL):
+        return None
+    return {"model": "auto", "provider": "custom", "base_url": STRONG_CHAIN_URL,
+            "api_key": os.environ.get(_chain_key_env(STRONG_CHAIN_URL)) or "local-proxy",
+            "label": "llm-fop · сильная цепочка"}
+
+
 def strong_model() -> Optional[Dict[str, Any]]:
     """Today's strong model from the morning pick, resolved to something Hermes can
     actually talk to: {model, provider, base_url, api_key, label}. None when the
-    router has not run or the provider's key is missing."""
+    router has not run or the provider's key is missing.
+
+    Kept as the FALLBACK for heavy mode: used only when the strong chain is not
+    listening, so a stopped proxy degrades to the old behaviour instead of removing
+    heavy mode altogether."""
     pick = _read_pick()
     model = pick.get("coder")
     pid = pick.get("coder_provider") or "opencode"
@@ -1017,7 +1073,25 @@ def _heavy_kb(on: bool):
 
 async def heavy_on(runner: Any, source: Any, key: str,
                    session_key: str, task_text: str = "") -> str:
-    sm = strong_model()
+    sm = strong_chain() or strong_model()
+    if sm and sm.get("base_url") == STRONG_CHAIN_URL:
+        # The chain answers as "auto", so the "already on it" guard below (which
+        # compares model ids) cannot apply — compare ENDPOINTS instead. Without this
+        # the guard fired on every tap, because config.yaml's default is also "auto".
+        ov = {"model": sm["model"], "provider": sm["provider"],
+              "api_key": sm["api_key"], "base_url": sm["base_url"]}
+        if not _apply_override(runner, session_key, ov):
+            return "⚠️ Не удалось переключить модель (см. логи)."
+        _HEAVY[key] = {"model": sm["model"], "provider": sm["provider"],
+                       "session_key": session_key, "label": sm["label"],
+                       "chain": True,
+                       "topic": _content_words(task_text or _HEAVY_LAST_MSG.get(key, "")),
+                       "turns": 0, "misses": 0, "last_hit": time.monotonic()}
+        logger.info("csw: heavy mode ON tab=%s → strong chain %s", key, STRONG_CHAIN_URL)
+        return ("⚡ Тяжёлый режим: сильная цепочка llm-fop (список A).\n"
+                "Модель на каждый запрос выбирает цепочка — перебором и "
+                "хеджированием. Спрошу про возврат на агентную, когда увижу, что "
+                "задача закрыта.")
     if not sm:
         pick = _read_pick()
         missing = ", ".join(pick.get("missing_keys") or []) or "—"
@@ -1061,6 +1135,9 @@ async def heavy_off(runner: Any, source: Any, key: str,
     back = pick.get("primary") or "обычную модель"
     logger.info("csw: heavy mode OFF tab=%s (было %s)", key,
                 (st or {}).get("label", "—"))
+    if st and st.get("chain"):
+        return ("✅ Вернулся на агентную цепочку llm-fop (список B) — "
+                "быстрые модели с tool calling.")
     return (f"✅ Вернулся на повседневную {back}."
             if st else
             f"ℹ️ Тяжёлый режим не был включён; работаю на {back}.")
@@ -1070,22 +1147,50 @@ def is_heavy(key: str) -> bool:
     return key in _HEAVY
 
 
-# Words that mark a task the everyday small free model will fumble: design,
-# architecture, root-cause work, refactors, comparisons, plans. Deliberately a
-# short list of INTENT verbs — matching on "почему" alone would fire on chit-chat.
-_HEAVY_HINTS = (
-    "спроектируй", "архитектур", "отрефактор", "рефактор", "разберись",
-    "разбери причин", "найди причину", "root cause", "проанализируй",
-    "сравни ", "стратег", "составь план", "распланируй", "продумай",
-    "миграц", "оптимизируй", "почему не работает", "почему падает",
-    "как лучше сделать", "какой подход", "спланируй", "аудит",
-)
-_HEAVY_LONG = 320          # a long brief is itself a signal of a heavy task
+# Heaviness is decided by ops/task-heaviness.py, not here. There used to be a second
+# implementation at this spot — an OR over a verb list plus "longer than 320 chars",
+# with no minimum length and no ack filter. It disagreed with the hook's scorer on
+# exactly the traffic that matters: "ок, а почему падает?" read as heavy, and so did
+# any 320-character paste. Since this same function also decides whether a follow-up
+# is still ON-TOPIC for a running heavy task, the loose version was the one steering
+# the model. One rule, one file — the pattern task-scope.py already uses.
+def _load_heaviness():
+    """Import the shared scorer by path; fall back to a strict local rule.
+
+    Imported rather than shelled out: this runs on every inbound message, and a
+    subprocess per message buys nothing. A missing file must not break the switcher,
+    so the fallback keeps the floor and the ack filter — the two things whose absence
+    caused the drift in the first place."""
+    import importlib.util
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "task-heaviness.py")
+    for cand in (os.path.normpath(path),
+                 os.path.expanduser("~/.hermes/task-heaviness.py")):
+        try:
+            spec = importlib.util.spec_from_file_location("task_heaviness", cand)
+            if not spec or not spec.loader:
+                continue
+            mod = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(mod)
+            logger.info("csw: heaviness scorer loaded from %s", cand)
+            return mod.looks_heavy
+        except Exception:
+            continue
+    logger.warning("csw: task-heaviness.py not found — using the built-in fallback")
+    _HINTS = ("спроектируй", "архитектур", "рефактор", "разберись", "найди причину",
+              "root cause", "проанализируй", "сравни ", "стратег", "составь план",
+              "миграц", "оптимизируй", "почему не работает", "почему падает", "аудит")
+    _ACK = re.compile(r"^\s*(?:/|ок\b|ok\b|да\b|нет\b|спасибо|поехали|продолж)", re.I)
+
+    def _fallback(text: str) -> bool:
+        t = (text or "").strip()
+        if len(t) < 80 or _ACK.match(t):
+            return False
+        low = t.lower()
+        return any(w in low for w in _HINTS) or len(t) >= 400
+    return _fallback
 
 
-def looks_heavy(text: str) -> bool:
-    low = (text or "").lower()
-    return bool(low) and (any(w in low for w in _HEAVY_HINTS) or len(low) >= _HEAVY_LONG)
+looks_heavy = _load_heaviness()
 
 
 _HEAVY_LAST_MSG: Dict[str, str] = {}   # tab key -> last inbound text (the task a tap refers to)
@@ -1096,8 +1201,10 @@ async def maybe_auto_return(runner: Any, source: Any, key: str,
     """Judge this message against the heavy task and go back on its own when the
     work has moved on. Returns True when it switched back.
 
-    No question is asked — Sergiy asked for the return to be automatic. The rules,
-    in order of how strongly they say "done":
+    It OFFERS and never switches on its own: staying on the strong chain for a task
+    that merely LOOKS light is a legitimate choice, and a silent downgrade would
+    overrule it. An ignored offer is re-made after _HEAVY_RETURN_ASK_GAP_S. The
+    rules below decide when to ask, in order of how strongly they say "done":
       * a substantive message that shares almost nothing with the running task →
         he switched to something else, return immediately;
       * 30 minutes without anything on-topic → the task died quietly;
@@ -1126,17 +1233,34 @@ async def maybe_auto_return(runner: Any, source: Any, key: str,
         reason = f"уже {st['turns']} ходов на сильной модели"
     else:
         return False
-    txt = await heavy_off(runner, source, key, session_key)
-    logger.info("csw: heavy mode AUTO-OFF tab=%s (%s)", key, reason)
+    # ASK, do not switch. Sergiy's rule changed: he may deliberately stay on the
+    # strong chain even when the work looks light, and a silent downgrade would take
+    # that choice away mid-task. So offer — and if he stays, ASK AGAIN later rather
+    # than either nagging every turn or giving up after one refusal (ignoring an
+    # offer is not the same as saying "never").
+    now = time.monotonic()
+    asked_at = float(st.get("return_asked_at") or 0)
+    if asked_at and (now - asked_at) < _HEAVY_RETURN_ASK_GAP_S:
+        return False                      # offer still fresh — do not repeat it
+    st["return_asked_at"] = now
+    st["return_asks"] = int(st.get("return_asks", 0)) + 1
+    again = "" if st["return_asks"] == 1 else " (спрашиваю снова)"
+    logger.info("csw: heavy mode RETURN OFFERED tab=%s (%s) попытка %d",
+                key, reason, st["return_asks"])
     try:
-        await _send(runner, source, f"↩️ {reason} — {txt}")
+        await _send_reply_kb(
+            runner, source,
+            f"↩️ {reason}{again}. Вернуться на агентную цепочку (список B — "
+            f"быстрые модели)? Сейчас работаю на {st.get('label','сильной модели')}.\n"
+            "Останешься на сильной — просто продолжай, переспрошу позже.",
+            _heavy_kb(True))
     except Exception:
-        logger.debug("csw: auto-return notice failed", exc_info=True)
-    return True
+        logger.debug("csw: return offer failed", exc_info=True)
+    return False                          # nothing switched — the choice is his
 
 
-_SCOPE_SCRIPT = "/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/hermes-agent/ops/task-scope.py"
-_PROFILE_SCRIPT = ("/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/"
+_SCOPE_SCRIPT = "@DEST@/agents-ai/telegram-bot-agent/hermes-agent/ops/task-scope.py"
+_PROFILE_SCRIPT = ("@DEST@/agents-ai/telegram-bot-agent/"
                    "claude-code-agent/DEV/route-profile.sh")
 
 
@@ -1170,7 +1294,7 @@ def route_profile(text: str) -> Optional[str]:
         return None
 
 
-# --- No automatic dispatch to a SYSTEM (dev-sm / seo-sm / marketing-sm) ------
+# --- No automatic dispatch to a SYSTEM (dev / seo / marketing) ------
 # There used to be a maybe_autoroute_big_task() here: it scored the message and,
 # when it looked like a whole feature, created a conductor job on its own. That
 # is deliberately gone (2026-08-03, Sergiy's call). An autonomous system run is a
@@ -1344,8 +1468,8 @@ async def handle_inline_query(adapter: Any, inline_query: Any) -> None:
         results.append(_article(kw, prof, task))
     else:
         # No leading system keyword yet → offer all four, carrying the typed text.
-        for kw, prof_key in (("dev", "dev-sm"), ("seo", "seo-sm"),
-                             ("marketing", "marketing-sm"), ("security", "security-sm")):
+        for kw, prof_key in (("dev", "dev"), ("seo", "seo"),
+                             ("marketing", "marketing"), ("security", "security")):
             results.append(_article(kw, prof_key, q))
     try:
         await inline_query.answer(results, cache_time=0, is_personal=True)
@@ -2410,6 +2534,62 @@ _EXECUTOR_RE = re.compile(
 _RUNNER: Any = None          # last gateway runner seen; used by the probe thread
 _PROBE_INSTALLED = False
 
+# The backup coder (OpenCode) talks to the STRONG failover chain, so which model
+# actually answered is the chain's business, not OpenCode's — the CLI never prints
+# it. The chain does: every served request is one log line with the winner, e.g.
+#   17:47:39 info [12fef4] ok opencode/laguna-s-2.1-free (2/9, stream) 1.72s 555 tok
+# Reading the tail of that log is how the tab learns it changed models.
+STRONG_CHAIN_LOG = os.environ.get(
+    "HERMES_STRONG_CHAIN_LOG",
+    os.path.expanduser("~/.config/llm-failover-proxy/daemon-strong.log"))
+_CHAIN_OK_RE = re.compile(r"\bok\s+(\S+)\s+\(\d+/\d+")
+_CODER_MODEL: Dict[str, str] = {}    # tab key -> model the coder last answered with
+_LOOP: Any = None                    # event loop captured where the probe is installed
+
+
+def _chain_last_model(path: str = "", tail_bytes: int = 65536) -> Optional[str]:
+    """The model that most recently SERVED a request on the strong chain, or None.
+
+    Tail-read rather than followed: this is asked once per delegated command, and a
+    follower would have to outlive the turn. Losing the answer is acceptable — the
+    line is a courtesy — so every failure returns None instead of raising into the
+    coding path."""
+    try:
+        with open(path or STRONG_CHAIN_LOG, "rb") as f:
+            f.seek(0, os.SEEK_END)
+            f.seek(max(0, f.tell() - tail_bytes))
+            blob = f.read().decode("utf-8", "replace")
+    except OSError:
+        return None
+    hits = _CHAIN_OK_RE.findall(blob)
+    return hits[-1] if hits else None
+
+
+async def _report_coder_model(key: str) -> None:
+    """Say, in one line, that the coder switched models — and only then.
+
+    Only on CHANGE: the chain names a winner on every single request, so echoing it
+    each time would add a line to every delegated command and teach you to ignore
+    them. The first observation is recorded silently, because "OpenCode is on X" is
+    not news — "OpenCode is now on Y instead of X" is."""
+    model = _chain_last_model()
+    if not model:
+        return
+    prev = _CODER_MODEL.get(key)
+    _CODER_MODEL[key] = model
+    if prev is None or prev == model:
+        return
+    st = _HERMES_THINK.get(key) or _HEAVY_CTX.get(key) or {}
+    runner, source = st.get("runner"), st.get("source")
+    if not runner or source is None:
+        return
+    try:
+        await _send(runner, source,
+                    f"🔁 Кодинг-агент OpenCode сменил модель: {prev} → {model}")
+        logger.info("csw: coder model change reported tab=%s %s → %s", key, prev, model)
+    except Exception:
+        logger.debug("csw: coder-model notice failed", exc_info=True)
+
 
 def _keys_for_task(task_id: Any) -> Tuple[str, ...]:
     """Which waiting tabs a tool call belongs to. The gateway runs the agent with
@@ -2470,11 +2650,24 @@ def _install_delegation_probe() -> None:
         try:
             return orig(*a, **kw)
         finally:
+            is_opencode = False
+            try:
+                _c = kw.get("command") if "command" in kw else (a[0] if a else "")
+                is_opencode = bool(_c) and "opencode" in str(_c).lower()
+            except Exception:
+                pass
             for k in keys:
                 try:
                     _note_delegation(k, -1)
                 except Exception:
                     pass
+                # Runs on the agent's worker thread; the send must happen on the
+                # gateway's loop, captured where the probe was installed.
+                if is_opencode and _LOOP is not None:
+                    try:
+                        asyncio.run_coroutine_threadsafe(_report_coder_model(k), _LOOP)
+                    except Exception:
+                        logger.debug("csw: coder-model report not scheduled", exc_info=True)
 
     _wrapped._csw_wrapped = True                 # type: ignore[attr-defined]
     # The registry's handler calls the module global by name at call time, so
@@ -2487,8 +2680,12 @@ async def _start_hermes_thinking(runner: Any, source: Any, key: str) -> None:
     """Post a Hermes 'thinking' placeholder into the topic and start cycling it."""
     if key in _HERMES_THINK:
         return
-    global _RUNNER
+    global _RUNNER, _LOOP
     _RUNNER = runner
+    try:
+        _LOOP = asyncio.get_running_loop()
+    except RuntimeError:
+        _LOOP = None
     _install_delegation_probe()
     gen = _hermes_deck(key)
     anchor = _live_anchor(source)
@@ -3677,9 +3874,9 @@ def _ho_write(sql: str, params: tuple = ()):
 
 def _entry_prompt(profile: str, task: str) -> str:
     """Autonomous A→Z orchestration brief for the conductor (no go-gate)."""
-    if profile == "dev-sm":
+    if profile == "dev":
         return (
-            "Ты — оркестратор Fullstack agents (профиль dev-sm). Прогони ПОЛНЫЙ "
+            "Ты — оркестратор Fullstack agents (профиль dev). Прогони ПОЛНЫЙ "
             "цикл фулл-стек разработки АВТОНОМНО, от А до Я, без ожидания "
             "подтверждений на каждом шаге:\n"
             "1) project-planning: не хватает критичных данных — задай уточняющие "
@@ -3693,23 +3890,23 @@ def _entry_prompt(profile: str, task: str) -> str:
             "Эскалируй ТОЛЬКО критические/необратимые решения (деплой, удаление "
             "данных, платежи). Работай в текущем репозитории.\n\nЗадача: " + task
         )
-    if profile == "marketing-sm":
+    if profile == "marketing":
         return (
-            "Ты — оркестратор системы Marketing (профиль marketing-sm). Проведи "
+            "Ты — оркестратор системы Marketing (профиль marketing). Проведи "
             "полный цикл АВТОНОМНО: анализ аудитории/рынка → стратегия и "
             "позиционирование → контент-план и креативы → метрики/KPI. Вопросы — "
             "только при критичной неопределённости; эскалируй необратимое.\n\nЗадача: " + task
         )
-    if profile == "seo-sm":
+    if profile == "seo":
         return (
-            "Ты — оркестратор системы SEO (профиль seo-sm). Проведи полный SEO-цикл "
+            "Ты — оркестратор системы SEO (профиль seo). Проведи полный SEO-цикл "
             "АВТОНОМНО: тех-аудит → семантика/ключи → on-page и контент → "
             "приоритизированные фиксы/рекомендации. Вопросы — только при критичной "
             "неопределённости.\n\nЗадача: " + task
         )
-    if profile == "security-sm":
+    if profile == "security":
         return (
-            "Ты — оркестратор системы Security (профиль security-sm). Проведи полный "
+            "Ты — оркестратор системы Security (профиль security). Проведи полный "
             "аудит АВТОНОМНО: threat model → auth/RLS/валидация/секреты/зависимости "
             "(OWASP) → отчёт с severity и фиксами. Эскалируй критические находки.\n\nЗадача: " + task
         )
@@ -4986,7 +5183,7 @@ async def maybe_handle_turn(runner: Any, event: Any, source: Any,
     #
     # NOTHING is auto-routed to a system from here. A big task stays with Hermes
     # (which may hand the technical part to the coding agent, one queued request
-    # at a time); starting dev-sm/seo-sm/marketing-sm is a manual act, in a fresh
+    # at a time); starting dev/seo/marketing is a manual act, in a fresh
     # topic. See the note at the removed maybe_autoroute_big_task.
     try:
         _HEAVY_LAST_MSG[key] = message_text or ""

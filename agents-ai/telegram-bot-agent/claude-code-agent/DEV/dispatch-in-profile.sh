@@ -9,7 +9,7 @@
 #   dispatch-in-profile.sh <profile>                   # switch+verify only (e.g. prep interactive)
 #
 # Example (Hermes headless):
-#   dispatch-in-profile.sh marketing-sm -- claude -p 'plan a launch campaign' \
+#   dispatch-in-profile.sh marketing -- claude -p 'plan a launch campaign' \
 #       --output-format json --max-turns 30 --dangerously-skip-permissions
 #
 # Notes:

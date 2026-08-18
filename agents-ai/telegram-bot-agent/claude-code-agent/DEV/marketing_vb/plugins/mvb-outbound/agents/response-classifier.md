@@ -13,7 +13,7 @@ tools: Read, Write, Grep
 - person_id (или linkedin_url для join)
 - response_date
 - response_text
-- which_message_replied_to (1-2)
+- which_step_replied_to (1-4)
 
 ## Категории
 
@@ -62,7 +62,7 @@ Plus `workspace/outbound/campaigns/{campaign}/responses-summary.md`:
 ## Interested — for sales handoff
 
 ### {Full Name} — {Title} — {Company}
-- Replied to: Message {N}
+- Replied to: Step {N}
 - Their message: «...» (1-2 sentence quote)
 - Extracted intent: «хочет 30-min call про X»
 - Suggested next step: warm-intro, send календарь

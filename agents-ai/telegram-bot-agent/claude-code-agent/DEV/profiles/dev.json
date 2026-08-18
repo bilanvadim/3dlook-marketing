@@ -1,0 +1,20 @@
+{
+  "name": "dev",
+  "description": "Full-stack development system (dev). Architect → design → front/back/data/platform → QA/security → verify.",
+  "marketplaces": {
+    "dev": "@DEST@/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev"
+  },
+  "enabledPlugins": [
+    "hermes-core@dev",
+    "hermes-design@dev",
+    "hermes-frontend@dev",
+    "hermes-backend@dev",
+    "hermes-data@dev",
+    "hermes-platform@dev",
+    "hermes-quality@dev",
+    "hermes-sre@dev",
+    "hermes-scout@dev",
+    "hermes-verify@dev",
+    "hermes-ecc@dev"
+  ]
+}

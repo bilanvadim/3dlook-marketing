@@ -3,7 +3,7 @@
 
 Two classes of protected path:
 
-1. **Project code** under /srv/sergiy_prod — Hermes is the MANAGER, not the coder,
+1. **Project code** under /srv/@USER@ — Hermes is the MANAGER, not the coder,
    so code is written by Claude Code / OpenCode. The Second Brain wiki lives
    inside that zone and is carved out, as is the handoff file.
 
@@ -40,10 +40,10 @@ import sys
 
 HOME = os.path.expanduser("~")
 
-ZONE = "/srv/sergiy_prod/"
+ZONE = "/srv/@USER@/"
 # The wiki is inside the zone on purpose: note-taking must keep working.
 CARVE_OUTS = (
-    "/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/hermes-agent/AI-Second-Brain",
+    "@DEST@/agents-ai/telegram-bot-agent/hermes-agent/AI-Second-Brain",
 )
 HANDOFF_SUFFIX = "/.hermes-handoff.md"
 
@@ -70,7 +70,7 @@ SELF_PROTECTED_PREFIXES = tuple(
 
 ZONE_REASON = (
     "Refusing (hermes-mechanic): Hermes is the manager, not the coder. "
-    "Project code under /srv/sergiy_prod must be written by Claude Code / "
+    "Project code under /srv/@USER@ must be written by Claude Code / "
     "OpenCode, not Hermes's file tool. Delegate it (claude-code skill / conductor)."
 )
 SELF_REASON = (

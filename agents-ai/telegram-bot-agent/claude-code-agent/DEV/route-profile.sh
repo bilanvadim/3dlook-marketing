@@ -1,13 +1,7 @@
 #!/usr/bin/env bash
 # route-profile.sh — deterministic intent → profile classifier.
 #
-# Prints exactly ONE token on stdout: dev-sm | seo-sm | marketing-sm | security-sm |
-# marketing_vb | marketing_vb_sm | ambiguous
-#
-# Vadim's two systems are NOT keyword-routable on purpose: they read his brand
-# context by relative path, so they only work when Claude Code was started from
-# inside marketing_vb/. A classifier cannot know the cwd, so those two are chosen
-# explicitly — by name, or from the --menu below.
+# Prints exactly ONE token on stdout: dev | seo | marketing | security | ambiguous
 # Keyword-scored over the task text (RU + EN, case-insensitive, substring match so
 # stems like "ранжир" catch "ранжирование"). This is the reliable backbone Hermes
 # calls instead of classifying in its head; the orchestrator layer only handles
@@ -31,14 +25,11 @@ set -uo pipefail
 # --num N: map a numeric reply to a profile (1 Dev, 2 Marketing, 3 SEO, 4 Security).
 case "${1:-}" in
   --menu)
-    printf '%s\n' "Какую систему запустить внутри Claude?" "1. Dev" "2. Marketing (Sergiy)" \
-      "3. SEO" "4. Security" "5. Marketing 3DLOOK (твоя система)" \
-      "6. Marketing MIX (твоя + Sergiy)"
+    printf '%s\n' "Какую систему запустить внутри Claude?" "1. Dev" "2. Marketing" "3. SEO" "4. Security"
     exit 0 ;;
   --num)
     case "${2:-}" in
-      1) echo dev-sm ;; 2) echo marketing-sm ;; 3) echo seo-sm ;; 4) echo security-sm ;;
-      5) echo marketing_vb ;; 6) echo marketing_vb_sm ;;
+      1) echo dev ;; 2) echo marketing ;; 3) echo seo ;; 4) echo security ;;
       *) echo "ambiguous"; exit 2 ;;
     esac
     exit 0 ;;
@@ -62,18 +53,18 @@ s=$(score "$SEO"); m=$(score "$MKT"); c=$(score "$SEC"); d=$(score "$DEV")
 if (( EXPLAIN )); then echo "scores: seo=$s marketing=$m security=$c dev=$d" >&2; fi
 
 # specialized best + tie detection
-best=$s; winner=seo-sm
-(( m > best )) && { best=$m; winner=marketing-sm; }
-(( c > best )) && { best=$c; winner=security-sm; }
+best=$s; winner=seo
+(( m > best )) && { best=$m; winner=marketing; }
+(( c > best )) && { best=$c; winner=security; }
 ties=0
 (( s == best )) && ((ties++)); (( m == best )) && ((ties++)); (( c == best )) && ((ties++))
 
 if (( best == 0 )); then
-  echo dev-sm
+  echo dev
 elif (( ties > 1 )); then
   echo ambiguous
 elif (( d > best )); then
-  echo dev-sm
+  echo dev
 else
   echo "$winner"
 fi

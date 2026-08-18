@@ -1,6 +1,0 @@
-{
-  "name": "sbx-probe",
-  "description": "Sandbox instrumentation for the sandbox-sm profile: /sbx-check reports the profile Claude Code actually loaded and the plugins live in this session, so a candidate that never loaded is not mistaken for a candidate that is bad.",
-  "version": "0.1.0",
-  "author": { "name": "Sergiy" }
-}

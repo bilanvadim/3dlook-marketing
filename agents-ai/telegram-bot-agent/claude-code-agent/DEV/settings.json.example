@@ -14,14 +14,14 @@
   "theme": "dark-daltonized",
   "skipDangerousModePermissionPrompt": true,
   "extraKnownMarketplaces": {
-    "dev-sm": {
+    "dev": {
       "source": {
         "source": "directory",
-        "path": "/srv/sergiy_prod/ai-agents-config/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev-sm"
+        "path": "/srv/YOUR_USER/ai-agents-config/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev"
       }
     }
   },
   "enabledPlugins": {
-    "hermes-core@dev-sm": true
+    "hermes-core@dev": true
   }
 }

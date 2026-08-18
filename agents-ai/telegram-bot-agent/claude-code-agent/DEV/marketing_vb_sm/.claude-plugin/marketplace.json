@@ -1,11 +1,11 @@
 {
-  "name": "marketing_vb_sm",
+  "name": "ai-agents-mvb-sm",
   "owner": {
     "name": "Vadim Bilan + Sergiy",
     "url": "https://github.com/bilanvadim/3dlook-marketing"
   },
   "metadata": {
-    "description": "Mixed marketing system: Vadim's brand-driven 3DLOOK teams (marketing_vb) blended with Sergiy's marketing specialists (marketing-sm) + the Hermes base. This marketplace ships the bridge plugin (unified /vbsm-campaign + marketing-vb-sm skill); the mix profile also enables the mvb-* and mkt-* plugins, so it is a strict superset of the marketing_vb profile. Execution is delegated to Vadim's live entry points so the mix follows his system instead of drifting from it. Switch into it via profile 'marketing_vb_sm'.",
+    "description": "Mixed marketing system: Vadim's brand-driven 3DLOOK teams (marketing_vb) blended with Sergiy's marketing specialists (marketing) + the Hermes base. This marketplace ships the bridge plugin (unified /vbsm-campaign + marketing-vb-sm skill); the mix profile also enables the mvb-* and mkt-* plugins, so it is a strict superset of the marketing_vb profile. Execution is delegated to Vadim's live entry points so the mix follows his system instead of drifting from it. Switch into it via profile 'marketing_vb_sm'.",
     "version": "0.2.0"
   },
   "plugins": [

@@ -1,0 +1,14 @@
+{
+  "name": "security",
+  "description": "Security-focused profile: security-auditor + QA + verification + vetted ECC security content (security-bounty-hunter, silent-failure-hunter).",
+  "marketplaces": {
+    "dev": "@DEST@/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev",
+    "security": "@DEST@/agents-ai/telegram-bot-agent/claude-code-agent/DEV/security"
+  },
+  "enabledPlugins": [
+    "hermes-core@dev",
+    "hermes-quality@dev",
+    "hermes-verify@dev",
+    "sec-core@security"
+  ]
+}
