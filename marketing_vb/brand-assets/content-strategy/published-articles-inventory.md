@@ -1,9 +1,35 @@
 # Published Articles Inventory — 3DLOOK Content Hub
 
-> Last updated: 2026-07-28
+> Last updated: 2026-08-18
 > Source: `https://3dlook.ai/post-sitemap.xml` (Yoast SEO — authoritative)
 > Total: **155 published articles**
 > Purpose: single source of truth for what's published, mapped to content plan hubs
+
+---
+
+## Live-Page Verification Pass — 2026-08-18
+
+Seven health articles were read on the live site and reconciled against this inventory and `content-plan.md`. All seven are confirmed published, bylined **Assel Sekerova**, product **FitXpress**.
+
+| # | Slug | Live H1 | Published | Site "updated" | Words | Working directory |
+|---|------|---------|-----------|----------------|-------|-------------------|
+| 1 | `mobile-body-scanning-patient-engagement` | How Mobile Body Scanning Improves Patient Engagement | **2026-08-14** | — | ~2,800 | `workspace/seo/articles/mobile-body-scanning-patient-engagement/` |
+| 2 | `the-potential-of-ai-in-telehealth` | AI in Telehealth: Workflows, Privacy, Patient Experience, and Remote Body Data Use Cases | **2026-08-07** | — | ~3,500 | `workspace/seo/telehealth-hub-refresh/` |
+| 3 | `ai-in-fitness-industry` | AI in Fitness: How Structured Body Data Powers Progress Tracking, Personalization, and Digital Coaching | **2026-07-31** | — | ~4,500 | `workspace/seo/articles/ai-in-fitness-hub/` |
+| 4 | `ai-body-data-health-hub` | AI Body Data Across Health Programs: A Guide to Verified Body Measurement | **2026-07-24** | 2026-07-27 | ~2,800 | `workspace/seo/articles/ai-body-data-health-hub/` |
+| 5 | `clinical-trial-anthropometric-measurement-software-obesity-trials` | Standardizing Anthropometric Measurements for Hybrid and Decentralized Obesity Trials | **2026-07-17** | 2026-07-27 | ~4,000 | `workspace/seo/articles/2026-06-16-clinical-trials-obesity-metabolic-hybrid-dct/` |
+| 6 | `occupational-health-screening-software` | Standardizing Occupational Health Screening: Faster Intake, Better Documentation, Fewer Rescreens | **2026-07-10** | 2026-07-17 | ~4,500 | `workspace/seo/articles/2026-06-08-occupational-health-screening/` |
+| 7 | `mobile-body-scanning-accuracy` | Body Scanning Accuracy: A Framework for Enterprise Decisions | **2026-07-03** | 2026-07-30 | ~4,500 | `workspace/seo/articles/2026-05-29-3dlook-accuracy-enterprise-evaluation/` |
+
+Each working directory now carries a `FINAL-PUBLISHED.md` marker with the live URL, publication date, final source file, and draft-vs-published notes.
+
+**What this pass changed:**
+
+1. **Telehealth hub refresh is LIVE (2026-08-07)** — the biggest correction. `the-potential-of-ai-in-telehealth` is no longer the September 2024 article; it was refreshed in place at the same URL into the 2026 hub. Hub #5's P0 refresh gap is **closed**.
+2. **Patient engagement date pinned** — was "Aug 2026," now confirmed **2026-08-14**.
+3. **Main Health hub H1 differs from the draft** — published as "AI Body Data Across Health Programs: A Guide to Verified Body Measurement," not the drafted "AI Body Data in Healthcare: A Guide to Verified Body Measurement Across Health Programs."
+4. **Accuracy article slug differs from the draft** — published at `mobile-body-scanning-accuracy`, drafted as `body-scanning-accuracy-framework-enterprise-decisions`.
+5. **Three hubs show a late-July update sweep** (Main Health + Clinical Trials on 07-27, Accuracy on 07-30) — consistent with a cross-hub internal-linking pass after the Main Health hub went live.
 
 ---
 
@@ -27,7 +53,7 @@
 | 2 | Accuracy / Buyer Evaluation | P0 | ✅ Jul 3 | DEXA vs, Tech Comparison, Accuracy ROI, Daily Changes | None (trust assets pending) |
 | 3 | Data, Privacy, Security & Regulatory FAQ | P0 | ❌ | — | **OVERDUE** |
 | 4 | AI in Fitness | P0 hub + P1/P2 | ✅ Jul 31 | AI in Fitness (refreshed hub), Fitness Tech Companies, AI Body Scanning for Fitness, Connected Fitness, Fitness Apps, Fitness Trends | Hub refreshed & live Jul 31, 2026; P1/P2 clusters pending |
-| 5 | AI in Telehealth | P0 hub + P1/P2 | ⚠️ Old hub exists | Potential of AI in Telehealth | Needs hub refresh |
+| 5 | AI in Telehealth | P0 hub + P1/P2 | ✅ Aug 7 | Patient Engagement (Aug 14) | Hub refreshed & live Aug 7, 2026; P1/P2 clusters pending |
 | 6 | GLP-1 Market | P0 hub + P1/P2 | ✅ Old hub exists | Pharmacy BMI, GLP-1 Compliance, Visual Progress, Weight Loss Industry, Weight Loss Clinic Tips, Body Scanning for Weight Loss, Beyond BMI | Needs 2026 hub refresh |
 | 7 | Insurance Underwriting | P0 | ✅ Jun 17 | — | None |
 | 8 | Wellness Platforms | P0 | ✅ Mar 30 | — | P1 articles not published |
@@ -44,7 +70,7 @@
 - `ai-body-data-health-hub/` — **AI Body Data Across Health Programs** — Jul 24, 2026 — Hub #1
 
 ### Accuracy / Trust (Hub #2)
-- `mobile-body-scanning-accuracy/` — **Body Scanning Accuracy: Enterprise Framework** — Jul 3, 2026 — Trust Asset
+- `mobile-body-scanning-accuracy/` — **Body Scanning Accuracy: A Framework for Enterprise Decisions** — Jul 3, 2026 (updated Jul 30) — Trust Asset #1
 - `ai-body-scanners-vs-dexa-scans/` — **AI Body Scanners vs DEXA Scans** — Jun 30, 2026 — Comparison
 - `accuracy-drives-roi-digital-health/` — **Accuracy Drives ROI in Digital Health** — Jan 2026 — Supporting
 - `the-enormous-impact-of-daily-physiological-changes-on-the-accuracy-of-our-body-measurements/` — **Daily Physiological Changes & Body Measurement Accuracy** — Oct 2019 — Education
@@ -83,8 +109,8 @@
 - `top-trends-and-features-in-fitness-apps/` — **Top Trends & Features in Fitness Apps** — Nov 2023 — TOFU
 
 ### Telehealth (Hub #5)
-- `the-potential-of-ai-in-telehealth/` — **The Potential of AI in Telehealth** — Sep 2024 — Old hub (needs refresh)
-- `mobile-body-scanning-patient-engagement/` — **How Mobile Body Scanning Improves Patient Engagement** — Aug 2026 — P0 Supporting
+- `the-potential-of-ai-in-telehealth/` — **AI in Telehealth: Workflows, Privacy, Patient Experience, and Remote Body Data Use Cases** — Aug 7, 2026 — Hub (refreshed in place from Sep 2024)
+- `mobile-body-scanning-patient-engagement/` — **How Mobile Body Scanning Improves Patient Engagement** — Aug 14, 2026 — P0 Supporting
 
 ### BCRL / Oncology (NEW — not in plan)
 - `breast-cancer-related-lymphedema-explained-3d-body-scanning-can-transform-early-detection-monitoring-care-management/` — **BCRL: AI 3D Scanning in Detection & Care** — Jul 8, 2026 — New vertical
@@ -293,8 +319,8 @@ Main Health Hub (ai-body-data-health-hub) — Jul 24, 2026
   │   └── top-trends-and-features-in-fitness-apps (Nov 2023)
   │
   ├── Telehealth
-  │   ├── the-potential-of-ai-in-telehealth (Sep 2024) ← OLD hub — needs refresh
-  │   └── mobile-body-scanning-patient-engagement (Aug 2026) ← P0 Supporting
+  │   ├── the-potential-of-ai-in-telehealth (Aug 7, 2026) ← HUB (refreshed)
+  │   └── mobile-body-scanning-patient-engagement (Aug 14, 2026) ← P0 Supporting
   │
   ├── BCRL / Oncology (NEW)
   │   └── breast-cancer-related-lymphedema (Jul 8, 2026) ← not in plan
@@ -320,10 +346,10 @@ Main Health Hub (ai-body-data-health-hub) — Jul 24, 2026
 
 | Article | Hub | Action |
 |---------|-----|--------|
-| Data, Privacy, Security & Regulatory FAQ | #3 Trust Assets | Create net-new — **MOST OVERDUE** |
+| Data, Privacy, Security & Regulatory FAQ | #3 Trust Assets | Create net-new — **MOST OVERDUE** (only remaining P0 hub gap; draft exists at `workspace/seo/articles/2026-07-14-fitxpress-privacy-security-faq/`) |
 | ~~AI in Fitness hub refresh~~ ✅ | #4 Fitness | **DONE Jul 31, 2026** — `ai-in-fitness-industry/` refreshed & live |
-| AI in Telehealth hub refresh | #5 Telehealth | Refresh old `the-potential-of-ai-in-telehealth/` article |
-| GLP-1 Market 2026 hub refresh | #6 GLP-1 | Refresh old `glp-1-market/` article |
+| ~~AI in Telehealth hub refresh~~ ✅ | #5 Telehealth | **DONE Aug 7, 2026** — `the-potential-of-ai-in-telehealth/` refreshed in place & live |
+| GLP-1 Market 2026 hub refresh | #6 GLP-1 | Refresh old `glp-1-market/` article — draft in progress at `workspace/seo/articles/glp-1-market-hub/` |
 
 ### 🟡 P1 Gaps
 
@@ -349,6 +375,7 @@ Main Health Hub (ai-body-data-health-hub) — Jul 24, 2026
 ### 🟢 Observations
 
 - **Health articles are outnumbering apparel** for the first time (41 vs 73 — but 41 are 2025-2026 articles, while many apparel are 2020-2023 legacy)
-- **3 of 11 hubs still use pre-2025 articles** (Fitness Sep 2024, Telehealth Sep 2024, GLP-1 Oct 2024) — these need the 2026-style hub format with proper structure
+- **1 of 11 hubs still uses a pre-2025 article** (GLP-1, Oct 2024) — Fitness (Jul 31, 2026) and Telehealth (Aug 7, 2026) have both been refreshed into the 2026 hub format. GLP-1 is the last one left; a hub draft is already in progress at `workspace/seo/articles/glp-1-market-hub/`
+- **10 of 11 P0 hubs are live.** The only P0 hub still unpublished is the Data, Privacy, Security & Regulatory FAQ (trust asset #2) — and it is the asset every vertical page is supposed to link to for compliance answers, so it blocks internal-linking completeness across all hubs
 - **Body composition cluster** (10 articles) is mostly TOFU educational — good for SEO but not connected to main hub architecture
 - **Comparison articles** (DEXA, InBody, Fit3D, BIA, Body Scanner Machines) are growing — possible cannibalization risk between them

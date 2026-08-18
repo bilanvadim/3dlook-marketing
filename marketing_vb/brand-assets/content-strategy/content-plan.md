@@ -4,6 +4,21 @@
 > **Rules that govern how to write against this plan:** [`content-strategy-guidelines.md`](./content-strategy-guidelines.md)
 > **Scope:** FitXpress health verticals (fitness, telehealth, GLP-1, insurance, wellness, bariatrics, clinical trials, occupational health). Mobile Tailor is out of scope for this plan.
 > **Last synced from source:** 2026-07-07. If the sheet changes, re-sync this file — it is the offline copy the agents read (they do not fetch Google).
+> **Last reconciled against the live site:** 2026-08-18 (7 health articles verified page-by-page — see `published-articles-inventory.md` → "Live-Page Verification Pass"). Publication status below reflects what is actually live, which can be ahead of the last sheet sync.
+
+## Published P0 hubs (verified live 2026-08-18)
+
+| Hub | Article | Published | Live URL |
+|---|---|---|---|
+| Hub 0 — Main Health | AI Body Data Across Health Programs | 2026-07-24 | https://3dlook.ai/content-hub/ai-body-data-health-hub/ |
+| Hub 0 — Accuracy trust asset | Body Scanning Accuracy: A Framework for Enterprise Decisions | 2026-07-03 | https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/ |
+| Hub 1 — Fitness | AI in Fitness: Structured Body Data, Progress Tracking, Coaching | 2026-07-31 | https://3dlook.ai/content-hub/ai-in-fitness-industry/ |
+| Hub 2 — Telehealth | AI in Telehealth: Workflows, Privacy, Patient Experience, Remote Body Data | 2026-08-07 | https://3dlook.ai/content-hub/the-potential-of-ai-in-telehealth/ |
+| Hub 2 — Patient experience | How Mobile Body Scanning Improves Patient Engagement | 2026-08-14 | https://3dlook.ai/content-hub/mobile-body-scanning-patient-engagement/ |
+| Hub 7 — Clinical Trials | Standardizing Anthropometric Measurements for Hybrid & Decentralized Obesity Trials | 2026-07-17 | https://3dlook.ai/content-hub/clinical-trial-anthropometric-measurement-software-obesity-trials/ |
+| Hub 8 — Occupational Health | Standardizing Occupational Health Screening | 2026-07-10 | https://3dlook.ai/content-hub/occupational-health-screening-software/ |
+
+**Remaining P0 hub gaps:** Data, Privacy, Security & Regulatory FAQ (trust asset #2, not started as a published page) · GLP-1 Market 2026 hub refresh (draft in progress) · Wellness Platforms hub (conditional on wellness apps becoming a priority ICP).
 
 ## How agents use this file
 
@@ -44,17 +59,17 @@ Navigation hub only — gateway to all FitXpress verticals. Do NOT create anothe
 
 | Cluster | Article | Intent | Action | Pri | Notes / guardrail |
 |---|---|---|---|---|---|
-| Main Health hub | AI Body Data for Health, Fitness, Telehealth, Insurance, Occ. Health, Clinical Research | Hub | Create net-new | P0 | Navigation gateway only. Closest: `ai-healthcare-...`, `3dlook-turns-two-photos-structured-body-data`. |
-| Accuracy / buyer evaluation | How to Evaluate AI Body Scanning Accuracy in 2026 | MOFU/BOFU | Net-new evergreen | P0 | **Published:** `mobile-body-scanning-accuracy` (03.06.2026). Keep as evaluation framework ("accurate enough for which decision?"), not a "3DLOOK is accurate" page. Do not duplicate the DEXA article. |
+| Main Health hub | AI Body Data for Health, Fitness, Telehealth, Insurance, Occ. Health, Clinical Research | Hub | ✅ **PUBLISHED 2026-07-24** | P0 | **Live:** [`ai-body-data-health-hub`](https://3dlook.ai/content-hub/ai-body-data-health-hub/) — "AI Body Data Across Health Programs: A Guide to Verified Body Measurement" (updated 07-27). Navigation gateway only. Do not create a second generic AI-in-healthcare article. |
+| Accuracy / buyer evaluation | How to Evaluate AI Body Scanning Accuracy in 2026 | MOFU/BOFU | ✅ **PUBLISHED 2026-07-03** | P0 | **Live:** [`mobile-body-scanning-accuracy`](https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/) — "Body Scanning Accuracy: A Framework for Enterprise Decisions" (updated 07-30). Keep as evaluation framework ("accurate enough for which decision?"), not a "3DLOOK is accurate" page. Do not duplicate the DEXA article. |
 | Data / privacy / regulatory FAQ | Data, Privacy, Security & Regulatory FAQ | Objection / procurement / GEO | Net-new central FAQ | P0 | Canonical trust asset. Use FAQ schema. Link from all vertical hubs. Compliance answers need legal/security/product approval. |
 
 ## Hub 1 — AI in Fitness
 
-Refresh the existing `ai-in-fitness-industry` page into the hub; keep ONE AI-in-fitness hub. Separate fitness app/product strategy from wellness & GLP-1. Send BOFU traffic to FitXpress pages.
+**Hub is live (2026-07-31).** `ai-in-fitness-industry` was refreshed in place. Keep ONE AI-in-fitness hub — do not create a second broad overview. Separate fitness app/product strategy from wellness & GLP-1. Send BOFU traffic to FitXpress pages. P1/P2 cluster articles below are now unblocked.
 
 | Cluster | Article | Intent | Action | Pri | Notes / guardrail |
 |---|---|---|---|---|---|
-| Main hub | AI in Fitness: Body Data, Progress Tracking, Personalization, Digital Coaching | Hub | Refresh / expand | P0 | **Published:** `ai-in-fitness-industry` (31.07.2026) — refreshed & live. No second broad AI-in-fitness page. |
+| Main hub | AI in Fitness: Body Data, Progress Tracking, Personalization, Digital Coaching | Hub | ✅ **PUBLISHED 2026-07-31** | P0 | **Live:** [`ai-in-fitness-industry`](https://3dlook.ai/content-hub/ai-in-fitness-industry/) — refreshed in place from the Sep 2024 version. No second broad AI-in-fitness page. Open item: add the up-link to the Main Health hub (it was not live at publish time). |
 | Digital coaching | Remote Body Measurement for Online Fitness Coaching Programs | MOFU/BOFU | Create net-new | P1 | Targets coaches/platform workflows, not generic apps. BOFU → `/fitxpress/for-connected-and-digital-fitness/`. |
 | Comparison | Smart Scale vs AI Body Scan: What Fitness Apps Should Track | GEO/comparison | Create net-new | P1 | Consider one shared fitness/wellness comparison page vs two near-duplicates. |
 | Privacy/trust | Privacy Considerations for AI Body Scanning in Fitness Apps | Objection | Create net-new | P1 | Practical (consent, image handling, retention), non-legal. |
@@ -68,12 +83,12 @@ Refresh the existing `ai-in-fitness-industry` page into the hub; keep ONE AI-in-
 
 ## Hub 2 — AI in Telehealth
 
-Refresh `the-potential-of-ai-in-telehealth` into the hub. Keep telehealth on remote-care workflows, privacy, documentation, patient experience. **Separate from GLP-1 eligibility and online-pharmacy BMI verification** unless the piece is explicitly the bridge.
+**Hub is live (2026-08-07).** `the-potential-of-ai-in-telehealth` was refreshed in place at the same URL — do not create a second telehealth overview. Keep telehealth on remote-care workflows, privacy, documentation, patient experience. **Separate from GLP-1 eligibility and online-pharmacy BMI verification** unless the piece is explicitly the bridge. P1/P2 cluster articles below are now unblocked; new cluster pieces link up to this hub.
 
 | Cluster | Article | Intent | Action | Pri | Notes / guardrail |
 |---|---|---|---|---|---|
-| Main hub | AI in Telehealth: Workflows, Privacy, Patient Experience, Remote Body Data | Hub | Refresh / expand | P0 | Refresh `the-potential-of-ai-in-telehealth`. No competing page. |
-| Patient experience | How Mobile Body Scanning Improves Patient Engagement | TOFU/MOFU | `draft-v5-revision1.md` — published 2026-08-14 | P0 | **✅ Published** — `mobile-body-scanning-patient-engagement`. Broader than GLP-1; don't cannibalize the GLP-1 visual-progress page. |
+| Main hub | AI in Telehealth: Workflows, Privacy, Patient Experience, Remote Body Data | Hub | ✅ **PUBLISHED 2026-08-07** | P0 | **Live:** [`the-potential-of-ai-in-telehealth`](https://3dlook.ai/content-hub/the-potential-of-ai-in-telehealth/) — refreshed **in place** at the same URL from the Sep 2024 version. No competing page. |
+| Patient experience | How Mobile Body Scanning Improves Patient Engagement | TOFU/MOFU | ✅ **PUBLISHED 2026-08-14** | P0 | **Live:** [`mobile-body-scanning-patient-engagement`](https://3dlook.ai/content-hub/mobile-body-scanning-patient-engagement/). Broader than GLP-1; don't cannibalize the GLP-1 visual-progress page. |
 | BMI verification | What Is Telehealth BMI Verification / How to Verify BMI Remotely in Telehealth 2026 | BOFU | Refresh/expand (not net-new unless distinct) | P0 | **Highest cannibalization risk.** Owner = `online-pharmacy-bmi-verification`. Add a telehealth section there; standalone only if search demand differs. Differentiate on program workflows/provider review, not pharmacy compliance. |
 | Workflow | Remote Body Measurement Workflows for Telehealth Providers | MOFU | Create net-new | P1 | Operational, not trend-led. |
 | GLP-1 bridge | Remote Body Data Tracking for GLP-1 Telehealth Programs | MOFU/BOFU | Create net-new | P1 | Focus longitudinal tracking, not eligibility verification. |
@@ -165,11 +180,11 @@ Wellness Rewards Verification = employer/insurer sub-hub; Beyond BMI = broad edu
 
 ## Hub 7 — Clinical Trials (Hybrid & Decentralized Obesity Trials)
 
-Publish the planned hub. Keep **trial-ops / protocol-workflow focused**. Do NOT blur into telehealth or bariatric care delivery; do NOT imply endpoint validation or replacement of protocol-defined reference methods.
+**Hub is live (2026-07-17).** Keep **trial-ops / protocol-workflow focused**. Do NOT blur into telehealth or bariatric care delivery; do NOT imply endpoint validation or replacement of protocol-defined reference methods. P1 supporting articles below are now unblocked.
 
 | Cluster | Article | Intent | Action | Pri | Notes / guardrail |
 |---|---|---|---|---|---|
-| Main hub | Standardizing Anthropometric Measurements for Hybrid & Decentralized Obesity Trials | BOFU/use case | Publish planned hub | P0 | Covers sponsors/CROs, site variability, coordinator burden, structured records, audit readiness, scope boundaries. |
+| Main hub | Standardizing Anthropometric Measurements for Hybrid & Decentralized Obesity Trials | BOFU/use case | ✅ **PUBLISHED 2026-07-17** | P0 | **Live:** [`clinical-trial-anthropometric-measurement-software-obesity-trials`](https://3dlook.ai/content-hub/clinical-trial-anthropometric-measurement-software-obesity-trials/) (updated 07-27). Covers sponsors/CROs, site variability, coordinator burden, structured records, audit readiness, scope boundaries. |
 | Comparison | Manual Tape Measurements vs Mobile Body Scanning in Clinical Trials | GEO/comparison | Create net-new | P1 | Trial-specific: workflow consistency, coordinator burden, protocol boundaries. |
 | Vendor evaluation | What CROs Should Ask Before Using Remote Body Measurement Tools | BOFU | Create net-new | P1 | Sales-enablement buyer guide. |
 | DCT workflow | Remote Anthropometric Measurement Workflows for DCTs | BOFU | Create net-new | P2 | Major hub section first; standalone only if DCT-workflow demand. |
@@ -185,11 +200,11 @@ Publish the planned hub. Keep **trial-ops / protocol-workflow focused**. Do NOT 
 
 ## Hub 8 — Occupational Health Screening
 
-Publish the planned hub **first** — do NOT create broad occupational-health articles until it is live and indexed. Keep every claim inside the **intake/documentation boundary** — never hiring, clearance, diagnosis, or fitness-for-duty decisioning.
+**Hub is live (2026-07-10)** — the "publish the hub first" block on supporting articles is lifted; the P0/P1 supporting pieces below are unblocked. Keep every claim inside the **intake/documentation boundary** — never hiring, clearance, diagnosis, or fitness-for-duty decisioning.
 
 | Cluster | Article | Intent | Action | Pri | Notes / guardrail |
 |---|---|---|---|---|---|
-| Main hub | Standardizing Occupational Health Screening: Faster Intake, Better Documentation, Fewer Rescreens | BOFU/use case | Publish planned hub | P0 | Owns pre-employment/pre-placement/return-to-work intake, fit-for-duty documentation support, rescreens, multi-site, workforce screening vendors, workers'-comp. |
+| Main hub | Standardizing Occupational Health Screening: Faster Intake, Better Documentation, Fewer Rescreens | BOFU/use case | ✅ **PUBLISHED 2026-07-10** | P0 | **Live:** [`occupational-health-screening-software`](https://3dlook.ai/content-hub/occupational-health-screening-software/) (updated 07-17). Owns pre-employment/pre-placement/return-to-work intake, fit-for-duty documentation support, rescreens, multi-site, workforce screening vendors, workers'-comp. |
 | Comparison | Manual Intake vs Digital Intake in Occupational Health Screening | GEO/comparison | Net-new supporting | P0 | Throughput, missing data, rescreens, multi-site consistency. No medical/clearance claims. |
 | Return-to-work | Return-to-Work Screening Documentation: How Digital Intake Reduces Delays | BOFU/workflow | Net-new supporting | P0 | Distinct buyer (workers'-comp/absence). Not "clears employees for duty." |
 | Workers' comp / absence | Remote Intake for Workers' Compensation and Return-to-Work Documentation | BOFU | Net-new supporting | P1 | Workers'-comp/absence program ops; don't overlap return-to-work article. |
