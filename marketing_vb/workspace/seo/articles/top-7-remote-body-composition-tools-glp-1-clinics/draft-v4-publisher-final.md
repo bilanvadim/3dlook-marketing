@@ -26,7 +26,9 @@ existing_urls:
 cannibalization_guardrail: "Do not duplicate Smart Scale vs AI Body Scan, DEXA vs Mobile Body Scanning, or How to Measure Body Composition. This page should answer 'which tools should GLP-1 clinics evaluate?' not 'what is body composition?'"
 vertical_boundary: "GLP-1 cluster owns medication-supported weight-loss progress tracking, body composition, patient records, clinic workflows, baseline data, and tools for GLP-1 clinics. Do not duplicate GLP-1 market page, Visual Progress Tracking, Beyond BMI, or Online Pharmacy BMI Verification. No diagnostic/treatment/eligibility/underwriting-decision claims; no universal clinician/DEXA/BIA/scale replacement claims; no guaranteed adherence/compliance outcomes; no automatic fraud detection; no medical-device framing; no GLP-1 drug clinical-efficacy claims in our own assertions."
 author: Assel Sekerova
-status: draft
+status: published
+published_date: 2026-08-21
+live_url: https://3dlook.ai/content-hub/top-7-remote-body-composition-tools-glp-1-clinics/
 created: 2026-08-02
 claims_used: [FX-001, FX-002, FX-003, FX-004, FX-005, FX-006, FX-007, FX-008, FX-009]
 ---

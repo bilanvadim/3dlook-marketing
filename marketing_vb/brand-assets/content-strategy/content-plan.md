@@ -109,7 +109,7 @@ Refresh `glp-1-market` as the market hub. **Avoid duplicating** GLP-1 Market, Vi
 | Cluster | Article | Intent | Action | Pri | Notes / guardrail |
 |---|---|---|---|---|---|
 | Main hub | GLP-1 Market Growth and the Need for Better Patient Progress Tracking | Hub | Refresh / expand | P0 | Add progress-tracking, body-comp, telehealth, clinic-workflow sections. |
-| Tools / listicle | Top 7 Remote Body Composition Tools for GLP-1 Clinics | MOFU/BOFU | Net-new listicle | P0 | Answers "which tools should GLP-1 clinics evaluate?" FitXpress = remote structured-data layer, not universal replacement. |
+| Tools / listicle | 7 Body Composition and Progress-Tracking Tools for Remote GLP-1 Clinics | MOFU/BOFU | ✅ **PUBLISHED 2026-08-21** | P0 | **Live:** [`top-7-remote-body-composition-tools-glp-1-clinics`](https://3dlook.ai/content-hub/top-7-remote-body-composition-tools-glp-1-clinics/). Published H1 dropped the "Top 7" ranking framing (slug kept). Answers "which tools should GLP-1 clinics evaluate?" FitXpress = remote structured-data layer, not universal replacement. |
 | Remote monitoring | Remote Body Measurement for GLP-1 Programs: A Workflow for Virtual Clinics | BOFU | Create net-new | P1 | Focus repeated follow-up scans (vs BMI verification). |
 | Documentation | What Body Data Should Be in a GLP-1 Patient Progress Record? | BOFU | Create net-new | P1 | Strong BOFU for clinics/platforms. |
 | Baseline data | How Weight-Loss Clinics Can Standardize Baseline Body Data for GLP-1 Patients | BOFU | Create net-new | P1 | Keep distinct from bariatric pre-qualification. |

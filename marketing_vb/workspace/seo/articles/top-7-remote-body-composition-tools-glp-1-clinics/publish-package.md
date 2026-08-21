@@ -3,19 +3,22 @@ track: seo
 product: fitxpress
 stage: publish
 target_keyword: remote body composition tools for GLP-1 clinics
-status: revision_ready_for_review
+status: published
 revision: v6-revision2
 source_draft: draft-v6-revision2.md
 created: 2026-08-02
-last_updated: 2026-08-06
+last_updated: 2026-08-21
 cms: wordpress
-production_url: null
+production_url: https://3dlook.ai/content-hub/top-7-remote-body-composition-tools-glp-1-clinics/
+published_date: 2026-08-21
 og_image_owner: vadim (canva)
 ---
 
 # Publish Package — top-7-remote-body-composition-tools-glp-1-clinics (Revision 2)
 
-> **This article has not been published.** `status` has stayed `draft` through v1–v5; this package prepares `draft-v6-revision2.md` for Vadim's sign-off and first publish. There is no `production_url` to preserve, so slug and title are proposed here for approval, not locked to a live page.
+> **PUBLISHED 2026-08-21.** This article is live at [https://3dlook.ai/content-hub/top-7-remote-body-composition-tools-glp-1-clinics/](https://3dlook.ai/content-hub/top-7-remote-body-composition-tools-glp-1-clinics/) with the H1 "7 Body Composition and Progress-Tracking Tools for Remote GLP-1 Clinics" and the byline **Asselya Sekerova**. The slug and title below are no longer proposals — they are locked to the live page. Do not re-pitch or rewrite this article; see `FINAL-PUBLISHED.md` in this folder for the authoritative record.
+>
+> _Historical note (pre-publication): `status` stayed `draft` through v1–v5 while this package prepared `draft-v6-revision2.md` for Vadim's sign-off and first publish._
 
 ---
 

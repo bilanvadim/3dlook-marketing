@@ -1,8 +1,8 @@
 # Published Articles Inventory — 3DLOOK Content Hub
 
-> Last updated: 2026-08-18
+> Last updated: 2026-08-21
 > Source: `https://3dlook.ai/post-sitemap.xml` (Yoast SEO — authoritative)
-> Total: **155 published articles**
+> Total: **156 published articles** (155 in the 2026-08-18 sitemap snapshot, +1 published 2026-08-21 and registered by hand before the next sitemap pull)
 > Purpose: single source of truth for what's published, mapped to content plan hubs
 
 ---
@@ -20,6 +20,9 @@ Seven health articles were read on the live site and reconciled against this inv
 | 5 | `clinical-trial-anthropometric-measurement-software-obesity-trials` | Standardizing Anthropometric Measurements for Hybrid and Decentralized Obesity Trials | **2026-07-17** | 2026-07-27 | ~4,000 | `workspace/seo/articles/2026-06-16-clinical-trials-obesity-metabolic-hybrid-dct/` |
 | 6 | `occupational-health-screening-software` | Standardizing Occupational Health Screening: Faster Intake, Better Documentation, Fewer Rescreens | **2026-07-10** | 2026-07-17 | ~4,500 | `workspace/seo/articles/2026-06-08-occupational-health-screening/` |
 | 7 | `mobile-body-scanning-accuracy` | Body Scanning Accuracy: A Framework for Enterprise Decisions | **2026-07-03** | 2026-07-30 | ~4,500 | `workspace/seo/articles/2026-05-29-3dlook-accuracy-enterprise-evaluation/` |
+| 8 | `top-7-remote-body-composition-tools-glp-1-clinics` | 7 Body Composition and Progress-Tracking Tools for Remote GLP-1 Clinics | **2026-08-21** | 2026-08-21 | ~3,060 | `workspace/seo/articles/top-7-remote-body-composition-tools-glp-1-clinics/` |
+
+> **Row 8 added 2026-08-21**, after the 2026-08-18 pass. Verified against the live URL the same day (`article:published_time` 2026-08-21T15:20:32+00:00, modified 15:24:23+00:00). Byline on site: **Asselya Sekerova**. Word count is the draft figure — the live count may differ. Two draft-vs-live deltas: the live H1 dropped the "Top 7" ranking framing that the slug still carries, and the drafts spell the author "Assel Sekerova" while the site reads "Asselya Sekerova".
 
 Each working directory now carries a `FINAL-PUBLISHED.md` marker with the live URL, publication date, final source file, and draft-vs-published notes.
 
@@ -37,11 +40,13 @@ Each working directory now carries a `FINAL-PUBLISHED.md` marker with the live U
 
 | Category | Count |
 |----------|-------|
-| **Health (FitXpress)** | 41 articles |
+| **Health (FitXpress)** | 42 articles |
 | **Apparel / Fashion (Mobile Tailor)** | 73 articles |
 | **Technology / Product** | 20 articles |
 | **Company News** | 21 articles |
-| **Total** | **155** |
+| **Total** | **156** |
+
+> 155 of these come from the authoritative 2026-08-18 `post-sitemap.xml` snapshot; `top-7-remote-body-composition-tools-glp-1-clinics` (published 2026-08-21, Health/FitXpress) was registered by hand and will appear in the next sitemap pull.
 
 ---
 
@@ -54,7 +59,7 @@ Each working directory now carries a `FINAL-PUBLISHED.md` marker with the live U
 | 3 | Data, Privacy, Security & Regulatory FAQ | P0 | ❌ | — | **OVERDUE** |
 | 4 | AI in Fitness | P0 hub + P1/P2 | ✅ Jul 31 | AI in Fitness (refreshed hub), Fitness Tech Companies, AI Body Scanning for Fitness, Connected Fitness, Fitness Apps, Fitness Trends | Hub refreshed & live Jul 31, 2026; P1/P2 clusters pending |
 | 5 | AI in Telehealth | P0 hub + P1/P2 | ✅ Aug 7 | Patient Engagement (Aug 14) | Hub refreshed & live Aug 7, 2026; P1/P2 clusters pending |
-| 6 | GLP-1 Market | P0 hub + P1/P2 | ✅ Old hub exists | Pharmacy BMI, GLP-1 Compliance, Visual Progress, Weight Loss Industry, Weight Loss Clinic Tips, Body Scanning for Weight Loss, Beyond BMI | Needs 2026 hub refresh |
+| 6 | GLP-1 Market | P0 hub + P1/P2 | ✅ Old hub exists | Pharmacy BMI, GLP-1 Compliance, Visual Progress, Weight Loss Industry, Weight Loss Clinic Tips, Body Scanning for Weight Loss, Beyond BMI, Body Composition Tools listicle (Aug 21) | Needs 2026 hub refresh |
 | 7 | Insurance Underwriting | P0 | ✅ Jun 17 | — | None |
 | 8 | Wellness Platforms | P0 | ✅ Mar 30 | — | P1 articles not published |
 | 9 | Bariatric | P0 | ✅ Jun 5 | — | None |
@@ -309,7 +314,8 @@ Main Health Hub (ai-body-data-health-hub) — Jul 24, 2026
   │   ├── weight-loss-industry-overview (Dec 2024)
   │   ├── body-scanning-technology-for-weight-loss
   │   ├── beyond-bmi-business (Jul 2025)
-  │   └── top-10-weight-loss-clinic-marketing-tips (Dec 2024)
+  │   ├── top-10-weight-loss-clinic-marketing-tips (Dec 2024)
+  │   └── top-7-remote-body-composition-tools-glp-1-clinics — **7 Body Composition and Progress-Tracking Tools for Remote GLP-1 Clinics** — Aug 21, 2026 — P0 Supporting
   │
   ├── Fitness
   │   ├── ai-in-fitness-industry (Jul 31, 2026) ← HUB (refreshed)
@@ -356,7 +362,7 @@ Main Health Hub (ai-body-data-health-hub) — Jul 24, 2026
 | Priority | Article | Hub |
 |----------|---------|-----|
 | P1 | What Is Telehealth BMI Verification in 2026 | #5 Telehealth |
-| P1 | Top 7 Remote Body Composition Tools for GLP-1 Clinics | #6 GLP-1 |
+| ~~P1~~ ✅ | ~~Top 7 Remote Body Composition Tools for GLP-1 Clinics~~ | #6 GLP-1 — **DONE Aug 21, 2026** — published as "7 Body Composition and Progress-Tracking Tools for Remote GLP-1 Clinics" at [`top-7-remote-body-composition-tools-glp-1-clinics`](https://3dlook.ai/content-hub/top-7-remote-body-composition-tools-glp-1-clinics/) |
 | P1 | Top Mobile Body Scanning Software for Wellness Apps | #8 Wellness |
 | P1 | Adding Remote Body Measurement to a DCT Platform | #10 Clinical Trials |
 | P1 | Remote BMI Pre-Checks in Obesity Trial Recruitment | #10 Clinical Trials |
