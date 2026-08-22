@@ -1,0 +1,96 @@
+{
+  "article": {
+    "slug": "top-7-remote-body-composition-tools-glp-1-clinics",
+    "title": "7 Body Composition and Progress-Tracking Tools for Remote GLP-1 Clinics",
+    "product": "fitxpress",
+    "source_file": "workspace/seo/articles/top-7-remote-body-composition-tools-glp-1-clinics/publish-package.md",
+    "source_status": "draft",
+    "published_url": "",
+    "date": "2026-08-21"
+  },
+  "profiles": [
+    {
+      "profile_id": "twitter-company",
+      "platform": "twitter",
+      "handle": "@3DLOOK",
+      "post_file": "twitter-company/post.md",
+      "status": "ready",
+      "format": "text + photo",
+      "character_count_body": 221
+    },
+    {
+      "profile_id": "instagram-company",
+      "platform": "instagram",
+      "handle": "@3dlook.ai",
+      "post_file": "instagram-company/post.md",
+      "status": "ready",
+      "format": "carousel",
+      "word_count_body": 158
+    },
+    {
+      "profile_id": "facebook-company",
+      "platform": "facebook",
+      "handle": "3DLOOK",
+      "post_file": "facebook-company/post.md",
+      "status": "ready",
+      "format": "infographic",
+      "word_count_body": 209
+    },
+    {
+      "profile_id": "linkedin-company",
+      "platform": "linkedin",
+      "handle": "3DLOOK",
+      "post_file": "linkedin-company/post.md",
+      "status": "ready",
+      "format": "text + photo",
+      "word_count_body": 225
+    },
+    {
+      "profile_id": "linkedin-katerina",
+      "platform": "linkedin",
+      "handle": "Katerina Galich",
+      "post_file": "linkedin-katerina/post.md",
+      "status": "ready",
+      "format": "text",
+      "word_count_body": 237
+    },
+    {
+      "profile_id": "linkedin-vadim",
+      "platform": "linkedin",
+      "handle": "Vadim Bilan",
+      "post_file": "linkedin-vadim/post.md",
+      "status": "ready",
+      "format": "text + photo",
+      "word_count_body": 244
+    },
+    {
+      "profile_id": "linkedin-nick",
+      "platform": "linkedin",
+      "handle": "Nick Omelchak",
+      "post_file": "linkedin-nick/post.md",
+      "status": "ready",
+      "format": "text + photo",
+      "word_count_body": 254
+    },
+    {
+      "profile_id": "linkedin-olena",
+      "platform": "linkedin",
+      "handle": "Olena Kudryavtseva",
+      "post_file": "linkedin-olena/post.md",
+      "status": "ready",
+      "format": "text + photo",
+      "word_count_body": 281
+    },
+    {
+      "profile_id": "linkedin-katya",
+      "platform": "linkedin",
+      "handle": "Kateryna Boichuk",
+      "post_file": "linkedin-katya/post.md",
+      "status": "ready",
+      "format": "text + photo",
+      "word_count_body": 251
+    }
+  ],
+  "profiles_skipped": [],
+  "ready_for_review": true
+}
