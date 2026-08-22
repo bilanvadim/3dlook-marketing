@@ -6,7 +6,4 @@ Description=Hermes conductor-guard — kills rogue conductor.ts squatting :3001 
 Type=oneshot
 Environment=XDG_RUNTIME_DIR=/run/user/1006
 Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1006/bus
-# Path corrected 2026-08-22: ~/.hermes/conductor-guard/ does not exist and never did,
-# so installing this unit from the repo gave a guard that failed on every fire with
-# 'No such file or directory'. The script lives in the repo's ops/ tree.
 ExecStart=/usr/bin/bash /home/vadim_prod/3dlook-marketing/hermes_agent/ops/conductor-guard/hermes-conductor-guard.sh

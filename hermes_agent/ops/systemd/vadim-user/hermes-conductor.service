@@ -1,0 +1,32 @@
+[Unit]
+Description=Hermes Orchestrator Conductor (Vadim, --user) — autonomous worker (Claude Agent SDK → SQLite/libSQL ho_*)
+# systemd --user instance for vadim_prod. Deliberately NOT the system unit
+# /etc/systemd/system/hermes-conductor.service (that one belongs to sergiy_prod).
+After=default.target
+
+[Service]
+Type=simple
+# HOME is provided by the user manager (=/home/vadim_prod). PATH must include
+# ~/.local/bin so the bundled `claude` CLI (Agent SDK) is found.
+Environment=PATH=/home/vadim_prod/.local/bin:/usr/local/bin:/usr/bin:/bin
+Environment=HERMES_REPO_ROOT=/home/vadim_prod/3dlook-marketing
+# conductor/.env holds the ANTHROPIC auth choice, DATABASE_URL and the Telegram
+# escalation creds.
+#
+# DATABASE_URL there is ABSOLUTE, and must stay that way (fixed 2026-08-22). It read
+# file:./ho.db, and systemd resolves a relative value against WorkingDirectory —
+# which 10-deployment-paths.conf moves to the /srv runtime tree. So the worker would
+# have opened that tree's 0-byte ho.db while conductor-monitor.sh and the gateway
+# both read ~/.hermes/ho.db: a conductor polling an empty queue forever, with no
+# error anywhere. 10-deployment-paths.conf does carry the correct absolute value in
+# Environment=, but that loses — systemd.exec(5) has EnvironmentFile= override
+# Environment=, and this is the EnvironmentFile.
+EnvironmentFile=-/home/vadim_prod/3dlook-marketing/claude_code/DEV/full_stack_sm/conductor/.env
+WorkingDirectory=/home/vadim_prod/3dlook-marketing/claude_code/DEV/full_stack_sm/conductor
+ExecStart=/home/vadim_prod/3dlook-marketing/hermes_agent/ops/conductor-run.sh
+Restart=always
+RestartSec=5
+# Cost is not capped by design; the only runaway control is the in-process breaker.
+
+[Install]
+WantedBy=default.target
