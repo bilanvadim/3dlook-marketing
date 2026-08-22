@@ -37,3 +37,16 @@ hermes_agent/ops/systemd/generated/
 
 # rebuilt release kits (the checked-in zip is the reference one)
 dist/
+
+# editor/ops backups. Every script in this system writes one before touching a
+# file (`.bak-<what>-<date>`, `.bak.<what>`, plain `.bak`), so they accumulate as
+# untracked noise — and git already holds the previous version of anything tracked.
+#
+# This is also a secrets rule, not just tidiness. `**/.env` above does NOT match
+# `.env.bak-dburl-20260822`: on 2026-08-22 a backup of the conductor's .env sat
+# untracked next to it, carrying the Telegram bot token, and `git add -A` would
+# have published it. The ignored ORIGINAL having a rule is worthless if its copy
+# does not.
+**/*.bak
+**/*.bak-*
+**/*.bak.*
