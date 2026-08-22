@@ -24,6 +24,7 @@ fails. Edit one side and copy it across in the SAME sitting — two copies of an
 script drifting apart is exactly what let MISSING_ANCHOR adapter.py:inline-query fire
 for five mornings (2026-08-13…17) while the fix sat in a tree nothing invoked.
 """
+import hashlib
 import os
 import re
 import shutil
@@ -98,8 +99,49 @@ def gateway_active():
     return r.stdout.strip()
 
 
+def gateway_started_at():
+    """systemd's monotonic start stamp for the gateway ('' if unavailable).
+
+    Used to tell whether `hermes update` restarted the gateway on its own during
+    this run. Monotonic (not wall-clock) so a clock step cannot fake a restart;
+    only comparable within one boot, which is all this needs."""
+    r = subprocess.run(["systemctl", "--user", "show", "-p",
+                        "ActiveEnterTimestampMonotonic", "--value",
+                        "hermes-gateway.service"],
+                       capture_output=True, text=True, env=_ENV)
+    return r.stdout.strip()
+
+
+# Every file the post-update steps below may rewrite. Hashed before and after them
+# so the restart decision rests on what changed on disk, not on parsing each
+# patcher's prose (their vocabulary is already three words wide: already /
+# patched / refreshed, and a new one would read as "nothing changed").
+_AGENT = f"{HOME}/.hermes/hermes-agent"
+_PATCHED_FILES = (
+    f"{_AGENT}/tools/file_tools.py",                        # file-tool guard
+    f"{_AGENT}/gateway/run.py",                             # switcher + vision-switch
+    f"{_AGENT}/hermes_cli/commands.py",                     # switcher
+    f"{_AGENT}/plugins/platforms/telegram/adapter.py",      # switcher
+    f"{_AGENT}/gateway/claude_switcher.py",                 # switcher (copied module)
+    f"{_AGENT}/gateway/vision_switch.py",                   # vision-switch (copied module)
+    LIVE_SOUL,                                              # persona restore
+)
+
+
+def _fingerprint():
+    h = hashlib.sha256()
+    for path in _PATCHED_FILES:
+        try:
+            with open(path, "rb") as f:
+                h.update(hashlib.sha256(f.read()).digest())
+        except OSError:
+            h.update(b"\0" * 32)      # absent counts as a state, and a stable one
+    return h.hexdigest()
+
+
 def main():
     old = version()
+    started_before = gateway_started_at()
     log(f"start; current={old}")
 
     r = subprocess.run([HERMES, "update", "-y", "--backup"],
@@ -112,6 +154,11 @@ def main():
                     f"Версия осталась {old}. Бэкап на месте (rollback возможен).\n"
                     f"<code>{tail[-300:]}</code>")
         return 1
+
+    # Taken here, not earlier: `hermes update` rewrites these files itself (pull +
+    # autostash restore), so a pre-update fingerprint would always differ and the
+    # restart below would never be skipped.
+    fp_before = _fingerprint()
 
     # Guard against persona drift: restore the orchestrator SOUL.md if update reset it.
     #
@@ -271,8 +318,39 @@ def main():
     except Exception as e:
         log(f"vision-switch re-apply failed: {e}")
 
-    restarted = rl.restart_gateway()
+    # Restart only when it would actually change what the gateway runs.
+    #
+    # `hermes update` restarts the gateway itself, and it autostash-restores the
+    # vendored patches BEFORE doing so — so the steps above are normally a pure
+    # verification pass in which all three patchers answer "already". The
+    # unconditional restart that used to sit on this line therefore fired a SECOND
+    # time every morning for nothing. Measured in ~/.hermes/gateway-starts.log:
+    # two starts seconds apart on 08-15, 16, 17, 18, 19, 21 and 22 (e.g. 06:02:14
+    # then 06:02:22) — the first from the CLI (exit 75 + RestartForceExitStatus=75),
+    # the second the SIGTERM from here.
+    #
+    # It is a condition and not a deletion because three cases still need it:
+    #   * a patcher really rewrote something — the gateway the CLI started came up
+    #     before that write and is running without it;
+    #   * the gateway is not up, so there is no live session to protect;
+    #   * `hermes update` did not restart it at all (start stamp unchanged), which
+    #     is the "already latest" path — then this is the only restart there is.
+    #
+    # Same rule model-router already follows: a no-op must not kill a live session.
+    patched = _fingerprint() != fp_before
+    cli_restarted = bool(started_before) and gateway_started_at() != started_before
     st = gateway_active()
+    if patched or st != "active" or not cli_restarted:
+        why = ("vendored patches changed" if patched
+               else f"gateway is {st or 'unknown'}" if st != "active"
+               else "`hermes update` did not restart it")
+        restarted = rl.restart_gateway()
+        st = gateway_active()
+        log(f"gateway restart: {why} -> restarted={restarted}")
+    else:
+        restarted = None
+        log("gateway restart SKIPPED: `hermes update` already restarted it and no "
+            "vendored patch changed (this used to be a redundant second restart)")
     new = version()
     log(f"restarted={restarted} gateway={st} old={old} new={new}")
 
@@ -282,7 +360,17 @@ def main():
         return 1
 
     if new != old:
-        rl.telegram(f"🆕 <b>Hermes обновлён за ночь</b>\n{old} → <b>{new}</b>\nGateway перезапущен ✅")
+        # Three states, not two: `restarted is None` means this script deliberately
+        # skipped its restart because the CLI had already done one. Reporting that as
+        # "перезапущен ✅" would be true but misleading, and folding it together with
+        # restarted=False would claim a success that did not happen.
+        if restarted is None:
+            gw = "перезапущен самим <code>hermes update</code> ✅"
+        elif restarted:
+            gw = "перезапущен ✅"
+        else:
+            gw = "перезапустить НЕ удалось ⚠️ — см. journalctl"
+        rl.telegram(f"🆕 <b>Hermes обновлён за ночь</b>\n{old} → <b>{new}</b>\nGateway {gw}")
         log("notified: updated")
     else:
         log("no version change (already latest) — silent")
