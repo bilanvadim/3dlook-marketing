@@ -89,6 +89,33 @@ tab runs it as a turn (`_run_turn`); a job tab feeds it to the conductor
 (`_handle_conductor_turn`). Payload held one-shot in `_PENDING_FWD`; the runner
 is recovered via `adapter._message_handler.__self__`.
 
+## Attachments (2026-08-21)
+A forwarded screenshot used to reach the destination topic as a *path in a text
+line*, and nothing else. Three separate holes, all fixed here:
+
+- **The path died.** Telegram downloads land in `~/.hermes/cache/images`, which
+  the gateway sweeps after 24 h (`cleanup_image_cache`). A parked client task or
+  a next-day follow-up pointed at a file that no longer existed → «не вижу
+  картинку». `_keep_media()` now hardlinks every attachment into
+  `~/.hermes/csw-media/<chat>#<topic>/` *before* any path is written into a
+  prompt, a task, or the memory below. 80 files per topic, newest kept.
+- **The picture never arrived.** The forward lands in the ephemeral "Nouvel
+  Échange" topic, which the router deletes seconds later — so the image was gone
+  from Telegram entirely. `_post_media_to_topic()` re-sends the attachments INTO
+  the destination topic (same `message_thread_id` + reply-anchor placement as
+  `_post_to_topic`; a photo Telegram refuses to process is sent as a file).
+- **Later turns were blind.** The routed content goes to a *separate* analyst
+  process and a bot message; the topic's own Claude session never saw the pixels,
+  so «изучи скриншоты» got «до меня дошло только твоё сообщение». Per-topic
+  attachment memory (`~/.hermes/csw-topic-media.json`, 12 newest, 30 d) plus
+  `media_recall_hint()` appends the paths to a turn that ASKS about pictures and
+  carries none — Claude turns, conductor turns, and (via
+  `augment_inbound_for_hermes`, a second run.py insert) Hermes turns too, where
+  the hint names `vision_analyze`.
+
+Also: `split_client_requests` no longer dumps every image on task #1 — a task
+that names a file gets that file, one that names none gets the whole batch.
+
 ## State
 `~/.hermes/claude-switcher-state.json`, per tab key:
 `{claude: bool, cwd: path, sids: {sub: sid}, jobs: {profile: jid}, bar: bool}`.

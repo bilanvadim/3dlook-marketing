@@ -39,7 +39,19 @@ Create posts for all active profiles based on article $1.
    Pass: agent_name=post-drafter, track=social, artifact_type=post.
    ```
 
-5. **After all profiles** — confirm that `workspace/social/articles/$1/manifest.json` is updated with `ready_for_review: true` and QC scores.
+5. **After all profiles** — finalise `workspace/social/articles/$1/manifest.json`.
+
+   **The schema is not defined here.** It is defined once, in the "Manifest — КАНОНІЧНА СХЕМА"
+   section of the `social-publisher` agent. Read it and conform to it — do not infer the shape
+   from a neighbouring article's manifest. This step used to say only "confirm it is updated
+   with `ready_for_review: true` and QC scores", which defined nothing, so each run copied
+   whatever a nearby file happened to look like while `post-drafter` and `social-publisher`
+   wrote a different, older shape. That is how the 2026-08-21 run ended up with a manifest in
+   the obsolete `drafts:` form listing 3 profiles while 9 posts sat on disk.
+
+   Concretely: every active profile present in `profiles` with the required fields, anything
+   skipped in `profiles_skipped` with a reason, QC scores where QC actually ran, and
+   `ready_for_review: true` **only** once every active profile is `status: ready`.
 
 6. **Assemble the review digest** — read all finished `post.md` files and write to `workspace/social/articles/$1/review-digest.md`:
 

@@ -9,6 +9,8 @@ metadata:
   hermes:
     tags: [Orchestration, Routing, Claude, OpenCode, Conductor, Fullstack, Git, Vercel, Policy]
     related_skills: [claude-code, opencode, github, llm-wiki, kanban-orchestrator]
+  references:
+    - references/conductor-ops.md — verified: start vadim's conductor worker via run-script (no live systemd unit), ho.db schema (ho_jobs PK=id not job_id), marketing jobs leave ho_steps empty by design, finish a deferred marketing job on OpenCode
 ---
 
 # VPS Orchestration Policy — стек Вадима
@@ -49,6 +51,17 @@ These rules are mandatory and mechanical — follow them exactly, do not improvi
   ⚠️ Nothing executes unless the **conductor worker is running** (`npm start`
   or its Docker container). If `ho_project_status` never advances, the worker
   is down — surface that to Вадим; never fake progress.
+  ⚠️ **Вадим's worker has NO live `hermes-conductor.service` unit** — the file is
+  `hermes-conductor.service.KEEP-vadim` (guard suffix systemd ignores), so
+  `systemctl --user start hermes-conductor` fails "Unit not found". Start it via
+  the run script directly (see `references/conductor-ops.md` → §1). The live
+  `hermes-conductor.service` belongs to Сергей's tree — do NOT touch.
+  ⚠️ **`ho.db` schema trap:** `ho_jobs` PK is **`id`**, NOT `job_id` (queries in
+  `ho_project_status`/`ho_steps`/`ho_questions` use `job_id`). And **marketing-
+  profile jobs leave `ho_steps` EMPTY by design** (conductor runs them via
+  slash-commands, not step rows) — empty steps ≠ stall for `marketing_vb*`.
+  Correct monitor queries + the worker-start recipe are in
+  `references/conductor-ops.md`.
 - **Second Brain** — your Obsidian wiki at `$WIKI_PATH` (git-synced, use the
   `llm-wiki` / `obsidian` skills).
 - **Projects** — git repos under `/home/vadim_prod`, origin on
@@ -532,6 +545,11 @@ Agent SDK. Your job is to seed a well-formed job, then relay + report.
      down — скажи Вадиму, don't wait silently.
 
 - **Monitor (read-only SQL, $0)** — one read drives a Telegram status update:
+  ⚠️ Correct schema (see `references/conductor-ops.md` for full recipes):
+  `ho_jobs` key is **`id`** (`WHERE id=<n>`), NOT `job_id`; `ho_project_status`/
+  `ho_steps`/`ho_questions` use `job_id`. Marketing-profile jobs have **empty
+  `ho_steps` by design** — judge them by `ho_jobs.status` + disk artifacts, not
+  by step rows.
   ```
   sqlite3 ~/.hermes/ho.db \
     "SELECT job_id,job_status,percent,done_steps,total_steps,open_questions,open_escalations \
@@ -544,7 +562,14 @@ Agent SDK. Your job is to seed a well-formed job, then relay + report.
   ```
 - **Status report format to Telegram:**
   `▶ <title>: шаг done_steps/total_steps, percent%, статус <job_status>`.
-- `job_status='deferred'` → report "ждёт лимиты, авто-возобновится" (do nothing).
+- `job_status='deferred'` → "ждёт лимиты, авто-возобновится". **But** a *partially
+  done marketing/content job can be **finished on OpenCode** if Вадим says so
+  ("переключи") — e.g. a `posts <slug>` job that wrote 6/9 profiles then deferred
+  on Claude's limit. OpenCode completes only the missing artifacts (existing
+  `post.md` files = templates) into the same folder + updates `manifest.json`,
+  then `mvb-run.py digest <slug>`. Recipe + pre-checks in
+  `references/conductor-ops.md` → §3. This is an explicit user override, not
+  autonomous.
 - `blocked` / `needs_review` / `open_escalations>0` → this needs a human
   decision; relay it (escalation section below).
 

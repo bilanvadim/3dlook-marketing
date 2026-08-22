@@ -44,6 +44,14 @@ USAGE
     mvb-run.py digest   <slug>             # the finished posts, ready to forward into Telegram
     mvb-run.py status [job_id]             # job status + open questions/escalations
 Exit codes: 0 = enqueued or informational · 2 = refused (reason on stdout) · 3 = broken setup.
+
+`posts` FANS OUT: one job per active social profile (9 today), not one job for all of
+them. Job #90 proved why — the whole batch in one run was 206 turns and it drained the
+Claude window the conductor SHARES with Vadim's interactive sessions. Splitting does not
+spend less quota; it changes what a limit costs you, from a half-finished 200-turn run to
+"the profiles not started yet". Re-running `posts <slug>` queues only the profiles still
+missing. Env: MVB_FANOUT=0 for the old single job, MVB_DRY_RUN=1 to see the jobs without
+creating them (the conductor is always polling — an insert IS a live run).
 """
 
 from __future__ import annotations
@@ -57,6 +65,14 @@ HO_DB = os.environ.get("HO_DB") or os.path.expanduser("~/.hermes/ho.db")
 SWITCHER = os.environ.get("MVB_SWITCHER") or os.path.expanduser(
     "~/3dlook-marketing/hermes_agent/ops/claude-switcher/claude_switcher.py")
 MAX_TURNS = int(os.environ.get("MVB_MAX_TURNS", "300"))
+# MVB_FANOUT=0 forces the old one-big-job behaviour for a route that supports splitting.
+# Kept as an escape hatch, not a tuning knob: if the fan-out ever misreads the profile
+# list, this is how you start the pipeline anyway without editing code.
+FANOUT = os.environ.get("MVB_FANOUT", "1") != "0"
+# MVB_DRY_RUN=1 prints the jobs that WOULD be created and writes nothing. The conductor
+# polls continuously, so an experimental insert is not a dry test — it is a live
+# autonomous run against Vadim's Claude quota. This is how you check a fan-out first.
+DRY_RUN = os.environ.get("MVB_DRY_RUN", "") not in ("", "0")
 CMD_TO_ROUTE = {"article": "mvb:article", "posts": "mvb:posts",
                 "outbound": "mvb:outbound", "campaign": "mvb:campaign"}
 TERMINAL = ("done", "failed", "aborted", "escalated")
@@ -105,10 +121,30 @@ def cmd_enqueue(m, route: str, arg: str) -> int:
     if not os.path.isdir(work_dir):
         print(f"⚠️ каталог системы не найден: {work_dir} — проверь runFrom в манифесте профиля")
         return 3
+
+    # A route may declare `fanout` — then the pipeline is enqueued as several small
+    # jobs instead of one big one (currently only social posts: one job per profile).
+    # See the comment above _fanout_posts in claude_switcher.py for why. The list and
+    # the prompts come from there, not from here, so this script and the Telegram
+    # buttons still cannot drift.
+    fan = r.get("fanout") if FANOUT else None
+    if fan:
+        jobs, note, err = fan(arg)
+        if err:
+            print(err)
+            return 2
+        if jobs:
+            return _enqueue_many(r, work_dir, jobs, note)
+        print("ℹ️ не удалось прочитать список профилей — ставлю одной job'ой.")
+
     prompt, title, note, err = r["prepare"](arg)
     if err:
         print(err)                                  # already human-readable, Telegram-ready
         return 2
+    if DRY_RUN:
+        print(f"[dry-run] 1 job · {r['label']} · profile={r['profile']} · max_turns={MAX_TURNS}")
+        print(f"📝 {title}")
+        return 0
     conn = db()
     with conn:
         dup = live_duplicate(conn, title[:200])
@@ -127,6 +163,61 @@ def cmd_enqueue(m, route: str, arg: str) -> int:
     if note:
         print(f"ℹ️ {note}")
     print("Вопросы и эскалации придут в Telegram; результат — тоже. "
+          "ho_steps не создавались (и не надо).")
+    return 0
+
+
+def _enqueue_many(r, work_dir: str, jobs, note) -> int:
+    """Insert one row per (prompt, title). Duplicates are skipped INDIVIDUALLY.
+
+    Per-title rather than per-pipeline, because that is what makes a re-run useful:
+    if 6 of 9 profiles finished before the usage window closed, running `posts <slug>`
+    again queues exactly the 3 that are missing instead of refusing the whole batch.
+    Titles carry the profile (`Social posts: <slug> · <profile>`), so the existing
+    live_duplicate() check does that for free.
+
+    All rows go in ONE transaction: a partially-enqueued fan-out is worse than none —
+    the self-electing assembly step (see post-one-profile.md step 5) would see a short
+    active list and write a digest that looks complete."""
+    if DRY_RUN:
+        print(f"[dry-run] {len(jobs)} job(s) · {r['label']} · profile={r['profile']} "
+              f"· max_turns={MAX_TURNS}")
+        print(f"📂 {work_dir}")
+        for _p, t in jobs:
+            print(f"  📝 {t}")
+        if note:
+            print(f"ℹ️ {note}")
+        return 0
+    made, skipped = [], []
+    conn = db()
+    with conn:
+        for prompt, title in jobs:
+            t = title[:200]
+            dup = live_duplicate(conn, t)
+            if dup:
+                skipped.append(f"#{dup['id']} {dup['status']}")
+                continue
+            cur = conn.execute(
+                "insert into ho_jobs(kind,title,prompt,profile,work_dir,max_turns) "
+                "values('feature',?,?,?,?,?)",
+                (t, prompt, r["profile"], work_dir, MAX_TURNS))
+            made.append((cur.lastrowid, t))
+    if not made:
+        print(f"ℹ️ уже запущено: все {len(skipped)} профилей в работе "
+              f"({', '.join(skipped)}). Второй раз не ставлю.")
+        return 2
+    print(f"🚀 {len(made)} job'ов · {r['label']} · profile={r['profile']} "
+          f"· max_turns={MAX_TURNS} каждая")
+    print(f"📂 {work_dir}")
+    for jid, t in made:
+        print(f"  #{jid} · {t}")
+    if skipped:
+        print(f"ℹ️ пропущено (уже в работе): {', '.join(skipped)}")
+    if note:
+        print(f"ℹ️ {note}")
+    print("Профили идут по одному, отдельными прогонами — окно Claude не выжигается "
+          "одним большим раном. Дайджест собирает тот профиль, который закончит "
+          "последним. Вопросы и эскалации придут в Telegram; результат — тоже. "
           "ho_steps не создавались (и не надо).")
     return 0
 

@@ -441,6 +441,90 @@ def _prep_posts(task: str) -> Tuple[Optional[str], Optional[str], Optional[str],
         f"Social posts: {slug}", note, None)
 
 
+# --- social fan-out ---------------------------------------------------------
+# One job per profile instead of one job for all nine.
+#
+# WHY: job #90 (2026-08-21) was the whole batch in a single run — 206 turns, 29
+# minutes — and it drained the Claude usage window. The conductor authenticates with
+# the ambient Claude Code OAuth credentials (subscriptionType=team), i.e. the SAME
+# window Vadim's interactive sessions use, so that one run locked him out too. Every
+# resume after it managed 2 turns before hitting the wall again; the backoff ladder
+# waited correctly (64s → 315 → 948 → 2071 → 2157) but that is ~1.5h, so the last 3
+# posts were finished by a fallback coder instead.
+#
+# What splitting does and does NOT do: total turns for nine posts are roughly
+# unchanged, so this does not reduce quota spend. What it changes is failure shape —
+# each job ends and BANKS its post, so an exhausted window costs only the profiles
+# not yet started, never a half-finished 200-turn session. Plus one visible
+# checkpoint per profile instead of one opaque run.
+#
+# Ordering is deliberately NOT expressed through ho_jobs.priority. claimJob selects
+# `status in ('queued','deferred') and not_before <= now order by priority`, so a
+# profile job that rate-limits into 'deferred' with a future not_before is skipped —
+# and a lower-priority "assemble" job would then be claimed BEFORE the profiles it
+# depends on. Since a rate limit is exactly the case being designed for, the assembly
+# is instead self-electing: every job checks whether all active profiles now have a
+# post.md and only the one that finds them all writes the digest. See step 5 of
+# .claude/commands/post-one-profile.md. Safe with one worker, which is what runs.
+_MVB_SOCIAL_CFG = os.path.join("brand-assets", "social-profiles-config.md")
+
+
+def _mvb_social_profiles() -> List[str]:
+    """Active social profile ids, in config order (`posts_per_week > 0`).
+
+    Parsed from the same file post-drafter reads, so enabling/disabling a profile
+    stays a one-file edit for Vadim and the fan-out follows automatically. Returns
+    [] on any parse/read problem — callers fall back to the single-job path rather
+    than enqueueing a guess."""
+    try:
+        with open(os.path.join(_mvb_dir(), _MVB_SOCIAL_CFG), encoding="utf-8",
+                  errors="replace") as f:
+            text = f.read()
+    except OSError:
+        return []
+    out: List[str] = []
+    for block in re.findall(r"```yaml\n(.*?)```", text, re.S):
+        pid = re.search(r"^profile_id:\s*(\S+)", block, re.M)
+        ppw = re.search(r"^posts_per_week:\s*(\d+)", block, re.M)
+        if pid and ppw and int(ppw.group(1)) > 0:
+            out.append(pid.group(1).strip().strip('"\''))
+    return out
+
+
+def _fanout_posts(task: str) -> Tuple[Optional[List[Tuple[str, str]]], Optional[str], Optional[str]]:
+    """([(prompt, title), …], note, error) — the social pipeline as one job per profile.
+
+    Preconditions are the SAME ones _prep_posts checks (slug present, article dir
+    readable), reused rather than re-implemented so the two paths cannot disagree
+    about what counts as runnable. If the profile list cannot be read we return no
+    jobs and no error, which tells the caller to fall back to _prep_posts — a
+    degraded single job beats refusing to start the pipeline."""
+    prompt, title, note, err = _prep_posts(task)
+    if err:
+        return None, None, err
+    slug = _mvb_slug(task)
+    src, _n, _e = _mvb_article_source(slug)
+    profiles = _mvb_social_profiles()
+    if not profiles:
+        return None, note, None            # caller falls back to the single job
+    jobs: List[Tuple[str, str]] = []
+    for prof in profiles:
+        jobs.append((
+            _mvb_brief(f"/post-one-profile {slug} {prof}",
+                       ".claude/commands/post-one-profile.md",
+                       f"Slug: {slug}\nПрофиль: {prof}\nИсточник: {src}\n"
+                       "Пиши ТОЛЬКО этот профиль — остальные идут отдельными job'ами, "
+                       "не трогай их. Для linkedin-* обязательно читай нужную секцию "
+                       "`brand-assets/linkedin-post-prompts.md`. Факты — только из "
+                       "файла-источника. Хештегов нет, эмодзи 1-2. "
+                       "review-digest.md и manifest.json пиши ТОЛЬКО если этот "
+                       "профиль оказался последним (шаг 5 команды). "
+                       "visual-brief здесь НЕ запускай.\n"),
+            f"Social posts: {slug} · {prof}",
+        ))
+    return jobs, note, None
+
+
 def _prep_outbound(task: str) -> Tuple[Optional[str], Optional[str], Optional[str], Optional[str]]:
     t = (task or "").strip()
     if not t:
@@ -480,6 +564,10 @@ MVB_ROUTES: Dict[str, Dict[str, Any]] = {
     },
     "mvb:posts": {
         "label": "📱 Пости зі статті", "profile": _MVB_PROFILE, "prepare": _prep_posts,
+        # `fanout` is optional per route and only this one has it: it returns a LIST of
+        # (prompt, title) so the caller enqueues one job per profile. Callers that do not
+        # know the key keep working — they just use `prepare` and get the old single job.
+        "fanout": _fanout_posts,
         "example": "Пости mobile-body-scanning-patient-engagement",
     },
     "mvb:outbound": {
@@ -3480,9 +3568,15 @@ def _live_adapters(runner: Any):
 async def _run_turn(runner: Any, event: Any, source: Any, key: str,
                     message_text: str, session_key: str) -> None:
     prompt = message_text or ""
-    imgs = _extract_image_paths(event)
+    imgs = _keep_media(key, _extract_image_paths(event))
     if imgs:
         prompt += "\n\n[Приложенные изображения (прочитай файлы): " + ", ".join(imgs) + "]"
+        topic_media_remember(key, imgs)
+    else:
+        # Nothing attached to THIS message: if it asks about a picture, point at
+        # the ones this topic already received (a forward routed here, or an
+        # earlier photo). Claude resumes the session but never saw the pixels.
+        prompt += media_recall_hint(key, message_text)
     try:
         runner._consume_pending_native_image_paths(session_key)
     except Exception:
@@ -4053,11 +4147,16 @@ async def split_client_requests(prompt: str, segments: List[Dict[str, Any]],
         for t in tasks:
             t["task"] = (t.get("task") or t.get("title") or "").strip()
             t["title"] = (t.get("title") or t["task"])[:80]
-        # Images belong with the first task unless the analyst said otherwise —
-        # better attached somewhere than dropped.
+        # Attachments: the analyst is told to name the files it saw, so a task
+        # that names some gets exactly those. A task that names none still gets
+        # the whole batch — one screenshot usually explains several asks, and
+        # "all of them" costs a few paths while "only task #1" (the old rule)
+        # sent every other task in blind.
         imgs = [i for s in segments for i in (s.get("imgs") or [])]
         if imgs:
-            tasks[0]["imgs"] = imgs
+            for t in tasks:
+                named = [p for p in imgs if os.path.basename(p) in (t.get("task") or "")]
+                t["imgs"] = named or list(imgs)
         return tasks, "разобрал"
     out = []
     for s in segments:
@@ -4379,6 +4478,47 @@ def _entry_prompt(profile: str, task: str) -> str:
     return task
 
 
+_MVB_LIVE = "('done','failed','aborted','escalated')"
+
+
+def _dispatch_fanout(key: str, route: str, profile: str, wd: str,
+                     jobs: List[Tuple[str, str]], note: Optional[str]):
+    """Enqueue a fanned-out pipeline; returns the same 4-tuple as _dispatch_job.
+
+    Per-title duplicate guard, because a fan-out multiplies the cost of a double tap:
+    _dispatch_job never had one (mvb-run.py did), and a retried callback that used to
+    cost one extra job would now cost nine. A title already sitting in a non-terminal
+    state means that profile is still in flight, so it is skipped rather than requeued.
+
+    The tab is bound to the FIRST job created. _set_job stores one id per route, and the
+    turn handler reports on that id — so the tab tracks profile 1 and the rest are
+    reported by the digest at the end. Binding is only used for status text and the
+    Approve/Deny routing of THAT job's escalations; every job still escalates to
+    Telegram on its own, so nothing is silently lost by the choice."""
+    made: List[int] = []
+    skipped = 0
+    for prompt, title in jobs:
+        t = title[:200]
+        if _ho_read(f"select 1 from ho_jobs where title=? and status not in {_MVB_LIVE} limit 1", (t,)):
+            skipped += 1
+            continue
+        jid = _ho_write(
+            "insert into ho_jobs(kind,title,prompt,profile,work_dir,max_turns) "
+            "values('feature',?,?,?,?,?)",
+            (t, prompt, profile, wd, CONDUCTOR_MAX_TURNS),
+        )
+        if jid:
+            made.append(jid)
+    if not made:
+        return None, wd, (f"ℹ️ уже запущено — все {skipped} профилей в работе. "
+                          "Второй раз не ставлю."), None
+    _set_job(key, route, made[0])
+    extra = f"{len(made)} job'ов (по профилю на каждый): #{made[0]}–#{made[-1]}"
+    if skipped:
+        extra += f"; {skipped} уже в работе, пропущены"
+    return made[0], wd, None, f"{note}; {extra}" if note else extra
+
+
 def _dispatch_job(key: str, route: str, task: str):
     """Create ONE conductor job for `route` (a bare profile, or an MVB pipeline id).
 
@@ -4395,6 +4535,14 @@ def _dispatch_job(key: str, route: str, task: str):
         if not os.path.isdir(wd):
             return None, wd, (f"⚠️ каталог системы не найден: `{wd}`. Проверь "
                               f"`runFrom` в `{_profiles_dir()}/{profile}.json`."), None
+        fan = r.get("fanout")
+        if fan:
+            jobs, note, err = fan(task)
+            if err:
+                return None, wd, err, None
+            if jobs:
+                return _dispatch_fanout(key, route, profile, wd, jobs, note)
+            # fanout could not determine the profile list — fall through to one job
         prompt, title, note, err = r["prepare"](task)
         if err:
             return None, wd, err, None
@@ -4444,9 +4592,12 @@ async def _handle_conductor_turn(runner: Any, event: Any, source: Any,
     turn the user's NEXT ordinary message — one meant for the manager — into an
     autonomous run."""
     task = message_text or ""
-    imgs = _extract_image_paths(event)
+    imgs = _keep_media(key, _extract_image_paths(event))
     if imgs:
         task += "\n\n[Приложенные изображения (прочитай файлы): " + ", ".join(imgs) + "]"
+        topic_media_remember(key, imgs)
+    else:
+        task += media_recall_hint(key, message_text)
     try:
         runner._consume_pending_native_image_paths(session_key)
     except Exception:
@@ -5019,6 +5170,274 @@ def _extract_document_paths(event: Any) -> List[str]:
     return paths
 
 
+# --- Durable media + per-topic attachment memory ---------------------------
+# Everything the agent is told about an attachment is a PATH, and the path used
+# to point into ~/.hermes/cache/images — which the gateway sweeps every 24 h
+# (cleanup_image_cache). So a forwarded screenshot referenced by a parked client
+# task, or by tomorrow's follow-up question, resolved to a file that no longer
+# existed and the agent answered "не вижу картинку". Two fixes here:
+#
+#   _keep_media()          copies attachments OUT of the swept cache into
+#                          ~/.hermes/csw-media/<chat>#<topic>/ before any path
+#                          is written into a prompt, a task or the memory below.
+#   topic_media_remember() remembers a topic's last attachments, so a follow-up
+#                          that talks about pictures but carries none ("изучи
+#                          скриншоты") can still be pointed at them.
+_MEDIA_KEEP_DIR = os.path.expanduser("~/.hermes/csw-media")
+_MEDIA_KEEP_PER_TOPIC = 80          # files kept per topic dir
+_TOPIC_MEDIA_PATH = os.path.expanduser("~/.hermes/csw-topic-media.json")
+_TOPIC_MEDIA_MAX = 12               # attachments remembered per topic
+_TOPIC_MEDIA_TTL_S = 30 * 24 * 3600
+_TOPIC_MEDIA_LOCK = threading.Lock()
+
+
+def _keep_media(key: Optional[str], paths: List[str]) -> List[str]:
+    """Copy attachments out of the 24 h-swept cache into a per-topic keep dir.
+
+    Returns durable paths, in the same order. Any single failure falls back to
+    the original path — a reference to the cache copy still beats no reference.
+    Hardlinks when possible (same filesystem → free, no second copy of a 4 MB
+    screenshot), else copies."""
+    if not paths:
+        return []
+    safe = re.sub(r"[^0-9A-Za-z._#-]", "_", str(key or "misc"))
+    d = os.path.join(_MEDIA_KEEP_DIR, safe)
+    try:
+        os.makedirs(d, exist_ok=True)
+    except Exception:
+        logger.debug("csw-media: mkdir failed", exc_info=True)
+        return list(paths)
+    out: List[str] = []
+    for p in paths:
+        try:
+            if not p:
+                continue
+            dst = os.path.join(d, os.path.basename(p))
+            if os.path.abspath(p) == os.path.abspath(dst):
+                out.append(dst)
+                continue
+            if not os.path.exists(p):
+                out.append(p)          # already gone — keep the reference honest
+                continue
+            if not os.path.exists(dst):
+                try:
+                    os.link(p, dst)
+                except Exception:
+                    shutil.copy2(p, dst)
+            out.append(dst)
+        except Exception:
+            logger.debug("csw-media: keep failed for %r", p, exc_info=True)
+            out.append(p)
+    _prune_media_dir(d)
+    return out
+
+
+def _prune_media_dir(d: str) -> None:
+    """Keep the newest _MEDIA_KEEP_PER_TOPIC files in one topic's keep dir."""
+    try:
+        files = [os.path.join(d, f) for f in os.listdir(d)]
+        files = [f for f in files if os.path.isfile(f)]
+        if len(files) <= _MEDIA_KEEP_PER_TOPIC:
+            return
+        files.sort(key=lambda f: os.path.getmtime(f), reverse=True)
+        for f in files[_MEDIA_KEEP_PER_TOPIC:]:
+            try:
+                os.unlink(f)
+            except Exception:
+                pass
+    except Exception:
+        logger.debug("csw-media: prune failed for %r", d, exc_info=True)
+
+
+def _topic_media_load() -> Dict[str, Any]:
+    try:
+        with open(_TOPIC_MEDIA_PATH, encoding="utf-8") as f:
+            d = json.load(f)
+        return d if isinstance(d, dict) else {}
+    except FileNotFoundError:
+        return {}
+    except Exception:
+        logger.debug("csw-media: memory read failed", exc_info=True)
+        return {}
+
+
+def _topic_media_save(d: Dict[str, Any]) -> None:
+    tmp = _TOPIC_MEDIA_PATH + ".tmp"
+    try:
+        with open(tmp, "w", encoding="utf-8") as f:
+            json.dump(d, f, ensure_ascii=False)
+        os.replace(tmp, _TOPIC_MEDIA_PATH)
+    except Exception:
+        logger.debug("csw-media: memory write failed", exc_info=True)
+
+
+def topic_media_remember(key: str, imgs: List[str],
+                         docs: Optional[List[str]] = None) -> None:
+    """Record this topic's newest attachments (newest first, deduped, capped)."""
+    imgs = [p for p in (imgs or []) if p]
+    docs = [p for p in (docs or []) if p]
+    if not (key and (imgs or docs)):
+        return
+    with _TOPIC_MEDIA_LOCK:
+        store = _topic_media_load()
+        entry = store.get(key) if isinstance(store.get(key), dict) else {}
+        for field, fresh in (("imgs", imgs), ("docs", docs)):
+            merged: List[str] = []
+            for p in list(fresh) + list(entry.get(field) or []):
+                if p not in merged:
+                    merged.append(p)
+            entry[field] = merged[:_TOPIC_MEDIA_MAX]
+        entry["ts"] = time.time()
+        store[key] = entry
+        cutoff = time.time() - _TOPIC_MEDIA_TTL_S
+        for k in [k for k, v in store.items()
+                  if not isinstance(v, dict) or float(v.get("ts") or 0) < cutoff]:
+            store.pop(k, None)
+        _topic_media_save(store)
+
+
+def topic_media_recall(key: str) -> Dict[str, List[str]]:
+    """This topic's remembered attachments that still exist on disk."""
+    if not key:
+        return {"imgs": [], "docs": []}
+    entry = _topic_media_load().get(key)
+    if not isinstance(entry, dict):
+        return {"imgs": [], "docs": []}
+    out = {}
+    for field in ("imgs", "docs"):
+        out[field] = [p for p in (entry.get(field) or [])
+                      if isinstance(p, str) and os.path.exists(p)]
+    return out
+
+
+# "изучи скриншоты", "что на картинке", "смотри фото" — a follow-up that talks
+# about an attachment it does not carry. Only then is the recall hint added, so
+# an ordinary turn is not padded with paths it has no use for.
+_MEDIA_WORDS = re.compile(
+    r"(скрин|screensh|картинк|картин|изображен|фотк|фото|photo|image|img|"
+    r"макет|mockup|дизайн|схем|диаграмм|graphic)", re.I)
+
+
+def _asks_about_media(text: str) -> bool:
+    return bool(_MEDIA_WORDS.search(text or ""))
+
+
+def media_recall_hint(key: str, text: str, *, for_hermes: bool = False) -> str:
+    """Path hint for a turn that asks about pictures but carries none."""
+    if not _asks_about_media(text):
+        return ""
+    rec = topic_media_recall(key)
+    imgs, docs = rec.get("imgs") or [], rec.get("docs") or []
+    if not (imgs or docs):
+        return ""
+    how = ("посмотри их инструментом vision_analyze" if for_hermes
+           else "открой файлы сам")
+    out = ""
+    if imgs:
+        out += (f"\n\n[Ранее присланные в этот топик изображения ({how}): "
+                + ", ".join(imgs) + "]")
+    if docs:
+        out += ("\n\n[Ранее присланные в этот топик файлы (прочитай с диска): "
+                + ", ".join(docs) + "]")
+    return out
+
+
+def augment_inbound_for_hermes(runner: Any, event: Any, source: Any,
+                               session_key: str, message_text: str) -> str:
+    """run.py hook: a Hermes-bound turn asking about earlier attachments.
+
+    The Claude paths append their own hint (see _run_turn); this is the same
+    service for the turns that fall through to the Hermes agent, which otherwise
+    has no way to know a screenshot was forwarded into this topic ten minutes
+    ago. Hermes can open a path with vision_analyze, so a path is enough."""
+    try:
+        if _extract_image_paths(event):
+            return message_text          # this turn carries its own pixels
+        key = _key(source)
+        hint = media_recall_hint(key, message_text, for_hermes=True)
+        if not hint:
+            return message_text
+        logger.info("csw-media: recalled %s attachment(s) for a Hermes turn in %s",
+                    len(topic_media_recall(key).get("imgs") or []), key)
+        return (message_text or "") + hint
+    except Exception:
+        logger.debug("csw-media: hermes augment failed", exc_info=True)
+        return message_text
+
+
+async def _post_media_to_topic(runner: Any, source: Any, imgs: List[str],
+                               docs: Optional[List[str]] = None) -> int:
+    """Re-send forwarded attachments INTO the destination topic.
+
+    Without this the picture stayed in the ephemeral "Nouvel Échange" topic that
+    the router deletes seconds later: the topic got a line of TEXT saying a
+    screenshot was attached, the screenshot itself was gone from Telegram, and
+    "пересылка картинок не работает" is exactly what that looks like. Same
+    placement rules as _post_to_topic (message_thread_id primary, reply anchor
+    for threading). Returns how many attachments landed."""
+    imgs = [p for p in (imgs or []) if p and os.path.exists(p)]
+    docs = [p for p in (docs or []) if p and os.path.exists(p)]
+    if not (imgs or docs):
+        return 0
+    try:
+        adapter = runner._adapter_for_source(source)
+        bot = getattr(adapter, "_bot", None)
+    except Exception:
+        bot = None
+    if bot is None:
+        logger.warning("fwd-media: no bot available to post attachments")
+        return 0
+    chat_id = _chat_id(source)
+    thread = str(getattr(source, "thread_id", "") or "")
+    tnum = int(thread) if thread and thread not in _GENERAL_TOPIC_IDS else None
+    sent = 0
+    for kind, path in [("photo", p) for p in imgs] + [("doc", p) for p in docs]:
+        anchor = _topic_anchor(chat_id, thread)
+        attempts: List[Dict[str, Any]] = []
+        if tnum is not None and anchor:
+            attempts.append({"message_thread_id": tnum,
+                             "reply_to_message_id": int(anchor)})
+        if tnum is not None:
+            attempts.append({"message_thread_id": tnum})
+        if anchor:
+            attempts.append({"reply_to_message_id": int(anchor)})
+        attempts.append({})
+        m = None
+        last_err = None
+        # A photo Telegram refuses to process (Image_process_failed — proven with
+        # a 1x1 PNG) still has to arrive: fall back to sending it as a file.
+        ways = ("photo", "doc") if kind == "photo" else ("doc",)
+        for way in ways:
+            for extra in attempts:
+                try:
+                    with open(path, "rb") as fh:
+                        if way == "photo":
+                            m = await bot.send_photo(chat_id=chat_id, photo=fh,
+                                                     **extra)
+                        else:
+                            m = await bot.send_document(chat_id=chat_id, document=fh,
+                                                        **extra)
+                    break
+                except Exception as e:
+                    last_err = e
+            if m is not None:
+                if way != kind:
+                    logger.info("fwd-media: %s sent as a file — Telegram refused "
+                                "the photo", os.path.basename(path))
+                break
+        if m is None:
+            logger.warning("fwd-media: %s %s did NOT land in %s#%s: %r",
+                           kind, os.path.basename(path), chat_id, thread, last_err)
+            continue
+        sent += 1
+        new_id = getattr(m, "message_id", None)
+        if new_id:
+            note_topic_anchor(chat_id, thread, new_id)
+    logger.info("fwd-media: posted %d/%d attachment(s) into %s#%s",
+                sent, len(imgs) + len(docs), chat_id, thread)
+    return sent
+
+
 async def _transcribe_forward(runner: Any, event: Any) -> str:
     """Best-effort STT for a forwarded voice/audio message.
 
@@ -5192,7 +5611,8 @@ async def _flush_forward_batch(runner: Any, bkey: str) -> None:
         logger.info("fwd: picker send failed in %s — released", bkey)
 
 
-async def _build_forward_prompt(runner: Any, parts: List[dict], who: str) -> tuple:
+async def _build_forward_prompt(runner: Any, parts: List[dict], who: str,
+                                key: Optional[str] = None) -> tuple:
     """Assemble the routed prompt from batched forward parts, transcribing any
     voice messages NOW (lazily — only when the user actually routes).
 
@@ -5214,8 +5634,11 @@ async def _build_forward_prompt(runner: Any, parts: List[dict], who: str) -> tup
             tr = ""
         if tr:
             seg = (seg + " " if seg else "") + f"🎙 (голосовое): {tr}"
-        pimgs = _extract_image_paths(ev)
-        pdocs = _extract_document_paths(ev)
+        # Copy the attachments out of the 24 h-swept download cache FIRST:
+        # every path from here on (prompt, task backlog, topic memory) has to
+        # still resolve when the queue reaches that task tomorrow.
+        pimgs = _keep_media(key, _extract_image_paths(ev))
+        pdocs = _keep_media(key, _extract_document_paths(ev))
         if pdocs:   # name the attached file(s) inline so the message reads naturally
             names = ", ".join(os.path.basename(d) for d in pdocs)
             seg = (seg + " " if seg else "") + f"📎 (файл: {names})"
@@ -5234,6 +5657,8 @@ async def _build_forward_prompt(runner: Any, parts: List[dict], who: str) -> tup
         prompt += ("\n\n[Приложенные файлы — ПРОЧИТАЙ каждый с диска "
                    "(инструмент Read; для .xlsx/.docx при необходимости используй "
                    "bash/python): " + ", ".join(docs) + "]")
+    if key:
+        topic_media_remember(key, imgs, docs)
     return prompt.strip(), imgs, segments
 
 
@@ -5387,7 +5812,8 @@ async def _handle_forward_pick(adapter: Any, query: Any, rest: str) -> None:
     parts = payload.get("parts")
     segments: List[Dict[str, Any]] = []
     if parts:
-        prompt, _pimgs, segments = await _build_forward_prompt(runner, parts, who)
+        prompt, _pimgs, segments = await _build_forward_prompt(runner, parts, who,
+                                                              key=key)
     else:
         prompt = (payload.get("prompt")
                   or f"[Пересланное сообщение от «{who}»]\n{payload.get('text', '') or ''}").strip()
@@ -5417,6 +5843,16 @@ async def _handle_forward_pick(adapter: Any, query: Any, rest: str) -> None:
             posted = await _post_to_topic(runner, tsrc, anchor, f"↪️ {prompt}")
             if not posted:
                 logger.warning("fwd-route: forwarded content did NOT post into %s", key)
+            # …and the attachments themselves, as attachments. A path in a text
+            # line is for the agent; the picture is for the human reading the
+            # topic — and the ephemeral topic it arrived in is already deleted.
+            try:
+                await _post_media_to_topic(
+                    runner, tsrc,
+                    [i for s in segments for i in (s.get("imgs") or [])],
+                    [d for s in segments for d in (s.get("docs") or [])])
+            except Exception:
+                logger.debug("fwd-route: attachment re-post failed", exc_info=True)
             # (2) Analyse the whole batch and split it into discrete tasks, then
             # park them in THIS topic's backlog. Handing the coding agent the
             # entire conversation at once is what drowned it; from here on it

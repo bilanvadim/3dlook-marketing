@@ -177,6 +177,38 @@ S2_INSERT = (
 )
 
 
+# --- run.py: media recall for the turns that DO fall through to Hermes -----
+# The Claude paths append their own attachment hint inside claude_switcher, but a
+# turn handled by the Hermes agent never passes through them: ask Hermes "изучи
+# скриншоты" about a screenshot forwarded into the topic ten minutes ago and it
+# has nothing — the pixels went to the routed Claude turn and the ephemeral topic
+# they arrived in is deleted. This gives Hermes the paths (it can open one with
+# vision_analyze). Applied in a SECOND _patch_file pass anchored on the intercept
+# block above, so it lands on a fresh install and on an already-patched run.py
+# alike — extending S1_INSERT itself would insert a duplicate intercept on every
+# install that already has the old text.
+AUG1_ANCHOR = S1_INSERT
+AUG1_INSERT = (
+    "        # [hermes-switcher] Hermes-bound turn asking about a picture it does not\n"
+    "        # carry — hand it what this topic already received.\n"
+    "        try:\n"
+    "            from gateway import claude_switcher as _cs\n"
+    "            message_text = _cs.augment_inbound_for_hermes(\n"
+    "                self, event, source, session_key, message_text)\n"
+    "        except Exception:\n"
+    "            logger.debug(\"claude-switcher media recall failed\", exc_info=True)\n"
+)
+AUG2_ANCHOR = S2_INSERT
+AUG2_INSERT = (
+    "                    # [hermes-switcher] media recall for the queued Hermes turn\n"
+    "                    try:\n"
+    "                        from gateway import claude_switcher as _cs\n"
+    "                        next_message = _cs.augment_inbound_for_hermes(\n"
+    "                            self, pending_event, next_source, next_session_key, next_message)\n"
+    "                    except Exception:\n"
+    "                        logger.debug(\"claude-switcher media recall (followup) failed\", exc_info=True)\n"
+)
+
 # --- adapter.py: panel callback branch (csw:<target>) ----------------------
 ADAPTER_ANCHOR = (
     '        # --- Generic choice picker callbacks (/reasoning, /fast) ---\n'
@@ -530,6 +562,18 @@ def main():
         problems += [f"run.py:{m}" for m in r]
     else:
         print(f"run.py: {r}")
+
+    # 3b. run.py — media recall for Hermes turns. Separate pass: it is anchored on
+    # the intercept blocks the pass above just wrote, and _patch_file re-reads the
+    # file, so the same code path works fresh and already-patched.
+    r = _patch_file(RUN_PY, [
+        ("media-recall-primary", AUG1_ANCHOR, after(AUG1_INSERT)),
+        ("media-recall-followup", AUG2_ANCHOR, after(AUG2_INSERT)),
+    ])
+    if isinstance(r, list):
+        problems += [f"run.py:{m}" for m in r]
+    else:
+        print(f"run.py (media recall): {r}")
 
     # 4. adapter.py — panel callback branch + inline-query handler + fwd provenance
     r = _patch_file(ADAPTER_PY, [

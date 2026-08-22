@@ -154,19 +154,24 @@ Example: `workspace/social/articles/2026-05-21-online-pharmacy-bmi-verification/
 
 ## After saving
 
-Update the manifest `workspace/social/articles/{slug}/manifest.json`:
-```json
-{
-  "article_slug": "{slug}",
-  "article_path": "{article_path}",
-  "product": "{product}",
-  "created": "YYYY-MM-DD",
-  "drafts": [
-    {"profile": "linkedin-company", "file": "...", "status": "draft", "needs_visual": true},
-    ...
-  ],
-  "ready_for_review": true
-}
-```
+Update the manifest `workspace/social/articles/{slug}/manifest.json`.
 
-This signals the Telegram bot to send Vadim the draft for approval.
+**Do not restate the schema here — it lives in exactly one place:** the "Manifest — КАНОНІЧНА
+СХЕМА" section of `social-publisher`. Read it and follow it. This file used to carry its own
+copy (`article_slug` / `article_path` / `drafts[{profile,file,status,needs_visual}]`), it had
+drifted away from the shape every recent manifest on disk actually uses, and the file's final
+form then depended on which agent touched it last. Removed 2026-08-22.
+
+You touch **only your own profile**:
+
+- The file may not exist yet — then create it with the `article` block, `profiles_skipped: []`,
+  `ready_for_review: false`, and your one entry in `profiles`.
+- It usually does exist, written by an earlier profile's run — then **append or replace only
+  your own `profile_id` entry** and leave every other entry untouched. Never rewrite the list
+  from what you happen to know: nine posts existed on disk while the manifest listed three,
+  because a run rebuilt the array instead of updating one row.
+- **Never set `ready_for_review: true`.** That is the publishing step's call, once every active
+  profile is `ready`. Your job ends at your own entry.
+
+Approval is not triggered by this file: Vadim gets the digest after the last profile finishes
+(see `/post-from-article` step 5 and `/post-one-profile` step 5).
