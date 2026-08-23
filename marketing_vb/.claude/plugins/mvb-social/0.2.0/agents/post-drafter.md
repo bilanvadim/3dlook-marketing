@@ -145,6 +145,7 @@ created: YYYY-MM-DD
 4. **Profile tone.** Personal profiles — first person. Company — third person or "we".
 5. **LinkedIn: `brand-assets/linkedin-post-prompts.md` is binding.** Never write a `linkedin-*` post without reading that profile's section first. Never exceed 1-2 emoji and never add hashtags, whatever the Doc's own numbers say.
 6. **After writing** — call `post-brand-checker`. PASS → save. FAIL → rewrite (max 2 iterations, then WARNING).
+6b. **Before calling the checker, run the one-line self-check:** "what in this post still reads as machine-written?" Hard fails and the full catalogue: `brand-assets/style-guides/ai-tells-sweep.md`. At draft time hold only the hard fails (banned words and phrasings, negative parallelism, punch triads, em dash, 0 hashtags, max 2 emoji); the full sweep is `social-editor` Pass 2b. A post that states and never judges reads as compiled — take a position somewhere.
 
 ## Where to save
 

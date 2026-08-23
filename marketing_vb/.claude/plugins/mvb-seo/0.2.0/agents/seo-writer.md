@@ -64,6 +64,7 @@ tools: Read, Write, WebSearch, WebFetch
 - Нет em-dash в риторических конструкциях
 - Нет «It's not just X, it's Y»
 - Banned words: leverage, utilize, harness, robust, seamless, comprehensive, delve, navigate (метаф.), tapestry, realm
+- **AI-tells:** полный каталог — `brand-assets/style-guides/ai-tells-sweep.md`. На этапе письма держи в голове только hard fails (banned words, banned phrasings, negative parallelism, punch triads, em dash, terminology guardrails). Полный проход делает `seo-editor` (Pass 3c) отдельным шагом: писать и вычищать одновременно — значит делать плохо и то, и другое.
 - **Аббревиатуры (guardrail M1):** расшифровывай КАЖДУЮ аббревиатуру при первом употреблении — `Body Mass Index (BMI)`, `dual-energy X-ray absorptiometry (DEXA)`, `glucagon-like peptide-1 (GLP-1)`, `Food and Drug Administration (FDA)`, `International Council for Harmonisation (ICH)`. Правило универсальное: и «очевидные» (BMI), и регуляторы, которых цитируешь (FDA, ICH, GCP), тоже разворачиваются.
 - **Без нагромождения отрицаний (guardrail M2):** не цепляй два отрицания в одном предложении («does not… nor does it…», «is — and is not —», «necessary but not sufficient»). Формулируй границу один раз, позитивно, где смысл сохраняется («endpoint validation stays with the sponsor»).
 

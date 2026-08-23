@@ -162,7 +162,7 @@ different versions of the same number stops reading the page and starts doubting
 
 ## Scoring the Human copy axis
 
-Full rubric and the tell list are in `copy-humanisation.md`.
+Full rubric and the tell list are in `copy-humanisation.md`. Score it after running `brand-assets/style-guides/scripts/detect-ai-tells.py --channel page`: any `hard_fails` entry caps this axis at 5, and an unanswered "what still reads as machine-written?" self-check caps it at 8 no matter how clean the detector output is.
 
 | Points | State |
 |---|---|

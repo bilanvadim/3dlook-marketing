@@ -152,7 +152,7 @@ over features — the KPI block of the use-case file is the spine. A differentia
 deleted, not softened.
 
 **3. Guardrails + humanisation — one mandatory pass, run after the draft is finished.**
-Run `references/copy-humanisation.md`: the 11 editorial guardrails and M1/M2, the terminology
+Start with the detector (`brand-assets/style-guides/scripts/detect-ai-tells.py --channel page --summary`), then run `references/copy-humanisation.md`: the 11 editorial guardrails and M1/M2, the terminology
 guardrails, CLAUDE.md §6 banned phrases, then the AI-tell sweep. Do not fold this into writing; a
 drafter policing their own tells does neither job well. The pass ends with the honest question "what
 here still reads as machine-written?" and a second round of fixes. Copy that skipped this pass does

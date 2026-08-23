@@ -10,7 +10,30 @@ costs a demo request. And on 3DLOOK pages there is a second cost — a diligence
 unsourced number stops evaluating the product and starts evaluating whether anything on the page is
 true.
 
-Four layers, in this order. Do not fix while sweeping; mark first, then rewrite.
+A detector pass, then four layers, in this order. Do not fix while sweeping; mark first, then rewrite.
+
+---
+
+## Layer 0 — run the detector first
+
+```bash
+python3 brand-assets/style-guides/scripts/detect-ai-tells.py workspace/pages/{slug}/draft.md --channel page --summary
+```
+
+Mechanical hits in a second, so the four manual layers below start from what is left rather than
+from scratch. Read `hard_fails` (fix every entry; line numbers point at the original file),
+`house_rule_violations` (Title Case, bold-headed lists, monotone rhythm, list-to-prose ratio) and
+`verdict`. Density budget for a page is 6 markers per 1,000 words; `REWRITE` means redraft the
+section, not patch the line.
+
+The detector is a floor. It cannot see elegant variation, an argument that never commits, or an
+ending that resolves too neatly, and it reports zero on plenty of copy that still reads generated.
+Run it, then read.
+
+The cross-channel catalogue is `brand-assets/style-guides/ai-tells-sweep.md` — same source skill,
+same tell list, with the article / social / DM profiles alongside this page-shaped one. This file
+stays the authority for pages, because layers 1 and 2 (editorial guardrails, terminology) are
+page-specific and the catalogue does not restate them.
 
 ---
 

@@ -33,6 +33,16 @@ tools: Read, Grep
 12. **Word count:** `linkedin-company` — 180-280 слів; усі особисті профілі — 180-250 слів. Рахуй слова, не символи.
 13. **Brief compliance:** пост відповідає секції свого профілю в `brand-assets/linkedin-post-prompts.md` — правильна аудиторія і ринок (Katerina = UK · Nick = US · Olena = Continental Europe без UK-згадок · Katya = Israel/Gulf · **Vadim = Australia** · company = enterprise B2B, third person), правильне закриття (discussion question для Katya/Nick/Olena, question-or-invitation для Vadim, CTA до статті для company/Katerina), і це не переказ статті, а пост «за мотивами». Нічого з `avoid`-списку профілю.
 
+## AI-tells (пункти 14-16 — усі профілі)
+
+Повний каталог: `brand-assets/style-guides/ai-tells-sweep.md`. Пункти 1-3 вище ловлять banned words, паралелізми й openers. Ці три — найчастіший залишок, який вони пропускають:
+
+14. **Inflated significance / пусті хвости:** «a new era of», «plays a crucial role», «…, underscoring our commitment», «…, highlighting the importance of». Хвіст не несе інформації — речення закінчилось до нього.
+15. **Концовка-слоган:** останній рядок, що красиво все зав'язує («the future is bright», «and that changes everything», «a step in the right direction»). Живий пост закінчується наступною дією або відкритим питанням.
+16. **Немає позиції:** пост лише констатує і ніде не судить. Це читається як скомпільоване, а не написане. Хоча б в одному місці має бути сказано, що робити правильно.
+
+Ці пункти **не** змінюють шкалу вердикту (10 / 13) — вони йдуть у `Issues` як `[ai-tells]` і є підставою для FAIL лише разом з іншими провалами. Глибокий прохід робить `social-editor` Pass 2b, не ти.
+
 ## Вердикт
 
 Non-LinkedIn профілі — 10 пунктів. LinkedIn — 13.
