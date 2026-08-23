@@ -273,6 +273,7 @@
 | 2026-07-21 | **Outbound calendar links filled in (3 of 4 TBDs resolved) + `vadim` no-CTA rule.** Set the per-profile HubSpot meeting links in `outbound-message2-template.md`: `nick` = https://meetings.hubspot.com/nick-omelchak, `olena` = https://meetings.hubspot.com/olena-kudriavtseva, `katya` = https://meetings.hubspot.com/kateryna-boichuk (`katerina` unchanged). **`vadim` has no calendar account**, so per Vadim his Message 2 uses **no demo-call offer and no calendar link — instead it closes with a short soft conversational ask in Message 1 style ("Might be worth a quick chat?")** + first-name signature. Updated the template (calendar table, the rule note under it, Purpose, Structure step 3) and propagated the `vadim` exception across all 4 `message-sequencer` copies (structure table row 2 + algorithm Message 2 bullet). Updated `INDEX.md`. Message 1's soft ask is calendar-independent and left unchanged for all profiles. | Claude / Vadim |
 | 2026-08-22 | **Social pipeline: one job per profile instead of one job for all nine.** `mvb-run.py posts <slug>` now enqueues N conductor jobs (one per active profile) via a new optional `fanout` key on the `mvb:posts` route in `claude_switcher.py` (`_mvb_social_profiles()` parses the active list out of `social-profiles-config.md`, so enabling/disabling a profile stays a one-file edit). New command `.claude/commands/post-one-profile.md` is the single-profile unit; it does not restate the digest format but points at steps 5–7 of `post-from-article.md`. **Why:** job #90 (2026-08-21) ran the whole batch in one session — 206 turns, 29 min — and drained the Claude usage window. The conductor authenticates with the ambient Claude Code OAuth credentials (`subscriptionType=team`), i.e. **the same window Vadim's interactive sessions use**, so one autonomous run locks him out too; every resume after it got 2 turns before hitting the wall, and the last 3 posts were finished by a fallback coder. Splitting does **not** reduce quota spend (nine posts are the same ~200 turns) — it changes what a limit costs: each job ends and banks its post, so an exhausted window costs only the profiles not yet started, and re-running `posts <slug>` queues exactly the missing ones (dedup is per-title, and titles carry the profile). Digest assembly is **self-electing** — every job checks whether all active profiles have a `post.md` and only the one that finds them all writes it. Deliberately not ordered via `ho_jobs.priority`: `claimJob` skips a `deferred` job whose `not_before` is in the future, so a lower-priority "assemble" job would be claimed *before* the profiles it depends on — exactly under the rate limit this is designed for. Env escape hatches: `MVB_FANOUT=0` (old single job), `MVB_DRY_RUN=1` (print the jobs, write nothing — the conductor polls continuously, so an experimental insert is a live autonomous run). | Claude / Vadim |
 | 2026-08-22 | **manifest.json schema consolidated into one place.** `social-publisher` gained a "Manifest — КАНОНІЧНА СХЕМА" section that is now the only definition of the file's shape; `post-drafter` ("After saving") and `/post-from-article` (step 5) had their own copies removed and now reference it. **Why:** the manifest had two writers and no owner. Both `social-publisher` and `post-drafter` specified the obsolete `article_slug` / `article_path` / `created` / `drafts[{profile,file,status,needs_visual}]` shape, while `/post-from-article` step 5 defined nothing at all ("confirm it is updated with `ready_for_review: true`") — so the orchestrating run copied whatever a neighbouring article's manifest looked like, which is the newer `article` / `profiles` / `profiles_skipped` shape used by every manifest written since June. The file's final form therefore depended on which agent touched it last: the 2026-08-21 run shipped the obsolete `drafts:` form listing 3 profiles while 9 posts sat on disk. Schema was derived from what is actually on disk, not invented: `profile_id` · `platform` · `handle` · `post_file` · `status` · `format` mandatory in every entry; **exactly one** length field, matching the unit the profile's brief is written in (`character_count_body` for twitter/instagram/facebook, `word_count_body` for the six `linkedin-*` — the existing files are inconsistent about this and it is now pinned); `qc_score` only where QC actually ran; `profiles_skipped` always an array. Two rules added: `post-drafter` updates **only its own `profile_id` entry** and never rebuilds the array (that is how 9 posts became 3 rows), and it may never set `ready_for_review: true` — that flag now requires every active profile to be `ready`, because a partial manifest carrying it reads as a finished package. Also dropped the hardcoded "all 9 profiles" from `social-publisher` (count comes from `posts_per_week > 0`; `linkedin-whitney` can be re-enabled). Propagated across all 4 copies of each file; the three May–June manifests keep the old shape as history. | Claude / Vadim |
+| 2026-08-23 | **Website page pipeline added: `page-builder` skill + `/page`.** Installed and adapted Victor Shulga's `page-builder` skill (source: victorshulga.com/skills/outbound-agents/page-builder) as a **single copy** at `.claude/skills/page-builder/` — no plugin duplicate, deliberately, given how the 4-copy agent topology drifts. Adapted from "B2B service agency" to 3DLOOK's product reality: the Service Page Kit became a **Vertical (use-case) Page Kit** for `/{product}/for-{vertical}/` pages, the Blog Kit was **dropped and routed to `/new-article`** so two article pipelines cannot contradict `content-plan.md`, and the "who performs the work" slot was replaced by compliance-and-governance, scoped-accuracy and integration slots. 3DLOOK-specific hard gates: every figure traceable to `proof-points.md`, client names and metrics only from `case-studies/`, the 11 editorial guardrails + M1/M2 as an explicit pass, terminology guardrails (em dash banned outright, corrective negation, `so`/`plus`/`let`/`objective`), CLAUDE.md §6 banned words, anti-positioning ("most accurate" / "best-in-class" = hard fail), medical framing fixed as "not positioned as a medical device", MT customer ARRs never publishable. G-J stays a **blind** judge in a fresh subagent on a 100-point page scorecard (threshold 85) — explicitly **not** `quality-controller`, which is neither blind nor page-shaped. `references/site-inventory.md` holds the 2026-08-23 snapshot of all 30 marketing pages plus five architecture findings: the **homepage is the FitXpress parent** (`/fitxpress/` 301s to `/`, and the root-level FX vertical pages declare two-level breadcrumbs) while Mobile Tailor keeps its own parent — two hierarchies of different depth, with `/fitxpress/for-connected-and-digital-fitness/` the one page using a path level that does not exist, **no individual case-study pages exist** though six cases with metrics do, **only one of six vertical pages ships FAQPage and Service schema** (the telehealth page, which is also the in-house benchmark the Kit now points at — `/mobile-tailor/for-uniforms/` has 11 visible answers and no markup), live pages still running banned words (`leverage`, `best-in-class`, `revolutionize`), `/for-bmi-verification/` at ~659 words against ~1,200–1,600 everywhere else, and neither parent page linking down to its verticals in the body. Also surfaced: `pricing.md` contradicts the live `/pricing/` page on Mobile Tailor tiers — logged as a guardrail #2 conflict, not silently resolved. Artifacts go to `workspace/pages/{slug}/`. | Claude / Vadim |
 
 ---
 
@@ -355,3 +356,57 @@ Default to Assel for everything else. If a brief is ambiguous, ask Vadim before 
 
 If a new production article significantly departs from the style guide (e.g., a deliberate experiment), update `brand-assets/style-guides/blog-style-guide.md` to record the new pattern with the source article cited. The style guide is a living document driven by what actually ships, not a frozen rulebook.
 
+---
+
+## 16. Website page pipeline (`page-builder` / `/page`)
+
+> Added 2026-08-23. Owns **marketing pages on 3dlook.ai**, not articles.
+
+**Skill:** `.claude/skills/page-builder/SKILL.md` — one canonical copy, no plugin mirror. Adapted from
+Victor Shulga's public `page-builder` skill.
+
+**Command:** `/page [vertical|URL] [gate|build|judge|handoff|full]`. Artifacts in
+`workspace/pages/{slug}/`.
+
+**Scope split — read this before routing a request:**
+
+| Request | Owner |
+|---|---|
+| Use-case / vertical page, campaign landing, product page, case-study page | `/page` |
+| Blog article, hub, comparison, buyer guide | `/new-article` (mvb-seo) |
+| Social posts from a published article | `/post-from-article` |
+| 20-point QC of a pipeline artifact | `/qc` |
+
+**Four gates.** G-I decides whether a vertical page should exist at all (use-case file + **2 or more
+publishable cases from that vertical** + demand + 5 facts absent from the parent + the 60% uniqueness
+rule). G-A blocks writing until placement, URL, cannibalisation and the Search Console baseline are
+settled. G-T blocks publishing on technical grounds. G-J is a **blind judge in a fresh subagent**,
+100-point page scorecard, threshold 85, maximum 3 rounds, and publishing below 85 without flagging it
+is forbidden. `quality-controller` does not substitute for G-J — it is neither blind nor page-shaped.
+
+**The benchmark:** `/structured-body-data-for-telehealth-digital-health-programs/` (July 2026) is the
+one vertical page already built to the current standard — scoped accuracy, a real comparison block, a
+13-question FAQ with FAQPage schema, Service schema with `audienceType` + `areaServed`, ~1,600 words,
+no banned words in the headings. The Kit tells writers to match it. `/for-bmi-verification/` (~659
+words, no FAQ, no cases) is the first rewrite candidate.
+
+**Two hierarchies, different depths** (corrected 2026-08-23 by Vadim, and the site agrees —
+`/fitxpress/` 301s to `/`): the **homepage is the FitXpress parent**, so FX verticals are its children
+at `/for-{vertical}/`, while Mobile Tailor has its own parent at `/mobile-tailor/` with
+`/mobile-tailor/for-{vertical}/` underneath. Never invent a `/fitxpress/` path level. Two open debts:
+`/fitxpress/for-connected-and-digital-fitness/` uses that non-existent level and declares a breadcrumb
+pointing at a redirect, and **neither parent links down to its verticals in the body** — both do it
+only through the header nav dropdown.
+
+**The G-I reality check:**
+
+1. **Only Mobile Tailor verticals clear G-I today.** Uniforms has Safariland + Burlington Medical;
+   made-to-measure has Generation Tux + Jim's Formal Wear if formal-wear rental counts as the same
+   vertical. Every FitXpress vertical has at most one case, so it needs a second case, an approved
+   reference, or a recorded G-I waiver.
+
+**Non-negotiables inside the skill:** every number from `proof-points.md`; client names and metrics
+only from `case-studies/`; Mobile Tailor customer ARRs never published; the 11 editorial guardrails
+plus M1/M2 run as their own pass, not as a habit while drafting; accuracy always scoped through
+"accurate enough for which decision?" and its four conditions; `DESIGN.md` decides every token; a
+price signal plus a link to `/pricing/` on every commercial page.
