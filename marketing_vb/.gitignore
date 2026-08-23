@@ -9,3 +9,16 @@ __pycache__/
 
 *.lnk
 telegram-bot/.venv/
+
+# Outbound exclusion registries hold identified prospects (name, title, employer, LinkedIn URL)
+# for 1,276 people. This remote is PUBLIC, so they are deliberately untracked pending Vadim's
+# decision on repo visibility. Regenerate any time from campaign artifacts:
+#   python3 scripts/outbound-registry.py backfill --yes
+# Revert this block if the repo is made private and the registries should be versioned.
+# Per-profile registries only. global-company-registry.json stays tracked: it holds
+# company names and coverage, which is not personal data and is worth versioning.
+workspace/outbound/exclusions/katerina-registry.json
+workspace/outbound/exclusions/nick-registry.json
+workspace/outbound/exclusions/olena-registry.json
+workspace/outbound/exclusions/katya-registry.json
+workspace/outbound/exclusions/vadim-registry.json

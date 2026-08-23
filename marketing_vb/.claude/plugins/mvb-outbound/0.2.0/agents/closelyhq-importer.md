@@ -74,6 +74,29 @@ print(f"Ready: {len(out)} rows")
 ## Skipped people
 - {person_id}: {reason}
 
+## После записи CSV — обнови реестр исключений (обязательно)
+
+```bash
+python3 scripts/outbound-registry.py record --campaign {campaign} --profile {profile}
+```
+
+Скрипт читает `closelyhq-import*.csv` из папки кампании и заносит людей и компании в
+`workspace/outbound/exclusions/{profile}-registry.json` и
+`workspace/outbound/exclusions/global-company-registry.json`.
+
+**Сам JSON не редактируй.** Реестр имеет одного писателя — этот скрипт. До 2026-08-23
+`outbound-runner.md` и `exclusions/README.md` оба утверждали, что importer обновляет реестры,
+но в этом промпте не было ни слова про них: десять кампаний прошли, а реестры показывали
+`excluded_people: 0`. Ручная правка JSON из четырёх разных агентов — именно то, как это
+и получилось.
+
+Скрипт идемпотентен: повторный запуск на той же кампании ничего не дублирует. Он отказывается
+записывать кампанию, у которой в import-CSV нет ни одного person-URL, и говорит об этом — это
+признак того, что CSV нужно перегенерировать (так выглядит
+`2026-07-16-au-telehealth`: 253 строки, все пустые, старая 4-шаговая схема).
+
+Вывод скрипта (`N people (M new), K companies (L new)`) вставь в import-log.
+
 ## Vadim — next steps
 1. Открой https://app.closelyhq.com/
 2. Импортируй `closelyhq-import.csv`

@@ -1,5 +1,25 @@
 # Outbound Exclusion Registry
 
+> **Один писатель: `scripts/outbound-registry.py`.** JSON в этой папке руками не правит ни
+> человек, ни агент. Обновлено 2026-08-23.
+>
+> Что было не так до этого: всё описанное ниже было специфицировано и не реализовано. Ни один
+> из восьми `mvb-outbound` агентов не ссылался на `exclusions/`; `company-researcher` и
+> `campaign-analyzer` ссылались на `workspace/outbound/exclusions.md` — плоский файл, которого
+> никогда не существовало, поэтому каждое чтение молча возвращало пусто, а каждая запись уходила
+> в никуда. Десять кампаний прошли, и реестры по-прежнему показывали `excluded_people: 0`.
+> Четыре промпта, правящие один и тот же JSON, — это и есть причина.
+>
+> ```bash
+> python3 scripts/outbound-registry.py status                                   # где какая кампания
+> python3 scripts/outbound-registry.py check    --profile P --input people.csv  # кого исключить
+> python3 scripts/outbound-registry.py record   --campaign S [--profile P]      # после импорта
+> python3 scripts/outbound-registry.py reply    --campaign S                    # после разбора ответов
+> python3 scripts/outbound-registry.py backfill --dry-run                       # исторические кампании
+> ```
+>
+> Все пишущие команды поддерживают `--dry-run`. Скрипт идемпотентен.
+
 Система запоминает компании и людей по которым уже запускались рассылки с каждого из 5 профилей. Цель — **никогда не отправлять одному и тому же человеку дважды с одного профиля**, и не рассылать на одну компанию с нескольких профилей одновременно.
 
 ## Профили и рынки
@@ -89,17 +109,33 @@ workspace/outbound/exclusions/
 - Если не в registry → ОК
 
 ### icp-validator
-Перед валидацией — прочитай per-profile registry. Каждого человека проверь по `excluded_people_urls`:
-- Если URL в exclusions → автоматический FAIL с причиной «already contacted from {profile}»
+Перед валидацией (Шаг 0):
+```bash
+python3 scripts/outbound-registry.py check --profile {profile} \
+  --input .../people-raw.csv --output .../people-checked.csv
+```
+Строки с `exclusion_flag=EXCLUDE` получают `decision: FAIL` и `reason` из `exclusion_reason`.
+**`linkedin_url` обязан быть в `people-validated.csv`** — раньше `icp-validator` его терял, из-за
+чего проверка по людям на этом этапе была невозможна, а importer восстанавливал URL
+сопоставлением по имени и компании.
 
 ### closelyhq-importer
-После формирования CSV — обнови registry:
-1. Добавь все новые компании в global-company-registry
-2. Добавь всех людей в per-profile registry
-3. Обнови `last_updated`
+После формирования CSV:
+```bash
+python3 scripts/outbound-registry.py record --campaign {slug} --profile {profile}
+```
+Скрипт сам добавляет компании в global-company-registry, людей в per-profile registry и
+обновляет `last_updated`. Он читает `closelyhq-import*.csv` (файл, который реально уходит в
+closely.io), дедуплицирует по канонизированному person-URL и отказывается записывать кампанию,
+у которой в CSV нет ни одного URL.
 
 ### campaign-analyzer
-После анализа — обнови `reply` поле в per-profile registry для каждого контакта.
+После анализа:
+```bash
+python3 scripts/outbound-registry.py reply --campaign {slug} --profile {profile}
+```
+Переносит категорию из `responses-classified.csv` в поле `reply`. Без этого правило «через 6
+месяцев компания освобождается, если `reply` = no_reply» неприменимо: освобождать нечего.
 
 ## Правила cross-profile
 
@@ -112,4 +148,4 @@ workspace/outbound/exclusions/
 1. Orchestrator спрашивает: «С какого профиля рассылка?» (katerina / nick / olena / katya / vadim)
 2. Context Pack Builder включает exclusions для этого профиля в context pack
 3. Все агенты outbound трека используют exclusions
-4. После запуска кампании — closelyhq-importer автоматически обновляет registry
+4. После формирования CSV — `closelyhq-importer` запускает `outbound-registry.py record`, и компании с людьми попадают в реестр

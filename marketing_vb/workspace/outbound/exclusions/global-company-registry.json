@@ -1,14 +1,865 @@
 {
-  "last_updated": "2026-04-30",
+  "last_updated": "2026-08-23",
   "companies": {
-    "safariland": {"covered_by_profile": null, "status": "existing_customer_excluded"},
-    "burlington-medical": {"covered_by_profile": null, "status": "existing_customer_excluded"},
-    "uk-meds": {"covered_by_profile": null, "status": "existing_customer_excluded"},
-    "yazen": {"covered_by_profile": null, "status": "existing_customer_excluded"},
-    "jims-formal-wear": {"covered_by_profile": null, "status": "existing_customer_excluded"},
-    "generation-tux": {"covered_by_profile": null, "status": "existing_customer_excluded"},
-    "tailoor": {"covered_by_profile": null, "status": "existing_customer_excluded"},
-    "redthread": {"covered_by_profile": null, "status": "existing_customer_excluded"},
-    "healthyr": {"covered_by_profile": null, "status": "existing_customer_excluded"}
+    "safariland": {
+      "covered_by_profile": null,
+      "status": "existing_customer_excluded"
+    },
+    "burlington-medical": {
+      "covered_by_profile": null,
+      "status": "existing_customer_excluded"
+    },
+    "uk-meds": {
+      "covered_by_profile": null,
+      "status": "existing_customer_excluded"
+    },
+    "yazen": {
+      "covered_by_profile": null,
+      "status": "existing_customer_excluded"
+    },
+    "jims-formal-wear": {
+      "covered_by_profile": null,
+      "status": "existing_customer_excluded"
+    },
+    "generation-tux": {
+      "covered_by_profile": null,
+      "status": "existing_customer_excluded"
+    },
+    "tailoor": {
+      "covered_by_profile": null,
+      "status": "existing_customer_excluded"
+    },
+    "redthread": {
+      "covered_by_profile": null,
+      "status": "existing_customer_excluded"
+    },
+    "healthyr": {
+      "covered_by_profile": null,
+      "status": "existing_customer_excluded"
+    },
+    "access-sante-qare": {
+      "display_name": "Access Sante & Qare",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "annette": {
+      "display_name": "Annette",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "aphp": {
+      "display_name": "APHP",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "armin-armagnac": {
+      "display_name": "Armin Armagnac",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "body-clinic": {
+      "display_name": "The Body Clinic",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "capio-sverige": {
+      "display_name": "Capio Sverige",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "doctor-i": {
+      "display_name": "Doctor i",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "doctor-one": {
+      "display_name": "Doctor.One",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "doctorium": {
+      "display_name": "DOCTORIUM",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "doktor-se": {
+      "display_name": "Doktor.se",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "doktor-se-rimbo-edsbro-vardcentral": {
+      "display_name": "Doktor.se Rimbo-Edsbro vardcentral",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "doktor-se-tegnergatan-vardcentral": {
+      "display_name": "Doktor.se Tegnergatan Vardcentral",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "doktor24": {
+      "display_name": "Doktor24",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "doktr": {
+      "display_name": "Doktr",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "dr-dropin": {
+      "display_name": "Dr.Dropin",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "dr-dropin-psykologi": {
+      "display_name": "Dr.Dropin Psykologi",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "edda-ai": {
+      "display_name": "Edda.ai",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "healthhero": {
+      "display_name": "HealthHero",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "hellocare-ai": {
+      "display_name": "hellocare.ai",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "hjemmelegene": {
+      "display_name": "Hjemmelegene",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "holi": {
+      "display_name": "Holi",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "iin-hyvinvointi-ja-terveystalo": {
+      "display_name": "Iin Hyvinvointi ja Terveystalo Oy",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "lansi-uudenmaan-hyvinvointialue": {
+      "display_name": "Lansi-Uudenmaan hyvinvointialue",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "larate": {
+      "display_name": "Larate",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "levahealth": {
+      "display_name": "LevaHealth",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "liva-healthcare": {
+      "display_name": "Liva Healthcare",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "medgate": {
+      "display_name": "Medgate",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "medgate-schweiz": {
+      "display_name": "Medgate Schweiz",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "medgate-switzerland": {
+      "display_name": "Medgate Switzerland",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "mediquo": {
+      "display_name": "MediQuo",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "mehilainen": {
+      "display_name": "Mehilainen",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "min-doktor": {
+      "display_name": "Min Doktor",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "mydiabby": {
+      "display_name": "myDiabby",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "mydiabby-healthcare": {
+      "display_name": "myDiabby Healthcare",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "mysugr": {
+      "display_name": "mySugr GmbH",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "nederlandse-obesitas-kliniek": {
+      "display_name": "Nederlandse Obesitas Kliniek",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "nederlandse-obesitas-stichting": {
+      "display_name": "Nederlandse Obesitas Stichting",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "oulun-terveystalo": {
+      "display_name": "Oulun Terveystalo",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "oviva": {
+      "display_name": "Oviva",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "qare": {
+      "display_name": "Qare",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "qare-fr": {
+      "display_name": "Qare.fr",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "sidekick-health": {
+      "display_name": "Sidekick Health",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "sidekickhealth": {
+      "display_name": "SidekickHealth",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "suomen-terveystalo": {
+      "display_name": "Suomen Terveystalo",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "suomen-terveystalo-oyj": {
+      "display_name": "Suomen Terveystalo Oyj",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "tampere-center-for-child-adolescent-and-maternal-health-research-tamcam": {
+      "display_name": "Tampere Center for Child, Adolescent and Maternal Health Research - TamCAM",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "terveystalo": {
+      "display_name": "Terveystalo",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "terveystalo-forssa-turku-aininkainen": {
+      "display_name": "Terveystalo Forssa + Turku Aininkainen",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "terveystalo-kuntoutuspalvelut": {
+      "display_name": "Terveystalo Kuntoutuspalvelut",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "terveystalo-pori-and-harjavalta": {
+      "display_name": "Terveystalo Pori and Harjavalta",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "terveystalo-pulssi": {
+      "display_name": "Terveystalo Pulssi",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "tuhka-technologies": {
+      "display_name": "Tuhka Technologies",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "weight-doctors-nederland-quole-medical-center": {
+      "display_name": "Weight Doctors Nederland, Quole Medical Center",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "wellster-healthtech": {
+      "display_name": "Wellster Healthtech Group",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "product": "fitxpress",
+      "date": "2026-07-21",
+      "status": "active"
+    },
+    "bettertogether-losing-weight-together": {
+      "display_name": "BetterTogether - Losing Weight Together",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-07-23-israel-telehealth",
+      "product": "unknown",
+      "date": "2026-07-23",
+      "status": "active"
+    },
+    "clalit-health-services": {
+      "display_name": "Clalit Health Services",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-07-23-israel-telehealth",
+      "product": "unknown",
+      "date": "2026-07-23",
+      "status": "active"
+    },
+    "k-health": {
+      "display_name": "K Health",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-07-23-israel-telehealth",
+      "product": "unknown",
+      "date": "2026-07-23",
+      "status": "active"
+    },
+    "leumit-health-services": {
+      "display_name": "Leumit Health Services - לאומית שירותי בריאות",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-07-23-israel-telehealth",
+      "product": "unknown",
+      "date": "2026-07-23",
+      "status": "active"
+    },
+    "maccabi-health-care-services": {
+      "display_name": "Maccabi Health care Services",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-07-23-israel-telehealth",
+      "product": "unknown",
+      "date": "2026-07-23",
+      "status": "active"
+    },
+    "maccabi-health-services": {
+      "display_name": "Maccabi Health Services",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-07-23-israel-telehealth",
+      "product": "unknown",
+      "date": "2026-07-23",
+      "status": "active"
+    },
+    "meuhedet-health-services": {
+      "display_name": "Meuhedet Health Services - מאוחדת",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-07-23-israel-telehealth",
+      "product": "unknown",
+      "date": "2026-07-23",
+      "status": "active"
+    },
+    "sweetch": {
+      "display_name": "Sweetch",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-07-23-israel-telehealth",
+      "product": "unknown",
+      "date": "2026-07-23",
+      "status": "active"
+    },
+    "tyto-care": {
+      "display_name": "Tyto Care",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-07-23-israel-telehealth",
+      "product": "unknown",
+      "date": "2026-07-23",
+      "status": "active"
+    },
+    "tytocare": {
+      "display_name": "TytoCare",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-07-23-israel-telehealth",
+      "product": "unknown",
+      "date": "2026-07-23",
+      "status": "active"
+    },
+    "amplar-health": {
+      "display_name": "Amplar Health",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-07-27-australia-telehealth",
+      "product": "fitxpress",
+      "date": "2026-07-27",
+      "status": "active"
+    },
+    "bupa-australia": {
+      "display_name": "Bupa Australia",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-07-27-australia-telehealth",
+      "product": "fitxpress",
+      "date": "2026-07-27",
+      "status": "active"
+    },
+    "hcf-australia": {
+      "display_name": "HCF Australia",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-07-27-australia-telehealth",
+      "product": "fitxpress",
+      "date": "2026-07-27",
+      "status": "active"
+    },
+    "hopstep": {
+      "display_name": "Hopstep",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-07-27-australia-telehealth",
+      "product": "fitxpress",
+      "date": "2026-07-27",
+      "status": "active"
+    },
+    "instantscripts": {
+      "display_name": "InstantScripts",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-07-27-australia-telehealth",
+      "product": "fitxpress",
+      "date": "2026-07-27",
+      "status": "active"
+    },
+    "medibank": {
+      "display_name": "Medibank",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-07-27-australia-telehealth",
+      "product": "fitxpress",
+      "date": "2026-07-27",
+      "status": "active"
+    },
+    "medibank-health-solutions": {
+      "display_name": "Medibank Health Solutions",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-07-27-australia-telehealth",
+      "product": "fitxpress",
+      "date": "2026-07-27",
+      "status": "active"
+    },
+    "medibank-private": {
+      "display_name": "Medibank Private",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-07-27-australia-telehealth",
+      "product": "fitxpress",
+      "date": "2026-07-27",
+      "status": "active"
+    },
+    "medmate": {
+      "display_name": "Medmate",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-07-27-australia-telehealth",
+      "product": "fitxpress",
+      "date": "2026-07-27",
+      "status": "active"
+    },
+    "mosh": {
+      "display_name": "Mosh",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-07-27-australia-telehealth",
+      "product": "fitxpress",
+      "date": "2026-07-27",
+      "status": "active"
+    },
+    "qoctor": {
+      "display_name": "Qoctor",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-07-27-australia-telehealth",
+      "product": "fitxpress",
+      "date": "2026-07-27",
+      "status": "active"
+    },
+    "body-coach": {
+      "display_name": "The Body Coach",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-07-31-uk-telehealth-digital-health",
+      "product": "fitxpress",
+      "date": "2026-07-31",
+      "status": "active"
+    },
+    "healthier-weight": {
+      "display_name": "Healthier Weight",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-07-31-uk-telehealth-digital-health",
+      "product": "fitxpress",
+      "date": "2026-07-31",
+      "status": "active"
+    },
+    "hertility": {
+      "display_name": "Hertility",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-07-31-uk-telehealth-digital-health",
+      "product": "fitxpress",
+      "date": "2026-07-31",
+      "status": "active"
+    },
+    "huma": {
+      "display_name": "Huma",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-07-31-uk-telehealth-digital-health",
+      "product": "fitxpress",
+      "date": "2026-07-31",
+      "status": "active"
+    },
+    "newson-health": {
+      "display_name": "Newson Health",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-07-31-uk-telehealth-digital-health",
+      "product": "fitxpress",
+      "date": "2026-07-31",
+      "status": "active"
+    },
+    "peppy": {
+      "display_name": "Peppy",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-07-31-uk-telehealth-digital-health",
+      "product": "fitxpress",
+      "date": "2026-07-31",
+      "status": "active"
+    },
+    "physitrack": {
+      "display_name": "Physitrack",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-07-31-uk-telehealth-digital-health",
+      "product": "fitxpress",
+      "date": "2026-07-31",
+      "status": "active"
+    },
+    "physitrack-champion-health-and-digital-triage-platforms": {
+      "display_name": "Physitrack PLC (Champion Health and digital triage platforms)",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-07-31-uk-telehealth-digital-health",
+      "product": "fitxpress",
+      "date": "2026-07-31",
+      "status": "active"
+    },
+    "slimming-world": {
+      "display_name": "Slimming World",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-07-31-uk-telehealth-digital-health",
+      "product": "fitxpress",
+      "date": "2026-07-31",
+      "status": "active"
+    },
+    "sweatcoin": {
+      "display_name": "Sweatcoin",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-07-31-uk-telehealth-digital-health",
+      "product": "fitxpress",
+      "date": "2026-07-31",
+      "status": "active"
+    },
+    "thriva": {
+      "display_name": "Thriva",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-07-31-uk-telehealth-digital-health",
+      "product": "fitxpress",
+      "date": "2026-07-31",
+      "status": "active"
+    },
+    "tonic-weight-loss-surgery": {
+      "display_name": "Tonic Weight Loss Surgery",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-07-31-uk-telehealth-digital-health",
+      "product": "fitxpress",
+      "date": "2026-07-31",
+      "status": "active"
+    },
+    "ucl": {
+      "display_name": "UCL",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-07-31-uk-telehealth-digital-health",
+      "product": "fitxpress",
+      "date": "2026-07-31",
+      "status": "active"
+    },
+    "vira-health": {
+      "display_name": "Vira Health",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-07-31-uk-telehealth-digital-health",
+      "product": "fitxpress",
+      "date": "2026-07-31",
+      "status": "active"
+    },
+    "zoe": {
+      "display_name": "Zoe",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-07-31-uk-telehealth-digital-health",
+      "product": "fitxpress",
+      "date": "2026-07-31",
+      "status": "active"
+    },
+    "calibrate": {
+      "display_name": "Calibrate",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-08-07-us-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-07",
+      "status": "active"
+    },
+    "echelon": {
+      "display_name": "Echelon",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-08-07-us-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-07",
+      "status": "active"
+    },
+    "fitbod": {
+      "display_name": "Fitbod",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-08-07-us-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-07",
+      "status": "active"
+    },
+    "found": {
+      "display_name": "Found",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-08-07-us-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-07",
+      "status": "active"
+    },
+    "future": {
+      "display_name": "Future",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-08-07-us-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-07",
+      "status": "active"
+    },
+    "hydrow": {
+      "display_name": "Hydrow",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-08-07-us-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-07",
+      "status": "active"
+    },
+    "ifit": {
+      "display_name": "iFIT",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-08-07-us-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-07",
+      "status": "active"
+    },
+    "ladder": {
+      "display_name": "Ladder",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-08-07-us-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-07",
+      "status": "active"
+    },
+    "myfitnesspal": {
+      "display_name": "MyFitnessPal",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-08-07-us-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-07",
+      "status": "active"
+    },
+    "personify-health": {
+      "display_name": "Personify Health",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-08-07-us-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-07",
+      "status": "active"
+    },
+    "shotsy": {
+      "display_name": "Shotsy",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-08-07-us-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-07",
+      "status": "active"
+    },
+    "tonal": {
+      "display_name": "Tonal",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-08-07-us-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-07",
+      "status": "active"
+    },
+    "trainwell": {
+      "display_name": "Trainwell",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-08-07-us-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-07",
+      "status": "active"
+    }
   }
 }
