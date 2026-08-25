@@ -262,8 +262,9 @@ attributed to the page, scroll depth.
 - **Accuracy is scoped, never bragged.** Reframe to "accurate enough for which decision?" with the
   four conditions (reference method, protocol, population, workflow). Never lead with "most accurate"
   or "best-in-class" — that is an anti-positioning violation and an automatic hard fail.
-- **Medical framing is fixed language.** "FitXpress is not positioned as a medical device." Never
-  assert that a regulatory framework "does not apply".
+- **Medical framing is fixed language.** "FitXpress is not a medical device." State the boundary
+  directly; "positioned as" is banned for product, intended-use and regulatory statements
+  (`terminology-guardrails.md` §2.10). Never assert that a regulatory framework "does not apply".
 - **One page, one job.** A page serving two intents serves neither.
 - **A price signal belongs on the page.** `/pricing/` is public with real tiers: link to it and name
   the entry tier. Never publish the internal per-request rates from `pricing.md` — they contradict

@@ -23,7 +23,7 @@ tools: Read, Grep
 5. **Claims discipline:** немає «diagnoses», «makes decisions», «replaces clinician», «guarantees compliance», «detects fraud»
 6. **Accuracy:** якщо є число про точність — воно кваліфіковане (для якого decision, проти якого reference), а не одне голе число
 7. **CTA:** soft («link in bio», «article in comments»), не «Buy now» / «Book demo now» (для TOFU/MOFU)
-8. **Abbreviations M1:** кожна абревіатура розшифрована при першому вживанні
+8. **Abbreviations M1:** кожна абревіатура розшифрована при першому вживанні. Виняток — загальновідомі: AI, WWW, iOS, BMI, CEO, UK, US, EU (terminology-guardrails.md §1). `Body Mass Index (BMI)` → FAIL, правильно `BMI`
 9. **Stacked negation M2:** немає подвійних заперечень в одному реченні
 10. **Length:** в межах платформного ліміту
 

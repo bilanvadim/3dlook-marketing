@@ -4,7 +4,7 @@
 > **Rules that govern how to write against this plan:** [`content-strategy-guidelines.md`](./content-strategy-guidelines.md)
 > **Scope:** FitXpress health verticals (fitness, telehealth, GLP-1, insurance, wellness, bariatrics, clinical trials, occupational health). Mobile Tailor is out of scope for this plan.
 > **Last synced from source:** 2026-07-07. If the sheet changes, re-sync this file — it is the offline copy the agents read (they do not fetch Google).
-> **Last reconciled against the live site:** 2026-08-18 (7 health articles verified page-by-page — see `published-articles-inventory.md` → "Live-Page Verification Pass"). Publication status below reflects what is actually live, which can be ahead of the last sheet sync.
+> **Last reconciled against the live site:** 2026-08-18 (7 health articles verified page-by-page — see `published-articles-inventory.md` → "Live-Page Verification Pass"), plus a single-article check on **2026-08-24** for the `online-pharmacy-bmi-verification` rewrite. Publication status below reflects what is actually live, which can be ahead of the last sheet sync.
 
 ## Published P0 hubs (verified live 2026-08-18)
 
@@ -17,6 +17,7 @@
 | Hub 2 — Patient experience | How Mobile Body Scanning Improves Patient Engagement | 2026-08-14 | https://3dlook.ai/content-hub/mobile-body-scanning-patient-engagement/ |
 | Hub 7 — Clinical Trials | Standardizing Anthropometric Measurements for Hybrid & Decentralized Obesity Trials | 2026-07-17 | https://3dlook.ai/content-hub/clinical-trial-anthropometric-measurement-software-obesity-trials/ |
 | Hub 8 — Occupational Health | Standardizing Occupational Health Screening | 2026-07-10 | https://3dlook.ai/content-hub/occupational-health-screening-software/ |
+| Hub 4 anchor (+ Hub 2 BMI row) | Online Pharmacy BMI Verification: A 2026 Compliance Guide — **rewritten, republished in place, now also owns telehealth BMI verification** | 2026-08-24 (re-dated by the republish) | https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/ |
 
 **Remaining P0 hub gaps:** Data, Privacy, Security & Regulatory FAQ (trust asset #2, not started as a published page) · GLP-1 Market 2026 hub refresh (draft in progress) · Wellness Platforms hub (conditional on wellness apps becoming a priority ICP).
 
@@ -85,11 +86,13 @@ Navigation hub only — gateway to all FitXpress verticals. Do NOT create anothe
 
 **Hub is live (2026-08-07).** `the-potential-of-ai-in-telehealth` was refreshed in place at the same URL — do not create a second telehealth overview. Keep telehealth on remote-care workflows, privacy, documentation, patient experience. **Separate from GLP-1 eligibility and online-pharmacy BMI verification** unless the piece is explicitly the bridge. P1/P2 cluster articles below are now unblocked; new cluster pieces link up to this hub.
 
+> **Boundary update 2026-08-24.** One exception to the "separate from online-pharmacy BMI verification" rule is now live and deliberate: `online-pharmacy-bmi-verification-a-2026-compliance-guide` was rewritten and republished in place with a **telehealth BMI verification section**, so that page — not this hub — owns telehealth remote BMI verification. Telehealth cluster pieces should link to it for BMI verification rather than re-explaining the workflow.
+
 | Cluster | Article | Intent | Action | Pri | Notes / guardrail |
 |---|---|---|---|---|---|
 | Main hub | AI in Telehealth: Workflows, Privacy, Patient Experience, Remote Body Data | Hub | ✅ **PUBLISHED 2026-08-07** | P0 | **Live:** [`the-potential-of-ai-in-telehealth`](https://3dlook.ai/content-hub/the-potential-of-ai-in-telehealth/) — refreshed **in place** at the same URL from the Sep 2024 version. No competing page. |
 | Patient experience | How Mobile Body Scanning Improves Patient Engagement | TOFU/MOFU | ✅ **PUBLISHED 2026-08-14** | P0 | **Live:** [`mobile-body-scanning-patient-engagement`](https://3dlook.ai/content-hub/mobile-body-scanning-patient-engagement/). Broader than GLP-1; don't cannibalize the GLP-1 visual-progress page. |
-| BMI verification | What Is Telehealth BMI Verification / How to Verify BMI Remotely in Telehealth 2026 | BOFU | Refresh/expand (not net-new unless distinct) | P0 | **Highest cannibalization risk.** Owner = `online-pharmacy-bmi-verification`. Add a telehealth section there; standalone only if search demand differs. Differentiate on program workflows/provider review, not pharmacy compliance. |
+| BMI verification | What Is Telehealth BMI Verification / How to Verify BMI Remotely in Telehealth 2026 | BOFU | ✅ **DONE 2026-08-24 — shipped as a section, not a page** | P0 | **Live inside** [`online-pharmacy-bmi-verification-a-2026-compliance-guide`](https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/) → section *"How to verify BMI remotely in a telehealth workflow"* (four sub-sections: when extra verification is needed · four remote methods · practical workflow · how FitXpress supports it). This is exactly the instruction this row carried. **Do not re-pitch and do not publish a standalone page** — the drafted standalone at `workspace/seo/articles/telehealth-bmi-verification-2026/` is frozen as SUPERSEDED. Reopen only if search data shows "telehealth BMI verification" demand materially separate from the pharmacy term. |
 | Workflow | Remote Body Measurement Workflows for Telehealth Providers | MOFU | Create net-new | P1 | Operational, not trend-led. |
 | GLP-1 bridge | Remote Body Data Tracking for GLP-1 Telehealth Programs | MOFU/BOFU | Create net-new | P1 | Focus longitudinal tracking, not eligibility verification. |
 | Privacy | AI Body Scanning in Telehealth: Privacy, Consent, Data Governance Basics | Objection | Create net-new | P1 | Careful legal language. |
@@ -123,7 +126,7 @@ Refresh `glp-1-market` as the market hub. **Avoid duplicating** GLP-1 Market, Vi
 
 ## Hub 4 — Insurance Underwriting & BMI Verification
 
-`online-pharmacy-bmi-verification` (17.06.2026) currently acts as the hub. Frame everything as **underwriting-support / BMI-build verification only**. Do NOT imply automated underwriting, fraud detection, or employment-screening decisions.
+`online-pharmacy-bmi-verification` currently acts as the hub. **Rewritten and republished in place 2026-08-24** — same URL, now covering both pharmacy order-flow and telehealth remote BMI verification, and re-dated by WordPress to 2026-08-24 (the older 17.06.2026 / Jun 4 dates in the registers were the pre-rewrite publication and no longer appear on the page). Frame everything as **underwriting-support / BMI-build verification only**. Do NOT imply automated underwriting, fraud detection, or employment-screening decisions.
 
 | Cluster | Article | Intent | Action | Pri | Notes / guardrail |
 |---|---|---|---|---|---|

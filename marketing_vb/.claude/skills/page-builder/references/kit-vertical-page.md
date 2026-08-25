@@ -183,11 +183,11 @@ principle #11. Medical, clinical or regulatory framing goes to Whitney before it
    Anything else goes to Open items. One number, byte-identical everywhere on the page (guardrail #2).
 5. **Name regulators and standards precisely** — the framework, the jurisdiction, and what it governs.
    A vague gesture at a standard is worse than omitting it. Expand every acronym at first use, FDA,
-   ICH, GCP, BMI and DEXA included (M1).
+   ICH, GCP and DEXA included (M1). BMI, CEO, UK, US and EU are commonly known and stay bare.
 6. **Scope accuracy, never brag about it.** The reframe in slot 9 is mandatory. Leading with "most
    accurate" or "best-in-class" is an anti-positioning violation and a hard fail at the judge.
-7. **State the boundary once** — "not positioned as a medical device" — and do not chain a second
-   negation onto it (M2).
+7. **State the boundary once**, directly: "FitXpress is not a medical device." Do not chain a
+   second negation onto it (M2), and do not write "positioned as" (terminology guardrail §2.10).
 8. **Only your own cases from this vertical.** Fewer than two means G-I should have stopped the page.
 9. **Do not restate the whole workflow.** Differences only.
 10. **FAQ stays narrow.** General questions belong on the product page.

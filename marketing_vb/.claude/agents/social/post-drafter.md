@@ -145,7 +145,9 @@ created: YYYY-MM-DD
 4. **Profile tone.** Personal profiles — first person. Company — third person or "we".
 5. **LinkedIn: `brand-assets/linkedin-post-prompts.md` is binding.** Never write a `linkedin-*` post without reading that profile's section first. Never exceed 1-2 emoji and never add hashtags, whatever the Doc's own numbers say.
 6. **After writing** — call `post-brand-checker`. PASS → save. FAIL → rewrite (max 2 iterations, then WARNING).
-6b. **Before calling the checker, run the one-line self-check:** "what in this post still reads as machine-written?" Hard fails and the full catalogue: `brand-assets/style-guides/ai-tells-sweep.md`. At draft time hold only the hard fails (banned words and phrasings, negative parallelism, punch triads, em dash, 0 hashtags, max 2 emoji); the full sweep is `social-editor` Pass 2b. A post that states and never judges reads as compiled — take a position somewhere.
+6b. **Terminology guardrails apply to posts too** — `brand-assets/content-strategy/terminology-guardrails.md`, Part 2. In a short post the ones that bite are: em dash, `plus` stacking capabilities, `so` introducing a benefit, `let` for allow, `by hand` for manually, `objective` about our own output, `positioned as` for anything the product is or is not (say "FitXpress is not a medical device", never "is not positioned as"), and presumed-reaction openers ("what most teams get wrong…"). BMI, CEO, UK, US and EU are commonly known and never expanded.
+
+6c. **Before calling the checker, run the one-line self-check:** "what in this post still reads as machine-written?" Hard fails and the full catalogue: `brand-assets/style-guides/ai-tells-sweep.md`. At draft time hold only the hard fails (banned words and phrasings, negative parallelism, punch triads, em dash, 0 hashtags, max 2 emoji); the full sweep is `social-editor` Pass 2b. A post that states and never judges reads as compiled — take a position somewhere.
 
 ## Where to save
 

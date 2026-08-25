@@ -1,8 +1,8 @@
 # Published Articles Inventory — 3DLOOK Content Hub
 
-> Last updated: 2026-08-21
+> Last updated: 2026-08-24
 > Source: `https://3dlook.ai/post-sitemap.xml` (Yoast SEO — authoritative)
-> Total: **156 published articles** (155 in the 2026-08-18 sitemap snapshot, +1 published 2026-08-21 and registered by hand before the next sitemap pull)
+> Total: **156 published articles** (155 in the 2026-08-18 sitemap snapshot, +1 published 2026-08-21 and registered by hand before the next sitemap pull). The 2026-08-24 `online-pharmacy-bmi-verification` rewrite **does not change the count** — it was republished at its existing URL.
 > Purpose: single source of truth for what's published, mapped to content plan hubs
 
 ---
@@ -21,6 +21,9 @@ Seven health articles were read on the live site and reconciled against this inv
 | 6 | `occupational-health-screening-software` | Standardizing Occupational Health Screening: Faster Intake, Better Documentation, Fewer Rescreens | **2026-07-10** | 2026-07-17 | ~4,500 | `workspace/seo/articles/2026-06-08-occupational-health-screening/` |
 | 7 | `mobile-body-scanning-accuracy` | Body Scanning Accuracy: A Framework for Enterprise Decisions | **2026-07-03** | 2026-07-30 | ~4,500 | `workspace/seo/articles/2026-05-29-3dlook-accuracy-enterprise-evaluation/` |
 | 8 | `top-7-remote-body-composition-tools-glp-1-clinics` | 7 Body Composition and Progress-Tracking Tools for Remote GLP-1 Clinics | **2026-08-21** | 2026-08-21 | ~3,060 | `workspace/seo/articles/top-7-remote-body-composition-tools-glp-1-clinics/` |
+| 9 | `online-pharmacy-bmi-verification-a-2026-compliance-guide` | Online Pharmacy BMI Verification: A 2026 Compliance Guide | **2026-08-24** (re-dated by the republish) | 2026-08-24 | ~2,260 | `workspace/seo/articles/2026-05-21-online-pharmacy-bmi-verification/` |
+
+> **Row 9 added 2026-08-24.** This is a **rewrite republished in place at the same URL**, not a new article — the telehealth section was added and the pharmacy sections were rewritten. Verified against the live page the same day (`article:published_time` 2026-08-24T11:06:01+00:00, modified 11:06:03+00:00). Byline on site: **Assel Sekerova** (note: *not* the "Asselya" spelling used on row 8 — the site is inconsistent between the two). Two things worth knowing: **(a)** the republish **reset the publication date** — the page no longer shows the Jun 2026 original, so the article's true age now lives only in this repo; **(b)** the live text matches **no draft in the folder** — `draft-v5-revision2.md` was edited further before publishing, so the live body was transcribed into `published-live-2026-08-24.md`. Full delta in that folder's `FINAL-PUBLISHED.md`.
 
 > **Row 8 added 2026-08-21**, after the 2026-08-18 pass. Verified against the live URL the same day (`article:published_time` 2026-08-21T15:20:32+00:00, modified 15:24:23+00:00). Byline on site: **Asselya Sekerova**. Word count is the draft figure — the live count may differ. Two draft-vs-live deltas: the live H1 dropped the "Top 7" ranking framing that the slug still carries, and the drafts spell the author "Assel Sekerova" while the site reads "Asselya Sekerova".
 
@@ -58,8 +61,8 @@ Each working directory now carries a `FINAL-PUBLISHED.md` marker with the live U
 | 2 | Accuracy / Buyer Evaluation | P0 | ✅ Jul 3 | DEXA vs, Tech Comparison, Accuracy ROI, Daily Changes | None (trust assets pending) |
 | 3 | Data, Privacy, Security & Regulatory FAQ | P0 | ❌ | — | **OVERDUE** |
 | 4 | AI in Fitness | P0 hub + P1/P2 | ✅ Jul 31 | AI in Fitness (refreshed hub), Fitness Tech Companies, AI Body Scanning for Fitness, Connected Fitness, Fitness Apps, Fitness Trends | Hub refreshed & live Jul 31, 2026; P1/P2 clusters pending |
-| 5 | AI in Telehealth | P0 hub + P1/P2 | ✅ Aug 7 | Patient Engagement (Aug 14) | Hub refreshed & live Aug 7, 2026; P1/P2 clusters pending |
-| 6 | GLP-1 Market | P0 hub + P1/P2 | ✅ Old hub exists | Pharmacy BMI, GLP-1 Compliance, Visual Progress, Weight Loss Industry, Weight Loss Clinic Tips, Body Scanning for Weight Loss, Beyond BMI, Body Composition Tools listicle (Aug 21) | Needs 2026 hub refresh |
+| 5 | AI in Telehealth | P0 hub + P1/P2 | ✅ Aug 7 | Patient Engagement (Aug 14), **Telehealth BMI verification — shipped Aug 24 as a section of the Pharmacy BMI article, not a page** | Hub refreshed & live Aug 7, 2026; BMI-verification row closed; remaining P1/P2 clusters pending |
+| 6 | GLP-1 Market | P0 hub + P1/P2 | ✅ Old hub exists | Pharmacy BMI (**rewritten Aug 24**), GLP-1 Compliance, Visual Progress, Weight Loss Industry, Weight Loss Clinic Tips, Body Scanning for Weight Loss, Beyond BMI, Body Composition Tools listicle (Aug 21) | Needs 2026 hub refresh |
 | 7 | Insurance Underwriting | P0 | ✅ Jun 17 | — | None |
 | 8 | Wellness Platforms | P0 | ✅ Mar 30 | — | P1 articles not published |
 | 9 | Bariatric | P0 | ✅ Jun 5 | — | None |
@@ -96,7 +99,7 @@ Each working directory now carries a `FINAL-PUBLISHED.md` marker with the live U
 - `wellness-rewards-verification-employers-insurers-using-ai-3d-body-scanning/` — **Wellness Rewards Verification** — Mar 30, 2026 — Hub
 
 ### GLP-1 / Weight Loss / Pharmacy (Hub #6)
-- `online-pharmacy-bmi-verification-a-2026-compliance-guide/` — **Online Pharmacy BMI Verification: 2026 Compliance Guide** — Jun 4, 2026 — P0/P1
+- `online-pharmacy-bmi-verification-a-2026-compliance-guide/` — **Online Pharmacy BMI Verification: A 2026 Compliance Guide** — **rewritten & republished in place Aug 24, 2026** (originally Jun 2026; the republish re-dated the post) — P0/P1 — **also owns Telehealth BMI verification** (Hub #5) via its "How to verify BMI remotely in a telehealth workflow" section
 - `glp-1-market/` — **The Growth of the GLP-1 Market** — Oct 2024 — Old hub (needs refresh)
 - `glp-1-compliance-challenge/` — **GLP-1 Compliance Challenge** — May 2025 — Supporting
 - `visual-progress-tracking-glp1-adherence-retention/` — **Visual Progress Tracking for GLP-1 Adherence & Retention** — Dec 2025 — Supporting
@@ -116,6 +119,7 @@ Each working directory now carries a `FINAL-PUBLISHED.md` marker with the live U
 ### Telehealth (Hub #5)
 - `the-potential-of-ai-in-telehealth/` — **AI in Telehealth: Workflows, Privacy, Patient Experience, and Remote Body Data Use Cases** — Aug 7, 2026 — Hub (refreshed in place from Sep 2024)
 - `mobile-body-scanning-patient-engagement/` — **How Mobile Body Scanning Improves Patient Engagement** — Aug 14, 2026 — P0 Supporting
+- `online-pharmacy-bmi-verification-a-2026-compliance-guide/` — **Telehealth BMI verification lives here** (section, not a page) — Aug 24, 2026 — P0 Supporting — cross-listed from Hub #6; do not write a standalone telehealth BMI article
 
 ### BCRL / Oncology (NEW — not in plan)
 - `breast-cancer-related-lymphedema-explained-3d-body-scanning-can-transform-early-detection-monitoring-care-management/` — **BCRL: AI 3D Scanning in Detection & Care** — Jul 8, 2026 — New vertical
@@ -307,7 +311,7 @@ Main Health Hub (ai-body-data-health-hub) — Jul 24, 2026
   │   └── wellness-rewards-verification (Mar 30, 2026) ← HUB
   │
   ├── GLP-1 / Pharmacy / Weight Loss
-  │   ├── online-pharmacy-bmi-verification (Jun 4, 2026)
+  │   ├── online-pharmacy-bmi-verification (rewritten & republished Aug 24, 2026) ← also owns Telehealth BMI verification
   │   ├── glp-1-market (Oct 2024) ← OLD hub — needs refresh
   │   ├── glp-1-compliance-challenge (May 2025)
   │   ├── visual-progress-tracking-glp1 (Dec 2025)
@@ -326,7 +330,8 @@ Main Health Hub (ai-body-data-health-hub) — Jul 24, 2026
   │
   ├── Telehealth
   │   ├── the-potential-of-ai-in-telehealth (Aug 7, 2026) ← HUB (refreshed)
-  │   └── mobile-body-scanning-patient-engagement (Aug 14, 2026) ← P0 Supporting
+  │   ├── mobile-body-scanning-patient-engagement (Aug 14, 2026) ← P0 Supporting
+  │   └── online-pharmacy-bmi-verification (Aug 24, 2026) ← BMI-verification section (page lives under GLP-1/Pharmacy)
   │
   ├── BCRL / Oncology (NEW)
   │   └── breast-cancer-related-lymphedema (Jul 8, 2026) ← not in plan
@@ -361,7 +366,7 @@ Main Health Hub (ai-body-data-health-hub) — Jul 24, 2026
 
 | Priority | Article | Hub |
 |----------|---------|-----|
-| P1 | What Is Telehealth BMI Verification in 2026 | #5 Telehealth |
+| ~~P1~~ ✅ | ~~What Is Telehealth BMI Verification in 2026~~ | #5 Telehealth — **DONE Aug 24, 2026** — shipped as a section, not a page: "How to verify BMI remotely in a telehealth workflow" inside [`online-pharmacy-bmi-verification-a-2026-compliance-guide`](https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/). The standalone draft at `workspace/seo/articles/telehealth-bmi-verification-2026/` is frozen as SUPERSEDED — do not publish it |
 | ~~P1~~ ✅ | ~~Top 7 Remote Body Composition Tools for GLP-1 Clinics~~ | #6 GLP-1 — **DONE Aug 21, 2026** — published as "7 Body Composition and Progress-Tracking Tools for Remote GLP-1 Clinics" at [`top-7-remote-body-composition-tools-glp-1-clinics`](https://3dlook.ai/content-hub/top-7-remote-body-composition-tools-glp-1-clinics/) |
 | P1 | Top Mobile Body Scanning Software for Wellness Apps | #8 Wellness |
 | P1 | Adding Remote Body Measurement to a DCT Platform | #10 Clinical Trials |

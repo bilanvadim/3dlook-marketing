@@ -22,3 +22,6 @@ workspace/outbound/exclusions/nick-registry.json
 workspace/outbound/exclusions/olena-registry.json
 workspace/outbound/exclusions/katya-registry.json
 workspace/outbound/exclusions/vadim-registry.json
+
+# Playwright MCP scratch output (console logs, page snapshots) — not project content
+.playwright-mcp/

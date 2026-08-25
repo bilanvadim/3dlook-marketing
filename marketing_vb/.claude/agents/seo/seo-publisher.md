@@ -42,6 +42,10 @@ tools: Read, Write
 - [ ] Intro hook в первых 2 предложениях
 - [ ] CTA placement где указано в плане; тип CTA соответствует intent (soft/evaluation/direct)
 - [ ] No generic AI patterns (тройные параллелизмы, em-dash rhetoric)
+- [ ] **Terminology guardrails** (`brand-assets/content-strategy/terminology-guardrails.md`): нет em dash; нет `objective` про наш вывод, `reader / audience / the following sections / below`, `this article / this guide`, `by hand`, `let`, `plus` как коннектора, `so` как коннектора выгоды, `positioned as` про продукт или регуляторный статус, presumed-reaction фраз, поведения приписанного понятиям
+- [ ] **Abbreviations (M1 + исключение):** непонятные аббревиатуры развёрнуты при первом употреблении (DEXA, GLP-1, FDA, ICH, GCP); BMI, CEO, UK, US, EU — БЕЗ расшифровки
+- [ ] **Medical framing сформулирован напрямую:** «FitXpress is not a medical device», не «is not positioned as a medical device»
+- [ ] Ссылки на смысловых анкорах; сторонние источники — нейтральные качественные сайты, не vendor-блоги
 - [ ] Images / alt text suggestions (если нужны)
 ```
 

@@ -112,8 +112,9 @@ Grade harshly. Partial credit per axis, with the lost points attributable.
       is automatically this
 - [ ] "independent", "validated", "third-party" or "clinically validated" without a named external
       party and a citable output (guardrail #3)
-- [ ] Medical framing other than "not positioned as a medical device", or a claim that a regulatory
-      framework "does not apply" (guardrail #6)
+- [ ] Medical framing other than the direct "FitXpress is not a medical device", any use of
+      "positioned as" for a product or regulatory statement (terminology guardrail §2.10), or a claim
+      that a regulatory framework "does not apply" (guardrail #6)
 - [ ] A bare headline percentage with no methodology and no "available under NDA" (guardrail #4)
 - [ ] Leading with "most accurate", "best-in-class" or equivalent — anti-positioning violation
 - [ ] Negative parallelism ("not just X — it's Y") or a rule-of-three punch triad anywhere in the copy

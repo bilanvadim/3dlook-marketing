@@ -53,13 +53,17 @@ Run the 11 principles as an explicit checklist. The five that break pages most o
 - **#4 No bare headline percentages.** ">95%" invites "of what, measured how, over how many sessions?"
   Replace with a qualitative claim plus one concrete sub-figure plus "detailed methodology available
   under NDA".
-- **#6 Medical framing.** "FitXpress is not positioned as a medical device." Never assert that a
-  framework "does not apply". Compliance is framed on data-privacy frameworks, not medical-device ones.
+- **#6 Medical framing.** "FitXpress is not a medical device." State the boundary directly:
+  "positioned as" is banned for product, intended-use and regulatory statements (terminology guardrail
+  §2.10). For intended use: "FitXpress does not diagnose conditions, make clinical decisions, or
+  determine treatment eligibility." Never assert that a framework "does not apply". Compliance is
+  framed on data-privacy frameworks instead of medical-device ones.
 
 Then the mechanical rules:
 
-- **M1 — expand every acronym at first use.** Universal, including the obvious ones (BMI) and the
-  authorities (FDA, ICH, GCP). Run a first-use scan over the finished page, not from memory.
+- **M1 — expand every acronym at first use.** Universal, including the authorities (FDA, ICH, GCP).
+  The commonly known ones stay bare: AI, WWW, iOS, BMI, CEO, UK, US, EU. Run a first-use scan over the
+  finished page, not from memory.
 - **M2 — no stacked negation.** One clear boundary sentence. No chained negatives, no parenthetical
   "is — and is not —", no "necessary but not sufficient".
 
@@ -82,14 +86,31 @@ Asselya's word-level rules. Grep the page for each of these:
 | "plus" (stacking capabilities) | including, such as, along with, as well as |
 | "let" | allow |
 | "so" (introducing a benefit) | reducing…, helping to reduce…, which can reduce… |
+| "positioned as" (product, intended use, regulatory status) | state the boundary directly: "FitXpress is not a medical device" |
+| "what trips people up", "the mistake buyers make", "what most teams misunderstand" | name the components of the issue |
+| "do the heavy lifting" and other behaviour attributed to concepts | "matter", "apply", "determine" |
 | corrective negation "X, not Y" | lead with the recommended approach and its purpose |
+| corrective "rather than" ("a report rather than a live feed") | state the characteristic, then the limitation in its own sentence |
+| "Body Mass Index (BMI)" | "BMI" — commonly known, never expanded |
 
-Two judgement calls rather than bans: **we / our** — only where ownership matters, otherwise reframe
+Four construction rules on the same page, from Part 1 of the guardrails:
+
+- **Write relationships explicitly.** "depends on", "varies by", "is determined by" instead of
+  compressed phrasing the reader has to decode. Avoid *"the historical records the feature needs scale
+  to what is being compared"*; prefer *"the historical records required depend on the type of
+  comparison"*.
+- **No presumed audience reaction.** Define the issue and name its components.
+- **No behaviour attributed to concepts.** Two properties *matter*; they do not *do the heavy lifting*.
+- **Anchor every citation.** Links go on the meaningful phrase, and third-party sources are
+  high-quality neutral sites. No vendor blogs, ours or a competitor's.
+
+Two judgement calls instead of bans: **we / our** — only where ownership matters, otherwise reframe
 around the buyer's workflow; **you** — acceptable on a vertical page's conversion sections and
 practical guidance, avoided in the educational blocks, which stay authoritative.
 
 The one licensed negation: a product, clinical, legal or regulatory boundary. *"FitXpress supports
-clinician review; it is not a diagnostic tool."* That is the exception, and it is used once.
+clinician review; it is not a diagnostic tool."* That is the exception, and it is used once. The same
+licence covers corrective "rather than" when the contrast states a real boundary.
 
 ---
 

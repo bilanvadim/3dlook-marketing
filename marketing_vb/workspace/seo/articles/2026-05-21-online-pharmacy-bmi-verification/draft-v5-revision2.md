@@ -10,7 +10,15 @@ secondary_keywords:
   - AI photo fraud detection
   - how to verify BMI remotely in a telehealth workflow
 author: Assel Sekerova
-status: draft
+status: superseded_by_live
+superseded_on: 2026-08-24
+superseded_by: published-live-2026-08-24.md
+live_url: https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/
+superseded_note: >
+  This draft is the closest ancestor of the live page but is NOT the live text.
+  The article was edited further before the 2026-08-24 republish (one section cut,
+  four H2s renamed, disclaimer + roadmap paragraphs added, checklist turned into a
+  Yoast FAQ block, register softened). See FINAL-PUBLISHED.md for the full delta.
 version: v5-revision2
 created: 2026-05-26
 last_updated: 2026-08-06

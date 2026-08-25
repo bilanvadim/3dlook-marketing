@@ -3,15 +3,23 @@ track: seo
 product: fitxpress
 stage: publish
 target_keyword: online pharmacy BMI verification
-status: revision_ready_for_review
+status: published
 revision: v5-revision2
 created: 2026-05-21
-last_updated: 2026-08-06
+last_updated: 2026-08-24
+published_date: 2026-08-24
 cms: wordpress
 production_url: https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/
+live_body_matches: published-live-2026-08-24.md
 internal_links_confirmed: true
 og_image_owner: vadim (canva)
 ---
+
+> ✅ **SHIPPED 2026-08-24.** This revision was published in place at the same URL. The live text is
+> `published-live-2026-08-24.md`, not `draft-v5-revision2.md` — the article was edited further before
+> publication. Read `FINAL-PUBLISHED.md` for the draft-vs-live delta before treating anything below as
+> current. Meta title and slug shipped as recommended here; the meta description shipped verbatim from
+> §2. The **og:title recommended in §4 did not ship** — the live `og:title` equals the meta title.
 
 # Publish Package — 2026-05-21-online-pharmacy-bmi-verification (Revision 2)
 

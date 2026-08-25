@@ -119,6 +119,27 @@ reader / the audience", "the following sections", "see below", "this article / t
 hand", "let" for allow, "plus" as a capability connector, "so" introducing a benefit, corrective
 negation "X, not Y".
 
+**"Positioned as"** (`terminology-guardrails.md` §2.10) — banned when it describes what the product
+is, does, supports, replaces, or is intended for. *"FitXpress is not positioned as a medical device"*
+becomes *"FitXpress is not a medical device."* Allowed only when the sentence is genuinely about
+market or competitive positioning. This one is a reversal: until 2026-08-13 the "positioned as"
+phrasing was the prescribed compliant form, so it is still in older articles and in some agent
+prompts. It is now a hard fail.
+
+**Presumed audience reaction** (`terminology-guardrails.md` §1.5) — "what trips people up", "the
+mistake buyers make", "what most teams misunderstand", "where teams get it wrong". Name the
+components of the issue instead of narrating what the reader is assumed to think.
+
+**Behaviour attributed to concepts** (`terminology-guardrails.md` §1.6) — "two properties do the
+heavy lifting", "the model wants", "the data knows". Too casual for a healthcare-enterprise register.
+Plain verbs: "matter", "apply", "determine".
+
+**Corrective contrast** — corrective negation "X, not Y" and corrective "rather than" ("arrives as a
+report rather than a live data feed"). Both are judgment calls, not mechanical bans: they are licensed
+when the contrast states a real product, clinical, legal or regulatory boundary. Outside that, state
+the characteristic directly and put the limitation in its own sentence. The detector reports these as
+soft markers because it cannot tell a boundary from a slight.
+
 **Reserved words** (editorial guardrail #3) — "independent(ly) validated", "third-party verified",
 "clinically validated", "peer-reviewed" without a named external party and a citable output. The
 compliant forms are internal validation, benchmark participation, dataset enrichment. The detector
@@ -276,7 +297,7 @@ Title Case and no room for a participial tail. What it does not mute is the hard
 | Social | `mvb-social:social-editor` | **Pass 2b** — sweep across all 9 posts, detector per post. |
 | Outbound | `mvb-outbound:message-sequencer` | Per message, `dm` channel, before writing the CSV. |
 | Pages | `page-builder` | Phase 3 pass 3, layer 4 — see `references/copy-humanisation.md`, which owns the page-shaped version of this and adds the terminology and guardrail layers. |
-| Any artefact | `mvb-core:brand-checker` | Deep check: numbers against `proof-points.md`, tokens against `DESIGN.md`, M1/M2, plus this sweep. |
+| Any artefact | `mvb-core:brand-checker` | Deep check: numbers against `proof-points.md`, tokens against `DESIGN.md`, M1/M2/M3, as well as this sweep. |
 | Ad hoc | `/humanize` | Vadim pastes text or a path; full skill treatment. |
 
 `mvb-social:post-brand-checker` is the fast 13-point social check. It is not this sweep and does not

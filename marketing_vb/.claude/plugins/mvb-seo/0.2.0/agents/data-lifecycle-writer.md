@@ -43,7 +43,7 @@ Topics: Photos, Measurements & body composition data, 3D models & progress track
 - Who performs tracking (3DLOOK, customer, both)
 - Configuration (optional, must be enabled)
 - Deletion impact
-- NOT diagnostic — positioned as operational data
+- NOT diagnostic. State it directly: FitXpress produces operational data and does not diagnose conditions. Never write "positioned as" (terminology-guardrails.md §2.10)
 
 ## Tone rules (CRITICAL)
 - Use: "Enterprise customers can", "The customer", "3DLOOK", "FitXpress", "The platform"

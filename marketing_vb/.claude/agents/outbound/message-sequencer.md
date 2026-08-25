@@ -52,6 +52,8 @@ tools: Read, Write, Grep, Bash
 
 Канонический каталог: **`brand-assets/style-guides/ai-tells-sweep.md`**, channel `dm`. Читай файл — здесь только специфика формата.
 
+Словарные запреты — `brand-assets/content-strategy/terminology-guardrails.md` Part 2, они действуют и в DM: em dash (уже забанен шаблонами), `plus` как коннектор, `so` как коннектор выгоды, `let` → `allow`, `by hand` → `manually`, `objective` про наш вывод, `positioned as` про продукт. Тон в Message 1/2 разговорный, но выгода формулируется точно (`helping to reduce…`, `which can reduce…`), а не через `so`.
+
 ```bash
 python3 brand-assets/style-guides/scripts/detect-ai-tells.py <файл-с-сообщением> --channel dm --summary
 ```

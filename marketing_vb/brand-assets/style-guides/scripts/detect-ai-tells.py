@@ -15,9 +15,18 @@ What is different from upstream:
     and in a 600-character LinkedIn DM. A DM has no headings to Title Case and no room for a
     participial tail; an article has both.
   * LinkedIn house rules (0 hashtags, max 2 emoji) are checked for `post` and `dm`.
-  * Upstream markers that misfire on this corpus are scoped rather than dropped: `navigate`
+  * Upstream markers that misfire on this corpus are scoped instead of dropped: `navigate`
     only figuratively, `represents` only where a plain verb would do, `objective` only about
     our own output.
+  * Synced with the terminology guardrails Doc of 2026-08-13 (2026-08-25): `positioned_as`,
+    `presumed_reaction` and `anthropomorphism` are new HARD categories; `plus` as a capability
+    connector and `so` introducing a benefit joined `terminology_guardrails`; corrective
+    negation and corrective "rather than" are SOFT (`corrective_contrast`) because both are
+    licensed when the contrast states a real product, clinical, legal or regulatory boundary
+    and no regex can tell a boundary from a slight.
+  * `positioned_as` is a REVERSAL, not a new ban: "not positioned as a medical device" was the
+    prescribed compliant form until 2026-08-13, so it is still in published articles and in any
+    agent prompt that has not been re-synced. Expect hits on the old corpus.
 
 Usage:
     python3 detect-ai-tells.py path/to/draft.md --channel article --pretty
@@ -98,7 +107,7 @@ HARD_EN = {
     "em_dash": [
         r"[—–]",
     ],
-    # terminology-guardrails.md — Asselya's word-level rules
+    # terminology-guardrails.md — Asselya's word-level rules (Part 2)
     "terminology_guardrails": [
         # "objective" about our own output
         r"\bobjective\s+(measurement|data|record|assessment|metric|number|result|output|scan)",
@@ -110,6 +119,50 @@ HARD_EN = {
         r"\bour\s+(content|article|guide)\b",
         r"\bby\s+hand\b",
         r"\blets?\s+(you|them|teams?|clinicians?|operators?|users?)\b",
+        # "plus" as a capability connector (2.7). Sentence-initial and mid-list forms only:
+        # "A plus B" as arithmetic or "a plus for the clinic" are different words.
+        r"(?:(?m:^)|[.!?]\s+)\s*Plus\b",
+        r",\s+plus\s+\w",
+        # "so" introducing a result or business benefit (2.9). Scoped to the benefit shape —
+        # "so that" and "so far" are not the banned use, and neither is "so" as an intensifier.
+        r",\s+so\s+(?:you|they|it|teams?|clinics?|clinicians?|providers?|patients?|payers?|"
+        r"underwriters?|operators?|members?|the\s+\w+)\s+(?:can|could|get|gets|save|saves|"
+        r"avoid|avoids|reduce|reduces|see|sees|know|knows|do|does|don'?t|never|no\s+longer)\b",
+    ],
+    # terminology-guardrails.md 2.10 — "positioned as" for product / intended-use / regulatory
+    # statements. REVERSAL: this phrasing was the prescribed compliant form until 2026-08-13,
+    # so it is still in older articles and in prompts that have not been re-synced.
+    # "positioned as a market leader" (genuine market positioning) is the licensed exception and
+    # is deliberately not matched.
+    "positioned_as": [
+        r"\bnot\s+positioned\s+as\b",
+        r"\b(?:is|are|was|were|be|being|been)\s+positioned\s+as\s+(?:a|an|the)?\s*"
+        r"(?:supporting|support|medical|diagnostic|clinical|screening|verification|measurement|"
+        r"replacement|alternative|equivalent|substitute|tool|device|solution|platform|layer|"
+        r"service|api|sdk)\b",
+        r"\bpositioned\s+as\s+equivalent\b",
+    ],
+    # terminology-guardrails.md 1.5 — no presumed audience reaction
+    "presumed_reaction": [
+        r"\bwhat\s+trips\s+(?:up\s+)?(?:people|teams|buyers|most|readers|clinics)",
+        r"\btrips?\s+up\s+(?:most|many|some)?\s*\w+\s+(?:reviews?|teams?|buyers?|programs?)",
+        r"\bthe\s+(?:common|biggest|classic|usual)\s+mistake\b",
+        r"\bthe\s+mistake\s+(?:buyers|teams|clinics|most|many|people)\b",
+        r"\bwhat\s+most\s+(?:teams|buyers|people|clinics|programs)\s+"
+        r"(?:misunderstand|get\s+wrong|miss|overlook|assume)\b",
+        r"\bwhere\s+(?:teams|buyers|people|most)\s+(?:get\s+it\s+wrong|go\s+wrong|slip\s+up)\b",
+        r"\bmost\s+(?:teams|buyers|people|clinics)\s+(?:assume|think|believe)\b",
+        r"\byou\s+might\s+(?:be\s+)?(?:think|thinking|wondering|surprised)\b",
+    ],
+    # terminology-guardrails.md 1.6 — behaviour attributed to concepts (too casual for the
+    # healthcare-enterprise register). Narrow on purpose: only the idioms that actually recur.
+    "anthropomorphism": [
+        r"\bheavy\s+lifting\b",
+        r"\bdoes?\s+the\s+work\s+for\b",
+        r"\b(?:data|model|models|algorithm|algorithms|system|systems|platform|feature|features|"
+        r"scan|scans|metric|metrics|number|numbers)\s+"
+        r"(?:wants?|knows?|thinks?|believes?|understands?|cares?|decides?|feels?|struggles?)\b",
+        r"\b(?:workflow|process|pipeline)s?\s+(?:fights?|resists?|wants?)\b",
     ],
     # editorial-guardrails.md #3 — reserved words need a named external party
     "reserved_words": [
@@ -307,6 +360,15 @@ SOFT_EN = {
         r"\bcircling\s+back\b",
         r"\bjust\s+following\s+up\b",
         r"\bwanted\s+to\s+(reach\s+out|pick\s+your\s+brain)\b",
+    ],
+    # terminology-guardrails.md 1.8 / 1.9 — corrective negation and corrective "rather than".
+    # SOFT on purpose: both are licensed when the contrast states a real product, clinical, legal
+    # or regulatory boundary, and no regex can tell a boundary from a slight. Reported for the
+    # editor to judge, one hit at a time.
+    "corrective_contrast": [
+        r"\brather\s+than\b",
+        r"\b(?:is|are|was|were|means|becomes|comes)\s+(?:a|an|the)?\s*[\w-]+(?:\s+[\w-]+){0,3},\s+not\s+(?:a|an|the)?\s*[\w-]+",
+        r"\bit'?s\s+(?:about|a)\s+[\w-]+(?:\s+[\w-]+){0,3},\s+not\b",
     ],
     "slogan_ending": [
         r"(?m)^.{0,80}(the\s+future\s+is\s+here|that'?s\s+the\s+real\s+(win|shift)|and\s+that\s+changes\s+everything)\.?\s*$",
