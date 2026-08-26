@@ -20,6 +20,8 @@
 set -uo pipefail
 
 REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+# The one place this path is allowed to appear in live code: this script exists to
+# assert the ABSENCE of the dependency, so naming it here is the check, not a tie.
 LEGACY_TREE="/srv/vadim_prod/ai-agents-config"
 QUIET=0; [ "${1:-}" = "--quiet" ] && QUIET=1
 
