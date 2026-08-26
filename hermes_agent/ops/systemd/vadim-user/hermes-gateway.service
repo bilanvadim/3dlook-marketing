@@ -1,0 +1,51 @@
+# Hermes Agent Gateway — the Telegram end of the system.
+#
+# This is the process that long-polls Telegram, runs claude_switcher's routing, and
+# decides whether a message is conversation or a job. If it is down, Telegram goes
+# silent; nothing else in the chain can compensate.
+#
+# Captured into this repo on 2026-08-26. It had been living only in
+# ~/.config/systemd/user, which meant the single most important unit in the system
+# existed on exactly one machine and in no backup.
+#
+# %h is systemd's home-directory specifier, used instead of a literal
+# /home/vadim_prod so the unit survives being installed under a different account.
+#
+# The venv path points into the INSTALLED hermes-agent package, not into this repo:
+# Hermes is third-party software that bootstrap/install.sh installs, and this repo
+# owns the configuration around it rather than vendoring it.
+#
+# Two exit codes carry meaning and must not be "simplified" away:
+#   75 — planned restart. RestartForceExitStatus keeps systemd restarting even if
+#        the code would otherwise be treated as a clean stop. Note that 75 alone
+#        proves nothing about health: it is also what a normal planned restart
+#        emits, so look for the CRITICAL line in the log before concluding a crash.
+#   78 — configuration error. RestartPreventExitStatus stops the restart loop,
+#        because restarting on a bad config just burns the box.
+[Unit]
+Description=Hermes Agent Gateway - Messaging Platform Integration
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+ExecStart=%h/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main gateway run
+WorkingDirectory=%h/.hermes
+Environment="PATH=%h/.hermes/hermes-agent/venv/bin:%h/.hermes/hermes-agent/node_modules/.bin:%h/.hermes/node/bin:%h/.hermes/node:%h/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+Environment="VIRTUAL_ENV=%h/.hermes/hermes-agent/venv"
+Environment="HERMES_HOME=%h/.hermes"
+Restart=always
+RestartSec=5
+RestartForceExitStatus=75
+RestartPreventExitStatus=78
+KillMode=mixed
+KillSignal=SIGTERM
+ExecReload=/bin/kill -USR1 $MAINPID
+ExecStopPost=-%h/.hermes/hermes-agent/venv/bin/python -m gateway.cgroup_cleanup
+TimeoutStopSec=60
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target
