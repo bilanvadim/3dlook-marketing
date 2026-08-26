@@ -28,19 +28,28 @@ winner, which is the failure it exists to prevent. It reports, and a human
 decides which side is right.
 
 USAGE
-    scripts/check-agent-copies.py [--quiet]
+    scripts/check-agent-copies.py [--quiet] [--notify]
+`--notify` pushes drift to Telegram (same bot/chat as conductor-monitor.sh), and
+is meant for the cron run — a log nobody opens is not an alert. Deduped on the
+CONTENT of the drift, not on "drift exists": the same unresolved divergence stays
+quiet day after day, while a NEW one gets through immediately. Fixing everything
+clears the marker, so the next regression alerts again on its own.
 Exit: 0 all copies agree · 1 drift found (details on stdout) · 3 setup broken.
 """
 from __future__ import annotations
 
 import hashlib
 import os
+import subprocess
 import sys
 from collections import defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PROJ = os.path.dirname(HERE)                       # …/marketing_vb
 REPO = os.path.dirname(PROJ)                       # …/3dlook-marketing
+
+ENVF = os.environ.get("HERMES_ENV_FILE", os.path.expanduser("~/.hermes/.env"))
+STATE = os.path.expanduser("~/.hermes/.agent-copies-state")
 
 ROOTS = [
     os.path.join(REPO, "claude_code", "DEV", "marketing_vb", "plugins"),
@@ -77,9 +86,49 @@ def collect():
     return found
 
 
+def notify(text: str, fingerprint: str) -> None:
+    """Push once per distinct drift fingerprint. Silence on repeat is deliberate:
+    an unresolved divergence is a standing condition, and a daily re-ping trains
+    everyone to ignore the channel that is supposed to carry the new one."""
+    try:
+        seen = open(STATE, encoding="utf-8").read().split()
+    except OSError:
+        seen = []
+    if fingerprint in seen:
+        return
+    bot = chat = ""
+    try:
+        for line in open(ENVF, encoding="utf-8"):
+            if line.startswith("TELEGRAM_BOT_TOKEN="):
+                bot = line.split("=", 1)[1].strip()
+            elif line.startswith("TELEGRAM_ALLOWED_USERS="):
+                chat = line.split("=", 1)[1].strip().split(",")[0]
+    except OSError:
+        pass
+    if not bot or not chat:
+        print("(нет TELEGRAM creds — не отправляю)", file=sys.stderr)
+        return
+    # --config -: the token would otherwise sit in argv, world-readable via ps,
+    # and this runs from cron. -f: without it curl exits 0 on HTTP 400/429 and the
+    # fingerprint gets marked sent for an alert that never arrived.
+    try:
+        subprocess.run(
+            ["curl", "-sf", "-m", "15", "--config", "-",
+             "--data-urlencode", f"chat_id={chat}",
+             "--data-urlencode", f"text={text}"],
+            input=f'url = "https://api.telegram.org/bot{bot}/sendMessage"\n',
+            text=True, check=True, capture_output=True)
+    except Exception as e:
+        print(f"(Telegram не ушёл: {type(e).__name__}) — фингерпринт НЕ помечаю", file=sys.stderr)
+        return
+    with open(STATE, "a", encoding="utf-8") as f:
+        f.write(fingerprint + "\n")
+
+
 def main(argv=None) -> int:
     args = argv if argv is not None else sys.argv[1:]
     quiet = "--quiet" in args
+    want_notify = "--notify" in args
     found = collect()
     if not found:
         print("⚠️ ни одного агента не найдено — проверь пути в ROOTS")
@@ -107,8 +156,23 @@ def main(argv=None) -> int:
         print("Ни одна копия не считается по умолчанию правильной — сравни построчно "
               "(diff) и реши, какая сторона новее ПО КАЖДОМУ правилу. Слепая перезапись "
               "в любую сторону теряет настоящие правки: так уже было 2026-08-26.")
+        if want_notify:
+            names = ", ".join(n for n, _ in drift)
+            fp = hashlib.md5(
+                "|".join(f"{n}:{''.join(sorted(bh))}" for n, bh in drift).encode()).hexdigest()
+            notify(
+                f"⚠️ Агенты разошлись ({len(drift)}): {names}\n"
+                "Одно имя — разное содержимое в DEV / установленном плагине / проектной папке. "
+                "Пока так, какая копия ответит на имя — вопрос удачи.\n"
+                "Разбор: scripts/check-agent-copies.py (чинить построчно, не перезаписью).", fp)
         return 1
 
+    # Everything agrees: drop the marker so a future regression alerts again.
+    if want_notify and os.path.exists(STATE):
+        try:
+            os.remove(STATE)
+        except OSError:
+            pass
     if not quiet:
         multi = sum(1 for _n, p in found.items() if len(p) > 1)
         print(f"✅ копии агентов совпадают ({multi} агент(ов) в нескольких местах, "
