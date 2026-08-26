@@ -380,16 +380,27 @@ def _mvb_brief(cmd: str, cmd_file: str, body: str = "") -> str:
         "или необратимое; финальный апрув текста — за Вадимом в Telegram. "
         "Если чего-то не хватает (нет апрува, нет данных) — остановись и скажи, "
         "не выдумывай.\n"
-        # Job 94 (2026-08-25) closed `done` after 50 seconds having done nothing
-        # but report "запустил orchestrator в фоне": the run backgrounded its own
-        # pipeline and exited, so the conductor saw a finished session and banked
-        # a job with zero artifacts. Nothing downstream can tell that apart from
-        # real work — the summary reads like progress.
-        "Работай СИНХРОННО до конца задачи. Не запускай пайплайн в фоне "
-        "(`&`, nohup, background-процесс) и не заканчивай прогон сообщением "
-        "«запустил, работает в фоне» — это считается невыполненной работой. "
+        # Jobs 94 (2026-08-25) and 98 (2026-08-26) both closed `done` in under a
+        # minute having done nothing but report "запустил orchestrator в фоне".
+        # The mechanism is NOT shell backgrounding — an earlier version of this
+        # text banned `&`/nohup and job 98 sailed straight past it. It is the
+        # Agent tool returning "Async agent launched successfully" with an
+        # agentId: the call comes back immediately, the model reads that as
+        # "started, now I wait", writes a status line and ENDS THE TURN. The SDK
+        # session closes, the spawned agent dies with it (job 98's subagent made
+        # zero tool calls), and the conductor banks a job with no artifacts. The
+        # runs that worked — 93, 95, 96, 97 — waited for the result instead.
+        "Делегировать субагентам можно и нужно, но **прогон нельзя заканчивать, "
+        "пока запущенный агент не вернул результат**. Ответ инструмента "
+        "«Async agent launched successfully» — это НЕ выполненная работа, это "
+        "только старт: дождись завершения агента и его результата, и лишь потом "
+        "подводи итог. Фраза вида «запустил, работает в фоне, жду завершения» в "
+        "качестве ФИНАЛЬНОГО ответа = невыполненная задача (так закрылись job 94 "
+        "и job 98, оба с нулём артефактов). Никакого `&`, nohup и фоновых "
+        "процессов в shell — тоже. "
         "Прогон закончен только тогда, когда файлы-артефакты лежат на диске; "
-        "в финальном ответе перечисли их пути."
+        "в финальном ответе перечисли их пути. Если артефактов нет — так и "
+        "скажи, это честный провал, а не успех."
     )
 
 

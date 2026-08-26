@@ -66,6 +66,7 @@ creating them (the conductor is always polling — an insert IS a live run).
 from __future__ import annotations
 
 import importlib.util
+import json
 import os
 import sqlite3
 import sys
@@ -74,6 +75,14 @@ HO_DB = os.environ.get("HO_DB") or os.path.expanduser("~/.hermes/ho.db")
 SWITCHER = os.environ.get("MVB_SWITCHER") or os.path.expanduser(
     "~/3dlook-marketing/hermes_agent/ops/claude-switcher/claude_switcher.py")
 MAX_TURNS = int(os.environ.get("MVB_MAX_TURNS", "300"))
+# Where a job was started FROM, so its result can come back to the same Telegram
+# topic instead of the General one. ho_jobs has no column for this and it is the
+# conductor's schema, so the mapping lives beside it in a file we own. The gateway
+# binds these two per turn (see hermes-agent tools/*: HERMES_SESSION_CHAT_ID /
+# HERMES_SESSION_THREAD_ID), so a run started by Hermes carries them for free; a
+# run started from a plain shell has neither and simply falls back to General,
+# which is exactly today's behaviour, so nothing regresses.
+THREAD_MAP = os.environ.get("MVB_THREAD_MAP") or os.path.expanduser("~/.hermes/mvb-job-threads.json")
 # MVB_FANOUT=0 forces the old one-big-job behaviour for a route that supports splitting.
 # Kept as an escape hatch, not a tuning knob: if the fan-out ever misreads the profile
 # list, this is how you start the pipeline anyway without editing code.
@@ -106,6 +115,39 @@ def load_switcher():
         sys.exit("⚠️ в claude_switcher.py нет MVB_ROUTES — версия старая. "
                  "Сообщи Вадиму, SQL руками НЕ пиши.")
     return mod
+
+
+def remember_origin(job_ids) -> None:
+    """Record job -> (chat, thread) so conductor-monitor.sh can answer in the topic
+    the work was asked for. Vadim's convention is one topic per autonomous run, so
+    a job's replies landing in General is not cosmetic: it separates the answer
+    from the question it belongs to."""
+    chat = os.environ.get("HERMES_SESSION_CHAT_ID", "").strip()
+    thread = os.environ.get("HERMES_SESSION_THREAD_ID", "").strip()
+    if not chat or not thread:
+        return                                  # shell run — General, as before
+    try:
+        with open(THREAD_MAP, encoding="utf-8") as f:
+            m = json.load(f)
+        if not isinstance(m, dict):
+            m = {}
+    except Exception:
+        m = {}
+    for jid in job_ids:
+        m[str(jid)] = {"chat": chat, "thread": thread}
+    # Keep the file from growing without bound; 200 jobs is far more history than
+    # a notifier that only looks at freshly-terminal jobs can ever need.
+    if len(m) > 200:
+        for k in sorted(m, key=lambda x: int(x) if x.isdigit() else 0)[:len(m) - 200]:
+            m.pop(k, None)
+    tmp = THREAD_MAP + ".tmp"
+    try:
+        with open(tmp, "w", encoding="utf-8") as f:
+            json.dump(m, f, ensure_ascii=False, indent=1)
+        os.replace(tmp, THREAD_MAP)
+        os.chmod(THREAD_MAP, 0o600)
+    except OSError:
+        pass                                    # never fail an enqueue over this
 
 
 def db() -> sqlite3.Connection:
@@ -168,6 +210,7 @@ def cmd_enqueue(m, route: str, arg: str) -> int:
             "values('feature',?,?,?,?,?)",
             (title[:200], prompt, r["profile"], work_dir, MAX_TURNS))
         jid = cur.lastrowid
+    remember_origin([jid])
     print(f"🚀 job #{jid} · {r['label']} · profile={r['profile']} · max_turns={MAX_TURNS}")
     print(f"📂 {work_dir}")
     print(f"📝 {title}")
@@ -213,6 +256,7 @@ def _enqueue_many(r, work_dir: str, jobs, note) -> int:
                 "values('feature',?,?,?,?,?)",
                 (t, prompt, r["profile"], work_dir, MAX_TURNS))
             made.append((cur.lastrowid, t))
+    remember_origin([jid for jid, _t in made])
     if not made:
         print(f"ℹ️ уже запущено: все {len(skipped)} профилей в работе "
               f"({', '.join(skipped)}). Второй раз не ставлю.")
