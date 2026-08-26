@@ -10,7 +10,7 @@ intent: MOFU/BOFU
 action_type: create-net-new
 priority: P1
 author: Assel Sekerova
-status: pending_approval
+status: approved
 created: 2026-08-26
 ---
 

@@ -273,6 +273,16 @@ _MVB_APPROVED = ("approved_for_publish", "ready_for_cms_import", "final_approved
                  "published", "live")
 
 
+# Appended to every social-run refusal. The refusal itself worked on 2026-08-26 —
+# `posts` was declined twice because the article had only a plan — and the run
+# then RENAMED the archived v1 directory to today's slug so the precondition would
+# pass, and fanned out 9 post jobs from yesterday's draft. A guard that is merely
+# correct is not enough; it has to say out loud that routing around it is the
+# failure, because the text of the refusal is the one thing the agent definitely
+# reads at that moment.
+_MVB_NO_WORKAROUND = "\n\n⛔ Этот отказ НЕЛЬЗЯ обходить. Не переименовывай, не копируй и не перемещай каталоги и файлы в `workspace/`, чтобы предусловие прошло. Если текста нет — значит статья ещё не написана: скажи об этом Вадиму и остановись. 2026-08-26 обход этого отказа (архивную v1 переименовали под сегодняшнюю дату) запустил 9 job'ов на посты по вчерашнему черновику."
+
+
 def _mvb_article_source(slug: str) -> Tuple[Optional[str], Optional[str], Optional[str]]:
     """(source file, note, error) for a social run on `slug`.
 
@@ -291,7 +301,8 @@ def _mvb_article_source(slug: str) -> Tuple[Optional[str], Optional[str], Option
     only a genuinely unusable article (no directory, no readable body) refuses."""
     root = os.path.join(_mvb_dir(), "workspace", "seo", "articles", slug)
     if not slug or not os.path.isdir(root):
-        return None, None, f"нет каталога статьи `workspace/seo/articles/{slug or '<slug>'}`"
+        return None, None, (f"нет каталога статьи `workspace/seo/articles/{slug or '<slug>'}`"
+                            + _MVB_NO_WORKAROUND)
 
     # File naming is not consistent across articles — the workspace holds
     # publish-package.md, publish-pack.md, final.md, draft-v5-revision1.md,
@@ -357,7 +368,8 @@ def _mvb_article_source(slug: str) -> Tuple[Optional[str], Optional[str], Option
             note += " — формального апрува нет, беру как есть"
         return p, note, None
     return None, None, ("в каталоге статьи нет готового текста "
-                        "(ни publish-package, ни final/revision-драфта > 3 КБ)")
+                        "(ни publish-package, ни final/revision-драфта > 3 КБ)"
+                        + _MVB_NO_WORKAROUND)
 
 
 def _mvb_brief(cmd: str, cmd_file: str, body: str = "") -> str:
