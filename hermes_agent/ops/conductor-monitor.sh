@@ -116,5 +116,30 @@ while IFS=$'\t' read -r id st title summary; do
   emit "term:${id}:${st}" "${ic} $(plain "$title") (job ${id}): ${st}. $(plain "$summary")"
 done
 
+# 4) jobs parked on a backoff — the silent failure mode this script was missing.
+#
+# From Telegram a rate-limited run is INDISTINGUISHABLE from a working one: blocks
+# 1-3 push questions, escalations and terminal jobs, so a job that is merely
+# waiting produces nothing. On 2026-08-25 job 95 sat here for 2.5 hours — ladder
+# 59s → 249 → 756 → 1459 → 2007 → 2101 → 2044, two turns per resume — and the only
+# signal Вадим got was his own "Статус" question three hours in.
+#
+# Short rungs stay silent on purpose: under 10 minutes a retry is noise, not news.
+# Each longer rung pushes exactly once, keyed on its own not_before, so a long
+# stall reports progress (~25 мин → ~34 мин) instead of repeating every 5 minutes.
+SQL "select id, status, replace(replace(title,char(10),' '),char(9),' '),
+            cast((julianday(not_before) - julianday('now')) * 1440 as int),
+            replace(not_before,' ','_')
+     from ho_jobs
+     where status in ('deferred','paused') and not_before is not null
+       and julianday(not_before) - julianday('now') > 10.0/1440
+     order by id" |
+while IFS=$'\t' read -r id st title mins key; do
+  [ -n "${id:-}" ] || continue
+  emit "defer:${id}:${key}" "⏳ $(plain "$title") (job ${id}): ${st}, повтор через ~${mins} мин.
+Прогон не упал — он ждёт окно Claude (conductor делит его с интерактивными сессиями Вадима). Делать ничего не надо: когда доработает, придёт ✅.
+Подробности: mvb-run.py status ${id}"
+done
+
 [ "$MODE" = "--init" ] && echo "monitor: initialized — $(wc -l < "$STATE" 2>/dev/null || echo 0) keys marked seen"
 exit 0

@@ -392,26 +392,122 @@ def _mvb_brief(cmd: str, cmd_file: str, body: str = "") -> str:
         "Ничего не публикуй наружу и не отправляй. Эскалируй только критическое "
         "или необратимое; финальный апрув текста — за Вадимом в Telegram. "
         "Если чего-то не хватает (нет апрува, нет данных) — остановись и скажи, "
-        "не выдумывай."
+        "не выдумывай.\n"
+        # Job 94 (2026-08-25) closed `done` after 50 seconds having done nothing
+        # but report "запустил orchestrator в фоне": the run backgrounded its own
+        # pipeline and exited, so the conductor saw a finished session and banked
+        # a job with zero artifacts. Nothing downstream can tell that apart from
+        # real work — the summary reads like progress.
+        "Работай СИНХРОННО до конца задачи. Не запускай пайплайн в фоне "
+        "(`&`, nohup, background-процесс) и не заканчивай прогон сообщением "
+        "«запустил, работает в фоне» — это считается невыполненной работой. "
+        "Прогон закончен только тогда, когда файлы-артефакты лежат на диске; "
+        "в финальном ответе перечисли их пути."
     )
 
 
+# /new-article takes an optional second argument — the stage to run
+# (see .claude/commands/new-article.md). A task may therefore end with one of
+# these tokens; everything before it is the topic. An optional `approve` token
+# may sit next to it (either side): that is Vadim's checkpoint-1 sign-off, and
+# it goes into the PROMPT, not into the command — /new-article has no such
+# argument, and inventing one would break the command file's contract.
+_ARTICLE_STAGES = ("plan", "write", "edit", "publish", "full")
+_ARTICLE_APPROVE = "approve"
+# The stages an approval can resume INTO as-is. `plan` and `full` both start at
+# the top of the pipeline, which is the one thing an approval rules out, so an
+# approval resumes at `write` unless a later stage was named explicitly.
+_ARTICLE_RESUMABLE = ("write", "edit", "publish")
+
+
+def _split_article_task(task: str) -> Tuple[str, str, bool]:
+    """(topic, stage, approved) — the two optional tokens peeled off the tail.
+
+    Both orders work (`<тема> write approve` and `<тема> approve write`),
+    because token order is something a human types under time pressure, not
+    something worth refusing a pipeline over. A single remaining word is
+    always the topic, never a token — `article write` still means the topic
+    is "write"."""
+    topic, stage, approved = (task or "").strip(), "", False
+    for _ in range(2):                          # at most two tokens to peel
+        head_tail = topic.rsplit(None, 1)
+        if len(head_tail) != 2:
+            break
+        tail = head_tail[1].lower()
+        if tail == _ARTICLE_APPROVE and not approved:
+            approved = True
+        elif tail in _ARTICLE_STAGES and not stage:
+            stage = tail
+        else:
+            break                               # not a token → part of the topic
+        topic = head_tail[0].strip()
+    return topic, stage, approved
+
+
 def _prep_article(task: str) -> Tuple[Optional[str], Optional[str], Optional[str], Optional[str]]:
-    """(prompt, title, note, error) for the SEO pipeline."""
-    topic = (task or "").strip()
+    """(prompt, title, note, error) for the SEO pipeline.
+
+    A trailing stage token is split off the task, so `Стаття <тема> write`
+    (or `mvb-run.py article "<topic>" write`) resumes the pipeline mid-way
+    instead of starting from `plan`. A trailing `approve` token is split off
+    the same way and becomes an explicit approval line in the prompt: the
+    stage argument alone tells the run WHERE to start, not that checkpoint 1
+    is closed, so a headless run re-plans or stops there with nobody to ask.
+    Neither token — command and prompt unchanged."""
+    topic, stage, approved = _split_article_task(task)
     if not topic:
         return None, None, None, ("✍️ Напиши тему статьи, напр.\n"
                                   "`Стаття telehealth BMI verification`")
-    return (
-        _mvb_brief(f'/new-article "{topic}"', ".claude/commands/new-article.md",
-                   "Тема: " + topic + "\n"
-                   "Phase 0 обязателен: сначала найди тему в "
-                   "`brand-assets/content-strategy/content-plan.md` (hub · cluster · "
-                   "intent · action type). Только `create net-new` / `publish planned "
-                   "hub` идут в новую статью; refresh / section first / review-decide / "
-                   "lead magnet — верни рекомендацию и остановись. Нет строки в плане — "
-                   "спроси Вадима, не придумывай хаб.\n"),
-        f"Article: {topic[:60]}", None, None)
+    nxt = ""
+    chained = False
+    if approved:
+        nxt = stage if stage in _ARTICLE_RESUMABLE else "write"
+        # The command argument is rewritten too, so the run is not told `plan` by
+        # the command and "do NOT re-run plan" by the prompt — two instructions
+        # that contradict each other is exactly what broke job 88. `full` keeps
+        # its own argument: new-article.md defines it as "от текущего состояния
+        # до первого чекпоинта", so it already means "resume", and only the
+        # prompt has to say that the current state is `write`.
+        #
+        # An approval with NO stage named means "carry on", and carrying on runs
+        # to checkpoint 2 — new-article.md puts no checkpoint between write, edit
+        # and publish, so stopping after `write` invents one. That default cost
+        # jobs 95→96→97 on 2026-08-25: three conductor runs, three Telegram
+        # pushes and ~3h of wall clock to walk one approved outline to a publish
+        # package, with job 96 explicitly reasoning "edit is a single, standalone
+        # stage — it does not chain into publish". A named stage is still obeyed
+        # verbatim: typing `edit` is a deliberate "just this one".
+        stage = stage if stage in _ARTICLE_RESUMABLE else "full"
+        chained = stage == "full"
+    cmd = f'/new-article "{topic}" {stage}' if stage else f'/new-article "{topic}"'
+    body = ("Тема: " + topic + "\n"
+            "Phase 0 обязателен: сначала найди тему в "
+            "`brand-assets/content-strategy/content-plan.md` (hub · cluster · "
+            "intent · action type). Только `create net-new` / `publish planned "
+            "hub` идут в новую статью; refresh / section first / review-decide / "
+            "lead magnet — верни рекомендацию и остановись. Нет строки в плане — "
+            "спроси Вадима, не придумывай хаб.\n")
+    note = None
+    if approved:
+        body += (
+            f"АПРУВ ЕСТЬ — чекпоинт 1 закрыт. Vadim approved the title+outline "
+            f"recorded in plan.md (frontmatter status: approved). Proceed directly "
+            f"to the {nxt} stage — do NOT re-run plan and do NOT stop at "
+            f"checkpoint 1.\n")
+        if chained:
+            body += (
+                "Дальше иди БЕЗ ОСТАНОВОК write → edit → publish в одном прогоне. "
+                "Между ними чекпоинтов нет: `edit` не «самостоятельная стадия, "
+                "которая не переходит в publish» — закончив одну, сразу начинай "
+                "следующую, не спрашивая и не завершая работу.\n")
+        body += ("Чекпоинт 2 (финальный текст + meta) этим НЕ закрыт: дойдя до "
+                 "него, остановись и жди Вадима, как обычно.\n")
+        note = ("апрув чекпоинта 1 передан в промпт — прогон идёт "
+                + (f"write → edit → publish без остановок до чекпоинта 2"
+                   if chained else f"со стадии `{nxt}`")
+                + ", план не переписывается")
+    return (_mvb_brief(cmd, ".claude/commands/new-article.md", body),
+            f"Article: {topic[:60]}", note, None)
 
 
 def _prep_posts(task: str) -> Tuple[Optional[str], Optional[str], Optional[str], Optional[str]]:

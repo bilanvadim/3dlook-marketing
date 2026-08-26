@@ -216,7 +216,7 @@ This is mechanical — do not skip it. Full reference:
 2. **Твой путь — `mvb-run.py`, и только он:**
    ```
    ~/3dlook-marketing/hermes_agent/ops/mvb-run.py posts    <slug>
-   ~/3dlook-marketing/hermes_agent/ops/mvb-run.py article  "<тема>"
+   ~/3dlook-marketing/hermes_agent/ops/mvb-run.py article  "<тема>" [stage] [approve]
    ~/3dlook-marketing/hermes_agent/ops/mvb-run.py outbound "<рынок/шаг>"
    ~/3dlook-marketing/hermes_agent/ops/mvb-run.py campaign "<задача>"
    ~/3dlook-marketing/hermes_agent/ops/mvb-run.py articles      # что можно превратить в посты
@@ -228,7 +228,30 @@ This is mechanical — do not skip it. Full reference:
    дубль. Вывод скрипта можно пересылать Вадиму почти как есть.
    exit 0 — поставлено · 2 — отказ (причина в тексте, покажи её) · 3 — сломан
    сетап (скажи Вадиму, сам не «починяй» SQL-ом).
-3. **`insert into ho_jobs` руками — ЗАПРЕЩЕНО. `ho_steps` — тем более.**
+3. **Статья идёт через ДВА чекпоинта — и «Апрув» это не новый запуск.**
+   `/new-article` останавливается после `plan` (Вадим одобряет title + outline)
+   и после `publish` (финальный текст + meta). Между ними остановок нет.
+   Поэтому у `article` есть два хвостовых токена, и без них апрув теряется:
+
+   | Что сказал Вадим | Что ты запускаешь |
+   |---|---|
+   | «Стаття <тема>» / «нова стаття» | `article "<тема>"` → идёт до чекпоинта 1 |
+   | **«Апрув» / «ок» / «поехали» после плана** | `article "<тема>" approve` → **write → edit → publish без остановок до чекпоинта 2** |
+   | «Перепиши только edit» (явная стадия) | `article "<тема>" edit approve` → ровно одна стадия |
+   | «Апрув» после чекпоинта 2 | это конец пайплайна: дальше `posts <slug>` |
+
+   **`approve` — обязательный токен.** Без него прогон не знает, что чекпоинт 1
+   закрыт: он либо переписывает план заново, либо доходит до чекпоинта 1 и
+   встаёт ждать человека, которого в headless-прогоне нет.
+   Ровно это стоило 2026-08-25: на «Апрув» был запущен `article "<тема>"` без
+   токенов → job 93 прогнал Phase 0 и `plan` ВТОРОЙ раз; следом `article
+   "<тема>" write` без `approve` → job 94 закрылся `done` за 50 секунд с нулём
+   артефактов. Два лишних прогона выжгли окно Claude, и настоящий `write`
+   (job 95) простоял 2.5 часа в rate-limit: 41 turn в первом заходе, потом
+   7 resume по 2 turns. Одна статья = 6 job'ов вместо двух.
+   **Тема в кавычках должна совпадать дословно** с той, что была в первом
+   запуске, иначе это другая статья и другой каталог в `workspace/seo/articles/`.
+4. **`insert into ho_jobs` руками — ЗАПРЕЩЕНО. `ho_steps` — тем более.**
    Ровно это сломало job 88 (2026-08-17): три попытки написать SQL (`syntax
    error near "How"`, потом IntegrityError), `work_dir` = корень репо вместо
    `marketing_vb` (агенты читают `CLAUDE.md`, `brand-assets/`, `workspace/`

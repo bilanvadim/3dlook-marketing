@@ -36,7 +36,16 @@ The route table, the prompts and the precondition checks are NOT duplicated here
 imported from claude_switcher.py, so the Telegram buttons and this script can never drift.
 
 USAGE
-    mvb-run.py article  "<topic>"          # SEO pipeline  (/new-article)
+    mvb-run.py article  "<topic>" [stage] [approve]
+                                           # SEO pipeline  (/new-article)
+                                           # stage: plan|write|edit|publish|full
+                                           # approve: Vadim signed off checkpoint 1
+                                           #   (title+outline in plan.md). Without a
+                                           #   stage this runs write → edit → publish
+                                           #   in ONE job and stops only at checkpoint
+                                           #   2; naming a stage means just that one.
+                                           #   Either way it never re-plans and never
+                                           #   parks at checkpoint 1 with nobody to ask
     mvb-run.py posts    <slug|url>         # social posts  (/post-from-article)
     mvb-run.py outbound "<market/task>"    # outbound      (/outbound)
     mvb-run.py campaign "<task>"           # blended VB×SM (/vbsm-campaign)
@@ -144,6 +153,8 @@ def cmd_enqueue(m, route: str, arg: str) -> int:
     if DRY_RUN:
         print(f"[dry-run] 1 job · {r['label']} · profile={r['profile']} · max_turns={MAX_TURNS}")
         print(f"📝 {title}")
+        if note:                                    # e.g. the checkpoint-1 approval
+            print(f"ℹ️ {note}")
         return 0
     conn = db()
     with conn:
