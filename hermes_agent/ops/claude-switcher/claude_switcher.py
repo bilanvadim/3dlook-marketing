@@ -74,23 +74,10 @@ SWITCHER_COMMANDS = frozenset({"claude", "hermes", "tabs", "cwd", "name",
 #   * The api_key is passed in memory and the override is NOT persisted, so heavy
 #     mode dies on a gateway restart. That is deliberate: it is meant to be
 #     temporary, and the everyday model is the safe resting state.
-#   * The router's provider ids come from models.dev ('google', 'openrouter'),
-#     while Hermes' own registry names them differently ('gemini') or not at all
-#     (no 'openrouter' — it needs the generic openai-api provider plus a base_url).
-_PICK_JSON = os.path.expanduser("~/.hermes/model-router/pick.json")
-_HERMES_PROVIDER = {           # models.dev id -> (hermes provider, base_url)
-    "google": ("gemini", None),
-    "nvidia": ("nvidia", None),
-    "opencode": ("opencode-zen", None),
-    "huggingface": ("huggingface", None),
-    "kilo": ("kilocode", None),
-    "vercel": ("ai-gateway", None),
-    "openrouter": ("openai-api", "https://openrouter.ai/api/v1"),
-    "mistral": ("openai-api", "https://api.mistral.ai/v1"),
-    "cerebras": ("openai-api", "https://api.cerebras.ai/v1"),
-    "groq": ("openai-api", "https://api.groq.com/openai/v1"),
-    "cohere": ("openai-api", "https://api.cohere.ai/compatibility/v1"),
-}
+#   * Цель тяжёлого режима — ЦЕПОЧКА прокси, а не имя модели. Таблица
+#     «id провайдера → прямой провайдер Hermes + base_url» жила здесь ради
+#     утреннего селектора и удалена вместе с ним 26.08.2026: какая модель жива
+#     сейчас, знает прокси, и знает на каждый запрос, а не раз в сутки.
 _HEAVY: Dict[str, Dict[str, Any]] = {}      # tab key -> {model, provider, session_key}
 # Refreshed on every Hermes turn. A callback only carries chat/thread ids, and
 # rebuilding a SessionSource well enough for _session_key_for_source is fragile —
@@ -1548,46 +1535,6 @@ def _match_system_prefix(text: str) -> Tuple[Optional[str], str]:
     return None, ""
 
 
-def _read_pick() -> Dict[str, Any]:
-    try:
-        with open(_PICK_JSON, "r", encoding="utf-8") as f:
-            return json.load(f) or {}
-    except Exception:
-        return {}
-
-
-def _provider_key(var_names: Tuple[str, ...]) -> Optional[str]:
-    """First non-empty value among `var_names` in ai-models.env, then .env.
-    Mirrors the router's lookup so a key added for the coder also powers heavy
-    mode without being duplicated."""
-    for path in (os.path.expanduser("~/.hermes/ai-models.env"),
-                 os.path.expanduser("~/.hermes/.env")):
-        try:
-            lines = open(path, encoding="utf-8").read().splitlines()
-        except OSError:
-            continue
-        for var in var_names:
-            for line in lines:
-                if line.startswith(var + "="):
-                    val = line.split("=", 1)[1].strip().strip('"\'')
-                    if val:
-                        return val
-    return None
-
-
-_PROVIDER_ENV = {
-    "google": ("GOOGLE_API_KEY", "GEMINI_API_KEY", "OPENAI_API_KEY"),
-    "openrouter": ("OPENROUTER_API_KEY",),
-    "nvidia": ("NVIDIA_API_KEY",),
-    "opencode": ("OPENCODE_ZEN_API_KEY",),
-    "mistral": ("MISTRAL_API_KEY",),
-    "cerebras": ("CEREBRAS_API_KEY",),
-    "groq": ("GROQ_API_KEY",),
-    "cohere": ("COHERE_API_KEY",),
-    "huggingface": ("HF_TOKEN", "HUGGINGFACE_API_KEY"),
-    "vercel": ("AI_GATEWAY_API_KEY",),
-    "kilo": ("KILO_API_KEY",),
-}
 
 
 # The strong chain served by llm-failover-proxy (list A). Heavy mode borrows the
@@ -1645,27 +1592,6 @@ def strong_chain() -> Optional[Dict[str, Any]]:
             "label": "llm-fop · сильная цепочка"}
 
 
-def strong_model() -> Optional[Dict[str, Any]]:
-    """Today's strong model from the morning pick, resolved to something Hermes can
-    actually talk to: {model, provider, base_url, api_key, label}. None when the
-    router has not run or the provider's key is missing.
-
-    Kept as the FALLBACK for heavy mode: used only when the strong chain is not
-    listening, so a stopped proxy degrades to the old behaviour instead of removing
-    heavy mode altogether."""
-    pick = _read_pick()
-    model = pick.get("coder")
-    pid = pick.get("coder_provider") or "opencode"
-    if not model:
-        return None
-    prov, base = _HERMES_PROVIDER.get(pid, (None, None))
-    if not prov:
-        return None
-    api_key = _provider_key(_PROVIDER_ENV.get(pid, ()))
-    if not api_key:
-        return None
-    return {"model": model, "provider": prov, "base_url": base,
-            "api_key": api_key, "label": f"{pid}/{model}"}
 
 
 def _apply_override(runner: Any, session_key: str,
@@ -1696,7 +1622,11 @@ def _heavy_kb(on: bool):
 
 async def heavy_on(runner: Any, source: Any, key: str,
                    session_key: str, task_text: str = "") -> str:
-    sm = strong_chain() or strong_model()
+    # Только цепочка прокси. Вторым вариантом шла strong_model() — «сильная модель
+    # дня» из pick.json утреннего селектора, с ключом провайдера напрямую из
+    # ai-models.env. Селектор снят 26.08.2026, и заменить его списком прокси здесь
+    # нельзя: llmfp этой машины версии 1.8.0, адресации `auto - <список>` в ней нет.
+    sm = strong_chain()
     if sm and sm.get("base_url") == STRONG_CHAIN_URL:
         # The chain answers as "auto", so the "already on it" guard below (which
         # compares model ids) cannot apply — compare ENDPOINTS instead. Without this
@@ -1716,20 +1646,9 @@ async def heavy_on(runner: Any, source: Any, key: str,
                 "хеджированием. Спрошу про возврат на агентную, когда увижу, что "
                 "задача закрыта.")
     if not sm:
-        pick = _read_pick()
-        missing = ", ".join(pick.get("missing_keys") or []) or "—"
-        return ("⚠️ Сильной модели на сегодня нет: роутер не отработал или нет "
-                f"API-ключа провайдера (не хватает: {missing}).\n"
-                "Ключи кладутся в ~/.hermes/ai-models.env")
-    # Since the everyday model stopped being handicapped by the vision gate, it is
-    # frequently the very model heavy mode would borrow. Switching to it would be
-    # a no-op dressed up as an upgrade, and worse, it would then look "on" and
-    # arm the auto-off machinery for nothing.
-    if sm["model"] == (_read_pick().get("primary") or ""):
-        return (f"ℹ️ Уже работаю на {sm['label']} — сегодня это и есть сильнейшая "
-                "бесплатная модель, занимать нечего.\n"
-                "Если задача реально тяжёлая — есть совет из трёх моделей: "
-                "<code>/model moa:council</code>")
+        return ("⚠️ Сильная цепочка прокси не отвечает — тяжёлый режим включить не могу.\n"
+                f"Проверь: <code>{STRONG_CHAIN_URL}</code> и "
+                "<code>systemctl --user status llm-failover-proxy-strong</code>")
     ov = {"model": sm["model"], "provider": sm["provider"],
           "api_key": sm["api_key"]}
     if sm["base_url"]:
@@ -1754,8 +1673,7 @@ async def heavy_off(runner: Any, source: Any, key: str,
                     session_key: str) -> str:
     st = _HEAVY.pop(key, None)
     _apply_override(runner, session_key, None)
-    pick = _read_pick()
-    back = pick.get("primary") or "обычную модель"
+    back = "повседневную цепочку"
     logger.info("csw: heavy mode OFF tab=%s (было %s)", key,
                 (st or {}).get("label", "—"))
     if st and st.get("chain"):
@@ -1957,7 +1875,10 @@ async def maybe_offer_heavy(runner: Any, source: Any, key: str,
     last = _HEAVY_OFFERED.get(key, 0.0)
     if time.monotonic() - last < _HEAVY_OFFER_GAP_S:
         return
-    sm = strong_model()
+    # Та же цель, что у heavy_on. Раньше здесь стояла strong_model(), читавшая
+    # pick.json: после удаления селектора она всегда возвращала бы None, и
+    # предложение просто перестало бы появляться — молча.
+    sm = strong_chain()
     if not sm:
         return
     _HEAVY_OFFERED[key] = time.monotonic()
@@ -2122,16 +2043,13 @@ async def _handle_hermes_menu_callback(adapter: Any, query: Any, what: str) -> N
         return
 
     if what == "council":
-        primary = (_read_pick() or {}).get("primary") or "основную модель"
+        primary = "auto"          # повседневная цепочка; модель выбирает прокси
         text = ("👥 Совет моделей: два советника думают параллельно, отвечает "
                 "агрегатор. Дороже по квоте, заметно лучше на тяжёлых задачах.\n\n"
                 "Включить — нажми команду:\n/model moa:council\n\n"
                 f"Вернуться потом: /model {primary}")
     elif what == "solo":
-        primary = (_read_pick() or {}).get("primary")
-        if not primary:
-            await query.answer(text="Не знаю текущую модель дня")
-            return
+        primary = "auto"          # см. выше: возврат к повседневной цепочке
         text = ("1️⃣ Одна модель — обычный режим, дешевле и быстрее.\n\n"
                 f"/model {primary}")
     elif what == "learn":
