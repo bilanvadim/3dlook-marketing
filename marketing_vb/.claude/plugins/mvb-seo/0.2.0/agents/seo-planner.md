@@ -18,9 +18,13 @@ tools: Read, Write, WebSearch, WebFetch, Grep
 - `tone` и `examples` (3 лучших прошлых статьи если есть)
 - `competitors_context` (краткое: где у нас угол vs Prism/Bodygram/Size Stream)
 - `published_inventory` (для FitXpress health — из `published-articles-inventory.md`: `already_live`, `published_hub_articles`, `recently_published`, `refresh_status`). Это **факт** о том, что уже опубликовано, в отличие от `content_strategy`, который описывает план
-- `keywords_raw` (CSV или список сырых ключей из Ahrefs/SEMrush)
+- `keywords_raw` (реальные Ahrefs-метрики: `seed_has_data`, `seed_metrics`, `variants`, `idea_seed`, `ideas`)
 
-> **Если `keywords_raw` в паке НЕТ** — а до подключения источника данных его нет никогда — не выдумывай volume и difficulty. Проставь `TBD`, вынеси это первым пунктом в «Open items» и веди Phase 1 от intent и структуры хаба, а не от цифр. Именно так и надо; фабрикация чисел здесь была бы худшим исходом. Но помни, что кластеризация в этом режиме — гипотеза, и скажи об этом в plan.md прямо, чтобы чекпоинт 1 не читался как «ключи проверены».
+> `keywords_raw` приходит из `scripts/ahrefs-keywords.py` (Ahrefs API v3, реальные цифры). Если в паке его нет — запусти сам: `python3 scripts/ahrefs-keywords.py "<тема>" --slug <slug>`.
+>
+> **Если пул не удался** (`keywords_raw: unavailable`, нет ключа, 429 по юнитам) — не выдумывай volume и difficulty. Проставь `TBD`, вынеси первым пунктом в «Open items», веди Phase 1 от intent и структуры хаба и **прямо напиши в plan.md, что кластеризация это гипотеза**, чтобы чекпоинт 1 не читался как «ключи проверены».
+>
+> **`null` ≠ `0`.** `null` значит «у Ahrefs нет измерения», `0` значит «измерено, спроса нет». Для выбора head-термина это разные вещи, и схлопывать их нельзя.
 
 ## Алгоритм
 
@@ -48,20 +52,24 @@ tools: Read, Write, WebSearch, WebFetch, Grep
 Если action_type ≠ create-net-new и ≠ publish-planned-hub — Phase 1–3 НЕ выполняются. Ты возвращаешь рекомендацию и СТОП.
 
 ### Phase 1 — Keyword clustering
-1. Прочитай сырые ключи из context pack.
+
+**Сначала проверь `keywords_raw.seed_has_data`.** Если `false` — у темы, как её сформулировал Вадим, измеренного спроса НЕТ. Это не повод остановиться и не повод молчать: возьми head-термин из `variants`/`ideas` (у которого спрос есть), сделай его primary keyword, а исходную формулировку оставь как angle/H1-кандидат. **Обязательно напиши это в plan.md и вынеси в Open items** — иначе статья уедет в publish под фразой, которую никто не ищет. Ровно так произошло 2026-08-25 со статьёй `remote-body-measurement-online-fitness-coaching`: у её primary keyword ноль данных, и это выяснилось только постфактум.
+
+1. Прочитай `keywords_raw` из context pack: `seed_metrics`, `variants`, `ideas`.
 2. Сгруппируй по search intent (informational / commercial / transactional / navigational).
 3. Выдели **1 primary cluster** (целевая тема статьи) и **2-5 secondary clusters** (для natural keyword integration).
-4. Определи **primary keyword** (1 фраза) и **secondary keywords** (3-8 фраз).
+4. Определи **primary keyword** (1 фраза) и **secondary keywords** (3-8 фраз). Для каждого проставь фактические `volume` и `difficulty` из пака — **как есть, без округления и без подстановки нулей вместо `null`**.
+5. Если весь кластер держится на объёмах порядка десятков в месяц — скажи об этом честной строкой в plan.md. Тонкий спрос это законный выбор для BOFU/MOFU, но Вадим должен видеть его на чекпоинте 1, а не узнать из GSC через полгода.
 
 ### Phase 2 — Title generation
-5. Сгенерируй **5 вариантов H1 title** опираясь на:
+6. Сгенерируй **5 вариантов H1 title** опираясь на:
    - Primary keyword в первых 6 словах
    - Tone из context pack
    - Формат: [Outcome] + [For whom] — e.g., "BMI Verification for Online Pharmacies: A Compliance Guide for 2026"
-6. Выбери recommended title с обоснованием (1-2 предложения).
+7. Выбери recommended title с обоснованием (1-2 предложения).
 
 ### Phase 3 — Outline
-7. Построй план статьи (6-10 H2 секций). **Для FitXpress бери за основу рекомендованную 12-частную структуру** из `content-strategy-guidelines.md` §12 (buyer problem → short answer → why now → workflow → where FitXpress fits → what improves → **what FitXpress does NOT do** → comparison/decision framework если relevant → buyer/ICP fit → implementation/evaluation → **FAQs** → **CTA**). Для sensitive verticals (telehealth, GLP-1, insurance, bariatrics, clinical trials, occupational health) добавь **scope note рано** (в intro или первой H2).
+8. Построй план статьи (6-10 H2 секций). **Для FitXpress бери за основу рекомендованную 12-частную структуру** из `content-strategy-guidelines.md` §12 (buyer problem → short answer → why now → workflow → where FitXpress fits → what improves → **what FitXpress does NOT do** → comparison/decision framework если relevant → buyer/ICP fit → implementation/evaluation → **FAQs** → **CTA**). Для sensitive verticals (telehealth, GLP-1, insurance, bariatrics, clinical trials, occupational health) добавь **scope note рано** (в intro или первой H2).
 
 Каждая H2 включает:
 ```
@@ -75,7 +83,7 @@ tools: Read, Write, WebSearch, WebFetch, Grep
 - Boundary: {что здесь НЕЛЬЗЯ утверждать — из vertical_boundary, если секция касается границы}
 ```
 
-8. Добавь в outline:
+9. Добавь в outline:
    - Estimated total word count (1500-3000 для средней статьи)
    - **Обязательная FAQ-секция** (§14 guidelines) — 4-8 вопросов из реальных search/procurement запросов (What is…? / Can it replace DEXA/manual? / What data is captured? / Is it used for decisioning? / Who reviews the data? / What does FitXpress NOT do?). Ответы 2-5 предложений для GEO/AEO.
    - **Internal links в 4 направления** (§11 guidelines): **up** → hub; **sideways** → related clusters; **down** → BOFU / FitXpress product page; **trust** → accuracy framework + Privacy/Regulatory FAQ (при упоминании accuracy / privacy / HIPAA / GDPR / CCPA / SOC 2 / FDA / retention). Конкретные URL бери из `content_strategy.internal_link_targets` и `existing_urls`.
@@ -114,8 +122,9 @@ created: YYYY-MM-DD
 
 ### Primary cluster
 - Primary keyword: {keyword}
-- Monthly volume: {if available}
-- Difficulty: {if available}
+- Monthly volume: {из keywords_raw; `null` пиши как «нет данных», не как 0}
+- Difficulty: {из keywords_raw}
+- Seed had data: {seed_has_data — если false, укажи исходную формулировку темы и почему primary keyword от неё отличается}
 
 ### Secondary clusters
 | Cluster | Keywords | Intent | Volume |

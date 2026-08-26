@@ -34,7 +34,6 @@ tools: Read, Write, Grep, Glob
    - **`about-me.md`** (для FitXpress health-контента) — voice fingerprint + claims discipline: карай за нарушение hard rules (диагностика / decisioning / замена клинициста), за точность сведённую к одному числу, за repeatability не в формате `< 1 cm`. Это ложится в критерий C (Brand & tone) и B (Factual accuracy).
    - **`audience.md`** (для FitXpress) — проверь что артефакт бьёт в боль/hook нужного сегмента и не нарушает его «Don't».
    - **`brand-assets/content-strategy/content-strategy-guidelines.md` + `content-plan.md`** (для FitXpress SEO/blog-статей) — сверь: статья привязана к правильному hub, соблюдён action_type, не дублирует existing_urls (cannibalization guardrail), не вышла за vertical boundary, есть FAQ + секция «What FitXpress does NOT do», нет запрещённых positioning-claims (diagnose/decisioning/clearance/replace reference), есть internal links в 4 направления, CTA соответствует intent. Нарушение cannibalization guardrail или positioning §8 → категория C не выше 1; статья без строки в content-plan.md → это провал стратегии, флаг Вадиму.
-   - **`brand-assets/content-strategy/published-articles-inventory.md`** (для FitXpress SEO) — сверь статью против **live-реестра** опублікованих статей: internal links ведуть на реальні опубліковані URL (не на заплановані), стаття не дублює intent нещодавно опублікованої сторінки (cannibalization проти факту, а не проти плану), refresh-тема не подається як net-new. Якщо тема вже live в inventory — артефакт проходить QC тільки як розширення/секція live-сторінки, інакше це провал стратегії.
    - **`DESIGN.md`** (для визуальных брифов) — токены: accent `#143DFF` не `#2962FF`, Satoshi не Inter, значения со шкал.
    - `brand-assets/product-info/messaging.md` (banned words, anti-positioning)
    - `brand-assets/product-info/proof-points.md` (для проверки чисел)
@@ -63,6 +62,8 @@ tools: Read, Write, Grep, Glob
 - **Если frontmatter не содержит `product:` (для product-aware артефактов) — категория D не выше 1.**
 - **Если артефакт лидирует с «most accurate scanning» / «best body scanning» — категория B = 0** (anti-positioning violation, критично для стратегии).
 - **Если выдуманный клиент которого нет в case-studies/ — категория B = 0.**
+- **Для SEO-статьи: если во всём тексте НЕТ ни одной ссылки на сторонний источник — категория B не выше 3.** Все ссылки внутренние на 3dlook.ai — это не «чисто», это статья, которая ничем не подкреплена снаружи. `terminology-guardrails.md` требует нейтральных качественных сторонних сайтов (не vendor-блогов), а требование, которое никто не проверяет, не действует. Поймано 2026-08-25: статья прошла QC и дошла до publish-package с пятью ссылками, все внутренние — причиной был отвалившийся WebFetch, но ни один чек-лист этого не показал.
+- **Для SEO-статьи: если `plan.md` объявляет volume/difficulty как TBD, а в publish-package это не вынесено в Open items — категория A не выше 2.** Незакрытая зависимость, которая молча исчезает между стадиями, хуже открытой.
 
 ## Формат отчёта
 
@@ -103,6 +104,7 @@ coordinator_review: pending
 ### B. Factual accuracy — X/5
 - [конкретное, e.g., «Строка 14: "10x faster" — нет такого числа в proof-points.md.»]
 - [Строка 22: упомянут "Bupa" как клиент — Bupa указана только как target в icp-detail.md, не как клиент.]
+- [Sourcing (для статей): сколько ссылок на сторонние источники и какого качества. Ноль внешних ссылок называй прямо, а не пропускай.]
 
 ### C. Brand & tone — X/3
 - [Строка 8: banned word "leverage".]

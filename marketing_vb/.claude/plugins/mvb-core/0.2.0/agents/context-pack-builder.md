@@ -106,6 +106,14 @@ target_agent: post-drafter | hypothesis-generator | seo-planner | etc.
 - Если тема уже есть в inventory как опубликованная — передай явно: `already_live: true` + URL. **seo-planner тогда не создаёт net-new и не рефрешит то, что уже live.**
 - **Зачем:** `content-plan.md` описывает *план*, а inventory — *факт*. Агент, который видит только план, может переписать или продублировать уже опубликованную статью либо не сослаться на свежий live-контент. До 2026-08-26 этот блок существовал только в DEV-копии, а рабочая пара копий его не отдавала — то есть 31 КБ реестра не читал никто, и гейт «уже опубликовано» не срабатывал ни разу.
 
+### 7d. Select keyword data (только для `track = seo`)
+- Ищи свежий файл `workspace/seo/_keywords/{YYYY-MM-DD}-{slug}.yaml` — его пишет `scripts/ahrefs-keywords.py` (Ahrefs API v3, реальные volume / difficulty / traffic potential).
+- Если файла нет — **создай его**: `python3 scripts/ahrefs-keywords.py "<тема>" --slug <slug>`. Одна прогонка это 2 запроса и ~250-800 юнитов из 400 000 в месяц, то есть цена пренебрежимо мала по сравнению со статьёй, написанной вслепую.
+- Передай в пак как `keywords_raw`: `seed_has_data`, `seed_metrics`, `variants`, `idea_seed`, `ideas`. Ничего не пересчитывай и не округляй.
+- **`null` у volume/difficulty значит «у Ahrefs нет цифры», а НЕ ноль.** Разница принципиальная: ноль это измеренное отсутствие спроса, null это отсутствие измерения. Не схлопывай их и не подставляй 0.
+- Если скрипт недоступен или вернул ошибку — передай `keywords_raw: unavailable` с причиной. Planner тогда идёт по TBD-ветке и пишет об этом в plan.md. **Цифры не выдумывай ни при каких условиях.**
+- **Зачем:** `seo-planner` объявлял вход `keywords_raw` с самого начала, но producer'а не существовало — Phase 1 читала пустоту в каждом прогоне, и volume/difficulty оставались TBD структурно. Первый же реальный прогон (2026-08-26) показал цену: у темы `remote body measurement for online fitness coaching` измеренного спроса **нет вообще**, при том что статья была написана и доведена до publish-package именно под неё.
+
 ### 8. Select exclusions (для outbound)
 - Если `track = outbound`: прочитай `workspace/outbound/exclusions/{profile}-registry.json`
 - Включи список excluded company_ids и person_ids для этого profile
@@ -243,6 +251,30 @@ context_pack:
         published: "2026-07-08"
         hub: "BCRL / Oncology"
     refresh_status: "ai-in-fitness-industry → published 2026-07-31; the-potential-of-ai-in-telehealth и glp-1-market ещё ждут рефреша"
+
+  # only for track=seo — from scripts/ahrefs-keywords.py (Ahrefs API v3). Real figures.
+  # null volume/difficulty = Ahrefs has NO figure. It is NOT zero. Do not conflate.
+  keywords_raw:
+    source: "ahrefs api v3"
+    pulled: "2026-08-26"
+    seed: "remote body measurement for online fitness coaching programs"
+    seed_has_data: false            # точная фраза не имеет измеренного спроса
+    seed_metrics: null
+    variants:
+      - keyword: "online fitness coaching programs"
+        volume: 100
+        difficulty: null
+      - keyword: "coaching programs"
+        volume: 500
+        difficulty: 52
+      - keyword: "remote body measurement"
+        volume: null
+        difficulty: 26
+    idea_seed: "online fitness coaching programs"
+    ideas:
+      - keyword: "best online fitness coaching programs"
+        volume: 100
+        difficulty: 58
 
   exclusions: null  # only for outbound track
 ```

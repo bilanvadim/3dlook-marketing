@@ -31,10 +31,12 @@ for _, p in people.iterrows():
     # parse out the 2 message blocks (invite is note-less — no text)
     parts = re.findall(r"## Message (\d) — .+?\n(.+?)\n\*\*Char count", text, re.S)
     msgs = {int(s): m.strip() for s, m in parts}
+    # Use linkedin_url (primary) or person_linkedin_url (legacy) from people-validated.csv
+    li_url = p.get("linkedin_url") or p.get("person_linkedin_url", "")
     rows.append({
         "first_name": p.first_name,
         "last_name": p.last_name,
-        "linkedin_url": p.person_linkedin_url,
+        "linkedin_url": li_url,
         "company": p.company_name,
         "title": p.title,
         "email": p.get("email_guess", ""),
@@ -44,6 +46,10 @@ for _, p in people.iterrows():
     })
 
 out = pd.DataFrame(rows)
+# Ensure linkedin_url is never dropped — required for campaign launch
+required_cols = ["first_name", "last_name", "linkedin_url", "company", "title", "message_1", "message_2"]
+for col in required_cols:
+    assert col in out.columns, f"MISSING REQUIRED COLUMN: {col}"
 out.to_csv("closelyhq-import.csv", index=False)
 print(f"Ready: {len(out)} rows")
 ```
