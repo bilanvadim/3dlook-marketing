@@ -1,0 +1,164 @@
+context_pack:
+  created: 2026-08-25
+  product: fitxpress
+  track: seo
+  channel: blog
+  profile: company
+  objective: "SEO article — Remote Body Measurement for Online Fitness Coaching Programs (Hub 1 AI in Fitness, Digital coaching cluster, MOFU/BOFU, create net-new, P1)"
+  target_agent: seo-planner
+
+  company_oneliner: "3DLOOK turns two smartphone photos into 80+ body measurements and a 3D model in under 45 seconds."
+
+  product_summary: |
+    FitXpress: mobile body scanning that produces structured, repeatable body data
+    (80+ measurements, BMI, body composition, 3D model) from two smartphone photos.
+    For fitness: a structured body-data capture and scan-to-scan comparison layer that
+    online coaching programs integrate via API/SDK to standardize remote intake and make
+    client progress visible. Not a scale, not a clinical or diagnostic tool.
+
+  approved_claims:
+    - id: FX-001
+      text: "96-97% overall accuracy vs expert manual measurements (real-world benchmark)"
+      source: "2025 Accuracy & Repeatability Study"
+    - id: FX-002
+      text: "Scan-to-scan repeatability: variance < 1 cm (95%+ consistency)"
+      source: "2025 Accuracy & Repeatability Study"
+    - id: FX-003
+      text: "80+ body measurements from two photos (front + side)"
+      source: "Product spec"
+    - id: FX-004
+      text: "Results in under 45 seconds"
+      source: "Product spec"
+    - id: FX-005
+      text: "Body composition outputs: BMI, BMR, body fat %, lean mass, fat mass"
+      source: "Product spec (BMR Mifflin-St Jeor, body fat % US Navy formula)"
+    - id: FX-006
+      text: "Weight estimation ±3.5% average error (software output, not a scale)"
+      source: "FitXpress deck"
+    - id: FX-007
+      text: "HIPAA-compliant, GDPR-aligned; photos deleted immediately or within 30 days; face obfuscation at capture; no personal identifiers processed"
+      source: "FitXpress security commitment"
+    - id: FX-008
+      text: "Trained on 9+ years of data: 150K+ photos, 30K+ 3D scans, 430K+ measurements"
+      source: "FitXpress deck"
+
+  banned_claims:
+    - "most accurate body scanning / best-in-class"
+    - "any accuracy figure reduced to one universal number without qualifying decision/reference/protocol/population/tolerance"
+    - "medical device / diagnostic / clinical assessment"
+    - "replaces DEXA, BIA, calibrated scales, or clinician review"
+    - "guaranteed retention/churn outcomes as a promise"
+    - "any number not in approved_claims (incl. invented SEO volumes or fitness-customer metrics)"
+    - "named fitness-coaching customer (none exists in proof-points — do not fabricate)"
+
+  banned_words:
+    - leverage
+    - utilize
+    - harness
+    - robust
+    - seamless
+    - comprehensive
+    - delve
+    - navigate (metaphorical)
+    - tapestry
+    - realm
+    - unlock
+    - unleash
+    - game-changing
+    - cutting-edge
+    - revolutionary
+
+  terminology_hard_bans:  # terminology-guardrails.md — writer holds these; editor runs full pass
+    - "em dash (— –) — always, no exceptions; use comma, period, or parentheses"
+    - "'objective' about our tech/outputs → standardized / timestamped / structured / repeatable"
+    - "'the reader' / 'this article' / 'see below' / 'the following sections'"
+    - "'by hand' → 'manually'; 'let' → 'allow'"
+    - "'plus' as a capability connector → 'including' / 'such as' / 'along with'"
+    - "'so' introducing a benefit → 'reducing…' / 'allowing…' / 'which can…'"
+    - "'positioned as' about product/intended-use/regulatory status → state boundary directly ('FitXpress is not a medical device')"
+    - "no presumed reader reaction ('what trips coaches up'); no behaviour attributed to concepts"
+    - "no triple parallelisms; no 'not just X, it's Y'"
+    - "BMI / CEO / UK / US / EU are commonly known — do NOT expand"
+
+  tone:
+    voice: "expert, data-led, calm, workflow-framed; B2B; lighter and less clinical than telehealth (fitness segment), but still hedged and honest about limits"
+    length: "1,800-2,200 words"
+    format: "12-part strategic structure; comparison-by-role, not 'we win everything'; FAQ block; CTA by intent"
+    dont: "no hype, no emoji, no diagnostic/clinical language, no eligibility/decisioning framing, no GLP-1 clinical bleed"
+
+  # fitxpress only — sourced from about-me.md
+  voice_fingerprint:
+    - "The reframe move: turn 'how accurate is it?' into 'accurate enough for which decision?' — here, 'accurate enough to show a coaching client real progress and standardize remote intake'"
+    - "Declarative and unhurried; concrete over abstract (every claim carries a number, source, or disclosed limit)"
+    - "Honest about limits in the same breath as capability; buyer framing ('coaching programs', 'coaches', 'platforms'), not 'you'-spam"
+    - "Compare by role, not by hype — no clean sweep against smart scales / tape / DEXA"
+  claims_discipline:
+    - "NEVER: diagnose, make clinical/eligibility/fitness-for-duty decisions, replace clinician/DEXA/BIA/calibrated scale, guarantee compliance or retention outcomes, auto-detect fraud"
+    - "Position AS: mobile body-scanning / structured body-data capture / remote intake & documentation / scan-to-scan progress-comparison layer that supports coaches"
+    - "Not a medical device; compliance framed on data-privacy (HIPAA/GDPR/SOC 2), not medical-device frameworks"
+  accuracy_framing:
+    - "Never reduce accuracy to one universal number — qualify by decision/reference/protocol/population/tolerance"
+    - "Repeatability (scan-to-scan consistency) is what matters for longitudinal coaching progress; write it as '< 1 cm'"
+    - "The two benchmarks (internal-manual ~96-97%; ISO 8559-1 session-to-session 0.40 cm) are never combined"
+
+  examples:
+    - file: "brand-assets/past-articles/blog/3dlook-turns-two-photos-structured-body-data.md"
+      note: "closest structured-body-data framing; capture → structured data → workflow"
+    - file: "brand-assets/past-articles/blog/mobile-body-scanning-insurance-underwriting.md"
+      note: "model for scoped-accuracy, 'supporting layer not decisioning', comparison-by-role"
+    - live_hub: "https://3dlook.ai/content-hub/ai-in-fitness-industry/  # parent hub — read for house voice + to avoid duplicating"
+
+  competitors_context: |
+    Prism Labs and Bodygram are the relevant FX competitors in fitness/composition tracking;
+    Bodygram targets trainers/dieticians directly. Our angle for coaching: structured body-data
+    capture that drops into a coaching program's own workflow (API/SDK), repeatability for
+    longitudinal progress, and honest scoping. Never name competitors in the article.
+
+  icp_context:
+    segment: "Connected & Digital Fitness — Digital coaching sub-angle (online coaching businesses / coaching platforms, NOT generic consumer fitness apps)"
+    buyer_persona: "Founder/CEO of online coaching business; Head of Growth / VP Engagement-Retention; Chief Product Officer; Fitness Program Director"
+    pain_points:
+      - "Clients lose motivation and drop off when progress is not visible; weight alone understates recomposition"
+      - "Remote coaches can't measure clients in person; self-report, tape, and progress photos are inconsistent and hard to compare over time"
+      - "Weak long-term retention against rising CAC; hard to differentiate on personalization"
+      - "Manual intake and progress collection eat coach time and don't scale as the roster grows"
+    hero_message: "Give online coaching programs standardized, repeatable body data so client progress is visible between check-ins — without in-person measurement."
+    segment_hook: "Visible transformation + body-data personalization → engagement, retention, premium-tier monetization. Tone lighter, less clinical."  # audience.md #3
+    do_not_say:  # audience.md #3 'Don't'
+      - "No medical, diagnostic, or clearance language"
+      - "Do not blur into GLP-1 clinical or wellness-rewards workflows"
+      - "Not a DEXA/BIA or calibrated-scale replacement"
+
+  # track=seo + fitxpress only — content-plan.md Hub 1 + guidelines §9/§11
+  content_strategy:
+    hub: "AI in Fitness (Hub 1)"
+    cluster: "Digital coaching — Remote Body Measurement for Online Fitness Coaching Programs"
+    intent: "MOFU/BOFU"
+    action_type: "create-net-new"  # GATE cleared by orchestrator Phase 0
+    priority: "P1"
+    existing_urls:
+      - "https://3dlook.ai/content-hub/ai-in-fitness-industry/  # parent hub — link up, do NOT duplicate the broad overview"
+      - "https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/  # BOFU product page — link down (NOTE: path-level debt flagged in CLAUDE.md §16)"
+    cannibalization_guardrail: |
+      Targets coaches/platform workflows, not generic apps. Do NOT create a second AI-in-Fitness
+      overview (refresh the hub instead). Keep distinct from sibling net-new rows: 'AI Fitness
+      Progress Tracking: Why Weight Alone Is Not Enough' (TOFU, P2) and 'AI Body Scanning for
+      Fitness Apps' (BOFU, review/decide, P2). Owned intent: the remote-coaching-program workflow —
+      how a coaching business captures and compares client body data at a distance.
+    recommendation: "Create net-new. Narrow angle = coaching-program workflow + operational value + method comparison-by-role. BOFU destination = /fitxpress/for-connected-and-digital-fitness/."
+    vertical_boundary: |
+      Fitness owns: fitness apps, digital coaching, body recomposition, progress visibility,
+      engagement, retention, app/platform features. Do NOT blur into wellness rewards or GLP-1
+      clinical workflows. FitXpress-wide: no diagnostic/clinical/eligibility/decisioning claims;
+      not a DEXA/BIA/scale replacement; not a medical device.
+    internal_link_targets:
+      up: "https://3dlook.ai/content-hub/ai-in-fitness-industry/  (AI in Fitness hub)"
+      sideways:
+        - "https://3dlook.ai/content-hub/ai-body-data-health-hub/  (Main Health hub)"
+        - "https://3dlook.ai/content-hub/mobile-body-scanning-patient-engagement/  (engagement angle — reader-journey overlap on retention)"
+      down: "https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/  (BOFU product page)"
+      trust:
+        - "https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/  (accuracy framework — cite when discussing accuracy/repeatability)"
+        - "Data, Privacy, Security & Regulatory FAQ (P0, PLANNED — not yet published; use short privacy note, no dead link)"
+
+  exclusions: null
