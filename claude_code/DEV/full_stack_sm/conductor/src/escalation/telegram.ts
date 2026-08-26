@@ -26,6 +26,51 @@ export function tgConfigFromEnv(): TelegramConfig | null {
  */
 const BREAKER_REASONS = new Set(['stuck', 'turns']);
 
+/**
+ * Strip a bot token out of anything on its way to a log.
+ *
+ * NOT a reproduced leak, and the comment should say so: on this Node/undici, a failed fetch reports
+ * `TypeError: fetch failed` with a cause naming only the HOST — DNS failure, TLS failure, connection
+ * refused and abort were all checked and none carried the token. The audit's claim was conditional
+ * ("when undici attaches the request URL"), and it stays plausible for a future version.
+ *
+ * It is kept because the realistic path to a leak is not undici, it is a person: the token lives in
+ * the URL, and the first thing anyone does while debugging a delivery problem is log the URL. One
+ * regex costs nothing and covers both.
+ */
+export function redactToken(x: unknown): string {
+  return String(x).replace(/bot\d{6,}:[A-Za-z0-9_-]{10,}/g, 'bot<redacted>');
+}
+
+/**
+ * Send one message and CHECK THE ANSWER.
+ *
+ * An escalation nobody receives is worse than none: waitEscalation then sits out its wait and
+ * the job parks or closes as 'escalated'. The response used to go uninspected, so a 400
+ * (Markdown that failed to parse — escapeMd covers only _*`[] , which is not enough for legacy
+ * Markdown), a 401, or a "chat not found" all looked like success. On a 400 we retry once
+ * WITHOUT parse_mode: losing the formatting beats losing the message that is blocking a job.
+ */
+async function send(cfg: TelegramConfig, text: string, replyMarkup?: unknown): Promise<void> {
+  const url = `https://api.telegram.org/bot${cfg.botToken}/sendMessage`;
+  const post = (body: unknown) => fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body),
+  });
+  await post({ chat_id: cfg.chatId, text, parse_mode: 'Markdown', ...(replyMarkup ? { reply_markup: replyMarkup } : {}) })
+    .then(async (res) => {
+      if (res.ok) return;
+      const body = await res.text().catch(() => '');
+      console.error(redactToken(`telegram send rejected: HTTP ${res.status} ${body.slice(0, 200)}`));
+      if (res.status === 400) {
+        await post({ chat_id: cfg.chatId, text, ...(replyMarkup ? { reply_markup: replyMarkup } : {}) })
+          .catch((err) => console.error('telegram plain-text retry failed:', redactToken(err)));
+      }
+    })
+    .catch((err) => console.error('telegram notify failed:', redactToken(err)));
+}
+
 export async function notifyEscalation(
   cfg: TelegramConfig,
   e: { escalationId: number; jobTitle: string; reason: string; question: string; context?: unknown },
@@ -42,36 +87,20 @@ export async function notifyEscalation(
     `${escapeMd(e.question)}${ctx}\n\n` +
     `Reply: ${escapeMd(hint)}  (or use the bot buttons)`;
 
-  await fetch(`https://api.telegram.org/bot${cfg.botToken}/sendMessage`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      chat_id: cfg.chatId,
-      text,
-      parse_mode: 'Markdown',
-      reply_markup: {
-        inline_keyboard: [[
-          { text: breaker ? '▶️ Continue' : '✅ Approve', callback_data: `ho:approve:${e.escalationId}` },
-          { text: breaker ? '⏸ Stop & keep' : '⛔ Deny',   callback_data: `ho:deny:${e.escalationId}` },
-          { text: '🛑 Abort',                              callback_data: `ho:abort:${e.escalationId}` },
-        ]],
-      },
-    }),
-  }).catch((err) => console.error('telegram notify failed:', err));
+  await send(cfg, text, {
+    inline_keyboard: [[
+      { text: breaker ? '▶️ Continue' : '✅ Approve', callback_data: `ho:approve:${e.escalationId}` },
+      { text: breaker ? '⏸ Stop & keep' : '⛔ Deny',   callback_data: `ho:deny:${e.escalationId}` },
+      { text: '🛑 Abort',                              callback_data: `ho:abort:${e.escalationId}` },
+    ]],
+  });
 }
 
 export async function notifyDone(cfg: TelegramConfig, jobTitle: string, status: string, summary: string) {
   const icon = status === 'done' ? '✅' : status === 'aborted' ? '🛑'
     : status === 'paused' ? '⏸' : status === 'escalated' ? '🟡' : '❌';
-  await fetch(`https://api.telegram.org/bot${cfg.botToken}/sendMessage`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      chat_id: cfg.chatId,
-      text: `${icon} *Fullstack agents job ${escapeMd(status)}*\n*${escapeMd(jobTitle)}*\n\n${escapeMd(truncate(summary, 1500))}`,
-      parse_mode: 'Markdown',
-    }),
-  }).catch((err) => console.error('telegram notify failed:', err));
+  await send(cfg,
+    `${icon} *Fullstack agents job ${escapeMd(status)}*\n*${escapeMd(jobTitle)}*\n\n${escapeMd(truncate(summary, 1500))}`);
 }
 
 function truncate(s: string, n: number) { return s.length > n ? s.slice(0, n) + '…' : s; }

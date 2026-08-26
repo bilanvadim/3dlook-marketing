@@ -35,7 +35,7 @@ HOME = os.path.expanduser("~")
 # `hermes update`/`hermes setup` can reset SOUL.md back to the generic NousResearch
 # default (which makes Hermes code things itself instead of delegating to Claude Code).
 # Re-apply the canonical orchestrator persona from the repo after every update.
-REPO_SOUL = "/srv/vadim_prod/ai-agents-config/agents-ai/telegram-bot-agent/hermes-agent/SOUL.md"
+REPO_SOUL = f"{HOME}/3dlook-marketing/hermes_agent/SOUL.md"
 LIVE_SOUL = f"{HOME}/.hermes/SOUL.md"
 
 
@@ -182,7 +182,7 @@ def main():
 
     # Re-apply the file-tool project-code write guard (vendored patch, wiped by update).
     try:
-        guard = "/srv/vadim_prod/ai-agents-config/agents-ai/telegram-bot-agent/hermes-agent/ops/apply-file-tool-guard.py"
+        guard = f"{HOME}/3dlook-marketing/hermes_agent/ops/apply-file-tool-guard.py"
         if os.path.exists(guard):
             g = subprocess.run(["/usr/bin/python3", guard], capture_output=True, text=True)
             log(f"file-tool guard: {(g.stdout + g.stderr).strip()}")
@@ -252,8 +252,7 @@ def main():
     # left alone — copy the sources, never the state.
     try:
         import glob as _glob
-        src_dir = ("/srv/vadim_prod/ai-agents-config/agents-ai/telegram-bot-agent/"
-                   "hermes-agent/ops/model-router")
+        src_dir = f"{HOME}/3dlook-marketing/hermes_agent/ops/model-router"
         dst_dir = f"{HOME}/.hermes/model-router"
         if os.path.isdir(src_dir):
             os.makedirs(dst_dir, exist_ok=True)
@@ -275,20 +274,19 @@ def main():
     # Re-apply the Claude-Code switcher patch (/dev /seo /marketing /security /hermes
     # sticky mode — vendored inserts in run.py + commands.py, wiped by update).
     try:
-        # Vadim's own repo FIRST, /srv only as a fallback. /srv is Sergiy's shared
-        # config repo (SergeMiro/ai-agents-config): a fix made there survives until
-        # the next `git pull`, and the script there also installs ITS OWN
-        # claude_switcher.py from the same directory. That split is what let
+        # This repo is the ONLY source. The /srv/…/ai-agents-config fallback was
+        # removed 2026-08-26 along with every other runtime tie to that tree.
+        # Keeping it had a concrete cost: the script over there installs ITS OWN
+        # claude_switcher.py from its own directory, so whichever copy the daily
+        # update happened to pick decided which switcher ran. That split is what let
         # MISSING_ANCHOR adapter.py:inline-query fire five mornings straight
         # (08-13…08-17) — the 08-14 fix had landed in ~/3dlook-marketing, a copy
-        # this line never invoked. The chosen path is logged so a silent switch back
-        # is visible instead of inferred.
+        # this line never invoked. One source removes the coin toss. The chosen path
+        # is still logged, so a silent switch back would be visible, not inferred.
         switcher = next(
             (p for p in (
                 os.path.expanduser("~/3dlook-marketing/hermes_agent/ops/"
                                    "claude-switcher/apply-claude-switcher-patch.py"),
-                "/srv/vadim_prod/ai-agents-config/agents-ai/telegram-bot-agent/"
-                "hermes-agent/ops/claude-switcher/apply-claude-switcher-patch.py",
             ) if os.path.exists(p)),
             "",
         )
@@ -305,8 +303,7 @@ def main():
     # Re-apply the per-turn vision switch (borrow the image reader for the turn
     # that carries a picture — two vendored inserts in run.py, wiped by update).
     try:
-        vsw = ("/srv/vadim_prod/ai-agents-config/agents-ai/telegram-bot-agent/"
-               "hermes-agent/ops/vision-switch/apply-vision-switch-patch.py")
+        vsw = f"{HOME}/3dlook-marketing/hermes_agent/ops/vision-switch/apply-vision-switch-patch.py"
         if os.path.exists(vsw):
             g = subprocess.run(["/usr/bin/python3", vsw], capture_output=True, text=True)
             log(f"vision-switch: {(g.stdout + g.stderr).strip()}")

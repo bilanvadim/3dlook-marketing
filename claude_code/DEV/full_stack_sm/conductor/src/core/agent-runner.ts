@@ -20,14 +20,29 @@ const SYS =
   'step described — do not touch other steps. Follow scratchpad-protocol, the verification-protocol, ' +
   'and the policy packs for the step tags. Never run production-affecting commands without an explicit ask.';
 
+// Autonomous headless worker: no human is there to answer a permission prompt, so the step
+// executor runs under 'acceptEdits' — NOT 'bypassPermissions'.
+//
+// bypassPermissions was the obvious choice and the wrong one: it skips the work_dir's own
+// permissions.deny rules and its PreToolUse hooks, which is precisely where the protection now
+// lives (a settings.json deny list plus guard.py in every work_dir a conductor job targets).
+// Bypassing turned all of that off and left "never run prod-affecting commands" — a sentence in
+// a prompt — as the only guard. acceptEdits keeps the deny rules and the hook, while still
+// auto-approving the file edits an autonomous run has to make.
+//
+// allowedTools pre-approves the read-only web tools: under acceptEdits headless auto-DENIES
+// them ("you haven't granted it yet"), which silently breaks every research flow. The option is
+// ADDITIVE — it auto-allows only these and restricts nothing else. Applies to subagents too.
 async function runQuery(prompt: string, workDir: string, plugins: LocalPlugin[], maxTurns = 150): Promise<{ text: string; ok: boolean }> {
   let text = '';
   let ok = false;
   const stream = query({
     prompt,
-    // allowedTools pre-approves read-only web tools (acceptEdits auto-denies them in
-    // headless); additive — does not restrict other tools. See conductor.ts for rationale.
-    options: { settingSources: ['project'], plugins, permissionMode: 'acceptEdits', allowedTools: ['WebSearch', 'WebFetch'], systemPrompt: SYS, cwd: workDir, maxTurns } as any,
+    options: {
+      settingSources: ['project'], plugins,
+      permissionMode: 'acceptEdits', allowedTools: ['WebSearch', 'WebFetch'],
+      systemPrompt: SYS, cwd: workDir, maxTurns,
+    } as any,
   });
   for await (const msg of stream as any) {
     if (msg?.type === 'assistant') {

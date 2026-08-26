@@ -6,7 +6,7 @@
 import { readFileSync, rmSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { createClient } from '@libsql/client';
+import { createClient } from './_client';
 import { Store } from '../src/core/store';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
@@ -68,11 +68,16 @@ async function main() {
   check('openQuestions returns the asked one', open.length === 1 && open[0].question === 'q1?');
   await store.answerQuestion(open[0].id, 'a1');
   check('answerQuestion clears it', (await store.openQuestions(jobId)).length === 0);
+  // The half of the feature that was missing: askQuestions parks the job in
+  // 'awaiting-input' and nothing used to bring it back, so a job that ever asked
+  // a question could never run again.
+  check('answering the last question releases the job',
+    (await store.projectStatus(jobId))?.job_status === 'queued');
 
   // escalation round-trip
   const runId = await store.startRun(jobId);
   const escId = await store.openEscalation(runId, jobId, 'ask_gate', 'deploy?', { cmd: 'vercel deploy' });
-  const st = await store.waitEscalation(escId, 100, 20);
+  const st = await store.waitEscalation(escId, { timeoutMs: 100, pollMs: 20 });
   check('waitEscalation returns the timeout sentinel when undecided', st === 'timeout');
   // It must NOT mark the row expired: handleCallback only writes `where status='open'`, so an
   // expired row makes the Telegram buttons silently dead while the job is already gone.
@@ -82,13 +87,22 @@ async function main() {
 
   // reminders fire while nobody answers — silence reads as a dead conductor
   let reminders = 0;
-  await store.waitEscalation(escId, 260, 20, async () => { reminders++; }, 50);
+  await store.waitEscalation(escId, { timeoutMs: 260, pollMs: 20, onReminder: async () => { reminders++; }, remindMs: 50 });
   check('waitEscalation nudges via onReminder while waiting', reminders >= 2);
+
+  // the heartbeat must keep beating while a human thinks, or recoverStale requeues a job
+  // that is merely waiting on an approval — a live worker recovered out from under itself
+  await raw.execute({ sql: "update ho_jobs set status='escalated', claimed_at=datetime('now','-1 hour') where id=?", args: [jobId] });
+  await store.waitEscalation(escId, { jobId, timeoutMs: 60, pollMs: 20 });
+  const beat = await raw.execute({
+    sql: "select (claimed_at > datetime('now','-30 seconds')) as fresh from ho_jobs where id=?", args: [jobId] });
+  check('waitEscalation heartbeats the job while the human is away', Number(beat.rows[0].fresh) === 1);
 
   // a decision recorded mid-wait is picked up
   await raw.execute({ sql: "update ho_escalations set status='approved' where id=?", args: [escId] });
   check('waitEscalation returns the recorded decision',
-        (await store.waitEscalation(escId, 100, 20)) === 'approved');
+        (await store.waitEscalation(escId, { timeoutMs: 100, pollMs: 20 })) === 'approved');
+  await raw.execute({ sql: "update ho_jobs set status='running' where id=?", args: [jobId] });
 
   // project status surface
   const ps = await store.projectStatus(jobId);
@@ -104,7 +118,7 @@ async function main() {
   // ---- noProgressPauseStreak: drives the rate-limit backoff ladder in conductor.ts ----
   // Regression guard for the 2026-07-27 loop (job 30: 193 zero-turn paused runs in 3h22m).
   await raw.execute({
-    sql: "insert into ho_jobs(kind,title,prompt,profile,work_dir) values('feature','streak','p','marketing_vb_sm','/tmp')",
+    sql: "insert into ho_jobs(kind,title,prompt,profile,work_dir) values('feature','streak','p','marketing','/tmp')",
     args: [],
   });
   const streakJob = Number((await raw.execute('select max(id) as id from ho_jobs')).rows[0].id as number);
@@ -140,7 +154,7 @@ async function main() {
   // 2026-07-28: job 35 proved the window was shut, then job 36 was claimed and restarted its
   // ladder from 56s, burning five more attempts. The global streak carries that knowledge over.
   await raw.execute({
-    sql: "insert into ho_jobs(kind,title,prompt,profile,work_dir) values('feature','other','p','marketing_vb_sm','/tmp')",
+    sql: "insert into ho_jobs(kind,title,prompt,profile,work_dir) values('feature','other','p','marketing','/tmp')",
     args: [],
   });
   const otherJob = Number((await raw.execute('select max(id) as id from ho_jobs')).rows[0].id as number);
@@ -170,7 +184,7 @@ async function main() {
   // the old turns>0 rule reset the streak every time — backoff pinned at ~50s and a Telegram
   // message on every pause. A couple of turns is the run-up to the same wall, not progress.
   await raw.execute({
-    sql: "insert into ho_jobs(kind,title,prompt,profile,work_dir) values('feature','partial','p','marketing_vb_sm','/tmp')",
+    sql: "insert into ho_jobs(kind,title,prompt,profile,work_dir) values('feature','partial','p','marketing','/tmp')",
     args: [],
   });
   const partialJob = Number((await raw.execute('select max(id) as id from ho_jobs')).rows[0].id as number);

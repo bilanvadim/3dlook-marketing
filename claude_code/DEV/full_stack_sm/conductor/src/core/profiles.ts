@@ -8,7 +8,7 @@
  * plugins to absolute local dirs and pass them to query({ options.plugins }),
  * independent of the target project's own .claude/.
  *
- * Source of truth = claude_code/DEV/profiles/<profile>.json (same files the
+ * Source of truth = agents-ai/telegram-bot-agent/claude-code-agent/DEV/profiles/<profile>.json (same files the
  * interactive switcher reads). Override the dir with HO_PROFILES_DIR.
  */
 import { readFileSync, existsSync } from 'node:fs';
@@ -25,11 +25,55 @@ interface ProfileManifest {
 }
 
 const HERE = dirname(fileURLToPath(import.meta.url)); // .../conductor/src/core
-// profiles live at claude_code/DEV/profiles (four levels up: core→src→conductor→full_stack_sm→DEV)
+// profiles live at agents-ai/telegram-bot-agent/claude-code-agent/DEV/profiles (four levels up: core→src→conductor→dev→DEV)
 const DEFAULT_PROFILES_DIR = resolve(HERE, '../../../../profiles');
 
 export function profilesDir(): string {
   return process.env.HO_PROFILES_DIR ?? DEFAULT_PROFILES_DIR;
+}
+
+interface ProfileManifestFull extends ProfileManifest { runFrom?: string }
+
+/** Read a manifest, or null if it is missing/unreadable. */
+function readManifest(name: string): ProfileManifestFull | null {
+  const p = join(profilesDir(), `${name}.json`);
+  if (!existsSync(p)) return null;
+  try { return JSON.parse(readFileSync(p, 'utf8')) as ProfileManifestFull; } catch { return null; }
+}
+
+/**
+ * The directory a profile is BOUND to (`runFrom`), or null when it is free to run
+ * anywhere. Resolved relative to the profiles dir's parent — same convention as
+ * switch-profile.sh and the marketplace paths below.
+ */
+export function profileRunFrom(profile: string | null | undefined): string | null {
+  const m = readManifest((profile && profile.trim()) || 'dev');
+  const v = m?.runFrom;
+  if (!v) return null;
+  const p = isAbsolute(v) ? v : resolve(dirname(profilesDir()), v);
+  return existsSync(p) ? p : null;
+}
+
+/**
+ * Where the job must actually run.
+ *
+ * A bound profile (marketing_vb / marketing_vb_sm) has agents that read CLAUDE.md,
+ * brand-assets/ and workspace/ by RELATIVE path — from anywhere else they see none of
+ * it and the run produces confidently generic output with no error anywhere. Job 88
+ * (2026-08-17) was enqueued with work_dir at the repo ROOT, one level above the
+ * project, precisely that way.
+ *
+ * So for a bound profile the manifest wins over whatever the enqueuer wrote, and the
+ * substitution is logged. Unbound profiles (dev, seo, …) keep the given work_dir.
+ */
+export function resolveWorkDir(profile: string | null | undefined, workDir: string): string {
+  const bound = profileRunFrom(profile);
+  if (!bound) return workDir;
+  const given = resolve(workDir || '.');
+  if (given === bound || given.startsWith(`${bound}/`)) return workDir;
+  console.warn(`[profiles] profile '${profile}' is bound to ${bound} — work_dir `
+    + `'${workDir}' is outside it; running from ${bound} instead`);
+  return bound;
 }
 
 /**
@@ -54,7 +98,7 @@ export function resolveProfilePlugins(profile: string | null | undefined): Local
   }
 
   const marketplaces = manifest.marketplaces ?? {};
-  // Marketplace paths in profiles/*.json may be relative to claude_code/DEV
+  // Marketplace paths in profiles/*.json may be relative to agents-ai/telegram-bot-agent/claude-code-agent/DEV
   // (= the parent of the profiles dir), matching switch-profile.sh. Absolute
   // paths are honored as-is.
   const devDir = dirname(profilesDir());

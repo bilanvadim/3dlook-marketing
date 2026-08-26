@@ -30,8 +30,8 @@ export const DEFAULT_LIMITS: BreakerLimits = {
  * therefore get a much longer rope (stuckRepeatsReadOnly).
  *
  * WHY: on 2026-07-28 job 37 was killed as "stuck" after 6 Reads of six DIFFERENT files in one
- * campaign directory. The signature bug that made them look identical is fixed in conductor.ts,
- * but a 6-repeat threshold on reads was the other half of the false positive.
+ * campaign directory. The signature bug that made them look identical is fixed in conductor.ts
+ * (buildSignature), but a 6-repeat threshold on reads was the other half of the false positive.
  */
 export const READ_ONLY_TOOLS = new Set([
   'Read', 'Grep', 'Glob', 'NotebookRead', 'WebFetch', 'WebSearch', 'TodoWrite', 'Task',
@@ -47,7 +47,7 @@ export function repeatsForSignature(sig: string, lim: BreakerLimits): number {
 /**
  * Per-job-kind minimum turn limits. Some job kinds (content pipelines, features)
  * need more turns than a simple fix or daily scout. When the DB value is lower than
- * this floor, the conductor uses the floor instead. Set to 0 to use DB value as-is.
+ * this floor, the conductor uses the floor instead. Set to 0 to use the DB value as-is.
  */
 export const KIND_MIN_TURNS: Record<string, number> = {
   feature: 80,    // content pipeline + full implementation

@@ -19,14 +19,18 @@
 # ----------------------------------------------------------------------------
 set -uo pipefail
 
-# 2026-08-12: the managed conductor moved to the CANONICAL tree, so the path guard has to
-# cover BOTH — the old project checkout (where a stray nohup could still be started from) and
-# the new runtime dir. Left as only the old path, this guard silently stopped catching anything:
-# a rogue from /srv/vadim_prod/... failed the path test and kept squatting :3001.
-# The cgroup test below is what protects the LEGIT managed process in either location.
+# Directories a LEGITIMATE conductor may run from. Anything else matching
+# src/core/conductor.ts under this UID is a rogue and gets killed.
+#
+# 2026-08-12 this list covered both the project checkout and the /srv runtime,
+# because the managed conductor had moved there. 2026-08-26 it moved back: the
+# conductor now runs from this repository and /srv/…/ai-agents-config is not part
+# of the system at all. The old entry is REMOVED rather than left harmlessly in
+# place — while it was listed, a conductor started out of that tree would have
+# passed the path test and been treated as the managed one, which is the opposite
+# of what this guard is for.
 VADIM_CONDUCTOR_DIRS=(
-  "/srv/vadim_prod/ai-agents-config/agents-ai/telegram-bot-agent/claude-code-agent/DEV/dev/conductor"
-  "/home/vadim_prod/3dlook-marketing/claude_code/DEV/full_stack_sm/conductor"
+  "${HOME}/3dlook-marketing/claude_code/DEV/full_stack_sm/conductor"
 )
 VADIM_UID=1006
 DRY_RUN="${DRY_RUN:-0}"

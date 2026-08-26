@@ -1,7 +1,7 @@
 /**
  * Fullstack agents Conductor — main control loop.
  *
- * Wires the Agent SDK to the circuit breaker, Supabase state, and Telegram escalation.
+ * Wires the Agent SDK to the circuit breaker, SQLite/libSQL state, and Telegram escalation.
  * One worker process can run several of these; jobs are claimed atomically so they don't collide.
  *
  * DURABLE RESUME: every run records its SDK session_id on the job. If the run is paused by a
@@ -24,13 +24,37 @@ import { Store, Job, Step } from './store';
 import { evaluate, initState, BreakerState, BreakerLimits, DEFAULT_LIMITS, KIND_MIN_TURNS, Event } from './breaker';
 import { runStep, StepRecord } from './steprunner';
 import { makeSdkDeps } from './agent-runner';
-import { resolveProfilePlugins } from './profiles';
+import { resolveProfilePlugins, resolveWorkDir } from './profiles';
 import { tgConfigFromEnv, notifyEscalation, notifyDone, TelegramConfig } from '../escalation/telegram';
 import { startWebhookServer, startTelegramPolling } from '../escalation/bot-callback';
 
-const WORKER_ID = process.env.HO_WORKER_ID ?? `ho-${process.pid}`;
-const RESUME_BACKOFF_SECS = Number(process.env.HO_RESUME_BACKOFF_SECS ?? 3600); // result-shaped / thrown limit errors
-const STALE_RUN_SECS = Number(process.env.HO_STALE_RUN_SECS ?? 900);            // requeue runs stuck this long
+/** Positive number from env, or the default. `Number('')` is 0, and .env.example
+ *  itself ships empty values (`HO_WORKER_ID=`), so a blank line in .env used to
+ *  become a real 0 with real consequences: HO_STALE_RUN_SECS=0 made every LIVE
+ *  claimed job look stale on every poll (endless requeue + double-running the
+ *  same job), HO_RESUME_BACKOFF_SECS=0 turned a rate-limit pause into a hot loop
+ *  against the provider, HO_HEARTBEAT_MS=0 wrote to the DB on every stream event.
+ *  Every tunable below goes through this — a blank line in .env must never be a setting. */
+function posEnv(name: string, dflt: number): number {
+  const raw = process.env[name];
+  if (raw === undefined || raw.trim() === '') return dflt;
+  const n = Number(raw);
+  if (!Number.isFinite(n) || n <= 0) {
+    console.warn(`${name}=${JSON.stringify(raw)} не является положительным числом — беру ${dflt}`);
+    return dflt;
+  }
+  return n;
+}
+
+const WORKER_ID = (process.env.HO_WORKER_ID || '').trim() || `ho-${process.pid}`;
+const RESUME_BACKOFF_SECS = posEnv('HO_RESUME_BACKOFF_SECS', 3600); // wait when limit gives no retry-after
+const STALE_RUN_SECS = posEnv('HO_STALE_RUN_SECS', 900);            // requeue runs stuck this long
+const HEARTBEAT_MS = posEnv('HO_HEARTBEAT_MS', 60000);              // bump claimed_at while a job streams, so parallel workers don't stale-recover a live job
+const CONDUCTOR_WORKERS = Math.max(1, Math.floor(posEnv('CONDUCTOR_WORKERS', 1))); // parallel worker loops in this process (each claims jobs independently; claim is atomic)
+/** A job that reliably kills its worker must not be retried forever: recoverStale
+ *  requeues with not_before=now and no backoff, so a poison job spins on the
+ *  queue burning tokens and starving everything behind it. */
+const MAX_ATTEMPTS = posEnv('HO_MAX_ATTEMPTS', 5);
 /**
  * Turns a run must make before we treat it as REAL progress against a usage window.
  *
@@ -40,25 +64,25 @@ const STALE_RUN_SECS = Number(process.env.HO_STALE_RUN_SECS ?? 900);            
  * job 41 on 2026-07-28 produced 6 pauses in 7 minutes, all streak 0, one message each. A couple of
  * turns is not the window opening, it is the run-up to the same wall.
  */
-const MIN_PROGRESS_TURNS = Number(process.env.HO_MIN_PROGRESS_TURNS ?? 10);
+const MIN_PROGRESS_TURNS = posEnv('HO_MIN_PROGRESS_TURNS', 10);
 /**
  * Only announce a rate-limit pause when the wait is long enough to be worth a human's attention
  * (or when it is this job's first). Throttling on the STREAK could never work: the streak is
  * exactly the thing that breaks when the signal is wrong.
  */
-const PAUSE_NOTIFY_MIN_SECS = Number(process.env.HO_PAUSE_NOTIFY_MIN_SECS ?? 600);
+const PAUSE_NOTIFY_MIN_SECS = posEnv('HO_PAUSE_NOTIFY_MIN_SECS', 600);
 /** Extra turns granted when the human waves a `turns` escalation through. */
-const TURN_GRANT = Number(process.env.HO_TURN_GRANT ?? 60);
+const TURN_GRANT = posEnv('HO_TURN_GRANT', 60);
 /** How many times ONE run may be resumed by a human "continue" before we stop asking. */
-const MAX_CONTINUES = Number(process.env.HO_MAX_CONTINUES ?? 5);
+const MAX_CONTINUES = posEnv('HO_MAX_CONTINUES', 5);
 /** How long to wait for a human decision before parking the job (escalation stays open). */
-const ESC_WAIT_SECS = Number(process.env.HO_ESC_WAIT_SECS ?? 1800);
+const ESC_WAIT_SECS = posEnv('HO_ESC_WAIT_SECS', 1800);
 /** Re-ping Telegram this often while an escalation sits unanswered. */
-const ESC_REMIND_SECS = Number(process.env.HO_ESC_REMIND_SECS ?? 600);
+const ESC_REMIND_SECS = posEnv('HO_ESC_REMIND_SECS', 600);
 /** How long a job sleeps after an unanswered escalation before it asks again. */
-const ESC_PARK_SECS = Number(process.env.HO_ESC_PARK_SECS ?? 1800);
+const ESC_PARK_SECS = posEnv('HO_ESC_PARK_SECS', 1800);
 /** Give up (leave the job 'escalated') after this many unanswered park cycles. */
-const MAX_ESC_PARKS = Number(process.env.HO_MAX_ESC_PARKS ?? 8);
+const MAX_ESC_PARKS = posEnv('HO_MAX_ESC_PARKS', 8);
 
 /**
  * Backoff ladder for CONSECUTIVE no-progress rate-limit pauses, in seconds.
@@ -70,7 +94,7 @@ const MAX_ESC_PARKS = Number(process.env.HO_MAX_ESC_PARKS ?? 8);
  * 3h22m waiting out a 5-hour window. The ladder waits out the same window in ~8 attempts.
  * Capped at 30 min so a job never idles longer than that once the window actually clears.
  */
-const PAUSE_LADDER = [60, 300, 900, Number(process.env.HO_PAUSE_MAX_BACKOFF_SECS ?? 1800)];
+const PAUSE_LADDER = [60, 300, 900, posEnv('HO_PAUSE_MAX_BACKOFF_SECS', 1800)];
 
 /** Pick the wait before re-claiming a rate-limited job. A server-supplied retry_after always wins. */
 export function backoffForStreak(streak: number, retryAfterSecs?: number): number {
@@ -78,6 +102,7 @@ export function backoffForStreak(streak: number, retryAfterSecs?: number): numbe
   const base = PAUSE_LADDER[Math.min(Math.max(streak, 0), PAUSE_LADDER.length - 1)];
   return Math.max(30, Math.round(base * (0.8 + Math.random() * 0.4))); // ±20% jitter, de-synchronises workers
 }
+
 const HERMES_SYSTEM_PROMPT =
   'You are the Fullstack-agents orchestrator described in this project\'s CLAUDE.md. Plan, delegate to ' +
   'the specialized subagents, coordinate via the scratchpad protocol, and run the quality gate ' +
@@ -90,8 +115,8 @@ function limitsForJob(j: Job): BreakerLimits {
   return {
     maxTurns: Math.max(dbMax, kindMin),  // floor from kind, but never reduce a higher DB value
     maxWallSecs: j.max_wall_secs ?? DEFAULT_LIMITS.maxWallSecs,
-    stuckRepeats: Number(process.env.HO_STUCK_REPEATS ?? DEFAULT_LIMITS.stuckRepeats),
-    stuckRepeatsReadOnly: Number(process.env.HO_STUCK_REPEATS_READONLY ?? DEFAULT_LIMITS.stuckRepeatsReadOnly),
+    stuckRepeats: posEnv('HO_STUCK_REPEATS', DEFAULT_LIMITS.stuckRepeats),
+    stuckRepeatsReadOnly: posEnv('HO_STUCK_REPEATS_READONLY', DEFAULT_LIMITS.stuckRepeatsReadOnly),
   };
 }
 
@@ -127,7 +152,7 @@ const SIG_HINT_CHARS = 56;
  *
  * THE DIGEST IS THE CORRECTNESS PART. The previous version truncated the target to its FIRST
  * 80 chars, which is not a discriminator at all for deep paths: every file inside
- *   /home/vadim_prod/3dlook-marketing/marketing_vb/workspace/outbound/campaigns/<slug>/…
+ *   …/marketing_vb/workspace/outbound/campaigns/<slug>/…
  * shares its first 80 chars (they end exactly at `campaigns/2026`), so six Reads of six
  * DIFFERENT files collapsed to one signature and read as a loop. That killed job 37 on
  * 2026-07-28 and accounted for 8 of the first 11 escalations ever raised.
@@ -148,18 +173,36 @@ export function buildSignature(toolName: string, input: unknown): string {
   return `${toolName}:${hint}#${digest}`;
 }
 
-/** Map a raw SDK message to our normalized breaker Event(s) + a log record. THE ONLY SDK-coupling point. */
-export function mapSdkMessage(msg: any): { events: Event[]; type: string; toolName?: string; signature?: string } {
+/** Map a raw SDK message to our normalized breaker Event(s) + a log record. THE ONLY SDK-coupling point.
+ *
+ * `gateTexts` carries the FULL text of EVERY tool_use in the message, and exists separately from
+ * `signature` because the two have opposite requirements. A signature must be short and stable (it
+ * is compared for loop detection and shown to a human); a gate must see everything.
+ *
+ * Both halves of that were wrong, and both let a destructive command through the Telegram gate:
+ *   - the gate was matched against the SIGNATURE, whose readable part is only the last 56 chars of
+ *     the target — so `rm -rf /srv/app/workspace/outbound/campaigns/2026/data/exports/old-batch`
+ *     had its `rm -rf` truncated away and executed ungated. Verified: gated=false on a 78-char
+ *     command, while the same command at 14 chars gated correctly.
+ *   - only the FIRST tool_use block produced a signature, so a gated action placed in the second or
+ *     later block of one assistant message was never checked at all.
+ */
+export function mapSdkMessage(msg: any): { events: Event[]; type: string; toolName?: string; signature?: string; gateTexts: string[] } {
   const events: Event[] = [];
   let type = msg?.type ?? 'system';
   let toolName: string | undefined;
   let signature: string | undefined;
+  const gateTexts: string[] = [];
 
   if (type === 'assistant') {
-    // a turn happened; build a signature from the first tool_use if present
     const blocks = msg?.message?.content ?? [];
-    const tu = Array.isArray(blocks) ? blocks.find((b: any) => b.type === 'tool_use') : null;
+    const tus = Array.isArray(blocks) ? blocks.filter((b: any) => b?.type === 'tool_use') : [];
+    // EVERY tool_use is gate-checked, in full.
+    for (const b of tus) gateTexts.push(`${b.name}:${stableStringify(b.input ?? null)}`);
+    const tu = tus[0];
     if (tu) {
+      // The signature still comes from the first tool_use only: it feeds loop detection, and
+      // counting one turn per assistant message is what the breaker's thresholds are calibrated to.
       toolName = tu.name;
       signature = buildSignature(tu.name, tu.input);
     } else {
@@ -181,7 +224,7 @@ export function mapSdkMessage(msg: any): { events: Event[]; type: string; toolNa
       events.push({ kind: 'result', ok, detail });
     }
   }
-  return { events, type, toolName, signature };
+  return { events, type, toolName, signature, gateTexts };
 }
 
 /** Detect an ask-gated tool call the agent is proposing (mirror of guard.py ASK patterns).
@@ -199,9 +242,16 @@ const ASK_PATTERNS = [
   /\bgit\s+clean\s+-[a-z]*f/i,
   /\b(DROP\s+(TABLE|DATABASE|SCHEMA)|TRUNCATE)\b/i,
 ];
-function asksForGatedAction(signature?: string): string | null {
-  if (!signature) return null;
-  for (const p of ASK_PATTERNS) if (p.test(signature)) return signature;
+/** First gated pattern found in ANY of this message's tool calls, or null.
+ *
+ * Takes the full tool text — never the signature. See mapSdkMessage for why that distinction is
+ * load-bearing. The returned string is truncated only for the human-facing message. */
+function asksForGatedAction(gateTexts: string[]): string | null {
+  for (const t of gateTexts) {
+    for (const p of ASK_PATTERNS) {
+      if (p.test(t)) return t.length > 200 ? `${t.slice(0, 200)}…` : t;
+    }
+  }
   return null;
 }
 
@@ -216,11 +266,30 @@ async function runJobAsSteps(store: Store, job: Job, tg: TelegramConfig | null):
   let summary = '';
 
   loop: for (;;) {
+    await store.heartbeat(job.id);   // keep this job "alive" between steps for parallel-worker safety
     const step: Step | null = await store.nextStep(job.id);
     if (!step) break; // no runnable step left
     await store.setJobStatus(job.id, 'verifying');
     try {
-      const outcome = await runStep(step as StepRecord, deps, store);
+      // BEAT FOR THE WHOLE STEP, not once before it.
+      //
+      // One beat per step was a double-execution bug, not a rough edge. runStep builds an executor,
+      // runs an SDK query (maxTurns 150) and up to three gate() calls each capped at 10 MINUTES,
+      // plus reviewer and runtime passes — routinely far longer than HO_STALE_RUN_SECS (900s). The
+      // job sits in 'verifying' throughout, and recoverStale covers 'verifying', so a SIBLING worker
+      // saw a live job as abandoned: it flipped it to 'deferred', cleared claimed_by, reset the
+      // step running→pending, and a second worker claimed and re-ran the SAME steps in the SAME
+      // work_dir while the first was still executing. Two agents editing one tree, duplicated
+      // commits and pushes.
+      //
+      // An interval belongs here rather than inside runStep: liveness is a property of the WORKER
+      // holding the job, and threading a callback through the step machinery would put that
+      // knowledge in the wrong place. Cleared in `finally`, so a throw cannot leak the timer or keep
+      // beating for a job this worker no longer owns.
+      const beat = setInterval(() => { store.heartbeat(job.id).catch(() => {}); }, HEARTBEAT_MS);
+      let outcome;
+      try { outcome = await runStep(step as StepRecord, deps, store); }
+      finally { clearInterval(beat); }
       await store.setJobStatus(job.id, 'running');
       const act = outcome.decision.action;
       if (act === 'blocked' || act === 'needs_review') {
@@ -231,9 +300,22 @@ async function runJobAsSteps(store: Store, job: Job, tg: TelegramConfig | null):
           { step_no: step.step_no, score: outcome.lastScore, decision: act },
         );
         if (tg) await notifyEscalation(tg, { escalationId: escId, jobTitle: job.title, reason: act, question: `Step ${step.step_no}: ${reason}` });
-        const decision = await store.waitEscalation(escId);
-        if (decision === 'approved') { await store.finishStep(step.id, { status: 'done', score: outcome.lastScore }); continue; }
+        const decision = await store.waitEscalation(escId, {
+          jobId: job.id,
+          timeoutMs: ESC_WAIT_SECS * 1000,
+          onReminder: (waited) => notifyEscalationWaiting(tg, job, escId, act, waited),
+          remindMs: ESC_REMIND_SECS * 1000,
+        });
+        // Back to 'running' before continuing: openEscalation left the job flagged
+        // 'escalated', bridge.py maps that to "failed", and heartbeat() skips it.
+        if (decision === 'approved') {
+          await store.finishStep(step.id, { status: 'done', score: outcome.lastScore });
+          await store.setJobStatus(job.id, 'running');
+          continue;
+        }
         if (decision === 'aborted') { finalStatus = 'aborted'; summary = `aborted at step ${step.step_no}`; break loop; }
+        // 'timeout' lands here too: the escalation row stays OPEN, so a late tap still
+        // resolves it and the job can be re-run from where it stopped.
         finalStatus = 'escalated'; summary = `step ${step.step_no} ${act}, human ${decision}`; break loop;
       }
       // done → next step
@@ -275,7 +357,7 @@ export function shouldNotifyPause(waitSecs: number, isFirstPause: boolean): bool
 }
 
 async function notifyPauseProgress(
-  tg: ReturnType<typeof tgConfigFromEnv>, job: Job, streak: number, waitSecs: number, isFirstPause: boolean,
+  tg: TelegramConfig | null, job: Job, streak: number, waitSecs: number, isFirstPause: boolean,
 ): Promise<void> {
   if (!tg) return;
   if (!shouldNotifyPause(waitSecs, isFirstPause)) return; // short retry → stay quiet
@@ -296,12 +378,12 @@ async function notifyEscalationWaiting(
     `still waiting on escalation #${escId} (${reason}) — ${mins} min, buttons above still work`);
 }
 
-/** Pre-run recovery point. autocommit.py deliberately skips main/master and this repo
- * works on main, so an autonomous run had nothing to roll back to. The pattern guards stop
- * an `rm -rf`, but a delete inside an allowed python3 script is invisible to them — only a
- * snapshot taken before the agent starts covers that. Writes refs/hermes/snapshots/job-<id>
- * without touching HEAD, the branch, the index or the working tree. Never fatal: a job must
- * still run if the snapshot fails. */
+/** Pre-run recovery point. autocommit.py deliberately skips main/master and these repos work on
+ * main, so an autonomous run had nothing to roll back to. The pattern guards stop an `rm -rf`,
+ * but a delete inside an allowed python3 script is invisible to them — only a snapshot taken
+ * before the agent starts covers that. Writes refs/hermes/snapshots/job-<id> without touching
+ * HEAD, the branch, the index or the working tree. Never fatal: a job must still run if the
+ * snapshot fails. */
 async function snapshotWorkTree(job: Job): Promise<void> {
   const script = process.env.HO_SNAPSHOT_SH
     ?? (process.env.HERMES_REPO_ROOT ? `${process.env.HERMES_REPO_ROOT}/hermes_agent/ops/conductor-snapshot.sh` : '');
@@ -316,15 +398,42 @@ async function snapshotWorkTree(job: Job): Promise<void> {
 }
 
 export async function runOneJob(store: Store): Promise<boolean> {
-  const job = await store.claimJob(WORKER_ID);
-  if (!job) return false; // nothing to do
+  const claimed = await store.claimJob(WORKER_ID, MAX_ATTEMPTS);
+  if (!claimed) return false; // nothing to do
+
+  // A profile bound to a directory (`runFrom`) overrides the enqueued work_dir —
+  // see resolveWorkDir. Done once, here, so the snapshot, the step deps and the
+  // SDK cwd below can never disagree about where this job runs.
+  const job: Job = { ...claimed, work_dir: resolveWorkDir(claimed.profile, claimed.work_dir) };
 
   await snapshotWorkTree(job);
 
-  // PHASE 2: if the job was decomposed into steps, run the per-step verified loop.
+  // PHASE 2: if the job was decomposed into steps, run the per-step verified loop —
+  // but ONLY for profiles whose work that loop can actually verify.
+  //
+  // The step loop is a SOFTWARE pipeline: runExecutor tells the agent to "implement
+  // step N from .claude/scratchpad/*/plan.md" (the job's own prompt is never passed),
+  // and runGates re-runs `npx ultracite lint`, `npm run typecheck`, `npm test`. In a
+  // content repo none of that exists, so every attempt scores 0 and every step ends
+  // 'blocked' → a Telegram escalation whose Approve means "skip the step".
+  //
+  // That is not theory: job 88 (2026-08-17, profile marketing_vb_sm) had two step rows
+  // inserted by hand alongside it, ran the dev loop 3× per step against a tree with no
+  // package.json, escalated twice, was approved twice, and closed as `done — all 2 steps
+  // done` having written zero posts. A content pipeline already carries its own gate
+  // (quality-controller / post-brand-checker, then Vadim approving the digest), so for
+  // these profiles the steps are IGNORED and the job runs as one prompt — the prompt is
+  // the thing that carries the actual brief.
+  const stepProfiles = (process.env.HO_STEP_PROFILES ?? 'dev,security')
+    .split(',').map((s) => s.trim()).filter(Boolean);
   if (await store.hasSteps(job.id)) {
-    await runJobAsSteps(store, job, tgConfigFromEnv());
-    return true;
+    if (stepProfiles.includes(job.profile)) {
+      await runJobAsSteps(store, job, tgConfigFromEnv());
+      return true;
+    }
+    console.warn(`[${WORKER_ID}] job ${job.id} has ho_steps but profile='${job.profile}' is not `
+      + `step-verifiable (HO_STEP_PROFILES=${stepProfiles.join(',')}) — running the job prompt `
+      + 'as ONE run; steps left untouched');
   }
 
   const tg = tgConfigFromEnv();
@@ -349,11 +458,12 @@ export async function runOneJob(store: Store): Promise<boolean> {
   const askHuman = async (reason: string, detail: string, context: unknown): Promise<{ id: number; decision: string }> => {
     const escId = await store.openEscalation(runId, job.id, reason, detail, context);
     if (tg) await notifyEscalation(tg, { escalationId: escId, jobTitle: job.title, reason, question: detail, context });
-    const decision = await store.waitEscalation(
-      escId, ESC_WAIT_SECS * 1000, 5000,
-      (waited) => notifyEscalationWaiting(tg, job, escId, reason, waited),
-      ESC_REMIND_SECS * 1000,
-    );
+    const decision = await store.waitEscalation(escId, {
+      jobId: job.id,                                   // keep beating: a human thinking is not a dead worker
+      timeoutMs: ESC_WAIT_SECS * 1000,
+      onReminder: (waited) => notifyEscalationWaiting(tg, job, escId, reason, waited),
+      remindMs: ESC_REMIND_SECS * 1000,
+    });
     return { id: escId, decision };
   };
 
@@ -374,6 +484,27 @@ export async function runOneJob(store: Store): Promise<boolean> {
     return true;
   };
 
+  /** Wait out a rate limit on the ladder, record it, and resume later. */
+  const pauseOnLimit = async (serverRetrySecs: number | undefined, detailPrefix: string): Promise<void> => {
+    // A run that made REAL progress (>= MIN_PROGRESS_TURNS) proves the window is open, so its
+    // streak restarts at 0. A run that only managed a turn or two hit the same wall and must keep
+    // climbing. Otherwise take the WORSE of this job's streak and the account-wide one: the usage
+    // window is shared, so a freshly claimed job must not restart the ladder at 60s after another
+    // job just proved the window is shut.
+    const madeProgress = state.turns >= MIN_PROGRESS_TURNS;
+    const streak = madeProgress ? 0 : Math.max(
+      await store.noProgressPauseStreak(job.id, runId, MIN_PROGRESS_TURNS),
+      await store.globalNoProgressPauseStreak(runId, MIN_PROGRESS_TURNS),
+    );
+    const isFirstPause = (await store.ratelimitPauseCount(job.id, runId)) === 0;
+    const wait = backoffForStreak(streak, serverRetrySecs);
+    const detail = `${detailPrefix}streak ${streak}, turns this run ${state.turns}, retry in ${wait}s`;
+    console.warn(`[${WORKER_ID}] job ${job.id} paused: ${detail}`);
+    await store.deferJob(job.id, wait);
+    await store.finishRun(runId, 'paused', 'ratelimit', state.turns, detail);
+    await notifyPauseProgress(tg, job, streak, wait, isFirstPause);
+  };
+
   try {
     const stream = query({
       prompt: job.prompt,
@@ -389,18 +520,22 @@ export async function runOneJob(store: Store): Promise<boolean> {
         systemPrompt: HERMES_SYSTEM_PROMPT,
         cwd: job.work_dir,
         ...(job.resume_session_id ? { resume: job.resume_session_id } : {}),
-        // do NOT set bypassPermissions: it would disable our guard for all subagents
+        // do NOT set bypassPermissions: it would disable the work_dir's deny rules and
+        // its PreToolUse guard for this run and every subagent it spawns
       } as any,
     });
 
+    let _hbAt = Date.now();
     for await (const msg of stream) {
-      const { events, signature } = mapSdkMessage(msg);
+      // heartbeat while streaming so a sibling worker's recoverStale won't requeue this live job
+      if (Date.now() - _hbAt > HEARTBEAT_MS) { await store.heartbeat(job.id); _hbAt = Date.now(); }
+      const { events, signature, gateTexts } = mapSdkMessage(msg);
       // capture the session id the moment the SDK emits it → enables resume on crash/limit
       const sid = (msg as any)?.session_id;
       if (sid) await store.setSession(runId, job.id, sid);
 
       // intercept ask-gated actions BEFORE they execute
-      const gated = asksForGatedAction(signature);
+      const gated = asksForGatedAction(gateTexts);
       if (gated) {
         const { id: escId, decision } = await askHuman(
           'ask_gate', `Agent wants to run a gated action: ${gated}. Approve?`, { command: gated });
@@ -415,7 +550,12 @@ export async function runOneJob(store: Store): Promise<boolean> {
           summary = `stopped at gated action (${gated}): human ${decision}`;
           break;
         }
-        // approved → let the loop continue (the gate is enforced by Claude Code itself on resume)
+        // approved → let the loop continue (the gate is enforced by Claude Code itself on resume).
+        // Put the status back: openEscalation set 'escalated' and nothing cleared it, so a
+        // run could continue for hours flagged as escalated — bridge.py maps that to
+        // "failed", so MV-Link/Hermes showed a live job as a failure, and heartbeat()
+        // skipped it for the rest of the run.
+        await store.setJobStatus(job.id, 'running');
       }
 
       for (const ev of events) {
@@ -426,24 +566,7 @@ export async function runOneJob(store: Store): Promise<boolean> {
           // We take the wait from the ladder rather than d.backoffSecs: when the server
           // supplies retry_after the two agree, but when it does not the breaker falls
           // back to a flat 60s, which is what produced the hammering loop.
-          // A run that made REAL progress (>= MIN_PROGRESS_TURNS) proves the window is open, so
-          // its streak restarts at 0. A run that only managed a turn or two hit the same wall and
-          // must keep climbing. Otherwise take the WORSE of this job's streak and the account-wide
-          // one: the usage window is shared, so a freshly claimed job must not restart the ladder
-          // at 60s after another job just proved the window is shut.
-          const madeProgress = state.turns >= MIN_PROGRESS_TURNS;
-          const streak = madeProgress ? 0 : Math.max(
-            await store.noProgressPauseStreak(job.id, runId, MIN_PROGRESS_TURNS),
-            await store.globalNoProgressPauseStreak(runId, MIN_PROGRESS_TURNS),
-          );
-          const isFirstPause = (await store.ratelimitPauseCount(job.id, runId)) === 0;
-          const serverRetry = ev.kind === 'rate_limit' ? ev.retryAfterSecs : undefined;
-          const wait = backoffForStreak(streak, serverRetry);
-          const detail = `rate limit — streak ${streak}, turns this run ${state.turns}, retry in ${wait}s`;
-          console.warn(`[${WORKER_ID}] job ${job.id} paused: ${detail}`);
-          await store.deferJob(job.id, wait);
-          await store.finishRun(runId, 'paused', 'ratelimit', state.turns, detail);
-          await notifyPauseProgress(tg, job, streak, wait, isFirstPause);
+          await pauseOnLimit(ev.kind === 'rate_limit' ? ev.retryAfterSecs : undefined, 'rate limit — ');
           return true;
         }
         if (d.action === 'escalate') {
@@ -497,16 +620,7 @@ export async function runOneJob(store: Store): Promise<boolean> {
         // Thrown limit error → pause + resume rather than fail. Same ladder as the
         // structured path: isLimitError also matches transient "overloaded", which clears
         // in seconds, so a flat RESUME_BACKOFF_SECS (1h) idled the job far longer than needed.
-        const streak = state.turns >= MIN_PROGRESS_TURNS ? 0 : Math.max(
-          await store.noProgressPauseStreak(job.id, runId, MIN_PROGRESS_TURNS),
-          await store.globalNoProgressPauseStreak(runId, MIN_PROGRESS_TURNS),
-        );
-        const isFirstPause = (await store.ratelimitPauseCount(job.id, runId)) === 0;
-        const wait = backoffForStreak(streak);
-        console.warn(`[${WORKER_ID}] job ${job.id} paused on thrown limit: streak ${streak}, retry in ${wait}s — ${detail}`);
-        await store.deferJob(job.id, wait);
-        await store.finishRun(runId, 'paused', 'ratelimit', state.turns, `${detail} (streak ${streak}, retry in ${wait}s)`);
-        await notifyPauseProgress(tg, job, streak, wait, isFirstPause);
+        await pauseOnLimit(undefined, `${detail} — `);
         return true;
       }
       finalStatus = 'failed'; stopReason = 'error'; summary = detail;
@@ -541,15 +655,19 @@ export async function runOneJob(store: Store): Promise<boolean> {
 class BreakStop extends Error {}
 
 /** Long-running worker loop: recover stale runs, poll for jobs, sleep when idle. */
-export async function workerLoop() {
+export async function workerLoop(idx = 0) {
   const store = new Store();
-  const idleMs = Number(process.env.HO_IDLE_MS ?? 10000);
-  console.log(`[${WORKER_ID}] conductor up. polling…`);
+  const idleMs = posEnv('HO_IDLE_MS', 10000);
+  const tag = `${WORKER_ID}#${idx}`;
+  console.log(`[${tag}] conductor up. polling…`);
   for (;;) {
     let worked = false;
     try {
-      const recovered = await store.recoverStale(STALE_RUN_SECS);
-      if (recovered) console.log(`[${WORKER_ID}] recovered ${recovered} stale job(s) for resume`);
+      // Only one worker runs the global stale-recovery sweep — avoids N writers colliding.
+      if (idx === 0) {
+        const recovered = await store.recoverStale(STALE_RUN_SECS);
+        if (recovered) console.log(`[${tag}] recovered ${recovered} stale job(s) for resume`);
+      }
       worked = await runOneJob(store);
     } catch (e) { console.error('worker error:', e); }
     if (!worked) await new Promise((r) => setTimeout(r, idleMs));
@@ -557,11 +675,17 @@ export async function workerLoop() {
 }
 
 if (process.argv[1] && process.argv[1].endsWith('conductor.ts')) {
+  // One webhook server for the process, not one per worker — see bot-callback.ts for why the
+  // port is per-user rather than a shared default.
   startWebhookServer();
-  // getUpdates polling collides with the gateway, which owns @dlookmarketing_bot's
-  // single allowed getUpdates consumer. Escalation callbacks arrive via the gateway,
-  // which forwards ho:* callback_query updates to our :3001 webhook. Opt-in only
-  // (set HO_TELEGRAM_POLLING=1) for standalone runs where the conductor owns the bot.
+  // getUpdates polling collides with the Hermes gateway, which owns the bot's single allowed
+  // getUpdates consumer. Escalation callbacks normally arrive via the gateway, which forwards
+  // ho:* callback_query updates to our webhook. Opt-in only (HO_TELEGRAM_POLLING=1) for
+  // standalone runs where the conductor owns the bot outright.
   if (process.env.HO_TELEGRAM_POLLING === '1') startTelegramPolling();
-  workerLoop().catch((e) => { console.error(e); process.exit(1); });
+  // Run CONDUCTOR_WORKERS loops concurrently — each claims jobs atomically, so N
+  // different projects (topics/systems) run in parallel instead of one at a time.
+  console.log(`conductor: starting ${CONDUCTOR_WORKERS} worker(s)`);
+  Promise.all(Array.from({ length: CONDUCTOR_WORKERS }, (_, i) => workerLoop(i)))
+    .catch((e) => { console.error(e); process.exit(1); });
 }

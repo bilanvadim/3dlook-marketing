@@ -8,20 +8,21 @@
   },
   "scripts": {
     "start": "tsx src/core/conductor.ts",
-    "test": "tsx test/breaker.test.ts && tsx test/steploop.test.ts && tsx test/steprunner.test.ts && tsx test/store.test.ts && tsx test/backoff.test.ts && tsx test/signature.test.ts",
+    "test": "tsx test/breaker.test.ts && tsx test/steploop.test.ts && tsx test/steprunner.test.ts && tsx test/store.test.ts && tsx test/contention.test.ts && tsx test/fdleak.test.ts && tsx test/backoff.test.ts && tsx test/signature.test.ts && tsx test/askgate.test.ts && tsx test/callback.test.ts && tsx test/heartbeat.test.ts",
     "typecheck": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
     "@types/node": "^25.9.3",
     "tsx": "^4.22.4",
     "typescript": "^6.0.3"
   },
   "dependencies": {
     "@anthropic-ai/claude-agent-sdk": "^0.3.199",
-    "@libsql/client": "^0.15.15"
+    "better-sqlite3": "^13.0.3"
   },
   "type": "module"
 }

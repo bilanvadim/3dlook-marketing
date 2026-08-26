@@ -78,7 +78,7 @@ def main():
     if MARKER in s:
         # Marker present is NOT the same as "current". The guard's carve-out path
         # moved when the repo was restructured (hermes_agent/ →
-        # hermes_agent/); the repo was updated, the
+        # agents-ai/telegram-bot-agent/hermes-agent/); the repo was updated, the
         # patched file was not, and this early return meant it could never be.
         # The stale copy pointed at a directory that no longer exists, so writing
         # notes into the Second Brain wiki was refused for weeks.

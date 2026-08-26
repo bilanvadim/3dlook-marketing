@@ -1,7 +1,8 @@
--- Hermes Orchestrator — conductor state schema (SQLite / libSQL).
--- Apply: sqlite3 ho.db < sql/schema.sql   (or via @libsql/client / Turso `turso db shell`).
--- Single-file, single-writer store. For a networked/shared DB point the same code
--- at a libSQL server or Turso (DATABASE_URL=libsql://…) — identical schema.
+-- Hermes Orchestrator — conductor state schema (SQLite).
+-- Apply: sqlite3 ho.db < sql/schema.sql
+-- Single-file, single-writer store. DATABASE_URL is a local file and nothing else:
+-- the libSQL/Turso option was dropped on 2026-08-14 after its driver leaked a
+-- connection per transaction and OOM-killed the box (see RUNBOOK).
 --
 -- Prefix `ho_` = Hermes Orchestrator. Consolidated (jobs + runs + escalations +
 -- steps + questions + profile + views) — no separate migrations, no stored
@@ -29,9 +30,12 @@ create table if not exists ho_jobs (
   work_dir      text not null default '.',           -- repo path the agent runs in
   resume_session_id text,                            -- SDK session to resume; set while running, cleared on finish
   attempts      integer not null default 0,
-  -- which Claude Code system to run under (maps to claude_code/DEV/profiles/<profile>.json)
+  -- which Claude Code system to run under (maps to agents-ai/telegram-bot-agent/claude-code-agent/DEV/profiles/<profile>.json)
+  -- 'sandbox' and 'test' were missing while both ship as profiles/*.json, so enqueueing a job
+  -- against either was rejected by this CHECK with a bare constraint error and no hint why.
   profile       text not null default 'dev'
-                check (profile in ('dev','seo','marketing','security','marketing_vb','marketing_vb_sm')),
+                check (profile in ('dev','seo','marketing','security','sandbox','test',
+                                   'marketing_vb','marketing_vb_sm')),
   created_at    text not null default (datetime('now')),
   not_before    text,                                 -- for 'deferred' backoff (can be hours, for resume)
   claimed_by    text,                                 -- worker id
@@ -55,8 +59,8 @@ create index if not exists ho_jobs_pickable on ho_jobs (priority, created_at)
 --
 -- A second insert now FAILS LOUDLY instead of becoming a silent duplicate, no matter how confused
 -- the caller is. 'escalated' is deliberately NOT in the active set: a job parked pending a human
--- decision would otherwise block re-running the same topic forever (there are such jobs sitting
--- from 2026-07-21 onward). Terminal states are free to repeat, so the same work can be redone.
+-- decision would otherwise block re-running the same topic forever. Terminal states are free to
+-- repeat, so the same work can be redone.
 create unique index if not exists ho_jobs_one_active_per_title
   on ho_jobs (title, work_dir)
   where status in ('queued','deferred','claimed','running','planning','verifying','awaiting-input');
