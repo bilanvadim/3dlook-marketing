@@ -94,18 +94,17 @@ target_agent: post-drafter | hypothesis-generator | seo-planner | etc.
   - `cannibalization_guardrail`: дословно из строки
   - `recommendation`: дословный угол/решение из строки
 - Из `content-strategy-guidelines.md` §9 добавь `vertical_boundary` для этого vertical (что owns + что НЕЛЬЗЯ: decisioning / диагностика / clearance / замена reference-методов).
-- Из `brand-assets/content-strategy/terminology-guardrails.md` добавь **terminology_guardrails** — banned words (objective, reader/audience, this article/guide, by hand) и контекстные ограничения (we/our, you).
 - Собери `internal_link_targets` в 4 направления (§11): up (hub), sideways (related clusters), down (FitXpress/BOFU product page), trust (accuracy framework `mobile-body-scanning-accuracy` + central Privacy/Regulatory FAQ).
 - **Зачем:** без строки стратегии статьи пишутся от title и дублируют существующие хабы. Этот блок даёт seo-planner action_type-гейт, cannibalization guardrail и vertical boundary ещё до кластеризации ключей.
 
-### 7c. Select published-articles inventory (тільки для `track = seo`, FitXpress)
-- Прочитай `brand-assets/content-strategy/published-articles-inventory.md` — це **live-реєстр усіх опублікованих статей** по хабах (slug, title, дата публікації, статус hub/supporting/TOFU).
-- Для `objective`-теми витягни компактно:
-  - `published_hub_articles`: статті того ж hub (включно з refresh-цілями) — вони є **up/sideways internal-link targets** і джерела cannibalization-попереджень.
-  - `recently_published`: будь-які статті, опубліковані за останні 30 днів у суміжних хабах — на них можна/треба посилатися як на свіжі сусіди.
-  - `refresh_status`: для теми-рефрешу — чи вже позначено як опублікований (напр. `ai-in-fitness-industry` = **Published 31.07.2026**), щоб seo-planner не планував повторний refresh.
-- Якщо тема вже є в inventory як опублікована — передай це явно: `already_live: true` + URL. **seo-planner тоді не створює net-new і не рефрешить те, що вже live.**
-- **Зачем:** content-plan.md описує *план*, а inventory — *факт*. Агенти, які бачать тільки план, можуть переписати/продублювати вже опубліковану статтю або не злінкувати на свіжий live-контент.
+### 7c. Select published-articles inventory (только для `track = seo`, FitXpress)
+- Прочитай `brand-assets/content-strategy/published-articles-inventory.md` — это **live-реестр опубликованных статей** по хабам (slug, title, дата публикации, роль hub/supporting/TOFU).
+- Для темы вытяни компактно:
+  - `published_hub_articles`: статьи того же hub (включая refresh-цели) — это **up/sideways internal-link targets** и источник cannibalization-предупреждений.
+  - `recently_published`: статьи, опубликованные за последние 30 дней в смежных хабах — на них можно и нужно ссылаться как на свежих соседей.
+  - `refresh_status`: для темы-рефреша — не помечена ли она уже как опубликованная, чтобы seo-planner не планировал повторный refresh.
+- Если тема уже есть в inventory как опубликованная — передай явно: `already_live: true` + URL. **seo-planner тогда не создаёт net-new и не рефрешит то, что уже live.**
+- **Зачем:** `content-plan.md` описывает *план*, а inventory — *факт*. Агент, который видит только план, может переписать или продублировать уже опубликованную статью либо не сослаться на свежий live-контент. До 2026-08-26 этот блок существовал только в DEV-копии, а рабочая пара копий его не отдавала — то есть 31 КБ реестра не читал никто, и гейт «уже опубликовано» не срабатывал ни разу.
 
 ### 8. Select exclusions (для outbound)
 - Если `track = outbound`: прочитай `workspace/outbound/exclusions/{profile}-registry.json`
@@ -170,16 +169,6 @@ context_pack:
     - unleash
     - game-changing
     - cutting-edge
-    # Asseyla terminology guardrails
-    - objective (→ standardized/structured/timestamped/repeatable)
-    - reader / audience / the following sections / below
-    - this article / this guide / our article / our content
-    - by hand (→ manually)
-    - plus (as connector for benefits/proof points)
-    - let (→ allow)
-    - so (as connector of result/benefit → reducing/helping to reduce/allowing/which can reduce/thereby reducing)
-    - corrective negation «X, not Y» (if corrective/dismissive; negation only for product/clinical/legal/regulatory boundaries)
-    - em dashes (—)
 
   tone:
     voice: "expert, data-driven, practical, no hype"
@@ -241,35 +230,19 @@ context_pack:
       down: "https://3dlook.ai/fitxpress/for-telehealth-and-weight-loss/"
       trust: ["mobile-body-scanning-accuracy", "Data/Privacy/Security/Regulatory FAQ"]
 
-  # only for track=seo + fitxpress — from terminology-guardrails.md
-  terminology_guardrails:
-    banned_words:
-      - objective (→ standardized/structured/timestamped/repeatable)
-      - reader / audience / the following sections / below
-      - this article / this guide / our article / our content
-      - by hand (→ manually)
-      - plus (as connector for benefits/proof points)
-      - let (→ allow)
-      - so (as connector of result/benefit → reducing/helping to reduce/allowing/which can reduce/thereby reducing)
-      - corrective negation «X, not Y» (if corrective/dismissive; negation only for product/clinical/legal/regulatory boundaries)
-      - em dashes (—)
-    contextual:
-      - "we/our — only when 3DLOOK makes a clear ownership claim"
-      - "you — only landing pages, conversion, onboarding; not in neutral educational sections"
-
-  # only for track=seo + fitxpress — from published-articles-inventory.md (LIVE registry, fact not plan)
+  # only for track=seo + fitxpress — from published-articles-inventory.md (LIVE registry: fact, not plan)
   published_inventory:
-    already_live: false  # true → тема вже опублікована; seo-planner не створює net-new і не рефрешить
+    already_live: false  # true → тема уже опубликована; seo-planner НЕ создаёт net-new и не рефрешит
     published_hub_articles:
       - slug: "ai-in-fitness-industry"
         title: "AI in Fitness: How Structured Body Data Powers Progress Tracking, Personalization, and Digital Coaching"
         published: "2026-07-31"
         role: "hub"
     recently_published:
-      - slug: "breast-cancer-related-lymphedema-..."
+      - slug: "breast-cancer-related-lymphedema-detection"
         published: "2026-07-08"
-        hub: "BCRL / Oncology (NEW)"
-    refresh_status: "ai-in-fitness-industry → published 31.07.2026; the-potential-of-ai-in-telehealth & glp-1-market still pending refresh"
+        hub: "BCRL / Oncology"
+    refresh_status: "ai-in-fitness-industry → published 2026-07-31; the-potential-of-ai-in-telehealth и glp-1-market ещё ждут рефреша"
 
   exclusions: null  # only for outbound track
 ```

@@ -30,7 +30,8 @@ tools: Read, Write, Grep, Bash
 1. **Reduce generic AI patterns:**
    - Убери все тройные параллелизмы (X, Y, and Z)
    - Убери конструкции «Not just X, it's Y»
-   - Убери em-dash в риторических конструкциях
+   - Убери все em dashes (—) — они запрещены полностью (terminology-guardrails.md)
+   - Убери corrective negation «X, not Y» (если звучит corrective/dismissive — перестрой на рекомендуемый подход; negation допустима только для product/clinical/legal/regulatory границ, напр. «FitXpress supports clinician review; it is not a diagnostic tool»)
    - Убери все предложения начинающиеся с «It is worth noting that» / «It is important to note»
    - Убери «Game-changer», «groundbreaking», «cutting-edge»
 

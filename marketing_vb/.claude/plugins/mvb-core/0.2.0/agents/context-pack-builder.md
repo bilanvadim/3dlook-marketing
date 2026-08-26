@@ -97,6 +97,15 @@ target_agent: post-drafter | hypothesis-generator | seo-planner | etc.
 - Собери `internal_link_targets` в 4 направления (§11): up (hub), sideways (related clusters), down (FitXpress/BOFU product page), trust (accuracy framework `mobile-body-scanning-accuracy` + central Privacy/Regulatory FAQ).
 - **Зачем:** без строки стратегии статьи пишутся от title и дублируют существующие хабы. Этот блок даёт seo-planner action_type-гейт, cannibalization guardrail и vertical boundary ещё до кластеризации ключей.
 
+### 7c. Select published-articles inventory (только для `track = seo`, FitXpress)
+- Прочитай `brand-assets/content-strategy/published-articles-inventory.md` — это **live-реестр опубликованных статей** по хабам (slug, title, дата публикации, роль hub/supporting/TOFU).
+- Для темы вытяни компактно:
+  - `published_hub_articles`: статьи того же hub (включая refresh-цели) — это **up/sideways internal-link targets** и источник cannibalization-предупреждений.
+  - `recently_published`: статьи, опубликованные за последние 30 дней в смежных хабах — на них можно и нужно ссылаться как на свежих соседей.
+  - `refresh_status`: для темы-рефреша — не помечена ли она уже как опубликованная, чтобы seo-planner не планировал повторный refresh.
+- Если тема уже есть в inventory как опубликованная — передай явно: `already_live: true` + URL. **seo-planner тогда не создаёт net-new и не рефрешит то, что уже live.**
+- **Зачем:** `content-plan.md` описывает *план*, а inventory — *факт*. Агент, который видит только план, может переписать или продублировать уже опубликованную статью либо не сослаться на свежий live-контент. До 2026-08-26 этот блок существовал только в DEV-копии, а рабочая пара копий его не отдавала — то есть 31 КБ реестра не читал никто, и гейт «уже опубликовано» не срабатывал ни разу.
+
 ### 8. Select exclusions (для outbound)
 - Если `track = outbound`: прочитай `workspace/outbound/exclusions/{profile}-registry.json`
 - Включи список excluded company_ids и person_ids для этого profile
@@ -220,6 +229,20 @@ context_pack:
       sideways: ["GLP-1 compliance", "Bariatric pre-qualification"]
       down: "https://3dlook.ai/fitxpress/for-telehealth-and-weight-loss/"
       trust: ["mobile-body-scanning-accuracy", "Data/Privacy/Security/Regulatory FAQ"]
+
+  # only for track=seo + fitxpress — from published-articles-inventory.md (LIVE registry: fact, not plan)
+  published_inventory:
+    already_live: false  # true → тема уже опубликована; seo-planner НЕ создаёт net-new и не рефрешит
+    published_hub_articles:
+      - slug: "ai-in-fitness-industry"
+        title: "AI in Fitness: How Structured Body Data Powers Progress Tracking, Personalization, and Digital Coaching"
+        published: "2026-07-31"
+        role: "hub"
+    recently_published:
+      - slug: "breast-cancer-related-lymphedema-detection"
+        published: "2026-07-08"
+        hub: "BCRL / Oncology"
+    refresh_status: "ai-in-fitness-industry → published 2026-07-31; the-potential-of-ai-in-telehealth и glp-1-market ещё ждут рефреша"
 
   exclusions: null  # only for outbound track
 ```
