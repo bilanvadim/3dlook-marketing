@@ -1,9 +1,36 @@
-# 3dlook-marketing · `sergiy_config`
+# 3dlook-marketing
 
-Ports **Sergiy's two-layer agent architecture** onto Vadim's 3DLOOK repo,
-**without touching Vadim's original system** (kept pristine in `marketing_vb/`).
+**The single source of truth for this ecosystem: Telegram bot → Hermes Agent →
+Claude Code → agents, skills, MCP, hooks, automation, deployment.**
+
 Shape: **Hermes = the orchestrator (brain) · Conductor = the A→Z runner · Claude
-Code = the hands.**
+Code = the hands.** Vadim's marketing system lives in `marketing_vb/`.
+
+Clone this repo onto a bare machine, run `./bootstrap/install.sh`, and you have the
+system back. Nothing here depends on any other repository.
+
+> **Note for anyone — human or agent — reading older commits or comments.**
+> Until 2026-08-26 the conductor, the cron monitor and the daily updater all ran
+> out of `/srv/vadim_prod/ai-agents-config`, a *different* system. That tie is cut:
+> the conductor now runs from this repository, and `bootstrap/verify.sh` fails if
+> any live reference to that tree comes back. Historical mentions in commit
+> messages and code comments are history, not instructions — do not restore them.
+
+## Documentation
+
+| Doc | Read it when |
+|---|---|
+| [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | You want to understand how a Telegram message becomes work |
+| [docs/INSTALL.md](docs/INSTALL.md) | Setting up a fresh machine |
+| [docs/CONFIGURATION.md](docs/CONFIGURATION.md) | Deciding where a config change belongs |
+| [docs/TELEGRAM.md](docs/TELEGRAM.md) | Actually driving the system day to day |
+| [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) | Something is wrong |
+| [docs/RECOVERY.md](docs/RECOVERY.md) | The machine is gone, or a job produced nothing |
+
+```bash
+./bootstrap/install.sh     # idempotent; also the repair tool
+./bootstrap/verify.sh      # SYSTEM READY, or tells you exactly what is broken
+```
 
 ## Architecture — how the pieces fit
 
