@@ -1,0 +1,17 @@
+[Unit]
+Description=Hermes nightly backup (ho.db via sqlite3 .backup, Qdrant snapshot, units + drop-ins, secrets, wiki)
+# Qdrant must be up or the snapshot step is skipped with a warning and the unit fails.
+After=hermes-qdrant.service
+Wants=hermes-qdrant.service
+
+[Service]
+Type=oneshot
+Environment=HO_DB=%h/.hermes/ho.db
+ExecStart=%h/3dlook-marketing/hermes_agent/ops/hermes-backup.sh
+# The script exits 1 on ANY warning. That is deliberate: a backup missing its Qdrant
+# snapshot or its drop-ins looks successful in a log and is useless in a recovery, so
+# it has to be visible as a FAILED unit instead.
+TimeoutStartSec=1800
+
+[Install]
+WantedBy=default.target

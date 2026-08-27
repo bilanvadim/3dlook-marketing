@@ -1,0 +1,14 @@
+[Unit]
+Description=3DLOOK Marketing Automation Telegram Bot
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/vadim_prod/3dlook-marketing/telegram-bot
+EnvironmentFile=/home/vadim_prod/3dlook-marketing/telegram-bot/.env
+ExecStart=/home/vadim_prod/3dlook-marketing/telegram-bot/.venv/bin/python bot.py
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=default.target

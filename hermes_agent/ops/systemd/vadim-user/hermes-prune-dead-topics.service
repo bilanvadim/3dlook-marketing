@@ -1,0 +1,10 @@
+[Unit]
+Description=Hermes — закрыть и вычистить топики, удалённые в Telegram
+Documentation=file:/home/vadim_prod/.local/bin/hermes-prune-dead-topics.py
+
+[Service]
+Type=oneshot
+Environment=HERMES_HOME=/home/vadim_prod/.hermes
+ExecStart=/home/vadim_prod/.hermes/hermes-agent/venv/bin/python /home/vadim_prod/.local/bin/hermes-prune-dead-topics.py --apply --vacuum
+StandardOutput=append:/home/vadim_prod/.hermes/logs/prune-dead-topics.log
+StandardError=append:/home/vadim_prod/.hermes/logs/prune-dead-topics.log

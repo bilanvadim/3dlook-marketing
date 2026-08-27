@@ -1,0 +1,13 @@
+[Unit]
+Description=Nightly Hermes backup at 02:20 (owner's timezone)
+
+[Timer]
+# 02:20 Europe/Kyiv: after the 02:xx dead-topic prune, before the 06:00 update. Pinned to
+# a named zone like every other timer here — an OnCalendar with no zone token silently
+# means UTC, which is how the update and the model-list pick ended up in the wrong order.
+OnCalendar=*-*-* 02:20:00 Europe/Kyiv
+Persistent=true
+RandomizedDelaySec=300
+
+[Install]
+WantedBy=timers.target

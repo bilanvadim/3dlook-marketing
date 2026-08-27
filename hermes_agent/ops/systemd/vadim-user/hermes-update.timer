@@ -1,0 +1,18 @@
+[Unit]
+Description=Auto-update Hermes Agent every morning at 06:00 (server time / UTC)
+
+[Timer]
+# ORDER IS LOAD-BEARING, AND IT WAS INVERTED BY A MISSING TIMEZONE TOKEN.
+# hermes-update must run BEFORE llmfp-morning-agent: the update re-applies every
+# vendored patch and syncs router_lib.py, which is the code the morning pick runs on.
+# Until 2026-08-27 this line read `06:00:00` with no timezone (= UTC) while the pick
+# read `07:00:00 Europe/Paris` (= 05:00 UTC), so the pick ran an HOUR EARLIER, on
+# yesterday's code — and both Descriptions said 06:00 and 07:00, so nothing looked
+# wrong. Both timers are now pinned to the owner's timezone, so the numbers mean what
+# they say and the gap cannot be re-opened by a DST shift in one of them alone.
+OnCalendar=*-*-* 06:00:00 Europe/Kyiv
+Persistent=true
+RandomizedDelaySec=120
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,12 @@
+[Unit]
+# Возврат прокси на список «for agent AI» и прогрев цепочки.
+# Сильный список включается по просьбе в чате и сам не снимается, а его модели —
+# free с суточными лимитами: держать их для обычной беседы нельзя.
+Description=llm-failover-proxy — утренний выбор агентной модели (list «for agent AI»)
+After=llm-failover-proxy.service
+Wants=llm-failover-proxy.service
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/llmfp-morning-agent.sh
+TimeoutStartSec=5min

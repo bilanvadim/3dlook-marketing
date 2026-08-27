@@ -1,0 +1,15 @@
+[Unit]
+Description=llm-failover-proxy (agentic chain) — Hermes default, OpenAI-compatible failover
+After=network-online.target
+
+[Service]
+# Entry point is the GLOBAL package, so both accounts run one version. The bundled
+# copy under ~/.config/.../service/*.mjs is a snapshot that never picks up updates.
+ExecStart=/usr/bin/node /usr/lib/node_modules/llm-failover-proxy/dist/index.js start --config /home/vadim_prod/.config/llm-failover-proxy/config.json
+StandardOutput=append:/home/vadim_prod/.config/llm-failover-proxy/daemon.log
+StandardError=append:/home/vadim_prod/.config/llm-failover-proxy/daemon.log
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

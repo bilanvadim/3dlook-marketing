@@ -1,0 +1,46 @@
+# ~/.config/systemd/user/hermes-qdrant.service
+# Vector store for Hermes' memory (mem0). Install:
+#   cp hermes-qdrant.service ~/.config/systemd/user/
+#   systemctl --user daemon-reload && systemctl --user enable --now hermes-qdrant.service
+#
+# WHY a server instead of mem0's default embedded mode: the embedded qdrant-client
+# takes an exclusive lock on its storage folder, so the SECOND process to touch it
+# (a cron run, a CLI call, a restarted gateway) fails with
+#   "Storage folder ... is already accessed by another instance of Qdrant client"
+# and mem0 never initializes — memory looks enabled and stays empty. See
+# ops/qdrant.env.example for the env file this unit reads.
+#
+# Binary: static musl build, no Docker needed —
+#   curl -sSL https://github.com/qdrant/qdrant/releases/download/v1.18.3/qdrant-x86_64-unknown-linux-musl.tar.gz \
+#     | tar xz -C /tmp && install -m 0755 /tmp/qdrant %h/.hermes/bin/qdrant
+
+[Unit]
+Description=Qdrant vector store for Hermes mem0 (loopback + API key)
+Documentation=https://qdrant.tech/documentation/
+After=network-online.target
+
+# StartLimitIntervalSec belongs in [Unit], NOT [Service]. It sat in [Service] until
+# 2026-08-27, where systemd simply ignored it: `systemctl show` reported the default
+# 10s/5, so after five failures in ten seconds Qdrant would have been left dead — and
+# mem0 has no memory at all without it. The comment claiming "let systemd keep retrying"
+# was true about the intent and false about the effect, which is the worst combination:
+# nothing logs an ignored directive.
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+# Loopback bind, API key and storage paths all come from the 0600 env file —
+# the key must never reach the unit file or the journal.
+EnvironmentFile=%h/.hermes/qdrant-server/qdrant.env
+ExecStart=%h/.hermes/bin/qdrant
+WorkingDirectory=%h/.hermes/qdrant-server
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=read-only
+ReadWritePaths=%h/.hermes/qdrant-server
+ProtectSystem=strict
+
+[Install]
+WantedBy=default.target
