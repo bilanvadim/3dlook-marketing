@@ -230,7 +230,11 @@ export function mapSdkMessage(msg: any): { events: Event[]; type: string; toolNa
 /** Detect an ask-gated tool call the agent is proposing (mirror of guard.py ASK patterns).
  * Note: plain `git push` is NO LONGER gated (auto commit+push is the desired flow); only merge
  * and irreversible infra/db actions are. */
-const ASK_PATTERNS = [
+// Exported ONLY so test/askgate.test.ts can apply the real list. It used to keep a
+// hand-written "mirror of the conductor's ASK_PATTERNS" instead, which is a test that
+// cannot fail: the mirror and the real list drift apart silently, and on 2026-08-27 two
+// newly-added patterns were proven "not gated" by a suite that was never looking at them.
+export const ASK_PATTERNS = [
   /wrangler\s+(deploy|publish)/i, /terraform\s+(apply|destroy)/i,
   /supabase\s+db\s+push/i, /gh\s+pr\s+merge/i,
   // Data loss was not represented here at all: a recursive delete, a hard reset or a
@@ -241,15 +245,50 @@ const ASK_PATTERNS = [
   /\bgit\s+reset\s+--hard\b/i,
   /\bgit\s+clean\s+-[a-z]*f/i,
   /\b(DROP\s+(TABLE|DATABASE|SCHEMA)|TRUNCATE)\b/i,
+  // Self-approval. guard.py blocks this too, but only when the job's work_dir
+  // happens to load THIS repo's .claude/settings.json — a job pointed anywhere
+  // else runs with no such hook, and `sqlite3` is a perfectly ordinary command.
+  // The queue is the human gate's storage, so a run that edits it is editing the
+  // decision it is waiting for. Gated here, it reaches Telegram as an escalation
+  // a human can refuse, for every profile and every work_dir.
+  /\b(update|replace\s+into|delete\s+from|drop\s+table)\s+(ho_escalations|ho_questions|ho_jobs|ho_runs|ho_steps)\b/i,
+  /\bsqlite3\b[\s\S]{0,200}?\bho\.db\b[\s\S]{0,400}?\b(update|delete\s+from|drop|replace\s+into|attach)\b/i,
 ];
+/** Undo JSON string escaping before pattern-matching.
+ *
+ * gateTexts are built as `Tool:{"command":"…"}` — i.e. the tool input passed through
+ * JSON.stringify — so a real newline in the command arrives as the TWO characters
+ * backslash and n. Every ASK_PATTERNS rule that joins words with \s+ is therefore blind
+ * to a multi-line command, and a heredoc is the most natural way for an agent to write
+ * one. Measured 2026-08-27: `sqlite3 ho.db <<'X'\nupdate\n ho_escalations …` matched
+ * nothing, and neither would `DROP\nTABLE x` or an `rm -rf` broken over a continuation.
+ *
+ * Fixing it here rather than in each regex means every existing rule gains the coverage
+ * too, and a rule added later cannot forget about it. Matching only — the ORIGINAL text
+ * is what gets shown to the human, so the escalation message still quotes the command
+ * exactly as the agent proposed it. */
+export function unescapeForGate(t: string): string {
+  return t
+    // JSON-escaped newline / CR / tab -> real whitespace. MUST run first: doing the
+    // bare-backslash pass first would turn `\n` into ` n` and glue a stray letter onto
+    // the next word.
+    .replace(/\\[nrt]/g, ' ')
+    // What is left is a shell line-continuation, which JSON.stringify wrote as `\\`.
+    // Semantically it joins two lines, so whitespace is the right substitution — and
+    // without it `rm \<newline> -rf /path` still slips the rm rule.
+    .replace(/\\+/g, ' ')
+    .replace(/\\"/g, '"');
+}
+
 /** First gated pattern found in ANY of this message's tool calls, or null.
  *
  * Takes the full tool text — never the signature. See mapSdkMessage for why that distinction is
  * load-bearing. The returned string is truncated only for the human-facing message. */
 function asksForGatedAction(gateTexts: string[]): string | null {
   for (const t of gateTexts) {
+    const probe = unescapeForGate(t);
     for (const p of ASK_PATTERNS) {
-      if (p.test(t)) return t.length > 200 ? `${t.slice(0, 200)}…` : t;
+      if (p.test(probe)) return t.length > 200 ? `${t.slice(0, 200)}…` : t;
     }
   }
   return null;

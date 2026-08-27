@@ -1,0 +1,91 @@
+diff --git a/agent/chat_completion_helpers.py b/agent/chat_completion_helpers.py
+index e63e28f3b..43c2b5b6a 100644
+--- a/agent/chat_completion_helpers.py
++++ b/agent/chat_completion_helpers.py
+@@ -5355,6 +5355,12 @@ def interruptible_streaming_api_call(agent, api_kwargs: dict, *, on_first_delta=
+             # error_classifier is the single source of truth for "what counts
+             # as a content filter" (#32421).
+             _content_filter_terminated = False
++            # [hermes-mechanic:stream-failover] The same verdict also tells a
++            # QUOTA/TRANSPORT death apart from a real length truncation. The
++            # stub below is tagged finish_reason=length either way, so without
++            # this the loop treats "provider is out of quota" as "model ran long"
++            # and spends its four continuation attempts re-asking a dead chain.
++            _provider_failure_terminated = False
+             try:
+                 from agent.error_classifier import classify_api_error, FailoverReason
+                 _cls = classify_api_error(
+@@ -5365,8 +5371,17 @@ def interruptible_streaming_api_call(agent, api_kwargs: dict, *, on_first_delta=
+                 _content_filter_terminated = (
+                     _cls.reason == FailoverReason.content_policy_blocked
+                 )
++                _provider_failure_terminated = _cls.reason in {
++                    FailoverReason.rate_limit,
++                    FailoverReason.upstream_rate_limit,
++                    FailoverReason.billing,
++                    FailoverReason.overloaded,
++                    FailoverReason.server_error,
++                    FailoverReason.timeout,
++                }
+             except Exception:
+                 _content_filter_terminated = False
++                _provider_failure_terminated = False
+             _stub = SimpleNamespace(
+                 id=PARTIAL_STREAM_STUB_ID,
+                 model=getattr(agent, "model", "unknown"),
+@@ -5378,6 +5393,10 @@ def interruptible_streaming_api_call(agent, api_kwargs: dict, *, on_first_delta=
+             )
+             if _content_filter_terminated:
+                 _stub._content_filter_terminated = True
++            # [hermes-mechanic:stream-failover] Read by conversation_loop's
++            # truncation path; only an EMPTY stub acts on it.
++            if _provider_failure_terminated:
++                _stub._provider_failure_terminated = True
+             # Partial-stream stub: chunks WERE received (deltas fired), so
+             # the provider is demonstrably responsive — clear the circuit
+             # breaker (#58962) just like the full-success return below.
+diff --git a/agent/conversation_loop.py b/agent/conversation_loop.py
+index 23be8bedb..07a02462f 100644
+--- a/agent/conversation_loop.py
++++ b/agent/conversation_loop.py
+@@ -3857,8 +3857,21 @@ def run_conversation(
+                         _cf_terminated = getattr(
+                             response, "_content_filter_terminated", False
+                         )
++                        # [hermes-mechanic:stream-failover] A provider that died
++                        # mid-stream (429 quota, 502 all_providers_failed, read
++                        # timeout) arrives here as a finish_reason=length stub
++                        # with NOTHING recovered. Continuing is meaningless —
++                        # there is no partial text to continue from, and the next
++                        # call hits the same dead chain. Escalate exactly like a
++                        # content filter. Non-empty partials keep the old path:
++                        # a stream that delivered real text IS worth resuming.
++                        _pf_terminated = bool(
++                            getattr(response, "_provider_failure_terminated", False)
++                            and getattr(response, "id", "") == PARTIAL_STREAM_STUB_ID
++                            and not getattr(assistant_message, "content", None)
++                        )
+                         if (
+-                            _cf_terminated
++                            (_cf_terminated or _pf_terminated)
+                             and agent._fallback_index < len(agent._fallback_chain)
+                         ):
+                             agent._vprint(
+@@ -4004,7 +4017,16 @@ def run_conversation(
+                                 "api_calls": api_call_count,
+                                 "completed": False,
+                                 "partial": True,
+-                                "error": "Response remained truncated after 4 continuation attempts",
++                                # [hermes-mechanic:stream-failover] Blaming
++                                # truncation for a provider outage sent days of
++                                # debugging in the wrong direction. Say which it was.
++                                "error": (
++                                    "Provider kept failing mid-stream (quota/timeout) "
++                                    "and the fallback chain is exhausted — no content "
++                                    "was produced in 4 attempts"
++                                    if _pf_terminated
++                                    else "Response remained truncated after 4 continuation attempts"
++                                ),
+                             }
+ 
+                     if agent.api_mode in {"chat_completions", "bedrock_converse", "anthropic_messages"}:

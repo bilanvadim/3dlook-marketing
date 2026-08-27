@@ -1,0 +1,1 @@
+dce4abe9172d6478bed73525efdd49e6d10bed03 fix(gateway): log secondary startup-reconnect handoff failures instead of dropping them

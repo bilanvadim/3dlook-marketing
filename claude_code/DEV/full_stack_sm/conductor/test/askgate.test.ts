@@ -10,7 +10,7 @@
  * Second half of the same bug: only the FIRST tool_use block of an assistant message produced a
  * signature, so a gated action in the second block was never checked at all.
  */
-import { mapSdkMessage } from '../src/core/conductor';
+import { mapSdkMessage, ASK_PATTERNS, unescapeForGate } from '../src/core/conductor';
 
 let pass = 0, fail = 0;
 function check(name: string, cond: boolean) {
@@ -18,14 +18,11 @@ function check(name: string, cond: boolean) {
   else { fail++; console.log(`  FAIL ${name}`); }
 }
 
-// Mirror of the conductor's ASK_PATTERNS, applied the way the conductor applies them.
-const ASK = [
-  /wrangler\s+(deploy|publish)/i, /terraform\s+(apply|destroy)/i,
-  /supabase\s+db\s+push/i, /gh\s+pr\s+merge/i,
-  /\brm\s+-[a-z]*r[a-z]*/i, /\bgit\s+reset\s+--hard\b/i,
-  /\bgit\s+clean\s+-[a-z]*f/i, /\b(DROP\s+(TABLE|DATABASE|SCHEMA)|TRUNCATE)\b/i,
-];
-const gated = (msg: any) => mapSdkMessage(msg).gateTexts.some((t) => ASK.some((p) => p.test(t)));
+// The REAL list, imported — not a mirror. A local copy of these patterns is a test
+// that cannot fail: it passes while the shipped gate has different rules.
+const ASK = ASK_PATTERNS;
+// Applied exactly as the conductor applies it: unescape, then match.
+const gated = (msg: any) => mapSdkMessage(msg).gateTexts.some((t) => ASK.some((p) => p.test(unescapeForGate(t))));
 const bash = (command: string) => ({ type: 'assistant', message: { content: [{ type: 'tool_use', name: 'Bash', input: { command } }] } });
 
 // ---- the length that used to decide whether a gate fired ----
@@ -62,6 +59,46 @@ check('git push (not force) is not gated', !gated(bash('git push origin main')))
 check('grep for the word DROP in source is not gated', !gated(bash('grep -rn "DROP" src/')));
 check('a text-only assistant turn yields no gate text', mapSdkMessage({ type: 'assistant', message: { content: [{ type: 'text', text: 'thinking' }] } }).gateTexts.length === 0);
 check('a non-assistant message yields no gate text', mapSdkMessage({ type: 'result', subtype: 'success' }).gateTexts.length === 0);
+
+// ---- self-approval: the queue is the human gate's STORAGE ----
+// A run that edits ho_escalations is editing the very decision it is waiting for.
+// guard.py blocks this at the Claude Code layer, but only when the job's work_dir
+// loads that project's settings — a job pointed anywhere else has no such hook, so
+// the gate has to exist here too. Added 2026-08-27.
+check('updating ho_escalations is gated',
+      gated(bash(`sqlite3 ~/.hermes/ho.db "update ho_escalations set status='approved' where id=7"`)));
+check('answering ho_questions is gated',
+      gated(bash(`sqlite3 ~/.hermes/ho.db "update ho_questions set answer='yes'"`)));
+check('marking its own job done is gated',
+      gated(bash(`sqlite3 ~/.hermes/ho.db "update ho_jobs set status='done' where id=9"`)));
+check('deleting run history is gated',
+      gated(bash("sqlite3 ~/.hermes/ho.db 'delete from ho_runs where id=1'")));
+// A heredoc can put the verb and the table on different lines; the first pattern
+// would miss that, which is why the sqlite3+ho.db pattern spans newlines.
+check('a heredoc with the table on its own line is gated',
+      gated(bash("sqlite3 ~/.hermes/ho.db <<'EOF'\nupdate\n  ho_escalations set status=2;\nEOF")));
+// ...and reads must stay silent, or every status poll becomes an escalation.
+check('reading its own job status is not gated',
+      !gated(bash("sqlite3 ~/.hermes/ho.db 'select id,status from ho_jobs where id=9'")));
+check('reading open escalations is not gated',
+      !gated(bash(`sqlite3 -noheader ~/.hermes/ho.db "select id,reason from ho_escalations where status='open'"`)));
+// Enqueueing is not deciding: mvb-run.py and the installer smoke test both insert jobs.
+check('inserting a job is not gated',
+      !gated(bash(`sqlite3 ~/.hermes/ho.db "insert into ho_jobs(kind,title,prompt,profile,work_dir) values('feature','x','y','dev','.')"`)));
+check('an unrelated database is not gated',
+      !gated(bash("sqlite3 /tmp/other.db 'update t set a=1'")));
+
+// ---- multi-line commands: the escaping bug that hid every \s+ rule ----
+// gateTexts are JSON-stringified, so a newline arrives as backslash-n and \s+ never
+// matched across it. These four are the PRE-EXISTING rules, proven blind before the fix.
+check('DROP TABLE split across lines is gated',
+      gated(bash("psql -c \"DROP\nTABLE events\"")));
+check('rm -rf broken over a continuation is gated',
+      gated(bash("rm \\\n  -rf /home/vadim_prod/x")));
+check('git reset --hard inside a heredoc is gated',
+      gated(bash("bash <<'X'\ngit reset --hard\nX")));
+check('terraform destroy on its own heredoc line is gated',
+      gated(bash("bash <<'X'\ncd infra\nterraform destroy\nX")));
 
 console.log(`\naskgate.test: ${pass} passed, ${fail} failed`);
 if (fail) process.exit(1);

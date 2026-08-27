@@ -117,13 +117,26 @@ def gateway_started_at():
 # patcher's prose (their vocabulary is already three words wide: already /
 # patched / refreshed, and a new one would read as "nothing changed").
 _AGENT = f"{HOME}/.hermes/hermes-agent"
+# Exactly the files a vendored patch touches, verified 2026-08-27 against
+# `git -C ~/.hermes/hermes-agent diff --stat`, which is the authoritative inventory:
+#   tools/file_tools.py                    +12   file-tool guard
+#   gateway/run.py                         +71   switcher
+#   hermes_cli/commands.py                  +8   switcher
+#   plugins/platforms/telegram/adapter.py  +59   switcher
+#   agent/chat_completion_helpers.py       +19   stream-failover
+#   agent/conversation_loop.py             +26   stream-failover
+#   gateway/claude_switcher.py           (new)   switcher module
+# vision_switch.py is deliberately NOT here: it is not installed in this tree
+# (0 markers in run.py, no module on disk), and listing a file no patcher installs
+# makes the fingerprint change for a reason nobody can explain.
 _PATCHED_FILES = (
     f"{_AGENT}/tools/file_tools.py",                        # file-tool guard
-    f"{_AGENT}/gateway/run.py",                             # switcher + vision-switch
+    f"{_AGENT}/gateway/run.py",                             # switcher
     f"{_AGENT}/hermes_cli/commands.py",                     # switcher
     f"{_AGENT}/plugins/platforms/telegram/adapter.py",      # switcher
     f"{_AGENT}/gateway/claude_switcher.py",                 # switcher (copied module)
-    f"{_AGENT}/gateway/vision_switch.py",                   # vision-switch (copied module)
+    f"{_AGENT}/agent/chat_completion_helpers.py",           # stream-failover
+    f"{_AGENT}/agent/conversation_loop.py",                 # stream-failover
     LIVE_SOUL,                                              # persona restore
 )
 
@@ -139,61 +152,20 @@ def _fingerprint():
     return h.hexdigest()
 
 
-def main():
-    old = version()
-    started_before = gateway_started_at()
-    log(f"start; current={old}")
+def safety_audit():
+    """Checks about the CURRENT config — deliberately independent of the update.
 
-    r = subprocess.run([HERMES, "update", "-y", "--backup"],
-                       capture_output=True, text=True, timeout=1800, env=_ENV)
-    tail = (r.stdout + r.stderr)[-600:]
-    log(f"`hermes update` rc={r.returncode}\n{tail}")
+    These used to sit inline after the early `return 1` for a failed `hermes update`,
+    which meant a failed update also turned OFF every safety alert for that day. On
+    2026-08-27 the update failed (rc=1) and the command_allowlist warning did not
+    fire — while the allowlist held three standing bypasses of the file-write vectors
+    the agent once used to edit its own SOUL.md. The update failing is not a reason to
+    stop looking at the barrier; if anything it is a reason to look harder, because a
+    half-finished reinstall is exactly when a vendored guard goes missing.
 
-    if r.returncode != 0:
-        rl.telegram(f"⚠️ <b>Hermes auto-update FAILED</b> (rc={r.returncode}).\n"
-                    f"Версия осталась {old}. Бэкап на месте (rollback возможен).\n"
-                    f"<code>{tail[-300:]}</code>")
-        return 1
-
-    # Taken here, not earlier: `hermes update` rewrites these files itself (pull +
-    # autostash restore), so a pre-update fingerprint would always differ and the
-    # restart below would never be skipped.
-    fp_before = _fingerprint()
-
-    # Guard against persona drift: restore the orchestrator SOUL.md if update reset it.
-    #
-    # The repo copy is a TEMPLATE — it carries @OWNER@ / @GH_OWNER@ / @PROJECT_ROOT@
-    # so the kit does not ship one person's name as another person's instructions.
-    # Rendering here is not cosmetic: this function copies the repo file into the live
-    # persona every morning, so an unrendered copy would leave the manager addressing
-    # a literal "@OWNER@" and pushing to "@GH_OWNER@". Compare against the RENDERED
-    # text too, otherwise every run sees a difference and rewrites the file forever.
-    try:
-        if os.path.exists(REPO_SOUL):
-            soul = _render_identity(open(REPO_SOUL, encoding="utf-8").read())
-            same = (os.path.exists(LIVE_SOUL)
-                    and open(LIVE_SOUL, encoding="utf-8").read() == soul)
-            if not same:
-                with open(LIVE_SOUL, "w", encoding="utf-8") as f:
-                    f.write(soul)
-                log("restored canonical SOUL.md from repo (persona had drifted)")
-    except Exception as e:
-        log(f"SOUL.md restore failed: {e}")
-
-    # Re-apply the file-tool project-code write guard (vendored patch, wiped by update).
-    try:
-        guard = f"{HOME}/3dlook-marketing/hermes_agent/ops/apply-file-tool-guard.py"
-        if os.path.exists(guard):
-            g = subprocess.run(["/usr/bin/python3", guard], capture_output=True, text=True)
-            log(f"file-tool guard: {(g.stdout + g.stderr).strip()}")
-            if g.returncode == 2:
-                rl.telegram("⚠️ Hermes update: file-tool барьер (вендорный патч) НЕ переприменён "
-                            "(upstream _check_sensitive_path изменился). Основной барьер — "
-                            "shell-хук block-project-writes.py — держит; это была вторая линия. "
-                            "Патчер всё равно стоит поправить.")
-    except Exception as e:
-        log(f"file-tool guard re-apply failed: {e}")
-
+    Called on BOTH paths. Must never raise: each block carries its own try/except so
+    one broken check cannot silence the others.
+    """
     # Health-check the shell hook that IS the primary file-tool barrier now.
     # A hook lapses differently than a vendored patch: the script can lose its
     # exec bit, consent can vanish from the allowlist, or an upstream change can
@@ -244,32 +216,95 @@ def main():
     except Exception as e:
         log(f"approvals watch failed: {e}")
 
-    # Sync the model-router from the repo into ~/.hermes/model-router.
-    # Nothing else does this: hermes-update only ever IMPORTED router_lib from the
-    # live directory, so a change committed to the repo never reached the 07:00 job
-    # and the morning pick silently kept running the old code. Data files
-    # (pick.json, coder-history.json, cache/) live only in the live dir and are
-    # left alone — copy the sources, never the state.
+
+def main():
+    old = version()
+    started_before = gateway_started_at()
+    log(f"start; current={old}")
+
+    r = subprocess.run([HERMES, "update", "-y", "--backup"],
+                       capture_output=True, text=True, timeout=1800, env=_ENV)
+    tail = (r.stdout + r.stderr)[-600:]
+    log(f"`hermes update` rc={r.returncode}\n{tail}")
+
+    if r.returncode != 0:
+        rl.telegram(f"⚠️ <b>Hermes auto-update FAILED</b> (rc={r.returncode}).\n"
+                    f"Версия осталась {old}. Бэкап на месте (rollback возможен).\n"
+                    f"<code>{tail[-300:]}</code>")
+        # The barrier audit is about the config as it stands, not about the update, and
+        # a failed update is the worst moment to go quiet about it. See safety_audit().
+        safety_audit()
+        return 1
+
+    # Taken here, not earlier: `hermes update` rewrites these files itself (pull +
+    # autostash restore), so a pre-update fingerprint would always differ and the
+    # restart below would never be skipped.
+    fp_before = _fingerprint()
+
+    # Guard against persona drift: restore the orchestrator SOUL.md if update reset it.
+    #
+    # The repo copy is a TEMPLATE — it carries @OWNER@ / @GH_OWNER@ / @PROJECT_ROOT@
+    # so the kit does not ship one person's name as another person's instructions.
+    # Rendering here is not cosmetic: this function copies the repo file into the live
+    # persona every morning, so an unrendered copy would leave the manager addressing
+    # a literal "@OWNER@" and pushing to "@GH_OWNER@". Compare against the RENDERED
+    # text too, otherwise every run sees a difference and rewrites the file forever.
     try:
-        import glob as _glob
-        src_dir = f"{HOME}/3dlook-marketing/hermes_agent/ops/model-router"
-        dst_dir = f"{HOME}/.hermes/model-router"
-        if os.path.isdir(src_dir):
-            os.makedirs(dst_dir, exist_ok=True)
-            synced = []
-            for src in sorted(_glob.glob(f"{src_dir}/*.py") +
-                              _glob.glob(f"{src_dir}/*.json")):
-                name = os.path.basename(src)
-                if name in ("pick.json", "coder-history.json"):
-                    continue                      # state, not source
-                dst = os.path.join(dst_dir, name)
-                if (not os.path.exists(dst)
-                        or open(src, "rb").read() != open(dst, "rb").read()):
-                    shutil.copyfile(src, dst)
-                    synced.append(name)
-            log(f"model-router sync: {', '.join(synced) if synced else 'без изменений'}")
+        if os.path.exists(REPO_SOUL):
+            soul = _render_identity(open(REPO_SOUL, encoding="utf-8").read())
+            same = (os.path.exists(LIVE_SOUL)
+                    and open(LIVE_SOUL, encoding="utf-8").read() == soul)
+            if not same:
+                with open(LIVE_SOUL, "w", encoding="utf-8") as f:
+                    f.write(soul)
+                log("restored canonical SOUL.md from repo (persona had drifted)")
     except Exception as e:
-        log(f"model-router sync failed: {e}")
+        log(f"SOUL.md restore failed: {e}")
+
+    # Re-apply the file-tool project-code write guard (vendored patch, wiped by update).
+    try:
+        guard = f"{HOME}/3dlook-marketing/hermes_agent/ops/apply-file-tool-guard.py"
+        if os.path.exists(guard):
+            g = subprocess.run(["/usr/bin/python3", guard], capture_output=True, text=True)
+            log(f"file-tool guard: {(g.stdout + g.stderr).strip()}")
+            if g.returncode == 2:
+                rl.telegram("⚠️ Hermes update: file-tool барьер (вендорный патч) НЕ переприменён "
+                            "(upstream _check_sensitive_path изменился). Основной барьер — "
+                            "shell-хук block-project-writes.py — держит; это была вторая линия. "
+                            "Патчер всё равно стоит поправить.")
+    except Exception as e:
+        log(f"file-tool guard re-apply failed: {e}")
+
+    safety_audit()
+
+    # Sync router_lib.py from the repo into ~/.hermes/model-router — ONE FILE, not the
+    # directory.
+    #
+    # The whole directory used to be copied, because the morning job picked models
+    # itself. That selector was deleted on 2026-08-26: model choice now lives only
+    # inside llm-failover-proxy, and the morning job merely points the proxy at a
+    # list. Copying the directory would resurrect the deleted selector from git every
+    # single morning — two things deciding "which model is alive today", which is the
+    # one arrangement this stack is built to avoid.
+    #
+    # router_lib.py has nothing to do with model choice: it is the shared helper
+    # (telegram(), restart_gateway(), env()) that this script imports. State files
+    # (pick.json, coder-history.json, cache/) live only in the live dir; never copied.
+    try:
+        src = f"{HOME}/3dlook-marketing/hermes_agent/ops/model-router/router_lib.py"
+        dst = f"{HOME}/.hermes/model-router/router_lib.py"
+        if os.path.exists(src):
+            os.makedirs(os.path.dirname(dst), exist_ok=True)
+            if (not os.path.exists(dst)
+                    or open(src, "rb").read() != open(dst, "rb").read()):
+                shutil.copyfile(src, dst)
+                log("router_lib sync: обновлён")
+            else:
+                log("router_lib sync: без изменений")
+        else:
+            log(f"router_lib sync: ИСТОЧНИК ОТСУТСТВУЕТ ({src})")
+    except Exception as e:
+        log(f"router_lib sync failed: {e}")
 
     # Re-apply the Claude-Code switcher patch (/dev /seo /marketing /security /hermes
     # sticky mode — vendored inserts in run.py + commands.py, wiped by update).
@@ -300,20 +335,35 @@ def main():
     except Exception as e:
         log(f"claude-switcher re-apply failed: {e}")
 
-    # Re-apply the per-turn vision switch (borrow the image reader for the turn
-    # that carries a picture — two vendored inserts in run.py, wiped by update).
+    # Re-apply the stream-failover patch (five hunks in chat_completion_helpers.py +
+    # conversation_loop.py, wiped by every update).
+    #
+    # WHY THIS IS THE ONE THAT BIT: until 2026-08-27 this call pointed at
+    # /srv/vadim_prod/…/ops/apply-stream-failover-patch.py and was guarded by
+    # os.path.exists(). The repo-independence move emptied that tree on 2026-08-26, so
+    # the guard was about to start returning False — wiping the patch on the next
+    # update and skipping the re-apply WITHOUT A WORD. The patcher now lives in this
+    # repo, and the `else` branch below means a vanished source SHOUTS instead of
+    # being silently skipped, which is the whole failure mode.
     try:
-        vsw = f"{HOME}/3dlook-marketing/hermes_agent/ops/vision-switch/apply-vision-switch-patch.py"
-        if os.path.exists(vsw):
-            g = subprocess.run(["/usr/bin/python3", vsw], capture_output=True, text=True)
-            log(f"vision-switch: {(g.stdout + g.stderr).strip()}")
+        sfp = f"{HOME}/3dlook-marketing/hermes_agent/ops/apply-stream-failover-patch.py"
+        if os.path.exists(sfp):
+            g = subprocess.run(["/usr/bin/python3", sfp], capture_output=True, text=True)
+            log(f"stream-failover: {(g.stdout + g.stderr).strip()}")
             if g.returncode == 2:
-                rl.telegram("⚠️ Hermes update: переключение на vision-модель НЕ "
-                            "переприменено (анкер в run.py сместился). Картинки не "
-                            "пропадут — их опишет auxiliary.vision, — но читать их "
-                            "будет не сама модель. Нужен фикс патчера.")
+                rl.telegram("⚠️ Hermes update: патч <b>stream-failover</b> НЕ переприменён.\n"
+                            "Падение провайдера посреди стрима снова будет приходить как "
+                            "«Response remained truncated after 4 continuation attempts», "
+                            "а цепочка фолбэков — не опрашиваться. Нужен фикс патчера.\n"
+                            f"<pre>{(g.stdout + g.stderr).strip()[-400:]}</pre>")
+        else:
+            rl.telegram("⚠️ Hermes update: патчер <b>stream-failover</b> ОТСУТСТВУЕТ "
+                        f"(<code>{sfp}</code>). Патч стёрт обновлением и переприменить "
+                        "его нечем — это ровно та тихая пропажа, из-за которой правило "
+                        "было добавлено.")
+            log(f"stream-failover: PATCHER MISSING at {sfp}")
     except Exception as e:
-        log(f"vision-switch re-apply failed: {e}")
+        log(f"stream-failover re-apply failed: {e}")
 
     # Restart only when it would actually change what the gateway runs.
     #

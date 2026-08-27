@@ -3,9 +3,10 @@
 
 Two classes of protected path:
 
-1. **Project code** under /srv/vadim_prod — Hermes is the MANAGER, not the coder,
-   so code is written by Claude Code / OpenCode. The Second Brain wiki lives
-   inside that zone and is carved out, as is the handoff file.
+1. **Project code** under ~/3dlook-marketing and ~/workspaces — Hermes is the
+   MANAGER, not the coder, so code is written by Claude Code / OpenCode / the
+   conductor. The handoff file is carved out by suffix; the Second Brain wiki
+   needs no carve-out because the live vault is outside both zones.
 
 2. **Hermes' own control files** — persona, memory files, consent store, hook
    scripts, config, secrets. Client messages arrive in this bot as forwards, so
@@ -40,11 +41,22 @@ import sys
 
 HOME = os.path.expanduser("~")
 
-ZONE = "/srv/vadim_prod/"
-# The wiki is inside the zone on purpose: note-taking must keep working.
-CARVE_OUTS = (
-    "/home/vadim_prod/3dlook-marketing/hermes_agent/AI-Second-Brain",
+# Both real code trees. /srv/vadim_prod/ was the zone until 2026-08-26, when the
+# repo-independence move emptied it — so from then until 2026-08-27 this hook
+# guarded a directory with nothing in it while the actual project tree took writes
+# from anyone. A prefix that matches nothing raises no error and passes every test
+# that only asks "is the hook installed", which is why this is a tuple now: adding
+# a tree must not mean editing a comparison.
+ZONES = (
+    os.path.join(HOME, "3dlook-marketing") + os.sep,
+    os.path.join(HOME, "workspaces") + os.sep,
 )
+# No carve-out is needed for the wiki any more: the live vault is
+# ~/.hermes/AI-Second-Brain, outside every zone. What sits INSIDE the repo
+# (hermes_agent/AI-Second-Brain) is the committed seed, and Hermes writing into a
+# tracked seed is exactly what this hook is for. The handoff file is still carved
+# out below, by suffix.
+CARVE_OUTS = ()
 HANDOFF_SUFFIX = "/.hermes-handoff.md"
 
 SELF_PROTECTED = {
@@ -70,14 +82,15 @@ SELF_PROTECTED_PREFIXES = tuple(
 
 ZONE_REASON = (
     "Refusing (hermes-mechanic): Hermes is the manager, not the coder. "
-    "Project code under /srv/vadim_prod must be written by Claude Code / "
+    "Project code under ~/3dlook-marketing and ~/workspaces must be written by "
+    "Claude Code / OpenCode / the conductor, "
     "OpenCode, not Hermes's file tool. Delegate it (claude-code skill / conductor)."
 )
 SELF_REASON = (
     "Refusing (hermes-mechanic): this is one of Hermes's own control files "
     "(persona / memory / consent / hooks / config / secrets). It is never edited "
     "from inside a conversation — a forwarded client message could otherwise talk "
-    "the agent into rewriting its own safety rules. Reading it is fine. If Sergiy "
+    "the agent into rewriting its own safety rules. Reading it is fine. If Vadim "
     "wants it changed, he edits it himself or has Claude Code do it; memory goes "
     "through the memory tool and config through `hermes config`."
 )
@@ -100,7 +113,7 @@ def verdict(path, cwd):
     for cand in candidates(path, cwd):
         if cand in SELF_PROTECTED or cand.startswith(SELF_PROTECTED_PREFIXES):
             return SELF_REASON
-        if cand.startswith(ZONE):
+        if cand.startswith(ZONES):
             if any(cand.startswith(allowed) for allowed in CARVE_OUTS):
                 continue
             if cand.endswith(HANDOFF_SUFFIX):
