@@ -10,5 +10,6 @@
     "mvb-social@ai-agents-mvb",
     "mvb-seo@ai-agents-mvb",
     "mvb-outbound@ai-agents-mvb"
-  ]
+  ],
+  "_note_no_base": "DELIBERATELY WITHOUT the Hermes base (hermes-core) and the verification layer (hermes-verify) — that is what 'Pure' in the description means, and it is why marketing_vb_sm exists. Two consequences worth knowing rather than rediscovering: (1) 'graph before grep' does NOT apply here, because the codebase-memory MCP server is declared in hermes-core's .mcp.json; (2) the spec's verification gates do not apply either. If you want either, use marketing_vb_sm — which is what 88 of the 100 jobs in the queue actually run on. Adding the base here would erase the distinction between the two profiles. Reviewed 2026-08-28 and left as designed."
 }

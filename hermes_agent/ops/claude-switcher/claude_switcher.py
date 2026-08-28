@@ -2362,11 +2362,398 @@ def _newest_jsonl_mtime(proj_dir: Optional[str]) -> float:
     return best
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+# Claude → OpenCode failover
+#
+# WHY THIS EXISTS. A usage limit is not an error, it is a shift change: the work is
+# still doable, just not by Claude for the next few hours. Until 2026-08-28 the limit
+# ended the turn — the five steps below were written down in the vps-orchestration
+# skill and implemented nowhere, and the limit signatures were never even detected, so
+# the operator got a raw CLI message and the task simply stopped.
+#
+# A LIMIT IS NOT AN AUTH FAILURE, and the difference decides the action:
+#   * limit  — heals by itself in hours → switch executor NOW and keep working;
+#   * auth   — an expired OAuth session never heals; it needs an interactive
+#              `claude /login`, which only a human can do → say so, do not retry.
+# _looks_like_auth_failure() already handled the second. This handles the first.
+#
+# WHAT IT DOES NOT DO: it never pushes. The salvage commit is LOCAL. Committing
+# preserves work and is fully reversible (and the conductor's pre-run snapshot ref is
+# an independent recovery point); pushing leaves the machine and is the operator's
+# call. If that ever changes it belongs behind an explicit setting, not here.
+_LIMIT_FAIL = (
+    "usage limit", "rate limit", "rate_limit", "limit reached", "limit will reset",
+    "overloaded", "credit balance", "insufficient credit", "quota exceeded",
+    "too many requests", "429",
+)
+
+
+def _looks_like_limit(*chunks) -> bool:
+    """True when the output says "not now" rather than "not ever".
+
+    Checked AFTER _looks_like_auth_failure by every caller: "invalid api key" also
+    contains no limit word, but an auth message that happens to mention a rate limit
+    must be treated as auth, because retrying it forever is the failure mode."""
+    blob = " ".join(c for c in chunks if c).lower()
+    return any(sig in blob for sig in _LIMIT_FAIL)
+
+
+# Per-tab executor state: {"since": monotonic, "last_probe": monotonic, "task": str}
+_ON_OPENCODE: Dict[str, Dict[str, Any]] = {}
+# Never probe Claude more than once per this interval — a probe is a real API call and
+# an exhausted limit does not clear in thirty seconds.
+_CLAUDE_PROBE_GAP_S = float(os.environ.get("HERMES_CLAUDE_PROBE_GAP_S", "1800"))
+HANDOFF_NAME = ".hermes-handoff.md"
+
+
+def _opencode_bin() -> str:
+    for c in (os.environ.get("HERMES_OPENCODE_BIN"),
+              os.path.expanduser("~/.opencode/bin/opencode"), "opencode"):
+        if c and (os.path.exists(c) or shutil.which(c)):
+            return c
+    return "opencode"
+
+
+def _git(run_cwd: str, *args: str, timeout: int = 60):
+    """git in run_cwd. Returns (rc, stdout+stderr). Never raises."""
+    try:
+        r = subprocess.run(["git", *args], cwd=run_cwd, capture_output=True,
+                           text=True, timeout=timeout)
+        return r.returncode, ((r.stdout or "") + (r.stderr or "")).strip()
+    except Exception as e:
+        return 1, f"{type(e).__name__}: {e}"
+
+
+def _handoff_context(task: str, sid: Optional[str], partial: str) -> str:
+    """The substance of the handoff, as text.
+
+    One builder feeds BOTH the file (for the returning Claude) and the OpenCode prompt,
+    so the two can never describe different situations."""
+    # WORD THIS SO IT CANNOT BE READ AS "the task is already done".
+    #
+    # An earlier version ended with "uncommitted work was committed locally as a salvage
+    # commit before you started, so `git log -1` shows the state you inherited". Measured
+    # 2026-08-28: OpenCode twice reported a write it had NOT performed — first "DONE
+    # written to …/done.txt", then "the file already exists and contains DONE" — with no
+    # file on disk either time. The same model writes correctly when asked directly, so
+    # the context was the cause: a message about a commit containing "the state you
+    # inherited" reads as evidence that the deliverable is already present.
+    #
+    # A claimed-but-absent write is the worst outcome available here, because the operator
+    # is told the task succeeded. So: say plainly that the commit holds UNFINISHED work,
+    # that the task is NOT done, and that a claim must be verified against the disk.
+    parts = ["You are taking over an UNFINISHED task from Claude Code, which hit a usage "
+             "limit part-way through. A limit clears in a few hours; your job is to carry "
+             "the work forward, not to redesign it."]
+    if (partial or "").strip():
+        parts.append("What Claude had produced before stopping (INCOMPLETE):\n"
+                     + partial.strip()[:1500])
+    if sid:
+        parts.append(f"Claude's session id, for the record — you cannot use it: {sid}")
+    parts.append(
+        "A salvage commit was made before you started. It contains UNFINISHED work only. "
+        "It does NOT contain the result of the task below, and nothing in the repository "
+        "should be assumed to satisfy it. The task is NOT done.\n"
+        "Before you report anything as complete, verify it on disk — read the file back. "
+        "Reporting a write you did not perform is worse than reporting a failure.")
+    return "\n\n".join(parts)
+
+
+def _write_handoff(run_cwd: str, task: str, sid: Optional[str], partial: str) -> bool:
+    """Step 1: the note the next executor reads instead of guessing.
+
+    Deliberately written BEFORE the salvage commit, so the commit contains it — the
+    handoff and the tree it describes then travel together in one object."""
+    try:
+        body = (
+            "# Handoff: Claude Code → OpenCode\n\n"
+            f"Written {time.strftime('%Y-%m-%d %H:%M:%S')} UTC because Claude Code hit a\n"
+            "usage limit mid-task. A limit heals in a few hours; this file exists so the\n"
+            "backup executor does not have to re-derive the task, and so the returning\n"
+            "Claude can see what happened while it was away.\n\n"
+            "## Original task\n\n"
+            f"{(task or '(not recorded)').strip()}\n\n"
+            "## What Claude had produced before the limit\n\n"
+            f"{(partial.strip() or '(nothing usable was returned)')}\n\n"
+            "## Claude session\n\n"
+            f"`session_id: {sid or '(none — the run never got one)'}`\n\n"
+            "Resume it with `claude --resume <session_id>` once the limit clears; the\n"
+            "context and the work are still in that session.\n\n"
+            "## Rules for whoever picks this up\n\n"
+            "- Follow the existing plan. Do NOT redesign.\n"
+            "- The salvage commit below is LOCAL and unpushed on purpose.\n"
+            "- When Claude returns, its FIRST job is to review `git diff` of the work\n"
+            "  done in its absence — not to continue blindly.\n"
+        )
+        with open(os.path.join(run_cwd, HANDOFF_NAME), "w", encoding="utf-8") as fh:
+            fh.write(body)
+        return True
+    except Exception:
+        logger.debug("csw: handoff write failed", exc_info=True)
+        return False
+
+
+def _salvage_commit(run_cwd: str, key: str) -> str:
+    """Step 2: commit whatever Claude left, so a limit cannot lose work.
+
+    LOCAL ONLY — no push. Returns a short human-readable status."""
+    rc, _ = _git(run_cwd, "rev-parse", "--is-inside-work-tree")
+    if rc != 0:
+        return "не git-репозиторий — коммит пропущен"
+    rc, dirty = _git(run_cwd, "status", "--porcelain")
+    if rc != 0:
+        return "git status не ответил"
+    if not dirty.strip():
+        return "нечего спасать (дерево чистое)"
+    n = len([l for l in dirty.splitlines() if l.strip()])
+    _git(run_cwd, "add", "-A")
+    msg = ("salvage: Claude Code hit a usage limit mid-task\n\n"
+           "Committed by the failover path so the work survives the switch to OpenCode.\n"
+           "LOCAL ONLY — deliberately not pushed. See .hermes-handoff.md for the task,\n"
+           "the Claude session id, and what the next executor must not redo.\n")
+    rc, out = _git(run_cwd, "-c", "user.name=hermes-failover",
+                   "-c", "user.email=hermes@localhost", "commit", "-m", msg, timeout=120)
+    if rc != 0:
+        return f"коммит не удался: {out[:160]}"
+    _, sha = _git(run_cwd, "rev-parse", "--short", "HEAD")
+    logger.info("csw: salvage commit %s in %s (%d file(s)) tab=%s", sha, run_cwd, n, key)
+    return f"спасено {n} файл(ов) в коммит {sha} (локально, не запушено)"
+
+
+def _run_opencode_sync(run_cwd: str, task: str, timeout: int = CLAUDE_TIMEOUT,
+                       context: str = "") -> tuple:
+    """Step 3: rerun in the SAME repo, with NO -m flag. Returns (text, note).
+
+    THREE CONDITIONS make `opencode run` exit 0 with EMPTY stdout and no error line,
+    and all three have bitten this stack, so each is reported by name rather than as
+    "empty output":
+      a) no provider credentials in ~/.local/share/opencode/auth.json;
+      b) a PAID small_model — OpenCode generates a session title with it before every
+         run, and a zero balance returns 401 CreditsError, killing the whole run;
+      c) running OUTSIDE a git repository does nothing at all.
+    No -m: the model comes from llm-failover-proxy's strong chain via opencode.jsonc,
+    and a pinned name is how the channel went down with HTTP 503."""
+    oc = _opencode_bin()
+    if not (shutil.which(oc) or os.path.exists(oc)):
+        return "", "OpenCode не установлен (нет бинаря)"
+    rc, _ = _git(run_cwd, "rev-parse", "--is-inside-work-tree")
+    if rc != 0:
+        return "", (f"OpenCode не запускается вне git-репозитория, а {run_cwd} им не является "
+                    "— он бы вышел с кодом 0 и пустым выводом")
+    # LAUNCH FROM THE GIT ROOT, not from a deep subdirectory.
+    #
+    # Measured 2026-08-28: launched in the repo ROOT, OpenCode answers normally. Launched
+    # in .../marketing_vb/workspace/<dir> — a subdirectory of the SAME repo, and the cwd
+    # it was handed — it auto-rejects its own working directory:
+    #   ! permission requested: external_directory (/home/…/workspace/_failover-probe/);
+    #     auto-rejecting
+    #   ✗ git log -1 …
+    # and then exits 0 with EMPTY stdout, which is indistinguishable from the three
+    # documented empty-output conditions. Its permission scope anchors somewhere other
+    # than the cwd it is given, so the only reliable anchor is the repository root; the
+    # subdirectory to work in is stated in the prompt instead.
+    rc_top, top = _git(run_cwd, "rev-parse", "--show-toplevel")
+    launch_cwd = top.strip() if (rc_top == 0 and top.strip() and os.path.isdir(top.strip())) else run_cwd
+    # ...AND NAME THE SUBDIRECTORY RELATIVELY. The trigger for the auto-rejection is an
+    # ABSOLUTE path, not the location: measured 2026-08-28, launched at the root a
+    # RELATIVE write ("_oc-write-probe.txt") succeeds — "Wrote file successfully" — while
+    # an absolute path to a subdirectory of the SAME repo raises
+    # "permission requested: external_directory … auto-rejecting" and the run ends with
+    # exit 0 and empty stdout. So: launch at the root, and describe where to work as a
+    # path relative to it.
+    try:
+        rel = os.path.relpath(run_cwd, launch_cwd)
+    except Exception:
+        rel = "."
+    # Be MECHANICAL about the prefix, not descriptive. "Work in your working
+    # subdirectory" is ambiguous: measured 2026-08-28, OpenCode answered "DONE written to
+    # marketing_vb/workspace/_fp2/done.txt" and wrote NOTHING — it had no idea which
+    # relative base to use, so it reported a write it never performed. Given the explicit
+    # prefix, the same write succeeds ("Wrote file successfully", file on disk with the
+    # right content). A claimed-but-absent write is the worst failure mode here, because
+    # the operator is told the task is done.
+    where = ("the repository root; use plain relative paths" if rel in (".", "")
+             else f"the repository root, but EVERY path you read or write MUST start with "
+                  f"`{rel}/` — that is the directory this task belongs to")
+    # THE CONTEXT IS INLINED, NOT READ FROM A FILE. Two measurements on 2026-08-28
+    # killed the "tell it to read .hermes-handoff.md" approach:
+    #
+    #   * OpenCode's shell tool RESETS the working directory between commands — it says
+    #     so itself ("Shell cwd was reset to /home/vadim_prod"), so a relative
+    #     `cat .hermes-handoff.md` after any other command looks in the wrong place and
+    #     the model reports the handoff "doesn't exist in the working directory" while
+    #     the file is sitting right there;
+    #   * naming it by ABSOLUTE path then trips OpenCode's own permission layer —
+    #     "permission requested: external_directory (…); auto-rejecting" — because a
+    #     non-interactive `run` auto-rejects anything it considers outside its project.
+    #     Reading the handoff FAILED and the run produced nothing.
+    #
+    # A failover must not depend on another tool's cwd handling or permission model. The
+    # file is still written, because the RETURNING CLAUDE reads it and has no such
+    # restriction; OpenCode gets the same substance in the prompt.
+    prompt = ((context.strip() + "\n\n") if context.strip() else "") + (
+        f"Task: {task}\n"
+        f"You are in {where}. Use RELATIVE paths only — an absolute path is rejected by "
+        f"your own permission layer in non-interactive mode and the run dies with exit 0 "
+        f"and no output. Follow the "
+        f"existing plan exactly; do not redesign anything. Context is above — do not go "
+        f"looking for a handoff file.")
+    _, before = _git(launch_cwd, "status", "--porcelain")
+    # OPENCODE RESOLVES RELATIVE PATHS AGAINST $PWD, NOT getcwd().
+    #
+    # subprocess.run(cwd=…) sets the child's real working directory but leaves PWD as the
+    # PARENT's — Python inherits it from the shell. Measured 2026-08-28 with cwd pinned to
+    # the repo either way:
+    #     PWD=/tmp   → the file landed under /tmp, NOT in the repo
+    #     PWD=repo   → the file landed in the repo
+    # and OpenCode's own log said "Wrote file successfully" both times.
+    #
+    # The gateway runs with WorkingDirectory=~/.hermes, so without this the failover would
+    # have written the marketing work into ~/.hermes/<relative path> and reported success.
+    # That is how three probe files ended up under ~/.hermes/hermes-agent/marketing_vb/…
+    # while the tool insisted it had written them where asked.
+    env = dict(os.environ)
+    env["PWD"] = launch_cwd
+    try:
+        r = subprocess.run([oc, "run", prompt], cwd=launch_cwd, env=env,
+                           capture_output=True, text=True, timeout=timeout)
+    except subprocess.TimeoutExpired:
+        return "", f"OpenCode не ответил за {timeout}s"
+    except Exception as e:
+        return "", f"OpenCode не запустился: {type(e).__name__}"
+    out = (r.stdout or "").strip()
+    err = (r.stderr or "").strip()
+
+    # ── VERIFY THE WORK, DO NOT RELAY THE CLAIM ──────────────────────────────
+    # Measured 2026-08-28, three times in a row: OpenCode on the free strong chain
+    # (served by nemotron-3-ultra-550b) reported "DONE written to …/done.txt", then
+    # "the file already exists and contains DONE", then "The task is complete" — with
+    # NO file on disk any of those times. The same model writes correctly when asked
+    # directly with a short prompt, so this is a long-context agentic-loop failure, not
+    # a plumbing one, and no amount of prompt wording fixed it (an explicit "reporting a
+    # write you did not perform is worse than reporting a failure" changed nothing).
+    #
+    # This is the worst failure mode available, because the operator is TOLD the task
+    # succeeded. So the report is checked against the repository: if the run claims
+    # completion while the work tree is byte-identical to before, say that instead. The
+    # spec's own rule for the executor pipelines applies here too — a step is verified
+    # by evidence, never by the agent's word.
+    _, after = _git(launch_cwd, "status", "--porcelain")
+    changed = (after or "").strip() != (before or "").strip()
+    claims_done = any(w in out.lower() for w in
+                      ("done", "complete", "created", "wrote", "written", "already exists"))
+    if out and claims_done and not changed:
+        return "", ("OpenCode доложил, что задача выполнена, но рабочее дерево не изменилось "
+                    "— записи не было. Это известное поведение бесплатной сильной цепочки в "
+                    "длинном агентном цикле: она сообщает о записи, которой не сделала. "
+                    "Ответ не пересказываю, потому что он неверен.\n\n"
+                    f"Что он сказал: {out[:300]}")
+
+    if not out:
+        hint = ("проверь `opencode auth list` (креды), что `small_model` бесплатная "
+                "(платная отдаёт 401 CreditsError и убивает прогон), что cwd — git-репозиторий, "
+                "и нет ли в выводе `permission requested: external_directory … auto-rejecting` "
+                "— OpenCode так отклоняет собственный рабочий каталог, если запущен не из корня")
+        return "", f"OpenCode вернул пусто (код {r.returncode}). {hint}. {err[:200]}"
+    return out, ""
+
+
+def _claude_ping_ok() -> bool:
+    """Step 5: is Claude usable again? One cheap turn, not a real task."""
+    claude = _claude_bin()
+    if not (shutil.which(claude) or os.path.exists(claude)):
+        return False
+    try:
+        r = subprocess.run([claude, "-p", "ping", "--max-turns", "1",
+                            "--strict-mcp-config", "--dangerously-skip-permissions"],
+                           capture_output=True, text=True, timeout=120)
+    except Exception:
+        return False
+    blob = ((r.stdout or "") + (r.stderr or ""))
+    if _looks_like_auth_failure(blob) or _looks_like_limit(blob):
+        return False
+    return r.returncode == 0 and bool(blob.strip())
+
+
+def _failover_to_opencode(key: str, run_cwd: str, task: str,
+                          sid: Optional[str], partial: str) -> str:
+    """Steps 1-4 in order. Returns the message for the operator."""
+    st = _ON_OPENCODE.setdefault(key, {})
+    st["since"] = time.monotonic()
+    st["last_probe"] = time.monotonic()
+    st["task"] = task
+    wrote = _write_handoff(run_cwd, task, sid, partial)
+    salvage = _salvage_commit(run_cwd, key)
+    text, note = _run_opencode_sync(run_cwd, task, context=_handoff_context(task, sid, partial))
+    head = ("🔁 <b>Claude Code упёрся в лимит</b> — продолжаю на OpenCode "
+            "(сильная цепочка прокси).\n"
+            f"• handoff: {'записан' if wrote else 'НЕ записан'} <code>{HANDOFF_NAME}</code>\n"
+            f"• salvage: {salvage}\n"
+            "• лимит проходит сам за несколько часов; проверю Claude перед следующей "
+            "задачей и вернусь на него, начав с разбора <code>git diff</code>.")
+    if not text:
+        # Both executors down is worth saying plainly, with the session id, rather
+        # than a generic failure — the Claude session is still resumable later.
+        return (head + f"\n\n⚠️ Но OpenCode тоже не отработал: {note}\n"
+                f"Сессия Claude сохранена: <code>{sid or '—'}</code> — "
+                "`claude --resume` когда лимит пройдёт.")
+    return head + "\n\n" + text
+
+
+def _maybe_return_to_claude(key: str) -> Optional[str]:
+    """Step 5, the other half: called BEFORE a run. Returns a note when we just came
+    back, None otherwise. Rate-limited: a probe is a real API call."""
+    st = _ON_OPENCODE.get(key)
+    if not st:
+        return None
+    now = time.monotonic()
+    if now - float(st.get("last_probe") or 0) < _CLAUDE_PROBE_GAP_S:
+        return None
+    st["last_probe"] = now
+    if not _claude_ping_ok():
+        return None
+    mins = int((now - float(st.get("since") or now)) / 60)
+    _ON_OPENCODE.pop(key, None)
+    logger.info("csw: Claude back after %d min on OpenCode, tab=%s", mins, key)
+    return (f"↩️ Claude Code снова отвечает (на OpenCode было ~{mins} мин). "
+            "Первым делом — разбор того, что сделал OpenCode.")
+
+
+# The FIRST task after returning is a review, not a continuation: OpenCode worked
+# without Claude's session context, so the diff is the only thing that says what
+# actually changed. Prepending it to the user's prompt keeps the operator's request
+# intact while making the review unavoidable.
+CLAUDE_RETURN_REVIEW = (
+    "Ты вернулся после лимита; пока тебя не было, задачу продолжал OpenCode.\n"
+    "СНАЧАЛА прочитай .hermes-handoff.md и `git diff HEAD~1` (salvage-коммит) и\n"
+    "коротко скажи, что он изменил и нет ли там чего-то, что надо откатить.\n"
+    "ТОЛЬКО ПОСЛЕ этого продолжай по задаче ниже.\n\n"
+)
+
+
 def _run_claude_sync(key: str, prompt: str, cwd: Optional[str] = None) -> str:
     claude = _claude_bin()
     if not (shutil.which(claude) or os.path.exists(claude)):
         return "⚠️ Не найден бинарь claude в PATH."
     run_cwd = cwd if (cwd and os.path.isdir(cwd)) else _default_cwd()
+
+    # ── executor selection, before spending a Claude call ────────────────────
+    # If this tab is on OpenCode because of a limit, probe Claude (at most once per
+    # _CLAUDE_PROBE_GAP_S) and either come back — with a review of what OpenCode did
+    # as the mandatory first job — or stay where we are. Calling Claude while the
+    # limit still holds just burns the turn and re-reports the same message.
+    return_note = _maybe_return_to_claude(key)
+    if return_note:
+        prompt = CLAUDE_RETURN_REVIEW + prompt
+    elif key in _ON_OPENCODE:
+        st = _ON_OPENCODE[key]
+        mins = int((time.monotonic() - float(st.get("since") or 0)) / 60)
+        text, note = _run_opencode_sync(
+            run_cwd, prompt,
+            context=_handoff_context(str(st.get("task") or ""), None, ""))
+        head = (f"⏳ Claude Code всё ещё в лимите (~{mins} мин) — работает OpenCode. "
+                "Проверю его снова перед следующей задачей.")
+        return (head + "\n\n" + text) if text else (head + f"\n\n⚠️ OpenCode: {note}")
     env = dict(os.environ)
     local_bin = os.path.expanduser("~/.local/bin")
     if local_bin not in env.get("PATH", ""):
@@ -2472,10 +2859,16 @@ def _run_claude_sync(key: str, prompt: str, cwd: Optional[str] = None) -> str:
     if rc is None:
         if _looks_like_auth_failure(err):
             return _auth_help()
+        # Auth is checked FIRST on purpose: an auth message that happens to mention a
+        # rate limit must not be retried on OpenCode forever — it needs a human.
+        if _looks_like_limit(err):
+            return _failover_to_opencode(key, run_cwd, prompt, _get_sid(key, "_plain"), "")
         return err  # spawn failure / timeout — err is the user-facing message
     if not out:
         if _looks_like_auth_failure(err, out):
             return _auth_help()
+        if _looks_like_limit(err, out):
+            return _failover_to_opencode(key, run_cwd, prompt, _get_sid(key, "_plain"), "")
         return f"⚠️ Claude Code вернул пусто (code {rc}).\n{err[:800]}"
     try:
         obj = json.loads(out)
@@ -2521,19 +2914,34 @@ def _run_claude_sync(key: str, prompt: str, cwd: Optional[str] = None) -> str:
     if subtype == "error_max_turns":
         # Still unfinished after the continuations: say what happened and offer the
         # tool built for work this size, instead of an opaque error code.
+        #
+        # NAME THE SESSION. The work is still in it and resumable from a terminal, but
+        # without the id printed here that is only true in principle — nobody can find
+        # a session they were never told the name of.
         steps = int(CLAUDE_MAX_TURNS) * (1 + conts)
+        _sid_now = _get_sid(key, "_plain")
         text = ((text + "\n\n") if text else "") + (
             f"⏸ Задача большая: прошёл ~{steps} шагов и ещё не закончил. "
             "Напиши «продолжай» — продолжу эту же сессию. "
             "Если это работа «под ключ», лучше отдать дирижёру: "
-            "«Dev <задача>» — там 300 шагов, разбивка на этапы и проверка.")
+            "«Dev <задача>» — там 300 шагов, разбивка на этапы и проверка."
+            + (f"\nСессия: <code>{_sid_now}</code> — "
+               f"<code>claude --resume {_sid_now}</code> из терминала."
+               if _sid_now else ""))
     elif conts and text:
         text += f"\n\n↩️ (потребовалось продолжений: {conts})"
 
     if _looks_like_auth_failure(text, subtype, err):
         return _auth_help()
+    # A limit can also arrive as a normal JSON result with is_error set. Pass what
+    # Claude DID produce into the handoff — a partial answer is context the backup
+    # executor would otherwise have to rediscover.
+    if obj.get("is_error") and _looks_like_limit(text, subtype, err):
+        return _failover_to_opencode(key, run_cwd, prompt, _get_sid(key, "_plain"), text or "")
     if obj.get("is_error") and not text:
         text = f"(error: {subtype})"
+    if return_note:
+        text = return_note + "\n\n" + (text or "")
     return text or f"⚠️ Claude Code: пустой ответ ({subtype})."
 
 

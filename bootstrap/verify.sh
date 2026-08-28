@@ -498,6 +498,27 @@ except Exception as e:
     print(f"[WARN] could not compare the active profile: {e}")
 PYPROF
 
+hdr "Code graph (graph before grep)"
+# Declared in full_stack_sm/plugins/hermes-core/.mcp.json, which 6 of the 7 profiles load.
+# The binary was never installed until 2026-08-28, so the rule every one of those profiles
+# states was inert — and nothing said so, because a missing MCP server is not an error.
+CG="$(command -v codebase-memory-mcp 2>/dev/null || true)"
+if [ -z "$CG" ]; then
+  fail "codebase-memory-mcp not on PATH — 'graph before grep' is declared in hermes-core but has no server"
+else
+  ok "codebase-memory-mcp present (${CG})"
+  # A binary that does not speak MCP is the same as no binary, so ask it.
+  probe="$(printf '%s\n' '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"verify","version":"1"}}}' \
+           | timeout 60 "$CG" 2>/dev/null | head -c 400 || true)"
+  case "$probe" in
+    *'"serverInfo"'*) ok "code graph answers the MCP initialize handshake" ;;
+    *) fail "codebase-memory-mcp did not answer an MCP initialize — the server is present but not functional" ;;
+  esac
+  ai="$(timeout 60 "$CG" config get auto_index 2>/dev/null | tail -1 || true)"
+  [ "$ai" = "true" ] && ok "auto_index=true (as claude_code/INSTALL.md prescribes)" \
+                     || warn "auto_index=$ai (INSTALL.md prescribes true)"
+fi
+
 hdr "Model selector"
 for pair in "agentic:$AGENTIC_PORT" "strong:$STRONG_PORT"; do
   inst="${pair%%:*}"; p="${pair##*:}"
