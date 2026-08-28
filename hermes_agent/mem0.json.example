@@ -1,14 +1,33 @@
 {
   "_comment": [
-    "Hermes memory (mem0 OSS). Two things here were silently fatal once:",
-    "1) vector_store used 'path' (embedded qdrant) — the client locks that folder, so the",
-    "   second process to open it dies with 'already accessed by another instance' and mem0",
-    "   never initializes. Use host+port against hermes-qdrant.service instead.",
-    "2) 'https': false is MANDATORY — qdrant-client silently switches to HTTPS as soon as",
-    "   api_key is set, and a plain-HTTP server then fails with SSL: WRONG_VERSION_NUMBER.",
-    "Also keep the llm model current: a retired model id (e.g. gemini-2.5-flash on a new",
-    "key) returns 404 and every extraction fails while the store looks healthy.",
-    "chmod 600 — this file holds the Qdrant API key."
+    "Hermes memory (mem0 OSS). Read this before changing a model id here.",
+    "",
+    "WHY BOTH llm AND embedder GO THROUGH THE PROXY, NOT AT A PROVIDER DIRECTLY.",
+    "This file used to name provider models directly. On 2026-08-26 the gateway logged, on",
+    "every single turn:  LLM extraction failed: Error code: 400 - gemini-flash-lite-latest",
+    "is not a valid model ID.  The response was to DELETE the llm block, with a comment",
+    "asserting 'no Google API key exists in this environment' and 'mem0 now runs",
+    "embedding+Qdrant only (store/search works)'. Every part of that was wrong:",
+    "  - GEMINI_API_KEY did exist, in ~/.config/ai-agent-stack/secrets.env, and on",
+    "    2026-08-27 gemini-flash-lite-latest answered a live chat request in one call;",
+    "  - removing the block did not degrade mem0, it KILLED it. mem0's oss loader reads",
+    "    config['llm'] with a bare subscript, so the KeyError became a None backend and the",
+    "    gateway logged 'Mem0 backend failed to initialize (oss mode): llm'. Store AND",
+    "    search were dead, while this file claimed they worked.",
+    "So the amputation was performed on a false diagnosis, and the real lesson is the",
+    "original one: a hardcoded provider model id is a time bomb, because the id is retired,",
+    "renamed or moved behind payment on the provider's schedule, not ours. 'auto' and",
+    "'auto - Embedding' let llm-failover-proxy pick from a chain it validates per request.",
+    "",
+    "MANDATORY DETAILS, each of which was silently fatal at least once:",
+    "1) vector_store must use host+port, NEVER 'path'. Embedded qdrant locks its folder, so",
+    "   the second process to open it dies and mem0 never initializes — with no error.",
+    "2) 'https': false is required. qdrant-client silently switches to HTTPS as soon as",
+    "   api_key is set, and a plain-HTTP server then fails: SSL: WRONG_VERSION_NUMBER.",
+    "3) embedding_dims is welded to the collection. hermes_mem0 is built at 3072; every",
+    "   model in the proxy's Embedding list returns 3072 for exactly this reason. Changing",
+    "   the dimension means a NEW collection — the backend DELETES a mismatched one.",
+    "chmod 600: this file holds the Qdrant key and the local proxy key."
   ],
   "mode": "oss",
   "agent_id": "hermes",
@@ -16,16 +35,18 @@
     "llm": {
       "provider": "openai",
       "config": {
-        "model": "gemini-flash-latest",
-        "openai_base_url": "https://generativelanguage.googleapis.com/v1beta/openai/"
+        "model": "auto",
+        "openai_base_url": "http://127.0.0.1:@AGENTIC_PORT@/v1",
+        "api_key": "@LLMFP_LOCAL_KEY@"
       }
     },
     "embedder": {
       "provider": "openai",
       "config": {
-        "model": "gemini-embedding-001",
+        "model": "auto - Embedding",
         "embedding_dims": 3072,
-        "openai_base_url": "https://generativelanguage.googleapis.com/v1beta/openai/"
+        "openai_base_url": "http://127.0.0.1:@AGENTIC_PORT@/v1",
+        "api_key": "@LLMFP_LOCAL_KEY@"
       }
     },
     "vector_store": {
@@ -33,8 +54,8 @@
       "config": {
         "collection_name": "hermes_mem0",
         "host": "127.0.0.1",
-        "port": 6343,
-        "api_key": "SAME_KEY_AS_qdrant.env",
+        "port": "@QDRANT_HTTP_PORT@",
+        "api_key": "@QDRANT_API_KEY@",
         "https": false
       }
     }
