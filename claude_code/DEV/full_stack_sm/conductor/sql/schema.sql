@@ -30,12 +30,27 @@ create table if not exists ho_jobs (
   work_dir      text not null default '.',           -- repo path the agent runs in
   resume_session_id text,                            -- SDK session to resume; set while running, cleared on finish
   attempts      integer not null default 0,
-  -- which Claude Code system to run under (maps to agents-ai/telegram-bot-agent/claude-code-agent/DEV/profiles/<profile>.json)
-  -- 'sandbox' and 'test' were missing while both ship as profiles/*.json, so enqueueing a job
-  -- against either was rejected by this CHECK with a bare constraint error and no hint why.
+  -- Which Claude Code system to run under. MUST list exactly the manifests present in
+  -- claude_code/DEV/profiles/*.json. This list had drifted in BOTH directions by
+  -- 2026-08-28, and each direction failed differently:
+  --
+  --   it accepted 'sandbox' and 'test', which had since been renamed/removed, so a job
+  --   against either passed every validation and then ran with ZERO plugins, because
+  --   profiles.ts used to warn and "fall back to project settings";
+  --
+  --   and it did NOT accept 'sandbox_sm', which does ship, so enqueueing that was
+  --   rejected with a bare constraint error and no hint why.
+  --
+  -- The comment this replaces documented ADDING 'sandbox' and 'test' for exactly the
+  -- second reason — a correct fix that became the bug the moment the manifests were
+  -- renamed. bootstrap/verify.sh now compares the two so the drift is reported.
+  --
+  -- This CHECK is the EARLY guard (loud, at enqueue time). The LATE guard is
+  -- profiles.ts, which throws on a missing manifest rather than running an agent with
+  -- no tools.
   profile       text not null default 'dev'
-                check (profile in ('dev','seo','marketing','security','sandbox','test',
-                                   'marketing_vb','marketing_vb_sm')),
+                check (profile in ('dev','marketing','marketing_vb','marketing_vb_sm',
+                                   'sandbox_sm','security','seo')),
   created_at    text not null default (datetime('now')),
   not_before    text,                                 -- for 'deferred' backoff (can be hours, for resume)
   claimed_by    text,                                 -- worker id

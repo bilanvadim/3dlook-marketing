@@ -1,5 +1,5 @@
 {
-  "name": "sandbox_sm",
+  "name": "ai-agents-sbx",
   "owner": {
     "name": "Sergiy",
     "url": "https://github.com/SergeMiro"
@@ -14,5 +14,6 @@
       "source": "./plugins/sbx-probe",
       "description": "Sandbox instrumentation: /sbx-check confirms which profile actually loaded and walks the trial checklist. Nothing domain-specific — it exists so a failed trial is distinguishable from a failed switch."
     }
-  ]
+  ],
+  "_note": "Renamed 2026-08-28 from 'sandbox_sm' to 'ai-agents-sbx'. profiles/sandbox_sm.json registers this directory under the key ai-agents-sbx and enables sbx-probe@ai-agents-sbx, so while the declared name disagreed the plugin could not resolve at all — and switch-profile.sh swallowed the install failure, so the profile reported success with the candidate plugin absent, which is precisely the thing a sandbox exists to make obvious. Every sibling marketplace follows the ai-agents-<short> convention."
 }

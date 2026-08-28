@@ -11,7 +11,7 @@
  * Source of truth = agents-ai/telegram-bot-agent/claude-code-agent/DEV/profiles/<profile>.json (same files the
  * interactive switcher reads). Override the dir with HO_PROFILES_DIR.
  */
-import { readFileSync, existsSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { dirname, isAbsolute, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -84,17 +84,41 @@ export function resolveWorkDir(profile: string | null | undefined, workDir: stri
 export function resolveProfilePlugins(profile: string | null | undefined): LocalPlugin[] {
   const name = (profile && profile.trim()) || 'dev';
   const manifestPath = join(profilesDir(), `${name}.json`);
+  // THROW, do not fall back.
+  //
+  // This used to console.warn and return [] — "falling back to project settings" — which
+  // means the job runs with NONE of its profile's plugins. For a marketing_vb_sm job that
+  // is the entire marketing system silently absent: no error, no failed step, nothing in
+  // ho_project_status, one warn line in a log nobody tails, and an agent that cheerfully
+  // produces something with no idea what it was supposed to be. 88 of the jobs in this
+  // queue are marketing_vb_sm.
+  //
+  // It is reachable by ordinary means, not just by a typo: ho_jobs' CHECK constraint
+  // accepts 'sandbox' and 'test', and neither has a manifest on disk. A job enqueued
+  // against either passes every validation there is and then runs empty.
+  //
+  // Failing here marks the job failed with a message that says exactly what is missing,
+  // which the cron monitor pushes to Telegram. A job that cannot load its tools has not
+  // got a degraded mode worth having.
   if (!existsSync(manifestPath)) {
-    console.warn(`[profiles] no manifest for '${name}' at ${manifestPath} — falling back to project settings`);
-    return [];
+    const available = (() => {
+      try {
+        return readdirSync(profilesDir()).filter((f) => f.endsWith('.json'))
+          .map((f) => f.replace(/\.json$/, '')).sort().join(', ');
+      } catch { return '(profiles dir unreadable)'; }
+    })();
+    throw new Error(
+      `[profiles] no manifest for '${name}' at ${manifestPath}. Refusing to run with no ` +
+      `plugins — that is indistinguishable from a working run until you read the output. ` +
+      `Available profiles: ${available}`,
+    );
   }
 
   let manifest: ProfileManifest;
   try {
     manifest = JSON.parse(readFileSync(manifestPath, 'utf8')) as ProfileManifest;
   } catch (e) {
-    console.warn(`[profiles] unreadable manifest ${manifestPath}: ${String(e)}`);
-    return [];
+    throw new Error(`[profiles] manifest ${manifestPath} is unreadable or invalid JSON: ${String(e)}`);
   }
 
   const marketplaces = manifest.marketplaces ?? {};

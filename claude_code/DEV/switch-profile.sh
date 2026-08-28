@@ -41,12 +41,77 @@ case "${1:-}" in
   --current)    [ -f "$ACTIVE_FILE" ] && cat "$ACTIVE_FILE" || echo "(none set)"; exit 0 ;;
 esac
 
+# ── SERIALISE THE SWITCH ──────────────────────────────────────────────────────
+# settings.json is a single GLOBAL file, so a profile switch is a read-modify-write on
+# shared mutable state. Two concurrent switches interleave and the loser's plugin set
+# silently survives — and a headless `claude -p` started in between loads whichever set
+# happened to land.
+#
+# The lock used to live only in dispatch-in-profile.sh. But this script is what
+# install.sh runs, what INSTALL.md and REPRODUCE.md tell a human to run, and what every
+# doc example calls — i.e. the guarded path was the one nobody uses.
+#
+# HERMES_PROFILE_LOCK_HELD lets dispatch-in-profile.sh keep holding the lock across its
+# wider switch+verify+run window without deadlocking against this one: flock on a second
+# descriptor would block on the parent's own lock forever.
+LOCK="${TMPDIR:-/tmp}/hermes-profile-switch.lock"
+if [ "${HERMES_PROFILE_LOCK_HELD:-0}" != "1" ]; then
+  exec 9>"$LOCK"
+  if ! flock -w 900 9; then
+    die "could not acquire the profile lock within 900s ($LOCK) — another switch is in progress"
+  fi
+fi
+
 PROFILE="$1"
 MANIFEST="$PROFILES_DIR/$PROFILE.json"
 [ -f "$MANIFEST" ] || die "unknown profile '$PROFILE' (see: $0 --list)"
 [ -f "$SETTINGS" ] || die "settings not found: $SETTINGS"
 
 echo "→ Switching to profile: $PROFILE"
+
+# 0) PRE-FLIGHT, BEFORE TOUCHING ANYTHING GLOBAL.
+#
+# `claude plugin install --scope user` writes to ~/.claude/settings.json ITSELF. So
+# validating after the install loop is too late: a profile naming one bad plugin among
+# several good ones still leaves the good ones enabled in global settings, and the caller
+# gets an error while the machine is in a third state that is neither the old profile nor
+# the new one. Measured 2026-08-28 with a deliberately broken profile: settings.json
+# gained a plugin from a switch that had "failed".
+#
+# So resolve every plugin OFFLINE first — the manifest names a directory, the directory
+# declares its marketplace name, and the plugin has a .claude-plugin/plugin.json — and
+# refuse before the first side effect.
+python3 - "$MANIFEST" "$SCRIPT_DIR" <<'PYPRE' || die "profile '$PROFILE' does not resolve — nothing was changed"
+import json, os, sys
+manifest, base = sys.argv[1], sys.argv[2]
+m = json.load(open(manifest))
+mkts = m.get("marketplaces") or {}
+bad = []
+for key, rel in mkts.items():
+    d = rel if os.path.isabs(rel) else os.path.normpath(os.path.join(base, rel))
+    mp = os.path.join(d, ".claude-plugin", "marketplace.json")
+    if not os.path.isfile(mp):
+        bad.append(f"marketplace '{key}' -> {d} has no .claude-plugin/marketplace.json")
+        continue
+    declared = (json.load(open(mp)) or {}).get("name")
+    if declared != key:
+        bad.append(f"marketplace '{key}' -> {d} declares itself '{declared}' — "
+                   f"plugins named @{key} cannot resolve")
+for ep in m.get("enabledPlugins") or []:
+    plug, _, key = ep.partition("@")
+    rel = mkts.get(key)
+    if rel is None:
+        bad.append(f"plugin '{ep}' names marketplace '{key}', which this profile does not register")
+        continue
+    d = rel if os.path.isabs(rel) else os.path.normpath(os.path.join(base, rel))
+    pj = os.path.join(d, "plugins", plug, ".claude-plugin", "plugin.json")
+    if not os.path.isfile(pj):
+        bad.append(f"plugin '{ep}' has no {os.path.relpath(pj, base)}")
+for b in bad:
+    print("  ! " + b, file=sys.stderr)
+sys.exit(1 if bad else 0)
+PYPRE
+echo "  pre-flight ok: every marketplace and plugin resolves on disk"
 
 # 1) Register any marketplaces this profile needs (idempotent).
 existing_mkts="$(claude plugin marketplace list 2>/dev/null || true)"
@@ -65,15 +130,41 @@ for n,p in m.get('marketplaces',{}).items():
     print(n+'\t'+(p if os.path.isabs(p) else os.path.normpath(os.path.join(base,p))))
 " "$MANIFEST" "$SCRIPT_DIR")
 
-# 2) Ensure each target plugin is installed (idempotent).
+# 2) Ensure each target plugin is installed, then ASSERT THE END STATE.
+#
+# `|| true` used to swallow every failure here, and step 3 wrote the plugin into
+# enabledPlugins regardless — so settings.json claimed a plugin that was not installed and
+# the script printed success. That is how profiles/sandbox_sm.json shipped for weeks with
+# sbx-probe@ai-agents-sbx unresolvable (the marketplace declared itself 'sandbox_sm'): a
+# sandbox whose whole purpose is to make a non-loading candidate obvious, reporting green.
+#
+# The exit code of `plugin install` is not a reliable signal on its own — an
+# already-installed plugin is a normal, non-failing no-op with varying output — so the
+# check is on what is actually installed AFTERWARDS.
+TARGETS=()
 while read -r plug; do
   [ -z "$plug" ] && continue
-  claude plugin install "$plug" --scope user >/dev/null 2>&1 || true
+  TARGETS+=("$plug")
+  out="$(claude plugin install "$plug" --scope user 2>&1)" || true
+  case "$out" in *[Ee]rror*|*"not found"*|*"Unknown"*) echo "  ! install reported: $(printf '%s' "$out" | head -2 | tr '\n' ' ')" ;; esac
 done < <(python3 -c "
 import json,sys
 m=json.load(open(sys.argv[1]))
 for p in m.get('enabledPlugins',[]): print(p)
 " "$MANIFEST")
+
+installed="$(claude plugin list 2>/dev/null || true)"
+missing=()
+for plug in "${TARGETS[@]:-}"; do
+  [ -z "$plug" ] && continue
+  case "$installed" in *"$plug"*) : ;; *) missing+=("$plug") ;; esac
+done
+if [ "${#missing[@]}" -gt 0 ]; then
+  die "profile '$PROFILE' names plugin(s) that are NOT installed after the attempt: ${missing[*]}
+       settings.json has NOT been changed. Usually the marketplace directory declares a
+       different name than the profile's key — compare profiles/$PROFILE.json against
+       <dir>/.claude-plugin/marketplace.json."
+fi
 
 # 3) Rewrite settings.json enabledPlugins to EXACTLY this profile's set,
 #    keep extraKnownMarketplaces in sync, preserve everything else.

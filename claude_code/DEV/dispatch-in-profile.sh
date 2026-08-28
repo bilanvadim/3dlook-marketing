@@ -39,7 +39,9 @@ if ! flock -w 900 9; then
 fi
 
 echo "[dispatch] switching → $profile" >&2
-"$DIR/switch-profile.sh" "$profile" >&2
+# We already hold the lock across the whole switch+verify+run window; tell the switcher
+# so it does not try to take it on a second descriptor and block on us forever.
+HERMES_PROFILE_LOCK_HELD=1 "$DIR/switch-profile.sh" "$profile" >&2
 
 active="$("$DIR/switch-profile.sh" --current)"
 if [[ "$active" != "$profile" ]]; then

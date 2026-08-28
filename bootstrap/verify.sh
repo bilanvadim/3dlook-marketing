@@ -431,6 +431,73 @@ if not bad:
 PYBAR
 
 # ── the model selector ───────────────────────────────────────────────────────
+hdr "Profiles"
+python3 - "$REPO" "${HO_DB:-$HOME/.hermes/ho.db}" <<'PYPROF'
+import json, os, re, sqlite3, sys, glob
+repo, db = sys.argv[1], sys.argv[2]
+pdir = os.path.join(repo, "claude_code", "DEV", "profiles")
+manifests = sorted(os.path.basename(p)[:-5] for p in glob.glob(os.path.join(pdir, "*.json")))
+
+# Every marketplace a profile registers must declare the same name the profile uses, and
+# every plugin it enables must exist on disk. This is resolved the way switch-profile.sh
+# and the conductor's profiles.ts both do it.
+bad = []
+for name in manifests:
+    m = json.load(open(os.path.join(pdir, name + ".json")))
+    mkts = m.get("marketplaces") or {}
+    for key, rel in mkts.items():
+        d = rel if os.path.isabs(rel) else os.path.normpath(os.path.join(os.path.dirname(pdir), rel))
+        mp = os.path.join(d, ".claude-plugin", "marketplace.json")
+        if not os.path.isfile(mp):
+            bad.append(f"{name}: marketplace '{key}' -> {d} has no marketplace.json"); continue
+        dec = (json.load(open(mp)) or {}).get("name")
+        if dec != key:
+            bad.append(f"{name}: marketplace '{key}' -> {d} declares itself '{dec}'")
+    for ep in m.get("enabledPlugins") or []:
+        plug, _, key = ep.partition("@")
+        rel = mkts.get(key)
+        if rel is None:
+            bad.append(f"{name}: plugin '{ep}' names an unregistered marketplace"); continue
+        d = rel if os.path.isabs(rel) else os.path.normpath(os.path.join(os.path.dirname(pdir), rel))
+        if not os.path.isfile(os.path.join(d, "plugins", plug, ".claude-plugin", "plugin.json")):
+            bad.append(f"{name}: plugin '{ep}' has no plugin.json on disk")
+for b in bad:
+    print("[FAIL] " + b)
+if not bad:
+    print(f"[OK]   all {len(manifests)} profile(s) resolve: every marketplace name and plugin exists")
+
+# ho_jobs.profile's CHECK must list exactly those manifests. Drift is silent in one
+# direction (a name the CHECK allows but no manifest backs runs with no plugins) and
+# merely baffling in the other (a shipped profile rejected by a bare constraint error).
+try:
+    ddl = sqlite3.connect(f"file:{db}?mode=ro", uri=True).execute(
+        "select sql from sqlite_master where name='ho_jobs'").fetchone()[0]
+    mm = re.search(r"check\s*\(profile\s+in\s*\(([^)]*)\)", ddl, re.S | re.I)
+    allowed = sorted(x.strip().strip("'\"") for x in mm.group(1).split(",") if x.strip()) if mm else []
+    extra = [a for a in allowed if a not in manifests]
+    miss  = [m for m in manifests if m not in allowed]
+    if extra: print(f"[FAIL] ho_jobs CHECK allows profile(s) with NO manifest: {extra} — such a job runs with zero plugins")
+    if miss:  print(f"[FAIL] ho_jobs CHECK rejects shipped profile(s): {miss} — enqueueing them fails with a bare constraint error")
+    if not extra and not miss: print(f"[OK]   ho_jobs CHECK lists exactly the {len(allowed)} manifest(s) on disk")
+except Exception as e:
+    print(f"[WARN] could not compare ho_jobs CHECK against the manifests: {e}")
+
+# The globally active profile must be one that exists, and settings.json must hold exactly
+# its plugin set — switch-profile.sh rewrites it to EXACTLY that, so any difference means
+# something else edited it.
+try:
+    act = open(os.path.expanduser("~/.claude/.active-profile")).read().strip()
+    if act not in manifests:
+        print(f"[FAIL] active profile '{act}' has no manifest")
+    else:
+        want = set(json.load(open(os.path.join(pdir, act + ".json"))).get("enabledPlugins") or [])
+        have = set(json.load(open(os.path.expanduser("~/.claude/settings.json"))).get("enabledPlugins") or {})
+        if want == have: print(f"[OK]   settings.json holds exactly '{act}'s {len(want)} plugin(s)")
+        else: print(f"[WARN] settings.json differs from profile '{act}': extra={sorted(have-want)} missing={sorted(want-have)}")
+except Exception as e:
+    print(f"[WARN] could not compare the active profile: {e}")
+PYPROF
+
 hdr "Model selector"
 for pair in "agentic:$AGENTIC_PORT" "strong:$STRONG_PORT"; do
   inst="${pair%%:*}"; p="${pair##*:}"
