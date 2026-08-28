@@ -1,0 +1,574 @@
+{
+  "version": 1,
+  "server": {
+    "host": "127.0.0.1",
+    "port": "@AGENTIC_PORT@",
+    "apiKey": "@LLMFP_LOCAL_KEY@",
+    "cors": true,
+    "logLevel": "info"
+  },
+  "failover": {
+    "requestTimeoutMs": 120000,
+    "firstTokenTimeoutMs": 20000,
+    "idleTimeoutMs": 60000,
+    "hedgeDelayMs": 5000,
+    "maxInFlight": 3,
+    "maxAttempts": 0,
+    "crossModelFallback": true,
+    "treatContentFilterAsFailure": true,
+    "streamErrorAsMessage": true,
+    "strictModelMatch": false,
+    "cooldown": {
+      "failuresBeforeTrip": 2,
+      "baseMs": 15000,
+      "maxMs": 300000
+    }
+  },
+  "probe": {
+    "timeoutMs": 15000
+  },
+  "providers": [
+    {
+      "id": "prov_b66c619f",
+      "name": "nvidia",
+      "type": "openai",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "apiKey": "env:NVIDIA_API_KEY",
+      "headers": {},
+      "enabled": true
+    },
+    {
+      "id": "prov_2350d59e",
+      "name": "opencode",
+      "type": "openai",
+      "baseUrl": "https://opencode.ai/zen/v1",
+      "apiKey": "env:OPENCODE_API_KEY",
+      "headers": {},
+      "enabled": true
+    },
+    {
+      "id": "prov_5eeaf6c2",
+      "name": "openrouter",
+      "type": "openai",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "apiKey": "env:OPENROUTER_API_KEY",
+      "headers": {},
+      "enabled": true
+    },
+    {
+      "id": "prov_468da084",
+      "name": "gemini",
+      "type": "openai",
+      "baseUrl": "https://generativelanguage.googleapis.com/v1beta/openai",
+      "apiKey": "env:GEMINI_API_KEY",
+      "headers": {},
+      "enabled": true
+    }
+  ],
+  "models": [
+    {
+      "id": "mdl_1c02ab02",
+      "providerId": "prov_2350d59e",
+      "model": "hy3-free",
+      "alias": "hy3-free",
+      "kind": "chat",
+      "enabled": true,
+      "params": {}
+    },
+    {
+      "id": "mdl_0ed6e408",
+      "providerId": "prov_5eeaf6c2",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "alias": "nvidia/nemotron-3-super-120b-a12b:free",
+      "kind": "chat",
+      "enabled": true,
+      "params": {}
+    },
+    {
+      "id": "mdl_79000e42",
+      "providerId": "prov_b66c619f",
+      "model": "minimaxai/minimax-m3",
+      "alias": "minimaxai/minimax-m3",
+      "kind": "chat",
+      "enabled": true,
+      "params": {}
+    },
+    {
+      "id": "mdl_3044cd25",
+      "providerId": "prov_b66c619f",
+      "model": "openai/gpt-oss-120b",
+      "alias": "openai/gpt-oss-120b",
+      "kind": "chat",
+      "enabled": true,
+      "params": {}
+    },
+    {
+      "id": "mdl_872936ca",
+      "providerId": "prov_b66c619f",
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "alias": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "kind": "chat",
+      "enabled": true,
+      "params": {}
+    },
+    {
+      "id": "mdl_c5079631",
+      "providerId": "prov_2350d59e",
+      "model": "mimo-v2.5-free",
+      "alias": "mimo-v2.5-free",
+      "kind": "chat",
+      "enabled": true,
+      "params": {}
+    },
+    {
+      "id": "mdl_485bbaf7",
+      "providerId": "prov_2350d59e",
+      "model": "laguna-s-2.1-free",
+      "alias": "laguna-s-2.1-free",
+      "kind": "chat",
+      "enabled": true,
+      "params": {}
+    },
+    {
+      "id": "mdl_8978d3ea",
+      "providerId": "prov_2350d59e",
+      "model": "minimax-m3",
+      "alias": "minimax-m3",
+      "kind": "chat",
+      "enabled": true,
+      "params": {}
+    },
+    {
+      "id": "mdl_b3e80a13",
+      "providerId": "prov_b66c619f",
+      "model": "mistralai/mistral-large-2-instruct",
+      "alias": "mistralai/mistral-large-2-instruct",
+      "kind": "chat",
+      "enabled": true,
+      "params": {}
+    },
+    {
+      "id": "mdl_5756694c",
+      "providerId": "prov_5eeaf6c2",
+      "model": "google/gemma-4-26b-a4b-it:free",
+      "alias": "google/gemma-4-26b-a4b-it:free",
+      "kind": "chat",
+      "enabled": true,
+      "params": {}
+    },
+    {
+      "id": "mdl_16ebe9ef",
+      "providerId": "prov_2350d59e",
+      "model": "deepseek-v4-flash-free",
+      "alias": "deepseek-v4-flash-free",
+      "kind": "chat",
+      "enabled": true,
+      "params": {}
+    }
+  ],
+  "modelLists": [
+    {
+      "id": "lst_98497fc9",
+      "name": "for agent AI",
+      "description": "Everyday agentic chain: normal Hermes conversation, the morning pick at 07:00 serves from here. Cheap-to-mid free models, high daily quota.",
+      "models": [
+        {
+          "id": "mdl_1c02ab02",
+          "providerId": "prov_2350d59e",
+          "model": "hy3-free",
+          "alias": "hy3-free",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_0ed6e408",
+          "providerId": "prov_5eeaf6c2",
+          "model": "nvidia/nemotron-3-super-120b-a12b:free",
+          "alias": "nvidia/nemotron-3-super-120b-a12b:free",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_79000e42",
+          "providerId": "prov_b66c619f",
+          "model": "minimaxai/minimax-m3",
+          "alias": "minimaxai/minimax-m3",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_3044cd25",
+          "providerId": "prov_b66c619f",
+          "model": "openai/gpt-oss-120b",
+          "alias": "openai/gpt-oss-120b",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_872936ca",
+          "providerId": "prov_b66c619f",
+          "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+          "alias": "nvidia/nemotron-3.5-lightning-30b-a3b",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_c5079631",
+          "providerId": "prov_2350d59e",
+          "model": "mimo-v2.5-free",
+          "alias": "mimo-v2.5-free",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_485bbaf7",
+          "providerId": "prov_2350d59e",
+          "model": "laguna-s-2.1-free",
+          "alias": "laguna-s-2.1-free",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_8978d3ea",
+          "providerId": "prov_2350d59e",
+          "model": "minimax-m3",
+          "alias": "minimax-m3",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_b3e80a13",
+          "providerId": "prov_b66c619f",
+          "model": "mistralai/mistral-large-2-instruct",
+          "alias": "mistralai/mistral-large-2-instruct",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_5756694c",
+          "providerId": "prov_5eeaf6c2",
+          "model": "google/gemma-4-26b-a4b-it:free",
+          "alias": "google/gemma-4-26b-a4b-it:free",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_16ebe9ef",
+          "providerId": "prov_2350d59e",
+          "model": "deepseek-v4-flash-free",
+          "alias": "deepseek-v4-flash-free",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        }
+      ]
+    },
+    {
+      "id": "lst_cac30b6f",
+      "name": "Reasoning ai models",
+      "description": "Reasoning/coding chain: используется, когда пользователь просит более сильную модель. Все бесплатные модели трёх провайдеров, годные для рассуждения и кода, строго от самой сильной к слабой; одна и та же модель стоит подряд у разных провайдеров, чтобы исчерпание квоты у одного не роняло режим.",
+      "models": [
+        {
+          "id": "mdl_cbed14be",
+          "providerId": "prov_b66c619f",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b",
+          "alias": "nvidia/nemotron-3-ultra-550b-a55b",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_c8e2f902",
+          "providerId": "prov_2350d59e",
+          "model": "nemotron-3-ultra-free",
+          "alias": "nemotron-3-ultra-free",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_806b374f",
+          "providerId": "prov_5eeaf6c2",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "alias": "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_a3650813",
+          "providerId": "prov_b66c619f",
+          "model": "minimaxai/minimax-m3",
+          "alias": "minimaxai/minimax-m3",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_b6a7e866",
+          "providerId": "prov_2350d59e",
+          "model": "deepseek-v4-flash-free",
+          "alias": "deepseek-v4-flash-free",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_b66ffaf6",
+          "providerId": "prov_b66c619f",
+          "model": "deepseek-ai/deepseek-v4-flash-0731",
+          "alias": "deepseek-ai/deepseek-v4-flash-0731",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_0babcfc3",
+          "providerId": "prov_5eeaf6c2",
+          "model": "poolside/laguna-s-2.1:free",
+          "alias": "poolside/laguna-s-2.1:free",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_28cb3b2d",
+          "providerId": "prov_2350d59e",
+          "model": "laguna-s-2.1-free",
+          "alias": "laguna-s-2.1-free",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_fd462548",
+          "providerId": "prov_b66c619f",
+          "model": "moonshotai/kimi-k2.6",
+          "alias": "moonshotai/kimi-k2.6",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_950c1e5d",
+          "providerId": "prov_b66c619f",
+          "model": "nvidia/nemotron-3-super-120b-a12b",
+          "alias": "nvidia/nemotron-3-super-120b-a12b",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_477d081d",
+          "providerId": "prov_5eeaf6c2",
+          "model": "nvidia/nemotron-3-super-120b-a12b:free",
+          "alias": "nvidia/nemotron-3-super-120b-a12b:free",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_7df1d3d4",
+          "providerId": "prov_2350d59e",
+          "model": "mimo-v2.5-free",
+          "alias": "mimo-v2.5-free",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_0cdab184",
+          "providerId": "prov_5eeaf6c2",
+          "model": "cohere/north-mini-code:free",
+          "alias": "cohere/north-mini-code:free",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_055c1bab",
+          "providerId": "prov_2350d59e",
+          "model": "hy3-free",
+          "alias": "hy3-free",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_5277a9fa",
+          "providerId": "prov_b66c619f",
+          "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+          "alias": "nvidia/nemotron-3.5-lightning-30b-a3b",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_d385ad75",
+          "providerId": "prov_2350d59e",
+          "model": "nemotron-3.5-lightning-free",
+          "alias": "nemotron-3.5-lightning-free",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_29211781",
+          "providerId": "prov_5eeaf6c2",
+          "model": "nvidia/nemotron-3.5-lightning:free",
+          "alias": "nvidia/nemotron-3.5-lightning:free",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_8d188f27",
+          "providerId": "prov_b66c619f",
+          "model": "openai/gpt-oss-120b",
+          "alias": "openai/gpt-oss-120b",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        }
+      ]
+    },
+    {
+      "id": "lst_40b0906c",
+      "name": "Vision",
+      "description": "Image reading for Hermes (auxiliary.vision). Addressed as `auto - Vision`, which serves this chain WITHOUT changing the active list. Every entry was verified by sending a real PNG and requiring the colour back — a text-only model answers 400 and Hermes silently 'sees' nothing.",
+      "models": [
+        {
+          "id": "mdl_af3c95e3",
+          "providerId": "prov_468da084",
+          "model": "gemini-3-flash-preview",
+          "alias": "gemini-3-flash-preview",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_13cbba91",
+          "providerId": "prov_468da084",
+          "model": "gemini-3.5-flash",
+          "alias": "gemini-3.5-flash",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_02eff8b1",
+          "providerId": "prov_5eeaf6c2",
+          "model": "minimax/minimax-m3:free",
+          "alias": "minimax-m3:free",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        }
+      ]
+    },
+    {
+      "id": "lst_65e87250",
+      "name": "Embedding",
+      "description": "mem0 embeddings. Addressed as `auto - Embedding`. All entries return 3072 dims to match the live hermes_mem0 collection — a different dimension is rejected per request by Qdrant, so never mix sizes in this chain.",
+      "models": [
+        {
+          "id": "mdl_e7e4b913",
+          "providerId": "prov_468da084",
+          "model": "gemini-embedding-001",
+          "alias": "gemini-embedding-001",
+          "kind": "embedding",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_264e01a6",
+          "providerId": "prov_468da084",
+          "model": "gemini-embedding-2",
+          "alias": "gemini-embedding-2",
+          "kind": "embedding",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_4b1b4e94",
+          "providerId": "prov_468da084",
+          "model": "gemini-embedding-2-preview",
+          "alias": "gemini-embedding-2-preview",
+          "kind": "embedding",
+          "enabled": true,
+          "params": {}
+        }
+      ]
+    },
+    {
+      "id": "lst_90f3c4a0",
+      "name": "Judge",
+      "description": "Inline approval judge (auxiliary.approval). Addressed as `auto - Judge`. Called with max_tokens=16, so every entry here is verified to return one WORD at that budget — a reasoning model returns empty content and turns every flagged command into an ESCALATE, which in a headless gateway is a dead stop.",
+      "models": [
+        {
+          "id": "mdl_471d3c19",
+          "providerId": "prov_468da084",
+          "model": "gemini-3.1-flash-lite",
+          "alias": "gemini-3.1-flash-lite",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_9b2626e4",
+          "providerId": "prov_468da084",
+          "model": "gemini-flash-lite-latest",
+          "alias": "gemini-flash-lite-latest",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_7efae3fd",
+          "providerId": "prov_468da084",
+          "model": "gemini-3.5-flash-lite",
+          "alias": "gemini-3.5-flash-lite",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_02eff8b1",
+          "providerId": "prov_5eeaf6c2",
+          "model": "minimax/minimax-m3:free",
+          "alias": "minimax-m3:free",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        }
+      ]
+    }
+  ],
+  "activeListId": "lst_98497fc9",
+  "warp": {
+    "enabled": false,
+    "mode": "always",
+    "socksPort": 25344,
+    "httpPort": 25345,
+    "endpoint": "162.159.192.1:2408",
+    "fallbackDirect": false,
+    "rotate": {
+      "everyMs": 0,
+      "minIntervalMs": 600000,
+      "attempts": 3
+    }
+  },
+  "update": {
+    "check": true
+  }
+}

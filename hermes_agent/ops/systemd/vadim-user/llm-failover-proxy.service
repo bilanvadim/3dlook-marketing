@@ -1,13 +1,38 @@
 [Unit]
-Description=llm-failover-proxy (agentic chain) — Hermes default, OpenAI-compatible failover
+Description=llm-failover-proxy (agentic chain — Hermes default) — OpenAI-compatible failover on 127.0.0.1:47831
 After=network-online.target
+Wants=network-online.target
 
 [Service]
-# Entry point is the GLOBAL package, so both accounts run one version. The bundled
-# copy under ~/.config/.../service/*.mjs is a snapshot that never picks up updates.
-ExecStart=/usr/bin/node /usr/lib/node_modules/llm-failover-proxy/dist/index.js start --config /home/vadim_prod/.config/llm-failover-proxy/config.json
-StandardOutput=append:/home/vadim_prod/.config/llm-failover-proxy/daemon.log
-StandardError=append:/home/vadim_prod/.config/llm-failover-proxy/daemon.log
+# ── ENTRY POINT, corrected 2026-08-27 ─────────────────────────────────────────────
+# The two instances were running two DIFFERENT binaries. This one pointed at
+# ~/.config/llm-failover-proxy/service/llm-failover-proxy.mjs — a 598 KB snapshot frozen
+# on 2026-08-18, whose own header says it "never picks up updates" — while the strong
+# instance ran /usr/lib/node_modules. Nothing reported the split: both answered, both
+# looked healthy, and only their behaviour differed.
+#
+# Both now run THIS ACCOUNT's copy at ~/.local. Not /usr: that tree is root-owned and
+# shared with sergiy_prod, so upgrading it would change his stack too. /usr stays at
+# 1.8.0, untouched.
+#
+# 1.10.0 is required, not cosmetic. `auto - <list>` per-request addressing does not
+# exist in 1.8.0 at all, and it is the mechanism that lets vision and embeddings each
+# use their own chain WITHOUT switching the active list the conversation shares.
+#
+# Note llmfp can rewrite its own unit (its "run at login" feature) — that is how this
+# file lost its comments and acquired quoted arguments before. bootstrap/verify.sh
+# compares live units against the tracked copies so that drift is reported, not silent.
+#
+# ── SECRETS ───────────────────────────────────────────────────────────────────────
+# The configs reference keys as env:OPENCODE_API_KEY / env:OPENROUTER_API_KEY /
+# env:NVIDIA_API_KEY / env:GEMINI_API_KEY instead of holding them inline. The binary
+# resolves env: from real environment variables first, then from the .env beside the
+# config. secrets.env is the documented single source that until now nothing on this
+# machine actually read; it carries GEMINI_API_KEY, which the neighbouring .env does
+# not. The `-` prefix is deliberate: a missing file must not stop the proxy, because
+# with the proxy down Hermes has no model at all.
+EnvironmentFile=-%h/.config/ai-agent-stack/secrets.env
+ExecStart=/usr/bin/node %h/.local/lib/node_modules/llm-failover-proxy/dist/index.js start --config %h/.config/llm-failover-proxy/agentic/config.json
 Restart=on-failure
 RestartSec=5
 
