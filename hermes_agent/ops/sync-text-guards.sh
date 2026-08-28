@@ -63,7 +63,9 @@ OUT="$(run_claude)"
 
 # Resume loop on max_turns (up to 3 more continuations)
 for i in 1 2 3; do
-  if echo "$OUT" | grep -q '"subtype":"error_max_turns"'; then
+  # See the pipefail/grep -q note: $OUT is a full `claude -p` payload, easily large
+  # enough for grep to exit before the writer finishes.
+  if [ -n "$(printf '%s' "$OUT" | grep -F '"subtype":"error_max_turns"' || true)" ]; then
     SID="$(echo "$OUT" | python3 -c 'import sys,json
 try:
     print(json.load(sys.stdin).get("session_id",""))
