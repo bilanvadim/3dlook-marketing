@@ -70,7 +70,7 @@ ai-agents-config/
 
 ## Сценарий D — автономный запуск (ты = дирижёр / разворачиваешь его)
 1. `cd conductor && cp .env.example .env` — DATABASE_URL по умолчанию `file:./ho.db` (+ опц. TELEGRAM_*).
-2. `npm install && npm test` — юнит-тесты (breaker/steploop/steprunner) + libSQL store smoke.
+2. `npm install && npm test` — 168 тестов (breaker/steploop/steprunner/store/backoff/signature/askgate/callback/heartbeat/profiles), SQLite через better-sqlite3, без сети.
 3. Создать схему: `sqlite3 ho.db < conductor/sql/schema.sql` (для file:; или `turso db shell` для Turso).
 4. Запуск: `docker build -t hermes-conductor conductor/ && docker run --env-file conductor/.env -v $(pwd):/work hermes-conductor`. Ставь `work_dir=/work` в job (там лежит `.claude/`).
 5. Поставить задачу: `insert into ho_jobs(kind,title,prompt,...)` или через n8n webhook.
@@ -176,7 +176,7 @@ conductor/
 [человек или cron]
    │  ставит задачу
    ▼
-n8n  ──POST /hermes-job──►  libSQL: insert into ho_jobs (status=queued)
+n8n  ──POST /hermes-job──►  SQLite: insert into ho_jobs (status=queued)
    ▼
 conductor/ (воркер)
    │ 1. store.claimJob() — атомарно берёт задачу (write-транзакция SQLite, single-writer)
@@ -227,7 +227,7 @@ Telegram: "✅/❌ job <status> + summary"
 ---
 
 ## 4. Стек по умолчанию
-TypeScript strict / Next.js (App Router, Route Handlers) или FastAPI (Python) / **plain PostgreSQL** (RLS; расширения `pg_cron`/`pgvector`/`pgmq`/`pg_net`) / Drizzle ORM или SQLAlchemy+Alembic / **Better Auth** (MIT, self-host) / **PGMQ** очереди / Valkey кэш / gh CLI. По требованию: SeaweedFS (файлы) · Centrifugo (realtime) · PgBouncer · Keycloak. Gateway — Traefik. **Supabase НЕ используем** (исключение — way2buy; Studio на `supabase.smiro.dev`). **Полная карта замены Supabase→OSS — в `STACK.md`.** Состояние дирижёра — SQLite/libSQL (file: или Turso), НЕ Postgres. Триггеры — n8n. Эскалации — Telegram.
+TypeScript strict / Next.js (App Router, Route Handlers) или FastAPI (Python) / **plain PostgreSQL** (RLS; расширения `pg_cron`/`pgvector`/`pgmq`/`pg_net`) / Drizzle ORM или SQLAlchemy+Alembic / **Better Auth** (MIT, self-host) / **PGMQ** очереди / Valkey кэш / gh CLI. По требованию: SeaweedFS (файлы) · Centrifugo (realtime) · PgBouncer · Keycloak. Gateway — Traefik. **Supabase НЕ используем** (исключение — way2buy; Studio на `supabase.smiro.dev`). **Полная карта замены Supabase→OSS — в `STACK.md`.** Состояние дирижёра — локальный SQLite через better-sqlite3, НЕ Postgres и НЕ libSQL/Turso (@libsql/client снят: его локальный драйвер отдавал соединение каждой transaction() и не закрывал — 33 021 осиротевшее соединение и 5.4 ГБ RSS на опросе ПУСТОЙ очереди; dbPath() теперь отвергает удалённые схемы). DATABASE_URL обязан быть абсолютным. Триггеры — n8n. Эскалации — Telegram.
 
 ---
 
@@ -235,9 +235,9 @@ TypeScript strict / Next.js (App Router, Route Handlers) или FastAPI (Python)
 
 1. **Marketplace.** Залить `<repo root>/` в git. В рабочем проекте: `/plugin marketplace add <repo>`, поставить `hermes-core` + нужные слои. Внешние компаньоны: `frontend-design@claude-plugins-official`, `superpowers@claude-plugins-official`, `trailofbits/skills`.
 2. **State.** Создать схему: `sqlite3 ho.db < conductor/sql/schema.sql` (file:; или Turso `turso db shell`).
-3. **Проверка ядра.** В `conductor/`: `npm install && npm test` (breaker/steploop/steprunner + libSQL store smoke, без сети/API).
+3. **Проверка ядра.** В `conductor/`: `npm install && npm test` (breaker/steploop/steprunner/store/profiles/askgate — 168 тестов, без сети/API).
 4. **Conductor.** Заполнить `.env` (см. `.env.example`; DATABASE_URL по умолчанию `file:./ho.db`). `npm start` (или `docker build`/`docker run --env-file .env -v <repo>:/work`). Рабочий репозиторий должен содержать `.claude/` от marketplace.
-5. **Triggers.** Импортировать `n8n/hermes-dispatcher.json`, подключить БД-креды (libSQL/Turso) и Telegram-бота.
+5. **Triggers.** Импортировать `n8n/hermes-dispatcher.json`, подключить путь к локальной `ho.db` (абсолютный) и Telegram-бота.
 6. **Первый прогон.** Поставить тестовую задачу (`insert into ho_jobs` или webhook) с небольшим `max_turns` и смотреть статусы в `ho_jobs` / `ho_runs`. Проверить, что `resume_session_id` проставляется, и что пауза по лимиту переводит job в `deferred`, а не в `failed`.
 
 ---

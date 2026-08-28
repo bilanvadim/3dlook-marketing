@@ -1,6 +1,6 @@
 ---
 name: vps-orchestration
-description: "@OWNER@'s VPS orchestration policy: route ALL coding/analysis/document work to Claude Code, failover to OpenCode (free `opencode/*`, the daily model-router pick) on Claude limits, salvage git state, drive + monitor the Fullstack agents conductor pipeline (ho_* in SQLite/libSQL), relay questions/escalations, report to Telegram. Read this BEFORE delegating any technical task."
+description: "@OWNER@'s VPS orchestration policy: route ALL coding/analysis/document work to Claude Code, failover to OpenCode (free, via llm-failover-proxy's strong chain) on Claude limits, salvage git state, drive + monitor the Fullstack agents conductor pipeline (ho_* in local SQLite), relay questions/escalations, report to Telegram. Read this BEFORE delegating any technical task."
 version: 2.0.0
 author: @OWNER@ + Claude
 license: MIT
@@ -23,10 +23,17 @@ These rules are mandatory and mechanical — follow them exactly, do not improvi
 - **Claude Code** (`claude` CLI) — PRIMARY executor. Strongest brain. On a
   subscription with usage limits that reset after a few hours.
 - **OpenCode** (`opencode` CLI, opencode.ai) — FALLBACK code executor when Claude
-  hits its API/usage limit. Runs FREE: provider prefix `opencode/*`, on the
-  strongest free model model-router picks each morning (`pick.json` `.coder`),
-  already written into `~/.config/opencode/opencode.jsonc` — so invoke it WITHOUT
-  `-m`, from inside the repo. Executes well-specified steps; do NOT let it
+  hits its API/usage limit. Runs FREE through **llm-failover-proxy's strong chain**:
+  `~/.config/opencode/opencode.jsonc` sets both `model` and `small_model` to
+  `llm-fop-strong/auto`, so the PROXY picks the model per request, by failover and
+  hedging. Invoke it WITHOUT `-m`, from inside the repo.
+  ⚠️ This paragraph used to say "provider prefix `opencode/*`, on the strongest free
+  model model-router picks each morning (`pick.json` `.coder`)". That selector was
+  DELETED on 2026-08-26 — there is no `pick.json` and no `.coder` — and following the
+  old instruction would pin a provider prefix and bypass the failover chain entirely.
+  Both `model` and `small_model` must stay free: OpenCode generates a session title
+  with `small_model` before every run, and a paid one returns 401 CreditsError, which
+  kills the whole run with exit 0 and EMPTY stdout. Executes well-specified steps; do NOT let it
   redesign architecture. (Gemini CLI is only an emergency last resort if OpenCode
   is also down.) The paid `opencode-go` subscription tier is retired.
 - **Fullstack agents** — the system INSIDE Claude Code: a plugin marketplace
@@ -38,9 +45,12 @@ These rules are mandatory and mechanical — follow them exactly, do not improvi
   (ad-hoc) or to the conductor (A→Z projects) and IT dispatches roles.
 - **Conductor** — the autonomous pipeline that runs the Fullstack agents over
   the Claude **Agent SDK** on this VPS (source `full_stack_sm/conductor`).
-  State lives in **SQLite/libSQL** (`@libsql/client`; default local file
-  `$HO_STATE_DIR/ho.db`, or Turso/libSQL for a networked DB — read it with
-  `sqlite3`): tables `ho_jobs`, `ho_steps`, `ho_questions`, `ho_escalations`,
+  State lives in **local SQLite via `better-sqlite3`** — read it with `sqlite3`.
+  Not libSQL and not Turso: that driver leaked a connection per transaction (5.4 GB
+  while polling an EMPTY queue) and `dbPath()` now rejects remote schemes. `DATABASE_URL`
+  must be an ABSOLUTE `file:` path; a relative one resolves against the unit's
+  WorkingDirectory and opens a different database from the one the gateway reads.
+  Tables `ho_jobs`, `ho_steps`, `ho_questions`, `ho_escalations`,
   views `ho_project_status` / `ho_job_progress`. A worker claims jobs
   (`store.claimJob`, single-writer write-tx), runs the executor→reviewer→runtime
   loop per step with durable resume (`resume_session_id`), and escalates
@@ -52,7 +62,7 @@ These rules are mandatory and mechanical — follow them exactly, do not improvi
   `llm-wiki` / `obsidian` skills).
 - **Projects** — git repos under `@PROJECT_ROOT@`, origin on
   GitHub (`@GH_OWNER@/...`). ALL durable state lives in git + files on disk and
-  in the conductor's SQLite/libSQL DB — never only in your conversation memory.
+  in the conductor's SQLite DB — never only in your conversation memory.
 
 ## Routing decision tree (apply top-down, first match wins)
 
@@ -296,10 +306,10 @@ Then, in order:
    what remains, the Claude `session_id`.
 2. **Commit whatever Claude left behind** (salvage rules below) so no work
    is lost.
-3. **Re-run on OpenCode (free tier)** in the same workdir, using the
-   **strongest FREE** model model-router picked this morning (`pick.json`
-   `.coder`), which the router has already written into the CLI's own config —
-   so you do NOT pass `-m` at all:
+3. **Re-run on OpenCode (free tier)** in the same workdir. The model comes from
+   llm-failover-proxy's strong chain (`llm-fop-strong/auto` in the CLI's own config),
+   so you do NOT pass `-m` at all — the proxy knows which names are live today and
+   a pinned one is exactly how the channel went down with HTTP 503:
    ```
    cd <workdir>   # MUST be inside the git repo — outside a project `opencode run` prints NOTHING and exits 0
    opencode run 'Read .hermes-handoff.md for context, then: <task>. Follow the existing plan exactly; do not redesign.'

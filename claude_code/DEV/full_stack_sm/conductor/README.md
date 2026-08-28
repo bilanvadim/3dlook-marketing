@@ -2,7 +2,7 @@
 
 Автономный дирижёр над Claude Code. Берёт задачи из очереди, прогоняет их через Claude Agent SDK (тот же движок, что и Claude Code), держит безопасность и **durable resume** через circuit breaker, эскалирует человеку в Telegram только когда нужно. **Деньги/бюджет НЕ контролирует** — приоритет качество, единственная защита от runaway — детект зацикливания. Наследует весь marketplace (агенты, CLAUDE.md, settings.json, guard.py) через `settingSources: ['project']`.
 
-Состояние — **SQLite/libSQL** (`@libsql/client`): по умолчанию локальный файл (ноль инфраструктуры), тем же кодом — сетевой libSQL-сервер или Turso Cloud по смене `DATABASE_URL`. Полное описание архитектуры и решений — в `ARCHITECTURE.md`.
+Состояние — **локальный SQLite через `better-sqlite3`**. Не libSQL и не Turso: `@libsql/client` снят после того, как его локальный драйвер отдал соединение каждой `transaction()` и ни одного не закрыл — 33 021 осиротевшее соединение и 5.4 ГБ RSS накопились на опросе ПУСТОЙ очереди, машина ушла в свап, а соседний gateway встал на 24 минуты внутри `os.stat()`. `dbPath()` теперь отвергает удалённые схемы, поэтому сетевой вариант не «доступен по смене DATABASE_URL» — он закрыт намеренно. `DATABASE_URL` обязан быть АБСОЛЮТНЫМ: `file:./ho.db` systemd разрешает относительно `WorkingDirectory`, и воркер открывал не ту базу, которую читают gateway и крон. Полное описание архитектуры и решений — в `ARCHITECTURE.md`.
 
 ## Как это соотносится с marketplace
 - **hermes-marketplace** (слои A+B) = агенты + правила для Claude Code. «Оркестр и партитура».
@@ -18,10 +18,11 @@ cp .env.example .env && $EDITOR .env
 # 2. State — создать/обновить схему (идемпотентно)
 npm install
 sqlite3 ho.db < sql/schema.sql          # для file: ; conductor-run.sh делает это сам при старте
-#   Turso/сетевой libSQL: turso db shell <db> < sql/schema.sql
+#   (сетевой libSQL/Turso не поддерживается — dbPath() отвергает удалённые схемы)
 
 # 3. Проверка ядра (безопасно, без API/сети)
-npm test                                 # breaker + steploop + steprunner + store (libSQL smoke)
+npm test                                 # 168 тестов: breaker/steploop/steprunner/store/backoff/
+#                                          signature/askgate/callback/heartbeat/profiles
 
 # 4. Запуск воркера
 npm start
@@ -56,7 +57,11 @@ npm start
 
 ## Безопасность
 - `permissionMode: acceptEdits` — пишет код сам, но опасные shell-команды остаются под нашим `guard.py` из marketplace и превращаются в эскалации. **Никогда `bypassPermissions`** в автономе.
-- `DATABASE_URL`: для `file:` — просто путь к файлу (держи вне образа/репо); для Turso/libSQL — URL с authToken, только server-side, через `--env-file`.
+- `DATABASE_URL`: только `file:` и только АБСОЛЮТНЫЙ путь, вне образа и вне репозитория
+  (`file:$HOME/.hermes/ho.db`). Относительный `file:./ho.db` systemd разрешает относительно
+  `WorkingDirectory` — так воркер однажды открыл не ту базу, которую читают gateway и крон, и
+  бесконечно опрашивал пустую очередь без единой ошибки. Удалённые схемы (Turso/libSQL) `dbPath()`
+  отвергает намеренно.
 - Полного аудита событий нет (осознанно): храним только статус job/run, `session_id` и последнюю ошибку.
 - Для авто commit+push+deploy нужна git-аутентификация (deploy-токен/SSH-ключ) и подключённая Vercel Git-интеграция.
 
@@ -68,20 +73,23 @@ npm start
 ```
 INTEGRATION.md             контракт Hermes ↔ Fullstack agents (статус-машина, surfaces)
 ARCHITECTURE.md            архитектура и решения
-sql/schema.sql             полная схема (SQLite/libSQL): jobs/runs/escalations/steps/questions + вью
+sql/schema.sql             полная схема (SQLite): jobs/runs/escalations/steps/questions + вью
+sql/migrations/            применённые миграции схемы, с причиной каждой
 src/core/breaker.ts        circuit breaker (чистая логика, тестируемая)
 src/core/steploop.ts       решение per-step цикла (progress-delta/plateau/needs_review) — тестируемое
 src/core/steprunner.ts     оркестрация одного шага (executor→gates→review→runtime→retry) — тестируемая
 src/core/agent-runner.ts   SDK-адаптер для шагов (integration seam)
-src/core/store.ts          доступ к SQLite/libSQL (jobs/runs/steps/questions/status; claim/next-step в транзакциях)
+src/core/store.ts          доступ к SQLite через better-sqlite3 (jobs/runs/steps/questions/status;
+#                          claim/next-step в write-транзакциях, single-writer)
 src/core/conductor.ts      главный цикл: whole-job ИЛИ step-mode (если есть ho_steps) + durable resume
 src/escalation/*           Telegram уведомления + приём решения человека
-test/{breaker,steploop,steprunner,store}.test.ts  юнит-тесты + libSQL store smoke
+test/*.test.ts             168 юнит-тестов (breaker/steploop/steprunner/store/contention/fdleak/
+#                          backoff/signature/askgate/callback/heartbeat/profiles)
 Dockerfile, .env.example
 ```
 
 ## Статус (честно)
 - **Durable resume реализован, но не обкатан на живом SDK.** `session_id` пишется на job сразу; пауза по token/rate-лимиту → `deferred` с backoff → следующий claim продолжает через `resume:`. Упавший процесс ловит `store.recoverStale()`. Сквозной автономный прогон против реального SDK ещё не гонялся.
 - **Деньги не считаем** (осознанно) — ни ledger, ни бюджет.
-- **Single-writer.** SQLite/libSQL — один писатель; для одного дирижёра достаточно. Флот параллельных воркеров = повод вернуть Postgres.
+- **Single-writer.** SQLite — один писатель; для одного дирижёра достаточно. Флот параллельных воркеров = повод вернуть Postgres.
 - Дашборды/observability — нет (осознанно). Приоритизация задач примитивная (priority + FIFO).

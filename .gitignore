@@ -50,3 +50,6 @@ dist/
 **/*.bak
 **/*.bak-*
 **/*.bak.*
+
+# scratch dirs used by ad-hoc test harnesses
+**/.tmp/

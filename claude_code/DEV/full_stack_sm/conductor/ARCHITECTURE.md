@@ -16,7 +16,7 @@
 │ n8n: cron (scout daily) | webhook (новая задача) | вручную│
 └───────────────┬───────────────────────────────────────────┘
                 │ enqueue job
-┌─ STATE (SQLite/libSQL) ────────────────────────────────────┐
+┌─ STATE (SQLite) ───────────────────────────────────────────┐
 │ jobs (resume_session_id) · runs (session_id) · escalations │
 └───────────────┬───────────────────────────────────────────┘
                 │ poll next queued job
@@ -41,7 +41,7 @@
 ```
 
 ## Поток одного прогона (happy path)
-1. n8n кладёт job в libSQL (`status=queued`, тип, промпт, `max_turns`/`max_wall_secs` опц.).
+1. n8n кладёт job в SQLite (`status=queued`, тип, промпт, `max_turns`/`max_wall_secs` опц.).
 2. Воркер сначала `recoverStale()` (переочередь упавших с их `session_id`), затем забирает job атомарно.
 3. Если у job есть `resume_session_id` — продолжаем ту же сессию; иначе старт с нуля.
 4. `query()` с `settingSources:['project']` (наследует marketplace), `permissionMode`, `resume:<session_id>` если есть, системным промптом = роль Fullstack agents из CLAUDE.md.
@@ -83,7 +83,7 @@
   спрашивает снова, до `HO_MAX_ESC_PARKS` раз. Раньше строка помечалась `expired`, кнопки немели, а
   job тихо умирала.
 
-## State-модель (SQLite/libSQL, см. sql/schema.sql) — минимальная, ради resume
+## State-модель (SQLite, см. sql/schema.sql) — минимальная, ради resume
 - `jobs` — очередь задач (queued/claimed/running/paused/done/failed/deferred/escalated/aborted) + `resume_session_id` + `attempts`.
 - `runs` — попытки исполнения job; ключевое поле — `session_id` (для durable resume) + `stop_reason` + `error`.
 - `escalations` — открытые вопросы к человеку + их разрешения.
@@ -92,7 +92,7 @@
 
 ## Почему так (ключевые решения)
 1. **TS, не Python** — стек Sergiy (Next.js/TS), и SDK на TS bundle'ит native Claude Code binary (один npm install).
-2. **SQLite/libSQL как state** — ноль инфраструктуры (локальный файл), тем же кодом → Turso/libSQL для сетевой БД. Claim в write-транзакции; SQLite single-writer, поэтому очередь безопасна без брокера (ценой одного писателя — для одного дирижёра достаточно; флот воркеров = повод вернуть Postgres).
+2. **SQLite как state** — ноль инфраструктуры (локальный файл), тем же кодом → Turso/SQLite для сетевой БД. Claim в write-транзакции; SQLite single-writer, поэтому очередь безопасна без брокера (ценой одного писателя — для одного дирижёра достаточно; флот воркеров = повод вернуть Postgres).
 3. **n8n только как trigger** — не как место бизнес-логики. Логика и лимиты — в коде (тестируемо), n8n дёргает и доставляет уведомления.
 4. **Эскалация через Telegram** — у Sergiy уже есть бот; человек остаётся в петле на дорогих/опасных решениях, но не на рутине.
 5. **Docker-изоляция executor** — его паттерн; дирижёр и Claude Code крутятся в контейнере с смонтированным рабочим репозиторием и без доступа к хостовым секретам.

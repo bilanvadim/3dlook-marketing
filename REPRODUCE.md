@@ -15,15 +15,15 @@ On the fresh VPS:
 ```
 unzip ai-agent-bot-*.zip && cd ai-agent-bot
 cp secrets.env.example secrets.env && nano secrets.env    # bot token + TG API id/hash + keys
-./install.sh                                               # installs everything, binds to your bot, starts it
+bootstrap/install.sh                                       # installs everything, binds to your bot, starts it
 ```
-`install.sh` does it all — prereqs, upstream hermes-agent, path rewrite for this
+`bootstrap/install.sh` does it all — prereqs, upstream hermes-agent, path rewrite for this
 machine, writes+locks your secrets (auto-generates the Fernet/bridge keys),
 scaffolds ops/skills/patches/units, enrols the Telegram session interactively,
 starts the gateway, and verifies **telegram: connected**. Steps needing a human
 (provider OAuth, the SMS login code when non-interactive) are prompted or printed
 as a short TODO list. Fully non-interactive for an agent:
-`./install.sh --secrets secrets.env --yes`.
+`bootstrap/install.sh --secrets secrets.env --yes`.
 
 > The mechanical-only subset (no secrets, no bind) is still available as
 > `bash bootstrap-vps.sh` — it prints a TODO checklist instead of prompting.

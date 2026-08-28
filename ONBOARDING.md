@@ -15,7 +15,7 @@
 ## Контекст (что уже сделано за тебя)
 - Ветка `sergiy_config` (PR #1 → `main`) содержит двухслойную систему поверх оригинала Вадима:
   - **Claude Code** — 6 переключаемых профилей (`dev`, `seo`, `marketing`, `security`, `marketing_vb`, `marketing_vb_sm`), см. `claude_code/DEV/SYSTEMS.md`.
-  - **Hermes** — автономный оркестратор: дирижёр-воркер (Claude Agent SDK) тянет задания из очереди SQLite/libSQL (`ho_*`) и эскалирует в Telegram.
+  - **Hermes** — автономный оркестратор: дирижёр-воркер (Claude Agent SDK) тянет задания из очереди SQLite (`ho_*`, better-sqlite3) и эскалирует в Telegram.
 - **Оригинальная система Вадима не тронута** — она целиком лежит в папке `marketing_vb/` (агенты, команды, `brand-assets/`, `workspace/`, `about-me.md`, `audience.md`, `DESIGN.md`, `CLAUDE.md`, `telegram-bot/`). Ничего в ней не меняй.
 - PR #1 проверен: `main` после мёржа станет байт-в-байт равен `sergiy_config` (fast-forward), контент Вадима только добавляется.
 
@@ -39,9 +39,9 @@ git checkout main && git pull origin main
 
 ## Шаг 3 — Запусти установщик
 ```bash
-./install.sh --user vadim --home /home/vadim
+bootstrap/install.sh --user vadim_prod --home /home/vadim_prod
 ```
-`install.sh` **никогда не запускает sudo** — он готовит файлы (создаёт `conductor/.env` из примера, применяет libSQL-схему в `ho.db`, рендерит systemd-юниты в `hermes_agent/ops/systemd/generated/`) и **печатает** привилегированные команды. Запиши, что он напечатал, — понадобится на шаге 6.
+`bootstrap/install.sh` **никогда не запускает sudo** — он готовит файлы (создаёт `conductor/.env` из примера, применяет SQLite-схему в `ho.db` (better-sqlite3; libSQL снят), рендерит systemd-юниты в `hermes_agent/ops/systemd/generated/`) и **печатает** привилегированные команды. Запиши, что он напечатал, — понадобится на шаге 6.
 
 ## Шаг 4 — Настрой `conductor/.env` (привязка к Telegram)
 Файл: `claude_code/DEV/full_stack_sm/conductor/.env`. Выстави:
@@ -55,7 +55,7 @@ git checkout main && git pull origin main
 ## Шаг 5 — Прогони тесты дирижёра
 ```bash
 cd claude_code/DEV/full_stack_sm/conductor
-npm ci && npm test          # unit + libSQL smoke, без сети/API
+npm ci && npm test          # 168 тестов: breaker/store/profiles/askgate, без сети/API
 cd -
 ```
 

@@ -43,7 +43,7 @@ flowchart TB
     end
 
     subgraph L2["② Conductor — autonomous A→Z runner (optional)"]
-      Q[("ho_* queue<br/>SQLite / libSQL")]
+      Q[("ho_* queue<br/>SQLite (better-sqlite3)")]
       W["worker: claim job → Agent SDK loop<br/>durable resume · ASK-gate"]
     end
 
@@ -90,9 +90,19 @@ TS service over the Claude **Agent SDK**. Pulls a job, runs the per-step loop
 (executor → reviewer → runtime → git), **durable resume**, escalates ASK-actions
 (merge / destructive SQL / db push / terraform) to Telegram. **No cost cap** by
 design — only a loop-detecting circuit breaker.
-**State = SQLite/libSQL** (`@libsql/client`; default `file:./ho.db`, or Turso by
-changing `DATABASE_URL` — **no Postgres**): tables `ho_jobs` `ho_runs` `ho_steps`
-`ho_questions` `ho_escalations` + views `ho_project_status` `ho_job_progress`.
+**State = local SQLite via `better-sqlite3`** — **no libSQL, no Turso, no Postgres**.
+`@libsql/client` was removed after its local driver handed a connection to every
+`transaction()` and never closed it: 33 021 orphaned connections and 5.4 GB RSS
+accumulated while polling an EMPTY queue, which pushed the whole box into swap and
+stalled the neighbouring gateway for 24 minutes. `dbPath()` now rejects remote schemes
+outright.
+
+`DATABASE_URL` **must be absolute** (`file:%h/.hermes/ho.db`). It was `file:./ho.db`,
+and systemd resolves a relative value against `WorkingDirectory` — so when a drop-in
+moved the runtime, the worker opened a different database from the one the gateway and
+the cron monitor read: a conductor polling an empty queue forever, with no error
+anywhere. Tables `ho_jobs` `ho_runs` `ho_steps` `ho_questions` `ho_escalations` + views
+`ho_project_status` `ho_job_progress`.
 Claim/next-step/recover run as single-writer write-transactions in `store.ts`.
 
 ## Layer ③ — Claude Code: the 6 systems (profiles)
@@ -162,10 +172,25 @@ decides *on-brand & true* (voice, claims, QC) — see the `marketing-vb-sm` skil
 
 ## Get started
 ```bash
-./install.sh                     # checks, prepares Conductor (libSQL), renders systemd
-claude_code/DEV/switch-profile.sh marketing_vb_sm   # then restart Claude Code
+cp config/profiles/vadim_prod.vars config/profiles/$USER.vars   # then edit the PORTS
+bootstrap/install.sh                                            # idempotent; also the repair tool
+bootstrap/verify.sh                                             # 0 green · 1 a real failure · 2 warnings
+claude_code/DEV/switch-profile.sh marketing_vb                  # then restart Claude Code
 ```
-Full setup → [INSTALL.md](INSTALL.md) · systems guide → [claude_code/DEV/SYSTEMS.md](claude_code/DEV/SYSTEMS.md) · Conductor internals → [conductor/ARCHITECTURE.md](claude_code/DEV/full_stack_sm/conductor/ARCHITECTURE.md).
+There used to be a second installer at `./install.sh`, and this section pointed at it while
+the top of this file pointed at `bootstrap/install.sh`. The two disagreed: the legacy one
+still spoke of "Conductor (libSQL)" — a driver removed after it leaked a connection per
+transaction and OOM-killed the machine — and told you to overwrite a SYSTEM-scope
+`hermes-conductor.service`, which on this host belongs to the other account and would put
+two workers on one queue. It is retired; see `docs/history/RETIRED-legacy-installer.md`.
+
+**Edit the ports before installing.** This VPS is shared with another account running the
+same stack, and a busy port produces no error — `llmfp` binds the next free one instead.
+That is not hypothetical: on 2026-08-27 an orphaned proxy took `:47832`, the real strong
+instance moved to `:47833`, and Hermes' heavy mode plus every OpenCode fallback talked to
+the wrong process for 21 hours with nothing logged anywhere.
+
+Full setup → [docs/INSTALL.md](docs/INSTALL.md) · systems guide → [claude_code/DEV/SYSTEMS.md](claude_code/DEV/SYSTEMS.md) · Conductor internals → [conductor/ARCHITECTURE.md](claude_code/DEV/full_stack_sm/conductor/ARCHITECTURE.md) · the proxy every answer goes through → [llmfp_proxy/README.md](llmfp_proxy/README.md).
 
 > ### ⚠️ Run the marketing profiles **from inside `marketing_vb/`**
 > The `mvb-*` agents read brand context by **relative path** (`about-me.md`,

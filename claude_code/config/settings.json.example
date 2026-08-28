@@ -1,29 +1,78 @@
 {
-  "_comment": "Copy to ~/.claude/settings.json. 'enabledPlugins' is rewritten by DEV/switch-profile.sh — this shows the default (full_stack_sm) active set. Replace YOUR_USER in the marketplace paths (they must be absolute). The 'test' system (ai-agents-mvb*) points at the repo-captured copies.",
   "model": "opus[1m]",
-  "effortLevel": "xhigh",
-  "theme": "dark-daltonized",
-  "tui": "default",
-  "skipDangerousModePermissionPrompt": true,
   "enabledPlugins": {
-    "hermes-core@full_stack_sm": true,
-    "hermes-design@full_stack_sm": true,
-    "hermes-frontend@full_stack_sm": true,
-    "hermes-backend@full_stack_sm": true,
-    "hermes-data@full_stack_sm": true,
-    "hermes-platform@full_stack_sm": true,
-    "hermes-quality@full_stack_sm": true,
-    "hermes-sre@full_stack_sm": true,
-    "hermes-scout@full_stack_sm": true,
-    "hermes-verify@full_stack_sm": true,
-    "hermes-ecc@full_stack_sm": true
+    "mvb-core@ai-agents-mvb": true,
+    "mvb-social@ai-agents-mvb": true,
+    "mvb-seo@ai-agents-mvb": true,
+    "mvb-outbound@ai-agents-mvb": true
   },
   "extraKnownMarketplaces": {
-    "full_stack_sm":        { "source": { "source": "directory", "path": "/srv/YOUR_USER/ai-agents-config/claude_code/DEV/full_stack_sm" } },
-    "seo_sm":        { "source": { "source": "directory", "path": "/srv/YOUR_USER/ai-agents-config/claude_code/DEV/seo_sm" } },
-    "marketing_sm":  { "source": { "source": "directory", "path": "/srv/YOUR_USER/ai-agents-config/claude_code/DEV/marketing_sm" } },
-    "security_sm":   { "source": { "source": "directory", "path": "/srv/YOUR_USER/ai-agents-config/claude_code/DEV/security_sm" } },
-    "ai-agents-mvb":    { "source": { "source": "directory", "path": "/srv/YOUR_USER/ai-agents-config/claude_code/DEV/marketing_vb" } },
-    "ai-agents-mvb-sm": { "source": { "source": "directory", "path": "/srv/YOUR_USER/ai-agents-config/claude_code/DEV/marketing_vb_sm" } }
+    "ai-agents-config": {
+      "source": {
+        "source": "directory",
+        "path": "@PROJECT_ROOT@/claude_code/DEV/full_stack_sm"
+      }
+    },
+    "ai-agents-mvb": {
+      "source": {
+        "source": "directory",
+        "path": "@PROJECT_ROOT@/claude_code/DEV/marketing_vb"
+      }
+    },
+    "ai-agents-mkt": {
+      "source": {
+        "source": "directory",
+        "path": "@PROJECT_ROOT@/claude_code/DEV/marketing_sm"
+      }
+    },
+    "ai-agents-mvb-sm": {
+      "source": {
+        "source": "directory",
+        "path": "@PROJECT_ROOT@/claude_code/DEV/marketing_vb_sm"
+      }
+    },
+    "ai-agents-sbx": {
+      "source": {
+        "source": "directory",
+        "path": "@PROJECT_ROOT@/claude_code/DEV/sandbox_sm"
+      }
+    }
+  },
+  "effortLevel": "xhigh",
+  "tui": "fullscreen",
+  "skipDangerousModePermissionPrompt": true,
+  "skipWorkflowUsageWarning": true,
+  "theme": "auto",
+  "autoMode": {
+    "soft_deny": [
+      "$defaults",
+      "Bash(shred:*) in @HOME@ — irreversible local destruction of files, frequently seen alongside secrets-related paths in this project"
+    ],
+    "environment": [
+      "### Org-wide",
+      "**Organization**: None configured",
+      "**Cloud provider(s)**: None configured",
+      "**Repository visibility**: assume private unless the remote host and repo name indicate otherwise, or a visibility check in the transcript shows public",
+      "**Internal sharing / snippet hosting**: None configured — treat public paste/gist services as outside the trust boundary",
+      "**Secrets management**: None configured",
+      "**Default / protected branches**: not queryable — no git remote configured for this repo",
+      "**CI/CD deploy targets**: None configured",
+      "**Network posture**: None configured",
+      "**Source control**: The trusted repo only — no remotes are configured",
+      "**Trusted internal domains**: None configured",
+      "**Trusted cloud buckets**: None configured",
+      "**Key internal services**: None configured",
+      "**Internal package registry**: None configured",
+      "**Sensitive data locations & audiences**: any file or store holding personal data, confidential business data, credentials, regulated data, or similarly sensitive material; preserve exact handles when known and share only with audiences cleared at the [named+specifics] bar — note: this project contains numerous secrets-related paths (e.g. .hermes/.env, .hermes/backups/*/secrets.env, .config/ai-agent-stack/secrets.env, .cache/hermes-install/ai-agent-bot/secrets.env.example, .claude/.credentials.json) that must never be read into context, committed, or transmitted",
+      "**Data retention / declassification**: None configured",
+      "**Sensitive remote targets**: any namespace, host, or container whose name carries `prod` or `production` as a whole word or name segment (hyphen/underscore/dot-delimited — e.g. matches `prod-db`, not `producer`)",
+      "**Protected deployment namespaces / environments**: None configured — fall back to the Sensitive remote targets heuristic",
+      "**Protected IaC scopes**: IAM, RBAC, networking, quota, and node-pool resources; anything whose name or tag carries `prod` or `production` as a whole word or name segment",
+      "### User-specific",
+      "**Primary use of Claude Code**: software development",
+      "**Trusted repo**: The git repository at @HOME@ (its working directory) — no remotes are configured, so scope is limited to local work in this checkout",
+      "**Org-specific CLIs**: None configured — note: hermes appears frequently in this project's shell history and transcripts but no organizational affiliation was found",
+      "and any \"routine under <user>/ prefix\" qualifiers: none found"
+    ]
   }
 }

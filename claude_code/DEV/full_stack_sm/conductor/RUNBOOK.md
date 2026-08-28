@@ -2,7 +2,7 @@
 
 Autonomous worker that runs the full_stack_sm/seo_sm/marketing_sm/security_sm systems
 over the Claude Agent SDK, with a circuit breaker, durable resume, and Telegram
-escalations. State = SQLite/libSQL (`ho_*` tables). **Live-verified 2026-07-18.**
+escalations. State = local SQLite via better-sqlite3 (`ho_*` tables); libSQL/Turso removed. **Live-verified 2026-07-18.**
 
 ## Run (systemd --user, like hermes-gateway)
 

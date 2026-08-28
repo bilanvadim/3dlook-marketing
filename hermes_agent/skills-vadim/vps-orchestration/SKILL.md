@@ -1,6 +1,6 @@
 ---
 name: vps-orchestration
-description: "Vadim's VPS orchestration policy: pick the right Claude Code system (dev / marketing_vb_sm / marketing_vb / marketing / seo / security), route ALL coding/analysis/document work to Claude Code, failover to OpenCode (free `opencode/*`, the daily model-router pick) on Claude limits, salvage git state, drive + monitor the Fullstack agents conductor pipeline (ho_* in SQLite/libSQL), relay questions/escalations, report to Telegram. Read this BEFORE delegating any technical task."
+description: "Vadim's VPS orchestration policy: pick the right Claude Code system (dev / marketing_vb_sm / marketing_vb / marketing / seo / security), route ALL coding/analysis/document work to Claude Code, failover to OpenCode (free, via llm-failover-proxy's strong chain) on Claude limits, salvage git state, drive + monitor the Fullstack agents conductor pipeline (ho_* in local SQLite), relay questions/escalations, report to Telegram. Read this BEFORE delegating any technical task."
 version: 2.0.0
 author: Вадим + Claude
 license: MIT
@@ -25,8 +25,12 @@ These rules are mandatory and mechanical — follow them exactly, do not improvi
 - **Claude Code** (`claude` CLI) — PRIMARY executor. Strongest brain. On a
   subscription with usage limits that reset after a few hours.
 - **OpenCode** (`opencode` CLI, opencode.ai) — FALLBACK code executor when Claude
-  hits its API/usage limit. Runs FREE: provider prefix `opencode/*`, on the
-  strongest free model model-router picks each morning (`pick.json` `.coder`),
+  hits its API/usage limit. Runs FREE through **llm-failover-proxy's strong chain**:
+  `opencode.jsonc` sets `model` AND `small_model` to `llm-fop-strong/auto`, so the
+  PROXY picks per request by failover and hedging.
+  ⚠️ This used to read "provider prefix `opencode/*`, on the strongest free model
+  model-router picks each morning (`pick.json` `.coder`)". That selector was DELETED on
+  2026-08-26 — no `pick.json`, no `.coder` — and pinning a prefix bypasses the chain,
   already written into `~/.config/opencode/opencode.jsonc` — so invoke it WITHOUT
   `-m`, from inside the repo. Executes well-specified steps; do NOT let it
   redesign architecture. (Gemini CLI is only an emergency last resort if OpenCode
@@ -41,7 +45,10 @@ These rules are mandatory and mechanical — follow them exactly, do not improvi
   (ad-hoc) or to the conductor (A→Z projects) and IT dispatches roles.
 - **Conductor** — the autonomous pipeline that runs the Fullstack agents over
   the Claude **Agent SDK** on this VPS (source `~/3dlook-marketing/claude_code/DEV/full_stack_sm/conductor`).
-  State lives in **SQLite/libSQL** (`@libsql/client`; default local file
+  State lives in **local SQLite via `better-sqlite3`** (libSQL/Turso removed: the driver
+  leaked a connection per transaction, 5.4 GB while polling an EMPTY queue; `dbPath()`
+  rejects remote schemes. `DATABASE_URL` must be an ABSOLUTE `file:` path — a relative one
+  resolves against the unit's WorkingDirectory and opens a different database). Local file
   `~/.hermes/ho.db`, or Turso/libSQL for a networked DB — read it with
   `sqlite3`): tables `ho_jobs`, `ho_steps`, `ho_questions`, `ho_escalations`,
   views `ho_project_status` / `ho_job_progress`. A worker claims jobs
@@ -66,7 +73,7 @@ These rules are mandatory and mechanical — follow them exactly, do not improvi
   `llm-wiki` / `obsidian` skills).
 - **Projects** — git repos under `/home/vadim_prod`, origin on
   GitHub (`bilanvadim/...`). ALL durable state lives in git + files on disk and
-  in the conductor's SQLite/libSQL DB — never only in your conversation memory.
+  in the conductor's SQLite DB — never only in your conversation memory.
 
 ## Routing decision tree (apply top-down, first match wins)
 
@@ -461,7 +468,7 @@ OAuth-сессия не восстановится никогда — нужен
    `.hermes-handoff.md` → коммит несохранённого → `opencode run` в репозитории).
 3. **Скажи Вадиму, что делать**, а не пересылай текст ошибки: «Claude Code
    разлогинился, выполни `/login` в терминале Claude Code — продолжаю на
-   запасном кодере `<pick.coder_ref>`».
+   запасном кодере (OpenCode, сильная цепочка прокси)».
 Бот делает это сам на своём пути (`claude_switcher._auth_help`); это правило —
 для случая, когда ты вызываешь `claude -p` своим терминалом.
 
@@ -473,19 +480,21 @@ Then, in order:
 2. **Commit whatever Claude left behind** (salvage rules below) so no work
    is lost.
 3. **Re-run on OpenCode (free tier)** in the same workdir, using the
-   **strongest FREE** model model-router picked this morning (`pick.json`
+   model chosen by llm-failover-proxy's strong chain (formerly `pick.json`
    `.coder`), which the router has already written into the CLI's own config —
    so you do NOT pass `-m` at all:
    ```
    cd <workdir>   # MUST be inside the git repo — outside a project `opencode run` prints NOTHING and exits 0
    opencode run 'Read .hermes-handoff.md for context, then: <task>. Follow the existing plan exactly; do not redesign.'
    ```
-   The stack is fully free now: the paid `opencode-go/*` tier is retired, free
-   models live under the `opencode/*` prefix, and `~/.config/opencode/opencode.jsonc`
-   (`model` + `small_model`, both refreshed daily) points at today's pick. If
-   `opencode` isn't on PATH use `~/.opencode/bin/opencode`.
-   Note the coder's model is NOT the same as Hermes' own: Hermes needs vision for
-   screenshots, the coder just needs to be the strongest free model.
+   The stack is fully free. `~/.config/opencode/opencode.jsonc` sets BOTH `model` and
+   `small_model` to `llm-fop-strong/auto` — the proxy's strong chain — so nothing here is
+   "refreshed daily" any more and you never pass `-m`. Both must stay free: OpenCode
+   generates a session title with `small_model` before every run, and a paid one returns
+   401 CreditsError, which kills the run with exit 0 and EMPTY stdout. If `opencode` is
+   not on PATH use `~/.opencode/bin/opencode`.
+   Hermes' own model is a different question: vision for screenshots comes from the
+   proxy's `auto - Vision` list, not from the coder's chain.
    If a run prints nothing: check `opencode auth list` shows **OpenCode Zen**, and
    that `small_model` in that config is a FREE model — OpenCode titles every
    session with its built-in `gpt-5-nano`, which is paid and 401s with
@@ -506,19 +515,29 @@ Then, in order:
 > failover above for **ad-hoc** (non-conductor) Claude runs, and you supervise
 > conductor jobs stuck in `deferred` (report "waiting on limits").
 
-## Heavy mode — предложи сильную модель, спроси разрешение вернуться
+## Heavy mode — предложи сильную цепочку; возврат автоматический
 
-Ты работаешь на **быстрой бесплатной модели с vision** (скриншоты из Telegram).
-Она слабая. Каждое утро model-router отдельно выбирает **сильную** модель
-(`pick.json` → `.coder` + `.coder_provider`, победитель по скорости среди топ-3
-бесплатных провайдеров) — и ты можешь одолжить её себе на одну тяжёлую задачу.
+Разрешение нужно только на ВКЛЮЧЕНИЕ. Возврат на агентную цепочку бот делает САМ,
+без вопроса: когда тема сменилась, после 30 минут без движения по задаче или через
+12 ходов. Так и должно быть — у моделей сильной цепочки жёсткие суточные лимиты, а
+неотвеченный вопрос оставлял бы её включённой до конца дня. Спокойное состояние
+системы обязано быть дешёвым.
+
+Ты работаешь на **агентной цепочке прокси** (список «for agent AI»); картинки читает
+отдельная цепочка `auto - Vision`. Для тяжёлой задачи есть **сильная цепочка** —
+второй инстанс llm-failover-proxy («Reasoning ai models»), и ты можешь одолжить её
+себе на одну задачу.
+
+⚠️ Здесь раньше было написано, что сильную модель «каждое утро выбирает model-router»
+через `pick.json` → `.coder`. Тот селектор удалён 26.08.2026: выбор модели живёт
+ТОЛЬКО внутри прокси, а утренний таймер лишь возвращает активный список на агентный.
 
 Правила, механические:
 
 1. **Задача тяжёлая → ПРЕДЛОЖИ, не переключайся молча.** Тяжёлое — это
    проектирование/архитектура, поиск первопричины бага, рефакторинг, план
    проекта, сравнение подходов, разбор длинного брифа. Скажи прямо:
-   «Задача тяжёлая для повседневной модели. Включить сильную — `<pick.coder>`?
+   «Задача тяжёлая для повседневной модели. Включить сильную цепочку?
    Нажми кнопку ниже или отправь `/heavy`» — и **жди добро** (разрешение нужно
    только на ВКЛЮЧЕНИЕ; выключение автоматическое). Бот сам покажет
    кнопку «⚡ Включить сильную модель», когда увидит такую задачу; если он
@@ -557,7 +576,7 @@ any executor.
 
 ## Conductor pipeline: start + monitor (project A→Z)
 
-The conductor reads jobs from its SQLite/libSQL state and runs the Fullstack agents over the
+The conductor reads jobs from its SQLite state and runs the Fullstack agents over the
 Agent SDK. Your job is to seed a well-formed job, then relay + report.
 
 > ⚠️ **Только по прямому указанию Вадима.** Ничего из этой секции не начинается
@@ -728,7 +747,7 @@ autonomy; surface findings and let him decide.
 1. You never write project code, designs, or analysis deliverables yourself.
 2. Architecture and planning happen ONLY on Claude Code — never on the fallback executor (OpenCode/Gemini).
 3. No force-push. No merges без Вадима. No secrets in commits.
-4. Durable state lives on disk (git + files) and in the conductor SQLite/libSQL DB.
+4. Durable state lives on disk (git + files) and in the conductor SQLite DB.
    Re-read from those instead of trusting your memory of a past conversation.
 5. One clarifying question when the target project is ambiguous; otherwise act.
 6. Never fake progress: if the conductor worker is down or a job is stuck with
