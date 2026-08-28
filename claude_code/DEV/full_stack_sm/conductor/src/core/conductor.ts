@@ -420,15 +420,25 @@ async function notifyEscalationWaiting(
 /** Pre-run recovery point. autocommit.py deliberately skips main/master and these repos work on
  * main, so an autonomous run had nothing to roll back to. The pattern guards stop an `rm -rf`,
  * but a delete inside an allowed python3 script is invisible to them — only a snapshot taken
- * before the agent starts covers that. Writes refs/hermes/snapshots/job-<id> without touching
- * HEAD, the branch, the index or the working tree. Never fatal: a job must still run if the
- * snapshot fails. */
+ * before the agent starts covers that. Never fatal: a job must still run if the snapshot fails.
+ *
+ * THE ATTEMPT NUMBER IS PART OF THE REF, and that is the whole point. The ref used to be
+ * refs/hermes/snapshots/job-<id> alone, so every resume OVERWROTE it with the tree as it
+ * stood AFTER the previous attempt's work. For a job that defers on a rate limit and
+ * resumes — the normal case on a free-tier chain, and precisely the long job you would
+ * want to roll back — the pre-job tree was gone, replaced by a "rollback point" that
+ * already contains the changes you are trying to undo. It reported success each time.
+ *
+ * One ref per attempt keeps the original as -a1 and makes each attempt's work readable:
+ *   git diff refs/hermes/snapshots/job-42-a1 refs/hermes/snapshots/job-42-a2
+ */
 async function snapshotWorkTree(job: Job): Promise<void> {
   const script = process.env.HO_SNAPSHOT_SH
     ?? (process.env.HERMES_REPO_ROOT ? `${process.env.HERMES_REPO_ROOT}/hermes_agent/ops/conductor-snapshot.sh` : '');
   if (!script) { console.warn(`[snapshot] job ${job.id}: no HERMES_REPO_ROOT / HO_SNAPSHOT_SH — skipped`); return; }
   try {
-    const { stdout } = await promisify(execFile)(script, [job.work_dir, String(job.id)], { timeout: 120_000 });
+    const { stdout } = await promisify(execFile)(
+      script, [job.work_dir, String(job.id), String(job.attempts ?? 1)], { timeout: 120_000 });
     const line = stdout.trim();
     if (line) console.log(line);
   } catch (e) {

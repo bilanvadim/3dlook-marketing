@@ -99,7 +99,6 @@ _HEAVY_MAX_IDLE_S = 1800.0    # 30 min without anything on-topic = task is done
 # Сколько живёт проигнорированное предложение вернуться на агентную цепочку:
 # достаточно коротко, чтобы сильная не держалась часами по инерции, и достаточно
 # долго, чтобы один игнор не породил второе предложение на следующем сообщении.
-_HEAVY_RETURN_ASK_GAP_S = 900.0
 
 # Russian/English filler that says nothing about the topic. Kept small on purpose:
 # over-filtering makes every message look off-topic and would bounce heavy mode off
@@ -1664,10 +1663,14 @@ async def heavy_on(runner: Any, source: Any, key: str,
                        "topic": _content_words(task_text or _HEAVY_LAST_MSG.get(key, "")),
                        "turns": 0, "misses": 0, "last_hit": time.monotonic()}
         logger.info("csw: heavy mode ON tab=%s → strong chain %s", key, STRONG_CHAIN_URL)
+        # Say what actually happens. This used to promise "спрошу про возврат", and it
+        # did ask — which meant an unanswered question left the strong chain armed for
+        # the rest of the day. It now returns on its own; the message has to match.
         return ("⚡ Тяжёлый режим: сильная цепочка llm-fop (список A).\n"
                 "Модель на каждый запрос выбирает цепочка — перебором и "
-                "хеджированием. Спрошу про возврат на агентную, когда увижу, что "
-                "задача закрыта.")
+                "хеджированием. Верну на агентную САМ, без вопросов: когда тема "
+                "сменится, после 30 минут без движения по задаче или через 12 ходов. "
+                "Понадобится снова — /heavy.")
     if not sm:
         return ("⚠️ Сильная цепочка прокси не отвечает — тяжёлый режим включить не могу.\n"
                 f"Проверь: <code>{STRONG_CHAIN_URL}</code> и "
@@ -1762,19 +1765,30 @@ _HEAVY_LAST_MSG: Dict[str, str] = {}   # tab key -> last inbound text (the task 
 
 async def maybe_auto_return(runner: Any, source: Any, key: str,
                             session_key: str, text: str) -> bool:
-    """Judge this message against the heavy task and offer to go back when the work
-    has moved on. Always returns False — see below.
+    """Judge this message against the heavy task and RETURN to the cheap chain when
+    the work has moved on. Returns True when it switched.
 
-    It OFFERS and never switches on its own: staying on the strong chain for a task
-    that merely LOOKS light is a legitimate choice, and a silent downgrade would
-    overrule it. An ignored offer is re-made after _HEAVY_RETURN_ASK_GAP_S. The
-    rules below decide when to ask, in order of how strongly they say "done":
-      * a substantive message that shares almost nothing with the running task →
-        he switched to something else, return immediately;
-      * 30 minutes without anything on-topic → the task died quietly;
+    IT SWITCHES, IT DOES NOT ASK — reversed 2026-08-28.
+
+    It used to only offer, on the reasoning that "staying on the strong chain for a
+    task that merely LOOKS light is a legitimate choice, and a silent downgrade would
+    overrule it", and it re-asked every 15 minutes. Two problems with
+    that. The rationale was written for the OTHER account's owner, and more
+    importantly the trade is asymmetric: re-enabling costs one word (`/heavy`), while
+    an offer nobody answers leaves the strong chain armed indefinitely — and its
+    models are the ones with hard daily quotas. Every ceiling below was therefore
+    advisory, which is the same as absent.
+
+    The idle state of this system has to be the cheap one. So: switch, say so, and
+    say how to come back.
+
+    Rules, in order of how strongly they say "done":
+      * a substantive message sharing almost nothing with the running task → the
+        subject changed, return now;
+      * 30 minutes with nothing on-topic → the task died quietly;
       * 12 turns → a ceiling, so a drifting conversation cannot hold the strong
         model forever.
-    Short acks ("ок", "спасибо") never trigger the switch by themselves — they are
+    Short acks ("ок", "спасибо") never trigger a return by themselves — they are
     ambiguous — but they do age the idle timer."""
     st = _HEAVY.get(key)
     if not st:
@@ -1797,30 +1811,23 @@ async def maybe_auto_return(runner: Any, source: Any, key: str,
         reason = f"уже {st['turns']} ходов на сильной модели"
     else:
         return False
-    # ASK, do not switch. Sergiy's rule changed: he may deliberately stay on the
-    # strong chain even when the work looks light, and a silent downgrade would take
-    # that choice away mid-task. So offer — and if he stays, ASK AGAIN later rather
-    # than either nagging every turn or giving up after one refusal (ignoring an
-    # offer is not the same as saying "never").
-    now = time.monotonic()
-    asked_at = float(st.get("return_asked_at") or 0)
-    if asked_at and (now - asked_at) < _HEAVY_RETURN_ASK_GAP_S:
-        return False                      # offer still fresh — do not repeat it
-    st["return_asked_at"] = now
-    st["return_asks"] = int(st.get("return_asks", 0)) + 1
-    again = "" if st["return_asks"] == 1 else " (спрашиваю снова)"
-    logger.info("csw: heavy mode RETURN OFFERED tab=%s (%s) попытка %d",
-                key, reason, st["return_asks"])
+    # SWITCH. See the docstring for why this is no longer a question.
+    label = st.get("label", "сильной модели")
+    logger.info("csw: heavy mode OFF (auto) tab=%s (%s) turns=%s", key, reason, st.get("turns"))
+    try:
+        await heavy_off(runner, source, key, session_key)
+    except Exception:
+        logger.debug("csw: auto heavy_off failed", exc_info=True)
+        return False
     try:
         await _send_reply_kb(
             runner, source,
-            f"↩️ {reason}{again}. Вернуться на агентную цепочку (список B — "
-            f"быстрые модели)? Сейчас работаю на {st.get('label','сильной модели')}.\n"
-            "Останешься на сильной — просто продолжай, переспрошу позже.",
-            _heavy_kb(True))
+            f"↩️ Вернулся на агентную цепочку — {reason}. Работал на {label}.\n"
+            "Нужна сильная снова — /heavy или кнопка ниже.",
+            _heavy_kb(False))
     except Exception:
-        logger.debug("csw: return offer failed", exc_info=True)
-    return False                          # nothing switched — the choice is his
+        logger.debug("csw: auto-return note failed", exc_info=True)
+    return True                           # switched
 
 
 # Both live in the config repo, not in ~/.hermes, so they follow HERMES_REPO_ROOT.
