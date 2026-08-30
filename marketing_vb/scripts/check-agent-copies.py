@@ -23,6 +23,14 @@ which one answers to the name is a coin toss. That is exactly how the
 `brand-checker` collision happened, where a bare name reached the shallow social
 agent and the deep fact-checker never ran.
 
+Comparing copies against each other only catches DIVERGENCE. It is blind to a copy
+that is simply GONE — with one location missing, the survivors still agree and the
+check stays green. On 2026-08-28 `marketing_vb/.claude/plugins/mvb-core/0.2.0/` was
+deleted whole and five agents sat in two places out of three for two days while this
+script reported success every morning. So presence is now checked as well: every
+agent must exist in all three ROOTS. Measured 2026-08-30, all 28 do, so the strict
+rule costs nothing today and fires the moment a location disappears.
+
 This script does not fix anything: an automatic merge here would silently pick a
 winner, which is the failure it exists to prevent. It reports, and a human
 decides which side is right.
@@ -34,7 +42,7 @@ is meant for the cron run — a log nobody opens is not an alert. Deduped on the
 CONTENT of the drift, not on "drift exists": the same unresolved divergence stays
 quiet day after day, while a NEW one gets through immediately. Fixing everything
 clears the marker, so the next regression alerts again on its own.
-Exit: 0 all copies agree · 1 drift found (details on stdout) · 3 setup broken.
+Exit: 0 all copies present and equal · 1 drift and/or a missing copy · 3 setup broken.
 """
 from __future__ import annotations
 
@@ -56,6 +64,22 @@ ROOTS = [
     os.path.join(PROJ, ".claude", "plugins"),
     os.path.join(PROJ, ".claude", "agents"),
 ]
+# Parallel to ROOTS, in the same order — used to name the location an agent is
+# missing from. A path alone does not say what that location is FOR.
+ROOT_LABELS = [
+    "DEV-источник (marketplace)",
+    "установленный плагин",
+    "проектная копия",
+]
+
+
+def root_of(path: str):
+    """Which ROOT a found file belongs to. The roots do not nest, so the first
+    prefix match is the only one."""
+    for i, root in enumerate(ROOTS):
+        if path.startswith(root + os.sep):
+            return i
+    return None
 
 
 def digest(path: str) -> str:
@@ -129,21 +153,48 @@ def main(argv=None) -> int:
     args = argv if argv is not None else sys.argv[1:]
     quiet = "--quiet" in args
     want_notify = "--notify" in args
+
+    # A whole ROOT being gone is one fact, not N missing agents — report it once
+    # and drop it from what the per-agent presence check expects, so a single
+    # mis-set path cannot bury the real findings under 28 identical lines.
+    expect = [i for i, root in enumerate(ROOTS) if os.path.isdir(root)]
+    gone_roots = [i for i in range(len(ROOTS)) if i not in expect]
+
     found = collect()
     if not found:
         print("⚠️ ни одного агента не найдено — проверь пути в ROOTS")
         return 3
 
-    drift, single = [], []
+    drift, missing = [], []
     for name, paths in sorted(found.items()):
-        if len(paths) == 1:
-            single.append((name, paths[0]))
-            continue
+        have = {root_of(p) for p in paths}
+        gaps = [i for i in expect if i not in have]
+        if gaps:
+            missing.append((name, gaps))
         by_hash = defaultdict(list)
         for p in paths:
             by_hash[digest(p)].append(p)
         if len(by_hash) > 1:
             drift.append((name, by_hash))
+
+    for i in gone_roots:
+        print(f"⚠️ локация отсутствует целиком: {ROOT_LABELS[i]} "
+              f"({os.path.relpath(ROOTS[i], REPO)})\n")
+
+    if missing:
+        print(f"❌ ПРОПАЖА у {len(missing)} агент(ов) — копия есть не везде:\n")
+        for name, gaps in missing:
+            print(f"  {name}")
+            for i in gaps:
+                print(f"    нет в: {ROOT_LABELS[i]}  "
+                      f"({os.path.relpath(ROOTS[i], REPO)})")
+            print()
+        print("Сравнение копий друг с другом это НЕ ловит — оно про разное содержимое, "
+              "а не про исчезнувшую локацию. Так 2026-08-28 целиком пропал "
+              "marketing_vb/.claude/plugins/mvb-core/0.2.0/: пять агентов остались в двух "
+              "местах из трёх, а чек двое суток был зелёным. Вернуть копию "
+              "(git checkout HEAD -- <путь>), потом СВЕСТИ содержимое — восстановленный "
+              "файл почти наверняка отстал от остальных.\n")
 
     if drift:
         print(f"❌ РАСХОЖДЕНИЕ в {len(drift)} агент(ах) — одно имя, разное содержимое:\n")
@@ -156,15 +207,32 @@ def main(argv=None) -> int:
         print("Ни одна копия не считается по умолчанию правильной — сравни построчно "
               "(diff) и реши, какая сторона новее ПО КАЖДОМУ правилу. Слепая перезапись "
               "в любую сторону теряет настоящие правки: так уже было 2026-08-26.")
+
+    if drift or missing or gone_roots:
         if want_notify:
-            names = ", ".join(n for n, _ in drift)
-            fp = hashlib.md5(
-                "|".join(f"{n}:{''.join(sorted(bh))}" for n, bh in drift).encode()).hexdigest()
+            parts = []
+            if missing:
+                parts.append(f"пропали копии ({len(missing)}): "
+                             + ", ".join(n for n, _ in missing))
+            if drift:
+                parts.append(f"разошлись ({len(drift)}): "
+                             + ", ".join(n for n, _ in drift))
+            if gone_roots:
+                parts.append("нет локации: "
+                             + ", ".join(ROOT_LABELS[i] for i in gone_roots))
+            # The fingerprint covers BOTH findings, and tags each kind, so a copy
+            # going missing is a new alert even while a known divergence is parked.
+            fp = hashlib.md5("|".join(
+                [f"M{n}:{''.join(map(str, g))}" for n, g in missing]
+                + [f"D{n}:{''.join(sorted(bh))}" for n, bh in drift]
+                + [f"R{i}" for i in gone_roots]).encode()).hexdigest()
             notify(
-                f"⚠️ Агенты разошлись ({len(drift)}): {names}\n"
-                "Одно имя — разное содержимое в DEV / установленном плагине / проектной папке. "
-                "Пока так, какая копия ответит на имя — вопрос удачи.\n"
-                "Разбор: scripts/check-agent-copies.py (чинить построчно, не перезаписью).", fp)
+                "⚠️ Агенты: " + "; ".join(parts) + "\n"
+                "Одно имя — разное содержимое (или копии вовсе нет) в DEV / установленном "
+                "плагине / проектной папке. Пока так, какая копия ответит на имя — вопрос "
+                "удачи, а пропавшую правку не увидит никто.\n"
+                "Разбор: scripts/check-agent-copies.py (чинить построчно, не перезаписью).",
+                fp)
         return 1
 
     # Everything agrees: drop the marker so a future regression alerts again.
@@ -174,9 +242,8 @@ def main(argv=None) -> int:
         except OSError:
             pass
     if not quiet:
-        multi = sum(1 for _n, p in found.items() if len(p) > 1)
-        print(f"✅ копии агентов совпадают ({multi} агент(ов) в нескольких местах, "
-              f"{len(single)} в одном)")
+        print(f"✅ копии агентов совпадают ({len(found)} агент(ов) "
+              f"× {len(expect)} локаци(й), пропаж нет)")
     return 0
 
 
