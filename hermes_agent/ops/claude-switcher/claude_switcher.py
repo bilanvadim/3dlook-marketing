@@ -5910,6 +5910,126 @@ async def _transcribe_forward(runner: Any, event: Any) -> str:
     return (enriched or "").strip()
 
 
+# --- «УСІ» → новий чат ---------------------------------------------------------
+# Telegram's DM lobby (the "All Messages" / «УСІ» lane) is a CLIENT-SIDE view, not
+# a topic: editGeneralForumTopic on it answers TOPIC_ID_INVALID, so it cannot be
+# renamed and the bot has no handle on it. Upstream Hermes therefore treats the
+# lobby as read-only and answers a message there with a canned reminder to go open
+# a topic by hand. This opens the topic instead: one plain message in «УСІ» gets
+# its own lane, the turn runs there, and the lobby keeps only a pointer.
+#
+# Anchors: a bare message_thread_id used to be rejected for these private-chat
+# topics (hence _TOPIC_ANCHOR above and its reply-to-an-in-lane-message dance).
+# Re-measured 2026-08-30 against Bot API 9.4 on a bot-created topic: sendMessage
+# with a bare thread id LANDS (probe message 5381 -> thread 262865), and a reply
+# chains from it. So the first turn needs no anchor; from the user's next message
+# the adapter's group -1 prefilter records one through note_topic_anchor() as usual.
+_LOBBY_TITLE_MAX = 40
+
+
+def _lobby_topic_name(text: str) -> str:
+    """Provisional lane title from the first message.
+
+    Deliberately NOT the semantic title: generating one costs a model call before
+    the user has seen any reply, and that call can fail. Hermes' existing
+    auto-rename lane replaces this with the real title once the turn produces one
+    — the same order ChatGPT uses, and what already named the lanes in this chat.
+    """
+    cleaned = re.sub(r"\s+", " ", str(text or "")).strip()
+    if not cleaned:
+        return "Новий чат"
+    if len(cleaned) <= _LOBBY_TITLE_MAX:
+        return cleaned
+    cut = cleaned[:_LOBBY_TITLE_MAX]
+    space = cut.rfind(" ")
+    if space >= _LOBBY_TITLE_MAX // 2:          # only trim to a word if one is near
+        cut = cut[:space]
+    return cut.rstrip(" ,.;:!?-—") + "…"
+
+
+async def maybe_open_lobby_topic(runner: Any, event: Any, source: Any) -> bool:
+    """A plain message in the DM lobby opens its own topic; the turn runs there.
+
+    Mutates source.thread_id and returns True when it did. Called BEFORE the
+    session key is computed, so everything downstream — session binding, the
+    topic-lane checks, the auto-rename lane — sees the new lane and not the lobby.
+
+    Falls through (returns False) on anything it should not claim: internal
+    events, non-Telegram, non-DM, a real topic lane, topic mode off, an empty
+    message, and — deliberately — slash commands, which upstream reserves the
+    lobby for and which would otherwise each spawn a junk lane.
+    """
+    if getattr(event, "internal", False):
+        return False
+    if getattr(getattr(source, "platform", None), "name", "") != "TELEGRAM":
+        return False
+    if getattr(source, "chat_type", None) != "dm":
+        return False
+    if str(getattr(source, "thread_id", "") or "") not in _GENERAL_TOPIC_IDS:
+        return False
+    chat_id = str(getattr(source, "chat_id", "") or "")
+    if not chat_id:
+        return False
+    try:
+        if event.get_command():
+            return False
+    except Exception:
+        pass
+    text = (getattr(event, "text", "") or "").strip()
+    if not text:
+        return False
+
+    # Topic mode is a per-chat flag in the SessionDB; without it the lobby is the
+    # user's ONLY lane and hijacking it would take their chat away.
+    check = getattr(runner, "_telegram_topic_mode_enabled", None)
+    if check is None:
+        return False
+    try:
+        if not await asyncio.to_thread(check, source):
+            return False
+    except Exception:
+        logger.debug("csw-lobby: topic-mode check failed", exc_info=True)
+        return False
+
+    adapter = _adapter_for(runner, source)
+    create = getattr(adapter, "_create_dm_topic", None)
+    if create is None:
+        return False
+    name = _lobby_topic_name(text)
+    try:
+        thread_id = await create(chat_id=int(chat_id), name=name)
+    except Exception:
+        logger.exception("csw-lobby: createForumTopic failed")
+        return False
+    if not thread_id:
+        # Topics disabled, rate limit, duplicate name — leave the message in the
+        # lobby so upstream's reminder still answers it. Never silently drop it.
+        logger.warning("csw-lobby: no thread id for %r — leaving turn in the lobby", name)
+        return False
+
+    # Pointer goes out while source still names the lobby, so it lands there.
+    try:
+        await _send(runner, source, f"→ Створив чат: {name}")
+    except Exception:
+        logger.debug("csw-lobby: pointer send failed", exc_info=True)
+
+    source.thread_id = str(thread_id)
+    # Drop the reply anchor with it. _thread_metadata_for_source copies
+    # source.message_id into telegram_reply_to_message_id, and for a DM-topic
+    # target the reply anchor decides the lane — that anchor is the message the
+    # user left in the LOBBY, so the first reply would be sent into the new
+    # topic and anchored to a message outside it. Cleared, the adapter takes the
+    # anchor-less branch and routes on message_thread_id alone, which is the
+    # shape measured to work above. From the user's next message the inbound
+    # prefilter records a real in-lane anchor through note_topic_anchor().
+    try:
+        source.message_id = None
+    except Exception:
+        logger.debug("csw-lobby: could not clear message_id", exc_info=True)
+    logger.info("csw-lobby: %s → новий топік %s (%r)", chat_id, thread_id, name)
+    return True
+
+
 async def maybe_handle_forward_in_lobby(runner: Any, event: Any, source: Any) -> Optional[str]:
     bkey = _src_bkey(source)
     is_fwd = _is_forward(event)

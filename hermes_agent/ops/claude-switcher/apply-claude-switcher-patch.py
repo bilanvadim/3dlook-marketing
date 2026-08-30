@@ -86,6 +86,23 @@ DISPATCH_INSERT = (
     '            logger.debug("claude-switcher command dispatch failed", exc_info=True)\n'
 )
 
+# --- run.py: DM lobby («УСІ») opens its own topic ---------------------------
+# Placed BEFORE the first _quick_key computation on purpose: the session key, the
+# topic-lane checks and the auto-rename lane must all see the NEW lane. Patch it
+# after that line and the turn binds to the lobby and only the reply moves.
+LOBBY_TOPIC_ANCHOR = (
+    "        _quick_key = self._session_key_for_source(source)\n"
+)
+LOBBY_TOPIC_INSERT = (
+    "        # [hermes-switcher] «УСІ» → новий чат: a plain message in the DM lobby\n"
+    "        # opens its own topic, and this turn runs there instead of the lobby.\n"
+    "        try:\n"
+    "            from gateway import claude_switcher as _cs\n"
+    "            await _cs.maybe_open_lobby_topic(self, event, source)\n"
+    "        except Exception:\n"
+    "            logger.debug(\"claude-switcher lobby topic open failed\", exc_info=True)\n"
+)
+
 # --- run.py: primary turn intercept ----------------------------------------
 S1_ANCHOR = (
     "        message_text = await self._prepare_profile_scoped_inbound_message_text(\n"
@@ -561,6 +578,7 @@ def main():
     # release that words them differently just skips them.
     r = _patch_file(RUN_PY, [
         ("dispatch", [DISPATCH_ANCHOR, DISPATCH_ANCHOR_0206], before(DISPATCH_INSERT)),
+        ("lobby-topic", LOBBY_TOPIC_ANCHOR, before(LOBBY_TOPIC_INSERT)),
         ("intercept-primary", [S1_ANCHOR, S1_ANCHOR_016], after(S1_INSERT)),
         ("intercept-followup", [S2_ANCHOR, S2_ANCHOR_016], after(S2_INSERT)),
         ("forward-picker", [FWD_ANCHOR, FWD_ANCHOR_016], before(FWD_INSERT)),
