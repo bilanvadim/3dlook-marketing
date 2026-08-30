@@ -3850,19 +3850,28 @@ async def _queue_busy_followup(runner: Any, event: Any, session_key: str) -> boo
     source = getattr(event, "source", None)
     if source is None:
         return False
-    # The «Новий чат» lane is an ENTRY POINT, never a session, so it is never
-    # "busy": a message there must always reach the turn path and open a fresh
-    # lane. Queueing it is what made the second new-chat request vanish
-    # (2026-08-30 09:20:46, "csw-queue: queued for 447975871#262875 → 1/2") —
-    # this queue sits on the adapter, AHEAD of the run.py hook, so the hook never
-    # saw the message at all and the user just got silence.
+    # The «Новий чат» spawner lane is an ENTRY POINT, never a session, so it is
+    # never "busy": a message there must always reach the turn path and open a
+    # fresh lane. Queueing it is what made a second new-chat request vanish
+    # outright (2026-08-30 09:20:46, "csw-queue: queued for 447975871#262875 →
+    # 1/2") — this queue sits on the adapter, AHEAD of the run.py hook, so the
+    # hook never saw the message and the user just got silence.
+    #
+    # The LOBBY is deliberately NOT exempted here, though it looks like the same
+    # case. Measured both ways: left in the FIFO, a second «Усі» message opens its
+    # chat ~23s late (09:42:03 queued → 09:42:26 spawned) — late but correct.
+    # Exempted, it is handed to the gateway's own busy handling instead, which
+    # merges it into the running session: the chat never opens and the message is
+    # gone (09:43:53, no inbound, no spawn). Late beats lost. Making the two
+    # parallel needs the busy path itself to become thread-aware, which is a
+    # deeper upstream change than this hook.
     try:
         _c, _, _t = str(session_key or "").partition("#")
         if _t and _t == new_chat_lane(_c):
             logger.info("csw-queue: %s — вхідний чат, у чергу не ставлю", session_key)
             return False
     except Exception:
-        logger.debug("csw-queue: spawner-lane check failed", exc_info=True)
+        logger.debug("csw-queue: entry-lane check failed", exc_info=True)
     # Async-delegation / background completions re-enter as internal events.
     # They are not user requests and must never be queued as one.
     if getattr(event, "internal", False):
