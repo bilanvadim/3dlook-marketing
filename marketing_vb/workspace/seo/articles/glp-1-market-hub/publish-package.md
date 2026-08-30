@@ -1,7 +1,11 @@
 ---
 track: seo
 product: fitxpress
-status: ready_for_review
+status: published
+published_date: 2026-08-28
+production_url: https://3dlook.ai/content-hub/glp-1-market/
+live_text_of_record: published-live-2026-08-28.md
+publish_note: "Meta title and description shipped as recommended (Option A). Body was rewritten after v6 outside the pipeline — see FINAL-PUBLISHED.md."
 article_slug: glp-1-market
 target_url: https://3dlook.ai/content-hub/glp-1-market/
 author: Assel Sekerova

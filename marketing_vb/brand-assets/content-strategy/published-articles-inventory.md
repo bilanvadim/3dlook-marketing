@@ -1,8 +1,8 @@
 # Published Articles Inventory — 3DLOOK Content Hub
 
-> Last updated: 2026-08-24
+> Last updated: 2026-08-28
 > Source: `https://3dlook.ai/post-sitemap.xml` (Yoast SEO — authoritative)
-> Total: **156 published articles** (155 in the 2026-08-18 sitemap snapshot, +1 published 2026-08-21 and registered by hand before the next sitemap pull). The 2026-08-24 `online-pharmacy-bmi-verification` rewrite **does not change the count** — it was republished at its existing URL.
+> Total: **156 published articles** (155 in the 2026-08-18 sitemap snapshot, +1 published 2026-08-21 and registered by hand before the next sitemap pull). The 2026-08-24 `online-pharmacy-bmi-verification` rewrite and the 2026-08-28 `glp-1-market` hub refresh **do not change the count** — both were republished at their existing URLs.
 > Purpose: single source of truth for what's published, mapped to content plan hubs
 
 ---
@@ -22,6 +22,9 @@ Seven health articles were read on the live site and reconciled against this inv
 | 7 | `mobile-body-scanning-accuracy` | Body Scanning Accuracy: A Framework for Enterprise Decisions | **2026-07-03** | 2026-07-30 | ~4,500 | `workspace/seo/articles/2026-05-29-3dlook-accuracy-enterprise-evaluation/` |
 | 8 | `top-7-remote-body-composition-tools-glp-1-clinics` | 7 Body Composition and Progress-Tracking Tools for Remote GLP-1 Clinics | **2026-08-21** | 2026-08-21 | ~3,060 | `workspace/seo/articles/top-7-remote-body-composition-tools-glp-1-clinics/` |
 | 9 | `online-pharmacy-bmi-verification-a-2026-compliance-guide` | Online Pharmacy BMI Verification: A 2026 Compliance Guide | **2026-08-24** (re-dated by the republish) | 2026-08-24 | ~2,260 | `workspace/seo/articles/2026-05-21-online-pharmacy-bmi-verification/` |
+| 10 | `glp-1-market` | GLP-1 Market Growth and the Need for Better Patient Progress Tracking | **2026-08-28** (re-dated by the republish) | 2026-08-28 | ~2,000 | `workspace/seo/articles/glp-1-market-hub/` |
+
+> **Row 10 added 2026-08-28.** The **GLP-1 Market hub refresh** — a **refresh republished in place at the same URL**, not a new article. This closes the last P0 hub refresh gap and retires the Oct 2024 "The Growth of the GLP-1 Market" page. Verified against the live page the same day (`datePublished` 2026-08-28T12:46:40+00:00, modified 12:58:26+00:00). Byline on site: **Asselya Sekerova** (the row-8 spelling, not the row-9 "Assel" — the site remains inconsistent). Three things worth knowing: **(a)** the republish **reset the publication date**, so the Oct 2024 original age now lives only in this repo; **(b)** the live text matches **no draft in the folder** — a further editorial pass happened after `draft-v6-revision2.md`, so the live body was captured into `published-live-2026-08-28.md`, which is the text of record; **(c)** the live version is ~500 words shorter than v6, adds a market-structure section (Novo/Lilly segmentation, oral and combination therapies, citing Reuters 2026-08-13 and IQVIA 2026–2030) plus a four-row market-indicator table, and hedges the market claims harder than the draft did (v6's 6M→10M 2024→2025 US patient-count trajectory was dropped). Full delta in that folder's `FINAL-PUBLISHED.md`.
 
 > **Row 9 added 2026-08-24.** This is a **rewrite republished in place at the same URL**, not a new article — the telehealth section was added and the pharmacy sections were rewritten. Verified against the live page the same day (`article:published_time` 2026-08-24T11:06:01+00:00, modified 11:06:03+00:00). Byline on site: **Assel Sekerova** (note: *not* the "Asselya" spelling used on row 8 — the site is inconsistent between the two). Two things worth knowing: **(a)** the republish **reset the publication date** — the page no longer shows the Jun 2026 original, so the article's true age now lives only in this repo; **(b)** the live text matches **no draft in the folder** — `draft-v5-revision2.md` was edited further before publishing, so the live body was transcribed into `published-live-2026-08-24.md`. Full delta in that folder's `FINAL-PUBLISHED.md`.
 
@@ -62,7 +65,7 @@ Each working directory now carries a `FINAL-PUBLISHED.md` marker with the live U
 | 3 | Data, Privacy, Security & Regulatory FAQ | P0 | ❌ | — | **OVERDUE** |
 | 4 | AI in Fitness | P0 hub + P1/P2 | ✅ Jul 31 | AI in Fitness (refreshed hub), Fitness Tech Companies, AI Body Scanning for Fitness, Connected Fitness, Fitness Apps, Fitness Trends | Hub refreshed & live Jul 31, 2026; P1/P2 clusters pending |
 | 5 | AI in Telehealth | P0 hub + P1/P2 | ✅ Aug 7 | Patient Engagement (Aug 14), **Telehealth BMI verification — shipped Aug 24 as a section of the Pharmacy BMI article, not a page** | Hub refreshed & live Aug 7, 2026; BMI-verification row closed; remaining P1/P2 clusters pending |
-| 6 | GLP-1 Market | P0 hub + P1/P2 | ✅ Old hub exists | Pharmacy BMI (**rewritten Aug 24**), GLP-1 Compliance, Visual Progress, Weight Loss Industry, Weight Loss Clinic Tips, Body Scanning for Weight Loss, Beyond BMI, Body Composition Tools listicle (Aug 21) | Needs 2026 hub refresh |
+| 6 | GLP-1 Market | P0 hub + P1/P2 | ✅ **Hub refreshed Aug 28, 2026** | Pharmacy BMI (**rewritten Aug 24**), GLP-1 Compliance, Visual Progress, Weight Loss Industry, Weight Loss Clinic Tips, Body Scanning for Weight Loss, Beyond BMI, Body Composition Tools listicle (Aug 21) | Hub is current — P1/P2 cluster rows unblocked |
 | 7 | Insurance Underwriting | P0 | ✅ Jun 17 | — | None |
 | 8 | Wellness Platforms | P0 | ✅ Mar 30 | — | P1 articles not published |
 | 9 | Bariatric | P0 | ✅ Jun 5 | — | None |
@@ -100,7 +103,7 @@ Each working directory now carries a `FINAL-PUBLISHED.md` marker with the live U
 
 ### GLP-1 / Weight Loss / Pharmacy (Hub #6)
 - `online-pharmacy-bmi-verification-a-2026-compliance-guide/` — **Online Pharmacy BMI Verification: A 2026 Compliance Guide** — **rewritten & republished in place Aug 24, 2026** (originally Jun 2026; the republish re-dated the post) — P0/P1 — **also owns Telehealth BMI verification** (Hub #5) via its "How to verify BMI remotely in a telehealth workflow" section
-- `glp-1-market/` — **The Growth of the GLP-1 Market** — Oct 2024 — Old hub (needs refresh)
+- `glp-1-market/` — **GLP-1 Market Growth and the Need for Better Patient Progress Tracking** — **refreshed & republished in place Aug 28, 2026** (originally Oct 2024 as "The Growth of the GLP-1 Market"; the republish re-dated the post) — **P0 HUB** — owns market growth, delivery models and the progress-tracking gap; does not own eligibility verification, diagnosis or dosing
 - `glp-1-compliance-challenge/` — **GLP-1 Compliance Challenge** — May 2025 — Supporting
 - `visual-progress-tracking-glp1-adherence-retention/` — **Visual Progress Tracking for GLP-1 Adherence & Retention** — Dec 2025 — Supporting
 - `weight-loss-industry-overview/` — **Weight Loss Industry Overview** — Dec 2024 — Market education
@@ -312,7 +315,7 @@ Main Health Hub (ai-body-data-health-hub) — Jul 24, 2026
   │
   ├── GLP-1 / Pharmacy / Weight Loss
   │   ├── online-pharmacy-bmi-verification (rewritten & republished Aug 24, 2026) ← also owns Telehealth BMI verification
-  │   ├── glp-1-market (Oct 2024) ← OLD hub — needs refresh
+  │   ├── glp-1-market (refreshed & republished Aug 28, 2026) ← HUB
   │   ├── glp-1-compliance-challenge (May 2025)
   │   ├── visual-progress-tracking-glp1 (Dec 2025)
   │   ├── weight-loss-industry-overview (Dec 2024)
@@ -360,7 +363,7 @@ Main Health Hub (ai-body-data-health-hub) — Jul 24, 2026
 | Data, Privacy, Security & Regulatory FAQ | #3 Trust Assets | Create net-new — **MOST OVERDUE** (only remaining P0 hub gap; draft exists at `workspace/seo/articles/2026-07-14-fitxpress-privacy-security-faq/`) |
 | ~~AI in Fitness hub refresh~~ ✅ | #4 Fitness | **DONE Jul 31, 2026** — `ai-in-fitness-industry/` refreshed & live |
 | ~~AI in Telehealth hub refresh~~ ✅ | #5 Telehealth | **DONE Aug 7, 2026** — `the-potential-of-ai-in-telehealth/` refreshed in place & live |
-| GLP-1 Market 2026 hub refresh | #6 GLP-1 | Refresh old `glp-1-market/` article — draft in progress at `workspace/seo/articles/glp-1-market-hub/` |
+| ~~GLP-1 Market 2026 hub refresh~~ ✅ | #6 GLP-1 | **DONE Aug 28, 2026** — `glp-1-market/` refreshed & republished in place. Live text of record: `workspace/seo/articles/glp-1-market-hub/published-live-2026-08-28.md` |
 
 ### 🟡 P1 Gaps
 
@@ -386,7 +389,7 @@ Main Health Hub (ai-body-data-health-hub) — Jul 24, 2026
 ### 🟢 Observations
 
 - **Health articles are outnumbering apparel** for the first time (41 vs 73 — but 41 are 2025-2026 articles, while many apparel are 2020-2023 legacy)
-- **1 of 11 hubs still uses a pre-2025 article** (GLP-1, Oct 2024) — Fitness (Jul 31, 2026) and Telehealth (Aug 7, 2026) have both been refreshed into the 2026 hub format. GLP-1 is the last one left; a hub draft is already in progress at `workspace/seo/articles/glp-1-market-hub/`
+- **Every hub now runs on a 2026 article.** GLP-1 (Aug 28, 2026) was the last pre-2025 hub and has been refreshed in place, following Fitness (Jul 31, 2026) and Telehealth (Aug 7, 2026) into the 2026 hub format
 - **10 of 11 P0 hubs are live.** The only P0 hub still unpublished is the Data, Privacy, Security & Regulatory FAQ (trust asset #2) — and it is the asset every vertical page is supposed to link to for compliance answers, so it blocks internal-linking completeness across all hubs
 - **Body composition cluster** (10 articles) is mostly TOFU educational — good for SEO but not connected to main hub architecture
 - **Comparison articles** (DEXA, InBody, Fit3D, BIA, Body Scanner Machines) are growing — possible cannibalization risk between them

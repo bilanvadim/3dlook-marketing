@@ -15,7 +15,11 @@ existing_urls: https://3dlook.ai/content-hub/glp-1-market/
 cannibalization_guardrail: "Avoid duplicating GLP-1 Market, Visual Progress Tracking, Beyond BMI, and Online Pharmacy BMI Verification. Make each page own a distinct intent."
 vertical_boundary: "Owns GLP-1 market growth, program models (telehealth, in-person/hybrid clinic, pharmacy-led, employer/wellness), the progress-tracking gap as an industry-level problem, and the operator/clinic-workflow view. Does not own diagnosis, treatment/eligibility/underwriting decisions, replacement of clinicians or DEXA/BIA/calibrated scales, guaranteed weight-loss/adherence/compliance outcomes, automatic fraud detection, medical-device framing, or GLP-1 drug clinical-efficacy claims."
 author: Assel Sekerova
-status: draft
+status: superseded
+published_date: 2026-08-28
+live_url: https://3dlook.ai/content-hub/glp-1-market/
+superseded_by: published-live-2026-08-28.md
+superseded_note: "Superseded by draft-v5-revision1.md / draft-v6-revision2.md, then by the live editorial pass. Historical artefact."
 created: 2026-08-01
 claims_used: [FX-001, FX-003, FX-004, FX-005, FX-006, FX-007, FX-009, FX-010, FX-012]
 ---

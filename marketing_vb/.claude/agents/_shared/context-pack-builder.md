@@ -250,7 +250,7 @@ context_pack:
       - slug: "breast-cancer-related-lymphedema-detection"
         published: "2026-07-08"
         hub: "BCRL / Oncology"
-    refresh_status: "ai-in-fitness-industry → published 2026-07-31; the-potential-of-ai-in-telehealth и glp-1-market ещё ждут рефреша"
+    refresh_status: "все P0 хабы отрефрешены: ai-in-fitness-industry → 2026-07-31, the-potential-of-ai-in-telehealth → 2026-08-07, glp-1-market → 2026-08-28 (последний). Единственный незакрытый P0 — Data/Privacy/Security & Regulatory FAQ (ещё не опубликован)"
 
   # only for track=seo — from scripts/ahrefs-keywords.py (Ahrefs API v3). Real figures.
   # null volume/difficulty = Ahrefs has NO figure. It is NOT zero. Do not conflate.

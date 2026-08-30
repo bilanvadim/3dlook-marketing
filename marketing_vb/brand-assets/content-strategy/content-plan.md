@@ -4,7 +4,7 @@
 > **Rules that govern how to write against this plan:** [`content-strategy-guidelines.md`](./content-strategy-guidelines.md)
 > **Scope:** FitXpress health verticals (fitness, telehealth, GLP-1, insurance, wellness, bariatrics, clinical trials, occupational health). Mobile Tailor is out of scope for this plan.
 > **Last synced from source:** 2026-07-07. If the sheet changes, re-sync this file — it is the offline copy the agents read (they do not fetch Google).
-> **Last reconciled against the live site:** 2026-08-18 (7 health articles verified page-by-page — see `published-articles-inventory.md` → "Live-Page Verification Pass"), plus a single-article check on **2026-08-24** for the `online-pharmacy-bmi-verification` rewrite. Publication status below reflects what is actually live, which can be ahead of the last sheet sync.
+> **Last reconciled against the live site:** 2026-08-18 (7 health articles verified page-by-page — see `published-articles-inventory.md` → "Live-Page Verification Pass"), plus single-article checks on **2026-08-24** (`online-pharmacy-bmi-verification` rewrite) and **2026-08-28** (`glp-1-market` hub refresh). Publication status below reflects what is actually live, which can be ahead of the last sheet sync.
 
 ## Published P0 hubs (verified live 2026-08-18)
 
@@ -17,9 +17,10 @@
 | Hub 2 — Patient experience | How Mobile Body Scanning Improves Patient Engagement | 2026-08-14 | https://3dlook.ai/content-hub/mobile-body-scanning-patient-engagement/ |
 | Hub 7 — Clinical Trials | Standardizing Anthropometric Measurements for Hybrid & Decentralized Obesity Trials | 2026-07-17 | https://3dlook.ai/content-hub/clinical-trial-anthropometric-measurement-software-obesity-trials/ |
 | Hub 8 — Occupational Health | Standardizing Occupational Health Screening | 2026-07-10 | https://3dlook.ai/content-hub/occupational-health-screening-software/ |
+| Hub 3 — GLP-1 Market | GLP-1 Market Growth and the Need for Better Patient Progress Tracking — **refreshed, republished in place** | 2026-08-28 (re-dated by the republish) | https://3dlook.ai/content-hub/glp-1-market/ |
 | Hub 4 anchor (+ Hub 2 BMI row) | Online Pharmacy BMI Verification: A 2026 Compliance Guide — **rewritten, republished in place, now also owns telehealth BMI verification** | 2026-08-24 (re-dated by the republish) | https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/ |
 
-**Remaining P0 hub gaps:** Data, Privacy, Security & Regulatory FAQ (trust asset #2, not started as a published page) · GLP-1 Market 2026 hub refresh (draft in progress) · Wellness Platforms hub (conditional on wellness apps becoming a priority ICP).
+**Remaining P0 hub gaps:** Data, Privacy, Security & Regulatory FAQ (trust asset #2, not started as a published page — **now the last remaining P0 hub gap**) · Wellness Platforms hub (conditional on wellness apps becoming a priority ICP).
 
 ## How agents use this file
 
@@ -107,11 +108,11 @@ Navigation hub only — gateway to all FitXpress verticals. Do NOT create anothe
 
 ## Hub 3 — GLP-1 Market & Progress Tracking
 
-Refresh `glp-1-market` as the market hub. **Avoid duplicating** GLP-1 Market, Visual Progress Tracking, Beyond BMI, and Online-Pharmacy BMI Verification — each page owns a distinct intent.
+**Hub is live (2026-08-28).** `glp-1-market` was refreshed in place at the same URL — do not create a second GLP-1 market overview. The hub owns market growth, delivery models (telehealth, in-person/hybrid clinic, pharmacy-led, employer-supported), and the progress-tracking gap as an industry-level problem. **Avoid duplicating** GLP-1 Market, Visual Progress Tracking, Beyond BMI, and Online-Pharmacy BMI Verification — each page owns a distinct intent. P1/P2 cluster articles below are now unblocked; new cluster pieces link up to this hub.
 
 | Cluster | Article | Intent | Action | Pri | Notes / guardrail |
 |---|---|---|---|---|---|
-| Main hub | GLP-1 Market Growth and the Need for Better Patient Progress Tracking | Hub | Refresh / expand | P0 | Add progress-tracking, body-comp, telehealth, clinic-workflow sections. |
+| Main hub | GLP-1 Market Growth and the Need for Better Patient Progress Tracking | Hub | ✅ **PUBLISHED 2026-08-28** | P0 | **Live:** [`glp-1-market`](https://3dlook.ai/content-hub/glp-1-market/). Refreshed in place — same URL, re-dated. Live text added a market-structure section (Novo/Lilly, oral + combination therapies) and a four-row market-indicator table; claims are hedged harder than the draft. Live text of record: `workspace/seo/articles/glp-1-market-hub/published-live-2026-08-28.md`. Does **not** own eligibility verification, diagnosis or dosing. |
 | Tools / listicle | 7 Body Composition and Progress-Tracking Tools for Remote GLP-1 Clinics | MOFU/BOFU | ✅ **PUBLISHED 2026-08-21** | P0 | **Live:** [`top-7-remote-body-composition-tools-glp-1-clinics`](https://3dlook.ai/content-hub/top-7-remote-body-composition-tools-glp-1-clinics/). Published H1 dropped the "Top 7" ranking framing (slug kept). Answers "which tools should GLP-1 clinics evaluate?" FitXpress = remote structured-data layer, not universal replacement. |
 | Remote monitoring | Remote Body Measurement for GLP-1 Programs: A Workflow for Virtual Clinics | BOFU | Create net-new | P1 | Focus repeated follow-up scans (vs BMI verification). |
 | Documentation | What Body Data Should Be in a GLP-1 Patient Progress Record? | BOFU | Create net-new | P1 | Strong BOFU for clinics/platforms. |
