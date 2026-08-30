@@ -5,24 +5,24 @@ title: Remote Body Measurement for Online Fitness Coaching Programs
 author: Assel Sekerova
 status: edited
 date: 2026-08-26
-word_count: 2380
+word_count: 2525
 editing_passes: 5
 ai_density_before: 1.08
 ai_density_after: 0.0
 claims_verified: [FX-001, FX-002, FX-003, FX-005, FX-006, FX-007, FX-008]
 changes_summary: |
-  - Pass 1 (citation dedup): the accuracy-framework trust link was in v1 twice (H2.2 and H2.10); kept one anchor in H2.2, H2.10 now refers to it in prose without re-linking. BOFU down-link intentionally kept in two spots (H2.6 soft MOFU eval + conclusion BOFU demo) per plan CTA placement.
+  - Pass 1 (citation dedup): the accuracy-framework trust link was in v1 twice (H2.2 and H2.10); kept one anchor in H2.2, H2.10 now refers to it in prose without re-linking. BOFU down-link intentionally kept in two spots (H2.6 soft MOFU eval and conclusion BOFU demo) per plan CTA placement.
   - Pass 2 (structure/flow): wove the primary keyword into the intro and the H2.1 heading; kept thematic bridges between H2s (no Furthermore/Moreover/Additionally).
-  - Pass 3 (expert voice): fixed the anthropomorphism hard fail ("the platform decides" -> "the platform team decides how to use it"); converted H2.6 from a bold-headed list to prose so it no longer clones H2.10's checklist; removed the ungrammatical stuffed phrases "client retention online coaching", "visible progress coaching", "body composition tracking for coaching" and rewrote them to read naturally with the keyword intent intact.
+  - Pass 3 (expert voice): fixed the anthropomorphism hard fail ("the platform decides" became "the platform team decides how to use it"); converted H2.6 from a bold-headed list to prose so it no longer clones H2.10's checklist; removed the ungrammatical stuffed phrases "client retention online coaching", "visible progress coaching", "body composition tracking for coaching" and rewrote them to read naturally with the keyword intent intact.
   - Pass 3b (strategy): boundary section H2.7 intact and direct ("FitXpress is not a medical device"); no GLP-1-clinical or wellness-rewards bleed; up/down/trust internal links present; sideways deliberately omitted per plan Open item #6 to avoid blurring the vertical boundary; FAQ (7) and CTA-by-intent held.
-  - Pass 3c: ran detect-ai-tells.py (channel article) -> CLEAN, 0.0/1000. See log.md for exact output.
-  - Pass 4 (terminology): expanded BMR, CTO, HIPAA, GDPR, SSE-S3 at first use (BMI kept bare per 2026-08-25 override); removed two "so"-as-result connectors in H2.6; removed corrective negations ("with real clients, not staff", "is noise, not progress", "repeatability, not one-off variation", and the FX-006 "software estimate, not a reading" clause); split the stacked negation in H2.7 into a positive frame for the qualification half. No em dash, no banned words, no "positioned as".
-  - Trim: two passes brought the body from ~2,680 to ~2,380 by cutting duplicated retention/recomposition and privacy passages and tightening prose. No FAQ item, boundary section, or approved claim removed. Kept within the context-pack's 1,800-2,800 typical band and close to the plan's 2,300 ceiling.
+  - Pass 3c: ran detect-ai-tells.py (channel article), result CLEAN, 0.0/1000.
+  - Pass 4 (terminology): expanded BMR, CTO, HIPAA, GDPR, SSE-S3 at first use (BMI kept bare per 2026-08-25 override); removed two "so"-as-result connectors in H2.6; removed corrective negations (the "with real clients / staff" line, the "noise / progress" line, the "repeatability / one-off variation" line, and the FX-006 "software estimate / a reading" clause); split the stacked negation in H2.7 into a positive frame for the qualification half. No em dash, no banned words, no "positioned as".
+  - Trim: brought the body from about 2,640 to about 2,525 prose words (excludes claim-comments and table markup) by cutting duplicated retention/recomposition and privacy passages and tightening prose. No FAQ item, boundary section, or approved claim removed. Sits within the context-pack's 1,800-2,800 typical band; modestly above the plan's soft 2,300 ceiling, held there by editorial choice to keep must-cover content (see log Open items).
 self_check: |
-  - FAQ rhythm is uniform (each answer a short block) — left as-is; that parallelism is a genre convention and helps answer-engine extraction. Rhythm is varied elsewhere (one-line scope note, longer numbered workflow steps, short punch lines like "an invisible result is a cancelled renewal").
-  - v1 had two back-to-back bold checklists (H2.6 and H2.10) that read from one template — rewrote H2.6 as prose carrying an opinion ("the engagement lever for this segment") so the two sections differ in shape.
-  - v1 was description-heavy with little stated position — kept and sharpened the "accurate enough for which decision?" reframe and the "not the right tool for every practice" call so the piece argues, not just lists.
-  - No named coaching customer exists for this vertical (plan Open item #3); did not invent a before/after outcome, kept capability + segment framing with only approved numbers.
+  - FAQ rhythm is uniform (each answer a short block). Left as-is: that parallelism is a genre convention and helps answer-engine extraction. Rhythm is varied elsewhere (one-line scope note, longer numbered workflow steps, short punch lines like "an invisible result is a cancelled renewal").
+  - v1 had two back-to-back bold checklists (H2.6 and H2.10) that read from one template. Rewrote H2.6 as prose carrying an opinion ("the engagement lever for this segment") so the two sections differ in shape.
+  - v1 was description-heavy with little stated position. Kept and sharpened the "accurate enough for which decision?" reframe and the "not the right tool for every practice" call so the piece argues, not just lists.
+  - No named coaching customer exists for this vertical (plan Open item #3); did not invent a before/after outcome, kept capability and segment framing with only approved numbers.
   - Second-pass fix: a trim introduced "body data feels current" (anthropomorphism); rewrote to "adapting a program to real body data offers something firmer" and re-ran the detector to CLEAN.
 ---
 
@@ -63,7 +63,7 @@ The workflow fits an existing coaching cadence: a baseline at the start, then fo
 3. **Results land in the coach's view.** The measurements and composition appear where the coach already works, inside the coaching platform. There is no separate spreadsheet to maintain and no manual entry of tape numbers.
 4. **Comparison at the next check-in.** At each follow-up, the new scan lines up against the baseline. The coach sees which measurements moved and by how much, and the client sees a side-by-side 3D comparison. A remote check-in becomes a moment that shows progress instead of a form to fill in.
 
-The coach reads the trend and decides what to change. The tool supplies structured input to that decision, and the judgment stays with the coach.
+The coach reads the trend and decides what to change. The tool supplies the structured input to that call.
 
 ## Where FitXpress fits
 
@@ -73,7 +73,7 @@ The split is clean. 3DLOOK provides the body scanning API for a fitness platform
 
 Under real conditions, FitXpress has shown approximately 96 to 97% accuracy compared with expert manual measurements, with typical absolute error running 1.5 to 2.0 cm. <!-- claim: FX-001 --><!-- claim: FX-002 --> Those figures describe agreement with a manual reference, and they hold when scans are captured under consistent conditions, which is why capture guidance matters in production.
 
-Client body data needs a privacy posture from day one. FitXpress complies with the Health Insurance Portability and Accountability Act (HIPAA) and aligns with the principles of the General Data Protection Regulation (GDPR). Images are encrypted in Amazon Simple Storage Service (Amazon S3) using server-side encryption with Amazon S3 managed keys (SSE-S3), and photos are deleted immediately or within 30 days depending on the client's policy. <!-- claim: FX-007 --> A coaching program handling body photos should be able to tell clients exactly what is stored and for how long.
+Client body data needs a privacy posture from day one. FitXpress complies with the Health Insurance Portability and Accountability Act (HIPAA) and aligns with the principles of the General Data Protection Regulation (GDPR). Images are encrypted in Amazon Simple Storage Service (Amazon S3) using server-side encryption with Amazon S3 managed keys (SSE-S3), and photos are deleted immediately or within 30 days depending on the client's policy. <!-- claim: FX-007 -->
 
 ## What improves operationally
 
