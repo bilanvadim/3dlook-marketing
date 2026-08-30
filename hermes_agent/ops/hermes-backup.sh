@@ -135,9 +135,24 @@ done
 [ -f "$HOME_DIR/.config/ai-agent-stack/secrets.env" ] \
   && cp -a "$HOME_DIR/.config/ai-agent-stack/secrets.env" "$DEST/secrets/" 2>>"$LOG" \
   || warn "secrets.env not captured"
+# llmfp 1.10 (installed 2026-08-28) gave every chain its own instance directory:
+# ~/.config/llm-failover-proxy/{agentic,strong}/config.json, which is what the two
+# units actually pass to --config. The flat config.json / config-strong.json this
+# loop was written for no longer exist — only .bak-* copies of them do — so for two
+# nights the step captured nothing but the .env and failed the unit on the warning
+# below. Both layouts are copied: a restore of an older backup still finds what it
+# expects, and the pre-1.10 names cost nothing once they are gone.
 for f in config.json config-strong.json .env; do
   [ -f "$HOME_DIR/.config/llm-failover-proxy/$f" ] \
     && cp -a "$HOME_DIR/.config/llm-failover-proxy/$f" "$DEST/secrets/llmfp-$f" 2>>"$LOG"
+done
+# -L, not -a: each instance .env is a symlink to the shared ../.env, and a dangling
+# symlink in a backup is worse than no file at all. config.stats.json is runtime
+# counters, not config — deliberately not taken.
+for i in agentic strong; do
+  [ -f "$HOME_DIR/.config/llm-failover-proxy/$i/config.json" ] \
+    && cp -aL "$HOME_DIR/.config/llm-failover-proxy/$i/config.json" \
+              "$DEST/secrets/llmfp-$i-config.json" 2>>"$LOG"
 done
 [ -f "$HOME_DIR/.config/opencode/opencode.jsonc" ] \
   && cp -a "$HOME_DIR/.config/opencode/opencode.jsonc" "$DEST/secrets/" 2>>"$LOG"
@@ -145,7 +160,11 @@ done
   && cp -a "$HOME_DIR/.local/share/opencode/auth.json" "$DEST/secrets/opencode-auth.json" 2>>"$LOG"
 [ -f "$HOME_DIR/.claude/settings.json" ] \
   && cp -a "$HOME_DIR/.claude/settings.json" "$DEST/secrets/claude-settings.json" 2>>"$LOG"
-[ -f "$DEST/secrets/llmfp-config.json" ] || warn "llm-failover-proxy config NOT captured"
+# Layout-agnostic on purpose: the check is "a chain config landed", not "this
+# particular filename landed" — the latter is what turned a rename into a
+# nightly failure that hid the real loss (both 16 KB chain configs, unsaved).
+ls "$DEST/secrets/"llmfp-*config*.json >/dev/null 2>&1 \
+  || warn "llm-failover-proxy config NOT captured"
 
 # ── the wiki (everything the agent wrote; the repo has only a seed) ───────────────
 if [ -d "$H/AI-Second-Brain" ]; then
