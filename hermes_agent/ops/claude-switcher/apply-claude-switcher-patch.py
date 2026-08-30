@@ -69,6 +69,13 @@ DISPATCH_ANCHOR = (
     '        if canonical == "background":\n'
     '            return await self._handle_background_command(event)\n'
 )
+# 0.20.6 (main @ 89b38ed7) folded the plain slash handlers into a dict —
+# `background` became the "bg" key of _gateway_plain_command_handlers() and the
+# `if canonical == "background"` branch is gone. The switcher check has to sit
+# ahead of that dict lookup, which is the first thing the chain does now.
+DISPATCH_ANCHOR_0206 = (
+    '        plain_handler = self._gateway_plain_command_handlers().get(canonical)\n'
+)
 DISPATCH_INSERT = (
     '        # [hermes-switcher] route switcher commands to the sticky-mode handler\n'
     '        try:\n'
@@ -553,7 +560,7 @@ def main():
     # and the 0.16 one as a fallback; the busy-ack rewrites are cosmetic, so a
     # release that words them differently just skips them.
     r = _patch_file(RUN_PY, [
-        ("dispatch", DISPATCH_ANCHOR, before(DISPATCH_INSERT)),
+        ("dispatch", [DISPATCH_ANCHOR, DISPATCH_ANCHOR_0206], before(DISPATCH_INSERT)),
         ("intercept-primary", [S1_ANCHOR, S1_ANCHOR_016], after(S1_INSERT)),
         ("intercept-followup", [S2_ANCHOR, S2_ANCHOR_016], after(S2_INSERT)),
         ("forward-picker", [FWD_ANCHOR, FWD_ANCHOR_016], before(FWD_INSERT)),
