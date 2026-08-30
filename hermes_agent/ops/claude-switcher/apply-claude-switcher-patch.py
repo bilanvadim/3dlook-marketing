@@ -103,6 +103,35 @@ LOBBY_TOPIC_INSERT = (
     "            logger.debug(\"claude-switcher lobby topic open failed\", exc_info=True)\n"
 )
 
+# --- run.py: «Усі» must open a NEW chat, not continue the last one ----------
+# Upstream _recover_telegram_topic_thread_id does exactly what its docstring says:
+# "Pin DM-topic routing to the user's last-active topic" — a message that arrives
+# with NO message_thread_id (which is what the «Усі» / All Messages view sends;
+# measured 2026-08-30: raw=None is_topic_message=False) gets re-pointed at the most
+# recently bound topic. It runs inside the ADAPTER, ahead of text batching and far
+# ahead of the run.py turn hooks, so by the time anything else looks at the source
+# the lobby is already gone. That single behaviour is what made every "new chat"
+# attempt land in the previous conversation.
+#
+# Returning None here leaves the source in its lobby shape, which is what
+# maybe_open_lobby_topic() needs in order to open a fresh lane.
+#
+# Trade-off, deliberate: the docstring also claims Telegram "can omit
+# message_thread_id ... for some topic-mode DM replies". If that happens, such a
+# reply now opens a new chat instead of continuing its own. The DIAG-thread log
+# added the same day exists to catch it — every private inbound so far carried a
+# real thread id whenever it was genuinely in a topic.
+LOBBY_PIN_ANCHOR = (
+    "        is_lobby = not inbound or inbound in self._TELEGRAM_GENERAL_TOPIC_IDS\n"
+)
+LOBBY_PIN_INSERT = (
+    "        # [hermes-switcher] «Усі» opens a NEW chat instead of resuming the last\n"
+    "        # one — see maybe_open_lobby_topic(). Without this the lobby message is\n"
+    "        # pinned to the most recent topic before any hook can see it.\n"
+    "        if is_lobby:\n"
+    "            return None\n"
+)
+
 # --- run.py: primary turn intercept ----------------------------------------
 S1_ANCHOR = (
     "        message_text = await self._prepare_profile_scoped_inbound_message_text(\n"
@@ -579,6 +608,7 @@ def main():
     r = _patch_file(RUN_PY, [
         ("dispatch", [DISPATCH_ANCHOR, DISPATCH_ANCHOR_0206], before(DISPATCH_INSERT)),
         ("lobby-topic", LOBBY_TOPIC_ANCHOR, before(LOBBY_TOPIC_INSERT)),
+        ("lobby-no-pin", LOBBY_PIN_ANCHOR, after(LOBBY_PIN_INSERT)),
         ("intercept-primary", [S1_ANCHOR, S1_ANCHOR_016], after(S1_INSERT)),
         ("intercept-followup", [S2_ANCHOR, S2_ANCHOR_016], after(S2_INSERT)),
         ("forward-picker", [FWD_ANCHOR, FWD_ANCHOR_016], before(FWD_INSERT)),
