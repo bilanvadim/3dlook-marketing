@@ -3850,6 +3850,19 @@ async def _queue_busy_followup(runner: Any, event: Any, session_key: str) -> boo
     source = getattr(event, "source", None)
     if source is None:
         return False
+    # The «Новий чат» lane is an ENTRY POINT, never a session, so it is never
+    # "busy": a message there must always reach the turn path and open a fresh
+    # lane. Queueing it is what made the second new-chat request vanish
+    # (2026-08-30 09:20:46, "csw-queue: queued for 447975871#262875 → 1/2") —
+    # this queue sits on the adapter, AHEAD of the run.py hook, so the hook never
+    # saw the message at all and the user just got silence.
+    try:
+        _c, _, _t = str(session_key or "").partition("#")
+        if _t and _t == new_chat_lane(_c):
+            logger.info("csw-queue: %s — вхідний чат, у чергу не ставлю", session_key)
+            return False
+    except Exception:
+        logger.debug("csw-queue: spawner-lane check failed", exc_info=True)
     # Async-delegation / background completions re-enter as internal events.
     # They are not user requests and must never be queued as one.
     if getattr(event, "internal", False):
