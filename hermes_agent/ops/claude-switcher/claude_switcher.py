@@ -6135,6 +6135,18 @@ async def maybe_open_lobby_topic(runner: Any, event: Any, source: Any) -> bool:
         source.message_id = None
     except Exception:
         logger.debug("csw-lobby: could not clear message_id", exc_info=True)
+    # Carry the message itself across. Telegram cannot MOVE a message between
+    # lanes — the original stays where it was typed — so the bot reposts the text
+    # as the lane's opening line. Without it the new chat starts with an answer to
+    # a question that is not in it, which reads as a non sequitur once the lobby
+    # scrolls away. Sent AFTER the two lines above so it inherits the new lane and
+    # carries no stale reply anchor; it also becomes the lane's first in-topic
+    # message, which is what note_topic_anchor() wants for later deliveries.
+    try:
+        await _send(runner, source, f"📩 {text}")
+    except Exception:
+        logger.debug("csw-newchat: carrying the first message over failed", exc_info=True)
+
     logger.info("csw-newchat: %s [%s] → новий топік %s (%r)",
                 chat_id, "spawner" if from_spawner else "lobby", thread_id, name)
     return True
