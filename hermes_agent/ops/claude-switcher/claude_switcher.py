@@ -5516,11 +5516,15 @@ def _eligible_tabs(chat_id: str, exclude_thread: Optional[str] = None,
     real Telegram title, so a topic the user deleted/closed never appears. kind
     and any /name label come from switcher-state; kind defaults to a Claude turn.
     `exclude_thread` (the ephemeral topic the forward arrived in) is always
-    skipped, as is the General lobby.
+    skipped, as is the General lobby and the «Новий чат» spawner lane — that one
+    is an ENTRY POINT, not a destination. It was offered as an ordinary tab on
+    2026-08-30 and a forwarded photo got routed into it, which is exactly the
+    pollution it exists to avoid: writing there is supposed to open a fresh lane.
 
     When `live` is None (MTProto unavailable) it falls back to the previous
     state-based heuristic (may show stale topics, but keeps working)."""
     ex = str(exclude_thread) if exclude_thread not in (None, "") else None
+    spawn = new_chat_lane(chat_id)
     state = _load_state()
     titles = _topic_titles(chat_id)
 
@@ -5536,7 +5540,7 @@ def _eligible_tabs(chat_id: str, exclude_thread: Optional[str] = None,
     if live is not None:
         out: List[tuple] = []
         for t, info in live.items():          # MTProto order = most-recent first
-            if (ex and t == ex) or t in _GENERAL_TOPIC_IDS:
+            if (ex and t == ex) or t in _GENERAL_TOPIC_IDS or t == spawn:
                 continue
             kind, status = _kind_and_status(t)
             name = _get_label(f"{chat_id}#{t}")
@@ -5553,7 +5557,7 @@ def _eligible_tabs(chat_id: str, exclude_thread: Optional[str] = None,
         if not isinstance(entry, dict) or "#" not in k:
             continue
         c, _, t = k.partition("#")
-        if c != chat_id or not t or t in _GENERAL_TOPIC_IDS:
+        if c != chat_id or not t or t in _GENERAL_TOPIC_IDS or t == spawn:
             continue
         if ex_ and t == ex_:
             continue
