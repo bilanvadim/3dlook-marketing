@@ -5926,6 +5926,85 @@ async def _transcribe_forward(runner: Any, event: Any) -> str:
 # the adapter's group -1 prefilter records one through note_topic_anchor() as usual.
 _LOBBY_TITLE_MAX = 40
 
+# The «УСІ» / All Messages view CANNOT carry this behaviour. It is a client-side
+# aggregate, not a lane: editGeneralForumTopic on it answers TOPIC_ID_INVALID, and
+# messages typed there arrive stamped with the LAST OPENED topic's thread id —
+# measured 2026-08-30, a message sent from «УСІ» came in on thread 262071. The
+# lobby thread ids ("" / "1") have not been seen in this chat since topic mode was
+# switched on 2026-08-19, so a lobby trigger can never fire here.
+#
+# So the entry point is a REAL topic that we own and name «Новий чат». It behaves
+# exactly as «УСІ» was meant to: write in it and a fresh lane opens. Its id is kept
+# beside the anchors file — a topic the user deleted is re-created on next use.
+_NEW_CHAT_TITLE = "Новий чат"
+_NEW_CHAT_LANES: Dict[str, str] = {}
+_NEW_CHAT_LOADED = False
+
+
+def _new_chat_path() -> str:
+    return os.path.join(os.path.dirname(_state_path()), "csw-new-chat.json")
+
+
+def _new_chat_load_once() -> None:
+    global _NEW_CHAT_LOADED
+    if _NEW_CHAT_LOADED:
+        return
+    _NEW_CHAT_LOADED = True
+    try:
+        with open(_new_chat_path(), "r", encoding="utf-8") as f:
+            d = json.load(f)
+        if isinstance(d, dict):
+            for k, v in d.items():
+                _NEW_CHAT_LANES[str(k)] = str(v)
+    except FileNotFoundError:
+        pass
+    except Exception:
+        logger.debug("csw-newchat: state load failed", exc_info=True)
+
+
+def new_chat_lane(chat_id: str) -> Optional[str]:
+    """The thread id of this chat's «Новий чат» spawner lane, if known."""
+    _new_chat_load_once()
+    return _NEW_CHAT_LANES.get(str(chat_id))
+
+
+def set_new_chat_lane(chat_id: str, thread_id: Any) -> None:
+    _new_chat_load_once()
+    _NEW_CHAT_LANES[str(chat_id)] = str(thread_id)
+    try:
+        path = _new_chat_path()
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        fd, tmp = tempfile.mkstemp(dir=os.path.dirname(path), prefix=".csnc-", suffix=".tmp")
+        with os.fdopen(fd, "w", encoding="utf-8") as f:
+            json.dump(_NEW_CHAT_LANES, f)
+        os.replace(tmp, path)
+    except Exception:
+        logger.debug("csw-newchat: state persist failed", exc_info=True)
+
+
+async def ensure_new_chat_lane(runner: Any, source: Any) -> Optional[str]:
+    """Return the «Новий чат» lane, creating it when this chat has none yet."""
+    chat_id = str(getattr(source, "chat_id", "") or "")
+    if not chat_id:
+        return None
+    known = new_chat_lane(chat_id)
+    if known:
+        return known
+    adapter = _adapter_for(runner, source)
+    create = getattr(adapter, "_create_dm_topic", None)
+    if create is None:
+        return None
+    try:
+        tid = await create(chat_id=int(chat_id), name=_NEW_CHAT_TITLE)
+    except Exception:
+        logger.exception("csw-newchat: could not create the spawner lane")
+        return None
+    if not tid:
+        return None
+    set_new_chat_lane(chat_id, tid)
+    logger.info("csw-newchat: spawner lane for %s = %s", chat_id, tid)
+    return str(tid)
+
 
 def _lobby_topic_name(text: str) -> str:
     """Provisional lane title from the first message.
@@ -5948,16 +6027,26 @@ def _lobby_topic_name(text: str) -> str:
 
 
 async def maybe_open_lobby_topic(runner: Any, event: Any, source: Any) -> bool:
-    """A plain message in the DM lobby opens its own topic; the turn runs there.
+    """A message in the «Новий чат» lane opens its own topic; the turn runs there.
+
+    Name kept for the run.py seam: the patcher's present_test IS the inserted
+    call text, so renaming this would make the next patcher run insert a SECOND
+    copy of the hook rather than recognise the installed one.
+
+    Two triggers. The «Новий чат» spawner lane is the real one — see the note on
+    _NEW_CHAT_TITLE for why «УСІ» cannot be it. The DM lobby is kept as a
+    fall-back for chats where a true lobby message can still arrive; it is gated
+    on topic mode, because without it the lobby is the user's ONLY lane and
+    claiming it would take their chat away. The spawner lane needs no such gate:
+    its existence IS the opt-in.
 
     Mutates source.thread_id and returns True when it did. Called BEFORE the
     session key is computed, so everything downstream — session binding, the
-    topic-lane checks, the auto-rename lane — sees the new lane and not the lobby.
+    topic-lane checks, the auto-rename lane — sees the new lane.
 
-    Falls through (returns False) on anything it should not claim: internal
-    events, non-Telegram, non-DM, a real topic lane, topic mode off, an empty
-    message, and — deliberately — slash commands, which upstream reserves the
-    lobby for and which would otherwise each spawn a junk lane.
+    Falls through on anything it should not claim: internal events, non-Telegram,
+    non-DM, an ordinary topic lane, an empty message, and — deliberately — slash
+    commands, which would otherwise each spawn a junk lane.
     """
     if getattr(event, "internal", False):
         return False
@@ -5965,10 +6054,14 @@ async def maybe_open_lobby_topic(runner: Any, event: Any, source: Any) -> bool:
         return False
     if getattr(source, "chat_type", None) != "dm":
         return False
-    if str(getattr(source, "thread_id", "") or "") not in _GENERAL_TOPIC_IDS:
-        return False
     chat_id = str(getattr(source, "chat_id", "") or "")
     if not chat_id:
+        return False
+    thread = str(getattr(source, "thread_id", "") or "")
+    spawner = new_chat_lane(chat_id)
+    from_spawner = bool(spawner) and thread == spawner
+    from_lobby = thread in _GENERAL_TOPIC_IDS
+    if not (from_spawner or from_lobby):
         return False
     try:
         if event.get_command():
@@ -5979,17 +6072,16 @@ async def maybe_open_lobby_topic(runner: Any, event: Any, source: Any) -> bool:
     if not text:
         return False
 
-    # Topic mode is a per-chat flag in the SessionDB; without it the lobby is the
-    # user's ONLY lane and hijacking it would take their chat away.
-    check = getattr(runner, "_telegram_topic_mode_enabled", None)
-    if check is None:
-        return False
-    try:
-        if not await asyncio.to_thread(check, source):
+    if from_lobby:
+        check = getattr(runner, "_telegram_topic_mode_enabled", None)
+        if check is None:
             return False
-    except Exception:
-        logger.debug("csw-lobby: topic-mode check failed", exc_info=True)
-        return False
+        try:
+            if not await asyncio.to_thread(check, source):
+                return False
+        except Exception:
+            logger.debug("csw-lobby: topic-mode check failed", exc_info=True)
+            return False
 
     adapter = _adapter_for(runner, source)
     create = getattr(adapter, "_create_dm_topic", None)
@@ -6026,7 +6118,8 @@ async def maybe_open_lobby_topic(runner: Any, event: Any, source: Any) -> bool:
         source.message_id = None
     except Exception:
         logger.debug("csw-lobby: could not clear message_id", exc_info=True)
-    logger.info("csw-lobby: %s → новий топік %s (%r)", chat_id, thread_id, name)
+    logger.info("csw-newchat: %s [%s] → новий топік %s (%r)",
+                chat_id, "spawner" if from_spawner else "lobby", thread_id, name)
     return True
 
 
