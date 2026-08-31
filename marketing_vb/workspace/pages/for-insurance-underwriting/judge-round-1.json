@@ -1,0 +1,37 @@
+{
+  "round": 1,
+  "date": "2026-08-31",
+  "judge": "fresh general-purpose subagent, clean context, given only the draft, fact-sheet.md, the scorecard and the Kit slot list",
+  "draft_scored": "page.md as of 17:19, before the opinion paragraph was added to the workflow slot at 17:21. No other change since.",
+  "scores": {
+    "proof_of_belonging": 10,
+    "claims_discipline": 11,
+    "uniqueness_vs_parent": 9,
+    "conversion": 10,
+    "buyer_language": 9,
+    "human_copy": 7,
+    "search_ai_visibility": 7,
+    "place_in_site": 4,
+    "design_technical": 2
+  },
+  "weights": {
+    "proof_of_belonging": 20,
+    "claims_discipline": 15,
+    "uniqueness_vs_parent": 15,
+    "conversion": 15,
+    "buyer_language": 10,
+    "human_copy": 10,
+    "search_ai_visibility": 10,
+    "place_in_site": 5,
+    "design_technical": 5
+  },
+  "total": 69,
+  "threshold": 85,
+  "gate": "NOT TAKEN",
+  "hard_fails": [
+    "Fewer than two case studies from this vertical. The slot-10 block 'Where FitXpress runs today' states life underwriting is at pilot stage and supplies zero underwriting cases, substituting two adjacent-vertical deployments (UK online-pharmacy BMI check, weight-management tracking) with no per-case figure and no link to /case-studies/. Slot 10 requires 2 cards minimum from this vertical and says an adjacent-vertical case breaks the page's promise."
+  ],
+  "lowest": "proof_of_belonging",
+  "one_fix": "Rebuild the 'Where FitXpress runs today' block around numbers from the underwriting pilot itself instead of company-wide volume: replace '3DLOOK has been building body-measurement models since 2016 and processed 112,100 scans across 67 active customers in 2025' (a figure slot 3 explicitly rejects for a vertical page, and whose publication rights the fact sheet lists as unconfirmed) with two labelled cards carrying pilot figures a carrier can check, each linked to /case-studies/ and marked 'pilot, life underwriting', keeping the UK pharmacy deployment as a clearly-labelled third adjacent card rather than as the block's lead evidence. Pull the strongest of those pilot numbers into the hero spec row so at least one of the three oversized numerals is a vertical figure rather than a generic product spec.",
+  "builder_note_after_the_fact": "The one_fix is not implementable. It asks for pilot figures (carrier type and market, scans completed, first-attempt capture-success rate, share of cases with a material disclosed-versus-captured gap) that do not exist in any source file, because no life carrier pilot has run. Producing them would mean fabricating proof, which is itself a hard fail and the thing the Kit exists to prevent. Rounds 2 and 3 were not run: the hard fail is the same zero-case-study fact that failed G-I before drafting started, and no edit to the copy can clear it. Handed over flagged, per gates-and-scorecard.md: 'gate not taken, 69/85, weakest axis = proof_of_belonging'."
+}
