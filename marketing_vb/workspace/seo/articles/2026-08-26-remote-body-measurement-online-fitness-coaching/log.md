@@ -273,3 +273,103 @@ audience-reaction promise review item 4 removed from the body.
 
 Back at **checkpoint 2**, awaiting Vadim's approval of text plus meta together, and answers to the six
 decision items. No pipeline action until then. Publishing to the CMS stays manual (CLAUDE.md section 10).
+
+## 2026-08-31 — Revision 2 (seo-editor, finished in the main session)
+
+- **Input:** `review2-comments.md` (Review 2 tab of the review doc, 20 corrections), frozen base
+  `review2-version2.md` == `draft-v3-revision1.md`.
+- **Artifact:** `draft-v4-revision2.md` (status: revision2). Item-by-item detail in `changelog-revision2.md`.
+- **Governing ruling:** Vadim, 2026-08-31 — «всі формулювання тут точні і бери як головний істочнік».
+  Review 2 outranks the internal guardrail files on wording for this article. This reverses revision 1's
+  medical-device decision.
+- **Process note:** the revision agent was cut off by an API spend limit after writing the draft but before
+  the changelog and the detector run. Draft verified, detector run, `word_count` filled in and the changelog
+  written in the main session. No draft content re-generated.
+- **Detector (run in the main session):** `2750 words · AI density 1.09/1000 (budget 6.0) -> low ·
+  VERDICT: HARD FAILS (2)`, both `positioned_as` (scope note + limitations). `house_rule_violations: []`.
+  Both fails are the approved exception; nothing else fails. The article deliberately no longer runs CLEAN.
+- **Length:** 2,644 body words including tables (2,348 excluding table rows; detector tokenises 2,750).
+  Down from 2,916 — 9.3% as shipped, 13.3% excluding the 118 words of review-commissioned citations.
+- **External sources added (first in this article):** Ugras S., *Libyan J Med* 2020;15(1):1741904 (PMID
+  32182203) for BIA hydration sensitivity; Nana et al., *Int J Sport Nutr Exerc Metab* 2015;25(2):198-215
+  (PMID 25029265) for DXA protocol standardization. Both verified via NCBI E-utilities, not PubMed HTML.
+  Closes the "zero external sources" open item.
+- **Frontmatter cleaned** of production notes (`changes_summary`, `self_check`, `revision_note`) per the
+  review; that material now lives in the changelog and here.
+- **Open for Vadim:** guardrail/detector exception for "positioned as"; claim-record updates (FX-006 ±,
+  FX-007 SSE-S3, repeatability convention); the controller/processor statement is not yet in
+  `approved_claims`; the older `ai-body-scanning-for-fitness` page decision.
+
+### Next step
+`draft-v4-revision2.md` → `seo-publisher` for the final publish pack (meta regenerated against the new
+text, checklists, CMS body with no production notes).
+
+## 2026-08-31 — Publish stage, final pack (seo-publisher)
+
+- **Input:** `draft-v4-revision2.md` (status: revision2, the only source for the body), `changelog-revision2.md`,
+  `review2-comments.md`, `plan.md`, `context-pack.md`. The morning package (built on `draft-v3-revision1.md`)
+  was preserved unedited as `publish-package-v2-20260831.md` before `publish-package.md` was rewritten.
+- **Governing ruling honoured:** Vadim, 2026-08-31 — «всі формулювання тут точні і бери як головний істочнік».
+  Review 2's wordings were treated as the primary source and were not re-opened.
+- **Declared exception, placed at the top of the package as section 0, not buried in the checklist:** the
+  article ships with **2 detector hard fails**, both `positioned_as`, both the phrase "FitXpress is not
+  positioned as a medical device" (L19 scope note, L146 boundary section). Approved by the ruling, so it did
+  **not** trigger a STOP and nothing went back to `seo-editor`.
+- **Detector run twice in this session** (`--summary` and JSON), output quoted verbatim in package section 2:
+  `2750 words · AI density 1.09/1000 (budget 6.0) -> low · VERDICT: HARD FAILS (2)`,
+  `hard_fails` = one entry, category `positioned_as`, count 2; `house_rule_violations: []`;
+  `markers_by_category: {positioned_as: 2, corrective_contrast: 1}`; 0 em dashes, 0 punch triads,
+  rhythm variation 0.51. **No fail outside `positioned_as`**, which is the condition that would have forced a
+  STOP. Exit code 0 on both runs.
+- **Meta regenerated against the final text, not carried over.** Recommended title
+  *"Online Fitness Coaching Programs: Remote Body Measurement"* (57 chars, head term at character 1, no brand
+  suffix because the title exceeds 49 chars). Recommended description *"Online fitness coaching programs can
+  capture client body data from a guided two-photo scan. See how it fits check-ins and what a pilot should
+  measure."* (150 chars). Two changes against the morning version: "guided phone scan" became "guided
+  two-photo scan" to match the article's own mechanism wording after review items 4 and 5, and the pilot
+  pointer was re-verified against the final structure (the `How to evaluate a pilot` section with its seven
+  measures is still there) rather than assumed. No promised outcome, no retention effect, no "precise".
+- **Checklists verified against the file, item by item: SEO 14/15, strategy 9/9.** The one ❌ is word count
+  against `plan.md`'s ~2,000 (range 1,900-2,300): body is 2,644 words including tables, independently
+  recounted and matching the frontmatter's `word_count: 2646` exactly, with the method stated. Two items are
+  marked ⚠️ rather than ✅ (terminology guardrails, medical framing) because they carry the authorised
+  "positioned as" departure; the package states plainly that without the ruling those two plus the detector
+  item would be ❌ and it would say STOP.
+- **Freshly verified this round:** two external PubMed citations present at L77 on descriptive anchors
+  (closes the "zero external sources" gap that capped `quality-controller` category B); FAQ down to 5
+  questions with answers of 3/3/2/2/2 sentences; frontmatter reduced to nine keys with no production notes;
+  zero `GLP-1`, zero `DEXA`, zero `±`, zero em dashes; internal links 1 up / 1 sideways / 1 trust / 2 down;
+  BOFU URL `/fitxpress/for-connected-and-digital-fitness/` re-checked live (HTTP 200, no redirect) and
+  matching `content-plan.md` line 75.
+- **CMS-ready body** in package section 7: frontmatter removed, all 11 lines carrying
+  `<!-- claim: -->` / `<!-- source: -->` annotations stripped, verified by diff against the draft body with
+  no other character changed, no double spaces, no trailing whitespace. Zero production notes, revision
+  commentary, detector commentary or reviewer-conflict discussion in the publishable text.
+- **Open items split rather than listed flat.** Blocks publishing (2): B1, record the "positioned as"
+  exception in `terminology-guardrails.md` plus a `detect-ai-tells.py` allowlist entry, or accept it as a
+  one-off, so a live article failing the house detector is a decision and not a surprise; B2, redirect or
+  rescope the older `ai-body-scanning-for-fitness` page, since publishing creates a second live URL in the
+  same hub. Informational (3): I1 claim records still carry `±3.5%` and SSE-S3; I2 `< 1 cm` vs "less than
+  1 cm"; I3 the controller/processor statement has no claim record. Recorded as closed and not re-listed:
+  the BOFU URL, the sideways-link omission, the zero-external-sources gap, and the medical-device wording
+  conflict itself.
+- **Not modified:** `draft-v4-revision2.md`, `changelog-revision2.md`, `review1-comments.md`,
+  `review2-comments.md`, `review1-version1.md`, `review2-version2.md`, the earlier drafts, and the two
+  earlier publish packages.
+
+### Status
+
+Back at **checkpoint 2**, awaiting Vadim's approval of the text and the meta together, plus a yes/no on the
+two blocking items. No pipeline action until then. Publishing to the CMS stays manual (CLAUDE.md §10).
+
+### Files
+- `publish-package.md` (rewritten against `draft-v4-revision2.md`)
+- `publish-package-v2-20260831.md` (morning package, preserved unedited)
+- `log.md` (this entry)
+
+### Post-pack correction, 2026-08-31
+Five-item output list followed by "Those four data types are not interchangeable" (and the same count in the
+FAQ) read as an arithmetic slip under the list. Both sentences now drop the count; the four-way distinction
+stays in the list. Draft and publish-package §7 edited together and diff-verified identical. Word counts
+resynced across draft, package, changelog and log: 2,644 including tables / 2,348 excluding table rows /
+2,750 detector. Detector unchanged: HARD FAILS (2), both `positioned_as`.
