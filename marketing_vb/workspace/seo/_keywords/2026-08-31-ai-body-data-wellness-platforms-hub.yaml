@@ -1,0 +1,85 @@
+# CONSOLIDATED keyword input for slug 2026-08-31-ai-body-data-wellness-platforms-hub
+# Assembled by orchestrator from 5 real scripts/ahrefs-keywords.py runs on 2026-08-31.
+# Every figure below is copied verbatim from the per-seed files listed in `component_pulls`.
+# null volume/difficulty = Ahrefs has NO figure. It is NOT zero. Do not conflate.
+source: "ahrefs api v3 (keywords-explorer)"
+country: "us"
+pulled: "2026-08-31"
+plan: "Standard 2022, billed monthly"
+units_spent_total: 3408
+
+component_pulls:
+  - workspace/seo/_keywords/2026-08-31-wellness-hub-corporate-wellness-platform.yaml
+  - workspace/seo/_keywords/2026-08-31-wellness-hub-wellness-app-engagement.yaml
+  - workspace/seo/_keywords/2026-08-31-wellness-hub-body-composition-tracking-app.yaml
+  - workspace/seo/_keywords/2026-08-31-wellness-hub-employee-wellness-program-software.yaml
+  - workspace/seo/_keywords/2026-08-31-wellness-hub-body-scanning-app.yaml
+
+# The topic as Vadim/content-plan phrases it
+seed: "ai body data for wellness platforms"
+seed_has_data: false
+seed_metrics: null
+seed_note: >
+  The exact hub phrasing has NO measured demand in Ahrefs. Neither does
+  "ai body data for", "data for wellness platforms", "for wellness platforms",
+  or "wellness app engagement". This is a finding, not an error: the hub name is
+  an internal architecture label, not a search phrase. A head term with real
+  demand must be chosen and stated explicitly in plan.md.
+
+variants:
+  - {keyword: "ai body data for wellness platforms", volume: null, difficulty: null}
+  - {keyword: "ai body data",            volume: 10,    difficulty: null}
+  - {keyword: "ai body",                 volume: 400,   difficulty: 8}
+  - {keyword: "wellness platforms",      volume: 150,   difficulty: 2}
+  - {keyword: "wellness platform",       volume: 150,   difficulty: 36}
+  - {keyword: "wellness app",            volume: 1000,  difficulty: 1}
+  - {keyword: "app engagement",          volume: 400,   difficulty: 7}
+  - {keyword: "corporate wellness platform", volume: 500, difficulty: 11}
+  - {keyword: "corporate wellness",      volume: 1000,  difficulty: 3}
+  - {keyword: "employee wellness program", volume: 700, difficulty: 47}
+  - {keyword: "employee wellness",       volume: 2000,  difficulty: 78}
+  - {keyword: "wellness program software", volume: 100, difficulty: 1}
+  - {keyword: "employee wellness program software", volume: 40, difficulty: null}
+  - {keyword: "body composition",        volume: 32000, difficulty: 32}
+  - {keyword: "body composition tracking", volume: 50,  difficulty: null}
+  - {keyword: "body composition tracking app", volume: 10, difficulty: null}
+  - {keyword: "body scanning",           volume: 450,   difficulty: 43}
+  - {keyword: "body scanning app",       volume: 60,    difficulty: 26}
+  - {keyword: "3d body scanning app",    volume: 100,   difficulty: null}
+
+idea_seed: "corporate wellness platform"
+ideas:
+  # from the corporate-wellness-platform pull
+  - {keyword: "corporate wellness platform", volume: 500, difficulty: 11}
+  - {keyword: "benefits of joining a corporate wellness platform", volume: 40, difficulty: null}
+  - {keyword: "corporate wellness platform integrations", volume: 30, difficulty: null}
+  - {keyword: "corporate employee wellness platform", volume: 30, difficulty: null}
+  - {keyword: "corporate wellness tracking platform", volume: 20, difficulty: null}
+  - {keyword: "benefits of corporate wellness platform", volume: 20, difficulty: null}
+  - {keyword: "corporate wellness platform partnerships", volume: 10, difficulty: null}
+  - {keyword: "best corporate wellness platform for enterprises", volume: 10, difficulty: null}
+  - {keyword: "corporate wellness platform requirements", volume: 10, difficulty: null}
+  - {keyword: "corporate wellness platform success stories", volume: 10, difficulty: null}
+  - {keyword: "best corporate wellness platform for remote teams", volume: 10, difficulty: null}
+  # from the wellness-app pull
+  - {keyword: "wellness app", volume: 1000, difficulty: 1}
+  - {keyword: "wellness app development", volume: 600, difficulty: 0}
+  - {keyword: "wellness coach app", volume: 200, difficulty: 0}
+  - {keyword: "wellness tracker app", volume: 150, difficulty: 5}
+  - {keyword: "workplace wellness app", volume: 150, difficulty: 1}
+  - {keyword: "employee wellness app", volume: 100, difficulty: 6}
+  - {keyword: "best overall wellness app for tracking health", volume: 90, difficulty: null}
+  - {keyword: "corporate wellness app development", volume: 80, difficulty: null}
+
+# Vendor-brand ideas seen in the pull. Recorded for the P1 "Top Employee Rewards
+# Platforms" listicle row, NOT for this hub. Named-vendor targeting is out of
+# scope for a hub page (about-me.md: never compare against named competitors).
+vendor_brand_ideas_reserved_for_p1_listicle:
+  - {keyword: "wellable corporate wellness platform", volume: 30, difficulty: null}
+  - {keyword: "wellhub corporate wellness platform", volume: 30, difficulty: null}
+  - {keyword: "virgin pulse corporate wellness platform", volume: 20, difficulty: null}
+  - {keyword: "gympass corporate wellness platform", volume: 10, difficulty: null}
+  - {keyword: "personify health corporate wellness platform", volume: 10, difficulty: null}
+  - {keyword: "corehealth corporate wellness platform", volume: 10, difficulty: null}
+  - {keyword: "vantage fit corporate wellness platform", volume: 10, difficulty: null}
+  - {keyword: "yumuuv corporate wellness platform", volume: 10, difficulty: null}

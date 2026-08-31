@@ -1,0 +1,224 @@
+context_pack:
+  created: 2026-08-31
+  product: fitxpress
+  track: seo
+  channel: blog
+  profile: company
+  objective: "Net-new P0 main hub — AI Body Data for Wellness Platforms: Progress Tracking, Personalization, and Engagement"
+  target_agent: seo-planner
+
+  company_oneliner: "3DLOOK turns two smartphone photos into 80+ body measurements and a 3D model in under 45 seconds."
+
+  product_summary: |
+    FitXpress: structured body data (80+ measurements, BMI, body composition, 3D model)
+    captured remotely from 2 photos. For wellness platforms it is an engagement and
+    personalization input layer — baseline + repeat check-ins, visual progress comparison,
+    and time-stamped structured records for program reporting. It is not a clinical,
+    diagnostic, or decisioning system.
+
+  approved_claims:
+    - {id: FX-001, text: "96-97% overall accuracy vs expert manual measurements", source: "2025 Accuracy & Repeatability Study"}
+    - {id: FX-002, text: "Typical absolute error 1.5-2.0 cm", source: "2025 Accuracy & Repeatability Study"}
+    - {id: FX-003, text: "Scan-to-scan variance < 1 cm", source: "2025 Accuracy & Repeatability Study"}
+    - {id: FX-004, text: "95%+ overall repeatability consistency", source: "2025 Accuracy & Repeatability Study"}
+    - {id: FX-005, text: "Weight estimation +/-3.5% average error margin", source: "FitXpress deck, real-world conditions"}
+    - {id: FX-006, text: "Under 45 seconds from photo to results", source: "FitXpress product spec"}
+    - {id: FX-007, text: "2 photos required (front + side)", source: "Product spec"}
+    - {id: FX-008, text: "80+ body measurements", source: "Product spec"}
+    - {id: FX-009, text: "Body composition outputs: BMI, BMR, fat %, lean mass, fat mass, essential fat, beneficial fat", source: "Product spec"}
+    - {id: FX-010, text: "9+ years of training data; 150,000+ photographs; 30,000+ 3D scans; 430,000+ individual measurements", source: "FitXpress deck, Apr 2025"}
+    - {id: FX-011, text: "Demographic coverage: age 16-78, weight 38-210 kg, height 150-205 cm; 48% male / 52% female; US + Europe", source: "FitXpress deck, Apr 2025"}
+    - {id: FX-012, text: "Yazen: 34,000 scans in 2025, weight-loss management support", source: "Internal customer breakdown"}
+    - {id: FX-013, text: "UK Meds: 7,500 scans in 2025, BMI verification for online pharmacy", source: "Internal customer breakdown"}
+    - {id: FX-014, text: "HIPAA maintained (US healthcare contexts); follows GDPR principles for EU processing", source: "compliance.md"}
+    - {id: FX-016, text: "Per-site scan-to-scan variance: chest 0.60 cm, waist 0.89 cm, low hips 0.86 cm, knee 0.12 cm, calf 0.12 cm, ankle 0.07 cm", source: "2025 Accuracy & Repeatability Study (girth measurements)"}
+    - {id: FX-015, text: "ISO 8559-1:2017 multi-company benchmark, 3D-scanner-average reference: session-to-session repeatability 0.40 cm", source: "about-me.md accuracy framing — SEPARATE benchmark, never combined with FX-001/002/003"}
+
+  claim_gaps:
+    - "NO wellness-app or employer/insurer wellness customer with published numbers exists in proof-points.md. Yazen (FX-012) and UK Meds (FX-013) are GLP-1/pharmacy, not wellness. Do NOT repurpose them as wellness proof."
+    - "Wellness Rewards market sizing (TAM $50-200M/yr, SAM US+EU/UK $10-40M/yr) lives in use-cases/fx-wellness-rewards.md as an INTERNAL commercial estimate. It is not a citable published market figure. Do not publish it."
+    - "No engagement/retention uplift number exists for any FitXpress wellness deployment. Any 'improves retention by X%' claim would be fabricated."
+
+  banned_claims:
+    - "most accurate body scanning"
+    - "guaranteed compliance / makes you compliant"
+    - "FDA-cleared / medical device"
+    - "SOC 2 certified"  # NOT certified yet — in progress; confirm with Vadim before any mention
+    - "diagnose, screen for, or detect any condition"
+    - "clearance, fitness-for-duty, eligibility, or reward decisioning"
+    - "replaces DEXA, BIA, a calibrated scale, a clinician, or a health assessment"
+    - "automatic fraud detection"
+    - "any number not in approved_claims"
+    - "named competitor comparisons (Prism / Bodygram / Size Stream / Wellhub / Virgin Pulse)"
+    - "pricing, stated or implied"
+
+  banned_words:
+    - revolutionary
+    - game-changing
+    - transforming everything
+    - AI-powered future
+    - unlocking limitless possibilities
+    - leverage
+    - utilize
+    - harness
+    - robust
+    - seamless
+    - comprehensive
+    - delve
+    - navigate (metaphorical)
+    - unlock
+    - unleash
+    - cutting-edge
+
+  tone:
+    voice: "clear, specific, useful for B2B buyers; operational language, no hype"
+    register: "SOFTER than the health verticals. Wellness is not a sensitive vertical — no heavy clinical scope note, but no clinical vocabulary either."
+    length: "hub article, 2,600-3,200 words"
+    format: "buyer problem first, short-answer section early, plain descriptive headers"
+    dont: "no clinical / diagnostic / clearance / decisioning framing; no vague AI language"
+
+  voice_fingerprint:
+    - "The reframe move: turn the obvious question into the sharper one ('engagement for which member, at which point in the program?')"
+    - "Declarative and unhurried; concrete over abstract — every claim carries a number, source, or disclosed limit"
+    - "Honest about limits in the same breath as capability"
+    - "Buyer framing, not 'you'-spam; headers plain and descriptive, never clever"
+    - "Compare by role, not by hype — never a clean sweep"
+  claims_discipline:
+    - "NEVER: diagnose; make treatment / underwriting / reward / eligibility decisions; replace clinician, DEXA, BIA or calibrated scale; guarantee compliance; detect fraud automatically"
+    - "Position AS: mobile body-scanning / structured-data-capture / engagement and documentation layer supporting human review"
+  accuracy_framing:
+    - "Never reduce accuracy to one universal number — qualify by decision, reference method, capture protocol, population, tolerance"
+    - "Repeatability written as `< 1 cm`; the two benchmarks (FX-001/002/003 vs FX-015) are NEVER combined"
+    - "Canonical source is the accuracy framework article; link, do not restate"
+
+  examples:
+    - file: "workspace/seo/articles/ai-body-data-health-hub/"
+      note: "Main Health hub, published 2026-07-24 as `ai-body-data-health-hub`, ~2,800 words — closest structural precedent for a hub page"
+    - file: "workspace/seo/articles/glp-1-market-hub/"
+      note: "GLP-1 hub, refreshed & republished 2026-08-28 — most recent hub-level work"
+
+  competitors_context: |
+    Wellness-platform buyers compare body-data vendors on integration effort, capture
+    reliability across a distributed population, and privacy posture — not on a single
+    accuracy number. Our angle: engagement workflow (visual progress comparison +
+    body-data personalization) layered on disclosed accuracy and repeatability, with an
+    explicit "we provide / you build" API boundary. Never name competitors on a hub page.
+
+  icp_context:
+    segment: "Wellness Platforms — two adjacent buyers on one page"
+    segment_a:
+      who: "Wellness & coaching apps, corporate wellness platforms, digital wellbeing products (audience.md layer 3 — Connected & Digital Fitness / corporate wellness)"
+      buyer_persona: "Head of Product / VP Engagement / VP Retention / CPO"
+      pain_points:
+        - "Engagement plateaus after the first 90 days; churn without visible progress"
+        - "Personalization limited to surveys and stated goals"
+        - "Crowded market competing on UX with little product differentiation"
+        - "Weight alone is a noisy, discouraging progress signal"
+      hero_message: "Personalize programs and make real progress visible, from two photos."
+      segment_hook: "Visible transformation plus body-data personalization -> engagement, retention, premium-tier monetization. Tone is lighter and less clinical here."
+      do_not_say:
+        - "No medical, diagnostic, or clearance language"
+        - "Do not blur into GLP-1 clinical workflows or into wellness-rewards verification (that is the sub-hub)"
+    segment_b:
+      who: "Enterprise employers, health plans, benefits/wellness platform administrators, population-health vendors (audience.md layer 4 — Wellness Rewards Verification)"
+      buyer_persona: "Head of Wellness / VP Member Engagement / Benefits & Wellness Director / VP Population Health"
+      pain_points:
+        - "Manual wellness verification is an administrative burden; self-report is unreliable"
+        - "Hybrid and remote workforces make onsite screening impractical"
+        - "Incentive fairness and auditability are at risk"
+        - "Pressure to prove ROI on wellness spend"
+      hero_message: "Verify wellness progress remotely to reduce disputes, boost participation, and improve program reporting."
+      segment_hook: "Remote, standardized, audit-ready verification; fraud-prevention SUPPORT; higher participation; fairer incentives across distributed populations."
+      do_not_say:
+        - "Medical or diagnostic claims"
+        - "Implying the reward or eligibility decision is automated"
+        - "Keep claims soft"
+    routing_rule: "The hub speaks primarily to segment_a (the gap the strategy identifies) and routes segment_b DOWN to the Wellness Rewards Verification sub-hub rather than re-explaining rewards verification."
+
+  content_strategy:
+    hub: "Wellness Platforms (Hub #8)"
+    cluster: "Main hub"
+    intent: "Hub"
+    action_type: "create-net-new"   # GATE: seo-planner Phase 0 acts on this
+    priority: "P0"
+    existing_urls:
+      - "https://3dlook.ai/content-hub/beyond-bmi-business/  # broad educational bridge — internal link, NOT a refresh target here"
+      - "https://3dlook.ai/content-hub/wellness-rewards-verification-employers-insurers-using-ai-3d-body-scanning/  # employer/insurer SUB-hub — must not be replaced"
+    cannibalization_guardrail: "Keep wellness softer: engagement, personalization, rewards, and progress visibility. Avoid clinical or clearance-decision framing."
+    recommendation: >
+      Wellness Rewards Verification is already a strong use-case hub for employer and insurer
+      wellness reward programs. It should not be replaced. However, it is too narrow to serve as
+      the full Wellness hub because it focuses on rewards verification, not broader wellness app
+      engagement, personalization, body composition tracking, coaching, and product integration.
+      Use Wellness Rewards as the employer/insurer sub-hub, use Beyond BMI as the broad educational
+      bridge, and create a separate Wellness Platforms hub only if wellness apps become a priority ICP.
+    vertical_boundary: >
+      Wellness owns engagement, personalization, progress visibility, rewards, wellness apps,
+      employee wellness, and coaching. Keep claims softer. Avoid medical, diagnostic, clearance,
+      or clinical decisioning language. Do not annex fitness-app product strategy (Hub #4 owns it),
+      GLP-1 clinical workflows (Hub #6), or insurance underwriting (Hub #7).
+    internal_link_targets:
+      up: "https://3dlook.ai/content-hub/ai-body-data-health-hub/  # Main Health Hub"
+      sideways:
+        - "https://3dlook.ai/content-hub/wellness-rewards-verification-employers-insurers-using-ai-3d-body-scanning/  # sub-hub, employer/insurer"
+        - "https://3dlook.ai/content-hub/beyond-bmi-business/  # educational bridge"
+        - "https://3dlook.ai/content-hub/ai-in-fitness-industry/  # Hub #4, adjacent"
+        - "https://3dlook.ai/content-hub/how-to-measure-body-composition/  # body-composition methods"
+      down: "https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/"
+      trust:
+        - "https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/  # Trust Asset #1, accuracy framework"
+        - "Data, Privacy, Security & Regulatory FAQ  # PLANNED, NOT PUBLISHED — see open_items"
+
+  published_inventory:
+    already_live: false   # the broad Wellness Platforms hub does not exist as a page
+    already_live_caveat: >
+      published-articles-inventory.md labels `wellness-rewards-verification...` (Mar 30, 2026) as
+      "Hub" for Wellness (Hub #8) and draws it as the hub node in the internal-linking map. The
+      content plan explicitly demotes it to employer/insurer SUB-hub. Publishing this page
+      RE-PARENTS the wellness cluster. That is an architecture change, not just a new article —
+      flag at checkpoint 1.
+    published_hub_articles:
+      - {slug: "wellness-rewards-verification-employers-insurers-using-ai-3d-body-scanning", title: "Wellness Rewards Verification", published: "2026-03-30", role: "current hub -> becomes sub-hub"}
+      - {slug: "beyond-bmi-business", title: "Beyond BMI", published: "2025-07", role: "education; filed under GLP-1/Weight Loss in inventory, used as wellness bridge by the plan"}
+    recently_published:
+      - {slug: "glp-1-market", published: "2026-08-28", hub: "GLP-1", note: "hub refresh"}
+      - {slug: "online-pharmacy-bmi-verification-a-2026-compliance-guide", published: "2026-08-24", hub: "GLP-1 / Telehealth"}
+      - {slug: "top-7-remote-body-composition-tools-glp-1-clinics", published: "2026-08-21", hub: "GLP-1"}
+      - {slug: "mobile-body-scanning-patient-engagement", published: "2026-08-14", hub: "Telehealth"}
+    refresh_status: "All P0 hubs refreshed. Only remaining P0 gaps: Data/Privacy/Security & Regulatory FAQ (unpublished) and this Wellness Platforms hub."
+
+  keywords_raw:
+    source: "ahrefs api v3"
+    pulled: "2026-08-31"
+    file: "workspace/seo/_keywords/2026-08-31-ai-body-data-wellness-platforms-hub.yaml"
+    seed: "ai body data for wellness platforms"
+    seed_has_data: false
+    seed_metrics: null
+    note: "5 seed pulls, 3,408 units. Full variants/ideas in the file above — read it, do not re-pull."
+
+  backlink_report:
+    path: "workspace/research/backlinks/"
+    source: "Google Sheet 'Backlink  Analysis Report' (owner asselya@3dlook.me), Ahrefs export, snapshot 2026-08-31"
+    scope: "site-wide, NOT article-specific — reusable for any SEO planning needing authority / internal-link-donor decisions"
+    findings_for_this_hub:
+      beyond_bmi_backlinks: 1
+      wellness_rewards_backlinks: 0   # URL absent from all-links.csv entirely (14,680 rows)
+      inherits_external_authority: false
+      health_segment_total: 1005      # vs Apparel 2398, General 9999
+      internal_link_donors:
+        - {url: "/content-hub/ai-in-fitness-industry/", backlinks: 326}
+        - {url: "/content-hub/the-potential-of-ai-in-telehealth/", backlinks: 263}
+        - {url: "/content-hub/glp-1-market/", backlinks: 183}
+        - {url: "/mobile-tailor/", backlinks: 153}   # apparel product page — excluded, no credible wellness link
+        - {url: "/content-hub/top-fitness-industry-trends/", backlinks: 36}
+        - {url: "/content-hub/weight-loss-industry-overview/", backlinks: 33}
+      bofu_target_backlinks: 1        # /fitxpress/for-connected-and-digital-fitness/ — cannot pull the hub up
+      pivot_tab_backing: "Hand-written strategy notes, not a pivot table. P1 for AI in fitness reads 'Build a full Health cluster around it'; effort split allocates 40% to Health cluster expansion."
+      url_hygiene: "Export shows duplicate/parameterised variants (/content-hub/ai-in-fitness/, /content-hub/ai-fitness-app/, telehealth without trailing slash, ?ref= forms). Internal links must use canonical trailing-slash URLs."
+
+  open_items:
+    - "Backlink Analysis Report: RECEIVED 2026-08-31, applied above. Note that 'Backlink Analysis Report' is ALSO the value of the `Seed Idea Source` column on ~40 rows of content-plan.csv — that column records topic provenance. Both readings accounted for."
+    - "Data, Privacy, Security & Regulatory FAQ is a PLANNED trust asset with no URL yet. Privacy links in this outline are placeholders."
+    - "SOC 2 is NOT certified (in progress). Do not mention."
+
+  exclusions: null
