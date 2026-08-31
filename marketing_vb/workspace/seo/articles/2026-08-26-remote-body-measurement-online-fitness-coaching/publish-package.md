@@ -2,16 +2,26 @@
 slug: remote-body-measurement-online-fitness-coaching
 product: fitxpress
 status: ready_for_review
-created: 2026-08-26
-checkpoint: 2 (final text + meta) — awaiting Vadim's approval
-source_draft: draft-v2-final.md
+created: 2026-08-31
+revision: 1
+checkpoint: "2 (re-run) - final text + meta, regenerated after external review round 1"
+source_draft: draft-v3-revision1.md
+review_source: review1-comments.md
+supersedes: "publish-package-v1-20260826.md (written 2026-08-26 against draft-v2-final.md, structure now obsolete)"
 ---
 
-# Publish Package — remote-body-measurement-online-fitness-coaching
+# Publish Package: remote-body-measurement-online-fitness-coaching (revision 1)
 
-> **This is checkpoint 2.** Checkpoint 1 (plan.md / keywords / strategy fit) was approved by Vadim on
-> 2026-08-26. This package is the final text + meta together for sign-off. **STOP after this file is
-> written — do not publish until Vadim approves in Telegram.**
+> **This is a re-run of checkpoint 2.** The first package (2026-08-26) was built on `draft-v2-final.md`.
+> An external editorial review (`review1-comments.md`, 8 priority items) then reordered the article,
+> deleted the retention economics, added two new sections and rewrote several claim sentences, so the old
+> meta description no longer describes the text it was written for. The old package is preserved verbatim
+> at `publish-package-v1-20260826.md` and is superseded by this file.
+>
+> **Single source for the body: `draft-v3-revision1.md`.** `draft-v2-final.md` is history.
+>
+> **STOP after this file. Do not publish until Vadim approves the text and the meta together, and until
+> the six decision items in section 4A are answered.**
 
 ---
 
@@ -20,369 +30,666 @@ source_draft: draft-v2-final.md
 **Recommended title (57 chars):**
 Online Fitness Coaching Programs: Remote Body Measurement
 
-**Recommended description (154 chars):**
-Coaches can't tape-measure remote clients. See how a guided smartphone scan gives online fitness coaching programs structured progress data clients trust.
+**Recommended description (146 chars):**
+Online fitness coaching programs can capture client body data from a guided phone scan. See how it fits check-ins and what a pilot should measure.
 
-**Slug:** `remote-body-measurement-online-fitness-coaching` (unchanged — matches article frontmatter `slug:` and the working folder name)
+**Slug:** `remote-body-measurement-online-fitness-coaching` (unchanged, matches the draft frontmatter and the working folder)
 
-**Suggested category:** AI in Fitness (matches Hub 1, `ai-in-fitness-industry`) → sub-category/tag: Digital Coaching. Production URL pattern used by the adjacent 2026-08-21 article in the same hub is `https://3dlook.ai/content-hub/{slug}/` — recommend the same pattern here unless the CMS taxonomy says otherwise: `https://3dlook.ai/content-hub/remote-body-measurement-online-fitness-coaching/`. Not confirmed against a live CMS category list — flag for Vadim if the hub uses a different taxonomy field.
+**Category:** AI in Fitness (Hub 1, `ai-in-fitness-industry`), sub-category / tag: Digital Coaching.
+Recommended URL, matching the pattern used by the adjacent articles in this hub:
+`https://3dlook.ai/content-hub/remote-body-measurement-online-fitness-coaching/`. Not confirmed against a
+live CMS taxonomy list, so flag it if the hub uses a different taxonomy field.
 
-**Title/description placement note:** the primary SEO head term is `online fitness coaching programs` (100/mo, US, difficulty unmeasured — see Open Items §4). The content-plan.md strategy-row phrasing, and the article's own H1, is the buyer-facing angle **"Remote Body Measurement for Online Fitness Coaching Programs,"** which puts the head term at the end of the string, not the front. The recommended meta title above deliberately reorders to front-load the head term for SEO best practice (title tags don't have to match H1 verbatim); Variant 2 in §5 below preserves the exact H1/content-plan phrasing if Vadim prefers title/H1 consistency over front-loading.
+**Why this description and not the 2026-08-26 one.** The old recommended description was
+*"Coaches can't tape-measure remote clients. See how a guided smartphone scan gives online fitness
+coaching programs structured progress data clients trust."* Two problems after revision 1: it put the head
+term in the middle rather than the front, and "progress data clients trust" is an audience-reaction promise
+of exactly the kind review item 4 stripped out of the body (all six retention and engagement sentences were
+deleted). The old alternate variant 3 was worse, it named "visible retention gains" outright. The new
+description leads with the head term at character 1, states the mechanism, points at the two blocks the
+review added (check-in fit, pilot measurement), and promises no engagement or retention outcome.
+
+**Head term vs H1.** The primary SEO head term is `online fitness coaching programs` (100/mo, US,
+difficulty unmeasured, see 4B item 2). The H1 and the `content-plan.md` strategy row use the buyer-facing
+phrasing *"Remote Body Measurement for Online Fitness Coaching Programs"*, which puts the head term in the
+last four words. The recommended title reorders to front-load it; title tags do not have to match H1
+verbatim. Variant 3 in section 5 keeps the exact H1 wording if Vadim prefers title/H1 consistency.
+
+**Brand suffix:** not applied. `| 3DLOOK` is only allowed when the title is 49 chars or fewer without it;
+the recommended title is 57.
 
 ---
 
-## 2. AI-tells detector — actually run, not judged
+## 2. AI-tells detector, actually run on the new draft
 
-Per CLAUDE.md's 2026-08-26 finding (this exact pipeline stage previously guessed this number twice on a
-different article), I ran the detector myself via Bash rather than citing the editor's number:
+Run by me in this session, against `draft-v3-revision1.md`, not cited from the editor's changelog:
 
 ```
-$ python3 brand-assets/style-guides/scripts/detect-ai-tells.py workspace/seo/articles/2026-08-26-remote-body-measurement-online-fitness-coaching/draft-v2-final.md --channel article --summary
-SEO / blog article · en · 2646 words
+$ python3 brand-assets/style-guides/scripts/detect-ai-tells.py \
+    workspace/seo/articles/2026-08-26-remote-body-measurement-online-fitness-coaching/draft-v3-revision1.md \
+    --channel article --summary
+SEO / blog article · en · 3015 words
 AI density: 0.0/1000 (budget 6.0) -> low
 VERDICT: CLEAN — check the positive side (voice, varied rhythm, a stated boundary) and ship.
 ```
 
-Full JSON output (non-summary run, same file):
-`total_words: 2646, ai_density_per_1000_words: 0.0, severity: "low", hard_fails: [], house_rule_violations: [], em_dashes: 0, punch_triad_count: 0`
+JSON form of the same run (same file, no `--summary`), the fields the checklist asks for verbatim:
 
-This **confirms** the editor's Pass 3c number (CLEAN, 0.0/1000) — it does not merely cite it. The script
-required no workaround; permissions from the 2026-08-26 `settings.json` fix are working as intended.
+```
+"total_words": 3015
+"ai_density_per_1000_words": 0.0
+"density_budget": 6.0
+"severity": "low"
+"hard_fails": []
+"house_rule_violations": []
+"markers_by_category": {}
+"top_offenders": []
+"style_metrics": {"em_dashes": 0, "bold_count": 15, "title_case_headings": 0, "emoji_count": 0,
+                  "bullet_lines": 16, "list_to_prose_ratio": 0.37, "wall_of_text": false,
+                  "punch_triads": [], "punch_triad_count": 0,
+                  "rhythm": {"sentences": 107, "mean_words": 20.9, "variation": 0.48, "monotone": false,
+                             "uniform_paragraphs": false}}
+```
 
-Supplementary manual checks (Bash grep, run by me, not the detector):
-- Em dash / en dash count in the body: **0** (`grep -Pc "\x{2014}|\x{2013}"` → 0)
-- Banned words (leverage/utilize/harness/robust/seamless/comprehensive/delve/tapestry/realm/unlock/
-  unleash/game-changing/revolutionary/cutting-edge/disrupt/"positioned as"/"by hand"): **0 matches in
-  the body** (the only regex hit is inside the frontmatter changelog note describing that these were
-  removed, not in the article text)
-- "the reader" / "the audience" / "this article" / "this guide" / "see below" / "following sections": **0**
-- "let" / "plus" / "objective" (about our tech): **0**
-- One residual **"so"** in the Implementation section (H2.10, capture-protocol bullet): *"Consistent
-  guidance and retake prompts do more for real-world results than any single accuracy figure, so test
-  capture with real clients under real conditions."* This is an imperative recommendation following a
-  claim, not the detector's narrowly-scoped `, so <actor> can/get/save` benefit shape (which is why the
-  detector correctly did not flag it), but it is arguably still a "so" introducing a result per the
-  broader terminology-guardrails wording. Judgment call, not a hard fail — flagged here for the editor's
-  awareness rather than silently accepted or used to block this package.
+Exit code 0 on both runs. No permission prompt, no workaround: the `settings.json` fix from 2026-08-26 is
+holding, so this line is a measurement and not an estimate.
 
----
+### Supplementary mechanical checks (my own greps on the body, lines 26 to end of `draft-v3-revision1.md`)
 
-## 3. Checklist
+| Check | Result |
+|---|---|
+| Em dash / en dash | 0 |
+| `±` character | 0 |
+| `DEXA` | 0 (DXA throughout, expanded once) |
+| `positioned as` (whole file, frontmatter included) | 0 |
+| Banned words (leverage/utilize/harness/robust/seamless/comprehensive/delve/tapestry/realm/unlock/unleash/game-changing/revolutionary/cutting-edge/disrupt) | 0 |
+| `the reader` / `the audience` / `the following sections` / `see below` / `below` | 0 |
+| `this article` / `this guide` / `our content` | 0 |
+| `by hand` | 0 |
+| `objective` | 0 |
+| `let` (as the banned verb) | 0 |
+| `plus` as a connector | 0 |
+| `so` (any occurrence at all, including the benefit shape) | 0 |
+| `, not ` corrective negation | 0 |
+| `rather than` | 0 |
+| `we` / `our` / `us` / `you` / `your` | 0 |
+| Presumed audience reaction phrases | 0 |
+| FX-004 markers (`ISO 8559`, `0.40 cm`, `1,152`, `14 companies`, `multi-company`) | 0 |
+| Named competitors (Prism, Bodygram, Size Stream, Mirrorsize, Styku, Naked Labs) | 0 |
 
-### SEO checklist (15 points — expanded per the task's full list, not the abbreviated 10)
+The one residual `so` that the 2026-08-26 package flagged as a judgment call is gone: the string does not
+occur in the body at all now.
 
-- ✅ Primary keyword in H1 ("...Online Fitness Coaching Programs"), in the intro (2nd paragraph: "Remote body measurement closes that gap for online fitness coaching programs."), and in H2.1 heading + one more H2/FAQ occurrence
-- ✅ Meta title 57 chars (≤60), primary keyword starts at position 1 (recommended variant)
-- ✅ Meta description 154 chars (140-160 band)
-- ✅ All numbers trace to approved_claims (FX-001, 002, 003, 005, 006, 007, 008 only; FX-004 confirmed absent — never combined with FX-001/003)
-- ✅ No banned words (verified by grep, see §2)
-- ❌ **Word count vs plan target — flagged deviation, not silently passed.** Body is 2,525 prose words
-  (frontmatter `word_count: 2525`; detector's own tokenization of headings+body: 2,646 words). Plan.md's
-  "Article meta" section states an estimate of **~2,000 words (range 1,900-2,300)**, which the actual
-  count exceeds by ~10-33% depending on which end of the range is used as the target. This is a known,
-  already-documented editorial call (writer flagged an internal arithmetic conflict in plan.md between
-  the stated ~2,000-word target and the sum of per-section H2 word-count minimums, which alone total
-  ~2,970 words; the editor trimmed from ~2,640 to 2,525 without cutting any FAQ item, the boundary
-  section, or an approved claim). The piece does fit inside the context-pack's broader stated band
-  ("1,800-2,800 words typical for a P1 supporting article in this hub"). Marking ❌ against the literal
-  ±10%-of-plan-target checklist rule rather than reframing the pass/fail definition to make it pass.
-- ✅ Intro hook in the first 2 sentences ("A coach running two hundred remote clients cannot put a tape
-  measure around anyone's waist. The measurement still has to happen.")
-- ✅ CTA placement matches plan (soft MOFU evaluation link after H2.6: "If you are evaluating options,
-  see how FitXpress supports remote progress tracking for coaching programs"; direct BOFU CTA in the
-  conclusion with a demo mention) — CTA type matches MOFU/BOFU intent
-- ✅ No generic AI patterns — detector confirms 0 punch triads, 0 em dashes, CLEAN verdict
-- ✅ Terminology guardrails — hard bans verified clean by grep (em dash, "objective," "the reader/
-  audience," "this article/guide," "by hand," "let," "plus," "positioned as" all 0 matches); one
-  borderline "so" noted in §2 above as a judgment call, not counted as a fail
-- ✅ Abbreviations (M1 + exception) — BMI kept bare throughout (correct, 2026-08-25 override); BMR, CTO,
-  HIPAA, GDPR, Amazon S3/SSE-S3, API, SDK, GLP-1, DEXA, BIA all expanded at first use; no CEO/UK/US/EU
-  present in this article to test against the exception list
-- ✅ Medical framing stated directly — "FitXpress is not a medical device" appears in the scope note and
-  in H2.7, never "not positioned as"
-- ✅ Links on meaningful anchors — 4 links total, all descriptive anchor text ("accuracy framework," "AI
-  in the fitness industry," "FitXpress supports remote progress tracking for coaching programs,"
-  "FitXpress for connected and digital fitness"), no bare URLs or "click here." **Zero third-party/
-  external sources** — see §4 below, this is explicitly flagged, not silently absent.
-- ✅ AI-tells detector actually run (Bash, this session) — see §2, full numeric output included, not a
-  judgment call
-- ✅ Images / alt text suggestions — none exist yet in the pipeline (visual-brief runs after Vadim's
-  publish approval per CLAUDE.md §9 social workflow); suggestions provided in §6 below to unblock that
-  step, not a full brief
+### Two judgment calls surfaced rather than silently passed
 
-**Result: 14/15 pass, 1 flagged deviation (word count).** Below the ≥2-❌ STOP threshold; not in the
-positioning/compliance/cannibalization auto-stop category.
+1. **Intro paragraph 2 carries a three-clause sentence:** "Capture has to fit the check-in cadence a
+   program already runs, the outputs have to land in the tool the coach works in daily, and the limits of
+   the data have to be understood before a progress screen gets built on top of them." The detector
+   reports `punch_triad_count: 0` because it only flags adjectival punch triads, by design. This is three
+   substantive clauses of different length and content, not a `fast, reliable, scalable` rhythm, so I read
+   it as inside the rule. Recorded because a human reviewer may still hear a triad.
+2. **BIA and DXA appear first inside a heading** ("Comparison with scales, tape measurements, photos, BIA,
+   and DXA") and are expanded in the first sentence underneath it. The reviewer's section title is kept
+   verbatim per review item 2, and abbreviation rule M1 governs first use in running text. A mechanical M1
+   check will see the heading first, which is why the editor flagged it and why it is repeated here.
 
-### Strategy checklist (9 points, content-strategy-guidelines.md §16)
+### Privacy claims: independently re-verified by me against the live policy
 
-- ✅ Hub correct — AI in Fitness (Hub 1, live `ai-in-fitness-industry`) → Digital coaching cluster
-- ✅ Action type respected — `create-net-new`, `existing_urls: []`, no refresh needed
-- ✅ No duplication of existing_urls; cannibalization guardrail held — piece stays on the narrow
-  coaching-platform workflow angle, does not re-cover the hub's broad "AI in fitness" overview
-- ✅ Vertical boundary respected — Fitness vertical only; no GLP-1-clinical or wellness-rewards bleed
-  outside the boundary statement itself; scope note present in the intro
-- ❌ **Internal links in 4 directions — sideways is missing, by deliberate choice, not oversight.**
-  up (AI in Fitness hub) ✅, down (BOFU product page, ×2: soft eval + conclusion) ✅, trust (accuracy
-  framework) ✅, **sideways: absent.** The only live sideways candidate is
-  `top-7-remote-body-composition-tools-glp-1-clinics` (different vertical — GLP-1/telehealth), and the
-  plan explicitly says to use it "only if genuinely relevant" and "sparingly" to avoid blurring the
-  Fitness/GLP-1 boundary; the two natural siblings ("Smart Scale vs AI Body Scan," "GLP-1 and Fitness
-  Apps") are planned but not yet written. The writer and editor both judged that shipping without a
-  sideways link is safer than either linking an off-vertical page or linking a not-yet-live sibling.
-  Marking this ❌ against the literal 4-direction requirement rather than reinterpreting the rule, since
-  the requirement is unambiguous and the gap is real, even though the reasoning behind it is sound.
-- ✅ FAQ section present, GEO/AEO-friendly, 7 answers, each 2-4 sentences
-- ✅ "What FitXpress does not do" section present (H2.7); no banned positioning claims (no "most
-  accurate," no "guaranteed compliance," no FDA/medical-device claims, no named competitors)
-- ✅ No unsubstantiated medical/legal/underwriting/employment/clinical-trial claims — compliance framed
-  entirely around data privacy (HIPAA/GDPR/SSE-S3), never medical-device or clinical-decision framing
-- ✅ Article owns one distinct search intent — the remote-coaching-program measurement workflow, distinct
-  from the hub's broad overview and from the adjacent GLP-1/telehealth cluster
+The editor's privacy rewrite cites the FitXpress Privacy Policy "verified 2026-08-31". I fetched
+`https://3dlook.ai/fitxpress-privacy-policy/` myself in this session rather than take that on trust:
 
-**Result: 8/9 pass, 1 flagged deviation (sideways link).** Not in the positioning/compliance/
-cannibalization auto-stop category (cannibalization guardrail itself is held); below the ≥2-❌ threshold
-combined with the SEO checklist's single ❌ only if counted per-checklist, which is how the rule reads
-("любой из чек-листов").
-
-**Net: no STOP triggered.** Two single-item deviations across two separate checklists, both already
-documented by the writer/editor as deliberate editorial trade-offs, both explicitly surfaced here rather
-than resolved silently. Recommend Vadim review both at sign-off rather than sending back to seo-editor.
+| Article sentence | Live policy text | Verdict |
+|---|---|---|
+| "photos are either deleted immediately after processing or retained for up to 30 days, depending on the business client's configuration" | "Based on the requirements and instructions of our Business Client ... we permanently delete end-users' photos either: (i) immediately after the processing ... or (ii) in 30 days of the generation of the Deliverables." | supported |
+| "Retained photos are automatically blurred." | "When temporary storage is selected, all retained photos are automatically blurred to ensure additional privacy protection." | supported |
+| "Data is encrypted in transit and at rest" | "All the data (including Personal Data) is automatically encrypted both during transmission and at-rest ... Encryption is enforced by default; storage encryption is always on and cannot be disabled." | supported |
+| "on Amazon Web Services (AWS) infrastructure" | Two separate statements: "The Service is hosted on a leading cloud infrastructure provider" (provider unnamed in that sentence) and a sub-processor table row "AWS, Amazon Web Services, Inc., Cloud data hosting, CDN, Object Storage, Instance hosting" | supported by composition of two statements, not by one sentence. Low risk, recorded for precision |
+| `SSE-S3` | absent from the policy | confirms the editor's reason for dropping it from the body (decision item 4A.2) |
+| "complies with the Health Insurance Portability and Accountability Act (HIPAA)" | HIPAA is **not mentioned anywhere in the public policy**; GDPR and CCPA are | rests on FX-007 (internal security commitment) alone, not on a public artifact. Not a new claim, but see 4B item 7 |
 
 ---
 
-## 4. Open items carried forward (from plan.md and log.md — not silently dropped)
+## 3. Checklists
 
-1. **Word count vs plan ceiling.** Final body is 2,525 prose words against the plan's stated ~2,000-word
-   estimate (range 1,900-2,300). This is inside the context-pack's broader "1,800-2,800 typical" band but
-   above the plan's own soft 2,300 ceiling. Held there deliberately by the editor to avoid cutting
-   must-cover section content (no FAQ item, boundary section, or approved claim was cut to hit a lower
-   number). A further trim to ≤2,300 is possible on request but would mean dropping depth.
-2. **BOFU URL path debt.** The down-link target `https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/`
-   is flagged in CLAUDE.md §16 as using a path level (`/fitxpress/for-{vertical}/`) that does not
-   structurally exist elsewhere on the site (the homepage is the FitXpress parent; `/fitxpress/` 301s to
-   `/`), with a breadcrumb pointing at that redirect. The URL is kept as written in content-plan.md and
-   used identically to the live pattern for this vertical. **Confirm the canonical URL before publish** —
-   if it changes, both occurrences (soft MOFU link after H2.6, direct BOFU CTA in the conclusion) need updating.
-3. **Sideways internal link omitted.** See strategy checklist item above. Ships with up/down/trust only.
-   Hold a slot for "Smart Scale vs AI Body Scan" / "GLP-1 and Fitness Apps" once those siblings are written,
-   or confirm whether to use the off-vertical GLP-1 tools list now.
-4. **Central Privacy/Regulatory FAQ not live.** Privacy is handled as a short practical inline note (in
-   "Where FitXpress fits," in the implementation section, and in FAQ #6) instead of a link to a trust
-   asset. No dead link was inserted. This should be revisited once that hub ships.
-5. **Head-term difficulty is TBD.** Ahrefs returned `null` (no measurement, not a measured zero) for
-   `online fitness coaching programs` difficulty. Volume (100/mo, US) and CPC (~$6.00) are real Ahrefs
-   figures. If a difficulty read matters before or after publish, a targeted re-pull can be requested.
-   **This TBD is declared explicitly here** (per the 2026-08-26 CLAUDE.md note that an undeclared TBD
-   dependency caps quality-controller's category A score at 2/2 — declaring it here is what keeps that
-   score open).
-6. **Thin demand, checkpoint-1 decision already made.** The literal topic phrase has zero measured
-   demand; the working head term is 100/mo. This was surfaced and approved at checkpoint 1 (plan.md), not
-   discovered here — repeated for visibility since checkpoint 2 is where Vadim sees the finished piece
-   built on that decision.
-7. **Zero third-party/external sources in the article.** All 4 links are internal (`3dlook.ai`). This is
-   consistent with the plan (trust link = internal accuracy-framework hub; no external citation was
-   planned or needed for this workflow-and-operations piece — unlike, e.g., the GLP-1 tools comparison
-   article, which cites J.P. Morgan Research and a KFF survey). Flagged explicitly per the 2026-08-26
-   CLAUDE.md finding that zero external sources caps quality-controller's category B score at 3 — noting
-   it here so that score isn't read as an oversight.
+### 3.1 SEO checklist (15 points)
+
+1. ✅ **Primary keyword in H1, first paragraph, 1-2 H2.** `online fitness coaching programs` appears 4
+   times: H1 (title case), intro paragraph 1 sentence 2 ("Remote body measurement is how online fitness
+   coaching programs close that gap"), the H2 "The measurement problem in online fitness coaching
+   programs", and FAQ question 1. One H2 carries it, which satisfies the 1-2 band without stuffing.
+2. ✅ **Meta title 57 chars (limit 60), head term starts at character 1** (first half satisfied trivially).
+3. ✅ **Meta description 146 chars** (band 140-160, task ceiling 155). Head term once, at character 1. Does
+   not restate the title.
+4. ✅ **All numbers trace to approved claims.** Extracted every numeral in the body: `80+`, `under 45
+   seconds`, `96 to 97%`, `1.5 to 2.0 cm`, `less than 1 cm`, `approximately 3.5%`, `30 days`, `9+ years`,
+   `150K+`, `30K+`, `430K+`. Mapped to FX-005, FX-001, FX-002, FX-003, FX-006, FX-007, FX-008. FX-004
+   absent, so it is never combined with FX-001/FX-003. Remaining figures are neutral scenario references
+   (two hundred clients, week one, week eight, six-week block, twelve-week challenge, half an inch, about a
+   minute). The illustrative "1.4 cm" from the previous version is gone. Two claim **wordings** differ from
+   `context-pack.md` and need sign-off, see 4A.2 and 4A.6, which is a record-keeping gap and not an
+   unapproved number.
+5. ✅ **No banned words.** Zero matches across the full CLAUDE.md section 6 list plus `utilize` (table in
+   section 2).
+6. ❌ **Word count outside the plan's target band.** Body is 2,584 prose words (my count; draft frontmatter
+   says 2,582; 2,916 including table rows; 3,015 as the detector tokenizes). `plan.md` "Article meta"
+   states "Estimated words: ~2,000 (range 1,900-2,300)", so plus-or-minus 10 percent of that target is
+   1,800-2,200 and the article is 17 to 29 percent above it depending on which figure is read as the
+   target. It **is** inside the `context-pack.md` band ("1,800-2,800 words typical for a P1 supporting
+   article in this hub") and inside the revision round's own 2,300-2,600 target. Marked ❌ against the
+   literal checklist rule rather than re-defining the target to make it pass, exactly as the 2026-08-26
+   package did at 2,525 words. What changed since then: the reviewer deleted one section and **required two
+   new ones** (the coaching-stage table, the pilot-metrics section), so the plan's estimate no longer
+   describes the article anyone asked for. Recommendation: Vadim closes this by accepting the length, or
+   asks for a trim, which would now mean cutting reviewer-mandated content.
+7. ✅ **Intro hook inside the first 2 sentences.** Sentence 1: "A coach carrying two hundred remote clients
+   cannot put a tape measure around anyone's waist, and the measurement still has to happen." Sentence 2
+   names the mechanism and the head term.
+8. ✅ **CTA placement and type match the intent.** MOFU evaluation link at the end of section 7 "Where
+   FitXpress fits" ("Programs at the comparison stage can review how FitXpress supports remote progress
+   tracking for coaching programs before scoping a build"), BOFU line in the conclusion ("Explore FitXpress
+   for connected and digital fitness ... or book a demo"). `plan.md` specified "after H2.6"; the reviewer's
+   reorder moved the FitXpress section from position 5 to 7, so the mid-article slot moved with it. Type is
+   evaluation then direct demo, which matches MOFU/BOFU. Demo-only, no self-serve trial, as planned.
+9. ✅ **No generic AI patterns.** Detector: 0 markers, 0 punch triads, 0 em dashes, 0 title-case headings,
+   sentence-length variation 0.48 against a 0.35 monotone threshold, `uniform_paragraphs: false`. One
+   judgment call recorded in section 2.
+10. ✅ **Terminology guardrails** (`terminology-guardrails.md`). Every hard ban greps to 0, see the table in
+    section 2: no em dash, no `objective`, no reader/audience/below references, no `this article`, no `by
+    hand`, no `let`, no `plus` connector, no `so` connector (zero occurrences of the word), no `positioned
+    as`, no presumed reactions, no behaviour attributed to concepts, no corrective negation, no corrective
+    `rather than`. Links sit on descriptive anchors. `we/our/you` do not appear.
+11. ✅ **Abbreviations (M1 plus the 2026-08-25 exception).** Expanded at first use in running text: BMR,
+    BIA, DXA, API, SDK, HIPAA, GDPR, AWS, CTO, GLP-1. Left bare, correctly: BMI, CEO. `DEXA` zero. The
+    heading-before-expansion nuance for BIA/DXA is recorded in section 2 rather than hidden.
+12. ✅ **Medical framing stated directly.** "FitXpress is not a medical device" twice, in the scope note and
+    in the boundary section, plus the intended-use sentence "It does not diagnose conditions, make clinical
+    decisions, or determine treatment eligibility". Zero `positioned as`. This is where the article
+    knowingly departs from review item 3, see decision item 4A.1.
+13. ✅ **Links on meaningful anchors; third-party sources.** 5 links, all internal `3dlook.ai`, all on
+    descriptive anchors ("AI in the fitness industry", "2-Photo vs Video vs Hardware body scanning",
+    "FitXpress supports remote progress tracking for coaching programs", "mobile body scanning accuracy
+    framework", "FitXpress for connected and digital fitness"). No bare URLs, no "click here". **Zero
+    third-party sources**, so the guardrail on vendor-blog citations cannot be breached, and nothing
+    neutral and high-quality is cited either. Flagged as 4B item 5, not silently absent, because
+    `quality-controller` caps category B at 3 on this basis (CLAUDE.md, 2026-08-26).
+14. ✅ **AI-tells detector genuinely run**, both forms, output pasted verbatim in section 2 with exit codes.
+    No estimate anywhere in this package.
+15. ✅ **Images / alt text suggestions** provided in section 6, including the two new sections. `visual-brief`
+    still runs after approval per CLAUDE.md section 9, so these are directional, not a brief.
+
+**Result: 14/15. One ❌: item 6, word count against the plan's estimate.** Below the 2-or-more ❌ STOP
+threshold, and not in the positioning, compliance or cannibalization category. **No STOP.**
+
+### 3.2 Content strategy checklist (9 points, `content-strategy-guidelines.md` section 16)
+
+1. ✅ **Correct hub.** AI in Fitness (Hub 1, live hub `ai-in-fitness-industry`, published 2026-07-31),
+   Digital coaching cluster, as recorded in `plan.md` and `content-pack`. The up-link points at that hub.
+2. ✅ **action_type respected.** `create net-new` with `existing_urls: []`. Nothing was refreshed or
+   sectioned into an existing page.
+3. ✅ **No duplication of existing_urls; cannibalization guardrail held.** The row's guardrail is "Targets
+   coaches/platform workflows, not generic fitness apps. Do not duplicate the hub's broad overview." The
+   revision strengthened this: the standalone "Why this matters now" section and all fitness-industry and
+   market-trend prose were deleted, and the hub link survives as a single clause. Every section now serves
+   coach or platform workflow, onboarding, check-ins, reading the data, integration, pilot evaluation or
+   limits. Head term (`online fitness coaching programs`) differs from the legacy page's intent.
+   **Open, and it needs a decision, but it is not a breach by this article:** review item 1 identifies
+   overlap with the older live page `ai-body-scanning-for-fitness` and asks for that page to be redirected
+   or rescoped "separately". That is a content-ops task on the other URL, see decision item 4A.4.
+4. ✅ **Vertical boundary held; scope note present.** Scope note is the third block under the H1. `GLP-1`
+   occurs exactly once, inside the boundary section, expanded. No wellness-rewards language. No clinical,
+   diagnostic, eligibility, underwriting or employment framing outside the boundary statement.
+5. ✅ **Internal links in all 4 directions** (this closes the ❌ the 2026-08-26 package carried):
+   up ×1 `content-hub/ai-in-fitness-industry/`, sideways ×1 `content-hub/body-scanning-technology-comparison/`
+   (added per review item 6), trust ×1 `content-hub/mobile-body-scanning-accuracy/`, down ×2
+   `fitxpress/for-connected-and-digital-fitness/` (mid-article evaluation plus conclusion CTA, plan-sanctioned,
+   two different anchors). Verified by URL count: 1/1/1/2.
+6. ✅ **FAQ section present and GEO/AEO-friendly.** 7 questions, answers measured at 2 to 3 sentences each,
+   inside the 2-5 rule.
+7. ✅ **"What FitXpress does not do" present; no banned positioning claims.** No "most accurate", no
+   "guaranteed compliance", no FDA or medical-device claim, no "replaces DXA/BIA/a calibrated scale" (the
+   reference-method boundary is conditional: "not equivalent to DXA, BIA, or a calibrated scale where a
+   workflow or protocol requires those reference methods"), no named competitors. **Heading-level note:**
+   the section is now an H3 inside section 10, because the reviewer's 12-part order has no standalone slot
+   for it. Content and force unchanged. Anyone building FAQ or Article schema from the H2 list should know
+   the boundary block sits one level down.
+8. ✅ **No unsubstantiated medical / legal / underwriting / employment / clinical-trial claims.** Compliance
+   is framed entirely on data-privacy grounds (HIPAA, GDPR, encryption, retention). Two compliance-claim
+   **wordings** changed against `context-pack.md` and need product/security sign-off before publish, see
+   4A.2 (FX-007) and 4A.6 (FX-006). Both are softenings or reviewer-mandated precision, not expansions of
+   what is claimed, which is why this is a decision item and not a ❌.
+9. ✅ **Owns one distinct search intent:** how a remote coaching program captures and compares client body
+   data, and how to evaluate that as a build. Distinct from the hub's broad overview, from the accuracy
+   framework, from the technology comparison, and from the GLP-1/telehealth cluster.
+
+**Result: 9/9. No ❌. No STOP.**
+
+### 3.3 STOP-rule arithmetic, stated explicitly
+
+- SEO checklist: 1 ❌ (word count). Threshold is 2 or more per checklist. Not triggered.
+- Strategy checklist: 0 ❌. Not triggered.
+- Positioning / compliance / cannibalization auto-STOP: **not triggered.** The medical-device wording
+  conflict (4A.1) is a conflict between governing documents, and the text as it stands complies with the
+  newer canonical rule and passes the detector. The FX-006 and FX-007 wording changes (4A.2, 4A.6) narrow
+  or sharpen approved claims, they do not assert anything new. The `ai-body-scanning-for-fitness` overlap
+  (4A.4) is a task on a different URL.
+- **Nothing returns to `seo-editor`.** What is blocking is Vadim's six decisions in 4A, not text quality.
+
+---
+
+## 4. Open items
+
+### 4A. Decision needed from Vadim BEFORE publish
+
+**1. Which document wins on medical-device framing.** *(positioning, and the only place this article
+deliberately disobeys the reviewer)*
+
+Carried verbatim from `changelog-revision1.md` and `log.md`:
+
+> **NOT APPLIED — "Use the approved wording: 'FitXpress is not positioned as a medical device.'"** (review
+> item 3, seventh bullet.) The article keeps the direct form: **"FitXpress is not a medical device."**
+> Reason: "positioned as" is a hard ban for product, intended-use and regulatory statements in
+> `brand-assets/content-strategy/terminology-guardrails.md` (Part 2 §2.10, and the Overrides table at the
+> top of that file, ~line 32) ... its Overrides table records explicitly that it **supersedes**
+> `brand-assets/style-guides/editorial-guardrails.md` #6, which is where the reviewer's wording comes from
+> (that principle prescribed "not positioned as a medical device" from 2026-06-09 until the 2026-08-25
+> amendment). `CLAUDE.md` §6 and §15 hard requirement #7 carry the same override, and the detector flags
+> `not positioned as` as a hard fail. Applying the review line as written would fail the gate this article
+> has to pass. **This is an unresolved conflict between two governing documents and one reviewer
+> instruction. Listed as an open item for Vadim/Asselya to settle (which document wins).**
+
+Publisher's note: I verified both sides. `positioned as` is 0 in the file, the direct form appears twice,
+and the detector run in section 2 has `hard_fails: []`. If Vadim rules for the reviewer, the text change is
+two words in two places, but it will fail `detect-ai-tells.py` and CLAUDE.md section 6 until the guardrail
+file is changed first. **Decide the rule, then the text.**
+
+**2. FX-007 wording: SSE-S3 out, automatic blurring in.** *(compliance claim record)*
+
+Carried verbatim from `changelog-revision1.md`:
+
+> 1. **FX-007, SSE-S3 downgraded to a plain encryption statement.** The body now says "encrypted in transit
+>    and at rest on Amazon Web Services (AWS) infrastructure" and no longer names Amazon Simple Storage
+>    Service or server-side encryption with Amazon S3 managed keys (SSE-S3). Reason: the public FitXpress
+>    Privacy Policy (verified 2026-08-31) states encryption in transit and at rest, enforced by default, and
+>    AWS hosting, but does not state SSE-S3; SSE-S3 is an internal security-commitment detail. FX-007's text
+>    in `context-pack.md` still names SSE-S3, so this is a deliberate softening of an approved claim, not a
+>    drafting slip.
+> 2. **FX-007, blurring detail added.** "Retained photos are automatically blurred." is new to this article,
+>    sourced from the privacy policy ("When temporary storage is selected, all retained photos are
+>    automatically blurred") and consistent with `about-me.md` ("auto-blurred if retained").
+
+Publisher's note: I re-fetched the live policy myself today and both halves check out (table in section 2).
+Approving the text also means **updating the FX-007 record in `context-pack.md`**, which still reads "AWS S3
+SSE-S3 encryption", and CLAUDE.md section 12, which still lists "AWS S3 SSE-S3 encryption for all data".
+Otherwise the next article inherits the old wording and this one looks like the outlier. Also worth a
+product/security glance: HIPAA is not mentioned anywhere in the public policy, so the article's HIPAA
+sentence rests on FX-007 alone.
+
+**3. Confirm the canonical BOFU URL.** *(path debt, blocks publish because it is linked twice)*
+
+Carried verbatim from `plan.md` Open items #4 and `log.md`:
+
+> **BOFU URL path debt.** `/fitxpress/for-connected-and-digital-fitness/` is flagged in CLAUDE.md §16 as
+> using a non-existent path level with a breadcrumb pointing at a redirect. URL kept as written in
+> content-plan.md. Confirm the canonical URL to link down to before publish.
+
+Publisher's note: linked **twice** in this revision (mid-article evaluation line at the end of section 7,
+and the conclusion CTA). If the canonical path is different, both occurrences change, and so does the
+"down" leg of the 4-direction link check.
+
+**4. The older `ai-body-scanning-for-fitness` page: redirect or rescope.** *(cannibalization, separate task)*
+
+Carried verbatim from `review1-comments.md` item 1:
+
+> There is also overlap with the older [AI-powered fitness tracking article](https://3dlook.ai/content-hub/ai-body-scanning-for-fitness/). Consider redirecting or rescoping that older page separately.
+
+and from `changelog-revision1.md`:
+
+> **Out of scope — the older `ai-body-scanning-for-fitness` page.** Review item 1 suggests redirecting or
+> rescoping it "separately". Nothing in this deliverable touches that page. Carried to open items.
+
+Publisher's note: nothing in this package changes that page, and this article does not breach its own
+cannibalization guardrail (checklist 3.2 item 3). The decision is still needed **around** publish, because
+publishing puts a second live URL into the same hub against overlapping intent. Two clean options: 301 the
+legacy page here, or rescope it and keep both. It is a separate task either way, not an edit to this text.
+
+**5. Repeatability convention: `< 1 cm` or "less than 1 cm".** *(house convention vs reviewer's sentence)*
+
+Carried verbatim from `changelog-revision1.md`:
+
+> 3. **Repeatability is no longer written as `< 1 cm`.** `about-me.md` locks the convention "write
+>    repeatability as `< 1 cm`"; the reviewer's mandated sentence spells it "less than 1 cm". The reviewer's
+>    wording is used, matching the precedent set in `glp-1-market-hub/changelog-revision1.md` item 4. If the
+>    locked convention is meant to win, the two sentences need reconciling at source, not per article.
+
+Publisher's note: the shipped sentence is "For most evaluated measurements, repeated scans showed typical
+scan-to-scan differences of less than 1 cm", once in the body and once in the FAQ. `< 1 cm` appears zero
+times. Either answer is a two-string edit; the point is that `about-me.md` and the reviewer currently
+disagree and the next article will hit this again.
+
+**6. FX-006 wording: the `±` is gone, and the claim record still has it.** *(compliance claim record)*
+
+From `review1-comments.md` item 3:
+
+> Replace "average error margin of ±3.5%." The approved claim is approximately 3.5% average prediction error
+> under evaluated conditions. The ± symbol implies a different statistical meaning.
+
+Shipped sentence: "A predicted weight from Smart Scales, read from the images with approximately 3.5%
+average prediction error under evaluated conditions." Zero `±` in the file. But `context-pack.md` FX-006
+still reads "Weight estimation ±3.5% average error margin", and CLAUDE.md section 1 still reads "Weight
+estimation ±3.5%". Lower stakes than 4A.2 because the reviewer asserted the corrected wording as the
+approved one, so approval here is mostly **updating the claim record** so the next writer does not
+reintroduce `±`.
+
+### 4B. Informational, carried forward, not blocking
+
+1. **Word count.** 2,584 prose words against `plan.md`'s ~2,000 (range 1,900-2,300). The single ❌ on the SEO
+   checklist. Full reasoning in checklist item 6. Earlier framings, carried verbatim:
+   > **Word count vs plan ceiling (editorial call, resolved toward quality).** ... Held here deliberately
+   > rather than stripping must-cover content ... Publisher/Vadim can request a further trim to <=2,300 if
+   > the plan ceiling is hard, but it would mean cutting must-cover depth.
+   and from revision 1:
+   > **Word count vs the plan's 2,300 soft ceiling** (edit #1): superseded by the review's own target shape.
+2. **Head-term difficulty is still TBD.** Carried verbatim:
+   > **Difficulty is TBD.** Ahrefs returned `null` (no measurement) for the head term's difficulty, and
+   > `remote body measurement` has null volume. Not invented. If a difficulty read matters before writing, a
+   > targeted re-pull can be requested.
+   Declared here on purpose: an undeclared TBD dependency caps `quality-controller` category A (CLAUDE.md,
+   2026-08-26).
+3. **Thin demand, already decided at checkpoint 1.** Carried verbatim:
+   > **Thin demand — confirm the head term and the go/no-go.** The exact topic phrase has no measured demand
+   > (`seed_has_data: false`). The working head term `online fitness coaching programs` is **100/mo,
+   > difficulty unmeasured**, and the whole cluster is low tens-to-hundreds. ... Approve as-is, or ask to
+   > fold this angle into a higher-volume sibling / the hub instead.
+   Repeated for visibility only. Volume 100/mo and CPC ~$6.00 are real Ahrefs figures.
+4. **No named coaching customer exists.** Carried verbatim:
+   > **Not attempted — a named coaching customer.** No fitness-coaching customer exists in
+   > `proof-points.md` (Yazen and UK Meds are weight-loss/pharmacy and would breach the vertical boundary).
+   > The article still runs on capability and segment framing with zero named customers.
+5. **Zero third-party / external sources.** All 5 links are internal. Carried verbatim:
+   > **Zero external sources** (publish-stage flag): unchanged. All five links are internal. The article's
+   > factual load is product claims and one privacy policy, and no external authority was added in this
+   > round; `quality-controller` will still cap category B on that basis.
+6. **Central Privacy / Regulatory FAQ is still not live.** Carried verbatim:
+   > **Central Privacy/Regulatory FAQ not live** (plan #5): still not live, but the privacy content is now
+   > verified against the public privacy policy instead of standing on an internal note alone, so the
+   > missing hub is no longer the only backing for the section.
+7. **HIPAA has no public artifact.** New this round, from my own verification: the live FitXpress Privacy
+   Policy names GDPR and CCPA and does not mention HIPAA. The article's HIPAA sentence therefore rests on
+   FX-007 (internal security commitment) alone. Approved claim, so not a deviation, but worth knowing if a
+   prospect follows the link.
+8. **Boundary section is an H3, not an H2.** Carried verbatim:
+   > **Applied differently — the boundary section's heading level.** Review item 2's 12-part order leaves no
+   > slot for a standalone `What FitXpress does not do` H2 ... It is now an **H3 inside section 10** ...
+   > Content and force unchanged.
+   Matters at CMS time for any auto-generated table of contents or schema built from H2s.
+9. **BIA and DXA are expanded under the heading, not in it.** Carried verbatim:
+   > **Applied differently — BIA and DXA are expanded in the first sentence under the section heading, not
+   > in the heading itself.** ... Flagged because a mechanical M1 check will see the heading first.
+
+### 4C. Closed, recorded so nobody reopens them
+
+- **Sideways internal link omitted** (plan #6, write #3, edit #4, publish 2026-08-26): **closed** by review
+  item 6. `body-scanning-technology-comparison` is a technology comparison in the same product family, so
+  the Fitness/GLP-1 boundary concern that drove the omission does not apply. All 4 link directions present.
+- **`±3.5%` in the body:** closed, 0 occurrences.
+- **`DEXA` spelling:** closed, 0 occurrences, DXA expanded once.
+- **Six unsupported retention / CAC sentences:** closed, all deleted. Retention and engagement now appear
+  only as something a pilot measures against a program's own baseline (3 places, all measurement framing).
+- **Repetition of the five recurring claims:** closed. Verified by my own grep, one body instance plus one
+  FAQ instance each: `80+` 1+1, `under 45 seconds` 1+1, `less than 1 cm` 1+1, privacy/`30 days` 1+1,
+  who-decides 1+1. `1.5 to 2.0 cm` also 1+1. `96 to 97%` and `3.5%` body only.
+- **Residual `so` connector** flagged in the 2026-08-26 package: closed, the word does not occur.
+- **The old package's stale meta description:** closed, superseded by section 1 of this file.
 
 ---
 
 ## 5. Alt options
 
 ### Meta title variants
-1. **Online Fitness Coaching Programs: Remote Body Measurement** (57 chars) — RECOMMENDED. Front-loads
-   the actual SEO head term (starts at character 1), stays well under 60 chars, still legible as the same
-   topic as the H1.
-2. **Remote Body Measurement for Online Fitness Coaching Programs** (60 chars) — exact match to the
-   content-plan.md strategy-row title and the article's own H1; head term sits at the end, not the front.
-   Use this if title/H1 consistency should outweigh front-loading.
-3. **How Online Fitness Coaching Programs Track Progress Remotely** (60 chars) — natural-language phrasing,
-   good AEO/GEO fit, head term starts at character 5 (still first-half).
+
+1. **Online Fitness Coaching Programs: Remote Body Measurement** (57 chars), **RECOMMENDED.** Head term at
+   character 1, keeps the `remote body measurement` secondary phrase (difficulty 26) in the string, reads as
+   the same topic as the H1.
+2. **Online Fitness Coaching Programs: Body Measurement Workflow** (59 chars), head term still at
+   character 1, and "Workflow" is the truer label for the revised article (workflow, coaching-stage table,
+   pilot evaluation). Costs the `remote body measurement` phrase match.
+3. **Remote Body Measurement for Online Fitness Coaching Programs** (60 chars), exact `content-plan.md`
+   row and H1 wording. Use if title/H1 consistency should beat front-loading; head term lands at character
+   29, still inside the first 60 but not front-loaded.
 
 ### Meta description variants
-1. **Coaches can't tape-measure remote clients. See how a guided smartphone scan gives online fitness
-   coaching programs structured progress data clients trust.** (154 chars) — RECOMMENDED. Leads with the
-   buyer pain point, states the mechanism, closes on a soft "see how."
-2. **A two-photo scan replaces guesswork for online fitness coaching programs, returning 80+ measurements,
-   body composition, and progress clients can see.** (149 chars) — leads with the mechanism and a real
-   number (80+ measurements, FX-005), slightly more feature-forward.
-3. **Remote clients, real progress. Online fitness coaching programs use a two-photo scan for structured
-   measurements and visible retention gains.** (141 chars) — shortest, punchiest hook, ties directly to
-   the retention framing that drives the article's "why now" section.
+
+1. **Online fitness coaching programs can capture client body data from a guided phone scan. See how it
+   fits check-ins and what a pilot should measure.** (146 chars), **RECOMMENDED.** Head term first,
+   mechanism, then the two blocks the review added. No engagement or retention promise, no audience-reaction
+   claim, does not restate the title.
+2. **Online fitness coaching programs can standardize remote client measurement with a guided two-photo
+   scan. See where it fits a check-in and where it stops.** (153 chars), same front-loading, adds the
+   two-photo detail and carries the article's stated-limits posture into the SERP. Slightly long.
+3. **Online fitness coaching programs need client records that compare across weeks. See how a guided
+   two-photo scan fits check-ins, with its limits stated.** (151 chars), leads on comparability, which is
+   the actual argument of section 2. Softest hook of the three.
+
+Rejected on purpose: anything built on the old "clients trust", "visible progress" or "retention gains"
+framing. Review item 4 deleted those claims from the body, so a meta tag promising them would be a claim the
+article no longer makes.
 
 ---
 
 ## 6. Images / alt text suggestions
 
-No visual brief exists yet for this article — per CLAUDE.md §9, `visual-brief` runs after Vadim approves
-the publish package, not before. These are directional suggestions to unblock that step, not a brief.
+No visual brief exists yet. `visual-brief` runs after Vadim approves this package (CLAUDE.md section 9), so
+these are directional. `DESIGN.md` tokens only: electric blue `#143DFF`, navy `#050F40`, Satoshi. No
+clinical or lab imagery anywhere, this is the non-clinical Fitness vertical. No ranked or scored leaderboard
+of methods, the comparison is by role.
 
-1. **Hero / OG image:** a split view — one side a smartphone in a guided-capture pose (front/side
-   silhouette outline, on-screen framing guide), the other side a simple before/after 3D-model
-   side-by-side comparison. Use DESIGN.md tokens (`#143DFF` electric blue, `#050F40` navy, Satoshi
-   typeface); no clinical/lab imagery, since this is the non-clinical Fitness vertical.
-   **Alt text:** "Smartphone capturing a guided body scan next to a side-by-side 3D progress comparison
-   for an online fitness coaching program."
-2. **In-article image, near "The remote measurement workflow, step by step":** a simple 4-step visual
-   matching the numbered list (capture → structured data → coach's view → comparison at check-in).
-   **Alt text:** "Four-step remote body measurement workflow: guided phone capture, structured data
-   generation, results in the coach's platform, and comparison at the next check-in."
-3. **Table visual (optional, for social reuse):** rendered version of "Comparing remote measurement
-   methods by role."
-   **Alt text:** "Comparison table of self-report, tape measure, connected scale, progress photos, and
-   mobile body scan for remote fitness coaching, showing what each method gives and its best-fit use."
-
-No image should depict a medical or clinical setting, a diagnostic device, or a ranked/scored leaderboard
-of methods — the article's comparison framing is by-role, not a ranking.
+1. **Hero / OG image.** Split composition: a smartphone in guided-capture pose (front and side silhouette
+   outline with an on-screen framing guide) beside a two-model side-by-side progress comparison.
+   **Alt:** "Smartphone capturing a guided body scan beside a side-by-side 3D progress comparison for an
+   online fitness coaching program."
+2. **Workflow visual, at "How it fits the coaching workflow".** Four numbered steps matching the list:
+   baseline at onboarding, structured outputs generated, results in the coach's view, comparison at each
+   check-in.
+   **Alt:** "Four-step remote body measurement workflow: baseline capture at onboarding, structured outputs
+   generated, results in the coach's view, and comparison at each check-in."
+3. **NEW: coaching-stage decision table, at "How coaches can use the results".** Render the four-row table
+   as a graphic, with the fourth column ("Limitation") given the same visual weight as the other three, not
+   set as fine print. That column is the point of the section.
+   **Alt:** "Table of four coaching stages with the data reviewed, the possible coach action, and the
+   limitation at each stage: onboarding, recurring check-in, apparent plateau, and program completion."
+4. **NEW: pilot-evaluation visual, at "How to evaluate a pilot".** The seven process measures in the
+   article's order, with the first two (scan completion, retake rate) visually gated ahead of the rest and
+   engagement or retention last. Do not draw an upward trend line or a percentage: the section's argument is
+   that these are measured against the program's own baseline, not promised.
+   **Alt:** "Seven pilot measures for a remote body measurement rollout, ordered from scan completion and
+   retake rates through coach review time to engagement or retention measured against a baseline."
+5. **Method comparison table (optional, good for social reuse).** Rendered version of the seven-row
+   comparison, keeping consumer smart scale and professional BIA on separate rows and keeping the
+   "Limitation to disclose" column visible.
+   **Alt:** "Comparison of client self-report, home tape measurement, consumer smart scale, professional
+   BIA, DXA, progress photos, and mobile body scan, showing what each provides and its limitation for a
+   coaching program."
 
 ---
 
-## 7. Article
+## 7. Article (CMS-ready)
 
-*(Claim-ID HTML comments, e.g. `<!-- claim: FX-005 -->`, are internal compliance-audit annotations from
-the writing/editing pipeline. Strip them before pasting into the CMS.)*
+Body of `draft-v3-revision1.md` with the YAML frontmatter removed and every internal
+`<!-- claim: FX-00X -->` / `<!-- source: ... -->` annotation stripped. Headings, tables, emphasis and
+markdown links are otherwise byte-identical to the approved draft (verified by diff). Two tables, seven FAQ
+items, five internal links, zero em dashes.
 
 # Remote Body Measurement for Online Fitness Coaching Programs
 
-A coach running two hundred remote clients cannot put a tape measure around anyone's waist. The measurement still has to happen. Progress a client cannot see is progress they stop paying for, and retention is the number that decides whether an online coaching business survives its second year.
+A coach carrying two hundred remote clients cannot put a tape measure around anyone's waist, and the measurement still has to happen. Remote body measurement is how online fitness coaching programs close that gap: a guided smartphone scan becomes the point where body data gets captured, in place of an in-person intake or check-in appointment.
 
-Remote body measurement closes that gap for online fitness coaching programs. It turns a client's smartphone into the intake and progress-tracking step that used to require an in-person session.
+The operational question is narrower than the technology question. Capture has to fit the check-in cadence a program already runs, the outputs have to land in the tool the coach works in daily, and the limits of the data have to be understood before a progress screen gets built on top of them. Wider background on how structured body data is used across fitness products sits in the [AI in the fitness industry](https://3dlook.ai/content-hub/ai-in-fitness-industry/) hub.
 
 *Scope note: a fitness progress and intake layer for coaching programs, non-clinical. FitXpress is not a medical device and does not make clinical or eligibility decisions.*
 
-## The measurement gap in online fitness coaching programs
+## The measurement problem in online fitness coaching programs
 
-Online fitness coaching programs run on data the coach never collects in person. A client reports weight from a home scale, snaps a progress photo in variable lighting, and maybe wraps a tape measure around their own waist at an angle no two weeks match. Each input is easy to get wrong and easy to misrepresent, whether on purpose or not.
+Coaching delivered remotely runs on data the coach never collects in person. A client reads a weight off a home scale, takes a progress photo in whatever light the room offers, and sometimes wraps a tape measure around their own waist at a height no two weeks match. How each of those figures was produced goes unrecorded.
 
-The real problem is comparison. A coach adjusting a program at week eight needs to know what changed since week one. Self-reported weight moves for reasons that have nothing to do with body composition. A tape measure held half an inch higher reads as a loss that never happened. Progress photos taken in a different room at a different time of day give the client nothing they trust. Clients leave when they cannot see progress, and for a subscription business an invisible result is a cancelled renewal.
+Comparison is where that becomes expensive. A coach adjusting a program at week eight needs to know what changed since week one, which requires both records to have been made the same way. Self-reported weight moves with hydration, food timing, and which scale was used. A tape held half an inch higher reads as a loss that never happened. Photos taken in a different room at a different hour are hard for either side to read as evidence of anything.
 
-## What remote body measurement means for a coaching program
+The missing piece is comparability: records captured the same way each time, at the points in a program where somebody makes a decision.
 
-Remote body measurement is the practice of capturing a client's body data from their own device, without an in-person appointment. In a coaching context it usually means a guided smartphone scan: the client takes two photos, and software returns structured measurements, body composition, and a 3D model that can be compared from one scan to the next.
+## What remote body measurement provides
 
-From two photos, FitXpress generates 80+ body measurements and body composition outputs in under 45 seconds, including BMI, basal metabolic rate (BMR), body fat percentage, and lean and fat mass. <!-- claim: FX-005 --> That gives a coach circumference and composition data for tracking a body over time, well beyond a single number from a home scale.
+Remote body measurement is the practice of capturing a client's body data from their own device, without an in-person appointment. In coaching that usually means a guided smartphone scan. The client takes two photos, front and side, and software returns a structured record in under 45 seconds.
 
-The useful question is not "how accurate is it?" but "accurate enough for which decision?" A coach is not underwriting an insurance policy or setting a surgical plan. The decision is whether a client's waist is trending down over eight weeks and whether the program should change. For that decision, the property that matters is repeatability: how closely two scans of the same unchanged body agree. FitXpress scan-to-scan repeatability is typically < 1 cm. <!-- claim: FX-003 --> When repeatability is tight, a small real change in the body shows up instead of getting lost in measurement noise. Accuracy always depends on capture conditions, reference method, and population, which the [accuracy framework](https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/) covers in full.
+Five kinds of output come back, and the differences between them matter once a coach starts reading them:
 
-## Why this matters now
+- Model-generated body measurements, 80+ of them, extracted from the 3D model the software builds from the two photos.
+- Software-derived body-composition estimates, including body fat percentage, lean mass, and fat mass.
+- Calculated outputs such as BMI and basal metabolic rate (BMR), computed from scan outputs together with entered profile values.
+- A predicted weight from Smart Scales, read from the images with approximately 3.5% average prediction error under evaluated conditions.
+- The 3D model itself, which is what makes a side-by-side visual comparison between two check-ins possible.
 
-Online coaching has moved from a pandemic workaround to a standard delivery model, part of a broader shift toward [AI in the fitness industry](https://3dlook.ai/content-hub/ai-in-fitness-industry/), and the economics have moved with it. Acquiring a new client costs more every year, which makes retention the number that decides profitability: a subscriber who renews for a year is worth several who churn after onboarding.
+The line between a measured value and an estimate is worth holding onto. A waist circumference comes out of the model's geometry. Body fat percentage is derived by applying a formula to those figures, which means it carries the formula's assumptions along with the scan's. Composition estimates read best as a trend across several scans; a single reading deserves more caution. On a client-facing progress screen they also draw the most attention, which is an argument for showing circumference trends next to them.
 
-Retention depends on a client believing the program works for them, and showing progress beyond the scale is how that belief gets built. Weight alone hides recomposition, since a client can lose fat and gain muscle while the scale sits still. A waist measurement trending down, or a 3D model compared side by side, shows the change the scale misses. Clients also arrive expecting personalization, and adapting a program to real body data offers something firmer than an intake survey and a goal weight.
+## How it fits the coaching workflow
 
-## The remote measurement workflow, step by step
+The workflow attaches to a cadence that exists: a baseline at the start, then follow-up scans at the check-in points already on the calendar.
 
-The workflow fits an existing coaching cadence: a baseline at the start, then follow-up scans at the check-in points a program already uses.
+1. **Baseline at onboarding.** The client completes the program's profile step, then follows an on-screen flow to take two photos, front and side. On-screen guidance corrects framing and pose during capture. Which profile fields that step requires varies by program, and weight is optional in supported workflows, since Smart Scales predicts a figure from the photos and the software flags a difference when a self-reported weight is also supplied. BMI is a calculated output that depends on height and weight both being available.
+2. **Structured outputs generated.** Processing returns the measurements, the composition estimates, the calculated values, the predicted weight, and the 3D model as structured data.
+3. **Results appear in the coach's view.** Outputs land in the coaching platform where clients are reviewed, which removes the parallel spreadsheet and the manual entry of tape figures.
+4. **Comparison at each check-in.** A follow-up scan lines up against the baseline. The coach sees which measurements moved and by how much; the client sees the two 3D models side by side.
 
-1. **Guided capture at home.** The client opens the coaching app, enters a few basic inputs (height, current weight, age, gender), and follows an on-screen flow to take two photos, front and side. Guidance corrects framing and pose along the way. Capture takes about a minute.
-2. **Structured data generated.** Software processes the two photos in under 45 seconds and returns 80+ body measurements, body composition (BMI, BMR, body fat percentage, lean and fat mass), and a 3D model. <!-- claim: FX-005 --> Smart Scales can also estimate weight from the photos, with an average error margin of ±3.5%. The estimate is a software output read from the images, useful mainly as a cross-check when a client's self-reported weight looks off. <!-- claim: FX-006 -->
-3. **Results land in the coach's view.** The measurements and composition appear where the coach already works, inside the coaching platform. There is no separate spreadsheet to maintain and no manual entry of tape numbers.
-4. **Comparison at the next check-in.** At each follow-up, the new scan lines up against the baseline. The coach sees which measurements moved and by how much, and the client sees a side-by-side 3D comparison. A remote check-in becomes a moment that shows progress instead of a form to fill in.
+The cadence stays the program's own, whether that is monthly check-ins, six-week training blocks, or a scan at each end of a twelve-week challenge.
 
-The coach reads the trend and decides what to change. The tool supplies the structured input to that call.
+## How coaches can use the results
+
+Structured data earns its place only if it changes something a coach does. Four stages cover most coaching programs, and each one supports a different action and stops at a different limit.
+
+| Coaching stage | Data reviewed | Possible coach action | Limitation |
+| :- | :- | :- | :- |
+| Onboarding | Baseline measurements and 3D model | Establish the starting record | Does not prescribe a program |
+| Recurring check-in | Measurement and composition trends | Review progress with other client data | Small changes require context |
+| Apparent plateau | Weight and regional measurements | Investigate different progress signals | Cannot determine the cause |
+| Program completion | Full longitudinal comparison | Summarize progress | Avoid causal conclusions |
+
+The fourth column carries the weight. A scan can show that a waist circumference moved across six weeks by more than the scan-to-scan variation. It cannot say whether the training block, the diet change, or a sleep change produced that movement, and it cannot say what to do next. FitXpress supplies the structured record; the coach makes the call.
+
+## Comparison with scales, tape measurements, photos, BIA, and DXA
+
+Remote coaching programs draw on six other measurement methods, and two of those, professional bioelectrical impedance analysis (BIA) and dual-energy X-ray absorptiometry (DXA), require the client to be in a room with a device.
+
+| Method | What it provides | Limitation to disclose | Where it fits a coaching program |
+|--------|------------------|------------------------|----------------------------------|
+| Client self-report | Weight and rough circumference figures | Varies by scale, timing, and technique; hard to compare across weeks | Low-stakes check-ins, budget programs |
+| Tape measurement at home | Circumferences | Placement varies between sessions; difficult to reproduce | Motivated clients who measure carefully |
+| Consumer smart scale | Weight, and an impedance-based body-composition estimate | Composition estimates depend on hydration, device model, and electrode placement | Daily weight trend at home |
+| Professional BIA | Weight and segmental composition estimates from a calibrated device | Requires an in-person visit; results depend on the device and the preparation protocol | Periodic assessment where a studio or clinic is available |
+| DXA | Reference-grade body composition and regional fat and lean distribution | Clinic-based and appointment-bound; access and cost depend on the provider; circumference measurements sit outside its output | Occasional reference reads for clients who need them |
+| Progress photos | Visual change | Lighting, pose, and framing vary; not measurable | Motivation and qualitative review |
+| Mobile body scan | Measurements, composition estimates, calculated values, a predicted weight, and a 3D model, comparable across scans | Depends on capture conditions; not a clinical reference method | Standardized intake and longitudinal progress across a remote roster |
+
+A calibrated scale remains the right instrument for a precise weight. DXA is a reference method for body composition in clinical and research settings, and professional BIA sits between the two, quicker to run and sensitive to the client's hydration state on the day. None of the three runs remotely across a whole roster at every check-in, which is the practical constraint a coaching program works inside.
+
+A mobile scan works alongside them. A client can weigh in daily on a connected scale, book a DXA read when a program genuinely calls for one, and scan monthly for the circumference and composition trend the coach reviews. Differences between scanning approaches themselves, including two-photo capture, video, and hardware booths, are set out in [2-Photo vs Video vs Hardware body scanning](https://3dlook.ai/content-hub/body-scanning-technology-comparison/).
 
 ## Where FitXpress fits
 
-FitXpress is the body-data capture and scan-to-scan comparison layer, not the coaching app around it. A platform adds body measurement to a coaching app by integrating FitXpress through an application programming interface (API) or a software development kit (SDK), which handles the guided capture, the measurement processing, and the structured output.
+FitXpress is the body-data capture and scan-to-scan comparison layer inside a coaching product. A platform integrates it through an application programming interface (API) or a software development kit (SDK), which handles guided capture, processing, and the structured output.
 
-The split is clean. 3DLOOK provides the body scanning API for a fitness platform: the capture flow, the measurements, the composition outputs, the 3D model, and the comparison data across scans. The platform builds everything the coach and client see, including the program logic, the check-in schedule, the messaging, and the way results are presented. FitXpress returns structured data, and the platform team decides how to use it.
+3DLOOK provides the capture flow, the measurements, the composition estimates, the calculated values, the 3D model, and the comparison data across scans. The platform builds what the coach and the client actually see: program logic, check-in scheduling, messaging, and how results are presented. FitXpress returns structured data, and the platform team decides how that data is used.
 
-Under real conditions, FitXpress has shown approximately 96 to 97% accuracy compared with expert manual measurements, with typical absolute error running 1.5 to 2.0 cm. <!-- claim: FX-001 --><!-- claim: FX-002 --> Those figures describe agreement with a manual reference, and they hold when scans are captured under consistent conditions, which is why capture guidance matters in production.
+Programs at the comparison stage can review how [FitXpress supports remote progress tracking for coaching programs](https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/) before scoping a build.
 
-Client body data needs a privacy posture from day one. FitXpress complies with the Health Insurance Portability and Accountability Act (HIPAA) and aligns with the principles of the General Data Protection Regulation (GDPR). Images are encrypted in Amazon Simple Storage Service (Amazon S3) using server-side encryption with Amazon S3 managed keys (SSE-S3), and photos are deleted immediately or within 30 days depending on the client's policy. <!-- claim: FX-007 -->
+## Accuracy, repeatability, privacy, and implementation
 
-## What improves operationally
+### Accuracy and repeatability
 
-Standardizing measurement changes four things at once. Intake becomes consistent: every client is measured the same way, in the same sequence, producing records that compare cleanly across a roster, and a coach onboarding thirty new clients a month collects structured baselines without chasing tape numbers. Progress becomes visible, which is the engagement lever for this segment, because a client who watches their waist trend down and a 3D model change shape has a concrete reason to renew.
+The better question is narrower: accurate enough for which decision? A coach is not underwriting an insurance policy or planning a procedure. The decision in front of them is whether a client's waist is trending down across eight weeks and whether the program should change.
 
-Small real changes also survive measurement noise. Because scan-to-scan repeatability is typically < 1 cm, a genuine recomposition change over a few weeks shows up instead of being masked by inconsistent measuring, and a coach can point to it and defend it. <!-- claim: FX-003 --> Coach time scales as well: as a program grows, manual progress collection does not, while structured capture does, which keeps the coach coaching instead of assembling data. Body-data personalization and 3D progress comparison can also sit behind a premium tier, giving a program a concrete feature to charge for.
+Internal validation against expert manual measurements showed approximately 96 to 97% accuracy, with typical absolute error of 1.5 to 2.0 cm. Those figures describe agreement with a manual reference under consistent capture conditions, which is why capture guidance matters more in production than any single headline figure.
 
-If you are evaluating options, see how [FitXpress supports remote progress tracking for coaching programs](https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/).
+For progress tracking, repeatability carries more weight than one-off accuracy. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm. When scan-to-scan differences stay that small, a modest real change is more likely to be distinguishable from capture variation. What counts as accurate depends on the reference method, the capture protocol, the population measured, and the intended workflow, all four of which the [mobile body scanning accuracy framework](https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/) sets out in full.
 
-## What FitXpress does not do
+### Privacy and consent
 
-Clear limits make the rest of the argument trustworthy.
+Client body data needs a stated privacy posture before the first scan. FitXpress complies with the Health Insurance Portability and Accountability Act (HIPAA) and aligns with the principles of the General Data Protection Regulation (GDPR). Data is encrypted in transit and at rest on Amazon Web Services (AWS) infrastructure, and photos are either deleted immediately after processing or retained for up to 30 days, depending on the business client's configuration. Retained photos are automatically blurred. A coaching program still owns its own consent language and needs a retention rule it can state plainly to clients.
 
-FitXpress is not a medical device. It does not diagnose conditions, screen for them, or make clinical decisions. It plays no part in glucagon-like peptide-1 (GLP-1) eligibility or any treatment decision, and deciding who qualifies for a program stays with the coach and the program's own rules. Body composition from a smartphone scan is not equivalent to dual-energy X-ray absorptiometry (DEXA), bioelectrical impedance analysis (BIA), or a calibrated scale when a workflow or protocol requires those reference methods.
+### Implementation
 
-What FitXpress does is narrower and useful. It captures structured body data remotely, standardizes how a coaching program measures clients, and supports scan-to-scan comparison over time. It gives a coach a firmer basis for a decision. The coach still makes it.
+**Integration scope.** Scope the first build to one capture point and one comparison view. The platform team owns display, storage, and the client-facing progress screen; the integration returns the structured record.
 
-## Comparing remote measurement methods by role
+**Capture protocol.** Production conditions are not lab conditions. Clients scan in odd lighting, in loose clothing, holding the phone at the wrong angle. Consistent on-screen guidance and retake prompts do more for real-world results than any single accuracy figure, which makes capture testing with real clients the first thing to schedule.
 
-No single method wins for every coaching need. The right question is which method fits which job.
+**Change thresholds.** Decide in advance what size of change the program treats as meaningful, and base that threshold on measured scan-to-scan variation. A movement smaller than the variation is best read as capture noise.
 
-| Method | What it gives | Limitation to disclose | Best-fit coaching use |
-|--------|---------------|------------------------|----------------------|
-| Self-report | Weight, rough measurements | Inconsistent, easy to misreport | Low-stakes check-ins, budget programs |
-| Tape measure | Circumferences at home | Placement varies scan to scan; hard to reproduce | Motivated clients who measure carefully |
-| Connected scale | Weight, sometimes an impedance estimate | One number; hides recomposition | Daily weight trend at home |
-| Progress photos | Visual change | Lighting, pose, and framing vary; not measurable | Motivation and qualitative review |
-| Mobile body scan | 80+ measurements, composition, 3D model, comparable scans | Depends on capture conditions; not a clinical reference | Standardized intake and longitudinal progress |
+**Model maturity.** Behind the outputs are 9+ years of training data, including 150K+ photos, 30K+ 3D scans, and 430K+ measurements, which is the context a technical buyer usually asks for during diligence.
 
-A calibrated scale is still the right tool for a precise weight reading, and DEXA remains the clinical reference method for body composition. Neither is practical to run remotely across a roster at every check-in. That is the gap a mobile body scan fills: it gives the 80+ measurements and composition a single-number scale cannot, <!-- claim: FX-005 --> and repeatability typically < 1 cm makes longitudinal comparison meaningful across scans. <!-- claim: FX-003 --> In the best online fitness coaching programs, remote body measurement works alongside these other methods, with a client still weighing in daily while the coach uses scans for the structured progress picture.
+## How to evaluate a pilot
 
-## Which coaching programs this fits
+A pilot answers process questions before it answers commercial ones. Seven measures are worth instrumenting, and each one is a process measure the platform reads from its own data:
 
-Remote body measurement fits coaching businesses where three things are true: delivery is remote-first, the roster is growing, and revenue is recurring.
+- Scan completion and retake rates.
+- The share of clients with a usable baseline-to-follow-up comparison.
+- Coach review time per client at a check-in.
+- Scheduled check-in completion.
+- Support requests generated by the scan step.
+- Client use of the progress view.
+- Engagement or retention measured against the program's own pre-pilot baseline.
 
-That describes several buyer profiles:
+The first two govern everything after them. A high retake rate is a finding about capture guidance, and it has to be fixed before the later measures can be read as anything. Review time is the measure most often skipped and the one an operations lead asks about first, since coach hours are what caps how many clients a program can serve well.
 
-- **Online fitness coaching programs** running subscription memberships with regular check-ins.
-- **Digital coaching platforms** serving many coaches and clients, where standardized measurement matters across the whole base.
-- **Hybrid personal training** studios extending coaching between in-person sessions.
-- **Corporate fitness coaching** delivered to distributed employees.
+Engagement and retention belong at the end of that list on purpose. A pilot can test whether a progress view moves them against a baseline the program already has. Treating the movement as a given before the test defeats the point of running one.
 
-The people who evaluate it are usually the founder or CEO, the chief product officer, or the head of growth or user engagement, often with a product manager or chief technology officer (CTO) handling the integration. Their shared question is whether visible progress and body-data personalization will lift engagement and retention enough to justify the build.
+## Best-fit coaching programs and limitations
 
-It is not the right tool for every practice. A solo coach with a handful of local, in-person clients gains little from remote capture, and a program with no recurring revenue has less to protect. The value grows with scale, remote delivery, and the length of the client relationship.
+Remote body measurement fits coaching businesses that deliver remotely and bill on a recurring basis, and its value grows with the size of the roster and the length of the client relationship.
 
-## Implementation and evaluation considerations
+- Online coaching programs running subscription memberships with regular check-ins.
+- Digital coaching platforms serving many coaches at once, where measurement consistency has to hold across the whole base.
+- Hybrid personal-training studios extending coaching between in-person sessions.
+- Corporate fitness coaching delivered to distributed employees.
 
-A few things are worth settling before and during a pilot.
+Evaluation usually sits with the founder or CEO, the chief product officer, or the head of growth or engagement, with a product manager or chief technology officer (CTO) handling integration. The question they bring is whether body-data personalization moves engagement and retention enough to justify the build, which a pilot measured against a baseline can answer.
 
-**Integration.** The body scanning API for a fitness platform returns structured data to the coaching app, and the platform team owns how it is displayed and stored. Scope the pilot to one capture point and one comparison view before expanding.
+It is not the right tool for every practice. A solo coach with a handful of local, in-person clients gains little from remote capture. A program with no recurring revenue has fewer check-ins to standardize and less to protect.
 
-**Capture protocol.** Production conditions are not lab conditions. Clients scan in odd lighting, in loose clothing, holding the phone at the wrong angle. Consistent guidance and retake prompts do more for real-world results than any single accuracy figure, so test capture with real clients under real conditions.
+### What FitXpress does not do
 
-**Repeatability expectations.** Base program thresholds on measurement repeatability. Decide in advance what size of change the program treats as meaningful; a change smaller than the scan-to-scan variance is measurement noise, and only a larger move should read as progress.
+FitXpress is not a medical device. It does not diagnose conditions, make clinical decisions, or determine treatment eligibility. It has no role in glucagon-like peptide-1 (GLP-1) eligibility, and who qualifies for a coaching program remains a matter for the coach and the program's own rules. Software-derived body-composition estimates are not equivalent to DXA, BIA, or a calibrated scale where a workflow or protocol requires those reference methods.
 
-**Evaluate accuracy by decision.** Ask what decision the data supports, then judge accuracy against four conditions: the reference method, the capture protocol, the population measured, and the intended workflow, as the accuracy framework sets out. Behind the model is 9+ years of training data, including 150K+ photos, 30K+ 3D scans, and 430K+ measurements, useful context when a buyer is assessing maturity. <!-- claim: FX-008 -->
-
-**Privacy and consent.** Client body data needs explicit consent and a stated retention rule. FitXpress is HIPAA-compliant and GDPR-aligned, encrypts images with SSE-S3, and deletes photos immediately or within 30 days depending on the client's policy. <!-- claim: FX-007 -->
+What FitXpress does is narrower. It captures structured body data remotely, standardizes how a coaching program measures clients, and supports comparison from one scan to the next.
 
 ## FAQs
 
 **What is remote body measurement for online fitness coaching programs?**
 
-It is capturing a client's body data from their own smartphone, without an in-person appointment. A guided two-photo scan returns measurements, body composition, and a 3D model that a coach can compare from one check-in to the next.
+It is capturing a client's body data from their own smartphone, without an in-person appointment. A guided two-photo scan returns measurements, body-composition estimates, calculated values such as BMI, a predicted weight, and a 3D model. Those outputs form a record a coach can compare from one check-in to the next.
 
 **How do clients take the measurements?**
 
-The client enters a few basic inputs and follows an on-screen flow to take two photos, front and side, with guidance on framing and pose. Capture takes about a minute, and processing returns results in under 45 seconds. <!-- claim: FX-005 -->
+The client completes the program's profile step and follows an on-screen flow to take two photos, front and side, with guidance on framing and pose. Capture takes about a minute, and processing returns results in under 45 seconds.
 
-**Can it replace a smart scale or DEXA?**
+**Can it replace a smart scale, BIA, or DXA?**
 
-No. A smart scale gives a precise weight, and DEXA is a clinical reference method for body composition. A mobile scan complements them by adding 80+ measurements, composition, and a comparable record across scans that neither provides remotely at scale. <!-- claim: FX-005 -->
+No. A connected scale gives a precise weight, and BIA and DXA are in-person methods for body composition, with DXA used as a reference method in clinical and research settings. A mobile scan complements all three by adding a comparable remote record across scans that none of them produces at roster scale.
 
 **How accurate and repeatable is it?**
 
-Accuracy depends on the decision, the reference method, the capture protocol, and the population. Against expert manual measurement, typical absolute error runs 1.5 to 2.0 cm, <!-- claim: FX-002 --> and scan-to-scan repeatability is typically < 1 cm, which is what makes progress comparison reliable. <!-- claim: FX-003 -->
+Accuracy depends on the decision, the reference method, the capture protocol, and the population measured. In internal validation against expert manual measurements, typical absolute error ran 1.5 to 2.0 cm. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm, which is the property that matters most for comparing check-ins.
 
 **What body data does it capture?**
 
-From two photos, FitXpress generates 80+ body measurements and body composition outputs, including BMI, BMR, body fat percentage, and lean and fat mass. <!-- claim: FX-005 -->
+From two photos, FitXpress generates 80+ body measurements along with software-derived body-composition estimates, including body fat percentage and lean and fat mass, and calculated outputs including BMI and BMR. A predicted weight and a 3D model come back with them.
 
 **Is client body data private?**
 
-FitXpress is HIPAA-compliant and GDPR-aligned. Images are encrypted with SSE-S3, and photos are deleted immediately or within 30 days depending on the client's policy. A coaching program should still get explicit client consent and state its retention rule. <!-- claim: FX-007 -->
+FitXpress is HIPAA-compliant and GDPR-aligned. Data is encrypted in transit and at rest, and photos are either deleted immediately after processing or retained for up to 30 days, depending on how the business client configures it. A coaching program should still obtain explicit client consent and state its own retention rule.
 
 **Does the coach or the tool decide anything?**
 
-The coach decides. FitXpress provides structured body data and scan-to-scan comparison; it does not make recommendations or program decisions. The technology standardizes the input to the coach's judgment.
+The coach decides. FitXpress provides structured body data and scan-to-scan comparison; it makes no recommendations and no program decisions. Standardized capture changes the quality of the input to the coach's judgment.
 
 ## Conclusion and next steps
 
-Remote body measurement changes one operational thing for a coaching program: it turns inconsistent self-reports and progress photos into structured, comparable body data captured from a client's own phone. That gives coaches a firmer basis for adjusting programs and gives clients visible progress that supports retention.
+Remote body measurement changes one operational thing for a coaching program. Inconsistent self-reports and progress photos become a structured record captured from the client's own phone, comparable from one check-in to the next, with the limits of that record written down where coaches can see them.
 
-The practical next step is to see how the capture and comparison layer fits an existing coaching cadence. Explore [FitXpress for connected and digital fitness](https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/) to review the workflow, or book a demo to walk through it with the 3DLOOK team against your own program.
+What a program builds on top of that record is a product decision, and the honest way to find out whether it lands is to instrument the pilot: completion and retake rates first, coach review time second, engagement measured against a baseline last. Explore [FitXpress for connected and digital fitness](https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/) to review the workflow, or book a demo to walk through it with the 3DLOOK team against a specific program.

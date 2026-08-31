@@ -105,3 +105,171 @@ Draft ready for `seo-editor` (Pass 3b strategy compliance, Pass 3c detector, Pas
 Article is now at **checkpoint 2** — text + meta together, awaiting Vadim's approval in Telegram. No
 further pipeline action until that approval; publishing to the CMS is manual (Vadim or via API), per
 CLAUDE.md §10.
+
+## 2026-08-31 — Revision 1 (seo-editor)
+
+External editorial review arrived on the published-ready text (`review1-comments.md`, 8 numbered priority
+recommendations, verbatim from the Review 1 tab). This was a revision round on `draft-v2-final.md`, run on
+the pattern set by `workspace/seo/articles/glp-1-market-hub/` (review1-comments → draft-v5-revision1 →
+changelog-revision1).
+
+- **Artifacts written:** `draft-v3-revision1.md` (status `revision1`, date 2026-08-31,
+  `review_source: review1-comments.md`, inline `<!-- claim: FX-00X -->` markers kept on every claim
+  sentence) and `changelog-revision1.md` (item-by-item 1-8, plus "not applied / applied differently" and a
+  claim-wording block for approval). `publish-package.md`, `draft-v1.md`, `draft-v2-final.md` and the
+  `review1-*.md` files were not touched; the publisher runs after this.
+- **Word count:** 2,582 prose words (H1 to end, HTML comments and table markup rows excluded), 2,839
+  including tables, 3,015 as the detector counts. Previous version: 2,525 prose. Round target was
+  2,300-2,600, so the long-running "word count vs plan's 2,300 ceiling" open item is now closed by the
+  review itself: the review cut one section and added two blocks, and the reviewer set the shape.
+- **detect-ai-tells.py (channel article), run by me on this output:**
+  `SEO / blog article · en · 3015 words / AI density: 0.0/1000 (budget 6.0) -> low / VERDICT: CLEAN`
+  JSON form: `hard_fails: []`, `house_rule_violations: []`, `markers_by_category: {}`, `em_dashes: 0`,
+  `punch_triad_count: 0`, sentence-length variation 0.48 (monotone threshold 0.35). CLEAN on the first
+  run; two soft slips found by my own second pass (a `so`-as-result connector introduced while drafting,
+  and a "the number that decides" anthropomorphism the detector does not match) were fixed and the
+  detector re-run.
+
+### What each review item changed
+
+1. **Differentiation.** `## Why this matters now` deleted outright, with the retention-economics and
+   CAC framing removed rather than relocated. The AI-in-fitness hub up-link survives as one clause in the
+   intro. No fitness-industry or market-trend prose left in the body.
+2. **Order.** Rebuilt to the reviewer's 12-part sequence exactly, including moving `Where FitXpress fits`
+   from position 5 to 7. `What improves operationally` disappeared as a section (content redistributed or
+   dropped); `What FitXpress does not do` became an H3 inside section 10, the limitations section.
+3. **Claim precision.** Five output classes separated; `±3.5%` replaced with "approximately 3.5% average
+   prediction error under evaluated conditions"; the broad repeatability line replaced with the reviewer's
+   exact sentence; 96-97% and 1.5-2.0 cm attributed to internal validation against expert manual
+   measurements; weight no longer a universally required input and age dropped from the input list; DXA
+   everywhere with one expansion, zero `DEXA`; privacy wording aligned to the live policy.
+4. **Unsupported commercial claims.** All six flagged sentences deleted. Retention and engagement now
+   appear only as things a pilot measures against a baseline (three places, all measurement framing).
+5. **Decision value.** New section 5 with the reviewer's 4-row coaching-stage table, and new section 9
+   with the seven pilot metrics as process measures.
+6. **Method comparison.** Table rebuilt 5 rows to 7: consumer smart scale split from professional BIA, DXA
+   row added, "one number" framing gone, complementary framing in the prose and in the FAQ.
+7. **Repetition.** 80+, under 45 seconds, the repeatability sentence, privacy/deletion and who-decides now
+   sit at exactly one body instance plus one FAQ instance each (grep counts in the changelog).
+8. **Tone.** All five flagged lines removed or rewritten, with no new punchy assertions substituted.
+
+### Open items for Vadim (this round)
+
+1. **Which document wins on medical framing.** The review asks for "FitXpress is not positioned as a
+   medical device." `brand-assets/content-strategy/terminology-guardrails.md` (Asselya's Doc, modified
+   2026-08-13, synced 2026-08-25) bans "positioned as" for product/intended-use/regulatory statements in
+   Part 2 §2.10 and records in its Overrides table that it **supersedes** `editorial-guardrails.md` #6,
+   which is where the reviewer's wording came from. The detector treats `not positioned as` as a hard
+   fail. The article therefore keeps **"FitXpress is not a medical device."** Vadim/Asselya to settle the
+   conflict at source so the next reviewer and the next agent read the same rule.
+2. **FX-007 wording, two changes needing approval.** (a) SSE-S3 and Amazon Simple Storage Service removed
+   from the body in favour of "encrypted in transit and at rest on Amazon Web Services (AWS)
+   infrastructure", because the public privacy policy (verified 2026-08-31) does not state SSE-S3;
+   `context-pack.md` FX-007 still names it. (b) "Retained photos are automatically blurred." added, from
+   the policy, carrying an inline source comment.
+3. **Repeatability convention.** `about-me.md` locks repeatability as `< 1 cm`; the reviewer's mandated
+   sentence spells it "less than 1 cm", which is what shipped (same call as the GLP-1 hub revision). If
+   the locked convention is to win, reconcile the two documents rather than per article.
+4. **The older `ai-body-scanning-for-fitness` page.** Review item 1 suggests redirecting or rescoping it.
+   Out of scope here; needs a separate content-ops decision.
+5. **Still no named coaching customer** (carried from plan Open items #3). Capability and segment framing
+   only, no invented outcome.
+6. **BOFU URL path debt still open** (carried): `/fitxpress/for-connected-and-digital-fitness/` is flagged
+   in CLAUDE.md §16 as using a path level that does not exist. Linked twice in this revision as written in
+   `content-plan.md`. Confirm the canonical URL before publish.
+7. **Head-term difficulty still TBD** (carried from plan Open items #2): Ahrefs returned null.
+
+### Closed by this round
+
+- **Sideways internal link omitted** (plan #6, write #3, edit #4, publish): closed. Review item 6 requires
+  the `body-scanning-technology-comparison` link, and the target is a technology comparison in the same
+  product family, so the Fitness/GLP-1 boundary concern that drove the omission does not apply.
+- **Central Privacy/Regulatory FAQ not live** (plan #5): still not live, but the privacy content is now
+  verified against the public privacy policy instead of standing on an internal note alone, so the missing
+  hub is no longer the only backing for the section.
+- **Word count vs the plan's 2,300 soft ceiling** (edit #1): superseded by the review's own target shape.
+- **Zero external sources** (publish-stage flag): unchanged. All five links are internal. The article's
+  factual load is product claims and one privacy policy, and no external authority was added in this
+  round; `quality-controller` will still cap category B on that basis.
+
+### Next step
+
+`draft-v3-revision1.md` goes to `seo-publisher` for meta regeneration against the new structure (the
+recommended meta description in `publish-package.md` still describes the old text) and the final
+checklist, including its own detector re-run and the BOFU-URL confirmation.
+
+## 2026-08-31 — Publish stage re-run (seo-publisher)
+
+Second pass at checkpoint 2, run against `draft-v3-revision1.md` after the external review round. The
+2026-08-26 package was built on `draft-v2-final.md`, whose structure no longer exists, and its recommended
+meta description leaned on the tape-measure hook plus "progress data clients trust", which is the kind of
+audience-reaction promise review item 4 removed from the body.
+
+- **Files written:** `publish-package.md` (rewritten from `draft-v3-revision1.md`) and
+  `publish-package-v1-20260826.md` (plain `cp` of the old package before the rewrite, md5-verified
+  identical, not edited). `draft-v3-revision1.md`, `changelog-revision1.md`, `review1-comments.md`,
+  `review1-version1.md`, `draft-v1.md` and `draft-v2-final.md` were not touched.
+- **detect-ai-tells.py, run by me on the new draft** (both forms, exit 0 both times, no permission prompt):
+  `SEO / blog article · en · 3015 words / AI density: 0.0/1000 (budget 6.0) -> low /
+  VERDICT: CLEAN — check the positive side (voice, varied rhythm, a stated boundary) and ship.`
+  JSON: `ai_density_per_1000_words: 0.0`, `severity: "low"`, `hard_fails: []`,
+  `house_rule_violations: []`, `markers_by_category: {}`, `top_offenders: []`, `em_dashes: 0`,
+  `punch_triad_count: 0`, rhythm variation 0.48 (monotone threshold 0.35). The editor's number is
+  confirmed by measurement, not carried over.
+- **Recommended meta title (57 chars):** "Online Fitness Coaching Programs: Remote Body Measurement".
+  Head term at character 1. No brand suffix (only allowed at 49 chars or fewer without it).
+- **Recommended meta description (146 chars):** "Online fitness coaching programs can capture client body
+  data from a guided phone scan. See how it fits check-ins and what a pilot should measure." Head term
+  front-loaded, points at the two blocks the review added (check-in fit, pilot measurement), and promises
+  no engagement or retention outcome. Both alternates avoid the deleted retention framing as well.
+- **SEO checklist: 14/15.** One ❌: word count. 2,584 prose words (2,916 with tables, 3,015 as the detector
+  tokenizes) against `plan.md`'s "~2,000 (range 1,900-2,300)". Inside the context-pack's 1,800-2,800 band
+  and inside the revision round's own 2,300-2,600 target, outside plus-or-minus 10 percent of the recorded
+  plan target. Marked ❌ against the literal rule rather than re-defining the target, same call the
+  2026-08-26 package made at 2,525 words; what changed is that the reviewer deleted one section and
+  required two new ones, so the plan estimate no longer describes the commissioned article.
+- **Strategy checklist: 9/9.** The 2026-08-26 ❌ (sideways internal link missing) is closed by review item 6:
+  `body-scanning-technology-comparison` is now linked, so all four directions are present (up ×1,
+  sideways ×1, trust ×1, down ×2, verified by URL count).
+- **No STOP.** One ❌ in one checklist, below the 2-or-more threshold, and not in the positioning,
+  compliance or cannibalization category. Nothing goes back to `seo-editor`; what blocks publish is six
+  decisions for Vadim, not text quality.
+- **Verified mechanically, not assumed:** heading order matches the reviewer's 12-part sequence exactly
+  (intro + scope, measurement problem, what it provides, workflow, how coaches use results, comparison,
+  where FitXpress fits, accuracy/repeatability/privacy/implementation with three H3s, pilot, best-fit and
+  limitations with the boundary H3, FAQs, conclusion); each of the five deduplicated claims is 1 body + 1
+  FAQ (`80+`, `under 45 seconds`, `less than 1 cm`, privacy/`30 days`, who-decides; `1.5 to 2.0 cm` also
+  1+1); zero `DEXA`, zero `±`, zero em dashes, zero `positioned as`, zero `so` (any occurrence), zero
+  banned words, zero `we/our/you`, FX-004 absent, no named competitors; primary keyword in H1, intro
+  paragraph 1 and one H2; 7 FAQ answers at 2-3 sentences each.
+- **Privacy claims independently re-verified.** I fetched `https://3dlook.ai/fitxpress-privacy-policy/`
+  myself rather than trusting the editor's "verified 2026-08-31" note. Deletion/30-day retention, automatic
+  blurring of retained photos, and encryption in transit and at rest are all supported verbatim. `SSE-S3`
+  is absent from the policy, which confirms why it was dropped. "on AWS infrastructure" is supported by
+  composing two policy statements (hosting on "a leading cloud infrastructure provider" plus the AWS
+  sub-processor row), not by one sentence. **New finding: HIPAA is not mentioned anywhere in the public
+  policy** (GDPR and CCPA are), so the article's HIPAA sentence rests on FX-007 alone.
+- **Six decision items for Vadim before publish** (package section 4A, all carried verbatim from their
+  sources): (1) which document wins on medical-device framing, review's "not positioned as" vs the
+  `terminology-guardrails.md` ban that the article follows; (2) FX-007 wording, SSE-S3 out and automatic
+  blurring in, approving means updating `context-pack.md` FX-007 and CLAUDE.md section 12; (3) confirm the
+  canonical BOFU URL `/fitxpress/for-connected-and-digital-fitness/`, linked twice; (4) redirect or rescope
+  the older `ai-body-scanning-for-fitness` page, a separate content-ops task on that URL; (5) repeatability
+  convention `< 1 cm` (`about-me.md`) vs the reviewer's "less than 1 cm" that shipped; (6) FX-006 wording,
+  the `±` is gone from the article and still in the claim record.
+- **Nine informational items carried forward** (package section 4B), including word count, difficulty TBD,
+  thin demand (100/mo), no named coaching customer, zero third-party sources (caps `quality-controller`
+  category B), the privacy FAQ hub still not live, the boundary section now sitting at H3, and the
+  BIA/DXA-expanded-under-the-heading nuance. Seven items recorded as closed (package section 4C) so they do
+  not get reopened.
+- **Two judgment calls surfaced rather than buried:** a three-clause sentence in intro paragraph 2 that the
+  detector correctly does not treat as a punch triad, and the fact that BIA and DXA first appear inside the
+  reviewer's verbatim heading.
+- **CMS-ready body** is in package section 7: frontmatter removed, all `<!-- claim: -->` and
+  `<!-- source: -->` annotations stripped, everything else byte-identical to the approved draft (verified
+  by diff against a mechanically stripped copy).
+
+### Status
+
+Back at **checkpoint 2**, awaiting Vadim's approval of text plus meta together, and answers to the six
+decision items. No pipeline action until then. Publishing to the CMS stays manual (CLAUDE.md section 10).
