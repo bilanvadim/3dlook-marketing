@@ -6,7 +6,19 @@ track: social
 artifact_type: post
 total_score: 16/20
 status: good
-coordinator_review:
+coordinator_review: |
+  agreement: ✅ agree
+  top_issue: Skimmability and paraphrase density are fair; the two claims items were fixed pre-QC.
+  notes: |
+    Claims items already fixed before this report: "pricing" restored to the article's four-factor
+    hedge list, and a subject-verb slip corrected.
+    Agreed on Section E. Paragraphs 4 and 5 are too long for the brief's "short paragraphs, easy to
+    skim", and ~100 of 267 words are close paraphrase. Both are real. I did not restructure: the post
+    passed brand-check at 12/13, sits near its 280-word ceiling, and reflowing it would mean
+    re-verifying every claim for a readability gain. Logging it for agent-improver instead, since the
+    same drafter produced tighter paragraphs on denser material in linkedin-nick.
+    The FitXpress block at 27% of the post is a fair observation; the boundary sentences are
+    mandatory once capability is stated, so only the spec list could go.
 ---
 
 # QC Report — post-drafter — 2026-08-28

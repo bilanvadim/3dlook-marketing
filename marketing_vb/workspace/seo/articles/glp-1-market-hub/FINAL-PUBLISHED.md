@@ -94,4 +94,17 @@ This article is **DONE / PUBLIC**. It must not be re-pitched by `seo-planner` or
 
 ## Downstream
 
-Social pack: run `/post-from-article glp-1-market` — kicked off on 2026-08-28 immediately after this registration.
+Social pack **produced 2026-08-28** at `workspace/social/articles/glp-1-market-hub/` — 9 of 9 active
+profiles, `linkedin-whitney` skipped (`posts_per_week: 0`). `manifest.json` is `ready_for_review: true`.
+
+- Digest for Vadim: `workspace/social/articles/glp-1-market-hub/review-digest.md`
+- Run report and open issues: `workspace/social/articles/glp-1-market-hub/publish-report.md`
+- Shared brief the drafters ran against: `workspace/social/articles/glp-1-market-hub/_run-brief.md`
+
+The posts were drafted against `published-live-2026-08-28.md`, **not** `publish-package.md` — that
+file carries no article body, and the live text hedges harder than the drafts did. `post-brand-checker`
+passed all nine and `detect-ai-tells.py` found zero markers and zero hard bans. AUTO_QC reached 6 of 9,
+all "good" (15-17/20); `linkedin-katya`, `linkedin-olena` and `linkedin-vadim` are outstanding after
+their runs hit the org monthly spend limit. Thirteen findings were raised across the brand checks and
+QC and all thirteen fixed, including a rewrite of `facebook-company` for claims accuracy.
+`visual-brief` has deliberately **not** run — it waits for Vadim's approval of the text.

@@ -6,7 +6,15 @@ track: social
 artifact_type: post
 total_score: 16/20
 status: good
-coordinator_review:
+coordinator_review: |
+  agreement: ✅ agree
+  top_issue: None blocking; the M1 and M2 items were already fixed before QC ran.
+  notes: |
+    No action needed on claims. The two mechanical items QC would have caught were already
+    corrected pre-QC: GLP-1 expanded at first use, and the stacked-negation disclaimer split into
+    two sentences. post-brand-checker scored this 10/10 independently.
+    Agreed on design-tip verbosity and the missing past-posts corpus; both are pack-wide, not
+    per-post defects. brand-assets/past-posts/instagram-company/ has never been seeded.
 ---
 
 # QC Report — post-drafter — 2026-08-28

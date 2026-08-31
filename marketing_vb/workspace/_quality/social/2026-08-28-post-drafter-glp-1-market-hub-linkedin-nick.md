@@ -6,7 +6,17 @@ track: social
 artifact_type: post
 total_score: 17/20
 status: good
-coordinator_review:
+coordinator_review: |
+  agreement: ✅ agree
+  top_issue: None. The KFF expansion and the statistical scoping both landed.
+  notes: |
+    No action needed. The M1 item (KFF unexpanded) was fixed to "Kaiser Family Foundation (KFF)"
+    before QC ran, with the post retrimmed to 249 words.
+    Statistical scoping is the thing I most wanted checked here and it holds: the 5,000+ worker
+    qualifier is carried in three places, the 59%/66% ride on "those that provided coverage", and
+    the article's "may contribute to" hedge survives. Nothing generalises to "employers".
+    Also fixed post-QC: "no special hardware" -> "no specialized hardware", the same trim-induced
+    qualifier loss that did real damage in the facebook post.
 ---
 
 # QC Report — post-drafter — 2026-08-28

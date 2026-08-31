@@ -36,7 +36,7 @@ What can be reported depends on the structure. An employer-supported program may
 
 The operational work starts at capture. Program-level reporting is assembled from individual check-in records, which aggregate only when every check-in used the same defined process.
 
-FitXpress covers that part: two photos, front and side, roughly 30 to 45 seconds, no special hardware. For most evaluated measurements, repeat scans showed typical scan-to-scan differences of less than 1 cm. It is not a medical device and does not determine treatment eligibility.
+FitXpress covers that part: two photos, front and side, roughly 30 to 45 seconds, no specialized hardware. For most evaluated measurements, repeat scans showed typical scan-to-scan differences of less than 1 cm. It is not a medical device and does not determine treatment eligibility.
 
 For US teams in employer-sponsored channels: does reporting come up at contracting, or at renewal?
 

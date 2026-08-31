@@ -6,7 +6,15 @@ track: social
 artifact_type: post
 total_score: 17/20
 status: good
-coordinator_review:
+coordinator_review: |
+  agreement: ✅ agree
+  top_issue: None. Highest-scoring post in the pack alongside nick; the retention wording was tightened pre-QC.
+  notes: |
+    No action needed. The one claims item, retention compressed to "the structured output stays",
+    was already restored to "retained per the agreement" before QC ran.
+    The UK lens held: buyer-behaviour observation only, no MHRA/CQC/NHS fact invented, and the
+    controller/processor split keeps the article's "in most enterprise deployments" hedge.
+    Agreed on design-tip verbosity, pack-wide.
 ---
 
 # QC Report — post-drafter — 2026-08-28

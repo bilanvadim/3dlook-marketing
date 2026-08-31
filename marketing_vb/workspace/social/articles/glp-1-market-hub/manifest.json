@@ -16,7 +16,8 @@
       "post_file": "twitter-company/post.md",
       "status": "ready",
       "format": "text + photo",
-      "character_count_body": 257
+      "character_count_body": 257,
+      "qc_score": "16/20"
     },
     {
       "profile_id": "instagram-company",
@@ -25,7 +26,8 @@
       "post_file": "instagram-company/post.md",
       "status": "ready",
       "format": "carousel",
-      "character_count_body": 982
+      "character_count_body": 982,
+      "qc_score": "16/20"
     },
     {
       "profile_id": "facebook-company",
@@ -34,7 +36,8 @@
       "post_file": "facebook-company/post.md",
       "status": "ready",
       "format": "infographic",
-      "character_count_body": 1191
+      "character_count_body": 1200,
+      "qc_score": "15/20"
     },
     {
       "profile_id": "linkedin-company",
@@ -43,7 +46,8 @@
       "post_file": "linkedin-company/post.md",
       "status": "ready",
       "format": "infographic",
-      "word_count_body": 267
+      "word_count_body": 267,
+      "qc_score": "16/20"
     },
     {
       "profile_id": "linkedin-katerina",
@@ -52,25 +56,8 @@
       "post_file": "linkedin-katerina/post.md",
       "status": "ready",
       "format": "text",
-      "word_count_body": 245
-    },
-    {
-      "profile_id": "linkedin-nick",
-      "platform": "linkedin",
-      "handle": "Nick Omelchak",
-      "post_file": "linkedin-nick/post.md",
-      "status": "ready",
-      "format": "text + photo",
-      "word_count_body": 249
-    },
-    {
-      "profile_id": "linkedin-olena",
-      "platform": "linkedin",
-      "handle": "Olena Kudryavtseva",
-      "post_file": "linkedin-olena/post.md",
-      "status": "ready",
-      "format": "screenshot",
-      "word_count_body": 243
+      "word_count_body": 248,
+      "qc_score": "17/20"
     },
     {
       "profile_id": "linkedin-katya",
@@ -79,7 +66,26 @@
       "post_file": "linkedin-katya/post.md",
       "status": "ready",
       "format": "screenshot",
-      "word_count_body": 231
+      "word_count_body": 235
+    },
+    {
+      "profile_id": "linkedin-nick",
+      "platform": "linkedin",
+      "handle": "Nick Omelchak",
+      "post_file": "linkedin-nick/post.md",
+      "status": "ready",
+      "format": "text + photo",
+      "word_count_body": 249,
+      "qc_score": "17/20"
+    },
+    {
+      "profile_id": "linkedin-olena",
+      "platform": "linkedin",
+      "handle": "Olena Kudryavtseva",
+      "post_file": "linkedin-olena/post.md",
+      "status": "ready",
+      "format": "screenshot",
+      "word_count_body": 248
     },
     {
       "profile_id": "linkedin-vadim",
@@ -88,9 +94,14 @@
       "post_file": "linkedin-vadim/post.md",
       "status": "ready",
       "format": "poll",
-      "word_count_body": 244
+      "word_count_body": 246
     }
   ],
-  "profiles_skipped": [],
-  "ready_for_review": false
+  "profiles_skipped": [
+    {
+      "profile_id": "linkedin-whitney",
+      "reason": "posts_per_week: 0 (disabled 2026-06-27)"
+    }
+  ],
+  "ready_for_review": true
 }

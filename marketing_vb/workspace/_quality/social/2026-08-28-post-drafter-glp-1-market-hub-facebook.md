@@ -6,7 +6,30 @@ track: social
 artifact_type: post
 total_score: 15/20
 status: good
-coordinator_review:
+coordinator_review: |
+  agreement: ✅ agree
+  top_issue: Section B was the real find: seven claims driftings, several of which I caused with my own character-count trims. Post rewritten 2026-08-31.
+  notes: |
+    Acted on every Section B item; the post was rewritten and is now 1200/1200 chars:
+      - "no hardware" -> "no specialized scanning hardware". This one was mine: I trimmed
+        "no scanning hardware" to fit the length band and made the claim false, since FitXpress
+        needs a smartphone. Worst finding in the pack and a fair hit on the coordinator, not the agent.
+      - "It keeps the record comparable between visits" (a guarantee) -> "Consistent capture helps
+        programs compare results more reliably over time", the article's own conditional.
+      - Hybrid model hedge restored: "A hybrid clinic may measure at visits, with remote intervals
+        between". The invented "weeks in between" interval is gone.
+      - "authorized" and "appropriate" restored on both access clauses.
+      - Eligibility carve-out added to the limitation sentence, which matters most in this post
+        because it is the one that raises eligibility paperwork. audience.md forbids implying
+        eligibility decisioning and the omission cut against exactly that.
+      - "determined more by the delivery model than by the medication" -> "depends partly on the
+        route", dropping an invented comparative and restoring "partly".
+    Section C tone (2/3) I agree with and did NOT fully fix: the register is still closer to
+    operator-to-operator than the config's "accessible, slightly warmer". The rewrite recovers a
+    little ("in a kitchen", "Which model is yours"), but a genuine warmth pass would mean
+    re-drafting verified claims copy, so I left it for Vadim to call.
+    Design-tip verbosity (A): agreed and systemic across the pack, not this post's fault.
+    Re-ran detect-ai-tells.py after the rewrite: 0 markers, 0 hard bans, soft rhythm 0.33 only.
 ---
 
 # QC Report — post-drafter — 2026-08-28

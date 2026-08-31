@@ -2,35 +2,61 @@
 
 **Article:** [GLP-1 Market Growth and the Need for Better Patient Progress Tracking](https://3dlook.ai/content-hub/glp-1-market/) — published 2026-08-28 (hub refresh, republished in place)
 **Source of record:** `workspace/seo/articles/glp-1-market-hub/published-live-2026-08-28.md`
-**Date:** 2026-08-28
-**Profiles:** 9 (`linkedin-whitney` skipped, `posts_per_week: 0`)
+**Date:** 2026-08-28 (checks and fixes completed 2026-08-31)
+**Profiles:** 9 of 9 active (`linkedin-whitney` skipped, `posts_per_week: 0`)
 
 > **Why the source is not `publish-package.md`.** That file carries no article body, and the live
-> page received a further editorial pass after `draft-v6-revision2.md` left the pipeline. Every post
-> below was written against the live published text and every claim traced back to it. See
-> `workspace/seo/articles/glp-1-market-hub/FINAL-PUBLISHED.md` for the full draft-vs-live delta.
+> page received a further editorial pass after `draft-v6-revision2.md` left the pipeline: ~500 words
+> shorter, a new market-structure section, a market-indicator table, and materially harder hedging.
+> Every post below was written against the live published text, and every claim traced back to it.
+> Full draft-vs-live delta in `workspace/seo/articles/glp-1-market-hub/FINAL-PUBLISHED.md`.
 
-**Angle map** — one entry point each, no overlap:
+## Checks
 
-| Profile | Angle |
+| Check | Result |
 |---|---|
-| twitter-company | Market scale outpacing documentation |
-| instagram-company | The individual check-in record: weight can't say *what* changed |
-| facebook-company | Four delivery models, three shared needs |
-| linkedin-company | Market structure segmenting by treatment format |
-| linkedin-katerina | Progress tracking as a procurement and governance question (UK) |
-| linkedin-katya | How the capability is bought: white-label, no hardware, stated limits (Israel & Gulf) |
-| linkedin-nick | Employer coverage data and program-level reporting (US) |
-| linkedin-olena | Capture variance across multi-market programs (Continental Europe) |
-| linkedin-vadim | The caseload-level view at scale (Australia) |
+| `post-brand-checker` | **9/9 PASS** — run independently per post |
+| `detect-ai-tells.py` | **0 markers, 0 hard bans on all 9** — only a soft rhythm marker on three |
+| `quality-controller` | **6/9 complete**, all "good": 15-17/20. Three outstanding. |
+
+`post-drafter` cannot call `post-brand-checker` itself — its definition grants no Task tool, so its
+hard rule #6 is unexecutable and all nine runs reported the failure. The coordinator ran the checker
+instead, which is how the findings below surfaced.
+
+**QC still outstanding:** `linkedin-katya`, `linkedin-olena`, `linkedin-vadim`. Those three
+`quality-controller` runs died on the org monthly spend limit (HTTP 429). Copy is not gated by this —
+the brand checks are the binding gate and all three passed — but their rubric scores are missing.
+Re-runnable with `/qc` per artifact.
+
+**Findings raised and fixed before this digest (13):** two unexpanded `GLP-1`s and an unexpanded
+`KFF` (rule M1) · a false "assets avoid photography" design tip · `article_slug` carrying the folder
+name · flattened pharmacy/employer hedges on Facebook · a dropped "pricing" · a compressed retention
+claim · a truncated regulatory boundary sentence · a "can provide" hardened to "give" · two posts
+opening with the same "My view:" · and on Facebook, seven claims driftings including a factually
+wrong "no hardware" and a guarantee where the article states a conditional. Several of the Facebook
+items were caused by the coordinator's own character-count trims; that post was rewritten.
+
+## Angle map — one entry point each, no overlap
+
+| Profile | Angle | QC |
+|---|---|---|
+| twitter-company | Market scale outpacing documentation | 16/20 |
+| instagram-company | The individual check-in record: weight can't say *what* changed | 16/20 |
+| facebook-company | Four delivery routes, three shared needs | 15/20 |
+| linkedin-company | Market structure segmenting by treatment format | 16/20 |
+| linkedin-katerina | Progress tracking as a procurement and governance question (UK) | 17/20 |
+| linkedin-katya | How the capability is bought: white-label, no hardware, stated limits (Israel & Gulf) | pending |
+| linkedin-nick | Employer coverage data and program-level reporting (US) | 17/20 |
+| linkedin-olena | Capture variance across multi-market programs (Continental Europe) | pending |
+| linkedin-vadim | The caseload-level view at scale (Australia) | pending |
 
 ---
 
 ## twitter-company
 
-*The article's thesis in one line. GLP-1 volume is growing faster than the way programs document progress, and a scale number with an unstandardized photo does not produce a record that compares across check-ins.*
-
+**Angle:** Market scale outpacing documentation
 **Length:** 257 / 240-260 chars
+**QC:** 16/20
 
 Glucagon-like peptide-1 (GLP-1) use is scaling faster than how programs document progress. J.P. Morgan projects ~25M US users by 2030. Check-ins run on a scale number and a photo in any lighting. Same capture method every time, or records aren't comparable.
 
@@ -46,9 +72,9 @@ Glucagon-like peptide-1 (GLP-1) use is scaling faster than how programs document
 
 ## instagram-company
 
-*The human moment inside the article's cover image: a patient's body stats sitting side by side across three dates. Those dates only compare if every one of them was captured the same way, and weight alone cannot say which part of the body changed.*
-
+**Angle:** The individual check-in record: weight can't say *what* changed
 **Length:** 982 / 600-1000 chars
+**QC:** 16/20
 
 Month one, month three, month six. Those three dates only tell a story if all three were captured the same way.
 
@@ -72,23 +98,23 @@ Full piece on GLP-1 growth and progress tracking: link in bio.
 
 ## facebook-company
 
-*The delivery-model split. Treatment now reaches patients through four routes (telehealth, in-person and hybrid clinics, pharmacy-led, some employer-supported programs), each route changes what a progress check-in can consist of, and all four still need the same three things from whatever method they use.*
+**Angle:** Four delivery routes, three shared needs
+**Length:** 1200 / 800-1200 chars
+**QC:** 15/20
 
-**Length:** 1191 / 800-1200 chars
+Glucagon-like peptide-1 (GLP-1) weight-management care reaches patients four ways: telehealth, in-person and hybrid clinics, pharmacy-led programs, and some employer-supported ones. How progress gets tracked depends partly on the route.
 
-Glucagon-like peptide-1 (GLP-1) weight-management care now reaches patients through four routes: telehealth clinics, in-person and hybrid clinics, pharmacy-led programs, and some employer-supported programs. Progress tracking is determined more by the delivery model than by the medication.
+In a fully remote program, nobody comes in to be measured. Capture has to work in a kitchen and produce records authorized care teams can access. A hybrid clinic may measure at visits, with remote intervals between. Pharmacy-led programs may keep eligibility paperwork separate from tracking, with rules varying by jurisdiction and pharmacy model. Employer-supported programs add a data-access question that depends on the contract and applicable privacy rules.
 
-In a fully remote program, nobody comes in to be measured. Capture has to work in a kitchen and produce records the care team can open. A hybrid clinic measures at each visit, with weeks in between to cover. Pharmacy-led programs may keep eligibility paperwork separate from progress tracking, with rules that vary by jurisdiction and pharmacy model. Employer-supported programs add a data-access question that depends on the contract and the privacy rules that apply.
+Four routes, three shared needs: consistent capture, comparable records, appropriate access for review teams.
 
-Four workflows, three shared needs: consistent capture, comparable records, access for review teams.
+FitXpress handles that: two photos, about 30 to 45 seconds, no specialized scanning hardware. Consistent capture helps programs compare results more reliably over time. It is not a medical device, makes no clinical decisions and does not determine treatment eligibility.
 
-FitXpress covers the remote piece: two photos, about 30 to 45 seconds, no hardware. It is not a medical device and makes no clinical decisions. It keeps the record comparable between visits.
+Which model is yours, and what does a check-in look like?
 
-Which model is yours, and what does a check-in look like inside it?
+Full article: https://3dlook.ai/content-hub/glp-1-market/
 
-Read the full article: https://3dlook.ai/content-hub/glp-1-market/
-
-**CTA:** Explicit but soft — "Read the full article" with the link, after the discussion question.
+**CTA:** Soft. "Full article" with the link, after the discussion question.
 
 > **Design tip**
 > Article visual: The live page's second infographic `banner_2-2.webp` — the five requirements for scalable progress tracking (baseline, remote capture, records, context, professional review), 3DLOOK logo upper right.
@@ -100,9 +126,9 @@ Read the full article: https://3dlook.ai/content-hub/glp-1-market/
 
 ## linkedin-company
 
-*The market-structure shift, which is the newest material on the live page. Competition is segmenting beyond single-receptor injectables into oral GLP-1 medications and combination therapies, which multiplies program designs and delivery routes. More formats means more workflow variation, and the capture method is the one thing that should stay fixed while the rest changes.*
-
+**Angle:** Market structure segmenting by treatment format
 **Length:** 267 / 180-280 words
+**QC:** 16/20
 
 The obesity-drug market is segmenting by treatment format. For the programs delivering care, that is a design problem.
 
@@ -130,9 +156,9 @@ The full article covers the market indicators behind this shift and the five req
 
 ## linkedin-katerina
 
-*CEO founder observation on the industry shift the article describes without naming it: as programs scale, the structured progress record stops being only a clinical choice and becomes a procurement and governance question. Controller and processor roles, who may access which record, retention, and what may be reported back to an employer or health plan are now evaluation-stage questions for UK enterprise buyers, because the article states these vary by deployment and contract. Deliberately different from the four angles already taken (market scale, the individual check-in record, the four delivery models, the market-structure shift).*
-
+**Angle:** Progress tracking as a procurement and governance question (UK)
 **Length:** 248 / 180-250 words
+**QC:** 17/20
 
 Growth in glucagon-like peptide-1 (GLP-1) treatment has moved progress tracking from a clinical conversation into a procurement one.
 
@@ -163,9 +189,9 @@ https://3dlook.ai/content-hub/glp-1-market/
 
 ## linkedin-katya
 
-*How the capability is actually bought and deployed, framed as buying behaviour rather than product. Two questions land before any technical one, and both come from the live page's "Where FitXpress Fits" section, which no other profile in this pack has used: white-label delivery means guided capture sits inside the program's own patient experience under the program's own name, and there is no scanning hardware to procure before launch. The post closes on trust, which in this region is a commercial factor: the live page states plainly what the product does not do, and a vendor that names its own limits is easier to take into a clinical committee. Deliberately different from the seven angles already taken (market scale, the individual check-in record, the four delivery models, the market-structure shift, procurement governance, US employer coverage, multi-market capture variance).*
-
+**Angle:** How the capability is bought: white-label, no hardware, stated limits (Israel & Gulf)
 **Length:** 235 / 180-250 words
+**QC:** pending — blocked on spend limit
 
 When a digital health operator in Israel or the Gulf adds progress tracking to a glucagon-like peptide-1 (GLP-1) program, the early questions are commercial ones.
 
@@ -195,9 +221,9 @@ Where does a body-data vendor lose your trust first: an overclaim, or a vague an
 
 ## linkedin-nick
 
-*The US employer-coverage and utilization block, which no other profile in this pack has touched. Coverage among the very large surveyed firms rose 15 percentage points year over year, and the same firms reported use above forecast and a spending effect. For a US program selling into employer-sponsored channels, that is a partnership signal: the article draws the consequence as greater interest in consistent program-level reporting, and program-level reporting is assembled from individual check-in records, which means the capture method decides whether it can exist at all. Deliberately different from the five angles already taken (market scale, the individual check-in record, the four delivery models, the market-structure shift, procurement governance in the CEO voice).*
-
+**Angle:** Employer coverage data and program-level reporting (US)
 **Length:** 249 / 180-250 words
+**QC:** 17/20
 
 Coverage for glucagon-like peptide-1 (GLP-1) treatment moved quickly inside the largest US employers, and the reporting question came with it.
 
@@ -211,7 +237,7 @@ What can be reported depends on the structure. An employer-supported program may
 
 The operational work starts at capture. Program-level reporting is assembled from individual check-in records, which aggregate only when every check-in used the same defined process.
 
-FitXpress covers that part: two photos, front and side, roughly 30 to 45 seconds, no special hardware. For most evaluated measurements, repeat scans showed typical scan-to-scan differences of less than 1 cm. It is not a medical device and does not determine treatment eligibility.
+FitXpress covers that part: two photos, front and side, roughly 30 to 45 seconds, no specialized hardware. For most evaluated measurements, repeat scans showed typical scan-to-scan differences of less than 1 cm. It is not a medical device and does not determine treatment eligibility.
 
 For US teams in employer-sponsored channels: does reporting come up at contracting, or at renewal?
 
@@ -229,9 +255,9 @@ Full article 🔗 https://3dlook.ai/content-hub/glp-1-market/
 
 ## linkedin-olena
 
-*The operational and adoption problem from the live page's "Infrastructure Challenge Created by Market Growth" section, which no other profile in this pack has taken. Every input a program relies on at check-in varies in a different way: self-reported measurements by technique, equipment, timing and data entry; progress photos by lighting, pose, distance, clothing and camera angle; free-text notes by which fields get recorded and in how much detail. For a Continental European operator that compounds, because one program can run across several markets, sites, languages and staff rotations, and capture variance multiplies before anyone tries to compare two records. The fix on the live page is operational rather than contractual: one defined capture process used for the baseline and every check-in after it, with explicit guidance for pose, image collection and timing in remote workflows.*
-
+**Angle:** Capture variance across multi-market programs (Continental Europe)
 **Length:** 248 / 180-250 words
+**QC:** pending — blocked on spend limit
 
 A European glucagon-like peptide-1 (GLP-1) program rarely runs in one place.
 
@@ -267,23 +293,23 @@ Full article 🔗 https://3dlook.ai/content-hub/glp-1-market/
 
 ## linkedin-vadim
 
-*The caseload-level view, the strongest unused material on the live page and the closest fit to an operations brief. At low volume the unit of review is one patient. Past a certain volume the team also reviews the caseload, and a caseload only rolls up if every record underneath it was built the same way. The live page states this directly: as caseloads and treatment duration increase, inconsistently collected information becomes more difficult to organize and review, while structured records give clinical and program teams a more consistent basis for comparison across individual patients and the wider caseload. Deliberately different from the eight angles already taken in this pack (market scale, the individual check-in record, the four delivery models, the market-structure shift, procurement governance, US employer coverage, multi-market capture variance, how the capability is bought).*
-
-**Length:** 250 / 180-250 words (body through the closing question; the sign-off link line adds 3)
+**Angle:** The caseload-level view at scale (Australia)
+**Length:** 246 / 180-250 words
+**QC:** pending — blocked on spend limit
 
 Scale changes what an Australian health team is actually reviewing.
 
-A glucagon-like peptide-1 (GLP-1) program with a few hundred patients reviews people one at a time. Past a certain volume, the team also reviews the caseload: how a cohort is tracking, and which patients need a closer look this month.
+A glucagon-like peptide-1 (GLP-1) program with a few hundred patients reviews people one at a time. Past a certain volume, the team also reviews the caseload: how a cohort is tracking, and who needs a closer look this month.
 
 The piece we published today puts it plainly. As caseloads and treatment duration increase, inconsistently collected information becomes more difficult to organize and review. Structured records can give clinical and program teams a more consistent basis for comparison across individual patients and the wider caseload.
 
-Here is the operational catch. A caseload view is only as good as the capture underneath it. Records built five different ways by five different check-in habits do not roll up. On a report they still look comparable.
+Here is the operational catch. A caseload view is only as good as the capture underneath it. Records built five different ways do not roll up. On a report they still look comparable.
 
 In Australia this arrives early, because many programs are remote-first by geography. In a fully remote workflow the check-in is the record, with no in-person appointment behind it.
 
 I would settle the capture method before the caseload grows. Retrofitting consistency onto two years of mixed records is the expensive version.
 
-That is the part FitXpress handles. Two photos, front and side, results in roughly 30 to 45 seconds, no specialized scanning hardware. For most evaluated measurements, repeat scans showed typical scan-to-scan differences of less than 1 cm. It is not a medical device and does not determine treatment eligibility.
+That is the part FitXpress handles. Two photos, front and side, return results in roughly 30 to 45 seconds, with no specialized scanning hardware. For most evaluated measurements, repeat scans showed typical scan-to-scan differences of less than 1 cm. It is not a medical device and does not determine treatment eligibility.
 
 Australian operators: where does your caseload view break first, at capture or at reporting?
 
