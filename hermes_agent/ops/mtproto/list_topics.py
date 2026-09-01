@@ -20,8 +20,8 @@ import sys
 import time
 
 MT_DIR = os.path.dirname(os.path.abspath(__file__))
-CREDS = os.path.join(MT_DIR, "creds.env")
-SESSION_ENC = os.path.join(MT_DIR, "session.enc")
+CREDS = os.path.expanduser("~/.hermes/mtproto/creds.env")
+SESSION_ENC = os.path.expanduser("~/.hermes/mtproto/session.enc")
 CACHE = os.path.expanduser("~/.hermes/mtproto-topics.json")
 BOT = sys.argv[1] if len(sys.argv) > 1 else os.environ.get("MT_BOT", "ivan_djedaev_bot")
 CONNECT_TIMEOUT = 20
