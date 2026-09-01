@@ -16,7 +16,7 @@ The Doc conflicts with two standing 3DLOOK rules. **The house rules win** — th
 
 | # | Doc says | House rule wins | Why |
 |---|----------|-----------------|-----|
-| 1 | 6–8 hashtags (Main page, Kateryna Boichuk) | **No hashtags on any profile.** `hashtags: none` | Hashtags were deliberately removed from all 9 social profiles on 2026-07-01 (CLAUDE.md §13). |
+| 1 | 6–8 hashtags (Main page, Kateryna Boichuk) | **No hashtags on any profile.** `hashtags: none` | Hashtags were deliberately removed from all 9 social profiles on 2026-07-01 (`docs/changelog.md`, that date; the history moved out of CLAUDE.md §13 on 2026-09-01). |
 | 2 | 3–5 emoji (Main page), max 5 (personal profiles) | **1–2 emoji max**, and only where they earn their place | CLAUDE.md §6: no emoji-flood. The Doc's number is a ceiling, not a target. |
 
 Everything else in the Doc is authoritative for LinkedIn and overrides the older per-profile `tone` / `content_types` text where they disagree.

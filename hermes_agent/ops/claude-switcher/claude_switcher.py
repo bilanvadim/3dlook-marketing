@@ -316,6 +316,15 @@ def _mvb_article_source(slug: str) -> Tuple[Optional[str], Optional[str], Option
         n = name.lower()
         if not n.endswith(".md") or n.startswith(skip):
             return None
+        # `published-live-*.md` outranks everything: it is the page as published.
+        # On the glp-1-market pack this file existed, `publish-package.md` had no
+        # article body at all, and the drafts were ~500 words behind the live text
+        # after a late editorial pass — so this resolver named a source that could
+        # not support a single claim, and the coordinator had to redirect nine
+        # drafters by hand in the run brief. Kept in step with
+        # marketing_vb/scripts/social_pack.py:resolve_source().
+        if n.startswith("published-live"):
+            return 0
         if "publish-pack" in n:
             return 1
         if "final" in n:
@@ -351,8 +360,14 @@ def _mvb_article_source(slug: str) -> Tuple[Optional[str], Optional[str], Option
             if r is None:
                 continue
             # tier: 0 = approved package, 1 = any package, 2 = a draft
-            pkg = "publish-pack" in name.lower()
-            tier = 0 if (pkg and _md_status(p) in _MVB_APPROVED) else (1 if pkg else 2)
+            low = name.lower()
+            pkg = "publish-pack" in low
+            if low.startswith("published-live"):
+                tier = 0                      # published beats any package status
+            elif pkg:
+                tier = 0 if _md_status(p) in _MVB_APPROVED else 1
+            else:
+                tier = 2
             cands.append((tier, -ver(name), r, -os.path.getmtime(p), p))
     except OSError:
         pass
@@ -557,11 +572,25 @@ def _prep_posts(task: str) -> Tuple[Optional[str], Optional[str], Optional[str],
 # waited correctly (64s → 315 → 948 → 2071 → 2157) but that is ~1.5h, so the last 3
 # posts were finished by a fallback coder instead.
 #
-# What splitting does and does NOT do: total turns for nine posts are roughly
-# unchanged, so this does not reduce quota spend. What it changes is failure shape —
-# each job ends and BANKS its post, so an exhausted window costs only the profiles
-# not yet started, never a half-finished 200-turn session. Plus one visible
-# checkpoint per profile instead of one opaque run.
+# What splitting does. This comment used to say "total turns for nine posts are
+# roughly unchanged, so this does not reduce quota spend". That was measured wrong
+# way round: the turns are per-JOB, but the window is charged per REQUEST, and a
+# request carries the whole session context. The pack of 2026-08-28 ran as one
+# interactive session and its coordinator alone made 151 requests at a median of
+# 206K tokens = 25.5M tokens, 59% of the pack's entire 42.9M. Nine jobs of ~15
+# turns each start from a fresh ~15K context instead of continuing in a 250K one,
+# so the same nine posts cost roughly a fifth of the coordination. Splitting is the
+# largest single saving in this pipeline, not a neutral change of failure shape.
+#
+# It also changes failure shape, which is why it was built: each job ends and BANKS
+# its post, so an exhausted window costs only the profiles not yet started, never a
+# half-finished 200-turn session. Plus one visible checkpoint per profile.
+#
+# STAGGERING. The first fan-out attempt (jobs #100-#108, 2026-08-26) enqueued all
+# nine at 14:30:54-14:31:35 and every one of them came back `ratelimit` with
+# turns=0, because the window was already spent and nine jobs asked in 41 seconds.
+# Jobs now go in with an increasing `not_before`, so the queue itself spreads them
+# and a spent window costs one probe instead of nine.
 #
 # Ordering is deliberately NOT expressed through ho_jobs.priority. claimJob selects
 # `status in ('queued','deferred') and not_before <= now order by priority`, so a
@@ -613,17 +642,25 @@ def _fanout_posts(task: str) -> Tuple[Optional[List[Tuple[str, str]]], Optional[
     if not profiles:
         return None, note, None            # caller falls back to the single job
     jobs: List[Tuple[str, str]] = []
-    for prof in profiles:
+    for i, prof in enumerate(profiles):
         jobs.append((
             _mvb_brief(f"/post-one-profile {slug} {prof}",
                        ".claude/commands/post-one-profile.md",
                        f"Slug: {slug}\nПрофиль: {prof}\nИсточник: {src}\n"
+                       f"Профиль {i + 1} из {len(profiles)} в этом паке.\n"
                        "Пиши ТОЛЬКО этот профиль — остальные идут отдельными job'ами, "
-                       "не трогай их. Для linkedin-* обязательно читай нужную секцию "
-                       "`brand-assets/linkedin-post-prompts.md`. Факты — только из "
-                       "файла-источника. Хештегов нет, эмодзи 1-2. "
-                       "review-digest.md и manifest.json пиши ТОЛЬКО если этот "
-                       "профиль оказался последним (шаг 5 команды). "
+                       "не трогай их.\n"
+                       "Промпт для post-drafter НЕ составляй сам: возьми вывод "
+                       f"`python3 scripts/social_pack.py prompt {slug} {prof}` и передай "
+                       "его агенту дословно. Его начало одинаково для всех девяти "
+                       "профилей, и именно на этом держится общий кеш промпта — любая "
+                       "твоя правка в начале ломает его для всего пака.\n"
+                       "Факты — только из файла-источника. Хештегов нет, эмодзи 1-2.\n"
+                       f"После сохранения: `python3 scripts/post-lint.py {slug} {prof} "
+                       "--summary --gate`, и правь только hard fails.\n"
+                       "review-digest.md и manifest.json НЕ пиши руками — их собирает "
+                       "`scripts/social_pack.py`, и только если этот профиль оказался "
+                       "последним (шаг 5 команды).\n"
                        "visual-brief здесь НЕ запускай.\n"),
             f"Social posts: {slug} · {prof}",
         ))

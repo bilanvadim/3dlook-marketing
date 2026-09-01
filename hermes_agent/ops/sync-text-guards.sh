@@ -34,7 +34,8 @@ This is the WEEKLY scheduled sync run. Each week:
 2) Diff its current rules against the project's text-writing guards. Determine whether anything is NEW or CHANGED since the last sync.
 3) If something changed: update the project's guards consistently across ALL of these targets (do NOT create a second divergent file — the canonical guard file is brand-assets/content-strategy/terminology-guardrails.md):
    - brand-assets/content-strategy/terminology-guardrails.md  (canonical — rewrite/amend here)
-   - CLAUDE.md  (§6 canonical bullet + hard-ban table + override block; §15 requirement #7, and correct any stale requirement; §16 non-negotiables; §13 history row if a rule reversed)
+   - CLAUDE.md  (§6 canonical bullet + hard-ban table + override block; §15 requirement #7, and correct any stale requirement; §16 non-negotiables)
+   - marketing_vb/docs/changelog.md  (the history row, if a rule reversed — moved out of CLAUDE.md §13 on 2026-09-01)
    - brand-assets/style-guides/editorial-guardrails.md  (#6, #7, M1, M2, add M3 if needed)
    - brand-assets/style-guides/ai-tells-sweep.md  (add hard-fail paragraphs for new bans)
    - brand-assets/style-guides/scripts/detect-ai-tells.py  (add detector categories for new hard bans)

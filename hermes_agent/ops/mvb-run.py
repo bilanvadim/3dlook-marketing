@@ -87,6 +87,11 @@ THREAD_MAP = os.environ.get("MVB_THREAD_MAP") or os.path.expanduser("~/.hermes/m
 # Kept as an escape hatch, not a tuning knob: if the fan-out ever misreads the profile
 # list, this is how you start the pipeline anyway without editing code.
 FANOUT = os.environ.get("MVB_FANOUT", "1") != "0"
+# Minutes between fan-out jobs becoming claimable. Jobs #100-#108 (2026-08-26) all
+# went in inside 41 seconds and all nine came back `ratelimit` with turns=0: a spent
+# window cost nine probes instead of one. 4 minutes is under the 1h prompt-cache TTL
+# the pack's shared prefix relies on, so the profiles still share their cache.
+STAGGER_MIN = int(os.environ.get("MVB_STAGGER_MIN", "4"))
 # MVB_DRY_RUN=1 prints the jobs that WOULD be created and writes nothing. The conductor
 # polls continuously, so an experimental insert is not a dry test — it is a live
 # autonomous run against Vadim's Claude quota. This is how you check a fan-out first.
@@ -235,34 +240,43 @@ def _enqueue_many(r, work_dir: str, jobs, note) -> int:
     active list and write a digest that looks complete."""
     if DRY_RUN:
         print(f"[dry-run] {len(jobs)} job(s) · {r['label']} · profile={r['profile']} "
-              f"· max_turns={MAX_TURNS}")
+              f"· max_turns={MAX_TURNS} · шаг {STAGGER_MIN} мин")
         print(f"📂 {work_dir}")
-        for _p, t in jobs:
-            print(f"  📝 {t}")
+        for i, (_p, t) in enumerate(jobs):
+            print(f"  📝 +{i * STAGGER_MIN:>3} мин · {t}")
         if note:
             print(f"ℹ️ {note}")
         return 0
     made, skipped = [], []
     conn = db()
     with conn:
+        pos = 0
         for prompt, title in jobs:
             t = title[:200]
             dup = live_duplicate(conn, t)
             if dup:
                 skipped.append(f"#{dup['id']} {dup['status']}")
                 continue
+            # not_before spreads the batch instead of firing it in one burst. The
+            # first job is claimable immediately; each following one waits
+            # STAGGER_MIN more minutes. claimJob already filters on
+            # `not_before <= now`, so this needs no conductor change, and a
+            # re-run of `posts <slug>` re-staggers only the profiles still missing.
+            nb = (f"datetime('now','+{pos * STAGGER_MIN} minutes')"
+                  if pos else "null")
             cur = conn.execute(
-                "insert into ho_jobs(kind,title,prompt,profile,work_dir,max_turns) "
-                "values('feature',?,?,?,?,?)",
+                "insert into ho_jobs(kind,title,prompt,profile,work_dir,max_turns,"
+                f"not_before) values('feature',?,?,?,?,?,{nb})",
                 (t, prompt, r["profile"], work_dir, MAX_TURNS))
             made.append((cur.lastrowid, t))
+            pos += 1
     remember_origin([jid for jid, _t in made])
     if not made:
         print(f"ℹ️ уже запущено: все {len(skipped)} профилей в работе "
               f"({', '.join(skipped)}). Второй раз не ставлю.")
         return 2
     print(f"🚀 {len(made)} job'ов · {r['label']} · profile={r['profile']} "
-          f"· max_turns={MAX_TURNS} каждая")
+          f"· max_turns={MAX_TURNS} каждая · шаг {STAGGER_MIN} мин")
     print(f"📂 {work_dir}")
     for jid, t in made:
         print(f"  #{jid} · {t}")
@@ -270,8 +284,9 @@ def _enqueue_many(r, work_dir: str, jobs, note) -> int:
         print(f"ℹ️ пропущено (уже в работе): {', '.join(skipped)}")
     if note:
         print(f"ℹ️ {note}")
-    print("Профили идут по одному, отдельными прогонами — окно Claude не выжигается "
-          "одним большим раном. Дайджест собирает тот профиль, который закончит "
+    print(f"Профили идут по одному, отдельными прогонами, с шагом {STAGGER_MIN} мин — "
+          "окно Claude не выжигается одним большим раном, и пустое окно стоит одну "
+          "пробу, а не девять. Дайджест собирает тот профиль, который закончит "
           "последним. Вопросы и эскалации придут в Telegram; результат — тоже. "
           "ho_steps не создавались (и не надо).")
     return 0

@@ -125,7 +125,9 @@ marketing-claude-code/
 ├── runners/                        ← bash + subagent runners
 ├── telegram-bot/                   ← Python bot для апрувов
 └── docs/
-    └── architecture.md             ← диаграмма агентов
+    ├── architecture.md             ← диаграмма агентов
+    ├── changelog.md                ← история изменений системы (была CLAUDE.md §13)
+    └── quality-rubric.md           ← 20-балльная шкала QC
 ```
 
 ---
@@ -133,6 +135,10 @@ marketing-claude-code/
 ## Документация
 
 - **`docs/architecture.md`** — диаграмма агентов, иерархия, runner логика
+- **`docs/changelog.md`** — история изменений агентной системы с 2026-04-28. Вынесена из
+  `CLAUDE.md` §13 2026-09-01: журнал занимал 56% файла, который грузится в контекст каждой
+  сессии. Новые строки писать туда, а не в `CLAUDE.md`
+- **`docs/quality-rubric.md`** — 20-балльная шкала, по которой QC оценивает артефакты
 - **`brand-assets/README.md`** — что лежит в brand-assets и что нужно залить
 - **`brand-assets/product-info/INDEX.md`** — карта продуктовой базы
 - **`telegram-bot/README.md`** — настройка бота

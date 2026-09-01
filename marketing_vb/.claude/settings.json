@@ -12,9 +12,17 @@
       "Bash(python3 scripts/ahrefs-keywords.py:*)",
       "Bash(python3 ./scripts/ahrefs-keywords.py:*)",
       "Bash(./scripts/ahrefs-keywords.py:*)",
-      "Bash(scripts/ahrefs-keywords.py:*)"
+      "Bash(scripts/ahrefs-keywords.py:*)",
+      "Bash(python3 scripts/social_pack.py:*)",
+      "Bash(python3 ./scripts/social_pack.py:*)",
+      "Bash(scripts/social_pack.py:*)",
+      "Bash(python3 scripts/post-lint.py:*)",
+      "Bash(python3 ./scripts/post-lint.py:*)",
+      "Bash(scripts/post-lint.py:*)",
+      "Bash(python3 scripts/split-linkedin-prompts.py:*)",
+      "Bash(python3 ./scripts/split-linkedin-prompts.py:*)"
     ],
-    "_allow_comment": "Scoped to what the pipelines actually shell out for: the ai-tells detector (referenced by seo-editor, social-editor, message-sequencer, brand-checker and the page-builder skill), the outbound registry, and the Ahrefs keyword pull that feeds seo-planner's keywords_raw. Deliberately NOT the broad 'Bash(python3:*)' that settings.local.json carries for interactive use: guard.py can only pattern-match a command STRING, so `python3 -c \"...\"` would sail past every rule in it. Narrow script rules keep arbitrary python out of autonomous runs while letting the reviewed scripts through. Both bare and ./-prefixed forms are listed because a blocked path variant fails the same silent way this fix exists to stop. WebSearch/WebFetch are needed for the writer's source-fetching; fetches are read-only and the deny list still blocks secret reads.",
+    "_allow_comment": "Scoped to what the pipelines actually shell out for: the ai-tells detector (referenced by seo-editor, social-editor, message-sequencer, brand-checker and the page-builder skill), the outbound registry, and the Ahrefs keyword pull that feeds seo-planner's keywords_raw. Deliberately NOT the broad 'Bash(python3:*)' that settings.local.json carries for interactive use: guard.py can only pattern-match a command STRING, so `python3 -c \"...\"` would sail past every rule in it. Narrow script rules keep arbitrary python out of autonomous runs while letting the reviewed scripts through. Both bare and ./-prefixed forms are listed because a blocked path variant fails the same silent way this fix exists to stop. WebSearch/WebFetch are needed for the writer's source-fetching; fetches are read-only and the deny list still blocks secret reads. Added 2026-09-01: the social pack mechanics (`social_pack.py` — profiles, source of record, run brief, the byte-identical drafter prompt, manifest, digest, report), the per-post mechanical gate (`post-lint.py`) and the LinkedIn brief splitter. These are the scripts that replaced ~165 ad-hoc Bash calls and the hand-written digest inside the coordinator's context; if any of them is silently denied the pipeline falls back to doing that work in an LLM again, which is the cost this change exists to remove. Both bare and ./-prefixed forms are listed for the same reason as the others.",
     "deny": [
       "Read(./.env)",
       "Read(./.env.*)",
@@ -46,5 +54,7 @@
         ]
       }
     ]
-  }
+  },
+  "subagentPromptCacheTtl": "1h",
+  "_subagentPromptCacheTtl_comment": "1h, not the 5m default. Measured on the glp-1-market pack (2026-08-28): nine post-drafter runs paid 732K cache-creation tokens between them and shared nothing, because they started 4-6 minutes apart and the subagent cache TTL is 5 minutes. With `scripts/social_pack.py prompt` giving all nine a byte-identical ~7.1K-token prefix, an hour of TTL is what lets eight of them read that prefix instead of writing it. 1h cache writes are billed above the 5m rate, so this only pays while the prefix is actually shared — if the pack ever stops using the generated prompt, revisit this. Ignored while the subscription is in overage."
 }

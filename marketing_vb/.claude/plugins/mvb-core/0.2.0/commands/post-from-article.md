@@ -5,102 +5,133 @@ argument-hint: "<article-slug>"
 
 Create posts for all active profiles based on article $1.
 
+## Read this before starting: prefer the fan-out
+
+This command does the whole pack in **one session**, and that is the expensive shape.
+Measured on the 2026-08-28 pack (`glp-1-market-hub`, nine posts, session `1ee1d21a`,
+deduplicated by message id): 42.9M context tokens, about $133, of which the coordinator
+session alone was **25.5M tokens and $55.66** — 151 requests at a median context of 206K.
+The writing was 7.5M. The coordination was 59% of the bill, because 165 Bash calls, 27
+subagent reports, a hand-written run brief and a hand-assembled 27KB digest all
+accumulated in one context that every later request paid for again.
+
+**The default path is the fan-out:** `python3 ~/3dlook-marketing/hermes_agent/ops/mvb-run.py posts $1`
+enqueues one conductor job per active profile, four minutes apart, each running
+`/post-one-profile $1 <profile>` from a fresh ~15K context. Same posts, roughly a fifth of
+the coordination, and an exhausted usage window costs the profiles not yet started instead
+of a half-finished 200-turn session.
+
+Use this command when the fan-out is not available: an interactive run where you want the
+whole pack in front of you, a machine with no conductor, or a pack of one or two profiles.
+When you do use it, the steps below are deliberately the same scripts `/post-one-profile`
+calls, so the two paths cannot drift.
+
+## The rule that governs every step
+
+**Anything mechanical goes through a script, not through you.** Resolving the source,
+listing profiles, building the drafter prompt, checking a post, writing the manifest,
+digest and report are all subcommands of `scripts/social_pack.py` and
+`scripts/post-lint.py`. Every Bash call and every file read you do by hand lands in this
+session's context and is re-billed on every later request in it — which, in a nine-profile
+run, is most of what this command used to cost.
+
 ## Steps
 
-1. **Find the article source** in `workspace/seo/articles/$1/`, in this order:
-   - `publish-package.md` — the canonical source when it exists;
-   - otherwise the newest final draft: `draft-v5-revision1.md` → `draft-v4-publisher-final.md` → `draft-v3-final.md` → `draft-v3-edited.md`.
+1. **Prepare the pack.**
 
-   Nothing usable in the directory (or no directory) — STOP, notify Vadim.
-
-   **On approval — read this before refusing.** This step used to say «if `status` is not
-   `approved_for_publish` — STOP». That check could never pass: the SEO pipeline never writes
-   that value. Every `publish-package.md` in the workspace carries `ready_for_review`,
-   `revision_ready_for_review` or `awaiting_final_approval` (verified across all of them
-   2026-08-17), so the rule refused every article that has ever existed here — which is part of
-   why social runs got briefed as free-form prose instead of through this command.
-   The approval gate is Vadim asking for the run (Telegram «Пости &lt;slug&gt;», or a manual
-   `/post-from-article`) plus his approval of the finished digest — see CLAUDE.md §9. So:
-   **report** the article's `status:` and the file you took as the source in your final message,
-   and do not refuse on status. Two cases still STOP and ask: the source has no article body
-   (a stub under ~3000 chars), or its frontmatter says the text is mid-rewrite with no readable
-   version on disk.
-
-2. **Get the profile list** from `brand-assets/social-profiles-config.md` (CLAUDE.md section 5
-   summarises it). Only include profiles with `posts_per_week > 0`.
-
-3. **For each profile sequentially** run the `post-drafter` subagent with:
-   - `article_path`: `workspace/seo/articles/$1/publish-package.md`
-   - `profile`: current profile
-
-4. **If `AUTO_QC_ENABLED=true`** in CLAUDE.md section 14 — after each `post-drafter` run `quality-controller`:
-   ```
-   Use quality-controller to evaluate workspace/social/articles/$1/{profile}/post.md.
-   Pass: agent_name=post-drafter, track=social, artifact_type=post.
+   ```bash
+   python3 scripts/social_pack.py source $1
+   python3 scripts/social_pack.py brief  $1
+   python3 scripts/social_pack.py profiles $1
    ```
 
-5. **After all profiles** — finalise `workspace/social/articles/$1/manifest.json`.
+   `source` names the article of record, its `status:`, the **published slug** and the live
+   URL. Report the file you took and its status in your final message.
 
-   **The schema is not defined here.** It is defined once, in the "Manifest — КАНОНІЧНА СХЕМА"
-   section of the `social-publisher` agent. Read it and conform to it — do not infer the shape
-   from a neighbouring article's manifest. This step used to say only "confirm it is updated
-   with `ready_for_review: true` and QC scores", which defined nothing, so each run copied
-   whatever a nearby file happened to look like while `post-drafter` and `social-publisher`
-   wrote a different, older shape. That is how the 2026-08-21 run ended up with a manifest in
+   Only two things stop the run: `source` exits non-zero (no article directory, or nothing
+   in it carrying an article body), or the frontmatter says the text is mid-rewrite with no
+   readable version on disk. **Do not refuse on `status:`.** That check used to say "if not
+   `approved_for_publish`, STOP" and could never pass — the SEO pipeline never writes that
+   value, every `publish-package.md` in this workspace carries `ready_for_review`,
+   `revision_ready_for_review` or `awaiting_final_approval` — so the rule refused every
+   article that has ever existed here, which is part of why social runs got briefed as
+   free-form prose instead of through this command. The approval gate is Vadim asking for
+   the run plus his approval of the finished digest (CLAUDE.md §9).
+
+2. **Fill in the run brief's HUMAN section, once, before any drafting.** The two blocks
+   between the `HUMAN:START` / `HUMAN:END` markers in
+   `workspace/social/articles/$1/_run-brief.md` are the claims discipline (every number and
+   boundary the posts may state, in the live wording) and the article's real visual assets.
+   They are shared by every profile, they are the part that needs someone to have read the
+   article, and they are why the eight profiles after the first do not invent figures.
+   Everything else in that file is generated by `brief` — do not hand-edit it, it will be
+   overwritten.
+
+3. **For each active profile, sequentially:**
+
+   ```bash
+   python3 scripts/social_pack.py prompt $1 <profile>
+   ```
+
+   Pass that output to `post-drafter` **verbatim** — no summary, no reordering, no note of
+   your own prepended. Its first section is byte-identical across profiles and that is what
+   lets the drafters share one prompt cache (`subagentPromptCacheTtl: "1h"` in
+   `.claude/settings.json`; the subagent default is five minutes, which is shorter than the
+   gap between profiles). Any edit to the head of that prompt breaks the sharing for every
+   profile after it. `prompt $1 --check-prefix` verifies.
+
+   Then, on the saved file:
+
+   ```bash
+   python3 scripts/post-lint.py $1 <profile> --summary --gate
+   ```
+
+   Exit 1 → quote the hard fails back to `post-drafter`; do not rewrite the post yourself.
+   Warnings are informational. Then run `post-brand-checker` on the file; FAIL → one more
+   round, two maximum.
+
+4. **Quality control, sampled.**
+
+   ```bash
+   python3 scripts/social_pack.py qc-plan $1
+   ```
+
+   Run `post-quality-controller` only for the profiles in `qc`, and give it
+   `python3 scripts/social_pack.py qc-prompt $1 <profile>` verbatim. Three of nine are
+   sampled per pack, plus any profile whose lint gate failed. Rationale in CLAUDE.md §14.
+
+   Use `post-quality-controller` (mvb-social), not the bare `quality-controller` — the
+   latter is the deep mvb-core inspector for articles, briefs and outbound.
+
+5. **Assemble, once every active profile has a post.**
+
+   ```bash
+   python3 scripts/post-lint.py $1 --all --summary
+   python3 scripts/social_pack.py manifest $1 --write
+   python3 scripts/social_pack.py digest   $1 --write
+   python3 scripts/social_pack.py report   $1 --write
+   ```
+
+   These three files are generated from what is on disk, in the canonical shapes:
+   `manifest.json` (schema owned by `social-publisher` — every active profile present with
+   the required fields, exactly one length field in the profile's own unit, `qc_score` only
+   where QC ran, `profiles_skipped` always an array, `ready_for_review: true` only once
+   every active profile is `ready`), `review-digest.md` (company accounts first, then
+   personal LinkedIn alphabetically, each post's body, CTA and design tip) and
+   `publish-report.md`.
+
+   Do not write or reformat them by hand. The manifest used to be written by three
+   different agents each carrying their own copy of the schema, and the file's shape
+   depended on which one wrote last: that is how the 2026-08-21 run shipped a manifest in
    the obsolete `drafts:` form listing 3 profiles while 9 posts sat on disk.
 
-   Concretely: every active profile present in `profiles` with the required fields, anything
-   skipped in `profiles_skipped` with a reason, QC scores where QC actually ran, and
-   `ready_for_review: true` **only** once every active profile is `status: ready`.
-
-6. **Assemble the review digest** — read all finished `post.md` files and write to `workspace/social/articles/$1/review-digest.md`:
-
-   ```markdown
-   # Review digest — {slug}
-
-   Article: `workspace/seo/articles/{slug}/publish-package.md`
-   Date: {YYYY-MM-DD}
-   Profiles: N
-
-   ---
-
-   ## twitter-company
-
-   {full post text}
-
-   **CTA:** ...
-
-   > **Design tip**
-   > Article visual: ...
-   > Format: [text | text + photo | carousel | infographic | lead magnet | poll | screenshot]
-   > Adaptation: ...
-   > Keep: ...
-
-   ---
-
-   ## {profile}
-
-   {full post text}
-
-   **CTA:** ...
-
-   > **Design tip**
-   > Article visual: ...
-   > Format: [text | text + photo | carousel | infographic | lead magnet | poll | screenshot]
-   > Adaptation: ...
-   > Keep: ...
-
-   ---
-   ```
-
-   Order: company accounts first (twitter → instagram → facebook → linkedin-company), then personal LinkedIn alphabetically.
-   Include only profiles with a finished `post.md`.
-   Copy the design tip verbatim from the `### Design tip` block in each `post.md`.
-
-7. Report: "N posts ready for article $1. Digest: `workspace/social/articles/$1/review-digest.md`. Telegram bot will send to Vadim for approval."
+6. **Report:** "N posts ready for article $1. Source: `<file>` (status: `<status>`). Digest:
+   `workspace/social/articles/$1/review-digest.md`." Note any profile skipped and why, and
+   any lint warning left standing.
 
 ## Rules
 
 - **Do not run post-drafter in parallel** — one profile at a time, clean context.
-- If a profile has `posts_per_week = 0` or is disabled — skip it, note it in the final report.
+- If a profile has `posts_per_week = 0` it is not in `active`; note it in the final report.
 - `visual-brief` **is not triggered here** — only after Vadim approves the text in Telegram.
+- Everything goes to files, not into the chat. Publish nothing outward.
