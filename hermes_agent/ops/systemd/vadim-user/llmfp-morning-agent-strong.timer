@@ -1,0 +1,13 @@
+[Unit]
+Description=llm-failover-proxy — проверка сильной цепочки каждое утро в 07:10
+
+[Timer]
+# 07:10, а не 07:00: агентный пик идёт первым и оба инстанса читают ОДИН .env.
+# Часовой пояс проставлен явно — ровно та ошибка, что развела hermes-update и
+# llmfp-morning-agent на час 27.08.2026, когда одна строка была без токена TZ.
+OnCalendar=*-*-* 07:10:00 Europe/Kyiv
+Persistent=true
+RandomizedDelaySec=2min
+
+[Install]
+WantedBy=timers.target

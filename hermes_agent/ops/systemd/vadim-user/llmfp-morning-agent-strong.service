@@ -1,0 +1,25 @@
+[Unit]
+# Утренняя проверка СИЛЬНОЙ цепочки (list «Reasoning ai models», порт 47832).
+#
+# ЗАЧЕМ ОТДЕЛЬНЫЙ ЮНИТ (01.09.2026). Скрипт умеет работать с любым инстансом
+# через LLMFP_CONFIG, но юнит был ровно один и без Environment=, то есть брал
+# умолчание — agentic/config.json. Сильный инстанс не проверял НИКТО: ни барьер
+# провайдеров, ни барьер здоровья, ни алерт в Telegram. Замер 01.09.2026:
+# в его цепочке слот 3 держал 0 успехов на 94 попытки, а слот 9
+# (moonshotai/kimi-k2.6) отвечал 404 «Not found for account» — и об этом
+# невозможно было узнать, потому что утренний отчёт про strong не существовал.
+#
+# Переключение списка здесь фактически no-op: «Reasoning ai models» и так активен.
+# Смысл юнита — health-барьеры, прогрев и алерт. Заодно это страховка на случай,
+# если что-то переключит активный список strong и не вернёт обратно.
+Description=llm-failover-proxy — утренняя проверка сильной цепочки (list «Reasoning ai models»)
+After=llm-failover-proxy-strong.service
+Wants=llm-failover-proxy-strong.service
+
+[Service]
+Type=oneshot
+Environment=LLMFP_CONFIG=%h/.config/llm-failover-proxy/strong/config.json
+Environment=LLMFP_MORNING_LIST=Reasoning ai models
+Environment=LLMFP_MORNING_LOG=%h/.hermes/llmfp-morning-strong.log
+ExecStart=%h/.local/bin/llmfp-morning-agent.sh
+TimeoutStartSec=5min

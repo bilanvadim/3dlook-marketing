@@ -28,7 +28,10 @@ set -uo pipefail
 
 CONFIG="${LLMFP_CONFIG:-$HOME/.config/llm-failover-proxy/agentic/config.json}"
 LIST="${LLMFP_MORNING_LIST:-for agent AI}"
-LOG="$HOME/.hermes/llmfp-morning.log"
+# ЛОГ ПАРАМЕТРИЗОВАН (01.09.2026). Раньше путь был жёстким, и второй инстанс
+# (strong) писал бы в тот же файл вперемешку с агентным — а по этому логу
+# разбирают утренние аварии. Умолчание прежнее, так что агентный юнит не менялся.
+LOG="${LLMFP_MORNING_LOG:-$HOME/.hermes/llmfp-morning.log}"
 ROUTER_LIB="${ROUTER_LIB:-$HOME/.hermes/model-router}"
 # Ниже этого числа разных провайдеров в активном списке цепочка считается
 # хрупкой: исчерпание квоты у одного провайдера убивает все запросы сразу.

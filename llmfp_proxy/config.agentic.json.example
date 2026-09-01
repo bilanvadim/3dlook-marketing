@@ -67,15 +67,6 @@
   ],
   "models": [
     {
-      "id": "mdl_1c02ab02",
-      "providerId": "prov_2350d59e",
-      "model": "hy3-free",
-      "alias": "hy3-free",
-      "kind": "chat",
-      "enabled": true,
-      "params": {}
-    },
-    {
       "id": "mdl_0ed6e408",
       "providerId": "prov_5eeaf6c2",
       "model": "nvidia/nemotron-3-super-120b-a12b:free",
@@ -112,6 +103,33 @@
       "params": {}
     },
     {
+      "id": "mdl_29211781",
+      "providerId": "prov_5eeaf6c2",
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "alias": "nvidia/nemotron-3.5-lightning:free",
+      "kind": "chat",
+      "enabled": true,
+      "params": {}
+    },
+    {
+      "id": "mdl_d385ad75",
+      "providerId": "prov_2350d59e",
+      "model": "nemotron-3.5-lightning-free",
+      "alias": "nemotron-3.5-lightning-free",
+      "kind": "chat",
+      "enabled": true,
+      "params": {}
+    },
+    {
+      "id": "mdl_0cdab184",
+      "providerId": "prov_5eeaf6c2",
+      "model": "cohere/north-mini-code:free",
+      "alias": "cohere/north-mini-code:free",
+      "kind": "chat",
+      "enabled": true,
+      "params": {}
+    },
+    {
       "id": "mdl_c5079631",
       "providerId": "prov_2350d59e",
       "model": "mimo-v2.5-free",
@@ -130,37 +148,10 @@
       "params": {}
     },
     {
-      "id": "mdl_8978d3ea",
-      "providerId": "prov_2350d59e",
-      "model": "minimax-m3",
-      "alias": "minimax-m3",
-      "kind": "chat",
-      "enabled": true,
-      "params": {}
-    },
-    {
-      "id": "mdl_b3e80a13",
-      "providerId": "prov_b66c619f",
-      "model": "mistralai/mistral-large-2-instruct",
-      "alias": "mistralai/mistral-large-2-instruct",
-      "kind": "chat",
-      "enabled": true,
-      "params": {}
-    },
-    {
       "id": "mdl_5756694c",
       "providerId": "prov_5eeaf6c2",
       "model": "google/gemma-4-26b-a4b-it:free",
       "alias": "google/gemma-4-26b-a4b-it:free",
-      "kind": "chat",
-      "enabled": true,
-      "params": {}
-    },
-    {
-      "id": "mdl_16ebe9ef",
-      "providerId": "prov_2350d59e",
-      "model": "deepseek-v4-flash-free",
-      "alias": "deepseek-v4-flash-free",
       "kind": "chat",
       "enabled": true,
       "params": {}
@@ -172,15 +163,6 @@
       "name": "for agent AI",
       "description": "Everyday agentic chain: normal Hermes conversation, the morning pick at 07:00 serves from here. Cheap-to-mid free models, high daily quota.",
       "models": [
-        {
-          "id": "mdl_1c02ab02",
-          "providerId": "prov_2350d59e",
-          "model": "hy3-free",
-          "alias": "hy3-free",
-          "kind": "chat",
-          "enabled": true,
-          "params": {}
-        },
         {
           "id": "mdl_0ed6e408",
           "providerId": "prov_5eeaf6c2",
@@ -218,6 +200,33 @@
           "params": {}
         },
         {
+          "id": "mdl_29211781",
+          "providerId": "prov_5eeaf6c2",
+          "model": "nvidia/nemotron-3.5-lightning:free",
+          "alias": "nvidia/nemotron-3.5-lightning:free",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_d385ad75",
+          "providerId": "prov_2350d59e",
+          "model": "nemotron-3.5-lightning-free",
+          "alias": "nemotron-3.5-lightning-free",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
+          "id": "mdl_0cdab184",
+          "providerId": "prov_5eeaf6c2",
+          "model": "cohere/north-mini-code:free",
+          "alias": "cohere/north-mini-code:free",
+          "kind": "chat",
+          "enabled": true,
+          "params": {}
+        },
+        {
           "id": "mdl_c5079631",
           "providerId": "prov_2350d59e",
           "model": "mimo-v2.5-free",
@@ -236,37 +245,10 @@
           "params": {}
         },
         {
-          "id": "mdl_8978d3ea",
-          "providerId": "prov_2350d59e",
-          "model": "minimax-m3",
-          "alias": "minimax-m3",
-          "kind": "chat",
-          "enabled": true,
-          "params": {}
-        },
-        {
-          "id": "mdl_b3e80a13",
-          "providerId": "prov_b66c619f",
-          "model": "mistralai/mistral-large-2-instruct",
-          "alias": "mistralai/mistral-large-2-instruct",
-          "kind": "chat",
-          "enabled": true,
-          "params": {}
-        },
-        {
           "id": "mdl_5756694c",
           "providerId": "prov_5eeaf6c2",
           "model": "google/gemma-4-26b-a4b-it:free",
           "alias": "google/gemma-4-26b-a4b-it:free",
-          "kind": "chat",
-          "enabled": true,
-          "params": {}
-        },
-        {
-          "id": "mdl_16ebe9ef",
-          "providerId": "prov_2350d59e",
-          "model": "deepseek-v4-flash-free",
-          "alias": "deepseek-v4-flash-free",
           "kind": "chat",
           "enabled": true,
           "params": {}
@@ -315,15 +297,6 @@
           "params": {}
         },
         {
-          "id": "mdl_b6a7e866",
-          "providerId": "prov_2350d59e",
-          "model": "deepseek-v4-flash-free",
-          "alias": "deepseek-v4-flash-free",
-          "kind": "chat",
-          "enabled": true,
-          "params": {}
-        },
-        {
           "id": "mdl_b66ffaf6",
           "providerId": "prov_b66c619f",
           "model": "deepseek-ai/deepseek-v4-flash-0731",
@@ -346,15 +319,6 @@
           "providerId": "prov_2350d59e",
           "model": "laguna-s-2.1-free",
           "alias": "laguna-s-2.1-free",
-          "kind": "chat",
-          "enabled": true,
-          "params": {}
-        },
-        {
-          "id": "mdl_fd462548",
-          "providerId": "prov_b66c619f",
-          "model": "moonshotai/kimi-k2.6",
-          "alias": "moonshotai/kimi-k2.6",
           "kind": "chat",
           "enabled": true,
           "params": {}
@@ -391,15 +355,6 @@
           "providerId": "prov_5eeaf6c2",
           "model": "cohere/north-mini-code:free",
           "alias": "cohere/north-mini-code:free",
-          "kind": "chat",
-          "enabled": true,
-          "params": {}
-        },
-        {
-          "id": "mdl_055c1bab",
-          "providerId": "prov_2350d59e",
-          "model": "hy3-free",
-          "alias": "hy3-free",
           "kind": "chat",
           "enabled": true,
           "params": {}

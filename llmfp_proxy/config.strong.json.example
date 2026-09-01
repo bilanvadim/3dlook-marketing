@@ -103,15 +103,6 @@
       "params": {}
     },
     {
-      "id": "mdl_53267638",
-      "providerId": "prov_2350d59e",
-      "model": "deepseek-v4-flash-free",
-      "alias": "deepseek-v4-flash-free",
-      "kind": "chat",
-      "enabled": true,
-      "params": {}
-    },
-    {
       "id": "mdl_7ab37085",
       "providerId": "prov_b66c619f",
       "model": "deepseek-ai/deepseek-v4-flash-0731",
@@ -134,15 +125,6 @@
       "providerId": "prov_2350d59e",
       "model": "laguna-s-2.1-free",
       "alias": "laguna-s-2.1-free",
-      "kind": "chat",
-      "enabled": true,
-      "params": {}
-    },
-    {
-      "id": "mdl_5e98ecd9",
-      "providerId": "prov_b66c619f",
-      "model": "moonshotai/kimi-k2.6",
-      "alias": "moonshotai/kimi-k2.6",
       "kind": "chat",
       "enabled": true,
       "params": {}
@@ -179,15 +161,6 @@
       "providerId": "prov_5eeaf6c2",
       "model": "cohere/north-mini-code:free",
       "alias": "cohere/north-mini-code:free",
-      "kind": "chat",
-      "enabled": true,
-      "params": {}
-    },
-    {
-      "id": "mdl_80648fb5",
-      "providerId": "prov_2350d59e",
-      "model": "hy3-free",
-      "alias": "hy3-free",
       "kind": "chat",
       "enabled": true,
       "params": {}
@@ -332,15 +305,6 @@
           "params": {}
         },
         {
-          "id": "mdl_53267638",
-          "providerId": "prov_2350d59e",
-          "model": "deepseek-v4-flash-free",
-          "alias": "deepseek-v4-flash-free",
-          "kind": "chat",
-          "enabled": true,
-          "params": {}
-        },
-        {
           "id": "mdl_7ab37085",
           "providerId": "prov_b66c619f",
           "model": "deepseek-ai/deepseek-v4-flash-0731",
@@ -363,15 +327,6 @@
           "providerId": "prov_2350d59e",
           "model": "laguna-s-2.1-free",
           "alias": "laguna-s-2.1-free",
-          "kind": "chat",
-          "enabled": true,
-          "params": {}
-        },
-        {
-          "id": "mdl_5e98ecd9",
-          "providerId": "prov_b66c619f",
-          "model": "moonshotai/kimi-k2.6",
-          "alias": "moonshotai/kimi-k2.6",
           "kind": "chat",
           "enabled": true,
           "params": {}
@@ -408,15 +363,6 @@
           "providerId": "prov_5eeaf6c2",
           "model": "cohere/north-mini-code:free",
           "alias": "cohere/north-mini-code:free",
-          "kind": "chat",
-          "enabled": true,
-          "params": {}
-        },
-        {
-          "id": "mdl_80648fb5",
-          "providerId": "prov_2350d59e",
-          "model": "hy3-free",
-          "alias": "hy3-free",
           "kind": "chat",
           "enabled": true,
           "params": {}
