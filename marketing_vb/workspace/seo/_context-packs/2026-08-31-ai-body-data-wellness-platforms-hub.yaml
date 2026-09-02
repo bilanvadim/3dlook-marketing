@@ -39,6 +39,15 @@ context_pack:
     - "Wellness Rewards market sizing (TAM $50-200M/yr, SAM US+EU/UK $10-40M/yr) lives in use-cases/fx-wellness-rewards.md as an INTERNAL commercial estimate. It is not a citable published market figure. Do not publish it."
     - "No engagement/retention uplift number exists for any FitXpress wellness deployment. Any 'improves retention by X%' claim would be fabricated."
 
+  # Read by `scripts/article_lint.py --report`. Not a gate: it prints the balance so a human
+  # can judge it. Review 1 item 2 said corporate wellness had to stop being the dominant frame,
+  # and on 2026-09-02 answering "did it?" needed a hand-written script. Now it is one flag.
+  # URLs are stripped before counting, so a slug like `wellness-rewards-...employers-insurers`
+  # does not inflate the corporate side.
+  lint_term_groups:
+    corporate: ["employer", "insurer", "reward", "corporate wellness", "incentive", "plan-year"]
+    broad: ["consumer wellness", "lifestyle", "nutrition", "habit", "digital wellbeing", "coaching", "wellness app", "member"]
+
   banned_claims:
     - "most accurate body scanning"
     - "guaranteed compliance / makes you compliant"

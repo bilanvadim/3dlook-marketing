@@ -121,12 +121,29 @@ context-pack-builder (эмитит content_strategy: строка из content-p
        ├─ action_type = create-net-new / publish-planned-hub → продолжай
        └─ action_type = refresh / section-first / review-decide / lead-magnet
              → верни рекомендацию и СТОП (не пиши новую статью)
-  → seo-planner Phase 1-3 (keywords → title → outline) → QC → [VADIM checkpoint: plan + title]
-  → seo-writer (full or per-section) → QC per section
+  → seo-planner Phase 1-3 (keywords → title → outline)
+  → scripts/article_lint.py --plan  (гейты плана, один вызов, без LLM)
+  → [VADIM checkpoint 1: plan + title, И ЗДЕСЬ ЖЕ уходит пакет внешнему рев'юверу]
+  → seo-writer (full or per-section)
+  → scripts/article_lint.py         (один вызов вместо QC-агента на механике)
   → seo-editor (4 passes + strategy compliance)
-  → seo-publisher (meta + SEO checklist + strategy checklist) → QC → [VADIM checkpoint: text + meta]
+  → scripts/article_lint.py
+  → seo-publisher (meta + SEO checklist + strategy checklist)
+  → quality-controller ТОЛЬКО на суждение (держит ли аргумент, заслуживает ли секция места)
+  → [VADIM checkpoint 2: text + meta]
   → [Вадим: publish в CMS]
 ```
+
+> **Механику проверяет скрипт, не агент.** `scripts/article_lint.py` заменяет
+> `quality-controller` на всём, что решается детерминированно: hard bans, прозаический word
+> count, трейсинг claim'ов по context pack, покрытие 4 направлений ссылок, размещение ключа.
+> Августовский соц-baseline тратил на QC-агента 7.1M токенов / $36.35 за пак. Запускай
+> `quality-controller` после паблишера и только на то, что скрипт судить не может.
+>
+> **Внешнее рев'ю идёт на аутлайн (чекпоинт 1), а не на готовый текст.** Review 1 по
+> Wellness-хабу пришло на чекпоинт 2 и перевернуло primary keyword, то есть решение чекпоинта
+> 1. Перепись стоила $53.88 и четыре прогона агентов. Подробный порядок и что делать, если
+> рев'ю всё-таки пришло поздно, — в `.claude/commands/new-article.md`.
 
 > **Content strategy gate (FitXpress):** каждая новая health-статья должна иметь строку в `brand-assets/content-strategy/content-plan.md`. Нет строки → seo-planner останавливается и спрашивает Вадима о размещении (hub/cluster/action type). Правила размещения — `brand-assets/content-strategy/content-strategy-guidelines.md`.
 

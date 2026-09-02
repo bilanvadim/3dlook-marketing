@@ -55,6 +55,76 @@ from pathlib import Path
 # HARD categories — 3DLOOK-specific bans. Any hit is a fix, at any density.
 # ---------------------------------------------------------------------------
 
+# ---------------------------------------------------------------------------
+# CARD — one human-readable line per HARD category, plus the fix.
+#
+# This exists so `scripts/bans-card.py` can generate the compact rule card that agents read
+# instead of reading `ai-tells-sweep.md` (18 KB) and `terminology-guardrails.md` (16 KB) in
+# full. The 2026-09-02 pipeline audit found these rules encoded in four places and enforced
+# in one: this file. Keeping the human label next to the pattern is what makes the card
+# impossible to drift from the enforcement.
+#
+# Rule for editing: change a pattern, change its CARD row in the same commit. `bans-card.py
+# --check` exits 1 when a HARD category has no CARD row, so a new category cannot ship
+# unlabelled.
+CARD = {
+    "banned_words": (
+        "Banned vocabulary. Any inflection counts.",
+        "Say the specific thing instead. There is no approved synonym, cut the sentence and rewrite it.",
+    ),
+    "banned_phrasings": (
+        "Banned sentence shapes: \"it's not just X, it's Y\", \"in today's fast-paced world\", and friends.",
+        "State the claim once, plainly.",
+    ),
+    "negative_parallelism": (
+        "\"Not only ... but also\" and its variants, used for rhythm rather than meaning.",
+        "Two sentences, or one that carries the point without the scaffold.",
+    ),
+    "em_dash": (
+        "Em dash and en dash. Banned outright in every channel, not just in rhetorical constructions.",
+        "Comma, full stop, or brackets. A hyphen in a numeric range (96-97%) is fine.",
+    ),
+    "terminology_guardrails": (
+        "Words the terminology Doc retires: `objective` about our own output, `the reader`, "
+        "`the following sections`, `see below`, `this article`, `by hand`, `let`, `plus` as a "
+        "capability connector, `so` introducing a benefit.",
+        "standardized / timestamped / structured / repeatable; describe the business reality; "
+        "manually; allow; including / such as / along with; reducing... / which can reduce...",
+    ),
+    "positioned_as": (
+        "`positioned as` for product, intended use, scope, replacement or regulatory status. "
+        "ONE licensed exception since 2026-09-02: the medical-device sentence.",
+        "State the boundary directly. For medical device write exactly: "
+        "\"It is not positioned as a medical device.\"",
+    ),
+    "presumed_reaction": (
+        "Telling the audience what it thinks or gets wrong: \"what trips people up\", "
+        "\"the mistake buyers make\".",
+        "Name the components of the problem directly.",
+    ),
+    "anthropomorphism": (
+        "Behaviour or feeling attributed to a concept: \"two properties do the heavy lifting\".",
+        "\"two properties matter\". Plain verbs.",
+    ),
+    "reserved_words": (
+        "`independent`, `third-party`, `validated`, `clinically validated`, `peer-reviewed` "
+        "applied to our own evidence. We have none of these.",
+        "\"internal validation\", and say what it was measured against.",
+    ),
+    "bare_percentage": (
+        "A bare \">X%\" with no methodology behind it (editorial guardrail #4).",
+        "Give the reference method and the conditions, or write \"available under a "
+        "non-disclosure agreement\".",
+    ),
+    "claims_discipline": (
+        "Claims about-me.md forbids outright: diagnosis, decisioning, replacing a clinician or "
+        "a reference method, guaranteed compliance, automatic fraud detection.",
+        "supports / helps standardize / provides structured records / can support review, "
+        "where the workflow or protocol allows.",
+    ),
+}
+
+
 HARD_EN = {
     # CLAUDE.md section 6 — banned words
     "banned_words": [

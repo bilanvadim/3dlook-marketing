@@ -177,6 +177,15 @@
 - Слова: leverage, utilize, harness, robust, seamless, comprehensive, delve, navigate (в перен. смысле), tapestry, realm
 - «Furthermore / Moreover / Additionally» в начале предложений (минимизировать)
 
+> **Операционный источник для агента — сгенерированная карточка, не эта таблица.**
+> `brand-assets/style-guides/hard-bans-card.md` (~4,4 КБ) рендерится скриптом
+> `scripts/bans-card.py` прямо из паттернов `detect-ai-tells.py`, поэтому разойтись с тем,
+> что реально гейтится, она не может. Таблица ниже — читаемое резюме для человека, и она
+> может отстать: аудит 2026-09-02 нашёл эти правила в четырёх местах при одном исполнителе,
+> и когда Вадим 2026-09-02 откатил правило про medical device, править пришлось пятнадцать
+> файлов. Гейт — `python3 scripts/article_lint.py <файл>`; `scripts/bans-card.py --check`
+> падает с exit 1, если карточка отстала от детектора.
+
 **Language guardrails — hard bans (`terminology-guardrails.md`, Doc Ассель 2026-08-13):**
 
 | Запрещено | Чем заменить |
@@ -189,7 +198,7 @@
 | `let` | `allow` |
 | `plus` как коннектор возможностей / выгод / proof points | `including` · `such as` · `along with` · `as well as` · отдельное предложение |
 | `so` вводящее результат или выгоду | `reducing…` · `helping to reduce…` · `allowing…` · `which can reduce…` · `thereby reducing…` |
-| **`positioned as`** про продукт, intended use или регуляторный статус | формулируй границу напрямую: **«FitXpress is not a medical device»** |
+| **`positioned as`** про продукт, intended use, scope, замену или регуляторный статус | формулируй границу напрямую. **Единственное исключение (восстановлено 2026-09-02): medical device — «It is not positioned as a medical device.»** |
 | presumed reaction: «what trips people up», «the mistake buyers make», «what most teams misunderstand» | назови компоненты проблемы прямо |
 | поведение/чувства, приписанные понятиям: «two properties do the heavy lifting» | «two properties matter» |
 | corrective negation «X, not Y» и corrective «rather than» | сначала рекомендуемый подход, ограничение — отдельной фразой |
@@ -198,7 +207,7 @@
 
 **Две правки переопределили `editorial-guardrails.md` (2026-08-25):**
 1. **Аббревиатуры.** BMI, CEO, UK, US, EU теперь общеизвестные и **не разворачиваются** (`Body Mass Index (BMI)` → `BMI`). M1 в остальном в силе, включая цитируемых регуляторов (FDA, ICH, GCP).
-2. **Medical framing.** Было «FitXpress is not positioned as a medical device» → стало **«FitXpress is not a medical device»**. Intended use: «FitXpress does not diagnose conditions, make clinical decisions, or determine treatment eligibility». Опубликованное до 2026-08-25 не переписываем.
+2. **Medical framing — правило в третьем состоянии.** Было «not positioned as a medical device» (2026-06-09) → стало «FitXpress is not a medical device» (2026-08-13) → **восстановлено обратно на «It is not positioned as a medical device.» (2026-09-02, Review 1, решение Вадима)**. «Positioned as» про всё ОСТАЛЬНОЕ (scope, замена, эквивалентность, intended use) по-прежнему hard ban. Intended use: «FitXpress does not diagnose conditions, make clinical decisions, or determine treatment eligibility». Опубликованное до 2026-08-25 не переписываем.
 
 ---
 
@@ -438,7 +447,7 @@ top_issue: [1 sentence] | none
    - Comparison / buyer's-guide topics → `body-scanning-technology-comparison.md`
 3. **Apply Assel Sekerova as author** by default in the article frontmatter, unless Vadim specifies otherwise in the brief.
 4. **Match the 2026 tone** (measured, hedged, stats-first, workflow-framed) — not the 2024 industry-trend tone present in older MT articles. The 2024 articles use phrases now banned by CLAUDE.md section 6 (leverage / revolutionize / harness / etc.); do NOT mimic their phrasing even though they are in the corpus.
-5. **Read `brand-assets/style-guides/editorial-guardrails.md` and apply the 11 principles end-to-end.** These guardrails apply to **ALL 3DLOOK content** — blog, SEO, outbound, social, whitepaper, deck — not just SEO articles. Established 2026-06-09 from the v2-asselya FAQ-article review cycle (Whitney + Asselya editorial pass). Phase 1 fact-check runs the 11 as an explicit checklist; Phase 3 writing enforces them throughout; Phase 4 self-critique surfaces any bent guardrail to an Open Items block for Asselya per principle #11 — no silent edits. Hardest-binding principles: #1 (substantiation — cut what you can't back), #2 (one number, everywhere the same), #3 (reserved words "independent" / "validated" / "third-party" off-limits without proof), #4 (no bare ">X%" without methodology — use "available under NDA" instead), #6 (medical framing stated directly — «FitXpress is not a medical device», never «not positioned as» and never «does not apply»; amended 2026-08-25 by the terminology guardrails).
+5. **Read `brand-assets/style-guides/editorial-guardrails.md` and apply the 11 principles end-to-end.** These guardrails apply to **ALL 3DLOOK content** — blog, SEO, outbound, social, whitepaper, deck — not just SEO articles. Established 2026-06-09 from the v2-asselya FAQ-article review cycle (Whitney + Asselya editorial pass). Phase 1 fact-check runs the 11 as an explicit checklist; Phase 3 writing enforces them throughout; Phase 4 self-critique surfaces any bent guardrail to an Open Items block for Asselya per principle #11 — no silent edits. Hardest-binding principles: #1 (substantiation — cut what you can't back), #2 (one number, everywhere the same), #3 (reserved words "independent" / "validated" / "third-party" off-limits without proof), #4 (no bare ">X%" without methodology — use "available under NDA" instead), #6 (medical framing: **«It is not positioned as a medical device.»** — restored 2026-09-02 by Review 1 and Vadim's call, after the 2026-08-13 terminology guardrails had banned it. «Positioned as» remains banned for every other product, scope, intended-use and regulatory statement, and «does not apply» about a regulatory framework is still never allowed).
 6. **Resolve the topic against `brand-assets/content-strategy/content-plan.md` BEFORE anything else (FitXpress health only).** `seo-planner` runs this as a Phase 0 gate: locate the topic's row (hub · cluster · intent · action type · priority · existing-URL · cannibalization guardrail), and **act on the action type** — only `create net-new` / `publish planned hub` proceed to a new article; `refresh/expand`, `section first`, `review/decide`, and `lead magnet` return a recommendation and STOP (no new article). A topic with no row → stop and ask Vadim where it belongs. The rules that govern placement, positioning language, vertical boundaries, internal linking (4 directions), FAQ, and CTA-by-intent live in `brand-assets/content-strategy/content-strategy-guidelines.md`. `content-plan.md` is the offline copy of the [strategy spreadsheet](https://docs.google.com/spreadsheets/d/1Sy7EzzZZvCKyrD30pbhElEpCZDbzuMtMkxdiDTIP8AE/edit); re-sync it when the sheet changes. This is a hub-and-cluster system: **a title without its strategy row is not a brief.**
 
 7. **Read `brand-assets/content-strategy/terminology-guardrails.md` and run it as its own pass.** Офлайн-копия [Doc Ассель](https://docs.google.com/document/d/1dPNXQL62t_y82MFJblBidEvRgwXjJxzADdapB7Pa214/edit) (doc изменён 2026-08-13, синк 2026-08-25) — источник правды по **выбору слов и построению фразы** для всего корпоративного контента, не только SEO. Part 1 — девять правил построения фразы (аббревиатуры и их исключения, анкорные ссылки, качество сторонних источников, явные отношения, никаких presumed reactions, никакого поведения приписанного понятиям, em dash, corrective negation, corrective «rather than»). Part 2 — десять словарных запретов (`objective`, `we/our`, `you`, `reader/audience/below`, `this article`, `by hand`, `plus`, `let`, `so`, **`positioned as`**). Сводка hard bans — §6 выше. **Писатель держит в голове только hard bans; полный проход делает редактор** (`seo-editor` Pass 4 + Pass 3c детектор, `social-editor` Pass 2b, `page-builder` Layer 2), потому что писать и вычищать одновременно — значит делать плохо и то, и другое. Механические попадания щёлкает `brand-assets/style-guides/scripts/detect-ai-tells.py`; судейские строки (corrective negation, corrective «rather than», `we/our`, `you`, vendor-блог в цитате) остаются за человеком или редактором. **Этот файл переопределил два правила `editorial-guardrails.md`** — M1 (BMI/CEO/UK/US/EU не разворачиваются) и #6 (medical framing напрямую, без «positioned as»); переопределения записаны в обоих файлах с датами.
@@ -511,5 +520,5 @@ only from `case-studies/`; Mobile Tailor customer ARRs never published; the 11 e
 along with M1/M2/M3 run as their own pass, not as a habit while drafting; `terminology-guardrails.md`
 Part 1 and Part 2 as Layer 2 of the humanisation pass; accuracy always scoped through
 "accurate enough for which decision?" and its four conditions; medical framing stated directly
-(**"FitXpress is not a medical device"** — "positioned as" is banned, updated 2026-08-25);
+(**"It is not positioned as a medical device."** — restored 2026-09-02; "positioned as" stays banned for every other product, scope and regulatory statement);
 `DESIGN.md` decides every token; a price signal and a link to `/pricing/` on every commercial page.

@@ -92,7 +92,7 @@ Prefer:
 - *"Endpoint validation stays with the sponsor; FitXpress standardizes and documents capture."*
 - *"FitXpress supports pre-check workflows; eligibility remains the investigator's determination."*
 
-Keep exactly one clear negative statement of scope where a boundary must be stated (per #6, *"FitXpress is not a medical device"*); do not chain a second negation onto it in the same sentence. (Repeating the scope disclaimer across sections, when each restatement fits its section, is acceptable — this rule is about negation density within a sentence, not about how often the disclaimer appears.)
+Keep exactly one clear negative statement of scope where a boundary must be stated (per #6, *"It is not positioned as a medical device."*, restored 2026-09-02); do not chain a second negation onto it in the same sentence. (Repeating the scope disclaimer across sections, when each restatement fits its section, is acceptable — this rule is about negation density within a sentence, not about how often the disclaimer appears.)
 
 ### M3. Construction rules live in the terminology guardrails
 

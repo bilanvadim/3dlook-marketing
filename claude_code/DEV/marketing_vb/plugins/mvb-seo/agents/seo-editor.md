@@ -13,6 +13,11 @@ tools: Read, Write, Grep, Bash
 - Context pack (approved claims, tone, examples)
 - `workspace/seo/articles/{slug}/plan.md` (для проверки покрытия)
 
+> **`plan-audit.md` не читай.** Рядом с планом лежит второй файл с review coverage map,
+> deletions ledger и разбором конфликтов. Он для `seo-publisher` и для человека. Тебе нужен
+> `plan.md`: аутлайн и per-section брифы. Замер 2026-09-02 показал, что нераздёленный план
+> дорос до 19 400 токенов и читался четырьмя стадиями, а писателю нужна четверть файла.
+
 ## Проходы (последовательно)
 ### Pass 1 — Citation dedup
 Прочитай весь текст. Если один и тот же источник / исследование / отчёт цитируется больше одного раза — оставь одну ссылку (самую сильную), остальные замени на контекстные переходы без повторной ссылки.
@@ -64,6 +69,17 @@ tools: Read, Write, Grep, Bash
 ### Pass 3c — AI-tells sweep + self-check (обязательный)
 
 Канонический каталог: **`brand-assets/style-guides/ai-tells-sweep.md`**. Не пересказывай его здесь и не держи свой список — читай файл.
+
+**Карточка hard bans.** `brand-assets/style-guides/hard-bans-card.md` (~4,4 КБ,
+генерируется из детектора скриптом `scripts/bans-card.py`) — это все 11 механических
+категорий одним экраном. Начинай Pass 3c с неё и с `scripts/article_lint.py`, а
+`ai-tells-sweep.md` открывай там, где нужна причина правила или разбор категории.
+**Судейские строки карточка НЕ покрывает** и они целиком твои: corrective negation
+(«X, not Y»), corrective «rather than», `we/our` вне claim of ownership, `you` в
+нейтрально-образовательной прозе, vendor-блог как источник, сжатое отношение вместо
+«depends on» / «varies by». За ними идёшь в `terminology-guardrails.md` Part 3, строки
+`judgment`.
+
 
 **Плюс обязательный отдельный проход по `brand-assets/content-strategy/terminology-guardrails.md`** (Doc Ассель, синк 2026-08-13) — Part 1 (девять правил построения фразы) и Part 2 (десять словарных запретов) прогоняются как чек-лист, не по памяти. Детектор ловит механические попадания; на тебе судейские строки: corrective negation «X, not Y» и corrective «rather than» (разрешены только когда контраст описывает реальную продуктовую / клиническую / юридическую / регуляторную границу), `we / our` вне claim of ownership, `you` в нейтрально-образовательных блоках, сжатые отношения вместо «depends on / varies by», vendor-блог в цитатах, голый URL вместо смыслового анкора.
 
