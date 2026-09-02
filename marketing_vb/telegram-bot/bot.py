@@ -85,15 +85,54 @@ def review_keyboard(artifact_id: str) -> InlineKeyboardMarkup:
     """Standard 3-button review keyboard."""
     return InlineKeyboardMarkup([
         [
-            InlineKeyboardButton("✅ Approve", callback_data=f"approve|{artifact_id}"),
-            InlineKeyboardButton("✏️ Edit", callback_data=f"edit|{artifact_id}"),
-            InlineKeyboardButton("❌ Reject", callback_data=f"reject|{artifact_id}"),
+            InlineKeyboardButton("✅ Approve", callback_data=f"approve|{callback_token(artifact_id)}"),
+            InlineKeyboardButton("✏️ Edit", callback_data=f"edit|{callback_token(artifact_id)}"),
+            InlineKeyboardButton("❌ Reject", callback_data=f"reject|{callback_token(artifact_id)}"),
         ]
     ])
 
 
+# --- callback token map (Telegram caps callback_data at 64 bytes) ---
+# `approve|<workspace-relative path>` overflows that cap for anything nested: a campaign
+# artifact path like
+#   outbound/campaigns/2026-07-21-eu-telehealth-weightloss/post-mortem.md
+# is 68 characters, so the whole sendMessage came back HTTP 400 and Vadim got NO
+# notification at all — not a degraded one. Found 2026-09-02 while notifying a step-9
+# post-mortem. So the button carries a short token and the path is looked up here.
+CALLBACK_MAP = WORKSPACE_ROOT / ".callback-tokens.json"
+
+
+def callback_token(artifact_id: str) -> str:
+    """Short, stable token for an artifact path, recorded so the handler can resolve it."""
+    import hashlib
+    tok = hashlib.sha1(artifact_id.encode("utf-8")).hexdigest()[:12]
+    try:
+        data = json.loads(CALLBACK_MAP.read_text()) if CALLBACK_MAP.exists() else {}
+    except (OSError, ValueError):
+        data = {}
+    if data.get(tok) != artifact_id:
+        data[tok] = artifact_id
+        try:
+            CALLBACK_MAP.parent.mkdir(parents=True, exist_ok=True)
+            CALLBACK_MAP.write_text(json.dumps(data, indent=2, sort_keys=True))
+        except OSError:
+            pass
+    return tok
+
+
+def resolve_callback_token(tok: str) -> str:
+    """Token -> artifact path. A plain path is passed through, so old buttons still work."""
+    if "/" in tok or tok.endswith(".md"):
+        return tok
+    try:
+        return (json.loads(CALLBACK_MAP.read_text()) or {}).get(tok, tok)
+    except (OSError, ValueError):
+        return tok
+
+
 def find_artifact(artifact_id: str) -> Optional[pathlib.Path]:
-    """artifact_id is path relative to WORKSPACE_ROOT, e.g. 'social/2026-W17/linkedin-company/post-1.md'."""
+    """A workspace-relative path, or a short callback token standing for one."""
+    artifact_id = resolve_callback_token(artifact_id)
     p = (WORKSPACE_ROOT / artifact_id).resolve()
     if not p.is_relative_to(WORKSPACE_ROOT):
         return None
@@ -185,6 +224,7 @@ async def on_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await query.answer()
     action, artifact_id = query.data.split("|", 1)
     artifact = find_artifact(artifact_id)
+    artifact_id = resolve_callback_token(artifact_id)   # for the messages below
     if not artifact:
         await query.edit_message_text(f"⚠️ Artifact not found: `{artifact_id}`",
                                       parse_mode="Markdown")
