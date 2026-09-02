@@ -1,0 +1,31 @@
+company_name,website,hq_country,app_first,cash_pay_glp1,branded_mobile_app,branded_web_app,glp1_medications,subscription_model,coaching_behaviour_support,notes
+Juniper,https://www.myjuniper.co.uk/,England,Yes,Yes,Yes (iOS/Android),Yes,Wegovy/Mounjaro,Yes,Yes (health coaching + behaviour change),Digital weight loss programme with clinician-led care
+Second Nature,https://www.secondnature.io/,England,Yes,Yes,Yes (iOS/Android),Yes,Wegovy/Mounjaro,Yes,Yes (dietitian-led behaviour change),NHS partner since 2017; structured habit support
+Voy,https://www.joinvoy.com/,England,Yes,Yes,Yes (iOS/Android),Yes,Wegovy/Mounjaro/Saxenda,Yes,Yes (coaching + behaviour),Launched 2024 as Manual expansion; >100k members
+Numan,https://www.numan.com/,England,Yes,Yes,Yes (iOS/Android),Yes,Wegovy/Mounjaro/Saxenda,Yes,Yes (coaching),Founded 2018; men's health origin; $60M funding 2025
+Piko,https://www.piko.com/,England,Yes,Yes,Yes (iOS/Android),Yes,Wegovy/Mounjaro,Yes,Yes (deep health testing + community),Daily app support; weight loss guarantee
+CheqUp,https://chequp.com/,England,Yes,Yes,Yes (iOS/Android),Yes,Wegovy/Mounjaro/Foundayo,Yes,Yes (unlimited 1:1 health coaching),WeightWatchers UK partner; from £109/month
+NowPatient,https://nowpatient.com/,England,Yes,Yes,Yes (iOS/Android),Yes,Mounjaro/Wegovy/Saxenda/Foundayo,Yes,Yes (AI health + coaching),Prescriptions + telehealth + AI health
+Hims & Hers UK,https://www.forhers.co.uk/,England (US parent),Yes,Yes,Yes (iOS/Android),Yes,Wegovy/Mounjaro,Yes,Yes (personal plan + ongoing care),Launched UK Dec 2025; US public company
+ZAVA,https://www.zavamed.com/uk/,England,Yes,Yes,No dedicated app (web-first),Yes,Wegovy/Mounjaro/Nevolat/Foundayo,No (per prescription),Basic (clinical review only),Established 2010; no subscription model
+Simple Online Pharmacy,https://www.simpleonlinepharmacy.co.uk/,England,Yes,Yes,Yes (renu app iOS),Yes,Wegovy/Mounjaro/Saxenda/Orlistat,Yes (Subscribe & Save),Basic (pharmacist support),>1M UK patients; renu app for weight loss
+Asda Online Doctor,https://onlinedoctor.asda.com/uk/,England,Partial (web-first),Yes,No dedicated app,Yes,Wegovy/Mounjaro/Nevolat/Foundayo,No (per prescription),Basic (clinical review),Operated by ZAVA/Health Bridge Ltd
+Boots Online Doctor,https://onlinedoctor.boots.com/,England,Partial (web-first),Yes,Yes (Coach app by Liva),Yes,Wegovy/Mounjaro/Orlistat/Xenical,Yes (coaching app),Yes (Liva-powered coaching app),UK's largest pharmacy-led; Coach app for behaviour
+Pharmacy2U,https://www.pharmacy2u.co.uk/,England,Partial (web-first),Yes,No dedicated weight loss app,Yes,Wegovy/Mounjaro,Yes (Subscribe & Save),Basic (clinical review),CQC-registered; NHS prescription partner
+Medicspot,https://www.medicspot.co.uk/,England,Yes,Yes,Yes (iOS/Android),Yes,Wegovy/Mounjaro,Yes,Yes (behaviour change course + health coaches),Free nutrition course; transition support
+HeliosX / MedExpress,https://www.medexpress.co.uk/,England (Leamington Spa),Partial,Yes,No dedicated weight loss app,Yes,Wegovy/Mounjaro,Yes,Basic (clinical review),Parent of MedExpress; GLP-1 clinic revenue focus
+heySlim,https://www.heyslim.co.uk/,England,Yes,Yes,Yes (iOS/Android),Yes,Wegovy/Mounjaro,Yes,Yes (clinician-led + coaching),Doctor-led; 100% online consultation
+Jood Life,https://joodlife.com/,England,Yes,Yes,Yes (iOS/Android),Yes,Wegovy/Mounjaro/Ozempic,Yes,Yes (clinically guided + expert support),Fully remote private clinic; Trustpilot 4.4
+Live Well Weight Loss,https://livewellweightloss.co.uk/,England,Partial (web-first),Yes,No dedicated app,Yes,Wegovy/Mounjaro,Yes,Yes (pharmacist-led support),GPhC-registered; structured lifestyle programme
+Lotus Weight Loss,https://www.lotusweightloss.co.uk/,Wales (UK),Yes,Yes,Yes (Lotus app),Yes,Wegovy/Mounjaro,Yes,Yes (app + ongoing support),Wales-born family-run; Lotus app for support
+Cuva Health,https://cuvahealth.co.uk/,England,Partial (web-first),Yes,No dedicated app,Yes,Wegovy/Mounjaro,Yes (subscription discount),Basic (treatment timeline),UK-registered pharmacy; treatment timeline tracking
+Chemist4U,https://www.chemist-4-u.com/,England,Partial (web-first),Yes,Yes (Chemist4U app for NHS Rx),Yes,Wegovy/Mounjaro,Yes,Basic (pharmacist support),App mainly for NHS prescriptions; GLP-1 via web
+Superdrug Online Doctor,https://onlinedoctor.superdrug.com/,England,Partial (web-first),Yes,No dedicated app,Yes,Wegovy/Mounjaro/Foundayo/Nevolat,No (per prescription),Basic (clinical review),High street brand; free delivery/Click & Collect
+LloydsPharmacy Online Doctor,https://onlinedoctor.lloydspharmacy.com/,England,Partial (web-first),Yes,No dedicated app,Yes,Wegovy/Mounjaro/Orlistat/Xenical,No (per prescription),Basic (clinical review),CQC-registered; chief medical officer Kieran Seyan
+Dr Frank's,https://drfranks.co.uk/,England,Yes,Yes,Yes (iOS/Android),Yes,Mounjaro/Wegovy,Yes,Yes (clinician-led + pathways),Pathways programme; MHRA regulated
+PillSorted,https://www.pillsorted.com/,England,Partial (web-first),Yes,No dedicated app,Yes,Wegovy/Mounjaro/Saxenda,Yes,Basic (pharmacist support),Online pharmacy with weight loss focus
+The London Obesity Clinic,https://www.thelondonobesityclinic.com/,England,Partial (web-first),Yes,No dedicated app,Yes,Mounjaro/Wegovy,Yes,Yes (specialist clinician support),Specialist obesity clinic; Simplyweight affiliation
+Easy Pharmacy,https://theeasypharmacy.co.uk/,England,Partial (web-first),Yes,No dedicated app,Yes,Wegovy/Mounjaro,No (no subscription),Basic (pharmacist review),From £130/month; cancel anytime
+Farmeci,https://farmeci.com/,England,Partial (web-first),Yes,No dedicated app,Yes,Wegovy/Mounjaro,Yes,Basic (digital health coaching),UK online pharmacy & telehealth service
+WeightMatters,https://weightmatters.co.uk/,England,Partial (web-first),Yes,No dedicated app,Yes,Wegovy/Mounjaro/Ozempic,Yes,Yes (GLP-1 wraparound support + psychology),Psychology-focused; health psychologist support
+Oviva,https://oviva.com/uk/en/,England,Yes,Yes (NHS + private),Yes (Oviva app),Yes,Wegovy (NHS)/Mounjaro (limited),Yes (NHS tier 3),Yes (specialist dietitian + app),NHS Tier 3 partner; >300k patients; app-based

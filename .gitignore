@@ -53,3 +53,7 @@ dist/
 
 # scratch dirs used by ad-hoc test harnesses
 **/.tmp/
+
+# runtime state written by telegram-bot/notify.py: maps a short callback token to an
+# artifact path, because Telegram caps callback_data at 64 bytes. Local, regenerated.
+marketing_vb/workspace/.callback-tokens.json

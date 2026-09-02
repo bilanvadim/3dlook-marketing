@@ -1,0 +1,1433 @@
+{
+  "campaign": "2026-07-23-israel-telehealth",
+  "closely_campaign_ids": [
+    "138170"
+  ],
+  "pulled_at": "2026-09-02T22:10:30Z",
+  "source": "closely.io private app API, /v1/drill/campaigns/{id}/*",
+  "note": "Denominators come from Closely's own event counters. Do NOT use the `sent` column of outbound-registry status — it counts import rows, not sends, and is wrong in BOTH directions: it overstated 2026-07-31-uk by 307 vs 258 and understated 2026-07-23-israel by 190 vs 608. Rank campaigns on `replies_per_accepted_pct`, not on `reply_rate_on_messages_sent_pct` — the latter divides by send events, so an unfinished campaign that has not yet sent its Message 2 scores higher for being less complete. `messages_per_accepted` shows how far each one got.",
+  "totals": {
+    "contacts": 130,
+    "connection_sent": 127,
+    "connection_accepted": 38,
+    "message_sent": 73,
+    "message_replied": 4,
+    "finished_with_reply": 4,
+    "finished_no_reply": 123,
+    "profile_visit": 224
+  },
+  "rates": {
+    "acceptance_rate_pct": 29.9,
+    "replies_per_accepted_pct": 10.5,
+    "reply_rate_on_messages_sent_pct": 5.5,
+    "messages_per_accepted": 1.92,
+    "reply_rate_on_invites_sent_pct": 3.1
+  },
+  "raw_per_campaign": {
+    "138170": {
+      "events_summary": {
+        "connection_sent": {
+          "id": 1,
+          "count": 127
+        },
+        "connection_sent_error": {
+          "id": 2,
+          "count": 2
+        },
+        "connection_accepted": {
+          "id": 3,
+          "count": 38
+        },
+        "message_sent": {
+          "id": 4,
+          "count": 73
+        },
+        "message_error": {
+          "id": 5,
+          "count": 0
+        },
+        "message_replied": {
+          "id": 6,
+          "count": 4
+        },
+        "skills_endorsed": {
+          "id": 11,
+          "count": 0
+        },
+        "skills_endorsed_error": {
+          "id": 12,
+          "count": 0
+        },
+        "posts_liked": {
+          "id": 9,
+          "count": 29
+        },
+        "posts_liked_error": {
+          "id": 10,
+          "count": 0
+        },
+        "profile_visit": {
+          "id": 7,
+          "count": 224
+        },
+        "profile_visit_error": {
+          "id": 8,
+          "count": 1
+        },
+        "email_found": {
+          "id": 15,
+          "count": 0
+        },
+        "email_found_error": {
+          "id": 16,
+          "count": 0
+        },
+        "email_sent": {
+          "id": 13,
+          "count": 0
+        },
+        "email_sent_error": {
+          "id": 14,
+          "count": 0
+        },
+        "email_replied": {
+          "id": 23,
+          "count": 0
+        },
+        "email_bounced": {
+          "id": 17,
+          "count": 0
+        },
+        "email_opened": {
+          "id": 18,
+          "count": 0
+        },
+        "email_clicked": {
+          "id": 19,
+          "count": 0
+        },
+        "email_unsubscribed": {
+          "id": 20,
+          "count": 0
+        },
+        "email_auto_replied": {
+          "id": 21,
+          "count": 0
+        },
+        "email_no_reply": {
+          "id": 22,
+          "count": 0
+        },
+        "posts_like_not_found": {
+          "id": 24,
+          "count": 7
+        },
+        "skills_endorse_not_found": {
+          "id": 25,
+          "count": 0
+        },
+        "skills_endorse_not_allowed": {
+          "id": 26,
+          "count": 0
+        }
+      },
+      "contacts_summary": {
+        "total": 130,
+        "active": 0,
+        "finished_reply": 4,
+        "finished_no_reply": 123,
+        "finished_error": 3
+      },
+      "steps": {
+        "total_contacts": 130,
+        "steps": [
+          {
+            "step_id": "0086c77b-67d5-4dce-9b04-9cf32ac9d9b9",
+            "step_index": null,
+            "prev_step_id": "32d9a82a-eec5-4b3d-96e3-e726ee933ff2",
+            "step_type": "post_reaction",
+            "delay_days": 2,
+            "delay_hours": 0,
+            "is_enabled": true,
+            "stats": {
+              "connection_sent": 0,
+              "connection_sent_error": 0,
+              "connection_accepted": 0,
+              "message_sent": 0,
+              "message_error": 0,
+              "message_replied": 0,
+              "skills_endorsed": 0,
+              "skills_endorsed_error": 0,
+              "posts_liked": 7,
+              "posts_liked_error": 0,
+              "profile_visit": 0,
+              "profile_visit_error": 0,
+              "email_found": 0,
+              "email_found_error": 0,
+              "email_sent": 0,
+              "email_sent_error": 0,
+              "email_replied": 0,
+              "email_bounced": 0,
+              "email_opened": 0,
+              "email_clicked": 0,
+              "email_unsubscribed": 0,
+              "email_auto_replied": 0,
+              "email_no_reply": 0
+            },
+            "payload": [],
+            "stage_data": {
+              "contact_count": 130,
+              "stage": "pending",
+              "finished_count": 7,
+              "in_progress_count": 0,
+              "cant_do_count": 0
+            },
+            "next_step_id": "1c27a213-dfb9-45e5-bb6e-b7ec40d73740"
+          },
+          {
+            "step_id": "0483ce0d-ff00-45c2-bff4-7b4531489b10",
+            "step_index": null,
+            "prev_step_id": "806c0c7f-ace1-4fba-82cf-18e3168a2946",
+            "step_type": "post_reaction",
+            "delay_days": 2,
+            "delay_hours": 0,
+            "is_enabled": true,
+            "stats": {
+              "connection_sent": 0,
+              "connection_sent_error": 0,
+              "connection_accepted": 0,
+              "message_sent": 0,
+              "message_error": 0,
+              "message_replied": 0,
+              "skills_endorsed": 0,
+              "skills_endorsed_error": 0,
+              "posts_liked": 3,
+              "posts_liked_error": 4,
+              "profile_visit": 0,
+              "profile_visit_error": 0,
+              "email_found": 0,
+              "email_found_error": 0,
+              "email_sent": 0,
+              "email_sent_error": 0,
+              "email_replied": 0,
+              "email_bounced": 0,
+              "email_opened": 0,
+              "email_clicked": 0,
+              "email_unsubscribed": 0,
+              "email_auto_replied": 0,
+              "email_no_reply": 0
+            },
+            "payload": [],
+            "stage_data": {
+              "contact_count": 130,
+              "stage": "pending",
+              "finished_count": 3,
+              "in_progress_count": 0,
+              "cant_do_count": 4
+            },
+            "next_step_id": "dba0ae97-ff45-4201-8d4c-8bf4dc73572c"
+          },
+          {
+            "step_id": "11087668-90a9-43c4-be53-8af1375a72c5",
+            "step_index": null,
+            "prev_step_id": "c7234512-407c-41b7-b8ab-98206007db70",
+            "step_type": "profile_view",
+            "delay_days": 3,
+            "delay_hours": 0,
+            "is_enabled": true,
+            "stats": {
+              "connection_sent": 0,
+              "connection_sent_error": 0,
+              "connection_accepted": 0,
+              "message_sent": 0,
+              "message_error": 0,
+              "message_replied": 0,
+              "skills_endorsed": 0,
+              "skills_endorsed_error": 0,
+              "posts_liked": 0,
+              "posts_liked_error": 0,
+              "profile_visit": 95,
+              "profile_visit_error": 0,
+              "email_found": 0,
+              "email_found_error": 0,
+              "email_sent": 0,
+              "email_sent_error": 0,
+              "email_replied": 0,
+              "email_bounced": 0,
+              "email_opened": 0,
+              "email_clicked": 0,
+              "email_unsubscribed": 0,
+              "email_auto_replied": 0,
+              "email_no_reply": 0
+            },
+            "payload": [],
+            "stage_data": {
+              "contact_count": 130,
+              "stage": "pending",
+              "finished_count": 95,
+              "in_progress_count": 0,
+              "cant_do_count": 0
+            },
+            "next_step_id": "ff6bb1da-ae9a-40aa-ba2e-97ceeb952146"
+          },
+          {
+            "step_id": "1c27a213-dfb9-45e5-bb6e-b7ec40d73740",
+            "step_index": null,
+            "prev_step_id": "0086c77b-67d5-4dce-9b04-9cf32ac9d9b9",
+            "step_type": "message",
+            "delay_days": 3,
+            "delay_hours": 0,
+            "is_enabled": true,
+            "stats": {
+              "connection_sent": 0,
+              "connection_sent_error": 0,
+              "connection_accepted": 0,
+              "message_sent": 7,
+              "message_error": 0,
+              "message_replied": 0,
+              "skills_endorsed": 0,
+              "skills_endorsed_error": 0,
+              "posts_liked": 0,
+              "posts_liked_error": 0,
+              "profile_visit": 0,
+              "profile_visit_error": 0,
+              "email_found": 0,
+              "email_found_error": 0,
+              "email_sent": 0,
+              "email_sent_error": 0,
+              "email_replied": 0,
+              "email_bounced": 0,
+              "email_opened": 0,
+              "email_clicked": 0,
+              "email_unsubscribed": 0,
+              "email_auto_replied": 0,
+              "email_no_reply": 0
+            },
+            "payload": {
+              "message": "{custom_6712}"
+            },
+            "stage_data": {
+              "contact_count": 0,
+              "stage": "pending",
+              "finished_count": 7,
+              "in_progress_count": 0,
+              "cant_do_count": 0
+            },
+            "next_step_id": null
+          },
+          {
+            "step_id": "234c4001-790c-4295-89f3-942b485db12b",
+            "step_index": null,
+            "prev_step_id": "f1c68e1e-57f3-4197-8d40-f2bf63b693ce",
+            "step_type": "message",
+            "delay_days": 3,
+            "delay_hours": 0,
+            "is_enabled": true,
+            "stats": {
+              "connection_sent": 0,
+              "connection_sent_error": 0,
+              "connection_accepted": 0,
+              "message_sent": 22,
+              "message_error": 0,
+              "message_replied": 1,
+              "skills_endorsed": 0,
+              "skills_endorsed_error": 0,
+              "posts_liked": 0,
+              "posts_liked_error": 0,
+              "profile_visit": 0,
+              "profile_visit_error": 0,
+              "email_found": 0,
+              "email_found_error": 0,
+              "email_sent": 0,
+              "email_sent_error": 0,
+              "email_replied": 0,
+              "email_bounced": 0,
+              "email_opened": 0,
+              "email_clicked": 0,
+              "email_unsubscribed": 0,
+              "email_auto_replied": 0,
+              "email_no_reply": 0
+            },
+            "payload": {
+              "message": "{custom_6712}"
+            },
+            "stage_data": {
+              "contact_count": 0,
+              "stage": "pending",
+              "finished_count": 22,
+              "in_progress_count": 0,
+              "cant_do_count": 0
+            },
+            "next_step_id": null
+          },
+          {
+            "step_id": "32d9a82a-eec5-4b3d-96e3-e726ee933ff2",
+            "step_index": null,
+            "prev_step_id": "c7234512-407c-41b7-b8ab-98206007db70",
+            "step_type": "message",
+            "delay_days": 0,
+            "delay_hours": 0,
+            "is_enabled": true,
+            "stats": {
+              "connection_sent": 0,
+              "connection_sent_error": 0,
+              "connection_accepted": 0,
+              "message_sent": 8,
+              "message_error": 0,
+              "message_replied": 1,
+              "skills_endorsed": 0,
+              "skills_endorsed_error": 0,
+              "posts_liked": 0,
+              "posts_liked_error": 0,
+              "profile_visit": 0,
+              "profile_visit_error": 0,
+              "email_found": 0,
+              "email_found_error": 0,
+              "email_sent": 0,
+              "email_sent_error": 0,
+              "email_replied": 0,
+              "email_bounced": 0,
+              "email_opened": 0,
+              "email_clicked": 0,
+              "email_unsubscribed": 0,
+              "email_auto_replied": 0,
+              "email_no_reply": 0
+            },
+            "payload": {
+              "message": "{custom_6711}"
+            },
+            "stage_data": {
+              "contact_count": 0,
+              "stage": "pending",
+              "finished_count": 8,
+              "in_progress_count": 0,
+              "cant_do_count": 0
+            },
+            "next_step_id": "0086c77b-67d5-4dce-9b04-9cf32ac9d9b9"
+          },
+          {
+            "step_id": "4acfa04f-aaf9-486e-bc77-8ce07f4cfb4b",
+            "step_index": null,
+            "prev_step_id": "984b85ca-b2cb-4f0e-b7e4-d201cf5b8cb9",
+            "step_type": "connection_message",
+            "delay_days": 1,
+            "delay_hours": 0,
+            "is_enabled": true,
+            "stats": {
+              "connection_sent": 127,
+              "connection_sent_error": 2,
+              "connection_accepted": 38,
+              "message_sent": 0,
+              "message_error": 0,
+              "message_replied": 0,
+              "skills_endorsed": 0,
+              "skills_endorsed_error": 0,
+              "posts_liked": 0,
+              "posts_liked_error": 0,
+              "profile_visit": 0,
+              "profile_visit_error": 0,
+              "email_found": 0,
+              "email_found_error": 0,
+              "email_sent": 0,
+              "email_sent_error": 0,
+              "email_replied": 0,
+              "email_bounced": 0,
+              "email_opened": 0,
+              "email_clicked": 0,
+              "email_unsubscribed": 0,
+              "email_auto_replied": 0,
+              "email_no_reply": 0
+            },
+            "payload": {
+              "connection_message": ""
+            },
+            "stage_data": {
+              "contact_count": 128,
+              "stage": "finished",
+              "finished_count": 127,
+              "in_progress_count": 0,
+              "cant_do_count": 2
+            },
+            "next_step_id": "972db33b-91e0-48c9-8029-788750a9f6b8"
+          },
+          {
+            "step_id": "5024a0c8-6fd7-4a22-81ab-b40fe479ba84",
+            "step_index": null,
+            "prev_step_id": "972db33b-91e0-48c9-8029-788750a9f6b8",
+            "step_type": "message",
+            "delay_days": 0,
+            "delay_hours": 0,
+            "is_enabled": true,
+            "stats": {
+              "connection_sent": 0,
+              "connection_sent_error": 0,
+              "connection_accepted": 0,
+              "message_sent": 23,
+              "message_error": 0,
+              "message_replied": 1,
+              "skills_endorsed": 0,
+              "skills_endorsed_error": 0,
+              "posts_liked": 0,
+              "posts_liked_error": 0,
+              "profile_visit": 0,
+              "profile_visit_error": 0,
+              "email_found": 0,
+              "email_found_error": 0,
+              "email_sent": 0,
+              "email_sent_error": 0,
+              "email_replied": 0,
+              "email_bounced": 0,
+              "email_opened": 0,
+              "email_clicked": 0,
+              "email_unsubscribed": 0,
+              "email_auto_replied": 0,
+              "email_no_reply": 0
+            },
+            "payload": {
+              "message": "{custom_6711}"
+            },
+            "stage_data": {
+              "contact_count": 35,
+              "stage": "pending",
+              "finished_count": 23,
+              "in_progress_count": 0,
+              "cant_do_count": 0
+            },
+            "next_step_id": "f1c68e1e-57f3-4197-8d40-f2bf63b693ce"
+          },
+          {
+            "step_id": "6e69e9b1-be8e-4032-afb4-9ec1eed43760",
+            "step_index": null,
+            "prev_step_id": "d74653b1-c009-4f31-83e6-f8cf00f00d21",
+            "step_type": "post_reaction",
+            "delay_days": 2,
+            "delay_hours": 0,
+            "is_enabled": true,
+            "stats": {
+              "connection_sent": 0,
+              "connection_sent_error": 0,
+              "connection_accepted": 0,
+              "message_sent": 0,
+              "message_error": 0,
+              "message_replied": 0,
+              "skills_endorsed": 0,
+              "skills_endorsed_error": 0,
+              "posts_liked": 0,
+              "posts_liked_error": 0,
+              "profile_visit": 0,
+              "profile_visit_error": 0,
+              "email_found": 0,
+              "email_found_error": 0,
+              "email_sent": 0,
+              "email_sent_error": 0,
+              "email_replied": 0,
+              "email_bounced": 0,
+              "email_opened": 0,
+              "email_clicked": 0,
+              "email_unsubscribed": 0,
+              "email_auto_replied": 0,
+              "email_no_reply": 0
+            },
+            "payload": [],
+            "stage_data": {
+              "contact_count": 127,
+              "stage": "pending",
+              "finished_count": 0,
+              "in_progress_count": 0,
+              "cant_do_count": 0
+            },
+            "next_step_id": "e206bf9d-7497-4be6-9cce-6480d3ce4323"
+          },
+          {
+            "step_id": "806c0c7f-ace1-4fba-82cf-18e3168a2946",
+            "step_index": null,
+            "prev_step_id": "ff6bb1da-ae9a-40aa-ba2e-97ceeb952146",
+            "step_type": "message",
+            "delay_days": 0,
+            "delay_hours": 0,
+            "is_enabled": true,
+            "stats": {
+              "connection_sent": 0,
+              "connection_sent_error": 0,
+              "connection_accepted": 0,
+              "message_sent": 7,
+              "message_error": 0,
+              "message_replied": 1,
+              "skills_endorsed": 0,
+              "skills_endorsed_error": 0,
+              "posts_liked": 0,
+              "posts_liked_error": 0,
+              "profile_visit": 0,
+              "profile_visit_error": 0,
+              "email_found": 0,
+              "email_found_error": 0,
+              "email_sent": 0,
+              "email_sent_error": 0,
+              "email_replied": 0,
+              "email_bounced": 0,
+              "email_opened": 0,
+              "email_clicked": 0,
+              "email_unsubscribed": 0,
+              "email_auto_replied": 0,
+              "email_no_reply": 0
+            },
+            "payload": {
+              "message": "{custom_6711}"
+            },
+            "stage_data": {
+              "contact_count": 34,
+              "stage": "pending",
+              "finished_count": 7,
+              "in_progress_count": 0,
+              "cant_do_count": 0
+            },
+            "next_step_id": "0483ce0d-ff00-45c2-bff4-7b4531489b10"
+          },
+          {
+            "step_id": "972db33b-91e0-48c9-8029-788750a9f6b8",
+            "step_index": null,
+            "prev_step_id": "4acfa04f-aaf9-486e-bc77-8ce07f4cfb4b",
+            "step_type": "condition",
+            "delay_days": 1,
+            "delay_hours": 0,
+            "is_enabled": true,
+            "stats": {
+              "connection_sent": 0,
+              "connection_sent_error": 0,
+              "connection_accepted": 0,
+              "message_sent": 0,
+              "message_error": 0,
+              "message_replied": 0,
+              "skills_endorsed": 0,
+              "skills_endorsed_error": 0,
+              "posts_liked": 0,
+              "posts_liked_error": 0,
+              "profile_visit": 0,
+              "profile_visit_error": 0,
+              "email_found": 0,
+              "email_found_error": 0,
+              "email_sent": 0,
+              "email_sent_error": 0,
+              "email_replied": 0,
+              "email_bounced": 0,
+              "email_opened": 0,
+              "email_clicked": 0,
+              "email_unsubscribed": 0,
+              "email_auto_replied": 0,
+              "email_no_reply": 0
+            },
+            "payload": [],
+            "stage_data": {
+              "contact_count": 0,
+              "stage": "active",
+              "finished_count": 0,
+              "in_progress_count": 126,
+              "cant_do_count": 0
+            },
+            "yes_step_id": "5024a0c8-6fd7-4a22-81ab-b40fe479ba84",
+            "no_step_id": "c7234512-407c-41b7-b8ab-98206007db70",
+            "condition_type": "if_connected",
+            "yes_step_result_count": 23,
+            "no_step_result_count": 103
+          },
+          {
+            "step_id": "984b85ca-b2cb-4f0e-b7e4-d201cf5b8cb9",
+            "step_index": null,
+            "prev_step_id": null,
+            "step_type": "profile_view",
+            "delay_days": null,
+            "delay_hours": null,
+            "is_enabled": true,
+            "stats": {
+              "connection_sent": 0,
+              "connection_sent_error": 0,
+              "connection_accepted": 0,
+              "message_sent": 0,
+              "message_error": 0,
+              "message_replied": 0,
+              "skills_endorsed": 0,
+              "skills_endorsed_error": 0,
+              "posts_liked": 0,
+              "posts_liked_error": 0,
+              "profile_visit": 129,
+              "profile_visit_error": 1,
+              "email_found": 0,
+              "email_found_error": 0,
+              "email_sent": 0,
+              "email_sent_error": 0,
+              "email_replied": 0,
+              "email_bounced": 0,
+              "email_opened": 0,
+              "email_clicked": 0,
+              "email_unsubscribed": 0,
+              "email_auto_replied": 0,
+              "email_no_reply": 0
+            },
+            "payload": [],
+            "stage_data": {
+              "contact_count": 125,
+              "stage": "finished",
+              "finished_count": 129,
+              "in_progress_count": 0,
+              "cant_do_count": 1
+            },
+            "next_step_id": "4acfa04f-aaf9-486e-bc77-8ce07f4cfb4b"
+          },
+          {
+            "step_id": "c7234512-407c-41b7-b8ab-98206007db70",
+            "step_index": null,
+            "prev_step_id": "972db33b-91e0-48c9-8029-788750a9f6b8",
+            "step_type": "condition",
+            "delay_days": 4,
+            "delay_hours": 0,
+            "is_enabled": true,
+            "stats": {
+              "connection_sent": 0,
+              "connection_sent_error": 0,
+              "connection_accepted": 0,
+              "message_sent": 0,
+              "message_error": 0,
+              "message_replied": 0,
+              "skills_endorsed": 0,
+              "skills_endorsed_error": 0,
+              "posts_liked": 0,
+              "posts_liked_error": 0,
+              "profile_visit": 0,
+              "profile_visit_error": 0,
+              "email_found": 0,
+              "email_found_error": 0,
+              "email_sent": 0,
+              "email_sent_error": 0,
+              "email_replied": 0,
+              "email_bounced": 0,
+              "email_opened": 0,
+              "email_clicked": 0,
+              "email_unsubscribed": 0,
+              "email_auto_replied": 0,
+              "email_no_reply": 0
+            },
+            "payload": [],
+            "stage_data": {
+              "contact_count": 0,
+              "stage": "active",
+              "finished_count": 0,
+              "in_progress_count": 103,
+              "cant_do_count": 0
+            },
+            "yes_step_id": "32d9a82a-eec5-4b3d-96e3-e726ee933ff2",
+            "no_step_id": "11087668-90a9-43c4-be53-8af1375a72c5",
+            "condition_type": "if_connected",
+            "yes_step_result_count": 8,
+            "no_step_result_count": 95
+          },
+          {
+            "step_id": "d74653b1-c009-4f31-83e6-f8cf00f00d21",
+            "step_index": null,
+            "prev_step_id": "ee5764a6-726b-4572-ad58-91136e4c5400",
+            "step_type": "message",
+            "delay_days": 0,
+            "delay_hours": 0,
+            "is_enabled": true,
+            "stats": {
+              "connection_sent": 0,
+              "connection_sent_error": 0,
+              "connection_accepted": 0,
+              "message_sent": 0,
+              "message_error": 0,
+              "message_replied": 0,
+              "skills_endorsed": 0,
+              "skills_endorsed_error": 0,
+              "posts_liked": 0,
+              "posts_liked_error": 0,
+              "profile_visit": 0,
+              "profile_visit_error": 0,
+              "email_found": 0,
+              "email_found_error": 0,
+              "email_sent": 0,
+              "email_sent_error": 0,
+              "email_replied": 0,
+              "email_bounced": 0,
+              "email_opened": 0,
+              "email_clicked": 0,
+              "email_unsubscribed": 0,
+              "email_auto_replied": 0,
+              "email_no_reply": 0
+            },
+            "payload": {
+              "message": "{custom_6711}"
+            },
+            "stage_data": {
+              "contact_count": 34,
+              "stage": "pending",
+              "finished_count": 0,
+              "in_progress_count": 0,
+              "cant_do_count": 0
+            },
+            "next_step_id": "6e69e9b1-be8e-4032-afb4-9ec1eed43760"
+          },
+          {
+            "step_id": "dba0ae97-ff45-4201-8d4c-8bf4dc73572c",
+            "step_index": null,
+            "prev_step_id": "0483ce0d-ff00-45c2-bff4-7b4531489b10",
+            "step_type": "message",
+            "delay_days": 3,
+            "delay_hours": 0,
+            "is_enabled": true,
+            "stats": {
+              "connection_sent": 0,
+              "connection_sent_error": 0,
+              "connection_accepted": 0,
+              "message_sent": 6,
+              "message_error": 0,
+              "message_replied": 0,
+              "skills_endorsed": 0,
+              "skills_endorsed_error": 0,
+              "posts_liked": 0,
+              "posts_liked_error": 0,
+              "profile_visit": 0,
+              "profile_visit_error": 0,
+              "email_found": 0,
+              "email_found_error": 0,
+              "email_sent": 0,
+              "email_sent_error": 0,
+              "email_replied": 0,
+              "email_bounced": 0,
+              "email_opened": 0,
+              "email_clicked": 0,
+              "email_unsubscribed": 0,
+              "email_auto_replied": 0,
+              "email_no_reply": 0
+            },
+            "payload": {
+              "message": "{custom_6712}"
+            },
+            "stage_data": {
+              "contact_count": 34,
+              "stage": "pending",
+              "finished_count": 6,
+              "in_progress_count": 0,
+              "cant_do_count": 0
+            },
+            "next_step_id": null
+          },
+          {
+            "step_id": "e206bf9d-7497-4be6-9cce-6480d3ce4323",
+            "step_index": null,
+            "prev_step_id": "6e69e9b1-be8e-4032-afb4-9ec1eed43760",
+            "step_type": "message",
+            "delay_days": 3,
+            "delay_hours": 0,
+            "is_enabled": true,
+            "stats": {
+              "connection_sent": 0,
+              "connection_sent_error": 0,
+              "connection_accepted": 0,
+              "message_sent": 0,
+              "message_error": 0,
+              "message_replied": 0,
+              "skills_endorsed": 0,
+              "skills_endorsed_error": 0,
+              "posts_liked": 0,
+              "posts_liked_error": 0,
+              "profile_visit": 0,
+              "profile_visit_error": 0,
+              "email_found": 0,
+              "email_found_error": 0,
+              "email_sent": 0,
+              "email_sent_error": 0,
+              "email_replied": 0,
+              "email_bounced": 0,
+              "email_opened": 0,
+              "email_clicked": 0,
+              "email_unsubscribed": 0,
+              "email_auto_replied": 0,
+              "email_no_reply": 0
+            },
+            "payload": {
+              "message": "{custom_6712}"
+            },
+            "stage_data": {
+              "contact_count": 34,
+              "stage": "pending",
+              "finished_count": 0,
+              "in_progress_count": 0,
+              "cant_do_count": 0
+            },
+            "next_step_id": null
+          },
+          {
+            "step_id": "ee5764a6-726b-4572-ad58-91136e4c5400",
+            "step_index": null,
+            "prev_step_id": "ff6bb1da-ae9a-40aa-ba2e-97ceeb952146",
+            "step_type": "condition",
+            "delay_days": 6,
+            "delay_hours": 0,
+            "is_enabled": true,
+            "stats": {
+              "connection_sent": 0,
+              "connection_sent_error": 0,
+              "connection_accepted": 0,
+              "message_sent": 0,
+              "message_error": 0,
+              "message_replied": 0,
+              "skills_endorsed": 0,
+              "skills_endorsed_error": 0,
+              "posts_liked": 0,
+              "posts_liked_error": 0,
+              "profile_visit": 0,
+              "profile_visit_error": 0,
+              "email_found": 0,
+              "email_found_error": 0,
+              "email_sent": 0,
+              "email_sent_error": 0,
+              "email_replied": 0,
+              "email_bounced": 0,
+              "email_opened": 0,
+              "email_clicked": 0,
+              "email_unsubscribed": 0,
+              "email_auto_replied": 0,
+              "email_no_reply": 0
+            },
+            "payload": [],
+            "stage_data": {
+              "contact_count": 0,
+              "stage": "active",
+              "finished_count": 0,
+              "in_progress_count": 88,
+              "cant_do_count": 0
+            },
+            "yes_step_id": "d74653b1-c009-4f31-83e6-f8cf00f00d21",
+            "no_step_id": null,
+            "condition_type": "if_connected",
+            "yes_step_result_count": 0,
+            "no_step_result_count": 88
+          },
+          {
+            "step_id": "f1c68e1e-57f3-4197-8d40-f2bf63b693ce",
+            "step_index": null,
+            "prev_step_id": "5024a0c8-6fd7-4a22-81ab-b40fe479ba84",
+            "step_type": "post_reaction",
+            "delay_days": 2,
+            "delay_hours": 0,
+            "is_enabled": true,
+            "stats": {
+              "connection_sent": 0,
+              "connection_sent_error": 0,
+              "connection_accepted": 0,
+              "message_sent": 0,
+              "message_error": 0,
+              "message_replied": 0,
+              "skills_endorsed": 0,
+              "skills_endorsed_error": 0,
+              "posts_liked": 19,
+              "posts_liked_error": 3,
+              "profile_visit": 0,
+              "profile_visit_error": 0,
+              "email_found": 0,
+              "email_found_error": 0,
+              "email_sent": 0,
+              "email_sent_error": 0,
+              "email_replied": 0,
+              "email_bounced": 0,
+              "email_opened": 0,
+              "email_clicked": 0,
+              "email_unsubscribed": 0,
+              "email_auto_replied": 0,
+              "email_no_reply": 0
+            },
+            "payload": [],
+            "stage_data": {
+              "contact_count": 126,
+              "stage": "pending",
+              "finished_count": 19,
+              "in_progress_count": 0,
+              "cant_do_count": 3
+            },
+            "next_step_id": "234c4001-790c-4295-89f3-942b485db12b"
+          },
+          {
+            "step_id": "ff6bb1da-ae9a-40aa-ba2e-97ceeb952146",
+            "step_index": null,
+            "prev_step_id": "11087668-90a9-43c4-be53-8af1375a72c5",
+            "step_type": "condition",
+            "delay_days": 4,
+            "delay_hours": 0,
+            "is_enabled": true,
+            "stats": {
+              "connection_sent": 0,
+              "connection_sent_error": 0,
+              "connection_accepted": 0,
+              "message_sent": 0,
+              "message_error": 0,
+              "message_replied": 0,
+              "skills_endorsed": 0,
+              "skills_endorsed_error": 0,
+              "posts_liked": 0,
+              "posts_liked_error": 0,
+              "profile_visit": 0,
+              "profile_visit_error": 0,
+              "email_found": 0,
+              "email_found_error": 0,
+              "email_sent": 0,
+              "email_sent_error": 0,
+              "email_replied": 0,
+              "email_bounced": 0,
+              "email_opened": 0,
+              "email_clicked": 0,
+              "email_unsubscribed": 0,
+              "email_auto_replied": 0,
+              "email_no_reply": 0
+            },
+            "payload": [],
+            "stage_data": {
+              "contact_count": 0,
+              "stage": "active",
+              "finished_count": 0,
+              "in_progress_count": 95,
+              "cant_do_count": 0
+            },
+            "yes_step_id": "806c0c7f-ace1-4fba-82cf-18e3168a2946",
+            "no_step_id": "ee5764a6-726b-4572-ad58-91136e4c5400",
+            "condition_type": "if_connected",
+            "yes_step_result_count": 7,
+            "no_step_result_count": 88
+          }
+        ]
+      },
+      "campaign": {
+        "id": 138170,
+        "name": " Israel telehealth, 24/07 test from agents ",
+        "user_id": 46336,
+        "account_id": 25040,
+        "email_account_id": null,
+        "status": "finished",
+        "contact_source": [
+          {
+            "id": "e50d1dd9-872e-4ebd-90eb-62083d959df4",
+            "type": "CsvContactsSource",
+            "is_applied": true,
+            "data": {
+              "error": null,
+              "table": {
+                "title": [
+                  "Director of Cardiac rehabilitation center",
+                  "Occupational Health - Director of Nursing",
+                  "Director of Demand Gen",
+                  "Chief Executive Officer",
+                  "OCIO Director, Head of IT Projects department"
+                ],
+                "company": [
+                  "Clalit Health Services",
+                  "Clalit Health Services",
+                  "TytoCare",
+                  "Maccabi Health care Services",
+                  "Meuhedet Health Services - מאוחדת"
+                ],
+                "last_name": [
+                  "Marcuschamer",
+                  "Braverman",
+                  "Kegen",
+                  "Dadon",
+                  "Antman"
+                ],
+                "message_1": [
+                  "Hi Ilan,\n\nCircling back - curious how cardiac rehab programs at Clalit are handling body-measurement tracking between sessions. Members need consistent anthropometrics over time, especially for weight-related cardiac risk, and remote options are still limited in most rehab workflows.\n\nAt 3DLOOK, we built FitXpress: a mobile body scanning layer. Two smartphone photos give members 80+ body measurements and composition, verified and HIPAA-compliant, dropping into the patient record.\n\nMight be worth a quick chat?\nKateryna",
+                  "Hi Ariel,\n\nQuick note - on how occupational health screening handles body-measurement consistency across nurses and sites. Manual measurements introduce variability between staff, and a standardized remote capture tool could reduce that gap for pre-employment and periodic health assessments.\n\nFitXpress, our product at 3DLOOK, does exactly this: mobile body scanning from two phone photos. Members get consistent measurements and body composition, HIPAA-compliant, with audit-ready data.\n\nMight be worth a quick chat?\nKateryna",
+                  "Hi Michael,\n\nCaught my eye - how TytoCare's demand gen positions the remote exam kit's clinical value. Adding a body-scanning module to the narrative could open up new buyer conversations in weight management, bariatrics, and chronic care where objective body data is a missing piece.\n\nAt 3DLOOK, we built FitXpress: a mobile body scanning layer. Two smartphone photos give members 80+ body measurements and composition, verified and HIPAA-compliant, dropping into the patient record.\n\nWorth a quick chat to explore?\nKateryna",
+                  "Hi Sigal,\n\nWanted to reach out - about how Maccabi is approaching body-data capture across its digital member services. As Israel's second-largest HMO with a strong digital-health reputation, adding mobile body scanning to the member app could strengthen chronic-care outcomes and differentiate the member experience.\n\nWe built FitXpress to solve this: mobile body scanning from two phone photos. Members get consistent body metrics and composition with the audit trail and compliance (HIPAA/GDPR) health systems need.\n\nOpen to a quick chat?\nKateryna",
+                  "Hi Roni,\n\nQuick one - about Meuhedet's IT project pipeline for member-facing digital tools. Body scanning from a smartphone is a lightweight integration that could add clinical depth to existing digital channels without requiring heavy infrastructure changes.\n\nAt 3DLOOK, we built FitXpress: mobile body scanning that gives members consistent anthropometrics from two photos. Structured, trackable metrics and body composition, ready for digital health workflows.\n\nMight be worth a quick chat?\nKateryna"
+                ],
+                "message_2": [
+                  "Hi Ilan,\n\nWhere FitXpress helps cardiac rehab: members can capture consistent body measurements from home between clinic visits. Programs get better longitudinal data on weight and waist trends without asking staff to do extra manual measurements.\n\nWorth 15 min to walk through it? Grab a slot: https://meetings.hubspot.com/kateryna-boichuk\nKateryna",
+                  "Hi Ariel,\n\nWhere FitXpress helps occupational health: standardizing body-measurement capture across screening sites. Members do a quick phone scan, and the system returns consistent metrics every time, reducing variability between nurses and speeding clearance decisions.\n\nWorth 15 min to walk through it? Grab a slot: https://meetings.hubspot.com/kateryna-boichuk\nKateryna",
+                  "Hi Michael,\n\nWhere FitXpress expands the telehealth value story: body scanning adds a new clinical dimension to the remote exam pitch. Health systems evaluating TytoCare for weight-management programs get a more complete package when body-composition data is part of the remote visit.\n\nWorth a quick 15 min demo? Grab a slot: https://meetings.hubspot.com/kateryna-boichuk\nKateryna",
+                  "Hi Sigal,\n\nAt Maccabi's scale, giving members a phone-based body scanning tool could improve chronic-disease program metrics and member retention. FitXpress does this: two photos, consistent body metrics and composition, HIPAA-compliant, feeding structured data into the care record.\n\nWorth 15 min to see how it works? Grab a slot: https://meetings.hubspot.com/kateryna-boichuk\nKateryna",
+                  "Hi Roni,\n\nFitXpress integrates via API/SDK, so it slots into existing HMO digital infrastructure without a heavy lift. Members scan from their phone, and structured body metrics flow into the care record. Could fit into Meuhedet's IT roadmap as a quick-win digital health module.\n\nWorth 15 min to walk through it? Grab a slot: https://meetings.hubspot.com/kateryna-boichuk\nKateryna"
+                ],
+                "first_name": [
+                  "Ilan",
+                  "Ariel",
+                  "Michael",
+                  "Sigal",
+                  "Roni"
+                ],
+                "campaign_tag": [
+                  "IL-Telehealth-Jul2026",
+                  "IL-Telehealth-Jul2026",
+                  "IL-Telehealth-Jul2026",
+                  "IL-Telehealth-Jul2026",
+                  "IL-Telehealth-Jul2026"
+                ],
+                "linkedin_url": [
+                  "https://il.linkedin.com/in/ilan-marcuschamer-b861782a",
+                  "https://il.linkedin.com/in/arielbraverman",
+                  "https://il.linkedin.com/in/michaelkegen",
+                  "https://il.linkedin.com/in/sigal-dadon-levi-23205b1bb",
+                  "https://il.linkedin.com/in/roni-antman-765ab156"
+                ]
+              },
+              "select": [
+                {
+                  "size": 255,
+                  "title": "First Name",
+                  "value": "first_name",
+                  "required": true,
+                  "suggestion": "first_name"
+                },
+                {
+                  "size": 255,
+                  "title": "Last Name",
+                  "value": "last_name",
+                  "required": true,
+                  "suggestion": "last_name"
+                },
+                {
+                  "size": 255,
+                  "title": "LinkedIn URL",
+                  "value": "linkedin_url",
+                  "required": true,
+                  "suggestion": "linkedin_url"
+                },
+                {
+                  "size": 255,
+                  "title": "Job Title",
+                  "value": "job_title",
+                  "required": false,
+                  "suggestion": null
+                },
+                {
+                  "size": 255,
+                  "title": "Company",
+                  "value": "company",
+                  "required": false,
+                  "suggestion": "company"
+                },
+                {
+                  "size": 255,
+                  "title": "Photo URL",
+                  "value": "photo_url",
+                  "required": false,
+                  "suggestion": null
+                },
+                {
+                  "size": 255,
+                  "title": "Email",
+                  "value": "email",
+                  "required": false,
+                  "suggestion": null
+                },
+                {
+                  "size": 4096,
+                  "title": "company_original",
+                  "value": "custom_7676",
+                  "required": false,
+                  "suggestion": null
+                },
+                {
+                  "size": 4096,
+                  "title": "email_original",
+                  "value": "custom_6889",
+                  "required": false,
+                  "suggestion": null
+                },
+                {
+                  "size": 4096,
+                  "title": "first_email",
+                  "value": "custom_6713",
+                  "required": false,
+                  "suggestion": null
+                },
+                {
+                  "size": 4096,
+                  "title": "first_message",
+                  "value": "custom_6711",
+                  "required": false,
+                  "suggestion": null
+                },
+                {
+                  "size": 4096,
+                  "title": "first_name_original",
+                  "value": "custom_6716",
+                  "required": false,
+                  "suggestion": null
+                },
+                {
+                  "size": 4096,
+                  "title": "job_title_original",
+                  "value": "custom_6715",
+                  "required": false,
+                  "suggestion": null
+                },
+                {
+                  "size": 4096,
+                  "title": "last_name_original",
+                  "value": "custom_6717",
+                  "required": false,
+                  "suggestion": null
+                },
+                {
+                  "size": 4096,
+                  "title": "linkedin_url_original",
+                  "value": "custom_6714",
+                  "required": false,
+                  "suggestion": null
+                },
+                {
+                  "size": 4096,
+                  "title": "new_feature_mess",
+                  "value": "custom_11136",
+                  "required": false,
+                  "suggestion": null
+                },
+                {
+                  "size": 4096,
+                  "title": "second_message",
+                  "value": "custom_6712",
+                  "required": false,
+                  "suggestion": null
+                },
+                {
+                  "size": 4096,
+                  "title": "third_message",
+                  "value": "custom_19666",
+                  "required": false,
+                  "suggestion": null
+                }
+              ],
+              "status": "finished",
+              "mapping": {
+                "company": "company",
+                "last_name": "last_name",
+                "first_name": "first_name",
+                "custom_6711": "message_1",
+                "custom_6712": "message_2",
+                "linkedin_url": "linkedin_url"
+              },
+              "saved_contacts": 186,
+              "skipped_contacts": 29,
+              "reasons_for_skipped": [
+                "invalid linkedin_url value",
+                "invalid last_name value"
+              ]
+            },
+            "exclude_type": "byTeam"
+          }
+        ],
+        "steps": [
+          {
+            "id": "0086c77b-67d5-4dce-9b04-9cf32ac9d9b9",
+            "type": "post_reaction",
+            "sort_index": null,
+            "post_reaction": "true",
+            "days": 2,
+            "hours": 0,
+            "is_enabled": 1,
+            "prev_step_id": "32d9a82a-eec5-4b3d-96e3-e726ee933ff2",
+            "next_step_id": "1c27a213-dfb9-45e5-bb6e-b7ec40d73740"
+          },
+          {
+            "id": "0483ce0d-ff00-45c2-bff4-7b4531489b10",
+            "type": "post_reaction",
+            "sort_index": null,
+            "post_reaction": "true",
+            "days": 2,
+            "hours": 0,
+            "is_enabled": 1,
+            "prev_step_id": "806c0c7f-ace1-4fba-82cf-18e3168a2946",
+            "next_step_id": "dba0ae97-ff45-4201-8d4c-8bf4dc73572c"
+          },
+          {
+            "id": "11087668-90a9-43c4-be53-8af1375a72c5",
+            "type": "profile_view",
+            "sort_index": null,
+            "profile_view": "true",
+            "days": 3,
+            "hours": 0,
+            "is_enabled": 1,
+            "prev_step_id": "c7234512-407c-41b7-b8ab-98206007db70",
+            "next_step_id": "ff6bb1da-ae9a-40aa-ba2e-97ceeb952146"
+          },
+          {
+            "id": "1c27a213-dfb9-45e5-bb6e-b7ec40d73740",
+            "type": "message",
+            "sort_index": null,
+            "message": "{custom_6712}",
+            "days": 3,
+            "hours": 0,
+            "is_enabled": 1,
+            "prev_step_id": "0086c77b-67d5-4dce-9b04-9cf32ac9d9b9",
+            "next_step_id": null
+          },
+          {
+            "id": "234c4001-790c-4295-89f3-942b485db12b",
+            "type": "message",
+            "sort_index": null,
+            "message": "{custom_6712}",
+            "days": 3,
+            "hours": 0,
+            "is_enabled": 1,
+            "prev_step_id": "f1c68e1e-57f3-4197-8d40-f2bf63b693ce",
+            "next_step_id": null
+          },
+          {
+            "id": "32d9a82a-eec5-4b3d-96e3-e726ee933ff2",
+            "type": "message",
+            "sort_index": null,
+            "message": "{custom_6711}",
+            "days": 0,
+            "hours": 0,
+            "is_enabled": 1,
+            "prev_step_id": "c7234512-407c-41b7-b8ab-98206007db70",
+            "next_step_id": "0086c77b-67d5-4dce-9b04-9cf32ac9d9b9"
+          },
+          {
+            "id": "4acfa04f-aaf9-486e-bc77-8ce07f4cfb4b",
+            "type": "connection_message",
+            "sort_index": null,
+            "connection_message": "",
+            "days": 1,
+            "hours": 0,
+            "is_enabled": 1,
+            "withdraw": 21,
+            "prev_step_id": "984b85ca-b2cb-4f0e-b7e4-d201cf5b8cb9",
+            "next_step_id": "972db33b-91e0-48c9-8029-788750a9f6b8"
+          },
+          {
+            "id": "5024a0c8-6fd7-4a22-81ab-b40fe479ba84",
+            "type": "message",
+            "sort_index": null,
+            "message": "{custom_6711}",
+            "days": 0,
+            "hours": 0,
+            "is_enabled": 1,
+            "prev_step_id": "972db33b-91e0-48c9-8029-788750a9f6b8",
+            "next_step_id": "f1c68e1e-57f3-4197-8d40-f2bf63b693ce"
+          },
+          {
+            "id": "6e69e9b1-be8e-4032-afb4-9ec1eed43760",
+            "type": "post_reaction",
+            "sort_index": null,
+            "post_reaction": "true",
+            "days": 2,
+            "hours": 0,
+            "is_enabled": 1,
+            "prev_step_id": "d74653b1-c009-4f31-83e6-f8cf00f00d21",
+            "next_step_id": "e206bf9d-7497-4be6-9cce-6480d3ce4323"
+          },
+          {
+            "id": "806c0c7f-ace1-4fba-82cf-18e3168a2946",
+            "type": "message",
+            "sort_index": null,
+            "message": "{custom_6711}",
+            "days": 0,
+            "hours": 0,
+            "is_enabled": 1,
+            "prev_step_id": "ff6bb1da-ae9a-40aa-ba2e-97ceeb952146",
+            "next_step_id": "0483ce0d-ff00-45c2-bff4-7b4531489b10"
+          },
+          {
+            "id": "972db33b-91e0-48c9-8029-788750a9f6b8",
+            "type": "condition",
+            "condition_type": "if_connected",
+            "days": 1,
+            "hours": 0,
+            "is_enabled": 1,
+            "prev_step_id": "4acfa04f-aaf9-486e-bc77-8ce07f4cfb4b",
+            "yes_step_id": "5024a0c8-6fd7-4a22-81ab-b40fe479ba84",
+            "no_step_id": "c7234512-407c-41b7-b8ab-98206007db70"
+          },
+          {
+            "id": "984b85ca-b2cb-4f0e-b7e4-d201cf5b8cb9",
+            "type": "profile_view",
+            "sort_index": null,
+            "profile_view": "true",
+            "days": null,
+            "hours": null,
+            "is_enabled": 1,
+            "prev_step_id": null,
+            "next_step_id": "4acfa04f-aaf9-486e-bc77-8ce07f4cfb4b"
+          },
+          {
+            "id": "c7234512-407c-41b7-b8ab-98206007db70",
+            "type": "condition",
+            "condition_type": "if_connected",
+            "days": 4,
+            "hours": 0,
+            "is_enabled": 1,
+            "prev_step_id": "972db33b-91e0-48c9-8029-788750a9f6b8",
+            "yes_step_id": "32d9a82a-eec5-4b3d-96e3-e726ee933ff2",
+            "no_step_id": "11087668-90a9-43c4-be53-8af1375a72c5"
+          },
+          {
+            "id": "d74653b1-c009-4f31-83e6-f8cf00f00d21",
+            "type": "message",
+            "sort_index": null,
+            "message": "{custom_6711}",
+            "days": 0,
+            "hours": 0,
+            "is_enabled": 1,
+            "prev_step_id": "ee5764a6-726b-4572-ad58-91136e4c5400",
+            "next_step_id": "6e69e9b1-be8e-4032-afb4-9ec1eed43760"
+          },
+          {
+            "id": "dba0ae97-ff45-4201-8d4c-8bf4dc73572c",
+            "type": "message",
+            "sort_index": null,
+            "message": "{custom_6712}",
+            "days": 3,
+            "hours": 0,
+            "is_enabled": 1,
+            "prev_step_id": "0483ce0d-ff00-45c2-bff4-7b4531489b10",
+            "next_step_id": null
+          },
+          {
+            "id": "e206bf9d-7497-4be6-9cce-6480d3ce4323",
+            "type": "message",
+            "sort_index": null,
+            "message": "{custom_6712}",
+            "days": 3,
+            "hours": 0,
+            "is_enabled": 1,
+            "prev_step_id": "6e69e9b1-be8e-4032-afb4-9ec1eed43760",
+            "next_step_id": null
+          },
+          {
+            "id": "ee5764a6-726b-4572-ad58-91136e4c5400",
+            "type": "condition",
+            "condition_type": "if_connected",
+            "days": 6,
+            "hours": 0,
+            "is_enabled": 1,
+            "prev_step_id": "ff6bb1da-ae9a-40aa-ba2e-97ceeb952146",
+            "yes_step_id": "d74653b1-c009-4f31-83e6-f8cf00f00d21",
+            "no_step_id": null
+          },
+          {
+            "id": "f1c68e1e-57f3-4197-8d40-f2bf63b693ce",
+            "type": "post_reaction",
+            "sort_index": null,
+            "post_reaction": "true",
+            "days": 2,
+            "hours": 0,
+            "is_enabled": 1,
+            "prev_step_id": "5024a0c8-6fd7-4a22-81ab-b40fe479ba84",
+            "next_step_id": "234c4001-790c-4295-89f3-942b485db12b"
+          },
+          {
+            "id": "ff6bb1da-ae9a-40aa-ba2e-97ceeb952146",
+            "type": "condition",
+            "condition_type": "if_connected",
+            "days": 4,
+            "hours": 0,
+            "is_enabled": 1,
+            "prev_step_id": "11087668-90a9-43c4-be53-8af1375a72c5",
+            "yes_step_id": "806c0c7f-ace1-4fba-82cf-18e3168a2946",
+            "no_step_id": "ee5764a6-726b-4572-ad58-91136e4c5400"
+          }
+        ],
+        "created_at": "2026-07-24T18:50:34+03:00",
+        "integrations": []
+      }
+    }
+  }
+}
