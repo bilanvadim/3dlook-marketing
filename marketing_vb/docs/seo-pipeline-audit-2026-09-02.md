@@ -19,9 +19,10 @@ separately, so they are list-price actuals and not estimates.
 > | 6 | `--report` gives the coordinator every descriptive number in one call | `scripts/article_lint.py` |
 > | 7 | DEV is the source; the two derived copies are generated | `scripts/sync-agent-copies.py` |
 >
-> **The savings below are still estimates.** They are arithmetic from observed averages, and
-> nothing has been re-measured after the change. Run `pack-cost.py` on the next article and
-> compare against the $87.31 baseline in section 1 before believing any of them.
+> **Section 4a now carries measured-after numbers** for the two stages that ran again on
+> revision 3. The per-stage estimates below held up in direction and roughly in magnitude.
+> The MAIN estimate did not, and section 4a explains why: session length, not file reading,
+> is what drives it.
 
 ---
 
@@ -267,6 +268,53 @@ reduction loss (the *reason* to ask about validation population, which had been 
 a bare checklist item).
 
 ---
+
+## 4a. Measured after, on revision 3
+
+The audit promised the savings were estimates until re-measured. Revision 3 of the same
+article, driven by Review 2, is the first run with the tooling in place. Same script, same
+session, `scripts/pack-cost.py`.
+
+**The clean comparison is `seo-publisher`, because it did the identical job twice:** rebuild
+the publish package for this article.
+
+| Stage | Revision 2 (before) | Revision 3 (after) | Tokens | Cost |
+|---|---|---|---|---|
+| `seo-publisher`, same job | 3,391,592 tok / $2.22 / 33 reqs | 2,125,036 tok / $1.61 / 30 reqs | **-37%** | **-27%** |
+| `seo-editor` | 4,135,649 tok / $12.34 / 40 reqs | 1,514,852 tok / $5.97 / 22 reqs | **-63%** | **-52%** |
+
+The editor's number is the larger drop but the weaker evidence: revision 3 was a wording pass
+and revision 2 was a restructure, so part of that -63% is simply less work. The publisher's
+-37% is the figure to trust. Both stages also made fewer requests, which is the mechanism:
+`article_lint.py` answers in one call what previously took a series of greps, and each saved
+round-trip is a saved copy of the whole context.
+
+Direction confirmed, magnitude roughly as estimated. What is NOT yet measured: a full net-new
+article through `plan -> write -> edit -> publish` with the split plan and the bans card in
+place. Run it and compare against the $53.88 four-stage figure from revision 2.
+
+### The MAIN number went the wrong way, and that is the real finding
+
+| | Requests | Context | Cost | Average context per request |
+|---|---|---|---|---|
+| Revision 2 window | 88 | 15.0M | $33.43 | 170,540 |
+| Whole session, all of the above plus building the tooling | 191 | 51.2M | $118.46 | **268,239** |
+
+**These two are not comparable and the second is not a per-article cost.** The 191-request
+session carries the article revision, the guardrail revert, this audit, implementing seven
+changes, and 42 tests. Reporting $179.91 as the price of an article would be wrong.
+
+What it does show is the mechanism, and it is the one thing this audit under-weighted:
+**average context per request grew 1.57x as the session went on.** MAIN's cost is not driven
+by how many files it reads, it is driven by session length, because every request re-sends
+everything that came before. Finding F6 said "collapse fifteen greps into one call", which is
+right and now possible. The larger lever is next to it:
+
+**Split the session at the natural boundary.** An article revision is one session. Auditing
+the pipeline is another. Implementing the audit is a third. Running them in one session
+charged the article work for the audit's context and the audit for the article's, on every
+single request. That costs more than any prompt or file-reading change in this document, and
+it is free to fix.
 
 ## 5. Honest limits of this audit
 

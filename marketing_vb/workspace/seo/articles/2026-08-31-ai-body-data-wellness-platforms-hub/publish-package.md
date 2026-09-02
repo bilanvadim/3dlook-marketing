@@ -2,201 +2,305 @@
 slug: 2026-08-31-ai-body-data-wellness-platforms-hub
 product: fitxpress
 status: ready_for_review
-revision: 2
+revision: 3
 created: 2026-09-02
 checkpoint: 2 (final text + meta), awaiting Vadim
 ---
 
-# Publish Package: AI Body Data for Wellness Platforms (Hub #8) — Revision 2
+# Publish Package: AI Body Data for Wellness Platforms (Hub #8) — Revision 3
 
-This is the checkpoint-2 package for revision 2, produced after Review 1 (20 items,
-`review-1.md`) and Vadim's decisions (`review-1-decisions.md`, decisions file wins on conflict).
-It supersedes `v1/publish-package.md.superseded`. Everything below was checked directly against
-`final.md`, not asserted from the plan.
+This is the checkpoint-2 package for revision 3, produced after Review 2 (13 numbered items +
+6 softenings, `review-2.md`) and `review-2-decisions.md` (decisions file wins on conflict, per
+its own frontmatter). It supersedes `v2/publish-package.md`. Review 2 is sentence-level: no
+section moved, no heading changed, no keyword re-decided, `plan.md` revision 2 stands untouched.
+The one substantive change at the publisher layer is the meta description (Review 2 item 12).
+Everything below was checked directly against `final.md` revision 3, not asserted from the plan
+or carried forward from v2 without re-verification.
 
 ## Meta
 
-**Title (recommended):** AI Body Data for Wellness Platforms | 3DLOOK (44 chars by direct count;
-`review-1-decisions.md` §A1 recorded 48 for the same string — `plan.md` already flags this
-discrepancy and says either count sits inside the usable range. Primary keyword `Wellness
-Platforms` starts at character 17 of 44, inside the first half.)
+**Title (unchanged):** AI Body Data for Wellness Platforms | 3DLOOK — **44 characters by direct
+count.** `review-1-decisions.md` §A1 recorded 48 for this same string; that was a counting error,
+caught and corrected by the revision-2 publisher, and reconfirmed here by an independent count.
+Primary keyword `Wellness Platforms` starts at character 18 of 44 (index 17, 0-based), inside the
+first half.
 
-**Description (recommended):** Measured body data gives a corporate wellness platform a progress
-signal the scale misses, supporting personalization and engagement. See what to evaluate. (155
-chars. Contains `corporate wellness platform` verbatim, exactly once — this is its second and
-last home per decisions §A1, the first being the section-10 subsection. No em dash, no title
-repeat.)
+**Description (recommended, NEW per Review 2 item 12):** Measured body data gives a wellness
+platform a repeatable progress signal the scale misses, supporting personalization and
+engagement. See what to evaluate. — **156 characters** (counted, not estimated). Contains
+`wellness platform` verbatim exactly once, singular. Contains **zero** instances of `corporate` or
+`corporate wellness platform`. No em dash. Does not repeat the title. Hook (a progress signal the
+scale misses) + value (personalization and engagement) + soft CTA (see what to evaluate), matching
+this hub's Hub-level intent (no hard demo ask).
+
+This narrows what `review-1-decisions.md` §A1 recorded: the meta description was the phrase's
+second and last home. Review 2 item 12 is right that metadata frames the whole hub, and the
+strategy deliberately broadened past corporate wellness, so the phrase now has **exactly one**
+home — the "Corporate wellness" subsection in the body (`final.md` line 127, confirmed by direct
+grep: 1 occurrence of the exact string `corporate wellness platform` in the entire article). This
+follows the direction Vadim chose at §A1 rather than reversing it, per decisions §D item 12, so it
+is applied without escalating.
 
 **URL slug:** `ai-body-data-wellness-platforms` (unchanged)
 **Category:** Content Hub, Health / Wellness (Hub #8 main hub)
-**Word count:** 2,691 words (`final.md` frontmatter count) to 2,732 words (independent
-stripped-markdown recount done for this package: headings, link brackets, bold markers, table
-pipes and HTML comments removed, then whitespace-split). Both land inside target 2,650 ±150
-(2,500–2,800) and inside the review's own 2,500–2,800 range. **This is the prose count. Do not
-confuse it with the ai-tells detector's own count of 3,055 words below** — the detector counts
-markup (table cells, claim-marker comments, TODO comments) as words, so its total is not
-comparable to a prose word-count target.
+**Word count:** **2,790 words** — this is the prose count from `final.md`'s own frontmatter
+(`word_count: 2790`), independently confirmed by `scripts/article_lint.py`'s `prose_words: 2790`.
+Target is 2,650 ±150, i.e. 2,500–2,800: 2,790 sits inside that band, 40 words below the top edge.
+**Do not confuse this with the ai-tells detector's own `detector_words: 3,119`** below — the
+detector counts markup (table cells, claim-marker HTML comments, TODO comments) as words, so its
+total is not a length-gate number.
 
-## Review 1 closure table
+## Gate: `scripts/article_lint.py`, verbatim
 
-This is the direct answer to the reviewer, item by item. Two items are closed differently from
-what the review asked for; both are marked below and not buried in the disposition column.
+Actually run, this session, against `final.md` revision 3:
 
-| # | Review item (short) | Disposition | Where in `final.md` |
-|---|---|---|---|
-| 1 | Scope note after the intro | Applied. Non-clinical wellness platforms, lifestyle/nutrition coaching, habit-building/progress apps, member/employee wellness experiences named, with the three redirects (fitness hub, telehealth content, Wellness Rewards hub) as anchor links | "**Scope.**" paragraph, section 1 |
-| 2 | Broaden beyond corporate wellness | Applied in full. Primary keyword changed to `wellness platform` (decisions §A1); plural audience (consumer wellness apps, lifestyle-change platforms, nutrition/habit-coaching, digital wellbeing ecosystems, human-led/automated coaching) named in section 1 paragraph 2; corporate wellness confined to one subsection in section 10 | Section 1 paragraph 2; section 10 "**Corporate wellness.**" subsection |
-| 3 | Cut the employer/insurer section | Applied. Reduced to a 3-point subsection: standardized capture supports distributed programs, reward-linked applications carry added governance/review, link out for verification. No fairness/dispute/audit-trail/eligibility/payment treatment. Rewards FAQ question removed | Section 10 "**Corporate wellness.**" subsection; FAQ Q4 (decisioning, rewards-free) |
-| 4 | Rework the opening | Applied. New frame: limited visibility into physical progress between check-ins. All five flagged phrases ("ninety-day mark", "retention pays for itself", "problem is rarely...", "scale reports failure", implied causal link) are gone | Section 1, opening two sentences |
-| 5 | Remove "Why this matters now" | Applied — section removed entirely, including the two dismissive budget claims. One clause survives: smartphone capture makes structured body data available without dedicated scanning hardware | Section 2, last sentence of paragraph 1 |
-| 6 | Value-map table | Applied. Reviewer's five rows verbatim, three columns, no added rows, no numbers, no product name | Section 3, "Where body data creates value: summary table" |
-| 7 | Keep progress visibility strongest | Applied. All four elements retained (scale-weight gap, baseline-to-current 3D comparison, accuracy/repeatability distinction, goal-relevant metrics recommendation). "The story the product tells is now accurate" replaced with "The product now shows a more complete view of progress" | Section 4 |
-| 8 | Balance personalization | Applied. All six combining inputs named (stated goals, preferences, activity/habit information, schedule/resources, limitations, previous progress). Grouping by measured starting point retained, with aggregated reporting, purpose limitation and privacy controls in the same paragraph | Section 5 |
-| 9 | Engagement supportive, not causal | Applied for the four ceiling formulations ("supports more meaningful feedback", "can make progress easier to understand", "creates an additional check-in opportunity", "can contribute to continued engagement"). **Not closed as asked: no third-party source on self-monitoring/feedback was added.** None is approved; inventing one was rejected as worse than omitting it. **Remains an open item (#1 below), owner Vadim** | Section 6, paragraph 1 |
-| 10 | Wellness-specific UX consideration | Applied. New material, all five points: optional/goal-led, not every journey needs body measurement, neutral non-judgemental language, progress not reduced to appearance/weight loss, member control over indicators shown | Section 6, final paragraph |
-| 11 | Merge workflow + implementation | Applied. Reviewer's five steps in order, both anxiety phrasings ("integrations become expensive", "won or lost in the first ten seconds") cut | Section 7, numbered list |
-| 12 | Shorten pilot metrics | Applied. Reviewer's five measures verbatim (scan completion rate, retake rate, second-scan rate, engagement with the progress view, whether members can explain their progress view), continued-participation comparison kept with the causality disclaimer | Section 7, closing paragraph |
-| 13 | Output list correction | Applied **with one correction the review got wrong about the product.** "Values" → "estimates" applied. Essential fat / beneficial fat removed. **`predicted weight` is NOT added: FX-009 does not contain it, and it appears nowhere in `brand-assets/product-info/`. The reviewer is factually wrong about the documented output set here, not merely asking for a style change.** Output list is BMI, BMR, body fat percentage, lean mass, fat mass, 80+ measurements, 3D model | Section 2, paragraph 2 |
-| 14 | DEXA → DXA | Applied throughout. "Dual-energy X-ray absorptiometry (DXA)" expanded once (section 9), bare `DXA` thereafter (FAQ Q3). Zero instances of `DEXA` remain in this article. Divergence flagged, not silently fixed elsewhere: `terminology-guardrails.md` §1, `editorial-guardrails.md` #7 and 10+ published articles still spell it `DEXA` | Section 9; FAQ Q3 |
-| 15 | Training-data paragraph | Figure resolved 2026-09-02: **150 to 220 cm**, not the old 150–205 cm, one figure now covering both training-data coverage and the internal validation population, propagated repo-wide, and matching the live accuracy article. The detailed enumeration (9+ years, 150K photos, 30K scans, 430K measurements) stays cut, per the review's own "not essential to this hub" ground. One clause survives | Section 8, population-coverage sentence |
-| 16 | Accuracy discussion | Applied. All three absolute statements cut (2-centimetre tolerance line, "repeatability outranks accuracy", "conflates the two"). Accuracy and repeatability now framed as evaluated separately, with acceptable error tied to expected magnitude of change and workflow. `96-97%` / `1.5-2.0 cm` format applied; approved repeatability sentence used verbatim | Section 8 (accuracy), Section 4 (repeatability) |
-| 17 | Integration wording | Applied. "API, a web software development kit (SDK), and mobile SDKs" replaces "API or camera SDK" | Section 9 |
-| 18 | "It does not detect fraud" | Applied. Replaced with "FitXpress can provide capture-quality and verification signals, while final determinations are reached by a person" | Section 9 |
-| 19 | Medical-device wording | Applied using the review's own requested phrasing, licensed as an exception to the terminology guardrail (decisions §A2, detector patched 2026-09-02): "It is not positioned as a medical device." Five-item limitations list compressed into one paragraph, written alongside the capability rather than as a footer | Section 9 |
-| 20 | Privacy/compliance language | Applied. GDPR controller/processor sentence used verbatim; photo retention, blur, S3 regional storage with SSE-S3, no personal identifiers, no training use — all from the approved wordings in decisions §C. HIPAA appears exactly once, in section 8, as something to ask about. SOC 2 not mentioned | Section 8 |
-| structure | Recommended 12-section outline | Applied verbatim as the article's 11 H2s (10 content sections + FAQ + Where to go next; the review's 12-point list groups intro separately) | Whole article |
-| length | 2,500–2,800 words | 2,691–2,732 words by two counting methods, see Meta above | Whole article |
+```
+$ python3 scripts/article_lint.py workspace/seo/articles/2026-08-31-ai-body-data-wellness-platforms-hub/final.md --report
 
-**The two items closed differently from what the review asked, called out directly:**
-- **Item 13** — `predicted weight` was requested as part of the documented output set. It is not
-  added. No approved claim (FX-009 or otherwise) supports it, and it does not appear anywhere in
-  `brand-assets/product-info/`. This is decisions §B3 treating the review as wrong about the
-  product, not a style disagreement.
-- **Item 9** — a neutral third-party source on self-monitoring and feedback was requested. None
-  exists in approved sources, and none was invented. Section 6 argues from mechanism only. This is
-  the one review item still genuinely open; see open item 1 below.
+workspace/seo/articles/2026-08-31-ai-body-data-wellness-platforms-hub/final.md
+mode: article
 
-## SEO checklist (14/15 — images still open, same shape as v1)
+[ok  ] hard bans (detect-ai-tells)
+         . detector_words: 3119
+         . ai_density: 0.0
+         . verdict: CLEAN
+         . rhythm_variation: 0.53
+[ok  ] prose length
+         prose words 2790 vs target 2650 (band 2252-3047)
+         . prose_words: 2790
+         . target: 2650
+[ok  ] claim traceability
+         . claims_used: ['FX-001', 'FX-002', 'FX-003', 'FX-006', 'FX-007', 'FX-008', 'FX-009', 'FX-011', 'FX-014']
+         . claims_known: 16
+[ok  ] banned claims
+[ok  ] superseded figures
+[ok  ] internal links
+         . links_total: 14
+         . links_distinct: 8
+         . directions: {'up': 1, 'sideways': 4, 'down': 1, 'trust': 1}
+[ok  ] keyword placement
+         . keyword: wellness platform
+         . occurrences: 11
+         . h2_count: 11
+[ok  ] abbreviations (M1)
 
-- [x] **Primary keyword placement.** `wellness platform` (singular exact) opens section 1's first
-  sentence ("A wellness platform has limited visibility...") and section 2's first sentence ("For
-  a wellness platform, AI body data means..."), matching the plan's designated placements. Two H2s
-  carry the head term in the plan's specified forms: section 2's heading carries it verbatim in
-  the plural ("...for wellness platforms"), section 7's heading carries it hyphenated
-  ("Practical wellness-platform workflow"). H1 is unchanged and carries the plural form only, by
-  design (decisions §A1 voided the old H1/meta split, but H1 itself was never revisited). Total
-  singular exact-match count: 6 across the article (cap was 4-6, includes the one instance inside
-  "corporate wellness platform"). Total plural "wellness platforms": 5, including H1.
-- [x] **Meta title** 44 chars (48 per decisions §A1, both inside usable range), primary keyword
-  starts at char 17, inside the first half.
-- [x] **Meta description** 155 chars, inside the tightened 150-160 window decisions §A1 sets for
-  this article (wider than the generic 140-160).
+--- shape (descriptive, not gated) ---
+prose words 2790 across 11 H2 sections
+      232  What AI body data means for wellness platforms
+       93  Where body data creates value: summary table
+      313  Progress visibility beyond scale weight
+      255  Personalization using goals, starting points, and tr
+      277  Engagement and coaching
+      271  Practical wellness-platform workflow
+      344  What to evaluate in a body-data provider
+      209  Where FitXpress fits
+      114  Boundaries and related hubs
+      364  Frequently asked questions
+       97  Where to go next
+  links 14 total, 8 distinct, by direction: {'up': 1, 'sideways': 4, 'down': 1, 'trust': 1}
+  primary keyword 'wellness platform': 11 occurrences
+  claim markers 17: {'FX-001': 1, 'FX-002': 1, 'FX-003': 2, 'FX-006': 3, 'FX-007': 4, 'FX-008': 3, 'FX-009': 1, 'FX-011': 1, 'FX-014': 1}
+  approved but uncited: FX-004, FX-005, FX-010, FX-012, FX-013, FX-015, FX-016
+  term group corporate: total 15  (employer 2, insurer 2, reward 6, corporate wellness 4, incentive 1, plan-year 0)
+  term group broad: total 62  (consumer wellness 1, lifestyle 3, nutrition 4, habit 4, digital wellbeing 1, coaching 11, wellness app 5, member 33)
+
+VERDICT: PASS
+Mechanics are clean. Judgment is still open: run quality-controller on whether
+the argument holds and whether each section earns its place.
+```
+
+`term group corporate: corporate wellness 4` counts the substring `corporate wellness` (the
+header, the topic sentence, and the subsection body), not the exact phrase `corporate wellness
+platform` — a direct grep for that exact three-word phrase returns exactly 1 hit (line 127), which
+is the number this package tracks per Review 2 item 12. `term group broad: total 62` against
+`corporate: total 15` (ratio ~4:1) is consistent with v2 and confirms the audience-broadening
+strategy from Review 1 was not undone by Review 2's sentence-level edits.
+
+## SEO checklist (14/15 — images still open, same shape as v2)
+
+- [x] **Primary keyword placement.** `wellness platform` opens paragraph 1 of the intro ("A
+  wellness platform has limited visibility...", line 23) and opens section 1's first sentence
+  ("For a wellness platform, AI body data means...", line 31). H1 (line 21) carries the plural
+  form ("...for Wellness Platforms"). Two H2s carry the term: section "What AI body data means for
+  wellness platforms" (line 29, plural) and "Practical wellness-platform workflow" (line 87,
+  hyphenated). Verified counts: 6 singular exact-match instances, 5 plural instances, 11 total —
+  unchanged from v2, since Review 2's edits were length-neutral wording changes, not keyword
+  changes (decisions §E).
+- [x] **Meta title** 44 chars (corrected from the 48 wrongly recorded at §A1), primary keyword
+  starts at char 18 of 44, inside the first half. Unchanged this revision.
+- [x] **Meta description** 156 chars, inside the 150-160 window. **Changed this revision** per
+  Review 2 item 12: `corporate wellness platform` removed, `wellness platform` used instead. See
+  Meta section above for the full rationale and two alternates below.
 - [x] **Numbers traceable to approved claims.** Citations present: FX-001 (×1), FX-002 (×1),
   FX-003 (×2), FX-006 (×3), FX-007 (×4), FX-008 (×3), FX-009 (×1), FX-011 (×1), FX-014 (×1) —
-  matches `final.md` frontmatter `claims_verified` exactly. **FX-010 and FX-016 are absent, by
-  design** (review items 15 and 16, not an oversight — see deletions ledger rows 4 and 5).
-  FX-004, FX-005, FX-012, FX-013, FX-015 also absent, none required. The 4-to-12-week cadence
-  figure is editorial workflow guidance, not a product proof-point, and carries no FX citation by
-  design.
-- [x] **No banned words.** Detector hard_fails: `[]`. Manual grep for leverage/utilize/harness/
+  matches `final.md` frontmatter `claims_verified` exactly, unchanged from v2. **FX-010 and
+  FX-016 are absent by design**, not an oversight: FX-010 was cut per Review 1 item 15 (the
+  training-data enumeration, "not essential to this hub"), FX-016 per Review 1 item 16 (the
+  2-centimetre tolerance / repeatability-outranks-accuracy framing, replaced with the
+  five-condition accuracy question). FX-004, FX-005, FX-012, FX-013, FX-015 also absent, none
+  required.
+- [x] **No banned words.** Detector `hard_fails: []`. Manual grep for leverage/utilize/harness/
   robust/seamless/comprehensive/delve/navigate/tapestry/realm/game-changer/revolutionize/
   cutting-edge/disrupt/"unlock the power"/"struggling with"/"it's no secret": 0 hits.
-- [x] **Word count** 2,691–2,732 words against target 2,650 ±150 (2,500–2,800). Inside range on
-  both counting methods, and inside the review's own stated range.
-- [x] **Intro hook**, first two sentences: "A wellness platform has limited visibility into
-  physical progress between check-ins. What it usually holds is a self-reported entry and a scale
-  reading." This is the review item 4 reframe, applied.
-- [x] **CTA placement and type.** Evaluation CTA at the end of section 9 ("Teams that want to see
-  the capture flow... can start with FitXpress for connected and digital fitness"), immediately
-  after the boundary paragraph, exactly where the plan places it. Layered CTA in section 12,
-  3 routes (soft: AI body data hub + Beyond BMI; evaluation: FitXpress product page; employer/
-  insurer: Wellness Rewards Verification). Intent is Hub, so no single hard demo ask, matching
-  the plan.
-- [x] **No generic AI patterns.** Detector: `punch_triads: []`, `em_dashes: 0`, rhythm variation
-  0.51 (want > 0.35). Manual read found no negative-parallelism or "not just X, it's Y" shapes.
-- [x] **Terminology guardrails.** 0 em dash. 0 "objective" about our own conclusions (the one hit,
-  "wellness objectives" in section 3, is a business-goal noun in a table, not a claim about our
-  output). 0 reader/audience/following-sections/see-below. 0 "this article/this guide" ("this hub"
-  appears once, in the scope note, the one permitted self-reference per terminology guardrails
-  Part 2). 0 "by hand". 0 "let". 0 "plus" as connector. 0 "we/our/you/your". 0 corrective negation
-  ("X, not Y"). 0 corrective "rather than". One "so" (section 2: "timestamped so two check-ins can
-  be compared") is a mechanical purpose clause, not a benefit-connector; the detector's
-  `house_rule_violations` is `[]`, so this was treated as a pass rather than a manual override.
-  **`positioned as` appears exactly once** ("It is not positioned as a medical device," section 9)
-  — this is the licensed exception per decisions §A2, the detector was patched 2026-09-02 to allow
-  this exact sentence and hard-fail every other "positioned as" use. Confirmed: `hard_fails: []`.
-- [x] **Abbreviations.** DXA (not DEXA) expanded at first use in section 9, bare in FAQ Q3. BMR,
-  GDPR, API, SDK, BIA, HIPAA each expanded once at first use, short form thereafter. BMI, US
-  left bare per the commonly-known exception; 0 instances of "Body Mass Index" spelled out.
-- [x] **Medical framing.** This article carries the review-mandated exception, not the general
-  house rule: "It is not positioned as a medical device." (section 9), licensed 2026-09-02 for
-  this exact sentence only (decisions §A2). This is a deliberate deviation from the general
-  standard ("FitXpress is not a medical device"), approved by Vadim, not a lapse.
+- [x] **Word count** 2,790 prose words against target 2,650 ±150 (2,500-2,800). Inside the band,
+  40 words below the top edge. `article_lint.py`'s own (wider, ±15%) band also passes:
+  2,252-3,047.
+- [x] **Intro hook**, first two sentences (line 23): "A wellness platform has limited visibility
+  into physical progress between check-ins. What it usually holds is a self-reported entry and a
+  scale reading." This is the reframed opening from Review 2 item 1 — the intro now states three
+  distinct limitations (self-reported entries, scale weight, repeatable body data) instead of
+  treating the first two as sharing one limitation, which was the factual error the reviewer
+  flagged as most important.
+- [x] **CTA placement and type.** Evaluation CTA at the end of "Where FitXpress fits" (line 123:
+  "Teams that want to see the capture flow... can start with FitXpress for connected and digital
+  fitness"), immediately after the boundary paragraph, matching the plan. Layered CTA in "Where to
+  go next" (lines 151-159), 3 routes: soft (AI body data hub + Beyond BMI), evaluation (FitXpress
+  product page), employer/insurer (Wellness Rewards Verification). Intent is Hub, so no single
+  hard demo ask — unchanged from v2, Review 2 did not touch CTA placement.
+- [x] **No generic AI patterns.** Detector: `hard_fails: []`, `rhythm_variation: 0.53` (want
+  > 0.35, improved from v2's 0.51). Manual read found no negative-parallelism, no triple-adjective
+  parallelism, no "not just X, it's Y" shapes. 0 em dash anywhere in the body (`grep` confirmed).
+- [x] **Terminology guardrails.** 0 em dash. `objective` appears twice (lines 43, 45), both inside
+  the summary-table header/cell "wellness objectives" — a business-goal noun, not a claim about
+  our output, same reading as v2. 0 reader/audience/following-sections/see-below. 0 "this
+  article"/"this guide" ("this hub" appears once in the scope note, the one permitted
+  self-reference). 0 "by hand". 0 "let". 0 "plus" as a benefit-connector. 0 "we"/"our"/"you"/
+  "your". 0 corrective negation ("X, not Y"). 0 corrective "rather than". One "so" (line 31,
+  "timestamped so two check-ins can be compared") is a mechanical purpose clause, not a
+  benefit-connector; detector's `house_rule_violations: []` treats it as a pass. **`positioned
+  as` appears exactly once** ("It is not positioned as a medical device," line 121) — the
+  licensed medical-device exception, confirmed the only instance in the article.
+- [x] **Abbreviations.** DXA (not DEXA) — 2 instances (lines 121, 139), expanded at first use in
+  section "Where FitXpress fits" ("Dual-energy X-ray absorptiometry (DXA)"), bare in FAQ Q3. BMR,
+  GDPR, API, SDK, BIA, HIPAA each expanded once at first use, bare thereafter. BMI, US left bare
+  per the commonly-known exception. 0 instances of "DEXA" anywhere in the article.
+- [x] **Medical framing.** "It is not positioned as a medical device." (line 121) — the reviewer
+  lists this among what is now working well (final bullet list, review-2.md). Stated directly and
+  unchanged from v2.
 - [x] **Links on meaningful anchors.** 14 links, 8 distinct targets, 0 bare URLs, all canonical
-  trailing-slash `3dlook.ai` URLs. No third-party citations at all (open item 1 below explains
-  why), so no vendor-blog risk exists in this revision.
-- [x] **Detector actually run**, by this agent, directly:
-      `python3 brand-assets/style-guides/scripts/detect-ai-tells.py workspace/seo/articles/2026-08-31-ai-body-data-wellness-platforms-hub/final.md --channel article --summary`
-      Actual output: **3,055 words (detector's own count, includes markup) · ai_density_per_1000_words
-      0.0 (budget 6.0) · severity low · hard_fails [] · house_rule_violations [] · em_dashes 0 ·
-      punch_triads 0 · title_case_headings 0 · emoji_count 0 · rhythm variation 0.51 · VERDICT
-      CLEAN**. This matches the coordinator's independent run exactly; it was re-run here, not
-      copied on faith.
-- [ ] **Images / alt text: still not produced.** Carried forward from v1 with updated section
-      references, see below. Needs design.
+  trailing-slash `3dlook.ai` URLs. Direct count against `final.md`: `wellness-rewards-verification…`
+  ×3, `fitxpress/for-connected-and-digital-fitness` ×2, `beyond-bmi-business` ×2,
+  `ai-in-fitness-industry` ×2, `ai-body-data-health-hub` ×2, `the-potential-of-ai-in-telehealth`
+  ×1, `mobile-body-scanning-accuracy` ×1, `how-to-measure-body-composition` ×1 = 14 total, 8
+  distinct. No third-party citations (open item, see below), so no vendor-blog risk.
+- [x] **Detector actually run**, by this agent, directly, via `scripts/article_lint.py --report`
+  (wraps `detect-ai-tells.py`; full verbatim output above): `detector_words: 3119` ·
+  `ai_density: 0.0` · `verdict: CLEAN` · `rhythm_variation: 0.53`. This is a real execution in this
+  session, not a reasoned estimate — the failure mode flagged in this agent's own brief (2026-08-25
+  incident, both seo-editor and seo-publisher skipped the run and guessed 0.6/1000) does not apply
+  here.
+- [ ] **Images / alt text: still not produced.** Carried forward from v2 unchanged. Needs design.
 
 ## Content strategy checklist (9/9, one item fulfilled via a documented, plan-approved deviation)
 
-- [x] Correct hub: Wellness Platforms (Hub #8), main hub row from `content-plan.md`.
-- [x] Action type honored: `create-net-new`, gate passed, genuinely net-new (no broad Wellness
-  Platforms page existed).
+- [x] Correct hub: Wellness Platforms (Hub #8), main hub row from `content-plan.md`. Unchanged.
+- [x] Action type honored: `create-net-new`, gate passed at Phase 0. Unchanged; Review 2 made no
+  structural change.
 - [x] Does not duplicate `existing_urls`; cannibalization guardrail held. Wellness Rewards keeps
-  the verification workflow (3-point subsection then link, no re-explanation); Beyond BMI keeps
-  the BMI argument (summarized in 2-3 sentences then linked). No vendor comparison table, 0 named
-  vendors.
-- [x] Vertical boundary held. Fitness product strategy stays with Hub #4, linked sideways in
-  section 1's scope note and section 10's routing. Wellness is not a sensitive vertical, but a
-  scope note sits at the end of section 1 per review item 1.
-- [x] Internal links in all four directions: **up** `ai-body-data-health-hub` · **side**
-  `wellness-rewards-verification…` (×3), `beyond-bmi-business` (×2), `ai-in-fitness-industry` (×2),
-  `how-to-measure-body-composition` (×1), `the-potential-of-ai-in-telehealth` (×1) · **down**
+  the verification workflow (3-point subsection then link); Beyond BMI keeps the BMI argument
+  (summarized then linked). No vendor comparison table, 0 named vendors.
+- [x] Vertical boundary held, and **tightened this revision** (Review 2 item 4): grouping members
+  by measured starting point is no longer actively recommended. Section "Personalization" (line
+  73) now reads "the same records aggregate into body-data trends for reporting: participation and
+  change across appropriately defined cohorts... Segmentation is a separate question, and measured
+  body characteristics are a weak default basis for it, particularly where the population is a
+  workforce." This matters specifically because the hub includes employee wellness applications,
+  which is the reviewer's stated reason.
+- [x] Internal links in all four directions: **up** `ai-body-data-health-hub` (×2, line 155 and
+  159 area) · **side** `wellness-rewards-verification…` (×3), `beyond-bmi-business` (×2),
+  `ai-in-fitness-industry` (×2), `how-to-measure-body-composition` (×1),
+  `the-potential-of-ai-in-telehealth` (×1) · **down**
   `fitxpress/for-connected-and-digital-fitness` (×2) · **trust**
   `mobile-body-scanning-accuracy` (×1). 14 links total, 8 distinct targets, all canonical
-  trailing-slash form.
-- [x] FAQ section present: 6 questions (down from 7 in v1, per the no-repeat rule), answers 2-3
-  sentences each, GEO/AEO-shaped.
+  trailing-slash form. All four directions and the full count are on the "must NOT change" list
+  in decisions §E, verified directly against `final.md` rather than assumed.
+- [x] FAQ section present: 6 questions, answers 2-3 sentences each, GEO/AEO-shaped. Two answers
+  changed in wording this revision (Q5 privacy language per item 11; Q6 cadence softened per item
+  8, "feeling progress" assertion dropped), question count and structure unchanged.
 - [x] **"What FitXpress does NOT do" — deliberate, plan-approved deviation, not a checklist
-  failure.** It no longer exists as a standalone FAQ question or footer block. Content-strategy
-  §8/§14 wants it; review item 3's no-repeat structure note ("repeated limitations across the
-  body, FAQ, and FitXpress section") and the plan's own no-repeat rule remove it as a repetition.
-  The boundary is stated once, in full, in section 9 ("It is not positioned as a medical device...
-  Adding capture to a program leaves compliance where it was"), and reached from the FAQ only
-  through Q3 (replacement: "Can a body scan replace a DXA scan...?") and Q4 (decisioning: "Is body
-  data used to make decisions about members or their access to a program?"), which is the same two
-  search questions §14 cares about. `plan.md` records this explicitly under "Resolutions applied
-  where the review could be read two ways": *"The review wins for this article."* No positioning
-  claims banned by §8 were found anywhere in the text.
+  failure, unchanged from v2.** It exists as no standalone FAQ question or footer block.
+  Content-strategy §8/§14 wants it; the no-repeat structure rule from Review 1 item 5 (echoed by
+  Review 2 item 5, which removed a third repetition of the program-access boundary from
+  "Boundaries and related hubs") treats a separate section as unwanted repetition. The boundary is
+  stated in full in "Where FitXpress fits" (line 121: "It is not positioned as a medical device.
+  FitXpress does not diagnose conditions or screen for them...") and reached from the FAQ through
+  Q3 (replacement: DXA/BIA/scale) and Q4 (decisioning: program access). `plan.md` records this
+  explicitly: "The review wins for this article." No positioning claims banned by §8 found
+  anywhere in the text.
 - [x] No unsupported medical, legal, underwriting, employment or clinical-trial claims. HIPAA
-  appears exactly once, as something to ask about, not a certification claim. GDPR stated as the
-  approved controller/processor role sentence. SOC 2 not mentioned (not certified). No diagnostic,
-  screening or clearance language anywhere (checked: 0 "screening" as a FitXpress action, 0 "cleared
-  to participate", 0 "identifies members at risk").
-- [x] Owns one distinct search intent: "what should a wellness platform do with body data, and what
-  changes if it does" (commercial-informational, pre-vendor-shortlist), confirmed unchanged from
-  the Phase 0 gate.
+  appears exactly once (line 113), as something to ask about, not a certification claim. GDPR
+  stated as the approved controller/processor sentence, verbatim. SOC 2 not mentioned. **Privacy
+  wording tightened this revision** (Review 2 item 11 / decisions §C2): "FitXpress does not
+  receive names, contact details, or other direct identifiers that connect the scan with a
+  specific individual" replaces the looser "No personal identifiers are processed," in both
+  section "What to evaluate in a body-data provider" (line 113) and FAQ Q5 (line 146) — this is a
+  precision gain against the same approved source (`compliance.md`), not a new claim, and it
+  correctly acknowledges that body photos and derived measurements can be personal data even
+  without a direct identifier attached.
+- [x] Owns one distinct search intent: "what should a wellness platform do with body data, and
+  what changes if it does" (commercial-informational, pre-vendor-shortlist), unchanged from the
+  Phase 0 gate.
+
+## Review 2 closure table
+
+The reviewer's own framing: "substantially stronger and close to publishable," ready for
+"final proofreading and illustration planning" once these corrections land. This is the direct
+answer to that review, item by item, sourced from `review-2-decisions.md` §D (decisions file
+wins on any wording difference from `review-2.md`).
+
+| # | Item (short) | Disposition | New wording in `final.md` |
+|---|---|---|---|
+| 1 | Opening logic: scale weight IS comparable over time | **Applied — the most important factual correction.** Self-reported entries, scale weight and repeatable body data now carry three distinct limitations instead of two sharing one | Line 23: "Self-reported entries get estimated or rounded... A scale reading compares cleanly against last month's. Its limitation is a different one: one number compresses every kind of body change into a single direction of travel. Repeatable body data adds a third record..." |
+| 2 | Engagement outcome claim | **Applied — sentence removed, mechanism only.** This closes open item 1 (no third-party source needed, because the claim that needed one is gone) | Line 79: "creates an additional structured check-in... The record it leaves is also what coaching and content selection can draw on." No outcome/retention claim remains |
+| 3 | Unsupported comparative in personalization | **Applied verbatim to the reviewer's wording.** Ranking claim removed, limitation kept | Line 69: "A scan carries no information about motivation, food environment, or the time a member can commit, and each of those also influences outcomes." |
+| 4 | Grouping members by measured starting point | **Applied, and taken further than v2.** Turned into aggregated reporting plus an explicit segmentation caveat, because the hub covers employee wellness | Line 73: "...body-data trends for reporting: participation and change across appropriately defined cohorts... measured body characteristics are a weak default basis for it, particularly where the population is a workforce." |
+| 5 | Repeated program-access boundary (3 places) | **Applied.** Deleted from "Boundaries and related hubs"; a boundary sentence remains in "Where FitXpress fits" and the fuller explanation remains in FAQ Q4 | Line 121 (short form) and line 143 (FAQ Q4, fuller form); confirmed absent from lines 125-129 |
+| 6 | Compliance formulation | **Applied verbatim.** "Leaves compliance where it was" (too broad) replaced with continuing responsibility | Line 121: "The platform remains responsible for its program rules and applicable compliance requirements." |
+| 7 | Automated-program contradiction | **Applied.** Removed the self-contradiction of "judgement stays with a person" inside a fully automated program | Line 83: "In automated programs the same record can support content selection and the progress display, while the platform stays responsible for the rules and recommendations it applies. Human review can be specified for reward, access, or other consequential decisions." |
+| 8 | Cadence guidance | **Applied and softened,** in both the body and the FAQ; the FAQ's "feeling progress" assertion dropped | Line 97: "A four-to-twelve-week interval can be a practical starting point, depending on the program goal, the expected magnitude of change, and capture conditions." Line 148-149 (FAQ Q6) no longer asserts an emotional outcome |
+| 9 | "similar time of day" | **Applied — removed everywhere, verified absent from every approved source.** `time of day` returns 0 hits in `final.md`, `product-info/`, `about-me.md`, and the context pack | Lines 63 and 94: "the same guided pose and similar capture conditions" |
+| 10 | Server-side retention | **Applied.** Retention made conditional, matching data minimisation | Line 92: "which outputs are retained or made available to authorized program teams." |
+| 11 | Privacy wording | **Applied, reviewer's precise version, in both places, split to avoid a stacked negation** | Line 113 and line 146: "FitXpress does not receive names, contact details, or other direct identifiers that connect the scan with a specific individual. Photos are not used to train the model." (two sentences, one boundary each — the editor's own fix caught the stacked-negation shape M2 exists to catch) |
+| 12 | Meta description | **Applied — publisher-layer change, this package.** `corporate wellness platform` removed from metadata; `wellness platform` used. Narrows `review-1-decisions.md` §A1 without reversing Vadim's direction there | See Meta section above |
+| 13 | Keyword stacking in the corporate subsection | **Applied.** `corporate wellness platform` kept once; the stacked "employee wellness app" / "employee wellness program" repetition removed | Line 127: "A corporate wellness platform working on that specific problem will find verification covered in depth in [wellness rewards verification...]" |
+| — | 6 smaller softenings | **Applied, all six, verbatim in intent** | "may show apparent change" (line 59) · "a chart with reduced comparability" (line 63) · "a headline accuracy figure is incomplete on its own" (line 105) · "without requiring [members] to attend an onsite assessment" (line 127) · "additional context alongside the member's own account" (line 83) · "can be more useful as a trend than as an isolated headline number" (line 61) |
+
+**What this closes that Review 1 left open:** open item 1 (no approved third-party source for
+self-monitoring/engagement) is closed — not by finding a source, but by removing the one sentence
+(item 2 above) that needed one. Nothing is left on Vadim for that item.
+
+## What the reviewer confirmed is working (carried forward verbatim from `review-2.md`)
+
+The reviewer's own closing list of what the article does successfully, unchanged by this
+revision's edits:
+
+1. Establishes a clear wellness scope
+2. Broadens the audience beyond employers and insurers
+3. Reduces rewards-verification cannibalization
+4. Removes the weak "Why now" section
+5. Introduces a useful summary table
+6. Keeps progress visibility as the strongest part
+7. Treats body data as one personalization input
+8. Adds appropriate optionality and non-judgmental UX guidance
+9. Separates accuracy from repeatability
+10. Uses the correct 96-97% and 1.5-2.0 cm formatting
+11. Uses DXA consistently
+12. Shortens implementation guidance
+13. Replaces the fraud-detection statement appropriately
+14. Uses the approved medical-device wording
+15. Creates clear routing to the fitness, health, and rewards hubs
 
 ## CMS tasks that ship with this article
 
-These are publish-step tasks, not writing tasks, and none of them changed in kind from v1. The
-first is the one that decides whether the page can rank at all — more so now than in v1, since the
-new primary keyword sits at KD 36 against v1's KD 11.
+Carried forward from v2, none changed in kind by Review 2's sentence-level edits, plus one new
+task from item 11's fallback condition.
 
-### 1. Inbound internal-link pass (required, now load-bearing, not just desirable)
+### 1. Inbound internal-link pass (required, load-bearing, unchanged from v2)
 
-This hub inherits no external authority: Beyond BMI has 1 backlink, Wellness Rewards has 0,
-absent from all 14,680 rows of the backlink export. With the keyword re-decision (`wellness
-platform`, 150/mo, KD 36, replacing `corporate wellness platform`, 500/mo, KD 11), a page with
-zero external links reaching a KD 36 term needs this pass to happen, not merely to help.
+This hub inherits no external authority: Beyond BMI has 1 backlink, Wellness Rewards has 0. With
+the keyword `wellness platform` (150/mo, KD 36) replacing `corporate wellness platform` (500/mo,
+KD 11) at the Review-1 keyword re-decision, a page with zero external links reaching a KD 36 term
+needs this pass to happen, not merely to help.
 
 | Donor page | Backlinks | Anchor context to add |
 |---|---|---|
@@ -206,81 +310,91 @@ zero external links reaching a KD 36 term needs this pass to happen, not merely 
 | `/content-hub/top-fitness-industry-trends/` | 36 | Corporate and employee wellness trend mentions |
 | `/content-hub/weight-loss-industry-overview/` | 33 | Employer and insurer wellness program mentions |
 
-Three of the five (fitness, telehealth, GLP-1) were refreshed in the last five weeks, so their
-internal-link sections are current and cheap to amend. All links must use canonical
-trailing-slash URLs.
-
 ### 2. Architecture re-parenting (approved at checkpoint 1, unchanged)
 
 `wellness-rewards-verification-employers-insurers-using-ai-3d-body-scanning/` stops being the
-Wellness hub and becomes the employer/insurer sub-hub under this page. Required:
-
-- Update `brand-assets/content-strategy/published-articles-inventory.md`: Hub #8 row, the Wellness
-  section, and the Internal Linking Map, which currently draws Wellness Rewards as the hub node.
-- Internal-link pass on the Wellness Rewards page itself so it points up to this hub.
+Wellness hub and becomes the employer/insurer sub-hub under this page. Required: update
+`brand-assets/content-strategy/published-articles-inventory.md` (Hub #8 row, Wellness section,
+Internal Linking Map) and run an internal-link pass on the Wellness Rewards page itself so it
+points up to this hub.
 
 ### 3. Privacy FAQ dependency (2 placeholders in the text, unchanged in kind)
 
-The Data, Privacy, Security & Regulatory FAQ is still an unpublished P0. Short inline answers
-stand instead of links. Two `<!-- TODO(publish) -->` markers sit in the source, in section 8
-("What to evaluate in a body-data provider") and in FAQ Q5. Nothing is broken if the article ships
-as is. When the FAQ publishes, both markers become links and the inline answers can shorten.
+The Data, Privacy, Security & Regulatory FAQ is still an unpublished P0. Two
+`<!-- TODO(publish) -->` markers sit in the source: section "What to evaluate in a body-data
+provider" (line 113) and FAQ Q5 (line 146). Nothing is broken if the article ships as is; when the
+FAQ publishes, both markers become links and the inline answers can shorten.
 
-**No task on the accuracy article.** The live page already publishes 150-220 cm in three places
-(confirmed 2026-09-02); the earlier flag was about a stale local copy, already fixed. Not carried
-forward as a CMS task.
+### 4. NEW — Privacy FAQ must explain direct identifiers vs. personal data (Review 2 item 11 fallback)
+
+Review 2 item 11's fallback condition: "ensure the privacy FAQ explains the distinction between
+direct identifiers and personal data." This revision applied the reviewer's precise wording
+instead of relying on the fallback, but the fallback still binds the FAQ itself once it ships —
+whoever writes the Data, Privacy, Security & Regulatory FAQ needs to state that distinction
+explicitly (body photos and derived measurements can be personal data even with no direct
+identifier attached), not just repeat the short "no personal identifiers" forms that
+`compliance.md` carries for outbound and social. Owner: whoever drafts that FAQ; flag for
+`page-builder` or the next SEO writer who touches it.
 
 ## Open items for Vadim
 
-Five items, matching `plan.md`'s open-items list minus the height range, which is closed with no
-follow-ons.
+Five items. One closes this revision, one gains a note; three survive unchanged from v2.
 
-1. **No third-party source on self-monitoring and feedback** (review item 9). None is approved.
-   Section 6 argues from mechanism only. If Vadim clears a source, it strengthens that section.
-2. **DEXA/DXA divergence in brand-assets.** DXA is applied throughout this article. `DEXA` is
-   still the house spelling in `terminology-guardrails.md` §1, `editorial-guardrails.md` #7, the
-   Part 3 grep row, and 10+ published articles. Until resolved, the next article regenerates
-   DEXA. Recommendation on file: change the abbreviation lists to DXA, leave published articles
-   alone.
-3. **Essential/beneficial fat vs `predicted weight`, two separate divergences** between the review
-   and `proof-points.md` / `how-it-works.md` / FX-009. (a) Those sources still list essential and
-   beneficial fat, which the reviewer wants gone from the product; either the sources are stale or
-   the reviewer is wrong about the product. (b) The reviewer's documented output set includes
-   `predicted weight`, which no approved claim supports; this article omits it (see review-closure
-   item 13 above).
-4. **"Positioned as" is now in its third state** (banned 2026-06-09 → superseded 2026-08-13 →
-   partially restored 2026-09-02 for exactly one sentence). Review 1 and the terminology guardrail
-   come from the same editorial authority and pointed opposite ways. Worth settling permanently in
-   the source Doc rather than re-litigating per article.
-5. **Images still not produced.** Unchanged from v1. Needs design; suggestions below.
+1. ~~No third-party source on self-monitoring and feedback~~ **CLOSED by Review 2 item 2.** The
+   outcome claim that needed a source ("that can contribute to continued engagement") is removed;
+   the section argues from mechanism only. No source required, nothing left on Vadim for this.
+2. **DEXA/DXA divergence in brand-assets.** Still open. `DEXA` remains the house spelling in
+   `terminology-guardrails.md` §1, `editorial-guardrails.md` #7, and the Part 3 grep row.
+   `article_lint.py` now catches it in any article that regenerates it, but the source documents
+   are unchanged. Owner: Vadim.
+3. **essential/beneficial fat vs `predicted weight` in `proof-points.md` / `how-it-works.md` /
+   FX-009.** Still open. Review 2 sharpened this: the reviewer now explicitly defers to the
+   approved repository ("The approved repository should take precedence over my earlier
+   recommendation"), which means the repository has to be correct about the product. Owner:
+   Vadim.
+4. **"positioned as" is in its third policy state.** Still worth settling permanently in the
+   source Doc rather than re-litigating per article. Owner: editorial owner + Vadim.
+5. **Images still not produced.** The reviewer explicitly names illustration planning as the next
+   step after this pass. Owner: design. Suggestions carried forward below.
+6. **NEW, small: `compliance.md` has no article-grade privacy line.** The short forms ("process
+   zero personal identifiers" / "no personal identifiers stored") are correctly labelled for
+   outbound and social, but there is no page/article-grade version on file, so the next writer who
+   needs this wording has to reach for the reviewer's phrasing again from scratch rather than a
+   documented source line. Worth adding the long form to `compliance.md` as the article/page
+   variant. Owner: Vadim. Not done in this revision (out of scope for a wording pass).
 
 ## Alt options
 
-### Meta title variants
+### Meta title variants (unchanged this revision)
 
-1. AI Body Data for Wellness Platforms | 3DLOOK (44 chars). **Recommended.** Carries the new
-   primary keyword verbatim in the plural, matches the H1's own phrase, keyword in the first half.
+1. AI Body Data for Wellness Platforms | 3DLOOK (44 chars). **Recommended.** Carries the primary
+   keyword verbatim in the plural, matches the H1, keyword in the first half.
 2. Wellness Platform Body Data and Engagement | 3DLOOK (51 chars). Singular exact match at
    position 1, strongest keyword signal, reads less like the H1.
 3. Body Data for Wellness Platforms | 3DLOOK (41 chars). Shortest, drops the "AI" framing.
 
-### Meta description variants
+### Meta description variants (NEW this revision, per Review 2 item 12)
 
-1. Measured body data gives a corporate wellness platform a progress signal the scale misses,
-   supporting personalization and engagement. See what to evaluate. (155 chars). **Recommended.**
-   Distinctive hook echoing the article's own opening logic, carries `corporate wellness platform`
-   verbatim exactly once, soft CTA, no title repeat.
-2. A corporate wellness platform can use measured body data for progress visibility,
-   personalization, and engagement. See what to evaluate in a provider. (150 chars). Plainer,
-   closer to a direct value statement.
-3. Repeatable body data helps a corporate wellness platform show real progress between check-ins,
-   supporting personalization and engagement. See what to evaluate. (159 chars). Closest to the
-   article's closing sentence, near the top of the character range.
+1. Measured body data gives a wellness platform a repeatable progress signal the scale misses,
+   supporting personalization and engagement. See what to evaluate. (**156 chars**).
+   **Recommended.** Echoes the article's own reframed opening (Review 2 item 1), zero
+   "corporate," soft CTA, no title repeat.
+2. Repeatable body data helps a wellness platform show real progress between check-ins that a
+   scale alone cannot capture. See what to evaluate in a provider. (**154 chars**). Leads with
+   "repeatable," closer to the article's closing sentence; avoids the recommended option's
+   "repeatable... progress" near-echo two words apart.
+3. For a wellness platform, measured body data turns a flat scale reading into a comparable
+   progress record between check-ins. See what to evaluate in a provider. (**159 chars**). Opens
+   with the keyword phrase itself rather than the product, most literal restatement of what the
+   article argues.
 
-## Image / alt text suggestions
+All three: counted (not estimated) at the stated lengths, exactly one instance of `wellness
+platform`, zero instances of `corporate`, zero em dashes, no title repeat.
 
-Not produced; these need design. Renumbered against the revision-2 section structure (v1's
-section numbers no longer apply, since the outline changed completely).
+## Image / alt text suggestions (unchanged from v2, still not produced)
+
+Section numbers below use the article's own numbering convention (intro = section 1, then each
+H2 in order), which is unchanged from v2 since Review 2 touched no heading.
 
 1. **Hero.** Baseline and follow-up 3D body models side by side with changed measurements called
    out. Alt: "Side-by-side 3D body model comparison showing measurement changes between two
@@ -302,7 +416,7 @@ section numbers no longer apply, since the outline changed completely).
 
 # AI Body Data for Wellness Platforms: Progress Tracking, Personalization, and Engagement
 
-A wellness platform has limited visibility into physical progress between check-ins. What it usually holds is a self-reported entry and a scale reading. Neither is reliably comparable to itself three months later, because people estimate, round, and forget, and a single weight number compresses every kind of physical change into one direction of travel. Repeatable body data adds a third record, captured the same way each time and timestamped, which is what allows two check-ins months apart to be compared. Better visibility can support engagement, though it does not guarantee retention.
+A wellness platform has limited visibility into physical progress between check-ins. What it usually holds is a self-reported entry and a scale reading. Self-reported entries get estimated or rounded, and they are not always collected the same way twice. A scale reading compares cleanly against last month's. Its limitation is a different one: one number compresses every kind of body change into a single direction of travel. Repeatable body data adds a third record, measurements and visual context captured under the same protocol each time and timestamped, which is what allows two check-ins months apart to be compared. Better visibility can support engagement, though it does not guarantee retention.
 
 The same gap shows up across wellness platforms of very different shapes: consumer wellness apps, lifestyle-change platforms, nutrition and habit-coaching products, digital wellbeing ecosystems, and coaching that is human-led, automated, or a mix of both. Corporate wellness is one application of the same capture layer.
 
@@ -338,31 +452,31 @@ Progress visibility is the mechanism that makes body data worth integrating into
 
 A member who has been consistent for eight weeks opens the app. Instead of a weight number that has barely moved, they see their current 3D model beside the one from their baseline, with the measurements that changed listed next to it. Waist measurement down. Chest and shoulders holding. The product now shows a more complete view of progress than the scale reading on its own.
 
-Repeatability is especially important for longitudinal tracking, because the comparison runs between a member and their own earlier scan. If scan-to-scan noise is larger than the change a member produced in eight weeks, the comparison invents movement that did not happen, or hides movement that did. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm. <!-- claim: FX-003 --> Accuracy is a separate property, measured against a reference method and evaluated with its own evidence.
+Repeatability is especially important for longitudinal tracking, because the comparison runs between a member and their own earlier scan. If scan-to-scan noise is larger than the change a member produced in eight weeks, the comparison may show apparent change that did not happen, or miss change that did. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm. <!-- claim: FX-003 --> Accuracy is a separate property, measured against a reference method and evaluated with its own evidence.
 
-Which numbers to show a member is a product decision with real consequences. Showing everything produces a dashboard that reads as clinical and invites interpretation the program cannot support. A defensible default is to surface the small number of measurements tied to the member's own goal, keep the visual comparison prominent, and hold the full measurement set server-side for program reporting. Body fat percentage deserves particular care in a wellness setting: it works well as a trend line and poorly as a headline number.
+Which numbers to show a member is a product decision with real consequences. Showing everything produces a dashboard that reads as clinical and invites interpretation the program cannot support. A defensible default is to surface the small number of measurements tied to the member's own goal, keep the visual comparison prominent, and limit the wider measurement set to authorized program teams with a reporting need for it. Body fat percentage deserves particular care in a wellness setting: it can be more useful as a trend than as an isolated headline number.
 
-Underneath the product decisions sits a narrower measurement point. The comparison holds only when both sides of it were captured the same way: same guided pose, similar clothing, similar time of day. A body composition tracking app that allows those conditions to drift between check-ins produces a chart that moves for reasons the member did not cause.
+Underneath the product decisions sits a narrower measurement point. The comparison holds only when both sides of it were captured the same way: the same guided pose and similar capture conditions. A body composition tracking app that allows those conditions to drift between check-ins produces a chart with reduced comparability.
 
 ## Personalization using goals, starting points, and trends
 
 A wellness app that knows a member's stated goal knows their intention. A measured baseline adds where that member is starting from physically, and a repeat capture adds which direction things moved.
 
-Body data is one input among several, and it works when combined with the others: the member's stated goals, their preferences, activity and habit information, their schedule and available resources, any relevant limitations, and their previous progress. A scan carries no information about motivation, food environment, or the hours a member actually has free, and each of those influences outcomes more than a waist measurement. Appropriate targets and nutrition intake are set by the program and the people running it.
+Body data is one input among several, and it works when combined with the others: the member's stated goals, their preferences, activity and habit information, their schedule and available resources, any relevant limitations, and their previous progress. A scan carries no information about motivation, food environment, or the time a member can commit, and each of those also influences outcomes. Appropriate targets and nutrition intake are set by the program and the people running it.
 
 What a measured record adds that an onboarding survey cannot is a starting point that updates. A survey personalizes a wellness tracker app once, at sign-up; a repeated body record allows the program to adjust as the member changes.
 
-Programs can also group members by measured starting point, which supports more meaningful cohort comparisons than grouping by self-declared goal. That use belongs in aggregated reporting, limited to the purpose members were told about at consent, and behind the same privacy controls as the record itself.
+At the program level, the same records aggregate into body-data trends for reporting: participation and change across appropriately defined cohorts. That use stays within the purpose members were told about at consent and behind the same privacy controls as the record itself. Segmentation is a separate question, and measured body characteristics are a weak default basis for it, particularly where the population is a workforce.
 
 Nutrition and lifestyle coaching platforms use the same input on longer horizons, where body composition adds context to intake planning that a coach or dietitian sets. That case shares the capture layer and deserves its own treatment.
 
 ## Engagement and coaching
 
-A recurring capture gives a program something specific to report back at a check-in, which supports more meaningful feedback than a weight entry on its own. It can make progress easier to understand. That matters most when weight has been flat for a month. It creates an additional check-in opportunity in a product that otherwise waits for the member to open the app. Across a program cycle, that can contribute to continued engagement.
+A recurring capture gives a program something specific to report back at a check-in, which supports more meaningful feedback than a weight entry on its own. It can make progress easier to understand, and that matters most when weight has been flat for a month. It creates an additional structured check-in in a product that otherwise waits for the member to open the app. The record it leaves is also what coaching and content selection can draw on.
 
-The limit sits right beside it. A progress view supports app engagement, and what a member gets out of the program still comes down to content quality, coaching, and program design.
+The limit sits right beside it. A progress view can support app engagement, and what a member gets out of the program still comes down to content quality, coaching, and program design.
 
-Coaching is where a repeatable record earns most. In a wellness coach app with human coaches, a scan gives the coach a starting point and a change record to work from, a better basis than asking a member how they think it is going. In fully automated programs the same record feeds content selection and the progress display, and judgement about a member stays with a person.
+Coaching is where a repeatable record earns most. In a wellness coach app with human coaches, a scan gives the coach a starting point and a change record to work from, additional context alongside the member's own account of how it is going. In automated programs the same record can support content selection and the progress display, while the platform stays responsible for the rules and recommendations it applies. Human review can be specified for reward, access, or other consequential decisions.
 
 One user-experience consideration is specific to wellness. Body measurement is appropriate only when physical change is part of the member's chosen goal, which makes body-data features work best when they are optional and goal-led. Not every wellness journey needs a body measurement at all: a sleep, stress, or habit-formation goal can be complete without one. Visual comparisons should use neutral, non-judgemental language. Progress should not be reduced to appearance or weight loss, and members should be able to control which indicators they see.
 
@@ -371,20 +485,20 @@ One user-experience consideration is specific to wellness. Body measurement is a
 Five steps cover the workflow, and the order matters.
 
 1. Consent and baseline capture. The member agrees to what is captured and stored, then completes a first scan from two photographs. <!-- claim: FX-007 -->
-2. Selection of goal-relevant outputs. The program decides which measurements and estimates the member sees, and which stay server-side for reporting.
+2. Selection of goal-relevant outputs. The program decides which measurements and estimates the member sees, and which outputs are retained or made available to authorized program teams.
 3. Result presentation. The first result sets a member's understanding of the whole feature, which is why plain labels and a one-line explanation of each number earn their space.
-4. Recurring capture under consistent conditions. Same guided pose, similar clothing, similar time of day.
+4. Recurring capture. The same guided pose and similar capture conditions each time, which is what keeps it comparable with the baseline.
 5. Comparison and connection to the platform's next step. The new capture is compared against the baseline and the previous scan, and the program ties that comparison to the next action it wants.
 
-Cadence is worth setting deliberately: an interval matched to the pace at which change is actually measurable, with four to twelve weeks a practical range.
+Cadence is worth setting deliberately. A four-to-twelve-week interval can be a practical starting point, depending on the program goal, the expected magnitude of change, and capture conditions.
 
-Division of labour is the other decision. The platform owns program logic and the member relationship: onboarding, consent wording, the scan entry point, result display. The body-data layer owns capture, measurement output, and the comparable record.
+Division of labour is the other decision. The platform owns program logic and the member relationship, from onboarding through to result display. The body-data layer owns capture, measurement output, and the comparable record.
 
 Instrument five measures from the first pilot: scan completion rate, retake rate, second-scan rate, engagement with the progress view, and whether members can explain what their progress view is telling them. Wellness program software teams can also compare continued participation between members who scan and members who do not. A gap there is a signal to investigate, and on its own it establishes nothing about cause.
 
 ## What to evaluate in a body-data provider
 
-Accuracy is the question every evaluation opens with, and on its own it has no answer. The answerable version carries five conditions: accurate enough for which decision, against which reference method, under which capture protocol, for which population, at what tolerance. Acceptable error depends on the expected magnitude of change and on the workflow. Internal validation against expert manual measurement puts overall accuracy at 96-97%, with typical absolute error of 1.5-2.0 cm, and the [body scanning accuracy framework](https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/) sets out how those figures were produced and how to ask about the two properties separately. <!-- claim: FX-001 --> <!-- claim: FX-002 -->
+Accuracy is the question every evaluation opens with, and a headline accuracy figure is incomplete on its own. The answerable version carries five conditions: accurate enough for which decision, against which reference method, under which capture protocol, for which population, at what tolerance. Acceptable error depends on the expected magnitude of change and on the workflow. Internal validation against expert manual measurement puts overall accuracy at 96-97%, with typical absolute error of 1.5-2.0 cm, and the [body scanning accuracy framework](https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/) sets out how those figures were produced and how to ask about the two properties separately. <!-- claim: FX-001 --> <!-- claim: FX-002 -->
 
 Ask about repeatability separately. It carries particular weight for longitudinal tracking against a member's own earlier record. <!-- claim: FX-003 -->
 
@@ -392,7 +506,7 @@ Population takes one question: what population was the model validated on? For F
 
 Phones, lighting, and clothing all vary across a distributed population, which makes capture reliability the next filter. Ask what pose validation runs at capture, how retakes are handled, and whether guided capture is supplied or built.
 
-Data handling is a procurement gate. In most enterprise deployments, the customer acts as controller and 3DLOOK acts as processor under the General Data Protection Regulation (GDPR). Photos are permanently removed immediately after processing, or within 30 days, depending on the client's configured policy, and are automatically blurred when stored. Storage is Amazon S3 in the client's region, with server-side encryption (SSE-S3) always on. No personal identifiers are processed, and photos are not used to train the model. <!-- source: compliance.md, approved wordings per review-1-decisions §C --> The Health Insurance Portability and Accountability Act (HIPAA) is worth asking about where a program touches US healthcare. <!-- claim: FX-014 --> <!-- TODO(publish): swap this block for a link to the Data, Privacy, Security & Regulatory FAQ once it publishes; the inline answers above stand until then -->
+Data handling is a procurement gate. In most enterprise deployments, the customer acts as controller and 3DLOOK acts as processor under the General Data Protection Regulation (GDPR). Photos are permanently removed immediately after processing, or within 30 days, depending on the client's configured policy, and are automatically blurred when stored. Storage is Amazon S3 in the client's region, with server-side encryption (SSE-S3) always on. FitXpress does not receive names, contact details, or other direct identifiers that connect the scan with a specific individual. Photos are not used to train the model. <!-- source: compliance.md, approved wordings per review-1-decisions §C --> The Health Insurance Portability and Accountability Act (HIPAA) is worth asking about where a program touches US healthcare. <!-- claim: FX-014 --> <!-- TODO(publish): swap this block for a link to the Data, Privacy, Security & Regulatory FAQ once it publishes; the inline answers above stand until then -->
 
 The last question is integration effort: how long until a member can complete a check-in inside the existing product and see a comparison.
 
@@ -400,17 +514,15 @@ The last question is integration effort: how long until a member can complete a 
 
 FitXpress is the capture and structured-data layer inside a wellness platform's own product. Two photographs in, more than 80 measurements and body composition estimates out, in under 45 seconds. <!-- claim: FX-006 --> <!-- claim: FX-007 --> <!-- claim: FX-008 --> Integration runs through an application programming interface (API), a web software development kit (SDK), and mobile SDKs, with the guided-capture layer supplied. The platform keeps the rest: onboarding, consent wording, the scan entry point, result display, and which metrics appear at all. For a team adding a 3D body scanning app flow to an existing product, that division is what sets the scope of the build.
 
-The boundary belongs in the same breath. It is not positioned as a medical device. FitXpress does not diagnose conditions or screen for them. Decisions about program access stay with the program. Dual-energy X-ray absorptiometry (DXA) and bioelectrical impedance analysis (BIA) measure composition against their own references, and a mobile scan is no substitute for either. On fraud, FitXpress can provide capture-quality and verification signals, while final determinations are reached by a person. Adding capture to a program leaves compliance where it was; it supports a workflow that a compliant program has already defined.
+The boundary belongs in the same breath. It is not positioned as a medical device. FitXpress does not diagnose conditions or screen for them. Decisions about program access stay with the program. Dual-energy X-ray absorptiometry (DXA) and bioelectrical impedance analysis (BIA) measure composition against their own references, and a mobile scan is no substitute for either. On fraud, FitXpress can provide capture-quality and verification signals, while final determinations are reached by a person. The platform remains responsible for its program rules and applicable compliance requirements.
 
 Teams that want to see the capture flow and the returned data inside a live member-facing product can start with [FitXpress for connected and digital fitness](https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/).
 
 ## Boundaries and related hubs
 
-**Corporate wellness.** Corporate wellness is one application of everything above. Standardized remote capture can support a distributed wellness program, where a workplace wellness app reaches populations that onsite-only programs never will. Reward-linked applications carry additional governance and review requirements. A corporate wellness platform working on that specific problem, including an employee wellness app tied to an employee wellness program with incentives attached, will find verification covered in depth in [wellness rewards verification for employers and insurers](https://3dlook.ai/content-hub/wellness-rewards-verification-employers-insurers-using-ai-3d-body-scanning/).
+**Corporate wellness.** Corporate wellness is one application of everything above. Standardized remote capture can support a distributed wellness program, where a workplace wellness app reaches members without requiring them to attend an onsite assessment. Reward-linked applications carry additional governance and review requirements. A corporate wellness platform working on that specific problem will find verification covered in depth in [wellness rewards verification for employers and insurers](https://3dlook.ai/content-hub/wellness-rewards-verification-employers-insurers-using-ai-3d-body-scanning/).
 
 Workout programming and performance sit with [AI in fitness](https://3dlook.ai/content-hub/ai-in-fitness-industry/). Patient monitoring sits with healthcare and telehealth content. Comparing measurement methods against each other starts with [how to measure body composition](https://3dlook.ai/content-hub/how-to-measure-body-composition/). The wider map of body data across health programs is the [AI body data hub](https://3dlook.ai/content-hub/ai-body-data-health-hub/).
-
-The same rule holds across all of them: program access is decided by the program, under its own rules, with a person answerable for the decision.
 
 ## Frequently asked questions
 
@@ -427,10 +539,10 @@ No. Those methods use different references and answer different questions, and a
 No. The scan produces a measurement record. Decisions about members and their access to a program are taken by the program under its own rules, and a person stays responsible for them.
 
 **What data is captured and stored, and what happens to the photos?**
-Two photographs are processed into measurements, body composition estimates, and a 3D model. Photos are permanently removed immediately after processing, or within 30 days, depending on the client's configured policy, and are automatically blurred when stored. Storage sits in the client's own region, no personal identifiers are processed, and photos are not used to train the model. <!-- TODO(publish): link to the Data, Privacy, Security & Regulatory FAQ here once it publishes; the answer above stands until then -->
+Two photographs are processed into measurements, body composition estimates, and a 3D model. Photos are permanently removed immediately after processing, or within 30 days, depending on the client's configured policy, and are automatically blurred when stored. Storage sits in the client's own region. FitXpress does not receive names, contact details, or other direct identifiers that connect a scan with a specific individual. Photos are not used to train the model. <!-- TODO(publish): link to the Data, Privacy, Security & Regulatory FAQ here once it publishes; the answer above stands until then -->
 
 **How often should a wellness program run check-in scans?**
-A practical range for most wellness apps is four to twelve weeks. Weekly captures are dominated by normal daily variation in the body and can discourage members. Intervals longer than a quarter leave too sparse a record for anyone to feel progress.
+Four to twelve weeks is a practical starting point for most wellness apps, and the right interval depends on the program goal, the expected magnitude of change, and how consistently members capture. Weekly captures sit close to normal daily variation in the body. Intervals longer than a quarter leave a sparse record to compare against.
 
 ## Where to go next
 
