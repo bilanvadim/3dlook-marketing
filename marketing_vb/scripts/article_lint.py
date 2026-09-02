@@ -254,7 +254,12 @@ def gate_claims(body: str, pack, line_offset: int = 0):
     for line, ln in body_lines(body, line_offset):
         if "claim:" in line:
             continue  # the paragraph is sourced; which figure maps to which id is the editor's call
-        figs = {m.group(1) for m in NUM.finditer(strip_comments(line))}
+        # Strip URLs first. A date path like /uploads/2026/09/ is not a product figure, and
+        # asking for a claim marker on the year trains people to ignore this gate. Alt text
+        # survives the strip on purpose: a number stated in alt text IS a published claim.
+        scan = re.sub(r"\((?:https?:)?//?[^)\s]*\)", "()", strip_comments(line))
+        scan = re.sub(r"https?://\S+", " ", scan)
+        figs = {m.group(1) for m in NUM.finditer(scan)}
         for f in sorted(figs):
             problems.append(f"line {ln}: figure {f!r} sits in a paragraph with no claim marker")
 
@@ -344,16 +349,28 @@ def gate_superseded(body: str, allow_discussion: bool = True, line_offset: int =
 def gate_links(body: str, pack):
     """Gate 6. All four internal-link directions, canonical form, no bare URLs."""
     problems = []
-    urls = re.findall(r"https://3dlook\.ai/[A-Za-z0-9/_.-]*", body)
+    # An asset is a file, not a page. The canonical trailing slash and the anchor-phrase rule
+    # are about pages; forcing a "/" onto `/uploads/2026/09/banner_1.webp` would break it.
+    # Illustrations live at `3dlook.ai/wp-content/uploads/YYYY/MM/*.webp`, which is how the
+    # published corpus does it, so this fired on every article that carried an image.
+    ASSET = re.compile(r"/wp-content/|\.(?:webp|png|jpe?g|gif|svg|avif|mp4|webm|pdf)$", re.I)
+
+    all_urls = re.findall(r"https://3dlook\.ai/[A-Za-z0-9/_.-]*", body)
+    urls = [u for u in all_urls if not ASSET.search(u)]
+    assets = [u for u in all_urls if ASSET.search(u)]
+
     for u in set(urls):
         if not u.endswith("/"):
             problems.append(f"non-canonical URL, missing trailing slash: {u}")
     for m in re.finditer(r"(?<!\()(?<!\]\()https://3dlook\.ai/\S+", body):
+        if ASSET.search(m.group(0)):
+            continue
         seg = body[max(0, m.start() - 2):m.start()]
         if not seg.endswith("]("):
             problems.append(f"bare URL, not on an anchor phrase: {m.group(0)[:60]}")
 
-    info = {"links_total": len(urls), "links_distinct": len(set(urls))}
+    info = {"links_total": len(urls), "links_distinct": len(set(urls)),
+            "asset_urls": len(assets)}
     if pack is None:
         return not problems, problems + ["no context pack, link-direction gate skipped"], info
 

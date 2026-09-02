@@ -116,7 +116,7 @@ is the number this package tracks per Review 2 item 12. `term group broad: total
 `corporate: total 15` (ratio ~4:1) is consistent with v2 and confirms the audience-broadening
 strategy from Review 1 was not undone by Review 2's sentence-level edits.
 
-## SEO checklist (14/15 — images still open, same shape as v2)
+## SEO checklist (14/15 — images planned but not produced, same shape as v2)
 
 - [x] **Primary keyword placement.** `wellness platform` opens paragraph 1 of the intro ("A
   wellness platform has limited visibility...", line 23) and opens section 1's first sentence
@@ -189,7 +189,7 @@ strategy from Review 1 was not undone by Review 2's sentence-level edits.
   session, not a reasoned estimate — the failure mode flagged in this agent's own brief (2026-08-25
   incident, both seo-editor and seo-publisher skipped the run and guessed 0.6/1000) does not apply
   here.
-- [ ] **Images / alt text: still not produced.** Carried forward from v2 unchanged. Needs design.
+- [ ] **Images / alt text: planned, not produced.** Changed from v2: the plan now exists (three banners, placements, alt text, constraints and rejected candidates, see the Illustration plan section and `illustrations.md`), and the alt text is written. What is missing is the assets. **Two dependencies, in order:** the Figma blog-banner exports must land in `brand-assets/past-posts/_figma-exports/blog-banners/` (Vadim), then design produces three `.webp` files. The checklist item stays open until the files exist and are referenced in `final.md`.
 
 ## Content strategy checklist (9/9, one item fulfilled via a documented, plan-approved deviation)
 
@@ -354,8 +354,17 @@ Five items. One closes this revision, one gains a note; three survive unchanged 
    Vadim.
 4. **"positioned as" is in its third policy state.** Still worth settling permanently in the
    source Doc rather than re-litigating per article. Owner: editorial owner + Vadim.
-5. **Images still not produced.** The reviewer explicitly names illustration planning as the next
-   step after this pass. Owner: design. Suggestions carried forward below.
+5. **Images: planned 2026-09-02, not produced.** The reviewer named illustration planning as the
+   next step and that half is now done: three banners with placements, alt text, six
+   article-specific constraints and a documented list of what was rejected and why, in
+   `illustrations.md` and summarised above. **The blocker is upstream of design.** The Figma
+   file cannot be read from here (authentication), `brand-assets/past-posts/_figma-exports/`
+   does not exist, and `brand-assets/` holds zero image files. `visual-brief` already reads that
+   directory and is instructed to STOP without it, so this gap is wired into the pipeline and
+   has simply never been filled. **Owner: Vadim for the export, then design for the assets.**
+   Two smaller open questions inside the plan: the 1200 px body width is inferred from the site
+   container rather than confirmed, and the featured / OG image slot convention cannot be read
+   from the corpus.
 6. **NEW, small: `compliance.md` has no article-grade privacy line.** The short forms ("process
    zero personal identifiers" / "no personal identifiers stored") are correctly labelled for
    outbound and social, but there is no page/article-grade version on file, so the next writer who
@@ -391,26 +400,102 @@ Five items. One closes this revision, one gains a note; three survive unchanged 
 All three: counted (not estimated) at the stated lengths, exactly one instance of `wellness
 platform`, zero instances of `corporate`, zero em dashes, no title repeat.
 
-## Image / alt text suggestions (unchanged from v2, still not produced)
+## Illustration plan (revision 3, planned 2026-09-02)
 
-Section numbers below use the article's own numbering convention (intro = section 1, then each
-H2 in order), which is unchanged from v2 since Review 2 touched no heading.
+Full designer brief: **`illustrations.md`** in this directory. What follows is what needs
+approving at checkpoint 2. **This replaces the four v1 suggestions**, which proposed a hero
+image and an evaluation-checklist card; both are wrong against the published corpus and are
+explained under "rejected" below.
 
-1. **Hero.** Baseline and follow-up 3D body models side by side with changed measurements called
-   out. Alt: "Side-by-side 3D body model comparison showing measurement changes between two
-   wellness check-ins."
-2. **Section 7 (Practical wellness-platform workflow) diagram.** The five-step sequence: consent
-   and baseline capture, selection of goal-relevant outputs, result presentation, recurring
-   capture, comparison and next step. Alt: "Five-step wellness-platform workflow from consent and
-   baseline scan through repeat check-ins to program comparison."
-3. **Section 4 (Progress visibility beyond scale weight).** Member-facing progress view where the
-   scale is flat and measurements have moved. Alt: "Wellness app progress view showing waist
-   measurement change while bodyweight stays flat."
-4. **Section 8 (What to evaluate in a body-data provider).** The evaluation questions as a
-   checklist card. Alt: "Evaluation checklist for wellness platforms selecting a body-data
-   provider."
+### What the corpus does, measured
 
----
+Of the nine articles in `brand-assets/past-articles/blog/`, **exactly one carries images**:
+`online-pharmacy-bmi-verification`, 2,638 words, **2 images**, **no hero**, both in-body,
+`.webp` at `/wp-content/uploads/YYYY/MM/banner_N.webp`. Alt text describes the frame first and
+ties to the keyword last. So the house norm is two in-body banners. This article is 2,790 words
+and hub-shaped, so three is defensible, with banner 3 the one to drop if capacity is short.
+
+### The three banners
+
+| # | Placement | What it shows | Why an image rather than prose |
+|---|---|---|---|
+| 1 | `final.md` line 53, **Progress visibility beyond scale weight** | Member-facing progress view comparing two check-ins: bodyweight unchanged, a body measurement moved, baseline and current 3D model alongside | The only one on the list showing something prose physically cannot. Both reviewers named this the article's strongest section |
+| 2 | line 87, **Practical wellness-platform workflow** | The five steps as a horizontal flow, with the platform / body-data ownership split marked | A sequence is what a diagram reliably beats prose at. Already a house component pattern (DESIGN.md §11) |
+| 3 | line 23, **the opening comparison** | Three columns: self-reported entry, scale reading, repeatable body data, each with its own distinct limitation | Review 2 item 1 rebuilt this paragraph so the three records no longer share a limitation. That correction is the article's frame |
+
+**Alt text, as it will ship:**
+
+1. "Wellness app progress view comparing two member check-ins, where bodyweight is unchanged and
+   the waist measurement has moved, shown beside a baseline and current 3D body model."
+2. "Five-step wellness platform workflow from consent and baseline capture through recurring
+   check-ins to comparison, with platform responsibilities separated from the body-data layer."
+3. "Three ways a wellness platform can record physical progress, comparing a self-reported
+   entry, a scale reading, and repeatable body data."
+
+### Rejected, with the reason
+
+| Candidate | Why not |
+|---|---|
+| Hero banner (was v1 suggestion 1) | The corpus does not use one; the H1 leads. A hero here would be a new site convention, not this article's call |
+| Evaluation checklist card (was v1 suggestion 4) | Re-renders prose as graphics and adds nothing, and a "checklist" graphic invites being read as a spec or certification, the exact reading the accuracy section works to prevent |
+| The value-map table | Already a table. The article carries seven; a graphic version duplicates it and reads worse on mobile |
+| A product shot in "Where FitXpress fits" | Tips a hub page toward a product page. That is the failure the cannibalization guardrail exists to prevent |
+
+### Six constraints that come from this article's own claims
+
+Brand tokens are in `illustrations.md` §7. These are the ones where breaking the rule makes the
+image contradict the text:
+
+1. **Nothing depicting a decision, score, diagnosis, eligibility or reward outcome.** A
+   wellness-score dial, traffic light, or approved/declined badge would contradict the boundary
+   section visually. Most likely way to get this wrong.
+2. **A number inside an image must come from an approved claim or read as illustrative.**
+   Do not invent a change figure such as "waist −3.2 cm over 8 weeks". **Verified 2026-09-02:
+   `article_lint.py` fails an invented figure in alt text, and is blind to one rendered inside
+   the image.** This one cannot be automated; it stays with the designer and with review.
+3. **A stored photo is shown blurred; a live capture view is not a stored photo.** Blur is
+   automatic *when photos are stored*, per `compliance.md` and per the article. The 3D model is
+   a mesh and carries no face.
+4. **No named vendors, no customer logos.** Zero wellness proof points exist. Yazen and UK Meds
+   are GLP-1 and pharmacy and must not be re-labelled as wellness in an image any more than in
+   prose.
+5. **Not corporate-coded.** No office desks, lanyards, HR dashboards or benefits-portal styling.
+   The article's broad:corporate term balance is 4.3 to 1 and the artwork should not invert what
+   Review 1 item 2 removed from the text.
+6. **Body representation.** A range of body types, no before/after weight-loss trope, no arrows
+   implying a body should move one way. The article's own UX paragraph asks for neutral,
+   non-judgemental comparison.
+
+### Blocked, and this is the one thing needed from Vadim
+
+The Figma file (`Blog-banners`, node `2088-4`) **cannot be read from here**: Figma requires
+authentication and a fetch returns nothing but the word "Figma".
+
+- `brand-assets/past-posts/_figma-exports/` **does not exist**
+- `brand-assets/` contains **zero** image files
+- `visual-brief` step 3 already reads `_figma-exports/blog-banners/` and is instructed to STOP
+  when it is missing, so the gap is known and wired in, just never filled
+
+**Export the banner frames as PNG into `brand-assets/past-posts/_figma-exports/blog-banners/`.**
+That is the path the pipeline already expects, so filling it fixes this for every future
+article. Until then the brief is derived from `DESIGN.md` tokens, which keeps a designer
+on-brand but will not match the established banner composition.
+
+### Production spec
+
+`.webp`, named `banner_1..3.webp`, at `/wp-content/uploads/2026/09/`. Body width **1200 px at
+2x** is *inferred* from the site container in DESIGN.md §4, not confirmed: exact export sizes
+are not in the design export. **Open question:** the featured / OG image is a separate slot from
+in-body banners and is what appears in a social share; the corpus markdown does not show it, so
+the convention cannot be read from the repo. Recommend banner 1 doubles as featured, to be
+confirmed with whoever owns WordPress.
+
+### Nothing goes into `final.md` yet
+
+The article carries no image markup and should not until the assets exist, because a broken
+reference is worse than no image. When the files are produced: insert the three `![alt](url)` at
+the named lines, re-run `article_lint.py` (must stay PASS), regenerate this package so its
+embedded copy matches.
 
 ## Article
 
