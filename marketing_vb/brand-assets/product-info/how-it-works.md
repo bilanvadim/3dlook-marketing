@@ -62,7 +62,7 @@ Two integration patterns:
 
 - Collected over 9+ years
 - Locations: US, Europe
-- Demographics: ages 16-78, weight 38-210 kg, height 150-205 cm, 48% male / 52% female
+- Demographics: ages 16-78, weight 38-210 kg, height 150-220 cm, 48% male / 52% female (height range confirmed by Vadim 2026-09-02, superseding the 150-205 cm figure)
 - Composition: 150,000+ photographs, 30,000+ 3D scans, 430,000+ individual measurements
 - Hardware reference scanner: 4 dynamic cameras, 86 parameters per person, including sitting position and breathing variations, 5M+ points per 3D model
 - Photo flow simulation: 34 different photo configurations per user (distance, angle, slope, lighting variations)

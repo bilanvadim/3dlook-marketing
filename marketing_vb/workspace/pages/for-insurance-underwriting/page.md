@@ -126,7 +126,7 @@ answer, and a figure quoted without them means very little.
 2. **Measurement protocol.** Guided capture through the SDK, with real-time pose and framing validation.
    Quality falls away when capture is unguided or clothing is oversized, which is why the capture layer is
    the one surface that is never white-labelled.
-3. **Population covered.** The model's demographic coverage spans ages 16 to 78, heights 150 to 205 cm
+3. **Population covered.** The model's demographic coverage spans ages 16 to 78, heights 150 to 220 cm
    and weights 38 to 210 kg, across the US and Europe, at a 48% male and 52% female distribution. A body
    outside that range is outside what the figures describe.
 4. **Intended workflow.** Supporting evidence inside underwriter review.
@@ -318,7 +318,7 @@ not billable, and the failure reason is returned with the record.
 
 ### What is behind the accuracy figures?
 Internal validation against expert manual measurement, with demographic coverage spanning ages 16 to 78,
-heights 150 to 205 cm and weights 38 to 210 kg across the US and Europe. Typical absolute error is 1.5 to
+heights 150 to 220 cm and weights 38 to 210 kg across the US and Europe. Typical absolute error is 1.5 to
 2.0 cm, and scan-to-scan repeatability is under 1 cm. Detailed methodology is available under a non-disclosure
 agreement. Peer review and clinical certification are not part of that record.
 

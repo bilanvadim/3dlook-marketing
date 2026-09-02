@@ -29,8 +29,9 @@ date: 2026-08-31
 
 ## Conflicting numbers, which guardrail #2 forbids resolving silently
 
-6. `proof-points.md` says demographic coverage 150 to 205 cm; `about-me.md` says the validation
-   population is 150 to 220 cm. **Owner: Vadim.**
+6. ~~`proof-points.md` says demographic coverage 150 to 205 cm; `about-me.md` says the validation
+   population is 150 to 220 cm.~~ **RESOLVED 2026-09-02 — Vadim: 150 to 220 cm.** Propagated to
+   `proof-points.md`, `how-it-works.md`, `faq.md`, this page and `fact-sheet.md`.
 7. `pricing.md` contradicts the live `/pricing/` page. The page uses the live figures. **Owner: Vadim.**
 8. Publication rights on "112,100 scans across 67 active customers in 2025", which is marked Internal in
    `proof-points.md` and does not appear anywhere on the live site. **Owner: Vadim.**

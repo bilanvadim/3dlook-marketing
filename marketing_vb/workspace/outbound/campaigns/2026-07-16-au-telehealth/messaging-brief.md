@@ -21,7 +21,7 @@ Australian health insurers (Medibank, Bupa, HCF) and digital health/telehealth p
 
 ### Scale & training
 - 9+ years of training data: 150,000+ photos, 30,000+ 3D scans, 430,000+ measurements
-- Demographic coverage: ages 16-78, weight 38-210 kg, height 150-205 cm
+- Demographic coverage: ages 16-78, weight 38-210 kg, height 150-220 cm (corrected 2026-09-02)
 
 ### Customer evidence
 - **Yazen** — 34,000 scans in 2025, weight loss patient progress tracking

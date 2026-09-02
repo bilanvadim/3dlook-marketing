@@ -79,7 +79,7 @@ If Asselya intended a different fact to flag (Smart Scales MAE / SD / relative-e
 | Smart Scales 2.1 kg / 3.11% / 3.5% | "Internal testing shows..." | ✅ |
 | 0.40 cm ISO benchmark | Reference disclosed inline (3D scanner average), and explicit warning not to combine with internal study | ✅ |
 | "thousands of participants" | "trained on a proprietary dataset of thousands of participants across US and Europe" — scope claim, not performance claim, no hedge needed | ✅ |
-| Demographics 16–78 / 150–205 cm / 38–210 kg | "The internal validation population covers..." — scope disclosure | ✅ |
+| Demographics 16–78 / 150–220 cm / 38–210 kg | "The internal validation population covers..." — scope disclosure | ✅ |
 | 1.5–2.2 cm waist-circumference industry range | "Mobile body scanning systems in this category typically operate in..." | ✅ |
 
 **All sampled performance claims sit in explicit hedges. None are naked numbers.**

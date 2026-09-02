@@ -34,7 +34,7 @@ PROOF = {
     "weight": "±3.5% average weight estimation error",
     "repeatability": "95%+ repeatability across scans",
     "training": "9+ years of training data: 150,000+ photos, 30,000+ 3D scans, 430,000+ measurements",
-    "demographic": "trained on ages 16-78, weight 38-210 kg, height 150-205 cm",
+    "demographic": "trained on ages 16-78, weight 38-210 kg, height 150-220 cm",
     "yazen": "Yazen — 34,000 scans in 2025, weight loss patient progress tracking",
     "ukmeds": "UK Meds — 7,500 scans, BMI verification for online pharmacy dispensing",
     "arr": "100+ customers all-time, 67 active, $1.084M ARR",

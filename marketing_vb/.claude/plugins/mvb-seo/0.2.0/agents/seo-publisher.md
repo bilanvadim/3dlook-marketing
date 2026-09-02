@@ -44,7 +44,7 @@ tools: Read, Write, Bash
 - [ ] No generic AI patterns (тройные параллелизмы, em-dash rhetoric)
 - [ ] **Terminology guardrails** (`brand-assets/content-strategy/terminology-guardrails.md`): нет em dash; нет `objective` про наш вывод, `reader / audience / the following sections / below`, `this article / this guide`, `by hand`, `let`, `plus` как коннектора, `so` как коннектора выгоды, `positioned as` про продукт или регуляторный статус, presumed-reaction фраз, поведения приписанного понятиям
 - [ ] **Abbreviations (M1 + исключение):** непонятные аббревиатуры развёрнуты при первом употреблении (DEXA, GLP-1, FDA, ICH, GCP); BMI, CEO, UK, US, EU — БЕЗ расшифровки
-- [ ] **Medical framing сформулирован напрямую:** «FitXpress is not a medical device», не «is not positioned as a medical device»
+- [ ] **Medical framing:** «It is not positioned as a medical device.» — формулировка восстановлена 2026-09-02 (Review 1, решение Вадима). «positioned as» про любой ДРУГОЙ product / intended-use / регуляторный факт по-прежнему FAIL
 - [ ] Ссылки на смысловых анкорах; сторонние источники — нейтральные качественные сайты, не vendor-блоги
 - [ ] **Ai-tells детектор РЕАЛЬНО прогнан** (не оценка): `python3 brand-assets/style-guides/scripts/detect-ai-tells.py workspace/seo/articles/{slug}/draft-edited.md --channel article --summary`. В пакет вставь фактический вывод: `ai_density_per_1000_words`, `severity`, `hard_fails`, `house_rule_violations`. Оценка «по правилам вручную» — это ❌, а НЕ судейский pass
 - [ ] Images / alt text suggestions (если нужны)

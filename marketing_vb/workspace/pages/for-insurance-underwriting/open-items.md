@@ -40,11 +40,16 @@ Note the discipline `about-me.md` sets: the two benchmarks have different refere
 combined**. Internal validation gives `< 1 cm`; the ISO benchmark gives 0.40 cm. The page currently uses
 only the first.
 
-## 4 · Validation population height range conflicts — Vadim
+## 4 · Validation population height range conflicts — CLOSED 2026-09-02
 
-`proof-points.md` records demographic coverage of 150 to 205 cm. `about-me.md` records the internal
-validation population as 150 to 220 cm. Not averaged, not silently picked: the page uses the
-`proof-points.md` figure and labels it demographic coverage. One of the two files needs correcting.
+**Vadim's call: 150 to 220 cm, and it is one figure for both** the training-data demographic
+coverage and the internal validation population. There is no second dataset and no second number.
+`proof-points.md`, `how-it-works.md`, `faq.md` and this page were updated; `about-me.md` already
+carried it. The 150 to 205 cm figure from the Apr 2025 deck is superseded and must not be published.
+
+Cross-checked against the live site on 2026-09-02: the published accuracy article
+(`mobile-body-scanning-accuracy`) already states 150 to 220 cm in three places, so the repo was the
+side that had drifted, not the CMS. The stale local copies of that article were corrected too.
 
 ## 5 · Publication rights on the 2025 aggregate — Vadim
 

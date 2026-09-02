@@ -1192,7 +1192,7 @@ Body measurements: 80+. Body composition outputs: BMI, BMR, body fat %, lean mas
 essential fat, beneficial fat. Points in the source 3D model: 5M+ per model.
 
 **Training data.** 9+ years. 150,000+ photographs. 30,000+ 3D scans. 430,000+ individual
-measurements. Ages 16 to 78. Weight 38 to 210 kg. Height 150 to 205 cm. 48% male, 52% female.
+measurements. Ages 16 to 78. Weight 38 to 210 kg. Height 150 to 220 cm. 48% male, 52% female.
 Locations: US and Europe. 86 parameters measured per person, 34 photo configurations per user.
 
 **FitXpress customer outcomes.** Yazen: 34,000 scans in 2025, weight-loss management support.
@@ -1432,7 +1432,7 @@ are flagged rather than silently decided. Nika's first audit should start here a
    document says about 40 to 50 seconds. Guardrail 2 makes this a defect. **Recommendation:** hold
    "under 45 seconds" as the single claim, and correct the 2-pager.
 
-7. **Training-data height range disagrees.** `proof-points.md` says 150 to 205 cm. `about-me.md` says
+7. **Training-data height range — RESOLVED 2026-09-02, Vadim: 150 to 220 cm.** Was: `proof-points.md` said 150 to 205 cm, `about-me.md` said
    150 to 220 cm. **Ask Vadim which is right**, and correct the other.
 
 8. **Company headcount disagrees.** `CLAUDE.md` and `proof-points.md` say 28 employees. The June 2026

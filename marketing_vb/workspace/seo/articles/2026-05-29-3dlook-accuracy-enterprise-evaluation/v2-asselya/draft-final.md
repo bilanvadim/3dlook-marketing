@@ -30,7 +30,7 @@ Headline accuracy figures are a starting point, not an answer. A single percenta
 
 Measurement accuracy is the gap between what the system outputs and what a chosen reference says the true value is. The choice of reference matters: a 3D scanner reference produces a different headline number than a manual measurement reference, even on the same person.
 
-Internal validation against expert pattern-maker manual measurements, across multiple real-world scan events with five repeated scans per person, shows 3DLOOK's measurement accuracy at approximately 96 to 97% across body metrics, with a typical absolute error of 1.5 to 2.0 cm per measurement, varying by body part. The internal validation population covers ages 16 to 78, heights 150 to 205 cm, weights 38 to 210 kg, US and Europe — the demographic scope the accuracy figure was measured against, not a universal "works for everyone" claim.
+Internal validation against expert pattern-maker manual measurements, across multiple real-world scan events with five repeated scans per person, shows 3DLOOK's measurement accuracy at approximately 96 to 97% across body metrics, with a typical absolute error of 1.5 to 2.0 cm per measurement, varying by body part. The internal validation population covers ages 16 to 78, heights 150 to 220 cm, weights 38 to 210 kg, US and Europe — the demographic scope the accuracy figure was measured against, not a universal "works for everyone" claim.
 
 For most use cases, what matters is not the headline number but whether the per-measurement error is acceptable for the workflow the data feeds into. A 1.5 cm waist error is well inside what made-to-measure tailoring can absorb in tolerance; whether the same error is acceptable for underwriting depends on the specific protocol.
 
@@ -157,7 +157,7 @@ Since FitXpress does not provide medical advice, diagnosis, or treatment recomme
 
 ## Disclaimer
 
-3DLOOK's accuracy and repeatability figures cited throughout this article are derived from internal validation testing against 3DLOOK's proprietary datasets and reference measurements. They have not been externally validated through peer-reviewed research, third-party clinical studies, or independent regulatory evaluation. 3DLOOK measurements are designed to support workflow integration, longitudinal tracking, and use-case-specific decisions; they are not intended as a substitute for clinical examination, medical diagnosis, treatment recommendation, or any decision that requires a medical device under applicable regulatory frameworks. The demographic scope of 3DLOOK's internal validation dataset (ages 16 to 78, heights 150 to 205 cm, weights 38 to 210 kg, US and Europe) defines the population the accuracy figures apply to; performance outside this scope has not been characterized. 3DLOOK should not be positioned as equivalent to DEXA, BIA, calibrated scale, or certified manual anthropometry methods.
+3DLOOK's accuracy and repeatability figures cited throughout this article are derived from internal validation testing against 3DLOOK's proprietary datasets and reference measurements. They have not been externally validated through peer-reviewed research, third-party clinical studies, or independent regulatory evaluation. 3DLOOK measurements are designed to support workflow integration, longitudinal tracking, and use-case-specific decisions; they are not intended as a substitute for clinical examination, medical diagnosis, treatment recommendation, or any decision that requires a medical device under applicable regulatory frameworks. The demographic scope of 3DLOOK's internal validation dataset (ages 16 to 78, heights 150 to 220 cm, weights 38 to 210 kg, US and Europe) defines the population the accuracy figures apply to; performance outside this scope has not been characterized. 3DLOOK should not be positioned as equivalent to DEXA, BIA, calibrated scale, or certified manual anthropometry methods.
 
 ---
 
@@ -182,7 +182,7 @@ No. Smart Scales is a weight estimation aid with an internal mean absolute error
 No peer-reviewed publication specific to 3DLOOK's accuracy claims is on record. The 2022 NCSU partnership is dataset enrichment work, not independent validation. The ISO 8559-1:2017 multi-company benchmark is 3DLOOK-led.
 
 **Does 3DLOOK work for every body type, age, and ethnicity?**
-3DLOOK's internal validation dataset covers ages 16 to 78, heights 150 to 205 cm, weights 38 to 210 kg, US and Europe, with multi-ethnic and multi-occupation metadata — the disclosed population the measurement quality figures apply to. Use cases for populations outside this scope should be evaluated separately.
+3DLOOK's internal validation dataset covers ages 16 to 78, heights 150 to 220 cm, weights 38 to 210 kg, US and Europe, with multi-ethnic and multi-occupation metadata — the disclosed population the measurement quality figures apply to. Use cases for populations outside this scope should be evaluated separately.
 
 **Is patient data HIPAA-compliant?**
 Yes. FitXpress maintains HIPAA compliance and follows GDPR principles. All data is encrypted in transit (TLS) and at rest (AWS S3 SSE-S3, always on). Photos are deleted immediately or within 30 days per client policy; retained photos are auto-blurred. Personal identifiers are not processed.

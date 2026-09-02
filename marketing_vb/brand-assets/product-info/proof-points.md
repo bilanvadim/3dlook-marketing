@@ -58,7 +58,7 @@
 | Individual measurements | 430,000+ | Same |
 | Demographic coverage (age) | 16-78 years | Same |
 | Demographic coverage (weight) | 38-210 kg | Same |
-| Demographic coverage (height) | 150-205 cm | Same |
+| Demographic coverage (height) | 150-220 cm | **Vadim confirmed 2026-09-02.** One figure for both training-data coverage and the internal validation population, and the only one to publish. The Apr 2025 deck row read 150-205 cm and is superseded. Matches the live accuracy article |
 | Gender distribution | 48% male / 52% female | Same |
 | Locations | US, Europe | Same |
 | Hardware scanner cameras | 4 dynamic | Dataset Protocol |

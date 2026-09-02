@@ -14,7 +14,7 @@ A: We're a different category. InBody and DEXA are clinical-grade hardware (slow
 A: Our model is minimally affected by lighting. Real-time pose validation guides the user. AI clothing detector flags issues. We've tested across hundreds of real-world environments.
 
 **Q: Does it work with all body types?**
-A: Yes — training data spans ages 16-78, weight 38-210 kg, height 150-205 cm, 48% male / 52% female. We continuously improve for unique body proportions.
+A: Yes — training data spans ages 16-78, weight 38-210 kg, height 150-220 cm, 48% male / 52% female. We continuously improve for unique body proportions.
 
 ## Privacy & Security
 

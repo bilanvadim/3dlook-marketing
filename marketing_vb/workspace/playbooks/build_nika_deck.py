@@ -2014,7 +2014,7 @@ def s_proof2(sl):
          "5M+ per model."),
         ("Training data",
          "9+ years. 150,000+ photographs. 30,000+ 3D scans. 430,000+ individual measurements. Ages 16 to "
-         "78. Weight 38 to 210 kg. Height 150 to 205 cm. 48% male, 52% female. Locations: US and Europe. "
+         "78. Weight 38 to 210 kg. Height 150 to 220 cm. 48% male, 52% female. Locations: US and Europe. "
          "86 parameters measured per person, 34 photo configurations per user."),
         ("Company",
          "Founded 2016. 28 employees. $16.2M raised. Sifted 2020 Pioneers of the New World. IEEE Retail "
@@ -2337,7 +2337,7 @@ def s_open2(sl):
         ["06", "The speed claim varies: 45 seconds, under a minute, under 60 seconds, 40 to 50 seconds",
          "proof-points.md and tech-spec.md say under 45 seconds. The published 2-pager says under 60 seconds twice. The insurance deck cover says under a minute. Guardrail 2 makes this a defect. Hold \"under 45 seconds\" as the single claim, and correct the 2-pager"],
         ["07", "Training-data height range disagrees",
-         "proof-points.md says 150 to 205 cm. about-me.md says 150 to 220 cm. Ask Vadim which is right, and correct the other"],
+         "RESOLVED 2026-09-02 - Vadim confirmed 150 to 220 cm. proof-points.md, how-it-works.md and faq.md corrected from the old 150 to 205 cm deck figure"],
         ["08", "Company headcount disagrees",
          "CLAUDE.md and proof-points.md say 28 employees. The June 2026 sales playbook says 22. The About slide in every deck carries this number"],
         ["09", "Banned words are live in shipped assets",

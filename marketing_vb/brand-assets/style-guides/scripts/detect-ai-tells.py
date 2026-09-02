@@ -134,8 +134,12 @@ HARD_EN = {
     # so it is still in older articles and in prompts that have not been re-synced.
     # "positioned as a market leader" (genuine market positioning) is the licensed exception and
     # is deliberately not matched.
+    # PARTIAL RE-REVERSAL (2026-09-02, Review 1 on the Wellness hub, Vadim's call): the
+    # medical-device boundary sentence "not positioned as a medical device" is the approved
+    # wording again and is licensed by the lookahead below. Every other product, intended-use
+    # and regulatory use of "positioned as" stays a hard fail.
     "positioned_as": [
-        r"\bnot\s+positioned\s+as\b",
+        r"\bnot\s+positioned\s+as\s+(?!a\s+medical\s+device\b)",
         r"\b(?:is|are|was|were|be|being|been)\s+positioned\s+as\s+(?:a|an|the)?\s*"
         r"(?:supporting|support|medical|diagnostic|clinical|screening|verification|measurement|"
         r"replacement|alternative|equivalent|substitute|tool|device|solution|platform|layer|"

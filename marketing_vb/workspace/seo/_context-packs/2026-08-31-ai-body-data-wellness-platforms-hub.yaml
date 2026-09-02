@@ -27,7 +27,7 @@ context_pack:
     - {id: FX-008, text: "80+ body measurements", source: "Product spec"}
     - {id: FX-009, text: "Body composition outputs: BMI, BMR, fat %, lean mass, fat mass, essential fat, beneficial fat", source: "Product spec"}
     - {id: FX-010, text: "9+ years of training data; 150,000+ photographs; 30,000+ 3D scans; 430,000+ individual measurements", source: "FitXpress deck, Apr 2025"}
-    - {id: FX-011, text: "Demographic coverage: age 16-78, weight 38-210 kg, height 150-205 cm; 48% male / 52% female; US + Europe", source: "FitXpress deck, Apr 2025"}
+    - {id: FX-011, text: "Demographic coverage: age 16-78, weight 38-210 kg, height 150-220 cm; 48% male / 52% female; US + Europe", source: "FitXpress deck, Apr 2025; height range corrected to 150-220 cm by Vadim 2026-09-02"}
     - {id: FX-012, text: "Yazen: 34,000 scans in 2025, weight-loss management support", source: "Internal customer breakdown"}
     - {id: FX-013, text: "UK Meds: 7,500 scans in 2025, BMI verification for online pharmacy", source: "Internal customer breakdown"}
     - {id: FX-014, text: "HIPAA maintained (US healthcare contexts); follows GDPR principles for EU processing", source: "compliance.md"}

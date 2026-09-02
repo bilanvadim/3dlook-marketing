@@ -36,7 +36,7 @@ Together, these dimensions give buyers a more reliable sense of whether a body-s
 
 Measurement accuracy is the difference between the system's output and the chosen reference's estimate of the true value. The choice of reference matters: even on the same person, a 3D scanner reference produces a different headline number than a manual measurement reference.
 
-Internal validation across multiple real-world scan events with five repeated scans per person against expert pattern-maker manual measurements shows 3DLOOK's measurement accuracy of approximately 96–97% across body metrics, with a typical absolute error of 1.5–2.0 cm per measurement, varying by body part. The internal validation population included participants aged 16 to 78, heights 150 to 205 cm, weights 38 to 210 kg, US and Europe. These ranges define the population scope to which the reported accuracy figures apply.
+Internal validation across multiple real-world scan events with five repeated scans per person against expert pattern-maker manual measurements shows 3DLOOK's measurement accuracy of approximately 96–97% across body metrics, with a typical absolute error of 1.5–2.0 cm per measurement, varying by body part. The internal validation population included participants aged 16 to 78, heights 150 to 220 cm, weights 38 to 210 kg, US and Europe. These ranges define the population scope to which the reported accuracy figures apply.
 
 ### Dimension 2 — Repeatability
 
@@ -163,7 +163,7 @@ Since FitXpress does not provide medical advice, diagnosis, or treatment recomme
 
 - 3DLOOK's accuracy and repeatability figures cited throughout this article are derived from internal validation testing against 3DLOOK's proprietary datasets and reference measurements. These figures are intended to help enterprise teams evaluate workflow fit, measurement consistency, and use-case-specific decision support.
 - 3DLOOK measurements are designed to support workflow integration, longitudinal tracking, and use-case-specific decisions; they are not intended as a substitute for clinical examination, medical diagnosis, treatment recommendation, or any decision that requires a medical device under applicable regulatory frameworks.
-- The demographic scope of 3DLOOK's internal validation dataset (ages 16 to 78, heights 150 to 205 cm, weights 38 to 210 kg, US and Europe) defines the population to which the accuracy figures apply. Performance outside this scope has not been characterized.
+- The demographic scope of 3DLOOK's internal validation dataset (ages 16 to 78, heights 150 to 220 cm, weights 38 to 210 kg, US and Europe) defines the population to which the accuracy figures apply. Performance outside this scope has not been characterized.
 - 3DLOOK should not be positioned as equivalent to DEXA, BIA, calibrated scales, or certified manual anthropometry methods when the workflow, protocol, or regulatory standard requires those methods.
 
 ---
@@ -189,7 +189,7 @@ In 3DLOOK's internal validation benchmark, the typical absolute error is general
 No peer-reviewed publication specific to 3DLOOK's accuracy claims is currently on record. 3DLOOK's disclosed validation evidence includes internal validation testing, a multi-company benchmark using ISO 8559-1:2017, and dataset enrichment work with NCSU Wilson College of Textiles. The NCSU partnership was dataset enrichment work, not independent validation of 3DLOOK's measurement claims.
 
 **Does 3DLOOK work for every body type, age, and ethnicity?**
-3DLOOK's internal validation dataset covers ages 16 to 78, heights 150 to 205 cm, weights 38 to 210 kg, US and Europe. These ranges define the disclosed population scope for the reported measurement-quality figures. Use cases involving populations outside this scope should be evaluated separately.
+3DLOOK's internal validation dataset covers ages 16 to 78, heights 150 to 220 cm, weights 38 to 210 kg, US and Europe. These ranges define the disclosed population scope for the reported measurement-quality figures. Use cases involving populations outside this scope should be evaluated separately.
 
 **Is patient data HIPAA-compliant?**
 Yes. FitXpress maintains HIPAA compliance in US healthcare settings and adheres to GDPR principles for European deployments. Data is encrypted in transit using TLS and at rest using AWS S3 SSE-S3. Photos are deleted immediately or within 30 days, depending on client policy, and retained photos are auto-blurred. 3DLOOK does not process user names, contact details, or other personal identifiers that would link a photo or measurement output to a specific individual.

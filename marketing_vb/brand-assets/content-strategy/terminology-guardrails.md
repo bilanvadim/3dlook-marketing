@@ -29,11 +29,28 @@ than silently deleted, because published articles were written under the old rul
 | Earlier rule | Status | New rule |
 |---|---|---|
 | `editorial-guardrails.md` **M1** (2026-07-07): expand *every* abbreviation at first use, *including* BMI | **Amended** | BMI, CEO, UK, US, EU now count as commonly known and are **not** expanded. M1 stands for everything else, including the cited regulators (FDA, ICH, GCP). |
-| `editorial-guardrails.md` **#6** (2026-06-09): medical framing is *"not positioned as a medical device"* | **Superseded** | State the boundary directly: **"FitXpress is not a medical device."** "Positioned as" makes a factual product boundary read as a marketing choice. |
+| `editorial-guardrails.md` **#6** (2026-06-09): medical framing is *"not positioned as a medical device"* | **Superseded 2026-08-13, then restored 2026-09-02** | The medical-device boundary sentence is **"It is not positioned as a medical device."** again — see the note directly below. Every *other* product, intended-use and regulatory use of "positioned as" stays banned by §2.10. |
 
 Articles already published with `Body Mass Index (BMI)` on first use or with *"not positioned as a
 medical device"* are historical and are not retro-edited. New drafts follow the rules above. If a
 refresh touches such a sentence, bring it into line.
+
+> **Partial re-reversal, 2026-09-02 — medical-device wording only.** Review 1 on the Wellness
+> Platforms hub (Google Doc, tab "Review 1") names **"It is not positioned as a medical device."**
+> as the approved medical-device wording and asks for the direct form to be replaced. Vadim took
+> that call on 2026-09-02. So:
+>
+> - **Medical-device boundary:** use **"It is not positioned as a medical device."** The direct
+>   form *"FitXpress is not a medical device."* stays acceptable in already-published articles and
+>   is not a fail; new drafts use the reviewer's wording.
+> - **Everything else in §2.10 is unchanged.** "Positioned as" remains banned for intended use,
+>   scope, replacement/equivalence, and every other product or regulatory statement.
+> - `detect-ai-tells.py` was narrowed to match: the `positioned_as` hard category now licenses
+>   `not positioned as a medical device` and nothing else.
+>
+> This is the third state of this rule (#6 2026-06-09 → superseded 2026-08-13 → partially restored
+> 2026-09-02). If the editorial owner disagrees, this is the row to argue about, because Review 1
+> and terminology guardrail §2.10 came from the same authority and point opposite ways.
 
 ---
 
@@ -225,7 +242,7 @@ where the word is allowed.
 | **Reason** | "Positioned as" suggests that the product's identity, intended use, or regulatory status depends on external perception rather than on 3DLOOK's defined product scope and claims. It can also make a factual product boundary sound like a marketing choice. |
 | **Fix** | State the product scope or boundary directly |
 
-- Avoid: "FitXpress is not positioned as a medical device." → Prefer: **"FitXpress is not a medical device."**
+- **Medical device is now the licensed exception (2026-09-02):** use **"It is not positioned as a medical device."** See the re-reversal note in the header table.
 - Avoid: "FitXpress is positioned as a supporting tool for clinician review." → Prefer: **"FitXpress supports clinician review."**
 - For intended-use boundaries: **"FitXpress does not diagnose conditions, make clinical decisions, or determine treatment eligibility."**
 
@@ -247,7 +264,7 @@ For the mechanical pass. The detector
 | "plus" stacking capabilities | including, such as, along with, as well as | auto |
 | "let" | allow | auto |
 | "so" introducing a benefit | reducing…, helping to reduce…, which can reduce… | auto |
-| "positioned as" a product or regulatory boundary | state the boundary directly | auto |
+| "positioned as" a product or regulatory boundary, **except the medical-device sentence** | state the boundary directly; for medical device use "It is not positioned as a medical device." | auto |
 | "what trips people up", "the mistake buyers make", "what most teams misunderstand" | name the components of the issue | auto |
 | "do the heavy lifting" and other attributed behaviour | "matter", "apply", plain verbs | auto |
 | corrective negation "X, not Y" | lead with the recommended approach | judgment |

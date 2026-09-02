@@ -43,7 +43,7 @@ does not exist.
 | Typical absolute error 1.5 to 2.0 cm | Accuracy table, FAQ | `proof-points.md` → Accuracy |
 | Scan-to-scan repeatability `< 1 cm` | Accuracy table, comparison table, FAQ | `proof-points.md` → Repeatability, "variance across repeated scans < 1 cm". Written in the locked `< 1 cm` form from `about-me.md` |
 | Weight estimation ±3.5% average error | Accuracy table | `proof-points.md` → Accuracy, FitXpress deck, real-world conditions |
-| Ages 16 to 78, heights 150 to 205 cm, weights 38 to 210 kg, 48% male / 52% female, US and Europe | Accuracy conditions, FAQ | `proof-points.md` → Training data, "Demographic coverage". Labelled on the page as demographic coverage, which is what the source calls it. **Conflict flagged:** `about-me.md` states the internal validation population as 150 to 220 cm. The page uses the `proof-points.md` figure and the discrepancy is in `open-items.md` |
+| Ages 16 to 78, heights 150 to 220 cm, weights 38 to 210 kg, 48% male / 52% female, US and Europe | Accuracy conditions, FAQ | `proof-points.md` → Training data, "Demographic coverage". **Conflict closed 2026-09-02:** Vadim confirmed 150 to 220 cm as one figure covering both training data and the validation population. `proof-points.md` corrected from the old Apr 2025 deck figure. Matches the live accuracy article |
 | Photos deleted immediately or within 30 days | Quick-answer, compliance, FAQ | `compliance.md`; `proof-points.md` → Compliance & security |
 | TLS in transit, AWS S3 SSE-S3 at rest, always on | Compliance, FAQ | `compliance.md` |
 | Automatic blur on stored photos, face obfuscation at capture | Compliance | `compliance.md`; `tech-spec.md` |
