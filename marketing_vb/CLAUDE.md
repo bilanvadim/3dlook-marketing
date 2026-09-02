@@ -18,7 +18,8 @@
 
 **Технология:** Patented statistical generative human body model, обученная на 9+ годах данных (150K+ photos, 30K+ 3D scans, 430K+ measurements).
 
-**Точность:** 96-97% accuracy vs manual measurements, error margin 1.5-2.0 cm, 95%+ repeatability. Weight estimation ±3.5%.
+**Точность:** 96-97% vs expert manual measurement, typical absolute error 1.5-2.0 cm, scan-to-scan repeatability `< 1 cm`. Weight estimation ±3.5%.
+> **Формулировки — только дословно из `brand-assets/product-info/accuracy-formulations.md`** (канон живой framework-статьи, перенесён 2026-09-02). Не пересобирай предложение из цифр. Два бенчмарка не совмещаются. `95%+ repeatability`, которое стояло здесь до 2026-09-02, **не публикуется**: живая статья такой цифры не даёт.
 
 **Текущая ARR:** $1.084M (2025), 67 клиентов, 112K сканов/год.
 
@@ -141,7 +142,7 @@
 > Секция 6 ниже — краткое операционное резюме. При конфликте `about-me.md` имеет приоритет по голосу и claims discipline; `terminology-guardrails.md` — по **выбору слов и построению фразы** (он новее и принадлежит редакционному владельцу: две правки уже переопределили `editorial-guardrails.md` — см. блок ниже). Фактура (числа, кейсы) — всегда из `brand-assets/product-info/`, а не из этих файлов.
 
 **Что мы:**
-- Экспертные, опираемся на данные (96-97% accuracy, ±3.5%, 45 sec, 80+ measurements)
+- Экспертные, опираемся на данные (96-97% accuracy, ±3.5%, 45 sec, 80+ measurements) — формулировки точности дословно из `brand-assets/product-info/accuracy-formulations.md`, не пересобранные из чисел
 - Конкретные — числа, проценты, имена клиентов (UK Meds, Safariland, Burlington Medical), market sizing ($25-200M TAM)
 - Уважаем время читателя — никаких длинных вступлений
 - Outcome-focused — говорим про business KPI клиента, не про features

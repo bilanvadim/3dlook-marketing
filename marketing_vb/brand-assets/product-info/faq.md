@@ -5,10 +5,10 @@
 ## General
 
 **Q: How accurate is your scanning?**
-A: 96-97% accuracy vs manual measurements in real-world benchmarks (1.5-2.0 cm typical error margin). Wrist 0.54 cm, calf 1.27 cm, neck 1.48 cm. We benchmark against expert manual pattern-makers, not lab conditions.
+A: Internal validation against expert pattern-maker manual measurements shows approximately 96-97% accuracy across body metrics, with a typical absolute error of 1.5-2.0 cm per measurement, varying by body part. Detailed methodology, including sample size and measurement-level results, is available under NDA. (Per-measurement figures are in `proof-points.md` and are internal: the live framework article publishes none. Full published wording: `brand-assets/product-info/accuracy-formulations.md`)
 
-**Q: How does it compare to InBody / DEXA / scales?**
-A: We're a different category. InBody and DEXA are clinical-grade hardware (slow, expensive, in-clinic). Scales tell you weight only. We give 80+ measurements + body composition from any smartphone, in any location, in 45 seconds — at scale.
+**Q: How does it compare to InBody / DXA / scales?**
+A: We're a different category. InBody and DXA (also written DEXA, which is how buyers usually search for it) are clinical-grade hardware (slow, expensive, in-clinic). Scales tell you weight only. We give 80+ measurements + body composition from any smartphone, in any location, in 45 seconds — at scale.
 
 **Q: What happens if photo lighting is bad?**
 A: Our model is minimally affected by lighting. Real-time pose validation guides the user. AI clothing detector flags issues. We've tested across hundreds of real-world environments.

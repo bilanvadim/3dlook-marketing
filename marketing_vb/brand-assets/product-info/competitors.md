@@ -102,7 +102,7 @@
 |--------|-----------------|-----------------|
 | Withings (smart scales) | Physical scale alternative for weight tracking | Different category — they need a device, we work with phone |
 | InBody (BIA) | Body composition via bioimpedance | Hardware-based, in-clinic; we are remote/scalable |
-| DEXA scan providers | Gold-standard body comp | Different category; clinical-grade, expensive, not scalable |
+| DXA scan providers | Gold-standard body comp | Different category; clinical-grade, expensive, not scalable |
 | MyFitnessPal / generic fitness apps | Self-tracking | They lack verification — that's exactly where we win |
 
 ---

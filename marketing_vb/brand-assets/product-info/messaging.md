@@ -68,7 +68,7 @@ We are NOT a measurement API. We are a **workflow layer** with two products (Fit
 ## Key proof phrases (memorize)
 
 - "9+ years of training data, 150K+ photos, 30K+ 3D scans"
-- "96-97% accuracy in real-world benchmarks"
+- "96-97% accuracy against expert manual measurement" (the live framework article's own framing; "real-world benchmarks" was a loose gloss, replaced 2026-09-02. Full wording: `brand-assets/product-info/accuracy-formulations.md`)
 - "HIPAA-compliant, GDPR-aligned"
 - "Two photos, 45 seconds"
 - "80+ measurements + body composition"

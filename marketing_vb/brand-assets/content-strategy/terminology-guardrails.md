@@ -61,7 +61,7 @@ Nine construction rules. These are about how a sentence is built, not which word
 ### 1. Abbreviations
 
 Give the full version first, then the abbreviation in brackets, at the **first** mention in the text:
-*dual-energy X-ray absorptiometry (DEXA)*, *glucagon-like peptide-1 (GLP-1)*, *Food and Drug
+*dual-energy X-ray absorptiometry (DXA)*, *glucagon-like peptide-1 (GLP-1)*, *Food and Drug
 Administration (FDA)*.
 
 **Exception — commonly known concepts are used bare:** AI, WWW, iOS, and explicitly **BMI, CEO, UK,
@@ -270,7 +270,8 @@ For the mechanical pass. The detector
 | corrective negation "X, not Y" | lead with the recommended approach | judgment |
 | corrective "rather than" | state the characteristic, then the limitation separately | judgment |
 | "Body Mass Index (BMI)" | "BMI" — commonly known, do not expand | judgment |
-| unexpanded first-use acronym (DEXA, GLP-1, FDA, ICH, GCP, CRO, EDC, eCOA) | expand once, then use the short form | judgment |
+| unexpanded first-use acronym (DXA, GLP-1, FDA, ICH, GCP, CRO, EDC, eCOA) | expand once, then use the short form | judgment |
+| `DEXA` in our own prose | **`DXA`** (Vadim, 2026-09-02). `DEXA` stays legitimate only where it is a search term or a published slug, written as `DXA (also written DEXA)` | auto |
 | bare URL, "click here" | link on the meaningful anchor phrase | judgment |
 | vendor blog as a citation | regulator, standards body, journal, trade press | judgment |
 | compressed relationship ("records scale to what is compared") | "depends on", "varies by", "is determined by" | judgment |

@@ -20,7 +20,9 @@ context_pack:
     - {id: FX-001, text: "96-97% overall accuracy vs expert manual measurements", source: "2025 Accuracy & Repeatability Study"}
     - {id: FX-002, text: "Typical absolute error 1.5-2.0 cm", source: "2025 Accuracy & Repeatability Study"}
     - {id: FX-003, text: "Scan-to-scan variance < 1 cm", source: "2025 Accuracy & Repeatability Study"}
-    - {id: FX-004, text: "95%+ overall repeatability consistency", source: "2025 Accuracy & Repeatability Study"}
+    - {id: FX-004, text: "95%+ overall repeatability consistency", source: "2025 Accuracy & Repeatability Study",
+       publishable: false,
+       note: "INTERNAL ONLY, do not publish. The live framework article describes this same study and gives no such percentage. Publishable repeatability claim is FX-003 (< 1 cm). Flagged 2026-09-02, query with Vadim."}
     - {id: FX-005, text: "Weight estimation +/-3.5% average error margin", source: "FitXpress deck, real-world conditions"}
     - {id: FX-006, text: "Under 45 seconds from photo to results", source: "FitXpress product spec"}
     - {id: FX-007, text: "2 photos required (front + side)", source: "Product spec"}

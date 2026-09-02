@@ -157,7 +157,7 @@ phrasing, not a violation) and when they appear inside an FAQ question.
 **Bare headline percentages** (editorial guardrail #4) — ">95%", "up to 90%" with no methodology.
 Qualitative claim + one concrete sub-figure + "detailed methodology available under NDA".
 
-**Claims discipline** — diagnoses, replaces a clinician / DEXA / reference method, guarantees
+**Claims discipline** — diagnoses, replaces a clinician / DXA / reference method, guarantees
 compliance, detects fraud, makes decisions, "most accurate", "just an API". Negated and
 interrogative forms are the *required* framing and are not violations.
 

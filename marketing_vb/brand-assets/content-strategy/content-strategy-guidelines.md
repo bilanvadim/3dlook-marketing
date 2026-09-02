@@ -193,7 +193,7 @@ Avoid claiming that FitXpress:
 * Makes treatment decisions
 * Replaces clinicians
 * Replaces protocol-defined clinical endpoints
-* Replaces DEXA or validated reference methods universally
+* Replaces DXA or validated reference methods universally
 * Makes underwriting decisions
 * Makes hiring decisions
 * Makes fitness-for-duty or clearance decisions
@@ -286,7 +286,7 @@ Use cross-links when the reader journey naturally overlaps.
 Examples:
 * GLP-1 article links to telehealth, bariatrics, and fitness where relevant.
 * Occupational health article may link to privacy FAQ and accuracy framework, not to unrelated wellness pages.
-* Clinical trials article may link to DEXA comparison, body scanning accuracy, and structured body data pages.
+* Clinical trials article may link to the DXA comparison, body scanning accuracy, and structured body data pages.
 Link down to BOFU pages
 Educational and MOFU articles should route serious buyers to FitXpress pages.
 Link to trust assets
@@ -347,7 +347,7 @@ Every major article should include FAQs that answer real search and procurement 
 Good FAQ types:
 * What is [concept]?
 * How does [workflow] work?
-* Can [body scanning] replace [manual method / DEXA / exam]?
+* Can [body scanning] replace [manual method / DXA / exam]?
 * What data is captured?
 * Is this used for decisioning?
 * Who reviews the data?

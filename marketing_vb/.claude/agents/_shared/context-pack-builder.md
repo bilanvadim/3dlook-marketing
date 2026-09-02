@@ -190,7 +190,7 @@ context_pack:
     - "Declarative and unhurried; concrete over abstract (every claim carries a number, source, or disclosed limit)"
     - "Honest about limits in the same breath as capability; buyer framing, not 'you'-spam"
   claims_discipline:
-    - "NEVER: diagnose, make treatment/underwriting/eligibility decisions, replace clinician/DEXA/scale, guarantee compliance, auto-detect fraud"
+    - "NEVER: diagnose, make treatment/underwriting/eligibility decisions, replace clinician/DXA/scale, guarantee compliance, auto-detect fraud"
     - "Position AS: mobile body-scanning / structured-data-capture / intake & documentation layer supporting review"
   accuracy_framing:
     - "Never reduce accuracy to one universal number — qualify by decision/reference/protocol/population/tolerance"
@@ -217,7 +217,7 @@ context_pack:
     hero_message: "Make body progress more visible — before members drop off."
     segment_hook: "Make body progress visible → repeat check-ins → adherence → retention; defensible longitudinal outcomes for payer/employer partners."  # audience.md, FX only
     do_not_say:  # audience.md 'Don't', FX only
-      - "No diagnostic claims; not a DEXA or calibrated-scale replacement"
+      - "No diagnostic claims; not a DXA or calibrated-scale replacement"
       - "No eligibility decisioning; keep separate from UK online-pharmacy BMI compliance unless the piece is explicitly the bridge"
 
   # track=seo + fitxpress only — sourced from content-plan.md + content-strategy-guidelines.md
@@ -291,3 +291,48 @@ Target: **< 2000 tokens**. Агент должен прочитать pack за 
 - Не пишешь тексты
 - Не добавляешь claims которых нет в proof-points.md
 - Не фильтруешь по своему мнению (если claim в proof-points и relevant → включай)
+
+## Точность: формулировки берутся ДОСЛОВНО, не пересобираются из цифр
+
+**`brand-assets/product-info/accuracy-formulations.md` — канон.** Это язык точности живой статьи
+<https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/>, перенесённый verbatim 2026-09-02.
+`about-me.md` прямо говорит: эта статья каноничная, а не `proof-points.md`.
+
+**Не собирай формулировку из чисел в `proof-points.md`.** Там номерной склад; опубликованное
+предложение — в файле выше. Копируй предложение, не число.
+
+Что держать в голове:
+
+- Формат `96-97%` и `1.5-2.0 cm` — **дефисы**, как на живой странице. Не en dash, не «96 to 97 percent».
+- Repeatability пишется **`< 1 cm`** (locked convention). Опубликованная формулировка:
+  *«For most evaluated measurements, repeated scans showed typical scan-to-scan differences of
+  less than 1 cm.»*
+- **Два бенчмарка НИКОГДА не совмещаются в одном абзаце.** Внутренний (`96-97%`, `1.5-2.0 cm`,
+  `< 1 cm`) и ISO 8559 (`0.40 cm`) отвечают на разные вопросы против разных референсов. Живая
+  статья формулирует это правилом: *«The numbers from the two studies should not be combined
+  because the references differ.»* Линтер это валит.
+- **`95%+ repeatability consistency` НЕ публикуется.** Живая статья описывает ту же студию 2025
+  года и такой цифры не даёт вообще. Она внутренняя, помечена в `proof-points.md`, и у неё нет
+  опубликованного дома. Не бери её.
+- **Per-measurement цифры** (wrist 0.54, waist 2.14, chest 0.60 и т.д.) — технические материалы,
+  не хаб. Живая статья публикует только «varying by body part» плюс методологию под NDA.
+- Ни одной цифры точности **без условия**: против какого референса, для какой популяции, под
+  каким протоколом, для какого решения. Причина — словами самой статьи: *«Every accuracy figure
+  is really an accuracy relative to one specific reference.»*
+- Абзац с цифрой **линкует на framework-статью**. Не в «further reading» в конце.
+- Reserved words на нашу же доказательную базу — FAIL: `independent`, `third-party`, `validated`,
+  `clinically validated`, `peer-reviewed`. §1.9 канона говорит, что у нас есть на самом деле,
+  включая строку про NCSU: *«dataset enrichment work, not independent validation»*.
+- **DXA, не DEXA** (решение Вадима 2026-09-02). `DEXA` допустим только там, где это поисковый
+  запрос или опубликованный слаг, и пишется `DXA (also written DEXA)`.
+
+Гейт: `python3 scripts/article_lint.py <файл>.md` — секция **accuracy discipline**. Он проверяет
+набор цифр, несовмещение бенчмарков и наличие ссылки на канон. Правильность *условия* при цифре
+скрипт судить не может — это на редакторе.
+
+**FX-004 is INTERNAL and must not reach `approved_claims` as publishable.** Its text is
+`95%+ overall repeatability consistency`, and the live framework article, describing the very
+same 2025 study, gives no such percentage. Emit it only with an explicit
+`publishable: false` and the reason, or leave it out. The publishable repeatability claim is
+FX-003, `< 1 cm`. See `brand-assets/product-info/accuracy-formulations.md` §1.2 and the
+Repeatability table in `proof-points.md`.

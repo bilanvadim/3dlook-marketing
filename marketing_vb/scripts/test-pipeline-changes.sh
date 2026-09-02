@@ -61,13 +61,31 @@ CASES = {
 }
 # A legitimately illustrated article: asset URL plus figure-free alt text. This one must PASS.
 POSITIVE = {
+ # Accuracy discipline, added 2026-09-02 when the live framework article became the canonical
+ # source for accuracy wording (brand-assets/product-info/accuracy-formulations.md).
+ "t12_wrong_acc":  ("96-97%", "98.5% accuracy"),
+ "t13_95_repeat":  ("puts overall accuracy at 96-97%",
+                    "puts repeatability at 95% consistency and overall accuracy at 96-97%"),
+ "t14_mixed_bench":("1.5-2.0 cm",
+                    "1.5-2.0 cm, and the ISO 8559 benchmark puts session-to-session repeatability at 0.40 cm"),
+ "t15_permeasure": ("puts overall accuracy at 96-97%",
+                    "puts waist error at 2.14 cm and overall accuracy at 96-97%"),
+ "t16_bare_dexa":  ("Dual-energy X-ray absorptiometry (DXA)", "Dual-energy X-ray absorptiometry (DEXA)"),
+}
+# DEXA is licensed when DXA is on the same line: the older spelling carries the search volume
+# and one published slug already uses it. This must PASS.
+POSITIVE2 = {
+ "t17_dexa_paired":("Dual-energy X-ray absorptiometry (DXA)",
+                    "Dual-energy X-ray absorptiometry (DXA), also written DEXA,"),
+}
+POSITIVE = {
  "t11_asset_ok": ("## Progress visibility beyond scale weight",
                   "## Progress visibility beyond scale weight\n\n"
                   "![Wellness app progress view showing a waist measurement change while "
                   "bodyweight stays flat.]"
                   "(https://3dlook.ai/wp-content/uploads/2026/09/banner_1.webp)"),
 }
-for name, (old, new) in list(CASES.items()) + list(POSITIVE.items()):
+for name, (old, new) in list(CASES.items()) + list(POSITIVE.items()) + list(POSITIVE2.items()):
     if old not in base:
         raise SystemExit(f"fixture anchor missing for {name}: {old[:60]!r}\n"
                          "The article changed. Update the anchor, do not delete the test.")
@@ -94,11 +112,14 @@ t "draft.md PASS"            "python3 scripts/article_lint.py $A/draft.md"
 t "plan.md --plan PASS"      "python3 scripts/article_lint.py $A/plan.md --plan"
 t "--json is valid json"     "python3 scripts/article_lint.py $A/final.md --json | python3 -m json.tool"
 t "--report runs"            "python3 scripts/article_lint.py $A/final.md --report"
-for n in t1_emdash t2_dexa t3_height205 t4_predweight t5_unsourced t6_bannedclaim t7_badclaimid t8_m1 t9_nonslash t10_alt_figure; do
+for n in t1_emdash t2_dexa t3_height205 t4_predweight t5_unsourced t6_bannedclaim t7_badclaimid t8_m1 t9_nonslash t10_alt_figure \
+         t12_wrong_acc t13_95_repeat t14_mixed_bench t15_permeasure t16_bare_dexa; do
   tn "negative fixture: $n" "python3 scripts/article_lint.py $FIX/$n/$(basename $A)/final.md --pack $P"
 done
 t "--no-exit-code suppresses rc" "python3 scripts/article_lint.py $FIX/t3_height205/$(basename $A)/final.md --pack $P --no-exit-code"
 t "illustrated article passes (asset url + clean alt)" "python3 scripts/article_lint.py $FIX/t11_asset_ok/$(basename $A)/final.md --pack $P"
+t "DEXA licensed when paired with DXA"    "python3 scripts/article_lint.py $FIX/t17_dexa_paired/$(basename $A)/final.md --pack $P"
+t "accuracy gate sees the framework link" "python3 scripts/article_lint.py $A/final.md 2>&1 | grep -q 'links_to_framework: True'"
 t "asset url counted separately from page links" "python3 scripts/article_lint.py $FIX/t11_asset_ok/$(basename $A)/final.md --pack $P 2>&1 | grep -q 'asset_urls: 1'"
 
 echo "--- 4. hard-bans card is generated, not hand-written ---"

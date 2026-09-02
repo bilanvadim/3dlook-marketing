@@ -253,7 +253,7 @@ HARD_EN = {
     # claims discipline — CLAUDE.md section 12 / positioning bans
     "claims_discipline": [
         r"\bdiagnos(e|es|ed|ing|is|tic)\b",
-        r"\breplaces?\s+(a\s+)?(clinician|doctor|physician|DEXA|reference)",
+        r"\breplaces?\s+(a\s+)?(clinician|doctor|physician|DXA|DEXA|reference)",
         r"\bguarantees?\s+compliance\b",
         r"\bdetects?\s+fraud\b",
         r"\bmakes?\s+(the\s+)?decisions?\b",
@@ -602,7 +602,7 @@ def is_negated(text: str, start: int) -> bool:
 def in_question(text: str, start: int) -> bool:
     """
     True if the match sits on a line that is a question. FAQ headings quote the objection
-    verbatim ("Does FitXpress replace DEXA?") — asking is not claiming.
+    verbatim ("Does FitXpress replace DXA?") — asking is not claiming.
     """
     line_start = text.rfind("\n", 0, start) + 1
     line_end = text.find("\n", start)

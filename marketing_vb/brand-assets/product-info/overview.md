@@ -33,8 +33,9 @@ Hero benefits: measurement consistency to reduce remakes/returns, remote measuri
 - **Customers:** 100+ (67 active in 2025)
 - **2025 ARR:** $1.084M
 - **2025 scans:** 112,100
-- **Accuracy:** 96-97% vs manual, error margin 1.5-2.0 cm
-- **Repeatability:** 95%+, variance < 1 cm
+- **Accuracy:** 96-97% vs expert manual measurement, typical absolute error 1.5-2.0 cm
+- **Repeatability:** typical scan-to-scan difference `< 1 cm`
+- **Published wording for both: `brand-assets/product-info/accuracy-formulations.md`.** The `95%+` repeatability figure that used to sit here is internal only and does not appear on the live framework article, see `proof-points.md` Repeatability
 - **Weight estimation:** ±3.5% under real-world conditions
 - **Training data:** 9+ years, 150K photos, 30K 3D scans, 430K measurements
 

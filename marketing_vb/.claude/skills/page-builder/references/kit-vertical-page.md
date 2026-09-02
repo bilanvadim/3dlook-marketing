@@ -90,7 +90,7 @@ deployment thresholds (guardrail #5).
 **9. Accuracy and reliability, scoped** — open by reframing "how accurate is it?" into **"accurate
 enough for which decision?"**, then name the four conditions that make an accuracy claim mean
 anything: reference method, measurement protocol, population tested, intended workflow. Figures from
-`proof-points.md` only — 96–97% vs manual, error margin 1.5–2.0 cm, repeatability written as
+`accuracy-formulations.md` for the wording, `proof-points.md` for the numbers behind it — 96-97% vs expert manual measurement, typical absolute error 1.5-2.0 cm, repeatability written as
 `< 1 cm`, weight estimation ±3.5%. No bare ">95%" (guardrail #4): pair a qualitative claim with one
 concrete sub-figure and "detailed methodology available under NDA". Never the words "independent",
 "validated" or "third-party" (guardrail #3).
@@ -183,7 +183,7 @@ principle #11. Medical, clinical or regulatory framing goes to Whitney before it
    Anything else goes to Open items. One number, byte-identical everywhere on the page (guardrail #2).
 5. **Name regulators and standards precisely** — the framework, the jurisdiction, and what it governs.
    A vague gesture at a standard is worse than omitting it. Expand every acronym at first use, FDA,
-   ICH, GCP and DEXA included (M1). BMI, CEO, UK, US and EU are commonly known and stay bare.
+   ICH, GCP and DXA included (M1). BMI, CEO, UK, US and EU are commonly known and stay bare.
 6. **Scope accuracy, never brag about it.** The reframe in slot 9 is mandatory. Leading with "most
    accurate" or "best-in-class" is an anti-positioning violation and a hard fail at the judge.
 7. **State the boundary once**, directly: "FitXpress is not a medical device." Do not chain a

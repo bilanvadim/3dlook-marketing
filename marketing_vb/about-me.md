@@ -45,7 +45,8 @@ Position FitXpress **as**: a mobile body-scanning solution; a structured body-da
 ## The accuracy / repeatability framing — get this right every time
 - **Never reduce accuracy to one universal number.** Always qualify: accurate for which decision, against which reference, under which capture protocol, for which population, at what tolerance.
 - **Repeatability ≠ accuracy.** Repeatability (scan-to-scan consistency) is what matters for longitudinal use — GLP-1 progress, year-over-year underwriting refreshes. Accuracy is measured against a reference.
-- **Two benchmarks, never combined** (the references differ): (1) internal validation vs expert pattern-maker manual measurement — ~96–97% accuracy, typical absolute error 1.5–2.0 cm, scan-to-scan repeatability typically **< 1 cm**; (2) ISO 8559-1:2017 multi-company benchmark (3D-scanner-average reference) — session-to-session repeatability 0.40 cm.
+- **Two benchmarks, never combined** (the references differ): (1) internal validation vs expert pattern-maker manual measurement, `96-97%` accuracy, typical absolute error `1.5-2.0 cm`, scan-to-scan repeatability typically **`< 1 cm`**; (2) ISO 8559-1:2017 multi-company benchmark (3D-scanner-average reference), session-to-session repeatability `0.40 cm`. The live article states the rule directly: *"The numbers from the two studies should not be combined because the references differ."*
+- **Published sentences for all of the above: `brand-assets/product-info/accuracy-formulations.md`,** transcribed verbatim from the live framework article. Hyphens, not en dashes: the live page writes `96-97%` and `1.5-2.0 cm`.
 - Write repeatability as **`< 1 cm`** (locked convention).
 
 ## Canonical figures — verify before publishing
@@ -64,5 +65,5 @@ Every article passes Asselya Sekerova's review before publishing. Figures, formu
 ## Exemplar lines — clone this cadence
 - "The better diligence question is: accurate enough for which decision?"
 - "Production conditions are not lab conditions. Users stand in odd lighting, wear sweaters over t-shirts, hold the phone at the wrong angle."
-- "FitXpress complements DEXA by helping programs collect remote measurements between clinical assessment points — not as a replacement for the assessment itself."
+- "FitXpress complements DXA by helping programs collect remote measurements between clinical assessment points — not as a replacement for the assessment itself."
 - "It supports underwriter review; it is not a standalone decisioning engine."

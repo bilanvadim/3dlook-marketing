@@ -38,7 +38,9 @@ For intended-use boundaries, the standard sentence is: **"FitXpress does not dia
 
 ## 7. Conditional language for boundaries
 
-> "FitXpress is not equivalent to DEXA, BIA, or a calibrated scale **when the workflow, protocol, or regulatory standard requires those methods**."
+> "FitXpress is not equivalent to DXA, BIA, or a calibrated scale **when the workflow, protocol, or regulatory standard requires those methods**."
+
+> **DXA, not DEXA** (Vadim, 2026-09-02). The live framework article still writes DEXA and needs a CMS edit; new copy uses DXA and `article_lint.py` fails the old spelling.
 
 Conditions make the boundary defensible and non-absolute. (Model sentence updated 2026-08-25: it previously read *"should not be positioned as equivalent to…"*, which breaks terminology guardrail §2.10.)
 
@@ -69,7 +71,7 @@ Any unresolved trade-off (an asymmetry, a dropped number, a possible contradicti
 
 ### M1. Expand every abbreviation at first use, except the commonly known ones
 
-Spell out each acronym the first time it appears in the body, then use the short form: *dual-energy X-ray absorptiometry (DEXA)*, *glucagon-like peptide-1 (GLP-1)*, *Food and Drug Administration (FDA)*, *International Council for Harmonisation (ICH)*, *Contract Research Organization (CRO)*, *decentralized clinical trial (DCT)*, *Electronic Data Capture (EDC)*, *electronic Clinical Outcome Assessment (eCOA)*, *Quality Assurance (QA)*, *Digital Health Technology (DHT)*, *API / SDK* (spelled out on first use).
+Spell out each acronym the first time it appears in the body, then use the short form: *dual-energy X-ray absorptiometry (DXA)*, *glucagon-like peptide-1 (GLP-1)*, *Food and Drug Administration (FDA)*, *International Council for Harmonisation (ICH)*, *Contract Research Organization (CRO)*, *decentralized clinical trial (DCT)*, *Electronic Data Capture (EDC)*, *electronic Clinical Outcome Assessment (eCOA)*, *Quality Assurance (QA)*, *Digital Health Technology (DHT)*, *API / SDK* (spelled out on first use).
 
 **Do not expand the commonly known ones:** AI, WWW, iOS, and **BMI, CEO, UK, US, EU**. Write *BMI*, never *Body Mass Index (BMI)*.
 
@@ -84,7 +86,7 @@ A term that appears only inside a cited document's italicized title still needs 
 Compliance-heavy copy tends to negate twice in one breath. State a boundary **once, clearly**, and prefer the positive framing where the meaning survives.
 
 Avoid:
-- chained negatives — *"It does not replace DEXA… **nor does it** independently validate endpoints."*
+- chained negatives — *"It does not replace DXA… **nor does it** independently validate endpoints."*
 - interrupted / parenthetical negation — *"the scope FitXpress **is — and is not —** designed for"*
 - double-negative idioms — *"**necessary but not sufficient**"*, *"not uncommon"*, *"they **do not, on their own,** make a study compliant"*
 

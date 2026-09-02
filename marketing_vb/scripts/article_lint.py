@@ -58,7 +58,8 @@ DETECTOR = os.path.join(REPO, "brand-assets", "style-guides", "scripts", "detect
 # reads as verified. Add a row when a decision retires a number, do not delete the old row.
 SUPERSEDED = [
     (r"\b150\s*(?:to|[-–])\s*205\b", "150 to 220 cm", "Vadim 2026-09-02, one figure for training data and validation population"),
-    (r"\bDEXA\b", "DXA", "Review 1 item 14, 2026-09-02"),
+    (r"\bDEXA\b", "DXA, or `DXA (also written DEXA)` where the older spelling is the search term",
+     "Vadim confirmed DXA 2026-09-02"),
     (r"\bessential fat\b", "omit in wellness copy", "Review 1 item 13, 2026-09-02"),
     (r"\bbeneficial fat\b", "omit in wellness copy", "Review 1 item 13, 2026-09-02"),
     (r"\bpredicted weight\b", "omit; no approved claim supports it", "Review 1 item 13 closed against the reviewer, 2026-09-02"),
@@ -342,6 +343,13 @@ def gate_superseded(body: str, allow_discussion: bool = True, line_offset: int =
                     META_MARKERS.search(line) or _is_named_not_used(line, m.start(), m.end())
                 ):
                     continue
+                # `DEXA` is licensed on a line that also carries `DXA`: that covers
+                # `DXA (also written DEXA)` for search coverage and the published
+                # `ai-body-scanners-vs-dexa-scans` slug. A comparison article legitimately
+                # targets the DEXA query, and a gate that forbade it would fight SEO.
+                # Tried as a regex lookbehind first; Python needs fixed width, so it lives here.
+                if m.group(0).upper() == "DEXA" and re.search(r"\bDXA\b", line):
+                    continue
                 problems.append(f"line {i + line_offset}: {m.group(0)!r} is superseded, use {instead} ({why})")
     return not problems, problems, {}
 
@@ -454,6 +462,79 @@ def gate_plan(body: str, fm):
         problems.append("no numbered outline sections found")
     return not problems, problems, info
 
+
+
+
+# The accuracy figures the live framework article actually publishes. Anything else claiming to
+# be an accuracy or repeatability figure for our own measurement is not ours.
+# Source: brand-assets/product-info/accuracy-formulations.md, transcribed 2026-09-02 from
+# https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/
+APPROVED_ACCURACY = [r"96-97\s*%", r"1\.5-2\.0\s*cm", r"less than 1\s*cm", r"<\s*1\s*cm",
+                     r"0\.40\s*cm", r"\+/-\s*3\.5\s*%", r"±\s*3\.5\s*%"]
+
+# The two studies use different references. The live article states the rule outright: "The
+# numbers from the two studies should not be combined because the references differ."
+INTERNAL_BENCH = re.compile(r"96-97\s*%|1\.5-2\.0\s*cm|less than 1\s*cm|<\s*1\s*cm")
+ISO_BENCH = re.compile(r"0\.40\s*cm|ISO\s*8559")
+
+FRAMEWORK_URL = "content-hub/mobile-body-scanning-accuracy/"
+
+
+def gate_accuracy(body: str, line_offset: int = 0):
+    """Gate 9. Accuracy discipline, against the live framework article's own rules.
+
+    Three things a script can check, and one it cannot.
+
+    Can: that an accuracy figure is one we actually publish; that the internal benchmark and
+    the ISO benchmark are not quoted in the same paragraph; that a paragraph carrying a figure
+    links to the framework article rather than leaving the reader to find the source.
+
+    Cannot: whether the condition attached to a figure is the RIGHT condition. "Accurate enough
+    for which decision?" is a judgment, and it stays with the editor.
+    """
+    problems = []
+    text = strip_comments(body)
+
+    # a) an accuracy-shaped figure that is not one of ours
+    SHAPED = re.compile(
+        r"(\d{1,3}(?:\.\d+)?\s*%\s*(?:accur|precis|repeatab|consisten)"
+        r"|(?:accur|precis|repeatab|error|varian|toleran)\w*[^.\n]{0,40}?"
+        r"(\d{1,3}(?:\.\d+)?\s*(?:%|cm|mm)))",
+        re.I)
+    for i, line in enumerate(text.split("\n"), 1):
+        if META_MARKERS.search(line):
+            continue
+        for m in SHAPED.finditer(line):
+            frag = m.group(0)
+            if any(re.search(a, frag, re.I) for a in APPROVED_ACCURACY):
+                continue
+            problems.append(
+                f"line {i + line_offset}: {frag.strip()!r} is not an accuracy figure we publish. "
+                f"Approved set: 96-97%, 1.5-2.0 cm, < 1 cm, 0.40 cm (ISO), +/-3.5% (weight). "
+                f"See accuracy-formulations.md")
+
+    # b) the two benchmarks in one paragraph
+    for pi, para in enumerate(text.split("\n\n")):
+        if META_MARKERS.search(para):
+            continue
+        if INTERNAL_BENCH.search(para) and ISO_BENCH.search(para):
+            ln = text[:text.find(para)].count("\n") + 1 + line_offset
+            problems.append(
+                f"line ~{ln}: the internal benchmark and the ISO 8559 benchmark appear in the "
+                f"same paragraph. The live article: \"The numbers from the two studies should "
+                f"not be combined because the references differ.\"")
+
+    # c) a figure with no route to its source
+    has_fig = bool(INTERNAL_BENCH.search(text))
+    if has_fig and FRAMEWORK_URL not in body:
+        problems.append(
+            "an accuracy figure is stated but the article never links to the framework article "
+            f"({FRAMEWORK_URL}). A cited figure whose source is nowhere on the page is the "
+            "weaker configuration")
+
+    info = {"accuracy_figures_present": has_fig,
+            "links_to_framework": FRAMEWORK_URL in body}
+    return not problems, problems, info
 
 
 # ---------------------------------------------------------------- report
@@ -589,6 +670,7 @@ def main():
         run("internal links", gate_links, body, pack)
         run("keyword placement", gate_keyword, body, primary)
         run("abbreviations (M1)", gate_m1, body)
+        run("accuracy discipline", gate_accuracy, body, line_offset)
 
     failed = [r for r in results if not r["ok"]]
     verdict = "PASS" if not failed else "FAIL"

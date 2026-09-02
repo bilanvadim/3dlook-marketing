@@ -190,3 +190,41 @@ ledger, ревизионные заметки, open items, разбор конф
    «Внешнее рев'ю идёт на аутлайн». Структурное рев'ю на аутлайне стоит один рядок правки;
    то же рев'ю на готовом тексте стоило $53,88 и четыре прогона агентов.
 3. **СТОП.** Ждёшь апрув.
+
+## Точность: формулировки берутся ДОСЛОВНО, не пересобираются из цифр
+
+**`brand-assets/product-info/accuracy-formulations.md` — канон.** Это язык точности живой статьи
+<https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/>, перенесённый verbatim 2026-09-02.
+`about-me.md` прямо говорит: эта статья каноничная, а не `proof-points.md`.
+
+**Не собирай формулировку из чисел в `proof-points.md`.** Там номерной склад; опубликованное
+предложение — в файле выше. Копируй предложение, не число.
+
+Что держать в голове:
+
+- Формат `96-97%` и `1.5-2.0 cm` — **дефисы**, как на живой странице. Не en dash, не «96 to 97 percent».
+- Repeatability пишется **`< 1 cm`** (locked convention). Опубликованная формулировка:
+  *«For most evaluated measurements, repeated scans showed typical scan-to-scan differences of
+  less than 1 cm.»*
+- **Два бенчмарка НИКОГДА не совмещаются в одном абзаце.** Внутренний (`96-97%`, `1.5-2.0 cm`,
+  `< 1 cm`) и ISO 8559 (`0.40 cm`) отвечают на разные вопросы против разных референсов. Живая
+  статья формулирует это правилом: *«The numbers from the two studies should not be combined
+  because the references differ.»* Линтер это валит.
+- **`95%+ repeatability consistency` НЕ публикуется.** Живая статья описывает ту же студию 2025
+  года и такой цифры не даёт вообще. Она внутренняя, помечена в `proof-points.md`, и у неё нет
+  опубликованного дома. Не бери её.
+- **Per-measurement цифры** (wrist 0.54, waist 2.14, chest 0.60 и т.д.) — технические материалы,
+  не хаб. Живая статья публикует только «varying by body part» плюс методологию под NDA.
+- Ни одной цифры точности **без условия**: против какого референса, для какой популяции, под
+  каким протоколом, для какого решения. Причина — словами самой статьи: *«Every accuracy figure
+  is really an accuracy relative to one specific reference.»*
+- Абзац с цифрой **линкует на framework-статью**. Не в «further reading» в конце.
+- Reserved words на нашу же доказательную базу — FAIL: `independent`, `third-party`, `validated`,
+  `clinically validated`, `peer-reviewed`. §1.9 канона говорит, что у нас есть на самом деле,
+  включая строку про NCSU: *«dataset enrichment work, not independent validation»*.
+- **DXA, не DEXA** (решение Вадима 2026-09-02). `DEXA` допустим только там, где это поисковый
+  запрос или опубликованный слаг, и пишется `DXA (also written DEXA)`.
+
+Гейт: `python3 scripts/article_lint.py <файл>.md` — секция **accuracy discipline**. Он проверяет
+набор цифр, несовмещение бенчмарков и наличие ссылки на канон. Правильность *условия* при цифре
+скрипт судить не может — это на редакторе.

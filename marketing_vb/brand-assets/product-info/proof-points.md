@@ -6,11 +6,19 @@
 
 ## Accuracy
 
+> **Published wording lives in `brand-assets/product-info/accuracy-formulations.md`, transcribed verbatim from the
+> live framework article on 2026-09-02.** That article is canonical for accuracy language;
+> this table is the number store behind it. Copy the sentence from there, not a number from
+> here, into anything that ships.
+>
+> Format is `96-97%` and `1.5-2.0 cm`, **hyphens**, matching the live page. En dashes were in
+> this table until 2026-09-02 and are a hard ban.
+
 | Claim | Number | Source / Context |
 |-------|--------|------------------|
-| Overall accuracy vs manual measurements | 96-97% | 2025 Accuracy & Repeatability Study (real-world customer scan events benchmarked against expert manual measurements) |
-| Typical error margin | 1.5–2.0 cm | Same study |
-| Wrist girth accuracy | 0.54 cm absolute error | Same study (highest precision metric) |
+| Overall accuracy vs manual measurements | 96-97% | 2025 Accuracy & Repeatability Study (real-world customer scan events benchmarked against expert manual measurements). Published sentence: accuracy-formulations.md §1.1 |
+| Typical error margin | 1.5-2.0 cm | Same study |
+| Wrist girth accuracy | 0.54 cm absolute error | Same study (highest precision metric). **INTERNAL / technical material only — the live framework article publishes no per-measurement figures, only "varying by body part" plus methodology under NDA. Review 1 item 16 cut these from a hub article. Do not publish in a hub, use accuracy-formulations.md §1.1 instead** |
 | Calf accuracy | 1.27 cm absolute error | Same study |
 | Neck accuracy | 1.48 cm absolute error | Same study |
 | Thigh accuracy | 1.64 cm absolute error | Same study |
@@ -22,10 +30,12 @@
 
 ## Repeatability
 
+> **Published wording: `brand-assets/product-info/accuracy-formulations.md` §1.2.** The locked convention is `< 1 cm`.
+
 | Claim | Number | Source / Context |
 |-------|--------|------------------|
-| Overall repeatability | 95%+ consistency | 2025 Accuracy & Repeatability Study |
-| Variance across repeated scans | < 1 cm | Same study |
+| Overall repeatability | 95%+ consistency | **INTERNAL ONLY, DO NOT PUBLISH, and query it with Vadim.** Checked against the live framework article 2026-09-02: it describes this same 2025 study and gives **no** such percentage, only "typical scan-to-scan differences of less than 1 cm". So this figure has no published home and may not be a real derived statistic at all. It was in `CLAUDE.md`, `overview.md` and claim FX-004 until 2026-09-02 |
+| Variance across repeated scans | < 1 cm | Same study. **This is the publishable repeatability figure.** Published sentence: accuracy-formulations.md §1.2 |
 | Variance: chest | 0.60 cm | Same study (girth measurements) |
 | Variance: waist | 0.89 cm | Same study |
 | Variance: low hips | 0.86 cm | Same study |
@@ -149,7 +159,7 @@ See `pricing.md` for full table. Key anchors:
 ## How agents should cite
 
 When using a number above:
-- For posts / outbound: **mention the number with light context** ("96–97% accuracy in real-world benchmarks") — do not link to internal docs publicly
+- For posts / outbound: **mention the number with light context** ("96-97% accuracy against expert manual measurement") — do not link to internal docs publicly
 - For SEO articles: **prefer customer outcome over internal metric** when possible ("Safariland uses our scanning to reduce remakes" > "we have 96% accuracy")
 - **Never invent comparisons** — e.g., do not say "10× more accurate than X" unless that number exists in this file with a source
 
