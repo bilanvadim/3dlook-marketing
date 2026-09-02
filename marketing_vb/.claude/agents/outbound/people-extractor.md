@@ -11,55 +11,59 @@ tools: Read, Write, Bash, Grep, Glob
 
 Вадим загружает CSV из Sales Navigator в `workspace/outbound/campaigns/{campaign}/sales-nav-raw/`. Файлов может быть несколько (разные поиски).
 
-## Алгоритм
-
-1. Найди все CSV в папке raw.
-2. Через Bash + Python (pandas) объедини их.
-3. Нормализуй колонки в схему:
-
-```csv
-person_id,full_name,first_name,last_name,title,seniority,company_name,company_linkedin_url,person_linkedin_url,email_guess,location_country,location_city,years_in_role,profile_summary
-```
-
-4. Дедуп по person_linkedin_url.
-5. Удали явные не-C-level (если в гипотезе указан C-level — исключи Manager / Senior Manager / Director уровни ниже VP).
-6. Соедини с `companies.csv` — оставь только людей из компаний из shortlist.
-
-## Скрипт-шаблон (Python через bash)
+## Алгоритм — одна команда, не pandas
 
 ```bash
-cd /workspace/outbound/campaigns/{campaign}
-python3 <<'EOF'
-import pandas as pd
-import glob, json, hashlib
-
-raw_files = glob.glob("sales-nav-raw/*.csv")
-dfs = [pd.read_csv(f) for f in raw_files]
-df = pd.concat(dfs, ignore_index=True).drop_duplicates(subset=['LinkedIn URL'])
-
-# rename columns to schema
-mapping = {
-    'Full Name': 'full_name',
-    'Title': 'title',
-    'Company': 'company_name',
-    # ... и т.д., точные имена зависят от экспорта Sales Nav
-}
-df = df.rename(columns=mapping)
-
-# generate person_id
-df['person_id'] = df['person_linkedin_url'].apply(
-    lambda u: hashlib.md5(u.encode()).hexdigest()[:12]
-)
-
-# join with companies.csv to filter
-companies = pd.read_csv('companies.csv')
-df = df.merge(companies[['company_name']], on='company_name', how='inner')
-
-# write normalized
-df.to_csv('people-raw.csv', index=False)
-print(f"Total people: {len(df)}, Unique companies: {df['company_name'].nunique()}")
-EOF
+python3 /home/vadim_prod/3dlook-marketing/marketing_vb/scripts/outbound-pipeline.py \
+    extract-people --campaign {campaign} --dry-run
 ```
+
+Посмотри числа, потом сними `--dry-run`. Скрипт делает всё, что раньше стояло здесь
+псевдокодом: собирает все CSV из `sales-nav-raw/`, нормализует колонки в схему ниже,
+дедупит по person_linkedin_url, фильтрует по shortlist и пишет `people-raw.csv`.
+
+```csv
+person_id,full_name,first_name,last_name,title,seniority,company_name,company_slug,company_linkedin_url,person_linkedin_url,email_guess,location_country,location_city,years_in_role,profile_summary
+```
+
+**Почему не pandas.** Здесь до 2026-09-02 стоял шаблон с `import pandas as pd` и
+`df.merge(companies[['company_name']], on='company_name', how='inner')`. **pandas не
+установлен ни в системном python3, ни в venv Хермеса** — этот шаблон не запускался
+никогда. Каждый прогон писал свою замену, и они разошлись: в
+`2026-07-16-au-telehealth` до сих пор лежат шесть разных `gen_batch*.py`,
+`generate_batch1.py`, `_v2.py` и `icp_validate.py`. Один из них выкинул колонки
+`first_name` / `last_name` / `linkedin_url`, и 253 человека семь недель лежали в
+импорте, который нельзя отправить.
+
+### Что читать в выводе
+
+Скрипт печатает три числа и два списка. Списки — главное.
+
+- **`people kept` / `companies covered N of M`** — сколько людей прошло и сколько
+  компаний шортлиста получили хотя бы один контакт.
+- **`⚠ N shortlisted companies got ZERO people`** — это пробел в выгрузке Sales
+  Navigator, а не решение по фиту. Скажи Вадиму, какие компании досоставить.
+- **`⚠ N people dropped: their company is not in the shortlist`** — **читай этот список
+  всегда.** Джойн идёт по слагу с алиасами, но он не всесилен. На реальной выгрузке
+  2026-08-07 (643 строки) джойн по сырому имени давал 94 человека и молча терял 549:
+  Sales Navigator пишет тип занятости внутрь названия (`Personify Health . Full-time`,
+  `iFIT . undefined`), а шортлист пишет уточнения в скобках
+  (`Personify Health (formerly Virgin Pulse)`). Слаг+алиасы поднимают это до 531. Из
+  оставшихся 112 часть — реальные решения, которые принимает человек: `Icon Health and
+  Fitness` это прежнее имя iFIT, `FreeMotion Fitness` — их суб-бренд, `Calibrate
+  Bodyworks` — вероятно другая компания. Не добавляй их в шортлист молча, спроси.
+- **`✗ N people have no LinkedIn URL`** — exit 1. closely.io без URL ничего не сделает.
+
+### Фильтр shortlist теперь настоящий
+
+Скрипт берёт только строки с `icp_fit` = High / Medium (или `fit_score_1_to_5` >= 3) и
+только те, чей `hq_country` принадлежит рынку профиля кампании (CLAUDE.md секция 5).
+Раньше фильтра по фиту не было вообще: `merge` по имени пропускал и `Exclude`, и чужое
+гео. В расширенном UK-списке 2026-09-02 это 10 строк `Exclude`, 8 US-HQ и 1 Sweden,
+которые ушли бы в `people-raw.csv` как валидные цели.
+
+Если в `companies.csv` нет колонки фита — `validate-companies` скажет об этом
+предупреждением, и фильтр по фиту будет пустым. Это не «всё хорошо», это «фита нет».
 
 ## Формат вывода
 
@@ -71,10 +75,11 @@ EOF
 
 - Source files: [list]
 - Raw rows total: N
-- After dedup: N
-- After C-level filter: N
-- After company-match filter: N
-- Final: N people across M companies
+- After dedup (person_linkedin_url): N
+- Dropped on company fit: N        # из вывода validate-companies
+- Dropped on geo (чужой профиль): N
+- Dropped: компания не в shortlist: N
+- Final: N people across M of K shortlisted companies
 
 ## Issues
 - [компании, у которых не нашлось ни одного контакта — список]
@@ -86,3 +91,6 @@ EOF
 - **Не пытайся обогатить email-ы через WebSearch.** Если их нет в Sales Nav — оставь пустыми, или вытащим на следующем этапе через отдельный энричер.
 - **Не сужай по seniority слишком агрессивно.** Лучше оставить 5 лишних людей, чем потерять одного релевантного — фильтрация будет в icp-validator.
 - **Если CSV пустые / битые** — STOP, попроси Вадима перевыгрузить.
+- **`people-raw.csv` уже существует — не перезаписывай молча.** Скрипт откажется без
+  `--overwrite`: кампания могла уже отправить по этому списку. 2026-09-02 тестовый
+  прогон затёр `people-raw.csv` в кампании, из которой ушло 248 сообщений.
