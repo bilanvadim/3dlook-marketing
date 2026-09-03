@@ -1,6 +1,6 @@
 # Published Articles Inventory — 3DLOOK Content Hub
 
-> Last updated: 2026-08-28
+> Last updated: 2026-09-03
 > Source: `https://3dlook.ai/post-sitemap.xml` (Yoast SEO — authoritative)
 > Total: **156 published articles** (155 in the 2026-08-18 sitemap snapshot, +1 published 2026-08-21 and registered by hand before the next sitemap pull). The 2026-08-24 `online-pharmacy-bmi-verification` rewrite and the 2026-08-28 `glp-1-market` hub refresh **do not change the count** — both were republished at their existing URLs.
 > Purpose: single source of truth for what's published, mapped to content plan hubs
@@ -67,10 +67,10 @@ Each working directory now carries a `FINAL-PUBLISHED.md` marker with the live U
 | 5 | AI in Telehealth | P0 hub + P1/P2 | ✅ Aug 7 | Patient Engagement (Aug 14), **Telehealth BMI verification — shipped Aug 24 as a section of the Pharmacy BMI article, not a page** | Hub refreshed & live Aug 7, 2026; BMI-verification row closed; remaining P1/P2 clusters pending |
 | 6 | GLP-1 Market | P0 hub + P1/P2 | ✅ **Hub refreshed Aug 28, 2026** | Pharmacy BMI (**rewritten Aug 24**), GLP-1 Compliance, Visual Progress, Weight Loss Industry, Weight Loss Clinic Tips, Body Scanning for Weight Loss, Beyond BMI, Body Composition Tools listicle (Aug 21) | Hub is current — P1/P2 cluster rows unblocked |
 | 7 | Insurance Underwriting | P0 | ✅ Jun 17 | — | None |
-| 8 | Wellness Platforms | P0 | ✅ Mar 30 | — | P1 articles not published |
+| 8 | Wellness Platforms | P0 | ✅ Mar 30 | — | **P0** supporting listicle not published (Top Mobile Body Scanning Software) — see P0 gaps. Note: the 2026-08-31 hub rewrite in `workspace/seo/articles/2026-08-31-ai-body-data-wellness-platforms-hub/` has no `FINAL-PUBLISHED.md`, so it is drafted, not live |
 | 9 | Bariatric | P0 | ✅ Jun 5 | — | None |
-| 10 | Clinical Trials | P0 | ✅ Jul 17 | — | P1 articles not published |
-| 11 | Occupational Health | P0 | ✅ Jul 10 | — | P1 articles not published |
+| 10 | Clinical Trials | P0 | ✅ Jul 17 | — | 4 P1 supporting articles not published |
+| 11 | Occupational Health | P0 | ✅ Jul 10 | — | **Two P0** supporting articles pending: comparison in progress 2026-09-03, return-to-work not started |
 | — | BCRL / Lymphedema | NEW | ✅ Jul 8 | — | New vertical — add to plan |
 
 ---
@@ -356,11 +356,43 @@ Main Health Hub (ai-body-data-health-hub) — Jul 24, 2026
 
 ## Gap Analysis vs Content Plan
 
+> **Priority reconciliation — 2026-09-03.** Every open gap row was re-read against
+> `content-plan.md`, which is the offline copy of the [strategy spreadsheet](https://docs.google.com/spreadsheets/d/1Sy7EzzZZvCKyrD30pbhElEpCZDbzuMtMkxdiDTIP8AE/edit?gid=0#gid=0)
+> and therefore **wins on priority**; this file wins on what is published. **Five of seven rows
+> were misfiled** — the whole open list sat under P1 regardless of the plan:
+>
+> | Row | Was here | Plan says | Plan line |
+> |---|---|---|---|
+> | Manual Intake vs Digital Intake | P1 | **P0** | `content-plan.md:212` |
+> | Return-to-Work Screening Documentation | P1 | **P0** | `content-plan.md:213` |
+> | Top Mobile Body Scanning Software for Wellness Apps | P1 | **P0** | `content-plan.md:154` |
+> | Adding Remote Body Measurement to a DCT Platform | P1 | P1 — *unchanged, see below* | sheet, live |
+> | Remote BMI Pre-Checks in Obesity Trial Recruitment | P1 | P1 — *unchanged, see below* | sheet, live |
+>
+> Already right and left alone: What CROs Should Ask (`:193`) and Manual Tape Measurements vs
+> Mobile Body Scanning (`:192`). The practical consequence is that the P0 queue is **four items,
+> not one** — the Trust FAQ plus three supporting articles — and that Hub 11's two P0 rows outrank
+> the clinical-trials P1 work the old ordering had put ahead of them.
+>
+> **The last two rows were first demoted to P2 and then put back, and the reason matters more than
+> the edit.** `content-plan.md:201-202` does say P2 for both — but that file is the offline copy and
+> its header reads `Last synced from source: 2026-07-07`. Pulled live the same day, the sheet has
+> both rows at **P1**. So the md was the stale document, not this one, and a reconciliation done
+> against the md alone would have propagated two-month-old priorities into the queue. **Reconcile
+> against the sheet, or against a CSV pulled the same day — never against `content-plan.md` alone
+> until its header date is current.** `scripts/content-plan-sync.py` now checks this weekly.
+>
+> Found while resolving Phase 0 for the Manual-vs-Digital-Intake article: `content-plan.md:212`
+> said P0, this file said P1, and the plan was written against P0.
+
 ### 🔴 Critical Gaps (P0 — still missing)
 
 | Article | Hub | Action |
 |---------|-----|--------|
-| Data, Privacy, Security & Regulatory FAQ | #3 Trust Assets | Create net-new — **MOST OVERDUE** (only remaining P0 hub gap; draft exists at `workspace/seo/articles/2026-07-14-fitxpress-privacy-security-faq/`) |
+| Data, Privacy, Security & Regulatory FAQ | #3 Trust Assets | Create net-new — **MOST OVERDUE** (the only remaining P0 *hub* gap; the three rows below are P0 *supporting* articles. Draft exists at `workspace/seo/articles/2026-07-14-fitxpress-privacy-security-faq/`) |
+| Manual Intake vs Digital Intake in Occupational Health Screening | #11 Occupational Health | Create net-new — **IN PROGRESS 2026-09-03.** Plan approved at checkpoint 1; `write → edit → publish` running. Dir: `workspace/seo/articles/2026-09-03-manual-vs-digital-intake-occupational-health/` |
+| Return-to-Work Screening Documentation: How Digital Intake Reduces Delays | #11 Occupational Health | Create net-new — not started. Distinct buyer (workers'-comp / absence); must not overlap the comparison article above. Never "clears employees for duty" |
+| Top Mobile Body Scanning Software for Wellness Apps | #8 Wellness | Create net-new listicle — not started. Angle is "what wellness apps should look for," not "top software in general" |
 | ~~AI in Fitness hub refresh~~ ✅ | #4 Fitness | **DONE Jul 31, 2026** — `ai-in-fitness-industry/` refreshed & live |
 | ~~AI in Telehealth hub refresh~~ ✅ | #5 Telehealth | **DONE Aug 7, 2026** — `the-potential-of-ai-in-telehealth/` refreshed in place & live |
 | ~~GLP-1 Market 2026 hub refresh~~ ✅ | #6 GLP-1 | **DONE Aug 28, 2026** — `glp-1-market/` refreshed & republished in place. Live text of record: `workspace/seo/articles/glp-1-market-hub/published-live-2026-08-28.md` |
@@ -371,13 +403,10 @@ Main Health Hub (ai-body-data-health-hub) — Jul 24, 2026
 |----------|---------|-----|
 | ~~P1~~ ✅ | ~~What Is Telehealth BMI Verification in 2026~~ | #5 Telehealth — **DONE Aug 24, 2026** — shipped as a section, not a page: "How to verify BMI remotely in a telehealth workflow" inside [`online-pharmacy-bmi-verification-a-2026-compliance-guide`](https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/). The standalone draft at `workspace/seo/articles/telehealth-bmi-verification-2026/` is frozen as SUPERSEDED — do not publish it |
 | ~~P1~~ ✅ | ~~Top 7 Remote Body Composition Tools for GLP-1 Clinics~~ | #6 GLP-1 — **DONE Aug 21, 2026** — published as "7 Body Composition and Progress-Tracking Tools for Remote GLP-1 Clinics" at [`top-7-remote-body-composition-tools-glp-1-clinics`](https://3dlook.ai/content-hub/top-7-remote-body-composition-tools-glp-1-clinics/) |
-| P1 | Top Mobile Body Scanning Software for Wellness Apps | #8 Wellness |
-| P1 | Adding Remote Body Measurement to a DCT Platform | #10 Clinical Trials |
-| P1 | Remote BMI Pre-Checks in Obesity Trial Recruitment | #10 Clinical Trials |
 | P1 | What CROs Should Ask Before Using Remote Body Measurement Tools | #10 Clinical Trials |
 | P1 | Manual Tape Measurements vs Mobile Body Scanning in Clinical Trials | #10 Clinical Trials |
-| P1 | Manual Intake vs Digital Intake | #11 Occupational Health |
-| P1 | Return-to-Work Screening Documentation | #11 Occupational Health |
+| P1 | Adding Remote Body Measurement to a DCT Platform: API, Workflow, and Data Handoff Considerations | #10 Clinical Trials |
+| P1 | Remote BMI Pre-Checks in Obesity Trial Recruitment: What They Can and Cannot Do | #10 Clinical Trials |
 
 ### ⚪ New Content Not in Plan
 
