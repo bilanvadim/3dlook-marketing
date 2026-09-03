@@ -1,0 +1,232 @@
+# Context pack — Manual Intake vs Digital Intake in Occupational Health Screening
+
+Canonical file: `workspace/seo/_context-packs/2026-09-03-manual-vs-digital-intake-occupational-health.yaml`
+
+```yaml
+context_pack:
+  created: 2026-09-03
+  product: fitxpress
+  track: seo
+  channel: blog
+  profile: company
+  objective: "Manual Intake vs Digital Intake in Occupational Health Screening — net-new supporting comparison article, Hub 8 (Occupational Health Screening). GEO/comparison intent. Angle: throughput, missing/incomplete data, rescreens, multi-site consistency. No medical/clearance claims."
+  target_agent: seo-planner
+
+  phase_0_resolved: true   # Orchestrator already confirmed the content-plan row and hub-live status — do not re-litigate
+  action_type: "create-net-new"
+
+  company_oneliner: "3DLOOK turns two smartphone photos into 80+ body measurements and a 3D model in under 45 seconds."
+
+  product_summary: |
+    FitXpress: structured, time-stamped body data (80+ measurements, BMI, body composition)
+    captured remotely from 2 photos, ~45 seconds. For occupational health it is a
+    remote, pre-appointment intake and documentation layer — not an exam, not a
+    clearance/fitness-for-duty decisioning tool, not a hiring-decision input.
+
+  approved_claims:
+    - {id: FX-001, text: "3DLOOK's measurement accuracy of approximately 96-97% across body metrics, with a typical absolute error of 1.5-2.0 cm per measurement, varying by body part", source: "accuracy-formulations.md §1.1, verbatim from the live framework article", note: "Never state without the population/reference/protocol condition (§1.4-1.6) and a link to the framework article."}
+    - {id: FX-003, text: "For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm", source: "accuracy-formulations.md §1.2, the approved repeatability formulation", note: "This is the relevant differentiator vs manual tape measurement (staff/site variance) — repeatability, not one-time accuracy."}
+    - {id: FX-004, text: "95%+ overall repeatability consistency", source: "2025 Accuracy & Repeatability Study", publishable: false, note: "INTERNAL ONLY. Live framework article describes this same study and gives no such percentage. Use FX-003 instead."}
+    - {id: FX-006, text: "Under 45 seconds from photo to results", source: "FitXpress product spec"}
+    - {id: FX-007, text: "2 photos required (front + side)", source: "Product spec"}
+    - {id: FX-008, text: "80+ body measurements", source: "Product spec"}
+    - {id: FX-009, text: "Body composition outputs: BMI, BMR, fat %, lean mass, fat mass, essential fat, beneficial fat", source: "Product spec"}
+    - {id: FX-014, text: "HIPAA maintained (US healthcare contexts); follows GDPR principles for EU processing; AWS S3 SSE-S3 encryption at rest, TLS in transit; no personal identifiers processed; photos deleted immediately or within 30 days per client policy", source: "compliance.md"}
+
+  operational_language_to_use:
+    # content-strategy-guidelines.md §13 — use these instead of vague AI language
+    - "reduces manual intake"
+    - "standardizes capture"
+    - "supports review"
+    - "creates structured records"
+    - "improves documentation consistency"
+    - "reduces rework"
+    - "improves data availability before review"
+
+  banned_claims:
+    - "clearance decisions / 'clears employees for duty' / automated fitness-for-duty determination"
+    - "diagnosis of any medical condition"
+    - "any implication that FitXpress informs hiring or employment decisions"
+    - "medical-device positioning (the one licensed exception: \"It is not positioned as a medical device.\" — use this exact sentence, nothing else with 'positioned as')"
+    - "guaranteed compliance / 'makes you compliant'"
+    - "pre-offer medical examination framing (must stay inside EEOC/ADA post-offer boundary)"
+    - "most accurate body scanning / FDA-cleared / SOC 2 certified (not yet certified)"
+    - "automatic fraud detection"
+    - "named competitor comparisons"
+    - "any number not in approved_claims"
+
+  banned_words:
+    - leverage
+    - utilize
+    - harness
+    - robust
+    - seamless
+    - comprehensive
+    - delve
+    - navigate (metaphorical)
+    - tapestry
+    - realm
+    - unlock
+    - unleash
+    - revolutionary
+    - game-changing
+    - cutting-edge
+    - "'positioned as' for anything except the one licensed medical-device sentence"
+    - em dash (hard ban, terminology-guardrails.md)
+
+  tone:
+    voice: "calm, specific, evidence-led B2B; the reframe move; honest about limits in the same breath as capability"
+    register: "SENSITIVE VERTICAL (about-me.md + content-strategy-guidelines.md §12) — needs an early scope note / italic disclaimer, same intake-not-clearance boundary as the hub."
+    length: "supporting comparison article — shorter than the hub's ~4,500 words; comparable supporting-article range ~1,800-2,800 words"
+    format: "GEO/comparison intent — lead with a clear comparison framing (manual tape/paper intake vs digital two-photo intake), comparison table earns its place here"
+    dont: "no clickbait, no clean-sweep comparison (about-me.md: 'compare by role, not by hype')"
+
+  voice_fingerprint:
+    - "The reframe move: 'faster intake' is not 'faster clearance' — reframe to 'which step in the workflow gets faster, and which stays with the clinician?'"
+    - "Declarative and unhurried; concrete over abstract — every claim carries a number, source, or disclosed limit"
+    - "Honest about limits in the same breath as capability; buyer framing ('occupational health providers', 'programs'), not 'you'-spam"
+  claims_discipline:
+    - "NEVER: diagnose, make hiring/clearance/fitness-for-duty decisions, replace clinician review or the examination itself, guarantee compliance"
+    - "Position AS: a remote, pre-appointment intake and documentation layer that supports clinician review — the clearance decision stays with the licensed provider and employer policy"
+  accuracy_framing:
+    - "Never reduce accuracy to one universal number — qualify by decision/reference/protocol/population"
+    - "Repeatability written as `< 1 cm`; never combine with the ISO 8559 benchmark (different reference, not used in this article anyway)"
+    - "For this comparison, repeatability (scan-to-scan consistency vs staff/site-dependent tape variance) is the more relevant differentiator than one-time accuracy"
+
+  examples:
+    - file: "brand-assets/past-articles/blog/clinical-trials-anthropometric-measurement.md"
+      note: "Best model for compliance-scoping in a sensitive vertical: 'operational not clinical' framing, scope-note-early + FAQ structure. See its known_issues frontmatter for the M1/M2 slips NOT to replicate."
+    - file: "brand-assets/past-articles/blog/body-scanning-technology-comparison.md"
+      note: "Comparison-type structural model: Quick Answer Block up top, method-vs-method comparison tables answering 'which fits which workflow', never a clean sweep."
+    - file: "workspace/seo/articles/2026-06-08-occupational-health-screening/v2-asselya/draft-final.md"
+      note: "The hub itself — same vertical, same compliance guardrails, same disclaimer language. Read for boundary tone, not for structure to copy (this is a supporting article, not a hub)."
+
+  competitors_context: |
+    No named competitor plays specifically in occupational-health intake workflows in
+    competitors.md; Prism Labs / Bodygram / Size Stream are all positioned around
+    health/fitness/clinical body composition, not employer screening intake. Frame the
+    comparison as manual (tape/paper) vs digital intake generally — do not name a vendor.
+
+  icp_context:
+    segment: "Occupational Health / Pre-Employment Screening (icp-detail.md §6)"
+    audience_md_gap: "audience.md's 7 health-segment layers do NOT include Occupational Health — icp-detail.md §6 itself is flagged as not covered by the newer ICP doc ('Сегмент не покрыт новым ICP-документом'). No segment_hook/do_not_say can be pulled from audience.md for this vertical. Use the hub's own compliance_guardrails + content-strategy-guidelines.md §9 vertical boundary instead (below) — they are more specific and already approved for this exact vertical."
+    buyer_persona: "VP Operations/COO, Chief Medical Officer, Director of Clinical Services, Head of Occupational Health (occupational health providers, workforce screening vendors, workers'-comp/absence administrators, multi-site employers)"
+    pain_points:
+      - "Manual intake (paper questionnaires, tape measurements) is slow and inconsistent across sites/staff, producing rescreens"
+      - "High-volume hiring draws on fixed clinic appointment capacity"
+      - "Multi-site programs need documentation that is comparable across locations and vendors"
+      - "Workers'-comp/return-to-work programs lack a comparable baseline measurement, forcing same-visit measurement instead of a pre-injury reference"
+    hero_message: "Standardize screening intake remotely to increase throughput, reduce rescreens, and speed clearance decisions." # messaging.md — note "speed clearance decisions" means shorten time-to-decision, not that FitXpress decides; the hub's own precedent phrases this as "speed up pre-employment medical clearance"
+    hub_compliance_guardrails: [no_clearance_decisions, EEOC_pre_post_offer, no_BMI_based_employment, intake_not_clearance_language, no_medical_device_claims]
+    do_not_say:
+      - "Imply hiring decisions, employment eligibility decisions, clearance decisions, diagnosis, or fitness-for-duty decisioning (content-strategy-guidelines.md §9)"
+      - "Pre-offer medical examination framing — stays inside EEOC/ADA post-offer boundary, same as the hub"
+      - "'Clears employees for duty' (explicit guardrail on the Return-to-Work sibling row, applies equally here)"
+
+  content_strategy:
+    hub: "Occupational Health Screening (Hub 8)"
+    cluster: "Comparison"
+    intent: "GEO/comparison"
+    action_type: "create-net-new"   # GATE: seo-planner Phase 0 acts on this — already confirmed by Orchestrator
+    priority: "P0"
+    hub_status: "Hub live since 2026-07-10 — the 'do not create broad occupational health articles until the hub is live and indexed' guardrail (content-strategy-guidelines.md line 128) is LIFTED. This and other Hub-8 P0/P1 supporting pieces are unblocked."
+    existing_urls:
+      - "https://3dlook.ai/content-hub/occupational-health-screening-software/  # CANNIBALIZATION WARNING + up-link target: the main hub, published 2026-07-10, updated 2026-07-17"
+    cannibalization_guardrail: >
+      Row verbatim (content-plan.md:212): "Throughput, missing data, rescreens, multi-site
+      consistency. No medical/clearance claims." Hub already owns (content-plan.md:211,
+      quoting the main-hub row): "pre-employment/pre-placement/return-to-work intake,
+      fit-for-duty documentation support, rescreens, multi-site, workforce screening vendors,
+      workers'-comp." This article must go NARROWER than the hub: manual-vs-digital
+      comparison specifically, not a second general occupational-health overview.
+    sibling_boundaries:
+      - "Return-to-Work Screening Documentation: How Digital Intake Reduces Delays (content-plan.md:213, P0, create-net-new, unwritten) — distinct buyer (workers'-comp/absence). Guardrail: not 'clears employees for duty.' Do not fold return-to-work-specific delay framing into this comparison article."
+      - "Remote Intake for Workers' Compensation and Return-to-Work Documentation (content-plan.md:214, P1, create-net-new, unwritten) — workers'-comp/absence program ops. Guardrail: don't overlap the return-to-work article above. Keep workers'-comp program-ops detail out of this comparison article."
+    vertical_boundary: >
+      content-strategy-guidelines.md §9, Occupational Health, verbatim: "Owns pre-employment
+      intake, pre-placement intake, return-to-work intake, fit-for-duty documentation support,
+      rescreens, multi-site consistency, workforce screening vendors, workers' compensation,
+      and absence workflows. Do not imply hiring decisions, employment eligibility decisions,
+      clearance decisions, diagnosis, or fitness-for-duty decisioning."
+    internal_link_targets:
+      up: "https://3dlook.ai/content-hub/occupational-health-screening-software/"
+      sideways: "content-strategy-guidelines.md line 288, verbatim: 'Occupational health article may link to privacy FAQ and accuracy framework, not to unrelated wellness pages.' No sibling cluster article is published yet (both unwritten, see sibling_boundaries) — nothing else to link sideways to today."
+      down: "No dedicated FitXpress occupational-health vertical page exists yet (CLAUDE.md §16 G-I reality check: every FX vertical has at most one case or none — occupational health isn't built). Route down-funnel CTAs to the FX parent homepage (https://3dlook.ai/) and/or https://3dlook.ai/pricing/#bd-modal-personalized, matching the hub's own CTA pattern."
+      trust:
+        - "https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/  # Trust Asset #1, accuracy framework — link from any paragraph carrying FX-001/FX-003"
+        - "Data, Privacy, Security & Regulatory FAQ  # PLANNED, NOT PUBLISHED — draft at workspace/seo/articles/2026-07-14-fitxpress-privacy-security-faq/, still the one remaining P0 gap. Treat any link here as a placeholder."
+
+  hub_inventory:
+    hub_h2s:
+      - "The problem: occupational health screening still slowed by manual intake"
+      - "Why this matters now: employers need faster screening without adding clinic capacity"
+      - "What is occupational health screening intake?"
+      - "How FitXpress supports digital occupational health intake"
+      - "Standardizing pre-employment screening before the appointment"
+      - "Reducing delays in return-to-work and fit-for-duty workflows"
+      - "Pre-employment screening vs return-to-work screening"
+      - "Better occupational health documentation across sites and vendors"
+      - "What improves with digital occupational health intake?"
+      - "Who uses FitXpress for occupational health screening?"
+      - "More than body scanning: workflow rules, QA, reporting, and scale"
+      - "What FitXpress does and does not do"
+      - "How digital occupational health intake works with FitXpress"
+      - "Frequently asked questions"
+    hub_claims_used:
+      - "FX-006 (under 45 seconds), FX-007 (2 photos front+side), FX-008 (80+ measurements), FX-009 (BMI/body composition) — all spent as product-spec facts"
+      - "FX-014 compliance bundle — spent as 'HIPAA-maintained, BAA-ready, encrypted in transit/at rest, role-based access, no personal identifiers, deletion immediately or within configurable window'"
+      - "NOT spent: FX-001/FX-002/FX-003 accuracy/repeatability percentages — the hub never states 96-97% or < 1 cm anywhere. Room exists for this comparison article to introduce repeatability (FX-003) as the differentiator vs tape-measurement variance, without repeating the hub."
+      - "External citations already used (not proof-points.md, public sources): BLS 2024 Survey of Occupational Injuries and Illnesses (2.5M nonfatal injuries, 2.3/100 FTE incidence rate); EEOC ADA post-offer guidance; ACOEM fitness-for-duty guidance; OSHA 29 CFR Part 1904 recordkeeping. Reusable, but prefer a fresh angle-specific stat if one exists rather than re-citing the same BLS figure verbatim."
+    hub_inline_qa:
+      # Bolded mini-Q&A embedded inside body sections (distinct from the formal FAQ section below) —
+      # directly on-topic for this article's rescreens/missing-data/multi-site angle. Do not restate verbatim.
+      - "What causes rescreens in occupational health screening?"
+      - "Where does intake end and clearance begin?"
+      - "How can employers speed up pre-employment medical clearance?"
+      - "What is the difference between pre-employment screening and return-to-work screening?"
+      - "How can occupational health clinics standardize body measurements across sites?"
+    hub_faq_questions:
+      - "What is occupational health screening intake?"
+      - "How does digital intake improve occupational health screening throughput?"
+      - "How can occupational health providers reduce pre-employment screening bottlenecks?"
+      - "What data is usually collected during pre-employment screening?"
+      - "What is return-to-work clearance?"
+      - "Can body measurement software replace an occupational health exam?"
+      - "How does FitXpress support occupational health documentation?"
+
+  published_inventory:
+    already_live: false   # this specific comparison article does NOT exist; only the Hub-8 main hub is published
+    published_hub_articles:
+      - {slug: "occupational-health-screening-software", title: "Standardizing Occupational Health Screening: Faster Intake, Better Documentation, Fewer Rescreens", published: "2026-07-10", role: "hub (Hub #11 in inventory numbering / Hub 8 in content-plan numbering)"}
+    recently_published:
+      - {slug: "glp-1-market", published: "2026-08-28", hub: "GLP-1", note: "hub refresh, most recent publish"}
+      - {slug: "online-pharmacy-bmi-verification-a-2026-compliance-guide", published: "2026-08-24", hub: "GLP-1 / Telehealth"}
+      - {slug: "top-7-remote-body-composition-tools-glp-1-clinics", published: "2026-08-21", hub: "GLP-1"}
+    refresh_status: >
+      published-articles-inventory.md's own P1 gap table (line 379) lists "Manual Intake vs
+      Digital Intake | #11 Occupational Health" as an unpublished P1 gap — this conflicts with
+      content-plan.md's P0 priority for the same row. Treat content-plan.md's P0 as authoritative
+      (it is the priority the Orchestrator already resolved against); flag the P0/P1 mismatch to
+      Vadim rather than silently picking one.
+
+  keywords_raw:
+    source: "ahrefs api v3 (keywords-explorer)"
+    pulled: "2026-09-03"
+    file: "workspace/seo/_keywords/2026-09-03-manual-vs-digital-intake-occupational-health.yaml"
+    seed: "manual intake vs digital intake in occupational health screening"
+    seed_has_data: false
+    seed_metrics: null
+    note: >
+      The exact topic phrase and its fragments ("manual intake vs digital", "in occupational
+      health screening", "manual intake vs", "manual intake" itself at volume 0) all carry no
+      or zero measured demand. The only real volume in the direct pull is the hub's own head
+      term "occupational health screening" (250/diff 6) — already the hub's target keyword, not
+      available to this article. Two supplementary pulls were merged in: "digital patient intake
+      forms" space (seed 200/diff 3; "intake forms" 700/diff 4 is the highest-volume adjacent
+      term) and the broad "occupational health" head space (5400/diff 22 — hub territory, not
+      this article's). This is a GEO/comparison-intent article written for AI-answer-engine
+      and long-tail procurement-question coverage, not for a high-volume head keyword — full
+      variants/ideas are in the file above, read it rather than re-pulling.
+
+  exclusions: null   # not applicable — track is seo, not outbound
+```
