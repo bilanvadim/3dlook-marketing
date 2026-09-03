@@ -229,3 +229,59 @@ because a broken image reference is worse than no image. When the three files ar
    exempt from the canonical trailing-slash rule, and a figure in alt text will fail the claim
    gate.
 3. Regenerate the publish package so its embedded copy matches.
+
+---
+
+## 10. Remap for revision 6 (2026-09-03) — this section supersedes sections 2 and 5
+
+Everything above was planned against revision 3 (`final.md`). The shipping text is now
+`final-google-doc.md`, which restructured the article: "Progress visibility beyond scale weight",
+"Practical wellness-platform workflow" and the three-column intro comparison no longer exist as
+sections, so banners 1-3 above have no placement. The house style rules in section 1, the
+constraints in section 4 and the production spec in section 8 all still apply unchanged.
+
+The Doc's own Illustrations tab carries the current plan: three images, and the article text
+already holds their markers as `(*cover*)`, `(*Image 1*)` and `(*Image 2*)`. Alt text was missing
+for all three; written here in the house style — frame first, then the clause tying it to the
+topic, no invented figures.
+
+### Cover — below the article title
+
+**Concept (from the Doc).** A person reviewing a mobile wellness interface with baseline and
+follow-up 3D body models. Calm enterprise-wellness aesthetic. No dramatic transformations, no gym
+imagery, no measuring tapes, no obvious AI effects.
+
+**Alt text:**
+
+> A person reviewing a wellness app on a phone, with a baseline and a follow-up 3D body model
+> shown side by side, introducing AI body data for wellness platforms.
+
+### Image 1 — after "From a baseline to a progress record"
+
+**Concept (from the Doc).** A baseline and an eight-week follow-up in the same pose and viewing
+angle. Selected indicators show a waist decrease with stable chest and shoulder measurements,
+while scale weight shows minimal change.
+
+**Alt text:**
+
+> Two 3D body models of the same person in the same pose, captured at baseline and at an
+> eight-week follow-up, with callouts showing a smaller waist measurement while chest and
+> shoulder measurements and scale weight stay close to unchanged.
+
+### Image 2 — after "Validation scope"
+
+**Concept (from the Doc).** A two-panel diagram. Accuracy compares a scan with a reference
+measurement; repeatability shows consistent results across several scans of the same person
+under comparable conditions.
+
+**Alt text:**
+
+> A two-panel diagram comparing accuracy and repeatability: on the left, a single scan measured
+> against a reference method; on the right, several scans of the same person under comparable
+> conditions, showing how close the repeated results sit to each other.
+
+### One deviation to flag
+
+Section 1 records the house norm as two in-body banners and no hero. This plan has a cover plus
+two in-body banners. That came from the Doc, not from this file; it is defensible for a hub, but
+it is a deviation and the cover is the one to drop if capacity is short.

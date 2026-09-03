@@ -13,6 +13,8 @@ status: approved
 revision: 2
 revision_reason: Review 1 (2026-09-02)
 checkpoint_1_approved: 2026-08-31 (title/hub), keyword re-decided 2026-09-02
+target_words: 1750  # lowered from the outline's 2,650 by Vadim, 2026-09-03. See "Revision 6".
+revision_6: final-google-doc.md  # the shipping text; final.md is revision 3 and is superseded
 created: 2026-08-31
 context_pack: workspace/seo/_context-packs/2026-08-31-ai-body-data-wellness-platforms-hub.yaml
 keywords_file: workspace/seo/_keywords/2026-08-31-ai-body-data-wellness-platforms-hub.yaml
@@ -20,6 +22,39 @@ backlink_report: workspace/research/backlinks/  (Ahrefs export, snapshot 2026-08
 review: workspace/seo/articles/2026-08-31-ai-body-data-wellness-platforms-hub/review-1.md
 review_decisions: workspace/seo/articles/2026-08-31-ai-body-data-wellness-platforms-hub/review-1-decisions.md
 v1_snapshot: workspace/seo/articles/2026-08-31-ai-body-data-wellness-platforms-hub/v1/
+---
+
+## Revision 6: Vadim's calls on the Google Doc final (2026-09-03)
+
+The article kept moving in the Google Doc after this repo stopped at revision 3. The shipping
+text is `final-google-doc.md`; `final.md` is revision 3 and is superseded. Three calls, all
+Vadim's, all recorded here so the gates and the next writer agree with what shipped.
+
+**1. Length: the delivered text stands, the target moves to meet it.** The final runs 1,737
+prose words against the outline's 2,650, which failed the length gate by 23% of the floor.
+Vadim's call is to keep the text as written rather than pad it back to the outline, so
+`target_words` is now 1,750 in the frontmatter. The per-section budget table further down is
+left untouched on purpose: it records what was planned, not what shipped. The gate reads the
+frontmatter first, so it now measures the article against the decision instead of against a
+plan the article deliberately left behind.
+
+**2. `corporate wellness platform` is abandoned, not restored.** This overrides
+`review-1-decisions.md` §A1 ("keeps a real home so the 500/mo term is not abandoned") and
+Review 2 item 13, which had narrowed that home to one place, the corporate subsection. The
+final version carries zero instances and Vadim's call is to leave it that way. Cost, stated
+plainly so nobody rediscovers it later: the page trades 500/mo at KD 11 for `wellness platform`
+at 150/mo and KD 36. The 500/mo term now has no page on the site. If it is ever wanted back, it
+belongs in a separate employer-facing page, not retrofitted into this hub.
+
+**3. The closing CTA comes back.** Revision 3's `Where to go next` was dropped somewhere in
+versions 4-6, leaving a P0 hub with no route out. It is restored after the FAQ with the three
+routes rewritten to match the final version's register, and it does not repeat the links already
+carried by `Related wellness and body-data resources`.
+
+Still open after this pass, and not Vadim's to close alone: the inbound-link pass has no owner,
+the three illustrations are planned but not produced, and the GDPR controller/processor sentence
+in `Privacy and data handling` has no source line in `brand-assets/` (see below).
+
 ---
 
 ## Revision 2: Review 1 (2026-09-02)

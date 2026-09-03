@@ -21,9 +21,8 @@ The value of AI body data becomes clearer when a second scan is available. The b
 This application spans consumer wellness apps, lifestyle and nutrition coaching, habit-building products, digital well-being ecosystems, and employee wellness programs. Workout programming and performance are covered in the [AI in fitness hub](https://3dlook.ai/content-hub/ai-in-fitness-industry/). Patient monitoring belongs within [healthcare and telehealth workflows](https://3dlook.ai/content-hub/the-potential-of-ai-in-telehealth/), while incentive verification is addressed in the [wellness rewards hub](https://3dlook.ai/content-hub/wellness-rewards-verification-employers-insurers-using-ai-3d-body-scanning/).
 ## From a baseline to a progress record
 Across the member journey, body data contributes at three points:
-|  |  |  |
-| :- | :- | :- |
 | **Moment** | **Body-data role** | **Platform response** |
+| :- | :- | :- |
 | Baseline | Establishes the starting record | Present selected measurements and explain what they mean |
 | Follow-up | Shows change across comparable records | Highlight relevant differences and update the progress view |
 | Next step | Connects the trend with the member’s goal | Select content, prepare a coaching prompt, or schedule another check-in |
@@ -46,12 +45,12 @@ Recurring scan-to-scan comparison creates a distinct engagement point around vis
 A credible longitudinal comparison requires repeatability, consistent capture quality, and validation evidence relevant to the intended users.
 ### Repeatability
 Accuracy and repeatability answer different questions. Accuracy quantifies the difference between a result and a reference method. Repeatability quantifies the consistency of repeated scans for the same person under the same conditions.
-Repeatability is critical for longitudinal wellness tracking. If scan-to-scan variation exceeds the member’s actual change, the progress view may show an apparent difference or miss a real one. For most evaluated FitXpress measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+Repeatability is critical for longitudinal wellness tracking. If scan-to-scan variation exceeds the member’s actual change, the progress view may show an apparent difference or miss a real one. For most evaluated FitXpress measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm. <!-- claim: FX-003 -->
 ### Capture quality
 Baseline and follow-up scans should use the same guided pose and similar capture conditions. Camera placement, lighting, clothing, and body position can influence the input. Clear instructions, pose checks, and a straightforward retake flow reduce avoidable variation before results reach the progress view.
 Distributed wellness programs involve different phones and capture environments. Consistent guidance, therefore, contributes to measurement quality and usability.
 ### Validation scope
-Internal validation of FitXpress against expert manual measurements reported overall measurement accuracy of 96-97%, with a typical absolute error of 1.5-2.0 cm depending on the body part. The evaluated population covered ages 16-78, heights of 150-220 cm, and weights of 38-210 kg, with participants from the US and Europe.
+Internal validation of FitXpress against expert manual measurements reported overall measurement accuracy of 96-97%, with a typical absolute error of 1.5-2.0 cm depending on the body part. The evaluated population covered ages 16-78, heights of 150-220 cm, and weights of 38-210 kg, with participants from the US and Europe. <!-- claim: FX-001 --> <!-- claim: FX-002 --> <!-- claim: FX-011 -->
 These figures should be interpreted alongside the reference method, measurement protocol, tested population, and the tolerance required by the workflow. The [3DLOOK accuracy and privacy framework](https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/) explains the methodology, evidence boundaries, repeatability results, and production controls in more detail.
 (\*Image 2\*) - [Concept](?tab=t.jf0t4lujxodm#bookmark=id.ds50m1b3rfkh)
 ## Operational requirements for recurring check-ins
@@ -67,13 +66,13 @@ Body photos and derived outputs require a defined purpose, controlled access, an
 3DLOOK stores scan data in Amazon Simple Storage Service (Amazon S3) with mandatory server-side encryption using Amazon S3 managed keys (SSE-S3). Data in transit is encrypted using Transport Layer Security (TLS). Photos are permanently removed immediately after processing or within 30 days, depending on client retention requirements. Photos retained temporarily are automatically blurred.
 End-user images are not shared with third parties. FitXpress does not receive names, contact details, or other direct identifiers that connect a scan with a specific person. Deployment-specific privacy, contractual, and sector requirements must be confirmed during implementation. The [3DLOOK accuracy and privacy framework](https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/) provides the full current description of these controls.
 ## Where FitXpress fits
-FitXpress provides the capture and structured data layer for an existing wellness product. From two smartphone photos, one from the front and one from the side, the system generates more than 80 body measurements, BMI, basal metabolic rate (BMR), body fat percentage, lean mass, fat mass, and a 3D body model in under 45 seconds.
+FitXpress provides the capture and structured data layer for an existing wellness product. From two smartphone photos, one from the front and one from the side, the system generates more than 80 body measurements, BMI, basal metabolic rate (BMR), body fat percentage, lean mass, fat mass, and a 3D body model in under 45 seconds. <!-- claim: FX-006 --> <!-- claim: FX-007 --> <!-- claim: FX-008 --> <!-- claim: FX-009 -->
 Integration options include an application programming interface (API) and web and mobile software development kits (SDKs). The guided capture layer handles pose feedback and image collection within the member experience. The platform controls where scanning appears, which outputs are displayed, and how each result connects to program content or coaching.
 FitXpress is not a medical device. It does not diagnose conditions, make clinical decisions, or determine treatment eligibility. Dual-energy X-ray absorptiometry (DXA), bioelectrical impedance analysis (BIA), calibrated scales, and mobile body scanning use different methods, reference systems, and evidence. The intended use and operating environment determine method selection.
 Organizations evaluating the capture flow and returned data can review [FitXpress for connected and digital fitness](https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/).
 ## Wellness and adjacent applications
 Corporate wellness applies the same remote baseline and follow-up workflow across a distributed population. A workplace wellness app can offer optional check-ins without requiring an on-site assessment. Programs that connect body data to incentives or rewards require additional governance, privacy review, and clear program rules. [Wellness rewards verification for employers and insurers](https://3dlook.ai/content-hub/wellness-rewards-verification-employers-insurers-using-ai-3d-body-scanning/) covers that application in depth.
-## Related wellness and body-data resources 
+## Related wellness and body-data resources
 The central evaluation criterion for a wellness product is whether the second scan produces a comparison that members and program teams can use. A credible implementation makes that comparison repeatable, understandable, and connected to a relevant next action.
 Workout programming and performance are covered in [AI in fitness](https://3dlook.ai/content-hub/ai-in-fitness-industry/). [How to measure body composition](https://3dlook.ai/content-hub/how-to-measure-body-composition/) compares measurement approaches. The [AI body data hub](https://3dlook.ai/content-hub/ai-body-data-health-hub/) maps related applications across health and wellness programs.
 ## Frequently asked questions
@@ -84,5 +83,16 @@ Metric selection should begin with the member’s chosen goal and the program’
 **How does mobile body scanning differ from DXA, BIA, and a scale?**
 Each method uses a different measurement process and reference system. Mobile body scanning supports remote, repeatable capture through a smartphone. Method selection is determined by the intended use, required evidence, available equipment, and operating environment.
 **What happens to photos and scan data?**
-3DLOOK stores scan data in Amazon S3 with mandatory SSE-S3 encryption. Photos are removed immediately after processing or within 30 days, depending on client retention requirements, and temporarily retained photos are automatically blurred. Full details are available in the[ 3DLOOK accuracy and privacy framework](https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/?utm_source=chatgpt.com). 
+3DLOOK stores scan data in Amazon S3 with mandatory SSE-S3 encryption. Photos are removed immediately after processing or within 30 days, depending on client retention requirements, and temporarily retained photos are automatically blurred. Full details are available in the[ 3DLOOK accuracy and privacy framework](https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/).
 
+## Where to go next
+
+Three routes follow from this page, depending on where a program currently stands.
+
+Teams still mapping the territory can start with the [AI body data hub](https://3dlook.ai/content-hub/ai-body-data-health-hub/), which covers how body data is applied across health programs, or with [Beyond BMI](https://3dlook.ai/content-hub/beyond-bmi-business/) as the shorter educational bridge.
+
+Teams weighing integration options and the shape of the returned data can review [FitXpress for connected and digital fitness](https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/).
+
+Employers and insurers whose immediate question is incentive verification can go directly to [wellness rewards verification](https://3dlook.ai/content-hub/wellness-rewards-verification-employers-insurers-using-ai-3d-body-scanning/).
+
+Repeatable body data gives a wellness platform a more complete view of progress between check-ins than a single value can provide.
