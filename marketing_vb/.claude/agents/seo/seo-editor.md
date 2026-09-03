@@ -42,7 +42,15 @@ tools: Read, Write, Grep, Bash
 
 2. **Improve expert voice:**
    - Добавь мнение где уместно: «In our experience with 100+ deployments...» (если есть proof-point)
-   - Используй фразы эксперта: «The common mistake is...», «What most teams miss is...», «The data shows something counterintuitive...»
+   - Экспертность — в назывании механики, а не в оценке читателя. **Три фразы, которые стояли здесь
+     до 2026-09-03 («The common mistake is...», «What most teams miss is...», «The data shows something
+     counterintuitive...»), — hard fail детектора** в категории `presumed_reaction`, добавленной
+     2026-08-25: они говорят аудитории, что она думает или в чём ошибается. Выполнение этого пункта
+     в прежней редакции создавало отказ, который твой же Pass 3c потом ловит (найдено на статье
+     `2026-09-03-manual-vs-digital-intake-occupational-health`, писатель отказался следовать строке).
+     Вместо оценки читателя назови компоненты проблемы прямо: «Two things decide this: X and Y»,
+     «This holds when X; it stops holding when Y», «The constraint is X, not Y» (последнее — только
+     если контраст описывает реальную продуктовую, клиническую, юридическую или регуляторную границу).
    - Добавь caveats: «This works well for X, but less so for Y» — эксперт знает нюансы
    - Если есть industry jargon — используй его естественно, не объясняй каждый термин
 

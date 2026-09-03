@@ -3,7 +3,8 @@
 > **Source of truth:** [Content Strategy spreadsheet](https://docs.google.com/spreadsheets/d/1Sy7EzzZZvCKyrD30pbhElEpCZDbzuMtMkxdiDTIP8AE/edit?gid=0#gid=0)
 > **Rules that govern how to write against this plan:** [`content-strategy-guidelines.md`](./content-strategy-guidelines.md)
 > **Scope:** FitXpress health verticals (fitness, telehealth, GLP-1, insurance, wellness, bariatrics, clinical trials, occupational health). Mobile Tailor is out of scope for this plan.
-> **Last synced from source:** 2026-07-07. If the sheet changes, re-sync this file — it is the offline copy the agents read (they do not fetch Google).
+> **Last synced from source:** 2026-09-03. If the sheet changes, re-sync this file — it is the offline copy the agents read (they do not fetch Google). `scripts/content-plan-sync.py` pulls the sheet weekly (Mon 06:23 UTC) and reports drift; it rewrites `content-plan.csv` on `--sync` but never this file, because the per-hub preambles and condensed guardrails below are written by hand and are not in the sheet.
+> **2026-09-03 sync found 31 changed rows across a two-month gap** — mostly publication status plus rewritten cannibalization guardrails in Hub 7, and **two priority moves (P2 → P1)**. Both are applied below. The clinical-trials cluster in particular replaced one generic guardrail with a per-row one, so those rows now carry different instructions than they did in July.
 > **Last reconciled against the live site:** 2026-08-18 (7 health articles verified page-by-page — see `published-articles-inventory.md` → "Live-Page Verification Pass"), plus single-article checks on **2026-08-24** (`online-pharmacy-bmi-verification` rewrite) and **2026-08-28** (`glp-1-market` hub refresh). Publication status below reflects what is actually live, which can be ahead of the last sheet sync.
 
 ## Published P0 hubs (verified live 2026-08-18)
@@ -154,7 +155,7 @@ Wellness Rewards Verification = employer/insurer sub-hub; Beyond BMI = broad edu
 | Tools / listicle | Top Mobile Body Scanning Software for Wellness Apps | MOFU/BOFU | Net-new listicle | P0 | "What wellness apps should look for" angle, not "top software in general." |
 | Personalization | How Body Data Can Personalize Wellness Programs | MOFU | Refresh / expand | P1 | Refresh `beyond-bmi-business`. |
 | Preventive wellness | Using Body Measurements in Preventive Health and Wellness Programs | MOFU | Create net-new | P1 | Keep clinical claims soft. |
-| Nutrition coaching | Body Data for Nutrition and Lifestyle Coaching Platforms | BOFU | Create net-new | P1 | Bridge wellness/fitness/weight-loss. |
+| Nutrition coaching | Body Data for Nutrition and Lifestyle Coaching Platforms | BOFU | Create net-new | P1 | The main nutrition/lifestyle coaching asset: structured measurements, body-composition indicators, visual progress, scan-to-scan tracking. **FitXpress does not generate meal plans, prescribe diets, or provide nutrition advice.** |
 | Smart scale comparison | Smart Scale vs AI Body Scan for Wellness Tracking | GEO/comparison | Create net-new | P1 | Consider one shared smart-scale comparison page. |
 | Privacy | Privacy Considerations for Body Data in Wellness Apps | Objection | Create net-new | P1 | Objection-handling FAQ. |
 | Employee wellness / rewards | Top Employee Rewards Platforms | Listicle | Create net-new | P1 | Vendor landscape → link to wellness-rewards use case. |
@@ -184,23 +185,23 @@ Wellness Rewards Verification = employer/insurer sub-hub; Beyond BMI = broad edu
 
 ## Hub 7 — Clinical Trials (Hybrid & Decentralized Obesity Trials)
 
-**Hub is live (2026-07-17).** Keep **trial-ops / protocol-workflow focused**. Do NOT blur into telehealth or bariatric care delivery; do NOT imply endpoint validation or replacement of protocol-defined reference methods. P1 supporting articles below are now unblocked.
+**Hub is live (2026-07-17).** Keep **trial-ops / protocol-workflow focused**. Do NOT blur into telehealth or bariatric care delivery; do NOT imply endpoint validation or replacement of protocol-defined reference methods. P1 supporting articles below are now unblocked — **four of them since the 2026-09-03 sync**, which also replaced this cluster's single shared guardrail with a per-row one. Read the row's own guardrail, not just this preamble.
 
 | Cluster | Article | Intent | Action | Pri | Notes / guardrail |
 |---|---|---|---|---|---|
 | Main hub | Standardizing Anthropometric Measurements for Hybrid & Decentralized Obesity Trials | BOFU/use case | ✅ **PUBLISHED 2026-07-17** | P0 | **Live:** [`clinical-trial-anthropometric-measurement-software-obesity-trials`](https://3dlook.ai/content-hub/clinical-trial-anthropometric-measurement-software-obesity-trials/) (updated 07-27). Covers sponsors/CROs, site variability, coordinator burden, structured records, audit readiness, scope boundaries. |
-| Comparison | Manual Tape Measurements vs Mobile Body Scanning in Clinical Trials | GEO/comparison | Create net-new | P1 | Trial-specific: workflow consistency, coordinator burden, protocol boundaries. |
-| Vendor evaluation | What CROs Should Ask Before Using Remote Body Measurement Tools | BOFU | Create net-new | P1 | Sales-enablement buyer guide. |
+| Comparison | Manual Tape Measurements vs Mobile Body Scanning in Clinical Trials | GEO/comparison/MOFU | Create net-new, narrower than originally planned | P1 | Trial-specific: workflow consistency, coordinator burden, protocol boundaries. Workflow comparison, **not** universal method replacement — do not imply scanning replaces all manual anthropometry or protocol-defined reference methods. |
+| Vendor evaluation | What CROs Should Ask Before Using Remote Body Measurement Tools | BOFU/buyer evaluation | Create net-new supporting | P1 | Sales-enablement buyer guide, framed as a checklist/evaluation guide for vendor selection. Do not repeat the hub's "why trials need standardization" story. |
 | DCT workflow | Remote Anthropometric Measurement Workflows for DCTs | BOFU | Create net-new | P2 | Major hub section first; standalone only if DCT-workflow demand. |
 | Obesity trials | Body Measurement Standardization in Obesity & Metabolic Trials | BOFU | Create if validated | P2 | Hub SEO anchor; sponsor/CRO vocabulary. |
-| Site consistency | Reducing Measurement Variability Across Multi-Site Trials | MOFU/BOFU | Create if validated | P2 | Site ops & monitoring, not generic accuracy. |
-| Hybrid trials | How Hybrid Trials Can Capture Body Measurements Between Site Visits | BOFU | Review / decide | P2 | Hub section first. |
-| Patient experience | Reducing Participant Burden in Obesity Trials With Remote Check-Ins | MOFU | Create if validated | P2 | Owns participant burden/retention. |
+| Site consistency | Reducing Measurement Variability Across Multi-Site Trials | MOFU/BOFU | Section first; standalone only if validated | P2 | Site ops & monitoring, not generic measurement-variability content. If standalone, target clinical operations and monitoring teams specifically. |
+| Hybrid trials | How Hybrid Trials Can Capture Body Measurements Between Site Visits | BOFU | Section first; standalone only if campaign focus | P2 | Between-visit capture only. Do not repeat the hub's site-based, DCT, audit or full-workflow material. |
+| Patient experience | Reducing Participant Burden in Obesity Trials With Remote Check-Ins | MOFU | Create net-new if patient-centric DCT messaging matters | P2 | Owns participant burden. Do not repeat the full operational business case, and do not claim retention improvement as guaranteed — frame it as reducing workflow friction that may support retention. |
 | Data quality | Anthropometric Data Quality in DCTs: Workflow, Capture, Documentation | MOFU | Create net-new | P2 | Avoid overclaiming validation / endpoint replacement. |
-| Documentation | Audit-Ready Body Measurement Records for Hybrid Trials | BOFU | Create if validated | P2 | "Supports monitoring and audit readiness," not "guarantees compliance." |
-| Integration | Adding Remote Body Measurement to a DCT Platform: API, Workflow, Data Handoff | BOFU | Create net-new | P2 | Targets API/SDK & data-handoff questions. |
-| Eligibility support | Remote BMI Pre-Checks in Obesity Trial Recruitment: What They Can/Cannot Do | MOFU/BOFU | Create net-new | P2 | Pre-check support only; eligibility remains protocol-defined/investigator-led. |
-| Lead magnet | Clinical Trial Checklist for Remote Anthropometric Data Capture | Conversion | Lead magnet | P2 | Downloadable; not a thin post. |
+| Documentation | Audit-Ready Body Measurement Records for Hybrid Trials | BOFU | Section first; standalone only if validated | P2 | "Supports monitoring and audit readiness," never "guarantees compliance." |
+| Integration | Adding Remote Body Measurement to a DCT Platform: API, Workflow, and Data Handoff Considerations | BOFU/implementation | Create net-new supporting | **P1** ⬆ | Targets API/SDK & data-handoff questions. Keep it technical/operational — not another general DCT measurement article. No commitments about integrations product has not confirmed. *(P2 → P1 in the 2026-09-03 sync.)* |
+| Eligibility support | Remote BMI Pre-Checks in Obesity Trial Recruitment: What They Can and Cannot Do | MOFU/BOFU | Create net-new supporting | **P1** ⬆ | **High sensitivity.** Never say FitXpress determines eligibility. Use "supports pre-check," "provides input," "where protocol allows," "investigator-led determination." *(P2 → P1 in the 2026-09-03 sync.)* |
+| Lead magnet | Clinical Trial Checklist for Remote Anthropometric Data Capture | Conversion/sales enablement | Lead magnet / downloadable checklist | P2 | Not a thin indexed post. PDF, gated or ungated checklist, or a CTA embedded inside the CRO buyer guide. |
 
 ## Hub 8 — Occupational Health Screening
 
@@ -209,7 +210,7 @@ Wellness Rewards Verification = employer/insurer sub-hub; Beyond BMI = broad edu
 | Cluster | Article | Intent | Action | Pri | Notes / guardrail |
 |---|---|---|---|---|---|
 | Main hub | Standardizing Occupational Health Screening: Faster Intake, Better Documentation, Fewer Rescreens | BOFU/use case | ✅ **PUBLISHED 2026-07-10** | P0 | **Live:** [`occupational-health-screening-software`](https://3dlook.ai/content-hub/occupational-health-screening-software/) (updated 07-17). Owns pre-employment/pre-placement/return-to-work intake, fit-for-duty documentation support, rescreens, multi-site, workforce screening vendors, workers'-comp. |
-| Comparison | Manual Intake vs Digital Intake in Occupational Health Screening | GEO/comparison | Net-new supporting | P0 | Throughput, missing data, rescreens, multi-site consistency. No medical/clearance claims. |
+| Comparison | Manual Intake vs Digital Intake in Occupational Health Screening | GEO/comparison | Net-new supporting — **IN PROGRESS 2026-09-03** | P0 | Throughput, missing data, rescreens, multi-site consistency. No medical/clearance claims. Plan approved at checkpoint 1; working dir `workspace/seo/articles/2026-09-03-manual-vs-digital-intake-occupational-health/`. Sheet pencils it for September 2026. |
 | Return-to-work | Return-to-Work Screening Documentation: How Digital Intake Reduces Delays | BOFU/workflow | Net-new supporting | P0 | Distinct buyer (workers'-comp/absence). Not "clears employees for duty." |
 | Workers' comp / absence | Remote Intake for Workers' Compensation and Return-to-Work Documentation | BOFU | Net-new supporting | P1 | Workers'-comp/absence program ops; don't overlap return-to-work article. |
 | Workforce screening vendors | Digital Intake Workflows for Workforce Screening Vendors | BOFU/vendor | Net-new supporting | P1 | Multi-employer programs; no medical-review/clearance claims. |

@@ -25,3 +25,12 @@ workspace/outbound/exclusions/vadim-registry.json
 
 # Playwright MCP scratch output (console logs, page snapshots) — not project content
 .playwright-mcp/
+
+# content-plan-sync.py keeps the pre-sync CSV so a bad export can be walked back;
+# the sheet is the master and content-plan.csv is the tracked copy, so the snapshots are scratch
+brand-assets/content-strategy/.content-plan-snapshots/
+
+# Runtime callback tokens for the Telegram approve buttons — session state, and the values are
+# bearer-ish. Written by the conductor into the workspace, so it is one `git add -A` from a commit.
+marketing_vb/workspace/.callback-tokens.json
+workspace/.callback-tokens.json
