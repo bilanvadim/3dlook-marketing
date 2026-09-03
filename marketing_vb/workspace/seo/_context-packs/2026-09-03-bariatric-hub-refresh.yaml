@@ -1,0 +1,656 @@
+context_pack:
+  created: 2026-09-03
+  product: fitxpress
+  track: seo
+  channel: blog (content-hub)
+  profile: 'company (author default: Assel Sekerova, CLAUDE.md §15)'
+  objective: Refresh/expand the Bariatrics hub in place — retitle to the plan's use-case framing, rebuild
+    pre-auth on CMS-0057-F, rebuild GLP-1 on 2026 data, promote patient progress tracking, fix two substantiation
+    defects, add down-links for the 5 net-new P1 children
+  target_agent: seo-planner
+  READ_THIS_FIRST:
+    file: workspace/seo/articles/bariatric-hub-refresh/refresh-gap-analysis.md
+    why: 'Phase 0 was already run by the main session, against the LIVE page rather than the
+
+      content-plan row alone, plus a fresh 2026 fact-verification pass. It supersedes this pack
+
+      on three specific points listed under SUPERSEDED_BY_GAP_ANALYSIS below. Read it before
+
+      Phase 1. It also carries the checkpoint-1 question that only Vadim can settle.
+
+      '
+  SUPERSEDED_BY_GAP_ANALYSIS:
+  - claim: Pre-operative dropout up to 50-60% across bariatric programs
+    status: DO NOT REUSE AS-IS — substantiation defect
+    detail: 'Appears below in external_citations and icp_context.pain_points because it is on the live
+
+      page. Verification 2026-09-03 found the published range is far wider and measurement-
+
+      dependent: a 2026 narrative review says "as high as 60%", one cohort reports 22.25%,
+
+      Canadian programs with mandatory pre-op pathways complete at ~36-76%, US at ~39-70%, one
+
+      single-centre series 8.9% pre-pandemic. The live page presents the top of the range as
+
+      typical. Guardrail #4 (no bare percentage without methodology) and #1 (substantiation).
+
+      Restate as a range with its variability. See gap analysis §4.
+
+      '
+  - claim: 'JAMA Network Open: bariatric surgery use fell 8.7% (2022-2023)'
+    status: SUPERSEDED — older, smaller cut of the same story
+    detail: 'JAMA Surgery, 13 May 2026 (Calzaretta et al., Analysis Group) reports metabolic bariatric
+
+      surgery utilization -34.1% from 2022 to 2024 with GLP-1 receptor agonist use +140.4% over
+
+      the same period, and the decline continued into 2025. Three volume series are now in play
+
+      and they do not reconcile — see gap analysis §3 for which to use and how to scope each.
+
+      ASMBS national estimate and the JAMA cohort must never share a sentence.
+
+      '
+  - claim: ~33M US adults meet eligibility criteria; <1% complete surgery annually (PMC)
+    status: CITATION MISMATCH — re-cite or drop
+    detail: 'The live page points this at PMC10136401, which is a qualitative attrition paper, not an
+
+      eligibility-prevalence source. The ASMBS 2025 Fact Sheet carries "about 1% of those who
+
+      meet eligibility requirements" directly. ASMBS May 2026 adds the stronger finding that
+
+      90-95% of patients with severe obesity received no treatment during the study period.
+
+      '
+  company_oneliner: 3DLOOK turns two smartphone photos into 80+ body measurements and a 3D model in under
+    45 seconds, via API/SDK.
+  product_summary: 'FitXpress, bariatric vertical: 2-photo remote scan before the consult, giving programs
+
+    structured BMI/body-composition data for pre-qualification triage, pre-auth documentation,
+
+    and post-op longitudinal tracking. Supporting evidence for program/clinician review — never
+
+    the eligibility or surgical decision itself.
+
+    '
+  content_strategy:
+    source: 'content-plan.md — Last synced from source: 2026-09-03 (current, trust it)'
+    hub: Hub 6 — Bariatrics
+    hub_preamble: '`bariatric-pre-qualification-mobile-3d-body-scanning` is the hub. Keep tied to obesity-care
+      intake, pre-auth, pre-qualification, patient progress. Do NOT duplicate generic GLP-1 / telehealth
+      / body-composition pages.'
+    cluster: Main hub
+    article_title: 'Bariatric Pre-Qualification and Patient Progress Tracking: Body Data for Obesity Care
+      Teams'
+    intent: Hub
+    action_type: Refresh / expand existing
+    action_type_gate_note: 'The Phase 0 gate normally STOPS here and returns a recommendation. It does
+      not stop on this
+
+      run: Vadim asked for the rewrite directly on 2026-09-03, which is the real gate (same
+
+      pattern as glp-1-market on 2026-08-28 and online-pharmacy-bmi-verification on 2026-08-24,
+
+      both refresh/expand rows that shipped). Refresh IN PLACE at the existing URL. Do not create
+
+      a net-new page and do not create a second bariatric hub.
+
+      '
+    priority: P0
+    target_month: September 2026
+    existing_url: https://3dlook.ai/content-hub/bariatric-pre-qualification-mobile-3d-body-scanning/
+    recommendation: This is already the hub. Expand with pre-auth, patient progress, GLP-1 bridge, and
+      post-op tracking.
+    recommendation_reality_check: 'Partly already satisfied. The 2026-07-27 live version already has H2s
+      for pre-qualification,
+
+      the GLP-1 shift, pre-auth documentation and post-procedure longitudinal tracking. The row was
+
+      seeded from the Backlink Analysis Report against the JUNE 5 version. Taking it literally
+
+      re-does shipped work. See gap analysis §1.
+
+      '
+    cannibalization_guardrail: Keep bariatrics tied to obesity-care intake, pre-auth, pre-qualification,
+      and patient progress. Do not duplicate GLP-1 or telehealth generic pages.
+    vertical_boundary: Owns bariatric pre-qualification, pre-auth documentation, obesity-care intake,
+      post-op progress, and patient records. Do not duplicate generic GLP-1, telehealth, or body-composition
+      pages. (content-strategy-guidelines.md §9)
+    sensitive_vertical: true
+    internal_link_targets:
+      up: 'https://3dlook.ai/content-hub/ai-body-data-health-hub/  # Hub 0 — Main Health Hub: · GAP —
+        not linked from the live page''s curated body or Related reading. It appears only in the auto-generated
+        ''You may also like'' carousel, which is not a deliberate internal link. Add on this refresh.'
+      sideways:
+      - 'https://3dlook.ai/content-hub/glp-1-market/  # GLP-1 Market hub —  (refreshed 2026-08-28) · MISSING
+        from curated Related reading (postdates the Jul 27 refresh). · Hub 3''s own ''Baseline data''
+        P1 row is explicitly instructed to keep distinct from bariatric pre-qualification. Link, but do
+        not re-explain GLP-1 market growth stats — Hub 3 owns those.'
+      - 'https://3dlook.ai/content-hub/the-potential-of-ai-in-telehealth/  # AI in Telehealth hub —  (refreshed
+        2026-08-07) · MISSING from curated Related reading.'
+      - 'https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/  # Online
+        Pharmacy BMI Verification —  (rewritten 2026-08-24, also owns telehealth BMI verification) · MISSING
+        from curated Related reading. Link for BMI-verification methodology instead of re-explaining it.'
+      - 'https://3dlook.ai/content-hub/occupational-health-screening-software/  # Occupational Health
+        hub —  (live 2026-07-10) · GAP — live BEFORE the bariatric page''s 2026-07-27 refresh and still
+        missing. Not a postdating excuse; a real omission.'
+      - 'https://3dlook.ai/content-hub/mobile-body-scanning-insurance-underwriting/  # Insurance Underwriting
+        · Already present — keep.'
+      - 'https://3dlook.ai/content-hub/wellness-rewards-verification-employers-insurers-using-ai-3d-body-scanning/  #
+        Wellness Rewards Verification · Already present — keep. Do NOT confuse with the separate, still-unpublished
+        Wellness Platforms hub draft (workspace/seo/articles/2026-08-31-ai-body-data-wellness-platforms-hub/,
+        no FINAL-PUBLISHED.md). Do not link that until it is live.'
+      down: 'https://3dlook.ai/for-bmi-verification/  # Already the live page''s demo CTA. No dedicated
+        Bariatric FitXpress vertical page exists (CLAUDE.md §16 lists only BMI verification, telehealth,
+        connected fitness) — an open item for page-builder, not a gate on this refresh. · The refresh
+        must add landing sections the 5 net-new P1 children can be linked down from when they ship.'
+      trust:
+      - 'https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/  # Accuracy framework · GAP — the
+        live page links only to /technology/ and the telehealth vertical page, never to the accuracy framework,
+        despite discussing structured and time-stamped measurement data. Add per guidelines §10/§11 wherever
+        accuracy is discussed.'
+      - Data, Privacy, Security and Regulatory FAQ · NOT PUBLISHED — the only remaining P0 hub gap (draft
+        at workspace/seo/articles/2026-07-14-fitxpress-privacy-security-faq/). Keep as PLAIN TEXT compliance
+        note, never a link — which is what the live page already does correctly.
+    hub6_cluster_rows:
+    - cluster: Main hub
+      article: Bariatric Pre-Qualification and Patient Progress Tracking
+      intent: Hub
+      action: Refresh/expand
+      priority: P0
+      note: THIS ROW
+    - cluster: Pre-qualification
+      article: 'Bariatric Pre-Qualification: Capture BMI Earlier and More Consistently'
+      intent: BOFU
+      action: Refresh/expand
+      priority: P2
+      note: Already covered — refresh, don't duplicate
+    - cluster: Pre-auth documentation
+      article: 'Bariatric Pre-Authorization Documentation: What Body Data Payers May Need'
+      intent: BOFU
+      action: Create net-new
+      priority: P1
+      note: Strong section or standalone for payer-doc keywords
+    - cluster: GLP-1 bridge
+      article: 'GLP-1 Before Bariatric Surgery: Why Body Composition and Progress Matter'
+      intent: MOFU
+      action: Create net-new
+      priority: P1
+      note: GLP-1 changes bariatric pathways — CANNIBALIZATION WATCH vs Hub 3 'Baseline data' row
+    - cluster: Post-op progress
+      article: Tracking Body Changes After Bariatric Surgery Beyond Weight Loss
+      intent: MOFU
+      action: Create net-new
+      priority: P1
+      note: Progress tracking, not medical advice
+    - cluster: Patient records
+      article: What Body Data Should Be in a Bariatric Patient Progress Record?
+      intent: BOFU
+      action: Create net-new
+      priority: P1
+      note: Documentation workflows
+    - cluster: Hybrid care
+      article: 'Hybrid Bariatric Care: Virtual Check-Ins With Standardized Body Data'
+      intent: BOFU
+      action: Create net-new
+      priority: P1
+      note: Focus on hybrid-care model
+    - cluster: Remote intake
+      article: Remote Body Measurement for Bariatric Patient Intake
+      intent: BOFU
+      action: Refresh/expand
+      priority: P2
+      note: Section first; standalone only if intake-workflow focused
+    - cluster: Body composition
+      article: 'Body Composition Tracking in Bariatric Care: Metrics, Methods, Limits'
+      intent: MOFU
+      action: Create net-new
+      priority: P2
+      note: Only if bariatric-specific
+    - cluster: Comparison
+      article: Manual Measurements vs AI Body Scanning for Bariatric Clinics
+      intent: GEO/comparison
+      action: Review/decide
+      priority: P2
+      note: Keep bariatric-specific
+    - cluster: Lead magnet
+      article: Bariatric Documentation Checklist (BMI, Measurements, Progress)
+      intent: Conversion
+      action: Lead magnet
+      priority: P2
+      note: Downloadable; link from hub + GLP-1
+    note: 5 net-new P1 children (pre-auth documentation, GLP-1 bridge, post-op progress, patient records,
+      hybrid care) are what this hub refresh must add down-link landing sections for.
+  published_inventory:
+    already_live: true
+    live_url: https://3dlook.ai/content-hub/bariatric-pre-qualification-mobile-3d-body-scanning/
+    live_title: 'Bariatric Pre-Qualification with Mobile 3D Body Scanning: Faster Pre-Auth'
+    live_meta_description: How bariatric programs can use FitXpress to capture verified body data before
+      the consult — faster pre-qualification, cleaner pre-auth.
+    published: '2026-06-05'
+    date_published_raw: '2026-06-05T13:44:40+00:00'
+    updated_live: '2026-07-27'
+    date_modified_raw: '2026-07-27T13:40:06+00:00'
+    live_words: ~4100
+    live_h2_count: 9
+    inventory_discrepancy: 'published-articles-inventory.md (Hub #9, lines 71 and 96) still records only
+      ''Jun 5, 2026 — Hub'' with no mention of the 2026-07-27 expansion. Inventory is BEHIND the live
+      page. Needs a correction pass regardless of what happens to the article.'
+    refresh_status: Refresh-in-place of an ALREADY-expanded hub, not a first expansion.
+    baseline_of_record: workspace/seo/articles/bariatric-hub-refresh/published-live-2026-07-27.md — diff
+      against THIS, not the June draft, or you will re-propose sections that already exist.
+  primary_use_case:
+    file: brand-assets/product-info/use-cases/fx-bariatric-pre-auth.md
+    pain: Eligibility confirmed too late; pre-auth documentation slow/manual → delays, cancellations,
+      wasted consult slots
+    hero_message: Pre-qualify patients remotely to reduce wasted consults, speed pre-auth, and improve
+      conversion to procedures.
+    icp: Bariatric surgery centers, hospital programs, multi-site surgical networks, metabolic/obesity
+      clinics
+    buyer_persona:
+    - Director of Operations
+    - Medical Director
+    - VP Patient Access
+    - COO (multi-site)
+    geo_examples: 'US: HCA, Tenet, Ascension, CommonSpirit, Mayo Clinic. EU: Helios (DE), Ramsay Sante
+      (FR), Spire (UK), Nuffield Health (UK), Asklepios (DE).'
+    kpis:
+    - Consult-to-procedure conversion rate
+    - Late-stage disqualifications/cancellations
+    - Pre-auth cycle time
+    - Staff time per pre-auth packet
+  icp_context:
+    KNOWN_GAP: 'audience.md''s 7 FitXpress health segments do NOT include a Bariatrics layer (only
+
+      Telehealth/GLP-1, UK BMI Verification, Connected Fitness, Wellness Rewards, Insurance
+
+      Underwriting, BCRL/Oncology, Plastic Surgery). Buyer/pain data below is reconstructed from
+
+      icp-detail.md §5 (itself marked in that file as "not covered by the new ICP doc, carried
+
+      over from the previous version") plus about-me.md hard rules plus the live page''s own scope
+
+      note — not from a dedicated audience.md hook / do-not-say layer. FLAG TO VADIM: a canonical
+
+      Bariatrics segment layer is missing from audience.md.
+
+      '
+    segment: Bariatric / Metabolic Clinics (Pre-Qualification)
+    buyer_persona:
+    - Director of Operations
+    - Medical Director
+    pain_points:
+    - Eligibility confirmed too late — consult slots spent on measurement collection, not clinical evaluation
+    - Pre-auth packets rely on free-text clinical notes payers cannot independently verify
+    - Pre-operative dropout is high and varies widely by program design (see SUPERSEDED_BY_GAP_ANALYSIS
+      — do not publish 50-60% as typical); every in-person verification step is a funnel-loss point
+    - GLP-1 has widened and complicated the intake funnel without adding surgical capacity
+    - Patients increasingly arrive already lighter on a GLP-1, so current BMI and qualifying BMI history
+      have come apart — eligibility now turns on dated, verifiable history
+    - A 7-day standard pre-auth decision clock (CMS-0057-F, live since 2026-01-01 for impacted payers)
+      leaves no room for a request-for-more-information cycle
+    - Weight alone does not describe post-op trajectory; composition gets lost without structured tracking
+    hero_message: Pre-qualify patients remotely to reduce wasted consults, speed pre-auth, and improve
+      conversion to procedures.
+    segment_hook: Move the body-measurement step from the consult (stage 3) back to intake (stage 1) —
+      one capture asset reused across pre-qual, pre-auth, and post-op tracking.
+    do_not_say:
+    - Never say FitXpress determines medical eligibility for surgery, diagnoses, or replaces clinical
+      evaluation
+    - Never imply the scan makes the pre-authorization decision — payer/program review still decides
+    - Keep distinct from the GLP-1 Market hub and generic online-pharmacy BMI verification
+    - Post-op progress tracking is 'supporting evidence within the program's monitoring workflow', never
+      medical advice or a clinical decisioning output
+    - Do not answer clinical-care questions (what is bariatric surgery, benefits, side effects, pros and
+      cons) — see the checkpoint-1 question in the gap analysis §6b
+    published_scope_note: 'Verbatim from the live page (keep; reuse this exact framing for the child articles):
+
+      "Mobile body scanning solutions described in this article do not determine medical eligibility
+
+      for bariatric surgery, provide diagnoses, replace clinical evaluations, or make
+
+      pre-authorization decisions. They produce body measurement and composition data intended as
+
+      supporting evidence within decisioning workflows operated by licensed bariatric programs and
+
+      their compliance and payer counterparts."
+
+      '
+  ACCURACY_RULE: Copy sentences verbatim from accuracy-formulations.md. Never reassemble from proof-points.md
+    numbers. Never combine the internal benchmark with the ISO benchmark in one paragraph. Link the framework
+    article (mobile-body-scanning-accuracy) from the SAME paragraph as any figure — not in a footer block.
+  approved_claims:
+  - id: FX-001
+    text: Internal validation across multiple real-world scan events with five repeated scans per person
+      against expert pattern-maker manual measurements shows 3DLOOK's measurement accuracy of approximately
+      96-97% across body metrics, with a typical absolute error of 1.5-2.0 cm per measurement, varying
+      by body part.
+    source: accuracy-formulations.md §1.1
+    publishable: true
+  - id: FX-002
+    text: For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less
+      than 1 cm.
+    source: accuracy-formulations.md §1.2 (approved repeatability formulation)
+    publishable: true
+  - id: FX-003
+    text: The ISO 8559-1:2017 benchmark, which uses 3D scanner averages as the reference (a different
+      reference than the internal pattern-maker comparison), placed 3DLOOK's session-to-session repeatability
+      at 0.40 cm. The numbers from the two studies should not be combined because the references differ.
+    source: accuracy-formulations.md §1.3
+    publishable: true
+    note: Separate benchmark — never combine with FX-001/FX-002 in one paragraph. article_lint.py fails
+      it.
+  - id: FX-004
+    text: 95%+ overall repeatability consistency
+    source: proof-points.md Repeatability table
+    publishable: false
+    reason: INTERNAL ONLY. The live framework article describing this same 2025 study gives no such percentage.
+      The publishable repeatability claim is FX-002 (< 1 cm).
+  - id: FX-005
+    text: The internal validation population included participants aged 16-78, heights of 150-220 cm,
+      weights of 38-210 kg, and participants from the US and Europe. Performance outside this scope has
+      not been characterized.
+    source: accuracy-formulations.md §1.4
+    publishable: true
+  - id: FX-006
+    text: 3DLOOK's accuracy claims have not been peer-reviewed or externally validated through a third-party
+      clinical study.
+    source: accuracy-formulations.md §1.9
+    publishable: true
+    note: Use when scope/validation comes up. Reserved words (independent, third-party, validated, peer-reviewed)
+      are otherwise off-limits about our own evidence.
+  - id: FX-007
+    text: Two photos, guided capture, results in under 45 seconds; 80+ body measurements plus BMI, BMR,
+      body-fat %, lean/fat mass.
+    source: proof-points.md Speed / Output coverage
+    publishable: true
+  - id: FX-008
+    text: Weight estimation ±3.5% average error margin (software output, not a scale).
+    source: proof-points.md Accuracy; about-me.md canonical figures
+    publishable: true
+  - id: FX-009
+    text: HIPAA-maintained for US healthcare contexts, BAA-ready, GDPR-aligned, AWS S3 SSE-S3 encryption
+      at rest, TLS in transit, no personal identifiers processed, photos deleted immediately or within
+      a configurable retention window.
+    source: proof-points.md Compliance and security; compliance.md
+    publishable: true
+    caution: 'Do NOT claim SOC 2 certified — compliance.md: ''NOT SOC 2 certified yet (in progress — confirm
+      with Vadim before claiming).'''
+  - id: FX-010
+    text: Bariatric pre-qualification TAM $10-30M/year, SAM (near-term target networks) $2-8M/year.
+    source: proof-points.md Market sizing
+    publishable: true
+    note: Illustrative/internal-deck sizing — not a customer-facing headline stat.
+  external_citations:
+    verified_current_keep:
+    - claim: 40.3% of US adults have obesity and 9.4% have severe obesity (BMI >=30 and >=40), August
+        2021-August 2023 cycle
+      source: CDC NCHS Data Brief 508 — https://www.cdc.gov/nchs/products/databriefs/db508.htm
+      checked: 2026-09-03 — still the most recent clinical-measurement cycle. Do not mix the 9.4% crude
+        figure with the 9.7% age-adjusted trend figure from the same brief.
+    - claim: More than 270,000 US procedures in 2023, a drop of 3.5% from the previous year; about 1%
+        of those who meet eligibility requirements
+      source: ASMBS 2025 Fact Sheet — https://asmbs.org/wp-content/uploads/2025/06/MBSFactSheet2025.pdf
+      checked: '2026-09-03. Methodology, verbatim: ''based on the best estimation from available data
+        (BOLD, ACS/MBSAQIP, National Inpatient Sample Data and outpatient estimations).'' Series A — ends
+        at 2023.'
+    - claim: Self-reported BMI underestimated the prevalence of severe obesity by 40% (5.3% uncorrected
+        self-report vs 8.8% bias-corrected)
+      source: CDC, Preventing Chronic Disease 2023 — https://www.cdc.gov/pcd/issues/2023/23_0005.htm
+      checked: 2026-09-03 — VERIFIED. BRFSS 2020 self-reported BMI bias-corrected against measured NHANES
+        data. Women 11.1% vs men 6.5%; state range 5.5% (Massachusetts) to 13.2% (West Virginia). Keep
+        this one — it is the strongest claim on the page for the product argument, because it is the evidence
+        that self-report is unreliable at exactly the BMI threshold bariatric eligibility turns on.
+    - claim: Roughly one in seven bariatric patients initiate GLP-1 therapy after surgery
+      source: Johns Hopkins / JAMA Surgery — https://publichealth.jhu.edu/2025/one-in-seven-bariatric-surgery-patients-turn-to-new-weight-loss-drugs
+      checked: on live page; keep
+    - claim: 43% of firms with 5,000+ workers covered GLP-1 agonists for weight loss in 2025, up from
+        28% the prior year
+      source: KFF 2025 Employer Health Benefits Survey — https://www.kff.org/health-costs/2025-employer-health-benefits-survey/
+      checked: on live page; scope to surveyed firms
+    - claim: GLP-1 as 'the initial gateway for a lot of patients' who later move toward surgery; program
+        directors report rising new consults
+      source: American College of Surgeons Bulletin, April 2025 (Funk, Kurian)
+      checked: on live page; keep
+    - claim: 'ASMBS national estimate series: 256,000 (2019), 198,651 (2020), 262,893 (2021), 279,967
+        (2022), 270,089 (2023). 2023 procedure-type split of that total: sleeve gastrectomy 58.2% (157,254),
+        Roux-en-Y gastric bypass 23.4% (63,132), revision 11.9% (32,267), BPD-DS 1.4% (3,775), SADI 0.9%
+        (2,387), band 0.3% (773).'
+      source: ASMBS, Estimate of Bariatric Surgery Numbers — https://asmbs.org/resources/estimate-of-bariatric-surgery-numbers/
+      checked: '2026-09-03 — VERIFIED. Added to the pack after the plan was approved, because the 2025
+        Fact Sheet PDF carries these numbers only as a graphic and cannot be quoted from. Cite THIS page
+        for the series and the procedure split, not the PDF. Same methodology footnote: "best estimation
+        from available data (BOLD, ACS/MBSAQIP, National Inpatient Sample Data and outpatient estimations)."
+        Series A, ends at 2023.'
+      scope_required: 'National estimate. Never in the same sentence as the JAMA Surgery 2026 claims cohort.
+        Also settles the rejected 230,207/177,297 series: this series puts 2022 at 279,967, so that report
+        is not this series under any reading.'
+      ext_claim_id: ASMBS-ESTIMATE-2023
+    new_2026_add:
+    - claim: Metabolic bariatric surgery utilization fell 34.1% from 2022 to 2024 while GLP-1 receptor
+        agonist use rose 140.4% over the same period
+      source: JAMA Surgery, 13 May 2026, Calzaretta et al., Analysis Group — https://www.eurekalert.org/news-releases/1127781
+      scope_required: Claims cohort, NOT a national count. -34.1% is a utilization rate; absolute counts
+        in the same cohort move about -7.3%. Never in the same sentence as the ASMBS national estimate.
+    - claim: 90-95% of patients with severe obesity received no treatment during the study period
+      source: ASMBS, 5 May 2026 — https://asmbs.org/news_releases/as-glp-1-use-skyrockets-and-bariatric-surgery-slows-most-obesity-goes-untreated/
+      note: Stronger and better-sourced than the live page's 'fewer than 1% complete surgery'. ASMBS states
+        its own estimates use 'broader patient populations and additional datasets than used in this particular
+        study.'
+    - claim: 'Study-cohort volumes: 40,265 (2022), 42,615 (2023), 37,339 (2024), 33,429 (2025) — the decline
+        continued into 2025'
+      source: same ASMBS 5 May 2026 release reporting the JAMA Surgery study
+      scope_required: Cohort figures. The live page stops at 2023.
+    - claim: Patients lost about 8% of total body weight on GLP-1s before surgery; total loss reached
+        more than 25% after gastric bypass and about 20% after sleeve gastrectomy
+      source: ASMBS, 5 May 2026, Chhabra et al., NYU Grossman School of Medicine — https://asmbs.org/news_releases/new-study-finds-metabolic-and-bariatric-surgery-after-glp-1-treatment-significantly-boosts-weight-loss/
+      detail: Epic Cosmos EHR, 2019-2025, 6,700 patients with prior GLP-1 use (2,395 gastric bypass, 4,315
+        sleeve gastrectomy) vs ~127,000 without, three-year follow-up. Presented at ASMBS 2026, San Antonio.
+      why_it_matters: THE key new operational point. A patient already ~8% lighter may present with a
+        current BMI below the payer threshold while documented history still qualifies. Eligibility therefore
+        turns on dated, verifiable BMI history rather than a single consult measurement.
+    - claim: Impacted payers must decide prior authorizations within 72 hours (expedited) and 7 calendar
+        days (standard), give specific reasons for each non-drug denial, and publicly report prior-authorization
+        metrics annually (initial reporting due 31 March 2026)
+      source: CMS Interoperability and Prior Authorization Final Rule CMS-0057-F — https://www.cms.gov/initiatives/burden-reduction/overview/interoperability/policies-regulations/cms-interoperability-prior-authorization-final-rule-cms-0057-f
+      effective: '2026-01-01'
+      scope_required: Reaches Medicare Advantage, Medicaid, CHIP and Qualified Health Plans on the Federally
+        Facilitated Exchange. NOT all commercial ERISA plans. Medicare fee-for-service does not use prior
+        authorization for bariatric procedures at all. State this scope.
+      why_it_matters: Replaces the live page's 'payer review windows commonly run from a few weeks to
+        several months', which is now wrong for impacted payers on standard requests. On a 7-day clock,
+        first-pass submission completeness is the whole game.
+    rejected:
+    - claim: Semaglutide lost exclusivity in March 2026, prices to fall 30-50%
+      verdict: DO NOT USE on this page
+      reason: The 2026 expiries are China (20 March), India (March), Canada (January), Brazil (March)
+        and 100+ other countries — NOT the US, where protection runs into the early 2030s. This page's
+        audience is US bariatric programs. Admissible only as an explicitly ex-US note.
+    - claim: Volume peaked at 230,207 in 2022 and dropped to 177,297 in 2024
+      verdict: DO NOT PUBLISH
+      reason: Secondary trade-press report; primary source returned HTTP 403, unverified. A third, unreconciled
+        volume series.
+    - claim: Surgery appears to be rebounding as GLP-1 patients turn to one-time procedures
+      verdict: NEEDS A PRIMARY CITATION BEFORE USE
+      reason: Directionally opposite to the live page's closing read, and currently only in ASMBS press
+        summary language.
+    known_gap: No named bariatric customer case study exists in case-studies/ or proof-points.md, unlike
+      insurance / wellness / telehealth. All evidence here is third-party citation. Do not fabricate a
+      customer story.
+  banned_claims:
+  - Diagnosing, determining medical/surgical eligibility, or making pre-authorization/clinical decisions
+  - Replacing clinical evaluation, DXA, BIA, calibrated scales, or protocol-defined reference methods
+  - Guaranteeing compliance, automated pre-auth approval, or automated fraud detection
+  - 'FDA-cleared / medical device framing (only licensed exception: ''It is not positioned as a medical
+    device.'')'
+  - SOC 2 certified (unconfirmed — in progress per compliance.md)
+  - 'FX-004: 95%+ overall repeatability consistency'
+  - Combining the internal accuracy/repeatability benchmark with the ISO 0.40 cm benchmark in one paragraph
+  - Per-measurement girth figures (wrist 0.54 cm, waist 2.14 cm) — technical material, not a hub article
+  - '''Most accurate body scanning'' / any competitor-named comparison'
+  - '''Positioned as'' for scope, intended-use, regulatory status or equivalence (except the one licensed
+    medical-device sentence)'
+  - 'Reserved words about our own evidence: independent, third-party, validated, clinically validated,
+    peer-reviewed'
+  - DEXA spelling in our own prose — use DXA (also written DEXA) only where it is a search term
+  - Clinical-outcome claims about bariatric surgery itself (benefits, side effects, disease remission)
+    — vertical boundary
+  - Any number not in approved_claims or external_citations above
+  banned_words:
+  - leverage
+  - utilize
+  - harness
+  - robust
+  - seamless
+  - comprehensive
+  - delve
+  - navigate (metaphorical)
+  - tapestry
+  - realm
+  - unlock
+  - unleash
+  - game-changing
+  - cutting-edge
+  - em dash in any construction
+  - It's not just X, it's Y
+  - 'objective (re: our tech/conclusions)'
+  - by hand
+  - let
+  - this article/guide
+  tone:
+    register: Calm, specific, evidence-led B2B — buyer framing ('programs', 'coordinators', 'payers'),
+      not 'you'-spam
+    length: 'Match sibling hubs: 4,000-4,500 words (current live ~4,100 is in range)'
+    structure: 12-part standard structure (about-me.md / guidelines §12). Bariatrics is a listed sensitive
+      vertical — scope note plus italic disclaimer early (already live, verbatim above).
+  voice_fingerprint:
+  - 'The reframe move: open by turning the obvious question into the sharper one'
+  - Declarative, unhurried; 15-30 word sentences, 2-4 sentence paragraphs
+  - Concrete over abstract — every claim carries a number, named source or disclosed limit
+  - Honest about limits in the same breath as capability
+  - Neutral authority — cite external bodies (CDC, ASMBS, JAMA, KFF, CMS, Johns Hopkins) rather than asserting
+    credibility
+  claims_discipline:
+  - 'NEVER: diagnose, determine eligibility/treatment/pre-auth decisions, replace clinician evaluation,
+    guarantee compliance'
+  - 'Position AS: mobile body-scanning / structured-data-capture / pre-consult intake and documentation
+    layer supporting program and payer review'
+  accuracy_framing:
+  - Never state a figure without a condition (reference method / population / protocol / decision)
+  - Repeatability written as < 1 cm; two benchmarks never combined; link the accuracy framework from the
+    same paragraph as any figure
+  examples:
+  - file: brand-assets/past-articles/blog/clinical-trials-anthropometric-measurement.md
+    why: Required minimum for regulated verticals (CLAUDE.md §15 rule 2) — best model for compliance-scoping,
+      'operational not clinical' framing, scope-note/FAQ structure. Check its known_issues frontmatter
+      for the M1/M2 slips NOT to replicate.
+  - file: workspace/seo/articles/bariatric-hub-refresh/published-live-2026-07-27.md
+    why: Live text of record for THIS hub — the baseline to diff against, not the June draft.
+  - file: workspace/seo/articles/glp-1-market-hub/published-live-2026-08-28.md
+    why: Most recent hedged-tone precedent in the same Health system. Its market-indicator table pattern
+      (figure + inline citation + 'what it indicates' column) is directly reusable for the bariatric volume
+      series, which is exactly the guardrail-#2 problem this refresh has to solve.
+  competitors_context: 'Prism Labs is the primary FitXpress competitor, strong in insurance/population-health/GLP-1
+
+    narratives, with no distinct bariatric play noted. Size Stream has a clinical-research/hybrid
+
+    footprint but is hardware-dependent. Differentiate on remote-only capture, workflow breadth
+
+    across pre-qual/pre-auth/post-op from one asset, and compliance depth (HIPAA/BAA). Never name
+
+    competitors in this content.
+
+    '
+  keywords_raw:
+    source: ahrefs api v3 (keywords-explorer), Standard 2022 plan, country=us
+    pulled: '2026-09-03'
+    headline: 5 of 7 seeds have NO Ahrefs figure for the exact phrase (null, not zero). Every phrase in
+      the content plan's target title has zero measured US demand.
+    seeds:
+    - seed: bariatric pre-qualification
+      file: workspace/seo/_keywords/2026-09-03-bariatric-hub-refresh.yaml
+      seed_has_data: false
+      note: NO DATA. No ideas returned either. This is the current H1's own term.
+    - seed: bariatric surgery requirements
+      file: workspace/seo/_keywords/2026-09-03-bariatric-hub-refresh-bariatric-surgery-requirements.yaml
+      seed_has_data: true
+      seed_metrics:
+        volume: 1100
+        difficulty: 54
+        traffic_potential: 5000
+        parent_topic: bariatric surgery
+        intent: informational
+      related:
+        keyword: bariatric surgery
+        volume: 69000
+        difficulty: 50
+      note: The only real volume in the vertical, and it is patient-facing (insurer coverage, BMI thresholds),
+        not the B2B documentation angle. See the checkpoint-1 question.
+    - seed: bariatric pre authorization
+      file: workspace/seo/_keywords/2026-09-03-bariatric-hub-refresh-bariatric-pre-authorization.yaml
+      seed_has_data: false
+      related:
+        keyword: pre authorization
+        volume: 1800
+        difficulty: 37
+        intent: informational
+      note: NO DATA bariatric-specific. 'pre authorization' alone has volume but its idea list is dominated
+        by insurance and credit-card senses, not healthcare.
+    - seed: bariatric patient progress
+      file: workspace/seo/_keywords/2026-09-03-bariatric-hub-refresh-bariatric-patient-progress.yaml
+      seed_has_data: false
+      related:
+        keyword: bariatric patient
+        volume: 500
+        difficulty: 39
+      note: NO DATA. Idea list is dominated by bariatric EQUIPMENT queries (patient lift, bed, chair,
+        transport). Do not mine it for content angles.
+    - seed: bariatric intake
+      file: workspace/seo/_keywords/2026-09-03-bhr-bariatric-intake.yaml
+      seed_has_data: false
+      note: NO DATA. Entire idea list is post-op NUTRITION intake (protein, calorie, water) — a different
+        sense of the word. Do not use.
+    - seed: obesity care
+      file: workspace/seo/_keywords/2026-09-03-bhr-obesity-care.yaml
+      seed_has_data: true
+      seed_metrics:
+        volume: 80
+        difficulty: 53
+        traffic_potential: 80
+        parent_topic: obesity week
+        intent: informational
+      note: Parent topic is a CONFERENCE (Obesity Week), not care delivery. Thin and wrong-intent despite
+        having a number. This is half of the content plan's proposed title.
+    - seed: body composition after bariatric surgery
+      file: workspace/seo/_keywords/2026-09-03-bhr-body-composition-after-bariatric-surgery.yaml
+      seed_has_data: false
+      related:
+      - keyword: after bariatric surgery
+        volume: 450
+        difficulty: 16
+        parent_topic: long-term diet after gastric sleeve surgery
+      - keyword: body composition
+        volume: 32000
+        difficulty: 32
+      note: NO DATA. Idea list is patient-facing post-op lifestyle content (diet, hair loss, pregnancy,
+        exercise). 'body composition' at 32K/mo is owned by Hub 1 / Hub 3 — do not chase it here.
+    planner_guidance: 'TBD-branch. Buyer-side terms (pre-qualification, pre-auth documentation, intake
+      workflow,
+
+      patient progress) have no measured volume because this is a small B2B buying committee: a
+
+      few hundred US bariatric programs, whose directors of operations and pre-auth coordinators
+
+      do not search in vendor language. That is NOT an argument for changing the page''s audience.
+
+      The page''s job is BOFU/GEO capture and sales enablement, not organic volume. Say so plainly
+
+      in plan.md and carry it as Open Item #1 into checkpoint 1 — do not let the page quietly
+
+      drift into patient-facing content to chase the 1,100/mo, which is what the live "About
+
+      bariatric surgery" FAQ block already does. Same failure class as the 2026-08-25
+
+      remote-body-measurement article, which shipped on a zero-data primary keyword.
+
+      '
+  exclusions: null

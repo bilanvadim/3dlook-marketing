@@ -23,6 +23,30 @@ Seven health articles were read on the live site and reconciled against this inv
 | 8 | `top-7-remote-body-composition-tools-glp-1-clinics` | 7 Body Composition and Progress-Tracking Tools for Remote GLP-1 Clinics | **2026-08-21** | 2026-08-21 | ~3,060 | `workspace/seo/articles/top-7-remote-body-composition-tools-glp-1-clinics/` |
 | 9 | `online-pharmacy-bmi-verification-a-2026-compliance-guide` | Online Pharmacy BMI Verification: A 2026 Compliance Guide | **2026-08-24** (re-dated by the republish) | 2026-08-24 | ~2,260 | `workspace/seo/articles/2026-05-21-online-pharmacy-bmi-verification/` |
 | 10 | `glp-1-market` | GLP-1 Market Growth and the Need for Better Patient Progress Tracking | **2026-08-28** (re-dated by the republish) | 2026-08-28 | ~2,000 | `workspace/seo/articles/glp-1-market-hub/` |
+| 11 | `bariatric-pre-qualification-mobile-3d-body-scanning` | Bariatric Pre-Qualification with Mobile 3D Body Scanning: Faster Pre-Auth | **2026-06-05** | **2026-07-27** | ~4,100 | `workspace/seo/articles/bariatric-hub-refresh/` |
+
+> **Row 11 added 2026-09-03 — and it is a correction, not a new publication.** The Bariatrics hub was
+> **expanded in place on 2026-07-27** (`datePublished` 2026-06-05T13:44:40+00:00, `dateModified`
+> 2026-07-27T13:40:06+00:00) and this inventory never recorded it: the Hub #9 rows below said only
+> "Jun 5, 2026" until today. **Why it was missed:** the 2026-08-18 Live-Page Verification Pass covered
+> rows 1–7 only, and the bariatric hub was not one of the seven, so it has never been live-verified
+> until now. Unlike rows 9 and 10, the July republish **did not reset the publication date** — the page
+> still shows "Published: June 5, 2026 · Updated: July 27, 2026", so this one kept its age.
+> The live body was captured into `workspace/seo/articles/bariatric-hub-refresh/published-live-2026-07-27.md`,
+> which is the text of record. It runs ~4,100 words across 9 H2s and **already covers pre-qualification,
+> the GLP-1 shift, pre-auth documentation and post-procedure longitudinal tracking** — that is, most of
+> what the content plan's "Refresh / expand hub" row still asks for, because that row was seeded from
+> the Backlink Analysis Report against the June 5 version. Byline on site: **Assel Sekerova**.
+> Article count is unchanged: this was always published, only mis-recorded.
+>
+> **Update, same day: the September refresh WILL re-date the post.** Vadim's call on 2026-09-03 was
+> to let the republish reset `datePublished`, unlike the July expansion. The refresh is at
+> checkpoint 2 in `workspace/seo/articles/bariatric-hub-refresh/` (`publish-package.md`,
+> `status: ready_for_review`, byline `Assel Sekerova`, slug unchanged). Once it goes live, the live
+> page will no longer show June 5, 2026 anywhere, and **this row plus
+> `published-live-2026-07-27.md` become the only surviving record of this article's true age**
+> (`datePublished` 2026-06-05T13:44:40+00:00, expanded in place 2026-07-27T13:40:06+00:00). Same
+> outcome as rows 9 and 10, but chosen deliberately this time rather than discovered afterwards.
 
 > **Row 10 added 2026-08-28.** The **GLP-1 Market hub refresh** — a **refresh republished in place at the same URL**, not a new article. This closes the last P0 hub refresh gap and retires the Oct 2024 "The Growth of the GLP-1 Market" page. Verified against the live page the same day (`datePublished` 2026-08-28T12:46:40+00:00, modified 12:58:26+00:00). Byline on site: **Asselya Sekerova** (the row-8 spelling, not the row-9 "Assel" — the site remains inconsistent). Three things worth knowing: **(a)** the republish **reset the publication date**, so the Oct 2024 original age now lives only in this repo; **(b)** the live text matches **no draft in the folder** — a further editorial pass happened after `draft-v6-revision2.md`, so the live body was captured into `published-live-2026-08-28.md`, which is the text of record; **(c)** the live version is ~500 words shorter than v6, adds a market-structure section (Novo/Lilly segmentation, oral and combination therapies, citing Reuters 2026-08-13 and IQVIA 2026–2030) plus a four-row market-indicator table, and hedges the market claims harder than the draft did (v6's 6M→10M 2024→2025 US patient-count trajectory was dropped). Full delta in that folder's `FINAL-PUBLISHED.md`.
 
@@ -68,7 +92,7 @@ Each working directory now carries a `FINAL-PUBLISHED.md` marker with the live U
 | 6 | GLP-1 Market | P0 hub + P1/P2 | ✅ **Hub refreshed Aug 28, 2026** | Pharmacy BMI (**rewritten Aug 24**), GLP-1 Compliance, Visual Progress, Weight Loss Industry, Weight Loss Clinic Tips, Body Scanning for Weight Loss, Beyond BMI, Body Composition Tools listicle (Aug 21) | Hub is current — P1/P2 cluster rows unblocked |
 | 7 | Insurance Underwriting | P0 | ✅ Jun 17 | — | None |
 | 8 | Wellness Platforms | P0 | ✅ Mar 30 | — | **P0** supporting listicle not published (Top Mobile Body Scanning Software) — see P0 gaps. Note: the 2026-08-31 hub rewrite in `workspace/seo/articles/2026-08-31-ai-body-data-wellness-platforms-hub/` has no `FINAL-PUBLISHED.md`, so it is drafted, not live |
-| 9 | Bariatric | P0 | ✅ Jun 5 | — | None |
+| 9 | Bariatric | P0 | ✅ Jun 5, **expanded in place Jul 27** | — | Hub is current on structure; **content is stale** — its GLP-1 section stops at 2023 data and its pre-auth section predates CMS-0057-F. Refresh in flight 2026-09-03. 5 P1 cluster articles not published |
 | 10 | Clinical Trials | P0 | ✅ Jul 17 | — | 4 P1 supporting articles not published |
 | 11 | Occupational Health | P0 | ✅ Jul 10 | — | **Two P0** supporting articles pending: comparison in progress 2026-09-03, return-to-work not started |
 | — | BCRL / Lymphedema | NEW | ✅ Jul 8 | — | New vertical — add to plan |
@@ -93,7 +117,7 @@ Each working directory now carries a `FINAL-PUBLISHED.md` marker with the live U
 - `occupational-health-screening-software/` — **Standardizing Occupational Health Screening** — Jul 10, 2026 — Hub
 
 ### Bariatric (Hub #9)
-- `bariatric-pre-qualification-mobile-3d-body-scanning/` — **Bariatric Pre-Qualification with Mobile 3D Scanning** — Jun 5, 2026 — Hub
+- `bariatric-pre-qualification-mobile-3d-body-scanning/` — **Bariatric Pre-Qualification with Mobile 3D Body Scanning: Faster Pre-Auth** — published Jun 5, 2026, **expanded in place Jul 27, 2026** (the republish did *not* re-date the post) — **P0 HUB** — ~4,100 words, 9 H2s — owns bariatric pre-qualification, pre-auth documentation, obesity-care intake, post-op progress and patient records; does not own generic GLP-1, telehealth or body-composition intent. Live text of record: `workspace/seo/articles/bariatric-hub-refresh/published-live-2026-07-27.md`. **Refresh in flight 2026-09-03** — see that folder's `refresh-gap-analysis.md`.
 
 ### Insurance (Hub #7)
 - `mobile-body-scanning-insurance-underwriting/` — **AI in Insurance Underwriting** — May 2026 — Hub
