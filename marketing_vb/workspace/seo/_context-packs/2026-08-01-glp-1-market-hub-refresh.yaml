@@ -98,8 +98,8 @@ context_pack:
 
   banned_words:
     - leverage, utilize, harness, robust, seamless, comprehensive, delve, navigate (metaphorical), tapestry, realm, unlock, unleash, game-changing, cutting-edge, revolutionary, disrupt, transforming
-    - also (editorial-guardrails / this brief): em dash (—), "objective", "reader", "audience", "this article", "this guide", "by hand", "plus" (as connector)
-    - "Furthermore/Moreover/Additionally" as sentence starters (minimize)
+    - 'also (editorial-guardrails / this brief): em dash (—), "objective", "reader", "audience", "this article", "this guide", "by hand", "plus" (as connector)'
+    - '"Furthermore/Moreover/Additionally" as sentence starters (minimize)'
 
   tone:
     voice: "expert, evidence-led, unhurried, no hype — about-me.md is source of truth"

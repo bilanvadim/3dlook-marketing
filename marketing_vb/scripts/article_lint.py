@@ -161,20 +161,45 @@ def extract_target(plan_fm: dict, plan_body: str) -> int | None:
 # ---------------------------------------------------------------- pack loading
 
 def load_pack(path: str | None, article_path: str):
-    """Find and parse the context pack. Returns (pack_dict_or_None, resolved_path_or_None)."""
+    """Find and parse the context pack.
+
+    Returns (pack_dict_or_None, resolved_path_or_None, error_or_None).
+
+    A malformed pack used to raise out of here and kill the whole run, so an article
+    whose pack had a YAML typo could not be linted at all. Two packs were in that state
+    for a month (`2026-08-01-glp-1-market-hub-refresh`, `2026-08-02-top-7-...`), both from
+    unquoted `: ` or quote-then-continue inside a sequence item.
+
+    It now returns the error instead, and the caller turns that into a FAILED gate rather
+    than a silent skip. That distinction matters: every pack-dependent gate treats
+    `pack is None` as "skipped, nothing to check", so swallowing a parse error would
+    convert a crash into a green run that verified nothing.
+    """
     if path is None:
         slug = os.path.basename(os.path.dirname(os.path.abspath(article_path)))
         guess = os.path.join(REPO, "workspace", "seo", "_context-packs", f"{slug}.yaml")
         path = guess if os.path.exists(guess) else None
     if not path or not os.path.exists(path):
-        return None, None
+        return None, None, None
     try:
         import yaml
     except ImportError:
-        return None, path
-    with open(path) as fh:
-        raw = yaml.safe_load(fh)
-    return (raw or {}).get("context_pack", raw), path
+        return None, path, "pyyaml is not installed, so the pack could not be read"
+    try:
+        with open(path) as fh:
+            raw = yaml.safe_load(fh)
+    except yaml.YAMLError as e:
+        mark = getattr(e, "problem_mark", None) or getattr(e, "context_mark", None)
+        where = f" at line {mark.line + 1}, column {mark.column + 1}" if mark else ""
+        problem = getattr(e, "problem", None) or str(e).split("\n")[0]
+        return None, path, f"pack does not parse{where}: {problem}"
+    except OSError as e:
+        return None, path, f"pack could not be opened: {e}"
+    if raw is None:
+        return None, path, "pack is empty"
+    if not isinstance(raw, dict):
+        return None, path, f"pack top level is {type(raw).__name__}, expected a mapping"
+    return raw.get("context_pack", raw), path, None
 
 
 # ---------------------------------------------------------------- gates
@@ -650,7 +675,17 @@ def main():
         run("plan structure", gate_plan, body, fm)
         run("superseded figures", gate_superseded, body, True, line_offset)
     else:
-        pack, _pack_path = load_pack(args.pack, args.path)
+        pack, _pack_path, pack_err = load_pack(args.pack, args.path)
+        if pack_err:
+            # A FAILED gate, not a skip. Everything downstream that reads the pack treats
+            # pack=None as "nothing to check" and reports ok, so without this the run would
+            # come back green having verified none of the pack-dependent rules.
+            run("context pack", lambda: (False, [
+                pack_err,
+                f"pack: {_pack_path}",
+                "pack-dependent gates below (claim traceability, banned claims, internal links) "
+                "did NOT run, and their ok status means nothing on this run",
+            ], {"pack_loaded": False}))
 
         # target and primary keyword come from plan.md beside the article unless overridden
         target = args.target

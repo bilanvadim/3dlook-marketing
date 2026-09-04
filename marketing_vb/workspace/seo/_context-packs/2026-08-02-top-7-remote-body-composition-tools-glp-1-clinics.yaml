@@ -46,10 +46,10 @@ context_pack:
       source: "FitXpress deck"
 
   banned_claims:
-    - "most accurate body scanning" / any "most accurate" framing
-    - "medical device" / any FDA-clearance implication
-    - "replaces DEXA / BIA / calibrated scale / clinician review" universally
-    - "guaranteed compliance" or automated fraud/eligibility decisioning
+    - '"most accurate body scanning" / any "most accurate" framing'
+    - '"medical device" / any FDA-clearance implication'
+    - '"replaces DEXA / BIA / calibrated scale / clinician review" universally'
+    - '"guaranteed compliance" or automated fraud/eligibility decisioning'
     - any numeric head-to-head vs InBody, Prism Labs, Withings, or other named tool not in proof-points.md
     - naming competitors as comparison targets in running prose — compare by category/role, not brand-vs-brand
     - any number not in approved_claims above
@@ -59,8 +59,8 @@ context_pack:
     - leverage, utilize, harness, robust, seamless, comprehensive, delve, navigate (metaphorical), tapestry, realm, unlock, unleash, game-changing, cutting-edge, revolutionary, disrupt
     - "It's not just X, it's Y"
     - em-dash in rhetorical constructions
-    - "Furthermore/Moreover/Additionally" at sentence starts
-    - also zero: "objective", "reader", "audience", "this article", "this guide", "by hand", "plus" (connector) — per brief style rules
+    - '"Furthermore/Moreover/Additionally" at sentence starts'
+    - 'also zero: "objective", "reader", "audience", "this article", "this guide", "by hand", "plus" (connector) — per brief style rules'
 
   tone:
     voice: "expert, data-driven, practical, no hype — calm, specific, evidence-led B2B, authoritative healthcare-enterprise"
