@@ -4330,10 +4330,33 @@ def cancel_all(key: str) -> Dict[str, int]:
         aj = _active_job(key)
         if aj:
             profile, jid = aj
-            _ho_write("update ho_jobs set status='aborted' where id=? "
-                      "and status not in ('done','failed','aborted')", (jid,))
-            _set_job(key, profile, None)
-            out["job"] = 1
+            changed = _ho_write_count(
+                "update ho_jobs set status='aborted', finished_at=datetime('now') "
+                "where id=? and status not in ('done','failed','aborted','escalated')",
+                (jid,))
+            if changed > 0:
+                # Only drop the pointer once the row really moved. Clearing it on
+                # a failed write loses the only handle we have on that job.
+                _set_job(key, profile, None)
+            out["job"] = max(changed, 0)
+            if changed <= 0:
+                logger.warning("csw-stop: job %s did not abort (rows=%s) — "
+                               "pointer kept", jid, changed)
+        # A tab's pointer holds ONE job. Anything else this profile left
+        # non-terminal stays queued and WILL run later, which is exactly how a
+        # cancelled /new-article re-armed itself for 10:37 on 2026-09-04. Do not
+        # abort those silently — they may not be this tab's — but never let the
+        # user read "stopped" while they are still armed.
+        prof = aj[0] if aj else None
+        rows = _ho_read(
+            "select id from ho_jobs where status not in "
+            "('done','failed','aborted','escalated')" +
+            (" and profile=?" if prof else ""),
+            (prof,) if prof else ()) or []
+        out["job_left"] = len(rows)
+        if rows:
+            logger.warning("csw-stop: %d job(s) still queued after cancel_all: %s",
+                           len(rows), ", ".join(str(r[0]) for r in rows))
     except Exception:
         logger.debug("csw-stop: conductor job abort failed", exc_info=True)
     logger.info("csw-stop: cancel_all %s -> %r", key, out)
@@ -4351,8 +4374,15 @@ def cancel_report(st: Dict[str, int]) -> str:
         bits.append(f"снято из очереди сообщений: {st['fifo']}")
     if st.get("job"):
         bits.append("задание дирижёра прервано")
-    return ("⏹ Остановлено — " + ", ".join(bits)) if bits else \
+    head = ("⏹ Остановлено — " + ", ".join(bits)) if bits else \
            "⏹ Останавливать было нечего."
+    # The warning outranks the good news: a queued job runs again on its own.
+    left = st.get("job_left") or 0
+    if left:
+        head += (f"\n⚠️ В очереди дирижёра ещё {left} — они запустятся сами. "
+                 f"Проверь: hermes ho jobs / ho_jobs where status not in "
+                 f"('done','failed','aborted','escalated').")
+    return head
 
 
 _STOP_MAX_LEN = 64
@@ -4946,6 +4976,30 @@ def _ho_write(sql: str, params: tuple = ()):
     except Exception:
         logger.debug("claude-switcher: ho write failed", exc_info=True)
         return None
+
+
+def _ho_write_count(sql: str, params: tuple = ()) -> int:
+    """Like _ho_write, but returns rows ACTUALLY changed (-1 on failure).
+
+    cancel_all reports what it stopped, and that report is the only thing the
+    user sees before walking away from a run. lastrowid says nothing about an
+    UPDATE, so a no-op update (job already terminal, stale id, locked db) used to
+    read as a successful abort. On 2026-09-04 that produced "задание дирижёра
+    прервано" while ho_jobs 111 stayed queued and re-armed itself for 10:37.
+    -1 (write raised) is deliberately distinct from 0 (write ran, matched
+    nothing) so the caller can tell "could not reach the db" from "nothing here".
+    """
+    try:
+        c = sqlite3.connect(HO_DB, timeout=10)
+        try:
+            cur = c.execute(sql, params)
+            c.commit()
+            return int(cur.rowcount if cur.rowcount is not None else 0)
+        finally:
+            c.close()
+    except Exception:
+        logger.debug("claude-switcher: ho write (counted) failed", exc_info=True)
+        return -1
 
 
 def _entry_prompt(profile: str, task: str) -> str:
