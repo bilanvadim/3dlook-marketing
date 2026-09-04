@@ -10,6 +10,12 @@
 > при конфлікті виграє `linkedin-post-prompts.md`, окрім двох house rules, які виграють завжди:
 > **хештегів немає ніде** і **1–2 емодзі максимум**.
 > Twitter / Instagram / Facebook документ не зачіпає — їхні блоки лишаються без змін.
+>
+> ⚠️ **П'ять особистих LinkedIn-профілів (Katerina · Katya · Nick · Olena · Vadim) з 2026-09-04 живуть за
+> секцією `Rules for the five personal profiles`** у тому ж файлі: **100–170 слів, 170 — жорсткий ліміт**,
+> короткі речення (нічого довше 30 слів), **локація не в першому реченні і не в кожному пості**,
+> одна корисна річ, якій пост навчає, і хук-твердження замість питання. Механічну половину гейтить
+> `scripts/post-lint.py`. `linkedin-company` цих правил не отримує — у нього свої 180–280 слів.
 
 ---
 
@@ -138,11 +144,11 @@ content_types:
   - Leadership, digital health, AI adoption, enterprise healthcare, product strategy, market evolution
   - AI risk / commoditization through a UK market lens
   - UK regulatory and compliance angle (MHRA, GDPR, NHS digital transformation)
-length: "180-250 words (~1200-1650 chars)"
+length: "100-170 words (~650-1100 chars). 170 words is a HARD ceiling — post-lint fails over it (house rule 2026-09-04)"
 emoji: "1-2 max"
 hashtags: none
 avoid: "Marketing voice, sales pitch, claiming experiences the article doesn't support, Mobile Tailor / apparel topics, US regulatory context (FDA, US payer system), EU-specific regulatory framing, product features and pricing — too granular for CEO voice"
-cta: "Invitation to explore the article — soft, «Curious what you think»"
+cta: "Invitation to explore the article, closed with a question that needs the reader's own numbers or experience. NOT «Curious what you think» / «Thoughts?» — personal rule 5 calls those punctuation"
 ```
 
 ### linkedin-vadim — Vadim Bilan (BD/Marketing, Australia)
@@ -168,7 +174,7 @@ content_types:
   - Operational excellence, implementation, real-world deployment, reliability
   - Privacy and scalability in an AU context
   - Product quality and enterprise procurement
-length: "180-250 words (~1200-1650 chars)"
+length: "100-170 words (~650-1100 chars). 170 words is a HARD ceiling — post-lint fails over it (house rule 2026-09-04)"
 emoji: "1-2 max"
 hashtags: none
 avoid: "Marketing language, repeating the article instead of translating it for AU, CEO-level strategy (that's Katerina), US/EU/UK regulatory framing unless the article raises it, generic 3DLOOK promo. The old marketing/growth-community + GTM angle is superseded (2026-08-07)."
@@ -201,7 +207,7 @@ content_types:
   - Enterprise healthcare, telehealth, GLP-1 programs, remote patient monitoring
   - Operational efficiency, patient engagement, healthcare workflows
   - Evidence generation, enterprise partnerships, scalability
-length: "180-250 words (~1200-1650 chars)"
+length: "100-170 words (~650-1100 chars). 170 words is a HARD ceiling — post-lint fails over it (house rule 2026-09-04)"
 emoji: "1-2 max"
 hashtags: none
 avoid: "Marketing buzzwords, exaggerated claims, forced product promotion, European regulatory context, fashion/apparel topics (not his lane), generic 3DLOOK promo"
@@ -231,7 +237,7 @@ content_types:
   - Operational, regulatory and adoption challenges
   - Implementation, scalability, user trust, measurable outcomes
   - Examples relevant to European enterprise buyers
-length: "180-250 words (~1200-1650 chars)"
+length: "100-170 words (~650-1100 chars). 170 words is a HARD ceiling — post-lint fails over it (house rule 2026-09-04)"
 emoji: "1-2 max"
 hashtags: none
 avoid: "US-specific regulatory context (FDA, payer system), UK-specific references, country-specific regulations unless the article raises them (EU-wide GDPR framing is fine), Israeli market topics, fashion/apparel topics, positioning 3DLOOK as the centre of the conversation instead of an enabling technology"
@@ -261,7 +267,7 @@ content_types:
   - Operational challenges and implementation
   - Enterprise buying behaviour and trust
   - Scaling digital health in the region
-length: "180-250 words (~1200-1650 chars)"
+length: "100-170 words (~650-1100 chars). 170 words is a HARD ceiling — post-lint fails over it (house rule 2026-09-04)"
 emoji: "1-2 max"
 hashtags: none
 avoid: "Technical deep dives, product promotion, EU regulatory specifics, US payer system context, fashion/apparel topics"
@@ -293,7 +299,7 @@ note: "Disabled 2026-06-27. Activate by setting posts_per_week: 1."
 
 | Агент | Що бере з конфігу |
 |-------|-------------------|
-| `post-drafter` | `tone`, `avoid`, `product_bias`, `length`, `emoji`, `hashtags`, `cta` — для написання поста. Для `linkedin-*` **додатково обов'язково** читає `writing_brief` → відповідну секцію `brand-assets/linkedin-post-prompts.md` |
+| `post-drafter` | `tone`, `avoid`, `product_bias`, `length`, `emoji`, `hashtags`, `cta` — для написання поста. Для `linkedin-*` **додатково обов'язково** читає `writing_brief` → відповідну секцію `brand-assets/linkedin-post-prompts.md` (у прогоні це приходить готовим у промпті з `brand-assets/linkedin-prompts/{profile}.md`, разом із секцією `Rules for the five personal profiles` для п'яти людей) |
 | `social-planner` | `icp_focus`, `market`, `content_types` — для розподілу кутів між профілями |
 | `visual-brief` | `platform`, `tone`, profile owner — для стилевого рішення і розмірів |
 | `/post-from-article` command | `posts_per_week > 0` — список активних профілів для ітерації |

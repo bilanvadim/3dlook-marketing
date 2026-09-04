@@ -1,43 +1,40 @@
 ---
 profile: linkedin-company
 platform: linkedin
-article_slug: 2026-05-21-online-pharmacy-bmi-verification
+article_slug: online-pharmacy-bmi-verification-a-2026-compliance-guide
 product: fitxpress
+format: text + photo
 status: draft
-created: 2026-06-27
+created: 2026-09-04
 ---
 
-## Post — linkedin-company — 2026-05-21-online-pharmacy-bmi-verification
+## Post: linkedin-company / online-pharmacy-bmi-verification-a-2026-compliance-guide
 
-**Source article:** `workspace/seo/articles/2026-05-21-online-pharmacy-bmi-verification/publish-package.md`
-**Angle:** A camera-roll photo upload has never been a verification step — AI tools just made that gap impossible for pharmacies to ignore.
-**Goal:** thought leadership | conversion
+**Angle:** The enterprise governance shift behind the article: as remote health programs scale, regulated decisions still rest on data patients type in and photos they can edit, and the market is moving verification from after-the-fact file review to structured, auditable session capture. Distinct from twitter's sharp method-vs-file POV, instagram's experiment story, facebook's CDC framing and katya's single procurement question.
+**Claims used:** camera-roll photo gives limited evidence of when/how/by whom an image was created; generative AI makes altered images fast and inexpensive; guided capture through the SDK with camera roll disabled, liveness/pose/clothing checks, predicted weight cross-checked against self-reported weight with a configurable mismatch threshold; processing typically under 45 seconds; timestamped session and validation records; provider makes eligibility and treatment decisions.
+**Length:** 218 / 180-280 words
 
 ---
 
-A free AI tool can produce a convincing "heavier" body photo in seconds.
+A regulated prescribing decision is only as trustworthy as the evidence behind it. 🔍
 
-3DLOOK's CEO tested it: ChatGPT generated a photo showing her 27 kg heavier while keeping her real face intact. Gemini produced an anatomically more detailed version. Both could pass a quick clinical review. Both took seconds.
+Across online pharmacy and telehealth weight-loss programs, eligibility often still rests on a self-reported weight and one or two photos uploaded from a camera roll. That gives a clinician something to review, but limited evidence of when, how, or by whom an image was created.
 
-That is the current baseline for any online pharmacy still using camera-roll uploads as BMI eligibility checks.
+Generative AI has widened the gap. Producing a plausible altered body image is now fast and inexpensive, which makes provenance, capture time, and liveness harder to take for granted in high-volume review workflows.
 
-The problem is not that patients edit photos. It is that a file upload has no provenance. You do not know when it was taken, whether the person is the patient, or whether it is a photo of a screen. Upload-based verification asks for evidence and trusts that everyone complies. That assumption breaks at GLP-1 prescription volumes.
+The market response is a change in where verification happens. Instead of reviewing a file after the fact, programs are moving BMI verification to a live, in-session capture event that produces structured, auditable data.
 
-What defensible BMI verification requires in 2026:
+This is where FitXpress fits. Guided capture runs through the software development kit (SDK) with the camera roll disabled, adds liveness, pose, and clothing checks, and cross-checks predicted weight against self-reported weight using a configurable mismatch threshold. Processing typically takes under 45 seconds, and the pharmacy receives timestamped session and validation records for its documentation workflow. The provider, not the vendor, still makes every eligibility and treatment decision.
 
-— In-session capture through the SDK, not a camera roll picker
-— Liveness checks at the moment of capture
-— Clothing detection for oversized attire used to inflate visual BMI
-— AI-derived body estimate cross-checked against the patient's self-reported weight
-— Timestamped audit logs exportable for regulator review
+For compliance and operations leaders, the value is audit-ready evidence that holds up as application volume grows.
 
-A leading UK online pharmacy runs FitXpress as their BMI verification step today. Patients complete a 2-photo scan in under 45 seconds. Results include BMI plus 80+ body measurements. Photos are processed server-side and deleted within 30 days. HIPAA-maintained for US contexts, GDPR principles for UK and EU, AWS S3 SSE-S3 encryption throughout.
+**CTA:** Read the full article for the eight-question vendor checklist and the four remote verification methods.
 
-UK GPhC scrutiny of online weight-loss prescribing is rising. Compliance teams still relying on upload-based checks are carrying a risk that is getting harder to defend.
+---
 
-Read the full guide on what the 2026 standard looks like in practice.
+### Design tip
 
-👉 https://3dlook.ai/for-bmi-verification/
-
-**CTA:** Read the full article (https://3dlook.ai/for-bmi-verification/)
-**Hashtags:** #OnlinePharmacy #BMIVerification #GLP1 #HealthcareCompliance #FitXpress
+**Article visual:** `2026/06/banner_2-2.webp` — three smartphones showing the FitXpress verification flow (body scanning and BMI Verification results) with two blurred people in the background.
+**Format:** text + photo (single article-native image under the copy)
+**Adaptation:** Crop to lead with the two verification-results screens so the audit-and-evidence angle reads before the copy is expanded.
+**Keep:** The FitXpress in-flow UI and the electric-blue result cards, so the post stays visually tied to the article and the product page.

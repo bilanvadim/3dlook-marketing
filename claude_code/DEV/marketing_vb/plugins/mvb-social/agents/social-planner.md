@@ -28,12 +28,12 @@ tools: Read, Write, Grep, Glob
 
 Для кожного з 9 профілів признач унікальний angle. Правила:
 - **Жоден claim не повторюється** у двох профілів як головний хук
-- **Регіональні лінзи (з `linkedin-post-prompts.md`):** Katerina = UK/MHRA/CQC/NHS · Olena = Continental Europe, UK excluded, GDPR · Nick = US healthcare/telehealth/GLP-1/RPM · Katya = Israel + Gulf · **Vadim = Australia** (AU telehealth, digital health, fitness platforms, enterprise health operators — не маркетингова спільнота, змінено 2026-08-07)
+- **Регіональні лінзи (з `linkedin-post-prompts.md`) — це таргетинг, не тема поста:** Katerina = UK/MHRA/CQC/NHS · Olena = Continental Europe, UK excluded, GDPR · Nick = US healthcare/telehealth/GLP-1/RPM · Katya = Israel + Gulf · **Vadim = Australia** (AU telehealth, digital health, fitness platforms, enterprise health operators — не маркетингова спільнота, змінено 2026-08-07)
 - **Twitter** = один гострий stat, без філера
 - **Instagram** = людська історія / візуальний момент
 - **Facebook** = доступне пояснення + питання
 - **LinkedIn company** = найбільший ринковий тренд або проблема зі статті, business value
-- **LinkedIn personal** = професійна думка, first person, regional angle — кут має відповідати фокус-списку профілю в `linkedin-post-prompts.md`
+- **LinkedIn personal** = професійна думка, first person, 100-170 слів. Регіон — це **для кого** пост, а не про що: кут відповідає фокус-списку профілю в `linkedin-post-prompts.md`, але країна в тексті не оголошується (секція `Rules for the five personal profiles`, house rule 2026-09-04). Кут має вміщатись у 170 слів і навчати одній конкретній речі.
 - **Формат** призначати за таблицею з post-drafter (text, text+photo, carousel, infographic, lead magnet, poll, screenshot)
 
 ### Крок 3: Сформуй posting-plan.md

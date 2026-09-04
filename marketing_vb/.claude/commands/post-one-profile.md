@@ -109,6 +109,11 @@ do not "just check" with a directory listing when a subcommand answers the same 
    against the article of record and `proof-points.md`. That last one is the check that
    caught "under a minute" against a sourced "Under 45 seconds".
 
+   On the five personal LinkedIn profiles it also gates the shape Vadim set on
+   2026-09-04: **170 words is a wall** (no 10% tolerance), no sentence over 30 words, no
+   geo marker in the first sentence, and no "I speak with operators across the region
+   every week". A post over the ceiling is a rewrite round, not a note in the digest.
+
 5. **Brand voice.** Run `post-brand-checker` on the saved file. FAIL → back to
    `post-drafter` with the reasons. Two rewrite rounds maximum, then note it and move on.
 

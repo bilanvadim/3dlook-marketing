@@ -1,69 +1,106 @@
 {
-  "article_slug": "2026-05-21-online-pharmacy-bmi-verification",
-  "article_path": "workspace/seo/articles/2026-05-21-online-pharmacy-bmi-verification/publish-package.md",
-  "product": "fitxpress",
-  "created": "2026-06-27",
-  "drafts": [
+  "article": {
+    "slug": "online-pharmacy-bmi-verification-a-2026-compliance-guide",
+    "title": "Online Pharmacy BMI Verification: A 2026 Compliance Guide",
+    "product": "fitxpress",
+    "source_file": "workspace/seo/articles/2026-05-21-online-pharmacy-bmi-verification/published-live-2026-08-24.md",
+    "source_status": "published",
+    "published_url": "https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/",
+    "date": "2026-09-04"
+  },
+  "profiles": [
     {
-      "profile": "twitter-company",
-      "file": "workspace/social/articles/2026-05-21-online-pharmacy-bmi-verification/twitter-company/post.md",
-      "status": "draft",
-      "needs_visual": false
+      "profile_id": "twitter-company",
+      "platform": "twitter",
+      "handle": "@3DLOOK",
+      "post_file": "twitter-company/post.md",
+      "format": "text + photo",
+      "status": "ready",
+      "character_count_body": 258,
+      "qc_score": "19/20"
     },
     {
-      "profile": "instagram-company",
-      "file": "workspace/social/articles/2026-05-21-online-pharmacy-bmi-verification/instagram-company/post.md",
-      "status": "draft",
-      "needs_visual": true
+      "profile_id": "instagram-company",
+      "platform": "instagram",
+      "handle": "@3dlook.ai",
+      "post_file": "instagram-company/post.md",
+      "format": "text + photo",
+      "status": "ready",
+      "character_count_body": 985,
+      "qc_score": "16/20"
     },
     {
-      "profile": "facebook-company",
-      "file": "workspace/social/articles/2026-05-21-online-pharmacy-bmi-verification/facebook-company/post.md",
-      "status": "draft",
-      "needs_visual": false
+      "profile_id": "facebook-company",
+      "platform": "facebook",
+      "handle": "3DLOOK",
+      "post_file": "facebook-company/post.md",
+      "format": "text + photo",
+      "status": "ready",
+      "character_count_body": 1063,
+      "qc_score": "16/20"
     },
     {
-      "profile": "linkedin-company",
-      "file": "workspace/social/articles/2026-05-21-online-pharmacy-bmi-verification/linkedin-company/post.md",
-      "status": "draft",
-      "needs_visual": false
+      "profile_id": "linkedin-company",
+      "platform": "linkedin",
+      "handle": "3DLOOK",
+      "post_file": "linkedin-company/post.md",
+      "format": "text + photo",
+      "status": "ready",
+      "word_count_body": 210
     },
     {
-      "profile": "linkedin-katerina",
-      "file": "workspace/social/articles/2026-05-21-online-pharmacy-bmi-verification/linkedin-katerina/post.md",
-      "status": "draft",
-      "needs_visual": false
+      "profile_id": "linkedin-katerina",
+      "platform": "linkedin",
+      "handle": "Katerina Galich",
+      "post_file": "linkedin-katerina/post.md",
+      "format": "text + photo",
+      "status": "ready",
+      "word_count_body": 148
     },
     {
-      "profile": "linkedin-vadim",
-      "file": "workspace/social/articles/2026-05-21-online-pharmacy-bmi-verification/linkedin-vadim/post.md",
-      "status": "draft",
-      "needs_visual": false
+      "profile_id": "linkedin-vadim",
+      "platform": "linkedin",
+      "handle": "Vadim Bilan",
+      "post_file": "linkedin-vadim/post.md",
+      "format": "text + photo",
+      "status": "ready",
+      "word_count_body": 146
     },
     {
-      "profile": "linkedin-nick",
-      "file": "workspace/social/articles/2026-05-21-online-pharmacy-bmi-verification/linkedin-nick/post.md",
-      "status": "draft",
-      "needs_visual": false
+      "profile_id": "linkedin-nick",
+      "platform": "linkedin",
+      "handle": "Nick Omelchak",
+      "post_file": "linkedin-nick/post.md",
+      "format": "text + photo",
+      "status": "ready",
+      "word_count_body": 162
     },
     {
-      "profile": "linkedin-olena",
-      "file": "workspace/social/articles/2026-05-21-online-pharmacy-bmi-verification/linkedin-olena/post.md",
-      "status": "draft",
-      "needs_visual": false
+      "profile_id": "linkedin-olena",
+      "platform": "linkedin",
+      "handle": "Olena Kudryavtseva",
+      "post_file": "linkedin-olena/post.md",
+      "format": "text",
+      "status": "ready",
+      "word_count_body": 161,
+      "qc_score": "19/20"
     },
     {
-      "profile": "linkedin-katya",
-      "file": "workspace/social/articles/2026-05-21-online-pharmacy-bmi-verification/linkedin-katya/post.md",
-      "status": "draft",
-      "needs_visual": false
+      "profile_id": "linkedin-katya",
+      "platform": "linkedin",
+      "handle": "Kateryna Boichuk",
+      "post_file": "linkedin-katya/post.md",
+      "format": "text + photo",
+      "status": "ready",
+      "word_count_body": 140,
+      "qc_score": "19/20"
     }
   ],
-  "ready_for_review": true,
-  "skipped_profiles": [
+  "profiles_skipped": [
     {
-      "profile": "linkedin-whitney",
-      "reason": "posts_per_week: 0 — disabled as of 2026-06-27"
+      "profile_id": "linkedin-whitney",
+      "reason": "posts_per_week: 0"
     }
-  ]
+  ],
+  "ready_for_review": true
 }

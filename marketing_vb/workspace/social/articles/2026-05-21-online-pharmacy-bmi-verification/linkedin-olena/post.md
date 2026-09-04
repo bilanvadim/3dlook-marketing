@@ -1,35 +1,42 @@
 ---
 profile: linkedin-olena
 platform: linkedin
-article_slug: 2026-05-21-online-pharmacy-bmi-verification
+article_slug: online-pharmacy-bmi-verification-a-2026-compliance-guide
 product: fitxpress
+format: text
 status: draft
-created: 2026-06-27
+created: 2026-09-04
 ---
 
-## Post — linkedin-olena — 2026-05-21-online-pharmacy-bmi-verification
+## Post: linkedin-olena / online-pharmacy-bmi-verification-a-2026-compliance-guide
 
-**Source article:** `workspace/seo/articles/2026-05-21-online-pharmacy-bmi-verification/publish-package.md`
-**Angle:** Upload-based BMI checks are no longer defensible in EU/UK pharmacy operations — and the fix requires a procedural shift, not just a better photo review.
-**Goal:** engagement
+**Angle:** The GDPR data-minimization angle I own. Moving from camera-roll uploads to live capture is the right call, but it adds body images to intake, and a verification vendor that stores raw images can trade a fraud risk for a retention liability. Teach the one question to ask before accuracy comes up.
+**Claims used:** Camera-roll uploads provide limited verification evidence; live, in-session capture; GDPR-aligned deployments; images blurred as part of the privacy-protection workflow and deleted after processing by default; structured outputs retained per the pharmacy's configuration and contractual terms.
+**Length:** 161 / 100-170 words
 
 ---
 
-Something I keep hearing from pharmacy contacts across Europe: photo upload for BMI verification feels increasingly thin as a compliance answer.
+Every verification step you add is also a data-retention decision.
 
-The reason is now concrete.
+Online pharmacies and weight-loss programs are moving away from camera-roll photo uploads. The evidence is thin: an uploaded image says little about when or how it was made. Many teams add live, in-session capture instead.
 
-Katerina Galich, our CEO, ran the experiment herself. She asked ChatGPT and Gemini to produce photos of her 27 kg heavier than she is. Both delivered convincing results in seconds. ChatGPT kept her real face while widening the body. Gemini altered the face too. Either could pass a quick clinical review.
+Good move. But it changes your data footprint.
 
-The problem is not the AI tools. It is a verification method never designed to catch them.
+You're now collecting body images and body-data estimates. Under the General Data Protection Regulation (GDPR), that raises a question worth putting before accuracy itself: what happens to the image after the estimate is produced?
 
-Under GDPR, data collected during an eligibility check needs to be adequate, accurate, and limited to what is necessary. A camera-roll upload cannot confirm any of those things. You do not know when the photo was taken, who it shows, or if it has been edited. With GPhC scrutiny of online weight-loss prescribing rising, "we looked at the photo" is no longer a defensible audit answer.
+When I review a vendor, I ask this first, before any accuracy number. In FitXpress, images are blurred as part of the privacy workflow and deleted after processing by default. Structured outputs are retained on your own configuration and contract terms.
 
-What changes this: live, in-session capture, photo taken inside the verification flow, liveness and pose checks, clothing flagged, and a cross-check between self-reported weight and the AI-derived body estimate. Under 45 seconds. Exportable audit logs.
+Data minimization isn't a footnote here. It's the difference between reducing fraud risk and creating a retention liability.
 
-A leading UK online pharmacy uses FitXpress as their BMI verification step today.
+Where does image retention sit in your intake review today, before accuracy even comes up?
 
-Guide in the link below, written for compliance leads and chief pharmacists who own this. Open to connect.
+**CTA:** The full 2026 compliance guide, including the eight-question procurement checklist, is worth a read.
 
-**CTA:** Link to article — https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-2026-guide/ — Open to connect.
-**Hashtags:** #DigitalHealth #HealthTech #GDPR #EuropeanMarket #OnlinePharmacy
+---
+
+### Design tip
+
+**Article visual:** `2026/06/banner_2-2.webp` — three smartphones showing the FitXpress verification flow (body scanning and BMI Verification results) with two blurred people in the background.
+**Format:** text (post reads on its own; optional single supporting image)
+**Adaptation:** If a visual is used, lean on the already-blurred background figures to signal the privacy-by-default point the post makes.
+**Keep:** The blurred people and the electric blue product UI, so the card stays coherent with the article's verification-flow asset.

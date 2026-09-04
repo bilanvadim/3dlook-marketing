@@ -46,7 +46,10 @@ tools: Read, Write, Grep, Glob, Bash
 - Twitter: 240-260 chars single / thread з 2-4 твітів
 - Instagram: first line ≤ 125 chars, caption 600-1000 chars
 - Facebook: 800-1200 chars
-- LinkedIn: за `length` з profile config (800-1800 chars)
+- LinkedIn company: 180-280 words. **П'ять особистих профілів: 100-170 words, 170 — стеля**
+  (house rule 2026-09-04). Плюс на особистих: жодного речення довше 30 слів, локація не в
+  першому реченні, немає «I speak with … every week». Це вже порахував `scripts/post-lint.py` —
+  бери його вивід, не рахуй сам.
 
 ### Pass 2b — AI-tells sweep (обов'язковий, по кожному посту)
 
@@ -124,4 +127,6 @@ self_check: |
 
 - **Не змінюй angle** призначений social-planner'ом — тільки формулювання.
 - **Не скорочуй довжину** якщо це ламає сенс — краще познач «over limit» у changes_summary.
-- **Пріоритет: brand voice > length.** Краще трохи довший пост без banned patterns, ніж короткий з «leverage».
+  Виняток — стеля 170 слів на п'яти особистих LinkedIn-профілях: вона не торгується, пост
+  ріжеться до неї. Якщо сенс не вміщується в 170 слів, значить у пості два кути замість одного.
+- **Пріоритет: brand voice > length.** Краще трохи довший пост без banned patterns, ніж короткий з «leverage». Знову ж, крім стелі 170.

@@ -1,33 +1,40 @@
 ---
 profile: linkedin-nick
 platform: linkedin
-article_slug: 2026-05-21-online-pharmacy-bmi-verification
+article_slug: online-pharmacy-bmi-verification-a-2026-compliance-guide
 product: fitxpress
+format: text + photo
 status: draft
-created: 2026-06-27
+created: 2026-09-04
 ---
 
-## Post — linkedin-nick — 2026-05-21-online-pharmacy-bmi-verification
+## Post: linkedin-nick / online-pharmacy-bmi-verification-a-2026-compliance-guide
 
-**Source article:** `workspace/seo/articles/2026-05-21-online-pharmacy-bmi-verification/publish-package.md`
-**Angle:** Photo-upload BMI checks are a liability for GLP-1 platforms — FDA scrutiny is rising and the fix already exists in production.
-**Goal:** engagement
+**Angle:** The CDC population finding as an operations signal for US health programs: self-reported BMI drifts one direction at scale, so a verification checkpoint belongs where BMI gates eligibility. Paired with the one procurement question I own, the BAA.
+**Claims used:** CDC in *Preventing Chronic Disease*, self-reported BMI underestimated severe obesity prevalence by 40% (5.3% vs 8.8%, 2020); it does not quantify individual error. BAA available on request; HIPAA compliance. FitXpress returns structured session data; provider makes the decision.
+**Length:** 162 / 100-170 words
 
 ---
 
-Every telehealth and GLP-1 platform I talk to has the same question right now: how do we know the BMI photo is real?
+Self-reported weight is fine, right up until it decides who gets a GLP-1 prescription.
 
-Our CEO Katerina ran the test herself — she asked ChatGPT and Gemini to generate photos of her 27 kg heavier. Both produced convincing results in seconds. Face intact. Body plausibly altered. Believable enough to pass a quick clinical review.
+Here's a number worth keeping. CDC researchers found that self-reported BMI underestimated the prevalence of severe obesity by 40% at the population level, 5.3% versus 8.8% in 2020 data.
 
-That's the gap. A camera-roll upload has no provenance. You don't know when it was taken, whether it's the actual patient, or if it was edited before arrival. FDA monitoring of telehealth weight-loss pathways is increasing. The audit answer "we looked at the photo" will hold up less and less.
+Read the condition carefully. That's a population finding. It doesn't tell you any single patient rounded their weight down. It does tell you that across thousands of intakes, the drift runs one direction.
 
-Platforms getting ahead of this are moving from passive upload to live in-session capture — photos taken through the SDK, with liveness checks and real-time pose validation. No camera-roll picker. An AI weight estimate cross-checked against self-reported BMI to flag mismatches. Timestamped audit logs exportable for compliance review.
+I'd stop treating self-report as the eligibility record. Where BMI gates enrollment, safety, or longitudinal tracking, add one independent data point at that step. A connected scale, a video-observed measurement, or a guided live scan through something like FitXpress, which returns structured session data your clinical team actually reviews.
 
-FitXpress does this inside the order flow. Results in under 45 seconds, BMI plus 80+ body measurements. A leading UK online pharmacy runs it as their BMI verification step today.
+One more for procurement: ask any vendor whether they'll sign a Business Associate Agreement (BAA) before a HIPAA-regulated pilot. If that's a maybe, keep looking.
 
-Directly applicable to US telehealth and GLP-1 platforms. Happy to share more if relevant to what your team is working through.
+Where in your intake does self-reported BMI still stand alone? 🩺
 
-Full breakdown: https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-2026-guide
+**CTA:** Full breakdown of the verification workflow is in the article, worth a read if you own intake.
 
-**CTA:** Happy to share more — link to article above
-**Hashtags:** #HealthTech #GLP1 #Telehealth #DigitalHealth #WeightLoss
+---
+
+### Design tip
+
+**Article visual:** `2026/06/banner_2-2.webp` — three smartphones showing the FitXpress verification flow, body scanning and BMI Verification results, with two blurred people behind.
+**Format:** text + photo
+**Adaptation:** Overlay the CDC stat (40%, 5.3% vs 8.8%) as a caption band under the phones so the population finding and the capture flow sit in one frame.
+**Keep:** The three-phone verification sequence and the blurred background, so the social image reads as the same product moment as the article.

@@ -91,8 +91,25 @@ BUDGET = {
     "instagram-company":  ("chars", 600, 1000),
     "facebook-company":   ("chars", 800, 1200),
     "linkedin-company":   ("words", 180, 280),
-    "_linkedin_personal": ("words", 180, 250),
+    "_linkedin_personal": ("words", 100, 170),
 }
+
+# Budgets whose upper bound is a WALL, not a target. Everywhere else the lint
+# allows 10% over the band before it hard-fails, because a 251-word post against
+# a 250-word target is not worth a rewrite round on Opus. The five personal
+# LinkedIn profiles are different: 170 is Vadim's decision of 2026-09-04, taken
+# because 240-250-word posts read like memos, and 187 would put them straight
+# back there.
+HARD_MAX = {"_linkedin_personal": 170}
+
+PERSONAL_LINKEDIN_EXCLUDE = ("linkedin-company",)
+
+
+def is_personal_linkedin(profile: str) -> bool:
+    """One of the five people. `linkedin-company` is a company page and keeps its
+    own length, register and rules — see `linkedin-post-prompts.md`."""
+    return (profile.startswith("linkedin-")
+            and profile not in PERSONAL_LINKEDIN_EXCLUDE)
 
 
 def budget_for(profile: str):
@@ -103,6 +120,16 @@ def budget_for(profile: str):
     if profile.startswith("linkedin-"):
         return BUDGET["_linkedin_personal"]
     return (None, 0, 0)
+
+
+def hard_max_for(profile: str):
+    """The ceiling that hard-fails with no tolerance, or None if the profile's
+    upper bound is a target."""
+    if profile in HARD_MAX:
+        return HARD_MAX[profile]
+    if is_personal_linkedin(profile):
+        return HARD_MAX["_linkedin_personal"]
+    return None
 
 
 # ---------------------------------------------------------------------------
@@ -291,6 +318,12 @@ def linkedin_brief(profile: str):
         head = s.splitlines()[0] if s else ""
         if head.startswith("House-rule overrides") or head.startswith("Additional resolutions") \
            or head.startswith("Rules that apply to every LinkedIn profile"):
+            shared.append("## " + s.strip())
+        # personal-only: the length ceiling, sentence length, location discipline.
+        # Same split as scripts/split-linkedin-prompts.py, which is what normally
+        # produces these files; this branch only runs when the derivative is gone.
+        if head.startswith("Rules for the five personal profiles") \
+           and is_personal_linkedin(profile):
             shared.append("## " + s.strip())
         if head.startswith(f"`{profile}`"):
             mine = "## " + s.strip()
@@ -618,10 +651,12 @@ def build_brief(slug: str, force: bool = False):
     rows = []
     for pid, plat, handle in profiles:
         unit, lo, hi = budget_for(pid)
+        cap = hard_max_for(pid)
+        span = f"{lo}-{hi} {unit}" + (f", {cap} is a wall" if cap else "")
         n = len(pmap.get(pid) or [])
         where = (os.path.relpath(os.path.dirname(pmap[pid][0]), PROJ)
                  if pmap.get(pid) else "—")
-        rows.append(f"| `{pid}` | {plat} | {handle} | {lo}-{hi} {unit} | {n} | {where} |")
+        rows.append(f"| `{pid}` | {plat} | {handle} | {span} | {n} | {where} |")
 
     out = f"""# Run brief — social pack for `{slug}`
 
@@ -663,6 +698,13 @@ Skipped this pack: {", ".join("`" + p + "`" for p in skipped_profiles()) or "non
 - Facts come only from the article of record above, and numbers only in the
   wording that file uses.
 - A post is *inspired by* the article, never a summary of it.
+- **The five personal LinkedIn profiles run on the rules in their own brief**
+  (`brand-assets/linkedin-prompts/<profile>.md`, section "Rules for the five personal
+  profiles", house rule of 2026-09-04): 100-170 words with 170 a hard ceiling, no
+  sentence over 30 words, no location announced in the first sentence and no line about
+  who you speak with all day, one thing actually taught, and a hook that is a claim
+  rather than a question. `linkedin-company` keeps 180-280 words and its corporate
+  register.
 
 ## Output contract
 

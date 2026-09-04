@@ -84,19 +84,36 @@ copy of the schema and the file's shape depended on which one wrote last.
   `brand-assets/linkedin-post-prompts.md`, which is the offline copy of Vadim's
   Doc and the source of truth. On any conflict with the config block, the brief
   wins. On any conflict with the two house rules, the house rules win.
-- Length: **words**, per that brief — `linkedin-company` 180-280 words, all personal
-  profiles 180-250 words. Char equivalents in the config are approximations for
-  counting, not the spec.
+- Length: **words**, per that brief — `linkedin-company` 180-280 words, the five
+  personal profiles **100-170 words, and 170 is a wall**. `scripts/post-lint.py` fails
+  anything over it with no tolerance, so 171 words is a rewrite round. Char equivalents
+  in the config are approximations for counting, not the spec.
 - **1-2 emoji maximum. No hashtags.** Every LinkedIn profile, without exception.
 - The post is *inspired by* the article, never a summary of it. Take the market
   trend / industry shift / business problem behind the article and speak to what it
   means for this profile's audience.
 - Strong hook, short paragraphs, easy to skim.
-- Personal profiles — first person, with regional / role angle. Company page —
-  third person or "we", never a founder's personal voice.
+- Personal profiles — first person. Company page — third person or "we", never a
+  founder's personal voice.
+- **The five personal profiles carry their own rules section** in the brief
+  ("Rules for the five personal profiles", house rule of 2026-09-04, and it wins over
+  anything in the profile section that contradicts it). It exists because the packs
+  before it read long and read like regional sales pitches:
+  1. **100-170 words.** 130 is a good post.
+  2. **Short sentences.** Most under 15 words, nothing over 30 (hard fail), and vary
+     the length — nine sentences of the same length is a machine.
+  3. **Do not announce the market.** No "Here in Australia…", no "For US teams…" as an
+     opener, no line about who you speak with every week. The lint hard-fails a geo term
+     in the first sentence and any variant of "I speak with operators across the region
+     every day". Name a country only where it changes the substance, once, in the body.
+  4. **Teach one thing** a reader who never clicks the link can use: a number with its
+     condition, a rule of thumb, a failure mode, a question to put to a vendor.
+  5. **Hook is a claim**, about ten words, concrete enough to be disagreed with. Close on
+     a question that needs the reader's own numbers. "What do you think?" is punctuation,
+     not a question.
 - Mention FitXpress **only where it fits naturally**. 3DLOOK is an enabling
   technology in the story, not the centre of it.
-- Close with the profile's own move: `linkedin-company` → CTA to read the full article; `linkedin-katerina` → invitation to explore the article; `linkedin-katya`, `linkedin-nick`, `linkedin-olena` → discussion question, then the article; `linkedin-vadim` → question or invitation to discuss.
+- Close with the profile's own move: `linkedin-company` → CTA to read the full article; `linkedin-katerina` → invitation to explore the article; `linkedin-katya`, `linkedin-nick`, `linkedin-olena` → discussion question, then the article; `linkedin-vadim` → question or invitation to discuss. On the five personal profiles the question has to pass rule 5 above — specific enough that answering it takes the reader's own numbers.
 - Never claim experience, customer stories, numbers or product capabilities the article does not support.
 
 ## How to adapt the article into a post
@@ -107,11 +124,13 @@ copy of the schema and the file's shape depended on which one wrote last.
   - `instagram-company` — human story / visual moment from the article topic
   - `facebook-company` — accessible summary + question to the audience
   - `linkedin-company` — the biggest market trend or problem in the article, with 3DLOOK positioned naturally as part of the solution. Business value over product promotion.
-  - `linkedin-katerina` — CEO founder voice: one strategic observation about the industry shift behind the article, why the market is changing, what enterprise buyers now expect. UK lens (MHRA, CQC, NHS, UK health-tech). No MT topics, no US/EU regulatory context, no sales pitch.
-  - `linkedin-vadim` — **Australian market**: what the article means for AU telehealth, digital health, fitness platforms and enterprise health operators. Operations, privacy, scalability, implementation, procurement. (Superseded the old marketing/GTM angle on 2026-08-07.)
-  - `linkedin-nick` — why the topic matters to **US** healthcare organizations: telehealth, GLP-1 programs, RPM, workflows, evidence generation, enterprise partnerships
-  - `linkedin-olena` — **Continental Europe, UK excluded**: operational, regulatory and adoption challenges for EU health and wellness companies. EU-wide framing (GDPR) yes; country-specific regulation only if the article raises it.
-  - `linkedin-katya` — **Israel and the Gulf**: why the topic matters commercially — customer problems, adoption, enterprise buying behaviour, trust, scaling digital health. No technical deep dives.
+  On the five personal profiles the market below is **who the post is written for**, not
+  what the post says. It picks the angle and the examples; it does not go in the wording.
+  - `linkedin-katerina` — CEO founder voice: one strategic observation about the industry shift behind the article, why the market is changing, what enterprise buyers now expect. Written for the UK (MHRA, CQC, NHS, UK health-tech), named only where the article supports it and the point needs it. No MT topics, no US/EU regulatory context, no sales pitch.
+  - `linkedin-vadim` — written for **Australian** telehealth, digital health, fitness platforms and enterprise health operators, about their work rather than their country. Operations, privacy, scalability, implementation, procurement. (Superseded the old marketing/GTM angle on 2026-08-07.)
+  - `linkedin-nick` — written for **US** healthcare organizations: telehealth, GLP-1 programs, RPM, workflows, evidence generation, enterprise partnerships. "For US teams…" is not an opener.
+  - `linkedin-olena` — written for **Continental Europe, UK excluded**: operational, regulatory and adoption challenges for health and wellness companies. EU-wide framing (GDPR) yes where it is the substance; country-specific regulation only if the article raises it; no UK references.
+  - `linkedin-katya` — written for **Israel and the Gulf**: why the topic matters commercially — customer problems, adoption, enterprise buying behaviour, trust, scaling digital health. No technical deep dives, and no line about talking to customers all day.
 - **Product bias** (from profile config) determines framing — FitXpress only. If the article angle doesn't fit, find the intersection or flag it.
 - **CTA** — always soft: "link in bio", "article in comments", "happy to share more". Never "Buy now".
 
@@ -201,9 +220,9 @@ Two things about this template are deliberate:
 2. **Tone of voice — from the house rules in your prompt.** Run the text through the no-go list before saving.
 3. **Do not use**: em dash in rhetorical constructions, "It's not just X, it's Y", triple parallelisms, banned words.
 4. **Profile tone.** Personal profiles — first person. Company — third person or "we".
-5. **LinkedIn: the per-profile brief is binding.** Never exceed 1-2 emoji and never add hashtags, whatever the Doc's own numbers say.
+5. **LinkedIn: the per-profile brief is binding.** Never exceed 1-2 emoji and never add hashtags, whatever the Doc's own numbers say. On the five personal profiles, never exceed **170 words**, never write a sentence over 30 words, and never open by naming a market — those three are hard fails in the lint, not preferences.
 6. **You cannot call another agent.** Your tools are Read, Write, Grep, Glob — no Task. This file used to end with "after writing, call `post-brand-checker`, PASS → save, FAIL → rewrite (max 2 iterations)", which was not executable in your context, and the run brief of 2026-08-28 had to tell nine drafters in writing not to spend turns trying. The runner does it: `scripts/post-lint.py` for everything mechanical, then `post-brand-checker` on the saved file, then `post-quality-controller` if this profile is in the pack's QC sample.
-7. **One self-check before you save, and only one:** "what in this post still reads as machine-written, and where do I actually take a position?" A post that states and never judges reads as compiled. Everything a regex can find — banned words, em dash, hashtags, emoji count, length, number drift, presumed-reaction openers, `plus` stacking capabilities, `so` introducing a benefit, `let` for allow, `by hand` for manually, `objective` about our own output, `positioned as` for a product boundary — is checked mechanically after you save. Do not spend turns on it. The full catalogue, if you want it, is `brand-assets/style-guides/ai-tells-sweep.md`; the deep pass is `social-editor` Pass 2b.
+7. **One self-check before you save, and only one** (two more questions on the five personal profiles): "what in this post still reads as machine-written, and where do I actually take a position?" — plus, for a person's profile, "what does a reader who never clicks the link now know how to do?" and "would I say the first line out loud to one person?" A post that states and never judges reads as compiled. Everything a regex can find — banned words, em dash, hashtags, emoji count, length, number drift, presumed-reaction openers, `plus` stacking capabilities, `so` introducing a benefit, `let` for allow, `by hand` for manually, `objective` about our own output, `positioned as` for a product boundary — is checked mechanically after you save. Do not spend turns on it. The full catalogue, if you want it, is `brand-assets/style-guides/ai-tells-sweep.md`; the deep pass is `social-editor` Pass 2b.
 
 ## Where to save
 

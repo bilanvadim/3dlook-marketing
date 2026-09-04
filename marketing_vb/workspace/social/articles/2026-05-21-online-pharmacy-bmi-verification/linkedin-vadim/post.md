@@ -1,35 +1,42 @@
 ---
 profile: linkedin-vadim
 platform: linkedin
-article_slug: 2026-05-21-online-pharmacy-bmi-verification
+article_slug: online-pharmacy-bmi-verification-a-2026-compliance-guide
 product: fitxpress
+format: text + photo
 status: draft
-created: 2026-06-27
+created: 2026-09-04
 ---
 
-## Post — linkedin-vadim — 2026-05-21-online-pharmacy-bmi-verification
+## Post: linkedin-vadim / online-pharmacy-bmi-verification-a-2026-compliance-guide
 
-**Source article:** `workspace/seo/articles/2026-05-21-online-pharmacy-bmi-verification/publish-package.md`
-**Angle:** Camera-roll photo uploads are not BMI verification — and AI just made that gap impossible to ignore for GTM messaging.
-**Goal:** thought leadership
+**Angle:** The article's operational point that method choice belongs to the workflow stage, not the whole program. Translated for operators running a program at scale: map stages first, attach a method to each. Distinct from the compliance, experiment, CDC and procurement-question angles.
+**Claims used:** Four remote verification methods and where each fits (connected scale for routine check-ins, guided live scan at enrollment and milestones, video-observed for cases needing observation); "Method choice should depend on the requirements of each workflow stage"; FitXpress applies the same guided capture and validation at enrollment or follow-up points.
+**Length:** 146 / 100-170 words
 
 ---
 
-Katerina ran a quick experiment earlier this year. Asked ChatGPT and Gemini to produce photos of her looking 27 kg heavier. Both delivered — in seconds. ChatGPT kept her real face, made the body wider. Gemini went further: more anatomically accurate, altered the face too. Both outputs could pass a quick clinical review.
+Picking one verification method for a whole program is a mistake.
 
-That experiment shifted how we pitch FitXpress to pharmacy buyers.
+I keep seeing teams lock in a single method at procurement, then apply it everywhere. It works fine in the middle and fights them at the edges.
 
-Before, the GTM angle leaned on "80+ measurements in under 45 seconds." True, useful — but it's a features story. The experiment gave us a sharper problem statement: the verification step most pharmacies run today isn't verification. It's file collection. Camera roll upload, clinical glance, move on. Built for convenience, not defensibility.
+The article makes a cleaner point. Method choice belongs to the workflow stage.
 
-The framing that lands better now: "Is your BMI check capturing body data, or accepting it?"
+Enrollment and milestones need a real body-data record, where a guided live smartphone scan fits. Routine check-ins need speed and low friction, where a connected scale does the job. Cases that need direct observation can go to a video call.
 
-Capture means the photo is taken inside the session — SDK, not the camera roll. Liveness checks run at capture. Clothing detection flags baggy attire. Self-reported weight gets cross-checked against what the scan implies. Timestamped, exportable audit trail.
+FitXpress runs the same guided capture and validation at enrollment and at follow-up points, which keeps the two scans comparable over time.
 
-For compliance buyers, that distinction matters more than model accuracy. They're not worried about our algorithm. They're worried about what they can show a regulator if a prescribing decision gets questioned.
+Here's the order I'd use: map your stages first, then attach a method to each one.
 
-We published a full breakdown of what defensible BMI verification looks like in 2026, including the vendor checklist I'd want answered before shortlisting anyone in this space.
+Where does a single method start to break for you, at enrollment or at the exception cases?
 
-Link in comments.
+**CTA:** Invitation to discuss, then the article for the full method breakdown.
 
-**CTA:** Link to article in comments — https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-2026-guide/
-**Hashtags:** #healthtech #onlinepharmacy #GLP1 #B2Bmarketing
+---
+
+### Design tip
+
+**Article visual:** `2026/06/banner_2-2.webp` — three smartphones showing the FitXpress verification flow (body scanning and BMI Verification results) with two blurred people in the background.
+**Format:** text + photo (single image)
+**Adaptation:** Crop to one phone showing the BMI Verification result, matching a post about one method inside a multi-stage flow.
+**Keep:** The FitXpress flow screens and the blurred background people, which signal the privacy posture and tie the post back to the article.

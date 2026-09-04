@@ -1,37 +1,42 @@
 ---
 profile: linkedin-katerina
 platform: linkedin
-article_slug: 2026-05-21-online-pharmacy-bmi-verification
+article_slug: online-pharmacy-bmi-verification-a-2026-compliance-guide
 product: fitxpress
+format: text + photo
 status: draft
-created: 2026-06-27
+created: 2026-09-04
 ---
 
-## Post — linkedin-katerina — 2026-05-21-online-pharmacy-bmi-verification
+## Post: linkedin-katerina / online-pharmacy-bmi-verification-a-2026-compliance-guide
 
-**Source article:** `workspace/seo/articles/2026-05-21-online-pharmacy-bmi-verification/publish-package.md`
-**Angle:** AI tools have made photo manipulation so trivially cheap that the entire upload-based BMI verification model is broken — and the industry hasn't caught up yet.
-**Goal:** thought leadership | engagement
+**Angle:** The UK regulatory anchor that only this profile owns: the February 2025 GPhC guidance already answered the verification debate, and enterprise buyers are now redesigning the order flow around it. A founder market-shift observation, distinct from the twitter method reframe, the experiment story, the CDC framing and the procurement question.
+**Claims used:** GPhC Feb 2025 guidance ("independently verify a person's weight, height, and/or BMI"; "information supplied solely through an online questionnaire is insufficient"). FitXpress live in-session capture and structured, auditable session records.
+**Length:** 148 / 100-170 words
 
 ---
 
-I ran the experiment myself.
+A regulator already settled the question most prescribing teams are still debating.
 
-I asked ChatGPT to produce a photo of me 27 kg heavier. It made my body visibly wider while keeping my real face. Then I tried Gemini — anatomically more accurate, altered the face too. Both took seconds. Both could pass a quick clinical glance.
+In February 2025, the UK General Pharmaceutical Council said prescribers must independently verify a person's weight, height, and BMI. Information from an online questionnaire alone is insufficient.
 
-That confirmed what UK pharmacy teams have been raising: photo manipulation isn't an edge case in GLP-1 prescribing flows. It's a pattern. The technology to fake it is cheaper and faster than the technology most pharmacies use to detect it.
+Read that line carefully. A typed number and an uploaded photo no longer clear the bar on their own.
 
-The structural problem isn't the patient. It's the method.
+What interests me is where this pushes the market. Verification is becoming part of how the order flow is built. The old model reviewed a file after the fact. The new one captures evidence live, as a step in checkout.
 
-Camera-roll uploads were built for a visual sanity check, not clinical verification. A reviewer can't reliably catch a well-edited image at volume. AI-generated bodies don't look obviously wrong. They look like bodies.
+Enterprise buyers are already there. They ask whether capture happens in-session and whether the record still holds up under audit months later.
 
-What changes the equation isn't better image review. It's moving to a live, in-session capture event — photos taken inside the flow, not pulled from the camera roll. Liveness checks. An independent body estimate the system derives itself, so self-reported weight has something concrete to be checked against. An audit record a compliance team can stand behind.
+That is where FitXpress sits.
 
-GPhC scrutiny of online weight-loss prescribing is rising. The FDA is watching the same gap in US telehealth. Both are circling what clinical teams already face: what does defensible BMI verification look like now?
+If you run a distance-prescribing flow today, one number is worth knowing: how much of your BMI evidence would survive an independent audit? 🩺
 
-Full breakdown: 3dlook.ai/blog/online-pharmacy-bmi-verification-2026-guide
+**CTA:** Invitation to explore the full article, closed with an audit question that needs the reader's own numbers.
 
-Curious what you think.
+---
 
-**CTA:** Soft — link to article + "Curious what you think"
-**Hashtags:** #GLP1 #DigitalHealth #OnlinePharmacy #AIRisk
+### Design tip
+
+**Article visual:** `2026/06/banner_2-2.webp` — three smartphones showing the FitXpress verification flow (body scanning and BMI Verification results, two blurred people in the background).
+**Format:** text + photo
+**Adaptation:** Crop to one phone showing the BMI Verification result, and set the post's core line ("verification is a step in the flow, not a file reviewed afterward") as a restrained overlay.
+**Keep:** The FitXpress verification-flow UI and the blurred-background composition, so the post reads as the same product story as the article.

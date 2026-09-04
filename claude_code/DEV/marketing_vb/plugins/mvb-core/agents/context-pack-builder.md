@@ -180,7 +180,7 @@ context_pack:
 
   tone:
     voice: "expert, data-driven, practical, no hype"
-    length: "LinkedIn: 1200-1800 chars"
+    length: "LinkedIn company: 180-280 words · LinkedIn personal (5 people): 100-170 words, 170 hard"
     format: "hook in first 2 lines, 1-2 proof points, soft CTA"
     dont: "no clickbait, no emoji flood, no generic openers"
 

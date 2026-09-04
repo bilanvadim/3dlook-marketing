@@ -87,8 +87,10 @@ run, is most of what this command used to cost.
    ```
 
    Exit 1 → quote the hard fails back to `post-drafter`; do not rewrite the post yourself.
-   Warnings are informational. Then run `post-brand-checker` on the file; FAIL → one more
-   round, two maximum.
+   Warnings are informational. On the five personal LinkedIn profiles the lint also gates
+   the shape set on 2026-09-04: 170 words is a wall, no sentence over 30 words, no geo
+   marker in the first sentence, no "I speak with … every week". Then run
+   `post-brand-checker` on the file; FAIL → one more round, two maximum.
 
 4. **Quality control, sampled.**
 

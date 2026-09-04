@@ -36,6 +36,11 @@ USAGE
     scripts/post-lint.py <slug> --all                  # every profile in the pack
     ... [--summary] [--gate] [--json]
 
+Since 2026-09-04 it also gates the SHAPE of a personal LinkedIn post, which is the
+other half of what Vadim asked for that day and the half a regex can settle: the
+170-word ceiling with no tolerance, no sentence over 30 words, no geo marker in the
+first sentence, and no "I speak with operators across the region every week".
+
 `--gate` exits 1 when there is at least one hard fail, so a runner can branch on
 it. Without it the exit code is 0 and the JSON is a diagnostic — same contract as
 `detect-ai-tells.py`, which this script calls for the copy layer instead of
@@ -60,7 +65,7 @@ PROJ = os.path.dirname(HERE)                                  # …/marketing_vb
 sys.path.insert(0, HERE)
 from social_pack import (                                     # noqa: E402
     split_frontmatter, extract_body, active_profiles, resolve_source,
-    published_slug, budget_for,
+    published_slug, budget_for, hard_max_for, is_personal_linkedin,
 )
 DETECTOR = os.path.join(PROJ, "brand-assets", "style-guides", "scripts", "detect-ai-tells.py")
 CONFIG = os.path.join(PROJ, "brand-assets", "social-profiles-config.md")
@@ -151,6 +156,112 @@ def check_numbers(body: str, source_text: str):
 
 
 # ---------------------------------------------------------------------------
+# shape of a personal LinkedIn post (house rule, 2026-09-04)
+# ---------------------------------------------------------------------------
+# Vadim, on the packs shipped before this date: the five people's posts read too
+# long, and they opened by announcing a market ("I speak with operators across
+# Israel and the Gulf every week"), which he described as actively off-putting.
+# `linkedin-post-prompts.md` now carries the rules; these three checks are the
+# half a regex can decide, so the LLM gates keep only the judgment.
+#
+# Company accounts are NOT checked here. A company page announcing the region it
+# serves is doing its job; a person doing it sounds like a brochure.
+
+# Sentence limits, in words. `MAX_SENTENCE` hard-fails, `WARN_SENTENCE` warns —
+# the brief says "most under 15, nothing over 30".
+MAX_SENTENCE, WARN_SENTENCE = 30, 25
+MAX_AVG_SENTENCE, WARN_AVG_SENTENCE = 20, 17
+GEO_DENSITY_WARN = 3
+
+# Country, region and nationality markers, plus the four regulators that name a
+# country by proxy. HIPAA and GDPR are deliberately absent: they are the substance
+# of a privacy point, not a way of telling the reader where they live.
+_GEO_WORDS = (
+    "australia", "australian", "australasia", "aussie", "new zealand",
+    "united kingdom", "britain", "british", "england", "scotland", "wales",
+    "europe", "european", "continental europe", "germany", "german", "france",
+    "french", "netherlands", "dutch", "spain", "italy", "nordics", "nordic",
+    "scandinavia", "poland", "turkey", "turkish",
+    "israel", "israeli", "the gulf", "gulf states", "middle east", "emirates",
+    "dubai", "abu dhabi", "saudi", "saudi arabia", "qatar", "kuwait", "bahrain",
+    "oman", "canada", "canadian", "america", "american", "united states",
+)
+# Case-SENSITIVE: these are only geo markers in upper case. Lower-cased "us" is
+# the pronoun, and half the posts in the corpus contain it.
+_GEO_ACRONYMS = ("UK", "US", "USA", "EU", "AU", "ANZ", "GCC", "UAE", "APAC",
+                 "DACH", "NHS", "MHRA", "CQC", "TGA")
+
+_GEO_RE = re.compile(r"(?<!\w)(" + "|".join(re.escape(w) for w in _GEO_WORDS)
+                     + r")(?!\w)", re.I)
+_GEO_ACR_RE = re.compile(r"(?<![\w-])(" + "|".join(_GEO_ACRONYMS) + r")(?![\w-])")
+
+# "I speak with X every day" and its family. The stance is right and it belongs in
+# the brief; stating it in the post is the tell.
+_CLICHE = (
+    (r"\b(?:I|we)\s+(?:speak|talk|meet|sit|work)\s+(?:with|to)\b[^.!?\n]{0,70}"
+     r"\b(?:every|each)\s+(?:single\s+)?(?:day|week|month)\b", "I speak with … every day"),
+    (r"\b(?:every|each)\s+(?:single\s+)?(?:day|week)\b[^.!?\n]{0,50}"
+     r"\b(?:I|we)\s+(?:speak|talk|hear|meet)\b", "every week I speak with …"),
+    (r"\bin\s+(?:my|our)\s+(?:conversations|calls|meetings|conversations)\s+with\b",
+     "in my conversations with …"),
+    (r"\b(?:I|we)\s+spend\s+(?:my|our|every)\s+day", "I spend my days …"),
+    (r"\b(?:here|over here|back here)\s+in\s+[A-Z]", "Here in <place>"),
+    (r"\bhaving\s+spent\s+[^.!?\n]{0,40}\b(?:talking|speaking)\s+(?:with|to)\b",
+     "having spent … talking with"),
+)
+_CLICHE_RE = [(re.compile(p, re.I), label) for p, label in _CLICHE]
+
+
+def sentences(body: str):
+    """The body as sentences. A LinkedIn post is written in one-line paragraphs,
+    plenty of which carry no terminal punctuation at all, so a line break ends a
+    sentence as surely as a period does."""
+    out = []
+    for line in body.splitlines():
+        line = re.sub(r"^\s*(?:[-*+]|\d+[.)])\s+", "", line.strip())
+        if not line:
+            continue
+        # split after . ! ? when the next thing starts a new sentence. Decimals
+        # ("1.5 cm") and "e.g. two" are safe: the lookahead wants a capital or a
+        # quote, not a digit or a lower-case letter.
+        for s in re.split(r"(?<=[.!?])[\s]+(?=[\"'“(\[A-Z])", line):
+            s = s.strip()
+            if s:
+                out.append(s)
+    return out
+
+
+def _wc(s: str) -> int:
+    return len(re.findall(r"\b[\w'-]+\b", s))
+
+
+def sentence_stats(body: str):
+    """(avg, longest, [(words, text), …] over the warn threshold)."""
+    ss = sentences(body)
+    if not ss:
+        return 0.0, 0, []
+    counts = [(_wc(s), s) for s in ss]
+    counts = [(n, s) for n, s in counts if n]
+    if not counts:
+        return 0.0, 0, []
+    avg = sum(n for n, _ in counts) / len(counts)
+    longest = max(n for n, _ in counts)
+    over = sorted((c for c in counts if c[0] > WARN_SENTENCE), reverse=True)
+    return round(avg, 1), longest, over
+
+
+def geo_hits(text: str):
+    """Every geo marker in the text, in order, as written."""
+    hits = [m.group(1) for m in _GEO_RE.finditer(text)]
+    hits += [m.group(1) for m in _GEO_ACR_RE.finditer(text)]
+    return hits
+
+
+def voice_cliches(body: str):
+    return [label for rx, label in _CLICHE_RE if rx.search(body)]
+
+
+# ---------------------------------------------------------------------------
 # detector bridge
 # ---------------------------------------------------------------------------
 
@@ -229,14 +340,22 @@ def lint(path: str, source_text: str = "", source_slug: str = ""):
     # target, so being inside 10% of it is a warning. `linkedin-katerina` shipped
     # at 251 against 180-250 on the measured pack: worth telling someone, not
     # worth a rewrite round on Opus.
+    #
+    # The five personal LinkedIn profiles are the exception: their upper bound is
+    # a WALL (`hard_max_for`), because the 170 words are Vadim's answer to posts
+    # that read too long, and 10% of tolerance is 17 words back in that direction.
     unit, lo, hi = budget_for(profile)
+    cap = hard_max_for(profile)
     tweets = re.split(r"^\s*(?:\[Tweet\s*\d+/\d+\]|---)\s*$", body, flags=re.M) \
         if re.search(r"\[Tweet\s*\d+/\d+\]", body) else [body]
     tweets = [t.strip() for t in tweets if t.strip()]
     words = len(re.findall(r"\b[\w'-]+\b", body))
     chars = max((len(t) for t in tweets), default=0)
     if unit == "words" and body:
-        if words > hi * 1.10 or words < lo * 0.90:
+        if cap and words > cap:
+            H("length", f"{words} words, the ceiling on this profile is {cap} and it is "
+                        f"hard (house rule 2026-09-04, no tolerance) — cut {words - cap}")
+        elif words > hi * 1.10 or words < lo * 0.90:
             H("length", f"{words} words, brief says {lo}-{hi}")
         elif words > hi or words < lo:
             W("length", f"{words} words, brief says {lo}-{hi}")
@@ -247,6 +366,46 @@ def lint(path: str, source_text: str = "", source_slug: str = ""):
                         f" chars, hard limit {hi}")
         elif chars < lo:
             W("length", f"{chars} chars, brief says {lo}-{hi}")
+
+    # 3b. the shape of a personal LinkedIn post. Five profiles, three checks, all
+    # of them things Vadim named on 2026-09-04. See the section header above for
+    # why the company page is exempt.
+    avg_sent, longest_sent, long_sents = (0.0, 0, [])
+    geo, geo_first = [], []
+    if body and is_personal_linkedin(profile):
+        avg_sent, longest_sent, long_sents = sentence_stats(body)
+        if longest_sent > MAX_SENTENCE:
+            worst = long_sents[0][1] if long_sents else ""
+            H("sentence_length", f"{longest_sent}-word sentence, the limit is "
+                                 f"{MAX_SENTENCE}: \u201c{worst[:110]}…\u201d")
+        elif longest_sent > WARN_SENTENCE:
+            W("sentence_length", f"longest sentence {longest_sent} words "
+                                 f"(brief wants most under 15)")
+        if avg_sent > MAX_AVG_SENTENCE:
+            H("sentence_length", f"average sentence {avg_sent} words, the limit is "
+                                 f"{MAX_AVG_SENTENCE} — the post is written in paragraphs, "
+                                 "not in sentences")
+        elif avg_sent > WARN_AVG_SENTENCE:
+            W("sentence_length", f"average sentence {avg_sent} words (brief wants most "
+                                 "under 15)")
+
+        # location discipline. The FIRST sentence is the one Vadim reacted to: a
+        # post that opens by naming a market reads as a regional pitch before it
+        # has said anything. Naming it once in the body, where it changes the
+        # substance, is allowed by the brief.
+        ss = sentences(body)
+        geo = geo_hits(body)
+        geo_first = geo_hits(ss[0]) if ss else []
+        if geo_first:
+            H("location", f"first sentence names {', '.join(sorted(set(geo_first)))} — "
+                          "the market is who the post is FOR, not how it opens "
+                          "(house rule 2026-09-04)")
+        elif len(geo) >= GEO_DENSITY_WARN:
+            W("location", f"{len(geo)} geo mentions ({', '.join(geo[:5])}) in a post this "
+                          "short — the brief allows one, where it changes the substance")
+        for label in voice_cliches(body):
+            H("voice_cliche", f"\u201c{label}\u201d — that is the stance the brief asks "
+                              "for, not a line that goes in the post")
 
     # 4. house rules — hard, and they outrank every per-profile brief
     tags = HASHTAG.findall(body)
@@ -283,7 +442,10 @@ def lint(path: str, source_text: str = "", source_slug: str = ""):
         "warnings": warn,
         "metrics": {
             "words": words, "chars": chars,
-            "unit": unit, "budget": [lo, hi],
+            "unit": unit, "budget": [lo, hi], "hard_max": cap,
+            "avg_sentence_words": avg_sent or None,
+            "longest_sentence_words": longest_sent or None,
+            "geo_mentions": len(geo) if body and is_personal_linkedin(profile) else None,
             "hashtags": len(tags), "emoji": len(emoji),
             "ai_density_per_1000_words": det.get("ai_density_per_1000_words"),
             "severity": det.get("severity"),
@@ -297,9 +459,14 @@ def summarise(res):
     m = res.get("metrics") or {}
     if m.get("unit"):
         out.append(f"  len: {m['words']} words / {m['chars']} chars "
-                   f"(budget {m['budget'][0]}-{m['budget'][1]} {m['unit']}) · "
+                   f"(budget {m['budget'][0]}-{m['budget'][1]} {m['unit']}"
+                   + (f", ceiling {m['hard_max']}" if m.get("hard_max") else "") + ") · "
                    f"#{m['hashtags']} hashtags · {m['emoji']} emoji · "
                    f"ai-density {m.get('ai_density_per_1000_words')}")
+        if m.get("avg_sentence_words"):
+            out.append(f"  shape: sentences avg {m['avg_sentence_words']} / longest "
+                       f"{m['longest_sentence_words']} words · "
+                       f"{m.get('geo_mentions')} geo mentions")
     for h in res["hard_fails"]:
         out.append(f"  ✗ [{h['check']}] {h['detail']}")
     for w in res["warnings"]:

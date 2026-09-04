@@ -4,12 +4,13 @@
 
 ## House-rule overrides (decided by Vadim, 2026-08-07)
 
-The Doc conflicts with two standing 3DLOOK rules. **The house rules win** — these are the only two places where this file does not follow the Doc verbatim:
+The Doc conflicts with three standing 3DLOOK rules. **The house rules win** — these are the only places where this file does not follow the Doc verbatim:
 
 | # | Doc says | House rule wins | Why |
 |---|----------|-----------------|-----|
 | 1 | 6–8 hashtags (Main page, Kateryna Boichuk) | **No hashtags on any profile.** `hashtags: none` | Hashtags were deliberately removed from all 9 social profiles on 2026-07-01 (`docs/changelog.md`, that date; the history moved out of CLAUDE.md §13 on 2026-09-01). |
 | 2 | 3–5 emoji (Main page), max 5 (personal profiles) | **1–2 emoji max**, and only where they earn their place | CLAUDE.md §6: no emoji-flood. The Doc's number is a ceiling, not a target. |
+| 3 | 180–250 words on the five personal profiles | **100–170 words, and 170 is a hard ceiling** | Vadim, 2026-09-04: at 240–250 words the personal posts read long, and nobody reads a personal LinkedIn post that looks like a memo. `linkedin-company` is unaffected and keeps 180–280. |
 
 Everything else in the Doc is authoritative for LinkedIn and overrides the older per-profile `tone` / `content_types` text where they disagree.
 
@@ -19,7 +20,8 @@ Everything else in the Doc is authoritative for LinkedIn and overrides the older
 - **Katerina keeps her UK lens.** The Doc does not mention geography for her; it does not forbid one either. The UK market focus (MHRA, CQC, NHS, UK health-tech ecosystem) set on 2026-07-01 stays layered on top of the Doc's founder-voice instructions.
 - **Kateryna Boichuk's market widens** from Israel to **Israel and the Gulf**, per the Doc.
 - **Olena is Continental Europe, UK excluded.** The Doc bans country-specific regulation unless the article raises it; EU-wide framing (GDPR) is still fine. Her old Mobile Tailor / fashion-tech content types are dropped — all social profiles have been 100% FitXpress since 2026-07-01.
-- **Word counts are the Doc's unit.** Char equivalents (~6.5 chars/word) are given in `social-profiles-config.md` for agents that count characters.
+- **Word counts are the Doc's unit.** Char equivalents (~6.5 chars/word) are given in `social-profiles-config.md` for agents that count characters. The Doc's numbers still stand for `linkedin-company` (180–280); the five personal profiles run on the house rule of **100–170 words** (2026-09-04, table row 3).
+- **The five personal profiles have their own rules section** (below): length, sentence length, location discipline, teaching, and the hook. It was added 2026-09-04 and it wins over anything in a profile section that contradicts it. `linkedin-company` does not receive it.
 
 ---
 

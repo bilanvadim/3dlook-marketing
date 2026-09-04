@@ -1,0 +1,69 @@
+{
+  "article_slug": "2026-05-21-online-pharmacy-bmi-verification",
+  "article_path": "workspace/seo/articles/2026-05-21-online-pharmacy-bmi-verification/publish-package.md",
+  "product": "fitxpress",
+  "created": "2026-06-27",
+  "drafts": [
+    {
+      "profile": "twitter-company",
+      "file": "workspace/social/articles/2026-05-21-online-pharmacy-bmi-verification/twitter-company/post.md",
+      "status": "draft",
+      "needs_visual": false
+    },
+    {
+      "profile": "instagram-company",
+      "file": "workspace/social/articles/2026-05-21-online-pharmacy-bmi-verification/instagram-company/post.md",
+      "status": "draft",
+      "needs_visual": true
+    },
+    {
+      "profile": "facebook-company",
+      "file": "workspace/social/articles/2026-05-21-online-pharmacy-bmi-verification/facebook-company/post.md",
+      "status": "draft",
+      "needs_visual": false
+    },
+    {
+      "profile": "linkedin-company",
+      "file": "workspace/social/articles/2026-05-21-online-pharmacy-bmi-verification/linkedin-company/post.md",
+      "status": "draft",
+      "needs_visual": false
+    },
+    {
+      "profile": "linkedin-katerina",
+      "file": "workspace/social/articles/2026-05-21-online-pharmacy-bmi-verification/linkedin-katerina/post.md",
+      "status": "draft",
+      "needs_visual": false
+    },
+    {
+      "profile": "linkedin-vadim",
+      "file": "workspace/social/articles/2026-05-21-online-pharmacy-bmi-verification/linkedin-vadim/post.md",
+      "status": "draft",
+      "needs_visual": false
+    },
+    {
+      "profile": "linkedin-nick",
+      "file": "workspace/social/articles/2026-05-21-online-pharmacy-bmi-verification/linkedin-nick/post.md",
+      "status": "draft",
+      "needs_visual": false
+    },
+    {
+      "profile": "linkedin-olena",
+      "file": "workspace/social/articles/2026-05-21-online-pharmacy-bmi-verification/linkedin-olena/post.md",
+      "status": "draft",
+      "needs_visual": false
+    },
+    {
+      "profile": "linkedin-katya",
+      "file": "workspace/social/articles/2026-05-21-online-pharmacy-bmi-verification/linkedin-katya/post.md",
+      "status": "draft",
+      "needs_visual": false
+    }
+  ],
+  "ready_for_review": true,
+  "skipped_profiles": [
+    {
+      "profile": "linkedin-whitney",
+      "reason": "posts_per_week: 0 — disabled as of 2026-06-27"
+    }
+  ]
+}
