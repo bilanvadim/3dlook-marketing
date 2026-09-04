@@ -1,0 +1,192 @@
+---
+slug: 2026-09-03-manual-vs-digital-intake-occupational-health
+product: fitxpress
+status: edited
+revision: 2
+word_count: 2120
+author: Assel Sekerova
+hub: Occupational Health Screening (Hub 8)
+cluster: Comparison
+intent: GEO/comparison
+action_type: create-net-new
+primary_keyword: manual vs digital intake
+editing_passes: 5
+review: review-1.md
+review_decisions: review-1-decisions.md
+detector_verdict: "NOT executed this session — python/awk/chmod are blocked by the sandbox/permission gate in this non-interactive run (the approval prompt cannot be answered here). Manual gate-by-gate check clean; MUST be re-run before publish."
+lint_verdict: "NOT executed this session — same reason. Manual verification against every article_lint.py gate recorded in log.md. word_count is a hand count of the prose_words definition (frontmatter/comments/pipes/URLs stripped) via a flattened wc; the machine gate must confirm it lands in the 1742-2357 band."
+claims_verified: [FX-001, FX-003, FX-006, FX-007, FX-008, FX-009, FX-014]
+claims_withheld: [FX-004]
+external_sources:
+  - "OSHA Appendix C, Respirator Medical Evaluation Questionnaire (Mandatory) - quoted in v1 run 2026-09-03"
+  - "CDC/NCHS NHANES Anthropometry Procedures Manual - protocol read directly in v1 run 2026-09-03"
+  - "EEOC enforcement guidance on pre-employment disability-related questions and medical examinations - fetched v1 run 2026-09-03"
+changes_summary: |
+  Edit pass over the rev-2 draft (draft.md), written against the VERBATIM review (review-1.md) and
+  review-1-decisions.md §0-F. Rev-2 structure preserved: new Section 5 workflow table (reviewer's
+  verbatim); FitXpress merged into a single late Section 8; reviewer's own eight-row metrics table
+  in Section 7 (header "What to establish before implementation"); five implementation questions
+  restored as a list; body-composition inventory cut; the ungrounded OSHA inference and the
+  Privacy-FAQ placeholder cut; comparison table rebuilt (A4); NHANES/OSHA/EEOC narrowed (A6);
+  BLS figure removed (A6); phase split (A2); scope line early (A3); compliance stated with
+  compliance.md precision (A7).
+  Editor changes this pass:
+  - Pass 3 LENGTH: the rev-2 draft measured ~2,655 prose words (the gate counts every table cell,
+    and three tables barely moved the count below v1's 2,745). The reviewer's #1 instruction is a
+    reduction to 1,900-2,200. Prose was tightened across every section (intro, the NHANES and OSHA
+    passages the reviewer said were over-weighted, the two accuracy paragraphs, the FAQ answers) to
+    land near 2,120 while keeping the three tables verbatim, the scope note, the verbatim FX-001 and
+    FX-003 formulations, and the five implementation questions.
+  - Pass 4 terminology: the "so" introducing a result removed from Section 1; two corrective
+    negations avoided ("adds slots but leaves the intake time unchanged" not "adds slots, not the
+    intake time"; the FAQ 4 boundary stated as two sentences).
+  - Pass 3b strategy: the Section 2 "carries the whole of intake" coverage claim (Review item 2)
+    reworded to "keeps the whole process in the clinic".
+self_check: |
+  - "positioned as" appears once (the licensed medical-device sentence). BMI/US/EU bare; HIPAA,
+    GDPR, NHANES, OSHA expanded at first use; no "BMR" token after the inventory cut.
+  - Keeps the sharpest self-argument: a superiority claim over a tape measure is out of reach,
+    because the tape is the reference. Not a clean sweep: manual holds coverage, access and fallback.
+  - The two verbatim reviewer tables (workflow, metrics) and the FX-001/FX-003 formulations are
+    unchanged by the length pass.
+  - MECHANICAL GATE NOT RUN. python/awk/chmod are blocked this session; article_lint.py and
+    detect-ai-tells.py could not execute. Every gate checked by hand against the script logic and
+    recorded in log.md. A machine run is REQUIRED before publish, and the exact prose_words count
+    is the one number the hand check cannot fully guarantee. Flagged in the return.
+---
+
+# Manual vs Digital Intake in Occupational Health Screening: Which Method Fits Which Workflow
+
+## The intake step is where screening programs lose time
+
+Framed as manual vs digital intake, the question sounds like a software preference. Inside a screening program it is an operations question about a fixed appointment slot. A candidate fills in a health questionnaire, a medical assistant takes body measurements with a tape, someone transcribes both into the record, and only then can the clinician review anything. The examination is what the schedule plans for. The intake around it is what runs long.
+
+Four costs come out of that step: throughput against fixed appointment capacity, missing or incomplete intake data, rescreens from records that arrive unusable, and documentation that fails to line up across sites or vendor partners. Adding clinic capacity adds slots but leaves the intake time inside each slot unchanged, and whether it relieves the bottleneck depends on where the time is lost.
+
+Two questions decide the method: which intake steps a remote channel can carry, and which programs gain enough to justify moving them. The category, its buyer profiles and the end-to-end workflow sit in the [occupational health screening software hub](https://3dlook.ai/content-hub/occupational-health-screening-software/).
+
+> ***Scope note.*** *In this comparison, digital intake means the whole pre-appointment workflow. FitXpress provides the remote body-measurement component; questionnaire collection, modality-specific testing, examination and clinical review remain within the customer's other systems. FitXpress does not perform medical examinations, make fitness-for-duty or clearance determinations, or serve as a basis for hiring or employment decisions. It is not positioned as a medical device. The determination stays with the licensed provider and with employer policy.*
+
+## Short answer: what each intake method covers
+
+- **Manual intake** is a written or paper health questionnaire, a staff-administered tape measurement, and transcription into the record, all at or around the appointment.
+- **Digital intake** collects the same questionnaire content through a structured remote channel before the appointment, with body measurement captured by a guided smartphone scan from two photos in under 45 seconds. <!-- claim: FX-006 --> <!-- claim: FX-007 -->
+- **The overlap is partial.** A remote channel can carry the questionnaire and the body measurement. Testing and the examination stay in the clinic.
+- **The cost sits in that overlap.** Those two components are captured and transcribed under appointment-time pressure, which exposes them to missing or inconsistent fields, and an incomplete record can trigger a rescreen.
+- **Neither method wins outright.** Manual, on-site intake keeps the whole process in the clinic and asks nothing of the candidate beyond attendance. Digital intake standardizes the part that repeats across a program.
+
+Clinic software calls the same shift digital patient intake: paper patient intake forms replaced by structured pre-visit capture. Occupational health adds one requirement, the confidentiality routing of the health questionnaire, since these intake forms have a designated reviewer.
+
+## The three phases of occupational health intake
+
+Treating occupational health intake as one step is what makes the comparison confusing. The occupational health intake process runs in three phases, and a remote channel reaches only the first.
+
+1. **Pre-appointment intake.** Questionnaire, required documents, and the eligible body measurements. This is the phase a remote channel can carry.
+2. **On-site screening.** Equipment-based testing, such as drug screening, vision, hearing and functional capacity, and the examination itself. This needs the person present.
+3. **Clinical review.** The provider reads the record and, where the program calls for it, makes the determination.
+
+> **Figure 1.** The three phases of occupational health intake, with the pre-appointment phase marked as the only part a remote channel can carry.
+
+Body measurement is where manual practice varies most. The [anthropometry procedures manual](https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/manuals/2021-Anthropometry-Procedures-Manual-508.pdf) for the National Health and Nutrition Examination Survey (NHANES) sets the waist measurement out in detail, down to the landmark, the tape tension and a second examiner's check. It illustrates the training, landmark identification and quality-control that producing standardized manual measurements requires.
+
+Confidentiality routing can matter too. Appendix C to the Occupational Safety and Health Administration (OSHA) respiratory protection standard bars the employer and the supervisor from reading a worker's answers and has the worker deliver the form to the reviewing health care professional. That is specific to respirator medical evaluations, not a general rule, but any channel carrying such a document, paper or digital, meets the same requirement.
+
+FitXpress does not administer that questionnaire, and the medical evaluation and the clearance determination stay with the reviewing health care professional. Where the body-measurement step moves to a digital channel, the output arrives as structured figures instead of a value written onto a form.
+
+## Manual vs digital intake, compared dimension by dimension
+
+| Dimension | Manual intake | Digital intake |
+|---|---|---|
+| Where the step happens | In the clinic, inside the appointment slot | Remotely, before the appointment |
+| Who performs the body measurement | Clinic staff, with a tape | The candidate or employee, guided on their own phone |
+| Consistency across staff, sites and vendors | Varies with technique, landmark marking and local training | A standardized guided procedure, subject to capture quality and validation requirements |
+| Record format | May require manual entry or scanning; structure depends on the receiving system | Can arrive in a structured format when the integration supports it |
+| Questionnaire confidentiality routing | Depends on local paper handling | Depends on permissions, system configuration and the program's data-handling design |
+| Time consumed inside the appointment slot | Questionnaire, measurement and transcription | Testing and examination only |
+| Phases of intake the method reaches | All three, since the person is already on site for testing, examination and review | Pre-appointment intake only: the questionnaire and the eligible body measurements |
+| Access requirement for the person screened | Attendance and completion of the required on-site intake steps | A smartphone, a network connection, and the ability to complete a guided capture |
+| Setup and change-management cost | Lower incremental implementation cost; continuing staff and administration requirements | Integration, configuration and staff retraining before the first scan |
+| Ongoing labor | Staff time at each appointment for measurement and transcription | Less in-appointment staff time; configuration and support effort instead |
+| Exception handling | Handled in person during the visit | Needs a defined path for incomplete or failed captures |
+| Integration dependency | None; the record lives wherever it is filed | Depends on integration with the receiving system |
+| Fallback availability | Is itself the fallback | Requires the manual path to stay open |
+| Data-entry correction | Transcription errors corrected by re-entry | Fewer transcription steps; correction depends on the receiving system |
+
+Moving eligible intake steps before the appointment can reduce in-appointment collection and transcription. The effect depends on completion rates, fallback volume, integration quality and existing rescreen causes.
+
+Manual intake still holds three dimensions. It reaches all three phases, since the person is already present for testing, examination and review; it asks nothing of them beyond attendance; and it is itself the fallback. Digital intake concentrates its gains on consistency and on the format the record arrives in, the dimensions a multi-site program cares about most. Those rows are the inputs a program-level decision turns on.
+
+## How the workflows differ
+
+Placed side by side, the two models run the same intake steps in a different place and order.
+
+| Manual/on-site intake | Structured pre-appointment intake |
+| :- | :- |
+| Forms completed at or around the appointment | Forms completed through the program's intake system |
+| Staff perform required measurements | Eligible measurements captured remotely |
+| Information is entered or transcribed | Structured data is validated and transferred |
+| Missing items are handled during or after the visit | Exceptions are identified before the visit |
+| Tests and examination follow | Tests and examination remain on site |
+
+The operational difference is the fourth row: a structured pre-appointment path can surface exceptions before the visit instead of during it, while tests and the examination stay on site under both models.
+
+## A decision framework: which intake method fits which program
+
+Manual intake remains the right answer in several cases, and switching without checking them wastes money. Single-site or low-volume programs where the appointment slot is not the constraint. Populations without reliable smartphone or network access, common in industrial and seasonal workforces. Intake dominated by history, symptom and functional content, where body measurement is a minor line item. Workflows where the measurement is part of the examination and the clinician wants it in hand. Programs with no downstream system able to receive a structured record.
+
+A digital channel earns its cost under different conditions: high candidate or employee volume against fixed appointment capacity, several sites or vendor partners needing comparable records, a documented rescreen volume traceable to missing or inconsistent intake data, and documentation that has to hold across reporting periods.
+
+For most programs the answer is hybrid: the questionnaire and the body measurement move to a remote channel, testing and examination stay in the clinic, and the split is decided component by component.
+
+One legal boundary sets the timing, and in the US it is explicit. Under [Equal Employment Opportunity Commission (EEOC) enforcement guidance](https://www.eeoc.gov/laws/guidance/enforcement-guidance-preemployment-disability-related-questions-and-medical), an employer may not ask disability-related questions or conduct medical examinations until after a conditional job offer. This is US-specific, and other jurisdictions set their own timing. Choosing between manual vs digital intake decides a method. It never decides a candidate.
+
+## How to evaluate the change
+
+A change to intake is worth evaluating against a small set of numbers, each with a baseline taken before the pilot.
+
+| Metric | What to establish before implementation |
+| :- | :- |
+| Intake time during the appointment | Current median time per appointment |
+| Pre-appointment completion | Share of records complete before arrival |
+| Missing-data rate | Fields most frequently absent |
+| Rescreen rate | Volume and reasons for repeat appointments |
+| Manual fallback rate | Share unable to complete remote intake |
+| Correction or re-entry rate | Records requiring staff intervention |
+| Multi-site consistency | Defined completeness and repeatability criteria |
+| Integration success | Share transferred without manual transcription |
+
+Five questions sit alongside the numbers, worth answering before choosing a vendor:
+
+1. Which intake steps actually move to the remote channel, and which stay on site?
+2. What is the current rescreen rate, and what causes it?
+3. Can the downstream system receive a structured record, or will someone retype it?
+4. What is the documented path for a person who cannot complete a remote capture?
+5. How was repeatability measured: over how many repeated scans, on which measurements, and against which reference?
+
+The last is the diligence question worth handing any vendor, including this one. Which buyer profiles gain the most, and in what order, is set out in the [occupational health screening software hub](https://3dlook.ai/content-hub/occupational-health-screening-software/).
+
+## Where FitXpress fits
+
+FitXpress covers one part of the first phase: remote body-measurement capture before the appointment. The questionnaire, testing, examination and clinical review sit elsewhere in the program's stack, with their own systems and owners. Capture happens on the person's own phone, from two photos, in under 45 seconds, and the output is structured and time-stamped, covering 80+ body measurements including the BMI value an intake record carries. <!-- claim: FX-006 --> <!-- claim: FX-007 --> <!-- claim: FX-008 --> <!-- claim: FX-009 -->
+
+The useful question about that output is which decision it has to be accurate enough for. For intake documentation, that is whether records stay comparable across staff, sites and time, which is a question of repeatability. Internal repeatability testing on a real-world customer dataset, using five repeated scans per participant, showed strong scan-to-scan consistency, and for most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm. <!-- claim: FX-003 --> The conditions matter as much as the figure, and the [mobile body scanning accuracy framework](https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/) sets them out. Accuracy is a separate measurement against a separate reference: internal validation against expert pattern-maker manual measurements shows 3DLOOK's measurement accuracy of approximately 96-97% across body metrics, with a typical absolute error of 1.5-2.0 cm per measurement, varying by body part. <!-- claim: FX-001 --> Detailed methodology is available under a non-disclosure agreement. Because expert manual measurement is the reference, a superiority claim over a tape measure is out of reach, and the case for a digital channel rests on consistency across repeats, staff and sites. A structured, time-stamped record is easier to compare than a written one, though structure alone does not ensure comparability or compliance.
+
+FitXpress maintains Health Insurance Portability and Accountability Act (HIPAA) safeguards in US healthcare contexts, follows General Data Protection Regulation (GDPR) principles for processing in the EU, encrypts data with AWS S3 SSE-S3 at rest and TLS in transit, processes no personal identifiers, and deletes photos immediately after processing or within 30 days, with the window set by client policy. <!-- claim: FX-014 --> The role is a remote intake and documentation layer that supports clinician review. It is not a clearance, eligibility or fitness-for-duty input, and the regulatory classification of any deployment depends on intended use, context and jurisdiction. For the wider picture of how structured body data is captured and delivered, [3DLOOK's mobile body scanning platform](https://3dlook.ai/) is the entry point.
+
+## Frequently asked questions
+
+**Is digital intake more accurate than manual tape measurement in occupational health screening?**
+The comparison does not resolve that way. 3DLOOK's accuracy figure is measured against expert manual measurement, which makes that the benchmark. Two questions are answerable: whether the expected error suits the decision the record supports, and whether repeated measurements stay comparable. On the second, repeated scans showed typical scan-to-scan differences of less than 1 cm for most evaluated measurements, with the conditions set out in the [accuracy framework](https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/). <!-- claim: FX-003 -->
+
+**Which parts of occupational health intake cannot be moved to a digital channel?**
+On-site screening and clinical review: modality-specific testing such as drug, vision or hearing checks, functional assessment, the examination, and the provider's determination. Anything needing equipment or a clinician in the room stays in the clinic.
+
+**What happens if a candidate cannot complete a remote scan?**
+The manual path stays open as the documented fallback, and a digital channel does not remove the need for one. Access varies by workforce, role and geography, and treating the remote channel as a full replacement strands part of the population. The fallback rate is worth measuring during a pilot.
+
+**Does moving intake to a digital channel change the post-offer boundary for pre-employment screening?**
+No. In the US, under Equal Employment Opportunity Commission guidance, the boundary is set by the timing and content of disability-related questions and medical examinations. The channel the intake data arrives through does not move it, and what a specific program may ask, and when, stays with its own counsel.
+
+## Next steps
+
+Run the two intake models against the program's own throughput and rescreen numbers, component by component, and see which are worth moving. Then [talk to 3DLOOK about the intake workflow](https://3dlook.ai/pricing/#bd-modal-personalized).

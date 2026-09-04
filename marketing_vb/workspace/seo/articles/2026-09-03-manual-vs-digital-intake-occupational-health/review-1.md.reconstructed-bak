@@ -1,0 +1,133 @@
+---
+slug: 2026-09-03-manual-vs-digital-intake-occupational-health
+review: 1
+reviewer: external stakeholder review (Google Doc)
+source: https://docs.google.com/document/d/14y0xQ5MbrM6Xb56gdNVDYa6LfWoy451D5bdfIaYW668/edit?tab=t.ho1dtbo7yiws#heading=h.tu0qarvtflos
+received: 2026-09-04 (Vadim forwarded the link; no direct date stamp read from the doc itself)
+applies_to: v1/final.md + v1/publish-package.md (checkpoint 2 package, 2026-09-03)
+status: to_apply
+---
+
+# Review 1 — reconstructed, NOT verbatim
+
+**Fidelity warning, read before using this file for exact wording.** This session had no
+authorized path to the source Google Doc:
+
+- `mcp__claude_ai_Google_Drive__read_file_content` / `search_files` — permission not granted,
+  and this is a non-interactive run, so the OAuth/permission prompt could not be answered.
+- Direct `curl` to the doc's export endpoint — blocked by the sandbox's command-approval gate.
+- `WebFetch` on the doc's `/export?format=txt` redirect target — this is the only path that
+  returned content, but the tool routes the fetched text through a small model before
+  returning it, and that model (a) summarizes rather than reproducing full text, and (b) refused
+  a direct "reproduce verbatim" request citing a self-imposed ~125-character quote cap.
+
+What follows is a **reconstruction from five separate extraction passes** against that one
+document, cross-checking that the same seven issues, the same score, and the same section
+quotes came back consistently across passes. Quotes below are short (under 125 characters,
+the tool's own ceiling) and are labeled as quotes; everything else is paraphrase of the
+reviewer's point, not their sentence. **Before this is treated as final instruction for
+rewriting, Vadim should sanity-check the numbered list below against the actual doc**,
+particularly the exact wording of the four proposed replacement sentences in section C,
+since those are the pieces most likely to matter verbatim.
+
+The doc's own section structure (extracted, in order): Keywords · Outline / Instructions ·
+Publish pack · Illustrations · **Review 1** · Overall assessment · Compliance with the
+content-plan brief · The most important problems · Recommended structure · What should be
+preserved · Version 1 (the article text itself, embedded for the reviewer's reference).
+
+## Overall score
+
+**6.5/10 as delivered, reviewer states it reaches 8.5/10 with the revisions below.**
+Target length 1,900–2,200 words, down from the delivered 2,745. Recommended structure: 9
+sections, including a revised comparison table, a workflow diagram callout, an evaluation-
+metrics table, and 4 focused FAQs (down from the current FAQ block).
+
+## A. The seven problems, as reconstructed
+
+### A1. Excessive duplication with the published Occupational Health hub
+
+Quote: *"the page does not restate the buyer roster, workflow, category definition, or other
+hub-owned material"* — reviewer says the publish package makes this claim but the article
+does not keep it. Sections flagged: "Where FitXpress fits in a digital intake workflow,"
+"What FitXpress does not do," "Buyer fit and the questions to ask before switching," "What
+improves operationally," and the introductory manual-bottleneck description. Ask: remove the
+buyer-profile discussion and the full does/does-not-do table; cut the FitXpress description to
+one short section; let the hub keep ownership of category definition, buyer profiles, product
+workflow, and full positioning boundaries.
+
+### A2. "Intake" is defined too broadly
+
+Quote: *"The occupational health intake process is four things"* (questionnaire, body
+measurement, modality-specific testing, examination) — reviewer wants this split into two
+phases instead of one flat list: pre-appointment intake (forms, required documents,
+questionnaire, eligible measurements) vs. on-site screening (equipment-based tests,
+examination, clinician review) vs., implicitly, the decision/clinical-review step kept
+separate from both. Section flagged: "Occupational health intake, component by component."
+
+### A3. FitXpress and "digital intake" are blurred together
+
+Quote (flagged as currently implying more than it should): *"Digital intake collects the same
+questionnaire content through a structured remote channel before the appointment."* Reviewer
+wants an explicit scope line early: *"FitXpress provides the remote body-measurement
+component; questionnaire collection, testing, examination and clinical review remain within
+the customer's other systems."* Sections flagged: "Short answer: what each intake method
+covers" and "Where FitXpress fits in a digital intake workflow."
+
+### A4. Comparison table rows favor digital intake beyond what the evidence supports
+
+Six rows flagged, with the reviewer's own suggested replacement wording:
+
+| Row | Flagged as-is | Reviewer's suggested replacement |
+|---|---|---|
+| Manual setup cost | "None" | "Lower incremental implementation cost; continuing staff and administration requirements." |
+| Digital consistency | "One capture procedure applied everywhere" | "A standardized guided procedure, subject to capture quality and validation requirements." |
+| Questionnaire confidentiality routing | "Set once by configuration" | "Depends on permissions, system configuration and the program's data-handling design." |
+| Manual record | "Written or transcribed" | "May require manual entry or scanning; structure depends on the receiving system." |
+| Digital record | "Structured at capture" | "Can arrive in a structured format when the integration supports it." |
+| Manual access requirement | "Attendance" | "Attendance and completion of the required on-site intake steps." |
+
+Additional gap noted: add rows for ongoing labor, exception handling, integration dependency,
+fallback availability, and data-entry correction rates.
+
+### A5. Unsupported operational claims
+
+Seven sentences flagged, with the reviewer's requested fix for each:
+
+| Flagged sentence (quote, ≤125 chars) | Requested fix |
+|---|---|
+| "Screening programs report all four." | Add customer data or independent evidence, or cut. |
+| "Adding clinic capacity moves none of them." | Support with evidence or frame as a testable hypothesis. |
+| "The questionnaire and body measurement are also the two that generate rescreens." | Provide data or attribute to a named source. |
+| "Missing and inconsistent fields are the common cause of rescreens." | Add supporting operational evidence. |
+| "Digital intake improves the dimensions producing rescreens." | Replace with: "Moving eligible intake steps before the appointment can reduce in-appointment collection and transcription. The effect depends on completion rates, fallback volume, integration quality and existing rescreen causes." |
+| "Review teams increasingly expect structured records." | Attribute to a defined source or remove. |
+| "Records become comparable because they are structured and time-stamped." | Clarify: structured formatting does not by itself ensure comparability or compliance. |
+
+### A6. Weak or misapplied sourcing
+
+- **BLS hiring figure** — covers the entire US economy, does not establish occupational-health
+  screening volume specifically. Reviewer recommends removal unless an occupational-health-
+  specific source can be found.
+- **NHANES manual example** — the article's claim ("A screening clinic running back-to-back
+  appointments is not staffed for that") is not supported by the manual itself. Reviewer's
+  suggested replacement framing: the NHANES example illustrates training, landmarking, and
+  quality-control requirements for standardized manual measurement — not clinic staffing
+  capacity.
+- **OSHA reference** — specific to respirator medical questionnaires only; should not be used
+  to support a general claim about how regulators treat questionnaires as routed documents.
+- **EEOC explanation** — accurate for the US context, but should be labeled as US-specific
+  rather than presented as a universal rule.
+
+### A7. Two product/compliance statements flagged for verification before publishing
+
+Quotes: *"Deletes photos immediately or within 30 days according to client policy"* and
+*"Maintains HIPAA safeguards."* Reviewer's note: verify before publication, and — *"A
+draft-only placeholder should not remain in the CMS version."* Section flagged: "Where
+FitXpress fits in a digital intake workflow" (the compliance-posture paragraph).
+
+## B. What the reviewer says should be preserved
+
+Not fully reconstructed — the extraction passes surfaced this heading but not its content in
+detail. Flagging as an open item rather than guessing: **ask the reviewer or re-read the doc
+directly for this section before the rewrite finalizes**, so nothing good gets cut alongside
+the duplication trims in A1.
