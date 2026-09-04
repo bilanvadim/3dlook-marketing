@@ -94,7 +94,11 @@ function stuckAfter(s: BreakerState, lim: BreakerLimits): number | null {
 
 export type Event =
   | { kind: 'turn'; signature: string }
-  | { kind: 'rate_limit'; status: 'allowed' | 'allowed_warning' | 'rejected'; retryAfterSecs?: number }
+  // `detail` is the provider's own words for the limit (window type, reset time, overage
+  // state). It only ever gets logged, but without it a pause said "rate limit" and nothing
+  // else, so telling a real exhausted window from a misread one meant re-running the SDK by
+  // hand — which is what 2026-09-04 took.
+  | { kind: 'rate_limit'; status: 'allowed' | 'allowed_warning' | 'rejected'; retryAfterSecs?: number; detail?: string }
   | { kind: 'ask'; detail: string }            // agent requested an ask/deny-gated action
   | { kind: 'result'; ok: boolean; detail?: string };
 

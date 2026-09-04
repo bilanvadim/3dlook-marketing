@@ -25,7 +25,7 @@ import { evaluate, initState, BreakerState, BreakerLimits, DEFAULT_LIMITS, KIND_
 import { runStep, StepRecord } from './steprunner';
 import { makeSdkDeps } from './agent-runner';
 import { resolveProfilePlugins, resolveWorkDir } from './profiles';
-import { tgConfigFromEnv, notifyEscalation, notifyDone, TelegramConfig } from '../escalation/telegram';
+import { tgConfigFromEnv, withJobThread, notifyEscalation, notifyDone, TelegramConfig } from '../escalation/telegram';
 import { startWebhookServer, startTelegramPolling } from '../escalation/bot-callback';
 
 /** Positive number from env, or the default. `Number('')` is 0, and .env.example
@@ -125,6 +125,72 @@ function isLimitError(detail: string): boolean {
   return /rate.?limit|quota|usage limit|too many requests|overloaded|429|insufficient|credit/i.test(detail);
 }
 
+/**
+ * `HO_PAUSE_ON_OVERAGE=1` restores the pre-2026-09-04 behaviour: pause on ANY rejected
+ * window, even one overage is paying for. Set it to stop autonomous runs at the plan
+ * boundary instead of spending overage credit.
+ */
+const PAUSE_ON_OVERAGE = (process.env.HO_PAUSE_ON_OVERAGE || '').trim() === '1';
+
+/**
+ * What a `rate_limit_event` REALLY means for this run.
+ *
+ * `status: 'rejected'` alone does not mean requests are refused. On a plan with overage
+ * billing enabled the SDK reports the *included* window as rejected while the API keeps
+ * serving every request out of overage — measured 2026-09-04:
+ *
+ *   {"status":"rejected","rateLimitType":"five_hour","resetsAt":1788530400,
+ *    "overageStatus":"allowed","isUsingOverage":true,"overageInUse":true}
+ *
+ * and the very next assistant message in that same stream completed normally. Reading
+ * `status` on its own cost the whole 2026-09-04 social fan-out: 32 rate-limit pauses
+ * between 09:08 and 13:53, 0-3 turns each, and 31 of them pushed to Telegram, while
+ * interactive sessions on the same account ran fine. Vadim saw nothing but limit notices.
+ *
+ * So a rejection counts only when nothing is carrying it: overage not allowed (disabled,
+ * or its own monthly budget spent). If this call is wrong the run is not stranded — the
+ * SDK's `result` still comes back limit-shaped and isLimitError() pauses it properly.
+ */
+export function effectiveLimitStatus(info: any): 'allowed' | 'allowed_warning' | 'rejected' {
+  const status = info?.status ?? 'allowed';
+  if (status !== 'rejected') return status;
+  const overageCarrying = info?.overageStatus === 'allowed';
+  if (overageCarrying && !PAUSE_ON_OVERAGE) return 'allowed_warning';
+  return 'rejected';
+}
+
+/**
+ * Seconds to wait out a REAL rejection. `retry_after` is what the ladder wants but the
+ * five-hour message never carries one; `resetsAt` (epoch seconds) is the same number
+ * stated as a deadline, and using it means the job wakes when the window actually opens
+ * instead of climbing 60s → 30min guesses at it. Clamped: a stale/bogus deadline must not
+ * park a job for a day, and a deadline already in the past must not mean "retry instantly".
+ */
+export function retryAfterFromLimitInfo(info: any): number | undefined {
+  const direct = Number(info?.retry_after ?? info?.retryAfter);
+  if (Number.isFinite(direct) && direct > 0) return Math.round(direct);
+  const resetsAt = Number(info?.resetsAt ?? info?.resets_at);
+  if (!Number.isFinite(resetsAt) || resetsAt <= 0) return undefined;
+  const secs = resetsAt - Date.now() / 1000;
+  if (secs <= 0) return undefined;                       // window already open → use the ladder
+  return Math.min(Math.round(secs) + 15, 6 * 3600);      // +15s so we wake just after it opens
+}
+
+/** One-line, log-safe rendering of a rate_limit_info, for the pause record. */
+export function describeLimitInfo(info: any): string {
+  if (!info || typeof info !== 'object') return '';
+  const bits: string[] = [];
+  if (info.rateLimitType) bits.push(String(info.rateLimitType));
+  if (info.status) bits.push(`status=${info.status}`);
+  if (info.overageStatus) bits.push(`overage=${info.overageStatus}`);
+  if (info.isUsingOverage || info.overageInUse) bits.push('overage-in-use');
+  const resetsAt = Number(info.resetsAt ?? info.resets_at);
+  if (Number.isFinite(resetsAt) && resetsAt > 0) {
+    bits.push(`resets=${new Date(resetsAt * 1000).toISOString().replace('.000Z', 'Z')}`);
+  }
+  return bits.join(' ');
+}
+
 /** Return the first non-empty string value found in an object (shallow). */
 function firstStringValue(obj: Record<string, unknown>): string | undefined {
   for (const v of Object.values(obj)) {
@@ -209,9 +275,14 @@ export function mapSdkMessage(msg: any): { events: Event[]; type: string; toolNa
       signature = 'assistant:text';
     }
     events.push({ kind: 'turn', signature });
-  } else if (type === 'rate_limit' || msg?.rate_limit_info) {
-    const status = msg?.rate_limit_info?.status ?? msg?.status ?? 'allowed';
-    events.push({ kind: 'rate_limit', status, retryAfterSecs: msg?.rate_limit_info?.retry_after });
+  } else if (type === 'rate_limit' || type === 'rate_limit_event' || msg?.rate_limit_info) {
+    const info = msg?.rate_limit_info ?? msg ?? {};
+    const status = effectiveLimitStatus(info);
+    events.push({
+      kind: 'rate_limit', status,
+      retryAfterSecs: retryAfterFromLimitInfo(info),
+      detail: describeLimitInfo(info),
+    });
     type = 'rate_limit';
   } else if (type === 'result') {
     const detail = String(msg?.result ?? msg?.subtype ?? '');
@@ -477,7 +548,7 @@ export async function runOneJob(store: Store): Promise<boolean> {
     .split(',').map((s) => s.trim()).filter(Boolean);
   if (await store.hasSteps(job.id)) {
     if (stepProfiles.includes(job.profile)) {
-      await runJobAsSteps(store, job, tgConfigFromEnv());
+      await runJobAsSteps(store, job, withJobThread(tgConfigFromEnv(), job.id));
       return true;
     }
     console.warn(`[${WORKER_ID}] job ${job.id} has ho_steps but profile='${job.profile}' is not `
@@ -485,7 +556,9 @@ export async function runOneJob(store: Store): Promise<boolean> {
       + 'as ONE run; steps left untouched');
   }
 
-  const tg = tgConfigFromEnv();
+  // Bound to the job's ORIGIN topic once, so every push below (escalation, pause,
+  // done) answers where the work was asked for instead of the DM's General lane.
+  const tg = withJobThread(tgConfigFromEnv(), job.id);
   const lim = limitsForJob(job);
   const attempt = (job.attempts ?? 0) + 1;
   const runId = await store.startRun(job.id, attempt);
@@ -502,6 +575,7 @@ export async function runOneJob(store: Store): Promise<boolean> {
    * success because the stream merely ended or a human waved an escalation through. */
   let sawCompletion = false;
   let continues = 0;
+  let loggedLimitWarning = false;
 
   /** Ask the human, reminding them while they are away. Returns the decision or 'timeout'. */
   const askHuman = async (reason: string, detail: string, context: unknown): Promise<{ id: number; decision: string }> => {
@@ -609,13 +683,21 @@ export async function runOneJob(store: Store): Promise<boolean> {
 
       for (const ev of events) {
         const d = evaluate(state, ev, lim);
+        // A limit we deliberately ran THROUGH must leave a trace: this run is billing to
+        // overage, not to the plan, and "the pipeline kept going" should be explainable
+        // from the log alone. Once per run — the SDK repeats the event on every request.
+        if (ev.kind === 'rate_limit' && ev.status === 'allowed_warning' && !loggedLimitWarning) {
+          loggedLimitWarning = true;
+          console.warn(`[${WORKER_ID}] job ${job.id} continuing through a limit warning: ${ev.detail || '(no detail)'}`);
+        }
         if (d.action === 'continue') continue;
         if (d.action === 'pause') {
           // Token/rate limit → defer WITH session id; a later claim resumes it.
           // We take the wait from the ladder rather than d.backoffSecs: when the server
           // supplies retry_after the two agree, but when it does not the breaker falls
           // back to a flat 60s, which is what produced the hammering loop.
-          await pauseOnLimit(ev.kind === 'rate_limit' ? ev.retryAfterSecs : undefined, 'rate limit — ');
+          const why = ev.kind === 'rate_limit' && ev.detail ? `rate limit [${ev.detail}] — ` : 'rate limit — ';
+          await pauseOnLimit(ev.kind === 'rate_limit' ? ev.retryAfterSecs : undefined, why);
           return true;
         }
         if (d.action === 'escalate') {

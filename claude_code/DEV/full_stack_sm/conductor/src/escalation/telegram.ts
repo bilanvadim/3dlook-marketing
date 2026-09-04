@@ -6,16 +6,49 @@
  *
  * Kept dependency-free (uses fetch) so it works in any Node 18+ / container.
  */
+import { readFileSync } from 'node:fs';
 export interface TelegramConfig {
   botToken: string;
   chatId: string;
+  /** Forum/DM topic to post into. Absent → the chat's General lane, as before. */
+  messageThreadId?: string;
 }
 
 export function tgConfigFromEnv(): TelegramConfig | null {
   const botToken = process.env.TELEGRAM_BOT_TOKEN;
   const chatId = process.env.TELEGRAM_CHAT_ID;
   if (!botToken || !chatId) return null;
-  return { botToken, chatId };
+  const thread = (process.env.TELEGRAM_MESSAGE_THREAD_ID || '').trim();
+  return { botToken, chatId, ...(thread ? { messageThreadId: thread } : {}) };
+}
+
+/**
+ * Where a job was asked for. mvb-run.py records job -> {chat, thread} at enqueue time in
+ * ~/.hermes/mvb-job-threads.json (conductor-monitor.sh already reads it), so the answer to
+ * a run can land in the topic that asked for it.
+ *
+ * This module had no notion of a topic at all, so EVERY conductor push — escalations,
+ * pause notices, done notices — went to the DM's General lane while the conversation that
+ * started the work sat in its own topic. On 2026-09-04 that put nine jobs' worth of
+ * "rate/token limit" pushes in General, next to nothing explaining them.
+ *
+ * No entry (a run enqueued from a plain shell, or a map that has been pruned) → General,
+ * exactly as before. Never throws: a notification must not be lost over its routing.
+ */
+export function withJobThread<T extends TelegramConfig | null>(cfg: T, jobId: number | string): T {
+  if (!cfg) return cfg;
+  try {
+    const path = process.env.MVB_THREAD_MAP
+      || `${process.env.HOME || ''}/.hermes/mvb-job-threads.json`;
+    const raw = readFileSync(path, 'utf-8');
+    const entry = JSON.parse(raw)?.[String(jobId)];
+    const chat = String(entry?.chat || '');
+    const thread = String(entry?.thread || '');
+    if (!chat || !thread) return cfg;
+    return { ...cfg, chatId: chat, messageThreadId: thread } as T;
+  } catch {
+    return cfg;
+  }
 }
 
 /**
@@ -58,15 +91,25 @@ async function send(cfg: TelegramConfig, text: string, replyMarkup?: unknown): P
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(body),
   });
-  await post({ chat_id: cfg.chatId, text, parse_mode: 'Markdown', ...(replyMarkup ? { reply_markup: replyMarkup } : {}) })
+  const base: Record<string, unknown> = {
+    chat_id: cfg.chatId, text,
+    ...(cfg.messageThreadId ? { message_thread_id: Number(cfg.messageThreadId) } : {}),
+    ...(replyMarkup ? { reply_markup: replyMarkup } : {}),
+  };
+  await post({ ...base, parse_mode: 'Markdown' })
     .then(async (res) => {
       if (res.ok) return;
       const body = await res.text().catch(() => '');
       console.error(redactToken(`telegram send rejected: HTTP ${res.status} ${body.slice(0, 200)}`));
-      if (res.status === 400) {
-        await post({ chat_id: cfg.chatId, text, ...(replyMarkup ? { reply_markup: replyMarkup } : {}) })
-          .catch((err) => console.error('telegram plain-text retry failed:', redactToken(err)));
-      }
+      if (res.status !== 400) return;
+      // A 400 is either markdown the parser choked on, or a topic that no longer exists
+      // (Vadim deletes finished topics; hermes-prune-dead-topics does too). Retry plain,
+      // and if the thread is the problem drop it — General beats losing an escalation that
+      // is blocking a job.
+      const threadGone = /thread not found|TOPIC_.*(INVALID|DELETED)|message thread not found/i.test(body);
+      const retry = threadGone ? { ...base, message_thread_id: undefined } : base;
+      await post(retry)
+        .catch((err) => console.error('telegram plain-text retry failed:', redactToken(err)));
     })
     .catch((err) => console.error('telegram notify failed:', redactToken(err)));
 }

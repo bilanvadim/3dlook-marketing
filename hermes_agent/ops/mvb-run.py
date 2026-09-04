@@ -80,8 +80,8 @@ MAX_TURNS = int(os.environ.get("MVB_MAX_TURNS", "300"))
 # conductor's schema, so the mapping lives beside it in a file we own. The gateway
 # binds these two per turn (see hermes-agent tools/*: HERMES_SESSION_CHAT_ID /
 # HERMES_SESSION_THREAD_ID), so a run started by Hermes carries them for free; a
-# run started from a plain shell has neither and simply falls back to General,
-# which is exactly today's behaviour, so nothing regresses.
+# run started from a plain shell has neither and falls back to General unless it
+# passes MVB_CHAT_ID / MVB_THREAD_ID itself (see remember_origin).
 THREAD_MAP = os.environ.get("MVB_THREAD_MAP") or os.path.expanduser("~/.hermes/mvb-job-threads.json")
 # MVB_FANOUT=0 forces the old one-big-job behaviour for a route that supports splitting.
 # Kept as an escape hatch, not a tuning knob: if the fan-out ever misreads the profile
@@ -127,8 +127,15 @@ def remember_origin(job_ids) -> None:
     the work was asked for. Vadim's convention is one topic per autonomous run, so
     a job's replies landing in General is not cosmetic: it separates the answer
     from the question it belongs to."""
-    chat = os.environ.get("HERMES_SESSION_CHAT_ID", "").strip()
-    thread = os.environ.get("HERMES_SESSION_THREAD_ID", "").strip()
+    # MVB_CHAT_ID / MVB_THREAD_ID are the manual form of the same two values, for an
+    # enqueue that does NOT come from a Hermes turn — a Claude Code session or a plain
+    # shell. On 2026-09-04 the nine-job social fan-out went in from a terminal session,
+    # so nothing recorded an origin and every one of its rate-limit pushes landed in
+    # General while Vadim was asking about them in his own topic.
+    chat = (os.environ.get("HERMES_SESSION_CHAT_ID")
+            or os.environ.get("MVB_CHAT_ID", "")).strip()
+    thread = (os.environ.get("HERMES_SESSION_THREAD_ID")
+              or os.environ.get("MVB_THREAD_ID", "")).strip()
     if not chat or not thread:
         return                                  # shell run — General, as before
     try:

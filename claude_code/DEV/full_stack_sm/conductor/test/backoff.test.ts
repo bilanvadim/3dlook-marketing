@@ -6,7 +6,8 @@
  * 193 zero-turn runs over 3h22m re-claiming itself every ~63s against a 5-hour window.
  * The ladder must grow, must cap, and must always yield to a server-supplied retry_after.
  */
-import { backoffForStreak, shouldNotifyPause } from '../src/core/conductor';
+import { backoffForStreak, shouldNotifyPause, effectiveLimitStatus, retryAfterFromLimitInfo,
+         describeLimitInfo, mapSdkMessage } from '../src/core/conductor';
 
 let pass = 0, fail = 0;
 function check(name: string, cond: boolean) {
@@ -67,6 +68,54 @@ check('a capped 30-min wait reports', shouldNotifyPause(1800, false));
 // the whole point: a fast retry loop must be silent at EVERY rung the ladder can produce below 10 min
 check('no rung under 10 min ever spams', ![0, 1].some((s) => shouldNotifyPause(backoffForStreak(s), false)));
 check('the upper rungs do report', [2, 3, 50].every((s) => shouldNotifyPause(backoffForStreak(s), false)));
+
+// ---- what counts as a REAL rejection ----
+// REGRESSION GUARD for 2026-09-04: the SDK reported the five-hour window as `rejected` while
+// overage billing kept serving every request, and reading `status` alone paused the whole social
+// fan-out 23 times (jobs 112-120, 0-3 turns each, 09:47→13:34) on an account that was working.
+// This is the exact payload measured that day.
+const OVERAGE_CARRIED = {
+  status: 'rejected', resetsAt: 1788530400, rateLimitType: 'five_hour',
+  overageStatus: 'allowed', isUsingOverage: true, overageInUse: true,
+};
+check('a window overage is paying for is NOT a rejection',
+      effectiveLimitStatus(OVERAGE_CARRIED) === 'allowed_warning');
+check('a rejection with overage refused IS a rejection',
+      effectiveLimitStatus({ ...OVERAGE_CARRIED, overageStatus: 'rejected' }) === 'rejected');
+check('a rejection with no overage field at all IS a rejection',
+      effectiveLimitStatus({ status: 'rejected', rateLimitType: 'five_hour' }) === 'rejected');
+check('allowed stays allowed', effectiveLimitStatus({ status: 'allowed' }) === 'allowed');
+check('a warning is passed through', effectiveLimitStatus({ status: 'allowed_warning' }) === 'allowed_warning');
+check('an empty info defaults to allowed', effectiveLimitStatus({}) === 'allowed');
+
+// the SDK's real message type is `rate_limit_event`; it must reach the breaker as a rate_limit
+const mapped = mapSdkMessage({ type: 'rate_limit_event', rate_limit_info: OVERAGE_CARRIED });
+check('rate_limit_event maps to one rate_limit event',
+      mapped.type === 'rate_limit' && mapped.events.length === 1 && mapped.events[0].kind === 'rate_limit');
+check('the mapped event carries the downgraded status',
+      mapped.events[0].kind === 'rate_limit' && mapped.events[0].status === 'allowed_warning');
+check('the mapped event carries a readable detail',
+      /five_hour/.test((mapped.events[0] as any).detail ?? ''));
+
+// ---- resetsAt is the wait, when there is a real rejection ----
+// The five-hour message never carries retry_after, which is what made the ladder guess at it.
+check('retry_after wins when present', retryAfterFromLimitInfo({ retry_after: 90 }) === 90);
+const inAnHour = Math.floor(Date.now() / 1000) + 3600;
+const fromReset = retryAfterFromLimitInfo({ resetsAt: inAnHour });
+check(`resetsAt becomes the wait (${fromReset}s)`, fromReset !== undefined && fromReset > 3600 && fromReset <= 3630);
+check('a past resetsAt falls back to the ladder', retryAfterFromLimitInfo({ resetsAt: 1 }) === undefined);
+check('a bogus resetsAt falls back to the ladder',
+      retryAfterFromLimitInfo({ resetsAt: 'soon' }) === undefined && retryAfterFromLimitInfo({}) === undefined);
+check('an absurd resetsAt is capped at 6h',
+      retryAfterFromLimitInfo({ resetsAt: Math.floor(Date.now() / 1000) + 30 * 86400 }) === 6 * 3600);
+check('the wait from resetsAt beats the ladder verbatim',
+      backoffForStreak(0, retryAfterFromLimitInfo({ resetsAt: inAnHour })) === fromReset);
+
+// the pause record must say WHY, or the next incident is another blind re-run of the SDK by hand
+check('describeLimitInfo names the window, the overage and the reset',
+      /five_hour/.test(describeLimitInfo(OVERAGE_CARRIED))
+      && /overage=allowed/.test(describeLimitInfo(OVERAGE_CARRIED))
+      && /resets=2026-09-04T14:00:00Z/.test(describeLimitInfo(OVERAGE_CARRIED)));
 
 console.log(`\nbackoff.test: ${pass} passed, ${fail} failed`);
 if (fail) process.exit(1);
