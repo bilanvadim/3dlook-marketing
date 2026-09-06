@@ -103,13 +103,23 @@ async def main():
             await qr_login.recreate()
             render_qr(qr_login.url, attempt)
         except SessionPasswordNeededError:
-            # QR отсканирован, аккаунт под облачным паролём
-            if not PASSWORD:
-                print("QR принят, но нужен 2FA-пароль. Добавьте TG_PASSWORD в .env.", flush=True)
-                await client.disconnect()
-                sys.exit(2)
-            print("QR принят ✅  Вводим облачный пароль (2FA)...", flush=True)
-            await client.sign_in(password=PASSWORD)
+            # QR отсканирован, аккаунт под облачным паролём.
+            # TG_PASSWORD в .env — необязателен и НЕ рекомендуется: это плоский файл
+            # на VPS, который делят несколько пользователей. Если его нет, спрашиваем
+            # пароль интерактивно (getpass не эхоит и никуда не пишет).
+            pwd = PASSWORD
+            if not pwd:
+                if not sys.stdin.isatty():
+                    print("QR принят, но нужен 2FA-пароль, а ввод не интерактивный.\n"
+                          "Запустите скрипт в терминале (не в фоне) — пароль спросят на месте.",
+                          flush=True)
+                    await client.disconnect()
+                    sys.exit(2)
+                import getpass
+                pwd = getpass.getpass("QR принят ✅  Облачный пароль (2FA), ввод скрыт: ")
+            else:
+                print("QR принят ✅  Вводим облачный пароль (2FA) из .env...", flush=True)
+            await client.sign_in(password=pwd)
             break
 
     me = await client.get_me()

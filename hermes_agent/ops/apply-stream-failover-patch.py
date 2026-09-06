@@ -53,10 +53,15 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 PATCH = os.path.join(HERE, "patches", "stream-failover.patch")
 BASE = os.path.join(HERE, "patches", "stream-failover.base")
 MARKER = "[hermes-mechanic:stream-failover]"
-TARGETS = ("agent/chat_completion_helpers.py", "agent/conversation_loop.py")
+# 0.21 extracted the whole truncation-recovery chain out of conversation_loop.py
+# into agent/turn_truncation.py (a _Trunc state object + one function per phase) and
+# rewrote the streaming stub builder into a _StreamingCall method. The patch was
+# re-cut against that shape on 2026-09-06; the old two-file target list is gone with
+# the code it named.
+TARGETS = ("agent/chat_completion_helpers.py", "agent/turn_truncation.py")
 # What a fully-applied patch looks like, so a HALF-applied tree is an error rather
-# than a pass. Counted from the shipped patch, verified 2026-08-27.
-EXPECTED = {"agent/chat_completion_helpers.py": 2, "agent/conversation_loop.py": 2}
+# than a pass. Counted from the shipped patch, verified 2026-09-06.
+EXPECTED = {"agent/chat_completion_helpers.py": 1, "agent/turn_truncation.py": 2}
 
 
 def markers() -> dict[str, int]:

@@ -1,1 +1,1 @@
-dce4abe9172d6478bed73525efdd49e6d10bed03 fix(gateway): log secondary startup-reconnect handoff failures instead of dropping them
+245e48008fa814b3251f50755eb656bd9fb86cb1 fix: listing surfaces show the merged view for MCP servers named like built-in toolsets

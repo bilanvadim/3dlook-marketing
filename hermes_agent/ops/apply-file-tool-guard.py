@@ -9,29 +9,47 @@ Vendored upstream code is overwritten by `hermes update`, so this runs now AND
 from hermes-update.py after every update. Idempotent: no-op if already patched;
 fail-LOUD (prints MISSING_ANCHOR) if upstream moved the anchor so the lapse is
 visible rather than silent.
+
+0.21 moved `_check_sensitive_path` out of tools/file_tools.py into
+tools/file_tools_write_guards.py AND rewrote its body: the `resolved` /
+`normalized` locals became one `candidates` tuple and the refusal strings lost
+their hanging close-paren. Both the file and the anchor are probed, so one kit
+installs on either layout.
 """
 import os
 import shutil
 import sys
 import tempfile
 
-TARGET = "/home/vadim_prod/.hermes/hermes-agent/tools/file_tools.py"
+AGENT = os.path.expanduser("~/.hermes/hermes-agent")
+# >=0.21: the write guards live in their own module; <=0.20: still in file_tools.
+_CANDIDATE_TARGETS = (
+    os.path.join(AGENT, "tools", "file_tools_write_guards.py"),
+    os.path.join(AGENT, "tools", "file_tools.py"),
+)
 MARKER = "[hermes-mechanic]"
-# Anchor = the final `return None` of _check_sensitive_path (unique 3-line block).
-ANCHOR = (
+
+# Anchor = the tail of _check_sensitive_path: its config-file refusal plus the
+# final `return None`. 0.21 folded the close-paren onto the last string line.
+ANCHOR_021 = (
+    "            \"Agent cannot modify security-sensitive configuration. \"\n"
+    "            \"Edit ~/.hermes/config.yaml directly or use 'hermes config' instead.\")\n"
+    "    return None\n"
+)
+ANCHOR_019 = (
     "            \"Edit ~/.hermes/config.yaml directly or use 'hermes config' instead.\"\n"
     "        )\n"
     "    return None\n"
 )
-# The inserted body on its own, so a STALE previously-applied body can be cut out
-# and replaced without re-deriving it from GUARD by string surgery.
-GUARD_BODY = (
+
+_HEAD = (
     "    # [hermes-mechanic] Manager-not-coder: block file-tool WRITES to project\n"
     "    # code under /srv/vadim_prod (Claude Code / OpenCode own that); the Second\n"
     "    # Brain wiki lives inside that zone and is carved out. Fires under mode:off too.\n"
     "    _PZ = \"/srv/vadim_prod/\"\n"
     "    _WIKI = \"/home/vadim_prod/3dlook-marketing/hermes_agent/AI-Second-Brain\"\n"
-    "    for _cand in (resolved, normalized):\n"
+)
+_TAILBODY = (
     "        if _cand.startswith(_PZ) and not _cand.startswith(_WIKI) and not _cand.endswith(\"/.hermes-handoff.md\"):\n"
     "            return (\n"
     "                \"Refusing (hermes-mechanic): Hermes is the manager, not the coder. \"\n"
@@ -40,11 +58,31 @@ GUARD_BODY = (
     "            )\n"
     "    return None\n"
 )
-# What actually gets written on a fresh install: the anchor's own two lines, then
-# the body in place of the plain `return None` that used to follow them.
-GUARD = ANCHOR[:ANCHOR.rindex("    return None\n")] + GUARD_BODY
+# The candidate paths are upstream's own already-resolved values — realpath AND
+# normpath, so neither a symlink into the zone nor a `..` walk out of it escapes.
+# Deriving them again here would resolve relative paths against the WRONG cwd.
+GUARD_BODY_021 = _HEAD + "    for _cand in candidates:\n" + _TAILBODY
+GUARD_BODY_019 = _HEAD + "    for _cand in (resolved, normalized):\n" + _TAILBODY
+
 GUARD_HEAD = "    # [hermes-mechanic] Manager-not-coder"
 GUARD_TAIL = "    return None\n"
+
+
+def _resolve():
+    """(target path, anchor, guard body) for whichever layout is installed."""
+    for path in _CANDIDATE_TARGETS:
+        try:
+            s = open(path, encoding="utf-8").read()
+        except OSError:
+            continue
+        if "def _check_sensitive_path" not in s:
+            continue
+        # Pick the body by the local the function actually exposes, so a REFRESH
+        # of an already-patched file writes the shape that file can execute.
+        body = GUARD_BODY_021 if "candidates = (" in s else GUARD_BODY_019
+        anchor = ANCHOR_021 if ANCHOR_021 in s else ANCHOR_019
+        return path, s, anchor, body
+    return None, None, None, None
 
 
 def _write_atomic(path, text):
@@ -67,23 +105,23 @@ def _write_atomic(path, text):
 
 
 def main():
-    try:
-        s = open(TARGET, encoding="utf-8").read()
-    except FileNotFoundError:
-        # Exit 2, not 0: an upstream refactor that moves file_tools.py leaves the
-        # guard uninstalled, and hermes-update.py only alerts on 2. Reporting
-        # success for "target vanished" is exactly the case worth shouting about.
-        print(f"MISSING_TARGET: {TARGET} not found — file-tool guard NOT applied")
+    target, s, anchor, body = _resolve()
+    if target is None:
+        # Exit 2, not 0: an upstream refactor that moves _check_sensitive_path
+        # leaves the guard uninstalled, and hermes-update.py only alerts on 2.
+        # Reporting success for "target vanished" is the case worth shouting about.
+        print("MISSING_TARGET: _check_sensitive_path found in none of "
+              + ", ".join(_CANDIDATE_TARGETS) + " — file-tool guard NOT applied")
         return 2
+    where = os.path.basename(target)
     if MARKER in s:
         # Marker present is NOT the same as "current". The guard's carve-out path
-        # moved when the repo was restructured (hermes_agent/ →
-        # agents-ai/telegram-bot-agent/hermes-agent/); the repo was updated, the
-        # patched file was not, and this early return meant it could never be.
-        # The stale copy pointed at a directory that no longer exists, so writing
-        # notes into the Second Brain wiki was refused for weeks.
-        if GUARD_BODY in s:
-            print("OK: file-tool guard already applied (current)")
+        # moved when the repo was restructured; the repo was updated, the patched
+        # file was not, and an early return meant it never could be. The stale copy
+        # pointed at a directory that no longer existed, so writing notes into the
+        # Second Brain wiki was refused for weeks.
+        if body in s:
+            print(f"OK: file-tool guard already applied, current ({where})")
             return 0
         start = s.find(GUARD_HEAD)
         end = s.find(GUARD_TAIL, start) if start >= 0 else -1
@@ -91,14 +129,15 @@ def main():
             print("MISSING_ANCHOR: applied guard found but its bounds moved — "
                   "file-tool guard NOT refreshed")
             return 2
-        _write_atomic(TARGET, s[:start] + GUARD_BODY + s[end + len(GUARD_TAIL):])
-        print("REFRESHED: stale file-tool guard replaced with the current one")
+        _write_atomic(target, s[:start] + body + s[end + len(GUARD_TAIL):])
+        print(f"REFRESHED: stale file-tool guard replaced with the current one ({where})")
         return 0
-    if ANCHOR not in s:
+    if anchor not in s:
         print("MISSING_ANCHOR: _check_sensitive_path shape changed — file-tool guard NOT applied")
         return 2
-    _write_atomic(TARGET, s.replace(ANCHOR, GUARD, 1))
-    print("APPLIED: file-tool project-code write guard")
+    guard = anchor[:anchor.rindex(GUARD_TAIL)] + body
+    _write_atomic(target, s.replace(anchor, guard, 1))
+    print(f"APPLIED: file-tool project-code write guard ({where})")
     return 0
 
 

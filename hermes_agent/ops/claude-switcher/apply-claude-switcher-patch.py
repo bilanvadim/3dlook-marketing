@@ -27,6 +27,29 @@ COMMANDS_PY = os.path.join(HERMES_AGENT, "hermes_cli", "commands.py")
 RUN_PY = os.path.join(GATEWAY, "run.py")
 
 
+def _seam_file(basename):
+    """Where a run.py seam lives in THIS upstream.
+
+    0.21 split the 12k-line gateway runner into mixins — run_inbound.py (command
+    dispatch, lobby, forward-picker), run_turn.py (the two turn intercepts),
+    run_topics.py (Telegram topic recovery), run_busy.py (busy acknowledgements).
+    Every seam this kit patches survived the split verbatim or near-verbatim; only
+    its FILE changed, which is why 2026-09-05 reported eleven MISSING_ANCHORs at
+    once while the code they point at was sitting untouched one module over.
+
+    Probe per seam and fall back to run.py, so one kit installs on the split
+    layout and on every release before it.
+    """
+    cand = os.path.join(GATEWAY, basename)
+    return cand if os.path.exists(cand) else RUN_PY
+
+
+RUN_INBOUND_PY = _seam_file("run_inbound.py")   # dispatch · lobby-topic · forward-picker
+RUN_TURN_PY = _seam_file("run_turn.py")         # intercept-primary/followup · media recall
+RUN_TOPICS_PY = _seam_file("run_topics.py")     # lobby-no-pin
+RUN_BUSY_PY = _seam_file("run_busy.py")         # busy acknowledgements (cosmetic)
+
+
 def _find_adapter():
     """The Telegram adapter moved between upstream releases.
 
@@ -85,6 +108,29 @@ DISPATCH_INSERT = (
     '        except Exception:\n'
     '            logger.debug("claude-switcher command dispatch failed", exc_info=True)\n'
 )
+# 0.21 moved the plain-command lookup into `_hm_dispatch_canonical_command` in
+# gateway/run_inbound.py, and — the part that matters — changed the RETURN SHAPE:
+# the method now answers `(handled, result)` instead of a bare reply string.
+# Re-anchoring alone would have installed a handler returning a str where a tuple
+# is unpacked, so the insert gets its own variant rather than sharing one.
+DISPATCH_ANCHOR_021 = (
+    "        plain_handler = (\n"
+    "            self._gateway_plain_command_handlers().get(canonical)\n"
+    "            or self._gateway_idle_command_handlers().get(canonical)\n"
+    "        )\n"
+)
+DISPATCH_INSERT_021 = (
+    '        # [hermes-switcher] route switcher commands to the sticky-mode handler\n'
+    '        try:\n'
+    '            from gateway import claude_switcher as _cs\n'
+    '            if canonical in _cs.SWITCHER_COMMANDS:\n'
+    '                return True, await _cs.handle_command(self, event, canonical, source, _quick_key)\n'
+    '        except Exception:\n'
+    '            logger.debug("claude-switcher command dispatch failed", exc_info=True)\n'
+)
+# Shared by every variant, so "already applied" survives a shape change.
+DISPATCH_PRESENT = "[hermes-switcher] route switcher commands"
+
 
 # --- run.py: DM lobby («УСІ») opens its own topic ---------------------------
 # Placed BEFORE the first _quick_key computation on purpose: the session key, the
@@ -131,6 +177,26 @@ LOBBY_PIN_INSERT = (
     "        if is_lobby:\n"
     "            return None\n"
 )
+# 0.21 rewrote _recover_telegram_topic_thread_id (now in gateway/run_topics.py):
+# the `is_lobby` name is gone and the test is inverted into an early return for
+# the NON-lobby case. Everything past that guard IS the lobby case, so the old
+# `if is_lobby: return None` becomes an unconditional one — same behaviour, and
+# the guard above is what carries the condition now.
+LOBBY_PIN_ANCHOR_021 = (
+    '        inbound = str(source.thread_id or "")\n'
+    "        if inbound and inbound not in self._TELEGRAM_GENERAL_TOPIC_IDS:\n"
+    "            return None\n"
+)
+LOBBY_PIN_INSERT_021 = (
+    "        # [hermes-switcher] «Усі» opens a NEW chat instead of resuming the last\n"
+    "        # one — see maybe_open_lobby_topic(). Without this the lobby message is\n"
+    "        # pinned to the most recent topic before any hook can see it. The guard\n"
+    "        # above already returned for every non-lobby thread, so what remains is\n"
+    "        # exactly the old `if is_lobby:` branch with its condition applied.\n"
+    "        return None\n"
+)
+LOBBY_PIN_PRESENT = "[hermes-switcher] «Усі» opens a NEW chat"
+
 
 # --- run.py: primary turn intercept ----------------------------------------
 S1_ANCHOR = (
@@ -164,6 +230,31 @@ S1_INSERT = (
     "        except Exception:\n"
     "            logger.debug(\"claude-switcher turn intercept failed\", exc_info=True)\n"
 )
+# 0.21 pulled the turn assembly out of the message handler into
+# `_hmwa_prepare_turn` (gateway/run_turn.py), which returns
+# ``(_PreparedTurn | str | None, env_tokens)``; the caller drops the turn on any
+# non-_PreparedTurn first element. So the intercept's "handled — stop here" is no
+# longer a bare `return`: it must hand back upstream's own drop shape, exactly as
+# the `if message_text is None` line right above it does. A bare `return` here
+# would yield None and blow up unpacking at the call site.
+S1_ANCHOR_021 = (
+    "        message_text = await self._prepare_profile_scoped_inbound_message_text(\n"
+    "            event=event, source=source, history=history, session_key=session_key,\n"
+    "        )\n"
+    "        if message_text is None:\n"
+    "            return None, _session_env_tokens\n"
+)
+S1_INSERT_021 = (
+    "        # [hermes-switcher] sticky Claude Code mode — route the turn to Claude\n"
+    "        try:\n"
+    "            from gateway import claude_switcher as _cs\n"
+    "            if await _cs.maybe_handle_turn(self, event, source, session_key, message_text):\n"
+    "                return None, _session_env_tokens\n"
+    "        except Exception:\n"
+    "            logger.debug(\"claude-switcher turn intercept failed\", exc_info=True)\n"
+)
+S1_PRESENT = "[hermes-switcher] sticky Claude Code mode — route the turn to Claude"
+
 
 # --- run.py: forward-picker (forwarded msg in the topic lobby) -------------
 FWD_ANCHOR = (
@@ -198,6 +289,29 @@ FWD_INSERT = (
     "            logger.debug(\"claude-switcher forward-picker failed\", exc_info=True)\n"
     "\n"
 )
+# 0.21 (gateway/run_inbound.py) hoisted the `not is_internal` test into an
+# enclosing `if`, so the lobby branch sits one level deeper and the debounce
+# comment was reworded. Deeper is the RIGHT place for the picker anyway: a
+# self-injected internal event has no forward to offer buttons for.
+FWD_ANCHOR_021 = (
+    "            if await asyncio.to_thread(self._is_telegram_topic_root_lobby, source):\n"
+    "                # Debounced so a user who forgets about topic mode doesn't get ten reminders.\n"
+    "                if self._should_send_telegram_lobby_reminder(source):\n"
+)
+FWD_INSERT_021 = (
+    "            # [hermes-switcher] forward-picker — a forwarded message in the topic\n"
+    "            # lobby offers inline buttons to route it into a project tab.\n"
+    "            try:\n"
+    "                from gateway import claude_switcher as _cs\n"
+    "                _fwd_reply = await _cs.maybe_handle_forward_in_lobby(self, event, source)\n"
+    "                if _fwd_reply is not None:\n"
+    "                    return _fwd_reply\n"
+    "            except Exception:\n"
+    "                logger.debug(\"claude-switcher forward-picker failed\", exc_info=True)\n"
+    "\n"
+)
+FWD_PRESENT = "[hermes-switcher] forward-picker"
+
 
 # --- run.py: queued follow-up intercept ------------------------------------
 S2_ANCHOR = (
@@ -228,6 +342,27 @@ S2_INSERT = (
     "                    except Exception:\n"
     "                        logger.debug(\"claude-switcher followup intercept failed\", exc_info=True)\n"
 )
+# 0.21: same seam, two levels shallower (the queued-follow-up block moved out of
+# a nested `with` into the body of the turn method in gateway/run_turn.py) and the
+# call args are line-folded. `return result` still means the same thing here.
+S2_ANCHOR_021 = (
+    "            next_message = await self._prepare_profile_scoped_inbound_message_text(\n"
+    "                event=pending_event, source=next_source, history=updated_history, session_key=next_session_key,\n"
+    "            )\n"
+    "            if next_message is None:\n"
+    "                return result\n"
+)
+S2_INSERT_021 = (
+    "            # [hermes-switcher] sticky Claude Code mode (queued follow-up)\n"
+    "            try:\n"
+    "                from gateway import claude_switcher as _cs\n"
+    "                if await _cs.maybe_handle_turn(self, pending_event, next_source, next_session_key, next_message):\n"
+    "                    return result\n"
+    "            except Exception:\n"
+    "                logger.debug(\"claude-switcher followup intercept failed\", exc_info=True)\n"
+)
+S2_PRESENT = "[hermes-switcher] sticky Claude Code mode (queued follow-up)"
+
 
 
 # --- run.py: media recall for the turns that DO fall through to Hermes -----
@@ -261,6 +396,23 @@ AUG2_INSERT = (
     "                    except Exception:\n"
     "                        logger.debug(\"claude-switcher media recall (followup) failed\", exc_info=True)\n"
 )
+# Both recalls hang off the intercept block the pass above just wrote, so each one
+# needs the variant matching whichever intercept landed. The primary insert sits at
+# the same indent in both shapes; only the follow-up moved.
+AUG1_ANCHOR_021 = S1_INSERT_021
+AUG1_PRESENT = "[hermes-switcher] Hermes-bound turn asking about a picture"
+AUG2_ANCHOR_021 = S2_INSERT_021
+AUG2_INSERT_021 = (
+    "            # [hermes-switcher] media recall for the queued Hermes turn\n"
+    "            try:\n"
+    "                from gateway import claude_switcher as _cs\n"
+    "                next_message = _cs.augment_inbound_for_hermes(\n"
+    "                    self, pending_event, next_source, next_session_key, next_message)\n"
+    "            except Exception:\n"
+    "                logger.debug(\"claude-switcher media recall (followup) failed\", exc_info=True)\n"
+)
+AUG2_PRESENT = "[hermes-switcher] media recall for the queued Hermes turn"
+
 
 # --- adapter.py: panel callback branch (csw:<target>) ----------------------
 ADAPTER_ANCHOR = (
@@ -308,6 +460,17 @@ ADAPTER_HO_INSERT = (
     '\n'
 )
 ADAPTER_HO_PRESENT = 'data.startswith("ho:")'
+# 0.21 replaced the if/elif callback chain with two prefix->handler TABLES. There
+# is no longer a `cp:` branch to append to, so both switcher branches go where the
+# chain begins — right after the callback context is built and before the first
+# table is consulted. That is the same ordering guarantee the old anchor gave:
+# csw: and ho: are tested ahead of every upstream prefix.
+ADAPTER_ANCHOR_021 = (
+    "        data = query.data\n"
+    "        cb = self._callback_ctx(query)\n"
+    "        # Model picker / generic choice picker (/reasoning, /fast) need a chat id.\n"
+)
+
 
 # --- adapter.py: register the inline-query handler (system launcher) --------
 ADAPTER_IQ_ANCHOR = (
@@ -362,6 +525,61 @@ def _dedent_to_register_handlers(text):
 ADAPTER_IQ_INSERT_020 = _dedent_to_register_handlers(ADAPTER_IQ_INSERT)
 # Distinctive and identical in both variants — safe as the "already applied" test.
 ADAPTER_IQ_PRESENT = "[hermes-switcher] inline-mode system launcher"
+# 0.21 grew an inline picker OF ITS OWN — a searchable command/skill catalogue
+# registered as InlineQueryHandler(self._handle_inline_query) in the default group.
+# PTB stops a group at its first matching handler, so a second handler in group 0
+# would simply never run; register in group -1 instead and answer ONLY the queries
+# that carry a system keyword (which is all the launcher buttons ever produce, via
+# switch_inline_query_current_chat), then stop the chain so the two cannot both
+# answerInlineQuery for the same id. A bare "@bot …" now reaches upstream's
+# catalogue untouched — a deliberate split of one seam that used to be ours alone.
+ADAPTER_IQ_ANCHOR_021 = (
+    "        app.add_handler(CallbackQueryHandler(self._handle_callback_query))\n"
+    "        # Inline command picker; inert until the owner enables inline mode via BotFather /setinline.\n"
+    "        app.add_handler(InlineQueryHandler(self._handle_inline_query))\n"
+)
+ADAPTER_IQ_INSERT_021 = (
+    '\n'
+    '        # [hermes-switcher] inline-mode system launcher (Dev/SEO/Marketing/Security).\n'
+    '        # Group -1 so it is consulted before upstream\'s catalogue; it answers only\n'
+    '        # when the query starts with a system keyword and then stops the chain, so\n'
+    '        # the two handlers never answer the same inline query.\n'
+    '        try:\n'
+    '            from telegram.ext import InlineQueryHandler as _CswIQH\n'
+    '            from telegram.ext import ApplicationHandlerStop as _CswStop\n'
+    '            async def _csw_inline_query(update, _ctx):\n'
+    '                _iq = getattr(update, "inline_query", None)\n'
+    '                if _iq is None:\n'
+    '                    return\n'
+    '                try:\n'
+    '                    from gateway import claude_switcher as _cs\n'
+    '                    _q = (getattr(_iq, "query", "") or "").strip()\n'
+    '                    if not _cs._match_system_prefix(_q)[0]:\n'
+    '                        return\n'
+    '                    await _cs.handle_inline_query(self, _iq)\n'
+    '                except Exception:\n'
+    '                    logger.debug("claude-switcher inline query failed", exc_info=True)\n'
+    '                    return\n'
+    '                raise _CswStop\n'
+    '            app.add_handler(_CswIQH(_csw_inline_query), group=-1)\n'
+    '        except Exception:\n'
+    '            logger.debug("claude-switcher: inline handler registration failed", exc_info=True)\n'
+    '\n'
+    '        # [hermes-switcher] forward prefilter (group -1): note forwards on the\n'
+    '        # RAW update BEFORE batching can strip forward_origin.\n'
+    '        try:\n'
+    '            from telegram.ext import MessageHandler as _CswMH, filters as _csw_filters\n'
+    '            async def _csw_fwd_prefilter(update, _ctx):\n'
+    '                try:\n'
+    '                    from gateway import claude_switcher as _cs\n'
+    '                    _cs.note_forward_from_update(self, update)\n'
+    '                except Exception:\n'
+    '                    logger.debug("claude-switcher fwd prefilter failed", exc_info=True)\n'
+    '            app.add_handler(_CswMH(_csw_filters.ALL, _csw_fwd_prefilter), group=-1)\n'
+    '        except Exception:\n'
+    '            logger.debug("claude-switcher: fwd prefilter registration failed", exc_info=True)\n'
+)
+
 
 # --- adapter.py: preserve forward provenance across text batching ----------
 ADAPTER_FWD_ANCHOR = (
@@ -386,6 +604,39 @@ ADAPTER_FWD_INSERT = (
     '                except Exception:\n'
     '                    pass\n'
 )
+
+# 0.21 moved the text-batch MERGE itself down into gateway/platforms/base.py, where
+# it is shared by every platform. Patching a shared base for a Telegram-only concern
+# is the wrong blast radius, so hook the Telegram override instead: it already wraps
+# super()._enqueue_text_event(), and after that call the merged batch is sitting in
+# _pending_text_batches under this event's key. Same stash, same reader, one platform.
+ADAPTER_FWD_ANCHOR_021 = (
+    "    def _enqueue_text_event(self, event: MessageEvent) -> None:\n"
+    '        """Buffer a text chunk, or hold it while delayed delivery must be dropped."""\n'
+    "        if self._should_drop_delayed_delivery():\n"
+    '            self._hold_inbound_event(event, where="text-enqueue")\n'
+    "            return\n"
+    "        super()._enqueue_text_event(event)\n"
+)
+ADAPTER_FWD_INSERT_021 = (
+    "        # [hermes-switcher] preserve forward provenance across batching: the merge\n"
+    "        # keeps only the FIRST chunk's raw_message, so a forward sent AFTER a typed\n"
+    "        # comment loses its forward_origin and the forward-picker never fires. Stash\n"
+    "        # the forwarded chunk's raw_message on the pending batch so the switcher can\n"
+    "        # still detect it.\n"
+    "        try:\n"
+    '            _csw_er = getattr(event, "raw_message", None)\n'
+    '            if _csw_er is not None and (getattr(_csw_er, "forward_origin", None)\n'
+    '                                        or getattr(_csw_er, "forward_date", None)\n'
+    '                                        or getattr(_csw_er, "forward_from", None)\n'
+    '                                        or getattr(_csw_er, "forward_sender_name", None)):\n'
+    "                _csw_pending = self._pending_text_batches.get(self._text_batch_key(event))\n"
+    "                if _csw_pending is not None:\n"
+    "                    _csw_pending._csw_fwd_raw = _csw_er  # type: ignore[attr-defined]\n"
+    "        except Exception:\n"
+    "            pass\n"
+)
+ADAPTER_FWD_PRESENT = "[hermes-switcher] preserve forward provenance across batching"
 
 
 # --- run.py: the gateway's own busy acknowledgements, in Russian ------------
@@ -446,6 +697,43 @@ BUSY_ACK_EDITS = [
      '                f"I\'ll respond to your message shortly."\n',
      '                f"⚡ `Бросаю текущее дело{status_detail} — переключаюсь на '
      'твоё.`"\n'),
+]
+
+# 0.21 (gateway/run_busy.py) rebuilt this block: the six acknowledgements became
+# `head, tail = ...` pairs joined as f"{head}{status_detail}{tail}", and two of the
+# three status parts are now read straight off the summary dict. Same six strings,
+# new shape — so they get their own edit list. Both lists are optional and their
+# anchors are mutually exclusive, so whichever release is installed, the other
+# list simply reports "seam absent" and nothing is written twice.
+#
+# The demoted pair used to share self._BUSY_DEMOTED_TAIL; each branch gets its own
+# tail here because "waiting for the subagent" and "waiting for compression" do not
+# read the same in Russian. The constant is left in place, just unused by these two.
+BUSY_ACK_EDITS_021 = [
+    ("busy-status-iteration",
+     '                        f"iteration {summary.get(\'api_call_count\', 0)}/{summary.get(\'max_iterations\', 0)}"\n',
+     '                        f"шаг {summary.get(\'api_call_count\', 0)}/{summary.get(\'max_iterations\', 0)}"\n'),
+    ("busy-status-tool",
+     'status_parts.append(f"running: {summary.get(\'current_tool\')}")',
+     'status_parts.append(f"сейчас: {summary.get(\'current_tool\')}")'),
+    ("busy-ack-steer",
+     'head, tail = "⏩ Steered into current run", ". Your message arrives after the next tool call."',
+     'head, tail = "⏩ `Подкинул это прямо в текущий прогон", " — подхвачу после ближайшего инструмента.`"'),
+    ("busy-ack-redirect",
+     'head, tail = "↪ Redirected current run", ". I\'ll adjust using your correction."',
+     'head, tail = "↪ `Развернул текущий прогон", " — учту твою поправку.`"'),
+    ("busy-ack-subagent",
+     'head, tail = "⏳ Subagent working", self._BUSY_DEMOTED_TAIL',
+     'head, tail = "⏳ `Подагент в мыле", " — твоё сообщение ждёт, пока он выдохнет. /stop — отменить всё.`"'),
+    ("busy-ack-compression",
+     'head, tail = "⏳ Compressing context", self._BUSY_DEMOTED_TAIL',
+     'head, tail = "⏳ `Утрамбовываю контекст", " — твоё сообщение уже в очереди, займусь сразу после. /stop — отменить всё.`"'),
+    ("busy-ack-queue",
+     'head, tail = "⏳ Queued for the next turn", ". I\'ll respond once the current task finishes."',
+     'head, tail = "⏳ `Твой запрос встал в очередь", " — отвечу, как только разгребу текущее.`"'),
+    ("busy-ack-interrupt",
+     'head, tail = "⚡ Interrupting current task", ". I\'ll respond to your message shortly."',
+     'head, tail = "⚡ `Бросаю текущее дело", " — переключаюсь на твоё.`"'),
 ]
 
 
@@ -602,50 +890,75 @@ def main():
     else:
         print(f"commands.py: {r}")
 
-    # 3. run.py — four inserts. Each turn-intercept lists the 0.19 anchor first
-    # and the 0.16 one as a fallback; the busy-ack rewrites are cosmetic, so a
-    # release that words them differently just skips them.
-    r = _patch_file(RUN_PY, [
-        ("dispatch", [DISPATCH_ANCHOR, DISPATCH_ANCHOR_0206], before(DISPATCH_INSERT)),
-        ("lobby-topic", LOBBY_TOPIC_ANCHOR, before(LOBBY_TOPIC_INSERT)),
-        ("lobby-no-pin", LOBBY_PIN_ANCHOR, after(LOBBY_PIN_INSERT)),
-        ("intercept-primary", [S1_ANCHOR, S1_ANCHOR_016], after(S1_INSERT)),
-        ("intercept-followup", [S2_ANCHOR, S2_ANCHOR_016], after(S2_INSERT)),
-        ("forward-picker", [FWD_ANCHOR, FWD_ANCHOR_016], before(FWD_INSERT)),
-    ] + [(n, a, r_, r_, True) for (n, a, r_) in BUSY_ACK_EDITS])
-    if isinstance(r, list):
-        problems += [f"run.py:{m}" for m in r]
-    else:
-        print(f"run.py: {r}")
+    # 3. run.py seams. 0.21 split the runner into mixins, so each seam is patched in
+    # the file _seam_file() resolved for it; on every earlier release those all collapse
+    # back to run.py and this is the same three passes it always was. _patch_file
+    # re-reads per call, so repeated passes over one file are safe.
+    for _target, _edits in (
+        (RUN_INBOUND_PY, [
+            ("dispatch", [DISPATCH_ANCHOR_021, DISPATCH_ANCHOR, DISPATCH_ANCHOR_0206],
+             lambda a: (DISPATCH_INSERT_021 if a is DISPATCH_ANCHOR_021 else DISPATCH_INSERT) + a,
+             DISPATCH_PRESENT),
+            ("lobby-topic", LOBBY_TOPIC_ANCHOR, before(LOBBY_TOPIC_INSERT)),
+            ("forward-picker", [FWD_ANCHOR_021, FWD_ANCHOR, FWD_ANCHOR_016],
+             lambda a: (FWD_INSERT_021 if a is FWD_ANCHOR_021 else FWD_INSERT) + a,
+             FWD_PRESENT),
+        ]),
+        (RUN_TOPICS_PY, [
+            ("lobby-no-pin", [LOBBY_PIN_ANCHOR_021, LOBBY_PIN_ANCHOR],
+             lambda a: a + (LOBBY_PIN_INSERT_021 if a is LOBBY_PIN_ANCHOR_021 else LOBBY_PIN_INSERT),
+             LOBBY_PIN_PRESENT),
+        ]),
+        (RUN_TURN_PY, [
+            ("intercept-primary", [S1_ANCHOR_021, S1_ANCHOR, S1_ANCHOR_016],
+             lambda a: a + (S1_INSERT_021 if a is S1_ANCHOR_021 else S1_INSERT), S1_PRESENT),
+            ("intercept-followup", [S2_ANCHOR_021, S2_ANCHOR, S2_ANCHOR_016],
+             lambda a: a + (S2_INSERT_021 if a is S2_ANCHOR_021 else S2_INSERT), S2_PRESENT),
+        ]),
+        # Cosmetic: the gateway's own busy acknowledgements, in Russian. Both shape
+        # variants are listed and both are optional — whichever release is installed,
+        # the other list finds none of its anchors and says so instead of failing.
+        (RUN_BUSY_PY, [(n, a, r_, r_, True) for (n, a, r_) in BUSY_ACK_EDITS]
+                      + [(n, a, r_, r_, True) for (n, a, r_) in BUSY_ACK_EDITS_021]),
+    ):
+        r = _patch_file(_target, _edits)
+        _label = os.path.basename(_target)
+        if isinstance(r, list):
+            problems += [f"{_label}:{m}" for m in r]
+        else:
+            print(f"{_label}: {r}")
 
-    # 3b. run.py — media recall for Hermes turns. Separate pass: it is anchored on
-    # the intercept blocks the pass above just wrote, and _patch_file re-reads the
-    # file, so the same code path works fresh and already-patched.
-    r = _patch_file(RUN_PY, [
-        ("media-recall-primary", AUG1_ANCHOR, after(AUG1_INSERT)),
-        ("media-recall-followup", AUG2_ANCHOR, after(AUG2_INSERT)),
+    # 3b. Media recall for Hermes turns. Separate pass: it is anchored on the intercept
+    # blocks the pass above just wrote, and _patch_file re-reads the file, so the same
+    # code path works fresh and already-patched.
+    r = _patch_file(RUN_TURN_PY, [
+        ("media-recall-primary", [AUG1_ANCHOR_021, AUG1_ANCHOR], after(AUG1_INSERT), AUG1_PRESENT),
+        ("media-recall-followup", [AUG2_ANCHOR_021, AUG2_ANCHOR],
+         lambda a: a + (AUG2_INSERT_021 if a is AUG2_ANCHOR_021 else AUG2_INSERT), AUG2_PRESENT),
     ])
     if isinstance(r, list):
-        problems += [f"run.py:{m}" for m in r]
+        problems += [f"{os.path.basename(RUN_TURN_PY)}:{m}" for m in r]
     else:
-        print(f"run.py (media recall): {r}")
+        print(f"{os.path.basename(RUN_TURN_PY)} (media recall): {r}")
 
-    # 4. adapter.py — panel callback branch + inline-query handler + fwd provenance
+    # 4. adapter.py — panel callback branch + ho: relay + inline-query handler + fwd
+    # provenance. 0.19/0.21 anchors are complete blocks → append after them; 0.16's is
+    # the head of the NEXT branch → insert before it. Hence the explicit builders.
     r = _patch_file(ADAPTER_PY, [
-        # 0.19's anchor is a COMPLETE branch → append after it. 0.16's anchor is the
-        # first two lines of the next branch → insert before it. Hence the explicit
-        # builder, and an explicit present_test since it carries no insert_text.
-        ("panel-callback", [ADAPTER_ANCHOR, ADAPTER_ANCHOR_016],
-         lambda a: (a + ADAPTER_INSERT) if a is ADAPTER_ANCHOR else (ADAPTER_INSERT + a),
+        ("panel-callback", [ADAPTER_ANCHOR_021, ADAPTER_ANCHOR, ADAPTER_ANCHOR_016],
+         lambda a: (ADAPTER_INSERT + a) if a is ADAPTER_ANCHOR_016 else (a + ADAPTER_INSERT),
          'data.startswith("csw:")'),
-        ("escalation-callback", [ADAPTER_ANCHOR, ADAPTER_ANCHOR_016],
-         lambda a: (a + ADAPTER_HO_INSERT) if a is ADAPTER_ANCHOR else (ADAPTER_HO_INSERT + a),
+        ("escalation-callback", [ADAPTER_ANCHOR_021, ADAPTER_ANCHOR, ADAPTER_ANCHOR_016],
+         lambda a: (ADAPTER_HO_INSERT + a) if a is ADAPTER_ANCHOR_016 else (a + ADAPTER_HO_INSERT),
          ADAPTER_HO_PRESENT, True),
-        ("inline-query", [ADAPTER_IQ_ANCHOR_020, ADAPTER_IQ_ANCHOR],
-         lambda a: a + (ADAPTER_IQ_INSERT_020 if a is ADAPTER_IQ_ANCHOR_020
+        ("inline-query", [ADAPTER_IQ_ANCHOR_021, ADAPTER_IQ_ANCHOR_020, ADAPTER_IQ_ANCHOR],
+         lambda a: a + (ADAPTER_IQ_INSERT_021 if a is ADAPTER_IQ_ANCHOR_021
+                        else ADAPTER_IQ_INSERT_020 if a is ADAPTER_IQ_ANCHOR_020
                         else ADAPTER_IQ_INSERT),
          ADAPTER_IQ_PRESENT),
-        ("fwd-provenance", ADAPTER_FWD_ANCHOR, after(ADAPTER_FWD_INSERT)),
+        ("fwd-provenance", [ADAPTER_FWD_ANCHOR_021, ADAPTER_FWD_ANCHOR],
+         lambda a: a + (ADAPTER_FWD_INSERT_021 if a is ADAPTER_FWD_ANCHOR_021 else ADAPTER_FWD_INSERT),
+         ADAPTER_FWD_PRESENT),
     ])
     if isinstance(r, list):
         problems += [f"adapter.py:{m}" for m in r]

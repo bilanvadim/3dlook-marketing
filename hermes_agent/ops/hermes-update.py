@@ -117,26 +117,33 @@ def gateway_started_at():
 # patcher's prose (their vocabulary is already three words wide: already /
 # patched / refreshed, and a new one would read as "nothing changed").
 _AGENT = f"{HOME}/.hermes/hermes-agent"
-# Exactly the files a vendored patch touches, verified 2026-08-27 against
-# `git -C ~/.hermes/hermes-agent diff --stat`, which is the authoritative inventory:
-#   tools/file_tools.py                    +12   file-tool guard
-#   gateway/run.py                         +71   switcher
-#   hermes_cli/commands.py                  +8   switcher
-#   plugins/platforms/telegram/adapter.py  +59   switcher
-#   agent/chat_completion_helpers.py       +19   stream-failover
-#   agent/conversation_loop.py             +26   stream-failover
+# Exactly the files a vendored patch touches, verified 2026-09-06 against
+# `git -C ~/.hermes/hermes-agent diff --stat`, which is the authoritative inventory.
+# 0.21 split the runner and the truncation loop apart, so most of this list moved:
+#   tools/file_tools_write_guards.py       +12   file-tool guard  (was tools/file_tools.py)
+#   gateway/run_inbound.py                 +24   switcher: dispatch, lobby, forward-picker
+#   gateway/run_turn.py                    +29   switcher: turn intercepts + media recall
+#   gateway/run_topics.py                   +6   switcher: lobby-no-pin
+#   gateway/run_busy.py                    +18   switcher: Russian busy acks (cosmetic)
+#   hermes_cli/commands.py                  +8   switcher: command registry
+#   plugins/platforms/telegram/adapter.py  +73   switcher: csw:/ho: callbacks, inline, fwd
+#   agent/chat_completion_helpers.py       +11   stream-failover
+#   agent/turn_truncation.py               +34   stream-failover  (was agent/conversation_loop.py)
 #   gateway/claude_switcher.py           (new)   switcher module
-# vision_switch.py is deliberately NOT here: it is not installed in this tree
-# (0 markers in run.py, no module on disk), and listing a file no patcher installs
-# makes the fingerprint change for a reason nobody can explain.
+# gateway/run.py is deliberately NOT here any more: after the 0.21 split no patcher
+# writes to it, and listing a file nothing installs makes the fingerprint move for a
+# reason nobody can explain. Same rule that keeps vision_switch.py off this list.
 _PATCHED_FILES = (
-    f"{_AGENT}/tools/file_tools.py",                        # file-tool guard
-    f"{_AGENT}/gateway/run.py",                             # switcher
+    f"{_AGENT}/tools/file_tools_write_guards.py",           # file-tool guard
+    f"{_AGENT}/gateway/run_inbound.py",                     # switcher
+    f"{_AGENT}/gateway/run_turn.py",                        # switcher
+    f"{_AGENT}/gateway/run_topics.py",                      # switcher
+    f"{_AGENT}/gateway/run_busy.py",                        # switcher (cosmetic)
     f"{_AGENT}/hermes_cli/commands.py",                     # switcher
     f"{_AGENT}/plugins/platforms/telegram/adapter.py",      # switcher
     f"{_AGENT}/gateway/claude_switcher.py",                 # switcher (copied module)
     f"{_AGENT}/agent/chat_completion_helpers.py",           # stream-failover
-    f"{_AGENT}/agent/conversation_loop.py",                 # stream-failover
+    f"{_AGENT}/agent/turn_truncation.py",                   # stream-failover
     LIVE_SOUL,                                              # persona restore
 )
 
