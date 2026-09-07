@@ -18,10 +18,11 @@ review_applied: >
   report above) that closed three pipeline-introduced defects in final.md revision 5 without new
   reviewer input. Review 2 item 6 (the privacy paragraph) remains PARTIALLY applied - the
   self-contradiction the reviewer caught and the AWS/TLS trim and the Business Associate Agreement
-  clause are in; three sub-points ("processes no personal identifiers" removal, GDPR
-  controller/processor allocation, output-retention rewrite) are DECLINED on source-of-truth
-  grounds per review-2-decisions.md section 6, QC concurred on all three (report section B), and
-  they are carried to Vadim below as R2-2, R2-3, R2-4.
+  clause are in. Of the three sub-points that were DECLINED on source-of-truth grounds per
+  review-2-decisions.md section 6, with QC concurring (report section B), **R2-3 (GDPR
+  controller/processor) was reopened and APPLIED on 2026-09-07 after Vadim made the sentence
+  canonical in compliance.md**; R2-2 ("processes no personal identifiers" removal) and R2-4
+  (output-retention rewrite) stay declined and are carried to Vadim below.
 supersedes: >
   publish-package.md rev 3 (2026-09-07, built against final.md revision 4, before QC scored the
   pass and before remediation). Rev 3 is not wrong, it is superseded: QC found three real defects
@@ -496,13 +497,14 @@ the manual path, Satoshi throughout.
    needs to come out of four places in the same move, not just this article: `compliance.md`,
    `proof-points.md`, `how-it-works.md`, and the context-pack claim text for FX-014** — QC notes
    two packs on disk already carry the unscoped phrase and would regenerate it otherwise.
-7. **R2-3 — GDPR controller/processor allocation: add or not?** Review 2 wants "the customer acts
-   as controller and 3DLOOK acts as processor" stated. No brand-asset carries this; `compliance.md`
-   says only "follows GDPR principles," and Review 1 §B was explicit that this exact hedge should
-   never be strengthened. Not added. QC's factual-accuracy review confirms this decline is also
-   right — it would add an allocation no asset carries, the same class of error Review 2 itself
-   corrects elsewhere. If it is true and standard for enterprise deployments, it belongs in
-   `compliance.md` first, then this article can cite it.
+7. **R2-3 — GDPR controller/processor allocation. RESOLVED 2026-09-07, no longer an open item.**
+   The decline stood on one condition: *"it belongs in `compliance.md` first, then this article can
+   cite it."* Vadim ruled on 2026-09-07 that the sentence is canonical, and `compliance.md` now
+   carries it under "GDPR roles". The body was updated in the same move: the GDPR clause left the
+   comma chain and the approved sentence stands on its own, hedge intact. Review 1 §B's instruction
+   never to strengthen "follows GDPR principles" is superseded by the ruling, not bent by the
+   article. Scope: the ruling covers the roles sentence only, not Article 28 DPA, Standard
+   Contractual Clauses, the UK Addendum or Article 9.
 8. **R2-4 — retention of generated outputs: add or not?** Review 2 wants output retention stated
    ("generated outputs are retained according to the agreed deployment terms"). `compliance.md`
    documents photo retention only ("removed immediately after processing or within 30 days, per
@@ -631,7 +633,7 @@ The useful question about any measurement method is: accurate enough for which d
 
 Accuracy is a separate measurement against a separate reference. Internal validation across multiple real-world scan events with five repeated scans per person against expert pattern-maker manual measurements shows 3DLOOK's measurement accuracy of approximately 96-97% across body metrics, with a typical absolute error of 1.5-2.0 cm per measurement, varying by body part. <!-- claim: FX-001 --> Detailed methodology is available under a non-disclosure agreement. The measurement case therefore rests on repeatability and standardized capture rather than a claim of superiority over expert tape measurement. The wider operational case includes pre-appointment availability, structured transfer and reduced reliance on transcription. A structured, time-stamped record is easier to compare than a written one, though structure alone does not ensure comparability or compliance; that depends on the capture method and the receiving system.
 
-FitXpress maintains Health Insurance Portability and Accountability Act (HIPAA) safeguards in US healthcare contexts and signs Business Associate Agreements with HIPAA-covered customers, follows General Data Protection Regulation (GDPR) principles for processing in the EU, encrypts data at rest and in transit, processes no personal identifiers, and deletes photos immediately after processing or within 30 days, with the window set by client policy. <!-- claim: FX-014 --> FitXpress supports intake and documentation for clinician review; it does not make clearance, eligibility or fitness-for-duty determinations. Compliance evaluation runs on data-privacy and recordkeeping frameworks, and the regulatory classification of a deployment depends on intended use, context and jurisdiction. [3DLOOK's mobile body scanning platform](https://3dlook.ai/) covers how the data is captured and delivered.
+FitXpress maintains Health Insurance Portability and Accountability Act (HIPAA) safeguards in US healthcare contexts and signs Business Associate Agreements with HIPAA-covered customers, encrypts data at rest and in transit, processes no personal identifiers, and deletes photos immediately after processing or within 30 days, with the window set by client policy. In most enterprise deployments, the customer acts as controller and 3DLOOK acts as processor under the General Data Protection Regulation (GDPR). <!-- claim: FX-014 --> FitXpress supports intake and documentation for clinician review; it does not make clearance, eligibility or fitness-for-duty determinations. Compliance evaluation runs on data-privacy and recordkeeping frameworks, and the regulatory classification of a deployment depends on intended use, context and jurisdiction. [3DLOOK's mobile body scanning platform](https://3dlook.ai/) covers how the data is captured and delivered.
 
 ## Frequently asked questions
 

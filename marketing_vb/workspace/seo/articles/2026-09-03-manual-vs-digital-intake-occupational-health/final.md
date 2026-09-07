@@ -180,10 +180,12 @@ changes_summary: |
     the reviewer caught (the boundary is the determination, not the input); the AWS S3 SSE-S3 /
     TLS detail trimmed to "at rest and in transit"; Business Associate Agreements added in
     compliance.md's own wording ("with HIPAA-covered customers", not "on request"). Declined and
-    carried to Vadim as R2-2, R2-3, R2-4: dropping "processes no personal identifiers"
-    (compliance.md:23 states it flatly and three assets repeat it), adding GDPR
-    controller/processor (no brand-asset carries it), and the output-retention rewrite (the
-    deletion half is already more precise than the replacement).
+    carried to Vadim as R2-2 and R2-4: dropping "processes no personal identifiers"
+    (compliance.md:23 states it flatly and three assets repeat it) and the output-retention
+    rewrite (the deletion half is already more precise than the replacement). R2-3, adding GDPR
+    controller/processor, was declined on 2026-09-07 because no brand-asset carried it, then
+    APPLIED the same day once Vadim made the sentence canonical in compliance.md ("GDPR roles").
+    It now stands as its own sentence in the privacy paragraph, hedge intact.
   - Item 7, accuracy conclusion. Both reviewer sentences verbatim. The approved 96-97%,
     1.5-2.0 cm and repeated-scan statements are untouched and keep their FX-001 / FX-003 markers;
     the two benchmarks stay in separate paragraphs against separate references.
@@ -387,7 +389,7 @@ The useful question about any measurement method is: accurate enough for which d
 
 Accuracy is a separate measurement against a separate reference. Internal validation across multiple real-world scan events with five repeated scans per person against expert pattern-maker manual measurements shows 3DLOOK's measurement accuracy of approximately 96-97% across body metrics, with a typical absolute error of 1.5-2.0 cm per measurement, varying by body part. <!-- claim: FX-001 --> Detailed methodology is available under a non-disclosure agreement. The measurement case therefore rests on repeatability and standardized capture rather than a claim of superiority over expert tape measurement. The wider operational case includes pre-appointment availability, structured transfer and reduced reliance on transcription. A structured, time-stamped record is easier to compare than a written one, though structure alone does not ensure comparability or compliance; that depends on the capture method and the receiving system.
 
-FitXpress maintains Health Insurance Portability and Accountability Act (HIPAA) safeguards in US healthcare contexts and signs Business Associate Agreements with HIPAA-covered customers, follows General Data Protection Regulation (GDPR) principles for processing in the EU, encrypts data at rest and in transit, processes no personal identifiers, and deletes photos immediately after processing or within 30 days, with the window set by client policy. <!-- claim: FX-014 --> FitXpress supports intake and documentation for clinician review; it does not make clearance, eligibility or fitness-for-duty determinations. Compliance evaluation runs on data-privacy and recordkeeping frameworks, and the regulatory classification of a deployment depends on intended use, context and jurisdiction. [3DLOOK's mobile body scanning platform](https://3dlook.ai/) covers how the data is captured and delivered.
+FitXpress maintains Health Insurance Portability and Accountability Act (HIPAA) safeguards in US healthcare contexts and signs Business Associate Agreements with HIPAA-covered customers, encrypts data at rest and in transit, processes no personal identifiers, and deletes photos immediately after processing or within 30 days, with the window set by client policy. In most enterprise deployments, the customer acts as controller and 3DLOOK acts as processor under the General Data Protection Regulation (GDPR). <!-- claim: FX-014 --> FitXpress supports intake and documentation for clinician review; it does not make clearance, eligibility or fitness-for-duty determinations. Compliance evaluation runs on data-privacy and recordkeeping frameworks, and the regulatory classification of a deployment depends on intended use, context and jurisdiction. [3DLOOK's mobile body scanning platform](https://3dlook.ai/) covers how the data is captured and delivered.
 
 ## Frequently asked questions
 

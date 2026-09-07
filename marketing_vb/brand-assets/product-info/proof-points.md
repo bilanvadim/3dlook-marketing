@@ -129,7 +129,7 @@
 | Claim | Detail | Source |
 |-------|--------|--------|
 | HIPAA compliance | Maintained | FitXpress security commitment |
-| GDPR | Follows GDPR principles | Same |
+| GDPR | Follows GDPR principles | Same. **Roles, when the content states them, use the canonical sentence verbatim: "In most enterprise deployments, the customer acts as controller and 3DLOOK acts as processor under GDPR."** `compliance.md` §GDPR roles, Vadim 2026-09-07 |
 | Encryption in transit | TLS | Same |
 | Encryption at rest | AWS S3 SSE-S3, always on | Same |
 | Photo retention | Immediate delete OR within 30 days per client policy | Same |

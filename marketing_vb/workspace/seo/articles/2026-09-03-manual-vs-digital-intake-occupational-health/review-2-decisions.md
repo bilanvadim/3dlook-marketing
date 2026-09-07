@@ -147,18 +147,22 @@ brand-asset supports. Line by line:
 | AWS S3 SSE-S3 / TLS detail adds little comparison value | `compliance.md:17-18` supports both the specific and the general form | **APPLIED.** Trimmed to "encrypts data at rest and in transit". The detail belongs in the Data, Privacy, Security & Regulatory FAQ, as the reviewer says |
 | Add "A HIPAA Business Associate Agreement is available on request" | `compliance.md:65` — *"We sign BAAs for HIPAA-covered customers."* | **APPLIED, in the source's own wording**: "signs Business Associate Agreements with HIPAA-covered customers". "On request" is the reviewer's phrasing, not ours; "for HIPAA-covered customers" is what the asset says |
 | Remove "processes no personal identifiers" | `compliance.md:23` — *"Personal identifier processing \| None — photos cannot be linked to individuals via 3DLOOK"*; also `proof-points.md:137`, `how-it-works.md:56`. Review 1 §B graded it grounded and kept it | **DECLINED — open item R2-2.** Standing approved compliance language, stated as a product property in three assets. The reviewer's reason is a hypothetical ("session identifiers and customer-side record matching **can** make such a statement difficult to maintain"), not a counter-source. Whether it holds for every deployment is a legal/product call for Vadim, not an editorial one |
-| Replace with "the customer acts as controller and 3DLOOK acts as processor under GDPR" | **No source.** `compliance.md` says only "Follows GDPR principles". Review 1 §B is explicit: keep the exact hedge "follows GDPR principles," never a stronger form | **DECLINED — open item R2-3.** Controller/processor is a contractual allocation that varies by deployment and appears in no brand-asset. Adding it would be the same class of error the reviewer is otherwise correcting |
+| Replace with "the customer acts as controller and 3DLOOK acts as processor under GDPR" | **No source.** `compliance.md` says only "Follows GDPR principles". Review 1 §B is explicit: keep the exact hedge "follows GDPR principles," never a stronger form | **APPLIED 2026-09-07, reversing the earlier decline.** The decline was right on the day it was made and its own condition has since been met: Vadim ruled the sentence canonical and it now lives in `compliance.md` under "GDPR roles". The article carries it verbatim, with the "In most enterprise deployments" hedge intact. See `docs/changelog.md`, 2026-09-07 |
 | Replace photo deletion with "Photos are deleted after processing, while generated outputs are retained according to the agreed deployment terms" | `compliance.md:22` — *"Permanently removed immediately after processing OR within 30 days, per client policy."* Output retention: **no source** | **DECLINED — open item R2-4.** The deletion half is already stated more precisely than the replacement, with the client-policy conditionality explicit. The output-retention half is unsourced |
 
 Shipped paragraph:
 
 > FitXpress maintains Health Insurance Portability and Accountability Act (HIPAA) safeguards in
 > US healthcare contexts and signs Business Associate Agreements with HIPAA-covered customers,
-> follows General Data Protection Regulation (GDPR) principles for processing in the EU,
 > encrypts data at rest and in transit, processes no personal identifiers, and deletes photos
-> immediately after processing or within 30 days, with the window set by client policy.
-> FitXpress supports intake and documentation for clinician review; it does not make clearance,
-> eligibility or fitness-for-duty determinations.
+> immediately after processing or within 30 days, with the window set by client policy. In most
+> enterprise deployments, the customer acts as controller and 3DLOOK acts as processor under the
+> General Data Protection Regulation (GDPR). FitXpress supports intake and documentation for
+> clinician review; it does not make clearance, eligibility or fitness-for-duty determinations.
+
+**Updated 2026-09-07 (R2-3 resolved).** The GDPR clause moved out of the comma chain and became
+the reviewer's own sentence, now canonical in `compliance.md`. GDPR is still expanded at its first
+use in the article, which is what `article_lint.py` gate 8 tests.
 
 The HIPAA and GDPR expansions stay in place because this is their first use in the article and
 `article_lint.py` gate 8 (M1 abbreviations) tests exactly that.
@@ -232,8 +236,10 @@ verbatim) against a shorter text. Budget is 8.0. Rhythm variation improved 0.65 
    deployment. That confirmation is not something the article pipeline can produce. If the answer
    is "cut", it should be cut from `compliance.md`, `proof-points.md` and `how-it-works.md` in
    the same move, not from this one article.
-3. **R2-3 — GDPR controller/processor.** The reviewer wants it stated. No brand-asset carries it.
-   If it is true and standard for enterprise deployments, it belongs in `compliance.md` first.
+3. **R2-3 — GDPR controller/processor. CLOSED 2026-09-07 by Vadim.** The sentence is canonical in
+   `compliance.md` ("GDPR roles") and is now in the article. Nothing left for Vadim here. What the
+   ruling does **not** cover: Article 28 DPA, Standard Contractual Clauses, the UK Addendum and
+   Article 9 special-category data stay unapproved.
 4. **R2-4 — retention of generated outputs.** Same shape: the reviewer assumes a documented
    policy ("retained according to the agreed deployment terms"). `compliance.md` documents photo
    retention only. Worth adding to the asset if a policy exists.

@@ -154,6 +154,14 @@ lean mass, fat mass, 80+ body measurements, 3D model. Nothing else. `seo-writer`
 2. The reviewer's documented set includes `predicted weight`, which no approved claim supports. If
    weight estimation really is a composition output, FX-009 and `proof-points.md` need the row added.
 
+   **Partly answered 2026-09-07 by Vadim, and the answer was "no, but narrow the ban".** FX-009 and
+   `proof-points.md` were NOT given a composition row: weight estimation stays a Smart Scales
+   output, which is what FX-008 already covers. What changed is the enforcement: the
+   `predicted weight` row in `article_lint.py` was blanket and is now scoped to wellness copy, so
+   the ban here still holds while healthcare articles may use the phrase as a Smart Scales output.
+   The trigger was the bariatric hub, where the reviewer asked for exactly that. See
+   `docs/changelog.md`, 2026-09-07.
+
 Also applied from item 13: **"body composition values" → "body composition estimates"** throughout.
 This matches `compliance.md`, which already says "body measurements and composition estimates".
 

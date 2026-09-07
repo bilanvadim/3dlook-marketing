@@ -55,6 +55,7 @@ Two integration patterns:
 - When stored, photos are automatically blurred for additional privacy
 - No personal identifiers / contact details processed — photos cannot be linked to individuals
 - HIPAA compliant (US healthcare), follows GDPR principles (EU)
+- GDPR roles, canonical sentence, use verbatim when content states the allocation: "In most enterprise deployments, the customer acts as controller and 3DLOOK acts as processor under GDPR." (`compliance.md` §GDPR roles, Vadim 2026-09-07)
 - Privacy contact: privacy@3dlook.me
 - Not a medical device — no medical device certifications applicable, since FitXpress does not provide medical advice / diagnosis / treatment recommendations
 

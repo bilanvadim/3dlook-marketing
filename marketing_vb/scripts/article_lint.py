@@ -62,9 +62,38 @@ SUPERSEDED = [
      "Vadim confirmed DXA 2026-09-02"),
     (r"\bessential fat\b", "omit in wellness copy", "Review 1 item 13, 2026-09-02"),
     (r"\bbeneficial fat\b", "omit in wellness copy", "Review 1 item 13, 2026-09-02"),
-    (r"\bpredicted weight\b", "omit; no approved claim supports it", "Review 1 item 13 closed against the reviewer, 2026-09-02"),
+    # Scoped to wellness copy by Vadim, 2026-09-07. The row was written from the wellness hub's
+    # Review 1 item 13, whose ruling was narrower than the blanket ban that implemented it: it
+    # forbade `predicted weight` in the BODY-COMPOSITION OUTPUT list (FX-009's set), and said so
+    # in as many words, then flagged the wider question to Vadim: "If weight estimation really is
+    # a composition output, FX-009 and proof-points.md need the row added." Meanwhile FX-008
+    # ("Weight estimation +/-3.5% average error margin, software output, not a scale") is an
+    # approved, publishable claim, `how-it-works.md` backend step 6 and `tech-spec.md` line 100
+    # document the capability, and the LIVE `online-pharmacy-bmi-verification` article publishes
+    # "Predicted weight" in its own Outputs row along with the whole BMI cross-check. The blanket
+    # ban therefore failed the bariatric hub for using the phrase exactly as the original ruling
+    # allows: as a Smart Scales output. Scope, do not delete: the wellness ban still stands.
+    (r"\bpredicted weight\b", "omit; no approved claim supports it in wellness copy",
+     "Review 1 item 13, 2026-09-02; scoped to wellness by Vadim 2026-09-07", "wellness"),
     (r"\bbody composition values\b", "body composition estimates", "Review 1 item 13, 2026-09-02"),
 ]
+
+
+def _in_scope(scope, fm):
+    """A SUPERSEDED row with a 4th element only fires on articles matching that scope.
+
+    Rows without one fire everywhere, which is the default and stays the default. The only
+    scope in use is "wellness", read off the article's own frontmatter (slug, hub, cluster or
+    title). `fm` is None in the rare call that has no frontmatter to read; a scoped row then
+    fires, because failing loud on an unidentifiable file beats waving it through.
+    """
+    if scope is None:
+        return True
+    if fm is None:
+        return True
+    haystack = " ".join(str(fm.get(k, "")) for k in ("slug", "hub", "cluster", "title", "workspace"))
+    return scope.lower() in haystack.lower()
+
 
 # Abbreviations that guardrail M1 requires expanding at first use. BMI, AI, US, EU, CEO, UK,
 # WWW and iOS are the commonly-known exception (terminology-guardrails.md section 1) and are
@@ -348,7 +377,7 @@ def _is_named_not_used(line: str, start: int, end: int) -> bool:
     return bool(QUOTED.search(before)) and bool(re.match(r"""^[\"'`*]""", after))
 
 
-def gate_superseded(body: str, allow_discussion: bool = True, line_offset: int = 0):
+def gate_superseded(body: str, allow_discussion: bool = True, line_offset: int = 0, fm=None):
     """Gate 5. Figures and terms a decision retired.
 
     A stale number is worse than a missing one, because it reads as verified. Every row in
@@ -357,11 +386,18 @@ def gate_superseded(body: str, allow_discussion: bool = True, line_offset: int =
     `allow_discussion` exempts a line that is discussing the supersession rather than using
     the figure. Keep it on for plans and decision records; the article body rarely needs it,
     but a deletions note inside a draft is legitimate.
+
+    A row may carry a fourth element, a scope string, and then it only fires on articles whose
+    frontmatter matches it. See `_in_scope` and the `predicted weight` row for why that exists.
     """
     problems = []
     text = strip_comments(body)
     lines = text.split("\n")
-    for pat, instead, why in SUPERSEDED:
+    for row in SUPERSEDED:
+        pat, instead, why = row[0], row[1], row[2]
+        scope = row[3] if len(row) > 3 else None
+        if not _in_scope(scope, fm):
+            continue
         for i, line in enumerate(lines, 1):
             for m in re.finditer(pat, line, re.I):
                 if allow_discussion and (
@@ -673,7 +709,7 @@ def main():
 
     if args.plan:
         run("plan structure", gate_plan, body, fm)
-        run("superseded figures", gate_superseded, body, True, line_offset)
+        run("superseded figures", gate_superseded, body, True, line_offset, fm)
     else:
         pack, _pack_path, pack_err = load_pack(args.pack, args.path)
         if pack_err:
@@ -701,7 +737,7 @@ def main():
         run("prose length", gate_length, body, target)
         run("claim traceability", gate_claims, body, pack, line_offset)
         run("banned claims", gate_banned, body, pack)
-        run("superseded figures", gate_superseded, body, True, line_offset)
+        run("superseded figures", gate_superseded, body, True, line_offset, fm)
         run("internal links", gate_links, body, pack)
         run("keyword placement", gate_keyword, body, primary)
         run("abbreviations (M1)", gate_m1, body)

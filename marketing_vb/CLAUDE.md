@@ -338,7 +338,11 @@ qc-prompt · qc-plan · manifest · digest · report · scores) и `scripts/post
 ## 12. Compliance
 
 - **HIPAA compliant** — для FitXpress в US healthcare контекстах
-- **GDPR principles** — для EU
+- **GDPR** — следуем принципам GDPR; **каноническая фраза про роли, дословно:** «In most
+  enterprise deployments, the customer acts as controller and 3DLOOK acts as processor under
+  GDPR.» (решение Вадима 2026-09-07, источник — `brand-assets/product-info/compliance.md`,
+  секция «GDPR roles»). Хедж «In most enterprise deployments» — часть фразы, не срезается.
+  Article 28 DPA, SCC, UK Addendum и Article 9 этим решением **не** одобрены
 - **AWS S3 SSE-S3 encryption** для всех данных
 - **Photos удаляются** immediately или within 30 days (по политике клиента)
 - **Не процессим personal identifiers**
