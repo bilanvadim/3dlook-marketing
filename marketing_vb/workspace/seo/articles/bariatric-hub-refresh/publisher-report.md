@@ -1,249 +1,281 @@
 ---
 slug: bariatric-pre-qualification-mobile-3d-body-scanning
 workspace: bariatric-hub-refresh
-artifact: publisher report (checkpoint 2 package + delta table)
+artifact: publisher report (Review-1 rebuild)
 role: seo-publisher
-input: draft-v2-editor.md, plan.md, plan-audit.md, editor-report.md, refresh-gap-analysis.md
-output: publish-package.md
-created: 2026-09-03
+input: draft-v3-editor.md, review-1-decisions.md, review-1.md, editor-report-review-1.md, plan.md
+prior_package: publish-package.md as it stood after the first pass (2026-09-03, from draft-v2-editor.md; snapshotted at v1/publish-package.md)
+output: publish-package.md (rewritten in place)
+created: 2026-09-07
+revised: 2026-09-07
 status: ready_for_review
+stage: publish only — nothing sent to the CMS
+qc_fix_pass: "2026-09-07 — corrects §3 item 4 (two deviations to three, G2) and open item 9 (G3 ruling); gate and detector numbers re-run against draft-v3-editor.md after the coordinator applied G1"
 ---
 
-# Publisher report — Bariatrics hub refresh
+# Publisher report — Bariatric hub refresh, Review 1 rebuild
 
-This file carries the rationale, verification detail, and the draft-vs-live delta table behind
-`publish-package.md`. It mirrors the `plan.md` / `plan-audit.md` split: the package is what a CMS
-operator needs to publish; this report is why the package looks the way it does, for Vadim and any
-later reviewer.
+This is the **second** publisher report for this article. The first (`v1/publisher-report.md`)
+documented the live-page-to-`draft-v2-editor.md` delta and is left untouched. This report documents
+what changed in `publish-package.md` between that first pass and this rebuild, why, and what is
+still open. It does not re-derive the live-vs-draft delta table — that ground did not move under
+Review 1, and `v1/publisher-report.md` §2 is still the record of it.
+
+**This is a fix pass on this same report**, applied 2026-09-07 after `quality-controller` scored the
+package 17/20. Two things needed correcting: §3 item 4 understated the count of disclosed heading
+deviations (two, not three — the coordinator's ruling **G2** is the third), and open item 9 was still
+open when the coordinator had already ruled it (**G3**, allowed). Gate and detector figures in §1 are
+also re-run, because the coordinator applied **G1** to `draft-v3-editor.md` between this report's
+first version and this fix pass, which changed the word count and marker counts slightly.
 
 ---
 
-## 1. Final gate verification, re-run this session
+## 1. Gate verification, re-run this session
+
+**Without the context pack** (base mechanics):
 
 ```
-$ python3 scripts/article_lint.py workspace/seo/articles/bariatric-hub-refresh/draft-v2-editor.md \
-    --pack workspace/seo/_context-packs/2026-09-03-bariatric-hub-refresh.yaml --report
+$ python3 scripts/article_lint.py workspace/seo/articles/bariatric-hub-refresh/draft-v3-editor.md
 
-[ok  ] hard bans (detect-ai-tells)
-         ai_density: 0.36, verdict: CLEAN, rhythm_variation: 0.57
-[ok  ] prose length
-         prose words 4712 vs target 4400 (band 3740-5060)
-[ok  ] claim traceability
-         claims_used: ['FX-001', 'FX-002', 'FX-005', 'FX-006', 'FX-007', 'FX-008', 'FX-009']
-         claims_known: 10
+[ok  ] hard bans (detect-ai-tells)          ai_density: 0.81, verdict: CLEAN, rhythm_variation: 0.57
+[ok  ] prose length                          prose words 4387 vs target 4400 (band 3740-5060)
+[ok  ] claim traceability                    claims_used: FX-001, FX-002, FX-005, FX-006, FX-007, FX-008, FX-009
 [ok  ] banned claims
 [ok  ] superseded figures
-[ok  ] internal links
-         links_total: 18, links_distinct: 10, directions: {'up': 1, 'sideways': 6, 'down': 1, 'trust': 1}
-[ok  ] keyword placement
-         keyword: bariatric pre-qualification, occurrences: 6, h2_count: 12
+[ok  ] internal links                        links_total: 14, links_distinct: 7
+[ok  ] keyword placement                     keyword: bariatric pre-qualification, occurrences: 6, h2_count: 10
 [ok  ] abbreviations (M1)
-[ok  ] accuracy discipline
-         accuracy_figures_present: True, links_to_framework: True
-
-approved but uncited: FX-003, FX-004, FX-010
+[ok  ] accuracy discipline                   accuracy_figures_present: True, links_to_framework: True
 
 VERDICT: PASS
 ```
 
-**9 of 9, unchanged from the editor's report.** This is a fresh run against the current file and
-pack on disk, not a re-statement of the editor's number. The report's final line ("Mechanics are
-clean. Judgment is still open: run quality-controller on whether the argument holds and whether each
-section earns its place.") is a standing reminder from the script, not a fail; the judgment call is
-this publisher pass plus Vadim's read, not a further mechanical gate.
+**Fix-pass rerun, this session, against `draft-v3-editor.md` as it now stands after the coordinator
+applied G1.** Prose words 4,387 (was 4,413 in the report's first version) and AI density 0.81 (was
+1.0) — both drops trace to G1 removing the duplicated ±3.5% passage from §5; `claims_used` is
+unchanged (7 distinct ids, same as before) because the gate reports distinct ids, not occurrence
+counts, so it never surfaced the duplicate `FX-008` marker in the first place (`publish-package.md`
+§3a and §3h).
 
-**AI-tells detector, also re-run this session, not estimated:**
+**With the context pack** (adds the link-direction breakdown):
+
+```
+$ python3 scripts/article_lint.py workspace/seo/articles/bariatric-hub-refresh/draft-v3-editor.md \
+    --pack workspace/seo/_context-packs/2026-09-03-bariatric-hub-refresh.yaml --report
+
+[ok  ] internal links   links_total: 14, links_distinct: 7, asset_urls: 0
+                         directions: {'up': 1, 'sideways': 3, 'down': 1, 'trust': 1}
+[ok  ] all other gates as above
+
+approved but uncited: FX-003, FX-004, FX-010
+VERDICT: PASS
+```
+
+**9 of 9 gates, both runs.** The `superseded figures` gate is the one that mattered here: it failed
+on six `predicted weight` hits on the editor's first pass through this ruling, against a
+`SUPERSEDED` row inherited from the wellness hub's Review 1. Per this task's own framing, that is
+resolved and not re-litigated in this report: Vadim scoped the row to wellness copy on 2026-09-07,
+the gate now passes cleanly, and `plan.md` writer note 6 ("No `predicted weight`") is overridden for
+this page by decision B4.
+
+**AI-tells detector, run directly, this session:**
 
 ```
 $ python3 brand-assets/style-guides/scripts/detect-ai-tells.py \
-    workspace/seo/articles/bariatric-hub-refresh/draft-v2-editor.md --channel article --summary
+    workspace/seo/articles/bariatric-hub-refresh/draft-v3-editor.md --channel article --summary
 
-SEO / blog article - en - 5545 words
-AI density: 0.36/1000 (budget 6.0) -> low
+SEO / blog article · en · 4953 words
+AI density: 0.81/1000 (budget 6.0) -> low
 VERDICT: CLEAN
 TOP SOFT MARKERS:
-  2x 'facilitated' (L121)
+  2x 'facilitated' (L135)
+  2x 'rather than' (L183)
 ```
 
-This matches `draft-v2-editor.md`'s own frontmatter (`ai_density_after: 0.36`) and the editor
-report's Pass 3c figure exactly, because it is the same script against the same file. Recording the
-actual command and output here (and in `publish-package.md`) per the 2026-08-25 correction to this
-skill's instructions: an estimate, however close, is not the same as a run, and the difference has
-mattered before on this exact pipeline.
+Fix-pass rerun. The word count (4,953, was 4,983) and AI density (0.81, was 1.0) are both lower than
+the report's first version because G1 removed the duplicated ±3.5% passage and its `rather than`
+clause from §5, not because the detector or the file's other content changed. `draft-v3-editor.md`'s
+own frontmatter still says `ai_density_after: 1.0`, which is now stale against the body (the editor's
+frontmatter was not re-run after the coordinator's direct edit); this session's number is the one
+verified against the file on disk. The two `rather than` hits left are both in §6, the B4
+product/accuracy-boundary sentences the decisions file explicitly forbids rewriting; the two
+`facilitated` hits sit inside the proper noun *Federally Facilitated Exchange*.
 
-**Additional independent checks run directly against the file, not through the linter:**
+**Additional independent checks, run directly against the file:**
 
 ```
-$ grep -cP '[\x{2013}\x{2014}]' draft-v2-editor.md   -> 0   (zero em or en dashes)
-$ grep -in "dexa" draft-v2-editor.md                  -> no match (DXA used throughout, never DEXA)
-$ grep -o '<!-- ext-claim: [A-Za-z0-9_.-]*' ... | sort | uniq -c   -> 10 distinct ids, 16 markers
-$ grep -c 'DOWN-LINK LANDING' draft-v2-editor.md      -> 7
+$ grep -cP '[\x{2013}\x{2014}]' draft-v3-editor.md        -> 0   (zero em or en dashes)
+$ grep -in "dexa" draft-v3-editor.md                       -> no match (DXA used throughout, never DEXA)
+$ grep -c 'DOWN-LINK' draft-v3-editor.md                    -> 0   (all seven markers removed by the editor)
+$ grep -o '<!-- ext-claim: [A-Za-z0-9_.-]*' ... | sort | uniq -c   -> 9 distinct ids, 13 markers
+$ grep -o '<!-- claim: [A-Za-z0-9_.-]*' ... | sort | uniq -c       -> 7 distinct ids, 7 markers (was 8;
+                                                                       G1 dropped the duplicate FX-008)
+$ grep -n "positioned as" draft-v3-editor.md                -> 1 hit, the licensed medical-device sentence
+$ grep -in "occupational-health\|insurance-underwriting\|wellness-rewards" draft-v3-editor.md  -> no match
 ```
 
 ---
 
-## 2. What changed between the live page and this draft
+## 2. What changed in `publish-package.md` between the two passes
 
-### 2a. Structure: 9 H2s (live) to 12 sections (new), FAQ 20 questions to 16
+This is the delta in the **package**, not in the article body (`editor-report-review-1.md` already
+carries the full body-level B/C/D delta table against `draft-v2-editor.md`; this section does not
+repeat it).
 
-| Live section (published-live-2026-07-27.md) | Words | Fate in the new draft |
+| Package section | First pass (from `draft-v2-editor.md`) | This rebuild (from `draft-v3-editor.md`) |
 |---|---|---|
-| H1 + intro + disclaimer | ~250 | REWRITE into Front matter. Disclaimer kept verbatim; H1 and meta description rewritten (§2c). |
-| 1. Why bariatric programs need faster pre-qualification | ~207 | Merged with #2 into new **Section 1**, "The bariatric intake gap." |
-| 2. The intake gap: when eligibility gets confirmed too late | ~286 | Merged into new **Section 1**. |
-| (mid-body eBook promo block, "The Digital Health Revolution") | — | **Dropped.** Second CTA in the body, which the style guide forbids. Not carried forward; flagged as Open Item #10 in `plan-audit.md`, decision default is to omit rather than restore silently. |
-| 3. The GLP-1 shift: volume contracted, intake complexity rose | ~355 | REWRITE into new **Section 4**, "GLP-1 changed the shape of the intake funnel." Every number in it changes (§2b). |
-| 4. What FitXpress captures, and how | ~202 | Merged into new **Section 7**. |
-| 5. Pre-qualification: structured body data before the consult | ~400 | KEPT (structure and mechanism paragraph intact) as new **Section 6**. Use Case Summary bullet list promoted to front matter. |
-| 6. Pre-auth documentation: cleaner packets, fewer delays | ~380 | SPLIT. The payer-timeline paragraph is replaced entirely by new **Section 3** (CMS-0057-F). The packet-contents list moves to Section 3. The documentation-mechanics paragraph moves to new **Section 9**. |
-| 7. Post-procedure: turning the baseline into longitudinal tracking | ~224 | REWRITE and expand into new **Section 8**, nearly doubled, promoted from the thinnest major section to a co-equal spine with pre-qualification. |
-| 8. Where FitXpress fits in the bariatric patient journey | ~114 | Merged into new **Section 7**; the patient-journey table carries over unchanged. |
-| 9. Why mobile body scanning beats manual measurement workflows | ~277 | REWRITE into new **Section 10**, retitled away from "beats" (hype-adjacent), converted from a bullet list into a comparison table. |
-| 10. FAQ, 20 questions in 3 blocks | ~1,319 | REWRITE into new **Section 11**, 16 questions in 4 blocks (§2d). |
-| CTA + Related reading (2 links) | ~100 | REWRITE into new **Section 12**, 7 related-reading links (up from 2). |
-| — (no live counterpart) | — | **NEW: Section 2** ("Short answer" GEO/AEO block), **Section 3** (CMS-0057-F clock), **Section 5** (documented BMI history vs. current BMI). |
+| §1 meta description | Led with the 7-day payer clock, 154 chars | Leads with four workflow nouns (pre-qualification, intake, pre-auth preparation, post-op tracking), 145 chars, D8 verbatim |
+| §1 "Why this direction" | Argued the payer clock was "the single most important factual change on the page" | Rewritten: explains why that framing is now obsolete (B1 narrowed the clock claim itself) and why the reviewer's replacement is more durable |
+| §1 meta title | 54 chars, keyword-first | **Unchanged** — D8 rules on the description only |
+| §2 SEO checklist | 10 grouped items reported against a 15-item literal list, with a note about the mismatch | Re-derived, 15 items reported as 15, same mismatch-with-template note carried forward rather than re-litigated |
+| §2 content-strategy checklist | 9/9, internal links `{up:1, sideways:6, down:1, trust:1}` | 9/9, internal links `{up:1, sideways:3, down:1, trust:1}` — the drop is D7, recorded explicitly so it is not read as regression |
+| §3a marker table | 16 `ext-claim` / 10 distinct ids, 8 `claim:FX` (after two prior miscounts on the same draft) | 13 `ext-claim` / 9 distinct ids, 7 `claim:FX` / 7 distinct ids (post-G1 count; see §2a below) — recomputed fresh against the current file, not carried forward |
+| §3b DOWN-LINK table | 7 rows mapping anchor sentences to 7 planned P1/P2 child articles | Empty — B6 removed all 7 anchors plus an 8th (privacy FAQ). Replaced with an explanation of what that means for future children (E2) rather than a stale table |
+| §3c privacy FAQ note | Described the "not yet published" sentence in the live compliance bullet | Updated: that sentence is gone (B6), but the underlying "never link it" rule is unchanged |
+| §3g (new) | Did not exist | New section recording that D7 removed two links the context pack marked "Already present — keep," so a CMS operator does not treat their absence as a defect |
+| §3h-3j (new, this fix pass) | Did not exist | New sections recording G1 (resolved), G2 (disclosed) and G3 (allowed) — see §2a below |
+| §4 image suggestions | Anchored to old section numbers (workflow at §6, comparison table at §7 or §10) | Anchored to new section numbers (workflow at §2, comparison/pilot tables at §7/§8) |
+| §5 internal links table | 18 instances / 10 distinct targets / 6 sideways links | 14 instances / 7 distinct targets / 3 sideways links, rebuilt from a fresh grep against `draft-v3-editor.md`, not adjusted from the old table |
+| §6 CMS-ready body | `draft-v2-editor.md` body, comments stripped | `draft-v3-editor.md` body, comments stripped — post-G1 as of this fix pass, so a different text from both the first-pass body and this table's own original entry |
+| faq_branch (frontmatter) | `B (16 questions)` | `B, 9 questions` |
+| Approval framing | Standard STOP block | Same STOP block plus an explicit note that any informal approval given before Review 1 does not carry forward, since the content changed substantively under B1-B7 |
 
-Net: 3 live sections merged away, 3 sections newly added, 1 section split across three new
-locations, 1 section promoted, 1 mid-body promo dropped. Total prose is roughly flat (live ~4,100,
-new 4,712 all-in / 4,316 excluding table cells), but the internal composition shifted substantially:
-the FAQ shrank from 32% of the article to 16.8%, and patient progress tracking grew from the
-thinnest major section (224 words) to a full co-equal section (390 words) plus its own share of
-Section 5's new argument.
+### 2a. What this fix pass changed, on top of the table above
 
-### 2b. FAQ: 20 questions to 16, not 13 — Branch B
+The table above documents the draft-v2-to-v3 rebuild and was accurate when first written. Two things
+moved under it afterward, both from `review-1-decisions.md` §G (the coordinator's rulings on QC's
+17/20 report), and this subsection records the delta rather than silently editing the table's history:
 
-The plan priced two branches for the live FAQ's "About bariatric surgery" block (`plan-audit.md`
-§D-1): Branch A cuts it entirely (13 questions total), Branch B keeps three of its six questions in
-rewritten, non-clinical-outcome form (16 questions total). **The shipped draft is Branch B**
-(`draft-v2-editor.md` frontmatter: `faq_branch: B`), per `plan.md`'s header note that Vadim's
-2026-09-03 approval, given without naming a branch, was taken as approval of the audit's own
-recommendation to keep Branch B.
-
-| Live FAQ block | Live count | New block | New count | What happened |
-|---|---|---|---|---|
-| Pre-qualification and pre-authorization | 8 questions | Pre-qualification and pre-authorization documentation | 6 questions | 2 absorbed into others, 1 new (payer-decision-clock), 1 new (documented BMI history) |
-| Post-procedure progress tracking | 6 questions | Patient progress tracking | 4 questions | 2 absorbed into others |
-| About bariatric surgery | 6 questions | Bariatric surgery basics | 3 questions | 3 clinical-outcome questions (benefits, side effects, pros/cons) cut under **both** branches; 3 remaining rewritten to carry no clinical-outcome claim (D-1 ruling) |
-| — | — | Scope and governance (new block) | 3 questions | Guidelines §14 requires this block type; none existed on the live page |
-
-Live 20 to new 16. Every new answer runs 2 to 4 sentences (guidelines §14 range), against a live FAQ
-that asked the same pre-auth question four different ways.
-
-### 2c. The four substantive argument changes named in the task brief
-
-1. **CMS-0057-F, the 7-day prior-authorization clock (new Section 3).** The live page's payer-timeline
-   sentence, *"Payer review windows commonly run from a few weeks to several months,"* is gone. It is
-   now wrong for impacted payers on standard requests, and it is not replaced with a new universal
-   number, because the honest statement is that the window depends on payer, plan type and whether
-   the request is expedited. The new section states the rule (72 hours expedited / 7 calendar days
-   standard, effective 1 January 2026), the scope limitation in the same breath (Medicare Advantage,
-   Medicaid, CHIP, Federally Facilitated Exchange Qualified Health Plans; not all commercial ERISA
-   plans; no prior authorization at all for Medicare fee-for-service), and inverts the live page's
-   argument from "cleaner packets, fewer delays" to "first-pass completeness is the whole game."
-2. **GLP-1 rebuilt on 2026 data (new Section 4).** The live section's numbers stopped at a 2023
-   snapshot (*"bariatric surgery use fell 8.7% between 2022 and 2023,"* JAMA Network Open via
-   StatNews). The new section replaces it with a three-row market-indicator table built from two
-   measurement systems that are explicitly kept apart: the ASMBS national estimate (270,089 in 2023,
-   down 3.5% from 279,967 in 2022, series ends 2023) and the JAMA Surgery 13 May 2026 claims cohort
-   (utilization down 34.1% from 2022 to 2024, cohort counts through 33,429 in 2025). The two never
-   share a sentence, per the two-series guardrail the gap analysis flagged as a blocker (§3).
-3. **The documented-BMI-history section (new Section 5, no live counterpart at all).** Built on an
-   ASMBS release (5 May 2026, Chhabra et al., NYU Grossman) showing patients lose roughly 8% of body
-   weight on a GLP-1 before surgery. The operational point, entirely absent from the live page: a
-   patient's **current** BMI can sit below a payer's threshold while their **documented history**
-   still qualifies, which shifts eligibility toward dated, verifiable history rather than a single
-   consult measurement. This is flagged in the plan and the audit as the single sharpest new
-   operational argument on the page.
-4. **Two substantiation fixes, both inside the new Section 1.**
-   - The live page's *"an estimated 33 million US adults meet eligibility criteria, yet fewer than 1%
-     complete surgery in any given year"* is gone. Its citation (PMC10136401) is a qualitative
-     attrition paper, not an eligibility-prevalence source, and no source on file supports a "33
-     million" figure. Replaced with two ASMBS statements that carry their own numbers: "about 1% of
-     those who meet eligibility requirements" (2025 Fact Sheet) and "90-95% of patients with severe
-     obesity received no treatment during the study period" (ASMBS, 5 May 2026).
-   - The live page's *"pre-operative dropout rates of up to 50-60% are reported across bariatric
-     programs"* (used twice on the live page) published the top of a wide, methodology-dependent range
-     as if it were typical. Replaced with the full range and its dependency: a 2026 narrative review's
-     "as high as 60%," one cohort at 22.25%, Canadian mandatory-pathway programs at roughly 36-76%, US
-     programs at roughly 39-70%, and one single-centre series at 8.9% pre-pandemic, with the explicit
-     statement that attrition depends on program design and how it is measured.
-
-### 2d. Title, meta description and positioning
-
-Live H1: *"Bariatric Pre-Qualification with Mobile 3D Body Scanning: Faster Pre-Auth."* Leads with
-the technology, per CLAUDE.md §3's shift away from "best model" positioning, and subordinates
-progress tracking entirely (224 words, buried at section 7 of 9). New H1: *"Bariatric
-Pre-Qualification and Patient Progress Tracking: A 2026 Body-Data Guide for Obesity Care Teams,"*
-co-headlining both spines and naming the audience instead of the technology. Live meta description
-opened with "How bariatric programs can use FitXpress..."; the recommended replacement (§1 of
-`publish-package.md`) leads with the payer clock and the two workflows instead, with FitXpress named
-nowhere in either the title or the description.
+- **G1 edited `draft-v3-editor.md` itself** (the coordinator's direct edit, 2026-09-07), removing the
+  duplicated ±3.5% passage from §5. That changed the file the table's right-hand column describes:
+  prose words 4,413 to 4,387, the `claim:FX` count 8 to 7 (one `FX-008` marker instead of two), the
+  total comment-marker count 21 to 20, and the body's `rather than` count 3 to 2. §1 above is the
+  fresh rerun; `publish-package.md` §3a and §3h carry the full recount.
+- **Three self-verification errors in the pre-fix `publish-package.md`** are corrected in this same
+  fix pass: an external-citation breakdown that listed ASMBS ×3 against a real count of ×2, a meta
+  rationale that rested on a false claim about where the product name first appears in the body
+  (corrected to point at §2 Stage 1), and a marker-count reconciliation that did not add up to its own
+  stated total. None of these three touched the shipped article body; all three were in the package's
+  own explanatory prose.
 
 ---
 
-## 3. Verified against the audit ledgers, nothing reintroduced
+## 3. Conflicts found, and how each resolved
 
-Grepped directly against `draft-v2-editor.md`, confirming `editor-report.md` §12's own claim: no
-`ISO 8559` / `0.40 cm`, no `95%+`, no per-measurement girth figure (wrist 0.54 cm etc.), no `SOC 2`,
-no pricing, no market sizing (`FX-010`), no `DEXA`, no `230,207` / `177,297` volume series, no
-semaglutide ex-US-exclusivity angle, no KFF employer-coverage figure, no `33 million`, no `50-60%`
-presented as typical, no "surgery is rebounding," no competitor name, no clinical outcome of
-bariatric surgery (benefits, remission, side effects, complication rates). All of `plan-audit.md` §C
-(deliberate omissions), §D (deletions ledger) and §N (what the article does not cover) hold in the
-final draft.
+The task asked specifically what conflicts turned up between the decisions file and what is actually
+in the draft. Four came up during this rebuild; none blocked the package. **Item 4 is corrected in
+this fix pass** (three deviations, not two — QC's own finding at 17/20; see below).
 
-**Keep ledger verified** (`plan-audit.md` §E): the four-stage workflow, the mechanism paragraph
-("the scan does not determine whether a patient is medically eligible... what the scan supplies is a
-structured, verifiable body-data signal the program uses to triage"), the patient-journey table, the
-scope note and disclaimer verbatim, the compliance-posture paragraph (now expanded with FX-005 and
-FX-006), the anti-manipulation paragraph with its hedging intact, and the operational-not-clinical
-framing throughout. All present and unweakened in the final draft.
+1. **The decisions file corrects its own arithmetic mid-paragraph (D6).** Its opening sentence says
+   "Sixteen questions go to nine," then a parenthetical admits "the ruling first said eight," then
+   states "the explicit remove-list below names seven of the sixteen, which leaves nine. The list
+   governs." This is not a conflict between the decisions file and the draft — the draft (9 FAQ
+   questions, verified directly: 9 bolded question lines across 3 H3 blocks) matches the list, not
+   the stray "eight." It is a conflict the decisions file resolved against itself, and the editor
+   followed the resolution correctly. Recording it here because a careless read of just the opening
+   sentence would flag a mismatch that is not real.
+
+2. **`predicted weight` — resolved before this session, not re-opened here.** The `SUPERSEDED` lint
+   row that blocked the editor's first pass was scoped by Vadim to wellness copy on 2026-09-07, per
+   this task's explicit instruction not to re-litigate it. Recorded as a conflict that existed and
+   is now closed, not as an open item.
+
+3. **D7 overrides a live `plan.md` / context-pack instruction, not just a stale draft.** `plan.md`
+   lines 764-765 mark the insurance-underwriting and wellness-rewards links "Already present, keep"
+   and mark the occupational-health link a "GAP" the plan wanted filled. D7 removes all three anyway.
+   This is not an error in either file — `review-1-decisions.md` D7 states outright that it
+   "knowingly drops two live internal links... record it... so nobody restores it." But it means
+   `plan.md`'s own internal-links table is now stale on this specific point, and nothing in this
+   pipeline updates `plan.md` automatically when a later review overrides it. Flagged in
+   `publish-package.md` §3g so the override is visible at CMS-entry time, not just in this report.
+
+4. **Three mechanical/wording deviations from the reviewer's literal text — corrected count, this
+   fix pass.** This report's first version said "two," re-verifying only the §3 heading; QC's 17/20
+   review found a third, undisclosed until the coordinator's ruling **G2**. All three:
+   - §3 H2 — Title Case to sentence case, because `detect-ai-tells.py` bans Title-Case H2s (a
+     house-rule lint failure).
+   - §3 H2 — "bariatric" added, because lint gate 7 requires the exact primary keyword in at least
+     one H2. The reviewer's proposed §3 wording omits it.
+   - §6 H2 — "repeatability" dropped from the reviewer's proposed wording ("outputs, accuracy,
+     repeatability and limitations" to "outputs, accuracy and limitations"). Undisclosed by the
+     editor and not caught by this report's first version; **ruled correct and disclosed by G2**,
+     2026-09-07 — the repeatability figure lives in §5, not §6, so the shipped heading matches what
+     the section actually delivers.
+
+   The first two are formatting/mechanical conformances the decisions file's own house style
+   principle (B1b) anticipates ("style, not content"). The third is a small content-shaped change
+   (a heading promising less than the reviewer's literal wording) that needed a ruling rather than a
+   style-exception, and now has one. Confirmed by reading all three headings directly against
+   `review-1.md`'s and `review-1-decisions.md` §C's proposed wording.
+
+No conflict found rose to the level of contradicting a **ruling** (as opposed to a stale downstream
+artifact, an internal arithmetic slip, or an undisclosed-but-now-ruled deviation). Nothing here
+changed what shipped in `publish-package.md` §6 beyond G1 (§2a above) — the three heading deviations
+are explanatory notes about existing text, not new corrections to the body.
 
 ---
 
-## 4. Open items carried forward to Vadim (not blockers, but not silent)
+## 4. Open items carried forward to Vadim (not blockers)
 
-1. **Byline spelling.** `Assel Sekerova` throughout this workspace; the live site alternates between
-   that spelling and `Asselya Sekerova` across other hub republishes (`published-articles-inventory.md`
-   rows 8-10). Needs Vadim's call before this goes live; not resolved by this package on purpose (see
-   `publish-package.md` §0.3).
-2. **`external_claims:` schema gap.** The pack has no equivalent of `approved_claims:` for
-   third-party statistics, which is why the 16 `ext-claim` HTML comments exist as scaffolding rather
-   than resolving through the linter directly. Recommendation: add an `external_claims:` block to the
-   context-pack schema and teach `context-pack-builder` to emit it. Every stats-heavy article hits
-   this same gap (editor-report.md §11 item 1; carried here since it recurred on this article too).
-3. **`sales@3dlook.ai` vs `@3dlook.me`.** The CTA in Section 12 uses the live page's existing address
-   (`sales@3dlook.ai`), left unresolved by the editor pending someone with authority over the
-   published contact address. Not changed in this package.
-4. **CDC *Preventing Chronic Disease* wording** ("underestimated the prevalence of severe obesity by
-   40%") is carried over from the live page's phrasing and was flagged by the plan for
-   re-verification at fact-check; still open per the editor's report.
-5. **No named bariatric customer story exists** anywhere in `case-studies/` or `proof-points.md`,
-   unlike insurance, wellness and telehealth. Every operational claim on this page rests on a
-   third-party citation or a disclosed internal limit. Not fixable at the publisher stage; flagged
-   for whoever owns case-study sourcing.
-6. **The primary keyword `bariatric pre-qualification` has zero measured US search volume**
-   (`plan-audit.md` §K, Open Item #1). The page is planned and built as a BOFU/GEO/sales-enablement
-   hub, not an organic-volume play. This is a strategic fact, not a defect in this package; Vadim
-   should see it now rather than in Search Console in six months, per the same failure class as
-   `remote-body-measurement-online-fitness-coaching` (2026-08-25).
-7. **The mid-body eBook promo block is not restored.** Default per the plan was to flag rather than
-   silently delete; restoring it (if Vadim wants it) is a one-paste addition and is not part of this
-   package.
-8. **Six of seven `DOWN-LINK LANDING` anchors have no live child to link to yet.** They are recorded
-   as a table in `publish-package.md` §3b for whoever edits this hub next, once each P1/P2 child
-   article ships.
+Re-derived against the current state, not copied from the first report. Items resolved by Review 1
+are marked closed rather than dropped silently, so the history is visible.
 
-None of these eight items is a ❌ on either checklist in `publish-package.md` §2. They are open
-items for Vadim's visibility, not gates.
+1. **`external_claims:` schema gap — still open.** The context pack has no equivalent of
+   `approved_claims:` for third-party statistics; the `ext-claim` comments remain scaffolding.
+   Recommendation unchanged: add an `external_claims:` block to the schema.
+2. **`sales@3dlook.ai` vs `@3dlook.me` — still open.** §10's CTA still uses the live page's existing
+   address. Not touched by Review 1, not resolved by this rebuild.
+3. **No named bariatric customer story — still open.** Every operational claim still rests on a
+   third-party citation or a disclosed internal limit. Not fixable at the publisher stage.
+4. **Zero measured US search volume for the primary keyword — still open, unchanged fact.** The page
+   remains a BOFU/GEO/sales-enablement play by design, not an organic-volume play.
+5. **The mid-body eBook promo block is still not restored — still open, untouched by Review 1.**
+6. ~~**Byline spelling.**~~ **Closed 2026-09-03**, before Review 1. `Assel Sekerova` throughout.
+7. ~~**CDC *Preventing Chronic Disease* wording.**~~ **Closed by Review 1's B5 carve-out.** The
+   reviewer explicitly confirmed the sentence is correct as written and ordered it left untouched;
+   what changed is only the inference drawn from it in the next sentence, which is gone.
+8. **New: curated internal links now 7 distinct, against `plan.md`'s 8-11 target — not a defect.**
+   D7 removed three links deliberately; the plan's numeric target predates that ruling. All four
+   link directions are still covered. Surfaced here so Vadim sees the count moved, not just that the
+   checklist still passes.
+9. **"Consult-to-procedure conversion" survives once, in §7's buyer-fit paragraph, as a metric
+   directors are accountable for. Ruled allowed, 2026-09-07 (G3) — corrected from "open" to
+   "decided."** B5 removed the claim that the *product* raises this metric (the Use Case Summary
+   Business-value row); naming it as something a director's role owns is a different, narrower
+   statement, and the coordinator's ruling confirms that is the distinction B5 draws. Kept as
+   written. Still listed here, per G3's own instruction, so the next reviewer sees a decision rather
+   than a leftover — see `publish-package.md` §3j for the full ruling.
+10. **New: D7's occupational-health removal reverses a `plan.md` "GAP" instruction, not just a
+    "keep."** See conflict #3 above. `plan.md` itself is not corrected by this rebuild — that would
+    be an edit to a synced planning artifact, which is out of scope for a `publish`-stage pass — but
+    the override is recorded in `publish-package.md` §3g so it does not get silently re-applied.
+11. **Any P1 child article that ships later (pre-authorization documentation guide, patient progress
+    record guide, hybrid care guide) will need to find its own anchor point.** B6 removed the
+    sentences that used to reserve one. Not a defect in this rebuild; a note for whoever writes that
+    next article.
+12. ~~**The ±3.5% passage shipped twice, in §5 and §6, with the package silent about it.**~~
+    **Closed 2026-09-07, ruling G1.** QC's top issue at 17/20: the editor's own report flagged this
+    for a coordinator ruling and it reached neither the pre-fix `publish-package.md` nor this report's
+    §4. The coordinator applied G1 directly to `draft-v3-editor.md`; the figure now ships once, in
+    §6. Full record in `publish-package.md` §3h.
+13. ~~**§6's heading drops "repeatability" from the reviewer's proposed wording, undisclosed.**~~
+    **Closed 2026-09-07, ruling G2.** Kept as shipped; disclosed and approved rather than reverted.
+    Full record in `publish-package.md` §3i and §3 item 4 above (now three deviations, not two).
+
+None of these thirteen items is a ❌ on either checklist in `publish-package.md` §2. Items 12 and 13
+are closed, kept here (struck through) rather than dropped silently, matching how item 6 and item 7
+are handled above. The rest are open items for Vadim's visibility, not gates.
 
 ---
 
 ## 5. Status
 
 `status: ready_for_review`. Per `project_mvb_publish_package_status.md`, the `approved_for_publish`
-gate has never been reachable mechanically in this pipeline; the actual gate is Vadim's direct ask
-for this refresh (already given, 2026-09-03) plus his approval of the text and meta together at this
-checkpoint. This report and `publish-package.md` do not assert that approval has happened. Next step
-is Vadim's review of `publish-package.md` (text + meta), after which he or a CMS operator publishes
-manually, preserving `datePublished` at 2026-06-05 per the warning in that file's §0.2.
+gate has never been reachable mechanically in this pipeline; the actual gate is Vadim's approval of
+the text and meta together. **Any approval given informally on the first package does not carry
+forward** — the body changed substantively under decisions B1 through B7, C and D, so this is a
+fresh checkpoint, not a resumption of the prior one. This fix pass changes the body once more (G1,
+§2a and §3h above) and corrects the package's own prose (the three self-verification slips QC's
+17/20 report located at pkg :231, :120 and :342 of the pre-fix package) but does not reopen anything
+B1-B7, C or D settled. Next step is Vadim's review of `publish-package.md` (text + meta), after which
+he or a CMS operator publishes manually, re-dating `datePublished` per §0.2 of that file.
