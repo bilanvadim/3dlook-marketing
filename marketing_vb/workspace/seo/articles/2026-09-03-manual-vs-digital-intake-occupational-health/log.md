@@ -146,3 +146,70 @@ mechanical check — see the cannibalization section in `publish-package.md`).
 **STOP.** Checkpoint 2. Waiting on Vadim: full text plus meta together, and a call on the
 Section 1 opening-scene echo (open item 1) if he wants it at zero rather than "substantially
 resolved."
+
+## 2026-09-07 — Review 2 pulled, applied through the pipeline, QC'd and remediated
+
+**Source.** Google Doc tab "Review 2" (`t.9ltdnz6zu0ug`), pulled through the `oo` googledocs
+connector with `include_tabs_content=true` — the claude.ai Drive MCP is gone since the account
+change, `oo` is the route now. Verbatim into `review-2.md`; nothing reconstructed, unlike the
+Review 1 first pass. Soft line breaks (`\x0b`) restored, or four of the five editorial refinements
+would have collapsed into unreadable single lines.
+
+**Base verified before anything was edited.** `final.md` rev 3 was normalised (links to anchor
+text, emphasis stripped, claim markers dropped) and diffed against the doc's "Version 2" tab:
+**identical, 85 of 85 content lines**. So the reviewer read exactly the shipped text and every
+"current wording" quote in the review resolves to a unique string in the file. Worth keeping as a
+step — it is cheap and it is the thing that makes `count == 1` replacements safe.
+
+**A coordinator hand-pass was written and then reverted.** The first application of Review 2 was
+done by hand in this session, gates passing, before Vadim said the pipeline must apply reviewer
+rounds, not the coordinator. `final.md` and `publish-package.md` were restored from `v2/`, the
+hand-pass was moved OUT of the article dir so it could not contaminate the agents' inputs, and the
+run was handed to `seo-editor` -> `seo-publisher` -> `quality-controller`. Only the coordinator
+artifacts survived from it: `review-2.md` and `review-2-decisions.md`. **`review-2-decisions.md`
+§9 still carried the hand-pass's gate numbers for a while (2,173 words, 20 replacements) — a file
+that was never shipped.** `seo-editor` flagged it rather than editing the coordinator's section,
+which was the right call; §9 is now rewritten with the shipped numbers.
+
+**Revisions.**
+
+| Rev | By | What | Prose | Gates |
+|---|---|---|---|---|
+| 4 | `seo-editor` | Review 2 applied, 22 replacements, each asserting `count == 1` | 2,185 | PASS / CLEAN, exit 0 |
+| 4 | `seo-publisher` | `publish-package.md` rev 3 | — | re-run, agreed |
+| — | `quality-controller` | **17/20** (A4 B5 C2 D3 E3) | — | judgment scope only |
+| 5 | `seo-editor` | QC remediation, four fixes | **2,160** | PASS / CLEAN, exit 0 |
+| — | `seo-publisher` | `publish-package.md` rev 4 | — | re-run, agreed |
+
+Both gates were executed at every stage and re-run independently by the coordinator between
+stages. Three separate runs of each agree on the final numbers: `article_lint.py` PASS exit 0 all
+9 gates, 2,160 prose words inside the reviewer's binding 1,900-2,200 band with 40 words of
+headroom where rev 3 had one; `detect-ai-tells.py` CLEAN exit 0, `hard_fails: []`,
+`house_rule_violations: []`, ai_density 0.86 against a budget of 8.0, rhythm variation 0.66.
+
+**The one real defect this pass produced, and it was the coordinator's.** `review-2-decisions.md`
+graded editorial refinement E5 as "Verbatim" and said "Q1 and Q5 survive". E5 actually says reduce
+the five questions to "which components move, and **how measurement performance was evaluated**".
+`seo-editor` applied the decisions row rather than the instruction, kept the old narrow Q5, and the
+retained question then duplicated the E3 sentence beneath it — which was escalated to Vadim as an
+unresolvable reviewer-vs-reviewer conflict. It was neither. `quality-controller` caught it
+(finding A-1), rev 5 applies E5 in the reviewer's own words, the duplication is gone and the open
+item is struck from the package.
+
+**Standing lesson, for whoever writes the next `review-N-decisions.md`:** the editing agent reads
+the decisions file, not the review. A row that summarises an instruction loosely *becomes* the
+instruction. Grade rows against the reviewer's words, and where a row says "verbatim", quote the
+words.
+
+**Three sub-points of review item 6 were declined on source-of-truth grounds** and are open for
+Vadim, not for the pipeline: R2-2 (remove "processes no personal identifiers" — it is the literal
+text of approved claim FX-014 and the sentence carries that marker, so cutting it desyncs the
+article from a claim it still cites; a cut has to reach `compliance.md`, `proof-points.md`,
+`how-it-works.md` **and** the context-pack claim text, or the next pack regenerates the phrase),
+R2-3 (GDPR controller/processor — in no brand-asset), R2-4 (retention of generated outputs — the
+asset documents photo retention only, and the article inherits that silence). R2-1, the one
+genuine reviewer-vs-reviewer overlap in Section 4, is also left in deliberately; `quality-
+controller` independently agreed it should not be settled by the pipeline.
+
+**STOP.** Checkpoint 2, again. Waiting on Vadim: the three privacy calls, R2-1, and whether he
+wants a "Version 3" tab written back to the source Google Doc.
