@@ -1,8 +1,8 @@
 # Published Articles Inventory — 3DLOOK Content Hub
 
-> Last updated: 2026-09-03
+> Last updated: 2026-09-10
 > Source: `https://3dlook.ai/post-sitemap.xml` (Yoast SEO — authoritative)
-> Total: **156 published articles** (155 in the 2026-08-18 sitemap snapshot, +1 published 2026-08-21 and registered by hand before the next sitemap pull). The 2026-08-24 `online-pharmacy-bmi-verification` rewrite and the 2026-08-28 `glp-1-market` hub refresh **do not change the count** — both were republished at their existing URLs.
+> Total: **157 published articles** (155 in the 2026-08-18 sitemap snapshot, +1 published 2026-08-21 and registered by hand before the next sitemap pull). The 2026-08-24 `online-pharmacy-bmi-verification` rewrite and the 2026-08-28 `glp-1-market` hub refresh **do not change the count** — both were republished at their existing URLs. **+1 net-new on 2026-09-04** — `remote-body-measurement-online-fitness-coaching` (Hub #4, Digital Coaching cluster), live-verified 2026-09-10, which takes the count from 156 to 157.
 > Purpose: single source of truth for what's published, mapped to content plan hubs
 
 ---
@@ -24,6 +24,7 @@ Seven health articles were read on the live site and reconciled against this inv
 | 9 | `online-pharmacy-bmi-verification-a-2026-compliance-guide` | Online Pharmacy BMI Verification: A 2026 Compliance Guide | **2026-08-24** (re-dated by the republish) | 2026-08-24 | ~2,260 | `workspace/seo/articles/2026-05-21-online-pharmacy-bmi-verification/` |
 | 10 | `glp-1-market` | GLP-1 Market Growth and the Need for Better Patient Progress Tracking | **2026-08-28** (re-dated by the republish) | 2026-08-28 | ~2,000 | `workspace/seo/articles/glp-1-market-hub/` |
 | 11 | `bariatric-pre-qualification-mobile-3d-body-scanning` | Bariatric Pre-Qualification with Mobile 3D Body Scanning: Faster Pre-Auth | **2026-06-05** | **2026-07-27** | ~4,100 | `workspace/seo/articles/bariatric-hub-refresh/` |
+| 12 | `remote-body-measurement-online-fitness-coaching` | Remote Body Measurement for Online Fitness Coaching Programs | **2026-09-04** | — | ~2,560 | `workspace/seo/articles/2026-08-26-remote-body-measurement-online-fitness-coaching/` |
 
 > **Row 11 added 2026-09-03 — and it is a correction, not a new publication.** The Bariatrics hub was
 > **expanded in place on 2026-07-27** (`datePublished` 2026-06-05T13:44:40+00:00, `dateModified`
@@ -87,7 +88,7 @@ Each working directory now carries a `FINAL-PUBLISHED.md` marker with the live U
 | 1 | Main Health Hub | P0 | ✅ Jul 24 | — | None |
 | 2 | Accuracy / Buyer Evaluation | P0 | ✅ Jul 3 | DEXA vs, Tech Comparison, Accuracy ROI, Daily Changes | None (trust assets pending) |
 | 3 | Data, Privacy, Security & Regulatory FAQ | P0 | ❌ | — | **OVERDUE** |
-| 4 | AI in Fitness | P0 hub + P1/P2 | ✅ Jul 31 | AI in Fitness (refreshed hub), Fitness Tech Companies, AI Body Scanning for Fitness, Connected Fitness, Fitness Apps, Fitness Trends | Hub refreshed & live Jul 31, 2026; P1/P2 clusters pending |
+| 4 | AI in Fitness | P0 hub + P1/P2 | ✅ Jul 31 | AI in Fitness (refreshed hub), **Remote Body Measurement for Online Fitness Coaching (Sep 4, 2026 — first net-new cluster article)**, Fitness Tech Companies, AI Body Scanning for Fitness, Connected Fitness, Fitness Apps, Fitness Trends | Hub refreshed & live Jul 31, 2026; first Digital Coaching cluster article live Sep 4; remaining P1/P2 clusters pending |
 | 5 | AI in Telehealth | P0 hub + P1/P2 | ✅ Aug 7 | Patient Engagement (Aug 14), **Telehealth BMI verification — shipped Aug 24 as a section of the Pharmacy BMI article, not a page** | Hub refreshed & live Aug 7, 2026; BMI-verification row closed; remaining P1/P2 clusters pending |
 | 6 | GLP-1 Market | P0 hub + P1/P2 | ✅ **Hub refreshed Aug 28, 2026** | Pharmacy BMI (**rewritten Aug 24**), GLP-1 Compliance, Visual Progress, Weight Loss Industry, Weight Loss Clinic Tips, Body Scanning for Weight Loss, Beyond BMI, Body Composition Tools listicle (Aug 21) | Hub is current — P1/P2 cluster rows unblocked |
 | 7 | Insurance Underwriting | P0 | ✅ Jun 17 | — | None |
@@ -137,6 +138,7 @@ Each working directory now carries a `FINAL-PUBLISHED.md` marker with the live U
 
 ### Fitness (Hub #4)
 - `ai-in-fitness-industry/` — **AI in Fitness: How Structured Body Data Powers Progress Tracking, Personalization, and Digital Coaching** — Jul 31, 2026 — Hub (refreshed from Sep 2024)
+- `remote-body-measurement-online-fitness-coaching/` — **Remote Body Measurement for Online Fitness Coaching Programs** — Sep 4, 2026 — P1 cluster (Digital Coaching). Live text ≠ our draft, see `FINAL-PUBLISHED.md` in the working dir
 - `top-fitness-tech-companies/` — **Top Fitness Tech Companies** — May 2024 — TOFU listicle
 - `ai-body-scanning-for-fitness/` — **AI Body Scanning for Fitness** — pre-2026 — Education
 - `top-fitness-industry-trends/` — **Top Fitness Industry Trends** — pre-2026 — TOFU
@@ -350,6 +352,7 @@ Main Health Hub (ai-body-data-health-hub) — Jul 24, 2026
   │
   ├── Fitness
   │   ├── ai-in-fitness-industry (Jul 31, 2026) ← HUB (refreshed)
+  │   ├── remote-body-measurement-online-fitness-coaching (Sep 4, 2026) — P1 Digital Coaching
   │   ├── top-fitness-tech-companies (May 2024)
   │   ├── ai-body-scanning-for-fitness
   │   ├── connected-fitness-industry
