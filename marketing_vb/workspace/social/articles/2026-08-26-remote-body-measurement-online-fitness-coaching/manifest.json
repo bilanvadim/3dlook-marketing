@@ -1,0 +1,103 @@
+{
+  "article": {
+    "slug": "remote-body-measurement-online-fitness-coaching",
+    "title": "Remote Body Measurement for Online Fitness Coaching Programs",
+    "product": "fitxpress",
+    "source_file": "workspace/seo/articles/2026-08-26-remote-body-measurement-online-fitness-coaching/published-live-2026-09-04.md",
+    "source_status": "published",
+    "published_url": "https://3dlook.ai/content-hub/remote-body-measurement-online-fitness-coaching/",
+    "date": "2026-09-10"
+  },
+  "profiles": [
+    {
+      "profile_id": "twitter-company",
+      "platform": "twitter",
+      "handle": "@3DLOOK",
+      "post_file": "twitter-company/post.md",
+      "format": "screenshot",
+      "status": "ready",
+      "character_count_body": 254,
+      "qc_score": "20/20"
+    },
+    {
+      "profile_id": "instagram-company",
+      "platform": "instagram",
+      "handle": "@3dlook.ai",
+      "post_file": "instagram-company/post.md",
+      "format": "carousel",
+      "status": "ready",
+      "character_count_body": 854
+    },
+    {
+      "profile_id": "facebook-company",
+      "platform": "facebook",
+      "handle": "3DLOOK",
+      "post_file": "facebook-company/post.md",
+      "format": "infographic",
+      "status": "ready",
+      "character_count_body": 1196
+    },
+    {
+      "profile_id": "linkedin-company",
+      "platform": "linkedin",
+      "handle": "3DLOOK",
+      "post_file": "linkedin-company/post.md",
+      "format": "infographic",
+      "status": "ready",
+      "word_count_body": 226
+    },
+    {
+      "profile_id": "linkedin-katerina",
+      "platform": "linkedin",
+      "handle": "Katerina Galich",
+      "post_file": "linkedin-katerina/post.md",
+      "format": "text",
+      "status": "ready",
+      "word_count_body": 157
+    },
+    {
+      "profile_id": "linkedin-vadim",
+      "platform": "linkedin",
+      "handle": "Vadim Bilan",
+      "post_file": "linkedin-vadim/post.md",
+      "format": "text",
+      "status": "ready",
+      "word_count_body": 146,
+      "qc_score": "20/20"
+    },
+    {
+      "profile_id": "linkedin-nick",
+      "platform": "linkedin",
+      "handle": "Nick Omelchak",
+      "post_file": "linkedin-nick/post.md",
+      "format": "text",
+      "status": "ready",
+      "word_count_body": 153
+    },
+    {
+      "profile_id": "linkedin-olena",
+      "platform": "linkedin",
+      "handle": "Olena Kudryavtseva",
+      "post_file": "linkedin-olena/post.md",
+      "format": "text",
+      "status": "ready",
+      "word_count_body": 154
+    },
+    {
+      "profile_id": "linkedin-katya",
+      "platform": "linkedin",
+      "handle": "Kateryna Boichuk",
+      "post_file": "linkedin-katya/post.md",
+      "format": "text",
+      "status": "ready",
+      "word_count_body": 146
+    }
+  ],
+  "profiles_skipped": [
+    {
+      "profile_id": "linkedin-whitney",
+      "reason": "posts_per_week: 0"
+    }
+  ],
+  "ready_for_review": true
+}
