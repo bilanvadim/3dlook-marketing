@@ -1,1 +1,1 @@
-245e48008fa814b3251f50755eb656bd9fb86cb1 fix: listing surfaces show the merged view for MCP servers named like built-in toolsets
+1675f1f2c25ce164f07c42e829f2c17a723db94f fmt(js): `npm run fix` on merge (#107057)

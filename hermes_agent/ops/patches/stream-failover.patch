@@ -1,30 +1,30 @@
 diff --git a/agent/chat_completion_helpers.py b/agent/chat_completion_helpers.py
-index 98f4f25677..be767bc23b 100644
+index b9cf6a1d30..3d4ef272a7 100644
 --- a/agent/chat_completion_helpers.py
 +++ b/agent/chat_completion_helpers.py
-@@ -3507,6 +3507,17 @@ class _StreamingCall:
-                 error, provider=str(getattr(self.agent, "provider", "") or ""), model=str(getattr(self.agent, "model", "") or ""))
-             if _cls.reason == FailoverReason.content_policy_blocked:
-                 _stub._content_filter_terminated = True
-+            # [hermes-mechanic:stream-failover] The same verdict also tells a QUOTA or
-+            # TRANSPORT death apart from a real length truncation. The stub is tagged
-+            # finish_reason=length either way, so without this the loop reads "the
-+            # provider is out of quota" as "the model ran long" and spends its four
-+            # continuation attempts re-asking a chain that is already dead.
-+            if _cls.reason in {
-+                FailoverReason.rate_limit, FailoverReason.upstream_rate_limit,
-+                FailoverReason.billing, FailoverReason.overloaded,
-+                FailoverReason.server_error, FailoverReason.timeout,
-+            }:
-+                _stub._provider_failure_terminated = True
-         _reset_stale_streak(self.agent)  # deltas fired => provider responsive: clear the breaker
+@@ -3302,6 +3302,17 @@ class _StreamingCall(StreamingWaitMonitor):
+             getattr(self.agent, "model", "unknown"), None, dropped_tool_names=_partial_names)
+         if _cls is not None and _cls.reason == FailoverReason.content_policy_blocked:
+             _stub._content_filter_terminated = True
++        # [hermes-mechanic:stream-failover] The same verdict also tells a QUOTA or
++        # TRANSPORT death apart from a real length truncation. The stub is tagged
++        # finish_reason=length either way, so without this the loop reads "the
++        # provider is out of quota" as "the model ran long" and spends its four
++        # continuation attempts re-asking a chain that is already dead.
++        if _cls is not None and _cls.reason in {
++            FailoverReason.rate_limit, FailoverReason.upstream_rate_limit,
++            FailoverReason.billing, FailoverReason.overloaded,
++            FailoverReason.server_error, FailoverReason.timeout,
++        }:
++            _stub._provider_failure_terminated = True
          return _stub
  
+     def run(self):
 diff --git a/agent/turn_truncation.py b/agent/turn_truncation.py
-index 6c81d581d3..5212336128 100644
+index 335cb1c3c7..60ab515f06 100644
 --- a/agent/turn_truncation.py
 +++ b/agent/turn_truncation.py
-@@ -153,21 +153,38 @@ def _abort_reason(agent: Any, content: Any, has_tool_calls: bool) -> Optional[tu
+@@ -192,21 +192,38 @@ def _abort_reason(agent: Any, content: Any, has_tool_calls: bool) -> Optional[tu
      return None
  
  
@@ -67,8 +67,8 @@ index 6c81d581d3..5212336128 100644
      if agent._try_activate_fallback():
          # Roll partial content back to the last clean turn so the fallback gets a
          # coherent continuation point; unmark survivors (their text left the partial).
-@@ -258,7 +275,12 @@ def _continue_text(st: _Trunc, _retry: TurnRetryState, assistant_message: Any) -
-     agent._session_messages = messages
+@@ -306,7 +323,12 @@ def _continue_text(st: _Trunc, _retry: TurnRetryState, assistant_message: Any) -
+         )
      return st.end_turn(
          partial_response or _CEILING_NO_TEXT,
 -        "Response remained truncated after 4 continuation attempts",
@@ -81,7 +81,7 @@ index 6c81d581d3..5212336128 100644
      )
  
  
-@@ -337,7 +359,7 @@ def recover_from_truncation(
+@@ -416,7 +438,7 @@ def recover_from_truncation(
          return st.end_turn(user_response, error)
  
      if agent.api_mode in _CONTINUABLE_MODES:
