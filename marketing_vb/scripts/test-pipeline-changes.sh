@@ -12,8 +12,16 @@
 # no sentence at all: since 2026-09-11 the medical-device boundary is written directly,
 # "FitXpress is not a medical device.", and the old form fails like any other.
 #
-# The nine negative fixtures are built on the fly, so this is safe to run any time and needs
-# no state from a previous run.
+# The negative fixtures are built on the fly from a FROZEN known-good article in
+# scripts/fixtures/article-known-good/, so this is safe to run any time and needs no state from a
+# previous run.
+#
+# Why frozen (2026-09-11): the suite used to build everything from the live wellness hub draft in
+# workspace/. That draft kept moving through review rounds (2,790 prose words against a plan target
+# of 1,750, then the sentence-length gate, then the medical-device ruling), and ten checks failed
+# for reasons that had nothing to do with the code under test. A fixture changes only when a test
+# needs it to. The article is the editor's final of the occupational-health intake piece plus
+# claim markers; its pack is a frozen copy of that article's context pack.
 #
 # USAGE
 #     scripts/test-pipeline-changes.sh
@@ -23,8 +31,8 @@
 set -uo pipefail
 cd "$(dirname "$0")/.." || exit 2
 
-A=workspace/seo/articles/2026-08-31-ai-body-data-wellness-platforms-hub
-P=workspace/seo/_context-packs/2026-08-31-ai-body-data-wellness-platforms-hub.yaml
+A=scripts/fixtures/article-known-good
+P=$A/context-pack.yaml
 FIX=$(mktemp -d)
 trap 'rm -rf "$FIX"' EXIT
 
@@ -40,53 +48,56 @@ import pathlib, shutil, sys
 src, out = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2])
 base = src.read_text()
 CASES = {
- "t1_emdash":     ("It is not positioned as a medical device.", "It is not a device — and never was."),
- "t2_dexa":       ("Dual-energy X-ray absorptiometry (DXA)", "Dual-energy X-ray absorptiometry (DEXA)"),
- "t3_height205":  ("150 to 220 cm", "150 to 205 cm"),
- "t4_predweight": ("body composition estimates", "predicted weight and body composition values"),
- "t5_unsourced":  ("The mapping holds across most wellness platforms.",
-                   "The mapping holds, and internal tests show 88% of members complete a 42 cm baseline."),
- "t6_bannedclaim":("It is not positioned as a medical device.", "FitXpress is SOC 2 certified and guarantees compliance."),
+ "t1_emdash":     ("FitXpress is not a medical device.", "FitXpress is not a device — and never was."),
+ "t2_dexa":       ("Equipment-based testing and physical examination continue on-site.",
+                   "Equipment-based testing, a DEXA reading and physical examination continue on-site."),
+ "t3_height205":  ("Repeatability testing used a real-world customer dataset with five scans per participant.",
+                   "Repeatability testing used a real-world customer dataset of people 150 to 205 cm tall."),
+ "t4_predweight": ("80+ body measurements, BMI, and a session timestamp.",
+                   "80+ body measurements, BMI, predicted weight and body composition values, and a session timestamp."),
+ "t5_unsourced":  ("The steps are similar; their timing and location change.",
+                   "The steps are similar, and internal tests show 88% of members complete a 42 cm baseline."),
+ "t6_bannedclaim":("FitXpress is not a medical device.", "FitXpress is SOC 2 certified and guarantees compliance."),
  "t7_badclaimid": ("<!-- claim: FX-001 -->", "<!-- claim: FX-999 -->"),
- "t8_m1":         ("Dual-energy X-ray absorptiometry (DXA)", "DXA"),
- "t9_nonslash":   ("https://3dlook.ai/content-hub/beyond-bmi-business/", "https://3dlook.ai/content-hub/beyond-bmi-business"),
+ "t8_m1":         ("under the General Data Protection Regulation (GDPR)", "under GDPR"),
+ "t9_nonslash":   ("https://3dlook.ai/content-hub/occupational-health-screening-software/",
+                   "https://3dlook.ai/content-hub/occupational-health-screening-software"),
  # An illustration whose ALT TEXT states a figure no approved claim supports. Alt text is
  # published copy, so this must fail exactly as prose would. Added 2026-09-02 while planning
  # the illustrations, when testing this case found two bugs of the opposite kind: the year in
  # `/uploads/2026/09/` was being read as a product figure, and the .webp asset URL was being
  # failed for missing a canonical trailing slash. t11 below guards those.
- "t10_alt_figure": ("## Progress visibility beyond scale weight",
-                    "## Progress visibility beyond scale weight\n\n"
+ "t10_alt_figure": ("## Where FitXpress fits",
+                    "## Where FitXpress fits\n\n"
                     "![Progress view showing a 3.2 cm waist reduction over 8 weeks.]"
                     "(https://3dlook.ai/wp-content/uploads/2026/09/banner_1.webp)"),
-}
-# A legitimately illustrated article: asset URL plus figure-free alt text. This one must PASS.
-POSITIVE = {
  # Accuracy discipline, added 2026-09-02 when the live framework article became the canonical
- # source for accuracy wording (brand-assets/product-info/accuracy-formulations.md).
+ # source for accuracy wording (brand-assets/product-info/accuracy-formulations.md). Until
+ # 2026-09-11 these five sat in a dict named POSITIVE that a second POSITIVE overwrote, so their
+ # fixtures were never built and `tn` counted the missing file as a correct failure.
  "t12_wrong_acc":  ("96-97%", "98.5% accuracy"),
- "t13_95_repeat":  ("puts overall accuracy at 96-97%",
-                    "puts repeatability at 95% consistency and overall accuracy at 96-97%"),
+ "t13_95_repeat":  ("reported accuracy was approximately 96-97%",
+                    "reported repeatability was 95% consistency and accuracy was approximately 96-97%"),
  "t14_mixed_bench":("1.5-2.0 cm",
                     "1.5-2.0 cm, and the ISO 8559 benchmark puts session-to-session repeatability at 0.40 cm"),
- "t15_permeasure": ("puts overall accuracy at 96-97%",
-                    "puts waist error at 2.14 cm and overall accuracy at 96-97%"),
- "t16_bare_dexa":  ("Dual-energy X-ray absorptiometry (DXA)", "Dual-energy X-ray absorptiometry (DEXA)"),
+ "t15_permeasure": ("reported accuracy was approximately 96-97%",
+                    "reported waist error was 2.14 cm and accuracy was approximately 96-97%"),
+ "t16_bare_dexa":  ("physical examination continue on-site when they require equipment",
+                    "physical examination continue on-site, as a DEXA scan does, when they require equipment"),
 }
-# DEXA is licensed when DXA is on the same line: the older spelling carries the search volume
-# and one published slug already uses it. This must PASS.
-POSITIVE2 = {
- "t17_dexa_paired":("Dual-energy X-ray absorptiometry (DXA)",
-                    "Dual-energy X-ray absorptiometry (DXA), also written DEXA,"),
-}
+# These two must PASS: a legitimately illustrated article (asset URL plus figure-free alt text),
+# and DEXA licensed when DXA is on the same line (the older spelling carries the search volume and
+# one published slug already uses it).
 POSITIVE = {
- "t11_asset_ok": ("## Progress visibility beyond scale weight",
-                  "## Progress visibility beyond scale weight\n\n"
-                  "![Wellness app progress view showing a waist measurement change while "
-                  "bodyweight stays flat.]"
+ "t11_asset_ok": ("## Where FitXpress fits",
+                  "## Where FitXpress fits\n\n"
+                  "![Guided capture screen leading to a structured measurement record.]"
                   "(https://3dlook.ai/wp-content/uploads/2026/09/banner_1.webp)"),
+ "t17_dexa_paired":("Equipment-based testing and physical examination continue on-site.",
+                    "Equipment-based testing, such as dual-energy X-ray absorptiometry (DXA), also written DEXA, "
+                    "and physical examination continue on-site."),
 }
-for name, (old, new) in list(CASES.items()) + list(POSITIVE.items()) + list(POSITIVE2.items()):
+for name, (old, new) in list(CASES.items()) + list(POSITIVE.items()):
     if old not in base:
         raise SystemExit(f"fixture anchor missing for {name}: {old[:60]!r}\n"
                          "The article changed. Update the anchor, do not delete the test.")
@@ -108,19 +119,21 @@ t "late-review recovery order documented" 'grep -q "Если рев.ю всё-т
 t "orchestrator wires lint into the SEO flow" 'grep -q "article_lint.py" .claude/agents/_shared/orchestrator.md'
 
 echo "--- 3. article_lint.py ---"
-t "final.md PASS"            "python3 scripts/article_lint.py $A/final.md"
-t "draft.md PASS"            "python3 scripts/article_lint.py $A/draft.md"
+t "final.md PASS"            "python3 scripts/article_lint.py $A/final.md --pack $P"
+t "draft.md PASS"            "python3 scripts/article_lint.py $A/draft.md --pack $P"
 t "plan.md --plan PASS"      "python3 scripts/article_lint.py $A/plan.md --plan"
-t "--json is valid json"     "python3 scripts/article_lint.py $A/final.md --json | python3 -m json.tool"
-t "--report runs"            "python3 scripts/article_lint.py $A/final.md --report"
+t "--json is valid json"     "python3 scripts/article_lint.py $A/final.md --pack $P --json | python3 -m json.tool"
+t "--report runs"            "python3 scripts/article_lint.py $A/final.md --pack $P --report"
+# A fixture that was never built must FAIL here, not count as a correct failure: before
+# 2026-09-11 five of these passed on a missing file.
 for n in t1_emdash t2_dexa t3_height205 t4_predweight t5_unsourced t6_bannedclaim t7_badclaimid t8_m1 t9_nonslash t10_alt_figure \
          t12_wrong_acc t13_95_repeat t14_mixed_bench t15_permeasure t16_bare_dexa; do
-  tn "negative fixture: $n" "python3 scripts/article_lint.py $FIX/$n/$(basename $A)/final.md --pack $P"
+  tn "negative fixture: $n" "test ! -f $FIX/$n/$(basename $A)/final.md || python3 scripts/article_lint.py $FIX/$n/$(basename $A)/final.md --pack $P"
 done
 t "--no-exit-code suppresses rc" "python3 scripts/article_lint.py $FIX/t3_height205/$(basename $A)/final.md --pack $P --no-exit-code"
 t "illustrated article passes (asset url + clean alt)" "python3 scripts/article_lint.py $FIX/t11_asset_ok/$(basename $A)/final.md --pack $P"
 t "DEXA licensed when paired with DXA"    "python3 scripts/article_lint.py $FIX/t17_dexa_paired/$(basename $A)/final.md --pack $P"
-t "accuracy gate sees the framework link" "python3 scripts/article_lint.py $A/final.md 2>&1 | grep -q 'links_to_framework: True'"
+t "accuracy gate sees the framework link" "python3 scripts/article_lint.py $A/final.md --pack $P 2>&1 | grep -q 'links_to_framework: True'"
 t "asset url counted separately from page links" "python3 scripts/article_lint.py $FIX/t11_asset_ok/$(basename $A)/final.md --pack $P 2>&1 | grep -q 'asset_urls: 1'"
 # Sentence length, added 2026-09-11 from the editor's final of the occupational-health intake
 # article (brand-assets/style-guides/editorial-rewrites.md). Her text must pass and the revision
@@ -148,8 +161,8 @@ t "publisher reads the audit file"     'grep -q "plan-audit.md" .claude/agents/s
 t "writer told NOT to read the audit"  'grep -q "plan-audit.md. не читай" .claude/agents/seo/seo-writer.md'
 
 echo "--- 6. coordinator verification is one call ---"
-t "report carries term-group balance"  "python3 scripts/article_lint.py $A/final.md --report 2>&1 | grep -q 'term group corporate'"
-t "report carries per-section words"   "python3 scripts/article_lint.py $A/final.md --report 2>&1 | grep -q 'across 11 H2 sections'"
+t "report carries term-group balance"  "python3 scripts/article_lint.py $A/final.md --pack $P --report 2>&1 | grep -q 'term group corporate'"
+t "report carries per-section words"   "python3 scripts/article_lint.py $A/final.md --pack $P --report 2>&1 | grep -q 'across 9 H2 sections'"
 
 echo "--- 7. derived agent copies are generated from DEV ---"
 t "sync --check clean"        "python3 scripts/sync-agent-copies.py --check"
@@ -157,10 +170,9 @@ t "sync --dry-run clean"      "python3 scripts/sync-agent-copies.py --dry-run"
 t "old checker agrees"        "python3 scripts/check-agent-copies.py"
 
 echo "--- regressions ---"
-# The detector's known-clean article moved to the editor's final on 2026-09-11: the wellness hub
-# draft at $A still carries "It is not positioned as a medical device.", a hard fail since then.
-t  "detector runs after the CARD addition"   "python3 brand-assets/style-guides/scripts/detect-ai-tells.py $O/editorial-final-2026-09-11.md --channel article --summary"
-t  "detector verdict still CLEAN"            "python3 brand-assets/style-guides/scripts/detect-ai-tells.py $O/editorial-final-2026-09-11.md --channel article --summary | grep -q CLEAN"
+# The detector's known-clean article is the frozen fixture.
+t  "detector runs after the CARD addition"   "python3 brand-assets/style-guides/scripts/detect-ai-tells.py $A/final.md --channel article --summary"
+t  "detector verdict still CLEAN"            "python3 brand-assets/style-guides/scripts/detect-ai-tells.py $A/final.md --channel article --summary | grep -q CLEAN"
 t  "direct medical-device sentence passes"   'echo "FitXpress is not a medical device." | python3 brand-assets/style-guides/scripts/detect-ai-tells.py --stdin --channel article | python3 -c "import sys,json; sys.exit(0 if not json.load(sys.stdin)[\"hard_fails\"] else 1)"'
 tn "positioned-as medical-device sentence fails" 'echo "It is not positioned as a medical device." | python3 brand-assets/style-guides/scripts/detect-ai-tells.py --stdin --channel article | python3 -c "import sys,json; sys.exit(0 if not json.load(sys.stdin)[\"hard_fails\"] else 1)"'
 tn "any other positioned-as still fails"     'echo "It is not positioned as a diagnostic tool." | python3 brand-assets/style-guides/scripts/detect-ai-tells.py --stdin --channel article | python3 -c "import sys,json; sys.exit(0 if not json.load(sys.stdin)[\"hard_fails\"] else 1)"'
