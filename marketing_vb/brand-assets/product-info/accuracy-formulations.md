@@ -146,8 +146,8 @@ implying external validation.
 
 ## 2. Where the live page and our current rules disagree
 
-One open, one closed. §2.1 is still live and a writer copying that sentence verbatim will fail
-our own gate. §2.2 was decided by Vadim on 2026-09-02.
+Two open, one closed. §2.1 and §2.3 are live: a writer copying those §1.9 sentences verbatim
+will fail our own gate. §2.2 was decided by Vadim on 2026-09-02.
 
 ### 2.1 The live page uses "positioned as" for equivalence. Our detector fails that.
 
@@ -158,14 +158,14 @@ medical-device boundary:
 - "should not be positioned as equivalent to DEXA, BIA, calibrated scales..."
 
 `terminology-guardrails.md` §2.10 bans "positioned as" for product, intended-use and regulatory
-statements. Vadim's 2026-09-02 revert licensed **exactly one sentence**, the medical-device one.
+statements. Vadim's 2026-09-02 revert licensed **exactly one sentence**, the medical-device one, and that licence was withdrawn on 2026-09-11 (§2.3).
 Equivalence is still a hard fail, and `editorial-guardrails.md` #7 was deliberately reworded on
 2026-08-25 away from "should not be positioned as equivalent to" for that reason.
 
 So the live canonical trust asset carries wording our own linter rejects. Three ways out, and
 picking one is not this file's job:
 
-1. Widen the licensed exception to cover equivalence, matching the live page.
+1. License "positioned as" for equivalence, matching the live page (no sentence is licensed since 2026-09-11, see §2.3).
 2. Keep the ban and use guardrail #7's replacement in new articles: *"FitXpress is not
    equivalent to DXA, BIA, or a calibrated scale when the workflow, protocol, or regulatory
    standard requires those methods."* Same meaning, passes the gate. **This is what new drafts
@@ -193,6 +193,15 @@ verbatim from the live page, which writes DEXA. The live framework article needs
 DXA. Published articles are not retro-edited as a rule, but this one is Trust Asset #1 and
 every new article links to it, so the two would disagree in public on the spelling. Owner:
 whoever owns WordPress.
+
+### 2.3 The live page writes "not positioned as a medical device". Our rule writes it directly.
+
+The third §1.9 sentence ends "and it is not positioned as a medical device." Since 2026-09-11 the
+rule is the direct form, **"FitXpress is not a medical device."** (Vadim's call on the editor's
+final of the occupational-health intake article), and `detect-ai-tells.py` fails every "positioned
+as" sentence, the medical-device one included. Quote the first half of that §1.9 sentence if you
+need it, then state the boundary as its own sentence in the direct form. The live framework page
+would need a CMS edit to match; same owner and same kind of debt as §2.2.
 
 ---
 
@@ -227,3 +236,63 @@ The **accuracy discipline** gate checks what a script can check: that no unappro
 figure appears, that the two benchmarks are not combined in one paragraph, that a figure is not
 left bare, and that a paragraph carrying a figure links to the framework article. It cannot
 judge whether a condition is the *right* condition. That stays with the editor.
+
+---
+
+## 5. Approved short forms, from an editorial final. NOT from the live page
+
+Section 1 is verbatim from the live framework page and stays exactly as it is. The sentences
+below carry the **same claims**, in the words the editor used in her final of
+`manual-vs-digital-intake-occupational-health-screening` (Assel Sekerova, 2026-09-11; saved as
+`brand-assets/past-articles/blog/manual-vs-digital-intake-occupational-health-screening.md`).
+
+They exist because the §1 sentences run 20-42 words, and pasting them whole was one cause of
+the editor's verdict on our revision 5: long sentences, reads as AI
+(`brand-assets/style-guides/editorial-rewrites.md`). Either §1 or §5 is fine; do not mix the
+two inside one paragraph. Every condition §3 requires is still present: the reference, "most of
+the evaluated measurements", the NDA line, and the framework link, which stays on the paragraph.
+
+**Repeatability** (short form of §1.2):
+
+> Repeatability testing used a real-world customer dataset with five scans per participant.
+> For most of the evaluated measurements, typical scan-to-scan differences remained below 1 cm.
+
+**Accuracy** (short form of §1.1 and §1.8), in its own paragraph, after repeatability:
+
+> A separate validation compared FitXpress measurements with expert pattern-maker tape
+> measurements. Across the evaluated body measurements, reported accuracy was approximately
+> 96-97%, with a typical absolute error of 1.5-2.0 cm depending on the body part. Detailed
+> methodology is available under a non-disclosure agreement.
+
+**What the evidence does not show:**
+
+> These findings establish performance relative to the selected reference; they do not
+> demonstrate superiority over expert tape measurement.
+
+**The reframe, as a statement** (§1.5 without the quoted question):
+
+> What counts as adequate performance depends on how the measurements will be used.
+
+**FAQ form:**
+
+> 3DLOOK's published figures compare FitXpress with expert tape measurements, which serve as
+> the reference. The relevant question is whether the reported error and repeatability are
+> suitable for the intended workflow.
+
+Two notes. `below 1 cm` is accepted by the accuracy gate alongside `less than 1 cm` and
+`< 1 cm` (added 2026-09-11). The final drops the word "internal" from both studies; where the
+surrounding copy could be read as implying outside validation, put it back ("Internal
+repeatability testing…"), per editorial guardrail #3.
+
+**Population limitation** (approved by Vadim 2026-09-11; the number-store row is in
+`proof-points.md`, Training data). It complements §1.4, "Performance outside this scope has not
+been characterized.", and uses the editor's three-sentence shape: the limit, when it matters,
+what the program needs.
+
+> FitXpress was not specifically trained on data representing people with physical
+> disabilities, and its measurement performance has not been established for this population.
+> This matters when a disability affects the standard standing pose or capture sequence. In
+> those cases, the program needs a documented alternative measurement path.
+
+The last sentence fits a workflow article. Elsewhere, keep the first two and say what the
+workflow does instead.

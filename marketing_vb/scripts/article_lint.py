@@ -461,7 +461,14 @@ def gate_links(body: str, pack):
 
 
 def gate_keyword(body: str, primary: str | None):
-    """Gate 7. Primary keyword placement: H1, first paragraph, at least one H2."""
+    """Gate 7. Primary keyword placement: H1 and at least one H2. First paragraph, reported only.
+
+    Softened 2026-09-11 by Vadim. The gate used to fail when the keyword was missing from the
+    first paragraph, and the editor's final of the occupational-health intake article, now the
+    reference (brand-assets/style-guides/editorial-rewrites.md §2), keeps it in the H1 and one
+    H2 only: repeating the exact phrase in the opening prose was part of what read as
+    machine-written. Whether the first paragraph carries it is now information, not a failure.
+    """
     if not primary:
         return True, ["no primary_keyword in plan frontmatter, keyword gate skipped"], {}
     problems = []
@@ -475,11 +482,10 @@ def gate_keyword(body: str, primary: str | None):
 
     if p not in h1.lower():
         problems.append(f"primary keyword {primary!r} not in H1")
-    if p not in first_para:
-        problems.append(f"primary keyword {primary!r} not in the first paragraph")
     if not any(p in h.lower() for h in h2s):
         problems.append(f"primary keyword {primary!r} not in any H2")
-    return not problems, problems, {"keyword": primary, "occurrences": low.count(p), "h2_count": len(h2s)}
+    return not problems, problems, {"keyword": primary, "occurrences": low.count(p), "h2_count": len(h2s),
+                                    "in_first_paragraph": p in first_para}
 
 
 def gate_m1(body: str):
@@ -531,11 +537,14 @@ def gate_plan(body: str, fm):
 # Source: brand-assets/product-info/accuracy-formulations.md, transcribed 2026-09-02 from
 # https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/
 APPROVED_ACCURACY = [r"96-97\s*%", r"1\.5-2\.0\s*cm", r"less than 1\s*cm", r"<\s*1\s*cm",
-                     r"0\.40\s*cm", r"\+/-\s*3\.5\s*%", r"±\s*3\.5\s*%"]
+                     r"below 1\s*cm", r"0\.40\s*cm", r"\+/-\s*3\.5\s*%", r"±\s*3\.5\s*%"]
 
 # The two studies use different references. The live article states the rule outright: "The
 # numbers from the two studies should not be combined because the references differ."
-INTERNAL_BENCH = re.compile(r"96-97\s*%|1\.5-2\.0\s*cm|less than 1\s*cm|<\s*1\s*cm")
+# `below 1 cm` added 2026-09-11: the editorial final of the occupational-health intake article
+# writes repeatability that way (accuracy-formulations.md §5), and without it here the
+# framework-link and two-benchmark checks could not see the figure at all.
+INTERNAL_BENCH = re.compile(r"96-97\s*%|1\.5-2\.0\s*cm|less than 1\s*cm|<\s*1\s*cm|below 1\s*cm")
 ISO_BENCH = re.compile(r"0\.40\s*cm|ISO\s*8559")
 
 FRAMEWORK_URL = "content-hub/mobile-body-scanning-accuracy/"
@@ -595,6 +604,142 @@ def gate_accuracy(body: str, line_offset: int = 0):
 
     info = {"accuracy_figures_present": has_fig,
             "links_to_framework": FRAMEWORK_URL in body}
+    return not problems, problems, info
+
+
+# ---------------------------------------------------------------- sentence length
+
+# Thresholds come from shipped editorial finals, not from taste. Measured 2026-09-11 with
+# prose_sentences() below, as mean words per sentence / share over 25 words / count over 35:
+#   Assel Sekerova's final of the occupational-health intake article   14.7 / 3%  / 1
+#   glp-1-market-hub, live page after the editors' pass, 2026-08-28     15.2 / 4%  / 0
+#   remote-body-measurement-online-fitness-coaching, live 2026-09-04    13.6 / 4%  / 0
+#   our revision 5 of the intake article, the one she sent back         17.7 / 14% / 6
+# Her words on revision 5: long sentences, repetition, reads as obviously AI. It had passed all
+# nine gates above and scored CLEAN on the detector. Rules and the before/after pairs:
+# brand-assets/style-guides/editorial-rewrites.md.
+SENT_MEAN_MAX = 16.0
+SENT_LONG, SENT_LONG_SHARE_MAX = 25, 0.06
+SENT_VERY_LONG, SENT_VERY_LONG_MAX = 35, 1   # the final keeps one: a quoted measurement protocol
+
+_SENT_ABBR = (("e.g.", "e<g>"), ("i.e.", "i<e>"), ("vs.", "vs<>"), ("U.S.", "U<S>"),
+              ("et al.", "et al<>"), ("approx.", "approx<>"))
+_SENT_SKIP = re.compile(r"^\(?(?:cover|image\s*\d+|figure\s*\d+)\b", re.I)
+_SENT_STOP = frozenset(
+    "the a an and or of to in on for with by is are be as at that this it its from can may when "
+    "which their than into not was were has have how what where whether each any other more most "
+    "such only also both before after during within without across per under over about between "
+    "through s".split())
+
+
+def prose_sentences(body: str, line_offset: int = 0):
+    """(word_count, sentence, file_line) for every prose sentence.
+
+    Prose is what reads as running text: paragraphs, bullets, the scope-note blockquote. Tables,
+    headings, alignment rows, figure captions and image placeholders (`(Cover) - Concept`,
+    `(Image 1) - Concept`) are not. Counting table cells as sentences would pull the mean down
+    and hide exactly the sentences this gate exists for.
+    """
+    # a comment becomes as many newlines as it spanned, so reported line numbers stay true
+    text = re.sub(r"<!--.*?-->", lambda m: "\n" * m.group(0).count("\n"), body, flags=re.S)
+    out = []
+    for i, line in enumerate(text.split("\n"), 1):
+        s = line.strip()
+        if not s or s.startswith(("#", "|")) or re.fullmatch(r"[\s:|\-]+", s):
+            continue
+        s = re.sub(r"^>\s*", "", s)
+        s = re.sub(r"^(?:[-*+]|\d+\.)\s+", "", s)
+        s = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", s)
+        s = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", s)
+        s = s.replace("**", "").replace("*", "").replace("`", "")
+        if _SENT_SKIP.match(s):
+            continue
+        for a, b in _SENT_ABBR:
+            s = s.replace(a, b)
+        for x in re.split(r"(?<=[.!?])\s+(?=[A-Z\"“(\[0-9])", s):
+            for a, b in _SENT_ABBR:
+                x = x.replace(b, a)
+            n = sum(1 for t in x.split() if re.search(r"[A-Za-z0-9]", t))
+            if n >= 3:
+                out.append((n, x.strip(), i + line_offset))
+    return out
+
+
+def _content_tokens(s: str):
+    return {re.sub(r"(?:ies|es|s)$", "", t) for t in re.findall(r"[a-z0-9]+", s.lower())
+            if t not in _SENT_STOP and len(t) > 2}
+
+
+def gate_sentences(body: str, line_offset: int = 0):
+    """Gate 10. Sentence length against the editorial finals. Repetition, reported only.
+
+    Fails on three numbers, each measured on shipped finals (constants above): mean words per
+    prose sentence, the share of sentences over 25 words, and how many run past 35. One sentence
+    past 35 is allowed because the final itself keeps one, a quoted measurement protocol that
+    loses its meaning when split. On a fail it lists every sentence over 25 words, longest
+    first, with the line to jump to.
+
+    Repetition is NOT gated. Near-duplicate sentence pairs and repeated phrases are printed as
+    information: the finals repeat topic phrases too, and no threshold separated them from our
+    drafts. Which repeat is a refrain and which is the topic stays with seo-editor Pass 3d; the
+    list only saves the grep.
+    """
+    sents = prose_sentences(body, line_offset)
+    if len(sents) < 10:
+        return True, [f"only {len(sents)} prose sentences, not gated"], {"sentences": len(sents)}
+    lens = sorted(n for n, _, _ in sents)
+    mean = sum(lens) / len(lens)
+    long_n = sum(1 for n in lens if n > SENT_LONG)
+    very_long = sum(1 for n in lens if n > SENT_VERY_LONG)
+    share = long_n / len(lens)
+
+    problems = []
+    if mean > SENT_MEAN_MAX:
+        problems.append(f"mean sentence is {mean:.1f} words, max {SENT_MEAN_MAX:.0f}")
+    if share > SENT_LONG_SHARE_MAX:
+        problems.append(f"{long_n} of {len(lens)} sentences ({share:.0%}) run over {SENT_LONG} "
+                        f"words, max {SENT_LONG_SHARE_MAX:.0%}")
+    if very_long > SENT_VERY_LONG_MAX:
+        problems.append(f"{very_long} sentences run over {SENT_VERY_LONG} words, "
+                        f"max {SENT_VERY_LONG_MAX}")
+    if problems:
+        for n, s, ln in sorted(sents, key=lambda x: -x[0]):
+            if n <= SENT_LONG:
+                break
+            problems.append(f"line {ln} ({n} words): {s[:100]}{'...' if len(s) > 100 else ''}")
+
+    pairs = []
+    toks = [(_content_tokens(s), ln) for _, s, ln in sents]
+    for a, (ta, la) in enumerate(toks):
+        if len(ta) < 6:
+            continue
+        for tb, lb in toks[a + 1:]:
+            if len(tb) >= 6 and len(ta & tb) / len(ta | tb) >= 0.5:
+                pairs.append((len(ta & tb) / len(ta | tb), la, lb))
+    pairs.sort(reverse=True)
+
+    h1 = next((l for l in body.split("\n") if l.startswith("# ")), "").lower()
+    words = re.findall(r"[a-z0-9]+", " ".join(s for _, s, _ in sents).lower())
+    grams = {}
+    for k in range(len(words) - 2):
+        g = words[k:k + 3]
+        if sum(w in _SENT_STOP for w in g) > 1:
+            continue
+        key = " ".join(g)
+        grams[key] = grams.get(key, 0) + 1
+    repeated = sorted(((c, g) for g, c in grams.items() if c >= 3 and g not in h1), reverse=True)
+
+    info = {
+        "sentences": len(lens),
+        "mean_words": round(mean, 1),
+        "p90_words": lens[int(len(lens) * 0.9)],
+        f"over_{SENT_LONG}": f"{long_n} ({share:.1%})",
+        f"over_{SENT_VERY_LONG}": very_long,
+        # two sentence pairs can share the same two lines; list each line pair once
+        "near_duplicate_pairs": list(dict.fromkeys(
+            f"L{la}~L{lb} ({j:.2f})" for j, la, lb in pairs))[:5] or "none",
+        "repeated_phrases": [f"{g} x{c}" for c, g in repeated[:6]] or "none",
+    }
     return not problems, problems, info
 
 
@@ -742,6 +887,7 @@ def main():
         run("keyword placement", gate_keyword, body, primary)
         run("abbreviations (M1)", gate_m1, body)
         run("accuracy discipline", gate_accuracy, body, line_offset)
+        run("sentence length", gate_sentences, body, line_offset)
 
     failed = [r for r in results if not r["ok"]]
     verdict = "PASS" if not failed else "FAIL"

@@ -5,6 +5,8 @@
 
 > **Critical note on style evolution.** The corpus contains two distinct eras. The **2026 Assel Sekerova articles** (4 of 9) represent the current target style: measured, hedged, fact-dense, B2B compliance-conscious, audit-trail-aware. The **2024 articles** (5 of 9, multiple authors) use looser industry-trend prose with heavy buzzword density ("leverage", "revolutionize", "game-changer", "harness the power") — patterns that CLAUDE.md section 6 now bans. **New articles must follow the 2026 style, not the 2024 style.** Where this guide describes "the voice", it means the 2026 voice unless explicitly stated.
 
+> **Sentence shape and comparison-article format: `editorial-rewrites.md` is the current standard (2026-09-11).** It is built from Assel Sekerova's final of the occupational-health intake comparison. The two latest live pages the editors reworked (`glp-1-market-hub`, `remote-body-measurement-online-fitness-coaching`) land on the same numbers independently: prose sentences average 14-15 words there, while the corpus analysed below averages 16-25. Where this guide and that file disagree on sentence length, repetition or the comparison format, that file wins. The article itself is in `past-articles/blog/` as `manual-vs-digital-intake-occupational-health-screening.md`. Mechanical half: `scripts/article_lint.py` gate `sentence length`.
+
 ---
 
 ## 1. Voice & Tone
@@ -358,6 +360,8 @@ Before any new blog article ships, verify:
 - [ ] 4–8 internal links, descriptive anchors, none pointing to placeholder URLs
 - [ ] Frontmatter includes `author: Assel Sekerova` (default) unless founder-voice piece signed by Katerina Galich
 - [ ] Reads aloud without any sentence sounding like a chatbot
+- [ ] `scripts/article_lint.py` gate `sentence length` is ok: mean ≤ 16 words, ≤ 6% of sentences over 25, at most one over 35 (`editorial-rewrites.md` §1)
+- [ ] No refrain phrases, no list of problems restated in a later section, no sentence about the table or the page, no aphorism, serial comma throughout (`editorial-rewrites.md` §2-§6)
 
 ---
 

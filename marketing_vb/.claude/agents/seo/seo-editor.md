@@ -67,7 +67,7 @@ tools: Read, Write, Grep, Bash
 ### Pass 3b — Content strategy compliance (FitXpress)
 
 Сверься с блоком **Content Strategy Fit** из plan.md и `content-strategy-guidelines.md`:
-- **Positioning (§8):** ни одного запрещённого claim (diagnoses / treatment-underwriting-hiring-clearance decisions / replaces clinician-DEXA-reference / guarantees compliance / detects fraud / standalone medical authority). Найдёшь — перефразируй в «supports / helps standardize / provides structured records». Секция «What FitXpress does NOT do» должна присутствовать.
+- **Positioning (§8):** ни одного запрещённого claim (diagnoses / treatment-underwriting-hiring-clearance decisions / replaces clinician-DEXA-reference / guarantees compliance / detects fraud / standalone medical authority). Найдёшь — перефразируй в «supports / helps standardize / provides structured records». Секция «What FitXpress does NOT do» должна присутствовать, **кроме кластера, чей хаб уже владеет этой секцией**: там границу несут скоуп-нота и одно предложение в «Where FitXpress fits» (`editorial-rewrites.md` §7 п.4; так решил Review 1 item 1 по статье об occupational-health intake, и так вышел финал редактора).
 - **Vertical boundary (§9):** статья не выходит за границу vertical (telehealth ≠ GLP-1 eligibility, insurance = underwriting-support, occ. health = intake/documentation). Sensitive vertical → scope note присутствует рано.
 - **Cannibalization (§5):** статья держит узкий угол из плана и не дублирует existing_urls. Если разрослась в near-duplicate хаба — сузь.
 - **Internal links (§11):** присутствуют 4 направления (up/side/down/trust). Отсутствует — добавь из плана.
@@ -120,12 +120,45 @@ python3 brand-assets/style-guides/scripts/detect-ai-tells.py workspace/seo/artic
 6. Запиши ответы самопроверки в `changes_summary` артефакта (поле `self_check`). Ненаписанная
    самопроверка не считается сделанной.
 
+### Pass 3d — Длина предложений и повторы (по редакторскому финалу, обязательный)
+
+Канон: **`brand-assets/style-guides/editorial-rewrites.md`** — пары «наш текст → как переписала
+редактор» из финала `manual-vs-digital-intake-occupational-health-screening` (2026-09-11). Наша
+ревизия 5 прошла все девять гейтов и детектор с CLEAN 0.86, а редактор вернула её: «длинные
+предложения, повторы, читается как явно AI». Этот проход закрывает то, чего не видит ни один
+проход выше.
+
+1. **Гейт `sentence length` в `python3 scripts/article_lint.py <файл>`.** Падает, если среднее
+   > 16 слов, если > 6% предложений длиннее 25 слов или если длиннее 35 слов больше одного, и
+   перечисляет каждое длинное предложение с номером строки. Разбивай, пока гейт не станет `ok`.
+   Как (§1): перечисление через двоеточие → буллеты или отдельные предложения; цепочка «X, and
+   Y, while Z» → одно предложение на мысль; хедж — одной короткой клаузой в конце («although
+   the result varies with …»), а не отдельным предложением «The effect depends on…». Утверждённые
+   формулировки точности длиннее 25 слов меняй на короткие формы из `accuracy-formulations.md` §5.
+2. **Повторы (§2).** Гейт печатает `near_duplicate_pairs` и `repeated_phrases`. Это подсказка,
+   не вердикт: у финалов тоже повторяются тематические фразы и короткое напоминание границы.
+   Проверь: удачная фраза не стала рефреном; один и тот же список проблем не перечислен в
+   нескольких секциях; primary keyword не набит в прозу сверх H1 и одного H2; ответ FAQ не
+   повторяет абзац тела; FAQ-вопрос, на который уже отвечает секция, удалён; два абзаца подряд
+   не делают одно и то же утверждение.
+3. **Предложения про саму страницу (§3)** — «Each row is…», «The operational difference sits in
+   the fourth row», «Side by side…», «The comparison gets confusing when…». Замени предложением,
+   которое несёт содержание, или удали.
+4. **Афоризмы, reframe-слоганы, H2-вердикты (§4)** — удали или сделай описательными. H2 не
+   утверждает находку без хеджа («Where manual intake can slow…», а не «The intake step is where
+   programs lose time»).
+5. **Текст рев'юера с пометкой verbatim фиксирует claim, а не форму предложения (§8).** Цифры,
+   условие, хедж и границу оставляй дословно; предложение длиннее 25 слов разбей и запиши
+   разбиение в `changes_summary`. Два предложения рев'юера в одно не склеивай никогда.
+6. После правок **снова** `article_lint.py`: оба гейта, детектор и `sentence length`, должны быть
+   `ok`. Числа гейта (`mean_words`, `over_25`, `over_35`) запиши в `self_check`.
+
 ### Pass 4 — Final polish
 - Проверь все banned words (список из messaging.md, + `utilize` / `utilizing`). Если нашёл — перефразируй.
 - **Abbreviations (guardrail M1):** пройди по тексту сверху вниз. Каждая аббревиатура при ПЕРВОМ появлении должна быть расшифрована — `dual-energy X-ray absorptiometry (DEXA)`, `glucagon-like peptide-1 (GLP-1)`, `Food and Drug Administration (FDA)`, `International Council for Harmonisation (ICH)` и т.д. Регуляторов, которых цитируешь как авторитет (FDA, ICH, GCP), чаще всего оставляют без расшифровки — разверни. **ИСКЛЮЧЕНИЕ (terminology-guardrails.md §1): AI, WWW, iOS, BMI, CEO, UK, US, EU — общеизвестные, идут БЕЗ расшифровки. Если в драфте `Body Mass Index (BMI)` — сверни до `BMI`.**
-- **Stacked negation (guardrail M2):** найди двойные / вложенные отрицания в одном предложении («does not… nor does it…», «is — and is not —», «necessary but not sufficient», «do not, on their own, …»). Переформулируй в позитивную рамку, где смысл сохраняется («endpoint validation stays with the sponsor» вместо «does not validate… nor does it…»). Оставляй ровно одно чёткое негативное утверждение границы, сформулированное НАПРЯМУЮ (§6: «It is not positioned as a medical device.» — формулировка восстановлена 2026-09-02, Review 1; для всего остального product / intended use / регуляторного статуса «positioned as» запрещено — terminology-guardrails.md §2.10), не цепляй второе отрицание в том же предложении. Повтор дисклеймера между секциями (когда он к месту) — НЕ трогай, это про плотность отрицаний внутри предложения.
+- **Stacked negation (guardrail M2):** найди двойные / вложенные отрицания в одном предложении («does not… nor does it…», «is — and is not —», «necessary but not sufficient», «do not, on their own, …»). Переформулируй в позитивную рамку, где смысл сохраняется («endpoint validation stays with the sponsor» вместо «does not validate… nor does it…»). Оставляй ровно одно чёткое негативное утверждение границы, сформулированное НАПРЯМУЮ (§6: «FitXpress is not a medical device.» — решение Вадима 2026-09-11; «positioned as» запрещено для любого product / intended use / регуляторного статуса, medical device включительно — terminology-guardrails.md §2.10), не цепляй второе отрицание в том же предложении. Повтор дисклеймера между секциями (когда он к месту) — НЕ трогай, это про плотность отрицаний внутри предложения.
 - Проверь все числа — каждое должно быть в approved_claims из context pack. Если нет — удали.
-- Проверь что primary keyword встречается в H1, первом абзаце, и 1-2 H2.
+- Проверь что primary keyword встречается в H1 и 1-2 H2. В первом абзаце — по возможности, не обязательно: финал редактора 2026-09-11 его там не держит, и gate 7 это больше не валит.
 - Word count: ±10% от target из плана.
 
 ## Формат вывода
@@ -175,6 +208,10 @@ self_check: |
 - Repeatability пишется **`< 1 cm`** (locked convention). Опубликованная формулировка:
   *«For most evaluated measurements, repeated scans showed typical scan-to-scan differences of
   less than 1 cm.»*
+  Короткие формы из `accuracy-formulations.md` §5 утверждены наравне (редакторский финал
+  2026-09-11), в том числе *«For most of the evaluated measurements, typical scan-to-scan
+  differences remained below 1 cm.»* Предложение из §1 длиннее 25 слов гейт `sentence length`
+  считает как любое другое, поэтому в тексте статьи предпочтительна форма §5.
 - **Два бенчмарка НИКОГДА не совмещаются в одном абзаце.** Внутренний (`96-97%`, `1.5-2.0 cm`,
   `< 1 cm`) и ISO 8559 (`0.40 cm`) отвечают на разные вопросы против разных референсов. Живая
   статья формулирует это правилом: *«The numbers from the two studies should not be combined

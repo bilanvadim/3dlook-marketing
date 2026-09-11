@@ -53,9 +53,9 @@ Words the terminology Doc retires: `objective` about our own output, `the reader
 
 ### positioned_as
 
-`positioned as` for product, intended use, scope, replacement or regulatory status. ONE licensed exception since 2026-09-02: the medical-device sentence.
+`positioned as` for product, intended use, scope, replacement, regulatory status or medical-device status. No licensed exception since 2026-09-11.
 
-**Instead:** State the boundary directly. For medical device write exactly: "It is not positioned as a medical device."
+**Instead:** State the boundary directly. For medical device write exactly: "FitXpress is not a medical device."
 
 ### presumed_reaction
 

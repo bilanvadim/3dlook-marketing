@@ -27,6 +27,10 @@ What is different from upstream:
   * `positioned_as` is a REVERSAL, not a new ban: "not positioned as a medical device" was the
     prescribed compliant form until 2026-08-13, so it is still in published articles and in any
     agent prompt that has not been re-synced. Expect hits on the old corpus.
+  * Since 2026-09-11 no "positioned as" sentence is licensed. The medical-device boundary is
+    written directly, "FitXpress is not a medical device." (Vadim, from the editor's final of
+    the occupational-health intake article). The 2026-09-02 lookahead that licensed "not
+    positioned as a medical device" is gone.
 
 Usage:
     python3 detect-ai-tells.py path/to/draft.md --channel article --pretty
@@ -92,10 +96,10 @@ CARD = {
         "manually; allow; including / such as / along with; reducing... / which can reduce...",
     ),
     "positioned_as": (
-        "`positioned as` for product, intended use, scope, replacement or regulatory status. "
-        "ONE licensed exception since 2026-09-02: the medical-device sentence.",
+        "`positioned as` for product, intended use, scope, replacement, regulatory status or "
+        "medical-device status. No licensed exception since 2026-09-11.",
         "State the boundary directly. For medical device write exactly: "
-        "\"It is not positioned as a medical device.\"",
+        "\"FitXpress is not a medical device.\"",
     ),
     "presumed_reaction": (
         "Telling the audience what it thinks or gets wrong: \"what trips people up\", "
@@ -131,7 +135,11 @@ HARD_EN = {
         r"\bleverag(e|es|ed|ing)\b",
         r"\butili[sz](e|es|ed|ing|ation)\b",
         r"\bharness(es|ed|ing)?\b",
-        r"\brobust(ness)?\b",
+        # `robustness` left out 2026-09-11: "Real-world robustness" is dimension 3 of the
+        # canonical accuracy framework (accuracy-formulations.md §1.6), and the editorial final
+        # of the occupational-health intake article uses the noun in exactly that sense. The
+        # adjective stays banned.
+        r"\brobust(ly)?\b",
         r"\bseamless(ly)?\b",
         r"\bcomprehensive(ly)?\b",
         r"\brevolutioni[sz](e|es|ed|ing)\b",
@@ -204,12 +212,13 @@ HARD_EN = {
     # so it is still in older articles and in prompts that have not been re-synced.
     # "positioned as a market leader" (genuine market positioning) is the licensed exception and
     # is deliberately not matched.
-    # PARTIAL RE-REVERSAL (2026-09-02, Review 1 on the Wellness hub, Vadim's call): the
-    # medical-device boundary sentence "not positioned as a medical device" is the approved
-    # wording again and is licensed by the lookahead below. Every other product, intended-use
-    # and regulatory use of "positioned as" stays a hard fail.
+    # PARTIAL RE-REVERSAL (2026-09-02, Review 1 on the Wellness hub, Vadim's call) licensed
+    # "not positioned as a medical device" with a lookahead. WITHDRAWN 2026-09-11 (Vadim, from
+    # the editor's final of the occupational-health intake article): the medical-device
+    # sentence is direct too, "FitXpress is not a medical device.", so the lookahead is gone and
+    # every product, intended-use, regulatory and medical-device use of "positioned as" fails.
     "positioned_as": [
-        r"\bnot\s+positioned\s+as\s+(?!a\s+medical\s+device\b)",
+        r"\bnot\s+positioned\s+as\s+",
         r"\b(?:is|are|was|were|be|being|been)\s+positioned\s+as\s+(?:a|an|the)?\s*"
         r"(?:supporting|support|medical|diagnostic|clinical|screening|verification|measurement|"
         r"replacement|alternative|equivalent|substitute|tool|device|solution|platform|layer|"

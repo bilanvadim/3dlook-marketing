@@ -28,13 +28,15 @@ Whenever you describe a control or safeguard, state its limit: controls **reduce
 
 ## 6. Medical / regulatory framing: state the boundary directly, never "does not apply"
 
-Use **"It is not positioned as a medical device."** Frame compliance as built on data-privacy frameworks (HIPAA, GDPR, SOC 2 where applicable) instead of medical-device frameworks. Do not assert that a regulatory framework categorically "does not apply."
+Use **"FitXpress is not a medical device."** Frame compliance as built on data-privacy frameworks (HIPAA, GDPR, SOC 2 where applicable) instead of medical-device frameworks. Do not assert that a regulatory framework categorically "does not apply."
 
 For intended-use boundaries, the standard sentence is: **"FitXpress does not diagnose conditions, make clinical decisions, or determine treatment eligibility."** Where the boundary needs a supportive half, pair it: *"FitXpress supports clinician review; it is not a diagnostic tool."*
 
 > **Amended 2026-08-25** — the original wording of this principle was *"not positioned as a medical device."* `brand-assets/content-strategy/terminology-guardrails.md` §2.10 (Asselya's Doc, 2026-08-13) bans **"positioned as"** for product, intended-use and regulatory statements: it makes the product's identity depend on external perception, and turns a factual boundary into a marketing choice. Say what the product is and is not. Articles published before this date keep the old sentence and are not retro-edited.
 
 > **Re-amended 2026-09-02 — the 2026-08-25 amendment above is reverted for this sentence only.** Review 1 on the Wellness Platforms hub names *"It is not positioned as a medical device."* as the approved medical-device wording, and Vadim took that call on 2026-09-02. The medical-device boundary goes back to the original wording. The rest of terminology guardrail §2.10 stands: "positioned as" is still banned for intended use, scope, replacement or equivalence, and every other product or regulatory statement. Guardrail **#7** below is therefore unchanged. `detect-ai-tells.py` licenses the medical-device sentence and nothing else. Articles published under either earlier wording are not retro-edited.
+
+> **Re-amended 2026-09-11 — the direct form, with no exception left.** Vadim's call on the editor's final of the occupational-health intake article, which writes *"FitXpress is not a medical device."* The 2026-09-02 restoration above is withdrawn: "positioned as" is banned for the medical-device sentence as well, and `detect-ai-tells.py` no longer licenses any "positioned as" sentence. This is the rule's fourth state (prescribed 2026-06-09, banned 2026-08-13, restored for the medical-device sentence 2026-09-02, direct form 2026-09-11), and it matches the terminology Doc the 2026-08-13 ban came from. Published articles keep whichever wording they shipped with. An unpublished draft that still carries the old sentence now fails the detector, so it is corrected on its next editor pass.
 
 ## 7. Conditional language for boundaries
 
@@ -94,7 +96,7 @@ Prefer:
 - *"Endpoint validation stays with the sponsor; FitXpress standardizes and documents capture."*
 - *"FitXpress supports pre-check workflows; eligibility remains the investigator's determination."*
 
-Keep exactly one clear negative statement of scope where a boundary must be stated (per #6, *"It is not positioned as a medical device."*, restored 2026-09-02); do not chain a second negation onto it in the same sentence. (Repeating the scope disclaimer across sections, when each restatement fits its section, is acceptable — this rule is about negation density within a sentence, not about how often the disclaimer appears.)
+Keep exactly one clear negative statement of scope where a boundary must be stated (per #6, *"FitXpress is not a medical device."*, the direct form since 2026-09-11); do not chain a second negation onto it in the same sentence. (Repeating the scope disclaimer across sections, when each restatement fits its section, is acceptable — this rule is about negation density within a sentence, not about how often the disclaimer appears.)
 
 ### M3. Construction rules live in the terminology guardrails
 

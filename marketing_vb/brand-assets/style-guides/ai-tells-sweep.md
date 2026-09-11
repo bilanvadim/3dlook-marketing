@@ -123,16 +123,17 @@ negation "X, not Y".
 is, does, supports, replaces, or is intended for. Allowed when the sentence is genuinely about
 market or competitive positioning.
 
-**One licensed exception, and it is the medical-device sentence.** Write *"It is not positioned as a
-medical device."* Everything else keeps the direct form: *"FitXpress is not positioned as a
-replacement for DXA"* is still a hard fail, *"FitXpress is not equivalent to DXA when the protocol
-requires it"* is the fix.
+**No licensed exception since 2026-09-11, the medical-device sentence included.** Write
+*"FitXpress is not a medical device."* The same direct form covers everything else: *"FitXpress is
+not positioned as a replacement for DXA"* is a hard fail, *"FitXpress is not equivalent to DXA
+when the protocol requires it"* is the fix.
 
-This rule is in its third state, so check the date before trusting any copy of it: prescribed until
-2026-08-13, banned outright from 2026-08-13, and restored for the medical-device sentence alone on
-2026-09-02 (Review 1 on the Wellness hub, Vadim's call). `detect-ai-tells.py` licenses exactly that
-one sentence by lookahead and nothing more. Older articles and any un-resynced prompt may still
-carry either earlier form.
+This rule is in its fourth state, so check the date before trusting any copy of it: prescribed
+until 2026-08-13, banned outright from 2026-08-13, restored for the medical-device sentence alone
+on 2026-09-02 (Review 1 on the Wellness hub), and back to the direct form on 2026-09-11 (Vadim's
+call on the editor's final of the occupational-health intake article). `detect-ai-tells.py`
+licenses no "positioned as" sentence. Older articles and any un-resynced prompt may still carry
+an earlier form.
 
 **Presumed audience reaction** (`terminology-guardrails.md` §1.5) — "what trips people up", "the
 mistake buyers make", "what most teams misunderstand", "where teams get it wrong". Name the

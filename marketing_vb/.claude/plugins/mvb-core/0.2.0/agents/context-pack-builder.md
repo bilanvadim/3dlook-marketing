@@ -194,6 +194,7 @@ context_pack:
     - "Position AS: mobile body-scanning / structured-data-capture / intake & documentation layer supporting review"
   accuracy_framing:
     - "Never reduce accuracy to one universal number — qualify by decision/reference/protocol/population/tolerance"
+    - "Performance for people with physical disabilities has not been established (the model was not specifically trained on data representing them). Wording: accuracy-formulations.md §5, Population limitation"
     - "Repeatability written as `< 1 cm`; the two benchmarks are never combined"
 
   examples:
@@ -307,6 +308,10 @@ Target: **< 2000 tokens**. Агент должен прочитать pack за 
 - Repeatability пишется **`< 1 cm`** (locked convention). Опубликованная формулировка:
   *«For most evaluated measurements, repeated scans showed typical scan-to-scan differences of
   less than 1 cm.»*
+  Короткие формы из `accuracy-formulations.md` §5 утверждены наравне (редакторский финал
+  2026-09-11), в том числе *«For most of the evaluated measurements, typical scan-to-scan
+  differences remained below 1 cm.»* Предложение из §1 длиннее 25 слов гейт `sentence length`
+  считает как любое другое, поэтому в тексте статьи предпочтительна форма §5.
 - **Два бенчмарка НИКОГДА не совмещаются в одном абзаце.** Внутренний (`96-97%`, `1.5-2.0 cm`,
   `< 1 cm`) и ISO 8559 (`0.40 cm`) отвечают на разные вопросы против разных референсов. Живая
   статья формулирует это правилом: *«The numbers from the two studies should not be combined

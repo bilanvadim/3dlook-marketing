@@ -8,8 +8,9 @@
 # verification is here instead.
 #
 # It covers items 1-7 of the audit's action list, plus the regressions that matter most:
-# that the detector still runs after gaining its CARD table, and that the narrowed
-# `positioned_as` pattern still licenses exactly one sentence and no more.
+# that the detector still runs after gaining its CARD table, and that `positioned_as` licenses
+# no sentence at all: since 2026-09-11 the medical-device boundary is written directly,
+# "FitXpress is not a medical device.", and the old form fails like any other.
 #
 # The nine negative fixtures are built on the fly, so this is safe to run any time and needs
 # no state from a previous run.
@@ -121,6 +122,16 @@ t "illustrated article passes (asset url + clean alt)" "python3 scripts/article_
 t "DEXA licensed when paired with DXA"    "python3 scripts/article_lint.py $FIX/t17_dexa_paired/$(basename $A)/final.md --pack $P"
 t "accuracy gate sees the framework link" "python3 scripts/article_lint.py $A/final.md 2>&1 | grep -q 'links_to_framework: True'"
 t "asset url counted separately from page links" "python3 scripts/article_lint.py $FIX/t11_asset_ok/$(basename $A)/final.md --pack $P 2>&1 | grep -q 'asset_urls: 1'"
+# Sentence length, added 2026-09-11 from the editor's final of the occupational-health intake
+# article (brand-assets/style-guides/editorial-rewrites.md). Her text must pass and the revision
+# she sent back must fail; if the thresholds drift, one of these two breaks first. Both grep for
+# the gate's own line, so a crash cannot pass as a correct failure.
+O=workspace/seo/articles/2026-09-03-manual-vs-digital-intake-occupational-health
+t "sentence gate passes the editorial final" "python3 scripts/article_lint.py $O/editorial-final-2026-09-11.md --no-exit-code | grep -q '^\[ok  \] sentence length'"
+t "sentence gate fails the revision she sent back" "python3 scripts/article_lint.py $O/final.md --no-exit-code | grep -q '^\[FAIL\] sentence length'"
+# Gate 7 softened 2026-09-11: the H1 and one H2 are enough, the first paragraph is information.
+# The editor's final keeps the keyword out of its first paragraph, so it is the test case.
+t "keyword gate passes with H1 and one H2 only" "python3 scripts/article_lint.py $O/editorial-final-2026-09-11.md --no-exit-code | grep -q '^\[ok  \] keyword placement'"
 
 echo "--- 4. hard-bans card is generated, not hand-written ---"
 t "card generates"            "python3 scripts/bans-card.py"
@@ -146,9 +157,12 @@ t "sync --dry-run clean"      "python3 scripts/sync-agent-copies.py --dry-run"
 t "old checker agrees"        "python3 scripts/check-agent-copies.py"
 
 echo "--- regressions ---"
-t  "detector runs after the CARD addition"   "python3 brand-assets/style-guides/scripts/detect-ai-tells.py $A/final.md --channel article --summary"
-t  "detector verdict still CLEAN"            "python3 brand-assets/style-guides/scripts/detect-ai-tells.py $A/final.md --channel article --summary | grep -q CLEAN"
-t  "medical-device sentence is licensed"     'echo "It is not positioned as a medical device." | python3 brand-assets/style-guides/scripts/detect-ai-tells.py --stdin --channel article | python3 -c "import sys,json; sys.exit(0 if not json.load(sys.stdin)[\"hard_fails\"] else 1)"'
+# The detector's known-clean article moved to the editor's final on 2026-09-11: the wellness hub
+# draft at $A still carries "It is not positioned as a medical device.", a hard fail since then.
+t  "detector runs after the CARD addition"   "python3 brand-assets/style-guides/scripts/detect-ai-tells.py $O/editorial-final-2026-09-11.md --channel article --summary"
+t  "detector verdict still CLEAN"            "python3 brand-assets/style-guides/scripts/detect-ai-tells.py $O/editorial-final-2026-09-11.md --channel article --summary | grep -q CLEAN"
+t  "direct medical-device sentence passes"   'echo "FitXpress is not a medical device." | python3 brand-assets/style-guides/scripts/detect-ai-tells.py --stdin --channel article | python3 -c "import sys,json; sys.exit(0 if not json.load(sys.stdin)[\"hard_fails\"] else 1)"'
+tn "positioned-as medical-device sentence fails" 'echo "It is not positioned as a medical device." | python3 brand-assets/style-guides/scripts/detect-ai-tells.py --stdin --channel article | python3 -c "import sys,json; sys.exit(0 if not json.load(sys.stdin)[\"hard_fails\"] else 1)"'
 tn "any other positioned-as still fails"     'echo "It is not positioned as a diagnostic tool." | python3 brand-assets/style-guides/scripts/detect-ai-tells.py --stdin --channel article | python3 -c "import sys,json; sys.exit(0 if not json.load(sys.stdin)[\"hard_fails\"] else 1)"'
 t  "context pack is valid yaml"              "python3 -c \"import yaml; yaml.safe_load(open('$P'))\""
 t  "every new script parses without warning" 'for f in scripts/article_lint.py scripts/bans-card.py scripts/sync-agent-copies.py; do python3 -W error::SyntaxWarning -c "import ast; ast.parse(open(\"$f\").read())" || exit 1; done'

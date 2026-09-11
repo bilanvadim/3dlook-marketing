@@ -29,7 +29,7 @@ than silently deleted, because published articles were written under the old rul
 | Earlier rule | Status | New rule |
 |---|---|---|
 | `editorial-guardrails.md` **M1** (2026-07-07): expand *every* abbreviation at first use, *including* BMI | **Amended** | BMI, CEO, UK, US, EU now count as commonly known and are **not** expanded. M1 stands for everything else, including the cited regulators (FDA, ICH, GCP). |
-| `editorial-guardrails.md` **#6** (2026-06-09): medical framing is *"not positioned as a medical device"* | **Superseded 2026-08-13, then restored 2026-09-02** | The medical-device boundary sentence is **"It is not positioned as a medical device."** again — see the note directly below. Every *other* product, intended-use and regulatory use of "positioned as" stays banned by §2.10. |
+| `editorial-guardrails.md` **#6** (2026-06-09): medical framing is *"not positioned as a medical device"* | **Superseded 2026-08-13, restored 2026-09-02, superseded again 2026-09-11** | The medical-device boundary sentence is **"FitXpress is not a medical device."** — see the two notes directly below. "Positioned as" is banned by §2.10 for every product, intended-use and regulatory statement, the medical-device sentence included. |
 
 Articles already published with `Body Mass Index (BMI)` on first use or with *"not positioned as a
 medical device"* are historical and are not retro-edited. New drafts follow the rules above. If a
@@ -51,6 +51,19 @@ refresh touches such a sentence, bring it into line.
 > This is the third state of this rule (#6 2026-06-09 → superseded 2026-08-13 → partially restored
 > 2026-09-02). If the editorial owner disagrees, this is the row to argue about, because Review 1
 > and terminology guardrail §2.10 came from the same authority and point opposite ways.
+
+> **Reversed again, 2026-09-11 — the direct form, with no exception.** The editor's final of the
+> occupational-health intake article writes **"FitXpress is not a medical device."**, and Vadim
+> made it the rule everywhere on 2026-09-11. The 2026-09-02 note above is withdrawn:
+>
+> - **Medical-device boundary:** write **"FitXpress is not a medical device."**
+> - **"Positioned as"** is banned for the medical-device sentence too. §2.10 applies without a
+>   carve-out, which is what this Doc said on 2026-08-13.
+> - `detect-ai-tells.py` no longer licenses `not positioned as a medical device`; that sentence is
+>   a hard fail like every other product use of "positioned as".
+>
+> Fourth state of the rule (prescribed 2026-06-09 → banned 2026-08-13 → restored for medical
+> device 2026-09-02 → direct form 2026-09-11). Published articles are not retro-edited.
 
 ---
 
@@ -242,7 +255,7 @@ where the word is allowed.
 | **Reason** | "Positioned as" suggests that the product's identity, intended use, or regulatory status depends on external perception rather than on 3DLOOK's defined product scope and claims. It can also make a factual product boundary sound like a marketing choice. |
 | **Fix** | State the product scope or boundary directly |
 
-- **Medical device is now the licensed exception (2026-09-02):** use **"It is not positioned as a medical device."** See the re-reversal note in the header table.
+- **Medical device (2026-09-11):** write **"FitXpress is not a medical device."** There is no licensed exception; the notes under the header table record the rule's four states.
 - Avoid: "FitXpress is positioned as a supporting tool for clinician review." → Prefer: **"FitXpress supports clinician review."**
 - For intended-use boundaries: **"FitXpress does not diagnose conditions, make clinical decisions, or determine treatment eligibility."**
 
@@ -264,7 +277,7 @@ For the mechanical pass. The detector
 | "plus" stacking capabilities | including, such as, along with, as well as | auto |
 | "let" | allow | auto |
 | "so" introducing a benefit | reducing…, helping to reduce…, which can reduce… | auto |
-| "positioned as" a product or regulatory boundary, **except the medical-device sentence** | state the boundary directly; for medical device use "It is not positioned as a medical device." | auto |
+| "positioned as" a product or regulatory boundary, **the medical-device sentence included** | state the boundary directly; for medical device use "FitXpress is not a medical device." | auto |
 | "what trips people up", "the mistake buyers make", "what most teams misunderstand" | name the components of the issue | auto |
 | "do the heavy lifting" and other attributed behaviour | "matter", "apply", plain verbs | auto |
 | corrective negation "X, not Y" | lead with the recommended approach | judgment |

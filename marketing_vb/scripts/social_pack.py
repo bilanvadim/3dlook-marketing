@@ -361,15 +361,22 @@ def resolve_source(slug: str):
 
     Ranking, highest first:
       0  published-live-*.md   the page as published, when the pack follows a publish
-      1  publish-package.md    the canonical package
-      2  *final*.md / *revision*.md   newest version wins
-      3  revised.md / edited.md / draft.md
+      1  editorial-final-*.md  the editor's final from the article's Google Doc, not live yet
+      2  publish-package.md    the canonical package
+      3  *final*.md / *revision*.md   newest version wins
+      4  revised.md / edited.md / draft.md
 
     `published-live-*` is ranked ABOVE the package on purpose. On the 2026-08-28
     pack the package carried no article body and the drafts were ~500 words behind
     the live page after a late editorial pass, so every claim taken from a draft
     was untraceable to the published text. The switcher's resolver did not know
     about these files and the coordinator had to redirect nine drafters by hand.
+
+    `editorial-final-*` (2026-09-11) is the same lesson one step earlier. The editor's
+    final of the occupational-health intake article cut 283 words and rewrote the privacy
+    paragraph after our last package; a pack drafted from the package would quote text
+    that will never ship. Its name contains "final", so without its own rank it would
+    sort BELOW the package.
 
     A candidate with fewer than 25 prose lines is skipped as a stub or a
     checklist, whatever its size."""
@@ -383,12 +390,14 @@ def resolve_source(slug: str):
             return None
         if n.startswith("published-live"):
             return 0
-        if "publish-pack" in n:
+        if n.startswith("editorial-final"):
             return 1
-        if "final" in n or "revision" in n:
+        if "publish-pack" in n:
             return 2
-        if n in ("revised.md", "edited.md", "draft.md"):
+        if "final" in n or "revision" in n:
             return 3
+        if n in ("revised.md", "edited.md", "draft.md"):
+            return 4
         return None
 
     def ver(name: str) -> int:

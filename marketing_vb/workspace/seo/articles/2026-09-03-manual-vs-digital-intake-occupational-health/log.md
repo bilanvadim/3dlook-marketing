@@ -213,3 +213,34 @@ controller` independently agreed it should not be settled by the pipeline.
 
 **STOP.** Checkpoint 2, again. Waiting on Vadim: the three privacy calls, R2-1, and whether he
 wants a "Version 3" tab written back to the source Google Doc.
+
+---
+
+## 2026-09-11 — editorial final received, rules updated from it
+
+Vadim shared the editor's final (Google Doc tab "Final version") and Assel's verdict on our
+revision 5: «в той версии мне не нравилась длинна предложений, были повторения и читалось это всё
+как явно AI». Revision 5 is the doc's "Version 3" tab (similarity 0.98); "Version 4" and
+"Version 5" are her intermediate passes.
+
+- **Saved:** `editorial-final-2026-09-11.md`, the text of record until the page is live (the URL
+  returned 404 today), and `editorial-delta-2026-09-11.md`: what changed, how the Review 2 open
+  items were settled, where the final departs from canon.
+- **Measured** with the new gate: revision 5 averages 17.7 words per prose sentence, 14% over 25
+  words, 6 over 35. The final: 14.7, 3.2%, 1. Prose words 2,160 → 1,877.
+- `final.md` and `publish-package.md` stay at revision 5, as history. `social_pack.py source` now
+  resolves to `editorial-final-2026-09-11.md`, and so does the switcher.
+- **Rules:** `brand-assets/style-guides/editorial-rewrites.md`, `article_lint.py` gate
+  `sentence length`, agents re-synced from DEV. Full entry: `docs/changelog.md`, 2026-09-11.
+- **Open for Vadim:** the medical-device sentence; BAA, retention and personal-identifier wording;
+  the disability limitation; primary keyword absent from the first paragraph.
+
+## 2026-09-11 (later) — Vadim's decisions on the canon departures
+
+- **Medical device:** "FitXpress is not a medical device." everywhere. The detector no longer
+  licenses "It is not positioned as a medical device." The revision 5 files in this directory
+  still carry the old sentence and stay as history.
+- **`compliance.md` unchanged for now.** The final's privacy wording is not reused.
+- **The disability limitation is approved:** `proof-points.md`, `accuracy-formulations.md` §5.
+- **Gate 7 softened:** `editorial-final-2026-09-11.md` now passes it. Its only remaining lint
+  failure is claim traceability, which is expected: an editor's file carries no claim markers.

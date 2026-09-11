@@ -325,16 +325,21 @@ def _mvb_article_source(slug: str) -> Tuple[Optional[str], Optional[str], Option
         # marketing_vb/scripts/social_pack.py:resolve_source().
         if n.startswith("published-live"):
             return 0
-        if "publish-pack" in n:
+        # `editorial-final-*.md` (2026-09-11): the editor's final from the article's Google
+        # Doc, saved before the page goes live. Its name contains "final", so without its own
+        # rank it would sort below the package it supersedes.
+        if n.startswith("editorial-final"):
             return 1
-        if "final" in n:
+        if "publish-pack" in n:
             return 2
-        if "revision" in n:
+        if "final" in n:
             return 3
-        if n in ("revised.md", "edited.md"):
+        if "revision" in n:
             return 4
-        if n == "draft.md":
+        if n in ("revised.md", "edited.md"):
             return 5
+        if n == "draft.md":
+            return 6
         return None
 
     def ver(name: str) -> int:

@@ -71,6 +71,7 @@
 | Demographic coverage (height) | 150-220 cm | **Vadim confirmed 2026-09-02.** One figure for both training-data coverage and the internal validation population, and the only one to publish. The Apr 2025 deck row read 150-205 cm and is superseded. Matches the live accuracy article |
 | Gender distribution | 48% male / 52% female | Same |
 | Locations | US, Europe | Same |
+| Population not established | People with physical disabilities: the model was not specifically trained on data representing them, and measurement performance for this population has not been established | Editor's final of the occupational-health intake article, 2026-09-11; approved for publication by Vadim the same day. Published wording: accuracy-formulations.md §5, "Population limitation" |
 | Hardware scanner cameras | 4 dynamic | Dataset Protocol |
 | Parameters per person measured | 86 | Dataset Protocol |
 | Photo configurations per user | 34 (distance, angle, slope, lighting) | Dataset Protocol |

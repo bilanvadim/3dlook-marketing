@@ -33,7 +33,7 @@ tools: Read, Write, Bash
 Пройди все пункты и поставь ✅ / ❌:
 
 ```
-- [ ] Primary keyword в H1, первом абзаце, 1-2 H2
+- [ ] Primary keyword в H1 и 1-2 H2 (первый абзац — по возможности, не гейт: gate 7 смягчён 2026-09-11)
 - [ ] Meta title ≤ 60 chars, primary keyword в первой половине
 - [ ] Meta description 140-160 chars
 - [ ] Все числа из approved_claims (нет изобретённых)
@@ -44,7 +44,7 @@ tools: Read, Write, Bash
 - [ ] No generic AI patterns (тройные параллелизмы, em-dash rhetoric)
 - [ ] **Terminology guardrails** (`brand-assets/content-strategy/terminology-guardrails.md`): нет em dash; нет `objective` про наш вывод, `reader / audience / the following sections / below`, `this article / this guide`, `by hand`, `let`, `plus` как коннектора, `so` как коннектора выгоды, `positioned as` про продукт или регуляторный статус, presumed-reaction фраз, поведения приписанного понятиям
 - [ ] **Abbreviations (M1 + исключение):** непонятные аббревиатуры развёрнуты при первом употреблении (DEXA, GLP-1, FDA, ICH, GCP); BMI, CEO, UK, US, EU — БЕЗ расшифровки
-- [ ] **Medical framing:** «It is not positioned as a medical device.» — формулировка восстановлена 2026-09-02 (Review 1, решение Вадима). «positioned as» про любой ДРУГОЙ product / intended-use / регуляторный факт по-прежнему FAIL
+- [ ] **Medical framing:** «FitXpress is not a medical device.» — решение Вадима 2026-09-11 по финалу редактора. «positioned as» про любой product / intended-use / регуляторный факт, medical device включительно, FAIL
 - [ ] Ссылки на смысловых анкорах; сторонние источники — нейтральные качественные сайты, не vendor-блоги
 - [ ] **Ai-tells детектор РЕАЛЬНО прогнан** (не оценка): `python3 brand-assets/style-guides/scripts/detect-ai-tells.py workspace/seo/articles/{slug}/draft-edited.md --channel article --summary`. В пакет вставь фактический вывод: `ai_density_per_1000_words`, `severity`, `hard_fails`, `house_rule_violations`. Оценка «по правилам вручную» — это ❌, а НЕ судейский pass
 - [ ] Images / alt text suggestions (если нужны)
@@ -60,7 +60,7 @@ tools: Read, Write, Bash
 - [ ] Соблюдена vertical boundary; для sensitive vertical есть scope note
 - [ ] Internal links в 4 направления (up → hub, side → clusters, down → FitXpress/BOFU, trust → accuracy/privacy FAQ)
 - [ ] Есть FAQ-секция (GEO/AEO-friendly, 2-5 предложений на ответ)
-- [ ] Есть секция «What FitXpress does NOT do»; нет запрещённых positioning-claims (§8)
+- [ ] Есть секция «What FitXpress does NOT do» (в кластере, чей хаб уже владеет ею, её заменяют скоуп-нота и одно граничное предложение в «Where FitXpress fits»: `editorial-rewrites.md` §7 п.4); нет запрещённых positioning-claims (§8)
 - [ ] Нет неподтверждённых medical / legal / underwriting / employment / clinical-trial claims (compliance-claims → на review legal/product/security)
 - [ ] Статья owns один distinct search intent
 ```
@@ -145,6 +145,10 @@ File: workspace/seo/articles/{slug}/publish-package.md
 - Repeatability пишется **`< 1 cm`** (locked convention). Опубликованная формулировка:
   *«For most evaluated measurements, repeated scans showed typical scan-to-scan differences of
   less than 1 cm.»*
+  Короткие формы из `accuracy-formulations.md` §5 утверждены наравне (редакторский финал
+  2026-09-11), в том числе *«For most of the evaluated measurements, typical scan-to-scan
+  differences remained below 1 cm.»* Предложение из §1 длиннее 25 слов гейт `sentence length`
+  считает как любое другое, поэтому в тексте статьи предпочтительна форма §5.
 - **Два бенчмарка НИКОГДА не совмещаются в одном абзаце.** Внутренний (`96-97%`, `1.5-2.0 cm`,
   `< 1 cm`) и ISO 8559 (`0.40 cm`) отвечают на разные вопросы против разных референсов. Живая
   статья формулирует это правилом: *«The numbers from the two studies should not be combined

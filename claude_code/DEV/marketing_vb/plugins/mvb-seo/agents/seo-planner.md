@@ -84,8 +84,9 @@ tools: Read, Write, WebSearch, WebFetch, Grep
 ```
 
 9. Добавь в outline:
-   - Estimated total word count (1500-3000 для средней статьи)
-   - **Обязательная FAQ-секция** (§14 guidelines) — 4-8 вопросов из реальных search/procurement запросов (What is…? / Can it replace DEXA/manual? / What data is captured? / Is it used for decisioning? / Who reviews the data? / What does FitXpress NOT do?). Ответы 2-5 предложений для GEO/AEO.
+   - Estimated total word count (1500-3000 для средней статьи; comparison / workflow-кластер — около 1 900: столько дал редакторский финал 2026-09-11 при target 2 050, ничего существенного не потеряв)
+   - **Обязательная FAQ-секция** (§14 guidelines) — 3-8 вопросов из реальных search/procurement запросов (What is…? / Can it replace DXA/manual? / What data is captured? / Is it used for decisioning? / Who reviews the data? / What does FitXpress NOT do?). Ответы 2-5 предложений для GEO/AEO. **Не планируй вопрос, на который уже отвечает секция тела** — редактор такие удаляет (в финале 2026-09-11 из четырёх осталось три, вопрос про EEOC ушёл в тело).
+   - **Для comparison / workflow-кластера бери структуру редакторского финала** — `brand-assets/style-guides/editorial-rewrites.md` §7: H1 «<Topic>: A Workflow Comparison», скоуп-нота жирной меткой, short answer буллетами, одна таблица сравнения не больше 11 строк, decision framework тремя H3 «… fits when» с короткими буллетами, без таблицы метрик и списка diligence-вопросов, FAQ из трёх вопросов, Next steps в два предложения. Если хаб уже владеет секцией «What FitXpress does NOT do», в кластере её нет: границу несут скоуп-нота и одно предложение в «Where FitXpress fits». **Визуалы:** обложка и не больше двух в тексте, каждый показывает то, чего нет в таблице или списке; в плане таблица `Name | Placement | Concept`.
    - **Internal links в 4 направления** (§11 guidelines): **up** → hub; **sideways** → related clusters; **down** → BOFU / FitXpress product page; **trust** → accuracy framework + Privacy/Regulatory FAQ (при упоминании accuracy / privacy / HIPAA / GDPR / CCPA / SOC 2 / FDA / retention). Конкретные URL бери из `content_strategy.internal_link_targets` и `existing_urls`.
    - **CTA по intent** (§15 guidelines): TOFU → soft; MOFU → evaluation; BOFU → direct demo/contact. Не форси один и тот же CTA везде.
 
@@ -206,6 +207,10 @@ ledger, ревизионные заметки, open items, разбор конф
 - Repeatability пишется **`< 1 cm`** (locked convention). Опубликованная формулировка:
   *«For most evaluated measurements, repeated scans showed typical scan-to-scan differences of
   less than 1 cm.»*
+  Короткие формы из `accuracy-formulations.md` §5 утверждены наравне (редакторский финал
+  2026-09-11), в том числе *«For most of the evaluated measurements, typical scan-to-scan
+  differences remained below 1 cm.»* Предложение из §1 длиннее 25 слов гейт `sentence length`
+  считает как любое другое, поэтому в тексте статьи предпочтительна форма §5.
 - **Два бенчмарка НИКОГДА не совмещаются в одном абзаце.** Внутренний (`96-97%`, `1.5-2.0 cm`,
   `< 1 cm`) и ISO 8559 (`0.40 cm`) отвечают на разные вопросы против разных референсов. Живая
   статья формулирует это правилом: *«The numbers from the two studies should not be combined
