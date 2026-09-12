@@ -41,3 +41,22 @@ workspace/.callback-tokens.json
 # worth 218 blobs of real names in a public repo. The improvised CSVs next to them stay
 # tracked: those are the evidence, the messages are just their output.
 workspace/outbound/campaigns/2026-09-01-uk-erakulis-similar/_hermes-improvised-2026-09-12/messages/
+
+# ---------------------------------------------------------------------------
+# Outbound personal data. Added 2026-09-12.
+#
+# The block above untracks the per-profile registries because "This remote is PUBLIC".
+# That reasoning was right and its scope was too narrow: an audit on 2026-09-12 found
+# 2,997 distinct LinkedIn profiles — names, titles, employers, profile URLs — already
+# published through 63 tracked campaign CSVs, which is more people than the registries
+# it was protecting. Every new campaign was adding more.
+#
+# These patterns stop NEW campaign files from entering. They do not untrack the 63 that
+# are already committed, and they do not unpublish anything: the history on a public
+# remote still holds every one of those 2,997 people. Only making the repo private
+# fixes that, and it is Vadim's call.
+workspace/outbound/campaigns/*/people-*.csv
+workspace/outbound/campaigns/*/people_*.csv
+workspace/outbound/campaigns/*/closelyhq-import*.csv
+workspace/outbound/campaigns/*/responses-*.csv
+workspace/outbound/campaigns/*/sales-nav-raw/
