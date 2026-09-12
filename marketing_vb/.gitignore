@@ -34,3 +34,10 @@ brand-assets/content-strategy/.content-plan-snapshots/
 # bearer-ish. Written by the conductor into the workspace, so it is one `git add -A` from a commit.
 marketing_vb/workspace/.callback-tokens.json
 workspace/.callback-tokens.json
+
+# The 218 message files Hermes improvised on 2026-09-12 for the uk-erakulis campaign,
+# written from a poisoned join (accountants in Guatemala, a hairdresser, "adrew sdasd").
+# Kept on disk as the record of what happened — see the directory's own notes — but not
+# worth 218 blobs of real names in a public repo. The improvised CSVs next to them stay
+# tracked: those are the evidence, the messages are just their output.
+workspace/outbound/campaigns/2026-09-01-uk-erakulis-similar/_hermes-improvised-2026-09-12/messages/
