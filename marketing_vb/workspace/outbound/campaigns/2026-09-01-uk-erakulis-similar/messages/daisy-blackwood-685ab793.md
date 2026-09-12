@@ -3,7 +3,7 @@
 ## Context used
 - Angle: technical-integration
 - Hook: Evaluator/champion per IT policy, no product leader surfaced above her at WithU; implementer framing built around WithU's audio-only workout format (no camera in the loop today).
-- Proof point: Standalone SDK + REST API, server-side CV, structured measurements (faq.md; proof-points.md). No Yazen (WithU is a no-reference flavour-2/3 company).
+- Proof point: Standalone SDK + REST API, server-side CV, structured measurements (faq.md; proof-points.md). No Yazen (WithU is a no-reference flavour-2/3 company). Anonymised proof added in Message 2: 34,000 scans/2025 on one platform, no name/vertical/geo (2026-09-12 no-names rule).
 
 ---
 
@@ -29,9 +29,11 @@ Hi Daisy,
 
 Following up. On the technical side: FitXpress is a standalone SDK and REST API that sits apart from WithU's audio workout flow entirely. It handles pose validation and the computer vision server-side, returning structured measurements for the member profile.
 
+On production readiness: this same SDK already handles 34,000 scans a year for one integration.
+
 Worth 15 min to see the integration path? Grab a slot: https://meetings.hubspot.com/katerina-galich
 
 Best,
 Katerina
 
-**Char count:** 387 / 550
+**Char count:** 484 / 550

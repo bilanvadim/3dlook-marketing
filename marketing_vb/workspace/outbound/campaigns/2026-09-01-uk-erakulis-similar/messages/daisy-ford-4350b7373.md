@@ -3,7 +3,7 @@
 ## Context used
 - Angle: partnership-integration
 - Hook: ICP §8 names partnerships as a legitimate entry point; a scanning feature is a natural partner-integration story, not just an internal build.
-- Proof point: 80+ measurements, embed via SDK (proof-points.md, faq.md). No case study named.
+- Proof point: 80+ measurements, embed via SDK (proof-points.md, faq.md). No case study named. Anonymised proof added in Message 2: 34,000 scans/2025 on one platform, no name/vertical/geo (2026-09-12 no-names rule).
 
 ---
 
@@ -22,16 +22,18 @@ Worth a quick chat to explore a fit?
 Best,
 Katerina
 
-**Char count:** 406 / 600
+**Char count:** 427 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Daisy,
 
 Following up. Where this tends to land for a partnerships team: FitXpress becomes a co-branded progress feature with its own name in the app, giving Nutracheck something to announce.
 
+Partnership angle: one platform already ships it inside its own app at 34,000 scans a year, proving out the integration side.
+
 Worth 15 min to see how other apps packaged it? Grab a slot: https://meetings.hubspot.com/katerina-galich
 
 Best,
 Katerina
 
-**Char count:** 354 / 550
+**Char count:** 428 / 550

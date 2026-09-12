@@ -3,7 +3,7 @@
 ## Context used
 - Angle: differentiation-ltv
 - Hook: Nutracheck's calorie-tracking loop still uses the scale as the only outcome signal; that's the exact plateau moment a paying subscriber quits.
-- Proof point: 80+ measurements, body composition, under-45-second scan (proof-points.md, Speed / Output coverage). No named case study used (Nutracheck sits outside the Yazen-eligible flavour); argument leans on the churn mechanic from hypothesis.md reason #1.
+- Proof point: 80+ measurements, body composition, under-45-second scan (proof-points.md, Speed / Output coverage). No named case study used (Nutracheck sits outside the Yazen-eligible flavour); argument leans on the churn mechanic from hypothesis.md reason #1. Anonymised proof added in Message 2: 34,000 scans/2025 on one platform, no name/vertical/geo (2026-09-12 no-names rule).
 
 ---
 
@@ -31,9 +31,11 @@ Following up. The food log keeps people logging, but weight alone is a discourag
 
 A quarterly scan gives Nutracheck that signal without adding daily friction.
 
+For reference, a platform running FitXpress passed 34,000 scans in a single year: this isn't an early-stage tool.
+
 Worth 15 min? Grab a slot: https://meetings.hubspot.com/katerina-galich
 
 Best,
 Katerina
 
-**Char count:** 374 / 550
+**Char count:** 489 / 550

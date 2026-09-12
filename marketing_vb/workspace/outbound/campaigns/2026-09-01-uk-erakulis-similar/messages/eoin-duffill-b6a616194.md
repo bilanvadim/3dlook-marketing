@@ -3,7 +3,7 @@
 ## Context used
 - Angle: technical-integration
 - Hook: He'd be the one wiring the API if Nutracheck ever shipped this; written as implementer, not pitched on retention economics he doesn't own.
-- Proof point: SDK + REST API, structured response, days-not-months integration (faq.md Integration section; 80+ measurements from proof-points.md).
+- Proof point: SDK + REST API, structured response, days-not-months integration (faq.md Integration section; 80+ measurements from proof-points.md). Anonymised proof added in Message 2: 34,000 scans/2025 on one platform, no name/vertical/geo (2026-09-12 no-names rule).
 
 ---
 
@@ -29,9 +29,11 @@ Hi Eoin,
 
 Following up. From an engineering angle: FitXpress ships as SDKs (React, iOS, Android) and a REST API. You keep the whole UI; we lock only the capture step for accuracy. Everything comes back as structured JSON with 80+ measurements.
 
+In production terms, one integration on this API is already at 34,000 scans a year, well past pilot load.
+
 Worth 15 min to see the response schema? Grab a slot: https://meetings.hubspot.com/katerina-galich
 
 Best,
 Katerina
 
-**Char count:** 359 / 550
+**Char count:** 466 / 550

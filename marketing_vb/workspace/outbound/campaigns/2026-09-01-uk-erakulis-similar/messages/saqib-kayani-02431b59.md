@@ -15,7 +15,7 @@ Hi Saqib,
 
 Wanted to reach out, developer to developer: body scanning from a single phone photo is a genuine pose-estimation problem, and it's rarely worth an internal team's time to rebuild what's already been solved.
 
-FitXpress ships as an SDK and REST API: two photos in, 80+ measurements and body composition back in under 45 seconds. Yazen runs it in production at 34K scans a year.
+FitXpress ships as an SDK and REST API: two photos in, 80+ measurements and body composition back in under 45 seconds. A weight-loss platform runs it in production at 34K scans a year.
 
 Worth a quick chat about the integration?
 

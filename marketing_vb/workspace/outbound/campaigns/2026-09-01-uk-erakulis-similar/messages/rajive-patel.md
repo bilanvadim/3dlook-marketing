@@ -15,7 +15,7 @@ Hi Rajive,
 
 Circling back after connecting: NowPatient already tracks a lot about a patient's health remotely, and body composition is one of the few signals still missing, especially for anyone on a weight-management journey.
 
-FitXpress adds it from two phone photos: 80+ measurements and body composition in under 45 seconds. Yazen runs the same layer for member progress tracking, 34K scans in 2025.
+FitXpress adds it from two phone photos: 80+ measurements and body composition in under 45 seconds. A UK online pharmacy runs the same layer for BMI verification, 7.5K scans last year.
 
 Worth a quick chat?
 

@@ -15,7 +15,7 @@ Hi Zubair,
 
 Came across your work: Medicspot's weight-management members are trusting a clinician-led program to show them results, and self-reported weight is a thin way to prove that's happening between consults.
 
-We built FitXpress for exactly this: two photos give body composition and 80+ measurements in under 45 seconds. Yazen already runs it for member progress tracking, 34K scans in 2025.
+We built FitXpress for exactly this: two photos give body composition and 80+ measurements in under 45 seconds. A UK online pharmacy already runs it for BMI verification, and a weight-loss platform at 34K scans a year.
 
 Worth a quick chat?
 

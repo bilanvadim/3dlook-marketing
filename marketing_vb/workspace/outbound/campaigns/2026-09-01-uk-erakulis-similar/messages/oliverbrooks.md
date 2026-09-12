@@ -15,7 +15,7 @@ Hi Oliver,
 
 Quick one, engineer to engineer: pose estimation and body-composition extraction from a phone photo is a real computer-vision problem, and most teams your size end up buying that layer instead of building it.
 
-FitXpress ships as an SDK and REST API: two photos in, 80+ measurements and body composition back in under 45 seconds. Yazen runs it in production at 34K scans in 2025.
+FitXpress ships as an SDK and REST API: two photos in, 80+ measurements and body composition back in under 45 seconds. One customer runs it in production at 34K scans a year.
 
 Worth a quick chat about the integration?
 

@@ -3,7 +3,7 @@
 ## Context used
 - Angle: build-vs-buy
 - Hook: Self-described product leader at Fiit; the AI-coaching plan is table stakes, visible physical progress is not (hypothesis.md reason #3). No Yazen (Fiit is a no-reference flavour-2 company).
-- Proof point: 80+ measurements, 3D progress model, under 45 seconds; build-vs-buy framed via faq.md integration timeline (days via SDK).
+- Proof point: 80+ measurements, 3D progress model, under 45 seconds; build-vs-buy framed via faq.md integration timeline (days via SDK). Anonymised proof added in Message 2: 34,000 scans/2025 on one platform, no name/vertical/geo (2026-09-12 no-names rule). Also fixed a corrective 'rather than' per terminology-guardrails Part 1; trimmed the surrounding sentence to hold the 550-char cap (this file had the tightest headroom of the 17).
 
 ---
 
@@ -27,13 +27,13 @@ Katerina
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi James,
 
-Following up. Worth being honest about the build question: computer vision for body measurement from a phone photo is a multi-year investment for most product teams, which is why it usually gets bought rather than built.
+Following up. Worth being honest about the build question: computer vision for body measurement from a phone photo is a multi-year investment for most product teams, which is why most teams buy that layer instead of building it in-house.
 
-FitXpress integrates through an SDK in days, and gives Fiit a visible-progress feature its retention curve is missing today.
+FitXpress integrates through an SDK in days. One platform on FitXpress already logged 34,000 scans last year, well past a pilot run.
 
 Worth 15 min? Grab a slot: https://meetings.hubspot.com/katerina-galich
 
 Best,
 Katerina
 
-**Char count:** 446 / 550
+**Char count:** 471 / 550

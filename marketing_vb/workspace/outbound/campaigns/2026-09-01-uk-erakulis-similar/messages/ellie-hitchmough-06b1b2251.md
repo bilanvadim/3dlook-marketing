@@ -3,7 +3,7 @@
 ## Context used
 - Angle: partnership-integration
 - Hook: Partnerships is a named ICP §8 entry point; framed as a co-branded feature opportunity rather than a backend vendor integration.
-- Proof point: 80+ measurements, embed via SDK; no case study.
+- Proof point: 80+ measurements, embed via SDK; no case study. Anonymised proof added in Message 2: 34,000 scans/2025 on one platform, no name/vertical/geo (2026-09-12 no-names rule).
 
 ---
 
@@ -22,16 +22,18 @@ Worth a quick chat to see if it fits?
 Best,
 Katerina
 
-**Char count:** 399 / 600
+**Char count:** 417 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Ellie,
 
 Following up. Where this has worked well elsewhere: FitXpress becomes a named, co-branded progress feature, giving partnerships something to actually market.
 
+Elsewhere it runs inside the partner's own app, already at 34,000 scans a year.
+
 Worth 15 min to see examples? Grab a slot: https://meetings.hubspot.com/katerina-galich
 
 Best,
 Katerina
 
-**Char count:** 322 / 550
+**Char count:** 373 / 550

@@ -15,7 +15,7 @@ Hi Amish,
 
 Quick observation: remote weight-management and GLP-1 platforms in the UK are under growing pressure to prove outcomes beyond a self-reported number, and NowPatient sits right in that pressure zone.
 
-FitXpress adds that proof from two phone photos: 80+ measurements and body composition in under 45 seconds. Yazen already runs it for member progress tracking, 34K scans in 2025.
+FitXpress adds that proof from two phone photos: 80+ measurements and body composition in under 45 seconds. A weight-loss platform on FitXpress already runs it for member progress tracking, 34K scans last year.
 
 Worth a quick chat?
 

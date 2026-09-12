@@ -3,7 +3,7 @@
 ## Context used
 - Angle: technical-integration
 - Hook: His own tagline ('turning chaos into architecture') used as the hook, real detail from profile_summary.
-- Proof point: SDK + REST API, structured response with 80+ measurements and body composition. No case study.
+- Proof point: SDK + REST API, structured response with 80+ measurements and body composition. No case study. Anonymised proof added in Message 2: 34,000 scans/2025 on one platform, no name/vertical/geo (2026-09-12 no-names rule).
 
 ---
 
@@ -29,9 +29,11 @@ Hi Jonatan,
 
 Following up. From a backend point of view: FitXpress returns a structured response per scan, body composition and 80+ measurements, with no unstructured data left to parse or clean on your end.
 
+Backend load, for reference: one platform's integration processes 34,000 of these scans a year.
+
 Worth 15 min to see a sample response? Grab a slot: https://meetings.hubspot.com/katerina-galich
 
 Best,
 Katerina
 
-**Char count:** 321 / 550
+**Char count:** 418 / 550

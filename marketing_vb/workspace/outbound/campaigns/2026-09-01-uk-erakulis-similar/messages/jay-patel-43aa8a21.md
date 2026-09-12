@@ -15,7 +15,7 @@ Hi Jay,
 
 Caught my eye: whichever side of Infohealth you sit on, remote monitoring platforms like NowPatient face the same gap. Weight and BMI are self-reported and easy to misjudge, with no independent check in between.
 
-FitXpress adds that check from two phone photos: 80+ measurements and body composition in under 45 seconds. Yazen already runs it for member progress tracking, 34K scans in 2025.
+FitXpress adds that check from two phone photos: 80+ measurements and body composition in under 45 seconds. A UK online pharmacy on FitXpress runs it for BMI verification, 7.5K scans last year.
 
 Worth a quick chat?
 

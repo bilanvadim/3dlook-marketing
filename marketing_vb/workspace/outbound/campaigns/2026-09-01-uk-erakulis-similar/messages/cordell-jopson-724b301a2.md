@@ -3,7 +3,7 @@
 ## Context used
 - Angle: technical-integration
 - Hook: Would own the integration architecture; implementer framing.
-- Proof point: SDK + REST API, days-not-months, Yazen (34K scans/2025) as scale proof, HIPAA/GDPR.
+- Proof point: SDK + REST API, days-not-months, Yazen (34K scans/2025) as scale proof, HIPAA/GDPR. Also fixed a corrective negation ('not a quick add-on') per terminology-guardrails Part 1, 2026-09-12.
 
 ---
 
@@ -13,16 +13,16 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Cordell,
 
-Got me thinking: any body-scanning feature at Medicspot would land on your team to integrate, and computer vision for pose estimation is a genuine build, not a quick add-on.
+Got me thinking: any body-scanning feature at Medicspot would land on your team to integrate, and computer vision for pose estimation is a genuine build most teams end up buying instead of shipping in-house.
 
-FitXpress hands you that layer as an SDK and REST API: two photos in, 80+ measurements and body composition back in under 45 seconds. Yazen runs it at 34K scans in 2025.
+FitXpress hands you that layer as an SDK and REST API: two photos in, 80+ measurements and body composition back in under 45 seconds. One platform on FitXpress runs it at 34K scans a year.
 
 Worth a quick chat about the architecture?
 
 Best,
 Katerina
 
-**Char count:** 417 / 600
+**Char count:** 470 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Cordell,

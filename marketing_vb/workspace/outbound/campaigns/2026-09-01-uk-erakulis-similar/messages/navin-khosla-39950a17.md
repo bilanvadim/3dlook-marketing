@@ -3,7 +3,7 @@
 ## Context used
 - Angle: compliance
 - Hook: Owns exactly the UK GDPR photo-processing objection hypothesis.md flags as the first hard question; message leads with the compliance answer instead of a product pitch.
-- Proof point: Photo retention policy (immediate delete or within 30 days, encryption at rest/in transit - proof-points.md/compliance.md); canonical GDPR controller/processor sentence used verbatim in Message 2 (compliance.md); medical-device line scoped to the BodyScan feature, not the NowPatient app, because of its MHRA Class I registration (per instruction).
+- Proof point: Photo retention policy (immediate delete or within 30 days, encryption at rest/in transit - proof-points.md/compliance.md); canonical GDPR controller/processor sentence used verbatim in Message 2 (compliance.md); medical-device line scoped to the BodyScan feature, not the NowPatient app, because of its MHRA Class I registration (per instruction). Anonymised proof added in Message 2: a UK online pharmacy, 7,500 scans/2025, BMI verification (case-studies/uk-meds.md; UK geo licensed only for this fact per Vadim's 2026-09-12 no-names rule).
 
 ---
 
@@ -29,9 +29,11 @@ Hi Navin,
 
 Following up on the compliance angle specifically: in most enterprise deployments, the customer acts as controller and 3DLOOK acts as processor under GDPR. FitXpress is HIPAA-compliant, with no personal identifiers processed.
 
+On precedent: a UK online pharmacy already runs this same capture flow live, 7,500 scans in 2025, with an audit trail its compliance team relies on.
+
 Worth 15 min to walk through the data flow? Grab a slot: https://meetings.hubspot.com/katerina-galich
 
 Best,
 Katerina
 
-**Char count:** 355 / 550
+**Char count:** 505 / 550

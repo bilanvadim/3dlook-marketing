@@ -3,7 +3,7 @@
 ## Context used
 - Angle: retention-progress
 - Hook: PM on a calorie app whose only progress proof is a number that lags behind real change.
-- Proof point: 80+ measurements, 3D progress model, under 45 seconds (proof-points.md). No named case study (Nutracheck is a no-nameable-reference company per hypothesis.md reason #2).
+- Proof point: 80+ measurements, 3D progress model, under 45 seconds (proof-points.md). No named case study (Nutracheck is a no-nameable-reference company per hypothesis.md reason #2). Anonymised proof added in Message 2: 34,000 scans/2025 on one platform, no name/vertical/geo (2026-09-12 no-names rule).
 
 ---
 
@@ -31,9 +31,11 @@ Following up. Circumference and body-composition change is a stronger retention 
 
 That's the exact gap FitXpress fills for a tracking app like Nutracheck.
 
+One platform already runs this exact feature at 34,000 scans a year, which is the kind of volume that tests whether progress tracking actually holds up.
+
 Worth 15 min? Grab a slot: https://meetings.hubspot.com/katerina-galich
 
 Best,
 Katerina
 
-**Char count:** 352 / 550
+**Char count:** 506 / 550

@@ -27,7 +27,7 @@ Katerina
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Eliot,
 
-Following up. On the technical side: our SDK handles pose and tilt validation at capture, the computer vision runs server-side, and you get a structured response with 80+ measurements. Yazen runs this at 34K scans a year in production.
+Following up. On the technical side: our SDK handles pose and tilt validation at capture, the computer vision runs server-side, and you get a structured response with 80+ measurements. One platform runs this in production at 34K scans a year.
 
 Data is encrypted at rest and in transit, HIPAA-compliant and GDPR-aligned.
 

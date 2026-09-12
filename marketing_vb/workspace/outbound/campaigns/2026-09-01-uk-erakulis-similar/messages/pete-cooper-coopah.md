@@ -3,7 +3,7 @@
 ## Context used
 - Angle: differentiation-ltv
 - Hook: His own LinkedIn tagline ('a coach, not a training plan') used as the hook, real detail from profile_summary, not invented.
-- Proof point: 80+ measurements, 3D progress model, under 45 seconds; no case study for this flavour.
+- Proof point: 80+ measurements, 3D progress model, under 45 seconds; no case study for this flavour. Anonymised proof added in Message 2: 34,000 scans/2025 on one platform, no name/vertical/geo (2026-09-12 no-names rule). Also fixed a corrective negation ('not a roadmap risk') per terminology-guardrails Part 1.
 
 ---
 
@@ -27,11 +27,13 @@ Katerina
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Pete,
 
-Following up. For a coaching brand built on being different from a generic plan, visible body change between blocks is a differentiation lever most run-coaching apps can't offer today, and it's a fast add, not a roadmap risk.
+Following up. For a coaching brand built on being different from a generic plan, visible body change between blocks is a differentiation lever most run-coaching apps can't offer today, and it ships as a fast SDK add, typically live in days.
+
+For what it's worth, one platform running FitXpress crossed 34,000 scans last year.
 
 Worth 15 min to see it? Grab a slot: https://meetings.hubspot.com/katerina-galich
 
 Best,
 Katerina
 
-**Char count:** 334 / 550
+**Char count:** 434 / 550
