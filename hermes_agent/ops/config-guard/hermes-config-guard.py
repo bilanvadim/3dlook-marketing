@@ -32,6 +32,7 @@ CONFIG   = f"{HERMES}/config.yaml"
 ENVF     = f"{HERMES}/.env"
 LASTGOOD = f"{HERMES}/config-guard/config.lastgood.yaml"
 LOGF     = f"{HERMES}/logs/config-guard.log"
+CARVEOUT = "/home/vadim_prod/3dlook-marketing/hermes_agent/ops/hermes-read-carveout.py"
 CTX      = ssl.create_default_context()
 
 
@@ -163,6 +164,47 @@ def snapshot_lastgood(text):
         log(f"lastgood snapshot failed: {e}")
 
 
+def enforce_read_carveout():
+    """Second invariant: Hermes must keep READ access to the marketing repo.
+
+    `approvals.deny` holds ~72 rules that block grep/find/sed/awk across
+    ~/3dlook-marketing. A carve-out exists in `approvals.smart_policy`, but deny is the
+    hard layer and fires first, so the policy never gets consulted. Every `hermes update`
+    rewrites config.yaml and puts the rules back, and a blinded Hermes does not report
+    that it is blind — on 2026-09-12 it silently reimplemented the whole outbound pipeline
+    by hand, 218 message files, all discarded. See memory project_outbound_hardening_2026_09.
+
+    Classification lives in hermes-read-carveout.py so there is one owner of "which rule
+    is read-only"; this only decides WHEN to run it. Returns a note for Telegram, or None.
+    """
+    if not os.path.exists(CARVEOUT):
+        return None
+    try:
+        chk = subprocess.run([sys.executable, CARVEOUT, "--check"],
+                             capture_output=True, text=True, timeout=30)
+    except Exception as e:
+        log(f"carve-out check failed to run: {e}")
+        return None
+    if chk.returncode == 0:
+        return None
+    log(f"read carve-out reverted: {chk.stdout.strip()}")
+    try:
+        ap = subprocess.run([sys.executable, CARVEOUT, "--apply"],
+                            capture_output=True, text=True, timeout=60)
+    except Exception as e:
+        log(f"carve-out re-apply failed: {e}")
+        return None
+    if ap.returncode != 0:
+        log(f"carve-out re-apply returned {ap.returncode}: {ap.stderr.strip()[:300]}")
+        return None
+    how = restart_gateway()
+    log(f"carve-out re-applied, gateway restarted via {how}")
+    return ("🔁 <b>Hermes read carve-out re-applied</b>\n"
+            "config.yaml had the marketing-repo read denies back "
+            "(almost certainly <code>hermes update</code>). "
+            f"Stripped them and restarted the gateway via {how}.")
+
+
 def main():
     try:
         text = open(CONFIG).read()
@@ -172,6 +214,18 @@ def main():
 
     # --- healthy path ---
     if parses(text):
+        # Enforce the carve-out BEFORE snapshotting: a lastgood copy that still carries
+        # the read denies would reinstate them on the next restore.
+        note = enforce_read_carveout()
+        if note:
+            telegram(note)
+            try:
+                text = open(CONFIG).read()
+            except Exception:
+                return 0
+            if not parses(text):
+                log("carve-out write left invalid YAML — falling through to repair")
+                return main()
         if not has_zen_fallback(yaml.safe_load(text) or {}):
             snapshot_lastgood(text)  # keep only clean copies as the baseline
         return 0

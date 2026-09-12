@@ -105,6 +105,9 @@ def main() -> int:
     g = ap.add_mutually_exclusive_group()
     g.add_argument("--apply", action="store_true", help="write the change (takes a backup first)")
     g.add_argument("--revert", action="store_true", help="restore the newest backup this made")
+    g.add_argument("--check", action="store_true",
+                   help="exit 0 if the carve-out holds, 1 if read-only denies are back "
+                        "(for hermes-config-guard)")
     args = ap.parse_args()
 
     if not CONFIG.exists():
@@ -122,6 +125,15 @@ def main() -> int:
     lines = CONFIG.read_text(encoding="utf-8").split("\n")
     lo, hi = slice_deny_block(lines)
     block = lines[lo:hi]
+
+    if args.check:
+        back = [l for l in block if l.strip()
+                and is_read_only_marketing(l.strip().lstrip("- ").strip('"\''))]
+        if back:
+            print(f"✗ {len(back)} read-only deny rule(s) are back — the carve-out was reverted")
+            return 1
+        print("✓ carve-out holds")
+        return 0
 
     dropped = [l for l in block if l.strip() and is_read_only_marketing(l.strip().lstrip("- ").strip('"\''))]
     kept = [l for l in block if l not in dropped]
