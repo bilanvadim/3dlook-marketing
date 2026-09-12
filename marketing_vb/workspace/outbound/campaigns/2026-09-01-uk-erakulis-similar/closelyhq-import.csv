@@ -1,0 +1,503 @@
+contact_id,first_name,last_name,email_guess,company,title,message_1,message_2,tag,linkedin_url
+amish-patel-96b103259,Amish,Patel,,NowPatient,Director,"Hi Amish,
+
+Quick observation: remote weight-management and GLP-1 platforms in the UK are under growing pressure to prove outcomes beyond a self-reported number, and NowPatient sits right in that pressure zone.
+
+FitXpress adds that proof from two phone photos: 80+ measurements and body composition in under 45 seconds. A weight-loss platform on FitXpress already runs it for member progress tracking, 34K scans last year.
+
+Worth a quick chat?
+
+Best,
+Katerina","Hi Amish,
+
+Following up. The commercial angle: a visible progress signal reduces the odds a patient abandons a program in month two, where most weight-management drop-off happens.
+
+FitXpress is HIPAA-compliant and GDPR-aligned, and integrates through an SDK in days.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",WEAK-P3-differentiation-ltv,https://linkedin.com/in/amish-patel-96b103259
+ben-pratt-663962131,Ben,Pratt,,Nutracheck,Lead Mobile Developer,"Hi Ben,
+
+Quick note, developer to developer: if Nutracheck ever added body scanning, you'd be the one shipping the capture flow. Here's the short version instead of the sales pitch.
+
+FitXpress is an iOS and Android SDK: two photos captured on-device, 80+ measurements and body composition back in under 45 seconds. You keep the UI; we lock only the capture step.
+
+Worth a quick chat about the SDK?
+
+Best,
+Katerina","Hi Ben,
+
+Following up. On the SDK itself: pose and tilt validation happen inside our capture layer, which keeps accuracy stable even with a rushed user. Everything past that, onboarding and the results screen, is yours to design.
+
+Integration typically runs days, not months.
+
+On mobile specifically, one integration already ships this exact capture flow at 34,000 scans a year.
+
+Worth 15 min to see the response schema? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",WEAK-P3-technical-integration,https://linkedin.com/in/ben-pratt-663962131
+cordell-jopson-724b301a2,Cordell,Jopson,,Medicspot,Head of Engineering,"Hi Cordell,
+
+Got me thinking: any body-scanning feature at Medicspot would land on your team to integrate, and computer vision for pose estimation is a genuine build most teams end up buying instead of shipping in-house.
+
+FitXpress hands you that layer as an SDK and REST API: two photos in, 80+ measurements and body composition back in under 45 seconds. One platform on FitXpress runs it at 34K scans a year.
+
+Worth a quick chat about the architecture?
+
+Best,
+Katerina","Hi Cordell,
+
+Following up. On the engineering side: integration is typically days through our SDK, you keep the full UI, and we lock only the capture step, where pose and tilt validation protect accuracy.
+
+Data is encrypted at rest and in transit, and the stack is HIPAA-compliant and GDPR-aligned.
+
+Worth 15 min to walk through the data flow? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",WEAK-P3-technical-integration,https://linkedin.com/in/cordell-jopson-724b301a2
+daisy-blackwood-685ab793,Daisy,Blackwood,,WithU,Director of Engineering,"Hi Daisy,
+
+Been meaning to reach out: WithU's workout experience runs through audio, which means there's no camera in the loop today and no easy way for a member to see their own physical progress.
+
+FitXpress could sit alongside that as an SDK: two photos, 80+ measurements and body composition back in under 45 seconds, no change to the audio-first workout itself.
+
+Worth a quick chat about the integration?
+
+Best,
+Katerina","Hi Daisy,
+
+Following up. On the technical side: FitXpress is a standalone SDK and REST API that sits apart from WithU's audio workout flow entirely. It handles pose validation and the computer vision server-side, returning structured measurements for the member profile.
+
+On production readiness: this same SDK already handles 34,000 scans a year for one integration.
+
+Worth 15 min to see the integration path? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",WEAK-P3-technical-integration,https://linkedin.com/in/daisy-blackwood-685ab793
+daisy-ford-4350b7373,Daisy,Ford,,Nutracheck,Partnerships Manager,"Hi Daisy,
+
+Quick idea for you: body-composition tracking is a natural next feature for a food-tracking app, and it's exactly the kind of thing that usually arrives through a partnership. Building it in-house means a computer-vision team.
+
+We're 3DLOOK. FitXpress turns two phone photos into 80+ measurements and body composition in under 45 seconds, ready to embed via SDK.
+
+Worth a quick chat to explore a fit?
+
+Best,
+Katerina","Hi Daisy,
+
+Following up. Where this tends to land for a partnerships team: FitXpress becomes a co-branded progress feature with its own name in the app, giving Nutracheck something to announce.
+
+Partnership angle: one platform already ships it inside its own app at 34,000 scans a year, proving out the integration side.
+
+Worth 15 min to see how other apps packaged it? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",PASS-P3-partnership-integration,https://linkedin.com/in/daisy-ford-4350b7373
+danielhutson1,Daniel,Hutson,,Nutracheck,Managing Director,"Hi Daniel,
+
+Quick thought: your members can nail the food log for weeks and still watch the scale barely move, and that flat week is exactly when a paying subscriber quits convinced the plan stopped working.
+
+We built FitXpress for that gap. Two photos give body composition and 80+ measurements in under 45 seconds, dropping straight into the member profile next to the food data.
+
+Might be worth a quick chat?
+
+Best,
+Katerina","Hi Daniel,
+
+Following up. The food log keeps people logging, but weight alone is a discouraging proxy for real change, and body composition catches the month a diet is actually working before the scale does.
+
+A quarterly scan gives Nutracheck that signal without adding daily friction.
+
+For reference, a platform running FitXpress passed 34,000 scans in a single year: this isn't an early-stage tool.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",PASS-P1-differentiation-ltv,https://linkedin.com/in/danielhutson1
+drzubairahmed,Dr Zubair,A.,,Medicspot,Founder & CEO,"Hi Zubair,
+
+Came across your work: Medicspot's weight-management members are trusting a clinician-led program to show them results, and self-reported weight is a thin way to prove that's happening between consults.
+
+We built FitXpress for exactly this: two photos give body composition and 80+ measurements in under 45 seconds. A UK online pharmacy already runs it for BMI verification, and a weight-loss platform at 34K scans a year.
+
+Worth a quick chat?
+
+Best,
+Katerina","Hi Zubair,
+
+Following up. For a clinician-led program, body composition between visits is a stronger outcomes signal than a self-reported number, and gives your team something defensible to show alongside a consult.
+
+FitXpress is HIPAA-compliant and GDPR-aligned, built for exactly this kind of clinical workflow.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",PASS-P1-differentiation-ltv,https://linkedin.com/in/drzubairahmed
+eleanor-bennett-a3229957,Eleanor,Bennett,,Nutracheck,Head of Data Product,"Hi Eleanor,
+
+Curious about your take: body composition is one of the few data feeds a nutrition app can't pull from a food log or a smart scale, and pose estimation to get it is a genuine computer-vision build that takes a dedicated team to do well.
+
+We built FitXpress as that layer: two photos return 80+ measurements and body composition in under 45 seconds via SDK, structured and ready to sit next to your food data.
+
+Open to a quick chat?
+
+Best,
+Katerina","Hi Eleanor,
+
+Following up. For a data product team the honest pitch is this: FitXpress adds a body-composition feed you'd otherwise need a computer-vision team and months to build, shipped as a structured API response.
+
+The same API already handles 34,000 scans a year for one customer, genuine production load.
+
+Worth 15 min to see the data schema? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",PASS-P2-build-vs-buy,https://linkedin.com/in/eleanor-bennett-a3229957
+eliothowes,Eliot,Howes,,Medicspot,Senior Software Engineer,"Hi Eliot,
+
+This stood out: if Medicspot ever added body scanning, you'd likely be the one integrating it. Here's how it works, skipping the sales pitch.
+
+FitXpress is an SDK: two photos captured on-device, 80+ measurements and body composition returned in under 45 seconds via API.
+
+Worth a quick chat about the integration?
+
+Best,
+Katerina","Hi Eliot,
+
+Following up. On the technical side: our SDK handles pose and tilt validation at capture, the computer vision runs server-side, and you get a structured response with 80+ measurements. One platform runs this in production at 34K scans a year.
+
+Data is encrypted at rest and in transit, HIPAA-compliant and GDPR-aligned.
+
+Worth 15 min to see the response schema? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",WEAK-P3-technical-integration,https://linkedin.com/in/eliothowes
+ellie-hitchmough-06b1b2251,Ellie,Hitchmough,,Coopah,"Senior Partnerships & Marketing Manager, Global","Hi Ellie,
+
+Thought I'd share: body-progress tracking is a natural companion feature for a run-coaching app, and it's the kind of thing that tends to arrive through a partnership. An in-house build means a computer-vision team.
+
+We're 3DLOOK. FitXpress turns two phone photos into 80+ measurements and body composition in under 45 seconds, ready to embed via SDK.
+
+Worth a quick chat to see if it fits?
+
+Best,
+Katerina","Hi Ellie,
+
+Following up. Where this has worked well elsewhere: FitXpress becomes a named, co-branded progress feature, giving partnerships something to actually market.
+
+Elsewhere it runs inside the partner's own app, already at 34,000 scans a year.
+
+Worth 15 min to see examples? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",WEAK-P3-partnership-integration,https://linkedin.com/in/ellie-hitchmough-06b1b2251
+eoin-duffill-b6a616194,Eoin,Duffill,,Nutracheck,Lead Backend Developer,"Hi Eoin,
+
+Noticed your background: you'd be the one actually plugging a body-scanning feature into Nutracheck if it ever shipped one. Here's the short version, skipping the pitch.
+
+FitXpress is an SDK and REST API: two photos in, a structured response back with 80+ measurements and body composition in under 45 seconds. Integration typically runs days, not months.
+
+Worth a quick chat about the data flow?
+
+Best,
+Katerina","Hi Eoin,
+
+Following up. From an engineering angle: FitXpress ships as SDKs (React, iOS, Android) and a REST API. You keep the whole UI; we lock only the capture step for accuracy. Everything comes back as structured JSON with 80+ measurements.
+
+In production terms, one integration on this API is already at 34,000 scans a year, well past pilot load.
+
+Worth 15 min to see the response schema? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",WEAK-P3-technical-integration,https://linkedin.com/in/eoin-duffill-b6a616194
+ian-carrington-0869a91,Ian,Carrington,,Fiit,Strategic Advisor & Investor,"Hi Ian,
+
+Noticed overlap: as an advisor into Fiit, you'll know the pressure every training app is under to prove differentiation beyond another AI coaching plan, with that part of the market getting crowded fast.
+
+We built FitXpress for that gap: two phone photos return body composition and 80+ measurements in under 45 seconds, giving members visible progress most apps can't show today.
+
+Worth a quick chat, in case it's useful for the portfolio?
+
+Best,
+Katerina","Hi Ian,
+
+Following up. From an investor's lens: visible physical progress is one of the few retention levers AI coaching alone doesn't cover, and it ships as a fast SDK integration, typically live in days.
+
+Worth flagging for the portfolio lens: one platform on FitXpress already runs at 34,000 scans a year, real commercial scale.
+
+Worth 15 min if useful for Fiit or elsewhere in the portfolio? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",WEAK-P3-differentiation-ltv,https://linkedin.com/in/ian-carrington-0869a91
+jack-yaxley-b8132892,Jack,Yaxley,,Nutracheck,Product Manager,"Hi Jack,
+
+Had a thought: for a calorie-tracking app, the scale is still the only proof of progress you show people, and it's the flattest, least motivating number in the whole product.
+
+We built FitXpress to fix that: two photos give 80+ measurements and a 3D progress model in under 45 seconds, feeding straight into the member profile.
+
+Might be worth a quick chat?
+
+Best,
+Katerina","Hi Jack,
+
+Following up. Circumference and body-composition change is a stronger retention artefact than weight, especially in the weeks a diet is working and the scale hasn't caught up yet.
+
+That's the exact gap FitXpress fills for a tracking app like Nutracheck.
+
+One platform already runs this exact feature at 34,000 scans a year, which is the kind of volume that tests whether progress tracking actually holds up.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",PASS-P2-retention-progress,https://linkedin.com/in/jack-yaxley-b8132892
+james-charalambous-9b955328,James,Charalambous,,Fiit,Managing Director,"Hi James,
+
+Saw your activity: Fiit's whole pitch is personalized training that gets people real results, but the only progress proof most members get is a lighter number on a scale that lags behind what training is actually doing to their body.
+
+We built FitXpress to give a member that proof instead: two photos, 80+ measurements and a 3D progress model in under 45 seconds, feeding into their profile.
+
+Worth a quick chat?
+
+Best,
+Katerina","Hi James,
+
+Following up. Worth being honest about the build question: computer vision for body measurement from a phone photo is a multi-year investment for most product teams, which is why most teams buy that layer instead of building it in-house.
+
+FitXpress integrates through an SDK in days. One platform on FitXpress already logged 34,000 scans last year, well past a pilot run.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",PASS-P1-build-vs-buy,https://linkedin.com/in/james-charalambous-9b955328
+jay-patel-43aa8a21,Jay,Patel,,NowPatient,Senior Business Administrator,"Hi Jay,
+
+Caught my eye: whichever side of Infohealth you sit on, remote monitoring platforms like NowPatient face the same gap. Weight and BMI are self-reported and easy to misjudge, with no independent check in between.
+
+FitXpress adds that check from two phone photos: 80+ measurements and body composition in under 45 seconds. A UK online pharmacy on FitXpress runs it for BMI verification, 7.5K scans last year.
+
+Worth a quick chat?
+
+Best,
+Katerina","Hi Jay,
+
+Following up. The commercial case here is straightforward: a visible, repeatable progress signal keeps patients checking in for longer, which matters directly to a repeat-order business like NowPatient's.
+
+FitXpress is HIPAA-compliant and GDPR-aligned.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",WEAK-P3-differentiation-ltv,https://linkedin.com/in/jay-patel-43aa8a21
+jeff-hadaway,Jeff,Hadaway,,Medicspot,Head of Operations,"Hi Jeff,
+
+Made me think: running a clinician-led weight program at scale means someone's team is still chasing self-reported weight and manually reviewing progress, which is real operational overhead.
+
+FitXpress replaces that with a 45-second phone scan returning 80+ measurements and body composition, structured and ready for review, no manual chasing.
+
+Worth a quick chat?
+
+Best,
+Katerina","Hi Jeff,
+
+Following up. From an operations lens: a standardized scan cuts the time your team spends verifying progress manually, and gives you an audit-ready record for every check-in instead of a number someone typed in.
+
+For reference: a UK online pharmacy already runs this same scan at checkout, 7,500 scans last year, with a full compliance audit trail.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",WEAK-P3-outcome-verification,https://linkedin.com/in/jeff-hadaway
+jonatan-tibarovsky-3b761a172,Jonatan,Tibarovsky,,WithU,Lead Backend Engineer,"Hi Jonatan,
+
+One more thing caught my eye: ""turning chaos into architecture"" is a good line for what body-scanning data needs on the backend, 80+ raw measurements structured into something a training app can actually use.
+
+FitXpress hands you that as an SDK and REST API: two photos in, structured output back in under 45 seconds.
+
+Worth a quick chat about the data flow?
+
+Best,
+Katerina","Hi Jonatan,
+
+Following up. From a backend point of view: FitXpress returns a structured response per scan, body composition and 80+ measurements, with no unstructured data left to parse or clean on your end.
+
+Backend load, for reference: one platform's integration processes 34,000 of these scans a year.
+
+Worth 15 min to see a sample response? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",WEAK-P3-technical-integration,https://linkedin.com/in/jonatan-tibarovsky-3b761a172
+kamran-ullah-a0ba94104,Kamran,Ullah,,NowPatient,Senior Software Developer,"Hi Kamran,
+
+Curious about your take, as the person who'd likely build this: pose estimation from a phone photo is a hard problem to get production-ready, and most teams end up buying that layer instead of building it from scratch.
+
+FitXpress is the bought version: an SDK and REST API, two photos in, 80+ measurements and body composition back in under 45 seconds. The largest platform on it runs 34K scans a year.
+
+Worth a quick chat?
+
+Best,
+Katerina","Hi Kamran,
+
+Following up. Integration is typically days through our SDK, not months, and you keep ownership of onboarding and the results screen. We only lock the capture step, where pose validation protects accuracy.
+
+Data is encrypted at rest and in transit, and the stack is HIPAA-compliant and GDPR-aligned.
+
+Worth 15 min to walk through it? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",WEAK-P3-technical-integration,https://linkedin.com/in/kamran-ullah-a0ba94104
+navin-khosla-39950a17,Navin,Khosla,,NowPatient,Head of User Safety and Compliance at Infohealth Limited,"Hi Navin,
+
+Had to say hi: the first question I'd expect from your seat on a body-scanning feature is where the photos go and who's the controller. Here's the short answer, ahead of the objection.
+
+FitXpress deletes photos immediately after processing or within 30 days, per your policy, with encryption at rest and in transit. The BodyScan feature itself is not a medical device.
+
+Worth a quick chat?
+
+Best,
+Katerina","Hi Navin,
+
+Following up on the compliance angle specifically: in most enterprise deployments, the customer acts as controller and 3DLOOK acts as processor under GDPR. FitXpress is HIPAA-compliant, with no personal identifiers processed.
+
+On precedent: a UK online pharmacy already runs this same capture flow live, 7,500 scans in 2025, with an audit trail its compliance team relies on.
+
+Worth 15 min to walk through the data flow? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",WEAK-P3-compliance,https://linkedin.com/in/navin-khosla-39950a17
+oliverbrooks,Oliver,Brooks,,Medicspot,CTO & Co-founder,"Hi Oliver,
+
+Quick one, engineer to engineer: pose estimation and body-composition extraction from a phone photo is a real computer-vision problem, and most teams your size end up buying that layer instead of building it.
+
+FitXpress ships as an SDK and REST API: two photos in, 80+ measurements and body composition back in under 45 seconds. One customer runs it in production at 34K scans a year.
+
+Worth a quick chat about the integration?
+
+Best,
+Katerina","Hi Oliver,
+
+Following up. On the build-vs-buy question specifically: FitXpress integrates in days through our SDK, not months, and you keep full control of onboarding and the results UI. We lock only the capture step, for accuracy.
+
+Data is encrypted at rest and in transit, and the stack is HIPAA-compliant and GDPR-aligned, worth flagging for your own review.
+
+Worth 15 min to see the API response? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",PASS-P2-technical-integration,https://linkedin.com/in/oliverbrooks
+pete-cooper-coopah,Pete,Cooper,,Coopah,Co-Founder & CCO,"Hi Pete,
+
+Saw your post about building a coach, not a training plan: that's exactly the differentiation that gets undercut when the only proof of progress a runner sees is a stale bathroom-scale number.
+
+FitXpress gives Coopah something better to show: two photos, 80+ measurements and a 3D progress model in under 45 seconds, feeding straight into the runner's profile.
+
+Worth a quick chat?
+
+Best,
+Katerina","Hi Pete,
+
+Following up. For a coaching brand built on being different from a generic plan, visible body change between blocks is a differentiation lever most run-coaching apps can't offer today, and it ships as a fast SDK add, typically live in days.
+
+For what it's worth, one platform running FitXpress crossed 34,000 scans last year.
+
+Worth 15 min to see it? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",PASS-P1-differentiation-ltv,https://linkedin.com/in/pete-cooper-coopah
+rajive-patel,Rajive,Patel,,NowPatient,Director,"Hi Rajive,
+
+Circling back after connecting: NowPatient already tracks a lot about a patient's health remotely, and body composition is one of the few signals still missing, especially for anyone on a weight-management journey.
+
+FitXpress adds it from two phone photos: 80+ measurements and body composition in under 45 seconds. A UK online pharmacy runs the same layer for BMI verification, 7.5K scans last year.
+
+Worth a quick chat?
+
+Best,
+Katerina","Hi Rajive,
+
+Following up. For a platform already built on remote monitoring, body composition extends what the platform already does, giving patients a visible reason to keep checking in between prescriptions.
+
+FitXpress is HIPAA-compliant and GDPR-aligned, built for exactly this kind of workflow.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",WEAK-P3-differentiation-ltv,https://linkedin.com/in/rajive-patel
+ryan-sherreard,Ryan,Sherreard,,Coopah,Head of Product,"Hi Ryan,
+
+Couldn't help but ask: Coopah's runners can get genuinely fitter and faster over a 10K while the number on their bathroom scale barely moves, and that mismatch is a real churn risk for a coaching subscription.
+
+FitXpress closes that gap from two phone photos: 80+ measurements and body composition in under 45 seconds, dropping into the member profile next to training data.
+
+Worth a quick chat?
+
+Best,
+Katerina","Hi Ryan,
+
+Following up. The build-vs-buy math on this one: pose estimation and measurement extraction from a phone photo is a multi-year computer-vision problem, and FitXpress hands it to you as an SDK integration measured in days.
+
+This already runs at real volume elsewhere: one platform is at 34,000 scans a year on the same integration.
+
+Worth 15 min to see the roadmap impact? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",PASS-P1-build-vs-buy,https://linkedin.com/in/ryan-sherreard
+saqib-kayani-02431b59,Saqib,Kayani,,NowPatient,Senior Software Engineer,"Hi Saqib,
+
+Wanted to reach out, developer to developer: body scanning from a single phone photo is a genuine pose-estimation problem, and it's rarely worth an internal team's time to rebuild what's already been solved.
+
+FitXpress ships as an SDK and REST API: two photos in, 80+ measurements and body composition back in under 45 seconds. A weight-loss platform runs it in production at 34K scans a year.
+
+Worth a quick chat about the integration?
+
+Best,
+Katerina","Hi Saqib,
+
+Following up. On the technical side: our SDK handles pose and tilt validation at capture, you keep full control of the UI, and everything returns as structured JSON, with no manual review needed on your end.
+
+Data is encrypted at rest and in transit, HIPAA-compliant and GDPR-aligned.
+
+Worth 15 min to see the response schema? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",WEAK-P3-technical-integration,https://linkedin.com/in/saqib-kayani-02431b59
+sid-lale-85a745198,Sid,Lale,,Nutracheck,Product Executive,"Hi Sid,
+
+Spotted something: weight is still the main progress number Nutracheck shows users, and it's a genuinely bad motivator, since it can sit flat for weeks while someone's body is actually changing.
+
+FitXpress turns two phone photos into 80+ measurements and a 3D progress model in under 45 seconds, feeding straight into the member profile.
+
+Might be worth a quick chat?
+
+Best,
+Katerina","Hi Sid,
+
+Following up. The pattern across nutrition and fitness apps: circumference change shows up before the scale moves, which makes it a stronger week-to-week retention signal than weight alone.
+
+FitXpress captures that from two photos, no extra hardware.
+
+One platform is already running this at 34,000 scans a year, entirely on the member side.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",WEAK-P3-retention-progress,https://linkedin.com/in/sid-lale-85a745198
+simon-knight-a14a70112,Simon,Knight,,Fiit,Owner,"Hi Simon,
+
+Quick reaction to your profile: running a fitness product usually means someone eventually asks whether to build body-progress tracking in-house or buy it, and pose estimation from a phone photo is a genuinely hard build.
+
+FitXpress is the bought version: two photos, 80+ measurements and body composition in under 45 seconds, ready to embed via SDK.
+
+Worth a quick chat, in case it's relevant to what you're running?
+
+Best,
+Katerina","Hi Simon,
+
+Following up. If body-progress tracking is on the roadmap anywhere in what you run, the honest build-vs-buy answer is that FitXpress integrates in days through an SDK, well short of a computer-vision build.
+
+Worth knowing: a platform running FitXpress logged 34,000 scans last year.
+
+Worth 15 min to see if it's a fit? Grab a slot: https://meetings.hubspot.com/katerina-galich
+
+Best,
+Katerina",WEAK-P3-build-vs-buy,https://linkedin.com/in/simon-knight-a14a70112
