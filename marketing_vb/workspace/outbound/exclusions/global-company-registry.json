@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-23",
+  "last_updated": "2026-09-12",
   "companies": {
     "safariland": {
       "covered_by_profile": null,
@@ -860,6 +860,42 @@
       "product": "fitxpress",
       "date": "2026-08-07",
       "status": "active"
+    },
+    "chequp": {
+      "display_name": "CheqUp",
+      "covered_by_profile": "katerina",
+      "status": "manually_excluded",
+      "excluded_for_profiles": [
+        "katerina"
+      ],
+      "note": "already outreached or contacted before this campaign — Vadim, 2026-09-12; returned zero people in the 2026-09-01-uk-erakulis-similar Sales Navigator export"
+    },
+    "numan": {
+      "display_name": "Numan",
+      "covered_by_profile": "katerina",
+      "status": "manually_excluded",
+      "excluded_for_profiles": [
+        "katerina"
+      ],
+      "note": "already outreached or contacted before this campaign — Vadim, 2026-09-12; returned zero people in the 2026-09-01-uk-erakulis-similar Sales Navigator export"
+    },
+    "second-nature": {
+      "display_name": "Second Nature",
+      "covered_by_profile": "katerina",
+      "status": "manually_excluded",
+      "excluded_for_profiles": [
+        "katerina"
+      ],
+      "note": "already outreached or contacted before this campaign — Vadim, 2026-09-12; returned zero people in the 2026-09-01-uk-erakulis-similar Sales Navigator export"
+    },
+    "voy": {
+      "display_name": "Voy",
+      "covered_by_profile": "katerina",
+      "status": "manually_excluded",
+      "excluded_for_profiles": [
+        "katerina"
+      ],
+      "note": "already outreached or contacted before this campaign — Vadim, 2026-09-12; returned zero people in the 2026-09-01-uk-erakulis-similar Sales Navigator export"
     }
   }
 }

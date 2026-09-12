@@ -540,6 +540,12 @@ def cmd_check(args) -> int:
 
     reg = load_json(profile_registry_path(profile), blank_profile_registry(profile))
     mine = set(reg.get("excluded_people_urls", []))
+    # The profile's own burned companies. Until 2026-09-12 this list was written by
+    # `record` and read by nobody: cmd_check only ever asked the GLOBAL registry whether
+    # some OTHER profile covered the company, so "we already worked this company from this
+    # very profile" was the one case the check could not see. That is how the 15 companies
+    # from 2026-07-31 stayed invisible to every later katerina run.
+    mine_companies = {norm_company(c) for c in reg.get("excluded_companies", []) if c}
     g = load_json(excl_dir() / "global-company-registry.json", blank_global_registry())
     gc = g.get("companies", {})
 
@@ -548,8 +554,8 @@ def cmd_check(args) -> int:
         sys.exit(f"✗ {src.name} has no rows")
 
     out = []
-    hits = {"person_already_contacted": 0, "company_other_profile": 0,
-            "existing_customer": 0, "clear": 0, "no_url": 0}
+    hits = {"person_already_contacted": 0, "company_same_profile": 0,
+            "company_other_profile": 0, "existing_customer": 0, "clear": 0, "no_url": 0}
     for row in rows:
         url = person_url(row)
         comp = norm_company(pick(row, "company_name", "company", "organization"))
@@ -560,6 +566,10 @@ def cmd_check(args) -> int:
         elif comp and gc.get(comp, {}).get("status") == "existing_customer_excluded":
             flag, why = "EXCLUDE", "existing customer"
             hits["existing_customer"] += 1
+        elif comp and (comp in mine_companies
+                       or profile in gc.get(comp, {}).get("excluded_for_profiles", [])):
+            flag, why = "EXCLUDE", f"company already worked from {profile}"
+            hits["company_same_profile"] += 1
         elif comp and gc.get(comp, {}).get("covered_by_profile") not in (None, profile) \
                 and gc.get(comp, {}).get("status") == "active":
             flag, why = "EXCLUDE", f"company covered by {gc[comp]['covered_by_profile']}"
@@ -578,7 +588,8 @@ def cmd_check(args) -> int:
     for k, v in hits.items():
         if v:
             print(f"  {k:28} {v}")
-    excluded = hits["person_already_contacted"] + hits["company_other_profile"] + hits["existing_customer"]
+    excluded = (hits["person_already_contacted"] + hits["company_same_profile"]
+                + hits["company_other_profile"] + hits["existing_customer"])
     print(f"  {'-> must be excluded':28} {excluded}")
     if hits["no_url"]:
         print(f"  note: {hits['no_url']} rows carry no person LinkedIn URL — "
@@ -673,6 +684,79 @@ def cmd_seed_customers(args) -> int:
     return 0
 
 
+# ------------------------------------------------------------------- exclude-company
+
+def cmd_exclude_company(args) -> int:
+    """Burn companies for a profile without a campaign to record them from.
+
+    `record` folds a finished campaign into the registries, and `seed-customers` handles
+    the customer list. Neither covers the case this exists for: Vadim knows a company was
+    worked — an old campaign, a conference, a warm intro that went nowhere — and the repo
+    has no artefact to prove it. Before this, the only way to write that down was to edit
+    the JSON by hand, which README.md forbids for good reason, so in practice it was never
+    written down at all and the same companies kept resurfacing in new company lists.
+    """
+    profile = args.profile
+    reg_path = profile_registry_path(profile)
+    reg = load_json(reg_path, blank_profile_registry(profile))
+    reg.setdefault("excluded_companies", [])
+    existing = {norm_company(c) for c in reg["excluded_companies"] if c}
+
+    g_path = excl_dir() / "global-company-registry.json"
+    g = load_json(g_path, blank_global_registry())
+    g.setdefault("companies", {})
+
+    added, already = [], []
+    for name in args.company:
+        slug = norm_company(name)
+        if not slug:
+            continue
+        # Idempotent on BOTH sides: a slug already in the profile list may still be
+        # missing its global row (or carry an older shape), and the global row is the
+        # half that survives a clone. So fall through to the global write either way.
+        if slug in existing:
+            already.append(name)
+        else:
+            reg["excluded_companies"].append(slug)
+            existing.add(slug)
+        prior = g["companies"].get(slug, {})
+        if prior.get("status") == "existing_customer_excluded":
+            # A customer outranks a burn note; never downgrade that.
+            added.append(f"{name} -> {slug} (profile only; global row is a customer)")
+            continue
+        if prior.get("status") == "manually_excluded" and \
+                profile in prior.get("excluded_for_profiles", []):
+            continue
+        # `manually_excluded`, not `active`: the per-profile registries are gitignored
+        # (public repo, 1,276 real people), and `backfill` rebuilds them from campaign
+        # artefacts only — a burn with no campaign behind it would not survive a fresh
+        # clone. The global registry IS tracked and holds company names only, so this is
+        # where a manual burn has to live to be durable.
+        g["companies"][slug] = {
+            "display_name": name,
+            "covered_by_profile": prior.get("covered_by_profile") or profile,
+            "status": "manually_excluded",
+            "excluded_for_profiles": sorted(
+                set(prior.get("excluded_for_profiles", [])) | {profile}),
+            "note": args.reason,
+        }
+        added.append(f"{name} -> {slug}")
+
+    reg["excluded_companies"].sort()
+    reg["last_updated"] = today()
+    g["last_updated"] = today()
+
+    print(f"exclude-company{' (dry-run)' if args.dry_run else ''}: "
+          f"profile '{profile}' — {len(added)} added, {len(already)} already there")
+    for a in added:
+        print(f"  + {a}")
+    for a in already:
+        print(f"  = {a} (already excluded)")
+    save_json(reg_path, reg, args.dry_run)
+    save_json(g_path, g, args.dry_run)
+    return 0
+
+
 # --------------------------------------------------------------------------- cli
 
 def main() -> int:
@@ -706,6 +790,14 @@ def main() -> int:
     y.add_argument("--profile", choices=PROFILES)
     y.add_argument("--dry-run", action="store_true")
     y.set_defaults(func=cmd_reply)
+
+    x = sub.add_parser("exclude-company",
+                       help="burn companies for a profile with no campaign to record from")
+    x.add_argument("--profile", required=True, choices=PROFILES)
+    x.add_argument("--company", required=True, nargs="+", help="one or more company names")
+    x.add_argument("--reason", required=True, help="why — it goes in the registry note")
+    x.add_argument("--dry-run", action="store_true")
+    x.set_defaults(func=cmd_exclude_company)
 
     s = sub.add_parser("seed-customers", help="mark existing customers permanently excluded")
     s.add_argument("--dry-run", action="store_true")
