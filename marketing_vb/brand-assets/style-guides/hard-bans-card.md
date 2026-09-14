@@ -17,7 +17,7 @@ what is enforced, which is the point: read it instead of `ai-tells-sweep.md` (18
 no regex can decide (corrective negation, corrective "rather than", `we/our`, `you`,
 vendor blogs as citations) and for the reasoning behind each rule.
 
-**11 hard categories, 77 patterns.**
+**13 hard categories, 85 patterns.**
 
 ### banned_words
 
@@ -69,6 +69,18 @@ Behaviour or feeling attributed to a concept: "two properties do the heavy lifti
 
 **Instead:** "two properties matter". Plain verbs.
 
+### ieee_claims
+
+IEEE wording the terminology Doc retires after IEEE raised it with 3DLOOK: `IEEE-certified` / `-recognized` / `-validated` / `-backed`, `certified by IEEE`, `IEEE Grand Challenge`, `member of IEEE standards`.
+
+**Instead:** Only the two approved sentences in `proof-points.md`, verbatim: the 2019 Grand Challenge "run by the 3D Retail Coalition with Kalypso and IEEE", and the IEEE 3D Body Processing working group participation.
+
+### body_measurement_terms
+
+`80+ body metrics` (the approved claim is `80+ body measurements`), and BMI, BMR or body composition listed as body measurements.
+
+**Instead:** body measurements = circumferences, lengths, widths; BMI and BMR = calculated metrics; body composition = estimates; body metrics = the umbrella.
+
 ### reserved_words
 
 `independent`, `third-party`, `validated`, `clinically validated`, `peer-reviewed` applied to our own evidence. We have none of these.
@@ -101,8 +113,9 @@ Literal terms: `diagnose`
 
 A regex cannot tell a real product boundary from a slight, so these stay human:
 corrective negation (`X, not Y`), corrective `rather than`, `we / our` beyond a claim of
-ownership, `you` in neutral educational prose, a vendor blog used as a citation, and a
-compressed relationship where `depends on` or `varies by` is meant. The editor owns
-these. See `brand-assets/content-strategy/terminology-guardrails.md` Part 3, the rows
-marked `judgment`.
+ownership, `you` in neutral educational prose, `buyer` / `customer` as an audience label,
+content-plan labels (hub, cluster, bridge) in headings, an IEEE logo in an award strip, a
+vendor blog used as a citation, and a compressed relationship where `depends on` or
+`varies by` is meant. The editor owns these. See
+`brand-assets/content-strategy/terminology-guardrails.md` Part 3, rows not marked `auto`.
 

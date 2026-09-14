@@ -152,8 +152,15 @@ See `pricing.md` for full table. Key anchors:
 | Employees | 28 | Same |
 | Total raised | $16.2M | Same |
 | Sifted recognition | 2020 Pioneers of the New World | Same |
-| IEEE | Winner, Retail Digital Transformation Grand Challenge | Same |
-| Standards | Member of Mobile Body Scanning Standards | Same |
+| IEEE | Winner, 2019 Retail Digital Transformation Grand Challenge, run by the 3D Retail Coalition with Kalypso and IEEE. | Terminology Doc §2.11, approved wording (2026-09-14) |
+| Standards | Participant in the IEEE 3D Body Processing working group, which is developing standards for mobile body scanning. | Same |
+
+> **IEEE wording is fixed (2026-09-14).** Use the two sentences above verbatim, and only those
+> (`brand-assets/content-strategy/terminology-guardrails.md` §2.11). IEEE has raised an issue with
+> incorrect claims 3DLOOK was making. The banned forms are listed in §2.11 and failed by
+> `detect-ai-tells.py` (`ieee_claims`); the earlier wording of these two rows is recorded in the
+> guardrails' Overrides table, not here, because agents copy from this file. No standalone IEEE
+> logo in an award, certification, validation or recognition strip either.
 
 ---
 

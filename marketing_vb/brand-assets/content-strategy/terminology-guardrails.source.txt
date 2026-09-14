@@ -1,0 +1,154 @@
+﻿Terminology & Language Guardrails
+General approaches
+
+
+Subject
+	To do
+	Condition
+	Exception to the rule / Example
+	Abbreviation
+	Use the full version and, immediately after, provide the abbreviation in the brackets 
+	The concept to be abbreviated is mentioned for the first time in the text
+	Commonly known concepts, such as AI, WWW, iOS, etc. Treat BMI, CEO, UK, US, EU as commonly known abbreviations
+	Internal linking and third-party linking
+	Integrate links directly to the anchors in the text
+	Whenever there is a need for a source citation
+	-
+	Third-party linking
+	Use only high-quality neutral websites. Aim to avoid vendor blogs 
+	Whenever there is a need for a source citation
+	-
+	Relationships 
+	Write relationships explicitly. Avoid compressed business or technical phrasing that makes the reader decode the relationship.  
+	When one requirement varies based on another factor, use clear constructions such as “depends on,” “varies by,” or “is determined by.” 
+	Example:
+* Avoid: “The historical records the feature needs scale to what is being compared.”
+* Prefer: “The historical records required depend on the type of comparison.”
+	Audience’s presumed reaction
+	Focus on the concept, not on the audience’s presumed reaction. Define the issue directly and name its components.
+	Avoid phrases such as “what trips people up,” “the mistake buyers make,” or “what most teams misunderstand.” 
+	Example:
+* Avoid: “What trips up most procurement reviews is treating ‘who owns the data’ as one question, when it is really five.”
+* Prefer: “‘Data ownership’ involves several distinct rights: individual privacy rights, customer contractual rights, processing rights, intellectual-property rights, and rights to generated outputs.”
+	Too casual language for a healthcare-enterprise tone 
+	Avoid
+	Writing about concepts by attributing to them behavior, feelings, etc.
+	Example:
+* Avoid: “Two properties do the heavy lifting across all of these.”
+* Prefer: “Two properties matter across all of these workflows.”
+	Em dashes
+	Avoid
+	Always
+	-
+	Corrective negation
+	Avoid constructions such as “X, not Y” when they may sound corrective, dismissive, or overly instructive. Lead with the recommended approach and explain its purpose or benefit. 
+	Always
+	Use negation when it communicates a necessary product, clinical, legal, or regulatory boundary. Preferred: “This explanation should be included in the patient-facing flow, where patients can access it when needed. A policy document can provide supplementary detail.” Acceptable exception: “FitXpress supports clinician review; it is not a diagnostic tool.” 
+	Contrast using “rather than”
+	Avoid using “rather than” to frame one format, capability, workflow, or outcome through corrective contrast with another. State the primary characteristic directly, then explain any limitation or difference in a separate clause or sentence.
+	When the contrast may sound dismissive, imply that the alternative is inherently inferior, or require the reader to interpret the intended relationship.
+	Use “rather than” when it describes a necessary clinical, legal, regulatory, or product boundary, or a genuine user choice that cannot be stated as clearly without contrast. Avoid: “Results typically arrive as a report rather than a live data feed.” Prefer: “Results typically arrive as a PDF report or portal export. Live data-feed availability depends on the provider and integration.”
+	Internal content-cluster labels
+	Replace internal planning terms with reader-facing language that identifies the concrete topic, question, workflow, or decision covered by the section.
+	Apply when terms such as bridge, hub, pillar, cluster, or supporting content describe the page’s role in the content architecture rather than a concept used by the intended audience.
+	Retain a term when it has an established meaning within the relevant industry or accurately describes a visible website feature. Example: replace “The GLP-1 bridge: current BMI, historical BMI, and documentation continuity” with “How does prior GLP-1 treatment affect BMI documentation at bariatric intake?”
+	
+
+Guardrails
+
+
+Word / Phrase
+	Condition
+	To apply
+	To avoid
+	Reason
+	Alternative
+	Objective
+	In relation to 3DLOOK’s technology and product outputs
+	Rarely
+	Most cases
+	Too strong and subjective
+	Depending on the context, it could be replaced with: standardized, timestamped, structured, repeatable
+	We / our 
+	All content 
+	When ownership matters: the company is making a clear claim, explaining its own product, or taking responsibility. 
+	When the workflow or the buyer's needs should be the focus.
+	If overused, we make the content feel company-centered sales deck 
+	Reformulate the statement in question
+	You 
+	All content 
+	When speaking to a clear decision-maker or operational owner, landing pages, conversion sections, product onboarding, and practical guidance. 
+	In neutral educational sections, the article should feel more authoritative. 
+	Creates a direct address 
+	Reformulate the statement in question
+	Reader / audience / the following sections / below / etc. 
+	All content 
+	Never
+	Almost always
+	Remind people that they are reading marketing content instead of focusing on the actual problem.
+	Don’t describe the reading experience. Describe the business reality
+	This article / this guide / our article / our content
+	All content 
+	In the scope notes, define the document 
+	Preferably
+	Consumes the strongest part of the page without adding meaning 
+	Reformulate the statement in question
+	By hand
+	All content 
+	Never
+	Always
+	Too plain
+	Manually
+	Plus
+	All content 
+	Never
+	To connect product capabilities, outputs, benefits, or proof points
+	“Plus” can make capabilities feel like informal add-ons or promotional feature stacking. 
+	Prefer structured phrasing that groups related outputs clearly, using “including,” “such as,” “along with,” “as well as,” or a separate sentence when the list is long.
+	Let
+	All content 
+	Never
+	Always
+	Too plain
+	Allow
+	So
+	When so introduces a result, consequence, or business benefit in formal B2B content 
+	Never
+	Always
+	So can sound conversational and may present the stated benefit as an automatic consequence. More precise alternatives create a more formal tone and allow the outcome to be appropriately qualified. 
+	Use more precise constructions such as reducing…, helping to reduce…, allowing…, which can reduce…, thereby reducing… Select wording that reflects the certainty of the evidence.  
+	Positioned as
+	When describing 3DLOOK, its products, technology, outputs, intended use, or regulatory status
+	Only when discussing explicit market positioning, messaging strategy, or competitive positioning
+	When defining what the product is, does, supports, replaces, or is intended to be used for
+	“Positioned as” suggests that the product’s identity, intended use, or regulatory status depends on external perception rather than on 3DLOOK’s defined product scope and claims. It can also make a factual product boundary sound like a marketing choice.
+	State the product scope or boundary directly. Avoid: “FitXpress is not positioned as a medical device.” Prefer: “FitXpress is not a medical device.” Avoid: “FitXpress is positioned as a supporting tool for clinician review.” Prefer: “FitXpress supports clinician review.” For intended-use boundaries: “FitXpress does not diagnose conditions, make clinical decisions, or determine treatment eligibility.”
+	IEEE
+	
+
+	“Winner, 2019 Retail Digital Transformation Grand Challenge, run by the 3D Retail Coalition with Kalypso and IEEE.”
+“Participant in the IEEE 3D Body Processing working group, which is developing standards for mobile body scanning.”
+	IEEE-certified
+Certified by IEEE
+IEEE-recognized
+Recognized or acknowledged by IEEE
+IEEE-validated
+IEEE Grand Challenge
+Member of IEEE standards
+IEEE-backed accuracy, ISO compliance or clinical-grade performance
+Standalone IEEE logos in award, certification, validation or recognition strips
+	Issue with IEEE for the incorrect claims 3DLOOK making 
+	
+
+	Buyer / customer
+	All corporate content
+	Use buyer only when discussing procurement, buying criteria, or vendor evaluation. Use customer when referring to an established contractual relationship, deployment responsibility, or legal role.
+	When either term merely labels the intended audience, assumes an existing commercial relationship, or replaces the specific organization responsible for an action.
+	These terms can expose the marketing framework instead of describing the operational reality. “Customer” can also imply that the organization has already selected 3DLOOK.
+	Name the actual actor or context: organization, program, provider, clinic, employer, operator, procurement team, decision-maker, or person being screened.
+	Body metrics / body measurements
+	Whenever describing numerical body-related data or FitXpress outputs 
+	Use body metrics as the umbrella category for numerical body-related outputs. Use body measurements specifically for anthropometric dimensions, such as circumferences, lengths, and widths. Describe BMI, basal metabolic rate, and body composition estimates as metrics or calculated/estimated outputs. 
+	Using body metrics and body measurements interchangeably; describing BMI, body composition, or basal metabolic rate as body measurements; replacing the approved “80+ body measurements” claim with “80+ body metrics.” 
+	The terms represent different levels of classification. Conflating them obscures which outputs are anthropometric dimensions and which are calculated or estimated values. 
+	Use the precise category: body measurements, calculated metrics, body composition estimates, or the umbrella term body metrics when referring to multiple output types.

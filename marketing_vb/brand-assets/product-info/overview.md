@@ -45,7 +45,13 @@ Computer vision is commoditizing in 12-36 months. Apple/Google may release nativ
 
 ## Recognition
 
-Sifted (2020 Pioneers of the New World), IEEE Retail Digital Transformation Grand Challenge winner, member of Mobile Body Scanning Standards, Gartner / CB Insights / RTIH finalists.
+Sifted (2020 Pioneers of the New World); Gartner / CB Insights / RTIH finalists.
+
+IEEE, in these two sentences only and verbatim (`brand-assets/content-strategy/terminology-guardrails.md` §2.11, 2026-09-14; the rows live in `proof-points.md`):
+- "Winner, 2019 Retail Digital Transformation Grand Challenge, run by the 3D Retail Coalition with Kalypso and IEEE."
+- "Participant in the IEEE 3D Body Processing working group, which is developing standards for mobile body scanning."
+
+The earlier wording of this line is recorded in the terminology guardrails' Overrides table, not here, because agents copy from this file.
 
 ## Leadership
 

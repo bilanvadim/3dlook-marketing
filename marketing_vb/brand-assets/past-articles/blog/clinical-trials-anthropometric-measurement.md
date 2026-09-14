@@ -12,7 +12,8 @@ source: https://docs.google.com/document/d/1p1t0pGb7IVJR0Cwfu0s-aY2Ak_mIO5kJs9Zz
 reference_role: First clinical-trials / heavily-regulated-vertical use-case article. Use as a structural + compliance-scoping model for CRO/pharma and other regulated FitXpress verticals.
 known_issues: |
   Mirrors the finalized copy, including two mechanical slips now covered by editorial-guardrails M1/M2 — do NOT replicate them:
-  - Abbreviations not expanded at first use: BMI, DEXA, GLP-1, FDA, ICH, DHT, QA, API/SDK, eCOA (guardrail M1).
+  - Abbreviations not expanded at first use: DEXA, GLP-1, FDA, ICH, DHT, QA, API/SDK, eCOA (guardrail M1). BMI is no longer on this list: it stays bare since 2026-08-25 (terminology-guardrails.md §1). New copy writes DXA, not DEXA (2026-09-02).
+  - BMI described as a body measurement: "anthropometric measurements such as weight, BMI" and "Anthropometric measurements such as BMI, waist circumference". Since 2026-09-14 BMI is a calculated metric and body composition an estimate (terminology-guardrails.md §2.13, detector category `body_measurement_terms`). The cover table's "body measurements, BMI outputs, and body composition estimates" is the right shape.
   - Stacked/interrupted negation ("does not… nor does it…", "is — and is not — designed for", "necessary but not sufficient") (guardrail M2).
   - Banned word "utilize/utilizing" shipped in two places (CLAUDE.md §6); use "use".
   Repeated compliance/scope disclaimer across sections is intentional and approved (fits each section) — not an issue.

@@ -18,6 +18,8 @@ Every quantitative claim must be byte-identical in all sections (body, question 
 
 Never use them unless independence is provable with a named external party and a citable output. Default framings: **internal validation**, **benchmark participation**, **dataset enrichment**. State the negatives plainly and consistently: *not peer-reviewed, not third-party validated, not clinically certified*.
 
+> **IEEE, by name (2026-09-14, `terminology-guardrails.md` §2.11).** The same discipline now has a named case, because IEEE has raised an issue with incorrect claims 3DLOOK was making. Two sentences are approved and are used verbatim: *"Winner, 2019 Retail Digital Transformation Grand Challenge, run by the 3D Retail Coalition with Kalypso and IEEE."* and *"Participant in the IEEE 3D Body Processing working group, which is developing standards for mobile body scanning."* Never "IEEE-certified", "certified by IEEE", "IEEE-recognized", "recognized or acknowledged by IEEE", "IEEE-validated", "IEEE Grand Challenge", "member of IEEE standards", or IEEE-backed accuracy, ISO compliance or clinical-grade performance, and never a standalone IEEE logo in an award, certification, validation or recognition strip. `proof-points.md` carried two of the banned forms until this date and was corrected. `detect-ai-tells.py` fails the text forms (`ieee_claims`); the logo is the judge's call.
+
 ## 4. Drop hard headline percentages you can't precisely define
 
 A bare ">95%" invites "of what, measured how, over how many sessions?" Replace with a qualitative claim + one concrete sub-figure + "detailed methodology available under NDA."
@@ -37,6 +39,8 @@ For intended-use boundaries, the standard sentence is: **"FitXpress does not dia
 > **Re-amended 2026-09-02 — the 2026-08-25 amendment above is reverted for this sentence only.** Review 1 on the Wellness Platforms hub names *"It is not positioned as a medical device."* as the approved medical-device wording, and Vadim took that call on 2026-09-02. The medical-device boundary goes back to the original wording. The rest of terminology guardrail §2.10 stands: "positioned as" is still banned for intended use, scope, replacement or equivalence, and every other product or regulatory statement. Guardrail **#7** below is therefore unchanged. `detect-ai-tells.py` licenses the medical-device sentence and nothing else. Articles published under either earlier wording are not retro-edited.
 
 > **Re-amended 2026-09-11 — the direct form, with no exception left.** Vadim's call on the editor's final of the occupational-health intake article, which writes *"FitXpress is not a medical device."* The 2026-09-02 restoration above is withdrawn: "positioned as" is banned for the medical-device sentence as well, and `detect-ai-tells.py` no longer licenses any "positioned as" sentence. This is the rule's fourth state (prescribed 2026-06-09, banned 2026-08-13, restored for the medical-device sentence 2026-09-02, direct form 2026-09-11), and it matches the terminology Doc the 2026-08-13 ban came from. Published articles keep whichever wording they shipped with. An unpublished draft that still carries the old sentence now fails the detector, so it is corrected on its next editor pass.
+
+> **Confirmed 2026-09-14.** The terminology Doc's §2.10 now spells out the pair itself: Avoid *"FitXpress is not positioned as a medical device."*, Prefer *"FitXpress is not a medical device."* The 2026-09-11 rule and its source agree. Nothing changes.
 
 ## 7. Conditional language for boundaries
 
@@ -100,7 +104,7 @@ Keep exactly one clear negative statement of scope where a boundary must be stat
 
 ### M3. Construction rules live in the terminology guardrails
 
-`brand-assets/content-strategy/terminology-guardrails.md` Part 1 adds five construction rules at the same mechanical level as M1/M2, and they apply to all content: write relationships explicitly ("depends on", "varies by"); no presumed audience reaction ("what trips people up"); no behaviour attributed to concepts ("do the heavy lifting"); no corrective negation "X, not Y" outside a real boundary; no corrective "rather than". Part 2 holds the ten word-level bans. Run that file as its own pass, not from memory.
+`brand-assets/content-strategy/terminology-guardrails.md` Part 1 adds six construction rules at the same mechanical level as M1/M2, and they apply to all content: write relationships explicitly ("depends on", "varies by"); no presumed audience reaction ("what trips people up"); no behaviour attributed to concepts ("do the heavy lifting"); no corrective negation "X, not Y" outside a real boundary; no corrective "rather than"; and, since 2026-09-14, no internal content-cluster labels ("bridge", "hub", "pillar", "cluster", "supporting content") in headings, anchors or copy, where the section's topic, question or decision belongs. Part 2 holds the thirteen word-level rules, including three added on 2026-09-14: IEEE only in its two approved sentences, "buyer" / "customer" only in their procurement and contractual senses, and "80+ body measurements" with BMI and body composition kept out of the "body measurements" category. Run that file as its own pass, not from memory.
 
 ---
 
@@ -110,13 +114,13 @@ Keep exactly one clear negative statement of scope where a boundary must be stat
 |-------|-------------|
 | Brief intake | Include this file (or a link to it) in the brief. Don't write a sentence without confirming none of the 11 are broken. |
 | Phase 1 fact-check | Run the 11 as an explicit checklist. Flag every #1, #2, #3, #4, #6 risk before approving the brief. |
-| Phase 3 writing | Enforce naскрізь — especially #1 (substantiation), #2 (one number everywhere), #3 (reserved words), #4 (no bare percentages without methodology), #6 (medical framing stated directly), and **M1 (expand acronyms except the commonly known ones) / M2 (no stacked negation) / M3 (terminology guardrails as its own pass)**. |
+| Phase 3 writing | Enforce naскрізь — especially #1 (substantiation), #2 (one number everywhere), #3 (reserved words, IEEE wording), #4 (no bare percentages without methodology), #6 (medical framing stated directly), and **M1 (expand acronyms except the commonly known ones) / M2 (no stacked negation) / M3 (terminology guardrails as its own pass)**. |
 | Phase 4 self-critique | List any place a guardrail was bent. Per #11, surface to Open Items for Asselya, not a silent edit. Run a first-use scan for every acronym (M1), a stacked-negation scan (M2), and the terminology-guardrails pass plus the detector (M3). |
 | Phase 5 metrics | Add a "Guardrails audit" subsection — pass/fail for each of the 11 principles + M1/M2/M3. |
 
 ## Related references
 
-- `brand-assets/content-strategy/terminology-guardrails.md` — **word-level and sentence-construction rules (Asselya's Doc). Wins on wording; it amends #6 and M1 above.**
+- `brand-assets/content-strategy/terminology-guardrails.md` — **word-level and sentence-construction rules (Asselya's Doc). Wins on wording; it amends #6 and M1 above, and adds the IEEE case under #3.**
 - `brand-assets/style-guides/ai-tells-sweep.md` + `scripts/detect-ai-tells.py` — AI-tell catalogue and mechanical detector
 - `brand-assets/style-guides/blog-style-guide.md` — lower-level voice/structure spec for blog content
 - `CLAUDE.md` §6 — tone of voice & banned phrases

@@ -112,6 +112,11 @@ Grade harshly. Partial credit per axis, with the lost points attributable.
       is automatically this
 - [ ] "independent", "validated", "third-party" or "clinically validated" without a named external
       party and a citable output (guardrail #3)
+- [ ] IEEE outside the two approved sentences in `proof-points.md` (IEEE-certified, -recognized,
+      -validated, -backed, "IEEE Grand Challenge", "member of IEEE standards"), or a standalone IEEE
+      logo in an award, certification or recognition strip (terminology guardrail §2.11)
+- [ ] "80+ body metrics" in place of the approved "80+ body measurements", or BMI, BMR or body
+      composition described as body measurements (terminology guardrail §2.13)
 - [ ] Medical framing other than the direct "FitXpress is not a medical device", any use of
       "positioned as" for a product or regulatory statement (terminology guardrail §2.10), or a claim
       that a regulatory framework "does not apply" (guardrail #6)

@@ -20,7 +20,7 @@ tools: Read, Grep
 2. **Banned patterns:** трійні паралелізми (X, Y, and Z), em-dash rhetoric, «It's not just X, it's Y», «Not only X but also Y»
 3. **Banned openers:** «In today's fast-paced world», «Have you ever wondered», «It is worth noting», «It is important to note»
 4. **Person:** company-акаунти = 3rd person / we, personal = 1st person
-5. **Claims discipline:** немає «diagnoses», «makes decisions», «replaces clinician», «guarantees compliance», «detects fraud»
+5. **Claims discipline:** немає «diagnoses», «makes decisions», «replaces clinician», «guarantees compliance», «detects fraud». IEEE — тільки двома затвердженими фразами з `proof-points.md`, без «IEEE-certified / recognized / validated / backed», «IEEE Grand Challenge», «member of IEEE standards» (terminology-guardrails.md §2.11). `80+ body measurements`, а не `80+ body metrics`, і BMI / body composition не називаються body measurements (§2.13). Будь-що з цього = FAIL
 6. **Accuracy:** якщо є число про точність — воно кваліфіковане (для якого decision, проти якого reference), а не одне голе число
 7. **CTA:** soft («link in bio», «article in comments»), не «Buy now» / «Book demo now» (для TOFU/MOFU)
 8. **Abbreviations M1:** кожна абревіатура розшифрована при першому вживанні. Виняток — загальновідомі: AI, WWW, iOS, BMI, CEO, UK, US, EU (terminology-guardrails.md §1). `Body Mass Index (BMI)` → FAIL, правильно `BMI`

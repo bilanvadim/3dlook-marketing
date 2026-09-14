@@ -71,6 +71,8 @@ tools: Read, Write, WebSearch, WebFetch, Grep
 ### Phase 3 — Outline
 8. Построй план статьи (6-10 H2 секций). **Для FitXpress бери за основу рекомендованную 12-частную структуру** из `content-strategy-guidelines.md` §12 (buyer problem → short answer → why now → workflow → where FitXpress fits → what improves → **what FitXpress does NOT do** → comparison/decision framework если relevant → buyer/ICP fit → implementation/evaluation → **FAQs** → **CTA**). Для sensitive verticals (telehealth, GLP-1, insurance, bariatrics, clinical trials, occupational health) добавь **scope note рано** (в intro или первой H2).
 
+**`{Title}` называет тему, вопрос или решение, а не роль страницы в контент-плане** (`brand-assets/content-strategy/terminology-guardrails.md` §1.10, синк 2026-09-14). `hub`, `cluster`, `pillar`, `bridge`, `supporting content` из строки `content-plan.md` — внутренняя разметка: в H1, H2, H3 и title статьи они не попадают. Не «The GLP-1 bridge: current BMI, historical BMI, and documentation continuity», а «How does prior GLP-1 treatment affect BMI documentation at bariatric intake?». Исключение — видимая фича сайта (Content Hub) или термин с устоявшимся отраслевым значением.
+
 Каждая H2 включает:
 ```
 ## H2.N — {Title}

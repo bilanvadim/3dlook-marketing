@@ -31,6 +31,12 @@ What is different from upstream:
     written directly, "FitXpress is not a medical device." (Vadim, from the editor's final of
     the occupational-health intake article). The 2026-09-02 lookahead that licensed "not
     positioned as a medical device" is gone.
+  * Synced with the Doc again on 2026-09-14 (four new rules). Two became HARD categories:
+    `ieee_claims` (§2.11, only the two approved IEEE sentences) and `body_measurement_terms`
+    (§2.13, "80+ body metrics" and BMI / BMR / body composition listed as body measurements).
+    Internal content-cluster labels (§1.10) are SOFT (`cluster_labels`) because the Doc keeps a
+    term with an industry meaning or a visible site feature. Buyer / customer (§2.12) has no
+    pattern: whether a sentence is about procurement or merely labels the audience is judgment.
 
 Usage:
     python3 detect-ai-tells.py path/to/draft.md --channel article --pretty
@@ -109,6 +115,20 @@ CARD = {
     "anthropomorphism": (
         "Behaviour or feeling attributed to a concept: \"two properties do the heavy lifting\".",
         "\"two properties matter\". Plain verbs.",
+    ),
+    "ieee_claims": (
+        "IEEE wording the terminology Doc retires after IEEE raised it with 3DLOOK: "
+        "`IEEE-certified` / `-recognized` / `-validated` / `-backed`, `certified by IEEE`, "
+        "`IEEE Grand Challenge`, `member of IEEE standards`.",
+        "Only the two approved sentences in `proof-points.md`, verbatim: the 2019 Grand Challenge "
+        "\"run by the 3D Retail Coalition with Kalypso and IEEE\", and the IEEE 3D Body Processing "
+        "working group participation.",
+    ),
+    "body_measurement_terms": (
+        "`80+ body metrics` (the approved claim is `80+ body measurements`), and BMI, BMR or body "
+        "composition listed as body measurements.",
+        "body measurements = circumferences, lengths, widths; BMI and BMR = calculated metrics; "
+        "body composition = estimates; body metrics = the umbrella.",
     ),
     "reserved_words": (
         "`independent`, `third-party`, `validated`, `clinically validated`, `peer-reviewed` "
@@ -246,6 +266,38 @@ HARD_EN = {
         r"scan|scans|metric|metrics|number|numbers)\s+"
         r"(?:wants?|knows?|thinks?|believes?|understands?|cares?|decides?|feels?|struggles?)\b",
         r"\b(?:workflow|process|pipeline)s?\s+(?:fights?|resists?|wants?)\b",
+    ],
+    # terminology-guardrails.md 2.11 (Doc synced 2026-09-14) — IEEE wording. IEEE has raised
+    # 3DLOOK's incorrect claims, and the Doc approves two sentences verbatim: "Winner, 2019 Retail
+    # Digital Transformation Grand Challenge, run by the 3D Retail Coalition with Kalypso and
+    # IEEE." and "Participant in the IEEE 3D Body Processing working group, which is developing
+    # standards for mobile body scanning." Neither matches below. The first `proof-points.md`
+    # rows ("Winner, Retail Digital Transformation Grand Challenge", "Member of Mobile Body
+    # Scanning Standards") did, and were corrected the same day. Standalone IEEE logos in an
+    # award strip are the same ban in a picture, so they stay with page-builder's judge.
+    "ieee_claims": [
+        r"\bIEEE[- ](?:certified|certification|recogni[sz]ed|recognition|validated|validation|"
+        r"backed|approved|endorsed|accredited)\b",
+        r"\b(?:certified|recogni[sz]ed|acknowledged|validated|endorsed|backed|approved|"
+        r"accredited)\s+by\s+(?:the\s+)?IEEE\b",
+        r"\bIEEE\s+(?:Retail\s+Digital\s+Transformation\s+)?Grand\s+Challenge\b",
+        r"\bmember\s+of\s+(?:the\s+)?IEEE\s+(?:[\w-]+\s+){0,4}?standards?\b",
+        r"\bmember\s+of\s+(?:the\s+)?mobile\s+body\s+scanning\s+standards?\b",
+    ],
+    # terminology-guardrails.md 2.13 (Doc synced 2026-09-14) — body metrics vs body measurements.
+    # Body measurements are anthropometric dimensions; BMI, basal metabolic rate and body
+    # composition are calculated or estimated metrics; body metrics is the umbrella. Only the
+    # unambiguous shapes are HARD: the approved "80+ body measurements" claim rewritten as
+    # metrics, and BMI / BMR / body composition introduced as measurements. "Body composition
+    # measurement" by a DXA reference is a real measurement and stays with the editor, and so
+    # does "BMI measurement", which is also a search term.
+    "body_measurement_terms": [
+        r"\b(?:80\s*\+|80\s+plus|(?:more\s+than|over|at\s+least)\s+80)\s+(?:body\s+)?metrics\b",
+        r"\b(?:body\s+)?measurements?\s*[,(:]?\s*(?:such\s+as|including|like|e\.g\.,?)\s+"
+        r"(?:[\w-]+(?:\s+[\w-]+)?,\s+){0,3}(?:BMI|BMR|basal\s+metabolic\s+rate|body[- ]fat|"
+        r"body\s+composition|lean\s+mass|fat\s+mass)\b",
+        r"\b(?:BMI|BMR|basal\s+metabolic\s+rate|body[- ]fat(?:\s+percentage)?|body\s+composition)"
+        r"(?:\s+estimates?)?\s+(?:and|or)\s+other\s+(?:body\s+)?measurements\b",
     ],
     # editorial-guardrails.md #3 — reserved words need a named external party
     "reserved_words": [
@@ -452,6 +504,19 @@ SOFT_EN = {
         r"\brather\s+than\b",
         r"\b(?:is|are|was|were|means|becomes|comes)\s+(?:a|an|the)?\s*[\w-]+(?:\s+[\w-]+){0,3},\s+not\s+(?:a|an|the)?\s*[\w-]+",
         r"\bit'?s\s+(?:about|a)\s+[\w-]+(?:\s+[\w-]+){0,3},\s+not\b",
+    ],
+    # terminology-guardrails.md 1.10 (Doc synced 2026-09-14) — internal content-cluster labels.
+    # "bridge", "hub", "pillar", "cluster", "spoke", "supporting content" name a page's role in our
+    # content plan, and the plan's labels leak straight into headings: the Doc's own example,
+    # "The GLP-1 bridge: ...", is a bariatric-hub-refresh heading. SOFT because the Doc keeps a
+    # term with an established industry meaning or a visible site feature. The site's "Content
+    # Hub" is excluded here; a "data hub" in an integration section is the editor's call.
+    "cluster_labels": [
+        r"(?m)^#{1,6}[^\n]*?\b(?:bridge|pillar|cluster|spoke|supporting\s+content)\b",
+        r"(?m)^#{1,6}[^\n]*?(?<!content\s)\bhub\b",
+        r"\b(?:hub|pillar|cluster|spoke)\s+(?:article|page|piece)s?\b",
+        r"\bsupporting\s+(?:content|articles?|pages?)\b",
+        r"\b(?:this|the|our)\s+(?:(?!content\b)[\w-]+\s+)?(?:hub|pillar|cluster)\b(?!\s+of\b)",
     ],
     "slogan_ending": [
         r"(?m)^.{0,80}(the\s+future\s+is\s+here|that'?s\s+the\s+real\s+(win|shift)|and\s+that\s+changes\s+everything)\.?\s*$",

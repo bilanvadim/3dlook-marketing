@@ -56,6 +56,8 @@ tools: Read, Write, Grep, Bash
 
 Словарные запреты — `brand-assets/content-strategy/terminology-guardrails.md` Part 2, они действуют и в DM: em dash (уже забанен шаблонами), `plus` как коннектор, `so` как коннектор выгоды, `let` → `allow`, `by hand` → `manually`, `objective` про наш вывод, `positioned as` про продукт. Тон в Message 1/2 разговорный, но выгода формулируется точно (`helping to reduce…`, `which can reduce…`), а не через `so`.
 
+С синка 2026-09-14 в DM действуют ещё три правила того же файла: **IEEE** только двумя утверждёнными фразами из `proof-points.md`, дословно, без «IEEE-certified / recognized / validated», «IEEE Grand Challenge», «member of IEEE standards» (§2.11); **`80+ body measurements`**, никогда `80+ body metrics`, и BMI / body composition не называются body measurements (§2.13); **`buyer` / `customer`** не ярлык получателя или его компании: «customer» подразумевает, что компания уже выбрала 3DLOOK, поэтому называй актора (clinic, program, pharmacy, employer, operator, patients, members) (§2.12).
+
 ```bash
 python3 brand-assets/style-guides/scripts/detect-ai-tells.py <файл-с-сообщением> --channel dm --summary
 ```

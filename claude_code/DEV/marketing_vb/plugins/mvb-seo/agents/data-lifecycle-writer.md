@@ -23,10 +23,11 @@ Topics: Photos, Measurements & body composition data, 3D models & progress track
 
 ### Section 1: What data does FitXpress process and generate?
 - Submitted data: photos, height, optional weight, profile info
-- Generated data: 80+ measurements, body composition (BMI, BMR, body fat %, lean mass, fat mass, Smart Scales), 3D model
+- Generated data: 80+ body measurements (circumferences, lengths, widths), calculated metrics (BMI, BMR), body composition estimates (body fat %, lean mass, fat mass, Smart Scales), 3D model
 - Technical/operational data: quality flags, metadata
 - Include a DATA LIFECYCLE TABLE with columns: Data category | Purpose | Stored by 3DLOOK? | Retention | Deletion method
-- Rows: Photos, Measurements and body metrics, Body composition data, 3D model or mesh, Progress-tracking data, Identifiers and logs
+- Rows: Photos, Body measurements and calculated metrics, Body composition estimates, 3D model or mesh, Progress-tracking data, Identifiers and logs
+- Output vocabulary (`brand-assets/content-strategy/terminology-guardrails.md` §2.13, synced 2026-09-14): "body measurements" only for anthropometric dimensions; BMI and BMR are calculated metrics; body composition values are estimates; "body metrics" only as the umbrella for several output types. Never "80+ body metrics".
 
 ### Section 2: How are data storage, retention, and deletion handled?
 - Photo retention (immediate deletion after processing)
@@ -46,7 +47,7 @@ Topics: Photos, Measurements & body composition data, 3D models & progress track
 - NOT diagnostic. State it directly: FitXpress produces operational data and does not diagnose conditions. Never write "positioned as" (terminology-guardrails.md §2.10)
 
 ## Tone rules (CRITICAL)
-- Use: "Enterprise customers can", "The customer", "3DLOOK", "FitXpress", "The platform"
+- Use: "The customer" only for the contractual, deployment or legal role ("the customer acts as controller", "the customer may retain photos in its own systems"); otherwise name the actor ("the organization", "the program", "the provider", "the employer"). Along with "3DLOOK", "FitXpress", "The platform" (`brand-assets/content-strategy/terminology-guardrails.md` §2.12, synced 2026-09-14)
 - NEVER: "you", "your organization", "we", "our platform"
 - Put direct answer FIRST, then qualification
 - Conditional: "may apply depending on", "varies by contract"

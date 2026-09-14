@@ -196,7 +196,7 @@ Each working directory now carries a `FINAL-PUBLISHED.md` marker with the live U
 - `3dlook-launches-the-3d-body-scanning-lab/` — **3D Body Scanning Lab** — Oct 2020
 - `3dlook-introduces-the-first-3d-body-scanning-lab-to-provide-unique-body-data-points-to-apparel-firms/` — **3D Body Scanning Lab for Apparel** — Apr 2021
 - `body-scanning-technology-for-apparel/` — **Body Scanning Technology for Apparel** — Mar 2024
-- `3dlook-is-a-member-of-the-mobile-body-scanning-standards-developed-by-ieee/` — **IEEE Mobile Body Scanning Standards** — Feb 2021
+- `3dlook-is-a-member-of-the-mobile-body-scanning-standards-developed-by-ieee/` — **IEEE Mobile Body Scanning Standards** — Feb 2021 — ⚠️ **flagged 2026-09-14:** the title and slug use IEEE wording that `terminology-guardrails.md` §2.11 bans ("member of … standards developed by IEEE"). Published, so not retro-edited from the repo. Do not reuse the title as anchor text; if a link is needed, put it on "IEEE 3D Body Processing working group". The decision on the live page is Vadim's.
 
 ---
 

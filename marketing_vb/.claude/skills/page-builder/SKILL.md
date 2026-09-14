@@ -265,6 +265,15 @@ attributed to the page, scroll depth.
 - **Medical framing is fixed language.** "FitXpress is not a medical device." State the boundary
   directly; "positioned as" is banned for product, intended-use and regulatory statements
   (`terminology-guardrails.md` §2.10). Never assert that a regulatory framework "does not apply".
+- **IEEE is fixed language too.** Only "Winner, 2019 Retail Digital Transformation Grand Challenge,
+  run by the 3D Retail Coalition with Kalypso and IEEE." and "Participant in the IEEE 3D Body
+  Processing working group, which is developing standards for mobile body scanning.", verbatim from
+  `proof-points.md`. Never IEEE-certified, -recognized, -validated or -backed, and no standalone IEEE
+  logo in an award, certification or recognition strip (`terminology-guardrails.md` §2.11).
+- **Name outputs and actors precisely.** "80+ body measurements", never "80+ body metrics"; BMI and
+  BMR are calculated metrics and body composition is an estimate (§2.13). Headings name the visitor's
+  question or decision, never our content-plan label such as hub, cluster or bridge (§1.10). "Buyer"
+  and "customer" give way to the named actor outside procurement and contract contexts (§2.12).
 - **One page, one job.** A page serving two intents serves neither.
 - **A price signal belongs on the page.** `/pricing/` is public with real tiers: link to it and name
   the entry tier. Never publish the internal per-request rates from `pricing.md` — they contradict

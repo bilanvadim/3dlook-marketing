@@ -135,10 +135,11 @@ def render(mod) -> str:
         "",
         "A regex cannot tell a real product boundary from a slight, so these stay human:",
         "corrective negation (`X, not Y`), corrective `rather than`, `we / our` beyond a claim of",
-        "ownership, `you` in neutral educational prose, a vendor blog used as a citation, and a",
-        "compressed relationship where `depends on` or `varies by` is meant. The editor owns",
-        "these. See `brand-assets/content-strategy/terminology-guardrails.md` Part 3, the rows",
-        "marked `judgment`.",
+        "ownership, `you` in neutral educational prose, `buyer` / `customer` as an audience label,",
+        "content-plan labels (hub, cluster, bridge) in headings, an IEEE logo in an award strip, a",
+        "vendor blog used as a citation, and a compressed relationship where `depends on` or",
+        "`varies by` is meant. The editor owns these. See",
+        "`brand-assets/content-strategy/terminology-guardrails.md` Part 3, rows not marked `auto`.",
         "",
     ]
     return "\n".join(lines) + "\n"

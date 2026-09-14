@@ -184,6 +184,9 @@ principle #11. Medical, clinical or regulatory framing goes to Whitney before it
 5. **Name regulators and standards precisely** — the framework, the jurisdiction, and what it governs.
    A vague gesture at a standard is worse than omitting it. Expand every acronym at first use, FDA,
    ICH, GCP and DXA included (M1). BMI, CEO, UK, US and EU are commonly known and stay bare.
+   IEEE appears only in the two approved sentences from `proof-points.md`, and never as a standalone
+   logo in a recognition strip (terminology guardrail §2.11). Outputs are "80+ body measurements";
+   BMI and BMR are calculated metrics and body composition is an estimate (§2.13).
 6. **Scope accuracy, never brag about it.** The reframe in slot 9 is mandatory. Leading with "most
    accurate" or "best-in-class" is an anti-positioning violation and a hard fail at the judge.
 7. **State the boundary once**, directly: "FitXpress is not a medical device." Do not chain a

@@ -4,7 +4,14 @@
 > (internal title: *Terminology & Language Guardrails*), owner **Asselya** (`asselya@3dlook.me`).
 > Doc ID `1dPNXQL62t_y82MFJblBidEvRgwXjJxzADdapB7Pa214` ·
 > [open](https://docs.google.com/document/d/1dPNXQL62t_y82MFJblBidEvRgwXjJxzADdapB7Pa214/edit) ·
-> doc last modified **2026-08-13** · synced into the repo **2026-08-25**.
+> doc last modified **after 2026-08-13** (the export exposes no date; the change was first seen on
+> 2026-09-14) · synced into the repo **2026-09-14** · previous sync 2026-08-25, against the
+> 2026-08-13 version.
+>
+> **Raw export:** `terminology-guardrails.source.txt` next to this file is the Doc's plain-text
+> export (`/export?format=txt`), byte for byte, as of the last sync. It is not a guard and no agent
+> reads it. The weekly sync diffs a fresh export against it, so a change in the Doc shows up as a
+> diff instead of being re-derived from this translation.
 >
 > **Scope:** ALL 3DLOOK corporate content. SEO and blog articles, website pages, social posts,
 > outbound messages, whitepapers, decks, one-pagers. There is no channel exemption.
@@ -13,7 +20,7 @@
 > `about-me.md` still governs voice and claims discipline; `editorial-guardrails.md` still governs
 > whether a claim may be made at all; `brand-assets/product-info/` is still the only source of facts
 > and numbers. Where this file and an older project rule disagree on *wording*, this file wins — see
-> **Overrides** below, which records the two cases where that has happened, with dates.
+> **Overrides** below, which records every case where that has happened, with dates.
 >
 > Re-sync when the Doc changes. Keep the row order and the wording of the "Reason" columns close to
 > the Doc so a diff against it stays readable.
@@ -22,18 +29,23 @@
 
 ## Overrides of earlier project rules
 
-The Doc (2026-08-13) is newer than both rules below and is owned by the editorial owner. Editorial
-judgment defers to Asselya (editorial guardrail #11), so the Doc wins. Both are recorded here rather
-than silently deleted, because published articles were written under the old rule.
+The Doc is newer than every rule below and is owned by the editorial owner. Editorial judgment
+defers to Asselya (editorial guardrail #11), so the Doc wins. Each override is recorded here rather
+than silently deleted, because published content was written under the old rule.
 
 | Earlier rule | Status | New rule |
 |---|---|---|
-| `editorial-guardrails.md` **M1** (2026-07-07): expand *every* abbreviation at first use, *including* BMI | **Amended** | BMI, CEO, UK, US, EU now count as commonly known and are **not** expanded. M1 stands for everything else, including the cited regulators (FDA, ICH, GCP). |
-| `editorial-guardrails.md` **#6** (2026-06-09): medical framing is *"not positioned as a medical device"* | **Superseded 2026-08-13, restored 2026-09-02, superseded again 2026-09-11** | The medical-device boundary sentence is **"FitXpress is not a medical device."** — see the two notes directly below. "Positioned as" is banned by §2.10 for every product, intended-use and regulatory statement, the medical-device sentence included. |
+| `editorial-guardrails.md` **M1** (2026-07-07): expand *every* abbreviation at first use, *including* BMI | **Amended 2026-08-25** | BMI, CEO, UK, US, EU now count as commonly known and are **not** expanded. M1 stands for everything else, including the cited regulators (FDA, ICH, GCP). |
+| `editorial-guardrails.md` **#6** (2026-06-09): medical framing is *"not positioned as a medical device"* | **Superseded 2026-08-13, restored 2026-09-02, superseded again 2026-09-11, confirmed by the Doc 2026-09-14** | The medical-device boundary sentence is **"FitXpress is not a medical device."** — see the notes directly below. "Positioned as" is banned by §2.10 for every product, intended-use and regulatory statement, the medical-device sentence included. |
+| `about-me.md` **"Buyer framing"** (2026-07-06): *prefer "enterprise teams," "buyers," "insurers," "programs," "care teams"* | **Amended 2026-09-14** | §2.12: **buyer** only when the sentence is about procurement, buying criteria or vendor evaluation; **customer** only for an established contract, deployment responsibility or legal role. Otherwise name the actor. |
+| `proof-points.md` and `overview.md` IEEE rows: *"Winner, Retail Digital Transformation Grand Challenge"*, *"Member of Mobile Body Scanning Standards"* | **Corrected 2026-09-14** | §2.11: IEEE appears only in the Doc's two approved sentences, verbatim. |
 
 Articles already published with `Body Mass Index (BMI)` on first use or with *"not positioned as a
 medical device"* are historical and are not retro-edited. New drafts follow the rules above. If a
-refresh touches such a sentence, bring it into line.
+refresh touches such a sentence, bring it into line. The same applies to published pages carrying
+the old IEEE wording (the Feb 2021 news post
+`3dlook-is-a-member-of-the-mobile-body-scanning-standards-developed-by-ieee/`) or "80+ body metrics":
+they are flagged, not rewritten from here, and the decision on a live page is Vadim's.
 
 > **Partial re-reversal, 2026-09-02 — medical-device wording only.** Review 1 on the Wellness
 > Platforms hub (Google Doc, tab "Review 1") names **"It is not positioned as a medical device."**
@@ -65,11 +77,16 @@ refresh touches such a sentence, bring it into line.
 > Fourth state of the rule (prescribed 2026-06-09 → banned 2026-08-13 → restored for medical
 > device 2026-09-02 → direct form 2026-09-11). Published articles are not retro-edited.
 
+> **Confirmed by the Doc, 2026-09-14.** The Doc's §2.10 now carries the medical-device pair itself:
+> Avoid *"FitXpress is not positioned as a medical device."*, Prefer *"FitXpress is not a medical
+> device."* The project rule of 2026-09-11 and its source agree, so the conflict recorded in the
+> 2026-09-02 note is closed. Nothing changes in the detector.
+
 ---
 
 # Part 1 — General approaches
 
-Nine construction rules. These are about how a sentence is built, not which word is banned.
+Ten construction rules. These are about how a sentence is built, not which word is banned.
 
 ### 1. Abbreviations
 
@@ -148,11 +165,28 @@ or requires the reader to interpret the intended relationship.
 **Licensed exception:** a necessary clinical, legal, regulatory, or product boundary, or a genuine
 user choice that cannot be stated as clearly without the contrast.
 
+### 10. Internal content-cluster labels *(new in the Doc, synced 2026-09-14)*
+
+Replace internal planning terms with reader-facing language that identifies the **concrete topic,
+question, workflow, or decision** the section covers.
+
+**Applies when** terms such as **bridge**, **hub**, **pillar**, **cluster**, or **supporting
+content** describe the page's role in the content architecture, not a concept the intended audience
+uses. In this repo those labels live in `content-plan.md` and in article plans (hub, cluster, "the
+GLP-1 bridge"). They are planning vocabulary and stop at the plan: they do not become H1/H2/H3 text,
+meta titles, anchor text or body copy.
+
+**Licensed exception:** keep the term when it has an established meaning within the relevant
+industry, or when it accurately describes a visible website feature (the site's **Content Hub**).
+
+- Avoid: "The GLP-1 bridge: current BMI, historical BMI, and documentation continuity"
+- Prefer: "How does prior GLP-1 treatment affect BMI documentation at bariatric intake?"
+
 ---
 
 # Part 2 — Word and phrase guardrails
 
-Ten entries, in the Doc's order. "Condition" is when the rule is live; "Apply" is the narrow case
+Thirteen entries, in the Doc's order. "Condition" is when the rule is live; "Apply" is the narrow case
 where the word is allowed.
 
 ### 2.1 "Objective" — near-ban
@@ -255,16 +289,69 @@ where the word is allowed.
 | **Reason** | "Positioned as" suggests that the product's identity, intended use, or regulatory status depends on external perception rather than on 3DLOOK's defined product scope and claims. It can also make a factual product boundary sound like a marketing choice. |
 | **Fix** | State the product scope or boundary directly |
 
-- **Medical device (2026-09-11):** write **"FitXpress is not a medical device."** There is no licensed exception; the notes under the header table record the rule's four states.
+- **Medical device** (the Doc's own pair since the 2026-09-14 sync; the project rule since 2026-09-11): Avoid "FitXpress is not positioned as a medical device." → Prefer **"FitXpress is not a medical device."** There is no licensed exception; the notes under the header table record the rule's history.
 - Avoid: "FitXpress is positioned as a supporting tool for clinician review." → Prefer: **"FitXpress supports clinician review."**
 - For intended-use boundaries: **"FitXpress does not diagnose conditions, make clinical decisions, or determine treatment eligibility."**
+
+### 2.11 IEEE — the approved wording only *(new, synced 2026-09-14)*
+
+| | |
+|---|---|
+| **Condition** | Any mention of IEEE: copy, award and recognition lists, bios, decks, page trust strips |
+| **Apply** | Only these two sentences, verbatim: **"Winner, 2019 Retail Digital Transformation Grand Challenge, run by the 3D Retail Coalition with Kalypso and IEEE."** · **"Participant in the IEEE 3D Body Processing working group, which is developing standards for mobile body scanning."** |
+| **Avoid** | IEEE-certified · Certified by IEEE · IEEE-recognized · Recognized or acknowledged by IEEE · IEEE-validated · IEEE Grand Challenge · Member of IEEE standards · IEEE-backed accuracy, ISO compliance or clinical-grade performance · standalone IEEE logos in award, certification, validation or recognition strips |
+| **Reason** | IEEE has raised an issue with the incorrect claims 3DLOOK was making |
+| **Use instead** | The two approved sentences. They are also the IEEE rows of `brand-assets/product-info/proof-points.md`. |
+
+- Read "IEEE-backed accuracy, ISO compliance or clinical-grade performance" as any claim that IEEE
+  backs our accuracy, our ISO compliance or a clinical-grade performance level, in either word order
+  ("accuracy validated by IEEE" is the same claim).
+- "IEEE Grand Challenge" and "IEEE Retail Digital Transformation Grand Challenge" credit the
+  challenge to IEEE alone. The approved sentence names the 3D Retail Coalition as the organiser.
+- The logo ban is visual, so no detector can see it. It belongs to `page-builder`'s judge and to
+  whoever briefs a deck or a one-pager.
+
+### 2.12 "Buyer" / "customer" — name the actor *(new, synced 2026-09-14)*
+
+| | |
+|---|---|
+| **Condition** | All corporate content |
+| **Apply** | **buyer** only when discussing procurement, buying criteria, or vendor evaluation. **customer** when referring to an established contractual relationship, deployment responsibility, or legal role. |
+| **Avoid** | When either term merely labels the intended audience, assumes an existing commercial relationship, or replaces the specific organization responsible for an action |
+| **Reason** | These terms can expose the marketing framework instead of describing the operational reality. "Customer" can also imply that the organization has already selected 3DLOOK. |
+| **Use instead** | Name the actual actor or context: **organization, program, provider, clinic, employer, operator, procurement team, decision-maker, person being screened** |
+
+- The canonical GDPR sentence (CLAUDE.md §12) stays valid, because "customer" there names a legal
+  role: *"In most enterprise deployments, the customer acts as controller and 3DLOOK acts as
+  processor under GDPR."*
+- "Buyer's guide" as an article type and "buying criteria" sections are procurement contexts, so
+  "buyer" is allowed there.
+
+### 2.13 "Body metrics" / "body measurements" — use the precise category *(new, synced 2026-09-14)*
+
+| | |
+|---|---|
+| **Condition** | Whenever describing numerical body-related data or FitXpress outputs |
+| **Apply** | **body metrics** as the umbrella category for numerical body-related outputs. **body measurements** specifically for anthropometric dimensions, such as circumferences, lengths, and widths. BMI, basal metabolic rate, and body composition estimates are **metrics** or **calculated / estimated outputs**. |
+| **Avoid** | Using "body metrics" and "body measurements" interchangeably; describing BMI, body composition, or basal metabolic rate as body measurements; replacing the approved **"80+ body measurements"** claim with "80+ body metrics" |
+| **Reason** | The terms represent different levels of classification. Conflating them obscures which outputs are anthropometric dimensions and which are calculated or estimated values. |
+| **Use instead** | The precise category: **body measurements**, **calculated metrics**, **body composition estimates**, or the umbrella **body metrics** when referring to multiple output types |
+
+- A shape that already passed review (Review 2 on the occupational-health intake article,
+  2026-09-11): *"80+ body measurements and calculated metrics such as BMI"*.
+- **Open item for Vadim and Asselya, not a rule change:** the canonical accuracy sentence in
+  `brand-assets/product-info/accuracy-formulations.md` reads *"approximately 96-97% across body
+  metrics, with a typical absolute error of 1.5-2.0 cm per measurement"*. An error in centimetres
+  describes body measurements, so under §2.13 "across body metrics" is arguably the wrong category.
+  That sentence is verbatim from the live framework article and is not changed from here.
 
 ---
 
 # Part 3 — Quick grep table
 
 For the mechanical pass. The detector
-(`brand-assets/style-guides/scripts/detect-ai-tells.py`) covers every row marked **auto**.
+(`brand-assets/style-guides/scripts/detect-ai-tells.py`) covers every row marked **auto**; rows
+marked **soft** are reported by the detector as soft markers for the editor to judge.
 
 | Banned | Use instead | Auto |
 |---|---|---|
@@ -280,6 +367,12 @@ For the mechanical pass. The detector
 | "positioned as" a product or regulatory boundary, **the medical-device sentence included** | state the boundary directly; for medical device use "FitXpress is not a medical device." | auto |
 | "what trips people up", "the mistake buyers make", "what most teams misunderstand" | name the components of the issue | auto |
 | "do the heavy lifting" and other attributed behaviour | "matter", "apply", plain verbs | auto |
+| "IEEE-certified / -recognized / -validated / -backed", "certified / recognized / validated by IEEE", "IEEE Grand Challenge", "member of IEEE standards" | the two approved sentences in §2.11, verbatim | auto |
+| standalone IEEE logo in an award, certification, validation or recognition strip | remove the logo; the approved sentence carries the fact | judgment |
+| "80+ body metrics"; BMI, BMR or body composition listed as body measurements | "80+ body measurements"; calculated metrics; body composition estimates | auto |
+| "body metrics" and "body measurements" swapped anywhere else | the precise category (§2.13) | judgment |
+| "buyer" / "customer" as an audience label or an assumed relationship | name the actor: organization, program, provider, clinic, employer, operator, procurement team, decision-maker, person being screened | judgment |
+| "bridge", "hub", "pillar", "cluster", "supporting content" as a page-role label in a heading, anchor or sentence | the concrete topic, question, workflow or decision; "Content Hub" as the visible site section stays | soft |
 | corrective negation "X, not Y" | lead with the recommended approach | judgment |
 | corrective "rather than" | state the characteristic, then the limitation separately | judgment |
 | "Body Mass Index (BMI)" | "BMI" — commonly known, do not expand | judgment |
@@ -297,22 +390,24 @@ For the mechanical pass. The detector
 
 | Stage | Owner | What runs |
 |---|---|---|
-| SEO planning | `seo-planner` | Reads this file with the strategy row; no wording work yet |
-| SEO drafting | `seo-writer` | Hard bans only: em dash, banned words, "positioned as", presumed reaction, attributed behaviour. Judgment rows are the editor's. |
-| SEO editing | `seo-editor` | Pass 3c runs the detector; Pass 4 runs Part 1 and Part 2 as a checklist |
+| SEO planning | `seo-planner` | Reads this file with the strategy row. H2 titles name the topic or question, never the content-plan label (§1.10) |
+| SEO drafting | `seo-writer` | Hard bans only: em dash, banned words, "positioned as", presumed reaction, attributed behaviour, IEEE wording, "80+ body metrics". Judgment rows are the editor's. |
+| SEO editing | `seo-editor` | Pass 3c runs the detector; Pass 4 runs Part 1 and Part 2 as a checklist, including the `cluster_labels` soft markers and buyer / customer |
 | SEO publish | `seo-publisher` | Terminology line in the final checklist |
-| Website pages | `page-builder` | Layer 0 detector, Layer 2 terminology, G-T gate, G-J scorecard |
+| Website pages | `page-builder` | Layer 0 detector, Layer 2 terminology, G-T gate, G-J scorecard (IEEE logo strips are a hard fail at the judge) |
 | Social posts | `post-drafter` → `post-brand-checker` → `social-editor` | Self-check at draft, Pass 2b detector per post |
 | Outbound | `message-sequencer` | `--channel dm` sweep before the CSV. The soft conversational ask in Message 1/2 is written to the outbound templates; "so" and "plus" are still replaced. |
-| Any artefact | `brand-checker` | Check 3b (M1 with the commonly-known exception), 3c (detector), 4b (medical framing stated directly) |
+| Any artefact | `brand-checker` | Check 3b (M1 with the commonly-known exception), 3c (detector), 4b (medical framing stated directly), 4d (IEEE wording, output vocabulary, actor naming, content-plan labels) |
 
 ---
 
 ## Related references
 
-- `brand-assets/style-guides/editorial-guardrails.md` — the 11 claim-level principles + M1/M2
+- `brand-assets/style-guides/editorial-guardrails.md` — the 11 claim-level principles + M1/M2/M3
 - `brand-assets/style-guides/ai-tells-sweep.md` — the 27-category AI-tell catalogue; these guardrails are its hard-fail terminology layer
 - `brand-assets/style-guides/scripts/detect-ai-tells.py` — mechanical detector
+- `brand-assets/product-info/proof-points.md` — the IEEE rows, in the §2.11 wording
+- `brand-assets/content-strategy/terminology-guardrails.source.txt` — raw export of the Doc at the last sync, for the next diff
 - `brand-assets/style-guides/blog-style-guide.md` — voice and structure for blog content
 - `about-me.md` — brand voice and claims discipline
 - `CLAUDE.md` §6 — tone of voice, banned words, AI signatures

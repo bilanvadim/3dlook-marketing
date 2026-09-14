@@ -92,8 +92,15 @@ Asselya's word-level rules. Grep the page for each of these:
 | corrective negation "X, not Y" | lead with the recommended approach and its purpose |
 | corrective "rather than" ("a report rather than a live feed") | state the characteristic, then the limitation in its own sentence |
 | "Body Mass Index (BMI)" | "BMI" — commonly known, never expanded |
+| "IEEE-certified", "recognized / validated / backed by IEEE", "IEEE Grand Challenge", "member of IEEE standards", a standalone IEEE logo in a trust strip | the two approved sentences in `proof-points.md`, verbatim (§2.11) |
+| "80+ body metrics"; BMI, BMR or body composition called body measurements | "80+ body measurements"; BMI and BMR are calculated metrics; body composition is an estimate (§2.13) |
+| "hub", "cluster", "pillar", "bridge", "supporting content" as a page-role label in a heading, anchor or sentence | the concrete topic, question, workflow or decision; "Content Hub" as the visible site section stays (§1.10) |
 
-Four construction rules on the same page, from Part 1 of the guardrails:
+Five construction rules on the same page, from Part 1 of the guardrails:
+
+- **No content-plan labels.** A heading names the visitor's question ("How does prior GLP-1 treatment
+  affect BMI documentation at bariatric intake?"), never the page's role in our architecture ("The
+  GLP-1 bridge: …"). The detector reports these as the soft category `cluster_labels`.
 
 - **Write relationships explicitly.** "depends on", "varies by", "is determined by" instead of
   compressed phrasing the reader has to decode. Avoid *"the historical records the feature needs scale

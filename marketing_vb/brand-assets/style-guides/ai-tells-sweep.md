@@ -143,11 +143,44 @@ components of the issue instead of narrating what the reader is assumed to think
 heavy lifting", "the model wants", "the data knows". Too casual for a healthcare-enterprise register.
 Plain verbs: "matter", "apply", "determine".
 
+**IEEE wording** (`terminology-guardrails.md` §2.11, synced 2026-09-14) — "IEEE-certified",
+"certified by IEEE", "IEEE-recognized", "recognized or acknowledged by IEEE", "IEEE-validated",
+"IEEE-backed" accuracy / ISO compliance / clinical-grade performance, "IEEE Grand Challenge",
+"member of IEEE standards". IEEE has raised these claims with 3DLOOK, so this is a legal exposure as
+well as a style fault. Two sentences are approved, verbatim, and both sit in `proof-points.md`:
+*"Winner, 2019 Retail Digital Transformation Grand Challenge, run by the 3D Retail Coalition with
+Kalypso and IEEE."* and *"Participant in the IEEE 3D Body Processing working group, which is
+developing standards for mobile body scanning."* The detector fails the text forms (`ieee_claims`).
+A standalone IEEE logo in an award, certification or recognition strip is the same ban in a picture;
+no regex sees it, so the page judge and the deck reviewer do.
+
+**Output vocabulary** (`terminology-guardrails.md` §2.13, synced 2026-09-14) — "80+ body metrics" in
+place of the approved **"80+ body measurements"**, and BMI, basal metabolic rate or body composition
+introduced as body measurements ("body measurements such as BMI"). Body measurements are
+anthropometric dimensions: circumferences, lengths, widths. BMI and BMR are calculated metrics, body
+composition values are estimates, and "body metrics" is the umbrella for several output types. The
+detector fails the two unambiguous shapes (`body_measurement_terms`); a looser swap of the two terms
+elsewhere is the editor's call.
+
 **Corrective contrast** — corrective negation "X, not Y" and corrective "rather than" ("arrives as a
 report rather than a live data feed"). Both are judgment calls, not mechanical bans: they are licensed
 when the contrast states a real product, clinical, legal or regulatory boundary. Outside that, state
 the characteristic directly and put the limitation in its own sentence. The detector reports these as
 soft markers because it cannot tell a boundary from a slight.
+
+**Content-plan labels** (`terminology-guardrails.md` §1.10, synced 2026-09-14) — "bridge", "hub",
+"pillar", "cluster", "supporting content" used for a page's role in our content architecture: *"The
+GLP-1 bridge: current BMI, historical BMI, and documentation continuity"* is a planning label that
+leaked into an H2. Name the topic, question or decision instead: *"How does prior GLP-1 treatment
+affect BMI documentation at bariatric intake?"* A term with an established industry meaning, or the
+site's visible **Content Hub**, stays. Soft category `cluster_labels`, headings weighted first.
+
+**Buyer / customer** (`terminology-guardrails.md` §2.12, synced 2026-09-14) — judgment, no pattern.
+"Buyer" belongs to procurement, buying criteria and vendor evaluation; "customer" to a signed
+contract, a deployment responsibility or a legal role (the GDPR controller sentence). Used as a label
+for the audience, or for an organization that has not selected 3DLOOK, both expose the marketing
+frame. Name the actor: the clinic, the program, the employer, the operator, the procurement team, the
+person being screened.
 
 **Reserved words** (editorial guardrail #3) — "independent(ly) validated", "third-party verified",
 "clinically validated", "peer-reviewed" without a named external party and a citable output. The

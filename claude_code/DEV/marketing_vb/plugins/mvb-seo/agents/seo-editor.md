@@ -78,18 +78,19 @@ tools: Read, Write, Grep, Bash
 
 Канонический каталог: **`brand-assets/style-guides/ai-tells-sweep.md`**. Не пересказывай его здесь и не держи свой список — читай файл.
 
-**Карточка hard bans.** `brand-assets/style-guides/hard-bans-card.md` (~4,4 КБ,
-генерируется из детектора скриптом `scripts/bans-card.py`) — это все 11 механических
+**Карточка hard bans.** `brand-assets/style-guides/hard-bans-card.md` (~5,3 КБ,
+генерируется из детектора скриптом `scripts/bans-card.py`) — это все 13 механических
 категорий одним экраном. Начинай Pass 3c с неё и с `scripts/article_lint.py`, а
 `ai-tells-sweep.md` открывай там, где нужна причина правила или разбор категории.
 **Судейские строки карточка НЕ покрывает** и они целиком твои: corrective negation
 («X, not Y»), corrective «rather than», `we/our` вне claim of ownership, `you` в
-нейтрально-образовательной прозе, vendor-блог как источник, сжатое отношение вместо
+нейтрально-образовательной прозе, `buyer` / `customer` как ярлык аудитории, ярлыки
+контент-плана в заголовках, vendor-блог как источник, сжатое отношение вместо
 «depends on» / «varies by». За ними идёшь в `terminology-guardrails.md` Part 3, строки
-`judgment`.
+не `auto`.
 
 
-**Плюс обязательный отдельный проход по `brand-assets/content-strategy/terminology-guardrails.md`** (Doc Ассель, синк 2026-08-13) — Part 1 (девять правил построения фразы) и Part 2 (десять словарных запретов) прогоняются как чек-лист, не по памяти. Детектор ловит механические попадания; на тебе судейские строки: corrective negation «X, not Y» и corrective «rather than» (разрешены только когда контраст описывает реальную продуктовую / клиническую / юридическую / регуляторную границу), `we / our` вне claim of ownership, `you` в нейтрально-образовательных блоках, сжатые отношения вместо «depends on / varies by», vendor-блог в цитатах, голый URL вместо смыслового анкора.
+**Плюс обязательный отдельный проход по `brand-assets/content-strategy/terminology-guardrails.md`** (Doc Ассель, синк 2026-09-14) — Part 1 (десять правил построения фразы) и Part 2 (тринадцать словарных правил) прогоняются как чек-лист, не по памяти. Детектор ловит механические попадания, включая новые hard-категории `ieee_claims` (IEEE только двумя утверждёнными фразами из `proof-points.md`) и `body_measurement_terms` (`80+ body measurements`, BMI / BMR / body composition не body measurements). На тебе судейские строки: corrective negation «X, not Y» и corrective «rather than» (разрешены только когда контраст описывает реальную продуктовую / клиническую / юридическую / регуляторную границу), `we / our` вне claim of ownership, `you` в нейтрально-образовательных блоках, **`buyer`** вне закупки и оценки вендора и **`customer`** вне договора, деплоя или юридической роли (называй актора: clinic, program, employer, operator, procurement team, person being screened), **ярлыки контент-плана** (`hub`, `cluster`, `pillar`, `bridge`, `supporting content`) в H2/H3, анкорах и тексте — детектор отдаёт их soft-категорией `cluster_labels`, исключение Content Hub и устоявшийся отраслевой термин, `body metrics` и `body measurements` вперемешку вне механических случаев, сжатые отношения вместо «depends on / varies by», vendor-блог в цитатах, голый URL вместо смыслового анкора.
 
 1. **Прогони детектор** (channel `article`):
 
@@ -155,7 +156,7 @@ python3 brand-assets/style-guides/scripts/detect-ai-tells.py workspace/seo/artic
 
 ### Pass 4 — Final polish
 - Проверь все banned words (список из messaging.md, + `utilize` / `utilizing`). Если нашёл — перефразируй.
-- **Abbreviations (guardrail M1):** пройди по тексту сверху вниз. Каждая аббревиатура при ПЕРВОМ появлении должна быть расшифрована — `dual-energy X-ray absorptiometry (DEXA)`, `glucagon-like peptide-1 (GLP-1)`, `Food and Drug Administration (FDA)`, `International Council for Harmonisation (ICH)` и т.д. Регуляторов, которых цитируешь как авторитет (FDA, ICH, GCP), чаще всего оставляют без расшифровки — разверни. **ИСКЛЮЧЕНИЕ (terminology-guardrails.md §1): AI, WWW, iOS, BMI, CEO, UK, US, EU — общеизвестные, идут БЕЗ расшифровки. Если в драфте `Body Mass Index (BMI)` — сверни до `BMI`.**
+- **Abbreviations (guardrail M1):** пройди по тексту сверху вниз. Каждая аббревиатура при ПЕРВОМ появлении должна быть расшифрована — `dual-energy X-ray absorptiometry (DXA)`, `glucagon-like peptide-1 (GLP-1)`, `Food and Drug Administration (FDA)`, `International Council for Harmonisation (ICH)` и т.д. Регуляторов, которых цитируешь как авторитет (FDA, ICH, GCP), чаще всего оставляют без расшифровки — разверни. **ИСКЛЮЧЕНИЕ (terminology-guardrails.md §1): AI, WWW, iOS, BMI, CEO, UK, US, EU — общеизвестные, идут БЕЗ расшифровки. Если в драфте `Body Mass Index (BMI)` — сверни до `BMI`.**
 - **Stacked negation (guardrail M2):** найди двойные / вложенные отрицания в одном предложении («does not… nor does it…», «is — and is not —», «necessary but not sufficient», «do not, on their own, …»). Переформулируй в позитивную рамку, где смысл сохраняется («endpoint validation stays with the sponsor» вместо «does not validate… nor does it…»). Оставляй ровно одно чёткое негативное утверждение границы, сформулированное НАПРЯМУЮ (§6: «FitXpress is not a medical device.» — решение Вадима 2026-09-11; «positioned as» запрещено для любого product / intended use / регуляторного статуса, medical device включительно — terminology-guardrails.md §2.10), не цепляй второе отрицание в том же предложении. Повтор дисклеймера между секциями (когда он к месту) — НЕ трогай, это про плотность отрицаний внутри предложения.
 - Проверь все числа — каждое должно быть в approved_claims из context pack. Если нет — удали.
 - Проверь что primary keyword встречается в H1 и 1-2 H2. В первом абзаце — по возможности, не обязательно: финал редактора 2026-09-11 его там не держит, и gate 7 это больше не валит.
