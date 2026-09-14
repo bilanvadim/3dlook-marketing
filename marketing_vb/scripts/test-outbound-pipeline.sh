@@ -10,7 +10,7 @@
 #   search-health.py     blind backend, unreachable backend, healthy backend
 #   web-verify.py        verified-live vs blocked classification
 #   outbound-pipeline.py hypothesis-gate (approved / draft / scope-drift / prose-edit)
-#                        validate-companies (aligned vs drifted)
+#                        validate-companies (aligned / drifted / routing / scope lock)
 #                        extract-people (dry-run, clobber guard)
 #                        check-import (identity, legacy schema, copy caps, em dash)
 #                        check-responses (missing / good / wrong-ids / wrong-schema)
@@ -79,6 +79,28 @@ grep_check() {  # grep_check <description> <pattern> <command...>
   fi
 }
 
+mutate() {  # mutate <description> <file> <python-regex> <replacement>
+  # A fixture edit that matches nothing is not a no-op, it is a vacuous pass: the check
+  # after it asserts against an unchanged file. "unapproved status -> 1" passed that way
+  # once the copied hypothesis stopped carrying a `- **Status:** approved` bullet: its
+  # str.replace changed nothing, and the exit 1 it asserted came from the sub-segment edit
+  # one step earlier. So a miss is counted as a failure here.
+  if python3 - "$2" "$3" "$4" <<'PY'
+import pathlib, re, sys
+p, pat, rep = pathlib.Path(sys.argv[1]), sys.argv[2], sys.argv[3]
+text = p.read_text(encoding="utf-8")
+new, n = re.subn(pat, rep, text, count=1, flags=re.M)
+if not n:
+    sys.exit(1)
+p.write_text(new, encoding="utf-8")
+PY
+  then
+    return 0
+  fi
+  printf '  ✗ fixture edit matched nothing: %s\n' "$1"; fail=$((fail+1))
+  return 1
+}
+
 echo "== search-health =="
 check "unreachable backend -> 1" 1 python3 $S/search-health.py --url http://127.0.0.1:9999
 check "unreachable + --wait gives up -> 1" 1 python3 $S/search-health.py --url http://127.0.0.1:9999 --wait 1
@@ -127,32 +149,71 @@ cp "$UK/hypothesis.md" "$CAMP/$T/hypothesis.md"
 check "approved, unstamped -> 0" 0 python3 $S/outbound-pipeline.py hypothesis-gate --campaign $T
 check "stamp -> 0" 0 python3 $S/outbound-pipeline.py hypothesis-gate --campaign $T --stamp
 check "unchanged after stamp -> 0" 0 python3 $S/outbound-pipeline.py hypothesis-gate --campaign $T
-python3 -c "
-import pathlib; p = pathlib.Path('$CAMP/$T/hypothesis.md')
-p.write_text(p.read_text().replace('## Why plausible', '## Why plausible\n\n(typo fix.)'))"
+mutate "prose edit" "$CAMP/$T/hypothesis.md" '^## Why plausible$' '## Why plausible\n\n(typo fix.)'
 check "prose edit does NOT invalidate -> 0" 0 python3 $S/outbound-pipeline.py hypothesis-gate --campaign $T
-python3 -c "
-import pathlib; p = pathlib.Path('$CAMP/$T/hypothesis.md')
-p.write_text(p.read_text().replace('## Sub-segment\n', '## Sub-segment\n\nPlus fitness and nutrition apps, any HQ.\n'))"
+mutate "sub-segment edit" "$CAMP/$T/hypothesis.md" '^## Sub-segment$' '## Sub-segment\n\nPlus fitness and nutrition apps, any HQ.'
 check "sub-segment change DOES invalidate -> 1" 1 python3 $S/outbound-pipeline.py hypothesis-gate --campaign $T
-python3 -c "
-import pathlib; p = pathlib.Path('$CAMP/$T/hypothesis.md')
-p.write_text(p.read_text().replace('- **Status:** approved', '- **Status:** draft'))"
+# status lives in frontmatter or in a `- **Status:**` bullet; both shapes exist on disk
+mutate "status edit" "$CAMP/$T/hypothesis.md" '(?i)^(status:\s*|[-*]\s*\*\*status:?\*\*:?\s*)approved' '\g<1>draft'
 check "unapproved status -> 1" 1 python3 $S/outbound-pipeline.py hypothesis-gate --campaign $T
+# the scope is already broken by the edit above, so the exit code alone cannot say why
+grep_check "unapproved status is named as the cause" "status is draft" \
+  python3 $S/outbound-pipeline.py hypothesis-gate --campaign $T
 
 echo "== validate-companies =="
-check "hypothesis-aligned + verified -> 0" 0 \
-  python3 $S/outbound-pipeline.py validate-companies --campaign 2026-09-01-uk-erakulis-similar \
-    --in companies-glp1-telehealth-verified.csv
-check "drifted list -> 1" 1 \
-  python3 $S/outbound-pipeline.py validate-companies --campaign 2026-09-01-uk-erakulis-similar \
-    --in _quarantine-2026-09-02/companies-verified.csv
-grep_check "routes non-UK rows to their owner" "nick +8" \
-  python3 $S/outbound-pipeline.py validate-companies --campaign 2026-09-01-uk-erakulis-similar \
-    --in _quarantine-2026-09-02/companies-verified.csv
-grep_check "names a missing fit column" "NO FIT COLUMN" \
-  python3 $S/outbound-pipeline.py validate-companies --campaign 2026-09-01-uk-erakulis-similar \
-    --in companies-glp1-telehealth-verified.csv
+# Inline fixtures in a temp campaign. These checks used to read the live UK campaign
+# (`--in companies-glp1-telehealth-verified.csv`), and all four went red with exit 2 "no
+# companies CSV" the day that campaign archived both lists into _superseded-2026-09-12/.
+# Same rule as check-responses below: a test must not depend on where real work keeps its
+# files. The CSVs keep the two shapes that mattered: a verified list with no fit column at
+# all, and the blind-search list with US rows on a UK profile and a row nobody checked.
+V=_test-validate; TMP_CAMPAIGNS+=("$V"); mkdir -p "$CAMP/$V"
+cat > "$CAMP/$V/hypothesis.md" <<'EOF'
+---
+status: approved
+---
+
+## Vertical
+UK consumer subscription apps.
+
+## Sub-segment
+UK-HQ apps with a paid tier.
+
+## Anti-cases
+Gym chains.
+EOF
+python3 $S/outbound-pipeline.py hypothesis-gate --campaign $V --stamp >/dev/null 2>&1 \
+  || { printf '  ✗ could not stamp the validate-companies fixture\n'; fail=$((fail+1)); }
+cat > "$CAMP/$V/aligned.csv" <<'EOF'
+company_name,website,hq_country,notes,verification,source_url
+Numan,https://www.numan.com/,England,,verified-live,https://www.numan.com/
+Second Nature,https://www.secondnature.io/,England,,verified-live,https://www.secondnature.io/
+Voy,https://joinvoy.com/,England,,blocked:js-challenge,
+EOF
+cat > "$CAMP/$V/drifted.csv" <<'EOF'
+#,company_name,website,hq_country,icp_fit,verification,source_url
+1,Lose It!,https://www.loseit.com/,USA,Exclude,verified-live,https://www.loseit.com/
+2,MyFitnessPal,https://www.myfitnesspal.com/,USA,Exclude,verified-live,https://www.myfitnesspal.com/
+3,Ritual,https://ritual.com/,USA,Exclude,verified-live,https://ritual.com/
+4,Care/of,https://takecareof.com/,USA,Exclude,dead:dns-failure,https://takecareof.com/
+5,Noom UK,https://www.noom.com/,USA,Exclude,blocked:no-title-js-shell,https://www.noom.com/
+6,WeightWatchers UK,https://www.weightwatchers.com/uk/,USA,Exclude,verified-live,https://www.weightwatchers.com/uk
+7,Anytime Fitness UK,https://www.anytimefitness.co.uk/,USA,Low,blocked:no-title-js-shell,https://www.anytimefitness.com/en-gb
+8,Snap Fitness UK,https://www.snapfitness.co.uk/,USA,Low,verified-live,https://www.snapfitness.com/uk
+9,Lifesum,https://lifesum.com/,Sweden,Exclude,blocked:no-title-js-shell,https://lifesum.com/
+10,EasyGym,https://www.easygym.co.uk/,England,Low,verified-live,https://www.easygym.co.uk/
+11,Advanced Appetite,,Unknown,Exclude,unverified-no-website,
+EOF
+VC="python3 $S/outbound-pipeline.py validate-companies --campaign $V --profile katerina"
+check "hypothesis-aligned + verified -> 0" 0 $VC --in aligned.csv
+check "drifted list -> 1" 1 $VC --in drifted.csv
+grep_check "routes non-UK rows to their owner" "nick +8" $VC --in drifted.csv
+grep_check "names a missing fit column" "NO FIT COLUMN" $VC --in aligned.csv
+# the lock is enforced INSIDE validate-companies, not only by hypothesis-gate
+if mutate "validate fixture sub-segment edit" "$CAMP/$V/hypothesis.md" '^## Sub-segment$' '## Sub-segment\n\nPlus fitness apps, any HQ.'; then
+  check "scope change after stamp blocks the list -> 1" 1 $VC --in aligned.csv
+  grep_check "names the scope change" "hypothesis scope changed after this list was built" $VC --in aligned.csv
+fi
 
 echo "== extract-people =="
 check "dry-run writes nothing -> 0" 0 \
