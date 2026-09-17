@@ -1,8 +1,8 @@
 # Published Articles Inventory — 3DLOOK Content Hub
 
-> Last updated: 2026-09-10
+> Last updated: 2026-09-17
 > Source: `https://3dlook.ai/post-sitemap.xml` (Yoast SEO — authoritative)
-> Total: **157 published articles** (155 in the 2026-08-18 sitemap snapshot, +1 published 2026-08-21 and registered by hand before the next sitemap pull). The 2026-08-24 `online-pharmacy-bmi-verification` rewrite and the 2026-08-28 `glp-1-market` hub refresh **do not change the count** — both were republished at their existing URLs. **+1 net-new on 2026-09-04** — `remote-body-measurement-online-fitness-coaching` (Hub #4, Digital Coaching cluster), live-verified 2026-09-10, which takes the count from 156 to 157.
+> Total: **157 published articles** (155 in the 2026-08-18 sitemap snapshot, +1 published 2026-08-21 and registered by hand before the next sitemap pull). The 2026-08-24 `online-pharmacy-bmi-verification` rewrite and the 2026-08-28 `glp-1-market` hub refresh **do not change the count** — both were republished at their existing URLs. **+1 net-new on 2026-09-04** — `remote-body-measurement-online-fitness-coaching` (Hub #4, Digital Coaching cluster), live-verified 2026-09-10, which takes the count from 156 to 157. **+2 net-new on 2026-09-14/16** — the Wellness Platforms hub `ai-body-data-wellness-platforms` and the trust FAQ `fitxpress-data-privacy-security-regulatory-faq`; the Bariatrics hub was republished in place 2026-09-15 and does not change the count. **Recount 2026-09-17 against the live sitemap: 160** — `post-sitemap.xml` lists 158 posts, and two live posts are missing from it because their canonical tag points at `glp-1-market` (coaching 09-04, Wellness hub 09-14; see the 2026-09-17 note below). 158 + 2 = 160, one more than the running tally, so the tally had drifted by one somewhere since 2026-08-18.
 > Purpose: single source of truth for what's published, mapped to content plan hubs
 
 ---
@@ -23,8 +23,30 @@ Seven health articles were read on the live site and reconciled against this inv
 | 8 | `top-7-remote-body-composition-tools-glp-1-clinics` | 7 Body Composition and Progress-Tracking Tools for Remote GLP-1 Clinics | **2026-08-21** | 2026-08-21 | ~3,060 | `workspace/seo/articles/top-7-remote-body-composition-tools-glp-1-clinics/` |
 | 9 | `online-pharmacy-bmi-verification-a-2026-compliance-guide` | Online Pharmacy BMI Verification: A 2026 Compliance Guide | **2026-08-24** (re-dated by the republish) | 2026-08-24 | ~2,260 | `workspace/seo/articles/2026-05-21-online-pharmacy-bmi-verification/` |
 | 10 | `glp-1-market` | GLP-1 Market Growth and the Need for Better Patient Progress Tracking | **2026-08-28** (re-dated by the republish) | 2026-08-28 | ~2,000 | `workspace/seo/articles/glp-1-market-hub/` |
-| 11 | `bariatric-pre-qualification-mobile-3d-body-scanning` | Bariatric Pre-Qualification with Mobile 3D Body Scanning: Faster Pre-Auth | **2026-06-05** | **2026-07-27** | ~4,100 | `workspace/seo/articles/bariatric-hub-refresh/` |
+| 11 | `bariatric-pre-qualification-mobile-3d-body-scanning` | Bariatric Pre-Qualification and Patient Progress Tracking: Body Data for Obesity Care Teams *(until 09-15: "…with Mobile 3D Body Scanning: Faster Pre-Auth")* | **2026-09-15** (re-dated; originally 2026-06-05, expanded 2026-07-27) | 2026-09-16 | — | `workspace/seo/articles/bariatric-hub-refresh/` |
 | 12 | `remote-body-measurement-online-fitness-coaching` | Remote Body Measurement for Online Fitness Coaching Programs | **2026-09-04** | — | ~2,560 | `workspace/seo/articles/2026-08-26-remote-body-measurement-online-fitness-coaching/` |
+| 13 | `ai-body-data-wellness-platforms` | AI Body Data for Wellness Platforms: Progress Tracking, Personalization, and Engagement | **2026-09-14** | 2026-09-14 | — | `workspace/seo/articles/2026-08-31-ai-body-data-wellness-platforms-hub/` |
+| 14 | `fitxpress-data-privacy-security-regulatory-faq` | Data, Privacy, Security & Regulatory FAQ for FitXpress | **2026-09-16** | 2026-09-16 | — | `workspace/seo/articles/2026-07-14-fitxpress-privacy-security-faq/` |
+
+> **Rows 13–14 added and row 11 updated 2026-09-17**, from the strategy sheet's new «Content Plan v 2.0»
+> tab and checked the same day with curl (`datePublished` / `dateModified` from the page JSON-LD) and
+> Search Console URL inspection. Byline on all three: **Asselya Sekerova**. Live text was **not**
+> captured for any of them yet — do that before a social pack (`published-live-YYYY-MM-DD.md`), since
+> none of the three folders has a `FINAL-PUBLISHED.md`.
+> - **Row 11:** the September refresh went live 2026-09-15 and, as decided on 2026-09-03, **reset
+>   `datePublished`** (2026-09-15T09:10:02, modified 2026-09-16T13:32:40). The H1 changed with it.
+>   `published-live-2026-07-27.md` is now the record of the *previous* version and of the article's
+>   true age (2026-06-05).
+> - **Row 13 is live but NOT indexed.** Its `<link rel="canonical">` and `og:url` point to
+>   `https://3dlook.ai/content-hub/glp-1-market/`. Search Console: *"Alternate page with proper
+>   canonical tag"*, Google-selected canonical = `glp-1-market`. Yoast therefore leaves it out of
+>   `post-sitemap.xml`.
+> - **Row 12 has the same defect** (canonical → `glp-1-market`, missing from the sitemap), and Search
+>   Console reports *"Discovered – currently not indexed"*, never crawled, 13 days after publication.
+>   Both pages were published after the GLP-1 hub refresh, so the likeliest cause is a post duplicated
+>   from it with Yoast's canonical field copied along. **Fix in WordPress:** clear the canonical field
+>   on both posts, then request indexing. Flagged to Vadim 2026-09-17.
+> - **Row 14 is clean:** self-canonical, *"Submitted and indexed"*.
 
 > **Row 11 added 2026-09-03 — and it is a correction, not a new publication.** The Bariatrics hub was
 > **expanded in place on 2026-07-27** (`datePublished` 2026-06-05T13:44:40+00:00, `dateModified`
@@ -71,13 +93,13 @@ Each working directory now carries a `FINAL-PUBLISHED.md` marker with the live U
 
 | Category | Count |
 |----------|-------|
-| **Health (FitXpress)** | 42 articles |
+| **Health (FitXpress)** | 46 articles |
 | **Apparel / Fashion (Mobile Tailor)** | 73 articles |
 | **Technology / Product** | 20 articles |
 | **Company News** | 21 articles |
-| **Total** | **156** |
+| **Total** | **160** |
 
-> 155 of these come from the authoritative 2026-08-18 `post-sitemap.xml` snapshot; `top-7-remote-body-composition-tools-glp-1-clinics` (published 2026-08-21, Health/FitXpress) was registered by hand and will appear in the next sitemap pull.
+> Recounted 2026-09-17: 158 posts in `post-sitemap.xml` + 2 live posts Yoast leaves out because of the canonical defect (rows 12–13 above). Health = the unique slugs listed under "Full Inventory: Health Articles" (the pharmacy BMI article is cross-listed under Telehealth and counted once). The other three categories were not recounted.
 
 ---
 
@@ -87,26 +109,27 @@ Each working directory now carries a `FINAL-PUBLISHED.md` marker with the live U
 |---|-----|---------------|---------------|---------------------|-----|
 | 1 | Main Health Hub | P0 | ✅ Jul 24 | — | None |
 | 2 | Accuracy / Buyer Evaluation | P0 | ✅ Jul 3 | DEXA vs, Tech Comparison, Accuracy ROI, Daily Changes | None (trust assets pending) |
-| 3 | Data, Privacy, Security & Regulatory FAQ | P0 | ❌ | — | **OVERDUE** |
+| 3 | Data, Privacy, Security & Regulatory FAQ | P0 - published | ✅ **Sep 16, 2026** | — | None — link it from every vertical hub and privacy section; four vertical privacy rows became *section-first / link to central FAQ* (P2) in v2.0 |
 | 4 | AI in Fitness | P0 hub + P1/P2 | ✅ Jul 31 | AI in Fitness (refreshed hub), **Remote Body Measurement for Online Fitness Coaching (Sep 4, 2026 — first net-new cluster article)**, Fitness Tech Companies, AI Body Scanning for Fitness, Connected Fitness, Fitness Apps, Fitness Trends | Hub refreshed & live Jul 31, 2026; first Digital Coaching cluster article live Sep 4; remaining P1/P2 clusters pending |
 | 5 | AI in Telehealth | P0 hub + P1/P2 | ✅ Aug 7 | Patient Engagement (Aug 14), **Telehealth BMI verification — shipped Aug 24 as a section of the Pharmacy BMI article, not a page** | Hub refreshed & live Aug 7, 2026; BMI-verification row closed; remaining P1/P2 clusters pending |
 | 6 | GLP-1 Market | P0 hub + P1/P2 | ✅ **Hub refreshed Aug 28, 2026** | Pharmacy BMI (**rewritten Aug 24**), GLP-1 Compliance, Visual Progress, Weight Loss Industry, Weight Loss Clinic Tips, Body Scanning for Weight Loss, Beyond BMI, Body Composition Tools listicle (Aug 21) | Hub is current — P1/P2 cluster rows unblocked |
-| 7 | Insurance Underwriting | P0 | ✅ Jun 17 | — | None |
-| 8 | Wellness Platforms | P0 | ✅ Mar 30 | — | **P0** supporting listicle not published (Top Mobile Body Scanning Software) — see P0 gaps. Note: the 2026-08-31 hub rewrite in `workspace/seo/articles/2026-08-31-ai-body-data-wellness-platforms-hub/` has no `FINAL-PUBLISHED.md`, so it is drafted, not live |
-| 9 | Bariatric | P0 | ✅ Jun 5, **expanded in place Jul 27** | — | Hub is current on structure; **content is stale** — its GLP-1 section stops at 2023 data and its pre-auth section predates CMS-0057-F. Refresh in flight 2026-09-03. 5 P1 cluster articles not published |
+| 7 | Insurance Underwriting | **P1 - published** (v2.0, was P0) | ✅ existing hub | — | Refresh only if insurance becomes an active campaign. v2.0 corrected the hub's page to `mobile-body-scanning-insurance-underwriting` (v1.0 listed the pharmacy article) |
+| 8 | Wellness Platforms | P0 | ✅ **New hub Sep 14, 2026** (`ai-body-data-wellness-platforms`) — ⚠️ canonical → `glp-1-market`, not indexed; Wellness Rewards (Mar 30) stays the employer/insurer sub-hub | — | **P0** supporting listicle not published (Top Mobile Body Scanning Software, pencilled Oct 2026) — the only open P0 in the plan |
+| 9 | Bariatric | P0 | ✅ **Refreshed & republished Sep 15, 2026** (re-dated; Jun 5 original, Jul 27 expansion) | — | Refresh closed. 5 P1 cluster articles not published |
 | 10 | Clinical Trials | P0 | ✅ Jul 17 | — | 4 P1 supporting articles not published |
-| 11 | Occupational Health | P0 | ✅ Jul 10 | — | **Two P0** supporting articles pending: comparison in progress 2026-09-03, return-to-work not started |
+| 11 | Occupational Health | P0 | ✅ Jul 10 | — | Two supporting articles pending, **both P1 since v2.0** (were P0): comparison — editor's final 2026-09-11, not live; return-to-work not started |
 | — | BCRL / Lymphedema | NEW | ✅ Jul 8 | — | New vertical — add to plan |
 
 ---
 
-## Full Inventory: Health Articles (41)
+## Full Inventory: Health Articles (46)
 
 ### Main Health Hub
 - `ai-body-data-health-hub/` — **AI Body Data Across Health Programs** — Jul 24, 2026 — Hub #1
 
 ### Accuracy / Trust (Hub #2)
 - `mobile-body-scanning-accuracy/` — **Body Scanning Accuracy: A Framework for Enterprise Decisions** — Jul 3, 2026 (updated Jul 30) — Trust Asset #1
+- `fitxpress-data-privacy-security-regulatory-faq/` — **Data, Privacy, Security & Regulatory FAQ for FitXpress** — Sep 16, 2026 — **Trust Asset #2 (canonical trust FAQ, P0 - published)** — owns storage, photo deletion, retention, ownership, deletion requests, HIPAA/GDPR/CCPA/SOC 2/FDA answers; vertical pages link here instead of restating them
 - `ai-body-scanners-vs-dexa-scans/` — **AI Body Scanners vs DEXA Scans** — Jun 30, 2026 — Comparison
 - `accuracy-drives-roi-digital-health/` — **Accuracy Drives ROI in Digital Health** — Jan 2026 — Supporting
 - `the-enormous-impact-of-daily-physiological-changes-on-the-accuracy-of-our-body-measurements/` — **Daily Physiological Changes & Body Measurement Accuracy** — Oct 2019 — Education
@@ -118,13 +141,14 @@ Each working directory now carries a `FINAL-PUBLISHED.md` marker with the live U
 - `occupational-health-screening-software/` — **Standardizing Occupational Health Screening** — Jul 10, 2026 — Hub
 
 ### Bariatric (Hub #9)
-- `bariatric-pre-qualification-mobile-3d-body-scanning/` — **Bariatric Pre-Qualification with Mobile 3D Body Scanning: Faster Pre-Auth** — published Jun 5, 2026, **expanded in place Jul 27, 2026** (the republish did *not* re-date the post) — **P0 HUB** — ~4,100 words, 9 H2s — owns bariatric pre-qualification, pre-auth documentation, obesity-care intake, post-op progress and patient records; does not own generic GLP-1, telehealth or body-composition intent. Live text of record: `workspace/seo/articles/bariatric-hub-refresh/published-live-2026-07-27.md`. **Refresh in flight 2026-09-03** — see that folder's `refresh-gap-analysis.md`.
+- `bariatric-pre-qualification-mobile-3d-body-scanning/` — **Bariatric Pre-Qualification and Patient Progress Tracking: Body Data for Obesity Care Teams** — **refreshed & republished Sep 15, 2026 (re-dated)**; originally Jun 5, 2026 as "…with Mobile 3D Body Scanning: Faster Pre-Auth", expanded in place Jul 27, 2026 (that republish did *not* re-date the post) — **P0 HUB** — owns bariatric pre-qualification, pre-auth documentation, obesity-care intake, post-op progress and patient records; does not own generic GLP-1, telehealth or body-composition intent. The 09-15 live text is not captured yet; `workspace/seo/articles/bariatric-hub-refresh/published-live-2026-07-27.md` is the previous version. Refresh scope: that folder's `refresh-gap-analysis.md`.
 
 ### Insurance (Hub #7)
-- `mobile-body-scanning-insurance-underwriting/` — **AI in Insurance Underwriting** — May 2026 — Hub
+- `mobile-body-scanning-insurance-underwriting/` — **AI in Insurance Underwriting** — May 2026 — Hub (P1 - published in v2.0; refresh only if insurance becomes a campaign)
 
 ### Wellness (Hub #8)
-- `wellness-rewards-verification-employers-insurers-using-ai-3d-body-scanning/` — **Wellness Rewards Verification** — Mar 30, 2026 — Hub
+- `ai-body-data-wellness-platforms/` — **AI Body Data for Wellness Platforms: Progress Tracking, Personalization, and Engagement** — Sep 14, 2026 — **P0 HUB** (platform/app hub) — ⚠️ canonical points to `glp-1-market`, not indexed, not in the sitemap (see the 2026-09-17 note at the top)
+- `wellness-rewards-verification-employers-insurers-using-ai-3d-body-scanning/` — **Wellness Rewards Verification** — Mar 30, 2026 (sitemap lastmod Sep 14) — employer/insurer sub-hub
 
 ### GLP-1 / Weight Loss / Pharmacy (Hub #6)
 - `online-pharmacy-bmi-verification-a-2026-compliance-guide/` — **Online Pharmacy BMI Verification: A 2026 Compliance Guide** — **rewritten & republished in place Aug 24, 2026** (originally Jun 2026; the republish re-dated the post) — P0/P1 — **also owns Telehealth BMI verification** (Hub #5) via its "How to verify BMI remotely in a telehealth workflow" section
@@ -138,7 +162,7 @@ Each working directory now carries a `FINAL-PUBLISHED.md` marker with the live U
 
 ### Fitness (Hub #4)
 - `ai-in-fitness-industry/` — **AI in Fitness: How Structured Body Data Powers Progress Tracking, Personalization, and Digital Coaching** — Jul 31, 2026 — Hub (refreshed from Sep 2024)
-- `remote-body-measurement-online-fitness-coaching/` — **Remote Body Measurement for Online Fitness Coaching Programs** — Sep 4, 2026 — P1 cluster (Digital Coaching). Live text ≠ our draft, see `FINAL-PUBLISHED.md` in the working dir
+- `remote-body-measurement-online-fitness-coaching/` — **Remote Body Measurement for Online Fitness Coaching Programs** — Sep 4, 2026 — P1 cluster (Digital Coaching). Live text ≠ our draft, see `FINAL-PUBLISHED.md` in the working dir. ⚠️ canonical points to `glp-1-market`; Search Console "Discovered – currently not indexed" on 2026-09-17
 - `top-fitness-tech-companies/` — **Top Fitness Tech Companies** — May 2024 — TOFU listicle
 - `ai-body-scanning-for-fitness/` — **AI Body Scanning for Fitness** — pre-2026 — Education
 - `top-fitness-industry-trends/` — **Top Fitness Industry Trends** — pre-2026 — TOFU
@@ -196,7 +220,7 @@ Each working directory now carries a `FINAL-PUBLISHED.md` marker with the live U
 - `3dlook-launches-the-3d-body-scanning-lab/` — **3D Body Scanning Lab** — Oct 2020
 - `3dlook-introduces-the-first-3d-body-scanning-lab-to-provide-unique-body-data-points-to-apparel-firms/` — **3D Body Scanning Lab for Apparel** — Apr 2021
 - `body-scanning-technology-for-apparel/` — **Body Scanning Technology for Apparel** — Mar 2024
-- `3dlook-is-a-member-of-the-mobile-body-scanning-standards-developed-by-ieee/` — **IEEE Mobile Body Scanning Standards** — Feb 2021 — ⚠️ **flagged 2026-09-14:** the title and slug use IEEE wording that `terminology-guardrails.md` §2.11 bans ("member of … standards developed by IEEE"). Published, so not retro-edited from the repo. Do not reuse the title as anchor text; if a link is needed, put it on "IEEE 3D Body Processing working group". The decision on the live page is Vadim's.
+- `3dlook-participates-in-ieee-3d-body-processing-working-group/` — **3DLOOK Participates in the IEEE 3D Body Processing Working Group** — Feb 2021, **re-titled and re-slugged 2026-09-11** (old slug `3dlook-is-a-member-of-the-mobile-body-scanning-standards-developed-by-ieee/` now 301s here; found in the 2026-09-17 sitemap recount). The old wording below is history — ⚠️ **flagged 2026-09-14 (against the old title):** the title and slug use IEEE wording that `terminology-guardrails.md` §2.11 bans ("member of … standards developed by IEEE"). Published, so not retro-edited from the repo. Do not reuse the title as anchor text; if a link is needed, put it on "IEEE 3D Body Processing working group". The decision on the live page is Vadim's.
 
 ---
 
@@ -319,6 +343,7 @@ Main Health Hub (ai-body-data-health-hub) — Jul 24, 2026
   │
   ├── Accuracy / Trust
   │   ├── mobile-body-scanning-accuracy (Jul 3, 2026) ← TRUST ASSET
+  │   ├── fitxpress-data-privacy-security-regulatory-faq (Sep 16, 2026) ← TRUST FAQ (every vertical links here)
   │   ├── ai-body-scanners-vs-dexa-scans (Jun 30, 2026)
   │   ├── body-scanning-technology-comparison (May 22, 2026)
   │   ├── accuracy-drives-roi-digital-health (Jan 2026)
@@ -331,13 +356,14 @@ Main Health Hub (ai-body-data-health-hub) — Jul 24, 2026
   │   └── occupational-health-screening-software (Jul 10, 2026) ← HUB
   │
   ├── Bariatric
-  │   └── bariatric-pre-qualification-mobile-3d (Jun 5, 2026) ← HUB
+  │   └── bariatric-pre-qualification-mobile-3d (republished Sep 15, 2026; orig. Jun 5) ← HUB
   │
   ├── Insurance
   │   └── mobile-body-scanning-insurance-underwriting (May 2026) ← HUB
   │
   ├── Wellness
-  │   └── wellness-rewards-verification (Mar 30, 2026) ← HUB
+  │   ├── ai-body-data-wellness-platforms (Sep 14, 2026) ← HUB (⚠️ canonical defect)
+  │   └── wellness-rewards-verification (Mar 30, 2026) ← employer/insurer sub-hub
   │
   ├── GLP-1 / Pharmacy / Weight Loss
   │   ├── online-pharmacy-bmi-verification (rewritten & republished Aug 24, 2026) ← also owns Telehealth BMI verification
@@ -383,6 +409,15 @@ Main Health Hub (ai-body-data-health-hub) — Jul 24, 2026
 
 ## Gap Analysis vs Content Plan
 
+> **Reconciliation — 2026-09-17, against the sheet's new «Content Plan v 2.0» tab** (gid 1908612797;
+> the old tab is now «СP v 1.0», gid 0, archive). v2.0 marks every hub as published, moves status into
+> the priority column (`P0 - published`), and **shrinks the P0 queue to one item**: Top Mobile Body
+> Scanning Software for Wellness Apps. Manual vs Digital Intake and Return-to-Work went **P0 → P1**,
+> the Insurance hub **P0 → P1 - published**, and seven P1 rows (both Smart Scale comparisons, four
+> vertical privacy rows, GLP-1 virtual-clinic workflow, telehealth provider workflow, wellness
+> personalization and preventive wellness) went to **P2**. The full row-level list is the header of
+> `content-plan.md`. The 2026-09-03 block below is kept as history; its P0 conclusions are superseded.
+
 > **Priority reconciliation — 2026-09-03.** Every open gap row was re-read against
 > `content-plan.md`, which is the offline copy of the [strategy spreadsheet](https://docs.google.com/spreadsheets/d/1Sy7EzzZZvCKyrD30pbhElEpCZDbzuMtMkxdiDTIP8AE/edit?gid=0#gid=0)
 > and therefore **wins on priority**; this file wins on what is published. **Five of seven rows
@@ -412,14 +447,14 @@ Main Health Hub (ai-body-data-health-hub) — Jul 24, 2026
 > Found while resolving Phase 0 for the Manual-vs-Digital-Intake article: `content-plan.md:212`
 > said P0, this file said P1, and the plan was written against P0.
 
-### 🔴 Critical Gaps (P0 — still missing)
+### 🔴 Critical Gaps (P0 — still missing) — as of v2.0, one row
 
 | Article | Hub | Action |
 |---------|-----|--------|
-| Data, Privacy, Security & Regulatory FAQ | #3 Trust Assets | Create net-new — **MOST OVERDUE** (the only remaining P0 *hub* gap; the three rows below are P0 *supporting* articles. Draft exists at `workspace/seo/articles/2026-07-14-fitxpress-privacy-security-faq/`) |
-| Manual Intake vs Digital Intake in Occupational Health Screening | #11 Occupational Health | Create net-new — **IN PROGRESS 2026-09-03.** Plan approved at checkpoint 1; `write → edit → publish` running. Dir: `workspace/seo/articles/2026-09-03-manual-vs-digital-intake-occupational-health/` |
-| Return-to-Work Screening Documentation: How Digital Intake Reduces Delays | #11 Occupational Health | Create net-new — not started. Distinct buyer (workers'-comp / absence); must not overlap the comparison article above. Never "clears employees for duty" |
-| Top Mobile Body Scanning Software for Wellness Apps | #8 Wellness | Create net-new listicle — not started. Angle is "what wellness apps should look for," not "top software in general" |
+| Top Mobile Body Scanning Software for Wellness Apps | #8 Wellness | Create net-new listicle — not started; **pencilled October 2026**. Angle is "what wellness apps should look for," not "top software in general" |
+| ~~Data, Privacy, Security & Regulatory FAQ~~ ✅ | #3 Trust Assets | **DONE Sep 16, 2026** — `fitxpress-data-privacy-security-regulatory-faq/`, indexed |
+| ~~Bariatric hub refresh~~ ✅ | #9 Bariatric | **DONE Sep 15, 2026** — republished in place, re-dated |
+| ~~Wellness Platforms hub~~ ✅ | #8 Wellness | **DONE Sep 14, 2026** — `ai-body-data-wellness-platforms/` (⚠️ canonical defect, not indexed) |
 | ~~AI in Fitness hub refresh~~ ✅ | #4 Fitness | **DONE Jul 31, 2026** — `ai-in-fitness-industry/` refreshed & live |
 | ~~AI in Telehealth hub refresh~~ ✅ | #5 Telehealth | **DONE Aug 7, 2026** — `the-potential-of-ai-in-telehealth/` refreshed in place & live |
 | ~~GLP-1 Market 2026 hub refresh~~ ✅ | #6 GLP-1 | **DONE Aug 28, 2026** — `glp-1-market/` refreshed & republished in place. Live text of record: `workspace/seo/articles/glp-1-market-hub/published-live-2026-08-28.md` |
@@ -430,10 +465,14 @@ Main Health Hub (ai-body-data-health-hub) — Jul 24, 2026
 |----------|---------|-----|
 | ~~P1~~ ✅ | ~~What Is Telehealth BMI Verification in 2026~~ | #5 Telehealth — **DONE Aug 24, 2026** — shipped as a section, not a page: "How to verify BMI remotely in a telehealth workflow" inside [`online-pharmacy-bmi-verification-a-2026-compliance-guide`](https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/). The standalone draft at `workspace/seo/articles/telehealth-bmi-verification-2026/` is frozen as SUPERSEDED — do not publish it |
 | ~~P1~~ ✅ | ~~Top 7 Remote Body Composition Tools for GLP-1 Clinics~~ | #6 GLP-1 — **DONE Aug 21, 2026** — published as "7 Body Composition and Progress-Tracking Tools for Remote GLP-1 Clinics" at [`top-7-remote-body-composition-tools-glp-1-clinics`](https://3dlook.ai/content-hub/top-7-remote-body-composition-tools-glp-1-clinics/) |
+| P1 ⬇ | Manual Intake vs Digital Intake in Occupational Health Screening | #11 Occupational Health — **was P0.** Editor's final 2026-09-11 (`editorial-final-2026-09-11.md`), not live on 09-17; sheet pencils September 2026. Dir: `workspace/seo/articles/2026-09-03-manual-vs-digital-intake-occupational-health/` |
+| P1 ⬇ | Return-to-Work Screening Documentation: How Digital Intake Reduces Delays | #11 Occupational Health — **was P0.** Not started. Never "clears employees for duty" |
 | P1 | What CROs Should Ask Before Using Remote Body Measurement Tools | #10 Clinical Trials |
 | P1 | Manual Tape Measurements vs Mobile Body Scanning in Clinical Trials | #10 Clinical Trials |
 | P1 | Adding Remote Body Measurement to a DCT Platform: API, Workflow, and Data Handoff Considerations | #10 Clinical Trials |
 | P1 | Remote BMI Pre-Checks in Obesity Trial Recruitment: What They Can and Cannot Do | #10 Clinical Trials |
+
+> The table above is not the full P1 list. v2.0 has 25 open P1 rows (October pencils: GLP-1 and Fitness Apps, Telehealth Documentation, GLP-1 Patient Progress Record) — read them in `content-plan.md`.
 
 ### ⚪ New Content Not in Plan
 
@@ -446,6 +485,6 @@ Main Health Hub (ai-body-data-health-hub) — Jul 24, 2026
 
 - **Health articles are outnumbering apparel** for the first time (41 vs 73 — but 41 are 2025-2026 articles, while many apparel are 2020-2023 legacy)
 - **Every hub now runs on a 2026 article.** GLP-1 (Aug 28, 2026) was the last pre-2025 hub and has been refreshed in place, following Fitness (Jul 31, 2026) and Telehealth (Aug 7, 2026) into the 2026 hub format
-- **10 of 11 P0 hubs are live.** The only P0 hub still unpublished is the Data, Privacy, Security & Regulatory FAQ (trust asset #2) — and it is the asset every vertical page is supposed to link to for compliance answers, so it blocks internal-linking completeness across all hubs
+- **All P0 hubs and both trust assets are live** (FAQ Sep 16, 2026). The next efficiency move the sheet names for every hub is internal linking, not new pages — and two live pages (coaching, Wellness hub) are currently invisible to Google because of the canonical defect
 - **Body composition cluster** (10 articles) is mostly TOFU educational — good for SEO but not connected to main hub architecture
 - **Comparison articles** (DEXA, InBody, Fit3D, BIA, Body Scanner Machines) are growing — possible cannibalization risk between them

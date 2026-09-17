@@ -118,9 +118,12 @@ context-pack-builder
 ```
 context-pack-builder (эмитит content_strategy: строка из content-plan.md — FitXpress)
   → seo-planner Phase 0 (strategy gate) — сверяет hub/cluster/action_type/cannibalization
-       ├─ action_type = create-net-new / publish-planned-hub → продолжай
-       └─ action_type = refresh / section-first / review-decide / lead-magnet
+       ├─ action_type = create-net-new (без условия) / publish-planned-hub → продолжай
+       ├─ условный create («… if …», «or FAQ expansion») → спроси Вадима
+       └─ published (P0/P1 - published) / refresh / section-first / merge / review-decide /
+          create-if-validated / lead-magnet
              → верни рекомендацию и СТОП (не пиши новую статью)
+          (семейства — легенда в шапке content-plan.md, лист «Content Plan v 2.0»)
   → seo-planner Phase 1-3 (keywords → title → outline)
   → scripts/article_lint.py --plan  (гейты плана, один вызов, без LLM)
   → [VADIM checkpoint 1: plan + title, И ЗДЕСЬ ЖЕ уходит пакет внешнему рев'юверу]

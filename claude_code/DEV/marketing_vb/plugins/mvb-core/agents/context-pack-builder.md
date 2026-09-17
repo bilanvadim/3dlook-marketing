@@ -89,7 +89,7 @@ target_agent: post-drafter | hypothesis-generator | seo-planner | etc.
 - Прочитай `brand-assets/content-strategy/content-plan.md` (hub/cluster editorial matrix — офлайн-копия стратегической таблицы) и найди **строку**, соответствующую `objective`/теме статьи (сопоставь по hub + cluster + intent).
 - Если строка не найдена → верни `content_strategy: not_in_plan` с пометкой, чтобы seo-planner Phase 0 остановился и спросил Вадима о размещении. **Не выдумывай размещение.**
 - Из найденной строки вытяни компактно (это ГЕЙТ для seo-planner):
-  - `hub`, `cluster`, `intent`, `action_type`, `priority`
+  - `hub`, `cluster`, `intent`, `action_type`, `priority` — `action_type` и `priority` **дословно** из строки (с 2026-09-17 это свободный текст вроде `Section-first / link to central FAQ; standalone only if …` или `P0 - published`); семейство по легенде `content-plan.md` определяет seo-planner, не ты. Не сокращай уточнение — в нём правило строки.
   - `existing_urls`: URL из «URL of already published articles» (refresh target / internal-link source / cannibalization warning)
   - `cannibalization_guardrail`: дословно из строки
   - `recommendation`: дословный угол/решение из строки
@@ -226,12 +226,12 @@ context_pack:
     hub: "AI in Telehealth: Workflows, Privacy, Patient Experience, Remote Body Data"
     cluster: "BMI verification / remote eligibility support"
     intent: "BOFU"
-    action_type: "refresh-expand-existing"  # GATE: seo-planner Phase 0 acts on this
-    priority: "P0"
+    action_type: "Published / canonical BMI verification expansion"  # GATE, verbatim from the sheet: seo-planner Phase 0 maps it to a family (here: already live → STOP)
+    priority: "P0 - published"
     existing_urls:
-      - "https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/  # refresh target / owner of intent"
-    cannibalization_guardrail: "Highest cannibalization risk. Do not create a near-duplicate of Online Pharmacy BMI Verification. Differentiate on telehealth program workflows, patient-submitted data, remote eligibility support, audit trail, provider review — not pharmacy compliance."
-    recommendation: "Add a Telehealth BMI Verification section to the existing article; standalone BOFU page only if 'telehealth BMI verification' search demand is materially different."
+      - "https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/  # owner of intent, the target link for BMI verification"
+    cannibalization_guardrail: "Do not duplicate online pharmacy BMI verification, GLP-1 eligibility, or telehealth BMI verification. Use this page as the target link for BMI verification questions."
+    recommendation: "Treat the Online Pharmacy BMI Verification article as the canonical article for remote BMI verification and telehealth eligibility-support workflow. Create a separate telehealth BMI page only if search demand proves materially different."
     vertical_boundary: "Telehealth owns remote-care workflows, patient experience, documentation, privacy. Keep separate from GLP-1 eligibility & online-pharmacy compliance unless explicitly the bridge. No eligibility decisioning."
     internal_link_targets:
       up: "AI in Telehealth hub"

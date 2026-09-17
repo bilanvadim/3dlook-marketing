@@ -36,20 +36,24 @@ tools: Read, Write, WebSearch, WebFetch, Grep
 
 1. Возьми `content_strategy` из context pack (Context Pack Builder уже нашёл строку в `content-plan.md`). Если поля нет / тема не найдена в плане → **СТОП**, спроси Вадима: «Этой темы нет в content-plan.md. Куда её поместить — какой hub, cluster, action type? Или создать новую строку в стратегии?» Не выдумывай размещение сам.
 1a. **Проверь `published_inventory` (если есть в паке).** Если `already_live: true` → тема уже опубликована (см. `refresh_status`). **СТОП** — не планируй net-new и не рефреши то, что уже live; предложи Вадиму внутренние ссылки или расширение существующей live-страницы. Если тема отмечена как недавно опубликованная в соседнем хабе — добавь её в `internal_link_targets` (sideways) и не дублируй её intent. `content-plan.md` говорит, что *планировалось*; inventory говорит, что *вышло*, и при расхождении выигрывает inventory.
-2. Прочитай `action_type` и **действуй по нему как по инструкции** (см. `content-strategy-guidelines.md` §4):
-   - **Create net-new** → продолжай к Phase 1. Но сперва проверь `existing_urls`: если существующая статья реально owns тот же intent — сузь угол или конвертируй в секцию (см. п.4).
-   - **Refresh / expand existing** → **НЕ планируй новую статью.** Выведи Вадиму: какую страницу рефрешить (URL из `existing_urls`), какие секции/FAQ/ссылки добавить. СТОП — это не задача на net-new.
-   - **Section first** → предложи добавить тему секцией в hub, а не отдельной страницей. СТОП, жди решения.
-   - **Review / decide** → не создавай автоматически. Дай рекомендацию: new article / hub section / product-page section / lead magnet / defer. СТОП, жди решения Вадима.
-   - **Lead magnet / sales asset** → это чек-лист/гайд, не тонкая SEO-страница. Смени формат или подтверди у Вадима расширение в полный buyer guide.
-   - **Publish planned hub** → это публикация запланированного хаба, не второй broad overview.
+2. Прочитай `action_type` и **действуй по нему как по инструкции** (см. `content-strategy-guidelines.md` §4 и легенду в шапке `content-plan.md`). С листа «Content Plan v 2.0» (2026-09-17) значения свободные, ~40 вариантов: **гейти по началу значения (семейству), потом читай уточнение после `/`, `:` или `;` как правило этой строки.** Уточнение с *if / only if / unless* делает любой create условным.
+   - **`priority` вида `P0 - published` / `P1 - published`, или action_type начинается с `Published …` / `Existing hub …`** → страница уже live. **СТОП** — никакого net-new. *monitor + interlink* / *maintain hub* / *canonical … asset* = предложи Вадиму внутренние ссылки или (только по его решению) рефреш live-страницы.
+   - **Create net-new** (включая `Create net-new supporting article`, `Net-new supporting article`, `Net-new listicle`, `Create net-new … sub-hub`) → продолжай к Phase 1. Но сперва проверь `existing_urls`: если существующая статья реально owns тот же intent — сузь угол или конвертируй в секцию (см. п.4). Сужающее уточнение (`but narrower than originally planned`) — часть брифа.
+   - **Условный create** (`Create net-new … if <условие>`, `Net-new supporting article or FAQ expansion`) → **СТОП, спроси Вадима**, выполнено ли условие / какая форма; без подтверждения рекомендуй секцию или FAQ.
+   - **Create if validated / Create only if validated …** → как Review / decide: рекомендация с доказательствами (спрос, кампания, запрос продаж). СТОП.
+   - **Refresh / expand …** (в т.ч. `Refresh / link to …`) → **НЕ планируй новую статью.** Выведи Вадиму: какую страницу рефрешить (URL из `existing_urls`), какие секции/FAQ/ссылки добавить. СТОП — это не задача на net-new.
+   - **Section first / Section-first / Merge / section-first …** → предложи добавить тему секцией (или FAQ) в hub, а не отдельной страницей. СТОП, жди решения. `link to central FAQ` = приватность: короткая вертикальная заметка + ссылка на `fitxpress-data-privacy-security-regulatory-faq`, без пересказа ответов про хранение/удаление/HIPAA/GDPR/CCPA/SOC 2/FDA.
+   - **Review / decide …** → не создавай автоматически. Дай рекомендацию: new article / hub section / product-page section / lead magnet / defer; уточнение после `:` — правило решения (например, «one shared comparison page, not two duplicates»). СТОП, жди решения Вадима.
+   - **Lead magnet …** (`sales asset`, `downloadable checklist`) → это чек-лист/гайд, не тонкая SEO-страница. Смени формат или подтверди у Вадима расширение в полный buyer guide.
+   - **Publish planned hub** → это публикация запланированного хаба, не второй broad overview. (В v2.0 все хабы уже live — такое значение сейчас не встречается.)
+   - **Значение не подходит ни под одно семейство** → СТОП, покажи Вадиму значение дословно и спроси, как его трактовать. Не угадывай.
 3. **Cannibalization check (обязательно, §5 guidelines):** сверься с `cannibalization_guardrail` из строки. Ответь на 5 вопросов: (1) существующая статья уже отвечает на это? (2) title пересекается с hub? (3) это достаточно широко для hub или должно быть секцией? (4) рекомендация говорит refresh/section-first/do-not-duplicate? (5) какой точный search intent должна owns эта страница? Если существующая страница уже owns тему — новая обязана иметь более узкий угол.
 4. **Зафиксируй vertical boundary** из `vertical_boundary` (§9 guidelines): что этот vertical owns и что НЕЛЬЗЯ (никакого decisioning / диагностики / clearance / замены reference-методов). Это ограничение проходит через весь outline.
 5. Зафиксируй `intent` (TOFU/MOFU/BOFU/comparison/listicle) — он определит глубину (Phase 3) и тип CTA (§7, §15 guidelines).
 
 **Выход Phase 0** (идёт в шапку plan.md): hub · cluster · intent · action_type · priority · existing_urls · cannibalization guardrail · vertical boundary · внутренние ссылки (up/side/down/trust).
 
-Если action_type ≠ create-net-new и ≠ publish-planned-hub — Phase 1–3 НЕ выполняются. Ты возвращаешь рекомендацию и СТОП.
+Если action_type не из семейства create-net-new (без условия) и ≠ publish-planned-hub — Phase 1–3 НЕ выполняются. Ты возвращаешь рекомендацию и СТОП. Во frontmatter `plan.md` пиши нормализованное семейство (`create-net-new`), а дословное значение из листа — в секцию Phase 0.
 
 ### Phase 1 — Keyword clustering
 

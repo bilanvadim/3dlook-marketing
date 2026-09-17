@@ -1,0 +1,38 @@
+3DLOOK Health Content Strategy: Updated Planning Notes,,
+,,
+Action Type,Count,Notes
+Create if validated,8,Auto-count from the plan table
+Create net-new,50,Auto-count from the plan table
+Lead magnet / sales asset,8,Auto-count from the plan table
+Publish planned hub,2,Auto-count from the plan table
+Refresh / expand existing,14,Auto-count from the plan table
+Refresh / expand hub,6,Auto-count from the plan table
+Review / decide,7,Auto-count from the plan table
+,,
+Main recommendations across the strategy,Applies to,Operational meaning
+Refresh before creating,"AI Fitness, AI Telehealth, GLP-1, Insurance, Wellness Rewards, Bariatrics",The strongest existing assets should become hubs or expanded sections before publishing near-duplicate articles.
+Use product pages as BOFU destinations,"FitXpress Fitness, Telehealth & Weight Loss, BMI Verification","Educational articles should feed product/use-case pages, not replace them."
+One hub + narrow supporting assets,All clusters,Each vertical needs one anchor page; supporting content should answer one specific buyer question.
+Lead magnets are sales assets,Buyer checklists and documentation checklists,"Use checklists as downloadable PDFs or robust buyer guides, not thin indexed blog posts."
+Keep compliance boundaries visible,"Insurance, Occupational Health, Clinical Trials, Bariatrics, Telehealth","Avoid claims that FitXpress makes underwriting, hiring, clearance, fitness-for-duty, eligibility, diagnostic, or endpoint-validation decisions."
+Use cross-links deliberately,"GLP-1, Telehealth, Fitness, Bariatrics, Clinical Trials","Cross-link where intent overlaps, but preserve one owner page per search intent."
+Clean technical/reporting noise,All clusters,"Keep canonical URLs, redirects, and internal links clean before evaluating performance."
+,,
+Highest-risk cannibalization areas,Safer owner page,Guardrail
+AI in Fitness vs AI Body Scanning for Fitness,AI in Fitness hub + FitXpress fitness product page,Keep the hub educational and the product page commercial.
+GLP-1 Market vs Visual Progress Tracking vs Beyond BMI,GLP-1 Market as market hub; Visual Progress owns engagement/progress; Beyond BMI owns metric education,Do not create another broad GLP-1 progress page unless it has a distinct use case.
+Telehealth Weight Loss vs GLP-1 Telehealth vs Online Pharmacy BMI Verification,Telehealth owns workflows; GLP-1 owns longitudinal program tracking; Online Pharmacy owns eligibility/BMI verification,Separate initial verification from longitudinal progress documentation.
+Insurance vs Occupational Health,Insurance underwriting hub vs Occupational Health screening hub,Never mix underwriting-support records with employment-screening or hiring contexts.
+Bariatrics vs GLP-1 vs Telehealth,Bariatrics owns pre-auth/pre-qualification; GLP-1 owns medication-supported progress; Telehealth owns remote care workflows,"Use cross-links, not duplicate sections."
+Clinical Trials vs Bariatrics / Telehealth,Clinical Trials owns protocol-defined measurement workflows,Keep sponsor/CRO language separate from care-delivery language.
+Smart Scale comparison for fitness vs wellness,One shared comparison page if needed,Use sections for fitness apps and wellness programs instead of two near-identical articles.
+Fitness app integration vs wellness app integration,One combined implementation guide if workflows overlap,"Split only if buyer, product flow, or keyword intent is materially different."
+Occupational Health hub vs pre-employment / return-to-work articles,Occupational Health hub owns the overview,Supporting articles should target one workflow or pain point only.
+,,
+Best next execution step,Order,Why
+Publish planned hubs,1,Clinical Trials and Occupational Health should become anchor pages before supporting content expands around them.
+Refresh current winners,2,"AI Fitness, AI Telehealth, GLP-1 Market, Bariatrics, Insurance, Beyond BMI, Wellness Rewards already have published matches and should not be duplicated."
+Create first-wave supporting articles,3,"Prioritize rescreens, pre-employment intake, return-to-work documentation, clinical trial manual-vs-mobile comparison, CRO buyer questions."
+Add internal links and CTAs,4,Route informational demand to FitXpress product/use-case pages and planned hubs.
+Create lead magnets,5,"Build checklists for clinical trials, occupational health, GLP-1, bariatrics, insurance, telehealth, fitness/wellness."
+Validate search/performance after refresh,6,"Recheck rankings, internal links, AI-answer inclusion, and cannibalization before adding more net-new pages."

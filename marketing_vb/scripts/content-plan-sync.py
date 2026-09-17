@@ -16,25 +16,41 @@ Two derivatives, deliberately handled differently:
                       curated cross-references). Regenerating it from the CSV would destroy that,
                       so this script never writes it. It tells you which rows to reconcile.
 
+WHICH TAB IS "THE PLAN"
+On 2026-09-17 the team added a "Content Plan v 2.0" tab in front and renamed the old one to
+"СP v 1.0" (gid 0). This script was hardcoded to gid 0, so it kept diffing the archived tab and
+would have reported v1.0 drift forever while v2.0 changed unseen. Now the plan tab is pinned in
+content-plan.source.json and the tab list is read every run from the sheet's public htmlview page
+(no auth, same as the CSV export). A tab named like "<plan> v N" with a higher N than the pinned
+one is reported, and the diff is run against it, since a new version tab is the team's way of
+saying "this is the plan now". --sync moves the pin. Added, removed and renamed tabs are reported
+too, and the small strategy tabs (WATCH_TABS) are mirrored into sheet-tabs/ and line-diffed.
+"Performance Analytics" is deliberately not watched: it is Search Console numbers that change
+every month and would make every weekly run look like drift.
+
 Usage:
   content-plan-sync.py                    # --check: report drift, exit 1 if any
-  content-plan-sync.py --sync             # also rewrite content-plan.csv (old one snapshotted)
+  content-plan-sync.py --sync             # also rewrite the CSVs + pin (old plan CSV snapshotted)
   content-plan-sync.py --notify --quiet   # cron shape: silent unless drift, one Telegram ping
-  content-plan-sync.py --gid 123456       # a tab other than the first
+  content-plan-sync.py --gid 123456       # diff this tab, ignore the pin and newer versions
 
 Exit: 0 clean · 1 drift found · 2 could not fetch or read
 """
 
 import csv
+import difflib
 import hashlib
 import io
+import json
 import os
+import re
 import subprocess
 import sys
 import time
 
 SHEET_ID = "1Sy7EzzZZvCKyrD30pbhElEpCZDbzuMtMkxdiDTIP8AE"
 SHEET_URL = "https://docs.google.com/spreadsheets/d/{id}/export?format=csv&gid={gid}"
+TABS_URL = "https://docs.google.com/spreadsheets/d/{id}/htmlview"
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STRAT = os.path.join(ROOT, "brand-assets", "content-strategy")
@@ -42,6 +58,16 @@ CSV_LOCAL = os.path.join(STRAT, "content-plan.csv")
 MD_LOCAL = os.path.join(STRAT, "content-plan.md")
 INVENTORY = os.path.join(STRAT, "published-articles-inventory.md")
 SNAPDIR = os.path.join(STRAT, ".content-plan-snapshots")
+SOURCE = os.path.join(STRAT, "content-plan.source.json")
+TABDIR = os.path.join(STRAT, "sheet-tabs")
+
+# Tab title -> mirror file in TABDIR. Matched by title, not gid, so a re-created tab still maps.
+WATCH_TABS = {
+    "Strategy Summary": "strategy-summary.csv",
+    "Backlog": "backlog.csv",
+    "Intents system": "intents-system.csv",
+}
+DIFF_LINES_MAX = 12
 
 ENVF = os.environ.get("HERMES_ENV_FILE", os.path.expanduser("~/.hermes/.env"))
 STATE = os.path.expanduser("~/.hermes/.content-plan-state")
@@ -60,28 +86,114 @@ def norm(s):
     return " ".join("".join(c.lower() if c.isalnum() else " " for c in s).split())
 
 
-def fetch(gid):
-    url = SHEET_URL.format(id=SHEET_ID, gid=gid)
-    # -f so an HTTP 4xx is an error and not an empty "clean" diff; the export endpoint answers 200
-    # with an HTML login page when a sheet stops being link-readable, so the content-type is checked
-    # too — that is the failure that would otherwise read as "every row was deleted".
+def _get(url):
+    """curl -> (body, content_type) or None. -f so an HTTP 4xx is an error, not an empty page."""
     try:
         out = subprocess.run(
             ["curl", "-sfL", "-m", "60", "-w", "\n%{content_type}", url],
             check=True, capture_output=True, text=True).stdout
     except subprocess.CalledProcessError as e:
-        print(f"❌ не смог скачать лист (curl exit {e.returncode}). "
-              f"Проверь, что таблица ещё link-readable: {url}", file=sys.stderr)
+        print(f"❌ не смог скачать {url} (curl exit {e.returncode}). "
+              f"Проверь, что таблица ещё link-readable.", file=sys.stderr)
         return None
     except Exception as e:
-        print(f"❌ не смог скачать лист: {type(e).__name__}: {e}", file=sys.stderr)
+        print(f"❌ не смог скачать {url}: {type(e).__name__}: {e}", file=sys.stderr)
         return None
     body, _, ctype = out.rpartition("\n")
+    return body, ctype
+
+
+def fetch(gid):
+    got = _get(SHEET_URL.format(id=SHEET_ID, gid=gid))
+    if got is None:
+        return None
+    body, ctype = got
+    # The export endpoint answers 200 with an HTML login page when a sheet stops being
+    # link-readable — the failure that would otherwise read as "every row was deleted".
     if "text/csv" not in ctype:
-        print(f"❌ лист отдал не CSV, а {ctype.strip()!r} — почти наверняка доступ к таблице "
-              f"закрыли и это страница логина. Ничего не синкаю.", file=sys.stderr)
+        print(f"❌ вкладка gid={gid} отдала не CSV, а {ctype.strip()!r} — почти наверняка доступ к "
+              f"таблице закрыли и это страница логина. Ничего не синкаю.", file=sys.stderr)
         return None
     return body
+
+
+def fetch_tabs():
+    """[(gid, title), ...] in sheet order, from the public htmlview page; None if unreadable."""
+    got = _get(TABS_URL.format(id=SHEET_ID))
+    if got is None:
+        return None
+    body, _ = got
+    tabs = re.findall(r'\{name: "((?:[^"\\]|\\.)*)", pageUrl: "[^"]*", gid: "(\d+)"', body)
+    if not tabs:
+        print("⚠️  htmlview отдал страницу без списка вкладок — формат Google поменялся или доступ "
+              "закрыт. Сравниваю с закреплённой вкладкой.", file=sys.stderr)
+        return None
+    return [(gid, json.loads(f'"{name}"')) for name, gid in tabs]
+
+
+def plan_version(title):
+    """'Content Plan v 2.0' -> (2, 0); 'СP v 1.0' (Cyrillic С) -> (1, 0); anything else -> None."""
+    t = title.translate(str.maketrans("СсРр", "CcPp")).strip().lower()
+    m = re.search(r"\bv\s*(\d+(?:\.\d+)*)\s*$", t)
+    if not m or not ("content plan" in t or re.match(r"cp\b", t)):
+        return None
+    return tuple(int(x) for x in m.group(1).split("."))
+
+
+def load_source():
+    try:
+        with io.open(SOURCE, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return {}
+
+
+def tab_drift(tabs, source):
+    """Compare the live tab list with the one recorded at the last --sync."""
+    before = {g: t for g, t in source.get("tabs", [])}
+    if not before:
+        return []
+    now = dict(tabs)
+    out = []
+    for g, t in tabs:
+        if g not in before:
+            out.append(f"   · появилась: «{t}» (gid {g})")
+        elif before[g] != t:
+            out.append(f"   · переименована: «{before[g]}» → «{t}» (gid {g})")
+    for g, t in before.items():
+        if g not in now:
+            out.append(f"   · исчезла: «{t}» (gid {g})")
+    if out:
+        out.insert(0, f"🗂  ВКЛАДКИ таблицы изменились ({len(out)}):")
+    return out
+
+
+def watched_tab_drift(tabs):
+    """Line-diff the small strategy tabs against their mirrors. Returns (findings, {file: text})."""
+    by_title = {t: g for g, t in tabs}
+    found, fresh = [], {}
+    for title, fname in WATCH_TABS.items():
+        gid = by_title.get(title)
+        if gid is None:
+            continue  # a vanished tab is already reported by tab_drift
+        live = fetch(gid)
+        if live is None:
+            continue
+        fresh[fname] = live
+        try:
+            local = io.open(os.path.join(TABDIR, fname), encoding="utf-8").read()
+        except OSError:
+            found.append(f"📄 вкладки «{title}» ещё нет в репо (sheet-tabs/{fname}) — появится после --sync")
+            continue
+        if local == live:
+            continue
+        diff = [ln for ln in difflib.unified_diff(local.splitlines(), live.splitlines(), lineterm="", n=0)
+                if ln[:1] in "+-" and not ln.startswith(("+++", "---"))]
+        found.append(f"📄 вкладка «{title}» изменилась ({len(diff)} строк диффа):")
+        found += [f"      {ln[:160]}" for ln in diff[:DIFF_LINES_MAX]]
+        if len(diff) > DIFF_LINES_MAX:
+            found.append(f"      … ещё {len(diff) - DIFF_LINES_MAX}")
+    return found, fresh
 
 
 def rows(text):
@@ -92,11 +204,16 @@ def rows(text):
     except StopIteration:
         return [], {}, []
     out, order = {}, []
+    current_hub = ""
     for i, r in enumerate(rdr):
         if not any(c.strip() for c in r):
             continue
         rec = {header[j]: (r[j] if j < len(r) else "") for j in range(len(header))}
         hub = rec.get("Main hub topic", "").strip()
+        # The sheet fills the hub cell on the hub row only. Carry it down for labels, but keep it
+        # out of the key: a renamed hub would otherwise turn every one of its rows into remove+add.
+        current_hub = hub or current_hub
+        rec["_hub"] = current_hub
         cluster = rec.get("Cluster section", "").strip()
         title = rec.get("Supporting articles", "").strip()
         key = (norm(hub), norm(cluster), norm(title)) if (hub or cluster or title) else (f"row{i}",)
@@ -112,7 +229,7 @@ def rows(text):
 
 def label(rec):
     title = (rec.get("Supporting articles") or rec.get("Main hub topic") or "?").strip()
-    hub = (rec.get("Main hub topic") or "?").strip()
+    hub = (rec.get("Main hub topic") or rec.get("_hub") or "?").strip()
     pri = (rec.get("Execution Priority") or "—").strip()
     act = (rec.get("Action Type") or "—").strip()
     short = hub if len(hub) <= 46 else hub[:43] + "..."
@@ -141,6 +258,8 @@ def diff_plan(live, local):
         a, b = prows[k], lrows[k]
         hits, other = [], []
         for col in set(list(a.keys()) + list(b.keys())):
+            if col.startswith("_"):
+                continue
             av, bv = (a.get(col) or "").strip(), (b.get(col) or "").strip()
             if av == bv:
                 continue
@@ -187,6 +306,8 @@ def inventory_priority_drift(live):
         rec = lrows[k]
         pri = (rec.get("Execution Priority") or "").strip()
         title = (rec.get("Supporting articles") or "").strip()
+        # v2.0 writes "P0 - published". A published row is not an open priority, and the inventory
+        # tracks it by date, so only the bare P0/P1/P2 rows are cross-checked.
         if pri not in P_TOKENS or len(norm(title)) < 20:
             continue
         nt = norm(title)
@@ -251,11 +372,36 @@ def main(argv=None):
     quiet = "--quiet" in args
     want_sync = "--sync" in args
     want_notify = "--notify" in args
-    gid = "0"
+    source = load_source()
+    forced_gid = None
     if "--gid" in args:
         i = args.index("--gid")
         if i + 1 < len(args):
-            gid = args[i + 1]
+            forced_gid = args[i + 1]
+    gid = forced_gid or source.get("plan_gid") or "0"
+
+    tabs = fetch_tabs()
+    tab_findings, fresh_tabs = [], {}
+    if tabs is not None:
+        titles = dict(tabs)
+        tab_findings += tab_drift(tabs, source)
+        if forced_gid is None:
+            if gid not in titles:
+                tab_findings.append(f"❗ закреплённой вкладки плана (gid {gid}, "
+                                    f"«{source.get('plan_title', '?')}») в таблице больше нет")
+            versioned = [(plan_version(t), g, t) for g, t in tabs if plan_version(t)]
+            if versioned:
+                ver, newest_gid, newest_title = max(versioned)
+                pinned_ver = plan_version(titles.get(gid, "")) or ()
+                if newest_gid != gid and (ver > pinned_ver or gid not in titles):
+                    tab_findings.append(
+                        f"🆕 НОВАЯ ВЕРСИЯ ПЛАНА: «{newest_title}» (gid {newest_gid}). Сравниваю с ней, "
+                        f"а не с закреплённой «{titles.get(gid, source.get('plan_title', '?'))}» "
+                        f"(gid {gid}). --sync перезакрепит.")
+                    gid = newest_gid
+        more, fresh_tabs = watched_tab_drift(tabs)
+        tab_findings += more
+    plan_title = dict(tabs).get(gid, "?") if tabs else source.get("plan_title", "?")
 
     live = fetch(gid)
     if live is None:
@@ -266,39 +412,60 @@ def main(argv=None):
         print(f"❌ нет локальной копии {CSV_LOCAL}: {e}", file=sys.stderr)
         return 2
 
-    findings = diff_plan(live, local) + inventory_priority_drift(live)
+    findings = tab_findings + diff_plan(live, local) + inventory_priority_drift(live)
+    repinned = tabs is not None and (source.get("plan_gid") != gid
+                                     or source.get("tabs") != [list(t) for t in tabs])
 
-    if not findings:
+    if not findings and not (want_sync and repinned):
         if not quiet:
             _, lr, _ = rows(live)
-            print(f"✅ content-plan.csv совпадает с листом ({len(lr)} строк), "
-                  f"приоритеты в инвентаре не расходятся.")
+            print(f"✅ content-plan.csv совпадает с вкладкой «{plan_title}» ({len(lr)} строк), "
+                  f"вкладки и приоритеты в инвентаре не расходятся.")
             print(f"   Напоминание: content-plan.md — отдельная копия, её этот скрипт не проверяет "
                   f"построчно. Дата в её шапке: {md_synced_line()}")
         return 0
 
-    print("=" * 78)
-    print(f"СТРАТЕГИЧЕСКИЙ ЛИСТ РАСХОДИТСЯ С РЕПО — {time.strftime('%Y-%m-%d %H:%M')}")
-    print(f"лист: https://docs.google.com/spreadsheets/d/{SHEET_ID}/edit?gid={gid}#gid={gid}")
-    print("=" * 78)
-    for ln in findings:
-        print(ln)
-    print()
+    if findings:
+        print("=" * 78)
+        print(f"СТРАТЕГИЧЕСКИЙ ЛИСТ РАСХОДИТСЯ С РЕПО — {time.strftime('%Y-%m-%d %H:%M')}")
+        print(f"вкладка: «{plan_title}» · "
+              f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/edit?gid={gid}#gid={gid}")
+        print("=" * 78)
+        for ln in findings:
+            print(ln)
+        print()
 
     if want_sync:
-        os.makedirs(SNAPDIR, exist_ok=True)
-        snap = os.path.join(SNAPDIR, f"content-plan-{time.strftime('%Y%m%d-%H%M%S')}.csv")
         try:
-            with io.open(snap, "w", encoding="utf-8") as f:
-                f.write(local)
-            with io.open(CSV_LOCAL, "w", encoding="utf-8") as f:
-                f.write(live)
-            print(f"✅ content-plan.csv обновлён из листа. Прежняя копия: {snap}")
+            if live != local:
+                os.makedirs(SNAPDIR, exist_ok=True)
+                snap = os.path.join(SNAPDIR, f"content-plan-{time.strftime('%Y%m%d-%H%M%S')}.csv")
+                with io.open(snap, "w", encoding="utf-8") as f:
+                    f.write(local)
+                with io.open(CSV_LOCAL, "w", encoding="utf-8") as f:
+                    f.write(live)
+                print(f"✅ content-plan.csv обновлён из «{plan_title}». Прежняя копия: {snap}")
+            os.makedirs(TABDIR, exist_ok=True)
+            for fname, text in fresh_tabs.items():
+                with io.open(os.path.join(TABDIR, fname), "w", encoding="utf-8") as f:
+                    f.write(text)
+            if fresh_tabs:
+                print(f"✅ sheet-tabs/ обновлён: {', '.join(sorted(fresh_tabs))}")
+            if tabs is not None:
+                with io.open(SOURCE, "w", encoding="utf-8") as f:
+                    json.dump({"sheet_id": SHEET_ID, "plan_gid": gid, "plan_title": plan_title,
+                               "synced": time.strftime("%Y-%m-%d"),
+                               "tabs": [list(t) for t in tabs]},
+                              f, ensure_ascii=False, indent=2)
+                    f.write("\n")
+                print(f"✅ закреплена вкладка «{plan_title}» (gid {gid}), список вкладок записан.")
+            else:
+                print("⚠️  список вкладок не получен — закрепление в content-plan.source.json не менял.")
         except OSError as e:
-            print(f"❌ не смог записать CSV: {e}", file=sys.stderr)
+            print(f"❌ не смог записать: {e}", file=sys.stderr)
             return 2
     else:
-        print("ℹ️  Ничего не записано (это --check). Обновить CSV: "
+        print("ℹ️  Ничего не записано (это --check). Обновить CSV и закрепление: "
               "scripts/content-plan-sync.py --sync")
 
     print()
@@ -309,15 +476,16 @@ def main(argv=None):
           "    руками или агентом, и только потом двигать дату в его шапке.\n"
           f"    Сейчас там: {md_synced_line()}")
 
-    if want_notify:
+    if want_notify and findings:
         fp = hashlib.sha1("\n".join(findings).encode("utf-8")).hexdigest()[:16]
-        head = findings[0] if findings else "drift"
+        # A new plan version outranks everything else: it means every row below may be moot.
+        head = next((ln for ln in findings if ln.startswith("🆕")), findings[0])
         notify("📋 Стратегический лист разошёлся с репо\n\n"
-               f"{len(findings)} находок. Первая: {head}\n\n"
+               f"{len(findings)} строк отчёта. Главное: {head}\n\n"
                f"Разбор: scripts/content-plan-sync.py\n"
                f"Синк CSV: scripts/content-plan-sync.py --sync\n"
                "content-plan.md переносить руками — в нём есть то, чего в листе нет.", fp)
-    return 1
+    return 1 if findings else 0
 
 
 def md_synced_line():
