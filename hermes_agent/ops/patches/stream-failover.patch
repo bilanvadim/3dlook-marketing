@@ -1,8 +1,8 @@
 diff --git a/agent/chat_completion_helpers.py b/agent/chat_completion_helpers.py
-index b9cf6a1d30..3d4ef272a7 100644
+index a940e631c0..ecf79ad6da 100644
 --- a/agent/chat_completion_helpers.py
 +++ b/agent/chat_completion_helpers.py
-@@ -3302,6 +3302,17 @@ class _StreamingCall(StreamingWaitMonitor):
+@@ -3538,6 +3538,17 @@ class _StreamingCall(StreamingWaitMonitor):
              getattr(self.agent, "model", "unknown"), None, dropped_tool_names=_partial_names)
          if _cls is not None and _cls.reason == FailoverReason.content_policy_blocked:
              _stub._content_filter_terminated = True
@@ -21,10 +21,10 @@ index b9cf6a1d30..3d4ef272a7 100644
  
      def run(self):
 diff --git a/agent/turn_truncation.py b/agent/turn_truncation.py
-index 335cb1c3c7..60ab515f06 100644
+index c820298d35..11591dd695 100644
 --- a/agent/turn_truncation.py
 +++ b/agent/turn_truncation.py
-@@ -192,21 +192,38 @@ def _abort_reason(agent: Any, content: Any, has_tool_calls: bool) -> Optional[tu
+@@ -195,21 +195,38 @@ def _abort_reason(agent: Any, content: Any, has_tool_calls: bool) -> Optional[tu
      return None
  
  
@@ -59,15 +59,15 @@ index 335cb1c3c7..60ab515f06 100644
 +        f"{agent.log_prefix}🔌 Provider died mid-stream (quota/timeout) — activating fallback provider..."
 +        if _pf else
          f"{agent.log_prefix}🛡️  Content filter terminated stream — activating fallback provider...",
-         force=True,
+         force=True, diagnostic=True,
      )
--    agent._emit_status("Content filter terminated stream; switching to fallback...")
-+    agent._emit_status("Provider failed mid-stream; switching to fallback..." if _pf
-+                       else "Content filter terminated stream; switching to fallback...")
+-    agent._emit_diagnostic_status("Content filter terminated stream; switching to fallback...")
++    agent._emit_diagnostic_status("Provider failed mid-stream; switching to fallback..." if _pf
++                                  else "Content filter terminated stream; switching to fallback...")
      if agent._try_activate_fallback():
          # Roll partial content back to the last clean turn so the fallback gets a
          # coherent continuation point; unmark survivors (their text left the partial).
-@@ -306,7 +323,12 @@ def _continue_text(st: _Trunc, _retry: TurnRetryState, assistant_message: Any) -
+@@ -309,7 +326,12 @@ def _continue_text(st: _Trunc, _retry: TurnRetryState, assistant_message: Any) -
          )
      return st.end_turn(
          partial_response or _CEILING_NO_TEXT,
@@ -81,7 +81,7 @@ index 335cb1c3c7..60ab515f06 100644
      )
  
  
-@@ -416,7 +438,7 @@ def recover_from_truncation(
+@@ -423,7 +445,7 @@ def recover_from_truncation(
          return st.end_turn(user_response, error)
  
      if agent.api_mode in _CONTINUABLE_MODES:
