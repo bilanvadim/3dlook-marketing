@@ -10,8 +10,8 @@ We are NOT just a measurement API. We are a **trusted workflow layer** for indus
 
 Our differentiation lives in three places:
 1. **Outcomes, not measurements** — every product ties to a measurable customer KPI (retention, conversion, CPL, time-to-clearance)
-2. **Workflow integration** — longitudinal tracking, audit logs, consent management, deep API/SDK integration that's costly to swap
-3. **Reliability + governance** — confidence scoring, drift monitoring, BAA-backed HIPAA support and GDPR roles in a DPA (see `compliance.md`), on-device options for privacy
+2. **Workflow integration** — longitudinal tracking, audit logs, deep API/SDK integration that's costly to swap
+3. **Reliability + governance** — confidence scoring, drift monitoring, BAA-backed HIPAA support and GDPR roles in a DPA (see `compliance.md`)
 
 ## Two products
 

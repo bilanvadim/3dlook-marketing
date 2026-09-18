@@ -1,17 +1,27 @@
 ---
+url: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
 slug: fitxpress-data-privacy-security-regulatory-faq
-product: fitxpress
-title: "Data, Privacy, Security & Regulatory FAQ for FitXpress"
-status: published
-published_url: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
-author: Asselya Sekerova
+vertical: fitxpress
+segment: procurement, legal and security teams evaluating FitXpress (all health verticals)
+hub: Main Health hub, canonical trust FAQ (content plan v2.0, P0 - published)
 article_type: canonical trust FAQ (Type G, blog-style-guide.md §9)
-article_published_time: 2026-09-16T09:41:48+00:00
-article_modified_time: 2026-09-17T13:57:45+00:00
-captured_from_live: 2026-09-18
-capture_method: "curl of the live page, body converted to markdown; eBook CTA, author bio and empty anchor rows dropped"
-source_of_truth: live page
-role: "Canonical source for FitXpress data, privacy, security and regulatory facts (Vadim, 2026-09-18). brand-assets/product-info/compliance.md is derived from this file."
+author: Asselya Sekerova
+published: 2026-09-16 (modified 2026-09-17)
+word_count: ~3810 prose
+h2_count: 7
+cta_type: procurement (request documentation via legal@3dlook.me)
+source: live page, captured 2026-09-18 (curl, body only)
+working_directory: workspace/seo/articles/2026-07-14-fitxpress-privacy-security-faq/
+reference_role: >
+  The one shipped example of Type G and the source of truth for FitXpress privacy, security and
+  regulatory facts (compliance.md is derived from it). Take structure, the Quick answers table,
+  question H3s and the fact wording from it. Sentence shape is legal-documentation register:
+  right for Type G, not for marketing articles.
+known_issues: |
+  From content-seo-audit-2026-09-18.md, do not replicate: GDPR and BIPA never expanded (M1);
+  "body composition values" once (use "estimates"); one sentence about NDA documents repeated
+  verbatim; five H3s open with a definition or label instead of the answer (SOC 2, HIPAA, data,
+  ownership, protection); mid-body eBook banner; three alt texts built on another page's keyword.
 ---
 
 # Data, Privacy, Security & Regulatory FAQ for FitXpress

@@ -624,6 +624,14 @@ def gate_accuracy(body: str, line_offset: int = 0):
 SENT_MEAN_MAX = 16.0
 SENT_LONG, SENT_LONG_SHARE_MAX = 25, 0.06
 SENT_VERY_LONG, SENT_VERY_LONG_MAX = 35, 1   # the final keeps one: a quoted measurement protocol
+# Type G, canonical trust FAQ (blog-style-guide.md §9, Vadim 2026-09-18). Measured the same way
+# on the one shipped final of the type, the live Data, Privacy, Security & Regulatory FAQ
+# (modified 2026-09-17): mean 16.9, 16% over 25, 3 over 35. Legal qualifications carry their
+# conditions inside the sentence and the editor kept that length, so the type gets its own
+# limits with the same kind of headroom gate 10 has over the occupational-health final.
+# Selected by `article_type` (article or plan frontmatter) matching TRUST_FAQ_TYPE.
+SENT_LIMITS_TRUST_FAQ = (18.0, 0.18, 3)
+TRUST_FAQ_TYPE = re.compile(r"trust\s*faq|\btype\s*g\b|canonical\s+faq", re.IGNORECASE)
 
 _SENT_ABBR = (("e.g.", "e<g>"), ("i.e.", "i<e>"), ("vs.", "vs<>"), ("U.S.", "U<S>"),
               ("et al.", "et al<>"), ("approx.", "approx<>"))
@@ -673,7 +681,7 @@ def _content_tokens(s: str):
             if t not in _SENT_STOP and len(t) > 2}
 
 
-def gate_sentences(body: str, line_offset: int = 0):
+def gate_sentences(body: str, line_offset: int = 0, limits=None):
     """Gate 10. Sentence length against the editorial finals. Repetition, reported only.
 
     Fails on three numbers, each measured on shipped finals (constants above): mean words per
@@ -690,6 +698,8 @@ def gate_sentences(body: str, line_offset: int = 0):
     sents = prose_sentences(body, line_offset)
     if len(sents) < 10:
         return True, [f"only {len(sents)} prose sentences, not gated"], {"sentences": len(sents)}
+    mean_max, share_max, very_long_max = limits or (SENT_MEAN_MAX, SENT_LONG_SHARE_MAX,
+                                                    SENT_VERY_LONG_MAX)
     lens = sorted(n for n, _, _ in sents)
     mean = sum(lens) / len(lens)
     long_n = sum(1 for n in lens if n > SENT_LONG)
@@ -697,14 +707,14 @@ def gate_sentences(body: str, line_offset: int = 0):
     share = long_n / len(lens)
 
     problems = []
-    if mean > SENT_MEAN_MAX:
-        problems.append(f"mean sentence is {mean:.1f} words, max {SENT_MEAN_MAX:.0f}")
-    if share > SENT_LONG_SHARE_MAX:
+    if mean > mean_max:
+        problems.append(f"mean sentence is {mean:.1f} words, max {mean_max:.0f}")
+    if share > share_max:
         problems.append(f"{long_n} of {len(lens)} sentences ({share:.0%}) run over {SENT_LONG} "
-                        f"words, max {SENT_LONG_SHARE_MAX:.0%}")
-    if very_long > SENT_VERY_LONG_MAX:
+                        f"words, max {share_max:.0%}")
+    if very_long > very_long_max:
         problems.append(f"{very_long} sentences run over {SENT_VERY_LONG} words, "
-                        f"max {SENT_VERY_LONG_MAX}")
+                        f"max {very_long_max}")
     if problems:
         for n, s, ln in sorted(sents, key=lambda x: -x[0]):
             if n <= SENT_LONG:
@@ -733,6 +743,8 @@ def gate_sentences(body: str, line_offset: int = 0):
     repeated = sorted(((c, g) for g, c in grams.items() if c >= 3 and g not in h1), reverse=True)
 
     info = {
+        "limits": ("Type G trust FAQ" if limits else "article") +
+                  f" (mean <= {mean_max:g}, <= {share_max:.0%} over {SENT_LONG}, <= {very_long_max} over {SENT_VERY_LONG})",
         "sentences": len(lens),
         "mean_words": round(mean, 1),
         "p90_words": lens[int(len(lens) * 0.9)],
@@ -873,13 +885,16 @@ def main():
 
         # target and primary keyword come from plan.md beside the article unless overridden
         target = args.target
+        article_type = str((fm or {}).get("article_type") or "")
         plan_path = os.path.join(os.path.dirname(os.path.abspath(args.path)), "plan.md")
         if os.path.exists(plan_path):
             with open(plan_path) as fh:
                 pfm, pbody = split_frontmatter(fh.read())
             primary = pfm.get("primary_keyword")
+            article_type = article_type or str(pfm.get("article_type") or "")
             if target is None:
                 target = extract_target(pfm, pbody)
+        sent_limits = SENT_LIMITS_TRUST_FAQ if TRUST_FAQ_TYPE.search(article_type) else None
 
         run("hard bans (detect-ai-tells)", gate_detector, args.path)
         run("prose length", gate_length, body, target)
@@ -890,7 +905,7 @@ def main():
         run("keyword placement", gate_keyword, body, primary)
         run("abbreviations (M1)", gate_m1, body)
         run("accuracy discipline", gate_accuracy, body, line_offset)
-        run("sentence length", gate_sentences, body, line_offset)
+        run("sentence length", gate_sentences, body, line_offset, sent_limits)
 
     failed = [r for r in results if not r["ok"]]
     verdict = "PASS" if not failed else "FAIL"

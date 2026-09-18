@@ -65,7 +65,7 @@ A scan starts with a guided capture flow and returns structured outputs **in und
 | Security operations | Logging and monitoring of production systems, API access and admin actions · vulnerability management · patch and change management · incident response (detection, containment, investigation, notification) · business continuity and disaster recovery plans, tested regularly |
 | Testing and assurance | **Penetration testing conducted regularly by an independent third-party firm** · security reviews alongside pen tests and after significant architecture changes · findings tracked to remediation · security questionnaires completed during procurement on request |
 
-Not in the FAQ, so not ours to claim: KMS / customer-managed keys, "at least annual" pen testing, ISO 27001, specific monitoring vendors.
+Not in the FAQ, so not ours to claim (Vadim 2026-09-18: "the truth is in the article, delete the rest"): KMS / customer-managed keys, "at least annual" pen testing, ISO 27001, specific monitoring vendors, on-device privacy options or modes, consent management by 3DLOOK (the customer obtains consent). The only capture-side privacy control the FAQ names is face obfuscation at capture.
 
 ## 6. Ownership and permitted use
 

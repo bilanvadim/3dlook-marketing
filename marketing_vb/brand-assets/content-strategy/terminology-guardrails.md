@@ -150,6 +150,14 @@ regulatory boundary**. Use it once, cleanly.
 
 - Acceptable: "FitXpress supports clinician review; it is not a diagnostic tool."
 
+> **Project note (2026-09-18, Vadim, from the audit of the live trust FAQ).** A definitional
+> correction of a compliance status is this regulatory-boundary exception, not a violation:
+> *"HIPAA is a regulatory framework, not a certification."* · *"SOC 2 is an attestation
+> examination …, not a product certification."* It is the main message of trust content (Type G,
+> `blog-style-guide.md` §9) and the wording is the live FAQ's. `detect-ai-tells.py` licenses
+> "not a (product) certification" in `corrective_contrast`; other "X, not Y" forms stay a
+> judgment call for the editor.
+
 ### 9. Contrast using "rather than"
 
 Do not use **"rather than"** to frame one format, capability, workflow, or outcome through corrective

@@ -325,9 +325,11 @@ HARD_EN = {
     # aware: "3DLOOK is not SOC 2 certified" and the FAQ heading "Is 3DLOOK SOC 2 certified?" are
     # the correct forms and must not fire.
     "compliance_status": [
-        r"\bHIPAA[- ](?:compliant|certified|certification)\b",
-        r"\bcompliant\s+with\s+HIPAA\b",
-        r"\bSOC\s*2[- ](?:type\s*(?:ii|2|i|1)[- ])?(?:certified|compliant)\b",
+        # `(?!\?)`: a link or table cell that quotes an FAQ heading ("…described in Is 3DLOOK
+        # SOC 2 certified?") is asking, not claiming. Found on the live FAQ itself, 2026-09-18.
+        r"\bHIPAA[- ](?:compliant|certified|certification)\b(?!\?)",
+        r"\bcompliant\s+with\s+HIPAA\b(?!\?)",
+        r"\bSOC\s*2[- ](?:type\s*(?:ii|2|i|1)[- ])?(?:certified|compliant)\b(?!\?)",
         r"\bGDPR[- ]certified\b",
         r"\bFDA[- ](?:cleared|approved|registered)\b",
         r"\b(?:zero|no)\s+personal\s+(?:identifiers|data)\s+(?:processed|stored)\b",
@@ -710,6 +712,38 @@ def in_question(text: str, start: int) -> bool:
 # Categories where a negated hit is the compliant phrasing, so it must not be reported.
 NEGATION_AWARE = {"claims_discipline", "reserved_words", "compliance_status"}
 
+# Sentence-level licenses (2026-09-18, Vadim, from the audit of the live trust FAQ). A hit is
+# skipped when the SENTENCE that holds it matches one of these. Each row is a form the shipped
+# trust FAQ uses correctly and our patterns misread; each is scoped tightly enough that the claim
+# it resembles still fires ("validated by an independent auditor" is still a reserved-word hit).
+LICENSES = {
+    # defining SOC 2 is not claiming independent validation of FitXpress
+    "reserved_words": [
+        r"\b(?:SOC\s*2|attestation)\b.*\bindependent\s+auditors?\b",
+        r"\bindependent\s+auditors?\b.*\b(?:SOC\s*2|attestation)\b",
+    ],
+    # a hypothetical change of intended use that would trigger reassessment is a boundary
+    "claims_discipline": [
+        r"\b(?:intended|designed)\s+to\s+support\s+diagnosis\b.*\brequires?\s+(?:a\s+)?reassessment\b",
+        r"\bsupport\s+diagnosis\b.*\bwould\s+require\s+(?:a\s+)?reassessment\b",
+    ],
+    # definitional correction of a status term in trust content (terminology rule, licensed
+    # 2026-09-18): "HIPAA is a regulatory framework, not a certification."
+    "corrective_contrast": [
+        r"\bnot\s+a\s+(?:product\s+)?certification\b",
+    ],
+}
+
+
+def sentence_at(text: str, start: int, end: int) -> str:
+    """The sentence (or table cell / line) that holds the span [start, end)."""
+    left = text[:start]
+    cut = max(left.rfind(sep) for sep in (". ", "? ", "! ", "\n", "|"))
+    right = text[end:]
+    stops = [i for i in (right.find(". "), right.find("\n"), right.find("|")) if i != -1]
+    stop = min(stops) if stops else len(right)
+    return text[cut + 1 if cut != -1 else 0: end + stop + 1]
+
 
 def find_matches(text: str, patterns: dict, line_offset: int = 0) -> dict:
     """
@@ -722,10 +756,15 @@ def find_matches(text: str, patterns: dict, line_offset: int = 0) -> dict:
     lines = text.splitlines()
     for category, pattern_list in patterns.items():
         negation_aware = category in NEGATION_AWARE
+        licenses = LICENSES.get(category, ())
         for pat in pattern_list:
             for m in re.finditer(pat, text, re.IGNORECASE | re.MULTILINE):
                 if negation_aware and (is_negated(text, m.start()) or in_question(text, m.start())):
                     continue
+                if licenses:
+                    sent = sentence_at(text, m.start(), m.end())
+                    if any(re.search(lic, sent, re.IGNORECASE) for lic in licenses):
+                        continue
                 local_line = text[: m.start()].count("\n") + 1
                 excerpt = lines[local_line - 1].strip() if 0 < local_line <= len(lines) else ""
                 if len(excerpt) > 140:

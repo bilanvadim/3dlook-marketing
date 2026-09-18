@@ -24,6 +24,7 @@ Calm, specific, evidence-led B2B. It sells by clarifying the buyer's *decision*,
 - Bold sparingly, for verdicts and key terms. Italics for disclaimers and scope notes.
 - Headers are plain and descriptive, never clever.
 - Prose, not bullet-spam. Use lists only where they earn their place.
+- **Exception — Type G trust FAQ** (`blog-style-guide.md` §9, 2026-09-18): the legal-documentation register of the live trust FAQ (conditions inside the sentence, "where applicable", role-named actors, question headings) is right there and only there. Marketing articles keep the voice described in this file.
 
 ## Words and phrases we USE
 Operational verbs: *supports, helps standardize, provides structured records, reduces manual intake, standardizes capture, supports review, creates structured records, improves documentation consistency, reduces rework, supports scan-to-scan comparison, improves data availability before review.*

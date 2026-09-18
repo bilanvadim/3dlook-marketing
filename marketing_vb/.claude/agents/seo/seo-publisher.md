@@ -48,7 +48,7 @@ tools: Read, Write, Bash
 - [ ] **Medical framing:** «FitXpress is not a medical device.» — решение Вадима 2026-09-11 по финалу редактора. «positioned as» про любой product / intended-use / регуляторный факт, medical device включительно, FAIL
 - [ ] Ссылки на смысловых анкорах; сторонние источники — нейтральные качественные сайты, не vendor-блоги
 - [ ] **Ai-tells детектор РЕАЛЬНО прогнан** (не оценка): `python3 brand-assets/style-guides/scripts/detect-ai-tells.py workspace/seo/articles/{slug}/draft-edited.md --channel article --summary`. В пакет вставь фактический вывод: `ai_density_per_1000_words`, `severity`, `hard_fails`, `house_rule_violations`. Оценка «по правилам вручную» — это ❌, а НЕ судейский pass
-- [ ] Images / alt text suggestions (если нужны)
+- [ ] Images / alt text suggestions (если нужны). Alt описывает, что на картинке, простыми словами: без ключевого слова другой страницы (живая trust-FAQ вышла с тремя alt на ключе accuracy-статьи, аудит 2026-09-18), без стоп-слов (robust, seamless…), без em dash, ≤ 125 символов. Для каждого баннера — отдельный alt, не один шаблон
 ```
 
 > **Детектор нельзя «пройти» рассуждением.** 2026-08-25: и seo-editor (Pass 3c), и этот агент не смогли запустить скрипт, списали это на «sandbox restriction», подставили оценку 1.5 → 0.6/1000 и закрыли чек-лист 14/14. Скрипт был исправен — не хватало прав (`settings.local.json` не грузится при `settingSources:['project']`, исправлено в `.claude/settings.json`), а реальный прогон дал 0.73/1000 CLEAN. Оценка совпала, но проверка не проводилась ни разу, и по чек-листу этого не было видно. Если скрипт не запускается — это ❌ и повод сказать об этом Вадиму, а не повод оценить результат.

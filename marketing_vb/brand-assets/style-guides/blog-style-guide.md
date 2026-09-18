@@ -260,7 +260,7 @@ Use them when the argument is structurally a comparison. Don't force a table whe
 
 ## 9. Article Types Taxonomy
 
-The corpus contains 6 distinct article types. Each has its own structural template.
+The corpus contains 7 distinct article types. Each has its own structural template. Type G was added on 2026-09-18 from the live trust FAQ (Vadim).
 
 ### Type A — Use-Case Deep-Dive (FX preferred format)
 **Examples:** `mobile-body-scanning-insurance-underwriting`, `wellness-rewards-verification`
@@ -343,13 +343,29 @@ This format is heavy and reads like a buyer's directory. Use it for annual lands
 
 ---
 
+### Type G — Canonical Trust FAQ (reference page for procurement, legal and security)
+**Example (the one shipped final):** `fitxpress-data-privacy-security-regulatory-faq` — `brand-assets/past-articles/blog/fitxpress-data-privacy-security-regulatory-faq.md`. Audit of it: `workspace/seo/articles/2026-07-14-fitxpress-privacy-security-faq/content-seo-audit-2026-09-18.md`.
+**Target length:** 3,000–3,800 words of prose (the final: 3,810)
+**When:** one canonical page per trust topic that every vertical page links to (content plan: "canonical trust FAQ"). Not for vertical articles: those carry a short context note and link here.
+**Structure:**
+1. Scope paragraph: what the product is in one sentence, then that the page does not replace the Privacy Policy, Terms, DPA, SCCs, BAA or the customer agreement
+2. `## Quick answers` — a table: **Topic · Direct answer · Qualification**. One row per topic the page covers; the qualification links to the section that explains it
+3. 4–6 H2 groups (e.g. Data lifecycle · Data rights · Security · Privacy compliance · Certifications and regulatory status · Enterprise deployment), each holding **question H3s** in the buyer's own words
+4. **Direct answer in the first sentence** of every H3 ("No." / "Not yet." / "Photos are deleted…"), qualification after it. A definition before the answer is the most common miss
+5. Tables where the answer is a matrix (data lifecycle, documents and availability)
+6. Last H3: how procurement, legal and security teams request documentation — the only CTA (address or procurement channel). No mid-body banners or eBooks
+7. FAQPage schema built from the H3 questions (no separate FAQ block that repeats them)
+**Register:** legal-documentation register is right here — conditions inside the sentence, "where applicable", role-named actors ("the customer" as the contractual or legal role). It does **not** carry over to marketing articles, where `about-me.md` and `editorial-rewrites.md` still govern.
+**Gates that differ:** `article_lint.py` gate `sentence length` uses Type G limits (mean ≤ 18, ≤ 18% over 25, ≤ 3 over 35) when `article_type` in the article or plan frontmatter matches "trust FAQ" / "Type G" / "canonical FAQ". A definitional correction of a status term ("HIPAA is a regulatory framework, not a certification") is licensed. Everything else — M1 abbreviations, hard bans, `compliance_status`, superseded terms — applies unchanged.
+**Also required:** facts only from `brand-assets/product-info/compliance.md`; external authority links where a framework is named (HHS for HIPAA, ICO or EDPB for GDPR, AICPA for SOC 2, FDA); a "Reviewed by" line from legal or security and a visible "Last reviewed" date; links **up** to the Main Health hub, **down** to the product pages the answers touch, and inbound links from every vertical hub.
+
 ## 10. Quick Pre-Publish Checklist
 
 Before any new blog article ships, verify:
 
 - [ ] Word count within the type's expected range (Section 9)
 - [ ] H1 contains target keyword or close variant
-- [ ] H2/H3 hierarchy correct — no all-caps headers, no question-style titles unless Type B/C/D
+- [ ] H2/H3 hierarchy correct — no all-caps headers, no question-style titles unless Type B/C/D/G
 - [ ] 3–6 fingerprint phrases from Section 3 appear naturally
 - [ ] All numbers cite a named external source (or the 3DLOOK documented number set)
 - [ ] FitXpress articles include a `**Disclaimer.**` block when touching medical decisions
@@ -360,7 +376,8 @@ Before any new blog article ships, verify:
 - [ ] 4–8 internal links, descriptive anchors, none pointing to placeholder URLs
 - [ ] Frontmatter includes `author: Assel Sekerova` (default) unless founder-voice piece signed by Katerina Galich
 - [ ] Reads aloud without any sentence sounding like a chatbot
-- [ ] `scripts/article_lint.py` gate `sentence length` is ok: mean ≤ 16 words, ≤ 6% of sentences over 25, at most one over 35 (`editorial-rewrites.md` §1)
+- [ ] `scripts/article_lint.py` gate `sentence length` is ok: mean ≤ 16 words, ≤ 6% of sentences over 25, at most one over 35 (`editorial-rewrites.md` §1); Type G: ≤ 18 / ≤ 18% / ≤ 3
+- [ ] Every image has alt text that describes what the image shows, in plain words: no keyword borrowed from another page, no banned words ("robust", "seamless"…), no em dash, ≤ 125 characters. The live trust FAQ shipped with three alt texts built on the accuracy article's keyword (2026-09-18 audit)
 - [ ] No refrain phrases, no list of problems restated in a later section, no sentence about the table or the page, no aphorism, serial comma throughout (`editorial-rewrites.md` §2-§6)
 
 ---

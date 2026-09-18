@@ -87,7 +87,7 @@
 
 **How we turn this into advantage:**
 - We never lead with "best model" — we lead with **outcomes + workflow + governance**
-- Apple/Google won't ship workflow integrations, audit logs, customer SLAs, on-device privacy modes, drift monitoring — these are our moat
+- Apple/Google won't ship workflow integrations, audit logs, customer SLAs, drift monitoring — these are our moat
 - We invest in **trusted workflow layer**: longitudinal tracking, consent/permissions, audit logs, deep integration that's costly to swap
 
 **Messaging implication for outbound and content:**

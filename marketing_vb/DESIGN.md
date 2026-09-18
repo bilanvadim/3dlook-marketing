@@ -140,7 +140,7 @@ Full-width navy radial-glow band, rounded top corners (~30–40px). Three CTA-he
 - CTA: white rectangular **"Get in touch"** button. *Unlock Body Data* variant uses two buttons: **"Book a Consultation"** (white) + **"Explore Technology"** (outline).
 
 **Trust badges (centered, two outlined navy pills):** HIPAA Compliant (caduceus) · GDPR (stars circle).
-> Records the live site as it is. **Do not reuse the "HIPAA Compliant" label in new designs or copy:** the live trust FAQ (2026-09-16) states HIPAA is a framework, not a certification (`brand-assets/product-info/compliance.md`). Use "HIPAA · BAA available" or the FAQ link; changing the live badge is Vadim's call.
+> **The badge stays on the site as is (Vadim, 2026-09-18)**, so footer designs keep it. It is a site element, not copy: in text (articles, pages, posts, outbound, decks) "HIPAA compliant" is still banned and the wording comes from `brand-assets/product-info/compliance.md` (live trust FAQ: HIPAA is a framework, not a certification).
 
 **Link section:** △ 3DLOOK logo (left) · **What We Do** (FitXpress · Mobile Tailor · Technology · Case Studies) · **About 3DLOOK** (About Us · Content Hub · Careers) · **Ready to get started?** with social icons (Facebook · Instagram · X · LinkedIn · YouTube). Column headers in muted blue-gray; links in white.
 

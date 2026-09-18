@@ -56,7 +56,7 @@ page it duplicates. Rewriting after publication is more expensive than deciding 
       article's
 - [ ] Performance and accessibility within threshold; checked at 375 / 768 / 1280 / 1440
 - [ ] One primary conversion action; analytics events verified firing manually, not assumed
-- [ ] Every `[marker]` replaced; alt text everywhere
+- [ ] Every `[marker]` replaced; alt text everywhere, and each alt describes what the image shows in plain words: no keyword borrowed from another page, no banned words, no em dash, ≤ 125 characters (the live trust FAQ shipped three alt texts built on the accuracy article's keyword, audit 2026-09-18)
 - [ ] `fact-sheet.md` written — the sources behind every number, and everything the judge cannot see
 
 ---
