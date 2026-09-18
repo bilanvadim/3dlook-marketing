@@ -1563,6 +1563,14 @@ def main(argv=None) -> int:
 
     ap.add_argument("--notify-on-failure", action="store_true",
                     help="push a Telegram message if this run fails (for cron)")
+    # Also accepted AFTER the subcommand. The crontab had it there (`pull-all
+    # --notify-on-failure`) and argparse rejected the line every night from 2026-09-02 to
+    # 09-17: sixteen pulls that never ran, and the one flag that would have said so was the
+    # one that broke. SUPPRESS keeps a subparser that did not see the flag from resetting
+    # the value the top-level parser already parsed.
+    for sp in sub.choices.values():
+        sp.add_argument("--notify-on-failure", action="store_true", default=argparse.SUPPRESS,
+                        help="same as the top-level flag")
     args = ap.parse_args(argv)
     try:
         rc = args.func(args)
