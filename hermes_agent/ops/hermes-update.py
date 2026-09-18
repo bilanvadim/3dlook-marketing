@@ -169,6 +169,22 @@ def _fingerprint():
     return h.hexdigest()
 
 
+APPROVED_ALLOWLIST = f"{HOME}/3dlook-marketing/hermes_agent/ops/approved-command-allowlist.txt"
+
+
+def _approved_allowlist():
+    """Exact command_allowlist entries Vadim approved (see the file's header).
+
+    A missing or unreadable file approves NOTHING, so the alert falls back to the strict
+    "must be empty" rule instead of going quiet."""
+    try:
+        with open(APPROVED_ALLOWLIST, encoding="utf-8") as f:
+            return {ln.strip() for ln in f if ln.strip() and not ln.lstrip().startswith("#")}
+    except OSError as e:
+        log(f"approved allowlist unreadable ({e}) — treating every entry as unapproved")
+        return set()
+
+
 def safety_audit():
     """Checks about the CURRENT config — deliberately independent of the update.
 
@@ -216,20 +232,28 @@ def safety_audit():
         with open(f"{HOME}/.hermes/config.yaml") as _f:
             _cfg = _yaml.safe_load(_f) or {}
         _mode = str((_cfg.get("approvals") or {}).get("mode", "")).strip().lower()
-        _allow = _cfg.get("command_allowlist") or []
-        log(f"approvals: mode={_mode or '(unset)'} allowlist={len(_allow)}")
+        _allow = [str(a) for a in (_cfg.get("command_allowlist") or [])]
+        # Five narrow command globs were approved on purpose (2026-09-18). Without this the
+        # alert fired every morning from 09-02 on the same deliberate entries — a daily
+        # false alarm is how a real "Always" click would have been scrolled past.
+        _approved = _approved_allowlist()
+        _unknown = [a for a in _allow if a not in _approved]
+        log(f"approvals: mode={_mode or '(unset)'} allowlist={len(_allow)} "
+            f"approved={len(_allow) - len(_unknown)} unknown={len(_unknown)}")
         if _mode != "smart":
             rl.telegram("⚠️ <b>Одобрения команд не в режиме smart</b>\n"
                         f"approvals.mode = <code>{_esc(_mode or '(не задан)')}</code>. "
                         "Опасные команды больше не проходят через судью и не спрашивают тебя.")
-        if _allow:
-            _items = "\n".join(f"• {a}" for a in _allow[:10])
+        if _unknown:
+            _items = "\n".join(f"• {a}" for a in _unknown[:10])
             rl.telegram("⚠️ <b>В command_allowlist появились вечные разрешения</b>\n"
                         "Это КАТЕГОРИИ опасных команд, разрешённые навсегда (обычно — "
                         "кнопка «Always» в чате). Проверь, что там не лежит правка "
                         "собственных файлов Hermes:\n"
                         f"<pre>{_esc(_items)}</pre>"
-                        "Убрать: <code>command_allowlist: []</code> в ~/.hermes/config.yaml")
+                        "Убрать эти строки из <code>command_allowlist</code> в ~/.hermes/config.yaml "
+                        "(одобренные — в <code>hermes_agent/ops/approved-command-allowlist.txt</code> "
+                        "— не трогать).")
     except Exception as e:
         log(f"approvals watch failed: {e}")
 

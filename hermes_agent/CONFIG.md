@@ -269,6 +269,10 @@ approvals:
   три вектора, которыми агент однажды дописал себе исключение в SOUL.md. Вычищено;
   утренний `hermes-update.py` теперь алертит в Telegram, если там что-то появилось,
   и если `mode` перестал быть `smart`. В чате жать **Once/Session**, не «Always».
+  **Единственное исключение** — `hermes_agent/ops/approved-command-allowlist.txt`
+  (одобрено Вадимом 2026-09-18): пять узких командных глобов для outbound-скриптов.
+  Утренний алерт и `bootstrap/verify.sh` сверяют `command_allowlist` с этим файлом по
+  точной строке и шумят только о том, чего в нём нет. Новое исключение — сначала в файл.
 - **Защитный floor работает при ЛЮБОМ mode** (даже `off`): Hardline-блоклист
   (`rm -rf /`, перезапись блок-устройств, `shutdown`/`reboot`, DoS) и sensitive-write
   таргеты (`~/.hermes/config.yaml`, `~/.hermes/.env`, `~/.ssh`, shell-rc, `.netrc`/`.pgpass`,

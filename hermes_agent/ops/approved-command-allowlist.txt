@@ -1,0 +1,24 @@
+# approved-command-allowlist.txt — the ONLY entries allowed to sit in
+# `command_allowlist` of ~/.hermes/config.yaml without raising an alarm.
+#
+# The rule in hermes_agent/CONFIG.md is still "keep command_allowlist empty": an
+# "Always" click writes a whole CATEGORY of dangerous commands there, forever.
+# These five are the deliberate exception, approved by Vadim on 2026-09-18. They are
+# narrow command globs, not categories: Hermes matches them with fnmatch against the
+# full command and rejects any command containing a shell operator, so
+# `outbound-pipeline.py* ; rm …` does not ride along. They let the manager run the
+# read-mostly outbound gate scripts without an approval prompt per call (the carve-out
+# added 2026-09-02, see marketing_vb/scripts/outbound-pipeline.py).
+#
+# Read by: hermes_agent/ops/hermes-update.py (morning safety_audit)
+#          bootstrap/verify.sh               (Barrier section)
+# Both compare EXACT strings. Anything in config.yaml that is not listed here is
+# reported, and so is an entry listed here that is no longer in config.yaml
+# (verify.sh only — a stale approval is a list nobody reads any more).
+# One entry per line; blank lines and lines starting with # are ignored.
+
+python3 /home/vadim_prod/3dlook-marketing/marketing_vb/scripts/search-health.py*
+python3 /home/vadim_prod/3dlook-marketing/marketing_vb/scripts/web-verify.py verify*
+python3 /home/vadim_prod/3dlook-marketing/marketing_vb/scripts/outbound-pipeline.py*
+python3 /home/vadim_prod/3dlook-marketing/marketing_vb/scripts/outbound-registry.py status
+python3 /home/vadim_prod/3dlook-marketing/marketing_vb/scripts/outbound-registry.py check*
