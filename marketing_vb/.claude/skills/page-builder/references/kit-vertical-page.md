@@ -81,9 +81,14 @@ second negation onto it.
 here and why: consent capture, retake logic, who reviews a flagged scan, how the record is filed.
 
 **8. Compliance and data governance** — for regulated verticals this is the deciding block, not a
-footnote: HIPAA and GDPR posture, encryption at rest (AWS S3 SSE-S3), photo retention (immediate or
-within 30 days per customer policy), no personal identifiers processed, consent handling, audit
-trails, `privacy@3dlook.me`. Source: `compliance.md` and `CLAUDE.md` §12. Every control is stated
+footnote: HIPAA support under a BAA, GDPR roles in a DPA, encryption (TLS in transit, SSE-S3 at
+rest), hosting (AWS US-West-2 / US-East-1), photo retention (immediate or within 30 days per customer
+policy, retained photos blurred), outputs stored and deletable by scan ID, records tied to random IDs,
+consent handling, audit trails, and a link to the
+[trust FAQ](https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/) for the
+full answers. Source: `compliance.md` (rebuilt 2026-09-18 from that FAQ) and `CLAUDE.md` §12. Never
+"HIPAA compliant", "SOC 2 certified" or "no personal identifiers" (detector category
+`compliance_status`). Every control is stated
 with its limit — controls reduce risk, they do not remove the need for capture instructions and
 deployment thresholds (guardrail #5).
 

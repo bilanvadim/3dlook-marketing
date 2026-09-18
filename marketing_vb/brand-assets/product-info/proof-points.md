@@ -129,13 +129,21 @@
 
 | Claim | Detail | Source |
 |-------|--------|--------|
-| HIPAA compliance | Maintained | FitXpress security commitment |
-| GDPR | Follows GDPR principles | Same. **Roles, when the content states them, use the canonical sentence verbatim: "In most enterprise deployments, the customer acts as controller and 3DLOOK acts as processor under GDPR."** `compliance.md` §GDPR roles, Vadim 2026-09-07 |
+| HIPAA | Supports HIPAA-governed deployments where 3DLOOK acts as a business associate under an executed BAA. Framework, not a certification: never "HIPAA compliant" | Live trust FAQ (2026-09-16), via `compliance.md` §1 |
+| GDPR | **Verbatim: "In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR."** DPA with SCCs; UK Addendum where UK GDPR applies | Same, `compliance.md` §2 |
+| CCPA / CPRA | Service provider or contractor; no sale of personal information | Same |
+| SOC 2 | Working toward a SOC 2 Attestation Report; initial readiness assessment completed. **Not certified** | Same |
+| UK / EU MDR | Independent regulatory assessment: not a medical device under UK MDR / EU MDR (current intended purpose) | Same |
+| FDA | Not cleared, authorized or approved; no representation on whether it is required | Same |
 | Encryption in transit | TLS | Same |
-| Encryption at rest | AWS S3 SSE-S3, always on | Same |
-| Photo retention | Immediate delete OR within 30 days per client policy | Same |
-| Photo blur on storage | Auto-applied when stored | Same |
-| Personal identifier processing | None | Same |
+| Encryption at rest | Amazon S3 SSE-S3 (S3-managed keys), on by default, cannot be disabled | Same |
+| Hosting | AWS, primarily US-West-2, partially US-East-1 | Same |
+| Photo retention | Deleted immediately after processing OR within 30 days, per customer policy | Same |
+| Photo blur / face obfuscation | Retained photos auto-blurred; face obfuscation at capture | Same |
+| Output retention | Measurements, body composition, 3D models stored on an ongoing basis unless the agreement says otherwise; deletion by scan identifier | Same |
+| Identifiers | Scan records carry random, anonymized IDs; 3DLOOK cannot identify an individual from stored scan records. (Replaces "personal identifier processing: none", retired 2026-09-18) | Same |
+| AI training | Production customer data not used to train models | Same |
+| Scan speed | Structured outputs in under 45 seconds | Same |
 
 ## Pricing (FitXpress)
 

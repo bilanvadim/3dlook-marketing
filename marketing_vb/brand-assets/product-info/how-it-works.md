@@ -50,14 +50,16 @@ Two integration patterns:
 
 ## Photo and data handling
 
-- Photos sent over TLS, stored on AWS S3 with mandatory SSE-S3 server-side encryption
-- Photos deleted immediately after processing or within 30 days, per client policy
-- When stored, photos are automatically blurred for additional privacy
-- No personal identifiers / contact details processed — photos cannot be linked to individuals
-- HIPAA compliant (US healthcare), follows GDPR principles (EU)
-- GDPR roles, canonical sentence, use verbatim when content states the allocation: "In most enterprise deployments, the customer acts as controller and 3DLOOK acts as processor under GDPR." (`compliance.md` §GDPR roles, Vadim 2026-09-07)
-- Privacy contact: privacy@3dlook.me
-- Not a medical device — no medical device certifications applicable, since FitXpress does not provide medical advice / diagnosis / treatment recommendations
+> Source: the live [Data, Privacy, Security & Regulatory FAQ](https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/) via `compliance.md` (rebuilt 2026-09-18). Full wording and the "never say" list live there.
+
+- Data travels over TLS; data in Amazon S3 is encrypted with SSE-S3 (S3-managed keys), on by default. Hosting: AWS, primarily US-West-2, partially US-East-1
+- Photos deleted immediately after processing or within 30 days, per customer policy; retained photos are automatically blurred and faces are obfuscated at capture
+- Measurements, body composition estimates and 3D models are stored on an ongoing basis unless the customer agreement says otherwise; deletion is requested by scan identifier
+- Scan records carry anonymized, randomly generated IDs; 3DLOOK cannot identify an individual from stored scan records. Body Progress compares two customer-selected scans; 3DLOOK does not track individuals
+- HIPAA: supports HIPAA-governed deployments under an executed BAA (framework, not a certification). GDPR: "In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR." DPA with SCCs, UK Addendum where UK GDPR applies
+- SOC 2: working toward an attestation report (not certified). Production customer data is not used to train models
+- Regulatory: independent assessment, not a medical device under UK MDR / EU MDR; not cleared, authorized or approved by the FDA
+- Contacts: documentation requests legal@3dlook.me; end-user privacy privacy@3dlook.me
 
 ## Training data foundation
 

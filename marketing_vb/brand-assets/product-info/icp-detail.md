@@ -595,7 +595,7 @@ Across both products, do NOT pursue:
 For IT/technical audience, messages focus on:
 - API/SDK simplicity and documentation quality
 - Time-to-integrate (typical: 2-4 weeks for basic integration)
-- HIPAA/GDPR compliance architecture (data processed, not stored; photos deleted after measurement extraction)
+- Privacy architecture per the live trust FAQ (`compliance.md`): BAA-backed HIPAA support, GDPR controller/processor roles in a DPA, photos deleted after processing or within 30 days, outputs stored and deletable by scan ID, records tied to random IDs
 - Scalability and reliability (99.9% uptime SLA)
 - No ML expertise required — the model is pre-trained and accessed via API
 - Free trial: 200 requests / 1 month for technical evaluation

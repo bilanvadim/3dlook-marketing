@@ -17,7 +17,7 @@ what is enforced, which is the point: read it instead of `ai-tells-sweep.md` (18
 no regex can decide (corrective negation, corrective "rather than", `we/our`, `you`,
 vendor blogs as citations) and for the reasoning behind each rule.
 
-**13 hard categories, 85 patterns.**
+**14 hard categories, 93 patterns.**
 
 ### banned_words
 
@@ -92,6 +92,12 @@ IEEE wording the terminology Doc retires after IEEE raised it with 3DLOOK: `IEEE
 A bare ">X%" with no methodology behind it (editorial guardrail #4).
 
 **Instead:** Give the reference method and the conditions, or write "available under a non-disclosure agreement".
+
+### compliance_status
+
+Compliance statuses the live trust FAQ (2026-09-16) contradicts: "HIPAA compliant" / "HIPAA certified" (a framework, not a certification), "SOC 2 certified/compliant" (attestation in progress), "FDA-cleared/approved", "no personal identifiers/data", "processed, not stored".
+
+**Instead:** Verbatim from compliance.md: "supports HIPAA-governed deployments under an executed BAA", "working toward a SOC 2 Attestation Report", "not cleared, authorized, or approved by the FDA", "scan records carry random IDs". Or link the FAQ.
 
 ### claims_discipline
 

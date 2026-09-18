@@ -140,6 +140,15 @@ CARD = {
         "Give the reference method and the conditions, or write \"available under a "
         "non-disclosure agreement\".",
     ),
+    "compliance_status": (
+        "Compliance statuses the live trust FAQ (2026-09-16) contradicts: \"HIPAA compliant\" / "
+        "\"HIPAA certified\" (a framework, not a certification), \"SOC 2 certified/compliant\" "
+        "(attestation in progress), \"FDA-cleared/approved\", \"no personal identifiers/data\", "
+        "\"processed, not stored\".",
+        "Verbatim from compliance.md: \"supports HIPAA-governed deployments under an executed BAA\", "
+        "\"working toward a SOC 2 Attestation Report\", \"not cleared, authorized, or approved by "
+        "the FDA\", \"scan records carry random IDs\". Or link the FAQ.",
+    ),
     "claims_discipline": (
         "Claims about-me.md forbids outright: diagnosis, decisioning, replacing a clinician or "
         "a reference method, guaranteed compliance, automatic fraud detection.",
@@ -310,6 +319,20 @@ HARD_EN = {
     "bare_percentage": [
         r"[>≥<≤]\s*\d{1,3}(\.\d+)?\s*%",
         r"\bup\s+to\s+\d{1,3}(\.\d+)?\s*%",
+    ],
+    # compliance statuses the live trust FAQ contradicts (compliance.md, rebuilt 2026-09-18 from
+    # https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/). Negation-
+    # aware: "3DLOOK is not SOC 2 certified" and the FAQ heading "Is 3DLOOK SOC 2 certified?" are
+    # the correct forms and must not fire.
+    "compliance_status": [
+        r"\bHIPAA[- ](?:compliant|certified|certification)\b",
+        r"\bcompliant\s+with\s+HIPAA\b",
+        r"\bSOC\s*2[- ](?:type\s*(?:ii|2|i|1)[- ])?(?:certified|compliant)\b",
+        r"\bGDPR[- ]certified\b",
+        r"\bFDA[- ](?:cleared|approved|registered)\b",
+        r"\b(?:zero|no)\s+personal\s+(?:identifiers|data)\s+(?:processed|stored)\b",
+        r"\bprocess(?:es)?\s+(?:zero|no)\s+personal\s+(?:identifiers|data)\b",
+        r"\bprocessed,?\s+not\s+stored\b",
     ],
     # claims discipline — CLAUDE.md section 12 / positioning bans
     "claims_discipline": [
@@ -685,7 +708,7 @@ def in_question(text: str, start: int) -> bool:
 
 
 # Categories where a negated hit is the compliant phrasing, so it must not be reported.
-NEGATION_AWARE = {"claims_discipline", "reserved_words"}
+NEGATION_AWARE = {"claims_discipline", "reserved_words", "compliance_status"}
 
 
 def find_matches(text: str, patterns: dict, line_offset: int = 0) -> dict:

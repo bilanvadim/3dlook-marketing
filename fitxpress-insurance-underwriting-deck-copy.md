@@ -957,7 +957,7 @@ Sort by date, gender, height, weight, age, or result. Filter by gender, date, or
 Export to CSV
 
 **Feature 4 — Description:**
-Bulk-select one or many records and download as CSV. All scans are fully anonymized.
+Bulk-select one or many records and download as CSV. Scan records carry anonymized IDs.
 
 ---
 
@@ -1030,7 +1030,7 @@ Data Handling
 ---
 
 **Controls section — Point 1:**
-Photos are used exclusively to generate measurements and body models — not retained, not used for model training, not shared.
+Photos are used to generate measurements and body models, then deleted immediately after processing or within 30 days under the insurer's policy. Production customer data is not used for model training.
 
 **Controls section — Point 2:**
 Encryption in transit and at rest
@@ -1042,10 +1042,10 @@ Configurable retention and deletion policies (insurer-defined)
 Logging options include scan status, timestamps, quality flags, and failure reasons
 
 **Controls section — Point 5:**
-HIPAA — we support BAAs and provide documentation for security review.
+HIPAA: BAA available for qualifying deployments; security documentation under NDA.
 
 **Controls section — Point 6:**
-GDPR-aligned privacy principles
+GDPR: in most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor.
 
 **Controls section title:**
 Controls & Compliance
@@ -1548,3 +1548,5 @@ Confidential & Proprietary [CONFIRM CURRENT MONTH/YEAR]
 - The insurance article states FitXpress outputs 80+ external body measurements, BMI insights, and weight prediction. Confirm whether "weight prediction" is an approved capability to list in marketing materials.
 - The article states the scan flow takes "~45 seconds" while the reference deck says "Results in under a minute" and "Results in Under 45 Seconds." Confirm the approved claim language.
 - The article contains a disclaimer that "Mobile 3D body scanning can support underwriting workflows and evidence collection, but it does not provide diagnoses, replace required medical evaluations, or make clinical judgments." Confirm whether this disclaimer should be included on any slides (e.g., Slide 4 or Slide 17).
+
+> **2026-09-18:** four data-handling lines (Feature 4, Controls points 1, 5, 6) were aligned with the live trust FAQ (`marketing_vb/brand-assets/product-info/compliance.md`): photos can be kept up to 30 days, "not shared" dropped (the FAQ lists subprocessors), "fully anonymized" narrowed to anonymized IDs, GDPR stated as roles. If the deck was already exported, the same four lines need changing in the design file.

@@ -343,7 +343,10 @@ def gate_banned(body: str, pack):
         "most accurate body scanning": r"most accurate body[- ]scanning",
         "guaranteed compliance": r"(?<!not )(?<!does not )guarantees?\s+(?:\w+\s+){0,2}complian|makes?\s+you\s+compliant",
         "FDA-cleared": r"fda[- ]cleared",
-        "SOC 2": r"soc\s*2",
+        # Scoped to the asserted status (2026-09-18). The bare "soc 2" core failed the live trust
+        # FAQ's own sentence, "working toward obtaining a SOC 2 Attestation Report".
+        "SOC 2 certified": r"(?<!not )(?<!not yet )soc\s*2[- ](?:type\s*(?:ii|2|i|1)[- ])?(?:certified|compliant)",
+        "HIPAA compliant": r"(?<!not )hipaa[- ](?:compliant|certified)",
         "automatic fraud detection": r"(?<!not )detects?\s+fraud|automatic\w*\s+fraud\s+detect",
     }
     for label, core in CORES.items():

@@ -15,6 +15,9 @@ Write sections 13-14 and the complete FAQ section for the FitXpress Data, Privac
 - Brand voice: /home/vadim_prod/3dlook-marketing/marketing_vb/about-me.md
 - Project context: /home/vadim_prod/3dlook-marketing/marketing_vb/CLAUDE.md
 
+
+> **2026-09-18: the article this agent wrote is live** — https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/ (captured in `workspace/seo/articles/2026-07-14-fitxpress-privacy-security-faq/published-live-2026-09-18.md`). The live page is now the source of truth for every fact below (Vadim), and `brand-assets/product-info/compliance.md` is its operational digest. For a refresh, start from the live capture, not from `v2-claude/`. Where a bullet below and the live page disagree, the live page wins.
+
 ## Sections to write
 
 ### Section 13: What should an enterprise confirm before implementation?
@@ -34,7 +37,7 @@ Each point = 1-2 concise sentences. Not a full compliance guide.
 
 ### Section 14: How can procurement, legal, or security teams request additional information?
 - List documents available: security docs, DPA, BAA, pen-test summary, architecture diagrams, subprocessor info, regulatory confirmation
-- Contact route: enterprise procurement channel or privacy@3dlook.me
+- Contact route: enterprise procurement channel or legal@3dlook.me (the live FAQ's address for documentation requests; privacy@3dlook.me stays the end-user privacy contact)
 - Security files shared under NDA only — not published on page
 
 ### FAQ Section (13 questions)
@@ -48,10 +51,10 @@ Compile concise answers matching the article content:
 7. Does 3DLOOK use customer data to train AI models?
 8. Who owns the photos, measurements, body composition data, and 3D models?
 9. How does 3DLOOK protect FitXpress data?
-10. Is FitXpress HIPAA compliant?
+10. How does FitXpress support HIPAA? (never answer "yes, HIPAA compliant": HIPAA is a framework, not a certification)
 11. How does FitXpress support GDPR and CCPA/CPRA compliance?
 12. Is 3DLOOK SOC 2 certified?
-13. Is FitXpress FDA approved or regulated as a medical device?
+13. What is FitXpress's regulatory status with the FDA, and is it a medical device under the UK or EU MDR?
 
 Each answer: 2-4 sentences. Direct answer first. Use schema-ready format.
 

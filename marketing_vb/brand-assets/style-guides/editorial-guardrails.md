@@ -30,7 +30,7 @@ Whenever you describe a control or safeguard, state its limit: controls **reduce
 
 ## 6. Medical / regulatory framing: state the boundary directly, never "does not apply"
 
-Use **"FitXpress is not a medical device."** Frame compliance as built on data-privacy frameworks (HIPAA, GDPR, SOC 2 where applicable) instead of medical-device frameworks. Do not assert that a regulatory framework categorically "does not apply."
+Use **"FitXpress is not a medical device."** Frame compliance through data-privacy frameworks and contracts (HIPAA support under a BAA, GDPR roles in a DPA, CCPA/CPRA service-provider role) instead of medical-device frameworks. SOC 2 is an attestation 3DLOOK is still working toward, never a current status. Where the regulatory position itself is the point, use the live trust FAQ's wording from `brand-assets/product-info/compliance.md` (independent assessment: not a medical device under UK MDR / EU MDR; not cleared, authorized or approved by the FDA). Do not assert that a regulatory framework categorically "does not apply."
 
 For intended-use boundaries, the standard sentence is: **"FitXpress does not diagnose conditions, make clinical decisions, or determine treatment eligibility."** Where the boundary needs a supportive half, pair it: *"FitXpress supports clinician review; it is not a diagnostic tool."*
 

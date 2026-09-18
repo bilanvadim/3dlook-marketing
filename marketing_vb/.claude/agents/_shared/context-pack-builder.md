@@ -152,13 +152,16 @@ context_pack:
       text: "Yazen: 34,000 scans in 2025"
       source: "Internal customer data"
     - id: FX-005
-      text: "HIPAA-compliant, GDPR-aligned"
-      source: "Security commitment"
+      text: "FitXpress can support HIPAA-governed deployments where 3DLOOK acts as a business associate under an executed BAA."
+      source: "Live trust FAQ 2026-09-16, via compliance.md §1 (verbatim FAQ wording only; never 'HIPAA-compliant')"
 
   banned_claims:
     - "most accurate body scanning"
     - "guaranteed compliance"
     - "FDA-cleared"
+    - "HIPAA compliant / HIPAA certified"
+    - "SOC 2 certified"
+    - "processes no personal data / no personal identifiers"
     - "medical device"
     - any number not in approved_claims
 

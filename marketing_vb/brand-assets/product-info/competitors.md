@@ -47,7 +47,7 @@
 - No apparel / MTM business
 
 **How we differentiate:**
-- Enterprise-grade compliance (HIPAA, GDPR, audit logs)
+- Enterprise-grade privacy and security (BAA-backed HIPAA support, GDPR roles in a DPA, audit logs)
 - Verified body data (Smart Scales mismatch detection) for fraud / eligibility — Bodygram doesn't have this
 - White-label depth
 

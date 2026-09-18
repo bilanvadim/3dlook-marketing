@@ -96,7 +96,7 @@ These are the recurring formulations across the corpus that constitute "our voic
 
 **Compliance vocabulary (FX):**
 
-16. `HIPAA compliance and adheres to GDPR principles`
+16. `HIPAA compliance and adheres to GDPR principles` — *corpus phrase, retired 2026-09-18: HIPAA is a framework, not a certification. New copy uses `compliance.md` (rebuilt from the live trust FAQ): "supports HIPAA-governed deployments under an executed BAA", the GDPR controller/processor sentence.*
 17. `Images are blurred, used only to generate scan results, and deleted immediately after processing`
 18. `encrypted in transit and at rest, with role-based access controls`
 19. `auditable digital trail per case` / `audit-ready evidence`

@@ -72,6 +72,10 @@ What the editor did with our long sentences, most frequent move first.
 The wording of that paragraph changed along with its shape. Reuse the shape, not the wording:
 `compliance.md` stays as it is for now (Vadim, 2026-09-11), so the BAA, retention and
 personal-identifier facts keep its wording.
+**Superseded 2026-09-18:** `compliance.md` was rebuilt from the live trust FAQ, and it now agrees
+with this final on the substance (outputs retained per the deployment terms, BAA for qualifying
+deployments, no "processes no personal identifiers"). The GDPR sentence adds "the data" before
+controller and processor. Take the wording from `compliance.md`.
 
 **A list of conditions becomes bullets under an H3.**
 
@@ -242,7 +246,8 @@ The final departed from repo canon on four points. Vadim's calls:
   `detect-ai-tells.py`).
 - **Compliance wording** (BAA "available on request", output retention, the dropped "processes no
   personal identifiers" and 30-day photo window): `compliance.md` is **not** changed for now. New
-  drafts keep its wording.
+  drafts keep its wording. *Superseded 2026-09-18: `compliance.md` was rebuilt from the live trust
+  FAQ (Vadim), and new drafts take that wording.*
 - **Disability limitation:** approved and added to `proof-points.md` and
   `accuracy-formulations.md` §5.
 - **Primary keyword in the first paragraph:** no longer required. `article_lint.py` gate 7 fails

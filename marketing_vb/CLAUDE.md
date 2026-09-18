@@ -183,7 +183,7 @@ company, ~8 КБ у пяти личных вместо 17,6 КБ мастера)
 - «Furthermore / Moreover / Additionally» в начале предложений (минимизировать)
 
 > **Операционный источник для агента — сгенерированная карточка, не эта таблица.**
-> `brand-assets/style-guides/hard-bans-card.md` (~5,3 КБ, 13 категорий) рендерится скриптом
+> `brand-assets/style-guides/hard-bans-card.md` (~5,8 КБ, 14 категорий; с 2026-09-18 — `compliance_status` из trust-FAQ) рендерится скриптом
 > `scripts/bans-card.py` прямо из паттернов `detect-ai-tells.py`, поэтому разойтись с тем,
 > что реально гейтится, она не может. Таблица ниже — читаемое резюме для человека, и она
 > может отстать: аудит 2026-09-02 нашёл эти правила в четырёх местах при одном исполнителе,
@@ -344,18 +344,42 @@ qc-prompt · qc-plan · manifest · digest · report · scores) и `scripts/post
 
 ## 12. Compliance
 
-- **HIPAA compliant** — для FitXpress в US healthcare контекстах
-- **GDPR** — следуем принципам GDPR; **каноническая фраза про роли, дословно:** «In most
-  enterprise deployments, the customer acts as controller and 3DLOOK acts as processor under
-  GDPR.» (решение Вадима 2026-09-07, источник — `brand-assets/product-info/compliance.md`,
-  секция «GDPR roles»). Хедж «In most enterprise deployments» — часть фразы, не срезается.
-  Article 28 DPA, SCC, UK Addendum и Article 9 этим решением **не** одобрены
-- **AWS S3 SSE-S3 encryption** для всех данных
-- **Photos удаляются** immediately или within 30 days (по политике клиента)
-- **Не процессим personal identifiers**
-- **Privacy contact:** privacy@3dlook.me
+**Источник правды — живая [FAQ-статья](https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/)
+(опубл. 2026-09-16), решение Вадима 2026-09-18: «самая точная информация, обнови везде».** Операционная
+выжимка с формулировками «говори / никогда не говори» — `brand-assets/product-info/compliance.md`;
+дословная копия страницы — `workspace/seo/articles/2026-07-14-fitxpress-privacy-security-faq/published-live-2026-09-18.md`.
+В контенте ставь короткую контекстную заметку и **ссылку на FAQ**, ответы FAQ не пересказывай.
 
-В outbound и контенте — compliance points критичны для insurance, telehealth, clinical trials аудитории.
+- **HIPAA — это рамка, не сертификат.** Пиши: «FitXpress can support HIPAA-governed deployments where
+  3DLOOK acts as a business associate under an executed BAA». BAA — для qualifying enterprise
+  deployments. **«HIPAA compliant» / «HIPAA-compliant» / «HIPAA certified» — запрещено.**
+- **GDPR — каноническая фраза, дословно:** «In most enterprise deployments, the customer acts as the
+  data controller and 3DLOOK acts as the data processor under GDPR.» (формулировка FAQ, заменила
+  вариант 2026-09-07 без «the data»; хедж не срезается). DPA с SCC и UK Addendum теперь можно называть
+  — FAQ их публикует. «Article 28» / «Article 9» номерами — нет.
+- **CCPA/CPRA:** 3DLOOK — service provider or contractor; не продаёт персональные данные.
+- **SOC 2 — НЕ сертифицированы:** «working toward obtaining a SOC 2 Attestation Report», initial
+  readiness assessment пройден. «SOC 2 certified / compliant» — запрещено.
+- **Medical device:** независимая регуляторная оценка — FitXpress не подпадает под определение medical
+  device по UK MDR и EU MDR (для текущего intended purpose). Короткая форма — «FitXpress is not a medical
+  device.» **FDA:** not cleared, authorized, or approved; 3DLOOK не утверждает, нужна ли клиренс
+  конкретному клиенту. «Сертификации не применимы» / «FDA does not apply» — нельзя.
+- **Хранение:** AWS, основной регион US-West-2, частично US-East-1. TLS в пути, SSE-S3 (ключи S3) в
+  покое, включено всегда.
+- **Фото** удаляются сразу после обработки или в течение 30 дней (по политике клиента); сохранённые
+  фото автоматически размываются, лицо скрывается ещё при съёмке. **Измерения, body composition и
+  3D-модели хранятся бессрочно** (если договор не говорит иначе) — «processed, not stored» писать нельзя.
+- **Идентификаторы:** скан-записи привязаны к случайным ID, 3DLOOK не может опознать человека по
+  сохранённым данным. «Не процессим personal identifiers» / «no personal data» — **больше не пишем**:
+  фото и измерения могут быть персональными данными. Body Progress сравнивает два скана, выбранные
+  клиентом; **3DLOOK не отслеживает людей** — не пиши «FitXpress tracks each patient over time».
+- **AI training:** production-данные клиентов на обучение моделей не идут (без явного письменного
+  разрешения клиента).
+- **Контакты:** документы для procurement/legal/security — `legal@3dlook.me`; privacy-права конечных
+  пользователей — `privacy@3dlook.me` (так в Privacy Policy).
+
+В outbound и контенте — compliance points критичны для insurance, telehealth, clinical trials
+аудитории; готовые строки для outbound и соцсетей — `compliance.md` §9.
 
 ---
 

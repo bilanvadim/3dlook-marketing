@@ -29,7 +29,7 @@ tools: Read, Write, Bash, WebSearch, WebFetch, Grep
 - **FAQ (§14):** пиши FAQ-секцию из плана; ответы 2-5 предложений, direct, GEO/AEO-friendly. Обязательно включи «What does FitXpress not do?» и «Is this used for decisioning?» где relevant.
 - **CTA (§15):** ровно тот тип CTA, что задан intent'ом в плане (soft / evaluation / direct). Не форси demo-CTA в TOFU-статью.
 - **Accuracy (§10):** при обсуждении точности не своди к одному числу — квалифицируй (для какого decision / против какого reference / под каким protocol / для какой population / с каким tolerance) и линкуй на accuracy framework.
-- **Compliance-claims:** любое утверждение про HIPAA/GDPR/CCPA/SOC 2/FDA — только из approved_claims и с пометкой на review (legal/product/security), не изобретай статусы.
+- **Compliance-claims:** любое утверждение про HIPAA/GDPR/CCPA/SOC 2/FDA/хранение/удаление — только дословно из `brand-assets/product-info/compliance.md` (выжимка живой trust-FAQ, 2026-09-18) или из approved_claims; такие формулировки уже согласованы. Всё, чего там нет, — на review (legal/product/security), статусы не изобретай. «HIPAA compliant», «SOC 2 certified», «no personal data» — FAIL. В вертикальной статье — короткая заметка и ссылка на FAQ, не пересказ.
 
 ## Принцип: facts → copy
 

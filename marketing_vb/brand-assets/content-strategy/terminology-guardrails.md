@@ -322,8 +322,9 @@ where the word is allowed.
 | **Use instead** | Name the actual actor or context: **organization, program, provider, clinic, employer, operator, procurement team, decision-maker, person being screened** |
 
 - The canonical GDPR sentence (CLAUDE.md §12) stays valid, because "customer" there names a legal
-  role: *"In most enterprise deployments, the customer acts as controller and 3DLOOK acts as
-  processor under GDPR."*
+  role: *"In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts
+  as the data processor under GDPR."* (Project note: the live trust FAQ's wording since 2026-09-18,
+  which added "the data".)
 - "Buyer's guide" as an article type and "buying criteria" sections are procurement contexts, so
   "buyer" is allowed there.
 

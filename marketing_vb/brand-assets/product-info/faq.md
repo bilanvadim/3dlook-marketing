@@ -18,20 +18,25 @@ A: Yes — training data spans ages 16-78, weight 38-210 kg, height 150-220 cm, 
 
 ## Privacy & Security
 
+> Answers follow the live [Data, Privacy, Security & Regulatory FAQ](https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/) (2026-09-18). More answers: `compliance.md` §10.
+
 **Q: Where is data stored?**
-A: AWS S3, encrypted at rest with mandatory SSE-S3 (always on). TLS in transit.
+A: On AWS, primarily US-West-2 and partially US-East-1. Data in Amazon S3 is encrypted with SSE-S3 (S3-managed keys), on by default; TLS in transit.
 
 **Q: How long do you keep photos?**
-A: Either deleted immediately after processing, or within 30 days — your choice. When stored, photos are auto-blurred.
+A: Deleted immediately after processing, or within 30 days under your policy. Retained photos are automatically blurred, and faces are obfuscated at capture. Measurements and 3D models are kept on an ongoing basis unless the agreement says otherwise.
 
 **Q: Are you HIPAA compliant?**
-A: Yes, FitXpress is HIPAA-compliant. We follow GDPR principles for EU. We sign BAAs.
+A: HIPAA is a framework, not a certification. FitXpress can support HIPAA-governed deployments where 3DLOOK acts as a business associate under an executed BAA. Under GDPR, in most enterprise deployments the customer is the data controller and 3DLOOK the data processor.
+
+**Q: Are you SOC 2 certified?**
+A: Not yet. 3DLOOK is working toward a SOC 2 Attestation Report and has completed an initial readiness assessment; security documentation is available under NDA.
 
 **Q: Do you train on our customers' photos?**
-A: No. Photos sent through your tenant are deleted per retention policy and not used to train the model.
+A: No. 3DLOOK does not use production customer data to train its models.
 
 **Q: Are you a medical device?**
-A: No — we don't provide medical advice, diagnosis, or treatment recommendations. Medical device certifications don't apply.
+A: An independent regulatory assessment concluded FitXpress does not meet the definition of a medical device under the UK MDR or EU MDR. It is not cleared, authorized or approved by the FDA, and 3DLOOK makes no representation on whether clearance is needed for a specific use case.
 
 **Q: Can we use this for clinical decisions?**
 A: We provide an information layer (body data). Your clinical workflows / providers make decisions. We're not a substitute for clinical assessment.
@@ -73,7 +78,7 @@ A: Failed-due-to-pose scans are not billable. Successful scans are billed, regar
 A: They're focused on clinical body composition, especially for GLP-1 / population health. We have broader workflow integration depth, two-product portfolio (FX + MT), and stronger compliance posture for regulated workflows.
 
 **Q: How do you compare to Bodygram?**
-A: Bodygram is well-priced for SMB trainers / dieticians. We're enterprise-grade — HIPAA, audit logs, white-label depth, fraud detection (Smart Scales mismatch). Different fit.
+A: Bodygram is well-priced for SMB trainers / dieticians. We're enterprise-grade — BAA-backed HIPAA support, audit logs, white-label depth, fraud detection (Smart Scales mismatch). Different fit.
 
 **Q: What if Apple / Google launches body measurement primitives?**
 A: We don't lead with "best model" — we lead with workflow integration, audit logs, longitudinal tracking, and compliance. Apple/Google won't ship those workflows. They might commoditize one input, but they won't replace the trusted layer above it.

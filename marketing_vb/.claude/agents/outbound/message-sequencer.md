@@ -143,7 +143,7 @@ Plus агрегированный `workspace/outbound/campaigns/{campaign}/messa
 4. **Никогда не привязывайся к уровню детализации, которого нет.** Если в profile_summary не написано «недавно говорил на конференции X» — не выдумывай.
 5. **Все цифры — только из `proof-points.md`.** Не округляй до «промо-вида», не говори «10x faster». Если число не в proof-points — STOP.
 6. **Анти-positioning из `messaging.md`** — НЕ лидируй с «most accurate scanning». Лидируй с outcome.
-7. **Compliance mention обязателен** если ICP в insurance / healthcare / clinical / online pharmacy. Минимум одно упоминание HIPAA/GDPR в одном из двух сообщений.
+7. **Compliance mention обязателен** если ICP в insurance / healthcare / clinical / online pharmacy. Ровно одна строка в одном из двух сообщений, **дословно из `compliance.md` §9** (вариант US/health или UK/EU по рынку профиля). «HIPAA compliant», «SOC 2 certified», «process zero personal identifiers» — запрещено с 2026-09-18 (живая trust-FAQ: HIPAA — рамка, не сертификат; SOC 2 ещё нет; фото и измерения могут быть персональными данными).
 8. **No-go list из CLAUDE.md и `messaging.md`** применяется. Banned words: leverage, utilize, harness, robust, seamless, comprehensive, delve, navigate (метаф.), tapestry, realm.
 9. **Tone — Вадима лично** (это его outbound). Тон в `CLAUDE.md` секция 6. Прогони итог через `brand-checker`.
 10. После записи — в чат: progress (N/total) и СТОП. **Не запускай importer автоматически.**
