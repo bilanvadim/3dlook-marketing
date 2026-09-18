@@ -45,7 +45,7 @@ Seven health articles were read on the live site and reconciled against this inv
 >   Console reports *"Discovered – currently not indexed"*, never crawled, 13 days after publication.
 >   Both pages were published after the GLP-1 hub refresh, so the likeliest cause is a post duplicated
 >   from it with Yoast's canonical field copied along. **Fix in WordPress:** clear the canonical field
->   on both posts, then request indexing. Flagged to Vadim 2026-09-17.
+>   on both posts, then request indexing. Flagged to Vadim 2026-09-17. **Fixed on the site 2026-09-17/18:** both self-canonical and in `post-sitemap.xml` (160 URLs on 09-18); Search Console had not re-crawled either page yet on 09-18.
 > - **Row 14 is clean:** self-canonical, *"Submitted and indexed"*.
 
 > **Row 11 added 2026-09-03 — and it is a correction, not a new publication.** The Bariatrics hub was

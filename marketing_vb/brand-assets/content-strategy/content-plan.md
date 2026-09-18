@@ -38,6 +38,8 @@
 
 **Every planned hub is now live.** No P0 hub gap remains; the one open P0 is a supporting listicle (Hub 5).
 
+> **✅ Site side FIXED 2026-09-17/18** — both pages are now self-canonical (curl) and listed in `post-sitemap.xml` (wellness 09-17 11:09, coaching 09-18 09:40 UTC). **Google has not caught up yet:** on 2026-09-18 Search Console still showed the wellness hub as "Alternate page" (last crawl 09-16, before the fix) and the coaching article as never crawled. Re-check in a few days; the notes below are the original finding.
+>
 > **⚠️ Live-site defects found 2026-09-17 — not ours to fix (no CMS keys), flagged to Vadim.**
 > Two pages declare `<link rel="canonical" href="https://3dlook.ai/content-hub/glp-1-market/">` (and the same `og:url`) instead of their own URL, most likely because the post was duplicated from the GLP-1 hub in WordPress and Yoast's canonical field came along:
 > - `ai-body-data-wellness-platforms` — Search Console: **"Alternate page with proper canonical tag"**, Google-selected canonical = `glp-1-market`. The Wellness hub is **not indexed** and is absent from `post-sitemap.xml`.
