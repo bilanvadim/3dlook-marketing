@@ -25,6 +25,7 @@ script drifting apart is exactly what let MISSING_ANCHOR adapter.py:inline-query
 for five mornings (2026-08-13…17) while the fix sat in a tree nothing invoked.
 """
 import hashlib
+import html
 import os
 import re
 import shutil
@@ -71,6 +72,15 @@ HERMES = f"{HOME}/.hermes/hermes-agent/venv/bin/hermes"
 LOG = f"{HOME}/.hermes/logs/hermes-update.log"
 _ENV = dict(os.environ)
 _ENV.setdefault("XDG_RUNTIME_DIR", f"/run/user/{os.getuid()}")
+
+
+def _esc(text):
+    """Escape tool output before it goes inside an HTML-mode Telegram message.
+
+    Tracebacks carry `<module>`, and Telegram rejects the WHOLE message over one unknown
+    tag: on 2026-09-16 the update alert died with HTTP 400 «Unsupported start tag
+    "module"», so the one morning something went wrong was the morning nothing arrived."""
+    return html.escape(str(text), quote=False)
 
 
 def _now():
@@ -187,7 +197,7 @@ def safety_audit():
             rl.telegram("⚠️ <b>Hermes update: shell-хуки нездоровы</b>\n"
                         "Барьер «менеджер, не кодер» на файловых инструментах мог отвалиться "
                         "молча (gateway — non-TTY). Проверь: <code>hermes hooks doctor</code>\n"
-                        f"<pre>{out[-500:]}</pre>")
+                        f"<pre>{_esc(out[-500:])}</pre>")
     except Exception as e:
         log(f"hooks doctor failed: {e}")
 
@@ -210,7 +220,7 @@ def safety_audit():
         log(f"approvals: mode={_mode or '(unset)'} allowlist={len(_allow)}")
         if _mode != "smart":
             rl.telegram("⚠️ <b>Одобрения команд не в режиме smart</b>\n"
-                        f"approvals.mode = <code>{_mode or '(не задан)'}</code>. "
+                        f"approvals.mode = <code>{_esc(_mode or '(не задан)')}</code>. "
                         "Опасные команды больше не проходят через судью и не спрашивают тебя.")
         if _allow:
             _items = "\n".join(f"• {a}" for a in _allow[:10])
@@ -218,14 +228,23 @@ def safety_audit():
                         "Это КАТЕГОРИИ опасных команд, разрешённые навсегда (обычно — "
                         "кнопка «Always» в чате). Проверь, что там не лежит правка "
                         "собственных файлов Hermes:\n"
-                        f"<pre>{_items}</pre>"
+                        f"<pre>{_esc(_items)}</pre>"
                         "Убрать: <code>command_allowlist: []</code> в ~/.hermes/config.yaml")
     except Exception as e:
         log(f"approvals watch failed: {e}")
 
 
+def _git_head():
+    try:
+        return subprocess.run(["git", "-C", _AGENT, "rev-parse", "--short", "HEAD"],
+                              capture_output=True, text=True, timeout=30).stdout.strip()
+    except Exception:
+        return ""
+
+
 def main():
     old = version()
+    head_before = _git_head()
     started_before = gateway_started_at()
     log(f"start; current={old}")
 
@@ -234,10 +253,26 @@ def main():
     tail = (r.stdout + r.stderr)[-600:]
     log(f"`hermes update` rc={r.returncode}\n{tail}")
 
-    if r.returncode != 0:
+    # rc != 0 does NOT always mean "nothing changed". On 2026-09-16 the update pulled
+    # 928 commits, restarted the gateway on them and printed "✓ Update complete!" — and
+    # then exited 1 because its own trailing check imported the NEW hermes_cli/config.py
+    # against the OLD utils module still loaded in that process (ImportError:
+    # file_signature). Taking the failure branch for that sent a false "версия осталась"
+    # to Telegram and, worse, returned before every patcher below, so the day's anchor
+    # checks never ran on freshly pulled code. When the code really moved, carry on.
+    head_after = _git_head()
+    if r.returncode != 0 and "Update complete!" in r.stdout:
+        log(f"`hermes update` rc={r.returncode} AFTER completing "
+            f"(HEAD {head_before or '?'} -> {head_after or '?'}); continuing with the patchers")
+        rl.telegram(f"⚠️ Hermes update: код обновлён (HEAD {head_before or '?'} → "
+                    f"{head_after or '?'}), но <code>hermes update</code> вышел с "
+                    f"rc={r.returncode} уже после «Update complete». Патчи переприменяю как "
+                    f"обычно — если что-то не встанет, придёт отдельный алерт.\n"
+                    f"<code>{_esc(tail[-300:])}</code>")
+    elif r.returncode != 0:
         rl.telegram(f"⚠️ <b>Hermes auto-update FAILED</b> (rc={r.returncode}).\n"
                     f"Версия осталась {old}. Бэкап на месте (rollback возможен).\n"
-                    f"<code>{tail[-300:]}</code>")
+                    f"<code>{_esc(tail[-300:])}</code>")
         # The barrier audit is about the config as it stands, not about the update, and
         # a failed update is the worst moment to go quiet about it. See safety_audit().
         safety_audit()
@@ -362,10 +397,10 @@ def main():
                             "Падение провайдера посреди стрима снова будет приходить как "
                             "«Response remained truncated after 4 continuation attempts», "
                             "а цепочка фолбэков — не опрашиваться. Нужен фикс патчера.\n"
-                            f"<pre>{(g.stdout + g.stderr).strip()[-400:]}</pre>")
+                            f"<pre>{_esc((g.stdout + g.stderr).strip()[-400:])}</pre>")
         else:
             rl.telegram("⚠️ Hermes update: патчер <b>stream-failover</b> ОТСУТСТВУЕТ "
-                        f"(<code>{sfp}</code>). Патч стёрт обновлением и переприменить "
+                        f"(<code>{_esc(sfp)}</code>). Патч стёрт обновлением и переприменить "
                         "его нечем — это ровно та тихая пропажа, из-за которой правило "
                         "было добавлено.")
             log(f"stream-failover: PATCHER MISSING at {sfp}")

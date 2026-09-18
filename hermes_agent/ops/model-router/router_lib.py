@@ -195,6 +195,14 @@ def telegram(text, parse_mode="HTML"):
         except Exception:
             detail = ""
         print(f"[router] telegram HTTP {e.code}: {detail}", flush=True)
+        # Telegram drops the WHOLE message over one bad tag. 2026-09-16: a traceback's
+        # `<module>` inside <code> killed the update-failure alert, and nothing arrived.
+        # Nobody called the documented parse_mode=None fallback, so it lives here: the
+        # alert goes out unformatted rather than not at all.
+        if parse_mode and e.code == 400 and "can't parse entities" in detail:
+            import html
+            plain = html.unescape(re.sub(r"</?(?:b|i|u|s|code|pre|a)(?:\s[^>]*)?>", "", text))
+            return telegram(plain, parse_mode=None)
         return False
     except Exception as ex:
         print(f"[router] telegram failed: {ex}", flush=True)
