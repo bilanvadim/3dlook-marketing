@@ -758,7 +758,15 @@ MVB_ROUTES: Dict[str, Dict[str, Any]] = {
         "example": "Стаття telehealth BMI verification для UK-аптек",
     },
     "mvb:posts": {
-        "label": "📱 Пости зі статті", "profile": _MVB_PROFILE, "prepare": _prep_posts,
+        # Posts run on the PURE profile (4 plugins), not the VB×SM blend (12). A posts
+        # job spawns only mvb-social agents and uses neither the mkt-* teams nor the
+        # Hermes base (no codebase-memory MCP, no ho_steps gates — "ho_steps не
+        # создавались (и не надо)"), so the blend only fattened every session's system
+        # prompt. Measured 2026-09-20: the coordinator's base context was 40-56K/job
+        # across 16 jobs. marketing_vb is already in ho_jobs' profile CHECK, so this
+        # is a route change, not a schema change. Article/outbound/campaign stay on
+        # the blend — mkt-* and the verify layer are actually reachable from those.
+        "label": "📱 Пости зі статті", "profile": "marketing_vb", "prepare": _prep_posts,
         # `fanout` is optional per route and only this one has it: it returns a LIST of
         # (prompt, title) so the caller enqueues one job per profile. Callers that do not
         # know the key keep working — they just use `prepare` and get the old single job.
