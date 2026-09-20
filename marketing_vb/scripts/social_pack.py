@@ -914,7 +914,7 @@ def qc_prompt(slug: str, profile: str):
     fm, rest = split_frontmatter(text)
     meta = rest.split("\n---", 1)[0].strip()
     r = subprocess.run([sys.executable, os.path.join(HERE, "post-lint.py"),
-                        slug, profile, "--json"], capture_output=True, text=True)
+                        slug, profile], capture_output=True, text=True)
     lint = r.stdout.strip() or "{}"
 
     shared = f"""Score one social post from the `{slug}` pack against
@@ -1006,7 +1006,7 @@ def qc_plan(slug: str):
         if not os.path.exists(post):
             continue
         r = subprocess.run([sys.executable, os.path.join(HERE, "post-lint.py"),
-                            slug, pid, "--gate", "--json"],
+                            slug, pid, "--gate"],
                            capture_output=True, text=True)
         if r.returncode == 1 and pid not in picked:
             picked.append(pid)
@@ -1071,7 +1071,7 @@ def build_manifest(slug: str):
         pbody, _cta, _d = extract_body(ptext)
         entry["format"] = pfm.get("format", "")
         r = subprocess.run([sys.executable, os.path.join(HERE, "post-lint.py"),
-                            slug, pid, "--gate", "--json"],
+                            slug, pid, "--gate"],
                            capture_output=True, text=True)
         if not pbody:
             entry["status"] = "draft"

@@ -1,0 +1,107 @@
+{
+  "article": {
+    "slug": "fitxpress-data-privacy-security-regulatory-faq",
+    "title": "Data, Privacy, Security & Regulatory FAQ for FitXpress",
+    "product": "fitxpress",
+    "source_file": "workspace/seo/articles/2026-07-14-fitxpress-privacy-security-faq/published-live-2026-09-18.md",
+    "source_status": "published",
+    "published_url": "https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/",
+    "date": "2026-09-20"
+  },
+  "profiles": [
+    {
+      "profile_id": "twitter-company",
+      "platform": "twitter",
+      "handle": "@3DLOOK",
+      "post_file": "twitter-company/post.md",
+      "format": "screenshot",
+      "status": "ready",
+      "character_count_body": 271,
+      "qc_score": "17/20"
+    },
+    {
+      "profile_id": "instagram-company",
+      "platform": "instagram",
+      "handle": "@3dlook.ai",
+      "post_file": "instagram-company/post.md",
+      "format": "carousel",
+      "status": "ready",
+      "character_count_body": 793,
+      "qc_score": "18/20"
+    },
+    {
+      "profile_id": "facebook-company",
+      "platform": "facebook",
+      "handle": "3DLOOK",
+      "post_file": "facebook-company/post.md",
+      "format": "text + photo",
+      "status": "ready",
+      "character_count_body": 1016,
+      "qc_score": "20/20"
+    },
+    {
+      "profile_id": "linkedin-company",
+      "platform": "linkedin",
+      "handle": "3DLOOK",
+      "post_file": "linkedin-company/post.md",
+      "format": "infographic",
+      "status": "ready",
+      "word_count_body": 220
+    },
+    {
+      "profile_id": "linkedin-katerina",
+      "platform": "linkedin",
+      "handle": "Katerina Galich",
+      "post_file": "linkedin-katerina/post.md",
+      "format": "text",
+      "status": "ready",
+      "word_count_body": 152,
+      "qc_score": "18/20"
+    },
+    {
+      "profile_id": "linkedin-vadim",
+      "platform": "linkedin",
+      "handle": "Vadim Bilan",
+      "post_file": "linkedin-vadim/post.md",
+      "format": "text",
+      "status": "ready",
+      "word_count_body": 139
+    },
+    {
+      "profile_id": "linkedin-nick",
+      "platform": "linkedin",
+      "handle": "Nick Omelchak",
+      "post_file": "linkedin-nick/post.md",
+      "format": "text",
+      "status": "ready",
+      "word_count_body": 155,
+      "qc_score": "19/20"
+    },
+    {
+      "profile_id": "linkedin-olena",
+      "platform": "linkedin",
+      "handle": "Olena Kudryavtseva",
+      "post_file": "linkedin-olena/post.md",
+      "format": "text",
+      "status": "ready",
+      "word_count_body": 143
+    },
+    {
+      "profile_id": "linkedin-katya",
+      "platform": "linkedin",
+      "handle": "Kateryna Boichuk",
+      "post_file": "linkedin-katya/post.md",
+      "format": "text + photo",
+      "status": "ready",
+      "word_count_body": 144,
+      "qc_score": "18/20"
+    }
+  ],
+  "profiles_skipped": [
+    {
+      "profile_id": "linkedin-whitney",
+      "reason": "posts_per_week: 0"
+    }
+  ],
+  "ready_for_review": true
+}
