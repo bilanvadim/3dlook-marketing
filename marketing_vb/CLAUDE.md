@@ -262,8 +262,7 @@ company, ~8 КБ у пяти личных вместо 17,6 КБ мастера)
 | Brand voice (пост) | `post-brand-checker` | 10/13-пунктный чек одного поста |
 | QC (пост) | `post-quality-controller` | 20-балльная рубрика, выборка 3 из 9, sonnet, §14 |
 | Сборка пака | `scripts/social_pack.py` | source · brief · prompt · qc-prompt · qc-plan · manifest · digest · report · scores |
-| Бриф-мейкер | `visual-brief` | Бриф для дизайнера в Canva |
-| Дизайнер | Человек | Делает визуал |
+| Дизайнер | Человек | Делает визуал сам, по `### Design tip` каждого поста в дайджесте (шаг `visual-brief` удалён 2026-09-20, решение Вадима: «дизайнер сам это делает») |
 | Апрувер | Вадим (через Telegram) | Все чекпоинты |
 | Outbound | пайплайн `outbound/*` | Hypothesis → ... → Campaign analysis |
 | SEO | пайплайн `seo/*` | Keywords → ... → Publish → trigger social |
@@ -272,9 +271,11 @@ company, ~8 КБ у пяти личных вместо 17,6 КБ мастера)
 **Social workflow (основной режим — БАТЧ, решение Вадима 2026-09-20):** SEO-статья
 готова → `mvb-run.py posts {slug} --batch` → ОДНА conductor-job `/post-batch {slug}` →
 `social_pack.py batch-prompt --write` (только недостающие профили) → один `post-drafter`
-(opus) пишет весь пак за заход → `post-lint.py --all --gate` → `post-brand-checker` и
+(opus) пишет весь пак за заход → `post-lint.py` с гейтом ПО НАПИСАННЫМ профилям
+(не `--all --gate`: ретро-правила валят shipped-посты — урок job #160) → `post-brand-checker` и
 `post-quality-controller` по выборке qc-plan → manifest / digest / report скриптом →
-Telegram апрув Вадима → `visual-brief`. Основание: A/B по протоколу ниже
+Telegram апрув Вадима → дизайнер делает визуалы по `### Design tip` из дайджеста
+(шага `visual-brief` больше нет, 2026-09-20). Основание: A/B по протоколу ниже
 (bariatric-hub-refresh, коммит 1f2aea5) — батч 18.78/20 против 18.00 у fan-out при
 полном слепом QC, линт 9/9 с первого прохода, ~$9-10 за пак против измеренных $25.
 **Fan-out (`mvb-run.py posts {slug}` без флага) остаётся** для точечных пересборов:

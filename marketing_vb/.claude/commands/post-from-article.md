@@ -146,5 +146,6 @@ run, is most of what this command used to cost.
 
 - **Do not run post-drafter in parallel** — one profile at a time, clean context.
 - If a profile has `posts_per_week = 0` it is not in `active`; note it in the final report.
-- `visual-brief` **is not triggered here** — only after Vadim approves the text in Telegram.
+- there is no `visual-brief` step (removed 2026-09-20): the designer builds each
+  visual from the post's Design tip in the digest.
 - Everything goes to files, not into the chat. Publish nothing outward.

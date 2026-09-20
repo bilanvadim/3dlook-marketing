@@ -562,7 +562,7 @@ def _prep_posts(task: str) -> Tuple[Optional[str], Optional[str], Optional[str],
                    "одному профилю за раз. Факты — только из файла-источника. Хештегов "
                    "нет ни на одном профиле, эмодзи 1-2. В конце собери "
                    "`review-digest.md` и `manifest.json` (ready_for_review). "
-                   "visual-brief здесь НЕ запускай.\n"),
+                   ),
         f"Social posts: {slug}", note, None)
 
 
@@ -714,7 +714,7 @@ def _fanout_posts(task: str) -> Tuple[Optional[List[Tuple[str, str]]], Optional[
                        "review-digest.md и manifest.json НЕ пиши руками — их собирает "
                        "`scripts/social_pack.py`, и только если этот профиль оказался "
                        "последним (шаг 5 команды).\n"
-                       "visual-brief здесь НЕ запускай.\n"),
+                       ),
             f"Social posts: {slug} · {prof}",
         ))
     return jobs, note, None
@@ -764,7 +764,7 @@ def _prep_posts_batch(task: str):
                    "закрылись done со словами «жду драфтера» и без постов.\n"
                    "review-digest.md и manifest.json НЕ пиши руками — их собирает "
                    "`scripts/social_pack.py` в конце.\n"
-                   "visual-brief здесь НЕ запускай.\n"),
+                   ),
         f"Social posts (batch): {slug}", note, None)
 
 

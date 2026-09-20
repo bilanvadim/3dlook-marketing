@@ -136,7 +136,7 @@ copy of the schema and the file's shape depended on which one wrote last.
 
 ## Design tip
 
-After writing the post, add a `### Design tip` block — a short visual direction for the copywriter and designer. This is not a full brief (that's done by `visual-brief` later). Goal: convey the adaptation in 3 lines.
+After writing the post, add a `### Design tip` block — a short visual direction for the copywriter and designer. This is what the designer works from directly (the separate `visual-brief` step was removed 2026-09-20). Goal: convey the adaptation in 3 lines.
 
 **The starting point is always an article asset that actually ships.** The run brief
 in your prompt lists them, and which ones earlier profiles in the pack already

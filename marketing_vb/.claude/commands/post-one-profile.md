@@ -187,5 +187,6 @@ do not "just check" with a directory listing when a subcommand answers the same 
 
 - One profile per run. No parallel `post-drafter`.
 - Facts come only from the article of record resolved in step 1. Invent nothing.
-- `visual-brief` is **not** triggered here — only after Vadim approves the text in Telegram.
+- there is no `visual-brief` step (removed 2026-09-20): the designer builds each
+  visual from the post's Design tip in the digest.
 - Everything goes to files, not into the chat. Publish nothing outward.

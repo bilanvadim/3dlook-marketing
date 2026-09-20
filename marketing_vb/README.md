@@ -44,12 +44,12 @@ Multi-agent система маркетинговой автоматизации
 
 | Что | Куда | Зачем | Приоритет |
 |-----|------|-------|-----------|
-| Логотипы (SVG / PNG) | `brand-assets/logos/` | visual-brief | 🔴 критично |
-| Бренд-гайдлайны (PDF) | `brand-assets/brand-guidelines/` | visual-brief, brand-checker | 🟡 если есть |
-| Топ-10 banner'ов из Blog banners Figma | `brand-assets/past-posts/_figma-exports/blog-banners/` | visual-brief | 🔴 критично |
-| Топ-5 страниц website Figma | `brand-assets/past-posts/_figma-exports/website/` | visual-brief | 🟡 желательно |
+| Логотипы (SVG / PNG) | `brand-assets/logos/` | дизайнер (вручную) | 🔴 критично |
+| Бренд-гайдлайны (PDF) | `brand-assets/brand-guidelines/` | дизайнер (вручную), brand-checker | 🟡 если есть |
+| Топ-10 banner'ов из Blog banners Figma | `brand-assets/past-posts/_figma-exports/blog-banners/` | дизайнер (вручную) | 🔴 критично |
+| Топ-5 страниц website Figma | `brand-assets/past-posts/_figma-exports/website/` | дизайнер (вручную) | 🟡 желательно |
 | 10+ постов на каждый активный профиль | `brand-assets/past-posts/{profile}/` | post-drafter, brand-checker | 🔴 критично |
-| Точные HEX в `colors.md` | `brand-assets/color-palette/colors.md` | visual-brief | 🟢 обновить |
+| Точные HEX в `colors.md` | `brand-assets/color-palette/colors.md` | дизайнер (вручную) | 🟢 обновить |
 | Список активных соцпрофилей и кто их ведёт | `CLAUDE.md` секция 5 | quarterly-strategist, post-drafter | 🟡 уточнить |
 | Telegram bot token + chat_id | `telegram-bot/.env` | bot.py | 🔴 для запуска |
 

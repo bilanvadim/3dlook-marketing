@@ -138,8 +138,9 @@ directory listing when a subcommand answers the same question.
    python3 scripts/social_pack.py report   $1 --write
    ```
 
-   Do not write any of the three by hand, and do not run `visual-brief` here — that
-   happens after Vadim approves the digest.
+   Do not write any of the three by hand. There is no visual-brief step (removed
+   2026-09-20): the designer builds each visual from the post's Design tip in the
+   digest.
 
 8. **Final self-check before your summary** — the same check the Stop hook makes:
    every active profile has a `post.md` and `publish-report.md` says N/N. Report the
