@@ -1,9 +1,20 @@
 ---
 description: Writes ONE social profile's post for a ready SEO article, then assembles the pack if it is the last profile left
 argument-hint: "<article-slug> <profile-id>"
+model: sonnet
 ---
 
 Write the post for profile `$2` from article `$1`.
+
+## Model
+
+This session runs on **sonnet** (`model:` in the frontmatter above). Every step here is
+dispatch: run a script, pass a generated prompt verbatim, relay lint lines, spawn a
+checker. Nothing in THIS session writes post text — the text is written by
+`post-drafter`, which carries `model: opus` in its own frontmatter and is untouched by
+this setting. Measured 2026-09-20 (fitxpress pack, 18 sessions): the opus coordinator
+sessions were $100.52 of a $122.29 day; the drafters $15.52. CLAUDE.md §9 governs the
+DRAFTER's model via the A/B protocol; the coordinator is not a writing stage.
 
 ## Why this command exists (do not "helpfully" widen it)
 
@@ -108,6 +119,11 @@ do not "just check" with a directory listing when a subcommand answers the same 
    placeholders, the published slug, the design-tip fields, and every number in the post
    against the article of record and `proof-points.md`. That last one is the check that
    caught "under a minute" against a sourced "Under 45 seconds".
+
+   On the five personal LinkedIn profiles it also gates the shape Vadim set on
+   2026-09-04: **170 words is a wall** (no 10% tolerance), no sentence over 30 words, no
+   geo marker in the first sentence, and no "I speak with operators across the region
+   every week". A post over the ceiling is a rewrite round, not a note in the digest.
 
 5. **Brand voice.** Run `post-brand-checker` on the saved file. FAIL → back to
    `post-drafter` with the reasons. Two rewrite rounds maximum, then note it and move on.

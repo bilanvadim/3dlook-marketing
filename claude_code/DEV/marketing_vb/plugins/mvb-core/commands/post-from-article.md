@@ -1,9 +1,20 @@
 ---
 description: Creates posts for all active social profiles based on a ready SEO article
 argument-hint: "<article-slug>"
+model: sonnet
 ---
 
 Create posts for all active profiles based on article $1.
+
+## Model
+
+This session runs on **sonnet** (`model:` in the frontmatter above). Every step here is
+dispatch: run a script, pass a generated prompt verbatim, relay lint lines, spawn a
+checker. Nothing in THIS session writes post text — the text is written by
+`post-drafter`, which carries `model: opus` in its own frontmatter and is untouched by
+this setting. Measured 2026-09-20 (fitxpress pack, 18 sessions): the opus coordinator
+sessions were $100.52 of a $122.29 day; the drafters $15.52. CLAUDE.md §9 governs the
+DRAFTER's model via the A/B protocol; the coordinator is not a writing stage.
 
 ## Read this before starting: prefer the fan-out
 
@@ -87,8 +98,10 @@ run, is most of what this command used to cost.
    ```
 
    Exit 1 → quote the hard fails back to `post-drafter`; do not rewrite the post yourself.
-   Warnings are informational. Then run `post-brand-checker` on the file; FAIL → one more
-   round, two maximum.
+   Warnings are informational. On the five personal LinkedIn profiles the lint also gates
+   the shape set on 2026-09-04: 170 words is a wall, no sentence over 30 words, no geo
+   marker in the first sentence, no "I speak with … every week". Then run
+   `post-brand-checker` on the file; FAIL → one more round, two maximum.
 
 4. **Quality control, sampled.**
 

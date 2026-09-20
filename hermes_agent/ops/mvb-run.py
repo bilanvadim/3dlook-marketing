@@ -58,8 +58,11 @@ Exit codes: 0 = enqueued or informational · 2 = refused (reason on stdout) · 3
 them. Job #90 proved why — the whole batch in one run was 206 turns and it drained the
 Claude window the conductor SHARES with Vadim's interactive sessions. Splitting does not
 spend less quota; it changes what a limit costs you, from a half-finished 200-turn run to
-"the profiles not started yet". Re-running `posts <slug>` queues only the profiles still
-missing. Env: MVB_FANOUT=0 for the old single job, MVB_DRY_RUN=1 to see the jobs without
+"the profiles not started yet". Re-running `posts <slug>` queues only the profiles whose
+post is absent or fails `post-lint --gate` (the filter lives in _fanout_posts in
+claude_switcher.py — live_duplicate() below only covers jobs still queued/running, it
+does NOT skip finished ones; before 2026-09-20 a re-run re-enqueued the whole pack).
+Env: MVB_FANOUT=0 for the old single job, MVB_DRY_RUN=1 to see the jobs without
 creating them (the conductor is always polling — an insert IS a live run).
 """
 
@@ -237,10 +240,13 @@ def _enqueue_many(r, work_dir: str, jobs, note) -> int:
     """Insert one row per (prompt, title). Duplicates are skipped INDIVIDUALLY.
 
     Per-title rather than per-pipeline, because that is what makes a re-run useful:
-    if 6 of 9 profiles finished before the usage window closed, running `posts <slug>`
-    again queues exactly the 3 that are missing instead of refusing the whole batch.
-    Titles carry the profile (`Social posts: <slug> · <profile>`), so the existing
-    live_duplicate() check does that for free.
+    if 6 of 9 profiles are still QUEUED or RUNNING when `posts <slug>` fires again,
+    those six are skipped individually and only the rest go in. Titles carry the
+    profile (`Social posts: <slug> · <profile>`), which is what live_duplicate()
+    matches on. NOTE it only sees live jobs: profiles whose job already finished are
+    filtered out earlier, in _fanout_posts (post exists + lint gate clean = done) —
+    counting on this check for that was the 2026-09-20 mistake that re-enqueued a
+    whole completed pack.
 
     All rows go in ONE transaction: a partially-enqueued fan-out is worse than none —
     the self-electing assembly step (see post-one-profile.md step 5) would see a short

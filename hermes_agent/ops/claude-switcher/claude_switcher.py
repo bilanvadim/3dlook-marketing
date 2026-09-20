@@ -646,13 +646,61 @@ def _fanout_posts(task: str) -> Tuple[Optional[List[Tuple[str, str]]], Optional[
     profiles = _mvb_social_profiles()
     if not profiles:
         return None, note, None            # caller falls back to the single job
+
+    # A profile whose post.md EXISTS is done and is not re-queued. A finished job
+    # is `done` in ho_jobs, so live_duplicate() in mvb-run no longer sees it, and
+    # before this filter a re-run of `posts <slug>` re-enqueued the whole pack:
+    # 2026-09-20, nine jobs for two missing profiles — the seven extra ones each
+    # spun a full session just to conclude "nothing to do", ~$21 of nothing.
+    #
+    # Existence decides, NOT the lint gate. The tempting alternative — re-queue any
+    # post that fails `post-lint --gate` — redrafts SHIPPED packs: the 2026-09-04
+    # personal-LinkedIn shape rules retroactively hard-fail all five LinkedIn posts
+    # of glp-1-market-hub (238-253 words against the later 170 wall), so one stray
+    # `posts glp-1-market-hub` would silently rewrite five published posts.
+    # Redrafting is therefore always explicit: remove the profile's post.md (park it
+    # in the pack's _rejected/, as the fitxpress re-run did) and enqueue again.
+    # The gate still runs here, but only to WARN about failing posts in the reply.
+    done: List[str] = []
+    failing: List[str] = []
+    lint = os.path.join(_mvb_dir(), "scripts", "post-lint.py")
+    for prof in profiles:
+        post = os.path.join(_mvb_dir(), "workspace", "social", "articles",
+                            slug, prof, "post.md")
+        if not os.path.exists(post):
+            continue
+        done.append(prof)
+        try:
+            rc = subprocess.run(["python3", lint, slug, prof, "--gate"],
+                                cwd=_mvb_dir(), capture_output=True,
+                                timeout=60).returncode
+        except (OSError, subprocess.TimeoutExpired):
+            rc = 0                         # linter unavailable — no verdict, no warn
+        if rc == 1:
+            failing.append(prof)
+    todo = [p for p in profiles if p not in done]
+    warn = ("" if not failing else
+            f"\n⚠️ у {len(failing)} готовых hard-fail линтера: {', '.join(failing)} — "
+            "автоматически НЕ пересобираю; чтобы пересобрать, убери "
+            f"`workspace/social/articles/{slug}/<профиль>/post.md` и запусти снова.")
+    if not todo:
+        return None, None, (
+            f"✅ пак `{slug}` уже полный: {len(profiles)}/{len(profiles)} постов на "
+            "месте — не ставлю ничего." + (warn or " Линт чистый."))
+    if done:
+        extra = f"пропущено {len(done)} готовых (post.md на месте): " + ", ".join(done)
+        note = (f"{note}\n{extra}" if note else extra) + warn
+    elif warn:
+        note = f"{note}{warn}" if note else warn.strip()
+
     jobs: List[Tuple[str, str]] = []
-    for i, prof in enumerate(profiles):
+    for i, prof in enumerate(todo):
         jobs.append((
             _mvb_brief(f"/post-one-profile {slug} {prof}",
                        ".claude/commands/post-one-profile.md",
                        f"Slug: {slug}\nПрофиль: {prof}\nИсточник: {src}\n"
-                       f"Профиль {i + 1} из {len(profiles)} в этом паке.\n"
+                       f"Профиль {i + 1} из {len(todo)} в этой очереди "
+                       f"(активных в паке: {len(profiles)}).\n"
                        "Пиши ТОЛЬКО этот профиль — остальные идут отдельными job'ами, "
                        "не трогай их.\n"
                        "Промпт для post-drafter НЕ составляй сам: возьми вывод "

@@ -1,9 +1,20 @@
 ---
 description: Writes ONE social profile's post for a ready SEO article, then assembles the pack if it is the last profile left
 argument-hint: "<article-slug> <profile-id>"
+model: sonnet
 ---
 
 Write the post for profile `$2` from article `$1`.
+
+## Model
+
+This session runs on **sonnet** (`model:` in the frontmatter above). Every step here is
+dispatch: run a script, pass a generated prompt verbatim, relay lint lines, spawn a
+checker. Nothing in THIS session writes post text — the text is written by
+`post-drafter`, which carries `model: opus` in its own frontmatter and is untouched by
+this setting. Measured 2026-09-20 (fitxpress pack, 18 sessions): the opus coordinator
+sessions were $100.52 of a $122.29 day; the drafters $15.52. CLAUDE.md §9 governs the
+DRAFTER's model via the A/B protocol; the coordinator is not a writing stage.
 
 ## Why this command exists (do not "helpfully" widen it)
 
