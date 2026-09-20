@@ -4,5 +4,12 @@
   "generated": "2026-09-20",
   "article_of_record": "workspace/seo/articles/bariatric-hub-refresh/published-live-2026-09-20.md",
   "drafter_model": "opus",
-  "qc_policy": "sampled"
+  "qc_policy": "sampled",
+  "digest_approved": {
+    "by": "Vadim",
+    "date": "2026-09-20",
+    "via": "Claude Code chat («дай апрув по дайджесту баріатрік»)",
+    "digest": "review-digest.md (pack A, the assembled deliverable; _ab-batch is the experiment archive)",
+    "next": "visual-brief per post"
+  }
 }

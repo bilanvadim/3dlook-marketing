@@ -286,7 +286,9 @@ def lint(path: str, source_text: str = "", source_slug: str = ""):
     rel = os.path.relpath(path, PROJ)
     if not os.path.exists(path):
         return {"post": rel, "hard_fails": [{"check": "missing", "detail": "no post.md"}],
-                "warnings": [], "metrics": {}}
+                "warnings": [], "metrics": {},
+                "verdict": "FAIL (1)"}   # summarise() reads verdict; a missing file
+                                         # used to KeyError instead of failing cleanly
     text = open(path, encoding="utf-8", errors="replace").read()
     fm, _ = split_frontmatter(text)
     body, cta, design = extract_body(text)

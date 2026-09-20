@@ -720,6 +720,54 @@ def _fanout_posts(task: str) -> Tuple[Optional[List[Tuple[str, str]]], Optional[
     return jobs, note, None
 
 
+
+def _prep_posts_batch(task: str):
+    """(prompt, title, note, error) — the social pack as ONE batch job.
+
+    Vadim accepted batch as the default mode on 2026-09-20 after the A/B on
+    bariatric-hub-refresh (commit 1f2aea5): one opus drafter writing the whole
+    pack scored 18.78/20 against the fan-out's 18.00 on full blind QC, linted
+    9/9 first pass, and costs ~$9-10 a pack against the fan-out's measured
+    $25.09. The fan-out stays for targeted single-profile re-runs — and as the
+    fallback if a batch run leaves gaps: `posts <slug>` (no flag) re-queues
+    exactly the missing profiles.
+
+    Same preconditions as _prep_posts, same completeness refusal as the
+    fan-out: a pack whose every active profile already has a post.md is not
+    re-enqueued. Which profiles the batch actually writes is decided inside
+    the job by `social_pack.py batch-prompt` (only the missing ones), so a
+    batch re-run after a partial failure tops up the gaps.
+    """
+    prompt0, title0, note, err = _prep_posts(task)
+    if err:
+        return None, None, None, err
+    slug = _mvb_slug(task)
+    src, _n, _e = _mvb_article_source(slug)
+    missing = [prof for prof in _mvb_social_profiles()
+               if not os.path.exists(os.path.join(
+                   _mvb_dir(), "workspace", "social", "articles",
+                   slug, prof, "post.md"))]
+    if _mvb_social_profiles() and not missing:
+        return None, None, None, (
+            f"✅ пак `{slug}` уже полный — не ставлю ничего. Пересобрать профиль: "
+            f"убери его `workspace/social/articles/{slug}/<профиль>/post.md` и "
+            "запусти снова (без --batch для одного профиля, с --batch для многих).")
+    return (
+        _mvb_brief(f"/post-batch {slug}", ".claude/commands/post-batch.md",
+                   f"Slug: {slug}\nИсточник: {src}\n"
+                   "Режим: БАТЧ — один post-drafter пишет все недостающие профили "
+                   "за один заход (список соберёт `social_pack.py batch-prompt`).\n"
+                   "Промпт драфтеру НЕ составляй сам: `batch-prompt --write` кладёт "
+                   "файл, драфтер читает его сам — передай ему только указание "
+                   "прочитать и выполнить, как написано в команде.\n"
+                   "НЕ заканчивай сессию, пока драфтер работает: job'ы #136 и #158 "
+                   "закрылись done со словами «жду драфтера» и без постов.\n"
+                   "review-digest.md и manifest.json НЕ пиши руками — их собирает "
+                   "`scripts/social_pack.py` в конце.\n"
+                   "visual-brief здесь НЕ запускай.\n"),
+        f"Social posts (batch): {slug}", note, None)
+
+
 def _prep_outbound(task: str) -> Tuple[Optional[str], Optional[str], Optional[str], Optional[str]]:
     t = (task or "").strip()
     if not t:
@@ -767,6 +815,10 @@ MVB_ROUTES: Dict[str, Dict[str, Any]] = {
         # is a route change, not a schema change. Article/outbound/campaign stay on
         # the blend — mkt-* and the verify layer are actually reachable from those.
         "label": "📱 Пости зі статті", "profile": "marketing_vb", "prepare": _prep_posts,
+        # `prepare_batch` is the default mode since 2026-09-20 (Vadim's call after the
+        # §9 A/B): mvb-run passes --batch through to it. `fanout` remains the
+        # no-flag path for targeted re-runs of individual missing profiles.
+        "prepare_batch": _prep_posts_batch,
         # `fanout` is optional per route and only this one has it: it returns a LIST of
         # (prompt, title) so the caller enqueues one job per profile. Callers that do not
         # know the key keep working — they just use `prepare` and get the old single job.

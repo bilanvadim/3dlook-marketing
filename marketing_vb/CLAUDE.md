@@ -269,11 +269,23 @@ company, ~8 КБ у пяти личных вместо 17,6 КБ мастера)
 | SEO | пайплайн `seo/*` | Keywords → ... → Publish → trigger social |
 | Brand guardian | `brand-checker` (shared) | Проверка тона / no-go / AI-сигнатур |
 
-**Social workflow:** SEO-статья готова → `mvb-run.py posts {slug}` (fan-out: одна
-conductor-job на профиль, с шагом 4 мин) → в каждой job `/post-one-profile {slug} {profile}`
-→ `post-drafter` → `scripts/post-lint.py` → `post-brand-checker` → `post-quality-controller`
-(если профиль в выборке) → последний профиль собирает manifest / digest / report скриптом →
-Telegram апрув Вадима → `visual-brief`. Квартальный план для соцсетей не используется.
+**Social workflow (основной режим — БАТЧ, решение Вадима 2026-09-20):** SEO-статья
+готова → `mvb-run.py posts {slug} --batch` → ОДНА conductor-job `/post-batch {slug}` →
+`social_pack.py batch-prompt --write` (только недостающие профили) → один `post-drafter`
+(opus) пишет весь пак за заход → `post-lint.py --all --gate` → `post-brand-checker` и
+`post-quality-controller` по выборке qc-plan → manifest / digest / report скриптом →
+Telegram апрув Вадима → `visual-brief`. Основание: A/B по протоколу ниже
+(bariatric-hub-refresh, коммит 1f2aea5) — батч 18.78/20 против 18.00 у fan-out при
+полном слепом QC, линт 9/9 с первого прохода, ~$9-10 за пак против измеренных $25.
+**Fan-out (`mvb-run.py posts {slug}` без флага) остаётся** для точечных пересборов:
+он ставит job'ы только на профили без post.md. `/post-from-article {slug}` —
+интерактивный fallback. Квартальный план для соцсетей не используется.
+
+**Гейт «нет артефакта — нет done»:** Stop-hook `.claude/hooks/posts-artifact-gate.py`
+не даёт сессии `/post-one-profile` и `/post-batch` завершиться, пока обещанные
+post.md не на диске (класс job'ов #136/#158 от 2026-09-20: «жду драфтера» → done без
+поста). Блокирует максимум дважды за сессию; дальше дыру закрывает re-run фильтр
+`posts <slug>`.
 
 `/post-from-article {slug}` делает то же в **одной** сессии и оставлен как fallback для
 интерактивного прогона: замер 2026-08-28 показал, что координация в одной толстой сессии —
@@ -297,6 +309,7 @@ qc-prompt · qc-plan · manifest · digest · report · scores) и `scripts/post
 
 | Стадия | Модель | Почему |
 |---|---|---|
+| координатор job'а (`/post-batch`, `/post-one-profile`) | sonnet | `model:` во frontmatter команды; чистый диспетчер, текста не пишет (замер 2026-09-20: opus-координаторы были 82% стоимости пака) |
 | `post-drafter` | **opus** | Единственная стадия, где пишется текст. Меняется только через A/B ниже |
 | `post-brand-checker` | sonnet | Чек-лист по готовому тексту |
 | `post-quality-controller` | sonnet | Вход компактный, механика уже проверена линтером |

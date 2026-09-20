@@ -48,6 +48,7 @@ USAGE
     scripts/social_pack.py source   <slug>
     scripts/social_pack.py brief    <slug> [--force]
     scripts/social_pack.py prompt   <slug> <profile> [--check-prefix]
+    scripts/social_pack.py batch-prompt <slug> [--write]
     scripts/social_pack.py qc-plan  <slug>
     scripts/social_pack.py manifest <slug> [--write]
     scripts/social_pack.py digest   <slug> [--write]
@@ -729,10 +730,21 @@ Skipped this pack: {", ".join("`" + p + "`" for p in skipped_profiles()) or "non
 """
     with open(path, "w", encoding="utf-8") as f:
         f.write(out)
-    meta = {"slug": slug, "published_slug": pslug, "generated": date.today().isoformat(),
-            "article_of_record": os.path.relpath(src, PROJ),
-            "drafter_model": "opus", "qc_policy": "sampled"}
-    with open(os.path.join(root, "_pack.json"), "w", encoding="utf-8") as f:
+    # merge-preserve: _pack.json also carries records other steps add later
+    # (digest_approved, run policies) — a brief re-run must not clobber them
+    mp = os.path.join(root, "_pack.json")
+    meta = {}
+    if os.path.exists(mp):
+        try:
+            meta = json.load(open(mp, encoding="utf-8"))
+        except Exception:
+            meta = {}
+    meta.update({"slug": slug, "published_slug": pslug,
+                 "generated": date.today().isoformat(),
+                 "article_of_record": os.path.relpath(src, PROJ)})
+    meta.setdefault("drafter_model", "opus")
+    meta.setdefault("qc_policy", "sampled")
+    with open(mp, "w", encoding="utf-8") as f:
         json.dump(meta, f, indent=2)
     return path, None
 
@@ -889,6 +901,63 @@ Write the post. Do not call another agent, and do not write the manifest or the
 digest — the runner does both mechanically after you finish.
 """
     return shared, tail, None
+
+
+
+BATCH_MARK = "===== THIS RUN WRITES THE WHOLE PACK ====="
+
+
+def batch_prompt(slug: str):
+    """(text, missing_profiles, error) — the pack as ONE post-drafter assignment.
+
+    Measured before adopting (A/B per CLAUDE.md §9, bariatric-hub-refresh,
+    2026-09-20, commit 1f2aea5): one opus session writing all nine posts scored
+    18.78/20 against the fan-out's 18.00 on a full blind QC set, linted 9/9 on
+    the first pass, and cost $8.65 of drafting against ~$12.6 plus nine
+    coordinator sessions. The angle map is allocated by one head instead of a
+    "taken angles" relay, which is where the batch gained most.
+
+    Sections are built ONLY for profiles without a post.md, so a re-run tops up
+    the gaps — the same semantics as the fan-out's re-queue filter. On a top-up
+    the tails' own "Angles already taken" sections list the posts that already
+    exist, and the header tells the drafter those angles are off the table.
+    """
+    _done, missing = pack_state(slug)
+    if not missing:
+        return None, [], "pack complete — nothing to draft"
+    shared0, parts = None, []
+    for i, prof in enumerate(missing, 1):
+        shared, tail, err = drafter_prompt(slug, prof)
+        if err:
+            return None, None, f"{prof}: {err}"
+        if shared0 is None:
+            shared0 = shared
+        elif shared != shared0:
+            return None, None, (f"shared prefix differs for {prof} — "
+                                "drafter_prompt is no longer byte-stable, fix that first")
+        parts.append(f"\n\n===== PROFILE {i} of {len(missing)}: `{prof}` =====\n\n"
+                     + tail.lstrip("\n"))
+    n = len(missing)
+    head = f"""{BATCH_MARK}
+
+This session writes {n} post{"s" if n > 1 else ""} in one sitting — one per profile
+section below. Everything shared above applies to every post; each profile section
+is binding for its own post.
+
+1. FIRST, before writing anything, allocate {n} genuinely different angles — one per
+   profile, no two sharing an entry point, each fitting that profile's audience and
+   market. Where a profile's "Angles already taken" section lists existing posts,
+   those angles are off the table too. Hold the map in your head, not in a file.
+2. Then write the posts one at a time, each in its profile's exact template, each
+   saved to its own "## Save to" path.
+3. All other rules stand: budgets and ceilings per profile, the five personal
+   profiles' rules, 0 hashtags, max 2 emoji, no em dash, facts only from the
+   article of record in this prompt.
+4. When every file is saved, reply with one line per profile:
+   `<profile> · <angle, 6-10 words> · <word or char count>`.
+"""
+    body = shared0[: shared0.rfind(SHARED_MARK)] + head + "".join(parts)
+    return body, missing, None
 
 
 def qc_prompt(slug: str, profile: str):
@@ -1187,6 +1256,9 @@ def main(argv=None) -> int:
             s.add_argument("--write", action="store_true")
         if name == "brief":
             s.add_argument("--force", action="store_true")
+    bp = sub.add_parser("batch-prompt")
+    bp.add_argument("slug")
+    bp.add_argument("--write", action="store_true")
     for name in ("prompt", "qc-prompt"):
         sp = sub.add_parser(name)
         sp.add_argument("slug")
@@ -1255,6 +1327,21 @@ def main(argv=None) -> int:
             print(f"✗ {err}", file=sys.stderr)
             return 2
         sys.stdout.write(shared + tail)
+        return 0
+
+    if a.cmd == "batch-prompt":
+        text, missing, err = batch_prompt(a.slug)
+        if err:
+            print(f"✗ {err}", file=sys.stderr)
+            return 2
+        if a.write:
+            path = os.path.join(pack_root(a.slug), "_batch-prompt.md")
+            os.makedirs(pack_root(a.slug), exist_ok=True)
+            open(path, "w", encoding="utf-8").write(text)
+            print(f"✓ {os.path.relpath(path, PROJ)} — {len(missing)} profile(s): "
+                  f"{', '.join(missing)} ({len(text):,} chars, ~{len(text)//4:,} tokens)")
+        else:
+            sys.stdout.write(text)
         return 0
 
     if a.cmd == "qc-plan":

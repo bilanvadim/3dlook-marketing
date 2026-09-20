@@ -91,6 +91,13 @@ do not "just check" with a directory listing when a subcommand answers the same 
    Pass that output to the `post-drafter` subagent **verbatim**. Do not summarise it, do
    not reorder it, do not prepend a note of your own.
 
+   **Do not end your session while the drafter is running.** Twice on 2026-09-20 a
+   posts job went `done` with the words "waiting for the drafter" and no post on disk
+   (#136, #158): the session ended, the subagent died with it, and the queue recorded
+   success over nothing. The drafter's report must be in front of you before you run
+   the lint in step 4, and a Stop hook will refuse to let the session end while this
+   profile's `post.md` is missing.
+
    This matters beyond convenience. The first section of that output is byte-identical for
    all nine profiles, and prompt caching keys on the exact prefix: the first drafter in the
    pack writes the cache, the other eight read it. With

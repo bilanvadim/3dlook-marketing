@@ -46,7 +46,12 @@ USAGE
                                            #   2; naming a stage means just that one.
                                            #   Either way it never re-plans and never
                                            #   parks at checkpoint 1 with nobody to ask
-    mvb-run.py posts    <slug|url>         # social posts  (/post-from-article)
+    mvb-run.py posts    <slug|url> [--batch]
+                                           # social posts. Default: fan-out, one job
+                                           # per missing profile (/post-one-profile).
+                                           # --batch: ONE job, one drafter writes all
+                                           # missing posts (/post-batch) — accepted as
+                                           # the main mode 2026-09-20 after the §9 A/B
     mvb-run.py outbound "<market/task>"    # outbound      (/outbound)
     mvb-run.py campaign "<task>"           # blended VB×SM (/vbsm-campaign)
     mvb-run.py articles                    # what can be turned into posts, and from which file
@@ -181,7 +186,7 @@ def live_duplicate(conn: sqlite3.Connection, title: str):
         (title,)).fetchone()
 
 
-def cmd_enqueue(m, route: str, arg: str) -> int:
+def cmd_enqueue(m, route: str, arg: str, batch: bool = False) -> int:
     r = m.MVB_ROUTES[route]
     work_dir = m._mvb_dir()
     if not os.path.isdir(work_dir):
@@ -193,7 +198,17 @@ def cmd_enqueue(m, route: str, arg: str) -> int:
     # See the comment above _fanout_posts in claude_switcher.py for why. The list and
     # the prompts come from there, not from here, so this script and the Telegram
     # buttons still cannot drift.
-    fan = r.get("fanout") if FANOUT else None
+    # --batch: one job, one drafter, all missing profiles (/post-batch). The route
+    # must declare `prepare_batch`; anything else falls through to its normal path.
+    if batch:
+        prep = r.get("prepare_batch")
+        if not prep:
+            print(f"⚠️ маршрут {route} не умеет --batch")
+            return 2
+        r = dict(r, prepare=prep)
+        fan = None
+    else:
+        fan = r.get("fanout") if FANOUT else None
     if fan:
         jobs, note, err = fan(arg)
         if err:
@@ -403,7 +418,9 @@ def main(argv) -> int:
         print(f"неизвестная команда «{cmd}». Есть: "
               + ", ".join(list(CMD_TO_ROUTE) + ["articles", "digest", "status"]))
         return 2
-    return cmd_enqueue(m, route, " ".join(rest).strip())
+    batch = "--batch" in rest
+    rest = [x for x in rest if x != "--batch"]
+    return cmd_enqueue(m, route, " ".join(rest).strip(), batch=batch)
 
 
 if __name__ == "__main__":
