@@ -1,0 +1,252 @@
+# Built by context-pack-builder 2026-09-21 (read-only agent, stable-sections contract); saved by the coordinator.
+# Stable sections inserted verbatim from _stable-fitxpress.yaml (rendered 2026-09-21, --check OK).
+context_pack:
+  created: 2026-09-21
+  product: fitxpress
+  track: seo
+  channel: blog
+  profile: none
+  objective: "SEO article — 'What Body Data Should Be Included in a GLP-1 Patient Progress Record?' — plan stage for seo-planner. Hub 3 (GLP-1 Market & Progress Tracking), cluster Documentation, BOFU, GEO/AI-answer format."
+  target_agent: seo-planner
+  slug: "2026-09-21-glp-1-patient-progress-record-body-data"
+
+  phase_0_resolved: true
+  action_type: "Create net-new"   # content-plan.md:163, verbatim — GATE: GO → Phase 1
+
+  company_oneliner: "3DLOOK turns two smartphone photos into a 3D body model and 80+ body measurements in 45 seconds, via API and SDK."
+
+  product_summary: |
+    FitXpress: mobile body scanning producing structured, timestamped body-data records
+    (submitted / generated / technical fields per FXS-LIFECYCLE) from two smartphone photos.
+    For this topic: what belongs in a GLP-1 patient progress record — which fields, why each
+    one, at what cadence — for clinics/platforms building or evaluating a documentation
+    system. Not a baseline-standardization piece (that's the sister P1 row), not an
+    eligibility/BMI-verification piece, not a lab/clinical monitoring piece. Operational
+    field-composition question, not a clinical-recommendation one.
+
+  approved_claims:   # FXS-* inserted verbatim from _stable-fitxpress.yaml
+    - id: FXS-SPEED
+      text: "Two photos (front + side); structured outputs in under 45 seconds."
+      source: "proof-points.md, Speed table"
+    - id: FXS-OUTPUTS
+      text: "80+ body measurements; body composition outputs: BMI, BMR, fat %, lean mass, fat mass, essential fat, beneficial fat."
+      source: "proof-points.md, Output coverage (verbatim)"
+      note: "Always '80+ body measurements', never '80+ body metrics'; BMI/BMR/composition are calculated metrics/estimates, not measurements. ANCHOR CLAIM for this article's 'short answer' section — this is literally the field list."
+    - id: FXS-DELIVERY
+      text: "Delivered primarily via API/SDK integration directly into the customer's own product or interface; the FitXpress Admin Panel is an optional centralized view for teams that do not want to build their own dashboard."
+      source: "overview.md + Vadim's checkpoint-1 decision, 2026-09-21"
+      note: "Order fixed by Vadim: API/SDK first, Admin Panel named directly and second, as the option. Same wording rule the sibling telehealth-documentation article uses — keep consistent if both mention delivery."
+    - id: FXS-ACCURACY
+      text: "3DLOOK's measurement accuracy of approximately 96-97% across body metrics, with a typical absolute error of 1.5-2.0 cm per measurement, varying by body part"
+      source: "accuracy-formulations.md §1.1, verbatim"
+      note: "SECONDARY: only if the piece actually discusses accuracy. Never without condition + link to framework article. Never combined with ISO 8559 0.40 cm in one paragraph. Likely NOT needed in this article — the thesis is field composition, not accuracy; if used, one FAQ paragraph only, same pattern as the sibling telehealth-documentation plan's FAQ 4."
+    - id: FXS-REPEAT
+      text: "For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm"
+      source: "accuracy-formulations.md §1.2"
+      note: "SECONDARY, for the 'why cadence/comparability matters' section. Write '< 1 cm' / 'below 1 cm', locked convention. Directly relevant: it's the reason scan-to-scan entries in a progress record are comparable at all."
+    - id: FXS-POPULATION
+      text: "FitXpress was not specifically trained on data representing people with physical disabilities, and its measurement performance has not been established for this population. This matters when a disability affects the standard standing pose or capture sequence. In those cases, the program needs a documented alternative measurement path."
+      source: "accuracy-formulations.md §5; Vadim approval 2026-09-11"
+      note: "Third sentence (documented alternative path) fits this workflow topic directly — relevant to 'what happens when a patient can't complete a scan' if that appears in FAQ."
+    - id: FXS-HIPAA
+      text: "FitXpress can support HIPAA-governed deployments where 3DLOOK acts as a business associate under an executed BAA, where applicable."
+      source: "compliance.md §1, live trust FAQ"
+      note: "Section-first + link to FAQ only, do not restate."
+    - id: FXS-GDPR
+      text: "In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR."
+      source: "compliance.md §2, verbatim"
+      note: "Keep 'the data'; hedge not cut."
+    - id: FXS-IDS
+      text: "Scan records are associated with anonymized, randomly generated IDs; 3DLOOK cannot identify a specific individual from stored scan records."
+      source: "compliance.md §4"
+    - id: FXS-LIFECYCLE
+      text: "Submitted data: front/side photos + gender + height + optional weight. Generated data: body measurements, weight/BMI-related outputs, body composition estimates, a 3D model, scan-to-scan comparison outputs. Technical data: capture-quality/pose-validation flags, clothing classification, face-obfuscation confirmation, processing logs with timestamps and request metadata."
+      source: "compliance.md §3"
+      note: "SECOND ANCHOR CLAIM. This three-part breakdown (submitted / generated / technical) is close to the article's actual spine — 'what goes into the record' maps almost directly onto it. Do not invent record fields beyond this list plus FXS-OUTPUTS."
+    - id: FXS-RETENTION
+      text: "Measurements, body composition data and 3D models are retained on an ongoing basis unless the customer agreement says otherwise; deletion is by scan identifier on the customer's request."
+      source: "compliance.md §3/§4"
+      note: "'Processed, not stored' is banned — outputs are retained. Directly relevant to a 'progress record' article (the record persists so it can be compared over time)."
+    - id: FXS-SCOPE
+      text: "Supports: remote intake and body-measurement capture; body composition outputs and Body Progress comparisons; structured data collection for research protocols; structured intake and supporting documentation for customer-managed eligibility workflows; patient/member engagement. Does not independently determine: a diagnosis, treatment, medication recommendation, fitness for duty, employment eligibility, insurance eligibility, clinical-trial eligibility, or any other high-impact individual decision. Final decisions stay with the customer's clinicians, underwriters or other designated decision-makers."
+      source: "compliance.md §7"
+      note: "Canonical 'what FitXpress does not do' section, mandatory for this article (GLP-1 is sensitive vertical)."
+    - id: FXS-MEDICAL
+      text: "FitXpress is not a medical device."
+      source: "compliance.md; Vadim 2026-09-11 (4th-state rule)"
+      note: "Direct statement, never 'positioned as'."
+
+  banned_claims:
+    - "most accurate body scanning / best-in-class without a specific benchmark"
+    - "any accuracy figure reduced to one universal number without decision/reference/protocol/population/tolerance condition"
+    - "medical device / diagnostic / clinical assessment / dosing / prescribing recommendation / eligibility decisioning"
+    - "replaces DXA (also written DEXA), BIA, calibrated scales, or clinician review"
+    - "automated eligibility, underwriting, or fraud-detection claims"
+    - "guaranteed compliance / guaranteed outcomes / 'makes you compliant'"
+    - "any number not in approved_claims"
+    - "named competitor comparisons (Prism Labs, Bodygram, Size Stream, etc.)"
+    - "HIPAA compliant / HIPAA certified / SOC 2 certified / FDA-cleared"
+    - "'no personal identifiers' / 'no personal data' — retired 2026-09-18"
+    - "'processed, not stored' — outputs are retained on an ongoing basis"
+    - "'FitXpress tracks each patient over time' → 'the program compares scans it selects' / 'scan-to-scan comparison'"
+    - "'95%+ repeatability consistency' — internal only, never published"
+    - "naming Yazen or any customer by name in this article, its meta, alt text, FAQ or publish package — decision carried over from the 2026-09-19 sibling pack ('язен не згадуємо'). If a case reference is useful, anonymize: 'a weight-loss management platform', no geo."
+    - "dosing, prescribing, or medication-effectiveness claims about GLP-1 drugs themselves — FitXpress has nothing to say about the drug, only the body-data layer around it"
+    - "content-plan labels (hub, cluster, pillar, supporting content, bridge) in headings or body text"
+
+  banned_words:
+    - comprehensive
+    - delve
+    - disrupt
+    - groundbreaking
+    - harness
+    - leverage
+    - realm
+    - revolutionary
+    - robust
+    - seamless
+    - tapestry
+    - unparalleled
+
+  terminology: "Механические запреты не дублируются — читать brand-assets/style-guides/hard-bans-card.md (generated, один экран). Судейские строки (corrective negation, we/our, you, buyer/customer, content-plan labels) — terminology-guardrails.md, за редактором."
+
+  tone:
+    voice: "calm, specific, evidence-led B2B (about-me.md); reframe move as declarative statement, not rhetorical question; GEO/AEO answer-first format — direct short answer to the title question early, bullets over prose where listing record fields"
+    length: "BOFU supporting article, ~1,900-2,300 words (match manual-vs-digital-intake occ-health article, ~1,877 live)"
+    format: "12-part standard structure (about-me.md); early italic scope note (GLP-1 = sensitive vertical); FAQ block; single BOFU CTA per about-me.md CTA discipline"
+    dont: "no hype, no clinical-recommendation framing, no dosing/eligibility bleed, no baseline-standardization content (sister row's territory), no repeat of glp-1-market's growth/progress thesis"
+
+  voice_fingerprint:
+    - "The reframe move as a plain statement: 'what should the record carry' → answered directly, not teased"
+    - "Declarative, unhurried; mean sentence length < 16 words (article_lint gate 10); concrete over abstract — every claim carries a number, source, or disclosed limit"
+    - "Honest about limits in the same breath as capability; actor framing (clinic, program, care team, coordinator), not 'you'-spam"
+    - "Sensitive vertical (GLP-1): early italic scope note before any capability claim"
+
+  claims_discipline:
+    - "NEVER: diagnose, make treatment/dosing/eligibility/clearance decisions, replace clinician/DXA/BIA/calibrated scale, guarantee compliance, auto-detect fraud"
+    - "Describe as: a mobile body-scanning solution; a structured body-data capture layer; a documentation layer supporting review. FitXpress is not a medical device, not a prescribing or dosing tool."
+
+  live_slugs:   # from _stable-fitxpress.yaml, plus one delta confirmed this session
+    - the-potential-of-ai-in-telehealth
+    - ai-in-fitness-industry
+    - mobile-body-scanning-accuracy
+    - top-7-remote-body-composition-tools-glp-1-clinics
+    - online-pharmacy-bmi-verification-a-2026-compliance-guide
+    - glp-1-market
+    - bariatric-pre-qualification-mobile-3d-body-scanning
+    - fitxpress-data-privacy-security-regulatory-faq
+    - manual-vs-digital-intake-occupational-health-screening
+    - fitxpress-admin-panel-launch   # DELTA, confirmed live this session (published-articles-inventory.md:224); company-announcement post, the row's named link anchor
+
+  recently_published:   # from stable + one in-flight note
+    - {slug: online-pharmacy-bmi-verification-a-2026-compliance-guide, published: "2026-08-24"}
+    - {slug: glp-1-market, published: "2026-08-28"}
+    - {slug: bariatric-pre-qualification-mobile-3d-body-scanning, published: "2026-09-15"}
+    - {slug: fitxpress-data-privacy-security-regulatory-faq, published: "2026-09-16"}
+    - {slug: manual-vs-digital-intake-occupational-health-screening, published: "2026-09-21"}
+    - note: "SIBLING IN FLIGHT, not published: 2026-09-21-ai-body-scanning-telehealth-documentation (Hub 2, same Admin Panel anchor). Plan approved 2026-09-21, not live — do not treat as a link target with a real URL yet, coordinate the boundary, don't wait on it."
+
+  icp_context:
+    segment: "Telehealth & GLP-1 / Weight Loss Programs (icp-detail.md #1 / audience.md #1)"
+    buyer_persona: "Head of Clinical Operations · Care Coordination Manager · Chief Medical Officer/Medical Director · Head of Outcomes/Program Insights (documentation feeds payer/employer outcomes reporting)"
+    pain_points:
+      - "Fragmented data (self-report + scale + photos) blocks clean longitudinal record-keeping; manual intake burdens the clinical team"
+      - "No standardized way to show body progress over time; GLP-1 prescribing needs reliable baseline/follow-up body metrics"
+      - "Small real composition changes get lost in measurement noise with weak repeatability"
+      - "Payers and enterprise partners increasingly expect measurable, defensible outcomes, not a self-report trend line"
+    hero_message: "A structured progress record carries the same fields every entry, so small real changes survive measurement noise and outcomes stay defensible for payer/employer partners."
+    segment_hook: "audience.md #1: make body progress visible → repeat check-ins → adherence → retention; repeatability (< 1 cm) so small real changes aren't lost in noise; longitudinal, defensible outcomes for payer/employer partners."
+    do_not_say:
+      - "No diagnostic claims; not a DXA or calibrated-scale replacement; no eligibility decisioning"
+      - "Keep separate from UK online-pharmacy BMI compliance — this piece links to it, does not merge with it or re-explain its workflow"
+
+  content_strategy:
+    hub: "Hub 3 — GLP-1 Market & Progress Tracking"
+    cluster: "Documentation"
+    intent: "BOFU"
+    action_type: "Create net-new"   # content-plan.md:163, verbatim — GATE, GO
+    priority: "P1"
+    pencilled: "October 2026"
+    existing_urls:
+      - "https://3dlook.ai/content-hub/fitxpress-admin-panel-launch/  # named link anchor in the row (records/export/workflow)"
+      - "https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/  # named link anchor in the row; owns BMI verification/eligibility — link only, never re-explain the workflow"
+    cannibalization_guardrail: >
+      Hub 3 preamble (content-plan.md:157): "Every GLP-1 supporting asset must own a distinct
+      intent and not repeat GLP-1 Market, Online Pharmacy BMI Verification, Visual Progress
+      Tracking or the GLP-1 tools list." This row's territory: WHICH FIELDS go in a GLP-1
+      progress record and why, at what cadence — not market growth (glp-1-market owns that),
+      not the buyer-evaluation tools list (top-7-remote-body-composition-tools-glp-1-clinics),
+      not BMI/eligibility verification (online-pharmacy-bmi-verification, link only), not
+      progress VISIBILITY/engagement (mobile-body-scanning-patient-engagement,
+      visual-progress-tracking-glp1-adherence-retention — those own the engagement angle).
+      Sister row (content-plan.md:164, "How Weight-Loss Clinics Can Standardize Baseline Body
+      Data for GLP-1 Patients", also P1, separately pencilled): BASELINE data-standardization
+      is NOT this article's territory — this one is the ongoing PROGRESS record (what fields,
+      why each, comparability over time). One passing-mention sentence on baseline is fine,
+      do not develop it into a section.
+      Same-day sibling (Hub 2, 2026-09-21-ai-body-scanning-telehealth-documentation, same
+      Admin Panel anchor): that piece is about record CONSISTENCY across telehealth generally
+      (intake, format, retrieval); this piece is about record COMPOSITION specifically for
+      GLP-1 (which body-data fields, why each, what cadence). Do not copy its structure,
+      its outline-table, or its FAQ set — different intent, different hub.
+    recommendation: "Net-new BOFU/GEO answer-first article: what body data belongs in a GLP-1 patient progress record. Lead with a direct short answer (submitted / generated / technical fields, per FXS-LIFECYCLE + FXS-OUTPUTS), then why each field matters for GLP-1 specifically (lean-mass-vs-scale-weight framing, comparability via repeatability), then where FitXpress fits (delivery, retention, boundaries), then an evaluation/FAQ close. No market-growth section, no tools comparison, no BMI-verification workflow."
+    vertical_boundary: "GLP-1 (content-strategy-guidelines.md §9): owns medication-supported weight-loss progress tracking, body composition, patient records, clinic workflows, baseline data, and tools for GLP-1 clinics. Does not duplicate the GLP-1 market page, visual progress page, Beyond BMI page, or online pharmacy BMI verification article. No dosing, eligibility, or diagnosis framing anywhere in this piece — record fields are operational, not clinical recommendations."
+    internal_link_targets:
+      up:
+        - "https://3dlook.ai/content-hub/glp-1-market/  # Hub 3 anchor — up-link only, do not repeat its market/progress-tracking thesis"
+      sideways:
+        - "https://3dlook.ai/content-hub/fitxpress-admin-panel-launch/  # named row anchor — records/export/workflow"
+        - "https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/  # named row anchor — link only, BMI/eligibility owner"
+        - "https://3dlook.ai/content-hub/top-7-remote-body-composition-tools-glp-1-clinics/  # optional, buyer-evaluation tools owner"
+      down:
+        - "https://3dlook.ai/structured-body-data-for-telehealth-digital-health-programs/  # closest BOFU product page. NOTE: '/fitxpress/for-telehealth-and-weight-loss/' does NOT exist — /fitxpress/ 301s to / (page-pipeline.md, Vadim correction 2026-08-23); this benchmark page is the correct destination, same one the Hub-2 sibling article uses. No dedicated GLP-1-specific product page exists."
+      trust:
+        - "https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/  # cite only if FXS-ACCURACY or FXS-REPEAT is used"
+        - "https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/  # short note + link only, do not restate"
+
+  published_inventory:
+    already_live: false
+    published_hub_articles:
+      - {slug: "glp-1-market", published: "2026-08-28", role: "hub"}
+      - {slug: "top-7-remote-body-composition-tools-glp-1-clinics", published: "2026-08-21", role: "P0 supporting listicle"}
+      - {slug: "online-pharmacy-bmi-verification-a-2026-compliance-guide", published: "2026-08-24", role: "P0/P1, owns BMI verification"}
+      - {slug: "fitxpress-admin-panel-launch", published: "2026", role: "company post, named row anchor"}
+    recently_published: "see recently_published block above"
+    refresh_status: "Not a refresh — net-new. Hub (glp-1-market) and tools listicle are current (within ~4 weeks)."
+
+  keywords_raw:
+    source: "ahrefs api v3 (keywords-explorer), Standard 2022 plan"
+    pulled: "2026-09-21"
+    primary:
+      file: "workspace/seo/_keywords/2026-09-21-glp-1-patient-progress-record-body-data.yaml"
+      seed: "glp-1 patient progress record"
+      seed_has_data: false
+      seed_metrics: null
+      note: "No measurable demand for the exact phrase or close variants ('glp-1 patient progress', 'patient progress record' both no_data). 'glp-1 patient' alone: 10/mo. Auto idea_seed drifted to 'glp-1 patient' → all 40 ideas are off-intent (patient assistance programs, education PDFs, embody portal login, satisfaction surveys). Zero keyword-idea overlap with this article's actual topic."
+    seed_glp_1_progress_tracking:
+      file: "workspace/seo/_keywords/2026-09-21-glp-1-patient-progress-record-body-data--seed-glp-1-progress-tracking.yaml"
+      seed_has_data: false
+      seed_metrics: null
+      note: "'glp-1 progress tracking' no_data; 'glp-1 progress' alone: 0/mo. Ideas are generic 'progress tracking' noise (construction, student, project-management) — no GLP-1/health relevance at all."
+    seed_glp_1_monitoring:
+      file: "workspace/seo/_keywords/2026-09-21-glp-1-patient-progress-record-body-data--seed-glp-1-monitoring.yaml"
+      seed_has_data: true
+      seed_metrics: {volume: 10, difficulty: null}
+      note: "Real but tiny adjacent pocket: 'glp-1 monitoring tools for home use' 60/mo, 'glp-1 lab monitoring' 30/mo, 'glp-1 blood work monitoring' 20/mo. This is CLINICAL/LAB monitoring intent (bloodwork, dosage follow-up), not body-data documentation. Adjacent, not a target — at most one FAQ line distinguishing body-data records from lab monitoring, per boundary above (no diagnosis/dosing content)."
+    synthesis: "No measured search demand anywhere close to this article's actual title or intent. This is a sales-support BOFU/GEO piece (answer-format for an AI-answer / direct-question query, and a link anchor for the Admin Panel + BMI-verification content), not a traffic play. seo-planner should state this directly in the plan rather than force-fitting a keyword narrative — null ≠ zero, but here it is a genuine finding: nobody is searching this exact phrase yet."
+
+  examples:
+    - file: "brand-assets/past-articles/blog/manual-vs-digital-intake-occupational-health-screening.md"
+      note: "Register/sentence-length reference per CLAUDE.md §15 pt 0-1 (editor's final, live 2026-09-21)."
+    - file: "workspace/seo/articles/2026-09-21-ai-body-scanning-telehealth-documentation/plan.md"
+      note: "Same-cluster sibling plan (Hub 2, Documentation) — read for format/rigor, NOT for structure or FAQ set to copy. See cannibalization_guardrail sibling-boundary note above."
+    - reference_only: "about-me.md + brand-assets/style-guides/hard-bans-card.md — planner token-diet exception (CLAUDE.md §15 pt 1): planner does not read the full blog-style-guide.md / editorial-rewrites.md, seo-writer/seo-editor do."
+
+  competitors_context: |
+    Prism Labs is the primary FX competitor in GLP-1/progress-tracking narrative — strong in
+    "body composition beyond BMI" and weight-loss programs (competitors.md §1). Our angle here:
+    repeatability (< 1 cm) makes small real composition changes survivable in a record, and
+    the record's field structure (submitted/generated/technical) is already workflow-ready for
+    documentation, not just a scan output. Never name competitors in the article.
+
+  exclusions: null   # not applicable, track is seo
