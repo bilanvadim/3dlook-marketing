@@ -14,7 +14,9 @@ as "copyrighted", so it is curl plus an HTML-to-markdown pass); this script is t
 pass, mechanised.
 
 WHAT IT KEEPS AND DROPS — same conventions as the hand-made captures:
-  keeps  h1-h4, paragraphs, lists (nested), tables, links, bold/italic
+  keeps  h1-h4, paragraphs, lists (nested), tables, links, bold/italic, the FAQ
+         accordion (<details> + Yoast FAQ block) as `## <summary>` + `### question`
+         + answer, the "Further reading" block as a list
   drops  images and figures, the mid-article eBook CTA (div.image-content), author
          bio and related posts (everything from the end marker on), script/style/nav,
          empty anchor-only table rows, the TOC block before the h1
@@ -80,6 +82,12 @@ class MD(HTMLParser):
         self.rows: list[list[str]] = []
         self.cell: list[str] | None = None
         self.in_cell_div_break = False
+        # Open bold/italic/FAQ-question tags, innermost last. WordPress nests them (the
+        # Yoast FAQ wraps each question in three or four <strong>s), so only the
+        # outermost tag of a run may emit a marker; one `**` per tag turned every
+        # question into `********…********` (wellness-platforms capture, 2026-09-21).
+        self.inline: list[str] = []                 # "bold" | "em" | "faq_q"
+        self.in_heading = False
 
     # -- helpers ----------------------------------------------------------
     def _emit(self, text: str):
@@ -93,6 +101,28 @@ class MD(HTMLParser):
     def _para_break(self):
         if self.cell is None and self.href is None:
             self.out.append("\n\n")
+
+    def _marks_allowed(self) -> bool:
+        # headings and FAQ questions are rendered as headings; bold inside is noise
+        return not self.in_heading and "faq_q" not in self.inline
+
+    def _open_inline(self, kind: str, mark: str):
+        if kind not in self.inline and self._marks_allowed():
+            self._emit(mark)
+        self.inline.append(kind)
+
+    def _close_inline(self, kinds: tuple[str, ...], mark: str):
+        # the end tag carries no class, so close the innermost open tag of its family
+        for k in range(len(self.inline) - 1, -1, -1):
+            if self.inline[k] in kinds:
+                kind = self.inline.pop(k)
+                break
+        else:
+            return                                  # stray end tag
+        if kind == "faq_q":
+            self._para_break()
+        elif kind not in self.inline and self._marks_allowed():
+            self._emit(mark)
 
     # -- parser events ----------------------------------------------------
     def handle_starttag(self, tag, attrs):
@@ -109,6 +139,18 @@ class MD(HTMLParser):
         if tag in ("h1", "h2", "h3", "h4"):
             self._para_break()
             self.out.append("#" * int(tag[1]) + " ")
+            self.in_heading = True
+        elif tag == "details":
+            self._para_break()
+        elif tag == "summary":
+            # the theme's accordions are whole sections (FAQ), so the toggle label
+            # is an h2 — the same `## FAQ` the hand-made captures used
+            self._para_break()
+            self.out.append("## ")
+            self.in_heading = True
+        elif tag == "div" and self.cell is None and (
+                "schema-faq-section" in cls or "further__list" in cls):
+            self._para_break()
         elif tag == "p":
             self._para_break()
         elif tag == "br":
@@ -143,19 +185,32 @@ class MD(HTMLParser):
             if self.cell and "".join(self.cell).strip():
                 self.cell.append(" · ")
         elif tag == "a":
+            if "further__item" in cls:              # "Further reading" links, no <li>
+                self.out.append("\n- ")
             self.href = a.get("href", "")
             self.link_text = []
         elif tag in ("strong", "b"):
-            self._emit("**")
+            if "schema-faq-question" in cls:
+                self._para_break()
+                self.out.append("### ")
+                self.inline.append("faq_q")
+            else:
+                self._open_inline("bold", "**")
         elif tag in ("em", "i"):
-            self._emit("*")
+            self._open_inline("em", "*")
 
     def handle_endtag(self, tag):
         if self.skip_depth:
             if tag not in VOID:
                 self.skip_depth -= 1
             return
-        if tag in ("ul", "ol") and self.list_stack and not self.in_table:
+        if tag in ("h1", "h2", "h3", "h4", "summary"):
+            self.in_heading = False
+            if tag == "summary":
+                self._para_break()
+        elif tag == "details":
+            self._para_break()
+        elif tag in ("ul", "ol") and self.list_stack and not self.in_table:
             self.list_stack.pop()
             self.ol_counters.pop()
             if not self.list_stack:
@@ -178,9 +233,9 @@ class MD(HTMLParser):
             if text:
                 self._emit(f"[{text}]({href})")
         elif tag in ("strong", "b"):
-            self._emit("**")
+            self._close_inline(("bold", "faq_q"), "**")
         elif tag in ("em", "i"):
-            self._emit("*")
+            self._close_inline(("em",), "*")
 
     def handle_data(self, data):
         if self.skip_depth:

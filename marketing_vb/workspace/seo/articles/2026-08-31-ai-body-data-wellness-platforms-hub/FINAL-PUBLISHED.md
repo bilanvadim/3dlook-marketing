@@ -54,9 +54,12 @@ body-data provider" sections do not exist on the live page.
   `/content-hub/mobile-body-scanning-accuracy/?utm_source=chatgpt.com`~~ — **fixed by Vadim
   2026-09-21** (live page modified 08:52 UTC, verified: bare URL, no `utm_source` left).
 
-## Capture caveat
+## Capture history
 
-`capture-live.py` flattens the FAQ accordion: questions come out as `********…********` bold
-runs appended to the previous paragraph (lines ~126–134 of the capture). The text and numbers
-are intact, and only the formatting is broken. The script needs an accordion rule before the
-next FAQ-bearing page.
+The first capture (08:28 UTC, which the social pack was drafted from) flattened the FAQ
+accordion into `********…********` runs glued to the previous paragraph. `capture-live.py` was
+fixed the same day, and the file was re-captured with `--force` after Vadim's link fix
+(page modified 08:52 UTC). The text is the same as what the drafter read. What changed: the FAQ
+is now `## FAQ` + `### question`, "Further reading" is a list, and the FAQ link goes to the
+trust FAQ (`/fitxpress-data-privacy-security-regulatory-faq/`). The pack still lints 9/9
+against it.

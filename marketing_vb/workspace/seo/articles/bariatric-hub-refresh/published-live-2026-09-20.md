@@ -147,12 +147,28 @@ The internal validation population included participants aged 16 to 78, heights 
 
 ## Next steps and related reading
 
-Begin with one workflow and one payer: map the packet requirements against the body-data documentation available on the day of the consultation, then define what would constitute a successful pilot. [Request a FitXpress demo](https://3dlook.ai/pricing/#bd-modal-personalized) or [contact the sales team](https://3dlook.ai/contact-us/). Related reading: [Online Pharmacy BMI Verification: A 2026 Compliance Guide](https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/) [AI Body Data Across Health Programs: A Guide to Verified Body Measurement](https://3dlook.ai/content-hub/ai-body-data-health-hub/) [GLP-1 Market Growth and the Need for Better Patient Progress Tracking](https://3dlook.ai/content-hub/glp-1-market/) [AI in Telehealth: Workflows, Privacy, Patient Experience, and Remote Body Data Use Cases](https://3dlook.ai/content-hub/the-potential-of-ai-in-telehealth/) **FAQ** ********How does Smart Scales support BMI comparison during remote intake?********
+Begin with one workflow and one payer: map the packet requirements against the body-data documentation available on the day of the consultation, then define what would constitute a successful pilot. [Request a FitXpress demo](https://3dlook.ai/pricing/#bd-modal-personalized) or [contact the sales team](https://3dlook.ai/contact-us/).
 
-Smart Scales predicts weight from the capture and can compare that estimate with the self-reported weight, both of which are collected. The program can then review BMI calculated from self-reported height and weight, alongside BMI calculated from the same height and Smart Scales’ predicted weight. A difference above the configured threshold is a signal for human review. ********How long do specified payers have to decide a bariatric prior authorization?********
+Related reading:
+- [Online Pharmacy BMI Verification: A 2026 Compliance Guide](https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/)
+- [AI Body Data Across Health Programs: A Guide to Verified Body Measurement](https://3dlook.ai/content-hub/ai-body-data-health-hub/)
+- [GLP-1 Market Growth and the Need for Better Patient Progress Tracking](https://3dlook.ai/content-hub/glp-1-market/)
+- [AI in Telehealth: Workflows, Privacy, Patient Experience, and Remote Body Data Use Cases](https://3dlook.ai/content-hub/the-potential-of-ai-in-telehealth/)
 
-Under CMS-0057-F, beginning January 1, 2026, Medicare Advantage organizations and specified Medicaid and CHIP payers must decide standard non-drug requests within 7 calendar days and expedited requests within 72 hours. Some requests may qualify for an extension of up to 14 additional calendar days under program-specific conditions. The decision-timeframe provisions did not change the requirements for Qualified Health Plans on Federally Facilitated Exchanges, and Medicare fee-for-service is outside these provisions. ********Does FitXpress determine eligibility or payer approval?********
+## FAQ
 
-No. FitXpress provides body metrics and capture-quality information for review. The licensed program determines clinical eligibility, and the payer makes the prior-authorization decision and determines whether it accepts a scan record for a given documentation requirement. ********Can FitXpress replace in-clinic measurement?********
+### How does Smart Scales support BMI comparison during remote intake?
+
+Smart Scales predicts weight from the capture and can compare that estimate with the self-reported weight, both of which are collected. The program can then review BMI calculated from self-reported height and weight, alongside BMI calculated from the same height and Smart Scales’ predicted weight. A difference above the configured threshold is a signal for human review.
+
+### How long do specified payers have to decide a bariatric prior authorization?
+
+Under CMS-0057-F, beginning January 1, 2026, Medicare Advantage organizations and specified Medicaid and CHIP payers must decide standard non-drug requests within 7 calendar days and expedited requests within 72 hours. Some requests may qualify for an extension of up to 14 additional calendar days under program-specific conditions. The decision-timeframe provisions did not change the requirements for Qualified Health Plans on Federally Facilitated Exchanges, and Medicare fee-for-service is outside these provisions.
+
+### Does FitXpress determine eligibility or payer approval?
+
+No. FitXpress provides body metrics and capture-quality information for review. The licensed program determines clinical eligibility, and the payer makes the prior-authorization decision and determines whether it accepts a scan record for a given documentation requirement.
+
+### Can FitXpress replace in-clinic measurement?
 
 The required method depends on the program’s protocol, the payer’s documentation rules, and the purpose of the measurement. DXA, bioelectrical impedance analysis, calibrated scales, and clinician-taken measurements remain the methods of record wherever they are required.

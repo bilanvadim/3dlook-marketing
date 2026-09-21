@@ -4,7 +4,7 @@ title: "AI Body Data for Wellness Platforms: Progress Tracking, Personalization,
 status: published
 published_url: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
 article_published_time: 2026-09-14T05:30:00+00:00
-article_modified_time: 2026-09-17T11:09:45+00:00
+article_modified_time: 2026-09-21T08:52:01+00:00
 captured_from_live: 2026-09-21
 capture_method: "scripts/capture-live.py — curl of the live page, body converted to markdown; images, eBook CTA and author bio dropped"
 source_of_truth: live page
@@ -16,7 +16,7 @@ AI body data gives a wellness platform a repeatable progress signal, supporting 
 
 By Assel Sekerova
 
-Updated: September 17, 2026
+Updated: September 21, 2026
 
 Published: September 14, 2026
 
@@ -123,12 +123,27 @@ Corporate wellness applies the same remote baseline and follow-up workflow acros
 
 The central evaluation criterion for a wellness product is whether the second scan produces a comparison that members and program teams can use. A credible implementation makes that comparison repeatable, understandable, and connected to a relevant next action.
 
-Workout programming and performance are covered in [AI in fitness](https://3dlook.ai/content-hub/ai-in-fitness-industry/). [How to measure body composition](https://3dlook.ai/content-hub/how-to-measure-body-composition/) compares measurement approaches. The [AI body data](https://3dlook.ai/content-hub/ai-body-data-health-hub/) maps related applications across health and wellness programs. **FAQ** ********How often should a wellness program schedule body scans?********
+Workout programming and performance are covered in [AI in fitness](https://3dlook.ai/content-hub/ai-in-fitness-industry/). [How to measure body composition](https://3dlook.ai/content-hub/how-to-measure-body-composition/) compares measurement approaches. The [AI body data](https://3dlook.ai/content-hub/ai-body-data-health-hub/) maps related applications across health and wellness programs.
 
-The final cadence is personalized and should reflect the program’s goal, the expected rate of change, and the consistency of capture conditions. ********How should a wellness platform choose which metrics to display?********
+## FAQ
 
-Metric selection should begin with the member’s chosen goal and the program’s defined purpose. A focused progress view may include selected measurements, a visual comparison, and the change since baseline. Broader access depends on program need, privacy terms, and authorization. ******How does mobile body scanning differ from DXA, BIA, and a scale?******
+### How often should a wellness program schedule body scans?
 
-Each method uses a different measurement process and reference system. Mobile body scanning supports remote, repeatable capture through a smartphone. Method selection is determined by the intended use, required evidence, available equipment, and operating environment. ******What happens to photos and scan data?******
+The final cadence is personalized and should reflect the program’s goal, the expected rate of change, and the consistency of capture conditions.
 
-3DLOOK stores scan data in Amazon S3 with mandatory SSE-S3 encryption. Photos are removed immediately after processing or within 30 days, depending on client retention requirements, and temporarily retained photos are automatically blurred. Full details are available in the [3DLOOK accuracy and privacy framework](https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/?utm_source=chatgpt.com). Further reading: [How Mobile Body Scanning Improves Patient Engagement](https://3dlook.ai/content-hub/mobile-body-scanning-patient-engagement/) [AI Body Data Across Health Programs: A Guide to Verified Body Measurement](https://3dlook.ai/content-hub/ai-body-data-health-hub/) [Wellness Rewards Verification for Employers & Insurers Using AI 3D Body Scanning](https://3dlook.ai/content-hub/wellness-rewards-verification-employers-insurers-using-ai-3d-body-scanning/)
+### How should a wellness platform choose which metrics to display?
+
+Metric selection should begin with the member’s chosen goal and the program’s defined purpose. A focused progress view may include selected measurements, a visual comparison, and the change since baseline. Broader access depends on program need, privacy terms, and authorization.
+
+### How does mobile body scanning differ from DXA, BIA, and a scale?
+
+Each method uses a different measurement process and reference system. Mobile body scanning supports remote, repeatable capture through a smartphone. Method selection is determined by the intended use, required evidence, available equipment, and operating environment.
+
+### What happens to photos and scan data?
+
+3DLOOK stores scan data in Amazon S3 with mandatory SSE-S3 encryption. Photos are removed immediately after processing or within 30 days, depending on client retention requirements, and temporarily retained photos are automatically blurred. Full details are available in the [3DLOOK accuracy and privacy framework](https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/).
+
+Further reading:
+- [How Mobile Body Scanning Improves Patient Engagement](https://3dlook.ai/content-hub/mobile-body-scanning-patient-engagement/)
+- [AI Body Data Across Health Programs: A Guide to Verified Body Measurement](https://3dlook.ai/content-hub/ai-body-data-health-hub/)
+- [Wellness Rewards Verification for Employers & Insurers Using AI 3D Body Scanning](https://3dlook.ai/content-hub/wellness-rewards-verification-employers-insurers-using-ai-3d-body-scanning/)
