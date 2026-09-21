@@ -244,3 +244,20 @@ revision 5: «в той версии мне не нравилась длинна
 - **The disability limitation is approved:** `proof-points.md`, `accuracy-formulations.md` §5.
 - **Gate 7 softened:** `editorial-final-2026-09-11.md` now passes it. Its only remaining lint
   failure is claim traceability, which is expected: an editor's file carries no claim markers.
+
+## 2026-09-21 — published
+
+Live at https://3dlook.ai/content-hub/manual-vs-digital-intake-occupational-health-screening/
+(`datePublished` 2026-09-21T08:58:49, modified 09:09:58 UTC). Self-canonical, in
+`post-sitemap.xml`, FAQPage schema present.
+
+- **Captured:** `published-live-2026-09-21.md` via `scripts/capture-live.py`. This is now the text of
+  record, and `social_pack.py resolve_source` picks it over `editorial-final-2026-09-11.md`.
+- **The live page is the editor's final:** similarity 0.965, against 0.37 for our revision 5.
+  Differences: "Next steps" moved above the FAQ, a "Related reading" list was added (the occ-health
+  hub and the main health hub), and one intro sentence and one anchor were reworded.
+- **Recorded:** `FINAL-PUBLISHED.md`, `published-articles-inventory.md` (row 15, total 161),
+  `content-plan.md` (Hub 8 row → published), and `brand-assets/past-articles/blog/` (body replaced
+  with the live transcription).
+- **For Vadim:** the table-row typo "Set up an ongoing effort", no link to the trust FAQ, and BAA and
+  photo-deletion wording that departs from `compliance.md`. See `FINAL-PUBLISHED.md`.

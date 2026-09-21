@@ -1,32 +1,13 @@
 ---
-url: https://3dlook.ai/content-hub/manual-vs-digital-intake-occupational-health-screening/
 slug: manual-vs-digital-intake-occupational-health-screening
-vertical: fitxpress
-segment: occupational health providers, pre-employment and workforce screening intake
-hub: Occupational Health Screening (Hub 8), comparison cluster
-author: Assel Sekerova
-published: 2026-09-21 (modified 2026-09-21)
-word_count: ~1877 prose
-h2_count: 9
-cta_type: evaluation (talk to 3DLOOK about the intake workflow)
-source: live page, captured 2026-09-21 (scripts/capture-live.py, body only). The live page is the editor's final from the Google Doc tab "Final version" (similarity 0.965)
-working_directory: workspace/seo/articles/2026-09-03-manual-vs-digital-intake-occupational-health/
-reference_role: >
-  The current reference for sentence length, repetition and the comparison or workflow cluster
-  format. Our revision 5 of this article passed every gate and came back from the editor as
-  "long sentences, repetition, reads as obviously AI"; this is her rewrite of it, as published.
-  Prose sentences average 14.7 words against our 17.7. Rules and before/after pairs:
-  brand-assets/style-guides/editorial-rewrites.md.
-known_issues: |
-  - Privacy paragraph: "A Business Associate Agreement ... is available on request", the dropped
-    "processes no personal identifiers", and "deletes photos after processing" without the 30-day
-    window all differ from compliance.md, which Vadim kept unchanged on 2026-09-11. Copy the shape of
-    those sentences, not their wording. The medical-device sentence and the disability limitation ARE
-    canon since the same day (editorial-guardrails.md #6, accuracy-formulations.md §5).
-  - Table row "Set up an ongoing effort" is a typo for "Set-up and ongoing effort" (live since
-    2026-09-21). Do not copy it.
-  - The privacy paragraph does not link the trust FAQ (fitxpress-data-privacy-security-regulatory-faq),
-    which Content Plan v2.0 asks every vertical privacy section to do. New articles should link it.
+title: "Manual vs Digital Intake in Occupational Health Screening: A Workflow Comparison"
+status: published
+published_url: https://3dlook.ai/content-hub/manual-vs-digital-intake-occupational-health-screening/
+article_published_time: 2026-09-21T08:58:49+00:00
+article_modified_time: 2026-09-21T09:09:58+00:00
+captured_from_live: 2026-09-21
+capture_method: "scripts/capture-live.py — curl of the live page, body converted to markdown; images, eBook CTA and author bio dropped"
+source_of_truth: live page
 ---
 
 # Manual vs Digital Intake in Occupational Health Screening: A Workflow Comparison
@@ -47,7 +28,7 @@ When intake takes place during the visit, incomplete forms, unusable measurement
 
 The choice turns on two questions: which steps can be completed remotely and whether moving them would address a documented operational problem. The [occupational health screening software](https://3dlook.ai/content-hub/occupational-health-screening-software/) covers the broader category, common use cases, and end-to-end workflow.
 
-***Scope note.*** *Digital intake refers to the overall pre-appointment process. FitXpress provides remote body-measurement capture. The program’s intake system handles questionnaire collection; testing, examination, and clinical review take place within the wider screening process. FitXpress does not perform medical examinations, make fitness-for-duty or clearance determinations, or serve as a basis for hiring or employment decisions. FitXpress is not a medical device.*
+***Scope note.**** Digital intake refers to the overall pre-appointment process. FitXpress provides remote body-measurement capture. The program’s intake system handles questionnaire collection; testing, examination, and clinical review take place within the wider screening process. FitXpress does not perform medical examinations, make fitness-for-duty or clearance determinations, or serve as a basis for hiring or employment decisions. FitXpress is not a medical device.*
 
 ## Short answer: what each intake method covers
 
