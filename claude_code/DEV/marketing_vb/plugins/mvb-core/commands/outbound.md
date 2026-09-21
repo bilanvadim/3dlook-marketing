@@ -59,7 +59,7 @@ argument-hint: "[stage] [campaign-slug]"
 | `validate` | `outbound-registry.py check --profile P --input people-raw.csv` (шаг 0 icp-validator) |
 | `messages` | — |
 | `import` | `outbound-pipeline.py check-import --campaign X` |
-| `responses` | `closely-pull.py pull --campaign X`, затем `outbound-pipeline.py check-responses --campaign X` |
+| `responses` | `closely-pull.py pull --campaign X` (**пропусти, если `responses-raw.csv` моложе 24 ч**: его тянет ночной cron, а каждый pull выбивает Вадима из app.closelyhq.com), затем `outbound-pipeline.py check-responses --campaign X` |
 | `analyze` | — (нужны `responses-classified.csv` + `metrics-final.json`) |
 
 Скрипты лежат в `/home/vadim_prod/3dlook-marketing/marketing_vb/scripts/`, резолвят пути
@@ -77,6 +77,15 @@ rate-limit и CAPTCHA), и прогон догенерировал 26 непро
 `probe`, потом `pull --max-conversations 5 --dry-run`, и только потом полный прогон.
 Раз в неделю (пн 09:05 Киева) `outbound-pipeline.py remind --notify` присылает Вадиму
 список блокеров.
+
+**С 2026-09-21 шаг 8 идёт сам, без Вадима.** `scripts/outbound-responses-daily.py night`
+(та же cron-строка 23:30 UTC, сразу после `closely-pull.py pull-all`) коммитит и пушит
+файлы ответов и ставит `/outbound responses <slug>` на каждую кампанию с
+неклассифицированными ответами. `morning` (06:00 UTC) коммитит результат, если
+`check-classified` зелёный, и присылает Вадиму в Telegram отчёт: новые ответы по кампаниям
+и аккаунтам, с категорией классификатора. Если ты запущен так, делай только шаг
+`responses`: классифицируй весь `responses-raw.csv`, после записи прогони
+`check-classified`. **Не коммить и не пуш сам** — это делает скрипт, и только после гейта.
 
 **Если `people-validated.csv` без `first_name` / `linkedin_url`** — не переписывай его
 руками: `outbound-pipeline.py fix-validated --campaign X` вернёт identity из
