@@ -66,34 +66,66 @@ export type Decision =
 export interface BreakerState {
   startedAtMs: number;
   turns: number;
-  recentSignatures: string[]; // rolling window of turn signatures for loop-detection
+  recentSignatures: string[]; // rolling window of the MAIN agent's turn signatures (loop detection)
+  /**
+   * One window per subagent, keyed by its `parent_tool_use_id`. The SDK streams subagent
+   * messages into the parent's stream, and parallel subagents interleave there. With a single
+   * shared window, five agents each finishing with a text-only message read as ONE agent
+   * repeating itself: job 161 (2026-09-21, a /post-batch coordinator blocked on 8 parallel
+   * TaskOutput waits, exactly as the command tells it to) escalated as
+   * "loop: repeated 6x: assistant:text" while the main agent had not emitted anything for
+   * a minute. A loop is one agent repeating itself, so each agent is judged on its own history.
+   */
+  subagentSignatures: Record<string, string[]>;
 }
 
 export function initState(): BreakerState {
-  return { startedAtMs: Date.now(), turns: 0, recentSignatures: [] };
+  return { startedAtMs: Date.now(), turns: 0, recentSignatures: [], subagentSignatures: {} };
+}
+
+/** Forget every loop window — a human said "not stuck, continue", so the same tail must not re-trip. */
+export function clearLoopWindows(s: BreakerState): void {
+  s.recentSignatures.length = 0;
+  s.subagentSignatures = {};
+}
+
+function windowFor(s: BreakerState, source?: string): string[] {
+  if (!source) return s.recentSignatures;
+  return (s.subagentSignatures[source] ??= []);
 }
 
 /** A "turn signature" = what the agent did this turn (tool + target). Repeated identical
  * signatures with no new files/results = spinning. Caller builds it from the event. */
-export function pushSignature(s: BreakerState, sig: string): void {
-  s.recentSignatures.push(sig);
+export function pushSignature(s: BreakerState, sig: string, source?: string): void {
+  const w = windowFor(s, source);
+  w.push(sig);
   // Window must stay comfortably above the largest threshold, or a raised
   // stuckRepeatsReadOnly could never be reached because the tail got trimmed away.
-  if (s.recentSignatures.length > 200) s.recentSignatures.shift();
+  if (w.length > 200) w.shift();
 }
 
 /** Repeat count that tripped, or null when the tail is not a loop. */
-function stuckAfter(s: BreakerState, lim: BreakerLimits): number | null {
-  const last = s.recentSignatures[s.recentSignatures.length - 1];
+function stuckAfter(w: string[], lim: BreakerLimits): number | null {
+  const last = w[w.length - 1];
   if (!last) return null;
   const repeats = repeatsForSignature(last, lim);
-  if (repeats <= 1 || s.recentSignatures.length < repeats) return null;
-  const tail = s.recentSignatures.slice(-repeats);
+  if (repeats <= 1 || w.length < repeats) return null;
+  const tail = w.slice(-repeats);
   return tail.every((x) => x === tail[0] && x !== '') ? repeats : null;
 }
 
 export type Event =
-  | { kind: 'turn'; signature: string }
+  /**
+   * `signature` is absent when the message carried no tool call (text or thinking only). The
+   * SDK emits one message per content block, so such a message is a FRAGMENT of a turn, never
+   * a turn that can repeat on its own: an agent that stops calling tools ends its turn. It
+   * still counts toward the turn cap but is not loop evidence, and it does not break a run
+   * either. It used to be the constant 'assistant:text', which made every block of narration
+   * and every subagent's closing summary "identical" (job 161), and it also let
+   * "Bash X → text → Bash X → text…" hide a real loop behind the interleaved text.
+   * `source` is the subagent's parent_tool_use_id; absent = the main agent.
+   */
+  | { kind: 'turn'; signature?: string; source?: string }
   // `detail` is the provider's own words for the limit (window type, reset time, overage
   // state). It only ever gets logged, but without it a pause said "rate limit" and nothing
   // else, so telling a real exhausted window from a misread one meant re-running the SDK by
@@ -127,11 +159,14 @@ export function evaluate(s: BreakerState, ev: Event, lim: BreakerLimits): Decisi
   // 4. turn → count, loop-detection (primary), wall-clock + turn-cap backstops
   if (ev.kind === 'turn') {
     s.turns += 1;
-    pushSignature(s, ev.signature);
-    const repeats = stuckAfter(s, lim);
-    if (repeats !== null) {
-      return { action: 'escalate', reason: 'stuck',
-               detail: `loop: repeated ${repeats}x: ${s.recentSignatures[s.recentSignatures.length - 1]}` };
+    if (ev.signature) {
+      pushSignature(s, ev.signature, ev.source);
+      const repeats = stuckAfter(windowFor(s, ev.source), lim);
+      if (repeats !== null) {
+        const who = ev.source ? ` (subagent …${ev.source.slice(-8)})` : '';
+        return { action: 'escalate', reason: 'stuck',
+                 detail: `loop: repeated ${repeats}x: ${ev.signature}${who}` };
+      }
     }
     const wall = (Date.now() - s.startedAtMs) / 1000;
     if (wall >= lim.maxWallSecs) {

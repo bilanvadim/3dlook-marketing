@@ -21,7 +21,7 @@ import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { query } from '@anthropic-ai/claude-agent-sdk';
 import { Store, Job, Step } from './store';
-import { evaluate, initState, BreakerState, BreakerLimits, DEFAULT_LIMITS, KIND_MIN_TURNS, Event } from './breaker';
+import { evaluate, initState, clearLoopWindows, BreakerState, BreakerLimits, DEFAULT_LIMITS, KIND_MIN_TURNS, Event } from './breaker';
 import { runStep, StepRecord } from './steprunner';
 import { makeSdkDeps } from './agent-runner';
 import { resolveProfilePlugins, resolveWorkDir } from './profiles';
@@ -271,10 +271,12 @@ export function mapSdkMessage(msg: any): { events: Event[]; type: string; toolNa
       // counting one turn per assistant message is what the breaker's thresholds are calibrated to.
       toolName = tu.name;
       signature = buildSignature(tu.name, tu.input);
-    } else {
-      signature = 'assistant:text';
     }
-    events.push({ kind: 'turn', signature });
+    // No tool_use → no signature: a text/thinking block is a fragment of a turn, not loop
+    // evidence (see the Event doc in breaker.ts). Subagent messages carry parent_tool_use_id
+    // and are judged in their own window, not interleaved with the main agent's.
+    const source = typeof msg?.parent_tool_use_id === 'string' ? msg.parent_tool_use_id : undefined;
+    events.push({ kind: 'turn', signature, ...(source ? { source } : {}) });
   } else if (type === 'rate_limit' || type === 'rate_limit_event' || msg?.rate_limit_info) {
     const info = msg?.rate_limit_info ?? msg ?? {};
     const status = effectiveLimitStatus(info);
@@ -721,8 +723,8 @@ export async function runOneJob(store: Store): Promise<boolean> {
               summary = `${d.reason}: ${d.detail} — continued ${MAX_CONTINUES}x already, stopping`;
               throw new BreakStop();
             }
-            // Clear the loop window, or the very same tail re-trips on the next turn.
-            state.recentSignatures.length = 0;
+            // Clear the loop windows (main + every subagent), or the very same tail re-trips on the next turn.
+            clearLoopWindows(state);
             if (d.reason === 'turns') lim.maxTurns = state.turns + TURN_GRANT;
             await store.setJobStatus(job.id, 'running');
             console.log(`[${WORKER_ID}] job ${job.id} continued by human after ${d.reason} `

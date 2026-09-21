@@ -104,8 +104,27 @@ const FILES = [
   check('mapSdkMessage reports the tool name', m.toolName === 'Read');
 }
 {
+  // Text or thinking only → a fragment of a turn: counted, but no loop signature (job 161).
   const m = mapSdkMessage({ type: 'assistant', message: { content: [{ type: 'text', text: 'thinking' }] } });
-  check('a text-only assistant turn keeps the assistant:text signature', m.signature === 'assistant:text');
+  check('a text-only message still emits one turn event', m.events.length === 1 && m.events[0].kind === 'turn');
+  check('a text-only message carries no loop signature', m.signature === undefined && (m.events[0] as any).signature === undefined);
+  const t = mapSdkMessage({ type: 'assistant', message: { content: [{ type: 'thinking', thinking: '' }] } });
+  check('a thinking-only message carries no loop signature', (t.events[0] as any).signature === undefined);
+  const e = mapSdkMessage({ type: 'assistant', parent_tool_use_id: 'toolu_x', message: { content: [] } });
+  check('an empty forwarded subagent message carries no loop signature', (e.events[0] as any).signature === undefined);
+}
+{
+  // Subagent messages are tagged with their parent_tool_use_id so the breaker keeps their own window.
+  const sub = mapSdkMessage({
+    type: 'assistant', parent_tool_use_id: 'toolu_01ABC',
+    message: { content: [{ type: 'tool_use', name: 'Read', input: { file_path: 'x.md' } }] },
+  });
+  check('a subagent turn carries its source', (sub.events[0] as any).source === 'toolu_01ABC');
+  const main = mapSdkMessage({
+    type: 'assistant', parent_tool_use_id: null,
+    message: { content: [{ type: 'tool_use', name: 'Read', input: { file_path: 'x.md' } }] },
+  });
+  check('a main-agent turn carries no source', (main.events[0] as any).source === undefined);
 }
 
 console.log(`\nsignature.test: ${pass} passed, ${fail} failed`);

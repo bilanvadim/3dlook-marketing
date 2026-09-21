@@ -1,4 +1,4 @@
-import { evaluate, initState, DEFAULT_LIMITS, BreakerLimits, repeatsForSignature } from '../src/core/breaker';
+import { evaluate, initState, clearLoopWindows, DEFAULT_LIMITS, BreakerLimits, repeatsForSignature } from '../src/core/breaker';
 
 let pass = 0, fail = 0;
 function check(name: string, cond: boolean) {
@@ -114,6 +114,70 @@ check('repeatsFor: a signature with no colon still resolves', repeatsForSignatur
   evaluate(s, { kind: 'turn', signature: 'Read:b.md#2' }, RO);
   d = evaluate(s, { kind: 'turn', signature: 'Edit:a.ts#1' }, RO);
   check('tail-based: an interleaved turn breaks the streak', d.action === 'continue');
+}
+
+// 15. REGRESSION, job 161 (2026-09-21): a coordinator blocked on parallel TaskOutput waits
+// while its subagents finish. The main agent is silent; five subagents each stream a thinking
+// block and a closing summary. Those used to be one shared window of 'assistant:text' and
+// escalated as "loop: repeated 6x: assistant:text". Text/thinking carries no signature now,
+// and each subagent is judged on its own history.
+{
+  const s = initState();
+  let d: any = { action: 'continue' };
+  const ids = ['toolu_a246', 'toolu_a47b', 'toolu_aa4e', 'toolu_ab0b', 'toolu_a2ed'];
+  for (let i = 0; i < 8; i++) d = evaluate(s, { kind: 'turn', signature: `TaskOutput:#t${i}` }, RO);
+  for (const id of ids) {
+    d = evaluate(s, { kind: 'turn', source: id }, RO);                 // thinking
+    if (d.action !== 'continue') break;
+    d = evaluate(s, { kind: 'turn', source: id }, RO);                 // closing summary
+    if (d.action !== 'continue') break;
+  }
+  check('job 161: parallel subagents finishing never trip loop detection', d.action === 'continue');
+  for (let i = 0; i < 30 && d.action === 'continue'; i++) d = evaluate(s, { kind: 'turn' }, RO);
+  check('text/thinking-only messages are never loop evidence, however many', d.action === 'continue');
+  check('text/thinking-only messages still count toward the turn cap', s.turns === 8 + 10 + 30);
+}
+
+// 16. the same tool call issued once by each of several parallel subagents is NOT a loop
+{
+  const s = initState();
+  let d: any;
+  for (let i = 0; i < 6; i++) d = evaluate(s, { kind: 'turn', signature: 'Bash:post-lint.py#same', source: `toolu_${i}` }, RO);
+  check('six subagents running the same command once each do not trip', d.action === 'continue');
+}
+
+// 17. ONE subagent spinning is still caught, and the escalation says which one
+{
+  const s = initState();
+  let d: any;
+  for (let i = 0; i < 3; i++) {
+    evaluate(s, { kind: 'turn', signature: `Read:other${i}.md#x${i}`, source: 'toolu_other' }, RO); // a sibling interleaves
+    d = evaluate(s, { kind: 'turn', signature: 'Edit:post.md#spin', source: 'toolu_01Spinner9' }, RO);
+  }
+  check('a single subagent repeating an edit escalates despite interleaved siblings', d.action === 'escalate' && d.reason === 'stuck');
+  check('the detail names the subagent', /subagent …Spinner9/.test(d.detail));
+}
+
+// 18. narration between identical tool calls no longer hides a real loop
+{
+  const s = initState();
+  let d: any;
+  for (let i = 0; i < 3; i++) {
+    d = evaluate(s, { kind: 'turn', signature: 'Bash:retry.sh#same' }, RO);
+    if (d.action !== 'continue') break;
+    d = evaluate(s, { kind: 'turn' }, RO);                               // "retrying…"
+  }
+  check('Bash X → text → Bash X → text → Bash X escalates', d.action === 'escalate' && d.reason === 'stuck');
+}
+
+// 19. a human "continue" clears every window, subagents included
+{
+  const s = initState();
+  evaluate(s, { kind: 'turn', signature: 'Edit:a.ts#1' }, RO);
+  evaluate(s, { kind: 'turn', signature: 'Edit:a.ts#1', source: 'toolu_x' }, RO);
+  clearLoopWindows(s);
+  check('clearLoopWindows empties the main window', s.recentSignatures.length === 0);
+  check('clearLoopWindows empties the subagent windows', Object.keys(s.subagentSignatures).length === 0);
 }
 
 console.log(`\n${pass} passed, ${fail} failed`);
