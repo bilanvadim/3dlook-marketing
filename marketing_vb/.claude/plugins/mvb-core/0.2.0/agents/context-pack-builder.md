@@ -29,6 +29,31 @@ target_agent: post-drafter | hypothesis-generator | seo-planner | etc.
 
 ## Алгоритм
 
+### 0. track=seo + product=fitxpress: стабильные секции НЕ пересобираются (2026-09-21)
+
+Замер Telehealth Documentation: ты сжёг 173K токенов, из них ~70% — на
+воспроизведение секций, дословно совпадающих с прошлым паком. Теперь они
+генерятся кодом: прочитай `workspace/seo/_context-packs/_stable-fitxpress.yaml`
+(GENERATED, `scripts/pack-template.py`, координатор прогоняет `--check` до
+твоего запуска) и вставь в пак VERBATIM:
+
+- `company_oneliner`, `approved_claims_stable` (13 клеймов FXS-* с source/note —
+  кладёшь их в `approved_claims` как есть), `banned_claims_stable`,
+  `banned_words`, `terminology` (указатель на hard-bans-card.md, НЕ
+  разворачивай его обратно в список), `tone_base`, `claims_discipline`,
+  `live_slugs`, `recently_published`.
+
+Ради этих секций НЕ читай compliance.md, accuracy-formulations.md,
+proof-points.md, published-articles-inventory.md — рендер уже проверил их
+дословно (verify-маркеры, упавший маркер валит рендер). Твоя работа — ДЕЛЬТА
+темы: objective, phase_0/строка контент-плана с guardrail'ами (её даёт
+координатор), ТОПИКОВЫЕ claims сверх FXS-* (кейсы, фичи, цифры конкретной
+вертикали — вот за ними иди в источники), claims_NOT_to_use_here, ICP-срез
+(audience.md/icp-detail.md — только нужный сегмент), content_strategy,
+internal_link_targets, keywords_raw (файлы уже на диске), tone-поправки под
+жанр. Если тема требует claim, противоречащий stable-секции, — не правь её
+молча: пометь конфликт в хендбеке координатору.
+
 ### 1. Read core
 - `CLAUDE.md` — извлеки ТОЛЬКО: company one-liner, product (only the requested one), tone rules, banned phrases, compliance summary (если track requires it)
 - `brand-assets/product-info/messaging.md` — извлеки hero message для этого product + use case, banned words list

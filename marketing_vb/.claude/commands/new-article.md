@@ -10,8 +10,12 @@ argument-hint: "[topic or slug] [stage (plan/write/edit/publish/full)]"
 1. Ahrefs-пул сам (`scripts/ahrefs-keywords.py`, сид без запятых, slug БЕЗ
    даты-префикса — скрипт добавит дату сам; плюс 2-3 head-сида
    `--slug <slug>--seed-<x>`)
-2. `context-pack-builder` (read-only — YAML вернёт текстом, сохрани его сам в
-   `workspace/seo/_context-packs/`, проверь `yaml.safe_load`)
+2. `python3 scripts/pack-template.py --check` — свежесть стабильных секций
+   пака (exit 1 → перерендери `pack-template.py`; exit 2 = канон уехал — это
+   STOP, разбирайся, что изменилось). Затем `context-pack-builder` (read-only —
+   YAML вернёт текстом, сохрани его сам в `workspace/seo/_context-packs/`,
+   проверь `yaml.safe_load`): stable-секции он вставляет verbatim из
+   `_stable-fitxpress.yaml` и работает только над дельтой темы
 3. `seo-planner` (без Bash; заголовки аутлайна строго `### Section N. …` —
    другой формат валит `article_lint.py --plan`)
 4. `python3 scripts/article_lint.py <plan.md> --plan` — сам, до PASS
