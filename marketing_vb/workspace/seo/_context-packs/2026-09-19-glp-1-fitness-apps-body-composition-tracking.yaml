@@ -132,7 +132,7 @@ context_pack:
     - file: "workspace/seo/articles/glp-1-market-hub/published-live-2026-08-28.md"
       note: "Live GLP-1 Market hub (published 2026-08-28) — read for GLP-1-register, market-hedging, and to NOT duplicate its market-growth/progress-tracking-gap thesis. Up-link target."
     - file: "workspace/seo/articles/2026-08-26-remote-body-measurement-online-fitness-coaching/published-live-2026-09-04.md"
-      note: "Live Fitness-hub sibling (published 2026-09-04, Digital Coaching cluster) — closest structural model: same hub, same 12-part shape, fitness-app register. NOTE the live page carries a canonical-tag defect pointing at glp-1-market (Search Console 'Discovered — not indexed' as of 09-18) — link to it normally regardless, the defect is a CMS issue, not a content one."
+      note: "Live Fitness-hub sibling (published 2026-09-04, Digital Coaching cluster) — closest structural model: same hub, same 12-part shape, fitness-app register. NOTE its canonical tag pointed at glp-1-market; that was fixed on the site 09-18, but Search Console still showed 'Discovered — not indexed' (never crawled) on 09-21 while it waits for a recrawl. Link to it normally; this was a CMS issue, not a content one."
     - reference_only: "brand-assets/style-guides/blog-style-guide.md + brand-assets/style-guides/editorial-rewrites.md + brand-assets/past-articles/blog/manual-vs-digital-intake-occupational-health-screening.md — mandatory per CLAUDE.md §15 pt 0-1 before writing; not embedded here for size, seo-writer/seo-planner reads directly."
 
   competitors_context: |
@@ -229,7 +229,7 @@ context_pack:
     already_live: false   # confirmed: "GLP-1 and Fitness Apps" appears only in the open-P1 list (published-articles-inventory.md:475, "October pencils"), not in the Published Assets table. Safe to plan as net-new.
     published_hub_articles:
       - {slug: "ai-in-fitness-industry", title: "AI in Fitness: How Structured Body Data Powers Progress Tracking, Personalization, and Digital Coaching", published: "2026-07-31", role: "hub"}
-      - {slug: "remote-body-measurement-online-fitness-coaching", title: "Remote Body Measurement for Online Fitness Coaching Programs", published: "2026-09-04", role: "P1 supporting (Digital Coaching)", note: "⚠️ live canonical tag points at glp-1-market, not indexed as of 09-18 (Search Console) — CMS defect, not ours to fix, link normally"}
+      - {slug: "remote-body-measurement-online-fitness-coaching", title: "Remote Body Measurement for Online Fitness Coaching Programs", published: "2026-09-04", role: "P1 supporting (Digital Coaching)", note: "canonical → glp-1-market fixed on the site 09-18; still not indexed on 09-21 (never crawled). Link normally"}
       - {slug: "glp-1-market", title: "GLP-1 Market Growth and the Need for Better Patient Progress Tracking", published: "2026-08-28 (refresh; originally Oct 2024)", role: "hub"}
       - {slug: "top-7-remote-body-composition-tools-glp-1-clinics", title: "7 Body Composition and Progress-Tracking Tools for Remote GLP-1 Clinics", published: "2026-08-21", role: "P0 supporting listicle"}
       - {slug: "online-pharmacy-bmi-verification-a-2026-compliance-guide", title: "Online Pharmacy BMI Verification: A 2026 Compliance Guide", published: "2026-08-24 (rewrite)", role: "P0/P1, also owns Telehealth BMI verification — wrong bridge for this article, cited only as a boundary reminder"}
@@ -239,7 +239,7 @@ context_pack:
       - {slug: "online-pharmacy-bmi-verification-a-2026-compliance-guide", published: "2026-08-24", hub: "GLP-1 / Telehealth"}
       - {slug: "glp-1-market", published: "2026-08-28", hub: "GLP-1 Market"}
       - {slug: "remote-body-measurement-online-fitness-coaching", published: "2026-09-04", hub: "AI in Fitness"}
-      - {slug: "ai-body-data-wellness-platforms", published: "2026-09-14", hub: "Wellness Platforms", note: "canonical defect, not indexed — do not read its search performance as a topic signal"}
+      - {slug: "ai-body-data-wellness-platforms", published: "2026-09-14", hub: "Wellness Platforms", note: "canonical defect fixed 09-17, but still not indexed on 09-21 (last crawl 09-16). Do not read its search performance as a topic signal yet"}
       - {slug: "bariatric-pre-qualification-mobile-3d-body-scanning", published: "2026-09-15", hub: "Bariatrics"}
       - {slug: "fitxpress-data-privacy-security-regulatory-faq", published: "2026-09-16", hub: "Trust FAQ (Hub 0)"}
     refresh_status: "Not a refresh — this row is net-new. No sibling article with this exact bridge intent exists to refresh. All directly-linked sibling hubs (Fitness, GLP-1 Market) are current (refreshed within the last 7 weeks); visual-progress-tracking-glp1-adherence-retention is older (Dec 2025) and is its own separate P2 refresh candidate, not this article's job to fix."
