@@ -438,9 +438,13 @@ def _mvb_brief(cmd: str, cmd_file: str, body: str = "") -> str:
 # /new-article takes an optional second argument — the stage to run
 # (see .claude/commands/new-article.md). A task may therefore end with one of
 # these tokens; everything before it is the topic. An optional `approve` token
-# may sit next to it (either side): that is Vadim's checkpoint-1 sign-off, and
-# it goes into the PROMPT, not into the command — /new-article has no such
-# argument, and inventing one would break the command file's contract.
+# may sit next to it (either side). Since 2026-09-21 the pipeline runs with no
+# approval gates at all (Vadim's decision, new-article.md "Режим без
+# чекпоинтов"), so the token no longer closes a checkpoint — it only says "the
+# plan already exists and is signed off, do NOT re-plan, resume from write (or
+# the named stage)". It still goes into the PROMPT, not into the command —
+# /new-article has no such argument, and inventing one would break the command
+# file's contract.
 _ARTICLE_STAGES = ("plan", "write", "edit", "publish", "full")
 _ARTICLE_APPROVE = "approve"
 # The stages an approval can resume INTO as-is. `plan` and `full` both start at
@@ -479,10 +483,12 @@ def _prep_article(task: str) -> Tuple[Optional[str], Optional[str], Optional[str
     A trailing stage token is split off the task, so `Стаття <тема> write`
     (or `mvb-run.py article "<topic>" write`) resumes the pipeline mid-way
     instead of starting from `plan`. A trailing `approve` token is split off
-    the same way and becomes an explicit approval line in the prompt: the
-    stage argument alone tells the run WHERE to start, not that checkpoint 1
-    is closed, so a headless run re-plans or stops there with nobody to ask.
-    Neither token — command and prompt unchanged."""
+    the same way and becomes an explicit "plan is signed off, do not re-plan"
+    line in the prompt: the stage argument alone tells the run WHERE to
+    start, not whether the plan may be rewritten. Neither token — command and
+    prompt unchanged. Checkpoint gates are gone since 2026-09-21: every run
+    continues to the end of the pipeline and finishes with the git
+    commit+push step defined in new-article.md."""
     topic, stage, approved = _split_article_task(task)
     if not topic:
         return None, None, None, ("✍️ Напиши тему статьи, напр.\n"
@@ -499,8 +505,8 @@ def _prep_article(task: str) -> Tuple[Optional[str], Optional[str], Optional[str
         # prompt has to say that the current state is `write`.
         #
         # An approval with NO stage named means "carry on", and carrying on runs
-        # to checkpoint 2 — new-article.md puts no checkpoint between write, edit
-        # and publish, so stopping after `write` invents one. That default cost
+        # to the very end of the pipeline — new-article.md puts no stop between
+        # write, edit and publish, so stopping after `write` invents one. That default cost
         # jobs 95→96→97 on 2026-08-25: three conductor runs, three Telegram
         # pushes and ~3h of wall clock to walk one approved outline to a publish
         # package, with job 96 explicitly reasoning "edit is a single, standalone
@@ -515,24 +521,26 @@ def _prep_article(task: str) -> Tuple[Optional[str], Optional[str], Optional[str
             "intent · action type). Только `create net-new` / `publish planned "
             "hub` идут в новую статью; refresh / section first / review-decide / "
             "lead magnet — верни рекомендацию и остановись. Нет строки в плане — "
-            "спроси Вадима, не придумывай хаб.\n")
+            "спроси Вадима, не придумывай хаб.\n"
+            "Чекпоинтов-гейтов НЕТ (решение Вадима 2026-09-21, new-article.md "
+            "«Режим без чекпоинтов»): не жди апрувов и не останавливайся между "
+            "стадиями — пройди пайплайн до конца и заверши git-финалом (commit + "
+            "push ТОЛЬКО файлов этого слага, из корня репо) и финальным "
+            "дайджестом с хешем коммита.\n")
     note = None
     if approved:
         body += (
-            f"АПРУВ ЕСТЬ — чекпоинт 1 закрыт. Vadim approved the title+outline "
+            f"АПРУВ ЕСТЬ — план уже подписан. Vadim approved the title+outline "
             f"recorded in plan.md (frontmatter status: approved). Proceed directly "
-            f"to the {nxt} stage — do NOT re-run plan and do NOT stop at "
-            f"checkpoint 1.\n")
+            f"to the {nxt} stage — do NOT re-run plan.\n")
         if chained:
             body += (
                 "Дальше иди БЕЗ ОСТАНОВОК write → edit → publish в одном прогоне. "
                 "Между ними чекпоинтов нет: `edit` не «самостоятельная стадия, "
                 "которая не переходит в publish» — закончив одну, сразу начинай "
                 "следующую, не спрашивая и не завершая работу.\n")
-        body += ("Чекпоинт 2 (финальный текст + meta) этим НЕ закрыт: дойдя до "
-                 "него, остановись и жди Вадима, как обычно.\n")
-        note = ("апрув чекпоинта 1 передан в промпт — прогон идёт "
-                + (f"write → edit → publish без остановок до чекпоинта 2"
+        note = ("апрув передан в промпт — прогон идёт "
+                + ("write → edit → publish → git без остановок"
                    if chained else f"со стадии `{nxt}`")
                 + ", план не переписывается")
     return (_mvb_brief(cmd, ".claude/commands/new-article.md", body),

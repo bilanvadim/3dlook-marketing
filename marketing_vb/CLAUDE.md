@@ -263,7 +263,7 @@ company, ~8 КБ у пяти личных вместо 17,6 КБ мастера)
 | QC (пост) | `post-quality-controller` | 20-балльная рубрика, выборка 3 из 9, sonnet, §14 |
 | Сборка пака | `scripts/social_pack.py` | source · brief · prompt · qc-prompt · qc-plan · manifest · digest · report · scores |
 | Дизайнер | Человек | Делает визуал сам, по `### Design tip` каждого поста в дайджесте (шаг `visual-brief` удалён 2026-09-20, решение Вадима: «дизайнер сам это делает») |
-| Апрувер | Вадим (через Telegram) | Все чекпоинты |
+| Апрувер | Вадим (через Telegram) | Чекпоинты social и outbound. **SEO-статьи с 2026-09-21 идут без остановок** (plan → publish → git commit+push одним прогоном); Вадим ревьюит пост-фактум по финальному дайджесту и коммиту — см. `.claude/commands/new-article.md` «Режим без чекпоинтов» |
 | Outbound | пайплайн `outbound/*` | Hypothesis → ... → Campaign analysis |
 | SEO | пайплайн `seo/*` | Keywords → ... → Publish → trigger social |
 | Brand guardian | `brand-checker` (shared) | Проверка тона / no-go / AI-сигнатур |

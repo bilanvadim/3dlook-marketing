@@ -39,13 +39,15 @@ USAGE
     mvb-run.py article  "<topic>" [stage] [approve]
                                            # SEO pipeline  (/new-article)
                                            # stage: plan|write|edit|publish|full
-                                           # approve: Vadim signed off checkpoint 1
-                                           #   (title+outline in plan.md). Without a
-                                           #   stage this runs write → edit → publish
-                                           #   in ONE job and stops only at checkpoint
-                                           #   2; naming a stage means just that one.
-                                           #   Either way it never re-plans and never
-                                           #   parks at checkpoint 1 with nobody to ask
+                                           # approve: the plan is already signed off
+                                           #   (title+outline in plan.md) — do NOT
+                                           #   re-plan. Without a stage this resumes
+                                           #   write → edit → publish → git in ONE job;
+                                           #   naming a stage means just that one.
+                                           #   Checkpoint gates are gone (Vadim,
+                                           #   2026-09-21): every run continues to the
+                                           #   end and finishes with commit+push of
+                                           #   the slug's files
     mvb-run.py posts    <slug|url> [--batch]
                                            # social posts. Default: fan-out, one job
                                            # per missing profile (/post-one-profile).
