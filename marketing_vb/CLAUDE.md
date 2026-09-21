@@ -316,24 +316,7 @@ qc-prompt · qc-plan · manifest · digest · report · scores) и `scripts/post
 | `post-quality-controller` | sonnet | Вход компактный, механика уже проверена линтером |
 | lint / manifest / digest / report | код | Токенов не тратит |
 
-**Протокол A/B, прежде чем снимать opus с `post-drafter`.** Соблазн понятен: три
-компанийских аккаунта короткие и идут по жёсткому брифу. Но это единственный рычаг из всех
-внедрённых, который может испортить текст, поэтому меняется он только по данным:
-
-1. Прогнать один полный пак с `model: sonnet` в `post-drafter` (правится во **всех трёх**
-   копиях агента, иначе `check-agent-copies.py` упадёт — и правильно).
-2. Прогнать QC по **всем девяти** профилям этого пака, а не по выборке — сравнение
-   требует полного набора.
-3. `python3 scripts/social_pack.py scores` — сравнить среднее и разброс с базой:
-   паки на opus дают 15-19/20, `glp-1-market-hub` в среднем 16,4.
-4. Решение принимает Вадим по дайджесту, а не по среднему баллу. Падение среднего меньше
-   чем на балл при живом тексте — это выигрыш; потеря позиции в тексте — нет, даже при том
-   же балле.
-5. `_pack.json` в папке пака пишет, под какой политикой шёл прогон (`drafter_model`,
-   `qc_policy`), чтобы сравнение потом можно было воспроизвести.
-
-Промежуточный вариант, если полный переход не пройдёт: opus на первый профиль пака (он
-задаёт карту углов) и на шесть LinkedIn, sonnet на twitter / instagram / facebook.
+**Модель пишущей стадии меняется только по данным** — полный протокол A/B (5 шагов, решение принимает Вадим по дайджесту, не по среднему баллу) вынесен в `docs/model-ab-protocol.md` (2026-09-21). Это касается post-drafter, seo-writer и seo-editor одинаково: единственный рычаг, способный испортить текст.
 
 ---
 
@@ -493,7 +476,7 @@ top_issue: [1 sentence] | none
 `seo-planner` and `seo-writer` MUST, before planning or writing:
 
 0. **Read `about-me.md` and `audience.md` (repo root) first.** `about-me.md` governs voice and claims discipline (the reframe move, "accurate enough for which decision?", the two-benchmarks rule, repeatability written as `< 1 cm`, the standard 12-part article structure, CTA-by-funnel-stage). `audience.md` fixes the target segment and its hook + "what NOT to say" before a single line is written. These override generic product tone. On any conflict with the summary in section 6, these files win on voice/audience; facts still come from `brand-assets/product-info/`.
-1. **Read `brand-assets/style-guides/blog-style-guide.md` in full** — the voice, structural templates (Article Types A–F), banned patterns, and per-vertical vocabulary are not optional. **Then read `brand-assets/style-guides/editorial-rewrites.md`** (2026-09-11): what the editor changes in our drafts, as before/after pairs from a shipped final. It covers sentence length, repetition, sentences about the page, aphorisms, and the comparison-article format. Sentence length is gated by `article_lint.py` gate 10 (mean ≤ 16 words, ≤ 6% of sentences over 25, at most one over 35). Our revision 5 of that article passed every other gate with a CLEAN detector score and still came back as "long sentences, repetition, reads as obviously AI". Where that file and an older structure rule disagree, that file wins, because it records what the editor actually shipped.
+1. **Read `brand-assets/style-guides/blog-style-guide.md` in full** — the voice, structural templates (Article Types A–F), banned patterns, and per-vertical vocabulary are not optional. **Then read `brand-assets/style-guides/editorial-rewrites.md`** (2026-09-11): what the editor changes in our drafts, as before/after pairs from a shipped final. **Planner exception (2026-09-21, токен-диета):** `seo-planner` прозу не пишет — ему вместо этих двух полных файлов достаточно `about-me.md` + `hard-bans-card.md` (generated, один экран) + §7 из `editorial-rewrites.md` для comparison/workflow-структуры; полное чтение обоих файлов остаётся обязательным для `seo-writer` и `seo-editor` — они и есть enforcement. It covers sentence length, repetition, sentences about the page, aphorisms, and the comparison-article format. Sentence length is gated by `article_lint.py` gate 10 (mean ≤ 16 words, ≤ 6% of sentences over 25, at most one over 35). Our revision 5 of that article passed every other gate with a CLEAN detector score and still came back as "long sentences, repetition, reads as obviously AI". Where that file and an older structure rule disagree, that file wins, because it records what the editor actually shipped.
 2. **Read 2–3 relevant past-articles from `brand-assets/past-articles/blog/`** that match the target vertical:
    - **Any FitXpress comparison or workflow article → read `manual-vs-digital-intake-occupational-health-screening.md` first.** It is the editor's final (2026-09-11), live almost verbatim since 2026-09-21, and the current reference for sentence length, format and privacy wording. The articles listed below predate the short-sentence standard: take structure and vocabulary from them, not sentence shape.
    - FitXpress topics → read at least one of: `mobile-body-scanning-insurance-underwriting.md`, `wellness-rewards-verification-employers-insurers-using-ai-3d-body-scanning.md`, `3dlook-turns-two-photos-structured-body-data.md`
@@ -526,58 +509,8 @@ If a new production article significantly departs from the style guide (e.g., a 
 
 ## 16. Website page pipeline (`page-builder` / `/page`)
 
-> Added 2026-08-23. Owns **marketing pages on 3dlook.ai**, not articles.
-
-**Skill:** `.claude/skills/page-builder/SKILL.md` — one canonical copy, no plugin mirror. Adapted from
-Victor Shulga's public `page-builder` skill.
-
-**Command:** `/page [vertical|URL] [gate|build|judge|handoff|full]`. Artifacts in
-`workspace/pages/{slug}/`.
-
-**Scope split — read this before routing a request:**
-
-| Request | Owner |
-|---|---|
-| Use-case / vertical page, campaign landing, product page, case-study page | `/page` |
-| Blog article, hub, comparison, buyer guide | `/new-article` (mvb-seo) |
-| Social posts from a published article | `/post-from-article` |
-| 20-point QC of a pipeline artifact | `/qc` |
-
-**Four gates.** G-I decides whether a vertical page should exist at all (use-case file + **2 or more
-publishable cases from that vertical** + demand + 5 facts absent from the parent + the 60% uniqueness
-rule). G-A blocks writing until placement, URL, cannibalisation and the Search Console baseline are
-settled. G-T blocks publishing on technical grounds. G-J is a **blind judge in a fresh subagent**,
-100-point page scorecard, threshold 85, maximum 3 rounds, and publishing below 85 without flagging it
-is forbidden. `quality-controller` does not substitute for G-J — it is neither blind nor page-shaped.
-
-**The benchmark:** `/structured-body-data-for-telehealth-digital-health-programs/` (July 2026) is the
-one vertical page already built to the current standard — scoped accuracy, a real comparison block, a
-13-question FAQ with FAQPage schema, Service schema with `audienceType` + `areaServed`, ~1,600 words,
-no banned words in the headings. The Kit tells writers to match it. `/for-bmi-verification/` (~659
-words, no FAQ, no cases) is the first rewrite candidate.
-
-**Two hierarchies, different depths** (corrected 2026-08-23 by Vadim, and the site agrees —
-`/fitxpress/` 301s to `/`): the **homepage is the FitXpress parent**, so FX verticals are its children
-at `/for-{vertical}/`, while Mobile Tailor has its own parent at `/mobile-tailor/` with
-`/mobile-tailor/for-{vertical}/` underneath. Never invent a `/fitxpress/` path level. Two open debts:
-`/fitxpress/for-connected-and-digital-fitness/` uses that non-existent level and declares a breadcrumb
-pointing at a redirect, and **neither parent links down to its verticals in the body** — both do it
-only through the header nav dropdown.
-
-**The G-I reality check:**
-
-1. **Only Mobile Tailor verticals clear G-I today.** Uniforms has Safariland + Burlington Medical;
-   made-to-measure has Generation Tux + Jim's Formal Wear if formal-wear rental counts as the same
-   vertical. Every FitXpress vertical has at most one case, so it needs a second case, an approved
-   reference, or a recorded G-I waiver.
-
-**Non-negotiables inside the skill:** every number from `proof-points.md`; client names and metrics
-only from `case-studies/`; Mobile Tailor customer ARRs never published; the 11 editorial guardrails
-along with M1/M2/M3 run as their own pass, not as a habit while drafting; `terminology-guardrails.md`
-Part 1 and Part 2 as Layer 2 of the humanisation pass; accuracy always scoped through
-"accurate enough for which decision?" and its four conditions; medical framing stated directly
-(**"FitXpress is not a medical device."** — since 2026-09-11; "positioned as" is banned for every product, scope and regulatory statement);
-IEEE only in the two approved sentences from `proof-points.md`, with no standalone IEEE logo in an award
-or certification strip, and "80+ body measurements", never "80+ body metrics" (terminology guardrails
-§2.11 and §2.13, synced 2026-09-14);
-`DESIGN.md` decides every token; a price signal and a link to `/pricing/` on every commercial page.
+> Вынесено в `docs/page-pipeline.md` (2026-09-21, токен-диета: секция нужна только /page-прогонам,
+> а грузилась каждому агенту каждой сессии). Там: scope split /page vs /new-article, четыре гейта
+> G-I/G-A/G-T/G-J, бенчмарк-страница, иерархия путей (`/fitxpress/` уровня НЕ существует, 301 долг),
+> G-I reality check и non-negotiables. Скилл `page-builder` и команда `/page` читают его сами.
+> Быстрая развилка: сторінка на 3dlook.ai → `/page`; блог/хаб/comparison → `/new-article`.

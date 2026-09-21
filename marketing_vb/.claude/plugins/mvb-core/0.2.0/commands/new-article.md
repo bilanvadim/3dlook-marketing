@@ -26,7 +26,13 @@ argument-hint: "[topic or slug] [stage (plan/write/edit/publish/full)]"
    чек-лист, линт и детектор считает скрипт, он же применяет STOP-правило
    (exit 1 = вернуть в seo-editor). Твоя перепроверка = один вызов
    `article_package.py checklist <slug>`, а не свои грепы.
-7. Git-финал (ниже) + финальный дайджест
+7. QC: `python3 scripts/article_package.py qc-prompt <slug>` → отдай вывод
+   ЦЕЛИКОМ агенту `seo-qc` (sonnet, по файлам не ходит, ~8-10K токенов
+   входа). Его балл/verdict — строкой в финальный дайджест. QC не блокирует:
+   verdict `return` — это рекомендация тебе перегнать edit, решает Вадим по
+   дайджесту. Полный opus `quality-controller` — не каждый раз, а каждую
+   3-5-ю статью (корм для agent-improver), через `/qc`.
+8. Git-финал (ниже) + финальный дайджест
 
 > **Дождись результата каждого агента, прежде чем заканчивать.** Если инструмент
 > вернул «Async agent launched successfully» — работа только началась, а не
