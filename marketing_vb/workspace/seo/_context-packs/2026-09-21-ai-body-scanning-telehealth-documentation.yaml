@@ -1,0 +1,315 @@
+# Built by context-pack-builder 2026-09-21 (read-only agent); saved to disk by the coordinator.
+# Checkpoint 1 APPROVED by Vadim 2026-09-21: Admin Panel named directly ("FitXpress Admin Panel");
+# PRIMARY delivery story is API/SDK integration into the client's own product — Admin Panel is OPTIONAL.
+context_pack:
+  created: 2026-09-21
+  product: fitxpress
+  track: seo
+  channel: blog
+  profile: none
+  objective: "SEO article — How AI Body Scanning Supports More Consistent Telehealth Documentation — plan stage (keywords → title → outline) for seo-planner. Hub 2 (AI in Telehealth), Documentation cluster, BOFU, anchored by the Admin Panel (records/export/workflow). Pencilled October 2026, P1, create net-new."
+  target_agent: seo-planner
+  slug: "2026-09-21-ai-body-scanning-telehealth-documentation"
+
+  phase_0_resolved: true   # Orchestrator already located and verified the content-plan row — do not re-litigate
+  action_type: "Create net-new"   # verbatim from the sheet row — GATE family: GO → Phase 1
+
+  company_oneliner: "3DLOOK turns two smartphone photos into 80+ body measurements and a 3D model in under 45 seconds."
+
+  product_summary: |
+    FitXpress: mobile body scanning that produces structured, repeatable body data
+    (80+ measurements, BMI, BMR, body fat %, lean/fat mass, 3D model) from two
+    smartphone photos, delivered primarily via API/SDK integration directly into
+    the customer's own product or interface; the FitXpress Admin Panel is an
+    OPTIONAL centralized view for teams that do not want to build their own
+    dashboard (Vadim, checkpoint 1, 2026-09-21).
+    For THIS article: the angle is documentation consistency — how structured,
+    timestamped, exportable records (vs. fragmented self-report + scale + photos)
+    standardize what enters a telehealth program's record at the intake/capture
+    step, before clinician review. Not a medical device, not a diagnostic tool,
+    not an eligibility or clearance decisioning system, not a replacement for
+    clinician review or DXA/BIA/calibrated-scale reference methods.
+
+  approved_claims:
+    - id: FX-001
+      text: "Depending on the implementation, results can be delivered through the API to the customer's existing interface or accessed through the FitXpress Admin Panel."
+      source: "workspace/seo/telehealth-hub-refresh/publish-package.md (draft language for the-potential-of-ai-in-telehealth hub, ~line 312/397) + workspace/playbooks/fitxpress-marketing-playbook-nika.md row 945: 'Admin Panel — Centralized view and management of scan results, for teams that do not want to build a dashboard.'"
+      note: "THE anchor claim of this article (content-plan.md row: 'Anchored by the Admin Panel (records/export/workflow)'). CAUTION: no published-live-*.md capture exists for the-potential-of-ai-in-telehealth, so this exact sentence is a draft/deck paraphrase, not a verified live quote — treat the feature's existence and function as solid (confirmed independently by the live announcement post fitxpress-admin-panel-launch, published-articles-inventory.md:224), the exact wording as needing a light rewrite, not verbatim copy. RESOLVED at checkpoint 1 (Vadim, 2026-09-21): name it 'FitXpress Admin Panel' directly, no 'vendor console' softening. Emphasis: API/SDK integration into the client's own product is the PRIMARY delivery route; the Admin Panel is OPTIONAL and comes second. Do not invent SDK/API specifics beyond approved_claims."
+    - id: FX-002
+      text: "Data lifecycle: submitted data is front/side photos + gender + height + optional weight; generated data is body measurements, weight/BMI-related outputs, body composition estimates, a 3D model, and scan-to-scan comparison outputs; technical data is capture-quality/pose-validation flags, clothing classification, face-obfuscation confirmation, and processing logs with timestamps and request metadata."
+      source: "compliance.md §3, live trust FAQ (2026-09-16)"
+      note: "Core to the 'what gets structured into a record' half of the article's thesis."
+    - id: FX-003
+      text: "Measurements, body composition data and 3D models are retained on an ongoing basis unless the customer agreement says otherwise; deletion is by scan identifier on the customer's request; 3DLOOK cannot identify a specific individual from stored scan records."
+      source: "compliance.md §3/§4, live trust FAQ"
+      note: "The persistence half of 'documentation' — records exist and can be retrieved, not 'processed but not stored' (that phrase is banned)."
+    - id: FX-004
+      text: "Two photos (front + side); structured outputs in under 45 seconds."
+      source: "proof-points.md, Speed table"
+    - id: FX-005
+      text: "80+ body measurements; body composition outputs: BMI, BMR, body fat %, lean mass, fat mass, essential fat, beneficial fat."
+      source: "proof-points.md, Output coverage table"
+      note: "Always '80+ body measurements', never '80+ body metrics' (terminology-guardrails.md §2.13). BMI/BMR/body composition are calculated metrics/estimates, not measurements."
+    - id: FX-006
+      text: "Supports: remote intake and body-measurement capture; body composition outputs and Body Progress comparisons; structured data collection for research protocols; structured intake and supporting documentation for customer-managed eligibility workflows; patient/member engagement. Does not independently determine: a diagnosis, treatment, medication recommendation, fitness for duty, employment eligibility, insurance eligibility, clinical-trial eligibility, or any other high-impact individual decision. Final decisions stay with the customer's clinicians, underwriters or other designated decision-makers."
+      source: "compliance.md §7, live trust FAQ"
+      note: "The canonical 'what FitXpress does not do' boundary block (structure item 7 in about-me.md's 12-part article shape) — load-bearing for a documentation article specifically because it must be clear records support review, they don't replace it."
+    - id: FX-007
+      text: "FitXpress can support HIPAA-governed deployments where 3DLOOK acts as a business associate under an executed BAA, where applicable."
+      source: "compliance.md §1, live trust FAQ"
+      note: "Section-first, link to the FAQ, do not restate beyond this line (content-plan guardrail: privacy rows are section-first / link to central FAQ)."
+    - id: FX-008
+      text: "In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR."
+      source: "compliance.md §2, live trust FAQ — verbatim canonical sentence, do not drop 'the data'"
+    - id: FX-009
+      text: "Scan records are associated with anonymized, randomly generated IDs; 3DLOOK cannot identify a specific individual from stored scan records."
+      source: "compliance.md §4, live trust FAQ"
+    - id: FX-010
+      text: "3DLOOK's measurement accuracy of approximately 96-97% across body metrics, with a typical absolute error of 1.5-2.0 cm per measurement, varying by body part"
+      source: "accuracy-formulations.md §1.1, verbatim from the live framework article"
+      note: "SECONDARY claim — only pull this in if the draft actually discusses accuracy (not just documentation/records). Never state without reference/population/protocol condition and a link to the framework article. Two benchmarks never combined in one paragraph."
+    - id: FX-011
+      text: "For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm"
+      source: "accuracy-formulations.md §1.2, the approved repeatability formulation"
+      note: "SECONDARY claim — relevant only if the piece touches longitudinal/repeat-scan record-keeping. Write as '< 1 cm' / 'below 1 cm', locked convention."
+    - id: FX-012
+      text: "FitXpress was not specifically trained on data representing people with physical disabilities, and its measurement performance has not been established for this population. This matters when a disability affects the standard standing pose or capture sequence. In those cases, the program needs a documented alternative measurement path."
+      source: "accuracy-formulations.md §5 'Population limitation' (verbatim); proof-points.md Dataset table row 'Population not established'. Approved for publication by Vadim 2026-09-11 (editor's final of the occupational-health intake article)."
+      note: "Added by coordinator 2026-09-21 at edit stage: seo-editor placed it in the pilot-design section (the third sentence fits a workflow article per §5's own usage note). Carries no figures."
+
+  claims_NOT_to_use_here:
+    - "UK Meds case / a full BMI-verification eligibility workflow explanation — WRONG page. online-pharmacy-bmi-verification-a-2026-compliance-guide (section 'How to verify BMI remotely in a telehealth workflow', live since 2026-08-24) owns telehealth BMI verification and eligibility-support workflow. This documentation article links to it, never re-explains the workflow (Hub 2 boundary update, content-plan.md:136)."
+    - "Yazen named — Vadim's 2026-09-19 decision ('язен не згадуємо') applies by default to any weight-loss-platform case in FitXpress content. If a customer example is needed here at all, write 'a weight-loss management platform', no geo attached. This documentation article likely does not need a named case at all — it can illustrate with a generic telehealth-program scenario."
+    - "Per-measurement accuracy/repeatability figures (wrist 0.54cm, waist 2.14cm, chest 0.60cm variance, etc.) — technical material only, not for a hub/supporting article (accuracy-formulations.md §1, Review 1 item 16)."
+    - "Market sizing table (proof-points.md) — none of its five use cases match this topic."
+    - "Insurance-underwriting-specific claims/KPIs — Hub 4 owns underwriting documentation, not Hub 2."
+
+  banned_claims:
+    - "most accurate body scanning / best-in-class (without a specific benchmarked figure)"
+    - "any accuracy figure reduced to one universal number without qualifying decision/reference/protocol/population/tolerance"
+    - "medical device / diagnostic / clinical assessment / dosing / prescribing recommendation / eligibility decisioning"
+    - "replaces DXA (also written DEXA), BIA, calibrated scales, or clinician review"
+    - "automated eligibility, underwriting, or fraud-detection claims"
+    - "guaranteed compliance / 'makes you compliant'"
+    - "any number not in approved_claims"
+    - "named competitor comparisons (Prism Labs, Bodygram, etc.)"
+    - "HIPAA compliant / HIPAA certified / SOC 2 certified / FDA-cleared"
+    - "'no personal identifiers' / 'process zero personal identifiers' / 'no personal data' — retired 2026-09-18, photos/measurements may be personal data"
+    - "'processed, not stored' — outputs ARE stored on an ongoing basis; this is the opposite of this article's own thesis"
+    - "'FitXpress tracks each patient over time' — write 'the program compares scans it selects' / 'scan-to-scan comparison' instead"
+    - "re-explaining the BMI-verification eligibility workflow (link to online-pharmacy-bmi-verification-a-2026-compliance-guide instead)"
+
+  banned_words:
+    - leverage
+    - utilize
+    - harness
+    - robust
+    - seamless
+    - comprehensive
+    - delve
+    - navigate (metaphorical)
+    - tapestry
+    - realm
+    - unlock
+    - unleash
+    - game-changing
+    - cutting-edge
+    - revolutionary
+
+  terminology_hard_bans:  # terminology-guardrails.md — writer holds these; editor runs full pass
+    - "em dash (— –) — always, no exceptions; use comma, period, or parentheses"
+    - "'objective' about our tech/outputs → standardized / timestamped / structured / repeatable"
+    - "'the reader' / 'this article' / 'see below' / 'the following sections'"
+    - "'by hand' → 'manually'; 'let' → 'allow'"
+    - "'plus' as a capability connector → 'including' / 'such as' / 'along with'"
+    - "'so' introducing a benefit → 'reducing…' / 'allowing…' / 'which can…'"
+    - "'positioned as' about product/intended-use/regulatory status → state boundary directly ('FitXpress is not a medical device.')"
+    - "no presumed reader reaction; no behaviour attributed to concepts; no triple parallelisms"
+    - "BMI / CEO / UK / US / EU are commonly known — do NOT expand"
+    - "'buyer' only for procurement/vendor-evaluation context; 'customer' only for contract/deployment/legal-role context; otherwise name the actor (telehealth program, care team, clinic, provider)"
+    - "'80+ body measurements', never '80+ body metrics'; BMI/BMR/body composition are calculated metrics/estimates, not 'measurements'"
+    - "content-plan labels (bridge, hub, pillar, cluster, supporting content) never appear in headings/anchors/body text"
+
+  tone:
+    voice: "calm, specific, evidence-led B2B (about-me.md); the reframe move; BOFU/operational register — documentation, workflow, records — lighter on GLP-1-specific hedging than a GLP-1 piece, but telehealth is still a listed sensitive vertical (about-me.md structure item), so keep the scope note + italic disclaimer early"
+    length: "~1,800-2,400 words, in line with other P1 Hub 2 supporting pieces. Closest live model by word count and register: manual-vs-digital-intake-occupational-health-screening (~1,900 words, editor's final)."
+    format: "12-part standard structure (about-me.md); early scope note; workflow/documentation framing, not accuracy-first; comparison table optional (progress photos / self-report vs structured records is one natural axis, but do NOT let this drift into the separately-planned 'Progress Photos vs Structured Body Data' article, content-plan.md:144 — mention in passing at most); FAQ block; BOFU CTA."
+    dont: "no hype, no emoji, no diagnostic/eligibility/clearance language, no re-explained BMI-verification workflow, no GLP-1 clinical-decision framing (this is the general telehealth documentation angle, not the GLP-1-specific one)"
+
+  # fitxpress only — sourced from about-me.md
+  voice_fingerprint:
+    - "The reframe move, as a plain statement (2026-09-11 amendment): open on what 'documentation consistency' actually depends on, not a rhetorical question."
+    - "Declarative and unhurried; mostly 10-20-word sentences, averaging under 16 words (article_lint.py gate 10); concrete over abstract — every claim carries a number, source, or disclosed limit."
+    - "Honest about limits in the same breath as capability; actor framing ('telehealth programs', 'care teams', 'providers'), not 'you'-spam."
+    - "This article's core operational verbs, verbatim from about-me.md's approved list: 'provides structured records', 'reduces manual intake', 'creates structured records', 'improves documentation consistency' (literally the title's thesis), 'reduces rework', 'supports scan-to-scan comparison', 'improves data availability before review'."
+  claims_discipline:
+    - "NEVER: diagnose, make treatment/eligibility/clearance decisions, replace clinician/DXA/BIA/calibrated scale, guarantee compliance, auto-detect fraud."
+    - "Describe as: a mobile body-scanning solution; a structured body-data capture layer; a remote intake and documentation layer; a workflow-standardization tool; support for review, monitoring, documentation, and operational efficiency (about-me.md verbatim). FitXpress is not a medical device."
+  accuracy_framing:
+    - "Only invoke if the draft actually discusses accuracy — this article's primary claim is documentation/record consistency, not accuracy. If accuracy comes up, never reduce it to one universal number; qualify by decision/reference/protocol/population/tolerance and link mobile-body-scanning-accuracy from the paragraph carrying the figure."
+    - "Repeatability written as '< 1 cm' / 'below 1 cm', locked convention; the two benchmarks (internal vs ISO 8559) are never combined in one paragraph."
+
+  examples:
+    - file: "brand-assets/past-articles/blog/manual-vs-digital-intake-occupational-health-screening.md"
+      note: "MANDATORY per CLAUDE.md §15 pt 2 — 'Any FitXpress comparison or workflow article → read this first.' Editor's final (2026-09-11), live almost verbatim since 2026-09-21 (row 15 in published-articles-inventory.md, similarity 0.965). Current reference for sentence length, format, and privacy-section wording. Different vertical (occ health) but the closest structural/register model for a documentation-focused FitXpress article."
+    - file: "workspace/seo/telehealth-hub-refresh/publish-package.md"
+      note: "Draft publish package for the Hub 2 anchor (the-potential-of-ai-in-telehealth, live 2026-08-07). Read for telehealth-hub register and the Admin Panel phrasing (see FX-001 caution: no published-live-*.md capture exists, so treat this as draft language, not a verified live quote)."
+    - reference_only: "about-me.md + audience.md (repo root, read before writing per CLAUDE.md §15 pt 0) + brand-assets/style-guides/blog-style-guide.md + brand-assets/style-guides/editorial-rewrites.md — mandatory per CLAUDE.md §15 pt 0-1; not embedded here for size, seo-writer/seo-planner reads directly."
+
+  competitors_context: |
+    Prism Labs is the primary FX competitor — strong in insurance/population health and GLP-1,
+    less developed in workflow/documentation depth. Bodygram is secondary, fitness-trainer-focused,
+    weaker clinical/enterprise workflow capabilities and no strong HIPAA narrative. Our angle here:
+    workflow integration + audit-ready structured records + Admin Panel as a concrete "you don't
+    have to build a dashboard" answer, which is exactly the documentation/governance moat named in
+    CLAUDE.md §3 (positioning shifts from "best model" to outcomes + workflow + governance +
+    auditability). Never name competitors in the article.
+
+  icp_context:
+    segment: "Telehealth & GLP-1 / Weight Loss Programs (icp-detail.md #1 / audience.md #1) — this article takes the general telehealth-documentation slice of the segment, not the GLP-1-eligibility slice, per the Hub 2 boundary (documentation/privacy/patient-experience/remote-care-workflow ownership, content-strategy-guidelines.md §9)."
+    buyer_persona: "Head of Clinical Operations, Care Coordination Manager, CMO/Medical Director (icp-detail.md #1 buyer titles). Documentation/audit-readiness framing also resonates with Head of Compliance & Risk-type roles (icp-detail.md #2), but the primary buyer for this piece stays in segment #1 per the Hub 2 boundary; do not pull in BMI-eligibility-specific compliance titles as the lead persona."
+    pain_points:
+      - "Manual intake slows scaling and burdens the clinical team (icp-detail.md #1, Operational)"
+      - "Fragmented data (self-report + scale + photos) blocks clean longitudinal tracking and consistent documentation (icp-detail.md #1, Operational)"
+      - "No standardized way to show body progress, or produce a consistent record of it, over time (icp-detail.md #1, Engagement & Retention)"
+      - "Self-reported weight/BMI are inaccurate and hard to verify at intake (icp-detail.md #1, Operational)"
+      - "Programs must show measurable, defensible outcomes to third parties: payers, employers, insurers, regulators (audience.md shared spine)"
+    hero_message: "Structured, timestamped body-data records that improve documentation consistency across telehealth programs (about-me.md operational-verb phrase 'improves documentation consistency' + icp-detail.md #1 alt positioning: 'Trustworthy longitudinal body data for remote-first programs')."
+    segment_hook: |
+      audience.md segment 1 hook (full): make body progress visible → repeat check-ins → adherence
+      → retention; repeatability (< 1 cm) so small real changes aren't lost in measurement noise;
+      longitudinal, defensible outcomes for payer/employer partners. THIS article narrows that to
+      its documentation slice: the record itself (what's captured, how it's structured, how it's
+      retrieved/exported via the Admin Panel) rather than the progress-visibility/retention angle,
+      which mobile-body-scanning-patient-engagement already owns as the canonical engagement asset.
+    do_not_say:
+      - "audience.md #1 Don't: no diagnostic claims; not positioned as a DEXA or calibrated-scale replacement; no implied eligibility decisioning. Keep separate from UK online-pharmacy BMI compliance — this piece links to that article, it is not the bridge to it."
+      - "content-strategy-guidelines.md §9 Telehealth: keep separate from GLP-1 eligibility and online-pharmacy compliance unless the article is explicitly about the bridge (it is not)."
+
+  # track=seo + fitxpress only — content-plan.md row + content-strategy-guidelines.md §9/§11
+  content_strategy:
+    hub: "AI in Telehealth (Hub 2)"
+    cluster: "Documentation"
+    intent: "BOFU"
+    action_type: "Create net-new"   # verbatim, content-plan.md:143 — GATE family: GO → Phase 1
+    priority: "P1"
+    pencilled: "October 2026"
+    existing_urls:
+      - "https://3dlook.ai/content-hub/the-potential-of-ai-in-telehealth/  # Hub 2 anchor (refreshed 2026-08-07) — up-link, do not duplicate the broad overview"
+      - "https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/  # owns telehealth BMI verification (section 'How to verify BMI remotely in a telehealth workflow', live 2026-08-24) — link only, never re-explain the workflow"
+      - "https://3dlook.ai/content-hub/mobile-body-scanning-patient-engagement/  # canonical engagement asset across telehealth/GLP-1/wellness/fitness (live 2026-08-14) — sideways link, do not duplicate its progress-visibility thesis"
+      - "https://3dlook.ai/content-hub/fitxpress-admin-panel-launch/  # THE named feature anchor for this row (content-plan.md:143) — records/export/workflow"
+      - "https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/  # trust asset, link only if accuracy is actually discussed"
+      - "https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/  # central trust FAQ, live since 2026-09-16 — short context note only, do not restate"
+    cannibalization_guardrail: >
+      Hub 2 preamble (content-plan.md:134): "Keep supporting pieces narrower than the hub and
+      separate from GLP-1 eligibility and online-pharmacy BMI verification." Boundary update
+      2026-08-24 (content-plan.md:136): "online-pharmacy-bmi-verification-a-2026-compliance-guide
+      was rewritten in place with a telehealth BMI verification section, so that page — not this
+      hub — owns telehealth remote BMI verification and eligibility-support workflow. Telehealth
+      pieces link to it for BMI verification rather than re-explaining the workflow." Row 142
+      (content-plan.md): "Do not re-pitch a standalone [BMI verification] page... reopen only if
+      search data shows materially separate demand." Row 144, adjacent-not-duplicate: "Progress
+      Photos vs Structured Body Data in Virtual Weight-Loss Programs" (P1, create net-new) is a
+      SEPARATE planned GEO/comparison article about documentation quality and manipulation risk —
+      this documentation article may touch the same theme in passing but must not become that
+      comparison piece. content-strategy-guidelines.md §9 (Telehealth): "Owns remote-care
+      workflows, patient experience, documentation, privacy, and remote monitoring. Keep telehealth
+      separate from GLP-1 eligibility and online pharmacy compliance unless the article is
+      explicitly about the bridge" — this one is not the bridge.
+    recommendation: "Create net-new BOFU documentation article for Hub 2, anchored by the FitXpress Admin Panel (records/export/workflow) as its concrete hook. Angle: structured, timestamped, exportable body-data records (vs. fragmented self-report + scale + photos) improve documentation consistency at the telehealth intake/capture step, supporting clinician review rather than replacing it. Stay general-telehealth, not GLP-1-eligibility-specific; link to (don't re-explain) the BMI-verification article."
+    vertical_boundary: >
+      Telehealth (content-strategy-guidelines.md §9): "Owns remote-care workflows, patient
+      experience, documentation, privacy, and remote monitoring. Keep telehealth separate from
+      GLP-1 eligibility and online pharmacy compliance unless the article is explicitly about the
+      bridge." GLP-1 (§9, for contrast): "Owns medication-supported weight-loss progress tracking,
+      body composition, patient records, clinic workflows, baseline data, and tools for GLP-1
+      clinics" — a separate, already-planned "GLP-1 Patient Progress Record" documentation article
+      (content-plan.md:163) exists in Hub 3 and shares the same Admin Panel anchor; do not merge
+      the two or borrow that row's GLP-1-specific framing here.
+    internal_link_targets:
+      up:
+        - "https://3dlook.ai/content-hub/the-potential-of-ai-in-telehealth/  # Hub 2 anchor"
+      sideways:
+        - "https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/  # BMI verification — link only, do not re-explain"
+        - "https://3dlook.ai/content-hub/mobile-body-scanning-patient-engagement/  # engagement canonical, adjacent but distinct intent"
+        - "https://3dlook.ai/content-hub/fitxpress-admin-panel-launch/  # the row's named feature anchor"
+      down:
+        - "https://3dlook.ai/structured-body-data-for-telehealth-digital-health-programs/  # BOFU product page — USE THIS URL ONLY. The old /fitxpress/for-telehealth-and-weight-loss/ 301s here but is still shown as current in some stale brand-assets files; do not use it."
+      trust:
+        - "https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/  # only if accuracy is actually discussed"
+        - "https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/  # central trust FAQ, section-first / link, do not restate"
+
+  # only for track=seo + fitxpress — from published-articles-inventory.md (LIVE registry: fact, not plan)
+  published_inventory:
+    already_live: false   # confirmed: appears only in the open-P1 "October pencils" list (published-articles-inventory.md:486: "GLP-1 and Fitness Apps, Telehealth Documentation, GLP-1 Patient Progress Record"), not in the Published Assets table. Safe to plan as net-new.
+    published_hub_articles:
+      - {slug: "the-potential-of-ai-in-telehealth", title: "AI in Telehealth: Workflows, Privacy, Patient Experience, and Remote Body Data Use Cases", published: "2026-08-07", role: "hub", note: "no published-live-*.md capture on file — see FX-001 caution"}
+      - {slug: "mobile-body-scanning-patient-engagement", title: "How Mobile Body Scanning Improves Patient Engagement", published: "2026-08-14", role: "P0 supporting, canonical engagement asset"}
+      - {slug: "online-pharmacy-bmi-verification-a-2026-compliance-guide", title: "Online Pharmacy BMI Verification: A 2026 Compliance Guide", published: "2026-08-24 (rewrite)", role: "P0/P1, owns telehealth BMI verification — link only"}
+      - {slug: "mobile-body-scanning-accuracy", title: "Body Scanning Accuracy: A Framework for Enterprise Decisions", published: "2026-07-03", role: "central trust asset"}
+      - {slug: "fitxpress-data-privacy-security-regulatory-faq", title: "Data, Privacy, Security & Regulatory FAQ for FitXpress", published: "2026-09-16", role: "central trust FAQ (Hub 0)"}
+      - {slug: "fitxpress-admin-panel-launch", title: "FitXpress Admin Panel Launch", published: "2026 (undated in inventory)", role: "product-announcement, the row's named feature anchor"}
+    recently_published:  # last 30 days as of 2026-09-21, i.e. since ~2026-08-22
+      - {slug: "online-pharmacy-bmi-verification-a-2026-compliance-guide", published: "2026-08-24", hub: "GLP-1 / Telehealth"}
+      - {slug: "glp-1-market", published: "2026-08-28", hub: "GLP-1 Market"}
+      - {slug: "remote-body-measurement-online-fitness-coaching", published: "2026-09-04", hub: "AI in Fitness"}
+      - {slug: "ai-body-data-wellness-platforms", published: "2026-09-14", hub: "Wellness Platforms"}
+      - {slug: "bariatric-pre-qualification-mobile-3d-body-scanning", published: "2026-09-15", hub: "Bariatrics"}
+      - {slug: "fitxpress-data-privacy-security-regulatory-faq", published: "2026-09-16", hub: "Trust FAQ (Hub 0)"}
+      - {slug: "manual-vs-digital-intake-occupational-health-screening", published: "2026-09-21", hub: "Occupational Health"}
+    refresh_status: "Not a refresh — net-new. Hub 2 itself (the-potential-of-ai-in-telehealth) is current, refreshed 2026-08-07. No sibling article with this exact documentation intent exists to refresh or conflict with."
+
+  # only for track=seo — from scripts/ahrefs-keywords.py (Ahrefs API v3), pulled by orchestrator 2026-09-21. Real figures, not recalculated.
+  # null volume/difficulty = Ahrefs has NO figure. It is NOT zero.
+  keywords_raw:
+    source: "ahrefs api v3 (keywords-explorer)"
+    pulled: "2026-09-21"
+    plan: "Standard 2022, billed monthly"
+
+    primary_seed:
+      file: "workspace/seo/_keywords/2026-09-21-ai-body-scanning-telehealth-documentation.yaml"
+      seed: "telehealth documentation"
+      seed_has_data: true
+      seed_metrics: {volume: 40, difficulty: 10, cpc: null, traffic_potential: 100, parent_topic: "medicare modifier for telehealth"}
+      top_ideas:
+        - {keyword: "cms telehealth documentation requirements", volume: 150, difficulty: 22, cpc: 200}
+        - {keyword: "telehealth documentation requirements", volume: 70, difficulty: 0, cpc: 140}
+        - {keyword: "telehealth documentation requirements 2025", volume: 50, difficulty: null, cpc: null}
+        - {keyword: "telehealth documentation requirements 2026", volume: 40, difficulty: null, cpc: null}
+        - {keyword: "telehealth documentation", volume: 40, difficulty: 10, cpc: null}
+        - {keyword: "ai tools for telehealth visit documentation", volume: 30, difficulty: null, cpc: null}
+        - {keyword: "documentation requirements for telehealth", volume: 20, difficulty: 1, cpc: 70}
+        - {keyword: "secure telehealth documentation platforms", volume: 10, difficulty: null, cpc: null}
+        - {keyword: "wound care telehealth documentation", volume: 10, difficulty: null, cpc: null}
+        - {keyword: "telehealth physical exam documentation", volume: 10, difficulty: 0, cpc: null}
+      note: "This is the real usable cluster for the title's exact intent: CMS/regulatory documentation-requirements queries plus a small 'AI tools for telehealth visit documentation' pocket that matches our angle directly. Most of the remaining ~30 long-tail ideas in the file are volume 0."
+
+    additional_seeds:
+      - file: "workspace/seo/_keywords/2026-09-21-ai-body-scanning-telehealth-documentation--seed-telemedicine-documentation.yaml"
+        seed: "telemedicine documentation"
+        seed_has_data: true
+        seed_metrics: {volume: 0, difficulty: null, cpc: null, traffic_potential: null, parent_topic: null}
+        note: "A genuine finding, not a failed pull: the 'telemedicine' phrasing of this exact concept carries no measured demand at all (seed and nearly every idea are 0/mo). The one non-zero idea, 'telemedicine system documentation' (250/mo, difficulty null), reads as IT/EHR-system documentation, not our body-data-documentation angle — do not chase it. Confirms 'telehealth', not 'telemedicine', is the right head term."
+
+      - file: "workspace/seo/_keywords/2026-09-21-ai-body-scanning-telehealth-documentation--seed-clinical-documentation.yaml"
+        seed: "clinical documentation"
+        seed_has_data: true
+        seed_metrics: {volume: 1000, difficulty: 16, cpc: 190, traffic_potential: 2900, parent_topic: "clinical documentation improvement"}
+        note: "Mostly off-intent: most of the volume is CDI-career/job-title demand ('clinical documentation specialist', 3700/mo; 'clinical documentation specialist jobs', 2300/mo) — not ours to target. A real adjacent pocket exists in AI-driven clinical documentation ('ambient clinical documentation' 450/KD29, 'ai clinical documentation' 700/KD67, 'clinical documentation improvement software' 300/KD0, 'chatgpt for clinical documentation' 1600/KD8), but that demand is about AI note-taking/transcription for clinician visits, a different product category from structured body-data capture. Useful only as background context on 'AI + documentation' search behavior, not as a target keyword list."
+
+    synthesis: >
+      The exact-title intent ("telehealth documentation") has a small but real and correctly-targeted
+      cluster: "cms telehealth documentation requirements" (150/mo, KD22) and "telehealth documentation
+      requirements" (70/mo, KD0) are the head terms, both regulatory/requirements-intent, with "ai tools
+      for telehealth visit documentation" (30/mo) as the closest direct match to this article's actual
+      angle. Volume is modest across the board (largest single figure is 150/mo) — this is a genuinely
+      low-volume BOFU supporting topic, not a high-traffic play, consistent with its P1 (not P0) priority
+      and its role as a documentation-consistency anchor for the Admin Panel rather than a demand-driven
+      pillar. "Telemedicine documentation" confirmed zero demand (use "telehealth" throughout). "Clinical
+      documentation" is a much bigger term (1,000/mo head, several 100-700/mo AI-documentation variants)
+      but belongs to a different product category (ambient/note-taking AI for clinician visits) and
+      should not be chased as a keyword target, though the FAQ/H2 structure could briefly acknowledge the
+      adjacent "AI + documentation" trend context if it strengthens the "why now" section.
+
+  exclusions: null   # not applicable — track is seo, not outbound
