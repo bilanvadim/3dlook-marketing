@@ -15,9 +15,14 @@ argument-hint: "[topic or slug] [stage (plan/write/edit/publish/full)]"
 3. `seo-planner` (без Bash; заголовки аутлайна строго `### Section N. …` —
    другой формат валит `article_lint.py --plan`)
 4. `python3 scripts/article_lint.py <plan.md> --plan` — сам, до PASS
-5. `seo-writer` → `seo-editor` → `seo-publisher` (у них Bash есть — каждый сам
-   гоняет `article_lint.py` до PASS, ты перепроверяешь)
-6. Git-финал (ниже) + финальный дайджест
+5. `seo-writer` → `seo-editor` (у них Bash есть — каждый сам гоняет
+   `article_lint.py` до PASS, ты перепроверяешь)
+6. `seo-publisher` — с 2026-09-21 пишет ТОЛЬКО суждение в `meta.md` и сам
+   запускает `python3 scripts/article_package.py assemble <slug>`: механический
+   чек-лист, линт и детектор считает скрипт, он же применяет STOP-правило
+   (exit 1 = вернуть в seo-editor). Твоя перепроверка = один вызов
+   `article_package.py checklist <slug>`, а не свои грепы.
+7. Git-финал (ниже) + финальный дайджест
 
 > **Дождись результата каждого агента, прежде чем заканчивать.** Если инструмент
 > вернул «Async agent launched successfully» — работа только началась, а не
