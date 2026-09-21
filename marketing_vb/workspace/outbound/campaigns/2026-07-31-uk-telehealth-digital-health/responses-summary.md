@@ -1,33 +1,39 @@
-# Responses Summary — 2026-07-31-uk-telehealth-digital-health (as of 2026-09-02)
+# Responses Summary — 2026-07-31-uk-telehealth-digital-health (as of 2026-09-21)
 
 **This replaces the 2026-09-02 partial run.** That run classified 4 replies pulled from
 Closely's inbox listing. The listing hid two thirds of the campaign's actual repliers —
 the campaign's own contact records showed 9 repliers where the listing showed 3.
 `responses-raw.csv` has since been rebuilt from the authoritative per-campaign contact
 drill and now aggregates two Closely campaigns that both belong to this folder (139205 +
-139077). It holds **17 replies from 13 people**. This file and `responses-classified.csv`
-are the full re-run against that complete data.
+139077). It held **17 replies from 13 people** as of the 2026-09-02/03 full re-run.
 
-15 of 17 rows had a `thread_file` and were classified against the real outbound thread.
-**2 rows (both Sadeq N. Yazdi) have no `thread_file`** — his company and the original
-message angle are unknown, so both are classified from the reply text alone and marked
-`confidence: low`, flagged in-line in the CSV and below.
+**Incremental update, 2026-09-21:** 3 new replies arrived after the 2026-09-02/03 run,
+all from Huma contacts pulled via campaign 139205. They are appended to
+`responses-classified.csv` without altering any of the prior 17 rows. `responses-raw.csv`
+now holds 20 rows / 16 unique people. All 3 new rows have a `thread_file` and were
+classified against the real outbound thread.
+
+15 of 17 rows from the prior run had a `thread_file` and were classified against the real
+outbound thread. **2 rows (both Sadeq N. Yazdi) have no `thread_file`** — his company and
+the original message angle are unknown, so both are classified from the reply text alone
+and marked `confidence: low`, flagged in-line in the CSV and below.
 
 ## Counts
-- Total responses: 17 (13 unique people)
-- Interested: 4 (24%) ← **передать сейлзам**
-- Maybe-later: 3 (18%)
-- Referrals: 1 (6%)
-- Decline: 4 (24%)
+- Total responses: 20 (16 unique people)
+- Interested: 4 (20%) ← **передать сейлзам**
+- Maybe-later: 4 (20%)
+- Referrals: 1 (5%)
+- Decline: 5 (25%)
 - Negative: 0 (0%)
-- Questions: 2 (12%) — требуют личного ответа Вадима
+- Questions: 2 (10%) — требуют личного ответа Вадима
 - OOO: 0 (0%)
-- Other/unclear: 3 (18%)
+- Other/unclear: 4 (20%)
 
 Against `hypothesis.md`'s targets: reply rate needs the send count to compute properly
 (not in this file), but positive replies (interested) = 4, which already clears the
 "qualified leads ≥ 2" bar on raw count — though see the caution on Abraham Morse below
-before calling all 4 qualified.
+before calling all 4 qualified. The 3 new replies did not add a new interested or
+question row; they added 1 maybe-later, 1 decline, and 1 other/unclear.
 
 ## Interested — for sales handoff
 
@@ -122,16 +128,21 @@ before calling all 4 qualified.
 
 ## Negative responses — pattern check
 
-0 of 17 (0%) — well under the 5% threshold, no negative/annoyed responses in this pull.
+0 of 20 (0%) — well under the 5% threshold, no negative/annoyed responses in this pull,
+including the 3 new replies added 2026-09-21.
 
 One softer messaging note, filed under `decline` rather than `negative`: **Scott Lyons**
 (Senior Data Engineer, Slimming World) read the API pitch as a personal-use developer tool
 rather than a B2B capability for his employer's platform ("sounds interesting but I'm not
 sure it's something I would have a use for in my personal time"). Message 1 leads with
 "your data engineering work... stood out" and an API/docs-first frame — closer to a
-dev-tool pitch than a business-capability pitch for someone in his role. One instance
-only, not yet a pattern, but worth watching if more engineer-titled contacts reply the
-same way.
+dev-tool pitch than a business-capability pitch for someone in his role. **Amin Rezaeian**
+(Lead Backend Software Engineer, Huma, added 2026-09-21) is a second data point in the
+same direction: a firm decline citing lack of decision-making authority ("I'm not the
+decision maker and have no time and energy to connect you") plus a claim that "these kind
+of services are never used by Huma." Two engineer-titled declines is worth watching as a
+pattern, though the Huma account overall is mixed, not uniformly cold — see the note under
+Recommendations below.
 
 ## Recommendations
 
@@ -145,18 +156,37 @@ same way.
   the 8/31 meeting as routine — this campaign is scoped England-HQ only
   (`hypothesis.md`), and the confirmation message wasn't signed by the profile that owns
   this thread.
-- **Exclude 4 declines going forward:** Sue Thompson, Joanna Armstrong, Scott Lyons
-  (all Slimming World), Sergio Millán Rodríguez (Zoe). None gave a referral or a
-  reopen signal.
-- **Nurture pipeline, 3 maybe-later:** Lysette Mazur (Slimming World, PR team forward),
+- **Exclude 5 declines going forward:** Sue Thompson, Joanna Armstrong, Scott Lyons
+  (all Slimming World), Sergio Millán Rodríguez (Zoe), and **Amin Rezaeian** (Huma, added
+  2026-09-21 — direct "no," not decision maker, no time to connect us to anyone, claims
+  Huma historically doesn't use "these kind of services"; no referral or reopen signal).
+- **Nurture pipeline, 4 maybe-later:** Lysette Mazur (Slimming World, PR team forward),
   Kamil Aleksander Wyszynski (Physitrack, explicit "stay connected"), Daniel Sleeper (Zoe,
-  conditional internal share). Revisit on a 6-week to 4-month horizon depending on how
-  concrete their door-open language was (Kamil's is the most explicit).
+  conditional internal share), and **Michael Moc** (Huma/eConsult, Account Manager, added
+  2026-09-21 — compliments the product's value for "remote validation" and "cost and time
+  savings" but says his customers are NHS organisations and GP practices on eConsult's
+  consultation/messaging platform, a different product surface, and closes with a
+  conditional "I will surely get back in touch if there are any possible opportunities in
+  the future"). Revisit on a 6-week to 4-month horizon depending on how concrete their
+  door-open language was (Kamil's is the most explicit).
+- **Other/unclear, 4 total, no action needed:** Sadeq N. Yazdi's second message (build-
+  vs-buy aside, same exchange as his logged question), Carolyn Pallister's thumbs-up
+  (acknowledgment, not a new signal), Joanna Armstrong's "thank you so much" (acknowledgment
+  after her already-logged decline), and **Mosn Faraji** (Huma, Staff Product Designer,
+  added 2026-09-21 — "Hi, Thanks Katerina." with no content beyond the pleasantry).
+- **Geo check on the 3 new replies:** all three (Mosn Faraji, Amin Rezaeian, Michael Moc)
+  are Huma / eConsult contacts, same UK-headquartered account already in this pull via
+  Moein Kafi, Hojat Modaresizadeh and Ali BahaAbadi — no non-UK geo concern raised by this
+  batch. Michael Moc's mention of "nhs organisations and GP practices" as his own customer
+  base is, if anything, a confirming signal for this campaign's UK/NHS-adjacent scope, not
+  a flag.
 - **Persona note:** of the 4 `interested` replies, 2 are the actual target buyer type
   (Carolyn Pallister as Head of Nutrition/Research; Abraham Morse as Director of Clinical
   Programs), and 1 (Moein Kafi, Field CEO) is an adjacent operator role, not one of
   `hypothesis.md`'s three named personas but senior enough to matter. This is a better
   persona match than the first partial pull reported.
-- **Data-quality flag for whoever runs step 9 next:** 2 of 17 rows (Sadeq N. Yazdi) carry
-  no `thread_file` and no company_name in `responses-raw.csv` either — worth tracing why
-  those two rows lack what every other row has before the next classification pull.
+- **Data-quality flag for whoever runs step 9 next:** 2 of 17 rows from the original pull
+  (Sadeq N. Yazdi) carry no `thread_file` and no company_name in `responses-raw.csv`
+  either — worth tracing why those two rows lack what every other row has before the next
+  classification pull. The 3 rows added 2026-09-21 all had clean `thread_file` links and
+  no such gap.
