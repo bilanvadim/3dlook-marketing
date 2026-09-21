@@ -4,5 +4,12 @@
   "generated": "2026-09-21",
   "article_of_record": "workspace/seo/articles/2026-08-31-ai-body-data-wellness-platforms-hub/published-live-2026-09-21.md",
   "drafter_model": "opus",
-  "qc_policy": "sampled"
+  "qc_policy": "sampled",
+  "digest_approved": {
+    "by": "Vadim",
+    "date": "2026-09-21",
+    "via": "Claude Code chat («дайджест апрувнув»), after review in git (f748985)",
+    "digest": "review-digest.md (batch job #161, 9/9)",
+    "next": "дизайнер делает визуалы по Design tip каждого поста"
+  }
 }
