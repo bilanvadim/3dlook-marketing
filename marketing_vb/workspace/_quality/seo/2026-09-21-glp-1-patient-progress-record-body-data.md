@@ -7,6 +7,9 @@ artifact_type: seo-final
 total_score: 19/20
 status: excellent
 verdict: ship with notes
+coordinator_review: |
+  agreement: ✅ agree по баллам; поправка по обоснованию D: -1 за lint FAIL корректен, но причина FAIL — документированный M1-титульный кейс (line 2, gate 8), а НЕ word count: 1988 при band 1785-2415 гейт длины проходит [ok], «5.3% short» не является code-reported miss
+  top_issue: for_agent_improver п.1 (систематический недобор к target после trim-проходов: 1867 и 1988 на двух статьях подряд) и п.2 (авто-чек текстовых перетинів same-day sibling-статей в lint) — беру оба в agent-improver
 ---
 
 # QC Report — seo-qc — 2026-09-21
