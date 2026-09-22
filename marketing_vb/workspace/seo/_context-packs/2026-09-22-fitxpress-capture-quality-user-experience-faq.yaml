@@ -1,0 +1,495 @@
+# Built by context-pack-builder 2026-09-22 (read-only agent); saved to disk by the coordinator.
+# Phase 0: OFF-PLAN net-new, approved by Vadim 2026-09-22. No content-plan row exists or was sought.
+context_pack:
+  created: 2026-09-22
+  product: fitxpress
+  track: seo
+  channel: blog
+  profile: none
+  objective: "SEO article — FitXpress User Experience and Capture Quality FAQ — plan stage for seo-planner. Canonical product/procurement FAQ on guided capture, RTPV-equivalent pose control, clothing detection, retakes, self-scanning, workflow integration, and timing. Off-plan, approved by Vadim 2026-09-22."
+  target_agent: seo-planner
+  slug: "2026-09-22-fitxpress-capture-quality-user-experience-faq"
+
+  phase_0_resolved: true
+  action_type: "Create net-new (off-plan, approved by Vadim 2026-09-22)"   # GATE family: GO → Phase 1. Do not look for a content-plan row.
+
+  company_oneliner: "3DLOOK turns two smartphone photos into a 3D body model and 80+ body measurements in 45 seconds, via API and SDK."
+
+  product_summary: |
+    FitXpress: mobile body scanning producing structured body data (80+ measurements, BMI,
+    BMR, body fat %, lean/fat mass, 3D model) from two smartphone photos, delivered primarily
+    via API/SDK integration into the customer's own product; the FitXpress Admin Panel is an
+    OPTIONAL centralized view (Vadim, 2026-09-21).
+    For THIS article: the angle is capture reliability and input-quality controls — how guided,
+    standardized capture (pose/tilt validation, clothing detection, retake logic) supports
+    remote users completing a usable scan without a technician present, and what that guidance
+    does and does not guarantee. NOT an accuracy-validation article, NOT a general "how two
+    photos become data" explainer, NOT a patient-engagement or progress-tracking piece, NOT a
+    privacy/security/regulatory FAQ, NOT a clinical decision-making guide, NOT another broad
+    telehealth overview (telehealth is the primary context, not the subject).
+
+  page_specs:   # brief.md §2, verbatim values
+    h1: "FitXpress User Experience and Capture Quality FAQ"
+    seo_title: "FitXpress Capture Quality & User Experience FAQ"
+    url: "/content-hub/fitxpress-capture-quality-user-experience-faq/"
+    content_type: "Canonical product and procurement FAQ"
+    funnel_stage: "MOFU/BOFU"
+    primary_audience: "Product leaders, clinical operations teams, implementation teams, procurement teams, digital-health executives"
+    primary_intent: "Can remote users produce reliable body data without staff supervision?"
+    secondary_intent: "How does FitXpress control photo quality, pose, clothing, and capture conditions?"
+    meta_description: "Answers for telehealth and digital-health teams about guided photo capture, RTPV, clothing detection, self-scanning, retakes, workflow integration, and timing."
+
+  strategic_role: >
+    Canonical source for FitXpress capture-experience and input-quality-control questions.
+    Do NOT turn into: another broad telehealth article; a general "how two-photo body
+    measurement works" explainer; an accuracy-validation article; a patient-engagement
+    article; a progress-tracking article; a privacy/security/regulatory FAQ; a clinical
+    decision-making guide. Use concise answers and link to the canonical page when a
+    question extends beyond capture quality.
+
+  central_message: >
+    Remote capture quality depends on both the technology and the conditions under which the
+    user completes the scan. FitXpress uses standardized, guided capture and capture-quality
+    controls to reduce avoidable variation — these controls do NOT eliminate the need for
+    clear instructions, suitable clothing, appropriate lighting/placement, retake logic,
+    accessibility planning, or an alternative route for users who cannot complete the scan.
+    Do not claim FitXpress guarantees a successful scan or eliminates all effects of user
+    behavior.
+
+  intro_guidance: "~100-150 words. Frame: remote-care/digital-health buyers ask whether users can complete a two-photo scan reliably without a technician present. Introduce FitXpress as guided two-photo body measurement technology embeddable in an existing digital experience. State the FAQ covers UX, capture-quality controls, retakes, self-scanning, workflow integration, timing. Do NOT introduce progress tracking, privacy, or clinical applications in detail here."
+
+  quick_answers_table:   # brief §5, verbatim — a 3-column compact table, does NOT replace full FAQ answers
+    - topic: "Photo capture"
+      direct_answer: "FitXpress guides the user through front and side photo capture."
+      qualification: "Usable results still depend on suitable capture conditions."
+    - topic: "Positioning"
+      direct_answer: "Real-time pose/tilt validation provides positioning and framing feedback."
+      qualification: "A capture-quality control, not a clinical posture assessment."
+    - topic: "Clothing"
+      direct_answer: "Clothing conditions are checked during the capture process."
+      qualification: "Do not claim accurate measurement through every garment."
+    - topic: "Self-scanning"
+      direct_answer: "Users can complete supported capture flows independently."
+      qualification: "Accessibility, available space, and device placement still matter."
+    - topic: "Retakes"
+      direct_answer: "The experience can direct the user to correct capture problems."
+      qualification: "Do not claim every quality problem is automatically detected."
+    - topic: "Workflow"
+      direct_answer: "Capture can be embedded through web or mobile SDKs and the API."
+      qualification: "Clinical interpretation and decisions stay outside FitXpress."
+    - topic: "Timing"
+      direct_answer: "Results are returned within the approved product timeframe."
+      qualification: "Distinguish capture time, processing time, and total flow — only <45s total is approved (see unconfirmed_product_behavior)."
+
+  required_questions:   # all 11, condensed from brief §6 — do not drop any rule
+    - n: 1
+      q: "How does FitXpress help users capture usable photos?"
+      cover: "Front+side capture; standardized instructions; positioning/framing guidance; real-time feedback; SDK flow; consistency across repeated scans."
+      note: "Guided capture reduces avoidable variation but does not make capture conditions irrelevant."
+      link: "\"how two photos become structured body data\" → /content-hub/3dlook-turns-two-photos-structured-body-data/"
+    - n: 2
+      q: "What is Real-Time Pose Validation (RTPV)?"
+      cover: "Define in full at first use. Operates during capture; checks position/framing against requirements; real-time guidance to adjust; the validation layer within the capture flow."
+      must_state: "\"[This] is a capture-quality and positioning control. It does not assess posture as a medical, musculoskeletal, or health condition.\" Never describe as posture analysis, health assessment, motion analysis, or clinical validation."
+      implementation_note: "Standardized SDK capture layer supports consistent performance; customer can brand the surrounding UX, capture/tutorial layers are more limited (tech-spec.md 'What's NOT customizable')."
+      caution: "See unconfirmed_product_behavior — \"RTPV\" as a named acronym is not attested in canon. Use lowercase descriptive phrasing (\"real-time pose and tilt validation\") and do not present it as an established branded/trademarked term."
+    - n: 3
+      q: "What happens when a user's position does not meet the capture requirements?"
+      cover: "Do not lead with \"wrong posture.\" Cover: repositioning prompts, framing corrections, another attempt where needed, supportive corrective instructions."
+      must_not: "State every positioning problem automatically blocks capture (UNCONFIRMED — canon only says pose validation 'reduces retakes', never 'blocks'). No invented rejection thresholds, confidence scores, or error messages."
+    - n: 4
+      q: "What happens when clothing may affect scan quality?"
+      cover: "Tight/body-following clothing supports more consistent capture; oversized/loose/layered/body-obscuring garments affect the visible outline; clothing classification (canon: sport/regular/oversized, tech-spec.md) identifies relevant conditions; flow may direct user to correct clothing or repeat capture."
+      must_not: "Measures accurately through any clothing; guarantees detection of every garment issue; \"prevents manipulation\"; automatically rejects every unsuitable scan."
+      caution: "\"Clothing Detector\" as a capitalized proper-noun feature name is UNCONFIRMED (see unconfirmed_product_behavior) — write as lowercase descriptive capability, not a branded name."
+    - n: 5
+      q: "How much do user behavior and capture conditions affect the results?"
+      cover: "No invented % reduction from poor behavior. Discuss positioning, framing, camera placement/angle, lighting, distance, clothing, consistency between baseline/follow-up scans. Clearly distinguish accuracy (closeness to reference method) vs repeatability (consistency of repeated scans) vs capture quality (whether submitted images meet processing requirements)."
+      evidence: "Use FXS-ACCURACY and FXS-REPEAT VERBATIM (see approved_claims) — NOT the brief's own paraphrase \"approximately 96-97% agreement with expert manual measurements\", which is not the canonical sentence. Always qualify by reference/population/protocol and link mobile-body-scanning-accuracy from that paragraph. Never present as universal guarantees. The two benchmarks (internal vs ISO 8559) are never combined."
+      link: "\"body-scanning accuracy framework\" → /content-hub/mobile-body-scanning-accuracy/"
+    - n: 6
+      q: "What happens if a user cannot complete a valid scan?"
+      cover: "Corrective instructions; retakes; a defined support route; accessibility considerations; an assisted/alternative capture path where appropriate; an alternative workflow for users who cannot or prefer not to scan."
+      must_not: "Imply remote scanning must be the only way to remain in a healthcare/wellness program. Do not promise every user can complete the scan independently."
+      optional_context: "faq.md:72-73 — 'Failed-due-to-pose scans are not billable' is a real, confirmed operational fact but is commercial/billing detail; include only if it fits a buyer-facing register, not required."
+    - n: 7
+      q: "Can users complete a scan alone at home?"
+      cover: "Answer yes, with qualifications. Supported self-scan flow guides front+side capture without a technician or dedicated scanner."
+      confirmed: "Standard smartphone; a flat surface for phone placement (tech-spec.md 'Recommended capture environment' — 'Phone placed vertically on a flat surface (table, counter)'); real-time positioning feedback; no specialized scanning hardware."
+      caution: "Timer / voice-guided capture is UNCONFIRMED — no canon source (tech-spec.md, how-it-works.md, faq.md) mentions an audio prompt or countdown timer. Omit or write as unconfirmed; do not invent this mechanic."
+      also_ack: "Completion can depend on mobility, available space, smartphone access, privacy, ability to follow positioning instructions."
+      must_not: "Imply every user or environment is suitable for self-scanning."
+    - n: 8
+      q: "Can FitXpress be integrated into a telehealth or clinical workflow?"
+      cover: "Operational sequence (tech-spec.md Pattern A/B + how-it-works.md): customer embeds guided capture step in its app/web experience → user completes front+side capture → customer backend submits to FitXpress API → FitXpress processes and returns structured outputs → customer stores/displays/routes outputs per its workflow → care team/authorized professional reviews."
+      integration_options_confirmed: "Web SDK — Camera SDK (React), described in canon as 'React (web + hybrid)'; native iOS SDK (Swift); native Android SDK (Kotlin); REST API; FitXpress Admin Panel (optional, FXS-DELIVERY)."
+      caution: "\"React Native\" specifically is UNCONFIRMED — canon never names it; only 'Camera SDK (React) — React (web + hybrid)'. Do not assert an explicit React Native SDK; safe wording is 'a React-based web SDK' or 'Camera SDK (React), for web and hybrid apps', not 'React Native support'."
+      state: "Use FXS-SCOPE (supports clinician/care-team review; does not diagnose, determine treatment, autonomously determine eligibility, or replace a required reference method) and FXS-MEDICAL (\"FitXpress is not a medical device.\") verbatim."
+    - n: 9
+      q: "How long do capture and processing take?"
+      cover: "Separate three concepts: onboarding/preparation; front+side photo capture; processing/delivery of results."
+      approved_figure: "ONLY 'under 45 seconds' for the full pipeline is approved (FXS-SPEED / compliance.md §3: 'returns structured outputs in under 45 seconds'). No canon source gives a separate capture-only or processing-only number."
+      must_not: "Mix 'under 45 seconds', 'under 40 seconds', 'under one minute', or other timing claims on the same page. Do not claim 'under 10 seconds' — not approved for any production implementation in canon."
+    - n: 10
+      q: "Can users upload existing photos instead of completing guided capture?"
+      cover: "Existing-photo uploads are NOT supported for the standard workflow. Guided capture matters because: the system needs front/side images under defined conditions; pose/tilt validation operates during the supported flow; camera positioning/context contributes to consistency; camera-roll photos don't provide the same controlled capture record."
+      confirmed_source: "\"FitXpress controls capture via its SDK, without a camera roll picker, and applies real-time pose and tilt validation.\" (brand-assets/past-articles/blog/online-pharmacy-bmi-verification.md:95); \"Access to the device's camera roll is disabled.\" (same file, line 66)."
+      must_not: "Suggest all uploaded photos are fraudulent or manipulated."
+    - n: 11
+      q: "What progress outputs are available after a successful scan?"
+      cover: "Brief bridge ONLY — do not expand into a progress-tracking section. Depending on configuration: body measurements; calculated metrics (BMI, BMR); body-composition estimates (body fat %, fat mass, lean mass); a 3D body model; comparisons between customer-selected scans (Body Progress)."
+      guardrail: "Lean mass, never muscle mass. If Body Progress is mentioned, apply body_progress_guardrails below."
+      link: "\"mobile body scanning and patient engagement\" → /content-hub/mobile-body-scanning-patient-engagement/"
+
+  excluded_topics:   # brief §7 — do not create full sections for these
+    do_not_answer_in_full:
+      - "How do you track fat versus muscle progress?"
+      - "How do you visually display fat versus muscle change?"
+      - "How do you show meaningful progress at 5-, 10-, or 20-pound milestones?"
+    reason: "These belong to the progress-tracking content cluster, not this article."
+    if_touched_elsewhere_rewrite_as:
+      - "How can programs compare changes in estimated fat mass and lean mass over time?"
+      - "How can platforms present changes in body-composition estimates, measurements, and 3D body shape?"
+      - "Can programs compare milestone scans after a defined change in weight?"
+    note: "Use lean mass, not muscle mass, unless explicitly discussing the difference."
+
+  terminology_guardrails:   # brief §8, on top of stable hard-bans (see `terminology` pointer below)
+    - "Use \"FitXpress\" consistently."
+    - "Define RTPV-equivalent term at first use (see unconfirmed_product_behavior for the naming caution)."
+    - "Refer to clothing detection as a capture-quality feature (lowercase descriptive — see unconfirmed_product_behavior)."
+    - "Use \"guided two-photo capture\", \"two-photo body measurement technology\", or \"remote body measurement capture\" — do not lean repeatedly on generic \"AI body scanning\"."
+    - "\"Front and side photos\", not undefined \"body images\"."
+    - "Distinguish body measurements from body-composition estimates; describe body fat %, fat mass, lean mass as estimates."
+    - "\"Calculated BMI\" only when the weight input and calculation basis are clear."
+    - "\"Predicted weight\" reserved for the Smart Scales feature (tech-spec.md: Smart Scales is a (beta) feature)."
+    - "Never describe lean mass as muscle mass. Never claim FitXpress calculates visceral fat."
+    - "Never call any output diagnostic or clinical-grade."
+    - "Never say the system guarantees accuracy, prevents all poor inputs, or eliminates retakes."
+    - "Never say FitXpress makes clinical, treatment, triage, or eligibility decisions."
+    - "Use the approved statement verbatim: \"FitXpress is not a medical device.\" (FXS-MEDICAL)."
+
+  body_progress_guardrails:   # brief §9 — apply only if Body Progress is mentioned (likely Q11 bridge)
+    - "Explain it compares two scans using their scan IDs; the customer selects the scans to compare."
+    - "Do not imply 3DLOOK identifies or tracks individuals, or independently maintains a person-level progress history."
+    - "State the customer determines whether and how progress tracking is enabled; milestone logic belongs to the customer's program."
+    - "If 5-/10-/20-pound milestones are mentioned elsewhere, identify the source of the weight. Do not imply ordinary FitXpress output automatically detects weight milestones."
+
+  internal_links:   # brief §10 — all 5 URLs verified live 2026-09-22 against published-articles-inventory.md / past-articles
+    - anchor: "how two photos become structured body data"
+      url: "/content-hub/3dlook-turns-two-photos-structured-body-data/"
+      verified: "live since 2026-05-06 (published-articles-inventory.md:214; also brand-assets/past-articles/blog/3dlook-turns-two-photos-structured-body-data.md on disk)"
+      use_at: "Q1, first mention"
+    - anchor: "body-scanning accuracy framework"
+      url: "/content-hub/mobile-body-scanning-accuracy/"
+      verified: "live, in stable pack live_slugs"
+      use_at: "Q5, first mention"
+    - anchor: "FitXpress for telehealth and digital health"
+      url: "/structured-body-data-for-telehealth-digital-health-programs/"
+      verified: "CORRECT BOFU URL — the old /fitxpress/for-telehealth-and-weight-loss/ 301s here; do not use the old URL (confirmed in 2026-09-21 pack)."
+      use_at: "Q8, first mention"
+    - anchor: "mobile body scanning and patient engagement"
+      url: "/content-hub/mobile-body-scanning-patient-engagement/"
+      verified: "live, in stable pack live_slugs"
+      use_at: "Q11, first mention"
+    - anchor: "FitXpress data, privacy, security, and regulatory FAQ"
+      url: "/content-hub/fitxpress-data-privacy-security-regulatory-faq/"
+      verified: "live 2026-09-16, in stable pack live_slugs"
+      use_at: "wherever privacy/security/regulatory questions extend beyond capture quality (e.g. near Q8/Q10 data handling)"
+  internal_links_rule: "Contextual anchor text; link each destination only at its most relevant FIRST mention. Do not reproduce the linked pages' content just to pad length."
+
+  content_strategy:   # added by seo-publisher, 2026-09-22 — this off-plan pack skipped Phase 0
+    # hub resolution (no content-plan row, per plan-audit.md), so context-pack-builder did not
+    # populate this section, and article_lint's link-direction gate had nothing to check against.
+    # Bucket assignments below reuse ONLY the brief's own §10 link list (5 URLs, already verified
+    # in internal_links above) and mirror the SAME bucket convention already used for 4 of these
+    # 5 URLs in the sibling 2026-09-21 packs (telehealth-documentation, glp-1-patient-progress-
+    # record): accuracy framework + trust FAQ = trust, patient-engagement = sideways, telehealth
+    # BOFU page = down. No new link, anchor, or writing instruction — mechanical only.
+    internal_link_targets:
+      up:
+        - "https://3dlook.ai/content-hub/3dlook-turns-two-photos-structured-body-data/  # foundational two-photo mechanics page this FAQ drills down from (Q1)"
+      sideways:
+        - "https://3dlook.ai/content-hub/mobile-body-scanning-patient-engagement/  # progress/engagement canonical, adjacent but distinct intent (Q11 bridge only)"
+      down:
+        - "https://3dlook.ai/structured-body-data-for-telehealth-digital-health-programs/  # BOFU product page, same URL sibling packs use (Q8)"
+      trust:
+        - "https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/  # accuracy framework, cited in Q5"
+        - "https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/  # central trust FAQ, linked from Q8"
+
+
+  cta: >
+    End with one buyer-focused CTA, verbatim: "Ready to evaluate guided remote body-data
+    capture for your product? Book a demo to review the FitXpress capture flow, integration
+    options, and data-quality controls with the 3DLOOK team." Link "Book a demo" to
+    https://3dlook.ai/book-a-demo/
+
+  schema: "Article or BlogPosting via the standard content-hub template. ONE connected FAQPage entity containing all visible FAQ questions/answers — no separate FAQPage blocks per question. Visible answers and schema answers must stay synchronized (same wording); no schema Question absent from the published page."
+
+  visual_guidance: "Max 2 visuals. Primary: guided capture/quality-control flow — guided instructions → positioning/framing checks → clothing check → front/side capture → processing → structured results, with a retake route when requirements aren't met; do not place clinical interpretation inside the FitXpress product flow. Optional: compact evidence panel distinguishing accuracy (vs reference) / repeatability (across scans) / capture-quality controls (pre-processing). No decorative visual per FAQ group."
+
+  writing_requirements:   # brief §11, condensed
+    - "Direct, factual language. Answer each question in the first 1-2 sentences; supporting detail after."
+    - "Most answers 100-180 words. Bullets only when they improve clarity."
+    - "Avoid promotional language and vague claims (\"advanced AI ensures perfect results\")."
+    - "Don't repeat the same explanation of guided capture in every answer."
+    - "Use \"depends on\", \"varies by\", \"is determined by\" for dependencies."
+    - "Never use \"what trips people up\"; never refer to \"the reader\"/meta-commentary; never call claims \"objective\" (all already stable hard bans)."
+    - "Spell out unfamiliar abbreviations at first use — except BMI/CEO/UK/US/EU (CLAUDE.md exception, commonly known)."
+    - "Target length: ~1,800-2,400 words."
+
+
+  # === STABLE (verbatim from _stable-fitxpress.yaml, rendered 2026-09-21, --check passed) ===
+  approved_claims:
+    - id: FXS-SPEED
+      text: "Two photos (front + side); structured outputs in under 45 seconds."
+      source: "proof-points.md, Speed table"
+    - id: FXS-OUTPUTS
+      text: "80+ body measurements; body composition outputs: BMI, BMR, fat %, lean mass, fat mass, essential fat, beneficial fat."
+      source: "proof-points.md, Output coverage"
+      note: "Always '80+ body measurements', never '80+ body metrics'; BMI/BMR/composition are calculated metrics/estimates, not measurements."
+    - id: FXS-DELIVERY
+      text: "Delivered primarily via API/SDK integration directly into the customer's own product or interface; the FitXpress Admin Panel is an optional centralized view for teams that do not want to build their own dashboard."
+      source: "overview.md + Vadim's checkpoint decision, 2026-09-21"
+      note: "API/SDK is the PRIMARY delivery story; name 'FitXpress Admin Panel' directly, no 'vendor console' softening."
+    - id: FXS-ACCURACY
+      text: "3DLOOK's measurement accuracy of approximately 96-97% across body metrics, with a typical absolute error of 1.5-2.0 cm per measurement, varying by body part"
+      source: "accuracy-formulations.md §1.1, verbatim"
+      note: "Never without reference/population/protocol condition and a link to mobile-body-scanning-accuracy from the same paragraph. Two benchmarks (this + ISO 8559 0.40 cm) never combined."
+    - id: FXS-REPEAT
+      text: "For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm"
+      source: "accuracy-formulations.md §1.2"
+      note: "Write as '< 1 cm' / 'below 1 cm', locked convention."
+    - id: FXS-POPULATION
+      text: "FitXpress was not specifically trained on data representing people with physical disabilities, and its measurement performance has not been established for this population. This matters when a disability affects the standard standing pose or capture sequence. In those cases, the program needs a documented alternative measurement path."
+      source: "accuracy-formulations.md §5"
+      note: "Relevant here for Q6/Q7 (accessibility, alternative path) — third sentence fits workflow content."
+    - id: FXS-HIPAA
+      text: "FitXpress can support HIPAA-governed deployments where 3DLOOK acts as a business associate under an executed BAA, where applicable."
+      source: "compliance.md §1"
+      note: "Section-first, link to the FAQ, do not restate."
+    - id: FXS-GDPR
+      text: "In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR."
+      source: "compliance.md §2, verbatim"
+    - id: FXS-IDS
+      text: "Scan records are associated with anonymized, randomly generated IDs; 3DLOOK cannot identify a specific individual from stored scan records."
+      source: "compliance.md §4"
+    - id: FXS-LIFECYCLE
+      text: "Submitted data: front/side photos + gender + height + optional weight. Generated data: body measurements, weight/BMI-related outputs, body composition estimates, a 3D model, scan-to-scan comparison outputs. Technical data: capture-quality/pose-validation flags, clothing classification, face-obfuscation confirmation, processing logs with timestamps and request metadata."
+      source: "compliance.md §3"
+      note: "Directly relevant — the 'technical data' clause names pose-validation flags and clothing classification as real, confirmed outputs."
+    - id: FXS-RETENTION
+      text: "Measurements, body composition data and 3D models are retained on an ongoing basis unless the customer agreement says otherwise; deletion is by scan identifier on the customer's request."
+      source: "compliance.md §3/§4"
+    - id: FXS-SCOPE
+      text: "Supports: remote intake and body-measurement capture; body composition outputs and Body Progress comparisons; structured data collection for research protocols; structured intake and supporting documentation for customer-managed eligibility workflows; patient/member engagement. Does not independently determine: a diagnosis, treatment, medication recommendation, fitness for duty, employment eligibility, insurance eligibility, clinical-trial eligibility, or any other high-impact individual decision. Final decisions stay with the customer's clinicians, underwriters or other designated decision-makers."
+      source: "compliance.md §7"
+      note: "Load-bearing for Q8."
+    - id: FXS-MEDICAL
+      text: "FitXpress is not a medical device."
+      source: "compliance.md; Vadim 2026-09-11"
+      note: "Stated directly; 'positioned as' is a hard fail."
+
+    # === TOPIC-SPECIFIC (this pack, verified 2026-09-22) ===
+    - id: FX-CQ-001
+      text: "Pose / tilt validation in the SDK is the single biggest factor in measurement accuracy. Customers who roll their own camera capture see meaningfully worse accuracy."
+      source: "tech-spec.md:22 / how-it-works.md:40"
+    - id: FX-CQ-002
+      text: "Real-time pose detection: skeletal tracking on-device or live in browser; validates body posture before each photo; reduces retakes; face obfuscation auto-applied for privacy."
+      source: "tech-spec.md:41-45"
+    - id: FX-CQ-003
+      text: "Real-time clothing detection classifies fit type per scan (sport / regular / oversized), flags inappropriate attire and prompts the user, and notifies the clinical/business team via the response payload."
+      source: "tech-spec.md:47-50"
+      note: "Lowercase generic capability — see unconfirmed_product_behavior re: 'Clothing Detector' as a proper noun."
+    - id: FX-CQ-004
+      text: "The photo capture layer in the SDK (where pose/tilt validation runs) is NOT customizable, by design, to protect measurement accuracy."
+      source: "tech-spec.md:34-38 / how-it-works.md:45"
+    - id: FX-CQ-005
+      text: "Integration options: REST API (server-to-server); Mobile Camera SDK for iOS (Swift); Mobile Camera SDK for Android (Kotlin); Camera SDK (React), for web and hybrid apps."
+      source: "tech-spec.md:14-20 / how-it-works.md:33-38"
+      note: "No source names 'React Native' explicitly — see unconfirmed_product_behavior."
+    - id: FX-CQ-006
+      text: "FitXpress controls capture via its SDK, without a camera roll picker, and applies real-time pose and tilt validation. Access to the device's camera roll is disabled."
+      source: "brand-assets/past-articles/blog/online-pharmacy-bmi-verification.md:66,95"
+      note: "The confirmed source for Q10 (no existing-photo upload)."
+    - id: FX-CQ-007
+      text: "Recommended capture environment: phone placed vertically on a flat surface (table, counter); user stands in front and side positions; fully clothed (form-fitting or regular fit best, oversized gets flagged); any background works; standard indoor lighting is fine."
+      source: "tech-spec.md:118-123"
+      note: "No timer or voice guidance mentioned anywhere in this or any other canon source — see unconfirmed_product_behavior."
+    - id: FX-CQ-008
+      text: "Two integration patterns: Pattern A, customer-branded host app (host app owns onboarding/results display); Pattern B, customer workflow with no UI exposed to the end user (end user sees a 'submitted' message, results consumed server-side only — e.g. online pharmacy BMI verification)."
+      source: "tech-spec.md:62-72 / faq.md:55-56"
+
+    - id: FX-CQ-009
+      text: "In 3DLOOK's internal repeatability testing, typical scan-to-scan differences remained below 1 cm for most of the evaluated measurements."
+      source: "accuracy-formulations.md §5 (short form of §1.2), 'internal' restored per editorial guardrail #3"
+      note: "Legalized by coordinator 2026-09-22 after seo-editor; replaces FXS-REPEAT marker in final.md Q5."
+    - id: FX-CQ-010
+      text: "A separate internal validation compared FitXpress measurements with expert pattern-maker tape measurements. Across the evaluated body measurements, reported accuracy was approximately 96-97%, with a typical absolute error of 1.5-2.0 cm depending on the body part."
+      source: "accuracy-formulations.md §5 (short form of §1.1/§1.8), 'internal' restored per editorial guardrail #3"
+      note: "Legalized by coordinator 2026-09-22 after seo-editor; replaces FXS-ACCURACY marker in final.md Q5. Framework link stays in the same paragraph."
+
+  unconfirmed_product_behavior:   # brief §15 checklist — qualify, do not invent
+    - item: "\"Real-Time Pose Validation (RTPV)\" as a named/branded acronym"
+      status: "NOT attested anywhere in product-info canon (tech-spec.md, how-it-works.md, faq.md, overview.md, competitors.md — checked directly). Canon consistently uses lowercase descriptive phrasing: 'real-time pose / tilt validation', 'AI-powered pose validation engine', 'Real-time pose detection'."
+      instruction: "Do not present RTPV as an established/trademarked feature name the way 'Smart Scales' is. Use lowercase descriptive phrasing throughout; if the brief's acronym is kept for readability, flag it to Vadim as unverified naming rather than treating it as settled fact."
+    - item: "\"Clothing Detector\" as a capitalized proper-noun feature name"
+      status: "NOT attested — canon uses lowercase 'AI clothing detector' / 'real-time clothing detection' / 'clothing classification'."
+      instruction: "Use lowercase descriptive phrasing, not a capitalized branded name."
+    - item: "Whether capture is blocked / paused / repeated for a failed quality condition"
+      status: "NOT confirmed as 'blocked' or 'paused' anywhere. Canon only confirms pose validation 'reduces retakes' (tech-spec.md:44) and clothing detection 'flags... and prompts user' (tech-spec.md:49)."
+      instruction: "Write as prompts/corrections/another attempt, never as an automatic block, per the brief's own Q3 caution."
+    - item: "Self-scan timer / voice guidance"
+      status: "NOT confirmed. Only confirmed self-scan detail: phone on a flat surface, real-time on-screen positioning feedback, standard indoor lighting fine, any background."
+      instruction: "Omit timer/voice claims, or explicitly flag as unconfirmed if the writer wants to keep the phrasing pending Vadim's confirmation."
+    - item: "React Native SDK support"
+      status: "NOT confirmed. Canon names three SDKs + API: iOS (Swift), Android (Kotlin), 'Camera SDK (React)' described as 'React (web + hybrid)'. No source says 'React Native'."
+      instruction: "Use 'Camera SDK (React), for web and hybrid apps' — do not assert explicit React Native support."
+    - item: "FitXpress Admin Panel naming"
+      status: "CONFIRMED as approved terminology — not unconfirmed. Sourced from Vadim's 2026-09-21 checkpoint decision (FXS-DELIVERY) and the live product-announcement article 'fitxpress-admin-panel-launch', even though the literal string doesn't appear in product-info/*.md files."
+      instruction: "Use directly, no softening."
+    - item: "Timing figures beyond 'under 45 seconds'"
+      status: "NOT confirmed. No canon source gives a separate capture-only or processing-only number, or any figure like 'under 10 seconds' or 'under 40 seconds'."
+      instruction: "Use ONLY FXS-SPEED's 'under 45 seconds' for the full pipeline; do not separate into sub-timings not in canon."
+
+  claims_NOT_to_use_here:
+    - "Full accuracy-validation deep dive, including per-measurement figures (wrist 0.54cm, waist 2.14cm, etc.) — technical material only, owned by mobile-body-scanning-accuracy, not this hub-adjacent FAQ (accuracy-formulations.md §1, proof-points.md)."
+    - "General 'how two photos become structured body data' re-explanation — link to 3dlook-turns-two-photos-structured-body-data instead of re-explaining (brief §3)."
+    - "Progress-tracking / patient-engagement deep content beyond the Q11 bridge — link to mobile-body-scanning-patient-engagement, don't expand (brief §7, §11)."
+    - "Privacy/security/regulatory FAQ content restated in full — link to fitxpress-data-privacy-security-regulatory-faq, section-first only (brief §3, compliance.md header)."
+    - "Named customer examples (UK Meds, Yazen) — not required by the brief and Yazen is under Vadim's 2026-09-19 'don't name' decision; this is a product-level FAQ, keep generic ('a telehealth program', 'an online pharmacy') if an example is needed at all."
+    - "Market sizing table (proof-points.md) — no use case here."
+    - "'95%+ repeatability consistency' — internal figure, no published home (proof-points.md Repeatability table); never publish."
+    - "Insurance-underwriting-specific KPIs — out of scope for a capture-quality FAQ."
+
+  banned_claims:
+    - "most accurate body scanning / best-in-class (without a specific benchmarked figure)"
+    - "any accuracy figure reduced to one universal number without qualifying decision/reference/protocol/population/tolerance"
+    - "medical device / diagnostic / clinical assessment / dosing / prescribing recommendation / eligibility decisioning"
+    - "replaces DXA (also written DEXA), BIA, calibrated scales, or clinician review"
+    - "automated eligibility, underwriting, or fraud-detection claims"
+    - "guaranteed compliance / 'makes you compliant' / guaranteed outcomes"
+    - "any number not in approved_claims"
+    - "named competitor comparisons"
+    - "HIPAA compliant / HIPAA certified / SOC 2 certified / FDA-cleared"
+    - "'no personal identifiers' / 'no personal data'"
+    - "'processed, not stored'"
+    - "'FitXpress tracks each patient over time'"
+    - "'95%+ repeatability consistency'"
+    - "guaranteeing a successful scan, or that FitXpress eliminates all effects of user behavior (brief §4, central message)"
+    - "every positioning/quality problem is automatically detected or blocks capture (brief §6.3)"
+    - "measuring accurately through any/every clothing; 'prevents manipulation'; automatic rejection of every unsuitable scan (brief §6.4)"
+    - "a percentage reduction in accuracy attributed to poor user behavior — not in canon (brief §6.5)"
+    - "remote scanning as the only way to remain in a program (brief §6.6)"
+    - "every user or environment is suitable for self-scanning (brief §6.7)"
+    - "specific rejection thresholds, confidence scores, or capture error messages not in canon (brief §6.3)"
+    - "explicit React Native SDK support / RTPV as branded name / Clothing Detector as proper noun / self-scan timer or voice guidance — see unconfirmed_product_behavior"
+    - "any timing figure other than 'under 45 seconds' for the full pipeline"
+    - "muscle mass in place of lean mass; visceral fat calculation; diagnostic or clinical-grade labeling of any output"
+
+  banned_words:
+    - comprehensive
+    - delve
+    - disrupt
+    - groundbreaking
+    - harness
+    - leverage
+    - realm
+    - revolutionary
+    - robust
+    - seamless
+    - tapestry
+    - unparalleled
+
+  terminology: "Mechanical bans not duplicated here — writer reads brand-assets/style-guides/hard-bans-card.md (generated, one screen). Judgment-call terms (corrective negation, we/our, you, buyer/customer, content-plan labels) stay with the editor per terminology-guardrails.md."
+
+  tone:
+    voice: "calm, specific, evidence-led B2B (about-me.md); the reframe move as a plain statement; declarative, unhurried; concrete over abstract; honest about limits in the same breath as capability; actor framing (product/implementation/procurement teams, care teams), not 'you'-spam. Telehealth is a listed sensitive vertical even though it's not the primary subject here — keep hedges where the FAQ touches clinical workflow (Q8)."
+    length: "~1,800-2,400 words (brief §11). Sentences average < 16 words (article_lint gate 10)."
+    format: "FAQ H3 per required question, direct answer first 1-2 sentences, Quick answers table near the top (does not replace full answers), one connected FAQPage schema, single BOFU CTA at the end."
+    dont: "No hype, no emoji, no diagnostic/eligibility/clearance language, no re-explained accuracy methodology, no expanded progress-tracking section, no promotional filler ('advanced AI ensures perfect results')."
+
+  voice_fingerprint:
+    - "The reframe move as a plain statement, not a rhetorical question."
+    - "Declarative and unhurried; mostly 10-20-word sentences, averaging under 16; concrete over abstract."
+    - "Honest about limits in the same breath as capability; actor framing, not 'you'-spam."
+  claims_discipline:
+    - "NEVER: diagnose, make treatment/eligibility/clearance decisions, replace clinician/DXA/BIA/calibrated scale, guarantee compliance, auto-detect fraud."
+    - "Describe as: a mobile body-scanning solution; a structured body-data capture layer; a workflow-standardization tool; support for review, not replacement of it. FitXpress is not a medical device."
+  accuracy_framing:
+    - "Only invoke where Q5 actually discusses accuracy. Never reduce to one universal number; qualify by decision/reference/protocol/population/tolerance and link mobile-body-scanning-accuracy from that paragraph."
+    - "Repeatability written as '< 1 cm'; the two benchmarks (internal vs ISO 8559) are never combined in one paragraph."
+
+  examples:
+    - file: "brand-assets/past-articles/blog/fitxpress-data-privacy-security-regulatory-faq.md"
+      note: "Closest structural model for this article: FAQ register, Quick answers table, question H3s, direct answer first, legal-adjacent register, facts-only sourcing. CLAUDE.md §15 notes this register is 'for Type G only' — this piece is a different Type G-adjacent FAQ (product/UX, not privacy), so borrow structure, not the privacy-specific legal tone."
+    - file: "brand-assets/past-articles/blog/manual-vs-digital-intake-occupational-health-screening.md"
+      note: "MANDATORY per CLAUDE.md §15 pt 2 for any FitXpress workflow article — editor's final (2026-09-11), live almost verbatim since 2026-09-21. Current reference for sentence length and privacy-section wording."
+    - reference_only: "about-me.md + audience.md (repo root) + brand-assets/style-guides/blog-style-guide.md + brand-assets/style-guides/editorial-rewrites.md — mandatory per CLAUDE.md §15 pt 0-1; seo-writer/seo-editor read directly, not embedded here for size."
+
+  competitors_context: |
+    Prism Labs (insurance/population health/GLP-1) and Bodygram (fitness trainers, SMB) are
+    the named competitors. This article does not need competitive framing — it is a
+    procurement/product FAQ. Never name competitors in the article.
+
+  icp_context:
+    segment: "Primarily Telehealth & GLP-1 / Weight Loss Programs (icp-detail.md #1), broadened per the brief's stated audience to digital health, wellness, and fitness buyers generally — this is a product-level FAQ, not vertical-specific content."
+    buyer_persona: "Head of Product / Product Manager, CTO / Technical Lead, Head of Clinical Operations (icp-detail.md #1 buyer titles) — this FAQ specifically serves implementation/procurement/product roles evaluating integration feasibility, more than clinical or growth roles."
+    pain_points:
+      - "Need to know whether remote users can complete a reliable scan without staff supervision before committing to a build (brief's stated primary search intent)"
+      - "Manual intake slows scaling and burdens clinical/ops teams (icp-detail.md #1, Operational)"
+      - "Self-reported weight/BMI are inaccurate and hard to verify at intake (icp-detail.md #1, Operational)"
+      - "Procurement/implementation teams need concrete answers on SDK options, timing, and failure handling before technical evaluation (brief primary_audience)"
+    hero_message: "Guided, standardized two-photo capture reduces avoidable input variation, without pretending to eliminate the role of user conditions and behavior (central_message, this brief)."
+    do_not_say:
+      - "audience.md #1 Don't: no diagnostic claims; not positioned as a DXA or calibrated-scale replacement; no implied eligibility decisioning."
+      - "Brief's own central-message Don't: FitXpress does not guarantee a successful scan or eliminate all effects of user behavior."
+
+  published_inventory:
+    already_live: false   # confirmed absent from stable pack's live_slugs and recently_published lists
+    note: "No sibling article with this exact capture-quality/UX-FAQ intent exists in the live registry. Safe to plan as net-new."
+
+  # only for track=seo — from scripts/ahrefs-keywords.py (Ahrefs API v3), pulled 2026-09-22. Real figures, not recalculated.
+  # null volume/difficulty = Ahrefs has NO figure. It is NOT zero. 0 = measured zero demand.
+  keywords_raw:
+    source: "ahrefs api v3 (keywords-explorer)"
+    pulled: "2026-09-22"
+    plan: "Standard 2022, billed monthly"
+
+    primary_seed:
+      file: "workspace/seo/_keywords/2026-09-22-fitxpress-capture-quality-user-experience-faq.yaml"
+      seed: "body scanning app accuracy"
+      seed_has_data: false
+      seed_metrics: null
+      top_variants: ["body scanning app 50/KD1", "body scanning 450/KD43 (broad, off-intent)", "3d body scanning app 90/KD null", "app accuracy 0"]
+      units_spent: 767
+
+    additional_seeds:
+      - file: "workspace/seo/_keywords/2026-09-22-fitxpress-capture-quality-user-experience-faq--seed-body-scan-app.yaml"
+        seed: "body scan app"
+        seed_metrics: {volume: 150, difficulty: 46, cpc: 60, traffic_potential: 800, parent_topic: "body scanner"}
+        note: "Head term; most ideas are consumer body-scan-meditation / smart-scale apps (Withings, Evolt), off-intent for a B2B procurement FAQ. '3d body scan app' 30/KD55 is the closest on-intent idea."
+        units_spent: 1009
+      - file: "workspace/seo/_keywords/2026-09-22-fitxpress-capture-quality-user-experience-faq--seed-3d-body-scan-app.yaml"
+        seed: "3d body scan app"
+        seed_metrics: {volume: 30, difficulty: 55, cpc: 45, traffic_potential: 700, parent_topic: "body scanner"}
+        note: "Low volume, moderate difficulty (55); parent topic '3d body scan' at 800/mo is broad and mostly non-B2B."
+        units_spent: 567
+      - file: "workspace/seo/_keywords/2026-09-22-fitxpress-capture-quality-user-experience-faq--seed-body-measurement-app.yaml"
+        seed: "body measurement app"
+        seed_metrics: {volume: 150, difficulty: 22, cpc: 100, traffic_potential: 600, parent_topic: "body measurement tracker"}
+        note: "Best difficulty/volume ratio of the four seeds (KD22). 'body measurement tracker app' 70/KD8 and 'body measurement app for clothing' 70/KD1 are the easiest on-intent long-tails, but still consumer-tracker-app framed, not B2B-procurement-FAQ framed."
+        units_spent: 1009
+
+    synthesis: >
+      Demand is genuinely low across all four seeds — the highest single figure is 450/mo
+      ("body scanning", broad and mostly off-intent) and the best on-topic figures top out at
+      150/mo ("body scan app", "body measurement app"). No keyword directly captures the
+      article's actual intent (capture-quality/UX/RTPV/retakes for a B2B procurement audience) —
+      nearly all measured demand is consumer fitness-tracker or body-scan-meditation-app intent.
+      This confirms the brief's own framing: this is a canonical product/procurement FAQ for
+      GEO and sales-support (answer-engine citability, buyer objection-handling, internal-link
+      hub for the capture-quality topic cluster), not a keyword-volume traffic play. Do not
+      force-fit the H1/title around any of these consumer-app phrasings; the approved
+      page_specs above (H1/SEO title/URL) stand regardless of keyword volume.
+
+  exclusions: null   # not applicable — track is seo, not outbound
