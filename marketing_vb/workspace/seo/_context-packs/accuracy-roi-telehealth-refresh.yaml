@@ -1,0 +1,226 @@
+context_pack:
+  created: 2026-09-23
+  product: fitxpress
+  track: seo
+  objective: "refresh-in-place: accuracy-drives-roi-digital-health (Telehealth+GLP-1 executive/BOFU ROI/scale piece)"
+  target_agent: seo-planner (then seo-writer/seo-editor)
+  workspace: accuracy-roi-telehealth-refresh
+
+  # ── STABLE (verbatim from _stable-fitxpress.yaml, rendered 2026-09-23) ──
+  company_oneliner: "3DLOOK turns two smartphone photos into a 3D body model and 80+ body measurements in 45 seconds, via API and SDK."
+
+  approved_claims:
+    - id: FXS-SPEED
+      text: "Two photos (front + side); structured outputs in under 45 seconds."
+      source: "proof-points.md, Speed table"
+    - id: FXS-OUTPUTS
+      text: "80+ body measurements; body composition outputs: BMI, BMR, fat %, lean mass, fat mass, essential fat, beneficial fat."
+      source: "proof-points.md, Output coverage (verbatim)"
+      note: "Always '80+ body measurements', never '80+ body metrics'; BMI/BMR/composition = calculated metrics/estimates, not measurements (terminology §2.13)."
+    - id: FXS-DELIVERY
+      text: "Delivered primarily via API/SDK integration directly into the customer's own product or interface; the FitXpress Admin Panel is an optional, complementary interface for monitoring and exporting results, for teams that do not want to build their own dashboard; it does not replace integration."
+      source: "overview.md + Vadim, checkpoint 1 Telehealth Documentation, 2026-09-21"
+      note: "Order is FIXED: API/SDK first, Admin Panel named directly and second, as an option."
+    - id: FXS-ACCURACY
+      text: "3DLOOK's measurement accuracy of approximately 96-97% across body metrics, with a typical absolute error of 1.5-2.0 cm per measurement, varying by body part"
+      source: "accuracy-formulations.md §1.1, verbatim"
+      note: "SECONDARY: only if the article actually discusses accuracy. Never without a condition (reference/population/protocol) and without linking the framework article in the same paragraph. Never combine with the ISO 8559 0.40 cm benchmark in one paragraph."
+    - id: FXS-REPEAT
+      text: "For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm"
+      source: "accuracy-formulations.md §1.2"
+      note: "For longitudinal/repeat-scan topics — directly relevant here (progress tracking, GLP-1 section). Write '< 1 cm' / 'below 1 cm', locked convention."
+    - id: FXS-POPULATION
+      text: "FitXpress was not specifically trained on data representing people with physical disabilities, and its measurement performance has not been established for this population. This matters when a disability affects the standard standing pose or capture sequence. In those cases, the program needs a documented alternative measurement path."
+      source: "accuracy-formulations.md §5; Vadim 2026-09-11"
+      note: "Third sentence for workflow articles (this one qualifies)."
+    - id: FXS-HIPAA
+      text: "FitXpress can support HIPAA-governed deployments where 3DLOOK acts as a business associate under an executed BAA, where applicable."
+      source: "compliance.md §1, live trust FAQ"
+      note: "Section-first: short note + link to FAQ. 'HIPAA compliant/certified' = hard fail."
+    - id: FXS-GDPR
+      text: "In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR."
+      source: "compliance.md §2, verbatim"
+      note: "Do not drop 'the data'; hedge 'In most enterprise deployments' not cut."
+    - id: FXS-IDS
+      text: "Scan records are associated with anonymized, randomly generated IDs; 3DLOOK cannot identify a specific individual from stored scan records."
+      source: "compliance.md §4"
+    - id: FXS-LIFECYCLE
+      text: "Submitted data: front/side photos + gender + height + optional weight. Generated data: body measurements, weight/BMI-related outputs, body composition estimates, a 3D model, scan-to-scan comparison outputs. Technical data: capture-quality/pose-validation flags, clothing classification, face-obfuscation confirmation, processing logs with timestamps and request metadata."
+      source: "compliance.md §3"
+    - id: FXS-RETENTION
+      text: "Measurements, body composition data and 3D models are retained on an ongoing basis unless the customer agreement says otherwise; deletion is by scan identifier on the customer's request."
+      source: "compliance.md §3/§4"
+      note: "'Processed, not stored' is banned — outputs ARE stored. Directly relevant: live page's 'automatic photo deletion after model generation' is factually wrong per this claim (see refresh.defects_to_remove)."
+    - id: FXS-SCOPE
+      text: "Supports: remote intake and body-measurement capture; body composition outputs and Body Progress comparisons; structured data collection for research protocols; structured intake and supporting documentation for customer-managed eligibility workflows; patient/member engagement. Does not independently determine: a diagnosis, treatment, medication recommendation, fitness for duty, employment eligibility, insurance eligibility, clinical-trial eligibility, or any other high-impact individual decision. Final decisions stay with the customer's clinicians, underwriters or other designated decision-makers."
+      source: "compliance.md §7"
+    - id: FXS-MEDICAL
+      text: "FitXpress is not a medical device."
+      source: "compliance.md; Vadim 2026-09-11"
+      note: "Direct statement; 'positioned as' about any product/intended-use/regulatory fact is a hard fail. Kills live page's 'medical-grade measurements/precision' and 'Dose medications accurately.'"
+
+  banned_claims:
+    - "most accurate body scanning / best-in-class (no specific benchmark)"
+    - "any accuracy number collapsed to one universal figure without decision/reference/protocol/population/tolerance"
+    - "medical device / diagnostic / clinical assessment / dosing / prescribing recommendation / eligibility decisioning"
+    - "replaces DXA (also written DEXA), BIA, calibrated scales, or clinician review"
+    - "automated eligibility, underwriting, or fraud-detection claims"
+    - "guaranteed compliance / 'makes you compliant' / guaranteed outcomes"
+    - "any number not in approved_claims"
+    - "named competitor comparisons"
+    - "HIPAA compliant / HIPAA certified / SOC 2 certified / FDA-cleared"
+    - "'no personal identifiers' / 'no personal data' — retired 2026-09-18"
+    - "'processed, not stored' — outputs are stored on an ongoing basis"
+    - "'FitXpress tracks each patient over time' → 'the program compares scans it selects' / 'scan-to-scan comparison'"
+    - "'95%+ repeatability consistency' — internal, NOT publishable"
+    - "'objective' about our tech/output — use standardized · timestamped · structured · repeatable"
+
+  banned_words: [comprehensive, delve, disrupt, groundbreaking, harness, leverage, realm, revolutionary, robust, seamless, tapestry, unparalleled]
+
+  terminology: "Writer reads brand-assets/style-guides/hard-bans-card.md (generated, single screen) for mechanical bans. Judgment calls (corrective negation, we/our, you, buyer/customer, content-plan labels in headings) stay with the editor per terminology-guardrails.md."
+
+  tone_base:
+    - "calm, specific, evidence-led B2B; the reframe move as a statement, not a rhetorical question"
+    - "sentences average < 16 words (article_lint gate 10); declarative, concrete over abstract"
+    - "honesty about limits in the same breath as capability; actor framing (telehealth program, care team, clinic operator), not 'you'-spam"
+    - "sensitive verticals (telehealth, GLP-1 both apply here): early italic scope note"
+
+  claims_discipline:
+    - "NEVER: diagnose, make treatment/eligibility/clearance decisions, replace clinician/DXA/BIA/calibrated scale, guarantee compliance, auto-detect fraud."
+    - "Describe as: a mobile body-scanning solution; a structured body-data capture layer; a remote intake and documentation layer; a workflow-standardization tool. FitXpress is not a medical device."
+
+  live_slugs: [mobile-body-scanning-patient-engagement, the-potential-of-ai-in-telehealth, ai-in-fitness-industry, ai-body-data-health-hub, clinical-trial-anthropometric-measurement-software-obesity-trials, occupational-health-screening-software, mobile-body-scanning-accuracy, top-7-remote-body-composition-tools-glp-1-clinics, online-pharmacy-bmi-verification-a-2026-compliance-guide, glp-1-market, bariatric-pre-qualification-mobile-3d-body-scanning, remote-body-measurement-online-fitness-coaching, ai-body-data-wellness-platforms, fitxpress-data-privacy-security-regulatory-faq, manual-vs-digital-intake-occupational-health-screening]
+
+  recently_published:
+    - {slug: online-pharmacy-bmi-verification-a-2026-compliance-guide, published: "2026-08-24"}
+    - {slug: glp-1-market, published: "2026-08-28"}
+    - {slug: bariatric-pre-qualification-mobile-3d-body-scanning, published: "2026-09-15"}
+    - {slug: remote-body-measurement-online-fitness-coaching, published: "2026-09-04"}
+    - {slug: ai-body-data-wellness-platforms, published: "2026-09-14"}
+    - {slug: fitxpress-data-privacy-security-regulatory-faq, published: "2026-09-16"}
+    - {slug: manual-vs-digital-intake-occupational-health-screening, published: "2026-09-21"}
+
+  # ── TOPIC DELTA ──
+
+  content_strategy:
+    note: "Two content-plan rows name this URL; both are non-create action types. Phase 0 gate OVERRIDDEN — see refresh.phase_0_override below. Do not re-run the STOP logic."
+    rows:
+      - hub: "Hub 2 — AI in Telehealth"
+        cluster: "Scale"
+        intent: "Executive/BOFU"
+        action_type: "Refresh / expand existing"
+        priority: "P2"
+        recommendation: "Expand accuracy-drives-roi-digital-health (or a linked BOFU article)."
+      - hub: "Hub 3 — GLP-1 Market & Progress Tracking"
+        cluster: "Clinic operations"
+        intent: "BOFU"
+        action_type: "Create if validated"
+        priority: "P2"
+        recommendation: "Section in accuracy-drives-roi-digital-health, or standalone if targeting clinic operators. Gap analysis resolves this as a SECTION, not standalone — keep it operational/short, market overview belongs to glp-1-market."
+    vertical_boundary_telehealth: "Owns remote-care workflows, patient experience, documentation, privacy, remote monitoring. Keep separate from GLP-1 eligibility and online-pharmacy BMI compliance unless explicitly the bridge."
+    vertical_boundary_glp1: "Owns medication-supported weight-loss progress tracking, body composition, patient records, clinic workflows, baseline data, tools for GLP-1 clinics. Do not duplicate the GLP-1 market page, visual progress page, Beyond BMI page, or online-pharmacy BMI verification article. Every GLP-1 asset must own a distinct intent."
+    hub2_boundary_note: "Hub 2 header (content-plan.md, live 2026-08-07): do not create another broad AI-in-telehealth/remote-body-data overview; online-pharmacy-bmi-verification-a-2026-compliance-guide (not this page) owns telehealth remote BMI verification/eligibility-support workflow."
+    internal_link_targets:  # nested under content_strategy with full URLs, the shape article_lint gate 6 reads (moved 2026-09-23)
+      up:
+        - "https://3dlook.ai/content-hub/the-potential-of-ai-in-telehealth/  # Telehealth hub, primary"
+        - "https://3dlook.ai/content-hub/glp-1-market/  # GLP-1 hub, for the clinic-ops section"
+      sideways:
+        - "https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/"
+        - "https://3dlook.ai/content-hub/mobile-body-scanning-patient-engagement/"
+      down:
+        - "https://3dlook.ai/structured-body-data-for-telehealth-digital-health-programs/  # BOFU product page"
+      trust:
+        - "https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/  # accuracy framework"
+        - "https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/  # HIPAA/GDPR/retention/SOC2/FDA"
+
+  published_inventory:
+    already_live: true
+    note: "THIS IS THE REFRESH TARGET — expected, not a Phase-0 stop condition. published-articles-inventory.md line 143: accuracy-drives-roi-digital-health / 'Accuracy Drives ROI in Digital Health' / Jan 2026 / Supporting, filed under Hub #2 Accuracy/Trust alongside mobile-body-scanning-accuracy and ai-body-scanners-vs-dexa-scans."
+    inbound_editorial_links_today: "one — mobile-body-scanning-patient-engagement (gap analysis §1). Telehealth hub, BMI verification guide and glp-1-market do NOT currently link to it — internal-link gap the refresh should close (see gap analysis §6, for Vadim/web team post-publication, not the writer)."
+
+  existing_urls:
+    - "https://3dlook.ai/content-hub/the-potential-of-ai-in-telehealth/  # Telehealth hub — link UP"
+    - "https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/  # owns BMI verification / remote verification methods — link sideways, do not restate"
+    - "https://3dlook.ai/content-hub/mobile-body-scanning-patient-engagement/  # owns engagement/retention — link sideways, cite only, no engagement deep-dive"
+    - "https://3dlook.ai/content-hub/glp-1-market/  # GLP-1 hub — link UP for the GLP-1 clinic-ops section; owns GLP-1 market sizing, do not repeat"
+    - "https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/  # accuracy framework — link as trust anchor, do not re-explain methodology"
+    - "https://3dlook.ai/structured-body-data-for-telehealth-digital-health-programs/  # BOFU product page — link DOWN, conversion destination (live page already CTAs here)"
+    - "https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/  # trust FAQ — link as trust anchor for HIPAA/GDPR/retention, do not restate answers"
+    - "NOT YET LIVE: telehealth-documentation-ai-body-scanning (workspace: 2026-09-21-ai-body-scanning-telehealth-documentation; pencilled Oct 2026, Admin Panel-anchored). May be mentioned as ONE source of manual work, no more — do not link until published; check live status before publish."
+
+  cannibalization_guardrails:
+    - "the-potential-of-ai-in-telehealth owns AI across telehealth workflows / the remote body-data gap — link up, do not re-survey telehealth AI."
+    - "online-pharmacy-bmi-verification-a-2026-compliance-guide owns BMI verification and remote verification methods, including its 'Remote verification methods' comparison — link for the verification workflow, do not restate it. The refresh's self-report/connected-scale/video/guided-scan table must stay consistent with that page's version."
+    - "mobile-body-scanning-patient-engagement owns engagement/retention from visual progress — cite for the retention side only, no engagement deep-dive."
+    - "glp-1-market owns the GLP-1 market plus progress-tracking requirements — the GLP-1 section here stays on clinic operations/capacity only, no market overview."
+    - "telehealth-documentation-ai-body-scanning (pending) owns telehealth documentation consistency — documentation mentioned only as one source of manual work."
+    - "mobile-body-scanning-accuracy owns the accuracy framework/methodology — link as trust anchor, do not re-derive."
+    - "structured-body-data-for-telehealth-digital-health-programs owns product/API/SDK/deployment detail — link as conversion destination, do not repeat feature list."
+
+
+  additional_approved_claims_topic_specific:
+    - id: FX-UKMEDS
+      text: "UK Meds: 7,500 scans in 2025, BMI verification for online pharmacy, customer since 2025 (7 months lifetime as of source date)."
+      source: "proof-points.md, Customer outcomes (FitXpress)"
+      note: "Do NOT name UK Meds in the ROI section's hypothetical — MEMORY 'feedback_no_client_names_outbound' bars naming clients in cold copy; content articles have used the name before (published examples exist) so a named customer-outcomes callout is acceptable, but do not attach it to the ROI-model dollar figures (which must stay a reader-filled model, no 3DLOOK-supplied outcome numbers — see refresh.unsupported_numbers)."
+    - id: FX-YAZEN
+      text: "Yazen: 34,000 scans in 2025, weight-loss management support."
+      source: "proof-points.md, Customer outcomes (FitXpress)"
+
+  refresh:
+    live_url: "https://3dlook.ai/content-hub/accuracy-drives-roi-digital-health/"
+    slug: "accuracy-drives-roi-digital-health  # UNCHANGED — republish at the existing URL, no net-new page"
+    live_published: "2026-01-07"
+    live_modified: "2026-09-07"
+    baseline_file: "workspace/seo/articles/accuracy-roi-telehealth-refresh/published-live-2026-09-23.md"
+    baseline_words: "~1280"
+    live_byline: "Vadim Bilan — KEEP (this is a refresh of his own article; CLAUDE.md §15 default-to-Assel does not apply here; flag the byline choice in the digest anyway)"
+    indexing_status: "Google dropped it from the index 2026-09-20 ('Crawled – currently not indexed', self-canonical, robots ALLOWED — a quality judgement, not a technical fault)."
+    search_console_summary: "Impressions collapsed Jan 306 → Sep 41 (2 clicks in 9 months), tracking the May core update. Queries worth keeping: 'which platforms provide better data accuracy—self-reported or verified' (93 impr., pos 4.1) and the 'self-reported vs verified data accuracy(-comparison-platforms)' family (pos 4-9) — GEO/question-shaped, deepen these. 'digital health roi' (115 impr., pos 18.0) is broad; keep the words in the title but do not over-index on it."
+
+    phase_0_override: "Both rows are non-create action types (Refresh/expand existing; Create if validated) — Phase-0 gate would normally STOP. Vadim gave explicit «го» on 2026-09-23 after reading the diagnosis/plan in Telegram. Same precedent as bariatric-hub-refresh (09-03), glp-1-market (08-28), online-pharmacy-bmi-verification (08-24) — each a refresh/expand row that shipped and republished in place. seo-planner proceeds directly to planning this refresh; do not re-ask the Phase-0 question."
+
+    defects_to_remove:  # gap analysis §2, checked against CLAUDE.md §6/§12, compliance.md, accuracy-formulations.md
+      - {live_text: "HIPAA- and GDPR-compliant", fix: "HIPAA framework/BAA wording (FXS-HIPAA) + canonical GDPR sentence (FXS-GDPR) + link to trust FAQ. Hard ban."}
+      - {live_text: "automatic photo deletion after model generation", fix: "factually wrong — photos deleted immediately after processing OR within 30 days per customer policy (compliance.md); outputs (measurements/composition/3D model) are retained ongoing (FXS-RETENTION)."}
+      - {live_text: "medical-grade measurements / medical-grade precision (×2)", fix: "unsupported regulatory framing — use accuracy-formulations.md verbatim (FXS-ACCURACY) + FXS-MEDICAL 'FitXpress is not a medical device.'"}
+      - {live_text: "Dose medications accurately.", fix: "clinical decision, outside intended use — FitXpress does not diagnose, make clinical decisions, or determine treatment eligibility."}
+      - {live_text: "prevents altered photos / ensuring trustworthy data", fix: "overclaim — describe Clothing Detector / pose validation / capture guidance as canon describes them, no fraud-prevention framing."}
+      - {live_text: "eliminates weight discrepancies", fix: "overclaim — Smart Scales predicted weight is compared with self-reported weight using the program's own threshold (see BMI verification guide)."}
+      - {live_text: "over 80 precise body metrics, including … BMI, fat percentage, lean mass", fix: "terminology §2.13 — '80+ body measurements' (FXS-OUTPUTS); BMI = calculated metric, body composition = estimates, not measurements."}
+      - {live_text: "Regulatory bodies now demand objective, documented verification", fix: "unsourced + 'objective' is a banned word about our tech — remove or replace with a specific cited requirement."}
+      - {live_text: "96–97% accuracy … sentence", fix: "must match accuracy-formulations.md verbatim (FXS-ACCURACY), not reworded from the number."}
+      - {live_text: "mechanical: 20 em dashes, 12 Title Case H2/H3, 'robust', 'Disruption', 'Moreover', 'rather than'", fix: "detector hard fails — editor's pass, article_lint.py gate."}
+
+    unsupported_numbers_verify_or_cut:  # gap analysis §3 — verify against a primary source before keeping; if it cannot be verified, CUT
+      - "'up to 20%' consultation capacity; '16 hours vs 1.25 hours, a 93% reduction'; 'up to ten minutes per patient' — sourced only to 'internal reviews from telehealth providers', no actual source."
+      - "'$5–6 million' retention arithmetic (hypothetical 10,000-patient clinic at $100/month, 80%→90% retention)."
+      - "NHANES self-report bias (height +~1 cm, weight −0.75 kg, BMI −0.6); PLOS '10–20% misclassification'; '~40% of adults lack access to scales' — each needs primary-source verification."
+      - "REPLACEMENT APPROACH (per gap analysis): build a transparent ROI MODEL the reader fills in with their own numbers (patients/day × minutes of manual verification/measurement handling × loaded staff cost, plus onboarding drop-off × acquisition cost, plus rework/resubmission rate). Name the variables; 3DLOOK supplies NO outcome figures. The one FitXpress timing figure allowed is FXS-SPEED (under 45 seconds, the single canonical timing definition, canon commit 115dd49 of 2026-09-22 — no 40s/under-a-minute/processing-only variants)."
+
+    angle: "Reader: operations/program leaders at telehealth, digital-health and GLP-1/weight-management providers scaling patient volume without adding manual review work (Executive/BOFU). Keep 'accuracy'/'ROI' in the title — the URL ranks for those words; working content-plan title can be H1/subtitle. Suggested: 'Accuracy and ROI in Digital Health: Scaling Patient Monitoring Without More Manual Work' (planner decides/tests length). Include: (1) a GLP-1 clinic-operations section — scaling progress tracking between visits without more in-person appointments, operational and short, no market overview (that's glp-1-market's job); (2) a self-reported vs verified comparison table (self-report · connected scale · video-observed · guided mobile scan: what each produces, where manual work sits, typical failure mode) — the asset behind the position 4-9 GEO queries, consistent with the BMI verification guide's table, link rather than restate."
+
+  keywords_raw:
+    source: "ahrefs api v3 (keywords-explorer), Standard 2022 plan"
+    pulled: "2026-09-23"
+    seeds:
+      - seed: "telehealth patient monitoring"
+        seed_has_data: true
+        seed_metrics: {volume: 100, difficulty: 26, cpc: 500, traffic_potential: 4700, parent_topic: "remote patient monitoring", intent: informational}
+        top_variants: [{keyword: "patient monitoring", volume: 800, difficulty: 33, intent: "informational+commercial"}, {keyword: "telehealth patient", volume: 10, difficulty: null}]
+      - seed: "digital health roi"
+        seed_has_data: true
+        seed_metrics: {volume: 40, difficulty: 0, cpc: null, traffic_potential: null}
+        top_variants: [{keyword: "digital health", volume: 4200, difficulty: 68}, {keyword: "health roi", volume: 70, difficulty: 1, cpc: 140}]
+        note: "'digital health roi' itself: low volume (40), difficulty 0 — matches gap analysis §1 (broad, pos 18). Long-tail exact-match ideas mostly 0-20 volume."
+      - seed: "remote patient monitoring"
+        seed_has_data: true
+        seed_metrics: {volume: 6800, difficulty: 51, cpc: 400, traffic_potential: 4800, parent_topic: "remote monitoring", intent: "informational+commercial"}
+        top_variants: [{keyword: "remote patient monitoring software", volume: 1100, difficulty: 12, cpc: 800}, {keyword: "ai remote patient monitoring", volume: 250, difficulty: null, cpc: 450}, {keyword: "benefits of remote patient monitoring", volume: 200, difficulty: 37, cpc: 110}, {keyword: "what is remote patient monitoring", volume: 450, difficulty: 41, cpc: 200}]
+      - seed: "self-reported vs measured weight"
+        seed_has_data: false
+        seed_metrics: null
+        note: "Exact phrase has NO measured demand (no_data:true on most variants). This matches the live page's earned queries better than it predicts new demand — those queries (SC data above) are the real signal for this cluster, Ahrefs under-covers question-shaped exact phrasing here. 'measured weight' alone: volume 10."
+    caveat: "null volume/difficulty = Ahrefs has no figure, not zero. Full per-keyword tables are on disk at workspace/seo/_keywords/2026-09-23-accuracy-roi-telehealth-refresh*.yaml (4 files) if seo-planner needs the long tail beyond what's summarized here."
+
+  exclusions: null
