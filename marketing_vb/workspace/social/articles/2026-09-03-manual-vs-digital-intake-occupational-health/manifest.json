@@ -1,0 +1,104 @@
+{
+  "article": {
+    "slug": "manual-vs-digital-intake-occupational-health-screening",
+    "title": "Manual vs Digital Intake in Occupational Health Screening: A Workflow Comparison",
+    "product": "fitxpress",
+    "source_file": "workspace/seo/articles/2026-09-03-manual-vs-digital-intake-occupational-health/published-live-2026-09-21.md",
+    "source_status": "published",
+    "published_url": "https://3dlook.ai/content-hub/manual-vs-digital-intake-occupational-health-screening/",
+    "date": "2026-09-23"
+  },
+  "profiles": [
+    {
+      "profile_id": "twitter-company",
+      "platform": "twitter",
+      "handle": "@3DLOOK",
+      "post_file": "twitter-company/post.md",
+      "format": "text + photo",
+      "status": "ready",
+      "character_count_body": 238,
+      "qc_score": "18/20"
+    },
+    {
+      "profile_id": "instagram-company",
+      "platform": "instagram",
+      "handle": "@3dlook.ai",
+      "post_file": "instagram-company/post.md",
+      "format": "carousel",
+      "status": "ready",
+      "character_count_body": 910
+    },
+    {
+      "profile_id": "facebook-company",
+      "platform": "facebook",
+      "handle": "3DLOOK",
+      "post_file": "facebook-company/post.md",
+      "format": "text + photo",
+      "status": "ready",
+      "character_count_body": 1050,
+      "qc_score": "17/20"
+    },
+    {
+      "profile_id": "linkedin-company",
+      "platform": "linkedin",
+      "handle": "3DLOOK",
+      "post_file": "linkedin-company/post.md",
+      "format": "infographic",
+      "status": "ready",
+      "word_count_body": 228
+    },
+    {
+      "profile_id": "linkedin-katerina",
+      "platform": "linkedin",
+      "handle": "Katerina Galich",
+      "post_file": "linkedin-katerina/post.md",
+      "format": "text",
+      "status": "ready",
+      "word_count_body": 149,
+      "qc_score": "18/20"
+    },
+    {
+      "profile_id": "linkedin-vadim",
+      "platform": "linkedin",
+      "handle": "Vadim Bilan",
+      "post_file": "linkedin-vadim/post.md",
+      "format": "text",
+      "status": "ready",
+      "word_count_body": 148
+    },
+    {
+      "profile_id": "linkedin-nick",
+      "platform": "linkedin",
+      "handle": "Nick Omelchak",
+      "post_file": "linkedin-nick/post.md",
+      "format": "text",
+      "status": "ready",
+      "word_count_body": 152
+    },
+    {
+      "profile_id": "linkedin-olena",
+      "platform": "linkedin",
+      "handle": "Olena Kudryavtseva",
+      "post_file": "linkedin-olena/post.md",
+      "format": "text",
+      "status": "ready",
+      "word_count_body": 147
+    },
+    {
+      "profile_id": "linkedin-katya",
+      "platform": "linkedin",
+      "handle": "Kateryna Boichuk",
+      "post_file": "linkedin-katya/post.md",
+      "format": "text",
+      "status": "ready",
+      "word_count_body": 145
+    }
+  ],
+  "profiles_skipped": [
+    {
+      "profile_id": "linkedin-whitney",
+      "reason": "posts_per_week: 0"
+    }
+  ],
+  "ready_for_review": true
+}
