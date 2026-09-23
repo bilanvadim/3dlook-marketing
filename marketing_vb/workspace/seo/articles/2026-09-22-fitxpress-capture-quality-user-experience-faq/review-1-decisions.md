@@ -126,3 +126,10 @@ matters (no fraud framing).
 - "FitXpress is not a medical device." verbatim. Lean mass, never muscle mass. Body Progress = customer-selected scans by scan ID.
 - 5 internal links once each, CTA verbatim, pilot next step.
 - Word target: 1,800-2,400. Shrinking Q5 and the cut claims may bring the page under 2,000 words. That is fine if it stays ≥ 1,800.
+
+## D. Vadim's answers to the open items (2026-09-23)
+1. Disability-training sentence: removed **only here**; stays canon elsewhere (accuracy-formulations.md §5 scope note).
+2. Timing: **one** definition, "under 45 seconds from the photos to structured results" (now in proof-points.md + tech-spec.md).
+3. Clothing Detector classes/payload: OK to keep out until product confirms.
+4. "Real-Time Pose Validation (RTPV)", "Clothing Detector" and Admin Panel "monitoring and exporting": **added to canon** (tech-spec.md, how-it-works.md, FXS-DELIVERY). Open items 4-5 of meta.md are closed.
+5. QC note on "regular-fit / oversized" in Q4: OK as written.

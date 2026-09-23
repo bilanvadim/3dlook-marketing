@@ -4,8 +4,8 @@
 
 1. User stands in front and side positions
 2. Takes two photos with any smartphone, fully clothed, any background
-3. AI-powered pose validation engine guides positioning in real-time (skeletal tracking)
-4. Real-time clothing detection flags loose / oversized clothing and prompts user to adjust
+3. Real-Time Pose Validation (RTPV) guides positioning and framing in real time; phone tilt is a separate SDK check
+4. The Clothing Detector (real-time clothing detection) flags loose / oversized clothing and prompts user to adjust
 5. Face is automatically obfuscated for privacy
 6. Photos sent to API → 3D model + measurements returned in under 45 seconds
 

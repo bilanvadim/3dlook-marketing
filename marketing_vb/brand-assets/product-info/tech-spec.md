@@ -19,6 +19,12 @@
 | Mobile Camera SDK (Android) | Native Android (Kotlin) | Same as iOS |
 | Camera SDK (React) | React (web + hybrid) | Same capture experience for web apps |
 
+**Public wording for the SDK list (Vadim, 2026-09-23):** "web and mobile SDKs, including supported iOS and Android integrations". Do not write "React Native" (not confirmed) and do not present "Camera SDK (React)" as a separate product line in public copy.
+
+### FitXpress Admin Panel
+
+- **Canonical wording (Vadim, 2026-09-23):** the FitXpress Admin Panel is an optional, complementary interface for monitoring and exporting results. It does not replace API/SDK integration, which stays the primary delivery route (FXS-DELIVERY).
+
 **Key recommendation we always make:** integrate the SDK, not just API. Pose / tilt validation in the SDK is the single biggest factor in measurement accuracy. Customers who roll their own camera capture see meaningfully worse accuracy.
 
 ### What's customizable (white-label)
@@ -38,20 +44,26 @@
 
 ## Capture flow technical details
 
-### Real-time pose detection
+### Real-Time Pose Validation (RTPV)
+
+**Approved feature name (Vadim, 2026-09-23):** "Real-Time Pose Validation (RTPV)", spelled out at first use. RTPV checks the user's position and framing against the capture requirements before each photo. Phone angle (tilt) is a separate SDK guidance check. RTPV is a capture-quality and positioning control; it does not assess posture as a medical, musculoskeletal, or health condition. Internal notes below; skeletal tracking and face obfuscation are not part of the public RTPV description (face obfuscation belongs to the privacy FAQ).
+
 - Skeletal tracking on-device or live in browser
 - Validates body posture before each photo
 - Reduces retakes
 - Face obfuscation auto-applied for privacy
 
-### Real-time clothing detection
+### Clothing Detector
+
+**Approved feature name (Vadim, 2026-09-23):** "Clothing Detector", a capture-quality feature. Public wording until product confirms the classes and the payload field: "The Clothing Detector identifies clothing conditions that may interfere with capture and can prompt corrective action." The internal notes below (sport / regular / oversized, payload) are not for public copy yet.
+
 - Classifies fit type per scan: `sport` / `regular` / `oversized`
 - Flags inappropriate attire and prompts user
 - Notifies clinical / business team via response payload
 - Updated models coming Q3 2025
 
 ### Performance characteristics
-- Time from photo to results: under 45 seconds
+- Time from photo to results: under 45 seconds. **The only public timing definition (Vadim, 2026-09-23):** "under 45 seconds from the photos to structured results". No "under 40 seconds", "under a minute", "under 10 seconds", or processing-only / capture-only splits.
 - Photos required: 2 (front + side)
 - No background requirements (any background)
 - Minimally affected by lighting

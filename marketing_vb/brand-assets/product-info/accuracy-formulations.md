@@ -294,5 +294,7 @@ what the program needs.
 > This matters when a disability affects the standard standing pose or capture sequence. In
 > those cases, the program needs a documented alternative measurement path.
 
+**Scope note (Vadim, 2026-09-23):** this sentence stays canon. It was removed only from the capture-quality FAQ (Review 1, C9) because that page does not need it; that is not a precedent for removing it elsewhere.
+
 The last sentence fits a workflow article. Elsewhere, keep the first two and say what the
 workflow does instead.

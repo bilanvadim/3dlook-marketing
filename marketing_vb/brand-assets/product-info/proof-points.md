@@ -47,7 +47,7 @@
 
 | Claim | Number | Source / Context |
 |-------|--------|------------------|
-| Time from photo to results | Under 45 seconds | FitXpress product spec |
+| Time from photo to results | Under 45 seconds | FitXpress product spec. **One public definition (Vadim, 2026-09-23): "under 45 seconds from the photos to structured results"**; no 40 s / under a minute / processing-only variants |
 | Photos required | 2 (front + side) | Product spec |
 
 ## Output coverage
