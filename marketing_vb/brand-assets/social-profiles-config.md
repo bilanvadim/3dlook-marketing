@@ -37,7 +37,7 @@ content_types:
   - One striking stat or claim from the article
   - Short POV on industry trend the article touches
   - Thread (якщо тема складна — 3-4 твіти)
-length: "240-260 chars for single tweet. For thread: tweet 1 = hook (240 chars), tweet 2-4 = expansion."
+length: "Single tweet: aim for 240-260 chars; 280 is the platform wall (the lint budget is 1-280). For thread: tweet 1 = hook (up to 240 chars), tweet 2-4 = expansion."
 hashtags: none
 avoid: "Long paragraphs, bullet lists, emoji flood, generic corporate speak"
 cta: "Link in bio / article link у відповіді до треду"
@@ -79,7 +79,7 @@ product_bias:
   mixed: 0%
 tone: "Accessible and community-oriented. Broader audience than LinkedIn — explain without jargon. Slightly warmer."
 content_types:
-  - Article summary with key takeaways
+  - One practical takeaway from the article, explained for a broad audience (never a summary of the article)
   - Customer story or use case narrative
   - Industry question that sparks discussion
   - Behind the company / team moments
@@ -137,13 +137,12 @@ icp_focus:
   - UK life and disability insurers (underwriting innovation)
   - UK employer health and wellness buyers
   - UK health-tech C-level and innovation leaders
-tone: "Founder sharing market observations, not marketing. Calm, executive, visionary, experienced, credible — Satya Nadella, не інфлюенсер. Thoughtful rather than emotional. First person. No sales pitch. UK market lens — MHRA, CQC, NHS context, UK health-tech ecosystem."
+tone: "Founder sharing market observations, not marketing. Calm, executive, visionary, experienced, credible — Satya Nadella, не інфлюенсер. Thoughtful rather than emotional. First person. No sales pitch. UK market lens decides who she writes FOR; MHRA / CQC / NHS appear only where the article supports it and the point needs it, and most posts carry no UK mention (personal rule 3)."
 content_types:
   - One strategic observation about the broader industry shift behind the article
   - Why the market is changing and what enterprise buyers are beginning to expect
   - Leadership, digital health, AI adoption, enterprise healthcare, product strategy, market evolution
-  - AI risk / commoditization through a UK market lens
-  - UK regulatory and compliance angle (MHRA, GDPR, NHS digital transformation)
+  - AI risk / commoditization for enterprise health buyers
 length: "100-170 words (~650-1100 chars). 170 words is a HARD ceiling — post-lint fails over it (house rule 2026-09-04)"
 emoji: "1-2 max"
 hashtags: none
@@ -201,7 +200,7 @@ icp_focus:
   - US telehealth providers, online pharmacies, GLP-1 programs, digital health companies
   - Healthcare providers, insurers, employers, enterprise healthcare organizations
   - VP Product / Chief Medical Officers / Head of Clinical Operations
-tone: "Confident, practical, professional, consultative, solution-oriented. Writes as someone who speaks with US healthcare leaders every day. Relationship-first. First person."
+tone: "Confident, practical, professional, consultative, solution-oriented. Perspective of someone close to US healthcare leaders — the stance, never a line in the post (personal rule 3). Relationship-first. First person."
 content_types:
   - Why the article's topic matters specifically to US healthcare organizations
   - Enterprise healthcare, telehealth, GLP-1 programs, remote patient monitoring
@@ -231,7 +230,7 @@ icp_focus:
   - Connected fitness businesses
   - Insurers, employers, enterprise healthcare organizations
   - GDPR-conscious healthcare operators
-tone: "Practical, consultative, customer-focused, business-oriented, educational, conversational. Sounds like someone speaking with healthcare operators and product teams every day. First person."
+tone: "Practical, consultative, customer-focused, business-oriented, educational, conversational. Perspective of someone close to healthcare operators and product teams — the stance, never a line in the post (personal rule 3). First person."
 content_types:
   - Why the topic matters to European healthcare and wellness companies
   - Operational, regulatory and adoption challenges
@@ -261,7 +260,7 @@ icp_focus:
   - Healthcare companies in the region
   - Israeli health-tech ecosystem (strong startup + enterprise mix)
   - Digital health, insurtech, wellness tech buyers; telehealth and pharma chains
-tone: "Someone who spends every day talking to customers. Conversational, professional, insightful. Direct, confident, innovation-friendly. First person."
+tone: "Perspective of someone close to customers — the stance, never a line in the post (personal rule 3). Conversational, professional, insightful. Direct, confident, innovation-friendly. First person."
 content_types:
   - Why the topic matters commercially — customer problems, product adoption
   - Operational challenges and implementation
