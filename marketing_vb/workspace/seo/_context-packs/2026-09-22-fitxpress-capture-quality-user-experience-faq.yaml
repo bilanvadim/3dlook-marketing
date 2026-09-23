@@ -353,6 +353,35 @@ context_pack:
       source: "review-1.md item C14 (external 3DLOOK review, Doc tab 'Review 1', 2026-09-23) + review-1-decisions.md C14"
       note: "Reviewer wording, narrower than tech-spec.md; legalized by coordinator 2026-09-23."
 
+    - id: FX-R2-PLACEMENT
+      text: "The phone is placed on a stable surface around desk height."
+      source: "review-2.md item W5 (external 3DLOOK review, Doc tab 'Review 2', 2026-09-23) + review-2-decisions.md W5"
+      note: "Reviewer wording; legalized by coordinator 2026-09-23."
+    - id: FX-R2-STANDARD
+      text: "The core capture flow in which RTPV operates is standardized to support consistent capture across users and scan sessions."
+      source: "review-2.md item W2 (external 3DLOOK review, Doc tab 'Review 2', 2026-09-23) + review-2-decisions.md W2"
+      note: "Reviewer wording; legalized by coordinator 2026-09-23."
+    - id: FX-R2-CLOTH
+      text: "The Clothing Detector identifies clothing conditions that may interfere with capture. When the supported flow identifies a clothing problem, the user can be asked to adjust the clothing or repeat the capture."
+      source: "review-2.md item W3 (external 3DLOOK review, Doc tab 'Review 2', 2026-09-23) + review-2-decisions.md W3"
+      note: "Reviewer wording; legalized by coordinator 2026-09-23."
+    - id: FX-R2-SUBMIT
+      text: "The captured data is submitted through the integration for FitXpress processing."
+      source: "review-2.md item W6 (external 3DLOOK review, Doc tab 'Review 2', 2026-09-23) + review-2-decisions.md W6"
+      note: "Reviewer wording; legalized by coordinator 2026-09-23."
+    - id: FX-R2-UPLOAD
+      text: "Camera-roll photos are outside the standard guided FitXpress flow and do not provide the same controlled capture process within the current scan session."
+      source: "review-2.md item W7 (external 3DLOOK review, Doc tab 'Review 2', 2026-09-23) + review-2-decisions.md W7"
+      note: "Reviewer wording; legalized by coordinator 2026-09-23."
+    - id: FX-R2-LEAN
+      text: "FitXpress estimates lean mass and does not provide a direct measurement of muscle mass. Lean mass includes muscle along with water, bone, organs, and other non-fat tissue."
+      source: "review-2.md item P2 (external 3DLOOK review, Doc tab 'Review 2', 2026-09-23) + review-2-decisions.md P2"
+      note: "Reviewer wording; legalized by coordinator 2026-09-23."
+    - id: FX-R2-3D
+      text: "The customer controls how scan outputs and the 3D body model appear in its interface; visual differences between 3D models are not a direct map of fat or muscle tissue."
+      source: "review-2.md item P3 (external 3DLOOK review, Doc tab 'Review 2', 2026-09-23) + review-2-decisions.md P3"
+      note: "Reviewer wording; legalized by coordinator 2026-09-23."
+
   unconfirmed_product_behavior:   # brief §15 checklist — qualify, do not invent
     - item: "\"Real-Time Pose Validation (RTPV)\" as a named/branded acronym"
       status: "NOT attested anywhere in product-info canon (tech-spec.md, how-it-works.md, faq.md, overview.md, competitors.md — checked directly). Canon consistently uses lowercase descriptive phrasing: 'real-time pose / tilt validation', 'AI-powered pose validation engine', 'Real-time pose detection'."

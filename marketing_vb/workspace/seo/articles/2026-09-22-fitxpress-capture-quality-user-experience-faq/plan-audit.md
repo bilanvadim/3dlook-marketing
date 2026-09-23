@@ -61,7 +61,7 @@ Honest line: the whole on-topic cluster is 30-150/mo and mostly consumer intent.
 - **FAQPage.** 11 questions only. Quick answers table and Next steps are not in the schema.
 
 ## Deliberately NOT covered (and why)
-- Fat vs muscle progress, visual display of fat vs muscle change, 5/10/20-pound milestones (brief §7). Belong to the progress-tracking pages. Q11 is a bridge only.
+- Fat vs muscle progress, visual display of fat vs muscle change, 5/10/20-pound milestones (brief §7). Belong to the progress-tracking pages. Q11 is a bridge only. **Superseded by review 2 (P0), see below.**
 - Two-photo model mechanics, training data, 3D model generation. Linked (Q1), not explained.
 - Accuracy methodology, per-measurement figures, ISO 8559 benchmark, weight estimation accuracy. Owned by the accuracy framework; Q5 uses only the internal figures, qualified.
 - HIPAA / GDPR / retention / storage / face-blur retention details. Linked to the trust FAQ from Q8; one face-obfuscation clause in Q2.
@@ -101,3 +101,27 @@ Honest line: the whole on-topic cluster is 30-150/mo and mostly consumer intent.
 - "under 45 seconds" is the only timing figure on the page.
 - Accuracy figures appear only in Q5, with the framework link in the same paragraph; no ISO figure.
 - No "React Native", "timer", "voice", "block", "reject", "muscle mass", "visceral", "predicted weight", client names.
+
+## Review 2 revision (2026-09-23)
+Sources: review-2.md, review-2-decisions.md (wins), review-1-decisions.md (still in force). plan.md rewritten in place, `revision: review-2 (2026-09-23)`. plan.md also now reflects review 1 (it had not been updated after that round); the sections above this block describe the original plan and are historical where they conflict.
+
+**Brief §7 override (P0).** brief.md §7 and the pack's `excluded_topics` excluded full answers to the three prospect progress questions. Review 2 decision P0 overrides that for this article only: the three questions are answered at 150-160 words each, with presentation depth left to the patient-engagement page (linked once, Section 14). This is the only place the plan departs from the brief's scope list.
+
+**What changed**
+- Structure: Q11 "What progress outputs are available after a successful scan?" removed. Three H3s added verbatim (P1) under new H2 "Tracking and displaying progress": Q11 fat loss and lean-mass change (carries the v2 output list, FXS-OUTPUTS / FXS-LIFECYCLE / FXS-IDS), Q12 visual display, Q13 5/10/20-pound milestones. Previous H2 renamed "Workflow integration and timing". 16 plan sections, 13 FAQ questions.
+- Quick answers: Progress row added (P5, second cell adapted per P4); Clothing qualification rewritten without garment classes (W3).
+- Wording: W1 opening (meta "The FAQ covers..." removed), W2 standardized core flow (no accuracy causality), W3 Clothing Detector + body-outline sentence, W4 repeatability conditions, W5 "stable surface around desk height", W6 integration step 3 and neutral steps 1/5, W7 camera-roll sentence.
+- P4: the reviewer's "does not apply a generic 5-, 10-, or 20-pound body transformation" is rejected; milestone answer rests on actual baseline and follow-up scans, and the goal / target-weight visualization is mentioned in neither direction.
+- Visuals: Illustration 1 kept; Illustration 2 is now the baseline-versus-follow-up progress display after Q12 (V2). The evidence panel is gone from Q5.
+- Links: patient-engagement link moves from old Q11 to Q12, still once.
+- Budget: target_words 2100 → 2300; Q5 230 → 170, Q9 (timing) 130 → 100, Q8 220 → 210; progress sections 160 / 150 / 160.
+
+**Superseded publisher hooks**
+- 13 H3 strings = 13 `Question.name` (was 11).
+- "muscle mass" is allowed exactly in the Q11 terminology correction and the Q12 tissue boundary ("fat or muscle tissue"); nowhere else.
+- Claims no longer used: FXS-ACCURACY, FXS-REPEAT (replaced by FX-CQ-009), FXS-POPULATION, FX-CQ-001, FX-CQ-003 (body text; table only), FX-CQ-004, FX-CQ-008.
+- New claim to legalize in the pack before the editor runs: **FX-R2-PLACEMENT** = "on a stable surface around desk height" (W5, narrower than FX-CQ-007).
+
+**Open items (review 2)**
+1. **Optional target-weight visualization.** Canon has an optional 3D goal / target-weight visualization (tech-spec.md, how-it-works.md, overview.md). The plan mentions it in neither direction. Vadim to decide whether Q13 should mention it as a clearly labelled projection.
+2. **Meta description** still lists topics up to "timing". Publisher may add progress within the length limit; not required.
