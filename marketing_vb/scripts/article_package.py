@@ -190,7 +190,12 @@ def build_checklist(slug: str):
     top = [re.sub(r"<!--.*?-->", "", l).strip()
            for l in body.splitlines()[:40]]
     top = [l for l in top if l]
-    scope_note = any(l.startswith("*") and l.endswith("*") and len(l) > 40
+    # Two canonical shapes: the older whole-line italic note, and the bold-label
+    # paragraph that editorial-rewrites.md §7 prescribes ("**Scope note.** …", not
+    # italics). Until 2026-09-23 only the first counted, so an article following
+    # §7 failed two checklist items and tripped the STOP rule.
+    scope_note = any((l.startswith("*") and l.endswith("*") and len(l) > 40)
+                     or l.lower().startswith("**scope note")
                      for l in top)
 
     g_len = _gate(lint, "prose length").get("info", {})
