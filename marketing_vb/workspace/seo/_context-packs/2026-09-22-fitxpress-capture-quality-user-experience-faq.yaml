@@ -328,6 +328,31 @@ context_pack:
       source: "accuracy-formulations.md §5 (short form of §1.1/§1.8), 'internal' restored per editorial guardrail #3"
       note: "Legalized by coordinator 2026-09-22 after seo-editor; replaces FXS-ACCURACY marker in final.md Q5. Framework link stays in the same paragraph."
 
+    - id: FX-R1-FLOW
+      text: "In the standard end-user flow, capture runs through the supported SDK, which provides the guided capture controls."
+      source: "review-1.md item C1 (external 3DLOOK review, Doc tab 'Review 1', 2026-09-23) + review-1-decisions.md C1"
+      note: "Reviewer wording, narrower than tech-spec.md; legalized by coordinator 2026-09-23."
+    - id: FX-R1-CORE
+      text: "The core capture flow is standardized, while the organization controls and brands the surrounding onboarding, instructions and results experience."
+      source: "review-1.md item C4 (external 3DLOOK review, Doc tab 'Review 1', 2026-09-23) + review-1-decisions.md C4"
+      note: "Reviewer wording, narrower than tech-spec.md; legalized by coordinator 2026-09-23."
+    - id: FX-R1-CLOTH
+      text: "The Clothing Detector identifies clothing conditions that may interfere with capture and can prompt corrective action."
+      source: "review-1.md item C6 (external 3DLOOK review, Doc tab 'Review 1', 2026-09-23) + review-1-decisions.md C6"
+      note: "Reviewer wording, narrower than tech-spec.md; legalized by coordinator 2026-09-23."
+    - id: FX-R1-SDK
+      text: "Integration runs through web and mobile SDKs, including supported iOS and Android integrations, and through the API."
+      source: "review-1.md item C11 (external 3DLOOK review, Doc tab 'Review 1', 2026-09-23) + review-1-decisions.md C11"
+      note: "Reviewer wording, narrower than tech-spec.md; legalized by coordinator 2026-09-23."
+    - id: FX-R1-ADMIN
+      text: "The FitXpress Admin Panel is an optional, complementary interface for monitoring and exporting results; it does not replace integration."
+      source: "review-1.md item C11 (external 3DLOOK review, Doc tab 'Review 1', 2026-09-23) + review-1-decisions.md C11"
+      note: "Reviewer wording, narrower than tech-spec.md; legalized by coordinator 2026-09-23."
+    - id: FX-R1-UPLOAD
+      text: "Users cannot upload existing photos in the standard guided FitXpress capture flow."
+      source: "review-1.md item C14 (external 3DLOOK review, Doc tab 'Review 1', 2026-09-23) + review-1-decisions.md C14"
+      note: "Reviewer wording, narrower than tech-spec.md; legalized by coordinator 2026-09-23."
+
   unconfirmed_product_behavior:   # brief §15 checklist — qualify, do not invent
     - item: "\"Real-Time Pose Validation (RTPV)\" as a named/branded acronym"
       status: "NOT attested anywhere in product-info canon (tech-spec.md, how-it-works.md, faq.md, overview.md, competitors.md — checked directly). Canon consistently uses lowercase descriptive phrasing: 'real-time pose / tilt validation', 'AI-powered pose validation engine', 'Real-time pose detection'."
