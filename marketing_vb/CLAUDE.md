@@ -511,6 +511,6 @@ If a new production article significantly departs from the style guide (e.g., a 
 
 > Вынесено в `docs/page-pipeline.md` (2026-09-21, токен-диета: секция нужна только /page-прогонам,
 > а грузилась каждому агенту каждой сессии). Там: scope split /page vs /new-article, четыре гейта
-> G-I/G-A/G-T/G-J, бенчмарк-страница, иерархия путей (`/fitxpress/` уровня НЕ существует, 301 долг),
-> G-I reality check и non-negotiables. Скилл `page-builder` и команда `/page` читают его сами.
+> G-I/G-A/G-T/G-J, бенчмарк-страница, иерархия путей (с 2026-09-27: `/fitxpress/` — родитель FX, вертикали `/fitxpress/for-{vertical}/`, главная — общая),
+> общий waiver G-I по кейсам для FX-вертикалей, G-I reality check и non-negotiables. Скилл `page-builder` и команда `/page` читают его сами.
 > Быстрая развилка: сторінка на 3dlook.ai → `/page`; блог/хаб/comparison → `/new-article`.

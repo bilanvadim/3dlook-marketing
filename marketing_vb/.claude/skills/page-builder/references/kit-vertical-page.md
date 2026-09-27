@@ -34,9 +34,9 @@ product page plus the vertical's hub article in the content hub.
       format, a procurement or seasonal cycle. Fewer than five → write nothing yet.
 - [ ] **The market's BD owner confirms the objections differ** from the general ones — Nick Omelchak
       (USA), Olena Kudryavtseva (Europe), Kateryna Boichuk (Israel), Katerina Galich (UK).
-- [ ] **The parent and the URL are settled.** FitXpress verticals are children of the homepage and
-      live at `/for-{vertical}/`; Mobile Tailor verticals sit under `/mobile-tailor/`. Never invent a
-      `/fitxpress/` level — see `site-inventory.md`.
+- [ ] **The parent and the URL are settled.** FitXpress verticals are children of `/fitxpress/` and
+      live at `/fitxpress/for-{vertical}/`; Mobile Tailor verticals sit under `/mobile-tailor/`
+      (Vadim, 2026-09-27) — see `site-inventory.md`.
 
 > **The 60% rule.** At least 60% of a vertical page must be unique against the parent product page.
 > Only the workflow overview and the integration basics are shared. Below 60% it is a duplicate, and
@@ -46,6 +46,8 @@ product page plus the vertical's hub article in the content hub.
 article, and record the decision with a date. Revisit when the second case lands. A G-I waiver is
 possible — Vadim's call, recorded in `gate-reports.md` with the reason and what stands in for the
 missing case (an approved reference call, a named pilot, an anonymised deployment).
+
+**Standing G-I waiver for every FitXpress vertical (Vadim, 2026-09-27).** Clients do not agree to public case studies (logos only), so FX vertical pages are built without the 2-case bar. What stands in for cases: customer logos; anonymised figures only from `proof-points.md` (a figure that could identify a client is cleared with Vadim first); the accuracy framework; the trust FAQ; the workflow itself. Never an invented or implied case. The waiver for a vertical ends when its first approved case lands. The other G-I checks (use-case file, demand, 5 facts, 60% rule) still apply. Record `G-I: standing FX waiver 2026-09-27` in `gate-reports.md`.
 
 ---
 
@@ -212,7 +214,7 @@ principle #11. Medical, clinical or regulatory framing goes to Whitney before it
 
 ## Technical checklist
 
-**URL and anti-cannibalisation** — `/for-{vertical}/` for FitXpress, `/mobile-tailor/for-{vertical}/`
+**URL and anti-cannibalisation** — `/fitxpress/for-{vertical}/` for FitXpress, `/mobile-tailor/for-{vertical}/`
 for Mobile Tailor · canonical to self, never to the parent · request the in-body link down from the
 parent, which no parent page currently has ·
 run a cannibalisation check against both inventories before writing and against Search Console after

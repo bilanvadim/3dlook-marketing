@@ -21,15 +21,16 @@ not mix them when checking cannibalisation — check both.
 
 | URL | Product | Job | State |
 |---|---|---|---|
-| `/` | FX | Homepage **and the FitXpress parent page** | `/fitxpress/` 301s here |
+| `/` | both | Homepage; **becomes the general 3DLOOK products page** (decision 2026-09-27) | today still FX-led |
+| `/fitxpress/` | FX | **FitXpress product parent** (decision 2026-09-27) | today 301s to `/`; the 301 comes off when the page ships |
 | `/technology/` | both | How the tech works, cross-product | — |
 | `/mobile-tailor/` | MT | Product parent | has 3 children |
 | `/mobile-tailor/for-made-to-measure/` | MT | Use-case page | child of MT |
 | `/mobile-tailor/for-on-demand-manufacturing/` | MT | Use-case page | child of MT |
 | `/mobile-tailor/for-uniforms/` | MT | Use-case page | child of MT |
-| `/fitxpress/for-connected-and-digital-fitness/` | FX | Use-case page | **non-existent `/fitxpress/` path level** — normalise to root |
-| `/for-bmi-verification/` | FX | Use-case page | at root, child of `/` — correct pattern |
-| `/structured-body-data-for-telehealth-digital-health-programs/` | FX | Use-case page | at root, child of `/`; slug off-pattern, but the best-built page on the site — finding 6 |
+| `/fitxpress/for-connected-and-digital-fitness/` | FX | Use-case page | already on the target pattern; breadcrumb fix only |
+| `/for-bmi-verification/` | FX | Use-case page | at root; moves to `/fitxpress/for-online-pharmacies/` (301) when rebuilt |
+| `/structured-body-data-for-telehealth-digital-health-programs/` | FX | Use-case page | at root; moves under `/fitxpress/for-…/` (301) only when rebuilt; best-built page on the site — finding 6 |
 | `/pricing/` | both | Public pricing, FX and MT tabs | live figures |
 
 ### Proof, resources, conversion
@@ -50,28 +51,28 @@ not mix them when checking cannibalisation — check both.
 
 ## The architecture gaps — read before placing any page
 
-**1. The homepage is the FitXpress parent.** Confirmed by Vadim, and the site agrees:
-`/fitxpress/` **301s to `/`**, the homepage H1 is "Real-Time Health & Fitness Insights, Powered by AI"
-(~1,005 words, health-and-fitness positioning rather than neutral corporate), and both root-level FX
-vertical pages declare a two-level breadcrumb — `Home → BMI Verification`,
-`Home → FitXpress for Telehealth & Digital Health`.
+**1. FitXpress gets its own parent: `/fitxpress/` (Vadim, 2026-09-27).** This replaces the 2026-08-23
+rule "the homepage is the FitXpress parent". Why: three products (FitXpress, Mobile Tailor, wrist
+measurement) cannot share one homepage as a product page. The pre-March `/fitxpress/` ranked 3.1 for
+"ai body scanner" against 5.6 for the homepage today, and the brand query "fitxpress" is split across
+4–8 URLs. The plan and its risks are in `workspace/research/seo-fitxpress-2026-09/2026-09-25-fitxpress-seo-plan.md` §9.0.
 
-So there are **two hierarchies of different depth, both valid**:
+Both products now have the same shape:
 
 | Product | Parent | Children |
 |---|---|---|
-| FitXpress | `/` (the homepage) | `/for-{vertical}/` at root |
+| FitXpress | `/fitxpress/` | `/fitxpress/for-{vertical}/` |
 | Mobile Tailor | `/mobile-tailor/` | `/mobile-tailor/for-{vertical}/` |
+| (general) | `/` | links down to each product parent |
 
-A new FitXpress vertical page therefore passes G-A on "the page has a parent", and `/for-{vertical}/`
-at root is the correct pattern for it — those two pages are not orphans.
+**Migration rules:**
+- `/fitxpress/` ships first and the `/fitxpress/` → `/` 301 comes off.
+- Root-level FX pages move with a 301 **only at the moment they are rebuilt** in the use-case release. Never a separate redirect wave.
+- `/fitxpress/for-connected-and-digital-fitness/` already has the target URL; only its breadcrumb (`?page_id=36425`, 404) needs fixing.
+- `/fitxpress` without the trailing slash must 301 to `/fitxpress/`. Today it goes to `/content-hub/fitxpress-admin-panel-launch/`.
+- Save a Search Console baseline before every move.
+- The homepage keeps a strong FitXpress block linking to `/fitxpress/`, because today it holds "ai body scanner" and most external links.
 
-**The one anomaly is `/fitxpress/for-connected-and-digital-fitness/`.** It sits under a `/fitxpress/`
-path segment that does not exist and declares a breadcrumb `Home → FitXpress → …` whose middle level
-301s to the homepage. That is the page to normalise — move it to `/for-connected-and-digital-fitness/`
-with a 301 and a Search Console baseline saved first — not the two root-level pages. Related loose end:
-`/fitxpress` without the trailing slash 301s somewhere else entirely,
-`/content-hub/fitxpress-admin-panel-launch/`.
 
 **What FitXpress verticals genuinely lack** is an in-body link down from their parent — see the
 linking finding below. And the homepage itself carries the same problems the vertical pages do: H2
@@ -120,16 +121,15 @@ quote — roughly half of every other vertical page on the site. It is the first
 ("repeatability over a single number"), a three-way comparison block ("FitXpress vs. in-clinic scans
 vs. consumer photo apps"), a 13-question FAQ with FAQPage schema, Service schema carrying
 `audienceType` and `areaServed`, and no banned words in its headings. Read it before drafting. Its one
-flaw is the slug: it sits at root with a non-pattern address instead of under a FitXpress parent.
+flaw is the slug: it sits at root with a non-pattern address. It moves under `/fitxpress/for-…/` with a 301 when rebuilt.
 
 ---
 
 ## URL rules
 
-- FitXpress use-case page: `/for-{vertical}/` at root, because the homepage is the parent.
+- FitXpress use-case page: `/fitxpress/for-{vertical}/` (decision 2026-09-27).
 - Mobile Tailor use-case page: `/mobile-tailor/for-{vertical}/`.
-- Do not invent a `/fitxpress/` path level. It 301s to the homepage, and the one page that uses it
-  carries a breadcrumb pointing at nothing.
+- Do not create new FitXpress pages at root. Existing root-level ones move with a 301 when rebuilt.
 - One vertical, one address. A campaign duplicate is a landing page at its own URL, never a copy of
   the use-case page.
 - Latin slug, no dates, no numbers, no parameters. Canonical to self — never to the parent.

@@ -25,9 +25,10 @@ Three rules carry the whole thing:
 
 1. **The site architecture is an input, not a step.** `references/site-inventory.md` holds the current
    page inventory, the URL logic and the known gaps. A page cannot be placed inside an architecture
-   that does not exist. The two hierarchies here have different depths — the homepage is the FitXpress
-   parent, `/mobile-tailor/` is the Mobile Tailor parent — so check the inventory rather than assuming
-   a `/product/for-vertical/` shape. No agreed URL → stop and resolve it with Vadim first.
+   that does not exist. Since 2026-09-27 (Vadim) both products share one shape: `/fitxpress/` is the
+   FitXpress parent, `/mobile-tailor/` the Mobile Tailor parent, and verticals live at
+   `/{product}/for-{vertical}/`. The homepage is a general 3DLOOK products page. Check the inventory
+   for what is live today, because the migration runs with the use-case release. No agreed URL → stop and resolve it with Vadim first.
 2. **Gates are stop-filters, not suggestions.** G-I blocks the page existing. G-A blocks writing.
    G-T blocks publishing. G-J — a blind judge that did not build the page — blocks it again on
    quality. A page that fails a gate goes back; it does not proceed with a note in the margin.
@@ -128,11 +129,12 @@ cannibalise each other.
 - [ ] Inbound internal links named: which existing pages will link here
 - [ ] Search Console baseline captured if the URL already exists (rewrites always do)
 
-**Placement on this site:** a FitXpress vertical page is a child of the homepage and lives at
-`/for-{vertical}/`; a Mobile Tailor one is a child of `/mobile-tailor/` and lives underneath it. Do
-not invent a `/fitxpress/` path level — it 301s to the homepage. The known debt is that neither parent
-links down to its verticals in the body, only through the nav dropdown; ask for that block in the
-handover. Details and the one page that needs normalising are in `references/site-inventory.md`.
+**Placement on this site (Vadim, 2026-09-27):** a FitXpress vertical page is a child of `/fitxpress/`
+and lives at `/fitxpress/for-{vertical}/`; a Mobile Tailor one lives at `/mobile-tailor/for-{vertical}/`.
+The homepage is the general 3DLOOK page, not a product parent. Existing root-level FX pages
+(`/for-bmi-verification/`, `/structured-body-data-for-telehealth-digital-health-programs/`) move with
+a 301 **when they are rebuilt**, not in a separate wave. Every parent links down to its verticals in the
+body, not only through the nav dropdown. Details are in `references/site-inventory.md`.
 
 Checkpoint: Vadim approves placement, URL and angle before Phase 3.
 

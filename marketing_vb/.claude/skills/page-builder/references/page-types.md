@@ -49,8 +49,8 @@ Ask in order. A "no" ends it for now.
 3. **Is there demand?** A row in `content-plan.md`, Search Console volume on vertical-named queries,
    or ≥15% of outbound pipeline from `workspace/outbound/campaigns/`.
 4. **Is there something to say that no existing page or article already says?** Check both inventories.
-5. **Does it have a parent and a URL?** FitXpress verticals hang off the homepage at
-   `/for-{vertical}/`; Mobile Tailor verticals sit under `/mobile-tailor/`. See `site-inventory.md`.
+5. **Does it have a parent and a URL?** FitXpress verticals sit under `/fitxpress/` at
+   `/fitxpress/for-{vertical}/`; Mobile Tailor verticals sit under `/mobile-tailor/` (2026-09-27). See `site-inventory.md`.
 
 Volume without these produces a site of pages that rank for nothing and answer no one.
 
@@ -77,3 +77,5 @@ Medical) clears the "2+ cases from this vertical" bar outright, and **MT made-to
 if formal-wear rental counts as the same vertical as made-to-measure — that is Vadim's call, not an
 assumption to make while drafting. Every other vertical needs a second case, an approved customer
 reference, or a G-I waiver recorded with Vadim's decision and its reason.
+
+**Standing G-I waiver for every FitXpress vertical (Vadim, 2026-09-27).** Clients do not agree to public case studies (logos only), so FX vertical pages are built without the 2-case bar. What stands in for cases: customer logos; anonymised figures only from `proof-points.md` (a figure that could identify a client is cleared with Vadim first); the accuracy framework; the trust FAQ; the workflow itself. Never an invented or implied case. The waiver for a vertical ends when its first approved case lands. The other G-I checks (use-case file, demand, 5 facts, 60% rule) still apply. Record `G-I: standing FX waiver 2026-09-27` in `gate-reports.md`.

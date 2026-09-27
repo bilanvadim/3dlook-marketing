@@ -123,7 +123,7 @@ related: 2026-09-25-fitxpress-seo-plan.md (фаза 0, п. 0.2–0.6)
    2. включить в настройках формы «Block free email providers»;
    3. вести consumer-посетителя на другой сценарий (например, статьи), а не в Contact sales.
    
-   Рекомендация: 1 + 2. Количество заявок упадёт, мусора станет меньше.
+   **Решено 2026-09-27: варианты 1 + 2** (обязательные Company и Job title, блок бесплатных email-доменов). Количество заявок упадёт, мусора станет меньше. Через месяц сверить число заявок popup и долю сделок.
 2. **Lead scoring** (HubSpot score): +10 рабочий email; +15 `icp_segment` из FX или MT; +10 страна US/UK/CA/AU/DE; +20 форма contact, pricing или meeting; −30 личный email; −50 careers. Порог MQL — 30.
 3. **Careers:** контакты из карьерных форм получают `lifecycle = Other`, `icp_segment = Job seeker` и исключаются из маркетинговых отчётов и списков. Если есть ATS, лучше перенести формы туда.
 4. **Collected forms.** Логины и регистрации приложения Mobile Tailor (`.signup-form`, `.ng-*`) и Contact Form 7 (`.wpcf7-form`) HubSpot сейчас собирает как «формы». Если эти контакты заводятся через интеграцию приложения, collected forms для них выключить (Marketing → Forms → Non-HubSpot forms) или исключить из отчётов по маркетингу.
@@ -160,4 +160,4 @@ related: 2026-09-25-fitxpress-seo-plan.md (фаза 0, п. 0.2–0.6)
 
 - Список офисных, VPN- и подрядческих IP.
 - Тариф HubSpot: есть ли Operations Hub или Marketing Hub Pro (это решает судьбу B3).
-- Решение по popup: вариант 1, 2 или 3.
+- ~~Решение по popup~~: решено, варианты 1 + 2.

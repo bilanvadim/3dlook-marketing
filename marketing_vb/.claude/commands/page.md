@@ -20,9 +20,9 @@ argument-hint: "[vertical or URL] [stage (gate/build/judge/handoff/full)]"
 
 ## Checkpoints
 
-1. **После `gate`** — Вадим одобряет размещение, URL и угол. Родитель FitXpress-вертикалей — главная
-   страница, URL вида `/for-{vertical}/`; у Mobile Tailor родитель свой, `/mobile-tailor/`. Уровня
-   `/fitxpress/` не существует — он 301-ит на главную.
+1. **После `gate`** — Вадим одобряет размещение, URL и угол. Родитель FitXpress-вертикалей — `/fitxpress/`,
+   URL вида `/fitxpress/for-{vertical}/`; у Mobile Tailor — `/mobile-tailor/for-{vertical}/`; главная — общая
+   страница 3DLOOK (решение Вадима 2026-09-27). Для FX-вертикалей действует общий waiver G-I по кейсам.
 2. **После `judge`** — Вадим одобряет финальную страницу, мету и итоговый счёт вместе. Публикация
    ниже 85 без явного флага запрещена.
 

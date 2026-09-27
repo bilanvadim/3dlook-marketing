@@ -21,12 +21,13 @@ Full detail in `kit-vertical-page.md`. Summary:
 - [ ] Demand: content-plan row, Search Console volume, or ≥15% of outbound pipeline
 - [ ] 5 facts absent from the parent product page
 - [ ] The market's BD owner confirms the objections differ
-- [ ] Parent and URL settled: homepage + `/for-{vertical}/` for FitXpress, `/mobile-tailor/` +
+- [ ] Parent and URL settled: `/fitxpress/` + `/fitxpress/for-{vertical}/` for FitXpress, `/mobile-tailor/` +
       `/mobile-tailor/for-{vertical}/` for Mobile Tailor (`site-inventory.md`)
 - [ ] The 60% uniqueness rule can realistically be met
 
 **Fail →** a section on the product page plus the vertical's hub article. Revisit when the second case
-lands. A waiver is Vadim's call and gets recorded with its reason.
+lands. A waiver is Vadim's call and gets recorded with its reason. **FitXpress verticals carry a standing
+waiver of the 2-case check (2026-09-27)** — see `page-types.md`; the other G-I checks still apply.
 
 ---
 
