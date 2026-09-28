@@ -1000,6 +1000,86 @@
       "product": "fitxpress",
       "date": "2026-09-27",
       "status": "active"
+    },
+    "activerse-diet-training-by-ann": {
+      "display_name": "Activerse (Diet & Training by Ann)",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-09-14-eu-erakulis-similar",
+      "product": "fitxpress",
+      "date": "2026-09-14",
+      "status": "active"
+    },
+    "betterme": {
+      "display_name": "BetterMe",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-09-14-eu-erakulis-similar",
+      "product": "fitxpress",
+      "date": "2026-09-14",
+      "status": "active"
+    },
+    "fastic": {
+      "display_name": "Fastic",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-09-14-eu-erakulis-similar",
+      "product": "fitxpress",
+      "date": "2026-09-14",
+      "status": "active"
+    },
+    "fitify": {
+      "display_name": "Fitify",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-09-14-eu-erakulis-similar",
+      "product": "fitxpress",
+      "date": "2026-09-14",
+      "status": "active"
+    },
+    "freeletics": {
+      "display_name": "Freeletics",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-09-14-eu-erakulis-similar",
+      "product": "fitxpress",
+      "date": "2026-09-14",
+      "status": "active"
+    },
+    "gymondo": {
+      "display_name": "Gymondo",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-09-14-eu-erakulis-similar",
+      "product": "fitxpress",
+      "date": "2026-09-14",
+      "status": "active"
+    },
+    "kilo-health": {
+      "display_name": "Kilo Health",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-09-14-eu-erakulis-similar",
+      "product": "fitxpress",
+      "date": "2026-09-14",
+      "status": "active"
+    },
+    "lifesum": {
+      "display_name": "Lifesum",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-09-14-eu-erakulis-similar",
+      "product": "fitxpress",
+      "date": "2026-09-14",
+      "status": "active"
+    },
+    "welltech": {
+      "display_name": "Welltech",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-09-14-eu-erakulis-similar",
+      "product": "fitxpress",
+      "date": "2026-09-14",
+      "status": "active"
+    },
+    "yazio": {
+      "display_name": "Yazio",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-09-14-eu-erakulis-similar",
+      "product": "fitxpress",
+      "date": "2026-09-14",
+      "status": "active"
     }
   }
 }
