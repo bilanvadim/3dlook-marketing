@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-12",
+  "last_updated": "2026-09-28",
   "companies": {
     "safariland": {
       "covered_by_profile": null,
@@ -648,9 +648,9 @@
     "healthier-weight": {
       "display_name": "Healthier Weight",
       "covered_by_profile": "katerina",
-      "campaign_id": "2026-07-31-uk-telehealth-digital-health",
+      "campaign_id": "2026-09-27-uk-bariatric-prequal",
       "product": "fitxpress",
-      "date": "2026-07-31",
+      "date": "2026-09-27",
       "status": "active"
     },
     "hertility": {
@@ -728,9 +728,9 @@
     "tonic-weight-loss-surgery": {
       "display_name": "Tonic Weight Loss Surgery",
       "covered_by_profile": "katerina",
-      "campaign_id": "2026-07-31-uk-telehealth-digital-health",
+      "campaign_id": "2026-09-27-uk-bariatric-prequal",
       "product": "fitxpress",
-      "date": "2026-07-31",
+      "date": "2026-09-27",
       "status": "active"
     },
     "ucl": {
@@ -896,6 +896,110 @@
         "katerina"
       ],
       "note": "already outreached or contacted before this campaign — Vadim, 2026-09-12; returned zero people in the 2026-09-01-uk-erakulis-similar Sales Navigator export"
+    },
+    "circle-health": {
+      "display_name": "Circle Health Group",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-09-27-uk-bariatric-prequal",
+      "product": "fitxpress",
+      "date": "2026-09-27",
+      "status": "active"
+    },
+    "cleveland-clinic-london": {
+      "display_name": "Cleveland Clinic London",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-09-27-uk-bariatric-prequal",
+      "product": "fitxpress",
+      "date": "2026-09-27",
+      "status": "active"
+    },
+    "ent-consultancy": {
+      "display_name": "The ENT Consultancy",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-09-27-uk-bariatric-prequal",
+      "product": "fitxpress",
+      "date": "2026-09-27",
+      "status": "active"
+    },
+    "hca-healthcare-uk": {
+      "display_name": "HCA Healthcare UK",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-09-27-uk-bariatric-prequal",
+      "product": "fitxpress",
+      "date": "2026-09-27",
+      "status": "active"
+    },
+    "hospital": {
+      "display_name": "The Hospital Group",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-09-27-uk-bariatric-prequal",
+      "product": "fitxpress",
+      "date": "2026-09-27",
+      "status": "active"
+    },
+    "london-clinic": {
+      "display_name": "The London Clinic",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-09-27-uk-bariatric-prequal",
+      "product": "fitxpress",
+      "date": "2026-09-27",
+      "status": "active"
+    },
+    "national-obesity-surgery-centre": {
+      "display_name": "National Obesity Surgery Centre",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-09-27-uk-bariatric-prequal",
+      "product": "fitxpress",
+      "date": "2026-09-27",
+      "status": "active"
+    },
+    "nuffield-health": {
+      "display_name": "Nuffield Health",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-09-27-uk-bariatric-prequal",
+      "product": "fitxpress",
+      "date": "2026-09-27",
+      "status": "active"
+    },
+    "phoenix-health": {
+      "display_name": "Phoenix Health",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-09-27-uk-bariatric-prequal",
+      "product": "fitxpress",
+      "date": "2026-09-27",
+      "status": "active"
+    },
+    "practice-plus": {
+      "display_name": "Practice Plus Group",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-09-27-uk-bariatric-prequal",
+      "product": "fitxpress",
+      "date": "2026-09-27",
+      "status": "active"
+    },
+    "ramsay-health-care-uk": {
+      "display_name": "Ramsay Health Care UK",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-09-27-uk-bariatric-prequal",
+      "product": "fitxpress",
+      "date": "2026-09-27",
+      "status": "active"
+    },
+    "spire-healthcare": {
+      "display_name": "Spire Healthcare",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-09-27-uk-bariatric-prequal",
+      "product": "fitxpress",
+      "date": "2026-09-27",
+      "status": "active"
+    },
+    "streamline-surgical": {
+      "display_name": "Streamline Surgical",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-09-27-uk-bariatric-prequal",
+      "product": "fitxpress",
+      "date": "2026-09-27",
+      "status": "active"
     }
   }
 }

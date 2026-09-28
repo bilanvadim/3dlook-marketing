@@ -303,3 +303,4 @@ rule, with no second site and no coordinator"):**
 - **Nuffield Health — kept.** Open question 3 closed: Katerina contacts Nuffield directly.
 
 Final list: 14 companies (flavour 1: 6, flavour 3: 8).
+- **Phoenix Health people returned (2026-09-28).** Company stays off the shortlist, but Vadim returned its 3 Sales Navigator people to `people-raw.csv` for scoring.

@@ -362,3 +362,11 @@ reports the real pool size against the floor of 12.
 - Bolt Pharmacy, bariatric surgery in Turkey (secondary): https://www.boltpharmacy.co.uk/guide/bariatric-surgery-in-turkey
 - Spire / Nuffield / Circle weight-loss surgery pages (linked inline)
 - Internal: `2026-07-31-uk-telehealth-digital-health/{companies.md,post-mortem.md,closelyhq-import.csv}`, `exclusions/global-company-registry.json`, `exclusions/katerina-registry.json`
+
+## Vadim's decisions at the validation checkpoint (2026-09-28)
+
+- **Finance roles and dietitians are included** in this campaign (campaign-level override of the persona exclusions).
+- All WEAK rows → PASS; Optimise Weight Loss Surgery partners (Greg Jones, Marianne Sampson) — both in.
+- Rishi Singhal (Healthier Weight) and Sandip Hindocha (Tonic) — cleared despite `company_same_profile` flag (new people, not the four excluded 07-31 contacts).
+- No extra Sales Navigator pulls for The London Clinic / Tonic — go with the current list.
+- Phoenix Health people (3) returned to scoring, though the company stays off the shortlist.
