@@ -60,6 +60,24 @@ python3 /home/vadim_prod/3dlook-marketing/marketing_vb/scripts/outbound_pack.py 
 `extract` и `import` — это код. Агентов `people-extractor` и `closelyhq-importer` запускай
 только разбираться, почему команда упала.
 
+### Авто-QC — opus `quality-controller`, после трёх стадий
+
+Решение Вадима 2026-09-28: для outbound QC остаётся на opus. После `hypothesis`,
+`validate` и `messages`, **до** пинга Вадиму:
+
+```bash
+python3 /home/vadim_prod/3dlook-marketing/marketing_vb/scripts/outbound_pack.py qc-prompt \
+    --campaign <slug> --stage hypothesis|validate|messages
+```
+
+Команда печатает промпт для `quality-controller`: что оценивать и что агенту было дано
+(карточка и compact-список, а не гипотеза и сырой экспорт). Передай его дословно. Для
+`messages` — один QC на кампанию, после `check-messages` по всем пачкам.
+
+После QC допиши в отчёт `coordinator_review` (`agreement` + `top_issue`, CLAUDE.md §14), а
+в пинг Вадиму — одну строку: `QC: 17/20 ✅ good. Top: …`. **QC ниже 12 → дальше не идёшь**,
+Вадиму уходит red flag с предложением перегенерировать.
+
 ### `messages`: пачки
 
 `outbound_pack.py profiles` сам делит список на пачки (большая группа — своя пачка,

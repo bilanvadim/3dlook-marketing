@@ -690,6 +690,13 @@ mutate "template hook phrase" "$B" 'Growth teams pay' 'Noticed your background i
 check "a hook phrase the template lists is not a failure -> 0" 0 $OP split-messages --campaign $P --in messages/_batch-all.md
 cp "$B.good" "$B"; rm -f "$B.good"
 check "restored batch -> 0" 0 $OP split-messages --campaign $P --in messages/_batch-all.md
+check "qc-prompt before step 4 has a summary -> 1" 1 $OP qc-prompt --campaign $P --stage validate
+printf '# ICP Validation Summary\n' > "$CAMP/$P/icp-validation-summary.md"
+check "qc-prompt --stage validate -> 0" 0 $OP qc-prompt --campaign $P --stage validate
+grep_check "QC scores the validator against the card, not the hypothesis" "card-validate.md" \
+  $OP qc-prompt --campaign $P --stage validate
+grep_check "QC for messages names sample files and the gate report" "messages/_check.json" \
+  $OP qc-prompt --campaign $P --stage messages
 check "build-import -> 0" 0 $OP build-import --campaign $P
 grep_check "wave 2 goes into its own file" "closelyhq-import-wave2.csv" ls "$CAMP/$P"
 check "wave 1 file passes check-import -> 0" 0 \

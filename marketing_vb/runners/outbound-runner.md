@@ -165,19 +165,28 @@ QC = автозапуск `quality-controller` (если `AUTO_QC_ENABLED=true` 
 
 ## Auto-QC integration
 
-Если `AUTO_QC_ENABLED=true` в CLAUDE.md секция 14 (default), то **после** каждого из шагов ниже — но **до** notify Вадиму — запусти `quality-controller`:
+Если `AUTO_QC_ENABLED=true` в CLAUDE.md секция 14 (default), то **после** каждого из шагов ниже — но **до** notify Вадиму — запусти `quality-controller`.
 
-| После шага | Артефакт для QC |
-|------------|-----------------|
-| `hypothesis` | `workspace/outbound/campaigns/{slug}/hypothesis.md` |
-| `validate` | `workspace/outbound/campaigns/{slug}/people-validated.csv` (sample-based) |
-| `messages` | `workspace/outbound/campaigns/{slug}/messages/_summary.md` + 3 sample messages |
+**Решение Вадима 2026-09-28: для outbound остаётся opus `quality-controller`**, после всех
+трёх шагов. Вариант «sonnet на выборке из 5 сообщений» был предложен и отклонён.
+Механический гейт (`check-messages`) QC не заменяет: он идёт первым, QC судит то, что код
+проверить не может.
 
-Запуск:
+| После шага | Артефакт для QC | Что агенту было дано |
+|------------|-----------------|----------------------|
+| `hypothesis` | `hypothesis.md` | `icp-detail.md`, `proof-points.md` |
+| `validate` | `icp-validation-summary.md` + `decisions.md` | `card-validate.md` + `people-compact.csv` |
+| `messages` | 3 сообщения (по одному на angle) + `messages/_check.json` + `_summary-*.md` | `card-messages.md` + `_profiles-{batch}.md` |
+
+Запуск — промпт печатает скрипт, дословно его и передавай:
+```bash
+python3 scripts/outbound_pack.py qc-prompt --campaign {slug} --stage hypothesis|validate|messages
 ```
-Use the quality-controller subagent to evaluate {artifact_path}.
-Pass: agent_name={agent}, track=outbound, artifact_type={type}.
-```
+
+Скрипт называет и артефакт, и входы. Входы важны: `quality-controller` оценивает артефакт
+против того, что агенту дали, а с 2026-09-28 это карточка и compact-список, а не гипотеза
+и сырой экспорт. Для `messages` QC идёт один раз на кампанию, после `check-messages` по
+всем пачкам, а не по разу на пачку.
 
 После QC — в notify включи QC score одной строкой:
 ```

@@ -36,6 +36,7 @@ caller's context and is re-billed on every later request of that session.
     profiles         step 5 input: batch plan + one compact profile card per person
     split-messages   step 5 output: one batch file -> per-person files, then the gate
     check-messages   the gate: completeness, limits, signature, bans, detector, repetition
+    qc-prompt        what quality-controller is asked to read after a stage, and nothing more
     build-import     step 6: closely.io CSVs by wave, check-import on each, import-log.md
 
 Shared logic is imported from `outbound-pipeline.py` and `outbound-registry.py`, not copied.
@@ -52,6 +53,7 @@ USAGE
     scripts/outbound_pack.py profiles        --campaign <slug> [--max 35]
     scripts/outbound_pack.py split-messages  --campaign <slug> --in messages/_batch-<name>.md
     scripts/outbound_pack.py check-messages  --campaign <slug> [--batch <name>]
+    scripts/outbound_pack.py qc-prompt       --campaign <slug> --stage hypothesis|validate|messages
     scripts/outbound_pack.py build-import    --campaign <slug> [--overwrite] [--out-dir D]
 """
 from __future__ import annotations
@@ -1711,6 +1713,81 @@ def cmd_check_messages(args) -> int:
     return run_check(cdir_of(args.campaign), batch=args.batch)
 
 
+# ================================================================== qc-prompt
+
+QC_AGENT = {"hypothesis": "hypothesis-generator", "validate": "icp-validator",
+            "messages": "message-sequencer"}
+
+
+def cmd_qc_prompt(args) -> int:
+    """The prompt for `quality-controller` (opus) after a stage.
+
+    Auto-QC stays on the opus controller for outbound: Vadim's decision, 2026-09-28. What
+    this command fixes is what the controller reads. It judges an artifact against what
+    the agent was GIVEN, and since the same date that is a card and a compact list, not
+    the hypothesis and the raw export. Pointed at the old inputs it would mark the agent
+    down for not using material it never saw, and read 800 KB to do it.
+    """
+    cdir = cdir_of(args.campaign)
+    base = rel(cdir)
+    stage = args.stage
+    if stage == "hypothesis":
+        artifact = [f"{base}/hypothesis.md"]
+        inputs = ["brand-assets/product-info/icp-detail.md (the segment the hypothesis names)",
+                  "brand-assets/product-info/proof-points.md"]
+        kind = "hypothesis"
+    elif stage == "validate":
+        need = [cdir / "icp-validation-summary.md", cdir / "people-validated.csv"]
+        if not all(p.exists() for p in need):
+            print("✗ step 4 has not finished: no icp-validation-summary.md / "
+                  "people-validated.csv", file=sys.stderr)
+            return 1
+        dec = next((n for n in ("decisions.md", "decisions.txt", "decisions.csv")
+                    if (cdir / n).exists()), None)
+        artifact = [f"{base}/icp-validation-summary.md"] + ([f"{base}/{dec}"] if dec else [])
+        inputs = [f"{base}/card-validate.md", f"{base}/people-compact.csv"]
+        kind = "icp-validation"
+    else:
+        people, _ = expected_people(cdir)
+        by: dict[str, list[dict]] = defaultdict(list)
+        for p in people:
+            if (cdir / "messages" / f"{p['person_id']}.md").exists():
+                by[(p.get("recommended_message_angle") or "?").lower()].append(p)
+        if not by:
+            print("✗ step 5 has not finished: no message files", file=sys.stderr)
+            return 1
+        # One person per angle, the three largest angles, the best-ranked person in each:
+        # deterministic, so a re-run judges the same three.
+        angles = sorted(by, key=lambda a: (a == "referral", -len(by[a]), a))[:3]
+        pick3 = [sorted(by[a], key=lambda p: (str(p.get("priority") or "9"), p["person_id"]))[0]
+                 for a in angles]
+        artifact = [f"{base}/messages/{p['person_id']}.md  ({p.get('recommended_message_angle')})"
+                    for p in pick3]
+        artifact.append(f"{base}/messages/_check.json  (the mechanical gate's findings)")
+        artifact += [f"{base}/messages/{f.name}" for f in sorted((cdir / "messages").glob("_summary*.md"))]
+        idx = cdir / "messages" / "_batches.json"
+        batches = json.loads(idx.read_text()) if idx.exists() else {}
+        prof = sorted({f"{base}/messages/_profiles-{b}.md" for b, ids in batches.items()
+                       if any(p["person_id"] in ids for p in pick3)})
+        inputs = [f"{base}/card-messages.md"] + prof
+        kind = "messages"
+
+    print(f"Use the quality-controller subagent to evaluate step «{stage}» of {cdir.name}.")
+    print(f"Pass: agent_name={QC_AGENT[stage]}, track=outbound, artifact_type={kind}.\n")
+    print("Artifact to score:")
+    for a in artifact:
+        print(f"  - {a}")
+    print("\nWhat the agent was given (score against THIS, not against hypothesis.md or the\n"
+          "raw export, which the agent does not read since 2026-09-28):")
+    for i in inputs:
+        print(f"  - {i}")
+    print("\nLimits, signature, bans, detector and completeness are already checked by code:\n"
+          "take them as fact and score the judgment, the fit to the persona and the copy.")
+    print(f"\nReport: workspace/_quality/outbound/{today()}-{QC_AGENT[stage]}-"
+          f"{re.sub(r'^\d{4}-\d{2}-\d{2}-', '', cdir.name)}.md")
+    return 0
+
+
 # ================================================================== build-import
 
 IMPORT_COLS = ["first_name", "last_name", "linkedin_url", "company", "title", "email",
@@ -1861,6 +1938,10 @@ def main(argv=None) -> int:
     k = camp(sub.add_parser("check-messages", help="the mechanical gate on messages"))
     k.add_argument("--batch")
     k.set_defaults(func=cmd_check_messages)
+
+    q = camp(sub.add_parser("qc-prompt", help="the prompt for quality-controller after a stage"))
+    q.add_argument("--stage", choices=("hypothesis", "validate", "messages"), required=True)
+    q.set_defaults(func=cmd_qc_prompt)
 
     b = camp(sub.add_parser("build-import", help="closely.io CSVs by wave + check-import"))
     b.add_argument("--overwrite", action="store_true")
