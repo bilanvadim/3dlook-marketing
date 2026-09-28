@@ -535,6 +535,170 @@ PYEOF
 check "mapping discriminators (7 cases)" 0 python3 "$DISC/t.py"
 rm -rf "$DISC"
 
+echo "== outbound_pack (steps 2-6 without an agent) =="
+# One temp campaign walked from a Sales Navigator export to the closely.io CSVs. Inline
+# fixtures, same rule as above: nothing here reads a live campaign.
+P=_test-pack; TMP_CAMPAIGNS+=("$P"); mkdir -p "$CAMP/$P/sales-nav-raw"
+OP="python3 $S/outbound_pack.py"
+cat > "$CAMP/$P/hypothesis.md" <<'EOF'
+---
+product: fitxpress
+profile: olena
+market: Continental Europe
+status: approved
+cap_per_group: 3
+banned_terms: [FitCoach]
+---
+
+## Vertical
+Consumer fitness apps.
+
+## Sub-segment
+Apps with a paid tier.
+
+## Use case
+A body scan inside the app.
+
+## Target buyer persona
+- **Head of Product**, primary.
+
+### Target buyer persona: Sales Navigator pull for step 3
+- **Titles to include:** Founder, CEO; VP / Head of Product, Growth or Retention; CTO.
+
+## Anti-cases
+Gym chains.
+
+## Rules for steps 3-5
+- No client is named anywhere in cold copy.
+- **Message 1 gate.** Every message 1 carries at least one product specific.
+EOF
+cat > "$CAMP/$P/companies-verified.csv" <<'EOF'
+company_name,website,linkedin_url,hq_country,fit_score_1_to_5,verification,source_url
+Alpha App (Groupco),https://a.example,https://www.linkedin.com/company/groupco,Germany,5,verified-live,https://a.example
+Beta App (Groupco),https://b.example,https://www.linkedin.com/company/groupco,Germany,4,verified-live,https://b.example
+Gamma,https://g.example,https://www.linkedin.com/company/gamma,Sweden,4,verified-live,https://g.example
+EOF
+cat > "$CAMP/$P/sales-nav-raw/export.csv" <<'EOF'
+Linkedin_url,First_name,Last_name,Job_title,Company_name,Location,Skills,Experience,Headline,Bio,Company linkedin_url
+https://www.linkedin.com/in/anna-berg,Anna,Berg,Head of Product,Groupco,Germany,"Roadmaps, Growth","Head of Product at Groupco, Product Manager at Oldco",Head of Product at Groupco,"I run the app roadmap.",https://www.linkedin.com/company/groupco
+https://www.linkedin.com/in/ben-cole,Ben,Cole,Senior Backend Engineer,Groupco,Germany,Python,"Senior Backend Engineer at Groupco, Developer at Oldco",Backend,"I build services.",https://www.linkedin.com/company/groupco
+https://www.linkedin.com/in/cara-dahl,Cara,Dahl,CFO,Groupco,Germany,Finance,"CFO at Groupco, Controller at Oldco",CFO,"Finance lead.",https://www.linkedin.com/company/groupco
+https://www.linkedin.com/in/finn-gade,Finn,Gade,Retention Manager,Groupco,Germany,CRM,"Retention Manager at Groupco, CRM Manager at Oldco",Retention,"Lifecycle and churn.",https://www.linkedin.com/company/groupco
+https://www.linkedin.com/in/dan-eriksson,Dan,Eriksson,Head of Growth,Gamma,Sweden,Growth,"Head of Growth at Gamma, Growth Lead at Oldco",Head of Growth,"Growth and retention.",https://www.linkedin.com/company/gamma
+https://www.linkedin.com/in/eva-frank,Eva,Frank,Owner,Gamma,Sweden,,,,,https://www.linkedin.com/company/gamma
+EOF
+python3 $S/outbound-pipeline.py hypothesis-gate --campaign $P --stamp >/dev/null 2>&1
+check "extract-people on the fixture -> 0" 0 \
+  python3 $S/outbound-pipeline.py extract-people --campaign $P --profile olena
+check "next --campaign -> 0" 0 $OP next --campaign $P
+grep_check "next --find resolves «лена» to olena" "2026-09-14-eu-erakulis-similar" \
+  $OP next --find "лена еракуліс"
+check "sales-nav-query -> 0" 0 $OP sales-nav-query --campaign $P
+grep_check "heads carry over to bare tails" '"Head of Retention"' cat "$CAMP/$P/sales-nav-query.md"
+check "compact -> 0" 0 $OP compact --campaign $P
+grep_check "two brands of one group are one group" "Groupco 4" $OP compact --campaign $P
+grep_check "an empty profile is flagged" "empty-profile 1" $OP compact --campaign $P
+check "card --for validate -> 0" 0 $OP card --campaign $P --for validate
+check "card --for messages -> 0" 0 $OP card --campaign $P --for messages
+check "fresh card passes --check -> 0" 0 $OP card --campaign $P --for messages --check
+grep_check "the card carries no pricing section" "^0$" grep -c "^### Pricing" "$CAMP/$P/card-messages.md"
+
+cat > "$CAMP/$P/decisions.csv" <<'EOF'
+person_id,decision,priority,angle,wave,reason
+anna-berg,PASS,1,product,1,Owns the roadmap.
+finn-gade,PASS,2,retention,1,Owns retention.
+dan-eriksson,PASS,2,retention,1,Owns growth.
+ben-cole,FAIL,,,,Engineering below CTO.
+cara-dahl,FAIL,,,,Finance.
+EOF
+check "a person with no decision blocks the list -> 1" 1 $OP apply-decisions --campaign $P
+printf 'eva-frank,FAIL,,,,Empty profile.\n' >> "$CAMP/$P/decisions.csv"
+check "complete decisions -> 0" 0 $OP apply-decisions --campaign $P
+cat > "$CAMP/$P/decisions.md" <<'EOF2'
+person_id | decision | priority | angle | wave | reason
+anna-berg | PASS | 1 | product | 1 | Owns the roadmap, and the scan, by title.
+finn-gade | PASS | 2 | retention | 1 | Owns retention, lifecycle and churn.
+dan-eriksson | PASS | 2 | retention | 1 | Owns growth.
+ben-cole | FAIL | | | | engineering below CTO
+cara-dahl | FAIL | | | | finance
+eva-frank | FAIL | | | | empty profile
+EOF2
+check "the pipe form, with commas in a reason -> 0" 0 $OP apply-decisions --campaign $P --in decisions.md
+grep_check "a comma in a reason does not shift columns" "anna-berg,.*,PASS,1,SEND,\"Owns the roadmap, and the scan, by title.\",product,1" \
+  cat "$CAMP/$P/people-validated.csv"
+grep_check "identity survives validation" "anna-berg,Anna Berg,Anna,Berg,https://(www\.)?linkedin.com/in/anna-berg" \
+  cat "$CAMP/$P/people-validated.csv"
+check "skipped report -> 0" 0 $OP skipped --campaign $P
+check "promote: unknown name -> 1" 1 $OP promote --campaign $P --names "Nobody Here" --angle referral
+check "promote: empty profile needs --force -> 1" 1 $OP promote --campaign $P --names "Eva Frank" --angle referral
+check "promote: by name, within the cap -> 0" 0 \
+  $OP promote --campaign $P --names "Cara Dahl" --angle referral --wave 2 --pool H
+check "promote: over cap_per_group -> 1" 1 $OP promote --campaign $P --names "Ben Cole" --angle technical-integration
+grep_check "promote keeps the previous list" "people-validated-v2-" ls "$CAMP/$P"
+
+check "profiles -> 0" 0 $OP profiles --campaign $P
+LINK="Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva"
+msg() {  # msg <person_id> <first name> <M1 body> <M2 body>
+  printf '@@@ %s\nhook: fixture\nproof: fixture\n--- M1\nHi %s,\n\n%s\n\nOlena\n--- M2\nHi %s,\n\n%s\n\nOlena\n' \
+    "$1" "$2" "$3" "$2" "$4"
+}
+B="$CAMP/$P/messages/_batch-all.md"
+{ msg anna-berg Anna "Your roadmap covers tracking. Two phone photos return 80+ body measurements in under 45 seconds." \
+      "A scan between check-ins shows change early. $LINK"
+  msg finn-gade Finn "Churn usually starts when progress stops being visible. A phone scan shows it from two photos." \
+      "Members who see their waist change stay longer. One platform ran 34,000 scans in 2025. $LINK"
+  msg dan-eriksson Dan "Growth teams pay for installs that leave early. Visible body composition change keeps them." \
+      "Payback improves when month two holds. A scan takes under 45 seconds. $LINK"; } > "$B"
+# the gate's own catch, kept as a test: three people given one Message 2 is a mail merge
+cp "$B" "$B.same"
+python3 - "$B.same" <<'PY'
+import re, sys
+t = open(sys.argv[1]).read()
+t = re.sub(r"(--- M2\nHi \w+,\n\n).*?(\n\nOlena)", r"\1Same text for everyone. Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva\2", t, flags=re.S)
+open(sys.argv[1], "w").write(t)
+PY
+grep_check "identical Message 2 across people is caught" "identical text" \
+  $OP split-messages --campaign $P --in messages/_batch-all.md.same
+rm -f "$B.same"
+check "a batch missing one person -> 1" 1 $OP split-messages --campaign $P --in messages/_batch-all.md
+grep_check "and names who is missing" "cara-dahl" $OP split-messages --campaign $P --in messages/_batch-all.md
+msg cara-dahl Cara "Who owns body-progress features in the app? Happy to be pointed to them." \
+  "No pitch, only a pointer if you have one." >> "$B"
+check "a complete, clean batch -> 0" 0 $OP split-messages --campaign $P --in messages/_batch-all.md
+grep_check "referral without a calendar link is a note, not a failure" "no calendar link" \
+  $OP check-messages --campaign $P
+cp "$B" "$B.good"
+mutate "the number out of a pair" "$B" ' One platform ran 34,000 scans in 2025\.' ''
+check "a pair with no number, in a campaign that demands one -> 1" 1 $OP split-messages --campaign $P --in messages/_batch-all.md
+cp "$B.good" "$B"
+mutate "em dash into a message" "$B" 'Churn usually starts' 'Churn — as usual — starts'
+check "em dash -> 1" 1 $OP split-messages --campaign $P --in messages/_batch-all.md
+cp "$B.good" "$B"
+mutate "client name into a message" "$B" 'A phone scan shows it from two photos\.' 'Yazen does this already, from two photos.'
+check "a client named -> 1" 1 $OP split-messages --campaign $P --in messages/_batch-all.md
+cp "$B.good" "$B"
+mutate "campaign ban into a message" "$B" 'Your roadmap covers tracking\.' 'FitCoach covers tracking.'
+check "a campaign-banned term -> 1" 1 $OP split-messages --campaign $P --in messages/_batch-all.md
+cp "$B.good" "$B"
+mutate "signature with a company" "$B" '\nOlena\n--- M2\nHi Anna' '\nOlena, 3DLOOK\n--- M2\nHi Anna'
+check "signature is not the first name alone -> 1" 1 $OP split-messages --campaign $P --in messages/_batch-all.md
+cp "$B.good" "$B"
+mutate "generic opener" "$B" 'Growth teams pay' 'I came across your profile. Teams pay'
+check "an opener the template bans -> 1" 1 $OP split-messages --campaign $P --in messages/_batch-all.md
+cp "$B.good" "$B"
+mutate "template hook phrase" "$B" 'Growth teams pay' 'Noticed your background in growth. Teams pay'
+check "a hook phrase the template lists is not a failure -> 0" 0 $OP split-messages --campaign $P --in messages/_batch-all.md
+cp "$B.good" "$B"; rm -f "$B.good"
+check "restored batch -> 0" 0 $OP split-messages --campaign $P --in messages/_batch-all.md
+check "build-import -> 0" 0 $OP build-import --campaign $P
+grep_check "wave 2 goes into its own file" "closelyhq-import-wave2.csv" ls "$CAMP/$P"
+check "wave 1 file passes check-import -> 0" 0 \
+  python3 $S/outbound-pipeline.py check-import --campaign $P
+check "build-import refuses to clobber -> 1" 1 $OP build-import --campaign $P
+if mutate "scope edit under the card" "$CAMP/$P/hypothesis.md" '^## Anti-cases$' '## Anti-cases\n\nAnd yoga studios.'; then
+  check "a card older than the scope fails --check -> 1" 1 $OP card --campaign $P --for messages --check
+fi
+
 echo "== existing tooling still green =="
 check "outbound-registry status" 0 python3 $S/outbound-registry.py status
 check "agent copies identical" 0 python3 $S/check-agent-copies.py

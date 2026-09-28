@@ -1,0 +1,405 @@
+{
+ "campaign": "2026-09-27-uk-bariatric-prequal",
+ "checked": 74,
+ "source": "people-validated.csv (decision == PASS)",
+ "batch": null,
+ "generated": "2026-09-28T17:26:58",
+ "hard": [],
+ "soft": [
+  [
+   "no number",
+   "qutaybaalmerie",
+   "neither message cites a number from the card's facts"
+  ],
+  [
+   "greeting",
+   "professor-lisa-grant-aa460174 M1",
+   "«Hi Lisa,» has no «Professor Lisa»"
+  ],
+  [
+   "terminology",
+   "professor-lisa-grant-aa460174 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "greeting",
+   "professor-lisa-grant-aa460174 M2",
+   "«Hi Lisa,» has no «Professor Lisa»"
+  ],
+  [
+   "terminology",
+   "caroline-oleary-a8769a74 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "annabelle-neame-56a46162 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "kate-convery-0b536872 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "rogan-corbridge-mbbs-bsc-frcs-frcs-orl-a835b633 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "no number",
+   "shaishav-shashikant-dhage-98722135",
+   "neither message cites a number from the card's facts"
+  ],
+  [
+   "greeting",
+   "dbghosh M1",
+   "«Hi Debashis,» has no «Debashis.»"
+  ],
+  [
+   "terminology",
+   "dbghosh M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "greeting",
+   "dbghosh M2",
+   "«Hi Debashis,» has no «Debashis.»"
+  ],
+  [
+   "terminology",
+   "sue-norton-4600989 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "beri-ridgeway-md M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "no number",
+   "dan-fagan-2890673a",
+   "neither message cites a number from the card's facts"
+  ],
+  [
+   "terminology",
+   "arjun-shankar-4367983a M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "kogie-naidoo-614b703b M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "nick-jackson-869767b M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "debbie-craven-88797811 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "paul-scott-mba-cmgr-fcmi-56ab6a12 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "melanie-tan-4185b312 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "no number",
+   "sandip-hindocha-40918315",
+   "neither message cites a number from the card's facts"
+  ],
+  [
+   "terminology",
+   "barrie-crabtree-11724315 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "jane-almond-36638418 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "no number",
+   "bernadette-bishop-0713b948",
+   "neither message cites a number from the card's facts"
+  ],
+  [
+   "terminology",
+   "tahsin-zatman-01380818 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "mark-gilmour M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "no number",
+   "bilal-alkhaffaf",
+   "neither message cites a number from the card's facts"
+  ],
+  [
+   "terminology",
+   "kate-farrow-93023651 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "andrew-mikhail-60b14353 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "pricing word",
+   "paul-manning-075a5151 M1",
+   "Hi Paul, Circle sells fixed-price weight-loss-surgery packages with aftercare, so a first consultation that e…"
+  ],
+  [
+   "terminology",
+   "paul-manning-075a5151 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "grace-p-8b969a54 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "alison-peake-8720bb23 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "julia-salmon-8a677323 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "tim-wigmore-0a87b423 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "paula-vrey-85613126 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "fiona-taylor-a3497927 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "dawn-pickrell-1baa5327 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "anthony-cartwright M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "samlock M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "ema-proctor-1403905a M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "no number",
+   "alison-edwards-9235412a",
+   "neither message cites a number from the card's facts"
+  ],
+  [
+   "terminology",
+   "dr-lorraine-kelly-phd-46b9315a M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "michelle-stone-0264b360 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "boweldoctor M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "martine-dempsey-94551a120 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "katrin-davis-9b06bb120 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "sandra-donoghue-8332b4121 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "no number",
+   "rajeev-parameswaran-663044128",
+   "neither message cites a number from the card's facts"
+  ],
+  [
+   "terminology",
+   "dr-kathryn-oakland-97ab2076 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "no number",
+   "charles-ranaboldo-129b9977",
+   "neither message cites a number from the card's facts"
+  ],
+  [
+   "no number",
+   "cliffbucknall",
+   "neither message cites a number from the card's facts"
+  ],
+  [
+   "no number",
+   "greg-jones-06b000b0",
+   "neither message cites a number from the card's facts"
+  ],
+  [
+   "terminology",
+   "paula-o’brien-8b83997a M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "no number",
+   "nurul-ahad-276289b5",
+   "neither message cites a number from the card's facts"
+  ],
+  [
+   "terminology",
+   "cherrilreilly M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "no number",
+   "rishi-singhal-358579b8",
+   "neither message cites a number from the card's facts"
+  ],
+  [
+   "no number",
+   "borzoueh-boz-mohammadi-9507798a",
+   "neither message cites a number from the card's facts"
+  ],
+  [
+   "no number",
+   "marianne-sampson-6a499891",
+   "neither message cites a number from the card's facts"
+  ],
+  [
+   "terminology",
+   "sarah-ballis-3a133597 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "andre-bothma-675451111 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "lucy-hetherington-120985196 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "no number",
+   "richard-cohen-311b34173",
+   "neither message cites a number from the card's facts"
+  ],
+  [
+   "terminology",
+   "karen-willoughby-98bb4818a M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "julie-condon-5b583524b M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "sarah-dickinson1 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "christine-morley-904156264 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "no number",
+   "tamara-gall",
+   "neither message cites a number from the card's facts"
+  ],
+  [
+   "terminology",
+   "dr-melanie-rendall-24bb3938 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "gavin-quinton-524a1242 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "nicole-alabaster-8a3b6047 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "heidi-te-braake-27a90820 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "leigh-joseph-32380786 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "no number",
+   "shaw-somers-27a26b1a9",
+   "neither message cites a number from the card's facts"
+  ],
+  [
+   "terminology",
+   "ayaan-n-83b339244 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "emma-thomas-b67744a7 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "danny-brown-253163107 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "victoria-jones-8829702ba M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ]
+ ]
+}

@@ -1,0 +1,85 @@
+{
+ "campaign": "2026-09-14-eu-erakulis-similar",
+ "checked": 125,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": null,
+ "generated": "2026-09-28T17:37:43",
+ "hard": [],
+ "soft": [
+  [
+   "greeting",
+   "vik-barannyk M1",
+   "«Hi Vik,» has no «Viktoria»"
+  ],
+  [
+   "greeting",
+   "vik-barannyk M2",
+   "«Hi Vik,» has no «Viktoria»"
+  ],
+  [
+   "greeting",
+   "vladyslwv-mykosianchyk-83110b433 M1",
+   "«Hi Vladyslav,» has no «Vladyslwv»"
+  ],
+  [
+   "greeting",
+   "vladyslwv-mykosianchyk-83110b433 M2",
+   "«Hi Vladyslav,» has no «Vladyslwv»"
+  ],
+  [
+   "greeting",
+   "nastya-kobzeva M1",
+   "«Hi Nastya,» has no «Anastasiia»"
+  ],
+  [
+   "greeting",
+   "nastya-kobzeva M2",
+   "«Hi Nastya,» has no «Anastasiia»"
+  ],
+  [
+   "no calendar link",
+   "tanya-goncharenko-a32624102 M2",
+   "angle referral"
+  ],
+  [
+   "pricing word",
+   "esteban-atlasovich M1",
+   "Hi Esteban, Got me thinking: going from pricing systems at Mercado Libre to platform and AI product here is a…"
+  ],
+  [
+   "pricing word",
+   "alexandra-vorotnikova-2aa441174 M2",
+   "Hi Alexandra, On the monetization side specifically: a body-progress feature tends to be the kind of visible…"
+  ],
+  [
+   "M2 opener repeated",
+   "Freeletics ×5",
+   "«following up.»: danielsobhani, amalia-trivizadaki-a0872a114, idil-bozay-91563710b, mina-baghal"
+  ],
+  [
+   "M2 opener repeated",
+   "Freeletics ×3",
+   "«following up, mainly to close the loop:»: christian-weber-57841648, estefaniaullrich, philhagspiel"
+  ],
+  [
+   "M2 opener repeated",
+   "Gymondo ×5",
+   "«following up.»: anaispitou, gabriela-cardona, kenichi-takahira-ba999018a, tais-tretyakova-b3269883"
+  ],
+  [
+   "M2 opener repeated",
+   "Kilo ×7",
+   "«following up, mainly to close the loop:»: cristina-g-528824263, domantaspatinskas, linajasaite, mohamed-youssef-02395761"
+  ],
+  [
+   "M2 opener repeated",
+   "Lifesum ×3",
+   "«following up, mainly to close the loop:»: gners, matthias-lenz-0bb2b43, asaodellnordstrom"
+  ],
+  [
+   "M2 opener repeated",
+   "Welltech ×7",
+   "«following up.»: asinisi, the-elle-pope, naghmeh-hayamanesh-09862174, lucas-dantas-freire-82527713"
+  ]
+ ]
+}

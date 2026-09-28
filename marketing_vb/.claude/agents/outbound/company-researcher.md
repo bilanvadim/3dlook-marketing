@@ -71,9 +71,10 @@ tools: Read, Write, WebSearch, WebFetch, Grep, Bash
 company_name,website,linkedin_url,hq_country,hq_city,employees,revenue_estimate,fit_score_1_to_5,fit_reason,source_url,notes
 ```
 
-## Гейты этого шага — три команды, в этом порядке
+## Гейты этого шага — в этом порядке
 
-Все три обязательны. Шаг 2 не закончен, пока `validate-companies` не вернул exit 0.
+Все обязательны. Шаг 2 не закончен, пока `validate-companies` не вернул exit 0 и не
+собран фильтр для Sales Navigator.
 
 ```bash
 P=/home/vadim_prod/3dlook-marketing/marketing_vb/scripts
@@ -91,7 +92,16 @@ python3 $P/web-verify.py verify --campaign {campaign}
 
 # 3. гейт: схема, гео, фит, верификация, скоуп гипотезы
 python3 $P/outbound-pipeline.py validate-companies --campaign {campaign} --write-routed
+
+# 4. фильтр для Sales Navigator: компании из списка × titles из гипотезы
+python3 $P/outbound_pack.py sales-nav-query --campaign {campaign}
 ```
+
+Шаг 4 пишет `sales-nav-query.md`: список компаний для фильтра «Current company» и
+Boolean-строку для «Current job title». Это то, что Вадим вставляет в Sales Navigator.
+Без него выгрузка делается по компании и возвращает штат целиком: 86% строк EU-экспорта
+2026-09-28 не были кандидатами. Если команда говорит, что в гипотезе нет titles, допиши в
+отчёт Вадиму: гипотезе нужен блок ```` ```titles ````, это правка `hypothesis-generator`.
 
 ### Скоуп гипотезы менять нельзя молча
 

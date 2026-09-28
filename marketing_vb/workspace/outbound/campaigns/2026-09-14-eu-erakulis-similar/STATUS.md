@@ -249,3 +249,13 @@ Welltech-пачка спершу загубила Stan Gladkov (кома в по
 (12 рефералів, після хвилі 1) · `closelyhq-import-wave2-kilo.csv` (7, через тиждень після Kilo хвилі 1).
 Деталі й кроки — `import-log.md`. **Далі — Вадим:** імпорт у closely.io руками →
 `outbound-registry.py record --campaign 2026-09-14-eu-erakulis-similar --profile olena`.
+
+---
+
+## 2026-09-28 (вечір): гейти переведено на `scripts/outbound_pack.py`
+
+У frontmatter гіпотези додано `use_case: fx-digital-fitness`, `cap_per_group: 35` і
+`banned_terms: [FitCoach, Omo]`. Це ті самі рішення Вадима від 09-28, тепер у формі, яку
+читає код; скоуп гіпотези не змінився (`hypothesis-gate` зелений). `check-messages` по
+кампанії: 125 людей, 250 повідомлень, 0 провалів, 15 заміток (`messages/_check.json`).
+`build-import` у тимчасову папку дав файли, байт-у-байт однакові з імпортованими.

@@ -81,6 +81,10 @@ QC = автозапуск `quality-controller` (если `AUTO_QC_ENABLED=true` 
 
 ## Алгоритм
 
+> **С 2026-09-28 механику шагов 2-6 делает `scripts/outbound_pack.py`.** Таблица «кто что
+> делает» и правило «одна стадия — одна сессия» — в `.claude/commands/outbound.md`. Любую
+> стадию начинай с `python3 scripts/outbound_pack.py next --campaign <slug>`.
+
 1. **Если `stage=hypothesis`** или новая кампания:
    - Создай папку `workspace/outbound/campaigns/{YYYY-MM-DD}-{slug}/`
    - Запусти субагент `hypothesis-generator`
@@ -91,29 +95,41 @@ QC = автозапуск `quality-controller` (если `AUTO_QC_ENABLED=true` 
    - Проверь, что `hypothesis.md` существует и помечен как approved (через `*.status.json`)
    - Если нет — STOP, попроси сначала апрувнуть гипотезу
    - Запусти `company-researcher`
-   - После — пингуй Вадима с топ-5 имён
+   - `python3 scripts/outbound_pack.py sales-nav-query --campaign <slug>`: фильтр по titles
+     для Sales Navigator. Вадиму уходит он, а не просьба «выгрузи людей из этих компаний»
+   - После — пингуй Вадима с топ-5 имён и путём к `sales-nav-query.md`
    - Можно продолжить дальше **автоматически** (research → extract — без апрува)
 
 3. **Если `stage=extract`:**
    - Проверь, что `sales-nav-raw/` загружен (Вадим сам выгружает из Sales Nav)
    - Если пусто — STOP, попроси выгрузку
-   - Запусти `people-extractor`
+   - `python3 scripts/outbound-pipeline.py extract-people --campaign <slug> --dry-run`,
+     прочитай список unmatched (имя компании могло разойтись), потом без `--dry-run`.
+     Агент `people-extractor` нужен, только если команда упала
    - Авто-продолжение в `validate` нет — там критический чекпоинт
 
 4. **Если `stage=validate`:**
-   - Запусти `icp-validator`
+   - `outbound-registry.py check`, `outbound_pack.py compact`,
+     `outbound_pack.py card --for validate`
+   - Запусти `icp-validator`: он читает карточку и compact-список, пишет `decisions.md`,
+     гонит `apply-decisions` и `skipped`
+   - В пинге Вадиму — и список SEND, и пулы отсеянных со старшими ролями. Людей, которых
+     он назовёт, добавляет `outbound_pack.py promote`, без нового раунда валидации
    - **ОБЯЗАТЕЛЬНО** пингуй Вадима, это первый чекпоинт менеджера
    - **СТОП.** Жди апрува.
 
 5. **Если `stage=messages`:**
    - Проверь `people-validated.csv` помечен как approved
-   - Запусти `message-sequencer`
+   - `outbound_pack.py card --for messages`, `outbound_pack.py profiles` (план пачек)
+   - Запусти по одному `message-sequencer` на пачку, параллельно
+   - `outbound_pack.py check-messages --campaign <slug>` по всей кампании
    - После — пингуй Вадима с **5 случайными примерами** для просмотра
    - **СТОП.** Жди апрува (или Edit с комментариями)
 
 6. **Если `stage=import`:**
    - Проверь, что messages approved
-   - Запусти `closelyhq-importer`
+   - `python3 scripts/outbound_pack.py build-import --campaign <slug>`, затем
+     `outbound-registry.py record`. Агент `closelyhq-importer` нужен, только если команда упала
    - **ОБЯЗАТЕЛЬНО:** проверь, что в итоговом CSV есть колонка `linkedin_url` и она заполнена для всех строк (правка 2026-08-05: все файлы для рассылок должны содержать ссылки на LinkedIn-профили, без них список не готов к импорту). Если колонки нет — восстанови из `people-validated.csv` по (contact_id) или (first_name, last_name, company)
    - Пингуй Вадима с инструкцией: «загрузи CSV в closely.io, ответь `started` когда запустил»
    - **СТОП.** Здесь Вадим работает руками с closely.io.

@@ -5,6 +5,9 @@ market: Continental Europe (UK excluded)
 created: 2026-09-14
 status: approved
 approved: 2026-09-14
+use_case: fx-digital-fitness
+cap_per_group: 35
+banned_terms: [FitCoach, Omo]
 ---
 
 # Hypothesis: Continental European Consumer Wellness, Fitness and Nutrition Apps (Erakulis look-alike)

@@ -53,6 +53,13 @@ PRICE = {
 }
 
 STAGES = (
+    # outbound (2026-09-28): the openers the /outbound command and coordinators use
+    ("hypothesis-generator", ("step 1 (hypothesis", "шаг 1 outbound")),
+    ("company-researcher", ("step 2 (research", "шаг 2 outbound")),
+    ("icp-validator", ("step 4 (validate", "outbound step 4", "шаг 4 outbound")),
+    ("message-sequencer", ("step 5 (messages", "шаг 5 outbound")),
+    ("closelyhq-importer", ("step 6 (import", "шаг 6 outbound")),
+    ("response-classifier", ("step 8 (responses", "шаг 8 outbound")),
     ("post-drafter", ("write the social post", "write one social post")),
     ("post-brand-checker", ("brand-voice check", "brand voice check")),
     ("post-quality-controller", ("score one social post",)),

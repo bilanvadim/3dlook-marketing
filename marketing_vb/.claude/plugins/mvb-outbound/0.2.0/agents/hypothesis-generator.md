@@ -53,8 +53,13 @@ tools: Read, Grep, Glob, WebSearch, Bash
 ```markdown
 ---
 product: fitxpress | mobile_tailor
+profile: katerina | nick | olena | katya | vadim
+market: [рынок профиля]
 created: YYYY-MM-DD
 status: draft
+use_case: fx-digital-fitness        # имя файла из brand-assets/product-info/use-cases/, без .md
+cap_per_group: 5                    # инвайтов на компанию или группу; меняет только Вадим
+banned_terms: []                    # что нельзя называть в копии ЭТОЙ кампании, кроме клиентов и конкурентов
 ---
 
 # Outbound Hypothesis — {YYYY-MM-DD}
@@ -78,6 +83,32 @@ status: draft
 - Why this title (not another): ...
 - What they care about (KPIs): ...
 - What objections they likely have: ...
+- Not the buyer: [функции, которые в рассылку не идут]
+
+### Target buyer persona: Sales Navigator pull for step 3
+
+**Pull by title filter inside the approved company list, never by company alone.**
+
+```titles
+Chief Product Officer
+VP of Product
+Head of Product
+Head of Retention
+```
+
+[По одному title на строку, как его пишут в LinkedIn. Этот блок читает
+`scripts/outbound_pack.py sales-nav-query` и собирает из него фильтр, который Вадим
+вставляет в Sales Navigator. Прозой здесь не пиши.]
+
+## Rules for steps 3-5
+- [что можно и нельзя в копии: имена клиентов, цены, разрешённые обезличенные пруфы,
+  compliance-фразы, язык. Эту секцию дословно получает message-sequencer.]
+- **Message 1 gate.** Every message 1 carries at least one product specific from
+  `proof-points.md` and one line that could only have been written to that company; each
+  pair of messages cites at least one number. [Оставь эту строку, если у кампании нет
+  причины от неё отказаться: по ней гейт сообщений делает отсутствие конкретики провалом,
+  а не заметкой. Кампания 2026-07-21 ушла без неё: 307 первых сообщений, ни одной
+  конкретики, 1 ответ на 67 отправок.]
 
 ## Anti-cases (где НЕ работает)
 - ...
@@ -96,6 +127,21 @@ status: draft
 ## Open questions for Vadim
 [если что-то не ясно из имеющихся материалов]
 ```
+
+## Почему frontmatter и блок `titles` обязательны
+
+Их читает код, а не человек. `cap_per_group` проверяют `promote` и `build-import`.
+`banned_terms` проверяет гейт сообщений. `use_case` выбирает файл use case для карточки
+сообщений. Блок `titles` превращается в фильтр Sales Navigator.
+
+Выгрузка по компании вместо выгрузки по title стоила двух кампаний: 2026-09-28 в
+EU-экспорте 276 человек из 321 (86%) не были кандидатами, а настоящих покупателей (CPO,
+Head of Product, руководители брендов) в нём не оказалось вовсе. Валидация такого списка —
+это 8M токенов на то, чтобы отсеять бухгалтерию и разработчиков.
+
+Секции `Target buyer persona`, `Anti-cases`, `Rules for steps 3-5`, `Use case` и любые
+`Vadim's decisions …` попадают в карточки агентов **дословно**
+(`scripts/outbound_pack.py card`). Пиши их так, чтобы они читались без остального файла.
 
 ## Правила
 

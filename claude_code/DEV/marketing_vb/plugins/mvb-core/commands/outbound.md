@@ -1,6 +1,7 @@
 ---
 description: Запускает новую outbound-кампанию или продолжает существующую с указанного шага
 argument-hint: "[stage] [campaign-slug]"
+model: sonnet
 ---
 
 Управляет outbound-флоу. Аргументы приходят целиком в `$ARGUMENTS`: **`$ARGUMENTS`**
@@ -27,24 +28,92 @@ argument-hint: "[stage] [campaign-slug]"
 обоих путях, поэтому здесь он такой — но это НЕ повод править те команды, которые
 работают.
 
-## Stages
+## Сначала — где кампания стоит
 
-- `hypothesis` — запустить hypothesis-generator
-- `research` — запустить company-researcher (требует approved hypothesis)
-- `extract` — запустить people-extractor (требует sales-nav-raw/ загружен Вадимом)
-- `validate` — запустить icp-validator (требует extract done)
-- `messages` — запустить message-sequencer (требует approved validation)
-- `import` — запустить closelyhq-importer (требует approved messages)
-- `responses` — запустить response-classifier (требует responses-raw.csv загружен)
-- `analyze` — запустить campaign-analyzer (после кампании, требует metrics-final)
+```bash
+python3 /home/vadim_prod/3dlook-marketing/marketing_vb/scripts/outbound_pack.py next --campaign <slug>
+python3 /home/vadim_prod/3dlook-marketing/marketing_vb/scripts/outbound_pack.py next --find "лена еракуліс"
+```
+
+Одна команда вместо десятка `ls` и `cat`: стадия, что блокирует, сколько людей на каждом
+шаге, не уехал ли скоуп гипотезы, и точные следующие команды. `--find` понимает, как Вадим
+называет кампанию: «Лена» это профиль `olena`, «еракуліс» это `erakulis` в слаге.
+`STATUS.md` кампании читай только если `next` не ответил на вопрос.
+
+## Stages — кто что делает
+
+Ты координатор: ставишь стадию, гонишь скрипты, запускаешь агента там, где нужно
+суждение. Текстов не пишешь и людей не оцениваешь.
+
+| Stage | Скрипты ДО агента | Агент | Скрипты ПОСЛЕ |
+|---|---|---|---|
+| `hypothesis` | — | `hypothesis-generator` (opus) | — |
+| `research` | `hypothesis-gate --stamp`, `search-health.py` | `company-researcher` | `web-verify.py`, `validate-companies`, `outbound_pack.py sales-nav-query` |
+| `extract` | `extract-people --dry-run`, прочитай unmatched, потом без `--dry-run` | **нет** | — |
+| `validate` | `outbound-registry.py check`, `outbound_pack.py compact`, `outbound_pack.py card --for validate` | `icp-validator` | (агент сам: `apply-decisions`, `skipped`) |
+| расширение списка | — | **нет** | `outbound_pack.py promote --names "…"` |
+| `messages` | `outbound_pack.py card --for messages`, `outbound_pack.py profiles` | `message-sequencer`, **по одному на пачку, параллельно** | `outbound_pack.py check-messages` по всей кампании |
+| `import` | — | **нет** | `outbound_pack.py build-import`, `outbound-registry.py record` |
+| `responses` | `closely-pull.py pull` (если файл старше 24 ч), `check-responses` | `response-classifier` | `check-classified` |
+| `analyze` | — | `campaign-analyzer` (opus) | — |
+
+`extract` и `import` — это код. Агентов `people-extractor` и `closelyhq-importer` запускай
+только разбираться, почему команда упала.
+
+### `messages`: пачки
+
+`outbound_pack.py profiles` сам делит список на пачки (большая группа — своя пачка,
+мелкие вместе, до 35 человек) и печатает план. На каждую пачку — один
+`message-sequencer` в фоне, все одним сообщением. Промпт агенту — четыре строки:
+
+```
+Step 5 (messages). Campaign: {slug}. Batch: {batch}.
+Read workspace/outbound/campaigns/{slug}/card-messages.md and
+workspace/outbound/campaigns/{slug}/messages/_profiles-{batch}.md. Nothing else.
+Write messages/_batch-{batch}.md, run split-messages until exit 0, then stop.
+```
+
+Правила кампании в промпт не переписывай: они в карточке, дословно из гипотезы. Когда
+все пачки вернулись, сам прогони `check-messages` по всей кампании и верь ему, а не
+отчётам агентов: 2026-09-28 пачка Welltech отчиталась о 34 людях из 35.
+
+### Расширение списка после чекпоинта
+
+Вадим называет людей или пулы → `promote`, без агента. Если расширение меняет персону
+или кеп, сначала допиши датированный блок `Vadim's decisions YYYY-MM-DD` в
+`hypothesis.md` (и `cap_per_group` во frontmatter), потом `hypothesis-gate --stamp`,
+потом `promote`. Прошлую версию списка `promote` сохраняет сам.
+
+## Одна стадия — одна сессия
+
+Состояние между стадиями лежит на диске: `STATUS.md`, файлы кампании и вывод `next`.
+Контекст сессии его не несёт и не должен.
+
+- **Headless** (`mvb-run.py outbound`): одна job — одна стадия, до чекпоинта Вадима.
+- **Интерактивно**: после чекпоинта предложи Вадиму `/clear` и продолжай с
+  `outbound_pack.py next`.
+
+Замер 2026-09-28: координатор одной длинной сессии на самой большой модели — 18M токенов
+и 57% счёта за кампанию. Он 105 раз перечитал контекст с медианой 171K, потому что в нём
+лежали все предыдущие стадии.
+
+## Что не тащить в контекст
+
+- Скрипты `outbound_pack.py` печатают до ~2 КБ и пишут полный отчёт в файл. Читай
+  файл, только если строки в выводе не хватило.
+- Не `cat` и не `Read` целиком: `hypothesis.md`, `people-*.csv`, сырой экспорт,
+  `messages/*.md`. Нужна цифра → её считает скрипт.
+- Отчёт агента — это его слова. Проверяемое проверяй командой.
 
 ## Алгоритм
 
 1. Разобрать `$ARGUMENTS` в `stage` + `campaign-slug` по правилам выше.
+1a. `outbound_pack.py next --campaign <slug>`: стадия и блокеры. Запрошенная стадия не
+   та, что следующая по `next` → скажи об этом Вадиму до запуска.
 2. Если `campaign-slug` не указан и `stage = hypothesis` — создать новую кампанию: slug = `{YYYY-MM-DD}-new`, попросить Вадима задать direction (или создать без направления).
 3. Если `campaign-slug` указан — найти `workspace/outbound/campaigns/{campaign-slug}/`. Нет папки → СТОП, перечислить существующие.
 4. Прогнать гейт этой стадии из таблицы ниже. Красный гейт = стадия не запускается.
-5. Запустить субагент, соответствующий `stage`.
+5. Прогнать скрипты стадии и запустить агента, если он в таблице Stages есть.
 4. После завершения — Telegram-нотификация со статусом и предложением следующего шага.
 
 ## Механические гейты (код, не суждение агента)
@@ -56,9 +125,9 @@ argument-hint: "[stage] [campaign-slug]"
 | `hypothesis` | — (апрув Вадима) |
 | `research` | `outbound-pipeline.py hypothesis-gate --campaign X --stamp` (в начале), затем `search-health.py`, `web-verify.py verify`, `outbound-pipeline.py validate-companies --campaign X --write-routed` |
 | `extract` | `outbound-pipeline.py extract-people --campaign X --dry-run`, потом без `--dry-run` |
-| `validate` | `outbound-registry.py check --profile P --input people-raw.csv` (шаг 0 icp-validator) |
-| `messages` | — |
-| `import` | `outbound-pipeline.py check-import --campaign X` |
+| `validate` | `outbound-registry.py check` до агента; `outbound_pack.py apply-decisions` после (каждому человеку ровно одно решение) |
+| `messages` | `outbound_pack.py check-messages --campaign X` (полнота, лимиты, подпись, запреты, детектор, повторы) |
+| `import` | `outbound_pack.py build-import --campaign X` (внутри: `check-messages`, `check-import` по каждому файлу, `cap_per_group`) |
 | `responses` | `closely-pull.py pull --campaign X` (**пропусти, если `responses-raw.csv` моложе 24 ч**: его тянет ночной cron, а каждый pull выбивает Вадима из app.closelyhq.com), затем `outbound-pipeline.py check-responses --campaign X` |
 | `analyze` | — (нужны `responses-classified.csv` + `metrics-final.json`) |
 

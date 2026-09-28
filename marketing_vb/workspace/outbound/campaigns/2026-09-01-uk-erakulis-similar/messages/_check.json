@@ -1,0 +1,221 @@
+{
+ "campaign": "2026-09-01-uk-erakulis-similar",
+ "checked": 26,
+ "source": "people-approved.csv",
+ "batch": null,
+ "generated": "2026-09-28T17:27:51",
+ "hard": [
+  [
+   "detector: compliance_status",
+   "drzubairahmed M2",
+   "HIPAA-compliant"
+  ],
+  [
+   "detector: compliance_status",
+   "oliverbrooks M2",
+   "HIPAA-compliant"
+  ],
+  [
+   "detector: compliance_status",
+   "eliothowes M2",
+   "HIPAA-compliant"
+  ],
+  [
+   "detector: compliance_status",
+   "rajive-patel M2",
+   "HIPAA-compliant"
+  ],
+  [
+   "detector: compliance_status",
+   "navin-khosla-39950a17 M2",
+   "HIPAA-compliant, no personal identifiers processed"
+  ],
+  [
+   "detector: compliance_status",
+   "jay-patel-43aa8a21 M2",
+   "HIPAA-compliant"
+  ],
+  [
+   "detector: compliance_status",
+   "saqib-kayani-02431b59 M2",
+   "HIPAA-compliant"
+  ],
+  [
+   "detector: compliance_status",
+   "kamran-ullah-a0ba94104 M2",
+   "HIPAA-compliant"
+  ],
+  [
+   "detector: compliance_status",
+   "cordell-jopson-724b301a2 M2",
+   "HIPAA-compliant"
+  ],
+  [
+   "detector: compliance_status",
+   "amish-patel-96b103259 M2",
+   "HIPAA-compliant"
+  ]
+ ],
+ "soft": [
+  [
+   "terminology",
+   "danielhutson1 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "drzubairahmed M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "james-charalambous-9b955328 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "ryan-sherreard M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "pete-cooper-coopah M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "oliverbrooks M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "eleanor-bennett-a3229957 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "jack-yaxley-b8132892 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "daisy-ford-4350b7373 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "eliothowes M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "eliothowes M2",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "ian-carrington-0869a91 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "jeff-hadaway M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "rajive-patel M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "jay-patel-43aa8a21 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "saqib-kayani-02431b59 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "daisy-blackwood-685ab793 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "kamran-ullah-a0ba94104 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "simon-knight-a14a70112 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "cordell-jopson-724b301a2 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "eoin-duffill-b6a616194 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "eoin-duffill-b6a616194 M2",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "sid-lale-85a745198 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "ben-pratt-663962131 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "jonatan-tibarovsky-3b761a172 M2",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "amish-patel-96b103259 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "terminology",
+   "ellie-hitchmough-06b1b2251 M1",
+   "«80+ measurements»: §2.13 prefers «80+ body measurements»"
+  ],
+  [
+   "M2 opener repeated",
+   "Nutracheck ×7",
+   "«following up.»: danielhutson1, eleanor-bennett-a3229957, jack-yaxley-b8132892, daisy-ford-4350b7373"
+  ],
+  [
+   "M2 opener repeated",
+   "Medicspot ×5",
+   "«following up.»: drzubairahmed, oliverbrooks, eliothowes, jeff-hadaway"
+  ],
+  [
+   "M2 opener repeated",
+   "Fiit ×3",
+   "«following up.»: james-charalambous-9b955328, ian-carrington-0869a91, simon-knight-a14a70112"
+  ],
+  [
+   "M2 opener repeated",
+   "Coopah ×3",
+   "«following up.»: ryan-sherreard, pete-cooper-coopah, ellie-hitchmough-06b1b2251"
+  ],
+  [
+   "M2 opener repeated",
+   "NowPatient ×5",
+   "«following up.»: rajive-patel, jay-patel-43aa8a21, saqib-kayani-02431b59, kamran-ullah-a0ba94104"
+  ]
+ ]
+}
