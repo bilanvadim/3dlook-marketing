@@ -182,6 +182,18 @@ for the audience, or for an organization that has not selected 3DLOOK, both expo
 frame. Name the actor: the clinic, the program, the employer, the operator, the procurement team, the
 person being screened.
 
+**Organization** (`terminology-guardrails.md` §2.14, synced 2026-09-28) — judgment, no pattern.
+"Organization" is the umbrella for an entity type that is unknown, mixed or broader than a
+commercial company (companies, providers, clinics, employers, universities, nonprofits, public
+institutions in one sentence), or for institution-level governance, policy or legal
+responsibility. It fails when it is a formal-sounding swap for "company" or "customer" in product,
+implementation, sales or operational copy, or when the actor is known: *"The organization adds the
+scan to its intake flow"* on a pharmacy page should read *"The pharmacy adds the scan to its intake
+flow."* Use company, customer, provider, clinic, pharmacy, employer, program, operator, care team,
+research sponsor or public institution. The signal is repetition: the same generic "organization"
+in paragraph after paragraph, which hides who acts. This also narrows the buyer / customer fix
+above: "organization" is not the default replacement.
+
 **Reserved words** (editorial guardrail #3) — "independent(ly) validated", "third-party verified",
 "clinically validated", "peer-reviewed" without a named external party and a citable output. The
 compliant forms are internal validation, benchmark participation, dataset enrichment. The detector

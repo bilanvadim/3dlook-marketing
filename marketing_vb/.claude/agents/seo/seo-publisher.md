@@ -41,6 +41,7 @@ category: ...              # рубрика блога
 - [x] cannibalization: <1 строка>            # existing_urls не дублируются, guardrail пака соблюдён
 - [x] distinct_intent: <1 строка>            # статья owns один поисковый интент
 - [x] vertical_boundary: <1 строка>          # границы вертикали из пака соблюдены
+- [x] terminology_actors: <1 строка>         # brand-assets/content-strategy/terminology-guardrails.md §2.12/§2.14: buyer/customer/organization only in their senses, actor named
 
 ## Meta variants
 

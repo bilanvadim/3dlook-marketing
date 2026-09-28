@@ -7,7 +7,7 @@ Subject
 	Condition
 	Exception to the rule / Example
 	Abbreviation
-	Use the full version and, immediately after, provide the abbreviation in the brackets 
+	Use the full version and, immediately after, provide the abbreviation in brackets 
 	The concept to be abbreviated is mentioned for the first time in the text
 	Commonly known concepts, such as AI, WWW, iOS, etc. Treat BMI, CEO, UK, US, EU as commonly known abbreviations
 	Internal linking and third-party linking
@@ -152,3 +152,9 @@ Standalone IEEE logos in award, certification, validation or recognition strips
 	Using body metrics and body measurements interchangeably; describing BMI, body composition, or basal metabolic rate as body measurements; replacing the approved “80+ body measurements” claim with “80+ body metrics.” 
 	The terms represent different levels of classification. Conflating them obscures which outputs are anthropometric dimensions and which are calculated or estimated values. 
 	Use the precise category: body measurements, calculated metrics, body composition estimates, or the umbrella term body metrics when referring to multiple output types.
+	Organization
+	All corporate content
+	Use when the entity type is unknown, mixed, or broader than a commercial company, including contexts that may involve companies, healthcare providers, clinics, employers, universities, nonprofits, or public institutions. It can also be appropriate when discussing institution-level governance, policy, or legal responsibility.
+	Avoid when organization merely replaces company or customer in product, implementation, sales, or operational copy and makes the relationship sound unnecessarily formal or detached. Avoid it when the specific actor is known or can be named directly.
+	The term can be useful as an inclusive umbrella, but repeated generic use makes the copy abstract and obscures who performs an action or holds responsibility.
+	Use the most specific applicable actor: company for a commercial business or prospect; customer when an established contractual relationship matters; or provider, clinic, pharmacy, employer, program, operator, care team, research sponsor, or public institution when that role is known.

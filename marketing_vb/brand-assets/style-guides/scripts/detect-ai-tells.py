@@ -37,6 +37,10 @@ What is different from upstream:
     Internal content-cluster labels (§1.10) are SOFT (`cluster_labels`) because the Doc keeps a
     term with an industry meaning or a visible site feature. Buyer / customer (§2.12) has no
     pattern: whether a sentence is about procurement or merely labels the audience is judgment.
+  * Synced again on 2026-09-28: the Doc added §2.14 "Organization" (umbrella only, name the
+    actor when it is known). No pattern and no category, for the same reason as §2.12: the word
+    is correct for a mixed or unknown entity type and for institution-level responsibility, and
+    only the editor can tell whether the actor was knowable.
 
 Usage:
     python3 detect-ai-tells.py path/to/draft.md --channel article --pretty

@@ -4,9 +4,10 @@
 > (internal title: *Terminology & Language Guardrails*), owner **Asselya** (`asselya@3dlook.me`).
 > Doc ID `1dPNXQL62t_y82MFJblBidEvRgwXjJxzADdapB7Pa214` ·
 > [open](https://docs.google.com/document/d/1dPNXQL62t_y82MFJblBidEvRgwXjJxzADdapB7Pa214/edit) ·
-> doc last modified **after 2026-08-13** (the export exposes no date; the change was first seen on
-> 2026-09-14) · synced into the repo **2026-09-14** · previous sync 2026-08-25, against the
-> 2026-08-13 version.
+> doc last modified **after 2026-09-14** (the export exposes no date; the change was first seen on
+> 2026-09-28) · synced into the repo **2026-09-28** · previous syncs 2026-09-14 and 2026-08-25.
+> The 2026-09-28 diff added one Part 2 row, **§2.14 "Organization"**, and reworded §1 ("in the
+> brackets" → "in brackets"), which does not change the rule.
 >
 > **Raw export:** `terminology-guardrails.source.txt` next to this file is the Doc's plain-text
 > export (`/export?format=txt`), byte for byte, as of the last sync. It is not a guard and no agent
@@ -38,6 +39,7 @@ than silently deleted, because published content was written under the old rule.
 | `editorial-guardrails.md` **M1** (2026-07-07): expand *every* abbreviation at first use, *including* BMI | **Amended 2026-08-25** | BMI, CEO, UK, US, EU now count as commonly known and are **not** expanded. M1 stands for everything else, including the cited regulators (FDA, ICH, GCP). |
 | `editorial-guardrails.md` **#6** (2026-06-09): medical framing is *"not positioned as a medical device"* | **Superseded 2026-08-13, restored 2026-09-02, superseded again 2026-09-11, confirmed by the Doc 2026-09-14** | The medical-device boundary sentence is **"FitXpress is not a medical device."** — see the notes directly below. "Positioned as" is banned by §2.10 for every product, intended-use and regulatory statement, the medical-device sentence included. |
 | `about-me.md` **"Buyer framing"** (2026-07-06): *prefer "enterprise teams," "buyers," "insurers," "programs," "care teams"* | **Amended 2026-09-14** | §2.12: **buyer** only when the sentence is about procurement, buying criteria or vendor evaluation; **customer** only for an established contract, deployment responsibility or legal role. Otherwise name the actor. |
+| This file's own §2.12 "Use instead" list (2026-09-14), which led with **organization** as the default replacement for buyer / customer | **Amended 2026-09-28** | §2.14: **organization** only when the entity type is unknown, mixed or broader than a commercial company, or for institution-level governance, policy or legal responsibility. When the actor is known, name it; **company** is back for a commercial business or prospect. |
 | `proof-points.md` and `overview.md` IEEE rows: *"Winner, Retail Digital Transformation Grand Challenge"*, *"Member of Mobile Body Scanning Standards"* | **Corrected 2026-09-14** | §2.11: IEEE appears only in the Doc's two approved sentences, verbatim. |
 
 Articles already published with `Body Mass Index (BMI)` on first use or with *"not positioned as a
@@ -329,6 +331,11 @@ where the word is allowed.
 | **Reason** | These terms can expose the marketing framework instead of describing the operational reality. "Customer" can also imply that the organization has already selected 3DLOOK. |
 | **Use instead** | Name the actual actor or context: **organization, program, provider, clinic, employer, operator, procurement team, decision-maker, person being screened** |
 
+- **Amended by §2.14 (synced 2026-09-28):** "organization" in the list above is the fallback for an
+  unknown or mixed entity type, not the default swap for "customer". When the actor is known, use
+  the specific one (clinic, pharmacy, employer, program, provider, research sponsor), or
+  **company** for a commercial business.
+
 - The canonical GDPR sentence (CLAUDE.md §12) stays valid, because "customer" there names a legal
   role: *"In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts
   as the data processor under GDPR."* (Project note: the live trust FAQ's wording since 2026-09-18,
@@ -353,6 +360,25 @@ where the word is allowed.
   metrics, with a typical absolute error of 1.5-2.0 cm per measurement"*. An error in centimetres
   describes body measurements, so under §2.13 "across body metrics" is arguably the wrong category.
   That sentence is verbatim from the live framework article and is not changed from here.
+
+### 2.14 "Organization" — umbrella only, name the actor when it is known *(new, synced 2026-09-28)*
+
+| | |
+|---|---|
+| **Condition** | All corporate content |
+| **Apply** | When the entity type is unknown, mixed, or broader than a commercial company, for example a sentence that may cover companies, healthcare providers, clinics, employers, universities, nonprofits or public institutions. Also appropriate for institution-level governance, policy or legal responsibility. |
+| **Avoid** | When "organization" merely replaces "company" or "customer" in product, implementation, sales or operational copy and makes the relationship sound formal or detached. Avoid it whenever the specific actor is known or can be named. |
+| **Reason** | It works as an inclusive umbrella, but repeated generic use makes copy abstract and hides who performs an action or holds responsibility. |
+| **Use instead** | The most specific applicable actor: **company** for a commercial business or prospect; **customer** when an established contractual relationship matters; or **provider, clinic, pharmacy, employer, program, operator, care team, research sponsor, public institution** when that role is known. |
+
+- §2.12 and §2.14 work as a pair. Neither "customer" nor "organization" is a neutral default.
+  Ask who acts in the sentence and name them.
+- Example (project, not from the Doc). Avoid: *"The organization integrates the scan into its
+  intake flow."* on a pharmacy page. Prefer: *"The pharmacy adds the scan to its intake flow."*
+  Keep: *"Each organization decides its own photo retention policy."* in a trust FAQ that covers
+  pharmacies, employers and insurers alike.
+- Judgment only. The word is legitimate in many sentences, so the detector has no pattern for it.
+  One "organization" is fine; the same generic "organization" in every paragraph is the signal.
 
 ---
 
@@ -380,7 +406,8 @@ marked **soft** are reported by the detector as soft markers for the editor to j
 | standalone IEEE logo in an award, certification, validation or recognition strip | remove the logo; the approved sentence carries the fact | judgment |
 | "80+ body metrics"; BMI, BMR or body composition listed as body measurements | "80+ body measurements"; calculated metrics; body composition estimates | auto |
 | "body metrics" and "body measurements" swapped anywhere else | the precise category (§2.13) | judgment |
-| "buyer" / "customer" as an audience label or an assumed relationship | name the actor: organization, program, provider, clinic, employer, operator, procurement team, decision-maker, person being screened | judgment |
+| "buyer" / "customer" as an audience label or an assumed relationship | name the actor: program, provider, clinic, employer, operator, procurement team, decision-maker, person being screened; "organization" only if the type is unknown or mixed (§2.14) | judgment |
+| generic "organization" repeated where the actor is known, or swapped in for "company" / "customer" in product, sales or implementation copy | the specific actor (company, customer, provider, clinic, pharmacy, employer, program, operator, care team, research sponsor, public institution) | judgment |
 | "bridge", "hub", "pillar", "cluster", "supporting content" as a page-role label in a heading, anchor or sentence | the concrete topic, question, workflow or decision; "Content Hub" as the visible site section stays | soft |
 | corrective negation "X, not Y" | lead with the recommended approach | judgment |
 | corrective "rather than" | state the characteristic, then the limitation separately | judgment |
@@ -401,12 +428,12 @@ marked **soft** are reported by the detector as soft markers for the editor to j
 |---|---|---|
 | SEO planning | `seo-planner` | Reads this file with the strategy row. H2 titles name the topic or question, never the content-plan label (§1.10) |
 | SEO drafting | `seo-writer` | Hard bans only: em dash, banned words, "positioned as", presumed reaction, attributed behaviour, IEEE wording, "80+ body metrics". Judgment rows are the editor's. |
-| SEO editing | `seo-editor` | Pass 3c runs the detector; Pass 4 runs Part 1 and Part 2 as a checklist, including the `cluster_labels` soft markers and buyer / customer |
+| SEO editing | `seo-editor` | Pass 3c runs the detector; Pass 4 runs Part 1 and Part 2 as a checklist, including the `cluster_labels` soft markers, buyer / customer (§2.12) and organization (§2.14) |
 | SEO publish | `seo-publisher` | Terminology line in the final checklist |
 | Website pages | `page-builder` | Layer 0 detector, Layer 2 terminology, G-T gate, G-J scorecard (IEEE logo strips are a hard fail at the judge) |
 | Social posts | `post-drafter` → `post-brand-checker` → `social-editor` | Self-check at draft, Pass 2b detector per post |
 | Outbound | `message-sequencer` | `--channel dm` sweep before the CSV. The soft conversational ask in Message 1/2 is written to the outbound templates; "so" and "plus" are still replaced. |
-| Any artefact | `brand-checker` | Check 3b (M1 with the commonly-known exception), 3c (detector), 4b (medical framing stated directly), 4d (IEEE wording, output vocabulary, actor naming, content-plan labels) |
+| Any artefact | `brand-checker` | Check 3b (M1 with the commonly-known exception), 3c (detector), 4b (medical framing stated directly), 4d (IEEE wording, output vocabulary, actor naming incl. §2.14 organization, content-plan labels) |
 
 ---
 

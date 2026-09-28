@@ -194,6 +194,8 @@ principle #11. Medical, clinical or regulatory framing goes to Whitney before it
    IEEE appears only in the two approved sentences from `proof-points.md`, and never as a standalone
    logo in a recognition strip (terminology guardrail §2.11). Outputs are "80+ body measurements";
    BMI and BMR are calculated metrics and body composition is an estimate (§2.13).
+   Name the vertical's actor: "the pharmacy", "the clinic", "the employer", "the insurer". A vertical
+   page always knows who acts, so a generic "organization" is a miss here (§2.14, synced 2026-09-28).
 6. **Scope accuracy, never brag about it.** The reframe in slot 9 is mandatory. Leading with "most
    accurate" or "best-in-class" is an anti-positioning violation and a hard fail at the judge.
 7. **State the boundary once**, directly: "FitXpress is not a medical device." Do not chain a

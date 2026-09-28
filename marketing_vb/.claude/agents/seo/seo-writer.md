@@ -90,12 +90,14 @@ tools: Read, Write, Bash, WebSearch, WebFetch, Grep
   corrective «rather than», `we/our`, `you` в нейтрально-образовательной прозе, `buyer` /
   `customer` как ярлык аудитории, vendor-блог в цитате). Полный проход по ним делает
   `seo-editor`, не ты.
-- **Заголовки и акторы (`terminology-guardrails.md` §1.10, §2.12, синк 2026-09-14).** H2/H3 бери из
+- **Заголовки и акторы (`terminology-guardrails.md` §1.10, §2.12, §2.14, синк 2026-09-14 / 2026-09-28).** H2/H3 бери из
   плана, но если в нём остался ярлык контент-плана (`hub`, `cluster`, `pillar`, `bridge`,
   `supporting content`), назови тему, вопрос или решение и отметь замену в заметках для
   редактора. `buyer` — только про закупку и оценку вендора, `customer` — только про договор,
   деплой или юридическую роль; иначе называй актора (clinic, program, employer, operator,
-  procurement team, person being screened). IEEE и `80+ body measurements` уже в карточке как
+  procurement team, person being screened). Generic "organization" is not the fallback (§2.14):
+  use it only for a mixed or unknown entity type or institution-level legal responsibility; when the
+  actor is known, name it (the pharmacy, the clinic, the employer, or "company" for a business). IEEE и `80+ body measurements` уже в карточке как
   hard-категории `ieee_claims` и `body_measurement_terms`.
 - **Аббревиатуры (guardrail M1):** расшифровывай КАЖДУЮ аббревиатуру при первом употреблении — `dual-energy X-ray absorptiometry (DXA)`, `glucagon-like peptide-1 (GLP-1)`, `Food and Drug Administration (FDA)`, `International Council for Harmonisation (ICH)`. Регуляторы, которых цитируешь (FDA, ICH, GCP), тоже разворачиваются. **НЕ разворачивай общеизвестные: AI, WWW, iOS, BMI, CEO, UK, US, EU** (terminology-guardrails.md §1) — пиши просто `BMI`, не `Body Mass Index (BMI)`.
 - **Запусти линтер, не грепай по памяти. У тебя есть Bash.** Перед сдачей прогони на своём файле:

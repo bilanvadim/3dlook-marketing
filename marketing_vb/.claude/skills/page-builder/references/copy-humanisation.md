@@ -94,6 +94,7 @@ Asselya's word-level rules. Grep the page for each of these:
 | "Body Mass Index (BMI)" | "BMI" — commonly known, never expanded |
 | "IEEE-certified", "recognized / validated / backed by IEEE", "IEEE Grand Challenge", "member of IEEE standards", a standalone IEEE logo in a trust strip | the two approved sentences in `proof-points.md`, verbatim (§2.11) |
 | "80+ body metrics"; BMI, BMR or body composition called body measurements | "80+ body measurements"; BMI and BMR are calculated metrics; body composition is an estimate (§2.13) |
+| generic "organization" where the actor is known, or as a formal swap for "company" / "customer" in product, sales or implementation copy | the specific actor: company, customer, provider, clinic, pharmacy, employer, program, operator, care team, research sponsor, public institution. "Organization" only for a mixed or unknown entity type, or institution-level governance, policy or legal responsibility (§2.14) |
 | "hub", "cluster", "pillar", "bridge", "supporting content" as a page-role label in a heading, anchor or sentence | the concrete topic, question, workflow or decision; "Content Hub" as the visible site section stays (§1.10) |
 
 Five construction rules on the same page, from Part 1 of the guardrails:

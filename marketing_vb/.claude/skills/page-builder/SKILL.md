@@ -276,6 +276,9 @@ attributed to the page, scroll depth.
   BMR are calculated metrics and body composition is an estimate (§2.13). Headings name the visitor's
   question or decision, never our content-plan label such as hub, cluster or bridge (§1.10). "Buyer"
   and "customer" give way to the named actor outside procurement and contract contexts (§2.12).
+  "Organization" is not that named actor: a vertical page knows its actor, so it says the pharmacy,
+  the clinic, the employer, the insurer or the company (§2.14, synced 2026-09-28). "Organization"
+  stays only where the entity type is genuinely mixed or for institution-level legal responsibility.
 - **One page, one job.** A page serving two intents serves neither.
 - **A price signal belongs on the page.** `/pricing/` is public with real tiers: link to it and name
   the entry tier. Never publish the internal per-request rates from `pricing.md` — they contradict
