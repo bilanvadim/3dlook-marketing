@@ -89,19 +89,9 @@
 
 ## 5. Профили в социальных сетях
 
-**Детальная per-profile config: `brand-assets/social-profiles-config.md`** — posts_per_week, product_bias, tone, content_types, length, hashtags.
+**Per-profile config:** `brand-assets/social-profiles-config.md` (posts_per_week, product_bias, tone, content_types, length). **LinkedIn-промпты:** мастер `brand-assets/linkedin-post-prompts.md` (офлайн-копия Google Doc Вадима) и сгенерированные из него `brand-assets/linkedin-prompts/{profile}.md` (`scripts/split-linkedin-prompts.py`, правится мастер); `post-drafter` читает файл своего профиля. Что побеждает при конфликте и полные правила пяти личных профилей — **`docs/social-profiles.md`** (читать, когда меняешь правила профилей или разбираешь спорный пост).
 
-**`post-drafter` читает не весь этот файл, а свой профиль.**
-`scripts/split-linkedin-prompts.py` разрезает мастер на
-`brand-assets/linkedin-prompts/{profile}.md` (общие правила + секция профиля: ~4,9 КБ у
-company, ~8 КБ у пяти личных вместо 17,6 КБ мастера). Эти шесть файлов **генерируются** —
-правится мастер, потом скрипт; `--check` падает с exit 1 при расхождении. Мастер остаётся
-источником правды. Секцию `Rules for the five personal profiles` скрипт кладёт **только**
-пяти личным профилям — company-страница её не получает.
-
-**Для 6 LinkedIn-профилей источник правды по промпту — `brand-assets/linkedin-post-prompts.md`** (офлайн-копия [Google Doc Вадима](https://docs.google.com/document/d/19KKWLtJv4Jx_hKbgxy0TCWnLXgnHe0-gxGuDj9vA2WQ/edit), синк 2026-08-07): аудитория, рынок, фокус-лист, тон, структура, word count и закрытие для каждого профиля. `post-drafter` обязан прочитать нужную секцию перед написанием любого `linkedin-*` поста. При конфликте с `social-profiles-config.md` выигрывает этот файл — кроме трёх house rules, которые выигрывают всегда: **хештегов нет ни на одном профиле**, **1-2 эмодзи максимум** и **100-170 слов на пяти личных профилях**. Twitter / Instagram / Facebook документ не затрагивает.
-
-**Пять личных LinkedIn-профилей (Katerina · Katya · Nick · Olena · Vadim) с 2026-09-04 имеют свою секцию правил** в том же файле — `Rules for the five personal profiles`, решение Вадима: **100-170 слов, 170 — жёсткий потолок** (было 180-250), короткие предложения (ничего длиннее 30 слов), **локация не объявляется** — ни «Here in Australia…», ни «For US teams…» в первом предложении, ни строки о том, с кем автор говорит каждый день; пост учит одной конкретной вещи, а хук — утверждение, не вопрос. Рынок профиля — это **для кого** пост, а не про что. Механическую половину гейтит `scripts/post-lint.py` (потолок слов, длина предложений, геомаркер в первом предложении, клише «I speak with …»), судейскую — `post-brand-checker` пункты 14-15 (шкала для личных профилей — 15, PASS при 14+). `linkedin-company` этих правил **не** получает: у него свои 180-280 слов и корпоративный регистр.
+**House rules, действуют всегда:** хештегов нет ни на одном профиле · 1-2 эмодзи максимум · пять личных LinkedIn-профилей (Katerina · Katya · Nick · Olena · Vadim) — 100-170 слов, 170 жёсткий потолок, ничего длиннее 30 слов в предложении, локация не объявляется, хук — утверждение, не вопрос · `linkedin-company` — 180-280 слов и корпоративный регистр. Рынок профиля — это **для кого** пост, а не про что. Механику гейтит `scripts/post-lint.py`, судейскую часть — `post-brand-checker`.
 
 **Активные профили (9 штук):**
 
@@ -138,12 +128,7 @@ company, ~8 КБ у пяти личных вместо 17,6 КБ мастера)
 
 ## 6. Tone of Voice
 
-> **Канонические источники голоса и аудитории (читать перед любой задачей на письмо):**
-> - `about-me.md` (корень репо) — brand voice FitXpress: voice fingerprint, register, claims discipline (hard rules), accuracy/repeatability framing, слова которые USE / NEVER use, структура статьи, CTA discipline. Это источник правды по тому, *как* писать health-контент.
-> - `audience.md` (корень репо) — *для кого* пишем: shared spine + 7 health-сегментов (who · core pain · hook · «what NOT to say»).
-> - **`brand-assets/content-strategy/terminology-guardrails.md`** — *какими словами* писать: General Approach & Language Guardrails, офлайн-копия [Doc Ассель](https://docs.google.com/document/d/1dPNXQL62t_y82MFJblBidEvRgwXjJxzADdapB7Pa214/edit) (doc changed after 2026-09-14, synced 2026-09-28; previous sync 2026-09-14; сырой экспорт для следующего диффа — `terminology-guardrails.source.txt` рядом). Part 1 — десять правил построения фразы, Part 2 — fourteen word rules (§2.14 "Organization" added 2026-09-28), Part 3 — grep-таблица. Действует на ВЕСЬ корпоративный контент: статьи, страницы сайта, посты, outbound, whitepaper, деки. Канальных исключений нет.
->
-> Секция 6 ниже — краткое операционное резюме. При конфликте `about-me.md` имеет приоритет по голосу и claims discipline; `terminology-guardrails.md` — по **выбору слов и построению фразы** (он новее и принадлежит редакционному владельцу: две правки переопределили `editorial-guardrails.md`, синк 2026-09-14 поправил строку «Buyer framing» в `about-me.md` и IEEE-строки фактуры — см. блоки ниже). Фактура (числа, кейсы) — всегда из `brand-assets/product-info/`, а не из этих файлов.
+> **Канонические источники (читать перед любой задачей на письмо):** `about-me.md` (корень репо) — голос и claims discipline FitXpress; `audience.md` — для кого пишем: 7 health-сегментов, hook и «what NOT to say»; **`brand-assets/content-strategy/terminology-guardrails.md`** — выбор слов и построение фразы, офлайн-копия Doc Ассель (synced 2026-09-28), действует на ВЕСЬ корпоративный контент, канальных исключений нет. При конфликте: `about-me.md` выигрывает по голосу и claims discipline, `terminology-guardrails.md` — по словам и построению фразы, фактура (числа, кейсы) всегда из `brand-assets/product-info/`. **История синков и переопределений правил — `docs/language-guardrails.md`.**
 
 **Что мы:**
 - Экспертные, опираемся на данные (96-97% accuracy, ±3.5%, 45 sec, 80+ measurements) — формулировки точности дословно из `brand-assets/product-info/accuracy-formulations.md`, не пересобранные из чисел
@@ -166,14 +151,7 @@ company, ~8 КБ у пяти личных вместо 17,6 КБ мастера)
 - «It's no secret that…»
 - «AI-powered» как самостоятельная ценность (нужно дополнять чем именно)
 
-> **Полный каталог AI-tells: `brand-assets/style-guides/ai-tells-sweep.md`** (добавлен 2026-08-23).
-> Список ниже — быстрый путь, hard fails, которые агент держит в голове на этапе письма. Каталог —
-> все 27 категорий, канальные профили (article / post / dm / page), positive checks и обязательная
-> самопроверка «что здесь всё ещё читается как машинный текст?». Плюс детектор
-> `brand-assets/style-guides/scripts/detect-ai-tells.py` — щёлкает механические попадания и даёт
-> численную оценку. Полный проход делают редакторы (`seo-editor` Pass 3c, `social-editor` Pass 2b,
-> `message-sequencer`, `page-builder` Layer 0), не писатели: писать и вычищать одновременно — значит
-> делать плохо и то, и другое.
+> **Полный каталог AI-tells:** `brand-assets/style-guides/ai-tells-sweep.md` (27 категорий, канальные профили article / post / dm / page) и детектор `brand-assets/style-guides/scripts/detect-ai-tells.py`. Полный проход делают редакторы и гейты, не писатели: писать и вычищать одновременно значит делать плохо и то, и другое. Список ниже — hard fails, которые держишь в голове при письме.
 
 **Запрещённые AI-сигнатуры (важно для SEO + outbound + posts):**
 - Em-dash (—) в риторических конструкциях типа «X — это не просто Y»
@@ -182,14 +160,7 @@ company, ~8 КБ у пяти личных вместо 17,6 КБ мастера)
 - Слова: leverage, utilize, harness, robust, seamless, comprehensive, delve, navigate (в перен. смысле), tapestry, realm
 - «Furthermore / Moreover / Additionally» в начале предложений (минимизировать)
 
-> **Операционный источник для агента — сгенерированная карточка, не эта таблица.**
-> `brand-assets/style-guides/hard-bans-card.md` (~5,8 КБ, 14 категорий; с 2026-09-18 — `compliance_status` из trust-FAQ) рендерится скриптом
-> `scripts/bans-card.py` прямо из паттернов `detect-ai-tells.py`, поэтому разойтись с тем,
-> что реально гейтится, она не может. Таблица ниже — читаемое резюме для человека, и она
-> может отстать: аудит 2026-09-02 нашёл эти правила в четырёх местах при одном исполнителе,
-> и когда Вадим 2026-09-02 откатил правило про medical device, править пришлось пятнадцать
-> файлов. Гейт — `python3 scripts/article_lint.py <файл>`; `scripts/bans-card.py --check`
-> падает с exit 1, если карточка отстала от детектора.
+> **Операционный источник для агента — сгенерированная карточка** `brand-assets/style-guides/hard-bans-card.md` (`scripts/bans-card.py` рендерит её из паттернов детектора, `--check` падает с exit 1 при расхождении). Таблица ниже — резюме для человека и может отстать. Гейты: `scripts/article_lint.py`, `scripts/post-lint.py`, `scripts/outbound_pack.py check-messages`.
 
 **Language guardrails — hard bans (`terminology-guardrails.md`, Doc Ассель, синк 2026-09-14):**
 
@@ -212,17 +183,7 @@ company, ~8 КБ у пяти личных вместо 17,6 КБ мастера)
 
 Судейские (не механические): `we / our` — только когда речь о claim of ownership; `you` — на лендингах и в практических блоках, не в нейтрально-образовательных; **`buyer`** — только про закупку, критерии выбора, оценку вендора, **`customer`** — только про действующий договор, ответственность за деплой или юридическую роль (GDPR controller), иначе называй актора: program, provider, clinic, employer, operator, procurement team, decision-maker, person being screened; **`organization`** (§2.14, synced 2026-09-28) — only as an umbrella when the entity type is unknown, mixed or broader than a commercial company, or for institution-level governance, policy or legal responsibility; never as a detached swap for "company" or "customer" in product, sales or implementation copy, and never when the actor is known (use company, customer, provider, clinic, pharmacy, employer, program, operator, care team, research sponsor, public institution); **ярлыки контент-плана** (bridge, hub, pillar, cluster, supporting content) не идут в заголовки, анкоры и текст — называй тему, вопрос или решение (исключение: устоявшийся отраслевой термин или видимая фича сайта, например Content Hub; детектор отдаёт их soft-категорией `cluster_labels`).
 
-**Две правки переопределили `editorial-guardrails.md` (2026-08-25):**
-1. **Аббревиатуры.** BMI, CEO, UK, US, EU теперь общеизвестные и **не разворачиваются** (`Body Mass Index (BMI)` → `BMI`). M1 в остальном в силе, включая цитируемых регуляторов (FDA, ICH, GCP).
-2. **Medical framing — правило в четвёртом состоянии.** Было «not positioned as a medical device» (2026-06-09) → стало «FitXpress is not a medical device» (2026-08-13) → восстановлено «It is not positioned as a medical device.» (2026-09-02, Review 1) → **«FitXpress is not a medical device.» (2026-09-11, решение Вадима по финалу редактора)**. «Positioned as» — hard ban для любого утверждения о продукте (scope, замена, эквивалентность, intended use), medical device включительно. Intended use: «FitXpress does not diagnose conditions, make clinical decisions, or determine treatment eligibility». Опубликованное до 2026-08-25 не переписываем.
-
-**Синк 2026-09-14 (Doc изменён после 2026-08-13): четыре новых правила, два переопределения.**
-3. **`about-me.md` «Buyer framing».** Строка предписывала «buyers» как рамку по умолчанию. Doc §2.12: `buyer` только в контексте закупки и оценки вендора, `customer` только для договорной, деплойной или юридической роли, иначе конкретный актор. Строка исправлена с датой.
-4. **IEEE в фактуре.** `proof-points.md` и `overview.md` писали «Winner, Retail Digital Transformation Grand Challenge» и «Member of Mobile Body Scanning Standards», ровно формулировки, которые Doc §2.11 запрещает (у IEEE претензия к некорректным claims 3DLOOK). Заменены двумя утверждёнными фразами. Опубликованный пост `3dlook-is-a-member-of-the-mobile-body-scanning-standards-developed-by-ieee/` не переписываем, он помечен в `published-articles-inventory.md`, решение по живой странице за Вадимом.
-Новые правила без переопределений: ярлыки контент-плана (§1.10) и body metrics / body measurements (§2.13). Medical framing Doc теперь формулирует сам парой «Avoid: FitXpress is not positioned as a medical device. / Prefer: FitXpress is not a medical device.», то есть решение 2026-09-11 совпадает с источником.
-
-**Sync 2026-09-28 (Doc changed after 2026-09-14): one new rule, one amendment.**
-5. **§2.14 "Organization".** Use it only as an umbrella when the entity type is unknown, mixed or broader than a commercial company, or for institution-level governance, policy or legal responsibility. When the actor is known, name it; **company** is the right word for a commercial business or prospect. This amends the 2026-09-14 reading of §2.12, whose fallback list led with "organization": it is no longer the default replacement for "customer". Judgment only, no detector pattern. Nothing published is retro-edited.
+**Medical framing — короткая форма: «FitXpress is not a medical device.»** (решение Вадима 2026-09-11, четвёртое состояние правила; «positioned as» — hard ban для любого утверждения о продукте). **Аббревиатуры** BMI, CEO, UK, US, EU не разворачиваются. Опубликованное до смены правила не переписываем. Даты, прежние формулировки и что именно переопределил каждый синк — `docs/language-guardrails.md`.
 
 ---
 
@@ -271,55 +232,13 @@ company, ~8 КБ у пяти личных вместо 17,6 КБ мастера)
 | SEO | пайплайн `seo/*` | Keywords → ... → Publish → trigger social |
 | Brand guardian | `brand-checker` (shared) | Проверка тона / no-go / AI-сигнатур |
 
-**Social workflow (основной режим — БАТЧ, решение Вадима 2026-09-20):** SEO-статья
-готова → `mvb-run.py posts {slug} --batch` → ОДНА conductor-job `/post-batch {slug}` →
-`social_pack.py batch-prompt --write` (только недостающие профили) → один `post-drafter`
-(opus) пишет весь пак за заход → `post-lint.py` с гейтом ПО НАПИСАННЫМ профилям
-(не `--all --gate`: ретро-правила валят shipped-посты — урок job #160) → `post-brand-checker` и
-`post-quality-controller` по выборке qc-plan → manifest / digest / report скриптом →
-Telegram апрув Вадима → дизайнер делает визуалы по `### Design tip` из дайджеста
-(шага `visual-brief` больше нет, 2026-09-20). Основание: A/B по протоколу ниже
-(bariatric-hub-refresh, коммит 1f2aea5) — батч 18.78/20 против 18.00 у fan-out при
-полном слепом QC, линт 9/9 с первого прохода, ~$9-10 за пак против измеренных $25.
-**Fan-out (`mvb-run.py posts {slug}` без флага) остаётся** для точечных пересборов:
-он ставит job'ы только на профили без post.md. `/post-from-article {slug}` —
-интерактивный fallback. Квартальный план для соцсетей не используется.
+**Social, основной режим — БАТЧ** (решение Вадима 2026-09-20): `mvb-run.py posts {slug} --batch` → одна job `/post-batch` → один `post-drafter` (opus) пишет весь пак → `post-lint.py` с гейтом по НАПИСАННЫМ профилям → `post-brand-checker` и `post-quality-controller` по выборке → manifest / digest / report скриптом → апрув Вадима в Telegram → дизайнер по `### Design tip`. Fan-out (`posts {slug}` без флага) — для точечных пересборов: job'ы только на профили без post.md. `/post-from-article` — интерактивный fallback. Квартальный план для соцсетей не используется.
 
-**Гейт «нет артефакта — нет done»:** Stop-hook `.claude/hooks/posts-artifact-gate.py`
-не даёт сессии `/post-one-profile` и `/post-batch` завершиться, пока обещанные
-post.md не на диске (класс job'ов #136/#158 от 2026-09-20: «жду драфтера» → done без
-поста). Блокирует максимум дважды за сессию; дальше дыру закрывает re-run фильтр
-`posts <slug>`.
+**Механика — скриптами, не агентами:** `scripts/social_pack.py`, `scripts/post-lint.py`, `scripts/article_package.py`, `scripts/outbound_pack.py`. Агенты пишут и судят; разрешение источника, сборка промптов, длины, числа, манифесты и импорты — код. Stop-hook `.claude/hooks/posts-artifact-gate.py` не даёт social-сессии завершиться без обещанных post.md.
 
-`/post-from-article {slug}` делает то же в **одной** сессии и оставлен как fallback для
-интерактивного прогона: замер 2026-08-28 показал, что координация в одной толстой сессии —
-59% стоимости пака (25,5M токенов из 42,9M). Подробности и цифры — в шапках обоих файлов
-команд.
+**Модели:** координаторы job'ов — sonnet (`model:` во frontmatter команды), пишущие стадии (`post-drafter`, `seo-writer`, `seo-editor`) — opus и меняются только по A/B (`docs/model-ab-protocol.md`), чекеры — sonnet, механика — код.
 
-**Механика — скриптами, не агентами.** `scripts/social_pack.py` (source · brief · prompt ·
-qc-prompt · qc-plan · manifest · digest · report · scores) и `scripts/post-lint.py`.
-Агенты пишут и судят; разрешение источника, сборка промптов, длины, числа, манифест и
-дайджест — код. Промпт для `post-drafter` берётся **дословно** из
-`social_pack.py prompt`: его первая секция байт-в-байт одинакова для всех девяти профилей,
-и на этом держится общий кеш промпта (`subagentPromptCacheTtl: "1h"` в
-`.claude/settings.json` — дефолт для сабагентов 5 минут, а профили идут с интервалом 4-6).
-
-**Social workspace:** `workspace/social/articles/{slug}/{profile}/post.md`
-`_run-brief.md` в той же папке генерируется (`social_pack.py brief`); руками правится
-только секция между `HUMAN:START` / `HUMAN:END` — claims discipline и реальные визуалы
-статьи.
-
-### Модель по стадиям social-пайплайна
-
-| Стадия | Модель | Почему |
-|---|---|---|
-| координатор job'а (`/post-batch`, `/post-one-profile`) | sonnet | `model:` во frontmatter команды; чистый диспетчер, текста не пишет (замер 2026-09-20: opus-координаторы были 82% стоимости пака) |
-| `post-drafter` | **opus** | Единственная стадия, где пишется текст. Меняется только через A/B ниже |
-| `post-brand-checker` | sonnet | Чек-лист по готовому тексту |
-| `post-quality-controller` | sonnet | Вход компактный, механика уже проверена линтером |
-| lint / manifest / digest / report | код | Токенов не тратит |
-
-**Модель пишущей стадии меняется только по данным** — полный протокол A/B (5 шагов, решение принимает Вадим по дайджесту, не по среднему баллу) вынесен в `docs/model-ab-protocol.md` (2026-09-21). Это касается post-drafter, seo-writer и seo-editor одинаково: единственный рычаг, способный испортить текст.
+**Social workspace:** `workspace/social/articles/{slug}/{profile}/post.md`. Замеры, обоснования и таблица моделей по стадиям — **`docs/social-workflow.md`**.
 
 ---
 
@@ -400,113 +319,48 @@ qc-prompt · qc-plan · manifest · digest · report · scores) и `scripts/post
 
 ## 14. Quality Control loop
 
-Система имеет независимый QC механизм (см. `docs/quality-rubric.md` и `workspace/_quality/README.md`):
+Независимый QC (рубрика — `docs/quality-rubric.md`, отчёты — `workspace/_quality/`):
 
-- **`quality-controller`** оценивает артефакты по 20-балльной шкале
-- **Я (координатор)** добавляю короткий coordinator_review в каждый QC отчёт
-- **`agent-improver`** анализирует QC + coordinator notes, предлагает правки промптов
+- **`quality-controller`** (mvb-core, opus) оценивает артефакты по 20-балльной шкале: статьи, брифы, outbound.
+- **`post-quality-controller`** (mvb-social, sonnet) — соцпосты; вход готовым от `scripts/social_pack.py qc-prompt`; выборка 3 из 9 профилей (`qc-plan`) плюс безусловно каждый профиль, где упал линтер.
+- **Координатор** после каждого авто-QC дописывает в отчёт `coordinator_review`.
+- **`agent-improver`** анализирует QC + coordinator notes и предлагает правки промптов: каждые 2 недели или после 20+ артефактов.
 
 ### Auto-QC флаг
 
 `AUTO_QC_ENABLED = true` (default)
 
-Когда `true`, runners автоматически запускают quality-controller после следующих артефактов:
-- `hypothesis-generator` (outbound шаг 1)
-- `icp-validator` (outbound шаг 4)
-- `message-sequencer` (outbound шаг 5)
-- `post-drafter` (social) — **выборочно, см. ниже**
-- `seo-outline-builder` (SEO шаг 3)
-- `seo-section-writer` (по каждой секции)
-- `seo-meta-generator` (SEO шаг 8)
-- Финальный `draft-v3-final.md` после ai-rewrite
+Когда `true`, QC запускается после: `hypothesis-generator`, `icp-validator`, `message-sequencer` (outbound) · `post-drafter` (выборочно) · outline, секции, meta и финальный драфт статьи (SEO). Не запускается после механических шагов: people-extractor, importer, линтеры, сборка пакетов.
 
-QC НЕ запускается после механических шагов: people-extractor, citation-deduper, readability-editor (они не несут creative качества).
-
-### Social: другой агент и выборка 3 из 9 (2026-09-01)
-
-**Агент.** Соцпосты инспектирует `post-quality-controller` (mvb-social, sonnet), а не
-`quality-controller` (mvb-core, opus). Вход ему приходит готовым от
-`scripts/social_pack.py qc-prompt` — тело поста, полный JSON `scripts/post-lint.py`, бриф
-профиля, уже занятые в паке углы. Он читает только `docs/quality-rubric.md` и не ходит по
-файлам. Категории **B (факты) и D (формат) уже проверены механически** — он берёт вывод
-линтера как факт и оценивает A, C, E, то есть соответствие брифу профиля, тон и наличие
-позиции в тексте.
-
-**Выборка.** `scripts/social_pack.py qc-plan <slug>` выбирает три профиля из девяти:
-первый профиль пака (он задаёт карту углов, и плохой угол там расходится по остальным),
-плюс наименее давно инспектированный компанийский аккаунт и наименее давно
-инспектированный личный (по датам отчётов в `workspace/_quality/social`). Сверх выборки QC
-запускается **безусловно** на любом профиле, у которого упал линтер.
-
-**Почему.** Замер пака `glp-1-market-hub` (2026-08-28, 9 постов): девять прогонов
-`quality-controller` на Opus дали 7,1M токенов контекста, 112 turns и ~$36 — столько же,
-сколько всё написание постов, — и выдали девять отчётов по 16-19/20. Три дефекта, которые
-он действительно нашёл, теперь ловит линтер бесплатно: «under a minute» против джерельных
-«Under 45 seconds» (`number_drift`), `article_slug` с именем рабочей папки вместо
-опубликованного слага, и поля design tip. Смысл QC по этой секции — кормить
-`agent-improver`, а не пропускать каждый артефакт; **гейт на паке — апрув Вадимом
-дайджеста**, и он не изменился. Выборка по «наименее давно проверялся» даёт improver-у
-покрытие по всем профилям со временем: хеш-выборка оставляла `linkedin-nick` непроверенным
-во всех девяти паках на диске, пока `linkedin-vadim` попадался четыре раза.
-
-### Coordinator review требование
-
-После каждого автоматического QC я в чате добавляю одну строку в поле `coordinator_review` отчёта:
+### Coordinator review
 
 ```
 agreement: ✅ agree | ⚠️ disagree (1 line why)
 top_issue: [1 sentence] | none
 ```
 
-Это короткое — критичный сигнал для improver-а, который видит мою perspective + QC одновременно.
-
-### Когда запускать improver
-
-Каждые 2 недели или после 20+ артефактов прошедших QC.
+Замеры, почему выборка, и что QC по соцпостам проверяет, а что берёт от линтера — **`docs/qc-loop.md`**.
 
 ---
 
 ## 15. Blog Authoring Standards
 
-> Note: numbered as section 15 because existing section 11 is "Метрики". Vadim asked for this to be "section 11" — flagged in the 2026-05-22 report. Renumbering all sections is risky; this section is appended at the end to avoid breaking external references.
+**Default blog author:** Assel Sekerova (`brand-assets/team/assel-sekerova.md`). **Style guide:** `brand-assets/style-guides/blog-style-guide.md`. Полный текст требований с обоснованиями — **`docs/blog-authoring.md`**. SEO-агенты несут свои списки чтения в собственных промптах; этот раздел — политика, по которой те списки составлены, и его правят вместе с ними.
 
-**Default blog author:** Assel Sekerova — see `brand-assets/team/assel-sekerova.md`.
+### Hard requirements for new SEO / blog articles (выжимка)
 
-**Style guide:** `brand-assets/style-guides/blog-style-guide.md` — built from analysis of 9 production articles in `brand-assets/past-articles/blog/`.
+0. **`about-me.md` и `audience.md` первыми**: голос, claims discipline, сегмент и его «what NOT to say».
+1. **`blog-style-guide.md` целиком, затем `editorial-rewrites.md`.** Длина предложения — gate 10 `article_lint.py` (среднее ≤ 16 слов, ≤ 6% предложений длиннее 25, максимум одно длиннее 35). Исключение для `seo-planner` (прозу не пишет): `about-me.md` + `hard-bans-card.md` + §7 `editorial-rewrites.md`.
+2. **2-3 past-articles под вертикаль** из `brand-assets/past-articles/blog/`. Любая FitXpress comparison / workflow статья → сначала `manual-vs-digital-intake-occupational-health-screening.md` (финал редактора, эталон длины предложения). Trust / privacy FAQ (Type G) → `fitxpress-data-privacy-security-regulatory-faq.md`. Полный список по вертикалям — в `docs/blog-authoring.md`.
+3. **Автор по умолчанию — Assel Sekerova**, если бриф не говорит иначе.
+4. **Тон 2026** (measured, hedged, stats-first, workflow-framed), не индустриальный тон статей 2024 года.
+5. **`editorial-guardrails.md`, 11 принципов, от начала до конца.** Жёстче всего: #1 substantiation, #2 одно число везде одинаково, #3 reserved words без доказательства нельзя, #4 никаких голых «>X%», #6 medical framing («FitXpress is not a medical device.»). Отступление выносится в Open Items, молча не правится.
+6. **Phase 0: тема сверяется с `brand-assets/content-strategy/content-plan.md` ДО всего остального** (FitXpress health). Дальше идёт только безусловный `create net-new` или `publish planned hub`; условный create → вопрос Вадиму; `published`, `refresh/expand`, `merge`, `review/decide` и прочие → рекомендация и STOP. Темы без строки в плане → STOP и вопрос. Перед тем как верить приоритету, проверь дату `Last synced from source:`; таблица выигрывает по приоритету и action type, репо — по тому, что опубликовано.
+7. **`terminology-guardrails.md` отдельным проходом.** Писатель держит в голове hard bans, полный проход делает редактор (`seo-editor` Pass 4 + Pass 3c, `social-editor` Pass 2b, `page-builder` Layer 2).
 
-### Hard requirements for new SEO / blog articles
+**Founder voice:** статьи за подписью Katerina Galich (CEO) — только thought leadership, личные эксперименты, стратегический комментарий, рефлексии после конференций. Бриф неоднозначен → спроси Вадима.
 
-`seo-planner` and `seo-writer` MUST, before planning or writing:
-
-0. **Read `about-me.md` and `audience.md` (repo root) first.** `about-me.md` governs voice and claims discipline (the reframe move, "accurate enough for which decision?", the two-benchmarks rule, repeatability written as `< 1 cm`, the standard 12-part article structure, CTA-by-funnel-stage). `audience.md` fixes the target segment and its hook + "what NOT to say" before a single line is written. These override generic product tone. On any conflict with the summary in section 6, these files win on voice/audience; facts still come from `brand-assets/product-info/`.
-1. **Read `brand-assets/style-guides/blog-style-guide.md` in full** — the voice, structural templates (Article Types A–F), banned patterns, and per-vertical vocabulary are not optional. **Then read `brand-assets/style-guides/editorial-rewrites.md`** (2026-09-11): what the editor changes in our drafts, as before/after pairs from a shipped final. **Planner exception (2026-09-21, токен-диета):** `seo-planner` прозу не пишет — ему вместо этих двух полных файлов достаточно `about-me.md` + `hard-bans-card.md` (generated, один экран) + §7 из `editorial-rewrites.md` для comparison/workflow-структуры; полное чтение обоих файлов остаётся обязательным для `seo-writer` и `seo-editor` — они и есть enforcement. It covers sentence length, repetition, sentences about the page, aphorisms, and the comparison-article format. Sentence length is gated by `article_lint.py` gate 10 (mean ≤ 16 words, ≤ 6% of sentences over 25, at most one over 35). Our revision 5 of that article passed every other gate with a CLEAN detector score and still came back as "long sentences, repetition, reads as obviously AI". Where that file and an older structure rule disagree, that file wins, because it records what the editor actually shipped.
-2. **Read 2–3 relevant past-articles from `brand-assets/past-articles/blog/`** that match the target vertical:
-   - **Any FitXpress comparison or workflow article → read `manual-vs-digital-intake-occupational-health-screening.md` first.** It is the editor's final (2026-09-11), live almost verbatim since 2026-09-21, and the current reference for sentence length, format and privacy wording. The articles listed below predate the short-sentence standard: take structure and vocabulary from them, not sentence shape.
-   - FitXpress topics → read at least one of: `mobile-body-scanning-insurance-underwriting.md`, `wellness-rewards-verification-employers-insurers-using-ai-3d-body-scanning.md`, `3dlook-turns-two-photos-structured-body-data.md`
-   - Clinical trials / CRO-pharma / heavily-regulated FitXpress verticals → read `clinical-trials-anthropometric-measurement.md` (the finalized clinical-trials use-case article — best model for compliance-scoping, "operational not clinical" framing, and the scope-note/FAQ structure; see its `known_issues` frontmatter for the M1/M2 slips NOT to replicate)
-   - Mobile Tailor topics → read at least one of: `on-demand-clothing-manufacturing.md`, `sustainable-fashion-manufacturing.md`, `the-future-of-fashion-retail.md`
-   - Comparison / buyer's-guide topics → `body-scanning-technology-comparison.md`
-   - Trust / privacy / security / regulatory FAQ (Type G) → `fitxpress-data-privacy-security-regulatory-faq.md` (the live trust FAQ, 2026-09-18): Quick answers table, question H3s, direct answer first, legal register, facts only from `compliance.md`. Its register is for Type G only.
-3. **Apply Assel Sekerova as author** by default in the article frontmatter, unless Vadim specifies otherwise in the brief.
-4. **Match the 2026 tone** (measured, hedged, stats-first, workflow-framed) — not the 2024 industry-trend tone present in older MT articles. The 2024 articles use phrases now banned by CLAUDE.md section 6 (leverage / revolutionize / harness / etc.); do NOT mimic their phrasing even though they are in the corpus.
-5. **Read `brand-assets/style-guides/editorial-guardrails.md` and apply the 11 principles end-to-end.** These guardrails apply to **ALL 3DLOOK content** — blog, SEO, outbound, social, whitepaper, deck — not just SEO articles. Established 2026-06-09 from the v2-asselya FAQ-article review cycle (Whitney + Asselya editorial pass). Phase 1 fact-check runs the 11 as an explicit checklist; Phase 3 writing enforces them throughout; Phase 4 self-critique surfaces any bent guardrail to an Open Items block for Asselya per principle #11 — no silent edits. Hardest-binding principles: #1 (substantiation — cut what you can't back), #2 (one number, everywhere the same), #3 (reserved words "independent" / "validated" / "third-party" off-limits without proof), #4 (no bare ">X%" without methodology — use "available under NDA" instead), #6 (medical framing: **«FitXpress is not a medical device.»** — Vadim's call on 2026-09-11 from the editor's final, the rule's fourth state after 06-09, 08-13 and 09-02. «Positioned as» is banned for every product, scope, intended-use and regulatory statement, the medical-device sentence included, and «does not apply» about a regulatory framework is still never allowed).
-6. **Resolve the topic against `brand-assets/content-strategy/content-plan.md` BEFORE anything else (FitXpress health only).** `seo-planner` runs this as a Phase 0 gate: locate the topic's row (hub · cluster · intent · action type · priority · existing-URL · cannibalization guardrail), and **act on the action type** — only an unconditional `create net-new` (incl. `net-new supporting article` / `net-new listicle`) or `publish planned hub` proceeds to a new article; a conditional create (`… if …`) asks Vadim; `P0/P1 - published`, `refresh/expand`, `section first`, `merge`, `review/decide`, `create if validated` and `lead magnet` return a recommendation and STOP (no new article). Since the sheet's «Content Plan v 2.0» tab (2026-09-17) action types are free text (~40 variants): gate on the family by how the value starts, then read the qualifier — the legend is in the header of `content-plan.md`. A topic with no row → stop and ask Vadim where it belongs. The rules that govern placement, positioning language, vertical boundaries, internal linking (4 directions), FAQ, and CTA-by-intent live in `brand-assets/content-strategy/content-strategy-guidelines.md`. `content-plan.md` is the offline copy of the [strategy spreadsheet, tab «Content Plan v 2.0»](https://docs.google.com/spreadsheets/d/1Sy7EzzZZvCKyrD30pbhElEpCZDbzuMtMkxdiDTIP8AE/edit?gid=1908612797#gid=1908612797) (the old tab «СP v 1.0», gid 0, is archive; the script pins the plan tab in `content-plan.source.json` and flags any newer «… v N» tab on its own). **Check the `Last synced from source:` date in its header before trusting a priority or an action type**, and run `python3 scripts/content-plan-sync.py` if it is not recent — a weekly cron (Mon 06:23 UTC) reports drift and pings Telegram, but between runs the offline copy can be behind. On 2026-09-03 it was two months stale and two priorities had moved P2 → P1, so a reconciliation done against it alone got both rows backwards. The sheet wins on priority and action type; the repo wins on what is published. This is a hub-and-cluster system: **a title without its strategy row is not a brief.**
-
-7. **Read `brand-assets/content-strategy/terminology-guardrails.md` and run it as its own pass.** Офлайн-копия [Doc Ассель](https://docs.google.com/document/d/1dPNXQL62t_y82MFJblBidEvRgwXjJxzADdapB7Pa214/edit) (doc changed after 2026-09-14, synced 2026-09-28) — источник правды по **выбору слов и построению фразы** для всего корпоративного контента, не только SEO. Part 1 — десять правил построения фразы (аббревиатуры и их исключения, анкорные ссылки, качество сторонних источников, явные отношения, никаких presumed reactions, никакого поведения приписанного понятиям, em dash, corrective negation, corrective «rather than», **никаких внутренних ярлыков контент-плана** — bridge / hub / pillar / cluster / supporting content — в заголовках и тексте). Part 2 — fourteen word rules (`objective`, `we/our`, `you`, `reader/audience/below`, `this article`, `by hand`, `plus`, `let`, `so`, **`positioned as`**, **IEEE** — только две утверждённые фразы, **`buyer` / `customer`** — называй актора, **`organization`** — umbrella only, name the actor when it is known (§2.14, synced 2026-09-28), **body metrics / body measurements** — `80+ body measurements`, BMI и body composition не measurements). Сводка hard bans — §6 выше. **Писатель держит в голове только hard bans; полный проход делает редактор** (`seo-editor` Pass 4 + Pass 3c детектор, `social-editor` Pass 2b, `page-builder` Layer 2), потому что писать и вычищать одновременно — значит делать плохо и то, и другое. Механические попадания щёлкает `brand-assets/style-guides/scripts/detect-ai-tells.py`; судейские строки (corrective negation, corrective «rather than», `we/our`, `you`, `buyer`/`customer`, generic `organization`, vendor-блог в цитате) остаются за человеком или редактором. **Этот файл переопределил два правила `editorial-guardrails.md`** — M1 (BMI/CEO/UK/US/EU не разворачиваются) и #6 (medical framing напрямую, без «positioned as»); переопределения записаны в обоих файлах с датами. **Синк 2026-09-14 поправил ещё два места:** строку «Buyer framing» в `about-me.md` (§2.12) и IEEE-строки в `proof-points.md` / `overview.md` (§2.11).
-
-### Founder-voice exception
-
-Articles signed by **Katerina Galich (CEO)** are reserved for:
-- Thought-leadership and opinion pieces
-- Personal experiments (e.g., the AI photo-manipulation experiment narrative)
-- Strategic commentary on AI risk and industry direction
-- Conference reflections and post-event reactions
-
-Default to Assel for everything else. If a brief is ambiguous, ask Vadim before deciding the byline.
-
-### Style guide drift policy
-
-If a new production article significantly departs from the style guide (e.g., a deliberate experiment), update `brand-assets/style-guides/blog-style-guide.md` to record the new pattern with the source article cited. The style guide is a living document driven by what actually ships, not a frozen rulebook.
+**Style guide drift:** если вышедшая статья заметно отходит от style guide, обнови `blog-style-guide.md` со ссылкой на статью.
 
 ---
 
