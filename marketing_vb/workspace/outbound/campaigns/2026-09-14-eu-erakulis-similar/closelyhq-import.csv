@@ -1,0 +1,1743 @@
+first_name,last_name,linkedin_url,company,title,email,connection_note,message_1,message_2
+Tomasz,Gałczyński,https://linkedin.com/in/tomasz-galczynski,Activerse (Diet & Training by Ann),Co-Founder & CTO,,,"Hi Tomasz,
+
+You build white-label diet and fitness apps at Activerse. Shipping the same product across multiple influencer brands means every new feature has to work for all of them at once.
+
+Body composition is usually the missing pillar once weight and workout logs plateau. We built a mobile scanning layer: two phone photos return 80+ body measurements and body composition data in under 45 seconds via API/SDK, structured data that drops straight into a member's profile instead of a computer vision team to hire and maintain.
+
+Worth a quick technical chat?
+
+Olena","Hi Tomasz,
+
+Following up. For a platform running several branded apps off one stack, a single body-scan integration that every brand reuses is worth more than a one-off feature: one SDK call, then each brand's team decides how much of the output to expose.
+
+One platform on our stack ran 34,000 scans in 2025 through this exact pattern.
+
+Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Bogdan,Rogovchenko,https://linkedin.com/in/bogdan-rogovchenko,BetterMe,Lead Product Owner,,,"Hi Bogdan,
+
+You run the Release Train across hardware and wearables at BetterMe, including the Smart Scale line. That device gets weight, body fat % and muscle mass, but it can't show a member their waist shrinking before the number on the scale moves.
+
+We built a mobile scanning layer: two photos become 80+ body measurements and body composition (fat %, lean mass, BMI) in under 45 seconds, structured for the member profile.
+
+Worth a quick chat?
+
+Olena","Hi Bogdan,
+
+The gap I keep seeing on scale-and-app products: the scale answers ""what changed"" only after weeks, and members quit before that. A camera scan adds 80+ body measurements and a visual between scale readings, no new hardware to ship.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Anastasia,Kudriavtseva,https://linkedin.com/in/anastasia-kudriavtseva,BetterMe,Product Manager,,,"Hi Anastasia,
+
+Samsung Healthcare and scaling 200+ SKUs on Amazon is not the usual path into a wellness app PM seat. Body data is the piece most fitness and nutrition apps still leave to a bathroom scale.
+
+It's a phone-camera layer that turns two photos into 80+ body measurements and body composition data in under 45 seconds, dropping straight into the member profile.
+
+Might be worth a quick chat?
+
+Olena","Hi Anastasia,
+
+Where the Samsung Healthcare instinct usually pays off here: body composition is what actually shows progress in the first weeks of a subscription, before the scale moves.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Anastasia,Omelian,https://linkedin.com/in/anastasia-omelian-a11378192,BetterMe,Product Manager,,,"Hi Anastasia,
+
+Quick thought. You've run growth and retention across EdTech, PetTech and healthcare before landing on BetterMe. Consumer wellness is the one vertical in that list where the product itself is a body, and most apps still measure it with a tape or a scale.
+
+We built FitXpress around two photos: 80+ body measurements and body composition, structured and ready for the member profile in under 45 seconds.
+
+Worth a quick chat to explore?
+
+Olena","Hi Anastasia,
+
+One pattern that carries over from healthcare products: users stay when they can see change happening. A logged number rarely does that on its own. A phone scan gives that visual without adding a device to the box.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Andrii,Savchuk,https://linkedin.com/in/andriisavchuk,BetterMe,Product Manager,,,"Hi Andrii,
+
+Got me thinking. Your background is genetics and biotech before product management, which is an unusual route into a fitness and nutrition app. Body composition data is exactly the layer that background would trust over a self-reported number.
+
+Two phone photos, 80+ body measurements, body composition (fat %, lean mass, BMI), all in under 45 seconds and structured for the member profile via SDK or API.
+
+Might be worth a quick chat?
+
+Olena","Hi Andrii,
+
+Members trust a lab-style number more than a guess, and that instinct matches your background. A camera scan gives fat %, lean mass and BMI without a clinic visit.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Daryna,Smykovska,https://linkedin.com/in/daryna-smykovska-741152188,BetterMe,Product Manager,,,"Hi Daryna,
+
+Quick note. Your focus reads as process and reliability first: bulletproof processes, clear value for the product. Body tracking is one place where the current process (self-reported weight) is the least reliable input in the whole app.
+
+The core is simple: two photos in, 80+ body measurements and body composition out, in under 45 seconds, feeding the member profile directly.
+
+Open to a quick chat?
+
+Olena","Hi Daryna,
+
+A process lens is exactly what this needs: replacing a self-reported number with a structured, repeatable one that a support or product team can actually trust week over week.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Inna,Soboleva,https://linkedin.com/in/inna-soboleva-07a32a53,BetterMe,Lead PO,,,"Hi Inna,
+
+Curious about your take. Rozetka and Shell before BetterMe is a strong operations background. E-commerce and retail both learned long ago that showing a customer proof beats asking them to trust a number, and body tracking apps mostly still ask for trust.
+
+We turned two smartphone photos into a structured data set: 80+ body measurements, body composition and a 3D model, in under 45 seconds, written to the member profile.
+
+Worth a quick chat?
+
+Olena","Hi Inna,
+
+The retail instinct applies directly: give the member visible proof they can see for themselves. A phone scan produces a 3D model alongside the measurements.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Iryna,Robotko,https://linkedin.com/in/iryna-robotko-896734183,BetterMe,Product Owner,,,"Hi Iryna,
+
+Spotted something. 2Smart Cloud on your resume caught my eye. IoT integration work maps almost directly onto what a camera-based body scan needs: consistent structured data flowing into an existing product.
+
+It runs on two phone photos: 80+ body measurements and body composition in under 45 seconds, structured and ready to sit inside the member profile.
+
+Might be worth a quick chat?
+
+Olena","Hi Iryna,
+
+Given the IoT background, this will read as familiar: same idea as sensor data, just from a phone camera instead of a device, and it drops into the member profile the same way.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Julia,Gaivoronska,https://linkedin.com/in/julia-gaivoronskaya,BetterMe,Product Owner,,,"Hi Julia,
+
+Thought I'd share. Your PSPO and PSM certifications point to someone who cares how a feature actually ships. This one ships as an SDK drop-in on top of the existing app.
+
+We built a mobile scanning layer: two photos become 80+ body measurements and body composition (fat %, lean mass, BMI) in under 45 seconds, structured for the member profile.
+
+Worth a quick chat to explore?
+
+Olena","Hi Julia,
+
+For a feature like this, teams often assume a multi-sprint build. Typical basic integration runs 2-4 weeks through the SDK, closer to a sprint than a quarter.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Maiia,Sievriukova,https://linkedin.com/in/maiia-sievriukova-697096433,BetterMe,Growth Product Manager,,,"Hi Maiia,
+
+Noticed overlap. Preply and Reface before BetterMe both live and die on activation and early retention, same as a fitness or nutrition subscription. Body composition change is the one signal those products can show before the outcome the user actually wants arrives.
+
+It's a phone-camera layer that turns two photos into 80+ body measurements and body composition data in under 45 seconds, dropping straight into the member profile.
+
+Might be worth a quick chat?
+
+Olena","Hi Maiia,
+
+Early retention is where this earns its place: a visible change in fat % or a waist measurement gives members proof of progress before the scale number moves, which is usually the point where they'd otherwise churn.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Maria,Buchelnikova 🇺🇦,https://linkedin.com/in/buchelnikova,BetterMe,Retention Manager,,,"Hi Maria,
+
+Quick one. Communications and stakeholder management across media and NGO work is an unusual runway into retention at a fitness app, and it explains a CRM-first read on the retention problem: the message matters, but it needs something real to say.
+
+We built FitXpress around two photos: 80+ body measurements and body composition, structured and ready for the member profile in under 45 seconds.
+
+Open to a quick chat?
+
+Olena","Hi Maria,
+
+A CRM message about progress lands harder with a real data point behind it. A phone scan gives you an actual fat % or waist change to put in that message.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Mariana,Petrova,https://linkedin.com/in/mariana-petrova-651051327,BetterMe,Growth Product Manager,,,"Hi Mariana,
+
+Had a thought. Reface and Preply both taught a version of the same lesson: users leave fast when the product hasn't shown them anything yet. In a body-transformation app, the honest early signal is body composition, and most apps still don't measure it.
+
+Two phone photos, 80+ body measurements, body composition (fat %, lean mass, BMI), all in under 45 seconds and structured for the member profile via SDK or API.
+
+Worth a quick chat?
+
+Olena","Hi Mariana,
+
+The monetization and retention math usually improves the same way: give the user a real signal early, before the outcome. A body composition change from a phone scan is that signal.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Max,Khurtenko,https://linkedin.com/in/max-khurtenko,BetterMe,Product Manager,,,"Hi Max,
+
+Quick idea for you. Wellness, fintech and healthcare B2C experience is a strong combination for judging what's worth shipping in a subscription app. Body composition sits right at the healthcare-meets-wellness line, which is where most of your background already is.
+
+The core is simple: two photos in, 80+ body measurements and body composition out, in under 45 seconds, feeding the member profile directly.
+
+Might be worth a quick chat?
+
+Olena","Hi Max,
+
+The build-vs-buy call here is usually the deciding factor: hiring for computer vision versus a pre-trained model via SDK. Basic integration typically runs 2-4 weeks either way.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Max,Shatokhin,https://linkedin.com/in/max-shatokhin-a430a422a,BetterMe,Growth Product Manager,,,"Hi Max,
+
+Caught my eye. You moved from Welltech's business strategy side into growth at BetterMe. Both groups run the same multi-brand wellness playbook, and neither one, as far as I can see, ships a camera-based body scan yet.
+
+We turned two smartphone photos into a structured data set: 80+ body measurements, body composition and a 3D model, in under 45 seconds, written to the member profile.
+
+Worth a quick chat to explore?
+
+Olena","Hi Max,
+
+Whoever ships visible body progress first in this category gets to use it as a retention argument for a while. Right now that's an open lane on both sides.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Nadiia,Rudiuk,https://linkedin.com/in/nadiia-rudiuk,BetterMe,Product Owner,,,"Hi Nadiia,
+
+Wanted to reach out. Bookimed and MEGOGO before BetterMe means you've worked healthcare-adjacent and consumer-subscription problems back to back. Body data sits exactly between those two worlds.
+
+It runs on two phone photos: 80+ body measurements and body composition in under 45 seconds, structured and ready to sit inside the member profile.
+
+Open to a quick chat?
+
+Olena","Hi Nadiia,
+
+The healthcare-adjacent read usually helps here: a structured, repeatable body measurement reads as more credible to a member than a number they typed in themselves.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Olena,Parkhomenko,https://linkedin.com/in/elenaparkhomenko,BetterMe,Technical Project Manager,,,"Hi Olena,
+
+This stood out. Running GDPR compliance alongside physical product delivery, including the Smart Scale line, is a rare combination. Any camera-based body data would land on your desk from both sides at once.
+
+Two phone photos, 80+ body measurements, body composition (fat %, lean mass, BMI), all in under 45 seconds and structured for the member profile via SDK or API.
+
+Worth a quick chat?
+
+Olena","Hi Olena,
+
+On the compliance side: in most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs. Happy to walk through how the data flow and the scale integration would sit together.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Olha,Hordovska,https://linkedin.com/in/olhahordovska,BetterMe,Retention Manager,,,"Hi Olha,
+
+Made me think. Retention Manager with a product-manager background at Brainstack before that. That combination usually means you look at churn as a product problem first.
+
+We built a mobile scanning layer: two photos become 80+ body measurements and body composition (fat %, lean mass, BMI) in under 45 seconds, structured for the member profile.
+
+Might be worth a quick chat?
+
+Olena","Hi Olha,
+
+The product-first read on churn usually points the same direction: give members something to see in week one. Body composition change is that something.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Ostap,Yaroshevych,https://linkedin.com/in/ostap-yaroshevych,BetterMe,Growth Product Manager,,,"Hi Ostap,
+
+Couldn't help but ask. Eight years of growth and product marketing across B2C and B2B, and now growth at BetterMe. How much of that retention curve right now depends on content and streaks versus an actual visible outcome for the member?
+
+It's a phone-camera layer that turns two photos into 80+ body measurements and body composition data in under 45 seconds, dropping straight into the member profile.
+
+Worth a quick chat to explore?
+
+Olena","Hi Ostap,
+
+Streaks and content keep people opening the app. A body composition change is the thing that keeps them believing the subscription is working, which is usually the harder half of retention.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Ruslana,S.,https://linkedin.com/in/ruslana-skira,BetterMe,Product Manager,,,"Hi Ruslana,
+
+Random thought. Data and operations background before landing in product and growth at BetterMe. Body composition is one of the few product signals that's still mostly unmeasured in this category, self-reported weight aside.
+
+We built FitXpress around two photos: 80+ body measurements and body composition, structured and ready for the member profile in under 45 seconds.
+
+Might be worth a quick chat?
+
+Olena","Hi Ruslana,
+
+From a data standpoint, self-reported weight is a noisy input. A phone scan replaces it with 80+ structured measurements the product can actually trend over time.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+SERHII,YAREMENKO,https://linkedin.com/in/serhii-yaremenko-a76112433,BetterMe,Product Manager,,,"Hi Serhii,
+
+Quick reaction. Readdle and Preply before BetterMe, both products where engagement lives or dies on whether the user sees value fast. Body transformation apps have the same clock, just a slower one.
+
+Two phone photos, 80+ body measurements, body composition (fat %, lean mass, BMI), all in under 45 seconds and structured for the member profile via SDK or API.
+
+Open to a quick chat?
+
+Olena","Hi Serhii,
+
+The fast-value logic from your Readdle and Preply background applies almost directly: give the member proof of change early, before the outcome they signed up for actually arrives.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Stanislava,Kovalska,https://linkedin.com/in/stanislava-kovalska-a1993547,BetterMe,Product Lead,,,"Hi Stanislava,
+
+Saw your activity. Banking product background (Credit Agricole, Piraeus) before a '200m+ user project' at BetterMe is a big jump in scale and category. Banks learned to show customers proof of every change; fitness apps mostly still don't.
+
+The core is simple: two photos in, 80+ body measurements and body composition out, in under 45 seconds, feeding the member profile directly.
+
+Worth a quick chat?
+
+Olena","Hi Stanislava,
+
+The banking instinct to show proof of every change maps well here: a body composition reading gives members something concrete between the moments they step on a scale.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Taras,Gravchenko,https://linkedin.com/in/taras-gravchenko,BetterMe,Product Manager,,,"Hi Taras,
+
+Small pattern I keep seeing. SoftServe and Nielsen before product at BetterMe: two companies built entirely around measurement. It's an interesting background for a Health & Fitness product line where the core metric is still a self-reported number.
+
+We turned two smartphone photos into a structured data set: 80+ body measurements, body composition and a 3D model, in under 45 seconds, written to the member profile.
+
+Might be worth a quick chat?
+
+Olena","Hi Taras,
+
+A Nielsen background usually means trusting the number less when it's self-reported. A phone scan replaces that number with 80+ structured measurements the product can actually rely on.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Viktoria,Barannyk,https://linkedin.com/in/vik-barannyk,BetterMe,Product Owner,,,"Hi Vik,
+
+A thought crossed my mind. SaaS and EdTech before Product Owner at BetterMe, Spain-based. Both of those categories learned to show users a dashboard of real progress. Body transformation apps mostly still show a weight graph.
+
+It runs on two phone photos: 80+ body measurements and body composition in under 45 seconds, structured and ready to sit inside the member profile.
+
+Worth a quick chat to explore?
+
+Olena","Hi Vik,
+
+A dashboard of real progress is the EdTech and SaaS instinct. For a body-transformation app, the honest version of that dashboard needs body composition data, the layer a weight graph alone doesn't show.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Vladyslwv,Mykosianchyk,https://linkedin.com/in/vladyslwv-mykosianchyk-83110b433,BetterMe,Digital Product Manager,,,"Hi Vladyslav,
+
+One more thing caught my eye. Headway before BetterMe, another consumer app built on habit and retention loops. The one input that loop is usually missing in a fitness app is a real body signal between check-ins.
+
+We built a mobile scanning layer: two photos become 80+ body measurements and body composition (fat %, lean mass, BMI) in under 45 seconds, structured for the member profile.
+
+Open to a quick chat?
+
+Olena","Hi Vladyslav,
+
+The Headway-style habit loop usually needs a real signal to reward. Body composition change from a phone scan is that signal, without adding a device.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Yurii,Bilokur,https://linkedin.com/in/yurii-bilokur-7a16b3180,BetterMe,Product Manager,,,"Hi Yurii,
+
+This got me curious. Welltech and 1+1 Media before BetterMe, both content-heavy products. Content keeps a member opening the app; it doesn't show them their body changing. That second part is still mostly a self-reported number industry-wide.
+
+It's a phone-camera layer that turns two photos into 80+ body measurements and body composition data in under 45 seconds, dropping straight into the member profile.
+
+Might be worth a quick chat?
+
+Olena","Hi Yurii,
+
+Content-led growth gets people in the door. What usually decides if they stay past month one is whether they see a real result, and body composition is the most honest version of that.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Anastasiia,Kobzeva,https://linkedin.com/in/nastya-kobzeva,BetterMe,Senior AI Engineer,,,"Hi Nastya,
+
+Here's a thought. Recommendation engines, MLOps and LLM agents across Preply and SoftServe before BetterMe. If anyone here would default to building a body-scanning model in-house, it's probably you.
+
+We built FitXpress around two photos: 80+ body measurements and body composition, structured and ready for the member profile in under 45 seconds.
+
+Worth a quick chat?
+
+Olena","Hi Nastya,
+
+The honest technical case: a pre-trained model via SDK or REST API, integration typically 2-4 weeks for a basic build, versus hiring and maintaining a computer-vision team for a single feature.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Gleb,Travin,https://linkedin.com/in/gleb-travin-822a69435,BetterMe,Digital Strategy & Growth Manager,,,"Hi Gleb,
+
+Quick observation. Product initiatives and monetization work at BetterMe, after growth roles at Headway and Readdle. Monetization curves in this category usually bend around the same moment: whether the user believes the product is working yet.
+
+Two phone photos, 80+ body measurements, body composition (fat %, lean mass, BMI), all in under 45 seconds and structured for the member profile via SDK or API.
+
+Might be worth a quick chat?
+
+Olena","Hi Gleb,
+
+Monetization and retention move together here: members who can see a body composition change are the ones who tend to convert a trial into a paid renewal.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Oleksandr,Pakhomov,https://linkedin.com/in/aleksandrpakhomov,BetterMe,Senior Product Development Manager,,,"Hi Oleksandr,
+
+Small thing. Retail buying background (TSUM, MD Fashion) before Senior Product Development Manager at BetterMe, which reads as the physical-products side, close to the Smart Scale line.
+
+The core is simple: two photos in, 80+ body measurements and body composition out, in under 45 seconds, feeding the member profile directly.
+
+Open to a quick chat?
+
+Olena","Hi Oleksandr,
+
+On the physical-product side: a camera scan runs as a software layer inside the existing app, no new SKU to manufacture or ship, usually the easier build case to make internally.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Svitlana,Zub,https://linkedin.com/in/svitlana-zub,BetterMe,Product Lead,,,"Hi Svitlana,
+
+Had to say hi. Head of Product Office and an e-commerce and Etsy sales background is a commercial read on product, more than a purely technical one. Body data is one of the clearer commercial cases in this category: it's the thing members actually pay to see change.
+
+We turned two smartphone photos into a structured data set: 80+ body measurements, body composition and a 3D model, in under 45 seconds, written to the member profile.
+
+Worth a quick chat?
+
+Olena","Hi Svitlana,
+
+The commercial case is fairly direct: members renew for outcomes they can see, and a body composition reading is a concrete one they can point to.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Vitalii,Malakhovskyi,https://linkedin.com/in/purpleshirted,BetterMe,Chief Technology Officer,,,"Hi Vitalii,
+
+Straight to it. As CTO across BetterMe's health and fitness apps, you're the person who'd actually decide whether a body-scan feature gets built in-house or bought in.
+
+It runs on two phone photos: 80+ body measurements and body composition in under 45 seconds, structured and ready to sit inside the member profile.
+
+Worth a quick chat?
+
+Olena","Hi Vitalii,
+
+The build case usually comes down to a computer-vision team versus a pre-trained model via SDK or API, with basic integration typically running 2-4 weeks. Happy to walk through the data flow if useful.
+
+Worth 15 min? Grab a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Thomas,Adam,https://linkedin.com/in/thomasadam1,Fastic,CTO | Co-Founder,,,"Hi Thomas,
+
+Saw your background in site reliability before Fastic - you'd know better than most that a computer vision pipeline costs more in upkeep than in the initial build.
+
+Fasting apps usually stop at weight and streaks. We built a mobile scanning layer: two phone photos return 80+ body measurements and body composition data in under 45 seconds via API/SDK, giving Fastic the feature without a CV pipeline to own.
+
+Worth a quick technical chat?
+
+Olena","Hi Thomas,
+
+Following up with the practical case: a visible body change is a stronger reason to keep a subscription than a streak counter, especially once the novelty of fasting wears off around month two.
+
+A basic integration typically runs 2-4 weeks. One platform on our stack processed 34,000 scans in 2025 through the same API.
+
+Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Eva,Nguyen,https://linkedin.com/in/en3ttt,Fitify,Product Manager,,,"Hi Eva,
+
+Quick thought on Fitify: coaches already personalize the training plan, and body composition is still the one input usually missing from that picture.
+
+We built a mobile scanning layer: two phone photos return 80+ body measurements and body composition data (body fat %, lean mass, BMI) in under 45 seconds, structured data that drops straight into a member's progress profile via SDK.
+
+Might be worth a quick chat?
+
+Olena","Hi Eva,
+
+Following up. Where this tends to land for coaching apps like Fitify: members who see a real 3D change between check-ins stay engaged past the point where the scale usually stalls and motivation drops.
+
+Two photos, 80+ body measurements, under 45 seconds, the same SDK pattern your team already works with.
+
+Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Matouš,Skála,https://linkedin.com/in/matousskala,Fitify,Co-founder & CTO,,,"Hi Matouš,
+
+Curious about your take as someone who clearly cares about UX detail: most body-progress features in fitness apps still rely on self-reported weight, the least reliable input a coaching product can build on.
+
+We built a mobile scanning layer: two phone photos return 80+ body measurements and body composition data in under 45 seconds via API/SDK, giving Fitify real body data without a computer-vision team to hire and keep.
+
+Worth a quick technical chat?
+
+Olena","Hi Matouš,
+
+Following up. The build-vs-buy math on this one usually comes down to maintenance: keeping a CV pipeline accurate across body types and lighting is an ongoing cost that shows up well after the first model ships.
+
+A basic integration on our side typically runs 2-4 weeks. One platform processed 34,000 scans in 2025 on the same stack.
+
+Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Daniel,Sobhani,https://linkedin.com/in/danielsobhani,Freeletics,CEO,,,"Hi Daniel,
+
+Saw where Freeletics is heading with AI-driven coaching - once the coaching itself gets this personalized, body composition is the one part of a member's progress still stuck at self-reported weight.
+
+We built a mobile scanning layer: two phone photos return 80+ body measurements and body composition data (fat %, lean mass, BMI) in under 45 seconds, structured data that drops straight into a member's profile via API/SDK.
+
+Worth a quick chat?
+
+Olena","Hi Daniel,
+
+Following up. Where this tends to matter most for a coaching platform at your scale: visible body change gives a member a reason to stay past the first plateau, usually where annual subscribers start to drop.
+
+One platform on our stack ran 34,000 scans in 2025 on the same use case.
+
+Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Franziska,Esterházy (née Reutter),https://linkedin.com/in/franziska-esterházy-née-reutter-a3b350b1,Freeletics,Head of Product,,,"Hi Franziska,
+
+Quick thought: Freeletics' coaching keeps getting more personalized, but the progress a member actually sees is usually still just weight and workout count.
+
+We built a mobile scanning layer: two phone photos return 80+ body measurements, body composition data and a 3D progress model in under 45 seconds via SDK, a new input the coaching engine could use directly.
+
+Might be worth a quick chat?
+
+Olena","Hi Franziska,
+
+Following up with the product case: a 3D model a member can see change between check-ins is a stronger retention signal than a number on a scale, especially in the first 90 days when most annual cancellations happen.
+
+Two photos, 80+ body measurements, under 45 seconds. One platform ran 34,000 scans in 2025 on this exact setup.
+
+Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Amalia,Trivizadaki,https://linkedin.com/in/amalia-trivizadaki-a0872a114,Freeletics,CRM Conversion Lead,,,"Hi Amalia,
+
+Quick note on the conversion side: a trial-to-paid decision usually comes down to whether the member believes the plan will actually change how they look, beyond how it makes them feel.
+
+We built a mobile scanning layer that gives a visible before/after in under 45 seconds from two phone photos, structured enough to trigger CRM flows around a member's own progress milestones instead of generic reminders.
+
+Might be worth a quick chat?
+
+Olena","Hi Amalia,
+
+Following up. The conversion angle: a scan-based milestone, like a first visible change at week 3 or 4, is a stronger trigger for a CRM flow than a generic day-7 nudge, because it's the member's own data.
+
+One platform on our stack ran 34,000 scans in 2025 built around this kind of trigger.
+
+Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Idil,Bozay,https://linkedin.com/in/idil-bozay-91563710b,Freeletics,Senior Product Manager,,,"Hi Idil,
+
+Had a thought after seeing your move from Personio into Freeletics: product-led growth in B2C usually hits the same wall once onboarding and workout logic are solid, where the progress a member sees is still self-reported.
+
+We built a mobile scanning layer: two phone photos return 80+ body measurements and body composition data in under 45 seconds via SDK, real data instead of a number the member typed in.
+
+Might be worth a quick chat?
+
+Olena","Hi Idil,
+
+Following up. Where this tends to move the needle in a product like Freeletics: a member who can see an actual 3D change is more likely to keep opening the app past the point where workout logs alone stop being motivating.
+
+Two photos, under 45 seconds, 80+ body measurements. The same SDK pattern your team already works with.
+
+Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Mina,Baghal,https://linkedin.com/in/mina-baghal,Freeletics,Head of CRM at Freeletics,,,"Hi Mina,
+
+Quick idea for you: most lifecycle flows in fitness apps still lean on streaks and reminders, since there's rarely a real progress data point to trigger off before week 8 or so.
+
+We built a mobile scanning layer: two phone photos return 80+ body measurements and a 3D progress model in under 45 seconds, giving CRM an actual milestone to message around instead of a streak count.
+
+Might be worth a quick chat?
+
+Olena","Hi Mina,
+
+Following up. The lifecycle case: a scan-based change moment tends to land better than a generic re-engagement email, since it speaks to that member's own data.
+
+One platform running FitXpress logged 34,000 scans in 2025 built into exactly this kind of flow.
+
+Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Nisha,Nair,https://linkedin.com/in/nisha-ishvan-nair,Freeletics,Customer Relationship Management Manager,,,"Hi Nisha,
+
+Saw your focus on personalized customer journeys - the piece most fitness CRM stacks still can't personalize around is actual physical progress, since most apps never collect it beyond a weight entry.
+
+We built a mobile scanning layer: two phone photos return 80+ body measurements and body composition data in under 45 seconds, real data your segmentation could use instead of self-reported numbers.
+
+Might be worth a quick chat?
+
+Olena","Hi Nisha,
+
+Following up. The personalization angle: a member's own body-progress data is a far stronger segmentation signal than behavior alone, and worth building a journey around.
+
+One platform on our stack ran 34,000 scans in 2025 feeding exactly that kind of journey.
+
+Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Henry,Gallert,https://linkedin.com/in/henry-gallert-9b484293,Freeletics,CTO,,,"Hi Henry,
+
+Quick note, technical one: most fitness apps that want a body-progress feature end up choosing between building computer vision in-house or bolting on a hardware partner, and neither fits a mobile-first product well.
+
+We built a mobile scanning layer instead: two phone photos return 80+ body measurements and body composition data in under 45 seconds via API/SDK, no hardware, no CV team on your side.
+
+Worth a quick technical chat?
+
+Olena","Hi Henry,
+
+Following up on the integration side: a basic setup typically runs 2-4 weeks, with React, iOS and Android SDKs and a REST API, built to slot into an existing mobile stack without turning into its own workstream.
+
+One platform on the same API processed 34,000 scans in 2025.
+
+Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Simon,Alger,https://linkedin.com/in/simonalger,Freeletics,Head of Data Science,,,"Hi Simon,
+
+Curious about your take: most fitness apps train personalization models on workout and nutrition logs, but rarely on structured body data, mostly because collecting it at scale has meant a scale or a clinic visit.
+
+We built a mobile scanning layer: two phone photos return 80+ body measurements and body composition data (fat %, lean mass, BMI) in under 45 seconds via API, structured enough to feed straight into a model instead of a form.
+
+Worth a quick chat?
+
+Olena","Hi Simon,
+
+Following up on the data side: 80+ body measurements and body composition data per scan is a meaningfully richer input than weight alone for whatever personalization or coaching model sits behind Freeletics.
+
+One platform on our stack generated 34,000 of these scans in 2025.
+
+Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Anaïs,Pitou,https://linkedin.com/in/anaispitou,Gymondo,Product Lead,,,"Hi Anaïs,
+
+Saw your focus on product-led growth - the retention lever most holistic wellness apps still miss is visible physical progress, since workouts, mindfulness and nutrition all get tracked separately from the body itself.
+
+We built a mobile scanning layer: two phone photos return 80+ body measurements and body composition data in under 45 seconds, structured data that drops straight into a member's progress profile via SDK.
+
+Might be worth a quick chat?
+
+Olena","Hi Anaïs,
+
+Following up. The retention case for a platform like Gymondo: a member who can see body change alongside workout and nutrition progress has a reason to keep all three habits going together.
+
+One platform on our stack ran 34,000 scans in 2025 built around this kind of engagement loop.
+
+Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Gabriela,Cardona,https://linkedin.com/in/gabriela-cardona,Gymondo,Product Manager,,,"Hi Gabriela,
+
+Quick thought after seeing the adoption growth your personalization work has driven at Gymondo - body composition data would be a strong next input for that same kind of feature, real data instead of a self-reported number.
+
+We built a mobile scanning layer: two phone photos return 80+ body measurements and body composition data in under 45 seconds via SDK, structured enough to personalize a program directly.
+
+Might be worth a quick chat?
+
+Olena","Hi Gabriela,
+
+Following up. The product case: a 3D progress model a member can see change is a stronger reason to stick with a program than an adoption nudge alone, and it plugs into the same personalization logic you're already building.
+
+Two photos, 80+ body measurements, under 45 seconds. One platform ran 34,000 scans in 2025 on this pattern.
+
+Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Kenichi,Takahira,https://linkedin.com/in/kenichi-takahira-ba999018a,Gymondo,Senior Product Manager,,,"Hi Kenichi,
+
+Quick observation on Gymondo: workouts, mindfulness and nutrition sit in one subscription, but body composition, the thing most members actually want to see change, usually isn't tracked at all.
+
+We built a mobile scanning layer: two phone photos return 80+ body measurements and body composition data in under 45 seconds via SDK, a natural fourth pillar alongside the other three.
+
+Might be worth a quick chat?
+
+Olena","Hi Kenichi,
+
+Following up. Where this tends to land for a multi-pillar platform: a member tracking body change alongside workouts and nutrition has a reason to stay active across all three.
+
+One platform on our stack ran 34,000 scans in 2025 on this exact setup.
+
+Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Tais,Tretyakova,https://linkedin.com/in/tais-tretyakova-b3269883,Gymondo,Product Manager,,,"Hi Tais,
+
+Quick thought: with your background running product delivery, you'll know a body-progress feature usually gets scoped and then shelved, mostly because building the computer vision behind it is a bigger lift than the rest of the sprint.
+
+We built a mobile scanning layer that removes that lift: two phone photos return 80+ body measurements and body composition data in under 45 seconds via SDK, already built and ready to plug in.
+
+Might be worth a quick chat?
+
+Olena","Hi Tais,
+
+Following up. The scoping angle: a basic integration typically runs 2-4 weeks, closer to a sprint or two than a quarter-long build, which changes what's realistic for a near-term roadmap.
+
+One platform on the same API processed 34,000 scans in 2025.
+
+Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Alejandro,Peña de Alba,https://linkedin.com/in/alejandro-pena-de-alba,Gymondo,Head of Engineering,,,"Hi Alejandro,
+
+Noticed your focus on scalable, low-latency architecture at Gymondo - that's exactly the bar a body-scan feature needs to clear if it's going to run at member volume without becoming its own infrastructure project.
+
+We built a mobile scanning layer: two phone photos return 80+ body measurements and body composition data in under 45 seconds via API/SDK, engineered to handle that scale on our infrastructure.
+
+Worth a quick technical chat?
+
+Olena","Hi Alejandro,
+
+Following up on the integration side: a basic setup typically runs 2-4 weeks, with React, iOS and Android SDKs and a REST API, built to slot into your existing stack without adding a new infrastructure workstream.
+
+One platform on the same API processed 34,000 scans in 2025.
+
+Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Matias,Olocco,https://linkedin.com/in/matiasolocco,Gymondo,Chief Technology Officer,,,"Hi Matias,
+
+Quick note, technical one: Gymondo already bundles workouts, mindfulness and nutrition, and body composition is usually the one teams postpone, because building the computer vision behind it competes for the same engineering time as everything else.
+
+We built a mobile scanning layer instead: two phone photos return 80+ body measurements and body composition data in under 45 seconds via API/SDK, no CV team required on your side.
+
+Worth a quick technical chat?
+
+Olena","Hi Matias,
+
+Following up: a basic integration typically runs 2-4 weeks, a pre-trained model behind an API, with no in-house build or maintenance required.
+
+One platform on this same stack processed 34,000 scans in 2025.
+
+Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Patricia,Malovana,https://linkedin.com/in/patricia-malovana-535184189,Gymondo,Senior Business Development Manager - Prevention,,,"Hi Patricia,
+
+Quick question given your focus on prevention: how does Gymondo currently document a member's progress for the courses run through health insurers, beyond what the member reports themselves?
+
+We built a mobile scanning layer that gives structured, repeatable body data from two phone photos in under 45 seconds, the kind of record that tends to matter once a program needs to show progress over time.
+
+Curious how you're handling that today. Worth a quick chat?
+
+Olena","Hi Patricia,
+
+Following up, since this seems close to what you handle day to day: prevention programs generally do better with a consistent, repeatable data point at baseline and check-in, alongside what the member self-reports.
+
+Two photos, 80+ body measurements, under 45 seconds, structured output either way.
+
+Worth 15 min to compare notes? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Stefanie,Schultheis,https://linkedin.com/in/stefanie-schultheis-a8752441,Gymondo,Head of Business Development,,,"Hi Stefanie,
+
+Given your background across health insurances and corporate health, curious how you think about proving progress inside Gymondo's insurer-funded prevention courses today, beyond a member's own reporting.
+
+We built a mobile scanning layer: two phone photos return structured, repeatable body measurements and composition data in under 45 seconds, the kind of record a prevention program can point to.
+
+Worth a quick chat to compare notes?
+
+Olena","Hi Stefanie,
+
+Following up. With your corporate health background, you'll know that insurer-funded programs tend to face more scrutiny on outcomes than a typical consumer subscription, where a consistent data point helps.
+
+80+ body measurements and body composition data from two photos, under 45 seconds, the same output at baseline and every check-in.
+
+Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Renata,Roze,https://linkedin.com/in/renata-roze-90462214b,Kilo Health,Product Manager,,,"Hi Renata,
+
+Quick thought given your e-commerce background: a subscription is really just repeat purchase, and what keeps someone buying again is proof it's working, which most wellness apps still can't show beyond a self-reported number.
+
+We built a mobile scanning layer: two phone photos return 80+ body measurements and body composition data in under 45 seconds via SDK, real progress data instead of a number a member typed in.
+
+Might be worth a quick chat?
+
+Olena","Hi Renata,
+
+Following up. The renewal case: a member who can see a real body change between check-ins has a clearer reason to renew than one relying on a scale that barely moves in the first weeks.
+
+One platform on our stack ran 34,000 scans in 2025 built around exactly that renewal moment.
+
+Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Love,Thyresson,https://linkedin.com/in/lovethyresson,Lifesum,Head of Product,,,"Hi Love,
+
+Saw your focus on AI and behavioral change - body composition data is one of the few inputs that could genuinely drive that, a real outcome instead of a logged meal or a streak.
+
+We built a mobile scanning layer: two phone photos return 80+ body measurements and body composition data (fat %, lean mass, BMI) in under 45 seconds via SDK, structured enough to feed a behavioral model as well as a progress chart.
+
+Might be worth a quick chat?
+
+Olena","Hi Love,
+
+Following up on the retention side: a member who can see a real body change between check-ins has a stronger reason to keep logging meals than one relying on the scale alone, especially in the first weeks when weight barely moves.
+
+One platform on our stack ran 34,000 scans in 2025 built around this exact pattern.
+
+Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Kieran,Patel,https://linkedin.com/in/kieranajp,Lifesum,Head of Technology,,,"Hi Kieran,
+
+Quick note, technical one: as Lifesum builds out more personalized support around weight goals, body composition is usually the input still missing, never practical to collect at scale beyond a self-reported number.
+
+We built a mobile scanning layer: two phone photos return 80+ body measurements and body composition data in under 45 seconds via API/SDK, no hardware, no CV team on your side.
+
+Worth a quick technical chat?
+
+Olena","Hi Kieran,
+
+Following up on the integration side: a basic setup typically runs 2-4 weeks, with React, iOS and Android SDKs and a REST API, designed to slot into an existing stack without becoming its own project.
+
+One platform on the same API processed 34,000 scans in 2025.
+
+Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Mohammad,A.,https://linkedin.com/in/mohammadalrawi,Lifesum,Director of Data & Analytics,,,"Hi Mohammad,
+
+Quick thought from the data side: body composition is one of the few member metrics nutrition apps like Lifesum almost never capture directly, mostly because collecting it has meant a clinic visit or a scale.
+
+We built a mobile scanning layer: two phone photos return 80+ body measurements and body composition data in under 45 seconds via API, structured data an analytics team could actually build on.
+
+Might be worth a quick chat?
+
+Olena","Hi Mohammad,
+
+Following up on the data case: 80+ body measurements and body composition data per scan is a meaningfully richer input than weight alone for whatever personalization sits behind Lifesum's recommendations.
+
+One platform on our stack generated 34,000 of these scans in 2025.
+
+Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Andrea,Sinisi,https://linkedin.com/in/asinisi,Welltech,Director of Product,,,"Hi Andrea,
+
+Bolt, then Welltech: both places where loyalty is hard to earn, and your own read that retention is fundamentally a leadership problem.
+
+Visible body progress is one of the few product levers inside that fight, and it is usually missing from a wellness app's toolkit.
+
+We built a mobile scan layer: two phone photos return 80+ body measurements and body composition in under 45 seconds, feeding straight into the member's progress view. One platform we work with ran 34,000 scans in 2025 on this exact loop.
+
+Might be worth a quick chat?
+
+Olena","Hi Andrea,
+
+Following up. The pattern we keep seeing in subscription apps: churn is heaviest in the first weeks, before the scale shows any real change. A body scan gives members something to see before they decide to stay.
+
+Happy to walk through how this slots into a flagship app's roadmap, given the codebase consolidation you're running.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Artem,Bezruk,https://linkedin.com/in/bezrukartem,Welltech,General Manager (H&F),,,"Hi Artem,
+
+Quick thought: scaling H&F apps past 1M MAU usually means the early weeks decide who stays, and the scale is a poor instrument for that window. Weight barely moves while the body actually changes.
+
+We built a mobile scan layer: two phone photos return 80+ body measurements and body composition in under 45 seconds, dropped straight into the member's progress view.
+
+112,100 scans ran through the platform in 2025 across all customers.
+
+Open to a quick chat?
+
+Olena","Hi Artem,
+
+Following up with the part that matters for an H&F GM: subscribers who see a body change stick around longer than ones staring at a flat scale number.
+
+Given how hands-on you are with launch and retention mechanics, this usually slots in as a periodic check-in feature between milestones.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Elle,Pope,https://linkedin.com/in/the-elle-pope,Welltech,Director of Engagement & Retention,,,"Hi Elle,
+
+Noticed the move: CRM and lifecycle work at Clearpay, now engagement and retention for a wellness app portfolio. A jump from payment habits to body habits, same underlying question.
+
+The pattern in subscription fitness is close to what you knew at Clearpay: the first weeks decide who stays, and a flat scale number gives a member nothing to see.
+
+We built a mobile scan layer: two phone photos, 80+ body measurements and a 3D progress model in under 45 seconds. One platform we work with ran 34,000 scans in 2025 on this loop.
+
+Might be worth a quick chat?
+
+Olena","Hi Elle,
+
+Following up. From a CRM angle, a body scan is a natural trigger: a visible change between two check-ins is a stronger re-engagement moment than a reminder push.
+
+Happy to show how this feeds a lifecycle campaign instead of sitting as a standalone feature.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Marta,Luis Burguete,https://linkedin.com/in/marta-luis-burguete-a598824,Welltech,Senior Director of Product Management,,,"Hi Marta,
+
+Caught my eye that you've run product through Amazon, Glovo and Microsoft before Welltech, different categories, same question: what to build next once the roadmap gets crowded.
+
+Body composition tracking is usually the gap in a wellness app's metrics: weight and workout counts, nothing that shows the shape actually changing.
+
+We built a mobile scan layer: two phone photos return 80+ body measurements and body composition in under 45 seconds, structured for the member's progress view. 112,100 scans ran through it in 2025.
+
+Worth a quick chat to explore?
+
+Olena","Hi Marta,
+
+Following up with the build-vs-buy angle, since I'd guess it's on your list. A pre-trained scan model via API/SDK skips hiring a computer-vision team; a basic integration usually runs 2-4 weeks.
+
+Happy to walk through what that integration looks like for a product at your scale.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Naghmeh,Hayamanesh,https://linkedin.com/in/naghmeh-hayamanesh-09862174,Welltech,Head of Product,,,"Hi Naghmeh,
+
+Quick idea for you: you ran product at Snappfood and Glovo before this, categories that solved retention through speed and habit. Wellness apps solve it through visible proof that something changed.
+
+We built a mobile scan layer that turns two phone photos into 80+ body measurements and body composition in under 45 seconds, feeding a member's progress view instead of a flat weight number.
+
+One platform we work with ran 34,000 scans in 2025 on exactly this pattern.
+
+Open to a quick chat?
+
+Olena","Hi Naghmeh,
+
+Following up. The objection I'd expect from someone who has built product at this level is ""we could build this ourselves."" Fair, and the honest answer: a pre-trained model via API/SDK usually integrates in 2-4 weeks, no computer-vision hire needed.
+
+Worth 15 min to walk through the integration? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Alina,Vitkaliuk,https://linkedin.com/in/vitkaliuk,Welltech,Senior Product Manager,,,"Hi Alina,
+
+Had a thought seeing you moved from running a customer retention department into product: you'd know better than most that a subscriber who can't see change tends to leave quietly, no complaint, just gone.
+
+We built a mobile scan layer: two phone photos return 80+ body measurements and a 3D progress model in under 45 seconds, structured for the app you own.
+
+112,100 scans ran through the platform in 2025 across all customers.
+
+Might be worth a quick chat?
+
+Olena","Hi Alina,
+
+Following up with the retention math specifically: subscribers who see a visible body change between check-ins tend to hold on through the weeks scale weight alone doesn't move.
+
+Happy to share how this usually gets scoped for one app inside a bigger portfolio.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Christopher,Akande,https://linkedin.com/in/chrisakande,Welltech,Head of Product - Ecosystem,,,"Hi Christopher,
+
+This stood out: you run the ecosystem layer across Welltech's apps, the layer that decides what gets built once and reused everywhere.
+
+Body composition tracking is usually missing there: apps ship weight and workout counts, nothing that shows the body actually changing.
+
+We built a mobile scan layer, API/SDK based: two phone photos return 80+ body measurements and body composition in under 45 seconds, ready for any app on the platform.
+
+One platform we work with ran 34,000 scans in 2025 through one integration.
+
+Worth a quick chat to explore?
+
+Olena","Hi Christopher,
+
+Following up on the ecosystem angle specifically: this is the kind of capability that pays off more built once at the platform layer than rebuilt per brand.
+
+A pre-trained model via API/SDK skips the computer-vision hire; basic integration usually runs 2-4 weeks.
+
+Worth 15 min to see how it would sit in the ecosystem layer? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Dmitry,Zenevich,https://linkedin.com/in/dmitryzenevich,Welltech,AI Product Builder | Generative Video & Marketing Assets,,,"Hi Dmitry,
+
+Spotted something in your world: you build generative AI systems that turn data into visual ad assets at scale. We build a similar kind of pipeline, just pointed at the member instead of the ad.
+
+Two phone photos become 80+ body measurements, body composition and a 3D progress model in under 45 seconds, an asset the member actually wants to see change.
+
+112,100 scans ran through the platform in 2025 across all customers.
+
+Curious about your take: is this the kind of asset pipeline your team would ever plug into?
+
+Olena","Hi Dmitry,
+
+Following up, this time from the member side. A visible body change between two scans is the kind of asset that keeps someone subscribed longer than a generic progress email.
+
+Happy to show the API/SDK side if it's ever relevant to what you're building.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Esteban,Atlasovich,https://linkedin.com/in/esteban-atlasovich,Welltech,Senior Product Manager  | Platform & AI,,,"Hi Esteban,
+
+Got me thinking: going from pricing systems at Mercado Libre to platform and AI product here is a different domain, same question, what turns a raw signal into something a user trusts.
+
+Body composition is usually that raw signal wellness apps never quite capture past a scale number.
+
+We built a mobile scan layer: two phone photos return 80+ body measurements and body composition in under 45 seconds, structured for the platform layer you're building.
+
+One platform we work with ran 34,000 scans in 2025 on this exact pattern.
+
+Might be worth a quick chat?
+
+Olena","Hi Esteban,
+
+Following up on the AI-native build angle. A pre-trained scan model via API/SDK means no computer-vision team to hire and keep; basic integration usually runs 2-4 weeks.
+
+Given you're already building hands-on alongside engineers, happy to walk through the technical side directly.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Khrystyna,Klimash,https://linkedin.com/in/khrystyna-klimash-438b981b8,Welltech,Growth Product Manager,,,"Hi Khrystyna,
+
+Quick note on growth for subscription apps: the drop-off that's hardest to fix isn't acquisition, it's the member who stops opening the app because nothing visibly changed.
+
+We built a mobile scan layer: two phone photos return 80+ body measurements and a 3D progress model in under 45 seconds, something a member can actually see between check-ins.
+
+112,100 scans ran through the platform in 2025 across all customers.
+
+Open to a quick chat?
+
+Olena","Hi Khrystyna,
+
+Following up with the growth-specific case: a visible body change is a stronger re-engagement trigger than a generic push notification, and it's measurable per cohort.
+
+Happy to walk through how a check-in scan usually gets placed in the activation flow.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Lucas,Dantas Freire,https://linkedin.com/in/lucas-dantas-freire-82527713,Welltech,Senior Product Manager,,,"Hi Lucas,
+
+Customer engagement and internal marketing tools at Amazon's scale: work built around getting a signal to the right person at the right moment.
+
+Body composition is a signal most wellness apps don't have: they show weight and workout counts, nothing that proves the body actually changed.
+
+We built a mobile scan layer: two phone photos return 80+ body measurements and body composition in under 45 seconds, structured for a member's progress view.
+
+One platform we work with ran 34,000 scans in 2025 on this pattern.
+
+Worth a quick chat to explore?
+
+Olena","Hi Lucas,
+
+Following up. The engagement case is simple: a member who sees a visible change between two scans has a reason to keep opening the app that a push notification doesn't give them.
+
+Happy to walk through how this fits alongside the engagement tools you're already running.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Olha,Radchenko,https://linkedin.com/in/olga-radchenko,Welltech,Product Growth Manager,,,"Hi Olha,
+
+Curious about your take moving from FMCG brand P&L into product growth: in FMCG a product proves itself on shelf, in a subscription app it has to prove itself every week the member opens it.
+
+Body composition tracking is the proof most wellness apps skip: weight and workout counts, nothing that shows the shape actually changing.
+
+We built a mobile scan layer: two phone photos return 80+ body measurements and a 3D progress model in under 45 seconds.
+
+112,100 scans ran through the platform in 2025 across all customers.
+
+Might be worth a quick chat?
+
+Olena","Hi Olha,
+
+Following up with the growth-metrics case: members who can see a body change tend to renew at a noticeably better rate than ones tracking weight alone, the same loyalty logic that used to matter on shelf.
+
+Worth 15 min to walk through it? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Raz,Schwartz,https://linkedin.com/in/raz-schwartz,Welltech,"Senior Director, Design, Research & Content",,,"Hi Raz,
+
+One line of yours stuck with me: good design is the earliest form of product thinking. That's the question behind a body-progress feature too: what does a member actually need to see to believe something changed.
+
+We built a mobile scan layer: two phone photos return 80+ body measurements and a 3D progress model in under 45 seconds, the kind of visual proof a scale number can't give.
+
+One platform we work with ran 34,000 scans in 2025 on this exact use case.
+
+Worth a quick chat to explore?
+
+Olena","Hi Raz,
+
+Following up on the research side specifically: a 3D progress comparison is testable in a way most retention features aren't, you can watch whether a member actually looks at it between check-ins.
+
+Happy to walk through the UX of the scan flow itself.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Shimrit (Shim),Shiran,https://linkedin.com/in/shimritshiran,Welltech,Head of Growth (Strategic Projects),,,"Hi Shimrit,
+
+Quick reaction to your focus on where growth usually stalls: weak activation, low feature adoption. In wellness apps that stall point is usually week three, once the scale stops moving and the member has nothing else to look at.
+
+We built a mobile scan layer: two phone photos return 80+ body measurements and a 3D progress model in under 45 seconds, a feature-adoption lever that isn't another workout reminder.
+
+112,100 scans ran through the platform in 2025 across all customers.
+
+Open to a quick chat?
+
+Olena","Hi Shimrit,
+
+Following up with the activation case: a visible body change is a stronger reason to reopen the app than most lifecycle nudges, and it's a loop you can experiment on directly.
+
+Worth 15 min to walk through it? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Sofia,Ortins,https://linkedin.com/in/sofia-ortins-3847a761,Welltech,Senior Product Manager,,,"Hi Sofia,
+
+Thought I'd share, given your headline is literally ""helping people move"": most wellness apps measure that through weight and workout counts, nothing that shows the body's shape actually changing.
+
+We built a mobile scan layer: two phone photos return 80+ body measurements and body composition in under 45 seconds, structured for a member's progress view.
+
+One platform we work with ran 34,000 scans in 2025 on this exact pattern.
+
+Might be worth a quick chat?
+
+Olena","Hi Sofia,
+
+Following up. The part I think is relevant for you: a member who sees visible progress between two scans has a concrete reason to keep moving, closer to what you're actually optimizing for than a subscription metric.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Stan,Gladkov,https://linkedin.com/in/stasgladkov,Welltech,"Senior AI Product Manager, Builder",,,"Hi Stan,
+
+Wanted to reach out: your bio says you do the PM work and then ship the code yourself, one person, end to end, with AI-powered tools. That's a rare seat for a build-vs-buy call, since you would be the one actually wiring a scan feature in.
+
+We built a mobile scan layer: two phone photos return 80+ body measurements and body composition in under 45 seconds. A pre-trained model via API/SDK usually integrates in 2-4 weeks, no computer-vision team required.
+
+One platform we work with ran 34,000 scans in 2025 on this pattern.
+
+Worth a quick chat?
+
+Olena","Hi Stan,
+
+Following up with the part that's probably most relevant given how you work: the SDK handles capture and validation, the API returns structured measurements and a 3D model, and a single builder can wire it end to end without a computer-vision hire.
+
+112,100 scans ran through the platform in 2025 across all customers.
+
+Worth 15 min to walk through the integration? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Valentyna,Rudenko,https://linkedin.com/in/valentyna-rudenko-575b0b121,Welltech,Content Product Manager,,,"Hi Valentyna,
+
+Noticed the path: personal trainer before product manager. You've seen both sides of the same problem, a client can feel a change weeks before the scale agrees with them.
+
+We built a mobile scan layer: two phone photos return 80+ body measurements and a 3D progress model in under 45 seconds, proof a trainer would trust and a content team could actually show.
+
+112,100 scans ran through the platform in 2025 across all customers.
+
+Worth a quick chat to explore?
+
+Olena","Hi Valentyna,
+
+Following up with the content angle specifically: a real 3D before/after comparison is stronger in-app content than another chart, and it comes straight from the member's own data.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Yelyzaveta,Sadchykova,https://linkedin.com/in/yelyzaveta-sadchykova-895427104,Welltech,Product Manager,,,"Hi Yelyzaveta,
+
+Quick one, your headline says it plainly: Health & Fitness mobile app. The part that usually stays thin in that category is body data, weight and workout counts, nothing that shows the shape actually changing.
+
+We built a mobile scan layer: two phone photos return 80+ body measurements and body composition in under 45 seconds, dropped into the member's progress view.
+
+One platform we work with ran 34,000 scans in 2025 on this exact loop.
+
+Open to a quick chat?
+
+Olena","Hi Yelyzaveta,
+
+Following up. The retention case in one line: members who can see a real body change stick around through the weeks the scale alone doesn't move.
+
+Happy to walk through how a check-in scan usually gets placed in the app.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Yuliana,Rondyak,https://linkedin.com/in/yuliana-rondyak-ba7b3b156,Welltech,Growth Product Manager,,,"Hi Yuliana,
+
+Had to say hi, given the mix on your CV: data, technical support and now growth product. You'd know better than most where a subscriber actually drops off versus where the dashboard says they should.
+
+We built a mobile scan layer: two phone photos return 80+ body measurements and a 3D progress model in under 45 seconds, a data point most wellness apps don't have yet.
+
+112,100 scans ran through the platform in 2025 across all customers.
+
+Might be worth a quick chat?
+
+Olena","Hi Yuliana,
+
+Following up with the growth-data case: a body scan gives you a cohort-level signal, who's actually changing, that a login streak or a workout count can't give you.
+
+Worth 15 min to walk through it? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Alessandro,Locatelli,https://linkedin.com/in/alessandro-locatelli-5b760235,Welltech,Director of Analytics and Experimentation,,,"Hi Alessandro,
+
+Curious about your take: you've built experimentation culture across Adevinta, eBay and Zalando. A body-progress feature is one of the more testable retention levers a wellness app can add, a clean before/after signal.
+
+We built a mobile scan layer: two phone photos return 80+ body measurements and body composition in under 45 seconds, structured data an experimentation team can actually cohort on.
+
+One platform we work with ran 34,000 scans in 2025 on this pattern.
+
+Worth a quick chat to explore?
+
+Olena","Hi Alessandro,
+
+Following up with the experimentation framing specifically: scan-to-scan comparison is measurable per cohort from day one, a feature you could A/B on retention with real data behind it.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Alina,Melnychuk,https://linkedin.com/in/alina-melnychuk-091b42164,Welltech,Product Growth Lead,,,"Hi Alina,
+
+Made me think seeing your move from agency accounts into product growth: brand loyalty and app retention chase the same thing, a reason to come back that isn't just habit.
+
+We built a mobile scan layer: two phone photos return 80+ body measurements and a 3D progress model in under 45 seconds, giving members visible proof instead of a flat weight number.
+
+112,100 scans ran through the platform in 2025 across all customers.
+
+Open to a quick chat?
+
+Olena","Hi Alina,
+
+Following up with the retention number specifically: subscribers who see a body change between check-ins tend to hold on through the weeks a scale alone doesn't move them.
+
+Worth 15 min to walk through it? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Anas,Lamarfa,https://linkedin.com/in/anas-lamarfa,Welltech,Chief Technology Officer,,,"Hi Anas,
+
+Spotted something relevant to your marketplace-scale background: a mobile body-scan layer is a narrower integration problem than most CTOs assume once it's API/SDK based, no in-house build required.
+
+Two phone photos return 80+ body measurements and body composition in under 45 seconds. No computer-vision team to hire; a basic integration usually runs 2-4 weeks.
+
+112,100 scans ran through the platform in 2025 across all customers.
+
+Worth a quick chat on the technical side?
+
+Olena","Hi Anas,
+
+Following up on the integration specifics: the SDK handles capture and validation, the API returns structured measurements and a 3D model, and data flows straight into your own product database. Nothing sits in a separate dashboard by default.
+
+Worth 15 min to walk through the data flow? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Anastasiia,Stovpova,https://linkedin.com/in/anastasiia-stovpova-29654412a,Welltech,New Channels Lead,,,"Hi Anastasiia,
+
+Quick note. This might land better with whoever owns feature decisions, but you're close to what drives engagement at Welltech, and I wanted to flag it directly.
+
+We built a mobile scan layer: two phone photos return 80+ body measurements and a 3D progress model in under 45 seconds, a feature that gives members something to see beyond a flat weight number.
+
+One platform we work with ran 34,000 scans in 2025 on this pattern.
+
+Worth a quick chat, or a pointer to whoever owns this?
+
+Olena","Hi Anastasiia,
+
+Following up. If body-progress features aren't your lane, no worries, a pointer to whoever owns the app roadmap would help.
+
+If they are: a visible body change tends to be a stronger re-engagement trigger than most lifecycle pushes.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Carmen,Domínguez,https://linkedin.com/in/carmen-dominguez-rodriguez,Welltech,Director of Organic Growth & Partnerships,,,"Hi Carmen,
+
+MyProtein and HBO before Welltech: brands that live or die on whether someone comes back. You now own organic growth across the whole app portfolio.
+
+A body-progress feature is one of the better organic hooks a wellness app has: real before/after data straight from the member's own scan.
+
+We built a mobile scan layer: two phone photos return 80+ body measurements and a 3D progress model in under 45 seconds.
+
+One platform we work with ran 34,000 scans in 2025 on this pattern.
+
+Might be worth a quick chat?
+
+Olena","Hi Carmen,
+
+Following up with the organic angle specifically: a real 3D before/after is shareable content a stock testimonial can't match, and it comes straight from the member's own scan.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Dmytro,Polieshko,https://linkedin.com/in/dpolieshko,Welltech,Lead of BI Team,,,"Hi Dmytro,
+
+Quick note given you power product and growth decisions from BI: body composition rarely gets captured past self-reported weight in a wellness app, leaving nothing structured to build a retention model on.
+
+We built a mobile scan layer: two phone photos return 80+ body measurements and body composition in under 45 seconds, structured output your analytics stack could actually ingest.
+
+112,100 scans ran through the platform in 2025 across all customers.
+
+Open to a quick chat?
+
+Olena","Hi Dmytro,
+
+Following up with the data side specifically: structured measurements and body composition per scan, timestamped, is the kind of input a BI team can build a real retention model on instead of guessing from weight alone.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Isa,Vilacides,https://linkedin.com/in/vilacides,Welltech,Director of Ecosystem and Infrastructure,,,"Hi Isa,
+
+Curious about your take given your infrastructure background at GitHub and CloudBees: a body-scan feature is more a workflow question than a research one once it's API/SDK based.
+
+Two phone photos return 80+ body measurements and body composition in under 45 seconds, no computer-vision team to hire. Basic integration usually runs 2-4 weeks.
+
+112,100 scans ran through the platform in 2025 across all customers.
+
+Worth a quick chat on the technical side?
+
+Olena","Hi Isa,
+
+Following up on the infrastructure side: the SDK runs capture and validation client-side, the API returns structured measurements and a 3D model server-side, and it sits alongside the rest of your ecosystem layer instead of replacing it.
+
+Worth 15 min to walk through the architecture? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Liliia,Khomyn,https://linkedin.com/in/liliia-khomyn-88642b153,Welltech,Head of Advanced Analytics and BI,,,"Hi Liliia,
+
+Quick thought on the analytics side: body composition rarely gets captured past self-reported weight in a wellness app, which means there's no real signal for a churn model to use.
+
+We built a mobile scan layer: two phone photos return 80+ body measurements and body composition in under 45 seconds, structured enough to feed straight into analytics.
+
+One platform we work with ran 34,000 scans in 2025 on this pattern.
+
+Open to a quick chat?
+
+Olena","Hi Liliia,
+
+Following up with the analytics case specifically: timestamped body composition per scan gives you what you need to build a churn model on physical change, instead of proxying it through login frequency.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Mariia,Ostapenko,https://linkedin.com/in/mariia-ostapenko,Welltech,Product Analytics Manager,,,"Hi Mariia,
+
+Quick idea for you: the retention curve you're probably watching drops hardest in the first weeks, exactly when body composition hasn't moved much on a scale but has started to change in ways a member can't see yet.
+
+We built a mobile scan layer: two phone photos return 80+ body measurements and a 3D progress model in under 45 seconds.
+
+112,100 scans ran through the platform in 2025 across all customers.
+
+Might be worth a quick chat?
+
+Olena","Hi Mariia,
+
+Following up with the monetization angle specifically: members who can see progress convert to renewal at a noticeably better rate than ones only watching a subscription countdown.
+
+Worth 15 min to walk through the data? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Mehdi,Dogguy,https://linkedin.com/in/mehdidogguy,Welltech,Director of Engineering,,,"Hi Mehdi,
+
+Given your data and AI product years at Adevinta, a body-scan layer is closer to an integration problem than a research one once you're working from a pre-trained API/SDK.
+
+Two phone photos return 80+ body measurements and body composition in under 45 seconds. No computer-vision team to hire; basic integration usually runs 2-4 weeks.
+
+One platform we work with ran 34,000 scans in 2025 through one integration.
+
+Worth a quick chat on the technical side?
+
+Olena","Hi Mehdi,
+
+Following up on the engineering specifics: the SDK handles capture and pose validation client-side, the API returns structured measurements and a 3D model, and it drops straight into your existing data pipeline. No new pipeline required.
+
+Worth 15 min to walk through the data flow? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Nick,"Lange, PhD",https://linkedin.com/in/ndlange,Welltech,Lead User Experience Researcher,,,"Hi Nick,
+
+Quick note given your research background: the interesting question with a body-scan feature isn't whether it's accurate, it's whether a member trusts what they see enough to act on it.
+
+We built a mobile scan layer: two phone photos return 80+ body measurements and a 3D progress model in under 45 seconds, real change a member can compare across check-ins.
+
+112,100 scans ran through the platform in 2025 across all customers.
+
+Worth a quick chat to explore?
+
+Olena","Hi Nick,
+
+Following up on the research angle specifically: how a member reads a 3D comparison, and whether it changes what they do next, is exactly the kind of question a research team could test before a full rollout.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Peter,Turek,https://linkedin.com/in/pturek,Welltech,Director of Engineering,,,"Hi Peter,
+
+Got me thinking about your background running distributed engineering teams at OLX scale: a body-scan layer is a smaller integration than most engineering leads expect once it's API/SDK based.
+
+Two phone photos return 80+ body measurements and body composition in under 45 seconds. No computer-vision team to hire; basic integration usually runs 2-4 weeks.
+
+One platform we work with ran 34,000 scans in 2025 through one integration.
+
+Worth a quick chat on the technical side?
+
+Olena","Hi Peter,
+
+Following up on the architecture: the SDK runs client-side capture and validation, the API returns structured measurements and a 3D model, and your team decides what gets stored versus discarded after processing.
+
+Worth 15 min to walk through it? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Svitlana,Rohova,https://linkedin.com/in/svitlanarohovamarketing,Welltech,Head of Content Product,,,"Hi Svitlana,
+
+Thought I'd share, given your focus on content that ties storytelling to product strategy: a body scan produces content most wellness apps don't have, a real before/after image pulled straight from the member's own data.
+
+We built a mobile scan layer: two phone photos return 80+ body measurements and a 3D progress model in under 45 seconds.
+
+One platform we work with ran 34,000 scans in 2025 on this exact pattern.
+
+Might be worth a quick chat?
+
+Olena","Hi Svitlana,
+
+Following up with the content-product angle specifically: a 3D progress comparison is content that writes itself from the member's own data, stronger than a generic milestone graphic.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Victoria,Freeth,https://linkedin.com/in/victoria-freeth,Welltech,UX Researcher,,,"Hi Victoria,
+
+IoT and health-focused research at Dyson, now UX research inside a wellness app portfolio. Body composition tracking usually sits at exactly that intersection, physical data a camera can capture better than a self-report ever will.
+
+We built a mobile scan layer: two phone photos return 80+ body measurements and a 3D progress model in under 45 seconds.
+
+112,100 scans ran through the platform in 2025 across all customers.
+
+Worth a quick chat to explore?
+
+Olena","Hi Victoria,
+
+Following up on the research side: how a member interprets a 3D body comparison, and whether it actually drives behaviour, feels worth testing before it ships broadly.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Sebastian,Muggelberg,https://linkedin.com/in/muggelberg,Yazio,Product Lead - Monetization,,,"Hi Sebastian,
+
+Quick thought on the monetization side. Early cancellations usually land before someone can see their own body change, even when the food log is doing exactly its job.
+
+We built a two-photo phone scan that returns 80+ body measurements and a 3D progress view in under 45 seconds via SDK, made to drop into a tracking timeline.
+
+Worth a quick chat to explore?
+
+Olena","Hi Sebastian,
+
+One angle worth flagging for the PRO funnel: subscribers who can see a body-progress view tend to give the plan more time before they decide to churn. One platform running check-in scans hit 34,000 in 2025.
+
+Worth 15 min to walk through it? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Sebastian,W.,https://linkedin.com/in/weber2,Yazio,CEO & Co-Founder,,,"Hi Sebastian,
+
+Had a thought watching how nutrition apps handle motivation. Calorie and macro logs show what someone ate. They rarely show what it is doing to their body, and that gap is usually where subscribers quietly stop opening the app.
+
+We built a two-photo phone scan, 80+ body measurements and a 3D progress view in under 45 seconds, that drops into a food-tracking timeline via SDK.
+
+Might be worth a quick chat?
+
+Olena","Hi Sebastian,
+
+The pattern we keep seeing in nutrition apps: subscribers stay longer once they can see body composition move alongside the scale number. Across all 3DLOOK customers, scan volume reached 112,100 in 2025.
+
+Worth 15 min to walk through it for Yazio? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Talita,Morato,https://linkedin.com/in/talita-morato,Yazio,Product Lead,,,"Hi Talita,
+
+Noticed overlap with what you own. Tracking Experience is usually where a food log turns into something a subscriber trusts, and weight is the thinnest signal in it: it stalls for weeks while body composition is already shifting.
+
+We built a two-photo scan, 80+ body measurements and a 3D progress view in under 45 seconds via SDK, built to sit inside exactly that kind of tracking surface.
+
+Open to a quick chat?
+
+Olena","Hi Talita,
+
+Following up because Tracking Experience is the natural home for this: a body-composition view next to weight gives subscribers a reason to keep logging past week two, when most drop-off happens. One platform running check-in scans hit 34,000 in 2025.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Adriana,Molero Cuartin,https://linkedin.com/in/adriana-r-molero,Yazio,Team Lead of Product Growth,,,"Hi Adriana,
+
+Curious about your take on activation past the first log. New users try the food diary for a week or two, and what decides whether they stay is usually whether they can see it working on their body, beyond the meals they logged.
+
+We built a two-photo phone scan, 80+ body measurements and a 3D progress view in under 45 seconds via SDK, built to slot into that early activation window.
+
+Might be worth a quick chat?
+
+Olena","Hi Adriana,
+
+Following up with the growth angle specifically: a visible body-progress view in the first weeks gives new subscribers a reason to open the app again before the trial ends. One platform running it hit 34,000 scans in 2025.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Alexandra,Vorotnikova,https://linkedin.com/in/alexandra-vorotnikova-2aa441174,Yazio,Senior Product Manager,,,"Hi Alexandra,
+
+Spotted something in how B2C subscription products usually solve motivation. Once the food log becomes routine, the next feature that moves retention is almost always a visible progress view, and most teams weigh months of computer-vision work to ship one.
+
+We built that layer already: a two-photo scan, 80+ body measurements and a 3D progress view in under 45 seconds via SDK, ready to drop in without a build cycle.
+
+Worth a quick chat to explore?
+
+Olena","Hi Alexandra,
+
+On the monetization side specifically: a body-progress feature tends to be the kind of visible upgrade that supports a PRO tier, without months of in-house computer-vision work. Across all 3DLOOK customers, total scan volume reached 112,100 in 2025.
+
+Worth 15 min to walk through the integration? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Anna,I.,https://linkedin.com/in/anna-i-b0479341,Yazio,Senior Product Manager,,,"Hi Anna,
+
+This stood out from your background in retention and engagement: most nutrition apps measure adherence through logging streaks, when the thing that actually keeps someone subscribed is seeing their body respond to the plan.
+
+We built a two-photo phone scan, 80+ body measurements and a 3D progress view in under 45 seconds via SDK, meant to sit next to that kind of engagement data.
+
+Open to a quick chat?
+
+Olena","Hi Anna,
+
+Given your retention background specifically: platforms that pair a food log with a visible body-progress view tend to hold subscribers past the point where logging alone gets stale. One platform running check-in scans hit 34,000 in 2025.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Anna,K.,https://linkedin.com/in/annakosminkova,Yazio,Senior Product Manager,,,"Hi Anna,
+
+Quick note given your pharma background: body composition is a much better read on whether a nutrition plan works than weight alone, and most tracking apps still only ask users to log the scale.
+
+We built a two-photo phone scan: 80+ body measurements and body composition (BMI, fat mass, lean mass), returned in under 45 seconds via SDK, structured enough to sit inside a product roadmap without a build project.
+
+Might be worth a quick chat?
+
+Olena","Hi Anna,
+
+Following up on the product side: body composition data, like fat mass and lean mass, is a structured metric that is easy to justify adding to a roadmap, and quick to test because it ships as an SDK integration. One platform running it hit 34,000 scans in 2025.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Florian S.,Weißenstein,https://linkedin.com/in/weissenstein,Yazio,Co-Founder & President,,,"Hi Florian,
+
+Wanted to reach out on the retention side of the nutrition category. A food diary proves someone logged their meals, but it rarely proves the plan is working on their body, and that gap is usually where long-term subscribers start to drift.
+
+We built a two-photo phone scan, 80+ body measurements and a 3D progress view in under 45 seconds via SDK, made to close exactly that gap inside an existing app.
+
+Worth a quick chat to explore?
+
+Olena","Hi Florian,
+
+Following up with the retention logic behind this: platforms that add a visible body-progress view next to the food log tend to keep subscribers past the point where logging alone stops feeling rewarding. Across all 3DLOOK customers, scan volume reached 112,100 in 2025.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Guillem,Arlàndez Carretero,https://linkedin.com/in/guillemarlandez,Yazio,Senior Product Manager,,,"Hi Guillem,
+
+Caught my eye given your gaming background: the mechanic that keeps a player coming back is almost always visible progress, and nutrition apps still mostly lean on logging streaks for that job while body composition barely gets tracked.
+
+We built a two-photo phone scan, 80+ body measurements and a 3D progress view in under 45 seconds via SDK, close to the kind of visible-state mechanic your background is built around.
+
+Might be worth a quick chat?
+
+Olena","Hi Guillem,
+
+Following up on the mechanic itself: a 3D progress view works the same way a streak does, it gives someone a state to check on, grounded in an actual body change. One platform running it hit 34,000 scans in 2025.
+
+Worth 15 min to see it? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Jakob,Otto,https://linkedin.com/in/jakobotto,Yazio,Product Lead - Web,,,"Hi Jakob,
+
+Quick idea for you on the web side specifically. Most progress-tracking flows in nutrition apps are still built around numbers typed into a form, and a body scan is one of the few web-native ways to make that feel real without an app install.
+
+We built a two-photo phone scan, 80+ body measurements and a 3D progress view in under 45 seconds via SDK, that works from a browser camera the same way it does in-app.
+
+Open to a quick chat?
+
+Olena","Hi Jakob,
+
+Following up on the web-specific angle: a browser-based progress scan can sit right in the web tracking flow, giving visitors a reason to convert before they ever download the app. One platform running check-in scans hit 34,000 in 2025.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Michel,Ziade,https://linkedin.com/in/michel-ziade,Yazio,Senior Product Manager,,,"Hi Michel,
+
+Made me think of your line about turning taps into habits. A calorie log is a tap, repeated daily, but the habit only survives once someone can see their body actually changing, beyond the streak count.
+
+We built a two-photo phone scan, 80+ body measurements and a 3D progress view in under 45 seconds via SDK, meant to be the real signal behind the habit loop.
+
+Worth a quick chat to explore?
+
+Olena","Hi Michel,
+
+Following up with the experimentation angle: a body-progress view is testable the same way a streak mechanic is, and it taps a stronger reward signal because it reflects the user's actual body. Across all 3DLOOK customers, scan volume hit 112,100 in 2025.
+
+Worth 15 min to walk through it? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Victoria,Kotlova,https://linkedin.com/in/victoria-kotlova,Yazio,Senior Product Manager,,,"Hi Victoria,
+
+Got me thinking about the work you mention on progress visualization and streaks driving a 10% lift in first-week retention. Body composition is the one progress signal that visualization has not reached yet in most nutrition apps.
+
+We built a two-photo phone scan, 80+ body measurements and a 3D progress view in under 45 seconds via SDK, built to extend that kind of visualization into actual body change.
+
+Might be worth a quick chat?
+
+Olena","Hi Victoria,
+
+Following up because this sits close to what you already shipped: a 3D progress view is the natural next layer past streaks and challenges, tied to something the user can actually see change on their body. One platform running it hit 34,000 scans in 2025.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Alvaro,Duran Tovar,https://linkedin.com/in/alvaro-duran-tovar-2737062b,Yazio,Senior Machine Learning Engineer,,,"Hi Alvaro,
+
+With your computer vision background, you would know exactly what building a body-scan model from two phone photos actually takes, months of data collection, a validation pipeline, drift monitoring, before it reaches production.
+
+We already run that stack, 80+ body measurements and a 3D model from two photos in under 45 seconds, shipped as an SDK/API, which keeps your team focused on the food-tracking product.
+
+Worth a quick chat to explore?
+
+Olena","Hi Alvaro,
+
+Following up with the build math specifically: a basic SDK integration usually runs 2-4 weeks on the customer side, against months to reach production accuracy building a scan model in-house, with ongoing drift monitoring after that.
+
+Worth 15 min to walk through the API? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Artem,Zasypalov,https://linkedin.com/in/artem-zasypalov,Yazio,Engineering Manager for the Monetization Squad,,,"Hi Artem,
+
+Quick one on the Monetization Squad's roadmap. A body-progress feature usually sounds like a straightforward addition until someone maps out the photo pipeline, pose validation and drift monitoring a working scan model actually needs.
+
+We ship that as a ready SDK/API: two photos in, 80+ body measurements and a 3D model out, under 45 seconds, no in-house computer-vision build required on your side.
+
+Worth a quick chat to explore?
+
+Olena","Hi Artem,
+
+Following up with the integration side specifically: teams usually get a basic scan flow live in 2-4 weeks through the SDK, well inside a normal sprint cycle, against months building a model from scratch.
+
+Worth 15 min to see the API docs? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Carolin,Thölke,https://linkedin.com/in/carolin-thoelke,Yazio,Director of User Acquisition,,,"Hi Carolin,
+
+You run user acquisition at Yazio. The harder number behind CAC is usually what happens after install: users who never see the plan working on their body tend to churn before acquisition spend pays back.
+
+We built a two-photo phone scan, 80+ body measurements and a 3D progress view in under 45 seconds via SDK, made to give new users that proof early enough to matter for payback.
+
+Open to a quick chat?
+
+Olena","Hi Carolin,
+
+Following up on the retention side of acquisition specifically: a visible body-progress view in the first weeks is one of the few levers that improves payback without spending more to acquire. One platform running check-in scans hit 34,000 in 2025.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Eva,Lamprou,https://linkedin.com/in/eva-lamprou-933a358a,Yazio,Head of User Success,,,"Hi Eva,
+
+Saw your activity around user success and coaching. Most of what determines whether a subscriber stays past month one has little to do with support tickets, and a lot to do with whether they can see the plan working on their body.
+
+We built a two-photo phone scan, 80+ body measurements and a 3D progress view in under 45 seconds via SDK, meant to give a user success team something concrete to point to.
+
+Might be worth a quick chat?
+
+Olena","Hi Eva,
+
+Following up on the coaching angle: a body-progress view gives a user success team a real conversation starter with an at-risk subscriber, grounded in their own data. One platform running it hit 34,000 scans in 2025.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Julian,Pohl,https://linkedin.com/in/julian-pohl-96935770,Yazio,(Interim) Head of User Success,,,"Hi Julian,
+
+Couldn't help but ask, given the interim head of user success role: what does the team currently show a subscriber who says the plan is not working? Usually just the food log, which does not prove much about the body itself.
+
+We built a two-photo phone scan, 80+ body measurements and a 3D progress view in under 45 seconds via SDK, that gives user success an actual answer to that question.
+
+Worth a quick chat to explore?
+
+Olena","Hi Julian,
+
+Following up because this sits right in user success territory: a body-progress view gives a retention save call something real to work with, beyond a discount offer. Across all 3DLOOK customers, scan volume hit 112,100 in 2025.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Marius,Krämer,https://linkedin.com/in/mariuskraemer,Yazio,CTO,,,"Hi Marius,
+
+Circling back after connecting. Leading platform and architecture for a global app, the ""why don't we just build this"" question probably comes up whenever a body-scan feature is floated, and the honest answer usually involves a multi-month research and validation cycle.
+
+We run that stack already: two photos in, 80+ body measurements and a 3D model out, under 45 seconds, delivered as an SDK/API. That turns it into a scoping conversation on your side.
+
+Worth a quick chat to explore?
+
+Olena","Hi Marius,
+
+Following up with the integration math specifically: teams typically get a basic scan flow live through our SDK in 2-4 weeks, versus a multi-month build-and-validate cycle, with ongoing drift monitoring in-house.
+
+Worth 15 min to walk through the API and data flow? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Paul,Woitaschek,https://linkedin.com/in/paul-woitaschek-4a9952aa,Yazio,Director of Product Engineering,,,"Hi Paul,
+
+Quick reaction to ""focused on strong teams and scalable systems"" on your profile, because that is basically the case for buying a body-scan layer instead of building one: less scope pulled from an engineering team already stretched across a consumer app at this scale.
+
+We ship it as an SDK/API: two photos in, 80+ body measurements and a 3D model out, under 45 seconds. Product engineering then integrates it instead of running a computer-vision project from zero.
+
+Worth a quick chat to explore?
+
+Olena","Hi Paul,
+
+Following up on the integration side: a basic scan flow through our SDK is typically live in 2-4 weeks, small enough not to compete with the rest of the roadmap, versus a multi-month build for an in-house computer-vision pipeline.
+
+Worth 15 min to see the API and data flow? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Peter,Kell,https://linkedin.com/in/peterfkell,Yazio,Head of Data Analytics,,,"Hi Peter,
+
+Thought I'd share this given the data platform work: body composition is a structured metric most nutrition apps never capture, even though it would feed personalization (meal targets, coaching nudges) far better than weight alone.
+
+We built a two-photo phone scan: 80+ body measurements and body composition (BMI, fat mass, lean mass), returned in under 45 seconds via SDK, structured enough to plug straight into a personalization pipeline.
+
+Open to a quick chat?
+
+Olena","Hi Peter,
+
+Following up on the personalization angle specifically: structured body composition data gives a segmentation input weight alone cannot, and it arrives already structured, no manual cleanup. Across all 3DLOOK customers, scan volume hit 112,100 in 2025.
+
+Worth 15 min to see the data schema? Grab a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"

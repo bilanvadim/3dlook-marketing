@@ -29,6 +29,39 @@ Approved, with these answers to the draft's open questions:
 
 Only Open question #7 (EU compliance answers) remains open.
 
+## Vadim's decisions 2026-09-28 (persona widened after step 4)
+
+The Sales Navigator export came in pulled by company, not by title: 344 rows, 321 joined, 22 SEND under the 09-14 persona. Vadim reviewed the skipped list (`skipped-detail.md`) and took **all six pools** proposed from it:
+
+- **A. PM / PO titles at multi-app groups.** The "PM only under 200 employees" rule no longer applies to Welltech, BetterMe and Kilo: at a multi-app group a PM / PO / Growth PM / AI PM owns one app the way a single-app company's product head does. Payment, billing and physical-product PMs stay out.
+- **B. Retention and CRM owners.** Retention Manager, Head / Manager of CRM, CRM Conversion Lead, Director of Engagement & Retention are now in the persona (retention angle).
+- **C. Entry-point executives where no product lead is in the export:** COO, Chief Business Development Officer, founder-level board members at sub-200 companies, Chief of Staff to the CPO. Referral angle: ask for the owner of the app roadmap.
+- **D. CTO / Head of Technology as a cold first touch** with the `technical-integration` angle. Overrides "never a cold first touch" for this campaign. Known risk: the US campaign got 0 replies from 60 cold technical invites; this campaign measures it again separately.
+- **E. Product-adjacent leads:** Head of Content Product, Product Lead / Product Growth Lead with a commercial background, Director of Product Engineering, Head of Data Science.
+- **F. The Yazio reserve** (Senior PMs and Product Lead Web above the old 5-per-company cap).
+- **UK-based people at in-scope groups stay on `olena`** (Welltech: Elle Pope, Shimrit Shiran), as an exception to geo discipline for this campaign only: one company = one profile.
+
+**Caps replaced.** Taking every pool breaks the 09-14 caps (≤5 per company, ≤12 per group, ≤15% per group) by design; BetterMe and Welltech alone hold 20+ each. New caps for this campaign: **≤25 invites per company or group (raised to ≤30 in the addendum below); the 15% rule is dropped**. The concentration risk that sank 07-21 (39% in one account) is accepted knowingly and must be reported per group at `analyze`.
+
+**Addendum, same day (after v2 validation, 86 SEND): Vadim took all of the further ~19 proposed.**
+
+- **G. Directors and executives the v2 run missed:** Kilo group CEO / Managing Director / Country Manager (referral: nobody in the export owns DoFasting or Keto Cycle, so this overrides "the group CEO is not the buyer" for Kilo only); Director of Portfolio and Operations, Director of Ecosystem, Director of Analytics & Experimentation, Directors / Head of Engineering (technical-integration), New Channels Lead, MD of Venture Building, Director Business Operations, Director / Head of Data & Analytics.
+- **H. CFO / Head of Finance, referral angle only** ("who owns the app roadmap?"), at every company on the list including Kilo's Group CFO. Finance staff below the head (accountants, controllers, tax, treasury, FP&A) stay out.
+- **Caps raised to ≤30 per company or group** (Welltech lands at ~27).
+- **Sequencing:** referral-angle people (pools C, G-exec, H) are sent only after the product / retention people at the same company have been invited. Dmitry Zenevich (pool A) stays.
+
+**Second addendum, same day (after v3 validation, 104 SEND): Vadim took both further tiers (~21).** A headline + bio pass over the 216 remaining FAILs found:
+
+- **I. Product design and UX research leadership:** Senior Director of Product Design / User Research (Raz Schwartz, Welltech, UK-based, same exception as Pope and Shiran), Lead UX Researchers (Nick Lange, Victoria Freeth, UK). Product angle: they own the scan's user experience.
+- **J. Analytics / BI heads everywhere, not just at Yazio and Lifesum:** Head of Advanced Analytics & BI, BI Lead, Head of BI, Product Growth & Monetization Analytics Manager (Welltech, Kilo). Product or retention angle; Kilo's is referral.
+- **K. Senior ML / AI and monetization engineering:** Lead ML Engineer, Senior AI Engineer, Engineering Manager for the Monetization Squad. Technical-integration angle: they are the "we could build this" voice, so they are reached directly.
+- **L. Commercial and strategy roles with product scope:** Technical PM running GDPR compliance and physical products (BetterMe smart scale), Senior Product Development Manager (physical products), Digital Strategy & Growth Manager, Head of Corporate Development / FP&A, Head of Finance (BetterMe, pool H consistency), Director of Organic Growth (Welltech, UK), Head / Interim Head of User Success and Director of Operations & Customer Success (Yazio, retention angle), Director of User Acquisition (Yazio, by name, as an exception to the UA exclusion).
+- **M. Health-insurer prevention channel (new angle `insurer-prevention`):** Gymondo's Head of Business Development and Senior BD Manager for Prevention. Gymondo sells prevention courses through German statutory health insurers; verified body data for insurer-funded programmes is the wellness-rewards verification use case. Only claims already in `compliance.md` / `proof-points.md`; no statement on insurer reimbursement rules.
+- **Caps raised to ≤35 per company or group** (Welltech lands at ~35, BetterMe ~30).
+- **No Sales Navigator re-pull by title for now;** messages go out from this list. **Kilo's wave 2 is released on a date** (one week after its wave 1), not on Renata Roze accepting.
+
+Still out: user acquisition / ASO / paid media, BD and partnerships managers, user success / support, finance, HR, engineering below CTO, design, content producers, coaches and clinicians.
+
 > **What the UK run teaches this one.**
 > 1. At a 50-employee floor the UK list came out at 4 companies, and 10 at 25. The floor, not the product filter, did most of the killing, and it took three research passes to find that out. Vadim set this campaign's floor at 25 from the start (2026-09-14), so step 2 builds one list in one pass, with no floor rebuild.
 > 2. Pulling Sales Navigator by company returned whole staff lists: 72 of 98 UK people were never candidates. The 81 Freeletics rows in that same export hold 21 buyer-type titles, mostly engineering. Step 3 here pulls by title.
@@ -147,19 +180,24 @@ FitXpress becomes the embedded body-measurement and progress-visualisation layer
 - **Head of Product / VP Product / Chief Product Officer, primary.** Owns the roadmap and the build-vs-buy call on a BodyScan feature. Cares about feature velocity, activation and engagement. Likely objection: "we could build this", which is sharper in Europe than in the UK (reason #3). The answer: a pre-trained model via API/SDK, with no CV team to hire; `icp-detail.md` gives 2-4 weeks as the typical basic integration.
 - **Titles with subscription, retention or engagement in the name (Head of Retention, VP Engagement, Head of Growth, Chief Subscription Officer), primary.** Owns the number this use case moves. On the US digital-fitness campaign, the only interested reply came from this kind of title (a Chief Subscription & Content Officer, answering the retention angle). N=1, so treat it as a search priority, not a rule.
 - **Founder / CEO / Managing Director, primary for single-app companies under ~200 people.** At multi-brand groups (Kilo, Welltech, BetterMe) the group CEO is not the buyer. The GM or product lead of a specific app brand is.
-- **CTO / VP Engineering, `technical-integration` angle, P3, never a cold first touch.** The US campaign got 0 replies from 60 cold `technical-integration` invites. They evaluate and champion internally once a product owner is engaged.
-- **Not the buyer:** marketing, brand, content, community, social / PR, partnerships and sales, HR, finance, fitness programming, coaches and nutritionists, customer support, privacy and legal counsel, board and supervisory-board members, investors, freelancers and translators. The 07-21 compliance message went to Oviva's Head of Privacy and got a flat "Not interested".
+- **CTO / VP Engineering / Head of Technology, `technical-integration` angle, P3, cold first touch allowed (Vadim 2026-09-28).** The US campaign got 0 replies from 60 cold `technical-integration` invites, so this lane is measured separately.
+- **Product Manager / Product Owner / Growth PM / AI PM at multi-app groups (Welltech, BetterMe, Kilo), P2 (Vadim 2026-09-28).** Each owns one app's roadmap. Not payment, billing or physical-product PMs.
+- **Retention and CRM owners, P2 (2026-09-28):** Retention Manager, Head / Manager of CRM, CRM Conversion Lead. Retention angle.
+- **Entry-point executives, P3 (2026-09-28):** COO, Chief BD Officer, founder-level board members at sub-200 companies, Chief of Staff to the CPO, only where the export has no product lead. Referral angle.
+- **Product-adjacent leads, P3 (2026-09-28):** Head of Content Product, Director of Product Engineering, Head of Data Science; Director of Portfolio / Ecosystem / Analytics & Experimentation / Business Operations, Director or Head of Engineering or Data & Analytics, New Channels Lead, MD of Venture Building.
+- **CFO / Head of Finance, and Kilo's group CEO / MD / Country Manager, P3 referral only (2026-09-28).** Sent after the product people at the same company.
+- **Not the buyer:** finance staff below CFO / Head of Finance / Head of FP&A, marketing, user acquisition / ASO / paid media (one named exception, Yazio's Director of UA), brand, content production, community, social / PR, partnerships and sales, HR, finance, fitness programming, coaches and nutritionists, customer support, privacy and legal counsel, board and supervisory-board members, investors, freelancers and translators. The 07-21 compliance message went to Oviva's Head of Privacy and got a flat "Not interested".
 
 ### Target buyer persona: Sales Navigator pull for step 3
 
 **Pull by title filter inside the approved company list, never by company alone.**
 
-- **Titles to include:** Founder, Co-Founder, CEO, Managing Director, General Manager; Chief Product Officer, VP / Head / Director of Product, Group Product Manager, Product Lead; Head / VP / Director of Growth, Retention, Engagement or Subscription; CTO and VP Engineering (tagged P3).
-- **Product Manager titles** only at companies under 200 employees.
-- **Invite caps:**
-  - ≤5 invites per company.
-  - For multi-brand groups, ≤5 per app brand and ≤12 per group.
-  - No company or group above 15% of the campaign's invites. On 07-21, 39% of sends went to one account; the US campaign put 48% of its invites into two.
+- **Titles to include:** Founder, Co-Founder, CEO, Managing Director, General Manager; Chief Product Officer, VP / Head / Director of Product, Group Product Manager, Product Lead; Head / VP / Director of Growth, Retention, Engagement or Subscription; CTO, VP Engineering, Head of Technology (P3); since 2026-09-28 also Retention Manager, Head / Manager of CRM, COO, Chief BD Officer, Chief of Staff to the CPO, Head of Content Product, Director of Product Engineering, Head of Data Science.
+- **Product Manager titles** at companies under 200 employees, and since 2026-09-28 at multi-app groups of any size (Welltech, BetterMe, Kilo).
+- **Invite caps (replaced 2026-09-28, Vadim):**
+  - ≤35 invites per company or group (≤25, then ≤30, earlier the same day).
+  - The 15% per-group rule is dropped for this campaign. On 07-21, 39% of sends went to one account; the US campaign put 48% of its invites into two. The risk is accepted knowingly; `analyze` reports replies per group.
+  - (Was 2026-09-14: ≤5 per company, ≤5 per brand and ≤12 per group, ≤15% per group.)
 - The 81 Freeletics rows already in the UK export (`2026-09-01-uk-erakulis-similar/sales-nav-raw/people_raw.csv`) were pulled by company and are **not reused**.
 
 ## Anti-cases

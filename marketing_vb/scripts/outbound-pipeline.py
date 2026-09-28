@@ -177,6 +177,11 @@ def company_keys(name: str) -> set[str]:
     if outside:
         keys.add(norm_company(outside))
 
+    # "BetterMe: Health & Fitness Apps" -> betterme (16 people lost to the tagline, 2026-09-28)
+    head = outside.split(":", 1)[0].strip(" -,") if ":" in outside else ""
+    if head and len(norm_company(head)) >= 4:
+        keys.add(norm_company(head))
+
     for inner in re.findall(r"\(([^)]*)\)", base):
         inner = re.sub(r"^\s*(incl\.?|including|formerly|fka|aka|now)\s+", "", inner, flags=re.I)
         for part in re.split(r"\s*/\s*|\s+or\s+", inner):
