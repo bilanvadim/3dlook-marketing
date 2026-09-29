@@ -114,8 +114,9 @@ planner exception).** Ты прозу не пишешь, поэтому вмес
    - Estimated total word count (1500-3000 для средней статьи; comparison / workflow-кластер — около 1 900: столько дал редакторский финал 2026-09-11 при target 2 050, ничего существенного не потеряв)
    - **Обязательная FAQ-секция** (§14 guidelines) — 3-8 вопросов из реальных search/procurement запросов (What is…? / Can it replace DXA/manual? / What data is captured? / Is it used for decisioning? / Who reviews the data? / What does FitXpress NOT do?). Ответы 2-5 предложений для GEO/AEO. Если в `aeo_signals` есть релевантные промпты, на которые тело не отвечает, вопросы FAQ бери из них: это измеренный спрос ассистентов, а не догадка. **Не планируй вопрос, на который уже отвечает секция тела** — редактор такие удаляет (в финале 2026-09-11 из четырёх осталось три, вопрос про EEOC ушёл в тело).
    - **Для comparison / workflow-кластера бери структуру редакторского финала** — `brand-assets/style-guides/editorial-rewrites.md` §7: H1 «<Topic>: A Workflow Comparison», скоуп-нота жирной меткой, short answer буллетами, одна таблица сравнения не больше 11 строк, decision framework тремя H3 «… fits when» с короткими буллетами, без таблицы метрик и списка diligence-вопросов, FAQ из трёх вопросов, Next steps в два предложения. Если хаб уже владеет секцией «What FitXpress does NOT do», в кластере её нет: границу несут скоуп-нота и одно предложение в «Where FitXpress fits». **Визуалы:** обложка и не больше двух в тексте, каждый показывает то, чего нет в таблице или списке; в плане таблица `Name | Placement | Concept`.
-   - **Internal links в 4 направления** (§11 guidelines): **up** → hub; **sideways** → related clusters; **down** → BOFU / FitXpress product page; **trust** → accuracy framework + Privacy/Regulatory FAQ (при упоминании accuracy / privacy / HIPAA / GDPR / CCPA / SOC 2 / FDA / retention). Конкретные URL бери из `content_strategy.internal_link_targets` и `existing_urls`.
-   - **CTA по intent** (§15 guidelines): TOFU → soft; MOFU → evaluation; BOFU → direct demo/contact. Не форси один и тот же CTA везде.
+   - **Internal links в 4 направления** (§11 guidelines): **up** → hub; **sideways** → related clusters; **down** → лендинг вертикали из `brand-assets/content-strategy/landing-map.md` (колонка «Link now» строки хаба, решение Вадима 2026-09-29); **trust** → accuracy framework + Privacy/Regulatory FAQ (при упоминании accuracy / privacy / HIPAA / GDPR / CCPA / SOC 2 / FDA / retention). Конкретные URL бери из `content_strategy.internal_link_targets`, `existing_urls` и карты лендингов.
+   - **Down link — в первых 30% тела** (short answer, первые две H2 или первое «Where FitXpress fits»): Clarity показывает дочитывание health-статей на 5–35%. Впиши в план секцию, где он стоит, и анкор из колонки «Anchors» карты. Статья про BMI/weight verification дополнительно ссылается на строку BMI verification. **Title, H1 и meta title статьи не берут primary keyword лендинга** (первый анкор строки): статья держит информационную версию.
+   - **CTA по intent** (§15 guidelines): TOFU → soft; MOFU → evaluation; BOFU → direct demo/contact. Не форси один и тот же CTA везде. Кнопка «Book a demo» ведёт на `{лендинг}#demo`, пока лендинг `planned` — на колонку «Demo button now» карты; никогда на `/contact-us/` и не на отдельную форму статьи. Там, где в карте «none», demo-кнопки нет. Если «Link now» — временная замена, внеси в Open items строку перелинковки (правило 6 карты).
 
 ## Формат вывода
 
@@ -144,7 +145,8 @@ created: YYYY-MM-DD
 - **Existing pages:** {existing_urls — как используем: refresh target / internal link / cannibalization warning}
 - **Cannibalization guardrail:** {дословно из content-plan.md + как соблюдаем узким углом}
 - **Vertical boundary:** {что owns этот vertical и что НЕЛЬЗЯ утверждать}
-- **Internal links planned:** up → {hub} · side → {clusters} · down → {FitXpress/BOFU page} · trust → {accuracy / privacy FAQ}
+- **Internal links planned:** up → {hub} · side → {clusters} · down → {URL из «Link now» карты лендингов} в {секция, в первых 30%} анкором «{анкор из карты}» · trust → {accuracy / privacy FAQ}
+- **Demo button:** {`{лендинг}#demo` / «Demo button now» из карты / none} — по intent
 
 ## Keyword Analysis
 

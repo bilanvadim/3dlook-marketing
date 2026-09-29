@@ -37,6 +37,7 @@ category: ...              # рубрика блога
 
 - [x] intro_hook: <1 строка почему>          # хук в первых 2 предложениях
 - [x] cta_type: <1 строка>                   # CTA там и такого типа, как велит план (soft/evaluation/direct по intent)
+- [x] landing_link: <1 строка>               # down link = «Link now» из brand-assets/content-strategy/landing-map.md, в первых 30% тела, анкор из карты; demo → {лендинг}#demo или «Demo button now»; временная замена → строка перелинковки в Open items
 - [x] anchors_sources: <1 строка>            # смысловые анкоры; сторонние источники не vendor-блоги
 - [x] cannibalization: <1 строка>            # existing_urls не дублируются, guardrail пака соблюдён
 - [x] distinct_intent: <1 строка>            # статья owns один поисковый интент

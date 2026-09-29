@@ -71,8 +71,9 @@ tools: Read, Write, Grep, Bash
 - **Vertical boundary (§9):** статья не выходит за границу vertical (telehealth ≠ GLP-1 eligibility, insurance = underwriting-support, occ. health = intake/documentation). Sensitive vertical → scope note присутствует рано.
 - **Cannibalization (§5):** статья держит узкий угол из плана и не дублирует existing_urls. Если разрослась в near-duplicate хаба — сузь.
 - **Internal links (§11):** присутствуют 4 направления (up/side/down/trust). Отсутствует — добавь из плана.
+- **Down link на лендинг (`brand-assets/content-strategy/landing-map.md`):** URL совпадает с «Link now» строки хаба, стоит в первых 30% тела (считай по словам прозы), анкор из колонки «Anchors» и читается частью предложения. Стоит ниже — перенеси выше, не дублируй. Primary keyword лендинга не в H1/title статьи.
 - **FAQ (§14):** секция есть, ответы 2-5 предложений, включает «what FitXpress does not do» / «used for decisioning?» где relevant.
-- **CTA (§15):** соответствует intent (soft/evaluation/direct), не форсированный demo в TOFU.
+- **CTA (§15):** соответствует intent (soft/evaluation/direct), не форсированный demo в TOFU. «Book a demo» ведёт на `{лендинг}#demo` или «Demo button now» из карты, не на `/contact-us/` и не на форму статьи.
 
 ### Pass 3c — AI-tells sweep + self-check (обязательный)
 

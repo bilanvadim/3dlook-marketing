@@ -167,6 +167,11 @@ echo "--- 6. coordinator verification is one call ---"
 t "report carries term-group balance"  "python3 scripts/article_lint.py $A/final.md --pack $P --report 2>&1 | grep -q 'term group corporate'"
 t "report carries per-section words"   "python3 scripts/article_lint.py $A/final.md --pack $P --report 2>&1 | grep -q 'across 9 H2 sections'"
 
+echo "--- landing map: articles link down to their vertical landing (2026-09-29) ---"
+t "landing map exists with the 30% rule" 'grep -q "within the first 30% of the article body" brand-assets/content-strategy/landing-map.md'
+t "all 4 seo agents read the landing map" '[ $(grep -l "landing-map.md" .claude/agents/seo/seo-planner.md .claude/agents/seo/seo-writer.md .claude/agents/seo/seo-editor.md .claude/agents/seo/seo-publisher.md | wc -l) = 4 ]'
+t "publisher checklist has landing_link" 'grep -q "landing_link:" .claude/agents/seo/seo-publisher.md'
+t "demo never to /contact-us/ in writer" 'grep -q "не на \`/contact-us/\`" .claude/agents/seo/seo-writer.md'
 echo "--- 7. derived agent copies are generated from DEV ---"
 t "sync --check clean"        "python3 scripts/sync-agent-copies.py --check"
 t "sync --dry-run clean"      "python3 scripts/sync-agent-copies.py --dry-run"
