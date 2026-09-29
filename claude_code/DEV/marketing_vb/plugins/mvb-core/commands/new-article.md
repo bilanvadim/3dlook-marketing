@@ -9,7 +9,11 @@ argument-hint: "[topic or slug] [stage (plan/write/edit/publish/full)]"
 
 1. Ahrefs-пул сам (`scripts/ahrefs-keywords.py`, сид без запятых, slug БЕЗ
    даты-префикса — скрипт добавит дату сам; плюс 2-3 head-сида
-   `--slug <slug>--seed-<x>`)
+   `--slug <slug>--seed-<x>`). Сразу за ним AEO-сигналы:
+   `python3 scripts/hubspot-aeo.py topic "<тема>" --slug <slug> --terms "<primary + 2-3 варианта из Ahrefs>"`
+   → `workspace/seo/_aeo/<date>-<slug>.yaml` (HubSpot AEO: какие наши отслеживаемые
+   вопросы к ChatGPT/Gemini/Perplexity в теме, какова видимость 3DLOOK в ответах и что цитируют
+   ассистенты; ~10 с, только чтение). Exit 3 — не STOP: `aeo_signals: unavailable`, идём дальше
 2. `python3 scripts/pack-template.py --check` — свежесть стабильных секций
    пака (exit 1 → перерендери `pack-template.py`; exit 2 = канон уехал — это
    STOP, разбирайся, что изменилось). Затем `context-pack-builder` (read-only —
@@ -84,8 +88,8 @@ argument-hint: "[topic or slug] [stage (plan/write/edit/publish/full)]"
 
 1. `git add` ТОЛЬКО файлов этого слага: `marketing_vb/workspace/seo/articles/<slug>/`,
    `marketing_vb/workspace/seo/_context-packs/<slug>.yaml`,
-   `marketing_vb/workspace/seo/_keywords/<slug>*.yaml` (+ review-файлы, если
-   были). Никогда `git add -A` / `-u`: рядом могут лежать чужие незакоммиченные
+   `marketing_vb/workspace/seo/_keywords/<slug>*.yaml`,
+   `marketing_vb/workspace/seo/_aeo/*-<slug>.yaml` (+ review-файлы, если были). Никогда `git add -A` / `-u`: рядом могут лежать чужие незакоммиченные
    изменения (аутбаунд-крон держит push, если на `main` чужие коммиты — не
    ломай ему это).
 2. Коммит: короткий заголовок «SEO article <slug>: <что сделано>» + 3-5 строк
@@ -99,6 +103,9 @@ argument-hint: "[topic or slug] [stage (plan/write/edit/publish/full)]"
 Одно сообщение в самом конце прогона:
 
 - title (H1) + primary keyword с реальными volume/KD и честная оценка спроса
+- AEO одной строкой: на какие отслеживаемые вопросы ассистентов статья отвечает (видимость
+  3DLOOK сейчас) или «ни один промпт AEO тему не покрывает». Цитирование после публикации
+  ловит понедельничный `hubspot-aeo.py watch`: свежая статья сама попадает в его отчёт
 - H2-список одной строкой на секцию
 - meta title + description дословно, рекомендованный slug
 - вердикты `article_lint.py` и детектора, число слов

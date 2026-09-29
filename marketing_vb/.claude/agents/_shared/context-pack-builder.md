@@ -50,7 +50,7 @@ proof-points.md, published-articles-inventory.md — рендер уже про�
 координатор), ТОПИКОВЫЕ claims сверх FXS-* (кейсы, фичи, цифры конкретной
 вертикали — вот за ними иди в источники), claims_NOT_to_use_here, ICP-срез
 (audience.md/icp-detail.md — только нужный сегмент), content_strategy,
-internal_link_targets, keywords_raw (файлы уже на диске), tone-поправки под
+internal_link_targets, keywords_raw и aeo_signals (файлы уже на диске), tone-поправки под
 жанр. Если тема требует claim, противоречащий stable-секции, — не правь её
 молча: пометь конфликт в хендбеке координатору.
 
@@ -138,6 +138,12 @@ internal_link_targets, keywords_raw (файлы уже на диске), tone-п
 - **`null` у volume/difficulty значит «у Ahrefs нет цифры», а НЕ ноль.** Разница принципиальная: ноль это измеренное отсутствие спроса, null это отсутствие измерения. Не схлопывай их и не подставляй 0.
 - Если скрипт недоступен или вернул ошибку — передай `keywords_raw: unavailable` с причиной. Planner тогда идёт по TBD-ветке и пишет об этом в plan.md. **Цифры не выдумывай ни при каких условиях.**
 - **Зачем:** `seo-planner` объявлял вход `keywords_raw` с самого начала, но producer'а не существовало — Phase 1 читала пустоту в каждом прогоне, и volume/difficulty оставались TBD структурно. Первый же реальный прогон (2026-08-26) показал цену: у темы `remote body measurement for online fitness coaching` измеренного спроса **нет вообще**, при том что статья была написана и доведена до publish-package именно под неё.
+
+### 7e. Select AEO signals (только для `track = seo`)
+- Ищи свежий файл `workspace/seo/_aeo/{YYYY-MM-DD}-{slug}.yaml`. Его пишет `scripts/hubspot-aeo.py topic` (HubSpot AEO: наши отслеживаемые промпты, которые каждый день прогоняются через ChatGPT, Gemini и Perplexity). Координатор запускает его на шаге 1 рядом с Ahrefs.
+- Передай в пак как `aeo_signals` **дословно**: `portal_visibility_avg`, `matched_prompts` (с `visibility`, `phase`, `ai_cites`), `no_prompt_covers_topic`, `open_recommendations`. Ничего не пересчитывай, не округляй и не отбрасывай промпты, которые кажутся тебе нерелевантными: `match` — это только порядок сортировки, релевантность судит planner.
+- Файла нет или он пустой — передай `aeo_signals: unavailable` с причиной. Это не STOP: AEO уточняет, на какие вопросы отвечать, но не решает, писать ли статью.
+- **Зачем:** `matched_prompts` — это реальные вопросы, которые покупатели задают ИИ-ассистентам, и у каждого есть измеренная доля ответов, где нас называют. На 2026-09-29 семь из 24 таких вопросов стояли на 0%. Страницу про альтернативы DXA ассистенты цитировали 33 раза на свой вопрос и при этом ни разу не назвали 3DLOOK. Ahrefs показывает, что ищут; AEO показывает, о чём спрашивают ассистентов и кого они в ответ называют.
 
 ### 8. Select exclusions (для outbound)
 - Если `track = outbound`: прочитай `workspace/outbound/exclusions/{profile}-registry.json`
@@ -304,6 +310,29 @@ context_pack:
       - keyword: "best online fitness coaching programs"
         volume: 100
         difficulty: 58
+
+  # only for track=seo — from scripts/hubspot-aeo.py topic (HubSpot AEO). Copied verbatim.
+  # visibility = % of AI answers (ChatGPT/Gemini/Perplexity) that name 3DLOOK. match = sort order only.
+  aeo_signals:
+    source: "HubSpot AEO, portal 6014382, via scripts/hubspot-aeo.py topic"
+    pulled: "2026-09-29"
+    portal_visibility_avg: 36.3
+    no_prompt_covers_topic: false
+    matched_prompts:
+      - id: 554650727324
+        prompt: "Best mobile body scanning software for fitness and wellness platforms?"
+        visibility: 53
+        phase: CONSIDERATION
+        runs_naming_3dlook: 16      # of runs_checked: 25
+        ai_cites:
+          - url: "https://gainframe.app/blog/best-body-scanning-measurement-apps/"
+            count: 15
+            ours: false
+    open_recommendations:
+      - id: 182128250
+        priority: HIGH
+        type: CONTENT
+        content_title: "Fitxpress for Mobile Body Composition Tracking"
 
   exclusions: null  # only for outbound track
 ```

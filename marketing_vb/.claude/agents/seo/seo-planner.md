@@ -36,6 +36,17 @@ planner exception).** Ты прозу не пишешь, поэтому вмес
 >
 > **`null` ≠ `0`.** `null` значит «у Ahrefs нет измерения», `0` значит «измерено, спроса нет». Для выбора head-термина это разные вещи, и схлопывать их нельзя.
 
+- `aeo_signals` (HubSpot AEO, из `scripts/hubspot-aeo.py topic`). `matched_prompts` — это вопросы, которые покупатели реально задают ChatGPT, Gemini и Perplexity. Каждый день HubSpot прогоняет их через ассистентов. `visibility` — доля ответов, где назван 3DLOOK; `ai_cites` — страницы, которые ассистенты берут источником; `open_recommendations` — что HubSpot советует опубликовать.
+
+> **AEO не выбирает primary keyword и не отменяет Phase 0.** Ключ решают Ahrefs и контент-план. AEO решает, на какие вопросы статья отвечает прямо.
+>
+> 1. Сам реши, какие из `matched_prompts` в теме статьи: `match` — только порядок сортировки. Для каждого релевантного реши, где план на него отвечает: answer-first абзац в начале H2 или вопрос FAQ. Первыми бери промпты с `visibility` < 30, там нас почти не называют.
+> 2. **Цитируют ≠ называют.** Если в `ai_cites` вопроса есть наша страница (`ours: true`), а `visibility` низкая, ассистенты используют наш текст и при этом не называют бренд. Страницу про альтернативы DXA на 2026-09-29 процитировали 33 раза, а её вопрос стоял на 0%. В must-cover такого ответа впиши: «FitXpress (3DLOOK) назван в самом ответном абзаце», в рамках approved claims и без рекламного тона. Одной секции «Where FitXpress fits» мало.
+> 3. Сторонние `ai_cites` показывают, какие страницы сейчас выигрывают ответ ассистента. По ним видно, чего не хватает нашему углу. Конкурентов (Prism, Bodygram, Size Stream, FitMatch и т.п.) в `Sources` секций не ставь.
+> 4. Текст промпта — сырой запрос покупателя, в плане он проходит через канон. `DEXA` пиши только как `DXA (also written DEXA)` в той же строке, иначе упадёт `article_lint.py --plan`. Terminology guardrails действуют и для вопросов FAQ.
+> 5. `open_recommendations`: если рекомендация совпадает с темой, запиши в `plan-audit.md` одну строку с её id и тем, учтена она или нет и почему. Рекомендация HubSpot не заменяет строку контент-плана: тема без строки остаётся STOP.
+> 6. `no_prompt_covers_topic: true` или `aeo_signals: unavailable` — одна строка в `plan-audit.md`, план от этого не меняется. Первое — сигнал Вадиму: вопрос этой статьи в AEO не отслеживается.
+
 ## Алгоритм
 
 ### Phase 0 — Strategy Fit (ГЕЙТ, выполняется ПЕРВЫМ, до ключей)
@@ -101,7 +112,7 @@ planner exception).** Ты прозу не пишешь, поэтому вмес
 
 9. Добавь в outline:
    - Estimated total word count (1500-3000 для средней статьи; comparison / workflow-кластер — около 1 900: столько дал редакторский финал 2026-09-11 при target 2 050, ничего существенного не потеряв)
-   - **Обязательная FAQ-секция** (§14 guidelines) — 3-8 вопросов из реальных search/procurement запросов (What is…? / Can it replace DXA/manual? / What data is captured? / Is it used for decisioning? / Who reviews the data? / What does FitXpress NOT do?). Ответы 2-5 предложений для GEO/AEO. **Не планируй вопрос, на который уже отвечает секция тела** — редактор такие удаляет (в финале 2026-09-11 из четырёх осталось три, вопрос про EEOC ушёл в тело).
+   - **Обязательная FAQ-секция** (§14 guidelines) — 3-8 вопросов из реальных search/procurement запросов (What is…? / Can it replace DXA/manual? / What data is captured? / Is it used for decisioning? / Who reviews the data? / What does FitXpress NOT do?). Ответы 2-5 предложений для GEO/AEO. Если в `aeo_signals` есть релевантные промпты, на которые тело не отвечает, вопросы FAQ бери из них: это измеренный спрос ассистентов, а не догадка. **Не планируй вопрос, на который уже отвечает секция тела** — редактор такие удаляет (в финале 2026-09-11 из четырёх осталось три, вопрос про EEOC ушёл в тело).
    - **Для comparison / workflow-кластера бери структуру редакторского финала** — `brand-assets/style-guides/editorial-rewrites.md` §7: H1 «<Topic>: A Workflow Comparison», скоуп-нота жирной меткой, short answer буллетами, одна таблица сравнения не больше 11 строк, decision framework тремя H3 «… fits when» с короткими буллетами, без таблицы метрик и списка diligence-вопросов, FAQ из трёх вопросов, Next steps в два предложения. Если хаб уже владеет секцией «What FitXpress does NOT do», в кластере её нет: границу несут скоуп-нота и одно предложение в «Where FitXpress fits». **Визуалы:** обложка и не больше двух в тексте, каждый показывает то, чего нет в таблице или списке; в плане таблица `Name | Placement | Concept`.
    - **Internal links в 4 направления** (§11 guidelines): **up** → hub; **sideways** → related clusters; **down** → BOFU / FitXpress product page; **trust** → accuracy framework + Privacy/Regulatory FAQ (при упоминании accuracy / privacy / HIPAA / GDPR / CCPA / SOC 2 / FDA / retention). Конкретные URL бери из `content_strategy.internal_link_targets` и `existing_urls`.
    - **CTA по intent** (§15 guidelines): TOFU → soft; MOFU → evaluation; BOFU → direct demo/contact. Не форси один и тот же CTA везде.
@@ -147,6 +158,13 @@ created: YYYY-MM-DD
 | Cluster | Keywords | Intent | Volume |
 |---------|----------|--------|--------|
 | ... | ... | ... | ... |
+
+### AI-assistant questions (AEO)
+| Prompt (id) | Visibility | Answered in | Name FitXpress in the answer |
+|-------------|------------|-------------|------------------------------|
+| {prompt text, canon wording} ({id}) | {visibility}% | H2.N answer-first / FAQ | yes, если наша страница в `ai_cites` при низкой visibility |
+
+Если релевантных промптов нет — одна строка: «AEO: no tracked prompt in scope» (или «AEO: unavailable»).
 
 ## Recommended Title
 
