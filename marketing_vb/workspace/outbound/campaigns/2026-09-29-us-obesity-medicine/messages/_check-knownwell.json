@@ -1,0 +1,55 @@
+{
+ "campaign": "2026-09-29-us-obesity-medicine",
+ "checked": 28,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "knownwell",
+ "generated": "2026-09-29T12:28:28",
+ "hard": [],
+ "soft": [
+  [
+   "greeting",
+   "elizabeth-lacarra-0045a867 M1",
+   "«Hi Beth,» has no «Elizabeth»"
+  ],
+  [
+   "greeting",
+   "elizabeth-lacarra-0045a867 M2",
+   "«Hi Beth,» has no «Elizabeth»"
+  ],
+  [
+   "no calendar link",
+   "chris-spelman M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "nathan-linsley M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "vickygulko M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "sean-grainger-61152620 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "ben-wells-a1473a26 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "irissa-danelski M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "anystin-bigler M2",
+   "angle referral"
+  ]
+ ]
+}

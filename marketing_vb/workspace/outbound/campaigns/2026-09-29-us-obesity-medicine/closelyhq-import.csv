@@ -1,0 +1,1691 @@
+first_name,last_name,linkedin_url,company,title,email,connection_note,message_1,message_2
+Lindsay,Dages,https://linkedin.com/in/lindsaykdages,Form Health,Senior Software Engineer,,,"Hi Lindsay,
+
+Noticed your full-stack work at Healthie, a health-tech platform. Form's app already takes home scale readings, and a body scan could sit beside them.
+
+FitXpress is a white-label API and SDK: two phone photos in, 80+ body measurements out in under 45 seconds, returned as structured results. A typical basic integration takes 2-4 weeks. Worth a quick chat?
+
+Nick","Hi Lindsay,
+
+For the backend, the data flow is short: photos go in from the app, and structured results come back to store with the record.
+
+The privacy and security FAQ we published: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Grab a slot if useful: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Patrick,Bollinger,https://linkedin.com/in/pjbollinger,FlyteHealth,Senior Director of Engineering,,,"Hi Patrick,
+
+Quick note for the engineering side: FlyteHealth runs its own virtual care platform, and a body scan would have to fit into the existing app.
+
+FitXpress is a white-label SDK and API for the existing app: two photos go in, 80+ body measurements come back as structured results in under 45 seconds. A typical basic integration takes 2-4 weeks, depending on the stack.
+
+Worth a quick chat?
+
+Nick","Hi Patrick,
+
+For the engineering review, the privacy and security FAQ covers hosting and data handling: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Chong,Tseng,https://linkedin.com/in/chongtseng,JumpstartMD,Director of Systems Operations,,,"Hi Chong,
+
+Quick thought for the systems side at JumpstartMD. Body data from online visits has to land somewhere structured, and a scan only helps once it does.
+
+FitXpress returns structured results, 80+ body measurements including waist circumference, from two phone photos, through an API into the practice's own app. Might be worth a quick chat?
+
+Nick","Hi Chong,
+
+Systems detail: one weight-management platform ran 34,000 scans in 2025.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+David,Weiskittel,https://linkedin.com/in/david-weiskittel,Ilant Health,"Director, Backend Engineering",,,"Hi David,
+
+Curious about your take, given your background at Capital Rx and as a founding engineer at Amae Health. Ilant promises ""continuous insights from connected devices"", and I wonder how that data reaches your backend.
+
+We built a white-label API and SDK that returns structured results, 80+ body measurements from two photos, inside an existing app. Worth a quick chat?
+
+Nick","Hi David,
+
+Integration detail: typically 2-4 weeks for a basic integration, and your stack sets the real number.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Data flow and retention details are in our trust FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Mark,Mnich,https://linkedin.com/in/markmnich,Ilant Health,Directory of Security & IT,,,"Hi Mark,
+
+Quick note from the vendor side, given your background in infrastructure and security at Ventricle Health and Cerebral. A photo capture inside a patient app is a new data flow, and I'd like it in front of you early.
+
+FitXpress is a white-label SDK and API: two photos in, 80+ body measurements out. Worth a quick chat?
+
+Nick","Hi Mark,
+
+For the review: the data-flow and retention answers sit in one place.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Our trust FAQ covers the rest: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Leon,"Igel, MD, FACP, FTOS, DABOM",https://linkedin.com/in/leon-igel,Intellihealth,Chief Medical Officer - Flyte,,,"Hi Leon,
+
+Noticed your background: CMO at FlyteHealth and an obesity medicine physician at Weill Cornell Medicine. Employers and health plans now ask what early cardio-kidney-metabolic care delivers, and waist and other circumferences between video visits are a line no scale returns.
+
+We built FitXpress for it: two photos from the member's phone, inside FlyteHealth's own app, return 80+ body measurements, along with body composition estimates from the same scan.
+
+Open to a quick chat?
+
+Nick","Hi Leon,
+
+Scan-to-scan comparison needs consistency. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Jake,Lahr,https://linkedin.com/in/jake-lahr-08482164,knownwell,"Director, Business Operations",,,"Hi Jake,
+
+Had a thought after seeing your path from product management at Interwell Health to business operations at knownwell. How would you weigh a new patient-facing step for virtual visits?
+
+FitXpress is one: two photos in the practice's own app return 80+ body measurements such as waist circumference, along with body composition estimates. No device to ship or support. Open to a quick chat?
+
+Nick","Hi Jake,
+
+Running this takes no hardware: the scan happens in the practice's own app on the patient's phone, and results for 80+ body measurements return to the care team. We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Elizabeth,Lacarra,https://linkedin.com/in/elizabeth-lacarra-0045a867,knownwell,Senior Product Manager,,,"Hi Beth,
+
+Your headline about turning startup ambiguity into shipped product made me think about knownwell's patient app. Where would a between-visit body measurement fit in what you're building?
+
+FitXpress is a scan flow that sits inside a practice's own app. Two photos, front and side, return 80+ body measurements such as waist circumference, along with body composition estimates. Might be worth a quick chat?
+
+Nick","Hi Beth,
+
+For a sense of scale on a scan flow: one weight-management platform ran 34,000 scans in 2025. We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+If useful, grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Mary,"Failla, MS, RDN, LDN, CDCES",https://linkedin.com/in/mary-failla-ms-rdn-ldn-cdces-36108071,knownwell,"Clinical Director, Nutrition Services",,,"Hi Mary,
+
+Came across your work leading nutrition services at knownwell, after running medical weight management at Ascension. Curious what your team sees between clinic body composition readings when a patient is on video visits.
+
+FitXpress can add a view: two photos in the practice's own app return waist and other circumferences (80+ body measurements) along with lean mass and fat mass estimates. Might be worth a quick chat?
+
+Nick","Hi Mary,
+
+For scan-to-scan comparison, repeatability matters. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm. We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Max,Wolf,https://linkedin.com/in/maxcwolf,Form Health,Senior Software Engineer,,,"Hi Max,
+
+Your bio on reusable, theme-reliant component libraries for web and mobile is relevant here. A body scan capture flow is one more set of screens in a mobile app, and it should look like Form Health's.
+
+FitXpress ships as a white-label SDK and API: two phone photos in, 80+ body measurements out in under 45 seconds. Worth a quick chat about how it would sit in the app?
+
+Nick","Hi Max,
+
+On the front end, the work is the capture screens: guided front and side photos in your theme, results back in under 45 seconds from the photos to structured results.
+
+The privacy and security FAQ we published: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Pete,Moen,https://linkedin.com/in/pete-moen-2b895,FlyteHealth,Vice President of Strategic Partnerships,,,"Hi Pete,
+
+Quick one, from someone building tools for weight care. You work on FlyteHealth's partnerships with employers and health plans, so you may know who owns the member app roadmap.
+
+I am looking at outcomes beyond pounds that a practice can show employers. Who is the right person to ask?
+
+Nick","Hi Pete,
+
+Looping back on one question: who owns the member app roadmap or the progress features at FlyteHealth? A name is enough, and I will take it from there.
+
+If a call is easier: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Greg,de Haaff,https://linkedin.com/in/gregd04,Form Health,Chief Product Officer,,,"Hi Greg,
+
+Noticed your background: platform work at Lyra Health, now the Form Health app, where home scale readings already flow in.
+
+What no scale returns is waist and other circumferences between video visits. FitXpress gives 80+ body measurements from two phone photos in under 45 seconds, captured inside your own app.
+
+Open to a quick chat on build versus integrate?
+
+Nick","Hi Greg,
+
+If the scan lives in your app, the capture flow is the product decision: one guided sequence each time keeps scans comparable.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+David,Thompson,https://linkedin.com/in/davidcthompson,Form Health,Chief Administrative Officer (CAO),,,"Hi David,
+
+Couldn't help but ask: with General Counsel roles at Included Health and Headway and talks on health privacy behind you, how does Form Health review a new capture feature from a vendor?
+
+FitXpress is a two-photo body scan, front and side, returning 80+ body measurements in under 45 seconds inside the practice's own app. Happy to share the data-handling terms. Worth a quick chat?
+
+Nick","Hi David,
+
+Vendor review first, the data terms in one line. We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Al,Remediani,https://linkedin.com/in/al-remediani-917b00,The Center for Medical Weight Loss (CMWL),Fractional CFO,,,"Hi Al,
+
+Quick idea for you, and a short ask: who at CMWL leads clinical or operations for the program? A name is enough.
+
+We build a two-photo body scan that runs inside a program's own app, and I'd like to reach the person who would want to look.
+
+Nick","Hi Al,
+
+Returning to the same question. If the clinical or operations lead at CMWL is easy to name, I'll write to them directly and leave your desk alone.
+
+Nick"
+Roopal,"Pujara Lalaji, PsyD DipACLM",https://linkedin.com/in/roopal-pujara-lalaji-psyd-dipaclm-277488,Enara Health,Director of Behavioral Health,,,"Hi Roopal,
+
+Quick one. Your background in lifestyle medicine and behavioral health caught my eye, and I'm trying to find who at Enara Health owns the patient app roadmap.
+
+We build a two-photo body scan that runs inside a practice's own app. Could you point me to the right person? Someone on the clinical side would work too.
+
+Nick","Hi Roopal,
+
+Circling back with the same short ask: who owns the app roadmap at Enara, or leads the clinical side? A name is enough, and I'll take it from there.
+
+Nick"
+Lisa,Connelly,https://linkedin.com/in/lisaconnelly,The Center for Medical Weight Loss (CMWL),Chief Product and Operations Officer,,,"Hi Lisa,
+
+Saw your path through product and subscription work, including WeightWatchers.com, to product and operations at CMWL. Curious how the Virtual plan records progress between telemedicine visits.
+
+FitXpress adds waist and other circumferences (80+ body measurements) from two phone photos, inside the program's own app, with body composition estimates from the same scan. Open to a quick chat?
+
+Nick","Hi Lisa,
+
+For the Virtual plan: a timestamped record of circumferences between telemedicine visits, captured in the program's own app.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Sean,"Bourke, MD",https://linkedin.com/in/sean-bourke-md-8322134,JumpstartMD,Co-Founder & Chief Medical Officer,,,"Hi Sean,
+
+Noticed your background: emergency medicine and Air Force medical director before co-founding a physician-led practice. Curious what your online visits have to work from, given the body composition tracking you run in clinic.
+
+FitXpress adds waist and other circumferences (80+ body measurements) from two phone photos, inside the practice's own app, with body composition estimates from the same scan. Might be worth a quick chat?
+
+Nick","Hi Sean,
+
+From the CMO seat: online visits get a timestamped record of circumferences that sits alongside your in-clinic body composition.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Brian,Kime,https://linkedin.com/in/kimebrian,Form Health,Senior Director Of Information Technology & Security,,,"Hi Brian,
+
+Noticed your IT and security leadership at H1 and Cityblock Health, with a GRC focus. Before a scan feature reaches Form Health's app, the data flow goes through you.
+
+FitXpress is a white-label API and SDK: two phone photos in, 80+ body measurements out in under 45 seconds. A typical basic integration takes 2-4 weeks, and I can send the data-handling details first. Worth a quick chat?
+
+Nick","Hi Brian,
+
+Security review starts with retention and hosting. Our FAQ covers both: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Open to a 15-minute demo call? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Keta,"Pandit, MD",https://linkedin.com/in/keta-pandit-md-6b110b3,Form Health,Clinical Lead,,,"Hi Keta,
+
+Curious about your take as Form Health's lead obesity medicine endocrinologist: which measurements do you wish were in the record before a video visit?
+
+FitXpress returns 80+ body measurements, such as waist circumference, from two phone photos in under 45 seconds. Lean mass and fat mass estimates come from the same scan. Might be worth a quick chat?
+
+Nick","Hi Keta,
+
+A clinical framing: the scan returns estimates and measurements for you to interpret. It does not diagnose or decide anything.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Open to a 15-minute demo call? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Lydia,"Alexander, MD, DABOM, DABLM, MFOMA",https://linkedin.com/in/lydia-alexander-md-dabom-dablm-mfoma-ab83644,Enara Health,Chief Medical Officer,,,"Hi Lydia,
+
+Noticed your background: past president of the Obesity Medicine Association, now CMO at Enara Health. Curious how the protocol covers the weeks between the monthly body composition tests.
+
+FitXpress adds waist and other circumferences (80+ body measurements) from two phone photos, inside the Enara app, with body composition estimates from the same scan. Might be worth a quick chat?
+
+Nick","Hi Lydia,
+
+One thought for the protocol: between monthly tests, a timestamped record of circumferences that the care team compares scan to scan.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Stephanie,Chen,https://linkedin.com/in/stphchn,Enara Health,Product Manager,,,"Hi Stephanie,
+
+Came across your work as a clinical PM and registered dietitian. The Enara app already syncs with the smart scale, so I wondered how you think about a circumference record next to it.
+
+FitXpress returns 80+ body measurements from two photos in under 45 seconds, from the patient's phone and inside the app. Might be worth a quick chat?
+
+Nick","Hi Stephanie,
+
+On the product side: for most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We put together what a progress record beyond scale weight needs, and where a scan does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Forrest,Grant,https://linkedin.com/in/forrestgrant,Form Health,Vice President of Engineering,,,"Hi Forrest,
+
+Saw the news that Form Health added diabetes care into one cardiometabolic program for employers. Your outcome-engineering focus points to measurable clinical results as an engineering goal.
+
+FitXpress is a white-label API and SDK inside an existing app: two phone photos in, 80+ body measurements out in under 45 seconds. A typical basic integration takes 2-4 weeks. Worth a quick chat on scope?
+
+Nick","Hi Forrest,
+
+The engineering ask is small: one capture flow in the app and structured results back. A first scoping call fits in 15 minutes.
+
+The privacy and security FAQ we published: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Book it here: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Akansha,Mittal,https://linkedin.com/in/akansham,JumpstartMD,Director of Product Management,,,"Hi Akansha,
+
+Came across your work: product at Teladoc Health and Henry Meds, and your line about turning real-world constraints into products. Curious where a JumpstartMD patient records progress between online visits.
+
+We built FitXpress as an SDK for that spot: two photos return 80+ body measurements, including waist circumference, inside the patient app. Worth a quick chat to explore?
+
+Nick","Hi Akansha,
+
+One product detail. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We put together what a progress record beyond scale weight needs, and where a scan does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Joseph,Grasso,https://linkedin.com/in/joseph-grasso-2388b44,Form Health,"Vice President, Finance",,,"Hi Joseph,
+
+Noticed your background in FP&A at Two Chairs before Form Health. A quick question outside finance: who owns what clinicians record on video visits, the CMO or an operations lead?
+
+I work on a two-photo body scan that adds waist and other circumferences inside a practice's own app. A name is all I need.
+
+Nick","Hi Joseph,
+
+A short follow-up on my question. If the CMO or an operations lead is the right person, a forward of my note works as well as a name.
+
+Nick"
+Angela,"Fitch MD, FACP, MFOMA, Dipl. ABOM",https://linkedin.com/in/angelafitchmd,knownwell,Chief Medical Officer,,,"Hi Angela,
+
+Caught my eye that knownwell's first Clinical Outcomes Report leads with lean-mass results from in-clinic body composition data. Curious what a remote measurement record between clinic visits could look like for patients seen on video.
+
+We built FitXpress for that: two photos in the practice's own app return 80+ body measurements, such as waist circumference, along with body composition estimates, in under 45 seconds from the photos to structured results. Open to a quick chat?
+
+Nick","Hi Angela,
+
+Wanted to add one idea for the video-visit side of knownwell. Between clinic visits, patients could add waist and other circumferences from home. We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min to walk through it? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Chris,Spelman,https://linkedin.com/in/chris-spelman,knownwell,Vice President Real Estate Development,,,"Hi Chris,
+
+Quick one, given your multi-site expansion work at knownwell: who owns the patient app roadmap? We built a two-photo body scan that practices add inside their own app, and I'd like to reach the right person.
+
+Nick","Hi Chris,
+
+Circling back on one question: who decides on new features in knownwell's patient app? A name is plenty.
+
+Nick"
+Parham,Javaherian,https://linkedin.com/in/parhamjavaherian,JumpstartMD,Chief Executive Officer,,,"Hi Parham,
+
+Thought I'd share, given your years of healthcare growth leadership and a multi-location, medically supervised practice. Clinic visits give JumpstartMD body composition data; I wonder what online visits across California have.
+
+FitXpress takes two photos on the patient's phone and returns 80+ body measurements in under 45 seconds, inside the practice's app. Open to a quick chat?
+
+Nick","Hi Parham,
+
+The business case is one record across clinic and online visits. 112,100 scans ran in 2025 across all 3DLOOK customers.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Scott,Albrecht,https://linkedin.com/in/scott-albrecht-b385966,FlyteHealth,Chief Financial Officer,,,"Hi Scott,
+
+Had a thought for a finance lead. I am trying to reach whoever at FlyteHealth owns clinical outcomes reporting to employers and health plans, likely the CMO or an operations lead.
+
+For context, we build FitXpress: two phone photos return body measurements and body composition estimates for the care team.
+
+Could you point me to the right person?
+
+Nick","Hi Scott,
+
+One question: who at FlyteHealth owns the clinical outcomes reporting, the CMO or an operations lead? A name is enough.
+
+Nick"
+Emily,Wang,https://linkedin.com/in/emilyxwang,Form Health,Lead Product Manager,,,"Hi Emily,
+
+This stood out in your bio: technology adoption among clinicians and healthcare consumers. For an in-app scan, adoption comes down to how simple the capture is.
+
+FitXpress guides patients through two photos, front and side, and returns 80+ body measurements in under 45 seconds, all inside the Form Health app. Worth a quick chat on what adoption would look like?
+
+Nick","Hi Emily,
+
+One flow for both sides: patients scan in the app they already open, and the clinician sees the results in the same place.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Jeffrey,Chupp,https://linkedin.com/in/jeffreychupp,Form Health,Director of Engineering,,,"Hi Jeffrey,
+
+Your bio on automated testing and well-written commit messages reads like someone who scopes integrations carefully.
+
+FitXpress is a white-label API and SDK. Two phone photos in, 80+ body measurements out in under 45 seconds, and a typical basic integration takes 2-4 weeks. Worth a quick chat on staffing and scope for Form Health's app?
+
+Nick","Hi Jeffrey,
+
+For staffing: one mobile capture flow and one results path. The 2-4 week figure is for a typical basic integration, and I would not promise it for Form Health before scoping.
+
+The privacy and security FAQ we published: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Dominick,Garbellano,https://linkedin.com/in/dominick-garbellano-22155938,FlyteHealth,Senior Director of Program Management,,,"Hi Dominick,
+
+Quick idea for you, given your work running programs at FlyteHealth. Its outcomes are backed by actuarial analyses, and a standardized, timestamped waist measurement between visits would add a clinical line to employer and plan reporting.
+
+FitXpress captures it: two photos from the member's phone, inside FlyteHealth's own app, return 80+ body measurements along with body composition estimates.
+
+Open to a quick chat?
+
+Nick","Hi Dominick,
+
+On reporting: results are timestamped and structured, which suits employer and plan reports. 112,100 scans in 2025 across all 3DLOOK customers.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Kelley,Huston,https://linkedin.com/in/kelleyhuston,Form Health,Group Product Manager,,,"Hi Kelley,
+
+Got me thinking: you lead product strategy for care access and patient acquisition at Form Health, where employers and plans ask what the program returns beyond scale weight.
+
+A scan adds waist and other circumferences to that answer. FitXpress returns 80+ body measurements from two phone photos in under 45 seconds, and one weight-management platform ran 34,000 scans in 2025. Worth a quick chat?
+
+Nick","Hi Kelley,
+
+On the roadmap, a scan is one more capture step in onboarding and follow-up, reusing the app patients already open.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Grab a slot if useful: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Gary,Riedel-Gaudet,https://linkedin.com/in/garyriedelgaudet,Form Health,Director of Accounting,,,"Hi Gary,
+
+Quick one, and probably outside accounting: who at Form Health looks after new clinical tools on the patient app, the CMO's office or an operations lead? I'm exploring a body scan for virtual obesity medicine practices and would like to ask the right person, briefly.
+
+Nick","Hi Gary,
+
+Circling back once. If a name comes to mind, the CMO's office or an operations lead, I will send them one short email and leave it there.
+
+Nick"
+Sonal,"Sakariya, MD, DABOM",https://linkedin.com/in/sonalsakariyamd,knownwell,NYC Market Physician Lead,,,"Hi Sonal,
+
+Noticed your double board certification in internal medicine and obesity medicine. As physician lead for knownwell's NYC market, how does the visit protocol handle body measurements when a patient is on video?
+
+FitXpress adds one: two photos in the practice's own app return 80+ body measurements such as waist circumference in under 45 seconds from the photos to structured results, captured with the same guided sequence each time. Open to a quick chat?
+
+Nick","Hi Sonal,
+
+On accuracy, FitXpress reaches 96-97% accuracy against expert manual measurement, with estimates and measurements returned for your care team to review. We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Grab a slot if a walkthrough helps: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Steven,Keem,https://linkedin.com/in/stevenkeem,Ilant Health,Senior Product Manager,,,"Hi Steven,
+
+Noticed your background: product at Noom, then Good Inside. Curious how you're thinking about the connected-device roadmap at Ilant, where ""continuous insights from connected devices"" is the promise.
+
+FitXpress adds waist and other circumferences (80+ body measurements) from two phone photos, inside the Ilant app, with no device to ship or support. Worth a quick chat to explore?
+
+Nick","Hi Steven,
+
+One detail for the device roadmap: under 45 seconds from the photos to structured results, from the same guided capture each time.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Casey,Langwith,https://linkedin.com/in/caseylangwith,Ilant Health,VP of Strategic Operations,,,"Hi Casey,
+
+Came across your work on client delivery at Ilant. Employers and payers now ask what anti-obesity medication spend buys, and delivery teams look for a record beyond scale weight to show them.
+
+FitXpress gives the care team waist and other circumferences (80+ body measurements) from two phone photos, timestamped between video visits. Might be worth a quick chat?
+
+Nick","Hi Casey,
+
+Something for client reviews with employers and payers: circumferences from scans the practice selects. One weight-management platform ran 34,000 scans in 2025.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Kara,"Mayes, MD",https://linkedin.com/in/karamayes,Ilant Health,Chief Medical Officer,,,"Hi Kara,
+
+This stood out: you led Mercy Clinic Weight and Wellness for patients with obesity, and now Ilant's single front door runs from behavioral therapy to surgery. Curious how the clinical model records progress between visits.
+
+FitXpress returns 80+ body measurements, including waist circumference, from two phone photos, inside the Ilant app, along with body composition estimates from the same scan. Might be worth a quick chat?
+
+Nick","Hi Kara,
+
+For the surgical pathway: a standardized, timestamped record before the consult, under 45 seconds from the photos to structured results.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Our piece on mobile 3D body scanning for bariatric pre-qualification: https://3dlook.ai/content-hub/bariatric-pre-qualification-mobile-3d-body-scanning/
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Ishraf,Ahmad,https://linkedin.com/in/ishraf-ahmad-a49a3710,FlyteHealth,Chief Product and Technology Officer,,,"Hi Ishraf,
+
+Quick thought, given your focus on consumer experience in healthcare: FlyteHealth members already get a smart scale and a BP cuff when needed, and the app is where their progress shows up.
+
+We built FitXpress to add to that: two photos inside your app return 80+ body measurements, including waist circumference, in under 45 seconds from the photos to structured results. No device to ship or support.
+
+Worth a quick chat?
+
+Nick","Hi Ishraf,
+
+From the product side, capture is one guided flow inside your app, the same sequence each time. 112,100 scans in 2025 across all 3DLOOK customers.
+
+Our write-up on what a progress record beyond scale weight needs, including where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Linford,Stillson,https://linkedin.com/in/linford-stillson-19457611,The Center for Medical Weight Loss (CMWL),Owner,,,"Hi Linford,
+
+This caught my eye: you own a CMWL center. Who at CMWL headquarters owns the program's patient tools, including the Virtual plan?
+
+We build a two-photo body scan that runs inside a program's own app. A name would help.
+
+Nick","Hi Linford,
+
+Following up on the headquarters question: is there one person at CMWL who owns the patient app? I'll take it from there.
+
+Nick"
+Richard,Lee,https://linkedin.com/in/richard-lee-0693ba13,The Center for Medical Weight Loss (CMWL),CEO and Co-Founder,,,"Hi Richard,
+
+Had a thought on your path: co-founder of CMWL and Pondus Health. A national program now has center visits and a Virtual plan, and one record across both would be worth having.
+
+FitXpress takes two photos on the patient's phone and returns 80+ body measurements in under 45 seconds, inside the program's own app. Might be worth a quick chat?
+
+Nick","Hi Richard,
+
+Circling back at program level: one standardized capture for center visits and the Virtual plan. 112,100 scans ran in 2025 across all 3DLOOK customers.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We put together what a progress record beyond scale weight needs, and where a scan does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Hayley,"Miller, MD",https://linkedin.com/in/hayleymillermd,FlyteHealth,Medical Director,,,"Hi Hayley,
+
+Curious about your take as a telemedicine physician leader in obesity medicine: what should the progress record of a video visit hold beyond scale weight?
+
+We built FitXpress to add to it: two photos from the member's phone return waist and other circumferences, along with lean mass and fat mass estimates from the same scan. The estimates support the clinician's judgment.
+
+Worth a quick chat to explore?
+
+Nick","Hi Hayley,
+
+For the video visit, here is the volume behind it: one weight-management platform ran 34,000 scans in 2025.
+
+Our write-up on what a progress record beyond scale weight needs, including where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Brooke,Boyarsky Pratt,https://linkedin.com/in/brooke-boyarsky,knownwell,"Chief Executive Officer, Founder",,,"Hi Brooke,
+
+Quick thought on knownwell's hybrid model. Curious what the measurement record looks like for a patient who is only seen on video.
+
+FitXpress adds one: from two photos in the practice's own app, 80+ body measurements such as waist circumference come back, along with body composition estimates. Might be worth a quick chat?
+
+Nick","Hi Brooke,
+
+One data point on scale: 112,100 scans in 2025 across all 3DLOOK customers. For knownwell, the same scan would give virtual patients a structured record between clinic visits. We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+David,Castillo,https://linkedin.com/in/daveecastillo,Intellihealth,Staff Senior Software Engineer,,,"Hi David,
+
+This stood out: years building EHR software, now engineering at FlyteHealth. Where would structured body measurements from a member scan live, if the app could capture them?
+
+FitXpress is a white-label SDK and API: two photos from the phone return 80+ body measurements as structured data, timestamped per scan. A typical basic integration takes 2-4 weeks, depending on the stack.
+
+Worth a quick chat?
+
+Nick","Hi David,
+
+On the data side, the FAQ has the detail on data handling: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Nathan,Linsley,https://linkedin.com/in/nathan-linsley,knownwell,Chief Financial Officer,,,"Hi Nathan,
+
+Quick question, given your value-based care background: who at knownwell leads clinical measurement, the CMO or an operations lead? We built a two-photo body scan that adds waist circumference between clinic visits, and I'd like to reach the right owner.
+
+Nick","Hi Nathan,
+
+Following up on that question about clinical measurement at knownwell. A one-line answer with a name is plenty.
+
+Nick"
+Rob,Tyrrell,https://linkedin.com/in/robwtyrrell,FlyteHealth,Senior Director of Product Management,,,"Hi Rob,
+
+Saw the news that FlyteHealth was selected for the CMS Health Tech Ecosystem, Diabetes & Obesity category. With your background in EHR integrations and patient activation, the app is where a new capture flow gets decided.
+
+FitXpress is an API for one: two photos from the member's phone return 80+ body measurements as structured results, such as waist circumference. Guided capture gives members a concrete action between video visits.
+
+Worth a quick chat?
+
+Nick","Hi Rob,
+
+One roadmap detail: from the photos to structured results takes under 45 seconds, which fits a single app session.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Lia,Skalkos,https://linkedin.com/in/liaskalkos,Form Health,Lead Software Engineer,,,"Hi Lia,
+
+Rails and healthcare tech on your headline, with engineering management at Kindbody. On the backend, a body scan is a small surface: photos go out, structured results come back.
+
+FitXpress is a white-label API and SDK. Two phone photos give 80+ body measurements in under 45 seconds, and a typical basic integration takes 2-4 weeks. Open to a quick chat?
+
+Nick","Hi Lia,
+
+Back on the backend side: results come back structured and timestamped, ready to store with the patient record.
+
+The privacy and security FAQ we published: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Grab a slot if useful: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Hao-Ping,Chai,https://linkedin.com/in/hao-ping-chai,Rivas Medical Weight Loss,Vice President Operations,,,"Hi Hao-Ping,
+
+Came across your work: operations and program leadership in research and higher education, now VP Operations at Rivas. Rivas runs clinics in Maryland and Virginia plus telehealth; curious what a clinician has in hand on the telehealth visits.
+
+FitXpress is a tool for your clinicians: two phone photos return 80+ body measurements, timestamped for the visit. Might be worth a quick chat?
+
+Nick","Hi Hao-Ping,
+
+Following up on the clinician side: on telehealth visits they get a timestamped record of circumferences, and they compare the scans they select. Care stays with your team.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Stevi,Driver,https://linkedin.com/in/stevidriver,Form Health,Director of Product,,,"Hi Stevi,
+
+Quick thought, given your AI and data science product work at ZoomInfo and Primer.ai: an in-app scan is mostly a data-model question. Which fields reach the patient record, and how often?
+
+FitXpress returns 80+ body measurements, along with body composition estimates, from two phone photos in under 45 seconds, inside the Form Health app. Worth a quick chat on how you would scope it?
+
+Nick","Hi Stevi,
+
+A scoping starting point: which two circumferences the care team wants at each video visit, and which scans they compare. That sets the spec.
+
+What a progress record beyond scale weight needs, and where scanning does not help, is written up here: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Grab a slot if useful: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Cedar,"Bolt, MBA",https://linkedin.com/in/cedarmbolt,knownwell,Senior Clinical Systems Specialist,,,"Hi Cedar,
+
+Spotted your headline, Sr. Clinical Systems Specialist, and your years in software implementation. Where would a patient-generated scan result land in knownwell's clinical systems?
+
+FitXpress is a white-label API and SDK inside an existing app: two photos in, 80+ body measurements and body composition estimates out, in under 45 seconds from the photos to structured results. Open to a quick chat?
+
+Nick","Hi Cedar,
+
+On implementation effort: a typical basic integration takes 2-4 weeks. That is a generic range and depends on your stack. Data handling is covered in our FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Walkthrough of the API? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Rami,Bailony,https://linkedin.com/in/ramibailony,Enara Health,Co-Founder and CEO,,,"Hi Rami,
+
+Had a thought after reading how you describe your work: user-centric design applied to healthcare workflows. Curious how medical groups launching on Enara document patient progress between visits.
+
+We built FitXpress for that step: two photos in the Enara app return 80+ body measurements, including waist circumference, captured the same guided way each time. Open to a quick chat?
+
+Nick","Hi Rami,
+
+Following up from the platform side: every medical group on Enara gets the same standardized capture. 112,100 scans ran in 2025 across all 3DLOOK customers.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Vicky,"Gulko, MHI",https://linkedin.com/in/vickygulko,knownwell,Clinical Staff Services Manager,,,"Hi Vicky,
+
+Saw your headline about building scalable systems across the clinician lifecycle. Quick ask: who at knownwell owns the tools clinicians use on video visits? We built a two-photo body scan that practices add inside their own app, and I'd like to reach the right person.
+
+Nick","Hi Vicky,
+
+Checking once more with a simpler ask: could you point me to the clinical lead for virtual visits?
+
+Nick"
+Matthew,"Faiman, MD, MBA, FACP",https://linkedin.com/in/matthew-faiman-md-mba-facp-47b58919,FlyteHealth,"Senior Medical Director, Care Management and Clinical Operations",,,"Hi Matthew,
+
+Noticed overlap between your virtual care background and FlyteHealth's cardiometabolic care. On a video visit a clinician cannot measure a waist, and that is a gap in the care protocol.
+
+We built FitXpress for it: two photos from the member's phone return waist and other circumferences, with lean mass and fat mass estimates from the same scan. The care team compares the scans it selects.
+
+Might be worth a quick chat?
+
+Nick","Hi Matthew,
+
+Adding the protocol view: one scan gives the care team 80+ body measurements and body composition estimates, captured the same guided way each time.
+
+Our write-up on what a progress record beyond scale weight needs, including where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Jeremy,Branstad,https://linkedin.com/in/jeremybranstad,Form Health,Senior Technical Manager,,,"Hi Jeremy,
+
+Applied AI and distributed systems are on your headline. Build-versus-integrate is a fair question for body estimation, and building in-house is a real option.
+
+FitXpress is the integrate side: a white-label API and SDK returning 80+ body measurements from two phone photos in under 45 seconds, with a typical basic integration of 2-4 weeks. Worth a quick chat on where it fits?
+
+Nick","Hi Jeremy,
+
+If your team compares approaches, repeatability is a fair test. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+The privacy and security FAQ we published: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Open to a 15-minute demo call? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Kwame,Thomison,https://linkedin.com/in/kwamethomison,knownwell,Chief Technology Officer,,,"Hi Kwame,
+
+Your run as CTO at Evvy and VP of Engineering at Alma is what prompted this note. If a scan were added to knownwell's patient app, what would you want the integration to look like?
+
+FitXpress is a white-label API and SDK: two photos in, 80+ body measurements out. A typical basic integration takes 2-4 weeks, a generic range. Might be worth a quick chat?
+
+Nick","Hi Kwame,
+
+Data flow, briefly: your app sends two photos and gets structured results back. Privacy and security details are in our FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+If a technical call helps: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Sean,Grainger,https://linkedin.com/in/sean-grainger-61152620,knownwell,Head of Revenue Cycle Managment,,,"Hi Sean,
+
+Noticed you lead revenue cycle at knownwell, with One Medical and Foresight Mental Health before that. Quick ask: is there a clinical or operations lead who owns how patient measurements are documented on video visits? We built a two-photo body scan that adds waist circumference between visits.
+
+Nick","Hi Sean,
+
+Short follow-up: a name is all I need, whoever owns clinical measurement or the patient app.
+
+Nick"
+Kyle,Barron,https://linkedin.com/in/kylewbarron,Form Health,"Senior Product Manager | Data, Reporting, & Analytics",,,"Hi Kyle,
+
+Quick note for whoever owns outcomes reporting to employers and plans at Form Health. Each scan gives a timestamped set of 80+ body measurements from two phone photos, ready in under 45 seconds.
+
+The practice compares scans it selects, and circumferences such as waist could add a line to that reporting. Curious whether the data model has room for it?
+
+Nick","Hi Kyle,
+
+On the data side, results are structured and timestamped. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Marvin,Daley,https://linkedin.com/in/marvinldaley01,FlyteHealth,Director of IT & Security | Security Officer,,,"Hi Marvin,
+
+Spotted something in your title: Director of IT and Security and Security Officer at FlyteHealth. A capture flow that touches member photos brings data-handling questions with it.
+
+FitXpress is a white-label SDK and API inside an existing app: two photos go in, 80+ body measurements come back as structured results, and scan records carry random IDs.
+
+Open to a quick chat?
+
+Nick","Hi Marvin,
+
+For the security review, the FAQ has the full answers: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Adrian,"Krutz, FNP-C",https://linkedin.com/in/adrian-krutz-fnp-c-a0779554,JumpstartMD,Director of Clinical Operations,,,"Hi Adrian,
+
+Got me thinking: you went from nurse practitioner to regional director to running clinical operations at JumpstartMD. Curious what body measurements the clinician has when an online visit starts.
+
+FitXpress returns 80+ body measurements from two phone photos the patient takes beforehand. Might be worth a quick chat?
+
+Nick","Hi Adrian,
+
+For clinical operations: online visits open with a timestamped record of circumferences from one guided sequence. Under 45 seconds from the photos to structured results.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We put together what a progress record beyond scale weight needs, and where a scan does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Kasey,"Goodpaster, Ph.D., FASMBS-IH",https://linkedin.com/in/drgoodpaster,Ilant Health,Director of Behavioral Health,,,"Hi Kasey,
+
+Made me think: bariatric psychology at Cleveland Clinic, now a growing behavioral health team at Ilant. Who at Ilant owns the patient app and the progress features clinicians see?
+
+We build a two-photo body scan that runs inside a practice's own app. An introduction to your CMO or clinical lead would work too.
+
+Nick","Hi Kasey,
+
+Coming back to one question: who should hear about a scan that gives the care team circumferences between visits? A name is enough.
+
+Nick"
+Brittney,"Cini, MBA, CPC",https://linkedin.com/in/brittney-cini-mba-cpc-b9465325,FlyteHealth,Vice President of Patient Operations,,,"Hi Brittney,
+
+Got me thinking: your line about moving patients from first contact to care without friction. After enrollment, what members do between video visits is the next stretch of that journey.
+
+FitXpress adds one step: two photos on the member's phone, inside FlyteHealth's own app, return 80+ body measurements as a structured record. No device to ship or support.
+
+Might be worth a quick chat?
+
+Nick","Hi Brittney,
+
+Operations angle: one weight-management platform ran 34,000 scans in 2025. For FlyteHealth the capture would run on the member's own phone, with nothing to schedule.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Ben,Wells,https://linkedin.com/in/ben-wells-a1473a26,knownwell,Senior Vice President Finance,,,"Hi Ben,
+
+Saw your finance and corporate development roles at Carbon Health and Ascend Medical before knownwell. Quick ask: who owns the outcomes story told to payers, the CMO or an operations lead? We built a two-photo body scan that adds waist circumference between clinic visits, and I'd like to reach the right person.
+
+Nick","Hi Ben,
+
+A shorter version of my question: who at knownwell decides on adding a new measurement to patient care? One name is plenty.
+
+Nick"
+Alex Harper,"MSN, APN, ACNS-BC, CDCES",https://linkedin.com/in/alex-harper-msn-apn-acns-bc-cdces-9aa4b059,Form Health,Endocrinology/Obesity APN,,,"Hi Alex,
+
+Noticed your background as a board-certified APN in endocrine and obesity management, licensed in IL and MI. I'm looking for the right clinical lead at Form Health to ask about waist and other circumference measurements on video visits.
+
+Could you point me to the CMO or a clinical lead? A two-line note they can forward is all I would send.
+
+Nick","Hi Alex,
+
+Following up on my request: an introduction to the CMO or a clinical lead at Form Health would help a lot. If it suits you better, forward my note and I will keep it to two lines.
+
+Nick"
+Conrad,Lai,https://linkedin.com/in/conradlai,HeyNearby,Founder,,,"Hi Conrad,
+
+Quick one: who owns JumpstartMD's patient app and virtual visits today? The CEO or the CMO would be fine too.
+
+We build a two-photo body scan that runs inside a practice's own app, and I'd like to put it in front of the right person.
+
+Nick","Hi Conrad,
+
+Short follow-up on the same question. A single name at JumpstartMD, for the app or for virtual visits, is all I need.
+
+Nick"
+Stephanie,Therrien,https://linkedin.com/in/stephanie-r-therrien,knownwell,Head of Research Operations,,,"Hi Stephanie,
+
+Wanted to reach out about data capture in knownwell's obesity trials, given your years in research operations at MGH and Brigham. Curious how waist circumference gets captured between site visits.
+
+FitXpress does it remotely: two photos on the participant's phone return 80+ body measurements with a timestamp, using the same guided capture each time. Might be worth a quick chat?
+
+Nick","Hi Stephanie,
+
+We wrote up how standardized, timestamped anthropometrics work remotely in obesity trials: https://3dlook.ai/content-hub/clinical-trial-anthropometric-measurement-software-obesity-trials/ For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Krista,Sullivan,https://linkedin.com/in/krista-sullivan-13b9702b,Form Health,"Vice President, Practice Operations",,,"Hi Krista,
+
+Wanted to reach out: you moved from clinical operations at Teladoc Health to practice operations at Form Health, where follow-up time per visit is an operating question.
+
+FitXpress has patients capture two photos in the app before a video visit and returns 80+ body measurements, such as waist circumference, in under 45 seconds. The clinician opens the visit with a structured record. Worth a quick chat?
+
+Nick","Hi Krista,
+
+For practice operations the value is timing: results reach the record before the video visit starts, which can free clinician minutes for the plan.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Shannon,Thomas,https://linkedin.com/in/shannon-thomas-a27173129,FlyteHealth,EHR Administrator,,,"Hi Shannon,
+
+Made me think, your work bridging frontline healthcare operations with modern platforms. If FlyteHealth added a body scan to the app, where in the chart would the results go?
+
+With FitXpress an API returns structured results your team can route to the chart: two photos in, 80+ body measurements out. A typical basic integration takes 2-4 weeks, depending on the stack.
+
+Open to a quick chat?
+
+Nick","Hi Shannon,
+
+On the chart side, results arrive as structured, timestamped data. The FAQ covers data handling: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Alexandra,Argiroff,https://linkedin.com/in/alexandra-argiroff-00411012a,Ilant Health,Clinical Consultant,,,"Hi Alexandra,
+
+Wanted to reach out: bariatric surgeon at NYU Brooklyn and clinical advisor at Ilant. Who at Ilant owns the patient app for the surgical pathway?
+
+We build a two-photo body scan that runs inside a practice's own app. If a name is easy to share, I'd be grateful.
+
+Nick","Hi Alexandra,
+
+One more try, briefly: is there a clinical lead at Ilant who decides what patients record before a surgical consult? I'd write to them directly.
+
+Nick"
+Jessica,Underwood,https://linkedin.com/in/jessicaunderwood1,JumpstartMD,Health and Wellness Program Specialist,,,"Hi Jessica,
+
+Wanted to reach out: you welcome new members at JumpstartMD. Who owns the patient app, including what members see for progress?
+
+We build a two-photo body scan that runs inside a practice's own app. A name would be plenty.
+
+Nick","Hi Jessica,
+
+Checking once more, briefly: is there someone on the product side at JumpstartMD I should write to about member progress? Thank you.
+
+Nick"
+Matt,Hamil,https://linkedin.com/in/matthamil,Form Health,Senior Software Engineer,,,"Hi Matt,
+
+Your talks on JavaScript and React, and your React Native work at HiHello, are why I'm writing. The camera step is the hard part of a scan feature: front and side photos guided well enough to repeat.
+
+FitXpress packages that as a white-label SDK and API: two phone photos in, 80+ body measurements out in under 45 seconds. Worth a quick chat on how it would sit in Form's mobile app?
+
+Nick","Hi Matt,
+
+Mobile detail: the guided front and side capture runs inside your app, and the same sequence repeats each visit.
+
+The privacy and security FAQ we published: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Book a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Maxwell,Turner,https://linkedin.com/in/maxmturner,Ilant Health,Senior Software Engineer,,,"Hi Maxwell,
+
+Spotted something in your bio: user-friendly UI is your focus. A body scan lives or dies on its capture flow, and the SDK runs a guided two-photo capture inside an existing app.
+
+The API returns 80+ body measurements in under 45 seconds from the photos to structured results. Worth a quick chat?
+
+Nick","Hi Maxwell,
+
+For the build: 2-4 weeks is typical for a basic integration, and the capture flow is the part your team will spend time on.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Details: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Jenn,Roberts,https://linkedin.com/in/jenn-roberts-0b6189b7,Ilant Health,VP Consultant Relations,,,"Hi Jenn,
+
+Couldn't help but ask, given your employer health strategy work at Hello Heart: who at Ilant owns the product roadmap for outcome evidence beyond scale weight?
+
+We build a two-photo body scan that runs inside a practice's own app. A name would help.
+
+Nick","Hi Jenn,
+
+Bringing it back to the one question: who at Ilant should hear about circumferences between visits as outcome evidence for employers? Thank you for pointing me.
+
+Nick"
+Dish,Lamichhane,https://linkedin.com/in/dishhh,Form Health,Senior Product Manager,,,"Hi Dish,
+
+Noticed overlap: a psychology and public health background, now product at Form Health. Curious how patients see their own progress between video visits.
+
+FitXpress turns two phone photos into structured results, 80+ body measurements and a 3D record, in under 45 seconds, inside the app with no device to ship. Worth a quick chat?
+
+Nick","Hi Dish,
+
+A patient-facing piece to consider: two scans side by side, chosen by the practice, showing change inside the app.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Open to a 15-minute demo call? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Searus,Mandegary,https://linkedin.com/in/searus-mandegary-51358ab9,Form Health,"Director, Patient Services",,,"Hi Searus,
+
+Caught my eye: coaching at Virta Health, now patient services at Form Health. Between video visits, a visible milestone can keep check-ins going.
+
+FitXpress supplies one: two phone photos in the app return 80+ body measurements in under 45 seconds, and the care team sees the same record. Open to a quick chat?
+
+Nick","Hi Searus,
+
+For patient services, a scan from home gives the team something concrete to reach out about between visits.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Grab a slot if useful: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Jim,Fitzgerald,https://linkedin.com/in/jim-fitzgerald-3992638a,knownwell,"SVP, Practice Operations",,,"Hi Jim,
+
+Noticed your background in practice operations, at knownwell where clinics and nationwide virtual care run side by side. Curious what a clinician has to work with on a video visit when they want a body measurement.
+
+FitXpress adds a step before the visit: the patient takes two photos in the practice's own app and 80+ body measurements come back, such as waist circumference, along with body composition estimates. Worth a quick chat to explore?
+
+Nick","Hi Jim,
+
+For practice operations, results arrive in under 45 seconds from the photos to structured results, and the clinician joins a video visit with the record already there. Our write-up covers what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Courtney,Peterson,https://linkedin.com/in/petersoncourtney,Form Health,Lead FP&A,,,"Hi Courtney,
+
+Wanted to ask a routing question, coming from FP&A at FOLX Health to Form Health. Who at Form Health owns what clinicians measure on video visits, the CMO or an operations lead?
+
+I work on a two-photo body scan for practices, and I'd like to ask that person one question.
+
+Nick","Hi Courtney,
+
+One more try on routing: if the CMO or an operations lead owns clinical measurement, could you forward my earlier note? Two lines from you go further than another email from me.
+
+Nick"
+Ryan,Carroll,https://linkedin.com/in/carrollmedia,Form Health,Lead Software Engineer,,,"Hi Ryan,
+
+Your bio on asynchronous data workflows and healthcare integrations behind the Form Health product is the reason for this note.
+
+A scan fits that shape: two phone photos go in and 80+ body measurements come back in under 45 seconds, through a white-label API and SDK. A typical basic integration takes 2-4 weeks. Worth a quick chat on where it would plug in?
+
+Nick","Hi Ryan,
+
+For an async workflow the flow is photos in, structured results back, each stamped with its scan time.
+
+The privacy and security FAQ we published: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Open to a 15-minute demo call? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Leigh,Doner,https://linkedin.com/in/leigh-doner-203755106,Form Health,Sr Data Analyst,,,"Hi Leigh,
+
+Your background in business intelligence at Rx Savings Solutions and reporting at Alight Analytics fits a question I'm asking around Form Health: what body data reaches reporting?
+
+Each FitXpress scan returns 80+ body measurements as structured, timestamped results, from two phone photos in under 45 seconds. Worth a quick chat on whether that would be useful in your reporting?
+
+Nick","Hi Leigh,
+
+For analysis, per-scan outputs are the point: waist and other circumferences, along with lean mass and fat mass estimates, for scans the practice selects.
+
+The privacy and security FAQ we published: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Steven,Marchette,https://linkedin.com/in/smarchette,Ilant Health,Data Scientists,,,"Hi Steven,
+
+Saw the news on Ilant's Series A to scale the precision analytics engine. Circumferences captured with the same guided sequence each time give the engine a consistent input.
+
+FitXpress returns 80+ body measurements and body composition estimates (body fat %, lean mass, fat mass), with BMI and BMR as calculated metrics. Worth a quick chat?
+
+Nick","Hi Steven,
+
+For the data side: for most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Detail: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Audrey,(Scott) Spahr,https://linkedin.com/in/apscott111,Form Health,"Manager, Business Operations",,,"Hi Audrey,
+
+Ex-McKinsey and chief of staff before business operations at Form Health. Who leads the patient app roadmap, especially progress features between video visits?
+
+I work on an in-app body scan and would like a two-line intro to the right person.
+
+Nick","Hi Audrey,
+
+Back once with the same ask: who leads the patient app roadmap at Form Health? A name is enough, and I will keep my note to what a practice gets from two photos.
+
+Nick"
+Jon,Scherer,https://linkedin.com/in/jon-scherer,Form Health,Head of Revenue Cycle Management,,,"Hi Jon,
+
+Quick question, given your revenue cycle work at FOLX Health and SWORD Health before Form Health. Documentation that reaches plans starts with what clinicians record on visits. Who leads that at Form Health, the CMO or an operations lead?
+
+I'm exploring a two-photo body scan for that record. Just looking for a pointer.
+
+Nick","Hi Jon,
+
+Short follow-up. Whoever owns the visit record that plans see is who I hope to reach. FitXpress adds 80+ body measurements from two photos, in case it helps you place me.
+
+Nick"
+Marsha,Rose,https://linkedin.com/in/marsha-rose-1b41969b,JumpstartMD,Jumpstartmd,,,"Hi Marsha,
+
+Quick note: I noticed your health coaching background and I'm trying to find who at JumpstartMD owns the patient app and the progress record for online visits.
+
+We build a two-photo body scan that runs inside a practice's own app. Could you point me to the right person, or to the CMO's office?
+
+Nick","Hi Marsha,
+
+One more time, kept short: who would be the right person at JumpstartMD for a question about progress records on online visits? A name helps.
+
+Nick"
+Brian,Dragutsky,https://linkedin.com/in/brian-dragutsky-517022a0,knownwell,VP of Clinical Research,,,"Hi Brian,
+
+Noticed overlap between your work turning single-site research into multi-location platforms and knownwell's obesity trials. Curious how body measurements stay consistent across sites and between visits.
+
+FitXpress adds a remote option: two photos on the participant's phone return 80+ body measurements in under 45 seconds from the photos to structured results. Open to a quick chat?
+
+Nick","Hi Brian,
+
+For a multi-site network, one capture sequence at every site and at home is what standardizes the data. FitXpress uses the same guided capture each time. For scale: 112,100 scans in 2025 across all 3DLOOK customers. Trial write-up: https://3dlook.ai/content-hub/clinical-trial-anthropometric-measurement-software-obesity-trials/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Reena,Sudan,https://linkedin.com/in/reena-sudan-861554110,knownwell,Director of Operations,,,"Hi Reena,
+
+Quick note on your path from Accenture strategy and co-founding Flaire to running operations at knownwell. Curious how you standardize what gets measured across markets when some visits are in clinic and some are virtual.
+
+FitXpress gives virtual visits a standard step: two photos in the practice's own app return 80+ body measurements such as waist circumference, captured with the same guided sequence in every market. Worth a quick chat to explore?
+
+Nick","Hi Reena,
+
+On the operations side, the scan runs in the practice's own app on the patient's phone, and the practice compares scans it selects. We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Open to 15 minutes? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Julia,"Axelbaum, RD, CSOWM",https://linkedin.com/in/juliaaxelbaum,Form Health │ Personalized Medical Weight Loss,Director Of Clinical Nutrition,,,"Hi Julia,
+
+Had a thought after reading your bio on obesity as a complex medical condition. How do you see whether a protein and resistance-training plan is working between visits?
+
+FitXpress returns lean mass and fat mass estimates, along with 80+ body measurements, from two phone photos in under 45 seconds. The dietitian gets a scan-to-scan comparison to plan around. Open to a quick chat?
+
+Nick","Hi Julia,
+
+A dietitian's view: estimates for the care team to read alongside intake and visits, and a comparison between scans you select. The scan does not preserve lean mass by itself.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Terran,Drescher,https://linkedin.com/in/terran-drescher,Form Health,"Manager, Enrollment",,,"Hi Terran,
+
+Thought I'd share an idea for enrollment at Form Health: capture a baseline at intake, while the patient is already in the app.
+
+FitXpress guides two phone photos, front and side, and returns 80+ body measurements, such as waist circumference, in under 45 seconds. The practice can compare later scans with that baseline. Open to a quick chat?
+
+Nick","Hi Terran,
+
+At enrollment the baseline becomes a timestamped record from day one, captured with the same guided sequence later scans use.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Open to a 15-minute demo call? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Luciene,Doobay,https://linkedin.com/in/luciene-doobay-ba0187193,knownwell,Clinical Operations Lead,,,"Hi Luciene,
+
+Your bio talks about creating structure where there is complexity. A clinic reading for body composition is one kind of structure. Curious how a step like that carries over to knownwell's video visits.
+
+FitXpress gives video visits a repeatable step: two photos in the practice's own app, guided the same way each time, return 80+ body measurements such as waist circumference. Worth a quick chat to explore?
+
+Nick","Hi Luciene,
+
+For a clinic team, a scan the patient completes at home changes what is available at the next visit. We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Florencia,Halperin,https://linkedin.com/in/florencia-halperin-8496a8197,Form Health,Chief Medical Officer,,,"Hi Florencia,
+
+Came across your work: from the Program for Weight Management at Brigham and Women's to Form Health's one-on-one longitudinal care. Employers and plans now ask what anti-obesity medication spend buys.
+
+Waist and other circumferences add an answer no scale returns. FitXpress gives 80+ body measurements from two phone photos in under 45 seconds, inside the Form app. Might be worth a quick chat?
+
+Nick","Hi Florencia,
+
+Reports to plans and employers can carry one more timestamped line: a scan-to-scan comparison of scans your physicians select, interpreted by your clinicians.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Open to a 15-minute demo call? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Morgan,P.,https://linkedin.com/in/morganpak,knownwell,Head of Analytics,,,"Hi Morgan,
+
+This stood out: your public health analytics background, from the Minnesota Department of Health to UMN's disease modeling center. As Head of Analytics at knownwell, what would you want a remote measurement record between clinic visits to look like for virtual patients?
+
+FitXpress returns structured output from two photos: 80+ body measurements such as waist circumference, along with body composition estimates, each scan timestamped. Might be worth a quick chat?
+
+Nick","Hi Morgan,
+
+For an outcomes dataset, variance in the input matters. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm. We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Irissa,D.,https://linkedin.com/in/irissa-danelski,knownwell,Growth Operations Manager,,,"Hi Irissa,
+
+Came across your growth operations work at knownwell and the Salesforce ownership at Interwell Health. Quick ask: who owns progress and outcome features in the patient app? We built a two-photo body scan that practices add inside their own app.
+
+Nick","Hi Irissa,
+
+Coming back to my ask: a name is enough.
+
+Nick"
+Kelley,Brosky,https://linkedin.com/in/kelley-brosky,Form Health,Regional Practice Manager,,,"Hi Kelley,
+
+Quick idea for you: after member experience at Calibrate, you now run day-to-day practice workflow at Form Health. A guided in-app scan would give each practice the same capture sequence at every video visit.
+
+FitXpress returns 80+ body measurements from two phone photos in under 45 seconds, with no device to ship. Worth a quick chat?
+
+Nick","Hi Kelley,
+
+Workflow-wise, the scan is one short patient step before the visit, with structured results in under 45 seconds from the photos.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Grab a slot if useful: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Emily,Smith MD,https://linkedin.com/in/emily-smith-md-19247b173,Form Health,National Medical Director,,,"Hi Emily,
+
+Made me think: as an ABOM diplomate now setting the virtual-visit protocol at Form Health, you decide which body metrics clinicians record on a video visit.
+
+FitXpress adds a guided two-photo scan, front and side, that returns 80+ body measurements in under 45 seconds, captured with the same guided sequence each time. Lean mass and fat mass estimates come from the same scan. Open to a quick chat?
+
+Nick","Hi Emily,
+
+Repeatability is what a protocol needs. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Grab a slot if useful: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Nicole,Cordero,https://linkedin.com/in/nicole-cordero-389197144,knownwell,Senior Product Manager [Automations],,,"Hi Nicole,
+
+Got me thinking about the automations you own at knownwell, given your EHR and implementation background. Where would a between-visit scan check-in sit in an automated workflow?
+
+A patient gets prompted to take two photos in the app, and 80+ body measurements come back in under 45 seconds from the photos to structured results. That is FitXpress. Open to a quick chat?
+
+Nick","Hi Nicole,
+
+Picture a check-in automation that ends with a scan: the result arrives structured and timestamped, ready for the next step. For scale, 112,100 scans in 2025 across all 3DLOOK customers. Write-up on what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Slots here: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Yavuz,K.,https://linkedin.com/in/yavuz-k-a533b8177,FlyteHealth,Senior Data Engineer,,,"Hi Yavuz,
+
+Came across your work on Spark and AWS big data pipelines. Outcomes reporting for employers and plans needs clean inputs, and body measurements from a home scan would be a new source.
+
+FitXpress returns them as structured results through an API: two photos in, 80+ body measurements out, timestamped per scan.
+
+Worth a quick chat?
+
+Nick","Hi Yavuz,
+
+Consistent inputs matter for a pipeline. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+Data handling is in the FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Tara,J.,https://linkedin.com/in/tarajadun,FlyteHealth,Patient Operations Manager,,,"Hi Tara,
+
+Wanted to reach out because you run patient operations day to day, including scheduling and patient experience.
+
+FitXpress works from the member's phone, on their own time: two photos inside FlyteHealth's app return 80+ body measurements. Nothing to schedule and no device to ship.
+
+Open to a quick chat?
+
+Nick","Hi Tara,
+
+For the day-to-day: from the photos to structured results takes under 45 seconds, and the member captures from their own phone.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+James,Powell,https://linkedin.com/in/james-powell-b42bb5149,FlyteHealth,Chief Clinical Operations Officer,,,"Hi James,
+
+Caught my eye: virtual and home-based care alongside value-based care in your headline. A video visit runs on what the clinician can see, and a waist is not visible on camera.
+
+FitXpress fills that in before the visit: two photos from the member's phone, then under 45 seconds from the photos to structured results. The clinician opens waist and other circumferences in the record.
+
+Worth a quick chat?
+
+Nick","Hi James,
+
+For clinician time: the member captures before the visit and the clinician opens the results. Accuracy is 96-97% against expert manual measurement.
+
+Our write-up on what a progress record beyond scale weight needs, including where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+FADOUA,F.,https://linkedin.com/in/fadoua-f-16453214b,Enara Health,Senior clinical specialist III,,,"Hi Fadoua,
+
+Caught my eye: remote dietetic counseling in three languages is a real skill. I'm looking for the clinical lead at Enara Health who decides how patient progress is recorded.
+
+We build a two-photo body scan that runs inside a practice's own app. Would you share their name, or introduce us?
+
+Nick","Hi Fadoua,
+
+A smaller ask this time: is there a person on the clinical side at Enara I should write to about progress records? One name helps.
+
+Nick"
+Sharon,Vallee,https://linkedin.com/in/sharon-vallee-560b75180,FORM │ Virtual obesity medicine clinic,Operations Specialist,,,"Hi Sharon,
+
+Hoping you can point me the right way. Who owns the Form Health patient app roadmap, or the progress features in it? I work on a body scan from two phone photos that a practice can add inside its own app, and I'd like to ask that person one question.
+
+Nick","Hi Sharon,
+
+No worries if this is off your desk. If you know who decides on new patient app features, could you share their name? Grateful either way.
+
+Nick"
+Laura,"Liang, M.A., CCC-SLP",https://linkedin.com/in/lauraliang97,knownwell,Clinical Systems Specialist,,,"Hi Laura,
+
+Noticed your path from speech-language pathology into clinical systems, with years as a front-end user of several EHRs. Curious what you'd want a patient-generated scan to look like when it reaches a chart.
+
+FitXpress returns structured, timestamped results from two photos, through a white-label API and SDK inside the practice's app: 80+ body measurements such as waist circumference. Might be worth a quick chat?
+
+Nick","Hi Laura,
+
+One practical detail: results return in under 45 seconds from the photos to structured results, which matters for a visit workflow. Privacy and data handling are in our FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Here is my calendar: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Casey,Harrell,https://linkedin.com/in/casey-harrell-0b70a8185,knownwell,Clinical Trial Manager,,,"Hi Casey,
+
+Noticed your CCRC and your coordinator work before trial management at knownwell. Curious how waist circumference gets captured for participants between site visits.
+
+FitXpress captures it remotely: two photos on the participant's phone return 80+ body measurements, and the study team can use scan-to-scan comparison. Open to a quick chat?
+
+Nick","Hi Casey,
+
+On data quality: FitXpress reaches 96-97% accuracy against expert manual measurement. Our write-up on remote anthropometrics in obesity trials: https://3dlook.ai/content-hub/clinical-trial-anthropometric-measurement-software-obesity-trials/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Slots here: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Allyson,Gawlik,https://linkedin.com/in/algawlik,knownwell,Practice Manager,,,"Hi Allyson,
+
+Came across your bio and its focus on putting patients at ease from the first minute. Curious how measurement fits that on knownwell's video visits.
+
+FitXpress allows a patient to capture two photos at home, in the practice's own app, and 80+ body measurements such as waist circumference come back to the care team. Open to a quick chat?
+
+Nick","Hi Allyson,
+
+For patients on video visits, a scan at home is one more thing the practice can compare between clinic visits. We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Anystin,Bigler,https://linkedin.com/in/anystin-bigler,knownwell,"Manager, Payer Credentialing",,,"Hi Anystin,
+
+Noticed your payer credentialing and provider onboarding work at knownwell. Quick ask: is there someone on the clinical or operations side who owns new patient-app features? We built a two-photo body scan that practices add inside their own app, and I'd like to reach that person.
+
+Nick","Hi Anystin,
+
+Adding context to my question: the scan is a phone-based add-on for a practice's own app. A clinical or operations lead would be the right person to see it.
+
+Nick"
+Christina,"Link, MS, RDN, LDN, CDCES",https://linkedin.com/in/christina-link-ms-rdn-ldn-cdces-64302321a,Ilant Health,Director of Nutrition,,,"Hi Christina,
+
+Caught my eye: you built clinical nutrition programs in digital health and obesity care. Curious how you'd want lean mass and fat mass read next to the nutrition plan.
+
+FitXpress returns lean mass and fat mass estimates, along with 80+ body measurements such as waist circumference, from two phone photos inside the Ilant app. Open to a quick chat?
+
+Nick","Hi Christina,
+
+For the nutrition plan: lean mass and fat mass estimates. Body measurements show 96-97% accuracy against expert manual measurement.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We put together what a progress record beyond scale weight needs, and where a scan does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Matija,"Burtis DO, DABFM, DABOM",https://linkedin.com/in/matija-burtis-do-dabfm-dabom-83b7611aa,knownwell,Market Development Lead Physician,,,"Hi Matija,
+
+Couldn't help but ask, after seeing that you founded weight management at St. Mary's and led adult obesity medicine at MaineHealth: how does the clinical model work for patients on video in a market where knownwell has no clinic yet?
+
+FitXpress can give them a measurement record: two photos in the practice's own app return 80+ body measurements such as waist circumference, along with body composition estimates. Worth a quick chat?
+
+Nick","Hi Matija,
+
+For a market that starts on video, baseline measurements come from the patient's phone. One weight-management platform ran 34,000 scans in 2025. We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Te’Asia,Chandler,https://linkedin.com/in/teasiachandler,knownwell,Medical Practice Manager,,,"Hi Te’Asia,
+
+Came across your work as a medical practice manager, with scribing and coordinating services in your background. Curious what goes into the visit note for measurements when a patient is on video.
+
+FitXpress gives that note a structured entry: two photos in the practice's own app return 80+ body measurements such as waist circumference, along with body composition estimates, in under 45 seconds from the photos to structured results. Worth a quick chat?
+
+Nick","Hi Te’Asia,
+
+For the visit note, a timestamped scan is something a clinician can reference. We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Emma,Fitzgerald,https://linkedin.com/in/emma-fitzgerald-44ab061ab,Form Health,Operations Team Lead,,,"Hi Emma,
+
+Quick one for someone who works across Form Health's operations and its workflow automation: who leads the patient app roadmap or its progress features? A body scan from two phone photos could sit inside the app, and I'd like a name to ask.
+
+Nick","Hi Emma,
+
+A gentle nudge on my question about the patient app roadmap. Even a team name helps, and I will do the rest of the searching.
+
+Nick"
+Jerusha,Stahl,https://linkedin.com/in/jerusha-stahl-b0aa44231,Intellihealth,Obesity Medicine,,,"Hi Jerusha,
+
+Couldn't help but ask, given your years in obesity medicine and leading an obesity medicine clinic. I am looking for the CMO or clinical lead at FlyteHealth who decides what clinicians record between video visits, beyond scale weight.
+
+Would you know who that is, or could you introduce me?
+
+Nick","Hi Jerusha,
+
+A short follow-up. If you can point me to the CMO or the clinical lead who decides what clinicians record on video visits, I would be grateful.
+
+Nick"
+Elena,"Noonan, MPAS, PA-C",https://linkedin.com/in/elena-noonan-mpas-pa-c-b53093203,Enara Health,Metabolic Health/Obesity Medicine Physician Assistant,,,"Hi Elena,
+
+Noticed overlap: you practiced virtual obesity medicine before Enara. Who at Enara owns the video-visit workflow and the patient app?
+
+We build a two-photo body scan that runs inside a practice's own app. A name is all I need.
+
+Nick","Hi Elena,
+
+Short follow-up. If the app owner is a colleague, who would be the right person to hear about a scan that adds circumferences to video visits? Thanks for pointing me there.
+
+Nick"
+Karla,"Saint Andre, MD, FACE, DABOM",https://linkedin.com/in/karla-saint-andre-md-face-dabom-204b17243,Form Health,Regional Medical Director,,,"Hi Karla,
+
+Quick one: you run a physician region at Form Health after endocrinology at Houston Methodist, and each clinician applies the follow-up protocol in their own visits. A guided scan repeats the same capture sequence each time, which keeps records comparable across the region.
+
+FitXpress returns 80+ body measurements from two phone photos in under 45 seconds, in the Form app. Open to a quick chat?
+
+Nick","Hi Karla,
+
+For scale context on a regional protocol: 112,100 scans in 2025 across all 3DLOOK customers.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Open to a 15-minute demo call? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Emely,Sibrian,https://linkedin.com/in/emely-sibrian-02005a213,knownwell,Clinical Operations Lead,,,"Hi Emely,
+
+Noticed your background as a medical assistant at Franciscan Health and Beacon Medical Group before clinical operations at knownwell. Curious who takes the measurements on a video visit.
+
+FitXpress moves that step to the patient: two photos in the practice's own app return 80+ body measurements, guided the same way each time. Worth a quick chat to explore?
+
+Nick","Hi Emely,
+
+For the clinic floor, a scan the patient completes before the visit is one less step in the room. We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Open to 15 minutes? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Melissa,Myhre,https://linkedin.com/in/melissa-myhre-0469b9260,JumpstartMD,Regional Operations Manager,,,"Hi Melissa,
+
+Caught my eye: your focus on clinic operations and member experience across regions. Between clinic visits members are at home; curious what the regional teams see of their progress.
+
+FitXpress returns waist and other circumferences (80+ body measurements) from two phone photos, inside the practice's own app. Open to a quick chat?
+
+Nick","Hi Melissa,
+
+For regional teams: every member follows the same guided capture, which keeps scans comparable across locations.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Cynthia,"Gerome, MBA",https://linkedin.com/in/cynthia-gerome-mba-027a01346,Form Health,Senior Manager Provider Operations,,,"Hi Cynthia,
+
+Your path from patient entry at CoreLife Healthcare to provider operations at Form Health is the reason I'm writing. A structured scan record in front of the provider at the start of a follow-up gives that visit a head start.
+
+FitXpress returns 80+ body measurements from two phone photos in under 45 seconds, inside the app. Worth a quick chat?
+
+Nick","Hi Cynthia,
+
+Provider workflow view: the record is ready before the visit, and the same guided capture repeats each time.
+
+We wrote up what a progress record beyond scale weight needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Open to a 15-minute demo call? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Francis,Nju,https://linkedin.com/in/francis-nju-912a453b4,Form Health,Senior Software Engineer,,,"Hi Francis,
+
+Noticed your background in event-driven backend systems on AWS.
+
+Home scale readings already flow into the Form app. We built FitXpress as a white-label SDK and API that can add a second input there: two photos (front and side) return 80+ body measurements, such as waist circumference, under 45 seconds from the photos to structured results.
+
+Might be worth a quick chat?
+
+Nick","Hi Francis,
+
+Sharing the integration details, in case helpful. FitXpress runs as a white-label API and SDK inside an existing app, and a typical basic integration takes 2-4 weeks.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days. The data-handling FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Worth 15 min on the data flow? https://meetings.hubspot.com/nick-omelchak
+
+Nick"

@@ -1,0 +1,9 @@
+{
+ "campaign": "2026-09-29-us-obesity-medicine",
+ "checked": 1,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "form-health-2",
+ "generated": "2026-09-29T12:28:27",
+ "hard": [],
+ "soft": []
+}

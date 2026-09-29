@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-28",
+  "last_updated": "2026-09-29",
   "companies": {
     "safariland": {
       "covered_by_profile": null,
@@ -1079,6 +1079,102 @@
       "campaign_id": "2026-09-14-eu-erakulis-similar",
       "product": "fitxpress",
       "date": "2026-09-14",
+      "status": "active"
+    },
+    "center-for-medical-weight-loss-cmwl": {
+      "display_name": "The Center for Medical Weight Loss (CMWL)",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-09-29-us-obesity-medicine",
+      "product": "fitxpress",
+      "date": "2026-09-29",
+      "status": "active"
+    },
+    "enara-health": {
+      "display_name": "Enara Health",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-09-29-us-obesity-medicine",
+      "product": "fitxpress",
+      "date": "2026-09-29",
+      "status": "active"
+    },
+    "flytehealth": {
+      "display_name": "FlyteHealth",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-09-29-us-obesity-medicine",
+      "product": "fitxpress",
+      "date": "2026-09-29",
+      "status": "active"
+    },
+    "form-health": {
+      "display_name": "Form Health",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-09-29-us-obesity-medicine",
+      "product": "fitxpress",
+      "date": "2026-09-29",
+      "status": "active"
+    },
+    "form-health-personalized-medical-weight-loss": {
+      "display_name": "Form Health │ Personalized Medical Weight Loss",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-09-29-us-obesity-medicine",
+      "product": "fitxpress",
+      "date": "2026-09-29",
+      "status": "active"
+    },
+    "form-virtual-obesity-medicine-clinic": {
+      "display_name": "FORM │ Virtual obesity medicine clinic",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-09-29-us-obesity-medicine",
+      "product": "fitxpress",
+      "date": "2026-09-29",
+      "status": "active"
+    },
+    "heynearby": {
+      "display_name": "HeyNearby",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-09-29-us-obesity-medicine",
+      "product": "fitxpress",
+      "date": "2026-09-29",
+      "status": "active"
+    },
+    "ilant-health": {
+      "display_name": "Ilant Health",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-09-29-us-obesity-medicine",
+      "product": "fitxpress",
+      "date": "2026-09-29",
+      "status": "active"
+    },
+    "intellihealth": {
+      "display_name": "Intellihealth",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-09-29-us-obesity-medicine",
+      "product": "fitxpress",
+      "date": "2026-09-29",
+      "status": "active"
+    },
+    "jumpstartmd": {
+      "display_name": "JumpstartMD",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-09-29-us-obesity-medicine",
+      "product": "fitxpress",
+      "date": "2026-09-29",
+      "status": "active"
+    },
+    "knownwell": {
+      "display_name": "knownwell",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-09-29-us-obesity-medicine",
+      "product": "fitxpress",
+      "date": "2026-09-29",
+      "status": "active"
+    },
+    "rivas-medical-weight-loss": {
+      "display_name": "Rivas Medical Weight Loss",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-09-29-us-obesity-medicine",
+      "product": "fitxpress",
+      "date": "2026-09-29",
       "status": "active"
     }
   }

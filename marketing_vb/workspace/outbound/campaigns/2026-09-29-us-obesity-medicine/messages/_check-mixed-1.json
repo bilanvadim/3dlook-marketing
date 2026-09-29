@@ -1,0 +1,65 @@
+{
+ "campaign": "2026-09-29-us-obesity-medicine",
+ "checked": 31,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-1",
+ "generated": "2026-09-29T12:28:28",
+ "hard": [],
+ "soft": [
+  [
+   "no calendar link",
+   "al-remediani-917b00 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "roopal-pujara-lalaji-psyd-dipaclm-277488 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "linford-stillson-19457611 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "drgoodpaster M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "conradlai M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "alexandra-argiroff-00411012a M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "jessicaunderwood1 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "jenn-roberts-0b6189b7 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "marsha-rose-1b41969b M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "fadoua-f-16453214b M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "elena-noonan-mpas-pa-c-b53093203 M2",
+   "angle referral"
+  ]
+ ]
+}

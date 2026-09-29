@@ -1,0 +1,50 @@
+{
+ "campaign": "2026-09-29-us-obesity-medicine",
+ "checked": 35,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "form-health-1",
+ "generated": "2026-09-29T12:28:27",
+ "hard": [],
+ "soft": [
+  [
+   "no calendar link",
+   "joseph-grasso-2388b44 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "garyriedelgaudet M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "alex-harper-msn-apn-acns-bc-cdces-9aa4b059 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "petersoncourtney M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "apscott111 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "jon-scherer M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "sharon-vallee-560b75180 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "emma-fitzgerald-44ab061ab M2",
+   "angle referral"
+  ]
+ ]
+}

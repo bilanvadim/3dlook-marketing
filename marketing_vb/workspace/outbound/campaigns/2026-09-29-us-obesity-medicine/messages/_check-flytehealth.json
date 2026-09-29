@@ -1,0 +1,20 @@
+{
+ "campaign": "2026-09-29-us-obesity-medicine",
+ "checked": 17,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "flytehealth",
+ "generated": "2026-09-29T12:28:28",
+ "hard": [],
+ "soft": [
+  [
+   "no calendar link",
+   "scott-albrecht-b385966 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "jerusha-stahl-b0aa44231 M2",
+   "angle referral"
+  ]
+ ]
+}

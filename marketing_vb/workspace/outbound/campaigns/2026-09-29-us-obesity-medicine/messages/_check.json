@@ -1,0 +1,160 @@
+{
+ "campaign": "2026-09-29-us-obesity-medicine",
+ "checked": 112,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": null,
+ "generated": "2026-09-29T12:30:52",
+ "hard": [],
+ "soft": [
+  [
+   "greeting",
+   "elizabeth-lacarra-0045a867 M1",
+   "«Hi Beth,» has no «Elizabeth»"
+  ],
+  [
+   "greeting",
+   "elizabeth-lacarra-0045a867 M2",
+   "«Hi Beth,» has no «Elizabeth»"
+  ],
+  [
+   "no calendar link",
+   "al-remediani-917b00 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "roopal-pujara-lalaji-psyd-dipaclm-277488 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "joseph-grasso-2388b44 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "chris-spelman M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "scott-albrecht-b385966 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "garyriedelgaudet M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "linford-stillson-19457611 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "nathan-linsley M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "vickygulko M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "sean-grainger-61152620 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "drgoodpaster M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "ben-wells-a1473a26 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "alex-harper-msn-apn-acns-bc-cdces-9aa4b059 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "conradlai M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "alexandra-argiroff-00411012a M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "jessicaunderwood1 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "jenn-roberts-0b6189b7 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "petersoncourtney M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "apscott111 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "jon-scherer M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "marsha-rose-1b41969b M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "irissa-danelski M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "fadoua-f-16453214b M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "sharon-vallee-560b75180 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "anystin-bigler M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "emma-fitzgerald-44ab061ab M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "jerusha-stahl-b0aa44231 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "elena-noonan-mpas-pa-c-b53093203 M2",
+   "angle referral"
+  ]
+ ]
+}
