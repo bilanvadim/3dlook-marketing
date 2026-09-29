@@ -602,6 +602,14 @@ check "card --for validate -> 0" 0 $OP card --campaign $P --for validate
 check "card --for messages -> 0" 0 $OP card --campaign $P --for messages
 check "fresh card passes --check -> 0" 0 $OP card --campaign $P --for messages --check
 grep_check "the card carries no pricing section" "^0$" grep -c "^### Pricing" "$CAMP/$P/card-messages.md"
+# Both products number their ICP segments from 1: a FitXpress §1 card once carried
+# Mobile Tailor §1 ("MTM Brands & Tailors") as well (2026-09-29).
+ICP_SEG='import importlib.util as u, pathlib, sys
+s = u.spec_from_file_location("op", "scripts/outbound_pack.py"); m = u.module_from_spec(s); s.loader.exec_module(m)
+print(m.icp_segment(pathlib.Path("brand-assets/product-info/icp-detail.md"), sys.argv[1], "1"))'
+grep_check "ICP §1 for fitxpress is the FitXpress segment" "^## 1\. Telehealth" python3 -c "$ICP_SEG" fitxpress
+check "ICP §1 for fitxpress carries no Mobile Tailor segment -> 1" 1 sh -c "python3 -c '$ICP_SEG' fitxpress | grep -q 'MTM Brands'"
+grep_check "ICP §1 for mobile_tailor is the MTM segment" "^## 1\. MTM Brands" python3 -c "$ICP_SEG" mobile_tailor
 
 cat > "$CAMP/$P/decisions.csv" <<'EOF'
 person_id,decision,priority,angle,wave,reason

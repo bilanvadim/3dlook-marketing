@@ -189,6 +189,19 @@ def md_section(path: Path, *needles: str, level: str = "##") -> str:
     return "\n\n".join(keep)
 
 
+def icp_segment(path: Path, product: str, number: str) -> str:
+    """`## {number}. …` from the product's own part of icp-detail.md.
+
+    Both products number their segments from 1, so a bare "1. " match handed the
+    validator FitXpress §1 AND Mobile Tailor §1 ("MTM Brands & Tailors"), 2026-09-29.
+    """
+    h1 = "# Mobile Tailor ICP" if product.startswith("mobile") else "# FitXpress ICP"
+    parts = re.split(r"(?m)^(?=# )", path.read_text(encoding="utf-8"))
+    part = next((x for x in parts if x.startswith(h1)), "")
+    secs = re.split(r"(?m)^(?=## )", part)
+    return "\n\n".join(s.rstrip() for s in secs if s.startswith(f"## {number}. "))
+
+
 def demote(md: str, by: int = 1) -> str:
     """Push every heading down, so quoted material nests under the card's own headings."""
     return re.sub(r"(?m)^(#+) ", lambda m: "#" * (len(m.group(1)) + by) + " ", md)
@@ -833,7 +846,7 @@ def build_card(cdir: Path, stage: str) -> str:
         m = re.search(r"icp-detail\.md[` ]*(?:§|section )\s*(\d+)", text)
         icp = pi / "icp-detail.md"
         if m and icp.exists():
-            sec = md_section(icp, f"{m.group(1)}. ")
+            sec = icp_segment(icp, product, m.group(1))
             if sec:
                 out += ["## ICP segment (icp-detail.md, verbatim)", "", demote(sec), ""]
     else:
@@ -1645,6 +1658,19 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
         if link and m2 and link not in m2:
             (soft if angle == "referral" else hard).append(
                 ("no calendar link", f"{pid} M2", f"angle {angle or '?'}"))
+        # Six Superpower openers on 2026-09-29 never named Superpower or used one of its
+        # card facts, and only QC caught it. The name is the cheap proxy; a fact without
+        # the name is fine, so this stays a note.
+        g = group_of(p, gmap)
+        m1_low = (msgs.get(1) or "").lower()
+        if m1_low and g and g != "?":
+            names = {g.lower()} | {k.replace("-", " ") for k in PIPE.company_keys(g)}
+            short = re.sub(r"(?i)[\s-]*(health|healthcare|medical|clinic)$", "", g).strip().lower()
+            if len(short) >= 3:
+                names.add(short)            # copy says "9am" for 9amHealth
+            if not any(nm and nm in m1_low for nm in names):
+                soft.append(("no company line", f"{pid} M1",
+                             f"«{g}» is not named: check it has a line only this company gets"))
 
     dup: dict[str, list[str]] = defaultdict(list)
     for (pid, n), b in bodies.items():
@@ -1805,6 +1831,7 @@ def cmd_build_import(args) -> int:
     if run_check(cdir) != 0 and not args.force:
         print("✗ import not built: the messages do not pass the gate (above).", file=sys.stderr)
         return 1
+    gmap = group_map(cdir)
     out_dir = Path(args.out_dir) if args.out_dir else cdir
     out_dir.mkdir(parents=True, exist_ok=True)
     files: dict[str, list[dict]] = defaultdict(list)
@@ -1817,7 +1844,10 @@ def cmd_build_import(args) -> int:
         msgs = read_messages(cdir / "messages" / f"{pid}.md")
         row = {"first_name": p.get("first_name", ""), "last_name": p.get("last_name", ""),
                "linkedin_url": pick(p, "linkedin_url", "person_linkedin_url"),
-               "company": p.get("company_name", ""), "title": p.get("title", ""),
+               # The canonical group, not the export's raw cell: the registry records this
+               # column, and a Level2 CPO on the UnitedHealth Group page must exclude Level2,
+               # never UnitedHealth Group (2026-09-29).
+               "company": group_of(p, gmap), "title": p.get("title", ""),
                "email": p.get("email_guess", ""), "connection_note": "",
                "message_1": msgs.get(1, ""), "message_2": msgs.get(2, "")}
         # One file, everyone at once. Vadim 2026-09-29: «хвиль робити не потрібно, давай
