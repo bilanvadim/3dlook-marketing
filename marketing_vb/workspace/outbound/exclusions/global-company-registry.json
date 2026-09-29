@@ -1176,6 +1176,30 @@
       "product": "fitxpress",
       "date": "2026-09-29",
       "status": "active"
+    },
+    "9amhealth": {
+      "display_name": "9amHealth",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-09-29-us-cardiometabolic",
+      "product": "fitxpress",
+      "date": "2026-09-29",
+      "status": "active"
+    },
+    "level2": {
+      "display_name": "Level2",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-09-29-us-cardiometabolic",
+      "product": "fitxpress",
+      "date": "2026-09-29",
+      "status": "active"
+    },
+    "superpower": {
+      "display_name": "Superpower",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-09-29-us-cardiometabolic",
+      "product": "fitxpress",
+      "date": "2026-09-29",
+      "status": "active"
     }
   }
 }

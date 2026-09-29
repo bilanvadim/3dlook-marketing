@@ -1,0 +1,1102 @@
+first_name,last_name,linkedin_url,company,title,email,connection_note,message_1,message_2
+Nathan,L.,https://linkedin.com/in/lovenj,Level2,Senior Account Manager,,,"Hi Nathan,
+
+Noticed overlap in your path: medical and clinical operations at UnitedHealthcare, now account management at Level2. Who owns the member app roadmap, or the care model?
+
+I ask because 3DLOOK builds a two-photo body scan that a Level2 program could show an employer next to CGM glucose. A name or a team is enough.
+
+Nick","Hi Nathan,
+
+A short follow-up on my question: which team at Level2 owns the member app or the care model? A name or a team is enough, and I will take it from there.
+
+Nick"
+Danny,Grannick,https://linkedin.com/in/dannygrannick,Superpower,(More) Product,,,"Hi Danny,
+
+Quick thought from the retention side: what gives a Superpower member a reason to open the app in the months between the baseline panel and the retest?
+
+We built a white-label scan the app can ask for. Two photos return waist and hip circumference among 80+ body measurements, with a 3D model and no device to ship. Might be worth a quick chat?
+
+Nick","Hi Danny,
+
+Checking whether a between-draws touchpoint is on the roadmap. The capture side already runs in production: one weight-management platform ran 34,000 scans in 2025.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+A short read on body data in wellness programs: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Candice,Drysdale,https://linkedin.com/in/candice-drysdale,Superpower,Operations Lead,,,"Hi Candice,
+
+Curious about your take from the dietitian side: how do waist and hip circumference fit into member care between blood draws?
+
+We built a two-photo scan that returns them among 80+ body measurements, white-label inside the Superpower app, with no device to ship. Might be worth a quick chat?
+
+Nick","Hi Candice,
+
+A measure a dietitian can compare month to month has to repeat well. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We wrote up how wellness programs use body data: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Kori,"Heinen, PMP",https://linkedin.com/in/koriheinen,Level2,"Chief Product Officer, Level2 (UnitedHealthcare)",,,"Hi Kori,
+
+Got me thinking about what the Level2 app could ask a member for between CGM check-ins.
+
+One candidate is a two-photo scan that returns 80+ body measurements, waist and hip circumference among them, and a 3D model. We built it at 3DLOOK as FitXpress: white-label inside the app, no device to ship.
+
+Open to a quick chat?
+
+Nick","Hi Kori,
+
+Some scale for the roadmap conversation: 112,100 scans in 2025 across all 3DLOOK customers. We also wrote up what a repeatable remote body record needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+William,Hartwell,https://linkedin.com/in/williamshartwell,9amHealth,Director of FP&A,,,"Hi William,
+
+Wanted to reach out with a routing question: which team at 9am owns the member app roadmap? Finance often knows where that decision sits.
+
+I work at 3DLOOK, which makes a two-photo body scan that member apps can embed. A name is all I am after.
+
+Nick","Hi William,
+
+One more try, and a small one: a name for whoever decides on new member app features at 9am, or a forward of this note. Thank you either way.
+
+Nick"
+🤖 Greg,Schwartz,https://linkedin.com/in/gregschwartz,9amHealth,Senior AI Engineer,,,"Hi Greg,
+
+Noticed the Prompt Engineering Podcast in your bio. Curious how you'd want structured body data to reach 9am's AI features.
+
+We built a white-label API and SDK. Two photos in the app return 80+ body measurements, and it takes under 45 seconds from the photos to structured results.
+
+Open to a quick chat?
+
+Nick","Hi Greg,
+
+Integration detail: a typical basic integration takes 2-4 weeks, a generic figure. Outputs are stored and can be deleted by scan ID.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+The privacy and security FAQ covers the rest: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Mike,Reeve,https://linkedin.com/in/mike-reeve-33693a2,9amHealth,Chief Commercial Officer,,,"Hi Mike,
+
+Spotted your JDRF Mountain West board role. Quick ask: who at 9am owns the member app roadmap?
+
+One line of context: 3DLOOK builds a two-photo body scan for member apps. It could give an employer a guided record of 80+ body measurements beyond waist and a 3D model, next to the weight, waist and A1C trends the program already shows.
+
+Nick","Hi Mike,
+
+Here is the short version of my earlier question: a name for whoever owns the 9am app roadmap. A call also works: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Lindsay,Gilreath,https://linkedin.com/in/lindsay-gilreath-25290732,9amHealth,Strategic Account Executive - Midwest,,,"Hi Lindsay,
+
+Your Evernorth and Express Scripts years stood out. Quick ask: who at 9am owns the member app roadmap?
+
+For context, we make a phone body scan: 80+ body measurements beyond waist and a 3D model, captured the same way each time, that could sit next to the weight, waist and A1C trends an employer-facing program shows.
+
+Nick","Hi Lindsay,
+
+A shorter question this time: who would look at a new member app feature for employer programs at 9am? A name or a forward is plenty. Calendar if easier: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Erhan,Justice,https://linkedin.com/in/erhan-justice,Superpower,Senior Software Engineer,,,"Hi Erhan,
+
+Curious about your take on security: what would you want to see before Superpower member photos, taken between blood draws, go through an outside API?
+
+We built a white-label API and SDK for body measurements. Two photos in, 80+ body measurements out, inside the member app. Worth a quick chat?
+
+Nick","Hi Erhan,
+
+Security first: outputs are stored and deletable by scan ID.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+The trust FAQ has the detail: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Happy to go through it in 15 min: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Holly,McVey,https://linkedin.com/in/holly-mcvey-4a36974,Level2,"Sr. Director, Implementation",,,"Hi Holly,
+
+Noticed your background in national accounts implementation. When Level2 rolls a program out to a new employer, what does each member need to receive?
+
+A two-photo body scan needs only the member's phone: one white-label SDK across employer clients, 80+ body measurements per scan, no device to ship. We built it at 3DLOOK as FitXpress. Open to a quick chat?
+
+Nick","Hi Holly,
+
+Rollout view: the same guided two-photo capture for every employer client, with nothing shipped and no returns to plan for.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Happy to walk through an implementation view: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Abe,"Malkin, MD MBA",https://linkedin.com/in/abemalkin,Superpower,Co-Founder,,,"Hi Abe,
+
+Noticed your work in longevity and concierge medicine. Quick ask: do you know who at Superpower owns the member app roadmap, specifically what members can capture at home between blood draws?
+
+A name or a role would help. No pitch.
+
+Nick","Hi Abe,
+
+Circling back with a smaller ask: which team at Superpower decides what goes into the member app between draws?
+
+Nick"
+Tim,Denman,https://linkedin.com/in/timdenman,Superpower,"VP, Enterprise",,,"Hi Tim,
+
+Noticed your work with self-funded employers and Taft-Hartley funds. Quick ask: who at Superpower owns the member app roadmap?
+
+Context: we build a two-photo scan for member apps that returns waist and hip circumference, which a program can show an employer between blood draws. I'd like to reach the right owner.
+
+Nick","Hi Tim,
+
+Following up with a simpler ask: a name or a role is enough. Who owns the member app roadmap?
+
+Nick"
+Gina,Houston,https://linkedin.com/in/ginacamryn,9amHealth,Vice President Operations,,,"Hi Gina,
+
+Noticed your Spring Health years scaling operations. Curious how you'd want a body-data step to behave as 9am's employer programs grow.
+
+We built a scan for member apps: two photos return 80+ body measurements beyond waist and a 3D model. It takes under 45 seconds from the photos to structured results, in the same guided sequence each time.
+
+Might be worth a quick chat?
+
+Nick","Hi Gina,
+
+Where this helps operations: one guided sequence each time, across every employer client, from one SDK. For scale, one weight-management platform ran 34,000 scans in 2025.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We wrote up what a repeatable remote body record needs: https://3dlook.ai/content-hub/glp-1-market/
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Kitrina,Evans,https://linkedin.com/in/kitrinaevans,Level2,Implementation Manager,,,"Hi Kitrina,
+
+Quick note, since you've run national accounts implementations: at go-live for a new employer, what does a member need in hand?
+
+A two-photo body scan (front and side) needs only the phone. It returns 80+ body measurements inside the Level2 member app, and we built it at 3DLOOK as FitXpress.
+
+Might be worth a quick chat?
+
+Nick","Hi Kitrina,
+
+A timing figure for member onboarding: under 45 seconds from the photos to structured results, from front and side photos on the member's phone.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+What we wrote on remote body records: https://3dlook.ai/content-hub/glp-1-market/
+
+Free for 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Elizabeth,Reilly,https://linkedin.com/in/elizabeth-reilly-md789,9amHealth,Endocrinologist,,,"Hi Elizabeth,
+
+Your Kaiser Permanente years in endocrinology caught my eye. Curious what body-size context you'd want beside a 9am member's glucose and lab results.
+
+We built a scan for member apps: two photos return hip and other circumferences among 80+ body measurements, timestamped, in the same guided sequence each time. The care team compares the scans it selects.
+
+Open to a quick chat?
+
+Nick","Hi Elizabeth,
+
+The outcome for the care team: a structured, timestamped record of body measurements from one guided sequence each time. That comes with 96-97% accuracy against expert manual measurement.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We wrote up what a repeatable remote body record needs: https://3dlook.ai/content-hub/glp-1-market/
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Trent,H.,https://linkedin.com/in/trenth-,Level2,Lead Software Engineer,,,"Hi Trent,
+
+Wanted to reach out after seeing Humana on your background. Here is a plain technical summary for the Level2 member app.
+
+FitXpress from 3DLOOK is a white-label API and SDK: the app captures two photos, and 80+ body measurements come back in under 45 seconds from the photos to structured results.
+
+Worth a quick chat?
+
+Nick","Hi Trent,
+
+On scoping: 2-4 weeks is typical for a basic integration of the SDK into an existing app. It is a generic figure for a typical case, and Level2's stack may differ.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Privacy and security FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Elizabeth (Libby),MacFarlane,https://linkedin.com/in/libbymacfarlane,Level2,Chief Operating Officer,,,"Hi Libby,
+
+Quick thought on what the Level2 care model could ask members to capture between check-ins: a two-photo body scan.
+
+It returns 80+ body measurements in under 45 seconds from the photos to structured results, with no device to ship or replace. We built it at 3DLOOK as FitXpress, white-label inside the member app.
+
+Might be worth a quick chat?
+
+Nick","Hi Libby,
+
+On operating load: one weight-management platform ran 34,000 scans in 2025, each from two photos on a phone.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Happy to show how it runs: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Madeline,Velez,https://linkedin.com/in/madeline-velez-ba899748,9amHealth,Care Team Operations Manager,,,"Hi Madeline,
+
+Quick note: curious how the 9am care team would use a guided scan alongside the Data Hub trends between member calls.
+
+We built a scan for member apps: 80+ body measurements from two photos, with a 3D model members can see. The team compares the scans it selects.
+
+Might be worth a quick chat?
+
+Nick","Hi Madeline,
+
+The operational side: under 45 seconds from the photos to structured results, with no device to ship or support. One guided sequence each time gives the team like-for-like scans.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Kayla,Sheafer MS RD,https://linkedin.com/in/kayla-sheafer,9amHealth,Senior Client Manager,,,"Hi Kayla,
+
+An RD credential next to a client manager title caught my attention. Quick one: who decides what clients and members see in the 9am app?
+
+3DLOOK, where I work, makes a phone body scan for member apps. A name would help.
+
+Nick","Hi Kayla,
+
+A quick nudge on my earlier question. If the app roadmap sits with product or the clinical team, a name is all I need. Thank you.
+
+Nick"
+Andrew,Woolwine,https://linkedin.com/in/andrewwoolwine,9amHealth,Strategic Account Executive,,,"Hi Andrew,
+
+Had a thought after reading how you moved from therapy into employer sales. Quick ask: who at 9am owns the member app roadmap?
+
+Background on my side: 3DLOOK builds a white-label body scan for member apps. Its guided record, with 80+ body measurements beyond waist and a 3D model, could sit beside the weight, waist and A1C trends in the Data Hub.
+
+Nick","Hi Andrew,
+
+A brief follow-up, then I will leave it. The person behind 9am's member app roadmap is who I am after, by name or by forward.
+
+Nick"
+Rebecca,"Perkins Eberspacher MS, RDN, LDN, CDCES",https://linkedin.com/in/rebecca-eberspacher,9amHealth,Clinical Manager,,,"Hi Rebecca,
+
+Made me think, given your CDCES and nutrition research background: what would your specialists want to compare beside the Data Hub's weight, waist and A1C trends?
+
+We built a scan for member apps: two photos return 80+ body measurements beyond waist and a 3D model, in the same guided sequence each time.
+
+Open to a quick chat?
+
+Nick","Hi Rebecca,
+
+9am's specialists compare the scans they select. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We wrote up what a repeatable remote body record needs, and where scanning does not help: https://3dlook.ai/content-hub/glp-1-market/
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Tyler,Maland,https://linkedin.com/in/tylermaland,9amHealth,"Product Lead, Clinical",,,"Hi Tyler,
+
+Noticed overlap with your Marigold Health product background. Curious what else the 9am app could ask a member for between visits.
+
+We built a white-label scan: two photos return 80+ body measurements and a 3D model, as a standardized, guided capture beside the waist trends already in the Data Hub. No device to ship.
+
+Open to a quick chat?
+
+Nick","Hi Tyler,
+
+Thought I'd share the repeatability data. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We wrote up what a repeatable remote body record needs: https://3dlook.ai/content-hub/glp-1-market/
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Christine,"Oleksiuk, MPH",https://linkedin.com/in/christineoleksiuk,9amHealth,Strategic Account Executive,,,"Hi Christine,
+
+Noticed your FoodHealth years before employer sales at 9am. Quick ask: who owns the member app roadmap at 9am?
+
+In brief, 3DLOOK's two-photo scan could add 80+ body measurements beyond waist and a 3D model, captured the same way each time, to what a 9am program shows an employer alongside weight, waist and A1C trends.
+
+Nick","Hi Christine,
+
+Picking this up once more. The ask is small: the owner of the 9am member app roadmap, by name or by forward. Happy to explain why on a call: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Prabhat,Dhar,https://linkedin.com/in/prabhatdhar,Superpower,Head of Enterprise,,,"Hi Prabhat,
+
+Noticed you led commercial at Headspace before Superpower. Quick ask: who at Superpower owns the member app roadmap, in particular what members can do between blood draws?
+
+Your pointer would go a long way.
+
+Nick","Hi Prabhat,
+
+One more try, with less to it: does that roadmap sit with product or with enterprise?
+
+Nick"
+Francesca,Archila,https://linkedin.com/in/0327-fran-archila,9amHealth,"Senior Product Manager, AI Care Experience",,,"Hi Francesca,
+
+Couldn't help but ask: what body data could 9am's AI care experience draw on between visits?
+
+We built a white-label scan: two photos return a 3D model and 80+ body measurements as structured results, in the same guided sequence each time.
+
+Might be worth a quick chat?
+
+Nick","Hi Francesca,
+
+For the AI care experience, the useful part is structured results inside the 9am app: 80+ body measurements beyond waist and a 3D model from two photos. Accuracy is 96-97% against expert manual measurement for the body measurements.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Paul,Geevarghese,https://linkedin.com/in/paulgeevarghese,9amHealth,Co-Founder & COO,,,"Hi Paul,
+
+Quick thought, since you came up through mySugr: curious how you weigh what a new data source costs operations to support at 9am.
+
+We built a scan that needs no device shipped: two photos in the 9am app return 80+ body measurements, in the same guided sequence each time.
+
+Might be worth a quick chat?
+
+Nick","Hi Paul,
+
+One more operations angle: the same guided sequence each time, with no extra device to ship. Scale we run: 112,100 scans in 2025 across all 3DLOOK customers.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We wrote up what a repeatable remote body record needs: https://3dlook.ai/content-hub/glp-1-market/
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Annie,(Whelan) Steidle,https://linkedin.com/in/annie-whelan-steidle-756351121,Superpower,Enterprise,,,"Hi Annie,
+
+Caught my eye: your enterprise sales run at Brightside before Superpower. Quick ask: who owns the care model or the app features that employer members see at Superpower?
+
+Even a first name would help.
+
+Nick","Hi Annie,
+
+Second nudge, kept short: whose desk do the member-app features land on at Superpower?
+
+Nick"
+Sara,Westermann,https://linkedin.com/in/sara-westermann,9amHealth,Head of Communications,,,"Hi Sara,
+
+Quick reaction from your integrated communications lens: who at 9am owns the member app roadmap?
+
+3DLOOK, my company, builds body scanning for member apps from two phone photos. A name is all I need.
+
+Nick","Hi Sara,
+
+Bumping this in case it slipped past. A name for the 9am app roadmap owner would do, or a forward to them.
+
+Nick"
+Elisabeth,(Cavanagh) Myers,https://linkedin.com/in/elisabeth-cavanagh-myers-539882126,Level2,Senior Product Manager,,,"Hi Elisabeth,
+
+Caught my eye: industrial engineering before product management. Curious how you'd design a guided capture step in the Level2 member app.
+
+At 3DLOOK we built FitXpress, a white-label SDK: a member takes two photos and the app gets back 80+ body measurements and a 3D model. No device to ship.
+
+Worth a quick chat?
+
+Nick","Hi Elisabeth,
+
+Outcome for the roadmap: a white-label SDK adds a guided two-photo capture step to the existing member app. For the spec sheet: 96-97% accuracy against expert manual measurement.
+
+We also wrote up what a repeatable remote body record needs: https://3dlook.ai/content-hub/glp-1-market/
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Mark,Burgin,https://linkedin.com/in/markoburgin,9amHealth,Director of Consultant Relations,,,"Hi Mark,
+
+Spotted the Benefits Run Club in your headline. Quick ask: who at 9am owns the member app roadmap?
+
+I represent 3DLOOK, a white-label body scan for health apps. Even a first name helps.
+
+Nick","Hi Mark,
+
+Returning to the roadmap question, briefly: who owns the member app at 9am? A name or a forward would be plenty.
+
+Nick"
+Josh,Tolentino,https://linkedin.com/in/josh-tolentino-63703079,9amHealth,Data Engineer,,,"Hi Josh,
+
+Quick one for a data engineer: where would per-scan body measurements sit beside the glucose and lab data 9am already collects?
+
+We built a white-label SDK and API. Two photos in the app return 80+ body measurements per scan ID, and it takes under 45 seconds from the photos to structured results.
+
+Might be worth a quick chat?
+
+Nick","Hi Josh,
+
+Production scale: 112,100 scans in 2025 across all 3DLOOK customers. A typical basic integration takes 2-4 weeks, a generic figure.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Data handling and regulatory detail: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Jayme,"Albright, NBC-HWC",https://linkedin.com/in/jaymealbright,Level2,Product Manager,,,"Hi Jayme,
+
+Had a thought after reading your background: fitness and wellness roles before product ownership. What would you want a Level2 care team to see on a member's screen between check-ins?
+
+At 3DLOOK we built FitXpress: from two photos it returns 80+ body measurements and body composition estimates, white-label in the member app.
+
+Might be worth a quick chat?
+
+Nick","Hi Jayme,
+
+Check-in view: results return in under 45 seconds from the photos to structured results. A scan can sit inside a check-in.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+If it helps, the write-up on what a repeatable remote body record needs: https://3dlook.ai/content-hub/glp-1-market/
+
+Want to see it? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Oyebola,Agoro,https://linkedin.com/in/oyebola-agoro-29b44986,9amHealth,Medical Director,,,"Hi Oyebola,
+
+Curious about your take, given your clinical governance work: what would you want beside the body-composition scales in 9am's employer obesity programs for a member on a GLP-1?
+
+We built a scan for member apps: two photos return 80+ body measurements beyond waist and a 3D model, timestamped, in the same guided sequence each time. The care team compares the scans it selects.
+
+Might be worth a quick chat?
+
+Nick","Hi Oyebola,
+
+A note on timing: it takes under 45 seconds from the photos to structured results, and the care team compares only the scans it selects.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We wrote up what a repeatable remote body record needs: https://3dlook.ai/content-hub/glp-1-market/
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Chris,A.,https://linkedin.com/in/chris-arntzen,Level2,Software Developer,,,"Hi Chris,
+
+Thought I'd share, in case helpful for the Level2 app team: FitXpress is a white-label API and SDK from 3DLOOK.
+
+The app sends two photos and gets back 80+ body measurements and a 3D model, in under 45 seconds from the photos to structured results. Open to a quick chat?
+
+Nick","Hi Chris,
+
+If your team tests outputs, repeatability is the number to check. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Privacy and security FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Michelle N.,Jones,https://linkedin.com/in/michellenjones1144,9amHealth,Client Success Specialist,,,"Hi Michelle,
+
+Starting with client success, since that team works close to members. Who at 9am is the right person for a question about the member app roadmap?
+
+I am with 3DLOOK, which builds a two-photo scan that lives inside member apps.
+
+Nick","Hi Michelle,
+
+Checking back in with a short one. If you know who owns the 9am app roadmap, a name is all I need. Thank you.
+
+Nick"
+Dr. Molly,Finley,https://linkedin.com/in/dr-molly-finley-5a146490,9amHealth,Medical Doctor,,,"Hi Molly,
+
+Curious about your take on a routing question. Who leads the clinical side of the member app at 9am, or owns its roadmap? A physician on the team may know the clinical leads.
+
+For context, my company 3DLOOK builds the scan a member takes from two phone photos.
+
+Nick","Hi Molly,
+
+A gentle follow-up: a pointer to the clinical lead for the 9am member app is all I need. Thank you for reading.
+
+Nick"
+Rowena,"Chua, MD",https://linkedin.com/in/rowena-chua-md-92059890,9amHealth,Founder & CEO / Physician,,,"Hi Rowena,
+
+Quick thought on a routing question. Who owns the member app roadmap, or the clinical protocol behind it, at 9am?
+
+I am at 3DLOOK, where we make a white-label body scan from two phone photos. A name is all I am after.
+
+Nick","Hi Rowena,
+
+Following up once, with a small ask: a name for whoever owns the 9am app roadmap, or a forward of this note. If that is not you, no worries.
+
+Nick"
+Jacob,Moore,https://linkedin.com/in/jacob-moore-84832095,9amHealth,Medical Doctor,,,"Hi Jacob,
+
+Your obesity medicine board certification is why I am writing. Quick ask: who owns the care model behind 9am's weight program?
+
+3DLOOK builds the scan a member takes from two phone photos. A pointer to the right clinical lead would do.
+
+Nick","Hi Jacob,
+
+A brief nudge on my earlier note: the clinical owner of the 9am member app, by name or by forward, would help a lot.
+
+Nick"
+Devin,Ghazi,https://linkedin.com/in/devin-ghazi,Superpower,Senior Director of Partnerships,,,"Hi Devin,
+
+Noticed the partnerships work at ARMRA. Quick routing question: when a tech vendor has a member-app idea, who at Superpower owns that conversation?
+
+Ours is a two-photo scan for waist and hip circumference between blood draws. A role would be plenty.
+
+Nick","Hi Devin,
+
+Back once more on the routing question: who at Superpower should hear a member-app idea first?
+
+Nick"
+Carrie,Hauser,https://linkedin.com/in/carriehauser,Level2,Sales Operations Manager,,,"Hi Carrie,
+
+Had to say hi: sales and account management at UnitedHealthcare, then employee benefits, now sales operations at Level2. Who owns the member app, or the care model?
+
+My side: I'm at 3DLOOK, where we make a body scan from two phone photos. A Level2 program could show an employer that record next to CGM glucose, and I'd like to reach the right team. Even a first name helps.
+
+Nick","Hi Carrie,
+
+One line to add to my question: the right team is enough, product or clinical operations, whichever fits. Whoever you would send a partnership question to works too.
+
+Nick"
+Will,C.,https://linkedin.com/in/will-c-2b884010a,Superpower,Engineering & Product,,,"Hi Will,
+
+Quick one on the Superpower app: would a new capture step for the care team fit better as an SDK inside it or an API call from it?
+
+We built both, white-label. Front and side photo in, 80+ body measurements out in under 45 seconds from the photos to structured results. Might be worth a quick chat?
+
+Nick","Hi Will,
+
+Data flow is short: front and side photos from the app, structured results back, stored and deletable by scan ID. One weight-management platform ran 34,000 scans in 2025.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Jacob,Peters,https://linkedin.com/in/jacobdpeters,Superpower,Co-Founder,,,"Hi Jacob,
+
+Curious how your new employer partnership changes what the app asks a member to do between blood draws.
+
+We built a white-label scan the member app can call: two photos in, waist and hip circumference among 80+ body measurements out, in under 45 seconds from the photos to structured results. Open to a quick chat?
+
+Nick","Hi Jacob,
+
+If the scan ever becomes a build-or-buy question, production scale is a fair first check: 112,100 scans in 2025 across all 3DLOOK customers.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We wrote up how wellness programs use body data: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Happy to walk through it in 15 min: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Elizabeth,Wild,https://linkedin.com/in/elizabeth--wild,Superpower,Operations,,,"Hi Elizabeth,
+
+With your physiology background, curious what Superpower members can capture at home between blood draws.
+
+We built a two-photo scan that returns 80+ body measurements, waist and hip circumference included, white-label in the member app. Open to a quick chat?
+
+Nick","Hi Elizabeth,
+
+One more angle for member operations: the capture happens on the member's phone, with no device to ship or replace. The body measurements show 96-97% accuracy against expert manual measurement.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+A short read on body data in wellness programs: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Nikita,Mashchenko,https://linkedin.com/in/nmashchenko,Superpower,Founding Senior Engineer,,,"Hi Nikita,
+
+Saw TS and Go in your bio. Curious what would make a body-measurement API easy to test against the Superpower app's backend, for a capture step between the baseline panel and the retest.
+
+We built a white-label API and SDK: two photos in, 80+ body measurements out, waist and hip circumference included. Worth a quick chat?
+
+Nick","Hi Nikita,
+
+The number worth testing on your side is repeatability. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Zach,Feaster,https://linkedin.com/in/zach-feaster-9a1061194,9amHealth,Business Development,,,"Hi Zach,
+
+Circling back after connecting, with a routing question for the growth side: who at 9am owns the member app roadmap?
+
+For context, 3DLOOK's white-label scan could add a guided body record to what an employer sees from a 9am program.
+
+Nick","Hi Zach,
+
+Last quick try: a name for whoever owns the 9am app roadmap, or a forward of this. Thanks either way.
+
+Nick"
+Warren,"Clayton, Jr., MD, DABOM, DipABLM, CWSP",https://linkedin.com/in/warren-clayton-jr-md-dabom-dipablm-cwsp-b26a3b195,9amHealth,Sub-Investigator,,,"Hi Warren,
+
+Quick routing question: who owns the 9am member app roadmap, or the clinical protocol behind it? If you have moved on from 9am, a pointer to someone still there works just as well.
+
+3DLOOK is my company; it builds a body scan from two phone photos for member apps.
+
+Nick","Hi Warren,
+
+Coming back to my earlier question: a name for the owner of the 9am member app roadmap, or the clinical protocol behind it, is all I need.
+
+Nick"
+Fritz,Stauffacher,https://linkedin.com/in/fritz-stauffacher-6883531a2,Superpower,Engineer,,,"Hi Fritz,
+
+Curious about your DevOps view: what does an outside API have to show before it gets near the data path of a Superpower app that already syncs wearables?
+
+We built a white-label API and SDK for body measurements. Two photos in, 80+ body measurements out, in under 45 seconds from the photos to structured results. Might be worth a quick chat?
+
+Nick","Hi Fritz,
+
+For the infrastructure side, scale first: 112,100 scans in 2025 across all 3DLOOK customers. Outputs are stored and deletable by scan ID.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+The trust FAQ has the rest: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Manoj,"Arachige, MD",https://linkedin.com/in/manoj-arachige,Superpower,AI Product,,,"Hi Manoj,
+
+Curious about your take from the physician side: when the app turns member data into insight, is waist and hip circumference an input worth having between draws?
+
+We built a white-label capture for it. Two photos return 80+ body measurements, waist and hip included, as structured results inside the Superpower app. Worth a quick chat?
+
+Nick","Hi Manoj,
+
+For the insight layer, waist and hip arrive as structured results the app can compare across scans it selects. The body measurements show 96-97% accuracy against expert manual measurement.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Related read: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+David,Ferrell,https://linkedin.com/in/david-ferrell-906606133,Level2,National Medical Director,,,"Hi David,
+
+Curious about your take: does a waist and hip circumference record belong next to CGM glucose in a Level2 program phase?
+
+We built a two-photo scan at 3DLOOK (FitXpress) that returns 80+ body measurements, waist and hip included, as a structured, timestamped record the care team compares across scans it selects. It gives the care team measurements and estimates, white-label in the member app.
+
+Open to a quick chat?
+
+Nick","Hi David,
+
+Repeatability matters most when a care team compares scans. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We wrote up what a repeatable remote body record needs: https://3dlook.ai/content-hub/glp-1-market/
+
+If a walkthrough is useful: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Sandra,O.,https://linkedin.com/in/sandra-ops,Superpower,Operations,,,"Hi Sandra,
+
+Your point that healthcare must evolve beyond being reactive got me curious: what does proactive look like between blood draws for Rx and member experience?
+
+We built a white-label scan for that stretch. Two photos from the member's phone return waist and hip circumference among 80+ body measurements, with no device to ship. Worth a quick chat?
+
+Nick","Hi Sandra,
+
+The ops case is short: nothing to ship or replace, and results in under 45 seconds from the photos to structured results. For scale, 112,100 scans in 2025 across all 3DLOOK customers.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Related read: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Adam,DeCosta,https://linkedin.com/in/adamdecosta,Level2,Senior Software Engineer,,,"Hi Adam,
+
+Couldn't help but ask: with Swift and Kotlin on your profile, is the Level2 member app native on both platforms?
+
+At 3DLOOK we built FitXpress, a white-label SDK and API for a two-photo capture inside an existing app. It returns 80+ body measurements and a 3D model.
+
+Worth a quick chat?
+
+Nick","Hi Adam,
+
+For UI planning: results return in under 45 seconds from the photos to structured results, long enough to want a progress state.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Privacy and security FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Julija,Rabcuka,https://linkedin.com/in/rabcuka,Superpower,Lead Scientist and Clinical Strategy,,,"Hi Julija,
+
+Curious about your take from the science side: Superpower's guide to body composition biomarkers lists waist-to-hip ratio. How would you want waist and hip captured between blood draws?
+
+We built a two-photo scan that returns both circumferences among 80+ body measurements, white-label in the member app. Might be worth a quick chat?
+
+Nick","Hi Julija,
+
+Each scan is a structured, timestamped record of measurements and estimates the care team compares across scans it selects. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Related read: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Beth,Blake,https://linkedin.com/in/beth-blake,Superpower,Operations,,,"Hi Beth,
+
+Saw your line about experiences that work as well behind the scenes as for the people using them. Curious how a home capture step would look from the support side at Superpower.
+
+We built a two-photo scan for member apps. It returns waist and hip circumference among 80+ body measurements, with no device to ship or replace. Might be worth a quick chat?
+
+Nick","Hi Beth,
+
+Short version for the support side: two guided photos, front and side, then under 45 seconds from the photos to structured results.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We wrote up how wellness programs use body data: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Shaun,Miller,https://linkedin.com/in/shaun-miller-50a110148,Superpower,Head of Medical Operations,,,"Hi Shaun,
+
+Your line about billing by the hour to move a PDF across three systems made me think: what does a member send the care team between draws, and where does it land?
+
+We built a two-photo scan that returns 80+ body measurements, waist and hip included, in under 45 seconds from the photos to structured results. It runs inside the member app with no device to ship. Might be worth a quick chat?
+
+Nick","Hi Shaun,
+
+On the workflow side, each scan arrives as a structured, timestamped record the care team compares across scans it selects. One weight-management platform ran 34,000 scans in 2025.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+A short read on body data in wellness programs: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Lauren,Branson,https://linkedin.com/in/lauren-branson-04519014a,9amHealth,Clinical Care Team Pharmacist,,,"Hi Lauren,
+
+A clinical pharmacist focused on cardiometabolic care is who I hoped to reach. Quick ask: who at 9am owns the member app roadmap, or the clinical side of it?
+
+My employer, 3DLOOK, makes a white-label body scan for health and care apps.
+
+Nick","Hi Lauren,
+
+One short follow-up: a pointer to the clinical lead behind the 9am member app would help. A name or a forward is plenty.
+
+Nick"
+Nancy,Nguyen,https://linkedin.com/in/nancygn,9amHealth,Director Clinical Operations,,,"Hi Nancy,
+
+Got me thinking about scaling complex care delivery models. How much of the between-visit workflow can members run themselves in the 9am app?
+
+We built a scan for that step: from two photos the app gets a 3D model and structured body results, in the same guided sequence each time.
+
+Open to a quick chat?
+
+Nick","Hi Nancy,
+
+On consistency for clinical operations: for most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm. The capture adds no device to ship or support.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Shelby,P.,https://linkedin.com/in/shelby-p-23305b17b,Level2,Operations Specialist,,,"Hi Shelby,
+
+Came across your work in diabetes prevention programs before Level2. Who owns program operations for how members are guided between check-ins?
+
+I'm with 3DLOOK, a body-scanning company whose SDK runs inside member apps, and I'd like to reach the right person at Level2. Whoever it is, a name is plenty.
+
+Nick","Hi Shelby,
+
+A name or a team would help: whoever runs the Level2 care model day to day. Two lines from me to them is all it takes.
+
+Nick"
+Madeline,Lerche,https://linkedin.com/in/madeline-lerche-955b9814b,Level2,Sr. Product Manager,,,"Hi Madeline,
+
+This stood out in your bio: turning complex ideas into easy-to-digest visuals. What could a visual of a member's body-size record look like next to the CGM readings in the Level2 app?
+
+At 3DLOOK we built FitXpress: two photos return a 3D model and 80+ body measurements, waist and hip circumference among them. White-label, no device to ship. Open to a quick chat?
+
+Nick","Hi Madeline,
+
+On the visual side, the 3D model is what a member sees, and the measurements are what the care team compares across scans it selects. For scale, one weight-management platform ran 34,000 scans in 2025.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Jeffrey,Zheng,https://linkedin.com/in/thejeffreyzheng,Superpower,Enterprise,,,"Hi Jeffrey,
+
+Saw ""Redefining employee health"" in your headline. Quick ask: who at Superpower owns the member app roadmap, in particular what employer members can capture between blood draws?
+
+Any name or role would help.
+
+Nick","Hi Jeffrey,
+
+Last note on this, and a small one: is there someone on the product side I should ask about the employer members' app experience?
+
+Nick"
+Gavyn,Pure,https://linkedin.com/in/gavyn-pure,9amHealth,Strategic Account Executive (Northeast),,,"Hi Gavyn,
+
+Noticed your path from transaction advisory to employer sales at 9am. Quick ask: who owns the member app roadmap?
+
+My context: we build a two-photo body scan, white-label for member apps, that could add a guided body record to what employers see.
+
+Nick","Hi Gavyn,
+
+Trying once more with a simpler ask: a name for the 9am app roadmap owner. Happy to explain why on a call: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Rebecca,Mclaughlin,https://linkedin.com/in/rebecca-mclaughlin-ba6bb9186,Level2,NBCHWC,,,"Hi Rebecca,
+
+Quick question for you: who owns the care model at Level2, meaning what members are asked to capture between coaching conversations?
+
+My company, 3DLOOK, makes a phone scan from two photos that member apps can offer. The right contact is what I'm after, and a team name would do.
+
+Nick","Hi Rebecca,
+
+Still hoping for a pointer: whoever owns the care model at Level2, or the team to write to. Two lines from me is all it takes.
+
+Nick"
+Pamela,Perry,https://linkedin.com/in/pamelaperrymba,Level2,Associate Director Clinical Operations,,,"Hi Pamela,
+
+Made me think: with nursing leadership and workforce management behind you, how would you weigh a new member capture against review time for a Level2 care team reviewing CGM glucose?
+
+A two-photo scan returns 80+ body measurements as one structured, timestamped record that the care team compares across scans it selects. We built it at 3DLOOK as FitXpress: white-label in the member app, no device to ship.
+
+Open to a quick chat?
+
+Nick","Hi Pamela,
+
+On review load: each scan lands as one structured, timestamped record for the Level2 care team. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Our write-up on remote body records: https://3dlook.ai/content-hub/glp-1-market/
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+John,Nguyen,https://linkedin.com/in/john-nguyen-902350187,Level2,Lead Software Engineer,,,"Hi John,
+
+Spotted something in your profile: data management tools, and Prime Therapeutics before Level2. A data question for scoping.
+
+FitXpress from 3DLOOK is a white-label API and SDK: two photos in, 80+ body measurements out as structured results, stored and deletable by scan ID.
+
+Worth a quick chat?
+
+Nick","Hi John,
+
+About data lifecycle: outputs are stored and deletable by scan ID, and the FAQ lays out retention and roles in one place.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+If a scoping call helps: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Brittney,McKnight,https://linkedin.com/in/bsmcknight,9amHealth,Client Success Specialist,,,"Hi Brittney,
+
+Noticed the MBA in managing innovation and technology in your headline. Quick ask: who at 9am owns the member app roadmap?
+
+I work for 3DLOOK, which builds body scanning from two phone photos for member apps. A name would help.
+
+Nick","Hi Brittney,
+
+Quick check-in on my question: the owner of the 9am member app roadmap, by name or by forward. Thank you.
+
+Nick"
+Dan,Nemani,https://linkedin.com/in/danielnemani,Superpower,Special Projects,,,"Hi Dan,
+
+Noticed the a16z fellowship in your background. Special projects can cover a lot, and I'm not sure this one sits with you. If it does: we built a two-photo scan that returns waist and hip circumference among 80+ body measurements inside a member app, with no device to ship.
+
+If it doesn't, who at Superpower owns what members capture between blood draws?
+
+Nick","Hi Dan,
+
+Following up in case the timing is better now. If this sits with you, the scan is two photos, front and side, and 80+ body measurements come back in under 45 seconds from the photos to structured results.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Related read: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Sarah,Hansberry,https://linkedin.com/in/sarah-hansberry-8a8b661b7,9amHealth,National Partnerships Manager,,,"Hi Sarah,
+
+Noticed your Academy Program Director years at World 50 before partnerships at 9am. Quick ask: who owns the member app roadmap?
+
+3DLOOK, where I work, builds a two-photo body scan that programs can embed in their member apps.
+
+Nick","Hi Sarah,
+
+A short follow-up from my side: the owner of the 9am app roadmap, by name or by forward, is all I need.
+
+Nick"
+Sláva,Lukianchuk,https://linkedin.com/in/slavalukianchuk,Superpower,Mobile Lead Engineer,,,"Hi Sláva,
+
+Quick question for the mobile side: Superpower's guide to body composition biomarkers lists waist-to-hip ratio. What would a front-and-side photo capture step need to pass before it ships in the app?
+
+We built a white-label SDK for it: two photos in, 80+ body measurements out, in under 45 seconds from the photos to structured results. Open to a quick chat?
+
+Nick","Hi Sláva,
+
+Following up on the mobile side. A typical basic integration takes 2-4 weeks, and the capture is two guided photos, front and side.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Adil,"Qureshi, PharmD, APh",https://linkedin.com/in/adilq-advancedpharmdinnovator,9amHealth,Clinical Pharmacist,,,"Hi Adil,
+
+Hoping to reach a clinical pharmacist on the 9am side. Who leads the clinical side of the member app, or owns its roadmap?
+
+I am with 3DLOOK, a phone body scan for member apps.
+
+Nick","Hi Adil,
+
+Re-sending the question briefly: who owns the clinical side of the 9am member app? A name is enough.
+
+Nick"
+Audric,Serador,https://linkedin.com/in/audricserador,Superpower,Founding Engineer,,,"Hi Audric,
+
+Saw ""building a new healthcare system"" in your bio. Has the team weighed a body-measurement input for Superpower's AI, and how did build versus buy land?
+
+We built a white-label SDK and API: two photos in, 80+ body measurements out. If in-house wins, we can still compare notes on repeatability. Worth a quick chat?
+
+Nick","Hi Audric,
+
+Since build versus buy comes down to time first: a typical basic integration takes 2-4 weeks. The body measurements show 96-97% accuracy against expert manual measurement.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Tammy,Thaggert MD MPH,https://linkedin.com/in/tammy-thaggert-md-mph-73370229a,9amHealth,Medical Doctor,,,"Hi Tammy,
+
+Your years across traditional and telemedicine settings stood out. Quick ask: who at 9am leads the clinical side of the member app, or owns its roadmap?
+
+3DLOOK, my company, builds a two-photo body scan for health apps.
+
+Nick","Hi Tammy,
+
+Writing again with one line: if you know the clinical lead for the 9am member app, I would value the name.
+
+Nick"
+Maribelle,Gauna-Estrada,https://linkedin.com/in/maribelle-gauna-estrada-558563283,9amHealth,Medical Doctor,,,"Hi Maribelle,
+
+Your primary care years across internal and geriatric medicine stood out. A question from outside: who owns the member app roadmap at 9am?
+
+My company, 3DLOOK, builds body scanning inside member apps.
+
+Nick","Hi Maribelle,
+
+Resurfacing this in case it got buried: a pointer to the owner of the 9am member app would help.
+
+Nick"
+Robin,Tinsley,https://linkedin.com/in/robin-tinsley-1b02682b9,Level2,Senior Implementation Manager,,,"Hi Robin,
+
+Quick one on implementation at Level2: a body scan that needs only a phone puts no device replacement or return shipping on the support queue.
+
+From two photos it returns 80+ body measurements inside the member app, white-label. We built it at 3DLOOK as FitXpress. Open to a quick chat?
+
+Nick","Hi Robin,
+
+Go-live outcome: members capture on their own phone, and nothing ships or comes back to support. A quality figure for the checklist: 96-97% accuracy against expert manual measurement.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Happy to talk it through: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+James,Conlin,https://linkedin.com/in/james-conlin-419853389,Level2,Chief Executive Officer,,,"Hi James,
+
+Quick idea for Level2's employer plans: a two-photo scan inside the member app that returns a body-size record, waist and hip included, in under 45 seconds from the photos to structured results. It would sit next to CGM glucose.
+
+We built it at 3DLOOK as FitXpress. White-label, no device to ship. Might be worth a quick chat?
+
+Nick","Hi James,
+
+Adding to my note, one point for the Level2 care team: a structured, timestamped body-size record it can compare across scans it selects, next to CGM glucose.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+We wrote up what a repeatable remote body record needs: https://3dlook.ai/content-hub/glp-1-market/
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Lisa,Jasper,https://linkedin.com/in/lisa-jasper-77a72a384,Level2,Director,,,"Hi Lisa,
+
+Quick reaction to seeing Director at Level2 on your profile: which area do you lead? If it is the member app or the care model, I'd like your view. If not, who owns them?
+
+I work at 3DLOOK on a two-photo body scan for member apps. A name or a team is enough.
+
+Nick","Hi Lisa,
+
+Same question, shorter: who at Level2 owns the member app roadmap? A name or a team is plenty.
+
+Nick"
+Joseph Christopher,Talara,https://linkedin.com/in/joseph-christopher-talara-067933366,Superpower,Operations Member Success,,,"Hi Joseph Christopher,
+
+Wanted to reach out. Curious what Superpower members ask member success about in the months between blood draws.
+
+We built a two-photo scan that returns waist and hip circumference among 80+ body measurements, inside the app, with no device to ship. Worth a quick chat to explore?
+
+Nick","Hi Joseph Christopher,
+
+One weight-management platform ran 34,000 scans in 2025. The member-facing part is short: two photos, then under 45 seconds from the photos to structured results.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Related read: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Worth 15 min? https://meetings.hubspot.com/nick-omelchak
+
+Nick"

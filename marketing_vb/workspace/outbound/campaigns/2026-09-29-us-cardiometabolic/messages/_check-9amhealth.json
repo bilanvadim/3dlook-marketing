@@ -1,0 +1,265 @@
+{
+ "campaign": "2026-09-29-us-cardiometabolic",
+ "checked": 32,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "9amhealth",
+ "generated": "2026-09-29T14:52:23",
+ "hard": [],
+ "soft": [
+  [
+   "no calendar link",
+   "williamshartwell M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "williamshartwell M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "greeting",
+   "gregschwartz M1",
+   "«Hi Greg,» has no «🤖 Greg»"
+  ],
+  [
+   "greeting",
+   "gregschwartz M2",
+   "«Hi Greg,» has no «🤖 Greg»"
+  ],
+  [
+   "no company line",
+   "gregschwartz M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "mike-reeve-33693a2 M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "lindsay-gilreath-25290732 M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "ginacamryn M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "elizabeth-reilly-md789 M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "madeline-velez-ba899748 M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "kayla-sheafer M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "kayla-sheafer M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "andrewwoolwine M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "andrewwoolwine M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "rebecca-eberspacher M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "tylermaland M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "christineoleksiuk M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "0327-fran-archila M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "paulgeevarghese M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "sara-westermann M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "sara-westermann M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "markoburgin M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "markoburgin M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "josh-tolentino-63703079 M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "oyebola-agoro-29b44986 M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "michellenjones1144 M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "michellenjones1144 M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "dr-molly-finley-5a146490 M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "dr-molly-finley-5a146490 M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "rowena-chua-md-92059890 M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "rowena-chua-md-92059890 M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "jacob-moore-84832095 M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "jacob-moore-84832095 M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "zach-feaster-9a1061194 M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "zach-feaster-9a1061194 M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "warren-clayton-jr-md-dabom-dipablm-cwsp-b26a3b195 M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "warren-clayton-jr-md-dabom-dipablm-cwsp-b26a3b195 M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "lauren-branson-04519014a M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "lauren-branson-04519014a M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "nancygn M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "gavyn-pure M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "bsmcknight M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "bsmcknight M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "sarah-hansberry-8a8b661b7 M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "sarah-hansberry-8a8b661b7 M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "adilq-advancedpharmdinnovator M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "adilq-advancedpharmdinnovator M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "tammy-thaggert-md-mph-73370229a M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "tammy-thaggert-md-mph-73370229a M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "maribelle-gauna-estrada-558563283 M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "maribelle-gauna-estrada-558563283 M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ]
+ ]
+}

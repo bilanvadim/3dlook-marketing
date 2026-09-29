@@ -1,0 +1,45 @@
+{
+ "campaign": "2026-09-29-us-cardiometabolic",
+ "checked": 20,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "level2",
+ "generated": "2026-09-29T14:50:46",
+ "hard": [],
+ "soft": [
+  [
+   "no calendar link",
+   "lovenj M2",
+   "angle referral"
+  ],
+  [
+   "greeting",
+   "libbymacfarlane M1",
+   "«Hi Libby,» has no «Elizabeth (Libby)»"
+  ],
+  [
+   "greeting",
+   "libbymacfarlane M2",
+   "«Hi Libby,» has no «Elizabeth (Libby)»"
+  ],
+  [
+   "no calendar link",
+   "carriehauser M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "shelby-p-23305b17b M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "rebecca-mclaughlin-ba6bb9186 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "lisa-jasper-77a72a384 M2",
+   "angle referral"
+  ]
+ ]
+}

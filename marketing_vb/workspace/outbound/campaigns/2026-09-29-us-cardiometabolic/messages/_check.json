@@ -1,0 +1,190 @@
+{
+ "campaign": "2026-09-29-us-cardiometabolic",
+ "checked": 75,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": null,
+ "generated": "2026-09-29T15:00:54",
+ "hard": [],
+ "soft": [
+  [
+   "no calendar link",
+   "lovenj M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "williamshartwell M2",
+   "angle referral"
+  ],
+  [
+   "greeting",
+   "gregschwartz M1",
+   "«Hi Greg,» has no «🤖 Greg»"
+  ],
+  [
+   "greeting",
+   "gregschwartz M2",
+   "«Hi Greg,» has no «🤖 Greg»"
+  ],
+  [
+   "no calendar link",
+   "abemalkin M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "timdenman M2",
+   "angle referral"
+  ],
+  [
+   "greeting",
+   "libbymacfarlane M1",
+   "«Hi Libby,» has no «Elizabeth (Libby)»"
+  ],
+  [
+   "greeting",
+   "libbymacfarlane M2",
+   "«Hi Libby,» has no «Elizabeth (Libby)»"
+  ],
+  [
+   "no calendar link",
+   "kayla-sheafer M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "andrewwoolwine M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "rebecca-eberspacher M1",
+   "«9amHealth» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "prabhatdhar M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "annie-whelan-steidle-756351121 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "sara-westermann M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "markoburgin M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "michellenjones1144 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "dr-molly-finley-5a146490 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "rowena-chua-md-92059890 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "jacob-moore-84832095 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "devin-ghazi M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "carriehauser M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "jacobdpeters M1",
+   "«Superpower» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "zach-feaster-9a1061194 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "warren-clayton-jr-md-dabom-dipablm-cwsp-b26a3b195 M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "sandra-ops M1",
+   "«Superpower» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "shaun-miller-50a110148 M1",
+   "«Superpower» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "lauren-branson-04519014a M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "shelby-p-23305b17b M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "thejeffreyzheng M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "rebecca-mclaughlin-ba6bb9186 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "bsmcknight M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "sarah-hansberry-8a8b661b7 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "adilq-advancedpharmdinnovator M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "tammy-thaggert-md-mph-73370229a M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "maribelle-gauna-estrada-558563283 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "lisa-jasper-77a72a384 M2",
+   "angle referral"
+  ]
+ ]
+}

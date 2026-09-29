@@ -1,0 +1,55 @@
+{
+ "campaign": "2026-09-29-us-cardiometabolic",
+ "checked": 23,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "superpower",
+ "generated": "2026-09-29T14:52:19",
+ "hard": [],
+ "soft": [
+  [
+   "no calendar link",
+   "abemalkin M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "timdenman M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "prabhatdhar M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "annie-whelan-steidle-756351121 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "devin-ghazi M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "jacobdpeters M1",
+   "«Superpower» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "sandra-ops M1",
+   "«Superpower» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "shaun-miller-50a110148 M1",
+   "«Superpower» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "thejeffreyzheng M2",
+   "angle referral"
+  ]
+ ]
+}
