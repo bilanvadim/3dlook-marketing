@@ -115,7 +115,10 @@ t "writer forbidden to fabricate a verdict" 'grep -q "никогда не выд
 
 echo "--- 2. external review moves to checkpoint 1 ---"
 t "new-article.md documents outline review" 'grep -q "Внешнее рев.ю идёт на аутлайн" .claude/commands/new-article.md'
-t "late-review recovery order documented" 'grep -q "Если рев.ю всё-таки пришло на чекпоинт 2" .claude/commands/new-article.md'
+# Heading renamed by 04a4cd1 (no-checkpoint mode, 2026-09-21): "…всё-таки пришло на чекпоинт 2" →
+# "…пришло на готовую статью". Checking the steps too, not only the heading, so a rename that
+# drops the procedure fails here instead of passing on the title alone.
+t "late-review recovery order documented" 'grep -q "Если рев.ю пришло на готовую статью" .claude/commands/new-article.md && grep -q "Заснапшоть текущее состояние в .v1/." .claude/commands/new-article.md && grep -q "review-N-decisions.md" .claude/commands/new-article.md'
 t "orchestrator wires lint into the SEO flow" 'grep -q "article_lint.py" .claude/agents/_shared/orchestrator.md'
 
 echo "--- 3. article_lint.py ---"
