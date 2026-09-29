@@ -698,8 +698,10 @@ grep_check "QC scores the validator against the card, not the hypothesis" "card-
 grep_check "QC for messages names sample files and the gate report" "messages/_check.json" \
   $OP qc-prompt --campaign $P --stage messages
 check "build-import -> 0" 0 $OP build-import --campaign $P
-grep_check "wave 2 goes into its own file" "closelyhq-import-wave2.csv" ls "$CAMP/$P"
-check "wave 1 file passes check-import -> 0" 0 \
+# No waves since 2026-09-29 (Vadim): everyone, wave-2 promotions included, in one file.
+check "no per-wave import file -> 1" 1 test -e "$CAMP/$P/closelyhq-import-wave2.csv"
+grep_check "a wave-2 promotion lands in the one import file" "Cara" cat "$CAMP/$P/closelyhq-import.csv"
+check "the import file passes check-import -> 0" 0 \
   python3 $S/outbound-pipeline.py check-import --campaign $P
 check "build-import refuses to clobber -> 1" 1 $OP build-import --campaign $P
 if mutate "scope edit under the card" "$CAMP/$P/hypothesis.md" '^## Anti-cases$' '## Anti-cases\n\nAnd yoga studios.'; then

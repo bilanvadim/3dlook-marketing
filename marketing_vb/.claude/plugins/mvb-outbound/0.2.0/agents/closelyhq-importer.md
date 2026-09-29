@@ -17,10 +17,9 @@ python3 scripts/outbound_pack.py build-import --campaign {campaign}
 Что она делает:
 
 1. Гонит гейт сообщений (`check-messages`). Не прошёл → CSV не собирается.
-2. Собирает CSV по волнам: `closelyhq-import.csv` (волна 1),
-   `closelyhq-import-wave2.csv` (referral, после волны 1 в той же компании),
-   `closelyhq-import-wave2-{group}.csv` (волна 2 с датой выпуска из `release_note`).
-   Имена совпадают с глобом `closelyhq-import*.csv`, который читает реестр.
+2. Собирает один CSV на всю кампанию: `closelyhq-import.csv`, все люди сразу. Волн нет с
+   2026-09-29 (решение Вадима: несколько файлов неудобно запускать в closely.io).
+   Имя совпадает с глобом `closelyhq-import*.csv`, который читает реестр.
 3. Гонит `check-import` по каждому файлу: непустые имя и LinkedIn URL в каждой строке,
    оба сообщения, лимиты 600 / 550, em dash.
 4. Сверяет распределение по группам с `cap_per_group` из frontmatter гипотезы.
@@ -59,4 +58,3 @@ python3 scripts/outbound-registry.py record --campaign {campaign} --profile {pro
 1. https://app.closelyhq.com/ → импорт `closelyhq-import.csv` в аккаунт профиля
 2. Sequence: запрос в друзья БЕЗ note; Message 1 — сразу после принятия; Message 2 — через 5 дней
 3. 30-50 запросов в день, рабочие часы целевого рынка
-4. Файлы волны 2 — в сроки из `import-log.md`

@@ -37,7 +37,7 @@ caller's context and is re-billed on every later request of that session.
     split-messages   step 5 output: one batch file -> per-person files, then the gate
     check-messages   the gate: completeness, limits, signature, bans, detector, repetition
     qc-prompt        what quality-controller is asked to read after a stage, and nothing more
-    build-import     step 6: closely.io CSVs by wave, check-import on each, import-log.md
+    build-import     step 6: one closely.io CSV for everyone, check-import, import-log.md
 
 Shared logic is imported from `outbound-pipeline.py` and `outbound-registry.py`, not copied.
 Stdlib only: pandas is not installed anywhere on this box.
@@ -810,7 +810,7 @@ def build_card(cdir: Path, stage: str) -> str:
                 "- Message 1 ≤ 600 characters, Message 2 ≤ 550 (the script counts)",
                 (f"- calendar link for Message 2, plain text: {link}" if link else
                  "- no calendar link for this profile: close Message 2 with a soft ask"),
-                "- referral-angle people (wave 2): a short ask for the owner of the app roadmap,"
+                "- referral-angle people: a short ask for the owner of the app roadmap,"
                 " no pitch, calendar link optional", ""]
         if banned:
             out += ["## Never name (this campaign)", "",
@@ -1367,9 +1367,8 @@ def cmd_profiles(args) -> int:
                     f"{p.get('full_name','')} · first name: {p.get('first_name','')} · "
                     f"{clip(p.get('title',''), 90)} · {p.get('company_name','')}"
                     f" ({group_of(p, gmap)}) · {clip(r.get('location') or p.get('person_location',''), 30)}",
-                    f"angle: **{p.get('recommended_message_angle','?')}** · wave {wave_of(p)}"
-                    f" · P{p.get('priority') or '?'}"
-                    + (f" · {p.get('release_note')}" if p.get("release_note") else ""),
+                    f"angle: **{p.get('recommended_message_angle','?')}**"
+                    f" · P{p.get('priority') or '?'}",
                     f"why on the list: {clip(p.get('reason',''), 220)}"]
             if head and head.lower() != (p.get("title") or "").lower():
                 out.append(f"headline: {head}")
@@ -1402,7 +1401,6 @@ PERSON_FILE = """\
 
 ## Context used
 - Angle: {angle}
-- Wave: {wave}
 - Hook: {hook}
 - Proof point: {proof}
 
@@ -1807,7 +1805,6 @@ def cmd_build_import(args) -> int:
     if run_check(cdir) != 0 and not args.force:
         print("✗ import not built: the messages do not pass the gate (above).", file=sys.stderr)
         return 1
-    gmap = group_map(cdir)
     out_dir = Path(args.out_dir) if args.out_dir else cdir
     out_dir.mkdir(parents=True, exist_ok=True)
     files: dict[str, list[dict]] = defaultdict(list)
@@ -1823,15 +1820,10 @@ def cmd_build_import(args) -> int:
                "company": p.get("company_name", ""), "title": p.get("title", ""),
                "email": p.get("email_guess", ""), "connection_note": "",
                "message_1": msgs.get(1, ""), "message_2": msgs.get(2, "")}
-        w = wave_of(p)
-        if w <= 1:
-            name = "closelyhq-import.csv"
-        elif (p.get("release_note") or "").strip():
-            g = re.sub(r"[^a-z0-9]+", "-", group_of(p, gmap).lower()).strip("-")
-            name = f"closelyhq-import-wave{w}-{g}.csv"
-        else:
-            name = f"closelyhq-import-wave{w}.csv"
-        files[name].append(row | {"_note": p.get("release_note", "")})
+        # One file, everyone at once. Vadim 2026-09-29: «хвиль робити не потрібно, давай
+        # всіх в один файл» — per-wave CSVs were awkward to launch in closely.io. The
+        # `wave` column may still be filled in older lists; it no longer splits anything.
+        files["closelyhq-import.csv"].append(row)
 
     existing = [n for n in files if (out_dir / n).exists()]
     if existing and not args.overwrite:
@@ -1848,10 +1840,7 @@ def cmd_build_import(args) -> int:
     for name in sorted(files):
         rows = files[name]
         write_csv(out_dir / name, rows, IMPORT_COLS)
-        note = next((r["_note"] for r in rows if r["_note"]), "")
-        when = "now" if name == "closelyhq-import.csv" else (
-            note or "after wave 1 has gone out at the same company")
-        log.append(f"| `{name}` | {len(rows)} | {when} |")
+        log.append(f"| `{name}` | {len(rows)} | now, everyone at once |")
         res = PIPE.cmd_check_import(SimpleNamespace(
             file=str((out_dir / name).resolve()), campaign=None, infile=None)) \
             if args.verbose else _quiet(PIPE.cmd_check_import, SimpleNamespace(
@@ -1947,7 +1936,7 @@ def main(argv=None) -> int:
     q.add_argument("--stage", choices=("hypothesis", "validate", "messages"), required=True)
     q.set_defaults(func=cmd_qc_prompt)
 
-    b = camp(sub.add_parser("build-import", help="closely.io CSVs by wave + check-import"))
+    b = camp(sub.add_parser("build-import", help="one closely.io CSV + check-import"))
     b.add_argument("--overwrite", action="store_true")
     b.add_argument("--force", action="store_true", help="build even if the gate fails")
     b.add_argument("--allow-over-cap", action="store_true")

@@ -66,7 +66,8 @@ python3 $P/outbound_pack.py card    --campaign {campaign} --for validate
    - `priority`: 1-3, только для PASS.
    - `angle`: тег для message-sequencer — `product` · `retention` ·
      `technical-integration` · `referral` · или тот, что назван в карточке.
-   - `wave`: 1, либо 2 для referral-angle (они уходят после волны 1 в той же компании).
+   - `wave`: всегда 1. Волн нет с 2026-09-29 (Вадим): все уходят одним файлом и одновременно;
+     колонка осталась только ради формата.
    - `reason`: PASS и WEAK — одна фраза, которая выдержит вопрос «почему он здесь».
      FAIL — 2-5 слов (функция и уровень). Символ `|` в reason не используй.
    - Разделитель — `|`, потому что в причине будут запятые: рукописный CSV с запятой в
@@ -105,7 +106,7 @@ python3 $P/outbound_pack.py card    --campaign {campaign} --for validate
 
 ```bash
 python3 scripts/outbound_pack.py promote --campaign {campaign} \
-    --names "Имя Фамилия; person_id" --angle referral --wave 2 --pool H
+    --names "Имя Фамилия; person_id" --angle referral --pool H
 ```
 
 ## `icp-validation-summary.md`
@@ -115,10 +116,10 @@ python3 scripts/outbound_pack.py promote --campaign {campaign} \
 
 ## Stats
 (числа из вывода apply-decisions: PASS по приоритетам, WEAK, FAIL, excluded by registry,
-распределение по группам против кепа, разбивка по angle и волнам)
+распределение по группам против кепа, разбивка по angle)
 
 ## Proposed to SEND
-| Группа | Человек | Title | P | Angle | Wave |
+| Группа | Человек | Title | P | Angle |
 
 ## WEAK — нужно решение Вадима
 | Человек | Title | Группа | Почему на грани |
