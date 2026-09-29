@@ -50,6 +50,14 @@ pattern: `[PLACEHOLDER]`, `[QUOTE — needs client approval]`, `[NUMBER — conf
 - **Parent link down.** The product page must link to the new vertical page. That edit is on someone
   else's plate and the page is orphaned until it happens.
 - **Form destination.** Which plugin or endpoint receives the demo request, and where it lands.
+  FitXpress pages: always the shared HubSpot form `FX | LP | Demo`. The blocker here is the page's
+  final path, which must be added as one row to the GTM `fx_vertical` lookup (tracking spec B2.5);
+  without it the lead arrives with an empty `fx_vertical`.
+- **Landing map (FitXpress).** On publish, flip the page's row in
+  `brand-assets/content-strategy/landing-map.md` to `live`, put the final URL in "Link now" and
+  `{URL}#demo` in "Demo button now". List the hub's published articles that still point to the
+  stand-in URL (grep their `published-live-*.md` / `FINAL-PUBLISHED.md`), so they get relinked. Until
+  the row flips, new articles keep linking to the stand-in.
 - **Customer approval** on any name, logo, metric or quote from `case-studies/`.
 - **Conflicting numbers** in the source material — put the conflict in the list. Guardrail #2 forbids
   averaging and forbids silently picking one. The `pricing.md` versus `/pricing/` mismatch is a live
@@ -77,7 +85,9 @@ clinical or regulatory framing, and any accuracy statement that had to be scoped
 - **Duplicate chrome.** A prototype ships its own header and footer; the theme supplies those. Say
   which two blocks to delete, or the page goes live with two headers and the page gets blamed.
 - **Analytics.** Name every event the page expects on form view, first input, submit and demo-link
-  clicks, and say they must be verified firing manually after publish.
+  clicks, and say they must be verified firing manually after publish. For FitXpress pages the check
+  is: a test submission shows in GA4 DebugView as `generate_lead` with `form_name = fx_lp_demo` and the
+  page's `fx_vertical`, and the HubSpot contact has the same `fx_vertical`.
 - **Third-party embeds.** Any widget or video: name the network dependency, what the block looks like
   when it fails, and that consent tooling can block it.
 

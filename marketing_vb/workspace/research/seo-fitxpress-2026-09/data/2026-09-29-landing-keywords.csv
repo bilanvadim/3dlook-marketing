@@ -1,0 +1,176 @@
+landing,role,keyword,us_volume,us_kd,us_cpc_usd,uk_volume,uk_kd,note
+/fitxpress/,Головний,ai body scanner,200,2,1.5,50,,"Головна тримає поз. 5,6 (881 показ за 3 міс., цитата в AI Overview). До 301 `/fitxpress/` стояла на 3,1"
+/fitxpress/,Вторинний,fitxpress,20,0,0.0,10,,"Бренд. Зараз поз. 6,0, 4 URL: `/for-bmi-verification/`, telehealth-сторінка, `/for-connected-…/`. Має лишитися один"
+/fitxpress/,Вторинний,ai body scan,80,0,1.2,30,,"GSC: 458 показів, поз. 5,8"
+/fitxpress/,Вторинний,body scanner ai,10,,0.0,0,,"GSC: 269 показів, поз. 2,8"
+/fitxpress/,Вторинний,ai body scanner app,40,,0.0,10,,"GSC: 537 показів, поз. 8,4. Багато consumer-трафіку з Індії, під нього не підлаштовуватися"
+/fitxpress/,Вторинний,mobile body scanner,20,17,1.9,0,,Формулювання «mobile» використовують промпти ШІ-асистентів
+/fitxpress/,GEO / FAQ,body scanning software,0,,0.0,0,,
+/fitxpress/,GEO / FAQ,body scanning API / body measurement API / SDK,,,,,,AEO-промпт «top mobile body scanning APIs for health apps»: видимість 65%
+/fitxpress/,GEO / FAQ,mobile body scanning software for health apps,,,,,,
+/fitxpress/,GEO / FAQ,Which body scanning tools support high-volume scan workflows for enterprise customers?,,,,,,"AEO, видимість 26%"
+/fitxpress/,GEO / FAQ,Which body scanning tools offer trials or demos?,,,,,,"AEO, 11%. Відповідь сторінки: «Book a demo», тріал публічно не обіцяємо"
+/fitxpress/,Не тут,3d body scanner,700,26,1.2,150,18,Comparison-стаття `body-scanning-technology-comparison` (рядок 0.x1)
+/fitxpress/,Не тут,3d body scan,800,39,1.2,150,26,Та сама comparison-стаття
+/fitxpress/,Не тут,body scanner,1000,0,1.6,500,32,Та сама comparison-стаття
+/fitxpress/,Не тут,body scanning technology,100,33,2.0,10,,"Comparison-стаття. Зараз цей ключ тримає apparel-стаття (9,2K показів, поз. 10)"
+/fitxpress/,Не тут,ai body measurement,150,0,0.6,0,,"Не забирати в `/mobile-tailor/`: вона тримає «ai body measurements», поз. 6,9"
+/fitxpress/,Не тут,body composition scanner,200,30,1.7,50,1,"Батьківська тема «inbody scan» (апаратні сканери), це Hub 9"
+/fitxpress/bmi-verification/,Головний,bmi verification,100,,0.0,10,,"US 100, але частина цього попиту — LADBS (будівельний департамент Лос-Анджелеса). GSC: 81 показ, поз. 5,2 саме на цій сторінці"
+/fitxpress/bmi-verification/,Вторинний,weight verification,10,0,0.0,0,,
+/fitxpress/bmi-verification/,Вторинний,remote bmi verification,,13,0.0,,,"Ahrefs дає KD 13, але обсягу немає"
+/fitxpress/bmi-verification/,Вторинний,verified BMI,,,,,,Формулювання з промптів і рекомендацій HubSpot AEO
+/fitxpress/bmi-verification/,Вторинний,weight discrepancy alerts,,,,,,"Назва фічі на сторінці (H3). Сам запит «weight discrepancy» — про логістику, під нього не цілимося"
+/fitxpress/bmi-verification/,GEO / FAQ,telehealth bmi verification,,1,0.0,,,"Інтент «як» належить гайду аптек (секція про telehealth), інтент «рішення/софт» — цій сторінці. Title розвести"
+/fitxpress/bmi-verification/,GEO / FAQ,How do telehealth platforms accurately verify BMI without in-person visits?,,,,,,"AEO (UK), видимість **0%**. Найбільша діра: сторінка має відповісти на це першим абзацом"
+/fitxpress/bmi-verification/,GEO / FAQ,What mobile body scanning software works for remote BMI verification?,,,,,,"AEO, 82%"
+/fitxpress/bmi-verification/,GEO / FAQ,BMI verification for GLP-1 prescribing,,,,,,Сценарій UK-аптек у тексті сторінки
+/fitxpress/bmi-verification/,GEO / FAQ,self-reported weight vs verified BMI,,,,,,Кут misreporting. Без «fraud detection» як автоматичного рішення
+/fitxpress/bmi-verification/,Не тут,online pharmacy bmi verification,,,,,,"Title гайду `online-pharmacy-bmi-verification-…` (інформаційний, compliance). Сторінка фічі — «software/solution», у title без «guide/compliance»"
+/fitxpress/bmi-verification/,Не тут,bmi for mounjaro,60,38,5.0,1100,0,"UK 1 100 / KD 0: найцінніший кластер. Власник — секція в гайді `online-pharmacy-bmi-verification-…` (рядок 3.x1), і тільки після медичного рецензента"
+/fitxpress/bmi-verification/,Не тут,what bmi for mounjaro,10,,0.0,1000,45,Той самий кластер
+/fitxpress/bmi-verification/,Не тут,bmi for wegovy,300,39,5.0,400,21,Той самий кластер
+/fitxpress/bmi-verification/,Не тут,bmi for weight loss injections,30,,0.0,350,,Той самий кластер
+/fitxpress/bmi-verification/,Не тут,bmi check,1800,83,0.01,5600,0,"UK 5,6K, але батьківська тема — «bmi calculator». Споживчий інтент, нікому"
+/fitxpress/bmi-verification/,Не тут,mounjaro online,3500,34,19.0,2400,38,"Споживач купує препарат, нікому"
+/fitxpress/bmi-verification/,Не тут,patient identity verification,150,2,5.0,0,,"Це не наша функція, не заявляти"
+/fitxpress/for-connected-and-digital-fitness/,Головний,gym body scanner,30,2,1.6,,,"TP 4 200: уся тема «сканер у залі» віддає топ-сторінці ~4K на місяць. Зараз у видачі Fit3D, Styku та InBody з DR нижчим за наш"
+/fitxpress/for-connected-and-digital-fitness/,Вторинний,body scan gym,60,1,1.6,,,
+/fitxpress/for-connected-and-digital-fitness/,Вторинний,gym body scan,50,4,1.6,,,
+/fitxpress/for-connected-and-digital-fitness/,Вторинний,body scan machine gym,40,11,2.5,,,Інтент — «машина». Наша відповідь: мобільна альтернатива
+/fitxpress/for-connected-and-digital-fitness/,Вторинний,body composition app,50,2,0.8,,,
+/fitxpress/for-connected-and-digital-fitness/,Вторинний,digital fitness platform,60,3,0.0,,,
+/fitxpress/for-connected-and-digital-fitness/,Вторинний,online coaching app,150,28,4.0,,,Лише як «for online coaching apps». Сам запит про коучинг належить статті
+/fitxpress/for-connected-and-digital-fitness/,GEO / FAQ,what is a body scan at the gym,90,0,0.0,10,,US 90 / KD 0. Відповісти в FAQ
+/fitxpress/for-connected-and-digital-fitness/,GEO / FAQ,What's the best alternative to hardware 3D body scanners for fitness studios?,,,,,,"AEO, 51%"
+/fitxpress/for-connected-and-digital-fitness/,GEO / FAQ,What's the best body composition tracking software for a fitness app that wants smartphone-based scans?,,,,,,"AEO, 61%"
+/fitxpress/for-connected-and-digital-fitness/,GEO / FAQ,Which body scanning APIs are easiest to integrate into a fitness or wellness app?,,,,,,"AEO, 63%"
+/fitxpress/for-connected-and-digital-fitness/,GEO / FAQ,What body scanning SDKs work for fitness apps with remote users?,,,,,,"AEO, 81%"
+/fitxpress/for-connected-and-digital-fitness/,Не тут,ai fitness,600,0,1.4,100,38,"Хаб `ai-in-fitness-industry` (поз. 4,6–22,8)"
+/fitxpress/for-connected-and-digital-fitness/,Не тут,connected fitness,300,0,1.5,,,"Стаття `connected-fitness-industry`, поз. 6,9"
+/fitxpress/for-connected-and-digital-fitness/,Не тут,body composition test,2700,6,1.0,,,"Hub 9, хаб методів `how-to-measure-body-composition`"
+/fitxpress/for-connected-and-digital-fitness/,Не тут,body composition analysis,1600,30,0.9,,,Hub 9
+/fitxpress/for-connected-and-digital-fitness/,Не тут,online fitness coaching software,100,71,7.0,,,KD 71: не пробитися. Коучингу присвячена стаття `remote-body-measurement-online-fitness-coaching`
+/fitxpress/for-connected-and-digital-fitness/,Не тут,gym member retention,100,3,0.0,,,Майбутня стаття «progress visibility as a retention lever»
+/fitxpress/for-connected-and-digital-fitness/,Не тут,body measurement tracker,400,1,0.9,,,"Споживчий застосунок, нікому"
+/fitxpress/for-connected-and-digital-fitness/,Не тут,fitness app development,700,0,1.5,,,"Агенції, нікому"
+/fitxpress/for-telehealth/,Головний,remote patient monitoring for weight loss,100,1,4.5,0,,"Точний збіг із продуктом, KD 1"
+/fitxpress/for-telehealth/,Вторинний,remote weight monitoring,100,1,0.0,0,,
+/fitxpress/for-telehealth/,Вторинний,remote patient monitoring weight,40,,0.0,0,,
+/fitxpress/for-telehealth/,Вторинний,telehealth api,100,1,5.0,0,,Видачу частково тримають відео-API. Формулювання: «body scanning API for telehealth platforms»
+/fitxpress/for-telehealth/,Вторинний,digital patient intake,100,4,11.0,10,,Можливий H2 «remote intake with body measurements»
+/fitxpress/for-telehealth/,Вторинний,white label telehealth,350,30,14.0,0,,Тільки як згадка «white-label body scanning inside your telehealth app»: інтент запиту — платформа цілком
+/fitxpress/for-telehealth/,GEO / FAQ,best mobile body scanning solution for telehealth,,,,,,"GSC: 46 показів, поз. 2,9, але тримає стаття `body-scanner-machines-vs-mobile`, яку склеюють. Має перейти сюди"
+/fitxpress/for-telehealth/,GEO / FAQ,What is the best mobile body scanning solution for telehealth?,,,,,,"AEO, 63%"
+/fitxpress/for-telehealth/,GEO / FAQ,Which mobile body scanning solution best improves patient engagement metrics?,,,,,,"AEO, 90%"
+/fitxpress/for-telehealth/,GEO / FAQ,What body measurement tools minimize exposure of personal data during remote scans?,,,,,,"AEO, 11%. Коротка відповідь і посилання на trust-FAQ"
+/fitxpress/for-telehealth/,GEO / FAQ,remote body measurement for telehealth,,,,,,
+/fitxpress/for-telehealth/,Не тут,ai in telehealth,100,53,3.0,20,,Хаб `the-potential-of-ai-in-telehealth` (поз. 21–33)
+/fitxpress/for-telehealth/,Не тут,ai telehealth,100,51,4.0,0,,Той самий хаб
+/fitxpress/for-telehealth/,Не тут,patient engagement software,1300,2,0.8,150,27,Стаття `mobile-body-scanning-patient-engagement` (канонічна тема engagement)
+/fitxpress/for-telehealth/,Не тут,remote patient monitoring,6800,51,4.0,250,0,"6,8K / KD 51, інтент — RPM-пристрої та платформи. Згадувати можна, цілитися не варто"
+/fitxpress/for-telehealth/,Не тут,remote patient monitoring software,1100,12,8.0,100,8,Той самий інтент (RPM-платформи)
+/fitxpress/for-telehealth/,Не тут,telehealth weight loss,450,39,5.0,0,,"Пацієнт шукає програму, нікому"
+/fitxpress/for-telehealth/,Не тут,virtual weight loss clinic,350,39,4.0,20,,"Пацієнт, нікому"
+/fitxpress/for-telehealth/,Не тут,telehealth bmi verification,,1,0.0,,,Сторінка BMI verification і гайд аптек
+/fitxpress/for-glp-1-programs/,Головний,body composition tracking for GLP-1 programs,,,,,,Попиту немає. Це головне питання ШІ-асистентам (див. нижче)
+/fitxpress/for-glp-1-programs/,Вторинний,weight loss clinic software,10,,0.0,10,,"Мізерний обсяг, зате точний інтент покупця"
+/fitxpress/for-glp-1-programs/,Вторинний,medical weight loss software,10,,0.0,0,,Те саме
+/fitxpress/for-glp-1-programs/,Вторинний,GLP-1 progress tracking,,,,,,Ahrefs даних не має
+/fitxpress/for-glp-1-programs/,Вторинний,lean mass tracking on GLP-1,,,,,,Мостик до статті про втрату м'язів
+/fitxpress/for-glp-1-programs/,GEO / FAQ,How can a GLP-1 weight-loss clinic track patient body composition remotely? Include tools.,,,,,,"AEO, 49%"
+/fitxpress/for-glp-1-programs/,GEO / FAQ,glp-1 weight-loss clinic remote body composition tracking tools,,,,,,GSC: листикл top-7 стоїть на поз. 1
+/fitxpress/for-glp-1-programs/,GEO / FAQ,what software supports glp workflows?,,,,,,"GSC, листикл, поз. 11"
+/fitxpress/for-glp-1-programs/,Не тут,ozempic muscle loss,1100,53,0.25,200,54,Нова стаття 3.x2 «GLP-1 and Muscle Loss» (у плані поки немає). Лендінг — у FAQ з посиланням
+/fitxpress/for-glp-1-programs/,Не тут,does ozempic cause muscle loss,1800,52,0.2,200,,Та сама стаття
+/fitxpress/for-glp-1-programs/,Не тут,glp 1 muscle loss,400,11,0.08,30,,"Та сама стаття, KD 11"
+/fitxpress/for-glp-1-programs/,Не тут,tirzepatide muscle loss,500,37,1.0,150,,Та сама стаття
+/fitxpress/for-glp-1-programs/,Не тут,mounjaro muscle loss,300,26,0.2,450,19,Та сама стаття. UK KD 19: заходити через UK
+/fitxpress/for-glp-1-programs/,Не тут,glp-1 market,150,43,4.5,10,,Хаб `glp-1-market`
+/fitxpress/for-glp-1-programs/,Не тут,glp-1 tracker app free,300,,0.0,,,"Кластер «glp 1 tracker app» ~1,7K сумарно по варіантах, але це споживчі застосунки (Shotsy). Нікому"
+/fitxpress/for-glp-1-programs/,Не тут,glp-1 clinic,250,2,10.0,0,,Локальний пацієнтський інтент
+/fitxpress/for-glp-1-programs/,Не тут,medical weight loss clinic,1700,5,4.0,150,45,Локальний пацієнтський інтент
+/fitxpress/for-insurance-underwriting/,Головний,accelerated underwriting,100,0,6.0,10,,KD 0. Разом із варіантами нижче ~340 на місяць
+/fitxpress/for-insurance-underwriting/,Вторинний,accelerated underwriting life insurance,90,1,7.0,,,
+/fitxpress/for-insurance-underwriting/,Вторинний,life insurance accelerated underwriting,90,0,6.0,,,
+/fitxpress/for-insurance-underwriting/,Вторинний,life insurance underwriting software,150,11,1.3,,,
+/fitxpress/for-insurance-underwriting/,Вторинний,insurance underwriting software,450,11,9.0,200,9,Інтент — core-системи (Guidewire). Лише згадка «works inside your underwriting workflow»
+/fitxpress/for-insurance-underwriting/,Вторинний,digital underwriting,30,1,1.9,70,,"UK вище, ніж US"
+/fitxpress/for-insurance-underwriting/,Вторинний,paramedical exam,350,3,0.2,0,,"Тільки в контексті «менше paramed-візитів заради зросту й ваги». Не писати, що ми замінюємо paramed"
+/fitxpress/for-insurance-underwriting/,GEO / FAQ,what is accelerated underwriting,60,,0.0,0,,"US 60, у FAQ"
+/fitxpress/for-insurance-underwriting/,GEO / FAQ,remote height and weight verification for life insurance,,,,,,
+/fitxpress/for-insurance-underwriting/,GEO / FAQ,build and BMI evidence for underwriting,,,,,,Формулювання з драфту
+/fitxpress/for-insurance-underwriting/,Не тут,life insurance underwriting,800,0,3.0,200,1,Хаб `mobile-body-scanning-insurance-underwriting`
+/fitxpress/for-insurance-underwriting/,Не тут,life insurance underwriting process,350,4,0.35,40,,Той самий хаб
+/fitxpress/for-insurance-underwriting/,Не тут,life insurance build chart,100,0,3.0,0,,Рядок «BMI Verification for Life Insurance» (refresh секції хабу)
+/fitxpress/for-insurance-underwriting/,Не тут,life insurance height and weight chart,70,0,3.5,0,,Той самий рядок
+/fitxpress/for-insurance-underwriting/,Не тут,bmi life insurance,200,0,9.0,100,,Той самий рядок
+/fitxpress/for-insurance-underwriting/,Не тут,life insurance fraud,600,7,1.3,80,2,Рядок «Self-Reported BMI vs Verified Body Data» (review/decide)
+/fitxpress/for-insurance-underwriting/,Не тут,underwriting automation,350,12,0.6,60,,Нікому: guardrail «no automated underwriting»
+/fitxpress/for-insurance-underwriting/,Не тут,automated underwriting life insurance,100,,0.0,0,,"Нікому, та сама причина"
+/fitxpress/for-insurance-underwriting/,Не тут,no medical exam life insurance,3000,13,15.0,300,6,"Споживчий продукт, нікому"
+/fitxpress/for-wellness-programs/,Головний,at home biometric screening,80,,1.8,0,,"**Умовно, чекає рішення.** Точна формула: «remote body measurements for biometric screening»"
+/fitxpress/for-wellness-programs/,Вторинний,biometric screening companies,90,3,3.5,0,,
+/fitxpress/for-wellness-programs/,Вторинний,onsite biometric screening,150,4,4.0,0,,Кут: віддалена альтернатива для частини з вимірами
+/fitxpress/for-wellness-programs/,Вторинний,company biometric screening,100,3,3.5,,,
+/fitxpress/for-wellness-programs/,Вторинний,wellness rewards program,200,1,1.8,0,,Кут rewards verification. Детально — стаття `wellness-rewards-verification-…`
+/fitxpress/for-wellness-programs/,Вторинний,corporate wellness platform,500,15,12.0,60,,Інтент — платформа цілком. Формулювання: «for corporate wellness platforms»
+/fitxpress/for-wellness-programs/,Вторинний,employee wellness app,200,1,6.0,60,,
+/fitxpress/for-wellness-programs/,GEO / FAQ,remote biometric screening,,,,,,Ahrefs даних не має
+/fitxpress/for-wellness-programs/,GEO / FAQ,Best mobile body scanning software for fitness and wellness platforms?,,,,,,"AEO, 53%"
+/fitxpress/for-wellness-programs/,GEO / FAQ,Which body scanning tools are suitable for health and wellness apps that need HIPAA or GDPR controls?,,,,,,"AEO, 78%. Відповідь без «HIPAA compliant»: лише формулювання з trust-FAQ"
+/fitxpress/for-wellness-programs/,GEO / FAQ,full body scan for employees wellness program,,,,,,"GSC, стаття rewards, поз. 12,8"
+/fitxpress/for-wellness-programs/,Не тут,biometric screening,8600,3,2.0,150,7,"8,6K / KD 3. **Нова стаття в Hub 5**, у плані її немає"
+/fitxpress/for-wellness-programs/,Не тут,what is a biometric screening,2500,3,2.0,,,Та сама стаття
+/fitxpress/for-wellness-programs/,Не тут,corporate wellness programs,2600,0,0.6,500,4,Хаб `ai-body-data-wellness-platforms`
+/fitxpress/for-wellness-programs/,Не тут,wellness incentives,700,0,2.0,150,0,Стаття `wellness-rewards-verification-…`
+/fitxpress/for-wellness-programs/,Не тут,nutrition coaching software,100,0,0.6,150,,Рядок P1 «Body Data for Nutrition and Lifestyle Coaching Platforms»
+/fitxpress/for-wellness-programs/,Не тут,wellness app,1000,2,1.6,100,18,"Споживач, нікому"
+/fitxpress/for-bariatric-clinics/,Головний,bariatric pre-authorization documentation,,,,,,"Попиту немає. Головний сценарій (HubSpot AEO, HIGH)"
+/fitxpress/for-bariatric-clinics/,Вторинний,bariatric software,30,,0.0,0,,"GSC: хаб на поз. 19,7"
+/fitxpress/for-bariatric-clinics/,Вторинний,bariatric clinic software body measurement records,,,,,,"GSC: хаб на поз. 3,6"
+/fitxpress/for-bariatric-clinics/,Вторинний,bariatric program,150,30,2.5,,,Тільки як згадка «for bariatric programs»: інтент запиту локальний
+/fitxpress/for-bariatric-clinics/,Вторинний,bariatric surgery insurance requirements,10,,1.5,,,Кут «документація для payer»
+/fitxpress/for-bariatric-clinics/,GEO / FAQ,How can a weight-loss surgery program reduce manual measurement work during pre-auth?,,,,,,"AEO, **0%**"
+/fitxpress/for-bariatric-clinics/,GEO / FAQ,Which tools can support remote body data collection before bariatric surgery consultations?,,,,,,"AEO, **6%**"
+/fitxpress/for-bariatric-clinics/,GEO / FAQ,What software helps bariatric clinics collect auditable body measurement records for payer documentation?,,,,,,"AEO, 62%"
+/fitxpress/for-bariatric-clinics/,Не тут,bariatric surgery requirements,1100,59,1.8,,,"Пацієнт, YMYL. Щонайбільше секція в хабі"
+/fitxpress/for-bariatric-clinics/,Не тут,bmi for bariatric surgery,450,53,1.6,,,"Пацієнт, YMYL"
+/fitxpress/for-bariatric-clinics/,Не тут,weight loss surgery requirements,600,0,1.9,,,Пацієнт
+/fitxpress/for-bariatric-clinics/,Не тут,gastric sleeve requirements,400,0,1.6,,,Пацієнт
+/fitxpress/for-bariatric-clinics/,Не тут,bariatric pre-qualification,,,,,,"Title хабу (`bariatric-pre-qualification-…`), лендінг лише посилається"
+/fitxpress/for-bariatric-clinics/,Не тут,bariatric app,200,11,0.45,,,"Застосунок для пацієнтів (Baritastic), нікому"
+/fitxpress/for-clinical-trials/,Головний,remote anthropometric measurement for clinical trials,,,,,,Попиту немає. Головна фраза для title/H1 разом із «decentralized and hybrid trials»
+/fitxpress/for-clinical-trials/,Вторинний,decentralized clinical trial platform,100,10,12.0,,,CPC $12: дорогий комерційний запит
+/fitxpress/for-clinical-trials/,Вторинний,decentralized clinical trials platform,100,8,8.0,,,
+/fitxpress/for-clinical-trials/,Вторинний,dct platform,70,2,8.0,,,
+/fitxpress/for-clinical-trials/,Вторинний,decentralized clinical trials technology,70,,8.0,,,
+/fitxpress/for-clinical-trials/,Вторинний,decentralized clinical trials software,70,12,0.0,,,
+/fitxpress/for-clinical-trials/,Вторинний,remote patient monitoring clinical trials,90,14,2.0,,,
+/fitxpress/for-clinical-trials/,Вторинний,clinical trial technology,200,1,0.6,,,
+/fitxpress/for-clinical-trials/,GEO / FAQ,body measurements in obesity trials between site visits,,,,,,
+/fitxpress/for-clinical-trials/,GEO / FAQ,anthropometric measurement software,,,,,,Після зміни title хабу — лендінгу
+/fitxpress/for-clinical-trials/,Не тут,anthropometric measurements,2100,6,0.1,,,"2,1K / KD 6, академічний інтент. Хаб (`clinical-trial-anthropometric-…`)"
+/fitxpress/for-clinical-trials/,Не тут,decentralized clinical trials,500,12,6.0,,,Хаб
+/fitxpress/for-clinical-trials/,Не тут,hybrid clinical trials,200,1,2.0,,,"Хаб, секція про hybrid"
+/fitxpress/for-clinical-trials/,Не тут,benefits of decentralized clinical trials,200,6,2.0,,,Хаб
+/fitxpress/for-clinical-trials/,Не тут,obesity clinical trials,150,11,1.0,,,"Пацієнти шукають дослідження, нікому"
+/fitxpress/for-clinical-trials/,Не тут,ecoa,5700,52,3.0,,,"Інша категорія продуктів, нікому"
+/fitxpress/for-clinical-trials/,Не тут,waist circumference measurement,450,47,0.3,,,Hub 9
+/fitxpress/for-occupational-health/,Головний,occupational health software,350,3,15.0,200,0,
+/fitxpress/for-occupational-health/,Вторинний,occupational health management software,150,1,1.5,200,,
+/fitxpress/for-occupational-health/,Вторинний,occupational medicine software,150,0,0.0,30,,
+/fitxpress/for-occupational-health/,Вторинний,employee health screening software,40,,0.0,10,,GSC: хаб на поз. 25
+/fitxpress/for-occupational-health/,Вторинний,employee health screening,250,1,2.5,400,0,UK 400 / KD 0
+/fitxpress/for-occupational-health/,Вторинний,pre placement health assessment,30,,0.0,50,,UK-термін
+/fitxpress/for-occupational-health/,GEO / FAQ,pre employment medical software,0,,0.0,,,GSC: хаб на поз. 18
+/fitxpress/for-occupational-health/,GEO / FAQ,what are the best tools for occupational health screening without wearables,,,,,,"GSC: хаб на поз. 1,2 (запити в стилі ШІ)"
+/fitxpress/for-occupational-health/,GEO / FAQ,what technology is used for pre-employment health screening in 2026,,,,,,"GSC: поз. 1,0"
+/fitxpress/for-occupational-health/,GEO / FAQ,can occupational health screening be done remotely?,,,,,,"GSC: поз. 6,2. У FAQ"
+/fitxpress/for-occupational-health/,Не тут,occupational health screening,250,6,2.0,200,2,Хаб (зараз поз. 51)
+/fitxpress/for-occupational-health/,Не тут,pre employment health screening,150,5,2.5,200,0,Хаб і секція pre-employment
+/fitxpress/for-occupational-health/,Не тут,return to work assessment,80,0,0.0,150,,Рядки про return-to-work (P1)
+/fitxpress/for-occupational-health/,Не тут,workers compensation return to work,150,0,0.0,0,,Рядок про workers' comp (P1)
+/fitxpress/for-occupational-health/,Не тут,fitness for duty evaluation,350,0,2.0,0,,Лише рядок «Fit-for-Duty Intake» (ASK). Guardrail: жодних рішень про допуск
+/fitxpress/for-occupational-health/,Не тут,occupational health assessment,300,1,6.0,3700,9,"UK 3,7K, але шукають працівники. Нікому"
+/fitxpress/for-occupational-health/,Не тут,dot physical,34000,0,1.3,50,14,"34K, огляд водіїв, нікому"

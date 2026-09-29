@@ -175,7 +175,9 @@ mobile first, tables scrolling inside their own container.
 **6. Conversion.** One primary action matching the site's own language. Inline actions contextual to
 their section. A soft alternative for buyers not ready to talk: the accuracy framework article, a
 vertical checklist, the ebook. Short form. Analytics events on view, first input, submit and contact
-clicks.
+clicks. FitXpress pages embed the one shared form `FX | LP | Demo` with an `id="demo"` anchor; the
+vertical is tracked by GTM through `fx_vertical`, never by a per-page form
+(`references/kit-vertical-page.md` slot 15).
 
 **7. Technical.** Indexable, in the sitemap, canonical to self, Yoast title ≤ 60 and description
 ≤ 155 characters, valid schema, images WebP and lazy-loaded, page weight controlled.

@@ -34,9 +34,10 @@ Ordered: blockers → placeholders → claims to confirm → nice to have. Every
       page links to it (`open-items.md` B1).
 - [ ] **Logo approvals and assets.** UK Meds and Yazen approved for logos (Vadim 2026-09-27). **Healthyr:
       confirm** (no case-study file; current site alt text reads "Reddit"). Supply logo files (SVG or WebP).
-- [ ] **Demo destination.** Which form or scheduler "Book a demo" opens, and where submissions land in
-      HubSpot. `/contact-us/` shows JS errors in 31% of sessions (SEO plan §1 item 3); the button must be a
-      real `<a>` link.
+- [ ] **Demo destination.** Decided 2026-09-29: the shared HubSpot form `FX | LP | Demo` embedded on the
+      page (anchor `#demo`), then HubSpot Meetings. Open: the form itself (tracking spec A1, B5) and the GTM
+      `fx_vertical` row for `/fitxpress/` → `fitxpress_parent` (B2.5). `/contact-us/` shows JS errors in 31%
+      of sessions (SEO plan §1 item 3); the button must be a real `<a>` link.
 - [ ] **Nav and footer**: "FitXpress" items point to `/fitxpress/`.
 
 ## 2. Placeholders in the markup
@@ -55,7 +56,7 @@ Ordered: blockers → placeholders → claims to confirm → nice to have. Every
 - [ ] SDK recommendation as hedged opinion (A5).
 - [ ] Medical-device short form, FDA sentence and decision-boundary paraphrase (A9, A10, A14). Whitney.
 - [ ] Results-block destinations per program and the "standard 3D file format" wording (A15).
-- [ ] Demo form fields and `generate_lead` mapping in HubSpot.
+- [ ] `generate_lead` with `form_name = fx_lp_demo` and `fx_vertical` verified in GA4 DebugView (tracking spec A1).
 - [ ] Employer wellness link target (A11).
 - [ ] Starter price and scan limit re-checked on `/pricing/` on publish day (schema `offers` too).
 

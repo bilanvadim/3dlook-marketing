@@ -128,6 +128,15 @@ where it applies. Never the internal per-request rates from `pricing.md`.
 sales" / "Start a trial"), visible without scrolling and repeated at the end. Minimal fields, visible
 consent, confirmation state.
 
+**FitXpress pages: one shared form, never a page-specific one (Vadim, 2026-09-29).** Every FX page
+(`/fitxpress/`, each `/fitxpress/for-{vertical}/`, the BMI verification page) embeds the same HubSpot
+form `FX | LP | Demo`; submission opens HubSpot Meetings. The page does not configure anything per
+vertical: GTM writes the hidden field `fx_vertical` from the page path. The form section carries the
+anchor `id="demo"`, because hub articles link to `/fitxpress/for-{vertical}/#demo` from their
+"Book a demo" button. Do not spec new fields or a new form for a vertical; a field every vertical
+needs goes into the shared form. Source: `workspace/research/seo-fitxpress-2026-09/2026-09-27-tz-tracking-hubspot-ga4.md`
+(A1, B1, B2.5).
+
 **16. Soft alternative + sibling verticals** — for buyers not ready to talk: the accuracy framework
 article, the vertical's hub article, the ebook, a vertical checklist. Then cards for two sibling
 verticals and a link up to the product page. Per the four linking directions in `site-inventory.md`.
@@ -226,7 +235,9 @@ indexing · Yoast title and description differ from the parent's and from the ve
 BreadcrumbList with the full chain · Organization comes from the Yoast site template.
 
 **Template and analytics** — sticky CTA on mobile · form with minimal fields, visible consent and a
-confirmation state · analytics events on form view, first input, submit, and demo-link clicks ·
+confirmation state · analytics events on form view, first input, submit, and demo-link clicks (FX
+names: `generate_lead` with `form_name = fx_lp_demo` and `fx_vertical`, `demo_click`,
+`meeting_booked`) ·
 sibling-vertical block · WebP, lazy-load, images under 200KB · indexable, in the sitemap, inbound
 internal links in place.
 

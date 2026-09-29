@@ -67,3 +67,5 @@ IEEE only in the two approved sentences from `proof-points.md`, with no standalo
 or certification strip, and "80+ body measurements", never "80+ body metrics" (terminology guardrails
 §2.11 and §2.13, synced 2026-09-14);
 `DESIGN.md` decides every token; a price signal and a link to `/pricing/` on every commercial page.
+
+**Forms and tracking on FitXpress pages (Vadim, 2026-09-29).** Articles bring the traffic and link to their vertical's landing; the landing converts. Every FX page embeds one shared HubSpot form `FX | LP | Demo` (anchor `#demo`), and GTM fills the hidden `fx_vertical` from the page path. No per-page forms. Hub articles link to the landing above 30% depth and from "Book a demo" to `…/#demo`; GA4 tracks that hop as `article_cta_click`. Spec: `workspace/research/seo-fitxpress-2026-09/2026-09-27-tz-tracking-hubspot-ga4.md`.

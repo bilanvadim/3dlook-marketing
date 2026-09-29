@@ -21,8 +21,10 @@ date: 2026-08-31
 3. **Customer naming.** `case-studies/uk-meds.md` and `messaging.md` say UK Meds and Yazen can be named
    publicly. The insurance deck says the opposite, citing an NDA. The page names nobody until this is
    settled. **Owner: Vadim, Whitney.**
-4. **Form destination.** Which plugin or endpoint receives the demo request, and where the submission
-   lands. **Owner: whoever owns WordPress.**
+4. **Form destination.** Decided 2026-09-29: the shared HubSpot form `FX | LP | Demo` (anchor `#demo`),
+   with a GTM `fx_vertical` row for the final path → `insurance` (tracking spec B2.5). The URL in this
+   draft (`/for-insurance-underwriting/`, parent `/`) predates the 2026-09-27 hierarchy and becomes
+   `/fitxpress/for-insurance-underwriting/`. **Owner: whoever owns WordPress + GTM.**
 5. **Homepage links down.** No parent page on this site links to its verticals in the body. Without a
    vertical block on the homepage the page is reachable only through the nav dropdown.
    **Owner: whoever owns WordPress.**
