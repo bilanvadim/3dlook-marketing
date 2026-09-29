@@ -559,7 +559,7 @@
 
 Across both products, do NOT pursue:
 - Free / freemium consumer apps with no enterprise budget
-- Companies under 50 employees unless they're a clear MTM tailor / plastic surgery clinic (small specialized brands OK — но соблюдай **revenue threshold** сегмента: $1M+ для MT/Digital Fitness/Plastic Surgery, $2M+ для большинства FitXpress-сегментов и MT-manufacturing/uniforms, $5M+ для Insurance Underwriting и Wellness Rewards Verification)
+- ~~Companies under 50 employees~~ — **правило снято Вадимом 2026-09-29** («скасуй це правило взагалі»): численность сотрудников больше не исключает компанию ни в одном сегменте и не требует waiver в гипотезе. **Revenue threshold** сегмента остаётся: $1M+ для MT/Digital Fitness/Plastic Surgery, $2M+ для большинства FitXpress-сегментов и MT-manufacturing/uniforms, $5M+ для Insurance Underwriting и Wellness Rewards Verification.
 - Companies in markets we're not licensed for compliance-wise (currently very strict on health data — US, UK, EU/EEA primarily; новые гео из этого документа — Canada, Germany, UAE, Australia, Nordics, Turkey — проверить compliance-статус с Вадимом до первой кампании в новом гео)
 - Companies that recently announced acquisition / merger (ICP shifting, sales cycle stalls)
 - Existing customers (see `workspace/outbound/exclusions.md`)

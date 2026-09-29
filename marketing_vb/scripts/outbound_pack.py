@@ -1035,10 +1035,15 @@ def cmd_apply_decisions(args) -> int:
     return 0
 
 
-def cap_of(cdir: Path) -> int | None:
+# Vadim 2026-09-29: 30 for every campaign, raised the same day to 50 ("підніми ліміти до 50"). A hypothesis without
+# `cap_per_group` gets this cap instead of none; a campaign can still set its own.
+DEFAULT_CAP_PER_GROUP = 50
+
+
+def cap_of(cdir: Path) -> int:
     fm = hypothesis_of(cdir)[1]
     v = str(fm.get("cap_per_group") or "").strip()
-    return int(v) if v.isdigit() else None
+    return int(v) if v.isdigit() else DEFAULT_CAP_PER_GROUP
 
 
 def _print_distribution(cdir: Path, send: list[dict]) -> bool:
@@ -1048,8 +1053,7 @@ def _print_distribution(cdir: Path, send: list[dict]) -> bool:
     by = Counter(group_of(r, gmap) for r in send)
     total = max(len(send), 1)
     over = False
-    print(f"  to send {len(send)}" + (f" · cap {cap} per group" if cap else
-                                       " · no cap_per_group in the hypothesis frontmatter"))
+    print(f"  to send {len(send)} · cap {cap} per group")
     for g, n in by.most_common(12):
         mark = ""
         if cap and n > cap:

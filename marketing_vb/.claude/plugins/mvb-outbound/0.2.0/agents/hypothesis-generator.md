@@ -58,7 +58,7 @@ market: [рынок профиля]
 created: YYYY-MM-DD
 status: draft
 use_case: fx-digital-fitness        # имя файла из brand-assets/product-info/use-cases/, без .md
-cap_per_group: 5                    # инвайтов на компанию или группу; меняет только Вадим
+cap_per_group: 50                   # инвайтов на компанию или группу; дефолт 50 для всех кампаний (Вадим 2026-09-29), меняет только Вадим
 banned_terms: []                    # что нельзя называть в копии ЭТОЙ кампании, кроме клиентов и конкурентов
 ---
 
