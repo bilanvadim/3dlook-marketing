@@ -29,7 +29,7 @@ builds_on: 2026-09-25-fitxpress-seo-plan.md, data/ahrefs-findings.md, data/gsc-f
    - там, де попиту немає (GLP-1, bariatric, clinical trials), беремо GEO-фрази. Позиції на них утримати легко, бо конкурентів майже немає, а вимірюємо успіх видимістю в HubSpot AEO, а не трафіком.
 2. **Трафік дають статті, лендінги конвертують.** Великі інформаційні запити стоять у колонці «Не для цієї сторінки» і належать хабам. Щоб лендінг не з'їв статтю і навпаки, стаття посилається на лендінг анкором з його головного ключа, а лендінг на статтю — її темою.
 3. **Дві знахідки, яких немає в контент-плані:**
-   - `biometric screening`: 8 600 на місяць при KD 3. Це тема для Hub 5 і, можливо, головний ключ wellness-лендінгу, але потрібне твоє рішення щодо позиціювання (див. розділ 6);
+   - `biometric screening`: 8 600 на місяць при KD 3. **Прийнято 2026-09-29:** це кут wellness-лендінгу, а головний інформаційний запит забирає нова стаття в Hub 5 (рядок F в `2026-09-27-content-plan-rows-for-assel.md`);
    - `occupational health software`: US 350 / KD 3 / $15 і UK 200 / KD 0. Найсильніший комерційний ключ серед усіх вертикалей.
 4. **Сторінка BMI verification** — не use case, а фіча, тому її ключі не мають вертикального модифікатора. Ця сторінка несе і сценарій UK-аптек, бо окремого хабу для аптек у плані немає. UK-кластер «BMI for Mounjaro» (найцінніший, KD 0) належить гайду для аптек і чекає на медичного рецензента. Сторінка фічі його не таргетить.
 
@@ -43,7 +43,7 @@ builds_on: 2026-09-25-fitxpress-seo-plan.md, data/ahrefs-findings.md, data/gsc-f
 | 3 | `/fitxpress/for-telehealth/` | remote patient monitoring for weight loss | 100 / — | 1 | топ-5 |
 | 4 | `/fitxpress/for-glp-1-programs/` | body composition tracking for GLP-1 programs | — | — | GEO: AEO-промпт 49% → 70%+ |
 | 5 | `/fitxpress/for-insurance-underwriting/` | accelerated underwriting (+3 варіанти) | ~340 сумарно | 0–1 | топ-5 |
-| 6 | `/fitxpress/for-wellness-programs/` | at home biometric screening (**умовно**) | 80 / — | — | чекає рішення |
+| 6 | `/fitxpress/for-wellness-programs/` | at home / remote biometric screening | 80 / — | — | топ-5 (кут прийнято 2026-09-29) |
 | 7 | `/fitxpress/for-bariatric-clinics/` | bariatric pre-authorization documentation | — | — | GEO: промпти 0% і 6% → вгору |
 | 8 | `/fitxpress/for-clinical-trials/` | remote anthropometric measurement for clinical trials (+ кластер «DCT platform» ~410) | — | 2–12 | топ-10 на кластері DCT |
 | 9 | `/fitxpress/for-occupational-health/` | occupational health software | 350 / 200 | 3 / 0 | топ-5 |
@@ -352,14 +352,14 @@ URL уже правильний, лагодиться лише breadcrumb. За�
 
 ## 6. Hub 5 Wellness → `/fitxpress/for-wellness-programs/`
 
-**Знахідка:** «biometric screening» має 8 600 на місяць при KD 3, і в контент-плані цієї теми немає зовсім. Biometric screening у wellness-програмах роботодавців — це BMI, талія, тиск, кров. FitXpress закриває частину з вимірами тіла, тиск і аналізи крові — ні. **Потрібне твоє «так» на такий кут.** Якщо так, то: лендінг бере комерційні модифікатори («at home», «companies», «onsite» як альтернатива), а головний інформаційний запит забирає нова стаття в Hub 5. Якщо ні, головним лишається GEO-фраза «body scanning for wellness apps».
+**Кут — remote biometric screening (Вадим, 2026-09-29).** «Biometric screening» має 8 600 на місяць при KD 3, і в контент-плані цієї теми не було. Biometric screening у wellness-програмах роботодавців — це BMI, талія, тиск, кров. FitXpress закриває частину з вимірами тіла: талію міряє з двох фото, BMI рахує зі зросту й ваги (вагу звіряє Smart Scales, бета), склад тіла дає як оцінки. Тиск і аналізи крові не закриває, і сторінка каже це прямо. Лендінг бере комерційні модифікатори («at home», «remote», «companies», «onsite» як альтернатива). Головний інформаційний запит забирає нова стаття в Hub 5 (рядок F у списку для Ассель). Межі та заборони — правило 7 у `landing-map.md`: жодних заяв про комплаєнс з ADA, GINA, EEOC чи HIPAA щодо wellness-програм, жодної інтерпретації результатів.
 
 
 **Головний ключ** (title, H1, перший абзац, meta)
 
 | Ключ | US | UK | Примітка |
 |---|---|---|---|
-| at home biometric screening | 80 | 0 | **Умовно, чекає рішення.** Точна формула: «remote body measurements for biometric screening» |
+| at home biometric screening | 80 | 0 | Прийнято 2026-09-29. Формула в title/H1: «remote biometric screening» + «body measurements» |
 
 **Вторинні** (H2, meta description, alt, анкори з хабу)
 
@@ -383,7 +383,7 @@ URL уже правильний, лагодиться лише breadcrumb. За�
 
 | Ключ | US | UK | Примітка |
 |---|---|---|---|
-| biometric screening | 8 600 · KD 3 | 150 · KD 7 | 8,6K / KD 3. **Нова стаття в Hub 5**, у плані її немає |
+| biometric screening | 8 600 · KD 3 | 150 · KD 7 | 8,6K / KD 3. Нова стаття в Hub 5 (рядок F для Ассель) |
 | what is a biometric screening | 2 500 · KD 3 | — | Та сама стаття |
 | corporate wellness programs | 2 600 · KD 0 | 500 · KD 4 | Хаб `ai-body-data-wellness-platforms` |
 | wellness incentives | 700 · KD 0 | 150 · KD 0 | Стаття `wellness-rewards-verification-…` |
@@ -532,7 +532,7 @@ FitXpress тут не DCT-платформа, а модуль вимірюван
 ---
 ## Що потребує рішення
 
-1. **Wellness і biometric screening.** Чи кажемо, що FitXpress закриває частину biometric screening з вимірами тіла (BMI, талія, інші виміри; тиск і кров — ні)? Якщо так: лендінг бере «at home / remote biometric screening», а Ассель заводить у Hub 5 рядок статті «Remote biometric screening: what body measurements can be captured at home» під запит 8,6K / KD 3. Якщо ні: головний ключ лендінгу — GEO-фраза «body scanning for wellness apps».
+1. ~~**Wellness і biometric screening.**~~ **Вирішено 2026-09-29: беремо.** Лендінг бере «remote / at home biometric screening», а Ассель заводить у Hub 5 статтю (рядок F у `2026-09-27-content-plan-rows-for-assel.md`).
 2. **Occupational health software.** Беремо цей ключ, хоча FitXpress — модуль intake, а не повна OH-система? Шукають його наші покупці (OH-провайдери), але у видачі будуть OH-EHR. Я б брав, формулюючи «adds remote intake to your occupational health software».
 3. **Slug-и.** Усі URL у таблиці — пропозиції під ієрархію `/fitxpress/for-{vertical}/`. Для сторінки фічі пропоную `/fitxpress/bmi-verification/` (не `for-`). У драфті страхування URL ще старий: `/for-insurance-underwriting/`.
 4. **Нові рядки контент-плану.** Крім biometric screening, це стаття про втрату м'язів на GLP-1 (рядок 3.x2 уже є у списку для Ассель від 09-27). Вона забирає кластер ~5K у US (ozempic, tirzepatide, mounjaro muscle loss) і веде на GLP-1-лендінг.

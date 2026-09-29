@@ -9,6 +9,12 @@ Wellness budgets under pressure to prove outcomes. Programs need simple remote v
 ## What FitXpress is here
 2-photo scans for baseline + check-ins. Captures objective body measurements + BMI/body composition (structured, time-stamped).
 
+## Biometric screening angle (Vadim, 2026-09-29)
+The FX wellness landing (`/fitxpress/for-wellness-programs/`) is built around **remote biometric screening**. Demand: "biometric screening" gets 8,600 US searches a month at KD 3 (Ahrefs, 2026-09-29); the keyword map is in `workspace/research/seo-fitxpress-2026-09/2026-09-29-landing-keywords.md`.
+- **What FitXpress covers:** the body-measurement part of a screening. Waist circumference (and 80+ other body measurements) from two photos; BMI calculated from height and weight, with Smart Scales (beta) cross-checking a self-reported weight; body composition as estimates (body fat %, lean mass). Timestamped, structured records for the program.
+- **What it does not cover, and the copy must say so:** blood pressure, cholesterol, glucose, A1c or any blood test. Programs that need those keep a lab or onsite component; FitXpress replaces the in-person measurement step, not the screening.
+- **Boundaries:** no ADA, GINA, EEOC or HIPAA wellness-program compliance claims (incentive design is the employer's decision, made with counsel); no result interpretation or health-risk assignment; "FitXpress is not a medical device."; no per-measurement accuracy figures (use `accuracy-formulations.md`). Rules: `brand-assets/content-strategy/landing-map.md` rule 7.
+
 ## Hero message
 Verify wellness progress remotely to reduce disputes, boost participation, and improve program reporting.
 

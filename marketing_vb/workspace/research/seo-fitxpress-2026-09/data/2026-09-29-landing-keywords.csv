@@ -109,7 +109,7 @@ landing,role,keyword,us_volume,us_kd,us_cpc_usd,uk_volume,uk_kd,note
 /fitxpress/for-insurance-underwriting/,Не тут,underwriting automation,350,12,0.6,60,,Нікому: guardrail «no automated underwriting»
 /fitxpress/for-insurance-underwriting/,Не тут,automated underwriting life insurance,100,,0.0,0,,"Нікому, та сама причина"
 /fitxpress/for-insurance-underwriting/,Не тут,no medical exam life insurance,3000,13,15.0,300,6,"Споживчий продукт, нікому"
-/fitxpress/for-wellness-programs/,Головний,at home biometric screening,80,,1.8,0,,"**Умовно, чекає рішення.** Точна формула: «remote body measurements for biometric screening»"
+/fitxpress/for-wellness-programs/,Головний,at home biometric screening,80,,1.8,0,,Прийнято 2026-09-29. Формула в title/H1: «remote biometric screening» + «body measurements»
 /fitxpress/for-wellness-programs/,Вторинний,biometric screening companies,90,3,3.5,0,,
 /fitxpress/for-wellness-programs/,Вторинний,onsite biometric screening,150,4,4.0,0,,Кут: віддалена альтернатива для частини з вимірами
 /fitxpress/for-wellness-programs/,Вторинний,company biometric screening,100,3,3.5,,,
@@ -120,7 +120,7 @@ landing,role,keyword,us_volume,us_kd,us_cpc_usd,uk_volume,uk_kd,note
 /fitxpress/for-wellness-programs/,GEO / FAQ,Best mobile body scanning software for fitness and wellness platforms?,,,,,,"AEO, 53%"
 /fitxpress/for-wellness-programs/,GEO / FAQ,Which body scanning tools are suitable for health and wellness apps that need HIPAA or GDPR controls?,,,,,,"AEO, 78%. Відповідь без «HIPAA compliant»: лише формулювання з trust-FAQ"
 /fitxpress/for-wellness-programs/,GEO / FAQ,full body scan for employees wellness program,,,,,,"GSC, стаття rewards, поз. 12,8"
-/fitxpress/for-wellness-programs/,Не тут,biometric screening,8600,3,2.0,150,7,"8,6K / KD 3. **Нова стаття в Hub 5**, у плані її немає"
+/fitxpress/for-wellness-programs/,Не тут,biometric screening,8600,3,2.0,150,7,"8,6K / KD 3. Нова стаття в Hub 5 (рядок F для Ассель)"
 /fitxpress/for-wellness-programs/,Не тут,what is a biometric screening,2500,3,2.0,,,Та сама стаття
 /fitxpress/for-wellness-programs/,Не тут,corporate wellness programs,2600,0,0.6,500,4,Хаб `ai-body-data-wellness-platforms`
 /fitxpress/for-wellness-programs/,Не тут,wellness incentives,700,0,2.0,150,0,Стаття `wellness-rewards-verification-…`

@@ -82,6 +82,16 @@ HubSpot показал, какие статьи раньше приводили 
 
 ---
 
+## F. Hub 5 — Wellness: biometric screening (добавлено 2026-09-29, решение Вадима)
+
+«Biometric screening» — 8 600 поисков в месяц в US при KD 3, и в плане этой темы нет совсем. Это чек-ап сотрудника в wellness-программе работодателя или страховщика: BMI, талия, давление, анализы крови. FitXpress закрывает часть с измерениями тела, поэтому Вадим решил: **лендинг wellness строится вокруг remote biometric screening**, а информационный запрос забирает статья ниже.
+
+| # | Cluster | Article | Intent | Action | Pri | Спрос / KD | Existing URL | Notes / guardrail |
+|---|---|---|---|---|---|---|---|---|
+| 5.x1 | Biometric screening | Biometric Screening: What It Measures, and Which Measurements Can Be Captured Remotely | TOFU / MOFU | Create net-new supporting article | **P1** | biometric screening 8 600 / KD 3; what is a biometric screening 2 500 / KD 3; what is biometric screening 1 800 / KD 3; biometric screening meaning 500; biometric health screening 350; what is included in a biometric screening 90. UK почти нет (150): это US-тема | — | **Статья владеет информационным запросом**, лендинг `/fitxpress/for-wellness-programs/` — коммерческими («remote / at home biometric screening», «biometric screening companies», «onsite biometric screening» как альтернатива). Ссылка на лендинг — в первых 30% текста (правило `landing-map.md`). **Граница, дословно для писателя:** FitXpress закрывает измерения тела. Талия измеряется по двум фото, BMI считается из роста и веса (вес сверяет Smart Scales, бета), состав тела — оценки. Давление, холестерин, глюкоза и другие анализы крови — **нет**, и это сказано прямо. Никаких заявлений о соответствии ADA, GINA, EEOC или HIPAA для wellness-программ: дизайн стимулов определяет работодатель со своими юристами. Результаты не интерпретируем и риск здоровья не присваиваем. «FitXpress is not a medical device.» Цифры точности по отдельным измерениям не публикуем — только `accuracy-formulations.md`. Ссылки: хаб `ai-body-data-wellness-platforms`, `wellness-rewards-verification-…`, trust-FAQ. **Не пересекается** с P0-листиклом «Top Mobile Body Scanning Software for Wellness Apps» (там выбор вендора для приложений, здесь что такое скрининг и что из него можно снять удалённо) |
+
+---
+
 ## E. Что не добавлять (решение и почему)
 
 - **«Weight loss clinic marketing»** (`top-10-weight-loss-clinic-marketing-tips`, 12K показов) — оставить как есть. Ищут агентства, а не клиники-покупатели. Контакты и сделки ноль.
