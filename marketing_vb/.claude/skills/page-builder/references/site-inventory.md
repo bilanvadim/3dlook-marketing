@@ -113,14 +113,16 @@ is banned. Both pages predate the guardrails. Treat them as rewrite candidates, 
 and never copy their phrasing into a new page.
 
 **5. `/for-bmi-verification/` is the outlier.** ~659 words, no FAQ, no case cards, no customer
-quote — roughly half of every other vertical page on the site. It is the first rewrite candidate.
+quote — roughly half of every other vertical page on the site. It is the first rewrite candidate, for
+the missing FAQ and schema: its length is close to the 1,100-1,300-word budget set on 2026-09-30.
 
 **6. The benchmark to build against is already on the site.**
 `/structured-body-data-for-telehealth-digital-health-programs/` (published 2026-07-16, modified
 2026-07-24) is the one vertical page written to the current standard: a scoped-accuracy H2
 ("repeatability over a single number"), a three-way comparison block ("FitXpress vs. in-clinic scans
 vs. consumer photo apps"), a 13-question FAQ with FAQPage schema, Service schema carrying
-`audienceType` and `areaServed`, and no banned words in its headings. Read it before drafting. Its one
+`audienceType` and `areaServed`, and no banned words in its headings. Read it before drafting, for its
+schema and claims discipline: its length is no longer the target (2026-09-30). Its one
 flaw is the slug: it sits at root with a non-pattern address. It moves under `/fitxpress/for-…/` with a 301 when rebuilt.
 
 ---

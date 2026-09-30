@@ -51,11 +51,41 @@ missing case (an approved reference call, a named pilot, an anonymised deploymen
 
 ---
 
-## Structure — 17 slots
+## Length and order: short and commercial (Vadim, 2026-09-30)
 
-**1. Breadcrumbs** — two levels for FitXpress (`Home → [Vertical]`, since the homepage is the parent),
-three for Mobile Tailor (`Home → Mobile Tailor → [Vertical]`). Match what the live pages already
-declare; do not invent a middle level that resolves to a redirect.
+A use-case landing converts, and the articles teach. Vadim, 2026-09-30: use-case landings are shorter
+and more commercial than the pages built before, and the depth lives in the hub article, the accuracy
+framework and the trust FAQ, which the page links to.
+
+- **Budget: 1,100 to 1,300 words of visible copy**, tables and FAQ included, navigation and schema
+  excluded. Above 1,400 the page is doing an article's job.
+- **One paragraph, then a link.** Anything that needs more than one paragraph of explanation belongs in
+  an article. The page keeps one line and links to it.
+- **A call to action on every second screen:** the hero, after the "what you get" block, after the pilot
+  block, and the form.
+- **Shape benchmark:** `workspace/pages/for-insurance-underwriting/page-v2-short.md`. The telehealth page
+  stays the benchmark for schema and claims discipline, not for length.
+
+| # | Block, in page order | Words | Slots |
+|---|---|---|---|
+| 1 | Hero: H1 with the primary keyword, 2-3 sentences (outcome and time), "Book a demo" to `#demo` and an anchor to block 4, a four-fact strip | ~90 | 1, 2, 3, 15 |
+| 2 | The problem in three numbers from named industry sources, one line, a link to the hub article | ~90 | 4, 5 |
+| 3 | How it works in three steps, in the vertical's own systems; the recommended setup in one line; a link to the feature page | ~130 | 7, 12 |
+| 4 | What you get: a five-row table, then "Get a sample" to `#demo` | ~150 | 6 |
+| 5 | Compared with how it is done today: a five-row table, and one line on where the old method still fits | ~120 | 5 |
+| 6 | Accuracy and data handling on one screen: three figures, one method sentence, five data lines, links to the accuracy framework and the trust FAQ | ~180 | 8, 9 |
+| 7 | Pilot and price: three steps, what the team walks away with, the entry price and `/pricing/`, a demo button | ~150 | 10, 14 |
+| 8 | FAQ: 5-6 questions, GEO phrases from the keyword map verbatim as H3, the answer in the first sentence | ~280 | 13 |
+| 9 | The shared form at `#demo`, a soft exit to the hub article, then keep reading | ~50 | 15, 16 |
+
+The order and the budget decide the page. The slots below say what each ingredient must contain.
+
+## Slots: the 17 ingredients
+
+**1. Breadcrumbs** — three levels for both products: `Home → FitXpress → [Vertical]` and
+`Home → Mobile Tailor → [Vertical]` (hierarchy of 2026-09-27). `/fitxpress/` ships with the use-case
+release (`docs/page-pipeline.md`); until it is live, do not link a middle level that resolves to a
+redirect.
 
 **2. H1** — `[Outcome in the vertical's terms] for [vertical]`. Not "AI-powered precision" but
 "Verified weight and BMI capture for GLP-1 programs". One H1. Primary query in it and in the first
@@ -63,44 +93,51 @@ declare; do not invent a middle level that resolves to a redirect.
 
 **3. Hero + a vertical proof point** — one sentence on what the product does here, plus a number from
 **this** vertical: scans delivered for a named customer in this market, or the KPI the use-case file
-names. The company-wide 112,100 scans figure does not work here; a vertical figure does.
+names. A company-wide scale figure appears only as "100+ clients", the one public number everywhere
+(Vadim, 2026-09-30). "112,100 scans" and "67 clients" never appear on a page. An approved vertical
+figure beats both.
 
 **4. Vertical context — the slot the page exists for** — 3–5 specifics only someone who has worked in
 this market knows: the regulators and frameworks that actually come up (HIPAA in US health, GDPR in
 the EU, MHRA / CQC / NHS in the UK, FDA / ICH / GCP in trials), who signs off and who blocks,
 the procurement cycle, the units results are measured in, the export formats, the seasonality.
-Source: the use-case file plus the BD owner's answers.
+Source: the use-case file plus the BD owner's answers. On the short page these facts are not an essay
+of their own: they surface in the problem numbers, the systems named in the three steps (PAS, EHR,
+benefits platform) and the FAQ.
 
 **5. Pains of this vertical** — from the use-case file's "The pain we remove" and `audience.md`'s
 segment hook, in the buyer's phrasing. Then honour that segment's **"what NOT to say"** list.
 
 **6. What the product is here + the boundary** — scope in the vertical's own words: what is captured,
-what is returned, what is documented. Then one clear boundary sentence: *"FitXpress is not positioned
-as a medical device."* One negative, stated once — guardrail #6 for the framing, M2 for not chaining a
-second negation onto it.
+what is returned, what is documented. Then one clear boundary sentence: *"FitXpress is not a medical
+device."* One negative, stated once — guardrail #6 for the framing, M2 for not chaining a second
+negation onto it. "Positioned as" is banned (terminology guardrail §2.10, since 2026-09-11).
 
-**7. Where the workflow differs** — do not restate the whole flow. The 2–3 steps that run differently
-here and why: consent capture, retake logic, who reviews a flagged scan, how the record is filed.
+**7. How it works, three steps** — do not restate the whole product flow. Three steps as they run in
+this vertical, in its own systems: what the person does, what FitXpress returns, where the result goes
+and who acts on it (consent capture, retake logic, who reviews a flagged scan, how the record is filed).
 
-**8. Compliance and data governance** — for regulated verticals this is the deciding block, not a
-footnote: HIPAA support under a BAA, GDPR roles in a DPA, encryption (TLS in transit, SSE-S3 at
-rest), hosting (AWS US-West-2 / US-East-1), photo retention (immediate or within 30 days per customer
-policy, retained photos blurred), outputs stored and deletable by scan ID, records tied to random IDs,
-consent handling, audit trails, and a link to the
-[trust FAQ](https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/) for the
-full answers. Source: `compliance.md` (rebuilt 2026-09-18 from that FAQ) and `CLAUDE.md` §12. Never
-"HIPAA compliant", "SOC 2 certified" or "no personal identifiers" (detector category
-`compliance_status`). Every control is stated
-with its limit — controls reduce risk, they do not remove the need for capture instructions and
-deployment thresholds (guardrail #5).
+**8. Data handling: five lines and a link** — for regulated verticals this still decides deals, so it
+sits on the proof screen next to the accuracy figures, but short: photos (deleted after processing or
+within 30 days per customer policy, retained photos blurred, faces obfuscated at capture), scan records
+on anonymized, randomly generated IDs, HIPAA support under an executed BAA and the canonical GDPR role
+sentence, no training on production data without documented authorization, and the boundary. Hosting,
+encryption detail, deletion by scan ID, SOC 2, FDA and consent go to one link to the
+[trust FAQ](https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/). Source:
+`compliance.md` (rebuilt 2026-09-18 from that FAQ) and `CLAUDE.md` §12. Never "HIPAA compliant",
+"SOC 2 certified" or "no personal identifiers" (detector category `compliance_status`), and never a
+control presented as removing risk (guardrail #5).
 
-**9. Accuracy and reliability, scoped** — open by reframing "how accurate is it?" into **"accurate
-enough for which decision?"**, then name the four conditions that make an accuracy claim mean
-anything: reference method, measurement protocol, population tested, intended workflow. Figures from
-`accuracy-formulations.md` for the wording, `proof-points.md` for the numbers behind it — 96-97% vs expert manual measurement, typical absolute error 1.5-2.0 cm, repeatability written as
-`< 1 cm`, weight estimation ±3.5%. No bare ">95%" (guardrail #4): pair a qualitative claim with one
-concrete sub-figure and "detailed methodology available under NDA". Never the words "independent",
-"validated" or "third-party" (guardrail #3).
+**9. Accuracy, scoped in three figures and a link** — three oversized figures, each with its
+reference: 96-97% vs expert manual measurement with typical absolute error 1.5-2.0 cm, repeatability
+written as `< 1 cm`, and weight estimation ±3.5% where weight matters to the vertical. Then one sentence
+on the method and its limit (internal validation; peer review and third-party clinical certification
+are not part of that record; methodology under NDA) and a link to the
+[accuracy framework](https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/), which carries the
+"accurate enough for which decision?" reframe and the four conditions (reference method, protocol,
+population, workflow). Wording from `accuracy-formulations.md`, numbers from `proof-points.md`. No bare
+">95%" (guardrail #4). "Independent", "validated" and "third-party" never appear as claims
+(guardrail #3).
 
 **10. Cases from this vertical only** — 2 cards minimum, each with a number from
 `case-studies/`, linked to `/case-studies/`. A case from an adjacent vertical breaks the page's whole
@@ -112,17 +149,22 @@ approved quote → the slot is dropped and recorded. Never an invented name, rol
 **12. Integration, formats and support** — API plus web and mobile SDKs, web widget, CSV export, 3D
 model export, what it plugs into in this vertical (EHR / patient portal, PAS, OMS, pattern-making,
 benefits platform), white-label options, implementation support. Source: `tech-spec.md` and the
-published tier features. The signal is "we are already inside your environment".
+published tier features. The signal is "we are already inside your environment". On the short page
+this folds into the three steps and the record table: API plus web and mobile SDKs, and the system the
+result lands in. Formats and white-label detail go to the FAQ only when the vertical asks for them.
 
 **13. Vertical FAQ** — the questions asked here and nowhere else: regulatory, licensing, data
 residency, retention, who owns the data, what happens on a failed scan, what a pilot looks like.
 Source: `faq.md` plus the BD owner's real objections. General product questions stay on the product
-page. Ships with FAQPage schema, modelled on the 13-question block on
-`/structured-body-data-for-telehealth-digital-health-programs/` — the only page on the site that has it.
+page. **5-6 questions.** The GEO phrases from the landing's keyword map go in verbatim as H3, and each
+answer opens with the answer. Ships with FAQPage schema, modelled on the markup of
+`/structured-body-data-for-telehealth-digital-health-programs/` (its schema, not its 13-question length).
 
 **14. Price signal** — name the entry tier and link to `/pricing/` (FitXpress from $1,000/mo,
-Mobile Tailor from $499/mo as published on 2026-08-23 — re-check before shipping). Mention the trial
-where it applies. Never the internal per-request rates from `pricing.md`.
+Mobile Tailor from $499/mo as published on 2026-08-23 — re-check before shipping). FitXpress pages
+also say **"no integration fee"** (Vadim, 2026-09-30: true, and an advantage over competitors). No
+public trial: the action is always "Book a demo" (Vadim, 2026-09-27). Never the internal per-request
+rates from `pricing.md`.
 
 **15. Primary action + form** — one action, in the site's own language ("Book a demo" / "Talk to
 sales" / "Start a trial"), visible without scrolling and repeated at the end. Minimal fields, visible
@@ -136,6 +178,10 @@ anchor `id="demo"`, because hub articles link to `/fitxpress/for-{vertical}/#dem
 "Book a demo" button. Do not spec new fields or a new form for a vertical; a field every vertical
 needs goes into the shared form. Source: `workspace/research/seo-fitxpress-2026-09/2026-09-27-tz-tracking-hubspot-ga4.md`
 (A1, B1, B2.5).
+
+**Shared-form field added 2026-09-30 (Vadim):** optional "Expected monthly scan volume" (under 500 ·
+500-1,000 · 1,000-5,000 · over 5,000 · not sure yet). It started as a page-specific field in Nika's
+insurance draft; it qualifies the lead in every vertical, so it lives in the shared form (tracking TZ B1).
 
 **16. Soft alternative + sibling verticals** — for buyers not ready to talk: the accuracy framework
 article, the vertical's hub article, the ebook, a vertical checklist. Then cards for two sibling
@@ -190,7 +236,9 @@ principle #11. Medical, clinical or regulatory framing goes to Whitney before it
    Tailor — so nothing gets copied from it, and
    `/structured-body-data-for-telehealth-digital-health-programs/`, which is the in-house benchmark —
    scoped accuracy, a real comparison block, a 13-question FAQ with schema, no banned words in the
-   headings. Match its depth (~1,600 words), not `/for-bmi-verification/`'s ~659.
+   headings. Take its schema and its claims discipline, not its length: the budget is 1,100 to 1,300
+   words ("Length and order" above), and the shape benchmark is
+   `workspace/pages/for-insurance-underwriting/page-v2-short.md`.
 2. **Read the use-case file, `audience.md` and the segment's "what NOT to say"** before the first
    sentence. A vertical page written without them is a product page with a new headline.
 3. **Check the 60% rule before handover** — count the paragraphs with no equivalent on the parent.
@@ -205,13 +253,15 @@ principle #11. Medical, clinical or regulatory framing goes to Whitney before it
    BMI and BMR are calculated metrics and body composition is an estimate (§2.13).
    Name the vertical's actor: "the pharmacy", "the clinic", "the employer", "the insurer". A vertical
    page always knows who acts, so a generic "organization" is a miss here (§2.14, synced 2026-09-28).
-6. **Scope accuracy, never brag about it.** The reframe in slot 9 is mandatory. Leading with "most
-   accurate" or "best-in-class" is an anti-positioning violation and a hard fail at the judge.
+6. **Scope accuracy, never brag about it.** Every figure carries its reference and its limit, and the
+   page links to the accuracy framework for the reframe (slot 9). Leading with "most accurate" or
+   "best-in-class" is an anti-positioning violation and a hard fail at the judge.
 7. **State the boundary once**, directly: "FitXpress is not a medical device." Do not chain a
    second negation onto it (M2), and do not write "positioned as" (terminology guardrail §2.10).
 8. **Only your own cases from this vertical.** Fewer than two means G-I should have stopped the page.
 9. **Do not restate the whole workflow.** Differences only.
-10. **FAQ stays narrow.** General questions belong on the product page.
+10. **FAQ stays narrow: 5-6 questions.** General questions belong on the product page, long answers
+    in the articles.
 11. **Links up, sideways, to the hub article and to conversion** — all four directions, every page.
 12. **Mark visuals:** `[HERO]`, `[CONTEXT]`, `[COMPLIANCE]`, `[WORKFLOW]`, `[ACCURACY]`,
     `[CASE CARD]`, `[QUOTE]`, `[INTEGRATION]`.
@@ -249,9 +299,9 @@ internal links in place.
 |---|---|
 | `[HERO]` | First screen: H1, one sentence, the vertical's number as an oversized numeral, one action. Navy `#050F40` with the radial glow, or white |
 | `[CONTEXT]` | Vertical realities: stakeholder-and-cycle diagram or a regulator chip row, 15px radius chips |
-| `[COMPLIANCE]` | Governance block — encryption, retention, consent, audit trail. Cards at 20px radius |
+| `[COMPLIANCE]` | Five short data-handling lines beside the accuracy figures, one screen. No padlock icons |
 | `[WORKFLOW]` | The diverging steps highlighted against the base flow, readable on mobile |
-| `[ACCURACY]` | The four conditions plus the figures, as a table or numeral row. The number is the hero |
+| `[ACCURACY]` | Three oversized numerals, each with its reference underneath. The number is the hero |
 | `[CASE CARD]` | Vertical case card: customer, number, link. 20px radius |
 | `[QUOTE]` | Pull quote with photo or logo, only where the use is approved |
 | `[INTEGRATION]` | API / SDK / widget / export as a diagram, not an icon grid |
@@ -279,12 +329,13 @@ their own URL and are never a copy of the vertical page.
 - [ ] Parent exists, breadcrumbs resolve, canonical to self
 - [ ] Vertical context carries ≥3 facts absent from the parent page
 - [ ] Regulators and frameworks named precisely; every acronym expanded at first use
-- [ ] Accuracy block scoped with the four conditions; no bare percentages; no reserved words
+- [ ] Visible copy 1,100 to 1,300 words; FAQ 5-6 questions; a call to action on every second screen
+- [ ] Accuracy figures carry their reference and limit, plus a link to the accuracy framework; no bare percentages; no reserved words
 - [ ] Boundary sentence present, stated once, in the approved wording
 - [ ] 2+ cases from this vertical with numbers from `case-studies/`
 - [ ] Every figure traced to `proof-points.md` and identical everywhere it appears
-- [ ] Compliance block with limits stated, not just capabilities
-- [ ] Price signal plus a link to `/pricing/`; no internal rates, no MT ARRs
+- [ ] Data-handling lines worded from `compliance.md`, plus the trust-FAQ link
+- [ ] Price signal ("no integration fee" on FitXpress) plus a link to `/pricing/`; no public trial, no internal rates, no MT ARRs
 - [ ] Vertical FAQ narrow, plus FAQPage schema that validates
 - [ ] Links up, sideways to two siblings, to the hub article, to conversion
 - [ ] One primary action; analytics events verified manually

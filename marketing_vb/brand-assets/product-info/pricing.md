@@ -13,6 +13,10 @@
 
 Custom pricing available above 20K/mo.
 
+**No integration fee** (Vadim, 2026-09-30). Public: say it on pages, in outbound and in posts. It is an
+advantage over competitors. Page wording: "Plans start at $1,000 a month for up to 500 scans, with no
+integration fee."
+
 ## Free trial
 
 - 1 month free

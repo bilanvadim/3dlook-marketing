@@ -71,6 +71,7 @@ A: Custom enterprise contracts. Pricing reflects ARR ranges $50K-$300K depending
 
 **Q: Do you charge for failed scans?**
 A: Failed-due-to-pose scans are not billable. Successful scans are billed, regardless of whether end user weight matches Smart Scales output.
+*Sales answer only, not for website pages (Vadim 2026-09-30).*
 
 ## Competitive
 

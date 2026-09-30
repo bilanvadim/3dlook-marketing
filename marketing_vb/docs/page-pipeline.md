@@ -28,11 +28,16 @@ settled. G-T blocks publishing on technical grounds. G-J is a **blind judge in a
 100-point page scorecard, threshold 85, maximum 3 rounds, and publishing below 85 without flagging it
 is forbidden. `quality-controller` does not substitute for G-J — it is neither blind nor page-shaped.
 
-**The benchmark:** `/structured-body-data-for-telehealth-digital-health-programs/` (July 2026) is the
-one vertical page already built to the current standard — scoped accuracy, a real comparison block, a
-13-question FAQ with FAQPage schema, Service schema with `audienceType` + `areaServed`, ~1,600 words,
-no banned words in the headings. The Kit tells writers to match it. `/for-bmi-verification/` (~659
-words, no FAQ, no cases) is the first rewrite candidate.
+**Short and commercial (Vadim, 2026-09-30).** Use-case landings convert and the articles teach:
+1,100-1,300 words of visible copy, 5-6 FAQ, one paragraph then a link for anything deeper, a call to
+action on every second screen, "no integration fee" in the price line. Page order and word budget: the
+Kit's "Length and order" section. Shape benchmark: `workspace/pages/for-insurance-underwriting/page-v2-short.md`.
+
+**The schema benchmark:** `/structured-body-data-for-telehealth-digital-health-programs/` (July 2026)
+still sets the standard for FAQPage and Service schema (`audienceType` + `areaServed`), claims
+discipline and clean headings. Its ~1,600 words and 13 questions are no longer the target.
+`/for-bmi-verification/` (~659 words, no FAQ, no schema) is the first rewrite candidate, for the missing
+FAQ and schema rather than its length.
 
 **One hierarchy for both products (Vadim, 2026-09-27; replaces the 2026-08-23 "homepage is the
 FitXpress parent" rule):** `/fitxpress/` is the FitXpress parent with verticals at
@@ -60,12 +65,13 @@ dropdown. Every new parent page carries that block.
 **Non-negotiables inside the skill:** every number from `proof-points.md`; client names and metrics
 only from `case-studies/`; Mobile Tailor customer ARRs never published; the 11 editorial guardrails
 along with M1/M2/M3 run as their own pass, not as a habit while drafting; `terminology-guardrails.md`
-Part 1 and Part 2 as Layer 2 of the humanisation pass; accuracy always scoped through
-"accurate enough for which decision?" and its four conditions; medical framing stated directly
+Part 1 and Part 2 as Layer 2 of the humanisation pass; accuracy figures always carried with their reference and limit, and a link to the accuracy framework,
+which holds the "accurate enough for which decision?" reframe and its four conditions; medical framing stated directly
 (**"FitXpress is not a medical device."** — since 2026-09-11; "positioned as" is banned for every product, scope and regulatory statement);
 IEEE only in the two approved sentences from `proof-points.md`, with no standalone IEEE logo in an award
 or certification strip, and "80+ body measurements", never "80+ body metrics" (terminology guardrails
 §2.11 and §2.13, synced 2026-09-14);
-`DESIGN.md` decides every token; a price signal and a link to `/pricing/` on every commercial page.
+`DESIGN.md` decides every token; a price signal and a link to `/pricing/` on every commercial page
+(FitXpress: from $1,000/mo, no integration fee, no public trial).
 
 **Forms and tracking on FitXpress pages (Vadim, 2026-09-29).** Articles bring the traffic and link to their vertical's landing; the landing converts. Every FX page embeds one shared HubSpot form `FX | LP | Demo` (anchor `#demo`), and GTM fills the hidden `fx_vertical` from the page path. No per-page forms. Hub articles link to the landing above 30% depth and from "Book a demo" to `…/#demo`; GA4 tracks that hop as `article_cta_click`. Spec: `workspace/research/seo-fitxpress-2026-09/2026-09-27-tz-tracking-hubspot-ga4.md`.

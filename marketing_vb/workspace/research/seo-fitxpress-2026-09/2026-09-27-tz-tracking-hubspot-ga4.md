@@ -23,6 +23,10 @@ updated: 2026-09-29 — одна форма на все FX-лендинги, `fx
 
 **Оценка:** 2–4 рабочих дня. Порядок блоков ниже — порядок работы.
 
+### Что поменялось 2026-09-30
+
+**В общую форму `FX | LP | Demo` добавляется необязательное поле «Expected monthly scan volume»** (решение Вадима). Идея пришла из драфта insurance-лендинга Ники, где это было отдельное поле одной страницы. Объём квалифицирует лид в любой вертикали, поэтому поле живёт в общей форме, а не на странице (B1). Необязательное, чтобы не резать конверсию.
+
 ### Что поменялось 2026-09-29
 
 Статьи дают трафик и ведут на лендинг своей вертикали, лендинг конвертирует. Под это ТЗ поменялось в трёх местах:
@@ -109,6 +113,7 @@ updated: 2026-09-29 — одна форма на все FX-лендинги, `fx
 | Contact | `icp_segment` | Dropdown | FX: Telehealth & GLP-1 · Online pharmacy · Life & disability insurance · Health plans & employer wellness · Bariatric & metabolic · Occupational health · CROs & clinical trials · Connected & digital fitness · Plastic surgery · BCRL / oncology RPM. MT: MTM brands & tailors · On-demand manufacturers · Uniforms · Wrist / limb. Прочее: Consumer · Agency / vendor · Job seeker · Other | Поле формы (если есть) или sales при квалификации |
 | Deal | `icp_segment` | Dropdown | те же значения | Workflow копирует из контакта; sales правит |
 | Contact | `fx_vertical` | Dropdown | `fitxpress_parent` · `bmi_verification` · `fitness` · `telehealth` · `glp1` · `insurance` · `wellness` · `bariatric` · `clinical_trials` · `occupational_health` | Скрытое поле формы `FX \| LP \| Demo`, значение ставит GTM (B2.5). **Это страница конверсии, а не сегмент:** на wellness-лендинг может прийти страховщик, поэтому `icp_segment` остаётся за sales, и workflow из `fx_vertical` его **не** заполняет |
+| Contact | `expected_scan_volume` | Dropdown | `under_500` · `500_1000` · `1000_5000` · `over_5000` · `not_sure` (подписи в форме: Under 500 · 500–1,000 · 1,000–5,000 · Over 5,000 · Not sure yet; границы совпадают с тарифами на `/pricing/`) | **Необязательное** видимое поле формы `FX \| LP \| Demo`, подпись «Expected monthly scan volume» (Вадим, 2026-09-30) |
 | Deal | `fx_vertical` | Dropdown | те же значения | Workflow (B3) |
 | Deal | `original_traffic_source` | Dropdown | как `hs_analytics_source` у контакта | Workflow (B3) |
 | Deal | `first_page_seen` | Single-line text | URL | Workflow (B3) |

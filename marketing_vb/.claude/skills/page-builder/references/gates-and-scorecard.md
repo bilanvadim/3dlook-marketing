@@ -152,14 +152,19 @@ Threshold **85 / 100**. Below it, return to the axis that lost points. Do not av
 | Axis | Weight | What is checked |
 |---|---|---|
 | Proof of belonging to the vertical | 20 | context facts, regulators, 2+ vertical cases, integration and formats, quote |
-| Claims discipline | 15 | every figure traced and identical everywhere, accuracy scoped with the four conditions, reserved words absent, medical framing correct, M1 acronyms, M2 negation |
+| Claims discipline | 15 | every figure traced and identical everywhere, accuracy figures carried with their reference and limit plus a link to the accuracy framework, reserved words absent, medical framing correct, M1 acronyms, M2 negation |
 | Uniqueness against the parent | 15 | 60% rule, different Yoast title and description, no cannibalisation of the hub article |
-| Conversion | 15 | one action, soft alternative, short form, price signal, events working |
+| Conversion | 15 | one action, soft alternative, short form, price signal, events working, visible copy within 1,100-1,300 words, a call to action on every second screen |
 | Copy in the buyer's language | 10 | vertical vocabulary, verbatim pains, the segment's "what NOT to say" honoured, the vertical's actor named (the pharmacy, the clinic, the employer), not a generic "organization" (terminology guardrail §2.14) |
 | Human copy | 10 | no AI tells, varied rhythm, an opinion and a boundary present |
-| Search and AI visibility | 10 | vertical queries, FAQ + FAQPage schema, quotable structured blocks |
+| Search and AI visibility | 10 | vertical queries, 5-6 FAQ with the keyword map's GEO phrases as H3 + FAQPage schema, quotable structured blocks |
 | Place in the site | 5 | link up, two siblings, hub article, breadcrumbs, canonical |
 | Design and technical layer | 5 | `DESIGN.md` tokens, mobile, performance, indexation |
+
+**Short pages are the standard (Vadim, 2026-09-30).** Do not deduct for depth that sits in a linked
+article: a page that sends the four accuracy conditions, the full compliance answers or the vertical's
+process to an article by link has done its job. Deduct on Conversion when the visible copy runs past
+1,400 words.
 
 Technical and placement carry only 5 each because G-T and G-A already block on them. Scoring them
 heavily here would count the same check twice and let a page buy its way to 85 on plumbing.

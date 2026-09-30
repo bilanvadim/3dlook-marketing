@@ -105,12 +105,12 @@
 ### Aggregate
 | Claim | Number | Source |
 |-------|--------|--------|
-| Total customers (all-time) | 100+ | Company deck |
-| Active customers in 2025 | 67 | Internal customer breakdown |
+| Total customers (all-time) | 100+ | Company deck · **the one public client count, everywhere** (Vadim 2026-09-30): pages, articles, outbound, posts |
+| Active customers in 2025 | 67 | Internal customer breakdown · **internal only, never public** (Vadim 2026-09-30: "100+ clients" everywhere) |
 | Total ARR 2025 | $1.084M | Internal |
 | Enterprise ARR | $822K | Internal |
 | SMB ARR | $262K | Internal |
-| Total scans 2025 | 112,100 | Internal · **cleared for cold outbound copy in every campaign and profile** (Vadim 2026-09-29, extends the 2026-09-14 clearance for `olena`): as 3DLOOK-wide scale only, e.g. "112,100 scans in 2025 across all 3DLOOK customers"; never split by client, never tied to a geography, never attributed to one platform |
+| Total scans 2025 | 112,100 | Internal · **cleared for cold outbound copy in every campaign and profile** (Vadim 2026-09-29, extends the 2026-09-14 clearance for `olena`): as 3DLOOK-wide scale only, e.g. "112,100 scans in 2025 across all 3DLOOK customers"; never split by client, never tied to a geography, never attributed to one platform · **not on website pages** (Vadim 2026-09-30) |
 | Enterprise scans 2025 | 72,300 | Internal |
 | SMB scans 2025 | 39,800 | Internal |
 | 4 legacy MT customers retention | 5+ years | Internal (lifetime durability evidence) |

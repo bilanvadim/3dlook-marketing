@@ -263,9 +263,12 @@ attributed to the page, scroll depth.
 - **Publication rights are not a formality.** Mobile Tailor customer ARRs never appear publicly.
   Client names, logos and metrics only from `case-studies/`, and only where that specific use is
   approved.
-- **Accuracy is scoped, never bragged.** Reframe to "accurate enough for which decision?" with the
-  four conditions (reference method, protocol, population, workflow). Never lead with "most accurate"
-  or "best-in-class" — that is an anti-positioning violation and an automatic hard fail.
+- **Accuracy is scoped, never bragged.** On a page: each figure with its reference and limit, and a
+  link to the accuracy framework, which carries the reframe to "accurate enough for which decision?"
+  and the four conditions (reference method, protocol, population, workflow). Never lead with "most
+  accurate" or "best-in-class" — that is an anti-positioning violation and an automatic hard fail.
+- **Use-case landings are short (Vadim, 2026-09-30).** 1,100-1,300 words of visible copy, 5-6 FAQ,
+  depth in the linked articles. Order and budget: `kit-vertical-page.md`, "Length and order".
 - **Medical framing is fixed language.** "FitXpress is not a medical device." State the boundary
   directly; "positioned as" is banned for product, intended-use and regulatory statements
   (`terminology-guardrails.md` §2.10). Never assert that a regulatory framework "does not apply".
