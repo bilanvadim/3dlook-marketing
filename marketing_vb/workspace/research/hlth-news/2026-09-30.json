@@ -1,0 +1,454 @@
+{
+ "generated": "2026-09-30T16:14:29+00:00",
+ "items": [
+  {
+   "id": "6315b19a-fee4-4ece-ad17-837559f6b37d",
+   "title": "Hello Patient Acquires Converse Health to Expand AI Patient Engagement",
+   "date": "2026-09-21",
+   "tags": [
+    "Investments and Partnerships",
+    "Operational Efficiency",
+    "Startup",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/hello-patient-acquires-converse-health-to-expand-ai-patient-engagement"
+  },
+  {
+   "id": "84602940-41f6-4769-bdad-b188063aba0d",
+   "title": "Roche and Genentech Open New Boston R&D Center",
+   "date": "2026-09-21",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Drug Discovery / Pharma / Biotech",
+    "Artificial Intelligence / Machine Learning"
+   ],
+   "url": "https://hlth.com/insights/news/roche-and-genentech-open-new-boston-randd-center"
+  },
+  {
+   "id": "d9af688c-f925-46d9-b389-309e98abe2a2",
+   "title": "Angle Health Raises $600M to Expand AI-Powered Small Business Health Plans",
+   "date": "2026-09-21",
+   "tags": [
+    "Investments and Partnerships",
+    "Employee Wellness / Benefits / Workplace Health",
+    "Startup",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/angle-health-raises-600m-to-expand-ai-powered-small-business-health-plans"
+  },
+  {
+   "id": "487183c5-0503-42a4-b122-257d7bf17058",
+   "title": "Ascend Learning Acquires M7 Health to Expand Healthcare Workforce Platform",
+   "date": "2026-09-22",
+   "tags": [
+    "Investments and Partnerships",
+    "Operational Efficiency",
+    "Health System & Health Provider",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/ascend-learning-acquires-m7-health-to-expand-healthcare-workforce-platform"
+  },
+  {
+   "id": "f4fe9fd0-2240-4eae-9032-29656af1350a",
+   "title": "Oura Launches IPO Targeting $2.2B",
+   "date": "2026-09-22",
+   "tags": [
+    "Consumer Wellness and Technology",
+    "Investments and Partnerships",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/oura-launches-ipo-targeting-2-2b"
+  },
+  {
+   "id": "4424efc8-405b-4ee3-9f27-9290bd2f5da1",
+   "title": "AbbVie and Iambic Partner on AI Drug Discovery",
+   "date": "2026-09-22",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Investments and Partnerships",
+    "Drug Discovery / Pharma / Biotech",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/abbvie-and-iambic-partner-on-ai-drug-discovery"
+  },
+  {
+   "id": "8e1f2bbd-493f-4121-a38e-39f593167af2",
+   "title": "Iambic Therapeutics Files for Nasdaq IPO to Advance AI-Enabled Drug Pipeline",
+   "date": "2026-09-23",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Investments and Partnerships",
+    "Drug Discovery / Pharma / Biotech",
+    "Artificial Intelligence / Machine Learning"
+   ],
+   "url": "https://hlth.com/insights/news/iambic-therapeutics-files-for-nasdaq-ipo-to-advance-ai-enabled-drug-pipeline"
+  },
+  {
+   "id": "9cddd39a-2db5-450e-b2d3-d40b8b90c85d",
+   "title": "Atropos Health Expands Evidence Network with Norstella, Arcadia and OneMedNet",
+   "date": "2026-09-23",
+   "tags": [
+    "Interoperability / Data Management",
+    "Medical Research",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/atropos-health-expands-evidence-network-with-norstella-arcadia-and-onemednet"
+  },
+  {
+   "id": "8bfeec17-82b8-4a02-b19b-f91a6d95a40a",
+   "title": "Heidi Raises $340M to Expand Clinical AI Into Supervised Agentic Workflows",
+   "date": "2026-09-23",
+   "tags": [
+    "Investments and Partnerships",
+    "Operational Efficiency",
+    "Startup",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/heidi-raises-340m-to-expand-clinical-ai-into-supervised-agentic-workflows"
+  },
+  {
+   "id": "a4d412f5-c5ca-4506-9019-d1b865bfa38e",
+   "title": "Anthropic Launches Claude Opus 5.5 with Expanded Biology Capabilities",
+   "date": "2026-09-24",
+   "tags": [
+    "Drug Discovery / Pharma / Biotech",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/anthropic-launches-claude-opus-5-5-with-expanded-biology-capabilities"
+  },
+  {
+   "id": "e106d194-9401-4560-b5b8-7286b65a1ef8",
+   "title": "UltraSight Raises $24 Million to Expand AI-Guided Cardiac Ultrasound",
+   "date": "2026-09-24",
+   "tags": [
+    "Investments and Partnerships",
+    "Startup",
+    "Diagnostics",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/ultrasight-raises-24-million-to-expand-ai-guided-cardiac-ultrasound"
+  },
+  {
+   "id": "cc5413b5-37a7-40ba-b63d-b82435aed7bb",
+   "title": "Enveda Raises $311 Million to Advance AI-Discovered Medicines",
+   "date": "2026-09-24",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Investments and Partnerships",
+    "Drug Discovery / Pharma / Biotech",
+    "Startup",
+    "Artificial Intelligence / Machine Learning"
+   ],
+   "url": "https://hlth.com/insights/news/enveda-raises-311-million-to-advance-ai-discovered-medicines"
+  },
+  {
+   "id": "2458af1d-6448-46c5-aa5c-7c863a3c7cdf",
+   "title": "Rightway Raises $155M to Expand Pharmacy Benefits Technology and AI",
+   "date": "2026-09-25",
+   "tags": [
+    "Investments and Partnerships",
+    "Employee Wellness / Benefits / Workplace Health",
+    "Startup",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/rightway-raises-155m-to-expand-pharmacy-benefits-technology-and-ai"
+  },
+  {
+   "id": "cc015809-201e-4e5f-be47-9316aadafbba",
+   "title": "Precision Neuroscience Raises $250M to Advance Layer 7 Brain–Computer Interface",
+   "date": "2026-09-25",
+   "tags": [
+    "Emerging Technology",
+    "Investments and Partnerships",
+    "Medical Research",
+    "Startup",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/precision-neuroscience-raises-250m-to-advance-layer-7-brain-computer-interface"
+  },
+  {
+   "id": "ba83f285-b828-4225-91ed-ea0689f41f05",
+   "title": "Hims & Hers Expands AI-Native Care Platform to Weight Loss Members",
+   "date": "2026-09-25",
+   "tags": [
+    "Telehealth / Virtual Care / Remote Patient Monitoring",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services",
+    "Chronic Condition Management"
+   ],
+   "url": "https://hlth.com/insights/news/hims-and-hers-expands-ai-native-care-platform-to-weight-loss-members"
+  }
+ ],
+ "analyses": {
+  "6315b19a-fee4-4ece-ad17-837559f6b37d": {
+   "id": "6315b19a-fee4-4ece-ad17-837559f6b37d",
+   "score": 0,
+   "segment": "—",
+   "what": "Hello Patient купила Converse Health, щоб доповнити AI-агентів для спілкування з пацієнтами автоматизацією back-office в амбулаторних клініках: направлення, факси, prior authorization, реєстрація.",
+   "why": "Це AI для адміністративної роботи клінік. Дані тіла тут ніде не використовуються.",
+   "play": "none",
+   "companies": [
+    "Hello Patient",
+    "Converse Health"
+   ],
+   "_date": "2026-09-21"
+  },
+  "84602940-41f6-4769-bdad-b188063aba0d": {
+   "id": "84602940-41f6-4769-bdad-b188063aba0d",
+   "score": 1,
+   "segment": "FitXpress §7 Clinical Trials",
+   "what": "Roche і Genentech відкрили в Бостоні R&D-центр із cardiovascular, renal і metabolic захворювань (зокрема obesity) з фокусом на AI-driven drug discovery та клінічну розробку.",
+   "why": "У центру є obesity-фокус, але це ранній R&D великої pharma, і приводу для at-home вимірів тіла стаття не дає.",
+   "play": "none",
+   "companies": [
+    "Roche",
+    "Genentech",
+    "Harvard University",
+    "NVIDIA"
+   ],
+   "_date": "2026-09-21"
+  },
+  "d9af688c-f925-46d9-b389-309e98abe2a2": {
+   "id": "d9af688c-f925-46d9-b389-309e98abe2a2",
+   "score": 1,
+   "segment": "FitXpress §4 Health Plans / Employer Wellness",
+   "what": "Angle Health залучила $600M (з них $200M — Series C) на розвиток AI-платформи health plans для малого та середнього бізнесу: андеррайтинг за census роботодавця, Quote-to-Card, care navigation.",
+   "why": "Андеррайтинг тут груповий, за census роботодавця. Індивідуальних body-даних чи wellness-rewards програми в статті немає, тож прямого зв'язку з FitXpress теж немає.",
+   "play": "none",
+   "companies": [
+    "Angle Health",
+    "Vitruvian Partners",
+    "Town Hall Ventures",
+    "Blumberg Capital",
+    "Portage Ventures",
+    "PruVen Capital",
+    "Y Combinator"
+   ],
+   "_date": "2026-09-21"
+  },
+  "487183c5-0503-42a4-b122-257d7bf17058": {
+   "id": "487183c5-0503-42a4-b122-257d7bf17058",
+   "score": 0,
+   "segment": "—",
+   "what": "Ascend Learning купила M7 Health — AI-платформу для планування змін і управління клінічним персоналом у лікарнях.",
+   "why": "Це HR і scheduling для лікарень, до 3DLOOK не стосується.",
+   "play": "none",
+   "companies": [
+    "Ascend Learning",
+    "M7 Health",
+    "StaffGarden",
+    "Laudio",
+    "ATI Nursing Education",
+    "National Healthcareer Association",
+    "Workday",
+    "UKG"
+   ],
+   "_date": "2026-09-22"
+  },
+  "f4fe9fd0-2240-4eae-9032-29656af1350a": {
+   "id": "f4fe9fd0-2240-4eae-9032-29656af1350a",
+   "score": 1,
+   "segment": "FitXpress §8 Connected & Digital Fitness",
+   "what": "Oura вийшла на IPO з цільовим залученням до $2.2B. Платних підписників стало вдвічі більше, 5M. Компанія розширюється в metabolic health і longitudinal tracking, зокрема разом із Dexcom (CGM).",
+   "why": "Oura — великий публічний wearable-гравець, реалістичним акаунтом не є. Максимум — тема для контенту: wearables і CGM вже трекають метрики всередині тіла, а його форму й композицію — ні.",
+   "play": "content_only",
+   "companies": [
+    "Oura",
+    "Dexcom"
+   ],
+   "_date": "2026-09-22"
+  },
+  "4424efc8-405b-4ee3-9f27-9290bd2f5da1": {
+   "id": "4424efc8-405b-4ee3-9f27-9290bd2f5da1",
+   "score": 0,
+   "segment": "—",
+   "what": "AbbVie та Iambic почали багаторічну співпрацю з AI-дизайну small-molecule препаратів в імунології, неврології та онкології.",
+   "why": "Це drug discovery, до 3DLOOK не стосується.",
+   "play": "none",
+   "companies": [
+    "AbbVie",
+    "Iambic"
+   ],
+   "_date": "2026-09-22"
+  },
+  "8e1f2bbd-493f-4121-a38e-39f593167af2": {
+   "id": "8e1f2bbd-493f-4121-a38e-39f593167af2",
+   "score": 0,
+   "segment": "—",
+   "what": "Iambic Therapeutics подала документи на IPO на Nasdaq, щоб фінансувати онкологічні програми IAM1363, IAM217 та IAM-C1.",
+   "why": "Це онкологічний drug discovery, до 3DLOOK не стосується.",
+   "play": "none",
+   "companies": [
+    "Iambic Therapeutics",
+    "NVIDIA",
+    "Oura"
+   ],
+   "_date": "2026-09-23"
+  },
+  "9cddd39a-2db5-450e-b2d3-d40b8b90c85d": {
+   "id": "9cddd39a-2db5-450e-b2d3-d40b8b90c85d",
+   "score": 0,
+   "segment": "—",
+   "what": "Atropos Health розширила federated Evidence Network (понад 330M пацієнтів США) завдяки партнерствам із Norstella, Arcadia та OneMedNet для real-world evidence.",
+   "why": "Це RWE-дані й аналітика, body-даних тут немає.",
+   "play": "none",
+   "companies": [
+    "Atropos Health",
+    "Norstella",
+    "Arcadia",
+    "OneMedNet"
+   ],
+   "_date": "2026-09-23"
+  },
+  "8bfeec17-82b8-4a02-b19b-f91a6d95a40a": {
+   "id": "8bfeec17-82b8-4a02-b19b-f91a6d95a40a",
+   "score": 0,
+   "segment": "—",
+   "what": "Heidi, компанія з Мельбурна, залучила $340M ($100M — Series C). Платформа ambient-документації розширюється до supervised agentic workflows для клініцистів.",
+   "why": "Це клінічна документація й AI-агенти, дані тіла не використовуються.",
+   "play": "none",
+   "companies": [
+    "Heidi",
+    "Beth Israel Lahey Health",
+    "NHS England Midlands",
+    "The Royal Children's Hospital Melbourne",
+    "Children's Health Queensland",
+    "Metro South Health"
+   ],
+   "_date": "2026-09-23"
+  },
+  "a4d412f5-c5ca-4506-9019-d1b865bfa38e": {
+   "id": "a4d412f5-c5ca-4506-9019-d1b865bfa38e",
+   "score": 0,
+   "segment": "—",
+   "what": "Anthropic випустила Claude Opus 5.5 із сильнішими можливостями в біології та окремою програмою верифікації для life sciences.",
+   "why": "Це LLM для біологічних досліджень, до 3DLOOK не стосується.",
+   "play": "none",
+   "companies": [
+    "Anthropic",
+    "Frontier Design",
+    "METR",
+    "Dyno Therapeutics",
+    "OpenEvidence",
+    "Amazon Web Services",
+    "Google Cloud",
+    "Microsoft Azure"
+   ],
+   "_date": "2026-09-24"
+  },
+  "e106d194-9401-4560-b5b8-7286b65a1ef8": {
+   "id": "e106d194-9401-4560-b5b8-7286b65a1ef8",
+   "score": 0,
+   "segment": "—",
+   "what": "UltraSight залучила $24M Series B2 на AI-guided кардіо-УЗД для клініцистів без спеціалізації сонографа в health systems США.",
+   "why": "Це кардіо-візуалізація в лікарнях, а не вимірювання тіла.",
+   "play": "none",
+   "companies": [
+    "UltraSight"
+   ],
+   "_date": "2026-09-24"
+  },
+  "cc5413b5-37a7-40ba-b63d-b82435aed7bb": {
+   "id": "cc5413b5-37a7-40ba-b63d-b82435aed7bb",
+   "score": 3,
+   "segment": "FitXpress §7 Clinical Trials",
+   "what": "Enveda закрила Series E на $311M (загалом понад $845M). Гроші підуть на пізніші фази для ENV-308 — кандидата для утримання ваги й metabolic health після відміни GLP-1 (його випробовували на 88 здорових добровольцях) — і на нові metabolic-програми в клініці.",
+   "why": "Препарат для утримання ваги після GLP-1 потребує довгих досліджень, де головне — як змінюється тіло між візитами. FitXpress дає at-home скан за 2 фото: BMI, body composition і 80+ вимірів між site-візитами, з audit-ready записом. Це б'є в KPI §7: час координатора на візит, dropout, розбіжність між сайтами. Ендпоінти ENV-308 у статті не названі.",
+   "play": "direct_account",
+   "campaign": {
+    "title": "Enveda + post-GLP-1 weight-maintenance biotechs — at-home body data між візитами",
+    "profile": "nick",
+    "market": "USA (HQ Enveda перевірити — у статті не вказано)",
+    "targets": "Enveda (програма ENV-308). Далі — lookalikes: clinical-stage biotech з obesity- або post-GLP-1 weight-maintenance кандидатами, що переходять у Phase 2+",
+    "roles": "Director / VP Clinical Operations, VP Decentralized / Hybrid Trials, Clinical Program Lead (metabolic), Director of Data Management",
+    "angle": "Після раунду на $311M ENV-308 іде в пізніші фази як засіб утримати вагу після GLP-1, а такі дослідження тримаються на повторних вимірах тіла. Пропонуємо at-home скан за 2 фото між візитами: BMI, body composition і виміри тіла зі структурованим audit-ready записом, без зайвих поїздок на сайт.",
+    "existing_campaign": "",
+    "task": "USA: clinical-stage biotechs moving obesity / post-GLP-1 weight-maintenance candidates into Phase 2+ (Enveda first) — at-home body measurements between site visits"
+   },
+   "caveat": "Для сегмента §7 немає use-case файлу, а в контексті немає клінічного proof point. У статті не вказані HQ і ендпоінти. Спонсори часто віддають операційку CRO. Жодних клінічних чи regulatory-заяв і цифр точності.",
+   "companies": [
+    "Enveda"
+   ],
+   "_date": "2026-09-24"
+  },
+  "2458af1d-6448-46c5-aa5c-7c863a3c7cdf": {
+   "id": "2458af1d-6448-46c5-aa5c-7c863a3c7cdf",
+   "score": 2,
+   "segment": "FitXpress §4 Health Plans / Employer Wellness",
+   "what": "Rightway (PBM + care navigation для роботодавців, 45 клієнтів із Fortune 500) залучила $155M Series E на AI для фармацевтів і клінічних команд. У моделі SureSpend GLP-1 покриваються окремою лінією за net cost.",
+   "why": "Окрема GLP-1-лінія в SureSpend означає, що клієнти пильно стежать за витратами на GLP-1. FitXpress може додати в member-support флоу віддалену верифікацію BMI на старті та check-ins прогресу (вага, композиція) — у ті клінічні й AI workflows, які Rightway будує на ці гроші. PBM не є названим ICP-сегментом, тож це гіпотеза, а не підтверджений fit.",
+   "play": "direct_account",
+   "campaign": {
+    "title": "US employer GLP-1 benefit programs — BMI verification + progress check-ins",
+    "profile": "nick",
+    "market": "USA",
+    "targets": "Rightway. Далі — lookalikes: employer-facing PBMs, benefits- і care-navigation платформи з окремими GLP-1 програмами для роботодавців",
+    "roles": "Chief Medical / Clinical Officer, VP Clinical Programs / Pharmacy Clinical Ops, Head of Product, VP Care Navigation, Head of Employer Solutions",
+    "angle": "Ви виділили GLP-1 в окрему net-cost лінію SureSpend та інвестуєте в AI для клінічних команд. Коли за GLP-1 платить роботодавець, далі постає питання, кому препарат показаний і чи видно прогрес. 2 фото в member-флоу дають BMI та виміри тіла на старті й на кожному check-in, з audit-ready записом.",
+    "existing_campaign": "",
+    "task": "USA: employer-facing PBMs and GLP-1 benefit programs that just raised (Rightway first) — remote BMI verification + body-progress check-ins for employer-paid GLP-1"
+   },
+   "caveat": "PBM не є ICP-сегментом. У статті немає ні BMI-критеріїв, ні member-app. Цикл продажу enterprise. Не обіцяти економію на GLP-1 цифрами.",
+   "companies": [
+    "Rightway"
+   ],
+   "_date": "2026-09-25"
+  },
+  "cc015809-201e-4e5f-be47-9316aadafbba": {
+   "id": "cc015809-201e-4e5f-be47-9316aadafbba",
+   "score": 0,
+   "segment": "—",
+   "what": "Precision Neuroscience залучила $250M Series D на клінічну програму та комерціалізацію brain–computer interface Layer 7.",
+   "why": "Це BCI-нейротех, до 3DLOOK не стосується.",
+   "play": "none",
+   "companies": [
+    "Precision Neuroscience",
+    "Medtronic",
+    "Perelman School of Medicine at the University of Pennsylvania",
+    "University of Chicago Medicine",
+    "Mount Sinai Health System",
+    "West Virginia University's Rockefeller Neuroscience Institute"
+   ],
+   "_date": "2026-09-25"
+  },
+  "ba83f285-b828-4225-91ed-ea0689f41f05": {
+   "id": "ba83f285-b828-4225-91ed-ea0689f41f05",
+   "score": 3,
+   "segment": "FitXpress §1 Telehealth & GLP-1",
+   "what": "Hims & Hers підключила учасників Hims weight loss до своєї AI-native care platform. Платформа зберігає контекст пацієнта (intake, цілі, дозування, weigh-in trends, повідомлення), автоматизує неклінічні взаємодії і будує замкнений longitudinal care record із check-ins, титрацій та outcomes.",
+   "why": "Нова платформа тримається на longitudinal-даних із check-ins, а з даних про тіло в статті згадано лише weigh-in trends. FitXpress додає в той самий check-in скан за 2 фото: BMI, body composition і 80+ вимірів у структурованому вигляді. Учасник бачить прогрес, що допомагає retention, а для титрацій і outcomes даних стає більше. Це прямо болі §1: фрагментовані дані, відтік після онбордингу, прогрес, якого не видно.",
+   "play": "direct_account",
+   "campaign": {
+    "title": "Hims & Hers — body data у longitudinal care record weight loss",
+    "profile": "nick",
+    "market": "USA",
+    "targets": "Hims & Hers Health (команди Hims weight loss і AI care platform). Опційно далі — lookalikes з ICP §1, яких nick ще не контактував: Ro, LifeMD, Noom (перевірити статус)",
+    "roles": "Head of Product / GM Weight Loss, Chief Medical Officer / Medical Director, Head of Clinical Operations, Head of Member Engagement / Retention, CTO / engineering lead care platform",
+    "angle": "Ви щойно перевели weight-loss учасників на замкнену платформу, де check-ins і weigh-in trends складаються в longitudinal record. 2 фото на check-in додають туди структуровані виміри тіла й видимий прогрес, а не лише вагу. Головне — стабільність від скану до скану, щоб дрібні реальні зміни не губились у шумі.",
+    "existing_campaign": "",
+    "task": "USA: Hims & Hers weight-loss team (single-account ABM) — add body measurements to check-ins of their new AI-native longitudinal care platform"
+   },
+   "caveat": "Публічна компанія і великий enterprise: довгий цикл, можливе in-house рішення або вже оцінений Prism Labs. 2026-09-29-us-cardiometabolic — це fixed list, тому потрібен окремий ABM. Без кутів про HIPAA і точність.",
+   "companies": [
+    "Hims & Hers Health",
+    "Hims",
+    "Hers"
+   ],
+   "_date": "2026-09-25"
+  }
+ },
+ "posts": [
+  "workspace/social/hlth-news/enveda-raises-311-million-to-advance-ai-discovered-medicines/linkedin-vadim/post.md",
+  "workspace/social/hlth-news/hims-and-hers-expands-ai-native-care-platform-to-weight-loss-members/linkedin-vadim/post.md"
+ ]
+}
