@@ -48,7 +48,7 @@ python3 /home/vadim_prod/3dlook-marketing/marketing_vb/scripts/outbound_pack.py 
 | Stage | Скрипты ДО агента | Агент | Скрипты ПОСЛЕ |
 |---|---|---|---|
 | `hypothesis` | — | `hypothesis-generator` (opus) | — |
-| `research` | `hypothesis-gate --stamp`, `search-health.py` | `company-researcher` | `web-verify.py`, `validate-companies`, `outbound_pack.py sales-nav-query` |
+| `research` | `hypothesis-gate --stamp`, `search-health.py` | `company-researcher` | `web-verify.py`, `validate-companies`, затем люди: `outbound_pack.py sales-nav-query` (Sales Navigator) **или** `apollo-pull.py search` → `enrich` (Apollo) |
 | `extract` | `extract-people --dry-run`, прочитай unmatched, потом без `--dry-run` | **нет** | — |
 | `validate` | `outbound-registry.py check`, `outbound_pack.py compact`, `outbound_pack.py card --for validate` | `icp-validator` | (агент сам: `apply-decisions`, `skipped`) |
 | расширение списка | — | **нет** | `outbound_pack.py promote --names "…"` |
@@ -59,6 +59,34 @@ python3 /home/vadim_prod/3dlook-marketing/marketing_vb/scripts/outbound_pack.py 
 
 `extract` и `import` — это код. Агентов `people-extractor` и `closelyhq-importer` запускай
 только разбираться, почему команда упала.
+
+### Шаг 3: откуда люди — Sales Navigator или Apollo
+
+Оба источника пишут в `sales-nav-raw/`, и `extract-people` читает их вместе. Можно один,
+можно оба: человек, который есть в обоих, остаётся строкой Sales Navigator (в ней Bio и
+Skills), дубль по LinkedIn URL отбрасывается.
+
+- **Sales Navigator** (как раньше): `outbound_pack.py sales-nav-query`, Вадим выгружает CSV
+  в `sales-nav-raw/`. Список, который Вадим принёс сам, — всегда этот путь.
+- **Apollo** (с 2026-10-01, использование для LinkedIn-аутрича согласовано Вадимом с Apollo):
+
+  ```bash
+  python3 /home/vadim_prod/3dlook-marketing/marketing_vb/scripts/apollo-pull.py search --campaign <slug>
+  python3 /home/vadim_prod/3dlook-marketing/marketing_vb/scripts/apollo-pull.py enrich --campaign <slug> --max-credits N
+  ```
+
+  `search` бесплатный: ищет по домену каждой компании из шортлиста и по блоку ```titles
+  гипотезы, пишет `apollo-candidates.csv` и печатает, сколько кредитов уйдёт (1 на
+  человека). `enrich` тратит кредиты, не выходит за `--max-credits` и пишет
+  `sales-nav-raw/apollo-<дата>.csv` в колонках Sales Navigator. Журнал — `apollo-log.md`.
+  Если кредитов больше 100 — назови Вадиму число до `enrich`. `--all-functions` снимает
+  фильтр по должностям (как выгрузка по компании) — только по просьбе Вадима: выгрузка по
+  компании стоила двух кампаний (см. hypothesis-generator).
+
+**Ловушка Apollo:** фильтр по домену ловит и бывших сотрудников. Скрипт отсекает их дважды
+(по названию текущей компании до обогащения и по домену после), отсеянные — в
+`apollo-log.md`. Ключ — `APOLLO_API_KEY` в `~/.hermes/.env`, scoped (поиск + bulk_match),
+не master.
 
 ### Авто-QC — opus `quality-controller`, после трёх стадий
 

@@ -299,7 +299,7 @@ def validated_count(cdir: Path) -> int:
 MILESTONES = [
     ("hypothesis",   ("hypothesis.md",),                        "run `/outbound hypothesis`"),
     ("companies",    ("companies.csv", "companies.md"),         "approve the hypothesis, then `research`"),
-    ("sales-nav",    ("sales-nav-raw/*", "people-raw*.csv"),    "VADIM: export Sales Navigator into sales-nav-raw/"),
+    ("sales-nav",    ("sales-nav-raw/*", "people-raw*.csv"),    "VADIM: export Sales Navigator into sales-nav-raw/, or `apollo-pull.py pull`"),
     ("validated",    ("people-validated*.csv",),                "run `extract`, then `validate`"),
     ("messages",     ("messages*",),                            "approve the list, then `messages`"),
     ("imported",     ("closelyhq-import*.csv",),                "approve the sample, then `import`"),

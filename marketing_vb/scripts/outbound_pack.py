@@ -243,7 +243,7 @@ def raw_index(cdir: Path) -> dict[str, dict]:
     """person_id -> raw Sales Navigator row, keys lower-cased."""
     out: dict[str, dict] = {}
     raw = cdir / "sales-nav-raw"
-    for f in sorted(raw.glob("*.csv")) if raw.exists() else []:
+    for f in sorted(raw.glob("*.csv"), key=PIPE.raw_order) if raw.exists() else []:
         for r in read_csv(f):
             low = {(k or "").strip().lower(): (v or "") for k, v in r.items()}
             pid = pid_of(low.get("linkedin_url", ""))
@@ -406,7 +406,9 @@ NEXT_STEPS = {
     0: ["/outbound hypothesis"],
     1: ["Vadim approves the hypothesis (status: approved)", "/outbound research {slug}"],
     2: ["scripts/outbound_pack.py sales-nav-query --campaign {slug}",
-        "VADIM: run that filter in Sales Navigator, export into sales-nav-raw/"],
+        "VADIM: run that filter in Sales Navigator, export into sales-nav-raw/",
+        "or Apollo: scripts/apollo-pull.py search --campaign {slug}   (free, prints credits)",
+        "     then: scripts/apollo-pull.py enrich --campaign {slug} --max-credits N"],
     3: ["scripts/outbound-pipeline.py extract-people --campaign {slug} --dry-run   (then without)",
         "scripts/outbound_pack.py compact --campaign {slug}",
         "scripts/outbound_pack.py card --campaign {slug} --for validate",

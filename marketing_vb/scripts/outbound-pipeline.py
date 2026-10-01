@@ -576,6 +576,11 @@ def split_name(full: str, first: str, last: str) -> tuple[str, str]:
     return parts[0], " ".join(parts[1:])
 
 
+def raw_order(path: Path) -> tuple[bool, str]:
+    """Sort key for sales-nav-raw/: Sales Navigator exports before apollo-*.csv."""
+    return (path.name.startswith("apollo"), path.name)
+
+
 def cmd_extract_people(args) -> int:
     cdir = campaign_dir(args.campaign)
     companies_src = resolve_input(args, ("companies-verified.csv", "companies.csv"))
@@ -584,9 +589,12 @@ def cmd_extract_people(args) -> int:
         return 2
 
     raw_dir = cdir / "sales-nav-raw"
-    raw_files = sorted(raw_dir.glob("*.csv")) if raw_dir.exists() else []
+    # Sales Navigator exports first, Apollo pulls last: a person in both keeps the Sales
+    # Navigator row, which has Bio and Skills (Apollo has neither).
+    raw_files = sorted(raw_dir.glob("*.csv"), key=raw_order) if raw_dir.exists() else []
     if not raw_files:
-        print(f"✗ no CSV in {rel(raw_dir)} — VADIM must export Sales Navigator first",
+        print(f"✗ no CSV in {rel(raw_dir)} — VADIM must export Sales Navigator first, or "
+              f"pull from Apollo: scripts/apollo-pull.py pull --campaign {args.campaign}",
               file=sys.stderr)
         return 2
 
@@ -711,7 +719,7 @@ def cmd_extract_people(args) -> int:
     # The two silent-failure modes of the old name-based join, now printed instead.
     if gaps:
         print(f"\n⚠ {len(gaps)} shortlisted companies got ZERO people — a Sales Navigator "
-              "gap, not a fit decision:")
+              "(or Apollo) gap, not a fit decision:")
         for g in gaps[:15]:
             print(f"    · {shortlist[g].get('company_name') or g}")
         if len(gaps) > 15:

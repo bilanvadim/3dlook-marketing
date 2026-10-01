@@ -716,6 +716,146 @@ if mutate "scope edit under the card" "$CAMP/$P/hypothesis.md" '^## Anti-cases$'
   check "a card older than the scope fails --check -> 1" 1 $OP card --campaign $P --for messages --check
 fi
 
+echo "== apollo-pull (against a stub of the Apollo REST API) =="
+# No key, no credits. The stub answers the documented shapes (docs.apollo.io, 2026-10-01)
+# and forces what matters: titles must reach the search, one 429 on enrichment (must back
+# off), a scoped key without bulk_match (403), the previous-employer trap on both sides of
+# enrichment, and a person already in the Sales Navigator export.
+AP_HOME=$(mktemp -d); mkdir -p "$AP_HOME/.hermes"
+printf 'APOLLO_API_KEY=good-key\n' > "$AP_HOME/.hermes/.env"; chmod 600 "$AP_HOME/.hermes/.env"
+AP_HOME403=$(mktemp -d); mkdir -p "$AP_HOME403/.hermes"
+printf 'APOLLO_API_KEY=no-enrich-key\n' > "$AP_HOME403/.hermes/.env"
+AP_STUB="$(mktemp -d)/apollo_stub.py"   # own dir, never bare /tmp (see the closely block)
+cat > "$AP_STUB" <<'STUBEOF'
+import json, urllib.parse
+from http.server import BaseHTTPRequestHandler, HTTPServer
+S = {"429": False}
+ORG = {"name": "Stub Clinic", "primary_domain": "stubclinic.com",
+       "website_url": "http://www.stubclinic.com", "linkedin_url": "https://www.linkedin.com/company/stub-clinic",
+       "estimated_num_employees": 120, "city": "Tampa", "country": "United States"}
+SEARCH = [
+    {"id": "p-ann", "first_name": "Ann", "last_name_obfuscated": "Sm***h", "title": "Chief Operating Officer", "organization": {"name": "Stub Clinic"}},
+    {"id": "p-bob", "first_name": "Bob", "last_name_obfuscated": "Jo***s", "title": "Chief Medical Officer", "organization": {"name": "Stub Clinic"}},
+    {"id": "p-carl", "first_name": "Carl", "last_name_obfuscated": "Ki***g", "title": "VP Operations", "organization": {"name": "Other Co"}},
+    {"id": "p-dan", "first_name": "Dan", "last_name_obfuscated": "Le***e", "title": "Director of Technology", "organization": {"name": "Stub Clinic"}},
+    {"id": "p-eve", "first_name": "Eve", "last_name_obfuscated": "St***x", "title": "Chief Operating Officer", "organization": {"name": "Stub Clinic"}},
+]
+MATCH = {
+    "p-bob": {"id": "p-bob", "first_name": "Bob", "last_name": "Jones", "title": "Chief Medical Officer",
+              "linkedin_url": "http://www.linkedin.com/in/bob-jones-1", "headline": "CMO at Stub Clinic",
+              "city": "Tampa", "state": "Florida", "country": "United States", "organization": ORG,
+              "employment_history": [
+                  {"current": False, "title": "Physician", "organization_name": "Old Hospital", "start_date": "2015-01-01"},
+                  {"current": True, "title": "Chief Medical Officer", "organization_name": "Stub Clinic", "start_date": "2021-03-01"}]},
+    "p-dan": {"id": "p-dan", "first_name": "Dan", "last_name": "Lee", "title": "CTO",
+              "linkedin_url": "http://www.linkedin.com/in/dan-lee", "organization":
+              {"name": "Elsewhere Inc", "primary_domain": "elsewhere.com"},
+              "employment_history": [{"current": True, "title": "CTO", "organization_name": "Elsewhere Inc"}]},
+    "p-eve": {"id": "p-eve", "first_name": "Eve", "last_name": "Stone", "title": "Chief Operating Officer",
+              "linkedin_url": "http://www.linkedin.com/in/eve-stone", "headline": "Apollo headline",
+              "organization": ORG, "employment_history": [{"current": True, "title": "COO", "organization_name": "Stub Clinic"}]},
+}
+class H(BaseHTTPRequestHandler):
+    def _s(self, code, body):
+        b = json.dumps(body).encode()
+        self.send_response(code); self.send_header("Content-Type", "application/json")
+        self.send_header("Content-Length", str(len(b))); self.end_headers(); self.wfile.write(b)
+    def do_POST(self):
+        u = urllib.parse.urlparse(self.path); q = urllib.parse.parse_qs(u.query)
+        n = int(self.headers.get("Content-Length") or 0)
+        body = json.loads(self.rfile.read(n) or b"{}")
+        key = self.headers.get("x-api-key")
+        if key not in ("good-key", "no-enrich-key"):
+            return self._s(401, {"error_details": {"code": "AUTH.AUTHENTICATION.INVALID", "message": "bad key"}})
+        if u.path == "/mixed_people/api_search":
+            if q.get("q_organization_domains_list[]") == ["apollo.io"]:
+                return self._s(200, {"total_entries": 1600, "people": SEARCH[:1]})
+            if q.get("q_organization_domains_list[]") != ["stubclinic.com"]:
+                return self._s(200, {"total_entries": 0, "people": []})
+            if not q.get("person_titles[]"):
+                return self._s(400, {"error": "titles did not reach the search"})
+            return self._s(200, {"total_entries": len(SEARCH), "people": SEARCH})
+        if u.path == "/people/bulk_match":
+            if key == "no-enrich-key":
+                return self._s(403, {"error_details": {"code": "AUTH.AUTHORIZATION.API_INACCESSIBLE", "message": "scope"}})
+            if q.get("reveal_personal_emails") != ["false"]:
+                return self._s(400, {"error": "personal emails must stay off"})
+            if not S["429"]:
+                S["429"] = True
+                return self._s(429, {"error_details": {"code": "RATE_LIMIT", "message": "slow down",
+                                     "suggestions": [{"label": "wait", "retry_after_seconds": 1}]}})
+            ms = [MATCH.get(d.get("id")) for d in body.get("details", [])]
+            return self._s(200, {"status": "success", "matches": ms,
+                                 "credits_consumed": sum(1 for m in ms if m)})
+        return self._s(404, {})
+    def log_message(self, *a): pass
+import sys
+HTTPServer(("127.0.0.1", int(sys.argv[1])), H).serve_forever()
+STUBEOF
+# a free port, not a fixed one: the first fixed pick was already taken on this shared box
+AP_PORT=$(python3 -c "import socket; s = socket.socket(); s.bind(('127.0.0.1', 0)); print(s.getsockname()[1]); s.close()")
+python3 "$AP_STUB" "$AP_PORT" & STUB3_PID=$!
+AP_PORT=$AP_PORT python3 - <<'WAITEOF'
+import os, time, urllib.request
+for _ in range(60):
+    try:
+        urllib.request.urlopen(urllib.request.Request(f"http://127.0.0.1:{os.environ['AP_PORT']}/x", data=b"{}"), timeout=1)
+        break
+    except Exception as e:
+        if "HTTP Error" in str(e): break
+        time.sleep(0.1)
+WAITEOF
+
+A=_test-apollo; TMP_CAMPAIGNS+=("$A"); mkdir -p "$CAMP/$A/sales-nav-raw"
+cat > "$CAMP/$A/hypothesis.md" <<'HYPEOF'
+---
+product: fitxpress
+profile: nick
+status: approved
+---
+
+# Test
+
+```titles
+Chief Operating Officer
+Chief Medical Officer
+```
+HYPEOF
+printf 'company_name,website,hq_country,fit_score_1_to_5\nStub Clinic,https://www.stubclinic.com,United States,5\n' > "$CAMP/$A/companies.csv"
+cat > "$CAMP/$A/sales-nav-raw/export-1.csv" <<'SNEOF'
+Linkedin_url,First_name,Last_name,Job_title,Company_name,Location,Skills,Experience,Headline,Bio,Company linkedin_url
+https://www.linkedin.com/in/ann-smith,Ann,Smith,Chief Operating Officer,Stub Clinic,United States,,COO at Stub Clinic,SN headline Ann,bio,https://www.linkedin.com/company/stub-clinic
+https://www.linkedin.com/in/eve-stone,Eve,Stone,Chief Operating Officer,Stub Clinic,United States,,COO at Stub Clinic,SN headline Eve,bio,https://www.linkedin.com/company/stub-clinic
+SNEOF
+
+AP="env -u APOLLO_API_KEY HOME=$AP_HOME APOLLO_BASE_URL=http://127.0.0.1:$AP_PORT APOLLO_PAUSE=0 python3 $S/apollo-pull.py"
+check "apollo: no key -> 1" 1 \
+  env -u APOLLO_API_KEY HOME=$(mktemp -d) APOLLO_BASE_URL=http://127.0.0.1:$AP_PORT python3 $S/apollo-pull.py health
+check "apollo: health (free search) -> 0" 0 $AP health
+check "apollo: enrich before search -> 2" 2 $AP enrich --campaign $A --max-credits 10
+grep_check "apollo: search sends titles, drops alumni and Sales Nav dupes" \
+  "found +5 · candidates +3 · other employer 1 · already in Sales Nav 1" $AP search --campaign $A
+check "apollo: over --max-credits -> 1" 1 $AP enrich --campaign $A --max-credits 2
+grep_check "apollo: --dry-run spends nothing" "would enrich 3 people" $AP enrich --campaign $A --dry-run
+check "apollo: dry run wrote no file" 0 bash -c "! ls $CAMP/$A/sales-nav-raw/apollo-*.csv >/dev/null 2>&1"
+grep_check "apollo: scoped key without bulk_match -> explained 403" "lacks this endpoint" \
+  env -u APOLLO_API_KEY HOME=$AP_HOME403 APOLLO_BASE_URL=http://127.0.0.1:$AP_PORT APOLLO_PAUSE=0 \
+  python3 $S/apollo-pull.py enrich --campaign $A --max-credits 10
+grep_check "apollo: enrich backs off a 429, drops the ex-employee" "2 people · 3 credits" \
+  $AP enrich --campaign $A --max-credits 10
+grep_check "apollo: the skipped log names the real employer" "current employer is Elsewhere Inc" \
+  cat "$CAMP/$A/apollo-log.md"
+check "apollo: extract-people reads both sources -> 0" 0 \
+  python3 $S/outbound-pipeline.py extract-people --campaign $A
+check "apollo: Sales Nav row wins a duplicate, Apollo adds the new person" 0 python3 -c "
+import csv, sys
+rows = list(csv.DictReader(open('$CAMP/$A/people-raw.csv')))
+names = sorted(r['full_name'] for r in rows)
+eve = [r for r in rows if r['full_name'] == 'Eve Stone']
+sys.exit(0 if names == ['Ann Smith', 'Bob Jones', 'Eve Stone'] and len(eve) == 1
+         and 'SN headline' in eve[0]['profile_summary'] else 1)"
+kill $STUB3_PID 2>/dev/null
+
 echo "== existing tooling still green =="
 check "outbound-registry status" 0 python3 $S/outbound-registry.py status
 check "agent copies identical" 0 python3 $S/check-agent-copies.py
