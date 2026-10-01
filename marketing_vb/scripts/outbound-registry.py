@@ -546,6 +546,29 @@ def cmd_check(args) -> int:
     # very profile" was the one case the check could not see. That is how the 15 companies
     # from 2026-07-31 stayed invisible to every later katerina run.
     mine_companies = {norm_company(c) for c in reg.get("excluded_companies", []) if c}
+    # --campaign: widening a campaign that is already recorded. Its own record would
+    # otherwise exclude its own people and its own companies, so everyone at Options was
+    # "company already worked from nick" the moment the 2026-10-01 list was widened. Only
+    # what THIS campaign recorded is lifted; anything another campaign also recorded stays.
+    own_companies: set[str] = set()
+    if getattr(args, "campaign", None):
+        own_people, others_people, others_companies = set(), set(), set()
+        for c in reg.get("campaigns", []):
+            urls = {person_url(x) for x in c.get("people", []) if person_url(x)}
+            comps = {norm_company(x) for x in c.get("companies", []) if x}
+            if c.get("campaign_id") == args.campaign:
+                own_people |= urls
+                own_companies |= comps
+            else:
+                others_people |= urls
+                others_companies |= comps
+        own_people -= others_people
+        own_companies -= others_companies
+        mine -= own_people
+        mine_companies -= own_companies
+        if own_people or own_companies:
+            print(f"  (--campaign {args.campaign}: its own {len(own_people)} people and "
+                  f"{len(own_companies)} companies are not exclusions)")
     g = load_json(excl_dir() / "global-company-registry.json", blank_global_registry())
     gc = g.get("companies", {})
 
@@ -567,7 +590,8 @@ def cmd_check(args) -> int:
             flag, why = "EXCLUDE", "existing customer"
             hits["existing_customer"] += 1
         elif comp and (comp in mine_companies
-                       or profile in gc.get(comp, {}).get("excluded_for_profiles", [])):
+                       or (profile in gc.get(comp, {}).get("excluded_for_profiles", [])
+                           and comp not in own_companies)):
             flag, why = "EXCLUDE", f"company already worked from {profile}"
             hits["company_same_profile"] += 1
         elif comp and gc.get(comp, {}).get("covered_by_profile") not in (None, profile) \
@@ -783,6 +807,8 @@ def main() -> int:
     c.add_argument("--input", required=True)
     c.add_argument("--output")
     c.add_argument("--dry-run", action="store_true")
+    c.add_argument("--campaign", help="widening this recorded campaign: its own record is "
+                                      "not an exclusion")
     c.set_defaults(func=cmd_check)
 
     y = sub.add_parser("reply", help="write reply outcomes onto registry people")

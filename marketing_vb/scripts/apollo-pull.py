@@ -44,7 +44,8 @@ Credentials, two transports, same endpoints:
 APOLLO_TRANSPORT=key|oo forces one.
 
     apollo-pull.py health
-    apollo-pull.py search --campaign <slug> [--all-functions] [--strict-titles]
+    apollo-pull.py search --campaign <slug> [--all-functions | --seniorities c_suite,vp,...]
+                          [--strict-titles]
     apollo-pull.py enrich --campaign <slug> --max-credits 60 [--dry-run]
     apollo-pull.py pull   --campaign <slug> --max-credits 60 [--dry-run]
 """
@@ -297,12 +298,21 @@ def already_in_raw(cdir: Path, company: str) -> list[tuple[str, str]]:
 
 
 def matches_known(first: str, obf: str, known: list[tuple[str, str]]) -> bool:
-    """'Hu***n' against a full last name: same first name, same visible head and tail."""
+    """'Hu***n' against a full last name: same first name, same visible head and tail.
+
+    Apollo obfuscates the LAST word of a compound surname ("Jory Ce***o" is Jory Del
+    Cecato), and Sales Navigator keeps suffixes ("Osborne, MD, DABFM"), so the match runs
+    on every tail of the name's words, with credentials after a comma dropped.
+    """
     m = re.match(r"^(.*?)\*+(.*)$", obf or "")
-    head, tail = (m.group(1), m.group(2)) if m else (obf or "", "")
+    head, tail = ((m.group(1), m.group(2)) if m else (obf or "", ""))
+    head, tail = head.lower(), tail.lower()
     for kf, kl in known:
-        if kf == (first or "").lower() and kl.startswith(head.lower()) \
-                and kl.endswith(tail.lower()):
+        if kf.strip() != (first or "").strip().lower():
+            continue
+        words = kl.split(",")[0].split()
+        if any(" ".join(words[i:]).startswith(head) and " ".join(words[i:]).endswith(tail)
+               for i in range(len(words))):
             return True
     return False
 
@@ -341,7 +351,8 @@ def cmd_search(args) -> int:
     text = hyp.read_text(encoding="utf-8")
     profile = PACK.frontmatter(text).get("profile") or PIPE.infer_profile(args.campaign) or ""
     titles: list[str] = []
-    if not args.all_functions:
+    seniorities = [s.strip() for s in (args.seniorities or "").split(",") if s.strip()]
+    if not args.all_functions and not seniorities:
         titles, src = PACK.titles_from_hypothesis(text)
         if not titles:
             print("✗ the hypothesis names no titles (```titles block). Add them, or pass "
@@ -354,11 +365,14 @@ def cmd_search(args) -> int:
         return 2
 
     print(f"→ {len(tg)} companies · "
-          + (f"{len(titles)} titles from the hypothesis" if titles else "all functions")
+          + (f"{len(titles)} titles from the hypothesis" if titles
+             else f"seniority {', '.join(seniorities)}" if seniorities else "all functions")
           + (" (strict titles)" if args.strict_titles else ""))
     rows: list[dict] = []
     for t in tg:
         params = {"q_organization_domains_list[]": [t["domain"]], "per_page": PER_PAGE}
+        if seniorities:
+            params["person_seniorities[]"] = seniorities
         if titles:
             params["person_titles[]"] = titles
             if args.strict_titles:
@@ -414,7 +428,8 @@ def cmd_search(args) -> int:
         print(f"⚠ skipped, no website in companies.csv: {', '.join(no_domain)}")
     append_log(cdir, [f"## {dt.date.today()} search",
                       f"- companies {len(tg)}, " + (f"{len(titles)} titles" if titles
-                                                    else "all functions"),
+                                                    else f"seniority {','.join(seniorities)}"
+                                                    if seniorities else "all functions"),
                       f"- candidates {n}, other employer "
                       f"{sum(r['status'] == 'other-employer' for r in rows)}, already in "
                       f"Sales Nav {sum(r['status'] == 'in-sales-nav' for r in rows)}"])
@@ -547,6 +562,9 @@ def main() -> int:
         p.add_argument("--campaign", required=True)
         p.add_argument("--all-functions", action="store_true",
                        help="no title filter: everyone at the companies")
+        p.add_argument("--seniorities",
+                       help="Apollo seniority filter instead of the titles block, e.g. "
+                            "owner,founder,c_suite,partner,vp,head,director (current title)")
         p.add_argument("--strict-titles", action="store_true",
                        help="exact titles only (include_similar_titles=false)")
         p.add_argument("--max-per-company", type=int, default=100)

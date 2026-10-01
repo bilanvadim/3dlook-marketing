@@ -712,6 +712,18 @@ grep_check "a wave-2 promotion lands in the one import file" "Cara" cat "$CAMP/$
 check "the import file passes check-import -> 0" 0 \
   python3 $S/outbound-pipeline.py check-import --campaign $P
 check "build-import refuses to clobber -> 1" 1 $OP build-import --campaign $P
+grep_check "profiles --only-missing: nothing to write when all have messages" "already have messages" \
+  $OP profiles --campaign $P --only-missing
+ONE=$(ls $CAMP/$P/messages/ | grep -v '^_' | head -1)
+mv "$CAMP/$P/messages/$ONE" "$CAMP/$P/$ONE.bak"
+grep_check "profiles --only-missing: one batch for the one person without messages" "for the 1 without messages" \
+  $OP profiles --campaign $P --only-missing
+check "profiles --only-missing keeps the earlier batches in the index" 0 python3 -c "
+import json, sys
+idx = json.load(open('$CAMP/$P/messages/_batches.json'))
+add = [k for k in idx if k.startswith('add-')]
+sys.exit(0 if add and len(idx) > len(add) and sum(len(idx[k]) for k in add) == 1 else 1)"
+mv "$CAMP/$P/$ONE.bak" "$CAMP/$P/messages/$ONE"
 if mutate "scope edit under the card" "$CAMP/$P/hypothesis.md" '^## Anti-cases$' '## Anti-cases\n\nAnd yoga studios.'; then
   check "a card older than the scope fails --check -> 1" 1 $OP card --campaign $P --for messages --check
 fi
@@ -772,8 +784,8 @@ class H(BaseHTTPRequestHandler):
                 return self._s(200, {"total_entries": 1600, "people": SEARCH[:1]})
             if q.get("q_organization_domains_list[]") != ["stubclinic.com"]:
                 return self._s(200, {"total_entries": 0, "people": []})
-            if not q.get("person_titles[]"):
-                return self._s(400, {"error": "titles did not reach the search"})
+            if not q.get("person_titles[]") and not q.get("person_seniorities[]"):
+                return self._s(400, {"error": "neither titles nor seniorities reached the search"})
             return self._s(200, {"total_entries": len(SEARCH), "people": SEARCH})
         if u.path == "/people/bulk_match":
             if key == "no-enrich-key":
@@ -837,6 +849,17 @@ check "apollo: health (free search) -> 0" 0 $AP health
 check "apollo: enrich before search -> 2" 2 $AP enrich --campaign $A --max-credits 10
 grep_check "apollo: search sends titles, drops alumni and Sales Nav dupes" \
   "found +5 · candidates +3 · other employer 1 · already in Sales Nav 1" $AP search --campaign $A
+grep_check "apollo: --seniorities replaces the titles block" "seniority c_suite, vp" \
+  $AP search --campaign $A --seniorities c_suite,vp
+check "apollo: a compound surname matches its obfuscated last word" 0 python3 -c "
+import importlib.util, sys
+s = importlib.util.spec_from_file_location('a', '$S/apollo-pull.py')
+a = importlib.util.module_from_spec(s); s.loader.exec_module(a)
+ok = a.matches_known('Jory', 'Ce***o', [('jory', 'del cecato')]) \\
+    and a.matches_known('Jeremy', 'Os***e', [('jeremy', 'osborne, md, dabfm')]) \\
+    and not a.matches_known('Jory', 'Ca***o', [('jory', 'del cecato')])
+sys.exit(0 if ok else 1)"
+$AP search --campaign $A >/dev/null 2>&1   # back to the titles candidates for enrich
 check "apollo: over --max-credits -> 1" 1 $AP enrich --campaign $A --max-credits 2
 grep_check "apollo: --dry-run spends nothing" "would enrich 3 people" $AP enrich --campaign $A --dry-run
 check "apollo: dry run wrote no file" 0 bash -c "! ls $CAMP/$A/sales-nav-raw/apollo-*.csv >/dev/null 2>&1"
@@ -887,6 +910,29 @@ grep_check "apollo: oo not connected -> names the connect page" "connections/apo
   env -u APOLLO_API_KEY -u APOLLO_TRANSPORT HOME=$(mktemp -d) PATH="$FAKE_BIN:$PATH" FAKE_OO_MODE=disconnected \
   APOLLO_BASE_URL=http://127.0.0.1:$AP_PORT python3 $S/apollo-pull.py health
 kill $STUB3_PID 2>/dev/null
+
+echo "== registry check --campaign (widening a recorded campaign) =="
+# Read-only against the real registry: 2026-10-01-us-options-medical-weight-loss recorded these
+# five people and Options for nick. The input is a fixed fixture (the campaign's own files
+# change as it widens), plus one Options person that was never recorded.
+RC_OUT=$(mktemp -d)
+cat > "$RC_OUT/in.csv" <<'RCEOF'
+person_linkedin_url,full_name,company_name
+https://linkedin.com/in/jeremyncastle,Jeremy Castle,Options Medical Weight Loss
+https://linkedin.com/in/jdelcecato,Jory Del Cecato,Options Medical Weight Loss
+https://linkedin.com/in/jessicatarnawa,Jessica Tarnawa,Options Medical Weight Loss
+https://linkedin.com/in/joshua-hicks-10ab2014a,Joshua Hicks,Options Medical Weight Loss
+https://linkedin.com/in/nicholasfoy34,Nicholas Foy,Options Medical Weight Loss
+https://linkedin.com/in/never-recorded-test,Never Recorded,Options Medical Weight Loss
+RCEOF
+grep_check "registry: a recorded campaign excludes its people and its company" "must be excluded +6" \
+  python3 $S/outbound-registry.py check --profile nick --input "$RC_OUT/in.csv" --output $RC_OUT/a.csv
+grep_check "registry: --campaign lifts only its own record" "must be excluded +0" \
+  python3 $S/outbound-registry.py check --profile nick --campaign 2026-10-01-us-options-medical-weight-loss \
+  --input "$RC_OUT/in.csv" --output $RC_OUT/b.csv
+grep_check "registry: --campaign of another campaign lifts nothing" "must be excluded +6" \
+  python3 $S/outbound-registry.py check --profile nick --campaign 2026-09-29-us-obesity-medicine \
+  --input "$RC_OUT/in.csv" --output $RC_OUT/c.csv
 
 echo "== existing tooling still green =="
 check "outbound-registry status" 0 python3 $S/outbound-registry.py status

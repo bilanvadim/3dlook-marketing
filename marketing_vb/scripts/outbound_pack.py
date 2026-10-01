@@ -1355,15 +1355,33 @@ def cmd_profiles(args) -> int:
         return 2
     raw = raw_index(cdir)
     gmap = group_map(cdir)
-    plan = batch_plan(people, gmap, args.max)
     mdir = cdir / "messages"
     mdir.mkdir(exist_ok=True)
+    # --only-missing: a widened list. People who already have messages/<pid>.md keep them
+    # (their texts went through QC and fixes); the batch holds only the new people, and
+    # each card lists what the same company was already asked, so the asks do not repeat.
+    todo, done = people, []
+    if args.only_missing:
+        done = [p for p in people if (mdir / f"{p['person_id']}.md").exists()]
+        todo = [p for p in people if not (mdir / f"{p['person_id']}.md").exists()]
+        if not todo:
+            print(f"✓ all {len(people)} people already have messages: nothing to write")
+            return 0
+    plan = batch_plan(todo, gmap, args.max)
+    if args.only_missing:
+        plan = {f"add-{today()}-{k}": v for k, v in plan.items()}
     # The list the messages are written for. Kept as a file because the importer of older
     # campaigns and the registry both read it.
     write_csv(cdir / "people-approved.csv", people, list(people[0].keys()))
 
+    def hook_of(pid: str) -> str:
+        m = re.search(r"^- Hook: (.+)$", (mdir / f"{pid}.md").read_text(encoding="utf-8"), re.M)
+        return clip(m.group(1), 160) if m else "?"
+
     index = {}
-    print(f"✓ {len(people)} people from {src} → {len(plan)} batch(es)")
+    print(f"✓ {len(people)} people from {src} → {len(plan)} batch(es)"
+          + (f" for the {len(todo)} without messages ({len(done)} keep theirs)"
+             if args.only_missing else ""))
     for name, ppl in plan.items():
         out = [f"# Profiles — batch `{name}` — {cdir.name}", "",
                f"{len(ppl)} people. One card each. Write `messages/_batch-{name}.md` for exactly "
@@ -1373,6 +1391,12 @@ def cmd_profiles(args) -> int:
             out += ["Several people here work at the same company. Give each a different hook and",
                     "a different central argument, and do not open two Message 2s the same way:",
                     "a forwarded screenshot must not read as a mail merge.", ""]
+        prior = [d for d in done if group_of(d, gmap) in groups]
+        if prior:
+            out += ["## Already written at the same company: do not reuse these hooks or asks", ""]
+            out += [f"- {d['person_id']} ({d.get('recommended_message_angle', '?')}): "
+                    f"{hook_of(d['person_id'])}" for d in prior]
+            out.append("")
         for p in sorted(ppl, key=lambda x: (group_of(x, gmap), wave_of(x), x.get("priority", "9"))):
             pid = p["person_id"]
             r = raw.get(pid, {})
@@ -1399,7 +1423,10 @@ def cmd_profiles(args) -> int:
         index[name] = [p["person_id"] for p in ppl]
         print(f"  {name:22s} {len(ppl):3d} people  {f.stat().st_size:7,} bytes  "
               + ", ".join(f"{g} {n}" for g, n in groups.most_common(5)))
-    (mdir / "_batches.json").write_text(json.dumps(index, indent=1), encoding="utf-8")
+    idx = mdir / "_batches.json"
+    if args.only_missing and idx.exists():
+        index = {**json.loads(idx.read_text()), **index}
+    idx.write_text(json.dumps(index, indent=1), encoding="utf-8")
     ok, why = card_is_fresh(cdir, "messages")
     if not ok:
         print(f"\n  ⚠ card-messages.md is {why}: run `outbound_pack.py card --campaign "
@@ -1954,6 +1981,8 @@ def main(argv=None) -> int:
     pr = camp(sub.add_parser("profiles", help="step 5 input: batch plan + profile cards"))
     pr.add_argument("--max", type=int, default=35, help="people per batch (default 35)")
     pr.add_argument("--bio", type=int, default=320, help="bio characters kept (default 320)")
+    pr.add_argument("--only-missing", action="store_true",
+                    help="widened list: a batch only for people without messages/<pid>.md")
     pr.set_defaults(func=cmd_profiles)
 
     s = camp(sub.add_parser("split-messages", help="batch file -> per-person files + gate"))
