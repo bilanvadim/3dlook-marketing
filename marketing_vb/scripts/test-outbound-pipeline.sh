@@ -723,6 +723,13 @@ import json, sys
 idx = json.load(open('$CAMP/$P/messages/_batches.json'))
 add = [k for k in idx if k.startswith('add-')]
 sys.exit(0 if add and len(idx) > len(add) and sum(len(idx[k]) for k in add) == 1 else 1)"
+grep_check "profiles --only-missing: a second round the same day gets a new batch name" "add-[0-9-]+-[a-z0-9-]+-2 " \
+  $OP profiles --campaign $P --only-missing
+check "profiles --only-missing: the first round's batch survives the second" 0 python3 -c "
+import json, sys
+idx = json.load(open('$CAMP/$P/messages/_batches.json'))
+add = sorted(k for k in idx if k.startswith('add-'))
+sys.exit(0 if len(add) == 2 and all(len(idx[k]) == 1 for k in add) else 1)"
 mv "$CAMP/$P/$ONE.bak" "$CAMP/$P/messages/$ONE"
 if mutate "scope edit under the card" "$CAMP/$P/hypothesis.md" '^## Anti-cases$' '## Anti-cases\n\nAnd yoga studios.'; then
   check "a card older than the scope fails --check -> 1" 1 $OP card --campaign $P --for messages --check

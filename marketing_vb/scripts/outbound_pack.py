@@ -1360,6 +1360,10 @@ def cmd_profiles(args) -> int:
     # --only-missing: a widened list. People who already have messages/<pid>.md keep them
     # (their texts went through QC and fixes); the batch holds only the new people, and
     # each card lists what the same company was already asked, so the asks do not repeat.
+    # The list the messages are written for. Kept as a file because the importer of older
+    # campaigns and the registry both read it. Always the full list, even when no batch is due.
+    write_csv(cdir / "people-approved.csv", people, list(people[0].keys()))
+    idx = mdir / "_batches.json"
     todo, done = people, []
     if args.only_missing:
         done = [p for p in people if (mdir / f"{p['person_id']}.md").exists()]
@@ -1369,10 +1373,17 @@ def cmd_profiles(args) -> int:
             return 0
     plan = batch_plan(todo, gmap, args.max)
     if args.only_missing:
-        plan = {f"add-{today()}-{k}": v for k, v in plan.items()}
-    # The list the messages are written for. Kept as a file because the importer of older
-    # campaigns and the registry both read it.
-    write_csv(cdir / "people-approved.csv", people, list(people[0].keys()))
+        # A second widening on the same day must not reuse a batch name: on 2026-10-01 it
+        # did, and overwrote the first round's profile cards and its _batches.json entry.
+        taken = set(json.loads(idx.read_text())) if idx.exists() else set()
+        named = {}
+        for k, v in plan.items():
+            base = name = f"add-{today()}-{k}"
+            n = 2
+            while name in taken or name in named:
+                name, n = f"{base}-{n}", n + 1
+            named[name] = v
+        plan = named
 
     def hook_of(pid: str) -> str:
         m = re.search(r"^- Hook: (.+)$", (mdir / f"{pid}.md").read_text(encoding="utf-8"), re.M)
@@ -1423,7 +1434,6 @@ def cmd_profiles(args) -> int:
         index[name] = [p["person_id"] for p in ppl]
         print(f"  {name:22s} {len(ppl):3d} people  {f.stat().st_size:7,} bytes  "
               + ", ".join(f"{g} {n}" for g, n in groups.most_common(5)))
-    idx = mdir / "_batches.json"
     if args.only_missing and idx.exists():
         index = {**json.loads(idx.read_text()), **index}
     idx.write_text(json.dumps(index, indent=1), encoding="utf-8")

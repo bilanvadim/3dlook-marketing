@@ -97,6 +97,21 @@ From the step-4 and step-5 checkpoints of `2026-09-29-us-obesity-medicine` and `
   3. **Clinic Directors** (Joshua Hicks, Nicholas Foy): `referral` lane, P3.
   4. **No extra title pull.** The list stays as Vadim pulled it (5 people at Options). The COO and CMO join only if Vadim pulls them. New rows go through `outbound-registry.py check`, `compact`, a row in `decisions.md` and `apply-decisions`: `promote` only changes people already in `people-validated.csv`.
 
+### Vadim's decisions 2026-10-01 (widening: Apollo leadership pull)
+
+- **Vadim, 2026-10-01: «додай всіх».** Every Options leader Apollo returned at seniority owner/founder/c_suite/partner/vp/head/director goes into this campaign. That is 9 people beyond the 5 from his Sales Navigator list (`sales-nav-raw/apollo-2026-10-01.csv`, 9 credits; search and log in `apollo-log.md`). This supersedes decision 2026-10-01 #4 ("no extra title pull"). The COO (Mark Wolbert) and a technology lead are not in Apollo. No checkpoints, as before; opus QC still runs.
+- **Lanes for the new roles** (same lanes as the first five):
+  - Matthew Walker, Founder and board member: `at-home-scan`, P1.
+  - Roscoe Nelson, Chief Medical Officer (since 2026-03): `at-home-scan` in the clinical register, P1.
+  - Joe Pflanz, Chief Marketing Officer: `program-feature` (what Options sells and markets), P2. His angle differs from Del Cecato's; both ask about the offer, from different seats.
+  - Krystle Collins, Regional Clinical Operations Director (nurse practitioner): `at-home-scan` in the clinical register, P2, distinct from Tarnawa's follow-up question.
+  - Regional Directors (Kenny Scott, Kaytee Stevens, Jami Waclawski), Clinical Director (Justin Leflore), Clinic Director (Jacob Ruff): `referral`, P3.
+- **Single-account rule (messages QC 2026-10-01):** everyone at Options gets invites at once. Each person in a shared lane gets a distinct question. The referral asks must differ from each other and from Hicks's (who decides the app) and Foy's (who leads telehealth).
+- **Job-change flags:**
+  - Kenny Scott's Apollo record lists two current roles: Regional Director of Sales & Operations at Fitness Ventures (Crunch Fitness), and the same title at Options. Drop him if the profile shows he left Options.
+  - Justin Leflore's Apollo record was last refreshed 2025-10-27, so it may be stale.
+- **Registry:** this campaign is already recorded for nick, so the widening is checked with `outbound-registry.py check --campaign 2026-10-01-us-options-medical-weight-loss`. The campaign's own record is not an exclusion, while every other exclusion still applies.
+
 ## ICP segment (icp-detail.md, verbatim)
 
 ### 1. Telehealth & GLP-1 / Weight Loss Programs

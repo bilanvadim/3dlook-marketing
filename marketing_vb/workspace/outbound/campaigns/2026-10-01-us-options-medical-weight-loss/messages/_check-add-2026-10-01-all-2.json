@@ -1,0 +1,15 @@
+{
+ "campaign": "2026-10-01-us-options-medical-weight-loss",
+ "checked": 1,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "add-2026-10-01-all-2",
+ "generated": "2026-10-01T14:31:57",
+ "hard": [],
+ "soft": [
+  [
+   "no company line",
+   "kennysscott M1",
+   "«Options Medical Weight Loss» is not named: check it has a line only this company gets"
+  ]
+ ]
+}
