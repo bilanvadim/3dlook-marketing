@@ -1,0 +1,6 @@
+person_id | decision | priority | angle | wave | reason
+jeremyncastle | PASS | 1 | at-home-scan | 1 | CEO of the account Vadim asked for: oversees all operations of a multi-site GLP-1 chain and owns the shift of patients from closed clinics to telehealth, the persona's first named buyer.
+jessicatarnawa | PASS | 1 | at-home-scan | 1 | Nurse practitioner leading medical operations: the most likely owner of what providers record at clinic and telehealth follow-ups (inferred from the title), the persona's second named buyer.
+jdelcecato | PASS | 2 | program-feature | 1 | Senior Director whose card profile covers growth, sales strategy and prescription medication programs: the closest person in the export to what Options' programs include and sell, though the title names no function.
+joshua-hicks-10ab2014a | PASS | 3 | referral | 1 | Runs one Options clinic and does not own the app or telehealth, so the referral ask to the COO, CMO or technology lead goes through him; thin profile kept per Vadim's 2026-09-29 decision.
+nicholasfoy34 | PASS | 3 | referral | 1 | Runs operations and revenue at two clinics' GLP-1 programs, so he can route the referral ask to leadership; bio hints at a job search, kept per Vadim's 2026-09-29 decision unless the job-change check shows he left.

@@ -1,0 +1,45 @@
+{
+ "campaign": "2026-10-01-us-options-medical-weight-loss",
+ "checked": 5,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "all",
+ "generated": "2026-10-01T12:15:38",
+ "hard": [],
+ "soft": [
+  [
+   "no company line",
+   "jeremyncastle M1",
+   "«Options Medical Weight Loss» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "jdelcecato M1",
+   "«Options Medical Weight Loss» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "jessicatarnawa M1",
+   "«Options Medical Weight Loss» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "joshua-hicks-10ab2014a M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "joshua-hicks-10ab2014a M1",
+   "«Options Medical Weight Loss» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "nicholasfoy34 M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "nicholasfoy34 M1",
+   "«Options Medical Weight Loss» is not named: check it has a line only this company gets"
+  ]
+ ]
+}
