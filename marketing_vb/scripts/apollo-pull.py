@@ -33,9 +33,15 @@ current organisation name is neither the shortlist name nor the name most people
 domain carry are dropped (free); after enrichment, the person's current organisation must
 own the domain (`organization.primary_domain`) or they go to the skipped log, not the CSV.
 
-Credentials: APOLLO_API_KEY in the environment or ~/.hermes/.env. A SCOPED key with
-mixed_people/api_search + people/bulk_match is enough; do not use a master key (it can send
-email and buy mailboxes). The key is never printed.
+Credentials, two transports, same endpoints:
+  * oo (default since 2026-10-01): Apollo is connected in OOMOL (team bilanvadim_team), and
+    calls go through `oo connector proxy apollo` with the endpoint URL. No key on this box,
+    and the oo Apollo connection is read-only. `oo connector proxy` rejects array values
+    in --query, so the query string rides in the endpoint URL.
+  * key: APOLLO_API_KEY in the environment or ~/.hermes/.env wins when it is set. A SCOPED
+    key with mixed_people/api_search + people/bulk_match is enough; never a master key (it
+    can send email and buy mailboxes). The key is never printed.
+APOLLO_TRANSPORT=key|oo forces one.
 
     apollo-pull.py health
     apollo-pull.py search --campaign <slug> [--all-functions] [--strict-titles]
@@ -52,6 +58,8 @@ import importlib.util
 import json
 import os
 import re
+import shutil
+import subprocess
 import sys
 import time
 import urllib.error
@@ -127,11 +135,73 @@ def _query(params: dict) -> str:
     return urllib.parse.urlencode(pairs)
 
 
+def transport() -> str:
+    forced = os.environ.get("APOLLO_TRANSPORT", "").strip().lower()
+    if forced in ("key", "oo"):
+        return forced
+    if _env("APOLLO_API_KEY"):
+        return "key"
+    return "oo" if shutil.which("oo") else "key"
+
+
+def _wait_of(det: dict, retry_after: str | None, attempt: int) -> int:
+    wait = next((s.get("retry_after_seconds") for s in det.get("suggestions", [])
+                 if s.get("retry_after_seconds")), None) or int(retry_after or 0)
+    return min(int(wait or 30 * (attempt + 1)), 300)
+
+
+def _refusal(status: int, path: str, err: dict, raw: str) -> ApolloError:
+    det = err.get("error_details") or {}
+    code = det.get("code") or err.get("error_code") or ""
+    msg = det.get("message") or err.get("error") or err.get("message") or raw[:200]
+    hint = {401: "the key is wrong or revoked",
+            403: "the key lacks this endpoint: add it to the scoped key in Apollo "
+                 "(Settings > Integrations > API Keys)"}.get(status, "")
+    return ApolloError(f"HTTP {status} on {path}: {code} {msg}".strip()
+                       + (f" ({hint})" if hint else ""))
+
+
+def call_oo(path: str, params: dict | None, body: dict | None, retries: int) -> dict:
+    """The same endpoint through `oo connector proxy apollo`; OOMOL injects the auth."""
+    url = f"{BASE}{path}" + (f"?{_query(params)}" if params else "")
+    for attempt in range(retries + 1):
+        try:
+            r = subprocess.run(["oo", "connector", "proxy", "apollo", "--endpoint", url,
+                                "--method", "POST", "--body", json.dumps(body or {}),
+                                "--json"], capture_output=True, text=True, timeout=180)
+        except (OSError, subprocess.TimeoutExpired) as e:
+            raise ApolloError(f"oo connector proxy apollo: {e}")
+        out = (r.stdout or "") + (r.stderr or "")
+        try:
+            env = json.loads(out[out.index("{"):])
+            res = env["data"]
+            status, data = int(res.get("status") or 0), res.get("data")
+        except (ValueError, KeyError, TypeError):
+            hint = (" (connect Apollo at https://console.oomol.com/team/bilanvadim_team/"
+                    "connections/apollo)") if "connect" in out.lower() else ""
+            raise ApolloError(f"oo connector proxy apollo: {out.strip()[:300]}{hint}")
+        if 200 <= status < 300:
+            time.sleep(PAUSE)
+            return data if isinstance(data, dict) else {}
+        err = data if isinstance(data, dict) else {}
+        if status == 429 and attempt < retries:
+            wait = _wait_of(err.get("error_details") or {},
+                            (res.get("headers") or {}).get("retry-after"), attempt)
+            print(f"  … 429 rate limit, waiting {wait}s", file=sys.stderr)
+            time.sleep(wait)
+            continue
+        raise _refusal(status, path, err, json.dumps(data)[:200])
+    raise ApolloError(f"{path}: gave up after {retries} retries")
+
+
 def call(path: str, params: dict | None = None, body: dict | None = None,
          retries: int = 4) -> dict:
+    if transport() == "oo":
+        return call_oo(path, params, body, retries)
     key = _env("APOLLO_API_KEY")
     if not key:
-        raise ApolloError("APOLLO_API_KEY is not set (environment or ~/.hermes/.env)")
+        raise ApolloError("APOLLO_API_KEY is not set (environment or ~/.hermes/.env), and "
+                          "`oo` is not on PATH")
     url = f"{BASE}{path}" + (f"?{_query(params)}" if params else "")
     data = json.dumps(body or {}).encode()
     for attempt in range(retries + 1):
@@ -149,21 +219,13 @@ def call(path: str, params: dict | None = None, body: dict | None = None,
                 err = json.loads(raw)
             except ValueError:
                 err = {}
-            det = err.get("error_details") or {}
-            code = det.get("code") or err.get("error_code") or ""
-            msg = det.get("message") or err.get("error") or err.get("message") or raw[:200]
             if e.code == 429 and attempt < retries:
-                wait = next((s.get("retry_after_seconds") for s in det.get("suggestions", [])
-                             if s.get("retry_after_seconds")), None) \
-                    or int(e.headers.get("Retry-After") or 0) or 30 * (attempt + 1)
+                wait = _wait_of(err.get("error_details") or {}, e.headers.get("Retry-After"),
+                                attempt)
                 print(f"  … 429 rate limit, waiting {wait}s", file=sys.stderr)
-                time.sleep(min(int(wait), 300))
+                time.sleep(wait)
                 continue
-            hint = {401: "the key is wrong or revoked",
-                    403: "the key lacks this endpoint: add it to the scoped key in Apollo "
-                         "(Settings > Integrations > API Keys)"}.get(e.code, "")
-            raise ApolloError(f"HTTP {e.code} on {path}: {code} {msg}".strip()
-                              + (f" ({hint})" if hint else ""))
+            raise _refusal(e.code, path, err, raw)
         except urllib.error.URLError as e:
             if attempt < retries:
                 time.sleep(5 * (attempt + 1))
@@ -264,8 +326,9 @@ def cmd_health(args) -> int:
     except ApolloError as e:
         print(f"✗ {e}", file=sys.stderr)
         return 1
-    print(f"✓ Apollo key works: people search answered ({res.get('total_entries', '?')} "
-          "people at apollo.io). Enrichment scope is checked on the first `enrich`.")
+    print(f"✓ Apollo answers via {transport()}: people search returned "
+          f"{res.get('total_entries', '?')} people at apollo.io. Enrichment is checked on "
+          "the first `enrich`.")
     return 0
 
 

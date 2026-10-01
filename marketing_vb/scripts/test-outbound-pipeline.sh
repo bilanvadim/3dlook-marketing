@@ -828,9 +828,11 @@ https://www.linkedin.com/in/ann-smith,Ann,Smith,Chief Operating Officer,Stub Cli
 https://www.linkedin.com/in/eve-stone,Eve,Stone,Chief Operating Officer,Stub Clinic,United States,,COO at Stub Clinic,SN headline Eve,bio,https://www.linkedin.com/company/stub-clinic
 SNEOF
 
-AP="env -u APOLLO_API_KEY HOME=$AP_HOME APOLLO_BASE_URL=http://127.0.0.1:$AP_PORT APOLLO_PAUSE=0 python3 $S/apollo-pull.py"
+# APOLLO_TRANSPORT=key everywhere below: `oo` is on PATH on this box, and without the pin a
+# key-less run would take the oo transport and reach the real Apollo.
+AP="env -u APOLLO_API_KEY HOME=$AP_HOME APOLLO_TRANSPORT=key APOLLO_BASE_URL=http://127.0.0.1:$AP_PORT APOLLO_PAUSE=0 python3 $S/apollo-pull.py"
 check "apollo: no key -> 1" 1 \
-  env -u APOLLO_API_KEY HOME=$(mktemp -d) APOLLO_BASE_URL=http://127.0.0.1:$AP_PORT python3 $S/apollo-pull.py health
+  env -u APOLLO_API_KEY HOME=$(mktemp -d) APOLLO_TRANSPORT=key APOLLO_BASE_URL=http://127.0.0.1:$AP_PORT python3 $S/apollo-pull.py health
 check "apollo: health (free search) -> 0" 0 $AP health
 check "apollo: enrich before search -> 2" 2 $AP enrich --campaign $A --max-credits 10
 grep_check "apollo: search sends titles, drops alumni and Sales Nav dupes" \
@@ -839,7 +841,7 @@ check "apollo: over --max-credits -> 1" 1 $AP enrich --campaign $A --max-credits
 grep_check "apollo: --dry-run spends nothing" "would enrich 3 people" $AP enrich --campaign $A --dry-run
 check "apollo: dry run wrote no file" 0 bash -c "! ls $CAMP/$A/sales-nav-raw/apollo-*.csv >/dev/null 2>&1"
 grep_check "apollo: scoped key without bulk_match -> explained 403" "lacks this endpoint" \
-  env -u APOLLO_API_KEY HOME=$AP_HOME403 APOLLO_BASE_URL=http://127.0.0.1:$AP_PORT APOLLO_PAUSE=0 \
+  env -u APOLLO_API_KEY HOME=$AP_HOME403 APOLLO_TRANSPORT=key APOLLO_BASE_URL=http://127.0.0.1:$AP_PORT APOLLO_PAUSE=0 \
   python3 $S/apollo-pull.py enrich --campaign $A --max-credits 10
 grep_check "apollo: enrich backs off a 429, drops the ex-employee" "2 people · 3 credits" \
   $AP enrich --campaign $A --max-credits 10
@@ -854,6 +856,36 @@ names = sorted(r['full_name'] for r in rows)
 eve = [r for r in rows if r['full_name'] == 'Eve Stone']
 sys.exit(0 if names == ['Ann Smith', 'Bob Jones', 'Eve Stone'] and len(eve) == 1
          and 'SN headline' in eve[0]['profile_summary'] else 1)"
+# The oo transport, through a fake `oo` that forwards to the same stub. The real one would
+# reach Apollo through OOMOL; this proves the envelope parsing and the not-connected path.
+FAKE_BIN=$(mktemp -d)
+cat > "$FAKE_BIN/oo" <<'OOEOF'
+#!/usr/bin/env python3
+import json, os, sys, urllib.request, urllib.error
+a = sys.argv[1:]
+if os.environ.get("FAKE_OO_MODE") == "disconnected":
+    print("Connector proxy returned HTTP 404 (errorCode: app_not_found): connection_required: "
+          "apollo is not connected. Connect apollo before executing.")
+    sys.exit(1)
+url = a[a.index("--endpoint") + 1]; body = a[a.index("--body") + 1].encode()
+req = urllib.request.Request(url, data=body, method="POST",
+                             headers={"x-api-key": "good-key", "Content-Type": "application/json"})
+try:
+    with urllib.request.urlopen(req) as r:
+        status, data = r.status, json.loads(r.read() or b"{}")
+except urllib.error.HTTPError as e:
+    status, data = e.code, json.loads(e.read() or b"{}")
+print("Execution ID: fake")
+print(json.dumps({"data": {"status": status, "headers": {}, "data": data},
+                  "meta": {"service": "apollo"}}))
+OOEOF
+chmod +x "$FAKE_BIN/oo"
+grep_check "apollo: no key falls back to the oo transport" "via oo" \
+  env -u APOLLO_API_KEY -u APOLLO_TRANSPORT HOME=$(mktemp -d) PATH="$FAKE_BIN:$PATH" \
+  APOLLO_BASE_URL=http://127.0.0.1:$AP_PORT APOLLO_PAUSE=0 python3 $S/apollo-pull.py health
+grep_check "apollo: oo not connected -> names the connect page" "connections/apollo" \
+  env -u APOLLO_API_KEY -u APOLLO_TRANSPORT HOME=$(mktemp -d) PATH="$FAKE_BIN:$PATH" FAKE_OO_MODE=disconnected \
+  APOLLO_BASE_URL=http://127.0.0.1:$AP_PORT python3 $S/apollo-pull.py health
 kill $STUB3_PID 2>/dev/null
 
 echo "== existing tooling still green =="
