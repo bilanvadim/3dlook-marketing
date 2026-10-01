@@ -1,0 +1,234 @@
+{
+ "generated": "2026-10-01T05:40:02+00:00",
+ "items": [
+  {
+   "id": "08e9d87b-7b22-4dd2-976b-ca23c3d0e359",
+   "title": "CancerIQ Expands Epic Integration to Automate Cancer Screening and Survivorship Across 275 Clinics",
+   "date": "2026-09-28",
+   "tags": [
+    "Cancer Care",
+    "Interoperability / Data Management",
+    "Operational Efficiency",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/canceriq-expands-epic-integration-to-automate-cancer-screening-and-survivorship-across-275-clinics"
+  },
+  {
+   "id": "0a30bcaa-5628-4f3a-a448-1dad9abc20b2",
+   "title": "Oracle Health and ID.me Partner to Streamline Secure Health Data Access",
+   "date": "2026-09-28",
+   "tags": [
+    "Interoperability / Data Management",
+    "Patient Engagement / Experience",
+    "Operational Efficiency",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/oracle-health-and-id-me-partner-to-streamline-secure-health-data-access"
+  },
+  {
+   "id": "3acb4726-6989-4a0c-971a-601988c40617",
+   "title": "FDA Issues Draft Guidance for Robotic Surgical Devices",
+   "date": "2026-09-28",
+   "tags": [
+    "Emerging Technology",
+    "Cyber Security",
+    "Government",
+    "Policy and Regulation"
+   ],
+   "url": "https://hlth.com/insights/news/fda-issues-draft-guidance-for-robotic-surgical-devices"
+  },
+  {
+   "id": "0d234047-3d2f-485c-9e7e-d303861c6a1a",
+   "title": "FDA Clears Tempus AI Tool to Detect Mitral Regurgitation From ECGs",
+   "date": "2026-09-29",
+   "tags": [
+    "Diagnostics",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/fda-clears-tempus-ai-tool-to-detect-mitral-regurgitation-from-ecgs"
+  },
+  {
+   "id": "ac49bd56-ab19-4636-8554-6fdd7e753ea9",
+   "title": "Leica Biosystems Acquires StatLab to Expand Cancer Diagnostics",
+   "date": "2026-09-29",
+   "tags": [
+    "Cancer Care",
+    "Investments and Partnerships",
+    "Diagnostics",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/leica-biosystems-acquires-statlab-to-expand-cancer-diagnostics"
+  },
+  {
+   "id": "f193b2b9-7b10-4e5a-b441-afa247978124",
+   "title": "Ping An Launches AI-Powered Healthcare Service for Expats",
+   "date": "2026-09-29",
+   "tags": [
+    "Telehealth / Virtual Care / Remote Patient Monitoring",
+    "Care Coordination / Navigation / Care Access",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/ping-an-launches-ai-powered-healthcare-service-for-expats"
+  },
+  {
+   "id": "46d1beed-8fd7-4f01-9b17-6afc037c2733",
+   "title": "Basalt Health Raises $20M to Scale AI-Powered Post-Acute Care Platform",
+   "date": "2026-09-30",
+   "tags": [
+    "Investments and Partnerships",
+    "Startup",
+    "Care Coordination / Navigation / Care Access",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/basalt-health-raises-20m-to-scale-ai-powered-post-acute-care-platform"
+  },
+  {
+   "id": "6fd50cc8-ae8b-4d17-9053-cef3479ba68d",
+   "title": "EliseAI Raises $350M as Valuation Doubles to $4B",
+   "date": "2026-09-30",
+   "tags": [
+    "Operational Efficiency",
+    "Startup",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/eliseai-raises-350m-as-valuation-doubles-to-4b"
+  },
+  {
+   "id": "c7de4e7d-7f48-4cd2-9a05-dc05975686b7",
+   "title": "Tiny Health Raises $33M to Expand Microbiome Testing and Research",
+   "date": "2026-09-30",
+   "tags": [
+    "Investments and Partnerships",
+    "Medical Research",
+    "Startup",
+    "Diagnostics",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/tiny-health-raises-33m-to-expand-microbiome-testing-and-research"
+  }
+ ],
+ "analyses": {
+  "08e9d87b-7b22-4dd2-976b-ca23c3d0e359": {
+   "id": "08e9d87b-7b22-4dd2-976b-ca23c3d0e359",
+   "score": 1,
+   "segment": "FitXpress §10 BCRL",
+   "what": "CancerIQ розширив інтеграцію з Epic: автоматизує скринінг раку, оцінку ризику та survivorship-плани. Працює в понад 60 health systems і 275 клініках.",
+   "why": "Survivorship-платформи формально є в сегменті §10, але CancerIQ працює з генетичним ризиком і даними EHR, а не з вимірами тіла, тож конкретного плею немає.",
+   "play": "none",
+   "companies": [
+    "CancerIQ",
+    "Epic"
+   ],
+   "caveat": "Для BCRL у proof-points.md поки немає клінічного proof point.",
+   "_date": "2026-09-28"
+  },
+  "0a30bcaa-5628-4f3a-a448-1dad9abc20b2": {
+   "id": "0a30bcaa-5628-4f3a-a448-1dad9abc20b2",
+   "score": 1,
+   "segment": "—",
+   "what": "Oracle Health і ID.me вбудовують цифрову верифікацію особи в реєстрацію пацієнтів і в credentialing лікарів для EPCS.",
+   "why": "Це загальний тренд на верифікацію даних під час intake. Щонайбільше ідея для контенту на кшталт «верифікована особа, наступний крок — верифіковані дані тіла», акаунта тут немає.",
+   "play": "content_only",
+   "companies": [
+    "Oracle Health",
+    "ID.me"
+   ],
+   "_date": "2026-09-28"
+  },
+  "3acb4726-6989-4a0c-971a-601988c40617": {
+   "id": "3acb4726-6989-4a0c-971a-601988c40617",
+   "score": 0,
+   "segment": "—",
+   "what": "FDA опублікувала draft guidance щодо premarket submissions для роботизованих хірургічних систем.",
+   "why": "Регулювання хірургічних роботів не стосується 3DLOOK.",
+   "play": "none",
+   "companies": [],
+   "_date": "2026-09-28"
+  },
+  "0d234047-3d2f-485c-9e7e-d303861c6a1a": {
+   "id": "0d234047-3d2f-485c-9e7e-d303861c6a1a",
+   "score": 0,
+   "segment": "—",
+   "what": "Tempus AI отримала FDA 510(k) clearance для Tempus ECG-MR. Інструмент виявляє ознаки мітральної регургітації за ЕКГ.",
+   "why": "ЕКГ-діагностика не стосується вимірів тіла.",
+   "play": "none",
+   "companies": [
+    "Tempus AI"
+   ],
+   "_date": "2026-09-29"
+  },
+  "ac49bd56-ab19-4636-8554-6fdd7e753ea9": {
+   "id": "ac49bd56-ab19-4636-8554-6fdd7e753ea9",
+   "score": 0,
+   "segment": "—",
+   "what": "Leica Biosystems (Danaher) закрила купівлю StatLab Medical Products і розширює pathology-портфель.",
+   "why": "Лабораторна патологія та онкодіагностика — не наш ICP.",
+   "play": "none",
+   "companies": [
+    "Leica Biosystems",
+    "Danaher",
+    "StatLab Medical Products"
+   ],
+   "_date": "2026-09-29"
+  },
+  "f193b2b9-7b10-4e5a-b441-afa247978124": {
+   "id": "f193b2b9-7b10-4e5a-b441-afa247978124",
+   "score": 0,
+   "segment": "—",
+   "what": "Ping An Good Doctor тестує в Шеньчжені Ping An GlobalCare: навігацію для експатів у Китаї з AI-перекладом, віртуальними консультаціями та кейс-координаторами.",
+   "why": "Китай — не наше гео, і це навігація та переклад, а не weight-loss чи виміри тіла.",
+   "play": "none",
+   "companies": [
+    "Ping An Good Doctor"
+   ],
+   "_date": "2026-09-29"
+  },
+  "46d1beed-8fd7-4f01-9b17-6afc037c2733": {
+   "id": "46d1beed-8fd7-4f01-9b17-6afc037c2733",
+   "score": 0,
+   "segment": "—",
+   "what": "Basalt Health залучила $20M (Series A) на AI-автоматизацію обробки referrals у post-acute care.",
+   "why": "Hospital ops і обробка документів referrals ніяк не пов'язані з даними тіла.",
+   "play": "none",
+   "companies": [
+    "Basalt Health",
+    "Accolade",
+    "Lifepoint Health",
+    "ScionHealth"
+   ],
+   "_date": "2026-09-30"
+  },
+  "6fd50cc8-ae8b-4d17-9053-cef3479ba68d": {
+   "id": "6fd50cc8-ae8b-4d17-9053-cef3479ba68d",
+   "score": 0,
+   "segment": "—",
+   "what": "EliseAI залучила $350M за оцінки $4B. Компанія автоматизує адмін-процеси в housing і specialty physician groups.",
+   "why": "Адміністративна AI-автоматизація — не наш ICP.",
+   "play": "none",
+   "companies": [
+    "EliseAI"
+   ],
+   "_date": "2026-09-30"
+  },
+  "c7de4e7d-7f48-4cd2-9a05-dc05975686b7": {
+   "id": "c7de4e7d-7f48-4cd2-9a05-dc05975686b7",
+   "score": 0,
+   "segment": "—",
+   "what": "Tiny Health залучила $33M (Series B) на мікробіомне тестування та дослідження. Також запускає Microbiome Research Program на $5M.",
+   "why": "Тестування мікробіому не пов'язане з BMI, body composition чи вимірами тіла.",
+   "play": "none",
+   "companies": [
+    "Tiny Health",
+    "Evvy",
+    "Viome",
+    "Salvo Health"
+   ],
+   "_date": "2026-09-30"
+  }
+ },
+ "posts": []
+}
