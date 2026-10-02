@@ -1,0 +1,3 @@
+person_id,linkedin_url,full_name,first_name,last_name,title,company_name,response_date,response_text,which_message_replied_to,closely_contact_id,closely_conversation_id,closely_campaign_id,closely_campaign_name,sending_account,thread_file
+dmitryzenevich,https://www.linkedin.com/in/dmitryzenevich/,Dmitry Zenevich,Dmitry,Zenevich,,,2026-10-02T13:08:37+03:00,"Hi Olena! 
+Thanks, at first glance, this could make sense for some of our products. Send me some materials I can share with the product team. If they’re interested, I’ll connect you directly.",1,87117716,,144833,,,messages/dmitryzenevich.md
