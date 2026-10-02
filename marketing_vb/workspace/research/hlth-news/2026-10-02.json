@@ -1,0 +1,96 @@
+{
+ "generated": "2026-10-02T05:40:48+00:00",
+ "items": [
+  {
+   "id": "6be028b4-ec13-49cd-9428-c6ef5e6875b5",
+   "title": "Covista Projects U.S. Clinician Shortage to Nearly Double by 2040",
+   "date": "2026-10-01",
+   "tags": [
+    "Primary Care",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services",
+    "Policy and Regulation"
+   ],
+   "url": "https://hlth.com/insights/news/covista-projects-u-s-clinician-shortage-to-nearly-double-by-2040"
+  },
+  {
+   "id": "8fe9c178-a128-4149-9ebe-ce4177b61dc6",
+   "title": "Profluent and BioMarin Partner to Design Novel Enzyme Therapies Using AI",
+   "date": "2026-10-01",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Drug Discovery / Pharma / Biotech",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/profluent-and-biomarin-partner-to-design-novel-enzyme-therapies-using-ai"
+  },
+  {
+   "id": "3c0ea977-3a8e-4086-8843-da6a6368df99",
+   "title": "PHTI Finds Digital Health Buyers Increasingly Tie Payments to Performance",
+   "date": "2026-10-01",
+   "tags": [
+    "Alternative Payment Models",
+    "Payer (Insurer)",
+    "Value Based Care (VBC)",
+    "Operational Efficiency",
+    "Health System & Health Provider"
+   ],
+   "url": "https://hlth.com/insights/news/phti-finds-digital-health-buyers-increasingly-tie-payments-to-performance"
+  }
+ ],
+ "analyses": {
+  "6be028b4-ec13-49cd-9428-c6ef5e6875b5": {
+   "id": "6be028b4-ec13-49cd-9428-c6ef5e6875b5",
+   "score": 1,
+   "segment": "—",
+   "what": "Covista прогнозує, що дефіцит клініцистів у США майже подвоїться до 2040. За їхньою оцінкою, AI-інструменти для автоматизації адмінзадач можуть закрити до 37% цього розриву.",
+   "why": "Загальний тренд щодо кадрового дефіциту в US healthcare. Тут немає ICP-акаунта чи свіжого тригера, найбільше — тема для контенту про автоматизацію intake.",
+   "play": "content_only",
+   "companies": [
+    "Covista",
+    "Walden University"
+   ],
+   "_date": "2026-10-01"
+  },
+  "8fe9c178-a128-4149-9ebe-ce4177b61dc6": {
+   "id": "8fe9c178-a128-4149-9ebe-ce4177b61dc6",
+   "score": 0,
+   "segment": "—",
+   "what": "Profluent і BioMarin Pharmaceutical домовилися разом розробляти нові ферментні терапії для pipeline BioMarin за допомогою AI-моделей дизайну білків.",
+   "why": "Це drug discovery / protein design, до даних про тіло й до сегментів 3DLOOK стосунку не має.",
+   "play": "none",
+   "companies": [
+    "Profluent",
+    "BioMarin Pharmaceutical",
+    "BioMarin"
+   ],
+   "_date": "2026-10-01"
+  },
+  "3c0ea977-3a8e-4086-8843-da6a6368df99": {
+   "id": "3c0ea977-3a8e-4086-8843-da6a6368df99",
+   "score": 2,
+   "segment": "FitXpress §1 Telehealth & GLP-1",
+   "what": "PHTI опитав 321 покупця digital health у США: 57% мають performance- чи risk-based контракти, і 85% із них ставлять під ризик щонайменше 25% вартості контракту. Перевіряти результати вендорів покупцям важко: 42% називають проблемою proprietary measurement methodologies, 40% — звіти лише по найактивніших підгрупах. Тому замість реєстрації вони дедалі частіше дивляться на активне використання та виконання clinical milestones.",
+   "why": "Cardiometabolic і weight-management вендори, які продають employers і health plans, тепер отримують гроші за результат, який покупець має змогу перевірити. Для них це саме той тригер з ICP, коли платники тиснуть і вимагають показати outcomes. FitXpress вбудовує в їхній застосунок скан тіла з 2 фото (BMI, body composition, 80+ мірок) з longitudinal tracking і audit logs. Регулярний check-in стає зрозумілим milestone і джерелом структурованих даних прогресу замість self-report.",
+   "play": "hook_for_existing",
+   "campaign": {
+    "title": "PHTI: performance-based контракти → дані прогресу тіла, які можна перевірити",
+    "profile": "nick",
+    "market": "USA",
+    "targets": "US cardiometabolic, weight-management і diabetes care платформи, які продають employers і health plans за performance-based контрактами. Переважно це фіксований список кампанії 2026-09-29-us-cardiometabolic.",
+    "roles": "Head of Outcomes / Program Insights, Chief Medical Officer, Growth & Revenue Operations (employer/health plan partnerships), Head of Member Engagement / Retention",
+    "angle": "За даними PHTI, 57% US-покупців digital health уже працюють на performance-based контрактах і оцінюють активне використання та clinical milestones, а не реєстрацію. Регулярний скан тіла в застосунку на 30/60/90 днях водночас закриває milestone і дає структуровані дані прогресу для звіту employer чи health plan, а не self-report.",
+    "existing_campaign": "2026-09-29-us-cardiometabolic",
+    "task": "USA: add PHTI performance-based-contract hook to 2026-09-29-us-cardiometabolic — in-app body-scan check-ins as trackable milestone + structured progress data for employer/health-plan outcome reporting"
+   },
+   "caveat": "Стаття не про obesity чи GLP-1: серед основних напрямів контрактів названо diabetes, primary/chronic care та mental health. Не можна обіцяти, що body-дані допоможуть досягти financial savings або інтегруватися з claims-даними. Частина US cardiometabolic і weight-management акаунтів уже в контакті з nick (9amHealth, Level2, Form Health, Found, Calibrate та інші), тож для них це лише hook для follow-up. Перед відправкою перевірити реєстр. PHTI — дослідницька організація, а не акаунт.",
+   "companies": [
+    "Peterson Health Technology Institute",
+    "PHTI"
+   ],
+   "_date": "2026-10-01"
+  }
+ },
+ "posts": []
+}
