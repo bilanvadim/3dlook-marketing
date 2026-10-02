@@ -38,6 +38,35 @@ large surfaces, pill for circular. Spacing only from the 2 · 4 · 8 · 12 · 16
 Proof moments lead with oversized numerals — the number is the hero. Prefer the three carrier assets
 (3D body-scan render, guided-capture phone UI, admin panel in a browser frame) over icon grids.
 
+### Composition references — Inspo MCP (optional)
+
+Before building the HTML prototype, the right-hand column of the table above can be informed by real
+shipped sites. The `inspo` MCP server (archive of ~830 production sites, connected 2026-10-02 in
+local scope for interactive sessions in this repo only, so autonomous Conductor runs never see it)
+answers "how do other sites lay out a stat strip, a comparison block, a demo CTA band". It is a
+reference for **composition only**. If the tools are not available in the session, skip this step;
+it never blocks the pass.
+
+- **Budget:** `recommend(brief)` plus one or two `search_screens` / `find_examples_for_macrostructure`
+  calls and `get_screen` on the 3-5 references you keep. `find_by_color("#143DFF")` returns sites
+  that carry our accent (headroom.com, calendly, coinbase), which is useful for seeing how others
+  keep electric blue a single sharp accent.
+- **Ignore from every response:** `paletteSuggestion`, fonts, palettes and radii. On a navy + electric
+  blue brief, `recommend` suggested neon green `#04f17e`; extracted palettes are unreliable (Linear's
+  read as mustard `#b69a24`). Tokens come from `DESIGN.md`, always.
+- **Ignore the text-only hero.** `recommend` often proposes the "Marquee" hero (type only, no
+  imagery). `DESIGN.md` §1 says product over icons: our hero carries a carrier asset.
+- **Expect thin vertical coverage.** On 2026-10-02 the archive had 9 `health` sites (mostly consumer
+  wellness), 0 insurance and 4 `stat-led`. Use it for section patterns, never for "what healthtech
+  looks like".
+- **The brief leaves the building.** It goes to a third-party server. Describe the page type and the
+  layout problem only: no client names, no internal numbers, nothing that is not already public.
+- **Record what you used.** List the reference slugs in `workspace/pages/{slug}/log.md` and, if a
+  layout choice came from one, say so in `fact-sheet.md`.
+
+The two composition rules the server sends with every `recommend` are checks in §4 below; they hold
+whether or not the server was used.
+
 ---
 
 ## Review order — highest cost of failure first
@@ -75,6 +104,15 @@ question, not a polish item.
 ### 4. Layout and responsive
 
 - [ ] Viewport meta present
+- [ ] Hero complete in the first viewport at 1280×800: nav, H1, supporting line, primary CTA and the
+      hero visual all visible without scrolling (`min-height: 100svh`, never a fixed height that
+      overflows). At 375×667 at least the H1 and the primary CTA are above the fold; the visual may
+      follow. H1 sized to 2-3 balanced lines; an oversized heading that pushes the CTA below the fold
+      is the most common failure of a generated page
+- [ ] Mid-page sections keep their block padding: a container's `padding` shorthand
+      (`.wrap{padding:0 32px}`) silently zeroes `section{padding:96px 0}` on the same element. Give
+      the container `padding-inline` only, and check that a mid-page section's computed block padding
+      is not `0px`
 - [ ] Body text at least 16px on mobile
 - [ ] No horizontal scroll at 320px
 - [ ] Comparison tables, accuracy tables and diagrams scroll inside their own container, not the page

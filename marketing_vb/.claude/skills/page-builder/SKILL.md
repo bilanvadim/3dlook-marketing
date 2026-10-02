@@ -170,7 +170,9 @@ all. Copy the telehealth page's graph; it is the cheapest win available here.
 **5. UI/UX.** Run `references/ux-pass.md`. `DESIGN.md` decides tokens — Satoshi, `#143DFF` as the
 single accent, navy `#050F40` surfaces, the 4/5/15/20/30–40 px radius scale, the 8-step spacing
 rhythm. Accessibility first, then touch, then performance, then layout. Scannable in 60 seconds,
-mobile first, tables scrolling inside their own container.
+mobile first, tables scrolling inside their own container, hero complete in the first viewport.
+Layout references from real sites may come from the `inspo` MCP server, for composition only and on
+the terms in `ux-pass.md` ("Composition references").
 
 **6. Conversion.** One primary action matching the site's own language. Inline actions contextual to
 their section. A soft alternative for buyers not ready to talk: the accuracy framework article, a
