@@ -1,0 +1,140 @@
+{
+ "campaign": "2026-10-02-us-virta-health",
+ "checked": 50,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": null,
+ "generated": "2026-10-02T12:07:31",
+ "hard": [],
+ "soft": [
+  [
+   "no calendar link",
+   "leanabalasco M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "candi-buell-797a7b30 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "manu-diwakar-1aa578 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "danielle-ritter-ab45477 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "kristenlarson4 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "jack-rose-316a7a8 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "jared-maruji-8b715441 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "taraconboy M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "dani-lasalvia M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "rogerkumar M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "ryan-andrews-77375617 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "judy-huang-6a401019 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "emilysummerville M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "alex-choi-7612a620 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "taylor-p-35642522 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "sam-berklacich-3524b754 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "amy-mengyun-zhang M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "patrick-tumpane-3403442a M2",
+   "angle referral"
+  ],
+  [
+   "greeting",
+   "alexander-xander-jones-cpa M1",
+   "«Hi Xander,» has no «Alexander (Xander)»"
+  ],
+  [
+   "greeting",
+   "alexander-xander-jones-cpa M2",
+   "«Hi Xander,» has no «Alexander (Xander)»"
+  ],
+  [
+   "no calendar link",
+   "alexander-xander-jones-cpa M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "andrew-chen-b33b0395 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "andreburkholder M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "kristen-keating-weeks-055a8b24 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "shravyagupta M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "jason-lee-798b6b1 M2",
+   "angle referral"
+  ]
+ ]
+}

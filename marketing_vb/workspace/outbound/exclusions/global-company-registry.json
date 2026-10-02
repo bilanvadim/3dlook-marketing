@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-01",
+  "last_updated": "2026-10-02",
   "companies": {
     "safariland": {
       "covered_by_profile": null,
@@ -1207,6 +1207,14 @@
       "campaign_id": "2026-10-01-us-options-medical-weight-loss",
       "product": "fitxpress",
       "date": "2026-10-01",
+      "status": "active"
+    },
+    "virta-health": {
+      "display_name": "Virta Health",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-02-us-virta-health",
+      "product": "fitxpress",
+      "date": "2026-10-02",
       "status": "active"
     }
   }

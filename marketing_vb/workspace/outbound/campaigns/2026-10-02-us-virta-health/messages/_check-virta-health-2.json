@@ -1,0 +1,25 @@
+{
+ "campaign": "2026-10-02-us-virta-health",
+ "checked": 15,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "virta-health-2",
+ "generated": "2026-10-02T12:07:14",
+ "hard": [],
+ "soft": [
+  [
+   "no calendar link",
+   "kristen-keating-weeks-055a8b24 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "shravyagupta M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "jason-lee-798b6b1 M2",
+   "angle referral"
+  ]
+ ]
+}
