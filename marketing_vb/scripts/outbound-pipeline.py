@@ -111,6 +111,10 @@ def geo_profile(country: str) -> str | None:
     c = (country or "").strip().lower()
     if not c or "unknown" in c:
         return None
+    # Place names that contain another market's needle: "Sydney, New South Wales,
+    # Australia" matched "wales" and 65 Australians were flagged geo:katerina (2026-10-02);
+    # "New England" would do the same to the US.
+    c = re.sub(r"new south wales|new england", " ", c)
     tokens = set(re.split(r"[^a-z.]+", c))
     # A US parent does not move the HQ: "England (US parent)" is still katerina's.
     for prof, needles in PROFILE_GEO.items():

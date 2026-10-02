@@ -1710,7 +1710,8 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
         m1_low = (msgs.get(1) or "").lower()
         if m1_low and g and g != "?":
             names = {g.lower()} | {k.replace("-", " ") for k in PIPE.company_keys(g)}
-            short = re.sub(r"(?i)[\s-]*(health|healthcare|medical|clinic)$", "", g).strip().lower()
+            short = re.sub(r"(?i)[\s-]*(health|healthcare|medical|clinic|australia|uk|usa|us|"
+                           r"europe|group|inc\.?|ltd\.?|pty ltd)$", "", g).strip().lower()
             if len(short) >= 3:
                 names.add(short)            # copy says "9am" for 9amHealth
             if not any(nm and nm in m1_low for nm in names):
@@ -1758,11 +1759,11 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
             if asks:
                 ctas[(group_of(p, gmap), asks[-1].lower())].append(p["person_id"])
         for (g, a), who in ctas.items():
-            if len(who) >= 3:
+            if len(who) >= 2:               # a pair at one company already reads as a merge
                 soft.append((f"M{n} closing ask repeated", f"{g} ×{len(who)}",
                              f"«{clip(a, 50)}»: " + ", ".join(who[:4])))
     for (pid, n), b in bodies.items():
-        if re.search(r"\b45\s*sec", b, re.I) and SPEED_PHRASE not in b:
+        if re.search(r"\b45\s*sec|\bin seconds\b|\bseconds\b", b, re.I) and SPEED_PHRASE not in b:
             soft.append(("speed wording", f"{pid} M{n}", f"use «{SPEED_PHRASE}» verbatim"))
 
     report = {"campaign": cdir.name, "checked": len(people), "source": src, "batch": batch,

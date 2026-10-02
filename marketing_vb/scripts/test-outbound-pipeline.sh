@@ -602,6 +602,13 @@ check "card --for validate -> 0" 0 $OP card --campaign $P --for validate
 check "card --for messages -> 0" 0 $OP card --campaign $P --for messages
 check "fresh card passes --check -> 0" 0 $OP card --campaign $P --for messages --check
 grep_check "the card carries no pricing section" "^0$" grep -c "^### Pricing" "$CAMP/$P/card-messages.md"
+# "New South Wales" contains "wales": 65 Sydney people were flagged geo:katerina (2026-10-02).
+GEO='import importlib.util as u, sys
+s = u.spec_from_file_location("p", "scripts/outbound-pipeline.py"); m = u.module_from_spec(s); s.loader.exec_module(m)
+print(m.geo_profile(sys.argv[1]))'
+grep_check "Sydney, New South Wales, Australia -> vadim" "^vadim$" python3 -c "$GEO" "Sydney, New South Wales, Australia"
+grep_check "Boston, New England, United States -> nick" "^nick$" python3 -c "$GEO" "Boston, New England, United States"
+grep_check "Cardiff, Wales, United Kingdom -> katerina" "^katerina$" python3 -c "$GEO" "Cardiff, Wales, United Kingdom"
 # Both products number their ICP segments from 1: a FitXpress §1 card once carried
 # Mobile Tailor §1 ("MTM Brands & Tailors") as well (2026-09-29).
 ICP_SEG='import importlib.util as u, pathlib, sys
