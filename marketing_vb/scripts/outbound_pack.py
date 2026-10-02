@@ -727,8 +727,11 @@ def cmd_compact(args) -> int:
 # ================================================================== card
 
 CARD_SECTIONS = {
+    # "open questions": the validator's summary must ask Vadim the hypothesis's own open
+    # questions by number. Three QCs in a row (2026-09-29, 09-29, 10-02) marked it down for
+    # dropping or renumbering them, because the card never carried the list.
     "validate": ("target buyer persona", "anti-case", "exclusion", "decisions",
-                 "feature screen", "company types in scope"),
+                 "feature screen", "company types in scope", "open questions"),
     "messages": ("rules for steps", "use case", "message angle", "outreach language",
                  "decisions"),
 }
@@ -1181,7 +1184,7 @@ def cmd_skipped(args) -> int:
     print(text)
     print("\nPut the senior pools in the FIRST report to Vadim, with a proposed angle per pool.\n"
           "He adds by name: scripts/outbound_pack.py promote --campaign "
-          f"{cdir.name} --names \"A; B\" --angle referral --wave 2 --pool X")
+          f"{cdir.name} --names \"A; B\" --angle referral --pool X")
     return 0
 
 
@@ -1590,6 +1593,9 @@ def read_messages(path: Path) -> dict[int, str]:
             re.findall(r"## Message (\d)[^\n]*\n(.*?)\n\*\*Char count", text, re.S)}
 
 
+SPEED_PHRASE = "under 45 seconds from the photos to structured results"
+
+
 def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> int:
     people, src = expected_people(cdir)
     _, fm = hypothesis_of(cdir)
@@ -1736,6 +1742,28 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
             if len(who) >= max(4, len(people) // 8) and all(
                     len(v) < 3 for (g, f2), v in per_group.items() if f2 == fs):
                 soft.append((f"M{n} opener repeated", f"campaign ×{len(who)}", f"«{clip(fs, 50)}»"))
+
+    # Closing asks and speed wording, 2026-10-02 (Virta, 50 people at one company): the
+    # gate saw openers only, and QC found "Open to a quick chat?" eight times and the
+    # speed phrase reworded for the second campaign running.
+    for n in (1, 2):
+        ctas: dict[tuple[str, str], list[str]] = defaultdict(list)
+        for p in people:
+            b = bodies.get((p["person_id"], n))
+            if not b:
+                continue
+            sents = [s.strip() for s in re.split(r"(?<=[.?!])\s+", re.sub(r"https?://\S+", "", b))
+                     if s.strip() and s.strip() != OWNER.get(profile, "")]
+            asks = [s for s in sents if s.endswith("?")]
+            if asks:
+                ctas[(group_of(p, gmap), asks[-1].lower())].append(p["person_id"])
+        for (g, a), who in ctas.items():
+            if len(who) >= 3:
+                soft.append((f"M{n} closing ask repeated", f"{g} ×{len(who)}",
+                             f"«{clip(a, 50)}»: " + ", ".join(who[:4])))
+    for (pid, n), b in bodies.items():
+        if re.search(r"\b45\s*sec", b, re.I) and SPEED_PHRASE not in b:
+            soft.append(("speed wording", f"{pid} M{n}", f"use «{SPEED_PHRASE}» verbatim"))
 
     report = {"campaign": cdir.name, "checked": len(people), "source": src, "batch": batch,
               "generated": dt.datetime.now().isoformat(timespec="seconds"),
