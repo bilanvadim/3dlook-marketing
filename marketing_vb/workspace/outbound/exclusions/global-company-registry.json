@@ -1216,6 +1216,142 @@
       "product": "fitxpress",
       "date": "2026-10-02",
       "status": "active"
+    },
+    "28-by-sam-wood": {
+      "display_name": "28 by Sam Wood",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-08-14-au-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-14",
+      "status": "active"
+    },
+    "aia-australia": {
+      "display_name": "AIA Australia",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-08-14-au-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-14",
+      "status": "active"
+    },
+    "defeat-diabetes": {
+      "display_name": "Defeat Diabetes",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-08-14-au-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-14",
+      "status": "active"
+    },
+    "digital-wellness": {
+      "display_name": "Digital Wellness",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-08-14-au-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-14",
+      "status": "active"
+    },
+    "everlab": {
+      "display_name": "Everlab",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-08-14-au-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-14",
+      "status": "active"
+    },
+    "fernwood-fitness": {
+      "display_name": "Fernwood Fitness",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-08-14-au-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-14",
+      "status": "active"
+    },
+    "fitstop": {
+      "display_name": "Fitstop",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-08-14-au-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-14",
+      "status": "active"
+    },
+    "hapana": {
+      "display_name": "Hapana",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-08-14-au-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-14",
+      "status": "active"
+    },
+    "kic": {
+      "display_name": "Kic",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-08-14-au-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-14",
+      "status": "active"
+    },
+    "michelle-bridges-12wbt": {
+      "display_name": "Michelle Bridges 12WBT",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-08-14-au-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-14",
+      "status": "active"
+    },
+    "sonder": {
+      "display_name": "Sonder",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-08-14-au-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-14",
+      "status": "active"
+    },
+    "springday": {
+      "display_name": "Springday",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-08-14-au-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-14",
+      "status": "active"
+    },
+    "sweat": {
+      "display_name": "Sweat",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-08-14-au-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-14",
+      "status": "active"
+    },
+    "transform-by-fitaz": {
+      "display_name": "Transform by Fitaz",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-08-14-au-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-14",
+      "status": "active"
+    },
+    "vald": {
+      "display_name": "VALD",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-08-14-au-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-14",
+      "status": "active"
+    },
+    "vively": {
+      "display_name": "Vively",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-08-14-au-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-14",
+      "status": "active"
+    },
+    "xyris": {
+      "display_name": "Xyris",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-08-14-au-digital-fitness",
+      "product": "fitxpress",
+      "date": "2026-08-14",
+      "status": "active"
     }
   }
 }

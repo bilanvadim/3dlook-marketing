@@ -1,0 +1,1866 @@
+first_name,last_name,linkedin_url,company,title,email,connection_note,message_1,message_2
+Aaron,McAllister,https://linkedin.com/in/aaron-mcallister-328404170,Transform by Fitaz,Business Owner,,,"Hi Aaron,
+
+Quick idea after looking at the Body Type Quiz at Transform by Fitaz: it matches members to a program, which is a strong first moment.
+
+FitXpress could be a second one inside the app: two photos, 80+ body measurements and a 3D model, white-label.
+
+Would you build or partner?
+
+Vadim","Hi Aaron,
+
+One idea for Transform by Fitaz: after the quiz places a member in a program, an optional guided scan gives them a starting record to compare against later, shown only if they choose.
+
+Capture to results takes under 45 seconds from the photos to structured results.
+
+Worth a quick chat to explore?
+
+Vadim"
+Victor,Garcia,https://linkedin.com/in/victorgarciagonzalez,Vively,Head of Engineering,,,"Hi Victor,
+
+Quick one for the Head of Engineering at Vively: FitXpress is a white-label API and SDK. Two photos in, 80+ body measurements and a 3D model back, in under 45 seconds from the photos to structured results.
+
+A typical basic integration takes 2-4 weeks.
+
+Worth a quick engineering chat?
+
+Vadim","Hi Victor,
+
+Flow in one line: the app captures, the API returns structured results and your team decides how they show up.
+
+The FAQ covers the rest: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Open to talking it through?
+
+Vadim"
+Tim,Veron,https://linkedin.com/in/tim-veron,Vively,Founder,,,"Hi Tim,
+
+Quick thought on Vively: I'm curious how you decide what earns a place in an app that already connects blood tests and a CGM.
+
+FitXpress would be an optional capture inside it: two photos, 80+ body measurements and a 3D model, white-label.
+
+Where would you place it?
+
+Vadim","Hi Tim,
+
+A founder question: build or partner? A scan through an SDK avoids a computer-vision build, with members opting in.
+
+Typical run time is under 45 seconds from the photos to structured results.
+
+Would you be up for a call?
+
+Vadim"
+Kat,Kawecki,https://linkedin.com/in/kat-kawecki-958b1222a,Vively,Product Manager,,,"Hi Kat,
+
+Quick note for Vively's product manager: members already log meals with a photo, so a camera moment is familiar in the app.
+
+FitXpress offers a guided two-photo capture alongside it: 80+ body measurements, body composition estimates and a 3D model.
+
+Would a quick chat help scope it?
+
+Vadim","Hi Kat,
+
+Scoping detail: the guided capture asks for front and side photos, and the app decides where the structured results appear. The whole run takes under 45 seconds from the photos to structured results.
+
+Ready for a short call?
+
+Vadim"
+Michelle,Woolhouse,https://linkedin.com/in/dr-michelle-woolhouse-505a9172,Vively,Founding Medical Director: Vively Health,,,"Hi Michelle,
+
+Noticed overlap with your role as founding medical director at Vively, an app built by Australian doctors, dietitians and data scientists. How are body measurements collected between appointments today?
+
+FitXpress gives a care team a standardized, timestamped record from two phone photos: 80+ body measurements, body composition estimates and a 3D model. The estimates are for review, never a diagnosis.
+
+Would that be of interest?
+
+Vadim","Hi Michelle,
+
+For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+A care team can compare scans it selects, alongside weight, glucose and blood tests.
+
+Open to a short conversation?
+
+Vadim"
+Steven,Lu,https://linkedin.com/in/dr-steven-lu-82943825a,Everlab,"Cofounder, CMO",,,"Hi Steven,
+
+Everlab's app has members test head to toe, then ""Track progress and re-test"". Curious how body measurements get collected in the gaps between re-tests today.
+
+We build FitXpress: a guided two-photo scan inside a clinic's own app. It returns 80+ body measurements (waist and hip included) and body composition estimates, with a 3D model, as a timestamped record for the care team.
+
+Open to a quick chat?
+
+Vadim","Hi Steven,
+
+A thought from the care-team side: each scan is a standardized, timestamped record, and the program picks which scans to compare. Results arrive in under 45 seconds from the photos to structured results.
+
+Clinical background: https://3dlook.ai/content-hub/mobile-body-scanning-patient-engagement/
+
+Would a short conversation help?
+
+Vadim"
+Sharif,Alvis,https://linkedin.com/in/sharifalvis,Everlab,Head of Engineering,,,"Hi Sharif,
+
+Quick one for engineering at Everlab. FitXpress is a white-label API and SDK: the app sends two guided photos, and the response returns 80+ body measurements and body composition estimates, with a 3D model.
+
+A typical basic integration takes 2-4 weeks. Which stack runs the member app?
+
+Docs are ready to send.
+
+Vadim","Hi Sharif,
+
+Engineering detail worth having: end to end, a scan takes under 45 seconds from the photos to structured results, ready to store in your own data model. Details on data handling sit in the FAQ.
+
+https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Want to talk through the flow?
+
+Vadim"
+Sam,Kothari,https://linkedin.com/in/kotharisam,Everlab,Cofounder,,,"Hi Sam,
+
+Saw the news that Everlab's first major brand campaign launches in October. A campaign brings new members into the app, so the first thing they do there matters.
+
+FitXpress is a scan a platform ships under its own brand through an API or SDK, with no in-house computer-vision build. Two photos go in, and 80+ body measurements come out.
+
+Is build versus partner a live question for you?
+
+Vadim","Hi Sam,
+
+On build versus partner: with a partner scan, Everlab's team spends its time on where the scan appears in the app. A scan completes in under 45 seconds from the photos to structured results.
+
+112,100 scans in 2025 across all 3DLOOK customers.
+
+For the product view: https://3dlook.ai/content-hub/ai-in-fitness-industry/
+
+Open to comparing notes?
+
+Vadim"
+Marc,Hermann,https://linkedin.com/in/marc-hermann-3132ab5b,Everlab,Founder,,,"Hi Marc,
+
+Your years as Chief Commercial Officer and Managing Director at foodspring give a consumer view of product. Curious what a member's first week in Everlab's app should feel like.
+
+At 3DLOOK we make FitXpress: two phone photos return 80+ body measurements and a 3D model, white-label inside the app. It takes under 45 seconds from the photos to structured results.
+
+Might be worth a quick chat?
+
+Vadim","Hi Marc,
+
+One more angle on that first week: a baseline scan at onboarding gives members a starting point for later scan-to-scan comparison. Everlab would choose which outputs they see.
+
+How products place it: https://3dlook.ai/content-hub/ai-in-fitness-industry/
+
+Does that fit how you see the app?
+
+Vadim"
+Matthew,Kwong,https://linkedin.com/in/matthewtkwong,Everlab,Product Manager,,,"Hi Matthew,
+
+Your ANZ and Zeller product years come to mind. Curious how you scope a first release at Everlab when a feature touches member data.
+
+FitXpress sits behind an API: send two photos, receive 80+ body measurements. A first release can be a single check-in screen.
+
+Would a call to scope it be useful?
+
+Vadim","Hi Matthew,
+
+A small first step could look like this: one check-in, one scan, a 3D model the program chooses to show. The wait is under 45 seconds from the photos to structured results, which keeps the screen simple.
+
+Worth a look when you scope it: https://3dlook.ai/content-hub/ai-in-fitness-industry/
+
+Is that a useful way to frame it?
+
+Vadim"
+Khanh,Nguyen,https://linkedin.com/in/khanhh,Everlab,Product Manager,,,"Hi Khanh,
+
+You have seen Everlab from the clinical operations side and now from product. Curious what a member does when they want to check progress between re-tests.
+
+FitXpress asks members for two guided photos at home, and the app receives 80+ body measurements and a 3D model, captured the same way each time.
+
+Is this one for a conversation?
+
+Vadim","Hi Khanh,
+
+From the operations side, the useful part is the repeatable capture: the same guided steps for every member, at home. Each scan is timestamped, and the program compares the scans it selects.
+
+An overview for the ops view: https://3dlook.ai/content-hub/ai-in-fitness-industry/
+
+Would a call on the member side be useful?
+
+Vadim"
+Leo,Bradshaw,https://linkedin.com/in/leobradshaw,Everlab,"General Manager, UK",,,"Hi Leo,
+
+Quick thought on Everlab opening in Auckland. A guided scan inside the app captures every member the same way, wherever they sign up.
+
+Through one SDK, FitXpress turns two photos into 80+ body measurements and body composition estimates, white-label. Everlab controls where the scan appears and which outputs are shown.
+
+Could we trade a few thoughts on rollout?
+
+Vadim","Hi Leo,
+
+Short note on rollout: one SDK means one integration for every market the app serves. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+Background on the rollout side: https://3dlook.ai/content-hub/ai-in-fitness-industry/
+
+Is a short call worth setting up?
+
+Vadim"
+Dec,Kickham,https://linkedin.com/in/deckickham,Everlab,Product,,,"Hi Dec,
+
+Got me thinking: Everlab's app pairs a personal doctor with action plans. Where would a body check sit next to them?
+
+As a module under Everlab's own branding, FitXpress gives 80+ body measurements and a 3D model from two photos.
+
+Where do you see it fitting?
+
+Vadim","Hi Dec,
+
+Thinking about a progress tab further: it could show a scan-to-scan comparison next to the action plans members already follow, with the 3D model if the program wants it.
+
+Related reading: https://3dlook.ai/content-hub/ai-in-fitness-industry/
+
+A short walkthrough is available if useful.
+
+Vadim"
+Halla,Dadouch,https://linkedin.com/in/halla-dadouch,Everlab,Corporate Lead & Founding AE - SME & Mid-Market,,,"Hi Halla,
+
+Everlab's members re-test on a set cycle in the app, which caught my eye. Who owns the member app roadmap?
+
+One line of context: apps use 3DLOOK's FitXpress to give members a two-photo body check with 80+ body measurements. No pitch, just a pointer.
+
+Vadim","Hi Halla,
+
+Just checking my last note reached the right desk. A name for whoever owns progress features in Everlab's member app would help me a lot.
+
+Thanks either way.
+
+Vadim"
+Jo,Power,https://linkedin.com/in/joannapower,Everlab,Marketing Manager,,,"Hi Jo,
+
+Your headline reads specialist health copywriter. You probably see what Everlab's members read about progress.
+
+Could you point me to whoever looks after progress features in the member app? I work on a two-photo scan returning 80+ body measurements, and I would like to ask them one question.
+
+Vadim","Hi Jo,
+
+One request, once more: the name of the person at Everlab who owns the app's progress features is all I need.
+
+I can take it from there.
+
+Vadim"
+Michael,Reid,https://linkedin.com/in/michael-reid-758297112,Everlab,Founding Engineer,,,"Hi Michael,
+
+As a founding engineer at Everlab with a frontend lead background, you will care where the capture UI lives. FitXpress comes with an SDK whose capture flow guides the member through two photos, and results come back as data the app renders in its own components.
+
+That means 80+ body measurements and a 3D model to display.
+
+Shall I send a sketch of the capture flow?
+
+Vadim","Hi Michael,
+
+Another frontend detail: the guided capture handles the photo steps, and the app decides how to draw the 80+ body measurements it receives.
+
+For data questions, the FAQ is here: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Is a short frontend walkthrough of interest?
+
+Vadim"
+Claire,Stephenson,https://linkedin.com/in/claire-stephenson-com,Digital Wellness,Head of Partnerships,,,"Hi Claire,
+
+Quick idea for partnerships at Digital Wellness: the enterprise side already has a nutrition API, so I wonder what a body-data option inside your branded app could offer partners.
+
+One SDK, two phone photos, 80+ body measurements, in under 45 seconds from the photos to structured results. You choose where the scan appears and which outputs are shown.
+
+Open to exploring it?
+
+Vadim","Hi Claire,
+
+A thought on how it travels: partners could be offered the scan as an optional module of the Digital Wellness app, branded as yours.
+
+Do you handle that sort of capability conversation, or is someone else better placed?
+
+Vadim"
+Joe,Golio,https://linkedin.com/in/joegolio,Digital Wellness,Chief Operating Officer - US,,,"Hi Joe,
+
+Quick note for the COO US of Digital Wellness: the platform behind the CSIRO Total Wellbeing Diet could offer members a scan inside its own app.
+
+It takes two phone photos and returns 80+ body measurements and a 3D model, white-label through API or SDK.
+
+Who would own a call like that on your side?
+
+Vadim","Hi Joe,
+
+Worth knowing how a scan gets into a live app: members take two guided photos, and structured results come back to the app with no device to ship.
+
+112,100 scans in 2025 across all 3DLOOK customers.
+
+Happy to share more if useful.
+
+Vadim"
+Scott,Penn,https://linkedin.com/in/scpenn,Digital Wellness,Global CEO,,,"Hi Scott,
+
+Spotted something at Digital Wellness: private weigh-in photos in the Total Wellbeing Diet app. I'd value your view on a guided scan that sits alongside them.
+
+At 3DLOOK we build FitXpress: two photos return 80+ body measurements, body composition estimates and a 3D model, in under 45 seconds from the photos to structured results.
+
+Might a conversation make sense?
+
+Vadim","Hi Scott,
+
+For a Global CEO the question is build or partner. A scan through an SDK avoids a computer-vision build, and members choose whether to use it.
+
+Is that direction on your radar?
+
+Vadim"
+Anna,Crook,https://linkedin.com/in/annacrook,Digital Wellness,Director of Product Development,,,"Hi Anna,
+
+Came across your work on digital health tools at Digital Wellness. Curious how you think about the My Journey feature as the place members return to.
+
+I work on FitXpress, a guided capture inside the app: two photos and 80+ body measurements plus a 3D model, in under 45 seconds from the photos to structured results, through an SDK or API.
+
+Where would that sit in the product?
+
+Vadim","Hi Anna,
+
+From a product seat, the useful detail is repeatability: for most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+That makes a scan-to-scan comparison something a program can choose to show.
+
+Does that fit your roadmap thinking?
+
+Vadim"
+Claire,Brinkley,https://linkedin.com/in/clairebrinkley,Digital Wellness,Performance Marketing Manager,,,"Hi Claire,
+
+Wanted to reach out with a short ask. Who at Digital Wellness looks after the roadmap for the Total Wellbeing Diet app?
+
+I'm exploring a guided two-photo scan for member apps and would like to reach the right person.
+
+Vadim","Hi Claire,
+
+No pitch, just a pointer request: whoever owns features for the Total Wellbeing Diet app, a name would help a lot.
+
+Thanks either way.
+
+Vadim"
+Jarron,Aizen,https://linkedin.com/in/jarronaizen,Hapana,CEO & Founder,,,"Hi Jarron,
+
+Couldn't help but ask: Hapana, founded in Sydney and now serving fitness brands in several countries, hears every kind of feature request. What would a body-data scan offer those brands?
+
+FitXpress is a white-label SDK: two phone photos, 80+ body measurements and a 3D model, with the platform controlling where it appears.
+
+Is it one for the roadmap?
+
+Vadim","Hi Jarron,
+
+In practice a studio brand would switch it on in its own app, and Hapana decides which outputs show.
+
+The scan takes under 45 seconds from the photos to structured results.
+
+Shall we compare it with your plans?
+
+Vadim"
+Alan,Sacharowitz,https://linkedin.com/in/alansach,Hapana,Chief Operating Officer,,,"Hi Alan,
+
+Noticed your background: from Chief Information and Commercial Officer to COO at Hapana, with a platform rebuilt from the ground up in March 2026. I'm curious what studios and brands ask for next.
+
+FitXpress returns 80+ body measurements from two phone photos, white-label inside a branded app.
+
+Open to a quick chat?
+
+Vadim","Hi Alan,
+
+Operationally, one integration reaches every brand on the platform, and each brand decides whether to switch the scan on.
+
+112,100 scans in 2025 across all 3DLOOK customers.
+
+Worth comparing notes?
+
+Vadim"
+Travis,Shannon,https://linkedin.com/in/travis-shannon,Hapana,Chief Technology Officer,,,"Hi Travis,
+
+Quick one for the CTO of Hapana: FitXpress is a white-label API and SDK for an existing member app. Two photos in, 80+ body measurements, body composition estimates and a 3D model back, in under 45 seconds from the photos to structured results.
+
+A typical basic integration takes 2-4 weeks.
+
+Worth a quick technical chat?
+
+Vadim","Hi Travis,
+
+Data flow in one line: the app captures two photos, the API returns structured results, and the app decides where they appear.
+
+The FAQ covers the rest: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Open to a short technical call?
+
+Vadim"
+Lakshmi,Koppula,https://linkedin.com/in/lakshmi-koppula-8a7708165,Hapana,Head of Product,,,"Hi Lakshmi,
+
+Got me thinking: Head of Product at Hapana, building SenseAI, with a Masters in Machine Learning. Someone with that background has a clear view of what an in-house computer-vision build takes.
+
+FitXpress is the partner option: two photos, 80+ body measurements and body composition estimates through an API or SDK.
+
+How would you weigh build against partner?
+
+Vadim","Hi Lakshmi,
+
+If the roadmap includes a scan, the practical test is integration: the capture drops into an existing branded member app and the platform controls the screens.
+
+Our flow runs in under 45 seconds from the photos to structured results.
+
+Curious how you'd evaluate it?
+
+Vadim"
+Milena,Zanini,https://linkedin.com/in/milenazanini,Hapana,Head of Marketing,,,"Hi Milena,
+
+Curious about your take: Hapana has a Challenge app next to the branded member app, and challenges give studios a clear moment to rally members.
+
+FitXpress gives a challenge an optional scan members take at home: two photos, 80+ body measurements and a 3D model they choose to see.
+
+Does that spark anything?
+
+Vadim","Hi Milena,
+
+From the marketing side, the story is the member's own comparison, scan to scan, with the studio choosing what appears.
+
+Timing: under 45 seconds from the photos to structured results.
+
+Could that suit a Challenge?
+
+Vadim"
+Gopal,Agrawal,https://linkedin.com/in/gopalagrawal,Hapana,Director of Product Operations,,,"Hi Gopal,
+
+Quick idea for product operations at Hapana: each brand's branded member app is a delivery surface, and a new capability has to land in all of them.
+
+FitXpress arrives as an SDK with a guided capture screen: two photos in, 80+ body measurements out, the platform choosing where it appears.
+
+Interested in a closer look?
+
+Vadim","Hi Gopal,
+
+The delivery question usually comes down to release flow, and a scan adds one guided screen and one API call to it. End to end the scan runs under 45 seconds from the photos to structured results.
+
+Would it help to see how that works?
+
+Vadim"
+Rajan,Csm,https://linkedin.com/in/rajankanwat,Hapana,Product Test Manager,,,"Hi Rajan,
+
+Had to say hi with a short ask. Hapana serves multi-location brands, and I'd like to find who owns the app roadmap for them.
+
+I'm exploring a two-photo body scan for member apps and want to reach the right person.
+
+Vadim","Hi Rajan,
+
+A pointer to the product owner would be great.
+
+Thank you.
+
+Vadim"
+Luke,Ashby,https://linkedin.com/in/luke-ashby-0295b434,AIA Australia,Head of Vitality Partnerships & Distribution,,,"Hi Luke,
+
+Leading Vitality partnerships and distribution, you hear what partners ask for when they talk about AIA Vitality. Which of those asks involve something members can do at home?
+
+We build a guided scan for apps: two phone photos return 80+ body measurements, as an optional check the program decides how to show. Might that be worth a quick chat?
+
+Vadim","Hi Luke,
+
+One angle for partner conversations: members complete the check inside the app they already use, and the program picks which results appear. Start to finish, the check runs under 45 seconds from the photos to structured results.
+
+https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Would a short conversation on that be useful?
+
+Vadim"
+A/Prof,Harris,https://linkedin.com/in/a-prof-newman-l-harris-22b38892,AIA Australia,Chief Medical Officer,,,"Hi Newman,
+
+As a pain physician and academic at Griffith, you see how movement and body change come up in care. What would you want a wellness body check at AIA to show members?
+
+We built a guided scan: two phone photos, 80+ body measurements, and estimates for review that carry no diagnosis. Would you be open to a brief exchange?
+
+Vadim","Hi Newman,
+
+A clinical question, briefly. The scan returns circumferences and body composition estimates as timestamped, structured records that a member or program can compare, in under 45 seconds from the photos to structured results.
+
+Who at AIA would be best placed to hear this?
+
+Vadim"
+Theresa,Brancatisano,https://linkedin.com/in/theresabrancatisano,AIA Australia,Head of Digital,,,"Hi Theresa,
+
+After leading digital at Tennis Australia, you now own the digital journey for AIA. Where in the AIA Vitality app would a body check sit best: onboarding, a check-in or a progress tab?
+
+FitXpress is a white-label SDK. Members take two phone photos and the app receives 80+ body measurements and a 3D model. Build or partner, I would value your read.
+
+Vadim","Hi Theresa,
+
+A practical point for a digital head: the integration is an API or SDK inside the existing app, with no device to ship. Expect under 45 seconds from the photos to structured results.
+
+Our product thinking is here: https://3dlook.ai/content-hub/ai-in-fitness-industry/
+
+Should I send a short walkthrough?
+
+Vadim"
+George,Stavliotis,https://linkedin.com/in/george-stavliotis-7131049,AIA Australia,General Manager Partnerships,,,"Hi George,
+
+AIA Vitality's line is Know Your Health, Improve Your Health, and Get Rewarded, and your Swiss Re years taught you how programs reach members. Who owns the member app behind it?
+
+We build a scan: 80+ body measurements from two phone photos. Could you point me to the right owner?
+
+Vadim","Hi George,
+
+No pitch intended. If the Vitality program owner sits outside group insurance, a name or a team is enough.
+
+I can take it from there.
+
+Vadim"
+Wanda,Britton,https://linkedin.com/in/wanda-britton,AIA Australia,General Manager Partnerships,,,"Hi Wanda,
+
+From Chief Customer Officer at AIA Vietnam to GM Partnerships in Australia, you know how a capability travels across a group. What would AIA Vitality partners want to offer their own members?
+
+One option is a white-label SDK: a two-photo scan returning 80+ body measurements, placed and branded by the platform. Could be worth a conversation?
+
+Vadim","Hi Wanda,
+
+For partnership conversations: the capability is one SDK, and the partner decides where the scan appears and which outputs members see.
+
+https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Would a short intro call be sensible?
+
+Vadim"
+Michelle,Bennie,https://linkedin.com/in/michelle-bennie-0a337952,AIA Australia,"Head of Legal, Product and Partnerships",,,"Hi Michelle,
+
+Legal, product and partnerships under one title usually means you know who decides on new member features at AIA Vitality, next to the in-person Health Check. Who would that be?
+
+Our guided scan turns two phone photos into structured body data. Total time: under 45 seconds from the photos to structured results. A name would be plenty.
+
+Vadim","Hi Michelle,
+
+A quick nudge on the earlier question: which team at AIA looks after the Vitality app, and is that the right door? Any name works, and I will keep my note to them short.
+
+Thanks either way.
+
+Vadim"
+Sheraden,Bulsing,https://linkedin.com/in/sheraden-bulsing-60462a113,AIA Australia,Product Manager,,,"Hi Sheraden,
+
+Insurance product work at RACQ and Macquarie, and now AIA: you will know who owns what. Who runs the roadmap for AIA Vitality, Vitality Age included?
+
+I am asking because we build a two-photo body scan that apps can embed. Pointing me to the right person is all I need.
+
+Vadim","Hi Sheraden,
+
+Easy question to skip, in one line: is there a product owner for the Vitality member app you would suggest?
+
+The scan gives 80+ body measurements from those two photos, and I would take it from there.
+
+Vadim"
+Simon,Layne,https://linkedin.com/in/simon-layne-1471915a,AIA Australia,Product Manager,,,"Hi Simon,
+
+With TAL and BT Financial Group behind you, you know AIA's product group better than I do. Who looks after progress features in the app where members share activity data for Vitality points?
+
+Context: we make a scan returning 80+ body measurements and a 3D model from a phone. A name is all I am after.
+
+Vadim","Hi Simon,
+
+Last try on this, and a short one. If progress features belong to another team, which one?
+
+It is a white-label SDK, and the app owner decides what members see.
+
+Vadim"
+Jo,Moon,https://linkedin.com/in/jo-moon-4312b715a,AIA Australia,Product Manager,,,"Hi Jo,
+
+Your years in group claims and disability case management at AIA mean you know the member side well. Members share sleep data for AIA Vitality points, and I wonder who owns that member app.
+
+The guided body scan we make starts from two phone photos, with no device to ship. I would be grateful for a direction.
+
+Vadim","Hi Jo,
+
+A different way to ask: whom would you speak to at AIA about a new feature for the Vitality app?
+
+Each scan takes under 45 seconds from the photos to structured results. Appreciate your time.
+
+Vadim"
+Aakash,Malhotra,https://linkedin.com/in/aakash-malhotra1,AIA Australia,Product Manager,,,"Hi Aakash,
+
+Coming from actuarial work into product at AIA, you may know who handles member wellbeing features. AIA Vitality counts mindful minutes among what members share, so who owns member features there?
+
+We build a scan with 80+ body measurements and body composition estimates from two phone photos, for members to review. A steer would be welcome.
+
+Vadim","Hi Aakash,
+
+Brief ask again. If member wellbeing features sit with a product owner at AIA, could you share a name or a team?
+
+It is a white-label SDK, and I would keep it to one short note.
+
+Vadim"
+Jordan,Beasley,https://linkedin.com/in/jordanbeasley,AIA Australia,Head of Strategy & CEO Office,,,"Hi Jordan,
+
+Having led health marketing at AIA before moving into strategy, you know the AIA Vitality brand from the member side. Members share heart rate data for Vitality points, and I would like to know who owns that member app today.
+
+We build a scan returning 80+ body measurements from two phone photos. An introduction to the right owner would help.
+
+Vadim","Hi Jordan,
+
+Across your strategy role you may see who plans member app features. Is there one person you would point to?
+
+I will keep it brief with them.
+
+Vadim"
+Fiona,Tsang,https://linkedin.com/in/fitsang,AIA Australia,Health Product Manager,,,"Hi Fiona,
+
+Product roles at Cigna Healthcare Hong Kong and Mercer, and now health product at AIA: you have weighed many member features. Where would a body check fit in AIA Vitality?
+
+We make a guided capture for apps. Members take two phone photos and receive 80+ body measurements. Would you be keen to hear more?
+
+Vadim","Hi Fiona,
+
+From a product manager's view the scan is one SDK inside the existing app, and your team picks the placement and the outputs. Body composition values come as estimates alongside the measurements.
+
+https://3dlook.ai/content-hub/ai-in-fitness-industry/
+
+Can I send a one-page overview?
+
+Vadim"
+Raymond,Cheng,https://linkedin.com/in/raymondwhcheng,AIA Australia,Senior Product Manager,,,"Hi Raymond,
+
+Group product at AIA and a secondment at Mercer give you a wide view of the product group. Which team decides on features for the app behind Improve Your Health in AIA Vitality?
+
+We offer a guided scan inside a partner's app. Two phone photos return 80+ body measurements. Happy to be pointed elsewhere.
+
+Vadim","Hi Raymond,
+
+One more try, with no pitch. Where does a member feature idea for Vitality usually start at AIA?
+
+The SDK drops into an existing app. Grateful for any pointer you can share.
+
+Vadim"
+Cate,Menzies,https://linkedin.com/in/cate-menzies-5575a6143,AIA Australia,Senior Product Manager,,,"Hi Cate,
+
+Product roles at Greenstone and St.George, and now AIA Insurance: you know how ideas find the right owner. Who owns the roadmap for Know Your Health in AIA Vitality?
+
+We build a two-photo scan with a 3D model members can choose to view. Even a team name helps.
+
+Vadim","Hi Cate,
+
+Quick check on the earlier note: is there someone at AIA who looks after the Vitality app, whom I could ask?
+
+The scan returns 80+ body measurements for members who opt in.
+
+Thanks, Cate.
+
+Vadim"
+Mark,Broom,https://linkedin.com/in/mbroom,AIA Australia,Head of Customer Retention,,,"Hi Mark,
+
+Having run product and now retention at AIA, you see AIA Vitality from two angles. How do members get a progress moment at home today?
+
+We built a scan that returns 80+ body measurements from two phone photos, with a 3D model members can choose to view. Open to comparing notes?
+
+Vadim","Hi Mark,
+
+A scan-to-scan comparison is the piece I would put in front of you. Members repeat the same guided capture at home, and the program picks which scans to compare.
+
+For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+Could we trade notes on how progress moments work at AIA?
+
+Vadim"
+Danielle,Williams,https://linkedin.com/in/danielle-williams47,AIA Australia,Head of Strategy & Innovation (AIA Vitality),,,"Hi Danielle,
+
+Your path through Vitality product strategy and partnerships into innovation covers a lot of AIA Vitality. Which member-facing ideas are you piloting next?
+
+One that fits Know Your Health: members take two phone photos in the app and get 80+ body measurements, an optional check alongside what Vitality records today. Worth a quick chat?
+
+Vadim","Hi Danielle,
+
+A pilot could stay small. The program chooses where the scan appears and which outputs are shown, and timing is simple: under 45 seconds from the photos to structured results.
+
+112,100 scans in 2025 across all 3DLOOK customers.
+
+Would you be open to hearing how a pilot might look?
+
+Vadim"
+Matt,Goodison,https://linkedin.com/in/matt-goodison-64582513,AIA Australia,Digital Product Manager,,,"Hi Matt,
+
+Digital marketing, then product owner, now digital product manager, all at AIA: you have seen which features members use. Is there a place in AIA Vitality for a body check?
+
+It is an SDK that returns 80+ body measurements from two phone photos. Open to a quick look at how it works?
+
+Vadim","Hi Matt,
+
+What a product owner would check first is integration. It is an API or SDK, white-label, and a live run shows under 45 seconds from the photos to structured results.
+
+Happy to show it if useful?
+
+Vadim"
+Margaret,Awrey,https://linkedin.com/in/margaretawrey,AIA Australia,"General Manager, AIA Health",,,"Hi Margaret,
+
+Your headline pairs product and customer experience with health and wellbeing, which is where AIA Health members meet the app. What would make an at-home body check worth completing for them?
+
+FitXpress returns 80+ body measurements from two phone photos inside the app, with the program choosing what members see. I would like your view.
+
+Vadim","Hi Margaret,
+
+One way to frame it for AIA Health: a body check members choose to complete, and a 3D model they decide whether to view. Body composition values are estimates for the member.
+
+https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+May I send over how the flow looks in an app?
+
+Vadim"
+Benjamin,Martin,https://linkedin.com/in/benjamin-martin-bb108729,AIA Australia,Head of Strategic Partnerships,,,"Hi Benjamin,
+
+Distribution enablement and technical services sit behind your partnership role. What would help AIA Vitality partners explain value to their members?
+
+A white-label scan is one such tool: two phone photos give 80+ body measurements inside the partner's own app. Would you like to see how it works?
+
+Vadim","Hi Benjamin,
+
+One thing for your partners: the scan is a single SDK the platform can brand and place. Body measurements show 96-97% accuracy against expert manual measurement.
+
+https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Is it worth a short call on your side?
+
+Vadim"
+Elke,Reinstadler,https://linkedin.com/in/elke-reinstadler-7bbb1277,AIA Australia,Head of Group Partnerships,,,"Hi Elke,
+
+Group partnerships at AIA after proposition and fund partnership roles at MLC Life: you know who shapes member offers. Who owns AIA Vitality, where members earn rewards for healthy habits?
+
+Our scan turns two phone photos into 80+ body measurements. Could you steer me to the right person?
+
+Vadim","Hi Elke,
+
+A light follow-up question. If Vitality program decisions sit in retail, who there should I ask?
+
+I will keep it to one note.
+
+Vadim"
+Tristan,Oam,https://linkedin.com/in/tristanknowlesoam,AIA Australia,"Senior Manager, Partnerships and General Advice",,,"Hi Tristan,
+
+Partnerships and general advice sit in your remit, after advice management at AIA. AIA Vitality rewards healthy habits, and I wonder which team looks at new member features.
+
+Our guided scan takes two phone photos and returns 80+ body measurements. I am only asking for a direction.
+
+Vadim","Hi Tristan,
+
+A short second ask. If the Vitality app belongs to a team outside advice, could you name it?
+
+I appreciate the help.
+
+Vadim"
+Sujan,Yamunarajan,https://linkedin.com/in/sujan-yamunarajan-98689a31,AIA Australia,Executive General Manager Growth,,,"Hi Sujan,
+
+Group Markets, then Growth at AIA: I am curious which member touchpoints in AIA Vitality you see as worth building next.
+
+One option is a repeatable at-home progress moment. Two phone photos return 80+ body measurements, with comparisons the program selects. I am happy to share how it works.
+
+Vadim","Hi Sujan,
+
+Short version for a growth lead: the scan runs inside the member app through an SDK, with no device to ship. One weight-management platform ran 34,000 scans in 2025.
+
+https://3dlook.ai/content-hub/remote-body-measurement-online-fitness-coaching/
+
+Would a quick look at the numbers be useful?
+
+Vadim"
+Alison,McLean,https://linkedin.com/in/alison-mclean-06306b20,AIA Australia,General Manager Vitality and Shared Value,,,"Hi Alison,
+
+With a background in behavioural science and research, you have studied what moves people from intention to action. Which AIA Vitality moments do members come back to?
+
+We built a guided capture: two phone photos return 80+ body measurements, an optional at-home check members can choose to repeat. Would you be up for a short exchange?
+
+Vadim","Hi Alison,
+
+A repeatable capture gives members a comparison they choose to look at, and the 3D model stays optional to view.
+
+Could I send a short note on how it might fit Vitality?
+
+Vadim"
+Craig,Parker,https://linkedin.com/in/parker-craig,AIA Australia,"General Manager, Retail Distribution & Retention",,,"Hi Craig,
+
+Retail distribution and retention sit together in your role, with advisers close to members. How do advisers talk about AIA Vitality with a member during a review?
+
+FitXpress puts a guided body scan in the app. Two phone photos return 80+ body measurements, and the program chooses whether to show a 3D model. Worth a short chat on that?
+
+Vadim","Hi Craig,
+
+A short thought for retention. Members complete the scan at home, and the program picks which scans to compare, keeping the experience inside the app.
+
+Might a quick call on that be useful?
+
+Vadim"
+Sally,Barnett,https://linkedin.com/in/sally-barnett-8033247,AIA Australia,"Senior Manager, Internal Communications & Strategy | CEO Office",,,"Hi Sally,
+
+From the CEO Office you see how AIA teams connect. Who owns member-facing digital for AIA Vitality, with its Vitality Age?
+
+Context: we build a body scan from two phone photos, returning a 3D model and body measurements. A name would be a big help.
+
+Vadim","Hi Sally,
+
+Perhaps a simpler question: which team at AIA looks after member-facing digital features?
+
+The scan is a white-label SDK. Thanks for reading.
+
+Vadim"
+Nicky,Serret,https://linkedin.com/in/nicky-serret-953118131,AIA Australia,National Product Manager - Group Insurance,,,"Hi Nicky,
+
+National product in group insurance, after AMP: you will know which AIA colleagues own member programs. AIA Vitality ties points to activity, so who handles the member app?
+
+Ours is a two-photo scan that returns 80+ body measurements. A direction would do.
+
+Vadim","Hi Nicky,
+
+Second and last note. Is there a colleague you would suggest for questions about Vitality app features?
+
+On speed: under 45 seconds from the photos to structured results. Many thanks.
+
+Vadim"
+Vaibhav,Sharma,https://linkedin.com/in/vaibhav5harma,AIA Australia,Head of Master Trust Partnerships,,,"Hi Vaibhav,
+
+Strategic partnerships and now master trust at AIA: you know who owns what across programs. AIA Vitality members can check their Vitality Age, and I would like to know who looks after the app around it.
+
+Our guided scan gives 80+ body measurements from two phone photos. Tell me who holds it and I will reach out.
+
+Vadim","Hi Vaibhav,
+
+Quick follow-up question: does member app ownership for Vitality sit with a particular team?
+
+Our scan is white-label, and the owner chooses the screens. Thanks in advance.
+
+Vadim"
+Karen,Purcell,https://linkedin.com/in/karenmpurcell,AIA Australia,Head of New Business Development,,,"Hi Karen,
+
+Growth roles at AIA after MetLife and Swiss Re client work suggest you see how new capabilities reach members. Who owns the app roadmap for AIA Vitality and its Get Rewarded promise?
+
+The scan we build gives members 80+ body measurements after two phone photos. I would be glad of an introduction.
+
+Vadim","Hi Karen,
+
+Brief reminder of the one question: who would decide whether a body check could join the Vitality app?
+
+It is white-label, and the program owner picks the placement. Thanks.
+
+Vadim"
+Stephanie,Phillips,https://linkedin.com/in/stephanie-phillips-66037526,AIA Australia,Chief Marketing & Propositions Officer,,,"Hi Stephanie,
+
+Shared Value, then Marketing, now Propositions: you have shaped how AIA Vitality is described to members. What makes a new Vitality proposition worth testing?
+
+One we build: members take two phone photos in the app and get 80+ body measurements, shown as the program chooses. Interested in a short conversation?
+
+Vadim","Hi Stephanie,
+
+A new element for a proposition: an optional at-home body check with a 3D model members can choose to view. The program decides what appears, and members stay in the app.
+
+https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Shall we talk it through?
+
+Vadim"
+Jeremy,Simmons,https://linkedin.com/in/jeremytsimmons,AIA Australia,General Manager Marketing Customer Digital,,,"Hi Jeremy,
+
+Moving from enterprise digital and customer experience into customer digital marketing at AIA, you will have views on the AIA Vitality app journey. Where would a body check be least intrusive?
+
+FitXpress is an SDK: two phone photos return 80+ body measurements and a 3D model, white-label. Does a short call make sense?
+
+Vadim","Hi Jeremy,
+
+For a digital team the build is small: an SDK inside the AIA Vitality app, with your team controlling placement and which outputs members see. Plan around under 45 seconds from the photos to structured results.
+
+Shall I send an integration outline?
+
+Vadim"
+Dave,Evans,https://linkedin.com/in/davelevans,AIA Australia,Head of Propositions & Direct Partnerships,,,"Hi Dave,
+
+Moving from banca delivery into propositions and direct partnerships at AIA, you see what a partner can pass to its own members. Would an at-home body check suit an AIA Vitality partner offer?
+
+We provide it as an SDK: two phone photos, 80+ body measurements, shown the way the partner chooses. Could be worth a call?
+
+Vadim","Hi Dave,
+
+On direct partnerships: a partner could embed the scan under its own brand and control where members see it. Body composition values come as estimates for the member.
+
+Would a short walk-through help?
+
+Vadim"
+Peter,Kelly,https://linkedin.com/in/peterakelly,AIA Australia,Head of Tender & Growth Propositions,,,"Hi Peter,
+
+Having headed digital propositions and member engagement at TAL, you know how a feature earns a place in an insurer's app. How would a body check earn one in AIA Vitality?
+
+We offer it white-label: two phone photos, 80+ body measurements, nothing to ship to members. Curious what you think.
+
+Vadim","Hi Peter,
+
+Seen through a growth proposition, the offer is a guided scan inside the member app, with a 3D progress model members choose to see. A white-label build keeps AIA's own branding front and centre.
+
+Would it help if I sketched where it could sit?
+
+Vadim"
+Chris,Healey,https://linkedin.com/in/chris-healey-84286a59,AIA Australia,Chief Executive - Group Insurance Officer,,,"Hi Chris,
+
+Your headline lists emerging technology, and your TAL years were in digital and technology delivery. Which new member-facing tools have been worth the effort at AIA?
+
+FitXpress is one: two phone photos return 80+ body measurements inside an existing app, through an API or SDK. If it belongs to someone else, I would be glad to know who.
+
+Vadim","Hi Chris,
+
+A reason this might matter in group insurance: members could get an optional at-home body check inside the AIA app, with estimates for review.
+
+Would you point me to whoever owns the member app?
+
+Vadim"
+Trish,Curry,https://linkedin.com/in/trish-curry-73b3aa68,AIA Australia,General Manager Industry Funds and Government Partners,,,"Hi Trish,
+
+Industry funds and government partners are your focus, after AIST and AustralianSuper. Who inside AIA owns the member side of AIA Vitality, the Health Check included?
+
+Our SDK adds a body scan to an app: two phone photos, 80+ body measurements. A name or a team would do.
+
+Vadim","Hi Trish,
+
+One more question, kept short. Which AIA colleague is best placed to hear about a wellness feature for members?
+
+A white-label SDK keeps members in the AIA app. Appreciated.
+
+Vadim"
+Marie,Huong,https://linkedin.com/in/marie-therese-nguyen-da-huong-499b3055,AIA Australia,General Manager Data Governance & Business Insights,,,"Hi Marie,
+
+Data governance and insights at AIA, after analytics at CommInsure and NAB Wealth. When a new tool joins AIA Vitality, what do you look at first on the integration side?
+
+We offer a white-label API and SDK: two phone photos return 80+ body measurements as structured records, typically 2-4 weeks for a basic integration. Open to a conversation?
+
+Vadim","Hi Marie,
+
+The data flow is simple to describe: two photos in, structured measurements and body composition estimates out, and the clock reads under 45 seconds from the photos to structured results. Questions on handling go through our FAQ.
+
+https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Would a short technical call help?
+
+Vadim"
+Penny,Sheppard,https://linkedin.com/in/penny-sheppard-0b8b6918,AIA Australia,Head of Retail Product,,,"Hi Penny,
+
+Retail product at AIA, after platform work at BT: you are well placed to know where ideas for the Vitality app land. Is it a team you could name?
+
+For context, apps embed our scan to return 80+ body measurements from two phone photos. A redirect to the right team would be ideal.
+
+Vadim","Hi Penny,
+
+In case the first note slipped past: nothing is attached, only a question about where Vitality app ideas begin.
+
+If product is the wrong place, say so and I will look elsewhere.
+
+Vadim"
+Tracey,Crowe,https://linkedin.com/in/tracey-crowe-0116ab31,AIA Australia,Chief Customer Operations and Claims Officer,,,"Hi Tracey,
+
+Running operations for members at AIA, after service leadership at BT, you see many touchpoints. Whom would you suggest for a conversation about AIA Vitality app features?
+
+Apps embed our body scan, which returns a 3D model that members can choose to open from two phone photos. A forward to the right person would do.
+
+Vadim","Hi Tracey,
+
+Short and without a pitch: if member app decisions for Vitality sit elsewhere, which colleague would you forward this to?
+
+On the app side, 80+ body measurements come back, and the program picks which ones members see.
+
+Thank you for passing it along.
+
+Vadim"
+David,O'Driscoll,https://linkedin.com/in/dtodriscoll,AIA Australia,Head of IT Strategy and Business Partnerships,,,"Hi David,
+
+IT strategy and business partnerships at AIA, with a solutions architect background. How would you assess a white-label SDK inside a member app such as AIA Vitality?
+
+Our SDK takes two phone photos and gives back 80+ body measurements. A typical basic integration takes 2-4 weeks. Would a technical conversation make sense?
+
+Vadim","Hi David,
+
+Data flow in brief: the app sends two photos, and FitXpress returns structured measurements and a 3D model in under 45 seconds from the photos to structured results. Data handling questions go to the FAQ below.
+
+https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Would an architecture walk-through be useful?
+
+Vadim"
+Alan,Caputo,https://linkedin.com/in/alan-caputo-5b45b822,AIA Australia,"General Manager; Distribution (Advice, Banca, Health & AIA FW Marketing)",,,"Hi Alan,
+
+Distribution across advice and banca puts you near many AIA programs. Could you point me to the owner of AIA Vitality?
+
+Apps use our scan to turn two photos into a 3D model and 80+ body measurements. One introduction would be plenty.
+
+Vadim","Hi Alan,
+
+A second, lighter request. Who in your network would be glad to hear about an optional body check for Vitality members?
+
+I would send them a brief note.
+
+Vadim"
+Arley,Grey,https://linkedin.com/in/arleygrey,AIA Australia,Head of Customer Marketing and Engagement,,,"Hi Arley,
+
+Your headline speaks of connected experiences and bringing a brand to life. What would a connected experience around an AIA Vitality Health Check look like to you?
+
+Here is what we offer: a guided capture that turns two phone photos into 80+ body measurements and a 3D model, viewed only if the member opts in. I would enjoy swapping ideas on where it could live.
+
+Vadim","Hi Arley,
+
+A progress moment members create themselves, at home, from the same guided capture each time. The program picks which scans to compare, and members choose whether to look.
+
+https://3dlook.ai/content-hub/remote-body-measurement-online-fitness-coaching/
+
+Would it be useful if I outlined how that could look in the Vitality app?
+
+Vadim"
+Rochelle,Evans,https://linkedin.com/in/rochelle-evans-572a5050,AIA Australia,Head of Group & Retail Marketing,,,"Hi Rochelle,
+
+Group and retail marketing at AIA, after group insurance marketing at Commonwealth Bank: you work with two quite different audiences. What keeps AIA Vitality members active between program touchpoints?
+
+Our product sits inside apps. Two phone photos give 80+ body measurements, and the member decides whether to view a 3D model. Is a short call something you would consider?
+
+Vadim","Hi Rochelle,
+
+Repeat scans stay comparable when the capture is guided the same way each time. Each capture then needs under 45 seconds from the photos to structured results.
+
+I can share a short example of how a retail audience would meet it, if that helps.
+
+Vadim"
+Swapnil,Kamankar,https://linkedin.com/in/swapnil-kamankar-799b96a,AIA Australia,"Regional Manager, Partnerships International Health",,,"Hi Swapnil,
+
+Partnerships for international health at AIA means you hear what partners want for their own members. Would an optional body check inside a partner's app belong in an AIA health partnership?
+
+We offer one SDK: two phone photos return 80+ body measurements, branded and placed by the partner. Might this be useful to explore?
+
+Vadim","Hi Swapnil,
+
+A feature a partner can brand is easier to discuss than a roadmap item. The check takes under 45 seconds from the photos to structured results, and the partner chooses which outputs members see.
+
+https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Shall we set up a brief intro?
+
+Vadim"
+Chris,Freeman,https://linkedin.com/in/chris-freeman-597666108,AIA Australia,Head of New Business Product and Pricing,,,"Hi Chris,
+
+Your product work at AIA spans new business and portfolio areas. Is there a product lead for AIA Vitality you would recommend I write to?
+
+Apps can embed our white-label scan, which reads two phone photos and gives 80+ body measurements. Nothing is needed from you beyond a recommendation.
+
+Vadim","Hi Chris,
+
+Brief and open-ended: if Vitality sits outside your area, a pointer to the right team is plenty.
+
+The scan is optional for members, and the program owner chooses where it appears.
+
+Many thanks for considering it.
+
+Vadim"
+Tim,Billington,https://linkedin.com/in/tim-billington-17564448,AIA Australia,Business Delivery Manager - Propositions & Direct Partnerships,,,"Hi Tim,
+
+Delivering propositions and direct partnerships at AIA, you coordinate new capabilities for partners. Is there someone with that remit on AIA Vitality?
+
+We build a white-label body scan: two phone photos, 80+ body measurements, placed by the partner in its own app. Happy to start from a single name.
+
+Vadim","Hi Tim,
+
+Enablement roles tend to know the right internal door. Which one would you open for a Vitality app capability?
+
+From a member's side, the wait is under 45 seconds from the photos to structured results.
+
+Thanks for any direction.
+
+Vadim"
+Kim,Clough,https://linkedin.com/in/kimmareeclough,AIA Australia,GM Life Product and Pricing,,,"Hi Kim,
+
+After innovation leadership at Retender and product at BT Financial Group, you know how ideas reach the right desk. Who would be the right reader for a note on AIA Vitality features?
+
+Our scan returns 80+ body measurements and a 3D model from two phone photos, optional for members. Please send me toward whoever fits.
+
+Vadim","Hi Kim,
+
+If a Vitality capability belongs with innovation or digital, which person there would you name?
+
+The scan is white-label, and a short note to that person is all I would send.
+
+A reply with one name would settle it.
+
+Vadim"
+Katherine,McAuliffe,https://linkedin.com/in/katherinemcauliffe,AIA Australia,Marketing Manager - Customer Engagement & Retention,,,"Hi Katherine,
+
+Lifecycle work at Australian Unity and 1:1 marketing at RACV give you a feel for lifecycle timing. Which message in the AIA Vitality lifecycle follows a Health Check?
+
+FitXpress adds an optional home check: two photos from the phone, 80+ body measurements and a comparison the program picks. Curious whether that fits your lifecycle thinking.
+
+Vadim","Hi Katherine,
+
+A repeatable at-home scan could sit as one more step in a lifecycle journey, with members choosing when to take it.
+
+The member's side of that step is brief: under 45 seconds from the photos to structured results.
+
+Would a one-page sketch of that journey be welcome?
+
+Vadim"
+Paige,Mathews,https://linkedin.com/in/paige-mathews-n%c3%a9e-wall-3158b7110,AIA Australia,Marketing Manager,,,"Hi Paige,
+
+Communications and campaign work at AustralianSuper before AIA marketing: you see how new member features get announced. Which colleague handles that for AIA Vitality?
+
+Our app scan reads two photos and gives 80+ body measurements. Whoever it is, I will take it from there.
+
+Vadim","Hi Paige,
+
+If Vitality features are announced by another team, could you say which one?
+
+In short, members take two photos and see a 3D model if they choose.
+
+Paige, I am grateful for any lead.
+
+Vadim"
+Alix,Davison,https://linkedin.com/in/alix-davison-00201294,AIA Australia,"Marketing Manager, AIA Vitality",,,"Hi Alix,
+
+Marketing AIA Vitality, after strategic partnerships at AIA, you handle both how the program is told and who tells it alongside. Which part of the member experience is hardest to show in a campaign?
+
+A visual step could help: two phone photos return 80+ body measurements and a 3D model, as an optional check at home. Shall I walk you through a mock-up?
+
+Vadim","Hi Alix,
+
+A campaign story needs something members can do, and taking two photos in the app is a small step. Results appear in under 45 seconds from the photos to structured results, and the program decides what members see.
+
+https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Could we have a quick chat to see if it suits the Vitality story?
+
+Vadim"
+Phillip,Klobucki,https://linkedin.com/in/phillip-klobucki-ab140230,AIA Australia,Marketing and Communications Manager,,,"Hi Phillip,
+
+Marketing and communications at AIA, with CommInsure behind you: you probably know who manages the member side of the AIA Vitality program. Who is it?
+
+We build a scan that works inside an app. Two phone photos give a 3D model and 80+ body measurements.
+
+Vadim","Hi Phillip,
+
+One question stands: who looks after Vitality member features today?
+
+We supply the scan to the app owner, who decides what members see.
+
+Any suggestion is welcome.
+
+Vadim"
+Silipa,Burgess,https://linkedin.com/in/silipa-burgess,AIA Australia,AIA Vitality Marketing Channels Manager,,,"Hi Silipa,
+
+Channels for AIA Vitality, with project delivery behind you and lifecycle marketing at ME Bank. Where in the Vitality channel mix would a new member action fit best?
+
+We offer a guided body check. Two phone photos return 80+ body measurements, optional for members and shaped by the program. Open to hearing a bit more?
+
+Vadim","Hi Silipa,
+
+From a project view, this one is small to roll out: an SDK sits inside the app, and the program controls placement.
+
+https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Could I outline the steps for you?
+
+Vadim"
+Steven,Dent,https://linkedin.com/in/stevendent,Sweat,"Head of Marketing, Content and Partnerships",,,"Hi Steven,
+
+Sweat's new education videos from October got me thinking about progress content. Curious how you use progress moments in the content and partnerships you build.
+
+FitXpress puts a guided two-photo scan inside the app and returns 80+ body measurements and a 3D model. Members take it at home, between sessions.
+
+Would you want to compare notes on content?
+
+Vadim","Hi Steven,
+
+For a content lead: a scan-to-scan comparison and a 3D model are progress moments the program chooses to show. The scan takes under 45 seconds from the photos to structured results.
+
+Background on coaching programs: https://3dlook.ai/content-hub/remote-body-measurement-online-fitness-coaching/
+
+Would a call help to see how it fits partnerships?
+
+Vadim"
+Adam,Koch,https://linkedin.com/in/adam-koch-maicd-87967322,Sweat,Chief Executive Officer,,,"Hi Adam,
+
+Saw the news that Kayla Itsines is now Sweat's sole owner, and you lead the company as CEO. A question for the road ahead: which member capabilities would Sweat build, and which would it partner on?
+
+Through an API or SDK, FitXpress gives a platform its own two-photo scan, with 80+ body measurements and a 3D model as output.
+
+Would a brief conversation be of interest?
+
+Vadim","Hi Adam,
+
+One SDK means Sweat controls where the scan appears and which outputs are shown.
+
+112,100 scans in 2025 across all 3DLOOK customers.
+
+The product view: https://3dlook.ai/content-hub/ai-in-fitness-industry/
+
+Would you welcome a call with me?
+
+Vadim"
+Chris,Torcasio,https://linkedin.com/in/christorcasio,Sweat,Head of Product,,,"Hi Chris,
+
+Spotted something: Sweat's September design update and Guided Runs this July. Curious where a progress tab for body data would sit in the app today.
+
+At 3DLOOK we ship FitXpress: two photos give 80+ body measurements and body composition estimates, inside Sweat's own screens.
+
+Worth a quick chat on placement?
+
+Vadim","Hi Chris,
+
+Placement idea for a product head: a progress tab fed by scan-to-scan comparison, next to what members already log. Results come back in under 45 seconds from the photos to structured results.
+
+A page on placement: https://3dlook.ai/content-hub/ai-in-fitness-industry/
+
+Open to a short exchange?
+
+Vadim"
+Becky,Wallis,https://linkedin.com/in/becky-wallis-82481358,Sweat,App Product Manager,,,"Hi Becky,
+
+Sweat shows progress photos side by side in the Activity section. A scan-to-scan comparison could sit alongside them in the same view.
+
+From two guided photos, FitXpress produces 80+ body measurements and a 3D model, branded as Sweat's own.
+
+Would a quick look together be useful?
+
+Vadim","Hi Becky,
+
+For an app PM: the capture is guided, and the app keeps full control of the comparison view. A scan finishes in under 45 seconds from the photos to structured results.
+
+Overview for app teams: https://3dlook.ai/content-hub/ai-in-fitness-industry/
+
+A demo is easy to arrange if useful.
+
+Vadim"
+Jack,Tuckerman,https://linkedin.com/in/jack-tuckerman,Sweat,Senior Product Manager,,,"Hi Jack,
+
+Your headline pairs consumer, AI and subscriptions, which fits a team weighing what to build itself. At Sweat, a body scan is one place where partnering skips the computer-vision work.
+
+FitXpress returns structured data from two photos: 80+ body measurements and body composition estimates.
+
+Curious whether that is on your radar?
+
+Vadim","Hi Jack,
+
+Structured data from every scan gives Sweat's app something it can store and compare in its own AI features. The 3D model is optional for members.
+
+For the build question: https://3dlook.ai/content-hub/ai-in-fitness-industry/
+
+Open to a brief chat?
+
+Vadim"
+Sarah,Macdougall,https://linkedin.com/in/sarahmacdougall111,Sweat,Head of Performance Marketing,,,"Hi Sarah,
+
+Strength with Kayla gives Sweat a clear gym program to talk about. Curious how progress moments get used in your campaigns today.
+
+Members use FitXpress at home: a guided capture from two photos, then 80+ body measurements and a 3D model, taken the same way each time.
+
+Would you like to see an example?
+
+Vadim","Hi Sarah,
+
+For a performance lead: members who finish a scan hold a clear moment to return to later, and the program decides whether to show it. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+Background reading: https://3dlook.ai/content-hub/remote-body-measurement-online-fitness-coaching/
+
+Could we talk it through?
+
+Vadim"
+Claudia,Impedovo,https://linkedin.com/in/claudia-impedovo-2723709b,Sweat,Head of Go to Market (Marketing),,,"Hi Claudia,
+
+Couldn't help but ask: Sweat members log the weights they lift in gym programs. How does your go-to-market team talk about the progress that follows?
+
+FitXpress adds a repeatable home check alongside those logs: two photos in, 80+ body measurements out.
+
+Would a quick chat be useful?
+
+Vadim","Hi Claudia,
+
+Positioning thought: a body check at home sits comfortably beside training logs, and Sweat would present it in its own voice. The 3D model is a view members can choose to open.
+
+A note on home checks: https://3dlook.ai/content-hub/remote-body-measurement-online-fitness-coaching/
+
+Open to hearing more?
+
+Vadim"
+Rachel,Murray,https://linkedin.com/in/rachel-murray24,Sweat,Affiliate Marketing Lead,,,"Hi Rachel,
+
+Guided Runs landing at Sweat in July made me curious who plans the app's next features. Do you know who steers the app's next releases?
+
+My work is a body scan from two photos that apps host under their own brand. A name is all I need.
+
+Vadim","Hi Rachel,
+
+Not sure my first note found the right person. Who at Sweat decides what goes into the app next?
+
+Whatever you can share is appreciated.
+
+Vadim"
+Natalie,O'Heare,https://linkedin.com/in/natalieoheare,Kic,Head of Marketing,,,"Hi Natalie,
+
+Quick thought on Kic: programs that carry members from a first run to a first deadlift hand them many moments worth marking.
+
+FitXpress is a guided two-photo scan inside the app that members choose to take: 80+ body measurements and a 3D model, in under 45 seconds from the photos to structured results.
+
+Curious how Kic marks those moments today?
+
+Vadim","Hi Natalie,
+
+A small version to picture: an optional scan sits next to a strength or running program, and members decide whether to look at it.
+
+It adds one more way to mark a milestone.
+
+Open to a first conversation?
+
+Vadim"
+Steph,Smith,https://linkedin.com/in/steph-claire-smith-bb49b3133,Kic,Co-Founder,,,"Hi Steph,
+
+Wanted to reach out: ""wellness is a feeling, not an aesthetic"" is a line I agree with, and it shapes how I'd talk about a scan at Kic.
+
+FitXpress would be a choice for the community: two photos, 80+ body measurements and a 3D model, shown only if a member opts in.
+
+Does that fit how you think about community?
+
+Vadim","Hi Steph,
+
+For a community built around support, each member decides whether to scan and whether to share.
+
+Capture to structured results runs under 45 seconds from the photos to structured results.
+
+Would that merit a short conversation?
+
+Vadim"
+Laura,Henshaw,https://linkedin.com/in/laura-henshaw,Kic,Co-Founder,,,"Hi Laura,
+
+Made me think about Kic widening beyond a fitness app, and what a co-founder wants members to take from that.
+
+We build FitXpress, a white-label scan: two photos, 80+ body measurements and a 3D model members choose to see.
+
+Would you like to hear more?
+
+Vadim","Hi Laura,
+
+I'd treat it as one more ritual members can opt into, running inside Kic's own app through an SDK.
+
+Expect under 45 seconds from the photos to structured results.
+
+Shall I send a short overview?
+
+Vadim"
+Tom,Grimshaw,https://linkedin.com/in/tom-grimshaw-8302091a7,Kic,Senior Product Manager,,,"Hi Tom,
+
+Curious about your take on Kic's built-in route mapping, a feature members open on their own.
+
+FitXpress could be added the same way: a guided two-photo scan in the app returning 80+ body measurements, delivered by SDK.
+
+Build or partner, where do you land?
+
+Vadim","Hi Tom,
+
+For a product manager the question is scope: one guided capture screen and one API call, with no device to ship.
+
+Would a short call help scope it?
+
+Vadim"
+Tess,Drobik,https://linkedin.com/in/tessdrobik,Kic,Marketing,,,"Hi Tess,
+
+Quick reaction, with a short ask. Kic's PT-style strength programs sit in the app, and I'd like to find who owns the app roadmap now.
+
+I'm looking at an optional two-photo scan members could choose to take alongside programs, and want to reach the right person.
+
+Vadim","Hi Tess,
+
+A name would be plenty if you can share one.
+
+Much appreciated.
+
+Vadim"
+Jess,Darvell,https://linkedin.com/in/jess-darvell-7984ba318,28 by Sam Wood,Head of Growth Marketing,,,"Hi Jess,
+
+Noticed your background: Head of Customer, now Head of Growth Marketing at 28 by Sam Wood. I'm curious how members mark progress between the weekly plans in the redesigned app.
+
+FitXpress is a guided two-photo scan inside the app that returns 80+ body measurements and a 3D model.
+
+Worth a quick chat?
+
+Vadim","Hi Jess,
+
+An idea for Sam's 8 Week Challenge: an optional at-home scan, captured the same guided way each time, with a scan-to-scan comparison members open when they choose.
+
+For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+Does that sound like a fit?
+
+Vadim"
+Stephanie,Clark,https://linkedin.com/in/stephanie-clark-8ab11a1a4,Michelle Bridges 12WBT,Head of Member Experience,,,"Hi Stephanie,
+
+Noticed your background: from support crew team leader to Head of Member Experience at Michelle Bridges 12WBT. I'm curious what members look forward to at the Weekly Checkpoint.
+
+FitXpress offers an optional at-home scan, taken the same guided way each time: two photos, 80+ body measurements, a 3D model.
+
+Could it be useful?
+
+Vadim","Hi Stephanie,
+
+Alongside the measurements members already log in My Tracker, a guided scan gives a repeatable capture to compare scan to scan.
+
+The scan takes under 45 seconds from the photos to structured results.
+
+Would that help the crew?
+
+Vadim"
+Jane,Weston,https://linkedin.com/in/jane-weston-bbb488354,Michelle Bridges 12WBT,Head of Corporate Partnerships,,,"Hi Jane,
+
+This stood out: Rounds at Michelle Bridges 12WBT open with a Pre-Season. I'm curious how corporate partners experience that stage.
+
+FitXpress is a capability 12WBT could offer inside its own app: a two-photo scan returning 80+ body measurements, delivered by one SDK, with 12WBT controlling where it shows.
+
+Is this worth a look?
+
+Vadim","Hi Jane,
+
+For partners the offer is simple: a capability 12WBT can switch on inside its own app and decide which outputs are shown.
+
+Results arrive under 45 seconds from the photos to structured results.
+
+Shall we speak briefly?
+
+Vadim"
+Zoe,Eaton,https://linkedin.com/in/zoeeaton,Defeat Diabetes,Chief Executive Officer,,,"Hi Zoe,
+
+Quick thought on Defeat Diabetes: I'm curious what else members could choose to add to the My Progress area, next to the waist and HbA1c graphs.
+
+FitXpress is a white-label scan for your own app. Two photos return 80+ body measurements, waist and hip included, and a 3D model, in under 45 seconds from the photos to structured results.
+
+Would you build or partner on something like that?
+
+Vadim","Hi Zoe,
+
+For people living with type 2 diabetes, a guided capture done the same way at home can give the care team a timestamped record to compare between check-ins. The estimates are for review, and the program chooses which scans to compare.
+
+How are body measurements collected between appointments today?
+
+Vadim"
+Kieran,Harrison,https://linkedin.com/in/kieran-harrison-b5a180186,VALD,Product,,,"Hi Kieran,
+
+Quick idea from a product seat: MoveHealth shows normative data for test results, and I'm curious how it could carry other structured data.
+
+FitXpress could offer a scan inside VALD's own app: two photos, 80+ body measurements, one SDK, with VALD choosing where it appears.
+
+Could we talk it through?
+
+Vadim","Hi Kieran,
+
+As Product Owner you would decide scope. A typical flow adds one capture screen and one API call, and the scan runs under 45 seconds from the photos to structured results.
+
+Should I send details?
+
+Vadim"
+Sarah,Cahill,https://linkedin.com/in/sarah-cahill-2b67b212,Springday,Product Manager,,,"Hi Sarah,
+
+Had a thought on Springday: team movement challenges are where members engage together, and I'm curious where else the product could offer something optional.
+
+FitXpress is a guided two-photo scan inside the app: 80+ body measurements and a 3D model, white-label.
+
+Where would it sit in your roadmap?
+
+Vadim","Hi Sarah,
+
+For a product manager: an SDK in the existing app, the program decides what appears, and members choose whether to scan.
+
+The scan finishes under 45 seconds from the photos to structured results.
+
+Interested in a short chat?
+
+Vadim"
+Belinda,Wheaton,https://linkedin.com/in/belinda-amis-wheaton-479645123,Fernwood Fitness,CEO,,,"Hi Belinda,
+
+Saw the news on FWD by Fernwood Fitness. I'm curious how you see the app growing as a place members visit between club sessions.
+
+FitXpress is a guided two-photo scan, white-label inside your own app: 80+ body measurements and a 3D model in under 45 seconds from the photos to structured results.
+
+Might that be worth a quick chat?
+
+Vadim","Hi Belinda,
+
+From a CEO's chair, build or partner matters most. A scan that runs inside FWD through an SDK avoids a computer-vision build and a device to ship.
+
+It sits alongside what clubs already do with members, adding a repeatable capture from home.
+
+Worth exploring together?
+
+Vadim"
+Elle,Chai,https://linkedin.com/in/ellechai,Fernwood Fitness,CRM and Digital Marketing Manager,,,"Hi Elle,
+
+Quick one from the CRM side: the Fernwood Fitness app already rewards activity, so I'm curious what moments bring members back between visits.
+
+We built FitXpress for that kind of moment: two photos, 80+ body measurements and a 3D model, with a scan-to-scan comparison the program chooses to show.
+
+Open to a conversation?
+
+Vadim","Hi Elle,
+
+One way it could work for a CRM program: members scan at home, and a comparison appears in the app when they choose to look.
+
+Results arrive in under 45 seconds from the photos to structured results.
+
+How do you handle progress touchpoints today?
+
+Vadim"
+Bianca,Clements,https://linkedin.com/in/biancaclements,Fernwood Fitness,Marketing Lead,,,"Hi Bianca,
+
+Caught my eye: a first Fernwood Fitness club planned in Jakarta. I'm curious how a campaign travels when members meet the brand first through the app.
+
+FitXpress is a white-label scan: two phone photos in, 80+ body measurements and a 3D model out, wherever the app is used.
+
+Could that suit a member campaign?
+
+Vadim","Hi Bianca,
+
+For marketing, the appeal is a progress moment members take at home, captured the same guided way each time.
+
+For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+Would a short call be useful?
+
+Vadim"
+Ella,Wheeler,https://linkedin.com/in/ella-wheeler-72b16b15,Fernwood Fitness,National Campaign & Local Area Marketing Manager,,,"Hi Ella,
+
+Had a thought and a short ask. FWD by Fernwood lists habit tracking, and I wonder who at Fernwood Fitness owns that roadmap.
+
+I work on a two-photo body scan for member apps and would like to reach the right person.
+
+Vadim","Hi Ella,
+
+A quick pointer would help: the name of whoever decides what goes into the Fernwood app.
+
+Appreciate any steer.
+
+Vadim"
+Kitty,Robinson,https://linkedin.com/in/kitty-robinson-857b712b8,Fernwood Fitness,Digital Content + Community Manager,,,"Hi Kitty,
+
+Thought I'd share an idea for the Fernwood Fitness community: FWD by Fernwood lists milestone achievements, which makes me wonder what members like to celebrate.
+
+FitXpress could offer a scan members take themselves: two photos, 80+ body measurements and a 3D model they choose whether to see.
+
+Curious what you'd make of it?
+
+Vadim","Hi Kitty,
+
+Community stories often begin with a milestone. A scan taken at home, the same way each time, is one more optional milestone a member can open when she likes.
+
+Is that a conversation worth having?
+
+Vadim"
+Ashleigh,J,https://linkedin.com/in/ashleigh-j-50215094,Fernwood Fitness,Sales & Marketing,,,"Hi Ashleigh,
+
+Quick reaction after seeing your club management background at Fernwood Fitness. Do you know who looks after the member app and its features?
+
+I'm looking to reach that person about a two-photo body scan. Thanks for any steer.
+
+Vadim","Hi Ashleigh,
+
+Just checking whether you could point me to the person behind the Fernwood member app.
+
+A name is plenty.
+
+Vadim"
+Zoe,Kirby,https://linkedin.com/in/zoe-kirby-23a5086b,Fernwood Fitness,Fernwood Morayfield,,,"Hi Zoe,
+
+Had to say hi with one small ask. Fernwood Fitness runs Women's Health Clubs with a member app, and I'm hoping to find who decides which features it offers.
+
+Do you know who that is?
+
+Vadim","Hi Zoe,
+
+One more try on a small ask: could you point me towards whoever owns the Fernwood app?
+
+Thanks for reading.
+
+Vadim"
+Carl,Giammarco,https://linkedin.com/in/carl-giammarco-48674330,Fitstop,Global Head of Growth,,,"Hi Carl,
+
+Noticed overlap with your F45 sales background, now growth at Fitstop as it moves into Texas. I'm curious how a new market meets the member app before the first class.
+
+FitXpress is a guided two-photo scan, white-label in your own app: 80+ body measurements and a 3D model, in under 45 seconds from the photos to structured results.
+
+Worth a conversation?
+
+Vadim","Hi Carl,
+
+On growth, a scan members take at home gives a new studio's members a first progress moment before they walk in.
+
+112,100 scans in 2025 across all 3DLOOK customers.
+
+Open to comparing notes?
+
+Vadim"
+Riley,Woodcock,https://linkedin.com/in/riley-woodcock-80b784a7,Fitstop,General Manager,,,"Hi Riley,
+
+Had a thought about the Fitstop Global Games: a shared event gives members a reason to check where they are.
+
+FitXpress is a two-photo scan inside the member app, taken at home between sessions: 80+ body measurements and a 3D model, shown only if the member chooses.
+
+Curious how studios in Perth keep members connected to progress between events?
+
+Vadim","Hi Riley,
+
+From the studio floor, a repeatable capture matters: the same guided front and side photos each time.
+
+Members wait under 45 seconds from the photos to structured results.
+
+Would coaches find that useful?
+
+Vadim"
+Ryan,Ansell,https://linkedin.com/in/ryan-ansell,Fitstop,Head of Brand & Marketing,,,"Hi Ryan,
+
+Quick thought from the brand side: each Fitstop training style has its own identity, and members move between them.
+
+I'm curious how Fitstop shows a member's progress across styles in the app. FitXpress offers a two-photo scan with 80+ body measurements and a 3D model, taken at home and compared scan to scan.
+
+Fancy a chat?
+
+Vadim","Hi Ryan,
+
+Think of it as a brand moment: members choose to scan, and the program chooses what the comparison shows.
+
+The scan takes under 45 seconds from the photos to structured results.
+
+Where would that sit in the member experience?
+
+Vadim"
+Olivia,Houston,https://linkedin.com/in/olivia-houston-b49985b5,Fitstop,Managing Owner,,,"Hi Olivia,
+
+Wanted to reach out with a short ask. Fitstop has a new member app, and I'd like to find who looks after it.
+
+I'm working on a two-photo body scan for member apps and want to reach the right person.
+
+Vadim","Hi Olivia,
+
+A name or a contact at Fitstop head office would be plenty.
+
+Thanks for your time.
+
+Vadim"
+Sally,Kubler,https://linkedin.com/in/sally-kubler-95603a3a,Fitstop,Head Coach,,,"Hi Sally,
+
+Quick note, looking for a coach's view. Fitstop is a founder-led brand under Pete Hull, and I'd like to know who decides what goes into the member app.
+
+I'd like to reach them about a two-photo body scan.
+
+Vadim","Hi Sally,
+
+If you can point me to the right person, that would help.
+
+Thanks in advance.
+
+Vadim"
+Declan,Goodsell,https://linkedin.com/in/declan-goodsell-58a0111b2,Xyris,CEO & Managing Director,,,"Hi Declan,
+
+Thought I'd share an idea for Xyris: FoodWorks is used by dietitians and researchers, who value consistent records.
+
+FitXpress is a guided two-photo scan: 80+ body measurements and a 3D model, white-label in the app.
+
+Open to a brief chat?
+
+Vadim","Hi Declan,
+
+Build or partner is the CEO question. A white-label scan through an SDK avoids a computer-vision build, and Xyris decides where it appears.
+
+Time to structured results is under 45 seconds from the photos to structured results.
+
+Worth a short discussion?
+
+Vadim"
+Shian,Jordan,https://linkedin.com/in/shian-russell-jordan-969882179,Xyris,Product Manager,,,"Hi Shian,
+
+Noticed your background: dietitian first, now product at Xyris. Members can share their diary with a dietitian through FoodWorks.online Professional, and I'm curious what else a dietitian would want to see.
+
+FitXpress returns 80+ body measurements from two photos, taken the same guided way each time.
+
+Keen to explore?
+
+Vadim","Hi Shian,
+
+With a dietitian's eye, repeatability matters: for most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+It would sit alongside the diary, and the scan finishes in under 45 seconds from the photos to structured results.
+
+Care to chat?
+
+Vadim"
+Craig,Cowdrey,https://linkedin.com/in/craig-cowdrey-919245b9,Sonder,Co-founder & CEO,,,"Hi Craig,
+
+Sonder's scaling across ANZ and the UK with new AI-driven features stood out. Curious which member-facing additions are on your mind.
+
+We built FitXpress at 3DLOOK: an optional body check members complete in Sonder's app from two photos, returning 80+ body measurements. Sonder decides what is shown and to whom.
+
+Could we explore it together?
+
+Vadim","Hi Craig,
+
+Short version for a founder: members choose to take the check, and Sonder shapes the experience around its own wellbeing goals. Results come back in under 45 seconds from the photos to structured results.
+
+Background on wellness platforms: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Does a conversation make sense?
+
+Vadim"
+Jing,Guo,https://linkedin.com/in/jinguo111,Sonder,Head of Product Design,,,"Hi Jing,
+
+Sonder supports people in whatever language they prefer, which makes the in-app flow a real design question. Curious how you would design a guided camera moment.
+
+FitXpress offers a guided two-photo capture through an SDK. Your team shapes the screens and picks which of the 80+ body measurements members see.
+
+May I send a sample screen flow?
+
+Vadim","Hi Jing,
+
+On the design side: members follow guided steps, and Sonder's designers own the look of each screen. A 3D model is one view among many to choose from.
+
+Reference for your team: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Would a look at the capture steps help?
+
+Vadim"
+Nemo,Hu,https://linkedin.com/in/nemo-hu-39598b176,Sonder,Product Manager,,,"Hi Nemo,
+
+A machine learning background at Rokt and Tencent makes build or partner a fair question for a body-scan feature at Sonder.
+
+FitXpress sends back structured data from two photos: 80+ body measurements and body composition estimates, with a wait of under 45 seconds from the photos to structured results.
+
+Curious where you would land on that?
+
+Vadim","Hi Nemo,
+
+Data angle: the output is structured, so a team can store and compare scans in its own data model. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+Details on the data side: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Open to trading notes?
+
+Vadim"
+Lena,Morrison,https://linkedin.com/in/lena-m-78a54529,Sonder,Group Product Manager,,,"Hi Lena,
+
+Caught my eye: Head of Product at Evermed, now Group Product Manager at Sonder. Where would an optional body check fit in a roadmap that already spans safety and clinical support?
+
+FitXpress is a white-label scan: two photos in, 80+ body measurements and a 3D model out, as a single module.
+
+Would it be worth a conversation about scope?
+
+Vadim","Hi Lena,
+
+A module view: the scan sits behind one entry point in the app, and the team decides who sees it. The scan returns 80+ body measurements.
+
+One page on the module idea: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Could I outline the module in a call?
+
+Vadim"
+Michael,Conroy,https://linkedin.com/in/conroymichael,Sonder,Group Product Manager,,,"Hi Michael,
+
+Head of Product for Refresh:Food at Woolworths Group is a good vantage point. Curious what makes a wellbeing feature worth shipping at Sonder.
+
+We work on FitXpress: a body check from two phone photos, with measurements and a 3D model Sonder would show only if members opt in.
+
+Open to swapping a few thoughts?
+
+Vadim","Hi Michael,
+
+On opt-in features: the member chooses to scan, and Sonder chooses which outputs to display. The scan returns 80+ body measurements in under 45 seconds from the photos to structured results.
+
+More on opt-in design: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Shall I walk you through it?
+
+Vadim"
+Nick,Matthews,https://linkedin.com/in/nmatthewslondon,Sonder,VP and General Manager UK,,,"Hi Nick,
+
+Your years at Culture Amp and Microsoft come to mind. Curious how you think about optional wellbeing features that Sonder members choose to use.
+
+Offered as an at-home check inside a wellbeing app, FitXpress turns two photos into 80+ body measurements and a 3D model. The program decides what members see.
+
+Would hearing more be useful?
+
+Vadim","Hi Nick,
+
+From a GM's view, one SDK adds a capability without a new product line.
+
+112,100 scans in 2025 across all 3DLOOK customers.
+
+A quick overview: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Is that worth a closer look?
+
+Vadim"
+Kimi,Powell,https://linkedin.com/in/kimi-powell-66415b31a,Sonder,Director of Clinical Services,,,"Hi Kimi,
+
+Sonder gives members access to nurses and mental-health clinicians through the app, and you have led that clinical side. How would your team judge a new optional feature before it reaches members?
+
+FitXpress returns 80+ body measurements and body composition estimates from two photos. They are estimates for the member's own view, and Sonder chooses what is shown.
+
+Could I hear how you would assess it?
+
+Vadim","Hi Kimi,
+
+For a clinical lens: the scan is optional for members, and the program stays in control of what appears in the app. Each result is timestamped.
+
+Related reading: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Would you be open to a brief chat?
+
+Vadim"
+Aimie,Smith,https://linkedin.com/in/aimie-smith,Sonder,Marketing,,,"Hi Aimie,
+
+Your headline says Sonder offers health, safety and wellbeing support. Who owns the member app experience there?
+
+Why I ask: 3DLOOK builds a two-photo body scan that apps offer inside their own experience. A pointer to the right person would help.
+
+Vadim","Hi Aimie,
+
+Thanks for reading my note. If the app experience sits with a product lead, a name would be perfect.
+
+Happy to write to them directly.
+
+Vadim"
+Duyen,Nguyen,https://linkedin.com/in/duyen-h-nguyen,Sonder,Marketing,,,"Hi Duyen,
+
+Sonder's services for people meeting someone new or travelling alone caught my eye. Who looks after new features in the member app?
+
+My side: a two-photo body scan with 80+ body measurements, which an app can add under its own brand. Just looking for the right contact.
+
+Vadim","Hi Duyen,
+
+Quick nudge on my question: whoever owns the app roadmap at Sonder is the person I would like to reach.
+
+A name or a forward would be plenty.
+
+Vadim"
+Michaela,Pigott,https://linkedin.com/in/michaelapigott,Sonder,Customer Marketing Manager,,,"Hi Michaela,
+
+Sonder meets members in the language they prefer, which is a marketing story as much as a product one. Which colleague plans what the app offers next?
+
+In one line, 3DLOOK has a scan that turns two photos into measurements members can choose to take. I would value an introduction.
+
+Vadim","Hi Michaela,
+
+Maybe this fits better with a colleague: someone who plans features for the Sonder app.
+
+Could you share who that is?
+
+Vadim"
+David,Badet,https://linkedin.com/in/david-badet-36695082,Sonder,"Manager, Growth Marketing",,,"Hi David,
+
+Wanted to reach out: Sonder's rollout across ANZ and the UK looks busy from a growth seat. Who holds the product roadmap for the app?
+
+For context, FitXpress is a body scan from two phone photos that an app can host as a module. Pointing me to the owner would be a big help.
+
+Vadim","Hi David,
+
+One more try, kept short: which person at Sonder should hear about an optional body-check module for the app?
+
+Appreciate any pointer.
+
+Vadim"
+Robert,Chasse,https://linkedin.com/in/robert-chasse-a6857a258,Sonder,Education Partnerships,,,"Hi Robert,
+
+Sonder's app puts safety specialists within reach, which caught my eye. Could you point me to the right product owner?
+
+I work on FitXpress, a two-photo scan with 80+ body measurements, offered under an app's own brand. No pitch, just the right name.
+
+Vadim","Hi Robert,
+
+If app features sit outside your area, no problem. Could you steer me to the person who owns them at Sonder?
+
+Many thanks.
+
+Vadim"

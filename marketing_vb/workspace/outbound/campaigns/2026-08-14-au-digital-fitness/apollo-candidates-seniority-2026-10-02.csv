@@ -1,0 +1,291 @@
+apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,last_refreshed_at,status
+66f2653b86774b0001e2baea,Tim,Ve***n,Founder,Vively,vively.com.au,Vively,2026-09-14T05:56:40.000+00:00,candidate
+6602858b58c0b00007b3be92,Michelle,Wo***e,Founding Medical Director: Vively Health,Vively,vively.com.au,Vively,2026-09-05T11:30:51.000+00:00,candidate
+5944ece7a6da984d0857f359,Victor,Ga***a,Head of Engineering,Vively,vively.com.au,Vively,2026-09-12T07:45:22.000+00:00,candidate
+66f0eac54183a10001b77d96,Sam,Ko***i,Cofounder,Everlab,everlab.com.au,Everlab,2026-09-06T08:52:26.209+00:00,candidate
+66f0c24776c76500010b8216,Marc,He***n,Founder,Everlab,everlab.com.au,Everlab,2026-09-29T12:40:32.634+00:00,candidate
+66fcff54856635000179f1ca,Steven,Lu,"Cofounder, CMO",Everlab,everlab.com.au,Everlab,2026-09-14T15:09:47.578+00:00,candidate
+625040fa33eb8f00015f7a65,Sharif,Al***s,Head of Engineering,Everlab,everlab.com.au,Everlab,2026-09-16T03:18:06.000+00:00,candidate
+57e0a491a6da981c15d1c0df,Dani,Wh***e,Head of Brand & Creative,Everlab,everlab.com.au,Everlab,2026-09-05T08:26:01.000+00:00,candidate
+62007ffb089cd20001456564,Michael,Re***d,Founding Engineer,Everlab,everlab.com.au,Everlab,2026-09-08T10:33:26.000+00:00,candidate
+6424934402a38600017a7076,Ri,Tan,Partner Doctor,Everlab,everlab.com.au,Everlab,2026-09-05T12:58:36.000+00:00,candidate
+67001d5a56abbc00017041a4,Scott,Pe***n,Global CEO,Digital Wellness,digitalwellness.com,Digital Wellness,2026-10-01T15:32:14.474+00:00,candidate
+610c2aeba09bb40001d20241,Jennifer,Ge***n,Chief Commercial Officer,Digital Wellness,digitalwellness.com,Digital Wellness,2026-09-21T07:52:45.000+00:00,candidate
+613adf31af1a7d0001e3c4cd,Ollie,Pe***n,Director of Growth & Strategy,Digital Wellness,digitalwellness.com,Digital Wellness,2026-09-12T03:18:35.000+00:00,candidate
+66f61ac46b154900011a7206,Tony,Va***o,VP of Marketing,Digital Wellness,digitalwellness.com,Digital Wellness,2026-09-21T04:32:06.000+00:00,candidate
+66fdbbcea94ead00013f263e,Joe,Go***o,Chief Operating Officer - US,Digital Wellness,digitalwellness.com,Digital Wellness,2026-09-16T03:07:24.000+00:00,candidate
+55c9201af3e5bb1712004ba0,Jigar,Vi***i,Chief Financial Officer,Digital Wellness,digitalwellness.com,Digital Wellness,2026-10-01T01:59:30.100+00:00,candidate
+63a305aaae165b000113d393,Claire,St***n,Head of Partnerships,Digital Wellness,digitalwellness.com,Digital Wellness,2026-09-08T00:51:21.000+00:00,candidate
+66acb80c8e3497000139966a,Nicole,Pr***d,Head of Health Programs,Digital Wellness,digitalwellness.com,Digital Wellness,2025-10-10T08:09:46.174+00:00,candidate
+66f3d78beb63860001dfdad5,Anna,Cr***k,Director of Product Development,Digital Wellness,digitalwellness.com,Digital Wellness,2026-08-31T21:25:19.604+00:00,candidate
+54a2bcac7468693fdadb0439,Isabelle,Gu***t,Partner Marketing,Digital Wellness,digitalwellness.com,Digital Wellness,2026-09-08T11:32:20.196+00:00,candidate
+5e7686b23da38a0001f3d5d3,Jessica,Cl***y,Partner Success Executive & Nutritionist,Digital Wellness,digitalwellness.com,Digital Wellness,2026-09-25T20:13:05.632+00:00,candidate
+54aa914a7468692366c7d10b,Ben,Co***e,Director of Innovation,Hapana,hapana.com,Hapana,2026-09-17T22:53:42.019+00:00,candidate
+60cc9c982783f6000105e01b,Alan,Sa***z,Chief Operating Officer,Hapana,hapana.com,Hapana,2026-09-06T10:07:11.000+00:00,candidate
+60e2da03d026090001a7fea7,Corey,Lo***r,SVP of Enterprise Sales,Hapana,hapana.com,Hapana,2026-09-08T11:59:23.000+00:00,candidate
+54a7833174686965d96dd43b,Adam,Fa***i,Director of Customer Success,Hapana,hapana.com,Hapana,2026-09-05T18:40:24.000+00:00,candidate
+60e13a4dd90e5a00011a74da,Jarron,Ai***n,CEO & Founder,Hapana,hapana.com,Hapana,2026-09-21T04:28:48.000+00:00,candidate
+6115b3b20602ec0001730b88,Michael,Ch***r,Chief Revenue Officer (CRO),Hapana,hapana.com,Hapana,2026-09-22T18:55:29.000+00:00,candidate
+67deaeb47514800001284b62,Milena,Za***i,Head of Marketing,Hapana,hapana.com,Hapana,2026-09-24T06:05:24.000+00:00,candidate
+658e4d81974da00001b65422,Jody,Hi***n,"Director of Sales, North America",Hapana,hapana.com,Hapana,2026-08-12T07:14:33.126+00:00,candidate
+61007b98771b580001caf819,Lakshmi,Ko***a,Head of Product,Hapana,hapana.com,Hapana,2026-09-19T21:19:41.000+00:00,candidate
+63bfb2236e218800014199a2,Stephanie,Tu***r,Global Chief Customer Officer,Hapana,hapana.com,Hapana,2026-09-10T05:07:55.000+00:00,candidate
+68708e37d9ade700014cb3c7,Neil,Da***s,Chief Financial Officer,Hapana,hapana.com,Hapana,2026-09-28T23:28:44.657+00:00,candidate
+6090b9ba9c45b20001ac357a,Manish,Ag***l,Director of Technology,Hapana,hapana.com,Hapana,2026-09-18T08:28:15.000+00:00,candidate
+66f502f08ac4370001c99a9a,Russel,Ai***n,Chief Financial Officer,Hapana,hapana.com,Hapana,2026-08-29T03:20:47.000+00:00,candidate
+5ad07be9a6da9884a135b565,Tom,Ke***p,Head of Onboarding - Global,Hapana,hapana.com,Hapana,2026-09-07T06:50:39.000+00:00,candidate
+6788aedfbdfe5800013e0110,Travis,Sh***n,Chief Technology Officer,Hapana,hapana.com,Hapana,2026-09-07T06:08:37.726+00:00,candidate
+55befc757369644f383b0c00,Gopal,Ag***l,Director of Product Operations,Hapana,hapana.com,Hapana,2026-08-25T06:55:38.824+00:00,candidate
+69885dcdad4a0a000129691c,Amy,Tr***n,Director of People and Culture,Hapana,hapana.com,Hapana,2026-09-22T04:52:26.000+00:00,candidate
+5f5377a3025aa6000152bf22,Sasha,Ro***l,"Director, Revenue Strategy & Operations",Hapana,hapana.com,Hapana,2026-08-29T03:20:47.000+00:00,candidate
+56307440a6da987818001352,Michali,Ai***n,Head of Global Customer Success Management,Hapana,hapana.com,Hapana,2026-09-07T15:43:36.313+00:00,candidate
+5c3d6072a3ae61e358a19331,Ty,Ha***g,Head of Support,Hapana,hapana.com,Hapana,2026-09-13T07:15:56.000+00:00,candidate
+6007e2f692b977000143fde1,Tais,Ma***i,Product Owner,Hapana,hapana.com,Hapana,2026-09-05T16:20:38.000+00:00,candidate
+54a11fe269702d9a8bc02902,Rosemary,No***h,Proprietor,Hapana,hapana.com,Hapana,2026-09-17T18:29:53.912+00:00,candidate
+54a76a6174686965d934a632,Pina,Sc***e,Chief Retail Insurance and Advice Officer | AIA Australia | Oct 2024 – Present,AIA Australia,aia.com.au,AIA Australia,2026-09-29T12:54:21.494+00:00,candidate
+54a6e2a57468696b7f2c4601,Chris,He***y,Chief Executive - Group Insurance Officer,AIA Australia,aia.com.au,AIA Australia,2026-09-07T06:29:47.000+00:00,candidate
+607e9dbd0659d5000131624c,Anna,Li***n,Chief People & Culture Officer,AIA Australia,aia.com.au,AIA Australia,2026-09-09T04:07:02.000+00:00,candidate
+611d666e71d1480001147875,Tracey,Cr***e,Chief Customer Operations and Claims Officer,AIA Australia,aia.com.au,AIA Australia,2026-09-13T01:54:59.447+00:00,candidate
+5ac4af13a6da98016c5d5c09,Dave,Ev***s,Head of Propositions & Direct Partnerships,AIA Australia,aia.com.au,AIA Australia,2026-09-26T15:04:56.368+00:00,candidate
+54a3df9b7468693209de131a,Grant,Jo***s,General Counsel,AIA Australia,aia.com.au,AIA Australia,2026-09-25T17:35:21.858+00:00,candidate
+5aaf7563a6da98c3769882fd,Michael,Ki***g,Head of Bancassurance,AIA Australia,aia.com.au,AIA Australia,2026-09-16T18:49:25.506+00:00,candidate
+5e8cefc3fe1fd7000185db74,Brett,Mc***g,"Head of Legal, Claims and Disputes",AIA Australia,aia.com.au,AIA Australia,2026-09-04T04:04:40.000+00:00,candidate
+54a5d23c7468692fa25795ab,Carole,Li***n,Head of Portfolio Change- CXO and Corporate Transactions (M&A),AIA Australia,aia.com.au,AIA Australia,2026-09-25T14:23:44.048+00:00,candidate
+60f00a8e93b7570001d1fe27,Luke,As***y,Head of Vitality Partnerships & Distribution,AIA Australia,aia.com.au,AIA Australia,2026-08-22T13:03:33.217+00:00,candidate
+60a603fbbc5cde00018a118e,Iva,Sa***c,People Partner,AIA Australia,aia.com.au,AIA Australia,2025-09-03T04:47:16.289+00:00,candidate
+6064274574eb15000174595a,James,Teo,Head of Legal,AIA Australia,aia.com.au,AIA Australia,2026-07-24T00:13:45.232+00:00,candidate
+5b2865cba6da98c302e1815b,Vaibhav,Sh***a,Head of Master Trust Partnerships,AIA Australia,aia.com.au,AIA Australia,2026-09-04T14:29:25.000+00:00,candidate
+54aa6405746869037742af03,Julia,Be***z,Head of Overseas Health Cover,AIA Australia,aia.com.au,AIA Australia,2026-09-04T17:49:40.000+00:00,candidate
+61144b016fd4860001e5ab27,Stephanie,Ph***s,Chief Marketing & Propositions Officer,AIA Australia,aia.com.au,AIA Australia,2026-09-04T16:25:26.000+00:00,candidate
+60db5e13950af4000192b894,Peter,Ke***y,Head of Tender & Growth Propositions,AIA Australia,aia.com.au,AIA Australia,2026-08-23T05:29:55.811+00:00,candidate
+606e9835860873000121c6c0,Sam,Ge***e,Head of Retail Claims,AIA Australia,aia.com.au,AIA Australia,2026-09-13T18:39:25.000+00:00,candidate
+677679c958bfd00001c9e3f8,Sally,Ba***t,"Senior Manager, Internal Communications & Strategy | CEO Office",AIA Australia,aia.com.au,AIA Australia,2026-09-04T09:17:20.000+00:00,candidate
+54a3f45c7468693209a0d420,Gerry,Sc***r,Chief Risk Officer (CRO),AIA Australia,aia.com.au,AIA Australia,2026-09-07T23:25:47.000+00:00,candidate
+54a789de7468696de7fe1b3e,Theresa,Br***o,Head of Digital,AIA Australia,aia.com.au,AIA Australia,2026-08-23T05:39:55.000+00:00,candidate
+612d9e402eb3810001df8b0a,Leesa,Co***e,"Head of People Advisory, Employee Experience & Programs",AIA Australia,aia.com.au,AIA Australia,2026-09-16T03:45:50.000+00:00,candidate
+6596510075b11c0001910783,Tijs,Cr***s,"Head of Operational Risk, Controls and Assurance",AIA Australia,aia.com.au,AIA Australia,2026-09-05T12:14:05.000+00:00,candidate
+54aa933a746869063003550c,Dimitra,Pa***s,Head of Customer Care,AIA Australia,aia.com.au,AIA Australia,2026-09-07T08:24:32.000+00:00,candidate
+54a6f357746869705a405207,Susan,Lo***i,Chief Risk Officer,AIA Australia,aia.com.au,AIA Australia,2026-09-17T13:24:29.000+00:00,candidate
+60a5c7552d6a5e00016418b5,Karup,Ka***m,Head of Applications and Platforms (Core Systems),AIA Australia,aia.com.au,AIA Australia,2026-09-07T14:59:14.000+00:00,candidate
+5e8cab2aa8571c000167313d,Elroy,Ha***n,Head of Commercial and Transition Services (M&A),AIA Australia,aia.com.au,AIA Australia,2025-07-20T14:14:37.434+00:00,candidate
+5ab250aea6da98f801149231,Benjamin,Ma***n,Head of Strategic Partnerships,AIA Australia,aia.com.au,AIA Australia,2026-08-29T03:16:55.000+00:00,candidate
+54a338fc7468693318c0f45c,Karen,Pu***l,Head of New Business Development,AIA Australia,aia.com.au,AIA Australia,2026-09-12T19:29:17.000+00:00,candidate
+57db9fa9a6da9868574b3f78,Elke,Re***r,Head of Group Partnerships,AIA Australia,aia.com.au,AIA Australia,2026-09-12T00:17:59.000+00:00,candidate
+624a827c33c5a90001fecb49,Edmund,Wo***g,Head of Risk - Marketing and Propositions,AIA Australia,aia.com.au,AIA Australia,2026-09-06T04:59:46.000+00:00,candidate
+5e7952d3efe5c20001275c1d,David,Su***s,Head of Financial Risk,AIA Australia,aia.com.au,AIA Australia,2026-09-25T16:21:28.566+00:00,candidate
+57d5596da6da9853bed98aa5,Paul,De***y,"Head of Risk Framework, Governance and Enablement",AIA Australia,aia.com.au,AIA Australia,2026-08-28T03:37:42.000+00:00,candidate
+60c3359d9fb9c70001b15de6,Diarmuid,Wa***h,"Head of IFRS 17, Capital, and Embedded Value Reporting",AIA Australia,aia.com.au,AIA Australia,2026-09-08T06:23:16.000+00:00,candidate
+60f61c814849050001b1968b,Arley,Gr***y,Head of Customer Marketing and Engagement,AIA Australia,aia.com.au,AIA Australia,2026-09-08T09:11:13.000+00:00,candidate
+54a3cd3874686938accf2a14,Bas,Ha***d,Group Product Business Partner,AIA Australia,aia.com.au,AIA Australia,2026-09-01T15:24:34.822+00:00,candidate
+60ffe13a6a363f00015b2775,Greg,Ba***d,Chief Operating Officer,AIA Australia,aia.com.au,AIA Australia,2026-07-03T19:17:33.822+00:00,candidate
+56c061a7f3e5bb1e7e123e17,Lucinda,Bu***s,Vitality Partner Manager,AIA Australia,aia.com.au,AIA Australia,2026-08-06T07:11:44.000+00:00,candidate
+54a483877468693b8ccc344d,Adam,Ho***d,Digital Product Owner,AIA Australia,aia.com.au,AIA Australia,2026-09-05T14:34:08.000+00:00,candidate
+6104099d0ef2350001f5ec17,Ranil,Pe***s,Head of Risk & Governance,AIA Australia,aia.com.au,AIA Australia,2026-08-27T04:49:51.440+00:00,candidate
+5ac6fc21a6da9840ac4859df,Danielle,Wi***s,Head of Strategy & Innovation (AIA Vitality),AIA Australia,aia.com.au,AIA Australia,2026-09-17T13:13:32.000+00:00,candidate
+54aaa7a07468690630270011,Surya,Sh***y,Head of Technology Procurement & Service Provider Management,AIA Australia,aia.com.au,AIA Australia,2026-09-24T17:06:41.207+00:00,candidate
+54a4d2c17468692cf0563b66,Paul,Iv***y,Head of Capital and Reinsurance Technical Services,AIA Australia,aia.com.au,AIA Australia,2026-09-10T18:30:42.000+00:00,candidate
+615fbd656dbf7f0001a983d7,Paul,Tr***g,Claims and Reinsurance Consultant - Office of the CEO,AIA Australia,aia.com.au,AIA Australia,2026-09-06T07:13:08.000+00:00,candidate
+60ac7035b6444e0001cad581,Wayne,Bl***w,"Head of Technology Risk, Privacy and Business Resilience",AIA Australia,aia.com.au,AIA Australia,2026-09-10T20:23:20.000+00:00,candidate
+54a9dcee746869339907f119,Colleen,No***s,Head of Group Propositions,AIA Australia,aia.com.au,AIA Australia,2026-08-16T14:24:29.000+00:00,candidate
+6252e40efc8e32000122c890,David,O'***l,Head of IT Strategy and Business Partnerships,AIA Australia,aia.com.au,AIA Australia,2026-06-23T10:07:44.601+00:00,candidate
+5dd812314c31c800019ed8c4,Lynley,An***n,Head of Operations,AIA Australia,aia.com.au,AIA Australia,2026-09-21T23:10:04.799+00:00,candidate
+60f875c2901eef000113bcb3,Sulaiman,Th***n,Head of Technology Delivery Capability,AIA Australia,aia.com.au,AIA Australia,2026-09-04T05:05:55.000+00:00,candidate
+60f18323fe0e3900018f3076,Jordan,Be***y,Head of Strategy & CEO Office,AIA Australia,aia.com.au,AIA Australia,2026-09-13T01:52:02.078+00:00,candidate
+57d54a29a6da985386c48f97,Penny,Sh***d,Head of Retail Product,AIA Australia,aia.com.au,AIA Australia,2026-09-12T08:37:36.000+00:00,candidate
+66fe740f7b3b900001f5988d,Shaker,Ali,Head of Information Security and Operations,AIA Australia,aia.com.au,AIA Australia,2026-09-04T04:17:28.000+00:00,candidate
+683e4d904486c6000143ee00,James,Cox,Product Owner,AIA Australia,aia.com.au,AIA Australia,2026-09-02T21:27:29.765+00:00,candidate
+6888d90d472d370001133d68,Daniel,C,Head of Investment Management Strategic Development,AIA Australia,aia.com.au,AIA Australia,2026-09-06T11:48:15.000+00:00,candidate
+5f8e7abf95586f0001846c0e,Tom,Go***n,Head of Retirement Solutions,AIA Australia,aia.com.au,AIA Australia,2026-09-21T07:47:59.537+00:00,candidate
+57d904efa6da98722a81b36a,Wayne,Wi***s,Head of Corporate Group Insurance,AIA Australia,aia.com.au,AIA Australia,2026-09-04T10:44:47.000+00:00,candidate
+5aad2024a6da98c3d3570721,George,Wo***g,Head of Portfolio Management (Australia & New Zealand) - Fixed Income,AIA Australia,aia.com.au,AIA Australia,2026-07-04T07:01:20.000+00:00,candidate
+6426d57f56ce5f00015284f9,Daniel,Wa***g,Head of Tax,AIA Australia,aia.com.au,AIA Australia,2026-07-30T04:29:32.000+00:00,candidate
+67690decc12c260001f2ef2c,John,Ar***r,Head of Investment Strategy,AIA Australia,aia.com.au,AIA Australia,2025-06-19T07:19:20.355+00:00,candidate
+54a60ef4746869320921fdbe,Mark,Br***m,Head of Customer Retention,AIA Australia,aia.com.au,AIA Australia,2026-09-12T08:27:51.000+00:00,candidate
+5fcb8dbb93683c000149d6d5,Rochelle,Ev***s,Head of Group & Retail Marketing,AIA Australia,aia.com.au,AIA Australia,2026-09-05T10:07:10.000+00:00,candidate
+610aeb9cdea43400019e94a2,David,Pe***i,Head of Enterprise Remediation & Regulatory Change,AIA Australia,aia.com.au,AIA Australia,2026-09-08T11:26:54.000+00:00,candidate
+54ec248f7468694311498258,Nadia,Ja***r,Head of National Operations,AIA Australia,aia.com.au,AIA Australia,2026-09-05T15:54:55.221+00:00,candidate
+54a5773b74686932093f8897,Sue,Fu***t,Group Product Business Partner,AIA Australia,aia.com.au,AIA Australia,2026-08-04T01:36:40.000+00:00,candidate
+57df835fa6da980add3319d7,Trish,Cu***y,General Manager Industry Funds and Government Partners,AIA Australia,aia.com.au,AIA Australia,2026-09-17T23:14:56.000+00:00,candidate
+606e945d4b7f8c00012f7a9d,Jonathan,Ag***w,Head of Retail Insurance Operations,AIA Australia,aia.com.au,AIA Australia,2026-09-09T21:38:56.442+00:00,candidate
+5ad5864aa6da9867ac1e081f,Chris,Fr***n,Head of New Business Product and Pricing,AIA Australia,aia.com.au,AIA Australia,2026-09-11T19:18:18.285+00:00,candidate
+5b362b22a6da980c64431a37,Sarah,Ph***s,Director of Corporate Affairs,AIA Australia,aia.com.au,AIA Australia,2026-09-14T18:16:16.481+00:00,candidate
+5f6efc4d92d85d000182e528,Louis,Liu,Pricing Business Partner,AIA Australia,aia.com.au,AIA Australia,2025-10-06T00:13:07.665+00:00,candidate
+5e5d84962709f8000176e6cd,Matt,Wa***l,Finance Business Partner,AIA Australia,aia.com.au,AIA Australia,2026-08-25T04:41:23.792+00:00,candidate
+601d72197fad4b00012a812e,Sunny,Xu,Group Pricing Business Partner,AIA Australia,aia.com.au,AIA Australia,2026-09-05T09:54:18.000+00:00,candidate
+54a3b58d7468692cf0d78d0c,Natalie,Mu***h,Head of Customer Resolutions and Regulatory Change,AIA Australia,aia.com.au,AIA Australia,2026-09-01T14:25:33.606+00:00,candidate
+657f8a75f1453e00014397dc,Ben,Pr***n,"Head of Health Distribution and Enablement, Domestic and International",AIA Australia,aia.com.au,AIA Australia,2026-09-07T06:46:10.000+00:00,candidate
+54abe81a7468692ca1f33215,Elizabeth,Fl***n,NED,AIA Australia,aia.com.au,AIA Australia,2025-10-06T03:43:23.883+00:00,candidate
+5ad63185a6da986790da4aa5,Lawrence,Lau,Pricing Actuary Business Partner,AIA Australia,aia.com.au,AIA Australia,2026-09-14T08:12:34.339+00:00,candidate
+54a6ef767468696de75be005,Chatapiwa,Ti***o,Head of Master Trust and Corporate Pricing,AIA Australia,aia.com.au,AIA Australia,2026-08-12T15:28:27.000+00:00,candidate
+5dc7f918dc1ff6000152c328,Cindy,Tr***n,People Partner,AIA Australia,aia.com.au,AIA Australia,2026-09-06T08:45:10.000+00:00,candidate
+57e1d5b5a6da98092e50234e,Colleen,Le***n,Finance Business Partner,AIA Australia,aia.com.au,AIA Australia,2026-08-24T20:45:57.957+00:00,candidate
+60048534e1407600016ddbb0,Jack,Ch***u,Strategic Finance Business Partner,AIA Australia,aia.com.au,AIA Australia,2026-08-18T02:01:18.993+00:00,candidate
+54ebca767468694311430626,Angus,Ch***g,Group Pricing Business Partner,AIA Australia,aia.com.au,AIA Australia,2026-09-04T14:46:50.000+00:00,candidate
+54a565147468692cf0b55c94,Leroi,Pr***z,AIA Vitality Australia Product Owner,AIA Australia,aia.com.au,AIA Australia,2026-08-04T23:04:16.000+00:00,candidate
+65a87f9dc59afc0001a369b3,David,T,Digital Product Owner,AIA Australia,aia.com.au,AIA Australia,2025-05-27T13:40:23.509+00:00,candidate
+5d59f10580f93ed6cef5ea33,Jane,Pe***y,Non-Executive Director,AIA Australia,aia.com.au,AIA Australia,2026-09-12T08:29:17.000+00:00,candidate
+54ebb60e746869444c44a613,Leigh,Ko***s,Head of Business Partnering Savings and Investments,AIA Australia,aia.com.au,AIA Australia,2026-08-21T20:15:11.068+00:00,candidate
+54a2bb7b74686935be0e5e38,Michelle,Be***e,"Head of Legal, Product and Partnerships",AIA Australia,aia.com.au,AIA Australia,2026-09-05T06:41:15.000+00:00,candidate
+5dd772f52c20690001fd4c04,Jie,Xu,Finance Business Partner,AIA Australia,aia.com.au,AIA Australia,2026-09-06T18:54:51.000+00:00,candidate
+60d2b7c54130ee0001ec2a1c,Luke,,"Head of Information Security, Technology Controls and Governace",AIA Australia,aia.com.au,AIA Australia,2026-09-09T02:10:48.381+00:00,candidate
+5f06926fa4bb1e000185b60b,Danny,Sh***h,Chief Strategy Officer (CSO),AIA Australia,aia.com.au,AIA Australia,2026-09-04T14:02:09.000+00:00,candidate
+55dc3bb6f3e5bb0b9c0033a5,Joe,Pr***a,Head of Enterprise Remediation,AIA Australia,aia.com.au,AIA Australia,2026-09-04T07:00:57.000+00:00,candidate
+63a5c3b31f6f8100013421c5,Saurav,Ba***e,Head of Application Portfolio - Retail Platforms,AIA Australia,aia.com.au,AIA Australia,2026-08-23T05:41:14.000+00:00,candidate
+57d7ecc3a6da980a3d78e98b,Justin,Ca,"Head of Risk, General Manager",AIA Australia,aia.com.au,AIA Australia,2026-09-04T16:24:59.000+00:00,candidate
+54aa62d07468690377836e03,Banaf,Zi***i,Head of Adviser Distribution (Acting),AIA Australia,aia.com.au,AIA Australia,2026-09-06T05:57:27.000+00:00,candidate
+5e8eaa1e05823d00016e1787,Katie,Lu,Group Pricing Business Partner,AIA Australia,aia.com.au,AIA Australia,2026-09-08T03:47:25.222+00:00,candidate
+60f7e32274c930000161e070,Emma,Le***y,Head of Brand Strategy,AIA Australia,aia.com.au,AIA Australia,2026-09-09T03:15:25.000+00:00,candidate
+620ce3795d7eb300017c06e6,Clare,St***t,People Projects Partner,AIA Australia,aia.com.au,AIA Australia,2026-09-04T05:22:29.000+00:00,candidate
+60a870167b16c100017ec1a4,A/Prof,Ha***s,Chief Medical Officer,AIA Australia,aia.com.au,AIA Australia,2026-08-12T14:10:02.000+00:00,candidate
+61f9bb2980a6c30001759ba4,Mark,Sh***n,Head of Analytics and Strategy,AIA Australia,aia.com.au,AIA Australia,2026-09-06T08:10:30.000+00:00,candidate
+61670f5cb1545500011af652,Gerald,Jo***n,CTO,AIA Australia,aia.com.au,AIA Australia,2026-09-21T04:54:51.000+00:00,candidate
+54c220c87468691639c9067c,Anthony,Si***w,Head of UAT,AIA Australia,aia.com.au,AIA Australia,2026-09-25T10:39:30.108+00:00,candidate
+66f75d8909b1ef00010702c0,Alex,Ma***s,Director of Accounting Policy,AIA Australia,aia.com.au,AIA Australia,2026-08-16T08:18:22.025+00:00,candidate
+66f3bccbfc2ddd0001f98945,Adam,Ko***h,Chief Executive Officer,Sweat,sweat.com,Sweat,2026-10-01T01:25:26.495+00:00,candidate
+54a3c1f67468693676b64010,Mariella,Me***a,Head of Performance,Sweat,sweat.com,Sweat,2026-09-20T07:03:36.000+00:00,candidate
+60f15ad81361f30001cc6072,Steven,De***t,"Head of Marketing, Content and Partnerships",Sweat,sweat.com,Sweat,2026-09-26T04:38:00.315+00:00,candidate
+60eb8bda32233c000112e5f2,Claire,Se***r,Head of Content,Sweat,sweat.com,Sweat,2026-08-07T12:41:01.000+00:00,candidate
+61147c040c70850001509030,Claudia,Im***o,Head of Go to Market (Marketing),Sweat,sweat.com,Sweat,2026-09-20T07:27:56.000+00:00,candidate
+5fa1dc375899530001759dea,Sarah,Ma***l,Head of Performance Marketing,Sweat,sweat.com,Sweat,2026-09-15T06:21:41.000+00:00,candidate
+67b812dd91428f000122014e,Chris,To***o,Head of Product,Sweat,sweat.com,Sweat,2026-09-27T01:16:36.593+00:00,candidate
+54a81fb474686975f8035262,Sophie,Gl***d,Head of Social,Sweat,sweat.com,Sweat,2026-09-16T03:57:11.000+00:00,candidate
+54aa8b707468690b75e31c0a,Ben,Li***r,IT Business Partner,Sweat,sweat.com,Sweat,2026-09-17T05:55:22.000+00:00,candidate
+66f772bb27096c000133f022,Sweat,Fi***s,Director of Marketing and Social Media,Sweat,sweat.com,Sweat,2026-09-24T03:10:17.000+00:00,candidate
+6620bdcef3a3410007467375,Laura,He***w,Co-Founder,KIC,kicwellness.com,Kic,2026-09-20T03:41:13.000+00:00,candidate
+605b01989cd7b200010e66d4,Steph,Sm***h,Co-Founder,KIC,kicwellness.com,Kic,2026-09-18T23:05:01.000+00:00,candidate
+60e7d49bb51d1f00016fc272,Charlie,Ca***i,Head of Technology & Platform,KIC,kicwellness.com,Kic,2026-09-24T03:30:42.000+00:00,candidate
+69d496c8ab134d0001476121,Natalie,O'***e,Head of Marketing,KIC,kicwellness.com,Kic,2026-09-04T09:34:28.000+00:00,candidate
+685c78c4b8d7650001da62df,Verity,Gu***n,Head of Studio,KIC,kicwellness.com,Kic,2026-08-12T21:14:26.850+00:00,candidate
+63db1511e595f50001ae6d79,Christopher,Kr***k,President,KIC,kicwellness.com,Kic,2026-08-11T18:17:25.000+00:00,candidate
+54a2c7287468692e71337e3c,Deepali,Sh***h,"Center Head, KIC Bandra",KIC,kicwellness.com,Kic,2026-07-04T22:05:38.000+00:00,candidate
+5f4f7129924b7e00010c9abc,Nilesh,Pa***l,Chief Executive Officer,KIC,kicwellness.com,Kic,2026-08-22T08:26:47.000+00:00,candidate
+57e031bba6da985ede803e03,Abdallah,Al***s,N & TS Head Dept.,KIC,kicwellness.com,Kic,2026-06-07T04:21:02.000+00:00,candidate
+54a4e52674686938aced2d6c,Ones,Ka***o,Director- Business Development,KIC,kicwellness.com,Kic,2026-09-26T05:06:40.423+00:00,candidate
+66f82dafae47ef00017e97ff,Dhruvkumar,Da***e,Business Owner,KIC,kicwellness.com,Kic,2026-09-18T13:35:46.000+00:00,candidate
+5c30f84480f93e83f416e065,Steve,Ho***g,PRES,KIC,kicwellness.com,Kic,2026-08-22T16:45:48.345+00:00,candidate
+6a4fd4c0cd615a00016da7ca,Keiichi,Ni***a,Managing Director,KIC,kicwellness.com,Kic,2026-09-02T21:37:21.088+00:00,candidate
+64e85be0efa5ab00010acb98,Audrey,Gu***d,Program Director,KIC,kicwellness.com,Kic,2026-09-09T12:10:04.051+00:00,candidate
+604ab2318937fc00010bf98e,Nicole,Ro***a,VP Marketing,KIC,kicwellness.com,Kic,2026-09-05T22:02:29.914+00:00,candidate
+673a082ba793e100017da80c,Jess,Da***l,Head of Growth Marketing,28 by Sam Wood,28bysamwood.com,28 by Sam Wood,2026-09-10T16:33:38.250+00:00,candidate
+65d5d87db721570001507666,Stephanie,Cl***k,Head of Member Experience,12WBT,12wbt.com,Michelle Bridges 12WBT,2026-09-04T04:37:44.000+00:00,candidate
+69a67579967c070001681a16,Jane,We***n,Head of Corporate Partnerships,12WBT,12wbt.com,Michelle Bridges 12WBT,2026-07-01T21:40:19.000+00:00,candidate
+66fe987a5e305500011b66ba,Aaron,Mc***r,Business Owner,Transform by Fitaz,fitazfk.com,Transform by Fitaz,2026-09-05T06:47:20.000+00:00,candidate
+54ec4d83746869444c050b7b,Peter,Br***r,Chairperson,Defeat Diabetes,defeatdiabetes.com.au,Defeat Diabetes,2026-09-04T15:20:35.000+00:00,candidate
+66f39f6ac1452500019f1431,Zoe,Ea***n,Chief Executive Officer,Defeat Diabetes,defeatdiabetes.com.au,Defeat Diabetes,2026-09-04T17:32:30.000+00:00,candidate
+64c7aeadc19c2a00012e2772,Kinan,Kh***b,VALD Partner,VALD Performance,valdperformance.com,VALD,2026-08-10T18:31:44.673+00:00,candidate
+5d38277af65125774ddeda79,Drew,Co***r,Founder,VALD Performance,valdperformance.com,VALD,2026-09-25T22:52:26.479+00:00,candidate
+54a613437468692fa27993c0,Minhwan,Yo***k,Global Managing Partner,Springday,myspringday.com.au,Springday,2026-05-09T18:53:44.620+00:00,candidate
+54aaba62746869063039d615,Lee,Sq***e,Business Owner,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-08-12T16:25:12.000+00:00,candidate
+615a8094e06d590001a813ac,Nicole,No***e,Non-Executive Director,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-14T18:43:13.948+00:00,candidate
+632462204974210001a0d34c,Adam,Jo***s,"Franchise Owner - Penrith, Parramatta & Auburn",Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-06T07:40:06.000+00:00,candidate
+60d311cba5623b0001d24ab2,Belinda,Wh***n,CEO,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-21T04:13:06.722+00:00,candidate
+5b9fd47cf874f7f9eb180a46,Guneet,Ch***a,Business Owner,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-02-03T02:18:51.358+00:00,candidate
+610da4e8634f7b00015377dc,Caitlin,Ju***y,Franchise Owner,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-04T14:28:59.000+00:00,candidate
+5de08b818bbb5a0001c75692,Kim,Bu***k,Franchise Owner,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-12T19:35:59.000+00:00,candidate
+54a704ca746869622004ae0d,Nicole,Ha***k,Franchisee,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-10T05:56:41.205+00:00,candidate
+5f509e558fe2110001bd2775,Hayley,Ri***y,Franchise Owner,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-06T00:43:10.000+00:00,candidate
+54a3eabf74686938acd19f1d,Donna,Hu***c,Chief Financial Officer,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-04T08:17:11.000+00:00,candidate
+5aca9649a6da984050f203ec,Ben,Co***k,Director,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-19T09:22:09.336+00:00,candidate
+5c49774af65125118c2b2b0f,Angela,Wi***s,Non Executive Board Director - Fernwood Women's Health Clubs,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-08-06T07:53:35.000+00:00,candidate
+5d473a9bf65125ac0192fa4f,Brooke,Wo***h,Franchise Owner,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-08-30T17:30:48.691+00:00,candidate
+630c2116c3bde00001d75e3a,Lisa-Marie,Gl***n,Franchisee,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-06T08:13:54.000+00:00,candidate
+5b2da14da6da982c865e95ad,Michael,Do***g,Franchisee,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-08-12T16:38:41.000+00:00,candidate
+622add902ef8f100011ad2c2,Anthony,Di***s,Franchise Owner,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-06T04:50:34.000+00:00,candidate
+66ff155f34f152000193c07e,Mary,Pa***u,Franchise Owner,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-20T22:42:41.788+00:00,candidate
+606a7a8eaa58a100012515c0,Lauren,Ch***n,Director,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-12T08:20:13.000+00:00,candidate
+54a233d77468693fdae19c15,Emma,Ti***y,Fernwood Prospect Franchise Owner,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-07-10T10:40:22.000+00:00,candidate
+5ad65d55a6da9867d2e0d803,Melissa,Ro***n,Owner,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-08-13T08:59:03.000+00:00,candidate
+5ac2616ea6da981c1fbe61eb,Steve,Br***s,Franchise Owner,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-14T14:36:36.496+00:00,candidate
+66ffdb313694cf0001d2f096,Michelle,Ba***r,Business Owner,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-08-06T07:49:59.000+00:00,candidate
+5e81f1245d603200010fac63,Jodie,So***n,Business Owner,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-07T21:47:03.039+00:00,candidate
+5571083c73696478bb610100,Nicole,We***y,"Owner, Fernwood Fitness Darwin",Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-07T23:35:17.000+00:00,candidate
+5e68974acdb390000166acef,Kristy,Jo***n,Franchise Owner,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-06T04:44:08.000+00:00,candidate
+610da54de3e45300018ddf06,Ric,Ca***l,Co-Owner,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-01T22:13:53.322+00:00,candidate
+6604fdfb19f26100070cd4fb,Melissa,Bu***n,Franchise Owner,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-15T18:00:41.527+00:00,candidate
+61b2d73e5a1acf0001221141,Jessie,An***n,Franchise Owner,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-06T14:03:34.000+00:00,candidate
+57db40f4a6da984bf024fb3a,Binish,Mo***n,Franchise Owner/Manager,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-23T02:26:04.831+00:00,candidate
+691a7bffe342c300010a7f88,Suzanne,He***n,Club Owner,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-24T22:29:15.821+00:00,candidate
+5abf843ea6da98cf9c12c80a,Renee,Za***t,Franchisee,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-07T00:50:15.083+00:00,candidate
+62eacd46ba45d000019cfe01,Fernwood,Tu***g,Owner/manager,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-08-12T18:01:38.504+00:00,candidate
+54aac4827468690630115118,Mong-Thanh,Ng***n,Franchise Partner,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-10T06:32:49.000+00:00,candidate
+57e03536a6da985f0cb4cb4b,Sean,To***y,Franchise Partner,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-12T00:25:01.000+00:00,candidate
+57d9795da6da98725adc7f62,Souad,Sa***a,Club Owner,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-08-26T22:19:19.623+00:00,candidate
+54a246907468693cdd671d1c,Clow,Jo***n,Company Director,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-08-12T17:04:24.000+00:00,candidate
+57dbe688a6da9868c296d0cb,Jessica,St***l,Franchisee,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-06T18:00:54.000+00:00,candidate
+57df7eada6da980ae7a83e49,Ann,Wi***n,Franchise Owner,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-24T04:11:15.504+00:00,candidate
+57daa404a6da984aabc451e7,Grace,Be***e,Franchise Partner,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-08-12T20:42:10.000+00:00,candidate
+683aedc4fd0bc8000186cbd7,Cheyne,De***n,Owner,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-08-12T18:06:41.581+00:00,candidate
+54a3e33474686938ac753c1b,Rachael,Ho***n,Franchisee,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-06T05:50:12.000+00:00,candidate
+61bc18d69f014f0001658e80,Lydia,Ta***s,Business Owner,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-08-27T14:02:18.269+00:00,candidate
+63047c8e68d21000015073c8,Pete,Hu***l,CEO,Fitstop,fitstop.com,Fitstop,2026-09-18T03:30:51.000+00:00,candidate
+54a5c83274686932098a0ca8,Carl,Gi***o,Global Head of Growth,Fitstop,fitstop.com,Fitstop,2026-09-04T10:10:03.000+00:00,candidate
+60401f0f7319fb0001cebb84,Ryan,An***l,Head of Brand & Marketing,Fitstop,fitstop.com,Fitstop,2026-09-05T17:57:48.000+00:00,candidate
+5f538b5a07ec620001af7c96,Preston,Hu***o,Co-Owner,Fitstop,fitstop.com,Fitstop,2026-09-10T10:28:18.674+00:00,candidate
+5f5bb1f47ea1a200019a8c14,Yvette,Ka***s,Director/Owner-Operator,Fitstop,fitstop.com,Fitstop,2026-09-13T05:26:11.000+00:00,candidate
+60672323b1a1f300018490d3,Georgie,Ri***d,Co-Owner,Fitstop,fitstop.com,Fitstop,2026-08-25T17:39:17.887+00:00,candidate
+6206abb6a1bfc3000134d40e,Kristi,Ja***e,Business Owner,Fitstop,fitstop.com,Fitstop,2026-08-12T17:47:39.000+00:00,candidate
+54a475117468692fa2734f49,Shami,Si***n,Franchise Owner,Fitstop,fitstop.com,Fitstop,2026-09-05T07:05:39.000+00:00,candidate
+6815f6b3716079000133f888,Richard,Ha***m,Fitstop Business Owner,Fitstop,fitstop.com,Fitstop,2026-09-06T21:44:10.000+00:00,candidate
+61382a9003fb020001ea0c89,Ameer,Ma***l,Business Owner,Fitstop,fitstop.com,Fitstop,2026-09-10T10:28:18.674+00:00,candidate
+6077e03e2f36c600014732ea,Matt,Gi***t,Owner and Director Fitstop Burpengary,Fitstop,fitstop.com,Fitstop,2026-06-12T00:46:53.767+00:00,candidate
+63606aab00da5300015d9aba,Jolyn,Lee,Co-Owner & Head of Marketing,Fitstop,fitstop.com,Fitstop,2026-09-13T06:32:22.633+00:00,candidate
+5c4cc13c80f93e217eba67a8,Mark,Va***o,Business Owner,Fitstop,fitstop.com,Fitstop,2026-09-04T08:43:33.000+00:00,candidate
+66f4e497bd72e600011f0c78,Victor,Guo,Owner Fitstop Memorial,Fitstop,fitstop.com,Fitstop,2026-09-10T05:36:57.000+00:00,candidate
+60f79ec846ac330001d6a6d7,Richard,Pa***e,Owner at Fitstop Redbank Plains/Browns Plains,Fitstop,fitstop.com,Fitstop,2026-08-12T18:11:38.000+00:00,candidate
+54a3cffe74686932091eee14,Chris,Fl***e,Franchise Owner,Fitstop,fitstop.com,Fitstop,2026-09-09T05:10:31.346+00:00,candidate
+61adce2e35f4d40001664465,Courtney,Ke***n,Co-Owner & Manager Fitstop Albany NZ,Fitstop,fitstop.com,Fitstop,2026-08-04T23:06:14.000+00:00,candidate
+54a328c774686935be98ae58,Aurora,Gi***t,Business Owner & Manager - Fitstop South Fremantle,Fitstop,fitstop.com,Fitstop,2026-08-24T07:07:32.000+00:00,candidate
+54c2569e7468697af79a2890,Ben,To***a,Gym Owner,Fitstop,fitstop.com,Fitstop,2026-08-08T10:31:43.000+00:00,candidate
+639c1fca23fce200018ac06e,Tom,Ba***t,Owner,Fitstop,fitstop.com,Fitstop,2026-09-06T07:06:36.000+00:00,candidate
+6167abff3fb2630001d85f2b,Jamie,Bi***i,"Business Owner, Real Estate Agent",Fitstop,fitstop.com,Fitstop,2026-09-13T06:57:30.243+00:00,candidate
+682d5afafabab3000120e6c9,Jasmine,Br***y,Business Owner,Fitstop,fitstop.com,Fitstop,2026-07-06T06:35:52.000+00:00,candidate
+6007a148c224ec000109df20,Jesse,Ma***d,Owner,Fitstop,fitstop.com,Fitstop,2026-07-27T23:58:02.000+00:00,candidate
+5ad6d8aca6da98e41051457b,Feriadi,Tan,Business Owner,Fitstop,fitstop.com,Fitstop,2026-08-07T11:43:41.403+00:00,candidate
+654474422ba21b0001c45791,Jayne,V,Business Owner,Fitstop,fitstop.com,Fitstop,2026-08-04T22:47:26.000+00:00,candidate
+57dad525a6da984a44df38b8,Olivia,Ho***n,Managing Owner,Fitstop,fitstop.com,Fitstop,2026-07-28T04:57:31.429+00:00,candidate
+642eafc4d7753b0001797e66,Jayme,Lim,Co-Owner,Fitstop,fitstop.com,Fitstop,2026-09-12T00:27:28.000+00:00,candidate
+62eb07da8619990001cdedff,Rhys,Ra***h,Co-Owner,Fitstop,fitstop.com,Fitstop,2026-09-06T04:38:11.000+00:00,candidate
+629c9a2e59f85400010c3ddc,Kelly,Wa***e,Director,Fitstop,fitstop.com,Fitstop,2026-08-12T13:21:41.000+00:00,candidate
+63a30c38b4dd700001ef1ebf,Milan,Se***c,Business Owner,Fitstop,fitstop.com,Fitstop,2026-09-09T17:05:28.284+00:00,candidate
+63569f8f76741d00017c3898,Jemah,Ka***z,Business Owner,Fitstop,fitstop.com,Fitstop,2026-09-08T19:31:22.000+00:00,candidate
+57d44fb6a6da9853bed0849e,Sally,Ku***r,Head Coach,Fitstop,fitstop.com,Fitstop,2026-08-24T16:17:01.727+00:00,candidate
+66de98cff63f5d00017d54d5,Carlos,Su***r,CEO,Fitstop,fitstop.com,Fitstop,2026-09-23T08:09:57.569+00:00,candidate
+54a24615746869382556041c,Sharon,Ye***p,Head Coach,Fitstop,fitstop.com,Fitstop,2026-07-13T16:45:53.000+00:00,candidate
+633ad100e382ce0001a5d53b,Terri,Fl***n,Franchise Owner,Fitstop,fitstop.com,Fitstop,2025-07-07T06:40:02.100+00:00,candidate
+6346cc9f51be0800010ef041,Lachlan,Ru***o,Franchise Owner,Fitstop,fitstop.com,Fitstop,2026-01-15T14:23:12.446+00:00,candidate
+6992e20310e25100011f5196,Cassie,Ga***s,Fitness Center Owner,Fitstop,fitstop.com,Fitstop,2026-09-03T12:19:03.000+00:00,candidate
+627b6678fac33700018fc52f,Declan,Go***l,CEO & Managing Director,Xyris,xyris.com.au,Xyris,2026-09-12T14:10:36.162+00:00,candidate
+66f6b0ef5497d800019d21ac,Nick,Ma***s,VP and General Manager UK,Sonder,sonder.io,Sonder,2026-09-06T07:00:26.000+00:00,candidate
+611cfbaa7078350001f603d2,Craig,Co***y,Co-founder & CEO,Sonder,sonder.io,Sonder,2026-09-12T02:36:33.129+00:00,candidate
+611c04b79aec69000122e586,Krista,Gu***n,Head of Sales Mm/smb,Sonder,sonder.io,Sonder,2026-09-05T05:10:31.000+00:00,candidate
+5f84f9b8247dbb00013b0161,Julia,Ba***i,Head of Customer Success,Sonder,sonder.io,Sonder,2026-09-20T04:46:34.000+00:00,candidate
+66ff2b06c672d90001986d44,James,Pe***n,Head of People,Sonder,sonder.io,Sonder,2026-09-08T10:08:05.000+00:00,candidate
+60d33b98449d3e00016489dc,Andrew,Fry,Chief Revenue Officer (CRO),Sonder,sonder.io,Sonder,2026-09-05T13:13:09.000+00:00,candidate
+60fd5d5ecd5d4700014259f5,Brandon,Ch***n,Head of AI Innovation,Sonder,sonder.io,Sonder,2026-09-30T20:00:49.516+00:00,candidate
+609b6b49923d9d0001f39262,Nathan,Ch***k,Chief Financial Officer,Sonder,sonder.io,Sonder,2026-09-20T03:25:01.000+00:00,candidate
+614ad6c34a7b8f0001fd64d8,Kelsey,We***d,Senior Talent Acquisition Partner,Sonder,sonder.io,Sonder,2026-09-17T09:31:05.810+00:00,candidate
+54a631d47468693442f0c0c9,Nimisha,Du***n,VP Commercial,Sonder,sonder.io,Sonder,2026-09-26T20:04:12.907+00:00,candidate
+66fb27544f270c0001d3be85,David,Wi***s,Client Director,Sonder,sonder.io,Sonder,2026-09-07T05:34:19.000+00:00,candidate
+60ed4f58a70d840001b1c47e,Dima,Vo***k,Vice President of Customer,Sonder,sonder.io,Sonder,2026-09-07T11:43:13.000+00:00,candidate
+57d8f7a2a6da9872625e9441,Anna,Br***l,Talent Partner,Sonder,sonder.io,Sonder,2026-09-13T18:45:23.000+00:00,candidate
+5d698d10f651254509b2a632,Brett,Wa***d,Head of Member Safety - Australia - New Zealand - United Kingdom,Sonder,sonder.io,Sonder,2026-09-04T06:03:21.000+00:00,candidate
+54a6218c7468693209bea5c4,William,Sa***n,Head of FP&A,Sonder,sonder.io,Sonder,2026-09-15T17:42:47.000+00:00,candidate
+6838f931052d210001cbfcba,Dan,Ma***l,Head of Business Operations,Sonder,sonder.io,Sonder,2026-09-07T17:54:17.000+00:00,candidate
+57d5ce39a6da98538e83b4c5,Anastazia,De***s,AI Program Owner,Sonder,sonder.io,Sonder,2026-09-07T07:18:21.000+00:00,candidate
+63b47f8741902e00017d8d0d,Lindsay,Me***e,Head of Commerical Operations,Sonder,sonder.io,Sonder,2026-09-07T15:08:01.165+00:00,candidate
+614c0e41d82a0f0001270866,Mark,Ga***e,Head of Architecture,Sonder,sonder.io,Sonder,2026-08-11T03:28:43.000+00:00,candidate
+6ab7aad3ab6161000186c585,Jing,Guo,Head of Product Design,Sonder,sonder.io,Sonder,2026-09-21T04:22:26.000+00:00,candidate
+647d6840959cdc00013ca07f,Hudson,Br***g,Vice President Operations,Sonder,sonder.io,Sonder,2026-09-24T06:09:39.000+00:00,candidate
+671f26f8e086af00014f64f9,Kimi,Po***l,Director of Clinical Services,Sonder,sonder.io,Sonder,2026-09-05T11:12:55.000+00:00,candidate
+54a79f387468696b7f3dbf45,Conor,Br***y,Interim Head of UK,Sonder,sonder.io,Sonder,2026-09-10T21:06:33.000+00:00,candidate
+6173b4280c8b2d00010bb624,Sally,He***t,Senior Business Partner,Sonder,sonder.io,Sonder,2026-09-04T04:06:05.000+00:00,candidate
+625e36e4543ae800011e3095,Clyzel,Pe***a,Founder,Sonder,sonder.io,Sonder,2026-09-10T05:39:25.000+00:00,candidate
+66f5e1b6522b770001665e9c,Oliver,De***t,"VP, Legal",Sonder,sonder.io,Sonder,2026-09-17T05:23:40.000+00:00,candidate
+5e898050316a5c000198b69d,Jacqueline,Ch***s,Head of Analytics & Insights,Sonder,sonder.io,Sonder,2026-09-06T05:51:16.000+00:00,candidate
+6681f391746e5c0001a4fbd7,Manav,De***i,Co-Founder,Sonder,sonder.io,Sonder,2026-09-11T04:40:33.000+00:00,candidate
+69858fd087c2c20001b34ef2,Shirleen,Ga***r,Co-Owner,Sonder,sonder.io,Sonder,2026-09-16T05:11:08.000+00:00,candidate
+643000f99633010001a75c28,Shauna,Ma***e,Head of Vocational Services,Sonder,sonder.io,Sonder,2026-08-29T05:21:08.828+00:00,candidate
+6aa67c1919c12b0001342231,Neel,Pa***h,Founder,Sonder,sonder.io,Sonder,2026-09-16T03:57:35.000+00:00,candidate
+54abfdbb7468693007ad1a1a,Matthew,Me***s,Multimedia Director,Sonder,sonder.io,Sonder,2026-08-07T02:15:45.000+00:00,candidate
+610cfd9347d0700001e57b76,Dominic,Ho,Director,Sonder,sonder.io,Sonder,2026-08-14T20:51:53.000+00:00,candidate
+64e8078cd607e000013b9902,Shawn,S,Entrepreneur,Sonder,sonder.io,Sonder,2026-09-05T12:12:28.684+00:00,candidate

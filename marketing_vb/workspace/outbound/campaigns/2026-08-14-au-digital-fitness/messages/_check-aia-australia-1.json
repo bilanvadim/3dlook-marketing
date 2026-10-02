@@ -1,0 +1,20 @@
+{
+ "campaign": "2026-08-14-au-digital-fitness",
+ "checked": 35,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "aia-australia-1",
+ "generated": "2026-10-02T15:51:58",
+ "hard": [],
+ "soft": [
+  [
+   "greeting",
+   "a-prof-newman-l-harris-22b38892 M1",
+   "«Hi Newman,» has no «A/Prof»"
+  ],
+  [
+   "greeting",
+   "a-prof-newman-l-harris-22b38892 M2",
+   "«Hi Newman,» has no «A/Prof»"
+  ]
+ ]
+}

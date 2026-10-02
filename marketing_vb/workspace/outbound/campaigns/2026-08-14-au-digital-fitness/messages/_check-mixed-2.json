@@ -1,0 +1,9 @@
+{
+ "campaign": "2026-08-14-au-digital-fitness",
+ "checked": 42,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-2",
+ "generated": "2026-10-02T15:50:50",
+ "hard": [],
+ "soft": []
+}

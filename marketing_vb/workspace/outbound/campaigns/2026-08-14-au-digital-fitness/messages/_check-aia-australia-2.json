@@ -1,0 +1,9 @@
+{
+ "campaign": "2026-08-14-au-digital-fitness",
+ "checked": 15,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "aia-australia-2",
+ "generated": "2026-10-02T15:53:29",
+ "hard": [],
+ "soft": []
+}
