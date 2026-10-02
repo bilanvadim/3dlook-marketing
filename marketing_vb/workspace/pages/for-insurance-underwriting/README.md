@@ -8,6 +8,11 @@ date: 2026-08-31
 
 # Handoff — FitXpress for insurance underwriting
 
+> **Current state (2026-10-02):** the final copy passed to design is `page-final-2026-10-02.md` (and
+> `.html`), after Asselya's 21 edits (`comments-asselya-2026-10-02.md`). What changed against v2 and what
+> went into the page builder: `review-2026-10-02-final-vs-v2.md`. Everything below describes the
+> 2026-08-31 v1 and is kept for history.
+
 A new FitXpress vertical page for 3dlook.ai. WordPress with Yoast. Nothing in this pipeline has
 publishing credentials, so this folder is the whole package.
 

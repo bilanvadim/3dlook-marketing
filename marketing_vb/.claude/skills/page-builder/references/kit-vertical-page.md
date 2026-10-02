@@ -63,22 +63,69 @@ framework and the trust FAQ, which the page links to.
   an article. The page keeps one line and links to it.
 - **A call to action on every second screen:** the hero, after the "what you get" block, after the pilot
   block, and the form.
-- **Shape benchmark:** `workspace/pages/for-insurance-underwriting/page-v2-short.md`. The telehealth page
+- **Shape and register benchmark:** `workspace/pages/for-insurance-underwriting/page-final-2026-10-02.md`,
+  the copy passed to design on 2026-10-02 after Asselya's deduplication and guardrails pass
+  (`comments-asselya-2026-10-02.md`). It replaces `page-v2-short.md` as the model. The telehealth page
   stays the benchmark for schema and claims discipline, not for length.
 
 | # | Block, in page order | Words | Slots |
 |---|---|---|---|
-| 1 | Hero: H1 with the primary keyword, 2-3 sentences (outcome and time), "Book a demo" to `#demo` and an anchor to block 4, a four-fact strip | ~90 | 1, 2, 3, 15 |
-| 2 | The problem in three numbers from named industry sources, one line, a link to the hub article | ~90 | 4, 5 |
+| 1 | Hero: H1 with the primary keyword, 2-3 sentences (outcome and time), "Book a demo" to `#demo` and an anchor to block 4, a four-fact strip. An illustrative product mock is allowed when captioned "Illustrative example" | ~90 | 1, 2, 3, 15 |
+| 2 | The problem: a question H2, one sentence that defines the gap without repeating the hero, three numbers from named industry sources with each source label linked to the primary source, a link to the hub article | ~90 | 4, 5 |
 | 3 | How it works in three steps, in the vertical's own systems; the recommended setup in one line; a link to the feature page | ~130 | 7, 12 |
-| 4 | What you get: a five-row table, then "Get a sample" to `#demo` | ~150 | 6 |
-| 5 | Compared with how it is done today: a five-row table, and one line on where the old method still fits | ~120 | 5 |
-| 6 | Accuracy and data handling on one screen: three figures, one method sentence, five data lines, links to the accuracy framework and the trust FAQ | ~180 | 8, 9 |
-| 7 | Pilot and price: three steps, what the team walks away with, the entry price and `/pricing/`, a demo button | ~150 | 10, 14 |
-| 8 | FAQ: 5-6 questions, GEO phrases from the keyword map verbatim as H3, the answer in the first sentence | ~280 | 13 |
-| 9 | The shared form at `#demo`, a soft exit to the hub article, then keep reading | ~50 | 15, 16 |
+| 4 | What you get: a five-row table with a neutral column heading ("Returned output"), then "Get a sample" to `#demo` | ~150 | 6 |
+| 5 | "FitXpress compared with…": a five-row table, and one line on where the old method still fits | ~120 | 5 |
+| 6 | Accuracy and data handling on one screen, under a question H2 ("How accurate is FitXpress, and how is … data handled?"): three figures, one method sentence, five data lines, links to the accuracy framework and the trust FAQ | ~180 | 8, 9 |
+| 7 | Pilot and price: a formal H2 ("Evaluate FitXpress before using its outputs in …"), one production-infrastructure sentence, the entry price and `/pricing/`, three steps, what the evaluation should quantify, a demo button | ~150 | 10, 14 |
+| 8 | FAQ: 4-6 questions, GEO phrases from the keyword map verbatim as H3, the answer in the first sentence, none repeating a block above | ~250 | 13 |
+| 9 | The shared form at `#demo` with a soft exit to the hub article; `legal@3dlook.me` for procurement documents in the footer. No separate "keep reading" block | ~50 | 15, 16 |
 
 The order and the budget decide the page. The slots below say what each ingredient must contain.
+
+## Register for an enterprise reader (Asselya, 2026-10-02)
+
+Asselya's pass on the insurance v2 ran 21 edits. Nearly all of them apply rules the terminology
+guardrails already had, which v2 broke anyway, so they are now checks rather than advice. Layer 0 of
+`copy-humanisation.md` reports the first three mechanically (`detect-ai-tells.py --channel page`).
+
+- **Direct address within budget: at most 12.5 "you / your" per 1,000 words.** v2 ran 23.7 and the final
+  runs 12.1. Explanatory sentences name the actor: "the carrier's rules determine case routing", "the
+  platform". "Your" stays for ownership and control ("your threshold", "your systems") and for the
+  calls to action. Table and section headings carry no direct address ("Returned output", not "What
+  your underwriter gets").
+- **Every acronym expanded at first use**, the product's own included: software development kit (SDK),
+  application programming interface (API), non-disclosure agreement (NDA), Business Associate Agreement
+  (BAA), System and Organization Controls 2 (SOC 2), U.S. Food and Drug Administration (FDA),
+  Real-Time Pose Validation (RTPV). Bare: AI, WWW, iOS, BMI, CEO, UK, US, EU per the Doc, and HIPAA and
+  GDPR as on the final insurance page (not yet in Asselya's Doc list: open item). "IDs" becomes
+  "identifiers".
+- **No "vs" in headings.** "FitXpress compared with self-report and a paramedical examination". Inside a
+  table cell "vs" stays.
+- **A named subject in every sentence.** "FitXpress returns one record per applicant", not "One record
+  per applicant. It returns over the API…". No fragments in data lines, and no action attributed to a
+  thing that cannot act ("failure reasons return with the record" becomes "FitXpress returns the
+  failure reasons with the record").
+- **Relationships stated, not compressed.** "The carrier-defined threshold determines whether the
+  response includes a disclosure flag", not "a gap above your threshold comes back flagged". What
+  depends on configuration says so: "available when enabled for the deployment", not "available if you
+  need them".
+- **No figurative or conversational phrasing** in headings and claims: "kept its weight", "where it
+  leaks", "Prove it", "touches a live decision", "before day one", "You finish with numbers" were all
+  replaced. The pilot H2 names the evaluation boundary in the vertical's own terms.
+- **No corrective negation as an opener.** "No new app for the applicant and no new queue for your team"
+  became a positive statement of how FitXpress is embedded and where results go.
+- **Deduplication.** The problem sentence does not restate the hero. An FAQ question that a block above
+  already answers is cut: the shadow-evaluation and internal-only questions went, leaving four. Count
+  repeats across blocks before the judge sees the page.
+- **Source links on the label.** Each problem statistic carries its source as "Publisher, study name",
+  linked to the primary source (terminology guardrails §1, rule 2).
+
+**Product wording that changed on the final page (Vadim-approved 2026-10-02):** Real-Time Pose
+Validation pauses capture until pose and framing requirements are met; clothing-related information can
+be surfaced for review and does not trigger a retake. Weight reads "approximately 3.5% mean absolute
+error under evaluated conditions". The pilot block proves readiness with one sentence ("FitXpress uses
+production infrastructure already deployed in remote BMI-verification and weight-management
+workflows"), without naming a client's market or a client count.
 
 ## Slots: the 17 ingredients
 
@@ -118,21 +165,26 @@ this vertical, in its own systems: what the person does, what FitXpress returns,
 and who acts on it (consent capture, retake logic, who reviews a flagged scan, how the record is filed).
 
 **8. Data handling: five lines and a link** — for regulated verticals this still decides deals, so it
-sits on the proof screen next to the accuracy figures, but short: photos (deleted after processing or
-within 30 days per customer policy, retained photos blurred, faces obfuscated at capture), scan records
-on anonymized, randomly generated IDs, HIPAA support under an executed BAA and the canonical GDPR role
-sentence, no training on production data without documented authorization, and the boundary. Hosting,
-encryption detail, deletion by scan ID, SOC 2, FDA and consent go to one link to the
-[trust FAQ](https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/). Source:
+sits on the proof screen next to the accuracy figures, but short. Wording as on the final insurance
+page: "Deleted immediately after processing or retained for up to 30 days under a customer-specific
+policy. Retained photos are blurred, and face obfuscation is applied during capture." · "Scan records
+use anonymized, randomly generated identifiers." · HIPAA support under an executed Business Associate
+Agreement (BAA) and the canonical GDPR role sentence · no training on production data without explicit,
+documented authorization · the boundary. Hosting, encryption detail, deletion by scan ID, SOC 2, FDA and
+consent go to one link to the
+[trust FAQ](https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/), written as a
+sentence that says what the FAQ covers and expands SOC 2 and FDA. Source:
 `compliance.md` (rebuilt 2026-09-18 from that FAQ) and `CLAUDE.md` §12. Never "HIPAA compliant",
 "SOC 2 certified" or "no personal identifiers" (detector category `compliance_status`), and never a
 control presented as removing risk (guardrail #5).
 
 **9. Accuracy, scoped in three figures and a link** — three oversized figures, each with its
 reference: 96-97% vs expert manual measurement with typical absolute error 1.5-2.0 cm, repeatability
-written as `< 1 cm`, and weight estimation ±3.5% where weight matters to the vertical. Then one sentence
+written as `< 1 cm`, and, where weight matters to the vertical, "approximately 3.5% mean absolute error
+under evaluated conditions" (the final insurance page's wording, 2026-10-02; `proof-points.md` still
+says "±3.5% average error, real-world conditions", open item for Vadim). Then one sentence
 on the method and its limit (internal validation; peer review and third-party clinical certification
-are not part of that record; methodology under NDA) and a link to the
+are not part of that record; methodology under a non-disclosure agreement (NDA)) and a link to the
 [accuracy framework](https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/), which carries the
 "accurate enough for which decision?" reframe and the four conditions (reference method, protocol,
 population, workflow). Wording from `accuracy-formulations.md`, numbers from `proof-points.md`. No bare
@@ -156,7 +208,8 @@ result lands in. Formats and white-label detail go to the FAQ only when the vert
 **13. Vertical FAQ** — the questions asked here and nowhere else: regulatory, licensing, data
 residency, retention, who owns the data, what happens on a failed scan, what a pilot looks like.
 Source: `faq.md` plus the BD owner's real objections. General product questions stay on the product
-page. **5-6 questions.** The GEO phrases from the landing's keyword map go in verbatim as H3, and each
+page. **4-6 questions** (the final insurance page ships four), none that a block above already
+answers. The GEO phrases from the landing's keyword map go in verbatim as H3, and each
 answer opens with the answer. Ships with FAQPage schema, modelled on the markup of
 `/structured-body-data-for-telehealth-digital-health-programs/` (its schema, not its 13-question length).
 
@@ -237,8 +290,8 @@ principle #11. Medical, clinical or regulatory framing goes to Whitney before it
    `/structured-body-data-for-telehealth-digital-health-programs/`, which is the in-house benchmark —
    scoped accuracy, a real comparison block, a 13-question FAQ with schema, no banned words in the
    headings. Take its schema and its claims discipline, not its length: the budget is 1,100 to 1,300
-   words ("Length and order" above), and the shape benchmark is
-   `workspace/pages/for-insurance-underwriting/page-v2-short.md`.
+   words ("Length and order" above), and the shape and register benchmark is
+   `workspace/pages/for-insurance-underwriting/page-final-2026-10-02.md`.
 2. **Read the use-case file, `audience.md` and the segment's "what NOT to say"** before the first
    sentence. A vertical page written without them is a product page with a new headline.
 3. **Check the 60% rule before handover** — count the paragraphs with no equivalent on the parent.
@@ -260,14 +313,16 @@ principle #11. Medical, clinical or regulatory framing goes to Whitney before it
    second negation onto it (M2), and do not write "positioned as" (terminology guardrail §2.10).
 8. **Only your own cases from this vertical.** Fewer than two means G-I should have stopped the page.
 9. **Do not restate the whole workflow.** Differences only.
-10. **FAQ stays narrow: 5-6 questions.** General questions belong on the product page, long answers
-    in the articles.
+10. **FAQ stays narrow: 4-6 questions.** General questions belong on the product page, long answers
+    in the articles, and a question the page body already answers is cut.
 11. **Links up, sideways, to the hub article and to conversion** — all four directions, every page.
 12. **Mark visuals:** `[HERO]`, `[CONTEXT]`, `[COMPLIANCE]`, `[WORKFLOW]`, `[ACCURACY]`,
     `[CASE CARD]`, `[QUOTE]`, `[INTEGRATION]`.
 13. **Run `copy-humanisation.md` as its own pass** after the draft is finished. Negative parallelism
     ("not just X — it's Y"), rule-of-three triads and the CLAUDE.md §6 banned words are hard fails at
-    the judge, not style preferences.
+    the judge, not style preferences. Then the register checks above: direct address within 12.5 per
+    1,000 words, every acronym expanded, no "vs" in headings, a named subject in every sentence, and a
+    deduplication read across blocks.
 14. **Fact-check** every figure, customer name, framework and price against the sources before
     handover, and write `fact-sheet.md` for the blind judge as you go.
 
@@ -329,7 +384,8 @@ their own URL and are never a copy of the vertical page.
 - [ ] Parent exists, breadcrumbs resolve, canonical to self
 - [ ] Vertical context carries ≥3 facts absent from the parent page
 - [ ] Regulators and frameworks named precisely; every acronym expanded at first use
-- [ ] Visible copy 1,100 to 1,300 words; FAQ 5-6 questions; a call to action on every second screen
+- [ ] Visible copy 1,100 to 1,300 words; FAQ 4-6 questions, none repeating the body; a call to action on every second screen
+- [ ] Register: "you / your" at most 12.5 per 1,000 words, actor named in explanatory sentences; every acronym expanded at first use; no "vs" in headings (detector `--channel page` reports all three)
 - [ ] Accuracy figures carry their reference and limit, plus a link to the accuracy framework; no bare percentages; no reserved words
 - [ ] Boundary sentence present, stated once, in the approved wording
 - [ ] 2+ cases from this vertical with numbers from `case-studies/`

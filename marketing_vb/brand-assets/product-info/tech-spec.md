@@ -57,6 +57,8 @@
 
 **Approved feature name (Vadim, 2026-09-23):** "Clothing Detector", a capture-quality feature. Public wording until product confirms the classes and the payload field: "The Clothing Detector identifies clothing conditions that may interfere with capture and can prompt corrective action." The internal notes below (sport / regular / oversized, payload) are not for public copy yet.
 
+**Page wording since 2026-10-02 (final insurance landing, Asselya's edit, approved by Vadim):** "Clothing-related information can be surfaced for review" and, in the failed-scan answer, "Clothing-related information may be surfaced for review; it does not trigger a retake." Real-Time Pose Validation "pauses capture until pose and framing requirements are met." Pages use this wording. **Open item:** "does not trigger a retake" contradicts "can prompt corrective action" above and the "Flags inappropriate attire and prompts user" note below; product to confirm which is current, then one wording everywhere.
+
 - Classifies fit type per scan: `sport` / `regular` / `oversized`
 - Flags inappropriate attire and prompts user
 - Notifies clinical / business team via response payload

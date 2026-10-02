@@ -29,9 +29,14 @@ settled. G-T blocks publishing on technical grounds. G-J is a **blind judge in a
 is forbidden. `quality-controller` does not substitute for G-J — it is neither blind nor page-shaped.
 
 **Short and commercial (Vadim, 2026-09-30).** Use-case landings convert and the articles teach:
-1,100-1,300 words of visible copy, 5-6 FAQ, one paragraph then a link for anything deeper, a call to
+1,100-1,300 words of visible copy, 4-6 FAQ, one paragraph then a link for anything deeper, a call to
 action on every second screen, "no integration fee" in the price line. Page order and word budget: the
-Kit's "Length and order" section. Shape benchmark: `workspace/pages/for-insurance-underwriting/page-v2-short.md`.
+Kit's "Length and order" section. Shape and register benchmark (since 2026-10-02):
+`workspace/pages/for-insurance-underwriting/page-final-2026-10-02.md`, the copy passed to design after
+Asselya's deduplication and guardrails pass. Her rules (direct address at most 12.5 per 1,000 words, every
+acronym expanded, no "vs" in headings, a named subject in every sentence, no FAQ repeating the body) are
+in the Kit's "Register for an enterprise reader" section, and `detect-ai-tells.py --channel page`
+checks the first three.
 
 **The schema benchmark:** `/structured-body-data-for-telehealth-digital-health-programs/` (July 2026)
 still sets the standard for FAQPage and Service schema (`audienceType` + `areaServed`), claims

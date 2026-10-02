@@ -26,6 +26,11 @@ from scratch. Read `hard_fails` (fix every entry; line numbers point at the orig
 `verdict`. Density budget for a page is 6 markers per 1,000 words; `REWRITE` means redraft the
 section, not patch the line.
 
+Three register checks run on the `page` channel only (Asselya's pass on the insurance landing,
+2026-10-02) and land in `house_rule_violations`: **direct address** above 12.5 "you / your" per 1,000
+words, **acronyms not expanded at first use** (with the line of the first bare use), and **"vs" in a
+heading**. Fix all three before Layer 1.
+
 The detector is a floor. It cannot see elegant variation, an argument that never commits, or an
 ending that resolves too neatly, and it reports zero on plenty of copy that still reads generated.
 Run it, then read.
@@ -114,7 +119,30 @@ Five construction rules on the same page, from Part 1 of the guardrails:
 
 Two judgement calls instead of bans: **we / our** — only where ownership matters, otherwise reframe
 around the buyer's workflow; **you** — acceptable on a vertical page's conversion sections and
-practical guidance, avoided in the educational blocks, which stay authoritative.
+practical guidance, avoided in the educational blocks, which stay authoritative. On a vertical page the
+judgement has a number since 2026-10-02: at most 12.5 per 1,000 words. Explanatory sentences name the
+actor (the carrier, the platform, the clinic); "your" stays for ownership and control (your threshold,
+your systems) and the calls to action. Asselya's read of the insurance v2 at 23.7 per 1,000: "too much
+for enterprise."
+
+### Layer 2b — deduplication and explicit construction (Asselya, 2026-10-02)
+
+Read the finished page once more, block by block, for these five. Each was an edit on the final
+insurance page (`workspace/pages/for-insurance-underwriting/comments-asselya-2026-10-02.md`).
+
+- **Said once.** The problem sentence does not restate the hero; the FAQ does not repeat a block above
+  (the shadow-evaluation and internal-only questions were cut for this). Mark each repeat and keep the
+  better-placed one.
+- **A subject in every sentence.** No fragments in data lines ("Tied to anonymized IDs" became "Scan
+  records use anonymized, randomly generated identifiers"), no "it" without a clear antecedent, and no
+  action attributed to a thing that cannot act.
+- **The relationship spelled out.** "determines whether", "can be delivered to", "when enabled for the
+  deployment". Compressed phrasing ("a gap above your threshold comes back flagged") is rewritten.
+- **Formal headings.** Question H2s where the section answers one ("How accurate is FitXpress, and how
+  is underwriting data handled?"); "compared with" in place of "vs"; no "Prove it", no figurative
+  phrases ("kept its weight", "where it leaks"), no time words that need decoding ("before day one").
+- **No corrective negation as an opener.** State what the product does and where the result goes; the
+  one licensed negation stays the product boundary.
 
 The one licensed negation: a product, clinical, legal or regulatory boundary. *"FitXpress supports
 clinician review; it is not a diagnostic tool."* That is the exception, and it is used once. The same

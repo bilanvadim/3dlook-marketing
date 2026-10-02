@@ -26,7 +26,7 @@
 | Chest accuracy | 1.74 cm absolute error | Same study |
 | Waist accuracy | 2.14 cm absolute error | Same study |
 | Hip accuracy | 2.25 cm absolute error | Same study |
-| Weight estimation accuracy | ±3.5% average error margin | FitXpress deck, real-world conditions |
+| Weight estimation accuracy | ±3.5% average error margin | FitXpress deck, real-world conditions. **Page wording since 2026-10-02** (final insurance landing, Asselya's edit, approved by Vadim): "approximately 3.5% mean absolute error under evaluated conditions". Same number, different descriptor ("evaluated" vs "real-world" conditions): open item for Vadim to settle one wording for every channel |
 
 ## Repeatability
 

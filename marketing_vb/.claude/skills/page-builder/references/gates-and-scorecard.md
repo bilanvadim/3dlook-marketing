@@ -130,7 +130,10 @@ Grade harshly. Partial credit per axis, with the lost points attributable.
 - [ ] Zero or more than one `<h1>`
 - [ ] A `[placeholder]` marker left in the page
 - [ ] Contrast or keyboard operation failing
-- [ ] Fewer than two case studies from this vertical on a vertical page
+- [ ] Fewer than two case studies from this vertical on a Mobile Tailor vertical page. FitXpress
+      vertical pages carry a standing waiver of the case bar (Vadim, 2026-09-27: clients agree to logos
+      only), so for them the hard fail is an invented or implied case, a client named without approval,
+      or a client figure that is not in `proof-points.md`
 
 ### The loop
 
@@ -151,13 +154,13 @@ Threshold **85 / 100**. Below it, return to the axis that lost points. Do not av
 
 | Axis | Weight | What is checked |
 |---|---|---|
-| Proof of belonging to the vertical | 20 | context facts, regulators, 2+ vertical cases, integration and formats, quote |
-| Claims discipline | 15 | every figure traced and identical everywhere, accuracy figures carried with their reference and limit plus a link to the accuracy framework, reserved words absent, medical framing correct, M1 acronyms, M2 negation |
+| Proof of belonging to the vertical | 20 | context facts, regulators, 2+ vertical cases, integration and formats, quote. On a FitXpress page the standing waiver's substitutes score here: the vertical's own workflow and systems, anonymised `proof-points.md` figures, the accuracy framework and the trust FAQ |
+| Claims discipline | 15 | every figure traced and identical everywhere, accuracy figures carried with their reference and limit plus a link to the accuracy framework, each third-party statistic linked to its primary source on the label, reserved words absent, medical framing correct, M1 acronyms (SDK, API, NDA, BAA, SOC 2 and FDA included), M2 negation |
 | Uniqueness against the parent | 15 | 60% rule, different Yoast title and description, no cannibalisation of the hub article |
 | Conversion | 15 | one action, soft alternative, short form, price signal, events working, visible copy within 1,100-1,300 words, a call to action on every second screen |
-| Copy in the buyer's language | 10 | vertical vocabulary, verbatim pains, the segment's "what NOT to say" honoured, the vertical's actor named (the pharmacy, the clinic, the employer), not a generic "organization" (terminology guardrail §2.14) |
+| Copy in the buyer's language | 10 | vertical vocabulary, verbatim pains, the segment's "what NOT to say" honoured, the vertical's actor named (the pharmacy, the clinic, the employer), not a generic "organization" (terminology guardrail §2.14); enterprise register: "you / your" at most 12.5 per 1,000 words, a named subject in every sentence, no figurative or conversational headings (kit, "Register for an enterprise reader") |
 | Human copy | 10 | no AI tells, varied rhythm, an opinion and a boundary present |
-| Search and AI visibility | 10 | vertical queries, 5-6 FAQ with the keyword map's GEO phrases as H3 + FAQPage schema, quotable structured blocks |
+| Search and AI visibility | 10 | vertical queries, 4-6 FAQ with the keyword map's GEO phrases as H3 + FAQPage schema (no FAQ repeating the body), question H2s where a section answers one, quotable structured blocks |
 | Place in the site | 5 | link up, two siblings, hub article, breadcrumbs, canonical |
 | Design and technical layer | 5 | `DESIGN.md` tokens, mobile, performance, indexation |
 

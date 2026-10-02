@@ -1,0 +1,25 @@
+{
+  "round": 1,
+  "date": "2026-10-02",
+  "judge": "fresh general-purpose subagent, clean context, given only page.md, fact-sheet.md, the scorecard and the Kit",
+  "scores": {"proof_of_belonging": 13, "claims_discipline": 11, "uniqueness_vs_parent": 10, "conversion": 11, "buyer_language": 6, "human_copy": 7, "search_ai_visibility": 7, "place_in_site": 4, "design_technical": 2},
+  "weights": {"proof_of_belonging": 20, "claims_discipline": 15, "uniqueness_vs_parent": 15, "conversion": 15, "buyer_language": 10, "human_copy": 10, "search_ai_visibility": 10, "place_in_site": 5, "design_technical": 5},
+  "total": 71,
+  "threshold": 85,
+  "gate": "NOT TAKEN",
+  "hard_fails": [],
+  "lowest": "design_technical",
+  "one_fix": "Hero: replace the outcome promise ('measured body change at their first check-in') and the photos-as-actor construction with 'At each check-in, the app shows members their body measurements and body composition estimates next to an earlier scan… From two smartphone photos, FitXpress returns…'. Same construction in the meta description.",
+  "points_lost": {
+    "proof_of_belonging": "No fitness deployment evidence, no logos or '100+ clients'; readiness proof only from adjacent verticals; connected-fitness side (wearables, HealthKit / Health Connect) and consumer health-data regulation missing.",
+    "claims_discipline": "Hero outcome promise; fat/lean argument rests on estimates with no figure; Adjust 7% unconfirmed at the primary source; 'the fitness configuration' untraced; two problem statistics instead of three.",
+    "uniqueness_vs_parent": "30-35% cross-vertical boilerplate (record table, accuracy and data block, readiness and price lines, the 'every member' FAQ); SDK FAQ restates How it works.",
+    "conversion": "~1,340 words, over budget; no trust signal near the CTAs; analytics unverified; 'Get a sample payload' goes to the demo form.",
+    "buyer_language": "Things given actions ('photos return', 'results return'); fragments in step 1 and pilot steps 1 and 3; H1 frames an alternative to hardware a digital app does not own; Google Fit APIs are deprecated in favour of Health Connect.",
+    "human_copy": "Flat rhythm, three-item lists in most blocks, stiff passives ('can be surfaced for review'), 'photos… photos' in the hero.",
+    "search_ai_visibility": "SDK FAQ repeats the body; the Apple Health answer does not open with the answer; 'gym body scanner' pulls hardware-buyer intent; 'connected fitness' nearly absent; schema not validated.",
+    "place_in_site": "No in-body link up to /fitxpress/; siblings only inline; breadcrumb middle level 301s until the parent ships.",
+    "design_technical": "Nothing measured: DESIGN.md tokens, 375/768, performance, contrast, keyboard, Rich Results Test and analytics all unverified (G-T items)."
+  },
+  "builder_response": "Applied in round 2: the one_fix (hero and meta), fragments rewritten with a subject, Health Connect in place of Google Fit with the answer first, SDK FAQ rewritten around what the platform customises versus the fixed capture layer, the generic 'every member' FAQ replaced by 'How often should members scan?' (moving the recommended-setup line out of the body), a fitness column folded into the record table's outputs, one sentence on body composition being an estimate, 'the fitness configuration' removed, an in-body link up to /fitxpress/, 'connected-fitness platforms' named in the body. Not applied: a third problem number (no neutral source found), '100+ clients' near the CTA (the final insurance page removed the client count from the pilot block; open item for Vadim), the H1 keyword choice (Vadim's call, open item 1)."
+}

@@ -269,8 +269,12 @@ attributed to the page, scroll depth.
   link to the accuracy framework, which carries the reframe to "accurate enough for which decision?"
   and the four conditions (reference method, protocol, population, workflow). Never lead with "most
   accurate" or "best-in-class" — that is an anti-positioning violation and an automatic hard fail.
-- **Use-case landings are short (Vadim, 2026-09-30).** 1,100-1,300 words of visible copy, 5-6 FAQ,
+- **Use-case landings are short (Vadim, 2026-09-30).** 1,100-1,300 words of visible copy, 4-6 FAQ,
   depth in the linked articles. Order and budget: `kit-vertical-page.md`, "Length and order".
+- **Enterprise register (Asselya, 2026-10-02).** At most 12.5 "you / your" per 1,000 words, the actor
+  named in explanatory sentences, every acronym expanded at first use, no "vs" in headings, no FAQ that
+  repeats the body. Benchmark: `workspace/pages/for-insurance-underwriting/page-final-2026-10-02.md`;
+  rules in `kit-vertical-page.md`, "Register for an enterprise reader".
 - **Medical framing is fixed language.** "FitXpress is not a medical device." State the boundary
   directly; "positioned as" is banned for product, intended-use and regulatory statements
   (`terminology-guardrails.md` §2.10). Never assert that a regulatory framework "does not apply".

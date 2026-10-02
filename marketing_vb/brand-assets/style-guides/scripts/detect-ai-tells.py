@@ -41,6 +41,10 @@ What is different from upstream:
     actor when it is known). No pattern and no category, for the same reason as §2.12: the word
     is correct for a mixed or unknown entity type and for institution-level responsibility, and
     only the editor can tell whether the actor was knowable.
+  * Three soft `page` checks from Asselya's edits to the final insurance landing (2026-10-02):
+    direct address per 1,000 words against `direct_address_budget`, "vs" in an H2+, and
+    acronyms not expanded at first use (M1, scanned from the H1 down). They report under
+    `house_rule_violations` and `style_metrics`; other channels' output is unchanged.
 
 Usage:
     python3 detect-ai-tells.py path/to/draft.md --channel article --pretty
@@ -647,9 +651,16 @@ CHANNELS = {
         "label": "landing / vertical page",
         "mute": ["outbound_cliches"],
         "density_budget": 6.0,
-        "structure_checks": ["em_dash", "bold", "title_case", "emoji", "uniform_rhythm", "list_ratio"],
+        # The last three came from Asselya's edits to the final insurance landing (2026-10-02):
+        # too much "you" for an enterprise buyer, "vs" in an H2, and SDK / API / NDA / BAA left
+        # unexpanded at first use. All three are soft: they go to house_rule_violations.
+        "structure_checks": ["em_dash", "bold", "title_case", "emoji", "uniform_rhythm", "list_ratio",
+                             "direct_address", "heading_vs", "acronym_first_use"],
         "hashtag_limit": None,
         "emoji_limit": 0,
+        # The final insurance page runs 12.1 per 1,000 words including the form; our v2 ran 23.7.
+        # 12.5 lets the approved benchmark pass with a little room and still catches v2 by half.
+        "direct_address_budget": 12.5,
     },
     "any": {
         "label": "unspecified",
@@ -868,6 +879,63 @@ def rhythm_metrics(text: str) -> dict:
     }
 
 
+DIRECT_ADDRESS_RE = re.compile(r"\b(?:you|your|yours|you're|you'll|yourself)\b", re.IGNORECASE)
+# A hyphenated compound ("disclosed-versus-captured comparison") is a modifier, not the
+# compressed "X vs Y" heading the rule is about.
+HEADING_VS_RE = re.compile(r"(?<!-)\b(?:vs|versus)\b(?!-)\.?", re.IGNORECASE)
+# "SOC 2" first, so the alternation takes the two-token form before the bare "SOC" can match.
+# A hyphenated tail belongs to the token (GLP-1, SSE-S3). A trailing lowercase "s" is a plural
+# (SDKs, APIs, IDs) and maps to the singular.
+ACRONYM_RE = re.compile(r"\bSOC\s2\b|\b[A-Z][A-Z0-9]{1,5}(?:-[A-Z0-9]{1,4})?s?\b")
+# terminology-guardrails.md §1: commonly known, used bare. iOS and 3D cannot match ACRONYM_RE
+# and are listed for the reader, not the regex.
+BARE_ACRONYMS = {"AI", "WWW", "IOS", "BMI", "CEO", "UK", "US", "EU",
+                 # Bare on the final insurance page passed to design 2026-10-02; HIPAA/GDPR are
+                 # not yet in Asselya's Doc list — open item.
+                 "HIPAA", "GDPR", "FAQ", "3D", "UTC",
+                 # Units of measure, not abbreviations of a concept.
+                 "MB", "GB", "KB", "TB",
+                 # Organisations whose acronym is the name in use, cited in source labels.
+                 "LIMRA"}
+
+
+def _blank(m: re.Match) -> str:
+    # Keep newlines so line numbers survive the stripping.
+    return re.sub(r"[^\n]", " ", m.group(0))
+
+
+def unexpanded_acronyms(text: str, line_offset: int = 0) -> list:
+    """
+    M1 (terminology-guardrails.md §1): full form first, abbreviation in brackets at the first
+    mention. Scans from the H1 down, because a page file carries Yoast fields and builder notes
+    above it. An acronym counts as expanded when its first occurrence sits inside brackets,
+    "software development kit (SDK)". Anything in backticks is a literal (a form name, a slug).
+    """
+    body = re.sub(r"<!--.*?-->", _blank, text, flags=re.DOTALL)
+    body = re.sub(r"\]\([^)]*\)", _blank, body)
+    body = re.sub(r"`[^`\n]*`", _blank, body)
+    # Kit visual markers ([HERO], [CASE CARD], [PLACEHOLDER]) are builder notation, not copy.
+    body = re.sub(r"\[[A-Z][A-Z ]+\]", _blank, body)
+    h1 = re.search(r"^#\s+\S", body, re.MULTILINE)
+    start = h1.start() if h1 else 0
+    seen = set()
+    hits = []
+    for m in ACRONYM_RE.finditer(body, start):
+        token = re.sub(r"\s+", " ", m.group(0))
+        if token[-1] == "s" and token[:-1].isupper():
+            token = token[:-1]
+        if token.upper() in BARE_ACRONYMS or token in seen:
+            continue
+        seen.add(token)
+        # Expanded = the first mention closes a short bracket: "(SDK)", "(SOC 2)", "(Amazon S3)".
+        before = body[max(start, m.start() - 25): m.start()]
+        after = body[m.end(): m.end() + 3]
+        if re.search(r"\([^()\n]*$", before) and re.match(r"\s*\)", after):
+            continue
+        hits.append({"acronym": token, "line": body[: m.start()].count("\n") + 1 + line_offset})
+    return hits
+
+
 def style_metrics(text: str, lang: str, channel: dict, line_offset: int = 0) -> dict:
     words = max(len(re.findall(r"\b\w+\b", text)), 1)
     em = len(re.findall(r"[—–]", text))
@@ -890,6 +958,19 @@ def style_metrics(text: str, lang: str, channel: dict, line_offset: int = 0) -> 
     rh = rhythm_metrics(text)
     triads = count_triads(text)
 
+    # Page-only checks: the keys appear only for channels that run them, so other channels'
+    # output is unchanged.
+    checks = channel.get("structure_checks", [])
+    page_metrics = {}
+    if "direct_address" in checks:
+        da = len(DIRECT_ADDRESS_RE.findall(text))
+        page_metrics["direct_address_count"] = da
+        page_metrics["direct_address_per_1000_words"] = round(da / words * 1000, 1)
+    if "heading_vs" in checks:
+        page_metrics["vs_headings"] = [h.strip() for h in headings if HEADING_VS_RE.search(h)]
+    if "acronym_first_use" in checks:
+        page_metrics["unexpanded_acronyms"] = unexpanded_acronyms(text, line_offset)
+
     return {
         "em_dashes": em,
         "bold_count": bold,
@@ -904,6 +985,7 @@ def style_metrics(text: str, lang: str, channel: dict, line_offset: int = 0) -> 
         "rhythm": rh,
         "punch_triads": [{"text": t, "line": ln + line_offset} for t, ln in triads[:10]],
         "punch_triad_count": len(triads),
+        **page_metrics,
     }
 
 
@@ -965,6 +1047,20 @@ def analyze(text: str, lang: str, channel_name: str, profile: str = None) -> dic
         house.append(f"monotone rhythm: sentence-length variation {sm['rhythm']['variation']} (want >0.35)")
     if "uniform_rhythm" in ch["structure_checks"] and sm["rhythm"].get("uniform_paragraphs"):
         house.append("uniform paragraph length: every block the same size")
+    da_budget = ch.get("direct_address_budget")
+    if "direct_address" in ch["structure_checks"] and da_budget is not None \
+            and sm["direct_address_per_1000_words"] > da_budget:
+        house.append(f"direct address: {sm['direct_address_per_1000_words']} per 1,000 words "
+                     f"(page budget {da_budget:g}): name the actor in explanatory sentences "
+                     f"(the carrier, the platform); keep \"your\" for ownership and control "
+                     f"(your threshold, your systems) and the CTA")
+    if "heading_vs" in ch["structure_checks"] and sm["vs_headings"]:
+        listed = "; ".join(sm["vs_headings"][:5])
+        house.append(f"compressed \"vs\" in heading: {len(sm['vs_headings'])} "
+                     f"(write \"compared with\"): {listed}")
+    if "acronym_first_use" in ch["structure_checks"] and sm["unexpanded_acronyms"]:
+        listed = ", ".join(f"{a['acronym']} (line {a['line']})" for a in sm["unexpanded_acronyms"][:12])
+        house.append(f"acronyms not expanded at first use: {listed}")
 
     markers_by_category = {}
     for cat, hits in hard_hits.items():

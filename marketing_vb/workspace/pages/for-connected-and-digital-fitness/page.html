@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gym Body Scanner Alternative for Fitness Apps | FitXpress</title>
+<meta name="description" content="A mobile alternative to the gym body scanner for fitness apps: FitXpress turns two phone photos into body measurements and body composition estimates.">
+<link rel="canonical" href="https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/">
+<!--
+  PROTOTYPE of /fitxpress/for-connected-and-digital-fitness/ built from page.md (draft-v2 after judge round 2, 2026-10-02 17:11 UTC),
+  on the approved template workspace/pages/for-insurance-underwriting/page-final-2026-10-02.html.
+  Handoff notes for WordPress:
+  - Delete the two blocks marked data-prototype-chrome (header, footer): the theme supplies both.
+  - Every class is namespaced .fx-cf-* to avoid theme collisions.
+  - The form block is a mock. The live page embeds the shared HubSpot form "FX | LP | Demo" at #demo;
+    GTM fills the hidden fx_vertical = connected-and-digital-fitness from the page path.
+  - Links are absolute to 3dlook.ai, so nothing relative needs replacing. External sources open in a new tab.
+  - JSON-LD at the end: WebPage + Service + FAQPage + BreadcrumbList. FAQ answers are byte-identical to the page.
+-->
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap">
+<style>
+:root{
+  --black:#000; --white:#fff; --blue:#143DFF;
+  --blue-50:#ECEFFF; --blue-100:#D8DEFF; --blue-200:#B1BDFF; --blue-300:#8A9CFF;
+  --blue-400:#4F6DFF; --blue-500:#143DFF; --blue-600:#0F2ECD; --blue-700:#0B2299;
+  --blue-800:#08186B; --navy:#050F40;
+  --g50:#F9F9F9; --g100:#F2F2F2; --g200:#E5E5E5; --g300:#D1D1D1; --g400:#A8A8A8;
+  --g500:#808080; --g600:#666666; --g700:#4C4C4C; --g800:#333333; --g900:#1A1A1A;
+  --ink:#1A1A1A;
+  --r-4:4px; --r-5:5px; --r-15:15px; --r-20:20px; --r-30:30px; --r-40:40px; --r-pill:9999px;
+  --maxw:1200px; --pad:clamp(24px,5vw,80px);
+  --font:'Satoshi','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;font-family:var(--font);font-size:17px;line-height:1.5;color:var(--ink);background:var(--white)}
+a{color:var(--blue)}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--blue-200);outline-offset:2px}
+
+.fx-cf-wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
+.fx-cf-section{padding:clamp(56px,8vw,110px) 0}
+.fx-cf-light{background:var(--g50)}
+.fx-cf-navy{color:var(--white);background:radial-gradient(120% 90% at 50% 0%,var(--blue-400) 0%,var(--blue-700) 28%,var(--blue-800) 58%,var(--navy) 100%)}
+.fx-cf-navy a{color:var(--blue-200)}
+.fx-cf-navy a.fx-cf-btn-white{color:var(--ink)}
+.fx-cf-navy a.fx-cf-btn-link{color:var(--white)}
+.fx-cf-eyebrow{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin:0 0 18px}
+.fx-cf-navy .fx-cf-eyebrow{color:var(--blue-200)}
+h1,h2,h3{letter-spacing:-.02em;line-height:1.08;margin:0}
+h1{font-size:clamp(38px,5.4vw,65px);font-weight:700}
+h2{font-size:clamp(30px,3.8vw,50px);font-weight:700;max-width:22ch}
+h3{font-size:clamp(20px,1.8vw,24px);font-weight:700;line-height:1.2}
+.fx-cf-lead{font-size:20px;max-width:62ch;margin:24px 0 0}
+.fx-cf-intro{max-width:62ch;margin:20px 0 0;color:var(--g700)}
+.fx-cf-navy .fx-cf-intro{color:var(--blue-100)}
+.fx-cf-more{margin:28px 0 0;font-weight:500}
+.fx-cf-more a{font-weight:700;text-decoration:none}
+.fx-cf-more a:hover{text-decoration:underline}
+
+/* buttons */
+.fx-cf-btn{display:inline-block;font:700 16px/1 var(--font);padding:16px 26px;border-radius:var(--r-5);text-decoration:none;transition:transform .15s ease,background .15s ease}
+.fx-cf-btn:hover{transform:translateY(-1px)}
+.fx-cf-btn-blue{background:var(--blue);color:var(--white)}
+.fx-cf-btn-blue:hover{background:var(--blue-600)}
+.fx-cf-btn-white{background:var(--white);color:var(--ink)}
+.fx-cf-btn-link{color:var(--white);padding-left:4px;padding-right:4px}
+.fx-cf-actions{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;margin-top:32px}
+.fx-cf-micro{font-size:14px;color:var(--blue-100);margin:14px 0 0}
+
+/* prototype chrome */
+.fx-cf-proto-bar{background:var(--navy);color:var(--white);border-bottom:1px solid rgba(255,255,255,.12)}
+.fx-cf-proto-bar .fx-cf-wrap{display:flex;justify-content:space-between;align-items:center;height:72px}
+.fx-cf-logo{display:flex;gap:10px;align-items:center;font-weight:900;letter-spacing:.02em;color:var(--white);text-decoration:none}
+.fx-cf-logo svg{width:22px;height:22px}
+.fx-cf-crumbs{font-size:14px;color:var(--blue-100);padding-top:28px}
+.fx-cf-crumbs a{color:var(--blue-100);text-decoration:none}
+.fx-cf-crumbs a:hover{text-decoration:underline}
+
+/* hero */
+.fx-cf-hero{padding-bottom:clamp(40px,6vw,72px)}
+.fx-cf-hero-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.9fr);gap:clamp(32px,5vw,72px);align-items:center;padding-top:40px}
+.fx-cf-record{background:var(--white);color:var(--ink);border-radius:var(--r-20);padding:24px;box-shadow:0 30px 70px rgba(5,15,64,.45)}
+.fx-cf-record-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;font-size:14px;color:var(--g600)}
+.fx-cf-record-head strong{color:var(--ink);font-size:16px}
+.fx-cf-progress{width:100%;margin:18px 0 0;border-collapse:collapse;font-size:15px;font-variant-numeric:tabular-nums}
+.fx-cf-progress th,.fx-cf-progress td{padding:9px 0;border-bottom:1px solid var(--g200);text-align:right;white-space:nowrap}
+.fx-cf-progress tr:last-child th,.fx-cf-progress tr:last-child td{border-bottom:0}
+.fx-cf-progress th,.fx-cf-progress td{padding-left:14px}
+.fx-cf-progress thead th{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--g600);padding-top:0}
+.fx-cf-progress tbody th{text-align:left;font-weight:400;color:var(--g700);white-space:normal;padding-left:0}
+.fx-cf-progress thead td{padding-left:0}
+.fx-cf-progress .fx-cf-was{color:var(--g600)}
+.fx-cf-progress .fx-cf-now{font-weight:700}
+.fx-cf-progress .fx-cf-delta{font-weight:700;color:var(--blue)}
+.fx-cf-flag{margin-top:18px;padding:12px 14px;border-radius:var(--r-15);background:var(--blue-50);font-weight:700;color:var(--ink)}
+.fx-cf-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.fx-cf-chip{font-size:13px;padding:6px 10px;border-radius:var(--r-pill);background:var(--g100);color:var(--g700)}
+.fx-cf-illus{font-size:12px;color:var(--g500);margin:14px 0 0}
+.fx-cf-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;margin-top:clamp(40px,6vw,64px);background:rgba(255,255,255,.18);border-radius:var(--r-20);overflow:hidden}
+.fx-cf-strip div{background:rgba(5,15,64,.55);padding:22px 20px}
+.fx-cf-strip b{display:block;font-size:clamp(22px,2.2vw,28px);font-weight:900;letter-spacing:-.02em}
+.fx-cf-strip span{display:block;font-size:14px;color:var(--blue-100);margin-top:4px}
+
+/* stats (two cards on this page) */
+.fx-cf-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:40px;max-width:960px}
+.fx-cf-stat{border:1px solid var(--g200);border-radius:var(--r-20);padding:28px}
+.fx-cf-stat b{display:block;font-size:clamp(44px,5vw,64px);font-weight:900;letter-spacing:-.03em;line-height:1;color:var(--blue)}
+.fx-cf-stat p{margin:14px 0 0}
+.fx-cf-stat small{display:block;margin-top:12px;font-size:13px;color:var(--g600)}
+.fx-cf-punch{font-size:20px;font-weight:700;margin:32px 0 0}
+
+/* steps */
+.fx-cf-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:40px 0 0;padding:0;list-style:none;counter-reset:fxstep}
+.fx-cf-steps li{background:var(--white);border:1px solid var(--g200);border-radius:var(--r-20);padding:28px;counter-increment:fxstep}
+.fx-cf-steps li::before{content:"0" counter(fxstep);display:block;font-weight:900;font-size:15px;color:var(--blue);letter-spacing:.08em;margin-bottom:14px}
+.fx-cf-steps p{margin:10px 0 0;color:var(--g700)}
+.fx-cf-note{margin:24px 0 0;padding:16px 20px;border-left:3px solid var(--blue);background:var(--white);border-radius:0 var(--r-15) var(--r-15) 0;max-width:720px}
+
+/* tables */
+.fx-cf-scroll{overflow-x:auto;margin-top:36px;border:1px solid var(--g200);border-radius:var(--r-20);background:var(--white)}
+.fx-cf-table{width:100%;border-collapse:collapse;min-width:640px;font-size:16px}
+.fx-cf-table th,.fx-cf-table td{text-align:left;vertical-align:top;padding:16px 20px;border-bottom:1px solid var(--g200)}
+.fx-cf-table tr:last-child th,.fx-cf-table tr:last-child td{border-bottom:0}
+.fx-cf-table thead th{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--g600);background:var(--g50)}
+.fx-cf-table tbody th{font-weight:700;width:28%}
+.fx-cf-compare thead th:nth-child(2){color:var(--blue)}
+.fx-cf-compare td:nth-child(2){background:var(--blue-50);font-weight:500}
+.fx-cf-compare tbody th{width:20%}
+.fx-cf-closing{margin:24px 0 0;max-width:72ch}
+.fx-cf-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* proof band */
+.fx-cf-figs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:40px}
+.fx-cf-figs div{border-top:1px solid rgba(255,255,255,.25);padding-top:20px}
+.fx-cf-figs b{display:block;font-size:clamp(48px,5.6vw,72px);font-weight:900;letter-spacing:-.03em;line-height:1}
+.fx-cf-figs span{display:block;margin-top:12px;color:var(--blue-100)}
+.fx-cf-data{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:40px 0 0;padding:0;list-style:none}
+.fx-cf-data li{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:var(--r-20);padding:20px}
+.fx-cf-data strong{display:block;margin-bottom:6px}
+.fx-cf-data li span{color:var(--blue-100)}
+
+/* pilot */
+.fx-cf-pilot{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,5vw,72px);align-items:start}
+.fx-cf-out{margin:20px 0 0;padding:0;list-style:none}
+.fx-cf-out li{padding:12px 0;border-bottom:1px solid var(--g200)}
+.fx-cf-price{margin:28px 0 0;padding:24px;border-radius:var(--r-20);background:var(--g50)}
+.fx-cf-price p{margin:0}
+.fx-cf-price b{font-size:22px}
+.fx-cf-steps-v{list-style:none;margin:32px 0 0;padding:0;counter-reset:fxp}
+.fx-cf-steps-v li{position:relative;padding:0 0 24px 56px;counter-increment:fxp}
+.fx-cf-steps-v li::before{content:counter(fxp);position:absolute;left:0;top:-4px;width:38px;height:38px;border-radius:var(--r-pill);background:var(--navy);color:var(--white);display:grid;place-items:center;font-weight:700}
+.fx-cf-steps-v p{margin:6px 0 0;color:var(--g700)}
+
+/* faq */
+.fx-cf-faq{margin-top:36px;border-top:1px solid var(--g300)}
+.fx-cf-faq details{border-bottom:1px solid var(--g300)}
+.fx-cf-faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:24px;padding:22px 0}
+.fx-cf-faq summary::-webkit-details-marker{display:none}
+.fx-cf-faq summary::after{content:"+";font-weight:700;font-size:24px;line-height:1;color:var(--blue)}
+.fx-cf-faq details[open] summary::after{content:"\2212"}
+.fx-cf-faq h3{font-size:20px}
+.fx-cf-faq .fx-cf-answer{margin:0 0 22px;max-width:72ch;color:var(--g800)}
+
+/* form */
+.fx-cf-cta{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,5vw,72px);align-items:start}
+.fx-cf-form{background:var(--white);color:var(--ink);border-radius:var(--r-20);padding:28px}
+.fx-cf-form label{display:block;font-size:14px;font-weight:700;margin:14px 0 6px}
+.fx-cf-form label:first-of-type{margin-top:0}
+.fx-cf-form label small{font-weight:400;color:var(--g600)}
+.fx-cf-form input,.fx-cf-form select{width:100%;font:400 16px var(--font);padding:12px 14px;border:1px solid var(--g300);border-radius:var(--r-5);background:var(--white);color:var(--ink)}
+.fx-cf-consent{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--g700);margin:16px 0}
+.fx-cf-consent input{width:auto;margin-top:3px}
+.fx-cf-form label.fx-cf-consent{font-weight:400;font-size:13px;margin:16px 0}
+.fx-cf-navy .fx-cf-form a{color:var(--blue)}
+.fx-cf-form .fx-cf-btn{width:100%;border:0;cursor:pointer}
+.fx-cf-mock{font-size:12px;color:var(--g500);margin:12px 0 0}
+.fx-cf-soft{margin:24px 0 0;color:var(--blue-100)}
+
+.fx-cf-foot{background:var(--navy);color:var(--blue-100);font-size:14px;border-radius:var(--r-40) var(--r-40) 0 0;margin-top:40px}
+.fx-cf-foot .fx-cf-wrap{padding-top:40px;padding-bottom:40px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.fx-cf-foot a{color:var(--blue-100)}
+
+@media (max-width:960px){
+  .fx-cf-hero-grid,.fx-cf-pilot,.fx-cf-cta{grid-template-columns:1fr}
+  .fx-cf-strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .fx-cf-stats,.fx-cf-steps,.fx-cf-figs{grid-template-columns:1fr}
+}
+@media (max-width:420px){
+  .fx-cf-strip{grid-template-columns:1fr}
+  .fx-cf-record{padding:18px}
+  .fx-cf-progress{font-size:13px}
+  .fx-cf-progress th,.fx-cf-progress td{padding-left:10px}
+  .fx-cf-progress thead th{font-size:11px;letter-spacing:.04em}
+}
+</style>
+</head>
+<body>
+
+<header class="fx-cf-proto-bar" data-prototype-chrome="header">
+  <div class="fx-cf-wrap">
+    <a class="fx-cf-logo" href="https://3dlook.ai/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 22 20H2z" fill="#fff"/></svg>3DLOOK</a>
+    <a class="fx-cf-btn fx-cf-btn-white" href="#demo">Book a demo</a>
+  </div>
+</header>
+
+<main>
+<!-- 1 · HERO -->
+<section class="fx-cf-navy fx-cf-hero">
+  <div class="fx-cf-wrap">
+    <nav class="fx-cf-crumbs" aria-label="Breadcrumb">
+      <a href="https://3dlook.ai/">Home</a> / <a href="https://3dlook.ai/fitxpress/">FitXpress</a> / <span aria-current="page">FitXpress for Connected and Digital Fitness</span>
+    </nav>
+    <div class="fx-cf-hero-grid">
+      <div>
+        <p class="fx-cf-eyebrow">FitXpress for connected and digital fitness</p>
+        <h1>Retain fitness app members with a mobile alternative to the gym body scanner</h1>
+        <p class="fx-cf-lead">At each check-in, the app shows members their measurements and body composition estimates next to an earlier scan. FitXpress returns 80+ body measurements from two smartphone photos, under 45 seconds from the photos to structured results.</p>
+        <div class="fx-cf-actions">
+          <a class="fx-cf-btn fx-cf-btn-white" href="#demo" data-cta="hero">Book a demo</a>
+          <a class="fx-cf-btn fx-cf-btn-link" href="#record">Review what each scan returns →</a>
+        </div>
+        <p class="fx-cf-micro">A walkthrough on a phone, with a sample progress record.</p>
+      </div>
+      <aside class="fx-cf-record" aria-label="Illustrative progress record">
+        <div class="fx-cf-record-head"><strong>Progress record</strong><span>Scan 4 · week 12</span></div>
+        <table class="fx-cf-progress">
+          <thead><tr><td></td><th scope="col">Week 1</th><th scope="col">Week 12</th><th scope="col">Change</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Entered weight</th><td class="fx-cf-was">82.4 kg</td><td class="fx-cf-now">82.1 kg</td><td class="fx-cf-delta">−0.3 kg</td></tr>
+            <tr><th scope="row">Body-fat estimate</th><td class="fx-cf-was">27.1%</td><td class="fx-cf-now">25.3%</td><td class="fx-cf-delta">−1.8 pts</td></tr>
+            <tr><th scope="row">Lean mass estimate</th><td class="fx-cf-was">60.1 kg</td><td class="fx-cf-now">61.3 kg</td><td class="fx-cf-delta">+1.2 kg</td></tr>
+            <tr><th scope="row">Waist</th><td class="fx-cf-was">92.0 cm</td><td class="fx-cf-now">88.6 cm</td><td class="fx-cf-delta">−3.4 cm</td></tr>
+          </tbody>
+        </table>
+        <p class="fx-cf-flag">The scale moved 0.3 kg. The waist moved 3.4 cm.</p>
+        <div class="fx-cf-chips"><span class="fx-cf-chip">Pose passed</span><span class="fx-cf-chip">Framing passed</span><span class="fx-cf-chip">2 photos</span></div>
+        <p class="fx-cf-illus">Illustrative example. The member and coach views are configured in the app.</p>
+      </aside>
+    </div>
+    <div class="fx-cf-strip">
+      <div><b>2 photos</b><span>front and side, on the member's own phone</span></div>
+      <div><b>Under 45 sec</b><span>from the photos to structured results</span></div>
+      <div><b>No hardware</b><span>the member's phone, at home or in the club</span></div>
+      <div><b>No integration fee</b><span>plans from $1,000 a month</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2 · PROBLEM -->
+<section class="fx-cf-section">
+  <div class="fx-cf-wrap">
+    <p class="fx-cf-eyebrow">The problem</p>
+    <h2>Why do fitness apps lose members before the program shows results?</h2>
+    <p class="fx-cf-intro">Most progress screens run on a weight log and on photos in the camera roll. Neither shows fat lost while lean mass holds, and a flat weight line reads as a program that is not working.</p>
+    <div class="fx-cf-stats">
+      <div class="fx-cf-stat"><b>24% → 7%</b><p>of health and fitness app users are active on day 1; 7% are still active on day 30.</p><small><a href="https://www.adjust.com/blog/get-the-mobile-app-retention-benchmarks-for-2023/" target="_blank" rel="noopener">Adjust, mobile app retention benchmarks, global 2022 data</a></small></div>
+      <div class="fx-cf-stat"><b>70%</b><p>median share of users who quit lifestyle and mental health apps within 100 days; lack of personalization was among the reasons.</p><small><a href="https://www.jmir.org/2024/1/e56897" target="_blank" rel="noopener">Kidman et al., Journal of Medical Internet Research, 2024</a></small></div>
+    </div>
+    <p class="fx-cf-punch">Every member lost in the first month is acquisition spend the app does not earn back.</p>
+    <p class="fx-cf-more">Body data in fitness apps, in depth: <a href="https://3dlook.ai/content-hub/ai-in-fitness-industry/">AI in fitness →</a></p>
+  </div>
+</section>
+
+<!-- 3 · HOW IT WORKS -->
+<section class="fx-cf-section fx-cf-light">
+  <div class="fx-cf-wrap">
+    <p class="fx-cf-eyebrow">How it works</p>
+    <h2>A two-photo scan inside the member flow</h2>
+    <p class="fx-cf-intro">A connected-fitness platform or coaching app embeds FitXpress through web and mobile software development kits (SDKs), including supported iOS and Android integrations.</p>
+    <ol class="fx-cf-steps">
+      <li><h3>The member scans at a moment the program already has, such as onboarding or a check-in week.</h3><p>The consent screen belongs to the platform, in its own wording.</p></li>
+      <li><h3>Guided capture validates each photo.</h3><p>Real-Time Pose Validation (RTPV) pauses capture until pose and framing requirements are met, with voice guidance for a member scanning alone. FitXpress returns clothing-related information for review.</p></li>
+      <li><h3>The progress screen shows the change.</h3><p>FitXpress returns the record through its application programming interface (API) to the member profile, and the progress screen places two scans selected by the platform side by side. In <a href="https://3dlook.ai/content-hub/remote-body-measurement-online-fitness-coaching/">online coaching apps</a>, the coach reviews the same record before setting the next program block.</p></li>
+    </ol>
+    <p class="fx-cf-more">Guided capture in detail: <a href="https://3dlook.ai/technology/">how the technology works →</a></p>
+  </div>
+</section>
+
+<!-- 4 · RECORD -->
+<section class="fx-cf-section" id="record">
+  <div class="fx-cf-wrap">
+    <p class="fx-cf-eyebrow">The scan record</p>
+    <h2>What each scan returns to a digital fitness platform</h2>
+    <p class="fx-cf-intro">Each scan produces one timestamped, machine-readable record. The product team chooses which fields the member and the coach see.</p>
+    <div class="fx-cf-scroll">
+      <table class="fx-cf-table">
+        <thead><tr><th scope="col">Field</th><th scope="col">Returned output</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Body measurements</th><td>80+ body measurements, including waist, hip, chest, thigh and calf: the areas a program targets</td></tr>
+          <tr><th scope="row">Body composition estimates</th><td>Body-fat percentage, lean mass and fat mass, which can move while weight stays flat</td></tr>
+          <tr><th scope="row">Calculated metrics</th><td>BMI and basal metabolic rate (BMR), an input for nutrition plans</td></tr>
+          <tr><th scope="row">3D body model</th><td>A 3D model per scan. 3D body progress tracking and 3D Goal Visualization, from the Pro plan: a feature for the premium tier</td></tr>
+          <tr><th scope="row">Quality and status</th><td>Pose and framing validation results, clothing-related information surfaced for review, and a timestamp</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="fx-cf-closing">FitXpress is not a medical device. It provides structured body data for coaching and program workflows.</p>
+    <div class="fx-cf-actions"><a class="fx-cf-btn fx-cf-btn-blue" href="#demo" data-cta="sample">Request a sample payload</a></div>
+  </div>
+</section>
+
+<!-- 5 · COMPARE -->
+<section class="fx-cf-section fx-cf-light">
+  <div class="fx-cf-wrap">
+    <p class="fx-cf-eyebrow">Compare</p>
+    <h2>FitXpress compared with the scale, progress photos and an in-gym body scanner</h2>
+    <div class="fx-cf-scroll">
+      <table class="fx-cf-table fx-cf-compare">
+        <thead><tr><th scope="col"><span class="fx-cf-sr">Dimension</span></th><th scope="col">FitXpress</th><th scope="col">Weight log and progress photos</th><th scope="col">In-gym body scanner</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Where it happens</th><td>On the member's phone, anywhere</td><td>At home</td><td>In the club, at each visit</td></tr>
+          <tr><th scope="row">What it records</th><td>80+ body measurements, body composition estimates, a 3D model</td><td>Weight; the photos are not measured</td><td>Circumferences, body composition or both, by device</td></tr>
+          <tr><th scope="row">Fat and lean change</th><td>Body composition estimates, compared scan to scan</td><td>Hidden inside one weight number</td><td>Shown per visit</td></tr>
+          <tr><th scope="row">Best fit</th><td>Members who train at home or between club visits</td><td>A daily weight trend</td><td>Members who visit the club regularly</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="fx-cf-closing">An in-gym scanner still suits members who come to the club. FitXpress covers training at home and between visits.</p>
+  </div>
+</section>
+
+<!-- 6 · PROOF + TRUST -->
+<section class="fx-cf-section fx-cf-navy">
+  <div class="fx-cf-wrap">
+    <p class="fx-cf-eyebrow">Proof and data handling</p>
+    <h2>How accurate is FitXpress for progress tracking, and how is member data handled?</h2>
+    <div class="fx-cf-figs">
+      <div><b>&lt; 1 cm</b><span>typical scan-to-scan difference for most measurements</span></div>
+      <div><b>96-97%</b><span>accuracy against expert manual measurement, typical absolute error 1.5-2.0 cm</span></div>
+      <div><b>38-210 kg</b><span>body weights in the internal validation population, with ages 16 to 78 and heights 150 to 220 cm</span></div>
+    </div>
+    <p class="fx-cf-intro">For progress tracking, repeatability is the deciding figure. These figures describe body measurements; body composition values are estimates derived from them with height and, where provided, weight. These figures come from internal validation, and performance outside this scope has not been characterized. Peer review and third-party clinical certification are not part of that record, and the full methodology is available under a non-disclosure agreement (NDA). <a href="https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/">Body scanning accuracy: an enterprise framework →</a></p>
+    <ul class="fx-cf-data">
+      <li><strong>Photos.</strong> <span>Deleted immediately after processing or retained for up to 30 days under a customer-specific policy. Retained photos are blurred, and face obfuscation is applied during capture.</span></li>
+      <li><strong>Identifiers.</strong> <span>Scan records use anonymized, randomly generated identifiers, which the app maps to its own member accounts.</span></li>
+      <li><strong>GDPR.</strong> <span>In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR.</span></li>
+      <li><strong>Model training.</strong> <span>3DLOOK does not use production customer data to train its models without the customer's explicit, documented authorization.</span></li>
+      <li><strong>App store listings.</strong> <span>Shipping a body scan usually means updating the app's App Store privacy details and Google Play Data safety form for health and fitness data and photos.</span></li>
+    </ul>
+    <p class="fx-cf-more">See the <a href="https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/">Data, Privacy, Security &amp; Regulatory FAQ</a> for storage, retention, deletion by scan identifier, System and Organization Controls 2 (SOC 2) and U.S. Food and Drug Administration (FDA) information.</p>
+  </div>
+</section>
+
+<!-- 7 · PILOT + PRICE -->
+<section class="fx-cf-section">
+  <div class="fx-cf-wrap fx-cf-pilot">
+    <div>
+      <p class="fx-cf-eyebrow">Pilot</p>
+      <h2>Evaluate FitXpress on a member cohort before a full release</h2>
+      <p class="fx-cf-intro"><a href="https://3dlook.ai/fitxpress/">FitXpress</a> uses production infrastructure already deployed in remote <a href="https://3dlook.ai/structured-body-data-for-telehealth-digital-health-programs/">weight-management</a> and <a href="https://3dlook.ai/for-bmi-verification/">BMI-verification</a> workflows.</p>
+      <div class="fx-cf-price"><p><b>Pricing.</b> Plans start at $1,000 a month for up to 500 scans, with no integration fee. Pro, with 3D progress tracking, is $1,500 a month for up to 1,000 scans.</p><p class="fx-cf-more" style="margin-top:10px"><a href="https://3dlook.ai/pricing/">See pricing →</a></p></div>
+    </div>
+    <div>
+      <ol class="fx-cf-steps-v">
+        <li><h3>Walkthrough.</h3><p>3DLOOK shows the member flow on a phone, a sample payload and the integration pattern for the app.</p></li>
+        <li><h3>Cohort release.</h3><p>A defined group of new members scans at onboarding and at the first check-in.</p></li>
+        <li><h3>Holdout comparison.</h3><p>The cohort is compared with members who did not scan, on criteria agreed before the evaluation begins.</p></li>
+      </ol>
+      <p><strong>The evaluation should quantify:</strong></p>
+      <ul class="fx-cf-out">
+        <li>scan completion and retake rates</li>
+        <li>the repeat scan rate at the first check-in</li>
+        <li>day-30 and day-90 retention against the holdout</li>
+        <li>free-to-premium conversion where 3D progress sits in the paid tier.</li>
+      </ul>
+      <div class="fx-cf-actions"><a class="fx-cf-btn fx-cf-btn-blue" href="#demo" data-cta="pilot">Book a demo</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8 · FAQ -->
+<section class="fx-cf-section fx-cf-light">
+  <div class="fx-cf-wrap">
+    <p class="fx-cf-eyebrow">FAQ</p>
+    <h2>Questions fitness and coaching teams ask</h2>
+    <div class="fx-cf-faq">
+      <details><summary><h3>What is a body scan at the gym?</h3></summary><p class="fx-cf-answer">A body scan at the gym is a measurement taken on hardware in the club, such as a 3D camera booth or a bioelectrical impedance platform. Each repeat needs a club visit. FitXpress measures on the member's own phone instead.</p></details>
+      <details><summary><h3>What body scanning SDKs work for fitness apps with remote users?</h3></summary><p class="fx-cf-answer">FitXpress offers web and mobile SDKs built for members who scan at home on their own phones. The platform designs onboarding, consent and results screens; the photo-capture layer, where pose validation runs, stays fixed to protect measurement quality.</p></details>
+      <details><summary><h3>How often should members scan?</h3></summary><p class="fx-cf-answer">Members scan at each progress check-in the program already runs. Consistent conditions matter more than frequency: form-fitting clothing, the same place and the phone on a stable surface each time.</p></details>
+      <details><summary><h3>Does the data sync to Apple Health or Health Connect?</h3></summary><p class="fx-cf-answer">The platform's own team builds and controls any sync to Apple Health or Health Connect. FitXpress returns structured data to the platform through the API, ready for that sync.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 9 · FORM -->
+<section class="fx-cf-section fx-cf-navy" id="demo">
+  <div class="fx-cf-wrap fx-cf-cta">
+    <div>
+      <p class="fx-cf-eyebrow">Book a demo</p>
+      <h2>Review the member flow and a sample progress record</h2>
+      <p class="fx-cf-intro">We walk the member flow on a phone, show a sample progress record and scope a cohort evaluation.</p>
+      <p class="fx-cf-soft">Not ready for a call? <a href="https://3dlook.ai/content-hub/ai-in-fitness-industry/">Start with AI in fitness</a>.</p>
+    </div>
+    <!-- [PLACEHOLDER] Replace this mock with the shared HubSpot form "FX | LP | Demo".
+         Hidden field fx_vertical = connected-and-digital-fitness comes from GTM. No page-specific fields. -->
+    <form class="fx-cf-form" onsubmit="return false" aria-label="Book a demo (prototype)">
+      <label for="fx-cf-email">Work email</label>
+      <input id="fx-cf-email" type="email" autocomplete="email" required>
+      <label for="fx-cf-company">Company</label>
+      <input id="fx-cf-company" type="text" autocomplete="organization" required>
+      <label for="fx-cf-title">Job title</label>
+      <input id="fx-cf-title" type="text" autocomplete="organization-title" required>
+      <label for="fx-cf-volume">Expected monthly scan volume <small>(optional)</small></label>
+      <select id="fx-cf-volume">
+        <option value="">Select</option>
+        <option>Under 500</option>
+        <option>500-1,000</option>
+        <option>1,000-5,000</option>
+        <option>Over 5,000</option>
+        <option>Not sure yet</option>
+      </select>
+      <label class="fx-cf-consent"><input type="checkbox" required> <span>I agree to 3DLOOK processing my details to respond to this request, as described in the <a href="https://3dlook.ai/privacy-policy/">privacy policy</a>.</span></label>
+      <button class="fx-cf-btn fx-cf-btn-blue" type="submit" data-cta="form">Book a demo</button>
+      <p class="fx-cf-mock">Prototype mock. The live page embeds the shared HubSpot form.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="fx-cf-foot" data-prototype-chrome="footer">
+  <div class="fx-cf-wrap"><span>© 2026 3DLOOK · FitXpress for connected and digital fitness</span><span>Procurement and security documentation: <a href="mailto:legal@3dlook.me">legal@3dlook.me</a></span></div>
+</footer>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/#webpage",
+   "url": "https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/",
+   "name": "Gym Body Scanner Alternative for Fitness Apps | FitXpress",
+   "description": "A mobile alternative to the gym body scanner for fitness apps: FitXpress turns two phone photos into body measurements and body composition estimates.",
+   "about": {
+    "@id": "https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/#fitxpress-fitness-service"
+   },
+   "mainEntity": {
+    "@id": "https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/#fitxpress-fitness-service"
+   },
+   "hasPart": {
+    "@id": "https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/#faq"
+   },
+   "breadcrumb": {
+    "@id": "https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/#breadcrumb"
+   }
+  },
+  {
+   "@type": "Service",
+   "@id": "https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/#fitxpress-fitness-service",
+   "name": "FitXpress for connected and digital fitness",
+   "url": "https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://3dlook.ai/#organization",
+    "name": "3DLOOK",
+    "url": "https://3dlook.ai/"
+   },
+   "brand": {
+    "@type": "Brand",
+    "name": "FitXpress"
+   },
+   "serviceType": "Body scanning API and SDK for fitness apps",
+   "description": "A mobile alternative to the gym body scanner for fitness apps: FitXpress turns two phone photos into body measurements and body composition estimates.",
+   "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Connected fitness platforms, digital fitness and coaching apps"
+   },
+   "areaServed": [
+    {"@type": "Country", "name": "United States"},
+    {"@type": "Country", "name": "United Kingdom"},
+    {"@type": "Country", "name": "Canada"},
+    {"@type": "Country", "name": "Germany"},
+    {"@type": "Country", "name": "United Arab Emirates"},
+    {"@type": "Country", "name": "Australia"},
+    {"@type": "Country", "name": "Denmark"},
+    {"@type": "Country", "name": "Finland"},
+    {"@type": "Country", "name": "Norway"},
+    {"@type": "Country", "name": "Sweden"},
+    {"@type": "Country", "name": "Iceland"}
+   ],
+   "serviceOutput": [
+    "Body measurements",
+    "Body composition estimates",
+    "Calculated metrics",
+    "3D body model",
+    "Quality and status"
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/#faq",
+   "url": "https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/",
+   "name": "Questions fitness and coaching teams ask",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is a body scan at the gym?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A body scan at the gym is a measurement taken on hardware in the club, such as a 3D camera booth or a bioelectrical impedance platform. Each repeat needs a club visit. FitXpress measures on the member's own phone instead."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What body scanning SDKs work for fitness apps with remote users?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "FitXpress offers web and mobile SDKs built for members who scan at home on their own phones. The platform designs onboarding, consent and results screens; the photo-capture layer, where pose validation runs, stays fixed to protect measurement quality."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How often should members scan?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Members scan at each progress check-in the program already runs. Consistent conditions matter more than frequency: form-fitting clothing, the same place and the phone on a stable surface each time."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does the data sync to Apple Health or Health Connect?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The platform's own team builds and controls any sync to Apple Health or Health Connect. FitXpress returns structured data to the platform through the API, ready for that sync."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://3dlook.ai/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "FitXpress",
+     "item": "https://3dlook.ai/fitxpress/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "FitXpress for Connected and Digital Fitness",
+     "item": "https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</body>
+</html>
