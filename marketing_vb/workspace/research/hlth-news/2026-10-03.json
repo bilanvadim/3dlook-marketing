@@ -1,0 +1,98 @@
+{
+ "generated": "2026-10-03T05:40:58+00:00",
+ "items": [
+  {
+   "id": "7830a158-8237-49c8-9ed4-3175332bfdf5",
+   "title": "Grindr to Acquire PurposeMed for $250M and Launch Grindr Health",
+   "date": "2026-10-02",
+   "tags": [
+    "Preventive Health",
+    "Telehealth / Virtual Care / Remote Patient Monitoring",
+    "Investments and Partnerships",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/grindr-to-acquire-purposemed-for-250m-and-launch-grindr-health"
+  },
+  {
+   "id": "4d1668ba-9a19-4221-93ca-5eb5d4d2a9d4",
+   "title": "Welldoc Launches AI-Powered Care Loop to Connect Daily Health Management With Clinical Care",
+   "date": "2026-10-02",
+   "tags": [
+    "Care Coordination / Navigation / Care Access",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services",
+    "Chronic Condition Management"
+   ],
+   "url": "https://hlth.com/insights/news/welldoc-launches-ai-powered-care-loop-to-connect-daily-health-management-with-clinical-care"
+  },
+  {
+   "id": "991cf5ed-b43e-4afa-a623-cd539f3e1e0d",
+   "title": "ElevenLabs Reaches $22B Valuation Following $300M Employee Tender",
+   "date": "2026-10-02",
+   "tags": [
+    "Investor & Accelerator",
+    "Telehealth / Virtual Care / Remote Patient Monitoring",
+    "Investments and Partnerships",
+    "Startup",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/elevenlabs-reaches-22b-valuation-following-300m-employee-tender"
+  }
+ ],
+ "analyses": {
+  "7830a158-8237-49c8-9ed4-3175332bfdf5": {
+   "id": "7830a158-8237-49c8-9ed4-3175332bfdf5",
+   "score": 0,
+   "segment": "—",
+   "what": "Grindr купує PurposeMed (платформа віртуальної HIV-профілактики Freddie) за $250M upfront і разом із Woodwork запускає підрозділ Grindr Health. Угоду планують закрити в Q4 2026.",
+   "why": "Тут PrEP і сексуальне здоров'я: у цьому процесі немає BMI, ваги чи даних про тіло. До того ж це M&A, а компанії в процесі угоди ICP виключає.",
+   "play": "none",
+   "companies": [
+    "Grindr",
+    "PurposeMed",
+    "Freddie",
+    "Woodwork",
+    "Grindr Health"
+   ],
+   "_date": "2026-10-02"
+  },
+  "4d1668ba-9a19-4221-93ca-5eb5d4d2a9d4": {
+   "id": "4d1668ba-9a19-4221-93ca-5eb5d4d2a9d4",
+   "score": 2,
+   "segment": "FitXpress §1 Telehealth & GLP-1 (cardiometabolic / remote monitoring)",
+   "what": "Welldoc запустила нову платформу з AI-Powered Care Loop: AI-агент Simon на власних SLM передає клініцистам між візитами дані, які генерують самі пацієнти, і дані сенсорів (зокрема CGM). З enterprise-партнерами платформу інтегрують за 2–3 місяці.",
+   "why": "Платформа тримається на даних між візитами (сенсори, CGM). Welldoc прямо пише про мету: рано помічати ризики й масштабувати програми, а AI-функції, за її словами, підвищують engagement. FitXpress може додати ще один потік через API/SDK: BMI, body composition і 80+ вимірів із 2 фото смартфона, з відстеженням прогресу в часі й без додаткового пристрою. Проте про вагу чи ожиріння в статті нічого немає, тож зв'язок ми лише припускаємо. Тому оцінка 2, а не 3.",
+   "play": "direct_account",
+   "campaign": {
+    "title": "USA — Welldoc: дані про тіло в AI Care Loop",
+    "profile": "nick",
+    "market": "USA",
+    "targets": "Welldoc як окремий акаунт (як у 2026-10-02-us-virta-health). За бажанням можна додати інші US-платформи для хронічних станів / RPM, які збирають дані сенсорів для health plans і health systems.",
+    "roles": "Chief AI Officer, Chief Product Officer / Head of Product, Chief Medical Officer, VP Partnerships / Business Development, CTO",
+    "angle": "Ваш новий Care Loop уже отримує CGM і дані сенсорів між візитами, а дані про тіло (талія, BMI, body composition) туди не потрапляють. Два фото смартфона дають ці дані через API в той самий потік, і пацієнтові не потрібен ще один пристрій.",
+    "existing_campaign": "",
+    "task": "USA: Welldoc (single account) — 2-photo body measurements as an extra patient-generated data stream in its new AI-Powered Care Loop"
+   },
+   "caveat": "Про вагу, ожиріння чи body composition у статті ані слова. Перед outreach треба перевірити, чи є у Welldoc cardiometabolic/weight-програми. Гео й виручку в статті не вказано (США я припускаю лише з HIPAA/NIST). Це enterprise з 11 FDA clearances і власним стеком, тож реалістичніше партнерство з довгим циклом, ніж швидкий продаж. У листі не згадувати FDA/HIPAA.",
+   "companies": [
+    "Welldoc"
+   ],
+   "_date": "2026-10-02"
+  },
+  "991cf5ed-b43e-4afa-a623-cd539f3e1e0d": {
+   "id": "991cf5ed-b43e-4afa-a623-cd539f3e1e0d",
+   "score": 0,
+   "segment": "—",
+   "what": "ElevenLabs закрила employee tender на $300M; оцінка компанії тепер $22B. У healthcare вона продає voice AI-агентів і AI answering service для клінік.",
+   "why": "Голосовий AI для обробки дзвінків і запису до лікаря не має жодного стосунку до даних про тіло.",
+   "play": "none",
+   "companies": [
+    "ElevenLabs",
+    "T. Rowe Price"
+   ],
+   "_date": "2026-10-02"
+  }
+ },
+ "posts": []
+}
