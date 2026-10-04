@@ -1,11 +1,11 @@
-# Responses Summary — 2026-09-14-eu-erakulis-similar (as of 2026-10-02)
+# Responses Summary — 2026-09-14-eu-erakulis-similar (as of 2026-10-03)
 
 ## Counts
-- Total responses: 1
-- Interested: 1 (100%) ← **передать сейлзам (Olena)**
+- Total responses: 2
+- Interested: 1 (50%) ← **передать сейлзам (Olena)**
 - Maybe-later: 0
 - Referrals: 0
-- Decline: 0
+- Decline: 1 (50%)
 - Negative: 0
 - Questions: 0
 - OOO: 0
@@ -33,15 +33,33 @@
 
 None this round.
 
+## Decline — for the record
+
+### Oleksandr Pakhomov — Senior Product Development Manager — BetterMe
+- Replied to: Message 1 (retail-background hook: "Retail buying background (TSUM, MD Fashion)
+  before Senior Product Development Manager at BetterMe, which reads as the physical-products
+  side, close to the Smart Scale line")
+- Their message: «Thanks for reaching out. Not looking at anything new at the moment, very
+  happy with where I am at BetterMe. Appreciate you thinking of me though!»
+- Read: polite, direct pass. No door-open, no objection worth addressing, no revisit date
+  offered. Confidence **high**.
+- Action: mark declined, exclude from future FitXpress/BetterMe outbound per the
+  one-profile-per-6-months rule. No follow-up needed.
+- Full thread: `messages/aleksandrpakhomov.md` + response in CSV
+
 ## Negative responses — pattern check
 
-0 of 1 — nothing to diagnose.
+0 of 2 — nothing to diagnose. The one decline was polite and specific to his own situation
+("happy where I am"), not a signal about messaging quality.
 
 ## Recommendations
 
-- Only 1 reply on file for this campaign so far — too small a sample to read reply-rate
-  trends from. Worth another `closely-pull.py pull` before drawing conclusions about the
-  "similar to Erakulis" hypothesis.
+- 2 replies on file for this campaign so far — 1 interested (conduit, not yet a buyer), 1
+  clean decline. Still too small a sample to read reply-rate trends from; worth another
+  `closely-pull.py pull` before drawing conclusions about the "similar to Erakulis"
+  hypothesis.
 - Prepare the one-pager material now (no client names, no pricing, GDPR-safe) since Dmitry
   is actively waiting to forward something to his product team — a slow turnaround here
   wastes the open door.
+- Oleksandr Pakhomov / BetterMe: no action beyond exclusion. Do not re-target this profile
+  on BetterMe within the 6-month window.
