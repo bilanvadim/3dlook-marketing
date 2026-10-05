@@ -1,0 +1,110 @@
+{
+ "campaign": "2026-10-05-latam-health-weightloss",
+ "checked": 32,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-2",
+ "generated": "2026-10-05T13:56:22",
+ "hard": [],
+ "soft": [
+  [
+   "no company line",
+   "lucas-schneider-7b231066 M1",
+   "«L2D Saúde Digital» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "renatatavolaro M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "flaviosvaiter M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "fernando-palma M1",
+   "«L2D Saúde Digital» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "ricardo-perales-aravena-1b973236 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "rodrigocasaleabe M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "amanda-micaela-alves-9ba45777 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "mauriciodl M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "ana-paula-moraes-177a81112 M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "vinicius-cuerci-de-souza-2140a2176 M1",
+   "«RWE Telemedicina» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "luana-barreto-43819922b M1",
+   "«RWE Telemedicina» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "gabrielagalvis M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "gabriela-teixeira-5290a7210 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "castilho-jus M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "castilho-jus M1",
+   "«RWE Telemedicina» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "juliana-faure-0b4619280 M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "juliana-faure-0b4619280 M1",
+   "«L2D Saúde Digital» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "jessica-rayane-comeercial M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "eduarda-cuerci-62b21835b M1",
+   "«RWE Telemedicina» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "emerson-goulart-781585367 M1",
+   "«RWE Telemedicina» is not named: check it has a line only this company gets"
+  ]
+ ]
+}

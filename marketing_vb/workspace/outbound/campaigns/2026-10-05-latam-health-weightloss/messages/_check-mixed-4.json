@@ -1,0 +1,45 @@
+{
+ "campaign": "2026-10-05-latam-health-weightloss",
+ "checked": 29,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-4",
+ "generated": "2026-10-05T13:56:22",
+ "hard": [],
+ "soft": [
+  [
+   "greeting",
+   "dra-edivana-poltronieri-a74a9973 M1",
+   "«Hi Edivana,» has no «Dra Edivana»"
+  ],
+  [
+   "greeting",
+   "dra-edivana-poltronieri-a74a9973 M2",
+   "«Hi Edivana,» has no «Dra Edivana»"
+  ],
+  [
+   "no calendar link",
+   "anamariarpo M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "anamariarpo M1",
+   "«holadr. IPS» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "joão-murackami-35aa1b312 M1",
+   "«N2B Brasil» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "rodrigo-alvarez-diaz-a4b459261 M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "lucas-quintella-6459b5324 M1",
+   "«MedTrue» is not named: check it has a line only this company gets"
+  ]
+ ]
+}

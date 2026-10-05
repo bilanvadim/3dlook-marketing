@@ -1,0 +1,1969 @@
+first_name,last_name,linkedin_url,company,title,email,connection_note,message_1,message_2
+Ramon,Guedes,https://linkedin.com/in/ramontrg,MedTrue,Head of Revenue,,,"Hi Ramon,
+
+Noticed your background in revenue, with Wise Up before MedTrue. At MedSlim, doctors in endocrinology and nutrology, among others, prescribe and follow each treatment.
+
+Who designs the patient journey at MedSlim?
+
+3DLOOK has a guided two-photo scan: 80+ body measurements in under 45 seconds from the photos to structured results. I am only trying to find the right person to ask.
+
+Kateryna","Hi Ramon,
+
+Adding one detail.
+
+112,100 scans in 2025 across all 3DLOOK customers.
+
+Whoever owns the journey, a pointer would help: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Diego,Freire,https://linkedin.com/in/diegodfreire,Nilo Saúde,Senior Software Engineer,,,"Hi Diego,
+
+Had a thought after reading that you are the technical reference for Nilo Saúde's integration platform. Nilo Saúde's integration platform connects with an institution's own app.
+
+FitXpress is a REST API: two photos in, 80+ body measurements out, with a web SDK for the capture.
+
+How would a third-party scan API fit the integrations you build between systems?
+
+Kateryna","Hi Diego,
+
+Photos are deleted after processing or within 30 days, and results stay available by scan ID.
+
+FAQ for engineers: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Want a technical walkthrough? https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Dra Edivana,Poltronieri,https://linkedin.com/in/dra-edivana-poltronieri-a74a9973,Grupo 5S,Diretora,,,"Hi Edivana,
+
+Noticed your background leading Grupo 5S through licensing and franchising. The group sells its franchise brands through stores and e-commerce, which made me think of the client journey across both.
+
+Would a phone body record fit the client journey in the group's franchise brands?
+
+Clients could take two guided photos and receive 80+ body measurements in under 45 seconds from the photos to structured results, through white-label web and mobile SDKs.
+
+Kateryna","Hi Edivana,
+
+How this would look in practice: a client takes two photos in a guided sequence, and the brand's app or web flow receives a timestamped body record.
+
+112,100 scans in 2025 across all 3DLOOK customers.
+
+Worth 15 minutes? https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Bárbara,Carvalho,https://linkedin.com/in/barbaracarvalhor,Salvia Saúde Corporativa,Diretora comercial,,,"Hi Bárbara,
+
+Quick note: your bio talks about connecting people to the right businesses, and Salvia Saúde Corporativa offers digital and in-person primary care for companies and health plan operators.
+
+In FitXpress, two guided photos inside an app give a care team 80+ body measurements.
+
+Who owns the Salvia app roadmap?
+
+Kateryna","Hi Bárbara,
+
+A pointer is enough. The idea is two photos in an app and 80+ body measurements for a care team.
+
+Kateryna"
+Carolina,Beltramini,https://linkedin.com/in/carolina-beltramini-0b242262,Nilo Saúde,Head de Experiência do Cliente,,,"Hi Carolina,
+
+Your remit covers implementation and support at Nilo, which is where new features land. Nilo Saúde spans several care lines for operators.
+
+For operations the scan is simple: nothing shipped, one guided sequence every time, and under 45 seconds from the photos to structured results. One SDK serves every operator.
+
+What would implementation need to switch on a new capture for one operator's care line?
+
+Kateryna","Hi Carolina,
+
+Two photos, 80+ body measurements, and no hardware or stock for your team to handle.
+
+A short demo would show the whole flow: https://meetings.hubspot.com/kateryna-boichuk
+
+Background reading: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Kateryna"
+Victor,Marcondes,https://linkedin.com/in/victor-marcondes-de-oliveira,Nilo Saúde,Founder,,,"Hi Victor,
+
+Noticed you co-founded Cosmedical before Nilo Saúde. NiloCare and its AI agents automate operations for health institutions.
+
+Inside a care journey, a phone can ask a person for a guided two-photo scan. It returns 80+ body measurements and a 3D model in under 45 seconds from the photos to structured results.
+
+Could a phone body record be one step in NiloCare journeys for operators' chronic care lines?
+
+Kateryna","Hi Victor,
+
+Each record is standardized and timestamped, and the care team compares the scans it selects. It is white-label through API or SDK, with nothing to ship.
+
+Worth 15 minutes to walk through it? https://meetings.hubspot.com/kateryna-boichuk
+
+More reading: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Kateryna"
+Roberto,Stryjer,https://linkedin.com/in/roberto-stryjer-289b3863,Telecárdio,Sócio Fundador,,,"Hi Roberto,
+
+You co-founded Telecárdio, which has offered telemedicine across Brazil since 1993.
+
+Our side is software: web and mobile SDKs around a guided two-photo scan that returns 80+ body measurements in under 45 seconds from the photos to structured results.
+
+Has Telecárdio ever offered client clinics a remote service outside its reports, through a partner?
+
+Kateryna","Hi Roberto,
+
+If a partner service ever sits next to your reports, it would run inside a clinic's own flow, with nothing for Telecárdio to ship.
+
+Open to a short call? https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+LUCAS,SCHNEIDER,https://linkedin.com/in/lucas-schneider-7b231066,L2D Saúde Digital,Diretor - L2D Telemedicina,,,"Hi Lucas,
+
+Quick thought on L2D's telehealth work. A service running since 2016, across Brazil and in international projects, depends on every step repeating the same way.
+
+We built a guided two-photo scan for telehealth apps. It follows the same sequence every time and returns 80+ body measurements in under 45 seconds from the photos to structured results.
+
+In L2D's projects, how are a patient's body measurements taken before a teleconsultation today?
+
+Kateryna","Hi Lucas,
+
+Thought I'd share how it runs in practice. The patient follows the guided sequence on their own phone, and the care unit has nothing to install, stock or support.
+
+The scan returns measurements and estimates the doctor may use. It does not triage anyone or replace an examination.
+
+Worth 15 minutes to walk through it? https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Luis,Hincapié,https://linkedin.com/in/hincapieluis,Saluta,Director de operaciones,,,"Hi Luis,
+
+Quick note for a co-founder who also runs operations at Saluta. Saluta brings mental-health prevention and care through an app and telemedicine.
+
+We build a guided two-photo body scan: 80+ body measurements in under 45 seconds from the photos to structured results.
+
+Does Saluta partner with physical-health services for its app users, and who decides?
+
+Kateryna","Hi Luis,
+
+If a physical-health partner capability is ever on the table, it would run inside the app with nothing to ship.
+
+Open to a short call to see whether it fits? https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Nadia,Panow,https://linkedin.com/in/nadia-panow-91079767,Vidalink,Gerente Administrativo Financeiro -  controladoria Contábil e Fiscal,,,"Hi Nadia,
+
+Your finance role at Vidalink do Brasil gave me a way in. Bem-estar 360º includes an activity app.
+
+We built a scan that lives inside an app and returns 80+ body measurements from two photos.
+
+Who leads Bem-estar 360º?
+
+Kateryna","Hi Nadia,
+
+One small ask: a name is enough, no pitch needed from your side. The scan itself is two guided photos.
+
+Kateryna"
+Paulo,Almança,https://linkedin.com/in/paulo-almança-4bb7026a,Grupo 5S,Head de Finanças,,,"Hi Paulo,
+
+Quick thought from your finance and operations path, with Vale before Grupo 5S. The group develops and makes nutraceutical products and also sells franchise brands.
+
+Who runs operations for the franchise brands?
+
+My own work is a two-photo scan that yields 80+ body measurements, in under 45 seconds from the photos to structured results. I am only asking to reach the right person.
+
+Kateryna","Hi Paulo,
+
+One more short line. The scan is white-label with nothing to ship, which keeps it light for an operations team.
+
+Who would be the right person to hear about it? A short call also works: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Luis,Gonzalez,https://linkedin.com/in/luis-gonzalez-57911b,Vidalink,CEO and co-founder,,,"Hi Luis,
+
+Noticed you helped establish BCG's first office in Brazil before co-founding Vidalink. Bem-estar 360º brings personalised meal plans and an activity app into one benefit.
+
+An app can also ask a person for a guided two-photo scan. It returns 80+ body measurements and a 3D model, white-label through API or SDK, with nothing to ship.
+
+Would an optional body record for employees fit Bem-estar 360º, next to the meal plans and the activity app?
+
+Kateryna","Hi Luis,
+
+A body record the member captures at home is timestamped, and the nutrition team compares the scans it selects.
+
+Worth 15 minutes to walk through it? https://meetings.hubspot.com/kateryna-boichuk
+
+Reading: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Kateryna"
+Renata,Tavolaro,https://linkedin.com/in/renatatavolaro,OrienteMe,Head de Psicologia,,,"Hi Renata,
+
+Quick note, with one short question. As head of psychology at orienteme, you may know who looks after the physical side of the app's orientation by video, text or audio.
+
+It is a two-photo scan, guided on the phone, with 80+ body measurements as the result.
+
+Who on the nutrition and physical side would look at a new body-measurement tool?
+
+Kateryna","Hi Renata,
+
+Thank you for reading. A name or a team is all I would need.
+
+Kateryna"
+Eliane,Simeão,https://linkedin.com/in/eliane-simeão-96a330,Vidalink,Diretora de Operações,,,"Hi Eliane,
+
+Noticed your path through HSBC and Itaú Unibanco before Vidalink. The Vidalink app brings its benefits into one place.
+
+A guided scan from two photos adds one optional step. It returns 80+ body measurements in under 45 seconds from the photos to structured results.
+
+Where in the Vidalink app would an optional guided scan sit least in the way of what employees come for?
+
+Kateryna","Hi Eliane,
+
+On volume: 112,100 scans in 2025 across all 3DLOOK customers.
+
+Operations would carry no hardware and no shipping. I can show the capture flow in a demo: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Paola Cristina,Giraldo Osorio,https://linkedin.com/in/paola-cristina-giraldo-osorio-01596330,holadr. IPS,Chief Executive Officer,,,"Hi Paola,
+
+Noticed your background in innovation at Connect Bogotá Región, now leading holaDr. holadr. IPS offers interactive telemedicine across specialities, with nutrition and occupational medicine among them.
+
+Would a home body record help holaDr's nutrition and occupational-medicine consults?
+
+From two guided photos the clinician gets 80+ body measurements in under 45 seconds from the photos to structured results.
+
+Kateryna","Hi Paola,
+
+Short addition. The patient takes the scan on their own phone before the consult, and BMI is calculated from height and weight.
+
+112,100 scans in 2025 across all 3DLOOK customers.
+
+Worth 15 minutes? https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Cesar,Nobre,https://linkedin.com/in/cesarnobrefilho,Nilo Saúde,Chief Technology Officer,,,"Hi Cesar,
+
+Noticed your engineering leadership at will bank before Nilo Saúde. Nilo exposes HL7 FHIR APIs and integration with an institution's own app.
+
+FitXpress has a REST API with API-key authentication, along with web and mobile SDKs. Two photos return 80+ body measurements as structured data.
+
+Where would structured scan outputs from an API land in Nilo's FHIR-based data model?
+
+Kateryna","Hi Cesar,
+
+A typical basic integration takes 2-4 weeks. Outputs are stored and deletable by scan ID.
+
+Technical FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Happy to walk an engineer through it: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Jorge,Sousa,https://linkedin.com/in/jorge-sousa-069b82,Vidalink,COO,,,"Hi Jorge,
+
+Vidalink combines humanisation and technology in a new generation of integrated benefits. That mix is why I am writing to operations.
+
+FitXpress adds a guided body scan to an app: two photos in, 80+ body measurements out. Nothing is shipped or stocked, and the capture follows the same guided sequence every time.
+
+What would operations need in place to offer an optional scan in the Vidalink app, with nothing shipped to employees?
+
+Kateryna","Hi Jorge,
+
+One SDK serves every client company on the platform, and the capture runs under 45 seconds from the photos to structured results.
+
+Could we take 20 minutes? Choose a time: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Adriana,Bottoni,https://linkedin.com/in/adriana-bottoni-0a606131,SPDM,Diretora Técnica,,,"Hi Adriana,
+
+Noticed your background as technical director at AME Idoso Oeste, with A.C.Camargo Cancer Center before. SPDM is a philanthropic association working from primary to tertiary care.
+
+Who at SPDM looks at digital tools for outpatient care?
+
+We built a guided two-photo scan: 80+ body measurements in under 45 seconds from the photos to structured results. I am only asking whom to approach.
+
+Kateryna","Hi Adriana,
+
+One more detail. The patient completes a guided sequence on their phone, and the doctor receives measurements and estimates to use at their discretion.
+
+112,100 scans in 2025 across all 3DLOOK customers.
+
+Whoever looks at such tools, a pointer would help: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Flavio,Svaiter,https://linkedin.com/in/flaviosvaiter,Telecárdio,Diretor Financeiro,,,"Hi Flavio,
+
+You run finance at Telecárdio, whose remote reports include spirometry and visual acuity.
+
+We make a two-photo guided scan with 80+ body measurements as its output.
+
+Who should hear a partnership idea at Telecárdio: the CEOs or commercial?
+
+Kateryna","Hi Flavio,
+
+A one-line pointer would be plenty. The idea is a partner capability: two photos, structured results, nothing for Telecárdio to build.
+
+Kateryna"
+Alessi,Soncini,https://linkedin.com/in/alessisoncini,OrienteMe,CTO at orienteme,,,"Hi Alessi,
+
+Curious about your take. Your headline reads ""AI in practice: less hype, more results"", and the orienteme app is where that meets members.
+
+We offer a REST API with API-key authentication, along with web and mobile SDKs. The camera capture is two guided photos, and each scan returns 80+ body measurements.
+
+What would you want to see in an SDK's documentation before adding a camera capture to the orienteme app?
+
+Kateryna","Hi Alessi,
+
+Timeline first: a typical basic integration takes 2-4 weeks. Photos are deleted after processing or within 30 days, and outputs are stored and deletable by scan ID.
+
+FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+If it is easier to talk it through: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Fernando,P.,https://linkedin.com/in/fernando-palma,L2D Saúde Digital,Head de Tecnologia e Processos,,,"Hi Fernando,
+
+Noticed your background in redesigning processes and rolling out technology. Your headline reads Technology Director, Healthtech.
+
+We offer a REST API with API-key authentication, along with web and mobile SDKs. Two photos go in, and 80+ body measurements come back in under 45 seconds from the photos to structured results.
+
+Since L2D builds its own teleconsultation platform, would an SDK inside it be straightforward?
+
+Kateryna","Hi Fernando,
+
+For the build side: a typical basic integration takes 2-4 weeks. Photos are deleted after processing or within 30 days, and outputs are stored and deletable by scan ID.
+
+Data handling is covered here: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+If a call helps, grab a slot: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Marcelo,Lapa Espiga,https://linkedin.com/in/marceloespiga,Telecárdio,Co-CEO,,,"Hi Marcelo,
+
+As Co-CEO of Telecárdio you oversee remote reports that cover ECG and Holter, among others.
+
+Separately, we make a body scan that runs on a patient's phone: two photos in, 80+ body measurements out.
+
+Is a partnership on remote body measurement something the Co-CEOs would weigh, or a clear no?
+
+Kateryna","Hi Marcelo,
+
+Either answer is fine with me. If it is a maybe, a 15-minute call would settle it: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Adriano,Oliveira,https://linkedin.com/in/adrianooliveira2025,GnTech,Technical Lead,,,"Hi Adriano,
+
+Came across your work in Python, Django and REST API integration at GnTech.
+
+Who owns GnTech's digital products?
+
+Through the REST API, two photos go in and 80+ body measurements come back in under 45 seconds from the photos to structured results. I would just like to be pointed to the right person.
+
+Kateryna","Hi Adriano,
+
+A short addition, in case it is useful. The scan is also available through web and mobile SDKs, and nothing is shipped.
+
+Who would be the right person to talk to about it at GnTech? A call works too: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Ricardo,Perales Aravena,https://linkedin.com/in/ricardo-perales-aravena-1b973236,Saluta,Director Comercial,,,"Hi Ricardo,
+
+Quick one, after reading about your time as director at Hospital de Parral and now Saluta's commercial side. Saluta delivers mental-health education through an app.
+
+The scan we make needs two photos and gives back 80+ body measurements.
+
+Who looks at partnership proposals at Saluta?
+
+Kateryna","Hi Ricardo,
+
+Just a pointer would help: the person or team who reviews proposals like this one. Two photos in, 80+ body measurements out.
+
+Kateryna"
+Alessandro,Dourado da Silva,https://linkedin.com/in/adouradosilva,Vidalink,Senior Manager Sales Business Development,,,"Hi Alessandro,
+
+Noticed your ""I'm Vidalinker"" headline. Smaller companies have their own Vidalink plan.
+
+We built a guided two-photo scan that an app can offer: 80+ body measurements in under 45 seconds from the photos to structured results.
+
+Who on the product side looks at new features for the employee app?
+
+Kateryna","Hi Alessandro,
+
+The scan is optional for the employee and lives inside the app. A pointer to the product owner is all I am after.
+
+Kateryna"
+Andreza,Zatorre Pereira,https://linkedin.com/in/andreza-zatorre-pereira-4a642b8,Pró-Corpo,Consultora de Estética PL,,,"Hi Andreza,
+
+Noticed your background: dermato-functional physiotherapy, Corporal Shape before, and now Pró-Corpo, where body treatments include lymphatic drainage.
+
+FitXpress gives an evaluation team 80+ body measurements from two guided photos a client takes on her phone.
+
+Who at Pró-Corpo decides which tools the evaluation team uses?
+
+Kateryna","Hi Andreza,
+
+If you can point me to the right person, I will send a short overview. Two photos, taken on the client's phone.
+
+Kateryna"
+Lucas,Lau,https://linkedin.com/in/lucasllau,GESmed,Líder de Processo e Tecnologia de Gestão,,,"Hi Lucas,
+
+Quick idea for you, given Falconi before and process and technology now at GESmed, which has worked from Belo Horizonte since 2014.
+
+FitXpress needs nothing shipped, stocked or supported, and one SDK serves every client company. A scan takes under 45 seconds from the photos to structured results.
+
+What would process and technology want proven before a new capture went into AppGES?
+
+Open to a quick chat?
+
+Kateryna","Hi Lucas,
+
+For process owners, the guided sequence is the point: the same two photos and the same steps for every member. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+Happy to show the flow in 15 min: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+María Alejandra,Silva Castro,https://linkedin.com/in/maría-alejandra-silva-castro-683a739,Saluta,Directora,,,"Hi María Alejandra,
+
+Wanted to reach out: IntegraMédica before, now director at Saluta, which offers telemedicine and telepsychiatry.
+
+Our capability is small and specific: a guided two-photo scan returning 80+ body measurements in under 45 seconds from the photos to structured results.
+
+Is physical health ever part of Saluta's programmes, or strictly mental health?
+
+Kateryna","Hi María Alejandra,
+
+An honest answer either way helps. If physical health is on any roadmap, a partner capability could run inside the Saluta app with nothing to build.
+
+Here is a slot to talk: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Andrea,Lardani,https://linkedin.com/in/andrea-lardani-18a309a,Grupo Wellness Latina,Director and Co-founder,,,"Hi Andrea,
+
+Noticed your background: a long EAP career and a seat on the EAPA Communications Advisory Panel.
+
+Grupo Wellness Latina runs habit-change coaching across psychological and physical areas. FitXpress is a guided two-photo scan that returns 80+ body measurements.
+
+In those coaching programmes, could a body record ever help, or is that outside an EAP's scope?
+
+Who would decide?
+
+Kateryna","Hi Andrea,
+
+The only ask is whether a partner capability has any place beside your coaching. The member would use their own phone and two photos.
+
+A clear no is useful too. If it is worth a conversation: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Paulo,Gonçalves,https://linkedin.com/in/paulo-gonçalves-64364242,Vidalink,Head de Controladoria e Finanças,,,"Hi Paulo,
+
+Noticed your earlier finance roles at NotreDame Intermédica and Affix Administradora de Benefícios. Vidalink's range also reaches smaller companies.
+
+The scan itself is two phone photos and 80+ body measurements.
+
+Who would sponsor a small pilot of a new app capability: product or operations?
+
+Kateryna","Hi Paulo,
+
+A pilot can stay small because the capture sits inside the existing app. Scans take under 45 seconds from the photos to structured results.
+
+Whichever team fits, I am glad to follow your lead.
+
+Kateryna"
+Fernando,Vilela,https://linkedin.com/in/fernando-vilela-28932611,Liti,Co-Founder,,,"Hi Fernando,
+
+Noticed your path from CMO at Rappi to co-founding Liti. ""Seu companheiro diário para emagrecer"" is a line that suits an app people open every day.
+
+We built a guided two-photo scan that a programme's app can ask for at home. It returns 80+ body measurements and a 3D model in under 45 seconds from the photos to structured results.
+
+Would a guided two-photo capture have a place in the Liti app's daily routine?
+
+Kateryna","Hi Fernando,
+
+One way this could sit in Liti: a member takes two photos at home, and the care team receives a standardized, timestamped body record.
+
+One weight-management platform ran 34,000 scans in 2025.
+
+Background on the market: https://3dlook.ai/content-hub/glp-1-market/
+
+Open to 15 minutes? https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Rafael,Alves Martins,https://linkedin.com/in/rafaelalves,Nilo Saúde,Head of Product,,,"Hi Rafael,
+
+Got me thinking: your teaching at Hospital Sírio-Libanês and a product built around patients on WhatsApp or video, with no app to download.
+
+A tap on the link starts a guided scan, and two photos yield 80+ body measurements.
+
+With patients on WhatsApp and no app to download, would a web capture link fit Nilo Saúde's journeys?
+
+Kateryna","Hi Rafael,
+
+The web SDK runs in the browser, which suits chat-led journeys. 112,100 scans in 2025 across all 3DLOOK customers.
+
+Grab a slot if a demo helps: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Sonia Maria,Figueiredo,https://linkedin.com/in/sonia-maria-figueiredo-82968a14,TELUS Health Brazil,Consultora e Palestrante,,,"Hi Sonia,
+
+Quick note: neuropsychologist and speaker on health and wellbeing, now consulting at CARE by TELUS Health.
+
+FitXpress turns two guided phone photos into 80+ body measurements.
+
+Who runs the health-coaching programmes at TELUS Health Brazil?
+
+Kateryna","Hi Sonia,
+
+A short reply with a name would be enough. The idea is a phone scan from two photos.
+
+Kateryna"
+Luciana,Ito,https://linkedin.com/in/luciana-ito-52402816,Atrys Brasil,Gerente de relacionamento com o cliente,,,"Hi Luciana,
+
+Caught my eye: Tempo Assist before, now client relationships at Atrys Brasil, where population health programmes are built for health plan operators.
+
+We built FitXpress, a guided two-photo scan inside an app that returns 80+ body measurements.
+
+Who decides which tools reach members in the programmes operators buy?
+
+Kateryna","Hi Luciana,
+
+One line on the idea: a guided two-photo scan inside an app, returning a timestamped record of 80+ body measurements for the care team.
+
+If someone else owns this at Atrys Brasil, a name is all I need.
+
+Kateryna"
+ligia antunes,pinto ferreira,https://linkedin.com/in/ligia-antunes-pinto-ferreira-276a4b46,TELUS Health Brazil,Director of Operation TELUS Health Brazil,,,"Hi Ligia,
+
+Noticed your background: EAP operations at Chestnut Global Partners and MindSolutions, now operations at TELUS Health Brazil, whose programmes include health coaching and physical-activity coaching.
+
+FitXpress is a guided two-photo scan that returns 80+ body measurements and body composition estimates, offered through an API or SDK.
+
+Would a phone body record be useful in physical-activity coaching, as a partner capability?
+
+Who would decide?
+
+Kateryna","Hi Ligia,
+
+The ask is only whether a partner capability has any place in the coaching programmes. The member needs a phone and two photos.
+
+A no is welcome. To talk it through: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Martín Lucas,Golini,https://linkedin.com/in/martingolini,Llamando al Doctor,Chief Technology Officer,,,"Hi Martín,
+
+Had a thought, given Bricks before and now CTO at Llamando al Doctor, where video consultations run 24 hours a day.
+
+FitXpress offers a REST API with API-key authentication, along with web and mobile SDKs. Photos are deleted after processing or within 30 days, and outputs are deletable by scan ID.
+
+A scan takes two photos and returns 80+ body measurements.
+
+Would a web SDK work inside both the Llamando al Doctor app and the web platform?
+
+Kateryna","Hi Martín,
+
+A typical basic integration takes 2-4 weeks. The FAQ on data handling is here: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Happy to go through the SDK with you: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Ángeles,Dubini,https://linkedin.com/in/ángeles-dubini-50011417,Grupo Wellness Latina,Senior Account Manager,,,"Hi Ángeles,
+
+Wanted to reach out: Grupo Wellness Latina offers employee assistance across Latin America.
+
+FitXpress takes two guided photos from a phone and returns 80+ body measurements.
+
+Who designs the wellness programmes Grupo Wellness Latina offers companies?
+
+Kateryna","Hi Ángeles,
+
+A pointer to the right person would help most. Whoever owns programme design could hear the idea in a short note.
+
+Kateryna"
+Graziela Heusser,Azeredo,https://linkedin.com/in/grazielaheusserazeredo,Zínea,Membro do conselho consultivo,,,"Hi Graziela,
+
+Quick note for a member of Zínea's advisory board with an executive background. The PGSM programme covers mental-health management at work.
+
+Who at Zínea would be the right person for a partnership question?
+
+The question concerns a phone scan that returns 80+ body measurements from two photos, in under 45 seconds from the photos to structured results. A short pointer is plenty.
+
+Kateryna","Hi Graziela,
+
+A brief addition. The question is only whether a partner capability from us has any place at Zínea, and a no is a fine answer.
+
+112,100 scans in 2025 across all 3DLOOK customers.
+
+If you can point me to the right person, I would be grateful: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Rodrigo Casale,Abe,https://linkedin.com/in/rodrigocasaleabe,Liti,CFO,,,"Hi Rodrigo,
+
+Spotted something in your background at BCG and Creditas, now as CFO of Liti. Liti was founded by a nutrologist and sports doctor together with a former Rappi executive.
+
+Our scan is two guided photos, and it returns 80+ body measurements with a 3D model.
+
+Who owns the Liti app roadmap?
+
+Kateryna","Hi Rodrigo,
+
+In case it helps with routing: the scan takes two photos and returns 80+ body measurements along with a 3D model. A name or a team is all I need.
+
+Kateryna"
+Isabelle,Ferraz,https://linkedin.com/in/belleferraz,iMND,Chief Financial Officer,,,"Hi Isabelle,
+
+Noticed your background in capital markets, including Santander, before becoming a partner at iMND. iMND runs follow-up programmes for physical and mental health.
+
+Who leads the physical-health programmes?
+
+For context, 3DLOOK has a guided two-photo scan that returns 80+ body measurements in under 45 seconds from the photos to structured results, for the member and the care team. I would only like to find the right person.
+
+Kateryna","Hi Isabelle,
+
+A short addition. The scan is white-label, through API or SDK, with nothing to ship.
+
+112,100 scans in 2025 across all 3DLOOK customers.
+
+If the physical-health lead is the right contact, a pointer would be welcome: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Karen,Ribeiro,https://linkedin.com/in/karenkleinribeiro,Vidalink,Gerente operacional,,,"Hi Karen,
+
+Your implementation work at Vidalink, after Mondial Assistance Brasil, made me curious. Bem-estar 360º folds mental-health content into the same benefit.
+
+FitXpress is an SDK that adds a two-photo capture to the app and returns 80+ body measurements.
+
+Would an SDK inside the Vidalink app change anything in how Bem-estar 360º is rolled out at a new client company?
+
+Kateryna","Hi Karen,
+
+Rollout stays light because the scan lives inside the app, and the capture takes under 45 seconds from the photos to structured results.
+
+Fifteen minutes to see it? https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Anderson,Baldissera,https://linkedin.com/in/anderson-baldissera-b8446850,Zínea,Co-Founder & CTO,,,"Hi Anderson,
+
+Noticed your background as a full-stack developer in Java and Node.js, now leading technology at Zínea. Zínea manages mental health at work through its programme, the PGSM.
+
+Would Zínea ever pair its programme with physical-health data, or keep it strictly mental health?
+
+In one line, a front and a side photo become 80+ body measurements in under 45 seconds from the photos to structured results. Either answer is fine.
+
+Kateryna","Hi Anderson,
+
+A short addition, with no pitch. If a partner capability on the physical side ever had a place next to the PGSM, it would be a white-label SDK or API.
+
+Who would decide? Fifteen minutes if useful: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Natalia,Dezerega Molina,https://linkedin.com/in/natalia-dezerega-molina,Céntriqo,Chief of Staff,,,"Hi Natalia,
+
+Quick thought, since your work is coordinating projects across teams. Céntriqo has a day hospital and imaging under the same roof in Quito, which means intake touches several teams.
+
+Who decides on new patient-intake tools there?
+
+Briefly, 3DLOOK built a phone capture that needs only two photos, and its output is 80+ body measurements in under 45 seconds from the photos to structured results.
+
+Kateryna","Hi Natalia,
+
+The practical side, in a few words. The capture runs from a link or an SDK, takes two photos and returns a standardized, timestamped body record, with nothing to install.
+
+If it belongs with a specific team, a pointer would be welcome: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Viviana,Salazar,https://linkedin.com/in/viviana-salazar-8a4b984b,Llamando al Doctor,"CFO_Director de Administración, Finanzas y RRHH",,,"Hi Viviana,
+
+Quick note: Telecentro before, now finance and administration at Llamando al Doctor, which offers telemedicine for travel assistance.
+
+A doctor or care team gets 80+ body measurements from two photos the patient takes on a phone.
+
+Who would look at a partner capability for the app: the CEO or the medical team?
+
+Kateryna","Hi Viviana,
+
+A name is all I need. It is an idea about two photos and 80+ body measurements ahead of a video consult.
+
+Kateryna"
+Lívia,Sales,https://linkedin.com/in/lívia-sales-bb25a920,Siluets,Diretora Presidente,,,"Hi Lívia,
+
+Quick note: micropigmentation is your craft, and Siluets is an aesthetic network born in Brazil.
+
+A client sends two photos from her phone with FitXpress, and 80+ body measurements come back.
+
+Who at the franchisor handles partnerships with technology companies?
+
+Kateryna","Hi Lívia,
+
+A name is all I need. It is a short idea about a phone scan before an evaluation.
+
+Kateryna"
+Mirian Maria Marques,Pinheiro,https://linkedin.com/in/mirian-maria,Salvia Saúde Corporativa,CEO,,,"Hi Mirian,
+
+Noticed your background: operations, clinical engineering and quality at Vision One, and now Salvia Saúde Corporativa, with telenutrition in the Salvia app.
+
+FitXpress is a guided two-photo scan that returns 80+ body measurements and body composition estimates, white-label through an API or SDK.
+
+Would a guided body scan in the Salvia app support the nutrition programme between telenutrition consults?
+
+Might be worth a quick chat?
+
+Kateryna","Hi Mirian,
+
+For a nutritionist between consults, a timestamped record from two photos taken at home, with scans she selects compared side by side.
+
+112,100 scans in 2025 across all 3DLOOK customers.
+
+Worth 15 min? https://meetings.hubspot.com/kateryna-boichuk
+
+Overview: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Kateryna"
+Fernanda,Maluf,https://linkedin.com/in/fernanda-maluf-56179750,OrienteMe,Co-Founder,,,"Hi Fernanda,
+
+Noticed your background, from Heidrick & Struggles to co-founding orienteme. The app has guided content trails, sedentary habits among them.
+
+A guided two-photo scan returns 80+ body measurements and a 3D model in under 45 seconds from the photos to structured results.
+
+Could a body record be part of a trail on sedentary habits that the member chooses to start?
+
+Kateryna","Hi Fernanda,
+
+Here is what this means for orienteme. A member who starts a trail captures their own body record in two photos and decides what to do with it.
+
+Background reading: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Open to 15 minutes? https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Rodolfo,Stangherlin,https://linkedin.com/in/rodolfostangherlin,Nilo Saúde,Staff Software Engineer,,,"Hi Rodolfo,
+
+Quick idea after seeing your Geekie background and your TypeScript/React work. Nilo Saúde cares for patients on WhatsApp or video, with no app to download.
+
+FitXpress offers web and mobile SDKs. The capture is a guided two-photo sequence that returns 80+ body measurements.
+
+Would a web SDK suit Nilo Saúde's front end better than a native mobile one?
+
+Kateryna","Hi Rodolfo,
+
+The web SDK opens the camera from a link, and the app side only receives the structured result. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Demo slot: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Thiara,Amanda Corrêa de Almeida,https://linkedin.com/in/thiara-almeida,GESmed,Líder de Tecnologia e Processo de Saúde,,,"Hi Thiara,
+
+Got me thinking: at GESmed you standardize the Modelo GES and its tools, and AppGES gives each member a reference nurse.
+
+FitXpress is a guided phone capture, white-label, with nothing to install. It returns 80+ body measurements in under 45 seconds from the photos to structured results.
+
+Would a guided phone capture fit the tools reference nurses use in AppGES?
+
+Worth a quick look?
+
+Kateryna","Hi Thiara,
+
+Standardization is why the capture is guided: every scan follows the same steps, and the scans a nurse selects can be compared.
+
+Grab a slot to see it: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Edson Ferreira Augusto,Corrêa,https://linkedin.com/in/edson-f-a-correa,Vidalink,Senior Product Manager | AI & Intelligent Systems,,,"Hi Edson,
+
+Quick thought after seeing your years as Group Product Manager at Laborit. Vidalink describes its benefits as covering mental and physical wellbeing in one app.
+
+The app could ask for a guided scan from two photos. It returns 80+ body measurements and body composition estimates in under 45 seconds from the photos to structured results.
+
+Would structured body measurements be useful input for the AI work in the Vidalink app?
+
+Kateryna","Hi Edson,
+
+Each scan arrives structured and timestamped, keyed to a scan ID. One weight-management platform ran 34,000 scans in 2025.
+
+A short demo is easy to book here: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Tiago,Soares,https://linkedin.com/in/tiago-soares,Vidalink,Tech Lead,,,"Hi Tiago,
+
+Quick idea given your background at HPE do Brasil. Vidalink offers a new generation of integrated benefits.
+
+FitXpress ships web and mobile SDKs for the capture, with a REST API behind them. A two-photo capture comes back with 80+ body measurements.
+
+What would engineering require of a two-photo capture SDK, such as size and permissions, before it shipped in the Vidalink app?
+
+Kateryna","Hi Tiago,
+
+Photos are deleted after processing or within 30 days.
+
+Our FAQ for engineering teams: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Technical walkthrough, if useful: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Guillermo,Gonzalez,https://linkedin.com/in/guillermo-gonzalez-33898721,Llamando al Doctor,Chief Executive Officer,,,"Hi Guillermo,
+
+Noticed your background: Swiss Medical Group before leading Llamando al Doctor, which serves several regions in more than one language.
+
+FitXpress is a guided two-photo scan that returns 80+ body measurements and body composition estimates a doctor may use. It does not triage or replace an examination.
+
+Would a body record from the phone be useful in any of the countries Llamando al Doctor serves?
+
+Open to a quick chat?
+
+Kateryna","Hi Guillermo,
+
+In a 24-hour video service, the capture happens before the call: two photos on the patient's phone, then 80+ body measurements in under 45 seconds from the photos to structured results.
+
+Worth 15 min? https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Flaminio,Dalul,https://linkedin.com/in/flaminio-dalul-b7aa4124,Siluets,Sócio proprietário,,,"Hi Flaminio,
+
+Wanted to reach out: LHD before, now a partner at Siluets Franchising, which by its own description is the first franchise to combine IPL hair removal with body treatments and weight loss.
+
+FitXpress is a guided two-photo scan that returns 80+ body measurements.
+
+Who at Siluets Franchising supports units with new client tools?
+
+Kateryna","Hi Flaminio,
+
+Pointing me to the right desk would be plenty. Two photos, 80+ body measurements, taken on the client's phone.
+
+Kateryna"
+Iasmini,Gomes,https://linkedin.com/in/iasmini-gomes,Nilo Saúde,Senior Software Engineer (L5) – Backend Python,,,"Hi Iasmini,
+
+Noticed your Python backend path from SiLex Sistemas to Nilo. Patient portfolios at Nilo Saúde carry both operational and clinical indicators.
+
+FitXpress is a REST API with API-key authentication. A scan from two photos returns 80+ body measurements.
+
+What would the backend need from a scan API first: authentication, or deletion by scan ID?
+
+Kateryna","Hi Iasmini,
+
+Both are covered: API-key authentication on requests and deletion of outputs by scan ID. Photos are removed after processing or within 30 days.
+
+Docs-level FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Slot for a walkthrough: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Bruno,Silva,https://linkedin.com/in/bruno-silva-25123858,Liti,CTO,,,"Hi Bruno,
+
+Got me thinking about your path from Director of Engineering at Betterfly to CTO at Liti, which a nutrologist and sports doctor founded with a former Rappi executive.
+
+We offer a REST API with API-key authentication, along with web and mobile SDKs. Two photos go in, and 80+ body measurements come back in under 45 seconds from the photos to structured results.
+
+Would a camera SDK raise any permission or app-size concerns for the Liti app?
+
+Kateryna","Hi Bruno,
+
+On timing: a typical basic integration takes 2-4 weeks.
+
+Photos are deleted after processing or within 30 days. The FAQ covers data handling: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Happy to go through the details on a call: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Aline,Dos Santos,https://linkedin.com/in/alinesantos-negociacao,Vidalink,Líder de Negociações de contratos,,,"Hi Aline,
+
+Noticed your procurement background at LongPing High-Tech before contract negotiations at Vidalink. Technology is part of how Vidalink describes its benefits.
+
+FitXpress is a two-photo body scan that an app can embed, returning 80+ body measurements.
+
+Who runs onboarding when a new technology partner joins the app?
+
+Kateryna","Hi Aline,
+
+Whoever runs onboarding would see a short story: an SDK and two photos, with the scan finished in under 45 seconds from the photos to structured results.
+
+An intro by email is just as good.
+
+Kateryna"
+Paula,Pedrassani Boabaid May,https://linkedin.com/in/paula-pedrassani-boabaid-may-81255828,GnTech,Vice Presidente e Diretora Comercial,,,"Hi Paula,
+
+Noticed your background, from law at Unimed Grande Florianópolis to founding GnTech. GnTech offers pharmacogenetic testing for personalised health, which is why I am writing.
+
+Does GnTech partner with other personalised-health services, and who would decide?
+
+Worth knowing: a body scan from two photos gives 80+ body measurements, in under 45 seconds from the photos to structured results. No pitch, and a no is a fine answer.
+
+Kateryna","Hi Paula,
+
+One more line, with nothing attached. If a body-measurement capability from a partner ever had a place in GnTech's offer, the scan is white-label and ships nothing.
+
+I would value 15 minutes to hear who would decide: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Tiago,Vieira,https://linkedin.com/in/tiagocvieira,Atrys Brasil,Diretor Executivo,,,"Hi Tiago,
+
+Noticed your focus on digitalization in health. Atrys Brasil runs prevention and care-coordination programmes for health plan operators.
+
+FitXpress is a guided two-photo scan that returns 80+ body measurements and body composition estimates, white-label inside an existing app, with nothing to ship.
+
+Where would a guided home body record fit those programmes?
+
+Open to a quick chat?
+
+Kateryna","Hi Tiago,
+
+For a care team, the useful part is a standardized, timestamped body record, with scans the programme selects compared side by side. A scan takes under 45 seconds from the photos to structured results.
+
+Worth 15 min? Grab a slot: https://meetings.hubspot.com/kateryna-boichuk
+
+A short read on body data in wellness platforms: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Kateryna"
+Ricardo,Gordillo,https://linkedin.com/in/ricardo-gordillo,Llamando al Doctor,Chief Operating Officer,,,"Hi Ricardo,
+
+Quick thought, given the Presidential Medical Unit before and operations now at Llamando al Doctor, which offers immediate video consultations 24 hours a day.
+
+FitXpress adds an optional guided capture with nothing shipped, stocked or supported, and it follows the same sequence every time. A scan takes under 45 seconds from the photos to structured results.
+
+In a 24-hour video consult, when would a doctor want BMI or waist before the call, if ever?
+
+Kateryna","Hi Ricardo,
+
+The doctor may use the measurements and estimates. An in-person examination stays with the doctor.
+
+Two photos, 80+ body measurements. A quick call if useful: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Filipe,Firmino,https://linkedin.com/in/filipe-firmino-0787835b,Nilo Saúde,Coordenador de experiencia do cliente,,,"Hi Filipe,
+
+Your customer success background at Rabbot caught my eye. Nilo Saúde runs care lines for chronic and oncology patients.
+
+FitXpress asks a patient for two guided photos on a phone, and nothing ships to the care team. A patient's results include 80+ body measurements for the team.
+
+What do care teams ask CX for first when a new feature reaches their patients?
+
+Kateryna","Hi Filipe,
+
+The care team gets a scan record in under 45 seconds from the photos to structured results, and CX has little to configure.
+
+Open to a call? Pick a time here: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+MARINA,MICHAELSEN DERIGGI,https://linkedin.com/in/marina-michaelsen-deriggi-a910ba30,Magrass,Sócia proprietária da Magrass Montenegro,,,"Hi Marina,
+
+Noticed your background at Seara before Magrass Montenegro. Magrass Club offers meal logging and recipes written by Magrass nutritionists.
+
+FitXpress is a guided two-photo scan that a client takes at home inside an app. It returns 80+ body measurements.
+
+Who at the franchisor decides what goes into Magrass Club?
+
+Kateryna","Hi Marina,
+
+One more thought on Magrass Club. The scan takes under 45 seconds from the photos to structured results, and each record is timestamped.
+
+A name at the franchisor is all I need.
+
+Kateryna"
+William,Bin Falinski,https://linkedin.com/in/williamfalinski,Wellbe,Tech Lead,,,"Hi William,
+
+Had a thought, given your data engineering at Wellbe, where online programmes cover chronic conditions.
+
+FitXpress is a REST API with API-key authentication. Outputs come back keyed to a scan ID and are deletable by it, and photos are deleted after processing or within 30 days.
+
+Behind it, two photos return 80+ body measurements as a structured record.
+
+What would engineering want from a body-scan API before a member-facing pilot?
+
+Kateryna","Hi William,
+
+A typical basic integration takes 2-4 weeks. The FAQ on data handling: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Happy to walk through the API: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Sandra,Geres Alves Panza,https://linkedin.com/in/sandra-geres-alves-panza-89323611a,Magrass,Diretora,,,"Hi Sandra,
+
+Quick note after seeing your faculty role at Unicesumar next to directing Magrass Maringá. Magrass protocols combine body and facial aesthetics with genetic science.
+
+We built a guided two-photo scan with 80+ body measurements that clients take at home.
+
+Does HQ test new methods in a few pilot units first, and who chooses them?
+
+Kateryna","Hi Sandra,
+
+112,100 scans in 2025 across all 3DLOOK customers.
+
+If pilots exist, a pointer to whoever picks the units would help.
+
+Kateryna"
+Marcio,Jorge Pinho Deriggi,https://linkedin.com/in/marcio-jorge-pinho-deriggi-57b2a1121,Magrass,Sócio proprietário,,,"Hi Marcio,
+
+Your years at JBS before Magrass Montenegro caught my eye. Every Magrass unit is a franchise, so I am trying to find the right door.
+
+We build a guided two-photo body scan that returns 80+ body measurements in under 45 seconds from the photos to structured results.
+
+Does a new tool for the units reach the franchisor through operations or through franchisee support?
+
+Kateryna","Hi Marcio,
+
+A brief addition: the scan runs inside an app, with nothing installed or stocked at the unit.
+
+Whichever door is the right one, I would be grateful for the pointer.
+
+Kateryna"
+Martin,Samaniego,https://linkedin.com/in/martin-samaniego-reliv,Céntriqo,CEO Céntriqo,,,"Hi Martin,
+
+Got me thinking about Céntriqo, where scheduled specialist care comes together in one place in Quito. Your focus on digital transformation in healthcare adds to the question.
+
+Would a body record patients take at home before a specialist consultation fit Céntriqo's scheduled care?
+
+Before the visit a patient completes a guided scan at home, and the specialist sees 80+ body measurements in under 45 seconds from the photos to structured results.
+
+Kateryna","Hi Martin,
+
+Short addition from our side. Patients take the scan on their own phone before the visit, and the specialist receives a standardized, timestamped body record to review.
+
+A short call is open if useful: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Milton,Ávila,https://linkedin.com/in/milton-ávila-1ab0a7a9,Sensorial,CEO & Founder,,,"Hi Milton,
+
+Came across your work: a PhD in neuroscience, and now Sensorial, building technology for health and cognitive performance.
+
+FitXpress is a guided two-photo scan that returns 80+ body measurements and body composition estimates, offered through an API or SDK.
+
+In sports-performance work, do Sensorial's clients ever combine cognitive and body data?
+
+Who would decide on a partner capability?
+
+Kateryna","Hi Milton,
+
+The question is whether a partner capability has any place in what Sensorial offers. Two photos and a phone are all it needs.
+
+A no is a fine answer. If it is worth discussing: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Amanda,Micaela Alves,https://linkedin.com/in/amanda-micaela-alves-9ba45777,Telecárdio,"Executiva Comercial Sênior / Executiva de Contas Sênior,",,,"Hi Amanda,
+
+Noticed your headline on telediagnosis for clinics, hospitals and operators. Telecárdio's remote reports include EEG and blood-pressure monitoring.
+
+Our scan takes two guided photos and returns 80+ body measurements.
+
+Do clinics you serve ever ask about body measurements, and who at Telecárdio would hear that?
+
+Kateryna","Hi Amanda,
+
+Your view of what clinics ask for is the useful part. If the answer is yes, the scan would reach them inside their own app, in under 45 seconds from the photos to structured results.
+
+Kateryna"
+Maurício,Lima,https://linkedin.com/in/mauriciodl,OrienteMe,Head Comercial,,,"Hi Maurício,
+
+Quick one for a head of sales. The orienteme journey starts with the person taking the lead in their own life.
+
+Our guided scan starts from two photos, and the output is 80+ body measurements.
+
+Who owns the roadmap for the orienteme app?
+
+Kateryna","Hi Maurício,
+
+If it is easier to pass on: the scan takes two photos and returns 80+ body measurements in under 45 seconds from the photos to structured results. Just point me to the right person.
+
+Kateryna"
+Victor,Cavallari,https://linkedin.com/in/victor-cavallari-434a81ab,Sensorial,Sócio-Fundador,,,"Hi Victor,
+
+Quick one: sports psychologist before, now co-founder at Sensorial, which applies neuroscience to health and cognitive performance.
+
+FitXpress reads two guided photos from a phone and returns 80+ body measurements.
+
+Who at Sensorial handles partnerships in sports performance?
+
+Kateryna","Hi Victor,
+
+If a partnership owner exists, I would send a short overview, not a pitch deck. Two photos, structured body data.
+
+Kateryna"
+Maycon,Soligo,https://linkedin.com/in/maycon-soligo,Liti,Full Stack Engineer,,,"Hi Maycon,
+
+Caught my eye: full stack work at GrowthHackers before Liti, where the app is a daily companion for losing weight.
+
+Both the web SDK and the mobile SDKs wrap a guided two-photo capture. The result is 80+ body measurements in under 45 seconds from the photos to structured results.
+
+Would a web SDK or a native mobile SDK fit the Liti app better?
+
+Kateryna","Hi Maycon,
+
+On data flow: every scan returns structured results tied to a scan ID, and outputs can be deleted by that ID. Photo retention ends once processing is done, or 30 days later at most.
+
+The FAQ has the detail: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+A call would also work: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Sidnei,Salmaso ∴,https://linkedin.com/in/sidneisalmaso,Wellbe,Consultor de negócios sênior,,,"Hi Sidnei,
+
+Quick note: AdviceHealth before, now business consulting at Wellbe, whose online programmes cover chronic conditions.
+
+Two phone photos, 80+ body measurements: that is what FitXpress returns.
+
+Who owns Wellbe's programmes for chronic conditions?
+
+Kateryna","Hi Sidnei,
+
+If you know who that is, an introduction would help. It is a short idea about a phone body record.
+
+Kateryna"
+William,Weckl,https://linkedin.com/in/william-weckl,Liti,Staff Software Engineer,,,"Hi William,
+
+Quick note on your background in software architecture and system design. Liti's online team of doctors and nutritionists works with members through the app, which makes the capture flow an architecture question.
+
+Our SDK handles a guided two-photo capture, and the API returns 80+ body measurements in under 45 seconds from the photos to structured results.
+
+How much of the capture guidance would the app want to own, and how much would it leave to the SDK?
+
+Kateryna","Hi William,
+
+On capture ownership: the guided sequence is the same on every scan, which gives the app one flow to design around.
+
+FAQ on data handling: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Want to sketch it together? https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Arthur,Silva Da Ros,https://linkedin.com/in/arthur-silva-da-ros-94125bb2,Instituto GL,CFO,,,"Hi Arthur,
+
+Quick note. Instituto GL has a team of doctors and nutritionists trained by its founder, Dr. Gustavo de Oliveira Lima.
+
+Would Dr. Gustavo or the medical coordination be the right person for a conversation about body measurements between visits?
+
+We built a guided two-photo scan: 80+ body measurements in under 45 seconds from the photos to structured results, taken by the patient on the phone.
+
+Kateryna","Hi Arthur,
+
+One more detail that may help the right person decide. The scan is the same two photos each time, and one weight-management platform ran 34,000 scans in 2025.
+
+If a short call with the medical coordination makes sense, the calendar is here: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Lucas,Vieira Werner,https://linkedin.com/in/lucasvieirawerner,Wellbe,Co-founder & CTO,,,"Hi Lucas,
+
+Noticed your background: StillGood first, then Wellbe, which started in Curitiba as an app for wellbeing and now runs online programmes.
+
+FitXpress is a guided two-photo scan that returns 80+ body measurements and body composition estimates, white-label through an API or SDK.
+
+Where do Wellbe's online programmes meet the member today, and could a guided scan sit there?
+
+Open to a quick chat?
+
+Kateryna","Hi Lucas,
+
+In an online programme, a body record can be taken between sessions: two photos, a timestamped result the member and the care team can both see.
+
+112,100 scans in 2025 across all 3DLOOK customers.
+
+Worth 15 min? https://meetings.hubspot.com/kateryna-boichuk
+
+Overview: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Kateryna"
+Vitor,Honda,https://linkedin.com/in/vitor-honda,Nilo Saúde,Head de Business Analytics,,,"Hi Vitor,
+
+Noticed your Gympass background before leading business analytics at Nilo. Indicators for operations and clinical care run across Nilo Saúde's care lines.
+
+Separately, we built a guided two-photo scan that returns 80+ body measurements inside an app.
+
+Who owns the care-line indicators product?
+
+Kateryna","Hi Vitor,
+
+A pointer to the right person is all I am after. The scan is small: two photos from a phone.
+
+Kateryna"
+Rhúã Robson D´Cézares,Rodrigues de Oliveira das Chagas Netto,https://linkedin.com/in/rhúã-robson-d´cézares-rodrigues-de-oliveira-das-chagas-netto-b870758b,Magrass,Gerente geral,,,"Hi Rhúã,
+
+Noticed your commercial years at Ibmec before managing Magrass Assis. Magrass calls its approach Medicina Evolutiva.
+
+FitXpress is a guided scan: a client takes two photos and gets 80+ body measurements back in the app.
+
+Who at HQ trains unit teams when a new client tool arrives?
+
+Kateryna","Hi Rhúã,
+
+Training stays short for a guided capture, because the client follows on-screen steps for two photos.
+
+Who at HQ would own the training material?
+
+Kateryna"
+Daniel,Oliveira,https://linkedin.com/in/daniel-oliveira-5737a08b,Vidalink,Consultor Comercial Sênior,,,"Hi Daniel,
+
+Quick note: your long experience in corporate benefits fits how Vidalink describes its integrated benefits.
+
+We built a guided scan that returns 80+ body measurements from two phone photos, optional for the employee.
+
+Who decides what goes into the employee journey in the Vidalink app?
+
+Kateryna","Hi Daniel,
+
+If the journey owner sits in product, a name would do. Each scan is timestamped, and the member chooses which scans to compare.
+
+Kateryna"
+Abi,Nogueira,https://linkedin.com/in/abilenynogueira,Vidalink,Gerente de Revenue Operations (RevOps),,,"Hi Abi,
+
+Your RevOps role at Vidalink, with SAP behind it, made me curious. Professional growth sits in Vidalink's offer alongside wellbeing.
+
+FitXpress would sit in the app as a ready-made capture, with 80+ body measurements per scan.
+
+Who would evaluate a third-party capability for the app: product or the AI team?
+
+Kateryna","Hi Abi,
+
+Thought I would make it easy: a name and a team is enough for me to take it from there. The scan runs in under 45 seconds from the photos to structured results.
+
+Kateryna"
+Bruno,Haidar,https://linkedin.com/in/bruno-haidar-a33968106,OrienteMe,CoFounder & CEO,,,"Hi Bruno,
+
+Came across your work: Demarest Advogados first, now CEO at orienteme. The app delivers nutrition and physical orientation by video, text or audio.
+
+We built a white-label two-photo body scan for apps like that, available through an API or SDKs with nothing to ship. It returns 80+ body measurements in under 45 seconds from the photos to structured results.
+
+Does a guided body scan belong in the orienteme app, next to those sessions?
+
+Kateryna","Hi Bruno,
+
+One more thought for orienteme. The member opens the scan from inside the app, and the nutrition team gets a timestamped body record to review.
+
+Article for context: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Worth a short call? https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Ana Maria,Restrepo Gomez,https://linkedin.com/in/anamariarpo,holadr. IPS,Líder de Comunicaciones,,,"Hi Ana Maria,
+
+Quick note on holaDr, the telemedicine service based in Medellín, and its communication work.
+
+Who leads the nutrition service at holaDr?
+
+I work at 3DLOOK: a guided two-photo scan returns 80+ body measurements in under 45 seconds from the photos to structured results. A name would be wonderful.
+
+Kateryna","Hi Ana Maria,
+
+One more line, just a detail. The scan runs in a web link or inside an app, and nothing is shipped.
+
+If the nutrition lead is the right contact, a quick intro would be appreciated.
+
+Kateryna"
+Simone,Fatima Amaral martins,https://linkedin.com/in/simone-fatima-amaral-martins-a06122111,Pró-Corpo,gestora geral,,,"Hi Simone,
+
+Quick thought for a general manager at Pró-Corpo, where body treatments such as cryolipolysis are offered.
+
+FitXpress is a guided two-photo scan that returns 80+ body measurements in under 45 seconds from the photos to structured results. Nothing is installed, shipped or stocked in the clinic.
+
+What would unit teams need in place to offer a guided phone capture?
+
+Open to a quick chat?
+
+Kateryna","Hi Simone,
+
+Every capture follows the same guided sequence, and unit teams see the same steps each time.
+
+112,100 scans in 2025 across all 3DLOOK customers.
+
+Worth 15 min? https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Fernanda,Mondin,https://linkedin.com/in/fernanda-mondin-1084a19b,OrienteMe,Head of Nutrition,,,"Hi Fernanda,
+
+Got me thinking about your path: the coordinated-care nutrition team at SulAmérica, then Teladoc Health, now nutrition and physical orientation at orienteme.
+
+A two-photo scan gives the care team a standardized, timestamped body record: 80+ body measurements in under 45 seconds from the photos to structured results.
+
+Would the nutritionists use a standardized body record the member captures at home between video sessions?
+
+Kateryna","Hi Fernanda,
+
+The values are measurements and estimates for the nutritionist to review, and the programme compares only the scans it selects.
+
+Body measurements reach 96-97% accuracy against expert manual measurement.
+
+Open to a walkthrough? https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Marisa,Peraro,https://linkedin.com/in/marisaperaro,Pró-Corpo,Founder,,,"Hi Marisa,
+
+Came across your work: 360 Gestão para Clínicas, your mentoring for clinic owners, and Pró-Corpo, with its head office near Avenida Paulista.
+
+FitXpress is a guided two-photo scan that returns 80+ body measurements, inside the clinic's own booking or client flow.
+
+Where would a two-photo body record fit at Pró-Corpo: before the free evaluation, or between body-treatment sessions?
+
+Kateryna","Hi Marisa,
+
+The record is taken on the client's phone and timestamped, and evaluators compare the scans they select.
+
+A call to walk through it: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Ana Paula,Moraes,https://linkedin.com/in/ana-paula-moraes-177a81112,Liti,Nutricionista,,,"Hi Ana Paula,
+
+Came across your work as a nutritionist, with Hospital Alemão Oswaldo Cruz before Liti. Liti runs an online team that includes doctors and nutritionists.
+
+Our scan asks a member for two photos at home and hands the nutrition team 80+ body measurements to review.
+
+Who leads the clinical protocol the nutrition team follows?
+
+Kateryna","Hi Ana Paula,
+
+The short version for your files: two photos at home, 80+ body measurements for the team to review.
+
+If you can point me to whoever decides, a name is plenty.
+
+Kateryna"
+Wesley,Denardin,https://linkedin.com/in/wesley-denardin-a644141a5,Emagrecentro,Diretor,,,"Hi Wesley,
+
+Quick thought on Dr. Ramuth's point that technology keeps the same standard of care in every clinic at Emagrecentro.
+
+Who at the franchisor looks after the technology behind that standard?
+
+Our scan is available as an API or SDK, and the speed is in under 45 seconds from the photos to structured results, with 80+ body measurements returned. A name is all I am after.
+
+Kateryna","Hi Wesley,
+
+Adding one detail. The scan follows the same guided sequence every time, which fits the consistency Dr. Ramuth describes.
+
+Is there a person or team that reviews outside tools for the network? A pointer or a short call works: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Matheus,Rodrigues,https://linkedin.com/in/matheus-rodrigues-7925631a3,Atrys Brasil,Analista contabil e fiscal Sênior,,,"Hi Matheus,
+
+Quick note: audit work at PwC before, now accounting at Atrys Brasil, which has run chronic-patient programmes in Brazil since 2002.
+
+Patients can capture two photos at home and a care team gets 80+ body measurements, timestamped.
+
+Who on the clinical side looks at new data-collection methods?
+
+Kateryna","Hi Matheus,
+
+Only a routing question. Two photos in, 80+ body measurements out, taken by the patient at home.
+
+Is there someone at Atrys Brasil who should see a short overview? A forward is fine.
+
+Kateryna"
+Viviane,Lins,https://linkedin.com/in/viviane-lins-9a9059198,Emagrecentro,Diretora Geral,,,"Hi Viviane,
+
+Got me thinking about the Método 4 Fases app at Emagrecentro.
+
+Who at the franchisor owns it?
+
+We built a guided two-photo scan that returns 80+ body measurements and body composition estimates in under 45 seconds from the photos to structured results. It sits inside an app through web and mobile SDKs, and I would only like to find the right owner.
+
+Kateryna","Hi Viviane,
+
+One more line from my side. Nothing is shipped or stocked, and one weight-management platform ran 34,000 scans in 2025.
+
+If you can point me to the right person, I would be grateful: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Daniela,Junqueira,https://linkedin.com/in/daniela-junqueira-8b7b1612b,Vidalink,Tech Lead de Engenharia de Dados e Analytics,,,"Hi Daniela,
+
+Your move from analytics management at Wiz Co to leading data at Vidalink stood out. Vidalink's reach includes helping people grow personally and professionally.
+
+Each scan from two photos returns a structured record of 80+ body measurements, keyed to a scan ID.
+
+What shape would the Vidalink data stack prefer for scan outputs: keyed to a scan ID, or something else?
+
+Kateryna","Hi Daniela,
+
+For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm. Outputs are stored and deletable by scan ID.
+
+FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Call with an engineer? https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Monique Diana,Martins,https://linkedin.com/in/monique-diana-martins-8b9577165,Face Doctor,Sócia Proprietária na Face Doctor Perdizes,,,"Hi Monique,
+
+Quick one. Face Doctor is a premium franchise network for facial and body rejuvenation, and body treatments have their own protocols.
+
+Who at the franchisor looks after those protocols?
+
+I am at 3DLOOK: a guided two-photo scan returns 80+ body measurements in under 45 seconds from the photos to structured results, a body record taken on the phone. I am only looking for the right person at the franchisor.
+
+Kateryna","Hi Monique,
+
+A short addition. The scan returns a timestamped body record from two photos.
+
+Who handles new tools for the network? A pointer is plenty: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Jackeline,Lopes,https://linkedin.com/in/jackeline-lopes-08b81b167,Siluets,Gerente Geral,,,"Hi Jackeline,
+
+Noticed your background: Pertech do Brasil, then general management at Siluets Estética, a network of aesthetic centres that started in Brazil.
+
+Ahead of the evaluation, a client captures two guided photos and the team receives 80+ body measurements.
+
+Who at the franchisor trains unit teams on new services?
+
+Kateryna","Hi Jackeline,
+
+Whoever runs training could judge quickly whether a phone capture belongs in a service. Would you share a name?
+
+Kateryna"
+Daniele,Araujo,https://linkedin.com/in/daniele-araujo-091a05167,Abertta Saúde,Gerente de Regulação e Relacionamento,,,"Hi Daniele,
+
+Quick note on Abertta Saúde's preventive programmes, such as VIVAequilíbrio.
+
+Who runs them on the care side?
+
+I work at 3DLOOK, where a guided two-photo scan returns 80+ body measurements in under 45 seconds from the photos to structured results. I am only looking for the right person to ask.
+
+Kateryna","Hi Daniele,
+
+Thought I'd share one more line. The scan returns body measurements and body composition estimates for a care team to review, white-label and with nothing to ship.
+
+A pointer to the owner of VIVAequilíbrio would help, and a short call works too: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Paola,Almeida,https://linkedin.com/in/paola-almeida-reliv,Reliv,Cofundadora & COO,,,"Hi Paola,
+
+Noticed your background as a physician now working on digital health in LatAm. Reliv's ecosystem connects patients with doctors and hospitals, among others.
+
+Where in Reliv's patient journey would a phone body record be useful to the doctors on the platform?
+
+Reliv's doctors could receive 80+ body measurements from a patient's two photos, in under 45 seconds from the photos to structured results.
+
+Kateryna","Hi Paola,
+
+One practical detail on how it would run on Reliv: white-label through web or mobile SDKs, with nothing to ship.
+
+112,100 scans in 2025 across all 3DLOOK customers.
+
+Worth 15 minutes? https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Janaina,Possebon,https://linkedin.com/in/janainapossebon,Magrass,Sócia administradora,,,"Hi Janaina,
+
+Spotted your sales and marketing years at Grupo RBS before Magrass Moinhos de Vento. Magrass protocols combine nutrition with medical follow-up.
+
+Each client sends two photos from a phone, and the team receives a timestamped record with 80+ body measurements.
+
+Who at HQ owns the client protocol that joins nutrition and medical follow-up?
+
+Kateryna","Hi Janaina,
+
+In short: two photos, taken by the client, and a record the team can compare across scans it selects.
+
+If the protocol owner sits in medical or in nutrition, a name would be plenty.
+
+Kateryna"
+Rodrigo,Baroni,https://linkedin.com/in/rodrigo-baroni-18455216b,Magrass,Proprietário,,,"Hi Rodrigo,
+
+Had a thought after reading your headline, Empreendedor at Magrass Paulínia. The Magrass head office is in Santa Catarina.
+
+FitXpress turns two photos taken from home into a body record in under 45 seconds from the photos to structured results.
+
+Is there a franchisee forum where owners raise new tools with HQ, and who runs it?
+
+Kateryna","Hi Rodrigo,
+
+If no forum exists, who at HQ handles tool proposals from owners? Each client gets a body record from two photos.
+
+Kateryna"
+Mauricio,Padilla,https://linkedin.com/in/mauricio-padilla-8a6935172,Reliv,Tech Lead,,,"Hi Mauricio,
+
+Quick note for Reliv's tech lead. The platform runs in Ecuador and Mexico, which shapes what a camera capture has to handle.
+
+What would the platform need from a capture SDK to work in both countries?
+
+3DLOOK offers a REST API with API-key authentication, along with web and mobile SDKs. From a developer's view: a front and a side photo go to the API, and 80+ body measurements come back in under 45 seconds from the photos to structured results.
+
+Kateryna","Hi Mauricio,
+
+For the integration side: a typical basic integration takes 2-4 weeks. Photos are deleted after processing or within 30 days, and outputs are stored and deletable by scan ID.
+
+The FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Worth 15 minutes with the API docs open? https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Vinicius,Cuerci de Souza,https://linkedin.com/in/vinicius-cuerci-de-souza-2140a2176,RWE Telemedicina,Diretor operacional,,,"Hi Vinicius,
+
+Noticed your background in operations and quality for health and telemedicine. RWE lends medical equipment to clinics and hospitals and delivers remote reports.
+
+We have a separate capability: a guided two-photo scan that returns 80+ body measurements in under 45 seconds from the photos to structured results.
+
+Do client clinics ever ask RWE for remote services beyond reports, and who would weigh a partner offering?
+
+Kateryna","Hi Vinicius,
+
+In case a partner capability ever comes up: it runs inside a client's own app or flow, with nothing for RWE to ship or support.
+
+Open to a short call to see whether it fits at all? https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Carlos,Prestes,https://linkedin.com/in/carlosprestessilva,TELUS Health Brazil,International Account Manager,,,"Hi Carlos,
+
+Quick thought: Juno before, now international accounts at TELUS Health Brazil, where physical-activity coaching is among the programmes.
+
+With FitXpress, a member sends two photos and a coach sees 80+ body measurements.
+
+Who decides on partner services for the coaching programmes?
+
+Kateryna","Hi Carlos,
+
+Could you point me to the right owner? I would send a one-page overview, two photos and 80+ body measurements.
+
+Kateryna"
+Sebastián,Guarderas-Castro,https://linkedin.com/in/sebastián-guarderas-castro-30228517a,Reliv,Chief Medical Officer,,,"Hi Sebastián,
+
+Came across your work as a physician and healthcare manager. Reliv connects patients with doctors and hospitals, and I wondered what doctors want on hand before a consultation.
+
+Which body measurements would Reliv's doctors want before a consultation?
+
+A patient can capture 80+ body measurements, waist and hip included, with two guided photos, in under 45 seconds from the photos to structured results. The care team gets a standardized, timestamped record to review.
+
+Kateryna","Hi Sebastián,
+
+One detail for the clinical review. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+Worth 15 minutes to walk through it? https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Renise,M.,https://linkedin.com/in/renisemarmentini,Salvia Saúde Corporativa,Head Comercial,,,"Hi Renise,
+
+Spotted something: TopMed Saúde Digital before, and now Salvia Saúde Corporativa, where a family doctor coordinates the whole journey from the app.
+
+The nutrition and care team receives 80+ body measurements from two photos a member takes on a phone.
+
+Who leads the nutrition programme clinically?
+
+Kateryna","Hi Renise,
+
+Happy to send a one-page overview to whoever that is. Two photos in, a timestamped body record out.
+
+Kateryna"
+Steffany,C.,https://linkedin.com/in/steffany-c-4b5b02156,Nilo Saúde,Business Development Representative Enterprise Sênior,,,"Hi Steffany,
+
+Quick one: your path from CondoLivre to enterprise development at Nilo Saúde. Nilo Saúde builds NiloCare for its health-institution operators.
+
+FitXpress is a body-scan capability for apps, built on two phone photos and 80+ body measurements.
+
+Who handles technology partnerships at Nilo?
+
+Kateryna","Hi Steffany,
+
+If technology partners go through product, a name there would do. Happy to send a one-page description first.
+
+Kateryna"
+Marcela,Ferreira Lima Guimarães,https://linkedin.com/in/marcela-ferreira-lima-guimarães-22b0b4251,GESmed,Líder de Gestão de Saúde,,,"Hi Marcela,
+
+Spotted something in your profile: research at Fiocruz, then primary-care programmes and corporate health management at GESmed.
+
+FitXpress gives a care team a standardized, timestamped body record: two guided photos return 80+ body measurements and body composition estimates for the team to review.
+
+Which body measurements matter most in GES care for employees living with obesity?
+
+Kateryna","Hi Marcela,
+
+The team compares the scans it selects, and the values are measurements and estimates for the team to review. Waist and other circumferences come from one capture at home.
+
+Open to 15 min? https://meetings.hubspot.com/kateryna-boichuk
+
+Overview: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Kateryna"
+Rafaela,Klein,https://linkedin.com/in/rafaela-klein-55694a1a6,Magrass,Nutricionista clínico,,,"Hi Rafaela,
+
+Your headline on sustainable, science-based weight-loss nutrition stood out. In Magrass Club, the unit nutritionist follows each client.
+
+A client could capture two guided photos at home and send the nutritionist a record with 80+ body measurements.
+
+Who at HQ sets the routine unit nutritionists follow with clients?
+
+Kateryna","Hi Rafaela,
+
+For a nutritionist, each scan is a timestamped body record, and the scans to compare are the ones you select.
+
+Is there someone at HQ you would point me to?
+
+Kateryna"
+Kevin,Lucas,https://linkedin.com/in/kevin-brit,Sensorial,BACKEND SOFTWARE ENGINEER,,,"Hi Kevin,
+
+Quick thought: Flashvolve before, now backend work at Sensorial Sports, part of a neuroscience-based technology company.
+
+FitXpress is a guided two-photo scan with a REST API behind it, returning 80+ body measurements.
+
+Who leads product for Sensorial Sports?
+
+Kateryna","Hi Kevin,
+
+Whoever leads product might want a look at the API docs. Could you point me their way?
+
+Kateryna"
+Bruno,Menendes,https://linkedin.com/in/menendesbruno,Vidalink,Senior Data Engineer,,,"Hi Bruno,
+
+Your bio on integrations between data sources and the analytics layer got me thinking. Vidalink pairs technology with humanisation in its benefits.
+
+Authentication on the FitXpress REST API is by API key. Photos go in and structured body measurements come back, 80+ of them.
+
+Would a REST API that returns body measurements and estimates be simple to bring into those integrations?
+
+Kateryna","Hi Bruno,
+
+A typical basic integration takes 2-4 weeks, and web and mobile SDKs cover the capture side.
+
+FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Slot for a deeper look: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+aline,caio,https://linkedin.com/in/aline-caio-2a0a721b4,Lipocenter,Diretor,,,"Hi Aline,
+
+Quick note on Lipocenter, which grew from an Instituto de Emagrecimento founded in 2005 into aesthetic protocols as well.
+
+Who at the franchisor decides on new client tools?
+
+I work on a guided two-photo scan that returns 80+ body measurements in under 45 seconds from the photos to structured results, built as a phone capture a network can offer its clients. I only need the right person to ask.
+
+Kateryna","Hi Aline,
+
+The short version, in case it helps you route this. A client takes two photos, and the brand's app receives a timestamped body record, with nothing shipped or stocked.
+
+Who would be the best contact? A pointer or a short call: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Paula,Tecchio,https://linkedin.com/in/paula-tecchio-1a66111b7,Inc Beauty,Head Comercial,,,"Hi Paula,
+
+Noticed your background in client relationships, with Seven Clínica before Inc Beauty. Inc Beauty Dermatology Institute offers regenerative and aesthetic treatments, body treatments among them.
+
+Who decides on new technology for the body treatments?
+
+A guided two-photo scan can give a clinic a body record on the phone: 80+ body measurements in under 45 seconds from the photos to structured results.
+
+Kateryna","Hi Paula,
+
+A short addition. The capture runs in a clinic's own booking or client flow, with nothing to install on site.
+
+If someone looks at tools like this, a pointer would be welcome: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Luana,Barreto,https://linkedin.com/in/luana-barreto-43819922b,RWE Telemedicina,Diretora,,,"Hi Luana,
+
+Quick thought for RWE's commercial side: clinics and hospitals come to you for equipment on loan and remote reports.
+
+Our product is a phone scan: two guided photos in, 80+ body measurements out.
+
+Is a remote body-measurement capture something RWE's commercial team could offer clinics, or outside your lines?
+
+Kateryna","Hi Luana,
+
+A clear no is a useful answer too. If it is a maybe, a 15-minute call would show what a partner arrangement could look like: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Gabriela,Galvis,https://linkedin.com/in/gabrielagalvis,Saluta,Líder de Venta Digital,,,"Hi Gabriela,
+
+Had to say hi after reading your headline on growth and patient acquisition. Saluta offers tele-education and telemedicine.
+
+Ours is a guided scan from two photos, with 80+ body measurements as its output.
+
+Who owns Saluta's app roadmap?
+
+Kateryna","Hi Gabriela,
+
+In case it is easier to route than to answer: the scan runs inside an app and returns 80+ body measurements in under 45 seconds from the photos to structured results.
+
+A name is all I would need.
+
+Kateryna"
+Adrielle,Dalul,https://linkedin.com/in/adrielle-dalul-aa955b201,Siluets,Diretor executivo de vendas,,,"Hi Adrielle,
+
+Quick thought for an executive sales director at Siluets Estética, home of the Método Siluets for cryolipolysis.
+
+Clients can take two photos on their phone inside a booking flow and get 80+ body measurements back.
+
+Who at the franchisor decides on new services for the units?
+
+Kateryna","Hi Adrielle,
+
+If that person sits elsewhere, I would be glad to send them a short overview. The scan is two photos on a phone.
+
+Kateryna"
+ALEXANDRE,Pimentel,https://linkedin.com/in/alexandre-pimentelhc,Telecárdio,Diretor,,,"Hi Alexandre,
+
+This stood out: from administrative director to director at Telecárdio, a telemedicine service with cardiologists and call centres open around the clock.
+
+Ours is a different kind of service: two guided photos in, 80+ body measurements out.
+
+Who at Telecárdio looks at new services for clinics and operators?
+
+Kateryna","Hi Alexandre,
+
+Thought I'd share one more detail. The scan runs inside the partner's own app, in under 45 seconds from the photos to structured results.
+
+If someone else should see this, a name would be enough, or here is a slot: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Gabriela,Teixeira,https://linkedin.com/in/gabriela-teixeira-5290a7210,Liti,Nutricionista clínico,,,"Hi Gabriela,
+
+Had a thought, from your clinical nutrition years at Nutrir Corphus. At Liti you are part of a multidisciplinary online team around members.
+
+We built a guided two-photo scan that returns 80+ body measurements from a member's phone.
+
+Who on the medical team decides what the programme records?
+
+Kateryna","Hi Gabriela,
+
+A short note that may be simpler to pass along. The scan is two photos in the member's hand, and the team reviews the 80+ body measurements it returns.
+
+Any name on the medical side would help.
+
+Kateryna"
+Marcus,Nunes,https://linkedin.com/in/marcus-nunes-504687214,Amparo Saúde,Agente de recepção,,,"Hi Marcus,
+
+Got me thinking about Amparo Saúde's focus on prevention, with remote and in-person care in one network.
+
+Who coordinates the prevention programmes across the clinics?
+
+Our guided scan needs two photos and gives back 80+ body measurements in under 45 seconds from the photos to structured results. Who should hear about it is my only question.
+
+Kateryna","Hi Marcus,
+
+One short addition. The scan gives a care team a timestamped body record to compare across the scans it selects, and the capture follows the same guided sequence every time.
+
+If you know who coordinates prevention, a name would help a lot, and a short call works too: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Paulo,Castilho,https://linkedin.com/in/castilho-jus,RWE Telemedicina,Gerente geral,,,"Hi Paulo,
+
+You moved from commercial coordinator to general manager at RWE, where specialists are available 24 hours a day.
+
+Our scan takes two photos on a phone and gives back 80+ body measurements.
+
+Who decides on new partner services at RWE?
+
+Kateryna","Hi Paulo,
+
+A short pointer would do: the name of whoever weighs partner services. The scan itself is two photos and a structured record.
+
+Kateryna"
+João,Murackami,https://linkedin.com/in/joão-murackami-35aa1b312,N2B Brasil,Senior Analytics Engineer,,,"Hi João,
+
+Noticed your background in analytics, from PwC Brasil and Sharecare Brasil to N2B's data work. N2B's mission is to make nutrition smarter and more accessible.
+
+What would N2B's data team want to know first about a body-scan API offered as a partner capability?
+
+For context, the API takes two photos and returns 80+ body measurements in under 45 seconds from the photos to structured results.
+
+Kateryna","Hi João,
+
+A short addition, in case the data side helps decide. Outputs are structured and timestamped, keyed to a scan ID.
+
+If a partner capability has any place at N2B, who would decide? A short call works: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Paty,Marques,https://linkedin.com/in/paty-marques-710b1b25b,Amparo Saúde,Gerente de vendas,,,"Hi Paty,
+
+Quick idea. Amparo Saúde runs its own telehealth centre alongside its clinics, so patients meet the network in two places.
+
+Who owns the digital tools the centre and the clinics use with patients?
+
+3DLOOK offers a phone scan: two photos in, 80+ body measurements out, white-label through web and mobile SDKs. Nothing to ship.
+
+Kateryna","Hi Paty,
+
+A different angle from my side. The scan returns 80+ body measurements in under 45 seconds from the photos to structured results, inside an app or a web link.
+
+If someone on the product or clinical side owns that decision, a pointer would be welcome: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Rodrigo,Alvarez Diaz,https://linkedin.com/in/rodrigo-alvarez-diaz-a4b459261,Terapia Online,Supervisor Area Pacientes,,,"Hi Rodrigo,
+
+Quick question. Terapia Online offers psychology and other mental-health specialities by telemedicine, with nutrition among its services.
+
+Who leads the nutrition service?
+
+I work at 3DLOOK, where a guided two-photo scan returns 80+ body measurements in under 45 seconds from the photos to structured results. I am only asking whom to approach.
+
+Kateryna","Hi Rodrigo,
+
+A brief addition. If the nutrition team ever wants a body record from a patient's phone, the scan is white-label and ships nothing.
+
+A pointer to the right person is all I need.
+
+Kateryna"
+Luiz,dos Santos Nunes Filho,https://linkedin.com/in/luiz-dos-santos-nunes-filho-703318265,Magrass,Sócio proprietário,,,"Hi Luiz,
+
+Noticed G3 Treinamento Personalizado in your headline. Magrass Advanced is the smaller-format franchise.
+
+FitXpress returns 80+ body measurements from two photos a client takes with a phone, with nothing to ship to the unit.
+
+Who at HQ decides which tools a new unit starts with?
+
+Kateryna","Hi Luiz,
+
+A new unit would carry no hardware for this: the client opens the app and follows the on-screen steps.
+
+Is there a start-up checklist at HQ, and who maintains it?
+
+Kateryna"
+Jimena,Maldonado de Chazal,https://linkedin.com/in/jimena-maldonado-de-chazal-096340268,Grupo Wellness Latina,Nutrition Counselor,,,"Hi Jimena,
+
+Quick one: clinical nutrition at Hospital Arco Iris before, now nutrition counseling at Grupo Wellness Latina, which runs a nutrition line among its support lines.
+
+A nutrition team gets a standardized record of 80+ body measurements from two photos.
+
+Who coordinates the nutrition line across countries?
+
+Kateryna","Hi Jimena,
+
+The scan runs on the member's own phone, and a nutrition team can compare the scans it selects.
+
+If someone else would want to hear about it, a name is enough.
+
+Kateryna"
+Abilio,Costa,https://linkedin.com/in/abilio-costa-b61ab9298,Instituto Lumiere,Proprietário da empresa,,,"Hi Abilio,
+
+Quick thought for the owner of Instituto Lumiere, a weight-loss and nutrology centre in São Luís. Your patients follow a nutrition plan in an app.
+
+Would a body record patients take on their phone between visits fit alongside it?
+
+Our guided two-photo scan returns 80+ body measurements in under 45 seconds from the photos to structured results, and it can sit inside that app through an SDK.
+
+Kateryna","Hi Abilio,
+
+What your team would receive: a standardized, timestamped body record to compare across the scans it selects. One weight-management platform ran 34,000 scans in 2025.
+
+Our GLP-1 market overview: https://3dlook.ai/content-hub/glp-1-market/
+
+Worth 15 minutes? https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Janiel José,Zioti,https://linkedin.com/in/janiel-josé-zioti-9560602a6,L2D Saúde Digital,Diretor executivo do grupo,,,"Hi Janiel,
+
+You lead L2D Saúde Digital as group executive director, and L2D runs its own teleconsultation platform with 24-hour support for doctors and care units.
+
+Inside a platform like that, a patient can be asked for a guided two-photo scan. It returns 80+ body measurements and a 3D model in under 45 seconds from the photos to structured results.
+
+Would a guided two-photo body record have a place in L2D's teleconsultation platform, for consults that need weight and waist?
+
+Kateryna","Hi Janiel,
+
+Here is what this adds for L2D. Doctors on the platform can receive a standardized, timestamped body record that the patient captured before the call.
+
+112,100 scans in 2025 across all 3DLOOK customers.
+
+Open to a 15-minute walkthrough? https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Juliana,Faure,https://linkedin.com/in/juliana-faure-0b4619280,L2D Saúde Digital,Medical Doctor (Telemedicina),,,"Hi Juliana,
+
+Quick one for a telemedicine doctor at L2D. L2D offers teleconsultancy and telediagnosis, neurology and cardiology among them.
+
+We built a guided two-photo scan that returns 80+ body measurements to the doctor.
+
+Who decides which tools doctors see in the teleconsultation platform?
+
+Kateryna","Hi Juliana,
+
+Sharing in case it travels better than a question. The scan gives a doctor measurements and estimates from a patient's phone, and the doctor decides what to do with them.
+
+If a colleague looks after the platform's tools, a name is all I need.
+
+Kateryna"
+"Jessica,",Rayane,https://linkedin.com/in/jessica-rayane-comeercial,OrienteMe,Senior Account Analyst,,,"Hi Jessica,
+
+This stood out: orienteme offers psychology and nutrition by video, text or audio, all in one app.
+
+Our product is a guided body scan from two photos, returning 80+ body measurements.
+
+Who handles technology partnerships at orienteme?
+
+Kateryna","Hi Jessica,
+
+A line you can forward as it is: two photos, 80+ body measurements, a standardized and timestamped record. Whoever looks at partners would know if it belongs.
+
+Kateryna"
+Lucas Mateus,Silva de Souza,https://linkedin.com/in/lucas-mateus-silva-de-souza-a76114288,Vidalink,Senior Data Analyst,,,"Hi Lucas,
+
+Noticed your Santander Brasil analyst years at Santander Brasil. Vidalink has a plan built for smaller companies.
+
+A scan record from two photos holds 80+ body measurements, composition estimates and a timestamp.
+
+Which fields would product analytics look at first in a scan record: circumferences or composition estimates?
+
+Kateryna","Hi Lucas,
+
+Each record carries 80+ body measurements. Those body measurements show 96-97% accuracy against expert manual measurement.
+
+FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+If a sample record would help, I can show one live: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Lucas,Quintella,https://linkedin.com/in/lucas-quintella-6459b5324,MedTrue,CEO,,,"Hi Lucas,
+
+Quick thought on MedSlim, which starts online with virtual medical follow-up and applies treatment in person at licensed units when indicated.
+
+Would a home scan fit the online start of the MedSlim journey, before a patient visits a licensed unit?
+
+3DLOOK's guided two-photo scan returns 80+ body measurements and body composition estimates in under 45 seconds from the photos to structured results, white-label through API or SDK.
+
+Kateryna","Hi Lucas,
+
+What the doctors would receive: a standardized, timestamped body record from the patient's phone, to compare across the scans they select. One weight-management platform ran 34,000 scans in 2025.
+
+Our GLP-1 market overview: https://3dlook.ai/content-hub/glp-1-market/
+
+Worth 15 minutes? https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Fernando,Marques,https://linkedin.com/in/fernando-marques-091b06359,GESmed,Sócio Fundador e CEO,,,"Hi Fernando,
+
+Came across your work: Gerdau first, now GESmed and the Modelo GES, built on primary-care principles.
+
+FitXpress is a guided two-photo scan that returns 80+ body measurements and body composition estimates, white-label through an API or SDK, with nothing to ship.
+
+Where would a phone body record fit the Modelo GES care cycle for insured employees?
+
+Might be worth a quick chat?
+
+Kateryna","Hi Fernando,
+
+In a GES care cycle, the reference nurse and the member can look at the same standardized, timestamped body record, captured at home.
+
+112,100 scans in 2025 across all 3DLOOK customers.
+
+Worth 15 min? https://meetings.hubspot.com/kateryna-boichuk
+
+Overview for wellness platforms: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Kateryna"
+Eduarda,Cuerci,https://linkedin.com/in/eduarda-cuerci-62b21835b,RWE Telemedicina,Diretora operacional,,,"Hi Eduarda,
+
+Caught my eye: a nurse who now runs operations at a telemedicine company with specialists available around the clock.
+
+We built a guided two-photo scan for telehealth services. It returns 80+ body measurements in under 45 seconds from the photos to structured results, and the clinician decides what to do with them.
+
+Who at RWE looks at new telehealth services before they reach clients?
+
+Kateryna","Hi Eduarda,
+
+Coming from nursing, you will read the output best. It is a list of measurements and estimates, timestamped, for a clinician to review.
+
+If it merits a look, here is my calendar: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Emerson,Goulart,https://linkedin.com/in/emerson-goulart-781585367,RWE Telemedicina,Diretor,,,"Hi Emerson,
+
+Spotted something in your headline: complete solutions for clinics and hospitals, from equipment on loan to remote reports.
+
+Our piece is software. The scan is offered through a web or mobile SDK, starts from two guided photos and returns 80+ body measurements in under 45 seconds from the photos to structured results.
+
+Does RWE ever add software-only services to what it offers clinics and hospitals?
+
+Kateryna","Hi Emerson,
+
+If software ever joins the offer, the scan would live in the clinic's own app with nothing to ship.
+
+112,100 scans in 2025 across all 3DLOOK customers.
+
+Grab a slot if it is worth a look: https://meetings.hubspot.com/kateryna-boichuk
+
+Kateryna"
+Susana,Augusto de Camargo Silva,https://linkedin.com/in/susana-augusto-de-camargo-silva-a54564425,Vidalink,Lider de CS,,,"Hi Susana,
+
+As CS lead at Vidalink, you hear what client companies ask of the app. Vidalink presents its benefits in a single app.
+
+Inside the app, a member takes two guided photos and gets 80+ body measurements.
+
+Who collects client companies' feature requests for the app?
+
+Kateryna","Hi Susana,
+
+A quick pointer would help: the person who logs feature requests for the app. Members open it only when they choose to.
+
+Kateryna"

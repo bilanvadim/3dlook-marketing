@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-02",
+  "last_updated": "2026-10-05",
   "companies": {
     "safariland": {
       "covered_by_profile": null,
@@ -1351,6 +1351,310 @@
       "campaign_id": "2026-08-14-au-digital-fitness",
       "product": "fitxpress",
       "date": "2026-08-14",
+      "status": "active"
+    },
+    "abertta-de": {
+      "display_name": "Abertta Saúde",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "amparo-de": {
+      "display_name": "Amparo Saúde",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "atrys-brasil": {
+      "display_name": "Atrys Brasil",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "beauty": {
+      "display_name": "Inc Beauty",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "c-ntriqo": {
+      "display_name": "Céntriqo",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "emagrecentro": {
+      "display_name": "Emagrecentro",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "face-doctor": {
+      "display_name": "Face Doctor",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "gesmed": {
+      "display_name": "GESmed",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "gntech": {
+      "display_name": "GnTech",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "grupo-5s": {
+      "display_name": "Grupo 5S",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "grupo-wellness-latina": {
+      "display_name": "Grupo Wellness Latina",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "holadr-ips": {
+      "display_name": "holadr. IPS",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "imnd": {
+      "display_name": "iMND",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "instituto-gl": {
+      "display_name": "Instituto GL",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "instituto-lumiere": {
+      "display_name": "Instituto Lumiere",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "l2d-de-digital": {
+      "display_name": "L2D Saúde Digital",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "lipocenter": {
+      "display_name": "Lipocenter",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "liti": {
+      "display_name": "Liti",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "llamando-al-doctor": {
+      "display_name": "Llamando al Doctor",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "magrass": {
+      "display_name": "Magrass",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "medtrue": {
+      "display_name": "MedTrue",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "n2b-brasil": {
+      "display_name": "N2B Brasil",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "nilo-de": {
+      "display_name": "Nilo Saúde",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "orienteme": {
+      "display_name": "OrienteMe",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "pr-corpo": {
+      "display_name": "Pró-Corpo",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "reliv": {
+      "display_name": "Reliv",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "rwe-telemedicina": {
+      "display_name": "RWE Telemedicina",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "saluta": {
+      "display_name": "Saluta",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "salvia-de-corporativa": {
+      "display_name": "Salvia Saúde Corporativa",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "sensorial": {
+      "display_name": "Sensorial",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "siluets": {
+      "display_name": "Siluets",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "spdm": {
+      "display_name": "SPDM",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "telec-rdio": {
+      "display_name": "Telecárdio",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "telus-health-brazil": {
+      "display_name": "TELUS Health Brazil",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "terapia-online": {
+      "display_name": "Terapia Online",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "vidalink": {
+      "display_name": "Vidalink",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "wellbe": {
+      "display_name": "Wellbe",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
+      "status": "active"
+    },
+    "z-nea": {
+      "display_name": "Zínea",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-05-latam-health-weightloss",
+      "product": "fitxpress",
+      "date": "2026-10-05",
       "status": "active"
     }
   }

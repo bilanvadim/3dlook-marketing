@@ -1,0 +1,315 @@
+{
+ "campaign": "2026-10-05-latam-health-weightloss",
+ "checked": 128,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": null,
+ "generated": "2026-10-05T13:57:15",
+ "hard": [],
+ "soft": [
+  [
+   "greeting",
+   "dra-edivana-poltronieri-a74a9973 M1",
+   "«Hi Edivana,» has no «Dra Edivana»"
+  ],
+  [
+   "greeting",
+   "dra-edivana-poltronieri-a74a9973 M2",
+   "«Hi Edivana,» has no «Dra Edivana»"
+  ],
+  [
+   "no calendar link",
+   "barbaracarvalhor M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "lucas-schneider-7b231066 M1",
+   "«L2D Saúde Digital» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "nadia-panow-91079767 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "renatatavolaro M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "flaviosvaiter M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "fernando-palma M1",
+   "«L2D Saúde Digital» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "ricardo-perales-aravena-1b973236 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "adouradosilva M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "andreza-zatorre-pereira-4a642b8 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "paulo-gonçalves-64364242 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "sonia-maria-figueiredo-82968a14 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "luciana-ito-52402816 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "ángeles-dubini-50011417 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "rodrigocasaleabe M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "viviana-salazar-8a4b984b M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "lívia-sales-bb25a920 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "flaminio-dalul-b7aa4124 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "alinesantos-negociacao M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "marina-michaelsen-deriggi-a910ba30 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "sandra-geres-alves-panza-89323611a M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "marcio-jorge-pinho-deriggi-57b2a1121 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "amanda-micaela-alves-9ba45777 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "mauriciodl M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "victor-cavallari-434a81ab M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "sidneisalmaso M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "vitor-honda M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "rhúã-robson-d´cézares-rodrigues-de-oliveira-das-chagas-netto-b87 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "daniel-oliveira-5737a08b M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "abilenynogueira M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "anamariarpo M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "anamariarpo M1",
+   "«holadr. IPS» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "ana-paula-moraes-177a81112 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "matheus-rodrigues-7925631a3 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "jackeline-lopes-08b81b167 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "janainapossebon M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "rodrigo-baroni-18455216b M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "vinicius-cuerci-de-souza-2140a2176 M1",
+   "«RWE Telemedicina» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "carlosprestessilva M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "renisemarmentini M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "steffany-c-4b5b02156 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "rafaela-klein-55694a1a6 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "kevin-brit M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "luana-barreto-43819922b M1",
+   "«RWE Telemedicina» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "gabrielagalvis M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "adrielle-dalul-aa955b201 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "gabriela-teixeira-5290a7210 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "castilho-jus M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "castilho-jus M1",
+   "«RWE Telemedicina» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "joão-murackami-35aa1b312 M1",
+   "«N2B Brasil» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "rodrigo-alvarez-diaz-a4b459261 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "luiz-dos-santos-nunes-filho-703318265 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "jimena-maldonado-de-chazal-096340268 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "juliana-faure-0b4619280 M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "juliana-faure-0b4619280 M1",
+   "«L2D Saúde Digital» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "jessica-rayane-comeercial M2",
+   "angle referral"
+  ],
+  [
+   "no company line",
+   "lucas-quintella-6459b5324 M1",
+   "«MedTrue» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "eduarda-cuerci-62b21835b M1",
+   "«RWE Telemedicina» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "emerson-goulart-781585367 M1",
+   "«RWE Telemedicina» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no calendar link",
+   "susana-augusto-de-camargo-silva-a54564425 M2",
+   "angle referral"
+  ]
+ ]
+}

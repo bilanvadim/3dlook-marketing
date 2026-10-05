@@ -1,0 +1,95 @@
+{
+ "campaign": "2026-10-05-latam-health-weightloss",
+ "checked": 34,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-1",
+ "generated": "2026-10-05T13:56:43",
+ "hard": [],
+ "soft": [
+  [
+   "no calendar link",
+   "nadia-panow-91079767 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "adouradosilva M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "paulo-gonçalves-64364242 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "alinesantos-negociacao M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "marina-michaelsen-deriggi-a910ba30 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "sandra-geres-alves-panza-89323611a M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "marcio-jorge-pinho-deriggi-57b2a1121 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "vitor-honda M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "rhúã-robson-d´cézares-rodrigues-de-oliveira-das-chagas-netto-b87 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "daniel-oliveira-5737a08b M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "abilenynogueira M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "janainapossebon M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "rodrigo-baroni-18455216b M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "steffany-c-4b5b02156 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "rafaela-klein-55694a1a6 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "luiz-dos-santos-nunes-filho-703318265 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "susana-augusto-de-camargo-silva-a54564425 M2",
+   "angle referral"
+  ]
+ ]
+}

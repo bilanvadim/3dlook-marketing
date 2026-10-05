@@ -1,0 +1,105 @@
+{
+ "campaign": "2026-10-05-latam-health-weightloss",
+ "checked": 33,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-3",
+ "generated": "2026-10-05T13:55:56",
+ "hard": [],
+ "soft": [
+  [
+   "no calendar link",
+   "barbaracarvalhor M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "andreza-zatorre-pereira-4a642b8 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "sonia-maria-figueiredo-82968a14 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "luciana-ito-52402816 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "ángeles-dubini-50011417 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "viviana-salazar-8a4b984b M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "lívia-sales-bb25a920 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "flaminio-dalul-b7aa4124 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "victor-cavallari-434a81ab M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "sidneisalmaso M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "matheus-rodrigues-7925631a3 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "jackeline-lopes-08b81b167 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "carlosprestessilva M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "renisemarmentini M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "kevin-brit M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "adrielle-dalul-aa955b201 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "jimena-maldonado-de-chazal-096340268 M2",
+   "angle referral"
+  ],
+  [
+   "M1 opener repeated",
+   "campaign ×6",
+   "«quick note:»"
+  ],
+  [
+   "M1 opener repeated",
+   "campaign ×7",
+   "«noticed your background:»"
+  ]
+ ]
+}
