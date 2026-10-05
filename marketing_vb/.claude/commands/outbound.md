@@ -202,6 +202,14 @@ rate-limit и CAPTCHA), и прогон догенерировал 26 непро
 `responses`: классифицируй весь `responses-raw.csv`, после записи прогони
 `check-classified`. **Не коммить и не пуш сам** — это делает скрипт, и только после гейта.
 
+**`response-classifier` в такой job — только на переднем плане, без `run_in_background`.**
+Job 165 (2026-10-01) запустил его в фоне и закрыл ход фразой «I'll wait for it to finish»:
+headless-сессия на этом кончилась, классификатор ничего не записал, conductor отметил job
+`done`. Ночной скрипт тот же набор ответов повторно не ставит (иначе жёг бы квоту), так что
+ответ Daisy Ford висел некласифицированным в каждом утреннем отчёте. Job закончен, когда
+`responses-classified.csv` записан и `check-classified` вернул 0. В финальном ответе — его
+вывод, а не обещание дождаться.
+
 **Если `people-validated.csv` без `first_name` / `linkedin_url`** — не переписывай его
 руками: `outbound-pipeline.py fix-validated --campaign X` вернёт identity из
 `people-raw.csv`. Именно эта потеря колонок положила `2026-07-16-au-telehealth` на 7 недель.
