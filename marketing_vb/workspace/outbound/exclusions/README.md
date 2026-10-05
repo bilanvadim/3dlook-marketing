@@ -31,7 +31,7 @@
 | `katerina` | Katerina Galich (CEO) | UK |
 | `nick` | Nick Omelchak (BD) | USA |
 | `olena` | Olena Kudryavtseva (BD) | Europe / EU |
-| `katya` | Katya Boychuk (BD) | Israel |
+| `katya` | Katya Boychuk (BD) | South America (since 2026-10-05; Israel until 2026-10) |
 | `vadim` | Vadim Bilan (Marketing) | Australia |
 
 ## Структура
@@ -42,7 +42,7 @@ workspace/outbound/exclusions/
 ├── katerina-registry.json            профиль — Katerina (UK)
 ├── nick-registry.json                профиль — Nick (USA)
 ├── olena-registry.json               профиль — Olena (EU)
-├── katya-registry.json               профиль — Katya (Israel)
+├── katya-registry.json               профиль — Katya (South America; Israel until 2026-10)
 ├── vadim-registry.json               профиль — Vadim (Australia)
 └── global-company-registry.json      cross-profile: какие компании покрыты каким профилем
 ```

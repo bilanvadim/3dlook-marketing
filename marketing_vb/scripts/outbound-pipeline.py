@@ -96,7 +96,10 @@ PROFILE_GEO: dict[str, tuple[str, ...]] = {
               "romania", "bulgaria", "greece", "hungary", "slovakia", "slovenia",
               "croatia", "ukraine", "cyprus", "malta", "luxembourg", "iceland",
               "liechtenstein", "europe", "eu"),
-    "katya": ("israel", "uae", "united arab emirates", "saudi", "qatar", "kuwait",
+    # katya: Israel and the Gulf until 2026-10; South America from 2026-10-05 (Vadim).
+    "katya": ("brazil", "brasil", "argentina", "chile", "colombia", "peru", "ecuador",
+              "bolivia", "uruguay", "paraguay", "venezuela", "south america", "latam",
+              "israel", "uae", "united arab emirates", "saudi", "qatar", "kuwait",
               "bahrain", "oman", "gulf"),
     "vadim": ("australia", "new zealand"),
 }

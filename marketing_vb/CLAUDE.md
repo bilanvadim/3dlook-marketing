@@ -119,7 +119,7 @@
 | `katerina` | Katerina Galich (CEO) | UK |
 | `nick` | Nick Omelchak (BD) | USA |
 | `olena` | Olena Kudryavtseva (BD) | Europe / EU |
-| `katya` | Kateryna Boichuk (BD) | Israel |
+| `katya` | Kateryna Boichuk (BD) | South America (з 2026-10-05; Israel завершено) |
 | `vadim` | Vadim Bilan (Marketing) | Australia |
 
 Гіпотеза й список компаній кампанії мають відповідати ринку профілю (гео-дисципліна). Деталі — `runners/outbound-runner.md`.

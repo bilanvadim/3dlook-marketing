@@ -876,8 +876,13 @@ def build_card(cdir: Path, stage: str) -> str:
                 "or one the campaign rules clear by name.", "",
                 demote("\n\n".join(f for f in facts if f)), ""]
         if tti:
+            # The old wording ("A generic figure, never a promise for this company.") read as
+            # a sentence and was pasted into copy word for word on 2026-10-02. Keep this an
+            # instruction to the writer, with nothing quotable after the figure.
             out += [f"Integration, for the technical-integration angle only (icp-detail.md): "
-                    f"{tti.group(1)}. A generic figure, never a promise for this company.", ""]
+                    f"{tti.group(1)}", "",
+                    "(Writer's instruction, not copy: call it typical for a basic integration; "
+                    "do not present it as this company's timeline.)", ""]
         comp = pi / "compliance.md"
         lines = [md_section(comp, "1. Status at a glance", "2. GDPR roles"),
                  md_section(comp, "Outbound", level="###")]
@@ -1762,6 +1767,36 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
             if len(who) >= 2:               # a pair at one company already reads as a merge
                 soft.append((f"M{n} closing ask repeated", f"{g} ×{len(who)}",
                              f"«{clip(a, 50)}»: " + ", ".join(who[:4])))
+    # Near-duplicates within a company, 2026-10-05: four campaigns in a row QC found
+    # colleagues' sentences that differ only in their last words ("FitXpress is a guided
+    # two-photo scan that returns 80+ body measurements…" for 26 of 33). Exact matching
+    # missed them. Mandated verbatim sentences are skipped.
+    import difflib
+    verbatim = ("repeated scans showed", "112,100 scans", "34,000 scans")
+    per_group_s: dict[str, list[tuple[str, str]]] = defaultdict(list)
+    for p in people:
+        for n in (1, 2):
+            b = bodies.get((p["person_id"], n))
+            if not b:
+                continue
+            for s in re.split(r"(?<=[.?!])\s+", re.sub(r"https?://\S+", "", b)):
+                s = s.strip()
+                low = s.lower()
+                if len(s) > 40 and not any(v in low for v in verbatim):
+                    per_group_s[group_of(p, gmap)].append((p["person_id"], low.replace(SPEED_PHRASE, "")))
+    for g, items in per_group_s.items():
+        seen_pairs = set()
+        for i in range(len(items)):
+            for j in range(i + 1, len(items)):
+                (pa, sa), (pb, sb) = items[i], items[j]
+                if pa == pb or (pa, pb) in seen_pairs:
+                    continue
+                if difflib.SequenceMatcher(None, sa, sb).ratio() >= 0.8:
+                    seen_pairs.add((pa, pb))
+                    soft.append(("near-duplicate sentence", f"{g}: {pa} / {pb}", f"«{clip(sa, 50)}»"))
+    for (pid, n), b in bodies.items():
+        if n == 2 and re.search(r"96-97%", first_sentence(b)):
+            soft.append(("M2 opens with accuracy", f"{pid} M2", "lead with the outcome; the figure comes after"))
     for (pid, n), b in bodies.items():
         if re.search(r"\b45\s*sec|\bin seconds\b|\bseconds\b", b, re.I) and SPEED_PHRASE not in b:
             soft.append(("speed wording", f"{pid} M{n}", f"use «{SPEED_PHRASE}» verbatim"))

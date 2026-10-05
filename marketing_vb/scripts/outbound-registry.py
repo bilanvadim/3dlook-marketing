@@ -63,6 +63,7 @@ PROFILES = ["katerina", "nick", "olena", "katya", "vadim"]
 MARKET_TO_PROFILE = [
     ("australia", "vadim"), ("-au-", "vadim"), ("au-", "vadim"),
     ("israel", "katya"),
+    ("latam", "katya"), ("south-america", "katya"), ("brazil", "katya"), ("-br-", "katya"),
     ("-us-", "nick"), ("us-", "nick"), ("usa", "nick"),
     ("-uk-", "katerina"), ("uk-", "katerina"),
     ("europe", "olena"), ("-eu-", "olena"), ("eu-", "olena"),
@@ -210,7 +211,7 @@ def blank_profile_registry(profile: str) -> dict:
     return {
         "profile": profile,
         "market": {"katerina": "UK", "nick": "USA", "olena": "Europe / EU",
-                   "katya": "Israel", "vadim": "Australia"}.get(profile, ""),
+                   "katya": "South America (Israel until 2026-10)", "vadim": "Australia"}.get(profile, ""),
         "last_updated": today(),
         "campaigns": [],
         "excluded_companies": [],

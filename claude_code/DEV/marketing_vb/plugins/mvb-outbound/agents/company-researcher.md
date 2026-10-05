@@ -125,7 +125,7 @@ which hypothesis this list serves», но уже ПОСЛЕ работы. Гей
 ### Гео — фильтр, а не примечание
 
 Профиль кампании владеет своим рынком (CLAUDE.md секция 5: `katerina` UK, `nick` USA,
-`olena` Europe, `katya` Israel, `vadim` Australia). Компания не своего рынка — **не
+`olena` Europe, `katya` South America (Israel until 2026-10), `vadim` Australia). Компания не своего рынка — **не
 строка со флажком**, а строка для другого профиля: `validate-companies --write-routed`
 выносит их в `companies-routed-out.csv` с адресатом. Каждой нужна своя кампания у своего
 профиля (одна компания = один профиль, `exclusions/README.md` правило 1).

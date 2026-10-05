@@ -16,7 +16,7 @@ tools: Read, Write, Bash, Grep, Glob
 | `katerina` | Katerina Galich (CEO) | **UK** | UK telehealth/GLP-1, аптеки, страховики, employer health |
 | `nick` | Nick Omelchak (BD) | **USA** | US health-tech: telehealth, GLP-1, pharmacy, insurance, wellness |
 | `olena` | Olena Kudryavtseva (BD) | **Europe / EU** | GDPR-healthcare, EU pharmacy chains, insurers, wellness, MTM/uniforms |
-| `katya` | Katya Boychuk (BD) | **Israel** | Israeli digital health, insurtech, wellness, telehealth/pharma |
+| `katya` | Katya Boychuk (BD) | **South America** (since 2026-10-05; Israel finished) | LatAm digital health, telehealth, corporate health, weight-loss and aesthetic clinic networks |
 | `vadim` | Vadim Bilan (Marketing) | **Australia** | AU telehealth, GLP-1 / weight loss, pharmacy, wellness |
 
 **Гео-дисциплина:** гипотеза и список компаний должны соответствовать рынку профиля (UK-профиль → только UK-компании и т.д.). Если гипотеза требует другого гео — это сигнал взять другой профиль, а не смешивать рынки.
