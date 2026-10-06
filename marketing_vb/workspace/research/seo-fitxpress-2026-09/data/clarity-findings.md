@@ -35,7 +35,7 @@ Top real-session countries: US 232, India 119, Ukraine 69, Italy 67, UK 56, Pola
 | AiPlatform (chatgpt 43, claude 2, copilot 1) | 46 | 0 | 0% |
 
 - Bots come in with **no referrer on desktop**, which fits the GA4 "direct ~5 s" pattern. GA4 almost certainly counts part of this as Direct, so GA4 Direct numbers and anything built on them (engagement rate, conversion rate) are inflated or diluted.
-- **All 47 google/cpc sessions are bots.** They could be AdsBot landing-page checks or click fraud. Either way, Clarity saw **zero human paid-search sessions** in 72 h. Check Google Ads clicks against this.
+- **All 47 google/cpc sessions are bots.** They could be AdsBot landing-page checks or click fraud. Either way, Clarity saw **zero human paid-search sessions** in 72 h. Check Google Ads clicks against this. **Checked 2026-10-06: these were ad-review checks, not paid clicks. See §9.**
 - Bot share per page is highest on content-hub articles. Many health articles have more bot sessions than real ones, for example the FitXpress privacy FAQ (18 bots vs 6 real), bariatric (12 vs 8), glp-1-market (12 vs 2), top-7 GLP-1 tools (11 vs 4), ai-body-data-health-hub (11 vs 3) and online-pharmacy BMI guide (10 vs 4). /for-bmi-verification/ has 10 bots vs 10 real, telehealth 15 vs 20, and connected-fitness 13 vs 11.
 
 ## 3. FitXpress, pricing and contact pages
@@ -138,3 +138,11 @@ Mobile is about 1/3 of real traffic. It has **a third of the active time and a h
 8. **Filter Country = Singapore / China** in recordings to confirm they are flagged as bots or are 0-second sessions.
 9. **Mobile recordings from organic on the homepage**: there is 1 error click and 19 s active time, so check whether the hero CTA or nav works on mobile.
 10. **Filter out internal traffic** (Ukraine/Poland IPs, `staging.3dlook.me`, `localhost` referrers) with a Clarity custom tag or IP filter, so team visits stop polluting Direct-channel metrics.
+
+## 9. Update 2026-10-06: google/cpc checked against Google Ads
+
+Runbook step 0.1 #7. Sources: the Google Ads invalid-click summary from Vadim, and GA4 via `oo connector run google_analytics -a run_report`. Property 251675969 is linked to Ads, so `advertiserAdClicks` and `advertiserAdCost` are available there.
+
+- **The 47 bot sessions were not paid clicks.** They fall on 09-24/25, before the campaign got its first clicks. On 09-24 GA4 logged 42 google/cpc sessions with **0 Ads clicks**. The campaign was `(not set)`, the sessions lasted 0 s, and none were engaged. This is Google checking the landing page during ad review. Sessions like this keep arriving at 6–13 a day with campaign `(not set)`. Exclude them.
+- **Week 09-29…10-05: clicks ≥ sessions, so there is no click fraud.** Ads recorded 153 interactions, of which 7 were invalid (4.58%, a normal level), leaving 146 billable. GA4 shows exactly 146 clicks: 105 Google search and 41 Search partners. They produced 119 sessions (83 + 36) and cost $374. Sessions run lower than clicks because some visitors leave before GA4 loads or block it.
+- See ga4-findings.md §6 for the launch-week Display spike and spend.

@@ -118,7 +118,7 @@ What this means:
 
 - **Organic search is down 26% YoY** (18.1K → 13.4K) and **organic-sourced contact leads are down 47%** (59 → 31 `ap_ContactUsLead`).
 - The headline session growth is Direct bot traffic.
-- There is no meaningful paid activity.
+- There is no meaningful paid activity. This held until 09-24. A Google Ads campaign launched on 09-25; see §6.
 
 ### 12-month trend by channel (sessions)
 
@@ -380,6 +380,24 @@ That is about −37% YoY even with the new page counted.
 - No docs or API pages are on 3dlook.ai in this property. No `/demo` page exists: demo is a button (`demo_button_click`) whose result is not tracked.
 
 ---
+
+## 6. Paid search after launch (update 2026-10-06)
+
+GA4 is linked to Google Ads, so clicks, cost and network come from `advertiserAdClicks`, `advertiserAdCost` and `sessionGoogleAdsAdNetworkType`. There is one campaign, **«Body scanning + Wrist Measurement»**. It is a Search campaign billed in USD and launched on 09-25.
+
+| Network, 09-25…10-05 | Ads clicks | Cost | GA4 sessions | Engaged | Key events |
+|---|---|---|---|---|---|
+| Google search | 668 | $670.55 | 515 | 203 | 0 |
+| Search partners | 116 | $53.30 | 56 | 27 | 0 |
+| Google Display Network | 4,873 | $34.59 | 1,758 | 571 | 0 |
+| YouTube (no clicks billed) | 0 | 0 | 517 | 101 | 0 |
+| **Total** | **5,657** | **$758.44** | 2,846 | 902 | **0** |
+
+- **The campaign ran with Display Network expansion on from 09-26 to 09-28.** That produced 4,873 GDN clicks at under one cent each, and only 36% of them reached the site, which looks like accidental mobile-app clicks. The YouTube sessions belong to the same burst. GDN shows 0 impressions from 09-29, so it looks switched off.
+- **This puts about 2,600 extra google/cpc sessions into GA4 for 09-26…28**: 149, 1,746 and 712 a day. Subtract them from any comparison of September with other months.
+- **From 09-29 the campaign is Search only**, at about 21 clicks and $53 a day with a CPC of about $3.1.
+- **Spend so far is $758 with 0 key events.** The only key event is still `/contact-us/` (§0.4). Don't judge the campaign until the form-submit events from runbook step 0.2 are live.
+- Bot pattern: google/cpc sessions with campaign `(not set)` (6–13 a day, 0 s, 0 engaged) are ad-review crawler checks. See clarity-findings.md §9.
 
 ## Decision-relevant takeaways
 1. **Fix measurement before judging SEO.**
