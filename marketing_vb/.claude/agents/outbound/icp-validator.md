@@ -111,7 +111,20 @@ python3 scripts/outbound_pack.py promote --campaign {campaign} \
 
 ## `icp-validation-summary.md`
 
+Frontmatter обязателен (CLAUDE.md §10.4): без `product:` QC не ставит выше 1 из 3 по
+критерию D. Так срезались 2026-10-05 и 2026-10-06, потому что шаблона здесь не было.
+`product` и `profile` бери из карточки.
+
 ```markdown
+---
+product: fitxpress | mobile_tailor
+profile: {profile}
+campaign: {campaign}
+created: YYYY-MM-DD
+stage: validate
+status: awaiting_review
+---
+
 # ICP Validation Summary — {campaign}
 
 ## Stats
