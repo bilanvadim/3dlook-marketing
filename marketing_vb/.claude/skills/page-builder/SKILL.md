@@ -153,7 +153,15 @@ Nouns for deliverables, numbers for claims, and every number traceable to `proof
 over features — the KPI block of the use-case file is the spine. A differentiator without proof is
 deleted, not softened.
 
-**3. Guardrails + humanisation — one mandatory pass, run after the draft is finished.**
+**2b. Sales pass — after the draft, before humanisation (Vadim, 2026-10-06).** A landing sells; the
+article teaches. Run the ten rules in `kit-vertical-page.md`, "Sell, not educate", block by block:
+H1 = product + audience + primary outcome, value before mechanics, a conclusion after every number and
+table, a benefit beside every feature, one job per block, proof behind the claim, and the blog test on
+every paragraph (if it could move to the hub article without weakening the case, cut it). This pass
+cuts and moves content, so it runs before humanisation polishes what is left. Guardrail hedges, the
+method sentence and the boundary sentence are not filler and stay.
+
+**3. Guardrails + humanisation — one mandatory pass, run after the sales pass.**
 Start with the detector (`brand-assets/style-guides/scripts/detect-ai-tells.py --channel page --summary`), then run `references/copy-humanisation.md`: the 11 editorial guardrails and M1/M2, the terminology
 guardrails, CLAUDE.md §6 banned phrases, then the AI-tell sweep. Do not fold this into writing; a
 drafter policing their own tells does neither job well. The pass ends with the honest question "what
@@ -271,10 +279,16 @@ attributed to the page, scroll depth.
   accurate" or "best-in-class" — that is an anti-positioning violation and an automatic hard fail.
 - **Use-case landings are short (Vadim, 2026-09-30).** 1,100-1,300 words of visible copy, 4-6 FAQ,
   depth in the linked articles. Order and budget: `kit-vertical-page.md`, "Length and order".
+- **Sell, not educate (Vadim, 2026-10-06).** Use-case landings exist to close leads. H1 = product +
+  audience + primary outcome; what the actor gets comes before how it works; every feature carries its
+  benefit and every number its conclusion; one job per section; a paragraph that would sit just as well
+  in the hub article is cut. Rules and what each changes: `kit-vertical-page.md`, "Sell, not educate".
+  The blind judge scores them as the "Sales argument" axis (15 points).
 - **Enterprise register (Asselya, 2026-10-02).** At most 12.5 "you / your" per 1,000 words, the actor
   named in explanatory sentences, every acronym expanded at first use, no "vs" in headings, no FAQ that
-  repeats the body. Benchmark: `workspace/pages/for-insurance-underwriting/page-final-2026-10-02.md`;
-  rules in `kit-vertical-page.md`, "Register for an enterprise reader".
+  repeats the body. Benchmark: `workspace/pages/for-insurance-underwriting/page-final-2026-10-02.md`
+  (register only: it predates the sales rules); rules in `kit-vertical-page.md`, "Register for an
+  enterprise reader".
 - **Medical framing is fixed language.** "FitXpress is not a medical device." State the boundary
   directly; "positioned as" is banned for product, intended-use and regulatory statements
   (`terminology-guardrails.md` §2.10). Never assert that a regulatory framework "does not apply".

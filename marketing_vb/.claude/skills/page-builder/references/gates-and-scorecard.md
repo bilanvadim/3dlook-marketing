@@ -154,23 +154,35 @@ Threshold **85 / 100**. Below it, return to the axis that lost points. Do not av
 
 | Axis | Weight | What is checked |
 |---|---|---|
-| Proof of belonging to the vertical | 20 | context facts, regulators, 2+ vertical cases, integration and formats, quote. On a FitXpress page the standing waiver's substitutes score here: the vertical's own workflow and systems, anonymised `proof-points.md` figures, the accuracy framework and the trust FAQ |
+| Proof of belonging to the vertical | 15 | context facts, regulators, 2+ vertical cases, integration and formats, quote. On a FitXpress page the standing waiver's substitutes score here: the vertical's own workflow and systems, anonymised `proof-points.md` figures, the accuracy framework and the trust FAQ |
 | Claims discipline | 15 | every figure traced and identical everywhere, accuracy figures carried with their reference and limit plus a link to the accuracy framework, each third-party statistic linked to its primary source on the label, reserved words absent, medical framing correct, M1 acronyms (SDK, API, NDA, BAA, SOC 2 and FDA included), M2 negation |
-| Uniqueness against the parent | 15 | 60% rule, different Yoast title and description, no cannibalisation of the hub article |
-| Conversion | 15 | one action, soft alternative, short form, price signal, events working, visible copy within 1,100-1,300 words, a call to action on every second screen |
+| Sales argument | 15 | the kit's "Sell, not educate" rules (2026-10-06): H1 = product + audience + primary outcome; value before mechanics ("What you get" before "How it works"); a conclusion stated after every number, table and comparison; a benefit beside every feature; one job per block; proof backing a claim, never standing in for it; no paragraph that could move to the hub article without weakening the case (the blog test); visible copy within 1,100-1,300 words |
+| Uniqueness against the parent | 10 | 60% rule, different Yoast title and description, no cannibalisation of the hub article |
+| Conversion | 10 | one action, soft alternative, short form, price signal, events working, a call to action on every second screen |
 | Copy in the buyer's language | 10 | vertical vocabulary, verbatim pains, the segment's "what NOT to say" honoured, the vertical's actor named (the pharmacy, the clinic, the employer), not a generic "organization" (terminology guardrail §2.14); enterprise register: "you / your" at most 12.5 per 1,000 words, a named subject in every sentence, no figurative or conversational headings (kit, "Register for an enterprise reader") |
 | Human copy | 10 | no AI tells, varied rhythm, an opinion and a boundary present |
 | Search and AI visibility | 10 | vertical queries, 4-6 FAQ with the keyword map's GEO phrases as H3 + FAQPage schema (no FAQ repeating the body), question H2s where a section answers one, quotable structured blocks |
-| Place in the site | 5 | link up, two siblings, hub article, breadcrumbs, canonical |
-| Design and technical layer | 5 | `DESIGN.md` tokens, mobile, performance, indexation |
+| Place in the site and technical layer | 5 | link up, two siblings, hub article, breadcrumbs, canonical; `DESIGN.md` tokens, mobile, performance, indexation |
+
+**Weights since 2026-10-06.** The sales rules got their own axis, because a judge that scores them
+inside Conversion or buyer language lets a well-placed, well-worded page that explains instead of sells
+pass at 85. The 15 points came from Proof of belonging (20 → 15), Uniqueness (15 → 10, G-I already
+checks the 60% rule), Conversion (15 → 10, the length budget moved to Sales argument) and merging
+Place in the site with the technical layer. The old table summed to 105, not 100; judge rounds before
+this date were scored out of 105.
 
 **Short pages are the standard (Vadim, 2026-09-30).** Do not deduct for depth that sits in a linked
 article: a page that sends the four accuracy conditions, the full compliance answers or the vertical's
-process to an article by link has done its job. Deduct on Conversion when the visible copy runs past
+process to an article by link has done its job. Deduct on Sales argument when the visible copy runs past
 1,400 words.
 
-Technical and placement carry only 5 each because G-T and G-A already block on them. Scoring them
-heavily here would count the same check twice and let a page buy its way to 85 on plumbing.
+**The sales rules never outrank claims discipline.** A guardrail hedge ("may reduce" on an outcome
+without an internal figure), the method sentence beside the accuracy figures and the boundary sentence
+are required, not filler: do not deduct Sales argument for them, and deduct Claims discipline when a
+page sells by dropping them.
+
+Placement and the technical layer share 5 points because G-A and G-T already block on them. Scoring
+them heavily here would count the same check twice and let a page buy its way to 85 on plumbing.
 
 **Why claims discipline carries 15:** it is the axis that ends deals. A diligence reader who finds two
 different versions of the same number stops reading the page and starts doubting the product.
@@ -209,5 +221,5 @@ Against the baseline captured at G-A.
 | Nothing at 90 days | Wrong place in the site, or no demand | Review placement, consider merging into the product page |
 | The parent or the hub article dropped after this page launched | The new page is a duplicate | Fold it back into a section |
 
-The last row is why uniqueness carries 15 points, and it is the specific risk on this site, where a
+The last row is why uniqueness keeps 10 points after the 2026-10-06 rebalance, and it is the specific risk on this site, where a
 vertical page and its hub article can end up chasing the same query.

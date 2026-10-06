@@ -31,12 +31,25 @@ is forbidden. `quality-controller` does not substitute for G-J — it is neither
 **Short and commercial (Vadim, 2026-09-30).** Use-case landings convert and the articles teach:
 1,100-1,300 words of visible copy, 4-6 FAQ, one paragraph then a link for anything deeper, a call to
 action on every second screen, "no integration fee" in the price line. Page order and word budget: the
-Kit's "Length and order" section. Shape and register benchmark (since 2026-10-02):
+Kit's "Length and order" section. Length and register benchmark (since 2026-10-02):
 `workspace/pages/for-insurance-underwriting/page-final-2026-10-02.md`, the copy passed to design after
 Asselya's deduplication and guardrails pass. Her rules (direct address at most 12.5 per 1,000 words, every
 acronym expanded, no "vs" in headings, a named subject in every sentence, no FAQ repeating the body) are
 in the Kit's "Register for an enterprise reader" section, and `detect-ai-tells.py --channel page`
 checks the first three.
+
+**Sell, not educate (Vadim, 2026-10-06).** Use-case landings need a stronger sales angle to close
+leads, so the team's ten writing rules are now part of the Kit ("Sell, not educate", quoted verbatim):
+H1 = product + audience + primary outcome; value before explanation, so "What you get" now comes before
+"How it works"; conclusions stated, never left for the reader; every feature turned into a benefit; one
+job per section; explanation cut unless it helps the buying decision; proof backing the claim rather
+than standing in for it; and the blog test (a paragraph that could move to an article without
+weakening the sales argument is cut). They run as their own sales pass after the draft and before
+humanisation, the blind judge scores them as a 15-point "Sales argument" axis (the scorecard was
+rebalanced and now sums to 100; it summed to 105 before), and `detect-ai-tells.py --channel page`
+reports an H1 without the product name. Guardrail hedges, the method sentence and the boundary sentence
+are claims discipline, not filler, and always win over "cut qualifiers". The insurance final page stays
+the register benchmark only: its H1, block order and record table predate these rules.
 
 **The schema benchmark:** `/structured-body-data-for-telehealth-digital-health-programs/` (July 2026)
 still sets the standard for FAQPage and Service schema (`audienceType` + `areaServed`), claims

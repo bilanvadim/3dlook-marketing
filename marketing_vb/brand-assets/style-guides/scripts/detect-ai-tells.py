@@ -654,8 +654,10 @@ CHANNELS = {
         # The last three came from Asselya's edits to the final insurance landing (2026-10-02):
         # too much "you" for an enterprise buyer, "vs" in an H2, and SDK / API / NDA / BAA left
         # unexpanded at first use. All three are soft: they go to house_rule_violations.
+        # h1_product: sales rule 1 (Vadim, 2026-10-06), H1 = product + audience + primary outcome.
+        # Only the product name is mechanical; audience and outcome stay with the judge. Soft too.
         "structure_checks": ["em_dash", "bold", "title_case", "emoji", "uniform_rhythm", "list_ratio",
-                             "direct_address", "heading_vs", "acronym_first_use"],
+                             "direct_address", "heading_vs", "acronym_first_use", "h1_product"],
         "hashtag_limit": None,
         "emoji_limit": 0,
         # The final insurance page runs 12.1 per 1,000 words including the form; our v2 ran 23.7.
@@ -882,6 +884,7 @@ def rhythm_metrics(text: str) -> dict:
 DIRECT_ADDRESS_RE = re.compile(r"\b(?:you|your|yours|you're|you'll|yourself)\b", re.IGNORECASE)
 # A hyphenated compound ("disclosed-versus-captured comparison") is a modifier, not the
 # compressed "X vs Y" heading the rule is about.
+PRODUCT_NAME_RE = re.compile(r"\b(?:FitXpress|Mobile\s+Tailor)\b", re.IGNORECASE)
 HEADING_VS_RE = re.compile(r"(?<!-)\b(?:vs|versus)\b(?!-)\.?", re.IGNORECASE)
 # "SOC 2" first, so the alternation takes the two-token form before the bare "SOC" can match.
 # A hyphenated tail belongs to the token (GLP-1, SSE-S3). A trailing lowercase "s" is a plural
@@ -970,6 +973,10 @@ def style_metrics(text: str, lang: str, channel: dict, line_offset: int = 0) -> 
         page_metrics["vs_headings"] = [h.strip() for h in headings if HEADING_VS_RE.search(h)]
     if "acronym_first_use" in checks:
         page_metrics["unexpanded_acronyms"] = unexpanded_acronyms(text, line_offset)
+    if "h1_product" in checks:
+        h1 = re.search(r"^#\s+(.+)$", text, re.MULTILINE)
+        page_metrics["h1_names_product"] = bool(h1 and PRODUCT_NAME_RE.search(h1.group(1)))
+        page_metrics["h1_text"] = h1.group(1).strip() if h1 else None
 
     return {
         "em_dashes": em,
@@ -1061,6 +1068,10 @@ def analyze(text: str, lang: str, channel_name: str, profile: str = None) -> dic
     if "acronym_first_use" in ch["structure_checks"] and sm["unexpanded_acronyms"]:
         listed = ", ".join(f"{a['acronym']} (line {a['line']})" for a in sm["unexpanded_acronyms"][:12])
         house.append(f"acronyms not expanded at first use: {listed}")
+    # No H1 at all is the judge's hard fail, not this check's.
+    if "h1_product" in ch["structure_checks"] and sm.get("h1_text") and not sm["h1_names_product"]:
+        house.append(f"H1 does not name the product (FitXpress / Mobile Tailor): \"{sm['h1_text']}\". "
+                     f"Sales rule 1: H1 = product + audience + primary outcome")
 
     markers_by_category = {}
     for cat, hits in hard_hits.items():

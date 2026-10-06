@@ -63,24 +63,97 @@ framework and the trust FAQ, which the page links to.
   an article. The page keeps one line and links to it.
 - **A call to action on every second screen:** the hero, after the "what you get" block, after the pilot
   block, and the form.
-- **Shape and register benchmark:** `workspace/pages/for-insurance-underwriting/page-final-2026-10-02.md`,
+- **Register benchmark:** `workspace/pages/for-insurance-underwriting/page-final-2026-10-02.md`,
   the copy passed to design on 2026-10-02 after Asselya's deduplication and guardrails pass
-  (`comments-asselya-2026-10-02.md`). It replaces `page-v2-short.md` as the model. The telehealth page
-  stays the benchmark for schema and claims discipline, not for length.
+  (`comments-asselya-2026-10-02.md`). It replaces `page-v2-short.md` as the model for length and
+  register. It predates the sales rules of 2026-10-06, so it is not the model for the H1, the block
+  order or the record table: see "Sell, not educate" below for the five places it falls short. The
+  telehealth page stays the benchmark for schema and claims discipline, not for length.
 
 | # | Block, in page order | Words | Slots |
 |---|---|---|---|
-| 1 | Hero: H1 with the primary keyword, 2-3 sentences (outcome and time), "Book a demo" to `#demo` and an anchor to block 4, a four-fact strip. An illustrative product mock is allowed when captioned "Illustrative example" | ~90 | 1, 2, 3, 15 |
-| 2 | The problem: a question H2, one sentence that defines the gap without repeating the hero, three numbers from named industry sources with each source label linked to the primary source, a link to the hub article | ~90 | 4, 5 |
-| 3 | How it works in three steps, in the vertical's own systems; the recommended setup in one line; a link to the feature page | ~130 | 7, 12 |
-| 4 | What you get: a five-row table with a neutral column heading ("Returned output"), then "Get a sample" to `#demo` | ~150 | 6 |
-| 5 | "FitXpress compared with…": a five-row table, and one line on where the old method still fits | ~120 | 5 |
-| 6 | Accuracy and data handling on one screen, under a question H2 ("How accurate is FitXpress, and how is … data handled?"): three figures, one method sentence, five data lines, links to the accuracy framework and the trust FAQ | ~180 | 8, 9 |
-| 7 | Pilot and price: a formal H2 ("Evaluate FitXpress before using its outputs in …"), one production-infrastructure sentence, the entry price and `/pricing/`, three steps, what the evaluation should quantify, a demo button | ~150 | 10, 14 |
+| 1 | Hero: H1 = product + audience + primary outcome, with the primary keyword; 2-3 sentences, what the vertical's actor gets first, then time and effort; "Book a demo" to `#demo` and an anchor to block 3; a four-fact strip. An illustrative product mock is allowed when captioned "Illustrative example" | ~90 | 1, 2, 3, 15 |
+| 2 | The problem: a question H2, one sentence on what the gap costs this buyer (money, risk, time or retention) without repeating the hero, three numbers from named industry sources backing that sentence, each source label linked to the primary source, a link to the hub article | ~90 | 4, 5 |
+| 3 | What you get: a five-row table, each returned output beside what it changes for the actor (neutral column headings, e.g. "Returned output" and "What it changes in underwriting"), then "Get a sample" to `#demo` | ~170 | 6 |
+| 4 | How it works in three steps, in the vertical's own systems, each step saying what it spares or gives the actor; the recommended setup in one line; a link to the feature page | ~100 | 7, 12 |
+| 5 | "FitXpress compared with…": a five-row table, one sentence on what the comparison means for this buyer, and one line on where the old method still fits | ~120 | 5 |
+| 6 | Accuracy and data handling on one screen, under a question H2 ("How accurate is FitXpress, and how is … data handled?"): the answer in the first sentence, then three figures, one method sentence, five data lines, links to the accuracy framework and the trust FAQ | ~180 | 8, 9 |
+| 7 | Pilot and price: a formal H2 ("Evaluate FitXpress before using its outputs in …"), the low-risk start first, one production-infrastructure sentence (one, not a paragraph), the entry price and `/pricing/`, three steps, what the evaluation should quantify, a demo button | ~150 | 10, 14 |
 | 8 | FAQ: 4-6 questions, GEO phrases from the keyword map verbatim as H3, the answer in the first sentence, none repeating a block above | ~250 | 13 |
 | 9 | The shared form at `#demo` with a soft exit to the hub article; `legal@3dlook.me` for procurement documents in the footer. No separate "keep reading" block | ~50 | 15, 16 |
 
-The order and the budget decide the page. The slots below say what each ingredient must contain.
+The order and the budget decide the page. "What you get" sits before "How it works" since 2026-10-06
+(sales rule 2: value before explanation). The slots below say what each ingredient must contain.
+
+## Sell, not educate (Vadim, 2026-10-06)
+
+Use-case landings need a stronger sales angle, because their job is to close leads. Vadim passed on the
+team's writing rules on 2026-10-06. Verbatim:
+
+> 1. **H1 = product + audience + primary outcome.** Keep it clear, specific, and outcome-focused.
+> 2. **Lead with value, not explanation.** Tell the customer what they get before explaining how it works.
+> 3. **Write to sell, not educate.** A landing page is not an article or product guide.
+> 4. **State conclusions directly.** Never make the reader connect the dots.
+> 5. **Turn features into benefits.** Always answer: "Why should the customer care?"
+> 6. **Give each section one job.** One section = one message, benefit, or objection.
+> 7. **Cut unnecessary explanation.** Remove technical details, background, and process unless they help the buying decision.
+> 8. **Keep it concise.** Remove filler, repetition, qualifiers, and long-winded phrasing.
+> 9. **Use proof to support the claim.** Stats, studies, and technical details should strengthen the argument—not become the argument.
+> 10. **Apply the "blog test."** If a paragraph could be moved to a blog post without weakening the sales argument, cut it.
+
+What each rule means on a use-case landing:
+
+- **H1 (rule 1).** The product name, the audience and the one outcome that audience pays for, in the H1
+  itself, not only in the eyebrow. The primary keyword stays in it (slot 2). An output is not an
+  outcome: "build and BMI evidence" is what FitXpress returns; checking disclosed build without slowing
+  the accelerated path is why a carrier buys it.
+- **Value before mechanics (rule 2).** The hero opens with what the actor gets. Time and effort ("under
+  45 seconds", "on the applicant's own phone") count as value; how the capture works does not belong in
+  the hero. On the page, "What you get" comes before "How it works".
+- **Conclusions stated (rule 4).** Every number, table and comparison is followed or preceded by one
+  sentence saying what it means for this buyer: money, risk, time or retention. "Build is the leading
+  misclassification reason" is evidence; the sentence that follows says what that misclassification
+  costs the carrier. The question H2s stay (problem and accuracy, Asselya's register), and the first
+  sentence under each one is the answer, not a lead-in.
+- **Benefits (rule 5).** Every feature answers "why should the actor care?" in the same sentence or the
+  next. The "What you get" table carries the answer in its own column. A feature with no answer is cut.
+- **One job per block (rule 6).** The blocks in the table above are the jobs: the outcome (hero), the
+  cost of the gap (problem), what the actor gets, the effort to adopt (how it works), why not the old
+  method (comparison), whether it can be trusted (accuracy and data), a low-risk start and the price
+  (pilot), the remaining objections (FAQ), the action (form). A sentence doing another block's job moves
+  there or goes. A statement H2 names the block's message, not its topic: "The underwriting case-file
+  output" is a topic.
+- **Explanation only where it moves the decision (rules 7 and 3).** Technical detail stays when it
+  removes a buying objection: integration effort (the SDK or API and the system the result lands in),
+  data handling for a regulated buyer, accuracy with its method. Model internals, capture mechanics,
+  market background and definitions go to the linked article, or to the FAQ when buyers really ask.
+- **Concise (rule 8).** Filler, repeats, stacked hedges and long-winded phrasing go. **Not filler:**
+  the qualifiers the guardrails require, meaning the hedge on an outcome without an internal figure
+  (guardrail #1: "may reduce", "can help"), the method sentence beside the accuracy figures (#4), the
+  boundary sentence (#6) and "available when enabled for the deployment" (register). When a sales rule
+  and a guardrail pull apart, the guardrail wins and the sentence is rewritten so it sells inside it.
+- **Proof behind the claim (rule 9).** Claim first, proof after. The three problem numbers back one
+  sentence about the cost of the gap; the accuracy figures back the answer to the accuracy H2. A strip
+  of numbers with no claim above it, or a block that is mostly method, has made the proof the argument.
+- **The blog test (rule 10).** Before the judge, read every paragraph and ask whether it could move to
+  the hub article without weakening the case for a demo. If it could, cut it and leave a one-line link
+  when the depth matters. Record the cuts in `log.md`.
+
+The sales rules decide what each sentence does; the register rules below decide how it sounds. Both
+apply. "Sell" never licenses direct address above 12.5 per 1,000 words, figurative headings or an
+unsubstantiated outcome.
+
+**Where the insurance benchmark falls short of these rules.** `page-final-2026-10-02.md` was approved
+before them, so do not copy these five: (1) the H1 "Second-source build and BMI evidence for accelerated
+underwriting" names neither the product nor the audience and states an output; (2) "How it works" comes
+before the record; (3) the record table lists outputs with no "what it changes" column; (4) the problem
+block leaves the cost of misclassification for the reader to infer ("The remaining gap is independent
+build evidence"); (5) the pilot block spends a second sentence on infrastructure, which fails the blog
+test.
+
+Illustrative H1s (not approved copy; the final H1 is Vadim's call):
+"FitXpress for life insurers: check disclosed build without slowing accelerated underwriting" ·
+"FitXpress for fitness apps: retain members with a mobile alternative to the gym body scanner".
 
 ## Register for an enterprise reader (Asselya, 2026-10-02)
 
@@ -134,13 +207,17 @@ workflows"), without naming a client's market or a client count.
 release (`docs/page-pipeline.md`); until it is live, do not link a middle level that resolves to a
 redirect.
 
-**2. H1** — `[Outcome in the vertical's terms] for [vertical]`. Not "AI-powered precision" but
-"Verified weight and BMI capture for GLP-1 programs". One H1. Primary query in it and in the first
-100 words. No "best", no "most accurate", no banned words from CLAUDE.md §6.
+**2. H1** — product + audience + primary outcome (sales rule 1, 2026-10-06), e.g.
+`[Product] for [audience]: [primary outcome]`. The product name sits in the H1 itself, not only in the
+eyebrow. The audience is named the way it names itself (life insurers, fitness apps, online
+pharmacies). The outcome is what that audience pays for, not what FitXpress returns. Not "AI-powered
+precision", and not an output list. One H1. Primary query in it and in the first 100 words. No "best",
+no "most accurate", no banned words from CLAUDE.md §6. `detect-ai-tells.py --channel page` reports an H1
+without the product name.
 
-**3. Hero + a vertical proof point** — one sentence on what the product does here, plus a number from
-**this** vertical: scans delivered for a named customer in this market, or the KPI the use-case file
-names. A company-wide scale figure appears only as "100+ clients", the one public number everywhere
+**3. Hero + a vertical proof point** — one sentence on what the vertical's actor gets (the outcome), then
+how fast and with how little effort, plus a number from **this** vertical: scans delivered for a named
+customer in this market, or the KPI the use-case file names. No description of the process in the hero. A company-wide scale figure appears only as "100+ clients", the one public number everywhere
 (Vadim, 2026-09-30). "112,100 scans" and "67 clients" never appear on a page. An approved vertical
 figure beats both.
 
@@ -163,6 +240,9 @@ negation onto it. "Positioned as" is banned (terminology guardrail §2.10, since
 **7. How it works, three steps** — do not restate the whole product flow. Three steps as they run in
 this vertical, in its own systems: what the person does, what FitXpress returns, where the result goes
 and who acts on it (consent capture, retake logic, who reviews a flagged scan, how the record is filed).
+Each step says what it spares or gives the actor (no appointment, no new queue, the result in the
+system the team already uses). Process detail that does not change the buying decision goes to the
+feature page.
 
 **8. Data handling: five lines and a link** — for regulated verticals this still decides deals, so it
 sits on the proof screen next to the accuracy figures, but short. Wording as on the final insurance
@@ -290,8 +370,9 @@ principle #11. Medical, clinical or regulatory framing goes to Whitney before it
    `/structured-body-data-for-telehealth-digital-health-programs/`, which is the in-house benchmark —
    scoped accuracy, a real comparison block, a 13-question FAQ with schema, no banned words in the
    headings. Take its schema and its claims discipline, not its length: the budget is 1,100 to 1,300
-   words ("Length and order" above), and the shape and register benchmark is
-   `workspace/pages/for-insurance-underwriting/page-final-2026-10-02.md`.
+   words ("Length and order" above), and the length and register benchmark is
+   `workspace/pages/for-insurance-underwriting/page-final-2026-10-02.md`. It predates the sales rules,
+   so take the H1, the block order and the record table from "Sell, not educate", not from it.
 2. **Read the use-case file, `audience.md` and the segment's "what NOT to say"** before the first
    sentence. A vertical page written without them is a product page with a new headline.
 3. **Check the 60% rule before handover** — count the paragraphs with no equivalent on the parent.
@@ -318,12 +399,17 @@ principle #11. Medical, clinical or regulatory framing goes to Whitney before it
 11. **Links up, sideways, to the hub article and to conversion** — all four directions, every page.
 12. **Mark visuals:** `[HERO]`, `[CONTEXT]`, `[COMPLIANCE]`, `[WORKFLOW]`, `[ACCURACY]`,
     `[CASE CARD]`, `[QUOTE]`, `[INTEGRATION]`.
-13. **Run `copy-humanisation.md` as its own pass** after the draft is finished. Negative parallelism
+13. **Run the sales pass** after the draft is finished and before humanisation, because it cuts and
+    moves content and humanisation polishes what is left. Take the ten rules in "Sell, not educate" as a
+    checklist, block by block: the H1 formula, value before mechanics, a conclusion after every number
+    and table, a benefit beside every feature, one job per block, and the blog test on every paragraph.
+    Record the cuts in `log.md`.
+14. **Run `copy-humanisation.md` as its own pass** after the sales pass. Negative parallelism
     ("not just X — it's Y"), rule-of-three triads and the CLAUDE.md §6 banned words are hard fails at
     the judge, not style preferences. Then the register checks above: direct address within 12.5 per
     1,000 words, every acronym expanded, no "vs" in headings, a named subject in every sentence, and a
     deduplication read across blocks.
-14. **Fact-check** every figure, customer name, framework and price against the sources before
+15. **Fact-check** every figure, customer name, framework and price against the sources before
     handover, and write `fact-sheet.md` for the blind judge as you go.
 
 ---
@@ -385,6 +471,8 @@ their own URL and are never a copy of the vertical page.
 - [ ] Vertical context carries ≥3 facts absent from the parent page
 - [ ] Regulators and frameworks named precisely; every acronym expanded at first use
 - [ ] Visible copy 1,100 to 1,300 words; FAQ 4-6 questions, none repeating the body; a call to action on every second screen
+- [ ] H1 = product + audience + primary outcome, with the primary keyword (detector `--channel page` reports an H1 without the product)
+- [ ] Sales pass done: "What you get" before "How it works"; a benefit beside every feature; a conclusion with every number, table and comparison; one job per block; no paragraph that passes the blog test
 - [ ] Register: "you / your" at most 12.5 per 1,000 words, actor named in explanatory sentences; every acronym expanded at first use; no "vs" in headings (detector `--channel page` reports all three)
 - [ ] Accuracy figures carry their reference and limit, plus a link to the accuracy framework; no bare percentages; no reserved words
 - [ ] Boundary sentence present, stated once, in the approved wording

@@ -13,7 +13,7 @@ argument-hint: "[vertical or URL] [stage (gate/build/judge/handoff/full)]"
 | Stage | What happens |
 |-------|--------------|
 | `gate` | Phase 0–2: интейк, роутинг в Kit, гейты G-I (стоит ли страница существовать) и G-A (архитектура, URL, каннибализация). Останавливается на чекпоинте Вадима |
-| `build` | Phase 3: структура по слотам Kit → копирайт → пасс гардрейлов и гуманизации → AI-visibility → UI/UX по DESIGN.md → конверсия → техслой |
+| `build` | Phase 3: структура по слотам Kit → копирайт → sales-пасс (10 правил «Sell, not educate», blog test) → пасс гардрейлов и гуманизации → AI-visibility → UI/UX по DESIGN.md → конверсия → техслой |
 | `judge` | Phase 4–5: гейт G-T + слепой судья в свежем сабагенте, порог 85/100, до 3 раундов |
 | `handoff` | Phase 6: пакет для того, кто публикует в WordPress — README, TODO, fact-sheet, Yoast и schema инструкции |
 | `full` | От текущего состояния до ближайшего чекпоинта |
