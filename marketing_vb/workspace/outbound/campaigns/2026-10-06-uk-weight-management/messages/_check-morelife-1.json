@@ -1,0 +1,150 @@
+{
+ "campaign": "2026-10-06-uk-weight-management",
+ "checked": 35,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "morelife-1",
+ "generated": "2026-10-06T17:49:53",
+ "hard": [],
+ "soft": [
+  [
+   "no calendar link",
+   "anthony-hardley-3609244a M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "georgia-apsitis-9730045a M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "christine-render-5584522b M2",
+   "angle referral"
+  ],
+  [
+   "pricing word",
+   "juli-mey M1",
+   "Hi Juli, Leading a Tier 3 practitioner team across Sussex, Greater Manchester and Essex makes consistency acr…"
+  ],
+  [
+   "no calendar link",
+   "nadine-heywood-5a1a8712a M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "angelina-spathopoulou-301435b0 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "oliver-lyons-5351311a5 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "phebe-oyinkansola-alabi-5683481a3 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "suki-sabine-693109162 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "annaalla M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "grace-bajo-anutr-5bb864178 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "chad-haefele-727044151 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "evan-robertson-anutr-2b2a1714b M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "anjal-panamparambil-saji-141708155 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "ben-truett-36a339157 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "emily-saunders-sport M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "alex-salvaggio-msc-senr-525a91222 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "phoebeorango M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "julie-hearn M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "olivia-potter-62999b232 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "areesha-r-b4809b204 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "eltrent-summers-192a6a236 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "cherie-trutwein-anutr-696106262 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "evie-comber-0a7a14282 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "richard-ruff-21953a28a M2",
+   "angle referral"
+  ],
+  [
+   "near-duplicate sentence",
+   "MoreLife: grant-westermann-016529b / susan-brennan-09a48826",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MoreLife: grant-westermann-016529b / sophie-edwards-b59225187",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MoreLife: susan-brennan-09a48826 / sophie-edwards-b59225187",
+   "«in most enterprise deployments, the customer acts…»"
+  ]
+ ]
+}

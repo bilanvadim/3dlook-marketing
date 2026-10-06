@@ -1,0 +1,2791 @@
+first_name,last_name,linkedin_url,company,title,email,connection_note,message_1,message_2
+John,Moore,https://linkedin.com/in/john-moore-a3b92262,LighterLife,Lighterlife Counsellor,,,"Hi John,
+
+On the account side of LighterLife, which team owns the part of a client's account where their own records are kept?
+
+A guided scan fits there: a front photo, a side photo, then 80+ body measurements back on the page.
+
+Even half an answer helps.
+
+Katerina","Hi John,
+
+Picking this up from another side: the scan needs no hardware, which leaves the account team with one decision.
+
+Is that a team you could name?
+
+Katerina"
+Siri,Steinmo,https://linkedin.com/in/siri-steinmo-27485a64,Reset Health,Behaviour Change Specialist,,,"Hi Siri,
+
+Health psychology and user research alongside weight management is a rare mix. Reset Health helps people manage obesity and type 2 diabetes through the Roczen app.
+
+Who shapes the steps a person is asked to complete between sessions in it? FitXpress returns 80+ body measurements from two phone photos, and a capture step could be one of them.
+
+Katerina","Hi Siri,
+
+One more angle on the same question: when Roczen adds a step for a person, which design or research group reviews it first?
+
+Either a name or a team helps.
+
+Katerina"
+Margaret,Campbell,https://linkedin.com/in/margaret-campbell-27094866,LighterLife,Counsellor,,,"Hi Margaret,
+
+The days between two LighterLife online sessions are when a client is on their own with the programme.
+
+Who shapes what a client can record at home in that gap? FitXpress adds one option, a guided scan that returns a 3D model with 80+ body measurements.
+
+Katerina","Hi Margaret,
+
+One more way to frame it. If a client asked for a record of their own at home, whose desk would the request reach?
+
+Katerina"
+Dr Vicky,Lawson,https://linkedin.com/in/velawson,Reset Health,Consultant Health Psychologist,,,"Hi Dr Vicky,
+
+A short question for Reset Health's psychology team. Does it have a say in which body data an app like Roczen shows a person?
+
+The scan we make returns 80+ body measurements and a 3D model from two photos, and the team chooses what is shown. Who would be the right person to ask?
+
+Katerina","Hi Dr Vicky,
+
+If this sits with another team at Reset Health, a route to them would be welcome. Thank you.
+
+Katerina"
+Anne,Matterface,https://linkedin.com/in/anne-matterface-17477430,LighterLife,Owner,,,"Hi Anne,
+
+FitXpress is a scan any web page can host: two photos in, 80+ body measurements and a 3D model out.
+
+When a new client-facing build is planned for LighterLife's online programme, which team does the scoping?
+
+Katerina","Hi Anne,
+
+To be specific about the build: an API or SDK delivers the scan, branded as LighterLife's own.
+
+Could you name the team that scopes builds like that?
+
+Katerina"
+Justin,Slabbert,https://linkedin.com/in/justin-slabbert,Counterweight,Executive Chairman at COUNTERWEIGHT,,,"Hi Justin,
+
+Scaling businesses with positive impact is your headline, and Counterweight's programmes come from research begun in 2000 with academics at seven UK universities.
+
+We built FitXpress: a guided two-photo scan taken on a phone that returns 80+ body measurements and a 3D model in under 45 seconds from the photos to structured results. It is white-label through API or SDKs, with no hardware to ship.
+
+Where would you want a capability like that to sit first? Could we take 15 minutes?
+
+Katerina","Hi Justin,
+
+For a board-level view, the scan runs inside the app or web account Counterweight already operates. 112,100 scans were run in 2025 across all 3DLOOK customers.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Worth 15 min? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+David,Plans,https://linkedin.com/in/davidplans,Reset Health,Chief Scientific Officer,,,"Hi David,
+
+Curious about your take: after founding BioBeats, you now lead the science at Reset Health. If Roczen added a standardized, timestamped body measure, which outputs would you want to see first for any analysis?
+
+Each scan yields a 3D model and 80+ body measurements. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+Open to a short call?
+
+Katerina","Hi David,
+
+For an evaluation, the outputs separate cleanly. Body measurements reach 96-97% accuracy against expert manual measurement.
+
+Body composition values are estimates, with BMI and BMR as calculated metrics.
+
+Worth 15 minutes on how it was evaluated? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Alex,Nancekievill,https://linkedin.com/in/alexnancekievill,Reset Health,Group Chief Technology Officer,,,"Hi Alex,
+
+Twelve products across four industries is a long record in commercialising technology. For the Reset Health Roczen stack, which would you choose for a guided photo capture feature: build or integrate?
+
+Our scan runs as a REST API with API-key authentication and web and mobile SDKs: two photos in, 80+ body measurements out.
+
+Open to a quick technical chat?
+
+Katerina","Hi Alex,
+
+Data handling questions are answered in our FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+For the integration questions, a 15-minute call is the quickest route: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Andrew,Liles,https://linkedin.com/in/andrew-liles,Reset Health,Chief Technology Officer,,,"Hi Andrew,
+
+Your profile says you still discuss the finer points with developers, which sets the tone for Reset Health's Roczen app: technical. FitXpress is a REST API with API-key authentication and web and mobile SDKs.
+
+Two photos in, 80+ body measurements and a 3D model out, under 45 seconds from the photos to structured results. Who on your side would review the SDK first?
+
+Katerina","Hi Andrew,
+
+For your security review: in most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs. FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Technical call, 15 minutes: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Kate,Sykes,https://linkedin.com/in/kate-sykes-6ba33532,The Body Clinic Stourbridge,Clinic Owner,,,"Hi Kate,
+
+Noticed that The Body Clinic Stourbridge brings together body treatments and weight-loss programmes, run by you since 2015.
+
+FitXpress lets a client take two phone photos before a consultation and between sessions, inside the clinic's own client flow. It returns 80+ body measurements and a 3D model in under 45 seconds from the photos to structured results, a view you choose to show.
+
+Where in a client's visit would a body record fit best? Open to 15 minutes?
+
+Katerina","Hi Kate,
+
+A practical thought for the clinic: the scan is white-label with no hardware to ship, and one weight-management platform ran 34,000 scans in 2025.
+
+If 15 minutes is useful: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Jan,Badger,https://linkedin.com/in/jan-badger-b6304535,LighterLife,Director & Counselling Psychologist,,,"Hi Jan,
+
+One question about LighterLife's web account for clients. Who owns it?
+
+It could host a guided scan of two photos that returns 80+ body measurements.
+
+Katerina","Hi Jan,
+
+A role title for the web account's owner is all I am asking.
+
+Katerina"
+Joanna,Bhart,https://linkedin.com/in/joanna-bhart-44122a5,LighterLife,Owner,,,"Hi Joanna,
+
+A Mentor's weekly group is where a LighterLife client spends the session, and online is where it mostly happens.
+
+Who looks after the web page a client uses to get there? A scan taken beforehand, two photos on a phone, could return 80+ body measurements and a 3D model on that page.
+
+I would be glad of a first name to write to.
+
+Katerina","Hi Joanna,
+
+Narrowing it down: the pre-session page. Who keeps it up?
+
+Katerina"
+Marie,Caley,https://linkedin.com/in/marie-caley-54a9394,LighterLife,counsellor/consultant,,,"Hi Marie,
+
+Your bio mentions clients who began with you in 2007.
+
+Who writes the materials clients are given as they move through LighterLife's programme? I would like to show them a guided scan with 80+ body measurements as its result.
+
+Katerina","Hi Marie,
+
+Seen from the materials side, a scan is one more page in what a client holds. Which team puts those pages together?
+
+Katerina"
+Julie,Johnson,https://linkedin.com/in/julie-johnson-01347137,LighterLife,Owner,,,"Hi Julie,
+
+As an owner at LighterLife, you sit close to what clients ask for in their online account.
+
+FitXpress would add a step there: a phone, a front photo and a side photo, and 80+ body measurements appear on the page. Which role owns that account and decides where a step like that goes?
+
+Katerina","Hi Julie,
+
+Second attempt, with a narrower ask: the scan returns body composition estimates alongside 80+ body measurements.
+
+Who would brief a supplier on a capability for the account?
+
+Katerina"
+Naomi,Banham,https://linkedin.com/in/naomi-banham-157b525,LighterLife,Owner,,,"Hi Naomi,
+
+A personal Mentor for every LighterLife client makes the online experience unusually personal.
+
+Ours is a short guided capture: two photos, 80+ body measurements and a 3D model to show or leave out. Who owns the client experience online overall?
+
+Whoever holds it, I would be glad to hear the role.
+
+Katerina","Hi Naomi,
+
+Imagine the screen: a client finishes the capture and sees the model. Who would decide where that screen lives?
+
+Katerina"
+Sarah,Kelly,https://linkedin.com/in/sarah-kelly-52173636,LighterLife,Business Development Director,,,"Hi Sarah,
+
+Quick thought from your move from marketing into business development at LighterLife. Each client has a personal Mentor and a small weekly group, mostly online.
+
+A guided two-photo scan a client takes at home before that session can run in a web page through our web SDK. It returns 80+ body measurements, body composition estimates and a 3D model, with nothing to ship.
+
+Where would a scan like that sit in the online experience? Open to 15 minutes?
+
+Katerina","Hi Sarah,
+
+3DLOOK has worked with 100+ clients, and the scan can be white-labelled to look like LighterLife's own page.
+
+112,100 scans in 2025 across all 3DLOOK customers.
+
+Worth 15 minutes to walk through it? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Karen,Burr,https://linkedin.com/in/karen-burr-3482a18,LighterLife,Owner,,,"Hi Karen,
+
+Spotted something while reading about LighterLife: counselling sits beside the plan itself.
+
+Who decides what a client's online account shows ahead of the weekly group? A guided scan of two photos, returning 80+ body measurements, would add one item there.
+
+Katerina","Hi Karen,
+
+Another way in: which team defines what a client sees in their online account?
+
+I will write that team a short note.
+
+Katerina"
+Bev,Robinson,https://linkedin.com/in/bev-robinson-27825838,LighterLife,Owner,,,"Hi Bev,
+
+Your earlier role as Head of Design at Faith Shoe Group made me think of presentation. The 3D model FitXpress returns is a view LighterLife can choose how to show.
+
+Who sets the visual design of the client account on lighterlife.com?
+
+Katerina","Hi Bev,
+
+A design-minded version of my question: whose brief decides what the account looks like?
+
+Happy to take a role rather than a name.
+
+Katerina"
+Gareth,Bartley,https://linkedin.com/in/garethbartley,Reset Health,Backend Technical Lead,,,"Hi Gareth,
+
+Quick one for a Java and Spring backend: the scan is a REST API with API-key authentication. You send two photos (front and side) and get 80+ body measurements and body composition estimates back as structured data.
+
+Where would a call like that sit in the Roczen backend at Reset Health?
+
+Any appetite for a short technical call?
+
+Katerina","Hi Gareth,
+
+Data handling is covered in our FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Calendar for a 15-minute technical walkthrough: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Tracey,Fisken,https://linkedin.com/in/tracey-fisken-12a5a29,LighterLife,Owner,,,"Hi Tracey,
+
+Who looks after clinical oversight of the LighterLife plans?
+
+A home body record might have a place there, and I would like that person's view. FitXpress takes two photos and returns 80+ body measurements for a team to review.
+
+Katerina","Hi Tracey,
+
+If oversight sits with a group, I would write to the group.
+
+The record is for the team to review and does not decide anything.
+
+Katerina"
+Anna,Bell Higgs,https://linkedin.com/in/annabellhiggs,Counterweight,Partnerships Manager,,,"Hi Anna,
+
+You have been with the team since 2008 and helped bring in new business as services moved towards digital healthcare. Counterweight-Plus in Scotland already holds 1:1 and group appointments virtually.
+
+We build a guided two-photo scan that returns 80+ body measurements and a 3D model in under 45 seconds from the photos to structured results, offered white-label inside a partner's own app or web account.
+
+Does a partner capability like that have any place in what Counterweight offers, and who would decide? Happy to take a no.
+
+Katerina","Hi Anna,
+
+The short version of my note: a partner adds the scan to its own app or web account. 3DLOOK has worked with 100+ clients.
+
+If it has no place at Counterweight, a quick no is useful too. If it is worth a look, my calendar is here: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+ann,mcclean,https://linkedin.com/in/ann-mcclean-9894653a,LighterLife,Owner,,,"Hi Ann,
+
+Who owns what a client sees and keeps in their LighterLife online account between sessions?
+
+A guided scan could add to it: two photos returning 80+ body measurements and body composition estimates.
+
+Katerina","Hi Ann,
+
+Which role looks after the between-session part of the client's account?
+
+Katerina"
+Grant,Westermann,https://linkedin.com/in/grant-westermann-016529b,MoreLife,Digital Projects & Systems Manager,,,"Hi Grant,
+
+Your title spans product development and IT systems, so what the patient app can ask a person for probably lands on your desk. Adults referred to a MoreLife programme get one.
+
+FitXpress adds a guided two-photo scan through API or web and mobile SDKs: 80+ body measurements and a 3D model, with under 45 seconds from the photos to structured results.
+
+What would an SDK step need to look like to justify a pilot? 15 minutes?
+
+Katerina","Hi Grant,
+
+For the systems side: the scan runs behind your own screens, and photos are deleted after processing or within 30 days.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+I can go through the integration points in 15 min: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Yousaf,Ahmad,https://linkedin.com/in/yousaf-ahmad-00100240,Reset Health,Head of Technical Delivery,,,"Hi Yousaf,
+
+17 years across Agile and Waterfall delivery: when you plan an integration into the Roczen app at Reset Health, what does a good SDK handover look like to you?
+
+We ship web and mobile SDKs and a REST API with API-key authentication for a guided two-photo scan: 80+ body measurements per scan.
+
+Shall we compare notes on the handover?
+
+Katerina","Hi Yousaf,
+
+Timing depends on your sprint plan and is best answered live. Security and data details sit in our FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+15 minutes? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Kelly,Saunders,https://linkedin.com/in/kelly-saunders-96b1a010,LighterLife,Owner,,,"Hi Kelly,
+
+Couldn't help but ask about the LighterLife online group session.
+
+Who sets its running order, including anything a client does beforehand? A scan done at home from two photos, giving 80+ body measurements, is one thing that could go in that slot.
+
+Katerina","Hi Kelly,
+
+Shorter: who structures an online session from start to finish?
+
+Katerina"
+Rochelle,Morris,https://linkedin.com/in/rochellecmorris,Reset Health,Chief Product Officer,,,"Hi Rochelle,
+
+Noticed your background in service mobilisation at Optum International and product leadership since. For the Roczen roadmap at Reset Health, what would you want the app to ask a person to do at home before a remote session?
+
+We built FitXpress: a guided two-photo scan, white-label through API or SDK, that returns 80+ body measurements and a 3D model with no hardware to ship.
+
+Would 15 minutes be useful?
+
+Katerina","Hi Rochelle,
+
+A release question: what does a scan add to the Roczen build? Web and mobile SDKs carry the guided capture.
+
+One weight-management platform ran 34,000 scans in 2025.
+
+Worth 15 minutes to walk through it? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Donna,Earle-Swaby,https://linkedin.com/in/donna-earle-swaby-5a532212,LighterLife,Owner,,,"Hi Donna,
+
+The first week of a client's time with LighterLife is when habits form.
+
+Who owns the journey a new client takes online in that week? FitXpress turns two phone photos into a 3D model and 80+ body measurements, and that journey is where it would sit.
+
+Katerina","Hi Donna,
+
+Which role owns the first-week journey online?
+
+Katerina"
+Joanna,Bruce MBE,https://linkedin.com/in/joanna-bruce-mbe-4796a412,The Body Clinic Leominster,Clinical Director,,,"Hi Joanna,
+
+Quick thought. The Body Clinic Leominster offers holistic therapies, including health MOTs and healthy-eating support.
+
+FitXpress is a white-label two-photo scan returning 80+ body measurements and a 3D model in under 45 seconds from the photos to structured results. Blood pressure, cholesterol and blood tests stay outside the scan.
+
+Could a partner capability like that have a place in what the clinic offers? Who would decide?
+
+Katerina","Hi Joanna,
+
+A practical note for a clinical director: nothing is shipped, and photos are deleted after processing or within 30 days.
+
+15 minutes to see whether it has any place: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Rebecca,Ryan,https://linkedin.com/in/rebecca-ryan-1a42b444,Reset Health,Head of Product,,,"Hi Rebecca,
+
+Caught my eye: your focus on turning user requirements into mobile products across health and social care. For the Roczen backlog at Reset Health, which item would you rank first for what a person does between appointments?
+
+A guided two-photo scan could be a candidate: 80+ body measurements and a 3D model, added to the app through an SDK.
+
+Would 15 minutes be useful to talk it through?
+
+Katerina","Hi Rebecca,
+
+Build effort decides where an item sits in a backlog. Here the capture screen and guidance come ready in a mobile SDK with an API behind it.
+
+3DLOOK has worked with 100+ clients.
+
+Shall we book a 15-minute slot? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Maxine,Phillips-Smith,https://linkedin.com/in/maxine-phillips-smith-86859844,LighterLife,Owner,,,"Hi Maxine,
+
+Reasons behind overeating take time to work through, and counselling is part of the LighterLife programme.
+
+Which team owns the stage of the online programme that follows the structured plan? A guided scan from two photos with 80+ body measurements is where I would start the conversation.
+
+Katerina","Hi Maxine,
+
+One line, since I have asked a lot already: who owns the later stage of the online programme?
+
+Katerina"
+Carol,Graves,https://linkedin.com/in/carol-graves-a0bbab14,LighterLife,Director,,,"Hi Carol,
+
+Your profile lists operations at Clerical Medical Investment Group.
+
+If a proposal came in to add a guided scan to LighterLife's online client experience, where would it go? It returns body composition estimates and 80+ body measurements from two photos.
+
+Katerina","Hi Carol,
+
+Process question: which role receives proposals for the online client experience?
+
+Katerina"
+Daniela,Alves,https://linkedin.com/in/daniela-alves-aba63749,Homerton Healthcare NHS Foundation Trust,Principal Clinical Psychologist - Specialist Weight Management & Bariatric Surgery,,,"Hi Daniela,
+
+Quick one. Homerton Healthcare NHS Foundation Trust runs a specialist weight management and bariatric surgery service, and I am trying to find who leads it.
+
+3DLOOK builds a two-photo scan that returns 80+ body measurements in under 45 seconds from the photos to structured results. Could you point me to the right person?
+
+Katerina","Hi Daniela,
+
+A short nudge on one question: who leads the weight management service at Homerton, or who would be the right person to ask? A name is plenty.
+
+Katerina"
+Lorraine,Addyman,https://linkedin.com/in/lorraine-addyman-274bab17,LighterLife,Owner,,,"Hi Lorraine,
+
+A short question from a supplier's side. Who decides which parts of the LighterLife online programme change next?
+
+We have a scan, FitXpress, that returns 80+ body measurements from two phone photos.
+
+Katerina","Hi Lorraine,
+
+Following the thread from my last message: which team holds the list of changes for the online programme?
+
+Katerina"
+Angel,Collins,https://linkedin.com/in/angel-collins-91477518,LighterLife,Director,,,"Hi Angel,
+
+A move from a wedding cars business into LighterLife is a big change of pace.
+
+Who sets the prompts a client receives online ahead of a group session? One of them could ask for a guided scan: two photos, 80+ body measurements.
+
+Katerina","Hi Angel,
+
+Easy version: who writes the pre-session prompts?
+
+Katerina"
+Paul Anthony,Brown,https://linkedin.com/in/paul-anthony-brown-04882948,LighterLife,Weight Loss Consultant,,,"Hi Paul Anthony,
+
+Network coaching and travel management before becoming a mentor shows many routes into this work.
+
+If an outside partner offered LighterLife a white-label scan, which role would take the first call? It gives 80+ body measurements from two photos.
+
+Katerina","Hi Paul Anthony,
+
+Different wording, same point: the first call about a partner capability goes to whom?
+
+Katerina"
+Anthony,Hardley,https://linkedin.com/in/anthony-hardley-3609244a,MoreLife,Health Specialist,,,"Hi Anthony,
+
+Your title at MoreLife is Health Specialist, which puts you close to adults in the programme. They get a patient app once referred.
+
+Our scan is a guided two-photo capture that returns 80+ body measurements inside an app. Who plans the next additions to the app adults receive on referral?
+
+Katerina","Hi Anthony,
+
+Narrowing my question: the adult app's roadmap, whose is it? A name or a team is plenty.
+
+Katerina"
+Paul,Paine,https://linkedin.com/in/paul-paine-75243b1a,LighterLife,Owner,,,"Hi Paul,
+
+Who leads digital for LighterLife, meaning the web account a scan would live in?
+
+I ask because of FitXpress, which gives 80+ body measurements and a 3D model once a client has taken two photos.
+
+Katerina","Hi Paul,
+
+Plainly: the digital lead is the person I am hoping to find. If that is a team, tell me which.
+
+Katerina"
+Helen,Litherland,https://linkedin.com/in/helen-litherland-6ab7b34a,LighterLife,Director,,,"Hi Helen,
+
+Thought I'd share a question about phones. Who looks after how the LighterLife client account works in a phone browser?
+
+A guided scan runs on a phone: two photos, then 80+ body measurements.
+
+Katerina","Hi Helen,
+
+Back with the phone-browser question: is there one person behind it at LighterLife?
+
+Katerina"
+Mike,Pallett,https://linkedin.com/in/mikepallett,Archvale,Chief Operating Officer,,,"Hi Mike,
+
+Noticed your role as COO at Archvale, which works with GP partners on succession, transitions and the future of their practices.
+
+At 3DLOOK, FitXpress returns 80+ body measurements from two phone photos in under 45 seconds from the photos to structured results, white-label through API or SDKs. Does a partner capability like that have any place in what Archvale offers, and who would decide?
+
+A no is fine too.
+
+Katerina","Hi Mike,
+
+Back with one detail: the scan runs inside a partner's own app or web page, with no hardware to ship. 3DLOOK has worked with 100+ clients.
+
+If a 15-minute call to see whether it fits anything Archvale does is useful, here is my calendar: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Oliver,McGuinness,https://linkedin.com/in/oliver-mcguinness-6001894a,Reset Health,Chief Executive Officer,,,"Hi Oliver,
+
+Got me thinking: since early 2026 Reset Health has provided the wraparound care for Pharmacy2U's patients on weight-loss medication, monthly consultations included. Would a body record taken at home sit well before those consultations?
+
+FitXpress is a guided two-photo scan that returns 80+ body measurements and a 3D model, white-label inside your app.
+
+Could you spare 15 minutes?
+
+Katerina","Hi Oliver,
+
+Adding a scan to Roczen asks little of the care team. It needs no hardware and runs in a web or mobile SDK.
+
+112,100 scans in 2025 across all 3DLOOK customers.
+
+Could we take 15 minutes? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Naomi,Brosnahan,https://linkedin.com/in/naomibrosnahan,Counterweight,Chief Executive Officer,,,"Hi Naomi,
+
+Counterweight's CEO is a registered dietitian with a PhD, and the app gives members guidance from the programme's dietitians every fortnight.
+
+A guided two-photo scan could sit alongside it. Members take front and side photos at home, and the dietitian gets 80+ body measurements and a 3D model back in under 45 seconds from the photos to structured results, standardized and timestamped.
+
+As a dietitian yourself, what would you want that record to show? Open to a 15-minute call?
+
+Katerina","Hi Naomi,
+
+One practical point: the scan also returns body composition estimates, for the team to review.
+
+For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm. 3DLOOK has worked with 100+ clients.
+
+Would 15 minutes help? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Karen,Turmer,https://linkedin.com/in/karen-turmer-4412341b,LighterLife,Owner,,,"Hi Karen,
+
+Who holds the roadmap for LighterLife's client features this year?
+
+Ours is a white-label scan that returns 80+ body measurements and body composition estimates from two photos.
+
+Katerina","Hi Karen,
+
+Whoever keeps the feature roadmap is the person to ask.
+
+Katerina"
+Patricia,Lyon,https://linkedin.com/in/patricia-lyon-1189291a,LighterLife,Owner,,,"Hi Patricia,
+
+Who decides whether LighterLife clients are asked to do anything before an online group?
+
+A guided scan could be one such thing: two photos on a phone, 80+ body measurements back.
+
+Katerina","Hi Patricia,
+
+My question concerns the lead-up to a group. Which team owns it?
+
+Katerina"
+Laura,Newson,https://linkedin.com/in/laura-newson-a0146a20,Reset Health,Director of Partnerships and Propositions,,,"Hi Laura,
+
+Came across your work on turning new models of care into services that are practical to deliver at scale. When Reset Health shapes a partner offer, what would a partner expect the app to capture between consultations?
+
+We built a white-label scan: two photos, 80+ body measurements and body composition estimates, nothing to stock or ship.
+
+Would 15 minutes next week suit you?
+
+Katerina","Hi Laura,
+
+For a partner proposition, the scan is a module nobody has to stock or support. It is an SDK inside the app that a partner can offer under its own name.
+
+Worth 15 minutes to see how it would sit in an offer? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Dr Sahira,Dar,https://linkedin.com/in/dr-sahira-dar-59801453,Lanarkshire Medical Group,Locum GP,,,"Hi Dr Sahira,
+
+Noticed your headline, GP, Lifestyle Coach and Digital Doc. Lanarkshire Medical Group combines general practice with lifestyle medicine and coaching.
+
+We built a guided two-photo scan that returns 80+ body measurements in under 45 seconds from the photos to structured results. Who at the group would decide on a tool like that? A name is all I need.
+
+Katerina","Hi Dr Sahira,
+
+Same question, different angle: would a home body record have a place in your lifestyle consultations, or does someone else at the group look after that?
+
+Katerina"
+Dawn,Sheppard,https://linkedin.com/in/dawn-sheppard-371b0822,LighterLife,Owner,,,"Hi Dawn,
+
+A structured plan paired with counselling has been LighterLife's approach for more than 30 years.
+
+Who sets digital strategy for clients? FitXpress turns two photos into 80+ body measurements, and a digital strategy is where it would be weighed.
+
+Katerina","Hi Dawn,
+
+Asking again, briefly: who leads digital strategy at LighterLife?
+
+Katerina"
+Pat,Ashmore,https://linkedin.com/in/pat-ashmore-668ab524,LighterLife,Owner,,,"Hi Pat,
+
+You moved from directing a business in another industry to years with LighterLife in Derby.
+
+Who looks after the data model behind the client's online account? Our scan returns a structured set of 80+ body measurements from two photos, and that team would know where it fits.
+
+Katerina","Hi Pat,
+
+Reframing: which team decides what kinds of record the account can hold?
+
+Katerina"
+Susan,Brennan,https://linkedin.com/in/susan-brennan-09a48826,MoreLife,GP in Weight Management,,,"Hi Susan,
+
+Your portfolio career spans general practice, specialist advice and weight management. MoreLife runs adult Tier 3 services among its programmes.
+
+FitXpress gives a care team a standardized, timestamped record from two phone photos: 80+ body measurements and body composition estimates, taken at home before a session, for the team to review.
+
+Where would a record like that sit in a Tier 3 review? Could we find 15 minutes?
+
+Katerina","Hi Susan,
+
+On repeatability: for most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm. The team compares the scans it selects and reads the results itself.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Could we book 15 minutes here: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Ling,Chow,https://linkedin.com/in/chiaulingchow,Reset Health,Operations Director,,,"Hi Ling,
+
+Your bio on scalable operations across brick-and-mortar and digital healthcare caught my eye. With Reset Health running remotely, which step before a consultation takes the most coordination from your team?
+
+FitXpress could add a guided two-photo scan to the Roczen app: 80+ body measurements in under 45 seconds from the photos to structured results, with nothing to stock or support.
+
+Shall we talk it through for a few minutes?
+
+Katerina","Hi Ling,
+
+The capture follows the same guided sequence every time, and no hardware moves between people. A coordinator has no kit to track.
+
+Would 15 minutes help to walk through the flow? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Tabitha,Prince,https://linkedin.com/in/tabithaprince,LighterLife,Owner,,,"Hi Tabitha,
+
+Your headline about tools and confidence to keep weight off for life stood out.
+
+Who chooses the tools LighterLife offers clients online? FitXpress hands a person 80+ body measurements and a 3D model after two phone photos.
+
+Katerina","Hi Tabitha,
+
+The tools offered online must have a keeper. Which person or team is it?
+
+Katerina"
+Sarah,Le Brocq,https://linkedin.com/in/sarah-le-brocq-85b07a26,Perspectum,Obesity Consultant,,,"Hi Sarah,
+
+Caught my eye: your work as obesity consultant at Perspectum, which works on obesity imaging and body-composition research for clinical care and drug development.
+
+FitXpress is a white-label two-photo scan returning 80+ body measurements and a 3D model in under 45 seconds from the photos to structured results. Could a partner capability like that have any place at Perspectum, and who would decide?
+
+Katerina","Hi Sarah,
+
+A practical detail: scans run inside a partner's own app or web page through API or SDKs, with nothing to ship.
+
+If a 15-minute call is useful to see whether it has any place at Perspectum: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Ali,Robbins,https://linkedin.com/in/ali-robbins-b4230728,LighterLife,Owner,,,"Hi Ali,
+
+Is there a lead for innovation at LighterLife, or a person who takes calls about new capabilities?
+
+The capability I have in mind is a scan: two photos in, 80+ body measurements out, delivered white-label.
+
+Katerina","Hi Ali,
+
+If innovation is not a role, who handles a call about a new project?
+
+Pointing me to someone would be kind.
+
+Katerina"
+Dr. Adam,Barker ACA,https://linkedin.com/in/dr-adam-barker-aca-5a256a57,Reset Health,Chief Financial Officer,,,"Hi Dr. Adam,
+
+Reset Health helps people manage obesity and type 2 diabetes through the Roczen app, and 3DLOOK supplies a white-label scan: two photos in, 80+ body measurements out.
+
+When a new supplier is added to the app, which route does it take through finance, and who sponsors it?
+
+Thank you,
+
+Katerina","Hi Dr. Adam,
+
+Which team would sponsor a supplier like that at Reset Health? Your view on the route would help me.
+
+Katerina"
+Sharon,Henshaw,https://linkedin.com/in/sharon-henshaw-6b6b5127,LighterLife,Owner,,,"Hi Sharon,
+
+Your headline about a healthy body and a happy mind fits how LighterLife pairs a plan with counselling.
+
+Who weighs the evidence behind additions to the online programme? For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+Katerina","Hi Sharon,
+
+Your hospital background suggests familiarity with how evidence gets weighed. Which role weighs it at LighterLife?
+
+Katerina"
+Georgia,Apsitis,https://linkedin.com/in/georgia-apsitis-9730045a,MoreLife,Morelife Programme Co- ordinator - Wandsworth,,,"Hi Georgia,
+
+Wandsworth is a local service with a long programme behind it: MoreLife has run weight-management programmes since 1999.
+
+3DLOOK builds a scan adults complete at home from two phone photos, giving 80+ body measurements. Who decides which steps an adult completes in a first Wandsworth session?
+
+Katerina","Hi Georgia,
+
+I may have aimed that at the wrong desk. If first-session design sits with someone else at MoreLife, tell me who and I will write to them.
+
+Katerina"
+natalie,bellis,https://linkedin.com/in/natalie-bellis-3279a928,LighterLife,Owner,,,"Hi Natalie,
+
+If a LighterLife client asked what the online account can do at home, whom would you point them to?
+
+I am asking about a guided scan that returns 80+ body measurements from two photos.
+
+Katerina","Hi Natalie,
+
+Put another way: when a client has a question about the account, which team answers it?
+
+Katerina"
+Veronica,Barry,https://linkedin.com/in/veronica-barry-0851012b,LighterLife,Counsellor,,,"Hi Veronica,
+
+Running a post office before LighterLife meant dealing with people daily.
+
+Which team prepares the material a client takes into a weekly group? We have a guided scan, two photos with 80+ body measurements, that could be one item in it.
+
+Katerina","Hi Veronica,
+
+Same question, trimmed: who prepares what clients bring to a group?
+
+I will send that team a short note.
+
+Katerina"
+Bridget,Egglesfield,https://linkedin.com/in/bridget-egglesfield-0aa93329,LighterLife,Owner,,,"Hi Bridget,
+
+A question about LighterLife's online side.
+
+Who helps clients when an online step needs a hand? With FitXpress, an online step is a guided capture of two photos, returning body composition estimates and 80+ body measurements.
+
+Katerina","Hi Bridget,
+
+The online support role is the one I am trying to reach.
+
+Katerina"
+Christine,Render,https://linkedin.com/in/christine-render-5584522b,MoreLife,Programme Co-ordinator,,,"Hi Christine,
+
+Coordinating a programme shows you how sessions actually run. MoreLife's adult Tier 3 services are one of its settings.
+
+A practitioner can receive 80+ body measurements from a scan the person takes themselves from two photos. Who shapes the Tier 3 session sequence for adults?
+
+Katerina","Hi Christine,
+
+Back to the one question, kept short: whose decision is the Tier 3 session order? A name would help.
+
+Katerina"
+Juli,Mey,https://linkedin.com/in/juli-mey,MoreLife,"Tier 3 Practitioner Lead Sussex, GM, Essex",,,"Hi Juli,
+
+Leading a Tier 3 practitioner team across Sussex, Greater Manchester and Essex makes consistency across MoreLife's specialist tier a daily question.
+
+FitXpress is a guided two-photo scan a person takes at home before an appointment: 80+ body measurements and a 3D model, the same capture sequence every time, for the practitioner to review.
+
+Would your practitioners find a home record useful ahead of a session? Might be worth a quick chat?
+
+Katerina","Hi Juli,
+
+Something your practitioners could weigh up: the practitioner chooses which scans to compare, and the body measurements show 96-97% accuracy against expert manual measurement.
+
+Grab 15 min here: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Nadine,Heywood,https://linkedin.com/in/nadine-heywood-5a1a8712a,MoreLife,Lead Therapist,,,"Hi Nadine,
+
+Wanted to reach out about your Lead Therapist role at MoreLife. We make a two-photo home scan with 80+ body measurements, and I am trying to find the right person to ask.
+
+Whose call is it to add a new step to the app adults use?
+
+Katerina","Hi Nadine,
+
+Only a pointer needed: which team decides additions to the adult patient app?
+
+Katerina"
+Natalie,Cowie,https://linkedin.com/in/natalie-cowie-b15182121,LighterLife,Head of Finance,,,"Hi Natalie,
+
+Your bio on partnering with Boards, and your years at LighterLife since the FP&A role, point to a long view of the business.
+
+When a new capability is proposed for the client's online account, which role takes the proposal to the Board? Ours is a white-label scan returning 80+ body measurements from two photos.
+
+Katerina","Hi Natalie,
+
+Which role at LighterLife owns a business case for an addition to the client account?
+
+Katerina"
+Idalia,Stach (ANutr),https://linkedin.com/in/idalia-stach-anutr-4b7b04122,Counterweight,Nutritionist,,,"Hi Idalia,
+
+Teaching and nutrition in one career is a good reason to ask you. Counterweight's programmes come from research begun in 2000 with academics at seven UK universities, and I am trying to find who owns programme design there.
+
+Two phone photos turn into 80+ body measurements with our guided scan. Which team would look at something like this?
+
+Katerina","Hi Idalia,
+
+If you can steer me to the team that owns programme design at Counterweight, I will take it from there.
+
+Katerina"
+Georgina,Walsh,https://linkedin.com/in/georgina-walsh-33b4b5127,LighterLife,Therapist,,,"Hi Georgina,
+
+A question about LighterLife, kept short. Who is responsible for the online delivery of the programme?
+
+FitXpress is a two-photo scan that returns 80+ body measurements.
+
+Katerina","Hi Georgina,
+
+If online delivery has a coordinator, a title would be enough.
+
+Katerina"
+Thomas,Godec,https://linkedin.com/in/thomas-godec-38239476,Reset Health,Director of Data Science & Clinical Intelligence,,,"Hi Thomas,
+
+Had a thought on your clinical trials and medical statistics background. If Reset Health's outcomes data gained a standardized, timestamped body record, what would you need to see in its repeatability first?
+
+From two photos the scan returns 80+ body measurements. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+Would a short call on the data side help?
+
+Katerina","Hi Thomas,
+
+One more detail for a data team: scan records carry random IDs and timestamps, and outputs are stored and deletable by scan ID. BMI and BMR come as calculated metrics.
+
+15 minutes to go through the data fields? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Philip,Bazire,https://linkedin.com/in/philip-bazire-883a44ab,PronoKal UK,Medical Director at PronoKal UK,,,"Hi Philip,
+
+Noticed you are Medical Director at PronoKal UK, where each client has a dedicated doctor and nutrition specialist, with consultations by Zoom or telephone.
+
+At 3DLOOK, a two-photo scan taken at home returns 80+ body measurements and a 3D model in under 45 seconds from the photos to structured results. The doctor gets a standardized, timestamped record and compares the scans it selects.
+
+Does a home body record fit a remote consultation? Worth 15 minutes?
+
+Katerina","Hi Philip,
+
+Two clinical details. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm, and validation covered weights from 38 to 210 kg.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Background: https://3dlook.ai/content-hub/glp-1-market/
+15 minutes: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Angelina,Spathopoulou,https://linkedin.com/in/angelina-spathopoulou-301435b0,MoreLife,Adult Weight Management Nutritionist,,,"Hi Angelina,
+
+Civil engineering, then adult weight management nutrition at MoreLife: a route that gives you a practical eye for tools.
+
+FitXpress turns a front photo and a side photo into a 3D model and 80+ body measurements a practitioner can open. Which team decides what practitioners can see from an adult's app before a session?
+
+Katerina","Hi Angelina,
+
+Coming at it from the engineering side of your story: the scan is white-label, and a programme's own screens carry it. Which team at MoreLife sets what practitioners see in the app?
+
+Katerina"
+Sally,Harris,https://linkedin.com/in/sally-harris-139a7981,LighterLife,Weight Management Counsellor,,,"Hi Sally,
+
+A short question about what LighterLife clients receive after a session.
+
+Who prepares the follow-up a client sees in their account? FitXpress, which we make, gives 80+ body measurements and a 3D model from two photos.
+
+Katerina","Hi Sally,
+
+Plain question once more: which team prepares the follow-up clients see in the account?
+
+One line from you and I will do the rest.
+
+Katerina"
+Lauren,Sien,https://linkedin.com/in/laurensien,Reset Health,Governance Lead,,,"Hi Lauren,
+
+Quick note on clinical governance, which you led at Doccla and Numan. What would a new body-record tool need to show you as Reset Health's governance lead before it goes live?
+
+The scan is guided, takes two photos and returns 80+ body measurements. The team compares scans it selects and interprets them itself.
+
+Would a brief call be worthwhile?
+
+Katerina","Hi Lauren,
+
+For sign-off, the data roles are stated plainly. In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+15 minutes to walk through it? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Lorraine,Kessock-Philip,https://linkedin.com/in/lorraine-kessock-philip-87435083,LighterLife,LighterLife Counsellor,,,"Hi Lorraine,
+
+Most LighterLife clients join their weekly group online. FitXpress, from 3DLOOK, has a client take a front and a side photo at home and returns 80+ body measurements.
+
+What can clients do at home between those online sessions, and which team decides?
+
+Thank you for your time.
+
+Katerina","Hi Lorraine,
+
+If the between-session side of the online programme has an owner at LighterLife, who is it?
+
+Katerina"
+Dr Lauren,"Rockliffe (PhD, CPsychol)",https://linkedin.com/in/laurenrockliffe,Exchange Health,Company Director,,,"Hi Dr Lauren,
+
+Came across your work at Exchange Health, which trains healthcare practitioners in psychology-led behaviour change and reflective practice.
+
+At 3DLOOK, FitXpress returns 80+ body measurements from two phone photos in under 45 seconds from the photos to structured results, white-label for partners. Could a partner capability like that have any place in what Exchange Health offers, and who would decide?
+
+A no is fine.
+
+Katerina","Hi Dr Lauren,
+
+A brief note in case the first one slipped past. FitXpress runs inside a partner's own platform. 3DLOOK has worked with 100+ clients.
+
+If a 15-minute call to see whether it has any place in your offer is useful: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Rachel,Dreycroft,https://linkedin.com/in/racheldreycroft,Reset Health,Product Manager,,,"Hi Rachel,
+
+Made me think: you ask how to build technology that genuinely helps people. Which screen in the Roczen app at Reset Health would you test a guided photo capture in first?
+
+Built for that: FitXpress takes two phone photos and returns 80+ body measurements and body composition estimates in under 45 seconds from the photos to structured results.
+
+Interested in seeing it live for 15 minutes?
+
+Katerina","Hi Rachel,
+
+A practical detail for a product manager: the SDK carries the capture guidance, and your team writes the surrounding screen and calls the API for results.
+
+A 15-minute walkthrough? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Alasdair,Yorke,https://linkedin.com/in/alasdair-yorke-b19ab390,Reset Health,Lead Front End Developer,,,"Hi Alasdair,
+
+Quick reaction to your role as lead front end developer at Reset Health: a scan integration lives or fails on the capture screen. Our web and mobile SDKs carry the guided capture for two photos (front and side), and your screens call the API for 80+ body measurements.
+
+Who would own that screen in Roczen?
+
+Katerina","Hi Alasdair,
+
+On the front end, guidance for the person is built into the SDK and the screen waits on one response. Privacy and security answers are in our FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Open to a 15-minute technical call? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Ciara,Cook,https://linkedin.com/in/ciara-cook,Reset Health,Head of Programmes and Clinical Operations,,,"Hi Ciara,
+
+Noticed overlap: programme management at Closed Loop Medicine and NICE, now day-to-day running at Reset Health. Which part of a person's programme week needs the most manual preparation from the team?
+
+We built FitXpress, a guided two-photo scan the person takes at home. It returns 80+ body measurements and a 3D model, with nothing shipped or stocked.
+
+Would a quick call suit?
+
+Katerina","Hi Ciara,
+
+Day to day, a scan means one guided capture, the same sequence every time, and results back in under 45 seconds from the photos to structured results.
+
+Is a 15-minute call possible? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Emily,Costelloe,https://linkedin.com/in/emily-costelloe-07019697,MoreLife,Practitioner Manager,,,"Hi Emily,
+
+Your background in coaching and health promotion suits managing MoreLife practitioners who work in community settings as well as clinics.
+
+FitXpress asks a person for two phone photos at home and returns 80+ body measurements. A practitioner can open a session with a record already in place.
+
+Where in a practitioner's week would a ready-made record matter most?
+
+Katerina","Hi Emily,
+
+The short version for a practitioner manager: nothing is sent out, and the guided capture is the same each time. Timing is under 45 seconds from the photos to structured results.
+
+Fifteen minutes to see it: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Jessie,Ravenscroft,https://linkedin.com/in/jessicaravenscroft,Reset Health,Director of Strategic Delivery,,,"Hi Jessie,
+
+Your path from Abbott to digital health launches stood out. When Reset Health adds a capability to Roczen, what does the delivery plan have to cover?
+
+Ours is a guided two-photo capture, built to run through an API or SDK: 80+ body measurements from a phone, no hardware in the plan.
+
+Might be worth a quick chat?
+
+Katerina","Hi Jessie,
+
+Delivery teams ask what lands on their plan. The scan arrives as an SDK or API with the same guided capture each time.
+
+The stated speed is under 45 seconds from the photos to structured results.
+
+Happy to go through it in 15 minutes: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Lyn,Obeney,https://linkedin.com/in/lyn-obeney-24524799,LighterLife,Accounts Assitant,,,"Hi Lyn,
+
+Accounts at LighterLife UK Limited sees how suppliers join the company, and most clients now meet their Mentor's weekly group online.
+
+If a body-scan capability were added to the client's online account, which role would own that supplier relationship? 3DLOOK's FitXpress gives 80+ body measurements and a 3D model from two phone photos in a web page.
+
+Whoever you think of first would be a good start.
+
+Katerina","Hi Lyn,
+
+Supplier set-up tends to begin with one named owner. Is there one for the client's online account?
+
+Katerina"
+Nazila,Bahrami,https://linkedin.com/in/nazila-bahrami-3aa048110,Counterweight,Nutritionist,,,"Hi Nazila,
+
+Your BANT registration is why I thought of you for a question about the app. The Counterweight app gives members guidance from the programme's dietitians every fortnight, and I would like to know who writes and owns it.
+
+FitXpress is a guided two-photo scan that returns a 3D model and 80+ body measurements from a phone. Happy to be pointed to the right person.
+
+Katerina","Hi Nazila,
+
+A short second note. Even a team name would help me reach the owner of the dietitian guidance at Counterweight. Thanks for reading.
+
+Katerina"
+nikki,cook,https://linkedin.com/in/nikki-cook-938694a1,LighterLife,weight management counsellor,,,"Hi Nikki,
+
+A short one from 3DLOOK. FitXpress gives 80+ body measurements from two phone photos, and a client could take them before the weekly LighterLife group online.
+
+Where does the decision sit on what clients are asked to bring to that session? Even a guess helps.
+
+Katerina","Hi Nikki,
+
+Who shapes the lead-up to the weekly online session, and what follows it? Your best guess is welcome.
+
+Katerina"
+Debbie,Kennedy,https://linkedin.com/in/debbie-kennedy-6546a2111,LighterLife,Weight Management Counsellor,,,"Hi Debbie,
+
+LighterLife has paired a plan with counselling for more than three decades, and clients now have a web account alongside it.
+
+When a client logs in, what do they get to keep and look back on? FitXpress from 3DLOOK returns a 3D model and 80+ body measurements from two guided photos, which a web account could hold.
+
+Thanks in advance.
+
+Katerina","Hi Debbie,
+
+I wonder whether anyone at LighterLife is working on what a client's web account keeps for them.
+
+Katerina"
+Pip,Young,https://linkedin.com/in/pipyoung,Habitual,Head Of Engineering,,,"Hi Pip,
+
+Spotted that you work mostly on Habitual's backend systems and security, which is where a scan integration lands first.
+
+FitXpress is a REST API with API-key authentication, along with web and mobile SDKs.
+
+A guided two-photo capture returns 80+ body measurements and a 3D model in under 45 seconds from the photos to structured results. Photos are deleted after processing or within 30 days.
+
+Would your team start with the API or an SDK?
+
+Katerina","Hi Pip,
+
+The detail an engineer asks about next: outputs are stored and can be deleted by scan ID. The privacy and security FAQ is here: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+15 minutes with engineering? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Oliver,Lyons,https://linkedin.com/in/oliver-lyons-5351311a5,MoreLife,Adult Weight Management Practitioner,,,"Hi Oliver,
+
+Your focus on inclusive coaching for adults across Camden and Islington at MoreLife caught my eye.
+
+The scan guides each step on screen, with two photos in and 80+ body measurements out. Who looks at how adults who rarely use apps get on with the patient app?
+
+Katerina","Hi Oliver,
+
+One more angle on the same question: guided steps keep the ask small for someone new to apps. Who at MoreLife would weigh that up?
+
+Katerina"
+Georgia,Miller,https://linkedin.com/in/georgia-miller-849a291a4,MoreLife,Service Manager,,,"Hi Georgia,
+
+Noticed your path from personal trainer to operations manager to service manager, which gives you a close view of how a service runs day to day. MoreLife works across healthcare, community and workplace settings.
+
+FitXpress adds a guided two-photo scan clients take on their own phone: 80+ body measurements and body composition estimates, with under 45 seconds from the photos to structured results, no equipment to deliver.
+
+Who signs off changes to how sessions are run across your sites?
+
+Katerina","Hi Georgia,
+
+Rolling out across sites depends on how much each site has to learn. The scan follows the same guided steps each time and needs nothing sent out.
+
+Pick a slot that suits you: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Phebe Oyinkansola,Alabi,https://linkedin.com/in/phebe-oyinkansola-alabi-5683481a3,MoreLife,Health and Wellbeing Practitioner (Adult Weight Management ),,,"Hi Phebe,
+
+A research assistant post sits in your background, and MoreLife itself grew out of research.
+
+Each scan we run produces a standardized, timestamped record of 80+ body measurements from two photos. Who chooses which measures the evaluation of adult programmes draws on?
+
+Katerina","Hi Phebe,
+
+Checking whether this reached you: who sets the measures for evaluating adult programmes? An email address would be perfect.
+
+Katerina"
+Tina,Horsnell,https://linkedin.com/in/tina-horsnell-625341193,LighterLife,Director of Business Development,,,"Hi Tina,
+
+LighterLife offers weight-loss medication by consultation alongside Foodpacks and Mentor support, a wide offer for a business development director to take to partners.
+
+FitXpress from 3DLOOK can sit behind LighterLife's own web pages through a REST API. A client's front and side photo come back as 80+ body measurements and a 3D model that the programme chooses whether to show.
+
+If you could add one new thing to the client's online account, where would it go first? I would value 15 minutes to hear your view.
+
+Katerina","Hi Tina,
+
+One weight-management platform ran 34,000 scans in 2025.
+
+With the API route, LighterLife's team decides the look of the page and where the results go. Would 15 minutes suit you? Pick a time here: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Dr George,Sanders,https://linkedin.com/in/dr-george-sanders-0a4429193,MoreLife,"Head of Systems Implementation, Evaluation & Innovation",,,"Hi Dr George,
+
+Spotted that your remit at MoreLife is implementation and evaluation. A service with research roots going back to 1999 will have its own bar for adopting a new system.
+
+FitXpress is a two-photo scan that returns 80+ body measurements and body composition estimates, white-label through API or SDK, with nothing to ship.
+
+What would an evaluation of something like that need to show? Open to 15 minutes?
+
+Katerina","Hi Dr George,
+
+For scale: 112,100 scans ran in 2025 across all 3DLOOK customers.
+
+Each scan takes two photos, with under 45 seconds from the photos to structured results.
+
+Worth 15 min? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Deborah,Evans,https://linkedin.com/in/deborah-evans-27a2bb1a1,Reset Health,Metabolic Health Lead,,,"Hi Deborah,
+
+Quick idea for you: with a background in exercise therapy and health and wellbeing coaching, what would you want in front of you at the start of a Reset Health coaching session?
+
+FitXpress is a guided two-photo scan taken at home: a standardized, timestamped record of 80+ body measurements and a 3D model, for scans the team selects to compare.
+
+Would that be worth discussing?
+
+Katerina","Hi Deborah,
+
+If it helps a session, the 3D model is a view the team chooses whether to show. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+Shall we find a slot? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Suki,Sabine,https://linkedin.com/in/suki-sabine-693109162,MoreLife,Adult Weight Management Practitioner,,,"Hi Suki,
+
+You work with clients and with organisations, and MoreLife delivers programmes in workplace settings as well as healthcare and community ones.
+
+A phone, two photos and a guided sequence give 80+ body measurements. Who designs the adult workplace programme sessions where a step like that could fit?
+
+Katerina","Hi Suki,
+
+A small ask: if workplace programme design sits with a particular person at MoreLife, could you tell me who?
+
+Katerina"
+Anna,Alla,https://linkedin.com/in/annaalla,MoreLife,Adult Weight Management Practitioner,,,"Hi Anna,
+
+Your experience across digital, corporate and community settings fits a provider that works in healthcare, community and workplace ones, as MoreLife does.
+
+3DLOOK's scan is white-label and needs only two phone photos for 80+ body measurements. Who decides what adults are asked to complete on their phone during a programme?
+
+Katerina","Hi Anna,
+
+Quick check on my phone-steps question: does one team at MoreLife decide them?
+
+Katerina"
+Keisha,C.,https://linkedin.com/in/keisha-c-84b940168,MoreLife,Specialist Weight Management Dietitian,,,"Hi Keisha,
+
+Came across your work as an obesity and bariatric dietitian in hospital teams, now specialist weight management at MoreLife.
+
+From two phone photos, FitXpress produces a timestamped set of 80+ body measurements with body composition estimates. A dietitian can compare scans selected between sessions.
+
+Is that a record you would want in front of you at a review?
+
+Katerina","Hi Keisha,
+
+Body fat %, lean mass and fat mass come back as estimates for the dietitian to read, alongside the measurements and a 3D model, with under 45 seconds from the photos to structured results.
+
+Can we book 15 min? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Dr Laura,Falvey,https://linkedin.com/in/dr-laura-falvey-134306176,Reset Health,Executive Clinical Director,,,"Hi Dr Laura,
+
+This stood out: designing clinically-safe, digitally-enabled care pathways for obesity. At Reset Health, what would the clinician want from the person before a remote review?
+
+FitXpress is a guided two-photo scan taken at home. The care team gets a standardized, timestamped record of 80+ body measurements and a 3D model.
+
+Would a short call make sense?
+
+Katerina","Hi Dr Laura,
+
+On repeatability: for most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm. The team compares the scans it selects, and the interpretation stays with the clinician.
+
+Would a 15-minute call work? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Grace,Bajo ANutr,https://linkedin.com/in/grace-bajo-anutr-5bb864178,MoreLife,Adult Weight Management Practitioner,,,"Hi Grace,
+
+MoreLife has delivered programmes since 1999, and adult practitioners like you see the results first hand.
+
+Two phone photos go in, and a 3D model with 80+ body measurements comes out. Who decides what reporting on adult programmes includes?
+
+Katerina","Hi Grace,
+
+Hoping you can help with one name: the person at MoreLife who decides what adult programme reporting covers.
+
+Katerina"
+Elliott,Silver,https://linkedin.com/in/elliottsilver,Habitual,Head of Strategy and Operations,,,"Hi Elliott,
+
+Quick thought. Habitual runs two structured programmes, a medication plan and a soups-and-shakes plan, which gives your team two sets of check-ins to run.
+
+FitXpress is a guided two-photo scan that follows the same capture sequence every time and returns 80+ body measurements in under 45 seconds from the photos to structured results. Nothing to ship, stock or support.
+
+Which of the two programmes would you look at first for a home body record?
+
+Katerina","Hi Elliott,
+
+Adding the operations side: no hardware and no stock, with the same guided capture each time. The photos themselves are deleted once processed, or within 30 days.
+
+Background read: https://3dlook.ai/content-hub/glp-1-market/
+
+Worth 15 minutes? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Chad,Haefele,https://linkedin.com/in/chad-haefele-727044151,MoreLife,Child Healthy Lifesyle Practioner,,,"Hi Chad,
+
+I know your work is with children's programmes, so this is about MoreLife's adult services only.
+
+The scan we build is for adult use: it takes two photos and shows 80+ body measurements. Which team handles requests for new features in the adult patient app?
+
+Katerina","Hi Chad,
+
+Sorry to add to your inbox. If you know who handles feature requests for the adult app, I will take it from there.
+
+Katerina"
+Evan,Robertson ANutr,https://linkedin.com/in/evan-robertson-anutr-2b2a1714b,MoreLife,Children's Healthy Lifestyle Practitioner,,,"Hi Evan,
+
+Your role is with children, so I am asking about adults only. MoreLife also runs adult services.
+
+Adults using our scan take two guided photos and receive 80+ body measurements. Who trains adult practitioners on a new step added to a session?
+
+Katerina","Hi Evan,
+
+An easy one if you know it: which team at MoreLife looks after practitioner training for adult sessions?
+
+Katerina"
+Sophie,Edwards,https://linkedin.com/in/sophie-edwards-b59225187,MoreLife,Chief Operating Officer,,,"Hi Sophie,
+
+Got me thinking about your route from Health Coach to COO at MoreLife. Running programmes across healthcare, community and workplace settings means any added step has to work the same way everywhere.
+
+FitXpress is a guided two-photo scan taken on the person's own phone: 80+ body measurements, under 45 seconds from the photos to structured results, nothing shipped or stocked.
+
+Would a short call help?
+
+Katerina","Hi Sophie,
+
+A practical point on rollout: one weight-management platform ran 34,000 scans in 2025.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Happy to walk through it in 15 min: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Roselle,Herring,https://linkedin.com/in/roselle-herring-800182156,Essex Endocrine Clinic,Consultant Diabetes and Endocrinologist,,,"Hi Roselle,
+
+Noticed you lead the Essex Tier 3 obesity service and run Essex Endocrine Clinic.
+
+At 3DLOOK we built FitXpress: a guided two-photo scan taken at home returns 80+ body measurements and a 3D model in under 45 seconds from the photos to structured results. The care team gets a standardized, timestamped record and compares the scans it selects.
+
+Does a home body record have a place in a Tier 3 pathway? Worth 15 minutes to talk it through?
+
+Katerina","Hi Roselle,
+
+One detail for a clinician.
+
+For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm, and validation covered weights from 38 to 210 kg. Values are measurements and estimates for your team to review.
+
+If useful, here is a 15-minute slot: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+ANJAL,PANAMPARAMBIL SAJI,https://linkedin.com/in/anjal-panamparambil-saji-141708155,MoreLife,Behavior Change Specialist,,,"Hi Anjal,
+
+Behaviour change and smoking cessation at MoreLife are both about the sessions people come back to.
+
+Our capture asks for front and side photos only, and its output is 80+ body measurements. Who decides which behaviour change steps adults are asked to do between sessions?
+
+Katerina","Hi Anjal,
+
+A follow-on thought: the scan has no content of its own, it sits beside whatever a programme teaches. Who sets the between-session steps at MoreLife?
+
+Katerina"
+Ben,Truett,https://linkedin.com/in/ben-truett-36a339157,MoreLife,Partnership and Engagement officer,,,"Hi Ben,
+
+Partnerships and engagement at MoreLife sits alongside work you did at South Cambridgeshire District Council on local physical activity.
+
+3DLOOK supplies a scan that a provider's own screens carry, with 80+ body measurements from two photos. Who signs off outside capabilities used in adult programme delivery?
+
+Katerina","Hi Ben,
+
+Putting it another way: when an outside capability is considered for adult delivery, whose desk does the proposal reach?
+
+Katerina"
+Emily,Ryan (previously Saunders),https://linkedin.com/in/emily-saunders-sport,MoreLife,Adult Weight Management Practitioner,,,"Hi Emily,
+
+A Loughborough MSc in sport and exercise nutrition, now supporting a Tier 3 adult programme at MoreLife.
+
+A guided scan at home gives the practitioner 80+ body measurements from two photos to review. Who plans what Tier 3 adults do between appointments, in the app or otherwise?
+
+Katerina","Hi Emily,
+
+Passing a thought along the right route: whoever at MoreLife shapes between-appointment steps for Tier 3 adults is the person I would like to reach.
+
+Katerina"
+Sean-Patrick,McGowan,https://linkedin.com/in/sean-patrick-mcgowan-a3b114248,Reset Health,Graduate Commercial Associate,,,"Hi Sean-Patrick,
+
+A question for Reset Health's commercial team: which propositions could carry a home body record, and who builds them?
+
+Our white-label capture turns two photos into 80+ body measurements.
+
+Katerina","Hi Sean-Patrick,
+
+Different wording, same ask: which commercial proposition at Reset Health is being scoped next, and who leads it?
+
+Katerina"
+Dr Sarah,Oldfield,https://linkedin.com/in/dr-sarah-oldfield-5a8505253,Reset Health,Metabolic health doctor,,,"Hi Dr Sarah,
+
+Lifestyle medicine as a GP and metabolic health doctor for Roczen frames this question. At a Reset Health check-in, what do you most want in front of you before the conversation starts?
+
+FitXpress gives a body record a structured form: the person takes two photos at home and the clinician sees 80+ body measurements and body composition estimates, timestamped, to review.
+
+Could we find a quarter of an hour?
+
+Katerina","Hi Dr Sarah,
+
+Picture the first minute of a check-in: the scans you select sit side by side, each timestamped.
+
+For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+Would 15 minutes suit you? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Saira,Mashru,https://linkedin.com/in/saira-mashru-31a2b11b0,Saira Nutrition,Nutritionist,,,"Hi Saira,
+
+Quick one on Transform, your 12-week programme for small groups of five women.
+
+FitXpress is a white-label scan: two phone photos return 80+ body measurements and a 3D model in under 45 seconds from the photos to structured results. Has a partner capability like that any place in what Saira Nutrition offers, and who would decide?
+
+A no is fine.
+
+Katerina","Hi Saira,
+
+Quick addition: the scan runs inside a partner's own page or app. 3DLOOK has worked with 100+ clients.
+
+If 15 minutes helps to see whether it fits: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Alex,"Salvaggio MSc, SENr",https://linkedin.com/in/alex-salvaggio-msc-senr-525a91222,MoreLife,Tier 3 Nutritionist,,,"Hi Alex,
+
+From performance nutrition at West Ham United Foundation to Tier 3 work at MoreLife is a big change of setting.
+
+From two phone photos the scan returns 80+ body measurements and body composition estimates. Who signs off changes to the Tier 3 session content?
+
+Katerina","Hi Alex,
+
+Could you steer me? The person who approves Tier 3 session changes is who I am hoping to ask about a two-photo home scan.
+
+Katerina"
+Bhavini,Shah,https://linkedin.com/in/bhavini-shah-8255bb1b2,LloydsPharmacy,General Practitioner,,,"Hi Bhavini,
+
+Came across your work as a GP with LloydsPharmacy. Its Online Doctor offers weight-loss injections and tablets alongside Nutrition Coaching.
+
+We built a guided two-photo scan that returns 80+ body measurements in under 45 seconds from the photos to structured results. Could you point me to whoever owns Nutrition Coaching, or the online weight service roadmap?
+
+Katerina","Hi Bhavini,
+
+Keeping this to one question: who owns Nutrition Coaching at LloydsPharmacy Online Doctor? A name is plenty.
+
+Katerina"
+Matthew,Buckley,https://linkedin.com/in/matthew-buckley-a895631b4,MoreLife,Service Lead,,,"Hi Matthew,
+
+Quick idea for the Service Lead of an adult weight management service at MoreLife.
+
+FitXpress is a guided two-photo scan taken at home, returning 80+ body measurements and a 3D model, with under 45 seconds from the photos to structured results and nothing to install on site.
+
+Who approves a new step in the sessions your service runs?
+
+Katerina","Hi Matthew,
+
+The capture asks little of a service: the person's own phone and the same guided sequence each time.
+
+A 15-minute slot is here: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Phoebe,Orango MSc ANutr,https://linkedin.com/in/phoebeorango,MoreLife,Tier 3 Adult Weight Management Practitioner - Sussex,,,"Hi Phoebe,
+
+Tier 3 adult work in Sussex combines evidence-informed nutrition with behavioural science, and MoreLife delivers specialist programmes in healthcare, community and workplace settings.
+
+Our scan takes two photos on a phone and produces a 3D model alongside 80+ body measurements. Who pilots new elements of adult programme design in Sussex?
+
+Katerina","Hi Phoebe,
+
+A brief second ask: who runs pilots of new programme elements at MoreLife? I would be grateful for a name.
+
+Katerina"
+Alaa,Adwan,https://linkedin.com/in/alaa-adwan-b4588b229,MoreLife,Service Lead and Practitioner,,,"Hi Alaa,
+
+You combine running a service with practitioner work, which shows you both sides of a session. MoreLife has delivered weight-management programmes since 1999, with its origins in research.
+
+FitXpress returns 80+ body measurements and body composition estimates from two phone photos taken at home before a session.
+
+If your practitioners had that record to hand, what would they want to see first? Worth a quick chat?
+
+Katerina","Hi Alaa,
+
+Thinking about your own caseload: the practitioner chooses which scans to compare. 3DLOOK has worked with 100+ clients.
+
+Easy to show live, 15 min: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Julie,H.,https://linkedin.com/in/julie-hearn,MoreLife,Smoking Cessation Practitioner,,,"Hi Julie,
+
+Helping people stop smoking is the sort of work MoreLife does alongside its weight-management programmes for adults, who also receive a patient app on referral.
+
+The scan starts with two photos and ends with 80+ body measurements. Who decides how adults are introduced to the patient app at the start of a programme?
+
+Katerina","Hi Julie,
+
+Just checking you saw my question about the app introduction. Whoever shapes that at MoreLife is who I would like to reach.
+
+Katerina"
+Olivia,Potter,https://linkedin.com/in/olivia-potter-62999b232,MoreLife,Dietetic associate practitioner,,,"Hi Olivia,
+
+A dietetic associate role at MoreLife sits close to what adults actually do in sessions.
+
+We have built a capture of two guided photos that yields 80+ body measurements. Who sets the dietetic checkpoints inside adult sessions?
+
+Katerina","Hi Olivia,
+
+If dietetic checkpoints at MoreLife have an owner, could you share the name? I would be glad to write to them.
+
+Katerina"
+Areesha,R.,https://linkedin.com/in/areesha-r-b4809b204,MoreLife,Adults Weight Management Practitioner,,,"Hi Areesha,
+
+Weight management work in Sheffield, and now adults at MoreLife.
+
+In a trial, a scan means two phone photos and 80+ body measurements. Who runs trials of new tools in adult services?
+
+Katerina","Hi Areesha,
+
+Trials in adult services are run by someone at MoreLife. A name, or the right team, would be a big help.
+
+Katerina"
+Luana,Howes,https://linkedin.com/in/luana-howes-660ba5204,The Body Clinic Leominster,Managing Director,,,"Hi Luana,
+
+Wanted to reach out about The Body Clinic Leominster, where healthy-eating support sits alongside holistic therapies.
+
+A client takes two photos, front and side, and gets 80+ body measurements in under 45 seconds from the photos to structured results, inside a partner's own page or app. As Managing Director, is adding a partner capability yours to decide, or does it sit with someone else?
+
+Katerina","Hi Luana,
+
+Thought a number might help: 3DLOOK has worked with 100+ clients.
+
+If a 15-minute call is useful: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Eltrent,Summers,https://linkedin.com/in/eltrent-summers-192a6a236,MoreLife,Client Services,,,"Hi Eltrent,
+
+First contact with a programme is often handled in client services at MoreLife.
+
+Behind our scan sits a web or mobile SDK; the person supplies two photos and receives 80+ body measurements. Who owns the client-services system that sits behind the adult patient app?
+
+Katerina","Hi Eltrent,
+
+One systems question, if you know the answer: which team looks after the platform behind the adult app? Thanks for any steer.
+
+Katerina"
+Dr Claudia,Ashton,https://linkedin.com/in/dr-claudia-ashton-332922237,Reset Health,Head of Clinical Services,,,"Hi Dr Claudia,
+
+Your headline on safe, scalable operating models in digital health raised one question about the check-in itself. Which part of Reset Health's clinical service is hardest to standardize across clinicians?
+
+A guided two-photo scan returns the same 80+ body measurements in the same format each time, giving every clinician one structured record to review.
+
+Is that a conversation worth having?
+
+Katerina","Hi Dr Claudia,
+
+Standardized means the same guided capture and the same outputs each time, with the team comparing scans it selects.
+
+For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+Can we put 15 minutes in the diary? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Cherie,Trutwein (ANutr),https://linkedin.com/in/cherie-trutwein-anutr-696106262,MoreLife,Health Advisor,,,"Hi Cherie,
+
+Your nutrition education work with varied communities, now at MoreLife, suggests you see how people first meet a programme.
+
+At home, two photos on a phone return a 3D model and 80+ body measurements. Who designs the first-login experience in the patient app for adults?
+
+Katerina","Hi Cherie,
+
+If the first-login experience for adults belongs to a specific person or team at MoreLife, I would be glad to know which.
+
+Katerina"
+Sandra,undefined,https://linkedin.com/in/sandra-undefined-970625293,LighterLife,Weight Management Consultant,,,"Hi Sandra,
+
+A weight management consultant at LighterLife meets clients week after week.
+
+With 3DLOOK's FitXpress, two phone photos become 80+ body measurements in a web page. Which team at LighterLife shapes what a client's online account can offer next?
+
+With thanks.
+
+Katerina","Hi Sandra,
+
+Any idea who plans the next additions to lighterlife.com for clients?
+
+Katerina"
+Thomas,Curtis,https://linkedin.com/in/thomas-curtis-844271263,Reset Health,Head of Clinical Development,,,"Hi Thomas,
+
+Spotted something in your background: a GP and bariatric physician who led obesity care at MANUAL and Oviva, now shaping clinical development at Reset Health. Which element of the clinical model would you want evidence on first?
+
+FitXpress offers a home body record: two photos, 80+ body measurements and a 3D model for the clinician to review.
+
+Would you be open to a 15-minute conversation?
+
+Katerina","Hi Thomas,
+
+A development question I can answer quickly: it needs no hardware, and the person uses a phone.
+
+For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm. Results arrive in under 45 seconds from the photos to structured results.
+
+Would a 15-minute call fit your week? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+David,Wong,https://linkedin.com/in/david-wong-a24658297,Reset Health,Executive Chairman,,,"Hi David,
+
+A note on Reset Health and the Roczen app, which pairs a dedicated mentor with 1:1 clinical care. We built a white-label scan from two photos that returns 80+ body measurements and a 3D model in under 45 seconds from the photos to structured results.
+
+Would a home body record be worth 15 minutes of the team's time?
+
+Katerina","Hi David,
+
+The brief version: 3DLOOK has worked with 100+ clients, and nothing here is shipped or stocked by Reset Health.
+
+Happy to take 15 minutes with you or a colleague you name: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Rebecca,Tessier,https://linkedin.com/in/rebecca-tessier-60b13b272,Habitual,Patient Operations Lead,,,"Hi Rebecca,
+
+Had a thought about the soups-and-shakes plan at Habitual: a patient on it spends most days between touchpoints with your team.
+
+A guided two-photo scan taken at home, inside the Habitual app, gives them a body record in under 45 seconds from the photos to structured results. Nothing is shipped or stocked.
+
+When a patient reaches the team, what would help most to have on hand? Worth a quick chat?
+
+Katerina","Hi Rebecca,
+
+One more angle for the patient side: the capture is guided step by step, and the team sees a timestamped record it can compare across the scans it selects.
+
+Shall we find 15 minutes? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Abimbola,Loye,https://linkedin.com/in/abimbola-loye-091614281,North West Anglia NHS Foundation Trust,Professional midwifery Advocate,,,"Hi Abimbola,
+
+Noticed your public health and behavioural support background at North West Anglia NHS Foundation Trust, which runs Hinchingbrooke, Peterborough City and Stamford and Rutland hospitals.
+
+We build a guided two-photo scan for adults that returns 80+ body measurements in under 45 seconds from the photos to structured results. Who at the trust leads adult weight management or digital projects, if you know?
+
+Katerina","Hi Abimbola,
+
+A brief second note: a name or a team at North West Anglia for adult weight management services is all I am after.
+
+Katerina"
+Evie,Comber,https://linkedin.com/in/evie-comber-0a7a14282,MoreLife,Weight Management Practitioner,,,"Hi Evie,
+
+You write about building better services as preventative care, which is how MoreLife describes its programmes too.
+
+Our scan reads two phone photos to give 80+ body measurements, with nothing to post out. Who reviews the adult programme's session structure each year?
+
+Katerina","Hi Evie,
+
+Session structure for adults at MoreLife: do you know whose it is? A name would let me ask directly.
+
+Katerina"
+Richard,Ruff,https://linkedin.com/in/richard-ruff-21953a28a,MoreLife,Behavioural change specialist,,,"Hi Richard,
+
+Behavioural change specialist at MoreLife, a company with research origins and programmes since 1999.
+
+The scan returns 80+ body measurements after a guided two-photo capture. Who writes the goal-setting step adults complete in the programme?
+
+Katerina","Hi Richard,
+
+Revisiting one question with fewer words: who owns goal-setting in adult programmes at MoreLife?
+
+Katerina"
+Amy,Broadhurst,https://linkedin.com/in/amy-broadhurst-1a2611375,MoreLife,Client Services Lead - Sussex & Hounslow (Healthy Hounslow),,,"Hi Amy,
+
+Client Services across MoreLife's Sussex and Hounslow services means you shape each person's journey from referral onward, in healthcare and community settings.
+
+FitXpress could add one short step: two phone photos taken at home, returning 80+ body measurements and a 3D model, with under 45 seconds from the photos to structured results.
+
+Where in a client's first weeks would a step like that sit best? Open to a quick chat?
+
+Katerina","Hi Amy,
+
+A closer look at the client side: the step asks for a front photo and a side photo, guided on screen, and nothing is posted to the person.
+
+Pick a time to look at it together: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Meena,Yates,https://linkedin.com/in/meena-yates-8774923b2,MoreLife,Client Services Advisor,,,"Hi Meena,
+
+Adults referred to a MoreLife programme get a patient app, and questions about it probably reach client services first.
+
+FitXpress, our product, works from two photos on a phone and returns 80+ body measurements. When adults ask what the patient app can do, who at MoreLife decides the answer?
+
+Katerina","Hi Meena,
+
+Not a sales question, just routing. Which role at MoreLife has the final say on what the patient app offers adults?
+
+Katerina"
+Nikola,Anutr,https://linkedin.com/in/nikola-smith-rd-anutr-0bbba892,MoreLife,Dietitian,,,"Hi Nikola,
+
+Quick note for a dietitian in Manchester who has also worked on the product side at Summize.
+
+FitXpress reads two phone photos and gives a dietitian 80+ body measurements and body composition estimates, each timestamped. Who at MoreLife decides what the patient app asks an adult to do before a dietitian appointment?
+
+Katerina","Hi Nikola,
+
+If that sits outside dietetics, a pointer is welcome. I am after whoever shapes the adult patient app at MoreLife.
+
+Katerina"
+Grace,Shiplee,https://linkedin.com/in/grace-shiplee-1151a5185,MoreLife,Senior Contract Manager,,,"Hi Grace,
+
+MoreLife has its origins in research, and your headline combines senior management with PhD work.
+
+A timestamped, standardized set of 80+ body measurements comes out of FitXpress after two phone photos. Who owns how adult programmes measure change at MoreLife?
+
+Katerina","Hi Grace,
+
+Measuring change across adult programmes is my one question. Is there a lead I could write to, or a team?
+
+Katerina"
+Manel,Ghezal,https://linkedin.com/in/m-ghezal,MoreLife,Adult Weight Management Practitioner,,,"Hi Manel,
+
+Evidence comes first for someone with research assistant experience at London Metropolitan University.
+
+FitXpress takes front and side photos on the person's own phone, and 80+ body measurements come out. Who decides whether a new step is added to the adult programme at MoreLife?
+
+Katerina","Hi Manel,
+
+I only need a direction. If an adult programme design group exists at MoreLife, whose desk is it?
+
+Katerina"
+Hamish,Burdge,https://linkedin.com/in/hamish-burdge-anutr-b423a8188,MoreLife,Adult Weight Management Practitioner,,,"Hi Hamish,
+
+Made me think of how a first session sets the tone, given your coaching at MANUAL and ZOE.
+
+FitXpress goes from two photos on a phone to 80+ body measurements, with under 45 seconds from the photos to structured results. Who shapes the opening weeks of the adult programme at MoreLife?
+
+Katerina","Hi Hamish,
+
+The opening weeks of the adult programme are the narrower ask. Whoever designs them is the person I hope to reach.
+
+Katerina"
+Victoria,Simpson,https://linkedin.com/in/victoria-simpson-a1ab1696,MoreLife,NHSE Digital Contract Manager & Reporting Strategy Coordinator,,,"Hi Victoria,
+
+Digital and reporting work at MoreLife means you see what adults meet on screen after a session.
+
+Inside a programme's own screens, FitXpress returns 80+ body measurements and a 3D model from two photos. Which team decides what an adult sees in the patient app after a session?
+
+Katerina","Hi Victoria,
+
+Who at MoreLife owns the adult patient app experience? A job title would point me the right way.
+
+Katerina"
+Daniella,Hall,https://linkedin.com/in/daniella-hall-bsc-876ab7235,MoreLife,Children’s Healthy Lifestyle Practitioner,,,"Hi Daniella,
+
+I am writing about adult services at MoreLife, though your own work in Stockport is with children.
+
+FitXpress is built for adults: a pair of phone photos becomes 80+ body measurements. Who designs adult programmes in your region at MoreLife?
+
+Katerina","Hi Daniella,
+
+Only the adult side, only a pointer. Who designs adult programmes near you at MoreLife?
+
+Katerina"
+Beverley,Ambler,https://linkedin.com/in/beverley-ambler-0599411a3,MoreLife,NHS Health Check Behaviour Specialist,,,"Hi Beverley,
+
+Training others to deliver follows a design that someone at MoreLife owns.
+
+At 3DLOOK we have built FitXpress, which returns 80+ body measurements from two photos taken at home. Who designs the adult programme at MoreLife that trainers teach from?
+
+Katerina","Hi Beverley,
+
+Passing on a name or a role would be kind. Adult programme design is the only thing I am trying to place.
+
+Katerina"
+Georgia,Froude,https://linkedin.com/in/georgia-froude-57b656199,MoreLife,Adult Weight Management and Behaviour Change Specialist,,,"Hi Georgia,
+
+Behaviour change with adults at MoreLife, after nutrition advice for PCOS at Paia, covers a lot of ground between sessions.
+
+Two photos from an adult's phone give FitXpress what it needs for 80+ body measurements and a 3D model. Who owns what the patient app asks adults to read or do after a group session?
+
+Katerina","Hi Georgia,
+
+Whoever owns the adult app content would be ideal, or the team behind it.
+
+Katerina"
+Tracey,Horowitz,https://linkedin.com/in/traceyhorowitz,MoreLife,Head of Marketing Department,,,"Hi Tracey,
+
+This stood out: a headline spanning healthcare, DTC and scale-ups, at a provider whose programmes date from 1999.
+
+FitXpress is white-label: a provider's own screens ask for two photos and show 80+ body measurements. Who at MoreLife writes the brief when the patient app gets a new feature for adults?
+
+Katerina","Hi Tracey,
+
+Feature briefs for the adult patient app: which role at MoreLife holds that pen?
+
+Katerina"
+Nicola,Lyons,https://linkedin.com/in/nicola-lyons-797a62a6,MoreLife,Partnership and Engagement Officer,,,"Hi Nicola,
+
+Innovation work at Citizens Advice and a seat on Durham County Council both involve weighing outside ideas.
+
+FitXpress can run in a programme's own web page or app: two photos in, 80+ body measurements out. If a partner proposed a feature for the adult patient app at MoreLife, who would hear it first?
+
+Katerina","Hi Nicola,
+
+Which role at MoreLife would that be? A steer is all I am after.
+
+Katerina"
+Stephen,Young,https://linkedin.com/in/stephen-young-58089a234,MoreLife,Weight Loss Consultant,,,"Hi Stephen,
+
+A weight loss consultant who is also a dietitian sees how one session leads to the next.
+
+FitXpress gives a practitioner 80+ body measurements and body composition estimates from a pair of phone photos to review. Who at MoreLife decides what a consultant covers from one session to the next in the adult programme?
+
+Katerina","Hi Stephen,
+
+A role or name for adult programme design would be welcome.
+
+Katerina"
+Sarah,Preston,https://linkedin.com/in/prestonsarah,MoreLife,Digital Weight Management Dietitian,,,"Hi Sarah,
+
+Digital weight management at MoreLife sits next to your own practice at Bespoke Nutrition.
+
+Before a remote session, an adult could take two photos and FitXpress would return 80+ body measurements. Who owns the patient app for the digital weight management service?
+
+Katerina","Hi Sarah,
+
+If it is a team and not one person, the team name helps.
+
+Katerina"
+Sophie,Dalpra,https://linkedin.com/in/sophie-dalpra-sophies-coaching,MoreLife,Partnerships and Engagement Officer,,,"Hi Sophie,
+
+Couldn't help but ask: partnerships at MoreLife must touch how local organisations help deliver adult programmes.
+
+3DLOOK's FitXpress needs no hardware: two phone photos, then 80+ body measurements. Who designs the adult programme that local partners help deliver?
+
+Katerina","Hi Sophie,
+
+A designer's name, or the lead role, is all I would need.
+
+Katerina"
+Jaishri,Patel,https://linkedin.com/in/jaishri-patel-542077159,MoreLife,Client Service Coordinator,,,"Hi Jaishri,
+
+Client service coordination in Salford is where adults' day-to-day arrangements for sessions land.
+
+FitXpress asks for a front and a side photo, guided on screen, and returns 80+ body measurements and a 3D model. When an adult cannot get something to work in the patient app, who owns that part of the design at MoreLife?
+
+Katerina","Hi Jaishri,
+
+Even a team name would point me the right way.
+
+Katerina"
+Phillippa,Sellstrom,https://linkedin.com/in/phillippa-sellstrom-45209b93,MoreLife,Programme Coordinator,,,"Hi Phillippa,
+
+Programme coordinators at MoreLife see how changes land across healthcare, community and workplace settings.
+
+FitXpress produces 80+ body measurements from two guided phone photos. Who approves a change to adult programme design?
+
+Katerina","Hi Phillippa,
+
+Is there a named approver, or a group, for those changes?
+
+Katerina"
+Faye,Bentley,https://linkedin.com/in/dr-faye-bentley-9a14b063,MoreLife,Strategic Children's Service Manager,,,"Hi Faye,
+
+Leading Cambridge Childhood Partnership gave you a view of strategy, and my question concerns adults only.
+
+FitXpress converts two phone photos into 80+ body measurements. Who holds the pen on adult programme design at MoreLife?
+
+Katerina","Hi Faye,
+
+Adult programme design is the whole question. Who leads it at MoreLife?
+
+Katerina"
+Maxwell,Leary,https://linkedin.com/in/maxwell-leary-385a61263,MoreLife,Active Lifestyle Practitioner for Long Term Conditions,,,"Hi Maxwell,
+
+Active lifestyle work for long term conditions is a specialist corner of what MoreLife does.
+
+With FitXpress, two photos taken at home yield 80+ body measurements. Who leads the design of the long term conditions strand of adult services?
+
+Katerina","Hi Maxwell,
+
+Happy with just a team name.
+
+Katerina"
+Amalia,Kyriacou,https://linkedin.com/in/amalia-kyriacou-79b372a6,MoreLife,Co-ordinator,,,"Hi Amalia,
+
+Co-ordinating in London means handling the practical side of MoreLife's services every day.
+
+FitXpress needs a phone and two photos to return 80+ body measurements and a 3D model. Who is the product owner of the adult patient app?
+
+Katerina","Hi Amalia,
+
+A product owner for the patient app could be a person or a team at MoreLife. I would write to either.
+
+Katerina"
+Louise,Thackeray,https://linkedin.com/in/louise-thackeray-5b218161,MoreLife,Lifestyle Leader,,,"Hi Louise,
+
+Lifestyle leaders at MoreLife meet adults in the room each week.
+
+A person with two photos and a phone gets 80+ body measurements from FitXpress. Who shapes how an adult programme's weekly session links to the patient app?
+
+Katerina","Hi Louise,
+
+Whoever sets that link is who I should write to, if you can say who.
+
+Katerina"
+Helen,Campbell-White,https://linkedin.com/in/helen-campbell-white-b40168212,MoreLife,Stop Smoking Practitioner,,,"Hi Helen,
+
+MoreLife serves adults through healthcare and community services, and each adult takes a route through them.
+
+FitXpress is a smartphone scan: two photos, 80+ body measurements. Who maps the journey an adult takes through a MoreLife programme?
+
+Katerina","Hi Helen,
+
+Journey design for adults: who holds it at MoreLife?
+
+Katerina"
+Sohnia,Akram,https://linkedin.com/in/sohnia-akram-43b7b9bb,MoreLife,Life Style Leader,,,"Hi Sohnia,
+
+Teesside University is on your profile, and Life Style Leader is your role at MoreLife.
+
+The person's own phone does the capture in FitXpress, which returns 80+ body measurements. Who owns the part of the patient app that Life Style Leaders point adults to?
+
+Katerina","Hi Sohnia,
+
+A role is enough, thank you.
+
+Katerina"
+Natalie,Shields,https://linkedin.com/in/natalie-shields-5a0a22224,MoreLife,Dietitian,,,"Hi Natalie,
+
+Dietitians at MoreLife work with adults across healthcare and community settings.
+
+For a dietitian to review, FitXpress returns 80+ body measurements and body composition estimates from two photos. Who brings dietetic input into adult programme design at MoreLife?
+
+Katerina","Hi Natalie,
+
+If there is a named lead for that, I would be glad to know who.
+
+Katerina"
+Peter,Yee,https://linkedin.com/in/peteryeekk,Reset Health,"Product Manager, Malaysia",,,"Hi Peter,
+
+Setel to product at Reset Health Malaysia is a move I wanted to ask about. Is there a London team that scopes new measurement or capture features for Roczen?
+
+Two phone photos give 80+ body measurements through our SDK.
+
+Katerina","Hi Peter,
+
+Briefly: a name or team on the London side that scopes new Roczen features is all I need. Thank you for reading.
+
+Katerina"
+Tristan,Dummer,https://linkedin.com/in/tristandummer,Reset Health,Marketing Manager,,,"Hi Tristan,
+
+Ogilvy to Reset Health is an interesting creative path. Which team at Reset Health owns how body information is presented inside Roczen?
+
+Photos from a phone feed a 3D model and 80+ body measurements.
+
+Katerina","Hi Tristan,
+
+Re-asking in simpler terms: who decides what a person sees about their own body data in the app?
+
+Katerina"
+Aman,Mohammad,https://linkedin.com/in/amanmohammad,Reset Health,Senior Product Designer,,,"Hi Aman,
+
+Thrive Tribe's UX and design lead now designing Roczen at Reset Health: a path worth asking about. Which team owns the onboarding and capture flows in the app?
+
+A photo scan would be a new flow to design. It takes front and side photos and returns 80+ body measurements through an SDK.
+
+Katerina","Hi Aman,
+
+Closing the loop on design: who reviews a new capture flow before it reaches people in Roczen? Who would that be?
+
+Katerina"
+Kelly,Morrall,https://linkedin.com/in/kelly-m-236a2693,Reset Health,"Country Manager, Malaysia",,,"Hi Kelly,
+
+Running finance and the Malaysia business for Reset Health from the UK is a wide remit. Who in London prioritises the requests that international teams raise for Roczen?
+
+The capability here is a two-photo scan that returns 80+ body measurements.
+
+Katerina","Hi Kelly,
+
+Would you be able to suggest the right colleague in London? Thank you.
+
+Katerina"
+Tiago,Grohmann,https://linkedin.com/in/tiago-grohmann-md-704ba963,Reset Health,Line Manager,,,"Hi Tiago,
+
+From metabolic health nurse to line manager at Reset Health: a clinical path I wanted to ask about. Who decides what information a clinician sees before a check-in?
+
+A scan the person takes at home gives the clinician 80+ body measurements to review.
+
+Katerina","Hi Tiago,
+
+In short: I am looking for whoever shapes what the clinician sees ahead of a session. Could you suggest a name?
+
+Katerina"
+Catherine,Webb,https://linkedin.com/in/catherine-webb-b0470b74,Reset Health,Operations,,,"Hi Catherine,
+
+Operations at accuRx and research before it suggests a good view of how services run at Reset Health. Who coordinates what happens before each consultation?
+
+Our scan runs from two phone photos and returns 80+ body measurements.
+
+Katerina","Hi Catherine,
+
+A simple request: the name of the person who leads consultation delivery for Roczen would help me. Thank you.
+
+Katerina"
+Nik,Ariff,https://linkedin.com/in/dr-nik-adzrul-ariff,Reset Health,Head of Clinical Services,,,"Hi Nik,
+
+Preventive, cardiovascular and obesity care in a corporate health practice caught my eye. At Reset Health, which clinical lead in London signs off changes to the care pathway in Roczen?
+
+Each scan returns 80+ body measurements from two guided photos.
+
+Katerina","Hi Nik,
+
+One pointer would do: a clinical lead in London who reviews new additions to the pathway. Thank you.
+
+Katerina"
+Alexandra,Gyurko,https://linkedin.com/in/alexandra-gyurk%c3%b3-99309236,Reset Health,Quality Assurance Analyst,,,"Hi Alexandra,
+
+A question for the people who test the Roczen app at Reset Health: who in technical delivery signs off a new SDK before release?
+
+It runs through a REST API and SDKs and returns 80+ body measurements per scan.
+
+Katerina","Hi Alexandra,
+
+If testing is where integrations get discussed, a name from the technical delivery team would be ideal. Thank you.
+
+Katerina"
+Barbara,McGowan,https://linkedin.com/in/barbara-mcgowan-a36891192,Reset Health,Chief Medical Officer,,,"Hi Barbara,
+
+Quick thought for a professor of endocrinology who also owns the clinical model at Reset Health: what would a home body record need to show before it earns a place in a consultation?
+
+FitXpress returns 80+ body measurements and body composition estimates from two phone photos, timestamped for the care team to review.
+
+Could we arrange 15 minutes?
+
+Katerina","Hi Barbara,
+
+The short version for the clinical model: the person takes two photos at home and the team compares the scans it selects.
+
+For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm. Body composition values are estimates for the team to review.
+
+Shall we take 15 minutes on the clinical model? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Alice,Fletcher,https://linkedin.com/in/alice-fletcher-18596295,Reset Health,Dietitian,,,"Hi Alice,
+
+When a diet plan is reviewed in Roczen at Reset Health, who decides which body details sit next to it? Your years in bariatric dietetics at Phoenix Health are why I ask.
+
+Our scan starts from a front and a side photo and ends with 80+ body measurements.
+
+A first name would be a great start.
+
+Katerina","Hi Alice,
+
+One line: the person at Reset Health who decides what sits alongside a diet plan in Roczen. Their name or role would be a great help.
+
+Katerina"
+Shweta,Sidana,https://linkedin.com/in/shweta-sidana-42a4b9183,Reset Health,Metabolic Health Mentor,,,"Hi Shweta,
+
+Reset Health gives each person a dedicated mentor. Before a mentor session, who decides what body information a mentor can see?
+
+FitXpress, our white-label scan, gives a mentor 80+ body measurements and a 3D model from two phone photos.
+
+Could you tell me who that is?
+
+Katerina","Hi Shweta,
+
+If this is a clinical decision, the clinical lead is the right contact. Could you point me their way?
+
+Katerina"
+Jason,Aun,https://linkedin.com/in/jasoncya,Reset Health,Head of Commercial and Corporate Affairs,,,"Hi Jason,
+
+Commercial and corporate affairs at Reset Health Malaysia sits close to partnerships. Which London team evaluates partner technology for the Roczen programme?
+
+FitXpress is one such piece: a white-label scan with 80+ body measurements from two photos.
+
+Might you point me to that team?
+
+Katerina","Hi Jason,
+
+Put differently: who in London would look at a body-record capability for Roczen first? I would be glad of any pointer.
+
+Katerina"
+Imogen,Bole,https://linkedin.com/in/imogen-bole-6273a9b2,Reset Health,Senior Copywriter,,,"Hi Imogen,
+
+Copy inside Roczen reaches everyone Reset Health supports. When a new body-record step arrives, whose brief covers the wording around it?
+
+With FitXpress, the app could offer a 3D model and 80+ body measurements from two photos.
+
+Do you know who writes that brief?
+
+Katerina","Hi Imogen,
+
+Whoever briefs copy for new in-app steps is who I am after. Could you share their first name?
+
+Katerina"
+Louisa,Flannery,https://linkedin.com/in/louisa-flannery,Reset Health,Health Coach,,,"Hi Louisa,
+
+A health coach at Reset Health sees a person's progress build up session by session. Between coaching sessions, who shapes how that progress is recorded in Roczen?
+
+FitXpress is a scan from two phone photos, white-label inside an app, with 80+ body measurements as the output.
+
+Do you know who that is?
+
+Katerina","Hi Louisa,
+
+Whoever decides how progress is recorded between sessions: that role is enough.
+
+Katerina"
+Emelia,Judge,https://linkedin.com/in/emelia-judge-a205b3160,Reset Health,Health Coach,,,"Hi Emelia,
+
+ZOE, Optima Health, now Reset Health, with an AfN associate nutritionist registration: three different settings. When nutritionists want a new measure in Roczen, how is the request raised, and to whom?
+
+FitXpress offers front and side photos from a phone and 80+ body measurements in return.
+
+Would you know the owner's name?
+
+Katerina","Hi Emelia,
+
+To save you time: the person who takes nutrition requests for Roczen is who I would like to reach.
+
+Katerina"
+Raquel,Windt,https://linkedin.com/in/raquelsanchezwindt,Reset Health,Metabolic Health Doctor,,,"Hi Raquel,
+
+You have worked in endocrinology at St Bartholomew's, in Madrid and now at Reset Health. At a remote review, which body details do you ask a person for first?
+
+FitXpress takes front and side photos on a phone and gives the clinician 80+ body measurements, with body composition estimates alongside.
+
+Could I book you in for a conversation next week?
+
+Katerina","Hi Raquel,
+
+Something practical from the evaluation side: for most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm. Scans were evaluated across body weights from 38 to 210 kg.
+
+If a conversation is useful, my calendar is here: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Charlotte,Williams,https://linkedin.com/in/charlotte-williams-49224473,Reset Health,Metabolic Dietitian,,,"Hi Charlotte,
+
+Your profile pairs metabolic dietetics at Roczen with clinical lead experience at Phoenix Private Health. For people managing type 2 diabetes with Reset Health, which clinical lead decides what body data the metabolic team can ask for?
+
+A scan from two photos adds a 3D model and 80+ body measurements to that list.
+
+I would be grateful for a name.
+
+Katerina","Hi Charlotte,
+
+Whoever weighs new tools for the metabolic team is the person I am after. Any pointer to that clinical lead is welcome.
+
+Katerina"
+George,Williams,https://linkedin.com/in/george-hamlyn-williams-a605221b4,Reset Health,Dietitian,,,"Hi George,
+
+Transform Hospital Group and Streamline Surgical, then Reset Health from Wales. Which clinical lead approves a new tool for the 1:1 consultations offered through Roczen?
+
+FitXpress is built into an app through an SDK and returns 80+ body measurements from front and side photos.
+
+Could you tell me whom to write to?
+
+Katerina","Hi George,
+
+If that is not your area, a pointer to the right person would be enough.
+
+Katerina"
+Eloisa,Liedl,https://linkedin.com/in/eloisa-rocha-liedl,Reset Health,Data Analyst,,,"Hi Eloisa,
+
+If Roczen added a timestamped body record, who at Reset Health would decide how it enters the analysis?
+
+FitXpress results are timestamped, with 80+ body measurements per scan.
+
+Could you share their name?
+
+Katerina","Hi Eloisa,
+
+Data question, simply: who leads data science at Reset Health? Even a role title would already help.
+
+Katerina"
+Davinaa,Rajeswary,https://linkedin.com/in/davinaa-chandran-rajeswary-60040a179,Reset Health,Pharmacist,,,"Hi Davinaa,
+
+Who in London owns the platform that Roczen runs on at Reset Health? Your headline on telehealth and pharmacy operations in Malaysia made me ask.
+
+Roczen is how Reset Health supports people living with obesity and type 2 diabetes. Our product, FitXpress, gives an app 80+ body measurements from two photos.
+
+Is there a London contact you would suggest?
+
+Katerina","Hi Davinaa,
+
+Just the contact, please: who in London looks after the Roczen platform side? Appreciate any pointer.
+
+Katerina"
+Sharon,Ramachandran,https://linkedin.com/in/sharon-priya-ramachandran-mba-b2156052,Reset Health,Senior Operations Executive,,,"Hi Sharon,
+
+Where in London would a project manager at Reset Health Malaysia take a measurement step for Roczen? Your project and operations background is why I ask you.
+
+FitXpress is a photo scan for apps, giving 80+ body measurements from two photos.
+
+Do you have a contact name?
+
+Katerina","Hi Sharon,
+
+Where would a measurement-related project for Roczen start in London? Any contact would be welcome.
+
+Katerina"
+Benjamin,Sabri,https://linkedin.com/in/benjamin-sabri-6a538b171,Reset Health,Metabolic Health Doctor,,,"Hi Benjamin,
+
+In London, who decides what a clinician at Reset Health can record about a person's body in Roczen after a consultation? I am asking because you are a medical officer at Reset Health Malaysia.
+
+FitXpress timestamps each scan, with 80+ body measurements from front and side photos.
+
+Might you know their name?
+
+Katerina","Hi Benjamin,
+
+Whoever shapes the clinical record fields in Roczen in London would be ideal to reach. Might you share who that is?
+
+Katerina"
+Maldwyn,Bacon,https://linkedin.com/in/maldwyn-bacon-9311a8213,Reset Health,Support Engineer,,,"Hi Maldwyn,
+
+Your headline on enhancing user experiences through technical support stayed with me. Who at Reset Health prepares support for a new capture feature before it goes live?
+
+FitXpress comes with an SDK and an API and returns 80+ body measurements from two photos.
+
+Could you name the person or team?
+
+Katerina","Hi Maldwyn,
+
+If new features are handed to support by a release manager, that title is enough for me.
+
+Katerina"
+Lauren,Dolphin,https://linkedin.com/in/lauren-dolphin-b325132ab,Reset Health,Marketing,,,"Hi Lauren,
+
+Your profile lists Marketing at Reset Health, so I will keep this short. Which team plans how a new body-record feature would be introduced to people using Roczen?
+
+FitXpress turns two photos into 80+ body measurements inside an app.
+
+Even a first name would get me started.
+
+Katerina","Hi Lauren,
+
+Last try: the team that plans how Roczen features are introduced to people. Any contact would help.
+
+Katerina"
+Judy,Hoskins,https://linkedin.com/in/judyhoskins,LighterLife,LighterLife Mentor,,,"Hi Judy,
+
+Your headline on Mind Shift Coaching for people later in life is a clear focus.
+
+Where in a LighterLife client's online account would a guided home scan sit, and whose area is that? FitXpress, from 3DLOOK, is two photos on a phone, then 80+ body measurements in a web page.
+
+Any direction is welcome.
+
+Katerina","Hi Judy,
+
+A guided scan can be as simple as two photos on a phone. Who at LighterLife would be the person to ask about adding it?
+
+Katerina"
+Susan,Murray,https://linkedin.com/in/susan-murray-a5899023,LighterLife,Counsellor,,,"Hi Susan,
+
+The scan 3DLOOK builds, FitXpress, returns a 3D model and 80+ body measurements from two photos.
+
+Which team at LighterLife shapes what the online programme gives clients to look back on?
+
+Katerina","Hi Susan,
+
+Is there a team behind the online programme that I should be writing to?
+
+Katerina"
+Kim,Stares,https://linkedin.com/in/kim-stares-5a637233,LighterLife,Quality Assurance Team Leader,,,"Hi Kim,
+
+Before a new feature reaches a client's web account at LighterLife, someone checks it. Would that be your team for a capability like a guided body scan?
+
+FitXpress returns 80+ body measurements from two photos in a web page. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+Katerina","Hi Kim,
+
+If QA is involved in new web account features, the repeatability figure above is what I would walk through. Who should I contact?
+
+Katerina"
+Jackie,Cook,https://linkedin.com/in/jackie-cook-83091874,LighterLife,Centre Manager,,,"Hi Jackie,
+
+3DLOOK's FitXpress lets a client take two photos on a phone and returns 80+ body measurements in a web page.
+
+Between weekly groups, what do LighterLife clients take away from the online programme, and whose area is it?
+
+Katerina","Hi Jackie,
+
+The online programme must have an owner for what clients keep after each session. Is it a team you know?
+
+Katerina"
+Janette,Humphrey,https://linkedin.com/in/janette-humphrey-40848827,LighterLife,Owner,,,"Hi Janette,
+
+RelaxReleaseRestore reads like a brand of its own, alongside your counsellor years at LighterLife.
+
+With 3DLOOK's FitXpress, two guided photos in a web page give 80+ body measurements and body composition estimates. Where would that sit in a client's account at LighterLife?
+
+Katerina","Hi Janette,
+
+Is the client's online account looked after by one team? If you know it, I would like to say hello there.
+
+Katerina"
+Liz,Hayward,https://linkedin.com/in/liz-hayward-4a810b19,LighterLife,Senior Customer Service Advisor,,,"Hi Liz,
+
+Customer service hears what clients wish the web account did. Suppose a client asked customer service for a guided body scan: who at LighterLife would take that on?
+
+3DLOOK makes FitXpress: a front and a side photo become 80+ body measurements inside a web page.
+
+Many thanks.
+
+Katerina","Hi Liz,
+
+Think of the last time a client wanted more from their account. Who got that request?
+
+Katerina"
+Anne-Marie,Tinto,https://linkedin.com/in/anne-marie-tinto-824040202,LighterLife,Lighterlife Mentor,,,"Hi Anne-Marie,
+
+Risk and operational control at Banco Santander, then financial wellbeing at Citizens Advice, before LighterLife.
+
+FitXpress, our scan, returns 80+ body measurements from two photos, and photos are deleted after processing or within 30 days. Where at LighterLife is it decided whether a capability like that belongs in the client's online account?
+
+Any role title helps.
+
+Katerina","Hi Anne-Marie,
+
+A Mentor sees the online side from the client's seat. Whose work is the client's online account?
+
+Katerina"
+Lorraine,Varndell,https://linkedin.com/in/lorraine-varndell-854911b9,LighterLife,Life Coach,,,"Hi Lorraine,
+
+Each LighterLife Mentor hosts a small weekly group, and most clients join online.
+
+3DLOOK builds FitXpress, a scan that turns two photos into 80+ body measurements a client can look at before the session. What do clients see in their online account around that weekly session, and which team shapes it?
+
+Katerina","Hi Lorraine,
+
+Has anyone at LighterLife taken charge of what a client's account shows on group day?
+
+Katerina"
+Siobhan,Barron,https://linkedin.com/in/siobhan-barron-2a229321,LighterLife,Weight Management Counsellor,,,"Hi Siobhan,
+
+Mentors at LighterLife keep weekly groups small, and the online programme sits alongside them.
+
+FitXpress is what 3DLOOK makes: photos from the front and the side become 80+ body measurements. How do clients keep track of their journey between sessions online, and whose job is that?
+
+Thanks for pointing me.
+
+Katerina","Hi Siobhan,
+
+I am only asking about tracking at home between groups. Any pointer helps.
+
+Katerina"
+Amanda,Walton,https://linkedin.com/in/amanda-walton-4b578a178,LighterLife,Weight Loss and Dieting Mentor,,,"Hi Amanda,
+
+Clients spend the days between their small weekly LighterLife groups at home.
+
+What can a client do for themselves online in those days, and who plans it? FitXpress from 3DLOOK gives 80+ body measurements after two photos, which suits a home setting.
+
+I would be glad of any lead.
+
+Katerina","Hi Amanda,
+
+Your view as a mentor of the days between groups would be a useful start, if you have a guess about who plans them.
+
+Katerina"
+Judy,Monk,https://linkedin.com/in/judy-monk-217b4a2a,LighterLife,Counsellor,,,"Hi Judy,
+
+The technical side of LighterLife's client web account: who owns it?
+
+3DLOOK builds FitXpress, which returns 80+ body measurements from two photos through a web SDK or a REST API, for a team to add to its own pages.
+
+I appreciate it.
+
+Katerina","Hi Judy,
+
+Could a supplier or an in-house team be the technical owner of the account? Either answer helps.
+
+Katerina"
+Louise,Platt,https://linkedin.com/in/louise-platt-77448224,LighterLife,Weight Loss Counsellor,,,"Hi Louise,
+
+Weekly groups at LighterLife are mostly online. Which role would weigh up a phone scan for the client's web account?
+
+We make FitXpress: two photos in, 80+ body measurements out.
+
+Katerina","Hi Louise,
+
+Is someone responsible for what the web account offers clients? Even a rough idea helps.
+
+Katerina"
+Christine,Smith,https://linkedin.com/in/christine-smith-b061491a,LighterLife,Weight Management Consultant,,,"Hi Christine,
+
+A LighterLife consultant meets clients directly.
+
+3DLOOK builds FitXpress, which reads two photos for body composition estimates as well as 80+ body measurements. Where does a new tool for the client's online account get approved at LighterLife?
+
+Pointing me to a role is plenty.
+
+Katerina","Hi Christine,
+
+When a new tool joins the account, someone says yes. That person is who I would like to reach.
+
+Katerina"
+Nicola,Gornall,https://linkedin.com/in/nicola-gornall-79112617,LighterLife,Owner,,,"Hi Nicola,
+
+Lead teacher and pastoral leader at Lancashire County Council, then LighterLife: courses have been your field.
+
+What can clients record and see across the weeks of the online programme, and where is that designed? 3DLOOK's FitXpress turns a front and a side photo into 80+ body measurements.
+
+Katerina","Hi Nicola,
+
+A teacher's instinct says someone designed that view. Do you know who?
+
+Katerina"
+Carole,Brand,https://linkedin.com/in/carole-brand-74114b20,LighterLife,Weight Management Counsellor,,,"Hi Carole,
+
+Online is where most LighterLife weekly groups meet, each with a personal Mentor. What can a client add to their online account at home, and which team plans it?
+
+Our scan, FitXpress, works from two phone photos and hands back 80+ body measurements.
+
+Katerina","Hi Carole,
+
+New features for the client's account are planned somewhere at LighterLife. Where?
+
+Katerina"
+Samantha,Ireland,https://linkedin.com/in/samantha-ireland-2a8abb122,LighterLife,Business and Marketing Strategy Manager & Sales Executive,,,"Hi Samantha,
+
+Your title, Business and Marketing Strategy Manager, covers how LighterLife's programme is presented.
+
+Which capabilities, such as a guided home body scan, earn a place in the client's online experience, and who decides? 3DLOOK's FitXpress runs in a web page and returns 80+ body measurements from two photos.
+
+Katerina","Hi Samantha,
+
+Who sets product direction for the online side? Any lead is welcome.
+
+Katerina"
+Marion,Holder,https://linkedin.com/in/marion-holder-40594844,LighterLife,Lighterlife Consultant,,,"Hi Marion,
+
+FitXpress is the scan 3DLOOK makes: two guided photos in a web page give 80+ body measurements.
+
+Between weekly LighterLife sessions, what does a client's online account do for them, and who looks after it?
+
+Katerina","Hi Marion,
+
+Is the client account the work of one team at LighterLife, or of several?
+
+Katerina"
+Dianne,Bishop,https://linkedin.com/in/dianne-bishop-ba855434,LighterLife,Weight Loss Counsellor,,,"Hi Dianne,
+
+Our FitXpress scan turns two phone photos into 80+ body measurements in a web page.
+
+Who would I ask at LighterLife about what clients bring from home into the weekly online group?
+
+Katerina","Hi Dianne,
+
+Dianne, a pointer to the right desk would settle it for me.
+
+Katerina"
+Lee,Godwin,https://linkedin.com/in/lee-godwin-585baa49,LighterLife,Customer Service Advisor,,,"Hi Lee,
+
+Customer service advisors hear what clients want from their online account. Which part of the LighterLife account would suit a guided body scan, and who looks after that part?
+
+3DLOOK's FitXpress is what that scan would be: two phone photos in a web page, 80+ body measurements out.
+
+Katerina","Hi Lee,
+
+Whoever keeps the account's feature list would be a good person for me to meet.
+
+Katerina"
+Heather,Pearle-Van-Pelz,https://linkedin.com/in/heather-pearle-van-pelz-724b8821,LighterLife,Owner,,,"Hi Heather,
+
+LighterLife's Mentor-led groups are mostly online, and clients have a web account on lighterlife.com.
+
+Who would be the right person to talk to about adding a guided home scan to that web account? 3DLOOK's FitXpress offers a 3D model and 80+ body measurements from two photos, and runs in a web page.
+
+Katerina","Hi Heather,
+
+A short idea for the web account is all I would bring. Whose door should I knock on?
+
+Katerina"
+Jennifer,Bell,https://linkedin.com/in/jennifer-bell-71035537,LighterLife,LighterLife Counsellor,,,"Hi Jennifer,
+
+LighterLife has run programmes for over 30 years. 3DLOOK builds FitXpress, a scan returning 80+ body measurements from two phone photos.
+
+Whose work is it to help clients record their journey at home in the online programme?
+
+Katerina","Hi Jennifer,
+
+Does one person at LighterLife own the home side of the online programme?
+
+Katerina"
+Sonel,Patel,https://linkedin.com/in/sonel-patel-4439a94b,LighterLife,Head of Programme Online,,,"Hi Sonel,
+
+Head of Programme Online at LighterLife puts the weekly Mentor groups, which most clients join online, in your remit.
+
+FitXpress runs in a web page and follows the same guided capture of a front and a side photo every time, with nothing for your team to ship or stock. It returns 80+ body measurements.
+
+What would a small trial need from your team? I can walk you through it in 15 minutes.
+
+Katerina","Hi Sonel,
+
+For rollout planning: photos are deleted after processing or within 30 days, and results sit under a scan ID.
+
+If the online programme has room for a trial, a 15-minute call would cover the rest: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Elaine,Wright,https://linkedin.com/in/elaine-wright-58b9a323,LighterLife,Office Manager,,,"Hi Elaine,
+
+An office manager sees which tools earn their place. Which person weighs up whether a guided scan joins the client's online account at LighterLife?
+
+3DLOOK's scan, FitXpress, gives 80+ body measurements from front and side photos.
+
+Katerina","Hi Elaine,
+
+One sentence on where account tools get chosen would be perfect.
+
+Katerina"
+Pauline,Hills,https://linkedin.com/in/paulinehills,LighterLife,Mentor,,,"Hi Pauline,
+
+What does the online LighterLife programme ask of a client at home, and where is that decided?
+
+We make FitXpress at 3DLOOK: two photos go in and 80+ body measurements come out, inside a web page.
+
+Katerina","Hi Pauline,
+
+If a department owns it, tell me which and I will take it from there.
+
+Katerina"
+Edna,Moneypenny,https://linkedin.com/in/edna-moneypenny-00bab516,LighterLife,Associate Counsellor/Office Manager,,,"Hi Edna,
+
+Photos from the front and the side give FitXpress what it needs for a 3D model and 80+ body measurements.
+
+What does a returning client see in their online account at LighterLife, and who looks after it?
+
+Katerina","Hi Edna,
+
+Does anyone own the returning-client view of the account?
+
+Katerina"
+Steve,Smith,https://linkedin.com/in/steve-smith-11021225,LighterLife,Development Project Manager,,,"Hi Steve,
+
+Development projects need a sponsor. At LighterLife, which role sponsors the projects that change what clients can do in the web account?
+
+I work at 3DLOOK. FitXpress connects through a REST API or web SDK and returns 80+ body measurements from a front and a side photo.
+
+Asking the sponsor directly beats guessing.
+
+Katerina","Hi Steve,
+
+Is there an intake list for web account changes? Whoever keeps it is who I would like to find.
+
+Katerina"
+Deborah,Rice,https://linkedin.com/in/deborah-rice-19815b80,LighterLife,Centre Manager,,,"Hi Deborah,
+
+Centre sessions and online groups sit side by side at LighterLife. Two guided photos are all FitXpress needs to give 80+ body measurements.
+
+Whose call would it be at LighterLife for a client to take such a scan from home before their group?
+
+Katerina","Hi Deborah,
+
+Is the online side's feature list one team's responsibility?
+
+Katerina"
+Rob,Farrow,https://linkedin.com/in/rob-farrow-2503674,Medicspot,Head of Performance Marketing,,,"Hi Rob,
+
+Noticed your SEO and performance marketing work at Medicspot, where medical weight management has been the only service since October 2024.
+
+We build a guided two-photo scan that returns 80+ body measurements in under 45 seconds from the photos to structured results, white-label for an app or account. Who owns the member account or app roadmap at Medicspot? A name is all I need.
+
+Katerina","Hi Rob,
+
+One question only: who owns the member app roadmap at Medicspot?
+
+Katerina"
+David,Keen,https://linkedin.com/in/david-keen-a4aaa794,Medicspot,Non Executive Director,,,"Hi David,
+
+Caught my eye that Medicspot members get weekly 1-to-1 online check-ins with a health coach, and support continues after treatment ends.
+
+3DLOOK offers a white-label scan inside a member's own account: two photos, a 3D model and 80+ body measurements, with no hardware to ship. Which executive owns member experience at Medicspot?
+
+Katerina","Hi David,
+
+One line more: I only need the name of whoever leads member experience at Medicspot, and I will take it from there.
+
+Katerina"
+Rajan,Mistry,https://linkedin.com/in/rajan-mistry-b0a4396b,Medicspot,Pharmacy Executive,,,"Hi Rajan,
+
+Spotted your pharmacist background at Boots UK and your pharmacy role at Medicspot, where support continues after members finish treatment.
+
+We build a two-photo scan taken at home, returning a 3D model and body composition estimates, white-label, with no hardware to ship. Who leads the clinical side of the weight programme at Medicspot? A name is plenty.
+
+Katerina","Hi Rajan,
+
+Sending one practical question: who is the clinical lead for Medicspot's weight programme, and is there someone better placed than you to ask?
+
+Katerina"
+Catherine,Grindrod-Dean,https://linkedin.com/in/catherine-grindrod-dean-169690314,Medicspot,Customer Success Specialist I Health Coach,,,"Hi Catherine,
+
+Made me think of the weekly 1-to-1 online check-ins that Medicspot members have with a health coach.
+
+A person takes two photos at home and gets a 3D model and 80+ body measurements. Who at Medicspot decides what members are asked to do between check-ins?
+
+Katerina","Hi Catherine,
+
+An easy one to answer: which team at Medicspot would I ask about adding a capability to the member account?
+
+Katerina"
+Laura,R,https://linkedin.com/in/laura-r-a9b501159,Medicspot,Health Coach / Customer Success,,,"Hi Laura,
+
+This stood out: medical weight management has been Medicspot's only service since October 2024.
+
+Our scan gives structured, timestamped results in under 45 seconds from the photos to structured results. Who looks after the tools the coaching team uses at Medicspot?
+
+Katerina","Hi Laura,
+
+Small ask: could you tell me who owns the coaching team's tools at Medicspot? A name or a team is plenty.
+
+Katerina"
+Taylor,Staines,https://linkedin.com/in/taylor-staines-22aa1a15a,Medicspot,Customer Success Specialist,,,"Hi Taylor,
+
+Quick reaction to your background as a senior health coach, now at Medicspot, where support continues after members finish treatment.
+
+We built a scan that needs two photos, front and side, and returns a 3D model of the body. Who at Medicspot handles ideas for new partner capabilities?
+
+Katerina","Hi Taylor,
+
+Last thing from me: whoever handles supplier or partner ideas at Medicspot is the person I am looking for.
+
+Katerina"
+Bjorn,Ronaasen,https://linkedin.com/in/bjorn-ronaasen,Counterweight,Coaching Lead - Medical Management and Clinical Oversight,,,"Hi Bjorn,
+
+Your role in medical management and clinical oversight caught my eye. Counterweight delivers the NHS Type 2 Diabetes Path to Remission Programme, and I am trying to reach whoever at the UK head office, Counterweight Ltd, oversees clinical content for it.
+
+FitXpress guides a member through two phone photos and returns 80+ body measurements. Could you tell me who that is?
+
+Katerina","Hi Bjorn,
+
+One more line on why I ask: a clinician gets a standardized, timestamped body record to review, from photos a member takes at home. I would put that to whoever oversees clinical content at Counterweight Ltd, so that I can send the question to the right desk.
+
+Katerina"
+Veronica,Wessels,https://linkedin.com/in/veronica-wessels-154034192,Counterweight,Dietitian,,,"Hi Veronica,
+
+Came across your work with Health Aspired, so I will be direct. Who owns the member experience of the programme at Counterweight Ltd in the UK? That is the question behind this note.
+
+Our scan produces a 3D model from two phone photos. Who would you suggest I ask?
+
+Katerina","Hi Veronica,
+
+Appreciate you may be busy. If you know who owns the member experience at Counterweight Ltd, a first name or a team would let me write to the right place.
+
+Katerina"
+Carlotta,Schwertel,https://linkedin.com/in/carlotta-schwertel-2b829115a,Counterweight,Trainee Health Psychologist,,,"Hi Carlotta,
+
+Quick note. Counterweight-Plus in Scotland holds 1:1 and group appointments virtually, and I am trying to find who leads that service.
+
+The scan we build takes two photos and returns a 3D model. Could you point me to them?
+
+Katerina","Hi Carlotta,
+
+A second note, to keep this easy: if you know who leads Counterweight-Plus, a name would be appreciated.
+
+Katerina"
+Olga,Wojadzis,https://linkedin.com/in/olga-wojadzis-80240ba5,Counterweight,Dietitian,,,"Hi Olga,
+
+MSc Dietetics at King's College London and a spell as a Counterweight dietitian: that is why I am writing to you. I am trying to find who owns the Counterweight app roadmap, where members get dietitian guidance every fortnight.
+
+A 3D model and 80+ body measurements come out of two phone photos. Do you know who I should ask?
+
+Katerina","Hi Olga,
+
+Whoever owns the roadmap for the Counterweight app is the person I would like to reach, and a pointer from you saves me guessing.
+
+Katerina"
+Ashleigh,Venter,https://linkedin.com/in/ashleigh-venter-04986124a,Counterweight,Operations Coordinator & Health Coach,,,"Hi Ashleigh,
+
+Operations and health coaching in one role made me want to reach out. Counterweight's programmes grew out of research begun in 2000 with seven UK universities, and I would like to find who handles technology partners at the UK head office.
+
+The scan is white-label: two phone photos, 80+ body measurements, nothing for a partner to ship. Is there a team that handles this at Counterweight Ltd?
+
+Katerina","Hi Ashleigh,
+
+The scan being white-label means a technology partner has nothing to ship to members. Who handles partners like that at Counterweight Ltd?
+
+Katerina"
+Elliot,McEwan,https://linkedin.com/in/elliot-mcewan-1b969219b,Counterweight,Dietitian,,,"Hi Elliot,
+
+Your dual role as dietitian and partnership representative at Counterweight stands out. Members of the Counterweight app get dietitian guidance every fortnight, and I wonder who decides whether a new partner capability joins what members are offered.
+
+For context, FitXpress returns 80+ body measurements from two phone photos, with an API or SDK doing the work inside the app. A name would be plenty.
+
+Katerina","Hi Elliot,
+
+A quick reminder of the ask: who makes the call on partner capabilities at Counterweight? Any pointer helps, and a no is fine.
+
+Katerina"
+Tommie,Breedt,https://linkedin.com/in/tommie-wt-breedt-96283b181,Counterweight,Delivery Lead,,,"Hi Tommie,
+
+A delivery lead title caught my eye. Counterweight's programmes come from research begun in 2000, and I would like to find who owns delivery to members at the UK head office, Counterweight Ltd.
+
+The scan returns 80+ body measurements in under 45 seconds from the photos to structured results. Who would you point me towards?
+
+Katerina","Hi Tommie,
+
+Back with the short version: I am looking for the person who owns programme delivery at Counterweight Ltd, and one pointer from you would settle it.
+
+Katerina"
+Bhavyanshi,Chaudhary,https://linkedin.com/in/bhavyanshi-chaudhary-64b1341b1,Counterweight,Diabetes Health Coach,,,"Hi Bhavyanshi,
+
+Curious about your take on the diabetes programme at Counterweight, which delivers the NHS Type 2 Diabetes Path to Remission Programme. I wonder who owns its digital side.
+
+From two phone photos, a member gets 80+ body measurements and a 3D model back. Who do you think holds that brief?
+
+Katerina","Hi Bhavyanshi,
+
+One last small question. Who owns the digital side of the diabetes programme at Counterweight? Which team holds it?
+
+Katerina"
+Mayuri,Anutr,https://linkedin.com/in/mayuri-bhagat-anutr-77560a1a1,Counterweight,Partnerships Representative,,,"Hi Mayuri,
+
+Coach and trainer at Counterweight, now in partnerships: that path made me curious who owns the tools coaches are trained on. Counterweight's research began in 2000 with academics at seven UK universities.
+
+A guided scan from two phone photos gives 80+ body measurements; that is what we build. Is that something you handle?
+
+Katerina","Hi Mayuri,
+
+In case it got buried: I am looking for whoever owns coach training and tools at Counterweight. Where should I send it?
+
+Katerina"
+Kelsey,Rd,https://linkedin.com/in/kelsey-kolbee-rd-sa-89a451244,Counterweight,Registered Dietitian,,,"Hi Kelsey,
+
+Quick thought for a registered dietitian at Counterweight. Counterweight's programmes come from research begun in 2000, and I am trying to find who at the UK head office leads the tools dietitians use.
+
+Body composition estimates and a 3D model come back from two photos, front and side, taken on a phone. Would you know who leads it?
+
+Katerina","Hi Kelsey,
+
+A direct question this time. Who leads dietitian tools at Counterweight Ltd in the UK? Even a team name helps.
+
+Katerina"
+Hannah,Guthrie,https://linkedin.com/in/hannahpaigeguthrie,Counterweight,Dietitian,,,"Hi Hannah,
+
+Founder of Compleat Health and a registered dietitian: that combination is why I am writing. Counterweight gives members goals for the length of the programme, and I would like to find who at the UK head office owns that part of the app.
+
+A member is asked for a front and a side photo on a phone, and the scan returns a 3D model and 80+ body measurements. Who owns it at Counterweight Ltd?
+
+Katerina","Hi Hannah,
+
+I am only looking for the owner of the programme goals feature at Counterweight Ltd. A name from you would help.
+
+Katerina"
+Katrina,Campbell-Wareham,https://linkedin.com/in/katrina-campbell-wareham-anutr-7a1548268,Counterweight,Counterweight Diabetes Coach,,,"Hi Katrina,
+
+Counterweight Diabetes Coach is a title I wanted to ask about directly. Whoever decides which new tools coaches can use for the diabetes programme is the person I am hoping to reach.
+
+Our scan reads 80+ body measurements from two phone photos. Where would a question like that go?
+
+Katerina","Hi Katrina,
+
+Sending a gentle nudge. A name or team that decides on tools for diabetes coaches at Counterweight is all I need.
+
+Katerina"
+Zuheirah,Toffar,https://linkedin.com/in/zuheirah-toffar-0aba37140,Counterweight,Programme Support Supervisor,,,"Hi Zuheirah,
+
+A question for someone who supervises programme support. Which team at Counterweight Ltd in the UK owns programme support and onboarding for members?
+
+A member could be asked for a guided two-photo scan that returns a standardized, timestamped body record. Could you share the name of that team?
+
+Katerina","Hi Zuheirah,
+
+A softer way to put it: if you can share who owns member onboarding at Counterweight Ltd, I will send the question on.
+
+Katerina"
+Mzwandile,Mahlangu,https://linkedin.com/in/mzwandile-mahlangu-36ba93122,Counterweight,Reporting Co-ordinator/PST,,,"Hi Mzwandile,
+
+Reporting is the part I am curious about. I am trying to find who at Counterweight Ltd in the UK owns programme reporting.
+
+Each scan we build is structured and timestamped, with 80+ body measurements from two phone photos. Whom should I contact?
+
+Katerina","Hi Mzwandile,
+
+Where does programme reporting sit at Counterweight Ltd, and who runs it?
+
+Katerina"
+Nuhaa,Van Der Ross,https://linkedin.com/in/nuhaa-van-der-ross-1b1233198,Counterweight,Programme Support Resprestitive,,,"Hi Nuhaa,
+
+Your programme support role made me think about onboarding. The Counterweight app brings fortnightly dietitian guidance to members, and I wonder who owns the first steps members take in it.
+
+Two photos, front and side, are all our scan needs to return 80+ body measurements. Is this a question for you or someone else?
+
+Katerina","Hi Nuhaa,
+
+Nothing to decide on your side. Who owns the first steps members take in the Counterweight app? Where should the question go?
+
+Katerina"
+Taryn,Goulding,https://linkedin.com/in/taryn-goulding-9198a8252,Counterweight,Dietitian and Health Coach,,,"Hi Taryn,
+
+Your time as a dietitian and clinical study coordinator stood out. Counterweight's programmes come from research begun in 2000, and I am curious who at the UK head office owns research and evaluation today.
+
+FitXpress returns 80+ body measurements from two phone photos, each scan timestamped. Could you name that person?
+
+Katerina","Hi Taryn,
+
+Happy with a one-line answer. Who owns research and evaluation at Counterweight Ltd?
+
+Katerina"
+Warren,Ras,https://linkedin.com/in/warren-ras-2385b6303,Counterweight,Reporting Co-ordinator and Health Coach,,,"Hi Warren,
+
+This stood out: programme support, then reporting and health coaching, all at Counterweight. I would like to know who at the UK head office decides what health coaches can offer members.
+
+A coach could review a 3D model alongside 80+ body measurements from a member's two phone photos. Who is the right person to ask?
+
+Katerina","Hi Warren,
+
+I am trying to learn who decides what coaches can offer members at the UK head office. Whoever it is, tell me where to send the question and I will.
+
+Katerina"
+Napala,Pratini,https://linkedin.com/in/napala,Habitual,Co-Founder & CEO,,,"Hi Napala,
+
+Noticed the Habitual app carries a 16-week behaviour-change course with new content every day.
+
+At 3DLOOK we built FitXpress, which lets an app ask for a guided two-photo scan at home. It returns 80+ body measurements, body composition estimates and a 3D model, white-label through API or SDKs, with no hardware to ship.
+
+What would you want the app to ask a person for at a check-in? Open to 15 minutes?
+
+Katerina","Hi Napala,
+
+Some scale context for a founder.
+
+112,100 scans in 2025 across all 3DLOOK customers.
+
+Happy to show it in 15 minutes: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Erin,Connors,https://linkedin.com/in/erin-connors,Habitual,Head of Customer Operations,,,"Hi Erin,
+
+Wanted to reach out after seeing your move from Patient Care Lead to Head of Customer Operations at Habitual.
+
+For people on the medication plan, FitXpress adds a guided two-photo scan taken at home before a check-in. It returns 80+ body measurements and a 3D model your team can review together. Nothing to ship.
+
+Where would a body record sit best in a support conversation? Would a short call make sense?
+
+Katerina","Hi Erin,
+
+For scale: one weight-management platform ran 34,000 scans in 2025.
+
+Nothing is shipped or stocked, and the team compares the scans it selects.
+
+Calendar here if a call helps: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Georgia,Butters,https://linkedin.com/in/georgia-butters-430b131a0,Habitual,Health Coach,,,"Hi Georgia,
+
+Quick note. Habitual coaches people through a medication plan or a soups-and-shakes plan, and I am trying to find who looks after the app roadmap.
+
+We built a guided two-photo scan for apps, returning 80+ body measurements in under 45 seconds from the photos to structured results. Could you point me to the right person at Habitual?
+
+Katerina","Hi Georgia,
+
+Just one thing to ask: who owns the Habitual app roadmap? A name or a team is plenty.
+
+Katerina"

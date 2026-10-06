@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-05",
+  "last_updated": "2026-10-06",
   "companies": {
     "safariland": {
       "covered_by_profile": null,
@@ -1655,6 +1655,190 @@
       "campaign_id": "2026-10-05-latam-health-weightloss",
       "product": "fitxpress",
       "date": "2026-10-05",
+      "status": "active"
+    },
+    "coopah": {
+      "display_name": "Coopah",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-09-01-uk-erakulis-similar",
+      "product": "fitxpress",
+      "date": "2026-09-01",
+      "status": "active"
+    },
+    "fiit": {
+      "display_name": "Fiit",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-09-01-uk-erakulis-similar",
+      "product": "fitxpress",
+      "date": "2026-09-01",
+      "status": "active"
+    },
+    "medicspot": {
+      "display_name": "Medicspot",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-06-uk-weight-management",
+      "product": "fitxpress",
+      "date": "2026-10-06",
+      "status": "active"
+    },
+    "nowpatient": {
+      "display_name": "NowPatient",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-09-01-uk-erakulis-similar",
+      "product": "fitxpress",
+      "date": "2026-09-01",
+      "status": "active"
+    },
+    "nutracheck": {
+      "display_name": "Nutracheck",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-09-01-uk-erakulis-similar",
+      "product": "fitxpress",
+      "date": "2026-09-01",
+      "status": "active"
+    },
+    "withu": {
+      "display_name": "WithU",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-09-01-uk-erakulis-similar",
+      "product": "fitxpress",
+      "date": "2026-09-01",
+      "status": "active"
+    },
+    "archvale": {
+      "display_name": "Archvale",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-06-uk-weight-management",
+      "product": "fitxpress",
+      "date": "2026-10-06",
+      "status": "active"
+    },
+    "body-clinic-leominster": {
+      "display_name": "The Body Clinic Leominster",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-06-uk-weight-management",
+      "product": "fitxpress",
+      "date": "2026-10-06",
+      "status": "active"
+    },
+    "body-clinic-stourbridge": {
+      "display_name": "The Body Clinic Stourbridge",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-06-uk-weight-management",
+      "product": "fitxpress",
+      "date": "2026-10-06",
+      "status": "active"
+    },
+    "counterweight": {
+      "display_name": "Counterweight",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-06-uk-weight-management",
+      "product": "fitxpress",
+      "date": "2026-10-06",
+      "status": "active"
+    },
+    "essex-endocrine-clinic": {
+      "display_name": "Essex Endocrine Clinic",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-06-uk-weight-management",
+      "product": "fitxpress",
+      "date": "2026-10-06",
+      "status": "active"
+    },
+    "exchange-health": {
+      "display_name": "Exchange Health",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-06-uk-weight-management",
+      "product": "fitxpress",
+      "date": "2026-10-06",
+      "status": "active"
+    },
+    "habitual": {
+      "display_name": "Habitual",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-06-uk-weight-management",
+      "product": "fitxpress",
+      "date": "2026-10-06",
+      "status": "active"
+    },
+    "homerton-healthcare-nhs-foundation-trust": {
+      "display_name": "Homerton Healthcare NHS Foundation Trust",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-06-uk-weight-management",
+      "product": "fitxpress",
+      "date": "2026-10-06",
+      "status": "active"
+    },
+    "lanarkshire-medical": {
+      "display_name": "Lanarkshire Medical Group",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-06-uk-weight-management",
+      "product": "fitxpress",
+      "date": "2026-10-06",
+      "status": "active"
+    },
+    "lighterlife": {
+      "display_name": "LighterLife",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-06-uk-weight-management",
+      "product": "fitxpress",
+      "date": "2026-10-06",
+      "status": "active"
+    },
+    "lloydspharmacy": {
+      "display_name": "LloydsPharmacy",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-06-uk-weight-management",
+      "product": "fitxpress",
+      "date": "2026-10-06",
+      "status": "active"
+    },
+    "morelife": {
+      "display_name": "MoreLife",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-06-uk-weight-management",
+      "product": "fitxpress",
+      "date": "2026-10-06",
+      "status": "active"
+    },
+    "north-west-anglia-nhs-foundation-trust": {
+      "display_name": "North West Anglia NHS Foundation Trust",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-06-uk-weight-management",
+      "product": "fitxpress",
+      "date": "2026-10-06",
+      "status": "active"
+    },
+    "perspectum": {
+      "display_name": "Perspectum",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-06-uk-weight-management",
+      "product": "fitxpress",
+      "date": "2026-10-06",
+      "status": "active"
+    },
+    "pronokal-uk": {
+      "display_name": "PronoKal UK",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-06-uk-weight-management",
+      "product": "fitxpress",
+      "date": "2026-10-06",
+      "status": "active"
+    },
+    "reset-health": {
+      "display_name": "Reset Health",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-06-uk-weight-management",
+      "product": "fitxpress",
+      "date": "2026-10-06",
+      "status": "active"
+    },
+    "saira-nutrition": {
+      "display_name": "Saira Nutrition",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-06-uk-weight-management",
+      "product": "fitxpress",
+      "date": "2026-10-06",
       "status": "active"
     }
   }

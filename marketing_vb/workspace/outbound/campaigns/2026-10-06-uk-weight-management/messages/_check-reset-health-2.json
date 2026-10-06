@@ -1,0 +1,80 @@
+{
+ "campaign": "2026-10-06-uk-weight-management",
+ "checked": 15,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "reset-health-2",
+ "generated": "2026-10-06T17:48:23",
+ "hard": [],
+ "soft": [
+  [
+   "no calendar link",
+   "alice-fletcher-18596295 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "shweta-sidana-42a4b9183 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "jasoncya M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "imogen-bole-6273a9b2 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "louisa-flannery M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "emelia-judge-a205b3160 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "charlotte-williams-49224473 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "george-hamlyn-williams-a605221b4 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "eloisa-rocha-liedl M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "davinaa-chandran-rajeswary-60040a179 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "sharon-priya-ramachandran-mba-b2156052 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "benjamin-sabri-6a538b171 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "maldwyn-bacon-9311a8213 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "lauren-dolphin-b325132ab M2",
+   "angle referral"
+  ]
+ ]
+}

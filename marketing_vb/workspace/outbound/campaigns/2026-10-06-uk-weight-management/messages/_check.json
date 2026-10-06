@@ -1,0 +1,875 @@
+{
+ "campaign": "2026-10-06-uk-weight-management",
+ "checked": 223,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": null,
+ "generated": "2026-10-06T18:13:03",
+ "hard": [],
+ "soft": [
+  [
+   "no calendar link",
+   "john-moore-a3b92262 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "siri-steinmo-27485a64 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "margaret-campbell-27094866 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "velawson M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "anne-matterface-17477430 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "jan-badger-b6304535 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "joanna-bhart-44122a5 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "marie-caley-54a9394 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "julie-johnson-01347137 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "naomi-banham-157b525 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "karen-burr-3482a18 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "bev-robinson-27825838 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "tracey-fisken-12a5a29 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "ann-mcclean-9894653a M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "kelly-saunders-96b1a010 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "donna-earle-swaby-5a532212 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "maxine-phillips-smith-86859844 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "carol-graves-a0bbab14 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "daniela-alves-aba63749 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "lorraine-addyman-274bab17 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "angel-collins-91477518 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "paul-anthony-brown-04882948 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "anthony-hardley-3609244a M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "paul-paine-75243b1a M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "helen-litherland-6ab7b34a M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "karen-turmer-4412341b M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "patricia-lyon-1189291a M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "dr-sahira-dar-59801453 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "dawn-sheppard-371b0822 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "pat-ashmore-668ab524 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "tabithaprince M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "ali-robbins-b4230728 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "dr-adam-barker-aca-5a256a57 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "sharon-henshaw-6b6b5127 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "georgia-apsitis-9730045a M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "natalie-bellis-3279a928 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "veronica-barry-0851012b M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "bridget-egglesfield-0aa93329 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "christine-render-5584522b M2",
+   "angle referral"
+  ],
+  [
+   "pricing word",
+   "juli-mey M1",
+   "Hi Juli, Leading a Tier 3 practitioner team across Sussex, Greater Manchester and Essex makes consistency acr…"
+  ],
+  [
+   "no calendar link",
+   "nadine-heywood-5a1a8712a M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "natalie-cowie-b15182121 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "idalia-stach-anutr-4b7b04122 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "georgina-walsh-33b4b5127 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "angelina-spathopoulou-301435b0 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "sally-harris-139a7981 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "lorraine-kessock-philip-87435083 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "lyn-obeney-24524799 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "nazila-bahrami-3aa048110 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "nikki-cook-938694a1 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "debbie-kennedy-6546a2111 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "oliver-lyons-5351311a5 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "phebe-oyinkansola-alabi-5683481a3 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "suki-sabine-693109162 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "annaalla M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "grace-bajo-anutr-5bb864178 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "chad-haefele-727044151 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "evan-robertson-anutr-2b2a1714b M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "anjal-panamparambil-saji-141708155 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "ben-truett-36a339157 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "emily-saunders-sport M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "sean-patrick-mcgowan-a3b114248 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "alex-salvaggio-msc-senr-525a91222 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "bhavini-shah-8255bb1b2 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "phoebeorango M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "julie-hearn M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "olivia-potter-62999b232 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "areesha-r-b4809b204 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "eltrent-summers-192a6a236 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "cherie-trutwein-anutr-696106262 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "sandra-undefined-970625293 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "abimbola-loye-091614281 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "evie-comber-0a7a14282 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "richard-ruff-21953a28a M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "meena-yates-8774923b2 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "nikola-smith-rd-anutr-0bbba892 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "grace-shiplee-1151a5185 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "m-ghezal M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "hamish-burdge-anutr-b423a8188 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "victoria-simpson-a1ab1696 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "daniella-hall-bsc-876ab7235 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "beverley-ambler-0599411a3 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "georgia-froude-57b656199 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "traceyhorowitz M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "nicola-lyons-797a62a6 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "stephen-young-58089a234 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "prestonsarah M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "sophie-dalpra-sophies-coaching M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "jaishri-patel-542077159 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "phillippa-sellstrom-45209b93 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "dr-faye-bentley-9a14b063 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "maxwell-leary-385a61263 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "amalia-kyriacou-79b372a6 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "louise-thackeray-5b218161 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "helen-campbell-white-b40168212 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "sohnia-akram-43b7b9bb M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "natalie-shields-5a0a22224 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "peteryeekk M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "tristandummer M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "amanmohammad M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "kelly-m-236a2693 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "tiago-grohmann-md-704ba963 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "catherine-webb-b0470b74 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "dr-nik-adzrul-ariff M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "alexandra-gyurk%c3%b3-99309236 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "alice-fletcher-18596295 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "shweta-sidana-42a4b9183 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "jasoncya M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "imogen-bole-6273a9b2 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "louisa-flannery M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "emelia-judge-a205b3160 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "charlotte-williams-49224473 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "george-hamlyn-williams-a605221b4 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "eloisa-rocha-liedl M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "davinaa-chandran-rajeswary-60040a179 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "sharon-priya-ramachandran-mba-b2156052 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "benjamin-sabri-6a538b171 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "maldwyn-bacon-9311a8213 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "lauren-dolphin-b325132ab M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "judyhoskins M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "susan-murray-a5899023 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "kim-stares-5a637233 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "jackie-cook-83091874 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "janette-humphrey-40848827 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "liz-hayward-4a810b19 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "anne-marie-tinto-824040202 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "lorraine-varndell-854911b9 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "siobhan-barron-2a229321 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "amanda-walton-4b578a178 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "judy-monk-217b4a2a M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "louise-platt-77448224 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "christine-smith-b061491a M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "nicola-gornall-79112617 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "carole-brand-74114b20 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "samantha-ireland-2a8abb122 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "marion-holder-40594844 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "dianne-bishop-ba855434 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "lee-godwin-585baa49 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "heather-pearle-van-pelz-724b8821 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "jennifer-bell-71035537 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "elaine-wright-58b9a323 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "paulinehills M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "edna-moneypenny-00bab516 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "steve-smith-11021225 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "deborah-rice-19815b80 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "rob-farrow-2503674 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "david-keen-a4aaa794 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "rajan-mistry-b0a4396b M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "catherine-grindrod-dean-169690314 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "laura-r-a9b501159 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "taylor-staines-22aa1a15a M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "bjorn-ronaasen M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "veronica-wessels-154034192 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "carlotta-schwertel-2b829115a M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "olga-wojadzis-80240ba5 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "ashleigh-venter-04986124a M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "elliot-mcewan-1b969219b M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "tommie-wt-breedt-96283b181 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "bhavyanshi-chaudhary-64b1341b1 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "mayuri-bhagat-anutr-77560a1a1 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "kelsey-kolbee-rd-sa-89a451244 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "hannahpaigeguthrie M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "katrina-campbell-wareham-anutr-7a1548268 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "zuheirah-toffar-0aba37140 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "mzwandile-mahlangu-36ba93122 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "nuhaa-van-der-ross-1b1233198 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "taryn-goulding-9198a8252 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "warren-ras-2385b6303 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "georgia-butters-430b131a0 M2",
+   "angle referral"
+  ],
+  [
+   "near-duplicate sentence",
+   "Reset Health: andrew-liles / laurensien",
+   "«hi andrew, for your security review: in most ente…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MoreLife: grant-westermann-016529b / susan-brennan-09a48826",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MoreLife: grant-westermann-016529b / sophie-edwards-b59225187",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MoreLife: susan-brennan-09a48826 / sophie-edwards-b59225187",
+   "«in most enterprise deployments, the customer acts…»"
+  ]
+ ]
+}

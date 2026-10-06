@@ -1,0 +1,65 @@
+{
+ "campaign": "2026-10-06-uk-weight-management",
+ "checked": 25,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-1",
+ "generated": "2026-10-06T17:47:40",
+ "hard": [],
+ "soft": [
+  [
+   "no calendar link",
+   "daniela-alves-aba63749 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "dr-sahira-dar-59801453 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "bhavini-shah-8255bb1b2 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "abimbola-loye-091614281 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "rob-farrow-2503674 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "david-keen-a4aaa794 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "rajan-mistry-b0a4396b M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "catherine-grindrod-dean-169690314 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "laura-r-a9b501159 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "taylor-staines-22aa1a15a M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "georgia-butters-430b131a0 M2",
+   "angle referral"
+  ]
+ ]
+}

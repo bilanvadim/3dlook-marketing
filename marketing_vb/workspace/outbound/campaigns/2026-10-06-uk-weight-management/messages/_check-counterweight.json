@@ -1,0 +1,105 @@
+{
+ "campaign": "2026-10-06-uk-weight-management",
+ "checked": 22,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "counterweight",
+ "generated": "2026-10-06T17:48:03",
+ "hard": [],
+ "soft": [
+  [
+   "no calendar link",
+   "idalia-stach-anutr-4b7b04122 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "nazila-bahrami-3aa048110 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "bjorn-ronaasen M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "veronica-wessels-154034192 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "carlotta-schwertel-2b829115a M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "olga-wojadzis-80240ba5 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "ashleigh-venter-04986124a M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "elliot-mcewan-1b969219b M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "tommie-wt-breedt-96283b181 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "bhavyanshi-chaudhary-64b1341b1 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "mayuri-bhagat-anutr-77560a1a1 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "kelsey-kolbee-rd-sa-89a451244 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "hannahpaigeguthrie M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "katrina-campbell-wareham-anutr-7a1548268 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "zuheirah-toffar-0aba37140 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "mzwandile-mahlangu-36ba93122 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "nuhaa-van-der-ross-1b1233198 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "taryn-goulding-9198a8252 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "warren-ras-2385b6303 M2",
+   "angle referral"
+  ]
+ ]
+}

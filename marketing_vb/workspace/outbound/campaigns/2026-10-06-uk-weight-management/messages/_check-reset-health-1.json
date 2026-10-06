@@ -1,0 +1,75 @@
+{
+ "campaign": "2026-10-06-uk-weight-management",
+ "checked": 35,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "reset-health-1",
+ "generated": "2026-10-06T17:47:50",
+ "hard": [],
+ "soft": [
+  [
+   "no calendar link",
+   "siri-steinmo-27485a64 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "velawson M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "dr-adam-barker-aca-5a256a57 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "sean-patrick-mcgowan-a3b114248 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "peteryeekk M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "tristandummer M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "amanmohammad M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "kelly-m-236a2693 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "tiago-grohmann-md-704ba963 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "catherine-webb-b0470b74 M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "dr-nik-adzrul-ariff M2",
+   "angle referral"
+  ],
+  [
+   "no calendar link",
+   "alexandra-gyurk%c3%b3-99309236 M2",
+   "angle referral"
+  ],
+  [
+   "near-duplicate sentence",
+   "Reset Health: andrew-liles / laurensien",
+   "«hi andrew, for your security review: in most ente…»"
+  ]
+ ]
+}
