@@ -1,0 +1,88 @@
+{
+ "generated": "2026-10-06T05:40:23+00:00",
+ "items": [
+  {
+   "id": "ff9e2d7c-177e-46dd-82d6-400eb9eb90e4",
+   "title": "Optum and Owensboro Health Partner to Launch Virtual Nursing Program",
+   "date": "2026-10-05",
+   "tags": [
+    "Telehealth / Virtual Care / Remote Patient Monitoring",
+    "Operational Efficiency",
+    "Health System & Health Provider",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/optum-and-owensboro-health-partner-to-launch-virtual-nursing-program"
+  },
+  {
+   "id": "9093e4d4-347f-4bf9-92e2-526b38638133",
+   "title": "Parakeet Health Raises $10M to Expand AI-Powered Patient Engagement",
+   "date": "2026-10-05",
+   "tags": [
+    "Patient Engagement / Experience",
+    "Investments and Partnerships",
+    "Startup",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/parakeet-health-raises-10m-to-expand-ai-powered-patient-engagement"
+  },
+  {
+   "id": "54f11b2e-56fc-49c3-90b3-f75015fd9828",
+   "title": "Wandercraft Acquires Ekso Bionics to Create Global Medical Exoskeleton Leader",
+   "date": "2026-10-05",
+   "tags": [
+    "Investments and Partnerships",
+    "Operational Efficiency",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/wandercraft-acquires-ekso-bionics-to-create-global-medical-exoskeleton-leader"
+  }
+ ],
+ "analyses": {
+  "ff9e2d7c-177e-46dd-82d6-400eb9eb90e4": {
+   "id": "ff9e2d7c-177e-46dd-82d6-400eb9eb90e4",
+   "score": 0,
+   "segment": "—",
+   "what": "Optum Insight і Owensboro Health запустили програму virtual nursing: віртуальні медсестри, які працюють у самих лікарнях, беруть на себе прийом і виписку пацієнтів, звірку ліків і координацію догляду. У липні 2026 це звільнило 337 годин для медсестер біля ліжка.",
+   "why": "Це операційні процеси лікарні й медсестринського персоналу, без жодного зв'язку з даними тіла (BMI, обхвати, композиція). Optum є в ICP §6 лише як приклад occupational health, а ця новина стосується іншого підрозділу і нашого сегмента не зачіпає.",
+   "play": "none",
+   "companies": [
+    "Optum",
+    "Optum Insight",
+    "Owensboro Health"
+   ],
+   "_date": "2026-10-05"
+  },
+  "9093e4d4-347f-4bf9-92e2-526b38638133": {
+   "id": "9093e4d4-347f-4bf9-92e2-526b38638133",
+   "score": 0,
+   "segment": "—",
+   "what": "Parakeet Health залучила $10M у Series A (раунд вела Canvas Ventures) на розвиток AI-платформи для комунікації з пацієнтами. Платформа автоматизує запис на прийом, перевірку страхового покриття (insurance eligibility), обробку направлень і нагадування. Нею користуються 2,800+ провайдерів.",
+   "why": "Це автоматизація адмінроботи й записів для амбулаторних клінік. У статті немає ні weight-loss, ні BMI, ні моніторингу прогресу тіла, тож прив'язки до FitXpress немає.",
+   "play": "none",
+   "companies": [
+    "Parakeet Health",
+    "Canvas Ventures",
+    "Blank Space Ventures",
+    "StoryHouse Ventures",
+    "HMC INQ"
+   ],
+   "_date": "2026-10-05"
+  },
+  "54f11b2e-56fc-49c3-90b3-f75015fd9828": {
+   "id": "54f11b2e-56fc-49c3-90b3-f75015fd9828",
+   "score": 0,
+   "segment": "—",
+   "what": "Wandercraft купила Ekso Bionics у дочірньої компанії ChronoScale Holdings. Об'єднана компанія з медичних роботизованих екзоскелетів працюватиме з 700+ реабілітаційними й дослідницькими центрами. Умови угоди не розкриті.",
+   "why": "Тема дотична до ніші Mobile Tailor §4 (медичні пристрої), але в статті немає ні слова про підбір розміру чи вимірювання тіла. До того ж щойно оголошене поглинання за ICP є критерієм виключення.",
+   "play": "none",
+   "companies": [
+    "Wandercraft",
+    "Ekso Bionics",
+    "ChronoScale Holdings"
+   ],
+   "_date": "2026-10-05"
+  }
+ },
+ "posts": []
+}
