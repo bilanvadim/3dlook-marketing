@@ -10,10 +10,13 @@ date: 2026-08-31
 
 Editorial guardrail #11: every bent guardrail is surfaced, never silently decided.
 
-## 1 · G-I waiver — Vadim
+## 1 · G-I waiver — CLOSED 2026-09-27
 
 The vertical has **zero case studies**, which fails G-I outright. The page was drafted under a requested
-waiver. Detail and the fallback are in `gate-reports.md`. Nothing is published until this is answered.
+waiver. Detail and the fallback are in `gate-reports.md`.
+
+**Closed by the standing G-I waiver for every FitXpress vertical** (Vadim, 2026-09-27; `docs/page-pipeline.md`).
+This item no longer blocks publishing. The open items below still do.
 
 ## 2 · Two sources conflict on customer naming — Vadim, Whitney
 
