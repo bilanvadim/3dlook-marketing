@@ -259,3 +259,21 @@ Welltech-пачка спершу загубила Stan Gladkov (кома в по
 читає код; скоуп гіпотези не змінився (`hypothesis-gate` зелений). `check-messages` по
 кампанії: 125 людей, 250 повідомлень, 0 провалів, 15 заміток (`messages/_check.json`).
 `build-import` у тимчасову папку дав файли, байт-у-байт однакові з імпортованими.
+
+---
+
+## Крок 8 пройдено 2026-10-02 — перша відповідь, класифікована
+
+`responses-raw.csv` прийшов нічним кроном (23:33 UTC, молодший 24 год — `closely-pull.py
+pull` пропущено). `check-responses` — exit 0, 1 рядок, join 1/1 matched. `response-classifier`
+класифікував: **Dmitry Zenevich (Welltech), category: interested, confidence: medium** — не
+кінцевий байєр, просить матеріали для продуктової команди, дзвінок не запитував. Чернетка
+відповіді й action — у `responses-classified.csv`; зведення для сейлз-хендоффу —
+`responses-summary.md`. `check-classified` — exit 0, well-formed, «needs a human: 1».
+
+**Не закомічено й не запушено** — це робить нічний скрипт (`outbound-responses-daily.py
+morning`), не координатор.
+
+**Далі:** Вадиму — чи готувати one-pager для Дмитра (без імен клієнтів, без цін); вибірка з
+1 відповіді замала для висновків про гіпотезу, варто ще раз прогнати `closely-pull.py pull`
+пізніше.
