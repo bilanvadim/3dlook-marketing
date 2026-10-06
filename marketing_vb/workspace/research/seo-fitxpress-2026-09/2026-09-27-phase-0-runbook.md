@@ -200,13 +200,16 @@ API Clarity не отдаёт, **какие** элементы и **какие**
 3. **Settings** → **Setup** → **Google Analytics integration** → подключи GA4 property 251675969. После этого из записи Clarity можно перейти в GA4 и обратно.
 
 ### 6. Боты в Direct (разово, ~10 минут)
-Полностью отфильтровать ботов в GA4 нельзя. Поэтому в отчётах смотрим **Engaged sessions**, а не Sessions, и заводим сохранённый сегмент:
-1. **Explore** → Blank → Segments → **+** → Session segment → `Direct - probable bots`.
-2. Условия:
-   - `Session default channel group` = Direct;
-   - И `Country` = Singapore, China;
-   - И `Engaged sessions` = 0.
-3. Сохранить. В исследованиях этот сегмент исключаем.
+Полностью отфильтровать ботов в GA4 нельзя. Поэтому в стандартных отчётах смотрим столбец **Engaged sessions**, а не Sessions. Для исследований (Explore) заводим сегмент, который **исключает** ботов:
+1. **Explore** → Blank → Segments → **+** → **Session segment** → имя `Без ботов (Direct SG/CN)`.
+2. Блок «Include sessions» оставь пустым. Ниже нажми **Add group to exclude**, в этой группе два условия через AND:
+   - `Session default channel group` → exactly matches → `Direct`;
+   - `Country` → matches regex → `Singapore|China`.
+3. **Save and apply**. Дальше в каждом исследовании применяем этот сегмент.
+
+Если GA4 не даёт сохранить сегмент с пустым «Include sessions», добавь туда условие `Session default channel group` → matches regex → `.+`. Оно пропускает все сессии.
+
+_Исправлено 06.10: условия `Engaged sessions = 0` в конструкторе сегментов нет. Оно и не нужно: за 06.09–05.10 у Direct из Сингапура 933 сессии, в среднем 3 секунды, 0 ключевых событий; у Direct из Китая 339 сессий и тоже 0 ключевых событий._
 
 ### 7. Google Ads против «paid»-сессий (~10 минут)
 В Clarity все 47 сессий `google/cpc` за 3 дня — боты.
