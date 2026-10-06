@@ -7,6 +7,50 @@ date: 2026-10-02
 
 # Open items
 
+## v3 (2026-10-06), after Nika's final iteration
+
+For Vadim:
+
+**Vadim's answers, 2026-10-06:** E → logos of all clients will be on the page (logo row added, design
+supplies the set); D → unknown, ask Nika; B → "100+ clients" stays on this page only, insurance unchanged;
+G and A → H1 in app language ("…help retain members with in-app body scanning"), focus keyphrase
+`body scanning for fitness apps`.
+
+A. **H1.** v3: "FitXpress for fitness apps: retain members with a mobile alternative to the gym body
+   scanner" (sales rule 1 + keyword map). Nika's: "Accurate body scanning for fitness apps that makes
+   member progress measurable" (no product, no keyword, leads with accuracy). Your call.
+B. **"100+ clients since 2016" is back**, in the pilot block (Nika added it; resolves item 5a below for
+   this page). The final insurance page still has no client count: align both pages one way.
+C. **Nika re-added facts that still have no source** (item 9 below, unanswered since 10-02): 99.5% uptime
+   SLA with service credits, "2 days integration at its fastest", iOS 15+ and older Android models,
+   React Native kit, SDK size (40 MB / 104 MB), webhooks without retries or signature verification,
+   a dedicated customer success manager on every plan (live `/pricing/`: only on Personalized). If she
+   has a product source, it goes into `tech-spec.md` first, then onto the page.
+D. **Where did "95%+ consistency" and the per-body-part table come from again?** `proof-points.md` marks
+   95%+ "INTERNAL ONLY, DO NOT PUBLISH"; the second time on this page suggests a shared source (deck?)
+   that still carries it.
+
+E. **No fitness proof on the page.** All three judges docked proof_of_belonging for it. Is any fitness,
+   workout or coaching app cleared for a logo, or is there an anonymised fitness figure for
+   `proof-points.md`? Without one, the axis stays capped.
+F. **Pilot terms.** Judges ask what the pilot costs, how long it runs and how big the cohort is. The page
+   says nothing because nothing is defined; a one-line pilot offer would lift conversion.
+G. **H1 keyword.** All judges note that `gym body scanner` frames a hardware purchase a fitness-app CPO does
+   not make. The keyword map chose it for demand (~220/mo cluster); "body composition app" (50, KD 2) is
+   the app-side alternative. Keep the map's choice?
+
+For Asselya / Whitney:
+
+H. Judge round 3 suggested fitness-specific privacy context (app-store health-data disclosures, the FTC
+   Health Breach Notification Rule, US state consumer-health-data laws). Not added: no approved wording.
+   Worth a line in the trust FAQ first?
+
+Closed by v3: item 7 (App Store / Google Play line cut by the blog test, as Nika did); item 4 stays cut.
+
+---
+
+## v2 (2026-10-02)
+
 ## For Vadim
 
 1. **H1 and title on `gym body scanner`.** Followed the keyword map (§2). The H1 is the landing-map anchor "mobile alternative to the gym body scanner", and retention, Vadim's main point to Nika, leads the hero's first sentence. If the H1 must lead with retention instead, the keyword drops to the meta and the first paragraph.

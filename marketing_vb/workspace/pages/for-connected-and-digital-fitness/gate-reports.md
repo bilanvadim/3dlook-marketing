@@ -43,3 +43,18 @@ Rich Results Test, viewports 375/768/1280/1440, contrast, analytics events from 
 | 2 · Problem numbers | Three figures, two of them from Adjust (day 1 and day 30). No second neutral source on fitness churn was found; one candidate study found self-monitoring did not predict app use |
 | 13 · FAQ | Four questions. "What's the best alternative to hardware 3D body scanners for fitness studios?" (AEO 51%) was cut as a repeat of the comparison block's closing line |
 | 16 · Sibling cards | No "keep reading" block, as on the final insurance page; siblings are linked in the pilot block's proof sentence |
+
+## G-J · v3 (2026-10-06), page-v3-2026-10-06.md, 100-point scale since 2026-10-06
+
+| Round | Total | Hard fails | Lowest | Applied |
+|---|---|---|---|---|
+| 1 | 69 | "validated capture" (guardrail #3) | place_and_technical | hard fail; sibling links; "only FitXpress" dropped; canonical identifiers line; accuracy answer first; recommended setup; jargon; onboarding FAQ answers directly |
+| 2 | 71 | none | proof_of_belonging | one_fix (fitness logos or an anonymised fitness figure) **not applicable**: no fitness case or cleared logo exists; H1 hedged ("help retain"); 3D model removed (not on Starter, live /pricing/); Kidman study title; benefit cells rewritten; data-line fragment fixed; third accuracy figure dropped |
+| 3 | 73 | none | place_and_technical | stop rule reached |
+
+**Gate not taken: 73/85 after 3 rounds (69, 71, 73), weakest axis = place_and_technical** (G-T items that
+only the WordPress build can measure: contrast, keyboard, 768/1440, analytics, Rich Results; the
+redirecting /fitxpress/ parent). Post-round-3 fixes without rescoring: breadcrumb middle level unlinked
+in the prototype (kit slot 1), Adjust restated as "by day 30, most users of health and fitness apps are no
+longer active", the acquisition-spend line made conditional, the illustrative 3.4 cm no longer used as a
+yardstick, a named subject in the comparison sentence. Detector CLEAN, ~1,335 words.

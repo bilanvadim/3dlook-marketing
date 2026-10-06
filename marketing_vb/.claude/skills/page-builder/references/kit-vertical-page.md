@@ -47,7 +47,7 @@ article, and record the decision with a date. Revisit when the second case lands
 possible — Vadim's call, recorded in `gate-reports.md` with the reason and what stands in for the
 missing case (an approved reference call, a named pilot, an anonymised deployment).
 
-**Standing G-I waiver for every FitXpress vertical (Vadim, 2026-09-27).** Clients do not agree to public case studies (logos only), so FX vertical pages are built without the 2-case bar. What stands in for cases: customer logos; anonymised figures only from `proof-points.md` (a figure that could identify a client is cleared with Vadim first); the accuracy framework; the trust FAQ; the workflow itself. Never an invented or implied case. The waiver for a vertical ends when its first approved case lands. The other G-I checks (use-case file, demand, 5 facts, 60% rule) still apply. Record `G-I: standing FX waiver 2026-09-27` in `gate-reports.md`.
+**Standing G-I waiver for every FitXpress vertical (Vadim, 2026-09-27).** Clients do not agree to public case studies (logos only), so FX vertical pages are built without the 2-case bar. What stands in for cases: customer logos; anonymised figures only from `proof-points.md` (a figure that could identify a client is cleared with Vadim first); the accuracy framework; the trust FAQ; the workflow itself. Never an invented or implied case. The logo row under the hero carries the logos of all 3DLOOK clients, captioned without implying they belong to the vertical (Vadim, 2026-10-06). The waiver for a vertical ends when its first approved case lands. The other G-I checks (use-case file, demand, 5 facts, 60% rule) still apply. Record `G-I: standing FX waiver 2026-09-27` in `gate-reports.md`.
 
 ---
 
@@ -153,7 +153,9 @@ test.
 
 Illustrative H1s (not approved copy; the final H1 is Vadim's call):
 "FitXpress for life insurers: check disclosed build without slowing accelerated underwriting" ·
-"FitXpress for fitness apps: retain members with a mobile alternative to the gym body scanner".
+"FitXpress for fitness apps: help retain members with a mobile alternative to the gym body scanner".
+An outcome verb without an internal figure keeps its guardrail #1 hedge in the H1 too ("help retain", not
+"retain"): the blind judge flagged the unhedged form on the fitness page, 2026-10-06.
 
 ## Register for an enterprise reader (Asselya, 2026-10-02)
 

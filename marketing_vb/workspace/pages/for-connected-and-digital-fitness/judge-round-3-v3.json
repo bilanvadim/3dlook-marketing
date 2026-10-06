@@ -1,0 +1,31 @@
+{
+ "page": "page-v3-2026-10-06.md",
+ "date": "2026-10-06",
+ "scale": "100",
+ "scores": {
+  "proof_of_belonging": 10,
+  "claims_discipline": 12,
+  "sales_argument": 11,
+  "uniqueness_vs_parent": 7,
+  "conversion": 7,
+  "buyer_language": 8,
+  "human_copy": 8,
+  "search_ai_visibility": 7,
+  "place_and_technical": 3
+ },
+ "total": 73,
+ "hard_fails": [],
+ "lowest": "place_and_technical",
+ "one_fix": "Make the breadcrumb's middle level 'FitXpress' plain text with no link until /fitxpress/ stops redirecting to the homepage (Kit slot 1). Then measure contrast, keyboard operation and the 768 and 1440 px viewports on the v3 prototype and record the results in fact-sheet.md.",
+ "lost_points": {
+  "proof_of_belonging": "No fitness-vertical evidence (no logo, no vertical figure); readiness rests on weight-management and BMI-verification deployments; no fitness-specific regulatory or platform context (app-store health-data rules, FTC Health Breach Notification Rule, state consumer-health-data laws).",
+  "claims_discipline": "Accuracy answer uses the illustrative mock's 3.4 cm as yardstick; 'most users stop opening a fitness app' stretches a health-and-fitness day-30 benchmark; 'every user lost is churn the app paid to acquire' unsupported; the 70% covers lifestyle and mental-health apps; readiness sentence adds a client count the kit's approved wording leaves out.",
+  "sales_argument": "'Weight does not move' repeats six times; no proof backs the weight-line claim; record rows 4 and 5 restate features; pilot cost, length and cohort size not stated; ~1,335-1,370 words.",
+  "uniqueness_vs_parent": "No 60% count or hub cannibalisation check in the fact sheet; parent does not exist yet; accuracy, data, pricing and pilot blocks close to shared boilerplate.",
+  "conversion": "Analytics unverified; 375 px hero button below the fold, sticky CTA only promised; 'Request a sample record' lands on a demo form; pilot cost not stated.",
+  "buyer_language": "'Alternative to the gym body scanner' is keyword language a fitness-app CPO does not use; objects given agency ('the progress the scale misses', 'a weight line gives'); 'Each member is compared...' has no named subject.",
+  "human_copy": "Detector clean, real opinions and boundaries; recycled scale motif, aphoristic churn line and restated repeatability point read as template-filling.",
+  "search_ai_visibility": "SDK and gym-scan FAQ answers repeat the body; 'connected' and 'digital fitness' absent from title, meta and H1; FAQPage not Rich-Results-tested.",
+  "place_and_technical": "Breadcrumb links /fitxpress/, which 301s today (kit slot 1); contrast, keyboard, 768/1440 and performance not measured on v3."
+ }
+}

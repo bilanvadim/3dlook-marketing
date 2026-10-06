@@ -1,0 +1,31 @@
+{
+ "page": "page-v3-2026-10-06.md",
+ "date": "2026-10-06",
+ "scale": "100",
+ "scores": {
+  "proof_of_belonging": 9,
+  "claims_discipline": 11,
+  "sales_argument": 11,
+  "uniqueness_vs_parent": 7,
+  "conversion": 8,
+  "buyer_language": 8,
+  "human_copy": 7,
+  "search_ai_visibility": 7,
+  "place_and_technical": 3
+ },
+ "total": 71,
+ "hard_fails": [],
+ "lowest": "proof_of_belonging",
+ "one_fix": "Directly under the hero proof strip, add a logo row of fitness, workout or coaching app customers already cleared for logo use (the FX waiver's substitute). Then, in the pilot block, replace the weight-management/BMI-verification infrastructure sentence with one anonymised fitness-vertical deployment line or figure taken from proof-points.md, so the page answers 'have you done this for apps like mine'. If proof-points.md has no such fitness line, the logo row alone is the edit.",
+ "lost_points": {
+  "proof_of_belonging": "No proof from the fitness vertical: no customer logos, no anonymised fitness deployment or figure; no vertical regulatory context (consumer health-data or app-store health-data rules).",
+  "claims_discipline": "Adjust install-cohort retention restated as members and lost acquisition spend; H1 'retain members' unhedged (guardrail #1); '< 1 cm' vs 'less than 1 cm'; '3D model' not in fact sheet and blurs Starter vs Pro; 'waist change of several centimeters' unsourced; Kidman label lacks study name; population figures traced to accuracy-formulations.md, not proof-points.md.",
+  "sales_argument": "The causal claim that visible progress keeps members is never backed; two benefit cells restate features; none says retention or revenue; 96-97% and 38-210 kg get no buyer conclusion; gym-scanner keyword frames hardware; gym-scan FAQ fails blog test; ~1,340 words.",
+  "uniqueness_vs_parent": "Accuracy, data, pricing and RTPV/SDK lines are near-verbatim house blocks; gym-scan and SDK FAQs risk overlapping hub articles.",
+  "conversion": "Analytics events unverified; 'See a sample progress record' links to the demo form; no sibling-vertical cards.",
+  "buyer_language": "No buyer title or growth-team terms (churn, LTV, CAC payback); things given actions ('trends appear', 'the pilot should quantify', 'the scale misses'); 'The platform's, unmeasured' opaque; 'Photos. Deleted immediately...' is a fragment.",
+  "human_copy": "Detector clean, opinion and boundary present, but template-filled: 'sample progress record' four times; descriptive triads; 'the platform' in 11 sentences.",
+  "search_ai_visibility": "Three of four FAQ answers restate the body; onboarding answer does not open with a direct answer; FAQPage not Rich-Results-tested; 'gym body scanner' attracts gym operators.",
+  "place_and_technical": "768/1440, contrast, keyboard, performance unmeasured on v3; mobile hero button at 786 px below the 667 px fold; /fitxpress/ still 301s; telehealth sibling anchor 'weight-management'."
+ }
+}

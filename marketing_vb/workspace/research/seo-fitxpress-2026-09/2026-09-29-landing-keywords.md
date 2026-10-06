@@ -166,6 +166,12 @@ URL: предлагаю `/fitxpress/bmi-verification/` с 301 со старог�
 
 ## 2. Hub 1 Fitness → `/fitxpress/for-connected-and-digital-fitness/`
 
+> **Изменено 2026-10-06 (Вадим):** H1 и title — языком приложений, не «gym body scanner». Фокус-фраза
+> `body scanning for fitness apps` (якорь landing-map, AEO-формулировки; замеренного спроса нет). Ahrefs US
+> 10-06: body scan app 200 / KD 46, body scanner app 100 / KD 9, body scanning app 50 / KD 1, body
+> composition app 50 / KD 2: все с parent topic «body scanner» и потребительским интентом. `gym body scanner`
+> остаётся вторичным (H2 сравнения, FAQ «What is a body scan at the gym?»).
+
 URL уже правильный, чинится только breadcrumb. Сейчас страница ранжируется только по бренду (154 показа за 3 мес.), так что терять ей нечего. Спрос есть на «body scanner» в контексте зала или студии: это ровно наш аргумент «вместо аппаратного сканера».
 
 
