@@ -26,6 +26,8 @@ need is not here, say so in your report; do not go and read the sources.
 
 ## Campaign rules (hypothesis.md, verbatim)
 
+> Sample sentences, lane notes and rule sentences below are instructions to you, never copy: write your own wording. Only the compliance lines and the wording of the facts under «Facts you may cite» go into a message verbatim.
+
 ### Use case (1 sentence)
 
 Weight-management and nutrition-coaching programmes in Continental Europe (centre networks, coaches and apps) can add a guided two-photo scan to their client app or a web page, so a client records 80+ body measurements and body composition estimates at home or in the centre between weekly check-ins, and the dietitian, coach or clinician gets a standardized, timestamped record to compare the scans they select; fitness networks and coaching platforms offer the same record inside the member app.
@@ -75,7 +77,7 @@ App Store, 2026-10-07 (store and version in `companies.csv` notes). **No app: th
 - **`operations`** (COOs, network and franchise-network directors, regional directors, operations and guest-experience leads). Nothing to ship, stock or install in centres; the capture follows the same guided sequence on any phone; the speed phrase. Never say or imply that centres or clubs measure differently today. Message 1 = context and one question about how their centres, clubs or guests run, no call ask, no link; Message 2 = the call offer with the calendar link and at most the segment article.
 - **`technical-integration`** (CTOs, platform and engineering leads, head of IT). REST API with API-key authentication, web and mobile SDKs; photos deleted after processing or within 30 days; outputs stored and deletable by scan ID. No integration-time figure. Technical tone. Message 1 = context and one technical question, no call ask, no link; Message 2 = the call offer with the calendar link, and the FAQ link.
 - **`partnership`** (SATISFEAT, Virtuagym's country director). Message 1: one line on what the scan returns, the company fact, and the question whether a partner capability has any place in what they offer; no call ask, no link. Message 2: the call offer with the calendar link, the easy out a pointer to whoever decides partnerships. No compliance line, no article.
-- **`referral`** (P4). Vadim's decision 4: never a bare "who owns X?". Message 1: one line on what the scan returns and why it matters for this company's programme (from its fact and its app line), then one question about the person's own work (question themes); no "who" question, no call ask, no link. Message 2: a short call offer with the calendar link and an easy out that is a different ask, the pointer (e.g. "or, if this sits with head office, point me to whoever looks after client follow-up there"; member experience at fitness networks; "client app" only where the account has one). The gate checks the product specific and the number here too. Unit owners: the Rules' franchise limits, and never suggest head office knows about the message. Dietitians and coaches: short and neutral; the scan is never framed as motivating or about body image.
+- **`referral`** (P4). Vadim's decision 4: never a bare "who owns X?". Message 1: one line on what the scan returns and why it matters for this company's programme (from its fact and its app line), then one question about the person's own work (question themes); no "who" question, no call ask, no link. Message 2: a short call offer with the calendar link and an easy out that is a different ask: a pointer to the person who owns the topic (client follow-up at programme networks, member experience at fitness networks, the client app only where the account has one), worded fresh for each person: name the target, never a sample sentence (2026-10-07: a sample here went into ~30 messages). The gate checks the product specific and the number here too. Unit owners: the Rules' franchise limits, and never suggest head office knows about the message. Dietitians and coaches: brief, neutral copy (a writer instruction, not a phrase for the message); the scan is never framed as motivating or about body image.
 
 #### Company facts the copy may use
 
@@ -148,9 +150,9 @@ English only, every country (Vadim, 2026-09-14, for `olena`; the July replies al
 - **Medication.** Only in FitForMe copy, only as "weight-loss medication", only with FF1. No drug, molecule or pharma names anywhere; never tie the scan to prescribing or dosing.
 - **Franchise networks.** Head office is the buyer; units are referral paths. Never pitch a unit to adopt anything; never mention franchise terms, fees, territories, unit counts or head-office plans.
 - **Owners, deals, former employers.** Never mention funding, investors, valuation, acquisitions, group owners, revenue, prices, headcount or centre counts. A former employer may be named unless it is another account in this campaign or Oviva.
-- **Fitness, EMS and Clinique La Prairie.** No appearance, shape, weight-loss, cellulite, longevity or anti-aging promises, no before-and-after, no device or treatment names, no prices. The 3D model is a view the club or clinic chooses to show.
+- **Fitness, EMS and Clinique La Prairie.** No appearance, shape, weight-loss, cellulite, longevity or anti-aging promises, no before-and-after, no device or treatment names, no prices. Writer note, not copy: the 3D model is shown only where the club or clinic chooses to show it, so never lead with it as the value (2026-10-07: this sentence went into 24 messages).
 - **Compliance line.** At most one, only in Message 2, only in `product`, `clinical`, `operations` and `technical-integration` messages at segments A, B and D, verbatim from `compliance.md` §9: "In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs." "FitXpress is not a medical device." only in a `clinical` Message 2. Never "HIPAA compliant", "SOC 2 certified" or any certification claim.
-- **No 3DLOOK client is named.** Anonymised proof allowed: "one weight-management platform ran 34,000 scans in 2025" (no client name, no geography: never "Nordic" or "Swedish"); "112,100 scans in 2025 across all 3DLOOK customers" (3DLOOK-wide scale, its own sentence); "100+ clients".
+- **No 3DLOOK client is named.** Anonymised proof allowed: "one weight-management platform ran 34,000 scans in 2025" (no client name, no geography: never "Nordic" or "Swedish"); "112,100 scans in 2025 across all 3DLOOK customers" (3DLOOK-wide scale, its own sentence); "3DLOOK has worked with 100+ clients" (all-time, both products; never "100+ clients use FitXpress" or "today").
 - **Numbers and accuracy, only from `proof-points.md` and in its wording:** two photos (front and side); "under 45 seconds from the photos to structured results"; 80+ body measurements; body composition estimates (body fat %, lean mass, fat mass), BMI and BMR calculated; "96-97% accuracy against expert manual measurement" (body measurements only, never in a sentence with body composition, never opening Message 2) or `accuracy-formulations.md` §1.1 / §5; the §1.2 repeatability sentence; 38 to 210 kg (`clinical` only); the 34,000 and 112,100 lines. No integration-time, market, medication, reimbursement or prospect figures.
 - **No outcome promises.** Never promise or imply more weight loss, retention, adherence, engagement, results or ROI. Describe what the scan returns, where it runs and how much it is used.
 - **What the scan does not do.** It does not diagnose, decide eligibility, recommend treatment or interpret results. Say "the team compares scans it selects", never "tracks each client". No visceral fat output; never for anyone under 16 or in pregnancy. Person-first: "people living with obesity".
@@ -167,7 +169,7 @@ English only, every country (Vadim, 2026-09-14, for `olena`; the July replies al
 4. **FAIL only for the wrong company, people who left, identity collisions and duplicates;** company-named profiles are held for an identity check.
 5. **Former employers may be named** (2026-09-29), within the Rules' limit.
 6. **Live 3DLOOK pages may be linked as they are** (2026-09-29).
-7. **No 3DLOOK client is named;** 34,000 scans without client or geography; 112,100 as 3DLOOK-wide scale; "100+ clients" (2026-09-29, 09-30).
+7. **No 3DLOOK client is named;** 34,000 scans without client or geography; 112,100 as 3DLOOK-wide scale; "3DLOOK has worked with 100+ clients", all-time (2026-09-29, 09-30, wording 10-07).
 8. **A list Vadim brings has no company-researcher step.**
 9. **Franchise networks:** the franchisor is the buyer; units are referral paths under its canonical name.
 10. **Re-entry through new people only;** messaged people stay excluded; Vadim clears the `company already worked` flag (2026-09-28).
@@ -179,6 +181,40 @@ English only, every country (Vadim, 2026-09-14, for `olena`; the July replies al
 2. Use as many contacts from the list as possible. Every non-junk person at an IN account goes in, any function or seniority; OUT only for companies outside the ICP, junk rows (freelancers with no company, name collisions, unrelated businesses), people outside Continental Europe or at UK/US-only entities, existing customers, and registry conflicts.
 3. Apollo top-up where needed: an IN account whose decision-makers or relevant teams (product, digital, clinical/medical, operations, partnerships, leadership) are missing from the export gets `apollo_topup=yes`; the coordinator runs `apollo-pull.py search` then `enrich`. Accounts whose relevant people are already in the export get `apollo_topup=no`.
 4. Copy: no bare "who at your company owns X?" messages. Message 1 = a bit of context (what the scan does and why it matters for THIS company's programme), then a question. No call ask and no link in Message 1. Message 2 = the call: a short call offer with Olena's calendar link https://meetings.hubspot.com/olena-kudriavtseva, in every lane, referral included (for people who are not the buyer, with an easy out: "or point me to whoever runs X"). (Vadim, 2026-10-07: «в первом сообщении вопрос а во втором звонок».)
+
+### Vadim's decisions 2026-10-07 (approval)
+
+Vadim approved the hypothesis on 2026-10-07 («апрув»), taking the default on every open question the coordinator put to him:
+
+1. GymBeam, BioTechUSA, HSNG, MM Sports and Body & Fit stay OUT (outside the ICP); GymBeam's B2B director is not added as a partnership ask (Open question 1).
+2. Oviva stays OUT whole, the 12 new people included, until at least February 2027 (Open question 2).
+3. Sidekick Health and Liva Healthcare re-entry: clear the «company already worked from olena» flag and send to new people only (Open question 3).
+4. Nederlandse Obesitas Kliniek and the Dutch The Body Clinic stay OUT (Open question 4).
+5. Language: English (Open question 5).
+6. Fitness networks and platforms stay IN at medium fit (Open question 6).
+7. TATOI Club and AMRA Medical stay OUT (Open questions 7 and 11).
+8. Identity holds: current-role check, send if it passes (Open question 8).
+9. Nothing about special-category data, EU hosting or the AI Act in copy; such replies go to legal@3dlook.me (Open question 9).
+10. Apollo additions located outside Continental Europe are OUT (Open question 10).
+11. Apollo top-up stays title-filtered: 80 people enriched on 2026-10-07 for 82 credits from the ```titles block (Clinique La Prairie and SATISFEAT not topped up, 7 people Olena already messaged at Sidekick and Liva removed before enrichment); no all-functions pull (≈770 more people up to cap 50 were offered and declined by default).
+
+### Vadim's decisions 2026-10-07 (validation)
+
+Vadim approved the validated list on 2026-10-07 («апрув»), taking the coordinator's recommendation on every question:
+
+1. **WEAK, 5 promoted after a current-role check before import:** Nanda Zwart (Het 1 op 1 Dieet, `referral`), Mihalis Atsalakis (Nutrimed, `product`), ludo glav (maju, `product`), Qnko Qnkov (Laboratorios YSONUT, `referral`), Rick Reinhard (fitbox, `referral`). **WEAK, 4 stay out:** yogimad YOGIMAD, BODYHIT BORDEAUX MÉRIADECK, dietplus CUGNAUX, Julie Coudry.
+2. **Exception to approval §10 (location), for named head-office people of IN accounts:** the account's market decides, not where the person lives. Pool A: Ruben Visser (Virtuagym, `operations`) and Taylor Ling (The Fabulous, `product`) IN; Arnaud Souchon (Keepcool, Mauritius) and Zeki Kilic (FitForMe, Istanbul) stay out (may be local entities). Pool B, Liva Healthcare's UK team, IN: Jessica Bartlett `product`, Ellie Heath `clinical`, Hannah Pearman `operations`, Tom Fuller `product`. Pool C, Sidekick Health's US commercial team, IN as `partnership` (the lane is extended to Sidekick for these three): Kevin Johnston, Todd Peavey, Mischa Cohn. Pool D (Metabolic Balance licensees in Australia) stays out. Every other Apollo person outside Continental Europe stays OUT.
+3. **Iceland:** olena's market is Europe without the UK; the three Sidekick people in Iceland stay IN.
+
+### Vadim's decisions 2026-10-07 (messages)
+
+Vadim approved the messages on 2026-10-07 («внеси пропоновані зміни потім апрув») after three opus QC rounds (10, 12, 13/20) and a fourth fix round checked by script. Defaults taken in the fix rounds, now standing for this campaign:
+
+1. **At most one compliance sentence per Message 2.** `clinical`: only "FitXpress is not a medical device." `product`, `operations`, `technical-integration`: only the GDPR line. `referral`, `partnership`: none. A data-retention or deletion sentence counts as the compliance sentence and never sits in Message 1.
+2. **"100+"** only as "3DLOOK has worked with 100+ clients" (now in `proof-points.md` and failed by `check-messages`).
+3. **Speed** only inside a sentence whose subject is the scan or its output: "It returns 80+ body measurements, under 45 seconds from the photos to structured results."
+4. **Card samples are not copy:** the referral easy out and the 3D-model display rule above were rewritten as targets on 2026-10-07 (the samples had gone into ~30 and 24 messages).
+5. **Identity holds before import** follow approval §8 ("current-role check, send if it passes"): a person whose export row shows a current employer outside the account, or a different person, is held from the import file.
 
 ### What every message must carry (hypothesis.md, Validation criteria)
 
@@ -285,7 +321,7 @@ When uncertain, use the **range form** ("around 95-97% accuracy") rather than pr
 #### Aggregate
 | Claim | Number | Source |
 |-------|--------|--------|
-| Total customers (all-time) | 100+ | Company deck · **the one public client count, everywhere** (Vadim 2026-09-30): pages, articles, outbound, posts |
+| Total customers (all-time) | 100+ | Company deck · **the one public client count, everywhere** (Vadim 2026-09-30): pages, articles, outbound, posts. **Wording: "3DLOOK has worked with 100+ clients"**: all-time and across both products, so never "100+ clients use FitXpress", "today" or "already use" (2026-10-07: 14 outbound messages said "use FitXpress today"; `check-messages` fails it) |
 | Active customers in 2025 | 67 | Internal customer breakdown · **internal only, never public** (Vadim 2026-09-30: "100+ clients" everywhere) |
 | Total ARR 2025 | $1.084M | Internal |
 | Enterprise ARR | $822K | Internal |

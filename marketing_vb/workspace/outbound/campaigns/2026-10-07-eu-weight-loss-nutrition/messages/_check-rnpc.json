@@ -1,0 +1,20 @@
+{
+ "campaign": "2026-10-07-eu-weight-loss-nutrition",
+ "checked": 30,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "rnpc",
+ "generated": "2026-10-07T16:31:35",
+ "hard": [],
+ "soft": [
+  [
+   "greeting",
+   "thierry-bernabe M1",
+   "«Hi Thierry,» has no «Centre RNPC»"
+  ],
+  [
+   "greeting",
+   "thierry-bernabe M2",
+   "«Hi Thierry,» has no «Centre RNPC»"
+  ]
+ ]
+}

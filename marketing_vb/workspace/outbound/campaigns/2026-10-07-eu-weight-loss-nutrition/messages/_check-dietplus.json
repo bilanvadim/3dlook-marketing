@@ -1,0 +1,35 @@
+{
+ "campaign": "2026-10-07-eu-weight-loss-nutrition",
+ "checked": 27,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "dietplus",
+ "generated": "2026-10-07T16:30:14",
+ "hard": [],
+ "soft": [
+  [
+   "greeting",
+   "dietplus-la-roche-sur-foron-094426267 M1",
+   "«Hi there,» has no «DIETPLUS»"
+  ],
+  [
+   "greeting",
+   "dietplus-la-roche-sur-foron-094426267 M2",
+   "«Hi there,» has no «DIETPLUS»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Dietplus: natacha-alonso-valckx-35888b100 / philippe-l-2914a1130",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Dietplus: natacha-alonso-valckx-35888b100 / jacques-ley-8a5818148",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Dietplus: philippe-l-2914a1130 / jacques-ley-8a5818148",
+   "«in most enterprise deployments, the customer acts…»"
+  ]
+ ]
+}

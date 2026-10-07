@@ -1,0 +1,740 @@
+{
+ "campaign": "2026-10-07-eu-weight-loss-nutrition",
+ "checked": 209,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": null,
+ "generated": "2026-10-07T16:43:47",
+ "hard": [],
+ "soft": [
+  [
+   "no company line",
+   "yann-malaud M1",
+   "«Laboratorios YSONUT» is not named: check it has a line only this company gets"
+  ],
+  [
+   "greeting",
+   "bc-katarina-grich-ba159944 M1",
+   "«Hi Katarina,» has no «Bc. Katarina»"
+  ],
+  [
+   "greeting",
+   "bc-katarina-grich-ba159944 M2",
+   "«Hi Katarina,» has no «Bc. Katarina»"
+  ],
+  [
+   "no company line",
+   "marc-sarazin-6599b149 M1",
+   "«Laboratorios YSONUT» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "valerie-delage-1b9a0a145 M1",
+   "«Laboratorios YSONUT» is not named: check it has a line only this company gets"
+  ],
+  [
+   "greeting",
+   "thierry-bernabe M1",
+   "«Hi Thierry,» has no «Centre RNPC»"
+  ],
+  [
+   "greeting",
+   "thierry-bernabe M2",
+   "«Hi Thierry,» has no «Centre RNPC»"
+  ],
+  [
+   "no company line",
+   "qnko-qnkov-423869260 M1",
+   "«Laboratorios YSONUT» is not named: check it has a line only this company gets"
+  ],
+  [
+   "greeting",
+   "dietplus-la-roche-sur-foron-094426267 M1",
+   "«Hi there,» has no «DIETPLUS»"
+  ],
+  [
+   "greeting",
+   "dietplus-la-roche-sur-foron-094426267 M2",
+   "«Hi there,» has no «DIETPLUS»"
+  ],
+  [
+   "no company line",
+   "khalil-cheddadd M1",
+   "«Laboratorios YSONUT» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "manel-nieto-96907736 M1",
+   "«Laboratorios YSONUT» is not named: check it has a line only this company gets"
+  ],
+  [
+   "near-duplicate sentence",
+   "FitForMe: simon-hamer9 / wilconap",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "FitForMe: simon-hamer9 / victor-keunen",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "FitForMe: simon-hamer9 / jmhellendoorn",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "FitForMe: simon-hamer9 / jc-heyneke",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "FitForMe: simon-hamer9 / vincentvreugdenhil",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "FitForMe: simon-hamer9 / rebecca-becky-brown",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "FitForMe: wilconap / victor-keunen",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "FitForMe: wilconap / jmhellendoorn",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "FitForMe: wilconap / jc-heyneke",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "FitForMe: wilconap / vincentvreugdenhil",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "FitForMe: wilconap / rebecca-becky-brown",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "FitForMe: victor-keunen / jmhellendoorn",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "FitForMe: victor-keunen / jc-heyneke",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "FitForMe: victor-keunen / vincentvreugdenhil",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "FitForMe: victor-keunen / rebecca-becky-brown",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "FitForMe: jmhellendoorn / jc-heyneke",
+   "«the data questions are covered here: in most ente…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "FitForMe: jmhellendoorn / vincentvreugdenhil",
+   "«the data questions are covered here: in most ente…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "FitForMe: jmhellendoorn / rebecca-becky-brown",
+   "«the data questions are covered here: in most ente…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "FitForMe: jc-heyneke / vincentvreugdenhil",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "FitForMe: jc-heyneke / rebecca-becky-brown",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "FitForMe: vincentvreugdenhil / rebecca-becky-brown",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: simonegibertoni / lorenzoamaglio",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: simonegibertoni / daniele-corti-44675738",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: simonegibertoni / olga-donica-19753744",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: simonegibertoni / robin-mauras-cartier-42555216",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: simonegibertoni / marc-sabatin",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: simonegibertoni / arnaud-marche-923259123",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: simonegibertoni / valeriadinatale",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: simonegibertoni / erick-ribeiro-919337183",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: simonegibertoni / rebecca-chia-lung-chang-v-23bb2b394",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: lorenzoamaglio / daniele-corti-44675738",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: lorenzoamaglio / olga-donica-19753744",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: lorenzoamaglio / robin-mauras-cartier-42555216",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: lorenzoamaglio / marc-sabatin",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: lorenzoamaglio / arnaud-marche-923259123",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: lorenzoamaglio / valeriadinatale",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: lorenzoamaglio / erick-ribeiro-919337183",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: lorenzoamaglio / rebecca-chia-lung-chang-v-23bb2b394",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: daniele-corti-44675738 / olga-donica-19753744",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: daniele-corti-44675738 / robin-mauras-cartier-42555216",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: daniele-corti-44675738 / marc-sabatin",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: daniele-corti-44675738 / arnaud-marche-923259123",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: daniele-corti-44675738 / valeriadinatale",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: daniele-corti-44675738 / erick-ribeiro-919337183",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: daniele-corti-44675738 / rebecca-chia-lung-chang-v-23bb2b394",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: olga-donica-19753744 / robin-mauras-cartier-42555216",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: olga-donica-19753744 / marc-sabatin",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: olga-donica-19753744 / arnaud-marche-923259123",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: olga-donica-19753744 / valeriadinatale",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: olga-donica-19753744 / erick-ribeiro-919337183",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: olga-donica-19753744 / rebecca-chia-lung-chang-v-23bb2b394",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: robin-mauras-cartier-42555216 / marc-sabatin",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: robin-mauras-cartier-42555216 / arnaud-marche-923259123",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: robin-mauras-cartier-42555216 / valeriadinatale",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: robin-mauras-cartier-42555216 / erick-ribeiro-919337183",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: robin-mauras-cartier-42555216 / rebecca-chia-lung-chang-v-23bb2b394",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: marc-sabatin / arnaud-marche-923259123",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: marc-sabatin / valeriadinatale",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: marc-sabatin / erick-ribeiro-919337183",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: marc-sabatin / rebecca-chia-lung-chang-v-23bb2b394",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: arnaud-marche-923259123 / valeriadinatale",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: arnaud-marche-923259123 / erick-ribeiro-919337183",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: arnaud-marche-923259123 / rebecca-chia-lung-chang-v-23bb2b394",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: valeriadinatale / erick-ribeiro-919337183",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: valeriadinatale / rebecca-chia-lung-chang-v-23bb2b394",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Clinique La Prairie: erick-ribeiro-919337183 / rebecca-chia-lung-chang-v-23bb2b394",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: alisonmacneil / gummiv",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: alisonmacneil / leifurgeir",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: alisonmacneil / mathiasnickandersen",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: alisonmacneil / jvonbueren",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: alisonmacneil / sigga-ingadottir-2b404639",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: gummiv / leifurgeir",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: gummiv / mathiasnickandersen",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: gummiv / jvonbueren",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: gummiv / sigga-ingadottir-2b404639",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: leifurgeir / mathiasnickandersen",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: leifurgeir / jvonbueren",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: leifurgeir / sigga-ingadottir-2b404639",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: mathiasnickandersen / jvonbueren",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: mathiasnickandersen / sigga-ingadottir-2b404639",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: jvonbueren / sigga-ingadottir-2b404639",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: mischacohn / susanne-burger-0a75032a",
+   "«hi mischa, 3dlook has worked with 100+ clients.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Het 1 op 1 Dieet: tomcoenders / henkwillemolivier",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "fitbox: jean-maurice-pohl-ab2806bb / gunnar-mau-06111972",
+   "«a 3d model comes back along with the measurements.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "fitbox: roland-wingert-wingert-ab6397350 / antonia-schulz-b1b86021b",
+   "«hi roland, members get 80+ body measurements and…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Dietplus: natacha-alonso-valckx-35888b100 / philippe-l-2914a1130",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Dietplus: natacha-alonso-valckx-35888b100 / jacques-ley-8a5818148",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Dietplus: philippe-l-2914a1130 / jacques-ley-8a5818148",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Liva Healthcare: asgerelnegaard / jessica-bartlett-0a3076106",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Liva Healthcare: asgerelnegaard / mie-elmelund-astrup",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Liva Healthcare: asgerelnegaard / lise-svendsen-tune-56436a73",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Liva Healthcare: asgerelnegaard / lisa-bolting-6296379",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Liva Healthcare: asgerelnegaard / hannahpearman",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Liva Healthcare: asgerelnegaard / tomlionelfuller",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Liva Healthcare: jessica-bartlett-0a3076106 / mie-elmelund-astrup",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Liva Healthcare: jessica-bartlett-0a3076106 / lise-svendsen-tune-56436a73",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Liva Healthcare: jessica-bartlett-0a3076106 / lisa-bolting-6296379",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Liva Healthcare: jessica-bartlett-0a3076106 / hannahpearman",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Liva Healthcare: jessica-bartlett-0a3076106 / tomlionelfuller",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Liva Healthcare: mie-elmelund-astrup / lise-svendsen-tune-56436a73",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Liva Healthcare: mie-elmelund-astrup / lisa-bolting-6296379",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Liva Healthcare: mie-elmelund-astrup / hannahpearman",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Liva Healthcare: mie-elmelund-astrup / tomlionelfuller",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Liva Healthcare: lise-svendsen-tune-56436a73 / lisa-bolting-6296379",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Liva Healthcare: lise-svendsen-tune-56436a73 / hannahpearman",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Liva Healthcare: lise-svendsen-tune-56436a73 / tomlionelfuller",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Liva Healthcare: lisa-bolting-6296379 / hannahpearman",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Liva Healthcare: lisa-bolting-6296379 / tomlionelfuller",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Liva Healthcare: hannahpearman / tomlionelfuller",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nutrium: andresantos-nutrium / diogoalves92",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nutrium: andresantos-nutrium / fntneves",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nutrium: andresantos-nutrium / asergioacosta",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nutrium: andresantos-nutrium / miguelsolino",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nutrium: andresantos-nutrium / violetablancdesousa",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nutrium: andresantos-nutrium / josecarlosalves",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nutrium: diogoalves92 / fntneves",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nutrium: diogoalves92 / asergioacosta",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nutrium: diogoalves92 / miguelsolino",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nutrium: diogoalves92 / violetablancdesousa",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nutrium: diogoalves92 / josecarlosalves",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nutrium: fntneves / asergioacosta",
+   "«the privacy faq has the details: in most enterpri…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nutrium: fntneves / miguelsolino",
+   "«the privacy faq has the details: in most enterpri…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nutrium: fntneves / violetablancdesousa",
+   "«the privacy faq has the details: in most enterpri…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nutrium: fntneves / josecarlosalves",
+   "«the privacy faq has the details: in most enterpri…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nutrium: asergioacosta / miguelsolino",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nutrium: asergioacosta / violetablancdesousa",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nutrium: asergioacosta / josecarlosalves",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nutrium: miguelsolino / violetablancdesousa",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nutrium: miguelsolino / josecarlosalves",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nutrium: violetablancdesousa / josecarlosalves",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "sentence opening repeated",
+   "Clinique La Prairie ×4",
+   "«two photos 80+ body measurements…»: erick-ribeiro-919337183, lorenzoamaglio, rebecca-chia-lung-chang-v-23bb2b394, valeriadinatale"
+  ],
+  [
+   "sentence opening repeated",
+   "RNPC ×3",
+   "«a scan of two photos…»: corinne-malitte-46b601122, cécile-troisgros-8a8b16263, ivan-dombes-0b8031399"
+  ],
+  [
+   "sentence opening repeated",
+   "RNPC ×4",
+   "«a 15 minute call would…»: justine-desprez-372b3b266, karine-le-meaux-53858983, sophie-prunier-b86a73136, thomas-hervé-7b6003213"
+  ],
+  [
+   "sentence opening repeated",
+   "Virtuagym ×3",
+   "«two photos 80+ body measurements…»: nick-van-schijndel, ruben-visser-6a3b0b43, simonaurik"
+  ]
+ ]
+}

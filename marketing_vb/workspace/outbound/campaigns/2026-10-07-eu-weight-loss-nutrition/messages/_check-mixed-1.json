@@ -1,0 +1,100 @@
+{
+ "campaign": "2026-10-07-eu-weight-loss-nutrition",
+ "checked": 29,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-1",
+ "generated": "2026-10-07T16:29:53",
+ "hard": [],
+ "soft": [
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: alisonmacneil / gummiv",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: alisonmacneil / leifurgeir",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: alisonmacneil / mathiasnickandersen",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: alisonmacneil / jvonbueren",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: alisonmacneil / sigga-ingadottir-2b404639",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: gummiv / leifurgeir",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: gummiv / mathiasnickandersen",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: gummiv / jvonbueren",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: gummiv / sigga-ingadottir-2b404639",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: leifurgeir / mathiasnickandersen",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: leifurgeir / jvonbueren",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: leifurgeir / sigga-ingadottir-2b404639",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: mathiasnickandersen / jvonbueren",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: mathiasnickandersen / sigga-ingadottir-2b404639",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: jvonbueren / sigga-ingadottir-2b404639",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sidekick Health: mischacohn / susanne-burger-0a75032a",
+   "«hi mischa, 3dlook has worked with 100+ clients.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "fitbox: jean-maurice-pohl-ab2806bb / gunnar-mau-06111972",
+   "«a 3d model comes back along with the measurements.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "fitbox: roland-wingert-wingert-ab6397350 / antonia-schulz-b1b86021b",
+   "«hi roland, members get 80+ body measurements and…»"
+  ]
+ ]
+}

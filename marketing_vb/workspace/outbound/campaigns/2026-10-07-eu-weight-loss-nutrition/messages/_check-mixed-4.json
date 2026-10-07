@@ -1,0 +1,50 @@
+{
+ "campaign": "2026-10-07-eu-weight-loss-nutrition",
+ "checked": 33,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-4",
+ "generated": "2026-10-07T16:29:49",
+ "hard": [],
+ "soft": [
+  [
+   "no company line",
+   "yann-malaud M1",
+   "«Laboratorios YSONUT» is not named: check it has a line only this company gets"
+  ],
+  [
+   "greeting",
+   "bc-katarina-grich-ba159944 M1",
+   "«Hi Katarina,» has no «Bc. Katarina»"
+  ],
+  [
+   "greeting",
+   "bc-katarina-grich-ba159944 M2",
+   "«Hi Katarina,» has no «Bc. Katarina»"
+  ],
+  [
+   "no company line",
+   "marc-sarazin-6599b149 M1",
+   "«Laboratorios YSONUT» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "valerie-delage-1b9a0a145 M1",
+   "«Laboratorios YSONUT» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "qnko-qnkov-423869260 M1",
+   "«Laboratorios YSONUT» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "khalil-cheddadd M1",
+   "«Laboratorios YSONUT» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "manel-nieto-96907736 M1",
+   "«Laboratorios YSONUT» is not named: check it has a line only this company gets"
+  ]
+ ]
+}

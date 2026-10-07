@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-06",
+  "last_updated": "2026-10-07",
   "companies": {
     "safariland": {
       "covered_by_profile": null,
@@ -240,9 +240,9 @@
     "liva-healthcare": {
       "display_name": "Liva Healthcare",
       "covered_by_profile": "olena",
-      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "campaign_id": "2026-10-07-eu-weight-loss-nutrition",
       "product": "fitxpress",
-      "date": "2026-07-21",
+      "date": "2026-10-07",
       "status": "active"
     },
     "medgate": {
@@ -368,9 +368,9 @@
     "sidekick-health": {
       "display_name": "Sidekick Health",
       "covered_by_profile": "olena",
-      "campaign_id": "2026-07-21-eu-telehealth-weightloss",
+      "campaign_id": "2026-10-07-eu-weight-loss-nutrition",
       "product": "fitxpress",
-      "date": "2026-07-21",
+      "date": "2026-10-07",
       "status": "active"
     },
     "sidekickhealth": {
@@ -1839,6 +1839,158 @@
       "campaign_id": "2026-10-06-uk-weight-management",
       "product": "fitxpress",
       "date": "2026-10-06",
+      "status": "active"
+    },
+    "bodyhit": {
+      "display_name": "BODYHIT",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-07-eu-weight-loss-nutrition",
+      "product": "fitxpress",
+      "date": "2026-10-07",
+      "status": "active"
+    },
+    "clinique-la-prairie": {
+      "display_name": "Clinique La Prairie",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-07-eu-weight-loss-nutrition",
+      "product": "fitxpress",
+      "date": "2026-10-07",
+      "status": "active"
+    },
+    "dietplus": {
+      "display_name": "Dietplus",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-07-eu-weight-loss-nutrition",
+      "product": "fitxpress",
+      "date": "2026-10-07",
+      "status": "active"
+    },
+    "fabulous": {
+      "display_name": "The Fabulous",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-07-eu-weight-loss-nutrition",
+      "product": "fitxpress",
+      "date": "2026-10-07",
+      "status": "active"
+    },
+    "fitbox": {
+      "display_name": "fitbox",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-07-eu-weight-loss-nutrition",
+      "product": "fitxpress",
+      "date": "2026-10-07",
+      "status": "active"
+    },
+    "fitforme": {
+      "display_name": "FitForMe",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-07-eu-weight-loss-nutrition",
+      "product": "fitxpress",
+      "date": "2026-10-07",
+      "status": "active"
+    },
+    "het-1-op-1-dieet": {
+      "display_name": "Het 1 op 1 Dieet",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-07-eu-weight-loss-nutrition",
+      "product": "fitxpress",
+      "date": "2026-10-07",
+      "status": "active"
+    },
+    "keepcool": {
+      "display_name": "Keepcool",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-07-eu-weight-loss-nutrition",
+      "product": "fitxpress",
+      "date": "2026-10-07",
+      "status": "active"
+    },
+    "laboratorios-ysonut": {
+      "display_name": "Laboratorios YSONUT",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-07-eu-weight-loss-nutrition",
+      "product": "fitxpress",
+      "date": "2026-10-07",
+      "status": "active"
+    },
+    "maju": {
+      "display_name": "maju",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-07-eu-weight-loss-nutrition",
+      "product": "fitxpress",
+      "date": "2026-10-07",
+      "status": "active"
+    },
+    "metabolic-balance": {
+      "display_name": "Metabolic Balance",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-07-eu-weight-loss-nutrition",
+      "product": "fitxpress",
+      "date": "2026-10-07",
+      "status": "active"
+    },
+    "naturhouse-france": {
+      "display_name": "Naturhouse France",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-07-eu-weight-loss-nutrition",
+      "product": "fitxpress",
+      "date": "2026-10-07",
+      "status": "active"
+    },
+    "nutriadapt": {
+      "display_name": "NUTRIADAPT",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-07-eu-weight-loss-nutrition",
+      "product": "fitxpress",
+      "date": "2026-10-07",
+      "status": "active"
+    },
+    "nutrimed": {
+      "display_name": "Nutrimed",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-07-eu-weight-loss-nutrition",
+      "product": "fitxpress",
+      "date": "2026-10-07",
+      "status": "active"
+    },
+    "nutrium": {
+      "display_name": "Nutrium",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-07-eu-weight-loss-nutrition",
+      "product": "fitxpress",
+      "date": "2026-10-07",
+      "status": "active"
+    },
+    "rnpc": {
+      "display_name": "RNPC",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-07-eu-weight-loss-nutrition",
+      "product": "fitxpress",
+      "date": "2026-10-07",
+      "status": "active"
+    },
+    "satisfeat": {
+      "display_name": "SATISFEAT",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-07-eu-weight-loss-nutrition",
+      "product": "fitxpress",
+      "date": "2026-10-07",
+      "status": "active"
+    },
+    "virtuagym": {
+      "display_name": "Virtuagym",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-07-eu-weight-loss-nutrition",
+      "product": "fitxpress",
+      "date": "2026-10-07",
+      "status": "active"
+    },
+    "vivafit": {
+      "display_name": "Vivafit",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-07-eu-weight-loss-nutrition",
+      "product": "fitxpress",
+      "date": "2026-10-07",
       "status": "active"
     }
   }
