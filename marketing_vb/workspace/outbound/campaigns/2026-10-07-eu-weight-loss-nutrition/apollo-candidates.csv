@@ -1,0 +1,101 @@
+apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,last_refreshed_at,status
+5b183907a6da987956364e1f,Karine,Me***x,CEO,Réseau RNPC Officiel,rnpc.fr,RNPC,2026-09-12T12:17:55.000+00:00,candidate
+66f7eabfeee1360001a7ace2,Damien,Ca***t,General Manager,Réseau RNPC Officiel,rnpc.fr,RNPC,2026-09-07T05:26:50.000+00:00,candidate
+6951e40aa6f391000180c423,Patrick,Ga***e,General Manager,Réseau RNPC Officiel,rnpc.fr,RNPC,2026-09-07T01:05:33.000+00:00,candidate
+6021755e395b920001d9954b,Remy,Le***d,Founding President,Réseau RNPC Officiel,rnpc.fr,RNPC,2026-09-16T03:50:28.000+00:00,candidate
+54a76f357468696829012e34,Sophie,Pr***r,Chef D'entreprise Centre RNPC,Réseau RNPC Officiel,rnpc.fr,RNPC,2026-09-07T01:05:41.000+00:00,candidate
+614d7ef7b5e53d0001a0f5bc,Nathalie,Pr***z,Chef D’entreprise Centre RNPC,Réseau RNPC Officiel,rnpc.fr,RNPC,2026-09-07T07:19:31.000+00:00,in-sales-nav
+54abaf247468692ca1890906,Gaelle,Av***e,CEO,dietplus,dietplus.fr,Dietplus,2026-04-30T02:38:53.767+00:00,in-sales-nav
+6765380f3dd841000144293d,Nathalie,Pe***n,CEO,dietplus,dietplus.fr,Dietplus,2026-09-12T14:24:34.000+00:00,in-sales-nav
+54c291f27468691639438fa9,Nathalie,Do***e,CEO,dietplus,dietplus.fr,Dietplus,2026-08-30T19:56:14.047+00:00,candidate
+67b854f84f46da0001777425,Jacques,Ley,General Manager,dietplus,dietplus.fr,Dietplus,2026-09-08T02:08:55.000+00:00,candidate
+66fc41b6e7579f00017ffc01,Philippe,La***r,President,dietplus,dietplus.fr,Dietplus,2026-09-08T12:11:34.000+00:00,candidate
+54a7978174686968290a0143,Jean,Ho***n,President of Scientific Council Dietplus Group,dietplus,dietplus.fr,Dietplus,2026-08-30T10:47:37.593+00:00,candidate
+69dc1f0448a59800018fbce0,Amandine,Po***r,Main Manager,dietplus,dietplus.fr,Dietplus,2026-09-15T08:03:10.000+00:00,in-sales-nav
+648f181f1193760001e59f5c,Katerina,Ab***a,Main Manager,dietplus,dietplus.fr,Dietplus,2026-09-09T13:28:57.000+00:00,in-sales-nav
+616a5f82fc4be200013f579a,Frederic,Ju***n,Directeur Général France et Belgique,NATURHOUSE France,naturhouse.fr,Naturhouse France,2026-09-08T09:45:55.000+00:00,candidate
+5e8c7561aef1ea00011fb0e7,Justine,Fe***r,Chef D'entreprise // Diététicienne,NATURHOUSE France,naturhouse.fr,Naturhouse France,2026-08-22T10:44:28.912+00:00,candidate
+55708d5e73696425b2210e00,Cynthia,Pi***d,Main Manager,NATURHOUSE France,naturhouse.fr,Naturhouse France,2026-09-12T03:52:10.000+00:00,in-sales-nav
+67146fdd158d450001b15dbb,Marta,No***a,CEO & Managing Director,NUTRIADAPT - Nutrition & Beauty Clinic,nutriadapt.cz,NUTRIADAPT,2026-10-01T21:53:55.000+00:00,in-sales-nav
+54a70e107468696de7671711,Henk,Ol***r,Algemeen Directeur (CEO),Cambridge Weight Plan Benelux BV,1op1dieet.nl,Het 1 op 1 Dieet,2026-10-02T01:36:47.907+00:00,candidate
+5d3f288af6512575ec3b1a1b,Barbara,Vos,Inkoper / Product Manager,Cambridge Weight Plan Benelux BV,1op1dieet.nl,Het 1 op 1 Dieet,2026-09-12T16:02:32.000+00:00,candidate
+68062ff713aa8f00018f3acd,Marc,Sa***n,Chairman and CEO,Laboratorios YSONUT,ysonut.es,Laboratorios YSONUT,2026-09-12T17:15:55.000+00:00,in-sales-nav
+66a8611eace43500018a8f39,Khalil,Ch***d,Product Manager,Laboratorios YSONUT,ysonut.es,Laboratorios YSONUT,2026-08-23T06:40:13.000+00:00,candidate
+5e7d429c0446790001bf6e7d,Ruben,Av***r,Dirección Operativa México,Laboratorios YSONUT,ysonut.es,Laboratorios YSONUT,2026-09-13T01:48:03.000+00:00,candidate
+60be23f006aa7900012642e9,Manel,Ni***o,Dirección Médica,Laboratorios YSONUT,ysonut.es,Laboratorios YSONUT,2026-08-24T07:27:27.000+00:00,candidate
+60b9c0ce2abe580001797c98,Cherry,Wi***s,CEO,Metabolic Balance®,metabolic-balance.com,Metabolic Balance,2026-09-26T07:34:36.903+00:00,candidate
+606a94828c8a0000013d8305,Karen,Py***e,CEO at Metabolic Balance United Kingdom and Ireland,Metabolic Balance®,metabolic-balance.com,Metabolic Balance,2026-09-29T20:31:39.000+00:00,candidate
+5f5ad4426cf4800001721f28,Address,Re***t,General Manager,Metabolic Balance®,metabolic-balance.com,Metabolic Balance,2026-09-08T11:38:23.000+00:00,candidate
+61e8f7622113f50001084ea5,Javier,Ag***t,General Manager,nutrimed,nutrimed.gr,Nutrimed,2026-09-17T18:53:30.000+00:00,candidate
+64c7bd8173eb360001e7ff71,Suthinun,Vi***e,General Manager,nutrimed,nutrimed.gr,Nutrimed,2026-09-11T19:58:12.449+00:00,candidate
+66f5bdd59ac51a00017cbbc0,Saemundur,Od***n,Chief Medical Officer and Co-Founder,Sidekick Health,sidekickhealth.com,Sidekick Health,2026-10-04T06:30:34.000+00:00,candidate
+65e57ac28d952e00081d5498,Tryggvi,Th***n,CEO,Sidekick Health,sidekickhealth.com,Sidekick Health,2026-07-31T10:16:40.798+00:00,candidate
+67c010d4a0cca80001c36143,Mathias,An***n,"VP, Product",Sidekick Health,sidekickhealth.com,Sidekick Health,2026-09-07T22:56:05.000+00:00,candidate
+55702796736964042a6c4300,Eric,Le***n,VP Growth,Sidekick Health,sidekickhealth.com,Sidekick Health,2026-10-01T03:11:35.938+00:00,candidate
+5de1f5588bbb5a00013ac8c3,Johannes,Bu***n,Vice President Cardiometabolic,Sidekick Health,sidekickhealth.com,Sidekick Health,2026-08-28T16:53:55.000+00:00,candidate
+54a43ed77468693676531838,Mischa,Co***n,Sr Director US Pharma Partnerships,Sidekick Health,sidekickhealth.com,Sidekick Health,2026-09-09T06:03:57.000+00:00,candidate
+6937e7b7db8d9f000156dfd3,Hordur,Bj***n,VP of Finance,Sidekick Health,sidekickhealth.com,Sidekick Health,2026-08-16T17:32:53.000+00:00,candidate
+64928cb7f9b9e0000165c7ab,Kevin,Jo***n,Senior Vice President-Growth,Sidekick Health,sidekickhealth.com,Sidekick Health,2026-09-15T05:34:49.000+00:00,candidate
+66f6462d67b47c0001491bc5,Sigga,In***r,SVP of Operations,Sidekick Health,sidekickhealth.com,Sidekick Health,2026-09-13T00:18:48.178+00:00,candidate
+66fa44fe426e620001b0fe5d,Todd,Pe***y,"Global Vice President, Business Development",Sidekick Health,sidekickhealth.com,Sidekick Health,2026-09-21T04:37:27.000+00:00,candidate
+66fceb7329d09c00018fd08c,Susanne,Bu***r,"VP Marketing @ Sidekick Health | Driving Growth for Digital Therapeutics (PINK!, Zanadio, MENO!)",Sidekick Health,sidekickhealth.com,Sidekick Health,2026-09-10T20:03:12.000+00:00,candidate
+6321e5c7066f2e000149f514,Tobias,Ge***s,Product,Sidekick Health,sidekickhealth.com,Sidekick Health,2026-09-22T03:37:52.000+00:00,candidate
+63568aeec0df6500016065c7,Fumi,F,Lead Dietitian,Liva Healthcare,livahealthcare.com,Liva Healthcare,2026-09-08T16:42:31.000+00:00,candidate
+57d36cddf651252c49ac2a6e,Jessica,Ba***t,Head of Digital Programmes and Data,Liva Healthcare,livahealthcare.com,Liva Healthcare,2026-10-03T11:55:37.784+00:00,candidate
+61de65eee497e100013ff6ce,Ellie,He***h,Medical Director,Liva Healthcare,livahealthcare.com,Liva Healthcare,2026-09-18T23:40:18.000+00:00,candidate
+6212579f59e5cb0001d76b62,Mie,As***p,Product Manager,Liva Healthcare,livahealthcare.com,Liva Healthcare,2026-09-03T21:17:23.963+00:00,candidate
+54a5641a7468692cf0ae3394,Lise,Sv***e,Product Manager,Liva Healthcare,livahealthcare.com,Liva Healthcare,2026-09-10T12:31:11.000+00:00,candidate
+55710f6273696469d6a50900,Lisa,Bo***g,Product Manager,Liva Healthcare,livahealthcare.com,Liva Healthcare,2026-09-12T07:12:54.000+00:00,candidate
+67b30e439e5d970001ba34f0,Hannah,Pe***n,VP Operations,Liva Healthcare,livahealthcare.com,Liva Healthcare,2026-09-09T15:59:56.034+00:00,candidate
+661f9538fbbfd10006d1e4ce,Tom,Fu***r,Product Marketing Director,Liva Healthcare,livahealthcare.com,Liva Healthcare,2026-09-10T17:17:47.000+00:00,candidate
+66f2861397771400011b456e,Asger,El***d,Director of Digital Products and Technology,Liva Healthcare,livahealthcare.com,Liva Healthcare,2026-09-22T10:28:42.000+00:00,in-sales-nav
+684c0addcdcfa00001aa3d70,JC,He***e,CEO,FitForMe,fitforme.com,FitForMe,2026-09-21T08:22:35.000+00:00,candidate
+54a420ce74686938ac2afd2e,Wilco,Nap,Head of Digital & Technology,FitForMe,fitforme.com,FitForMe,2026-09-08T00:35:38.000+00:00,in-sales-nav
+66f89f8b1fb6a70001ff887a,Vincent,Vr***l,Product Owner Digital,FitForMe,fitforme.com,FitForMe,2026-09-08T07:18:19.000+00:00,candidate
+63c94da1d04c4e0001575af4,Zeki,Ki***c,Product Manager,FitForMe,fitforme.com,FitForMe,2026-08-13T19:02:26.000+00:00,candidate
+66f2eae73056cc0001f3978a,Simon,Ha***r,Founder and Chairman,FitForMe,fitforme.com,FitForMe,2026-10-05T11:54:04.130+00:00,in-sales-nav
+5b9bf976f874f78656595603,Rebecca,Br***n,Head of Product (R&D),FitForMe,fitforme.com,FitForMe,2026-09-23T19:12:30.359+00:00,candidate
+66f1ad7a4c7c510001961b4f,Andre,Sa***s,CEO & Co-founder,Nutrium,nutrium.com,Nutrium,2026-09-06T08:13:11.000+00:00,candidate
+57df68eca6da980ac6bcb59f,Francisco,Ne***s,Head of Engineering,Nutrium,nutrium.com,Nutrium,2026-09-04T16:52:03.000+00:00,candidate
+686022b5e6f0a30001b8f101,Sergio,Co***a,Head of Product,Nutrium,nutrium.com,Nutrium,2026-09-13T09:42:27.000+00:00,candidate
+66f63e5105e2d900019f048c,Diogo,Al***s,Co-Founder,Nutrium,nutrium.com,Nutrium,2026-09-07T20:13:27.000+00:00,in-sales-nav
+5e79cd5f04a2780001836c8f,Miguel,So***o,Product Manager,Nutrium,nutrium.com,Nutrium,2026-08-10T00:00:26.000+00:00,candidate
+612bb3f0ac769300011db8d9,Violeta,So***a,Product Manager,Nutrium,nutrium.com,Nutrium,2026-09-12T16:07:16.000+00:00,candidate
+66f2bd741f0dde000179c524,Jose,Al***s,Co-Founder & CRO,Nutrium,nutrium.com,Nutrium,2026-10-02T11:06:46.812+00:00,candidate
+66fc877797fbc30001b6197d,Julien,Ja***e,Co-fondateur & CEO,maju,maju-nutrition.com,maju,2026-09-04T05:02:14.000+00:00,candidate
+66f32c9e6b93a1000130377f,Matthias,Vi***l,Co-founder,maju,maju-nutrition.com,maju,2026-08-28T05:44:35.712+00:00,candidate
+54c28cd17468697af7c104a8,Julie,Co***y,Founder Brand Development - Artist @Majü - Founder,maju,maju-nutrition.com,maju,2026-08-14T17:15:58.774+00:00,candidate
+6a795036da08fa00019c5ad0,Idris,Om***a,CEO,Fabulous,thefabulous.co,The Fabulous,2026-09-19T23:53:59.000+00:00,candidate
+6505fc9e007fda00019b939a,Jim,Os***r,Chief Executive Officer,Fabulous,thefabulous.co,The Fabulous,2026-09-09T09:13:47.000+00:00,candidate
+6924bc3e103a0000010786c2,Fabulous,Co***t,Chief Executive Officer,Fabulous,thefabulous.co,The Fabulous,2026-09-01T00:16:58.664+00:00,candidate
+66f4160b93a753000198d831,Amine,La***i,Co-founder & CTO,Fabulous,thefabulous.co,The Fabulous,2026-09-15T18:24:03.000+00:00,in-sales-nav
+66f71c7fc180660001ba4b15,Taylor,Li***g,Co-Founder and CDO,Fabulous,thefabulous.co,The Fabulous,2026-09-17T16:53:10.081+00:00,candidate
+5ee42ff9de7993000124db4e,Pranav,Ra***r,Junior Product Manager and Growth Engineer,Fabulous,thefabulous.co,The Fabulous,2026-09-07T08:49:11.000+00:00,candidate
+54c292fe7468697af744f2ab,Fabiola,Fa***z,President of Fabulous,Fabulous,thefabulous.co,The Fabulous,2026-09-23T08:46:45.000+00:00,candidate
+621e459a2ef8170001ecf134,Virginie,Bo***e,CEO,BODYHIT,bodyhit.fr,BODYHIT,2026-10-02T12:32:13.083+00:00,in-sales-nav
+60dc1ec95f61760001815561,Stephanie,Te***a,President,BODYHIT,bodyhit.fr,BODYHIT,2026-06-30T05:22:36.000+00:00,candidate
+5f5f688a0102820001ecffbe,Hassatou,Di***o,"Esthéticienne Formatrice, Gérant Principal",BODYHIT,bodyhit.fr,BODYHIT,2026-09-27T17:15:31.811+00:00,candidate
+621e909e4a7dfb0001265267,Ines,Ha***i,Gérante Principale,BODYHIT,bodyhit.fr,BODYHIT,2026-09-09T19:24:53.000+00:00,candidate
+62ea5d938580140001dc4c15,Juline,Bo***r,Main Manager,BODYHIT,bodyhit.fr,BODYHIT,2026-09-10T17:18:05.000+00:00,candidate
+67e0a252b3788e00015fd5da,Francois-Xavier,Qu***e,Main Manager,BODYHIT,bodyhit.fr,BODYHIT,2026-09-24T02:41:36.675+00:00,candidate
+66fd4753643b670001e9ba4d,Ulrike,Ka***r,Chief Operating Officer,fitbox GmbH,fitbox.de,fitbox,2026-09-04T04:57:56.000+00:00,candidate
+676ee8e7300844000143ac95,Scarlett,Sc***z,Head of B2B Strategy & Growth,fitbox GmbH,fitbox.de,fitbox,2026-09-08T00:21:32.000+00:00,candidate
+642d517086fb1e0001de7425,Antonia,Sc***z,Sales Coach/Founder Coach/Officemanagerin,fitbox GmbH,fitbox.de,fitbox,2026-09-26T02:02:49.315+00:00,candidate
+5fe1db4c789cb10001d8f8fe,Patrik,Ro***w,Geschäftsführender Inhaber bei Fitbox GmbH,fitbox GmbH,fitbox.de,fitbox,2026-07-01T03:14:13.000+00:00,in-sales-nav
+60d2f1eeb9e8c40001164e5e,Paul,Br***m,CEO,Virtuagym,virtuagym.com,Virtuagym,2026-09-30T05:38:12.824+00:00,in-sales-nav
+6762550d36cdef0001c2cdf9,Nick,Va***l,Chief Product Officer,Virtuagym,virtuagym.com,Virtuagym,2026-09-15T04:11:03.000+00:00,in-sales-nav
+66f931ccabfa3800019042ee,Simon,Au***k,Chief Marketing Officer,Virtuagym,virtuagym.com,Virtuagym,2026-09-30T08:16:42.889+00:00,candidate
+60d2eda665b13f0001674b6d,Hugo,Br***m,Founder,Virtuagym,virtuagym.com,Virtuagym,2026-09-21T07:52:13.000+00:00,candidate
+66f16e4374dd450001dc7800,Paulo,Cu***o,Product Owner Mobile,Virtuagym,virtuagym.com,Virtuagym,2026-07-06T10:09:19.376+00:00,candidate
+5fb635c36151b2000191ca53,Ruben,Vi***r,COO & CFO,Virtuagym,virtuagym.com,Virtuagym,2026-10-03T04:48:39.074+00:00,candidate
+61e04663ca16be000126775f,Nuno,Fi***o,Lead Product Manager,Virtuagym,virtuagym.com,Virtuagym,2026-09-04T04:31:28.056+00:00,candidate
+606ceaa73186330001122757,Giulia,Ma***i,VP of Marketing,Virtuagym,virtuagym.com,Virtuagym,2026-09-04T10:01:21.000+00:00,candidate
+66ffe98555cce2000139e244,Timo,Na***s,Product,Virtuagym,virtuagym.com,Virtuagym,2026-09-10T03:35:13.956+00:00,candidate
+576c258df3e5bb2194ccada4,Matthieu,Gl***i,Head of Product,Keepcool,keepcool.fr,Keepcool,2026-09-10T20:41:51.000+00:00,candidate
+57d34685a6da986588aa83ef,Arnaud,So***n,Managing Director,Keepcool,keepcool.fr,Keepcool,2026-09-05T12:43:19.000+00:00,candidate
+60ddcb748ecb6800015de8e1,Clement,Fa***e,President,Keepcool,keepcool.fr,Keepcool,2026-09-04T13:13:13.907+00:00,candidate
+62ea7aadd1dce80001e98ec9,Elisa,St***z,Head of Com & Growth,Keepcool,keepcool.fr,Keepcool,2026-09-13T08:10:38.000+00:00,in-sales-nav
+5f620d9603423d00016843d4,Thibaut,Lo***t,General Management,Keepcool,keepcool.fr,Keepcool,2026-09-10T12:32:15.000+00:00,candidate
+5d444c0e80f93e2a3239a18f,Nadia,Ba***y,Directrice D'exploitation ( Vitrine du Groupe) Club Paris La Defense et le Club Paris Monceau,Keepcool,keepcool.fr,Keepcool,2026-09-09T00:52:43.510+00:00,candidate
+64f1eefbc7dbd90001855fe6,Florence,Be***t,Directrice De Réseau,Keepcool,keepcool.fr,Keepcool,2026-09-29T09:53:15.274+00:00,candidate
+58c25920f651250513c366f5,Ali,Bu***d,General Manager,VIVAFIT,vivafit.pt,Vivafit,2026-08-24T01:27:24.722+00:00,candidate
