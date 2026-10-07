@@ -858,6 +858,12 @@ def build_card(cdir: Path, stage: str) -> str:
                     ", ".join(f"`{b}`" for b in banned), ""]
 
     out += ["## Campaign rules (hypothesis.md, verbatim)", ""]
+    if stage == "messages":
+        # 2026-10-07: a sample easy out from these rules went into ~30 messages and a
+        # display rule ("The 3D model is a view the club chooses to show") into 24.
+        out += ["> Sample sentences, lane notes and rule sentences below are instructions to you,"
+                " never copy: write your own wording. Only the compliance lines and the wording"
+                " of the facts under «Facts you may cite» go into a message verbatim.", ""]
     out += [demote(s) for s in secs] or ["_(the hypothesis has none of the expected sections)_\n"]
     if stage == "messages":
         # The hypothesis keeps its message gate inside "Validation criteria", between the
@@ -1625,6 +1631,20 @@ def read_messages(path: Path) -> dict[int, str]:
 
 SPEED_PHRASE = "under 45 seconds from the photos to structured results"
 
+# "100+" is every 3DLOOK client of all time, both products (proof-points.md:108). On
+# 2026-10-07 fourteen messages turned it into current FitXpress users: "100+ clients use
+# FitXpress today", "already in use at 100+ clients", "More than 100 clients use FitXpress".
+_N100 = r"(?:100\+|(?:over|more than)\s+100\b|\b100\s+(?:clients|customers))"
+HUNDRED_USE = re.compile(
+    rf"{_N100}\s*(?:clients|customers|companies)?\s+(?:already\s+)?(?:use|uses|using|run|runs|rely)\b"
+    rf"|\b(?:in use at|used by|already used? by)\s+{_N100}"
+    rf"|{_N100}[^.?!\n]{{0,40}}\btoday\b", re.I)
+
+# Sentences the card makes verbatim, so a company-wide repeat of their opening is expected.
+MANDATED_STEMS = ("in most enterprise deployments", "fitxpress is not a medical device",
+                  "for most evaluated measurements", "for most of the evaluated",
+                  "3dlook has worked with 100+", "112,100 scans", "one weight-management platform ran")
+
 
 def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> int:
     people, src = expected_people(cdir)
@@ -1709,6 +1729,11 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
             # name "80+ body measurements" as the approved claim, so that is the preference.
             if re.search(r"80\+\s+measurements", b, re.I):
                 soft.append(("terminology", tag, "«80+ measurements»: §2.13 prefers «80+ body measurements»"))
+            m = HUNDRED_USE.search(b)
+            if m:
+                hard.append(("100+ clients wording", tag,
+                             f"«{clip(m.group(0), 50)}»: all-time 3DLOOK count, write "
+                             "«3DLOOK has worked with 100+ clients»"))
             fs = first_sentence(b)
             if GENERIC_OPENER.search(fs):
                 hard.append(("generic opener", tag, clip(fs, 70)))
@@ -1736,9 +1761,12 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
             # «в первом сообщении вопрос а во втором звонок» (Vadim, 2026-10-07)
             if "?" not in m1:
                 hard.append(("no question in Message 1", f"{pid} M1", "referral_call: M1 asks"))
-            if link and link in m1:
-                hard.append(("calendar link in Message 1", f"{pid} M1",
-                             "referral_call: the call and the link belong in Message 2"))
+            # Any link, not only the calendar: 2026-10-07 a privacy-FAQ link sat in a
+            # Message 1 and passed, because only the calendar URL was looked for.
+            url = re.search(r"https?://\S+|\bwww\.\S+", m1)
+            if url:
+                hard.append(("link in Message 1", f"{pid} M1",
+                             f"referral_call: no link in Message 1 ({clip(url.group(0), 50)})"))
             elif re.search(r"(?i)\b(call|calendar|book a|grab a slot|15 min)\b", m1):
                 soft.append(("call ask in Message 1?", f"{pid} M1",
                              "referral_call: the call belongs in Message 2"))
@@ -1831,6 +1859,27 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
                 if difflib.SequenceMatcher(None, sa, sb).ratio() >= 0.8:
                     seen_pairs.add((pa, pb))
                     soft.append(("near-duplicate sentence", f"{g}: {pa} / {pb}", f"«{clip(sa, 50)}»"))
+    # Sentence openings within a company, 2026-10-07 (eu-weight-loss-nutrition): the card's
+    # sample easy out went into ~30 messages and one product-sentence opening into 10 of 15
+    # people at one network. Their endings differed, so the whole-sentence check above
+    # missed both; three QC rounds found them by hand. The first five words catch it.
+    stems: dict[tuple[str, str], set[str]] = defaultdict(set)
+    for p in people:
+        for n in (1, 2):
+            b = bodies.get((p["person_id"], n))
+            if not b:
+                continue
+            paras = [x.strip() for x in re.sub(r"https?://\S+", "", b).split("\n\n") if x.strip()]
+            for para in paras[1:-1]:                      # not the greeting, not the signature
+                for s in re.split(r"(?<=[.?!:])\s+", para):
+                    low = s.strip().lower()
+                    words = re.findall(r"[^\W_]+(?:[+'][^\W_]*)?\+?", low)
+                    if len(words) >= 6 and not low.startswith(MANDATED_STEMS):
+                        stems[(group_of(p, gmap), " ".join(words[:5]))].add(p["person_id"])
+    for (g, st), who in stems.items():
+        if len(who) >= 3:
+            soft.append(("sentence opening repeated", f"{g} ×{len(who)}",
+                         f"«{st}…»: " + ", ".join(sorted(who)[:4])))
     for (pid, n), b in bodies.items():
         if n == 2 and re.search(r"96-97%", first_sentence(b)):
             soft.append(("M2 opens with accuracy", f"{pid} M2", "lead with the outcome; the figure comes after"))

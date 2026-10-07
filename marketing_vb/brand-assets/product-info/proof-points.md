@@ -105,7 +105,7 @@
 ### Aggregate
 | Claim | Number | Source |
 |-------|--------|--------|
-| Total customers (all-time) | 100+ | Company deck · **the one public client count, everywhere** (Vadim 2026-09-30): pages, articles, outbound, posts |
+| Total customers (all-time) | 100+ | Company deck · **the one public client count, everywhere** (Vadim 2026-09-30): pages, articles, outbound, posts. **Wording: "3DLOOK has worked with 100+ clients"**: all-time and across both products, so never "100+ clients use FitXpress", "today" or "already use" (2026-10-07: 14 outbound messages said "use FitXpress today"; `check-messages` fails it) |
 | Active customers in 2025 | 67 | Internal customer breakdown · **internal only, never public** (Vadim 2026-09-30: "100+ clients" everywhere) |
 | Total ARR 2025 | $1.084M | Internal |
 | Enterprise ARR | $822K | Internal |

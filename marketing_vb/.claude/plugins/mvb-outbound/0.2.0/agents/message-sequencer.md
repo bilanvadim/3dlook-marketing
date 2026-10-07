@@ -133,6 +133,20 @@ whoever runs X»). Без питча. Кампании, созданные до 
 10. **Message 2 не начинается одинаково.** «Following up.» у двадцати человек одной
    компании — это рассылка. Разведи первые фразы Message 2 сразу, при письме: гейт это
    считает, и править потом двадцать записей дороже, чем написать разные.
+11. **Примеры и правила карточки — инструкция тебе, не текст письма.** Пример easy out в
+   правилах кампании, заметка лейна («Short and neutral.»), правило-ограничение («The 3D
+   model is a view the club chooses to show») в письмо не переносятся ни дословно, ни
+   пересказом шаблона: своя формулировка и своя цель у каждого. 2026-10-07 пример easy out
+   из карточки ушёл примерно в 30 писем, правило про 3D-модель — в 24. Дословно в письмо
+   идут только compliance-строки и формулировки чисел из «Facts you may cite».
+12. **Две формулировки, которые ломались три раунда подряд (2026-10-07):**
+   - скорость — фраза `under 45 seconds from the photos to structured results` целиком, в
+     предложении, где больше нет «result(s)» и «output», а подлежащее — скан или его
+     результат: «It returns 80+ body measurements, under 45 seconds from the photos to
+     structured results.» Никогда «a client is done in under 45 seconds», «the capture
+     takes…», «processed in…»;
+   - 100+ — это все клиенты 3DLOOK за всё время, по обоим продуктам: только «3DLOOK has
+     worked with 100+ clients». Никогда «100+ clients use FitXpress (today)».
 
 ## `_summary-{batch}.md`
 

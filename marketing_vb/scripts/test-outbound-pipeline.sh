@@ -695,6 +695,14 @@ check "card for messages -> 0" 0 $OP card --campaign $P --for messages
 grep_check "referral_call: Message 1 without a question is caught" "no question in Message 1" \
   $OP check-messages --campaign $P
 grep_check "the card puts the question in M1 and the call in M2" "Message 2 is the call" cat "$CAMP/$P/card-messages.md"
+grep_check "the card says its sample sentences are not copy" "never copy: write your own wording" cat "$CAMP/$P/card-messages.md"
+# 2026-10-07: a privacy-FAQ link in Message 1 passed, only the calendar URL was looked for
+cp "$B" "$B.nolink"
+mutate "an FAQ link into Message 1" "$B" 'Your roadmap covers tracking\.' 'Your roadmap covers tracking. Details: https://3dlook.ai/content-hub/faq/'
+grep_check "referral_call: any link in Message 1 is caught" "link in Message 1" \
+  $OP split-messages --campaign $P --in messages/_batch-all.md
+mv "$B.nolink" "$B"
+$OP split-messages --campaign $P --in messages/_batch-all.md >/dev/null 2>&1
 mv "$CAMP/$P/hypothesis.md.bak" "$CAMP/$P/hypothesis.md"
 # «для всех»: a hypothesis created on/after 2026-10-07 gets the rule without the key
 cp "$CAMP/$P/hypothesis.md" "$CAMP/$P/hypothesis.md.bak"
@@ -706,6 +714,23 @@ mv "$CAMP/$P/hypothesis.md.bak" "$CAMP/$P/hypothesis.md"
 cp "$B" "$B.good"
 mutate "the number out of a pair" "$B" ' One platform ran 34,000 scans in 2025\.' ''
 check "a pair with no number, in a campaign that demands one -> 1" 1 $OP split-messages --campaign $P --in messages/_batch-all.md
+cp "$B.good" "$B"
+# 2026-10-07: "100+" is the all-time 3DLOOK count, not current FitXpress users
+mutate "100+ as current users" "$B" '(One platform ran 34,000 scans in 2025\.)' '\1 100+ clients use FitXpress today.'
+check "«100+ clients use FitXpress today» -> 1" 1 $OP split-messages --campaign $P --in messages/_batch-all.md
+grep_check "and the failure names the wording" "clients wording" \
+  $OP split-messages --campaign $P --in messages/_batch-all.md
+cp "$B.good" "$B"
+mutate "100+ in the approved wording" "$B" '(One platform ran 34,000 scans in 2025\.)' '\1 3DLOOK has worked with 100+ clients.'
+check "«3DLOOK has worked with 100+ clients» -> 0" 0 $OP split-messages --campaign $P --in messages/_batch-all.md
+cp "$B.good" "$B"
+# 2026-10-07: one product-sentence opening in 10 of 15 people at a network, endings varied
+# (anna, finn and cara are all Groupco; dan is at Gamma)
+mutate "one opening, anna" "$B" 'A scan between check-ins shows change early\.' 'A guided two-photo scan from home shows change early between check-ins.'
+mutate "one opening, finn" "$B" 'Members who see their waist change stay longer\.' 'A guided two-photo scan from home keeps the waist change visible to members.'
+mutate "one opening, cara" "$B" 'No pitch, only a pointer if you have one\.' 'A guided two-photo scan from home could sit in the finance case, or a pointer helps.'
+grep_check "one sentence opening at three people of a company is noted" "sentence opening repeated" \
+  $OP split-messages --campaign $P --in messages/_batch-all.md
 cp "$B.good" "$B"
 mutate "em dash into a message" "$B" 'Churn usually starts' 'Churn — as usual — starts'
 check "em dash -> 1" 1 $OP split-messages --campaign $P --in messages/_batch-all.md
