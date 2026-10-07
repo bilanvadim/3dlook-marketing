@@ -36,6 +36,7 @@ import re
 import sys
 from datetime import date
 from pathlib import Path
+from urllib.parse import unquote
 
 # --------------------------------------------------------------------------- paths
 
@@ -540,7 +541,9 @@ def cmd_check(args) -> int:
         sys.exit(f"✗ no such file: {src}")
 
     reg = load_json(profile_registry_path(profile), blank_profile_registry(profile))
-    mine = set(reg.get("excluded_people_urls", []))
+    # Decoded on both sides: Apollo rows carry percent-encoded slugs, Sales Nav rows plain
+    # ones, and the registries hold both forms (katya 14, vadim 2, katerina 2 on 2026-10-07).
+    mine = {unquote(u) for u in reg.get("excluded_people_urls", [])}
     # The profile's own burned companies. Until 2026-09-12 this list was written by
     # `record` and read by nobody: cmd_check only ever asked the GLOBAL registry whether
     # some OTHER profile covered the company, so "we already worked this company from this
@@ -555,7 +558,7 @@ def cmd_check(args) -> int:
     if getattr(args, "campaign", None):
         own_people, others_people, others_companies = set(), set(), set()
         for c in reg.get("campaigns", []):
-            urls = {person_url(x) for x in c.get("people", []) if person_url(x)}
+            urls = {unquote(person_url(x)) for x in c.get("people", []) if person_url(x)}
             comps = {norm_company(x) for x in c.get("companies", []) if x}
             if c.get("campaign_id") == args.campaign:
                 own_people |= urls
@@ -584,7 +587,7 @@ def cmd_check(args) -> int:
         url = person_url(row)
         comp = norm_company(pick(row, "company_name", "company", "organization"))
         flag, why = "", ""
-        if url and url in mine:
+        if url and unquote(url) in mine:
             flag, why = "EXCLUDE", f"already contacted from {profile}"
             hits["person_already_contacted"] += 1
         elif comp and gc.get(comp, {}).get("status") == "existing_customer_excluded":

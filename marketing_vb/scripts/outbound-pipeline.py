@@ -51,6 +51,7 @@ import importlib.util
 import re
 import sys
 from pathlib import Path
+from urllib.parse import unquote
 
 # --------------------------------------------------------------------- shared logic
 
@@ -665,11 +666,14 @@ def cmd_extract_people(args) -> int:
             purl = norm_linkedin(pick(r, "person_linkedin_url", "linkedin_url",
                                       "person linkedin url", "linkedin url",
                                       "profile_url", "profile url", "profileurl", "profile"))
-            if purl and purl in seen_urls:
+            # Apollo writes accented slugs percent-encoded (/in/r%c3%a9my-…), Sales Nav
+            # writes them plain: 4 people came through twice on 2026-10-07. Compare the
+            # decoded form; person_id stays as it was, so older campaigns keep their ids.
+            if purl and unquote(purl) in seen_urls:
                 dupes += 1
                 continue
             if purl:
-                seen_urls.add(purl)
+                seen_urls.add(unquote(purl))
 
             title = pick(r, "title", "job_title", "jobtitle", "position", "job title")
             people.append({

@@ -44,7 +44,7 @@ owner: Vadim
    > We've built a mobile body scanning layer that lets members capture consistent anthropometrics via smartphone (key circumferences / dimensions), producing structured, trackable metrics that drop into the patient record.
    - Non-clinical FX verticals (fitness, wellness): "patient record" becomes "member profile" or "progress tracking".
    - Mobile Tailor: reframe to fit/measurement dropping into the sizing / OMS workflow. **No** "patient record".
-5. **Soft CTA.** Short and simple: "Might be worth a quick chat?", "Worth a quick chat to explore?", "Open to a quick chat?"
+5. **A question, not a call ask.** End on one real question about their world, tied to the observation (e.g. "How do you track progress between check-ins today?"). No call offer and no link in Message 1: the call and the calendar link belong in Message 2. Vadim, 2026-10-07: «в первом сообщении вопрос а во втором звонок», for every campaign.
 6. **Signature.** First name only.
 
 ## Style phrases that fit
@@ -52,7 +52,6 @@ owner: Vadim
 - "Curious how you're thinking about…"
 - "We're seeing a lot of [X] struggle with…"
 - "Built [product] to solve exactly this. Fast and data-backed."
-- "Might be worth a quick chat?"
 - "Thought I'd share, in case helpful."
 - "No pressure, just figured this might be up your alley."
 
@@ -62,7 +61,7 @@ owner: Vadim
 ```
 Hi Lynn,
 Circling back after connecting - curious how you're approaching user motivation without physical progress data. We're seeing more health platforms struggle with retention as GLP-1 users expect visible results.
-At 3DLOOK we built FitXpress to give them that: precise body metrics and 3D progress tracking from the phone camera. Worth a quick chat to explore?
+At 3DLOOK we built FitXpress to give them that: precise body metrics and 3D progress tracking from the phone camera. How are you showing members progress between check-ins today?
 Best,
 Katerina
 ```
@@ -71,7 +70,7 @@ Katerina
 ```
 Hi Marissa,
 As CEO of 3DLOOK, I've noticed a big shift: users now expect real proof of progress, not only numbers. We built FitXpress to give them body data and visuals from just two photos.
-Could be a fit for MyFitnessPal. Open to a quick chat?
+Could be a fit for MyFitnessPal. How do your users see their progress today?
 Katerina
 ```
 

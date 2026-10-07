@@ -239,6 +239,22 @@ def calendar_link(profile: str) -> str:
     return m.group(1) if m else ""
 
 
+def referral_call(fm: dict) -> bool:
+    """Frontmatter `referral_call: yes`: referral people get context and a call offer too.
+
+    Vadim, 2026-10-07 (`2026-10-07-eu-weight-loss-nutrition`): no bare "who owns X?".
+    «в первом сообщении вопрос а во втором звонок»: Message 1 is context plus a question,
+    with no call ask and no link; Message 2 is the call offer with the calendar link, in
+    every lane. Vadim made it the default the same day («для всех»): a hypothesis created
+    on or after 2026-10-07 gets it without the key. Older campaigns keep the older rule
+    for referral people (a short ask, no pitch, link optional, no number) so a re-run of
+    the gate on a sent campaign does not repaint it; `referral_call: no` opts out."""
+    v = str(fm.get("referral_call", "")).strip().lower()
+    if v:
+        return v in ("yes", "true", "required")
+    return str(fm.get("created", "")).strip()[:10] >= "2026-10-07"
+
+
 def raw_index(cdir: Path) -> dict[str, dict]:
     """person_id -> raw Sales Navigator row, keys lower-cased."""
     out: dict[str, dict] = {}
@@ -828,8 +844,15 @@ def build_card(cdir: Path, stage: str) -> str:
                 "- Message 1 ≤ 600 characters, Message 2 ≤ 550 (the script counts)",
                 (f"- calendar link for Message 2, plain text: {link}" if link else
                  "- no calendar link for this profile: close Message 2 with a soft ask"),
-                "- referral-angle people: a short ask for the owner of the app roadmap,"
-                " no pitch, calendar link optional", ""]
+                ("- every lane, referral included: Message 1 is context (what the scan returns"
+                 " and why it matters for this company) and then a question, never a bare"
+                 " \"who owns X?\", with no call ask and no link. Message 2 is the call: a short"
+                 " call offer with the calendar link (for people who are not the buyer, with an"
+                 " easy out: or a pointer to whoever owns it). The gate checks the question,"
+                 " the product specific, the number and the link for referral people too"
+                 if referral_call(fm) else
+                 "- referral-angle people: a short ask for the owner of the app roadmap,"
+                 " no pitch, calendar link optional"), ""]
         if banned:
             out += ["## Never name (this campaign)", "",
                     ", ".join(f"`{b}`" for b in banned), ""]
@@ -870,7 +893,9 @@ def build_card(cdir: Path, stage: str) -> str:
         out += ["## Facts you may cite (proof-points.md, verbatim)", "",
                 "Numbers come from here and nowhere else. The campaign rules above decide",
                 "which of them may be used and how a client is referred to.", "",
-                "**The gate checks two things per person** (referral-angle people excepted):",
+                ("**The gate checks two things per person**, referral-angle people included:"
+                 if referral_call(fm) else
+                 "**The gate checks two things per person** (referral-angle people excepted):"),
                 "Message 1 carries a product specific (what the scan returns, from how many",
                 "photos, how fast), and the pair carries at least one number from this section",
                 "or one the campaign rules clear by name.", "",
@@ -1629,6 +1654,7 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
     demands_specific = bool(re.search(r"message 1 gate|product specific", hyp_text, re.I)) \
         or str(fm.get("message_gate", "")).lower() in ("specific", "number", "true", "yes")
 
+    ref_call = referral_call(fm)
     hard: list[tuple[str, str, str]] = []      # (code, person, detail)
     soft: list[tuple[str, str, str]] = []
     bodies: dict[tuple[str, int], str] = {}
@@ -1694,7 +1720,7 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
                 for v in r.get("house_rule_violations", []):
                     hard.append(("detector: house rule", tag, clip(str(v), 90)))
         angle = (p.get("recommended_message_angle") or "").lower()
-        if angle != "referral" and msgs.get(1) and msgs.get(2):
+        if (angle != "referral" or ref_call) and msgs.get(1) and msgs.get(2):
             m1 = re.sub(r"https?://\S+", "", msgs[1])
             pair = m1 + " " + re.sub(r"https?://\S+", "", msgs[2])
             sink = hard if demands_specific else soft
@@ -1705,8 +1731,19 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
                 sink.append(("no number", f"{pid}",
                              "neither message cites a number from the card's facts"))
         m2 = msgs.get(2, "")
+        m1 = msgs.get(1, "")
+        if ref_call and m1:
+            # «в первом сообщении вопрос а во втором звонок» (Vadim, 2026-10-07)
+            if "?" not in m1:
+                hard.append(("no question in Message 1", f"{pid} M1", "referral_call: M1 asks"))
+            if link and link in m1:
+                hard.append(("calendar link in Message 1", f"{pid} M1",
+                             "referral_call: the call and the link belong in Message 2"))
+            elif re.search(r"(?i)\b(call|calendar|book a|grab a slot|15 min)\b", m1):
+                soft.append(("call ask in Message 1?", f"{pid} M1",
+                             "referral_call: the call belongs in Message 2"))
         if link and m2 and link not in m2:
-            (soft if angle == "referral" else hard).append(
+            (soft if angle == "referral" and not ref_call else hard).append(
                 ("no calendar link", f"{pid} M2", f"angle {angle or '?'}"))
         # Six Superpower openers on 2026-09-29 never named Superpower or used one of its
         # card facts, and only QC caught it. The name is the cheap proxy; a fact without

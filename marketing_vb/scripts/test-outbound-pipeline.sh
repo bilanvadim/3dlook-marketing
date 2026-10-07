@@ -72,7 +72,10 @@ grep_check() {  # grep_check <description> <pattern> <command...>
   local desc="$1" pat="$2"; shift 2
   local out
   out=$("$@" 2>&1)
-  if printf '%s' "$out" | grep -qE "$pat"; then
+  # A here-string, not `printf | grep -q`: on a large output grep -q exits at the first
+  # match while printf is still writing, printf dies of SIGPIPE, and pipefail turns a
+  # match into a failure (a 2026-10-07 card check failed that way, at random).
+  if grep -qE "$pat" <<<"$out"; then
     printf '  ✓ %s\n' "$desc"; pass=$((pass+1))
   else
     printf '  ✗ %s — output did not match /%s/\n' "$desc" "$pat"; fail=$((fail+1))
@@ -684,6 +687,22 @@ msg cara-dahl Cara "Who owns body-progress features in the app? Happy to be poin
 check "a complete, clean batch -> 0" 0 $OP split-messages --campaign $P --in messages/_batch-all.md
 grep_check "referral without a calendar link is a note, not a failure" "no calendar link" \
   $OP check-messages --campaign $P
+# Vadim 2026-10-07: `referral_call: yes` turns the same pair into a failure (context, call, link)
+cp "$CAMP/$P/hypothesis.md" "$CAMP/$P/hypothesis.md.bak"
+mutate "referral_call into the frontmatter" "$CAMP/$P/hypothesis.md" '^profile:' 'referral_call: yes\nprofile:'
+check "referral_call: yes, referral without a link -> 1" 1 $OP check-messages --campaign $P
+check "card for messages -> 0" 0 $OP card --campaign $P --for messages
+grep_check "referral_call: Message 1 without a question is caught" "no question in Message 1" \
+  $OP check-messages --campaign $P
+grep_check "the card puts the question in M1 and the call in M2" "Message 2 is the call" cat "$CAMP/$P/card-messages.md"
+mv "$CAMP/$P/hypothesis.md.bak" "$CAMP/$P/hypothesis.md"
+# «для всех»: a hypothesis created on/after 2026-10-07 gets the rule without the key
+cp "$CAMP/$P/hypothesis.md" "$CAMP/$P/hypothesis.md.bak"
+mutate "a 2026-10-08 created date" "$CAMP/$P/hypothesis.md" '^profile:' 'created: 2026-10-08\nprofile:'
+check "created 2026-10-08, no key: referral without a link -> 1" 1 $OP check-messages --campaign $P
+mutate "referral_call: no opts out" "$CAMP/$P/hypothesis.md" '^profile:' 'referral_call: no\nprofile:'
+check "referral_call: no on a new campaign -> 0" 0 $OP check-messages --campaign $P
+mv "$CAMP/$P/hypothesis.md.bak" "$CAMP/$P/hypothesis.md"
 cp "$B" "$B.good"
 mutate "the number out of a pair" "$B" ' One platform ran 34,000 scans in 2025\.' ''
 check "a pair with no number, in a campaign that demands one -> 1" 1 $OP split-messages --campaign $P --in messages/_batch-all.md
@@ -895,6 +914,14 @@ names = sorted(r['full_name'] for r in rows)
 eve = [r for r in rows if r['full_name'] == 'Eve Stone']
 sys.exit(0 if names == ['Ann Smith', 'Bob Jones', 'Eve Stone'] and len(eve) == 1
          and 'SN headline' in eve[0]['profile_summary'] else 1)"
+check "extract-people: an encoded and a plain URL are one person" 0 python3 -c "
+import importlib.util, sys
+from urllib.parse import unquote
+s = importlib.util.spec_from_file_location('p', '$S/outbound-pipeline.py')
+m = importlib.util.module_from_spec(s); s.loader.exec_module(m)
+a = m.norm_linkedin('https://www.linkedin.com/in/r%C3%A9my-legrand-20507386/')
+b = m.norm_linkedin('https://linkedin.com/in/rémy-legrand-20507386')
+sys.exit(0 if unquote(a) == unquote(b) and m.unquote is unquote else 1)"
 # The oo transport, through a fake `oo` that forwards to the same stub. The real one would
 # reach Apollo through OOMOL; this proves the envelope parsing and the not-connected path.
 FAKE_BIN=$(mktemp -d)
@@ -949,6 +976,11 @@ grep_check "registry: --campaign lifts only its own record" "must be excluded +0
 grep_check "registry: --campaign of another campaign lifts nothing" "must be excluded +6" \
   python3 $S/outbound-registry.py check --profile nick --campaign 2026-09-29-us-obesity-medicine \
   --input "$RC_OUT/in.csv" --output $RC_OUT/c.csv
+# katya's registry holds this person percent-encoded; the same profile written plain
+# (Sales Nav) or encoded (Apollo) is one person (2026-10-07: 4 Apollo dupes got through)
+printf 'person_linkedin_url,full_name,company_name\nhttps://www.linkedin.com/in/\xe2\x80\xabarnon-cohen-253b4176,Arnon Cohen,Test Co\n' > "$RC_OUT/enc.csv"
+grep_check "registry: a decoded URL matches its encoded registry entry" "person_already_contacted +1" \
+  python3 $S/outbound-registry.py check --profile katya --input "$RC_OUT/enc.csv" --output $RC_OUT/d.csv
 
 echo "== existing tooling still green =="
 check "outbound-registry status" 0 python3 $S/outbound-registry.py status
