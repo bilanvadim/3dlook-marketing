@@ -1,0 +1,264 @@
+# Accurate at-home body measurements that give GLP-1 and weight management programs reliable progress data
+With FitXpress, track every patient's progress from home on data your clinicians and coaches can trust. From intake to every follow-up, see how waist size and body composition estimates change, even when the scale stalls.
+Book a demo
+Review the buyer checklist 
+→
+A 30-minute walkthrough on a phone, with a sample patient record.
+Patient record · check-ins at week 8 and week 12
+The scale moved 0.3 kg. The waist moved 3.4 cm, and the body-fat estimate fell 1 point.
+Field
+Week 8
+Week 12
+Entered weight
+97.4 kg
+97.1 kg
+Body-fat estimate
+39.6%
+38.6%
+Fat mass estimate
+38.6 kg
+37.5 kg
+Lean mass estimate
+58.8 kg
+59.6 kg
+Waist
+112.0 cm
+108.6 cm
+Illustrative patient. Pose, framing and clothing checks passed on 2 photos. What the patient and the care team see is configured by your program.
+2 photos
+taken at home on the patient's own phone
+Under 45 sec
+from the photos to structured results
+White-label
+inside your app, under your brand
+From $1,000
+a month, for up to 500 scans
+Value
+## Give patients measured progress and your team records it can rely on
+Patients in glucagon-like peptide-1 (GLP-1) and weight management programs see measured change at every check-in, and your team gets records it can check and report.
+### Change the scale can't show
+Body-fat percentage, fat mass and lean mass estimates appear next to weight at every check-in.
+### A baseline for every follow-up
+The intake scan sets the reference point, and every follow-up uses the same guided capture.
+### Misreported weight flagged for review
+Smart Scales compares the patient's entered weight with the scan estimate and flags a mismatch before the prescriber approves.
+### Follow-ups without the tape measure
+80+ body measurements arrive from the patient's phone, replacing tape and caliper checks at follow-up visits.
+### Records ready for outcomes reporting
+Every check-in adds a structured, timestamped record your team can report to payers and employers.
+### One record for clinicians and coaches
+Both review the same structured record before each consult, in place of a scale reading and a phone photo.
+Accuracy
+## Measurements consistent enough to track change between check-ins
+Repeat scans differ by less than 1 cm for most measurements, which keeps each check-in comparable with the last.
+< 1 cm
+difference between repeat scans for most measurements, with 95%+ consistency
+96-97%
+agreement with expert manual measurement, typical error 1.5-2.0 cm
+38-210 kg
+weight range covered by the validation population
+Conditions
+These figures hold with form-fitting clothing, guided capture completed, height entered within 2 cm and the same capture conditions between scans.
+Internal validation, not peer-reviewed. Detailed methodology is available under a non-disclosure agreement (NDA). Validation population: ages 16 to 78, weight 38 to 210 kg, participants from the US and Europe. Body composition values are estimates. Lean mass has not been validated against dual-energy X-ray absorptiometry (DXA) in a published study. Accuracy is not published by body shape or skin tone. Results depend on accurately entered height and weight.
+How to evaluate mobile body scanning accuracy 
+→
+Why 3DLOOK
+## A body data partner your clinical and product teams can rely on
+Weight management programs already use FitXpress in production for recurring remote check-ins.
+### Since 2016
+Building mobile body scanning.
+### 100+ clients
+Across health, fitness, insurance and apparel.
+### 99.5% uptime
+The uptime commitment in the agreement, with service credits.
+### 2 days
+The fastest integration to date, depending on your team's availability.
+### Guided capture
+Real-Time Pose Validation (RTPV) and the Clothing Detector correct pose, framing and clothing during the scan, reducing retakes with no manual review on your side.
+### Under your brand
+White-label by default. Patients scan and see results inside your app, with no second app to install.
+### Built on 9+ years of body data
+150,000+ photographs and 30,000+ 3D scans train the measurement models.
+### One record format
+Every scan returns the same structured fields, which keeps records comparable across patients and across your caseload.
+### Implementation support
+Guided implementation support comes with every plan.
+How it works
+## A two-photo check-in inside your patient flow
+FitXpress runs inside your app through native software development kits (SDKs), a React Native kit or web components.
+01
+### Set the baseline at intake
+The first scan uses the same guided process as every later check-in. Consent stays in your intake: the consent screen is yours, in your wording, before the camera opens.
+02
+### Scan at each scheduled check-in
+The patient takes two photos at home on the schedule your protocol sets. Guided capture resolves pose, framing and clothing during the shot.
+03
+### Review the change
+Body progress compares the scans your program selects. The patient sees the comparison in your app, and the clinician or coach reviews the same record.
+Recommended setup: a baseline scan at intake and scans at fixed check-ins, under the same capture conditions.
+Guided capture in detail 
+→
+The patient record
+## What each scan returns to your platform
+FitXpress returns one timestamped record per scan through its application programming interface (API), keyed to the identifier your program supplies.
+Field
+Returned output
+Inputs
+Two smartphone photos, front and side. Height and gender entered by the patient. Weight entered for body composition estimates
+Body measurements
+80+ body measurements, including waist, hip, chest, thigh and calf
+Body composition estimates
+Body-fat percentage, fat mass and 
+lean mass
+Calculated metrics
+BMI and 
+basal metabolic rate (BMR)
+3D body model
+A 3D body model for each scan
+Body progress
+Comparison of measurements, composition estimates and 3D models between two selected scans
+Weight check
+The patient's entered weight compared with the scan's weight estimate, with a mismatch flag for review
+3D Goal Visualization (Pro)
+A 3D view of the patient at their target weight
+Quality and status
+Pose validation, clothing classification and a timestamp
+FitXpress is not a medical device. It supports remote progress tracking and clinician review; treatment decisions remain with the care team.
+Get a sample payload 
+→
+Data handling
+## How patient body data is handled
+In most deployments, your program is the data controller and 3DLOOK processes data on your behalf.
+### Photos
+Deleted immediately after processing or within 30 days, depending on your configuration. Faces are obfuscated at capture, and any stored photo is auto-blurred.
+### Identifiers
+No personal identifiers are processed. Scans link to the identifier your program supplies, and 3DLOOK can't identify an individual from stored records.
+### Encryption and region
+Transport Layer Security (TLS) in transit. Amazon Simple Storage Service (Amazon S3) server-side encryption at rest, always on. Data is hosted on Amazon Web Services (AWS) in the US. No European region is available today.
+### HIPAA
+Pending confirmation
+For deployments governed by the Health Insurance Portability and Accountability Act (HIPAA), 3DLOOK acts as a business associate under an executed business associate agreement (BAA).
+### GDPR
+3DLOOK acts as processor under the General Data Protection Regulation (GDPR). A data processing agreement (DPA) with Standard Contractual Clauses (SCCs) covers international transfers, with a UK Addendum where UK GDPR applies.
+### Model training
+Production patient data isn't used to train the models without your explicit, documented authorization.
+### Retention and deletion
+Measurement and composition records are kept until your agreement says otherwise. Deletion runs by scan ID on request. Self-serve deletion isn't available today.
+Privacy contact: 
+privacy@3dlook.me. Procurement and security documentation: 
+legal@3dlook.me. Storage, retention and regulatory detail are in the 
+Data, Privacy, Security & Regulatory FAQ.
+Compare
+## How FitXpress compares with other ways to track progress between visits
+FitXpress is the only method here that returns body measurements and composition estimates from home with no device to ship.
+Dimension
+Self-reported weight
+Connected scale
+Progress photos
+Tape and calipers
+Clinic bioelectrical impedance analysis (BIA)
+DXA
+FitXpress
+Where it happens
+Home
+Home
+Home
+Clinic visit
+Clinic visit
+Imaging center, by appointment
+Home
+What it returns
+One number, entered by the patient
+Weight and a composition estimate that shifts with hydration and timing
+Unstructured images
+A few circumferences that vary with who measures
+Structured composition estimates, device-dependent
+Detailed fat, lean and bone estimates
+80+ body measurements, composition estimates, a weight check, a 3D model and scan-to-scan comparison
+Hardware
+The patient's own scale
+A scale per patient
+A phone
+Tape, calipers and staff time
+Clinic equipment
+An external imaging provider
+The patient's phone
+Role in a weight management program
+Frequent weigh-ins
+Frequent weigh-ins
+A visual record that is hard to compare
+Occasional in-clinic check
+Milestone visits
+Periodic detailed assessment
+Intake and every follow-up between visits
+Programs that use DXA or clinic BIA at milestone visits keep them in place. FitXpress covers the check-ins between those visits.
+7 body composition tools for remote GLP-1 clinics, compared 
+→
+Pricing
+## Start with a pilot, then scale on a fixed monthly plan
+A time-boxed pilot on one patient cohort shows how FitXpress performs in your check-in flow before you commit volume.
+01
+### Capture completion rate
+The share of patients who finish a scan at each check-in.
+02
+### Record consistency
+How closely records line up across check-ins.
+03
+### Clinician review time
+The time your care team spends on each record.
+Plan
+Price
+Scans
+Includes
+Starter
+$1,000 a month
+Up to 500
+80+ body measurements, body composition estimates, BMI and BMR, predicted weight, API access, web and mobile kits, guided implementation support
+Pro
+$1,500 a month
+Up to 1,000
+Everything in Starter, along with 3D body progress tracking and 3D Goal Visualization
+Custom
+Talk to sales
+1,000+
+Flexible scan volumes, a multilingual guided capture flow, dedicated customer support and annual plan discounts
+Book a demo
+See full pricing 
+→
+FAQ
+## Questions GLP-1 and weight management teams ask
+Will a scan step slow down check-ins?
+Capture takes two guided photos, and processing takes under 45 seconds. Real-Time Pose Validation corrects framing during the shot, which reduces retakes. The scan runs inside a flow your program already has.
+Does FitXpress replace DXA or clinic body composition checks?
+No. DXA and clinic BIA remain the reference methods at milestone visits where your protocol requires them. FitXpress covers remote intake and the check-ins between visits.
+Does FitXpress measure muscle loss?
+No. Lean mass is an estimate of body mass excluding fat, and it includes organs, bone and water along with muscle. FitXpress reports fat mass and lean mass estimates next to weight for the care team to review.
+Can FitXpress confirm BMI eligibility for a prescription?
+Eligibility decisions stay with the prescriber. For BMI checks inside the order flow, see 
+FitXpress for BMI verification.
+Does it work for patients with higher body weight?
+The validation population covers 38 to 210 kg. The patient must stand throughout the scan, and the current dataset doesn't support wheelchair users or amputees. Two gender options are available. Accuracy is not published by body shape.
+How often should patients scan?
+Your protocol sets the schedule. Most programs scan at intake and at fixed check-ins. FitXpress is built to show meaningful change over weeks, and very small day-to-day changes fall within scan-to-scan variation.
+What does the patient see, and what does the care team see?
+Your program decides. Results can appear in the patient's app, stay with the care team, or both. The Admin Panel gives your team a central view of scan results.
+Is FitXpress cleared by the FDA?
+FitXpress has not been cleared, authorized or approved by the US Food and Drug Administration (FDA). An independent regulatory assessment found it falls outside the UK and EU medical-device definitions for its current intended purpose. Whether your complete workflow needs FDA review depends on how your program uses the outputs.
+Do you sign a business associate agreement?
+A BAA is available during contracting for qualifying enterprise deployments. Whether HIPAA applies depends on your program's status and whether protected health information is involved.
+Is 3DLOOK SOC 2 certified?
+Not yet. 3DLOOK has completed an initial readiness assessment against the System and Organization Controls (SOC) 2 Trust Services Criteria and is working toward an attestation report. Security documentation, including a penetration-test summary, is available under NDA.
+How do results reach our systems, and what are the known gaps?
+Results arrive through webhook events in JavaScript Object Notation (JSON), with comma-separated values (CSV) and 3D model export. Webhooks have no automatic retries or signature verification today, and polling is the documented backup. Evaluation runs through a demo and a trial account, and there is no separate sandbox.
+Book a demo
+## See FitXpress in your patient check-in flow
+A 30-minute demo covers capture on a phone, the record your platform receives and the integration against your roadmap.
+Book a demo
+The live page embeds the shared demo form: name, work email, company, program type and approximate active patients.
+Not ready to talk? Start here:
+Review the buyer checklist 
+→
+How to evaluate mobile body scanning accuracy 
+→
+GLP-1 market growth and patient progress tracking 
+→
