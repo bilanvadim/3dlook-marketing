@@ -1,0 +1,86 @@
+{
+ "generated": "2026-10-07T05:40:21+00:00",
+ "items": [
+  {
+   "id": "e83dcc1d-a2d3-41fe-81e5-094a005f3f56",
+   "title": "Nolla Health Launches Utah Pilot for AI-Powered Acne Prescriptions",
+   "date": "2026-10-06",
+   "tags": [
+    "Startup",
+    "Skin Health",
+    "Digital Medicine",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/nolla-health-launches-utah-pilot-for-ai-powered-acne-prescriptions"
+  },
+  {
+   "id": "e0c1b612-cbac-4ad5-9395-23af757a845f",
+   "title": "Datavant and ID.me Partner to Streamline Secure Access to Medical Records",
+   "date": "2026-10-06",
+   "tags": [
+    "Cyber Security",
+    "Interoperability / Data Management",
+    "Patient Engagement / Experience",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/datavant-and-id-me-partner-to-streamline-secure-access-to-medical-records"
+  },
+  {
+   "id": "ccae431c-4d8d-4ac5-8e0b-71a70ab21df2",
+   "title": "Heidi Launches Autonomous Clinical Agents to Automate 10M Weekly Tasks",
+   "date": "2026-10-06",
+   "tags": [
+    "Interoperability / Data Management",
+    "Operational Efficiency",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/heidi-launches-autonomous-clinical-agents-to-automate-10m-weekly-tasks"
+  }
+ ],
+ "analyses": {
+  "e83dcc1d-a2d3-41fe-81e5-094a005f3f56": {
+   "id": "e83dcc1d-a2d3-41fe-81e5-094a005f3f56",
+   "score": 1,
+   "segment": "—",
+   "what": "Nolla Health запустила в Юті пілот, у якому AI видає перші рецепти на топічні засоби від акне (через Nolla Derm app, $4.99/міс) після анкети й скану обличчя; лікарі контролюють процес, прогрес відстежують щоденними сканами шкіри.",
+   "why": "Це дерматологія і скан шкіри, а не вимірювання тіла, тож прямого акаунта чи плею немає. Як тренд (скан у смартфоні як частина intake для AI-призначення плюс повторні скани для відстеження прогресу) можна використати хіба що як ідею для контенту.",
+   "play": "content_only",
+   "companies": [
+    "Nolla Health"
+   ],
+   "_date": "2026-10-06"
+  },
+  "e0c1b612-cbac-4ad5-9395-23af757a845f": {
+   "id": "e0c1b612-cbac-4ad5-9395-23af757a845f",
+   "score": 0,
+   "segment": "—",
+   "what": "Datavant вбудувала цифрову верифікацію особи від ID.me у свій Patient Request Tool, щоб пацієнти швидше й безпечніше отримували медичні записи.",
+   "why": "Тут ідеться про верифікацію особи для доступу до медкарт, дані тіла в цьому не задіяні, тож для 3DLOOK це нерелевантно.",
+   "play": "none",
+   "companies": [
+    "Datavant",
+    "ID.me"
+   ],
+   "_date": "2026-10-06"
+  },
+  "ccae431c-4d8d-4ac5-8e0b-71a70ab21df2": {
+   "id": "ccae431c-4d8d-4ac5-8e0b-71a70ab21df2",
+   "score": 0,
+   "segment": "—",
+   "what": "Heidi запустила Heidi II: від ambient-документації перейшла до автономних AI-агентів, які виконують адміністративні задачі після візиту (направлення, скринінги, аналізи). Агентні функції поки не доступні у UK та EU.",
+   "why": "Це AI для клінічної документації та операційної роботи лікарів, без зв’язку з вимірюваннями тіла чи сегментами ICP.",
+   "play": "none",
+   "companies": [
+    "Heidi",
+    "The New England Journal of Medicine",
+    "Wiley",
+    "Cochrane",
+    "BMJ Group"
+   ],
+   "_date": "2026-10-06"
+  }
+ },
+ "posts": []
+}
