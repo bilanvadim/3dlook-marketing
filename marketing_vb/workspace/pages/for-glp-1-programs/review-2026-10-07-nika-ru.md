@@ -19,9 +19,9 @@ benchmark: workspace/pages/for-connected-and-digital-fitness/page-final-2026-10-
 - **Новый блок проблемы** после карточек ценности: «What does a GLP-1 program miss when it tracks only
   weight?», три цифры из первоисточников (64,8% бросают терапию за год, ~25% потерянного веса — lean mass,
   34% работодателей ставят условия покрытия) и вывод для программы. Почему именно эти цифры — ниже.
-- **H1** «FitXpress for GLP-1 programs: body composition tracking at every remote check-in» (продукт +
-  аудитория + главный ключ из карты). Title «Body Composition Tracking for GLP-1 Programs | FitXpress».
-  URL по карте лендингов: `/fitxpress/for-glp-1-programs/`. H1 и URL ещё подтверждаем.
+- **H1** «FitXpress for GLP-1 programs: body composition tracking between clinic visits» (продукт +
+  аудитория + главный ключ из карты, а «between clinic visits» называет пробел из блока проблемы). Title «Body Composition Tracking for GLP-1 Programs | FitXpress».
+  URL по карте лендингов: `/fitxpress/for-glp-1-programs/`. H1 и URL подтверждены 07.10.
 - **Порядок как в фитнес-финале:** hero → логотипы → ценность → проблема → запись скана → как работает →
   сравнение → точность и данные → пилот и цены → FAQ → форма. Блок «Why 3DLOOK» разложен по местам.
 - **Логотипы:** Yazen, UK Meds, Healthyr первыми, подпись «100+ clients have used 3DLOOK body scanning since
@@ -221,4 +221,6 @@ back.
 
 - Ника: откуда снова 95%+, 99.5%, «2 days», React Native, вебхуки и условия точности? Если есть
   подтверждение продукта, сначала вносим в tech-spec и proof-points, потом на страницу.
-- Открыто: URL (`for-glp-1-programs` по карте или `for-glp-1-weight-management`) и H1.
+- Решено 07.10: URL `/fitxpress/for-glp-1-programs/` (один интент на один URL: «weight loss» держит
+  telehealth-лендинг), H1 «FitXpress for GLP-1 programs: body composition tracking between clinic visits».
+  Удержание в H1 не ставим: внутренней цифры нет, а пациенты бросают терапию в основном из-за цены.
