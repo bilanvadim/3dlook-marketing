@@ -11,6 +11,39 @@ benchmark: workspace/pages/for-connected-and-digital-fitness/page-final-2026-10-
 
 # GLP-1 лендинг: инпуты по версии от 07.10
 
+Ника, посмотрели страницу. Ниже разбор, а в приложенном HTML (`page-v2-2026-10-07.html`) эти правки уже
+применены на шаблоне утверждённого фитнес-финала, чтобы было видно, как это выглядит целиком.
+
+## Что в HTML (v2)
+
+- **Новый блок проблемы** после карточек ценности: «What does a GLP-1 program miss when it tracks only
+  weight?», три цифры из первоисточников (64,8% бросают терапию за год, ~25% потерянного веса — lean mass,
+  34% работодателей ставят условия покрытия) и вывод для программы. Почему именно эти цифры — ниже.
+- **H1** «FitXpress for GLP-1 programs: body composition tracking at every remote check-in» (продукт +
+  аудитория + главный ключ из карты). Title «Body Composition Tracking for GLP-1 Programs | FitXpress».
+  URL по карте лендингов: `/fitxpress/for-glp-1-programs/`. H1 и URL ещё подтверждаем.
+- **Порядок как в фитнес-финале:** hero → логотипы → ценность → проблема → запись скана → как работает →
+  сравнение → точность и данные → пилот и цены → FAQ → форма. Блок «Why 3DLOOK» разложен по местам.
+- **Логотипы:** Yazen, UK Meds, Healthyr первыми, подпись «100+ clients have used 3DLOOK body scanning since
+  2016, including weight management programs.» Остальные логотипы даст дизайн.
+- **Ценность:** 4 карточки. **Запись скана:** 4 строки с колонкой «What it changes for the program»
+  (predicted weight вместо Smart Scales с «before the prescriber approves»; Pro-функции в ценах).
+- **Сравнение:** 4 варианта (FitXpress, self-reported weight, connected scale, clinic BIA или DXA), на
+  мобильном карточки.
+- **Точность и данные на одном экране:** < 1 cm и 96-97%, одно предложение о методе; 6 строк данных
+  (Photos, Identifiers, HIPAA, GDPR, Encryption, Model training) дословно из канона, ссылка на trust FAQ и
+  privacy@3dlook.me.
+- **Пилот:** сравнительная когорта, рандомизация где возможно, шаг «Evaluate and roll out»; к твоим трём
+  метрикам добавлено удержание в программе против сравнительной когорты. Тарифы как на /pricing/ (Custom
+  там называется Personalized).
+- **FAQ: 5.** GEO-вопрос из карты ключей («How can a GLP-1 weight-loss clinic track patient body composition
+  remotely?»), мышцы, DXA, BMI-eligibility, доставка результатов со ссылкой на API-документацию. FDA, BAA,
+  SOC 2 закрывает ссылка на trust FAQ.
+- **Техника:** шрифт Satoshi и токены DESIGN.md, общая форма `FX | LP | Demo`, мёртвые ссылки заменены,
+  FAQ в JSON-LD совпадает с текстом. ~1 620 видимых слов (было ~2 150), «you/your» 0, детектор без жёстких
+  нарушений. Hero влезает в 1280×800; на 375 px кнопка hero ниже первого экрана, «Book a demo» есть в шапке.
+- Слепым судьёй не прогоняли: это ответ на твой запрос, а не сборка к публикации.
+
 ## Главное: проблемы на странице сейчас нет совсем
 
 Порядок сейчас такой: hero → ценность → точность → «Why 3DLOOK» → как работает → запись скана → данные →
@@ -54,15 +87,14 @@ benchmark: workspace/pages/for-connected-and-digital-fitness/page-final-2026-10-
 - **«43% of employers cover GLP-1s»** (это только компании с 5 000+ сотрудников) и **«1 in 12 stay on
   treatment»** (данные 2021 года, сейчас удержание выше) как текущие цифры.
 
-### Предлагаемый блок (EN, готов к вставке после карточек ценности)
+### Блок проблемы (EN, так он стоит в HTML)
 
 **Eyebrow:** The problem
 
 ## What does a GLP-1 program miss when it tracks only weight?
 
-Most patients stop GLP-1 treatment within a year, and many employers that cover it for weight loss make a
-program around the drug a condition of coverage. A weight entered at home shows how much a patient lost.
-It does not show how much of that loss was fat and how much was lean mass.
+Most patients stop GLP-1 treatment within a year. While they stay, a weight entered at home shows how much
+a patient lost, but not how much of that loss was fat and how much was lean mass.
 
 | 64.8% | About 25% | 34% |
 |---|---|---|
@@ -74,7 +106,6 @@ or DXA visits, a remote program that tracks only weight has one number per check
 program paid per active patient, each patient who stops in the first year is revenue it does not earn
 back.
 
-GLP-1 programs and patient progress, in depth: [GLP-1 market →](/content-hub/glp-1-market/)
 
 *Почему так:* вопросный H2 (правило регистра), первое предложение — ответ, каждая цифра с выводом для
 покупателя, подпись источника в формате «Publisher, study name» со ссылкой на первоисточник, последнее
@@ -110,14 +141,14 @@ GLP-1 programs and patient progress, in depth: [GLP-1 market →](/content-hub/g
    DPA живут в trust FAQ.
 4. **Сравнение: 7 колонок → 4-5.** Self-reported weight, connected scale, clinic BIA или DXA, FitXpress.
    Tape and calipers и progress photos можно слить или убрать. На мобильном таблица становится карточками.
-5. **FAQ: 11 → 6.** Оставить: «Does FitXpress measure muscle loss?» (честный ответ, мостик к статье о
-   потере мышц, это GEO-вопрос из карты ключей), «Does FitXpress replace DXA or clinic body composition
-   checks?», «Can FitXpress confirm BMI eligibility for a prescription?» (хорошо: отправляет на страницу BMI
-   verification, один интент на один URL), «How often should patients scan?», «Will a scan step slow down
-   check-ins?» и одну интеграционную со ссылкой на API-документацию. FDA, BAA и SOC 2 закрывает ссылка на
-   trust FAQ.
-6. **Карточки ценности: 6 → 4.** «A baseline for every follow-up» и «One record for clinicians and coaches»
-   повторяют запись скана и шаги.
+5. **FAQ: 11 → 4-6** (в HTML 5). Оставить: «Does FitXpress measure muscle loss?» (честный ответ, мостик к
+   статье о потере мышц), «Does FitXpress replace DXA or clinic body composition checks?», «Can FitXpress
+   confirm BMI eligibility for a prescription?» (хорошо: отправляет на страницу BMI verification, один интент
+   на один URL) и одну интеграционную со ссылкой на API-документацию. Добавить GEO-вопрос из карты ключей:
+   «How can a GLP-1 weight-loss clinic track patient body composition remotely?». FDA, BAA и SOC 2 закрывает
+   ссылка на trust FAQ.
+6. **Карточки ценности: 6 → 4.** «A baseline for every follow-up» повторяет шаги, Smart Scales уходит в
+   запись скана как predicted weight.
 
 ## Факты: жёсткие запреты и то, чему нет источника
 
@@ -190,4 +221,4 @@ GLP-1 programs and patient progress, in depth: [GLP-1 market →](/content-hub/g
 
 - Ника: откуда снова 95%+, 99.5%, «2 days», React Native, вебхуки и условия точности? Если есть
   подтверждение продукта, сначала вносим в tech-spec и proof-points, потом на страницу.
-- Вадим: URL (`for-glp-1-programs` по карте или `for-glp-1-weight-management`) и H1.
+- Открыто: URL (`for-glp-1-programs` по карте или `for-glp-1-weight-management`) и H1.
