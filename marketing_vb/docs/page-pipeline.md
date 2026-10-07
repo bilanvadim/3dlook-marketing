@@ -29,7 +29,7 @@ settled. G-T blocks publishing on technical grounds. G-J is a **blind judge in a
 is forbidden. `quality-controller` does not substitute for G-J — it is neither blind nor page-shaped.
 
 **Short and commercial (Vadim, 2026-09-30).** Use-case landings convert and the articles teach:
-1,100-1,300 words of visible copy, 4-6 FAQ, one paragraph then a link for anything deeper, a call to
+1,100-1,600 words of visible copy (1,300 until the fitness final of 2026-10-07), 4-6 FAQ, one paragraph then a link for anything deeper, a call to
 action on every second screen, "no integration fee" in the price line. Page order and word budget: the
 Kit's "Length and order" section. Length and register benchmark (since 2026-10-02):
 `workspace/pages/for-insurance-underwriting/page-final-2026-10-02.md`, the copy passed to design after
@@ -50,6 +50,19 @@ rebalanced and now sums to 100; it summed to 105 before), and `detect-ai-tells.p
 reports an H1 without the product name. Guardrail hedges, the method sentence and the boundary sentence
 are claims discipline, not filler, and always win over "cut qualifiers". The insurance final page stays
 the register benchmark only: its H1, block order and record table predate these rules.
+
+**Fitness final = structure benchmark (Vadim, 2026-10-07: "the latest and the most correct").**
+`workspace/pages/for-connected-and-digital-fitness/page-final-2026-10-07.{md,html}`, v3 merged with the
+team's fixes and the fitness client logos. What it settled is in the Kit's "Fitness final" section: the
+value cards for the end user come right after the hero, before the problem; a second approved H1 form,
+the mobile alternative to the method the buyer knows, with the product named in the lede (the detector's
+H1 check accepts the lede's first two sentences since then); capture claims at the confirmed level until
+product confirms more (Real-Time Pose Validation "gives pose and framing guidance"; the record lists
+"Processing status and timestamps"); the platform, not FitXpress, links each scan ID to its user; the
+white-label boundary (the capture layer stays fixed); five data lines including encryption, then the
+privacy contact; one line per price tier and "Custom plans cover higher volumes."; a pilot against a
+comparison cohort, randomised where practical, with an evaluate step before rollout; "See a sample record
+in the demo"; the comparison as cards on mobile; the vertical's own client logos first in the logo row.
 
 **The schema benchmark:** `/structured-body-data-for-telehealth-digital-health-programs/` (July 2026)
 still sets the standard for FAQPage and Service schema (`audienceType` + `areaServed`), claims

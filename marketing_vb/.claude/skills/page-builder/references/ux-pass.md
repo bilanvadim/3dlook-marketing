@@ -116,6 +116,8 @@ question, not a polish item.
 - [ ] Body text at least 16px on mobile
 - [ ] No horizontal scroll at 320px
 - [ ] Comparison tables, accuracy tables and diagrams scroll inside their own container, not the page
+- [ ] A comparison with four or more columns becomes one card per option under 960 px (table hidden, the
+      FitXpress card first and highlighted), as on the fitness final (2026-10-07); the copy counts once
 - [ ] Section rhythm from the spacing scale; no invented gaps
 - [ ] A defined z-index scale rather than ad-hoc numbers
 

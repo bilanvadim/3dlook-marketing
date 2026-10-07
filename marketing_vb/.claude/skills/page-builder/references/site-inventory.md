@@ -28,7 +28,7 @@ not mix them when checking cannibalisation — check both.
 | `/mobile-tailor/for-made-to-measure/` | MT | Use-case page | child of MT |
 | `/mobile-tailor/for-on-demand-manufacturing/` | MT | Use-case page | child of MT |
 | `/mobile-tailor/for-uniforms/` | MT | Use-case page | child of MT |
-| `/fitxpress/for-connected-and-digital-fitness/` | FX | Use-case page | already on the target pattern; breadcrumb fix only |
+| `/fitxpress/for-connected-and-digital-fitness/` | FX | Use-case page | already on the target pattern; final copy approved 2026-10-07 (`workspace/pages/for-connected-and-digital-fitness/page-final-2026-10-07.html`), in design; breadcrumb fix |
 | `/for-bmi-verification/` | FX | Use-case page | at root; moves to `/fitxpress/for-online-pharmacies/` (301) when rebuilt |
 | `/structured-body-data-for-telehealth-digital-health-programs/` | FX | Use-case page | at root; moves under `/fitxpress/for-…/` (301) only when rebuilt; best-built page on the site — finding 6 |
 | `/pricing/` | both | Public pricing, FX and MT tabs | live figures |

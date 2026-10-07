@@ -156,7 +156,7 @@ Threshold **85 / 100**. Below it, return to the axis that lost points. Do not av
 |---|---|---|
 | Proof of belonging to the vertical | 15 | context facts, regulators, 2+ vertical cases, integration and formats, quote. On a FitXpress page the standing waiver's substitutes score here: the vertical's own workflow and systems, anonymised `proof-points.md` figures, the accuracy framework and the trust FAQ |
 | Claims discipline | 15 | every figure traced and identical everywhere, accuracy figures carried with their reference and limit plus a link to the accuracy framework, each third-party statistic linked to its primary source on the label, reserved words absent, medical framing correct, M1 acronyms (SDK, API, NDA, BAA, SOC 2 and FDA included), M2 negation |
-| Sales argument | 15 | the kit's "Sell, not educate" rules (2026-10-06): H1 = product + audience + primary outcome; value before mechanics ("What you get" before "How it works"); a conclusion stated after every number, table and comparison; a benefit beside every feature; one job per block; proof backing a claim, never standing in for it; no paragraph that could move to the hub article without weakening the case (the blog test); visible copy within 1,100-1,300 words |
+| Sales argument | 15 | the kit's "Sell, not educate" rules (2026-10-06): H1 = product + audience + primary outcome, or the approved mobile-alternative form with the product in the lede (2026-10-07); value before mechanics ("What you get" before "How it works"); a conclusion stated after every number, table and comparison; a benefit beside every feature; one job per block; proof backing a claim, never standing in for it; no paragraph that could move to the hub article without weakening the case (the blog test); visible copy within 1,100-1,600 words |
 | Uniqueness against the parent | 10 | 60% rule, different Yoast title and description, no cannibalisation of the hub article |
 | Conversion | 10 | one action, soft alternative, short form, price signal, events working, a call to action on every second screen |
 | Copy in the buyer's language | 10 | vertical vocabulary, verbatim pains, the segment's "what NOT to say" honoured, the vertical's actor named (the pharmacy, the clinic, the employer), not a generic "organization" (terminology guardrail §2.14); enterprise register: "you / your" at most 12.5 per 1,000 words, a named subject in every sentence, no figurative or conversational headings (kit, "Register for an enterprise reader") |
@@ -174,7 +174,7 @@ this date were scored out of 105.
 **Short pages are the standard (Vadim, 2026-09-30).** Do not deduct for depth that sits in a linked
 article: a page that sends the four accuracy conditions, the full compliance answers or the vertical's
 process to an article by link has done its job. Deduct on Sales argument when the visible copy runs past
-1,400 words.
+1,700 words (1,400 until 2026-10-07; the fitness final runs about 1,560).
 
 **The sales rules never outrank claims discipline.** A guardrail hedge ("may reduce" on an outcome
 without an internal figure), the method sentence beside the accuracy figures and the boundary sentence

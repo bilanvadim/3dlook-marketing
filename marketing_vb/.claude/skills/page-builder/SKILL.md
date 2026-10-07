@@ -155,8 +155,8 @@ deleted, not softened.
 
 **2b. Sales pass — after the draft, before humanisation (Vadim, 2026-10-06).** A landing sells; the
 article teaches. Run the ten rules in `kit-vertical-page.md`, "Sell, not educate", block by block:
-H1 = product + audience + primary outcome, value before mechanics, a conclusion after every number and
-table, a benefit beside every feature, one job per block, proof behind the claim, and the blog test on
+H1 = product + audience + primary outcome (or the approved mobile-alternative form, 2026-10-07), value
+before mechanics, a conclusion after every number and table, a benefit beside every feature, one job per block, proof behind the claim, and the blog test on
 every paragraph (if it could move to the hub article without weakening the case, cut it). This pass
 cuts and moves content, so it runs before humanisation polishes what is left. Guardrail hedges, the
 method sentence and the boundary sentence are not filler and stay.
@@ -277,7 +277,8 @@ attributed to the page, scroll depth.
   link to the accuracy framework, which carries the reframe to "accurate enough for which decision?"
   and the four conditions (reference method, protocol, population, workflow). Never lead with "most
   accurate" or "best-in-class" — that is an anti-positioning violation and an automatic hard fail.
-- **Use-case landings are short (Vadim, 2026-09-30).** 1,100-1,300 words of visible copy, 4-6 FAQ,
+- **Use-case landings are short (Vadim, 2026-09-30).** 1,100-1,600 words of visible copy (ceiling raised
+  from 1,300 on 2026-10-07), 4-6 FAQ,
   depth in the linked articles. Order and budget: `kit-vertical-page.md`, "Length and order".
 - **Sell, not educate (Vadim, 2026-10-06).** Use-case landings exist to close leads. H1 = product +
   audience + primary outcome; what the actor gets comes before how it works; every feature carries its
@@ -289,6 +290,13 @@ attributed to the page, scroll depth.
   repeats the body. Benchmark: `workspace/pages/for-insurance-underwriting/page-final-2026-10-02.md`
   (register only: it predates the sales rules); rules in `kit-vertical-page.md`, "Register for an
   enterprise reader".
+- **Fitness final = structure benchmark (Vadim, 2026-10-07).**
+  `workspace/pages/for-connected-and-digital-fitness/page-final-2026-10-07.{md,html}`: value cards for
+  the end user before the problem, capture claims at the confirmed level (RTPV "gives pose and framing
+  guidance"; the record lists "Processing status and timestamps"), the platform links scan IDs, the
+  white-label boundary, five data lines and the privacy contact, one line per price tier, a comparison
+  cohort with an evaluate step, "See a sample record in the demo". Rules in `kit-vertical-page.md`,
+  "Fitness final".
 - **Medical framing is fixed language.** "FitXpress is not a medical device." State the boundary
   directly; "positioned as" is banned for product, intended-use and regulatory statements
   (`terminology-guardrails.md` §2.10). Never assert that a regulatory framework "does not apply".

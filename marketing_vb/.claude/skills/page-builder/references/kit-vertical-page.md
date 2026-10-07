@@ -47,7 +47,7 @@ article, and record the decision with a date. Revisit when the second case lands
 possible — Vadim's call, recorded in `gate-reports.md` with the reason and what stands in for the
 missing case (an approved reference call, a named pilot, an anonymised deployment).
 
-**Standing G-I waiver for every FitXpress vertical (Vadim, 2026-09-27).** Clients do not agree to public case studies (logos only), so FX vertical pages are built without the 2-case bar. What stands in for cases: customer logos; anonymised figures only from `proof-points.md` (a figure that could identify a client is cleared with Vadim first); the accuracy framework; the trust FAQ; the workflow itself. Never an invented or implied case. The logo row under the hero carries the logos of all 3DLOOK clients, captioned without implying they belong to the vertical (Vadim, 2026-10-06). The waiver for a vertical ends when its first approved case lands. The other G-I checks (use-case file, demand, 5 facts, 60% rule) still apply. Record `G-I: standing FX waiver 2026-09-27` in `gate-reports.md`.
+**Standing G-I waiver for every FitXpress vertical (Vadim, 2026-09-27).** Clients do not agree to public case studies (logos only), so FX vertical pages are built without the 2-case bar. What stands in for cases: customer logos; anonymised figures only from `proof-points.md` (a figure that could identify a client is cleared with Vadim first); the accuracy framework; the trust FAQ; the workflow itself. Never an invented or implied case. The logo row under the hero carries the logos of all 3DLOOK clients, captioned without implying they belong to the vertical (Vadim, 2026-10-06). The vertical's own clients go first, and only then may the caption name the vertical: "100+ clients have used 3DLOOK body scanning since 2016, including fitness teams." (fitness final, 2026-10-07; the fitness row opens with Zing Coach and verv, clients per Vadim 2026-10-07). With no client from the vertical in the row, the caption stops at "since 2016." Alt text is the client's name. The waiver for a vertical ends when its first approved case lands. The other G-I checks (use-case file, demand, 5 facts, 60% rule) still apply. Record `G-I: standing FX waiver 2026-09-27` in `gate-reports.md`.
 
 ---
 
@@ -57,33 +57,41 @@ A use-case landing converts, and the articles teach. Vadim, 2026-09-30: use-case
 and more commercial than the pages built before, and the depth lives in the hub article, the accuracy
 framework and the trust FAQ, which the page links to.
 
-- **Budget: 1,100 to 1,300 words of visible copy**, tables and FAQ included, navigation and schema
-  excluded. Above 1,400 the page is doing an article's job.
+- **Budget: 1,100 to 1,600 words of visible copy**, tables and FAQ included, navigation, the hero mock,
+  the form and schema excluded (a comparison shown twice, as a desktop table and as mobile cards,
+  counts once). Above 1,700 the page is doing an article's job. The ceiling rose from 1,300 on
+  2026-10-07: the fitness final runs about 1,560 words, the insurance final about 1,250.
 - **One paragraph, then a link.** Anything that needs more than one paragraph of explanation belongs in
   an article. The page keeps one line and links to it.
 - **A call to action on every second screen:** the hero, after the "what you get" block, after the pilot
   block, and the form.
+- **Structure benchmark (since 2026-10-07):**
+  `workspace/pages/for-connected-and-digital-fitness/page-final-2026-10-07.{md,html}`, the fitness
+  copy Vadim approved as final ("the latest and the most correct"). Take the block order, the value
+  cards, the record table, the comparison, the data lines, the price lines, the pilot and the FAQ from
+  it; what it settled is in "Fitness final" below.
 - **Register benchmark:** `workspace/pages/for-insurance-underwriting/page-final-2026-10-02.md`,
   the copy passed to design on 2026-10-02 after Asselya's deduplication and guardrails pass
-  (`comments-asselya-2026-10-02.md`). It replaces `page-v2-short.md` as the model for length and
-  register. It predates the sales rules of 2026-10-06, so it is not the model for the H1, the block
-  order or the record table: see "Sell, not educate" below for the five places it falls short. The
-  telehealth page stays the benchmark for schema and claims discipline, not for length.
+  (`comments-asselya-2026-10-02.md`). It predates the sales rules of 2026-10-06, so it is not the model
+  for the H1, the block order or the record table: see "Sell, not educate" below for the five places it
+  falls short. The telehealth page stays the benchmark for schema and claims discipline, not for length.
 
 | # | Block, in page order | Words | Slots |
 |---|---|---|---|
-| 1 | Hero: H1 = product + audience + primary outcome, with the primary keyword; 2-3 sentences, what the vertical's actor gets first, then time and effort; "Book a demo" to `#demo` and an anchor to block 3; a four-fact strip. An illustrative product mock is allowed when captioned "Illustrative example" | ~90 | 1, 2, 3, 15 |
-| 2 | The problem: a question H2, one sentence on what the gap costs this buyer (money, risk, time or retention) without repeating the hero, three numbers from named industry sources backing that sentence, each source label linked to the primary source, a link to the hub article | ~90 | 4, 5 |
-| 3 | What you get: a five-row table, each returned output beside what it changes for the actor (neutral column headings, e.g. "Returned output" and "What it changes in underwriting"), then "Get a sample" to `#demo` | ~170 | 6 |
-| 4 | How it works in three steps, in the vertical's own systems, each step saying what it spares or gives the actor; the recommended setup in one line; a link to the feature page | ~100 | 7, 12 |
-| 5 | "FitXpress compared with…": a five-row table, one sentence on what the comparison means for this buyer, and one line on where the old method still fits | ~120 | 5 |
-| 6 | Accuracy and data handling on one screen, under a question H2 ("How accurate is FitXpress, and how is … data handled?"): the answer in the first sentence, then three figures, one method sentence, five data lines, links to the accuracy framework and the trust FAQ | ~180 | 8, 9 |
-| 7 | Pilot and price: a formal H2 ("Evaluate FitXpress before using its outputs in …"), the low-risk start first, one production-infrastructure sentence (one, not a paragraph), the entry price and `/pricing/`, three steps, what the evaluation should quantify, a demo button | ~150 | 10, 14 |
-| 8 | FAQ: 4-6 questions, GEO phrases from the keyword map verbatim as H3, the answer in the first sentence, none repeating a block above | ~250 | 13 |
-| 9 | The shared form at `#demo` with a soft exit to the hub article; `legal@3dlook.me` for procurement documents in the footer. No separate "keep reading" block | ~50 | 15, 16 |
+| 1 | Hero: the H1 (slot 2, two approved forms), with the primary or secondary keyword; 2-3 sentences, what the vertical's actor gets first, then time and effort, the product named by the second sentence at the latest; "Book a demo" to `#demo` and an anchor to the record block; a four-fact strip; then the client logo row. An illustrative product mock is allowed when captioned "Illustrative example", and it shows no field the record table does not list | ~90 | 1, 2, 3, 15 |
+| 2 | Value for the end user: an eyebrow naming that user ("For members", "For patients"), a statement H2, one intro line, four cards (a benefit H3 and one sentence each, saying what the platform can show or offer), then the hub-article link with its topic in the label ("Body data in fitness apps, in depth: AI in fitness →") | ~80 | 5, 6 |
+| 3 | The problem: a question H2, one sentence on what the gap costs this buyer (money, risk, time or retention) without repeating the hero, two or three numbers from named industry sources backing that sentence, each source label linked to the primary source, and one closing sentence on what the loss costs | ~90 | 4, 5 |
+| 4 | What you get (`id="record"`): a five-row table, each returned output beside what it changes for the actor (neutral column headings, e.g. "Returned output" and "What it changes for the app"), the boundary sentence, then "See a sample record in the demo" to `#demo` | ~170 | 6 |
+| 5 | How it works in three steps, in the vertical's own systems, each step saying what it spares or gives the actor; the recommended setup in one line; a link to the feature page | ~110 | 7, 12 |
+| 6 | "FitXpress compared with…": a four- or five-row table on desktop and one card per option on mobile, one sentence on what the comparison means for this buyer, and one line on where the old method still fits | ~130 | 5 |
+| 7 | Accuracy and data handling on one screen, under a question H2 ("How accurate is FitXpress, and how is … data handled?"): the answer in the first sentence, then two or three figures, one method sentence, five data lines (slot 8), the trust-FAQ sentence ending with the privacy contact, the accuracy framework link | ~200 | 8, 9 |
+| 8 | Pilot and price: a formal H2, the low-risk start first, one production-infrastructure sentence (one, not a paragraph), one line per tier, the "no integration fee" and custom-plans line, `/pricing/`, three steps (walkthrough, pilot cohort against a comparison cohort, evaluate and roll out), what the platform and 3DLOOK track as a short list, a demo button | ~190 | 10, 14 |
+| 9 | FAQ: 4-6 questions, GEO phrases from the keyword map verbatim as H3, the answer in the first sentence; one integration question links to the FitXpress API documentation | ~280 | 13 |
+| 10 | The shared form at `#demo` with a soft exit to the hub article; `legal@3dlook.me` for procurement documents in the footer. No separate "keep reading" block | ~50 | 15, 16 |
 
 The order and the budget decide the page. "What you get" sits before "How it works" since 2026-10-06
-(sales rule 2: value before explanation). The slots below say what each ingredient must contain.
+(sales rule 2: value before explanation), and since 2026-10-07 the value cards for the end user open the
+page, before the problem (the fitness final). The slots below say what each ingredient must contain.
 
 ## Sell, not educate (Vadim, 2026-10-06)
 
@@ -106,7 +114,12 @@ What each rule means on a use-case landing:
 - **H1 (rule 1).** The product name, the audience and the one outcome that audience pays for, in the H1
   itself, not only in the eyebrow. The primary keyword stays in it (slot 2). An output is not an
   outcome: "build and BMI evidence" is what FitXpress returns; checking disclosed build without slowing
-  the accelerated path is why a carrier buys it.
+  the accelerated path is why a carrier buys it. **Second approved form (fitness final, 2026-10-07):**
+  the H1 names the method the buyer already knows and offers the mobile alternative to it, for the
+  audience ("A mobile gym body scanner alternative for fitness apps"). The H1 then carries the
+  category keyword the buyer searches, the outcome opens the lede ("Give members a clearer view of body
+  progress at each check-in."), and FitXpress is named in the lede's second sentence at the latest.
+  Use it when the buyer compares against a known method or device; otherwise use the formula.
 - **Value before mechanics (rule 2).** The hero opens with what the actor gets. Time and effort ("under
   45 seconds", "on the applicant's own phone") count as value; how the capture works does not belong in
   the hero. On the page, "What you get" comes before "How it works".
@@ -154,6 +167,8 @@ test.
 Illustrative H1s (not approved copy; the final H1 is Vadim's call):
 "FitXpress for life insurers: check disclosed build without slowing accelerated underwriting" ·
 "FitXpress for fitness apps: help retain members with a mobile alternative to the gym body scanner".
+Approved H1 in the second form: "A mobile gym body scanner alternative for fitness apps" (fitness final,
+2026-10-07).
 An outcome verb without an internal figure keeps its guardrail #1 hedge in the H1 too ("help retain", not
 "retain"): the blind judge flagged the unhedged form on the fitness page, 2026-10-06.
 
@@ -195,12 +210,63 @@ guardrails already had, which v2 broke anyway, so they are now checks rather tha
 - **Source links on the label.** Each problem statistic carries its source as "Publisher, study name",
   linked to the primary source (terminology guardrails §1, rule 2).
 
-**Product wording that changed on the final page (Vadim-approved 2026-10-02):** Real-Time Pose
-Validation pauses capture until pose and framing requirements are met; clothing-related information can
-be surfaced for review and does not trigger a retake. Weight reads "approximately 3.5% mean absolute
-error under evaluated conditions". The pilot block proves readiness with one sentence ("FitXpress uses
-production infrastructure already deployed in remote BMI-verification and weight-management
-workflows"), without naming a client's market or a client count.
+**Product wording that changed on the final page (Vadim-approved 2026-10-02):** Weight reads
+"approximately 3.5% mean absolute error under evaluated conditions". The pilot block proves readiness
+with one sentence ("FitXpress uses production infrastructure already deployed in remote
+BMI-verification and weight-management workflows"), without naming a client's market or a client count.
+The capture wording of that page ("pauses capture until pose and framing requirements are met";
+clothing-related information "surfaced for review") is superseded on new pages by the safer wording in
+"Fitness final" below until product confirms it.
+
+## Fitness final (Vadim, 2026-10-07)
+
+Vadim approved `workspace/pages/for-connected-and-digital-fitness/page-final-2026-10-07.html` as the
+final fitness page: v3 merged with the team's fixes and the fitness logos. What it settled, now rules
+for every FX use-case landing:
+
+- **The value cards come first.** Right after the hero and the logo row: four cards for the end user
+  (members, patients, employees), each a benefit H3 and one sentence on what the platform can show or
+  offer, then the hub-article link. The problem block follows them.
+- **The H1 has a second approved form**, the mobile alternative to the method the buyer already knows
+  ("Sell, not educate", rule 1). The product is then named in the lede by its second sentence.
+- **Capture claims stay at the confirmed level until product confirms more.** Real-Time Pose Validation
+  "gives pose and framing guidance during capture, with voice prompts for a member scanning alone". Not
+  "pauses capture until…", not "helps avoid retakes". The record table lists "Processing status and
+  timestamps", not pose and framing validation results or clothing-related information, and the hero
+  mock carries no "Pose passed / Framing passed" chips. Open item P1-P2 in the fitness folder; when
+  product answers, one wording goes to every page, the insurance final included.
+- **The platform owns the identity link.** "FitXpress returns the record through its API, and the
+  platform links each scan ID to the member profile." FitXpress never returns a record "to the member
+  profile" or to a named person (CLAUDE.md §12: 3DLOOK does not track people).
+- **White-label carries its boundary.** "The platform designs the onboarding, consent and results
+  screens; the photo-capture layer, where pose validation runs, stays fixed to protect measurement
+  quality." (`tech-spec.md`, "What's NOT customizable").
+- **Five data lines:** Photos · Identifiers · GDPR (or the HIPAA/BAA line on a US health page) ·
+  Encryption ("Data is encrypted in transit and at rest.") · Model training. The trust-FAQ sentence
+  then ends with "Privacy contact: privacy@3dlook.me". The procurement address `legal@3dlook.me` stays
+  in the footer.
+- **One line per price tier.** "Starter. $1,000 a month for up to 500 scans." · "Pro. $1,500 a month
+  for up to 1,000 scans, adding 3D Body Progress tracking and 3D Goal Visualization." · "Both include
+  guided implementation support, with no integration fee. Custom plans cover higher volumes." Re-read
+  the live `/pricing/` before shipping.
+- **The pilot is a controlled comparison.** "A comparable cohort keeps the usual check-in flow. Where
+  practical, members are assigned randomly before the pilot." Write "comparison cohort", not
+  "holdout". The third step is "Evaluate and roll out": outcomes are measured against criteria agreed
+  before the pilot, and the scan goes live only if they are met. What the platform and 3DLOOK track is a
+  short list, opening with scan completion and retake rates.
+- **The secondary call to action says what happens in the demo.** "See a sample record in the demo",
+  not "Request a sample record" or "Get a sample": the form books a demo and sends nothing.
+- **FAQ answers carry their dependency.** An objection is answered with how the pilot measures it ("The
+  pilot compares onboarding completion with the usual flow and measures scan completion separately").
+  A third-party integration answer ends on what it depends on ("The integration depends on the fields
+  and permissions supported by the destination platform."). One integration question links to the
+  [FitXpress API documentation](https://docs.fitxpress.3dlook.me/). A capture-conditions answer uses the
+  recommended capture environment in `tech-spec.md` (form-fitting clothing, the phone on a stable
+  surface); open item P3 until product confirms the list.
+- **Source labels are "Publisher, study name".** No year or data-scope qualifier on the label
+  ("Adjust, mobile app retention benchmarks"); `fact-sheet.md` keeps the year and the scope.
+- **The comparison turns into cards on mobile.** Under 960 px the table hides and each option becomes a
+  card, the FitXpress card first and highlighted (`ux-pass.md`).
 
 ## Slots: the 17 ingredients
 
@@ -211,11 +277,15 @@ redirect.
 
 **2. H1** — product + audience + primary outcome (sales rule 1, 2026-10-06), e.g.
 `[Product] for [audience]: [primary outcome]`. The product name sits in the H1 itself, not only in the
-eyebrow. The audience is named the way it names itself (life insurers, fitness apps, online
-pharmacies). The outcome is what that audience pays for, not what FitXpress returns. Not "AI-powered
-precision", and not an output list. One H1. Primary query in it and in the first 100 words. No "best",
+eyebrow. Second approved form (fitness final, 2026-10-07): `A mobile [known method] alternative for
+[audience]`, with the outcome opening the lede and the product named by its second sentence. The
+audience is named the way it names itself (life insurers, fitness apps, online pharmacies). The outcome
+is what that audience pays for, not what FitXpress returns. Not "AI-powered precision", and not an
+output list. One H1. Primary query in it and in the first 100 words; in the second form the H1 carries
+the category query the buyer searches ("gym body scanner"), and the focus keyphrase sits in the SEO
+title and the meta description. No "best",
 no "most accurate", no banned words from CLAUDE.md §6. `detect-ai-tells.py --channel page` reports an H1
-without the product name.
+without the product name in the H1 or the first two sentences of the lede.
 
 **3. Hero + a vertical proof point** — one sentence on what the vertical's actor gets (the outcome), then
 how fast and with how little effort, plus a number from **this** vertical: scans delivered for a named
@@ -251,11 +321,13 @@ sits on the proof screen next to the accuracy figures, but short. Wording as on 
 page: "Deleted immediately after processing or retained for up to 30 days under a customer-specific
 policy. Retained photos are blurred, and face obfuscation is applied during capture." · "Scan records
 use anonymized, randomly generated identifiers." · HIPAA support under an executed Business Associate
-Agreement (BAA) and the canonical GDPR role sentence · no training on production data without explicit,
-documented authorization · the boundary. Hosting, encryption detail, deletion by scan ID, SOC 2, FDA and
-consent go to one link to the
+Agreement (BAA) on a US health page, or the canonical GDPR role sentence · "Data is encrypted in transit
+and at rest." · no training on production data without explicit, documented authorization (fitness
+final, 2026-10-07). The boundary sentence sits under the record table. Hosting, the encryption detail
+(TLS, SSE-S3), deletion by scan ID, SOC 2, FDA and consent go to one link to the
 [trust FAQ](https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/), written as a
-sentence that says what the FAQ covers and expands SOC 2 and FDA. Source:
+sentence that says what the FAQ covers and expands SOC 2 and FDA, ending with "Privacy contact:
+privacy@3dlook.me". Source:
 `compliance.md` (rebuilt 2026-09-18 from that FAQ) and `CLAUDE.md` §12. Never "HIPAA compliant",
 "SOC 2 certified" or "no personal identifiers" (detector category `compliance_status`), and never a
 control presented as removing risk (guardrail #5).
@@ -292,12 +364,14 @@ residency, retention, who owns the data, what happens on a failed scan, what a p
 Source: `faq.md` plus the BD owner's real objections. General product questions stay on the product
 page. **4-6 questions** (the final insurance page ships four), none that a block above already
 answers. The GEO phrases from the landing's keyword map go in verbatim as H3, and each
-answer opens with the answer. Ships with FAQPage schema, modelled on the markup of
+answer opens with the answer. One integration question links to the FitXpress API documentation, and a
+third-party integration answer ends on what it depends on ("Fitness final" above). Ships with FAQPage schema, modelled on the markup of
 `/structured-body-data-for-telehealth-digital-health-programs/` (its schema, not its 13-question length).
 
 **14. Price signal** — name the entry tier and link to `/pricing/` (FitXpress from $1,000/mo,
-Mobile Tailor from $499/mo as published on 2026-08-23 — re-check before shipping). FitXpress pages
-also say **"no integration fee"** (Vadim, 2026-09-30: true, and an advantage over competitors). No
+Mobile Tailor from $499/mo as published on 2026-08-23 — re-check before shipping). On FitXpress pages
+the pilot block lists each tier on its own line and closes with "Custom plans cover higher volumes."
+("Fitness final" above). FitXpress pages also say **"no integration fee"** (Vadim, 2026-09-30: true, and an advantage over competitors). No
 public trial: the action is always "Book a demo" (Vadim, 2026-09-27). Never the internal per-request
 rates from `pricing.md`.
 
@@ -371,10 +445,12 @@ principle #11. Medical, clinical or regulatory framing goes to Whitney before it
    Tailor — so nothing gets copied from it, and
    `/structured-body-data-for-telehealth-digital-health-programs/`, which is the in-house benchmark —
    scoped accuracy, a real comparison block, a 13-question FAQ with schema, no banned words in the
-   headings. Take its schema and its claims discipline, not its length: the budget is 1,100 to 1,300
-   words ("Length and order" above), and the length and register benchmark is
-   `workspace/pages/for-insurance-underwriting/page-final-2026-10-02.md`. It predates the sales rules,
-   so take the H1, the block order and the record table from "Sell, not educate", not from it.
+   headings. Take its schema and its claims discipline, not its length: the budget is 1,100 to 1,600
+   words ("Length and order" above). The structure benchmark is
+   `workspace/pages/for-connected-and-digital-fitness/page-final-2026-10-07.md` (block order, value
+   cards, record table, data lines, price lines, pilot, FAQ), and the register benchmark is
+   `workspace/pages/for-insurance-underwriting/page-final-2026-10-02.md`, which predates the sales
+   rules, so take the H1, the block order and the record table from the fitness final, not from it.
 2. **Read the use-case file, `audience.md` and the segment's "what NOT to say"** before the first
    sentence. A vertical page written without them is a product page with a new headline.
 3. **Check the 60% rule before handover** — count the paragraphs with no equivalent on the parent.
@@ -472,8 +548,9 @@ their own URL and are never a copy of the vertical page.
 - [ ] Parent exists, breadcrumbs resolve, canonical to self
 - [ ] Vertical context carries ≥3 facts absent from the parent page
 - [ ] Regulators and frameworks named precisely; every acronym expanded at first use
-- [ ] Visible copy 1,100 to 1,300 words; FAQ 4-6 questions, none repeating the body; a call to action on every second screen
-- [ ] H1 = product + audience + primary outcome, with the primary keyword (detector `--channel page` reports an H1 without the product)
+- [ ] Visible copy 1,100 to 1,600 words; FAQ 4-6 questions, none repeating the body; a call to action on every second screen
+- [ ] H1 = product + audience + primary outcome, or the approved "mobile [method] alternative for [audience]" form with the product named in the lede by its second sentence (detector `--channel page` reports a hero without the product)
+- [ ] "Fitness final" rules held: value cards before the problem; capture claims at the confirmed level; the platform links scan IDs; white-label with its boundary; five data lines and the privacy contact; one line per tier; comparison cohort and an evaluate step; "See a sample record in the demo"
 - [ ] Sales pass done: "What you get" before "How it works"; a benefit beside every feature; a conclusion with every number, table and comparison; one job per block; no paragraph that passes the blog test
 - [ ] Register: "you / your" at most 12.5 per 1,000 words, actor named in explanatory sentences; every acronym expanded at first use; no "vs" in headings (detector `--channel page` reports all three)
 - [ ] Accuracy figures carry their reference and limit, plus a link to the accuracy framework; no bare percentages; no reserved words

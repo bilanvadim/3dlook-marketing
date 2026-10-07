@@ -2,10 +2,51 @@
 product: fitxpress
 type: open-items
 vertical: connected-and-digital-fitness
-date: 2026-10-02
+date: 2026-10-07
 ---
 
 # Open items
+
+## Final (2026-10-07)
+
+Vadim, 2026-10-07: the merged file is "the latest and the most correct" final. Closed by it: A and G
+(H1 "A mobile gym body scanner alternative for fitness apps"), E (fitness logos: Zing Coach and verv,
+clients per Vadim 2026-10-07; both added to the outbound exclusion registry as existing customers),
+B for this page (client count in the logo caption).
+
+For product (via Vadim), from the merge note; the page uses the safer wording until then:
+
+P1. **What the record returns.** The final lists "Processing status and timestamps"; v3 listed "pose and
+    framing validation results, clothing-related information surfaced for review". If product confirms
+    the v3 fields, restore that row and the "Pose passed / Framing passed" chips in the hero mock.
+P2. **What RTPV does.** The final says it "gives pose and framing guidance during capture"; the insurance
+    final (2026-10-02) says it "pauses capture until pose and framing requirements are met". One wording
+    goes to every page once product answers.
+P3. **Capture conditions in the FAQ** ("form-fitting clothing, the same place and the phone on a stable
+    surface"). `tech-spec.md` has form-fitting or regular fit and the phone on a flat surface; "the same
+    place" is not in the canon.
+
+For Vadim: four spots the checks still catch in the final. Not changed, the final is yours:
+
+M1. "The platform knows when each record is ready" is a detector hard fail (anthropomorphism, the same
+    class as "platform decides", fixed on 2026-10-06). Option: "The platform sees when each record is
+    ready and lines up scans by date for comparison."
+M2. "links each scan ID" leaves ID unexpanded; Asselya's register rule writes "identifiers". Option:
+    "links each scan identifier to the member profile".
+M3. The hero lede says "results in under 45 seconds after capture"; the only public timing wording
+    (`tech-spec.md`, Vadim 2026-09-23) is "under 45 seconds from the photos to structured results", which
+    the strip already uses.
+M4. The focus keyphrase `body scanning for fitness apps` is now in the title, meta and one FAQ H3 only;
+    the H1 carries `gym body scanner`. Yoast will flag the keyphrase as missing from the H1 and the
+    introduction. Keep it, or move the focus keyphrase back to `gym body scanner` (the keyword map's
+    primary)?
+
+Build:
+
+L. The breadcrumb links `/fitxpress/`, which still 301s to `/` (checked 2026-10-07). Ship `/fitxpress/`
+   first or unlink the middle level until then (kit slot 1).
+
+---
 
 ## v3 (2026-10-06), after Nika's final iteration
 

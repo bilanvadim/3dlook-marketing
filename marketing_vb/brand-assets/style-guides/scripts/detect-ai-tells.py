@@ -656,6 +656,8 @@ CHANNELS = {
         # unexpanded at first use. All three are soft: they go to house_rule_violations.
         # h1_product: sales rule 1 (Vadim, 2026-10-06), H1 = product + audience + primary outcome.
         # Only the product name is mechanical; audience and outcome stay with the judge. Soft too.
+        # Since 2026-10-07 the product may sit in the lede's first two sentences instead (the
+        # fitness final's "mobile alternative" H1).
         "structure_checks": ["em_dash", "bold", "title_case", "emoji", "uniform_rhythm", "list_ratio",
                              "direct_address", "heading_vs", "acronym_first_use", "h1_product"],
         "hashtag_limit": None,
@@ -975,7 +977,17 @@ def style_metrics(text: str, lang: str, channel: dict, line_offset: int = 0) -> 
         page_metrics["unexpanded_acronyms"] = unexpanded_acronyms(text, line_offset)
     if "h1_product" in checks:
         h1 = re.search(r"^#\s+(.+)$", text, re.MULTILINE)
-        page_metrics["h1_names_product"] = bool(h1 and PRODUCT_NAME_RE.search(h1.group(1)))
+        # The second approved H1 form (fitness final, 2026-10-07: "A mobile gym body scanner
+        # alternative for fitness apps") names the product in the lede instead, by its second
+        # sentence. So the check passes when the H1 or the lede's first two sentences name it.
+        lede_head = ""
+        if h1:
+            lede = re.search(r"\n\s*((?:[^\n#*<|>-][^\n]*\n?)+)", text[h1.end():])
+            if lede:
+                sentences = re.split(r"(?<=[.!?])\s+", " ".join(lede.group(1).split()))
+                lede_head = " ".join(sentences[:2])
+        page_metrics["h1_names_product"] = bool(h1 and (PRODUCT_NAME_RE.search(h1.group(1))
+                                                        or PRODUCT_NAME_RE.search(lede_head)))
         page_metrics["h1_text"] = h1.group(1).strip() if h1 else None
 
     return {
@@ -1070,8 +1082,9 @@ def analyze(text: str, lang: str, channel_name: str, profile: str = None) -> dic
         house.append(f"acronyms not expanded at first use: {listed}")
     # No H1 at all is the judge's hard fail, not this check's.
     if "h1_product" in ch["structure_checks"] and sm.get("h1_text") and not sm["h1_names_product"]:
-        house.append(f"H1 does not name the product (FitXpress / Mobile Tailor): \"{sm['h1_text']}\". "
-                     f"Sales rule 1: H1 = product + audience + primary outcome")
+        house.append(f"hero does not name the product (FitXpress / Mobile Tailor) in the H1 or the "
+                     f"lede's first two sentences: \"{sm['h1_text']}\". Sales rule 1: H1 = product + "
+                     f"audience + primary outcome, or the mobile-alternative form with the product in the lede")
 
     markers_by_category = {}
     for cat, hits in hard_hits.items():

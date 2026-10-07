@@ -74,6 +74,8 @@ MARKET_TO_PROFILE = [
 EXISTING_CUSTOMERS = [
     "Safariland", "Burlington Medical", "UK Meds", "Yazen", "Jim's Formal Wear",
     "Generation Tux", "Tailoor", "Redthread", "Healthyr",
+    # Fitness clients, Vadim 2026-10-07 (their logos are on the fitness landing).
+    "Zing Coach", "Verv",
 ]
 
 LEGAL_SUFFIXES = {

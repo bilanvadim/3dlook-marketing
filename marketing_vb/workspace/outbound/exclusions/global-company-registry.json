@@ -1992,6 +1992,18 @@
       "product": "fitxpress",
       "date": "2026-10-07",
       "status": "active"
+    },
+    "zing-coach": {
+      "display_name": "Zing Coach",
+      "covered_by_profile": null,
+      "status": "existing_customer_excluded",
+      "note": "customer — never enters outbound (exclusions/README.md)"
+    },
+    "verv": {
+      "display_name": "Verv",
+      "covered_by_profile": null,
+      "status": "existing_customer_excluded",
+      "note": "customer — never enters outbound (exclusions/README.md)"
     }
   }
 }
