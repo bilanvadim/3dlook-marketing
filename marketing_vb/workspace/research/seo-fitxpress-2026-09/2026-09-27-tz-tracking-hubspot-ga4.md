@@ -69,7 +69,7 @@ updated: 2026-09-29 — одна форма на все FX-лендинги, `fx
 
 ### A2. Клики и бронирование встреч
 
-- **`demo_click`:** клик по любой кнопке и ссылке «Book a demo», «Request a demo», «Talk to sales». Параметры `cta_text` и `page_location`. Сейчас эти кнопки работают на JS. После того как девелопер сделает их обычными `<a href>` (фаза 0, п. 0.1), триггер — Click URL или Click Text.
+- **`demo_click`:** клик по любой кнопке и ссылке «Book a demo», «Request a demo», «Talk to sales». Параметры `cta_text` и `page_location`. Кнопки уже сделаны ссылками `<a href="#bd-modal…">` (проверено 2026-10-08), девелопер не нужен. Триггер — Click URL contains `#bd-modal`, плюс ссылки на `/contact-us/` с текстом demo или «Let's talk» (runbook 0.2).
 - **`meeting_booked`:** HubSpot Meetings присылает `postMessage` с `meetingBookSucceeded`. Тот же приём, что в A1; это тоже ключевое событие.
 - **`docs_click`:** исходящий клик на `docs.fitxpress.3dlook.me`.
 - **`pricing_plan_click`:** клик по плану на `/pricing/` с параметром `plan`.

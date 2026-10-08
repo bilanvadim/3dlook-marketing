@@ -65,7 +65,7 @@ related: 2026-09-25-fitxpress-seo-plan.md (фаза 0), 2026-09-27-tz-dev-site.m
 | 1 | 0.9 Compliance-текст, 0.8 Редиректы | девелопер |
 | 1 | 0.3 Фильтры внутреннего трафика (в режиме «Testing») | ты |
 | 1–2 | 0.1 Диагностика в Clarity → задача девелоперу | ты |
-| 2–4 | 0.1 Починка `/pricing/` и `/contact-us/`, кнопки demo — ссылками | девелопер |
+| 2–4 | 0.1 Починка `/pricing/` и `/contact-us/` | девелопер |
 | 3–5 | 0.2 События в GTM и GA4 | ты или подрядчик |
 | 3–6 | 0.4 HubSpot: свойства, UTM, workflow | ты или подрядчик |
 | 6–7 | 0.5 Квалификация popup и lead scoring | ты |
@@ -135,7 +135,7 @@ API Clarity не отдаёт, **какие** элементы и **какие**
 
 ### Часть 2. Починка (девелопер, 1–3 дня)
 
-Отдай пункты **P0-1** (ошибки и мёртвые клики) и **P0-2** (demo-кнопки — обычные ссылки `<a href>`) из ТЗ девелоперу.
+Отдай пункт **P0-1** (ошибки и мёртвые клики) из ТЗ девелоперу. P0-2 снят 2026-10-08: demo-кнопки уже ссылки.
 
 **Вероятные причины** (подсказка девелоперу):
 - WP Rocket «Delay JavaScript execution» задерживает скрипт HubSpot-формы или Elementor-попапа;
@@ -145,7 +145,6 @@ API Clarity не отдаёт, **какие** элементы и **какие**
 ### Проверка
 - Отправь каждую форму на обеих страницах с тестовым адресом (например `test+pricing@3dlook.me`) с десктопа и с телефона. Контакт должен появиться в HubSpot.
 - Через 7 дней в Clarity: JS-ошибки на обеих страницах меньше 3% сессий, мёртвые клики на `/pricing/` меньше 3%.
-- Открой исходный код главной (Ctrl+U) и найди кнопку «Book a demo»: у неё должен быть `href="..."`.
 
 **Типичная ошибка:** чинят на десктопе, а на мобильном ошибок было больше (27% на `/pricing/`). Проверять обязательно с телефона.
 
@@ -278,13 +277,13 @@ GTM → **Tags** → New → **Custom HTML** → имя `HubSpot - form submit l
 | `GA4 - generate_lead` | `generate_lead` | `form_id` = `{{DLV - form_id}}`, `form_name` = `{{form_name}}` | Custom Event `hs_form_submit`, условие `{{form_name}}` does not equal `careers` |
 | `GA4 - careers_submit` | `careers_submit` | — | Custom Event `hs_form_submit`, `{{form_name}}` equals `careers` |
 | `GA4 - meeting_booked` | `meeting_booked` | — | Custom Event `meeting_booked` |
-| `GA4 - demo_click` | `demo_click` | `cta_text` = `{{Click Text}}`, `link_url` = `{{Click URL}}` | **Click - Just Links**, `Click Text` matches RegEx (ignore case) `book a demo\|request a demo\|talk to sales` |
+| `GA4 - demo_click` | `demo_click` | `cta_text` = `{{Click Text}}`, `link_url` = `{{Click URL}}` | Два триггера **Click - Just Links** на один тег: (1) `Click URL` contains `#bd-modal`, ловит все demo-попапы, включая `#bd-modal-starter`, `-pro` и `-personalized` на `/pricing/`; (2) `Click URL` contains `/contact-us/` и `Click Text` matches RegEx (ignore case) `book a demo\|let.?s talk\|request a demo\|talk to sales` |
 | `GA4 - docs_click` | `docs_click` | `link_url` = `{{Click URL}}` | Click - Just Links, `Click URL` contains `docs.fitxpress.3dlook.me` |
 | `GA4 - pricing_plan_click` | `pricing_plan_click` | `plan` = `{{Click Text}}` | Click - All Elements, `Page Path` equals `/pricing/` и `Click Text` matches RegEx по названиям планов на странице |
 
 Встроенные переменные Click (Click Text, Click URL) включаются в Variables → Configure.
 
-⚠️ `demo_click` заработает только после того, как девелопер сделает кнопки обычными ссылками (0.1, P0-2). До этого триггер «Just Links» их не увидит.
+Demo-кнопки уже сделаны ссылками `<a href="#bd-modal…">` (проверено 2026-10-08), поэтому триггер «Just Links» ловит их сразу и девелопер не нужен. Триггер по тексту не годится: на `/for-bmi-verification/` кнопка в тот же попап называется «Get Started», на главной — «Let's talk».
 
 ### 4. Публикация и настройка GA4
 1. GTM → **Preview** → пройди по сайту, отправь тестовые формы и проверь, что события срабатывают → **Submit** → Publish, версия `Phase 0 - lead events`.
@@ -516,7 +515,6 @@ HubSpot → Marketing → **Lead Scoring** (новый инструмент) и�
 - [ ] На сайте нет «HIPAA Compliant», «HIPAA compliance», «personal identifiers» (0.9)
 - [ ] `/contact/`, `http://www…`, `/blog/` отдают один 301 на правильную цель (0.8)
 - [ ] Каждая форма на `/pricing/` и `/contact-us/` отправляется с десктопа и телефона; контакт появляется в HubSpot (0.1)
-- [ ] Кнопки «Book a demo» — ссылки с `href` (0.1)
 - [ ] В GA4 DebugView приходят `generate_lead` (с правильным `form_name`), `demo_click`, `meeting_booked`, `docs_click` (0.2)
 - [ ] `generate_lead`, `meeting_booked`, `demo_click` отмечены как Key events (0.2)
 - [ ] Фильтр внутреннего трафика в GA4 в режиме Testing, визиты с офисного IP помечаются (0.3)
