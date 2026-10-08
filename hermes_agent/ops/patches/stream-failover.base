@@ -1,1 +1,1 @@
-e83b1d51f13a08b424636f0b519db86a35aa7bd7 test(slack): expiry tests raise a shape-compatible error without importing slack_sdk
+08165d58931841cee713468ae89032af7c57060a feat(desktop): the dimmed composer comes back after 5s without scrolling

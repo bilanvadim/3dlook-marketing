@@ -1,9 +1,9 @@
 diff --git a/agent/chat_completion_helpers.py b/agent/chat_completion_helpers.py
-index a940e631c0..ecf79ad6da 100644
+index c68d7bf6648..863cb437e10 100644
 --- a/agent/chat_completion_helpers.py
 +++ b/agent/chat_completion_helpers.py
-@@ -3538,6 +3538,17 @@ class _StreamingCall(StreamingWaitMonitor):
-             getattr(self.agent, "model", "unknown"), None, dropped_tool_names=_partial_names)
+@@ -3993,6 +3993,17 @@ class _StreamingCall(StreamingWaitMonitor):
+             api_mode=getattr(self.agent, "api_mode", None))
          if _cls is not None and _cls.reason == FailoverReason.content_policy_blocked:
              _stub._content_filter_terminated = True
 +        # [hermes-mechanic:stream-failover] The same verdict also tells a QUOTA or
@@ -21,10 +21,10 @@ index a940e631c0..ecf79ad6da 100644
  
      def run(self):
 diff --git a/agent/turn_truncation.py b/agent/turn_truncation.py
-index c820298d35..11591dd695 100644
+index e5e3e8ad39d..4db24c02106 100644
 --- a/agent/turn_truncation.py
 +++ b/agent/turn_truncation.py
-@@ -195,21 +195,38 @@ def _abort_reason(agent: Any, content: Any, has_tool_calls: bool) -> Optional[tu
+@@ -262,21 +262,38 @@ def _abort_reason(agent: Any, content: Any, has_tool_calls: bool) -> Optional[tu
      return None
  
  
@@ -67,7 +67,7 @@ index c820298d35..11591dd695 100644
      if agent._try_activate_fallback():
          # Roll partial content back to the last clean turn so the fallback gets a
          # coherent continuation point; unmark survivors (their text left the partial).
-@@ -309,7 +326,12 @@ def _continue_text(st: _Trunc, _retry: TurnRetryState, assistant_message: Any) -
+@@ -366,7 +383,12 @@ def _continue_text(st: _Trunc, _retry: TurnRetryState, assistant_message: Any) -
          )
      return st.end_turn(
          partial_response or _CEILING_NO_TEXT,
@@ -81,7 +81,7 @@ index c820298d35..11591dd695 100644
      )
  
  
-@@ -423,7 +445,7 @@ def recover_from_truncation(
+@@ -523,7 +545,7 @@ def recover_from_truncation(
          return st.end_turn(user_response, error)
  
      if agent.api_mode in _CONTINUABLE_MODES:
