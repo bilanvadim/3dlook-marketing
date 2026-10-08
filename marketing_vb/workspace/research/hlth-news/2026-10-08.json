@@ -1,0 +1,95 @@
+{
+ "generated": "2026-10-08T05:40:17+00:00",
+ "items": [
+  {
+   "id": "ea8a1483-1625-4a67-afe0-03931d2c421f",
+   "title": "Relay Network and Claritas Rx Partner on Specialty Patient Engagement",
+   "date": "2026-10-07",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Patient Engagement / Experience",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services",
+    "Chronic Condition Management"
+   ],
+   "url": "https://hlth.com/insights/news/relay-network-and-claritas-rx-partner-on-specialty-patient-engagement"
+  },
+  {
+   "id": "d1226757-e7a8-48b0-a4f1-13c030f6cdba",
+   "title": "Bain & Bessemer Report Healthcare AI Delivering 3.5x ROI Within 12 Months",
+   "date": "2026-10-07",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Payer (Insurer)",
+    "Investments and Partnerships",
+    "Operational Efficiency",
+    "Health System & Health Provider",
+    "Artificial Intelligence / Machine Learning"
+   ],
+   "url": "https://hlth.com/insights/news/bain-and-bessemer-report-healthcare-ai-delivering-3-5x-roi-within-12-months"
+  },
+  {
+   "id": "2d303b17-bc99-4980-82fa-9c46d1dcb328",
+   "title": "WhiteLab Genomics Raises $26 Million to Advance AI-Designed Genomic Medicines",
+   "date": "2026-10-07",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Precision Medicine / Genomics",
+    "Drug Discovery / Pharma / Biotech",
+    "Startup",
+    "Artificial Intelligence / Machine Learning"
+   ],
+   "url": "https://hlth.com/insights/news/whitelab-genomics-raises-26-million-to-advance-ai-designed-genomic-medicines"
+  }
+ ],
+ "analyses": {
+  "ea8a1483-1625-4a67-afe0-03931d2c421f": {
+   "id": "ea8a1483-1625-4a67-afe0-03931d2c421f",
+   "score": 0,
+   "segment": "—",
+   "what": "Relay Network і Claritas Rx оголосили партнерство: дані specialty pharmacy та hub від Claritas Rx поєднуються з мобільним messaging-каналом Relay. Мета — залученість пацієнтів у програмах specialty та рідкісних захворювань (згоди, страхування, refill, adherence).",
+   "why": "Це messaging і аналітика для specialty та rare disease pharma. Даних про тіло, BMI чи GLP-1 у новині немає, тож для FitXpress точки входу немає.",
+   "play": "none",
+   "companies": [
+    "Relay Network",
+    "Claritas Rx"
+   ],
+   "_date": "2026-10-07"
+  },
+  "d1226757-e7a8-48b0-a4f1-13c030f6cdba": {
+   "id": "d1226757-e7a8-48b0-a4f1-13c030f6cdba",
+   "score": 1,
+   "segment": "—",
+   "what": "Bain & Company і Bessemer опублікували 2026 Healthcare AI ROI Scorecard на основі опитування 226 керівників. Середній ROI становить 3.5x, а окупність — близько 12 місяців замість очікуваних 24. Member engagement у payers дає 3.2x, адміністративні workflows окупаються найкраще.",
+   "why": "Загальний тренд без конкретного акаунта. Хіба що як тема для контенту: швидкий ROI від автоматизації admin- та member engagement-процесів.",
+   "play": "content_only",
+   "companies": [
+    "Bain & Company",
+    "Bessemer Venture Partners"
+   ],
+   "_date": "2026-10-07"
+  },
+  "2d303b17-bc99-4980-82fa-9c46d1dcb328": {
+   "id": "2d303b17-bc99-4980-82fa-9c46d1dcb328",
+   "score": 0,
+   "segment": "—",
+   "what": "WhiteLab Genomics закрила Series B на $26M. Гроші підуть на доклінічні тести генетичних payloads і технологій доставки генів, а також на розширення в США, Європі, Японії та Південній Кореї.",
+   "why": "Це AI для розробки геномних препаратів (drug discovery), він не стосується жодного сегмента ICP 3DLOOK.",
+   "play": "none",
+   "companies": [
+    "WhiteLab Genomics",
+    "AVP",
+    "Yaday Health",
+    "Blast Club",
+    "Omnes",
+    "Debiopharm",
+    "NAYA Therapeutics",
+    "Y Combinator",
+    "Dyno Therapeutics",
+    "Roche"
+   ],
+   "_date": "2026-10-07"
+  }
+ },
+ "posts": []
+}
