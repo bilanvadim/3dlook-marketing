@@ -1,0 +1,89 @@
+{
+ "generated": "2026-10-09T05:40:26+00:00",
+ "items": [
+  {
+   "id": "3354a58c-3a15-429e-bb40-0cc8170cff88",
+   "title": "General Medicine Secures $120 Million to Expand Consumer Healthcare Marketplace",
+   "date": "2026-10-08",
+   "tags": [
+    "Price Transparency",
+    "Investments and Partnerships",
+    "Startup",
+    "Care Coordination / Navigation / Care Access",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/general-medicine-secures-120-million-to-expand-consumer-healthcare-marketplace"
+  },
+  {
+   "id": "73289417-0fdd-4cf1-80c2-29e31f344c14",
+   "title": "Healthleap Raises $38 Million to Expand AI-Powered Inpatient Screening Platform",
+   "date": "2026-10-08",
+   "tags": [
+    "Investments and Partnerships",
+    "Operational Efficiency",
+    "Startup",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/healthleap-raises-38-million-to-expand-ai-powered-inpatient-screening-platform"
+  },
+  {
+   "id": "4fad5df2-ab61-45a8-8758-423a9fe75d99",
+   "title": "Deloitte Identifies $527 Billion Opportunity in U.S. Women’s Healthcare Through Earlier Detection and Prevention",
+   "date": "2026-10-08",
+   "tags": [
+    "Professional Services",
+    "Preventive Health",
+    "Women's Health",
+    "Chronic Condition Management"
+   ],
+   "url": "https://hlth.com/insights/news/deloitte-identifies-527-billion-opportunity-in-u-s-women-s-healthcare-through-earlier-detection-and-prevention"
+  }
+ ],
+ "analyses": {
+  "3354a58c-3a15-429e-bb40-0cc8170cff88": {
+   "id": "3354a58c-3a15-429e-bb40-0cc8170cff88",
+   "score": 1,
+   "segment": "—",
+   "what": "General Medicine (США, засновники з PillPack/Amazon Pharmacy) залучила $120M у Series B. Гроші підуть на розширення онлайн-маркетплейсу медпослуг: рецепти, аналізи, телемедичні консультації, частина очних прийомів, далі медична візуалізація.",
+   "why": "Це маркетплейс для навігації та прозорих цін. У статті немає ні weight-loss/GLP-1, ні перевірки BMI, ні відстеження прогресу тіла, тож прив'язки до FitXpress немає.",
+   "play": "none",
+   "companies": [
+    "General Medicine",
+    "PillPack",
+    "Amazon Pharmacy"
+   ],
+   "caveat": "Якщо пізніше з'явиться новина, що вони продають GLP-1 або weight-loss, варто переоцінити як §2 (Online Pharmacies, верифікація BMI). Зараз стаття цього не підтверджує.",
+   "_date": "2026-10-08"
+  },
+  "73289417-0fdd-4cf1-80c2-29e31f344c14": {
+   "id": "73289417-0fdd-4cf1-80c2-29e31f344c14",
+   "score": 0,
+   "segment": "—",
+   "what": "Healthleap залучила $38M (seed + Series A) на AI-платформу, яка через EHR виявляє в лікарнях недіагностоване malnutrition, а далі серцеву недостатність, пролежні та sepsis.",
+   "why": "Це аналітика EHR для стаціонарних пацієнтів, часто седованих. Скан тіла зі смартфона в такому процесі ні до чого.",
+   "play": "none",
+   "companies": [
+    "Healthleap",
+    "Penn Medicine"
+   ],
+   "_date": "2026-10-08"
+  },
+  "4fad5df2-ab61-45a8-8758-423a9fe75d99": {
+   "id": "4fad5df2-ab61-45a8-8758-423a9fe75d99",
+   "score": 1,
+   "segment": "—",
+   "what": "За оцінкою Deloitte, витрати на жіноче здоров'я в США можуть зрости на $527B до 2030 року завдяки ранній діагностиці та профілактиці. Як інструменти названо wearables, remote monitoring і віртуальні програми.",
+   "why": "Це загальний тренд-звіт. Вага, BMI і склад тіла в ньому не згадуються, конкретного акаунта чи кампанії під нього немає.",
+   "play": "none",
+   "companies": [
+    "Deloitte",
+    "Deloitte & Touche",
+    "Teal Health",
+    "UC Davis Health"
+   ],
+   "_date": "2026-10-08"
+  }
+ },
+ "posts": []
+}
