@@ -1,0 +1,91 @@
+{
+ "generated": "2026-10-10T05:40:20+00:00",
+ "items": [
+  {
+   "id": "26eba743-31f6-40b6-af15-29151eca34d2",
+   "title": "Multiply Labs Raises $75M to Expand Robotic Manufacturing of Advanced Therapies",
+   "date": "2026-10-09",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Investments and Partnerships",
+    "Drug Discovery / Pharma / Biotech",
+    "Startup"
+   ],
+   "url": "https://hlth.com/insights/news/multiply-labs-raises-75m-to-expand-robotic-manufacturing-of-advanced-therapies"
+  },
+  {
+   "id": "0507cf1f-abef-4f75-b7a0-2c236d80b207",
+   "title": "Digital Medicine Society Introduces AgeTech Playbooks to Support Aging at Home",
+   "date": "2026-10-09",
+   "tags": [
+    "AgeTech / Senior Care",
+    "Patient Engagement / Experience",
+    "Association, Non Profit & Academia",
+    "Digital Medicine"
+   ],
+   "url": "https://hlth.com/insights/news/digital-medicine-society-introduces-agetech-playbooks-to-support-aging-at-home"
+  },
+  {
+   "id": "20665c74-d841-4d3a-bf00-a1ecade4e2fb",
+   "title": "NHS England South East Expands Skin Analytics' AI Skin Cancer Screening Across 18 Trusts",
+   "date": "2026-10-09",
+   "tags": [
+    "Cancer Care",
+    "Government",
+    "Diagnostics",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/nhs-england-south-east-expands-skin-analytics-ai-skin-cancer-screening-across-18-trusts"
+  }
+ ],
+ "analyses": {
+  "26eba743-31f6-40b6-af15-29151eca34d2": {
+   "id": "26eba743-31f6-40b6-af15-29151eca34d2",
+   "score": 0,
+   "segment": "—",
+   "what": "Multiply Labs (Сан-Франциско) залучила $75M Series B під керівництвом NantWorks, щоб розширити роботизоване виробництво клітинних і генних терапій та інших біологічних препаратів.",
+   "why": "Автоматизація фармвиробництва. Дані про тіло тут ніде не використовуються, тож для FitXpress чи Mobile Tailor користі немає.",
+   "play": "none",
+   "companies": [
+    "Multiply Labs",
+    "NantWorks",
+    "AstraZeneca",
+    "Lingotto",
+    "Teradyne",
+    "Strange Ventures",
+    "Retro Biosciences",
+    "Cellares"
+   ],
+   "_date": "2026-10-09"
+  },
+  "0507cf1f-abef-4f75-b7a0-2c236d80b207": {
+   "id": "0507cf1f-abef-4f75-b7a0-2c236d80b207",
+   "score": 0,
+   "segment": "—",
+   "what": "Digital Medicine Society (DiMe) випустила два playbook-и про технології для літніх людей, які хочуть жити вдома: один для розробників, другий для провайдерів (як оцінювати вендорів, керувати alert-ами, вбудовувати рішення в клінічні workflow).",
+   "why": "AgeTech і запобігання падінням не входять у наш ICP, а body-scan у цих сценаріях не потрібен. Сама DiMe — некомерційна асоціація, а не покупець.",
+   "play": "none",
+   "companies": [
+    "Digital Medicine Society",
+    "DiMe"
+   ],
+   "_date": "2026-10-09"
+  },
+  "20665c74-d841-4d3a-bf00-a1ecade4e2fb": {
+   "id": "20665c74-d841-4d3a-bf00-a1ecade4e2fb",
+   "score": 0,
+   "segment": "—",
+   "what": "NHS England South East з осені 2026 розгортає AI-платформу DERM від Skin Analytics для автономного скринінгу раку шкіри в усіх 18 трастах регіону.",
+   "why": "Це онкодіагностика і дерматологічний тріаж, і жоден ICP-сегмент 3DLOOK під неї не підходить. Для нашого продукту тригера немає.",
+   "play": "none",
+   "companies": [
+    "NHS England South East",
+    "Skin Analytics",
+    "NHS"
+   ],
+   "_date": "2026-10-09"
+  }
+ },
+ "posts": []
+}
