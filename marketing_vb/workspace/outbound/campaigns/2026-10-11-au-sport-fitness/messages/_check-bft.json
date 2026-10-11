@@ -1,0 +1,330 @@
+{
+ "campaign": "2026-10-11-au-sport-fitness",
+ "checked": 23,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "bft",
+ "generated": "2026-10-11T17:47:19",
+ "hard": [],
+ "soft": [
+  [
+   "near-duplicate sentence",
+   "BFT: scott-bumpstead / jason-clark-a2210a3b",
+   "«might be worth a quick chat, or point me to whoev…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: scott-bumpstead / katelyn-farmer-181914199",
+   "«might be worth a quick chat, or point me to whoev…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: scott-bumpstead / anthonyhoangbft",
+   "«might be worth a quick chat, or point me to whoev…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: scott-bumpstead / rhys-mathieson-88a873179",
+   "«might be worth a quick chat, or point me to whoev…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: scott-bumpstead / matt-jones-a43938224",
+   "«might be worth a quick chat, or point me to whoev…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: scott-bumpstead / luan-scherman-6a67381b9",
+   "«might be worth a quick chat, or point me to whoev…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: scott-bumpstead / st-leonards-body-fit-training-9284aa341",
+   "«might be worth a quick chat, or point me to whoev…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: philip-grasso-b9503933 / adem-bek-459313269",
+   "«hi philip, curious about your take on podium, the…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: philip-grasso-b9503933 / rhys-mathieson-88a873179",
+   "«the scan returns 80+ body measurements, , from a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: philip-grasso-b9503933 / steve-grace-37068285",
+   "«i can walk through it in a short call, or you cou…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: philip-grasso-b9503933 / sam-pirolo-402a5016b",
+   "«i can walk through it in a short call, or you cou…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: david-aitchison-12b97535 / richard-burnet-2273b05",
+   "«a guided two-photo scan, front and side, returns…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: richard-burnet-2273b05 / zanellemarama123",
+   "«the scan returns 80+ body measurements, .»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: richard-burnet-2273b05 / anthonyhoangbft",
+   "«the scan returns 80+ body measurements, .»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: richard-burnet-2273b05 / matt-jones-a43938224",
+   "«the scan returns 80+ body measurements, .»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: richard-burnet-2273b05 / luan-scherman-6a67381b9",
+   "«the scan returns 80+ body measurements, .»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: jason-clark-a2210a3b / stef-mathieson-034b5a156",
+   "«the scan takes two photos, front and side, and re…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: jason-clark-a2210a3b / katelyn-farmer-181914199",
+   "«worth a quick chat, or point me to whoever runs m…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: jason-clark-a2210a3b / rhys-mathieson-88a873179",
+   "«worth a quick chat, or point me to whoever runs m…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: jason-clark-a2210a3b / matt-jones-a43938224",
+   "«worth a quick chat, or point me to whoever runs m…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: jason-clark-a2210a3b / luan-scherman-6a67381b9",
+   "«worth a quick chat, or point me to whoever runs m…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: jason-clark-a2210a3b / zoe-clark-401380363",
+   "«worth a quick chat, or point me to whoever runs m…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: jason-clark-a2210a3b / st-leonards-body-fit-training-9284aa341",
+   "«worth a quick chat, or point me to whoever runs m…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: sarina-sham-64b20321 / rhys-mathieson-88a873179",
+   "«hi sarina, here is the idea in one line: the scan…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: kirsten-lea / zoe-clark-401380363",
+   "«hi kirsten, wanted to reach out about bft's trial…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: laura-carroll-067a93120 / stef-mathieson-034b5a156",
+   "«a member takes the scan on their own phone, and i…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: laura-carroll-067a93120 / katelyn-farmer-181914199",
+   "«open to a short call, or a pointer to whoever run…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: laura-carroll-067a93120 / anthonyhoangbft",
+   "«open to a short call, or a pointer to whoever run…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: laura-carroll-067a93120 / rhys-mathieson-88a873179",
+   "«open to a short call, or a pointer to whoever run…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: laura-carroll-067a93120 / luan-scherman-6a67381b9",
+   "«open to a short call, or a pointer to whoever run…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: laura-carroll-067a93120 / zoe-clark-401380363",
+   "«open to a short call, or a pointer to whoever run…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: laura-carroll-067a93120 / st-leonards-body-fit-training-9284aa341",
+   "«open to a short call, or a pointer to whoever run…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: zanellemarama123 / matt-jones-a43938224",
+   "«it returns 80+ body measurements, .»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: steve-grace-37068285 / sam-pirolo-402a5016b",
+   "«i can show it in a short call, or you could point…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: steve-grace-37068285 / anthonyhoangbft",
+   "«i can show it in a short call, or you could point…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: kristy-ellis-473595195 / st-leonards-body-fit-training-9284aa341",
+   "«3dlook has worked with 100+ clients, and the stud…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: katelyn-farmer-181914199 / anthonyhoangbft",
+   "«worth a quick chat, or a pointer to whoever runs…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: katelyn-farmer-181914199 / rhys-mathieson-88a873179",
+   "«worth a quick chat, or a pointer to whoever runs…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: katelyn-farmer-181914199 / matt-jones-a43938224",
+   "«worth a quick chat, or a pointer to whoever runs…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: katelyn-farmer-181914199 / luan-scherman-6a67381b9",
+   "«worth a quick chat, or a pointer to whoever runs…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: katelyn-farmer-181914199 / zoe-clark-401380363",
+   "«worth a quick chat, or a pointer to whoever runs…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: katelyn-farmer-181914199 / st-leonards-body-fit-training-9284aa341",
+   "«worth a quick chat, or a pointer to whoever runs…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: sam-pirolo-402a5016b / rhys-mathieson-88a873179",
+   "«a guided two-photo scan returns 80+ body measurem…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: sam-pirolo-402a5016b / matt-jones-a43938224",
+   "«a guided two-photo scan returns 80+ body measurem…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: sam-pirolo-402a5016b / zoe-clark-401380363",
+   "«a guided two-photo scan returns 80+ body measurem…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: anthonyhoangbft / luan-scherman-6a67381b9",
+   "«a two-photo scan returns 80+ body measurements.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: anthonyhoangbft / matt-jones-a43938224",
+   "«worth a short call, or a pointer to whoever looks…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: anthonyhoangbft / zoe-clark-401380363",
+   "«worth a short call, or a pointer to whoever looks…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: rhys-mathieson-88a873179 / stef-mathieson-034b5a156",
+   "«a guided two-photo scan returns 80+ body measurem…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: rhys-mathieson-88a873179 / matt-jones-a43938224",
+   "«a guided two-photo scan returns 80+ body measurem…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: rhys-mathieson-88a873179 / zoe-clark-401380363",
+   "«a guided two-photo scan returns 80+ body measurem…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: rhys-mathieson-88a873179 / st-leonards-body-fit-training-9284aa341",
+   "«a guided two-photo scan returns 80+ body measurem…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: rhys-mathieson-88a873179 / luan-scherman-6a67381b9",
+   "«open to a quick chat, or a pointer to whoever own…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: matt-jones-a43938224 / zoe-clark-401380363",
+   "«a guided two-photo scan returns 80+ body measurem…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: matt-jones-a43938224 / luan-scherman-6a67381b9",
+   "«worth a quick chat, or point me to whoever owns m…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: matt-jones-a43938224 / st-leonards-body-fit-training-9284aa341",
+   "«worth a quick chat, or point me to whoever owns m…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: luan-scherman-6a67381b9 / st-leonards-body-fit-training-9284aa341",
+   "«hi luan, quick idea for bft north lakes: the tria…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BFT: zoe-clark-401380363 / st-leonards-body-fit-training-9284aa341",
+   "«hi zoe, wanted to reach out about the bft trial,…»"
+  ],
+  [
+   "sentence opening repeated",
+   "BFT ×3",
+   "«might be worth a quick…»: david-aitchison-12b97535, liana-nio-a46b897, scott-bumpstead"
+  ],
+  [
+   "sentence opening repeated",
+   "BFT ×8",
+   "«the scan returns 80+ body…»: liana-nio-a46b897, matt-jones-a43938224, philip-grasso-b9503933, rhys-mathieson-88a873179"
+  ],
+  [
+   "sentence opening repeated",
+   "BFT ×6",
+   "«a guided two photo scan…»: david-aitchison-12b97535, luan-scherman-6a67381b9, matt-jones-a43938224, rhys-mathieson-88a873179"
+  ],
+  [
+   "sentence opening repeated",
+   "BFT ×4",
+   "«a two photo scan returns…»: anthonyhoangbft, richard-burnet-2273b05, sarina-sham-64b20321, steve-grace-37068285"
+  ],
+  [
+   "sentence opening repeated",
+   "BFT ×3",
+   "«worth a quick chat or…»: jason-clark-a2210a3b, katelyn-farmer-181914199, matt-jones-a43938224"
+  ],
+  [
+   "sentence opening repeated",
+   "BFT ×3",
+   "«open to a quick chat…»: luan-scherman-6a67381b9, rhys-mathieson-88a873179, st-leonards-body-fit-training-9284aa341"
+  ]
+ ]
+}

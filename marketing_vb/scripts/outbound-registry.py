@@ -583,8 +583,14 @@ def cmd_check(args) -> int:
         sys.exit(f"✗ {src.name} has no rows")
 
     out = []
+    # --waive-companies: Vadim lifts the company-level burn for named companies in one
+    # campaign (2026-10-11-au-sport-fitness: Fernwood, Fitstop and others worked by the
+    # August AU campaign). Person-level and existing-customer exclusions are never waived.
+    waived = {norm_company(x) for x in (getattr(args, "waive_companies", "") or "").split(",")
+              if x.strip()}
     hits = {"person_already_contacted": 0, "company_same_profile": 0,
-            "company_other_profile": 0, "existing_customer": 0, "clear": 0, "no_url": 0}
+            "company_other_profile": 0, "existing_customer": 0, "company_waived": 0,
+            "clear": 0, "no_url": 0}
     for row in rows:
         url = person_url(row)
         comp = norm_company(pick(row, "company_name", "company", "organization"))
@@ -595,6 +601,10 @@ def cmd_check(args) -> int:
         elif comp and gc.get(comp, {}).get("status") == "existing_customer_excluded":
             flag, why = "EXCLUDE", "existing customer"
             hits["existing_customer"] += 1
+        elif comp and comp in waived and (comp in mine_companies
+                       or profile in gc.get(comp, {}).get("excluded_for_profiles", [])):
+            flag, why = "", f"company-level exclusion waived ({profile})"
+            hits["company_waived"] += 1
         elif comp and (comp in mine_companies
                        or (profile in gc.get(comp, {}).get("excluded_for_profiles", [])
                            and comp not in own_companies)):
@@ -815,6 +825,9 @@ def main() -> int:
     c.add_argument("--dry-run", action="store_true")
     c.add_argument("--campaign", help="widening this recorded campaign: its own record is "
                                       "not an exclusion")
+    c.add_argument("--waive-companies", default="",
+                   help="comma-separated companies whose COMPANY-level exclusion Vadim waived "
+                        "for this run (people already contacted stay excluded)")
     c.set_defaults(func=cmd_check)
 
     y = sub.add_parser("reply", help="write reply outcomes onto registry people")

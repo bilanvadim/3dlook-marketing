@@ -1,0 +1,31 @@
+people 325 missing 0 []
+call length            34  shane-johnson-8a9a1974 M2, adrian-haywood-b033078b M2, matt-eikenhout-154a3ba3 M2, arshad-hussein-14358a231 M2
+speed variant          74  sean-hodges-4436ba88 M1, thomas-hepburn-50949997 M1, travis-spencer-83a2aa370 M1, scott-freeman-aa301374 M1
+deletion/storage       13  angelo-konstantinou-b21aa31aa M1, angelo-konstantinou-b21aa31aa M2, robmitchelllinkedin M1, brettcondron M1
+url in M1               0  
+100+ clients use        0  
+scanner/competitor      0  
+tracks                  0  
+quick chat in M1        0  
+
+speed sentence variants (top):
+   22 | The scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+   12 | It returns 80+ body measurements, under 45 seconds from the photos to structured results.
+    3 | The scan runs on any phone with on-screen guidance and returns 80+ body measurements, under 45 seconds from th
+    2 | We built a guided two-photo scan that returns 80+ body measurements, under 45 seconds from the photos to struc
+    2 | Each scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+    2 | Our guided two-photo scan returns 80+ body measurements, under 45 seconds from the photos to structured result
+    1 | From two phone photos the scan returns 80+ body measurements, under 45 seconds from the photos to structured r
+    1 | Hi Colin, For the program side: the scan returns 80+ body measurements, under 45 seconds from the photos to st
+
+repeated M1 first-5-words / M2 last sentence within a company (>=3):
+  Fitness Passport (8): [('a short read: https://3dlook.ai/content-hub/ai-body-data-wel', 5)]
+  The Yard Gym (8): [('a short read: https://3dlook.ai/fitxpress/for-connected-and-', 3)]
+  Australian Sports Nutrition (7): [('a short read: https://3dlook.ai/content-hub/ai-body-data-wel', 3)]
+
+sentences used by >=5 people in one company:
+  Fernwood Fitness: 9 × 3DLOOK has worked with 100+ clients.
+  Fernwood Fitness: 6 × The scan returns 80+ body measurements, under 45 seconds from the photos to structured res
+  Fernwood Fitness: 5 × For scale: 112,100 scans in 2025 across all 3DLOOK customers.
+  KX Pilates: 6 × 3DLOOK has worked with 100+ clients.
+  REVL Training: 8 × 3DLOOK has worked with 100+ clients.

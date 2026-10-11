@@ -1,0 +1,245 @@
+{
+ "campaign": "2026-10-11-au-sport-fitness",
+ "checked": 30,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-1",
+ "generated": "2026-10-11T17:48:14",
+ "hard": [],
+ "soft": [
+  [
+   "no company line",
+   "angela-tween-3a082457 M1",
+   "«Viva Leisure» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "rachel-macedo-0b501679 M1",
+   "«Vision Personal Training» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "daniel-collins-57132a89 M1",
+   "«Vision Personal Training» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "adrian-haywood-b033078b M1",
+   "«Viva Leisure» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "thomas-hepburn-50949997 M1",
+   "«Viva Leisure» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "sarahbroadhottot M1",
+   "«Vision Personal Training» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "leigh-j-24a0b1a0 M1",
+   "«Viva Leisure» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "matt-eikenhout-154a3ba3 M1",
+   "«Viva Leisure» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "paul-brown-a4058616a M1",
+   "«Vision Personal Training» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "marvin-mangubat-32a1b8141 M1",
+   "«Vision Personal Training» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "kane-schrader-9916141bb M1",
+   "«Viva Leisure» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "arshad-hussein-14358a231 M1",
+   "«Viva Leisure» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "jeremy-saville-195836311 M1",
+   "«Vision Personal Training» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "kaillum-key-46718a298 M1",
+   "«Vision Personal Training» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "benny-russell-808a3226b M1",
+   "«Vision Personal Training» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "haydn-kiel-53b835319 M1",
+   "«Vision Personal Training» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "gh-undefined-218583350 M1",
+   "«Viva Leisure» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "travis-spencer-83a2aa370 M1",
+   "«Viva Leisure» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "pf-syd-olympic-park-a18693431 M1",
+   "«Viva Leisure» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "andrewsvision M1",
+   "«Vision Personal Training» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "jamesduffy26 M1",
+   "«Vision Personal Training» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "jack-smith-829760100 M1",
+   "«Vision Personal Training» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "rebeccacarson2 M1",
+   "«Vision Personal Training» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "kyle-johnston-40590391 M1",
+   "«Vision Personal Training» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "victor-ramirez-1293b510b M1",
+   "«Vision Personal Training» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "thomas-mclaughlin-45b12695 M1",
+   "«Vision Personal Training» is not named: check it has a line only this company gets"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Vision Personal Training ×2",
+   "«would a short call suit?»: rachel-macedo-0b501679, victor-ramirez-1293b510b"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Vision Personal Training ×2",
+   "«might be worth a quick chat?»: daniel-collins-57132a89, rebeccacarson2"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Viva Leisure ×3",
+   "«open to a quick chat?»: sean-hodges-4436ba88, thomas-hepburn-50949997, arshad-hussein-14358a231"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Vision Personal Training ×3",
+   "«open to one?»: sarahbroadhottot, jeremy-saville-195836311, haydn-kiel-53b835319"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Viva Leisure ×3",
+   "«worth a quick chat?»: leigh-j-24a0b1a0, angelo-konstantinou-b21aa31aa, travis-spencer-83a2aa370"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Vision Personal Training ×2",
+   "«would a call this week work?»: kaillum-key-46718a298, benny-russell-808a3226b"
+  ],
+  [
+   "near-duplicate sentence",
+   "Viva Leisure: angela-tween-3a082457 / angelo-konstantinou-b21aa31aa",
+   "«two phone photos return 80+ body measurements.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Viva Leisure: angela-tween-3a082457 / gh-undefined-218583350",
+   "«two phone photos return 80+ body measurements.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Viva Leisure: angela-tween-3a082457 / travis-spencer-83a2aa370",
+   "«two phone photos return 80+ body measurements.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Viva Leisure: angela-tween-3a082457 / pf-syd-olympic-park-a18693431",
+   "«two phone photos return 80+ body measurements.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Viva Leisure: sean-hodges-4436ba88 / thomas-hepburn-50949997",
+   "«it returns 80+ body measurements, .»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Viva Leisure: thomas-hepburn-50949997 / travis-spencer-83a2aa370",
+   "«or name the person at plus fitness head office wh…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Viva Leisure: angelo-konstantinou-b21aa31aa / gh-undefined-218583350",
+   "«it takes two photos and returns 80+ body measurem…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Viva Leisure: kane-schrader-9916141bb / gh-undefined-218583350",
+   "«the scan runs on a member's phone from two photos…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Viva Leisure: travis-spencer-83a2aa370 / pf-syd-olympic-park-a18693431",
+   "«from two phone photos the scan returns 80+ body m…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vision Personal Training: daniel-collins-57132a89 / andrewsvision",
+   "«it returns 80+ body measurements, .»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vision Personal Training: benny-russell-808a3226b / kyle-johnston-40590391",
+   "«hi benny, 3dlook has worked with 100+ clients.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vision Personal Training: victor-ramirez-1293b510b / thomas-mclaughlin-45b12695",
+   "«the scan runs on the client's own phone from two…»"
+  ],
+  [
+   "sentence opening repeated",
+   "Vision Personal Training ×4",
+   "«two phone photos return 80+…»: kaillum-key-46718a298, kyle-johnston-40590391, marvin-mangubat-32a1b8141, rachel-macedo-0b501679"
+  ],
+  [
+   "sentence opening repeated",
+   "Viva Leisure ×3",
+   "«a short call could show…»: kane-schrader-9916141bb, sean-hodges-4436ba88, travis-spencer-83a2aa370"
+  ],
+  [
+   "sentence opening repeated",
+   "Vision Personal Training ×3",
+   "«two photos 80+ body measurements…»: jack-smith-829760100, rebeccacarson2, sarahbroadhottot"
+  ]
+ ]
+}

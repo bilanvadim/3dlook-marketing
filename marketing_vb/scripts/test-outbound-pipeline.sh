@@ -1006,6 +1006,14 @@ grep_check "registry: --campaign of another campaign lifts nothing" "must be exc
 printf 'person_linkedin_url,full_name,company_name\nhttps://www.linkedin.com/in/\xe2\x80\xabarnon-cohen-253b4176,Arnon Cohen,Test Co\n' > "$RC_OUT/enc.csv"
 grep_check "registry: a decoded URL matches its encoded registry entry" "person_already_contacted +1" \
   python3 $S/outbound-registry.py check --profile katya --input "$RC_OUT/enc.csv" --output $RC_OUT/d.csv
+# --waive-companies lifts the company burn only: the five recorded people stay excluded,
+# the never-recorded one is cleared (2026-10-11, Vadim's Fernwood/Fitstop waiver)
+grep_check "registry: --waive-companies keeps contacted people excluded" "must be excluded +5" \
+  python3 $S/outbound-registry.py check --profile nick --waive-companies "Options Medical Weight Loss" \
+  --input "$RC_OUT/in.csv" --output $RC_OUT/e.csv
+grep_check "registry: --waive-companies clears the company-level flag" "company_waived +1" \
+  python3 $S/outbound-registry.py check --profile nick --waive-companies "Options Medical Weight Loss" \
+  --input "$RC_OUT/in.csv" --output $RC_OUT/f.csv
 
 echo "== existing tooling still green =="
 check "outbound-registry status" 0 python3 $S/outbound-registry.py status

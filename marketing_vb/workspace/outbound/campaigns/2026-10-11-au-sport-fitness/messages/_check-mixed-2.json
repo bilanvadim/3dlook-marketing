@@ -1,0 +1,115 @@
+{
+ "campaign": "2026-10-11-au-sport-fitness",
+ "checked": 35,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-2",
+ "generated": "2026-10-11T17:48:54",
+ "hard": [],
+ "soft": [
+  [
+   "no company line",
+   "john-pirlo-1b63645 M1",
+   "«Genesis Health + Fitness» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "ianjensenmuir M1",
+   "«Genesis Health + Fitness» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "melissa-fraser-68692417 M1",
+   "«Genesis Health + Fitness» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "brentonwilliamson M1",
+   "«Genesis Health + Fitness» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "gym-genesis-88933854 M1",
+   "«Genesis Health + Fitness» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "cameron-reid-3521a730 M1",
+   "«Genesis Health + Fitness» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "l-b-31160a120 M1",
+   "«Genesis Health + Fitness» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "carlisle-jones-6a4461123 M1",
+   "«REVL Training» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "guy-franklin-3713b580 M1",
+   "«Genesis Health + Fitness» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "jake-harris-494278ba M1",
+   "«REVL Training» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "tom-bayford-b0553010a M1",
+   "«Genesis Health + Fitness» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "josh-mildren-6a580699 M1",
+   "«REVL Training» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "mitchell-bird-234161167 M1",
+   "«Genesis Health + Fitness» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "mark-jackson-7829b2291 M1",
+   "«REVL Training» is not named: check it has a line only this company gets"
+  ],
+  [
+   "near-duplicate sentence",
+   "REVL Training: benseymour10 / adam-coombes-35602a2b7",
+   "«a guided scan returns 80+ body measurements from…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Genesis Health + Fitness: john-pirlo-1b63645 / guy-franklin-3713b580",
+   "«it returns 80+ body measurements, .»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Genesis Health + Fitness: melissa-fraser-68692417 / gym-genesis-88933854",
+   "«a member could take a guided scan on their own ph…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Genesis Health + Fitness: melissa-fraser-68692417 / tom-bayford-b0553010a",
+   "«a member could take a guided scan on their own ph…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Genesis Health + Fitness: gym-genesis-88933854 / tom-bayford-b0553010a",
+   "«members can take a guided scan on their phone, an…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "KX Pilates: james-trenerry-a7915448 / sophie-patient-b538671b8",
+   "«a phone scan from two photos gives 80+ body measu…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "KX Pilates: linda-wisbey-846503117 / divya-hegde-11a22a243",
+   "«or point me to the person at kx pilates head offi…»"
+  ]
+ ]
+}

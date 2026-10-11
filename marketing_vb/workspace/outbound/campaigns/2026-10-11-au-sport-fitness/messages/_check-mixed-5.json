@@ -1,0 +1,35 @@
+{
+ "campaign": "2026-10-11-au-sport-fitness",
+ "checked": 33,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-5",
+ "generated": "2026-10-11T17:47:48",
+ "hard": [],
+ "soft": [
+  [
+   "no company line",
+   "scott-freeman-aa301374 M1",
+   "«EMF Performance & Fitness Centres» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "el-finnigan-98b648210 M1",
+   "«EMF Performance & Fitness Centres» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "rachel-dillon-598668264 M1",
+   "«CSB» is not named: check it has a line only this company gets"
+  ],
+  [
+   "near-duplicate sentence",
+   "Revo Fitness: andrewbholder / dainmoreton",
+   "«the scan returns 80+ body measurements, .»"
+  ],
+  [
+   "near-duplicate sentence",
+   "TotalFusion: sam-merza-5b0743198 / kane-bonke-17a40622a",
+   "«it returns 80+ body measurements, .»"
+  ]
+ ]
+}

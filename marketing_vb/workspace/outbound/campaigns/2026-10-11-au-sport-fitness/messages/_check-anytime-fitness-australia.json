@@ -1,0 +1,9 @@
+{
+ "campaign": "2026-10-11-au-sport-fitness",
+ "checked": 17,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "anytime-fitness-australia",
+ "generated": "2026-10-11T17:47:00",
+ "hard": [],
+ "soft": []
+}

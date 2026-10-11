@@ -1,0 +1,564 @@
+apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,last_refreshed_at,status
+60d311cba5623b0001d24ab2,Belinda,Wh***n,CEO,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-21T04:13:06.722+00:00,in-sales-nav
+57d96dc9a6da987222301172,Elle,Ch***i,CRM and Digital Marketing Manager,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-10-08T18:05:58.000+00:00,candidate
+66f8f264aa4387000114d9db,Ella,Wh***r,National Campaign & Local Area Marketing Manager,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-05T16:37:24.000+00:00,candidate
+54a526af7468692cf0d21c81,Erica,Gr***m,Sales and Marketing Manager,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-07-03T15:08:36.663+00:00,candidate
+5c38a11aa3ae6141cf8e4421,Samantha,Ho***y,Fitness and Operations Manager,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-23T09:43:28.000+00:00,candidate
+631f15b61e8ff900015647dc,Ashleigh,J,Sales & Marketing,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-12T21:22:33.630+00:00,candidate
+54a4cf497468693442133365,Zoe,Ki***y,Fernwood Morayfield,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-07T09:43:47.000+00:00,candidate
+69db92824ad55a0001669809,Shaye,Ha***y,Fernwood Fitness Manager,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-15T06:42:29.000+00:00,candidate
+63047c8e68d21000015073c8,Pete,Hu***l,CEO,Fitstop,fitstop.com,Fitstop,2026-09-18T03:30:51.000+00:00,candidate
+66de98cff63f5d00017d54d5,Carlos,Su***r,CEO,Fitstop,fitstop.com,Fitstop,2026-09-23T08:09:57.569+00:00,candidate
+54a5c83274686932098a0ca8,Carl,Gi***o,Global Head of Growth,Fitstop,fitstop.com,Fitstop,2026-09-04T10:10:03.000+00:00,candidate
+66fac39578dcdd0001033a05,Riley,Wo***k,General Manager,Fitstop,fitstop.com,Fitstop,2026-10-05T03:38:02.000+00:00,candidate
+63592244d8c59200012c357f,Ana,Ch***s,General Manager,Fitstop,fitstop.com,Fitstop,2026-07-06T09:46:43.000+00:00,candidate
+63606aab00da5300015d9aba,Jolyn,Lee,Co-Owner & Head of Marketing,Fitstop,fitstop.com,Fitstop,2026-09-13T06:32:22.633+00:00,candidate
+60401f0f7319fb0001cebb84,Ryan,An***l,Head of Brand & Marketing,Fitstop,fitstop.com,Fitstop,2026-09-05T17:57:48.000+00:00,candidate
+6358c5a364ee880001e90e58,Roisin,Wi***s,Head Coach/ Club Manager,Fitstop,fitstop.com,Fitstop,2026-09-24T05:20:56.000+00:00,candidate
+622835d1d6c30b0001b0c0a0,Sam,Ra***h,Fitness Manager,Fitstop,fitstop.com,Fitstop,2026-09-23T09:17:58.000+00:00,candidate
+57dad525a6da984a44df38b8,Olivia,Ho***n,Managing Owner,Fitstop,fitstop.com,Fitstop,2026-10-06T14:55:16.221+00:00,in-sales-nav
+608770247d9cc50001df5b3f,Natasha,Wi***y,Fitness Manager,Fitstop,fitstop.com,Fitstop,2026-09-20T21:02:56.000+00:00,candidate
+57d44fb6a6da9853bed0849e,Sally,Ku***r,Head Coach,Fitstop,fitstop.com,Fitstop,2026-08-24T16:17:01.727+00:00,candidate
+54a24615746869382556041c,Sharon,Ye***p,Head Coach,Fitstop,fitstop.com,Fitstop,2026-09-06T10:40:55.000+00:00,candidate
+610c55522f630900014526bd,David,Ai***n,Chief Executive Officer,BFT International,bodyfittraining.com,BFT,2026-10-06T08:13:49.534+00:00,in-sales-nav
+66e511c077beca0001968f13,Brad,Ma***n,Head of Growth & Marketing,BFT International,bodyfittraining.com,BFT,2026-09-09T06:28:46.000+00:00,candidate
+68f773558d2fa10001133b9a,Justin,De***e,Supplement CEO,BFT International,bodyfittraining.com,BFT,2025-10-21T11:49:41.526+00:00,candidate
+610bc93cb3fd69000143c92d,Richard,Bu***t,Director and Global CEO,BFT International,bodyfittraining.com,BFT,2026-09-13T18:56:15.000+00:00,in-sales-nav
+55da8080f3e5bb0c5d00019c,Zanelle,Ma***a,Head of Franchise Performance - Vic/tas/asia/europe,BFT International,bodyfittraining.com,BFT,2026-09-13T03:22:29.271+00:00,in-sales-nav
+64b90cb3cf26c500012f9b07,Ryan,Sc***t,"Head of Franchise Performance: Europe, Asia, WA & QLD",BFT International,bodyfittraining.com,BFT,2026-09-18T23:18:48.000+00:00,candidate
+5f8fc089b0b2d20001205001,Kendra,Ca***l,Chief Marketing Officer,BFT International,bodyfittraining.com,BFT,2026-09-21T08:50:25.000+00:00,candidate
+5de470373388cc0001444d37,Bianca,Li***d,Partnerships Manager,BFT International,bodyfittraining.com,BFT,2026-10-05T19:51:23.509+00:00,candidate
+5f750eb5daa0e600019d805e,Mark,No***s,Managing Director,BFT International,bodyfittraining.com,BFT,2026-07-21T22:29:03.000+00:00,candidate
+56383738a6da980d3c0004ef,Glyn,Fr***e,Global Partnerships Manager,BFT International,bodyfittraining.com,BFT,2026-08-28T23:34:54.000+00:00,candidate
+5c794efda3ae6177c2a4969a,Jenny,Cu***o,General Manager,BFT International,bodyfittraining.com,BFT,2026-09-05T19:55:14.000+00:00,candidate
+5e6d91f298de040001d67267,Hannah,We***r,General Manager,BFT International,bodyfittraining.com,BFT,2026-10-02T20:41:28.000+00:00,candidate
+5ddd03d98fabe400013c73e3,Georgia,Du***p,Head of Brand and Marketing,BFT International,bodyfittraining.com,BFT,2026-09-05T10:58:32.000+00:00,candidate
+6a1e6542af35ac0001d8ed6c,Aesthetic,Da***l,Operation Manager / Head Coach,BFT International,bodyfittraining.com,BFT,2026-07-14T13:58:18.000+00:00,candidate
+5e74c4614909f60001cfd5e5,Jacob,Gi***e,"Head Coach at Body Fit Training, Santa Monica",BFT International,bodyfittraining.com,BFT,2026-09-08T09:52:37.000+00:00,candidate
+5e75c576e4b58b0001490105,Fabio,Ar***o,Head Coach,BFT International,bodyfittraining.com,BFT,2026-10-01T21:16:51.000+00:00,candidate
+62a1d757fec6110001650af3,Charlotte,Pa***e,Marketing & Communications,BFT International,bodyfittraining.com,BFT,2026-10-05T07:19:01.406+00:00,candidate
+61af3d3654f7c700016817f4,George,Cl***r,Head Coach,BFT International,bodyfittraining.com,BFT,2026-10-05T03:46:17.000+00:00,candidate
+54a2496a746869331809881c,Emily,Br***d,Head Coach,BFT International,bodyfittraining.com,BFT,2026-08-23T09:00:42.000+00:00,candidate
+63a74d6d301e1300016570ae,Christopher,Sa***a,Head Coach,BFT International,bodyfittraining.com,BFT,2026-10-02T03:36:20.694+00:00,candidate
+5fe8f24107128c000107103f,Vincent,Ma***n,Studio Manager & Head Coach,BFT International,bodyfittraining.com,BFT,2026-09-06T06:39:18.000+00:00,candidate
+5c5c0509f65125a55a91b826,Jen,Li,Marketing Manager,BFT International,bodyfittraining.com,BFT,2026-08-23T12:46:06.000+00:00,candidate
+661121c9d4e4bc000798d411,Danial,Fa***e,Cluster Head Coach,BFT International,bodyfittraining.com,BFT,2026-09-06T06:25:20.000+00:00,candidate
+661931ee2d43b90001f1b15a,Bft,Pi***r,Fitness Manager,BFT International,bodyfittraining.com,BFT,2026-07-22T20:44:18.000+00:00,candidate
+609d15a9a91a300001c6e3e1,Alexander,He***m,Head Coach,BFT International,bodyfittraining.com,BFT,2026-10-04T09:08:54.000+00:00,candidate
+66ab2c0332cf4500018d7b1d,Jake,May,Head Coach,BFT International,bodyfittraining.com,BFT,2026-09-22T07:40:06.000+00:00,candidate
+60d26708d70cd30001257ce7,David,Gi***o,Head Coach,BFT International,bodyfittraining.com,BFT,2026-09-19T21:19:37.000+00:00,candidate
+6060918ac765810001879061,Haydn,Pa***r,Head Coach,BFT International,bodyfittraining.com,BFT,2026-09-10T06:15:09.000+00:00,candidate
+6215df6f7de3670001e64224,Ashraf,Fa***i,Head Coach,BFT International,bodyfittraining.com,BFT,2026-10-04T02:31:37.000+00:00,candidate
+6628d23274c3210007a3a95e,Andrada,Mu***a,Head Coach,BFT International,bodyfittraining.com,BFT,2026-09-03T08:37:07.000+00:00,candidate
+62c4699c19e5720001f2d1be,Camilo,Go***z,Head Coach,BFT International,bodyfittraining.com,BFT,2026-10-03T17:17:50.000+00:00,candidate
+642d6a5a4c290c0001c71515,Daniel,Sc***n,Head Coach,BFT International,bodyfittraining.com,BFT,2026-10-04T07:30:42.000+00:00,candidate
+61b4364ab03db4000142d5c3,Brooke,Pr***e,"Head of Company Clubs, Jetts Aus",Jetts Australia,jetts.com.au,Jetts Fitness,2026-10-10T23:29:30.568+00:00,candidate
+60a1a39c020b09000117ad6d,Ben,Ma***n,General Manager,Jetts Australia,jetts.com.au,Jetts Fitness,2026-09-19T11:58:12.000+00:00,candidate
+62d9a0229d1c700001f76118,Samantha,Ja***e,General Manager,Jetts Australia,jetts.com.au,Jetts Fitness,2026-09-23T09:44:46.000+00:00,candidate
+5fc58d06100a0e00019cec1c,Stefanie,Ni***n,Marketing Manager,Jetts Australia,jetts.com.au,Jetts Fitness,2026-10-06T08:13:49.534+00:00,candidate
+6714fecfbf96c300016c87c5,Kalani,Ba***s,Fitness Manager,Jetts Australia,jetts.com.au,Jetts Fitness,2026-09-07T07:25:22.000+00:00,candidate
+654092d3085c0800019acab2,Michael,Jo***n,CEO,UBX,ubxtraining.com,UBX,2026-10-09T19:58:05.413+00:00,in-sales-nav
+6027555b9023ab00011cb096,Tim,We***t,Managing Director - CoFounder,UBX,ubxtraining.com,UBX,2026-09-25T10:43:13.259+00:00,in-sales-nav
+60ddb1fa9630fb000164406a,Jonah,Ha***s,Chief Operating Officer,UBX,ubxtraining.com,UBX,2026-09-04T08:38:38.000+00:00,in-sales-nav
+54a5bfa37468692fa2a070a5,David,Ne***d,Chief Technology Officer,UBX,ubxtraining.com,UBX,2026-09-15T17:43:08.000+00:00,candidate
+54a436a9746869320954b835,Iya,Af***n,Owner & Managing Director,UBX,ubxtraining.com,UBX,2026-09-27T00:42:25.000+00:00,candidate
+5640ddcaa6da98770f00188e,Payam,Po***i,General Manager,UBX,ubxtraining.com,UBX,2025-12-09T08:56:07.553+00:00,candidate
+54c193037468691639b76423,John,Cu***y,General Manager Digital,UBX,ubxtraining.com,UBX,2026-09-04T13:11:16.000+00:00,candidate
+60ebac7a1773410001961219,Harry,Ko***u,CEO and Managing Director,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-10-04T05:52:14.000+00:00,candidate
+54a448fd7468693442c56f3b,Matt,Ei***t,Head of Fitness,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-09-08T03:05:06.000+00:00,in-sales-nav
+6067e7220d636000018c7d08,Angelo,Ko***u,Chief Information Officer,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-09-29T20:32:08.338+00:00,in-sales-nav
+54a49e567468692cf0f2aa55,Sean,Ho***s,Chief Operating Officer,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-09-22T22:31:49.794+00:00,in-sales-nav
+612695ed1c11a7000170e782,Niki,Tw***t,General Manager,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-09-18T13:08:39.000+00:00,candidate
+562a035fa6da987b1c0077a9,Lauren,No***n,General Manager | Boutiques,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-10-06T13:21:48.433+00:00,candidate
+5d5c4dc780f93eeae60f8349,Michael,Cu***o,Senior General Manager,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-10-04T16:16:11.325+00:00,candidate
+611457a53aba8200019b2d63,Leah,Do***e,General Manager Marketing,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-09-16T10:46:10.262+00:00,candidate
+5d5af3c8a3ae61a9c0ab78a7,Ross,Su***d,Senior General Manager,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-10-04T12:31:53.032+00:00,candidate
+5ef7c57e4dc1210001a1ad9c,Lauren,Je***s,Fitness Product Manager,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-10-02T02:24:45.191+00:00,candidate
+54ec35b9746869444c8f4766,Jodie,Si***s,General Manager People and Culture,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-10-05T19:32:35.000+00:00,candidate
+60dd45587ae93b00017e096a,Rick,Jo***n,"General Manager Facilities, Project & Logistics",Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-09-04T13:01:54.795+00:00,candidate
+55c116257369640bfb554701,Rob,No***n,Chief Marketing & Data Officer,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-09-10T18:34:16.000+00:00,candidate
+54a561607468692cf0a48193,Nathan,El***t,Head of Franchising - Plus Fitness,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-09-05T18:16:45.000+00:00,candidate
+62aad55e51702e000149a3f7,Matt,Mu***r,"Senior General Manager - Plus Fitness Corporate, Rebalance & Groundup",Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-09-07T09:44:25.000+00:00,candidate
+646106d1a94a3c00016cb559,Brylee,Dr***d,General Club Manager - Ringwood,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-09-06T21:55:02.000+00:00,candidate
+613841314e518a00012246e2,Alysha,Wa***s,Marketing Manager,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-09-06T01:26:09.000+00:00,candidate
+6215b1e57474300001c2d9bc,Todd,Di***n,E-commerce and Marketing Manager,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-09-23T09:42:31.514+00:00,candidate
+6728de1fa1f33b00017181d7,Sasha,Bo***c,Marketing Manager - Franchising,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-10-04T01:17:07.000+00:00,candidate
+62eaaf5ea6a6f30001f7d9f8,Jade,Wi***x,Fitness Manager,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-10-04T01:13:50.000+00:00,candidate
+684fdf4b609e130001eb5230,Jenn,Ya***g,Head Coach,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-09-06T04:57:03.000+00:00,candidate
+660fc438e6a97700075d93d7,Selina,Br***e,CEO,KX Pilates,kx.com.au,KX Pilates,2026-10-06T17:20:45.000+00:00,candidate
+54a46cc17468692fa2619f46,Warren,Ai***y,Head of Technology,KX Pilates,kx.com.au,KX Pilates,2026-09-20T08:36:47.000+00:00,candidate
+57d7834ba6da983ae2f6f37c,Susan,We***i,Head of Training and Academies KX Pilates,KX Pilates,kx.com.au,KX Pilates,2026-08-23T21:24:50.000+00:00,candidate
+5fe9bdf078f72500016a39ed,Mandy,Ch***g,Franchise Owner & Managing Director,KX Pilates,kx.com.au,KX Pilates,2026-09-08T10:50:22.000+00:00,candidate
+5e73f5dc4a36700001820758,Kirsty,Me***i,Studio Owner/General Manager,KX Pilates,kx.com.au,KX Pilates,2026-09-23T08:49:05.000+00:00,candidate
+637b320f8576c000019a1093,Fiona,Wh***e,Network Operations Manager | Driving Performance Across Multi-site Franchise Networks,KX Pilates,kx.com.au,KX Pilates,2026-10-01T20:13:53.552+00:00,candidate
+60ae4dbc38613400015245b4,Brooke,Da***y,Product Innovation Manager,KX Pilates,kx.com.au,KX Pilates,2026-09-06T05:53:30.000+00:00,candidate
+54c18a517468697af717141f,Eloise,Ce***r,"Co-Founder United Ride, Studio Owner Richmond, Camberwell, Brighton, Hampton, Docklands, Mosman, DW",KX Pilates,kx.com.au,KX Pilates,2026-09-22T03:29:30.000+00:00,candidate
+5e7f78c4998acf000193fb66,Amy,Ca***n,Product Engagement Partner,KX Pilates,kx.com.au,KX Pilates,2026-09-22T09:26:48.000+00:00,candidate
+66f1a4d43fa17400019e42c6,Ben,Wo***d,Founder and CEO,REVL Training,revltraining.com,REVL Training,2026-09-27T07:51:23.161+00:00,in-sales-nav
+66fab80378dcdd0001feea9a,Cassie,Gr***n,Head of Programming,REVL Training,revltraining.com,REVL Training,2026-09-07T09:07:33.000+00:00,candidate
+64ff3a9477defa0001de238a,Jake,He***y,Head of Product,REVL Training,revltraining.com,REVL Training,2026-08-31T13:45:42.186+00:00,candidate
+6635043edb3b35000136d230,Josie,Ha***s,Head of Marketing,REVL Training,revltraining.com,REVL Training,2026-10-03T13:23:30.000+00:00,candidate
+6811eaf788c8de00016bb61e,J,Rt,Head of Technology,REVL Training,revltraining.com,REVL Training,2026-09-15T06:57:37.000+00:00,candidate
+66f53456a37f6b00018f94fb,Josh,Mi***n,"Founder, Director",REVL Training,revltraining.com,REVL Training,2026-09-29T23:33:11.708+00:00,in-sales-nav
+60d4bc71dc4a3400017ac514,Lauren,Mc***d,APAC Franchise Operations + Development Manager,REVL Training,revltraining.com,REVL Training,2026-09-07T20:46:06.000+00:00,candidate
+66fa6e6db517080001878cc9,Andrew,Si***s,Franchise Founder and CEO,Vision Personal Training Franchises Australia & New Zealand,visionpersonaltraining.com,Vision Personal Training,2026-09-08T19:30:26.000+00:00,candidate
+5b30960da6da98ebcc96b021,James,Du***y,Head of Marketing,Vision Personal Training Franchises Australia & New Zealand,visionpersonaltraining.com,Vision Personal Training,2026-09-07T20:14:27.000+00:00,candidate
+5ad3acdda6da98cdea9e8a0f,Jack,Sm***h,Managing Director,Vision Personal Training Franchises Australia & New Zealand,visionpersonaltraining.com,Vision Personal Training,2026-09-19T12:25:03.000+00:00,candidate
+64246563a51d570001bb2311,Zoe,Sk***s,Head of Marketing,Vision Personal Training Franchises Australia & New Zealand,visionpersonaltraining.com,Vision Personal Training,2026-08-12T01:28:04.598+00:00,candidate
+606a887dd10e0600012bbaff,Rebecca,Ca***n,General Manager,Vision Personal Training Franchises Australia & New Zealand,visionpersonaltraining.com,Vision Personal Training,2026-09-11T21:26:49.000+00:00,candidate
+5b29a463a6da988ac857ae76,Kyle,Jo***n,General Manager,Vision Personal Training Franchises Australia & New Zealand,visionpersonaltraining.com,Vision Personal Training,2026-09-06T04:23:49.000+00:00,candidate
+66a77520dab32400015cca61,Benny,Ru***l,Owner & Managing Director - Eastlakes Studio,Vision Personal Training Franchises Australia & New Zealand,visionpersonaltraining.com,Vision Personal Training,2026-10-04T03:33:55.000+00:00,in-sales-nav
+5aa79b66a6da98a307ca8f22,Victor,Ra***z,General Manager Operations,Vision Personal Training Franchises Australia & New Zealand,visionpersonaltraining.com,Vision Personal Training,2026-09-07T10:34:16.000+00:00,candidate
+54a996ce74686930ad29d214,Brad,Ta***m,Head of Group Operations,Vision Personal Training Franchises Australia & New Zealand,visionpersonaltraining.com,Vision Personal Training,2026-07-30T18:51:00.469+00:00,candidate
+631f0b8a5578e60001570122,Thomas,Mc***n,General Manger,Vision Personal Training Franchises Australia & New Zealand,visionpersonaltraining.com,Vision Personal Training,2026-09-06T15:16:33.000+00:00,candidate
+642593f38dbcd60001fce388,Dan,Bo***a,CEO/ Founder,THE YARD GYM,theyardgym.com.au,The Yard Gym,2026-09-08T00:53:36.000+00:00,in-sales-nav
+671fdb3b7edc930001613674,Matt,To***e,Head of Programming,THE YARD GYM,theyardgym.com.au,The Yard Gym,2026-09-05T09:21:29.000+00:00,candidate
+5570a9917369647c3bb80200,Jessica,Bu***n,Head of Digital,THE YARD GYM,theyardgym.com.au,The Yard Gym,2026-09-05T16:52:44.000+00:00,candidate
+69f8345b7c868c000105b44c,Breanne,Be***t,Founding General Manager,THE YARD GYM,theyardgym.com.au,The Yard Gym,2026-09-03T10:01:22.000+00:00,candidate
+564ada94a6da981e83026c10,Dante',He***y,Founding Coach: Strength & Conditioning,THE YARD GYM,theyardgym.com.au,The Yard Gym,2026-09-21T08:09:50.000+00:00,candidate
+64c03b5bac16f7000163944a,Erin,Mc***n,Head Coach,THE YARD GYM,theyardgym.com.au,The Yard Gym,2026-07-26T13:03:55.000+00:00,candidate
+666193d8566d0a00011612ee,Laura,Ba***a,Head of Group Fitness,One Playground,oneplayground.com.au,One Playground,2026-10-03T20:54:53.000+00:00,in-sales-nav
+66f1734159ebdc0001026843,Justin,As***y,Founder / CEO,One Playground,oneplayground.com.au,One Playground,2026-10-03T09:58:53.000+00:00,in-sales-nav
+667e6a5ae13a3b00011a26c0,Billy,Wa***s,Head of Member Experience,One Playground,oneplayground.com.au,One Playground,2026-09-21T05:43:37.000+00:00,candidate
+60c00276a6f0e10001f6cded,Matt,Du***n,Head of Coaching,One Playground,oneplayground.com.au,One Playground,2026-09-14T11:29:28.615+00:00,candidate
+68956f758dd28d00019aec61,Stephanie,Th***s,Member Experience Manager,One Playground,oneplayground.com.au,One Playground,2026-09-06T03:44:18.000+00:00,candidate
+60d498e31f2b4300013ec701,Chris,Lee,Chief Operating Officer,One Playground,oneplayground.com.au,One Playground,2026-09-20T21:46:47.000+00:00,in-sales-nav
+60dbe243aab8ea0001883f06,Robert,Co***g,Head of Marketing,One Playground,oneplayground.com.au,One Playground,2026-09-22T06:25:42.000+00:00,candidate
+60766040182ee70001291aa9,Clint,Se***n,Head of Technology,One Playground,oneplayground.com.au,One Playground,2026-10-03T12:11:16.000+00:00,in-sales-nav
+66fb9e0e84e2920001c40248,Serra,Bu***n,Creative Director | Co-Founder,One Playground,oneplayground.com.au,One Playground,2026-10-03T16:36:23.000+00:00,in-sales-nav
+54a5f58f7468692abf72f6b6,Daniel,Bo***n,Strategic Corporate & Partnerships Manager (New Gym Openings),One Playground,oneplayground.com.au,One Playground,2026-09-21T08:22:17.000+00:00,candidate
+5f5e43fdc9bef10001fcb626,Emma,Jo***s,Head Coach,One Playground,oneplayground.com.au,One Playground,2026-10-03T18:55:39.000+00:00,candidate
+57d9a484a6da98724a5c10d1,Nick,Wh***y,Head Coach,One Playground,oneplayground.com.au,One Playground,2026-09-07T03:12:05.108+00:00,candidate
+5d0ba37af6512562707c7b5c,Amie,He***n,Head Coach,One Playground,oneplayground.com.au,One Playground,2026-09-12T00:37:36.000+00:00,candidate
+60bdf3aa6a2e740001b858c0,Jessica,Co***n,Head of Digital Product Delivery,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-09-26T21:41:37.000+00:00,in-sales-nav
+673aa9dd2d89e10001d2e204,Clare,Ch***n,Head of Retention,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2025-09-08T22:12:33.142+00:00,candidate
+6354210db88cbf00010b2b9a,Khanet,Bo***t,Head of Fitness,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-09-20T00:00:10.000+00:00,candidate
+60f75cecf22bc90001d0a12b,Amie,Le***r,Head of Marketing - Fitness First,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-10-04T06:35:36.000+00:00,candidate
+66928f0cb3dd540001addfa3,Jordan,Th***s,Head of Marketing,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-09-21T05:57:48.000+00:00,candidate
+60cc95319533a9000151344d,Darrell,Ne***g,Head of Data and Analytics,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-09-16T13:13:40.288+00:00,candidate
+613aeb100f2a200001d1db47,Tane,Ha***r,Product Manager,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-09-08T10:00:01.000+00:00,candidate
+66f3fc61dcc5f60001ecce32,Joanne,Po***r,Head of Marketing - Fitness First & Barrys - 12 Month Contract,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-10-02T19:59:10.313+00:00,candidate
+60d346a449ee87000172ba53,Ryan,Ha***k,Head of Operational Performance,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-09-20T21:42:35.000+00:00,candidate
+57d52dada6da98537a47462e,Nicole,Gr***r,National Group Fitness Manager,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-09-18T23:33:52.000+00:00,candidate
+63a841705fc879000171990a,Vicky,Bo***n,Head of Marketing - Goodlife and Zap,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-09-05T16:46:29.000+00:00,candidate
+5f74d50a16e3d70001f71988,George,Re***d,Executive General Manager,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-10-06T12:49:12.000+00:00,candidate
+618896e4eccf380001d5318c,Joe,Wh***e,Head of IT Operations,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-09-05T04:46:03.000+00:00,candidate
+557098f573696466137b7e00,Rikki,Fe***k,General Manager - Operations,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-09-07T03:53:13.000+00:00,candidate
+66fcd60136c0c100016b2f43,Brett,Le***s,Product Manager | Sales & Marketing,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-09-05T12:52:03.000+00:00,candidate
+60cba28bb086640001187c6b,Shaun,Ma***s,General Manager Property and Procurement,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-09-23T08:30:01.000+00:00,candidate
+60cc6a0decdb5c0001742ac6,Luc,Mc***n,Product Manager - Core CRM & Billing,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-09-07T17:29:38.000+00:00,candidate
+5d563f1cf65125299cde0905,Ben,Fr***d,Product Manager - CRM & Billing,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-09-17T04:48:53.000+00:00,candidate
+6254f2eea2f65900019a972c,Rob,Wa***n,Chief Technology & Security Officer,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-10-03T07:39:26.000+00:00,candidate
+607e9f99ad3b0500015abd85,Tim,Ki***g,Executive General Manager - People & Culture,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-09-07T17:06:36.000+00:00,candidate
+68830a387c4fb70001662602,Sara,Du***h,Executive General Manager Marketing & PR ANZ,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-09-08T11:39:37.000+00:00,candidate
+57e0f04aa6da987d7c311235,Sophie,We***r,General Manager Marketing Goodlife Health Clubs,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-09-07T11:15:18.000+00:00,candidate
+611075f415ee4d0001de544d,Andy,Ch***n,Executive General Manager-Fitness and Lifestyle Group Australia,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-09-24T20:11:26.333+00:00,candidate
+635a0579d72aae0001e234f4,Dat,Do,Partnerships Relation Manager,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-10-09T19:53:45.051+00:00,candidate
+54c23acd7468697af751d086,Manit,Ch***i,Head of Information Technology,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-09-08T08:40:03.628+00:00,candidate
+5fc627f3f21485000162bb89,Ellyn,Mc***h,Head of Lifecycle Marketing & Automation,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-09-10T06:35:49.000+00:00,candidate
+5d69d65aa3ae61e983a27f6a,Kate,Ro***s,Marketing Manager | Website & Digital Optimisation,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-10-07T18:24:43.285+00:00,candidate
+627a38d971114100019e5c86,Melissa,Ma***y,"Territory Group Fitness Manager, NSW & QLD",Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-09-07T11:50:53.000+00:00,candidate
+631dc34ce37e200001fba991,Elle,Bu***t,Marketing Manager | Barry's,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-09-06T01:47:11.000+00:00,candidate
+64259a1c3dbf6d0001bda168,Jason,Ca***r,Fitness Manager,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-09-06T23:54:08.000+00:00,candidate
+60d1bea375b95c00018b6140,Matthew,Fe***n,Group Fitness Manager,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-09-15T06:47:02.000+00:00,candidate
+54ec127c746869444cd5bc49,Roger,We***n,Chief Executive Officer,World Gym Australia,worldgymaustralia.com,World Gym Australia,2026-10-04T06:16:09.000+00:00,in-sales-nav
+6274cb4fe8246b0001d7266f,Michael,Da***n,Club General Manager,World Gym Australia,worldgymaustralia.com,World Gym Australia,2026-06-05T15:32:34.530+00:00,candidate
+611096fb1df0700001b3e46b,Troy,Ba***r,Club General Manager,World Gym Australia,worldgymaustralia.com,World Gym Australia,2026-09-23T09:50:35.000+00:00,candidate
+5d30364cf65125e446aedc81,Monique,Ni***t,Club General Manager,World Gym Australia,worldgymaustralia.com,World Gym Australia,2026-09-17T05:44:02.000+00:00,candidate
+68bfc2c8d1d34c00018f3a8c,Cate,Bu***s,Club General Manager,World Gym Australia,worldgymaustralia.com,World Gym Australia,2026-09-07T23:03:23.000+00:00,candidate
+628f0f6296c6ca000126f2ab,Jordan,As***y,Club General Manager,World Gym Australia,worldgymaustralia.com,World Gym Australia,2026-09-23T08:21:41.000+00:00,candidate
+66f010ad1ae9f600016574d2,Paul,Mu***y,Club General Manager,World Gym Australia,worldgymaustralia.com,World Gym Australia,2026-09-22T08:02:45.000+00:00,candidate
+66220736ec9b1700076a58c2,Mykala,Jo***p,Club General Manager,World Gym Australia,worldgymaustralia.com,World Gym Australia,2026-09-23T09:32:28.814+00:00,candidate
+6a27bac882b0a90001c5c58d,Kellie,Ha***n,Franchisee Operations Manager,World Gym Australia,worldgymaustralia.com,World Gym Australia,2026-10-04T00:38:01.000+00:00,candidate
+601a5b792619f600016fedc8,Amit,Sh***t,Fitness Manager,World Gym Australia,worldgymaustralia.com,World Gym Australia,2025-09-22T11:24:32.919+00:00,candidate
+54a3b6c97468693676fac60c,Belinda,Zi***n,Fitness Manager,World Gym Australia,worldgymaustralia.com,World Gym Australia,2026-09-06T12:44:35.000+00:00,candidate
+60f56ff8c7707300016fac1c,Jody,Ma***m,Group Fitness Manager,World Gym Australia,worldgymaustralia.com,World Gym Australia,2026-09-18T00:49:10.229+00:00,candidate
+60691b9e6606e800018de299,Tahnee,Do***n,National Fitness Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-09-08T03:18:41.000+00:00,candidate
+5aeb930ea6da98017fc47f8b,James,Br***n,National Group Fitness Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-10-03T19:56:22.000+00:00,candidate
+624d37a0835e7500015e59c5,Luke,Ko***s,Club General Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-10-04T08:26:02.000+00:00,candidate
+57e11f46a6da987da422496a,Mayank,Ba***a,Club General Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-09-22T08:38:46.000+00:00,candidate
+631f0e7513e4a100013a4376,Clay,Wi***s,Club General Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-09-05T08:47:53.000+00:00,candidate
+680e0ffe5a87250001d85984,Justin,Be***s,Club General Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-09-07T13:01:38.000+00:00,candidate
+61911214c42fad0001a37dab,Mackenzie,Pi***o,Club General Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-09-01T11:32:55.214+00:00,candidate
+63fc93901dbb0f0001944e9e,Bec,Gi***s,Club General Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-10-03T08:40:07.000+00:00,candidate
+605b3b343268de00011de4aa,Haydn,Wi***s,Club General Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-09-06T01:24:22.000+00:00,candidate
+60b8ae4b3532c2000169c338,Narelle,Mu***y,Club General Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-09-23T07:45:31.000+00:00,candidate
+57e11989a6da987ddc72917d,Mark,He***e,Club General Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-10-09T21:47:49.971+00:00,candidate
+57df6be7a6da980af979dea9,Genesis,Cu***n,Club General Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-10-03T23:18:32.000+00:00,candidate
+66fa6890cb6e6d0001488fcf,Poppy,Ma***o,Marketing Manager and Personal Trainer,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-09-06T06:37:57.000+00:00,candidate
+68087e8dfc256e0001ec8cb9,Peta,Ba***y,Group Fitness Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-08-23T16:42:29.000+00:00,candidate
+66a67f083330c40001febd5b,Anna,Ve***s,Group Fitness Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-09-06T23:16:33.000+00:00,candidate
+62d11d3d8901bf0001c076c1,Kyle,Ma***e,Club Manager / Head Coach,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-10-04T01:50:50.000+00:00,candidate
+662db9cbebf1870007829012,Gary,Tr***n,Head Coach,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-09-06T18:45:01.000+00:00,candidate
+60d416aacb1e9400015e28f4,Ashley,Go***e,Head Coach,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-10-04T01:20:21.000+00:00,candidate
+54a3f6e274686932090e9421,Jeannie,Ma***n,Group Fitness Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-09-06T21:56:26.000+00:00,candidate
+5e680d7b1f6f1800014a0d29,Kalen,Co***n,Head of Fitness Operations,Revo Fitness,revofitness.com.au,Revo Fitness,2026-09-06T05:30:31.000+00:00,candidate
+60ed18815826750001c17fba,Andrew,Ho***r,Founder & Managing Director,Revo Fitness,revofitness.com.au,Revo Fitness,2026-10-02T21:28:53.153+00:00,in-sales-nav
+69c991e5f440be00016f4c64,Bec,Sm***h,Chief Marketing Officer,Revo Fitness,revofitness.com.au,Revo Fitness,2026-09-21T08:54:16.000+00:00,candidate
+61034e0e8a582b0001336b60,Flora,Lo***v,Head of Marketing,Revo Fitness,revofitness.com.au,Revo Fitness,2026-10-03T19:51:46.777+00:00,candidate
+60bda1ec83c282000188e75a,Tarran,Gr***h,Head of Marketing & Communications,Revo Fitness,revofitness.com.au,Revo Fitness,2026-10-03T14:28:49.000+00:00,candidate
+6735beb8db9ea00001d4241c,Holly,Br***e,Member Experience Lead,Revo Fitness,revofitness.com.au,Revo Fitness,2026-10-03T10:26:16.000+00:00,candidate
+68da3943ad87800001b00ccf,Aidan,Mi***s,Member Experience Lead,Revo Fitness,revofitness.com.au,Revo Fitness,2026-08-16T14:33:48.000+00:00,candidate
+686755c3018aa0000141fafc,Ollie,He***n,Member Experience Lead,Revo Fitness,revofitness.com.au,Revo Fitness,2026-10-07T10:01:40.625+00:00,candidate
+68c33e998c46ff0001166c02,Ashton,La***y,Member Experience Lead,Revo Fitness,revofitness.com.au,Revo Fitness,2026-07-30T18:51:42.078+00:00,candidate
+62ebe6669ff7b5000194ee96,Michael,Lo***e,Member Experience Lead,Revo Fitness,revofitness.com.au,Revo Fitness,2026-09-22T06:32:05.000+00:00,candidate
+614d7d2ac1921f0001faa4ee,Alex,Wa***n,Member Experience Lead,Revo Fitness,revofitness.com.au,Revo Fitness,2026-09-25T23:01:45.081+00:00,candidate
+6762591cd159d400019cd631,Mia,Co***n,Member Experience Lead,Revo Fitness,revofitness.com.au,Revo Fitness,2026-10-04T01:23:14.000+00:00,candidate
+65364d2c4a09d90001823d46,Chloe,Bu***s,Member Experience Lead,Revo Fitness,revofitness.com.au,Revo Fitness,2026-09-06T14:35:30.000+00:00,candidate
+6649259f554e7d000194649c,Angus,M,Member Experience Lead,Revo Fitness,revofitness.com.au,Revo Fitness,2026-09-07T22:51:29.000+00:00,candidate
+6ab027a37d5fbe0001fb7fee,Roxanne,Ma***e,Member Experience Lead,Revo Fitness,revofitness.com.au,Revo Fitness,2026-10-04T04:23:35.000+00:00,candidate
+6a61e1f4e72e3f00018fc42d,Chelsea,Si***r,Member Experience Lead,Revo Fitness,revofitness.com.au,Revo Fitness,2026-09-15T16:08:32.000+00:00,candidate
+6a64355fb1d0710001116624,Lara,Co***y,Member Experience Lead,Revo Fitness,revofitness.com.au,Revo Fitness,2026-09-20T08:59:43.000+00:00,candidate
+69f9962c87aacd0001454664,Amy,Ja***n,Member Experience Lead,Revo Fitness,revofitness.com.au,Revo Fitness,2026-09-13T05:24:33.000+00:00,candidate
+6631d32a6e455900065155ae,Aamir,Ab***h,Member Experience Lead,Revo Fitness,revofitness.com.au,Revo Fitness,2026-10-04T06:38:54.000+00:00,candidate
+68c752c017869b00017eb045,Harry,Mc***a,Member Experience Lead,Revo Fitness,revofitness.com.au,Revo Fitness,2026-09-07T10:23:22.000+00:00,candidate
+6ac26f307fd07500019be322,Mason,Ro***s,Member Experience Lead,Revo Fitness,revofitness.com.au,Revo Fitness,2026-08-22T23:09:34.000+00:00,candidate
+68f171e4ec2cbb00011d1e99,Archie,Al***n,Member Experience Lead,Revo Fitness,revofitness.com.au,Revo Fitness,2026-09-10T06:21:24.000+00:00,candidate
+626fb3b2236fb700015ecc55,Jacqueline,Go***n,Member Experience Lead,Revo Fitness,revofitness.com.au,Revo Fitness,2026-10-03T10:28:18.000+00:00,candidate
+642aad3c617c6a0001353972,Clare,In***s,Member Experience Lead,Revo Fitness,revofitness.com.au,Revo Fitness,2026-10-05T05:43:45.507+00:00,candidate
+5fc8edf88f6f8300016fc61e,Todd,Ha***t,Member Experience Lead,Revo Fitness,revofitness.com.au,Revo Fitness,2026-09-16T02:59:41.000+00:00,candidate
+68675aef0c02810001e15e43,Shoma,Se***n,Member Experience Lead,Revo Fitness,revofitness.com.au,Revo Fitness,2026-09-22T09:47:46.000+00:00,candidate
+686500cc5cc19500010adbdb,Alexandra,Wa***s,Member Experience Lead,Revo Fitness,revofitness.com.au,Revo Fitness,2026-09-22T08:08:35.000+00:00,candidate
+6a2aa4ec5ff78b0001aadb42,Nathan,Br***n,Head of Fitness Operations,Anytime Fitness Australia,anytimefitness.com.au,Anytime Fitness Australia,2026-08-22T11:21:45.000+00:00,candidate
+5abffb7da6da98ce652bc76b,Richard,Pe***l,Co-Founder,Anytime Fitness Australia,anytimefitness.com.au,Anytime Fitness Australia,2026-09-25T19:34:08.000+00:00,in-sales-nav
+54a1ff4a74686930c29b0404,Marcello,Ji***z,Co-Founder,Anytime Fitness Australia,anytimefitness.com.au,Anytime Fitness Australia,2026-09-07T12:15:43.000+00:00,candidate
+632abd558192e8000102e7c8,Georgie,Jo***s,Brand Partnerships Manager,Anytime Fitness Australia,anytimefitness.com.au,Anytime Fitness Australia,2026-09-04T08:52:18.000+00:00,candidate
+54a500f07468693209c17774,Steve,Ho***t,General Manager,Anytime Fitness Australia,anytimefitness.com.au,Anytime Fitness Australia,2026-10-04T07:34:32.000+00:00,candidate
+685cbf412c5bf400018ea213,Clancy,Iz***d,General Manager,Anytime Fitness Australia,anytimefitness.com.au,Anytime Fitness Australia,2026-10-03T13:50:43.000+00:00,candidate
+6992e09c8344b20001d90d91,Lilian,Fa***h,General Manager,Anytime Fitness Australia,anytimefitness.com.au,Anytime Fitness Australia,2026-08-21T16:01:47.953+00:00,candidate
+61d1c6a769143e00013bf3cc,Tom,Te***e,General Manager,Anytime Fitness Australia,anytimefitness.com.au,Anytime Fitness Australia,2026-09-06T08:22:41.000+00:00,candidate
+62b2f03a9e7553000140b74e,Christy,Vu,General Manager,Anytime Fitness Australia,anytimefitness.com.au,Anytime Fitness Australia,2026-10-03T10:16:58.000+00:00,candidate
+5ebaef2848d76d0001074291,Aaron,O'***a,General Manager - Franchisee,Anytime Fitness Australia,anytimefitness.com.au,Anytime Fitness Australia,2026-10-03T23:32:01.000+00:00,candidate
+54eb11c674686931e259bf07,Rob,St***c,Club General Manager,Anytime Fitness Australia,anytimefitness.com.au,Anytime Fitness Australia,2026-09-22T07:41:41.000+00:00,candidate
+60276716f400230001cf6745,Blake,Jo***n,Assistant General Manager - Casey Group,Anytime Fitness Australia,anytimefitness.com.au,Anytime Fitness Australia,2026-10-05T03:57:48.000+00:00,candidate
+611230ec5929f00001e00666,Mo,Ra***i,Head Coach,Anytime Fitness Australia,anytimefitness.com.au,Anytime Fitness Australia,2026-09-12T08:33:59.000+00:00,candidate
+6a8416e6c8bf9e0001975255,Leah,Li***o,Social Media and Marketing Manager,Anytime Fitness Australia,anytimefitness.com.au,Anytime Fitness Australia,2026-10-04T09:31:49.003+00:00,candidate
+673889a6cf7a6600012d96c7,Elodie,Tr***y,Fitness Manager,Anytime Fitness Australia,anytimefitness.com.au,Anytime Fitness Australia,2026-10-03T22:03:02.000+00:00,candidate
+643001682ebb120001e76335,Rebecca,Ne***n,Anytime Fitness Manager,Anytime Fitness Australia,anytimefitness.com.au,Anytime Fitness Australia,2026-06-28T19:40:33.000+00:00,candidate
+5f50d721725e61000149bb52,Morris,So***g,Head Coach,Anytime Fitness Australia,anytimefitness.com.au,Anytime Fitness Australia,2026-09-06T02:47:18.000+00:00,candidate
+631f0efe910fc4000115ee8e,Winona,Du***r,Social Media Marketing Manager,Anytime Fitness Australia,anytimefitness.com.au,Anytime Fitness Australia,2026-09-13T18:40:02.000+00:00,candidate
+674e7edc5aecb000015f155c,My,Ng***n,Marketing Manager,Anytime Fitness Australia,anytimefitness.com.au,Anytime Fitness Australia,2025-11-18T00:48:09.788+00:00,candidate
+5e6813415c8f75008c776957,Michelle,Ro***n,Head of Marketing,Virgin Active Australia,virginactive.com.au,Virgin Active Australia,2026-10-04T07:04:07.000+00:00,candidate
+57e15544a6da987da42393f5,Aaron,Se***y,Product Manager,Virgin Active Australia,virginactive.com.au,Virgin Active Australia,2026-09-15T06:51:20.000+00:00,candidate
+54a13b3469702d231f1c8801,John,Mc***y,General Manager,Virgin Active Australia,virginactive.com.au,Virgin Active Australia,2026-09-28T21:57:41.662+00:00,candidate
+5d5cfb7580f93ef6b0be2a5e,Bill,Liu,Club General Manager,Virgin Active Australia,virginactive.com.au,Virgin Active Australia,2026-09-21T12:39:04.093+00:00,candidate
+54c21ea37468691639951e7b,Emma,Cl***d,Club General Manager,Virgin Active Australia,virginactive.com.au,Virgin Active Australia,2026-10-03T16:46:38.000+00:00,candidate
+642c1c761365ac000119a7dc,Rob,Fl***t,PT Head Coach,Virgin Active Australia,virginactive.com.au,Virgin Active Australia,2026-09-19T11:35:15.000+00:00,candidate
+60ce7133ae2cba0001d47771,Simba,Go***e,Customer Experience Manager,Virgin Active Australia,virginactive.com.au,Virgin Active Australia,2026-09-08T00:06:41.000+00:00,candidate
+631dcbbf962e2d0001bfac02,Katie,Pym,Exercise Experience Manager,Virgin Active Australia,virginactive.com.au,Virgin Active Australia,2026-09-23T08:45:45.000+00:00,candidate
+5d4f058bf65125d24fde28df,Luke,Br***d,Fitness Manager,Virgin Active Australia,virginactive.com.au,Virgin Active Australia,2026-09-06T22:23:47.000+00:00,candidate
+60ccf13e29d06f00017167b4,George,An***s,Chief Marketing Officer,Planet Fitness Australia,planetfitnessaustralia.com.au,Planet Fitness Australia,2026-09-05T12:50:27.000+00:00,candidate
+63908205dfe03a00013f2a10,Josh,Mu***i,Head of Operations,Planet Fitness Australia,planetfitnessaustralia.com.au,Planet Fitness Australia,2026-09-24T10:39:02.558+00:00,in-sales-nav
+5e8978c62eeca400014e2d3f,Melissa,Ca***o,General Manager,Planet Fitness Australia,planetfitnessaustralia.com.au,Planet Fitness Australia,2026-09-06T05:33:27.000+00:00,candidate
+61020ee91cc28c000160547e,Emily,Sa***f,General Manager,Planet Fitness Australia,planetfitnessaustralia.com.au,Planet Fitness Australia,2026-10-05T01:15:33.196+00:00,candidate
+61b42903819b2e00014fa598,Jonathon,Al***k,General Manager,Planet Fitness Australia,planetfitnessaustralia.com.au,Planet Fitness Australia,2026-10-02T02:52:59.233+00:00,candidate
+6870993cc84dd50001cc60a8,Cade,Ra***d,General Manager,Planet Fitness Australia,planetfitnessaustralia.com.au,Planet Fitness Australia,2026-10-04T05:33:13.000+00:00,candidate
+6ab60a098147f10001995fe3,Ami,Sc***z,General Manager,Planet Fitness Australia,planetfitnessaustralia.com.au,Planet Fitness Australia,2026-10-04T04:27:45.000+00:00,candidate
+642497feaf32790001a8c290,Sameer,Ali,General Manager,Planet Fitness Australia,planetfitnessaustralia.com.au,Planet Fitness Australia,2026-09-06T10:46:42.000+00:00,candidate
+5e278aeb38eb070098ed5da1,Daniel,Mi***r,Assistant General Manager,Planet Fitness Australia,planetfitnessaustralia.com.au,Planet Fitness Australia,2026-09-06T00:14:20.000+00:00,candidate
+673b27d1d0e76b0001c19f7c,Ross,Gr***m,Assistant General Manager,Planet Fitness Australia,planetfitnessaustralia.com.au,Planet Fitness Australia,2026-09-16T03:45:23.000+00:00,candidate
+642ec7c4f2fe4d0001c77d7e,Emilia,Le***r,Assistant General Manager,Planet Fitness Australia,planetfitnessaustralia.com.au,Planet Fitness Australia,2026-10-03T22:13:52.000+00:00,candidate
+65a15f648b1cbe00018e6805,Kate,Ma***e,General Club Manager,Planet Fitness Australia,planetfitnessaustralia.com.au,Planet Fitness Australia,2026-10-04T06:35:08.000+00:00,candidate
+68f2a7c3f105850001dde989,Chrissie,Br***n,Fitness Manager,Planet Fitness Australia,planetfitnessaustralia.com.au,Planet Fitness Australia,2026-10-03T21:25:37.000+00:00,candidate
+54eac4db74686931e2192f00,Michael,Ra***y,Co-Chief Executive Officer,STRONG Pilates,strongpilates.com.au,STRONG Pilates,2026-10-03T06:57:14.000+00:00,candidate
+684fc795207d470001f84700,Dinda,Fa***h,Head of Marketing,STRONG Pilates,strongpilates.com.au,STRONG Pilates,2026-09-13T03:10:09.000+00:00,candidate
+62b13485a13884000186d19d,Isabelle,Lu***n,Junior Product Manager,STRONG Pilates,strongpilates.com.au,STRONG Pilates,2026-10-05T14:46:43.560+00:00,candidate
+6480db096992a200015803a6,Alyce,Lu***k,Director of Operations & Onboarding (Canada),STRONG Pilates,strongpilates.com.au,STRONG Pilates,2026-10-04T07:22:33.000+00:00,candidate
+6111573118d7a400012d0bac,Kate,Do***n,Head of Franchise Marketing,STRONG Pilates,strongpilates.com.au,STRONG Pilates,2026-09-28T07:19:23.850+00:00,candidate
+61382f929816740001bf7846,Alex,Fe***s,Marketing Manager,STRONG Pilates,strongpilates.com.au,STRONG Pilates,2026-10-03T07:33:24.000+00:00,candidate
+65c77538163b2b000176aa62,Kylie,Ke***r,Studio Experience Manager,STRONG Pilates,strongpilates.com.au,STRONG Pilates,2026-10-09T04:43:27.602+00:00,candidate
+623aeeffe9166e00015f2e29,Blessing,E,Front of House & Member Experience | Strong Pilates Leicester,STRONG Pilates,strongpilates.com.au,STRONG Pilates,2026-09-22T06:18:37.000+00:00,candidate
+66f95a669901a20001aa7347,Saara,Bo***n,Head Coach,STRONG Pilates,strongpilates.com.au,STRONG Pilates,2026-09-05T07:34:32.000+00:00,candidate
+6429a7264afdda00017e4bcf,Heidi,Fr***n,Head Coach,STRONG Pilates,strongpilates.com.au,STRONG Pilates,2026-09-23T05:08:55.000+00:00,candidate
+54a2e0797468692e7154c943,Paige,Wo***d,Head Coach,STRONG Pilates,strongpilates.com.au,STRONG Pilates,2026-09-15T06:37:23.000+00:00,candidate
+66a8c04f3c00df0001c63adb,Billy,Ly***h,Studio Manager and Head Coach at Strong Pilates Warren Street,STRONG Pilates,strongpilates.com.au,STRONG Pilates,2026-08-22T06:01:44.000+00:00,candidate
+60f78cf52f1bfc0001daaeb3,Ryan,Ho***n,Chief Executive Officer,Les Mills Asia Pacific,lesmills.com.au,Les Mills Asia Pacific,2026-08-19T08:47:18.000+00:00,candidate
+60ed53639630ee0001cb87be,Nathan,Ro***n,Managing Director,Les Mills Asia Pacific,lesmills.com.au,Les Mills Asia Pacific,2026-10-09T07:04:30.749+00:00,in-sales-nav
+617ab0b9a4722700017b173d,Minh,L,Business Partnerships Manager,Les Mills Asia Pacific,lesmills.com.au,Les Mills Asia Pacific,2026-08-27T18:03:35.451+00:00,candidate
+6493b5f0fbfbd500015caeb0,Sam,Wi***r,Lead Partnerships Manager,Les Mills Asia Pacific,lesmills.com.au,Les Mills Asia Pacific,2026-09-05T09:36:10.000+00:00,candidate
+685b6b2f6c33ce00011e59a4,Adam,Mo***s,Business Partnerships Manager,Les Mills Asia Pacific,lesmills.com.au,Les Mills Asia Pacific,2026-09-06T21:14:35.000+00:00,candidate
+60a808897c6cf30001ffcc9f,Hylton,Dr***e,Chief Operating Officer Les Mills Asia Pacific,Les Mills Asia Pacific,lesmills.com.au,Les Mills Asia Pacific,2026-08-22T13:20:38.000+00:00,candidate
+54c1bca17468697af7c47b3f,Jasmine,Bo***r,Business Partnerships Manager for QLD and TAS,Les Mills Asia Pacific,lesmills.com.au,Les Mills Asia Pacific,2026-09-20T21:32:50.000+00:00,candidate
+5e8d64e363fe76000165c572,Louis,Lo***e,"Business Partnerships Manager (Malayisa, Philippines & Brunei)",Les Mills Asia Pacific,lesmills.com.au,Les Mills Asia Pacific,2026-08-23T09:40:36.000+00:00,candidate
+5646f457a6da986c5802adc7,Natasha,Ni***i,"Business Partnerships Manager for Indonesia, Maldives, Guam, Papua New Guinea",Les Mills Asia Pacific,lesmills.com.au,Les Mills Asia Pacific,2026-09-21T06:04:25.000+00:00,candidate
+54a7fb40746869705ac4fc5a,Lena,Lim,Marketing Director,Les Mills Asia Pacific,lesmills.com.au,Les Mills Asia Pacific,2026-09-20T07:40:07.000+00:00,candidate
+57d441eea6da98538e76db3a,Joann,Hoo,Marketing Manager (APAC),Les Mills Asia Pacific,lesmills.com.au,Les Mills Asia Pacific,2026-08-10T13:30:07.000+00:00,candidate
+641042536391270001e9b726,Tricia,G,"Marketing, Thailand",Les Mills Asia Pacific,lesmills.com.au,Les Mills Asia Pacific,2025-10-30T09:07:10.474+00:00,candidate
+57d8eb70a6da98723277f1d2,TJ,Gr***t,COO & Co-Founder,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-09-08T08:27:24.000+00:00,in-sales-nav
+60dc143a90bcdc00019420ce,Scott,Ph***n,Head of Marketing,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-09-24T03:16:51.627+00:00,candidate
+64ecee589c1ac70001e28303,Jessie,Bo***n,General Manager,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-10-04T03:37:41.000+00:00,candidate
+54a741e27468696220edcb23,Brad,Wh***a,National Group Fitness Manager,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-08-23T17:38:41.000+00:00,candidate
+54c1b8ff746869163910c73b,Cameron,Bu***y,Club General Manager,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-10-03T08:25:55.000+00:00,candidate
+642aea0ec8ae1800017dd87f,Josh,Ac***n,Club General Manager,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-10-03T19:00:21.000+00:00,candidate
+5e81f2d6cdbf8a00011894e1,Darren,Me***r,General Manager of Fitness Cartel,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-09-10T06:38:35.000+00:00,candidate
+6198c4f9b3633d0001f8c989,Shayne,C,Club General Manager,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-10-03T20:59:02.000+00:00,candidate
+6a82c57f8486a0000110119d,Connor,Be***i,Club General Manager,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-09-06T15:48:45.000+00:00,candidate
+6ab609feedcb100001f15a6d,Simone,To***d,Club General Manager,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-10-04T04:26:56.000+00:00,candidate
+6129def9f9ba870001cc3a7b,Nick,Ki***s,Club General Manager,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-09-10T06:23:57.000+00:00,candidate
+5adb15a3a6da9862c35bd045,Jay,Me***r,General Manager - Business Performance,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-09-06T06:43:36.000+00:00,candidate
+60cd7fd731531d0001f9229a,Sophie,Bo***r,Brand & Marketing Manager,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-10-02T20:57:23.616+00:00,candidate
+6ab09c7a0a024e0001b4f3b8,Thalia,Me***s,Group Fitness Manager,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-10-04T04:23:23.000+00:00,candidate
+54a640797468693676da2cce,Helen,He***y,"Head of Group Fitness, Program Director",TotalFusion Australia,totalfusion.com.au,TotalFusion,2026-10-09T05:49:45.697+00:00,candidate
+643163a2f373af0001bd71b0,Thiago,Me***s,Head of Training and Development,TotalFusion Australia,totalfusion.com.au,TotalFusion,2026-09-07T20:39:58.000+00:00,candidate
+673abbda77fb1e00013853c1,Kane,Bo***e,Program Director,TotalFusion Australia,totalfusion.com.au,TotalFusion,2026-09-30T09:42:16.255+00:00,in-sales-nav
+613058cdfdbca7000173cdd9,Liam,Co***e,General Manager,TotalFusion Australia,totalfusion.com.au,TotalFusion,2026-09-13T18:49:09.000+00:00,candidate
+66e7973a2ed20200013b49b2,Matt,Bu***r,General Manager,TotalFusion Australia,totalfusion.com.au,TotalFusion,2026-09-18T13:08:02.000+00:00,candidate
+57d6d24ea6da9854112a785d,Julia,Cr***r,Assistant Program Director,TotalFusion Australia,totalfusion.com.au,TotalFusion,2026-09-22T09:57:43.000+00:00,candidate
+6719f296311f150001e7f17f,Emma,Pa***e,Assistant Program Director,TotalFusion Australia,totalfusion.com.au,TotalFusion,2026-10-04T04:47:51.000+00:00,candidate
+606ee7410466ba00012b9b89,Ellana,Kr***f,Founder & Head Trainer,TotalFusion Australia,totalfusion.com.au,TotalFusion,2026-08-19T07:40:06.152+00:00,candidate
+5f596376c1a70b0001677fa0,Sam,Me***a,National Fitness and Business Development Manager,TotalFusion Australia,totalfusion.com.au,TotalFusion,2026-09-07T05:12:37.033+00:00,in-sales-nav
+6a246b913799d600014f76d1,Ayden,Ol***r,General Manager Total Fusion Morningside,TotalFusion Australia,totalfusion.com.au,TotalFusion,2026-10-04T01:06:04.000+00:00,candidate
+60c3df967cb5880001aae2cc,Shannon,Wo***f,Head of People and Operations,TotalFusion Australia,totalfusion.com.au,TotalFusion,2026-09-27T00:29:24.700+00:00,candidate
+54a553297468693209a5f38e,Narin,Sa***o,Head of Sales and Operations,TotalFusion Australia,totalfusion.com.au,TotalFusion,2026-09-20T10:04:28.000+00:00,candidate
+6062f8f5c349060001008850,Sandra,Ke***e,Marketing Manager,TotalFusion Australia,totalfusion.com.au,TotalFusion,2026-09-23T03:33:25.000+00:00,candidate
+640f762b8c0d8c00014da7c3,Kaitlin,Mo***n,Director of Operations,FS8 - Pilates. Tone. Yoga.,fs8.com,FS8,2026-09-20T03:33:52.000+00:00,candidate
+689154981a45a900017f1a1c,Toni,Pe***a,General Manager,FS8 - Pilates. Tone. Yoga.,fs8.com,FS8,2026-09-03T12:18:25.000+00:00,candidate
+631c72b3beb0450001fffb0d,Angela,Hu***p,Marketing Manager,FS8 - Pilates. Tone. Yoga.,fs8.com,FS8,2026-09-16T13:19:45.000+00:00,candidate
+6426d1869db60d0001a6c5c1,Natalie,Zhu,Marketing Manager,FS8 - Pilates. Tone. Yoga.,fs8.com,FS8,2026-08-09T23:36:06.000+00:00,candidate
+5f32a4aef0da2e00be8bc7d7,Yovanny,Me***z,FS8 Head Coach Buckhead + Decatur,FS8 - Pilates. Tone. Yoga.,fs8.com,FS8,2026-09-16T13:15:11.000+00:00,candidate
+5ff7fa288cbf45000166d9cf,Victoria,Ke***h,Head Coach,FS8 - Pilates. Tone. Yoga.,fs8.com,FS8,2026-10-03T22:30:35.000+00:00,candidate
+611b40f406497a00010a9dd6,Lilly,Mi***s,Director of Operations,VAURA Pilates,vaurapilates.com,VAURA Pilates,2026-09-11T19:49:00.512+00:00,in-sales-nav
+57d6254da6da980619e3ef86,Ben,Ha***r,Head of Sales & Retention,EMF Australia,emfpc.com.au,EMF Performance & Fitness Centres,2026-09-08T10:42:27.000+00:00,candidate
+610a627f70aac10001c4b83c,Chris,Mo***y,EMF National Head of PT & Fitness.,EMF Australia,emfpc.com.au,EMF Performance & Fitness Centres,2026-09-08T06:07:02.000+00:00,candidate
+54c2893074686916391448a4,Jude,Ta***n,"Director, General Manager",Fitness Inside Out Pty Ltd,fitnessinsideout.com,Fitness Inside Out,2026-10-10T10:59:07.666+00:00,in-sales-nav
+60f114622432bc00017b0b9b,Marika,Be***y,Marketing Manager,Love Athletica,loveathletica.com.au,Love Athletica,2026-10-03T16:25:28.000+00:00,candidate
+66f81be5f20e1e00015bc83f,Fiona,Ro***e,CEO,Fitness Passport,fitnesspassport.com.au,Fitness Passport,2026-10-07T03:47:23.000+00:00,in-sales-nav
+60cbb910d1574200013f586e,Brett,Co***n,Head of Data,Fitness Passport,fitnesspassport.com.au,Fitness Passport,2026-09-15T17:47:15.000+00:00,in-sales-nav
+6405cd9db740e90001f03d32,Lawrence,Na***n,Head of Marketing,Fitness Passport,fitnesspassport.com.au,Fitness Passport,2026-10-08T03:36:40.697+00:00,candidate
+54c1fc207468697af79f5968,Kevin,Od***s,Network Partnerships Manager,Fitness Passport,fitnesspassport.com.au,Fitness Passport,2026-09-21T05:33:43.000+00:00,candidate
+610005442818de0001fbd04b,David,Pa***t,Product Manager,Fitness Passport,fitnesspassport.com.au,Fitness Passport,2026-09-07T17:57:59.000+00:00,candidate
+6863b3ab6984a60001a48b7a,Briony,Gi***n,Product Manager,Fitness Passport,fitnesspassport.com.au,Fitness Passport,2026-09-04T17:51:40.000+00:00,candidate
+6168131e6ef89f0001f2dee0,Josip,At***j,ANZ Network Partnerships Manager,Fitness Passport,fitnesspassport.com.au,Fitness Passport,2026-08-07T07:55:09.593+00:00,candidate
+5e8c0bf84dc9ab000148868a,Jessica,Tr***g,ANZ Network Partnerships Manager,Fitness Passport,fitnesspassport.com.au,Fitness Passport,2026-10-04T09:11:16.000+00:00,candidate
+62d3bb25ed2aa600011f4eaf,Terrie,Fok,"General Manager, Strategy",Fitness Passport,fitnesspassport.com.au,Fitness Passport,2026-09-21T12:38:14.933+00:00,candidate
+54a3afc77468692abf296b0a,Pradeep,De***a,General Manager Technology,Fitness Passport,fitnesspassport.com.au,Fitness Passport,2026-10-07T15:54:28.276+00:00,candidate
+5916e069f6512514895d92d7,Nina,Ng***n,General Manager - Network Development,Fitness Passport,fitnesspassport.com.au,Fitness Passport,2026-10-07T07:40:59.000+00:00,candidate
+57ddd7a3a6da987b015b80f8,Nicole,Bo***d,General Manager Business Development,Fitness Passport,fitnesspassport.com.au,Fitness Passport,2026-10-04T09:12:13.000+00:00,candidate
+6517f5cb1916380001732202,Toby,Fo***d,CEO Founder,Ford Health,fordhealth.com.au,Ford Health,2026-09-25T07:42:45.078+00:00,candidate
+54a434a27468693209891c35,Eric,Pe***y,Head of Growth and Transformation,Ford Health,fordhealth.com.au,Ford Health,2026-10-04T02:51:01.000+00:00,candidate
+64805cb46c5e1f0001cd3290,Matt,Ke***e,Software Product Manager,Ford Health,fordhealth.com.au,Ford Health,2026-09-22T09:21:23.000+00:00,candidate
+69b7b20a5a96550001de7fe7,Andreas,Am***r,Head of Technology,SiSU Health,sisuhealthgroup.com,SiSU Health,2026-08-16T14:08:20.000+00:00,candidate
+57dfae7ca6da980ad27b3329,Shilpa,Sh***r,Product Manager,SiSU Health,sisuhealthgroup.com,SiSU Health,2026-09-04T14:55:02.000+00:00,candidate
+5d4417aa80f93ec4d9c09ba5,Emily,Ga***d,Product Manager,SiSU Health,sisuhealthgroup.com,SiSU Health,2026-09-06T14:06:11.000+00:00,candidate
+6045f33726ae1a000163597b,Simon,El***t,"Head of Product, Strategy & Major Events",SiSU Health,sisuhealthgroup.com,SiSU Health,2026-09-28T10:13:52.843+00:00,in-sales-nav
+677cd94642d9010001367dbf,Patrick,Ha***y,Head of Analytics Insights & Research Partnerships,SiSU Health,sisuhealthgroup.com,SiSU Health,2026-10-04T23:23:38.000+00:00,candidate
+60cca108fa1979000134fca3,James,Ta***r,Chief Product Officer,Mosh | Moshy,getmosh.com,Mosh,2026-07-27T02:13:14.934+00:00,candidate
+60e40f9933eef400018957d4,Nicholas,Ho***n,Chief Marketing Officer,Mosh | Moshy,getmosh.com,Mosh,2026-10-06T01:44:02.789+00:00,candidate
+5fa334496b9aea0001b16c90,Glenn,O'***n,Chief Operating Officer,Mosh | Moshy,getmosh.com,Mosh,2026-09-21T06:40:36.000+00:00,in-sales-nav
+60f094db7238670001db3cb2,Suren,Wi***e,Chief Technology Officer,Mosh | Moshy,getmosh.com,Mosh,2026-09-04T11:23:58.000+00:00,in-sales-nav
+66f856f9f0579b00010c493e,Gabriel,Ba***r,Co-Founder,Mosh | Moshy,getmosh.com,Mosh,2026-10-03T07:59:41.000+00:00,candidate
+66fe3520fc12c200011ad228,David,Na***y,Co-Founder,Mosh | Moshy,getmosh.com,Mosh,2026-09-15T17:49:25.000+00:00,candidate
+605d4be41a60050001588871,Laura,Pi***y,Product Manager,Mosh | Moshy,getmosh.com,Mosh,2026-10-08T08:58:41.611+00:00,candidate
+67a471719c0684000125e473,Joe,Wa***g,Product Design Lead (Manager),Mosh | Moshy,getmosh.com,Mosh,2026-10-07T02:43:18.000+00:00,candidate
+5e85629309a9a60001173d3d,Jane,Ma***y,Marketing Manager,Mosh | Moshy,getmosh.com,Mosh,2026-09-12T06:50:13.844+00:00,candidate
+67627ea4686e9100014938b0,Ollie,Ti***s,Marketing Manager-Paid Social,Mosh | Moshy,getmosh.com,Mosh,2026-09-21T22:44:51.304+00:00,candidate
+66f3bccbfc2ddd0001f98945,Adam,Ko***h,Chief Executive Officer,Sweat,sweat.com,Sweat,2026-10-02T17:40:06.905+00:00,in-sales-nav
+60f15ad81361f30001cc6072,Steven,De***t,"Head of Marketing, Content and Partnerships",Sweat,sweat.com,Sweat,2026-09-26T04:38:00.315+00:00,candidate
+67b812dd91428f000122014e,Chris,To***o,Head of Product,Sweat,sweat.com,Sweat,2026-09-27T01:16:36.593+00:00,in-sales-nav
+57e1e84da6da980926c81928,Becky,Wa***s,App Product Manager,Sweat,sweat.com,Sweat,2026-09-25T03:20:53.000+00:00,candidate
+5fa1dc375899530001759dea,Sarah,Ma***l,Head of Performance Marketing,Sweat,sweat.com,Sweat,2026-09-15T06:21:41.000+00:00,candidate
+61147c040c70850001509030,Claudia,Im***o,Head of Go to Market (Marketing),Sweat,sweat.com,Sweat,2026-10-07T08:12:00.000+00:00,candidate
+65964cb443f4b600012c4f88,Rachel,Mu***y,Affiliate Marketing Lead,Sweat,sweat.com,Sweat,2026-10-04T03:33:25.000+00:00,candidate
+66f772bb27096c000133f022,Sweat,Fi***s,Director of Marketing and Social Media,Sweat,sweat.com,Sweat,2026-09-24T03:10:17.000+00:00,candidate
+611c901920527d00010146d9,Janey,Ma***o,CEO,KIC,kicwellness.com,KIC,2026-10-09T00:17:54.955+00:00,candidate
+5f4f7129924b7e00010c9abc,Nilesh,Pa***l,Chief Executive Officer,KIC,kicwellness.com,KIC,2026-08-22T08:26:47.000+00:00,candidate
+605b01989cd7b200010e66d4,Steph,Sm***h,Co-Founder,KIC,kicwellness.com,KIC,2026-09-18T23:05:01.000+00:00,candidate
+6620bdcef3a3410007467375,Laura,He***w,Co-Founder,KIC,kicwellness.com,KIC,2026-09-20T03:41:13.000+00:00,candidate
+69d496c8ab134d0001476121,Natalie,O'***e,Head of Marketing,KIC,kicwellness.com,KIC,2026-10-02T00:29:20.000+00:00,candidate
+64e85be0efa5ab00010acb98,Audrey,Gu***d,Program Director,KIC,kicwellness.com,KIC,2026-10-08T10:25:29.197+00:00,candidate
+6a4fd4c0cd615a00016da7ca,Keiichi,Ni***a,Managing Director,KIC,kicwellness.com,KIC,2026-09-02T21:37:21.088+00:00,candidate
+60e7d49bb51d1f00016fc272,Charlie,Ca***i,Head of Technology & Platform,KIC,kicwellness.com,KIC,2026-09-24T03:30:42.000+00:00,in-sales-nav
+54eaf0c174686931b82b4604,Tony,Ma***e,General Manager,KIC,kicwellness.com,KIC,2026-10-02T09:25:07.000+00:00,candidate
+67c6488366cb200001592942,Carole,Ki***g,General Manager,KIC,kicwellness.com,KIC,2026-06-06T00:17:11.000+00:00,candidate
+659fc8750845350001fa31a4,Tom,Gr***w,Senior Product Manager,KIC,kicwellness.com,KIC,2026-10-07T04:31:05.245+00:00,candidate
+62ff84a96766d900017aa914,Tess,Dr***k,Marketing,KIC,kicwellness.com,KIC,2026-09-26T06:31:46.813+00:00,candidate
+57d51191a6da985386c2cabe,Georgia,Wi***n,Marketing & Events @KICStudio,KIC,kicwellness.com,KIC,2026-10-04T07:33:08.000+00:00,candidate
+60e13a4dd90e5a00011a74da,Jarron,Ai***n,CEO & Founder,Hapana,hapana.com,Hapana,2026-09-21T04:28:48.000+00:00,candidate
+60cc9c982783f6000105e01b,Alan,Sa***z,Chief Operating Officer,Hapana,hapana.com,Hapana,2026-09-06T10:07:11.000+00:00,candidate
+6788aedfbdfe5800013e0110,Travis,Sh***n,Chief Technology Officer,Hapana,hapana.com,Hapana,2026-10-07T15:06:29.515+00:00,candidate
+55befc757369644f383b0c00,Gopal,Ag***l,Director of Product Operations,Hapana,hapana.com,Hapana,2026-10-08T03:50:07.775+00:00,candidate
+6007e2f692b977000143fde1,Tais,Ma***i,Product Owner,Hapana,hapana.com,Hapana,2026-09-30T10:32:54.000+00:00,candidate
+61007b98771b580001caf819,Lakshmi,Ko***a,Head of Product,Hapana,hapana.com,Hapana,2026-09-19T21:19:41.000+00:00,candidate
+67deaeb47514800001284b62,Milena,Za***i,Head of Marketing,Hapana,hapana.com,Hapana,2026-10-03T11:40:56.000+00:00,candidate
+5b6263a2060cd4299a1fb0a1,Vineet,Ag***l,Director of Digital Platforms,Hapana,hapana.com,Hapana,2026-10-06T03:29:58.000+00:00,candidate
+6090b9ba9c45b20001ac357a,Manish,Ag***l,Director of Technology,Hapana,hapana.com,Hapana,2026-09-18T08:28:15.000+00:00,candidate
+5aab1feda6da98273d847da4,Holly,Br***r,Product Manager,Hapana,hapana.com,Hapana,2026-10-04T07:23:15.000+00:00,candidate
+5f5377a3025aa6000152bf22,Sasha,Ro***l,"Director, Revenue Strategy & Operations",Hapana,hapana.com,Hapana,2026-09-28T23:29:05.071+00:00,candidate
+6873dbbb74088d0001d884a2,Rajan,Csm,Product Test Manager,Hapana,hapana.com,Hapana,2026-09-15T09:23:47.000+00:00,candidate
+5accbf61a6da9874746143b3,Joshua,Ol***r,CTO,recovr,recovr.com,Recovr,2026-10-10T08:01:22.740+00:00,candidate
+60f65a0013361c0001cc73cd,Barry,Mc***d,CEO,NovoFit,novofit.com.au,NovoFit,2026-09-07T12:51:45.000+00:00,in-sales-nav
+604ff306f7f7e3000104c413,Daniel,Wa***e,Chief Operating Officer,NovoFit,novofit.com.au,NovoFit,2026-09-06T07:36:12.000+00:00,in-sales-nav
+57d48ffba6da9853a6614673,Corey,Ea***r,Group Chief Operating Officer - NovoGroup,NovoFit,novofit.com.au,NovoFit,2026-08-31T05:58:25.669+00:00,in-sales-nav
+5abe71a3a6da98fd9aca0ece,Jason,El***s,CTO,Your Reformer,yourreformer.com.au,Your Reformer,2026-10-04T05:03:15.000+00:00,candidate
+57d451cea6da9853ee9623fb,Suyesh,Ba***a,Product Owner,Your Reformer,yourreformer.com.au,Your Reformer,2026-10-04T11:15:15.000+00:00,in-sales-nav
+54a4dbc874686938ac025969,Emma,St***y,Founder,Your Reformer,yourreformer.com.au,Your Reformer,2026-10-05T17:56:44.021+00:00,candidate
+5ffc2cb45a52850001ac5ddb,Ben,St***y,Managing Director,Your Reformer,yourreformer.com.au,Your Reformer,2026-10-04T00:19:15.634+00:00,in-sales-nav
+6621f043011cef00068b79da,Alison,Ro***s,Director of Operations,Your Reformer,yourreformer.com.au,Your Reformer,2026-10-10T15:12:11.440+00:00,in-sales-nav
+67c605eefc5a020001193945,Katherine,Gr***y,Head of Marketing - DTC,Your Reformer,yourreformer.com.au,Your Reformer,2026-09-08T11:39:03.000+00:00,candidate
+678dd8ea6506c900011425cb,Traceena,Pe***n,General Manager - North America,Your Reformer,yourreformer.com.au,Your Reformer,2026-10-06T15:17:44.000+00:00,candidate
+651678abddab4c00019e6661,Lindsey,No***n,Head of Commercial Sales - Fitness Vertical,Your Reformer,yourreformer.com.au,Your Reformer,2026-09-10T19:10:45.000+00:00,candidate
+625ec94811ba3700018ce9ba,Caroline,St***n,"Head of Commercial Sales, USA | Boutique Fitness",Your Reformer,yourreformer.com.au,Your Reformer,2026-10-05T09:21:06.027+00:00,candidate
+5ee9abaa36b49f00beb161cf,Melanie,We***r,Product Design Manager,Your Reformer,yourreformer.com.au,Your Reformer,2026-09-05T04:27:54.000+00:00,candidate
+6239c48bf3cb5300014a26c4,Jess,Su***d,CX Manager,Your Reformer,yourreformer.com.au,Your Reformer,2026-09-04T09:54:50.000+00:00,candidate
+64241a36c925d10001c2f266,Eloise,Bu***t,Marketing Manager - B2B,Your Reformer,yourreformer.com.au,Your Reformer,2026-09-06T05:32:58.000+00:00,candidate
+615d2cd431fce000017b0735,Tarah-Lee,Ca***n,CX Operations,Your Reformer,yourreformer.com.au,Your Reformer,2026-09-20T06:20:43.439+00:00,candidate
+54a61aa27468692fa248dac2,Amy,Ni***l,General Manager,Move With Us,movewithus.com,CSB,2026-10-03T23:12:38.000+00:00,candidate
+5ae9fba4a6da98eb5b0f36f5,Ryan,Br***s,Product Manager,Move With Us,movewithus.com,CSB,2026-09-08T00:27:52.000+00:00,candidate
+60edef20984c7f000114e224,Allyssa,Br***r,Lifecycle Marketing Lead,Move With Us,movewithus.com,CSB,2026-09-20T03:39:31.000+00:00,candidate
+54a1834869702da072fa6900,Paul,Pu***n,Chief Executive Officer,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-24T03:14:14.025+00:00,candidate
+5cc12f29a3ae61863db47582,Fernando,Vi***a,Chief Executive Officer,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-15T18:36:40.138+00:00,candidate
+612a2bc20366d100012428d1,Walnut,Cr***k,CEO,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-10-04T06:23:50.000+00:00,candidate
+60775d4861d1dc00018e82f9,Amanda,Eg***i,CEO,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-10-05T09:19:10.287+00:00,candidate
+54a2bbfd7468693825865339,James,Kr***r,Head Group Fitness Instructor/Personal Trainer,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-10T04:59:14.000+00:00,candidate
+66f696f904ad110001ed3d28,James,Pr***e,CEO,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-11T22:24:00.000+00:00,candidate
+57d9e0b6a6da987668f48a59,Scott,Wa***r,Head of Fitness,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-06-06T16:37:42.024+00:00,candidate
+6895d3d43b33cf0001a8a8db,Nicole,S,Franchise Operations Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2025-08-08T10:39:14.546+00:00,candidate
+57e0cae4a6da987db4827bc0,Catalina,Ba***r,Program Director and Operations Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-05T00:06:37.000+00:00,candidate
+55709a5773696419284b0000,Simon,Bo***d,National Fitness Manager (TBH Group),Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-06T23:08:00.000+00:00,candidate
+62e4496f91d36e00018064ee,Srujan,Jay,Founder,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-14T06:46:37.000+00:00,candidate
+6047491a349f1c00015da9b2,Stewart,Pe***l,Head of Operations,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-10-02T03:15:02.823+00:00,candidate
+5b3d255fa6da98a15c9d3128,David,Mc***y,Managing Director,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-12T00:32:58.000+00:00,candidate
+66f66c60e5c85800014aeb34,Massimo,La***o,Managing Director,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-06T21:52:43.000+00:00,candidate
+5fdb3fa92045bd000177f6f0,Jordan,St***s,Director of Operations,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-11T22:47:15.000+00:00,candidate
+66f8698da817d6000181b94d,Louis,Du***d,UK Head of Operations,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-08T01:44:42.000+00:00,candidate
+670168ccb55c3e00016d964d,Mark,St***r,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-05T08:24:11.000+00:00,candidate
+54a5fa6e7468693442cf3cb8,Sharad,Sa***l,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-10-03T09:32:06.000+00:00,candidate
+54a275077468693fda248824,Luke,Ch***n,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-05-18T13:43:29.834+00:00,candidate
+54aa93067468692366f2360c,Danielle,Et***r,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-20T21:24:32.000+00:00,candidate
+64ecc6f4f608d8000185b83b,Alexis,Ro***e,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-07T10:29:36.000+00:00,candidate
+57e1ffaba6da98093ee4c571,Kyle,To***s,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-03T04:31:36.000+00:00,candidate
+67ea727a3c26730001370b48,Alexandra,Ma***k,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-15T06:37:24.000+00:00,candidate
+6722ebfc61517d000180e999,Martina,Hi***y,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-10-04T00:07:11.000+00:00,candidate
+615d31ab7579760001a2b262,Stuart,Pe***g,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-10-06T22:10:05.177+00:00,candidate
+62d09a994d1238000100ef6c,Ethan,Bo***e,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-07T11:12:26.000+00:00,candidate
+60b1c53c0789b500014f7595,Brandon,Sc***d,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-10-01T23:03:47.000+00:00,candidate
+54ab10ef746869037793821e,Randall,Ka***l,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-08-01T04:11:41.741+00:00,candidate
+60cc82dc695b880001341092,Alex,We***a,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-19T12:10:50.000+00:00,candidate
+54a81c4774686975f8689861,Kiaya,Ca***r,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-05T14:19:38.000+00:00,candidate
+54a2dbfa7468693a7ec78042,Mike,Fe***t,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-07-19T08:37:12.000+00:00,candidate
+62e0bcfb85ec150001fcc842,Snap,Fi***s,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-05T23:39:56.000+00:00,candidate
+54fa72047468695e49eca400,Jeremiah,Tr***r,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-05T13:14:11.000+00:00,candidate
+606bf03c93d70e000185bf9f,Gurpreet,Si***h,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-08-21T15:26:35.000+00:00,candidate
+68a0d20b69a6c80001c8b977,Jennifer,Cr***g,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-18T12:21:44.000+00:00,candidate
+5e8cf7bdfe1fd70001861a41,Tripp,Br***s,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-10-01T07:18:01.783+00:00,candidate
+54a5dc067468693209fd9aae,Dan,Em***y,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-07-15T04:24:23.000+00:00,candidate
+5ac27913a6da981cdccfccae,Sarah,Jo***n,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-07-19T11:51:11.000+00:00,candidate
+54a263227468693cddc30c1f,Vincent,-C***m,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-03T12:59:47.000+00:00,candidate
+54ebd542746869444cce322f,Kosta,Ve***u,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-10-10T08:57:58.587+00:00,candidate
+625e4b98e35cfe0001a34ebd,David,Cr***y,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-19T21:00:35.000+00:00,candidate
+5b9b7127324d4485e1504aa0,Arthur,Wi***n,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-08-26T14:34:25.000+00:00,candidate
+57d423cca6da985386b952f6,Crystal,Fi***s,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-05T16:48:16.000+00:00,candidate
+54a3cb487468693442056913,Fort,Co***s,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-07-20T02:39:53.000+00:00,candidate
+54a76ce57468696de7f66933,Kristy,Sc***z,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-04T07:26:40.000+00:00,candidate
+6ac4d220c04dd30001f83d25,Carly,Au***a,Director of Operations,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-10-02T23:33:33.000+00:00,candidate
+67c2e09553b1390001529451,Ben,Fl***r,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-07-23T21:22:19.000+00:00,candidate
+57d9aac0a6da98724a5c56d6,Todd,Br***r,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-05T14:22:22.000+00:00,candidate
+611b3c493311610001959f86,Kaylee,Pa***i,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-23T07:54:32.000+00:00,candidate
+6809eb11072fbf00017829bf,Sam,Wi***s,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-17T23:21:24.000+00:00,candidate
+612a1ef6bfe1ad000134d8ba,Ryan,Ha***n,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-08-29T14:51:47.132+00:00,candidate
+5f509e50795a190001b31ca7,Simon,Ch***r,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-10-04T07:51:44.000+00:00,candidate
+668f96feafc38c000158a89b,Viktoria,Ju***e,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-03T01:34:49.538+00:00,candidate
+62825c0c5cf8e70001de047e,Adeel,De***l,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-07T00:08:07.000+00:00,candidate
+5c385c0180f93ea293853350,Willie,Jo***s,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-05T12:30:03.000+00:00,candidate
+635a70ec6bdfcb00019e155c,Haley,Sc***t,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-10-05T23:08:35.000+00:00,candidate
+57e061f3a6da981bed8a6917,Kayla,Re***l,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-05T03:39:26.000+00:00,candidate
+66115b8bfa36e10007d0d76b,Liz,Di***n,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-08T11:45:41.000+00:00,candidate
+57d52cbaa6da9853a0a7fc40,Ryan,Ei***n,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-05T18:24:39.000+00:00,candidate
+6409d312f90b800001c5be9a,Douglas,Gr***y,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-03T15:30:07.941+00:00,candidate
+54a21e417468693825e9450e,Don,St***p,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-19T10:59:03.000+00:00,candidate
+57d39d75a6da985b551edf68,Kimberley,Ogg,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-06T11:59:27.000+00:00,candidate
+626c05784348770001266f4b,Cameron,Ox***d,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-15T06:31:30.000+00:00,candidate
+5e7182394c548700019ee820,Betsy,Wo***d,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-10-02T09:42:39.000+00:00,candidate
+57e06021a6da981c1de7786c,Anne,Ha***y,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-10-09T13:07:51.130+00:00,candidate
+5aea4438a6da98445e0fab1b,Raymond,Lee,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-28T07:41:20.752+00:00,candidate
+5c6135c6f65125a28ae94f66,Thomas,Ca***n,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-07-31T20:40:57.000+00:00,candidate
+6167b2b92531e60001efc6ce,Chris,St***s,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-07-23T06:12:19.000+00:00,candidate
+54a21b0f7468693825f3640d,James,An***e,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-30T09:41:09.000+00:00,candidate
+54eaeea174686931b8610904,Jeff,De***s,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-10-01T15:09:06.936+00:00,candidate
+61f3b3cf0760d60001557d82,Jacqueline,Ga***s,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-12T19:24:48.000+00:00,candidate
+6410a8f8f482d7000183a73a,Kelsey,Sa***z,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-07-20T03:40:42.000+00:00,candidate
+54c1dca8746869163981c852,Derrek,Wa***k,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-07-19T10:22:33.000+00:00,candidate
+635e5b21040ad70001e2ce00,Ryan,Ba***d,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-21T09:21:01.000+00:00,candidate
+57e0fbb5a6da987dccff4d47,Raymond,Ze***a,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-19T10:02:05.000+00:00,candidate
+57db8821a6da9868a3338331,Mansur,Ra***n,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-06T15:33:35.000+00:00,candidate
+6426efcb68228f0001f068ba,Jason,Sm***h,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-10-07T08:30:54.806+00:00,candidate
+57d4a157a6da9853a6620361,Patty,Ba***w,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-03T04:38:16.000+00:00,candidate
+5c58327df651252b0b75c90f,Krista,Jo***n,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-12T08:14:20.000+00:00,candidate
+57e13d3ba6da987d8cb4b0c9,Yedid,Or***o,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-08-29T16:14:05.000+00:00,candidate
+685cfb121241ed0001deade7,Sana,S,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-10-04T08:44:45.000+00:00,candidate
+5f4c3a697987360001890a38,Gabriel,Pu***s,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-19T13:04:02.000+00:00,candidate
+54a330a874686930c2684b5b,Derek,Wh***l,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-05T19:28:48.000+00:00,candidate
+5f740590439b1e00017cb2ad,Barron,Ya***h,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-10-02T21:39:05.000+00:00,candidate
+60ce4f2e142a1a0001b698e9,Conor,Bu***s,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-24T12:12:19.953+00:00,candidate
+614d4860a522a9000194ad7c,Gary,Mo***s,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-07-22T20:21:54.000+00:00,candidate
+6513cdbe1cfd7b0001a9e114,Daniel,Ja***n,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-23T09:21:52.000+00:00,candidate
+54c181f67468697af708c719,Diana,Ni***n,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-05T07:36:04.000+00:00,candidate
+6310aaf95f52790001ffa105,Kayla,Kl***e,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-21T08:45:15.000+00:00,candidate
+6363a6df16ca6a0001ffe666,Shawn,Bl***k,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-16T22:44:31.161+00:00,candidate
+5ae46638a6da98d3b881bf68,Angela,Sa***n,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-10-03T10:39:51.749+00:00,candidate
+64f83cdb492d4900018744bf,Jason,A,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-07-19T09:38:55.000+00:00,candidate
+6317a42e4b9b2c00016e10a8,Joshua,Fo***r,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-05T13:27:41.000+00:00,candidate
+54eba762746869444c27f506,Austin,Mc***n,General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-04T03:22:16.000+00:00,candidate
+54a776ef74686975f8d2a337,Wayne,Pl***r,General Manager/Owner,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-10-04T19:28:31.000+00:00,candidate
+57da631da6da984aabc28214,Trevor,Ga***l,General Manager Operations,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-12T19:35:41.000+00:00,candidate
+54a5ede07468693442a941b4,Duane,Ta***r,Club General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-06T06:26:53.000+00:00,candidate
+632f0f25cdfe78000124aa15,Matthew,Ro***n,Deputy General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-07-22T12:19:36.000+00:00,candidate
+62ff56552ad5490001cebffd,Wendy,R,General Manager Marketing,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-10-09T12:09:46.863+00:00,candidate
+619990d0391ef20001980aa0,Reece,La***e,Assistant General Manager,Snap Fitness,snapfitness.com,Snap Fitness Australia,2026-09-19T12:18:04.000+00:00,candidate
+6113eec1677f060001e8adae,Aydan,Ba***d,Head of Digital Operations,Australian Sports Nutrition,australiansportsnutrition.com.au,Australian Sports Nutrition,2026-09-07T11:47:42.000+00:00,in-sales-nav
+60f1bdb725fdde00017a165d,Cameron,Zi***o,Head of Marketing,Australian Sports Nutrition,australiansportsnutrition.com.au,Australian Sports Nutrition,2026-09-24T01:46:32.796+00:00,candidate
+66f8a5a31fb6a7000101d8f0,Simon,Re***s,Company Owner / Founding Partner,Australian Sports Nutrition,australiansportsnutrition.com.au,Australian Sports Nutrition,2026-09-25T20:47:03.000+00:00,in-sales-nav
+60696a137bf804000107a4a8,Garry,Mo***k,Chief Executive Officer,Mr Vitamins,mrvitamins.com.au,Mr Vitamins,2026-01-15T09:21:15.497+00:00,in-sales-nav
+64c00b252b86450001ec8030,Cameron,Ta***r,Head of Digital,Mr Vitamins,mrvitamins.com.au,Mr Vitamins,2026-09-12T19:35:54.000+00:00,candidate
+681b2290c0329d00011226e7,Gabriella,Ri***k,Head of Marketing,Mr Vitamins,mrvitamins.com.au,Mr Vitamins,2026-09-21T06:27:39.324+00:00,candidate
+66f7feab84a255000163d961,Ann,Ca***n,Chief Executive Officer,Go Vita Group Ltd - Australia's Largest Wholesale & Retail Health Store Group,govita.com.au,Go Vita,2026-09-07T19:00:20.000+00:00,in-sales-nav
+6103a14d19a613000129cb6e,Terrence,Hu***s,Chief Executive Officer,Go Vita Group Ltd - Australia's Largest Wholesale & Retail Health Store Group,govita.com.au,Go Vita,2026-09-09T02:56:24.330+00:00,candidate
+60b0f3d59308480001b37f44,Alicia,Ol***r,Assistant Product Category Manager,Go Vita Group Ltd - Australia's Largest Wholesale & Retail Health Store Group,govita.com.au,Go Vita,2026-09-15T10:34:16.323+00:00,candidate
+639ae5c71fc73900015a53b2,Sport,Le***r,Chief Executive Officer,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-09-22T04:39:03.914+00:00,candidate
+54a7389b7468696de7db4e20,Sherry,Liu,Co-Founder & COO,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-10-03T09:07:17.407+00:00,candidate
+54a558a474686938ac3bf390,Prashant,Dh***e,Head of Training and Education,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-09-15T06:40:06.858+00:00,candidate
+54a27d607468693a7e70df26,Reginaldo,Re***a,Managing Director,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-09-09T12:25:35.859+00:00,candidate
+55d7eab9f3e5bb74ea00301d,Omer,Ku***a,Co-Founder,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-10-06T17:46:27.552+00:00,candidate
+57e1683da6da987da42403fc,Nikki,Tu***r,Head of Operations,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-09-30T13:11:27.940+00:00,candidate
+5e62980f7dca2f0001ec97c3,Omar,Se***l,Head of Operations,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-09-23T11:26:53.000+00:00,candidate
+54a1bf5f74686945fa2c730d,Peter,Se***l,Director of Product,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-09-23T23:50:51.093+00:00,candidate
+610a19e2a7ff290001b2c9d7,Matthew,Pe***y,Managing Director UK,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-09-29T14:03:39.458+00:00,candidate
+54abb043746869332dedd806,Yin-Chu,Sh***h,Product Manager,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-10-06T13:29:31.941+00:00,candidate
+54a5fac87468692fa2b2d5b8,Guangting,Zh***g,Product Manager,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-09-25T18:19:19.599+00:00,candidate
+54a830ea7468696220358666,Chris,Ad***t,Director of Product Development,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-09-19T21:01:13.000+00:00,candidate
+5ff970971f9c2c0001e82c5c,Hany,Om***r,Managing Director - Middle East,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-08-22T13:24:50.000+00:00,candidate
+5ab347c7a3ae61323a921921,Micah,La***n,Product Manager - Technology,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-09-21T17:51:15.000+00:00,candidate
+69e0bd3823fc0d00013e9436,Cory,Mi***r,Global Product Manager,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-09-15T05:27:52.000+00:00,candidate
+610ad1862bf74100011187ce,Mark,Za***l,President - US Commercial Division / Global Chief Marketing Officer,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-09-16T03:21:13.000+00:00,candidate
+650ef6e76338b400015e4aba,Yuxian,Li***o,Digital Product Manager,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-09-15T06:27:41.901+00:00,candidate
+684fc65389ad4d000190aeb2,Leopoldo,To***s,Senior Managing Director JHT Mexico,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-09-24T10:19:48.732+00:00,candidate
+54a510517468692cf082ea79,Anthony,Wi***e,Director of Product Development - Sporting Goods,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-01-18T11:04:42.997+00:00,candidate
+60aaa78c72b58b000129f8ac,Zach,Ne***y,Assistant Product Manager - Technology,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-09-26T09:53:20.000+00:00,candidate
+66ee75b3cf9c6e0001a70af1,Pankaj,Na***r,Deputy General Manager of Sales,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-10-06T20:14:25.738+00:00,candidate
+57df6814a6da980acde24f53,Karen,Fa***g,Asia Digital Business General Manager,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-07-30T10:31:46.403+00:00,candidate
+60b08e420fd7a90001995eb0,Michael,Fi***h,Senior Product Manager - Vision Fitness,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-09-07T10:02:45.000+00:00,candidate
+54aae45b7468690b752b731b,Matt,Mc***y,Senior Digital Product Manager - Global,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-10-04T06:17:47.000+00:00,candidate
+54a5e5cc7468692abf7dcdb1,Becky,Ja***t,Senior Global Product Manager - Personal & Group Training,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-10-11T10:41:34.068+00:00,candidate
+64bb00642e1c27000119f5d0,Jindong,Hu***g,Technical Director,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-07-05T00:56:24.184+00:00,candidate
+57dd403ba6da987b4d942ac7,Spencer,Cr***y,Assistant Technical Director,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-09-11T22:21:58.000+00:00,candidate
+5ac1f0a9a6da981d0351ed42,Eve,Ch***n,Product Marketing Manager,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-08-25T10:31:50.000+00:00,candidate
+60debf4b8b3e2e0001bef03d,Christa,Wa***r,Director of International Marketing & Product Training,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-09-22T14:58:41.428+00:00,candidate
+699698e9a798c80001bf5bb7,Alejandro,Ji***z,Director of Information Technology,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-08-15T22:44:43.000+00:00,candidate
+63ebbef40aa87800019d2bc7,John,Mi***s,Technical Service Director,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-09-06T05:08:45.000+00:00,candidate
+66f8b32c5c5ea1000154280e,Anthony,Bu***n,Marketing Manager,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-10-02T05:47:10.000+00:00,candidate
+54a201067468693318e78604,Barbara,Ja***e,Director of Marketing - Vision Fitness,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-09-19T20:56:16.000+00:00,candidate
+54a72f9e74686975f8a1581d,Domingo,Ri***i,Marketing and Sales Manager,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-09-03T07:59:09.030+00:00,candidate
+54a58b617468692abff6089b,Cyrus,Ev***o,Product,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-10-06T08:49:08.160+00:00,candidate
+5acc3b42a6da9874701e4d0d,Emma,Ro***n,Marketing Manager,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-10-09T05:42:18.843+00:00,candidate
+5c45b188f65125c5812da8a9,Nivedita,Ku***i,Commercial Brand Marketing Manager,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-09-08T09:17:35.000+00:00,candidate
+635416a080fcc800016aba76,Andre,Pr***a,Marketing Manager,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-08-23T11:15:37.000+00:00,candidate
+54a4c51e74686938acd76062,Michel,Zu***k,After Sales Customer Experience Manager,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-09-22T08:20:00.000+00:00,candidate
+62cfca08d8776c0001bc2f5c,Kornthong,Su***l,Marketing Manager,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-09-05T11:30:45.813+00:00,candidate
+63c53e5d36cbd700012b6b0d,Elber,Fa***g,Business Development | Product Management,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-08-25T00:28:39.000+00:00,candidate
+61083c74d067570001863aef,Thyago,De***o,Marketing,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-09-17T03:48:10.000+00:00,candidate
+67429532dbaac500017c5283,Hayden,J,Marketing Manager,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-04-11T11:56:20.000+00:00,candidate
+68c394556016410001b2fdb4,Tengda,You,Marketing Manager,"Johnson Health Tech. Co., Ltd.",johnsonhealthtech.com,Johnson Health Tech Australia,2026-06-23T21:15:14.000+00:00,candidate
+66f387166c530c0001fe98b2,Warren,Gi***s,Chief Executive Officer,equ,equ.com.au,equ,2026-09-10T20:14:58.000+00:00,in-sales-nav
+60685b60b5b31d00015acd8f,Sean,Mo***m,Chief Technology Officer,equ,equ.com.au,equ,2026-09-10T03:11:32.000+00:00,in-sales-nav
+66f982b683ba0c000152bfd1,Ryan,We***r,General Manager,equ,equ.com.au,equ,2026-09-07T07:11:10.000+00:00,candidate
+54a2a1377468693cddb44b31,Jonathan,Ai***w,Sales & Marketing Director,equ,equ.com.au,equ,2026-09-08T02:43:26.000+00:00,candidate

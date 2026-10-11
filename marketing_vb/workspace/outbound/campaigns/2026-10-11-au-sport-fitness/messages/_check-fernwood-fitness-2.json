@@ -1,0 +1,9 @@
+{
+ "campaign": "2026-10-11-au-sport-fitness",
+ "checked": 1,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "fernwood-fitness-2",
+ "generated": "2026-10-11T17:50:20",
+ "hard": [],
+ "soft": []
+}
