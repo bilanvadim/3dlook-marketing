@@ -43,6 +43,7 @@ Exit codes: 0 = ok · 1 = gmail, analysis or Slack failed (Telegram alert with -
 from __future__ import annotations
 
 import argparse
+import base64
 import fcntl
 import hashlib
 import html
@@ -162,6 +163,19 @@ def fetch_mail(days: int, limit: int = 100) -> list[dict]:
     return data.get("messages") or []
 
 
+def mail_text(m: dict) -> str:
+    """The text/plain part. Since 2026-10-10 oo puts the HTML part into messageText, which
+    parse() cannot read, so the plain part is decoded from the raw payload."""
+    stack = [m.get("payload") or {}]
+    while stack:
+        p = stack.pop()
+        data = (p.get("body") or {}).get("data")
+        if p.get("mimeType") == "text/plain" and data:
+            return base64.urlsafe_b64decode(data + "=" * (-len(data) % 4)).decode("utf-8", "replace")
+        stack.extend(p.get("parts") or [])
+    return m.get("messageText") or ""
+
+
 # "=== Новини - 2 нові результати за запитом [3dlook] ===" / "=== News - 1 new result for [x] ==="
 HEAD = re.compile(r"^=== (.+?) - .*\[(.+)\] ===$")
 LINK = re.compile(r"^<(https://www\.google\.com/url\?[^>]+)>$")
@@ -176,11 +190,16 @@ def real_url(gurl: str) -> str:
 
 def parse(text: str) -> list[dict]:
     """Split one alert mail (one alert, or a digest of several) into items."""
-    items, query, kind, buf = [], "", "", []
+    items, query, kind, buf, head = [], "", "", [], ""
     for line in text.replace("\r", "").split("\n"):
         line = line.rstrip()
         if line.startswith("- - - - -"):
             break                                    # footer: unsubscribe links
+        if head or line.startswith("=== "):
+            head = f"{head} {line.strip()}".strip()  # a long query wraps the header line
+            if not head.endswith("==="):
+                continue
+            line, head = head, ""
         m = HEAD.match(line)
         if m:
             kind = KINDS.get(m.group(1).strip().lower(), m.group(1).strip().lower())
@@ -422,13 +441,25 @@ def cmd_run(a) -> int:
             save_state(st)
         return 0
 
-    items, seen = [], set()
+    items, seen, unreadable = [], set(), []
     for m in sorted(new_mail, key=lambda m: m["messageTimestamp"]):
-        for it in parse(m.get("messageText") or ""):
+        found = parse(mail_text(m))
+        if not found:
+            unreadable.append(m)                     # every alert mail has a result: format broke
+        for it in found:
             if it["url"] in st["urls"] or it["url"] in seen:
                 continue
             seen.add(it["url"])
             items.append(it)
+    if unreadable:
+        # 2026-10-10..11 such mails were marked done silently and two digests were lost. They
+        # stay unmarked now, so a fixed parser picks them up within the lookback.
+        log(f"unparsed alert mails: {len(unreadable)} ({unreadable[0]['subject'][:80]})")
+        new_mail = [m for m in new_mail if m not in unreadable]
+        if tg and st.get("unparsed_warned") != day:
+            tg(f"⚠️ Google Alerts: {len(unreadable)} лист(ів) алертів не розібрано, формат листа "
+               f"змінився? Перший: «{unreadable[0]['subject'][:80]}». Дайджест неповний.")
+            st["unparsed_warned"] = day
     own = [i for i in items if own_site(i["url"])]
     items = [i for i in items if not own_site(i["url"])]
     log(f"items: {len(items)} new, {len(own)} own-site dropped")
