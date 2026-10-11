@@ -1,39 +1,40 @@
-# Responses Summary — 2026-09-27-uk-bariatric-prequal (as of 2026-10-05)
+# Responses Summary — 2026-09-27-uk-bariatric-prequal (as of 2026-10-10)
 
 ## Counts
-- Total responses: 1
-- Interested: 0 (0%)
+- Total responses: 3
+- Interested: 1 (33%) ← **передать сейлзам**
 - Maybe-later: 0
 - Referrals: 0
-- Decline: 1
+- Decline: 1 (33%)
 - Negative: 0 (0%)
-- Questions: 0
+- Questions: 1 (33%, требует личного ответа)
 - OOO: 0
-- Other/unclear: 0
-
-Note: the `company` field is empty in responses-raw.csv. "HCA Healthcare UK" was taken from the header of the thread file `messages/shaishav-shashikant-dhage-98722135.md`.
 
 ## Interested — for sales handoff
 
-None.
+### Kate Farrow
+- Replied to: Message 1
+- Their message: «Thanks for connecting! Would be great to catch up. When works for you? My best email is. medikatefarrow@gmail.com»
+- Extracted intent: хочет назначить разговор, сама предлагает списаться по email medikatefarrow@gmail.com
+- Suggested next step: передать сейлзам, предложить 2-3 слота на звонок, подтвердить по email, календарь-инвайт
+- Full thread: `messages/kate-farrow-93023651.md` + response in CSV
 
 ## Questions — Vadim needs to reply personally
 
-None.
-
-## Decline
-
-### Shaishav Shashikant Dhage — Training Programme Director IMS2 and GIM, Health Education North West — HCA Healthcare UK
-- Replied to: Message 1 (angle `glp1-bmi-history`, persona tier P1-consultant)
-- Their message: «No Thank you.»
-- Category: decline, confidence high
-- Action: exclude from future campaigns, do not send Message 2
+### Rishi Singhal — Visiting Professor of Bariatric Surgery — Healthier Weight
+- Question: «Sure / It's an app to calculate BMi from a photo?»
+- Context: отвечал на Message 1 («Worth a quick chat to explore?»). «Sure» похоже на согласие поговорить, но следом он описывает продукт неточно — просто «BMI calculator from a photo», хотя Message 1 говорил про Smart Scales weight prediction и dated BMI для сортировки GLP-1 / ESG / surgical кандидатов. Пока не понятно, согласился ли он на звонок или просто уточняет, что мы продаём — поэтому не ставлю interested без личного ответа, который снимет путаницу.
+- Suggested draft answer (Vadim, edit to taste):
+> «Hi Rishi, close, but it is a bit more than a BMI calculator. Two phone photos return a Smart Scales weight prediction and a dated BMI we compare against whatever is already on file, so you have a timestamped BMI before the consult, useful for sorting GLP-1, ESG and surgical candidates from one enquiry funnel. Happy to show you on a quick call, does this week work?»
+- Full thread: `messages/rishi-singhal-358579b8.md` + response in CSV
 
 ## Negative responses — pattern check
 
-0 negative responses. The one reply is a polite, terse decline, so there is no messaging signal. One data point is too few to draw conclusions.
+Нет negative-ответов в этой выборке (0 из 3). Decline (Shaishav Shashikant Dhage, «No Thank you.») — нейтральный отказ без door-open и без раздражения, паттерна проблем в мессаджинге не видно.
 
 ## Recommendations
-- Stop the sequence for this person before Message 2 goes out (+5 days).
-- Add to the exclusion registry through the step 9 `outbound-registry.py reply` flow. The `linkedin_url` is carried verbatim in the CSV.
-- Possible persona mismatch: the title is a training programme director in medical education, not an operations or clinical buyer. Worth checking whether other P1-consultant contacts with education titles are in this list.
+
+- Kate Farrow — приоритет HIGH, передать сейлзам сразу, она сама назначает контакт.
+- Rishi Singhal — не передавать в sales как «готовый к звонку» до личного ответа Вадима/Катерины с уточнением продукта. Его «Sure» не читается как явное согласие на звонок по правилу «не пиши interested без явного запроса на разговор» — реальный сигнал появится после ответа на уточняющий вопрос.
+- Shaishav Shashikant Dhage — exclude из будущих кампаний, Message 2 не отправлять.
+- Выборка маленькая (3 ответа), для оценки messaging нужно больше данных по кампании.
