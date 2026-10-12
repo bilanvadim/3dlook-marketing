@@ -426,10 +426,8 @@ Automation → **Workflows** → Create → From scratch → **Deal-based**.
 1. **Карьерные формы.** Contact-based workflow:
    - Trigger: `First conversion` contains `Career`.
    - Actions: `Lifecycle stage` = Other, `icp_segment` = Job seeker, add to static list `Exclude - job seekers`.
-2. **Логины и регистрации Mobile Tailor и Contact Form 7**, которые HubSpot собирает как формы (`.signup-form`, `.ng-*`, `.wpcf7-form`): Marketing → Forms → **Non-HubSpot forms** (или Settings → Marketing → Forms) → выключить сбор для этих страниц или доменов. Эти контакты и так заводятся интеграцией приложения.
-3. **Industry.** Contact-based workflow:
-   - Trigger: `Associated company Industry` is known и контакт `Industry` is unknown.
-   - Action: Copy property value из компании в контакт.
+2. ~~Выключить сбор Non-HubSpot forms для Mobile Tailor и Contact Form 7~~. **Снято 2026-10-12, сбор НЕ выключать.** Большинство контактов MT создаёт сама собранная форма, а не интеграция приложения. Она же связывает cookie с контактом и даёт источник (органика, прямые заходы) и историю страниц. Если выключить, новые self-serve пользователи станут Offline. Вред только косметический: логин в MT перезаписывает recent conversion. В маркетинговых отчётах исключай формы с префиксом `MTM.3DLOOK`. Contact Form 7 уже не используется (одна отправка за 12 месяцев).
+3. ~~Копировать Industry с компании на контакт~~. **Снято 2026-10-12.** Industry у контакта — старый список из 4 значений времён fashion (Ecommerce/Retailer × Brand/Multibrand), у компании — стандартный список HubSpot (~150 значений), поэтому Copy property value падает с «internal values are missing». Копировать и не нужно: списки, workflow и custom report builder берут Industry связанной компании напрямую. Сегменты ICP — в `icp_segment`.
 
 ### 5. Переименовать формы (~15 минут)
 Marketing → Forms → у каждой формы **Rename** по схеме `{Продукт} | {Где} | {Что}`:
