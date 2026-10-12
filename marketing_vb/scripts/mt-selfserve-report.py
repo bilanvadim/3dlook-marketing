@@ -27,6 +27,12 @@ SIGN-UP DATE
   "Before 2023-07". The monthly series starts at 2023-07: from 2021-07 to 2023-05 the app barely
   synced to HubSpot, so those months are not comparable.
 
+STARTED WITH (Data column; Monthly / Summary columns)
+  "$1 trial" = initial or current plan smb_free7_dollar (every one has the $1 payment recorded);
+  "Paid plan (no trial)" = a paid plan as the initial or current plan without the $1 trial;
+  "Free plan / other" = some other subscription record (free plan, free trial); "Nothing yet" = registered
+  only, no subscription record.
+
 PAYING TODAY
   subscription_status = active, on a paid plan (not smb_free*, which covers the $1 / 7-day trial
   and free plans), and the current period has not ended more than 7 days before the data date.
@@ -136,9 +142,11 @@ REL_SOURCE = re.compile(r"signup-form|MT Trial Sign up form|complete-profile", r
 
 DATA_HEAD = ["Sign-up date", "Month", "Quarter", "Date source", "Account type", "Company", "Email domain",
              "Type of business (as entered)", "Type", "Segment", "Country", "Original source", "Starting plan",
-             "Subscription status", "Current plan", "Plan tier", "Billing", "Paying today", "First payment",
+             "Subscription status", "Current plan", "Plan tier", "Billing", "Started with", "Paying today", "First payment",
              "Last payment", "Lifecycle stage", "Deals", "HubSpot record"]
-COL = {h: chr(65 + i) for i, h in enumerate(DATA_HEAD)}   # header -> Data column letter (A..W)
+COL = {h: chr(65 + i) for i, h in enumerate(DATA_HEAD)}   # header -> Data column letter (A..X)
+LAST = COL[DATA_HEAD[-1]]
+STARTED = ["$1 trial", "Paid plan (no trial)", "Free plan / other", "Nothing yet"]
 TABS = ["Summary", "Monthly", "By type", "By country", "Data"]
 
 
@@ -343,6 +351,15 @@ def build_rows(users: list[dict], as_of: _dt.date) -> tuple[list[dict], dict]:
         end = p.get("subscription_current_period_end") or ""
         fresh = not end or _dt.date.fromisoformat(end[:10]) >= as_of - _dt.timedelta(days=7)
         paying = status == "active" and t not in ("", "Free / trial") and fresh
+        start_plan = p.get("initial_product_plan") or ""
+        if "free7_dollar" in start_plan or "free7_dollar" in nick:
+            started = "$1 trial"
+        elif tier(start_plan) not in ("", "Free / trial") or t not in ("", "Free / trial"):
+            started = "Paid plan (no trial)"
+        elif status or start_plan:
+            started = "Free plan / other"
+        else:
+            started = "Nothing yet"
         if status == "active" and t not in ("", "Free / trial") and not fresh:
             stats["active but period ended (stale, not paying)"] += 1
         country = (p.get("ip_country") or "").strip().title()
@@ -366,6 +383,7 @@ def build_rows(users: list[dict], as_of: _dt.date) -> tuple[list[dict], dict]:
             "Current plan": nick or None,
             "Plan tier": t or None,
             "Billing": billing(nick) or None,
+            "Started with": started,
             "Paying today": "Yes" if paying else "No",
             "First payment": (p.get("first_payment_date") or "")[:10] or None,
             "Last payment": (p.get("last_payment_date") or "")[:10] or None,
@@ -400,8 +418,8 @@ def D(header: str) -> str:
     return f"Data!${c}:${c}"
 
 
-MONTHLY_HEAD = (["Month", "Sign-ups", "Self-serve", "Enterprise"] + SEGMENTS +
-                ["Started $1 trial or subscription", "Paying today", "% paying today",
+MONTHLY_HEAD = (["Month", "Registrations", "Self-serve", "Enterprise"] + SEGMENTS +
+                ["$1 trial sign-ups", "Paid plan sign-ups (no trial)", "Paying today", "% paying today",
                  "Organic search", "Direct", "Offline (app integration)", "Other sources"])
 
 
@@ -415,7 +433,8 @@ def monthly_values(months: list[str]) -> list[list]:
                f'=COUNTIFS({D("Month")},{M},{D("Account type")},"Self-serve")',
                f'=COUNTIFS({D("Month")},{M},{D("Account type")},"Enterprise")']
         row += [f"=COUNTIFS({D('Month')},{M},{D('Segment')},{c[s]}$1)" for s in SEGMENTS]
-        row += [f'=COUNTIFS({D("Month")},{M},{D("Subscription status")},"<>")',
+        row += [f'=COUNTIFS({D("Month")},{M},{D("Started with")},"$1 trial")',
+                f'=COUNTIFS({D("Month")},{M},{D("Started with")},"Paid plan (no trial)")',
                 f'=COUNTIFS({D("Month")},{M},{D("Paying today")},"Yes")',
                 f'=IF(B{r}>0,{c["Paying today"]}{r}/B{r},"")']
         row += [f"=COUNTIFS({D('Month')},{M},{D('Original source')},{c[s]}$1)"
@@ -454,12 +473,14 @@ def bycountry_values(quarters: list[str], top: list[str]) -> list[list]:
 SUMMARY_NOTES = [
     "Mobile Tailor self-serve sign-ups",
     "Source: HubSpot only. One row per Mobile Tailor app account (self-serve and enterprise sign-ups) on the Data tab; "
-    "every other tab is formulas over Data. 3DLOOK staff and test accounts are excluded.",
-    "Sign-up date: the HubSpot contact create date when the sign-up created the contact; for people who were already "
+    "every other tab is formulas over Data. 3DLOOK staff and test accounts are excluded. Registration = an MT account "
+    "was created. $1 trial sign-up = started the $1 trial (Initial product plan smb_free7_dollar). Paid plan sign-up = "
+    "chose a paid plan without the $1 trial.",
+    "Registration date: the HubSpot contact create date when the registration created the contact; for people who were already "
     "in HubSpot, an estimate from the app account number (accurate to a few days). Monthly figures start in Jul 2023.",
     "Type and segment: \"Type of business\" that the user picks at sign-up; the Type → Segment mapping is on the Data "
     "tab (columns H–J). Paying today: active subscription on a paid plan whose billing period has not ended "
-    "(the $1 trial and free plans do not count). It is a snapshot by sign-up month, not the month payment started.",
+    "(the $1 trial and free plans do not count). It is a snapshot by registration month, not the month payment started.",
 ]
 
 
@@ -482,10 +503,12 @@ def summary_values() -> tuple[list[dict], dict]:
     def per(c):
         return f'{D("Sign-up date")},">="&{c}$9,{D("Sign-up date")},"<="&{c}$10'
 
-    metrics = [("Sign-ups", ""), ("   of which self-serve", f',{D("Account type")},"Self-serve"'),
+    metrics = [("Registrations (account created)", ""), ("   of which self-serve", f',{D("Account type")},"Self-serve"'),
                ("   of which enterprise sign-ups", f',{D("Account type")},"Enterprise"'),
-               ("Started a $1 trial or subscription", f',{D("Subscription status")},"<>"'),
-               ("Paying today", f',{D("Paying today")},"Yes"'), ("% paying today", None),
+               ("$1 trial sign-ups", f',{D("Started with")},"$1 trial"'),
+               ("Paid plan sign-ups (no trial)", f',{D("Started with")},"Paid plan (no trial)"'),
+               ("Registered, started nothing yet", f',{D("Started with")},"Nothing yet"'),
+               ("Paying today", f',{D("Paying today")},"Yes"'), ("% paying today (of registrations)", None),
                ("From organic search", f',{D("Original source")},"Organic search"'),
                ("From direct traffic", f',{D("Original source")},"Direct"'),
                ("Offline (created by the app integration)", f',{D("Original source")},"Offline (app integration)"')]
@@ -494,17 +517,17 @@ def summary_values() -> tuple[list[dict], dict]:
     for k, (name, crit) in enumerate(metrics):
         r = first + k
         if crit is None:
-            pr = first + 4
+            pr = first + 6
             block.append([name] + [f'=IF({c}{first}>0,{c}{pr}/{c}{first},"")' for c in "BCDEF"]
                          + [f'=IF(AND(ISNUMBER(E{r}),ISNUMBER(F{r})),(E{r}-F{r})*100,"")'])
         else:
             block.append([name] + [f"=COUNTIFS({per(c)}{crit})" for c in "BCDEF"] + [f'=IF(F{r}>0,E{r}/F{r}-1,"")'])
     last = first + len(metrics) - 1
     put(f"A{first}:G{last}", block)
-    pct_row = first + 5
+    pct_row = first + 7
 
     r0 = last + 2
-    put(f"A{r0}:G{r0}", [["Sign-ups by segment", "Last full month", "Previous month", "Same month last year",
+    put(f"A{r0}:G{r0}", [["Registrations by segment", "Last full month", "Previous month", "Same month last year",
                           "Last 12 months", "Previous 12 months", "Share of last 12 months"]])
     seg = [[s] + [f"=COUNTIFS({per(c)},{D('Segment')},$A{r0 + 1 + i})" for c in "BCDEF"]
            + [f'=IF(E${first}>0,E{r0 + 1 + i}/E${first},"")'] for i, s in enumerate(SEGMENTS)]
@@ -582,9 +605,9 @@ def chart_spec(sid_monthly: int, n_months: int) -> dict:
     first_seg = MONTHLY_HEAD.index(SEGMENTS[0])
     series = [{"series": {"sourceRange": {"sources": [rng(sid_monthly, 0, n_months + 1, first_seg + j, first_seg + j + 1)]}},
                "targetAxis": "LEFT_AXIS"} for j in range(len(SEGMENTS))]
-    return {"title": "Sign-ups per month by segment", "basicChart": {
+    return {"title": "Registrations per month by segment", "basicChart": {
         "chartType": "COLUMN", "stackedType": "STACKED", "legendPosition": "RIGHT_LEGEND", "headerCount": 1,
-        "axis": [{"position": "BOTTOM_AXIS"}, {"position": "LEFT_AXIS", "title": "Sign-ups"}],
+        "axis": [{"position": "BOTTOM_AXIS"}, {"position": "LEFT_AXIS", "title": "Registrations"}],
         "domains": [{"domain": {"sourceRange": {"sources": [rng(sid_monthly, 0, n_months + 1, 0, 1)]}}}],
         "series": series}}
 
@@ -594,14 +617,14 @@ def write_data(rows: list[dict], meta: dict) -> None:
     gp = meta["Data"]["properties"]["gridProperties"]
     if gp["rowCount"] < len(rows) + 200 or gp["columnCount"] < len(DATA_HEAD):
         sheets_batch([grid(sid, max(gp["rowCount"], len(rows) + 200), max(gp["columnCount"], len(DATA_HEAD)), 1)])
-    sheets_run("clear_values", {"spreadsheetId": SHEET, "range": "Data!A2:W"})
+    sheets_run("clear_values", {"spreadsheetId": SHEET, "range": f"Data!A2:{LAST}"})
     vals = [[r[h] for h in DATA_HEAD[:-1]] for r in rows]
     links = [[r["HubSpot record"]] for r in rows]
     sheets_run("update_values_batch", {"spreadsheetId": SHEET, "valueInputOption": "RAW", "data": [
-        {"range": "Data!A1:W1", "values": [DATA_HEAD]},
+        {"range": f"Data!A1:{LAST}1", "values": [DATA_HEAD]},
         {"range": f"Data!A2:{COL[DATA_HEAD[-2]]}{len(rows) + 1}", "values": vals}]})
     sheets_run("update_values_batch", {"spreadsheetId": SHEET, "valueInputOption": "USER_ENTERED", "data": [
-        {"range": f"Data!W2:W{len(rows) + 1}", "values": links}]})
+        {"range": f"Data!{LAST}2:{LAST}{len(rows) + 1}", "values": links}]})
     sheets_batch([{"setBasicFilter": {"filter": {"range": rng(sid, 0, len(rows) + 1, 0, len(DATA_HEAD))}}},
                   number(sid, 1, len(rows) + 1, 0, 1, "DATE", "yyyy-mm-dd")])
 
@@ -711,9 +734,13 @@ def summarize(rows: list[dict], stats: Counter, as_of: _dt.date) -> str:
     lm = [r for r in rows if r["Month"] == last_month]
     seg = Counter(r["Segment"] for r in lm)
     lines = [f"MT self-serve report, data as of {as_of}",
-             f"{last_month}: {len(lm)} sign-ups ({sum(r['Account type'] == 'Self-serve' for r in lm)} self-serve), "
+             f"{last_month}: {len(lm)} registrations ({sum(r['Account type'] == 'Self-serve' for r in lm)} self-serve), "
+             f"{sum(r['Started with'] == '$1 trial' for r in lm)} $1 trials, "
+             f"{sum(r['Started with'] == 'Paid plan (no trial)' for r in lm)} paid plan sign-ups, "
              f"{sum(r['Paying today'] == 'Yes' for r in lm)} paying today",
-             f"Last 12 months: {len(in_l12)} sign-ups, {sum(r['Paying today'] == 'Yes' for r in in_l12)} paying today",
+             f"Last 12 months: {len(in_l12)} registrations, {sum(r['Started with'] == '$1 trial' for r in in_l12)} $1 trials, "
+             f"{sum(r['Started with'] == 'Paid plan (no trial)' for r in in_l12)} paid plan sign-ups, "
+             f"{sum(r['Paying today'] == 'Yes' for r in in_l12)} paying today",
              "Top segments last month: " + ", ".join(f"{k} {v}" for k, v in seg.most_common(4)),
              f"All accounts: {len(rows)}, paying today {sum(r['Paying today'] == 'Yes' for r in rows)}",
              "Date sources: " + ", ".join(f"{k} {v}" for k, v in stats.items())]
