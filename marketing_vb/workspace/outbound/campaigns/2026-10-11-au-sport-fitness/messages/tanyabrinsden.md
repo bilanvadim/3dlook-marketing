@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: bio on scientific rigour in fitness instruction; end-of-block review topic
-- Proof point: 80+ body measurements, two photos (proof-points.md); under 45 seconds line
+- Proof point: 80+ body measurements, two photos (proof-points.md); speed wording
 
 ---
 
@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Tanya,
 
-At Fitness Enhancement your bio talks about scientific rigour in fitness instruction. FitXpress is a two-photo body scan, taken on any phone from a link the trainer sends, that returns 80+ body measurements to set against a client's earlier scan.
+At Fitness Enhancement your bio talks about scientific rigour in fitness instruction. FitXpress gives a client a scan from two photos, taken on any phone from a link the trainer sends, with 80+ body measurements to set against an earlier scan.
 
 At the end of a training block, what do you have in hand when you review a client's progress?
 
 Vadim
 
-**Char count:** 359 / 600
+**Char count:** 356 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Tanya,
 
-Happy to show how a trainer would use it from one link. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+At the end of a block, a trainer can send one link and the client takes front and side photos. The scan runs under 45 seconds from the photos to structured results, and the client chooses which earlier scan to look back on.
 
-Would a short call suit? If someone at head office looks after client experience, point me their way.
+I would be glad to show how that looks on a call. If someone at head office sets how trainers run block reviews, a pointer works too.
 
 Vadim
 
-**Char count:** 272 / 550
+**Char count:** 376 / 550

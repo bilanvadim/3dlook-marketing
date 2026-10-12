@@ -15,21 +15,21 @@ Hi El,
 
 Caught my eye that you support the director at EMF, where performance training centres run from Brisbane to Newcastle.
 
-We built a guided two-photo scan that returns 80+ body measurements, under 45 seconds from the photos to structured results, and a centre can send it to a member as a simple page.
+We built a guided two-photo scan that returns 80+ body measurements, and a centre can send it to a member as a simple page.
 
 From where you sit, how does a new member's first session get set up at EMF, from booking to the first plan?
 
 Vadim
 
-**Char count:** 424 / 600
+**Char count:** 368 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi El,
 
-A short call would show how a centre sends the scan page to a member and what the member sees. 3DLOOK has worked with 100+ clients.
+A new member who has taken a two-photo scan on their own phone arrives at the first session with a starting point the trainer can build the first plan around. 3DLOOK has worked with 100+ clients.
 
-Would that be worth ten minutes, or could you point me to whoever looks after member experience at EMF?
+Would a short call on what the member sees be useful, or could you point me to whoever looks after member experience at EMF?
 
 Vadim
 
-**Char count:** 251 / 550
+**Char count:** 336 / 550

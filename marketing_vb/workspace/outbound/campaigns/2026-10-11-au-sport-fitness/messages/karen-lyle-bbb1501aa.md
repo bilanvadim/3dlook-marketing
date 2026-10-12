@@ -15,23 +15,23 @@ Hi Karen,
 
 FS8 runs a low-impact, high-energy workout across studios, and operations is where any new member step has to work without extra kit.
 
-A phone scan fits that. It runs on any phone with on-screen guidance and returns 80+ body measurements, under 45 seconds from the photos to structured results.
+A phone scan fits that. It runs on any phone with on-screen guidance and returns 80+ body measurements from a front and a side photo.
 
 How do FS8 studios run member check-ins or goal reviews today?
 
 Vadim
 
-**Char count:** 376 / 600
+**Char count:** 350 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Karen,
 
-For a studio network, the scan sits inside the app the member already uses or on a page the studio sends, and studios have nothing new to run. 3DLOOK has worked with 100+ clients.
+A member arriving at a check-in or goal review could bring a scan she took on her own phone, and FS8 studios would have nothing new to run. 3DLOOK has worked with 100+ clients.
 
-The page below shows how it fits a member app: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+The page below shows how the capture sits inside a member app: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
 Would a short call be worth it to see how it would look for FS8?
 
 Vadim
 
-**Char count:** 374 / 550
+**Char count:** 387 / 550

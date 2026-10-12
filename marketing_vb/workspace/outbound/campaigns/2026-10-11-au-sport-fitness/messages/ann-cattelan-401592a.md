@@ -24,12 +24,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Ann,
 
-I would value ten minutes to show how a partner capability could sit on a Go Vita page, with nothing to install in stores. 3DLOOK has worked with 100+ clients.
+A customer could take the scan at home and bring 80+ body measurements to a conversation with a store's team, sharing them only if she chooses. For Go Vita it would be a white-label page, with nothing to install in stores. 3DLOOK has worked with 100+ clients.
 
 Background: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
 
-Might a short call be worth it?
+Is there a time in the next couple of weeks for a short call?
 
 Vadim
 
-**Char count:** 284 / 550
+**Char count:** 414 / 550

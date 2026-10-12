@@ -15,19 +15,19 @@ Hi Jamie,
 
 Had a thought about Global Games, the teams-of-two event across Fitstop's four stations.
 
-With two phone photos, FitXpress produces 80+ body measurements. When members enter as pairs, what do you hope they take away from it?
+FitXpress is guided on screen and produces 80+ body measurements from a front and a side photo. When members enter as pairs, what do you hope they take away from it?
 
 Vadim
 
-**Char count:** 242 / 600
+**Char count:** 273 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Jamie,
 
-One thing worth knowing: a member can run the scan at home with on-screen guidance, no equipment needed.
+A pair signing up could each run the scan at home with on-screen guidance, no equipment needed, and keep their own result.
 
-Is a short call a fit? If someone else at Fitstop handles the member app, point me to them.
+Is a call a good next step? Whoever runs Global Games entries could be the right contact instead, and a name from you would be plenty.
 
 Vadim
 
-**Char count:** 215 / 550
+**Char count:** 276 / 550

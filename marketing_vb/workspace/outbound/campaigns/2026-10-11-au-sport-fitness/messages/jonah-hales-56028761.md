@@ -26,7 +26,7 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Jonah,
 
-Here is what operations would see. A member takes the scan on their own phone, and it returns 80+ body measurements, under 45 seconds from the photos to structured results.
+Before a check-in, a member could take the scan on their own phone and arrive with 80+ body measurements to go through. Clubs would have nothing to run on site.
 
 The page below covers how it fits a connected fitness brand: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
@@ -34,4 +34,4 @@ Might be worth a quick chat?
 
 Vadim
 
-**Char count:** 345 / 550
+**Char count:** 333 / 550

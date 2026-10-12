@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi there,
 
-Thought a call would be the easiest way to show it: ten minutes, with a client's view of the scan on a phone.
+A client in a training block at Oakleigh could scan at home before it starts and again near the end, then look at body composition estimates and body measurements from the two side by side.
 
-If the member app is run by someone else at Jetts, point me to them and I will leave Oakleigh alone.
+Let me show what the client sees on a phone. Should the head of coaching at Jetts head office be the right audience, a name works for me. Is Thursday or Friday open for a call?
 
 Vadim
 
-**Char count:** 229 / 550
+**Char count:** 385 / 550

@@ -2,8 +2,8 @@
 
 ## Context used
 - Angle: referral
-- Hook: owner of Fernwood Petrie and Fernwood Carindale; routines across two clubs
-- Proof point: FW2 owner-run network; two photos, 80+ body measurements, under 45 seconds
+- Hook: owner of Fernwood Petrie and Fernwood Carindale; goal reviews across two clubs
+- Proof point: FW2 owner-run network; two photos, 80+ body measurements
 
 ---
 
@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Melissa,
 
-You run both Fernwood Petrie and Fernwood Carindale, which made me curious about routines across two clubs.
+Petrie and Carindale are both yours, which made me curious how member goal reviews run at each.
 
-Our phone scan takes two photos, front and side, and returns 80+ body measurements a member can take at home. Do goal reviews run the same way at Petrie and Carindale?
+At home, with on-screen guidance, a member takes the two photos and gets back 80+ body measurements. What does a member bring to her goal review at your clubs?
 
 Vadim
 
-**Char count:** 296 / 600
+**Char count:** 276 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Melissa,
 
-With two clubs, one home scan for members at either gives both teams a starting point in the same form. Each scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+Members at either club could take the same home scan and bring it to their review, a reference they hold themselves.
 
-Shall we set up a short call? And if a head office contact owns member experience, I would welcome an introduction there.
+I would welcome a call whenever your week has room. A head office contact who looks after franchise performance would be a welcome introduction.
 
 Vadim
 
-**Char count:** 343 / 550
+**Char count:** 282 / 550

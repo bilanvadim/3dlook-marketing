@@ -26,8 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Lucy,
 
-Happy to walk you through the scan on a phone, 15 minutes at most. Would a call fit your week? Or, if someone at FS8 head office owns the member experience, point me their way and I will reach out there.
+For a goal review, a member could arrive with a scan she took at home, giving her coach a set of 80+ body measurements to talk through, shared only because she chose to.
+
+Would you like to see the scan on a phone in a short call? If goal reviews are shaped at head office, point me to whoever owns member experience for FS8 and I will reach out there.
 
 Vadim
 
-**Char count:** 220 / 550
+**Char count:** 368 / 550

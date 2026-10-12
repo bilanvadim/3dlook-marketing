@@ -15,23 +15,23 @@ Hi Kylie,
 
 Thought I'd share something with a KX Pilates studio owner.
 
-A guided scan from two photos returns 80+ body measurements and body composition estimates, shown only if the studio chooses to show them.
+A guided scan from two photos returns 80+ body measurements and body composition estimates, with BMI and BMR calculated.
 
 What do you learn about a new member in her first few classes?
 
 Vadim
 
-**Char count:** 281 / 600
+**Char count:** 263 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Kylie,
 
-I would keep a call practical: what a member sees, and what a studio does with it. 3DLOOK has worked with 100+ clients.
+A new member could arrive with a starting set of body measurements from two photos she took herself, and show only what she chooses to.
 
-Pointing me to whoever runs the KX Pilates app would also help.
+Pointing me to whoever runs new-member onboarding at KX Pilates head office would help too.
 
-Worth a chat?
+Would a call early next week work?
 
 Vadim
 
-**Char count:** 217 / 550
+**Char count:** 282 / 550

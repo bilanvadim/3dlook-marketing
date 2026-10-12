@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Daniel,
 
-Came across your work in strength training and coaching at Fitness Enhancement Castle Hill. The client takes two photos from a link a trainer sends, and the scan returns 80+ body measurements.
+Came across your work in strength training and coaching at Fitness Enhancement Castle Hill. A trainer's link opens a guided capture on the client's phone, and 80+ body measurements come back.
 
 When a client is away for a few weeks, how do you stay in touch with what they are working on?
 
 Vadim
 
-**Char count:** 307 / 600
+**Char count:** 306 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Daniel,
 
-A scan taken from a link is one way a client can come back to a plan after a break. 112,100 scans in 2025 across all 3DLOOK customers.
+After weeks away, a client who takes a scan from a trainer's link gets a fresh set of body measurements to set against the last one the client picks. 112,100 scans in 2025 across all 3DLOOK customers.
 
-Would a short call be useful? If another person at head office owns this, I am happy to be pointed to them.
+If the timing works, I am happy to talk it through on a call. A pointer to whoever looks after client experience at head office would help just as much.
 
 Vadim
 
-**Char count:** 262 / 550
+**Char count:** 373 / 550

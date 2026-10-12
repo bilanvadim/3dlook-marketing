@@ -2,7 +2,7 @@
 
 ## Context used
 - Angle: referral
-- Hook: owns World Gym Beresfield and Marconi per headline; same-routine question across two clubs
+- Hook: owns World Gym Beresfield and Marconi per headline; goal reviews across two clubs
 - Proof point: 80+ body measurements, two photos (proof-points.md); 100+ clients line
 
 ---
@@ -15,19 +15,19 @@ Hi Paul,
 
 Quick one on your two clubs, World Gym Beresfield and Marconi. The scan runs on any phone from a page a club sends, and returns 80+ body measurements from two photos.
 
-Do goal reviews run the same way at both clubs?
+How do goal reviews run at Beresfield and at Marconi?
 
 Vadim
 
-**Char count:** 232 / 600
+**Char count:** 238 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Paul,
 
-3DLOOK has worked with 100+ clients. A short call could cover what a scan adds to a review at either club.
+A member's own scan gives a goal review something concrete to look at, with only the scans the member picks. 3DLOOK has worked with 100+ clients.
 
-Or point me to the person at World Gym head office who leads member experience.
+A call to talk through what a member would see would be welcome. A pointer to whoever supports club owners with coaching and programming at World Gym head office would also help.
 
 Vadim
 
-**Char count:** 204 / 550
+**Char count:** 342 / 550

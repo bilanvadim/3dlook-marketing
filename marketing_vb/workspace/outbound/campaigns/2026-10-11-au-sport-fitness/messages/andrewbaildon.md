@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Andrew,
 
-For scale, 3DLOOK ran 112,100 scans in 2025 across all its customers.
+For a member's first check-in at Pacific Pines, Coomera or Pimpama, a scan from home could give them the same starting point to bring, with body measurements from two phone photos.
 
-A short call could show what a member would see and what a club owner would not need to do. Or tell me who shapes the Jetts app and I will go to them. Would you be up for a call?
+There is a short demo I can run for you by video. Franchise performance at Jetts head office may be the place this belongs, and I would take a pointer. Would you take the demo?
 
 Vadim
 
-**Char count:** 268 / 550
+**Char count:** 377 / 550

@@ -15,19 +15,19 @@ Hi Shami,
 
 This stood out: Fitstop names progression as one of its pillars.
 
-Guided on screen, our scan takes two phone photos and returns 80+ body measurements. How often do goal reviews run at your studio, and what does the coach bring to them?
+Members need no equipment: the guided capture runs on any phone and returns 80+ body measurements. How often do goal reviews run at your studio, and what does the coach bring to them?
 
 Vadim
 
-**Char count:** 253 / 600
+**Char count:** 267 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Shami,
 
-A review could open with two scans the member picked, taken weeks apart, and the coach's own notes beside them.
+A goal review could open with two scans the member picked, taken weeks apart, giving the conversation concrete measurements to read together.
 
-Would a short call suit you? Or if someone at Fitstop leads the member app, I can speak with them.
+Let me know if a call would be useful. If the person who shapes Fitstop's coaching practice is someone else, I can speak with them.
 
 Vadim
 
-**Char count:** 229 / 550
+**Char count:** 292 / 550

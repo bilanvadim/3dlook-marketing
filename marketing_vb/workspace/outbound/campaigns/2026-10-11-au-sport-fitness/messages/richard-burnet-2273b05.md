@@ -15,21 +15,23 @@ Hi Richard,
 
 Got me thinking: your commercial roles in Australian sport, and now BFT, where programs progress in multi-week blocks and each class is built into the next.
 
-A two-photo scan returns 80+ body measurements and body composition estimates, white-label through web and mobile SDKs.
+White-label through web and mobile SDKs, the scan turns two photos into 80+ body measurements and body composition estimates.
 
 Across a year with BFT, at which points would a member want to look at their own body data?
 
 Vadim
 
-**Char count:** 390 / 600
+**Char count:** 396 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Richard,
 
-One SDK integration would reach any member with a phone, with nothing to install in a studio. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results. More here: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+Members could look at their own readings when each block closes, which suits a program where every class builds into the next. One SDK integration would put the scan on any phone with on-screen guidance.
 
-Open to a short call to talk it through?
+More here: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+
+Would a call sometime in the next fortnight suit?
 
 Vadim
 
-**Char count:** 325 / 550
+**Char count:** 349 / 550

@@ -15,19 +15,19 @@ Hi Lydia,
 
 Thought I'd share, since new Fernwood members begin with a first session with a trainer to build a plan that suits them.
 
-FitXpress returns 80+ body measurements from two phone photos, taken at home. What goes into that first plan at your club?
+At home, a member runs the scan from two photos and gets 80+ body measurements back. What goes into that first plan at your club?
 
 Vadim
 
-**Char count:** 262 / 600
+**Char count:** 269 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Lydia,
 
-A new member could arrive with a scan she took herself, ready for the trainer to read. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+Arriving with a scan she took herself, a new member gives the trainer a starting point to read.
 
-Open to a quick call? Or point me to whoever at head office looks after the member side.
+How about a call at a time that suits your club? If head office looks after new-member plans, point me to whoever does.
 
 Vadim
 
-**Char count:** 290 / 550
+**Char count:** 234 / 550

@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Chris,
 
-Would you spare a few minutes on a call? I would like to hear how your members use the club out of hours before suggesting anything.
+Early starts come with 24/7 access, and a member who trains then could scan at home, with on-screen guidance, and keep the body measurements next to a goal they set themselves. Later scans they choose can sit beside it.
 
-If someone at Jetts head office runs the member app, I would gladly speak to them instead.
+I would like to hear what members ask you for, and show how this works on a phone. The digital team at Jetts may be the one to talk to; forward this their way if you like. Does next week look workable?
 
 Vadim
 
-**Char count:** 242 / 550
+**Char count:** 440 / 550

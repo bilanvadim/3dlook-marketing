@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-07",
+  "last_updated": "2026-10-12",
   "companies": {
     "safariland": {
       "covered_by_profile": null,
@@ -1260,33 +1260,33 @@
     "fernwood-fitness": {
       "display_name": "Fernwood Fitness",
       "covered_by_profile": "vadim",
-      "campaign_id": "2026-08-14-au-digital-fitness",
+      "campaign_id": "2026-10-11-au-sport-fitness",
       "product": "fitxpress",
-      "date": "2026-08-14",
+      "date": "2026-10-11",
       "status": "active"
     },
     "fitstop": {
       "display_name": "Fitstop",
       "covered_by_profile": "vadim",
-      "campaign_id": "2026-08-14-au-digital-fitness",
+      "campaign_id": "2026-10-11-au-sport-fitness",
       "product": "fitxpress",
-      "date": "2026-08-14",
+      "date": "2026-10-11",
       "status": "active"
     },
     "hapana": {
       "display_name": "Hapana",
       "covered_by_profile": "vadim",
-      "campaign_id": "2026-08-14-au-digital-fitness",
+      "campaign_id": "2026-10-11-au-sport-fitness",
       "product": "fitxpress",
-      "date": "2026-08-14",
+      "date": "2026-10-11",
       "status": "active"
     },
     "kic": {
-      "display_name": "Kic",
+      "display_name": "KIC",
       "covered_by_profile": "vadim",
-      "campaign_id": "2026-08-14-au-digital-fitness",
+      "campaign_id": "2026-10-11-au-sport-fitness",
       "product": "fitxpress",
-      "date": "2026-08-14",
+      "date": "2026-10-11",
       "status": "active"
     },
     "michelle-bridges-12wbt": {
@@ -1316,9 +1316,9 @@
     "sweat": {
       "display_name": "Sweat",
       "covered_by_profile": "vadim",
-      "campaign_id": "2026-08-14-au-digital-fitness",
+      "campaign_id": "2026-10-11-au-sport-fitness",
       "product": "fitxpress",
-      "date": "2026-08-14",
+      "date": "2026-10-11",
       "status": "active"
     },
     "transform-by-fitaz": {
@@ -2004,6 +2004,318 @@
       "covered_by_profile": null,
       "status": "existing_customer_excluded",
       "note": "customer — never enters outbound (exclusions/README.md)"
+    },
+    "anytime-fitness-australia": {
+      "display_name": "Anytime Fitness Australia",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "australian-sports-nutrition": {
+      "display_name": "Australian Sports Nutrition",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "bft": {
+      "display_name": "BFT",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "csb": {
+      "display_name": "CSB",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "emf-performance-fitness-centres": {
+      "display_name": "EMF Performance & Fitness Centres",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "equ": {
+      "display_name": "equ",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "fitness-and-lifestyle": {
+      "display_name": "Fitness and Lifestyle Group",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "fitness-cartel": {
+      "display_name": "Fitness Cartel",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "fitness-enhancement": {
+      "display_name": "Fitness Enhancement",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "fitness-inside-out": {
+      "display_name": "Fitness Inside Out",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "fitness-passport": {
+      "display_name": "Fitness Passport",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "ford-health": {
+      "display_name": "Ford Health",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "fs8": {
+      "display_name": "FS8",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "genesis-health-fitness": {
+      "display_name": "Genesis Health + Fitness",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "go-vita": {
+      "display_name": "Go Vita",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "jetts-fitness": {
+      "display_name": "Jetts Fitness",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "johnson-health-tech-australia": {
+      "display_name": "Johnson Health Tech Australia",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "kx-pilates": {
+      "display_name": "KX Pilates",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "les-mills-asia-pacific": {
+      "display_name": "Les Mills Asia Pacific",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "love-athletica": {
+      "display_name": "Love Athletica",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "mr-vitamins": {
+      "display_name": "Mr Vitamins",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "novofit": {
+      "display_name": "NovoFit",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "one-playground": {
+      "display_name": "One Playground",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "planet-fitness-australia": {
+      "display_name": "Planet Fitness Australia",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "recovr": {
+      "display_name": "Recovr",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "revl-training": {
+      "display_name": "REVL Training",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "revo-fitness": {
+      "display_name": "Revo Fitness",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "sisu-health": {
+      "display_name": "SiSU Health",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "snap-fitness-australia": {
+      "display_name": "Snap Fitness Australia",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "strong-pilates": {
+      "display_name": "STRONG Pilates",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "totalfusion": {
+      "display_name": "TotalFusion",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "ubx": {
+      "display_name": "UBX",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "vaura-pilates": {
+      "display_name": "VAURA Pilates",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "virgin-active-australia": {
+      "display_name": "Virgin Active Australia",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "vision-personal-training": {
+      "display_name": "Vision Personal Training",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "viva-leisure": {
+      "display_name": "Viva Leisure",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "world-gym-australia": {
+      "display_name": "World Gym Australia",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "yard-gym": {
+      "display_name": "The Yard Gym",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
+    },
+    "your-reformer": {
+      "display_name": "Your Reformer",
+      "covered_by_profile": "vadim",
+      "campaign_id": "2026-10-11-au-sport-fitness",
+      "product": "fitxpress",
+      "date": "2026-10-11",
+      "status": "active"
     }
   }
 }

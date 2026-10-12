@@ -15,19 +15,19 @@ Hi Ann,
 
 Had a thought about the first weeks at your Fernwood club: new members begin with a session with a trainer, one-on-one or as a group introduction, to build a plan.
 
-Our scan takes two phone photos and returns 80+ body measurements. At a group introduction, how do your trainers learn where each woman is starting?
+FitXpress lets each woman take two photos at home and arrive with 80+ body measurements. At a group introduction, how do your trainers learn where each woman is starting?
 
 Vadim
 
-**Char count:** 329 / 600
+**Char count:** 351 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Ann,
 
-For group introductions, members could take the scan at home beforehand and arrive with a starting point. For scale: 112,100 scans in 2025 across all 3DLOOK customers.
+For a group introduction, a member could take the scan at home beforehand and arrive with a starting point of her own.
 
-Might a short call help? Or point me to the colleague at Fernwood's national office who owns the member side.
+Would later this week suit for a call? The person at Fernwood's national office who owns new-member onboarding would be a helpful contact.
 
 Vadim
 
-**Char count:** 294 / 550
+**Char count:** 274 / 550

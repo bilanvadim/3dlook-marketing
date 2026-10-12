@@ -26,7 +26,7 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Ben,
 
-Someone who starts at home can choose to scan on day one and again later, and Your Reformer decides what they see. A short call would show how.
+Someone who starts at home can choose to scan on day one and again later, keeping 80+ body measurements as their own record. A short call would show how.
 
 See: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
@@ -34,4 +34,4 @@ Does that sound useful?
 
 Vadim
 
-**Char count:** 253 / 550
+**Char count:** 263 / 550

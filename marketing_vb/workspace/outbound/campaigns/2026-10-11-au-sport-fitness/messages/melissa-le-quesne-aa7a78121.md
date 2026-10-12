@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Melissa,
 
-For a coach who has trained other coaches, the scan gives a shared reference: the same two photos for every member who opts in.
+A member working on strength could set 80+ body measurements from two photos at home beside an earlier scan they choose. That gives you and the member one page to read from when talking about how the strength rounds are going.
 
-I can show it on a short call. If member experience at head office would own this, a name is all I need.
+Just say the word and I will arrange a call on what a member would see. A pointer to the programming lead at head office works just as well.
 
 Vadim
 
-**Char count:** 253 / 550
+**Char count:** 388 / 550

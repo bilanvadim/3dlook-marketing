@@ -26,12 +26,14 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Barry,
 
-A scale reference, in its own sentence: 112,100 scans in 2025 across all 3DLOOK customers.
+For clubs, the scan is a guided capture inside the member app that gives a member 80+ body measurements to look back on, and NovoFit would decide where it sits in what it offers.
 
-I would like to hear how NovoFit weighs a software partner, and a short call is the easiest way. Background: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+112,100 scans in 2025 across all 3DLOOK customers.
+
+I would like to hear how NovoFit weighs a software partner, and a call is the easiest way. Further reading: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
 
 Might that be worth your time?
 
 Vadim
 
-**Char count:** 313 / 550
+**Char count:** 452 / 550

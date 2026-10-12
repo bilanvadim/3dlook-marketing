@@ -15,21 +15,21 @@ Hi Josh,
 
 Spotted something about Planet Fitness Australia: a Judgement Free Zone for members and an Australian member app of its own.
 
-A guided two-photo scan in that app returns 80+ body measurements, under 45 seconds from the photos to structured results. The capture runs on any phone, so there is nothing to ship or install in clubs.
+A guided two-photo scan in that app returns 80+ body measurements and body composition estimates. The capture runs on any phone, which leaves nothing to ship or install in clubs.
 
 How do clubs run member check-ins or goal reviews today?
 
 Vadim
 
-**Char count:** 403 / 600
+**Char count:** 379 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Josh,
 
-Operations teams rarely want a new task for club staff, and a member-taken scan adds none. 3DLOOK has worked with 100+ clients. This page shows how it sits in a connected fitness setup: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+A member who takes the scan on their own phone before a goal review brings a starting point they chose, and club staff add no step. This page shows how it sits in a connected fitness setup: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Might be worth a quick chat?
+Is a quick call something you would consider?
 
 Vadim
 
-**Char count:** 295 / 550
+**Char count:** 316 / 550

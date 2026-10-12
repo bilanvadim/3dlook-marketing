@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Chris,
 
-Wanted to reach out about Fitstop Cleveland, where progression is a pillar and some members miss weeks for family or work.
+Progression is a pillar at Fitstop Cleveland, and some members miss weeks for family or work.
 
-Two photos on a phone are enough for 80+ body measurements. How does the studio pick up with a member after a break?
+A front and a side photo on a phone are enough for 80+ body measurements. How does the studio pick up with a member after a break?
 
 Vadim
 
-**Char count:** 258 / 600
+**Char count:** 243 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Chris,
 
-Think of the scan as a way for the member to come back with fresh numbers.
+A member coming back after a break could take a fresh scan at home and give the coach a current starting point.
 
-Could we speak briefly? And if another person at Fitstop runs the app, point me their way.
+Could we speak briefly? If another person at Fitstop owns the member journey, point me their way.
 
 Vadim
 
-**Char count:** 184 / 550
+**Char count:** 228 / 550

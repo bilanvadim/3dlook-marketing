@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Connor,
 
-If useful, a short call could cover what members could look back on. For scale: 112,100 scans in 2025 across all 3DLOOK customers.
+Anyone who has taken a scan can show their own measurements when they ask about progress, and decides whether the team sees them.
 
-Or tell me who at The Yard Gym owns member experience, and I will go to them.
+I am glad to arrange a call about what a member would bring along. If someone at The Yard Gym owns member experience, tell me who and I will go to them.
 
 Vadim
 
-**Char count:** 228 / 550
+**Char count:** 302 / 550

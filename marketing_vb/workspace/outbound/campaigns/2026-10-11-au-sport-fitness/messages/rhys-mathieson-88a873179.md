@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: thin profile, gym owner at BFT; BF2 blocks
-- Proof point: BF2 company fact; 80+ body measurements (proof-points.md); speed wording
+- Proof point: BF2 company fact; 80+ body measurements (proof-points.md)
 
 ---
 
@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Rhys,
 
-Quick one for a BFT gym owner. Programs run in multi-week blocks, with each class built into the next. A guided two-photo scan returns 80+ body measurements and body composition estimates.
+Quick one for a BFT gym owner. Programs run in multi-week blocks, with each class built into the next. On-screen guidance takes a member through front and side photos, and body composition estimates (body fat %, lean mass, fat mass) come back with 80+ body measurements.
 
-At the end of a block, how do your members see what has changed?
+When a block ends, what do you ask members about how it went for them?
 
 Vadim
 
-**Char count:** 271 / 600
+**Char count:** 359 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Rhys,
 
-Short version: the scan returns 80+ body measurements, under 45 seconds from the photos to structured results, from a link the studio sends.
+A scan at the close of a block could give the member body composition estimates (body fat %, lean mass, fat mass) with BMI and BMR calculated, ready to talk through with the coach.
 
-Open to a quick chat, or a pointer to whoever owns member experience at BFT?
+When would a short call suit? Pointing me to whoever shapes programming at BFT head office works too.
 
 Vadim
 
-**Char count:** 235 / 550
+**Char count:** 300 / 550

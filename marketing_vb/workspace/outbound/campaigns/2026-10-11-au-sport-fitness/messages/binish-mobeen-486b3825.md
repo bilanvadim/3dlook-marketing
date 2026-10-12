@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Binish,
 
-Noticed your background in actuarial and accounting work, a numerate way to look at a club. At Fernwood, new members start with a first session with a trainer to build a plan.
+Actuarial and accounting work is a numerate way to look at a club. At Fernwood, new members start with a first session with a trainer to build a plan.
 
-Our scan returns 80+ body measurements from two phone photos taken at home. What does the trainer write down about a new member's starting point?
+FitXpress is built for the phone a member already owns, and 80+ body measurements come from two photos. What does the trainer write down about a new member's starting point?
 
 Vadim
 
-**Char count:** 341 / 600
+**Char count:** 344 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Binish,
 
-A new member could take the scan on her phone before the introduction and choose what her trainer sees. The capture runs on any phone, guided on screen.
+A new member could take the scan on her phone before the introduction and choose what her trainer sees.
 
-Would you be open to a quick call? Or send me towards the head office person who shapes what clubs offer members.
+Does a call sometime next week sound reasonable? The head office person who shapes what clubs offer members would be the right pointer.
 
 Vadim
 
-**Char count:** 286 / 550
+**Char count:** 259 / 550

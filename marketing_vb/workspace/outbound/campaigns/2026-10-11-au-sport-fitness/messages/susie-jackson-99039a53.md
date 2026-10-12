@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Susie,
 
-For members who sign up for a pairs event, two scans on their own phone, a few weeks apart, give them something concrete to discuss with their coach.
+Members getting ready to enter in pairs could each take a scan on their own phone, and what they see stays theirs to share with a coach or keep.
 
-Happy to explain on a short call. If it belongs with whoever leads the Fitstop app, point me there instead.
+I can walk you through it on a call whenever suits. If whoever looks after member experience around the event is the better contact, a name is all I need.
 
 Vadim
 
-**Char count:** 276 / 550
+**Char count:** 318 / 550

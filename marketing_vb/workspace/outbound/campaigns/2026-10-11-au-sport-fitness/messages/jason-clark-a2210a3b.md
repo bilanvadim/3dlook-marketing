@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: owner of BFT Ponsonby, earlier at BFT International; returning members
-- Proof point: 80+ body measurements, body composition estimates (proof-points.md); 34,000 scans line
+- Proof point: 80+ body measurements, body composition estimates (proof-points.md)
 
 ---
 
@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Jason,
 
-Quick thought, given your time at BFT International and now Ponsonby. The scan takes two photos, front and side, and returns 80+ body measurements and body composition estimates from any phone.
+Quick thought, given your time at BFT International and now Ponsonby. From any phone, front and side photos return 80+ body measurements and body composition estimates.
 
 When a member returns after weeks away, how does the Ponsonby team restart their plan?
 
 Vadim
 
-**Char count:** 299 / 600
+**Char count:** 274 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Jason,
 
-You know the BFT floor well, so a short call would be easy: I would show the capture and you tell me where it fits. One weight-management platform ran 34,000 scans in 2025.
+A member back after weeks away could take the two-photo scan on their phone and arrive at the first session with a fresh set of measurements and body composition estimates to talk through with the coach.
 
-Worth a quick chat, or point me to whoever runs member experience at BFT?
+Would later this week suit for a short call? If it belongs to someone else, the member experience lead at BFT head office is who to ask.
 
 Vadim
 
-**Char count:** 265 / 550
+**Char count:** 359 / 550

@@ -15,19 +15,19 @@ Hi Craig,
 
 Saw you own a Fitstop centre, where members train across four styles.
 
-FitXpress returns 80+ body measurements from two photos on a phone. What does the coach bring to a member's goal review at your centre?
+Members take a front and a side photo at home and get 80+ body measurements back. What does the coach bring to a member's goal review at your centre?
 
 Vadim
 
-**Char count:** 224 / 600
+**Char count:** 238 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Craig,
 
-A member can bring a scan they took at home to the review.
+A member could bring a scan taken at home to the review, and the coach and member would read the measurements together.
 
-Would a quick call be worth it? If a person at Fitstop owns the app, send me over.
+A call would show how it works. If Fitstop has a coaching lead better placed for this, send me over.
 
 Vadim
 
-**Char count:** 160 / 550
+**Char count:** 239 / 550

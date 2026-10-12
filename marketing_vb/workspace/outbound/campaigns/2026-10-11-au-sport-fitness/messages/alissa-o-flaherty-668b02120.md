@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: Palmerston opening soon alongside the Cairns and Townsville sites
-- Proof point: 80+ body measurements, two photos (proof-points.md); under 45 seconds line
+- Proof point: 80+ body measurements, two photos (proof-points.md)
 
 ---
 
@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Alissa,
 
-Noticed World Gym Palmerston is soon to open alongside your Cairns and Townsville sites. We build a body scan from two photos that returns 80+ body measurements, white-label for a club's own page.
+World Gym Palmerston opening soon alongside your Cairns and Townsville sites is the reason for this note. We build a body scan from two photos that returns 80+ body measurements, which a new member can take at home on any phone.
 
 When Palmerston opens, how will your coaches note a new member's starting point?
 
 Vadim
 
-**Char count:** 297 / 600
+**Char count:** 329 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Alissa,
 
-The scan returns 80+ body measurements, under 45 seconds from the photos to structured results, so a coach could start the first week with it.
+At a new club, a member's first week can begin with a scan they took at home, and the coach sees it only if the member chooses.
 
-Would a short call suit? If a head office contact owns this, an introduction is welcome.
+A call on how that would look for a Palmerston member would be welcome. If a head office contact owns new-member onboarding, an introduction works too.
 
 Vadim
 
-**Char count:** 251 / 550
+**Char count:** 299 / 550

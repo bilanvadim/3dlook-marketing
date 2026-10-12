@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Esma,
 
-Wanted to reach out about The Yard Gym Deer Park. A member can take our two-photo body scan at home on any phone, and it returns 80+ body measurements.
+A question about The Yard Gym Deer Park. A member can take our two-photo body scan at home on any phone, and it returns 80+ body measurements.
 
 At Deer Park, how does a coach note a new member's starting point?
 
 Vadim
 
-**Char count:** 236 / 600
+**Char count:** 227 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Esma,
 
-A short chat would cover where a scan could sit in the first weeks. 3DLOOK has worked with 100+ clients.
+A member who takes the scan before a first session gives a coach a starting point to build from, and the member decides what is shared. 3DLOOK has worked with 100+ clients.
 
-Could we find a few minutes? Or point me to whoever owns the member app at The Yard Gym.
+I would value a call on what a member would see at the start. And if someone at head office owns new-member onboarding, I would take a name.
 
 Vadim
 
-**Char count:** 211 / 550
+**Char count:** 331 / 550

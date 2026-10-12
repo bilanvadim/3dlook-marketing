@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Martin,
 
-As Executive Director at Jetts Fitness, you see the clubs as a group. We offer a scan that members run on a phone: front and side photos in, 80+ body measurements back.
+Executive Director at Jetts Fitness is a seat that sees the clubs as a group. We offer a scan that members run on a phone: front and side photos in, 80+ body measurements back.
 
-When a new member-facing feature comes to the clubs, how does it usually reach them?
+What path does a new idea for members usually take from head office to a Jetts club floor?
 
 Vadim
 
-**Char count:** 273 / 600
+**Char count:** 287 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Martin,
 
-What a member sees and what a club needs to do, which is nothing, fits into one short call.
+For a member, the scan is one optional step on their phone: two photos with on-screen guidance, then body measurements to look at when they like.
 
-If it sits with the person who leads the Jetts member app, I would value a pointer. Would a quick call work for you?
+Talking through where a feature like this could sit in a club's year would be my aim. Franchise performance at Jetts could be the right home for it; point me there. Send me a time and I will arrange the rest.
 
 Vadim
 
-**Char count:** 228 / 550
+**Char count:** 374 / 550

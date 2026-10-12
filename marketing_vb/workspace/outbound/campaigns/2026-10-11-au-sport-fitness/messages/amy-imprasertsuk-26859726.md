@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Amy,
 
-The retail angle is a partnership, so a call could cover how a white-label page might sit next to your existing conversations. 3DLOOK has worked with 100+ clients. Here is some background: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+A customer who takes the scan at home before a consultation arrives with 80+ body measurements of their own, and the adviser can look at scans the customer picks. A white-label page is one way to offer that. Background here: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
 
-Worth a quick chat to explore?
+Would a short call to explore it work?
 
 Vadim
 
-**Char count:** 299 / 550
+**Char count:** 343 / 550

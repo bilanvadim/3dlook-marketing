@@ -1,0 +1,6 @@
+people 325 / batches 12
+
+per-company repetition (n = people at the company):
+  Anytime Fitness Australia (17):
+     - sentence ×2: 3dlook has worked with 100+ clients.
+     - sentence ×2: there were 112,100 scans in 2025 across all 3dlook customers.

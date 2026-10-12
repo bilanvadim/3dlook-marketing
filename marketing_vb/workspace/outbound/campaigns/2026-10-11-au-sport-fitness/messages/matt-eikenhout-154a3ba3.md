@@ -3,7 +3,7 @@
 ## Context used
 - Angle: member-experience
 - Hook: in the fitness industry since 2005, from the gym floor to PT manager at Club Lime; current-role check pending
-- Proof point: two photos, 80+ body measurements (proof-points.md); 100+ clients (aggregate)
+- Proof point: two photos, 80+ body measurements (proof-points.md)
 
 ---
 
@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Matt,
 
-Fitness teams often want one thing a member can look back on between sessions. 3DLOOK has worked with 100+ clients, and a call could show how that works.
+Repeating the scan at home lets a member set it against an earlier one they pick, which can give them their own look at what their training is changing.
 
-Worth 15 minutes? https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+I can show how that works on a call, if you would like. More on the app side: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
 Vadim
 
-**Char count:** 252 / 550
+**Char count:** 311 / 550

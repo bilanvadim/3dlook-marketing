@@ -15,19 +15,19 @@ Hi Richard,
 
 Got me thinking about Fitstop's four session styles and how much a member does across them in a month.
 
-Two phone photos go in and 80+ body measurements plus body composition estimates come out. How do you show a member what a few weeks across the styles has changed?
+Two phone photos go in and 80+ body measurements come out along with body composition estimates. How do you show a member what a few weeks across the styles has changed?
 
 Vadim
 
-**Char count:** 287 / 600
+**Char count:** 293 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Richard,
 
-One practical point: the member takes the scan at home on their own phone, and the coach can open it with them at the next session.
+A month across Lift, Perform, Condition and Sweat gives a member plenty to talk about with a coach. Two scans taken at home a few weeks apart, with the pair chosen by the member, give that conversation measurements to start from.
 
-Is a short call worth setting up? If the member app is looked after by someone else at Fitstop, a pointer to them works for me.
+Could we talk it through on a call? If someone else sets Fitstop's programming, I would gladly take their name instead.
 
 Vadim
 
-**Char count:** 280 / 550
+**Char count:** 370 / 550

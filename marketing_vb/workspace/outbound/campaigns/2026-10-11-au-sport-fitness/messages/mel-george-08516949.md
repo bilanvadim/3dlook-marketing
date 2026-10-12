@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Mel,
 
-Thought I would offer something more useful than a pitch: a ten-minute call to hear how Aveley members train and whether a scan fits at all.
+For a Jetts Aveley member who trains out of hours, a scan at home can serve as a reference for a goal they set: two photos, 80+ body measurements, and the option to scan again later and set the two side by side.
 
-If that is a question for the Jetts head of member experience, a nudge in their direction is welcome. Does a call sound fair?
+I would welcome a conversation about how Aveley members set their goals. A head of member experience at Jetts is the sort of role that might own this, and an introduction works for me. I am flexible on timing.
 
 Vadim
 
-**Char count:** 283 / 550
+**Char count:** 438 / 550

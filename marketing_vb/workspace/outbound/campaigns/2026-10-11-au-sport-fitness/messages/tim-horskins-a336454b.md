@@ -13,7 +13,7 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Tim,
 
-NovoFit works with club operators on their facilities, from planning through delivery and service.
+Clubs turn to NovoFit for their facilities, from planning through delivery and service.
 
 A club could offer a white-label scan in its own app or on a page it sends. Two photos return 80+ body measurements, and there is nothing to install.
 
@@ -21,15 +21,17 @@ Do clubs ask NovoFit for member-facing technology today?
 
 Vadim
 
-**Char count:** 323 / 600
+**Char count:** 312 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Tim,
 
-If clubs do ask, I can show how a software capability sits beside the service NovoFit already gives them. A short call would cover it. Does that sound useful?
+If clubs do ask, a member could take a guided scan on her own phone and get 80+ body measurements, delivered through software the club adds once.
 
-Related reading: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+I can show how that would look in a short call. Related reading: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+A reply of one line is all I need.
 
 Vadim
 
-**Char count:** 255 / 550
+**Char count:** 326 / 550

@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Cameron,
 
-Returning members are where a repeatable scan could earn its place, since the member chooses the earlier scan to compare.
+After weeks away, a member could scan again at home and set it against the earlier scan they choose, which gives them a reference from before the break.
 
-A quick call could cover it. Head office's app owner is a fine alternative if you would rather point me there.
+Say the word and we can fit in a call. Whoever runs franchise support at head office would be a fine pointer too.
 
 Vadim
 
-**Char count:** 253 / 550
+**Char count:** 287 / 550

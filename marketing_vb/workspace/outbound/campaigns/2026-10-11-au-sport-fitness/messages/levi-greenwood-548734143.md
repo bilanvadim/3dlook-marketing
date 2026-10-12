@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Levi,
 
-Operations lens: the scan runs on any phone with on-screen guidance, and clubs need nothing on site.
+A page a member opens on any phone, with on-screen guidance, needs nothing set up in a club: the member takes two photos and 80+ body measurements come back.
 
-I can show it on a short call. If product or member experience at head office owns this, I would welcome an introduction.
+If the digital lead who plans member features at head office is the right contact, an introduction would help. Would you be open to a call on this?
 
 Vadim
 
-**Char count:** 240 / 550
+**Char count:** 323 / 550

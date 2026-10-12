@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi David,
 
-A short call could cover how a member-taken scan avoids fit-out work. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+What a member would see is a guided scan on their own phone returning 80+ body measurements, with nothing physical added to the club.
 
-Would that be worth ten minutes, or could you point me to whoever owns the member app or member experience at Planet Fitness Australia?
+Would a short call on that be useful, or could you point me to whoever owns the member app or member experience at Planet Fitness Australia?
 
 Vadim
 
-**Char count:** 320 / 550
+**Char count:** 293 / 550

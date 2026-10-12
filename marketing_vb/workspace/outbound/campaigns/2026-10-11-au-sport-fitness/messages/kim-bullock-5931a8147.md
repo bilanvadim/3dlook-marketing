@@ -15,19 +15,19 @@ Hi Kim,
 
 Your headline pairs Fernwood Mordialloc with a Cert 3 instructor qualification and Mat Pilates, which suggests members who mix services.
 
-Our scan takes two photos and returns 80+ body measurements from a phone. Where does a member's overall picture sit when she moves between classes and the gym floor?
+From a phone and two photos, a member gets 80+ body measurements. When she moves between a class and the gym floor, what goes with her from one to the other?
 
 Vadim
 
-**Char count:** 319 / 600
+**Char count:** 311 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Kim,
 
-You have run operations before, so here is the short version: nothing to install in the club, and the member takes the scan on her phone. 3DLOOK has worked with 100+ clients.
+A member who moves between classes and the gym floor can keep one scan on her own phone and open it wherever she trains.
 
-Worth a call? Or point me to the national team contact for member experience.
+Could I book a call with you? The national team contact for member experience would be a fine person to point me to.
 
 Vadim
 
-**Char count:** 269 / 550
+**Char count:** 254 / 550

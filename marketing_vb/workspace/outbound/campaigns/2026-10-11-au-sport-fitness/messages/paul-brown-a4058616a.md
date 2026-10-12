@@ -2,7 +2,7 @@
 
 ## Context used
 - Angle: referral
-- Hook: Director at Vision Personal Training Marrickville, thin profile so title-based
+- Hook: Director at Vision Personal Training Marrickville, thin profile so title-based; Vision coaches in studio, outdoors or online
 - Proof point: two photos front and side, 80+ body measurements (proof-points.md); under 45 seconds from the photos to structured results
 
 ---
@@ -13,23 +13,23 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Paul,
 
-Vision Marrickville has clients who go away for a few weeks and come back to a program that kept moving.
+Vision trainers coach in the studio, outdoors or online, and the program around a client runs through all three.
 
-A guided scan from two phone photos, front and side, could give both of you a fresh starting point. It returns 80+ body measurements.
+A guided scan from two phone photos, front and side, returns 80+ body measurements the client can take wherever they train.
 
-How does your studio pick up with a client after a stretch away?
+How does the Marrickville team see a client's progress when they rarely meet in the studio?
 
 Vadim
 
-**Char count:** 322 / 600
+**Char count:** 347 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Paul,
 
-The scan runs under 45 seconds from the photos to structured results, so a client can do it at the airport or at home.
+The scan runs under 45 seconds from the photos to structured results, at home or at the park, and the trainer can read the numbers at the next session.
 
-Would a quick call make sense? If someone at Vision head office handles this kind of thing, tell me who and I will go to them instead.
+Would a call early next week work? If the MyVision app is the better route, tell me who owns it at head office.
 
 Vadim
 
-**Char count:** 271 / 550
+**Char count:** 281 / 550

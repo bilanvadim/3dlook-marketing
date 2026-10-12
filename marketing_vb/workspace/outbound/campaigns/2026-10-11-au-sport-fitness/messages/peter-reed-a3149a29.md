@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Peter,
 
-Got me thinking about how a team learns what a shopper is training for. FitXpress is a two-photo body scan that returns 80+ body measurements on any phone, white-label, which a shopper can take at home before or after a conversation.
+Got me thinking about how a team learns what a shopper is training for. With FitXpress a shopper opens a white-label guided capture at home, before or after a conversation, and 80+ body measurements come back.
 
 At Australian Sports Nutrition, how does the team learn a shopper's training goal in the first conversation?
 
 Vadim
 
-**Char count:** 361 / 600
+**Char count:** 337 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Peter,
 
-A short call would cover what a body scan could add to that first conversation. 3DLOOK ran 112,100 scans in 2025 across all its customers.
+A shopper who takes the scan at home before the first conversation arrives with their own measurements to talk through, and decides whether the store sees them.
 
-Would that be worthwhile, or is there someone who owns customer advice or digital you would point me to instead?
+If a call on that first conversation would be useful, say the word. A pointer to whoever leads digital at head office would also do.
 
 Vadim
 
-**Char count:** 270 / 550
+**Char count:** 312 / 550

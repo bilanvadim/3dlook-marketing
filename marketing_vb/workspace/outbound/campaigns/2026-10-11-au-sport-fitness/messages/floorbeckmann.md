@@ -24,12 +24,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Floor,
 
-From a growth angle, the useful part is that a partner decides where the scan appears and nothing ships to a venue. 3DLOOK has worked with 100+ clients.
+Taking a body check at home gives a member 80+ body measurements to look back on, within whatever the partner chooses to show. From a growth angle, nothing ships to a venue.
 
-A short read: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+It is written up here: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
 
-Might a short call be a good next step?
+A call, if you would like one, is an easy next step.
 
 Vadim
 
-**Char count:** 289 / 550
+**Char count:** 332 / 550

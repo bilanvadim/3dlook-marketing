@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Shane,
 
-3DLOOK has worked with 100+ clients. A short call would help me understand how projects pick up member features.
+Since the scan runs on a member's phone, a refit team has nothing to deliver on the club floor for it, and members meet it wherever Viva's apps or pages place it.
 
-Could we find 15 minutes? Or point me to whoever owns the member app at Viva and I will talk with them.
+A call could cover how a member feature reaches clubs without touching a fit-out. If club design standards at Viva sit with another team, tell me which one.
 
 Vadim
 
-**Char count:** 235 / 550
+**Char count:** 338 / 550

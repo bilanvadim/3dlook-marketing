@@ -15,21 +15,21 @@ Hi Glen,
 
 Quick one for a UBX franchise owner.
 
-Members scan on their own phone with on-screen guidance, and two photos return 80+ body measurements. Nothing is installed in the club.
+A member could scan on their own phone with on-screen guidance, and two photos would return 80+ body measurements. Nothing is needed on site.
 
 How often do goal reviews run at your club, and what does the coach bring to them?
 
 Vadim
 
-**Char count:** 274 / 600
+**Char count:** 280 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Glen,
 
-It is a small ask: a short call so I can show what a member sees.
+Ahead of a goal review, a member could scan at home and arrive with 80+ body measurements to go through with the coach. The member picks which earlier scan sits beside it.
 
-If head office owns the member app, whoever that is would be a welcome pointer.
+If the review routine is a matter for head office, its franchise performance team may be the better contact. Tell me a day that suits and I will set up the call.
 
 Vadim
 
-**Char count:** 163 / 550
+**Char count:** 351 / 550

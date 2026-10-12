@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Catherine,
 
-Might a short call be worthwhile? I would walk you through the scan on a phone and listen to what suits your club.
+At the end of a new member's first weeks, they could scan again at home and set the result beside the scan from week one, choosing for themselves whether to share it with anyone.
 
-If Jetts has a person for member experience who should hear this instead, I can contact them if you name them.
+I can talk you through what the member sees. If Jetts has a person who owns the new-member experience, I would be glad of an introduction. Would a call work for you?
 
 Vadim
 
-**Char count:** 248 / 550
+**Char count:** 367 / 550

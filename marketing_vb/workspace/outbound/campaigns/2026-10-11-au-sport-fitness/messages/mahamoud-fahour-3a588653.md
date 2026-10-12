@@ -26,7 +26,7 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Mahamoud,
 
-A partner capability tends to work when clubs can switch it on without a project. This is one SDK the partner offers inside the clubs' own apps, and 3DLOOK has worked with 100+ clients.
+For a partner, this is one SDK offered inside the member apps of the group's brands, giving a member 80+ body measurements from a scan on her phone. Each brand app would add it once.
 
 Background: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
 
@@ -34,4 +34,4 @@ Might a short call make sense to see where it could sit?
 
 Vadim
 
-**Char count:** 340 / 550
+**Char count:** 337 / 550

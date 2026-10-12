@@ -3,7 +3,13 @@
  "checked": 1,
  "source": "people-validated.csv (send == SEND)",
  "batch": "fernwood-fitness-2",
- "generated": "2026-10-11T17:50:20",
+ "generated": "2026-10-12T09:26:13",
  "hard": [],
- "soft": []
+ "soft": [
+  [
+   "no company line",
+   "stacey-flentje-8b9b19361 M1",
+   "«Fernwood Fitness» is not named: check it has a line only this company gets"
+  ]
+ ]
 }

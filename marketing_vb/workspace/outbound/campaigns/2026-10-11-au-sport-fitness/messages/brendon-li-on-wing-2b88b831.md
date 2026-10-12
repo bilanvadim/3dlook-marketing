@@ -15,21 +15,21 @@ Hi Brendon,
 
 Noticed your role as a director at The Yard Gym. FitXpress is a two-photo scan that runs on any phone with on-screen guidance and returns 80+ body measurements, white-label inside a member app.
 
-For members away from the gym for a while, such as travel or shift work, where would a scan fit at The Yard Gym?
+When a Yard Gym member is away for a while, for travel or shift work, what do they look back on when they return?
 
 Vadim
 
-**Char count:** 327 / 600
+**Char count:** 328 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Brendon,
 
-The capture needs nothing from the club beyond a place in the app. 112,100 scans in 2025 across all 3DLOOK customers.
+When a member is away for a while, a scan taken on their own phone gives a clear starting point for coming back, using only the scans the member picks. The capture is guided on screen. 112,100 scans in 2025 across all 3DLOOK customers.
 
-A short read: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+The detail sits at https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Open to a short call?
+Open to a call?
 
 Vadim
 
-**Char count:** 238 / 550
+**Char count:** 355 / 550

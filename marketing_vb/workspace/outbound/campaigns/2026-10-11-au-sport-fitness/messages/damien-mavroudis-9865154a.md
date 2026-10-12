@@ -2,8 +2,8 @@
 
 ## Context used
 - Angle: product
-- Hook: CEO of Sweat, whose strength programs grew from Sweat with Kayla
-- Proof point: SW1 company fact; two photos, 80+ body measurements
+- Hook: CEO of Sweat, strength programs that grew from Sweat with Kayla
+- Proof point: SW1 company fact; two photos, 80+ body measurements, body composition estimates; 100+ clients
 
 ---
 
@@ -13,23 +13,23 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Damien,
 
-Thought I'd share a thought on Sweat's strength programs, which grew from Sweat with Kayla into a gym-based line.
+Sweat's gym-based strength programs, Strength with Kayla among them, grew out of where Sweat began as Sweat with Kayla.
 
-A guided two-photo scan in the app could return 80+ body measurements and body composition estimates, white-label through an SDK.
+A guided scan on any phone gives a member 80+ body measurements and body composition estimates.
 
-At which point in a strength program would a scan fit for Sweat members, such as the start of a block?
+How do members see their strength building over the length of a program today?
 
 Vadim
 
-**Char count:** 367 / 600
+**Char count:** 315 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Damien,
 
-Strength programs give members a natural point to compare, using an earlier scan the member picks. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results. This page shows the setup: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+A member who wants a look back across a strength program can take a scan whenever she chooses and pick an earlier one to set it against. It takes a front and a side photo on any phone, guided on screen. 3DLOOK has worked with 100+ clients. This page shows the setup: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Worth a quick chat to explore?
+Is a short call worth setting up?
 
 Vadim
 
-**Char count:** 335 / 550
+**Char count:** 383 / 550

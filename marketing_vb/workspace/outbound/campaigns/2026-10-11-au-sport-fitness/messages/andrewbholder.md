@@ -17,19 +17,19 @@ Noticed that Revo Fitness set out to make fitness accessible to every Australian
 
 A guided two-photo scan in that app returns 80+ body measurements and body composition estimates, white-label, with nothing to ship to clubs.
 
-At which point in a member's year would a scan fit best for Revo members, such as joining or a stretch away from the club?
+How does Revo help a new member see where they are starting from when they first walk into a club?
 
 Vadim
 
-**Char count:** 409 / 600
+**Char count:** 385 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Andrew,
 
-Reach matters here, and the capture runs on any phone with on-screen guidance. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results. Here is how a connected fitness brand uses it: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+A new member could take the scan on a phone with on-screen guidance before the first visit and keep it as their starting point. A page with more detail: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
 Might be worth a quick chat?
 
 Vadim
 
-**Char count:** 333 / 550
+**Char count:** 264 / 550

@@ -26,8 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Sonia,
 
-I can show you the scan on a phone in a short call, if you have a few minutes. Or point me to whoever owns the member app at STRONG Pilates head office and I will take it to them.
+A new member could take the scan on her own phone and bring 80+ body measurements as a starting point for her first conversation with a trainer, shared only if she chooses.
+
+If a short call is easy to arrange, I can show you how it looks on a phone. And if the member app is the better place to start, point me to whoever owns it at STRONG Pilates head office and I will go to them.
 
 Vadim
 
-**Char count:** 197 / 550
+**Char count:** 400 / 550

@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: leads The Yard Gym in Kingston, Tasmania, aiming at the gold standard for gyms there
-- Proof point: 80+ body measurements, two photos (proof-points.md); under 45 seconds line
+- Proof point: 80+ body measurements, two photos (proof-points.md)
 
 ---
 
@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Shaun,
 
-Noticed you lead The Yard Gym in Kingston with a focus on setting the gold standard for gyms in Tasmania. Two photos on any phone give a scan that returns 80+ body measurements.
+Leading The Yard Gym in Kingston with a focus on setting the gold standard for gyms in Tasmania caught my eye. Two photos on any phone give a scan that returns 80+ body measurements.
 
-How often do goal reviews run at Kingston, and what does the coach bring to them?
+What do you look at with a Kingston member when you talk through where they want to get to?
 
 Vadim
 
-**Char count:** 278 / 600
+**Char count:** 293 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Shaun,
 
-The scan returns 80+ body measurements, under 45 seconds from the photos to structured results, so a coach can start a review with it in hand if the member chooses.
+A member's own scan gives a goal review something concrete to talk through, and the member chooses whether the coach sees it, with 80+ body measurements on the page.
 
-Worth a short call? If the head office person for the member app is better placed, point me to them.
+A call on what a member would bring to a review would be useful on my side. If coaching programs are run from head office, I would take a name there.
 
 Vadim
 
-**Char count:** 284 / 550
+**Char count:** 334 / 550

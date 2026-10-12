@@ -17,16 +17,18 @@ Co-leading STRONG Pilates means choosing what its member app offers.
 
 A white-label scan can sit in the app or on a page a studio sends: two photos in, 80+ body measurements back, with nothing to ship.
 
-At which point in a member's year would a scan fit best, joining or a goal review?
+Which moment in a STRONG Pilates membership would you pick for a first scan?
 
 Vadim
 
-**Char count:** 305 / 600
+**Char count:** 299 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Michael,
 
-I would like to show the scan on a phone and hear what you think. 3DLOOK has worked with 100+ clients, and the setup for a brand app is one integration.
+A member could meet the scan at the moment you pick and see 80+ body measurements for herself. 3DLOOK has worked with 100+ clients.
+
+The setup for a brand app is one integration.
 
 Page: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
@@ -34,4 +36,4 @@ Would a short call work?
 
 Vadim
 
-**Char count:** 268 / 550
+**Char count:** 294 / 550

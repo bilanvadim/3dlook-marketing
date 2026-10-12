@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Christie,
 
-It returns 80+ body measurements, under 45 seconds from the photos to structured results.
+A member's scan taken at home, with on-screen guidance, gives them body measurements to bring to a goal review at Ashmore or at Helensvale.
 
-A short call would show what that looks like for a member at one of your clubs. Or point me to whoever runs member features for Jetts. Would a call fit?
+I can show the screens a member would see. Ownership of the Jetts member app may sit elsewhere, and I would be glad to be pointed there. Any time that suits you works for me.
 
 Vadim
 
-**Char count:** 264 / 550
+**Char count:** 336 / 550

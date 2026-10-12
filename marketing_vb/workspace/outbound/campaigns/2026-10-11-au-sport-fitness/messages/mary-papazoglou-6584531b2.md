@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: franchise owner with retail and education background; FIIT30 groups
-- Proof point: FW3 FIIT30 coach-led groups; two photos, 80+ body measurements, under 45 seconds
+- Proof point: FW3 FIIT30 coach-led groups; two photos, 80+ body measurements
 
 ---
 
@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Mary,
 
-Noticed your background in retail and education, which sits well with coach-led FIIT30 groups at Fernwood.
+Retail and education both appear in your background, which sits well with coach-led FIIT30 groups at Fernwood.
 
-Our scan is two phone photos and returns 80+ body measurements. In your groups, how does a member learn that her strength is moving up?
+Members photograph themselves twice at home, and 80+ body measurements come back. In your groups, how does a member learn that her strength is moving up?
 
 Vadim
 
-**Char count:** 260 / 600
+**Char count:** 282 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Mary,
 
-A member in your groups could take the scan at home and choose whether to share it with her coach. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+In your groups, a member could take a scan at home and decide for herself whether her coach sees it.
 
-Up for a short call? Or send me to whoever at head office owns the member side.
+A call would let me answer questions directly, if you want one. Whoever at head office leads FIIT30 programming would be a good place to send me.
 
 Vadim
 
-**Char count:** 292 / 550
+**Char count:** 264 / 550

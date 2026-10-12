@@ -14,7 +14,7 @@ Vadim
 --- M2
 Hi Jonah,
 
-Here is what operations would see. A member takes the scan on their own phone, and it returns 80+ body measurements, under 45 seconds from the photos to structured results.
+Before a check-in, a member could take the scan on their own phone and arrive with 80+ body measurements to go through. Clubs would have nothing to run on site.
 
 The page below covers how it fits a connected fitness brand: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
@@ -38,9 +38,9 @@ Vadim
 --- M2
 Hi Tim,
 
-Some context on scale: 112,100 scans were run in 2025 across all 3DLOOK customers.
+A new member's first weeks are when a scan can give them a starting set of body composition estimates to look back on later. 112,100 scans in 2025 across all 3DLOOK customers.
 
-For UBX it would be an API or SDK addition, and the brand decides where members see it. More on the approach here: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+For UBX it would be an API or SDK addition to the new member app. More on the approach here: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
 Open to a short call to talk it through?
 
@@ -56,17 +56,17 @@ Came across your work on the Fitness Australia board before UBX.
 
 UBX has no class timetables, and members work through boxing and strength rounds when they arrive. A two-photo scan returns 80+ body measurements, and a member can take it at home or during a stretch away from the club.
 
-Is there a point in a member's year where UBX would want that on offer?
+What would you want a UBX member to bring back to the floor after weeks away?
 
 Vadim
 --- M2
 Hi Michael,
 
-Quick idea for you. 3DLOOK has worked with 100+ clients, and the scan runs white-label through an API or SDKs, with the brand choosing where it appears.
+A member who scans at home during a stretch away could return to UBX with 80+ body measurements of their own to look back on.
 
-Any comparison covers only scans the member picks: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+3DLOOK has worked with 100+ clients. The scan runs white-label through an API or SDKs: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Would a call next week suit?
+Is there a day next week for a call?
 
 Vadim
 
@@ -76,9 +76,9 @@ proof: REST API with API-key authentication, SDKs, photo deletion within 30 days
 --- M1
 Hi David,
 
-Noticed your background in systems at Flight Centre and ITOC.
+Your systems background at Flight Centre and ITOC caught my eye.
 
-FitXpress is a REST API with API-key authentication, and web and mobile SDKs, white-label. Two photos go in and 80+ body measurements come out. Photos are deleted after processing or within 30 days.
+FitXpress is a REST API with API-key authentication, and web and mobile SDKs, white-label. Two photos go in and 80+ body measurements come out.
 
 Where would a capture step sit in the UBX Member App stack?
 
@@ -86,11 +86,11 @@ Vadim
 --- M2
 Hi David,
 
-On integration: a basic one typically takes 2-4 weeks. Outputs are stored and deletable by scan ID.
+On integration, a basic one typically takes 2-4 weeks. A member takes two photos on any phone, and the scan returns body composition estimates alongside 80+ body measurements.
 
-The scan returns 80+ body measurements, under 45 seconds from the photos to structured results. Data handling is covered here: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+Photos are deleted immediately after processing or within 30 days, per the customer's policy; measurements and other outputs stay stored until deleted by scan ID on the customer's request. The FAQ has the rest: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
 
-Open to a short call to walk through the API?
+Would a call on the API be useful?
 
 Vadim
 
@@ -102,7 +102,7 @@ Hi Chinta,
 
 Got me thinking: you have led multi-site spa and fitness operations around the world, and now run UBX Buderim.
 
-A guided scan from two photos returns 80+ body measurements on a member's own phone. Nothing is installed in the studio.
+A guided scan from two photos could return 80+ body measurements on a member's own phone, with nothing to install in the studio.
 
 After that multi-site experience, how do you like member check-ins to run at Buderim?
 
@@ -110,9 +110,9 @@ Vadim
 --- M2
 Hi Chinta,
 
-Wanted to reach out with a small idea: a short call where I show what a member sees when they take the scan.
+A check-in has more to talk through when a member arrives with figures of their own. Two photos at home could give a Buderim member exactly that.
 
-If it belongs in the member app, point me to whoever owns it at UBX head office. Either way, would a quick call be useful?
+If member experience at UBX head office is the better home for this, a name is all I need. Would a call early next week work for you?
 
 Vadim
 
@@ -122,7 +122,7 @@ proof: two photos, 80+ measurements
 --- M1
 Hi Dino,
 
-Noticed your store management background in retail, now in your own UBX club.
+Your store management years in retail, now behind your own UBX club, caught my eye.
 
 New UBX members are met by a coach and get a boxing walk-through before their first workout. A two-photo scan on the member's phone returns 80+ body measurements that could give the coach a starting point.
 
@@ -132,11 +132,11 @@ Vadim
 --- M2
 Hi Dino,
 
-A short call could show you what a member sees when they take the scan.
+Straight after the boxing walk-through, a newcomer could take a scan on their phone and hold a first reference of their own, which they choose whether to keep. It gives the member and their coach something concrete to talk through.
 
-If it belongs in the UBX Member App, I would be glad to be pointed to the person at head office who owns it.
+Your head office onboarding lead would be a natural contact for this, and a name would help.
 
-Worth a quick call?
+Reply with a day and I will book a call.
 
 Vadim
 
@@ -156,9 +156,9 @@ Vadim
 --- M2
 Hi Melissa,
 
-For a coach who has trained other coaches, the scan gives a shared reference: the same two photos for every member who opts in.
+A member working on strength could set 80+ body measurements from two photos at home beside an earlier scan they choose. That gives you and the member one page to read from when talking about how the strength rounds are going.
 
-I can show it on a short call. If member experience at head office would own this, a name is all I need.
+Just say the word and I will arrange a call on what a member would see. A pointer to the programming lead at head office works just as well.
 
 Vadim
 
@@ -178,9 +178,9 @@ Vadim
 --- M2
 Hi Simon,
 
-A scan taken at home could cover the gaps between visits, and the member picks which earlier scan to compare.
+Between visits, a scan taken at home gives a member something to bring along the next time they walk in, whatever the hour. The member chooses which earlier scan to set it against.
 
-Happy to show it on a short call. If the UBX Member App sits with someone at head office, point me their way.
+If the UBX Member App has an owner at head office, I would value an introduction there. Would you like me to walk you through it on a call?
 
 Vadim
 
@@ -200,9 +200,9 @@ Vadim
 --- M2
 Hi Taylor,
 
-You know your members best, so I am curious whether a short call on this is worth your time.
+If head office added a scan to the UBX Member App, a South Yarra member would start a guided two-photo capture themselves and see 80+ body measurements come back.
 
-Whoever owns the app at head office could be a better first stop, and I am glad to be pointed there.
+Whoever owns the app at head office is the right person for that, and a name from you would be welcome. Would a call this month suit?
 
 Vadim
 
@@ -222,9 +222,9 @@ Vadim
 --- M2
 Hi Bianca,
 
-With your floor experience, you will know quickly whether this fits. 112,100 scans were run in 2025 across all 3DLOOK customers.
+Two photos at home would give a Birkdale member their own 80+ body measurements to bring to a conversation with the team.
 
-A short call would let me show what a member sees. If head office is the better home, I would be glad to hear who runs member experience there.
+Whoever looks after franchise performance at head office is a fair route if you prefer. Is a call worth setting up?
 
 Vadim
 
@@ -236,7 +236,7 @@ Hi Glen,
 
 Quick one for a UBX franchise owner.
 
-Members scan on their own phone with on-screen guidance, and two photos return 80+ body measurements. Nothing is installed in the club.
+A member could scan on their own phone with on-screen guidance, and two photos would return 80+ body measurements. Nothing is needed on site.
 
 How often do goal reviews run at your club, and what does the coach bring to them?
 
@@ -244,9 +244,9 @@ Vadim
 --- M2
 Hi Glen,
 
-It is a small ask: a short call so I can show what a member sees.
+Ahead of a goal review, a member could scan at home and arrive with 80+ body measurements to go through with the coach. The member picks which earlier scan sits beside it.
 
-If head office owns the member app, whoever that is would be a welcome pointer.
+If the review routine is a matter for head office, its franchise performance team may be the better contact. Tell me a day that suits and I will set up the call.
 
 Vadim
 
@@ -266,9 +266,9 @@ Vadim
 --- M2
 Hi Cassie,
 
-Coaches hear the progress question first, and a scan the member picks to compare is one answer.
+When a member asks how they are going, a scan they pick to compare gives you something concrete to point to: two phone photos, 80+ body measurements and body composition estimates, set beside an earlier scan.
 
-The scan returns body composition estimates and 80+ body measurements, under 45 seconds from the photos to structured results. A short call could show it, or point me to head office's app owner.
+Head office's coaching lead would be the person for that wider question, and I would welcome a name. Say the word and I will set up a call.
 
 Vadim
 
@@ -288,9 +288,9 @@ Vadim
 --- M2
 Hi Levi,
 
-Operations lens: the scan runs on any phone with on-screen guidance, and clubs need nothing on site.
+A page a member opens on any phone, with on-screen guidance, needs nothing set up in a club: the member takes two photos and 80+ body measurements come back.
 
-I can show it on a short call. If product or member experience at head office owns this, I would welcome an introduction.
+If the digital lead who plans member features at head office is the right contact, an introduction would help. Would you be open to a call on this?
 
 Vadim
 
@@ -310,9 +310,9 @@ Vadim
 --- M2
 Hi Paul,
 
-Short version: a member scans at home, and picks an earlier scan to compare when back at the club.
+A member who wants to see what the strength rounds are doing could scan at home and set the new 80+ body measurements next to an earlier scan of their own.
 
-I would be glad to show it on a quick call. Or point me to whoever owns the UBX Member App at head office.
+Head office's programming lead is a route I would welcome if that suits you better. If you are curious, send me a day and I will arrange a call.
 
 Vadim
 
@@ -332,9 +332,9 @@ Vadim
 --- M2
 Hi Jamie,
 
-If it helps the club, a short call would show the scan on a phone, and you can judge the fit yourself.
+A new member's first scan, taken at home from two photos, gives them a starting point of their own to bring to the first conversation. The member decides what to keep.
 
-If the member app is a head office matter, a pointer to the right person works too.
+New-member onboarding at head office is the natural owner of that, and a name from you would help. Is that worth a call?
 
 Vadim
 
@@ -354,9 +354,9 @@ Vadim
 --- M2
 Hi Cameron,
 
-Returning members are where a repeatable scan could earn its place, since the member chooses the earlier scan to compare.
+After weeks away, a member could scan again at home and set it against the earlier scan they choose, which gives them a reference from before the break.
 
-A quick call could cover it. Head office's app owner is a fine alternative if you would rather point me there.
+Say the word and we can fit in a call. Whoever runs franchise support at head office would be a fine pointer too.
 
 Vadim
 
@@ -366,9 +366,9 @@ proof: two photos, 80+ measurements
 --- M1
 Hi Luke,
 
-Had to say hi as a UBX business owner.
+Got curious about how a UBX club runs without class timetables.
 
-UBX has no class timetables. A member can scan at any time of day on their own phone and get 80+ body measurements.
+A member scanning at any hour gets 80+ body measurements back from two photos.
 
 How do you see who is working toward what when nobody shares a class?
 
@@ -376,9 +376,9 @@ Vadim
 --- M2
 Hi Luke,
 
-Open floors mean members train at different hours, and a scan they take themselves fits that rhythm.
+Members who train at different hours each have their own scan to read, and the member decides whether to share it with a coach.
 
-Would a short call be useful? If the UBX Member App has an owner at head office, a name would do just as well.
+If the person running digital at head office is the better contact, a name would do. Is there a day this week or next for a call?
 
 Vadim
 
@@ -398,8 +398,9 @@ Vadim
 --- M2
 Hi Wade,
 
-I would value a short call to show the scan and hear how your members use the app.
+A scan at joining would give a member a first set of 80+ body measurements, while one taken later allows the member to set the new numbers beside an earlier scan of their choosing.
 
-If the right person is at head office, point me to whoever leads member experience there.
+Whoever leads member experience at head office could point me the right way. Reply here if a call sounds useful.
 
 Vadim
+

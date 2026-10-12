@@ -24,12 +24,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Mitchell,
 
-If useful, I can walk you through what a member sees in a short call.
+A member training on their own could take photos at home when they choose and read the body measurements that come back, a view of their own months of work.
 
-The better contact may be whoever looks after member experience in Genesis head office, and I would take that pointer too.
+The better contact may be whoever shapes coaching and programs at Genesis head office, and I would take that pointer too.
 
-Open to a chat?
+Name a day and I will book the call around you.
 
 Vadim
 
-**Char count:** 231 / 550
+**Char count:** 349 / 550

@@ -15,19 +15,19 @@ Hi Adam,
 
 Quick idea for you as a Fitstop owner. Global Games runs ALL STAR and PRO divisions, which means one studio serves very different members.
 
-The scan we built runs on any phone, using two photos, and returns 80+ body measurements. How do your coaches keep the everyday member's progress in view as well?
+The scan we built runs on any phone, from a front and a side photo, and returns 80+ body measurements. How do your coaches keep the everyday member's progress in view as well?
 
 Vadim
 
-**Char count:** 319 / 600
+**Char count:** 332 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Adam,
 
-For a member who is not chasing a podium, a scan taken at home is a simple way to see change.
+For someone not aiming at the podium, a scan taken at home is something to compare, using only the ones they pick.
 
-Could we speak for ten minutes? Someone at Fitstop may run the member app, and if so point me to them.
+Is a call possible? Whoever shapes the programming behind the divisions may be the better person for this, and I would follow your pointer.
 
 Vadim
 
-**Char count:** 214 / 550
+**Char count:** 272 / 550

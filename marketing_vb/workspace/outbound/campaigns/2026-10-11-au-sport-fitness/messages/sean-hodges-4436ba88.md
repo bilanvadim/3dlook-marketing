@@ -15,21 +15,23 @@ Hi Sean,
 
 After Group Operations at The Club Group, you now run operations at Viva Leisure, where clubs stay open around the clock.
 
-The scan runs on any phone with on-screen guidance. It returns 80+ body measurements, under 45 seconds from the photos to structured results. Nothing to ship or install in clubs.
+The scan runs on any phone with on-screen guidance and returns 80+ body measurements. It takes under 45 seconds from the photos to structured results, with nothing to ship or install in clubs.
 
 How do clubs run member check-ins or goal reviews today?
 
 Vadim
 
-**Char count:** 376 / 600
+**Char count:** 390 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Sean,
 
-For scale, 3DLOOK ran 112,100 scans in 2025 across all 3DLOOK customers.
+At a member check-in or goal review, a member who has taken the scan on their own phone brings measurements to the conversation, and the club team has nothing to set up.
 
-A short call could show what a club team would and would not have to do. Open to a quick chat? Overview: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+There were 112,100 scans in 2025 across all 3DLOOK customers.
+
+Open to a call? Overview: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
 Vadim
 
-**Char count:** 258 / 550
+**Char count:** 339 / 550

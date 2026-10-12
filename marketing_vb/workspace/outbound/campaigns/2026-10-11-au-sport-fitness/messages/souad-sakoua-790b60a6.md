@@ -15,19 +15,19 @@ Hi Souad,
 
 Caught my eye that FIIT30 at Fernwood runs four class types for small groups, with a coach leading each session.
 
-Our scan needs two phone photos and returns 80+ body measurements. For a member who rotates through Lower Body Power and Total Body Strength, what does she see of her own gains today?
+A member's phone, a front photo and a side photo are all the scan needs for 80+ body measurements. For a member who rotates through Lower Body Power and Total Body Strength, what does she see of her own gains today?
 
 Vadim
 
-**Char count:** 315 / 600
+**Char count:** 347 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Souad,
 
-A member could repeat the scan at home and compare it with one she picked earlier, with her coach if she likes. A scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+Rotating through Lower Body Power and Total Body Strength, a member could take a scan at home and open it next to an earlier one she picks, with her coach if she likes.
 
-Would a call suit you? Alternatively, who at head office handles member experience?
+Is a call something you would consider? If someone at head office leads FIIT30 programming, a name would do.
 
 Vadim
 
-**Char count:** 308 / 550
+**Char count:** 296 / 550

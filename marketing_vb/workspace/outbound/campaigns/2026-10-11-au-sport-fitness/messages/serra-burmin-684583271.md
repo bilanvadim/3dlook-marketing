@@ -26,12 +26,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Serra,
 
-A creative view of this would help me most. The member sees a short guided capture, and One Playground decides how the result looks and where it appears.
+A creative view of this would help me most. The member sees a short guided capture and gets 80+ body measurements back, on a screen your team would design.
 
 Examples: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Could we talk for a short call?
+Do you have time for a short call on the screens?
 
 Vadim
 
-**Char count:** 278 / 550
+**Char count:** 298 / 550

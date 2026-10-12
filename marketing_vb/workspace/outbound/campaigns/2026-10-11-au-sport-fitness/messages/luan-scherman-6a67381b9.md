@@ -2,8 +2,8 @@
 
 ## Context used
 - Angle: referral
-- Hook: director at BFT North Lakes; trial classes
-- Proof point: BF4 company fact; 80+ body measurements (proof-points.md); 112,100 scans line
+- Hook: director at BFT North Lakes; new members before the first class
+- Proof point: 80+ body measurements (proof-points.md)
 
 ---
 
@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Luan,
 
-Quick idea for BFT North Lakes: the trial lets a new member try several classes to see how the progressive programming works. A guided two-photo scan returns 80+ body measurements.
+A director at BFT North Lakes sees newcomers arrive every week. Before a first class, a member can take front and side photos on a phone and get back 80+ body measurements.
 
-What does your team note about a new member during the trial?
+What would help your North Lakes coaches most to know about a new member before that class?
 
 Vadim
 
-**Char count:** 260 / 600
+**Char count:** 282 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Luan,
 
-I can show how a studio would send the scan in a short call. The scale so far: 112,100 scans in 2025 across all 3DLOOK customers.
+A new member could scan on their phone at home before the first class and choose which readings to show the coach on the day.
 
-Open to a quick chat, or a pointer to whoever looks after member experience at BFT?
+A short call this week would work for me. The person at BFT head office who handles new-member onboarding may be the one to speak with.
 
 Vadim
 
-**Char count:** 231 / 550
+**Char count:** 279 / 550

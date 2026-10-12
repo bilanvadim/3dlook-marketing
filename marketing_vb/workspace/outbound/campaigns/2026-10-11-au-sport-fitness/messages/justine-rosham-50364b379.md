@@ -26,12 +26,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Justine,
 
-Might a ten-minute call be useful? I can show what a member sees.
+A member's first scan taken at home could be part of the welcome: two photos on her phone, guided on screen, then body measurements she chooses to show her trainer.
 
-If KX Pilates head office has a digital owner, I would take an introduction instead.
+Whoever leads member experience at head office could take an introduction from you, and I would follow up there.
 
-Could we fit one in?
+Say so and I will send two or three times to choose from.
 
 Vadim
 
-**Char count:** 193 / 550
+**Char count:** 357 / 550

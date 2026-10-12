@@ -26,12 +26,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Carlisle,
 
-Glad to walk through it live. A call takes you through what a member sees after a scan.
+Once a block ends, a member could open a scan they took at home next to an earlier one they picked, looking at their own body measurements from two photos.
 
-A pointer to the REVL Training digital lead would work too.
+A pointer to REVL's member experience lead would work too.
 
-Open to a call?
+If a call sounds useful, say so and I will find a time around the studio.
 
 Vadim
 
-**Char count:** 186 / 550
+**Char count:** 311 / 550

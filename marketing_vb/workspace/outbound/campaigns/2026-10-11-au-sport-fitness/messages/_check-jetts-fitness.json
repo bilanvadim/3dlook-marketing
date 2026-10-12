@@ -3,33 +3,13 @@
  "checked": 30,
  "source": "people-validated.csv (send == SEND)",
  "batch": "jetts-fitness",
- "generated": "2026-10-11T17:48:24",
+ "generated": "2026-10-12T09:26:35",
  "hard": [],
  "soft": [
   [
-   "no company line",
-   "brendon-levenson-57821a68 M1",
-   "«Jetts Fitness» is not named: check it has a line only this company gets"
-  ],
-  [
-   "no company line",
-   "david-upton-1867aa35 M1",
-   "«Jetts Fitness» is not named: check it has a line only this company gets"
-  ],
-  [
-   "no company line",
-   "angelique-woods-16a39714 M1",
-   "«Jetts Fitness» is not named: check it has a line only this company gets"
-  ],
-  [
-   "no company line",
-   "scanlan-karen M1",
-   "«Jetts Fitness» is not named: check it has a line only this company gets"
-  ],
-  [
-   "no company line",
-   "jetts-gym-mount-hutton-a069a2157 M1",
-   "«Jetts Fitness» is not named: check it has a line only this company gets"
+   "sentence opening repeated",
+   "Jetts Fitness ×3",
+   "«i would value a conversation…»: angelique-woods-16a39714, david-upton-1867aa35, sam-bhandari-0a477a42a"
   ]
  ]
 }

@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: franchise owner of Fernwood Gungahlin and Canberra City
-- Proof point: two photos, 80+ body measurements; 100+ clients
+- Proof point: two photos, 80+ body measurements
 
 ---
 
@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Jessie,
 
-Canberra members could use the same scan page for either club. 3DLOOK has worked with 100+ clients.
+Members who ask about their progress could read a scan of their own, 80+ body measurements from two photos, with an earlier scan they pick next to it.
 
-Would a short call suit you? If it sits with someone at the national office, I would be glad to be pointed to them.
+Would you be up for a call at some point? If it sits with someone at the national office, I would be glad to be pointed to them.
 
 Vadim
 
-**Char count:** 235 / 550
+**Char count:** 299 / 550

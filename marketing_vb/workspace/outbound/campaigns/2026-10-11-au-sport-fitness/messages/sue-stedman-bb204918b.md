@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: business owner at Bondi, empty headline, neutral title-based copy
-- Proof point: 80+ body measurements, two photos (proof-points.md); under 45 seconds line
+- Proof point: 80+ body measurements, two photos (proof-points.md)
 
 ---
 
@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Sue,
 
-Quick thought for the Fitness Enhancement owner at Bondi. FitXpress is a two-photo body scan, taken on any phone from a link a trainer sends, that returns 80+ body measurements.
+Quick thought for the Fitness Enhancement owner at Bondi. With FitXpress a client takes two photos on any phone from a link a trainer sends, and the scan returns 80+ body measurements.
 
 What do your clients ask about their own progress?
 
 Vadim
 
-**Char count:** 245 / 600
+**Char count:** 252 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Sue,
 
-The scan returns 80+ body measurements, under 45 seconds from the photos to structured results, and the client picks which scans to look back on.
+When a client asks about their progress, a scan they took themselves gives a concrete answer: 80+ body measurements, compared only with the earlier scans the client picks.
 
-A short call could show how that works. Or tell me who at head office looks after client experience.
+A call would show how that looks from the client's side. If whoever builds the client-facing tools at head office is the better contact, tell me who.
 
 Vadim
 
-**Char count:** 263 / 550
+**Char count:** 338 / 550

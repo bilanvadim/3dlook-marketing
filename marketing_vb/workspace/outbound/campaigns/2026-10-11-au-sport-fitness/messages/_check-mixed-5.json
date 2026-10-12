@@ -3,7 +3,7 @@
  "checked": 33,
  "source": "people-validated.csv (send == SEND)",
  "batch": "mixed-5",
- "generated": "2026-10-11T17:47:48",
+ "generated": "2026-10-12T09:25:36",
  "hard": [],
  "soft": [
   [
@@ -20,16 +20,6 @@
    "no company line",
    "rachel-dillon-598668264 M1",
    "«CSB» is not named: check it has a line only this company gets"
-  ],
-  [
-   "near-duplicate sentence",
-   "Revo Fitness: andrewbholder / dainmoreton",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "TotalFusion: sam-merza-5b0743198 / kane-bonke-17a40622a",
-   "«it returns 80+ body measurements, .»"
   ]
  ]
 }

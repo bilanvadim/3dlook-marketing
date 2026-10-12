@@ -17,21 +17,23 @@ Quick thought on Genesis Connect. Genesis began in Ringwood in 1997, and members
 
 A guided scan could sit inside it: two photos return 80+ body measurements and body composition estimates, white-label through an API or SDKs.
 
-Where in a member's year would a scan fit best at Genesis, joining or a goal review?
+What part does Genesis Connect play when a new member sets a first goal?
 
 Vadim
 
-**Char count:** 343 / 600
+**Char count:** 331 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Ian,
 
-Since the member journey sits with you, a short call could cover how the capture plugs in through the API or SDKs, with nothing to ship to clubs. For scale: 112,100 scans in 2025 across all 3DLOOK customers.
+A guided scan in Genesis Connect could give a new member's first goal a starting set of body measurements to look back on. It would be white-label, through an API or SDKs, with nothing to ship to clubs.
 
-A short read first: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+There were 112,100 scans in 2025 across all 3DLOOK customers.
 
-Would a quick chat help?
+This page covers how it sits in a member app: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+
+If a call would help, tell me which week works.
 
 Vadim
 
-**Char count:** 333 / 550
+**Char count:** 440 / 550

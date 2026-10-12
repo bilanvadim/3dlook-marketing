@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Jeremy,
 
-3DLOOK ran 112,100 scans in 2025 across all 3DLOOK customers.
+For the exercise pillar, a repeat scan gives a client measurements to set against an earlier one they pick.
 
-If a scan could help the exercise pillar in your studio, a short call would be the quickest way to find out. Open to one? Otherwise, a pointer to the person at Vision who owns client experience is welcome.
+If a call sounds useful, tell me a day that works. Should client experience at Vision head office be the right place for this, a pointer is welcome.
 
 Vadim
 
-**Char count:** 287 / 550
+**Char count:** 276 / 550

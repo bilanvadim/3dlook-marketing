@@ -26,12 +26,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Josh,
 
-Worth showing in a call: the member's screen after a scan, and how a team picks where it appears. 3DLOOK has worked with 100+ clients.
+When a block ends, a member could open the scan they took at home beside one they picked from before.
 
 Link for context: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Worth a look together?
+Would a call be worth a look together?
 
 Vadim
 
-**Char count:** 257 / 550
+**Char count:** 240 / 550

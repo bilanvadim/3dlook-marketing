@@ -15,23 +15,25 @@ Hi Ben,
 
 Noticed your background: ten years owning gyms before co-founding REVL in 2020.
 
-REVL members book through the REVL Training app. A guided scan could sit there, and it returns 80+ body measurements, under 45 seconds from the photos to structured results.
+REVL members book through the REVL Training app. A guided scan could sit there: a member takes two photos on any phone with on-screen guidance, and 80+ body measurements come back with body composition estimates alongside.
 
-At what point in a member's year would that fit best, joining or a stretch away from the studio?
+How does a new REVL member first meet the app?
 
 Vadim
 
-**Char count:** 368 / 600
+**Char count:** 367 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Ben,
 
-For partnerships and growth conversations, a short call could cover how the capture reaches studios through one SDK, with nothing to install. For scale: 112,100 scans in 2025 across all 3DLOOK customers.
+A new member could take a first scan at home, with guidance on screen, as part of meeting the app. It reaches studios through one SDK, with nothing to install.
+
+There were 112,100 scans in 2025 across all 3DLOOK customers.
 
 A short read: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Open to a quick chat?
+Would a call this month be worth setting up?
 
 Vadim
 
-**Char count:** 320 / 550
+**Char count:** 362 / 550

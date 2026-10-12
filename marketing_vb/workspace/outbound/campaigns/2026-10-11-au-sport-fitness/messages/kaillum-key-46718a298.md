@@ -15,21 +15,21 @@ Hi Kaillum,
 
 Ten years in fitness means you have seen plenty of training blocks end.
 
-At Vision, a client could take a guided scan at the end of a block. Two phone photos return 80+ body measurements, under 45 seconds from the photos to structured results.
+At Vision, a client could take a guided scan at the end of a block. From two photos on the client's phone, the trainer gets 80+ body measurements to read, wherever the client is.
 
 How does your studio show a client what a block has changed?
 
 Vadim
 
-**Char count:** 325 / 600
+**Char count:** 333 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Kaillum,
 
-A call could cover how a scan would sit at the end of a block in your studio.
+At the end of a block, a client can take the scan at home and set it against the one from the start of the block, giving the trainer something concrete to talk through.
 
-Would a call this week work? If someone at Vision's head office is the right person for this, I am happy to be pointed their way.
+Is there a day this week for a call? The person who looks after the client journey at head office may be the right ear, if you would rather pass it on.
 
 Vadim
 
-**Char count:** 228 / 550
+**Char count:** 341 / 550

@@ -2,7 +2,7 @@
 
 ## Context used
 - Angle: referral
-- Hook: owner of Fernwood Browns Plains; FIIT30 challenge start and finish
+- Hook: owner of Fernwood Browns Plains; FIIT30 challenge, strength and confidence
 - Proof point: FW3 FIIT30 coach-led small-group, four class types; two photos, 80+ body measurements
 
 ---
@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Melissa,
 
-Came across your Browns Plains club, where FIIT30 gives small groups coach-led sessions across four class types.
+Browns Plains runs FIIT30 as coach-led small groups across four class types.
 
-We offer a two-photo phone scan that returns 80+ body measurements, taken at home. When your club runs a FIIT30 challenge, how do you mark where a member started and where she finished, on strength and confidence?
+Taken at home on any phone, the scan returns 80+ body measurements from two photos. When your club runs a FIIT30 challenge, what do members take away about their own strength and confidence?
 
 Vadim
 
-**Char count:** 347 / 600
+**Char count:** 288 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Melissa,
 
-At the start and the end of a challenge, a member could take the scan on her own phone and look at both with her coach. It sits on a page the club sends, with nothing to install.
+Members in a challenge could take a scan at home whenever they like and keep it as their own record, shown to a coach only if they choose. It returns 80+ body measurements from two photos, front and side.
 
-Would you be open to a short call? If someone at the national office owns member services, I am happy to be pointed to them instead.
+Say the word and I will send two or three times for a call. If the national office has someone who leads FIIT30 programming, I am happy to be pointed to them.
 
 Vadim
 
-**Char count:** 332 / 550
+**Char count:** 384 / 550

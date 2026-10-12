@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Kirsten,
 
-Wanted to reach out about BFT's trial, which lets a new member try several classes to see how the progressive programming works. Two photos from a phone give 80+ body measurements and body composition estimates.
+BFT's trial lets a new member try several classes and see the progressive programming at work. Two photos from a phone give 80+ body measurements and body composition estimates.
 
 Across those first classes, what do your coaches learn about a new member's starting point?
 
 Vadim
 
-**Char count:** 324 / 600
+**Char count:** 290 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Kirsten,
 
-If a starting point is something your coaches note by eye today, a short call could show what a phone scan adds. 3DLOOK has worked with 100+ clients.
+Across the first classes, a member could take a scan at home and let the coach see the readings they choose to share, a starting point built from measurements and body composition estimates.
 
-Would a short call suit? Otherwise, whoever owns member experience at BFT could be the better person.
+Would a short call this week or next suit? If onboarding for new members is owned elsewhere, point me to whoever owns it at BFT head office.
 
 Vadim
 
-**Char count:** 272 / 550
+**Char count:** 352 / 550

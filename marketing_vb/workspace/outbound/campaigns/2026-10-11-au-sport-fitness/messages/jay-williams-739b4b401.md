@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Jay,
 
-At Jetts Fitness there are no lock-in contracts, so what the club offers members each month is what counts. The scan gives members 80+ body measurements from two photos, and they can revisit them at home.
+At Jetts Fitness there are no lock-in contracts. A member can send two phone photos, front and side, and get 80+ body measurements to revisit at home.
 
 When a member asks how they are going, what can your team point to?
 
 Vadim
 
-**Char count:** 289 / 600
+**Char count:** 235 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Jay,
 
-I would like a brief call to hear what members ask your centre for, and to show how the scan appears on a phone.
+When a member asks how they are going, part of the answer could be their own scan: a new one set beside an earlier one they picked, all on their own phone.
 
-Should this sit with the Jetts app team, a name from you is enough.
+On a call I can show what that looks like. The person who shapes member experience at Jetts may be the one to hear it; point me their way. Would early next week be possible?
 
 Vadim
 
-**Char count:** 197 / 550
+**Char count:** 346 / 550

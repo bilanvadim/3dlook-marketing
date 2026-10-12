@@ -15,23 +15,23 @@ Hi Melissa,
 
 Caught my eye: 20 years in health and fitness, and now two Genesis clubs, Berwick and Southbank.
 
-A member could take a guided scan on their own phone, and two photos return 80+ body measurements.
+Two photos on a member's own phone are enough for 80+ body measurements.
 
 Do goal reviews run the same way at Berwick and Southbank?
 
 Vadim
 
-**Char count:** 276 / 600
+**Char count:** 250 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Melissa,
 
-Happy to show you what a member sees after those two photos. 3DLOOK has worked with 100+ clients.
+For a goal review at Berwick or Southbank, a member could bring a scan taken at home, two photos on their own phone, and set it beside an earlier one they choose. The review then opens from the member's own numbers.
 
-If whoever owns Genesis Connect is the better person for this, point me their way.
+If the franchise performance lead at Genesis head office should hear this instead, a pointer from you is just as useful.
 
-Open to a short call?
+Would a call later this week or next work?
 
 Vadim
 
-**Char count:** 224 / 550
+**Char count:** 401 / 550

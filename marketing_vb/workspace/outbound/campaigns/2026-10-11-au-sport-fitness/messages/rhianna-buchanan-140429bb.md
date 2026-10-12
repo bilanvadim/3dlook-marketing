@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Rhianna,
 
-Members preparing for a team event often like a reference point of their own.
+A member preparing for a team event could take a scan on their own phone and keep it as a reference of their own, or share it with a coach.
 
-Care for a short call? If someone at Fitstop looks after the app, an introduction works fine.
+I can talk it through on a call, with no commitment. If the member experience lead at Fitstop is the better contact, please point me their way.
 
 Vadim
 
-**Char count:** 192 / 550
+**Char count:** 304 / 550

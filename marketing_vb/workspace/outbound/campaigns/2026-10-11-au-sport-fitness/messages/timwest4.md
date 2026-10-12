@@ -26,12 +26,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Tim,
 
-Some context on scale: 112,100 scans were run in 2025 across all 3DLOOK customers.
+A new member's first weeks are when a scan can give them a starting set of body composition estimates to look back on later. 112,100 scans in 2025 across all 3DLOOK customers.
 
-For UBX it would be an API or SDK addition, and the brand decides where members see it. More on the approach here: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+For UBX it would be an API or SDK addition to the new member app. More on the approach here: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
 Open to a short call to talk it through?
 
 Vadim
 
-**Char count:** 319 / 550
+**Char count:** 390 / 550

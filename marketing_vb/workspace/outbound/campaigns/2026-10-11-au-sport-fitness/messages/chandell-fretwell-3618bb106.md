@@ -2,8 +2,8 @@
 
 ## Context used
 - Angle: referral
-- Hook: Fitstop director and franchisee (neutral, title-based)
-- Proof point: FS1 four styles; two photos, 80+ body measurements, body composition estimates (proof-points.md)
+- Hook: Fitstop director and franchisee (neutral, title-based); Global Games pairs
+- Proof point: FS2 Global Games; two photos, 80+ body measurements, body composition estimates (proof-points.md)
 
 ---
 
@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Chandell,
 
-Noticed you are a Fitstop franchisee. Members there rotate through four session styles, so a coach's picture of any one person can be broad.
+Fitstop franchisees see Global Games from the studio floor: teams of two across the four stations.
 
-From two phone photos, our scan gives 80+ body measurements and body composition estimates. What does your coach have in hand when a member asks how they are doing?
+The scan estimates body fat %, lean mass and fat mass, with BMI and BMR calculated, alongside 80+ body measurements. How do your coaches talk through a member's starting point when two of them enter as a pair?
 
 Vadim
 
-**Char count:** 327 / 600
+**Char count:** 330 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Chandell,
 
-Both measurements and estimates arrive within the same scan, and the member picks which ones to compare.
+Two members entering as a pair could each take a guided scan on their own phone, and each decides which measurements to bring to the coach.
 
-Would a short call help? Alternatively, a nudge toward whoever owns Fitstop's member app would be appreciated.
+Is there a day this week for a call? If the Fitstop member app belongs to someone else, a nudge toward them would help.
 
 Vadim
 
-**Char count:** 237 / 550
+**Char count:** 281 / 550

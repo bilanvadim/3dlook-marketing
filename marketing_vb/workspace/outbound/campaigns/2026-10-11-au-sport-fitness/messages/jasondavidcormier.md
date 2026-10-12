@@ -3,7 +3,7 @@
 ## Context used
 - Angle: partnerships
 - Hook: technical partner ecosystems and integrations between platforms
-- Proof point: 80+ body measurements, two photos, REST API and SDKs (proof-points.md); under 45 seconds line
+- Proof point: 80+ body measurements, two photos, REST API and SDKs (proof-points.md)
 
 ---
 
@@ -24,12 +24,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Jason,
 
-Ecosystem teams usually ask what a partner has to build. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results, and the partner chooses where it appears.
+Which capability reaches members stays the program's decision. A partner can add the scan through a REST API or web and mobile SDKs, choose where it appears, and receive 80+ body measurements from two photos.
 
-A short read: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+The partnership overview is at https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
 
-Worth a quick chat?
+Worth a call?
 
 Vadim
 
-**Char count:** 311 / 550
+**Char count:** 336 / 550

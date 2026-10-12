@@ -3,7 +3,7 @@
 ## Context used
 - Angle: member-experience
 - Hook: headline: Head of Fitness Operations who helps personal trainers get more from their time
-- Proof point: two photos, 80+ measurements, 3D model (proof-points.md); 100+ clients
+- Proof point: two photos, 80+ measurements, 3D model (proof-points.md)
 
 ---
 
@@ -24,12 +24,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Nathan,
 
-For a trainer, a scan a member takes before a session means the conversation starts from current measurements. 3DLOOK has worked with 100+ clients, and the member decides what gets shown.
+For a trainer, a scan a member takes before a session means the conversation starts from current measurements, 80+ of them, with a 3D model beside the numbers. The member decides what gets shown.
 
 A short page on how it works for fitness brands: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Open to a quick call to see where it could sit in a PT session?
+Open to a call to talk through where it could sit around a PT session?
 
 Vadim
 
-**Char count:** 384 / 550
+**Char count:** 399 / 550

@@ -15,19 +15,19 @@ Hi Milan,
 
 Curious about your take as a Fitstop owner. Progression is a pillar there, and some members train around shifts and odd hours.
 
-A member's two phone photos can become 80+ body measurements. How do you see what those members have been doing?
+Shift-working members can turn a front and a side photo into 80+ body measurements. How do you see what those members have been doing?
 
 Vadim
 
-**Char count:** 258 / 600
+**Char count:** 280 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Milan,
 
-In practice the member scans when it suits them, and the coach reads it at the next visit.
+A member on shifts could scan when it suits them and bring the measurements to the next visit.
 
-Worth a short call? Or a name at Fitstop who owns the app would do.
+A call would be a good way to see it, if you are curious. Alternatively, the person who plans how Fitstop supports shift-working members could take it from here.
 
 Vadim
 
-**Char count:** 177 / 550
+**Char count:** 275 / 550

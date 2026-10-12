@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Mel,
 
-For the programmes you lead, a member could repeat the scan between FIIT30 sessions and look at it with her coach. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+Across the four FIIT30 class types, a member could take a scan at home and open it with her coach, with an earlier scan she picks beside it.
 
-Is a short call worth it to see how it looks?
+Would it help to walk through this on a call?
 
 Vadim
 
-**Char count:** 273 / 550
+**Char count:** 203 / 550

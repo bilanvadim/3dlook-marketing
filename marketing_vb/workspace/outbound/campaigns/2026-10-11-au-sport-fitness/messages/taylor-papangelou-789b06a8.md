@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Taylor,
 
-You know your members best, so I am curious whether a short call on this is worth your time.
+If head office added a scan to the UBX Member App, a South Yarra member would start a guided two-photo capture themselves and see 80+ body measurements come back.
 
-Whoever owns the app at head office could be a better first stop, and I am glad to be pointed there.
+Whoever owns the app at head office is the right person for that, and a name from you would be welcome. Would a call this month suit?
 
 Vadim
 
-**Char count:** 213 / 550
+**Char count:** 316 / 550

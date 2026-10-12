@@ -13,21 +13,23 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Clancy,
 
-Noticed your background in club management, now as General Manager at Anytime Fitness Australia.
+Your years in club management before becoming General Manager at Anytime Fitness Australia give you a close view of member reviews.
 
-Members can take a guided scan from two photos and see 80+ body measurements plus a 3D model, shown where the brand chooses. How often do goal reviews run at your club, and what does the coach bring to them?
+A guided scan from two photos returns 80+ body measurements a member can bring to a goal review. How often do goal reviews run at your club, and what does the coach bring to them?
 
 Vadim
 
-**Char count:** 324 / 600
+**Char count:** 331 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Clancy,
 
-On scale, 112,100 scans were run in 2025 across all 3DLOOK customers. I would like to hear how reviews work on your side and show how a scan could fit one.
+There were 112,100 scans in 2025 across all 3DLOOK customers.
 
-If head office, whoever owns member experience, is the right place for this, point me there. Otherwise, up for a short call?
+At a goal review, a member could bring a scan taken at home, with 80+ body measurements, and talk through it with the coach.
+
+If that sounds worth a call, I would like to hear how reviews work at your club. Whoever leads coaching and programming at head office would also do, if you would rather point me there.
 
 Vadim
 
-**Char count:** 300 / 550
+**Char count:** 393 / 550

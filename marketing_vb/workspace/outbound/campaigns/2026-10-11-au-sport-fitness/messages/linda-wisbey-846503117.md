@@ -26,12 +26,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Linda,
 
-Can I show you in a short call? It takes two photos on a phone and nothing to set up in the studio.
+A member in the Strength class could see body measurements from two phone photos next to an earlier set she picked, her own view of months of work.
 
-Or point me to the person at KX Pilates head office who looks after member experience.
+Whoever shapes class programming at KX Pilates head office would be a good person for this, and I would welcome the name.
 
-Open to it?
+Give me a day and I will bring a live example.
 
 Vadim
 
-**Char count:** 218 / 550
+**Char count:** 336 / 550

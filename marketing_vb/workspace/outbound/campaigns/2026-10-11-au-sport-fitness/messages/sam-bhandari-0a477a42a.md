@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Sam,
 
-With a sports science background and Jetts Fitness Canning Vale in your hands, you will know how a trainer prepares a program review. A client can bring 80+ body measurements from a two-photo scan.
+Your sports science background and Jetts Fitness Canning Vale make program reviews a natural place to start. A client can bring 80+ body measurements from a two-photo scan.
 
-What does your trainer have in hand at a client's review?
+How do you prepare a client's review at Canning Vale, from your sports science side?
 
 Vadim
 
-**Char count:** 272 / 600
+**Char count:** 274 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Sam,
 
-Let me suggest a short call: I will show the client's side of the scan, and you tell me if it has a place in Canning Vale.
+Taking the same front and side photos each time means a client's two scans can be set side by side by the client, at home, whenever they choose.
 
-Or point me to whoever leads member experience at Jetts if they are the better contact.
+I would value a conversation about how clients prepare for a review. Whoever leads exercise and coaching programs at Jetts head office could be the right audience, and an introduction would be welcome. Shall we speak?
 
 Vadim
 
-**Char count:** 227 / 550
+**Char count:** 379 / 550

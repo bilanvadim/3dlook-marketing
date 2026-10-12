@@ -17,21 +17,23 @@ Quick thought on KX Pilates, which runs through franchised studios and the KX Pi
 
 A guided scan could sit in that app: two photos return 80+ body measurements and body composition estimates, white-label through an API or SDKs.
 
-At which point in a member's year would a scan fit KX members best, joining or a goal review?
+How does a new KX Pilates member set a goal today, in the studio or in the app?
 
 Vadim
 
-**Char count:** 350 / 600
+**Char count:** 336 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Selina,
 
-A short call could cover how the capture reaches studios through the app, with nothing for franchisees to install. 3DLOOK has worked with 100+ clients.
+Joining is when a member sets a goal. A guided scan inside the KX Pilates app could return a starting set of body measurements for them to look back on, with nothing for franchisees to install.
 
-Short read first: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+3DLOOK has worked with 100+ clients.
 
-Might be worth a quick chat?
+A short read on how it sits in a member app: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+
+I can set up a call whenever you would like to see it.
 
 Vadim
 
-**Char count:** 282 / 550
+**Char count:** 415 / 550

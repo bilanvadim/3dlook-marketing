@@ -15,21 +15,21 @@ Hi Dain,
 
 Made me think, seeing that you have been at Revo Fitness since 2015 and began in operations.
 
-Our scan runs on any phone with on-screen guidance, with nothing to install in clubs. It returns 80+ body measurements, under 45 seconds from the photos to structured results.
+Our scan runs on any phone with on-screen guidance, with nothing to install in clubs. It returns 80+ body measurements from a front photo and a side photo.
 
 How do Revo clubs run member goal reviews today?
 
 Vadim
 
-**Char count:** 336 / 600
+**Char count:** 316 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Dain,
 
-Experience in operations tells you a new feature must fit around the floor team. A scan taken at home does that, and 3DLOOK has worked with 100+ clients. A short walk-through: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+At a goal review a member can bring a scan taken at home, which keeps the conversation on what the member chose to look at, with no extra step for the floor team. 3DLOOK has worked with 100+ clients. A short walk-through: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Open to a quick chat?
+If a walk-through would help, say the word.
 
 Vadim
 
-**Char count:** 278 / 550
+**Char count:** 346 / 550

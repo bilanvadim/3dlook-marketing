@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Zaac,
 
-Experience work lives in the details, so the 3D model is shown only where Virgin Active chooses. 3DLOOK has worked with 100+ clients. This page shows the idea: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+A member who takes a second scan after a block of training can pick the first one to set it against. 3DLOOK has worked with 100+ clients. More detail here: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
 Might be worth a quick chat?
 
 Vadim
 
-**Char count:** 269 / 550
+**Char count:** 265 / 550

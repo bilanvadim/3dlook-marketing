@@ -13,25 +13,25 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Jake,
 
-Wanted to reach out about REVL St Marys.
+Noticed you run a performance-based gym at REVL St Marys.
 
 A scan from two phone photos returns 80+ body measurements that a member can look back on.
 
-For members who mix several REVL programs, where does their overall picture sit today?
+How do coaches at St Marys keep a member's goals in view when they train across more than one program?
 
 Vadim
 
-**Char count:** 237 / 600
+**Char count:** 270 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Jake,
 
-A short call would show how a member uses it at home. 3DLOOK has worked with 100+ clients.
+A member moving between programs could look at one set of body measurements taken on their own phone, whichever program they train in that month.
 
-If another person at REVL head office handles the app, tell me who.
+Whoever owns the REVL Training app at head office could say more, and I would take their name.
 
-Does a call sound useful?
+Tell me, and I will send a couple of times.
 
 Vadim
 
-**Char count:** 203 / 550
+**Char count:** 303 / 550

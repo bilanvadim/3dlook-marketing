@@ -15,21 +15,23 @@ Hi Richard,
 
 Noticed your background: you helped launch Anytime Fitness in Australia in 2008, and Collective Wellness Group now runs it as a 24/7 club network.
 
-A guided scan from two photos on a phone returns 80+ body measurements and body composition estimates, white-label through an API or SDKs. Where in a member's year would that fit best for Anytime Fitness members: joining or a goal review?
+A guided scan from two photos on a phone returns 80+ body measurements and body composition estimates, white-label through an API or SDKs. What would you want a new Anytime Fitness member to have in hand after their first few weeks?
 
 Vadim
 
-**Char count:** 406 / 600
+**Char count:** 400 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Richard,
 
-One thing on scale and effort: 3DLOOK has worked with 100+ clients, and the capture is added once, with nothing to ship or install in clubs. Members get a 3D model and measurements they can look back on later.
+A scan at joining and another at a goal review would let an Anytime Fitness member set the two side by side, if they choose to. The measurements stay there to look back on.
 
-A short page on how fitness brands use it: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+3DLOOK has worked with 100+ clients.
 
-Would a 15-minute call make sense?
+The capture is added once, with nothing to ship or install in clubs. A short page on how fitness brands use it: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+
+Would a short call suit you this week?
 
 Vadim
 
-**Char count:** 372 / 550
+**Char count:** 446 / 550

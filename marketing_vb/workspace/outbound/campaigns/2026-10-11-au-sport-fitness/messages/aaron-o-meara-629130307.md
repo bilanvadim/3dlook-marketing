@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: headline: 20 years leading teams across sporting, retail and fitness
-- Proof point: AF1; two photos, 80+ measurements (proof-points.md); 100+ clients
+- Proof point: AF1; two photos, 80+ measurements (proof-points.md)
 
 ---
 
@@ -15,19 +15,19 @@ Hi Aaron,
 
 Caught my eye: 20 years leading teams across sport, retail and fitness, and now running a club in Carlton for Anytime Fitness Australia.
 
-The scan takes two photos and returns 80+ body measurements and body composition estimates, shown only where the brand chooses. In a busy 24/7 club, how does your team give a member feedback on progress?
+The scan takes two photos and returns 80+ body measurements and body composition estimates. In a busy 24/7 club, how does your team give a member feedback on progress?
 
 Vadim
 
-**Char count:** 359 / 600
+**Char count:** 323 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Aaron,
 
-You will see the member side quickly. 3DLOOK has worked with 100+ clients, and the scan needs nothing from the club's floor team.
+Progress feedback in a busy 24/7 club could start from a member's own scan: two photos and 80+ body measurements to talk through with the team.
 
-I would enjoy a short call on how your team handles progress feedback. Or point me to whoever owns member experience at head office. Worth a quick chat?
+Your view of how the team handles that feedback today would make a short call useful. A pointer to whoever looks after franchise performance at head office would be welcome too. Worth a conversation?
 
 Vadim
 
-**Char count:** 301 / 550
+**Char count:** 362 / 550

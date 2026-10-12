@@ -26,8 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Nina,
 
-I would like to show you how the scan looks on a phone, in a short call. Does that suit you? If it fits better, point me to whoever looks after the member app for FS8 at the head office and I will go to them.
+At Newstead, a new member could take the scan on her own phone and keep 80+ body measurements as a starting point to look back on with her coach, shared only if she chooses.
+
+I can show you how it looks on a phone in a short call, if you are open to one this month. If member apps sit with head office, point me to whoever owns the FS8 app and I will go there.
 
 Vadim
 
-**Char count:** 225 / 550
+**Char count:** 377 / 550

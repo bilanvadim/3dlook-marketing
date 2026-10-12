@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Janet,
 
-For a member who has been away, a home scan gives the coach a fresh starting point before she walks back in. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+For a member returning after a break, a scan at home gives her fresh numbers to bring to the first visit, shared with the coach only if she wants.
 
-Open to a short call? If the member experience team at Fernwood's national office suits better, I would be glad to be pointed there.
+If a call would help, say so and I will send a time. Whoever leads member experience at Fernwood's national office is a fine alternative contact.
 
 Vadim
 
-**Char count:** 356 / 550
+**Char count:** 311 / 550

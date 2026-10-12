@@ -15,23 +15,23 @@ Hi Tom,
 
 Noticed Genesis Fitness Clubs on your background.
 
-Members can take a guided scan at home, and two photos give 80+ body measurements.
+At home, a member photographs front and side with on-screen guidance, and 80+ body measurements come back.
 
 How does a Genesis club keep up with what a member has been doing after a few weeks away?
 
 Vadim
 
-**Char count:** 240 / 600
+**Char count:** 264 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Tom,
 
-Practical angle: a short call, and I show you what a member and their trainer would look back on. 3DLOOK has worked with 100+ clients.
+A member back from a few weeks away could scan at home and compare with an earlier scan they pick, giving their trainer a place to restart the conversation.
 
-If another person at Genesis owns member experience, happy to speak with them.
+If someone on the digital side at Genesis is closer to this, I am happy to speak with them.
 
-Would a short call suit?
+Reply yes or no and I will take it from there.
 
 Vadim
 
-**Char count:** 256 / 550
+**Char count:** 313 / 550

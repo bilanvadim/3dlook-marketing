@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Hayley,
 
-Quick one on personal training at Fernwood, which the brand describes as one of its most popular services, closely followed by FIIT30.
+At Fernwood, personal training is described as one of the most popular services, closely followed by FIIT30.
 
 Members can use a phone scan from two photos that returns 80+ body measurements, taken at home. Before a review, how do your PTs prepare?
 
 Vadim
 
-**Char count:** 292 / 600
+**Char count:** 266 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Hayley,
 
-A PT could start the next review from a scan the client sent that morning, set against one she picked earlier. The capture runs on any phone with on-screen guidance.
+A PT could start the next review from a scan the client sent that morning, set against one she picked earlier.
 
-Could we have a short call to see it? Or steer me to the national office person for member services.
+Perhaps a call would show it better than a message can. A pointer to the national office person for member services would be welcome.
 
 Vadim
 
-**Char count:** 286 / 550
+**Char count:** 264 / 550

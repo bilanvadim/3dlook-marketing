@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Sarina,
 
-Spotted something: you moved from agency leadership to owning BFT Fitzroy. In a full BFT class, coaches work a whole room at once. A two-photo scan returns 80+ body measurements that a member can bring to a conversation.
+Spotted something: you moved from agency leadership to owning BFT Fitzroy. In a full BFT class, coaches work a whole room at once. The scan returns 80+ body measurements that a member can bring to a conversation.
 
-How do coaches at Fitzroy give each member feedback on progress during a busy session?
+What does a Fitzroy coach say to a member who asks mid-session how they are going?
 
 Vadim
 
-**Char count:** 327 / 600
+**Char count:** 315 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Sarina,
 
-Here is the idea in one line: the scan returns 80+ body measurements, under 45 seconds from the photos to structured results, from a link the studio sends.
+In a busy class, a member's quick word with the coach can carry a set of their own readings. A member short on time can take the scan on a phone before class, and it is under 45 seconds from the photos to structured results.
 
-Open to a short call? If someone at BFT owns this area, a pointer works too.
+If you are curious, tell me and I will suggest a time. Whoever leads coaching standards at BFT head office could be the better person for it.
 
 Vadim
 
-**Char count:** 252 / 550
+**Char count:** 386 / 550

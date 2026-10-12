@@ -343,3 +343,4 @@ alex-fenton-mathews-3b21061b9 | PASS | 2 | member-experience | 1 | Marketing Man
 kyliekerr | WEAK | | | | Studio experience manager at a STRONG Pilates studio in Dallas (nick's market), a long referral path to the Australian head office.
 
 # 2026-10-11 fix round: first_name fixed in people-validated.csv after apply-decisions and promote (Anthony, Kate, Nathan, Leigh, Sarina, Mel, Travis; emptied for the 11 pool A profiles with no person name); pools A, B, C promoted with promote, so a re-run of apply-decisions must be followed by the same promote and name pass.
+# 2026-10-12 import: first_name restored from people-raw.csv for the 11 pool A profiles (LinkedIn display first name: Gym, Fernwood, L, KX, Jetts ×2, Jetts Gym, Fernwood Fitness, GH, St Leonards, PF). closely.io needs a name per row; the messages carry no first-name merge field, so the greetings stay as written.

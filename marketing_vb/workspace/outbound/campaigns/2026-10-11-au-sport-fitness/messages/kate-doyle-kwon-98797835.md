@@ -15,23 +15,23 @@ Hi Kate,
 
 Marketing for franchised studios needs one member message that works in every studio.
 
-An optional scan from two photos returns 80+ body measurements that a member can set against an earlier scan they pick, shown only where the brand chooses.
+An optional scan from two photos returns 80+ body measurements that a member can set against an earlier scan they pick.
 
 How do STRONG Pilates members see what their training is changing today?
 
 Vadim
 
-**Char count:** 333 / 600
+**Char count:** 297 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Kate,
 
-For the marketing story, the scan is the member's own choice and the brand controls what is shown. 112,100 scans in 2025 across all 3DLOOK customers.
+For the marketing side, a member who picks two of her own scans can see what her training changed. 112,100 scans in 2025 across all 3DLOOK customers.
 
 More: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Might a short call be worth it?
+Would next week suit a short call?
 
 Vadim
 
-**Char count:** 269 / 550
+**Char count:** 272 / 550

@@ -14,14 +14,14 @@ Vadim
 --- M2
 Hi Mel,
 
-For the programmes you lead, a member could repeat the scan between FIIT30 sessions and look at it with her coach. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+Across the four FIIT30 class types, a member could take a scan at home and open it with her coach, with an earlier scan she picks beside it.
 
-Is a short call worth it to see how it looks?
+Would it help to walk through this on a call?
 
 Vadim
 @@@ jessica-pupillo-04058763
 hook: owner-manager of Fernwood Yarraville, thin profile, first-session plan
-proof: FW4 first session with a trainer; two photos, 80+ body measurements; 100+ clients (proof-points)
+proof: FW4 first session with a trainer; two photos, 80+ body measurements (proof-points)
 --- M1
 Hi Jessica,
 
@@ -33,9 +33,9 @@ Vadim
 --- M2
 Hi Jessica,
 
-For a club like Yarraville, the scan could come before the introduction, on a page the member opens at home. 3DLOOK has worked with 100+ clients, and the club installs nothing.
+Before her first session, a new member could take the scan at home and choose to bring it along as a starting point of her own.
 
-Would a short call make sense? If member experience at head office is the right door, point me to whoever owns it.
+Is there a good week for a call? If new-member onboarding is run from head office, I would be glad of a pointer to whoever leads it.
 
 Vadim
 @@@ janet-binns-97015636
@@ -52,9 +52,9 @@ Vadim
 --- M2
 Hi Janet,
 
-For a member who has been away, a home scan gives the coach a fresh starting point before she walks back in. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+For a member returning after a break, a scan at home gives her fresh numbers to bring to the first visit, shared with the coach only if she wants.
 
-Open to a short call? If the member experience team at Fernwood's national office suits better, I would be glad to be pointed there.
+If a call would help, say so and I will send a time. Whoever leads member experience at Fernwood's national office is a fine alternative contact.
 
 Vadim
 @@@ melissa-burn-73667636
@@ -71,28 +71,28 @@ Vadim
 --- M2
 Hi Melissa,
 
-PT reviews could open with a scan the client took at home the week before, set against an earlier one she chooses. 3DLOOK has worked with 100+ clients, and the club has nothing to install.
+A PT review could open with a scan the client took at home the week before, set against an earlier one she chooses.
 
-Would a call to see it be worthwhile? Or point me to whoever at head office looks after what clubs offer members.
+A short call would let me walk through a client's view of it. Whoever at head office looks after personal training would be a good pointer.
 
 Vadim
 @@@ melissa-robinson-0bbb2342
-hook: owner of Fernwood Browns Plains; FIIT30 challenge start and finish
+hook: owner of Fernwood Browns Plains; FIIT30 challenge, strength and confidence
 proof: FW3 FIIT30 coach-led small-group, four class types; two photos, 80+ body measurements
 --- M1
 Hi Melissa,
 
-Came across your Browns Plains club, where FIIT30 gives small groups coach-led sessions across four class types.
+Browns Plains runs FIIT30 as coach-led small groups across four class types.
 
-We offer a two-photo phone scan that returns 80+ body measurements, taken at home. When your club runs a FIIT30 challenge, how do you mark where a member started and where she finished, on strength and confidence?
+Taken at home on any phone, the scan returns 80+ body measurements from two photos. When your club runs a FIIT30 challenge, what do members take away about their own strength and confidence?
 
 Vadim
 --- M2
 Hi Melissa,
 
-At the start and the end of a challenge, a member could take the scan on her own phone and look at both with her coach. It sits on a page the club sends, with nothing to install.
+Members in a challenge could take a scan at home whenever they like and keep it as their own record, shown to a coach only if they choose. It returns 80+ body measurements from two photos, front and side.
 
-Would you be open to a short call? If someone at the national office owns member services, I am happy to be pointed to them instead.
+Say the word and I will send two or three times for a call. If the national office has someone who leads FIIT30 programming, I am happy to be pointed to them.
 
 Vadim
 @@@ ric-caldwell-9a994444
@@ -101,36 +101,36 @@ proof: FW3 FIIT30, FW5 personal training; two photos, 80+ body measurements; 112
 --- M1
 Hi Ric,
 
-Quick note: you bring years of financial management to co-owning Fernwood Bulleen, where one member may use both FIIT30 and personal training.
+Co-owning Fernwood Bulleen follows years in financial management, and one member there may use both FIIT30 and personal training.
 
-FitXpress is a phone scan from two photos that returns 80+ body measurements. Where does one member's goals and check-in history sit when she uses both services?
+FitXpress asks a member for two photos and returns 80+ body measurements, with nothing for her to install. Where does one member's goals and check-in history sit when she uses both services?
 
 Vadim
 --- M2
 Hi Ric,
 
-A single home scan could give the coach one reference point whichever service the member uses that week. For scale: 112,100 scans in 2025 across all 3DLOOK customers.
+One home scan could be the reference a member opens with whichever coach she sees that week, FIIT30 or PT. There were 112,100 scans in 2025 across all 3DLOOK customers.
 
-Worth a short call? If a colleague at the national office runs member services, point me their way.
+Could we find a time for a call? If someone at the national office runs member experience, point me their way.
 
 Vadim
 @@@ melissa-mcglinn-8a264249
-hook: owner of Fernwood Petrie and Fernwood Carindale; routines across two clubs
-proof: FW2 owner-run network; two photos, 80+ body measurements, under 45 seconds
+hook: owner of Fernwood Petrie and Fernwood Carindale; goal reviews across two clubs
+proof: FW2 owner-run network; two photos, 80+ body measurements
 --- M1
 Hi Melissa,
 
-You run both Fernwood Petrie and Fernwood Carindale, which made me curious about routines across two clubs.
+Petrie and Carindale are both yours, which made me curious how member goal reviews run at each.
 
-Our phone scan takes two photos, front and side, and returns 80+ body measurements a member can take at home. Do goal reviews run the same way at Petrie and Carindale?
+At home, with on-screen guidance, a member takes the two photos and gets back 80+ body measurements. What does a member bring to her goal review at your clubs?
 
 Vadim
 --- M2
 Hi Melissa,
 
-With two clubs, one home scan for members at either gives both teams a starting point in the same form. Each scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+Members at either club could take the same home scan and bring it to their review, a reference they hold themselves.
 
-Shall we set up a short call? And if a head office contact owns member experience, I would welcome an introduction there.
+I would welcome a call whenever your week has room. A head office contact who looks after franchise performance would be a welcome introduction.
 
 Vadim
 @@@ clow-john-29144a18
@@ -141,34 +141,34 @@ Hi Clow,
 
 Quick one on FIIT30, Fernwood's coach-led small-group training program for women, with four class types.
 
-FitXpress is a two-photo phone scan that returns 80+ body measurements, taken at home. How do the coaches at your club let a member see she is getting stronger across those classes?
+FitXpress is a two-photo phone scan that returns 80+ body measurements, taken at home. When a member asks her coach how her strength is going, what does the coach show her?
 
 Vadim
 --- M2
 Hi Clow,
 
-A member could repeat the scan between FIIT30 sessions and bring it to her coach, choosing which earlier scan to compare with. The capture needs only a phone with on-screen guidance.
+Between FIIT30 sessions, a member could repeat the scan and bring it to her coach, choosing which earlier scan to set beside it.
 
-Is a short call worth your time? Could you tell me who at head office handles member services?
+Is a call worth your time? If you can name who leads FIIT30 coaching at head office, that works too.
 
 Vadim
 @@@ mark-m-62a78818
 hook: Fernwood business owner (alias row), neutral personal training angle
-proof: FW5 personal training one of Fernwood's most popular services; two photos, 80+ body measurements; 100+ clients
+proof: FW5 personal training one of Fernwood's most popular services; two photos, 80+ body measurements
 --- M1
 Hi Mark,
 
-Thought I'd share something for a Fernwood club owner: personal training is one of the brand's most popular services.
+Personal training is one of Fernwood's most popular services.
 
-Our scan runs from two phone photos and returns 80+ body measurements. A PT could open a review with a client's own home scan. What does your PT team have in hand when a member's program is reviewed?
+FitXpress asks a client for two guided photos on her own phone and returns 80+ body measurements. When a client's program is due for review, what does your PT team look at first?
 
 Vadim
 --- M2
 Hi Mark,
 
-A review could begin from a scan the client took the weekend before. 3DLOOK has worked with 100+ clients, and clubs install nothing.
+A review could begin from a scan the client took the weekend before, guided on screen from her own phone. She decides whether her PT sees it.
 
-Is a short call of interest? If Fernwood's national office has someone who owns member experience, a pointer would do.
+Tell me if you would like a call, and I will fit your diary. If Fernwood's national office has a lead for personal training, a pointer would do.
 
 Vadim
 @@@ michelle-baker-aba0244a
@@ -179,15 +179,15 @@ Hi Michelle,
 
 Your event coordination background came to mind when I thought about club challenges. FIIT30 is Fernwood's coach-led small-group training for women.
 
-We built a phone scan from two photos, front and side, returning 80+ body measurements. What do you hand a member at the end of a FIIT30 challenge to show what she has built?
+A member photographs herself twice on her own phone, and FitXpress returns 80+ body measurements. What do you hand a member at the end of a FIIT30 challenge to show what she has built?
 
 Vadim
 --- M2
 Hi Michelle,
 
-With your event experience you know both ends of a challenge matter. A member could take the scan at home at each end and look at the two together with her coach.
+During a FIIT30 challenge, a member could take a scan at home whenever she likes and open it on her own phone, with her coach only if she chooses.
 
-Could a call be useful? Alternatively, the national office lead for member programs may be the better person, and a name would help.
+If it helps to talk, I can call at a time of your choosing. If the national office has a lead for club challenges and events, a name would help.
 
 Vadim
 @@@ ben-cook-6298161b
@@ -198,15 +198,15 @@ Hi Ben,
 
 You run Fernwood Bendigo, where the network began, after earlier work on Fernwood's finance side.
 
-FitXpress turns two phone photos into 80+ body measurements. When a member returns to Bendigo after a break, what does her plan look like in the first week back?
+Two photos from any phone go in, and 80+ body measurements come out. When a member returns to Bendigo after a break, what does her plan look like in the first week back?
 
 Vadim
 --- M2
 Hi Ben,
 
-For a returning member, a home scan before her first visit gives the coach a starting point. 3DLOOK has worked with 100+ clients.
+Returning to Bendigo after a break, a member could take a scan at home before her first visit and bring it as her starting point, if she wants. 3DLOOK has worked with 100+ clients.
 
-Is a call useful? You know Fernwood's national office well, so just tell me who looks after member experience there.
+A call is easy to arrange if you would like to hear more. You know Fernwood's national office well, so just tell me who looks after member experience there.
 
 Vadim
 @@@ lee-squire-a499641a
@@ -217,15 +217,15 @@ Hi Lee,
 
 Your bio says fitness has been your passion since 1981, a long view of what members need from a club like Fernwood Ballarat.
 
-The scan we use takes two phone photos and returns 80+ body measurements. When a member has been away for a stretch, how does your team pick up her goals again?
+With on-screen guidance on any phone, a member can capture two photos and receive 80+ body measurements. When a member has been away for a stretch, how does your team pick up her goals again?
 
 Vadim
 --- M2
 Hi Lee,
 
-For a member returning after months, a scan at home gives her trainer a reference before the first session back. It returns 80+ body measurements, under 45 seconds from the photos to structured results.
+After months away, a member could take a scan at home and share it with her trainer before the first session back.
 
-Could we speak briefly? If another person at head office owns this, I would value a pointer.
+I can work around your week for a call. Whoever at head office looks after how clubs welcome returning members would be the right pointer.
 
 Vadim
 @@@ binish-mobeen-486b3825
@@ -234,17 +234,17 @@ proof: FW4 first session with a trainer; two photos, 80+ body measurements
 --- M1
 Hi Binish,
 
-Noticed your background in actuarial and accounting work, a numerate way to look at a club. At Fernwood, new members start with a first session with a trainer to build a plan.
+Actuarial and accounting work is a numerate way to look at a club. At Fernwood, new members start with a first session with a trainer to build a plan.
 
-Our scan returns 80+ body measurements from two phone photos taken at home. What does the trainer write down about a new member's starting point?
+FitXpress is built for the phone a member already owns, and 80+ body measurements come from two photos. What does the trainer write down about a new member's starting point?
 
 Vadim
 --- M2
 Hi Binish,
 
-A new member could take the scan on her phone before the introduction and choose what her trainer sees. The capture runs on any phone, guided on screen.
+A new member could take the scan on her phone before the introduction and choose what her trainer sees.
 
-Would you be open to a quick call? Or send me towards the head office person who shapes what clubs offer members.
+Does a call sometime next week sound reasonable? The head office person who shapes what clubs offer members would be the right pointer.
 
 Vadim
 @@@ anthony-dickens-fernwood-fitness-23bb4225
@@ -253,36 +253,36 @@ proof: FW3 FIIT30, FW5 personal training; two photos, 80+ body measurements; 100
 --- M1
 Hi Anthony,
 
-Quick idea for you: a Fernwood member may use both FIIT30 small groups and personal training.
+A Fernwood member may use both FIIT30 small groups and personal training.
 
-We built a two-photo phone scan returning 80+ body measurements. When one member uses both, who at the club sees her whole picture?
+We built a two-photo phone scan returning 80+ body measurements. When one member uses both, how do her FIIT30 coach and her PT stay on the same page about her goals?
 
 Vadim
 --- M2
 Hi Anthony,
 
-One home scan can sit beside whichever service a member picks, as a single reference her coach or PT can open. 3DLOOK has worked with 100+ clients.
+Whichever service a member uses, one scan can be the single reference her coach or PT opens if she shares it.
 
-Short call to look at it? If Fernwood's national team has an owner for member services, I would like to speak with them.
+Would a call to go through it make sense? If Fernwood's national team has an owner for member services, I would like to speak with them.
 
 Vadim
 @@@ fernwood-tuggeranong-6392095a
 hook: owner/manager of Fernwood Tuggeranong, empty profile; returning member
-proof: FW2 women's health club network from Bendigo, franchise owners; two photos, 80+ body measurements; 100+ clients
+proof: FW2 women's health club network from Bendigo, franchise owners; two photos, 80+ body measurements
 --- M1
 Hi Fernwood Tuggeranong team,
 
 Quick reaction to Fernwood's story: a women's health club network that began in Bendigo and is run by franchise owners across Australia.
 
-The scan we offer works from two phone photos and returns 80+ body measurements. When a member comes back after time away, who at the club sits down with her and what do they have in hand?
+A member needs only her phone and two photos, and FitXpress returns 80+ body measurements. When a member comes back after time away, what does the club have in hand to restart her plan?
 
 Vadim
 --- M2
 Hi Fernwood Tuggeranong team,
 
-A returning member could send her trainer a scan taken at home before the first visit. 3DLOOK has worked with 100+ clients, and clubs install nothing.
+A returning member could take a scan at home before the first visit and send it to her trainer, giving the trainer her starting point. The photos are taken at home, one front and one side.
 
-Would you take a short call? If head office has a lead for member experience, please steer me to them.
+Tell me if a call makes sense. Head office may have a lead for digital, and I would take a pointer there.
 
 Vadim
 @@@ angela-williams-4948535b
@@ -293,15 +293,15 @@ Hi Angela,
 
 Came across your work: nearly 30 years in fitness, from owning clubs in St Kilda and Prahran to national operations. That gives you a view on how an owner-run network weighs a new member service.
 
-We offer a phone scan from two photos that returns 80+ body measurements. When a new member capability is proposed, how does the network decide whether it suits its clubs?
+Members would meet it as a guided scan on their own phone, two photos in and 80+ body measurements back. When a new member capability is proposed, how does the network decide whether it suits its clubs?
 
 Vadim
 --- M2
 Hi Angela,
 
-Should the question ever reach a trial, a white-label page or SDK means clubs ship and install nothing. 3DLOOK has worked with 100+ clients.
+If a member service like this ever reached the board, it would reach members as two photos on her phone, then a scan she can set against an earlier one she picks.
 
-Would a short call be worthwhile? If another Fernwood leader owns member-facing technology, a name would be welcome.
+If it is ever useful to talk it through, I am glad to arrange a call. Whoever leads member technology at Fernwood would be the right person, and a name would help.
 
 Vadim
 @@@ ann-wilkesmann-6aa477119
@@ -312,15 +312,15 @@ Hi Ann,
 
 Had a thought about the first weeks at your Fernwood club: new members begin with a session with a trainer, one-on-one or as a group introduction, to build a plan.
 
-Our scan takes two phone photos and returns 80+ body measurements. At a group introduction, how do your trainers learn where each woman is starting?
+FitXpress lets each woman take two photos at home and arrive with 80+ body measurements. At a group introduction, how do your trainers learn where each woman is starting?
 
 Vadim
 --- M2
 Hi Ann,
 
-For group introductions, members could take the scan at home beforehand and arrive with a starting point. For scale: 112,100 scans in 2025 across all 3DLOOK customers.
+For a group introduction, a member could take the scan at home beforehand and arrive with a starting point of her own.
 
-Might a short call help? Or point me to the colleague at Fernwood's national office who owns the member side.
+Would later this week suit for a call? The person at Fernwood's national office who owns new-member onboarding would be a helpful contact.
 
 Vadim
 @@@ souad-sakoua-790b60a6
@@ -331,20 +331,20 @@ Hi Souad,
 
 Caught my eye that FIIT30 at Fernwood runs four class types for small groups, with a coach leading each session.
 
-Our scan needs two phone photos and returns 80+ body measurements. For a member who rotates through Lower Body Power and Total Body Strength, what does she see of her own gains today?
+A member's phone, a front photo and a side photo are all the scan needs for 80+ body measurements. For a member who rotates through Lower Body Power and Total Body Strength, what does she see of her own gains today?
 
 Vadim
 --- M2
 Hi Souad,
 
-A member could repeat the scan at home and compare it with one she picked earlier, with her coach if she likes. A scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+Rotating through Lower Body Power and Total Body Strength, a member could take a scan at home and open it next to an earlier one she picks, with her coach if she likes.
 
-Would a call suit you? Alternatively, who at head office handles member experience?
+Is a call something you would consider? If someone at head office leads FIIT30 programming, a name would do.
 
 Vadim
 @@@ adriana-ampuero-1ab830b0
 hook: franchise partner at Fernwood Shellharbour, earlier systems analyst at Westpac; bio on empowering women with confidence
-proof: FW3 FIIT30; two photos, 80+ body measurements; photo deletion within 30 days (technical lane fact)
+proof: FW3 FIIT30; two photos, 80+ body measurements
 --- M1
 Hi Adriana,
 
@@ -356,66 +356,66 @@ Vadim
 --- M2
 Hi Adriana,
 
-Given your systems background, the integration detail is short: a page the club sends or an SDK, white-label, with photos deleted after processing or within 30 days.
+For members in a FIIT30 challenge, a scan taken whenever they like is theirs to keep and theirs to share.
 
-Would a short call help? If Fernwood's national office has a person for member technology, I would be glad of a pointer.
+I am happy to set up a call if you would like one. Someone leading digital at head office would be a useful pointer.
 
 Vadim
 @@@ steve-brookes-827332b5
 hook: owner of Fernwood Hornsby, earlier owner-operator experience in other businesses
-proof: FW3 FIIT30 coach-led small groups; two photos, 80+ body measurements; 100+ clients
+proof: FW3 FIIT30 coach-led small groups; two photos, 80+ body measurements
 --- M1
 Hi Steve,
 
-Spotted something about Fernwood Hornsby: you arrived after owner-operator experience elsewhere, and FIIT30 gives your members coach-led small groups.
+You arrived at Fernwood Hornsby after owner-operator experience elsewhere, and FIIT30 gives your members coach-led small groups.
 
-Our scan runs from two phone photos and returns 80+ body measurements. How does a Hornsby coach show a member she has got stronger since starting FIIT30?
+Each scan comes from two photos on a member's own phone and includes 80+ body measurements. How does a Hornsby coach show a member she has got stronger since starting FIIT30?
 
 Vadim
 --- M2
 Hi Steve,
 
-Hornsby members could try the scan on their own phones, on a page the club sends. 3DLOOK has worked with 100+ clients.
+A Hornsby member could take a scan at home between FIIT30 sessions and bring it to her coach as one of her own reference points. Two photos, front and side, are all it needs.
 
-Happy to talk it through on a call? Or tell me which head office contact owns member services.
+Happy to talk it through on a call? Tell me which head office contact leads coaching for FIIT30, if that is a better route.
 
 Vadim
 @@@ cheryl-williams-302441bb
 hook: managing director of Fernwood Newstead, earlier managing director at Annandale, operations and change management
-proof: FW5 personal training; two photos, 80+ body measurements; 100+ clients
+proof: FW5 personal training; two photos, 80+ body measurements
 --- M1
 Hi Cheryl,
 
-Noticed your background leading Fernwood Annandale before Newstead, and in operations and change management.
+Leading Fernwood Annandale before Newstead, and working in operations and change management, gives you a close view of how a club runs.
 
-FitXpress takes two phone photos and returns 80+ body measurements. When a Newstead member's PT program comes up for review, what does the trainer bring to the table?
+A member's phone does the capture: two photos, then 80+ body measurements for her PT to read. When a Newstead member's PT program comes up for review, which of her goals does the trainer start from?
 
 Vadim
 --- M2
 Hi Cheryl,
 
-From your change management work, the practical point: there is nothing for a team member to do in the club, as the member takes the scan on her phone. 3DLOOK has worked with 100+ clients.
+At Newstead, a PT review could open with a scan the member took at home that week, if she is happy to share it. Capture is guided on screen from two photos, front and side.
 
-Short call to walk through it? Failing that, a name at the national office for member services would help.
+Would you take a call about it? Failing that, a name at head office who looks after personal training would help.
 
 Vadim
 @@@ suzanne-herniman-98832096
 hook: club owner at Fernwood Camberwell; first session where the plan takes shape
-proof: FW4 first session with a trainer; two photos, 80+ body measurements, under 45 seconds
+proof: FW4 first session with a trainer; two photos, 80+ body measurements
 --- M1
 Hi Suzanne,
 
-Quick note for Fernwood Camberwell: a new member's first session with a trainer is where her plan starts to take shape.
+At Fernwood Camberwell, a new member's first session with a trainer is where her plan starts to take shape.
 
-Members take the scan at home from two phone photos, front and side, and get 80+ body measurements beforehand. What would you like the trainer to know about her before she walks in?
+A member could take the scan at home from two phone photos, front and side, and bring 80+ body measurements to the session. What would you like the trainer to know about her before she walks in?
 
 Vadim
 --- M2
 Hi Suzanne,
 
-The trainer could open that first session with the member's own scan on screen, if she is happy to share it. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+The trainer could open that first session with the member's own scan on screen, if she is happy to share it.
 
-Could we have a short call? Or hand me to the head office person who runs the member experience.
+If you are open to a call, I will work around your club hours. If onboarding for new members sits with head office, point me to whoever leads it.
 
 Vadim
 @@@ emma-tilley-0ba2619b
@@ -424,17 +424,17 @@ proof: FW3 FIIT30 coach-led small groups; two photos, 80+ body measurements; 100
 --- M1
 Hi Emma,
 
-Your bio says you love coaching others to be the best they can be, which is what FIIT30's small-group format asks of a coach.
+Loving to coach others to be the best they can be, as your bio puts it, is what FIIT30's small-group format asks of a coach.
 
-FitXpress is a scan from two phone photos that returns 80+ body measurements. In your small groups, how do members find out their strength is building, class to class?
+A scan from two phone photos gives each member 80+ body measurements to look at herself. In your small groups, how do members find out their strength is building, class to class?
 
 Vadim
 --- M2
 Hi Emma,
 
-A coach often wants a clear reference point, and a home scan can supply one the member chooses to share. 3DLOOK has worked with 100+ clients.
+A home scan the member chooses to share gives her coach a reference point between classes.
 
-Open to a short call? Or tell me who leads member experience nationally and I will go there.
+Would you like to talk it over on a call? If you tell me who leads FIIT30 coaching nationally, I will go there.
 
 Vadim
 @@@ tedy-ferreira
@@ -443,17 +443,17 @@ proof: two photos, 80+ body measurements; 112,100 scans across 3DLOOK customers
 --- M1
 Hi Tedy,
 
-You run both Fernwood Miranda and Kirrawee, with a background in finance and coaching.
+Two clubs under one name, Miranda and Kirrawee, and a finance and coaching background behind you.
 
-Members take two phone photos at home and the scan returns 80+ body measurements. Do members at the two clubs get their check-ins on the same rhythm?
+A member can take two phone photos at home, and the scan returns 80+ body measurements. How do check-ins run for members at the two clubs?
 
 Vadim
 --- M2
 Hi Tedy,
 
-For two clubs, a shared page gives each member the same scan whichever club she trains at, with nothing for either team to install. For scale: 112,100 scans in 2025 across all 3DLOOK customers.
+At check-in, a member from either club could open the same home scan with her trainer if she shares it.
 
-Is a short call worth a look? Or I can speak with whoever coordinates member experience at head office.
+Shall I send a couple of times for a call? Whoever coordinates club operations at head office is someone I can speak with instead.
 
 Vadim
 @@@ hayley-richey-71a32b194
@@ -462,7 +462,7 @@ proof: FW5 personal training most popular service, followed by FIIT30; two photo
 --- M1
 Hi Hayley,
 
-Quick one on personal training at Fernwood, which the brand describes as one of its most popular services, closely followed by FIIT30.
+At Fernwood, personal training is described as one of the most popular services, closely followed by FIIT30.
 
 Members can use a phone scan from two photos that returns 80+ body measurements, taken at home. Before a review, how do your PTs prepare?
 
@@ -470,33 +470,33 @@ Vadim
 --- M2
 Hi Hayley,
 
-A PT could start the next review from a scan the client sent that morning, set against one she picked earlier. The capture runs on any phone with on-screen guidance.
+A PT could start the next review from a scan the client sent that morning, set against one she picked earlier.
 
-Could we have a short call to see it? Or steer me to the national office person for member services.
+Perhaps a call would show it better than a message can. A pointer to the national office person for member services would be welcome.
 
 Vadim
 @@@ guneet-cheema-7a5102168
 hook: director and owner of four Fernwood clubs, Narre Warren through to Pakenham
-proof: two photos, 80+ body measurements, under 45 seconds
+proof: two photos, 80+ body measurements
 --- M1
 Hi Guneet,
 
 Owning Fernwood clubs from Narre Warren through to Pakenham gives you a wide view of how members begin.
 
-Our two-photo phone scan returns 80+ body measurements from a member's own phone. Do new members at all of your clubs get their starting point marked the same way?
+Our two-photo phone scan returns 80+ body measurements from a member's own phone. How do new members at your clubs get their starting point marked?
 
 Vadim
 --- M2
 Hi Guneet,
 
-For several clubs, one white-label page means every member opens the same scan whichever club she belongs to. Every scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+Across clubs, a member could take the same scan at home and bring it to her first conversation, a starting point she holds herself.
 
-Short call? If head office has an owner for member experience, I would take that name.
+If you can spare time for a call, I will keep it to what members would see. A franchise performance lead at head office who looks at onboarding would be the right name.
 
 Vadim
 @@@ jessie-anderson-5203b913b
 hook: franchise owner of Fernwood Gungahlin and Canberra City
-proof: two photos, 80+ body measurements; 100+ clients
+proof: two photos, 80+ body measurements
 --- M1
 Hi Jessie,
 
@@ -508,9 +508,9 @@ Vadim
 --- M2
 Hi Jessie,
 
-Canberra members could use the same scan page for either club. 3DLOOK has worked with 100+ clients.
+Members who ask about their progress could read a scan of their own, 80+ body measurements from two photos, with an earlier scan they pick next to it.
 
-Would a short call suit you? If it sits with someone at the national office, I would be glad to be pointed to them.
+Would you be up for a call at some point? If it sits with someone at the national office, I would be glad to be pointed to them.
 
 Vadim
 @@@ lydia-tanios-a6a84b175
@@ -521,15 +521,15 @@ Hi Lydia,
 
 Thought I'd share, since new Fernwood members begin with a first session with a trainer to build a plan that suits them.
 
-FitXpress returns 80+ body measurements from two phone photos, taken at home. What goes into that first plan at your club?
+At home, a member runs the scan from two photos and gets 80+ body measurements back. What goes into that first plan at your club?
 
 Vadim
 --- M2
 Hi Lydia,
 
-A new member could arrive with a scan she took herself, ready for the trainer to read. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+Arriving with a scan she took herself, a new member gives the trainer a starting point to read.
 
-Open to a quick call? Or point me to whoever at head office looks after the member side.
+How about a call at a time that suits your club? If head office looks after new-member plans, point me to whoever does.
 
 Vadim
 @@@ kim-bullock-5931a8147
@@ -540,20 +540,20 @@ Hi Kim,
 
 Your headline pairs Fernwood Mordialloc with a Cert 3 instructor qualification and Mat Pilates, which suggests members who mix services.
 
-Our scan takes two photos and returns 80+ body measurements from a phone. Where does a member's overall picture sit when she moves between classes and the gym floor?
+From a phone and two photos, a member gets 80+ body measurements. When she moves between a class and the gym floor, what goes with her from one to the other?
 
 Vadim
 --- M2
 Hi Kim,
 
-You have run operations before, so here is the short version: nothing to install in the club, and the member takes the scan on her phone. 3DLOOK has worked with 100+ clients.
+A member who moves between classes and the gym floor can keep one scan on her own phone and open it wherever she trains.
 
-Worth a call? Or point me to the national team contact for member experience.
+Could I book a call with you? The national team contact for member experience would be a fine person to point me to.
 
 Vadim
 @@@ jodie-sorensen-94b086180
 hook: business owner of Fernwood Hornsby; personal trainers one-on-one
-proof: two photos, 80+ body measurements; 100+ clients
+proof: two photos, 80+ body measurements
 --- M1
 Hi Jodie,
 
@@ -565,9 +565,9 @@ Vadim
 --- M2
 Hi Jodie,
 
-Between sessions, a client's scan could reach her trainer by link, ready for the next review. 3DLOOK has worked with 100+ clients.
+Between sessions, a client could send her trainer a scan by link, ready for the next plan review. She takes it on her own phone, guided on screen.
 
-Would a call be useful? Otherwise, which head office person decides what member services clubs can offer?
+I would be glad to talk it through by phone if you are willing. If head office has someone who decides what member services clubs can offer, please point me to them.
 
 Vadim
 @@@ fernwood-fitness-ballarat-60a208251
@@ -578,34 +578,34 @@ Hi Fernwood Fitness Ballarat team,
 
 Spotted something: Fernwood runs coach-led FIIT30 small groups alongside personal training.
 
-FitXpress returns 80+ body measurements from two phone photos. When a member uses both, which coach sees her whole picture?
+Two photos, 80+ body measurements: that is what a FitXpress scan returns. For a member on both, what does each coach bring to her next check-in?
 
 Vadim
 --- M2
 Hi Fernwood Fitness Ballarat team,
 
-One scan, taken at home, could give the FIIT30 coach and the PT the same reference. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+Using both FIIT30 and personal training, a member could take one scan at home and share it with both coaches. Both coaches would see the same scan.
 
-Is a short call worthwhile? If member experience is handled at head office, a name would be welcome.
+If a call appeals, I will find a time that fits. If member experience is handled at head office, a name would be welcome.
 
 Vadim
 @@@ mary-papazoglou-6584531b2
 hook: franchise owner with retail and education background; FIIT30 groups
-proof: FW3 FIIT30 coach-led groups; two photos, 80+ body measurements, under 45 seconds
+proof: FW3 FIIT30 coach-led groups; two photos, 80+ body measurements
 --- M1
 Hi Mary,
 
-Noticed your background in retail and education, which sits well with coach-led FIIT30 groups at Fernwood.
+Retail and education both appear in your background, which sits well with coach-led FIIT30 groups at Fernwood.
 
-Our scan is two phone photos and returns 80+ body measurements. In your groups, how does a member learn that her strength is moving up?
+Members photograph themselves twice at home, and 80+ body measurements come back. In your groups, how does a member learn that her strength is moving up?
 
 Vadim
 --- M2
 Hi Mary,
 
-A member in your groups could take the scan at home and choose whether to share it with her coach. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+In your groups, a member could take a scan at home and decide for herself whether her coach sees it.
 
-Up for a short call? Or send me to whoever at head office owns the member side.
+A call would let me answer questions directly, if you want one. Whoever at head office leads FIIT30 programming would be a good place to send me.
 
 Vadim
 @@@ moby-malik-096b16227
@@ -614,36 +614,36 @@ proof: FW2 franchise-owner run network; two photos, 80+ body measurements
 --- M1
 Hi Moby,
 
-Quick note on Fernwood, a women's health club network run by franchise owners across Australia.
+Fernwood is a women's health club network run by franchise owners across Australia, and FIIT30 is its coach-led small-group program.
 
-We built a two-photo phone scan that returns 80+ body measurements. For a FIIT30 challenge at your club, what do members take away at the end?
+FitXpress turns a member's front and side photos into 80+ body measurements. For a FIIT30 challenge at your club, what do members take away at the end?
 
 Vadim
 --- M2
 Hi Moby,
 
-At the end of a challenge, a member's own scan could sit next to the one she took at the start, on a page she opens herself. It needs nothing installed in the club.
+A member in a challenge can open her own scan on her phone whenever she likes, and her coach sees it only if she chooses.
 
-Would a short call interest you? And if head office has a member experience lead, I would welcome the name.
+Let me know if a call would interest you. Head office may have someone who runs club challenges and events, and I would welcome the name.
 
 Vadim
 @@@ melissa-jones-0529462bb
 hook: owner of Fernwood Penrith and Parramatta
-proof: two photos, 80+ body measurements; 112,100 scans across 3DLOOK customers
+proof: two photos, 80+ body measurements
 --- M1
 Hi Melissa,
 
-Penrith and Parramatta are two different member communities, and you run both Fernwood clubs.
+Fernwood Penrith and Parramatta both sit under your name, each with its own members.
 
-Members can use a scan that needs two photos and returns 80+ body measurements. Do new members at each club start with the same kind of first conversation?
+Members can use a scan that needs two photos and returns 80+ body measurements. How does a new member's first conversation go at each club?
 
 Vadim
 --- M2
 Hi Melissa,
 
-One scan page, sent by either club, could give both teams the same starting reference. For scale: 112,100 scans in 2025 across all 3DLOOK customers.
+At either club, a new member could bring a scan she took at home to that first conversation, 80+ body measurements from two photos that she chooses to share.
 
-Open to a short call? If this belongs with a national office colleague, I would appreciate the introduction.
+A call is there if you want it. Someone in the national office who looks after new-member experience could be the better contact, and an introduction would be welcome.
 
 Vadim
 @@@ susan-oliver-am-03788737a
@@ -660,8 +660,8 @@ Vadim
 --- M2
 Hi Susan,
 
-If it ever helps, a short call would show what the scan returns and how it reaches a club: a page the club sends, nothing to install. For scale: 112,100 scans in 2025 across all 3DLOOK customers.
+A member service like this comes down to what a member sees: two photos on her phone, then 80+ body measurements she can set against an earlier scan she picks.
 
-Open to that? If another Fernwood leader is better placed, a name would be welcome.
+If more detail would help, I am glad to give it on a call. If another Fernwood leader is better placed, a name would be welcome.
 
 Vadim

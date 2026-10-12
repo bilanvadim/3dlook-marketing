@@ -24,12 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Simon,
 
-Nothing would need installing in stores. A shopper takes the scan at home and chooses whether the store sees it. For scale: 112,100 scans in 2025 across all 3DLOOK customers.
+Measurements a shopper has already taken at home give an adviser a concrete place to start a conversation, and the shopper chooses whether the store sees them. Nothing would need installing in stores. 112,100 scans in 2025 across all 3DLOOK customers.
 
-A short read: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
-
-Would a short call be useful to talk through where a partner capability could sit?
+The partnership background sits at https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/. A call to talk through where a partner capability could sit would be welcome, whenever suits.
 
 Vadim
 
-**Char count:** 354 / 550
+**Char count:** 463 / 550

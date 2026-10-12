@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Kelly,
 
-The scan can sit alongside the rotation as an optional check, only for the members who want it.
+To see what a stretch of the rotation has changed, a member could scan at home and choose what to share with the coach.
 
-Shall we have a short call? If Fitstop has a person who leads the app, I would ask them as well.
+Shall we set up a call? If member experience at Fitstop is led from elsewhere, I would speak with that person too.
 
 Vadim
 
-**Char count:** 211 / 550
+**Char count:** 253 / 550

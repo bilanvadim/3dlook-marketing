@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: Head of Fashion and Events; what members take from an event
-- Proof point: 80+ body measurements, two photos (proof-points.md); 100+ clients line
+- Proof point: 80+ body measurements, two photos (proof-points.md)
 
 ---
 
@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Sienna,
 
-This stood out: you run events at The Yard Gym. FitXpress is a two-photo body scan that returns 80+ body measurements, which a member can take at home ahead of an event or once it is over.
+This stood out: you run events at The Yard Gym. FitXpress is a two-photo body scan that returns 80+ body measurements, which a member can take at home whenever they choose.
 
 When The Yard Gym runs an event, what do members take home about their own training?
 
 Vadim
 
-**Char count:** 293 / 600
+**Char count:** 277 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Sienna,
 
-Not a buyer question, just a short call to hear how events work for you. 3DLOOK has worked with 100+ clients.
+Whatever members take home from an event, a scan they choose to take at home gives them measurements of their own, and the member decides who sees it.
 
-If the person who owns the member app is better placed, I would welcome the introduction.
+A call to hear how events work for you would be welcome. If whoever leads partnerships and community programming at head office is better placed, I would welcome the introduction.
 
 Vadim
 
-**Char count:** 219 / 550
+**Char count:** 350 / 550

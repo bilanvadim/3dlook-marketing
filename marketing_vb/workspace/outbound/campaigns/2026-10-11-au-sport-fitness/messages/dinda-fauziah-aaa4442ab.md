@@ -26,8 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Dinda,
 
-I would be glad to share how the scan works in a short call. If a different team owns the member app at STRONG Pilates, a pointer to the right person at the Australian head office would also help.
+In an introduction to classes, a new member could mention a scan she took at home as her own starting point, and she decides what the studio sees.
+
+Would you be open to a short call to see the scan on a phone? If digital sits elsewhere, a pointer to whoever looks after it at the Australian head office would help just as much.
 
 Vadim
 
-**Char count:** 214 / 550
+**Char count:** 345 / 550

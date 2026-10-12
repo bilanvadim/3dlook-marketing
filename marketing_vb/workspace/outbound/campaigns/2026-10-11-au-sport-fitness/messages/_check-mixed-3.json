@@ -3,48 +3,7 @@
  "checked": 35,
  "source": "people-validated.csv (send == SEND)",
  "batch": "mixed-3",
- "generated": "2026-10-11T17:49:01",
+ "generated": "2026-10-12T09:25:20",
  "hard": [],
- "soft": [
-  [
-   "near-duplicate sentence",
-   "Australian Sports Nutrition: peter-reed-a3149a29 / david-wilkie-884088174",
-   "«fitxpress is a two-photo body scan that returns 8…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitness Enhancement: tanyabrinsden / scott-hunt-90b32045",
-   "«fitxpress is a two-photo body scan, taken on any…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitness Enhancement: tanyabrinsden / sue-stedman-bb204918b",
-   "«fitxpress is a two-photo body scan, taken on any…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitness Enhancement: scott-hunt-90b32045 / sue-stedman-bb204918b",
-   "«fitxpress is a two-photo body scan, taken on any…»"
-  ],
-  [
-   "sentence opening repeated",
-   "The Yard Gym ×3",
-   "«fitxpress is a two photo…»: brendon-li-on-wing-2b88b831, natalia-ferrari-63072119a, sienna-ettingshausen-445403236"
-  ],
-  [
-   "sentence opening repeated",
-   "Fitness Passport ×4",
-   "«would a short call be…»: brettcondron, colirvine, damientampling, robmitchelllinkedin"
-  ],
-  [
-   "sentence opening repeated",
-   "Fitness Enhancement ×3",
-   "«fitxpress is a two photo…»: scott-hunt-90b32045, sue-stedman-bb204918b, tanyabrinsden"
-  ],
-  [
-   "sentence opening repeated",
-   "Fitness Enhancement ×3",
-   "«the scan returns 80+ body…»: scott-hunt-90b32045, sue-stedman-bb204918b, tanyabrinsden"
-  ]
- ]
+ "soft": []
 }

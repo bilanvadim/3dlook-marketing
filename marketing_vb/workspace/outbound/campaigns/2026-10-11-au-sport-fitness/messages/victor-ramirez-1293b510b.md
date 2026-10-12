@@ -13,23 +13,23 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Victor,
 
-Operations at Vision means keeping studios consistent, so a capability that needs nothing in the studio is worth a look.
+Operations at Vision means keeping studios consistent, which makes a capability that needs nothing in the studio easy to look at.
 
-The scan runs on the client's own phone from two photos, front and side, and returns 80+ body measurements. Nothing to ship, stock or install.
+Front and side photos on the client's own phone are all it takes, and 80+ body measurements come back. Nothing to ship, stock or install.
 
 How are the first weeks of a new client organised across Vision studios today?
 
 Vadim
 
-**Char count:** 363 / 600
+**Char count:** 367 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Victor,
 
-I would like to show you how the scan fits next to a studio's existing routines, in about 15 minutes on a call.
+In a new client's first weeks, the scan hands every studio the same starting point, taken on the client's phone and read by the trainer at the next review.
 
-If the timing is wrong, no problem. Would a short call suit? Details here: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+A call could cover how that works with the routines studios already run. Could Thursday or Friday work? Details: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
 Vadim
 
-**Char count:** 269 / 550
+**Char count:** 351 / 550

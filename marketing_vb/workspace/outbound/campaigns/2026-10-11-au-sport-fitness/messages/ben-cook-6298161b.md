@@ -15,19 +15,19 @@ Hi Ben,
 
 You run Fernwood Bendigo, where the network began, after earlier work on Fernwood's finance side.
 
-FitXpress turns two phone photos into 80+ body measurements. When a member returns to Bendigo after a break, what does her plan look like in the first week back?
+Two photos from any phone go in, and 80+ body measurements come out. When a member returns to Bendigo after a break, what does her plan look like in the first week back?
 
 Vadim
 
-**Char count:** 276 / 600
+**Char count:** 284 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Ben,
 
-For a returning member, a home scan before her first visit gives the coach a starting point. 3DLOOK has worked with 100+ clients.
+Returning to Bendigo after a break, a member could take a scan at home before her first visit and bring it as her starting point, if she wants. 3DLOOK has worked with 100+ clients.
 
-Is a call useful? You know Fernwood's national office well, so just tell me who looks after member experience there.
+A call is easy to arrange if you would like to hear more. You know Fernwood's national office well, so just tell me who looks after member experience there.
 
 Vadim
 
-**Char count:** 263 / 550
+**Char count:** 354 / 550

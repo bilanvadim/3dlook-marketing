@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Kristy,
 
-Quick note on your BFT studio. Members can take a scan from anywhere with a phone, including during travel or a shift-work stretch, and it returns 80+ body measurements and body composition estimates from two photos.
+Quick note on your BFT studio. Members can take a scan from anywhere with a phone, including during travel or a shift-work stretch, and it returns 80+ body measurements and body composition estimates, with on-screen guidance throughout.
 
 When members miss a few weeks, how does the studio find out where they are on return?
 
 Vadim
 
-**Char count:** 322 / 600
+**Char count:** 342 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Kristy,
 
-A short call would show how it works end to end. 3DLOOK has worked with 100+ clients, and the studio installs nothing.
+For a member returning from travel or a run of shifts, a phone scan with on-screen guidance gives a quick reading to share with the studio, set against an earlier one they pick.
 
-Could we fit in a quick call? If someone else owns member experience at BFT, I am glad to be pointed to them.
+Would you be open to a call about this? If franchise performance at BFT head office is the better door, I would gladly be pointed that way.
 
 Vadim
 
-**Char count:** 248 / 550
+**Char count:** 337 / 550

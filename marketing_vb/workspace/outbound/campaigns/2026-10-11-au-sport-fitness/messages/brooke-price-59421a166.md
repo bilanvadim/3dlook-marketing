@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Brooke,
 
-Quick thought on what this means on the floor. The capture runs on any phone, so a club team has nothing to stock, charge or maintain. This page covers how fitness brands use it: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+Quick thought on goal reviews at the company clubs: a member who scans at home on their own phone arrives with a starting point of their own, and the capture needs nothing installed in the club. A short read on what a connected fitness app can offer a member: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
 Would you be open to a quick chat?
 
 Vadim
 
-**Char count:** 296 / 550
+**Char count:** 377 / 550

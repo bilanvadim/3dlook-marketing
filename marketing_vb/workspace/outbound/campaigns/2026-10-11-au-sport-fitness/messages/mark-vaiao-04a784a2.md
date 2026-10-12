@@ -15,19 +15,19 @@ Hi Mark,
 
 Noticed your career as a rugby league player and now a multi-site business owner at Fitstop.
 
-FitXpress turns two phone photos into 80+ body measurements. Across your sites, how do you keep coaching checks consistent?
+One front and one side photo from a member's phone give a set of 80+ body measurements. Across your sites, how do you keep coaching checks consistent?
 
 Vadim
 
-**Char count:** 234 / 600
+**Char count:** 261 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Mark,
 
-Athletes know the value of the same test done the same way. The scan gives that in the member's hand.
+Wherever a member trains across your sites, a guided scan taken the same way gives them a set of measurements that means the same thing at each one.
 
-Keen to talk it through briefly. If whoever runs the member app is a better contact, I will gladly go to them.
+I can cover the rest by phone. Whoever oversees how Fitstop studios perform together is the person I should meet if that is not you.
 
 Vadim
 
-**Char count:** 230 / 550
+**Char count:** 299 / 550

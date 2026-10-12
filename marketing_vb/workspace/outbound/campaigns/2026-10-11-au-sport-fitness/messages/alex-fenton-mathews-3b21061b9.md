@@ -15,18 +15,18 @@ Hi Alex,
 
 You ran events at Gymshark and now handle marketing across APAC for STRONG Pilates.
 
-Two phone photos give a member 80+ body measurements to keep as a starting point for an event, and to look back on at the end.
+Two photos taken at home give a member 80+ body measurements to keep for herself.
 
-How do you mark the start and the end of a studio event for members today?
+What do STRONG Pilates members take away from an event today?
 
 Vadim
 
-**Char count:** 304 / 600
+**Char count:** 246 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Alex,
 
-An event gives a member a clear start and finish, and the scan gives them their own record of both. 3DLOOK has worked with 100+ clients.
+For an event, a member could choose to take the scan at home, and the 80+ body measurements are hers to keep.
 
 Example page: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
@@ -34,4 +34,4 @@ Open to a quick chat about it?
 
 Vadim
 
-**Char count:** 263 / 550
+**Char count:** 236 / 550

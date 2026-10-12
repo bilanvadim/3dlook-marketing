@@ -17,21 +17,21 @@ Came across your work on the Fitness Australia board before UBX.
 
 UBX has no class timetables, and members work through boxing and strength rounds when they arrive. A two-photo scan returns 80+ body measurements, and a member can take it at home or during a stretch away from the club.
 
-Is there a point in a member's year where UBX would want that on offer?
+What would you want a UBX member to bring back to the floor after weeks away?
 
 Vadim
 
-**Char count:** 378 / 600
+**Char count:** 384 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Michael,
 
-Quick idea for you. 3DLOOK has worked with 100+ clients, and the scan runs white-label through an API or SDKs, with the brand choosing where it appears.
+A member who scans at home during a stretch away could return to UBX with 80+ body measurements of their own to look back on.
 
-Any comparison covers only scans the member picks: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+3DLOOK has worked with 100+ clients. The scan runs white-label through an API or SDKs: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Would a call next week suit?
+Is there a day next week for a call?
 
 Vadim
 
-**Char count:** 317 / 550
+**Char count:** 334 / 550

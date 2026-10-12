@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Steve,
 
-Caught my eye: your strength and conditioning background, and now BFT Hindmarsh. A two-photo scan returns 80+ body measurements that a coach can read alongside a member's training.
+Caught my eye: your strength and conditioning background, and now BFT Hindmarsh. A member's phone gives 80+ body measurements that a coach can read alongside a member's training.
 
-When you review how a member is going, what do you have in hand besides your own coaching notes?
+When you review how a member is going, what do you have in hand to look at with them?
 
 Vadim
 
-**Char count:** 296 / 600
+**Char count:** 283 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Steve,
 
-As a coach you will want the technical side. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results, and the member chooses what to share.
+At a progress review, a scan the member took at home could add a standard set of 80+ body measurements to the conversation, with the member deciding what to share. The coach would see the same set each time the member chooses to bring one.
 
-I can show it in a short call, or you could point me to whoever looks after member experience at BFT.
+Say the word and I will send times for a call. If franchise performance at BFT head office is where this belongs, a pointer there is welcome.
 
 Vadim
 
-**Char count:** 299 / 550
+**Char count:** 400 / 550

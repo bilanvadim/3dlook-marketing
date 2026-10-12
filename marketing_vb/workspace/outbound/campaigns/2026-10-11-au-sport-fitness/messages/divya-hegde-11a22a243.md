@@ -17,21 +17,21 @@ Had a thought for a KX Pilates business owner.
 
 FitXpress returns 80+ body measurements and body composition estimates from two photos taken on a phone.
 
-How often do goal reviews run at your studio, and what do you bring to them?
+When you sit down with a member to talk goals, what do you have in front of you?
 
 Vadim
 
-**Char count:** 248 / 600
+**Char count:** 252 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Divya,
 
-Curious if a short call makes sense. I would show what a member gets and where a studio can use it.
+A goal conversation could open with the member's own scan: two phone photos and the measurements that come back.
 
-Or point me to the KX Pilates head office person who owns member experience.
+The franchise operations lead at KX Pilates head office may be the person to hear this, and a name would do.
 
-Would that be of interest?
+Say yes and I will book it around your studio hours.
 
 Vadim
 
-**Char count:** 223 / 550
+**Char count:** 294 / 550

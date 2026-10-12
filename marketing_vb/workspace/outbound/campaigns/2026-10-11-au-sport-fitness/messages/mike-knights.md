@@ -15,19 +15,19 @@ Hi Mike,
 
 Quick one for a Jetts Fitness business owner. Some members build their own program in the open zones, and 80+ body measurements from two photos would give them something to come back to.
 
-How do your members see that their program is doing something over time?
+What would a member of yours point to as the sign their own program is paying off?
 
 Vadim
 
-**Char count:** 277 / 600
+**Char count:** 287 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Mike,
 
-Short and practical: a call to show the member side, around ten minutes.
+Members who build their own program in the open zones could scan at home now and again after a few months, then set the two side by side. The comparison is theirs to run and theirs to keep.
 
-If you would rather leave this to the Jetts team that looks after the member app, tell me who they are and I will reach out directly. Would a call be useful?
+Let me show how the comparison looks on a phone. Digital at Jetts could be where this belongs, and a pointer would be welcome. If a conversation sounds worthwhile, reply with a time.
 
 Vadim
 
-**Char count:** 248 / 550
+**Char count:** 390 / 550

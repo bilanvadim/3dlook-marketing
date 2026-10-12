@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Brendan,
 
-My thinking is simple: a scan the member takes at home sits next to an earlier one they pick. The club does nothing extra.
+Months into their own program in the open zones, a member could scan again at home and set the result beside an earlier scan they pick, body composition estimates included. It gives them an answer of their own.
 
-I would value a short call. If the app side is handled by a product lead at Jetts, put me in touch with them and skip the call. Fair?
+I can demonstrate it by video. Programming at Jetts head office may own this topic, and a nudge in that direction would be welcome. Should that be easier, an email introduction suits me fine.
 
 Vadim
 
-**Char count:** 277 / 550
+**Char count:** 423 / 550

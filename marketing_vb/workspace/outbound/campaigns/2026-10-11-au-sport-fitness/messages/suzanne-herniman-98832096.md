@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: club owner at Fernwood Camberwell; first session where the plan takes shape
-- Proof point: FW4 first session with a trainer; two photos, 80+ body measurements, under 45 seconds
+- Proof point: FW4 first session with a trainer; two photos, 80+ body measurements
 
 ---
 
@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Suzanne,
 
-Quick note for Fernwood Camberwell: a new member's first session with a trainer is where her plan starts to take shape.
+At Fernwood Camberwell, a new member's first session with a trainer is where her plan starts to take shape.
 
-Members take the scan at home from two phone photos, front and side, and get 80+ body measurements beforehand. What would you like the trainer to know about her before she walks in?
+A member could take the scan at home from two phone photos, front and side, and bring 80+ body measurements to the session. What would you like the trainer to know about her before she walks in?
 
 Vadim
 
-**Char count:** 322 / 600
+**Char count:** 323 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Suzanne,
 
-The trainer could open that first session with the member's own scan on screen, if she is happy to share it. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+The trainer could open that first session with the member's own scan on screen, if she is happy to share it.
 
-Could we have a short call? Or hand me to the head office person who runs the member experience.
+If you are open to a call, I will work around your club hours. If onboarding for new members sits with head office, point me to whoever leads it.
 
 Vadim
 
-**Char count:** 322 / 550
+**Char count:** 275 / 550

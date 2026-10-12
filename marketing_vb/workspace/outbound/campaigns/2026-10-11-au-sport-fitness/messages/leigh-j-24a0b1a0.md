@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Leigh,
 
-3DLOOK has worked with 100+ clients, and I would like a short call about how your PTs run reviews.
+A client who takes the scan before a review gives the PT a set of measurements to discuss, and can set it against an earlier scan they pick. 3DLOOK has worked with 100+ clients.
 
-Worth a quick chat? If Plus Fitness head office owns this decision, a pointer to the right person is welcome.
+Would a call about what the client and PT would see be useful? The head-office lead for personal training at Plus Fitness could be the better contact, if you know them.
 
 Vadim
 
-**Char count:** 227 / 550
+**Char count:** 365 / 550

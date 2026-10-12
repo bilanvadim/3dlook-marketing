@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: path from assistant club manager and club manager to General Manager
-- Proof point: AF1; two photos, 80+ measurements (proof-points.md); 100+ clients
+- Proof point: AF1; two photos, 80+ measurements (proof-points.md)
 
 ---
 
@@ -15,19 +15,19 @@ Hi Lilian,
 
 Came across your work: from assistant club manager to club manager to General Manager at Anytime Fitness Australia.
 
-For members training on their own in a 24/7 club, a scan from two photos returns 80+ body measurements they can repeat at home. How do members on their own program see change over months, with no trainer beside them?
+For members on their own program in a 24/7 club, a scan from two photos returns 80+ body measurements they can repeat at home. How do those members see change over months?
 
 Vadim
 
-**Char count:** 352 / 600
+**Char count:** 307 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Lilian,
 
-You know the floor better than most. 3DLOOK has worked with 100+ clients, and the scan sits in a link or inside a brand's own experience, with nothing for the club to run.
+For a member training on their own program, a scan from two photos at home gives 80+ body measurements to set against an earlier scan they pick, months apart.
 
-Could we do a short call on it? If the right person is at head office for member experience, pointing me there is fine too.
+I would like to hear how members see their own change at your club, on a short call. If whoever leads digital for the clubs is the better person, I am happy to be pointed there.
 
 Vadim
 
-**Char count:** 315 / 550
+**Char count:** 356 / 550

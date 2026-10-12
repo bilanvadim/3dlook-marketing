@@ -26,12 +26,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi James,
 
-A call would show a trainer's view of the scan in about the time of a class briefing.
+A member working on her strength could set an earlier scan she picked beside a current one, something to bring to a conversation with her trainer. The step up stays between her and the trainer.
 
-If the right contact sits at KX Pilates head office, where the app lives, point me there and I will follow up.
+A training and education lead at KX Pilates head office could be the better ear, and I would take a pointer there.
 
-Worth a short call?
+My calendar has room on most weekdays next week for a call.
 
 Vadim
 
-**Char count:** 236 / 550
+**Char count:** 388 / 550

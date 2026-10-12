@@ -15,19 +15,19 @@ Hi Jesse,
 
 You started as a Fitstop coach and now own Busselton, which gives you a coach's view of the four styles.
 
-FitXpress reads two phone photos and returns 80+ body measurements. For members who travel or work shifts, how does the studio keep up with what they did while away?
+A guided scan on the member's own phone, with nothing to install, returns 80+ body measurements. For members who travel or work shifts, how does the studio keep up with what they did while away?
 
 Vadim
 
-**Char count:** 289 / 600
+**Char count:** 318 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Jesse,
 
-A member could scan at home after a stretch away and show the coach on return.
+A member returning from time away could scan at home and show the coach where they are now.
 
-Is an early call worth it? And if there is a person at Fitstop who owns the app, I would welcome the name.
+If you want to talk it through, I am around for a call. The app at Fitstop may have an owner I should speak with instead, and a name would be enough.
 
 Vadim
 
-**Char count:** 204 / 550
+**Char count:** 260 / 550

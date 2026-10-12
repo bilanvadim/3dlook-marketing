@@ -24,12 +24,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Cameron,
 
-Short version of the idea: a member takes two photos and gets a set of body measurements to talk through with a coach. A quick call would show it in detail.
+A coach and a member could look at the member's own scan together during a goal review: the measurements from two photos they took, and an earlier set they pick to compare.
 
-Or point me to whoever looks after the Genesis Connect experience.
+Whoever looks after Genesis Connect at head office may be the better person for this, and a name would be welcome.
 
-Worth a chat?
+Happy to walk through it on a call when it suits you.
 
 Vadim
 
-**Char count:** 259 / 550
+**Char count:** 363 / 550

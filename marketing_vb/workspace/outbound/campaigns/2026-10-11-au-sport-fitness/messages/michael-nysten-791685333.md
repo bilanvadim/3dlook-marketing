@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: director title, empty profile, network decision on member-facing technology
-- Proof point: 80+ body measurements, two photos (proof-points.md); 112,100 scans line
+- Proof point: 80+ body measurements, two photos (proof-points.md)
 
 ---
 
@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Michael,
 
-Quick thought as a director of World Gym Australia. We've built a white-label two-photo body scan that returns 80+ body measurements, sent to members as a page by a club.
+Member-facing technology at World Gym Australia is what prompted this note. We've built a white-label two-photo body scan that returns 80+ body measurements, sent to members as a page by a club.
 
 How does the network decide on new member-facing technology?
 
 Vadim
 
-**Char count:** 252 / 600
+**Char count:** 276 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Michael,
 
-This is a question about fit, and I may have the wrong person. For scale: 112,100 scans in 2025 across all 3DLOOK customers.
+For a network weighing member-facing technology, the scan is a contained item: a member takes it on their own phone from a page a club sends, and picks what is shown.
 
-Would a short call work, or could you point me to whoever owns the member journey at head office?
+I may have the wrong person. Would a call with you work, or could you point me to whoever owns the member journey at head office?
 
 Vadim
 
-**Char count:** 243 / 550
+**Char count:** 317 / 550

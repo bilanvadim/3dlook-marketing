@@ -6,7 +6,7 @@ Hi Karen,
 
 FS8 runs a low-impact, high-energy workout across studios, and operations is where any new member step has to work without extra kit.
 
-A phone scan fits that. It runs on any phone with on-screen guidance and returns 80+ body measurements, under 45 seconds from the photos to structured results.
+A phone scan fits that. It runs on any phone with on-screen guidance and returns 80+ body measurements from a front and a side photo.
 
 How do FS8 studios run member check-ins or goal reviews today?
 
@@ -14,9 +14,9 @@ Vadim
 --- M2
 Hi Karen,
 
-For a studio network, the scan sits inside the app the member already uses or on a page the studio sends, and studios have nothing new to run. 3DLOOK has worked with 100+ clients.
+A member arriving at a check-in or goal review could bring a scan she took on her own phone, and FS8 studios would have nothing new to run. 3DLOOK has worked with 100+ clients.
 
-The page below shows how it fits a member app: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+The page below shows how the capture sits inside a member app: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
 Would a short call be worth it to see how it would look for FS8?
 
@@ -38,7 +38,9 @@ Vadim
 --- M2
 Hi Nina,
 
-I would like to show you how the scan looks on a phone, in a short call. Does that suit you? If it fits better, point me to whoever looks after the member app for FS8 at the head office and I will go to them.
+At Newstead, a new member could take the scan on her own phone and keep 80+ body measurements as a starting point to look back on with her coach, shared only if she chooses.
+
+I can show you how it looks on a phone in a short call, if you are open to one this month. If member apps sit with head office, point me to whoever owns the FS8 app and I will go there.
 
 Vadim
 
@@ -58,7 +60,9 @@ Vadim
 --- M2
 Hi Lucy,
 
-Happy to walk you through the scan on a phone, 15 minutes at most. Would a call fit your week? Or, if someone at FS8 head office owns the member experience, point me their way and I will reach out there.
+For a goal review, a member could arrive with a scan she took at home, giving her coach a set of 80+ body measurements to talk through, shared only because she chose to.
+
+Would you like to see the scan on a phone in a short call? If goal reviews are shaped at head office, point me to whoever owns member experience for FS8 and I will reach out there.
 
 Vadim
 
@@ -70,15 +74,17 @@ Hi Emily,
 
 FS8 gives members a low-impact, high-energy workout across its studios.
 
-A guided phone scan returns 80+ body measurements from two photos, and the member decides whether to share or compare it, shown only where FS8 chooses.
+A guided phone scan returns 80+ body measurements from two photos, and the member decides whether to share it.
 
-When FS8 adds something new for members, how does it usually reach the studios?
+When FS8 adds a new offer for members, how does it get to a studio's front desk?
 
 Vadim
 --- M2
 Hi Emily,
 
-Rather than a pitch, I would suggest a short call to show the scan on a phone. Would that be useful? If another director owns member experience at FS8, a pointer to them would help just as much.
+A member who takes the scan on her own phone gets 80+ body measurements and picks whether her studio sees them.
+
+A short call would let me show it on a phone. If another director looks after new-member onboarding at FS8, send me their way and I will write to them. A line back either way helps.
 
 Vadim
 
@@ -96,11 +102,13 @@ Vadim
 --- M2
 Hi Selina,
 
-One number for the insights side. 112,100 scans in 2025 across all 3DLOOK customers.
+Members choose which two of their own scans to set against each other.
 
-For Fitness and Lifestyle Group, a scan would be the member's own choice, shown only where a brand decides. More here: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+112,100 scans in 2025 across all 3DLOOK customers.
 
-Might be worth a quick chat?
+More here: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+
+Is there a time next week for a short call?
 
 Vadim
 
@@ -112,19 +120,19 @@ Hi Moya,
 
 Your background taking AI-enabled capabilities from strategy to delivery stands out at Fitness and Lifestyle Group, which runs member apps for several brands.
 
-The scan returns 80+ body measurements from two photos, under 45 seconds from the photos to structured results. It is white-label through an API or SDKs, with nothing to ship.
+The scan returns 80+ body measurements and body composition estimates from two photos. It is white-label through an API or SDKs, with nothing to ship.
 
-At which point in a member's year would a scan fit best, joining or a goal review?
+Which brand app would you try a first scan in, and at what moment for the member?
 
 Vadim
 --- M2
 Hi Moya,
 
-On the delivery side, the scope is one white-label integration through the API or SDKs, which several brand apps could share. 3DLOOK has worked with 100+ clients.
+The delivery scope is one white-label integration through the API or SDKs, which several brand apps could share. A member who scans at the moment you choose gets 80+ body measurements to keep. 3DLOOK has worked with 100+ clients.
 
 Page for the roadmap conversation: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Worth a short call to map it against yours?
+If a roadmap session is coming up, I can walk through the scope on a call.
 
 Vadim
 
@@ -144,11 +152,11 @@ Vadim
 --- M2
 Hi Jessica,
 
-If the stretch-away idea holds up, the scan would appear only for members who choose it, with each brand deciding what is shown and to whom.
+A member back from a stretch away could take the scan on a phone and see her 80+ body measurements for herself.
 
 Detail here: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Open to a short call to talk it through for your apps?
+I would like to talk it through for your apps on a call. Say yes and I will send a few times.
 
 Vadim
 
@@ -168,7 +176,7 @@ Vadim
 --- M2
 Hi Mahamoud,
 
-A partner capability tends to work when clubs can switch it on without a project. This is one SDK the partner offers inside the clubs' own apps, and 3DLOOK has worked with 100+ clients.
+For a partner, this is one SDK offered inside the member apps of the group's brands, giving a member 80+ body measurements from a scan on her phone. Each brand app would add it once.
 
 Background: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
 
@@ -178,13 +186,13 @@ Vadim
 
 @@@ joe-w-8ab18127
 hook: runs IT operations across the group's brands (headline, bio)
-proof: REST API with API-key authentication, SDKs, photos deleted after processing or within 30 days, 80+ body measurements (card, proof-points); 2-4 weeks typical basic integration
+proof: REST API with API-key authentication, SDKs, photos deleted after processing or within 30 days per the customer's policy, 80+ body measurements (card, proof-points); 2-4 weeks typical basic integration
 --- M1
 Hi Joe,
 
 IT operations at Fitness and Lifestyle Group is where an SDK or API added to a member app lands for review.
 
-FitXpress offers a REST API with API-key authentication and web and mobile SDKs, white-label. The scan uses two photos and returns 80+ body measurements. Photos are deleted after processing or within 30 days.
+FitXpress offers a REST API with API-key authentication and web and mobile SDKs, white-label. The scan uses two photos and returns 80+ body measurements.
 
 What does your review of a new third-party SDK look at first?
 
@@ -192,21 +200,23 @@ Vadim
 --- M2
 Hi Joe,
 
-The security and data answers sit in one FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+Whichever check comes first in a review, the data answer is short: photos are deleted immediately after processing or within 30 days, per the customer's policy, and measurements and other outputs stay stored until deleted by scan ID on the customer's request.
 
-A basic integration typically takes 2-4 weeks through the API or the SDKs. Would a short call with a technical walk-through be useful?
+The rest is in one FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+A basic integration typically takes 2-4 weeks. Would a call with a technical walk-through be useful?
 
 Vadim
 
 @@@ darrellnewing
 hook: head of data and analytics with a data engineering background (headline, bio)
-proof: outputs stored and deletable by scan ID, 80+ body measurements, two photos (card, proof-points); 2-4 weeks typical basic integration
+proof: structured records through a REST API, 80+ body measurements, two photos (card, proof-points); 2-4 weeks typical basic integration
 --- M1
 Hi Darrell,
 
-You lead data and analytics at Fitness and Lifestyle Group, so the first question about any new source is how it lands in the platform.
+You lead data and analytics at Fitness and Lifestyle Group, where every new source arrives as records in a platform.
 
-A scan from two photos returns 80+ body measurements as structured records, stored and deletable by scan ID, through a REST API.
+A scan from two photos returns 80+ body measurements as structured records through a REST API.
 
 What format would a data team want such records in?
 
@@ -214,7 +224,7 @@ Vadim
 --- M2
 Hi Darrell,
 
-Documentation for the data side is in one place: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+For the data side, each scan arrives through the REST API as a structured record of 80+ body measurements, ready for a team to load into its own platform. Storage and handling are covered here: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
 
 A basic integration typically takes 2-4 weeks. Worth a short call to look at the data model together?
 
@@ -234,11 +244,11 @@ Vadim
 --- M2
 Hi Ann,
 
-I would value ten minutes to show how a partner capability could sit on a Go Vita page, with nothing to install in stores. 3DLOOK has worked with 100+ clients.
+A customer could take the scan at home and bring 80+ body measurements to a conversation with a store's team, sharing them only if she chooses. For Go Vita it would be a white-label page, with nothing to install in stores. 3DLOOK has worked with 100+ clients.
 
 Background: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
 
-Might a short call be worth it?
+Is there a time in the next couple of weeks for a short call?
 
 Vadim
 
@@ -258,7 +268,9 @@ Vadim
 --- M2
 Hi Jodie,
 
-I can show you the scan on a phone in a short call, with no decision needed from you. Would that be of use? If easier, point me to whoever runs customer advice or digital at the Go Vita head office.
+For a customer, the scan is a guided capture at home that returns 80+ body measurements, and she shares them with the store only if she chooses.
+
+I can show it on a phone in a short call, with no decision needed from you. If it belongs with someone else, point me to whoever runs customer advice at the Go Vita head office and I will go to them.
 
 Vadim
 
@@ -278,7 +290,9 @@ Vadim
 --- M2
 Hi Nina,
 
-Could we have a short call? I would show you the scan on a phone and hear how your store works. If someone at Go Vita head office looks after customer advice or digital, a pointer to them is just as welcome.
+When a customer has taken the scan at home, her 80+ body measurements could come up in the conversation with your team, and she decides what the store sees.
+
+I would like to show you the scan on a phone in a short call and hear how your store handles those conversations. If Go Vita head office has someone who looks after digital, a name from you is just as welcome.
 
 Vadim
 
@@ -298,23 +312,23 @@ Vadim
 --- M2
 Hi Adam,
 
-Software sits next to the facilities NovoFit already supplies, and a club adds it once through the SDK. 3DLOOK has worked with 100+ clients.
+A club member could take the scan from the club's own app and see 80+ body measurements, with the club adding the capability once through the SDK. 3DLOOK has worked with 100+ clients.
 
 Background: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
 
-Would a short call be worth it to see where it could fit?
+If you see a place for it, I would value a short call.
 
 Vadim
 
 @@@ daniel-waide-7ab7051b
 hook: COO with a technology implementation background (bio); NovoFit works with operators from floor plans to maintenance (NF2)
-proof: NF2 company fact; 80+ body measurements, speed wording (proof-points)
+proof: NF2 company fact; 80+ body measurements, two photos (proof-points)
 --- M1
 Hi Daniel,
 
-NovoFit works with operators from floor plans through to preventative maintenance, and you have implemented new technology in fitness before.
+You have implemented new technology in fitness before, and NovoFit works with operators from floor plans through to preventative maintenance.
 
-The scan is a white-label capability that returns 80+ body measurements, under 45 seconds from the photos to structured results, and clubs could add it to their own app.
+From two photos on a phone with on-screen guidance, a member gets 80+ body measurements, white-label inside a club's own app.
 
 When a club asks NovoFit about software for its members, where does that conversation go today?
 
@@ -322,11 +336,11 @@ Vadim
 --- M2
 Hi Daniel,
 
-Ownership is the open point, so a short call may help more than a document. We could look at which team at NovoFit would hold a capability like this.
+When a club asks for member software, the scan gives its members a guided two-photo capture and 80+ body measurements to look back on. Which team at NovoFit would hold a capability like that is the open point, and a call would cover more than a document.
 
 Reading first if you prefer: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
 
-Worth twenty minutes?
+Would a call next week work?
 
 Vadim
 
@@ -336,7 +350,7 @@ proof: NF2 company fact; two photos, 80+ body measurements (proof-points)
 --- M1
 Hi Tim,
 
-NovoFit works with club operators on their facilities, from planning through delivery and service.
+Clubs turn to NovoFit for their facilities, from planning through delivery and service.
 
 A club could offer a white-label scan in its own app or on a page it sends. Two photos return 80+ body measurements, and there is nothing to install.
 
@@ -346,21 +360,23 @@ Vadim
 --- M2
 Hi Tim,
 
-If clubs do ask, I can show how a software capability sits beside the service NovoFit already gives them. A short call would cover it. Does that sound useful?
+If clubs do ask, a member could take a guided scan on her own phone and get 80+ body measurements, delivered through software the club adds once.
 
-Related reading: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+I can show how that would look in a short call. Related reading: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+A reply of one line is all I need.
 
 Vadim
 
 @@@ corey-eames-mayer-390511117
 hook: group COO whose headline is operations delivered nationwide across fitness and wellness
-proof: NF2 company fact; 80+ body measurements, speed wording (proof-points)
+proof: NF2 company fact; 80+ body measurements, two photos (proof-points)
 --- M1
 Hi Corey,
 
-You run operations that reach clubs nationwide, so a new capability only works if it needs no work on site.
+You run operations that reach clubs nationwide, and a new capability works only when it needs nothing done on site.
 
-The scan runs on any phone with on-screen guidance and returns 80+ body measurements, under 45 seconds from the photos to structured results. Clubs would add it through one SDK.
+The scan runs on any phone with on-screen guidance and returns 80+ body measurements from two photos. Clubs would add it through one SDK.
 
 How does NovoFit roll out something new to many clubs at once?
 
@@ -368,11 +384,11 @@ Vadim
 --- M2
 Hi Corey,
 
-For a rollout, the point is that clubs switch the scan on in their own app and nobody travels to install it. 3DLOOK has worked with 100+ clients.
+For a rollout, a club's members would take the scan inside the club's own app, and nobody travels to install anything.
 
 Details: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
 
-Open to a short call to go through how it would run?
+Is there a slot this month to go through how it would run?
 
 Vadim
 
@@ -392,9 +408,11 @@ Vadim
 --- M2
 Hi Barry,
 
-A scale reference, in its own sentence: 112,100 scans in 2025 across all 3DLOOK customers.
+For clubs, the scan is a guided capture inside the member app that gives a member 80+ body measurements to look back on, and NovoFit would decide where it sits in what it offers.
 
-I would like to hear how NovoFit weighs a software partner, and a short call is the easiest way. Background: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+112,100 scans in 2025 across all 3DLOOK customers.
+
+I would like to hear how NovoFit weighs a software partner, and a call is the easiest way. Further reading: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
 
 Might that be worth your time?
 
@@ -410,17 +428,17 @@ You describe wanting a better way of doing things in fitness, and One Playground
 
 A guided scan from two photos returns 80+ body measurements, white-label through an API or SDKs, with nothing to ship.
 
-At which point in a member's year would a scan fit best, joining or a goal review?
+Where would you want a scan to appear first for One Playground members, at sign-up or on the app's home screen?
 
 Vadim
 --- M2
 Hi Justin,
 
-If that fits your plans, the scan would sit in the One Playground or One Coach app, or on a page you send. 3DLOOK has worked with 100+ clients.
+A member could meet the scan at sign-up or on the home screen, as a guided two-photo flow in the One Playground or One Coach app or on a page you send. 3DLOOK has worked with 100+ clients.
 
 More: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Open to a short call about where it might go first?
+If a call is useful, I can bring a view of where it might go first.
 
 Vadim
 
@@ -432,7 +450,7 @@ Hi Chris,
 
 Running operations at One Playground means a new member step has to work in every club without extra equipment.
 
-The scan runs on any phone with on-screen guidance and returns 80+ body measurements, under 45 seconds from the photos to structured results.
+The scan runs on any phone with on-screen guidance and returns 80+ body measurements from two photos, front and side.
 
 How do One Playground clubs run member check-ins today?
 
@@ -440,11 +458,11 @@ Vadim
 --- M2
 Hi Chris,
 
-From an operations view, the work is small: a link or an app screen, with nothing stocked or installed in clubs. 112,100 scans in 2025 across all 3DLOOK customers.
+At a member check-in, a scan taken on a phone through a link or an app screen can give the club 80+ body measurements to talk through, with nothing stocked or installed in clubs. 112,100 scans in 2025 across all 3DLOOK customers.
 
 Page: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Would a short call be useful?
+Could we find a time next week for a short call?
 
 Vadim
 
@@ -456,7 +474,7 @@ Hi Laura,
 
 You began by teaching group fitness at Club Med Gym in Paris and now lead group training at One Playground.
 
-An optional scan from two photos returns 80+ body measurements that a member can repeat across a programme and set against an earlier scan they pick, shown only where One Playground chooses.
+An optional scan from two photos returns 80+ body measurements that a member can repeat across a programme and set against an earlier scan they pick.
 
 How do group members see what their training is changing today?
 
@@ -464,7 +482,7 @@ Vadim
 --- M2
 Hi Laura,
 
-The group-training angle is simple: members who take part in a programme choose whether to scan at the start and again at the end. 3DLOOK has worked with 100+ clients.
+In a programme, a member could take the scan at home when she chooses and set it against an earlier scan she picks.
 
 Details: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
@@ -488,23 +506,23 @@ Vadim
 --- M2
 Hi Serra,
 
-A creative view of this would help me most. The member sees a short guided capture, and One Playground decides how the result looks and where it appears.
+A creative view of this would help me most. The member sees a short guided capture and gets 80+ body measurements back, on a screen your team would design.
 
 Examples: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Could we talk for a short call?
+Do you have time for a short call on the screens?
 
 Vadim
 
 @@@ clint-sellen-a445a531
 hook: has worked on One Playground technology since the Fitness Playground days (earlier roles)
-proof: REST API with API-key authentication, SDKs, photos deleted after processing or within 30 days, 80+ body measurements; 2-4 weeks typical basic integration
+proof: REST API with API-key authentication, SDKs, photos deleted after processing or within 30 days per the customer's policy, 80+ body measurements; 2-4 weeks typical basic integration
 --- M1
 Hi Clint,
 
 You have worked on One Playground technology since the Fitness Playground days and know what the app stack can take.
 
-FitXpress is a REST API with API-key authentication and web and mobile SDKs, white-label. The scan uses two photos and returns 80+ body measurements. Photos are deleted after processing or within 30 days.
+FitXpress is a REST API with API-key authentication and web and mobile SDKs, white-label. The scan uses two photos and returns 80+ body measurements.
 
 How does your team bring a third-party SDK into the apps?
 
@@ -512,7 +530,9 @@ Vadim
 --- M2
 Hi Clint,
 
-Data and security answers are in this FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+For the SDK, a member gets a guided two-photo capture in the One Playground or One Coach app, and your team picks where it sits.
+
+On data: photos are deleted immediately after processing or within 30 days, per the customer's policy, while measurements and other outputs stay stored until deleted by scan ID on the customer's request. FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
 
 A basic integration typically takes 2-4 weeks. Worth a short call to go through the SDK with you?
 
@@ -528,13 +548,15 @@ Co-leading STRONG Pilates means choosing what its member app offers.
 
 A white-label scan can sit in the app or on a page a studio sends: two photos in, 80+ body measurements back, with nothing to ship.
 
-At which point in a member's year would a scan fit best, joining or a goal review?
+Which moment in a STRONG Pilates membership would you pick for a first scan?
 
 Vadim
 --- M2
 Hi Michael,
 
-I would like to show the scan on a phone and hear what you think. 3DLOOK has worked with 100+ clients, and the setup for a brand app is one integration.
+A member could meet the scan at the moment you pick and see 80+ body measurements for herself. 3DLOOK has worked with 100+ clients.
+
+The setup for a brand app is one integration.
 
 Page: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
@@ -550,7 +572,7 @@ Hi Kate,
 
 Marketing for franchised studios needs one member message that works in every studio.
 
-An optional scan from two photos returns 80+ body measurements that a member can set against an earlier scan they pick, shown only where the brand chooses.
+An optional scan from two photos returns 80+ body measurements that a member can set against an earlier scan they pick.
 
 How do STRONG Pilates members see what their training is changing today?
 
@@ -558,11 +580,11 @@ Vadim
 --- M2
 Hi Kate,
 
-For the marketing story, the scan is the member's own choice and the brand controls what is shown. 112,100 scans in 2025 across all 3DLOOK customers.
+For the marketing side, a member who picks two of her own scans can see what her training changed. 112,100 scans in 2025 across all 3DLOOK customers.
 
 More: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Might a short call be worth it?
+Would next week suit a short call?
 
 Vadim
 
@@ -574,15 +596,15 @@ Hi Alex,
 
 You ran events at Gymshark and now handle marketing across APAC for STRONG Pilates.
 
-Two phone photos give a member 80+ body measurements to keep as a starting point for an event, and to look back on at the end.
+Two photos taken at home give a member 80+ body measurements to keep for herself.
 
-How do you mark the start and the end of a studio event for members today?
+What do STRONG Pilates members take away from an event today?
 
 Vadim
 --- M2
 Hi Alex,
 
-An event gives a member a clear start and finish, and the scan gives them their own record of both. 3DLOOK has worked with 100+ clients.
+For an event, a member could choose to take the scan at home, and the 80+ body measurements are hers to keep.
 
 Example page: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
@@ -606,7 +628,9 @@ Vadim
 --- M2
 Hi Sonia,
 
-I can show you the scan on a phone in a short call, if you have a few minutes. Or point me to whoever owns the member app at STRONG Pilates head office and I will take it to them.
+A new member could take the scan on her own phone and bring 80+ body measurements as a starting point for her first conversation with a trainer, shared only if she chooses.
+
+If a short call is easy to arrange, I can show you how it looks on a phone. And if the member app is the better place to start, point me to whoever owns it at STRONG Pilates head office and I will go to them.
 
 Vadim
 
@@ -626,7 +650,9 @@ Vadim
 --- M2
 Hi Dinda,
 
-I would be glad to share how the scan works in a short call. If a different team owns the member app at STRONG Pilates, a pointer to the right person at the Australian head office would also help.
+In an introduction to classes, a new member could mention a scan she took at home as her own starting point, and she decides what the studio sees.
+
+Would you be open to a short call to see the scan on a phone? If digital sits elsewhere, a pointer to whoever looks after it at the Australian head office would help just as much.
 
 Vadim
 
@@ -636,7 +662,7 @@ proof: two photos, 80+ body measurements (proof-points)
 --- M1
 Hi Kylie,
 
-As Studio Experience Manager, you shape a new member's first weeks at a STRONG Pilates studio.
+A Studio Experience Manager shapes a new member's first weeks at a STRONG Pilates studio.
 
 Two photos on a phone return 80+ body measurements, which a newcomer can keep as a starting point.
 
@@ -646,7 +672,9 @@ Vadim
 --- M2
 Hi Kylie,
 
-I would like to show you the scan in a short call and hear how a studio uses a first week. Or, if easier, name whoever looks after the member experience for the brand in Australia.
+Before a first class, a newcomer could take the scan at home and arrive with 80+ body measurements as her own starting point, shared only if she chooses.
+
+I would be glad to show it on a phone in a short call. If someone in Australia looks after the new-member experience for the brand, name them and I will write there.
 
 Vadim
 
@@ -658,7 +686,7 @@ Hi Alison,
 
 Your process improvement background suits Your Reformer, which makes reformers for homes and studios and has the At Home app.
 
-The scan runs on any phone with on-screen guidance and returns 80+ body measurements, under 45 seconds from the photos to structured results. Nothing ships to studios or homes.
+The scan runs on any phone with on-screen guidance and returns 80+ body measurements and body composition estimates. Nothing ships to studios or homes.
 
 How do Your Reformer members check in on their goals today?
 
@@ -666,11 +694,11 @@ Vadim
 --- M2
 Hi Alison,
 
-From an operations view, the scan is a link or an app screen, and the team runs nothing new. 112,100 scans in 2025 across all 3DLOOK customers.
+At a goal check-in, a member could bring a scan she took at home, through a link or an app screen, and the team would run nothing new. 112,100 scans in 2025 across all 3DLOOK customers.
 
 Page: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Would a short call be useful?
+A yes or no is fine, and I will send times if it is a yes.
 
 Vadim
 
@@ -680,7 +708,7 @@ proof: YR1 company fact; two photos, 80+ body measurements, body composition est
 --- M1
 Hi Suyesh,
 
-As Product Owner you own the roadmap for the Your Reformer At Home app.
+The Your Reformer At Home app has a roadmap that you own as Product Owner.
 
 A white-label SDK can add a guided two-photo scan that returns 80+ body measurements and body composition estimates.
 
@@ -690,7 +718,7 @@ Vadim
 --- M2
 Hi Suyesh,
 
-For the backlog, the scope is one SDK and a screen, with Your Reformer choosing what the member sees. 3DLOOK has worked with 100+ clients.
+A member who joins, or returns after a stretch away, gets 80+ body measurements from a guided two-photo scan. For the backlog, the scope is one SDK and a screen. 3DLOOK has worked with 100+ clients.
 
 Details: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
@@ -714,7 +742,7 @@ Vadim
 --- M2
 Hi Ben,
 
-Someone who starts at home can choose to scan on day one and again later, and Your Reformer decides what they see. A short call would show how.
+Someone who starts at home can choose to scan on day one and again later, keeping 80+ body measurements as their own record. A short call would show how.
 
 See: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
@@ -724,13 +752,13 @@ Vadim
 
 @@@ seanmolam
 hook: CTO and co-owner of equ, decides how third-party capabilities enter a client build (headline, bio)
-proof: EQ1 company fact; REST API with API-key authentication, SDKs, photos deleted after processing or within 30 days, 80+ body measurements; 2-4 weeks typical basic integration
+proof: EQ1 company fact; REST API with API-key authentication, SDKs, 80+ body measurements, two photos (card F3, proof-points)
 --- M1
 Hi Sean,
 
 At equ, a Perth digital consultancy, the CTO decides how a third-party capability enters a client build.
 
-FitXpress is a REST API with API-key authentication and web and mobile SDKs, white-label. The scan uses two photos and returns 80+ body measurements. Photos are deleted after processing or within 30 days.
+FitXpress is a REST API with API-key authentication and web and mobile SDKs, white-label. The scan uses two photos and returns 80+ body measurements.
 
 How do you evaluate a third-party SDK for a client app?
 
@@ -738,9 +766,11 @@ Vadim
 --- M2
 Hi Sean,
 
-Technical detail is in this FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+When a client brief touches health or fitness, the scan gives that client's users a guided two-photo capture and 80+ body measurements, built into the app or site through the SDKs or the API.
 
-A basic integration typically takes 2-4 weeks. Would a short call be useful to walk through the API?
+Background: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+
+Is there a time next week for a short call on how equ would bring it in?
 
 Vadim
 
@@ -760,9 +790,9 @@ Vadim
 --- M2
 Hi Warren,
 
-A partner like this earns its place when a brief calls for it, and equ would offer it only then. 3DLOOK has worked with 100+ clients.
+If such a brief comes up, a client's users could take a guided scan in the client's app or site and see 80+ body measurements, and equ would choose when to put it forward. 3DLOOK has worked with 100+ clients.
 
-Background: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+For context: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
 
 Might a short call be worth it?
 
@@ -784,6 +814,8 @@ Vadim
 --- M2
 Hi Michael,
 
-I would value your design view in a short call. Would that be useful? If it is better placed with whoever leads new capabilities or partnerships at equ, point me to them.
+A progress screen could show 80+ body measurements from a scan the member chose to keep, and the studio's design decides how it looks.
+
+I would value your design view in a short call. If it sits better with whoever leads new capabilities or partnerships at equ, send me their way. A short reply either way helps.
 
 Vadim

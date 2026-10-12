@@ -17,19 +17,19 @@ Quick reaction to the For the Feeling positioning at Snap Fitness, which treats 
 
 A guided two-photo scan could give each member 80+ body measurements and body composition estimates, white-label through an SDK, with nothing to ship to clubs.
 
-At which point in a member's year would a scan fit best for Snap Fitness members, such as joining or a stretch away from the club?
+What does a Snap Fitness member get to look back on after a few months of their own kind of training?
 
 Vadim
 
-**Char count:** 422 / 600
+**Char count:** 393 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Chris,
 
-Every kind of fitness shows up differently in the body data, and the member decides what to look back at. 3DLOOK has worked with 100+ clients. Here is how it works: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+Whatever kind of training a member does, they can take the scan on their phone and choose an earlier scan to look back on. 3DLOOK has worked with 100+ clients. More detail: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
 Open to a quick chat?
 
 Vadim
 
-**Char count:** 268 / 550
+**Char count:** 276 / 550

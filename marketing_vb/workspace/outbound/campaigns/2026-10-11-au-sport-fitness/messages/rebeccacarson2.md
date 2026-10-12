@@ -26,10 +26,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Rebecca,
 
-Happy to walk through how it would run across studios on a short call. For scale, 3DLOOK ran 112,100 scans in 2025 across all 3DLOOK customers.
+Clients who train outdoors or online can take the scan wherever they are, on any phone. The trainer then has measurements in hand when goals are set.
 
-A call could settle whether it deserves a place in Vision's plans. Might be worth a quick chat? This page covers the app side: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+There were 112,100 scans in 2025 across all 3DLOOK customers.
+
+A call could show how that looks across Vision's studios. Could we find a time this week? The app side is covered here: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
 Vadim
 
-**Char count:** 354 / 550
+**Char count:** 416 / 550

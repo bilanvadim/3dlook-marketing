@@ -15,19 +15,19 @@ Hi Lee,
 
 Your bio says fitness has been your passion since 1981, a long view of what members need from a club like Fernwood Ballarat.
 
-The scan we use takes two phone photos and returns 80+ body measurements. When a member has been away for a stretch, how does your team pick up her goals again?
+With on-screen guidance on any phone, a member can capture two photos and receive 80+ body measurements. When a member has been away for a stretch, how does your team pick up her goals again?
 
 Vadim
 
-**Char count:** 302 / 600
+**Char count:** 333 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Lee,
 
-For a member returning after months, a scan at home gives her trainer a reference before the first session back. It returns 80+ body measurements, under 45 seconds from the photos to structured results.
+After months away, a member could take a scan at home and share it with her trainer before the first session back.
 
-Could we speak briefly? If another person at head office owns this, I would value a pointer.
+I can work around your week for a call. Whoever at head office looks after how clubs welcome returning members would be the right pointer.
 
 Vadim
 
-**Char count:** 312 / 550
+**Char count:** 270 / 550

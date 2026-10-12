@@ -26,12 +26,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Mark,
 
-If it helps, a call could show how a member uses a scan before or after an event.
+Members choose when to scan, at home and with guidance on screen, and read their own body measurements afterwards.
 
-If a person at REVL head office runs member experience, I would welcome the introduction.
+If someone at head office runs Race The Globe and member events, I would take a pointer to them.
 
-Worth a short call?
+A call on any day that suits your week works for me.
 
 Vadim
 
-**Char count:** 210 / 550
+**Char count:** 283 / 550

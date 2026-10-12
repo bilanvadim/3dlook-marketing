@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Paul,
 
-Here is where this could fit: a member scans at home before or after a month of sessions and compares the two with the coach.
+When a member asks what a month of mixed sessions has done, two scans from their own phone could give the coach and member something to look at together, with the pair picked by the member.
 
-Is a short call something you would make time for? Otherwise, a name at Fitstop who handles the member app would help.
+Is there a time this week or next for a call? If whoever leads coaching at Fitstop is the better person for this, I will ask them instead.
 
 Vadim
 
-**Char count:** 262 / 550
+**Char count:** 346 / 550

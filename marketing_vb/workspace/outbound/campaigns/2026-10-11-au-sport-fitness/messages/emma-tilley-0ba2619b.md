@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Emma,
 
-Your bio says you love coaching others to be the best they can be, which is what FIIT30's small-group format asks of a coach.
+Loving to coach others to be the best they can be, as your bio puts it, is what FIIT30's small-group format asks of a coach.
 
-FitXpress is a scan from two phone photos that returns 80+ body measurements. In your small groups, how do members find out their strength is building, class to class?
+A scan from two phone photos gives each member 80+ body measurements to look at herself. In your small groups, how do members find out their strength is building, class to class?
 
 Vadim
 
-**Char count:** 311 / 600
+**Char count:** 321 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Emma,
 
-A coach often wants a clear reference point, and a home scan can supply one the member chooses to share. 3DLOOK has worked with 100+ clients.
+A home scan the member chooses to share gives her coach a reference point between classes.
 
-Open to a short call? Or tell me who leads member experience nationally and I will go there.
+Would you like to talk it over on a call? If you tell me who leads FIIT30 coaching nationally, I will go there.
 
 Vadim
 
-**Char count:** 252 / 550
+**Char count:** 220 / 550

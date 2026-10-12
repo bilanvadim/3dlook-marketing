@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Jasmine,
 
-Noticed you run Fitstop at both Everton Park and Rochedale. Two studios usually mean two sets of habits.
+Noticed you run Fitstop at both Everton Park and Rochedale. That gives you two groups of members to look after.
 
-FitXpress is a two-photo phone scan that returns 80+ body measurements. Do member check-ins run the same way at the two studios?
+FitXpress guides a member on screen through a front and side photo and returns 80+ body measurements. Do member check-ins run the same way at the two studios?
 
 Vadim
 
-**Char count:** 254 / 600
+**Char count:** 291 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Jasmine,
 
-For scale, 112,100 scans were taken in 2025 across all 3DLOOK customers.
+At a check-in, a member at either studio could bring a scan from their own phone, taken the same guided way. There were 112,100 scans in 2025 across all 3DLOOK customers.
 
-Might a short call help? If there is a person at Fitstop who owns member experience, I would welcome the introduction.
+If you would like to talk it through, I can call at a time that suits you. The person who runs Fitstop's studio operations may be a better contact, and I would go to them.
 
 Vadim
 
-**Char count:** 212 / 550
+**Char count:** 363 / 550

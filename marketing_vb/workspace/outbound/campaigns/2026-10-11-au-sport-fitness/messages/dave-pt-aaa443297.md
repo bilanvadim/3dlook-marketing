@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Dave,
 
-Take it as a quick idea. 3DLOOK has worked with 100+ clients, and a trainer sends one link.
+Outdoors or at a client's home, a scan taken from your link gives you measurements from the client's own phone to look over together.
 
-Could we have a short call? If someone at head office is the better person, a name is all I need.
+Would a call be a good way to look at it? If trainer support at head office is the better place to start, a name is all I need.
 
 Vadim
 
-**Char count:** 207 / 550
+**Char count:** 279 / 550

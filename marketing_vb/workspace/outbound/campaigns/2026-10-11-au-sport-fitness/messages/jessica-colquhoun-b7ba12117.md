@@ -26,12 +26,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Jessica,
 
-If the stretch-away idea holds up, the scan would appear only for members who choose it, with each brand deciding what is shown and to whom.
+A member back from a stretch away could take the scan on a phone and see her 80+ body measurements for herself.
 
 Detail here: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Open to a short call to talk it through for your apps?
+I would like to talk it through for your apps on a call. Say yes and I will send a few times.
 
 Vadim
 
-**Char count:** 293 / 550
+**Char count:** 303 / 550

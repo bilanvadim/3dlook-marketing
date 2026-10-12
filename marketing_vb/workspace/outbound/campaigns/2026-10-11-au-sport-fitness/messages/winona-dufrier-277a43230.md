@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Winona,
 
-Quick reaction from someone reading about Anytime Fitness Australia as a 24/7 club network: your marketing and psychology background suits the member side of it.
+Reading about Anytime Fitness Australia as a 24/7 club network, I thought your marketing and psychology background would give you a good ear for what members say.
 
-Members review 80+ body measurements from a two-photo scan at their own pace. Which moments in a member's year does the club team talk about most?
+A member could go through 80+ body measurements from a two-photo scan at their own pace. Which times of the year do you hear members talking most about their goals?
 
 Vadim
 
-**Char count:** 328 / 600
+**Char count:** 347 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Winona,
 
-For a sense of scale, 112,100 scans were run in 2025 across all 3DLOOK customers. Members choose whether to scan again.
+A member could take the scan at a moment of their own choosing and go through 80+ body measurements at their own pace, choosing whether to scan again.
 
-I would be glad to hear which moments matter on your side in a short call. If another person at head office runs member experience, I can reach out there instead.
+Your read on which moments matter would be the useful part of a short call. A name at head office, if member experience lives there, would also help me.
 
 Vadim
 
-**Char count:** 302 / 550
+**Char count:** 323 / 550

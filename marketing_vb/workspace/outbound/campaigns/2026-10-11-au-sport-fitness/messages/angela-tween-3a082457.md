@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Angela,
 
-112,100 scans in 2025 across all 3DLOOK customers is the volume behind the scan.
+A Goulburn member who trains at any hour can take the scan at home and look back on it against an earlier one they pick.
 
-A call would cover how a scan could work for Goulburn members. Open to a short one? If it sits with head office, a name is all I need.
+If a call about what a member would see sounds useful, I would be glad to set one up. Whoever owns the member app at Plus Fitness head office may be the better contact.
 
 Vadim
 
-**Char count:** 235 / 550
+**Char count:** 309 / 550

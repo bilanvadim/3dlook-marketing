@@ -1,22 +1,24 @@
 @@@ andrewsvision
 hook: coaching at Australian Institute of Fitness and Fitness Australia board seat, now founder-CEO of the Vision Personal Training network
-proof: two photos, 80+ body measurements, speed wording (proof-points.md); 100+ clients (aggregate)
+proof: two photos front and side, 80+ body measurements (proof-points.md); 100+ clients (aggregate)
 --- M1
 Hi Andrew,
 
 Coaching at the Australian Institute of Fitness and sitting on the Fitness Australia board gives you a wide view of how clients move through a studio.
 
-3DLOOK built a guided scan that works from two phone photos. It returns 80+ body measurements, under 45 seconds from the photos to structured results.
+3DLOOK built a guided scan that works from two phone photos, front and side. It returns 80+ body measurements that a client and trainer can both look at.
 
-At which point in a Vision client's year would a scan like that fit best, a first session or a goal review?
+Would a first session or a goal review be the natural moment for a Vision client's first scan?
 
 Vadim
 --- M2
 Hi Andrew,
 
-A short call would show how the scan can sit inside MyVision or a page Vision sends, through an API or SDKs, with nothing to ship to studios. 3DLOOK has worked with 100+ clients.
+Taken before a first session, the scan gives a Vision trainer a starting point to open with. At a goal review it can sit next to an earlier scan the client picks.
 
-Worth a quick chat? Background on how fitness apps use it: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+It can run inside MyVision or on a page Vision sends, through an API or SDKs, with nothing to ship to studios.
+
+Would you be open to a call this month? Background: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
 Vadim
 
@@ -36,9 +38,11 @@ Vadim
 --- M2
 Hi Rebecca,
 
-Happy to walk through how it would run across studios on a short call. For scale, 3DLOOK ran 112,100 scans in 2025 across all 3DLOOK customers.
+Clients who train outdoors or online can take the scan wherever they are, on any phone. The trainer then has measurements in hand when goals are set.
 
-A call could settle whether it deserves a place in Vision's plans. Might be worth a quick chat? This page covers the app side: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+There were 112,100 scans in 2025 across all 3DLOOK customers.
+
+A call could show how that looks across Vision's studios. Could we find a time this week? The app side is covered here: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
 Vadim
 
@@ -50,7 +54,7 @@ Hi James,
 
 After marketing roles at Physio Inq and Partnered Health, you know how much a client's own story carries a brand.
 
-Vision builds each program on four pillars. A scan a client chooses to repeat from two phone photos returns 80+ body measurements, shown only where Vision decides.
+Vision builds each program on four pillars. A scan a client chooses to repeat from two phone photos returns 80+ body measurements.
 
 How do Vision clients see what their training is changing today?
 
@@ -58,9 +62,9 @@ Vadim
 --- M2
 Hi James,
 
-Marketing teams usually get asked what a client can show for their months with a studio. A call could cover what the scan adds to that story for Vision, in a page or the MyVision app.
+A client who repeats the scan can set it against an earlier one they pick, which can give them a concrete look at what months of training have changed. It can run on a page Vision sends or inside MyVision.
 
-3DLOOK has worked with 100+ clients. Open to a short call? https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+I would be glad to talk through what that gives Vision's clients, if a call sounds useful. https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
 Vadim
 
@@ -70,9 +74,9 @@ proof: two photos front and side, nothing to install; 80+ body measurements (pro
 --- M1
 Hi Victor,
 
-Operations at Vision means keeping studios consistent, so a capability that needs nothing in the studio is worth a look.
+Operations at Vision means keeping studios consistent, which makes a capability that needs nothing in the studio easy to look at.
 
-The scan runs on the client's own phone from two photos, front and side, and returns 80+ body measurements. Nothing to ship, stock or install.
+Front and side photos on the client's own phone are all it takes, and 80+ body measurements come back. Nothing to ship, stock or install.
 
 How are the first weeks of a new client organised across Vision studios today?
 
@@ -80,21 +84,21 @@ Vadim
 --- M2
 Hi Victor,
 
-I would like to show you how the scan fits next to a studio's existing routines, in about 15 minutes on a call.
+In a new client's first weeks, the scan hands every studio the same starting point, taken on the client's phone and read by the trainer at the next review.
 
-If the timing is wrong, no problem. Would a short call suit? Details here: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+A call could cover how that works with the routines studios already run. Could Thursday or Friday work? Details: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
 Vadim
 
 @@@ rachel-macedo-0b501679
 hook: bio about empowering individuals, clients and staff, as a Vision Personal Training franchise owner
-proof: two photos, 80+ body measurements (proof-points.md); 100+ clients (aggregate)
+proof: two photos, 80+ body measurements (proof-points.md)
 --- M1
 Hi Rachel,
 
 Your bio talks about empowering clients and staff, and a client's first weeks are where that starts.
 
-Vision clients could take a guided scan at home: two phone photos return 80+ body measurements, and the client and trainer can compare it with a later one.
+Vision clients could take a guided scan at home, with front and side photos on their own phone, and the client and trainer can compare the 80+ body measurements it returns with a later scan.
 
 What does your trainer set with a new client in those first weeks?
 
@@ -102,9 +106,9 @@ Vadim
 --- M2
 Hi Rachel,
 
-3DLOOK has worked with 100+ clients, and a short call would be an easy way to see if the scan has a place in your studio.
+A new client who takes the guided scan at home brings 80+ body measurements to the first sessions, and the trainer and client can look at them together.
 
-Would a short call suit? Or point me to whoever looks after client experience across Vision and I will take it there.
+I would enjoy showing you what a new client sees and how they set a first goal from it. If new-client onboarding is run centrally, a pointer to whoever leads it is welcome.
 
 Vadim
 
@@ -114,19 +118,19 @@ proof: under 45 seconds from the photos to structured results; 80+ body measurem
 --- M1
 Hi Daniel,
 
-Running Mortdale, Balmain, Randwick, Concord and Caringbah means five rooms where a client review should feel the same.
+Running Mortdale, Balmain, Randwick, Concord and Caringbah puts five studios under your direction.
 
-One shared piece could be a scan from two phone photos. It returns 80+ body measurements, under 45 seconds from the photos to structured results.
+One shared piece could be a scan from two phone photos, with 80+ body measurements for the trainer. A client takes it at home on any phone, following on-screen guidance.
 
-Do goal reviews run the same way at all five studios?
+How does a goal review begin at your studios?
 
 Vadim
 --- M2
 Hi Daniel,
 
-A call would let me show you what a client sees after the scan, and what a trainer sees. Fifteen minutes should do it.
+Whichever studio a client trains at, the scan gives them the same starting measurements to bring to a review, with the trainer seeing what the client sees.
 
-Might be worth a quick chat? If someone at Vision's head office owns that decision, a pointer to them works just as well.
+If you would like to see what a client and a trainer each see, I can set up a call. Should this belong to whoever looks after how studios run across the network, a pointer to them helps.
 
 Vadim
 
@@ -146,37 +150,37 @@ Vadim
 --- M2
 Hi Sarah,
 
-Volume check: 3DLOOK ran 112,100 scans in 2025 across all 3DLOOK customers.
+Before a goal-setting session, a client can take the scan on any phone and arrive with 80+ body measurements to talk through. The trainer sees the same numbers the client sees.
 
-A short call could show how it would look for a Wahroonga client. Open to one? If it is a head office matter, point me to whoever runs Vision's client tools and I will ask them.
+I am glad to set up a call on what a Wahroonga client would see. If Vision's digital tools sit with a head-office team, tell me which one.
 
 Vadim
 
 @@@ paul-brown-a4058616a
-hook: Director at Vision Personal Training Marrickville, thin profile so title-based
+hook: Director at Vision Personal Training Marrickville, thin profile so title-based; Vision coaches in studio, outdoors or online
 proof: two photos front and side, 80+ body measurements (proof-points.md); under 45 seconds from the photos to structured results
 --- M1
 Hi Paul,
 
-Vision Marrickville has clients who go away for a few weeks and come back to a program that kept moving.
+Vision trainers coach in the studio, outdoors or online, and the program around a client runs through all three.
 
-A guided scan from two phone photos, front and side, could give both of you a fresh starting point. It returns 80+ body measurements.
+A guided scan from two phone photos, front and side, returns 80+ body measurements the client can take wherever they train.
 
-How does your studio pick up with a client after a stretch away?
+How does the Marrickville team see a client's progress when they rarely meet in the studio?
 
 Vadim
 --- M2
 Hi Paul,
 
-The scan runs under 45 seconds from the photos to structured results, so a client can do it at the airport or at home.
+The scan runs under 45 seconds from the photos to structured results, at home or at the park, and the trainer can read the numbers at the next session.
 
-Would a quick call make sense? If someone at Vision head office handles this kind of thing, tell me who and I will go to them instead.
+Would a call early next week work? If the MyVision app is the better route, tell me who owns it at head office.
 
 Vadim
 
 @@@ marvin-mangubat-32a1b8141
 hook: Director of Health and Fitness at Vision Personal Training Caulfield
-proof: 80+ body measurements, two photos (proof-points.md); 100+ clients (aggregate)
+proof: 80+ body measurements, two photos (proof-points.md)
 --- M1
 Hi Marvin,
 
@@ -190,9 +194,9 @@ Vadim
 --- M2
 Hi Marvin,
 
-3DLOOK has worked with 100+ clients, and I would like to hear how Caulfield would use a scan like this. A short call is enough.
+A strongHER client who repeats the scan can set it against an earlier one she picks, and talk it through with her trainer.
 
-Open to a 15 minute call? Or tell me who handles client tools at Vision head office and I will write to them.
+A short call could show a strongHER client's view of it. Whoever leads training programs at Vision head office may be the better ear, and a name would do.
 
 Vadim
 
@@ -212,9 +216,9 @@ Vadim
 --- M2
 Hi Jeremy,
 
-3DLOOK ran 112,100 scans in 2025 across all 3DLOOK customers.
+For the exercise pillar, a repeat scan gives a client measurements to set against an earlier one they pick.
 
-If a scan could help the exercise pillar in your studio, a short call would be the quickest way to find out. Open to one? Otherwise, a pointer to the person at Vision who owns client experience is welcome.
+If a call sounds useful, tell me a day that works. Should client experience at Vision head office be the right place for this, a pointer is welcome.
 
 Vadim
 
@@ -226,7 +230,7 @@ Hi Kaillum,
 
 Ten years in fitness means you have seen plenty of training blocks end.
 
-At Vision, a client could take a guided scan at the end of a block. Two phone photos return 80+ body measurements, under 45 seconds from the photos to structured results.
+At Vision, a client could take a guided scan at the end of a block. From two photos on the client's phone, the trainer gets 80+ body measurements to read, wherever the client is.
 
 How does your studio show a client what a block has changed?
 
@@ -234,15 +238,15 @@ Vadim
 --- M2
 Hi Kaillum,
 
-A call could cover how a scan would sit at the end of a block in your studio.
+At the end of a block, a client can take the scan at home and set it against the one from the start of the block, giving the trainer something concrete to talk through.
 
-Would a call this week work? If someone at Vision's head office is the right person for this, I am happy to be pointed their way.
+Is there a day this week for a call? The person who looks after the client journey at head office may be the right ear, if you would rather pass it on.
 
 Vadim
 
 @@@ benny-russell-808a3226b
 hook: progressed from trainer to senior trainer, studio manager and owner of Vision Personal Training Eastlakes since 2019
-proof: two photos, 80+ body measurements (proof-points.md); 100+ clients (aggregate)
+proof: two photos, 80+ body measurements (proof-points.md)
 --- M1
 Hi Benny,
 
@@ -256,15 +260,15 @@ Vadim
 --- M2
 Hi Benny,
 
-3DLOOK has worked with 100+ clients. I would value a short call to hear how Eastlakes handles a restart and whether a scan fits.
+A client returning from a break can take two photos at home and bring a fresh set of measurements to the first session back.
 
-Would a call this week work? If the right person is at Vision head office, send me their way and I will keep it brief.
+Happy to talk through what the returning client sees, whenever you have a window. And if onboarding for new and returning clients is run from Vision head office, point me to whoever leads it.
 
 Vadim
 
 @@@ haydn-kiel-53b835319
 hook: earlier Director at Vision Personal Training studios, copy stays on Vision role only
-proof: two photos, 80+ body measurements (proof-points.md); 112,100 scans in 2025 across all 3DLOOK customers
+proof: two photos, 80+ body measurements (proof-points.md)
 --- M1
 Hi Haydn,
 
@@ -278,9 +282,9 @@ Vadim
 --- M2
 Hi Haydn,
 
-112,100 scans in 2025 across all 3DLOOK customers is the volume behind this.
+When a client changes trainer, a scan taken around the handover gives the new trainer a set of 80+ body measurements to start from, captured on any phone.
 
-A short call would let me share how handovers could work with a scan. Open to one? If you know who at Vision owns client tools today, a name is enough.
+A call could cover what the client and the new trainer would each see. If you know who owns the Vision member app at head office, a name is enough.
 
 Vadim
 
@@ -290,9 +294,9 @@ proof: any phone with on-screen guidance, two photos, 80+ body measurements (pro
 --- M1
 Hi Jack,
 
-Southport and Bundall are two Gold Coast studios with trainers who coach in different ways.
+Southport and Bundall are two Gold Coast studios, each with its own team of trainers.
 
-A client can take a guided scan on any phone with on-screen guidance: two photos, 80+ body measurements to put in front of the trainer.
+A client can take a guided scan on any phone, following on-screen guidance, and the trainer gets 80+ body measurements to look at.
 
 How do your trainers show a client what has changed since session one?
 
@@ -300,9 +304,9 @@ Vadim
 --- M2
 Hi Jack,
 
-I would like to show how a scan would look in a Southport or Bundall session. A call of 15 minutes covers it.
+On any phone with on-screen guidance, a client can take the scan and set it against an earlier one they pick, giving the trainer a clear view of what has changed since session one.
 
-Does a short call sound useful? Or send me to whoever at Vision head office runs client experience.
+I can run a call on what a Southport or Bundall client would see, at a time that suits you. If Vision's head-office digital lead is the better contact, send their name.
 
 Vadim
 
@@ -312,7 +316,7 @@ proof: two photos, 80+ body measurements (proof-points.md); 100+ clients (aggreg
 --- M1
 Hi Kyle,
 
-You joined Vision as a personal trainer and now direct Ivanhoe, so you have run reviews from both chairs.
+You joined Vision as a personal trainer and now direct Ivanhoe, which means you have run reviews from both chairs.
 
 Two phone photos return 80+ body measurements a trainer can bring to a review.
 
@@ -322,9 +326,9 @@ Vadim
 --- M2
 Hi Kyle,
 
-3DLOOK has worked with 100+ clients. A short call could show what a trainer would bring to an Ivanhoe review.
+Before a review, a client can take the scan and give the trainer 80+ body measurements to bring into the room, set against an earlier scan the client picks. 3DLOOK has worked with 100+ clients.
 
-Open to a quick chat? If someone at Vision head office should hear it first, point me to them.
+If it helps, I can show the client's side on a call. Whoever sets coaching standards at Vision head office may want to hear it first; tell me who.
 
 Vadim
 
@@ -334,7 +338,7 @@ proof: two photos front and side, 80+ body measurements, nothing to install (pro
 --- M1
 Hi Thomas,
 
-As General Manager at Vision in Melbourne, you shape how a client's weeks look from the first session on.
+Running Vision in Melbourne means shaping how a client's weeks look from the first session on.
 
 The scan runs on the client's phone from two photos, front and side, and returns 80+ body measurements. Nothing to install in the studio.
 
@@ -344,9 +348,9 @@ Vadim
 --- M2
 Hi Thomas,
 
-If a short call helps, I can show how a Melbourne client would take the scan and what you would see.
+Ahead of a check-in, a client can take the scan on their phone and bring measurements to talk through, in the studio or away from it.
 
-Is a short call worth setting up? Or tell me who at Vision head office owns the client experience and I will go there.
+Could we set a time for a short call? Whoever oversees studio operations at Vision head office could take it from there, if that is the better route.
 
 Vadim
 
@@ -360,15 +364,17 @@ Viva Leisure runs Club Lime and Plus Fitness, and both have their own member app
 
 A guided scan from two phone photos returns 80+ body measurements and body composition estimates, added once through an API or SDKs. Nothing to ship to clubs.
 
-At which point in a member's year would a scan fit best, joining or a goal review?
+Which moment would you pick for a member's first scan, joining day or a later goal review?
 
 Vadim
 --- M2
 Hi Harry,
 
-3DLOOK has worked with 100+ clients, and a call would show how the capture could sit in Viva's member apps or on a page a club sends.
+A member could take the scan on their own phone when they join, and again at a goal review, set against an earlier scan they pick.
 
-Might be worth a quick chat? Here is the page on how fitness apps use it: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+A call could cover how the capture would sit in Viva's member apps or on a page a club sends.
+
+Would early next week work? Background: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
 Vadim
 
@@ -380,7 +386,7 @@ Hi Sean,
 
 After Group Operations at The Club Group, you now run operations at Viva Leisure, where clubs stay open around the clock.
 
-The scan runs on any phone with on-screen guidance. It returns 80+ body measurements, under 45 seconds from the photos to structured results. Nothing to ship or install in clubs.
+The scan runs on any phone with on-screen guidance and returns 80+ body measurements. It takes under 45 seconds from the photos to structured results, with nothing to ship or install in clubs.
 
 How do clubs run member check-ins or goal reviews today?
 
@@ -388,15 +394,17 @@ Vadim
 --- M2
 Hi Sean,
 
-For scale, 3DLOOK ran 112,100 scans in 2025 across all 3DLOOK customers.
+At a member check-in or goal review, a member who has taken the scan on their own phone brings measurements to the conversation, and the club team has nothing to set up.
 
-A short call could show what a club team would and would not have to do. Open to a quick chat? Overview: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+There were 112,100 scans in 2025 across all 3DLOOK customers.
+
+Open to a call? Overview: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
 Vadim
 
 @@@ matt-eikenhout-154a3ba3
 hook: in the fitness industry since 2005, from the gym floor to PT manager at Club Lime; current-role check pending
-proof: two photos, 80+ body measurements (proof-points.md); 100+ clients (aggregate)
+proof: two photos, 80+ body measurements (proof-points.md)
 --- M1
 Hi Matt,
 
@@ -410,31 +418,33 @@ Vadim
 --- M2
 Hi Matt,
 
-Fitness teams often want one thing a member can look back on between sessions. 3DLOOK has worked with 100+ clients, and a call could show how that works.
+Repeating the scan at home lets a member set it against an earlier one they pick, which can give them their own look at what their training is changing.
 
-Worth 15 minutes? https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+I can show how that works on a call, if you would like. More on the app side: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
 Vadim
 
 @@@ angelo-konstantinou-b21aa31aa
 hook: CTO of Viva Leisure who owns the member app stack
-proof: REST API with API-key authentication, SDKs, photo deletion within 30 days (card); typical 2-4 weeks basic integration
+proof: REST API with API-key authentication, SDKs, photo deletion within 30 days per the customer's policy (card); typical 2-4 weeks basic integration
 --- M1
 Hi Angelo,
 
-Viva Leisure designs and runs its own technology ecosystem, so a new capability needs to fit that stack cleanly.
+Viva Leisure designs and runs its own technology ecosystem, which makes the place a new capability plugs in an engineering question.
 
-FitXpress is white-label through a REST API with API-key authentication and web and mobile SDKs. It takes two photos and returns 80+ body measurements. Photos are deleted after processing or within 30 days.
+FitXpress is white-label through a REST API with API-key authentication and web and mobile SDKs. A guided capture takes two photos and returns 80+ body measurements.
 
-Where in the member app flow would a camera capture sit best?
+In Viva's member app flows, where would a camera capture sit most naturally?
 
 Vadim
 --- M2
 Hi Angelo,
 
-A basic integration typically takes 2-4 weeks, and outputs are stored and deletable by scan ID. A technical call could cover how that maps to Viva's stack.
+Wherever the capture sits, a member gets a guided two-photo scan in the app, and the app receives structured body data. A basic integration typically takes 2-4 weeks.
 
-Worth a quick chat? Data and security FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+On data, photos are deleted immediately after processing or within 30 days per the customer's policy, while measurements and other outputs stay stored until deleted by scan ID on the customer's request.
+
+Happy to take your team through the API on a call. FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
 
 Vadim
 
@@ -454,9 +464,9 @@ Vadim
 --- M2
 Hi Shane,
 
-3DLOOK has worked with 100+ clients. A short call would help me understand how projects pick up member features.
+Since the scan runs on a member's phone, a refit team has nothing to deliver on the club floor for it, and members meet it wherever Viva's apps or pages place it.
 
-Could we find 15 minutes? Or point me to whoever owns the member app at Viva and I will talk with them.
+A call could cover how a member feature reaches clubs without touching a fit-out. If club design standards at Viva sit with another team, tell me which one.
 
 Vadim
 
@@ -476,9 +486,9 @@ Vadim
 --- M2
 Hi Angela,
 
-112,100 scans in 2025 across all 3DLOOK customers is the volume behind the scan.
+A Goulburn member who trains at any hour can take the scan at home and look back on it against an earlier one they pick.
 
-A call would cover how a scan could work for Goulburn members. Open to a short one? If it sits with head office, a name is all I need.
+If a call about what a member would see sounds useful, I would be glad to set one up. Whoever owns the member app at Plus Fitness head office may be the better contact.
 
 Vadim
 
@@ -488,19 +498,19 @@ proof: any phone with on-screen guidance, two photos, 80+ body measurements (pro
 --- M1
 Hi Adrian,
 
-Halls Head and Collie are two Plus Fitness clubs with different member mixes.
+Halls Head and Collie are two Plus Fitness clubs on your books, each with its own members.
 
 Any phone with on-screen guidance can run the scan, and it takes two photos for 80+ body measurements.
 
-Do member check-ins run the same way at both clubs?
+How do member check-ins work at Halls Head and at Collie?
 
 Vadim
 --- M2
 Hi Adrian,
 
-It would help to hear how each club handles check-ins on a short call, and show what the scan would add. Fifteen minutes should do.
+Before a check-in, a member can take the scan on their phone and bring the same kind of measurements to either club, choosing which earlier scan to set it against.
 
-Would a short call suit? If someone at head office owns this, I would gladly be pointed to them.
+A call could show what the member and the club team each see. Would a day next week work? And if club operations sit with head office, a name is all I need.
 
 Vadim
 
@@ -512,7 +522,7 @@ Hi Thomas,
 
 When a new member joins Plus Fitness Rockdale, the first visit sets the tone.
 
-Two phone photos could add a starting point. It returns 80+ body measurements, under 45 seconds from the photos to structured results.
+Two phone photos could give that visit a starting point with 80+ body measurements, taken on the member's own phone.
 
 What does your club capture about a new member at the start?
 
@@ -520,9 +530,9 @@ Vadim
 --- M2
 Hi Thomas,
 
-Joining day is where a scan could plug in at Rockdale, and 3DLOOK has worked with 100+ clients.
+On joining day, a member can take the scan on their own phone and walk in with a starting set of measurements, then repeat it whenever they choose.
 
-Open to a quick chat? Or name the person at Plus Fitness head office who handles member tools and I will contact them.
+Say the word if you would like a call about what a new member sees. If new-member onboarding sits with a team at Plus Fitness head office, tell me which.
 
 Vadim
 
@@ -542,9 +552,9 @@ Vadim
 --- M2
 Hi Leigh,
 
-3DLOOK has worked with 100+ clients, and I would like a short call about how your PTs run reviews.
+A client who takes the scan before a review gives the PT a set of measurements to discuss, and can set it against an earlier scan they pick. 3DLOOK has worked with 100+ clients.
 
-Worth a quick chat? If Plus Fitness head office owns this decision, a pointer to the right person is welcome.
+Would a call about what the client and PT would see be useful? The head-office lead for personal training at Plus Fitness could be the better contact, if you know them.
 
 Vadim
 
@@ -564,9 +574,9 @@ Vadim
 --- M2
 Hi Kane,
 
-Scale matters for any platform: 112,100 scans in 2025 across all 3DLOOK customers.
+A Narrabeen member who wants a view of their own training can take the scan at home and set it against an earlier one they pick.
 
-A short call could show what a scan could offer Narrabeen members. Open to a short call? Or send me to whoever at Plus Fitness head office runs member features.
+I am happy to run a call on what that member sees. If digital at Plus Fitness head office is the better door, send me their way.
 
 Vadim
 
@@ -576,9 +586,9 @@ proof: any phone with on-screen guidance, two photos, 80+ body measurements (pro
 --- M1
 Hi Arshad,
 
-Members at a 24/7 club drift in and out, and some come back after weeks away.
+The doors at Plus Fitness Rockdale are open around the clock, and a member picking training up again after a break can walk in any day.
 
-A guided scan runs on any phone with on-screen guidance: two photos, 80+ body measurements.
+Members get a guided capture on their own phone, with front and side photos, and 80+ body measurements come back.
 
 How does your club restart a returning member's plan?
 
@@ -586,21 +596,21 @@ Vadim
 --- M2
 Hi Arshad,
 
-I would value 15 minutes on a call to hear how returning members are handled at Rockdale, and to show the scan.
+A returning member who takes the scan at home brings a fresh set of measurements to the restart, and can set it against an earlier one they pick.
 
-Open to a quick chat? Or point me to the person at Plus Fitness head office who owns this.
+Is there a weekday that works for a call about what that member sees? The person who looks after the Plus Fitness member app is welcome to hear it first, if you can point me to them.
 
 Vadim
 
 @@@ gh-undefined-218583350
 hook: Managing Director title at Plus Fitness, empty profile and no usable name
-proof: two photos, 80+ body measurements (proof-points.md); 100+ clients (aggregate)
+proof: two photos, 80+ body measurements (proof-points.md)
 --- M1
 Hi there,
 
 With local 24/7 gyms across Australia, any new member capability at Plus Fitness has to suit clubs of different kinds.
 
-The scan takes two phone photos and returns 80+ body measurements. A club needs nothing installed.
+It needs two phone photos and gives 80+ body measurements, with nothing installed in a club.
 
 How does Plus Fitness decide on new member-facing technology for its clubs?
 
@@ -608,9 +618,9 @@ Vadim
 --- M2
 Hi there,
 
-A scan can reach Plus Fitness members through one integration. 3DLOOK has worked with 100+ clients.
+For a Plus Fitness member, the scan is a guided capture on their own phone, taken at home or at the club.
 
-Would a quick call be useful? If someone else at Viva owns member features, point me to them.
+I can walk through what a member would see on a short call whenever it helps. If member-facing technology sits with someone else on your team, point me their way.
 
 Vadim
 
@@ -620,9 +630,9 @@ proof: two photos, 80+ body measurements (proof-points.md); under 45 seconds fro
 --- M1
 Hi Travis,
 
-As a Plus Fitness owner, you decide how your club talks to members about their goals.
+At Plus Fitness, owners decide how their club talks to members about their goals.
 
-From two phone photos the scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+A member takes two photos on their own phone, and the scan runs under 45 seconds from the photos to structured results. The member then has 80+ body measurements to bring to a review.
 
 How often do goal reviews happen at your club?
 
@@ -630,9 +640,9 @@ Vadim
 --- M2
 Hi Travis,
 
-A short call could show how the scan would fit into a goal review at your club.
+A goal review can start from a scan the member took on their own phone, and the member decides which earlier scan to compare it with.
 
-Worth a quick chat? Or tell me who at Plus Fitness head office handles member tools and I will go to them.
+Worth a short call on what the member sees? If member experience at Plus Fitness head office is the better place for this, tell me who to ask.
 
 Vadim
 
@@ -644,7 +654,7 @@ Hi there,
 
 The Plus Fitness club at Sydney Olympic Park describes itself as 24/7 fitness and wellbeing built for the precinct.
 
-Two phone photos taken at home return 80+ body measurements.
+Taken at home on any phone, a guided scan gives a member 80+ body measurements.
 
 What do members here ask your team about their own progress?
 
@@ -652,8 +662,8 @@ Vadim
 --- M2
 Hi there,
 
-The scan has run at volume: 112,100 scans in 2025 across all 3DLOOK customers.
+Measurements from a scan taken at home give a member something of their own to bring to that conversation with your team.
 
-A short call would show how a scan could work for Olympic Park members. Open to one? If member features sit elsewhere, a pointer is welcome.
+If a call sounds useful, I am glad to arrange one, or a pointer to whoever looks after member experience at Plus Fitness head office would do as well.
 
 Vadim

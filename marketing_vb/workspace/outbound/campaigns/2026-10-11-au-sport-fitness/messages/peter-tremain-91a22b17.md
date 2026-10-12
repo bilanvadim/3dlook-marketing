@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Peter,
 
-Happy to show on a short call how a client would take the scan on their own phone. The club installs nothing.
+Before a program review, a client could scan at home with a front and a side photo, and body measurements come back. At the review, the client and trainer look at them together, next to an earlier scan the client chooses.
 
-Or if the right conversation is with whoever manages product for the Jetts app, a name from you is plenty. Would that call work?
+Happy to show the client's screen on a call. Another person at Jetts may own personal training programs, and I would welcome an introduction. Say when and I will arrange a call if you are open to one.
 
 Vadim
 
-**Char count:** 257 / 550
+**Char count:** 441 / 550

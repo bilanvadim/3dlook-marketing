@@ -13,23 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Brendon,
 
-You founded Jetts 24 Hour Fitness, so the 24-hour model is close to home. We build a scan for the member's own phone, front and side photos in, body composition estimates and 80+ body measurements out.
+You founded Jetts 24 Hour Fitness, and the Jetts Fitness clubs still run on that 24-hour model. We build a scan for the member's own phone, front and side photos in, body composition estimates and 80+ body measurements out.
 
-Do member check-ins run the same way across the clubs you direct?
+What do you want a member of any club you direct to take away from their first month?
 
 Vadim
 
-**Char count:** 288 / 600
+**Char count:** 330 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Brendon,
 
-Where would a phone scan sit for members at club level? A short call could cover that, and it needs nothing installed in the club.
+Whichever club a member trains at, a scan from home gives them the same starting point to bring to a check-in, with body measurements from two phone photos. Whether to bring it is the member's call.
 
-If it belongs with the person who shapes the Jetts member experience, a pointer to them would help just as much.
-
-Open to a call?
+I can walk you through what a member sees before a check-in. Franchise performance at Jetts head office may own this topic, and you are welcome to hand it across. Would later this week suit for a conversation?
 
 Vadim
 
-**Char count:** 281 / 550
+**Char count:** 429 / 550

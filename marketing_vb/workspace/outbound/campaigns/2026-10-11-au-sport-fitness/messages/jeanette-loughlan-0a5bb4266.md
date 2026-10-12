@@ -13,23 +13,23 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Jeanette,
 
-As Fitness Director at Jetts Fitness, you sit close to what members are working toward. A member can repeat a scan at home, and its 80+ body measurements can sit next to an earlier scan the member picks.
+Fitness Director at Jetts Fitness is a role close to what members are working toward. A member can repeat a scan at home, and its 80+ body measurements can sit next to an earlier scan the member picks.
 
-How do Jetts members see what their training is changing today?
+What do you give a Jetts member who wants to look back over their last few months of training?
 
 Vadim
 
-**Char count:** 289 / 600
+**Char count:** 318 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Jeanette,
 
-Scale is a fair question, so here is one number: 112,100 scans in 2025 across all 3DLOOK customers.
+112,100 scans in 2025 across all 3DLOOK customers.
 
-For Jetts, a member would choose when to scan and what to look back on, and the club decides where it appears. Overview: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+For a Jetts member, a scan could show what a training block has changed: they pick when to repeat it and which earlier scan to set it beside. Overview: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Worth a quick call to talk it through?
+Worth a call to talk it through?
 
 Vadim
 
-**Char count:** 345 / 550
+**Char count:** 321 / 550

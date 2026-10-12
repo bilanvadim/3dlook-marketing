@@ -15,23 +15,23 @@ Hi Adam,
 
 This stood out: your focus on community and partnerships at REVL Training.
 
-A guided scan returns 80+ body measurements from two phone photos, and a member can repeat it later.
+From two phone photos, a guided scan returns 80+ body measurements, and a member can run it again whenever they like.
 
 What do members in your community ask the team about their progress?
 
 Vadim
 
-**Char count:** 263 / 600
+**Char count:** 280 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Adam,
 
-Open to a quick look together? I can show what a member sees. 3DLOOK has worked with 100+ clients.
+Members asking about progress could be answered from their own phone: a guided scan, then the body measurements that come back.
 
-A name at REVL head office who owns the app would also help.
+A name at REVL head office who leads community and partnerships would help.
 
-Would you be up for a look?
+I am happy to show it live whenever you can fit it in.
 
 Vadim
 
-**Char count:** 206 / 550
+**Char count:** 277 / 550

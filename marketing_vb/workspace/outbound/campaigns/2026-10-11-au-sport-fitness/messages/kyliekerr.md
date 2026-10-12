@@ -13,7 +13,7 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Kylie,
 
-As Studio Experience Manager, you shape a new member's first weeks at a STRONG Pilates studio.
+A Studio Experience Manager shapes a new member's first weeks at a STRONG Pilates studio.
 
 Two photos on a phone return 80+ body measurements, which a newcomer can keep as a starting point.
 
@@ -21,13 +21,15 @@ What do you note about a newcomer before their first class?
 
 Vadim
 
-**Char count:** 273 / 600
+**Char count:** 268 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Kylie,
 
-I would like to show you the scan in a short call and hear how a studio uses a first week. Or, if easier, name whoever looks after the member experience for the brand in Australia.
+Before a first class, a newcomer could take the scan at home and arrive with 80+ body measurements as her own starting point, shared only if she chooses.
+
+I would be glad to show it on a phone in a short call. If someone in Australia looks after the new-member experience for the brand, name them and I will write there.
 
 Vadim
 
-**Char count:** 198 / 550
+**Char count:** 338 / 550

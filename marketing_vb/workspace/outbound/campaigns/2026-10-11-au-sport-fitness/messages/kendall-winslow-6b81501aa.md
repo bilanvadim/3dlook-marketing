@@ -15,19 +15,19 @@ Hi Kendall,
 
 Your bio mentions progressive overload programming and a focus on community at Fitstop Burleigh.
 
-FitXpress turns a member's front and side photos into 80+ body measurements. How do members at Burleigh see progressive overload working for them?
+FitXpress turns a member's front and side photos into 80+ body measurements. When a Burleigh member sits down with a coach to set the next goal, what do they look at together?
 
 Vadim
 
-**Char count:** 264 / 600
+**Char count:** 293 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Kendall,
 
-It gives members a view of change in their body between training blocks, only on scans they select.
+When a member sits down to set the next goal, they could bring two scans they chose, and the body measurements would give the goal a starting point.
 
-Can we find time for a short call? Otherwise, tell me who owns the Fitstop app and I will write to them.
+Can we find a time for a call? If programming at Fitstop is led by someone else, I will write to them instead.
 
 Vadim
 
-**Char count:** 225 / 550
+**Char count:** 280 / 550

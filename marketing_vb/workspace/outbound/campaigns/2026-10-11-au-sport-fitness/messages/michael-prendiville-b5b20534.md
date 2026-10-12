@@ -26,8 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Michael,
 
-I would value your design view in a short call. Would that be useful? If it is better placed with whoever leads new capabilities or partnerships at equ, point me to them.
+A progress screen could show 80+ body measurements from a scan the member chose to keep, and the studio's design decides how it looks.
+
+I would value your design view in a short call. If it sits better with whoever leads new capabilities or partnerships at equ, send me their way. A short reply either way helps.
 
 Vadim
 
-**Char count:** 190 / 550
+**Char count:** 332 / 550

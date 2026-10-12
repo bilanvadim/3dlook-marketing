@@ -17,21 +17,21 @@ Quick note for the owner of REVL Training Brighton.
 
 FitXpress gives a member 80+ body measurements from two phone photos.
 
-How often do goal reviews run at your studio, and what does a coach bring to them?
+What does a member take home from a goal review at Brighton?
 
 Vadim
 
-**Char count:** 227 / 600
+**Char count:** 205 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Nicholas,
 
-Easy to demo in a short call. 3DLOOK has worked with 100+ clients.
+A coach could open a review with the member's scan on screen: a set of body measurements next to an earlier set they picked.
 
-Or point me to whoever leads digital at REVL Training head office.
+If REVL head office has a head of coaching, point me their way.
 
-Keen to see it?
+If you want to see it, name a day and I will fit in with you.
 
 Vadim
 
-**Char count:** 172 / 550
+**Char count:** 273 / 550

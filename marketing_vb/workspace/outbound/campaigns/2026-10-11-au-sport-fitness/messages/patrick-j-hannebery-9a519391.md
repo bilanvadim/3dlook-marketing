@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Patrick,
 
-With partnerships in your remit, a call would be a chance to compare notes on where a capture step fits. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results. Background here: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+Members who choose the check at home would get 80+ body measurements from two photos, and SiSU Health keeps the choice of what to display. Background here: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
 
-Might be worth a quick chat?
+Would a conversation about where a capture step could fit be useful?
 
 Vadim
 
-**Char count:** 330 / 550
+**Char count:** 308 / 550

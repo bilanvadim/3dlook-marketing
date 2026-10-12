@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Anthony,
 
-Quick idea for you: a Fernwood member may use both FIIT30 small groups and personal training.
+A Fernwood member may use both FIIT30 small groups and personal training.
 
-We built a two-photo phone scan returning 80+ body measurements. When one member uses both, who at the club sees her whole picture?
+We built a two-photo phone scan returning 80+ body measurements. When one member uses both, how do her FIIT30 coach and her PT stay on the same page about her goals?
 
 Vadim
 
-**Char count:** 246 / 600
+**Char count:** 260 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Anthony,
 
-One home scan can sit beside whichever service a member picks, as a single reference her coach or PT can open. 3DLOOK has worked with 100+ clients.
+Whichever service a member uses, one scan can be the single reference her coach or PT opens if she shares it.
 
-Short call to look at it? If Fernwood's national team has an owner for member services, I would like to speak with them.
+Would a call to go through it make sense? If Fernwood's national team has an owner for member services, I would like to speak with them.
 
 Vadim
 
-**Char count:** 289 / 550
+**Char count:** 267 / 550

@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Cassie,
 
-Coaches hear the progress question first, and a scan the member picks to compare is one answer.
+When a member asks how they are going, a scan they pick to compare gives you something concrete to point to: two phone photos, 80+ body measurements and body composition estimates, set beside an earlier scan.
 
-The scan returns body composition estimates and 80+ body measurements, under 45 seconds from the photos to structured results. A short call could show it, or point me to head office's app owner.
+Head office's coaching lead would be the person for that wider question, and I would welcome a name. Say the word and I will set up a call.
 
 Vadim
 
-**Char count:** 310 / 550
+**Char count:** 368 / 550

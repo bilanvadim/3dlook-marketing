@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Wade,
 
-I would value a short call to show the scan and hear how your members use the app.
+A scan at joining would give a member a first set of 80+ body measurements, while one taken later allows the member to set the new numbers beside an earlier scan of their choosing.
 
-If the right person is at head office, point me to whoever leads member experience there.
+Whoever leads member experience at head office could point me the right way. Reply here if a call sounds useful.
 
 Vadim
 
-**Char count:** 190 / 550
+**Char count:** 311 / 550

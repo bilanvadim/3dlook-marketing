@@ -15,19 +15,19 @@ Hi Kristi,
 
 Noticed you coach as a group personal trainer at Fitstop Slacks Creek, which means personal attention inside a group.
 
-FitXpress gives body composition estimates and 80+ body measurements from just two phone photos. What do you note about a newcomer in their first weeks to give that attention?
+FitXpress gives body composition estimates and 80+ body measurements from a front and a side photo. What do you note about a newcomer in their first weeks to give that attention?
 
 Vadim
 
-**Char count:** 313 / 600
+**Char count:** 316 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Kristi,
 
-Coaching a group means a limited minute per person. A scan the member brings along can fill part of that gap.
+In a group class, a coach's one-to-one moments are short, and a scan the member brings along gives those moments a starting point.
 
-Up for a short call? If a Fitstop colleague looks after the app, please point me there.
+Would you be open to a call? If coaching practice at Fitstop is set elsewhere, a pointer to that person works.
 
 Vadim
 
-**Char count:** 217 / 550
+**Char count:** 261 / 550

@@ -13,9 +13,9 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Tedy,
 
-You run both Fernwood Miranda and Kirrawee, with a background in finance and coaching.
+Two clubs under one name, Miranda and Kirrawee, and a finance and coaching background behind you.
 
-Members take two phone photos at home and the scan returns 80+ body measurements. Do members at the two clubs get their check-ins on the same rhythm?
+A member can take two phone photos at home, and the scan returns 80+ body measurements. How do check-ins run for members at the two clubs?
 
 Vadim
 
@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Tedy,
 
-For two clubs, a shared page gives each member the same scan whichever club she trains at, with nothing for either team to install. For scale: 112,100 scans in 2025 across all 3DLOOK customers.
+At check-in, a member from either club could open the same home scan with her trainer if she shares it.
 
-Is a short call worth a look? Or I can speak with whoever coordinates member experience at head office.
+Shall I send a couple of times for a call? Whoever coordinates club operations at head office is someone I can speak with instead.
 
 Vadim
 
-**Char count:** 315 / 550
+**Char count:** 252 / 550

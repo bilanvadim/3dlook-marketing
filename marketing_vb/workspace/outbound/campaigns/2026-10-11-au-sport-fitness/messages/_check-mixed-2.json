@@ -3,7 +3,7 @@
  "checked": 35,
  "source": "people-validated.csv (send == SEND)",
  "batch": "mixed-2",
- "generated": "2026-10-11T17:48:54",
+ "generated": "2026-10-12T09:26:44",
  "hard": [],
  "soft": [
   [
@@ -75,41 +75,6 @@
    "no company line",
    "mark-jackson-7829b2291 M1",
    "«REVL Training» is not named: check it has a line only this company gets"
-  ],
-  [
-   "near-duplicate sentence",
-   "REVL Training: benseymour10 / adam-coombes-35602a2b7",
-   "«a guided scan returns 80+ body measurements from…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Genesis Health + Fitness: john-pirlo-1b63645 / guy-franklin-3713b580",
-   "«it returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Genesis Health + Fitness: melissa-fraser-68692417 / gym-genesis-88933854",
-   "«a member could take a guided scan on their own ph…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Genesis Health + Fitness: melissa-fraser-68692417 / tom-bayford-b0553010a",
-   "«a member could take a guided scan on their own ph…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Genesis Health + Fitness: gym-genesis-88933854 / tom-bayford-b0553010a",
-   "«members can take a guided scan on their phone, an…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "KX Pilates: james-trenerry-a7915448 / sophie-patient-b538671b8",
-   "«a phone scan from two photos gives 80+ body measu…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "KX Pilates: linda-wisbey-846503117 / divya-hegde-11a22a243",
-   "«or point me to the person at kx pilates head offi…»"
   ]
  ]
 }

@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Nathan,
 
-Partners tend to want a capability a facility can switch on without new work for its team. 3DLOOK has worked with 100+ clients, and this page explains how it is used: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+A facility could offer its members a guided two-photo scan through one SDK, on a page the facility sends. 3DLOOK has worked with 100+ clients. Background on how body data is used: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
 
-Might be worth a quick chat?
+Would a conversation about it be welcome?
 
 Vadim
 
-**Char count:** 278 / 550
+**Char count:** 304 / 550

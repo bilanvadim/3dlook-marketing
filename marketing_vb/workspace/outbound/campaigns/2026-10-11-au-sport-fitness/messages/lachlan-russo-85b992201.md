@@ -15,19 +15,19 @@ Hi Lachlan,
 
 Made me think of Fitstop Newstead: ALL STAR and PRO divisions at Global Games sit next to everyday members on your floor.
 
-Photos from the front and the side give 80+ body measurements in our scan. How do your coaches keep both groups in view?
+Photos from the front and the side give 80+ body measurements in our scan. What does a Newstead coach do for the member who has no event to train for?
 
 Vadim
 
-**Char count:** 263 / 600
+**Char count:** 293 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Lachlan,
 
-Everyday members get a number of their own to look back on, without needing a competition.
+Members outside the competitive divisions could take a scan at home and look back on the ones they choose, with no event involved.
 
-A short call would be easy to arrange. Someone else at Fitstop may lead the member app, and I would take a referral.
+Is there a good moment for a call? Someone else may run the app members book through, and I would take that referral.
 
 Vadim
 
-**Char count:** 228 / 550
+**Char count:** 269 / 550

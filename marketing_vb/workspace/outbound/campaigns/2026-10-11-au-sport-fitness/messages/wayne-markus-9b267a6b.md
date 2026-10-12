@@ -13,25 +13,25 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Wayne,
 
-Quick reaction to your role as a multi-site REVL Training franchisee.
+Noticed you have owned REVL Training studios at Bondi and Port Melbourne.
 
-Members can take a guided scan on their phone, and two photos return 80+ body measurements.
+A guided scan from front and side photos returns 80+ body measurements, taken on a member's own phone.
 
-Do member reviews run the same way across your studios?
+What does a REVL Training member walk away with after a review in your studios?
 
 Vadim
 
-**Char count:** 237 / 600
+**Char count:** 276 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Wayne,
 
-Can I show you what a member sees in a short call? 3DLOOK has worked with 100+ clients.
+At a review in any of your studios, a member could bring two photos taken at home and an earlier set they pick, giving the coach something concrete to talk through.
 
-If the person running the REVL Training app is the better contact, I would value a pointer.
+If the head-office team that looks after franchise performance should hear this, a pointer to them works.
 
-Open to a chat?
+I can talk it through on a call any day next week.
 
 Vadim
 
-**Char count:** 215 / 550
+**Char count:** 341 / 550

@@ -26,12 +26,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Ben,
 
-One idea to test in a call: the scan as an optional step a member picks. 3DLOOK has worked with 100+ clients.
+A member in Perform could scan at home whenever they choose and read the body measurements that come back, a view of their own strength work.
 
-Or point me to whoever owns member experience at REVL head office.
+If the person who shapes REVL's programming at head office is the better contact, I would value a pointer.
 
-Worth a chat?
+Say the word and I can walk through it live whenever your week allows.
 
 Vadim
 
-**Char count:** 208 / 550
+**Char count:** 337 / 550

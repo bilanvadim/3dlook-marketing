@@ -13,7 +13,7 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Thomas,
 
-As General Manager at Vision in Melbourne, you shape how a client's weeks look from the first session on.
+Running Vision in Melbourne means shaping how a client's weeks look from the first session on.
 
 The scan runs on the client's phone from two photos, front and side, and returns 80+ body measurements. Nothing to install in the studio.
 
@@ -21,15 +21,15 @@ How do check-ins run for clients in your Melbourne studio today?
 
 Vadim
 
-**Char count:** 329 / 600
+**Char count:** 318 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Thomas,
 
-If a short call helps, I can show how a Melbourne client would take the scan and what you would see.
+Ahead of a check-in, a client can take the scan on their phone and bring measurements to talk through, in the studio or away from it.
 
-Is a short call worth setting up? Or tell me who at Vision head office owns the client experience and I will go there.
+Could we set a time for a short call? Whoever oversees studio operations at Vision head office could take it from there, if that is the better route.
 
 Vadim
 
-**Char count:** 239 / 550
+**Char count:** 303 / 550

@@ -15,19 +15,19 @@ Hi Ameer,
 
 Your bio talks about helping people become their best version, and at Fitstop that starts with a first session booked in the app.
 
-A scan from two phone photos returns 80+ body measurements and body composition estimates. What does your South Melbourne team learn about a newcomer during that first visit?
+A member's front and side photos return 80+ body measurements and body composition estimates. What does your South Melbourne team learn about a newcomer during that first visit?
 
 Vadim
 
-**Char count:** 323 / 600
+**Char count:** 326 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Ameer,
 
-Think of it as a starting point a member can bring to the first session, taken on their own phone.
+A newcomer could bring a starting point from their own phone to that first session, and the team would have measurements to talk through if the member chooses to share them.
 
-Would you be open to a short call? If another person at Fitstop owns this, a name is all I need.
+If a call would help, I am happy to set one up. Someone else at Fitstop may run how new members are welcomed, and a name from you would do.
 
 Vadim
 
-**Char count:** 214 / 550
+**Char count:** 332 / 550

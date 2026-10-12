@@ -15,23 +15,23 @@ Hi Sophie,
 
 Quick note for a Product Partner at KX Pilates.
 
-A phone scan from two photos gives 80+ body measurements a member can look back on.
+From front and side photos on a phone, a member gets 80+ body measurements to look back on.
 
 When a member moves from Basics towards Signature, what does she see that tells her she is ready?
 
 Vadim
 
-**Char count:** 250 / 600
+**Char count:** 258 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Sophie,
 
-Could we talk it through for a few minutes? I can show what the member sees on screen.
+A member sees her own set of body measurements, a reference she can bring to the conversation with her trainer about moving on.
 
-Or tell me who at KX Pilates head office would want to look at it.
+If you know who at head office shapes the class programming, tell me and I will take it to them.
 
-Does that sound useful?
+Whenever you want to see it, a call is easy to arrange from my side.
 
 Vadim
 
-**Char count:** 198 / 550
+**Char count:** 314 / 550

@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Paul,
 
-Came across your work in sports science, and now progression is a pillar at Fitstop Engadine.
+Your sports science background caught my eye, and Fitstop names progression as one of its pillars.
 
-It takes two phone photos to get 80+ body measurements from our scan. When a member asks if training is working, what do your coaches show them?
+It takes two phone photos to get 80+ body measurements from our scan. What does a Fitstop Engadine coach record about a newcomer's first week that later sessions build on?
 
 Vadim
 
-**Char count:** 256 / 600
+**Char count:** 288 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Paul,
 
-Coaches from a sports science background tend to like data a member can read without a lecture.
+A newcomer could take a scan on their own phone before the first week and bring body measurements for the coach to read with them, if they want to.
 
-Would you spare time for a short call? If the app is led by someone else at Fitstop, tell me who.
+Does a call sound worthwhile? Whoever designs a new member's first week at Fitstop may be the better contact, and a name would be welcome.
 
 Vadim
 
-**Char count:** 211 / 550
+**Char count:** 304 / 550

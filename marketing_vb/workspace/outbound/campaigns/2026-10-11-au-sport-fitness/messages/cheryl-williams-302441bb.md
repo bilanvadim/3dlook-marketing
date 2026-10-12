@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: managing director of Fernwood Newstead, earlier managing director at Annandale, operations and change management
-- Proof point: FW5 personal training; two photos, 80+ body measurements; 100+ clients
+- Proof point: FW5 personal training; two photos, 80+ body measurements
 
 ---
 
@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Cheryl,
 
-Noticed your background leading Fernwood Annandale before Newstead, and in operations and change management.
+Leading Fernwood Annandale before Newstead, and working in operations and change management, gives you a close view of how a club runs.
 
-FitXpress takes two phone photos and returns 80+ body measurements. When a Newstead member's PT program comes up for review, what does the trainer bring to the table?
+A member's phone does the capture: two photos, then 80+ body measurements for her PT to read. When a Newstead member's PT program comes up for review, which of her goals does the trainer start from?
 
 Vadim
 
-**Char count:** 295 / 600
+**Char count:** 354 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Cheryl,
 
-From your change management work, the practical point: there is nothing for a team member to do in the club, as the member takes the scan on her phone. 3DLOOK has worked with 100+ clients.
+At Newstead, a PT review could open with a scan the member took at home that week, if she is happy to share it. Capture is guided on screen from two photos, front and side.
 
-Short call to walk through it? Failing that, a name at the national office for member services would help.
+Would you take a call about it? Failing that, a name at head office who looks after personal training would help.
 
 Vadim
 
-**Char count:** 315 / 550
+**Char count:** 306 / 550

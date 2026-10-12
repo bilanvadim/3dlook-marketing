@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi David,
 
-A page BFT sends could ask a member for the scan after the trial classes, and again when they set a goal. 3DLOOK has worked with 100+ clients, and nothing needs to be installed in studios. Our page on connected fitness: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+A page BFT sends could ask a member for the scan after the trial classes, and again when they set a goal. Nothing needs to be installed in studios. 3DLOOK has worked with 100+ clients. Our page on connected fitness: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Might be worth a quick chat?
+If it is useful, I can walk you through it on a short call.
 
 Vadim
 
-**Char count:** 330 / 550
+**Char count:** 357 / 550

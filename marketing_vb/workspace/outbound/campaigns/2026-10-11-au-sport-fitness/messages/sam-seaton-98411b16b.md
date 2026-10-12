@@ -15,19 +15,19 @@ Hi Sam,
 
 Quick one about Fitstop Morningside: Global Games lands in Brisbane this October, close to you.
 
-Using two photos from a phone, FitXpress returns 80+ body measurements. How do you prepare members who want to compete in pairs?
+The scan runs on any member's phone with on-screen guidance and comes back with 80+ body measurements. How do you prepare members who want to compete in pairs?
 
 Vadim
 
-**Char count:** 241 / 600
+**Char count:** 272 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Sam,
 
-It adds a reference point a member keeps for themselves while they prepare.
+A member getting ready to compete could take a scan on their own phone and keep it as a personal reference while they prepare.
 
-Could I take twenty minutes of your week? If someone at Fitstop leads the app, a pointer would be great.
+Could I send over a few times for a call? A pointer to whoever looks after members' experience of Global Games would be just as good.
 
 Vadim
 
-**Char count:** 197 / 550
+**Char count:** 277 / 550

@@ -13,23 +13,23 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Simon,
 
-Noticed your product work on health screening events at SiSU Health, where self-serve checks come with results in the SiSU Health app.
+Noticed your product work on health screening events at SiSU Health.
 
-A member could also take an optional body check at home: two photos return 80+ body measurements and a 3D model, white-label in the app. SiSU Health decides what is shown and to whom.
+An optional body check taken at home needs two photos on a member's own phone. They return 80+ body measurements and a 3D model, white-label in the app, with SiSU Health choosing where it appears and who sees it.
 
-At which point in a member's year would an optional check like that fit?
+After a SiSU Health check, what does a person take home that they can look at again?
 
 Vadim
 
-**Char count:** 411 / 600
+**Char count:** 386 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Simon,
 
-Product owners usually ask about build effort first. It is an SDK or API call, and 3DLOOK has worked with 100+ clients. This page covers how wellness platforms use body data: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+A person could take the check at home on their own phone and look at it again in the app, with the programme choosing what appears. Integration is through an SDK or API. 3DLOOK has worked with 100+ clients. Background reading: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
 
 Worth a quick chat to explore?
 
 Vadim
 
-**Char count:** 287 / 550
+**Char count:** 339 / 550

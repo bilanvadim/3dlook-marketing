@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: owned and run a BFT studio since 2020, group fitness trainer for 10 years; PODIUM
-- Proof point: BF3 company fact; 80+ body measurements (proof-points.md); 100+ clients
+- Proof point: BF3 company fact; 80+ body measurements (proof-points.md)
 
 ---
 
@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Anthony,
 
-Noticed you have run a BFT studio since 2020 after years as a group fitness trainer. PODIUM, BFT's teams-of-two strength and conditioning competition, opened registration in June 2026. A two-photo scan returns 80+ body measurements.
+Noticed you have run a BFT studio since 2020 after years as a group fitness trainer. PODIUM, BFT's teams-of-two strength and conditioning competition, opened registration in June 2026. The scan runs on any phone and returns 80+ body measurements.
 
-How does your studio prepare members who want to compete in pairs?
+When two members enter PODIUM together, how do you pick up what each of them needs?
 
 Vadim
 
-**Char count:** 320 / 600
+**Char count:** 351 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Anthony,
 
-Group trainers tend to like simple tools. This one is a link and two photos. 3DLOOK has worked with 100+ clients.
+For a pair heading into PODIUM, each partner could take the scan at home on any phone and choose which readings to share with the other and with the coach.
 
-Worth a short call, or a pointer to whoever looks after member experience at BFT?
+I am happy to suggest times for a call. If PODIUM belongs to a team at BFT head office, I would value the introduction.
 
 Vadim
 
-**Char count:** 216 / 550
+**Char count:** 296 / 550

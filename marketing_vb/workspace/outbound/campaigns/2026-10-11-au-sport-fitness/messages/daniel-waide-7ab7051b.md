@@ -3,7 +3,7 @@
 ## Context used
 - Angle: partnerships
 - Hook: COO with a technology implementation background (bio); NovoFit works with operators from floor plans to maintenance (NF2)
-- Proof point: NF2 company fact; 80+ body measurements, speed wording (proof-points)
+- Proof point: NF2 company fact; 80+ body measurements, two photos (proof-points)
 
 ---
 
@@ -13,25 +13,25 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Daniel,
 
-NovoFit works with operators from floor plans through to preventative maintenance, and you have implemented new technology in fitness before.
+You have implemented new technology in fitness before, and NovoFit works with operators from floor plans through to preventative maintenance.
 
-The scan is a white-label capability that returns 80+ body measurements, under 45 seconds from the photos to structured results, and clubs could add it to their own app.
+From two photos on a phone with on-screen guidance, a member gets 80+ body measurements, white-label inside a club's own app.
 
 When a club asks NovoFit about software for its members, where does that conversation go today?
 
 Vadim
 
-**Char count:** 428 / 600
+**Char count:** 384 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Daniel,
 
-Ownership is the open point, so a short call may help more than a document. We could look at which team at NovoFit would hold a capability like this.
+When a club asks for member software, the scan gives its members a guided two-photo capture and 80+ body measurements to look back on. Which team at NovoFit would hold a capability like that is the open point, and a call would cover more than a document.
 
 Reading first if you prefer: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
 
-Worth twenty minutes?
+Would a call next week work?
 
 Vadim
 
-**Char count:** 284 / 550
+**Char count:** 396 / 550

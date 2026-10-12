@@ -17,19 +17,21 @@ Viva Leisure runs Club Lime and Plus Fitness, and both have their own member app
 
 A guided scan from two phone photos returns 80+ body measurements and body composition estimates, added once through an API or SDKs. Nothing to ship to clubs.
 
-At which point in a member's year would a scan fit best, joining or a goal review?
+Which moment would you pick for a member's first scan, joining day or a later goal review?
 
 Vadim
 
-**Char count:** 344 / 600
+**Char count:** 352 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Harry,
 
-3DLOOK has worked with 100+ clients, and a call would show how the capture could sit in Viva's member apps or on a page a club sends.
+A member could take the scan on their own phone when they join, and again at a goal review, set against an earlier scan they pick.
 
-Might be worth a quick chat? Here is the page on how fitness apps use it: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+A call could cover how the capture would sit in Viva's member apps or on a page a club sends.
+
+Would early next week work? Background: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
 Vadim
 
-**Char count:** 289 / 550
+**Char count:** 347 / 550

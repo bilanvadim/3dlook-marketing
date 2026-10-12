@@ -15,19 +15,19 @@ Hi Angela,
 
 Came across your work: nearly 30 years in fitness, from owning clubs in St Kilda and Prahran to national operations. That gives you a view on how an owner-run network weighs a new member service.
 
-We offer a phone scan from two photos that returns 80+ body measurements. When a new member capability is proposed, how does the network decide whether it suits its clubs?
+Members would meet it as a guided scan on their own phone, two photos in and 80+ body measurements back. When a new member capability is proposed, how does the network decide whether it suits its clubs?
 
 Vadim
 
-**Char count:** 387 / 600
+**Char count:** 418 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Angela,
 
-Should the question ever reach a trial, a white-label page or SDK means clubs ship and install nothing. 3DLOOK has worked with 100+ clients.
+If a member service like this ever reached the board, it would reach members as two photos on her phone, then a scan she can set against an earlier one she picks.
 
-Would a short call be worthwhile? If another Fernwood leader owns member-facing technology, a name would be welcome.
+If it is ever useful to talk it through, I am glad to arrange a call. Whoever leads member technology at Fernwood would be the right person, and a name would help.
 
 Vadim
 
-**Char count:** 277 / 550
+**Char count:** 346 / 550

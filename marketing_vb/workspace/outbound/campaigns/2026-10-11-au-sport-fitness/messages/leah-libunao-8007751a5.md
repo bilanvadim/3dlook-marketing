@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: earlier roles: assistant manager and membership consultant at Anytime Fitness before marketing
-- Proof point: AF1; two photos, 80+ measurements (proof-points.md); 100+ clients
+- Proof point: AF1; two photos, 80+ measurements (proof-points.md)
 
 ---
 
@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Leah,
 
-Couldn't help but ask: you began on the club floor at Anytime Fitness Australia and now work in marketing, so you hear what members ask.
+Couldn't help but ask: you began on the club floor at Anytime Fitness Australia and now work in marketing, which means you hear what members ask.
 
-Members can repeat a two-photo scan when they like, and it returns 80+ body measurements. What do members ask the team about their progress, and who do they ask?
+Members can repeat a two-photo scan when they like, and it returns 80+ body measurements. What do members ask the team about their progress?
 
 Vadim
 
-**Char count:** 316 / 600
+**Char count:** 304 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Leah,
 
-Thanks for reading. 3DLOOK has worked with 100+ clients, and the scan is something a member picks up on their own phone.
+A member can take the scan on their own phone from two photos, and arrive with 80+ body measurements and a 3D model to ask the team about.
 
-I would like a short call to hear what you see from the member side. If member experience at head office is the better home for this, a name there would help. Worth a short call?
+A short call on what members tell you about their progress would be a great use of my time. If the member communications lead at head office is the better person, a name would help.
 
 Vadim
 
-**Char count:** 317 / 550
+**Char count:** 338 / 550

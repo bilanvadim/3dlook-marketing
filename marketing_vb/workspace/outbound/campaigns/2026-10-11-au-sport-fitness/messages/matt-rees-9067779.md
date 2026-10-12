@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Matt,
 
-Wanted to reach out as a director of Australian Sports Nutrition. We've built a white-label two-photo body scan that returns 80+ body measurements, taken by the person at home on any phone.
+A question for the directors of Australian Sports Nutrition. We've built a white-label two-photo body scan that returns 80+ body measurements, taken by the person at home on any phone.
 
 When a network of stores decides on a new service for shoppers, how does that decision usually get made at Australian Sports Nutrition?
 
 Vadim
 
-**Char count:** 343 / 600
+**Char count:** 338 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Matt,
 
-This is a partnership question, and I may have the wrong person. 3DLOOK has worked with 100+ clients.
+For a network of stores weighing a new shopper service, the scan is easy to evaluate: it runs on the shopper's phone from a page, nothing is installed in a store, and a shopper picks which scans anyone sees.
 
-Would a short call work, or could you point me to whoever runs customer advice or digital at head office?
+I may have the wrong person. Could you point me to whoever runs customer advice at head office, or is a call with you the better route?
 
 Vadim
 
-**Char count:** 225 / 550
+**Char count:** 361 / 550

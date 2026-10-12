@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Simon,
 
-A scan taken at home could cover the gaps between visits, and the member picks which earlier scan to compare.
+Between visits, a scan taken at home gives a member something to bring along the next time they walk in, whatever the hour. The member chooses which earlier scan to set it against.
 
-Happy to show it on a short call. If the UBX Member App sits with someone at head office, point me their way.
+If the UBX Member App has an owner at head office, I would value an introduction there. Would you like me to walk you through it on a call?
 
 Vadim
 
-**Char count:** 238 / 550
+**Char count:** 339 / 550

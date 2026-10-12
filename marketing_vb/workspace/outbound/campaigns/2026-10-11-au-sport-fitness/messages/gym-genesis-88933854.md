@@ -15,23 +15,23 @@ Hi there,
 
 Quick one for the owner of a Genesis Fitness Clubs gym.
 
-Members can take a guided scan on their phone, and two photos, front and side, return 80+ body measurements.
+A member who scans with FitXpress sends front and side photos from their phone and gets 80+ body measurements back.
 
-What do members ask your team about their progress?
+When a member wants to know how their training is going, what do you show them at your gym?
 
 Vadim
 
-**Char count:** 236 / 600
+**Char count:** 283 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi there,
 
-Wanted to show you how it works in practice. A short call would cover what a member sees and whether it suits your gym. 3DLOOK has worked with 100+ clients.
+A member could get an answer from their own phone: guided front and side photos, then body measurements to open whenever they want.
 
-If the digital or member experience lead at Genesis is the right contact, point me to them.
+If Genesis head office has a member experience lead, point me their way and I will take it from there.
 
-Open to a quick chat?
+If a call sounds worthwhile, reply and I will send two times.
 
 Vadim
 
-**Char count:** 290 / 550
+**Char count:** 316 / 550

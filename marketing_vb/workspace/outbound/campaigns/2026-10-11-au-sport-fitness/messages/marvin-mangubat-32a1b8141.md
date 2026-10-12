@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: Director of Health and Fitness at Vision Personal Training Caulfield
-- Proof point: 80+ body measurements, two photos (proof-points.md); 100+ clients (aggregate)
+- Proof point: 80+ body measurements, two photos (proof-points.md)
 
 ---
 
@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Marvin,
 
-3DLOOK has worked with 100+ clients, and I would like to hear how Caulfield would use a scan like this. A short call is enough.
+A strongHER client who repeats the scan can set it against an earlier one she picks, and talk it through with her trainer.
 
-Open to a 15 minute call? Or tell me who handles client tools at Vision head office and I will write to them.
+A short call could show a strongHER client's view of it. Whoever leads training programs at Vision head office may be the better ear, and a name would do.
 
 Vadim
 
-**Char count:** 257 / 550
+**Char count:** 297 / 550

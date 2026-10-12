@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi there,
 
-Jetts Fitness clubs offer personal trainers and exercise physiologists, and St Leonards has a Fitness Director. Trainers there could ask a client for two photos and take the 80+ body measurements to a program review.
+A Fitness Director at Jetts Fitness St Leonards works close to the trainers. A client could send front and side photos from home, and the 80+ body measurements that return would be on hand for a program review.
 
-What do trainers have in hand when a client's program is reviewed?
+How does a client get a say in their own program review there?
 
 Vadim
 
-**Char count:** 302 / 600
+**Char count:** 292 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi there,
 
-My offer is a quick call to walk through the scan on a phone. It involves no installation at St Leonards.
+Between sessions, a client of a St Leonards trainer could scan on their own phone, with on-screen guidance, and choose which scan to bring to the next session.
 
-If a colleague who handles the Jetts app is better placed, a name is all I need. Is a short call possible?
+I can show a client's screens on a call. If Jetts has a lead for coaching or programming, a name would help. Is a call worth arranging?
 
 Vadim
 
-**Char count:** 231 / 550
+**Char count:** 314 / 550

@@ -24,12 +24,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Fiona,
 
-One boundary matters most for a workplace program: the program decides what is shown and to whom, and the scan is optional for the member. 3DLOOK has worked with 100+ clients.
+For a new member's first week, an optional body check at home gives a starting point that stays the member's to share. The program decides what is shown and to whom. 3DLOOK has worked with 100+ clients.
 
-A short read: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+How wellness platforms use body data is covered at https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
 
-Open to a short call to talk it through?
+If a call suits, I can show how a member would see that first body check.
 
 Vadim
 
-**Char count:** 313 / 550
+**Char count:** 410 / 550

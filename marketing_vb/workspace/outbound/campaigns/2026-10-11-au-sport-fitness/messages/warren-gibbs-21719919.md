@@ -26,12 +26,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Warren,
 
-A partner like this earns its place when a brief calls for it, and equ would offer it only then. 3DLOOK has worked with 100+ clients.
+If such a brief comes up, a client's users could take a guided scan in the client's app or site and see 80+ body measurements, and equ would choose when to put it forward. 3DLOOK has worked with 100+ clients.
 
-Background: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+For context: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
 
 Might a short call be worth it?
 
 Vadim
 
-**Char count:** 261 / 550
+**Char count:** 337 / 550

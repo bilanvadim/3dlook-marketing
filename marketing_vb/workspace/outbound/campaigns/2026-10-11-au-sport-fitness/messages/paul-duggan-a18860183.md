@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Paul,
 
-Short version: a member scans at home, and picks an earlier scan to compare when back at the club.
+A member who wants to see what the strength rounds are doing could scan at home and set the new 80+ body measurements next to an earlier scan of their own.
 
-I would be glad to show it on a quick call. Or point me to whoever owns the UBX Member App at head office.
+Head office's programming lead is a route I would welcome if that suits you better. If you are curious, send me a day and I will arrange a call.
 
 Vadim
 
-**Char count:** 223 / 550
+**Char count:** 318 / 550

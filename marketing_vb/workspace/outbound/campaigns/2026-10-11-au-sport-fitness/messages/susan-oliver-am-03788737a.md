@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Susan,
 
-If it ever helps, a short call would show what the scan returns and how it reaches a club: a page the club sends, nothing to install. For scale: 112,100 scans in 2025 across all 3DLOOK customers.
+A member service like this comes down to what a member sees: two photos on her phone, then 80+ body measurements she can set against an earlier scan she picks.
 
-Open to that? If another Fernwood leader is better placed, a name would be welcome.
+If more detail would help, I am glad to give it on a call. If another Fernwood leader is better placed, a name would be welcome.
 
 Vadim
 
-**Char count:** 298 / 550
+**Char count:** 307 / 550

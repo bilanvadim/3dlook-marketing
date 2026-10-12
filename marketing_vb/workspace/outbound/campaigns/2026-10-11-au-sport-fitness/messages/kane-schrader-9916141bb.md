@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Kane,
 
-Scale matters for any platform: 112,100 scans in 2025 across all 3DLOOK customers.
+A Narrabeen member who wants a view of their own training can take the scan at home and set it against an earlier one they pick.
 
-A short call could show what a scan could offer Narrabeen members. Open to a short call? Or send me to whoever at Plus Fitness head office runs member features.
+I am happy to run a call on what that member sees. If digital at Plus Fitness head office is the better door, send me their way.
 
 Vadim
 
-**Char count:** 261 / 550
+**Char count:** 275 / 550

@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: marketing and digital analytics background, owner-director of BFT Prestons; BF2 blocks
-- Proof point: BF2 company fact; 80+ body measurements, body composition estimates (proof-points.md); 100+ clients
+- Proof point: BF2 company fact; 80+ body measurements, body composition estimates (proof-points.md)
 
 ---
 
@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Liana,
 
-Noticed your background in omnichannel marketing and digital analytics, now behind BFT Prestons. The scan returns 80+ body measurements and body composition estimates from two photos, which a member can look back on later.
+Your path from omnichannel marketing and digital analytics to BFT Prestons stands out. The scan returns 80+ body measurements and body composition estimates from a phone, which a member can look back on later.
 
 At the end of a BFT block, what does the studio send members to show what changed?
 
 Vadim
 
-**Char count:** 324 / 600
+**Char count:** 311 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Liana,
 
-Since you come from the marketing side, you may like that 3DLOOK has worked with 100+ clients on exactly this kind of member-facing capture. I can show it in a short call.
+When a block wraps up, a member could hold a set of 80+ body measurements and body composition estimates from a scan they took themselves, ready to revisit later.
 
-Might be worth a quick chat, or a pointer to whoever owns digital at BFT?
+I would be glad to show you what a member would see, on a short call. If digital at BFT head office owns this, a name is all I need.
 
 Vadim
 
-**Char count:** 264 / 550
+**Char count:** 314 / 550

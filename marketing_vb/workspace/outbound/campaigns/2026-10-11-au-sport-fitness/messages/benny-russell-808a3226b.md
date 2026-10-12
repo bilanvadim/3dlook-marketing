@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: progressed from trainer to senior trainer, studio manager and owner of Vision Personal Training Eastlakes since 2019
-- Proof point: two photos, 80+ body measurements (proof-points.md); 100+ clients (aggregate)
+- Proof point: two photos, 80+ body measurements (proof-points.md)
 
 ---
 
@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Benny,
 
-3DLOOK has worked with 100+ clients. I would value a short call to hear how Eastlakes handles a restart and whether a scan fits.
+A client returning from a break can take two photos at home and bring a fresh set of measurements to the first session back.
 
-Would a call this week work? If the right person is at Vision head office, send me their way and I will keep it brief.
+Happy to talk through what the returning client sees, whenever you have a window. And if onboarding for new and returning clients is run from Vision head office, point me to whoever leads it.
 
 Vadim
 
-**Char count:** 266 / 550
+**Char count:** 335 / 550

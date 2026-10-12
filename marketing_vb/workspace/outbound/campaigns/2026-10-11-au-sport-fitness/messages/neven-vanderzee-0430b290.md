@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Neven,
 
-A short call would show what members see when they scan. 3DLOOK has worked with 100+ clients.
+Whatever goal a member shares with the team, they could set it against 80+ body measurements from a two-photo scan taken in the TotalFusion app, if the member chooses to.
 
-Could be worth ten minutes, or you could point me to whoever owns programs or the member app at TotalFusion?
+Would a short call on what a member sees work for you, or could you point me to whoever owns programs or the member app at TotalFusion?
 
 Vadim
 
-**Char count:** 221 / 550
+**Char count:** 325 / 550

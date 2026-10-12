@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Bianca,
 
-With your floor experience, you will know quickly whether this fits. 112,100 scans were run in 2025 across all 3DLOOK customers.
+Two photos at home would give a Birkdale member their own 80+ body measurements to bring to a conversation with the team.
 
-A short call would let me show what a member sees. If head office is the better home, I would be glad to hear who runs member experience there.
+Whoever looks after franchise performance at head office is a fair route if you prefer. Is a call worth setting up?
 
 Vadim
 
-**Char count:** 292 / 550
+**Char count:** 257 / 550

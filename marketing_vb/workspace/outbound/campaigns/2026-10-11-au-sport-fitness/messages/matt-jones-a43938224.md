@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Matt,
 
-Had a thought about BFT classes, where coaches look after a full room. A guided two-photo scan returns 80+ body measurements and body composition estimates, taken by the member on a phone.
+BFT classes put a full room in front of the coach. Taken by the member on a phone, two photos are enough for 80+ body measurements and body composition estimates.
 
-How do coaches give each member individual feedback on progress during a class?
+What does a coach hand a member to take away after a packed class?
 
 Vadim
 
-**Char count:** 286 / 600
+**Char count:** 247 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Matt,
 
-The scan returns 80+ body measurements, under 45 seconds from the photos to structured results. A short call would show it properly.
+After a packed class, a member could take home a set of their own readings from a scan taken on their phone, to look at later and talk over at the next session.
 
-Worth a quick chat, or point me to whoever owns member experience at BFT?
+If you would like to see how it works, tell me and I will send times. Class programming at BFT head office may be the better home for this.
 
 Vadim
 
-**Char count:** 224 / 550
+**Char count:** 318 / 550

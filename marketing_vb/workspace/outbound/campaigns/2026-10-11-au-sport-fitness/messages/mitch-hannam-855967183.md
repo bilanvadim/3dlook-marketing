@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: World Gym Maitland director; earlier national sales and marketing role at World Gym Australia
-- Proof point: 80+ body measurements, two photos (proof-points.md); 100+ clients line
+- Proof point: 80+ body measurements, two photos (proof-points.md)
 
 ---
 
@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Mitch,
 
-Having seen both sides, you will know how a head office decides on member tools. 3DLOOK has worked with 100+ clients.
+A member at Maitland who has taken a scan at home can bring it to a conversation about their progress, and the member picks who sees it.
 
-Could we do a short call? Or send me to whoever at World Gym Australia leads that.
+A call about what members would look back on would be welcome. Whoever leads franchise operations at World Gym Australia may be the better contact, and a name is all I need.
 
 Vadim
 
-**Char count:** 219 / 550
+**Char count:** 329 / 550

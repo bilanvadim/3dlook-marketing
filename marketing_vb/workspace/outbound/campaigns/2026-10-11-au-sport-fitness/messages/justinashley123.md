@@ -17,21 +17,21 @@ You describe wanting a better way of doing things in fitness, and One Playground
 
 A guided scan from two photos returns 80+ body measurements, white-label through an API or SDKs, with nothing to ship.
 
-At which point in a member's year would a scan fit best, joining or a goal review?
+Where would you want a scan to appear first for One Playground members, at sign-up or on the app's home screen?
 
 Vadim
 
-**Char count:** 350 / 600
+**Char count:** 379 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Justin,
 
-If that fits your plans, the scan would sit in the One Playground or One Coach app, or on a page you send. 3DLOOK has worked with 100+ clients.
+A member could meet the scan at sign-up or on the home screen, as a guided two-photo flow in the One Playground or One Coach app or on a page you send. 3DLOOK has worked with 100+ clients.
 
 More: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Open to a short call about where it might go first?
+If a call is useful, I can bring a view of where it might go first.
 
 Vadim
 
-**Char count:** 285 / 550
+**Char count:** 346 / 550

@@ -26,12 +26,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Adam,
 
-Software sits next to the facilities NovoFit already supplies, and a club adds it once through the SDK. 3DLOOK has worked with 100+ clients.
+A club member could take the scan from the club's own app and see 80+ body measurements, with the club adding the capability once through the SDK. 3DLOOK has worked with 100+ clients.
 
 Background: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
 
-Would a short call be worth it to see where it could fit?
+If you see a place for it, I would value a short call.
 
 Vadim
 
-**Char count:** 292 / 550
+**Char count:** 332 / 550

@@ -15,21 +15,21 @@ Hi Thomas,
 
 When a new member joins Plus Fitness Rockdale, the first visit sets the tone.
 
-Two phone photos could add a starting point. It returns 80+ body measurements, under 45 seconds from the photos to structured results.
+Two phone photos could give that visit a starting point with 80+ body measurements, taken on the member's own phone.
 
 What does your club capture about a new member at the start?
 
 Vadim
 
-**Char count:** 294 / 600
+**Char count:** 276 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Thomas,
 
-Joining day is where a scan could plug in at Rockdale, and 3DLOOK has worked with 100+ clients.
+On joining day, a member can take the scan on their own phone and walk in with a starting set of measurements, then repeat it whenever they choose.
 
-Open to a quick chat? Or name the person at Plus Fitness head office who handles member tools and I will contact them.
+Say the word if you would like a call about what a new member sees. If new-member onboarding sits with a team at Plus Fitness head office, tell me which.
 
 Vadim
 
-**Char count:** 234 / 550
+**Char count:** 321 / 550

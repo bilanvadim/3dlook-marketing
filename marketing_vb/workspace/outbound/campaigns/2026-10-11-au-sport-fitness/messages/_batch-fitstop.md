@@ -1,20 +1,20 @@
 @@@ andrew-papadopoulos-1992a341a
 hook: Athletic Director at Fitstop, programming and testing; progression is a Fitstop pillar
-proof: FS3 progression pillar and weekly rotation; 80+ body measurements, two photos; 100+ clients (proof-points.md)
+proof: FS3 progression pillar and weekly rotation; 80+ body measurements, two photos (proof-points.md)
 --- M1
 Hi Andrew,
 
 Quick thought on Fitstop's programming. Progression is one of your pillars, and each week rotates through the four session styles.
 
-We built FitXpress, a guided two-photo phone scan that returns 80+ body measurements. Where does testing sit in your programming today, and what do members see from it?
+We built FitXpress, a guided phone scan from front and side photos that returns 80+ body measurements. Where does testing sit in your programming today, and what do members see from it?
 
 Vadim
 --- M2
 Hi Andrew,
 
-3DLOOK has worked with 100+ clients, and the scan runs inside a member's own app or on a page the brand sends. This page shows how connected fitness uses it: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+Wherever testing sits in a Fitstop programme, a scan taken on the member's own phone gives the member and the coach a set of 80+ body measurements to look back on, using only the scans the member picks.
 
-Could we talk through, on a short call, where testing could use it?
+Would a short call make sense? This page covers how a scan sits inside a connected fitness app: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
 Vadim
 
@@ -26,15 +26,15 @@ Hi Richard,
 
 Got me thinking about Fitstop's four session styles and how much a member does across them in a month.
 
-Two phone photos go in and 80+ body measurements plus body composition estimates come out. How do you show a member what a few weeks across the styles has changed?
+Two phone photos go in and 80+ body measurements come out along with body composition estimates. How do you show a member what a few weeks across the styles has changed?
 
 Vadim
 --- M2
 Hi Richard,
 
-One practical point: the member takes the scan at home on their own phone, and the coach can open it with them at the next session.
+A month across Lift, Perform, Condition and Sweat gives a member plenty to talk about with a coach. Two scans taken at home a few weeks apart, with the pair chosen by the member, give that conversation measurements to start from.
 
-Is a short call worth setting up? If the member app is looked after by someone else at Fitstop, a pointer to them works for me.
+Could we talk it through on a call? If someone else sets Fitstop's programming, I would gladly take their name instead.
 
 Vadim
 
@@ -44,37 +44,37 @@ proof: FS1 four styles; two photos, 80+ body measurements (proof-points.md)
 --- M1
 Hi Bruce,
 
-Noticed you own a Fitstop. Members there train across four styles, and some spend weeks away for work or travel.
+Members at a Fitstop train across four styles, and some are away from the studio for weeks at a time with work or travel.
 
-Wherever the member happens to be, two photos from a phone return 80+ body measurements. How does your studio stay in touch with what those members have been doing?
+Wherever the member happens to be, a front and a side photo from a phone return 80+ body measurements. While a member is on the road, what does your coach hear from them about their training?
 
 Vadim
 --- M2
 Hi Bruce,
 
-Wanted to add the simple version. The member scans on their own phone, and the coach looks at the scan when the member is back on the floor.
+A member on the road could take two photos on their own phone and send the coach a set of measurements to talk through on their return.
 
-Open to a quick call? And if there is someone at Fitstop who owns the member experience, I would gladly be pointed their way.
+I would be glad to walk you through it on a call. And if there is someone who looks after the Fitstop member app, their name would be just as welcome.
 
 Vadim
 
 @@@ jonpepper
-hook: multi-location Fitstop franchise director; consistency of reviews across studios
+hook: multi-location Fitstop franchise director; goal reviews across studios
 proof: two photos, 80+ body measurements, under 45 seconds phrase (proof-points.md)
 --- M1
 Hi Jonathan,
 
-Noticed overlap with your Fitstop studios across more than one location. Reviews often run a little differently from site to site.
+Running Fitstop studios in more than one location is a different job from running one.
 
-FitXpress is a two-photo phone scan that returns 80+ body measurements, so a review can start from the same set anywhere. Do goal reviews run the same way at each of your studios today?
+With FitXpress a member takes two photos on a phone and gets 80+ body measurements, taken the same way at any site. How do goal reviews work across your studios today?
 
 Vadim
 --- M2
 Hi Jonathan,
 
-It returns 80+ body measurements, under 45 seconds from the photos to structured results.
+At a goal review a member could bring a scan taken on their own phone, and the same guided scan works at every studio on any phone.
 
-Could we talk it through on a short call? If the right person for this is whoever runs the member app, tell me who and I will go to them.
+Shall we find a time for a call? If the person who runs franchise performance is someone else, tell me who and I will go to them.
 
 Vadim
 
@@ -92,9 +92,9 @@ Vadim
 --- M2
 Hi Paul,
 
-Here is where this could fit: a member scans at home before or after a month of sessions and compares the two with the coach.
+When a member asks what a month of mixed sessions has done, two scans from their own phone could give the coach and member something to look at together, with the pair picked by the member.
 
-Is a short call something you would make time for? Otherwise, a name at Fitstop who handles the member app would help.
+Is there a time this week or next for a call? If whoever leads coaching at Fitstop is the better person for this, I will ask them instead.
 
 Vadim
 
@@ -112,9 +112,9 @@ Vadim
 --- M2
 Hi Susie,
 
-For members who sign up for a pairs event, two scans on their own phone, a few weeks apart, give them something concrete to discuss with their coach.
+Members getting ready to enter in pairs could each take a scan on their own phone, and what they see stays theirs to share with a coach or keep.
 
-Happy to explain on a short call. If it belongs with whoever leads the Fitstop app, point me there instead.
+I can walk you through it on a call whenever suits. If whoever looks after member experience around the event is the better contact, a name is all I need.
 
 Vadim
 
@@ -126,15 +126,15 @@ Hi Aurora,
 
 Noticed that Fitstop newcomers arrive early to meet their trainers before a first session booked in the app.
 
-Members can take our two-photo scan at home first, and it returns 80+ body measurements. What do your South Fremantle trainers note about a newcomer's starting point in those early weeks?
+Members can take our guided scan at home first, from a front and a side photo, and it returns 80+ body measurements. What do your South Fremantle trainers note about a newcomer's starting point in those early weeks?
 
 Vadim
 --- M2
 Hi Aurora,
 
-It also works for someone who has not walked in yet: the scan sits behind a link the studio sends.
+Someone booked for a first session could take the scan at home beforehand and arrive with a set of body measurements to talk through with the trainers.
 
-Is a quick call something you would consider? If member experience at Fitstop belongs to someone else, I would value an introduction.
+Would you be up for a call about it? And if new-member onboarding at Fitstop belongs to someone else, I would value an introduction.
 
 Vadim
 
@@ -146,15 +146,15 @@ Hi Shami,
 
 This stood out: Fitstop names progression as one of its pillars.
 
-Guided on screen, our scan takes two phone photos and returns 80+ body measurements. How often do goal reviews run at your studio, and what does the coach bring to them?
+Members need no equipment: the guided capture runs on any phone and returns 80+ body measurements. How often do goal reviews run at your studio, and what does the coach bring to them?
 
 Vadim
 --- M2
 Hi Shami,
 
-A review could open with two scans the member picked, taken weeks apart, and the coach's own notes beside them.
+A goal review could open with two scans the member picked, taken weeks apart, giving the conversation concrete measurements to read together.
 
-Would a short call suit you? Or if someone at Fitstop leads the member app, I can speak with them.
+Let me know if a call would be useful. If the person who shapes Fitstop's coaching practice is someone else, I can speak with them.
 
 Vadim
 
@@ -164,7 +164,7 @@ proof: FS2 Global Games; two photos, 80+ body measurements (proof-points.md)
 --- M1
 Hi Ben,
 
-Your background as a trainer and assessor stood out. Global Games has ALL STAR and PRO divisions, so a Fitstop floor holds very different goals side by side.
+Your background as a trainer and assessor stood out. Global Games has ALL STAR and PRO divisions, and a Fitstop floor holds very different goals side by side.
 
 FitXpress needs only two phone photos to give a member 80+ body measurements. At Fitstop Mascot, how do you keep everyday members and high performers' progress both in view?
 
@@ -172,9 +172,9 @@ Vadim
 --- M2
 Hi Ben,
 
-Coaches with an assessor's eye usually want a clear reference point, and this gives one: the same scan, taken the same way, each time.
+For members at both ends of the floor, a scan taken the same way each time, front and side and guided on screen, gives the member one reference point to look back on.
 
-Fancy a short call? The member app may belong to someone at Fitstop, and I would go to them.
+Say the word and I will find a time that suits you. If the person who develops Fitstop's coaches is a better contact for this, I would gladly speak with them.
 
 Vadim
 
@@ -186,15 +186,15 @@ Hi Ameer,
 
 Your bio talks about helping people become their best version, and at Fitstop that starts with a first session booked in the app.
 
-A scan from two phone photos returns 80+ body measurements and body composition estimates. What does your South Melbourne team learn about a newcomer during that first visit?
+A member's front and side photos return 80+ body measurements and body composition estimates. What does your South Melbourne team learn about a newcomer during that first visit?
 
 Vadim
 --- M2
 Hi Ameer,
 
-Think of it as a starting point a member can bring to the first session, taken on their own phone.
+A newcomer could bring a starting point from their own phone to that first session, and the team would have measurements to talk through if the member chooses to share them.
 
-Would you be open to a short call? If another person at Fitstop owns this, a name is all I need.
+If a call would help, I am happy to set one up. Someone else at Fitstop may run how new members are welcomed, and a name from you would do.
 
 Vadim
 
@@ -206,15 +206,15 @@ Hi Jayne,
 
 Your background spans accounting and fitness, and Fitstop names progression as a pillar.
 
-FitXpress turns two phone photos into 80+ body measurements. When a member's check-in comes round, which numbers does your coach have in hand?
+FitXpress can return body composition estimates as well as 80+ body measurements. When a member's check-in comes round, what does your coach want to talk through first?
 
 Vadim
 --- M2
 Hi Jayne,
 
-A member could add a scan to that check-in, and it would sit beside the coach's own numbers.
+A member could bring a scan from their own phone to that check-in and choose which measurements to talk through.
 
-Worth a short call to see if it fits? Or tell me who handles the Fitstop member app, and I will ask them.
+Would a short call be useful? If member experience at Fitstop sits with another person, please tell me who.
 
 Vadim
 
@@ -226,35 +226,35 @@ Hi Nebojsa,
 
 Noticed your operations and people-leadership background. With four session styles, a busy week at Fitstop has a lot of coaching shifts to cover.
 
-Each scan starts from two phone photos and returns 80+ body measurements. Where do member check-ins fit into your coaches' week?
+From a front and a side photo taken at home, the scan returns 80+ body measurements. Where do member check-ins fit into your coaches' week?
 
 Vadim
 --- M2
 Hi Nebojsa,
 
-Nothing to install in the studio: the member scans on a phone and the coach opens it when time allows.
+A member could scan on their own phone with on-screen guidance, and what comes back is theirs to share with a coach.
 
-Could we have a short call about it? If member experience sits with someone else at Fitstop, I would take that pointer too.
+Happy to go through it by phone whenever the week allows. The operations lead for Fitstop studios might be the better person, and I would take that pointer.
 
 Vadim
 
 @@@ kevin-kensley-0b048211b
 hook: owner of Fitstop Caloundra; bio line about loving the job and the people
-proof: FS1 four styles; two photos, 80+ body measurements (proof-points.md)
+proof: FS2 Global Games; two photos, 80+ body measurements (proof-points.md)
 --- M1
 Hi Kevin,
 
-Your bio says you love the people you work with every day. At Fitstop Caloundra they move through four session styles.
+Your bio says you love the people you work with every day. Global Games lets two of them team up across Fitstop's four stations.
 
-Two photos from a phone return 80+ body measurements through FitXpress. What would you say to a Caloundra member who wants proof that a stretch across those styles has changed something?
+Front and side photos go into FitXpress and 80+ body measurements come out. What would you want a Caloundra pair to be able to look back on once the event is over?
 
 Vadim
 --- M2
 Hi Kevin,
 
-The member does the scan on their own phone, and the studio decides what to look at with them.
+Each member in a pair could keep their own scan from their phone and show it to a coach if they choose to.
 
-Interested in a short call? Or if another person at Fitstop runs the member app, I would be glad to go to them.
+I can explain it on a call if that helps. Whoever handles Fitstop's digital products is welcome to take it from here.
 
 Vadim
 
@@ -266,15 +266,15 @@ Hi Adam,
 
 Quick idea for you as a Fitstop owner. Global Games runs ALL STAR and PRO divisions, which means one studio serves very different members.
 
-The scan we built runs on any phone, using two photos, and returns 80+ body measurements. How do your coaches keep the everyday member's progress in view as well?
+The scan we built runs on any phone, from a front and a side photo, and returns 80+ body measurements. How do your coaches keep the everyday member's progress in view as well?
 
 Vadim
 --- M2
 Hi Adam,
 
-For a member who is not chasing a podium, a scan taken at home is a simple way to see change.
+For someone not aiming at the podium, a scan taken at home is something to compare, using only the ones they pick.
 
-Could we speak for ten minutes? Someone at Fitstop may run the member app, and if so point me to them.
+Is a call possible? Whoever shapes the programming behind the divisions may be the better person for this, and I would follow your pointer.
 
 Vadim
 
@@ -292,29 +292,29 @@ Vadim
 --- M2
 Hi Rhianna,
 
-Members preparing for a team event often like a reference point of their own.
+A member preparing for a team event could take a scan on their own phone and keep it as a reference of their own, or share it with a coach.
 
-Care for a short call? If someone at Fitstop looks after the app, an introduction works fine.
+I can talk it through on a call, with no commitment. If the member experience lead at Fitstop is the better contact, please point me their way.
 
 Vadim
 
 @@@ chandell-fretwell-3618bb106
-hook: Fitstop director and franchisee (neutral, title-based)
-proof: FS1 four styles; two photos, 80+ body measurements, body composition estimates (proof-points.md)
+hook: Fitstop director and franchisee (neutral, title-based); Global Games pairs
+proof: FS2 Global Games; two photos, 80+ body measurements, body composition estimates (proof-points.md)
 --- M1
 Hi Chandell,
 
-Noticed you are a Fitstop franchisee. Members there rotate through four session styles, so a coach's picture of any one person can be broad.
+Fitstop franchisees see Global Games from the studio floor: teams of two across the four stations.
 
-From two phone photos, our scan gives 80+ body measurements and body composition estimates. What does your coach have in hand when a member asks how they are doing?
+The scan estimates body fat %, lean mass and fat mass, with BMI and BMR calculated, alongside 80+ body measurements. How do your coaches talk through a member's starting point when two of them enter as a pair?
 
 Vadim
 --- M2
 Hi Chandell,
 
-Both measurements and estimates arrive within the same scan, and the member picks which ones to compare.
+Two members entering as a pair could each take a guided scan on their own phone, and each decides which measurements to bring to the coach.
 
-Would a short call help? Alternatively, a nudge toward whoever owns Fitstop's member app would be appreciated.
+Is there a day this week for a call? If the Fitstop member app belongs to someone else, a nudge toward them would help.
 
 Vadim
 
@@ -324,17 +324,17 @@ proof: FS3 progression pillar; two photos, 80+ body measurements (proof-points.m
 --- M1
 Hi Paul,
 
-Came across your work in sports science, and now progression is a pillar at Fitstop Engadine.
+Your sports science background caught my eye, and Fitstop names progression as one of its pillars.
 
-It takes two phone photos to get 80+ body measurements from our scan. When a member asks if training is working, what do your coaches show them?
+It takes two phone photos to get 80+ body measurements from our scan. What does a Fitstop Engadine coach record about a newcomer's first week that later sessions build on?
 
 Vadim
 --- M2
 Hi Paul,
 
-Coaches from a sports science background tend to like data a member can read without a lecture.
+A newcomer could take a scan on their own phone before the first week and bring body measurements for the coach to read with them, if they want to.
 
-Would you spare time for a short call? If the app is led by someone else at Fitstop, tell me who.
+Does a call sound worthwhile? Whoever designs a new member's first week at Fitstop may be the better contact, and a name would be welcome.
 
 Vadim
 
@@ -346,15 +346,15 @@ Hi Jesse,
 
 You started as a Fitstop coach and now own Busselton, which gives you a coach's view of the four styles.
 
-FitXpress reads two phone photos and returns 80+ body measurements. For members who travel or work shifts, how does the studio keep up with what they did while away?
+A guided scan on the member's own phone, with nothing to install, returns 80+ body measurements. For members who travel or work shifts, how does the studio keep up with what they did while away?
 
 Vadim
 --- M2
 Hi Jesse,
 
-A member could scan at home after a stretch away and show the coach on return.
+A member returning from time away could scan at home and show the coach where they are now.
 
-Is an early call worth it? And if there is a person at Fitstop who owns the app, I would welcome the name.
+If you want to talk it through, I am around for a call. The app at Fitstop may have an owner I should speak with instead, and a name would be enough.
 
 Vadim
 
@@ -366,15 +366,15 @@ Hi Mark,
 
 Noticed your career as a rugby league player and now a multi-site business owner at Fitstop.
 
-FitXpress turns two phone photos into 80+ body measurements. Across your sites, how do you keep coaching checks consistent?
+One front and one side photo from a member's phone give a set of 80+ body measurements. Across your sites, how do you keep coaching checks consistent?
 
 Vadim
 --- M2
 Hi Mark,
 
-Athletes know the value of the same test done the same way. The scan gives that in the member's hand.
+Wherever a member trains across your sites, a guided scan taken the same way gives them a set of measurements that means the same thing at each one.
 
-Keen to talk it through briefly. If whoever runs the member app is a better contact, I will gladly go to them.
+I can cover the rest by phone. Whoever oversees how Fitstop studios perform together is the person I should meet if that is not you.
 
 Vadim
 
@@ -386,15 +386,15 @@ Hi Jamie,
 
 Had a thought about Global Games, the teams-of-two event across Fitstop's four stations.
 
-With two phone photos, FitXpress produces 80+ body measurements. When members enter as pairs, what do you hope they take away from it?
+FitXpress is guided on screen and produces 80+ body measurements from a front and a side photo. When members enter as pairs, what do you hope they take away from it?
 
 Vadim
 --- M2
 Hi Jamie,
 
-One thing worth knowing: a member can run the scan at home with on-screen guidance, no equipment needed.
+A pair signing up could each run the scan at home with on-screen guidance, no equipment needed, and keep their own result.
 
-Is a short call a fit? If someone else at Fitstop handles the member app, point me to them.
+Is a call a good next step? Whoever runs Global Games entries could be the right contact instead, and a name from you would be plenty.
 
 Vadim
 
@@ -412,9 +412,9 @@ Vadim
 --- M2
 Hi Kelly,
 
-The scan can sit alongside the rotation as an optional check, only for the members who want it.
+To see what a stretch of the rotation has changed, a member could scan at home and choose what to share with the coach.
 
-Shall we have a short call? If Fitstop has a person who leads the app, I would ask them as well.
+Shall we set up a call? If member experience at Fitstop is led from elsewhere, I would speak with that person too.
 
 Vadim
 
@@ -424,7 +424,7 @@ proof: FS4 first session; two photos, 80+ body measurements (proof-points.md)
 --- M1
 Hi Josephine,
 
-Wanted to reach out about Fitstop Cairns. A first session is booked in the app, and first-timers arrive early to meet their trainers.
+A newcomer to Fitstop Cairns books the first session in the app.
 
 We return 80+ body measurements from two phone photos taken by the member. By the end of that first session, what would you most like to know about a newcomer?
 
@@ -432,9 +432,9 @@ Vadim
 --- M2
 Hi Josephine,
 
-The studio can send the scan link ahead of the first visit, so a newcomer arrives with it done.
+Someone about to book a first session could take the scan at home before arriving, and the coach could read the measurements with them at that first visit if they wish.
 
-Does a short call sound useful? If another person at Fitstop owns the app, I would be happy to hear who.
+Should you want to see more, I can call whenever suits. Whoever at Fitstop handles first-session onboarding is welcome to take this on instead.
 
 Vadim
 
@@ -446,15 +446,15 @@ Hi Kristi,
 
 Noticed you coach as a group personal trainer at Fitstop Slacks Creek, which means personal attention inside a group.
 
-FitXpress gives body composition estimates and 80+ body measurements from just two phone photos. What do you note about a newcomer in their first weeks to give that attention?
+FitXpress gives body composition estimates and 80+ body measurements from a front and a side photo. What do you note about a newcomer in their first weeks to give that attention?
 
 Vadim
 --- M2
 Hi Kristi,
 
-Coaching a group means a limited minute per person. A scan the member brings along can fill part of that gap.
+In a group class, a coach's one-to-one moments are short, and a scan the member brings along gives those moments a starting point.
 
-Up for a short call? If a Fitstop colleague looks after the app, please point me there.
+Would you be open to a call? If coaching practice at Fitstop is set elsewhere, a pointer to that person works.
 
 Vadim
 
@@ -466,15 +466,15 @@ Hi Sam,
 
 Quick one about Fitstop Morningside: Global Games lands in Brisbane this October, close to you.
 
-Using two photos from a phone, FitXpress returns 80+ body measurements. How do you prepare members who want to compete in pairs?
+The scan runs on any member's phone with on-screen guidance and comes back with 80+ body measurements. How do you prepare members who want to compete in pairs?
 
 Vadim
 --- M2
 Hi Sam,
 
-It adds a reference point a member keeps for themselves while they prepare.
+A member getting ready to compete could take a scan on their own phone and keep it as a personal reference while they prepare.
 
-Could I take twenty minutes of your week? If someone at Fitstop leads the app, a pointer would be great.
+Could I send over a few times for a call? A pointer to whoever looks after members' experience of Global Games would be just as good.
 
 Vadim
 
@@ -484,17 +484,17 @@ proof: two photos, 80+ body measurements; 112,100 scans in 2025 across all 3DLOO
 --- M1
 Hi Jasmine,
 
-Noticed you run Fitstop at both Everton Park and Rochedale. Two studios usually mean two sets of habits.
+Noticed you run Fitstop at both Everton Park and Rochedale. That gives you two groups of members to look after.
 
-FitXpress is a two-photo phone scan that returns 80+ body measurements. Do member check-ins run the same way at the two studios?
+FitXpress guides a member on screen through a front and side photo and returns 80+ body measurements. Do member check-ins run the same way at the two studios?
 
 Vadim
 --- M2
 Hi Jasmine,
 
-For scale, 112,100 scans were taken in 2025 across all 3DLOOK customers.
+At a check-in, a member at either studio could bring a scan from their own phone, taken the same guided way. There were 112,100 scans in 2025 across all 3DLOOK customers.
 
-Might a short call help? If there is a person at Fitstop who owns member experience, I would welcome the introduction.
+If you would like to talk it through, I can call at a time that suits you. The person who runs Fitstop's studio operations may be a better contact, and I would go to them.
 
 Vadim
 
@@ -506,15 +506,15 @@ Hi Milan,
 
 Curious about your take as a Fitstop owner. Progression is a pillar there, and some members train around shifts and odd hours.
 
-A member's two phone photos can become 80+ body measurements. How do you see what those members have been doing?
+Shift-working members can turn a front and a side photo into 80+ body measurements. How do you see what those members have been doing?
 
 Vadim
 --- M2
 Hi Milan,
 
-In practice the member scans when it suits them, and the coach reads it at the next visit.
+A member on shifts could scan when it suits them and bring the measurements to the next visit.
 
-Worth a short call? Or a name at Fitstop who owns the app would do.
+A call would be a good way to see it, if you are curious. Alternatively, the person who plans how Fitstop supports shift-working members could take it from here.
 
 Vadim
 
@@ -526,15 +526,15 @@ Hi Kendall,
 
 Your bio mentions progressive overload programming and a focus on community at Fitstop Burleigh.
 
-FitXpress turns a member's front and side photos into 80+ body measurements. How do members at Burleigh see progressive overload working for them?
+FitXpress turns a member's front and side photos into 80+ body measurements. When a Burleigh member sits down with a coach to set the next goal, what do they look at together?
 
 Vadim
 --- M2
 Hi Kendall,
 
-It gives members a view of change in their body between training blocks, only on scans they select.
+When a member sits down to set the next goal, they could bring two scans they chose, and the body measurements would give the goal a starting point.
 
-Can we find time for a short call? Otherwise, tell me who owns the Fitstop app and I will write to them.
+Can we find a time for a call? If programming at Fitstop is led by someone else, I will write to them instead.
 
 Vadim
 
@@ -546,15 +546,15 @@ Hi Lachlan,
 
 Made me think of Fitstop Newstead: ALL STAR and PRO divisions at Global Games sit next to everyday members on your floor.
 
-Photos from the front and the side give 80+ body measurements in our scan. How do your coaches keep both groups in view?
+Photos from the front and the side give 80+ body measurements in our scan. What does a Newstead coach do for the member who has no event to train for?
 
 Vadim
 --- M2
 Hi Lachlan,
 
-Everyday members get a number of their own to look back on, without needing a competition.
+Members outside the competitive divisions could take a scan at home and look back on the ones they choose, with no event involved.
 
-A short call would be easy to arrange. Someone else at Fitstop may lead the member app, and I would take a referral.
+Is there a good moment for a call? Someone else may run the app members book through, and I would take that referral.
 
 Vadim
 
@@ -566,15 +566,15 @@ Hi Craig,
 
 Saw you own a Fitstop centre, where members train across four styles.
 
-FitXpress returns 80+ body measurements from two photos on a phone. What does the coach bring to a member's goal review at your centre?
+Members take a front and a side photo at home and get 80+ body measurements back. What does the coach bring to a member's goal review at your centre?
 
 Vadim
 --- M2
 Hi Craig,
 
-A member can bring a scan they took at home to the review.
+A member could bring a scan taken at home to the review, and the coach and member would read the measurements together.
 
-Would a quick call be worth it? If a person at Fitstop owns the app, send me over.
+A call would show how it works. If Fitstop has a coaching lead better placed for this, send me over.
 
 Vadim
 
@@ -584,17 +584,17 @@ proof: FS3 progression pillar; two photos, 80+ body measurements (proof-points.m
 --- M1
 Hi Chris,
 
-Wanted to reach out about Fitstop Cleveland, where progression is a pillar and some members miss weeks for family or work.
+Progression is a pillar at Fitstop Cleveland, and some members miss weeks for family or work.
 
-Two photos on a phone are enough for 80+ body measurements. How does the studio pick up with a member after a break?
+A front and a side photo on a phone are enough for 80+ body measurements. How does the studio pick up with a member after a break?
 
 Vadim
 --- M2
 Hi Chris,
 
-Think of the scan as a way for the member to come back with fresh numbers.
+A member coming back after a break could take a fresh scan at home and give the coach a current starting point.
 
-Could we speak briefly? And if another person at Fitstop runs the app, point me their way.
+Could we speak briefly? If another person at Fitstop owns the member journey, point me their way.
 
 Vadim
 
@@ -604,17 +604,17 @@ proof: FS4 first session; two photos, 80+ body measurements (proof-points.md)
 --- M1
 Hi Brenna,
 
-Noticed you own a Fitstop. A first session is booked in the app, and first-timers arrive early to meet their trainers.
+First-timers at Fitstop arrive early to meet their trainers, which makes that first meeting count.
 
-The scan is guided on screen, needs two phone photos and returns 80+ body measurements. What do your trainers learn about a newcomer in those first minutes?
+Our capture is white-label, and a member needs only a front and a side photo for 80+ body measurements. What would you like a Fitstop trainer to have in hand before a newcomer's first workout?
 
 Vadim
 --- M2
 Hi Brenna,
 
-Studios can send the scan link before that first visit, and the newcomer does it on their own phone.
+A newcomer could do the scan on their own phone before that first visit and bring the result for the trainers to read with them.
 
-Is there room for a short call? If member experience sits with someone else at Fitstop, I would value the name.
+Would a call fit somewhere in your week? If the people who design Fitstop's welcome for new members sit elsewhere, I would be glad to hear who.
 
 Vadim
 
@@ -624,7 +624,7 @@ proof: FS1 four styles; two photos, 80+ body measurements (proof-points.md)
 --- M1
 Hi Lauren,
 
-Quick reaction as a Fitstop owner. Four session styles keep a member busy, and some of them are on the road for weeks.
+Four session styles keep a Fitstop member busy, and some of them are on the road for weeks.
 
 Our scan asks the member for a front and a side photo, then returns 80+ body measurements. How does your studio keep in touch with those members?
 
@@ -632,9 +632,9 @@ Vadim
 --- M2
 Hi Lauren,
 
-The member scans wherever they are, and you see the output when they come back.
+The member scans wherever they are and keeps the result, and the coach sees it if the member chooses to share it.
 
-Would you give me a brief call? Should someone at Fitstop look after the app, an introduction is fine.
+If a call works for you, say when. A pointer to whoever looks after how Fitstop stays in touch with members on the road would be welcome too.
 
 Vadim
 
@@ -644,16 +644,16 @@ proof: FS2 ALL STAR and PRO divisions; two photos, 80+ body measurements (proof-
 --- M1
 Hi Emilene,
 
-Had to say hi as a Fitstop studio owner. Global Games gives ALL STAR and PRO divisions, and a studio hosts both kinds of member.
+Lift, Perform, Condition and Sweat give a Fitstop studio four different kinds of session to coach.
 
-FitXpress converts two phone photos to 80+ body measurements. How do your coaches follow the everyday member's progress alongside the keen competitor's?
+A guided scan from a front and a side photo returns 80+ body measurements. Which of the four styles do your members ask about most when they want to see their own progress?
 
 Vadim
 --- M2
 Hi Emilene,
 
-The scan fits the member who simply wants to see change, with no event needed.
+A member curious about progress in one style could take a scan at home and look back on the ones they pick.
 
-Shall we set up a short call? If a colleague at Fitstop owns the app, please point me to them.
+Could we set up a call? If digital projects at Fitstop are run by someone else, a pointer to them would do.
 
 Vadim

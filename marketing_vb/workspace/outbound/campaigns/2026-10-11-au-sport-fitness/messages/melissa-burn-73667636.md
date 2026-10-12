@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Melissa,
 
-PT reviews could open with a scan the client took at home the week before, set against an earlier one she chooses. 3DLOOK has worked with 100+ clients, and the club has nothing to install.
+A PT review could open with a scan the client took at home the week before, set against an earlier one she chooses.
 
-Would a call to see it be worthwhile? Or point me to whoever at head office looks after what clubs offer members.
+A short call would let me walk through a client's view of it. Whoever at head office looks after personal training would be a good pointer.
 
 Vadim
 
-**Char count:** 323 / 550
+**Char count:** 276 / 550

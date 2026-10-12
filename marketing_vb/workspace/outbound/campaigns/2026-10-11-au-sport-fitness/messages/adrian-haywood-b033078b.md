@@ -13,23 +13,23 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Adrian,
 
-Halls Head and Collie are two Plus Fitness clubs with different member mixes.
+Halls Head and Collie are two Plus Fitness clubs on your books, each with its own members.
 
 Any phone with on-screen guidance can run the scan, and it takes two photos for 80+ body measurements.
 
-Do member check-ins run the same way at both clubs?
+How do member check-ins work at Halls Head and at Collie?
 
 Vadim
 
-**Char count:** 253 / 600
+**Char count:** 272 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Adrian,
 
-It would help to hear how each club handles check-ins on a short call, and show what the scan would add. Fifteen minutes should do.
+Before a check-in, a member can take the scan on their phone and bring the same kind of measurements to either club, choosing which earlier scan to set it against.
 
-Would a short call suit? If someone at head office owns this, I would gladly be pointed to them.
+A call could show what the member and the club team each see. Would a day next week work? And if club operations sit with head office, a name is all I need.
 
 Vadim
 
-**Char count:** 248 / 550
+**Char count:** 340 / 550

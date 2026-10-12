@@ -15,19 +15,19 @@ Hi Fernwood Fitness Ballarat team,
 
 Spotted something: Fernwood runs coach-led FIIT30 small groups alongside personal training.
 
-FitXpress returns 80+ body measurements from two phone photos. When a member uses both, which coach sees her whole picture?
+Two photos, 80+ body measurements: that is what a FitXpress scan returns. For a member on both, what does each coach bring to her next check-in?
 
 Vadim
 
-**Char count:** 259 / 600
+**Char count:** 280 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Fernwood Fitness Ballarat team,
 
-One scan, taken at home, could give the FIIT30 coach and the PT the same reference. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+Using both FIIT30 and personal training, a member could take one scan at home and share it with both coaches. Both coaches would see the same scan.
 
-Is a short call worthwhile? If member experience is handled at head office, a name would be welcome.
+If a call appeals, I will find a time that fits. If member experience is handled at head office, a name would be welcome.
 
 Vadim
 
-**Char count:** 324 / 550
+**Char count:** 313 / 550

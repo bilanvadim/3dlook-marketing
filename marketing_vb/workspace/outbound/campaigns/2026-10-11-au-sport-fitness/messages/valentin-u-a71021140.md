@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Valentin,
 
-Your headline puts member experience first, and that stood out for BFT. Two photos on a phone return 80+ body measurements and body composition estimates, at home or between classes.
+Your headline puts member experience first, and that stood out for BFT. A phone is all it takes to get 80+ body measurements and body composition estimates, at home or between classes.
 
 What do members at your Melbourne studios ask for when they want to see their progress?
 
 Vadim
 
-**Char count:** 292 / 600
+**Char count:** 294 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Valentin,
 
-If members ask for more on progress, a scan is one way to answer. 112,100 scans were run in 2025 across all 3DLOOK customers.
+When a member asks how they are going, they could open their own scan and read it next to an earlier one they pick.
 
-Shall we take 15 minutes on a call? Whoever owns member experience at BFT is also welcome to take it.
+I can send some times for a call whenever it suits. If someone at BFT head office looks after the member experience, I am glad to speak with them.
 
 Vadim
 
-**Char count:** 249 / 550
+**Char count:** 284 / 550

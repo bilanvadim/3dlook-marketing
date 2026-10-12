@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: Fitness Passport board seat; how the network decides on new member-facing options
-- Proof point: 80+ body measurements, two photos (proof-points.md); 100+ clients line
+- Proof point: 80+ body measurements, two photos (proof-points.md)
 
 ---
 
@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Damien,
 
-Wanted to reach out as a Fitness Passport board member, given your strategy and partnerships background. We've built a white-label two-photo body scan that returns 80+ body measurements, which a member could take at home if a program offers it.
+Your seat on the Fitness Passport board and your strategy and partnerships background prompted a question. We've built a white-label two-photo body scan that returns 80+ body measurements, which a member could take at home if a program offers it.
 
 When Fitness Passport considers a new member-facing option, how does that decision usually get made?
 
 Vadim
 
-**Char count:** 365 / 600
+**Char count:** 367 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Damien,
 
-This is a question about fit, not a pitch. 3DLOOK has worked with 100+ clients.
+When a member-facing option comes to a board, the contained part is that each program decides what is shown, and a member picks which scans to look back on.
 
-Would a short call be possible, or could you point me to whoever leads member experience at Fitness Passport?
+I would welcome a call on how the network evaluates something like this. If someone who leads member experience at Fitness Passport is closer to it, a pointer is enough.
 
 Vadim
 
-**Char count:** 209 / 550
+**Char count:** 346 / 550

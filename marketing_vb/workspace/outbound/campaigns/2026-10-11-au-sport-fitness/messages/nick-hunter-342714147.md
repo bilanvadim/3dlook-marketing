@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Nick,
 
-Software partners often add a member-facing piece that gyms can switch on themselves. 3DLOOK has worked with 100+ clients, and this page explains the idea: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+The gyms Recovr works with could offer their own members a guided two-photo scan returning 80+ body measurements, white-label. 3DLOOK has worked with 100+ clients. This page explains the idea: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
 
 Open to a quick chat?
 
 Vadim
 
-**Char count:** 258 / 550
+**Char count:** 295 / 550

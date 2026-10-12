@@ -15,19 +15,19 @@ Hi Jayne,
 
 Your background spans accounting and fitness, and Fitstop names progression as a pillar.
 
-FitXpress turns two phone photos into 80+ body measurements. When a member's check-in comes round, which numbers does your coach have in hand?
+FitXpress can return body composition estimates as well as 80+ body measurements. When a member's check-in comes round, what does your coach want to talk through first?
 
 Vadim
 
-**Char count:** 250 / 600
+**Char count:** 276 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Jayne,
 
-A member could add a scan to that check-in, and it would sit beside the coach's own numbers.
+A member could bring a scan from their own phone to that check-in and choose which measurements to talk through.
 
-Worth a short call to see if it fits? Or tell me who handles the Fitstop member app, and I will ask them.
+Would a short call be useful? If member experience at Fitstop sits with another person, please tell me who.
 
 Vadim
 
-**Char count:** 217 / 550
+**Char count:** 239 / 550

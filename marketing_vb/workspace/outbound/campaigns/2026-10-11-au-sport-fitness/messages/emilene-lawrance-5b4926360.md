@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Emilene,
 
-Had to say hi as a Fitstop studio owner. Global Games gives ALL STAR and PRO divisions, and a studio hosts both kinds of member.
+Lift, Perform, Condition and Sweat give a Fitstop studio four different kinds of session to coach.
 
-FitXpress converts two phone photos to 80+ body measurements. How do your coaches follow the everyday member's progress alongside the keen competitor's?
+A guided scan from a front and a side photo returns 80+ body measurements. Which of the four styles do your members ask about most when they want to see their own progress?
 
 Vadim
 
-**Char count:** 302 / 600
+**Char count:** 292 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Emilene,
 
-The scan fits the member who simply wants to see change, with no event needed.
+A member curious about progress in one style could take a scan at home and look back on the ones they pick.
 
-Shall we set up a short call? If a colleague at Fitstop owns the app, please point me to them.
+Could we set up a call? If digital projects at Fitstop are run by someone else, a pointer to them would do.
 
 Vadim
 
-**Char count:** 194 / 550
+**Char count:** 236 / 550

@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: director and owner of four Fernwood clubs, Narre Warren through to Pakenham
-- Proof point: two photos, 80+ body measurements, under 45 seconds
+- Proof point: two photos, 80+ body measurements
 
 ---
 
@@ -15,19 +15,19 @@ Hi Guneet,
 
 Owning Fernwood clubs from Narre Warren through to Pakenham gives you a wide view of how members begin.
 
-Our two-photo phone scan returns 80+ body measurements from a member's own phone. Do new members at all of your clubs get their starting point marked the same way?
+Our two-photo phone scan returns 80+ body measurements from a member's own phone. How do new members at your clubs get their starting point marked?
 
 Vadim
 
-**Char count:** 287 / 600
+**Char count:** 271 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Guneet,
 
-For several clubs, one white-label page means every member opens the same scan whichever club she belongs to. Every scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+Across clubs, a member could take the same scan at home and bring it to her first conversation, a starting point she holds herself.
 
-Short call? If head office has an owner for member experience, I would take that name.
+If you can spare time for a call, I will keep it to what members would see. A franchise performance lead at head office who looks at onboarding would be the right name.
 
 Vadim
 
-**Char count:** 314 / 550
+**Char count:** 320 / 550

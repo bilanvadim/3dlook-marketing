@@ -3,7 +3,7 @@
  "checked": 325,
  "source": "people-validated.csv (send == SEND)",
  "batch": null,
- "generated": "2026-10-11T17:50:59",
+ "generated": "2026-10-12T09:44:46",
  "hard": [],
  "soft": [
   [
@@ -18,18 +18,8 @@
   ],
   [
    "no company line",
-   "brendon-levenson-57821a68 M1",
-   "«Jetts Fitness» is not named: check it has a line only this company gets"
-  ],
-  [
-   "no company line",
    "janet-binns-97015636 M1",
    "«Fernwood Fitness» is not named: check it has a line only this company gets"
-  ],
-  [
-   "no company line",
-   "david-upton-1867aa35 M1",
-   "«Jetts Fitness» is not named: check it has a line only this company gets"
   ],
   [
    "no company line",
@@ -55,11 +45,6 @@
    "no company line",
    "ric-caldwell-9a994444 M1",
    "«Fernwood Fitness» is not named: check it has a line only this company gets"
-  ],
-  [
-   "no company line",
-   "angelique-woods-16a39714 M1",
-   "«Jetts Fitness» is not named: check it has a line only this company gets"
   ],
   [
    "no company line",
@@ -102,6 +87,16 @@
    "«Fernwood Fitness» is not named: check it has a line only this company gets"
   ],
   [
+   "greeting",
+   "gym-genesis-88933854 M1",
+   "«Hi there,» has no «Gym»"
+  ],
+  [
+   "greeting",
+   "gym-genesis-88933854 M2",
+   "«Hi there,» has no «Gym»"
+  ],
+  [
    "no company line",
    "gym-genesis-88933854 M1",
    "«Genesis Health + Fitness» is not named: check it has a line only this company gets"
@@ -140,6 +135,16 @@
    "no company line",
    "ann-wilkesmann-6aa477119 M1",
    "«Fernwood Fitness» is not named: check it has a line only this company gets"
+  ],
+  [
+   "greeting",
+   "l-b-31160a120 M1",
+   "«Hi there,» has no «L»"
+  ],
+  [
+   "greeting",
+   "l-b-31160a120 M2",
+   "«Hi there,» has no «L»"
   ],
   [
    "no company line",
@@ -197,9 +202,14 @@
    "«Viva Leisure» is not named: check it has a line only this company gets"
   ],
   [
-   "no company line",
-   "scanlan-karen M1",
-   "«Jetts Fitness» is not named: check it has a line only this company gets"
+   "greeting",
+   "kx-pilates-glen-waverley-96794393 M1",
+   "«Hi there,» has no «KX»"
+  ],
+  [
+   "greeting",
+   "kx-pilates-glen-waverley-96794393 M2",
+   "«Hi there,» has no «KX»"
   ],
   [
    "no company line",
@@ -240,6 +250,16 @@
    "no company line",
    "tedy-ferreira M1",
    "«Fernwood Fitness» is not named: check it has a line only this company gets"
+  ],
+  [
+   "greeting",
+   "jetts-st-leonards-a860a5114 M1",
+   "«Hi there,» has no «Jetts»"
+  ],
+  [
+   "greeting",
+   "jetts-st-leonards-a860a5114 M2",
+   "«Hi there,» has no «Jetts»"
   ],
   [
    "no company line",
@@ -297,9 +317,24 @@
    "«Fernwood Fitness» is not named: check it has a line only this company gets"
   ],
   [
-   "no company line",
+   "greeting",
+   "jetts-oakleigh-6473a4155 M1",
+   "«Hi there,» has no «Jetts»"
+  ],
+  [
+   "greeting",
+   "jetts-oakleigh-6473a4155 M2",
+   "«Hi there,» has no «Jetts»"
+  ],
+  [
+   "greeting",
    "jetts-gym-mount-hutton-a069a2157 M1",
-   "«Jetts Fitness» is not named: check it has a line only this company gets"
+   "«Hi there,» has no «Jetts Gym»"
+  ],
+  [
+   "greeting",
+   "jetts-gym-mount-hutton-a069a2157 M2",
+   "«Hi there,» has no «Jetts Gym»"
   ],
   [
    "no company line",
@@ -367,14 +402,49 @@
    "«Vision Personal Training» is not named: check it has a line only this company gets"
   ],
   [
+   "greeting",
+   "gh-undefined-218583350 M1",
+   "«Hi there,» has no «GH»"
+  ],
+  [
+   "greeting",
+   "gh-undefined-218583350 M2",
+   "«Hi there,» has no «GH»"
+  ],
+  [
    "no company line",
    "gh-undefined-218583350 M1",
    "«Viva Leisure» is not named: check it has a line only this company gets"
   ],
   [
    "no company line",
+   "stacey-flentje-8b9b19361 M1",
+   "«Fernwood Fitness» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
    "travis-spencer-83a2aa370 M1",
    "«Viva Leisure» is not named: check it has a line only this company gets"
+  ],
+  [
+   "greeting",
+   "st-leonards-body-fit-training-9284aa341 M1",
+   "«Hi there,» has no «St Leonards»"
+  ],
+  [
+   "greeting",
+   "st-leonards-body-fit-training-9284aa341 M2",
+   "«Hi there,» has no «St Leonards»"
+  ],
+  [
+   "greeting",
+   "pf-syd-olympic-park-a18693431 M1",
+   "«Hi there,» has no «PF»"
+  ],
+  [
+   "greeting",
+   "pf-syd-olympic-park-a18693431 M2",
+   "«Hi there,» has no «PF»"
   ],
   [
    "no company line",
@@ -417,1199 +487,9 @@
    "«Vision Personal Training» is not named: check it has a line only this company gets"
   ],
   [
-   "M2 closing ask repeated",
-   "Fernwood Fitness ×3",
-   "«open to a short call?»: janet-binns-97015636, emma-tilley-0ba2619b, melissa-jones-0529462bb"
-  ],
-  [
-   "M2 closing ask repeated",
-   "Vision Personal Training ×2",
-   "«would a short call suit?»: rachel-macedo-0b501679, victor-ramirez-1293b510b"
-  ],
-  [
-   "M2 closing ask repeated",
-   "Vision Personal Training ×2",
-   "«might be worth a quick chat?»: daniel-collins-57132a89, rebeccacarson2"
-  ],
-  [
-   "M2 closing ask repeated",
-   "Viva Leisure ×3",
-   "«open to a quick chat?»: sean-hodges-4436ba88, thomas-hepburn-50949997, arshad-hussein-14358a231"
-  ],
-  [
-   "M2 closing ask repeated",
-   "Vision Personal Training ×3",
-   "«open to one?»: sarahbroadhottot, jeremy-saville-195836311, haydn-kiel-53b835319"
-  ],
-  [
-   "M2 closing ask repeated",
-   "Viva Leisure ×3",
-   "«worth a quick chat?»: leigh-j-24a0b1a0, angelo-konstantinou-b21aa31aa, travis-spencer-83a2aa370"
-  ],
-  [
-   "M2 closing ask repeated",
-   "Vision Personal Training ×2",
-   "«would a call this week work?»: kaillum-key-46718a298, benny-russell-808a3226b"
-  ],
-  [
-   "near-duplicate sentence",
-   "Viva Leisure: angela-tween-3a082457 / angelo-konstantinou-b21aa31aa",
-   "«two phone photos return 80+ body measurements.»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Viva Leisure: angela-tween-3a082457 / gh-undefined-218583350",
-   "«two phone photos return 80+ body measurements.»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Viva Leisure: angela-tween-3a082457 / travis-spencer-83a2aa370",
-   "«two phone photos return 80+ body measurements.»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Viva Leisure: angela-tween-3a082457 / pf-syd-olympic-park-a18693431",
-   "«two phone photos return 80+ body measurements.»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Viva Leisure: sean-hodges-4436ba88 / thomas-hepburn-50949997",
-   "«it returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Viva Leisure: thomas-hepburn-50949997 / travis-spencer-83a2aa370",
-   "«or name the person at plus fitness head office wh…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Viva Leisure: angelo-konstantinou-b21aa31aa / gh-undefined-218583350",
-   "«it takes two photos and returns 80+ body measurem…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Viva Leisure: kane-schrader-9916141bb / gh-undefined-218583350",
-   "«the scan runs on a member's phone from two photos…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Viva Leisure: travis-spencer-83a2aa370 / pf-syd-olympic-park-a18693431",
-   "«from two phone photos the scan returns 80+ body m…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: jessica-pupillo-04058763 / melissa-burn-73667636",
-   "«3dlook has worked with 100+ clients, and the club…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: jessica-pupillo-04058763 / mark-m-62a78818",
-   "«3dlook has worked with 100+ clients, and the club…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: jessica-pupillo-04058763 / fernwood-tuggeranong-6392095a",
-   "«3dlook has worked with 100+ clients, and the club…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: janet-binns-97015636 / melissa-mcglinn-8a264249",
-   "«we built a phone scan from two photos, front and…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: janet-binns-97015636 / michelle-baker-aba0244a",
-   "«we built a phone scan from two photos, front and…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: janet-binns-97015636 / stacey-flentje-8b9b19361",
-   "«we built a phone scan from two photos, front and…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: janet-binns-97015636 / lee-squire-a499641a",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: janet-binns-97015636 / souad-sakoua-790b60a6",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: janet-binns-97015636 / suzanne-herniman-98832096",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: janet-binns-97015636 / mel-antila-17171a165",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: janet-binns-97015636 / guneet-cheema-7a5102168",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: janet-binns-97015636 / lydia-tanios-a6a84b175",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: janet-binns-97015636 / fernwood-fitness-ballarat-60a208251",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: janet-binns-97015636 / mary-papazoglou-6584531b2",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: melissa-burn-73667636 / mark-m-62a78818",
-   "«3dlook has worked with 100+ clients, and the club…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: melissa-burn-73667636 / fernwood-tuggeranong-6392095a",
-   "«3dlook has worked with 100+ clients, and the club…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: melissa-burn-73667636 / lydia-tanios-a6a84b175",
-   "«or point me to whoever at head office looks after…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: melissa-robinson-0bbb2342 / clow-john-29144a18",
-   "«we offer a two-photo phone scan that returns 80+…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: melissa-robinson-0bbb2342 / moby-malik-096b16227",
-   "«we offer a two-photo phone scan that returns 80+…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: ric-caldwell-9a994444 / angela-williams-4948535b",
-   "«fitxpress is a phone scan from two photos that re…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: ric-caldwell-9a994444 / emma-tilley-0ba2619b",
-   "«fitxpress is a phone scan from two photos that re…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: ric-caldwell-9a994444 / hayley-richey-71a32b194",
-   "«fitxpress is a phone scan from two photos that re…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: ric-caldwell-9a994444 / susan-oliver-am-03788737a",
-   "«fitxpress is a phone scan from two photos that re…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: melissa-mcglinn-8a264249 / lee-squire-a499641a",
-   "«each scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: melissa-mcglinn-8a264249 / souad-sakoua-790b60a6",
-   "«each scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: melissa-mcglinn-8a264249 / suzanne-herniman-98832096",
-   "«each scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: melissa-mcglinn-8a264249 / mel-antila-17171a165",
-   "«each scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: melissa-mcglinn-8a264249 / guneet-cheema-7a5102168",
-   "«each scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: melissa-mcglinn-8a264249 / lydia-tanios-a6a84b175",
-   "«each scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: melissa-mcglinn-8a264249 / fernwood-fitness-ballarat-60a208251",
-   "«each scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: melissa-mcglinn-8a264249 / mary-papazoglou-6584531b2",
-   "«each scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: melissa-mcglinn-8a264249 / stacey-flentje-8b9b19361",
-   "«each scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: clow-john-29144a18 / hayley-richey-71a32b194",
-   "«the capture needs only a phone with on-screen gui…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: mark-m-62a78818 / lee-squire-a499641a",
-   "«our scan runs from two phone photos and returns 8…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: mark-m-62a78818 / fernwood-tuggeranong-6392095a",
-   "«our scan runs from two phone photos and returns 8…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: mark-m-62a78818 / ann-wilkesmann-6aa477119",
-   "«our scan runs from two phone photos and returns 8…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: mark-m-62a78818 / souad-sakoua-790b60a6",
-   "«our scan runs from two phone photos and returns 8…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: mark-m-62a78818 / adriana-ampuero-1ab830b0",
-   "«our scan runs from two phone photos and returns 8…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: mark-m-62a78818 / steve-brookes-827332b5",
-   "«our scan runs from two phone photos and returns 8…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: mark-m-62a78818 / cheryl-williams-302441bb",
-   "«our scan runs from two phone photos and returns 8…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: mark-m-62a78818 / emma-tilley-0ba2619b",
-   "«our scan runs from two phone photos and returns 8…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: mark-m-62a78818 / mary-papazoglou-6584531b2",
-   "«our scan runs from two phone photos and returns 8…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: michelle-baker-aba0244a / angela-williams-4948535b",
-   "«we built a phone scan from two photos, front and…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: ben-cook-6298161b / cheryl-williams-302441bb",
-   "«fitxpress turns two phone photos into 80+ body me…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: lee-squire-a499641a / fernwood-tuggeranong-6392095a",
-   "«the scan we use takes two phone photos and return…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: lee-squire-a499641a / ann-wilkesmann-6aa477119",
-   "«the scan we use takes two phone photos and return…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: lee-squire-a499641a / souad-sakoua-790b60a6",
-   "«the scan we use takes two phone photos and return…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: lee-squire-a499641a / steve-brookes-827332b5",
-   "«the scan we use takes two phone photos and return…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: lee-squire-a499641a / cheryl-williams-302441bb",
-   "«the scan we use takes two phone photos and return…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: lee-squire-a499641a / mary-papazoglou-6584531b2",
-   "«the scan we use takes two phone photos and return…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: lee-squire-a499641a / suzanne-herniman-98832096",
-   "«it returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: lee-squire-a499641a / mel-antila-17171a165",
-   "«it returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: lee-squire-a499641a / guneet-cheema-7a5102168",
-   "«it returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: lee-squire-a499641a / lydia-tanios-a6a84b175",
-   "«it returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: lee-squire-a499641a / fernwood-fitness-ballarat-60a208251",
-   "«it returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: lee-squire-a499641a / stacey-flentje-8b9b19361",
-   "«it returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: binish-mobeen-486b3825 / lydia-tanios-a6a84b175",
-   "«our scan returns 80+ body measurements from two p…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: binish-mobeen-486b3825 / fernwood-fitness-ballarat-60a208251",
-   "«our scan returns 80+ body measurements from two p…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: binish-mobeen-486b3825 / hayley-richey-71a32b194",
-   "«the capture runs on any phone, guided on screen.»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: anthony-dickens-fernwood-fitness-23bb4225 / moby-malik-096b16227",
-   "«we built a two-photo phone scan returning 80+ bod…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: anthony-dickens-fernwood-fitness-23bb4225 / fernwood-fitness-ballarat-60a208251",
-   "«when one member uses both, who at the club sees h…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: fernwood-tuggeranong-6392095a / ann-wilkesmann-6aa477119",
-   "«the scan we offer works from two phone photos and…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: fernwood-tuggeranong-6392095a / souad-sakoua-790b60a6",
-   "«the scan we offer works from two phone photos and…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: fernwood-tuggeranong-6392095a / steve-brookes-827332b5",
-   "«the scan we offer works from two phone photos and…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: fernwood-tuggeranong-6392095a / mary-papazoglou-6584531b2",
-   "«the scan we offer works from two phone photos and…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: angela-williams-4948535b / emma-tilley-0ba2619b",
-   "«we offer a phone scan from two photos that return…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: angela-williams-4948535b / hayley-richey-71a32b194",
-   "«we offer a phone scan from two photos that return…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: angela-williams-4948535b / susan-oliver-am-03788737a",
-   "«we offer a phone scan from two photos that return…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: ann-wilkesmann-6aa477119 / souad-sakoua-790b60a6",
-   "«our scan takes two phone photos and returns 80+ b…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: ann-wilkesmann-6aa477119 / steve-brookes-827332b5",
-   "«our scan takes two phone photos and returns 80+ b…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: ann-wilkesmann-6aa477119 / cheryl-williams-302441bb",
-   "«our scan takes two phone photos and returns 80+ b…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: ann-wilkesmann-6aa477119 / tedy-ferreira",
-   "«our scan takes two phone photos and returns 80+ b…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: ann-wilkesmann-6aa477119 / kim-bullock-5931a8147",
-   "«our scan takes two phone photos and returns 80+ b…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: ann-wilkesmann-6aa477119 / mary-papazoglou-6584531b2",
-   "«our scan takes two phone photos and returns 80+ b…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: souad-sakoua-790b60a6 / steve-brookes-827332b5",
-   "«our scan needs two phone photos and returns 80+ b…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: souad-sakoua-790b60a6 / cheryl-williams-302441bb",
-   "«our scan needs two phone photos and returns 80+ b…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: souad-sakoua-790b60a6 / kim-bullock-5931a8147",
-   "«our scan needs two phone photos and returns 80+ b…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: souad-sakoua-790b60a6 / mary-papazoglou-6584531b2",
-   "«our scan needs two phone photos and returns 80+ b…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: souad-sakoua-790b60a6 / melissa-jones-0529462bb",
-   "«our scan needs two phone photos and returns 80+ b…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: souad-sakoua-790b60a6 / suzanne-herniman-98832096",
-   "«a scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: souad-sakoua-790b60a6 / mel-antila-17171a165",
-   "«a scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: souad-sakoua-790b60a6 / guneet-cheema-7a5102168",
-   "«a scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: souad-sakoua-790b60a6 / lydia-tanios-a6a84b175",
-   "«a scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: souad-sakoua-790b60a6 / fernwood-fitness-ballarat-60a208251",
-   "«a scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: souad-sakoua-790b60a6 / stacey-flentje-8b9b19361",
-   "«a scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: adriana-ampuero-1ab830b0 / steve-brookes-827332b5",
-   "«our scan, fitxpress, works from two phone photos,…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: steve-brookes-827332b5 / cheryl-williams-302441bb",
-   "«our scan runs from two phone photos and returns 8…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: steve-brookes-827332b5 / emma-tilley-0ba2619b",
-   "«our scan runs from two phone photos and returns 8…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: steve-brookes-827332b5 / mary-papazoglou-6584531b2",
-   "«our scan runs from two phone photos and returns 8…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: cheryl-williams-302441bb / emma-tilley-0ba2619b",
-   "«fitxpress takes two phone photos and returns 80+…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: cheryl-williams-302441bb / mary-papazoglou-6584531b2",
-   "«fitxpress takes two phone photos and returns 80+…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: suzanne-herniman-98832096 / mel-antila-17171a165",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: suzanne-herniman-98832096 / guneet-cheema-7a5102168",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: suzanne-herniman-98832096 / lydia-tanios-a6a84b175",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: suzanne-herniman-98832096 / fernwood-fitness-ballarat-60a208251",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: suzanne-herniman-98832096 / mary-papazoglou-6584531b2",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: suzanne-herniman-98832096 / stacey-flentje-8b9b19361",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: emma-tilley-0ba2619b / mary-papazoglou-6584531b2",
-   "«fitxpress is a scan from two phone photos that re…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: mel-antila-17171a165 / guneet-cheema-7a5102168",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: mel-antila-17171a165 / lydia-tanios-a6a84b175",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: mel-antila-17171a165 / fernwood-fitness-ballarat-60a208251",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: mel-antila-17171a165 / mary-papazoglou-6584531b2",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: mel-antila-17171a165 / stacey-flentje-8b9b19361",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: guneet-cheema-7a5102168 / lydia-tanios-a6a84b175",
-   "«every scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: guneet-cheema-7a5102168 / fernwood-fitness-ballarat-60a208251",
-   "«every scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: guneet-cheema-7a5102168 / mary-papazoglou-6584531b2",
-   "«every scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: guneet-cheema-7a5102168 / stacey-flentje-8b9b19361",
-   "«every scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: lydia-tanios-a6a84b175 / fernwood-fitness-ballarat-60a208251",
-   "«fitxpress returns 80+ body measurements from two…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: lydia-tanios-a6a84b175 / mary-papazoglou-6584531b2",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: lydia-tanios-a6a84b175 / stacey-flentje-8b9b19361",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: kim-bullock-5931a8147 / mary-papazoglou-6584531b2",
-   "«our scan takes two photos and returns 80+ body me…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: fernwood-fitness-ballarat-60a208251 / mary-papazoglou-6584531b2",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: fernwood-fitness-ballarat-60a208251 / stacey-flentje-8b9b19361",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fernwood Fitness: mary-papazoglou-6584531b2 / stacey-flentje-8b9b19361",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitstop: paul-collins-78352720 / sam-seaton-98411b16b",
-   "«a member snaps two photos on a phone, and fitxpre…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitstop: susie-jackson-99039a53 / craig-anderson-29900227a",
-   "«fitxpress returns 80+ body measurements from a pa…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitstop: shami-sivan-a1922329 / nebojsa-vujic-613b91116",
-   "«guided on screen, our scan takes two phone photos…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitstop: shami-sivan-a1922329 / brenna-dillon-64b6a227a",
-   "«guided on screen, our scan takes two phone photos…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitstop: bentoleafoa / jaynevaiao",
-   "«fitxpress needs only two phone photos to give a m…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitstop: bentoleafoa / mark-vaiao-04a784a2",
-   "«fitxpress needs only two phone photos to give a m…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitstop: ameer-madhanpall-2b1563129 / chandell-fretwell-3618bb106",
-   "«a scan from two phone photos returns 80+ body mea…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitstop: jaynevaiao / jesse-malseed-24a094a1",
-   "«fitxpress turns two phone photos into 80+ body me…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitstop: jaynevaiao / mark-vaiao-04a784a2",
-   "«fitxpress turns two phone photos into 80+ body me…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitstop: jaynevaiao / kendall-winslow-6b81501aa",
-   "«fitxpress turns two phone photos into 80+ body me…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitstop: jaynevaiao / emilene-lawrance-5b4926360",
-   "«fitxpress turns two phone photos into 80+ body me…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitstop: nebojsa-vujic-613b91116 / brenna-dillon-64b6a227a",
-   "«if member experience sits with someone else at fi…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitstop: rhianna-buchanan-140429bb / lauren-nash-93a465347",
-   "«if someone at fitstop looks after the app, an int…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitstop: jesse-malseed-24a094a1 / mark-vaiao-04a784a2",
-   "«fitxpress reads two phone photos and returns 80+…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitstop: jesse-malseed-24a094a1 / jasmine-brierley-129498141",
-   "«fitxpress reads two phone photos and returns 80+…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitstop: jesse-malseed-24a094a1 / emilene-lawrance-5b4926360",
-   "«fitxpress reads two phone photos and returns 80+…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitstop: mark-vaiao-04a784a2 / kendall-winslow-6b81501aa",
-   "«fitxpress turns two phone photos into 80+ body me…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitstop: mark-vaiao-04a784a2 / emilene-lawrance-5b4926360",
-   "«fitxpress turns two phone photos into 80+ body me…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitstop: josephine-tuah-27a0a0169 / brenna-dillon-64b6a227a",
-   "«a first session is booked in the app, and first-t…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitstop: jasmine-brierley-129498141 / andrew-papadopoulos-1992a341a",
-   "«fitxpress is a two-photo phone scan that returns…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "REVL Training: benseymour10 / adam-coombes-35602a2b7",
-   "«a guided scan returns 80+ body measurements from…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: scott-bumpstead / jason-clark-a2210a3b",
-   "«might be worth a quick chat, or point me to whoev…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: scott-bumpstead / katelyn-farmer-181914199",
-   "«might be worth a quick chat, or point me to whoev…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: scott-bumpstead / anthonyhoangbft",
-   "«might be worth a quick chat, or point me to whoev…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: scott-bumpstead / rhys-mathieson-88a873179",
-   "«might be worth a quick chat, or point me to whoev…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: scott-bumpstead / matt-jones-a43938224",
-   "«might be worth a quick chat, or point me to whoev…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: scott-bumpstead / luan-scherman-6a67381b9",
-   "«might be worth a quick chat, or point me to whoev…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: scott-bumpstead / st-leonards-body-fit-training-9284aa341",
-   "«might be worth a quick chat, or point me to whoev…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: philip-grasso-b9503933 / adem-bek-459313269",
-   "«hi philip, curious about your take on podium, the…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: philip-grasso-b9503933 / rhys-mathieson-88a873179",
-   "«the scan returns 80+ body measurements, , from a…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: philip-grasso-b9503933 / steve-grace-37068285",
-   "«i can walk through it in a short call, or you cou…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: philip-grasso-b9503933 / sam-pirolo-402a5016b",
-   "«i can walk through it in a short call, or you cou…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: david-aitchison-12b97535 / richard-burnet-2273b05",
-   "«a guided two-photo scan, front and side, returns…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: richard-burnet-2273b05 / zanellemarama123",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: richard-burnet-2273b05 / anthonyhoangbft",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: richard-burnet-2273b05 / matt-jones-a43938224",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: richard-burnet-2273b05 / luan-scherman-6a67381b9",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: jason-clark-a2210a3b / stef-mathieson-034b5a156",
-   "«the scan takes two photos, front and side, and re…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: jason-clark-a2210a3b / katelyn-farmer-181914199",
-   "«worth a quick chat, or point me to whoever runs m…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: jason-clark-a2210a3b / rhys-mathieson-88a873179",
-   "«worth a quick chat, or point me to whoever runs m…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: jason-clark-a2210a3b / matt-jones-a43938224",
-   "«worth a quick chat, or point me to whoever runs m…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: jason-clark-a2210a3b / luan-scherman-6a67381b9",
-   "«worth a quick chat, or point me to whoever runs m…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: jason-clark-a2210a3b / zoe-clark-401380363",
-   "«worth a quick chat, or point me to whoever runs m…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: jason-clark-a2210a3b / st-leonards-body-fit-training-9284aa341",
-   "«worth a quick chat, or point me to whoever runs m…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: sarina-sham-64b20321 / rhys-mathieson-88a873179",
-   "«hi sarina, here is the idea in one line: the scan…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: kirsten-lea / zoe-clark-401380363",
-   "«hi kirsten, wanted to reach out about bft's trial…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: laura-carroll-067a93120 / stef-mathieson-034b5a156",
-   "«a member takes the scan on their own phone, and i…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: laura-carroll-067a93120 / katelyn-farmer-181914199",
-   "«open to a short call, or a pointer to whoever run…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: laura-carroll-067a93120 / anthonyhoangbft",
-   "«open to a short call, or a pointer to whoever run…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: laura-carroll-067a93120 / rhys-mathieson-88a873179",
-   "«open to a short call, or a pointer to whoever run…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: laura-carroll-067a93120 / luan-scherman-6a67381b9",
-   "«open to a short call, or a pointer to whoever run…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: laura-carroll-067a93120 / zoe-clark-401380363",
-   "«open to a short call, or a pointer to whoever run…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: laura-carroll-067a93120 / st-leonards-body-fit-training-9284aa341",
-   "«open to a short call, or a pointer to whoever run…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: zanellemarama123 / matt-jones-a43938224",
-   "«it returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: steve-grace-37068285 / sam-pirolo-402a5016b",
-   "«i can show it in a short call, or you could point…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: steve-grace-37068285 / anthonyhoangbft",
-   "«i can show it in a short call, or you could point…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: kristy-ellis-473595195 / st-leonards-body-fit-training-9284aa341",
-   "«3dlook has worked with 100+ clients, and the stud…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: katelyn-farmer-181914199 / anthonyhoangbft",
-   "«worth a quick chat, or a pointer to whoever runs…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: katelyn-farmer-181914199 / rhys-mathieson-88a873179",
-   "«worth a quick chat, or a pointer to whoever runs…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: katelyn-farmer-181914199 / matt-jones-a43938224",
-   "«worth a quick chat, or a pointer to whoever runs…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: katelyn-farmer-181914199 / luan-scherman-6a67381b9",
-   "«worth a quick chat, or a pointer to whoever runs…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: katelyn-farmer-181914199 / zoe-clark-401380363",
-   "«worth a quick chat, or a pointer to whoever runs…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: katelyn-farmer-181914199 / st-leonards-body-fit-training-9284aa341",
-   "«worth a quick chat, or a pointer to whoever runs…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: sam-pirolo-402a5016b / rhys-mathieson-88a873179",
-   "«a guided two-photo scan returns 80+ body measurem…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: sam-pirolo-402a5016b / matt-jones-a43938224",
-   "«a guided two-photo scan returns 80+ body measurem…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: sam-pirolo-402a5016b / zoe-clark-401380363",
-   "«a guided two-photo scan returns 80+ body measurem…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: anthonyhoangbft / luan-scherman-6a67381b9",
-   "«a two-photo scan returns 80+ body measurements.»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: anthonyhoangbft / matt-jones-a43938224",
-   "«worth a short call, or a pointer to whoever looks…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: anthonyhoangbft / zoe-clark-401380363",
-   "«worth a short call, or a pointer to whoever looks…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: rhys-mathieson-88a873179 / stef-mathieson-034b5a156",
-   "«a guided two-photo scan returns 80+ body measurem…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: rhys-mathieson-88a873179 / matt-jones-a43938224",
-   "«a guided two-photo scan returns 80+ body measurem…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: rhys-mathieson-88a873179 / zoe-clark-401380363",
-   "«a guided two-photo scan returns 80+ body measurem…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: rhys-mathieson-88a873179 / st-leonards-body-fit-training-9284aa341",
-   "«a guided two-photo scan returns 80+ body measurem…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: rhys-mathieson-88a873179 / luan-scherman-6a67381b9",
-   "«open to a quick chat, or a pointer to whoever own…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: matt-jones-a43938224 / zoe-clark-401380363",
-   "«a guided two-photo scan returns 80+ body measurem…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: matt-jones-a43938224 / luan-scherman-6a67381b9",
-   "«worth a quick chat, or point me to whoever owns m…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: matt-jones-a43938224 / st-leonards-body-fit-training-9284aa341",
-   "«worth a quick chat, or point me to whoever owns m…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: luan-scherman-6a67381b9 / st-leonards-body-fit-training-9284aa341",
-   "«hi luan, quick idea for bft north lakes: the tria…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "BFT: zoe-clark-401380363 / st-leonards-body-fit-training-9284aa341",
-   "«hi zoe, wanted to reach out about the bft trial,…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Genesis Health + Fitness: john-pirlo-1b63645 / guy-franklin-3713b580",
-   "«it returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Genesis Health + Fitness: melissa-fraser-68692417 / gym-genesis-88933854",
-   "«a member could take a guided scan on their own ph…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Genesis Health + Fitness: melissa-fraser-68692417 / tom-bayford-b0553010a",
-   "«a member could take a guided scan on their own ph…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Genesis Health + Fitness: gym-genesis-88933854 / tom-bayford-b0553010a",
-   "«members can take a guided scan on their phone, an…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Australian Sports Nutrition: peter-reed-a3149a29 / david-wilkie-884088174",
-   "«fitxpress is a two-photo body scan that returns 8…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "KX Pilates: james-trenerry-a7915448 / sophie-patient-b538671b8",
-   "«a phone scan from two photos gives 80+ body measu…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "KX Pilates: linda-wisbey-846503117 / divya-hegde-11a22a243",
-   "«or point me to the person at kx pilates head offi…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitness Enhancement: tanyabrinsden / scott-hunt-90b32045",
-   "«fitxpress is a two-photo body scan, taken on any…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitness Enhancement: tanyabrinsden / sue-stedman-bb204918b",
-   "«fitxpress is a two-photo body scan, taken on any…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Fitness Enhancement: scott-hunt-90b32045 / sue-stedman-bb204918b",
-   "«fitxpress is a two-photo body scan, taken on any…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Revo Fitness: andrewbholder / dainmoreton",
-   "«the scan returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Vision Personal Training: daniel-collins-57132a89 / andrewsvision",
-   "«it returns 80+ body measurements, .»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Vision Personal Training: benny-russell-808a3226b / kyle-johnston-40590391",
-   "«hi benny, 3dlook has worked with 100+ clients.»"
-  ],
-  [
-   "near-duplicate sentence",
-   "Vision Personal Training: victor-ramirez-1293b510b / thomas-mclaughlin-45b12695",
-   "«the scan runs on the client's own phone from two…»"
-  ],
-  [
-   "near-duplicate sentence",
-   "TotalFusion: sam-merza-5b0743198 / kane-bonke-17a40622a",
-   "«it returns 80+ body measurements, .»"
-  ],
-  [
    "sentence opening repeated",
-   "BFT ×3",
-   "«might be worth a quick…»: david-aitchison-12b97535, liana-nio-a46b897, scott-bumpstead"
-  ],
-  [
-   "sentence opening repeated",
-   "The Yard Gym ×3",
-   "«fitxpress is a two photo…»: brendon-li-on-wing-2b88b831, natalia-ferrari-63072119a, sienna-ettingshausen-445403236"
-  ],
-  [
-   "sentence opening repeated",
-   "BFT ×8",
-   "«the scan returns 80+ body…»: liana-nio-a46b897, matt-jones-a43938224, philip-grasso-b9503933, rhys-mathieson-88a873179"
-  ],
-  [
-   "sentence opening repeated",
-   "Fitness Passport ×4",
-   "«would a short call be…»: brettcondron, colirvine, damientampling, robmitchelllinkedin"
-  ],
-  [
-   "sentence opening repeated",
-   "Fernwood Fitness ×6",
-   "«the scan returns 80+ body…»: fernwood-fitness-ballarat-60a208251, janet-binns-97015636, lydia-tanios-a6a84b175, mary-papazoglou-6584531b2"
-  ],
-  [
-   "sentence opening repeated",
-   "BFT ×6",
-   "«a guided two photo scan…»: david-aitchison-12b97535, luan-scherman-6a67381b9, matt-jones-a43938224, rhys-mathieson-88a873179"
-  ],
-  [
-   "sentence opening repeated",
-   "BFT ×4",
-   "«a two photo scan returns…»: anthonyhoangbft, richard-burnet-2273b05, sarina-sham-64b20321, steve-grace-37068285"
-  ],
-  [
-   "sentence opening repeated",
-   "BFT ×3",
-   "«worth a quick chat or…»: jason-clark-a2210a3b, katelyn-farmer-181914199, matt-jones-a43938224"
-  ],
-  [
-   "sentence opening repeated",
-   "Fitness Enhancement ×3",
-   "«fitxpress is a two photo…»: scott-hunt-90b32045, sue-stedman-bb204918b, tanyabrinsden"
-  ],
-  [
-   "sentence opening repeated",
-   "Fitness Enhancement ×3",
-   "«the scan returns 80+ body…»: scott-hunt-90b32045, sue-stedman-bb204918b, tanyabrinsden"
-  ],
-  [
-   "sentence opening repeated",
-   "Fernwood Fitness ×3",
-   "«is a short call worth…»: clow-john-29144a18, mel-antila-17171a165, tedy-ferreira"
-  ],
-  [
-   "sentence opening repeated",
-   "Vision Personal Training ×4",
-   "«two phone photos return 80+…»: kaillum-key-46718a298, kyle-johnston-40590391, marvin-mangubat-32a1b8141, rachel-macedo-0b501679"
-  ],
-  [
-   "sentence opening repeated",
-   "Viva Leisure ×3",
-   "«a short call could show…»: kane-schrader-9916141bb, sean-hodges-4436ba88, travis-spencer-83a2aa370"
-  ],
-  [
-   "sentence opening repeated",
-   "Vision Personal Training ×3",
-   "«two photos 80+ body measurements…»: jack-smith-829760100, rebeccacarson2, sarahbroadhottot"
-  ],
-  [
-   "sentence opening repeated",
-   "BFT ×3",
-   "«open to a quick chat…»: luan-scherman-6a67381b9, rhys-mathieson-88a873179, st-leonards-body-fit-training-9284aa341"
+   "Jetts Fitness ×3",
+   "«i would value a conversation…»: angelique-woods-16a39714, david-upton-1867aa35, sam-bhandari-0a477a42a"
   ]
  ]
 }

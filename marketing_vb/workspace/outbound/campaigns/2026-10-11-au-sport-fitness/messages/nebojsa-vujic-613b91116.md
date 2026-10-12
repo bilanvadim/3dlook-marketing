@@ -15,19 +15,19 @@ Hi Nebojsa,
 
 Noticed your operations and people-leadership background. With four session styles, a busy week at Fitstop has a lot of coaching shifts to cover.
 
-Each scan starts from two phone photos and returns 80+ body measurements. Where do member check-ins fit into your coaches' week?
+From a front and a side photo taken at home, the scan returns 80+ body measurements. Where do member check-ins fit into your coaches' week?
 
 Vadim
 
-**Char count:** 295 / 600
+**Char count:** 306 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Nebojsa,
 
-Nothing to install in the studio: the member scans on a phone and the coach opens it when time allows.
+A member could scan on their own phone with on-screen guidance, and what comes back is theirs to share with a coach.
 
-Could we have a short call about it? If member experience sits with someone else at Fitstop, I would take that pointer too.
+Happy to go through it by phone whenever the week allows. The operations lead for Fitstop studios might be the better person, and I would take that pointer.
 
 Vadim
 
-**Char count:** 247 / 550
+**Char count:** 294 / 550

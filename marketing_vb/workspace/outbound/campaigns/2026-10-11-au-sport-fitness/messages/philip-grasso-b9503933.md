@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: BFT business owner (alias row); PODIUM, BF3
-- Proof point: BF3 company fact; 80+ body measurements (proof-points.md); speed wording
+- Proof point: BF3 company fact; 80+ body measurements (proof-points.md)
 
 ---
 
@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Philip,
 
-Worth a look at how it works? The scan returns 80+ body measurements, under 45 seconds from the photos to structured results, from a link the studio sends.
+For a member heading into PODIUM, a scan at home could give a set of 80+ body measurements to look over during preparation, with the member choosing what to show a coach. Two photos, front and side, on any phone.
 
-I can walk through it in a short call, or you could point me to whoever runs member experience at BFT.
+Would a short call next week work for you? If PODIUM sits with someone at BFT head office, I am happy to be pointed to them.
 
 Vadim
 
-**Char count:** 278 / 550
+**Char count:** 357 / 550

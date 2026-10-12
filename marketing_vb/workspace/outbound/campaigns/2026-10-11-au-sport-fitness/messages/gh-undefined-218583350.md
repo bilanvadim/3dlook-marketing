@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: Managing Director title at Plus Fitness, empty profile and no usable name
-- Proof point: two photos, 80+ body measurements (proof-points.md); 100+ clients (aggregate)
+- Proof point: two photos, 80+ body measurements (proof-points.md)
 
 ---
 
@@ -15,21 +15,21 @@ Hi there,
 
 With local 24/7 gyms across Australia, any new member capability at Plus Fitness has to suit clubs of different kinds.
 
-The scan takes two phone photos and returns 80+ body measurements. A club needs nothing installed.
+It needs two phone photos and gives 80+ body measurements, with nothing installed in a club.
 
 How does Plus Fitness decide on new member-facing technology for its clubs?
 
 Vadim
 
-**Char count:** 313 / 600
+**Char count:** 307 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi there,
 
-A scan can reach Plus Fitness members through one integration. 3DLOOK has worked with 100+ clients.
+For a Plus Fitness member, the scan is a guided capture on their own phone, taken at home or at the club.
 
-Would a quick call be useful? If someone else at Viva owns member features, point me to them.
+I can walk through what a member would see on a short call whenever it helps. If member-facing technology sits with someone else on your team, point me their way.
 
 Vadim
 
-**Char count:** 212 / 550
+**Char count:** 287 / 550

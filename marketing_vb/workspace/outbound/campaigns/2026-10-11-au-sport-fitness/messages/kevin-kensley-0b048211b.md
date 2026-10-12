@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: owner of Fitstop Caloundra; bio line about loving the job and the people
-- Proof point: FS1 four styles; two photos, 80+ body measurements (proof-points.md)
+- Proof point: FS2 Global Games; two photos, 80+ body measurements (proof-points.md)
 
 ---
 
@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Kevin,
 
-Your bio says you love the people you work with every day. At Fitstop Caloundra they move through four session styles.
+Your bio says you love the people you work with every day. Global Games lets two of them team up across Fitstop's four stations.
 
-Two photos from a phone return 80+ body measurements through FitXpress. What would you say to a Caloundra member who wants proof that a stretch across those styles has changed something?
+Front and side photos go into FitXpress and 80+ body measurements come out. What would you want a Caloundra pair to be able to look back on once the event is over?
 
 Vadim
 
-**Char count:** 324 / 600
+**Char count:** 311 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Kevin,
 
-The member does the scan on their own phone, and the studio decides what to look at with them.
+Each member in a pair could keep their own scan from their phone and show it to a coach if they choose to.
 
-Interested in a short call? Or if another person at Fitstop runs the member app, I would be glad to go to them.
+I can explain it on a call if that helps. Whoever handles Fitstop's digital products is welcome to take it from here.
 
 Vadim
 
-**Char count:** 225 / 550
+**Char count:** 243 / 550

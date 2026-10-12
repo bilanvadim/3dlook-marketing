@@ -2,8 +2,8 @@
 product: fitxpress
 profile: vadim
 campaign: 2026-10-11-au-sport-fitness
-stage: 5 · messages written, QC failed (10/20), fix round pending
-updated: 2026-10-11
+stage: 6 · import built and recorded 2026-10-12; Vadim imports into closely.io
+updated: 2026-10-12
 ---
 
 # STATUS — 2026-10-11-au-sport-fitness (Vadim, Australia)
@@ -23,23 +23,29 @@ Stopped on Vadim's word on 2026-10-11 after the messages QC: «все запиш
 | 3 people | 342 = 316 from the export + 26 Apollo (Anytime 13, Vision PT 8, STRONG 5; 27 credits) | `sales-nav-raw/`, `apollo-*.csv`, `apollo-log.md`, `people-raw.csv` |
 | registry | 7 already messaged from vadim → FAIL; company-level burn for Fernwood, Fitstop, Sweat, Mosh, KIC, Hapana **waived by Vadim** (46 rows) via the new `--waive-companies` flag | `people-checked.csv` |
 | 4 validate | QC 18/20; Vadim approved + pools A, B, C promoted; **325 SEND**, 3 WEAK, 14 FAIL | `decisions.md`, `people-validated.csv`, `icp-validation-summary.md` |
-| 5 messages | 325 people / 650 messages in 12 batches; gate passes (0 hard, 321 soft); **QC 10/20 failed** | `messages/`, `card-messages.md`, `messages/_coordinator-scan-2026-10-11.txt` |
+| 5 messages | 2026-10-11: 650 written, QC 10/20. 2026-10-12 fix round: card rules 1-24 ("Coordinator decisions 2026-10-12"), three writer rounds (referral M2s regenerated at BFT, Jetts, KX, REVL, Genesis, UBX; sentence fixes elsewhere), QC2 13/20 after round 2, round 3 from the QC2 fix list verified mechanically: gate 0 hard / 79 soft (78 short company name), coordinator scan clean | `messages/`, `card-messages.md`, `messages/_fix*-2026-10-12.md`, `messages/_coordinator-scan-2026-10-12.txt`, QC `workspace/_quality/outbound/2026-10-12-message-sequencer-au-sport-fitness.md` |
 
 SEND by lane: referral 225, product 39, partnerships 22, operations 16, member-experience 13,
 technical-integration 10. Largest groups: Fernwood 36, Fitstop 33, Jetts 30, BFT 23 (cap 50).
 
-## Tomorrow: the fix round (QC report `workspace/_quality/outbound/2026-10-11-message-sequencer-au-sport-fitness.md`, fix list by batch with person_ids)
+## Next (2026-10-12)
 
-1. **Card first, before any writer runs** (edit `hypothesis.md`, then `card --for messages`):
-   - technical-lane data note: "deletable by scan ID" → deletion by scan identifier **on the customer's request**; photos deleted immediately after processing or within 30 days **per the customer's policy**; the deletion line goes in M2 only, never M1, and only in the technical-integration lane;
-   - call length: one rule campaign-wide. Default proposed: **no call length** (34 M2s name 10/15/20 minutes today). Ask Vadim if he wants one fixed length instead;
-   - give the speed sentence as a target shape, not one sentence to copy (it repeats 22× and 12×);
-   - add an M2 variation rule: every referral M2 carries a value line tied to that person's own M1 topic, its own easy-out target and closer; never ask a unit owner to judge whether it fits their club.
-2. **Regenerate the referral M2s** of `_batch-bft` (20) and `_batch-jetts-fitness` (23 ids in the report), keeping M1s. Then line-fix every other batch from the report's list, sending **the same rule list to every batch** (2026-10-07 lesson). Batch order for shared brands: fernwood-fitness-1, then -2 reading it. Write the missing `_summary-fernwood-fitness-2.md`.
-3. `check-messages` over the whole campaign + rerun `_coordinator-scan` (scratch checker: call length, deletion in M1, speed variants, first-five-words per company, shared sentences ≥5 per company); then a second opus QC. Below 12 → stop and tell Vadim.
-4. Vadim's checkpoint on a sample, then `build-import` → `outbound-registry.py record` (dry run first; pass `--waive-companies`-equivalent context: the six brands are already in vadim's registry) → commit + push.
+**Vadim approved the texts on 2026-10-12** («1. апрув 2. та не треба 3. всіх беремо»; `hypothesis.md` → "Vadim's decisions 2026-10-12 (messages)"): no call length; Jason Clark, Matt Eikenhout and the six Fitness and Lifestyle Group people are sent; Eamon H. (Mosh) stays HOLD.
 
-## Open items for Vadim (not blocking the fix round)
+- `closelyhq-import.csv`: **325 rows, check-import exit 0**, one file, cap 50 per group held. The 11 pool A profiles got their LinkedIn display first name back for closely's identity column (`decisions.md`, last line); their greetings stay without a name.
+- Registry: `outbound-registry.py record --profile vadim` done, 325 people, 44 companies (39 new). Mosh not recorded.
+- **Vadim:** import `closelyhq-import.csv` into closely.io and start the campaign. Replies are pulled by the nightly cron.
+
+### Fix round 2026-10-12 (done)
+
+- Card: technical-lane data note rewritten (customer's policy / customer's request, M2 only); referral M2 described; "Coordinator decisions 2026-10-12" rules 1-19, then 20-24 after QC2.
+- Round 1: one `message-sequencer` per batch from `_fix-<batch>-2026-10-12.md` (QC1 lines by person + coordinator scan); referral M2s regenerated from a per-person grid at BFT, Jetts, KX, REVL, Genesis, UBX; every other M2 read against rules 1-6.
+- Round 2: bare / bolted speed sentences and gate near-duplicates (`_fix2-*`). A scan check on the "two photos + 80+" M1 core claim was tried and withdrawn (the core claim is allowed).
+- QC2: 13/20. Fixed nearly every QC1 finding; found swaps (labels on fixed proof lines, stock speed sentences, the Jetts three-beat M2 block, card wording as copy).
+- Round 3: `_fix3-*` = QC2 fix list + upgraded scan (labels, speed after an output noun, "brand decides" note, card wording, M2 phrase counts per company, central-question twins). Verified mechanically, no third QC.
+- Coordinator scan script: scratchpad only (not in the repo); its last output is `messages/_coordinator-scan-2026-10-12.txt`.
+
+## Open items for Vadim (closed 2026-10-12, kept for history)
 
 - **Jason Clark** (BFT) owns BFT Ponsonby in **New Zealand**: keep in this AU send or drop?
 - **Matt Eikenhout** (Viva): headline says National Manager Supp Society; QC says hold until his current role is confirmed.

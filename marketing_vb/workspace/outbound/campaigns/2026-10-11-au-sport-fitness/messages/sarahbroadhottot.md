@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Sarah,
 
-Volume check: 3DLOOK ran 112,100 scans in 2025 across all 3DLOOK customers.
+Before a goal-setting session, a client can take the scan on any phone and arrive with 80+ body measurements to talk through. The trainer sees the same numbers the client sees.
 
-A short call could show how it would look for a Wahroonga client. Open to one? If it is a head office matter, point me to whoever runs Vision's client tools and I will ask them.
+I am glad to set up a call on what a Wahroonga client would see. If Vision's digital tools sit with a head-office team, tell me which one.
 
 Vadim
 
-**Char count:** 272 / 550
+**Char count:** 334 / 550

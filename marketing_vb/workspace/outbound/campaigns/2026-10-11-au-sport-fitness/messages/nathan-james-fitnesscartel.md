@@ -17,19 +17,19 @@ Spotted something in how Fitness Cartel is built: Australian-owned 24/7 health c
 
 A guided two-photo scan inside that app can return 80+ body measurements, body composition estimates and a 3D model the member chooses to view. It is white-label through an SDK or API, with nothing to ship.
 
-At which point in a member's year would a scan fit best at Fitness Cartel, such as joining or a stretch away from the club?
+What does a Fitness Cartel member get to look back on about their own training when they train outside staffed hours?
 
 Vadim
 
-**Char count:** 468 / 600
+**Char count:** 462 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Nathan,
 
-Founders usually ask one thing first: how much work sits on their side. Very little, since the capture runs on a member's phone with on-screen guidance and 3DLOOK has worked with 100+ clients. Here is how it looks for a connected fitness brand: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+Outside staffed hours a member can still take the scan on a phone with on-screen guidance, then pick an earlier scan to look back on. 3DLOOK has worked with 100+ clients. A page with more detail: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Worth a quick chat to explore?
+If a walk-through would help, tell me a time that suits.
 
 Vadim
 
-**Char count:** 358 / 550
+**Char count:** 335 / 550

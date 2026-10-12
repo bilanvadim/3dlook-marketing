@@ -15,21 +15,21 @@ Hi Chinta,
 
 Got me thinking: you have led multi-site spa and fitness operations around the world, and now run UBX Buderim.
 
-A guided scan from two photos returns 80+ body measurements on a member's own phone. Nothing is installed in the studio.
+A guided scan from two photos could return 80+ body measurements on a member's own phone, with nothing to install in the studio.
 
 After that multi-site experience, how do you like member check-ins to run at Buderim?
 
 Vadim
 
-**Char count:** 338 / 600
+**Char count:** 346 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Chinta,
 
-Wanted to reach out with a small idea: a short call where I show what a member sees when they take the scan.
+A check-in has more to talk through when a member arrives with figures of their own. Two photos at home could give a Buderim member exactly that.
 
-If it belongs in the member app, point me to whoever owns it at UBX head office. Either way, would a quick call be useful?
+If member experience at UBX head office is the better home for this, a name is all I need. Would a call early next week work for you?
 
 Vadim
 
-**Char count:** 251 / 550
+**Char count:** 299 / 550

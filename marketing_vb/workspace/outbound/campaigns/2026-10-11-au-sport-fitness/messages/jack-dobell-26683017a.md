@@ -26,12 +26,14 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Jack,
 
-Short version: a call to show how the capture sits in the app, with nothing for studios to ship. 3DLOOK has worked with 100+ clients.
+In the REVL Training app, a guided scan could sit at the points a member picks, returning body measurements for them to look at. It is white-label, with nothing for studios to ship.
+
+3DLOOK has worked with 100+ clients.
 
 More here: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Might be worth a quick chat?
+I can set up a call around your week if a look at it would help.
 
 Vadim
 
-**Char count:** 255 / 550
+**Char count:** 377 / 550

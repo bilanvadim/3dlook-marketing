@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Ben,
 
-Your background as a trainer and assessor stood out. Global Games has ALL STAR and PRO divisions, so a Fitstop floor holds very different goals side by side.
+Your background as a trainer and assessor stood out. Global Games has ALL STAR and PRO divisions, and a Fitstop floor holds very different goals side by side.
 
 FitXpress needs only two phone photos to give a member 80+ body measurements. At Fitstop Mascot, how do you keep everyday members and high performers' progress both in view?
 
 Vadim
 
-**Char count:** 348 / 600
+**Char count:** 349 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Ben,
 
-Coaches with an assessor's eye usually want a clear reference point, and this gives one: the same scan, taken the same way, each time.
+For members at both ends of the floor, a scan taken the same way each time, front and side and guided on screen, gives the member one reference point to look back on.
 
-Fancy a short call? The member app may belong to someone at Fitstop, and I would go to them.
+Say the word and I will find a time that suits you. If the person who develops Fitstop's coaches is a better contact for this, I would gladly speak with them.
 
 Vadim
 
-**Char count:** 244 / 550
+**Char count:** 342 / 550

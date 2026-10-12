@@ -15,21 +15,21 @@ Hi Gerard,
 
 Noticed your background across fitness equipment sales, franchise gym ownership and now Johnson Health Tech Australia, which supplies commercial gyms from Dandenong South.
 
-Our guided two-photo scan returns 80+ body measurements, under 45 seconds from the photos to structured results. Clubs could put it in their own member app or a page through one SDK, with nothing to ship.
+Our guided two-photo scan, taken on the member's own phone, returns 80+ body measurements and body composition estimates. Clubs could put it in their own member app or a page through one SDK, with nothing to ship.
 
 Does a member-facing software capability have a place in what you offer clubs?
 
 Vadim
 
-**Char count:** 476 / 600
+**Char count:** 485 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Gerard,
 
-Clubs you supply may already ask what else could sit next to the equipment, fit-out and service. A white-label scan is one answer, and 3DLOOK has worked with 100+ clients. This page shows how it is used: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+A white-label scan would give the members of a club you supply a guided two-photo capture on their own phone, in the club's member app or on a page the club sends. 3DLOOK has worked with 100+ clients. This page shows how it is used: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
 
-Open to a quick chat?
+Would a conversation on where it could sit in your offer make sense?
 
 Vadim
 
-**Char count:** 308 / 550
+**Char count:** 384 / 550

@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: owner of BFT Concord, bio says science-backed functional training; coaching at other brands not named
-- Proof point: 80+ body measurements, body composition estimates (proof-points.md); speed wording
+- Proof point: 80+ body measurements, body composition estimates (proof-points.md)
 
 ---
 
@@ -15,19 +15,19 @@ Hi Sam,
 
 Noticed that you describe BFT Concord as science-backed functional training. A guided two-photo scan returns 80+ body measurements and body composition estimates, taken on a phone at home.
 
-When a member is away for a stretch, how do you see where they stand on return?
+What do you want to know about a Concord member in their first session back after a break?
 
 Vadim
 
-**Char count:** 285 / 600
+**Char count:** 296 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Sam,
 
-On the science side, the scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+The capture follows the same on-screen guidance every time. A member's scan after a stretch away can then sit next to an earlier one they pick.
 
-I can walk through it in a short call, or you could point me to whoever runs member experience at BFT.
+Could we find a time for a short call on that? If someone owns the digital side of member readings at BFT head office, point me their way.
 
 Vadim
 
-**Char count:** 236 / 550
+**Char count:** 299 / 550

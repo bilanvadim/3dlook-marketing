@@ -15,23 +15,23 @@ Hi Guy,
 
 Made me think: Genesis began in Ringwood in 1997, and members now use Genesis Connect.
 
-A guided scan could be added there. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+A guided scan could be added there. From front and side photos on any phone, it returns 80+ body measurements along with body composition estimates.
 
 When something new reaches Genesis Connect, how does it get to members at your club?
 
 Vadim
 
-**Char count:** 321 / 600
+**Char count:** 338 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Guy,
 
-Happy to keep this short. A call would cover how the capture works and where a club sees it.
+What a member would meet is short: guided capture with prompts on screen, two photos, then a set of body measurements to open and look back on.
 
-If you know who plans what goes into Genesis Connect, a pointer would do just as well.
+The person who plans what goes into Genesis Connect would hear the rest best, and a pointer to them would do.
 
-Is a quick chat useful?
+If a call makes sense, let me know which day works.
 
 Vadim
 
-**Char count:** 221 / 550
+**Char count:** 323 / 550

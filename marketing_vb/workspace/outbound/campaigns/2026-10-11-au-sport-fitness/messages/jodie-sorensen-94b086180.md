@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: business owner of Fernwood Hornsby; personal trainers one-on-one
-- Proof point: two photos, 80+ body measurements; 100+ clients
+- Proof point: two photos, 80+ body measurements
 
 ---
 
@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Jodie,
 
-Between sessions, a client's scan could reach her trainer by link, ready for the next review. 3DLOOK has worked with 100+ clients.
+Between sessions, a client could send her trainer a scan by link, ready for the next plan review. She takes it on her own phone, guided on screen.
 
-Would a call be useful? Otherwise, which head office person decides what member services clubs can offer?
+I would be glad to talk it through by phone if you are willing. If head office has someone who decides what member services clubs can offer, please point me to them.
 
 Vadim
 
-**Char count:** 255 / 550
+**Char count:** 331 / 550

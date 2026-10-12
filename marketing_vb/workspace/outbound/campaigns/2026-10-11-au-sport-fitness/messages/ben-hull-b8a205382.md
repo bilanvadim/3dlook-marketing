@@ -15,21 +15,21 @@ Hi Ben,
 
 Quick one for Sweat's engineering side. FitXpress offers web and mobile SDKs with white-label capture, and a REST API with API-key authentication.
 
-Two photos return 80+ body measurements and body composition estimates, under 45 seconds from the photos to structured results.
+The guided capture takes a front and a side photo on any phone and returns body composition estimates and 80+ body measurements.
 
 Where in the Sweat app flow would engineering want a camera capture step to live: inside a program screen or a separate profile area?
 
 Vadim
 
-**Char count:** 426 / 600
+**Char count:** 427 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Ben,
 
-Engineering decisions here come down to the SDK footprint and the data flow, which is easiest to show live. The privacy and security answers sit in this FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+Whichever screen hosts the step, the member gets on-screen guidance through the two photos, and the SDK footprint and data flow are easiest to show live. The FAQ on privacy and security: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
 
-A basic integration typically takes 2 to 4 weeks. Open to a short call with the team?
+If it helps the team, I can show the flow live.
 
 Vadim
 
-**Char count:** 338 / 550
+**Char count:** 329 / 550

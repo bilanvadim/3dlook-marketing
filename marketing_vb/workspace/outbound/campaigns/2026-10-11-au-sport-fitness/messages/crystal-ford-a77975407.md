@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Crystal,
 
-Jetts Fitness memberships carry no lock-in contracts. Your members could send two phone photos and get 80+ body measurements, shown only if the club chooses.
+Jetts Fitness memberships carry no lock-in contracts. A member could send two phone photos and get 80+ body measurements to look at.
 
-What does your club tell members about their training once they have joined?
+Once a member has joined your club, what do you hand them to work with?
 
 Vadim
 
-**Char count:** 255 / 600
+**Char count:** 225 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Crystal,
 
-Could I take ten minutes of your time on a call? I would show the member view and ask what your club hears from members.
+Once a member has joined, a scan from a front and a side photo gives them body measurements to work with at home, and an earlier scan they pick to set beside it.
 
-If the Jetts team behind the member app is a better fit, send me their way.
+A call would show the screens a member gets. If the Jetts team behind the member app is a fit for this instead, send me their way. If you are open to a call, tell me a time and I will take it from there.
 
 Vadim
 
-**Char count:** 217 / 550
+**Char count:** 386 / 550

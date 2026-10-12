@@ -13,7 +13,7 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Kyle,
 
-You joined Vision as a personal trainer and now direct Ivanhoe, so you have run reviews from both chairs.
+You joined Vision as a personal trainer and now direct Ivanhoe, which means you have run reviews from both chairs.
 
 Two phone photos return 80+ body measurements a trainer can bring to a review.
 
@@ -21,15 +21,15 @@ How often do goal reviews run at Ivanhoe, and what does the trainer bring?
 
 Vadim
 
-**Char count:** 278 / 600
+**Char count:** 287 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Kyle,
 
-3DLOOK has worked with 100+ clients. A short call could show what a trainer would bring to an Ivanhoe review.
+Before a review, a client can take the scan and give the trainer 80+ body measurements to bring into the room, set against an earlier scan the client picks. 3DLOOK has worked with 100+ clients.
 
-Open to a quick chat? If someone at Vision head office should hear it first, point me to them.
+If it helps, I can show the client's side on a call. Whoever sets coaching standards at Vision head office may want to hear it first; tell me who.
 
 Vadim
 
-**Char count:** 222 / 550
+**Char count:** 358 / 550

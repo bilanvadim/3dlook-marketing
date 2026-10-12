@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Marcello,
 
-Had a thought on Anytime Fitness Australia, a 24/7 club network. Many members train alone, and the phone scan returns 80+ body measurements from just two photos.
+Had a thought on Anytime Fitness Australia, a 24/7 club network: members can take a phone scan from two photos that returns 80+ body measurements, on their own time.
 
 When a new member service is on the table for Anytime Fitness, what does it take for it to reach the clubs?
 
 Vadim
 
-**Char count:** 291 / 600
+**Char count:** 295 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Marcello,
 
-For scale, 112,100 scans were run in 2025 across all 3DLOOK customers. The capture is white-label and needs nothing installed in clubs.
+When a service like this reaches clubs, a member takes two photos and gets 80+ body measurements to look back on.
 
-If it is more useful for the Australian side, I would welcome a pointer to whoever owns member experience there. Otherwise, open to a 15-minute call?
+A short call on how a decision like that travels to the clubs would be welcome, and an introduction to whoever owns member experience on the Australian side would do just as well.
 
 Vadim
 
-**Char count:** 307 / 550
+**Char count:** 315 / 550

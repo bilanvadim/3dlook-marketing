@@ -26,12 +26,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi there,
 
-A short call would let me show what a member sees. 3DLOOK has worked with 100+ clients.
+When a member asks how she is going, she could answer from her own phone: two guided photos, then a set of body measurements.
 
-Whoever owns the KX Pilates app at head office may be the better contact, and a pointer is welcome.
+A pointer to the head-office digital lead for KX Pilates would be as good.
 
-Would a chat suit?
+I can send a few times for a call whenever you say.
 
 Vadim
 
-**Char count:** 226 / 550
+**Char count:** 272 / 550

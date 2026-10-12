@@ -15,19 +15,19 @@ Hi Aaron,
 
 Jetts Fitness Rosemeadow gives members 24/7 access, which means plenty of sessions with nobody from the club around. The guided scan asks for a front photo and a side photo, and gives 80+ body measurements.
 
-When members mostly train solo, how does your team learn what they are aiming for?
+Who at Rosemeadow hears a member's goal first, when staff are rarely around?
 
 Vadim
 
-**Char count:** 308 / 600
+**Char count:** 302 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Aaron,
 
-Could we have a quick call? I would explain the member side in a few minutes, and you can judge whether Rosemeadow would ever use it.
+Rosemeadow members train at all hours, and a scan taken at home gives each of them a starting record for the goal they have in mind, built from two phone photos.
 
-If it makes more sense to ask the person behind the Jetts app, send me their way.
+Let me walk you through what a member sees on their phone. Should onboarding for new Jetts members sit with someone else, send me their way. Would you like that walkthrough?
 
 Vadim
 
-**Char count:** 234 / 550
+**Char count:** 354 / 550

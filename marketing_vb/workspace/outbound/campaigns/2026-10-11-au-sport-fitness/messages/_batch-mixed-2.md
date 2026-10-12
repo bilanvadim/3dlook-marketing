@@ -6,7 +6,7 @@ Hi John,
 
 Noticed your background, from teaching aerobics in the 1990s to running Genesis Fitness Clubs NSW.
 
-Nothing to ship or install in clubs: the scan runs on any phone, with on-screen guidance and two photos. It returns 80+ body measurements, under 45 seconds from the photos to structured results.
+Nothing to ship or install in clubs: the scan runs on any phone with on-screen guidance, under 45 seconds from the photos to structured results. It returns body composition estimates, with BMI and BMR calculated.
 
 How do your clubs run member check-ins or goal reviews today?
 
@@ -14,9 +14,13 @@ Vadim
 --- M2
 Hi John,
 
-One operational point. The capture needs no hardware or stock in a club, only a member's phone. 3DLOOK has worked with 100+ clients, and this page shows how it sits inside a club app: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+At a check-in, a member could bring two photos taken on their own phone, and the body measurements that come back give the conversation a concrete starting point. Nothing needs to be installed or stocked in a club.
 
-Might be worth a quick chat on how that would fit your clubs' reviews?
+3DLOOK has worked with 100+ clients.
+
+This page shows how the capture sits in a club app: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+
+Is there a day this week or next that works for a call?
 
 Vadim
 @@@ ianjensenmuir
@@ -29,17 +33,19 @@ Quick thought on Genesis Connect. Genesis began in Ringwood in 1997, and members
 
 A guided scan could sit inside it: two photos return 80+ body measurements and body composition estimates, white-label through an API or SDKs.
 
-Where in a member's year would a scan fit best at Genesis, joining or a goal review?
+What part does Genesis Connect play when a new member sets a first goal?
 
 Vadim
 --- M2
 Hi Ian,
 
-Since the member journey sits with you, a short call could cover how the capture plugs in through the API or SDKs, with nothing to ship to clubs. For scale: 112,100 scans in 2025 across all 3DLOOK customers.
+A guided scan in Genesis Connect could give a new member's first goal a starting set of body measurements to look back on. It would be white-label, through an API or SDKs, with nothing to ship to clubs.
 
-A short read first: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+There were 112,100 scans in 2025 across all 3DLOOK customers.
 
-Would a quick chat help?
+This page covers how it sits in a member app: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+
+If a call would help, tell me which week works.
 
 Vadim
 @@@ melissa-fraser-68692417
@@ -50,7 +56,7 @@ Hi Melissa,
 
 Caught my eye: 20 years in health and fitness, and now two Genesis clubs, Berwick and Southbank.
 
-A member could take a guided scan on their own phone, and two photos return 80+ body measurements.
+Two photos on a member's own phone are enough for 80+ body measurements.
 
 Do goal reviews run the same way at Berwick and Southbank?
 
@@ -58,11 +64,11 @@ Vadim
 --- M2
 Hi Melissa,
 
-Happy to show you what a member sees after those two photos. 3DLOOK has worked with 100+ clients.
+For a goal review at Berwick or Southbank, a member could bring a scan taken at home, two photos on their own phone, and set it beside an earlier one they choose. The review then opens from the member's own numbers.
 
-If whoever owns Genesis Connect is the better person for this, point me their way.
+If the franchise performance lead at Genesis head office should hear this instead, a pointer from you is just as useful.
 
-Open to a short call?
+Would a call later this week or next work?
 
 Vadim
 @@@ brentonwilliamson
@@ -81,11 +87,11 @@ Vadim
 --- M2
 Hi Brenton,
 
-Quick idea: a short call to see what a member gets from those two photos, and whether it suits how you start new members.
+A new member could take two photos at home before a first session, and the trainer would open the conversation with the body measurements that come back, shared only if the member chooses.
 
-If the person running member experience at Genesis head office should hear it instead, say the word.
+If whoever leads new-member onboarding at Genesis head office is the right ear, I am glad to be pointed there.
 
-Open to a call?
+Afternoons next week are open on my side for a call.
 
 Vadim
 @@@ gym-genesis-88933854
@@ -96,19 +102,19 @@ Hi there,
 
 Quick one for the owner of a Genesis Fitness Clubs gym.
 
-Members can take a guided scan on their phone, and two photos, front and side, return 80+ body measurements.
+A member who scans with FitXpress sends front and side photos from their phone and gets 80+ body measurements back.
 
-What do members ask your team about their progress?
+When a member wants to know how their training is going, what do you show them at your gym?
 
 Vadim
 --- M2
 Hi there,
 
-Wanted to show you how it works in practice. A short call would cover what a member sees and whether it suits your gym. 3DLOOK has worked with 100+ clients.
+A member could get an answer from their own phone: guided front and side photos, then body measurements to open whenever they want.
 
-If the digital or member experience lead at Genesis is the right contact, point me to them.
+If Genesis head office has a member experience lead, point me their way and I will take it from there.
 
-Open to a quick chat?
+If a call sounds worthwhile, reply and I will send two times.
 
 Vadim
 @@@ cameron-reid-3521a730
@@ -125,11 +131,11 @@ Vadim
 --- M2
 Hi Cameron,
 
-Short version of the idea: a member takes two photos and gets a set of body measurements to talk through with a coach. A quick call would show it in detail.
+A coach and a member could look at the member's own scan together during a goal review: the measurements from two photos they took, and an earlier set they pick to compare.
 
-Or point me to whoever looks after the Genesis Connect experience.
+Whoever looks after Genesis Connect at head office may be the better person for this, and a name would be welcome.
 
-Worth a chat?
+Happy to walk through it on a call when it suits you.
 
 Vadim
 @@@ l-b-31160a120
@@ -146,11 +152,11 @@ Vadim
 --- M2
 Hi there,
 
-A short call would show what a trainer would see after a client's two photos.
+At a program review, a trainer could see the body measurements a client chose to share from two photos taken at home. That gives the conversation about the block something concrete.
 
-If someone at Genesis head office owns member experience, I would gladly be pointed there instead.
+If Genesis head office has someone who leads personal training programs, I would gladly be pointed there.
 
-Worth a quick chat?
+Would next week be a good time for a call?
 
 Vadim
 @@@ guy-franklin-3713b580
@@ -161,7 +167,7 @@ Hi Guy,
 
 Made me think: Genesis began in Ringwood in 1997, and members now use Genesis Connect.
 
-A guided scan could be added there. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+A guided scan could be added there. From front and side photos on any phone, it returns 80+ body measurements along with body composition estimates.
 
 When something new reaches Genesis Connect, how does it get to members at your club?
 
@@ -169,11 +175,11 @@ Vadim
 --- M2
 Hi Guy,
 
-Happy to keep this short. A call would cover how the capture works and where a club sees it.
+What a member would meet is short: guided capture with prompts on screen, two photos, then a set of body measurements to open and look back on.
 
-If you know who plans what goes into Genesis Connect, a pointer would do just as well.
+The person who plans what goes into Genesis Connect would hear the rest best, and a pointer to them would do.
 
-Is a quick chat useful?
+If a call makes sense, let me know which day works.
 
 Vadim
 @@@ tom-bayford-b0553010a
@@ -184,7 +190,7 @@ Hi Tom,
 
 Noticed Genesis Fitness Clubs on your background.
 
-Members can take a guided scan at home, and two photos give 80+ body measurements.
+At home, a member photographs front and side with on-screen guidance, and 80+ body measurements come back.
 
 How does a Genesis club keep up with what a member has been doing after a few weeks away?
 
@@ -192,11 +198,11 @@ Vadim
 --- M2
 Hi Tom,
 
-Practical angle: a short call, and I show you what a member and their trainer would look back on. 3DLOOK has worked with 100+ clients.
+A member back from a few weeks away could scan at home and compare with an earlier scan they pick, giving their trainer a place to restart the conversation.
 
-If another person at Genesis owns member experience, happy to speak with them.
+If someone on the digital side at Genesis is closer to this, I am happy to speak with them.
 
-Would a short call suit?
+Reply yes or no and I will take it from there.
 
 Vadim
 @@@ mitchell-bird-234161167
@@ -213,11 +219,11 @@ Vadim
 --- M2
 Hi Mitchell,
 
-If useful, I can walk you through what a member sees in a short call.
+A member training on their own could take photos at home when they choose and read the body measurements that come back, a view of their own months of work.
 
-The better contact may be whoever looks after member experience in Genesis head office, and I would take that pointer too.
+The better contact may be whoever shapes coaching and programs at Genesis head office, and I would take that pointer too.
 
-Open to a chat?
+Name a day and I will book the call around you.
 
 Vadim
 @@@ selina-bridge-gaicd-736b259
@@ -230,17 +236,19 @@ Quick thought on KX Pilates, which runs through franchised studios and the KX Pi
 
 A guided scan could sit in that app: two photos return 80+ body measurements and body composition estimates, white-label through an API or SDKs.
 
-At which point in a member's year would a scan fit KX members best, joining or a goal review?
+How does a new KX Pilates member set a goal today, in the studio or in the app?
 
 Vadim
 --- M2
 Hi Selina,
 
-A short call could cover how the capture reaches studios through the app, with nothing for franchisees to install. 3DLOOK has worked with 100+ clients.
+Joining is when a member sets a goal. A guided scan inside the KX Pilates app could return a starting set of body measurements for them to look back on, with nothing for franchisees to install.
 
-Short read first: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+3DLOOK has worked with 100+ clients.
 
-Might be worth a quick chat?
+A short read on how it sits in a member app: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+
+I can set up a call whenever you would like to see it.
 
 Vadim
 @@@ andifiorenza
@@ -259,11 +267,11 @@ Vadim
 --- M2
 Hi Andrea,
 
-Here is the practical side: a short call, and I show what a member sees. 3DLOOK has worked with 100+ clients.
+Small improvements are easier to see when a member picks two scans taken at home on her own phone and opens them side by side. Whether to share them with her trainer stays her choice.
 
-If the person who owns the KX Pilates app is the right one to hear it, I would welcome an introduction.
+If the person who looks after the KX Pilates app is the right one to hear it, an introduction would suit me.
 
-Open to a call?
+Is later this week or next better for a call?
 
 Vadim
 @@@ james-trenerry-a7915448
@@ -282,11 +290,11 @@ Vadim
 --- M2
 Hi James,
 
-A call would show a trainer's view of the scan in about the time of a class briefing.
+A member working on her strength could set an earlier scan she picked beside a current one, something to bring to a conversation with her trainer. The step up stays between her and the trainer.
 
-If the right contact sits at KX Pilates head office, where the app lives, point me there and I will follow up.
+A training and education lead at KX Pilates head office could be the better ear, and I would take a pointer there.
 
-Worth a short call?
+My calendar has room on most weekdays next week for a call.
 
 Vadim
 @@@ bruno-gallucci-a2a68b52
@@ -297,7 +305,7 @@ Hi Bruno,
 
 Spotted KX Pilates in your background.
 
-A member could take a guided scan at home. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+A member could take front and side photos at home, guided on screen, and 80+ body measurements come back. The scan also returns body composition estimates, with BMI and BMR calculated.
 
 How does a KX studio pick things up with a member who returns after weeks away?
 
@@ -305,11 +313,11 @@ Vadim
 --- M2
 Hi Bruno,
 
-Easy to see in a call: two photos in, a set of body measurements out. 3DLOOK has worked with 100+ clients.
+After a break, a member could scan at home with guidance on screen and have a starting view for her first conversation back.
 
-If someone closer to KX Pilates today is better placed to look at it, I would take the pointer.
+If whoever looks after member experience at KX Pilates today is closer to this, I would take the pointer.
 
-Open to a chat?
+If a call sounds useful, tell me a day and I will work around it.
 
 Vadim
 @@@ linda-wisbey-846503117
@@ -328,11 +336,11 @@ Vadim
 --- M2
 Hi Linda,
 
-Can I show you in a short call? It takes two photos on a phone and nothing to set up in the studio.
+A member in the Strength class could see body measurements from two phone photos next to an earlier set she picked, her own view of months of work.
 
-Or point me to the person at KX Pilates head office who looks after member experience.
+Whoever shapes class programming at KX Pilates head office would be a good person for this, and I would welcome the name.
 
-Open to it?
+Give me a day and I will bring a live example.
 
 Vadim
 @@@ kylie-falconer-8b2b70123
@@ -343,7 +351,7 @@ Hi Kylie,
 
 Thought I'd share something with a KX Pilates studio owner.
 
-A guided scan from two photos returns 80+ body measurements and body composition estimates, shown only if the studio chooses to show them.
+A guided scan from two photos returns 80+ body measurements and body composition estimates, with BMI and BMR calculated.
 
 What do you learn about a new member in her first few classes?
 
@@ -351,11 +359,11 @@ Vadim
 --- M2
 Hi Kylie,
 
-I would keep a call practical: what a member sees, and what a studio does with it. 3DLOOK has worked with 100+ clients.
+A new member could arrive with a starting set of body measurements from two photos she took herself, and show only what she chooses to.
 
-Pointing me to whoever runs the KX Pilates app would also help.
+Pointing me to whoever runs new-member onboarding at KX Pilates head office would help too.
 
-Worth a chat?
+Would a call early next week work?
 
 Vadim
 @@@ kelly-strybosch-6546bab6
@@ -368,17 +376,17 @@ Came across your work at KX Pilates Magill, where Active Recovery sits alongside
 
 A guided scan on a member's phone returns 80+ body measurements from two photos.
 
-What do you tell members about balancing Active Recovery with Strength classes?
+How do you plan a member's week at Magill across Active Recovery and Strength classes?
 
 Vadim
 --- M2
 Hi Kelly,
 
-Glad to show you the member's side of it on a short call.
+A member balancing Active Recovery and Strength could take a scan at home on a reset day and read her own measurements, a view to bring into the next class conversation.
 
-And if a KX Pilates colleague at head office handles apps and member experience, a name would be welcome.
+Head office may have a lead for trainer education, and a name would be welcome.
 
-Would a short call suit you?
+If the idea interests you, name a day after class hours and I will be there.
 
 Vadim
 @@@ kx-pilates-glen-waverley-96794393
@@ -397,11 +405,11 @@ Vadim
 --- M2
 Hi there,
 
-A short call would let me show what a member sees. 3DLOOK has worked with 100+ clients.
+When a member asks how she is going, she could answer from her own phone: two guided photos, then a set of body measurements.
 
-Whoever owns the KX Pilates app at head office may be the better contact, and a pointer is welcome.
+A pointer to the head-office digital lead for KX Pilates would be as good.
 
-Would a chat suit?
+I can send a few times for a call whenever you say.
 
 Vadim
 @@@ steff-doney-b36000150
@@ -420,11 +428,11 @@ Vadim
 --- M2
 Hi Steff,
 
-Wanted to follow with one offer: a short call to walk through how the capture works.
+What a member sees is simple: guided photos on her phone, then a set of body measurements to open and read.
 
-If a product lead at KX Pilates head office is the right one, an intro would be great.
+Whoever at head office supports studios when something new arrives could be better placed, and a pointer would help.
 
-Keen on a quick conversation?
+Is Thursday or Friday easier for a call?
 
 Vadim
 @@@ sophie-patient-b538671b8
@@ -435,7 +443,7 @@ Hi Sophie,
 
 Quick note for a Product Partner at KX Pilates.
 
-A phone scan from two photos gives 80+ body measurements a member can look back on.
+From front and side photos on a phone, a member gets 80+ body measurements to look back on.
 
 When a member moves from Basics towards Signature, what does she see that tells her she is ready?
 
@@ -443,11 +451,11 @@ Vadim
 --- M2
 Hi Sophie,
 
-Could we talk it through for a few minutes? I can show what the member sees on screen.
+A member sees her own set of body measurements, a reference she can bring to the conversation with her trainer about moving on.
 
-Or tell me who at KX Pilates head office would want to look at it.
+If you know who at head office shapes the class programming, tell me and I will take it to them.
 
-Does that sound useful?
+Whenever you want to see it, a call is easy to arrange from my side.
 
 Vadim
 @@@ divya-hegde-11a22a243
@@ -460,17 +468,17 @@ Had a thought for a KX Pilates business owner.
 
 FitXpress returns 80+ body measurements and body composition estimates from two photos taken on a phone.
 
-How often do goal reviews run at your studio, and what do you bring to them?
+When you sit down with a member to talk goals, what do you have in front of you?
 
 Vadim
 --- M2
 Hi Divya,
 
-Curious if a short call makes sense. I would show what a member gets and where a studio can use it.
+A goal conversation could open with the member's own scan: two phone photos and the measurements that come back.
 
-Or point me to the KX Pilates head office person who owns member experience.
+The franchise operations lead at KX Pilates head office may be the person to hear this, and a name would do.
 
-Would that be of interest?
+Say yes and I will book it around your studio hours.
 
 Vadim
 @@@ luisa-helps-83a49327b
@@ -489,11 +497,11 @@ Vadim
 --- M2
 Hi Luisa,
 
-Happy to show the member's view of a scan in a short call. 3DLOOK has worked with 100+ clients.
+A member at either studio could take a scan at home and decide for herself what to bring to a review.
 
-I am also glad to be pointed to whoever leads digital at KX Pilates head office.
+There were 112,100 scans in 2025 across all 3DLOOK customers.
 
-Shall we find a time?
+KX Pilates head office may have a digital lead who should see this, and I would value a pointer. If a call is useful, say when.
 
 Vadim
 @@@ justine-rosham-50364b379
@@ -512,11 +520,11 @@ Vadim
 --- M2
 Hi Justine,
 
-Might a ten-minute call be useful? I can show what a member sees.
+A member's first scan taken at home could be part of the welcome: two photos on her phone, guided on screen, then body measurements she chooses to show her trainer.
 
-If KX Pilates head office has a digital owner, I would take an introduction instead.
+Whoever leads member experience at head office could take an introduction from you, and I would follow up there.
 
-Could we fit one in?
+Say so and I will send two or three times to choose from.
 
 Vadim
 @@@ jack-dobell-26683017a
@@ -535,11 +543,13 @@ Vadim
 --- M2
 Hi Jack,
 
-Short version: a call to show how the capture sits in the app, with nothing for studios to ship. 3DLOOK has worked with 100+ clients.
+In the REVL Training app, a guided scan could sit at the points a member picks, returning body measurements for them to look at. It is white-label, with nothing for studios to ship.
+
+3DLOOK has worked with 100+ clients.
 
 More here: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Might be worth a quick chat?
+I can set up a call around your week if a look at it would help.
 
 Vadim
 @@@ ben-woolford-revl
@@ -550,19 +560,21 @@ Hi Ben,
 
 Noticed your background: ten years owning gyms before co-founding REVL in 2020.
 
-REVL members book through the REVL Training app. A guided scan could sit there, and it returns 80+ body measurements, under 45 seconds from the photos to structured results.
+REVL members book through the REVL Training app. A guided scan could sit there: a member takes two photos on any phone with on-screen guidance, and 80+ body measurements come back with body composition estimates alongside.
 
-At what point in a member's year would that fit best, joining or a stretch away from the studio?
+How does a new REVL member first meet the app?
 
 Vadim
 --- M2
 Hi Ben,
 
-For partnerships and growth conversations, a short call could cover how the capture reaches studios through one SDK, with nothing to install. For scale: 112,100 scans in 2025 across all 3DLOOK customers.
+A new member could take a first scan at home, with guidance on screen, as part of meeting the app. It reaches studios through one SDK, with nothing to install.
+
+There were 112,100 scans in 2025 across all 3DLOOK customers.
 
 A short read: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Open to a quick chat?
+Would a call this month be worth setting up?
 
 Vadim
 @@@ josh-mildren-6a580699
@@ -581,11 +593,11 @@ Vadim
 --- M2
 Hi Josh,
 
-Worth showing in a call: the member's screen after a scan, and how a team picks where it appears. 3DLOOK has worked with 100+ clients.
+When a block ends, a member could open the scan they took at home beside one they picked from before.
 
 Link for context: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Worth a look together?
+Would a call be worth a look together?
 
 Vadim
 @@@ wayne-markus-9b267a6b
@@ -594,21 +606,21 @@ proof: two photos, 80+ body measurements (proof-points.md)
 --- M1
 Hi Wayne,
 
-Quick reaction to your role as a multi-site REVL Training franchisee.
+Noticed you have owned REVL Training studios at Bondi and Port Melbourne.
 
-Members can take a guided scan on their phone, and two photos return 80+ body measurements.
+A guided scan from front and side photos returns 80+ body measurements, taken on a member's own phone.
 
-Do member reviews run the same way across your studios?
+What does a REVL Training member walk away with after a review in your studios?
 
 Vadim
 --- M2
 Hi Wayne,
 
-Can I show you what a member sees in a short call? 3DLOOK has worked with 100+ clients.
+At a review in any of your studios, a member could bring two photos taken at home and an earlier set they pick, giving the coach something concrete to talk through.
 
-If the person running the REVL Training app is the better contact, I would value a pointer.
+If the head-office team that looks after franchise performance should hear this, a pointer to them works.
 
-Open to a chat?
+I can talk it through on a call any day next week.
 
 Vadim
 @@@ benseymour10
@@ -627,11 +639,11 @@ Vadim
 --- M2
 Hi Ben,
 
-One idea to test in a call: the scan as an optional step a member picks. 3DLOOK has worked with 100+ clients.
+A member in Perform could scan at home whenever they choose and read the body measurements that come back, a view of their own strength work.
 
-Or point me to whoever owns member experience at REVL head office.
+If the person who shapes REVL's programming at head office is the better contact, I would value a pointer.
 
-Worth a chat?
+Say the word and I can walk through it live whenever your week allows.
 
 Vadim
 @@@ carlisle-jones-6a4461123
@@ -650,11 +662,11 @@ Vadim
 --- M2
 Hi Carlisle,
 
-Glad to walk through it live. A call takes you through what a member sees after a scan.
+Once a block ends, a member could open a scan they took at home next to an earlier one they picked, looking at their own body measurements from two photos.
 
-A pointer to the REVL Training digital lead would work too.
+A pointer to REVL's member experience lead would work too.
 
-Open to a call?
+If a call sounds useful, say so and I will find a time around the studio.
 
 Vadim
 @@@ jake-harris-494278ba
@@ -663,21 +675,21 @@ proof: RV3; two photos, 80+ body measurements (proof-points.md)
 --- M1
 Hi Jake,
 
-Wanted to reach out about REVL St Marys.
+Noticed you run a performance-based gym at REVL St Marys.
 
 A scan from two phone photos returns 80+ body measurements that a member can look back on.
 
-For members who mix several REVL programs, where does their overall picture sit today?
+How do coaches at St Marys keep a member's goals in view when they train across more than one program?
 
 Vadim
 --- M2
 Hi Jake,
 
-A short call would show how a member uses it at home. 3DLOOK has worked with 100+ clients.
+A member moving between programs could look at one set of body measurements taken on their own phone, whichever program they train in that month.
 
-If another person at REVL head office handles the app, tell me who.
+Whoever owns the REVL Training app at head office could say more, and I would take their name.
 
-Does a call sound useful?
+Tell me, and I will send a couple of times.
 
 Vadim
 @@@ sarah-williams-0460101b8
@@ -690,17 +702,17 @@ Quick idea for you: REVL Training Port Melbourne, a boutique studio bringing a n
 
 A guided scan on a phone returns 80+ body measurements from two photos.
 
-What do your coaches note about a first-timer's starting point?
+What does a first-timer at Port Melbourne tell your coaches in their first week?
 
 Vadim
 --- M2
 Hi Sarah,
 
-Could I show you a scan in a short call? 3DLOOK has worked with 100+ clients.
+A first-timer could take two photos at home before a first class, with on-screen guidance, and bring a starting set of body measurements they choose to show.
 
-Or send me towards the person at REVL head office who owns the app.
+If REVL head office has someone who leads new-member onboarding, I would welcome the pointer.
 
-Would a short call suit?
+Would one day this week or next work for a call?
 
 Vadim
 @@@ mark-jackson-7829b2291
@@ -719,11 +731,11 @@ Vadim
 --- M2
 Hi Mark,
 
-If it helps, a call could show how a member uses a scan before or after an event.
+Members choose when to scan, at home and with guidance on screen, and read their own body measurements afterwards.
 
-If a person at REVL head office runs member experience, I would welcome the introduction.
+If someone at head office runs Race The Globe and member events, I would take a pointer to them.
 
-Worth a short call?
+A call on any day that suits your week works for me.
 
 Vadim
 @@@ nicholas-collins-908b34285
@@ -736,17 +748,17 @@ Quick note for the owner of REVL Training Brighton.
 
 FitXpress gives a member 80+ body measurements from two phone photos.
 
-How often do goal reviews run at your studio, and what does a coach bring to them?
+What does a member take home from a goal review at Brighton?
 
 Vadim
 --- M2
 Hi Nicholas,
 
-Easy to demo in a short call. 3DLOOK has worked with 100+ clients.
+A coach could open a review with the member's scan on screen: a set of body measurements next to an earlier set they picked.
 
-Or point me to whoever leads digital at REVL Training head office.
+If REVL head office has a head of coaching, point me their way.
 
-Keen to see it?
+If you want to see it, name a day and I will fit in with you.
 
 Vadim
 @@@ adam-coombes-35602a2b7
@@ -757,7 +769,7 @@ Hi Adam,
 
 This stood out: your focus on community and partnerships at REVL Training.
 
-A guided scan returns 80+ body measurements from two phone photos, and a member can repeat it later.
+From two phone photos, a guided scan returns 80+ body measurements, and a member can run it again whenever they like.
 
 What do members in your community ask the team about their progress?
 
@@ -765,11 +777,11 @@ Vadim
 --- M2
 Hi Adam,
 
-Open to a quick look together? I can show what a member sees. 3DLOOK has worked with 100+ clients.
+Members asking about progress could be answered from their own phone: a guided scan, then the body measurements that come back.
 
-A name at REVL head office who owns the app would also help.
+A name at REVL head office who leads community and partnerships would help.
 
-Would you be up for a look?
+I am happy to show it live whenever you can fit it in.
 
 Vadim
 @@@ bec-kirkup-446844415
@@ -782,16 +794,16 @@ Had a thought for the franchise owner at REVL Training Greenslopes.
 
 FitXpress returns 80+ body measurements from two photos on a phone.
 
-How do members of the Sweat program see their conditioning progress?
+What do Sweat members at Greenslopes take away from a conditioning block?
 
 Vadim
 --- M2
 Hi Bec,
 
-A short call could show the member's side of a scan.
+Sweat members could look at body measurements from two photos taken at home, their own picture of conditioning work.
 
-If the right contact is whoever looks after member experience at REVL head office, point me there.
+A pointer to the head-office person who shapes the Sweat program would help.
 
-Could a call work?
+Is there a good moment next week for a call?
 
 Vadim

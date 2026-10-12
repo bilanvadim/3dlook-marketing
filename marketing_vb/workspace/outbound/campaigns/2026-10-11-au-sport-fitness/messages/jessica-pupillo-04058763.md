@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: owner-manager of Fernwood Yarraville, thin profile, first-session plan
-- Proof point: FW4 first session with a trainer; two photos, 80+ body measurements; 100+ clients (proof-points)
+- Proof point: FW4 first session with a trainer; two photos, 80+ body measurements (proof-points)
 
 ---
 
@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Jessica,
 
-For a club like Yarraville, the scan could come before the introduction, on a page the member opens at home. 3DLOOK has worked with 100+ clients, and the club installs nothing.
+Before her first session, a new member could take the scan at home and choose to bring it along as a starting point of her own.
 
-Would a short call make sense? If member experience at head office is the right door, point me to whoever owns it.
+Is there a good week for a call? If new-member onboarding is run from head office, I would be glad of a pointer to whoever leads it.
 
 Vadim
 
-**Char count:** 312 / 550
+**Char count:** 281 / 550

@@ -13,23 +13,23 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Luke,
 
-Had to say hi as a UBX business owner.
+Got curious about how a UBX club runs without class timetables.
 
-UBX has no class timetables. A member can scan at any time of day on their own phone and get 80+ body measurements.
+A member scanning at any hour gets 80+ body measurements back from two photos.
 
 How do you see who is working toward what when nobody shares a class?
 
 Vadim
 
-**Char count:** 243 / 600
+**Char count:** 231 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Luke,
 
-Open floors mean members train at different hours, and a scan they take themselves fits that rhythm.
+Members who train at different hours each have their own scan to read, and the member decides whether to share it with a coach.
 
-Would a short call be useful? If the UBX Member App has an owner at head office, a name would do just as well.
+If the person running digital at head office is the better contact, a name would do. Is there a day this week or next for a call?
 
 Vadim
 
-**Char count:** 229 / 550
+**Char count:** 275 / 550

@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: owner of BFT Yarraville, Footscray and Shepparton; review routines across studios
-- Proof point: 80+ body measurements, two photos (proof-points.md); 34,000 scans line
+- Proof point: 80+ body measurements, two photos (proof-points.md)
 
 ---
 
@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Stef,
 
-Three studios, one capture: the same link works for every member. One weight-management platform ran 34,000 scans in 2025.
+The same two-photo capture would give a member at any of the three studios the same kinds of readings to bring to a review.
 
-Worth a call to look at it together? If member experience at BFT sits with someone else, I will gladly talk to them.
+If it would help to talk it through, I am happy to find a time. Whoever runs franchise performance at BFT head office may prefer to take it.
 
 Vadim
 
-**Char count:** 257 / 550
+**Char count:** 282 / 550

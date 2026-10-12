@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Angelique,
 
-Congratulations on the National Club of the Year title for Templestowe. With your digital and CRM background, you will know how a member looks at a new feature: here the member sends two phone photos and gets 80+ body measurements back.
+Congratulations on the National Club of the Year title for Jetts Fitness Templestowe, and on running Cranbourne West alongside it. Our scan takes two phone photos from a member, with on-screen guidance, and returns 80+ body measurements.
 
-Do member check-ins run the same way at Templestowe and Cranbourne West?
+What do you ask a member at Templestowe when they come in for a goal chat?
 
 Vadim
 
-**Char count:** 332 / 600
+**Char count:** 335 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Angelique,
 
-3DLOOK has worked with 100+ clients, and the question I would bring to a call is how a capture like this reaches clubs without extra work for owners.
+For a member of either club, a scan taken at home could be the thing they bring to a goal chat: two photos, body measurements back, shared only if they choose.
 
-If the Jetts app team is the right audience, I would welcome an introduction to whoever leads it. Open to a short call?
+I would value a conversation about what Templestowe members ask the team about their progress. Digital or CRM at Jetts head office could be the right home for this, and an introduction from you would be welcome. Could we find a time before month end?
 
 Vadim
 
-**Char count:** 292 / 550
+**Char count:** 433 / 550

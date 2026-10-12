@@ -15,19 +15,21 @@ Hi Emily,
 
 FS8 gives members a low-impact, high-energy workout across its studios.
 
-A guided phone scan returns 80+ body measurements from two photos, and the member decides whether to share or compare it, shown only where FS8 chooses.
+A guided phone scan returns 80+ body measurements from two photos, and the member decides whether to share it.
 
-When FS8 adds something new for members, how does it usually reach the studios?
+When FS8 adds a new offer for members, how does it get to a studio's front desk?
 
 Vadim
 
-**Char count:** 323 / 600
+**Char count:** 283 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Emily,
 
-Rather than a pitch, I would suggest a short call to show the scan on a phone. Would that be useful? If another director owns member experience at FS8, a pointer to them would help just as much.
+A member who takes the scan on her own phone gets 80+ body measurements and picks whether her studio sees them.
+
+A short call would let me show it on a phone. If another director looks after new-member onboarding at FS8, send me their way and I will write to them. A line back either way helps.
 
 Vadim
 
-**Char count:** 212 / 550
+**Char count:** 312 / 550

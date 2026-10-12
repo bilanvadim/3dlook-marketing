@@ -26,12 +26,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Andrea,
 
-Here is the practical side: a short call, and I show what a member sees. 3DLOOK has worked with 100+ clients.
+Small improvements are easier to see when a member picks two scans taken at home on her own phone and opens them side by side. Whether to share them with her trainer stays her choice.
 
-If the person who owns the KX Pilates app is the right one to hear it, I would welcome an introduction.
+If the person who looks after the KX Pilates app is the right one to hear it, an introduction would suit me.
 
-Open to a call?
+Is later this week or next better for a call?
 
 Vadim
 
-**Char count:** 250 / 550
+**Char count:** 359 / 550

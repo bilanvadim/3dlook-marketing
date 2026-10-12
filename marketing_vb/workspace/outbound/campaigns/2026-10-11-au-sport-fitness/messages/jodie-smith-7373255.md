@@ -26,8 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Jodie,
 
-I can show you the scan on a phone in a short call, with no decision needed from you. Would that be of use? If easier, point me to whoever runs customer advice or digital at the Go Vita head office.
+For a customer, the scan is a guided capture at home that returns 80+ body measurements, and she shares them with the store only if she chooses.
+
+I can show it on a phone in a short call, with no decision needed from you. If it belongs with someone else, point me to whoever runs customer advice at the Go Vita head office and I will go to them.
 
 Vadim
 
-**Char count:** 216 / 550
+**Char count:** 363 / 550

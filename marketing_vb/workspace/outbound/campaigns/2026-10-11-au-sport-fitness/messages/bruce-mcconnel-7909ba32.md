@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Bruce,
 
-Noticed you own a Fitstop. Members there train across four styles, and some spend weeks away for work or travel.
+Members at a Fitstop train across four styles, and some are away from the studio for weeks at a time with work or travel.
 
-Wherever the member happens to be, two photos from a phone return 80+ body measurements. How does your studio stay in touch with what those members have been doing?
+Wherever the member happens to be, a front and a side photo from a phone return 80+ body measurements. While a member is on the road, what does your coach hear from them about their training?
 
 Vadim
 
-**Char count:** 296 / 600
+**Char count:** 332 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Bruce,
 
-Wanted to add the simple version. The member scans on their own phone, and the coach looks at the scan when the member is back on the floor.
+A member on the road could take two photos on their own phone and send the coach a set of measurements to talk through on their return.
 
-Open to a quick call? And if there is someone at Fitstop who owns the member experience, I would gladly be pointed their way.
+I would be glad to walk you through it on a call. And if there is someone who looks after the Fitstop member app, their name would be just as welcome.
 
 Vadim
 
-**Char count:** 285 / 550
+**Char count:** 305 / 550

@@ -3,7 +3,7 @@
 ## Context used
 - Angle: referral
 - Hook: earlier Director at Vision Personal Training studios, copy stays on Vision role only
-- Proof point: two photos, 80+ body measurements (proof-points.md); 112,100 scans in 2025 across all 3DLOOK customers
+- Proof point: two photos, 80+ body measurements (proof-points.md)
 
 ---
 
@@ -26,10 +26,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Haydn,
 
-112,100 scans in 2025 across all 3DLOOK customers is the volume behind this.
+When a client changes trainer, a scan taken around the handover gives the new trainer a set of 80+ body measurements to start from, captured on any phone.
 
-A short call would let me share how handovers could work with a scan. Open to one? If you know who at Vision owns client tools today, a name is enough.
+A call could cover what the client and the new trainer would each see. If you know who owns the Vision member app at head office, a name is enough.
 
 Vadim
 
-**Char count:** 247 / 550
+**Char count:** 321 / 550

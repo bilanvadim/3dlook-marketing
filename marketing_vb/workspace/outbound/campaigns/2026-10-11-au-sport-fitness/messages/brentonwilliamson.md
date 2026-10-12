@@ -26,12 +26,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Brenton,
 
-Quick idea: a short call to see what a member gets from those two photos, and whether it suits how you start new members.
+A new member could take two photos at home before a first session, and the trainer would open the conversation with the body measurements that come back, shared only if the member chooses.
 
-If the person running member experience at Genesis head office should hear it instead, say the word.
+If whoever leads new-member onboarding at Genesis head office is the right ear, I am glad to be pointed there.
 
-Open to a call?
+Afternoons next week are open on my side for a call.
 
 Vadim
 
-**Char count:** 260 / 550
+**Char count:** 374 / 550

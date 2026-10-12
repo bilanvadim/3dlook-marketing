@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi David,
 
-Quick note on Jetts Hamilton: memberships come with no lock-in contracts, so members keep choosing the club on their own terms. Front and side photos taken at home give them 80+ body measurements.
+Quick note on Jetts Fitness Hamilton: memberships come with no lock-in contracts. A member who wants a record of their own training can send two photos, front and side, and get 80+ body measurements back.
 
-What does your club show members about their own training today?
+When a Hamilton member wants to look back at their own training, where do they look?
 
 Vadim
 
-**Char count:** 280 / 600
+**Char count:** 308 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi David,
 
-I would value a short call about how Jetts Hamilton members might use something like this. It asks nothing of your club or your team.
+For a Jetts Hamilton member, a scan is something they hold themselves: two photos at home, body measurements back, and an earlier scan to set beside it when they choose.
 
-If the better person is whoever decides on features in the Jetts member app, point me to them and I will take it from there.
+I would value a conversation about what a Hamilton member sees on screen. The head office team for members' day-to-day experience might look after this instead, and an introduction works too. Is that a conversation you would take?
 
 Vadim
 
-**Char count:** 277 / 550
+**Char count:** 419 / 550

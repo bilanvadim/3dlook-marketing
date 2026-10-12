@@ -17,19 +17,19 @@ Quick thought on Move With Us, the app that brings on-demand Pilates and strengt
 
 A guided two-photo scan inside the app could return 80+ body measurements and body composition estimates, white-label through an SDK, with nothing to ship.
 
-At which point in a member's year would a scan fit best for Move With Us, such as starting a strength block or coming back after a break?
+When a member works through a block of on-demand strength sessions in Move With Us, how does she see her own strength building?
 
 Vadim
 
-**Char count:** 437 / 600
+**Char count:** 427 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Rachel,
 
-A scan only earns its place when a member chooses to take it and chooses an earlier scan to look back on. 3DLOOK has worked with 100+ clients, and this page shows how the capture sits inside a connected fitness app: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+A member partway through a strength block could take the scan on her own phone and pick an earlier scan to look back on, with the capture inside the Move With Us app. 3DLOOK has worked with 100+ clients. More detail here: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Might be worth a quick chat?
+Would a short call be worth setting up?
 
 Vadim
 
-**Char count:** 327 / 550
+**Char count:** 344 / 550

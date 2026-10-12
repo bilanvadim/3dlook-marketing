@@ -17,19 +17,19 @@ Noticed your background in marketing and advertising before you started Fitness 
 
 A trainer could send a client a link for a guided two-photo scan. It returns 80+ body measurements and body composition estimates, taken wherever the client is, with nothing to install.
 
-At which point in a client's training block would a scan fit best for Fitness Inside Out?
+What does a Fitness Inside Out trainer record about a new client before the first block starts?
 
 Vadim
 
-**Char count:** 447 / 600
+**Char count:** 453 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Jude,
 
-With trainers in five cities, a standard way to ask a client for the same measurements by link keeps every session comparable with the client's earlier scans. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results. More here: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+With trainers in five cities, a trainer can send the same link to any client, and the client picks an earlier scan to set it against. The scan comes from two photos taken on the client's own phone. More here: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
 Might be worth a quick chat?
 
 Vadim
 
-**Char count:** 375 / 550
+**Char count:** 318 / 550

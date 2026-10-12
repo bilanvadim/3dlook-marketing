@@ -24,10 +24,10 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Sarah,
 
-Open to a short call? I can show in about ten minutes what a member sees after the scan, and you can tell me whether it fits Wanneroo.
+A Wanneroo member could take a scan at home before their first session and write down the goal they have in mind next to it. Two photos on a phone, then body measurements to look back on.
 
-If member experience at Jetts head office is the better route, I am happy to go there.
+On a call I would cover how a member sees it from home. Should the onboarding lead at Jetts head office be the right audience, I would take a name. Any time you suggest, I can make.
 
 Vadim
 
-**Char count:** 240 / 550
+**Char count:** 388 / 550

@@ -24,12 +24,14 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Selina,
 
-One number for the insights side. 112,100 scans in 2025 across all 3DLOOK customers.
+Members choose which two of their own scans to set against each other.
 
-For Fitness and Lifestyle Group, a scan would be the member's own choice, shown only where a brand decides. More here: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+112,100 scans in 2025 across all 3DLOOK customers.
 
-Might be worth a quick chat?
+More here: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+
+Is there a time next week for a short call?
 
 Vadim
 
-**Char count:** 316 / 550
+**Char count:** 261 / 550

@@ -15,21 +15,25 @@ Hi John,
 
 Noticed your background, from teaching aerobics in the 1990s to running Genesis Fitness Clubs NSW.
 
-Nothing to ship or install in clubs: the scan runs on any phone, with on-screen guidance and two photos. It returns 80+ body measurements, under 45 seconds from the photos to structured results.
+Nothing to ship or install in clubs: the scan runs on any phone with on-screen guidance, under 45 seconds from the photos to structured results. It returns body composition estimates, with BMI and BMR calculated.
 
 How do your clubs run member check-ins or goal reviews today?
 
 Vadim
 
-**Char count:** 374 / 600
+**Char count:** 392 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi John,
 
-One operational point. The capture needs no hardware or stock in a club, only a member's phone. 3DLOOK has worked with 100+ clients, and this page shows how it sits inside a club app: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+At a check-in, a member could bring two photos taken on their own phone, and the body measurements that come back give the conversation a concrete starting point. Nothing needs to be installed or stocked in a club.
 
-Might be worth a quick chat on how that would fit your clubs' reviews?
+3DLOOK has worked with 100+ clients.
+
+This page shows how the capture sits in a club app: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+
+Is there a day this week or next that works for a call?
 
 Vadim
 
-**Char count:** 335 / 550
+**Char count:** 442 / 550

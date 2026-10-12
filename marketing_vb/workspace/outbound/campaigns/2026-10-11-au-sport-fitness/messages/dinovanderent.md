@@ -13,7 +13,7 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Dino,
 
-Noticed your store management background in retail, now in your own UBX club.
+Your store management years in retail, now behind your own UBX club, caught my eye.
 
 New UBX members are met by a coach and get a boxing walk-through before their first workout. A two-photo scan on the member's phone returns 80+ body measurements that could give the coach a starting point.
 
@@ -21,17 +21,17 @@ What does the coach note down about a newcomer at your club today?
 
 Vadim
 
-**Char count:** 369 / 600
+**Char count:** 375 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Dino,
 
-A short call could show you what a member sees when they take the scan.
+Straight after the boxing walk-through, a newcomer could take a scan on their phone and hold a first reference of their own, which they choose whether to keep. It gives the member and their coach something concrete to talk through.
 
-If it belongs in the UBX Member App, I would be glad to be pointed to the person at head office who owns it.
+Your head office onboarding lead would be a natural contact for this, and a name would help.
 
-Worth a quick call?
+Reply with a day and I will book a call.
 
 Vadim
 
-**Char count:** 219 / 550
+**Char count:** 384 / 550

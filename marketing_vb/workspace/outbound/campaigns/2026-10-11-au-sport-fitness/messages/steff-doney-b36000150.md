@@ -26,12 +26,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Steff,
 
-Wanted to follow with one offer: a short call to walk through how the capture works.
+What a member sees is simple: guided photos on her phone, then a set of body measurements to open and read.
 
-If a product lead at KX Pilates head office is the right one, an intro would be great.
+Whoever at head office supports studios when something new arrives could be better placed, and a pointer would help.
 
-Keen on a quick conversation?
+Is Thursday or Friday easier for a call?
 
 Vadim
 
-**Char count:** 221 / 550
+**Char count:** 285 / 550

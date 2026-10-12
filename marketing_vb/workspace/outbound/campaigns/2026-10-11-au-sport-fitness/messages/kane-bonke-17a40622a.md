@@ -15,21 +15,21 @@ Hi Kane,
 
 Came across your work designing movement experiences as Program Director at TotalFusion Australia.
 
-An optional scan in the TotalFusion app gives members 80+ body measurements from two photos. A member can repeat it at home across a program and set it against an earlier scan the member picks, shown only where TotalFusion chooses.
+An optional scan in the TotalFusion app gives members 80+ body measurements from two photos. A member can repeat it at home across a program and set it against an earlier scan they pick.
 
 How do members see what their training is changing today?
 
 Vadim
 
-**Char count:** 407 / 600
+**Char count:** 362 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Kane,
 
-For a program director, the interest is a member-chosen way to look back across a program. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results. This page shows how connected fitness brands use it: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+Across a program, a member can take a scan at home between sessions and choose an earlier one to look back on. More detail here: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Open to a quick chat?
+If you would like to see it, I am glad to walk through it.
 
 Vadim
 
-**Char count:** 342 / 550
+**Char count:** 268 / 550

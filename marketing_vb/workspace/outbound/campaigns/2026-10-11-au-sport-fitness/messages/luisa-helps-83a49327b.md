@@ -26,12 +26,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Luisa,
 
-Happy to show the member's view of a scan in a short call. 3DLOOK has worked with 100+ clients.
+A member at either studio could take a scan at home and decide for herself what to bring to a review.
 
-I am also glad to be pointed to whoever leads digital at KX Pilates head office.
+There were 112,100 scans in 2025 across all 3DLOOK customers.
 
-Shall we find a time?
+KX Pilates head office may have a digital lead who should see this, and I would value a pointer. If a call is useful, say when.
 
 Vadim
 
-**Char count:** 218 / 550
+**Char count:** 311 / 550

@@ -24,12 +24,12 @@ Vadim
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Scott,
 
-On the operations side, the trainer sends one link and the client takes two photos. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+Taken at the end of a training block, the scan gives a client 80+ body measurements to set against an earlier scan the client picks. The trainer sends one link, and the client takes a front and a side photo.
 
-A short read: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
+The operator overview is at https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 
-Worth a quick chat?
+Would a call be worth setting up?
 
 Vadim
 
-**Char count:** 296 / 550
+**Char count:** 352 / 550

@@ -13,21 +13,21 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Lauren,
 
-Quick reaction as a Fitstop owner. Four session styles keep a member busy, and some of them are on the road for weeks.
+Four session styles keep a Fitstop member busy, and some of them are on the road for weeks.
 
 Our scan asks the member for a front and a side photo, then returns 80+ body measurements. How does your studio keep in touch with those members?
 
 Vadim
 
-**Char count:** 284 / 600
+**Char count:** 257 / 600
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Lauren,
 
-The member scans wherever they are, and you see the output when they come back.
+The member scans wherever they are and keeps the result, and the coach sees it if the member chooses to share it.
 
-Would you give me a brief call? Should someone at Fitstop look after the app, an introduction is fine.
+If a call works for you, say when. A pointer to whoever looks after how Fitstop stays in touch with members on the road would be welcome too.
 
 Vadim
 
-**Char count:** 202 / 550
+**Char count:** 275 / 550
