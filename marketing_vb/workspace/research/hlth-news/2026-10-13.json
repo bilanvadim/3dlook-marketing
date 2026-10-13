@@ -1,0 +1,88 @@
+{
+ "generated": "2026-10-13T05:40:18+00:00",
+ "items": [
+  {
+   "id": "3a25ef63-9bc3-4d87-8aa3-0d0012489043",
+   "title": "Chai Discovery and GSK Expand AI Drug Discovery Collaboration Following Successful Laboratory Evaluation",
+   "date": "2026-10-12",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Drug Discovery / Pharma / Biotech",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/chai-discovery-and-gsk-expand-ai-drug-discovery-collaboration-following-successful-laboratory-evaluation"
+  },
+  {
+   "id": "a76a8e6a-9f67-434e-b49e-386c046e707a",
+   "title": "Astrin Biosciences and OpenLoop Expand Access to Breast Cancer Blood Testing",
+   "date": "2026-10-12",
+   "tags": [
+    "Cancer Care",
+    "Life Sciences (Pharma & Biotech)",
+    "Women's Health",
+    "Diagnostics",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/astrin-biosciences-and-openloop-expand-access-to-breast-cancer-blood-testing"
+  },
+  {
+   "id": "187cb7f5-057d-46ad-957c-91ccf3638e5f",
+   "title": "Outro Secures $7 Million to Expand Antidepressant Deprescribing Services",
+   "date": "2026-10-12",
+   "tags": [
+    "Mental & Behavioral Health",
+    "Investments and Partnerships",
+    "Startup"
+   ],
+   "url": "https://hlth.com/insights/news/outro-secures-7-million-to-expand-antidepressant-deprescribing-services"
+  }
+ ],
+ "analyses": {
+  "3a25ef63-9bc3-4d87-8aa3-0d0012489043": {
+   "id": "3a25ef63-9bc3-4d87-8aa3-0d0012489043",
+   "score": 0,
+   "segment": "—",
+   "what": "Chai Discovery розширює співпрацю з GSK після успішного лабораторного тестування: GSK отримує доступ до AI-моделей Chai для дизайну молекул (Chai-3) у своєму pipeline розробки ліків.",
+   "why": "AI для доклінічної розробки ліків не має стосунку до даних про тіло, тож FitXpress і Mobile Tailor тут ні до чого.",
+   "play": "none",
+   "companies": [
+    "Chai Discovery",
+    "GSK"
+   ],
+   "_date": "2026-10-12"
+  },
+  "a76a8e6a-9f67-434e-b49e-386c046e707a": {
+   "id": "a76a8e6a-9f67-434e-b49e-386c046e707a",
+   "score": 1,
+   "segment": "—",
+   "what": "Astrin Biosciences і OpenLoop Health уклали партнерство щодо дистрибуції: OpenLoop бере на себе клінічну інфраструктуру (призначення лікарем, забір крові, супровід після результату) для аналізу крові Certitude на рак грудей у 48 штатах США.",
+   "why": "Новина про скринінг раку за аналізом крові, тут немає ні BMI, ні складу тіла, ні вимірювань. Є лише дотичний сигнал: OpenLoop будує інфраструктуру virtual care і в червні запускав RPM-програму з RxHealing і Tenovi, але ця подія не дає приводу писати зараз.",
+   "caveat": "Не плутати з сегментом §10 BCRL: він про моніторинг лімфедеми після лікування раку, а не про скринінг.",
+   "play": "none",
+   "companies": [
+    "Astrin Biosciences",
+    "OpenLoop Health",
+    "OpenLoop",
+    "RxHealing",
+    "Tenovi",
+    "Teal Health",
+    "UC Davis Health"
+   ],
+   "_date": "2026-10-12"
+  },
+  "187cb7f5-057d-46ad-957c-91ccf3638e5f": {
+   "id": "187cb7f5-057d-46ad-957c-91ccf3638e5f",
+   "score": 0,
+   "segment": "—",
+   "what": "Нью-йоркська компанія Outro залучила $7M (pre-seed і seed), щоб розширити програму поступової відміни антидепресантів (Taper Management, зараз у 14 штатах) і мережу клініцистів.",
+   "why": "Відміна психіатричних препаратів (mental health) не пов'язана з даними про тіло, вагою чи GLP-1, тож ICP-сегменту тут немає.",
+   "play": "none",
+   "companies": [
+    "Outro"
+   ],
+   "_date": "2026-10-12"
+  }
+ },
+ "posts": []
+}
