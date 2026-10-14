@@ -74,6 +74,8 @@ related: 2026-09-25-fitxpress-seo-plan.md (фазы 0 и 2), 2026-09-27-tz-track
 
 ## P0-4. GPTBot получает 403
 
+> **Перепроверено 2026-10-14: задача актуальна, инструкция исправлена** (отправлено Асель в Slack). 403 по-прежнему отдаётся на любой User-Agent с «GPTBot» без учёта регистра, в том числе на `/robots.txt`. Ответ — стандартная страница nginx (146 байт), то есть блок срабатывает до WordPress. Обновлённый robots.txt (одна группа `User-agent: *`) GPTBot разрешает и на 403 не влияет. OAI-SearchBot, ChatGPT-User, ClaudeBot, PerplexityBot, Googlebot, CCBot и Bytespider получают 200. **Cloudflare нет** (DNS на GoDaddy `domaincontrol.com`, сервер AWS 52.89.180.242, без `cf-ray`), Wordfence ни при чём. Искать правило в конфиге nginx (`grep -rni gptbot /etc/nginx/`: server-блок, include, списки bad bots) или в настройке блокировки ботов в панели хостинга. Google-Extended — токен robots.txt, а не User-Agent, curl'ом не проверяется. Приёмка: полный UA `Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; GPTBot/1.2; +https://openai.com/gptbot` → 200 на `/` и на `/robots.txt`. Пункты 1–2 ниже (Cloudflare, Wordfence) не актуальны.
+
 **Проблема:** `curl -A "GPTBot" https://3dlook.ai/` возвращает **403**, хотя robots.txt его разрешает. Решение Вадима — пускаем.
 
 **Сделать:** найти, где рождается 403. Проверить по порядку:
