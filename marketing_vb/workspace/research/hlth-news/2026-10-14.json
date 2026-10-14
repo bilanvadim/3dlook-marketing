@@ -1,0 +1,92 @@
+{
+ "generated": "2026-10-14T05:40:25+00:00",
+ "items": [
+  {
+   "id": "1aeb0682-5062-4c45-bde0-2d6d2597c15a",
+   "title": "Google DeepMind and Adaptyv Bio Validate AI Protein Watermarking Using Carterra Technology",
+   "date": "2026-10-13",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Drug Discovery / Pharma / Biotech",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/google-deepmind-and-adaptyv-bio-validate-ai-protein-watermarking-using-carterra-technology"
+  },
+  {
+   "id": "24727477-70b3-4f09-8186-922ef31a6d7b",
+   "title": "Nextech Partners with Assort Health and EliseAI to Integrate Agentic AI into Specialty Practice Workflows",
+   "date": "2026-10-13",
+   "tags": [
+    "Patient Engagement / Experience",
+    "Operational Efficiency",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/nextech-partners-with-assort-health-and-eliseai-to-integrate-agentic-ai-into-specialty-practice-workflows"
+  },
+  {
+   "id": "31097802-33da-4b88-8ab2-c2016d556351",
+   "title": "Google Expands Health Tracking Capabilities Through Flo Health Partnership and New Fitbit Features",
+   "date": "2026-10-13",
+   "tags": [
+    "Consumer Wellness and Technology",
+    "Women's Health",
+    "Investments and Partnerships",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/google-expands-health-tracking-capabilities-through-flo-health-partnership-and-new-fitbit-features"
+  }
+ ],
+ "analyses": {
+  "1aeb0682-5062-4c45-bde0-2d6d2597c15a": {
+   "id": "1aeb0682-5062-4c45-bde0-2d6d2597c15a",
+   "score": 0,
+   "segment": "—",
+   "what": "Google DeepMind опублікувала в Nature дослідження SynthIDBio: метод вбудовує водяні знаки в білки, згенеровані AI. Adaptyv Bio перевірила зв'язування білків на платформі Carterra LSA-XT.",
+   "why": "Новина про drug discovery та біобезпеку білків, ніяк не пов'язана з даними тіла чи з ICP 3DLOOK.",
+   "play": "none",
+   "companies": [
+    "Google DeepMind",
+    "Adaptyv Bio",
+    "Carterra",
+    "AstraZeneca"
+   ],
+   "_date": "2026-10-13"
+  },
+  "24727477-70b3-4f09-8186-922ef31a6d7b": {
+   "id": "24727477-70b3-4f09-8186-922ef31a6d7b",
+   "score": 0,
+   "segment": "—",
+   "what": "Nextech (EHR і practice management для спеціалізованих практик) інтегрує conversational/agentic AI від Assort Health та EliseAI. Інтеграція автоматизує запис на прийом, intake, readiness checks і follow-up. Анонс зробили на конференції офтальмологів.",
+   "why": "Ідеться про AI для адміністративних процесів (дзвінки, розклад) в офтальмології та подібних практиках. Тут немає ні метрик тіла, ні ICP-сегмента.",
+   "play": "none",
+   "companies": [
+    "Nextech",
+    "Assort Health",
+    "EliseAI"
+   ],
+   "_date": "2026-10-13"
+  },
+  "31097802-33da-4b88-8ab2-c2016d556351": {
+   "id": "31097802-33da-4b88-8ab2-c2016d556351",
+   "score": 1,
+   "segment": "—",
+   "what": "Google уклала багаторічне партнерство з Flo Health та інвестувала в компанію. На Fitbit з'являється оцінка трендів insulin resistance, у Google Health додаються інтеграції з Abbott Lingo CGM, аналізами від Function і журналами харчування MyFitnessPal Premium.",
+   "why": "Загальний тренд: Google збирає в Google Health Coach багато джерел даних про здоров'я. Це максимум ідея для контенту, а конкретного акаунта чи тригера для FitXpress тут немає.",
+   "play": "content_only",
+   "companies": [
+    "Google",
+    "Google Health",
+    "Flo Health",
+    "Fitbit",
+    "Abbott",
+    "Function",
+    "MyFitnessPal"
+   ],
+   "caveat": "Google завеликий для outbound. Flo Health займається жіночим здоров'ям, а не схудненням чи фітнесом. MyFitnessPal вже контактував nick.",
+   "_date": "2026-10-13"
+  }
+ },
+ "posts": []
+}
