@@ -61,7 +61,8 @@ A: Yes, configurable per tier. We can also burst higher with notice.
 ## Pricing & Commercials
 
 **Q: Is there a free trial?**
-A: Yes — 1 month, 200 free requests, full SDK access.
+A: There is no self-serve trial. After a demo call, your team gets hands-on access to a demo page to run scans and review the outputs. Once the contract is signed, the first month is free for integration and testing. Billing then follows your plan.
+*Path confirmed by Vadim 2026-10-14. Sales keeps the length and scan counts flexible per deal, so public copy names no figures (internal ones: `pricing.md`). Never call it a "free trial" in outbound.*
 
 **Q: Pricing tiers?**
 A: For FitXpress: $1,000/mo for 500 requests up to $10,000/mo for 20,000 requests, scaling per-request rate from $2 to $0.50. Custom above 20K.

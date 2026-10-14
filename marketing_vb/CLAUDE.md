@@ -32,7 +32,7 @@
 - **Что делает:** verified BMI / body composition / measurements для compliance, retention, eligibility screening
 - **Ценность:** anti-fraud (AI Smart Scales detects mismatch), engagement (3D goal visualization, side-by-side progress), workflow efficiency
 - **Live customers:** UK Meds (online pharmacy BMI verification), Yazen (weight loss, 34K сканов/год), Healthyr (patient profile)
-- **Pricing tiers:** $1K / 500 req, $1.5K / 1K req, $3.1K / 2.5K req, $5K / 5K req, $7.5K / 10K req, $10K / 20K req. Free trial: 200 requests / 1 month.
+- **Pricing tiers:** $1K / 500 req, $1.5K / 1K req, $3.1K / 2.5K req, $5K / 5K req, $7.5K / 10K req, $10K / 20K req. Триала без контракта нет: демо-звонок → демо-страница → контракт → первый месяц бесплатно на интеграцию и тесты → план. Слово «free trial» не используем. Публично путь описывать можно, но без цифр: sales держит длительность и количество сканов гибкими, внутренние цифры только в `pricing.md` (Вадим, 2026-10-14).
 
 ### Product 2: Mobile Tailor (Apparel & Uniforms)
 - **Целевые рынки:** made-to-measure apparel, on-demand manufacturing, uniform companies (PPE, medical, public safety), bridal/formalwear, custom alterations

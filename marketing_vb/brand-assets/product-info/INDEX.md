@@ -10,7 +10,7 @@
 | `how-it-works.md` | Техническое описание стека | seo-section-writer (technical articles) |
 | `proof-points.md` | Все цифры со ссылками на источник | message-sequencer, post-drafter, all SEO |
 | `icp-detail.md` | Развёрнутый ICP по обоим продуктам (10 сегментов FX + 4 MT, buyer titles, боли, revenue-пороги, примеры компаний) | hypothesis-generator, icp-validator, company-researcher, context-pack-builder (для SEO/social персонализации) |
-| `pricing.md` | FitXpress tiers, free trial | message-sequencer, faq |
+| `pricing.md` | FitXpress tiers, path from demo to paid plan (no self-serve trial) | message-sequencer, faq |
 | `competitors.md` | Prism Labs / Bodygram / Size Stream / Apple risk | hypothesis-generator, seo-outline-builder |
 | `compliance.md` | HIPAA, GDPR, encryption, photo retention | message-sequencer (insurance/healthcare) |
 | `tech-spec.md` | API, SDK, white-label | tech-focused content |

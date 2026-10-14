@@ -598,7 +598,7 @@ For IT/technical audience, messages focus on:
 - Privacy architecture per the live trust FAQ (`compliance.md`): BAA-backed HIPAA support, GDPR controller/processor roles in a DPA, photos deleted after processing or within 30 days, outputs stored and deletable by scan ID, records tied to random IDs
 - Scalability and reliability (99.9% uptime SLA)
 - No ML expertise required — the model is pre-trained and accessed via API
-- Free trial: 200 requests / 1 month for technical evaluation
+- Evaluation path: a demo call, then hands-on demo page access; integration and testing happen in a free first month after signing (no sandbox, no self-serve trial). Messages never say "free trial" and never quote these numbers.
 
 Tone: technical, concrete, no marketing fluff. These readers can spot vendor-speak instantly.
 Hook examples: "Evaluating body scanning APIs?" / "If your product team asked you to look at body measurement integration" / "Quick thought on the body-data piece of your platform"

@@ -148,7 +148,7 @@
 ## Pricing (FitXpress)
 
 See `pricing.md` for full table. Key anchors:
-- Free trial: 1 month, 200 free requests
+- No self-serve trial: a demo page after the demo call, then the first month free after signing for integration and testing. No figures in public copy; the internal ones live only in `pricing.md`
 - $1,000 / mo at 500 requests ($2.00/request)
 - $10,000 / mo at 20,000 requests ($0.50/request)
 
