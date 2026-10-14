@@ -195,6 +195,8 @@ By channel: Clarity "Direct" = source `3dlook.ai` (internal navigation) **114 of
 
 Not available from the API: which elements receive dead clicks, and the text of script errors. Hypothesis for desktop dead clicks: the invisible (`opacity: 0`) Mobile Tailor hero stacked on the FitXpress hero, and the `href="#"` nav items. Verify in Clarity recordings / heatmap UI.
 
+**Checked later on 2026-10-14 (browser audit, `research/seo-fitxpress-2026-09/data/2026-10-14-p0-1-browser-audit.md`):** the hidden MT hero does **not** intercept clicks. Clicks that do nothing land on the plan-name pills, the "Recommended" band, the "save up to 20%" pill, prices, feature rows, the already-active FitXpress switch and the `href="#"` header items. The script errors are mostly the WebToffee cookie banner raced by Flying Scripts (see `research/seo-fitxpress-2026-09/2026-10-14-p0-1-ticket-v2.md`).
+
 ---
 
 ## 5. Ahrefs (facts)
