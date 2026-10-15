@@ -1,0 +1,90 @@
+{
+ "generated": "2026-10-15T05:40:19+00:00",
+ "items": [
+  {
+   "id": "d2d94f6b-b81a-4145-b09c-2f390d7e9285",
+   "title": "Brellium Raises $23 Million and Launches CortexLM to Strengthen Clinical Compliance and Revenue Protection",
+   "date": "2026-10-14",
+   "tags": [
+    "Investments and Partnerships",
+    "Operational Efficiency",
+    "Startup",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/brellium-raises-23-million-and-launches-cortexlm-to-strengthen-clinical-compliance-and-revenue-protection"
+  },
+  {
+   "id": "76dcaf51-7335-473b-a8a0-4a78a2e2eed4",
+   "title": "Agilent Technologies to Acquire Proscia for Up to $270 Million to Expand Digital Pathology Capabilities",
+   "date": "2026-10-14",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Investments and Partnerships",
+    "Diagnostics",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/agilent-technologies-to-acquire-proscia-for-up-to-270-million-to-expand-digital-pathology-capabilities"
+  },
+  {
+   "id": "df5c53e4-ff83-4b9e-9898-593cbf92ed96",
+   "title": "Ypsomed and smartpatient Partner to Integrate Connected Injection Devices with Digital Patient Support",
+   "date": "2026-10-14",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Patient Engagement / Experience",
+    "Digital Medicine",
+    "Health Tech, Solutions & Services",
+    "Chronic Condition Management"
+   ],
+   "url": "https://hlth.com/insights/news/ypsomed-and-smartpatient-partner-to-integrate-connected-injection-devices-with-digital-patient-support"
+  }
+ ],
+ "analyses": {
+  "d2d94f6b-b81a-4145-b09c-2f390d7e9285": {
+   "id": "d2d94f6b-b81a-4145-b09c-2f390d7e9285",
+   "score": 0,
+   "segment": "—",
+   "what": "Brellium залучила $23M і запустила CortexLM: ML-платформу, яка перевіряє 100% клінічних нотаток до подання claims, щоб зменшити payer clawbacks. Компанія планує вийти з behavioural health і home care у cardiology, pain management і value-based primary care.",
+   "why": "Це аудит клінічної документації та billing compliance. Дані про тіло тут ніяк не задіяні, тож для FitXpress чи Mobile Tailor зачіпки немає.",
+   "play": "none",
+   "companies": [
+    "Brellium",
+    "Gentiva",
+    "Maxim Healthcare",
+    "Headspace",
+    "Rula"
+   ],
+   "_date": "2026-10-14"
+  },
+  "76dcaf51-7335-473b-a8a0-4a78a2e2eed4": {
+   "id": "76dcaf51-7335-473b-a8a0-4a78a2e2eed4",
+   "score": 0,
+   "segment": "—",
+   "what": "Agilent Technologies купує Proscia, розробника digital pathology платформи Concentriq, за $240M одразу і до $30M за milestones.",
+   "why": "Це digital pathology і аналіз тканин, жодного стосунку до ICP-сегментів 3DLOOK.",
+   "play": "none",
+   "companies": [
+    "Agilent Technologies",
+    "Proscia"
+   ],
+   "_date": "2026-10-14"
+  },
+  "df5c53e4-ff83-4b9e-9898-593cbf92ed96": {
+   "id": "df5c53e4-ff83-4b9e-9898-593cbf92ed96",
+   "score": 1,
+   "segment": "—",
+   "what": "Ypsomed і smartpatient (дочірня компанія Redcare Pharmacy) інтегрують connected autoinjector SmartPilot/YpsoMate з платформою MyTherapy. Мета: поєднати дані про ін'єкції з adherence-моніторингом і patient support programmes фармкомпаній при хронічних захворюваннях.",
+   "why": "Тренд дотичний: pharma patient support programmes для ін'єкційних терапій. Але у статті немає ні weight loss/GLP-1, ні метрик тіла, тож конкретного outbound-приводу немає; щонайбільше ідея для контенту.",
+   "play": "content_only",
+   "companies": [
+    "Ypsomed",
+    "smartpatient",
+    "Redcare Pharmacy"
+   ],
+   "_date": "2026-10-14"
+  }
+ },
+ "posts": []
+}
