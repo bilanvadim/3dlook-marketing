@@ -210,9 +210,13 @@
 
 См. `brand-assets/product-info/competitors.md` и `brand-assets/competitors/list.md`. Краткое:
 
-- **Prism Labs** — главный конкурент в FitXpress space. Сильны в insurance / population health / GLP-1.
-- **Bodygram** — fitness trainers / dieticians / health professionals. Похожий продукт, слабее в clinical workflows.
-- **Size Stream** — clinical research / hardware-based + smartphone. Сильны в hybrid (on-prem + at-home).
+Обновлено 2026-10-15 (Prism, Size Stream, Fit:match, Mirrorsize, Bodd проверены заново; Bodygram — по деку 2026-03). Репо публичный: внутренние тесты и контекст сделок туда не пишем.
+
+- **Prism Labs** — главный конкурент в FitXpress space: health-first SDK, GLP-1 / insurers / providers, Noom и WW, вход от $500/мес, заявляет SOC 2 Type II.
+- **Size Stream** — с июля 2026 отдельный бизнес-юнит Size Stream Health (telehealth, GLP-1, clinical trials), смартфон + booth, заявляет SOC 2 Type 2.
+- **Fit:match** — multi-vertical (спорт, health, retail), публичный SDK и BAA с 2026, в прошлом bra fitting (Macy's, Savage X Fenty).
+- **Bodygram** — cross-vertical photo-based API; ранние заметки: SMB-тренеры и диетологи.
+- **Mirrorsize** и **Bodd** — apparel / uniforms; Bodd — только booth-железо, Mirrorsize — дешёвый self-serve без данных о точности.
 - **Apple/Google native primitives (future)** — главный долгосрочный риск.
 
 ---

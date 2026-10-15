@@ -23,7 +23,7 @@ brand-assets/
 │   ├── proof-points.md             ← все цифры со ссылками
 │   ├── icp-detail.md               ← ICP по обоим продуктам
 │   ├── pricing.md
-│   ├── competitors.md              ← Prism Labs, Bodygram, Size Stream
+│   ├── competitors.md              ← Prism, Size Stream, Fit:match, Bodygram, Mirrorsize, Bodd
 │   ├── compliance.md               ← HIPAA, GDPR, encryption
 │   ├── tech-spec.md
 │   ├── faq.md                      ← Objection handling

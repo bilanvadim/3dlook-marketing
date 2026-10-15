@@ -76,14 +76,24 @@ A: Failed-due-to-pose scans are not billable. Successful scans are billed, regar
 
 ## Competitive
 
+*Competitor facts below were last verified 2026-10-15; full profiles in `competitors.md`. Never name competitors in cold outbound or articles.*
+
 **Q: How do you compare to Prism Labs?**
-A: They're focused on clinical body composition, especially for GLP-1 / population health. We have broader workflow integration depth, two-product portfolio (FX + MT), and stronger compliance posture for regulated workflows.
+A: Prism focuses on clinical body composition (GLP-1 programs, insurers, providers) and uses a 360° video scan. FitXpress works from two photos with Real-Time Pose Validation, flags self-reported weight mismatches for verification workflows (Smart Scales, beta), and sits next to Mobile Tailor for apparel and uniforms.
+*(Internal: Prism claims SOC 2 Type II and we have no SOC 2 report yet, so don't claim a stronger compliance posture; answer security questions with `compliance.md` wording. Don't argue accuracy; use `accuracy-formulations.md`.)*
+
+**Q: How do you compare to Size Stream?**
+A: Size Stream combines a consumer app, booth scanners and, since July 2026, a health business unit. FitXpress is built to embed in the customer's own app through a white-label API and SDK, with verification features for regulated onboarding.
+*(Internal: Size Stream announced SOC 2 Type 2 in March 2026; same caveat as Prism.)*
+
+**Q: How do you compare to Fit:match?**
+A: Fit:match is a multi-vertical platform whose 2026 focus is youth sports, with an iOS-only app. FitXpress runs on iOS and Android, embeds white-label, and adds verification features for health workflows.
 
 **Q: How do you compare to Bodygram?**
-A: Bodygram is well-priced for SMB trainers / dieticians. We're enterprise-grade — BAA-backed HIPAA support, audit logs, white-label depth, fraud detection (Smart Scales mismatch). Different fit.
+A: Bodygram is well-priced for SMB trainers / dieticians. We're enterprise-grade — BAA-backed HIPAA support, audit logs, white-label depth, weight-mismatch detection (Smart Scales, beta). Different fit.
 
 **Q: What if Apple / Google launches body measurement primitives?**
-A: We don't lead with "best model" — we lead with workflow integration, audit logs, longitudinal tracking, and compliance. Apple/Google won't ship those workflows. They might commoditize one input, but they won't replace the trusted layer above it.
+A: We don't lead with "best model" — we lead with workflow integration, audit logs, scan-to-scan comparison, and compliance. Apple/Google won't ship those workflows. They might commoditize one input, but they won't replace the trusted layer above it.
 
 ## Reliability & Operations
 
