@@ -1,0 +1,104 @@
+{
+ "generated": "2026-10-16T05:40:38+00:00",
+ "items": [
+  {
+   "id": "cef2b308-0334-4781-9567-6e7d8919766d",
+   "title": "Zocdoc Acquires Sohar Health to Simplify Insurance Navigation for Patients and Providers",
+   "date": "2026-10-15",
+   "tags": [
+    "Investments and Partnerships",
+    "Operational Efficiency",
+    "Care Coordination / Navigation / Care Access",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/zocdoc-acquires-sohar-health-to-simplify-insurance-navigation-for-patients-and-providers"
+  },
+  {
+   "id": "f3e6d22c-7295-4be7-a928-7b9e070ab597",
+   "title": "Labcorp and Thrive Global Launch Thrive 5 Health Test Combining Biomarkers and Behavior Change",
+   "date": "2026-10-15",
+   "tags": [
+    "Consumer Wellness and Technology",
+    "Preventive Health",
+    "Diagnostics",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/labcorp-and-thrive-global-launch-thrive-5-health-test-combining-biomarkers-and-behavior-change"
+  },
+  {
+   "id": "bf26f675-e442-42b9-ac25-d7b9c70d396e",
+   "title": "Suki Secures $90M to Expand AI-Powered Clinical Workflows",
+   "date": "2026-10-15",
+   "tags": [
+    "Investments and Partnerships",
+    "Operational Efficiency",
+    "Startup",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/suki-secures-90m-to-expand-ai-powered-clinical-workflows"
+  }
+ ],
+ "analyses": {
+  "cef2b308-0334-4781-9567-6e7d8919766d": {
+   "id": "cef2b308-0334-4781-9567-6e7d8919766d",
+   "score": 0,
+   "segment": "—",
+   "what": "Zocdoc купив Sohar Health. Sohar автоматично визначає страховку пацієнта і перевіряє, чи покриває вона візит. Це перша покупка Zocdoc, і вона підсилює його мережу запису Care Access Network.",
+   "why": "Тут ідеться про перевірку страховки і запис до лікаря, а не про дані тіла чи BMI. До того ж це M&A, а такі компанії ми виключаємо.",
+   "play": "none",
+   "companies": [
+    "Zocdoc",
+    "Sohar Health",
+    "Amazon Health AI",
+    "Gemini",
+    "Yelp",
+    "Healthgrades",
+    "Blue Shield of California"
+   ],
+   "_date": "2026-10-15"
+  },
+  "f3e6d22c-7295-4be7-a928-7b9e070ab597": {
+   "id": "f3e6d22c-7295-4be7-a928-7b9e070ab597",
+   "score": 1,
+   "segment": "—",
+   "what": "Labcorp разом з Thrive Global запустили для споживачів тест Thrive 5 Health Test. Він рахує п'ять маркерів (ApoB, hs-CRP, HbA1c, тиск, BMI) і дає поради щодо звичок за методикою Thrive Microsteps. Кров здають у Labcorp Patient Service Centers у США.",
+   "why": "Це лише тренд: BMI тепер стоїть у споживчих кардіометаболічних панелях поруч з ApoB і HbA1c. Годиться хіба на контент, бо Labcorp — enterprise-лабораторія, а про Thrive Global у статті сказано тільки як про методику зміни звичок, тож тригера під ICP немає.",
+   "play": "content_only",
+   "companies": [
+    "Labcorp",
+    "Thrive Global"
+   ],
+   "caveat": "Labcorp Drug Development є в прикладах §7 Clinical Trials, але новина про споживчу діагностику, а не про клінічні дослідження. У статті не сказано, як саме вимірюють BMI, тож будувати на цьому кут не можна.",
+   "_date": "2026-10-15"
+  },
+  "bf26f675-e442-42b9-ac25-d7b9c70d396e": {
+   "id": "bf26f675-e442-42b9-ac25-d7b9c70d396e",
+   "score": 0,
+   "segment": "—",
+   "what": "Suki залучив $90M у Series E, щоб розвивати AI-асистента для клініцистів: автоматичні нотатки з розмови з пацієнтом, диктування, медичне кодування, підготовка призначень з інтеграцією в Epic, Oracle Health, athenahealth і MEDITECH.",
+   "why": "Це AI-документація і робочі процеси клініцистів, з даними тіла ніяк не пов'язано.",
+   "play": "none",
+   "companies": [
+    "Suki",
+    "Philips Ventures",
+    "Zoom Ventures",
+    "Hedosophia",
+    "Venrock",
+    "Flare Capital Partners",
+    "Healthier Capital",
+    "Crosslink Capital",
+    "Hercules Capital",
+    "Austin Regional Clinic",
+    "Rush University System for Health",
+    "WellSky",
+    "MEDITECH",
+    "Epic",
+    "Oracle Health",
+    "athenahealth"
+   ],
+   "_date": "2026-10-15"
+  }
+ },
+ "posts": []
+}
