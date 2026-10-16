@@ -1,0 +1,17 @@
+{"version": "asselya-updated-2026-10-15", "judge": "fresh general-purpose subagent, blind", "date": "2026-10-16",
+ "scores": {"proof_of_belonging": 10, "claims_discipline": 8, "sales_argument": 5, "uniqueness": 6, "conversion": 6, "buyer_language": 6, "human_copy": 4, "search_ai_visibility": 6, "place_and_technical": 2},
+ "total": 53,
+ "hard_fails": ["[PLACEHOLDER] HTML comment for the remaining client logos", "Medical framing beyond the direct sentence: FAQ chains a diagnose/treat disclaimer onto 'FitXpress is not a medical device', boundary already stated above"],
+ "coordinator_note": "Judge missed the reserved word 'validated' in the FAQ H3 'Has FitXpress been validated at higher body weights?', unchanged from version A, which judge A flagged as a guardrail #3 hard fail.",
+ "lowest": "sales_argument",
+ "one_fix": "Replace the H1 with 'FitXpress for bariatric programs: help keep patients in follow-up and check BMI criteria before the first consultation', rewrite the lede's first sentence around that outcome, cut 'from two guided smartphone photos and a short profile' from the hero.",
+ "points_lost": {
+  "proof_of_belonging": "No bariatric standard or body (ASMBS/IFSO, MBSAQIP, NICE), no BMI cut-offs, no %TWL/%EWL, no EHR; logo caption past 'since 2016'",
+  "claims_discipline": "Two-BMI feature without the ~3.5% weight error or beta status (mock gap 41.2 vs 43.1 may sit inside it); pose/clothing/capture-source fields unconfirmed; 38-210 kg vs API 40-200 kg; prices in API requests while /pricing/ counts scans; boundary twice; source labels not 'Publisher, study name'; 'scan IDs' unexpanded; 'Body Progress' vs '3D Body Progress'",
+  "sales_argument": "H1 without product or outcome; lede opens with outputs and mechanics; problem H2 statement with 'cost you', no conclusion after the statistics; 40% statistic points to missed eligible patients, the opposite of the pilot measure; value cards after problem; blocks restate each other, sentences repeated verbatim; repeatability definition fails blog test; ~2,100 words",
+  "uniqueness": "H1 nearly repeats the hub article topic; standard FX blocks; 60% rule unverifiable",
+  "conversion": "Contact-page form id; events unverified; no sticky mobile CTA; no 'no integration fee'; second route to /contact-us/; API requests give a clinic no way to map price to patient volume",
+  "buyer_language": "Direct address in headings; topic imperative 'Understand measurement performance…'; thin bariatric vocabulary; British 'enquiry' beside US prior authorization",
+  "human_copy": "Detector hard fail (8 en dashes) caps at 5; 'your program' x28, verbatim repeats; 'not patient results' x3; fragments",
+  "search_ai_visibility": "7 FAQs, three repeat the body; 'How often can patients scan' never says how often; no question H2s on problem and accuracy",
+  "place_and_technical": "URL undecided; no sibling links; no areaServed; performance/contrast/768/1440 unchecked; placeholder"}}
