@@ -1,0 +1,14 @@
+{
+  "scope_hash": "1ea7ba4d560d5204",
+  "sections": [
+    "anti-cases (where it does not work)",
+    "sub-segment",
+    "target buyer persona",
+    "target buyer persona: sales navigator pull for step 3",
+    "use case",
+    "validation criteria (step 2 will check)",
+    "vertical"
+  ],
+  "stamped_at": "2026-10-16T12:57:34Z",
+  "note": "Written when the company list was built. If the hypothesis scope changes after this, the list no longer answers it."
+}
