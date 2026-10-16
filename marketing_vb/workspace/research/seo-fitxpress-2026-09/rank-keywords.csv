@@ -1,0 +1,69 @@
+tier,keyword,countries,target,note
+Brand,3dlook,us|gb,1,brand demand check
+A,fitxpress,us|gb,1,plan KPI: 1st on /fitxpress/
+A,bmi verification,us|gb,3,/for-bmi-verification/
+A,online pharmacy bmi verification,gb,,UK pharmacy guide
+A,gym body scanner,us,5,fitness landing
+A,body scan gym,us,5,fitness landing
+A,remote patient monitoring for weight loss,us,5,telehealth landing
+A,accelerated underwriting,us,5,insurance landing
+A,biometric screening,us,,wellness hub article
+A,remote biometric screening,us,5,wellness landing
+A,at home biometric screening,us,5,wellness landing
+A,occupational health software,us|gb,5,occ-health landing
+A,dct platform,us,10,clinical trials landing
+A,body scanning api,us,,developers
+A,body measurement api,us,,developers
+A,body scanning sdk,us,,developers
+A,body scanning software,us,,developers
+A,body measurement software,us,,developers
+A,body composition api,us,,developers
+A,remote body measurement,us,,
+B,ai body scanner,us|gb,3,plan KPI: top-3 (/fitxpress/)
+B,3d body scanner,us|gb,10,plan KPI: top-10 (homepage)
+B,3d body scan,us|gb,,homepage
+B,3d body scanning,us|gb,,homepage
+B,body scanner,us|gb,,
+B,body scanner app,us|gb,,/fitxpress/
+B,body scan app,us|gb,,
+B,3d body scanner app,us,,
+B,body composition scanner,us|gb,,/fitxpress/
+B,body composition analysis,us,,
+B,body composition test,us,,
+B,body scanning technology,us,,/technology/
+B,ai body scan,us,,
+C,body fat calculator,us|gb,10,calculator (plan 3.2)
+C,body fat percentage calculator,us,10,calculator (plan 3.2)
+C,waist to height ratio calculator,us|gb,,calculator (plan 3.2)
+C,lean body mass calculator,us,,calculator (plan 3.2)
+C,muscle mass calculator,us,,calculator (plan 3.2)
+C,body fat percentage,us,,X% body fat hub (plan 3.4)
+C,15 body fat,us,,X% body fat series
+C,20 body fat,us,,X% body fat series
+C,25 body fat female,us,,X% body fat series
+C,bmi for mounjaro,gb,5,UK GLP-1 cluster (plan 3.3)
+C,bmi for wegovy,gb,,UK GLP-1 cluster (plan 3.3)
+C,glp-1 muscle loss,us,,plan 3.3
+C,ozempic muscle loss,us,,plan 3.3
+C,lean body mass vs muscle mass,us,,existing article
+C,ai body scan vs dexa,us,,existing article
+C,skinny fat,us,,existing article
+C,how to measure body composition,us,,existing article
+C,visible abs body fat,us,,existing article
+MT,ai body measurement,us|gb,,/mobile-tailor/
+MT,ai body measurements,us,,/mobile-tailor/
+MT,ai tailor,us,,/mobile-tailor/
+MT,body measurement app,us|gb,,
+MT,made to measure software,us,,
+MT,body measurement app for clothing,us,,existing article
+MT,mobile tailor,us,1,product name
+MT,virtual tailor,us,,/mobile-tailor/
+MT,made to measure app,us,,/mobile-tailor/for-made-to-measure/
+MT,uniform sizing,us,,/mobile-tailor/for-uniforms/
+MT,3d body measurement,us,,
+WM,wrist measurement,us|gb,,/wrist-measurement/
+WM,wrist size,us|gb,,/wrist-measurement/
+WM,wrist size measurement,us,,/wrist-measurement/
+WM,how to measure wrist size,us,,
+WM,wrist size calculator,us,,
+WM,ai wrist measurement,us,,/wrist-measurement/
