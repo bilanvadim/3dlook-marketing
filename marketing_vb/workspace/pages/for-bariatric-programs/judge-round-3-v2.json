@@ -1,0 +1,16 @@
+{"version": "page-v2-2026-10-16 after round-2 fixes", "judge": "fresh general-purpose subagent, blind", "date": "2026-10-16",
+ "scores": {"proof_of_belonging": 11, "claims_discipline": 11, "sales_argument": 10, "uniqueness": 7, "conversion": 6, "buyer_language": 8, "human_copy": 7, "search_ai_visibility": 8, "place_and_technical": 3},
+ "total": 71,
+ "hard_fails": ["[PLACEHOLDER] logo row: 3 of all client logos (design handoff)"],
+ "lowest": "conversion",
+ "one_fix": "Shared 'FX | LP | Demo' form at #demo, generate_lead (form_name=fx_lp_demo, fx_vertical=bariatric) on submit, verify demo_click and generate_lead in GTM preview.",
+ "points_lost": {
+  "proof_of_belonging": "No bariatric client or anonymised vertical figure; validation excludes post-surgery body composition; no integration format for a hospital EHR; incomplete logo row",
+  "claims_discipline": "Lean-mass pain and 'sees whether loss comes from fat or lean mass' imply an unvalidated post-surgery capability; Smart Scales beta without weight accuracy, label differs from /pricing/; API requests vs live /pricing/ scans",
+  "sales_argument": "H1 outcome is a process and names a category; problem opens with schedule background, cost not stated in money/staff terms; ~1,670 words; pre-qual is a second job; thin benefits on value cards, BMR and 3D rows",
+  "uniqueness": "Same keyphrase family as the hub; BMI check overlaps the BMI verification page; shared FX template blocks",
+  "conversion": "Events unverified and off-spec; contact-page form; no CTA from pre-qual to the pilot block; no sticky mobile CTA; 'API requests' does not map to patient scans",
+  "buyer_language": "'the program’s app' assumes a patient app; 'API requests' in the buyer's price line; FAQ answers open with fragments",
+  "human_copy": "Clean detector, opinion and boundary present; ', and' compounds x15, 'the program' x29; repeated mock caption; ambiguous 'and the scan becomes the pre-surgery baseline'",
+  "search_ai_visibility": "FAQs 1 and 3 repeat the record table and accuracy limit; no integration FAQ; problem and accuracy H2s open with a lead-in",
+  "place_and_technical": "No link up (parent not live); 768/performance/contrast unchecked; base64 logos + placeholder; no sticky CTA; telehealth anchor text"}}

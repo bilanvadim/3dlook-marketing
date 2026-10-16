@@ -45,7 +45,7 @@ language: ru (переведено с украинского 2026-09-29 по п�
 | 4 | `/fitxpress/for-glp-1-programs/` | body composition tracking for GLP-1 programs | — | — | GEO: AEO-промпт 49% → 70%+ |
 | 5 | `/fitxpress/for-insurance-underwriting/` | accelerated underwriting (+3 варианта) | ~340 суммарно | 0–1 | топ-5 |
 | 6 | `/fitxpress/for-wellness-programs/` | at home / remote biometric screening | 80 / — | — | топ-5 (угол принят 2026-09-29) |
-| 7 | `/fitxpress/for-bariatric-clinics/` | bariatric pre-authorization documentation | — | — | GEO: промпты 0% и 6% → вверх |
+| 7 | `/fitxpress/for-bariatric-programs/` (was `…/for-bariatric-clinics/`, changed 2026-10-16) | bariatric patient tracking (was: bariatric pre-authorization documentation) | — | — | GEO: промпты 0% и 6% → вверх |
 | 8 | `/fitxpress/for-clinical-trials/` | remote anthropometric measurement for clinical trials (+ кластер «DCT platform» ~410) | — | 2–12 | топ-10 по кластеру DCT |
 | 9 | `/fitxpress/for-occupational-health/` | occupational health software | 350 / 200 | 3 / 0 | топ-5 |
 
@@ -404,7 +404,9 @@ URL уже правильный, чинится только breadcrumb. Сей�
 
 ---
 
-## 7. Hub 6 Bariatrics → `/fitxpress/for-bariatric-clinics/`
+## 7. Hub 6 Bariatrics → `/fitxpress/for-bariatric-programs/`
+
+> **Обновлено 2026-10-16 (Вадим).** Акцент лендинга — follow-up после операции, пре-квалификация вторая. Главный ключ по Ahrefs — `bariatric patient tracking` (US 10, CPC $0.60, единственная follow-up-фраза с измеренным спросом, пересекается с title хаба). URL — `/fitxpress/for-bariatric-programs/`. Таблица ниже — исходный разбор 2026-09-29 под pre-auth; актуальное — `workspace/pages/for-bariatric-programs/keywords-ahrefs-2026-10-16.md`.
 
 Весь спрос в Google — пациентский («каким должен быть BMI для операции»). Это YMYL, и это не наши покупатели. Для клиник спроса нет, зато ИИ-ассистенты задают как раз наши вопросы, и в двух из трёх у нас видимость 0–6%. HubSpot AEO отдельно рекомендует с высоким приоритетом страницу «FitXpress for Bariatric Pre-Auth Measurements». Значит, лендинг строим под pre-auth.
 

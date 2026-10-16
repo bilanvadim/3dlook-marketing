@@ -85,3 +85,45 @@ carry most of the length.
 
 No further rounds: this is a review of the team's draft, not a build. The fixes go to Nika
 (`review-2026-10-16-nika-ru.md`); a rebuild by the pipeline only on Vadim's request.
+
+## G-A closed (2026-10-16, Vadim: «головний ключ подивись в ахревс… на основі фінальний н1 і урл… щоб з хабом хоть пересікалось»)
+
+- **Focus keyphrase `bariatric patient tracking`** (Ahrefs US 10/month, CPC $0.60). Every `bariatric
+  follow up` variant is 0; pre-auth phrases have no row at all. The phrase overlaps the hub title
+  "…Patient Progress Tracking" without taking its head term. Table and reasoning:
+  `keywords-ahrefs-2026-10-16.md`.
+- **URL `/fitxpress/for-bariatric-programs/`.** No keyword favours "clinics"; "programs" is the actor the
+  page writes about and matches `/fitxpress/for-glp-1-programs/`. Nothing linked to the old planned URL.
+  The folder was renamed to match; `landing-map.md`, the keyword map §7 and the tracking spec row
+  (`fx_vertical = bariatric`) were updated.
+- **H1:** "FitXpress for bariatric patient tracking: body data at every follow-up between clinic visits".
+  **Title:** "Bariatric Patient Tracking Between Visits | FitXpress" (53). Compliance note: "patient
+  tracking" names the program's use; the copy says the program links scan identifiers to patients.
+
+## v2 build (2026-10-16, Vadim: «давай зберемо штмл сторінку з врахуванням всіх коментарів»)
+
+`page-v2-2026-10-16.html` (built by script on Nika's fx-bar template: her CSS, logos, two mocks and the
+form/tracking script reused), `page-v2-2026-10-16.md` (visible copy), `fact-sheet-v2.md`.
+
+- Order per the fitness final: hero → logos → value cards for patients → problem (question H2, MBSAQIP +
+  NICE, 3 sourced numbers) → record table (5 rows, output | what it changes) + chart mock → pre-qualification
+  block + queue mock → how it works → comparison → accuracy + data → pilot + price → FAQ (4) → form.
+- 1,621 visible words (kit count, screen-reader caption excluded); Vadim 2026-10-16: «1900 теж норм».
+- Detector: density 0.44/1000, no hard fails; you/your 0 in copy (2 in the form text); no en or em dashes.
+- All of Asselya's edits except the H1; all review items (sections 3 and 6 of the review) applied.
+- Not used: the Smart Scales weight-error figure (Nika's note: contested internally) → open item.
+- Placeholders: remaining client logos; API entered-weight limit (40-200 kg vs validation 38-210 kg).
+
+## G-J · v2 blind judges: gate not taken, 71 / 85 after three rounds
+
+| Round | Total | Lowest | Hard fails | Fixed after the round |
+|---|---|---|---|---|
+| 1 (`judge-round-1-v2.json`) | 71 | sales_argument 9/15 | logo and API-limit placeholders | H1 with a hedged outcome, Smart Scales "(beta)", FAQ as H3, problem close states the cost, comparison conclusion, figurative phrasing, `fx_vertical = bariatric` |
+| 2 (`judge-round-2-v2.json`) | 71 | sales_argument 9/15 | logo placeholder; API-request units vs live `/pricing/`; API weight limit sourced outside `proof-points.md` | 4-row comparison with the distance conclusion, shorter problem block, EHR named, FAQ without body repeats, API limit moved to TODO, internal head comment removed |
+| 3 (`judge-round-3-v2.json`) | 71 | conversion 6/10 | logo placeholder (design handoff) | without rescoring: fat/lean wording, CTA after the comparison, "patient app or portal", FAQ openings |
+
+Nika's original scored 54. What still holds v2 below 85 is outside the copy: no bariatric client or case
+(proof of belonging), the hub article sharing the topic family (uniqueness), the contact-page form and
+unverified events (conversion), the parent `/fitxpress/` not being live (place). Final: 1,715 visible
+words (Vadim 2026-10-16: up to 1,900 is fine), detector 0.0/1000, 4 FAQ, schema WebPage + Service with
+`areaServed` + FAQPage + BreadcrumbList. HTML rebuilt by `build-v2.py` from the source HTML.

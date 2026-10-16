@@ -1,0 +1,633 @@
+[TITLE] Bariatric Patient Tracking Between Visits | FitXpress
+Bariatric Patient Tracking Between Visits | FitXpress
+
+[META description: Bariatric patient tracking between clinic visits: patients scan at home, and FitXpress returns waist and body composition data to the care team.]
+
+[CANONICAL https://3dlook.ai/fitxpress/for-bariatric-programs/]
+
+[META og:title: Bariatric Patient Tracking Between Visits | FitXpress]
+
+[Skip to content](#main)
+
+ [3DLOOK](https://3dlook.ai/)
+
+[How it works](#how-it-works)[Pricing](#pricing)[Questions](#faq)[Book a demo](#demo)
+
+[Home](https://3dlook.ai/)/FitXpress for bariatric programs
+
+Bariatric and metabolic surgery programs
+
+# Bariatric patient tracking with FitXpress: help keep body data on file at every follow-up time frame
+
+Patients scan at home when a visit is hard to make, and the care team gets waist and body composition data for that time frame, which can mean fewer calls chasing measurements. FitXpress returns the record from two phone photos and can also check BMI before the first consultation.
+
+[Book a demo](#demo)[See the follow-up record ↓](#record)
+
+Follow-up from home.Illustrative data
+
+7 October 2026Pre-surgery baseline
+
+20 January 2027Month 3, scanned at home
+
+Entered weight −17.6 kg
+
+119.0 kg→101.4 kg
+
+Waist measurement −13.5 cm
+
+131.5 cm→118.0 cm
+
+Body-fat estimate −3.9 percentage points
+
+46.8%→42.9%
+
+Completed at home between clinic visits. The program files it in the patient’s record for care-team review.
+
+Illustrative values, not patient results. Weight is entered; body composition values are estimates. The program sets the follow-up schedule and which results patients and care teams see.
+
+2 photosfront and side, on the patient’s own phone
+
+Under 45 secfrom the photos to structured results
+
+From homefollow-up scans between clinic visits
+
+No integration feeplans from $1,000 a month
+
+100+ clients have used 3DLOOK body scanning since 2016.
+
+ [IMG alt='Yazen']
+[IMG alt='UK Meds']
+[IMG alt='Healthyr']
+
+For patients
+
+## Follow-up checks the patient can complete at home
+
+One phone scan gives the program body data at each check.
+
+### Fewer trips for a measurement
+
+A scheduled check runs at home when the protocol does not require a visit.
+
+### Waist and body composition beside weight
+
+A patient app or portal can show waist change and body composition estimates next to the scale weight.
+
+### A scan without help from staff
+
+Real-Time Pose Validation (RTPV) gives pose and framing guidance, with voice prompts for a patient scanning alone.
+
+### Progress from their own starting point
+
+A patient app or portal can show change since the pre-surgery scan, when the program chooses to display it.
+
+[Bariatric pre-qualification and patient progress tracking, in depth →](https://3dlook.ai/content-hub/bariatric-pre-qualification-mobile-3d-body-scanning/)
+
+The problem
+
+## What does a bariatric program lose when follow-up depends on clinic visits?
+
+Programs accredited under the US [Metabolic and Bariatric Surgery Accreditation and Quality Improvement Program (MBSAQIP)](https://www.facs.org/quality-programs/accreditation-and-verification/metabolic-and-bariatric-surgery-accreditation-and-quality-improvement-program/standards/) follow every patient through 30 days, 6 months and 1 year, and [UK guidance from the National Institute for Health and Care Excellence (NICE)](https://www.nice.org.uk/guidance/ng246) asks for two years. Each missed time frame means documented contact attempts, and a phone check-in returns a scale weight at best.
+
+44.6%
+of patients attended follow-up five years after surgery at one German center; long distance was the most cited reason for dropping out.
+[Nutrients, patients lost to follow-up after bariatric surgery](https://pmc.ncbi.nlm.nih.gov/articles/PMC11357598/)
+
+2 attempts
+at minimum, to reach each patient who misses a time frame, each documented in the MBSAQIP registry.
+[American College of Surgeons, MBSAQIP Standards](https://www.facs.org/quality-programs/accreditation-and-verification/metabolic-and-bariatric-surgery-accreditation-and-quality-improvement-program/standards/)
+
+8.1 kg
+of lean body mass is lost on average in the first 12 months after surgery, about 55% of it within 3 months.
+[Obesity Reviews, lean body mass loss after bariatric surgery](https://pmc.ncbi.nlm.nih.gov/articles/PMC9285034/)
+
+Each patient lost to follow-up leaves a gap in the program’s outcome data, and a weight-only check cannot show lean mass loss.
+
+What the care team gets
+
+## Each home scan returns a record the care team can compare with the baseline
+
+Outputs FitXpress returns and what each changes for a bariatric care team
+
+Returned output
+
+What it changes for the care team
+
+80+ body measurements, including waist, hip and thigh
+
+Waist change is on file at every follow-up, including those done at home.
+
+Body composition estimates: body-fat percentage, fat mass and lean mass
+
+The team sees fat and lean mass estimates beside weight and decides when a dual-energy X-ray absorptiometry (DXA) or bioelectrical impedance analysis (BIA) check is needed.
+
+BMI and basal metabolic rate (BMR), calculated metrics; entered weight beside a Smart Scales estimate (beta)
+
+The program keeps one BMI series from intake through follow-up and sees when entered and estimated weight disagree.
+
+On the FitXpress Pro plan: 3D Body Progress, comparing two scans the program selects
+
+Patients and care teams see change in a 3D view during follow-up conversations.
+
+Processing status and timestamps
+
+The program files each scan by date and orders scans for comparison.
+
+FitXpress returns the record through its application programming interface (API), and the program links each scan identifier to the patient record.
+
+FitXpress is not a medical device. Surgical candidacy and treatment decisions remain with the clinical team.
+
+[See a sample record in the demo](#demo)
+
+Follow-up comparisonPre-surgery baseline and month 3
+Illustrative view
+
+Waist measurement
+
+Body-fat estimate
+
+Waist measurement−13.5 cm from baseline
+
+ Illustrative waist measurement comparisonWaist measurement is 131.5 centimeters at the pre-surgery baseline on 7 October 2026 and 118.0 centimeters at month 3 on 20 January 2027. The vertical axis spans 110 to 140 centimeters.
+
+ 140130120110cm
+
+ 131.5 cm118.0 cm
+ 7 Oct · Baseline20 Jan · Month 3
+
+Body-fat estimate−3.9 percentage points
+
+ Illustrative body-fat estimate comparisonThe body-fat estimate is 46.8 percent at the pre-surgery baseline on 7 October 2026 and 42.9 percent at month 3 on 20 January 2027. The vertical axis spans 35 to 50 percent.
+
+ 50454035%
+
+ 46.8%42.9%
+ 7 Oct · Baseline20 Jan · Month 3
+
+7 October 2026 · Baseline
+
+Entered weight
+
+119.0 kg
+
+Waist
+
+131.5 cm
+
+Body-fat estimate
+
+46.8%
+
+20 January 2027 · Month 3
+
+Entered weight
+
+101.4 kg
+
+Waist
+
+118.0 cm
+
+Body-fat estimate
+
+42.9%
+
+Illustrative interface with example values and no clinical outcome claim. The program sets the follow-up schedule and which results patients and care teams see.
+
+Before the first consultation
+
+## Check BMI before surgeon time is booked
+
+At the first inquiry, the program compares BMI from the patient’s entered weight with BMI from the Smart Scales weight estimate (beta), both using entered height.
+
+A difference above the program’s threshold goes to a coordinator for another scan, a call or an in-clinic measurement. A completed scan becomes the pre-surgery baseline.
+
+[See pre-qualification in the demo](#demo)
+
+New patientsScans received 6-7 October
+Illustrative view
+
+All records
+
+Complete
+
+Flagged
+
+Patient 1038Complete · to clinical reviewScanned 6 OctoberBMI from entered weight: 44.8BMI from Smart Scales estimate (beta): 45.1
+
+Patient 1041BMI difference above thresholdScanned 7 OctoberBMI from entered weight: 41.2BMI from Smart Scales estimate (beta): 43.1
+
+Patient 1044Complete · to clinical reviewScanned 7 OctoberBMI from entered weight: 52.3BMI from Smart Scales estimate (beta): 52.0
+
+3 scans received2 complete · 1 flagged
+
+Illustrative interface in the program’s patient system, with example values. FitXpress provides scan outputs and available quality information; the program manages patient records, review statuses and follow-up actions.
+
+How it works
+
+## The scan runs inside the follow-up schedule the program already has
+
+### Baseline before surgery
+
+At intake, the patient completes the program’s consent flow and a guided front and side capture on their phone, with no appointment.
+
+### Scans at home on the program’s schedule
+
+At the program’s time frames, such as 3, 6 and 12 months, the patient scans at home and the record reaches the care team.
+
+### Review in the program’s own system
+
+The care team reviews change against the baseline in its electronic health record (EHR) or bariatric tracking software, or in the optional FitXpress Admin Panel with comma-separated values (CSV) export.
+
+The recommended setup pairs the web and mobile software development kits (SDKs) for capture with the API for results ([FitXpress API documentation](https://docs.fitxpress.3dlook.me/)). The program designs consent and results screens; the capture layer stays fixed to protect measurement quality.
+
+Compare approaches
+
+## FitXpress compared with a home scale, clinic measurement and BIA or DXA
+
+FitXpress compared with other ways a bariatric program collects body data
+
+Dimension
+
+FitXpress
+
+Weight from a home scale
+
+Measurement at a clinic visit
+
+Clinic BIA or DXA
+
+Trip to the clinic
+
+None
+
+None
+
+Required
+
+Required
+
+What it records
+
+80+ body measurements, body composition estimates, BMI and timestamps
+
+Weight as reported
+
+Staff-entered measurements set by the program’s protocol
+
+Body composition values; DXA also measures bone
+
+Waist and body composition between visits
+
+At each home check
+
+Not recorded
+
+Only at a visit
+
+Only at a visit
+
+Who enters the data
+
+Returned from the scan
+
+The patient
+
+Clinic staff
+
+The clinic device
+
+### FitXpress
+
+Trip to the clinic
+
+None
+
+What it records
+
+80+ body measurements, body composition estimates, BMI and timestamps
+
+Waist and body composition between visits
+
+At each home check
+
+Who enters the data
+
+Returned from the scan
+
+### Weight from a home scale
+
+Trip to the clinic
+
+None
+
+What it records
+
+Weight as reported
+
+Waist and body composition between visits
+
+Not recorded
+
+Who enters the data
+
+The patient
+
+### Measurement at a clinic visit
+
+Trip to the clinic
+
+Required
+
+What it records
+
+Staff-entered measurements set by the program’s protocol
+
+Waist and body composition between visits
+
+Only at a visit
+
+Who enters the data
+
+Clinic staff
+
+### Clinic BIA or DXA
+
+Trip to the clinic
+
+Required
+
+What it records
+
+Body composition values; DXA also measures bone
+
+Waist and body composition between visits
+
+Only at a visit
+
+Who enters the data
+
+The clinic device
+
+For patients who live far from the center, a home scan can keep waist and body composition on file at time frames they would otherwise miss. In-clinic measurement, calibrated scales, BIA and DXA stay wherever the protocol requires them.
+
+[See a follow-up comparison in the demo](#demo)
+
+Accuracy and data handling
+
+## How accurate is FitXpress for follow-up, and how is patient data handled?
+
+For follow-up, repeatability matters most, because the care team compares each patient with their own baseline.
+
+< 1 cmtypical scan-to-scan difference for most evaluated body measurements
+
+96-97%accuracy against expert manual measurement, typical absolute error 1.5-2.0 cm
+
+Both figures come from internal validation of body measurements (38-210 kg, 150-220 cm), have not been peer-reviewed, and do not cover body composition estimates or performance after bariatric surgery. The methodology is available under a non-disclosure agreement (NDA).
+
+[Body scanning accuracy: an enterprise framework →](https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/)
+
+PhotosFitXpress deletes photos immediately after processing or retains them for up to 30 days under a customer-specific policy. Retained photos are blurred, and face obfuscation is applied during capture.
+
+IdentifiersScan records use randomly generated identifiers, and the program links them to its patient records.
+
+HIPAAFitXpress can support HIPAA-governed deployments where 3DLOOK acts as a business associate under an executed Business Associate Agreement (BAA).
+
+GDPRIn most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR.
+
+EncryptionData is encrypted in transit and at rest.
+
+Model training3DLOOK does not use production customer data to train its models without the customer’s explicit, documented authorization.
+
+The [FitXpress data, privacy, security and regulatory FAQ](https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/) covers hosting, deletion, System and Organization Controls 2 (SOC 2) and U.S. Food and Drug Administration (FDA) information. Privacy contact: [privacy@3dlook.me](mailto:privacy@3dlook.me).
+
+Pilot and pricing
+
+## Start with one follow-up cohort, then scale on a monthly plan
+
+The pilot starts with one clinic and one post-surgery cohort; pre-qualification can join later. FitXpress uses production infrastructure already deployed in remote BMI-verification and weight-management workflows.
+
+Starter. $1,000 a month for up to 500 API requests.
+
+Pro. $1,500 a month for up to 1,000 API requests, adding 3D Body Progress tracking and 3D Goal Visualization.
+
+Both include guided implementation support, with no integration fee. Custom plans cover higher volumes.
+
+[FitXpress plans and pricing →](https://3dlook.ai/pricing/)
+
+### Walk through the pathway
+
+The demo shows guided capture, a follow-up comparison and integration options.
+
+### Pilot against a comparison cohort
+
+One cohort scans at home. A comparable cohort keeps the usual follow-up schedule; where practical, patients are assigned randomly.
+
+### Evaluate and roll out
+
+Results are measured against criteria agreed before the pilot, and the scan goes live only if they are met.
+
+### What the program and 3DLOOK track
+
+Scan completion and retake rates
+
+Follow-up time frames completed with body data, against the comparison cohort
+
+Contact attempts per patient who misses a time frame
+
+[Discuss a pilot](#demo)
+
+Frequently asked questions
+
+## Questions bariatric teams ask
+
+### Does FitXpress measure muscle loss after bariatric surgery?
+
+FitXpress does not measure muscle directly. Its lean mass estimates include organs, bone and water along with muscle, and the accuracy figures on this page do not cover body composition after surgery. Where the protocol needs a muscle measure, DXA or BIA stays the method.
+
+### What happens when a patient cannot complete the scan?
+
+The capture needs a smartphone and standing front and side photos; mobility, space and phone access affect completion. The program sets the retake logic and an in-clinic alternative, and the pilot measures completion before rollout.
+
+### How does FitXpress perform at higher body weights?
+
+Internal validation covered participants up to 210 kg, aged 16-78, in the US and Europe; performance outside that range has not been characterized. The pilot checks capture completion and measurement performance in the program’s own patients, including its heaviest.
+
+### Can a FitXpress record support bariatric prior-authorization documentation?
+
+A FitXpress record can supply part of it. Each insurer or health plan sets its documentation requirements and accepted sources, and some require a BMI measured at a clinical visit. The program can add dated scan outputs and the BMI inputs to its supporting records. FitXpress does not guarantee payer acceptance or approval.
+
+Book a demo
+
+## See bariatric patient tracking in the program’s own pathway
+
+Guided front and side capture on a phone
+
+A follow-up comparison against the pre-surgery baseline
+
+A sample record and pilot options
+
+[Bariatric pre-qualification and patient progress tracking →](https://3dlook.ai/content-hub/bariatric-pre-qualification-mobile-3d-body-scanning/)
+
+Other FitXpress uses: [remote patient monitoring for weight loss](https://3dlook.ai/structured-body-data-for-telehealth-digital-health-programs/) · [BMI verification](https://3dlook.ai/for-bmi-verification/)
+
+### Request a FitXpress demo
+
+Share your contact details and follow-up requirements with 3DLOOK.
+
+Loading the demo request form…
+
+You can also request a demo through the contact page.
+[Open the 3DLOOK demo request page ↗](https://3dlook.ai/contact-us/)
+
+Contact details are processed as described in the [3DLOOK privacy policy](https://3dlook.ai/privacy-policy/).
+
+© 2026 3DLOOK · FitXpressProcurement and security documentation: [legal@3dlook.me](mailto:legal@3dlook.me)
+
+[JSON-LD]
+
+{
+ "@context": "https://schema.org",
+ "@graph": [
+ {
+ "@type": "WebPage",
+ "@id": "https://3dlook.ai/fitxpress/for-bariatric-programs/#webpage",
+ "url": "https://3dlook.ai/fitxpress/for-bariatric-programs/",
+ "name": "Bariatric Patient Tracking Between Visits | FitXpress",
+ "description": "Bariatric patient tracking between clinic visits: patients scan at home, and FitXpress returns waist and body composition data to the care team.",
+ "inLanguage": "en",
+ "isPartOf": {
+ "@id": "https://3dlook.ai/#website"
+ },
+ "about": {
+ "@id": "https://3dlook.ai/fitxpress/for-bariatric-programs/#service"
+ },
+ "mainEntity": {
+ "@id": "https://3dlook.ai/fitxpress/for-bariatric-programs/#service"
+ },
+ "hasPart": {
+ "@id": "https://3dlook.ai/fitxpress/for-bariatric-programs/#faq"
+ },
+ "breadcrumb": {
+ "@id": "https://3dlook.ai/fitxpress/for-bariatric-programs/#breadcrumb"
+ }
+ },
+ {
+ "@type": "Service",
+ "@id": "https://3dlook.ai/fitxpress/for-bariatric-programs/#service",
+ "name": "FitXpress for bariatric patient tracking",
+ "url": "https://3dlook.ai/fitxpress/for-bariatric-programs/",
+ "provider": {
+ "@id": "https://3dlook.ai/#organization"
+ },
+ "brand": {
+ "@type": "Brand",
+ "name": "FitXpress"
+ },
+ "serviceType": "Remote body scanning for bariatric follow-up and pre-qualification",
+ "description": "FitXpress turns two guided smartphone photos into 80+ body measurements, body composition estimates, BMI and timestamps, returned through an API for bariatric follow-up between clinic visits and BMI review before the first consultation.",
+ "audience": {
+ "@type": "BusinessAudience",
+ "audienceType": "Bariatric surgery centers, hospital bariatric programs, surgical networks, and metabolic and obesity clinics"
+ },
+ "areaServed": [
+ {
+ "@type": "Country",
+ "name": "United States"
+ },
+ {
+ "@type": "Country",
+ "name": "United Kingdom"
+ }
+ ],
+ "serviceOutput": [
+ {
+ "@type": "Thing",
+ "name": "80+ body measurements"
+ },
+ {
+ "@type": "Thing",
+ "name": "Body composition estimates"
+ },
+ {
+ "@type": "Thing",
+ "name": "BMI and BMR (calculated metrics)"
+ },
+ {
+ "@type": "Thing",
+ "name": "3D Body Progress (Pro plan)"
+ },
+ {
+ "@type": "Thing",
+ "name": "Processing status and timestamps"
+ }
+ ]
+ },
+ {
+ "@type": "Organization",
+ "@id": "https://3dlook.ai/#organization",
+ "name": "3DLOOK",
+ "url": "https://3dlook.ai/"
+ },
+ {
+ "@type": "FAQPage",
+ "@id": "https://3dlook.ai/fitxpress/for-bariatric-programs/#faq",
+ "url": "https://3dlook.ai/fitxpress/for-bariatric-programs/",
+ "name": "Questions bariatric teams ask",
+ "mainEntity": [
+ {
+ "@type": "Question",
+ "name": "Does FitXpress measure muscle loss after bariatric surgery?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "FitXpress does not measure muscle directly. Its lean mass estimates include organs, bone and water along with muscle, and the accuracy figures on this page do not cover body composition after surgery. Where the protocol needs a muscle measure, DXA or BIA stays the method."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "What happens when a patient cannot complete the scan?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "The capture needs a smartphone and standing front and side photos; mobility, space and phone access affect completion. The program sets the retake logic and an in-clinic alternative, and the pilot measures completion before rollout."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "How does FitXpress perform at higher body weights?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "Internal validation covered participants up to 210 kg, aged 16-78, in the US and Europe; performance outside that range has not been characterized. The pilot checks capture completion and measurement performance in the program’s own patients, including its heaviest."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "Can a FitXpress record support bariatric prior-authorization documentation?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "A FitXpress record can supply part of it. Each insurer or health plan sets its documentation requirements and accepted sources, and some require a BMI measured at a clinical visit. The program can add dated scan outputs and the BMI inputs to its supporting records. FitXpress does not guarantee payer acceptance or approval."
+ }
+ }
+ ]
+ },
+ {
+ "@type": "BreadcrumbList",
+ "@id": "https://3dlook.ai/fitxpress/for-bariatric-programs/#breadcrumb",
+ "itemListElement": [
+ {
+ "@type": "ListItem",
+ "position": 1,
+ "name": "Home",
+ "item": "https://3dlook.ai/"
+ },
+ {
+ "@type": "ListItem",
+ "position": 2,
+ "name": "FitXpress for bariatric programs",
+ "item": "https://3dlook.ai/fitxpress/for-bariatric-programs/"
+ }
+ ]
+ }
+ ]
+}
+
+[/JSON-LD]

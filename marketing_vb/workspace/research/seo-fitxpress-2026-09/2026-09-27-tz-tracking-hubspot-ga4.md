@@ -138,7 +138,7 @@ updated: 2026-09-29 — одна форма на все FX-лендинги, `fx
    | `/fitxpress/for-glp-1-programs/` | `glp1` |
    | `/fitxpress/for-insurance-underwriting/` | `insurance` |
    | `/fitxpress/for-wellness-programs/` | `wellness` |
-   | `/fitxpress/for-bariatric-clinics/` | `bariatric` |
+   | `/fitxpress/for-bariatric-programs/` (URL changed 2026-10-16) | `bariatric` |
    | `/fitxpress/for-clinical-trials/` | `clinical_trials` |
    | `/fitxpress/for-occupational-health/` | `occupational_health` |
 

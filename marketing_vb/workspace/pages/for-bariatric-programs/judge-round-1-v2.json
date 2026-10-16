@@ -1,0 +1,16 @@
+{"version": "page-v2-2026-10-16 (before round-1 fixes)", "judge": "fresh general-purpose subagent, blind", "date": "2026-10-16",
+ "scores": {"proof_of_belonging": 11, "claims_discipline": 11, "sales_argument": 9, "uniqueness": 8, "conversion": 7, "buyer_language": 7, "human_copy": 7, "search_ai_visibility": 7, "place_and_technical": 4},
+ "total": 71,
+ "hard_fails": ["[PLACEHOLDER] markers in the source: logo row (remaining client logos) and after the FAQ (API entered-weight limits)"],
+ "lowest": "sales_argument",
+ "one_fix": "H1 naming the audience and a hedged outcome instead of an output, keeping the focus keyphrase.",
+ "points_lost": {
+  "proof_of_belonging": "Strong vertical context, but no evidence of FitXpress in this population; generic 'patient system'; incomplete logo row",
+  "claims_discipline": "Smart Scales block without beta qualifier or accuracy; higher-weight FAQ omits the API 200 kg cap; 'API requests' vs live /pricing/ 'scans'; mocks show fields the record table does not list; '2 attempts' drops 'a minimum of'; 30d/6m/1y without its own source label",
+  "sales_argument": "H1 states an output, audience only in the eyebrow; no hedged business outcome outside pilot metrics; problem close states the gap, not its cost; 2-row comparison with a vague conclusion; lean-mass pain deflated by the FAQ's 'No'",
+  "uniqueness": "Keyphrase and pre-qual block overlap the hub; BMI check overlaps /for-bmi-verification/; shared FX blocks",
+  "conversion": "Contact-page form id; events off-spec and unverified; no sticky mobile CTA",
+  "buyer_language": "No %TWL/%EWL or weight regain; 'lost to follow-up' only in a label; compressed relationships; figurative phrasing ('Progress the scale does not show', 'turns into documented calls', 'lines scans up')",
+  "human_copy": "Detector clean but uniform 'X…, and Y…' rhythm; 'follow-up' x26, 'the program' x26, 'between clinic visits' x4; 'not patient results' x3",
+  "search_ai_visibility": "FAQ questions are <summary>, not H3; secondary keyphrases absent; muscle-loss FAQ repeats the record row",
+  "place_and_technical": "No link up (parent not live); contrast/performance/768 unchecked; base64 PNG logos"}}

@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bariatric Patient Tracking Between Visits | FitXpress</title>
+<meta name="description" content="Bariatric patient tracking between clinic visits: patients scan at home, and FitXpress returns waist and body composition data to the care team.">
+<link rel="canonical" href="https://3dlook.ai/fitxpress/for-bariatric-programs/">
+<meta name="theme-color" content="#050f40">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bariatric Patient Tracking Between Visits | FitXpress">
+<meta property="og:description" content="Bariatric patient tracking between clinic visits: patients scan at home, and FitXpress returns waist and body composition data to the care team.">
+<meta property="og:url" content="https://3dlook.ai/fitxpress/for-bariatric-programs/">
+<!--
+  FitXpress bariatric landing page · v2 · 2026-10-16 · /fitxpress/for-bariatric-programs/
+  Remove data-prototype-chrome header/footer when the WordPress theme supplies them.
+  Swap formConfig.formId for the shared "FX | LP | Demo" form during integration.
+-->
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&amp;display=swap">
+<style>
+.fx-bar-page{--blue:#143dff;--navy:#050f40;--pale:#ecefff;--ink:#1a1a1a;--muted:#4c4c4c;--line:#e5e5e5;--font:'Satoshi',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-family:var(--font);font-size:17px;line-height:1.55;color:var(--ink);background:#fff;overflow-wrap:break-word}
+.fx-bar-page,.fx-bar-page *{box-sizing:border-box}
+.fx-bar-page a{color:var(--blue);text-underline-offset:3px}
+.fx-bar-page a:hover{text-decoration-thickness:2px}
+.fx-bar-page :is(a,button,summary,input,select,textarea):focus-visible{outline:3px solid #8a9cff;outline-offset:4px}
+.fx-bar-page :is(h1,h2,h3,p,figure){margin:0}
+.fx-bar-page :is(h1,h2,h3){font-weight:700;letter-spacing:-.025em;line-height:1.12}
+.fx-bar-page h1{font-size:clamp(32px,3.9vw,50px);max-width:21ch}
+.fx-bar-page h2{font-size:clamp(30px,3.8vw,48px);max-width:24ch}
+.fx-bar-page h3{font-size:22px;line-height:1.24}
+.fx-bar-page :is(svg,img){max-width:100%}
+.fx-bar-page button{font-family:var(--font)}
+.fx-bar-page [hidden]{display:none!important}
+.fx-bar-page [id]{scroll-margin-top:24px}
+.fx-bar-page .fx-bar-wrap{max-width:1280px;padding:0 clamp(20px,5vw,64px);margin:0 auto}
+.fx-bar-page .fx-bar-section{padding:clamp(56px,7.5vw,96px) 0}
+.fx-bar-page .fx-bar-light{background:#f9f9f9}
+.fx-bar-page .fx-bar-navy{background:radial-gradient(100% 75% at 85% 0%,#244ce1 0%,#08186b 44%,var(--navy) 100%);color:#fff}
+.fx-bar-page .fx-bar-navy a{color:#d8deff}
+.fx-bar-page .fx-bar-eyebrow{margin-bottom:16px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
+.fx-bar-page .fx-bar-navy .fx-bar-eyebrow{color:#b1bdff}
+.fx-bar-page .fx-bar-lead{font-size:20px;line-height:1.55;margin-top:24px;max-width:56ch}
+.fx-bar-page .fx-bar-intro{margin-top:20px;max-width:70ch;color:var(--muted)}
+.fx-bar-page .fx-bar-navy .fx-bar-intro{color:#d8deff}
+.fx-bar-page .fx-bar-more{margin-top:26px;font-size:16px}
+.fx-bar-page .fx-bar-more a{font-weight:700}
+.fx-bar-page .fx-bar-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:15px 24px;border:0;border-radius:5px;font-size:16px;line-height:1.25;font-weight:700;text-decoration:none;text-align:center;cursor:pointer;transition:background .15s ease,transform .15s ease}
+.fx-bar-page .fx-bar-btn:hover{transform:translateY(-1px)}
+.fx-bar-page .fx-bar-btn-blue{background:var(--blue);color:#fff}
+.fx-bar-page .fx-bar-btn-blue:hover{background:#0f2ecd}
+.fx-bar-page .fx-bar-btn-white{background:#fff;color:var(--navy)}
+.fx-bar-page .fx-bar-navy .fx-bar-btn-white{color:var(--navy)}
+.fx-bar-page .fx-bar-btn-white:hover{background:var(--pale)}
+.fx-bar-page .fx-bar-actions{display:flex;align-items:center;gap:16px 24px;flex-wrap:wrap;margin-top:30px}
+.fx-bar-page .fx-bar-action-link{font-weight:700;padding:10px 0;min-height:44px;display:inline-flex;align-items:center;gap:8px}
+.fx-bar-page .fx-bar-micro{font-size:14px;color:#d8deff;margin-top:14px}
+.fx-bar-page .fx-bar-chrome{background:var(--navy);color:#fff;border-bottom:1px solid #ffffff26}
+.fx-bar-page .fx-bar-chrome .fx-bar-wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:76px}
+.fx-bar-page .fx-bar-logo{display:inline-flex;align-items:center;gap:9px;color:#fff;font-size:21px;font-weight:900;text-decoration:none;letter-spacing:.02em}
+.fx-bar-page .fx-bar-logo svg{width:22px;height:22px}
+.fx-bar-page .fx-bar-nav{display:flex;align-items:center;gap:25px}
+.fx-bar-page .fx-bar-nav>a:not(.fx-bar-btn){font-size:14px;color:#d8deff;text-decoration:none}
+.fx-bar-page .fx-bar-crumbs{padding-top:26px;font-size:13px;color:#b1bdff}
+.fx-bar-page .fx-bar-crumbs a{color:#d8deff;text-decoration:none}
+.fx-bar-page .fx-bar-crumbs span[aria-hidden]{padding:0 9px}
+.fx-bar-page .fx-bar-hero{padding-bottom:56px}
+.fx-bar-page .fx-bar-hero-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.85fr);gap:clamp(28px,5vw,64px);align-items:center;padding-top:40px}
+.fx-bar-page .fx-bar-record{background:#fff;color:var(--ink);border-radius:20px;padding:26px;box-shadow:0 24px 64px #00000026}
+.fx-bar-page .fx-bar-record-head{display:flex;justify-content:space-between;align-items:start;gap:14px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.fx-bar-page .fx-bar-record-head strong{font-size:18px}
+.fx-bar-page .fx-bar-example{display:inline-block;font-size:11px;font-weight:700;color:#4c4c4c;background:#f2f2f2;padding:4px 8px;border-radius:999px;white-space:nowrap}
+.fx-bar-page .fx-bar-dates{display:flex;justify-content:space-between;gap:10px;margin-top:18px;font-size:12px;color:#666}
+.fx-bar-page .fx-bar-dates strong{display:block;color:#333;font-size:14px}
+.fx-bar-page .fx-bar-dates>div:last-child{text-align:right}
+.fx-bar-page .fx-bar-record-list{margin:12px 0 0}
+.fx-bar-page .fx-bar-record-list>div{padding:16px 0;border-bottom:1px solid var(--line)}
+.fx-bar-page .fx-bar-record-list dt{font-size:14px;font-weight:500;display:flex;gap:8px 14px;justify-content:space-between;align-items:baseline;flex-wrap:wrap}
+.fx-bar-page .fx-bar-record-list dt span{font-size:12px;font-weight:700;color:var(--blue)}
+.fx-bar-page .fx-bar-record-list dd{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:7px 0 0;font-size:23px;font-variant-numeric:tabular-nums;line-height:1.25;color:#666}
+.fx-bar-page .fx-bar-record-list dd strong{color:var(--ink)}
+.fx-bar-page .fx-bar-record-list dd span[aria-hidden]{font-size:18px;color:#a8a8a8}
+.fx-bar-page .fx-bar-flag{background:var(--pale);padding:14px;margin-top:18px;border-radius:10px;font-size:14px;line-height:1.5}
+.fx-bar-page .fx-bar-disclosure{margin-top:14px;font-size:12px;color:#666;line-height:1.6}
+.fx-bar-page .fx-bar-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:#ffffff26;border:1px solid #ffffff26;border-radius:14px;overflow:hidden;margin-top:48px}
+.fx-bar-page .fx-bar-strip>div{padding:21px 20px;background:#050f40cc}
+.fx-bar-page .fx-bar-strip b{display:block;font-size:25px;line-height:1.2;letter-spacing:-.025em}
+.fx-bar-page .fx-bar-strip span{display:block;font-size:13px;margin-top:6px;color:#d8deff}
+.fx-bar-page .fx-bar-trusted{background:var(--navy);color:#d8deff;border-top:1px solid #ffffff26}
+.fx-bar-page .fx-bar-trusted-inner{display:flex;align-items:center;gap:38px;flex-wrap:wrap;min-height:112px;padding-top:18px;padding-bottom:18px}
+.fx-bar-page .fx-bar-trusted p{font-size:14px;max-width:36ch;margin:0}
+.fx-bar-page .fx-bar-trusted img{display:block;width:auto;height:72px;object-fit:contain}
+.fx-bar-page .fx-bar-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin:32px 0 0;padding:0;list-style:none}
+.fx-bar-page .fx-bar-cards li{padding:23px;border:1px solid var(--line);border-radius:15px}
+.fx-bar-page .fx-bar-cards h3{font-size:21px}
+.fx-bar-page .fx-bar-cards p{font-size:16px;margin-top:12px;color:var(--muted)}
+.fx-bar-page .fx-bar-progress-layout{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1fr);gap:clamp(30px,5vw,64px);align-items:center}
+.fx-bar-page .fx-bar-progress-text p:not(.fx-bar-eyebrow){margin-top:20px;color:var(--muted)}
+.fx-bar-page .fx-bar-feature-note{border-left:3px solid var(--blue);padding:14px 18px;background:#fff;font-size:15px}
+.fx-bar-page .fx-bar-progress-visual{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:0 16px 44px #050f4008}
+.fx-bar-page .fx-bar-visual-top{display:flex;align-items:start;justify-content:space-between;gap:14px;font-size:18px;font-weight:700}
+.fx-bar-page .fx-bar-visual-top small{display:block;font-size:13px;font-weight:400;color:#666;margin-top:3px}
+.fx-bar-page .fx-bar-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}
+.fx-bar-page .fx-bar-tab{font-size:13px;font-weight:700;min-height:44px;border:1px solid var(--line);border-radius:999px;padding:9px 14px;color:#4c4c4c;background:#fff;cursor:pointer}
+.fx-bar-page .fx-bar-tab[aria-pressed=true]{color:var(--blue);background:var(--pale);border-color:#b1bdff}
+.fx-bar-page .fx-bar-tab:disabled{cursor:default}
+.fx-bar-page .fx-bar-chart-heading{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-top:22px;font-size:14px}
+.fx-bar-page .fx-bar-chart-heading strong{font-size:25px;color:var(--blue);letter-spacing:-.025em}
+.fx-bar-page .fx-bar-chart-heading strong small{font-size:14px;font-weight:500;color:var(--muted)}
+.fx-bar-page .fx-bar-chart{display:block;width:100%;height:auto;margin-top:5px;font-family:var(--font)}
+.fx-bar-page .fx-bar-chart .fx-bar-axis{font-size:12px;fill:#666}
+.fx-bar-page .fx-bar-chart .fx-bar-gridline{stroke:#e5e5e5;stroke-width:1}
+.fx-bar-page .fx-bar-chart .fx-bar-line{stroke:var(--blue);stroke-width:3;fill:none}
+.fx-bar-page .fx-bar-chart .fx-bar-point{fill:var(--blue);stroke:#fff;stroke-width:3}
+.fx-bar-page .fx-bar-chart .fx-bar-value{font-size:17px;fill:var(--ink);font-weight:700}
+.fx-bar-page .fx-bar-chart .fx-bar-date{font-size:12px;fill:#666}
+.fx-bar-page .fx-bar-visual-records{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;border-top:1px solid var(--line);padding-top:18px}
+.fx-bar-page .fx-bar-visual-records>div{border-radius:10px;background:#f9f9f9;padding:14px}
+.fx-bar-page .fx-bar-visual-records strong{display:block;font-size:13px}
+.fx-bar-page .fx-bar-visual-records dl{margin:10px 0 0;font-size:13px}
+.fx-bar-page .fx-bar-visual-records dl div{display:flex;justify-content:space-between;gap:8px;margin-top:5px;flex-wrap:wrap}
+.fx-bar-page .fx-bar-visual-records dd{margin:0;font-weight:700}
+.fx-bar-page .fx-bar-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:36px}
+.fx-bar-page .fx-bar-stat{border:1px solid var(--line);border-radius:20px;padding:30px;background:#fff}
+.fx-bar-page .fx-bar-stat b{display:block;font-size:clamp(42px,5vw,62px);line-height:1;letter-spacing:-.03em;color:var(--blue)}
+.fx-bar-page .fx-bar-stat p{margin-top:18px}
+.fx-bar-page .fx-bar-stat small{display:block;font-size:13px;line-height:1.5;margin-top:14px;color:#666}
+.fx-bar-page .fx-bar-outputs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:36px}
+.fx-bar-page .fx-bar-output{padding:26px;border:1px solid var(--line);border-radius:15px}
+.fx-bar-page .fx-bar-output .fx-bar-output-label{display:block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:12px}
+.fx-bar-page .fx-bar-output p{margin-top:12px;color:var(--muted);font-size:16px}
+.fx-bar-page .fx-bar-closing{margin-top:24px;max-width:80ch;color:var(--muted);font-size:16px}
+.fx-bar-page .fx-bar-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:36px 0 0;padding:0;list-style:none;counter-reset:fxstep}
+.fx-bar-page .fx-bar-steps li{padding:28px;border:1px solid var(--line);border-radius:15px;background:#fff;counter-increment:fxstep}
+.fx-bar-page .fx-bar-steps li:before{content:'0' counter(fxstep);display:block;color:var(--blue);font-weight:900;font-size:15px;margin-bottom:18px}
+.fx-bar-page .fx-bar-steps p{margin-top:12px;color:var(--muted);font-size:16px}
+.fx-bar-page .fx-bar-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:15px;margin-top:36px}
+.fx-bar-page .fx-bar-table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.5}
+.fx-bar-page .fx-bar-table :is(th,td){text-align:left;vertical-align:top;padding:19px 16px;border-bottom:1px solid var(--line)}
+.fx-bar-page .fx-bar-table tr:last-child :is(th,td){border-bottom:0}
+.fx-bar-page .fx-bar-table thead th{font-size:13px;background:#f9f9f9}
+.fx-bar-page .fx-bar-table thead th:nth-child(2){color:var(--blue)}
+.fx-bar-page .fx-bar-table tbody td:nth-child(2){background:var(--pale)}
+.fx-bar-page .fx-bar-table tbody th{font-size:13px;width:15%}
+.fx-bar-page .fx-bar-comparison-cards{display:none;margin-top:28px;gap:18px}
+.fx-bar-page .fx-bar-comparison-card{border:1px solid var(--line);border-radius:15px;padding:24px}
+.fx-bar-page .fx-bar-featured{border-color:#b1bdff;background:var(--pale)}
+.fx-bar-page .fx-bar-featured h3{color:var(--blue)}
+.fx-bar-page .fx-bar-comparison-card dl{margin:20px 0 0}
+.fx-bar-page .fx-bar-comparison-card dt{font-size:12px;font-weight:700;color:#666;margin-top:15px}
+.fx-bar-page .fx-bar-comparison-card dd{font-size:16px;margin:4px 0 0}
+.fx-bar-page .fx-bar-figs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px;margin-top:36px}
+.fx-bar-page .fx-bar-figs>div{border-top:1px solid #ffffff40;padding-top:24px}
+.fx-bar-page .fx-bar-figs b{display:block;font-size:clamp(44px,5vw,64px);line-height:1;letter-spacing:-.03em}
+.fx-bar-page .fx-bar-figs span{display:block;max-width:42ch;color:#d8deff;margin-top:12px;font-size:16px}
+.fx-bar-page .fx-bar-proof-note{margin-top:26px;padding:18px 22px;background:#ffffff0e;border-left:3px solid #8a9cff;color:#d8deff;font-size:15px}
+.fx-bar-page .fx-bar-data{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:36px 0 0;padding:0;list-style:none}
+.fx-bar-page .fx-bar-data li{padding:22px;border:1px solid #ffffff26;border-radius:15px;background:#ffffff08;font-size:15px}
+.fx-bar-page .fx-bar-data strong{display:block;margin-bottom:8px;font-size:16px}
+.fx-bar-page .fx-bar-data span{color:#d8deff}
+.fx-bar-page .fx-bar-pilot{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(30px,5vw,64px);align-items:start}
+.fx-bar-page .fx-bar-price{border:1px solid var(--line);border-radius:15px;background:#f9f9f9;padding:26px;margin-top:28px}
+.fx-bar-page .fx-bar-price>p+p{margin-top:14px}
+.fx-bar-page .fx-bar-price b{font-size:20px}
+.fx-bar-page .fx-bar-price small{display:block;margin-top:18px;color:#666;font-size:13px}
+.fx-bar-page .fx-bar-steps-v{list-style:none;margin:8px 0 0;padding:0;counter-reset:fxpilot}
+.fx-bar-page .fx-bar-steps-v li{position:relative;padding:0 0 27px 56px;counter-increment:fxpilot}
+.fx-bar-page .fx-bar-steps-v li:before{content:counter(fxpilot);position:absolute;left:0;top:0;width:36px;height:36px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;display:grid;place-items:center}
+.fx-bar-page .fx-bar-steps-v p{color:var(--muted);font-size:16px;margin-top:8px}
+.fx-bar-page .fx-bar-out{margin:12px 0 0;padding:0;list-style:none}
+.fx-bar-page .fx-bar-out li{padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
+.fx-bar-page .fx-bar-faq{border-top:1px solid #d1d1d1;margin-top:36px}
+.fx-bar-page .fx-bar-faq details{border-bottom:1px solid #d1d1d1}
+.fx-bar-page .fx-bar-faq summary{display:flex;justify-content:space-between;align-items:baseline;gap:22px;list-style:none;cursor:pointer;padding:22px 0;font-size:20px;font-weight:700;line-height:1.4;min-height:48px}
+.fx-bar-page .fx-bar-faq summary::-webkit-details-marker{display:none}
+.fx-bar-page .fx-bar-faq summary:after{content:'+';font-size:25px;color:var(--blue);flex-shrink:0}
+.fx-bar-page .fx-bar-faq details[open] summary:after{content:'−'}
+.fx-bar-page .fx-bar-answer{max-width:80ch;margin:0 0 24px;color:var(--muted);font-size:16px}
+.fx-bar-page .fx-bar-cta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(30px,5vw,64px);align-items:start}
+.fx-bar-page .fx-bar-demo-list{margin:26px 0 0;padding:0;list-style:none;color:#d8deff}
+.fx-bar-page .fx-bar-demo-list li{padding:12px 0;border-top:1px solid #ffffff26;font-size:16px}
+.fx-bar-page .fx-bar-form{padding:28px;border-radius:20px;color:var(--ink);background:#fff;min-width:0}
+.fx-bar-page .fx-bar-form h3{font-size:24px}
+.fx-bar-page .fx-bar-form>p{margin-top:12px;color:var(--muted);font-size:14px}
+.fx-bar-page .fx-bar-form a{color:var(--blue)}
+.fx-bar-page .fx-bar-form-host{margin-top:22px;min-width:0}
+.fx-bar-page .fx-bar-form-host iframe{width:100%!important;max-width:100%;border:0}
+.fx-bar-page .fx-bar-form-host :is(input,select,textarea){font-family:var(--font);max-width:100%}
+.fx-bar-page .fx-bar-form-fallback{border-top:1px solid var(--line);padding-top:18px;margin-top:20px;font-size:13px}
+.fx-bar-page .fx-bar-form-fallback a{display:inline-flex;align-items:center;min-height:44px;font-weight:700}
+.fx-bar-page .fx-bar-form-status{font-size:14px;color:#666}
+.fx-bar-page .fx-bar-foot{background:var(--navy);color:#d8deff;font-size:13px;border-top:1px solid #ffffff26}
+.fx-bar-page .fx-bar-foot .fx-bar-wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px 30px;padding-top:30px;padding-bottom:30px}
+.fx-bar-page .fx-bar-foot a{color:#d8deff}
+.fx-bar-page .fx-bar-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.fx-bar-page .fx-bar-skip{position:absolute;z-index:100;left:20px;top:10px;transform:translateY(-150%);background:#fff;padding:12px;color:var(--navy);border-radius:5px}
+.fx-bar-page .fx-bar-skip:focus{transform:translateY(0)}
+.fx-bar-page .fx-bar-queue{list-style:none;margin:18px 0 0;padding:0}
+.fx-bar-page .fx-bar-queue li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.fx-bar-page .fx-bar-queue li:last-child{border-bottom:0}
+.fx-bar-page .fx-bar-queue strong{font-size:16px}
+.fx-bar-page .fx-bar-q-meta{grid-column:1;font-size:13px;color:#666}
+.fx-bar-page .fx-bar-q-bmi{grid-column:1 / -1;font-size:14px;font-variant-numeric:tabular-nums}
+.fx-bar-page .fx-bar-q-bmi>span{display:block;margin-top:4px}
+.fx-bar-page .fx-bar-q-bmi b{font-weight:700}
+.fx-bar-page .fx-bar-status{grid-column:2;grid-row:1/span 2;align-self:center;font-size:12px;font-weight:700;padding:6px 10px;border-radius:999px;white-space:nowrap}
+.fx-bar-page .fx-bar-status-ok{background:#f2f2f2;color:#333}
+.fx-bar-page .fx-bar-status-flag{background:var(--pale);color:var(--blue)}
+.fx-bar-page .fx-bar-queue-total{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:4px;padding-top:14px;font-size:13px;color:#666}
+@media(max-width:1050px){
+ .fx-bar-page .fx-bar-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .fx-bar-page .fx-bar-comparison-table{display:none}
+ .fx-bar-page .fx-bar-comparison-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:900px){
+ .fx-bar-page :is(.fx-bar-hero-grid,.fx-bar-progress-layout,.fx-bar-pilot,.fx-bar-cta){grid-template-columns:1fr}
+ .fx-bar-page .fx-bar-hero-grid{align-items:start}
+ .fx-bar-page h1{max-width:27ch}
+ .fx-bar-page .fx-bar-record{max-width:560px;width:100%}
+ .fx-bar-page .fx-bar-progress-visual{max-width:650px;width:100%}
+ .fx-bar-page .fx-bar-strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .fx-bar-page .fx-bar-steps{grid-template-columns:1fr}
+ .fx-bar-page .fx-bar-steps li{padding:24px}
+ .fx-bar-page .fx-bar-nav>a:not(.fx-bar-btn){display:none}
+}
+@media(max-width:600px){
+ .fx-bar-page .fx-bar-queue li{grid-template-columns:1fr}
+ .fx-bar-page .fx-bar-status{grid-column:1;grid-row:auto;justify-self:start;margin-top:6px;white-space:normal}
+ .fx-bar-page{font-size:16px}
+ .fx-bar-page .fx-bar-chrome .fx-bar-wrap{min-height:68px;gap:12px}
+ .fx-bar-page .fx-bar-chrome .fx-bar-btn{padding:12px 16px;min-height:44px;font-size:14px}
+ .fx-bar-page .fx-bar-logo{font-size:19px}
+ .fx-bar-page .fx-bar-hero-grid{padding-top:30px}
+ .fx-bar-page .fx-bar-lead{font-size:18px}
+ .fx-bar-page :is(.fx-bar-cards,.fx-bar-stats,.fx-bar-outputs,.fx-bar-comparison-cards,.fx-bar-figs,.fx-bar-data){grid-template-columns:1fr}
+ .fx-bar-page :is(.fx-bar-record,.fx-bar-progress-visual,.fx-bar-form){padding:20px}
+ .fx-bar-page .fx-bar-record-list dd{font-size:22px}
+ .fx-bar-page .fx-bar-trusted-inner{gap:24px;justify-content:flex-start}
+ .fx-bar-page .fx-bar-trusted p{width:100%;max-width:none}
+ .fx-bar-page .fx-bar-trusted img{height:56px}
+ .fx-bar-page .fx-bar-stat{padding:24px}
+ .fx-bar-page .fx-bar-visual-records>div{padding:12px}
+ .fx-bar-page .fx-bar-visual-records dl div{display:block}
+ .fx-bar-page .fx-bar-chart-heading{align-items:start;flex-direction:column;gap:4px}
+ .fx-bar-page .fx-bar-chart-heading strong{font-size:22px}
+ .fx-bar-page .fx-bar-faq summary{font-size:18px}
+ .fx-bar-page .fx-bar-strip>div{padding:19px 16px}
+ .fx-bar-page .fx-bar-strip b{font-size:22px}
+}
+@media(max-width:360px){
+ .fx-bar-page .fx-bar-strip{grid-template-columns:1fr}
+ .fx-bar-page .fx-bar-record-head,.fx-bar-page .fx-bar-visual-top{flex-wrap:wrap}
+ .fx-bar-page .fx-bar-visual-records{grid-template-columns:1fr}
+ .fx-bar-page .fx-bar-visual-records dl div{display:flex}
+}
+@media(prefers-reduced-motion:reduce){.fx-bar-page *{transition:none!important}}
+
+/* v2 additions */
+.fx-bar-page .fx-bar-stats-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.fx-bar-page .fx-bar-record-table tbody th{width:42%;font-size:15px;font-weight:700}
+.fx-bar-page .fx-bar-record-table tbody td:nth-child(2){background:none}
+.fx-bar-page .fx-bar-record-table thead th:nth-child(2){color:inherit}
+.fx-bar-page .fx-bar-related{margin-top:14px;font-size:15px}
+#record .fx-bar-progress-layout{align-items:start}
+.fx-bar-page .fx-bar-faq summary h3{display:inline;font:inherit;margin:0;letter-spacing:inherit}
+@media(max-width:1050px){.fx-bar-page .fx-bar-stats-3{grid-template-columns:1fr}}
+</style>
+</head>
+<body style="margin:0">
+
+<div class="fx-bar-page">
+<a class="fx-bar-skip" href="#main">Skip to content</a>
+<header class="fx-bar-chrome" data-prototype-chrome="header">
+ <div class="fx-bar-wrap">
+  <a class="fx-bar-logo" href="https://3dlook.ai/" aria-label="3DLOOK home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 22 20H2z" fill="#fff"/></svg>3DLOOK</a>
+  <nav class="fx-bar-nav" aria-label="Page navigation"><a href="#how-it-works">How it works</a><a href="#pricing">Pricing</a><a href="#faq">Questions</a><a class="fx-bar-btn fx-bar-btn-white" href="#demo" data-cta="header">Book a demo</a></nav>
+ </div>
+</header>
+<main id="main">
+<section class="fx-bar-navy fx-bar-hero" aria-labelledby="hero-heading">
+ <div class="fx-bar-wrap">
+  <nav class="fx-bar-crumbs" aria-label="Breadcrumb"><a href="https://3dlook.ai/">Home</a><span aria-hidden="true">/</span><span aria-current="page">FitXpress for bariatric programs</span></nav>
+  <div class="fx-bar-hero-grid">
+   <div>
+    <p class="fx-bar-eyebrow">Bariatric and metabolic surgery programs</p>
+    <h1 id="hero-heading">Bariatric patient tracking with FitXpress: help keep body data on file at every follow-up time frame</h1>
+    <p class="fx-bar-lead">Patients scan at home when a visit is hard to make, and the care team gets waist and body composition data for that time frame, which can mean fewer calls chasing measurements. FitXpress returns the record from two phone photos and can also check BMI before the first consultation.</p>
+    <div class="fx-bar-actions"><a class="fx-bar-btn fx-bar-btn-white" href="#demo" data-cta="hero">Book a demo</a><a class="fx-bar-action-link" href="#record">See the follow-up record <span aria-hidden="true">↓</span></a></div>
+   </div>
+   <aside class="fx-bar-record" aria-label="Illustrative follow-up record">
+    <div class="fx-bar-record-head"><strong>Follow-up from home.</strong><span class="fx-bar-example">Illustrative data</span></div>
+    <div class="fx-bar-dates"><div><strong>7 October 2026</strong>Pre-surgery baseline</div><div><strong>20 January 2027</strong>Month 3, scanned at home</div></div>
+    <dl class="fx-bar-record-list">
+     <div><dt>Entered weight <span>−17.6 kg</span></dt><dd><span>119.0 kg</span><span aria-hidden="true">→</span><strong>101.4 kg</strong></dd></div>
+     <div><dt>Waist measurement <span>−13.5 cm</span></dt><dd><span>131.5 cm</span><span aria-hidden="true">→</span><strong>118.0 cm</strong></dd></div>
+     <div><dt>Body-fat estimate <span>−3.9 percentage points</span></dt><dd><span>46.8%</span><span aria-hidden="true">→</span><strong>42.9%</strong></dd></div>
+    </dl>
+    <p class="fx-bar-flag">Completed at home between clinic visits. The program files it in the patient’s record for care-team review.</p>
+    <p class="fx-bar-disclosure">Illustrative values, not patient results. Weight is entered; body composition values are estimates. The program sets the follow-up schedule and which results patients and care teams see.</p>
+   </aside>
+  </div>
+  <div class="fx-bar-strip">
+   <div><b>2 photos</b><span>front and side, on the patient’s own phone</span></div>
+   <div><b>Under 45 sec</b><span>from the photos to structured results</span></div>
+   <div><b>From home</b><span>follow-up scans between clinic visits</span></div>
+   <div><b>No integration fee</b><span>plans from $1,000 a month</span></div>
+  </div>
+ </div>
+</section>
+<section class="fx-bar-trusted" aria-label="3DLOOK clients">
+  <div class="fx-bar-wrap fx-bar-trusted-inner">
+    <p>100+ clients have used 3DLOOK body scanning since 2016.</p>
+    <img loading="lazy" decoding="async" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACICAMAAABX7hBEAAACBFBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////NPf1bAAAArHRSTlMAAQIDBAUGBwgJCgsMDQ4PEBESFBUWFxgZGhscHR4fICEiIyQlJicoKSorLC0uLzAxMjM0NTY3OTo7PD0+P0BBQkRFRkdISUpLTE1OT1BRUlRVVldYWVpbXF5fYGFiY2RlZmdoaWpsbW5vcHFyc3R1dnd4eXp7fH1+f4CBgoOEhYaHiImKi4yNjo+QkZKTlJWWmJmam5ydnp+goaKjpKWmp6ipqqusra6vsLGyTZ2h2AAABchJREFUeNrtmflbE0cYxxMIYDiEckNIpOWqFjkU5D5shdIqR8UKUurBWUREBJViUQSUllsIghwFSgiw+0+WnZnNzuzO0tRnaZ4+z/v9beZ9Z+ezM+/O+05iMoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIND/VFU1knL0HfwrkEeJrwB3REmj+g5B88hj3FeAq2j6WX2Hs5vIY9BXgFNoerefrkOygDzu+grwAZpezNZ1qMMOVb4CLMbzd/7DEgtJvgJMcCEAV7iOPRPv8LLZV4B+L/ASdumYJ7H5oe8OwiJMsFfMM5prsfXoS98BWhcxw8dzHGO+GxtH5A5LfE5RaUFmnN+/n8gcc7GwtDDHHqTvYcstKb6UfEbV/T1mEFccmhF562QB0/EDsvsWdqWYFHZn732uuNkf64jaFXvb7A4KZ5ezP9ui9Kcgx94Qkyn8zvwuOvKcXexamd8Qwu1LavR9YmlFzct/iLSGY2S/dFFHd2QPx7BA9y8oM+WjjoMo/+92FPvRI+abtbtIv7vfRnFnjMj+TutxO25APf12sZeA/jVHastAMAsY1828gbjKbGeuy4M+UuaQYuRM8vV3nhFbCdJbrHMAqr0CtD7jmBaiGcCHavtOBk1Y4VYs7g+zU/Nr+9R6n5fWb4MH4P7KC0D/37i2qQgKUDzQ2OeCacJvBL05cGRaRuXm+7aGumZPRC0FngjYJFm75NabxpKcwvoJeewzGhCnqw3nrtJqZL6HrE2dOeYTUdVIWuMkZ8f0kUdek1phxaxubGPrbJj07vLQNDJV6hjp+ZYFnLkaKp00dTLJVgxDGP34gIPnarWiD+beIc7YIR7/HuwwyEmBgYRgy37cCCWx260cLQH9uGsjmAbsCCDmWJK8xDLVKZk3rcYTXp6XM172xHH7rVVxD8BBuRamBewlo9FZ0ogbz0Mph5A53FlHAT5VQi7Uibv6NU9O6/mgnAcHi53MGqcOr9m0dZoQr0kHP5PxlWj3l1HjryjGJwUfG9NmD6A7Vpt9nby8l3Wje2xxef5VR02av7puYPhMDfgpmvRTij8CoQW1rpD9U73EaxxAKR7AX2mz5U/8Vvo50ZvM2sQHvEgSQr+FDtUvVF5k4695AOsZ8yu8B59aXnx2ua5jZHGPC5i4grvfnsXtGVwqpaewqvWckwSwghPFh9zZI/qRerjFYUxWdef0NvMhsYCxJPzXSZ4w74knqccDyBZ73ScAOkS9/Q+rfs6ZjgEMmsCdu3KeCjmRTxwwEDDwR26yYwD9OsgHXC73xPxngI5lnTlowAbyAd/09MSdDNhrGGASXcscbM0PNRW0aACvEns7desnI/b4ajYK0DrhKb3GW7++ECGdQ/VqwAvkgJmiyhA/nD/nbHyFGQV4neBNZimT31QBJpIYdUbQI3FkbOqfWcYA4t+PxBd0cmlnASPJ3Ws9iZeX7acLGImDf53OzX7vGcBAUjXvF3J/uGg7XcA8usKUI475is0kpWl+wonC1d2+aglDejLNBgJW4r5HdD6fYACbcb0oNlvUz7tPvhwrk5K6xf2nycYBkvJnTAlB8y2BBqwkrVHtfT6aZJ/XIdTb3UX+Q6lGAdpw36HnNht0nzmoM0gx7rSFs5IuiK3y9aWEbKo5SS6ZK4wCNK+RC0ABWsOgKzNMJgleke9/LpWkXz39p+T6fK4hPyMtt+alfGOctBh2zDTIBDO/tLQPLwlsqovY10tlqE6NopL40aEydivauHMwdEYztzDmLaApfo5nc6YYeFCbbKuqxx90ObwGNEVyflr43WFkJjnufsc8/mO5OdF7wOOfGVUvuHM7+FMParuAtKu5TtUuKdFz+zh8ErCjBOgSdKTUNZF1i0r0rf6g5MN87FnETNaF+tw6tyEsjiGx7MGToScdVUm0IzVEK/ZEzL/VOzjY91N5FGc+LgT8DwgCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUCnpL8ByNCuIYXE7DUAAAAASUVORK5CYII=" width="160" height="136" alt="Yazen" decoding="async">
+<img loading="lazy" decoding="async" src="data:image/png;base64,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" width="124" height="136" alt="UK Meds" decoding="async">
+<img loading="lazy" decoding="async" src="data:image/png;base64,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" width="218" height="136" alt="Healthyr" decoding="async">
+    <!-- [PLACEHOLDER] remaining client logos from design (kit: logos of all clients); alt text = client name -->
+  </div>
+</section>
+<section class="fx-bar-section" aria-labelledby="benefits-heading">
+ <div class="fx-bar-wrap">
+  <p class="fx-bar-eyebrow">For patients</p>
+  <h2 id="benefits-heading">Follow-up checks the patient can complete at home</h2>
+  <p class="fx-bar-intro">One phone scan gives the program body data at each check.</p>
+  <ul class="fx-bar-cards">
+   <li><h3>Fewer trips for a measurement</h3><p>A scheduled check runs at home when the protocol does not require a visit.</p></li>
+   <li><h3>Waist and body composition beside weight</h3><p>A patient app or portal can show waist change and body composition estimates next to the scale weight.</p></li>
+   <li><h3>A scan without help from staff</h3><p>Real-Time Pose Validation (RTPV) gives pose and framing guidance, with voice prompts for a patient scanning alone.</p></li>
+   <li><h3>Progress from their own starting point</h3><p>A patient app or portal can show change since the pre-surgery scan, when the program chooses to display it.</p></li>
+  </ul>
+  <p class="fx-bar-more"><a href="https://3dlook.ai/content-hub/bariatric-pre-qualification-mobile-3d-body-scanning/">Bariatric pre-qualification and patient progress tracking, in depth <span aria-hidden="true">→</span></a></p>
+ </div>
+</section>
+<section class="fx-bar-section fx-bar-light" id="problem" aria-labelledby="problem-heading">
+ <div class="fx-bar-wrap">
+  <p class="fx-bar-eyebrow">The problem</p>
+  <h2 id="problem-heading">What does a bariatric program lose when follow-up depends on clinic visits?</h2>
+  <p class="fx-bar-intro">Programs accredited under the US <a href="https://www.facs.org/quality-programs/accreditation-and-verification/metabolic-and-bariatric-surgery-accreditation-and-quality-improvement-program/standards/" target="_blank" rel="noopener">Metabolic and Bariatric Surgery Accreditation and Quality Improvement Program (MBSAQIP)</a> follow every patient through 30 days, 6 months and 1 year, and <a href="https://www.nice.org.uk/guidance/ng246" target="_blank" rel="noopener">UK guidance from the National Institute for Health and Care Excellence (NICE)</a> asks for two years. Each missed time frame means documented contact attempts, and a phone check-in returns a scale weight at best.</p>
+  <div class="fx-bar-stats fx-bar-stats-3">
+   <div class="fx-bar-stat"><b>44.6%</b><p>of patients attended follow-up five years after surgery at one German center; long distance was the most cited reason for dropping out.</p><small><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11357598/" target="_blank" rel="noopener">Nutrients, patients lost to follow-up after bariatric surgery</a></small></div>
+   <div class="fx-bar-stat"><b>2 attempts</b><p>at minimum, to reach each patient who misses a time frame, each documented in the MBSAQIP registry.</p><small><a href="https://www.facs.org/quality-programs/accreditation-and-verification/metabolic-and-bariatric-surgery-accreditation-and-quality-improvement-program/standards/" target="_blank" rel="noopener">American College of Surgeons, MBSAQIP Standards</a></small></div>
+   <div class="fx-bar-stat"><b>8.1 kg</b><p>of lean body mass is lost on average in the first 12 months after surgery, about 55% of it within 3 months.</p><small><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9285034/" target="_blank" rel="noopener">Obesity Reviews, lean body mass loss after bariatric surgery</a></small></div>
+  </div>
+  <p class="fx-bar-closing">Each patient lost to follow-up leaves a gap in the program’s outcome data, and a weight-only check cannot show lean mass loss.</p>
+ </div>
+</section>
+<section class="fx-bar-section" id="record" aria-labelledby="record-heading">
+ <div class="fx-bar-wrap">
+  <p class="fx-bar-eyebrow">What the care team gets</p>
+  <h2 id="record-heading">Each home scan returns a record the care team can compare with the baseline</h2>
+  <div class="fx-bar-scroll"><table class="fx-bar-table fx-bar-record-table"><caption class="fx-bar-sr">Outputs FitXpress returns and what each changes for a bariatric care team</caption><thead><tr><th scope="col">Returned output</th><th scope="col">What it changes for the care team</th></tr></thead><tbody>
+   <tr><th scope="row">80+ body measurements, including waist, hip and thigh</th><td>Waist change is on file at every follow-up, including those done at home.</td></tr>
+   <tr><th scope="row">Body composition estimates: body-fat percentage, fat mass and lean mass</th><td>The team sees fat and lean mass estimates beside weight and decides when a dual-energy X-ray absorptiometry (DXA) or bioelectrical impedance analysis (BIA) check is needed.</td></tr>
+   <tr><th scope="row">BMI and basal metabolic rate (BMR), calculated metrics; entered weight beside a Smart Scales estimate (beta)</th><td>The program keeps one BMI series from intake through follow-up and sees when entered and estimated weight disagree.</td></tr>
+   <tr><th scope="row">On the FitXpress Pro plan: 3D Body Progress, comparing two scans the program selects</th><td>Patients and care teams see change in a 3D view during follow-up conversations.</td></tr>
+   <tr><th scope="row">Processing status and timestamps</th><td>The program files each scan by date and orders scans for comparison.</td></tr>
+  </tbody></table></div>
+ </div>
+ <div class="fx-bar-wrap fx-bar-progress-layout" style="margin-top:40px">
+  <div class="fx-bar-progress-text">
+   <p>FitXpress returns the record through its application programming interface (API), and the program links each scan identifier to the patient record.</p>
+   <p class="fx-bar-feature-note"><strong>FitXpress is not a medical device.</strong> Surgical candidacy and treatment decisions remain with the clinical team.</p>
+   <div class="fx-bar-actions"><a class="fx-bar-btn fx-bar-btn-blue" href="#demo" data-cta="record">See a sample record in the demo</a></div>
+  </div>
+  <figure class="fx-bar-progress-visual">
+   <div class="fx-bar-visual-top"><div>Follow-up comparison<small>Pre-surgery baseline and month 3</small></div><span class="fx-bar-example">Illustrative view</span></div>
+   <div class="fx-bar-tabs" role="group" aria-label="Choose the metric to compare"><button class="fx-bar-tab" type="button" aria-pressed="true" data-progress-metric="waist" aria-controls="waist-panel fat-panel" disabled>Waist measurement</button><button class="fx-bar-tab" type="button" aria-pressed="false" data-progress-metric="fat" aria-controls="waist-panel fat-panel" disabled>Body-fat estimate</button></div>
+   <div id="waist-panel" class="fx-bar-chart-panel">
+    <div class="fx-bar-chart-heading"><span>Waist measurement</span><strong>−13.5 <small>cm from baseline</small></strong></div>
+    <svg class="fx-bar-chart" viewBox="0 0 440 240" role="img" aria-labelledby="waist-chart-title waist-chart-desc">
+     <title id="waist-chart-title">Illustrative waist measurement comparison</title><desc id="waist-chart-desc">Waist measurement is 131.5 centimeters at the pre-surgery baseline on 7 October 2026 and 118.0 centimeters at month 3 on 20 January 2027. The vertical axis spans 110 to 140 centimeters.</desc>
+     <g class="fx-bar-gridline"><path d="M50 38H412M50 94H412M50 150H412M50 206H412"/></g>
+     <g class="fx-bar-axis"><text x="36" y="42" text-anchor="end">140</text><text x="36" y="98" text-anchor="end">130</text><text x="36" y="154" text-anchor="end">120</text><text x="36" y="210" text-anchor="end">110</text><text x="14" y="18">cm</text></g>
+     <path class="fx-bar-line" d="M106 85.6L352 161.2"/><circle class="fx-bar-point" cx="106" cy="85.6" r="6"/><circle class="fx-bar-point" cx="352" cy="161.2" r="6"/>
+     <g class="fx-bar-value"><text x="106" y="65" text-anchor="middle">131.5 cm</text><text x="352" y="140" text-anchor="middle">118.0 cm</text></g>
+     <g class="fx-bar-date"><text x="106" y="232" text-anchor="middle">7 Oct · Baseline</text><text x="352" y="232" text-anchor="middle">20 Jan · Month 3</text></g>
+    </svg>
+   </div>
+   <div id="fat-panel" class="fx-bar-chart-panel" hidden>
+    <div class="fx-bar-chart-heading"><span>Body-fat estimate</span><strong>−3.9 <small>percentage points</small></strong></div>
+    <svg class="fx-bar-chart" viewBox="0 0 440 240" role="img" aria-labelledby="fat-chart-title fat-chart-desc">
+     <title id="fat-chart-title">Illustrative body-fat estimate comparison</title><desc id="fat-chart-desc">The body-fat estimate is 46.8 percent at the pre-surgery baseline on 7 October 2026 and 42.9 percent at month 3 on 20 January 2027. The vertical axis spans 35 to 50 percent.</desc>
+     <g class="fx-bar-gridline"><path d="M50 38H412M50 94H412M50 150H412M50 206H412"/></g>
+     <g class="fx-bar-axis"><text x="36" y="42" text-anchor="end">50</text><text x="36" y="98" text-anchor="end">45</text><text x="36" y="154" text-anchor="end">40</text><text x="36" y="210" text-anchor="end">35</text><text x="19" y="18">%</text></g>
+     <path class="fx-bar-line" d="M106 73.84L352 117.52"/><circle class="fx-bar-point" cx="106" cy="73.84" r="6"/><circle class="fx-bar-point" cx="352" cy="117.52" r="6"/>
+     <g class="fx-bar-value"><text x="106" y="53" text-anchor="middle">46.8%</text><text x="352" y="96" text-anchor="middle">42.9%</text></g>
+     <g class="fx-bar-date"><text x="106" y="232" text-anchor="middle">7 Oct · Baseline</text><text x="352" y="232" text-anchor="middle">20 Jan · Month 3</text></g>
+    </svg>
+   </div>
+   <div class="fx-bar-visual-records">
+    <div><strong>7 October 2026 · Baseline</strong><dl><div><dt>Entered weight</dt><dd>119.0 kg</dd></div><div><dt>Waist</dt><dd>131.5 cm</dd></div><div><dt>Body-fat estimate</dt><dd>46.8%</dd></div></dl></div>
+    <div><strong>20 January 2027 · Month 3</strong><dl><div><dt>Entered weight</dt><dd>101.4 kg</dd></div><div><dt>Waist</dt><dd>118.0 cm</dd></div><div><dt>Body-fat estimate</dt><dd>42.9%</dd></div></dl></div>
+   </div>
+   <figcaption class="fx-bar-disclosure">Illustrative interface with example values and no clinical outcome claim. The program sets the follow-up schedule and which results patients and care teams see.</figcaption>
+   <p class="fx-bar-sr" id="progress-status" aria-live="polite" aria-atomic="true"></p>
+  </figure>
+ </div>
+</section>
+<section class="fx-bar-section fx-bar-light" id="review" aria-labelledby="review-heading">
+ <div class="fx-bar-wrap fx-bar-progress-layout">
+  <div class="fx-bar-progress-text">
+   <p class="fx-bar-eyebrow">Before the first consultation</p>
+   <h2 id="review-heading">Check BMI before surgeon time is booked</h2>
+   <p>At the first inquiry, the program compares BMI from the patient’s entered weight with BMI from the Smart Scales weight estimate (beta), both using entered height.</p>
+   <p>A difference above the program’s threshold goes to a coordinator for another scan, a call or an in-clinic measurement. A completed scan becomes the pre-surgery baseline.</p>
+   <div class="fx-bar-actions"><a class="fx-bar-btn fx-bar-btn-blue" href="#demo" data-cta="review">See pre-qualification in the demo</a></div>
+  </div>
+  <figure class="fx-bar-progress-visual">
+   <div class="fx-bar-visual-top"><div>New patients<small>Scans received 6-7 October</small></div><span class="fx-bar-example">Illustrative view</span></div>
+   <div class="fx-bar-tabs" role="group" aria-label="Filter patient records"><button class="fx-bar-tab" type="button" aria-pressed="true" data-queue-filter="all" aria-controls="intake-queue" disabled>All records</button><button class="fx-bar-tab" type="button" aria-pressed="false" data-queue-filter="complete" aria-controls="intake-queue" disabled>Complete</button><button class="fx-bar-tab" type="button" aria-pressed="false" data-queue-filter="flagged" aria-controls="intake-queue" disabled>Flagged</button></div>
+   <ul class="fx-bar-queue" id="intake-queue">
+    <li data-status="complete"><strong>Patient 1038</strong><span class="fx-bar-status fx-bar-status-ok">Complete · to clinical review</span><span class="fx-bar-q-meta">Scanned 6 October</span><span class="fx-bar-q-bmi"><span>BMI from entered weight: <b>44.8</b></span><span>BMI from Smart Scales estimate (beta): <b>45.1</b></span></span></li>
+    <li data-status="flagged"><strong>Patient 1041</strong><span class="fx-bar-status fx-bar-status-flag">BMI difference above threshold</span><span class="fx-bar-q-meta">Scanned 7 October</span><span class="fx-bar-q-bmi"><span>BMI from entered weight: <b>41.2</b></span><span>BMI from Smart Scales estimate (beta): <b>43.1</b></span></span></li>
+    <li data-status="complete"><strong>Patient 1044</strong><span class="fx-bar-status fx-bar-status-ok">Complete · to clinical review</span><span class="fx-bar-q-meta">Scanned 7 October</span><span class="fx-bar-q-bmi"><span>BMI from entered weight: <b>52.3</b></span><span>BMI from Smart Scales estimate (beta): <b>52.0</b></span></span></li>
+   </ul>
+   <div class="fx-bar-queue-total"><span>3 scans received</span><span>2 complete · 1 flagged</span></div>
+   <figcaption class="fx-bar-disclosure">Illustrative interface in the program’s patient system, with example values. FitXpress provides scan outputs and available quality information; the program manages patient records, review statuses and follow-up actions.</figcaption>
+   <p class="fx-bar-sr" id="queue-status" aria-live="polite" aria-atomic="true"></p>
+  </figure>
+ </div>
+</section>
+<section class="fx-bar-section" id="how-it-works" aria-labelledby="workflow-heading">
+ <div class="fx-bar-wrap">
+  <p class="fx-bar-eyebrow">How it works</p>
+  <h2 id="workflow-heading">The scan runs inside the follow-up schedule the program already has</h2>
+  <ol class="fx-bar-steps">
+   <li><h3>Baseline before surgery</h3><p>At intake, the patient completes the program’s consent flow and a guided front and side capture on their phone, with no appointment.</p></li>
+   <li><h3>Scans at home on the program’s schedule</h3><p>At the program’s time frames, such as 3, 6 and 12 months, the patient scans at home and the record reaches the care team.</p></li>
+   <li><h3>Review in the program’s own system</h3><p>The care team reviews change against the baseline in its electronic health record (EHR) or bariatric tracking software, or in the optional FitXpress Admin Panel with comma-separated values (CSV) export.</p></li>
+  </ol>
+  <p class="fx-bar-intro">The recommended setup pairs the web and mobile software development kits (SDKs) for capture with the API for results (<a href="https://docs.fitxpress.3dlook.me/" target="_blank" rel="noopener">FitXpress API documentation</a>). The program designs consent and results screens; the capture layer stays fixed to protect measurement quality.</p>
+ </div>
+</section>
+<section class="fx-bar-section fx-bar-light" aria-labelledby="compare-heading">
+ <div class="fx-bar-wrap">
+  <p class="fx-bar-eyebrow">Compare approaches</p>
+  <h2 id="compare-heading">FitXpress compared with a home scale, clinic measurement and BIA or DXA</h2>
+  <div class="fx-bar-scroll fx-bar-comparison-table"><table class="fx-bar-table"><caption class="fx-bar-sr">FitXpress compared with other ways a bariatric program collects body data</caption><thead><tr><th scope="col">Dimension</th><th scope="col">FitXpress</th><th scope="col">Weight from a home scale</th><th scope="col">Measurement at a clinic visit</th><th scope="col">Clinic BIA or DXA</th></tr></thead><tbody><tr><th scope="row">Trip to the clinic</th><td>None</td><td>None</td><td>Required</td><td>Required</td></tr><tr><th scope="row">What it records</th><td>80+ body measurements, body composition estimates, BMI and timestamps</td><td>Weight as reported</td><td>Staff-entered measurements set by the program’s protocol</td><td>Body composition values; DXA also measures bone</td></tr><tr><th scope="row">Waist and body composition between visits</th><td>At each home check</td><td>Not recorded</td><td>Only at a visit</td><td>Only at a visit</td></tr><tr><th scope="row">Who enters the data</th><td>Returned from the scan</td><td>The patient</td><td>Clinic staff</td><td>The clinic device</td></tr></tbody></table></div>
+  <div class="fx-bar-comparison-cards"><article class="fx-bar-comparison-card fx-bar-featured"><h3>FitXpress</h3><dl><dt>Trip to the clinic</dt><dd>None</dd><dt>What it records</dt><dd>80+ body measurements, body composition estimates, BMI and timestamps</dd><dt>Waist and body composition between visits</dt><dd>At each home check</dd><dt>Who enters the data</dt><dd>Returned from the scan</dd></dl></article><article class="fx-bar-comparison-card"><h3>Weight from a home scale</h3><dl><dt>Trip to the clinic</dt><dd>None</dd><dt>What it records</dt><dd>Weight as reported</dd><dt>Waist and body composition between visits</dt><dd>Not recorded</dd><dt>Who enters the data</dt><dd>The patient</dd></dl></article><article class="fx-bar-comparison-card"><h3>Measurement at a clinic visit</h3><dl><dt>Trip to the clinic</dt><dd>Required</dd><dt>What it records</dt><dd>Staff-entered measurements set by the program’s protocol</dd><dt>Waist and body composition between visits</dt><dd>Only at a visit</dd><dt>Who enters the data</dt><dd>Clinic staff</dd></dl></article><article class="fx-bar-comparison-card"><h3>Clinic BIA or DXA</h3><dl><dt>Trip to the clinic</dt><dd>Required</dd><dt>What it records</dt><dd>Body composition values; DXA also measures bone</dd><dt>Waist and body composition between visits</dt><dd>Only at a visit</dd><dt>Who enters the data</dt><dd>The clinic device</dd></dl></article></div>
+  <p class="fx-bar-closing">For patients who live far from the center, a home scan can keep waist and body composition on file at time frames they would otherwise miss. In-clinic measurement, calibrated scales, BIA and DXA stay wherever the protocol requires them.</p>
+  <div class="fx-bar-actions"><a class="fx-bar-btn fx-bar-btn-blue" href="#demo" data-cta="compare">See a follow-up comparison in the demo</a></div>
+ </div>
+</section>
+<section class="fx-bar-section fx-bar-navy" aria-labelledby="proof-heading">
+ <div class="fx-bar-wrap">
+  <p class="fx-bar-eyebrow">Accuracy and data handling</p>
+  <h2 id="proof-heading">How accurate is FitXpress for follow-up, and how is patient data handled?</h2>
+  <p class="fx-bar-intro">For follow-up, repeatability matters most, because the care team compares each patient with their own baseline.</p>
+  <div class="fx-bar-figs">
+   <div><b>&lt; 1 cm</b><span>typical scan-to-scan difference for most evaluated body measurements</span></div>
+   <div><b>96-97%</b><span>accuracy against expert manual measurement, typical absolute error 1.5-2.0 cm</span></div>
+  </div>
+  <p class="fx-bar-proof-note">Both figures come from internal validation of body measurements (38-210 kg, 150-220 cm), have not been peer-reviewed, and do not cover body composition estimates or performance after bariatric surgery. The methodology is available under a non-disclosure agreement (NDA).</p>
+  <p class="fx-bar-more"><a href="https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/">Body scanning accuracy: an enterprise framework <span aria-hidden="true">→</span></a></p>
+  <ul class="fx-bar-data">
+   <li><strong>Photos</strong><span>FitXpress deletes photos immediately after processing or retains them for up to 30 days under a customer-specific policy. Retained photos are blurred, and face obfuscation is applied during capture.</span></li>
+   <li><strong>Identifiers</strong><span>Scan records use randomly generated identifiers, and the program links them to its patient records.</span></li>
+   <li><strong>HIPAA</strong><span>FitXpress can support HIPAA-governed deployments where 3DLOOK acts as a business associate under an executed Business Associate Agreement (BAA).</span></li>
+   <li><strong>GDPR</strong><span>In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR.</span></li>
+   <li><strong>Encryption</strong><span>Data is encrypted in transit and at rest.</span></li>
+   <li><strong>Model training</strong><span>3DLOOK does not use production customer data to train its models without the customer’s explicit, documented authorization.</span></li>
+  </ul>
+  <p class="fx-bar-more">The <a href="https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/">FitXpress data, privacy, security and regulatory FAQ</a> covers hosting, deletion, System and Organization Controls 2 (SOC 2) and U.S. Food and Drug Administration (FDA) information. Privacy contact: <a href="mailto:privacy@3dlook.me">privacy@3dlook.me</a>.</p>
+ </div>
+</section>
+<section class="fx-bar-section" id="pricing" aria-labelledby="pilot-heading">
+ <div class="fx-bar-wrap fx-bar-pilot">
+  <div>
+   <p class="fx-bar-eyebrow">Pilot and pricing</p>
+   <h2 id="pilot-heading">Start with one follow-up cohort, then scale on a monthly plan</h2>
+   <p class="fx-bar-intro">The pilot starts with one clinic and one post-surgery cohort; pre-qualification can join later. FitXpress uses production infrastructure already deployed in remote BMI-verification and weight-management workflows.</p>
+   <div class="fx-bar-price">
+    <p><b>Starter.</b> $1,000 a month for up to 500 API requests.</p>
+    <p><b>Pro.</b> $1,500 a month for up to 1,000 API requests, adding 3D Body Progress tracking and 3D Goal Visualization.</p>
+    <p>Both include guided implementation support, with no integration fee. Custom plans cover higher volumes.</p>
+    <p class="fx-bar-more"><a href="https://3dlook.ai/pricing/">FitXpress plans and pricing <span aria-hidden="true">→</span></a></p>
+   </div>
+  </div>
+  <div>
+   <ol class="fx-bar-steps-v">
+    <li><h3>Walk through the pathway</h3><p>The demo shows guided capture, a follow-up comparison and integration options.</p></li>
+    <li><h3>Pilot against a comparison cohort</h3><p>One cohort scans at home. A comparable cohort keeps the usual follow-up schedule; where practical, patients are assigned randomly.</p></li>
+    <li><h3>Evaluate and roll out</h3><p>Results are measured against criteria agreed before the pilot, and the scan goes live only if they are met.</p></li>
+   </ol>
+   <h3>What the program and 3DLOOK track</h3>
+   <ul class="fx-bar-out"><li>Scan completion and retake rates</li><li>Follow-up time frames completed with body data, against the comparison cohort</li><li>Contact attempts per patient who misses a time frame</li></ul>
+   <div class="fx-bar-actions"><a class="fx-bar-btn fx-bar-btn-blue" href="#demo" data-cta="pilot">Discuss a pilot</a></div>
+  </div>
+ </div>
+</section>
+<section class="fx-bar-section fx-bar-light" id="faq" aria-labelledby="faq-heading">
+ <div class="fx-bar-wrap"><p class="fx-bar-eyebrow">Frequently asked questions</p><h2 id="faq-heading">Questions bariatric teams ask</h2><div class="fx-bar-faq"><details><summary><h3>Does FitXpress measure muscle loss after bariatric surgery?</h3></summary><p class="fx-bar-answer">FitXpress does not measure muscle directly. Its lean mass estimates include organs, bone and water along with muscle, and the accuracy figures on this page do not cover body composition after surgery. Where the protocol needs a muscle measure, DXA or BIA stays the method.</p></details>
+<details><summary><h3>What happens when a patient cannot complete the scan?</h3></summary><p class="fx-bar-answer">The capture needs a smartphone and standing front and side photos; mobility, space and phone access affect completion. The program sets the retake logic and an in-clinic alternative, and the pilot measures completion before rollout.</p></details>
+<details><summary><h3>How does FitXpress perform at higher body weights?</h3></summary><p class="fx-bar-answer">Internal validation covered participants up to 210 kg, aged 16-78, in the US and Europe; performance outside that range has not been characterized. The pilot checks capture completion and measurement performance in the program’s own patients, including its heaviest.</p></details>
+<details><summary><h3>Can a FitXpress record support bariatric prior-authorization documentation?</h3></summary><p class="fx-bar-answer">A FitXpress record can supply part of it. Each insurer or health plan sets its documentation requirements and accepted sources, and some require a BMI measured at a clinical visit. The program can add dated scan outputs and the BMI inputs to its supporting records. FitXpress does not guarantee payer acceptance or approval.</p></details>
+ </div></div>
+</section>
+<section class="fx-bar-section fx-bar-navy" id="demo" aria-labelledby="demo-heading">
+ <div class="fx-bar-wrap fx-bar-cta">
+  <div>
+   <p class="fx-bar-eyebrow">Book a demo</p>
+   <h2 id="demo-heading">See bariatric patient tracking in the program’s own pathway</h2>
+   <ul class="fx-bar-demo-list"><li>Guided front and side capture on a phone</li><li>A follow-up comparison against the pre-surgery baseline</li><li>A sample record and pilot options</li></ul>
+   <p class="fx-bar-more"><a href="https://3dlook.ai/content-hub/bariatric-pre-qualification-mobile-3d-body-scanning/">Bariatric pre-qualification and patient progress tracking <span aria-hidden="true">→</span></a></p>
+   <p class="fx-bar-related">Other FitXpress uses: <a href="https://3dlook.ai/structured-body-data-for-telehealth-digital-health-programs/">remote patient monitoring for weight loss</a> · <a href="https://3dlook.ai/for-bmi-verification/">BMI verification</a></p>
+  </div>
+  <div class="fx-bar-form">
+   <h3>Request a FitXpress demo</h3>
+   <p>Share your contact details and follow-up requirements with 3DLOOK.</p>
+   <div class="fx-bar-form-host" id="fx-bar-demo-form"><p class="fx-bar-form-status" id="fx-bar-form-status" role="status">Loading the demo request form…</p><noscript><p>Request your demo through the 3DLOOK contact-page link.</p></noscript></div>
+   <div class="fx-bar-form-fallback"><p>You can also request a demo through the contact page.</p><a href="https://3dlook.ai/contact-us/" target="_blank" rel="noopener" data-cta="demo-fallback">Open the 3DLOOK demo request page <span aria-hidden="true">↗</span></a></div>
+   <p>Contact details are processed as described in the <a href="https://3dlook.ai/privacy-policy/">3DLOOK privacy policy</a>.</p>
+  </div>
+ </div>
+</section>
+</main>
+<footer class="fx-bar-foot" data-prototype-chrome="footer"><div class="fx-bar-wrap"><span>© 2026 3DLOOK · FitXpress</span><span>Procurement and security documentation: <a href="mailto:legal@3dlook.me">legal@3dlook.me</a></span></div></footer>
+</div>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://3dlook.ai/fitxpress/for-bariatric-programs/#webpage",
+   "url": "https://3dlook.ai/fitxpress/for-bariatric-programs/",
+   "name": "Bariatric Patient Tracking Between Visits | FitXpress",
+   "description": "Bariatric patient tracking between clinic visits: patients scan at home, and FitXpress returns waist and body composition data to the care team.",
+   "inLanguage": "en",
+   "isPartOf": {
+    "@id": "https://3dlook.ai/#website"
+   },
+   "about": {
+    "@id": "https://3dlook.ai/fitxpress/for-bariatric-programs/#service"
+   },
+   "mainEntity": {
+    "@id": "https://3dlook.ai/fitxpress/for-bariatric-programs/#service"
+   },
+   "hasPart": {
+    "@id": "https://3dlook.ai/fitxpress/for-bariatric-programs/#faq"
+   },
+   "breadcrumb": {
+    "@id": "https://3dlook.ai/fitxpress/for-bariatric-programs/#breadcrumb"
+   }
+  },
+  {
+   "@type": "Service",
+   "@id": "https://3dlook.ai/fitxpress/for-bariatric-programs/#service",
+   "name": "FitXpress for bariatric patient tracking",
+   "url": "https://3dlook.ai/fitxpress/for-bariatric-programs/",
+   "provider": {
+    "@id": "https://3dlook.ai/#organization"
+   },
+   "brand": {
+    "@type": "Brand",
+    "name": "FitXpress"
+   },
+   "serviceType": "Remote body scanning for bariatric follow-up and pre-qualification",
+   "description": "FitXpress turns two guided smartphone photos into 80+ body measurements, body composition estimates, BMI and timestamps, returned through an API for bariatric follow-up between clinic visits and BMI review before the first consultation.",
+   "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Bariatric surgery centers, hospital bariatric programs, surgical networks, and metabolic and obesity clinics"
+   },
+   "areaServed": [
+    {
+     "@type": "Country",
+     "name": "United States"
+    },
+    {
+     "@type": "Country",
+     "name": "United Kingdom"
+    }
+   ],
+   "serviceOutput": [
+    {
+     "@type": "Thing",
+     "name": "80+ body measurements"
+    },
+    {
+     "@type": "Thing",
+     "name": "Body composition estimates"
+    },
+    {
+     "@type": "Thing",
+     "name": "BMI and BMR (calculated metrics)"
+    },
+    {
+     "@type": "Thing",
+     "name": "3D Body Progress (Pro plan)"
+    },
+    {
+     "@type": "Thing",
+     "name": "Processing status and timestamps"
+    }
+   ]
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://3dlook.ai/#organization",
+   "name": "3DLOOK",
+   "url": "https://3dlook.ai/"
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://3dlook.ai/fitxpress/for-bariatric-programs/#faq",
+   "url": "https://3dlook.ai/fitxpress/for-bariatric-programs/",
+   "name": "Questions bariatric teams ask",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Does FitXpress measure muscle loss after bariatric surgery?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "FitXpress does not measure muscle directly. Its lean mass estimates include organs, bone and water along with muscle, and the accuracy figures on this page do not cover body composition after surgery. Where the protocol needs a muscle measure, DXA or BIA stays the method."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happens when a patient cannot complete the scan?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The capture needs a smartphone and standing front and side photos; mobility, space and phone access affect completion. The program sets the retake logic and an in-clinic alternative, and the pilot measures completion before rollout."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How does FitXpress perform at higher body weights?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Internal validation covered participants up to 210 kg, aged 16-78, in the US and Europe; performance outside that range has not been characterized. The pilot checks capture completion and measurement performance in the program’s own patients, including its heaviest."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can a FitXpress record support bariatric prior-authorization documentation?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A FitXpress record can supply part of it. Each insurer or health plan sets its documentation requirements and accepted sources, and some require a BMI measured at a clinical visit. The program can add dated scan outputs and the BMI inputs to its supporting records. FitXpress does not guarantee payer acceptance or approval."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://3dlook.ai/fitxpress/for-bariatric-programs/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://3dlook.ai/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "FitXpress for bariatric programs",
+     "item": "https://3dlook.ai/fitxpress/for-bariatric-programs/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<script>
+
+(function () {
+ 'use strict';
+ var root = document.querySelector('.fx-bar-page');
+ if (!root) return;
+ var pagePath = '/fitxpress/for-bariatric-programs/';
+ function track(event, properties) {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push(Object.assign({event: event, fx_vertical: 'bariatric', landing_page: pagePath}, properties || {}));
+ }
+ root.querySelectorAll('[data-cta]').forEach(function (link) {
+  link.addEventListener('click', function () {
+   track('demo_click', {cta_position: link.getAttribute('data-cta'), link_url: link.getAttribute('href')});
+  });
+ });
+ var filterButtons = root.querySelectorAll('[data-queue-filter]');
+ var queueItems = root.querySelectorAll('#intake-queue li');
+ var labels = {all: 'Showing all 3 records.', complete: 'Showing 2 complete records for clinical review.', flagged: 'Showing 1 record with a BMI difference above the program’s review threshold.'};
+ filterButtons.forEach(function (button) {
+  button.disabled = false;
+  button.addEventListener('click', function () {
+   var filter = button.getAttribute('data-queue-filter');
+   filterButtons.forEach(function (item) {item.setAttribute('aria-pressed', String(item === button));});
+   queueItems.forEach(function (item) {item.hidden = filter !== 'all' && item.getAttribute('data-status') !== filter;});
+   root.querySelector('#queue-status').textContent = labels[filter];
+  });
+ });
+
+ var metricButtons = root.querySelectorAll('[data-progress-metric]');
+ metricButtons.forEach(function (button) {
+  button.disabled = false;
+  button.addEventListener('click', function () {
+   var metric = button.getAttribute('data-progress-metric');
+   metricButtons.forEach(function (item) {item.setAttribute('aria-pressed', String(item === button));});
+   root.querySelector('#waist-panel').hidden = metric !== 'waist';
+   root.querySelector('#fat-panel').hidden = metric !== 'fat';
+   root.querySelector('#progress-status').textContent = metric === 'waist'
+    ? 'Waist measurement: 131.5 cm at the baseline on 7 October; 118.0 cm at month 3 on 20 January. Change: minus 13.5 cm.'
+    : 'Body-fat estimate: 46.8 percent at the baseline on 7 October; 42.9 percent at month 3 on 20 January. Change: minus 3.9 percentage points.';
+  });
+ });
+
+ // Verified public contact-page form. Replace formId with the approved shared
+ // "FX | LP | Demo" ID when available. Do not invent fields or a form endpoint.
+ // Keep the fallback link: it also works when scripts or third-party forms are blocked.
+ var formConfig = {region: 'na1', portalId: '6014382', formId: 'f227f5ce-8ce1-473d-a4f8-597c832979cc'};
+ var host = root.querySelector('#fx-bar-demo-form');
+ var status = root.querySelector('#fx-bar-form-status');
+ var formStarted = false;
+ var submitted = false;
+ var timeout;
+ function showFallbackStatus() {
+  if (status && status.isConnected) status.textContent = 'Use the contact-page link to request your demo.';
+ }
+ function createForm() {
+  if (!(window.hbspt && window.hbspt.forms)) {showFallbackStatus(); return;}
+  try {
+   window.hbspt.forms.create(Object.assign({}, formConfig, {
+    target: '#fx-bar-demo-form',
+    onFormReady: function () {
+     window.clearTimeout(timeout);
+     if (status && status.isConnected) status.remove();
+    },
+    onFormSubmitted: function () {
+     if (submitted) return;
+     submitted = true;
+     // Map this success-only event to the existing lead conversion in GTM.
+     // Do not add a second generate_lead tag if HubSpot already supplies one.
+     // Meeting bookings must be tracked by the confirmed booking flow.
+     track('fitxpress_demo_form_submitted', {form_id: formConfig.formId, cta_position: 'demo-form'});
+    }
+   }));
+  } catch (error) {showFallbackStatus();}
+ }
+ function loadForm() {
+  if (formStarted) return;
+  formStarted = true;
+  timeout = window.setTimeout(showFallbackStatus, 12000);
+  if (window.hbspt && window.hbspt.forms) {createForm(); return;}
+  var existing = Array.from(document.scripts).find(function (script) {
+   return /js\.hsforms\.net\/forms\/(?:embed\/)?v2\.js/.test(script.src);
+  });
+  if (existing) {
+   existing.addEventListener('load', createForm, {once: true});
+   existing.addEventListener('error', showFallbackStatus, {once: true});
+   return;
+  }
+  var script = document.createElement('script');
+  script.src = 'https://js.hsforms.net/forms/embed/v2.js';
+  script.async = true;
+  script.onload = createForm;
+  script.onerror = showFallbackStatus;
+  document.head.appendChild(script);
+ }
+ if ('IntersectionObserver' in window) {
+  var observer = new IntersectionObserver(function (entries) {
+   if (entries.some(function (entry) {return entry.isIntersecting;})) {observer.disconnect(); loadForm();}
+  }, {rootMargin: '600px 0px'});
+  observer.observe(host);
+ } else {loadForm();}
+}());
+
+</script>
+</body>
+</html>

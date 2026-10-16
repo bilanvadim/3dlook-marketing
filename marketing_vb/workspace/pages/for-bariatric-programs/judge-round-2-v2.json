@@ -1,0 +1,16 @@
+{"version": "page-v2-2026-10-16 after round-1 fixes", "judge": "fresh general-purpose subagent, blind", "date": "2026-10-16",
+ "scores": {"proof_of_belonging": 11, "claims_discipline": 10, "sales_argument": 9, "uniqueness": 7, "conversion": 7, "buyer_language": 8, "human_copy": 7, "search_ai_visibility": 8, "place_and_technical": 4},
+ "total": 71,
+ "hard_fails": ["[PLACEHOLDER] logo row (3 of all client logos)", "Tier units in API requests while the live /pricing/ still says scans", "'The public API accepts entered weights of 40-200 kg' traced to the API documentation, not proof-points / case studies / pricing"],
+ "lowest": "sales_argument",
+ "one_fix": "Expand the comparison to 4-5 rows (trip to the clinic; waist and body composition between visits; who enters the data) and close on the distance conclusion the problem sets up.",
+ "points_lost": {
+  "proof_of_belonging": "No vertical proof point in the hero strip; generic 'patient system', no EHR; no bariatric logos; validation excludes post-bariatric performance; 200 kg API cap",
+  "claims_discipline": "API-request units vs live /pricing/; unhedged 'with fewer calls spent chasing measurements'; 'Smart Scales (beta)' vs 'Predicted weight' on /pricing/; 'each missed visit' overstates MBSAQIP (per time frame); mock BMI 44.6 echoes the 44.6% statistic",
+  "sales_argument": "H1 outcome is visibility, not complete follow-up data; distance → home scan conclusion left to the reader; 2-row comparison ending on 'FitXpress adds both'; RTPV card without benefit; care-team card in the patient block; problem block ~195 words vs ~90",
+  "uniqueness": "Keyphrase and pre-qual block mirror the hub; BMI check overlaps the BMI verification page; shared template blocks",
+  "conversion": "Off-spec, unverified events; contact-page form id; no sticky mobile CTA",
+  "buyer_language": "'the program' ~32x; 'patient system' instead of EHR; internal product names in buyer copy",
+  "human_copy": "Clean detector but template rhythm; stacked three-item lists; 9 sentences over 25 words",
+  "search_ai_visibility": "Muscle-loss FAQ repeats the record row; weight FAQ repeats the validation range",
+  "place_and_technical": "No link up (parent not live); placeholder and internal head comment in the source; 768/performance/contrast unchecked"}}

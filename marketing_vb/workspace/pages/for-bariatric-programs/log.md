@@ -23,3 +23,10 @@
   post-op facts: MBSAQIP 6.2, NICE NG246, SOReg 46.1%, lean mass ~21-22% of weight lost at 12 months.
 - Blind judges round 1: Nika 54, Asselya 53 (threshold 85), both lowest on sales argument.
 - Review for Nika in Russian: `review-2026-10-16-nika-ru.md`. Sent 2026-10-16 on Vadim's go («тут можна на російській»): a short Russian reply plus the review and `sources-problem-block.md` as files in her thread (reply ts 1792169577.318879).
+- 2026-10-16, v2 build on Vadim's request. Ahrefs pull (~1,900 units) → focus keyphrase `bariatric
+  patient tracking`, URL `/fitxpress/for-bariatric-programs/`, folder renamed from `for-bariatric-clinics`.
+  Build script on Nika's template; three cut rounds 1,963 → 1,621 words; hero checked at 1280×800,
+  layout at 375 px. Vadim mid-run: «1900 теж норм. можливо подвинемо?» (kit ceiling question, open).
+- 2026-10-16, v2 judged three times by fresh blind subagents: 71 / 71 / 71 (gate 85 not taken; hard fail
+  left = logo placeholder). Final fixes applied after round 3 without rescoring. `TODO.md` lists the three
+  blockers (pricing unit, API weight limit, Smart Scales beta).
