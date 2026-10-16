@@ -19,6 +19,33 @@ related: 2026-09-25-fitxpress-seo-plan.md (фаза 0), 2026-09-27-tz-dev-site.m
 
 ---
 
+## Статус на 2026-10-16
+
+Фазу 0 исполняет Асель с 29.09, её трекер: таблица «Q4 SEO/GEO Plan based on AI Audit» (вкладка «Proposed Plan»; фаза 0 стоит на первые две недели октября). Статус ниже собран из переписки с ней в Slack (28.09–16.10) и проверен 16.10 на живом сайте, в GA4 и в HubSpot (только чтение).
+
+| Шаг | Статус | Сделано | Осталось |
+|---|---|---|---|
+| 0.9 Compliance | ❌ | Ничего. В переписке P0-3 девелоперу не упоминается. | 16.10 бейдж «HIPAA Compliant» (картинка в общем блоке) стоит на главной, `/pricing/`, `/contact-us/` и в статьях. На `/pricing/` «FitXpress maintains HIPAA compliance», на главной «never link photos to personal identifiers». |
+| 0.8 Редиректы | 🟡 | `/contact/` → `/contact-us/` и `/blog/` → `/content-hub/` одним 301. `/pricing` без слеша теперь ведёт на `/pricing/`, раньше уводил на главную. `https://www` → `/`. | `http://www.3dlook.ai/*` всё ещё 404. `/fitxpress` → `/`, как и задумано до релиза `/fitxpress/`. |
+| 0.1 `/pricing/`, `/contact-us/` | 🟡 | Диагностика в Clarity собрана в таблицу (13.10). Тикет перепроверен 14.10 (`2026-10-14-p0-1-ticket-v2.md`): 86% JS-ошибок сайта дают WebToffee и Flying Scripts. 15.10 тикет ушёл девелоперам. Асель перенесла чат-бабл влево, он больше не закрывает «Accept All». 16.10 Асель отклонила находку «v2.js грузится 4 раза»: скриншоты её не подтверждают. Редизайн прайсинга и его релиз ведёт Асель (с 15.10), финальный макет 16.10 ушёл в дизайн. | Фикс девелоперов. Через 7 дней после релиза замер в Clarity (меньше 3%). Dead clicks по карточкам планов закрывает редизайн. JSON.parse в GTM-теге chat tracker правится в GTM. |
+| 0.3 Фильтры | 🟡 | Internal Traffic и Developer Traffic в режиме Testing: с 01.10 GA4 пометил 62 и 29 сессий. П. 7 (Ads против `google/cpc`) закрыт 06.10, инструкция п. 6 исправлена 06.10. | Перевести оба фильтра в Active (день 8 прошёл). В переписке нет подтверждения по GTM-исключениям staging и wp-admin, cookie `internal_user`, IP blocking и связке Clarity с GA4, сохранённому сегменту «Без ботов». |
+| 0.2 События | ✅ с оговорками | Асель закончила 07.10. В GA4 за 08–15.10: `generate_lead` 23 (contact_us 13, fx_pricing_starter 4, home_popup 3, fx_pricing_talk_to_sales 2, pricing_enterprise 1, `other` ни разу), `demo_click` 128, `careers_submit` 2. `generate_lead` и `demo_click` отмечены как key events. | `meeting_booked` = 0: HubSpot Meetings на этих страницах нет, из приёмки убираем. `pricing_plan_click` срабатывает не всегда (события только 08.10 и 15.10), `docs_click` = 0. Форма Pro не внесена в Lookup-таблицу. |
+| 0.4 HubSpot | 🟡 | Свойства созданы на контакте и сделке; `icp_segment` из 7 значений (см. 0.4 п. 1). Скрытые UTM-поля стоят во всех формах с просмотрами (02.10). `landing_page_first` заполняется в Contact, Pricing и с 15.10 в Popup. Workflow источника на сделке работает: `original_traffic_source` у 423 из 424 сделок с 2024-09. Workflow соискателей включён: 506 контактов. Формы переименованы по схеме (около 13.10). П. 4.2 и 4.3 сняты 12.10. | Старые соискатели не импортированы: `Job seeker` у 506, а по разбору 12.10 их около 1 110 (`job-seekers-legacy-import.csv`, 606 строк). Ветка-защита для MQL+ и контактов со сделками не подтверждена. `icp_segment` стоит только у соискателей: FX, MT и WM никто не проставляет, у сделок он пуст. Тестовая заявка с UTM в переписке не упоминается; за 02–16.10 `utm_source` пришёл у 1 из 103 новых контактов. |
+| 0.5 Квалификация | ✅ | Company и Job title в popup уже были обязательными. Бесплатные почтовые домены заблокированы на всех формах, кроме MT, двух ebook и Career (13.10). Lead scoring снят 13.10, см. 0.5 п. 2. | Домена `gmail.co.in` нет в стандартном списке HubSpot. Решили не добавлять (14.10). |
+| 0.6 Дашборд | ❌ | Ничего. | Еженедельный отчёт в Telegram не запущен, крона нет. Про Looker Studio в переписке ничего. |
+| 0.7 Позиции | ❌ | Ничего. | Скрипта и крона нет. |
+
+**Остальной план, что движется параллельно:**
+- 2.2 robots.txt исправлен, Google перечитал его к 07.10.
+- 2.3 GPTBot (P0-4): 16.10 всё ещё 403 на `/` и на `/robots.txt`. 14.10 инструкцию поправили: правило стоит в nginx на сервере (AWS), Cloudflare и robots.txt тут ни при чём.
+- 2.4 llms.txt лежит на сайте (Last updated 2026-09-18).
+- 2.1 FAQ JSON-LD: FAQPage есть на trust-FAQ и `/wrist-measurement/`, на Capture Quality FAQ (опубликована 14.10) его нет.
+- Контент: пресс-релиз Wrist Measurement опубликован 08.10, Capture Quality FAQ опубликована 14.10, Асель делает перелинковку.
+- Фаза 1: фитнес-лендинг живой (`/fitxpress/for-connected-and-digital-fitness/`), сам `/fitxpress/` пока 301 на главную. GLP-1 и бариатрию делает Ника, Асель ревьюит (15.10). BMI verification остаётся на `/for-bmi-verification/` и расширяется Smart Scales и антифродом (07.10).
+- Порядок от Асель: закончить фазу 0, перекалибровать аудит на новых данных, потом фаза 1. Ссылочный план она разбирает после фазы 0.
+
+---
+
 ## Шаг 0. Подготовка (день 1, ~1 час)
 
 ### 0-A. Доступы
@@ -322,10 +349,9 @@ HubSpot → ⚙️ Settings → **Data Management** → **Properties**.
 | ICP segment | `icp_segment` | Dropdown select | см. список ниже |
 | Landing page (first touch) | `landing_page_first` | Single-line text | — |
 
-**Список значений `icp_segment`.**
-- FitXpress: `FX: Telehealth & GLP-1` · `FX: Online pharmacy` · `FX: Life & disability insurance` · `FX: Health plans & employer wellness` · `FX: Bariatric & metabolic` · `FX: Occupational health` · `FX: CROs & clinical trials` · `FX: Connected & digital fitness` · `FX: Plastic surgery` · `FX: BCRL / oncology RPM`.
-- Mobile Tailor: `MT: MTM brands & tailors` · `MT: On-demand manufacturers` · `MT: Uniforms` · `MT: Wrist / limb`.
-- Прочее: `Consumer` · `Agency / vendor` · `Job seeker` · `Other`.
+**Список значений `icp_segment`:** `FX` · `MT` · `WM` · `Consumer` · `Agency / vendor` · `Job seeker` · `Other`.
+
+_Изменено 30.09: поле в HubSpot держит не больше 10 значений, поэтому сегменты внутри FX и MT в него не попадают (решение Вадима, `WM` добавила Асель). Первоначальный список из 18 значений: FX × 10 вертикалей, MT × 4, плюс Consumer, Agency / vendor, Job seeker, Other._
 
 **Deal properties** → Create property:
 
@@ -457,6 +483,9 @@ Marketing → Forms → у каждой формы **Rename** по схеме `{
 Та же настройка потом ставится на формы калькуляторов (фаза 3).
 
 ### 2. Lead scoring
+
+**Снято 2026-10-13 (Вадим и Асель).** Лидов квалифицируют sales вручную, при нынешних объёмах scoring им не нужен. Вернёмся, когда этого потребует операционка. Ниже исходный вариант на этот случай. Критерий `icp_segment` начинается с `FX:` или `MT:` устарел: теперь значения просто `FX`, `MT` и `WM`.
+
 HubSpot → Marketing → **Lead Scoring** (новый инструмент) или Settings → Properties → **HubSpot score** (старый). Критерии:
 
 | Условие | Баллы |
@@ -510,18 +539,20 @@ HubSpot → Marketing → **Lead Scoring** (новый инструмент) и�
 
 Пройди список и отметь. Всё, что не ✅, — пришли мне, разберёмся.
 
-- [ ] На сайте нет «HIPAA Compliant», «HIPAA compliance», «personal identifiers» (0.9)
-- [ ] `/contact/`, `http://www…`, `/blog/` отдают один 301 на правильную цель (0.8)
-- [ ] Каждая форма на `/pricing/` и `/contact-us/` отправляется с десктопа и телефона; контакт появляется в HubSpot (0.1)
-- [ ] В GA4 DebugView приходят `generate_lead` (с правильным `form_name`), `demo_click`, `meeting_booked`, `docs_click` (0.2)
-- [ ] `generate_lead`, `meeting_booked`, `demo_click` отмечены как Key events (0.2)
-- [ ] Фильтр внутреннего трафика в GA4 в режиме Testing, визиты с офисного IP помечаются (0.3)
-- [ ] Clarity: IP blocking заполнен, интеграция с GA4 включена (0.3)
-- [ ] Тестовая заявка с UTM создаёт контакт с заполненными `utm_*` и `landing_page_first` (0.4)
-- [ ] Тестовая сделка в `Health & Fitness` получает `original_traffic_source` (0.4)
-- [ ] Popup не принимает gmail и требует Company и Job title (0.5)
-- [ ] Lead scoring создан, порог MQL = 30 (0.5)
-- [ ] Первый еженедельный отчёт пришёл в Telegram (0.6); трекинг позиций запущен (0.7)
+Отметки на 2026-10-16 (проверено на сайте, в GA4 и HubSpot):
+
+- [ ] На сайте нет «HIPAA Compliant», «HIPAA compliance», «personal identifiers» (0.9). _16.10: все три фразы на месте._
+- [ ] `/contact/`, `http://www…`, `/blog/` отдают один 301 на правильную цель (0.8). _16.10: `/contact/` и `/blog/` в порядке, `http://www` 404._
+- [ ] Каждая форма на `/pricing/` и `/contact-us/` отправляется с десктопа и телефона; контакт появляется в HubSpot (0.1). _Ждёт фикса девелоперов по тикету v2._
+- [x] В GA4 приходят `generate_lead` (с правильным `form_name`) и `demo_click` (0.2). _С 07–08.10. `meeting_booked` из критерия убран: Meetings на этих страницах нет. `docs_click` пока 0._
+- [x] `generate_lead` и `demo_click` отмечены как Key events (0.2)
+- [x] Фильтр внутреннего трафика в GA4 в режиме Testing, визиты помечаются (0.3). _С 01.10 помечено 62 сессии Internal и 29 Developer. Перевести в Active._
+- [ ] Clarity: IP blocking заполнен, интеграция с GA4 включена (0.3). _Подтверждения нет._
+- [ ] Тестовая заявка с UTM создаёт контакт с заполненными `utm_*` и `landing_page_first` (0.4). _`landing_page_first` заполняется в реальных заявках. Теста с UTM не было._
+- [x] Сделки получают `original_traffic_source` (0.4). _423 из 424 сделок с 2024-09._
+- [x] Popup не принимает gmail и требует Company и Job title (0.5)
+- [ ] ~~Lead scoring создан, порог MQL = 30 (0.5)~~ _Снято 13.10._
+- [ ] Первый еженедельный отчёт пришёл в Telegram (0.6); трекинг позиций запущен (0.7). _Не начато._
 
 ## Через 14 дней после приёмки
 
