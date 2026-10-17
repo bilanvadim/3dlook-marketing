@@ -64,7 +64,7 @@ PROJ = os.path.dirname(HERE)                                  # …/marketing_vb
 # depended on which one wrote last.
 sys.path.insert(0, HERE)
 from social_pack import (                                     # noqa: E402
-    split_frontmatter, extract_body, active_profiles, resolve_source,
+    split_frontmatter, extract_body, pack_profiles, resolve_source,
     published_slug, budget_for, hard_max_for, is_personal_linkedin,
 )
 DETECTOR = os.path.join(PROJ, "brand-assets", "style-guides", "scripts", "detect-ai-tells.py")
@@ -499,7 +499,7 @@ def main(argv=None) -> int:
         slug = a.target
         root = os.path.join(PROJ, "workspace", "social", "articles", slug)
         if a.all or not a.profile:
-            paths = [os.path.join(root, pid, "post.md") for pid, _, _ in active_profiles()]
+            paths = [os.path.join(root, pid, "post.md") for pid, _, _ in pack_profiles(slug)]
         else:
             paths = [os.path.join(root, a.profile, "post.md")]
     if slug:

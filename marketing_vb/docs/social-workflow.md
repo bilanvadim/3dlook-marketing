@@ -59,6 +59,19 @@ qc-prompt · qc-plan · manifest · digest · report · scores) и `scripts/post
 только секция между `HUMAN:START` / `HUMAN:END` — claims discipline и реальные визуалы
 статьи.
 
+**Тематический пак (AEO), с 2026-10-17.** Статьи выходят реже, чем нужны посты, а HubSpot
+AEO рекомендует LinkedIn-посты на вопросы, на которые уже отвечает опубликованная статья
+(`hubspot-aeo.py recs`, тип DOMAIN, канал `LINKEDIN_POST`). Такой пак живёт в своей папке
+`workspace/social/articles/aeo-<тема>/`, и его `_pack.json` несёт: `source_slug` (папка
+статьи в `workspace/seo/articles`, откуда факты), `profiles` (какие активные профили пишет
+пак), `aeo` (вопрос, id рекомендации, `covers`, `rules`) и `schedule` (дата публикации по
+профилю, выводится в дайджест). `social_pack.py` и `post-lint.py` читают эти ключи сами:
+источник резолвится в `source_slug`, бриф получает секцию «The question this pack answers»
+плюс углы, которые уже потратил собственный пак статьи. Без этих ключей всё как раньше.
+Перед паком — `capture-live.py` статьи-источника. Из Telegram такой пак пока не ставится:
+свитчер (`_mvb_article_source`) требует папку статьи с тем же slug; первый пак
+(`aeo-glp-1-tracking-between-visits`) прогнан интерактивно по шагам `/post-batch`.
+
 ### Модель по стадиям social-пайплайна
 
 | Стадия | Модель | Почему |

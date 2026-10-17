@@ -1,0 +1,52 @@
+{
+  "slug": "aeo-glp-1-tracking-between-visits",
+  "kind": "topic",
+  "source_slug": "top-7-remote-body-composition-tools-glp-1-clinics",
+  "profiles": [
+    "instagram-company",
+    "facebook-company",
+    "linkedin-company",
+    "linkedin-katerina",
+    "linkedin-katya",
+    "linkedin-nick",
+    "linkedin-olena",
+    "linkedin-vadim"
+  ],
+  "aeo": {
+    "recommendation_id": 184342641,
+    "channel": "LINKEDIN_POST",
+    "seen": "2026-10-17",
+    "question": "How can GLP-1 weight-loss clinics track body composition remotely between visits, and what tools belong in the care plan?",
+    "hubspot_title": "How to track body composition between GLP-1 visits",
+    "covers": [
+      "Why scale weight alone says little between visits: it cannot separate a change in fat mass from a change in lean mass.",
+      "Which methods work at home between visits (connected scales, mobile body scanning from two photos, progress photos, wearables) and which need an in-person visit (professional BIA, DXA, manual measurement).",
+      "One possible mix from the article: a method for periodic, detailed in-clinic assessment paired with a method for frequent, low-burden remote capture.",
+      "What to ask before choosing a remote method: what it measures versus estimates, the validation reference, repeatability at home, API export, how photos and records are retained, where clinician review sits.",
+      "How to start: a baseline at intake, captures scheduled around the check-in protocol, and a time-boxed pilot that measures capture completion rate, record consistency across sessions and clinician review time."
+    ],
+    "rules": [
+      "Name the subject in the first two lines in plain words (GLP-1 program, between visits, body composition) so an assistant can match the post to the question. The hook is still a claim, not a question.",
+      "Do not lead with 'there is no single best tool' or 'the right tool mix': the article's own pack spent that angle seven times (table below).",
+      "FitXpress is one of seven categories in the article, never 'the solution'. DXA, professional BIA and calibrated scales keep their role wherever a protocol requires them.",
+      "US market figures (J.P. Morgan, KFF) only in posts whose audience is US or global (linkedin-company, linkedin-nick, the two soft company accounts).",
+      "No clinical outcome claims: nothing about preventing muscle loss, improving adherence or better results. Body data supports clinician review and does not determine eligibility, prescribing or treatment.",
+      "No customer names. The article names none."
+    ]
+  },
+  "schedule": {
+    "linkedin-company": "2026-10-20 (Tue)",
+    "linkedin-nick": "2026-10-21 (Wed)",
+    "instagram-company": "2026-10-22 (Thu)",
+    "linkedin-katerina": "2026-10-23 (Fri)",
+    "facebook-company": "2026-10-26 (Mon)",
+    "linkedin-vadim": "2026-10-27 (Tue)",
+    "linkedin-olena": "2026-10-28 (Wed)",
+    "linkedin-katya": "2026-10-29 (Thu)"
+  },
+  "drafter_model": "opus",
+  "qc_policy": "sampled",
+  "published_slug": "top-7-remote-body-composition-tools-glp-1-clinics",
+  "generated": "2026-10-17",
+  "article_of_record": "workspace/seo/articles/top-7-remote-body-composition-tools-glp-1-clinics/published-live-2026-10-17.md"
+}

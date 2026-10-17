@@ -357,6 +357,49 @@ def prose_lines(text: str) -> int:
     return n
 
 
+# ---------------------------------------------------------------------------
+# topic packs — a pack built around a question, with facts from an existing article
+# ---------------------------------------------------------------------------
+# Since 2026-10-17. Articles ship far less often than posts are needed, and HubSpot
+# AEO recommends LinkedIn posts on questions an already published article answers.
+# Such a pack lives in its own folder and its `_pack.json` carries:
+#   source_slug  the SEO working directory the facts come from
+#   profiles     which active profiles this pack writes (default: all active)
+#   aeo          the question and the HubSpot recommendation behind it
+#   schedule     {profile: "YYYY-MM-DD"}, shown in the digest
+# Without those keys every function behaves as before: pack slug = article slug.
+
+def pack_meta(slug: str) -> dict:
+    p = os.path.join(pack_root(slug), "_pack.json") if slug else ""
+    if not p or not os.path.exists(p):
+        return {}
+    try:
+        return json.load(open(p, encoding="utf-8"))
+    except ValueError:
+        return {}
+
+
+def article_slug_for(slug: str) -> str:
+    """The SEO working directory under workspace/seo/articles the facts come from."""
+    return pack_meta(slug).get("source_slug") or slug
+
+
+def pack_profiles(slug: str):
+    """active_profiles() narrowed to `_pack.json.profiles` when the pack names them."""
+    act = active_profiles()
+    want = pack_meta(slug).get("profiles") if slug else None
+    return [x for x in act if x[0] in want] if want else act
+
+
+def pack_skipped(slug: str):
+    """[(profile, reason)] — disabled in the config, or left out of this pack."""
+    out = [(p, "posts_per_week: 0") for p in skipped_profiles()]
+    inside = {x[0] for x in pack_profiles(slug)}
+    out += [(p, "not in this pack (_pack.json profiles)")
+            for p, _pl, _h in active_profiles() if p not in inside]
+    return out
+
+
 def resolve_source(slug: str):
     """(path, status, error) — the text the posts must be written FROM.
 
@@ -380,10 +423,11 @@ def resolve_source(slug: str):
     sort BELOW the package.
 
     A candidate with fewer than 25 prose lines is skipped as a stub or a
-    checklist, whatever its size."""
-    root = os.path.join(PROJ, "workspace", "seo", "articles", slug)
+    checklist, whatever its size. A topic pack resolves in its `source_slug`."""
+    art = article_slug_for(slug) if slug else slug
+    root = os.path.join(PROJ, "workspace", "seo", "articles", art)
     if not slug or not os.path.isdir(root):
-        return None, None, f"no article directory workspace/seo/articles/{slug or '<slug>'}"
+        return None, None, f"no article directory workspace/seo/articles/{art or '<slug>'}"
 
     def rank(name: str):
         n = name.lower()
@@ -433,7 +477,7 @@ def resolve_source(slug: str):
 def _package_and_source(slug: str):
     """[(path, text)] for the publish package and the resolved source, in that order."""
     out = []
-    root = os.path.join(PROJ, "workspace", "seo", "articles", slug)
+    root = os.path.join(PROJ, "workspace", "seo", "articles", article_slug_for(slug))
     pkg = os.path.join(root, "publish-package.md")
     if os.path.exists(pkg):
         out.append((pkg, open(pkg, encoding="utf-8", errors="replace").read()))
@@ -499,7 +543,7 @@ def published_slug(slug: str):
         fm, _ = split_frontmatter(text)
         if fm.get("slug"):
             return fm["slug"]
-    return slug
+    return article_slug_for(slug)
 
 
 # ---------------------------------------------------------------------------
@@ -513,7 +557,7 @@ def pack_root(slug: str):
 def pack_state(slug: str):
     root = pack_root(slug)
     done, missing = [], []
-    for pid, _plat, _h in active_profiles():
+    for pid, _plat, _h in pack_profiles(slug):
         p = os.path.join(root, pid, "post.md")
         if os.path.exists(p) and extract_body(open(p, encoding="utf-8",
                                                   errors="replace").read())[0]:
@@ -554,7 +598,7 @@ def sibling_angles(slug: str, exclude: str):
     hand-maintained table in the run brief does."""
     out = []
     root = pack_root(slug)
-    for pid in digest_order([p for p, _, _ in active_profiles()]):
+    for pid in digest_order([p for p, _, _ in pack_profiles(slug)]):
         if pid == exclude:
             continue
         p = os.path.join(root, pid, "post.md")
@@ -620,6 +664,39 @@ def qc_reports(slug: str):
 # brief
 # ---------------------------------------------------------------------------
 
+def topic_section(slug: str) -> str:
+    """The run-brief block of a topic pack: the question every post answers, and the
+    angles the article's own pack already spent. Empty for an ordinary pack."""
+    meta = pack_meta(slug)
+    aeo = meta.get("aeo") or {}
+    src_slug = meta.get("source_slug")
+    if not aeo and not src_slug:
+        return ""
+    out = ["", "## The question this pack answers", ""]
+    if aeo:
+        out += ["This pack is built around ONE question, not around the article. The article",
+                "of record below is only where the facts come from.", "",
+                f"> {aeo.get('question', '')}", "",
+                f"Source: HubSpot AEO recommendation #{aeo.get('recommendation_id', '?')} "
+                f"({aeo.get('channel', '?')}, {aeo.get('seen', '?')}). AI assistants cite "
+                "LinkedIn posts that answer a buyer's question plainly, so every post here "
+                "must leave the reader with a usable answer, not only a hook.", ""]
+        if aeo.get("covers"):
+            out += ["What the answer covers (each post picks its own part):", ""]
+            out += [f"- {c}" for c in aeo["covers"]] + [""]
+        if aeo.get("rules"):
+            out += ["Rules for this pack:", ""]
+            out += [f"- {r}" for r in aeo["rules"]] + [""]
+    if src_slug and os.path.isdir(pack_root(src_slug)):
+        used = [(p, a) for p, a, _f in sibling_angles(src_slug, "") if a]
+        if used:
+            out += [f"### Angles the article's own pack (`{src_slug}`) already published",
+                    "", "Do not repeat these entry points.", "",
+                    "| Profile | Angle |", "|---|---|"]
+            out += [f"| `{p}` | {a} |" for p, a in used] + [""]
+    return "\n".join(out)
+
+
 def build_brief(slug: str, force: bool = False):
     """Generate the lookup half of `_run-brief.md` and keep the human half.
 
@@ -637,10 +714,11 @@ def build_brief(slug: str, force: bool = False):
     path = os.path.join(root, "_run-brief.md")
     text = open(src, encoding="utf-8", errors="replace").read()
     fm, _ = split_frontmatter(text)
-    profiles = active_profiles()
+    profiles = pack_profiles(slug)
     pmap = past_posts_map()
     url = published_url(slug)
     pslug = published_slug(slug)
+    topic = topic_section(slug)
 
     human = (f"{HUMAN_START}\n\n"
              "## Claims discipline for this article\n\n"
@@ -697,8 +775,8 @@ published URL.
 |---|---|---|---|---|---|
 {chr(10).join(rows)}
 
-Skipped this pack: {", ".join("`" + p + "`" for p in skipped_profiles()) or "none"}.
-
+Skipped this pack: {", ".join("`" + p + "` (" + r + ")" for p, r in pack_skipped(slug)) or "none"}.
+{topic}
 ## House rules — these outrank every per-profile brief
 
 - **0 hashtags** on every profile, without exception.
@@ -1062,7 +1140,7 @@ def qc_plan(slug: str):
         on the same account.
     Everything else is covered by lint plus `post-brand-checker`."""
     import subprocess
-    order = digest_order([p for p, _, _ in active_profiles()])
+    order = digest_order([p for p, _, _ in pack_profiles(slug)])
     if not order:
         return {"qc": [], "reason": {}}
     picked, why = [], {}
@@ -1125,7 +1203,7 @@ def build_manifest(slug: str):
         h1 = m.group(1).strip()
     scores = qc_reports(slug)
     profiles, ready_all = [], True
-    for pid, plat, handle in active_profiles():
+    for pid, plat, handle in pack_profiles(slug):
         post = os.path.join(root, pid, "post.md")
         entry = {"profile_id": pid, "platform": plat, "handle": handle,
                  "post_file": f"{pid}/post.md"}
@@ -1170,8 +1248,8 @@ def build_manifest(slug: str):
             "date": date.today().isoformat(),
         },
         "profiles": profiles,
-        "profiles_skipped": [{"profile_id": p, "reason": "posts_per_week: 0"}
-                             for p in skipped_profiles()],
+        "profiles_skipped": [{"profile_id": p, "reason": r}
+                             for p, r in pack_skipped(slug)],
         "ready_for_review": bool(profiles) and ready_all,
     }
     return man, None
@@ -1182,7 +1260,9 @@ def build_digest(slug: str):
     if err:
         return None, err
     root = pack_root(slug)
-    order = digest_order([p for p, _, _ in active_profiles()])
+    order = digest_order([p for p, _, _ in pack_profiles(slug)])
+    meta = pack_meta(slug)
+    schedule = meta.get("schedule") or {}
     parts = []
     n = 0
     for pid in order:
@@ -1194,15 +1274,21 @@ def build_digest(slug: str):
         if not body:
             continue
         n += 1
-        block = [f"## {pid}", "", body, ""]
+        block = [f"## {pid}", ""]
+        if schedule.get(pid):
+            block += [f"**Publish:** {schedule[pid]}", ""]
+        block += [body, ""]
         if cta:
             block += [f"**CTA:** {cta}", ""]
         if design:
             quoted = "\n".join("> " + l if l.strip() else ">" for l in design.splitlines())
             block += ["> **Design tip**", quoted, ""]
         parts.append("\n".join(block))
+    aeo = meta.get("aeo") or {}
     out = (f"# Review digest — {slug}\n\n"
-           f"Article: `{os.path.relpath(src, PROJ)}`\n"
+           + (f"Question (HubSpot AEO #{aeo.get('recommendation_id', '?')}): "
+              f"{aeo.get('question', '')}\n" if aeo else "")
+           + f"Article: `{os.path.relpath(src, PROJ)}`\n"
            f"Date: {date.today().isoformat()}\n"
            f"Profiles: {n}\n\n---\n\n" + "\n---\n\n".join(parts) + "\n\n---\n")
     return out, None
@@ -1271,9 +1357,9 @@ def main(argv=None) -> int:
         act = active_profiles()
         if a.slug:
             done, missing = pack_state(a.slug)
-            print(json.dumps({"active": [x[0] for x in act], "done": done,
-                              "missing": missing,
-                              "skipped": skipped_profiles()}, indent=2))
+            print(json.dumps({"active": [x[0] for x in pack_profiles(a.slug)],
+                              "done": done, "missing": missing,
+                              "skipped": [p for p, _r in pack_skipped(a.slug)]}, indent=2))
         else:
             for pid, plat, handle in act:
                 print(f"{pid}\t{plat}\t{handle}")
@@ -1305,7 +1391,7 @@ def main(argv=None) -> int:
         build = drafter_prompt if a.cmd == "prompt" else qc_prompt
         if a.check_prefix:
             hashes = {}
-            for pid, _pl, _h in active_profiles():
+            for pid, _pl, _h in pack_profiles(a.slug):
                 shared, _tail, err = build(a.slug, pid)
                 if err:
                     print(f"· skipped {pid}: {err}")
