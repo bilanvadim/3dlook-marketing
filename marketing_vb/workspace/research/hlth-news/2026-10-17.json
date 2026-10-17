@@ -1,0 +1,96 @@
+{
+ "generated": "2026-10-17T05:40:23+00:00",
+ "items": [
+  {
+   "id": "65e8feda-1986-4bc6-a9b0-3e008a9cbdaf",
+   "title": "Epic Partners With Amazon Pharmacy, Eli Lilly and Mark Cuban to Launch Drug Pricing Tool",
+   "date": "2026-10-16",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Interoperability / Data Management",
+    "Patient Engagement / Experience",
+    "Price Transparency",
+    "Health System & Health Provider",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/epic-partners-with-amazon-pharmacy-eli-lilly-and-mark-cuban-to-launch-drug-pricing-tool"
+  },
+  {
+   "id": "31956ddd-6dec-422d-88d6-95aeac50999f",
+   "title": "Commure and Compassus Partner to Automate Home Care Referrals",
+   "date": "2026-10-16",
+   "tags": [
+    "Home Health",
+    "Operational Efficiency",
+    "Health System & Health Provider",
+    "Care Coordination / Navigation / Care Access",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/commure-and-compassus-partner-to-automate-home-care-referrals"
+  },
+  {
+   "id": "8b39ea31-4674-4aa5-a620-bdea0b84dd94",
+   "title": "Sirona Medical Raises $40M to Expand Cloud-Based Radiology and Cortex AI Platform",
+   "date": "2026-10-16",
+   "tags": [
+    "Investments and Partnerships",
+    "Diagnostics",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/sirona-medical-raises-40m-to-expand-cloud-based-radiology-and-cortex-ai-platform"
+  }
+ ],
+ "analyses": {
+  "65e8feda-1986-4bc6-a9b0-3e008a9cbdaf": {
+   "id": "65e8feda-1986-4bc6-a9b0-3e008a9cbdaf",
+   "score": 0,
+   "segment": "—",
+   "what": "Epic разом з Amazon Pharmacy, Mark Cuban Cost Plus Drugs, Costco і LillyDirect (Eli Lilly) робить маркетплейс, де ціни на рецептурні ліки можна порівнювати прямо в EHR. Запуск очікують влітку 2027.",
+   "why": "Йдеться про прозорість цін на ліки в момент виписування рецепта. З даними про тіло, BMI-верифікацією чи трекінгом прогресу це ніяк не пов'язано. GLP-1 і програми схуднення в статті не згадуються.",
+   "play": "none",
+   "companies": [
+    "Epic",
+    "Amazon Pharmacy",
+    "Eli Lilly",
+    "LillyDirect",
+    "Mark Cuban Cost Plus Drugs",
+    "Cost Plus Drugs",
+    "Costco",
+    "KFF"
+   ],
+   "_date": "2026-10-16"
+  },
+  "31956ddd-6dec-422d-88d6-95aeac50999f": {
+   "id": "31956ddd-6dec-422d-88d6-95aeac50999f",
+   "score": 0,
+   "segment": "—",
+   "what": "Commure і Compassus автоматизували прийом направлень на домашній догляд через Commure Orchestrator: понад 500 тис. направлень на рік, обробка займає менше 10 хв замість ~1 год.",
+   "why": "Це автоматизація адміністративних процесів у post-acute і home care, а ця ніша не входить в ICP FitXpress. Даних про тіло там немає.",
+   "play": "none",
+   "companies": [
+    "Commure",
+    "Compassus"
+   ],
+   "_date": "2026-10-16"
+  },
+  "8b39ea31-4674-4aa5-a620-bdea0b84dd94": {
+   "id": "8b39ea31-4674-4aa5-a620-bdea0b84dd94",
+   "score": 0,
+   "segment": "—",
+   "what": "Sirona Medical залучила $40M (Series D) на хмарну радіологічну платформу RadOS і на AI-шар Cortex. Також планує вийти на ринки UK, ЄС, ПАР, Австралії та Нової Зеландії.",
+   "why": "Це радіологія, PACS і AI для діагностичних звітів, тобто профіль, який не відповідає жодному сегменту ICP FitXpress чи Mobile Tailor.",
+   "play": "none",
+   "companies": [
+    "Sirona Medical",
+    "Sirona Global",
+    "Avidity Partners",
+    "8VC",
+    "GreatPoint Ventures",
+    "KLT Holdings"
+   ],
+   "_date": "2026-10-16"
+  }
+ },
+ "posts": []
+}
