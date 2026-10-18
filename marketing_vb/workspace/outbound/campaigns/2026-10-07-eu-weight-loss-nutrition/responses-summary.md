@@ -1,15 +1,15 @@
-# Responses Summary — 2026-10-07-eu-weight-loss-nutrition (as of 2026-10-14)
+# Responses Summary — 2026-10-07-eu-weight-loss-nutrition (as of 2026-10-17)
 
 ## Counts
-- Total responses: 4 (2 distinct people)
+- Total responses: 6 (4 distinct people)
 - Interested: 0
 - Maybe-later: 0
 - Referrals: 0
-- Decline: 1 (25%) — Robin Mauras Cartier, Clinique La Prairie
+- Decline: 2 (33%) — Robin Mauras Cartier (Clinique La Prairie), Angelique Rodrigues (Dietplus Frouard)
 - Negative: 0
-- Questions: 1 (25%) — Robin's first message, **superseded, no personal reply needed** (see below)
+- Questions: 1 (17%) — Robin's first message, **superseded, no personal reply needed** (see below)
 - OOO: 0
-- Other/unclear: 2 (50%) — both from Angelo Phirate, BODYHIT
+- Other/unclear: 3 (50%) — 2 from Angelo Phirate (BODYHIT), 1 from DIETPLUS la roche sur foron
 
 ## Interested — for sales handoff
 
@@ -32,6 +32,13 @@ None this round.
 - Tone: polite, reasoned, no door left open ("at this stage" reads as closing language here, not a nurture signal — they just finished explaining why an overlapping device is a risk for them).
 - Action: exclude from future campaigns.
 
+### Angelique Rodrigues — Gerante d'entreprise — Dietplus Frouard
+- Replied to: Message 1
+- Their message (2026-10-16): «Thank you for reaching out and for your message. However, I'm not interested in this type of tool for my Dietplus centre at the moment. I wish you all the best.»
+- Tone: polite, warm, closes the door without irritation. "At the moment" is soft phrasing, but there is no request to follow up later and no open thread left — reads as a standard decline, not a nurture signal.
+- Action: exclude Dietplus Frouard / Angelique Rodrigues from future campaigns (company-level, 6-month rule).
+- Full thread: `messages/angelique-rodrigues-b07a852a5.md` + response in CSV.
+
 ## Other/unclear — low-signal, needs human judgment before acting
 
 ### Angelo Phirate — Directeur Partenariat & Franchisé — BODYHIT
@@ -42,11 +49,21 @@ None this round.
 - Suggested next step: Olena sends one short, friendly message confirming who she is and why she reached out (not a sales pitch) before deciding whether to continue or drop BODYHIT. Do not add to exclusion list yet — nothing here is a decline.
 - Full thread: `messages/angelo-phirate-86767131b.md` + both responses in CSV.
 
+### DIETPLUS la roche sur foron — Gérante d'un centre d'amincissement — Dietplus La Roche-sur-Foron
+- Replied to: Message 1 (which asked «What do clients prepare before the first assessment?»)
+- Their message (2026-10-17): «Hello, nothing special. A blood test, perhaps.»
+- This directly answers the discovery question asked in Message 1. It is not an expression of interest in the scanning product, but it is also not a decline or brush-off — the contact engaged with the opener's question in good faith.
+- Confidence: medium. Not enough signal to call it "interested," but the thread is open and friendly, unlike Angelo's two unclear replies.
+- Suggested next step: a reasonable next touch would be Olena sending Message 2 (the demo offer) since the contact engaged rather than ignoring the opener. Flagging for her judgment on timing rather than auto-advancing the sequence.
+- Full thread: `messages/dietplus-la-roche-sur-foron-094426267.md` + response in CSV.
+
 ## Negative responses — pattern check
 
 None. No negative-category responses this round.
 
 ## Recommendations
 - Robin / Clinique La Prairie: treat as closed-decline, not an open question. Send step 9 through the registry as a decline/exclude, not as a pending question — the earlier "question" framing in the first row is for record-keeping only.
+- Angelique Rodrigues / Dietplus Frouard: standard polite decline, exclude via step 9. No personal reply required, though a brief thank-you from Olena is fine.
 - Angelo / BODYHIT: hold off on exclusion. Flag for Olena to send one clarifying line before the next scheduled touch, since the current replies don't carry enough signal either way.
+- DIETPLUS la roche sur foron: do not exclude. This contact engaged with the discovery question; recommend Olena consider sending Message 2 (demo offer) as the next touch rather than treating the thread as closed.
 - No interested or maybe-later responses to route to sales this round.
