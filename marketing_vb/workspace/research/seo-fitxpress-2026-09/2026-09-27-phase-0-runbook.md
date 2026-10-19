@@ -25,7 +25,7 @@ related: 2026-09-25-fitxpress-seo-plan.md (фаза 0), 2026-09-27-tz-dev-site.m
 
 | Шаг | Статус | Сделано | Осталось |
 |---|---|---|---|
-| 0.9 Compliance | ❌ | Ничего. В переписке P0-3 девелоперу не упоминается. | 16.10 бейдж «HIPAA Compliant» (картинка в общем блоке) стоит на главной, `/pricing/`, `/contact-us/` и в статьях. На `/pricing/` «FitXpress maintains HIPAA compliance», на главной «never link photos to personal identifiers». |
+| 0.9 Compliance | ❌ | Ничего. В переписке P0-3 девелоперу не упоминается. | Бейдж «HIPAA Compliant» в футере остаётся на всех страницах (решение Вадима 19.10) и в задачу не входит. 19.10 на главной блок «GDPR & HIPAA Compliant» с «FitXpress maintains HIPAA compliance» и «never link photos to personal identifiers», ниже «does not process personal identifiers»; в FAQ `/pricing/` «FitXpress maintains HIPAA compliance». |
 | 0.8 Редиректы | 🟡 | `/contact/` → `/contact-us/` и `/blog/` → `/content-hub/` одним 301. `/pricing` без слеша теперь ведёт на `/pricing/`, раньше уводил на главную. `https://www` → `/`. | `http://www.3dlook.ai/*` всё ещё 404. `/fitxpress` → `/`, как и задумано до релиза `/fitxpress/`. |
 | 0.1 `/pricing/`, `/contact-us/` | 🟡 | Диагностика в Clarity собрана в таблицу (13.10). Тикет перепроверен 14.10 (`2026-10-14-p0-1-ticket-v2.md`): 86% JS-ошибок сайта дают WebToffee и Flying Scripts. 15.10 тикет ушёл девелоперам. Асель перенесла чат-бабл влево, он больше не закрывает «Accept All». 16.10 Асель отклонила находку «v2.js грузится 4 раза»: скриншоты её не подтверждают. Редизайн прайсинга и его релиз ведёт Асель (с 15.10), финальный макет 16.10 ушёл в дизайн. | Фикс девелоперов. Через 7 дней после релиза замер в Clarity (меньше 3%). Dead clicks по карточкам планов закрывает редизайн. JSON.parse в GTM-теге chat tracker правится в GTM. |
 | 0.3 Фильтры | 🟡 | Internal Traffic и Developer Traffic в режиме Testing: с 01.10 GA4 пометил 62 и 29 сессий. П. 7 (Ads против `google/cpc`) закрыт 06.10, инструкция п. 6 исправлена 06.10. | Перевести оба фильтра в Active (день 8 прошёл). В переписке нет подтверждения по GTM-исключениям staging и wp-admin, cookie `internal_user`, IP blocking и связке Clarity с GA4, сохранённому сегменту «Без ботов». |
@@ -114,12 +114,12 @@ related: 2026-09-25-fitxpress-seo-plan.md (фаза 0), 2026-09-27-tz-dev-site.m
 
 **Шаги**
 1. Отдай девелоперу пункт **P0-3** из `2026-09-27-tz-dev-site.md`. Там готовый текст замены (утверждённые формулировки) и список того, что удалить.
-2. Попроси проверить все места: страницы, футер, попапы, глобальные виджеты Elementor (Templates → Saved Templates / Global Widgets).
-3. Бейдж-картинку «HIPAA Compliant» удалить совсем. Бейджи GDPR и SSL оставить.
+2. Попроси проверить все места: страницы, попапы, глобальные виджеты Elementor (Templates → Saved Templates / Global Widgets).
+3. Футер не трогать. Бейдж «HIPAA Compliant» в футере остаётся на всех страницах (решение Вадима 2026-09-18, подтверждено 2026-10-19). Задача только про текст на страницах.
 
-**Проверка.** Открой главную, `/pricing/` и любую статью. Нажми Ctrl+F и поищи `HIPAA Compliant`, `HIPAA compliance`, `personal identifiers`. Совпадений быть не должно. Для полной проверки девелопер делает поиск по базе WordPress, например плагином Better Search Replace в режиме «только поиск».
+**Проверка.** Открой главную, `/pricing/` и любую статью. Нажми Ctrl+F и поищи `GDPR & HIPAA Compliant`, `HIPAA compliance`, `personal identifiers`. Совпадений быть не должно. Бейдж в футере (картинка с alt «HIPAA Compliant») остаётся, его не считаем. Для полной проверки девелопер делает поиск по базе WordPress, например плагином Better Search Replace в режиме «только поиск».
 
-**Типичная ошибка:** правят страницу, но забывают глобальный виджет. Тогда фраза остаётся в футере на всех страницах.
+**Типичная ошибка:** правят страницу, но забывают глобальный виджет. Тогда фраза остаётся в общем блоке на всех страницах.
 
 ---
 
@@ -650,7 +650,7 @@ HubSpot → Settings → Properties.
 
 Отметки на 2026-10-16 (проверено на сайте, в GA4 и HubSpot):
 
-- [ ] На сайте нет «HIPAA Compliant», «HIPAA compliance», «personal identifiers» (0.9). _16.10: все три фразы на месте._
+- [ ] В тексте страниц нет «GDPR & HIPAA Compliant», «HIPAA compliance», «personal identifiers» (0.9); бейдж в футере остаётся. _16.10: все три фразы на месте. 19.10: на месте на главной и в FAQ `/pricing/`._
 - [ ] `/contact/`, `http://www…`, `/blog/` отдают один 301 на правильную цель (0.8). _16.10: `/contact/` и `/blog/` в порядке, `http://www` 404._
 - [ ] Каждая форма на `/pricing/` и `/contact-us/` отправляется с десктопа и телефона; контакт появляется в HubSpot (0.1). _Ждёт фикса девелоперов по тикету v2._
 - [x] В GA4 приходят `generate_lead` (с правильным `form_name`) и `demo_click` (0.2). _С 07–08.10. `meeting_booked` из критерия убран: Meetings на этих страницах нет. `docs_click` пока 0._

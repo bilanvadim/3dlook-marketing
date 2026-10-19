@@ -141,6 +141,7 @@ Full-width navy radial-glow band, rounded top corners (~30–40px). Three CTA-he
 
 **Trust badges (centered, two outlined navy pills):** HIPAA Compliant (caduceus) · GDPR (stars circle).
 > **The badge stays on the site as is (Vadim, 2026-09-18)**, so footer designs keep it. It is a site element, not copy: in text (articles, pages, posts, outbound, decks) "HIPAA compliant" is still banned and the wording comes from `brand-assets/product-info/compliance.md` (live trust FAQ: HIPAA is a framework, not a certification).
+> **Confirmed 2026-10-19 (Vadim): the footer badge on every page is a given and stays**, `/fitxpress/` included. Audits and status checks don't list it as a defect. Everywhere else the approved wording applies.
 
 **Link section:** △ 3DLOOK logo (left) · **What We Do** (FitXpress · Mobile Tailor · Technology · Case Studies) · **About 3DLOOK** (About Us · Content Hub · Careers) · **Ready to get started?** with social icons (Facebook · Instagram · X · LinkedIn · YouTube). Column headers in muted blue-gray; links in white.
 

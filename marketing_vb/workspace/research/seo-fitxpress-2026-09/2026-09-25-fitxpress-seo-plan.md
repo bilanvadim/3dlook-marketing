@@ -172,7 +172,7 @@ status: v3 — 2026-09-27 утверждены иерархия /fitxpress/, о�
 - Медицинского рецензента нет.
 
 **Compliance**
-- Бейдж «HIPAA Compliant» стоит на каждой странице.
+- Бейдж «HIPAA Compliant» стоит на каждой странице. _19.10: остаётся, решение Вадима (футер на всех страницах)._
 - На главной написано «never link photos to personal identifiers».
 - Обе фразы противоречат trust-FAQ и являются hard fail.
 
@@ -218,7 +218,7 @@ status: v3 — 2026-09-27 утверждены иерархия /fitxpress/, о�
 | 0.6 | **Дашборд «FitXpress organic»** (Looker Studio + HubSpot-отчёт): сессии и позиции по уровням A/B/C → формы → контакты с рабочим email → FX-сделки и пайплайн по landing page | я |
 | 0.7 | **Трекинг позиций.** ~60 ключей трёх уровней раз в неделю через Ahrefs API по образцу `gsc-indexing-watch.py`, диф в Telegram | я |
 | 0.8 | **Редиректы.** 301 `/contact/` → `/contact-us/`; `http://www` → `https://`; `/fitxpress` без слеша → на `/fitxpress/` (или на главную, если иерархию оставляем старой) | dev |
-| 0.9 | **Compliance.** Убрать бейдж «HIPAA Compliant» и «never link photos to personal identifiers», заменить формулировками из `compliance.md` | dev + Вадим |
+| 0.9 | **Compliance.** Убрать «maintains HIPAA compliance» и «never link photos to personal identifiers» из текста страниц, заменить формулировками из `compliance.md`. Бейдж в футере остаётся (19.10) | dev + Вадим |
 
 ### Фаза 1. Архитектура FitXpress (недели 1–4, самый сильный рычаг)
 

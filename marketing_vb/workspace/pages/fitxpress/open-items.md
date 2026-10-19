@@ -131,6 +131,7 @@ here was decided silently. Owner in brackets.
 8. **Footer "HIPAA Compliant" badge** will render on `/fitxpress/` (the theme footer). `DESIGN.md` §8 keeps
    it as a site element by Vadim's 2026-09-18 decision, while the same phrase is banned in copy and the
    trust table on this page says the opposite. A diligence reader will see both on one screen. [Vadim]
+   **Closed 2026-10-19:** Vadim, the footer badge stays on every page; no change.
 9. **Telehealth benchmark page** (the skill's model) itself uses "under a minute", "80+ ISO-compatible
    measurements", "HIPAA-aware", "GDPR-aligned" and "Body Mass Index (BMI)" in its schema. Its structure
    was followed; its wording was not.

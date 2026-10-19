@@ -47,6 +47,8 @@ related: 2026-09-25-fitxpress-seo-plan.md (фазы 0 и 2), 2026-09-27-tz-track
 
 ## P0-3. Compliance: убрать неверные утверждения со всех страниц
 
+> **2026-10-19:** бейдж «HIPAA Compliant» в футере остаётся на всех страницах (решение Вадима), из задачи убран. Остальное в силе.
+
 **Проблема:** на главной (и, видимо, в общем блоке на других страницах) есть блок, который противоречит нашему опубликованному trust-FAQ. Это юридический риск.
 
 | Сейчас на сайте | Статус |
@@ -55,7 +57,8 @@ related: 2026-09-25-fitxpress-seo-plan.md (фазы 0 и 2), 2026-09-27-tz-track
 | «FitXpress maintains HIPAA compliance and follows GDPR principles…» | запрещено |
 | «…never link photos to personal identifiers…» | запрещено |
 | «3DLOOK does not process personal identifiers or contact details that could link photos to specific individuals.» | запрещено |
-| Бейдж-картинка «HIPAA Compliant» (alt «White logo with a caduceus symbol next to the text "HIPAA Compliant"…») | убрать бейдж |
+| «FitXpress maintains HIPAA compliance and adheres to GDPR principles…» (FAQ на `/pricing/`) | запрещено |
+| Бейдж-картинка «HIPAA Compliant» в футере | **оставить**, не трогать |
 
 **Заменить на** (текст дословно, это утверждённые формулировки из FAQ):
 
@@ -67,10 +70,10 @@ related: 2026-09-25-fitxpress-seo-plan.md (фазы 0 и 2), 2026-09-27-tz-track
 >
 > [Read the Data, Privacy, Security & Regulatory FAQ →](https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/)
 
-- Заголовок бейджей вместо «GDPR & HIPAA Compliant»: «Privacy & Security».
-- Бейджи оставить: GDPR (как регламент, без слова «compliant»), SSL. Бейдж HIPAA убрать совсем.
+- Заголовок блока на главной вместо «GDPR & HIPAA Compliant»: «Privacy & Security».
+- Футер не трогать: бейджи там остаются как есть, включая «HIPAA Compliant».
 
-**Приёмка:** поиск по исходнику всех страниц (или по экспорту БД) не находит `HIPAA Compliant`, `HIPAA compliance`, `personal identifiers`. Проверить также футер, попапы и шаблоны Elementor (Global widgets).
+**Приёмка:** поиск по исходнику всех страниц (или по экспорту БД) не находит `GDPR & HIPAA Compliant`, `HIPAA compliance`, `personal identifiers`. Бейдж в футере (картинка и её alt «HIPAA Compliant») остаётся. Проверить также попапы и шаблоны Elementor (Global widgets).
 
 ## P0-4. GPTBot получает 403
 
