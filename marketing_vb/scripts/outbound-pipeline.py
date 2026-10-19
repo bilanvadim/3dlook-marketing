@@ -97,9 +97,11 @@ PROFILE_GEO: dict[str, tuple[str, ...]] = {
               "romania", "bulgaria", "greece", "hungary", "slovakia", "slovenia",
               "croatia", "ukraine", "cyprus", "malta", "luxembourg", "iceland",
               "liechtenstein", "europe", "eu"),
-    # katya: Israel and the Gulf until 2026-10; South America from 2026-10-05 (Vadim).
+    # katya: Israel and the Gulf until 2026-10; South America from 2026-10-05 (Vadim);
+    # Mexico from 2026-10-19 (Vadim: «додай назавжди»).
     "katya": ("brazil", "brasil", "argentina", "chile", "colombia", "peru", "ecuador",
-              "bolivia", "uruguay", "paraguay", "venezuela", "south america", "latam",
+              "bolivia", "uruguay", "paraguay", "venezuela", "mexico", "méxico",
+              "south america", "latam",
               "israel", "uae", "united arab emirates", "saudi", "qatar", "kuwait",
               "bahrain", "oman", "gulf"),
     "vadim": ("australia", "new zealand"),
@@ -117,8 +119,8 @@ def geo_profile(country: str) -> str | None:
         return None
     # Place names that contain another market's needle: "Sydney, New South Wales,
     # Australia" matched "wales" and 65 Australians were flagged geo:katerina (2026-10-02);
-    # "New England" would do the same to the US.
-    c = re.sub(r"new south wales|new england", " ", c)
+    # "New England" would do the same to the US, and "New Mexico" would land on katya.
+    c = re.sub(r"new south wales|new england|new mexico", " ", c)
     tokens = set(re.split(r"[^a-z.]+", c))
     # A US parent does not move the HQ: "England (US parent)" is still katerina's.
     for prof, needles in PROFILE_GEO.items():

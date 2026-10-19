@@ -614,6 +614,8 @@ grep_check "Boston, New England, United States -> nick" "^nick$" python3 -c "$GE
 grep_check "Cardiff, Wales, United Kingdom -> katerina" "^katerina$" python3 -c "$GEO" "Cardiff, Wales, United Kingdom"
 grep_check "Sao Paulo, Brazil -> katya (South America since 2026-10-05)" "^katya$" python3 -c "$GEO" "São Paulo, São Paulo, Brazil"
 grep_check "Buenos Aires, Argentina -> katya" "^katya$" python3 -c "$GEO" "Buenos Aires, Argentina"
+grep_check "Ciudad de Mexico, Mexico -> katya (Mexico since 2026-10-19)" "^katya$" python3 -c "$GEO" "Ciudad de México, México"
+grep_check "Albuquerque, New Mexico, United States -> nick" "^nick$" python3 -c "$GEO" "Albuquerque, New Mexico, United States"
 # Both products number their ICP segments from 1: a FitXpress §1 card once carried
 # Mobile Tailor §1 ("MTM Brands & Tailors") as well (2026-09-29).
 ICP_SEG='import importlib.util as u, pathlib, sys

@@ -214,7 +214,7 @@ def blank_profile_registry(profile: str) -> dict:
     return {
         "profile": profile,
         "market": {"katerina": "UK", "nick": "USA", "olena": "Europe / EU",
-                   "katya": "South America (Israel until 2026-10)", "vadim": "Australia"}.get(profile, ""),
+                   "katya": "South America + Mexico (Israel until 2026-10)", "vadim": "Australia"}.get(profile, ""),
         "last_updated": today(),
         "campaigns": [],
         "excluded_companies": [],
