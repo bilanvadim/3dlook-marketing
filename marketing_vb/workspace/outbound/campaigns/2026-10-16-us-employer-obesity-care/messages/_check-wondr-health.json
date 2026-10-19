@@ -1,0 +1,475 @@
+{
+ "campaign": "2026-10-16-us-employer-obesity-care",
+ "checked": 23,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "wondr-health",
+ "generated": "2026-10-19T09:57:15",
+ "hard": [],
+ "soft": [
+  [
+   "near-duplicate sentence",
+   "Wondr Health: scott-paddock / gregorytracy",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: scott-paddock / lisa-talamini-76a8a03",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: scott-paddock / rubenrodarte",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: scott-paddock / michael-j-doherty",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: scott-paddock / jeff-serrano-71133615",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: scott-paddock / michael-mrnak-58091517",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: scott-paddock / robin-patton-lmsw-88263227",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: scott-paddock / greg-shapley",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: scott-paddock / cody-dufour-26b13592",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: scott-paddock / matthew-frank-6210a4143",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: scott-paddock / dr-tim-church",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: scott-paddock / anne-reed-rd-cdces",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: scott-paddock / caitlinmsmith",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: gregorytracy / michael-mrnak-58091517",
+   "«hi greg, a typical basic integration runs 2-4 wee…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: gregorytracy / lisa-talamini-76a8a03",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: gregorytracy / rubenrodarte",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: gregorytracy / michael-j-doherty",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: gregorytracy / jeff-serrano-71133615",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: gregorytracy / robin-patton-lmsw-88263227",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: gregorytracy / greg-shapley",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: gregorytracy / cody-dufour-26b13592",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: gregorytracy / matthew-frank-6210a4143",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: gregorytracy / dr-tim-church",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: gregorytracy / anne-reed-rd-cdces",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: gregorytracy / caitlinmsmith",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: lisa-talamini-76a8a03 / rubenrodarte",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: lisa-talamini-76a8a03 / michael-j-doherty",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: lisa-talamini-76a8a03 / jeff-serrano-71133615",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: lisa-talamini-76a8a03 / michael-mrnak-58091517",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: lisa-talamini-76a8a03 / robin-patton-lmsw-88263227",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: lisa-talamini-76a8a03 / greg-shapley",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: lisa-talamini-76a8a03 / cody-dufour-26b13592",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: lisa-talamini-76a8a03 / matthew-frank-6210a4143",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: lisa-talamini-76a8a03 / dr-tim-church",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: lisa-talamini-76a8a03 / anne-reed-rd-cdces",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: lisa-talamini-76a8a03 / caitlinmsmith",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: rubenrodarte / michael-j-doherty",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: rubenrodarte / jeff-serrano-71133615",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: rubenrodarte / michael-mrnak-58091517",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: rubenrodarte / robin-patton-lmsw-88263227",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: rubenrodarte / greg-shapley",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: rubenrodarte / cody-dufour-26b13592",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: rubenrodarte / matthew-frank-6210a4143",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: rubenrodarte / dr-tim-church",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: rubenrodarte / anne-reed-rd-cdces",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: rubenrodarte / caitlinmsmith",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: michael-j-doherty / jeff-serrano-71133615",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: michael-j-doherty / michael-mrnak-58091517",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: michael-j-doherty / robin-patton-lmsw-88263227",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: michael-j-doherty / greg-shapley",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: michael-j-doherty / cody-dufour-26b13592",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: michael-j-doherty / matthew-frank-6210a4143",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: michael-j-doherty / dr-tim-church",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: michael-j-doherty / anne-reed-rd-cdces",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: michael-j-doherty / caitlinmsmith",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: jeff-serrano-71133615 / michael-mrnak-58091517",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: jeff-serrano-71133615 / robin-patton-lmsw-88263227",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: jeff-serrano-71133615 / greg-shapley",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: jeff-serrano-71133615 / cody-dufour-26b13592",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: jeff-serrano-71133615 / matthew-frank-6210a4143",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: jeff-serrano-71133615 / dr-tim-church",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: jeff-serrano-71133615 / anne-reed-rd-cdces",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: jeff-serrano-71133615 / caitlinmsmith",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: michael-mrnak-58091517 / robin-patton-lmsw-88263227",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: michael-mrnak-58091517 / greg-shapley",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: michael-mrnak-58091517 / cody-dufour-26b13592",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: michael-mrnak-58091517 / matthew-frank-6210a4143",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: michael-mrnak-58091517 / dr-tim-church",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: michael-mrnak-58091517 / anne-reed-rd-cdces",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: michael-mrnak-58091517 / caitlinmsmith",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: robin-patton-lmsw-88263227 / greg-shapley",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: robin-patton-lmsw-88263227 / cody-dufour-26b13592",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: robin-patton-lmsw-88263227 / matthew-frank-6210a4143",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: robin-patton-lmsw-88263227 / dr-tim-church",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: robin-patton-lmsw-88263227 / anne-reed-rd-cdces",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: robin-patton-lmsw-88263227 / caitlinmsmith",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: greg-shapley / cody-dufour-26b13592",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: greg-shapley / matthew-frank-6210a4143",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: greg-shapley / dr-tim-church",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: greg-shapley / anne-reed-rd-cdces",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: greg-shapley / caitlinmsmith",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: cody-dufour-26b13592 / matthew-frank-6210a4143",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: cody-dufour-26b13592 / dr-tim-church",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: cody-dufour-26b13592 / anne-reed-rd-cdces",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: cody-dufour-26b13592 / caitlinmsmith",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: matthew-frank-6210a4143 / dr-tim-church",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: matthew-frank-6210a4143 / anne-reed-rd-cdces",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: matthew-frank-6210a4143 / caitlinmsmith",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: dr-tim-church / anne-reed-rd-cdces",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: dr-tim-church / caitlinmsmith",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Wondr Health: anne-reed-rd-cdces / caitlinmsmith",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "sentence opening repeated",
+   "Wondr Health ×14",
+   "«we support hipaa governed deployments…»: anne-reed-rd-cdces, caitlinmsmith, cody-dufour-26b13592, dr-tim-church"
+  ],
+  [
+   "sentence opening repeated",
+   "Wondr Health ×3",
+   "«a typical basic integration runs…»: cody-dufour-26b13592, gregorytracy, michael-mrnak-58091517"
+  ]
+ ]
+}

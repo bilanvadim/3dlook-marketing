@@ -1,0 +1,1630 @@
+{
+ "campaign": "2026-10-16-us-employer-obesity-care",
+ "checked": 35,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "crossover-health-1",
+ "generated": "2026-10-19T09:56:56",
+ "hard": [],
+ "soft": [
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steven-chang-md / sreelata-kintala-25a9021",
+   "«i can show how it works on a call: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steven-chang-md / scott-shreeve-md-109a682",
+   "«i can show how it works on a call: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steven-chang-md / kendramulvey",
+   "«i can show how it works on a call: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steven-chang-md / laurellefler",
+   "«i can show how it works on a call: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steven-chang-md / jaclyn-hiura-1a14aaa",
+   "«i can show how it works on a call: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steven-chang-md / robyn-guillen-4a48633a",
+   "«i can show how it works on a call: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steven-chang-md / daniel-lord-dc-ccsp-79083513",
+   "«i can show how it works on a call: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steven-chang-md / amy-esposito-md-4a6b8817",
+   "«i can show how it works on a call: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steven-chang-md / natalieawilhelm",
+   "«i can show how it works on a call: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steven-chang-md / cristy-d-39323320",
+   "«i can show how it works on a call: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steven-chang-md / cliftonpait",
+   "«i can show how it works on a call: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steven-chang-md / barry-giglio-m-d-ms-21394326",
+   "«i can show how it works on a call: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steven-chang-md / josh-bruce-70227426",
+   "«i can show how it works on a call: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steven-chang-md / sumeet-batra-md-mph-facoem-01755156",
+   "«i can show how it works on a call: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steven-chang-md / christina-borduz-5a971611b",
+   "«i can show how it works on a call: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steven-chang-md / steve-roey-a0a38077",
+   "«i can show how it works on a call: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steven-chang-md / hari-athreya-a7169077",
+   "«i can show how it works on a call: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steven-chang-md / megan-stanfield-510b9180",
+   "«i can show how it works on a call: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steven-chang-md / maria-popow-74370683",
+   "«i can show how it works on a call: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steven-chang-md / sarah-lord-b3aa22b6",
+   "«i can show how it works on a call: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steven-chang-md / guido-macchiavello-841a9298",
+   "«i can show how it works on a call: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steven-chang-md / cherylbecerra",
+   "«i can show how it works on a call: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steven-chang-md / steven-watts-md-mph-a7015b140",
+   "«i can show how it works on a call: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steven-chang-md / mgunye",
+   "«i can show how it works on a call: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sreelata-kintala-25a9021 / scott-shreeve-md-109a682",
+   "«grab a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sreelata-kintala-25a9021 / kendramulvey",
+   "«grab a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sreelata-kintala-25a9021 / laurellefler",
+   "«grab a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sreelata-kintala-25a9021 / jaclyn-hiura-1a14aaa",
+   "«grab a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sreelata-kintala-25a9021 / robyn-guillen-4a48633a",
+   "«grab a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sreelata-kintala-25a9021 / daniel-lord-dc-ccsp-79083513",
+   "«grab a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sreelata-kintala-25a9021 / amy-esposito-md-4a6b8817",
+   "«grab a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sreelata-kintala-25a9021 / natalieawilhelm",
+   "«grab a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sreelata-kintala-25a9021 / cristy-d-39323320",
+   "«grab a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sreelata-kintala-25a9021 / anna-nachamie",
+   "«grab a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sreelata-kintala-25a9021 / cliftonpait",
+   "«grab a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sreelata-kintala-25a9021 / barry-giglio-m-d-ms-21394326",
+   "«grab a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sreelata-kintala-25a9021 / josh-bruce-70227426",
+   "«grab a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sreelata-kintala-25a9021 / sumeet-batra-md-mph-facoem-01755156",
+   "«grab a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sreelata-kintala-25a9021 / christina-borduz-5a971611b",
+   "«grab a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sreelata-kintala-25a9021 / steve-roey-a0a38077",
+   "«grab a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sreelata-kintala-25a9021 / hari-athreya-a7169077",
+   "«grab a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sreelata-kintala-25a9021 / megan-stanfield-510b9180",
+   "«grab a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sreelata-kintala-25a9021 / maria-popow-74370683",
+   "«grab a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sreelata-kintala-25a9021 / sarah-lord-b3aa22b6",
+   "«grab a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sreelata-kintala-25a9021 / guido-macchiavello-841a9298",
+   "«grab a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sreelata-kintala-25a9021 / cherylbecerra",
+   "«grab a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sreelata-kintala-25a9021 / steven-watts-md-mph-a7015b140",
+   "«grab a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sreelata-kintala-25a9021 / mgunye",
+   "«grab a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: scott-shreeve-md-109a682 / kendramulvey",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: scott-shreeve-md-109a682 / laurellefler",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: scott-shreeve-md-109a682 / jaclyn-hiura-1a14aaa",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: scott-shreeve-md-109a682 / robyn-guillen-4a48633a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: scott-shreeve-md-109a682 / daniel-lord-dc-ccsp-79083513",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: scott-shreeve-md-109a682 / amy-esposito-md-4a6b8817",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: scott-shreeve-md-109a682 / natalieawilhelm",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: scott-shreeve-md-109a682 / cristy-d-39323320",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: scott-shreeve-md-109a682 / anna-nachamie",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: scott-shreeve-md-109a682 / cliftonpait",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: scott-shreeve-md-109a682 / barry-giglio-m-d-ms-21394326",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: scott-shreeve-md-109a682 / josh-bruce-70227426",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: scott-shreeve-md-109a682 / sumeet-batra-md-mph-facoem-01755156",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: scott-shreeve-md-109a682 / christina-borduz-5a971611b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: scott-shreeve-md-109a682 / steve-roey-a0a38077",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: scott-shreeve-md-109a682 / hari-athreya-a7169077",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: scott-shreeve-md-109a682 / megan-stanfield-510b9180",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: scott-shreeve-md-109a682 / maria-popow-74370683",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: scott-shreeve-md-109a682 / sarah-lord-b3aa22b6",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: scott-shreeve-md-109a682 / guido-macchiavello-841a9298",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: scott-shreeve-md-109a682 / cherylbecerra",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: scott-shreeve-md-109a682 / steven-watts-md-mph-a7015b140",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: scott-shreeve-md-109a682 / mgunye",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: kendramulvey / mgunye",
+   "«hi kendra, for a typical basic integration, expec…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: kendramulvey / laurellefler",
+   "«a call could compare that with your stack: we sup…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: kendramulvey / jaclyn-hiura-1a14aaa",
+   "«a call could compare that with your stack: we sup…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: kendramulvey / robyn-guillen-4a48633a",
+   "«a call could compare that with your stack: we sup…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: kendramulvey / daniel-lord-dc-ccsp-79083513",
+   "«a call could compare that with your stack: we sup…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: kendramulvey / amy-esposito-md-4a6b8817",
+   "«a call could compare that with your stack: we sup…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: kendramulvey / natalieawilhelm",
+   "«a call could compare that with your stack: we sup…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: kendramulvey / cristy-d-39323320",
+   "«a call could compare that with your stack: we sup…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: kendramulvey / cliftonpait",
+   "«a call could compare that with your stack: we sup…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: kendramulvey / barry-giglio-m-d-ms-21394326",
+   "«a call could compare that with your stack: we sup…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: kendramulvey / josh-bruce-70227426",
+   "«a call could compare that with your stack: we sup…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: kendramulvey / sumeet-batra-md-mph-facoem-01755156",
+   "«a call could compare that with your stack: we sup…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: kendramulvey / christina-borduz-5a971611b",
+   "«a call could compare that with your stack: we sup…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: kendramulvey / steve-roey-a0a38077",
+   "«a call could compare that with your stack: we sup…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: kendramulvey / hari-athreya-a7169077",
+   "«a call could compare that with your stack: we sup…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: kendramulvey / megan-stanfield-510b9180",
+   "«a call could compare that with your stack: we sup…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: kendramulvey / maria-popow-74370683",
+   "«a call could compare that with your stack: we sup…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: kendramulvey / sarah-lord-b3aa22b6",
+   "«a call could compare that with your stack: we sup…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: kendramulvey / guido-macchiavello-841a9298",
+   "«a call could compare that with your stack: we sup…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: kendramulvey / cherylbecerra",
+   "«a call could compare that with your stack: we sup…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: kendramulvey / steven-watts-md-mph-a7015b140",
+   "«a call could compare that with your stack: we sup…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: laurellefler / jaclyn-hiura-1a14aaa",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: laurellefler / robyn-guillen-4a48633a",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: laurellefler / daniel-lord-dc-ccsp-79083513",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: laurellefler / amy-esposito-md-4a6b8817",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: laurellefler / natalieawilhelm",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: laurellefler / cristy-d-39323320",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: laurellefler / anna-nachamie",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: laurellefler / cliftonpait",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: laurellefler / barry-giglio-m-d-ms-21394326",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: laurellefler / josh-bruce-70227426",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: laurellefler / sumeet-batra-md-mph-facoem-01755156",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: laurellefler / christina-borduz-5a971611b",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: laurellefler / steve-roey-a0a38077",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: laurellefler / hari-athreya-a7169077",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: laurellefler / megan-stanfield-510b9180",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: laurellefler / maria-popow-74370683",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: laurellefler / sarah-lord-b3aa22b6",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: laurellefler / guido-macchiavello-841a9298",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: laurellefler / cherylbecerra",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: laurellefler / steven-watts-md-mph-a7015b140",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: laurellefler / mgunye",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: jaclyn-hiura-1a14aaa / robyn-guillen-4a48633a",
+   "«pick a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: jaclyn-hiura-1a14aaa / daniel-lord-dc-ccsp-79083513",
+   "«pick a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: jaclyn-hiura-1a14aaa / amy-esposito-md-4a6b8817",
+   "«pick a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: jaclyn-hiura-1a14aaa / natalieawilhelm",
+   "«pick a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: jaclyn-hiura-1a14aaa / cristy-d-39323320",
+   "«pick a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: jaclyn-hiura-1a14aaa / anna-nachamie",
+   "«pick a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: jaclyn-hiura-1a14aaa / cliftonpait",
+   "«pick a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: jaclyn-hiura-1a14aaa / barry-giglio-m-d-ms-21394326",
+   "«pick a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: jaclyn-hiura-1a14aaa / josh-bruce-70227426",
+   "«pick a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: jaclyn-hiura-1a14aaa / sumeet-batra-md-mph-facoem-01755156",
+   "«pick a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: jaclyn-hiura-1a14aaa / christina-borduz-5a971611b",
+   "«pick a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: jaclyn-hiura-1a14aaa / steve-roey-a0a38077",
+   "«pick a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: jaclyn-hiura-1a14aaa / hari-athreya-a7169077",
+   "«pick a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: jaclyn-hiura-1a14aaa / megan-stanfield-510b9180",
+   "«pick a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: jaclyn-hiura-1a14aaa / maria-popow-74370683",
+   "«pick a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: jaclyn-hiura-1a14aaa / sarah-lord-b3aa22b6",
+   "«pick a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: jaclyn-hiura-1a14aaa / guido-macchiavello-841a9298",
+   "«pick a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: jaclyn-hiura-1a14aaa / cherylbecerra",
+   "«pick a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: jaclyn-hiura-1a14aaa / steven-watts-md-mph-a7015b140",
+   "«pick a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: jaclyn-hiura-1a14aaa / mgunye",
+   "«pick a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: robyn-guillen-4a48633a / daniel-lord-dc-ccsp-79083513",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: robyn-guillen-4a48633a / amy-esposito-md-4a6b8817",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: robyn-guillen-4a48633a / natalieawilhelm",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: robyn-guillen-4a48633a / cristy-d-39323320",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: robyn-guillen-4a48633a / anna-nachamie",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: robyn-guillen-4a48633a / cliftonpait",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: robyn-guillen-4a48633a / barry-giglio-m-d-ms-21394326",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: robyn-guillen-4a48633a / josh-bruce-70227426",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: robyn-guillen-4a48633a / sumeet-batra-md-mph-facoem-01755156",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: robyn-guillen-4a48633a / christina-borduz-5a971611b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: robyn-guillen-4a48633a / steve-roey-a0a38077",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: robyn-guillen-4a48633a / hari-athreya-a7169077",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: robyn-guillen-4a48633a / megan-stanfield-510b9180",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: robyn-guillen-4a48633a / maria-popow-74370683",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: robyn-guillen-4a48633a / sarah-lord-b3aa22b6",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: robyn-guillen-4a48633a / guido-macchiavello-841a9298",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: robyn-guillen-4a48633a / cherylbecerra",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: robyn-guillen-4a48633a / steven-watts-md-mph-a7015b140",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: robyn-guillen-4a48633a / mgunye",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: daniel-lord-dc-ccsp-79083513 / amy-esposito-md-4a6b8817",
+   "«a call could cover fit with your clinics: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: daniel-lord-dc-ccsp-79083513 / natalieawilhelm",
+   "«a call could cover fit with your clinics: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: daniel-lord-dc-ccsp-79083513 / cristy-d-39323320",
+   "«a call could cover fit with your clinics: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: daniel-lord-dc-ccsp-79083513 / cliftonpait",
+   "«a call could cover fit with your clinics: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: daniel-lord-dc-ccsp-79083513 / barry-giglio-m-d-ms-21394326",
+   "«a call could cover fit with your clinics: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: daniel-lord-dc-ccsp-79083513 / josh-bruce-70227426",
+   "«a call could cover fit with your clinics: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: daniel-lord-dc-ccsp-79083513 / sumeet-batra-md-mph-facoem-01755156",
+   "«a call could cover fit with your clinics: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: daniel-lord-dc-ccsp-79083513 / christina-borduz-5a971611b",
+   "«a call could cover fit with your clinics: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: daniel-lord-dc-ccsp-79083513 / steve-roey-a0a38077",
+   "«a call could cover fit with your clinics: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: daniel-lord-dc-ccsp-79083513 / hari-athreya-a7169077",
+   "«a call could cover fit with your clinics: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: daniel-lord-dc-ccsp-79083513 / megan-stanfield-510b9180",
+   "«a call could cover fit with your clinics: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: daniel-lord-dc-ccsp-79083513 / maria-popow-74370683",
+   "«a call could cover fit with your clinics: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: daniel-lord-dc-ccsp-79083513 / sarah-lord-b3aa22b6",
+   "«a call could cover fit with your clinics: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: daniel-lord-dc-ccsp-79083513 / guido-macchiavello-841a9298",
+   "«a call could cover fit with your clinics: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: daniel-lord-dc-ccsp-79083513 / cherylbecerra",
+   "«a call could cover fit with your clinics: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: daniel-lord-dc-ccsp-79083513 / steven-watts-md-mph-a7015b140",
+   "«a call could cover fit with your clinics: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: daniel-lord-dc-ccsp-79083513 / mgunye",
+   "«a call could cover fit with your clinics: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: amy-esposito-md-4a6b8817 / natalieawilhelm",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: amy-esposito-md-4a6b8817 / cristy-d-39323320",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: amy-esposito-md-4a6b8817 / anna-nachamie",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: amy-esposito-md-4a6b8817 / cliftonpait",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: amy-esposito-md-4a6b8817 / barry-giglio-m-d-ms-21394326",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: amy-esposito-md-4a6b8817 / josh-bruce-70227426",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: amy-esposito-md-4a6b8817 / sumeet-batra-md-mph-facoem-01755156",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: amy-esposito-md-4a6b8817 / christina-borduz-5a971611b",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: amy-esposito-md-4a6b8817 / steve-roey-a0a38077",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: amy-esposito-md-4a6b8817 / hari-athreya-a7169077",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: amy-esposito-md-4a6b8817 / megan-stanfield-510b9180",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: amy-esposito-md-4a6b8817 / maria-popow-74370683",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: amy-esposito-md-4a6b8817 / sarah-lord-b3aa22b6",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: amy-esposito-md-4a6b8817 / guido-macchiavello-841a9298",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: amy-esposito-md-4a6b8817 / cherylbecerra",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: amy-esposito-md-4a6b8817 / steven-watts-md-mph-a7015b140",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: amy-esposito-md-4a6b8817 / mgunye",
+   "«time here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: natalieawilhelm / cristy-d-39323320",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: natalieawilhelm / anna-nachamie",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: natalieawilhelm / cliftonpait",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: natalieawilhelm / barry-giglio-m-d-ms-21394326",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: natalieawilhelm / josh-bruce-70227426",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: natalieawilhelm / sumeet-batra-md-mph-facoem-01755156",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: natalieawilhelm / christina-borduz-5a971611b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: natalieawilhelm / steve-roey-a0a38077",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: natalieawilhelm / hari-athreya-a7169077",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: natalieawilhelm / megan-stanfield-510b9180",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: natalieawilhelm / maria-popow-74370683",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: natalieawilhelm / sarah-lord-b3aa22b6",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: natalieawilhelm / guido-macchiavello-841a9298",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: natalieawilhelm / cherylbecerra",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: natalieawilhelm / steven-watts-md-mph-a7015b140",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: natalieawilhelm / mgunye",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cristy-d-39323320 / anna-nachamie",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cristy-d-39323320 / cliftonpait",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cristy-d-39323320 / barry-giglio-m-d-ms-21394326",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cristy-d-39323320 / josh-bruce-70227426",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cristy-d-39323320 / sumeet-batra-md-mph-facoem-01755156",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cristy-d-39323320 / christina-borduz-5a971611b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cristy-d-39323320 / steve-roey-a0a38077",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cristy-d-39323320 / hari-athreya-a7169077",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cristy-d-39323320 / megan-stanfield-510b9180",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cristy-d-39323320 / maria-popow-74370683",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cristy-d-39323320 / sarah-lord-b3aa22b6",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cristy-d-39323320 / guido-macchiavello-841a9298",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cristy-d-39323320 / cherylbecerra",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cristy-d-39323320 / steven-watts-md-mph-a7015b140",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cristy-d-39323320 / mgunye",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: anna-nachamie / cliftonpait",
+   "«if you want to map it to your roadmap, book a tim…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: anna-nachamie / barry-giglio-m-d-ms-21394326",
+   "«if you want to map it to your roadmap, book a tim…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: anna-nachamie / josh-bruce-70227426",
+   "«if you want to map it to your roadmap, book a tim…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: anna-nachamie / sumeet-batra-md-mph-facoem-01755156",
+   "«if you want to map it to your roadmap, book a tim…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: anna-nachamie / christina-borduz-5a971611b",
+   "«if you want to map it to your roadmap, book a tim…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: anna-nachamie / steve-roey-a0a38077",
+   "«if you want to map it to your roadmap, book a tim…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: anna-nachamie / hari-athreya-a7169077",
+   "«if you want to map it to your roadmap, book a tim…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: anna-nachamie / megan-stanfield-510b9180",
+   "«if you want to map it to your roadmap, book a tim…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: anna-nachamie / maria-popow-74370683",
+   "«if you want to map it to your roadmap, book a tim…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: anna-nachamie / sarah-lord-b3aa22b6",
+   "«if you want to map it to your roadmap, book a tim…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: anna-nachamie / guido-macchiavello-841a9298",
+   "«if you want to map it to your roadmap, book a tim…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: anna-nachamie / cherylbecerra",
+   "«if you want to map it to your roadmap, book a tim…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: anna-nachamie / steven-watts-md-mph-a7015b140",
+   "«if you want to map it to your roadmap, book a tim…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: anna-nachamie / mgunye",
+   "«if you want to map it to your roadmap, book a tim…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cliftonpait / barry-giglio-m-d-ms-21394326",
+   "«i can walk through the shape on a call: we suppor…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cliftonpait / josh-bruce-70227426",
+   "«i can walk through the shape on a call: we suppor…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cliftonpait / sumeet-batra-md-mph-facoem-01755156",
+   "«i can walk through the shape on a call: we suppor…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cliftonpait / christina-borduz-5a971611b",
+   "«i can walk through the shape on a call: we suppor…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cliftonpait / steve-roey-a0a38077",
+   "«i can walk through the shape on a call: we suppor…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cliftonpait / hari-athreya-a7169077",
+   "«i can walk through the shape on a call: we suppor…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cliftonpait / megan-stanfield-510b9180",
+   "«i can walk through the shape on a call: we suppor…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cliftonpait / sarah-lord-b3aa22b6",
+   "«i can walk through the shape on a call: we suppor…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cliftonpait / guido-macchiavello-841a9298",
+   "«i can walk through the shape on a call: we suppor…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cliftonpait / cherylbecerra",
+   "«i can walk through the shape on a call: we suppor…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cliftonpait / steven-watts-md-mph-a7015b140",
+   "«i can walk through the shape on a call: we suppor…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cliftonpait / mgunye",
+   "«i can walk through the shape on a call: we suppor…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: barry-giglio-m-d-ms-21394326 / josh-bruce-70227426",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: barry-giglio-m-d-ms-21394326 / sumeet-batra-md-mph-facoem-01755156",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: barry-giglio-m-d-ms-21394326 / christina-borduz-5a971611b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: barry-giglio-m-d-ms-21394326 / steve-roey-a0a38077",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: barry-giglio-m-d-ms-21394326 / hari-athreya-a7169077",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: barry-giglio-m-d-ms-21394326 / megan-stanfield-510b9180",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: barry-giglio-m-d-ms-21394326 / maria-popow-74370683",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: barry-giglio-m-d-ms-21394326 / sarah-lord-b3aa22b6",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: barry-giglio-m-d-ms-21394326 / guido-macchiavello-841a9298",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: barry-giglio-m-d-ms-21394326 / cherylbecerra",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: barry-giglio-m-d-ms-21394326 / steven-watts-md-mph-a7015b140",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: barry-giglio-m-d-ms-21394326 / mgunye",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: josh-bruce-70227426 / sumeet-batra-md-mph-facoem-01755156",
+   "«if useful, we could talk it through: we support h…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: josh-bruce-70227426 / christina-borduz-5a971611b",
+   "«if useful, we could talk it through: we support h…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: josh-bruce-70227426 / steve-roey-a0a38077",
+   "«if useful, we could talk it through: we support h…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: josh-bruce-70227426 / hari-athreya-a7169077",
+   "«if useful, we could talk it through: we support h…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: josh-bruce-70227426 / megan-stanfield-510b9180",
+   "«if useful, we could talk it through: we support h…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: josh-bruce-70227426 / maria-popow-74370683",
+   "«if useful, we could talk it through: we support h…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: josh-bruce-70227426 / sarah-lord-b3aa22b6",
+   "«if useful, we could talk it through: we support h…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: josh-bruce-70227426 / guido-macchiavello-841a9298",
+   "«if useful, we could talk it through: we support h…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: josh-bruce-70227426 / cherylbecerra",
+   "«if useful, we could talk it through: we support h…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: josh-bruce-70227426 / steven-watts-md-mph-a7015b140",
+   "«if useful, we could talk it through: we support h…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: josh-bruce-70227426 / mgunye",
+   "«if useful, we could talk it through: we support h…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sumeet-batra-md-mph-facoem-01755156 / christina-borduz-5a971611b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sumeet-batra-md-mph-facoem-01755156 / steve-roey-a0a38077",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sumeet-batra-md-mph-facoem-01755156 / hari-athreya-a7169077",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sumeet-batra-md-mph-facoem-01755156 / megan-stanfield-510b9180",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sumeet-batra-md-mph-facoem-01755156 / maria-popow-74370683",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sumeet-batra-md-mph-facoem-01755156 / sarah-lord-b3aa22b6",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sumeet-batra-md-mph-facoem-01755156 / guido-macchiavello-841a9298",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sumeet-batra-md-mph-facoem-01755156 / cherylbecerra",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sumeet-batra-md-mph-facoem-01755156 / steven-watts-md-mph-a7015b140",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sumeet-batra-md-mph-facoem-01755156 / mgunye",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: christina-borduz-5a971611b / steve-roey-a0a38077",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: christina-borduz-5a971611b / hari-athreya-a7169077",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: christina-borduz-5a971611b / megan-stanfield-510b9180",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: christina-borduz-5a971611b / maria-popow-74370683",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: christina-borduz-5a971611b / sarah-lord-b3aa22b6",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: christina-borduz-5a971611b / guido-macchiavello-841a9298",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: christina-borduz-5a971611b / cherylbecerra",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: christina-borduz-5a971611b / steven-watts-md-mph-a7015b140",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: christina-borduz-5a971611b / mgunye",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: jessica-catelani-b6403377 / hanna-arch-86556b15b",
+   "«a guided phone scan returns 80+ body measurements…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steve-roey-a0a38077 / hari-athreya-a7169077",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steve-roey-a0a38077 / megan-stanfield-510b9180",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steve-roey-a0a38077 / maria-popow-74370683",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steve-roey-a0a38077 / sarah-lord-b3aa22b6",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steve-roey-a0a38077 / guido-macchiavello-841a9298",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steve-roey-a0a38077 / cherylbecerra",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steve-roey-a0a38077 / steven-watts-md-mph-a7015b140",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steve-roey-a0a38077 / mgunye",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: hari-athreya-a7169077 / megan-stanfield-510b9180",
+   "«a call could test whether it fits: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: hari-athreya-a7169077 / maria-popow-74370683",
+   "«a call could test whether it fits: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: hari-athreya-a7169077 / sarah-lord-b3aa22b6",
+   "«a call could test whether it fits: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: hari-athreya-a7169077 / guido-macchiavello-841a9298",
+   "«a call could test whether it fits: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: hari-athreya-a7169077 / cherylbecerra",
+   "«a call could test whether it fits: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: hari-athreya-a7169077 / steven-watts-md-mph-a7015b140",
+   "«a call could test whether it fits: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: hari-athreya-a7169077 / mgunye",
+   "«a call could test whether it fits: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: megan-stanfield-510b9180 / maria-popow-74370683",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: megan-stanfield-510b9180 / sarah-lord-b3aa22b6",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: megan-stanfield-510b9180 / guido-macchiavello-841a9298",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: megan-stanfield-510b9180 / cherylbecerra",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: megan-stanfield-510b9180 / steven-watts-md-mph-a7015b140",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: megan-stanfield-510b9180 / mgunye",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: maria-popow-74370683 / sarah-lord-b3aa22b6",
+   "«a call could cover what your team would need firs…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: maria-popow-74370683 / guido-macchiavello-841a9298",
+   "«a call could cover what your team would need firs…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: maria-popow-74370683 / cherylbecerra",
+   "«a call could cover what your team would need firs…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: maria-popow-74370683 / steven-watts-md-mph-a7015b140",
+   "«a call could cover what your team would need firs…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: maria-popow-74370683 / mgunye",
+   "«a call could cover what your team would need firs…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sarah-lord-b3aa22b6 / guido-macchiavello-841a9298",
+   "«pick a slot: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sarah-lord-b3aa22b6 / cherylbecerra",
+   "«pick a slot: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sarah-lord-b3aa22b6 / steven-watts-md-mph-a7015b140",
+   "«pick a slot: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sarah-lord-b3aa22b6 / mgunye",
+   "«pick a slot: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: guido-macchiavello-841a9298 / cherylbecerra",
+   "«i can walk you through it: we support hipaa-gover…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: guido-macchiavello-841a9298 / steven-watts-md-mph-a7015b140",
+   "«i can walk you through it: we support hipaa-gover…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: guido-macchiavello-841a9298 / mgunye",
+   "«i can walk you through it: we support hipaa-gover…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cherylbecerra / steven-watts-md-mph-a7015b140",
+   "«if you want to talk it over, here is a time link:…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: cherylbecerra / mgunye",
+   "«if you want to talk it over, here is a time link:…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: steven-watts-md-mph-a7015b140 / mgunye",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "sentence opening repeated",
+   "Crossover Health ×26",
+   "«we support hipaa governed deployments…»: amy-esposito-md-4a6b8817, anna-nachamie, barry-giglio-m-d-ms-21394326, cherylbecerra"
+  ],
+  [
+   "sentence opening repeated",
+   "Crossover Health ×4",
+   "«two photos return 80+ body…»: christine-wessel-7a02b26, daniel-lord-dc-ccsp-79083513, hari-athreya-a7169077, sreelata-kintala-25a9021"
+  ]
+ ]
+}

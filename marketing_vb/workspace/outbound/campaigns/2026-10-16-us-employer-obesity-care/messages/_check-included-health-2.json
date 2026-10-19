@@ -1,0 +1,140 @@
+{
+ "campaign": "2026-10-16-us-employer-obesity-care",
+ "checked": 35,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "included-health-2",
+ "generated": "2026-10-19T09:55:30",
+ "hard": [],
+ "soft": [
+  [
+   "near-duplicate sentence",
+   "Included Health: courtney-ortiz-75472716 / arvella-wynter",
+   "«if you tell me which skipped step matters most, i…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: arvella-wynter / jessemichel",
+   "«i can bring a sample flow to a call: we support h…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: arvella-wynter / michaelstarkey",
+   "«i can bring a sample flow to a call: we support h…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: arvella-wynter / anishmehtamd",
+   "«i can bring a sample flow to a call: we support h…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: arvella-wynter / reynoldsmary",
+   "«i can bring a sample flow to a call: we support h…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: arvella-wynter / laurenarleymartinez",
+   "«i can bring a sample flow to a call: we support h…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: arvella-wynter / kyle-w-hughes",
+   "«i can bring a sample flow to a call: we support h…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: jessemichel / michaelstarkey",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: jessemichel / anishmehtamd",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: jessemichel / reynoldsmary",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: jessemichel / laurenarleymartinez",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: jessemichel / kyle-w-hughes",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: jessemichel / amynremtulla",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: michaelstarkey / anishmehtamd",
+   "«i can share the field list on a call: we support…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: michaelstarkey / reynoldsmary",
+   "«i can share the field list on a call: we support…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: michaelstarkey / laurenarleymartinez",
+   "«i can share the field list on a call: we support…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: michaelstarkey / kyle-w-hughes",
+   "«i can share the field list on a call: we support…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: anishmehtamd / reynoldsmary",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: anishmehtamd / laurenarleymartinez",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: anishmehtamd / kyle-w-hughes",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: anishmehtamd / amynremtulla",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: reynoldsmary / laurenarleymartinez",
+   "«let's look at where it fits in a member's first y…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: reynoldsmary / kyle-w-hughes",
+   "«let's look at where it fits in a member's first y…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: laurenarleymartinez / kyle-w-hughes",
+   "«i can sketch a pilot design on a call: we support…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: kyle-w-hughes / amynremtulla",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "sentence opening repeated",
+   "Included Health ×13",
+   "«we support hipaa governed deployments…»: amynremtulla, anishmehtamd, arvella-wynter, courtney-ortiz-75472716"
+  ]
+ ]
+}

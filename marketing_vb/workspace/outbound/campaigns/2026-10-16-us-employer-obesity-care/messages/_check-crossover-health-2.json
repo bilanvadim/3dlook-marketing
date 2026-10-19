@@ -1,0 +1,45 @@
+{
+ "campaign": "2026-10-16-us-employer-obesity-care",
+ "checked": 6,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "crossover-health-2",
+ "generated": "2026-10-19T09:56:44",
+ "hard": [],
+ "soft": [
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sarah-pickell-11558225a / jill-galvez-bsn-rn-ne-bc-030977205",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sarah-pickell-11558225a / sally-larwood-a2b242245",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sarah-pickell-11558225a / brady-mackey-3a44a83a9",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: jill-galvez-bsn-rn-ne-bc-030977205 / sally-larwood-a2b242245",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: jill-galvez-bsn-rn-ne-bc-030977205 / brady-mackey-3a44a83a9",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Crossover Health: sally-larwood-a2b242245 / brady-mackey-3a44a83a9",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "sentence opening repeated",
+   "Crossover Health ×4",
+   "«we support hipaa governed deployments…»: brady-mackey-3a44a83a9, jill-galvez-bsn-rn-ne-bc-030977205, sally-larwood-a2b242245, sarah-pickell-11558225a"
+  ]
+ ]
+}

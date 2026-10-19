@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-12",
+  "last_updated": "2026-10-19",
   "companies": {
     "safariland": {
       "covered_by_profile": null,
@@ -2315,6 +2315,78 @@
       "campaign_id": "2026-10-11-au-sport-fitness",
       "product": "fitxpress",
       "date": "2026-10-11",
+      "status": "active"
+    },
+    "crossover-health": {
+      "display_name": "Crossover Health",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-16-us-employer-obesity-care",
+      "product": "fitxpress",
+      "date": "2026-10-16",
+      "status": "active"
+    },
+    "digbi-health": {
+      "display_name": "Digbi Health",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-16-us-employer-obesity-care",
+      "product": "fitxpress",
+      "date": "2026-10-16",
+      "status": "active"
+    },
+    "emed": {
+      "display_name": "eMed",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-16-us-employer-obesity-care",
+      "product": "fitxpress",
+      "date": "2026-10-16",
+      "status": "active"
+    },
+    "goodpath": {
+      "display_name": "Goodpath",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-16-us-employer-obesity-care",
+      "product": "fitxpress",
+      "date": "2026-10-16",
+      "status": "active"
+    },
+    "included-health": {
+      "display_name": "Included Health",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-16-us-employer-obesity-care",
+      "product": "fitxpress",
+      "date": "2026-10-16",
+      "status": "active"
+    },
+    "mdlive": {
+      "display_name": "MDLIVE",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-16-us-employer-obesity-care",
+      "product": "fitxpress",
+      "date": "2026-10-16",
+      "status": "active"
+    },
+    "omada-health": {
+      "display_name": "Omada Health",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-16-us-employer-obesity-care",
+      "product": "fitxpress",
+      "date": "2026-10-16",
+      "status": "active"
+    },
+    "vida-health": {
+      "display_name": "Vida Health",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-16-us-employer-obesity-care",
+      "product": "fitxpress",
+      "date": "2026-10-16",
+      "status": "active"
+    },
+    "wondr-health": {
+      "display_name": "Wondr Health",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-16-us-employer-obesity-care",
+      "product": "fitxpress",
+      "date": "2026-10-16",
       "status": "active"
     }
   }

@@ -1,0 +1,15 @@
+{
+ "campaign": "2026-10-16-us-employer-obesity-care",
+ "checked": 2,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "emed-2",
+ "generated": "2026-10-19T09:20:47",
+ "hard": [],
+ "soft": [
+  [
+   "near-duplicate sentence",
+   "eMed: mariatpugliese / bahar-mir",
+   "«we support hipaa-governed deployments under a baa…»"
+  ]
+ ]
+}

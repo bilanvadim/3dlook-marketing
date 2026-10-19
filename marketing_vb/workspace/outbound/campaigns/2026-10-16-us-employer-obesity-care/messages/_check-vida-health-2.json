@@ -1,0 +1,115 @@
+{
+ "campaign": "2026-10-16-us-employer-obesity-care",
+ "checked": 12,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "vida-health-2",
+ "generated": "2026-10-19T09:57:03",
+ "hard": [],
+ "soft": [
+  [
+   "near-duplicate sentence",
+   "Vida Health: christopher-knaplund / dosbo",
+   "«if format questions are open, we can go through t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: christopher-knaplund / tara-fiano-rd-csowm-ldn-cdces-0956531a",
+   "«if format questions are open, we can go through t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: christopher-knaplund / hersh-ranpura",
+   "«if format questions are open, we can go through t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: christopher-knaplund / letal-yerganjiev-ms-rdn-cdces-ryt-67146365",
+   "«if format questions are open, we can go through t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: richard-frank-md-mhsa-91196a1a / tara-fiano-rd-csowm-ldn-cdces-0956531a",
+   "«your view on where a clinician would use it would…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: richard-frank-md-mhsa-91196a1a / atersakyan",
+   "«your view on where a clinician would use it would…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: richard-frank-md-mhsa-91196a1a / letal-yerganjiev-ms-rdn-cdces-ryt-67146365",
+   "«your view on where a clinician would use it would…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: dosbo / tara-fiano-rd-csowm-ldn-cdces-0956531a",
+   "«pick a time and i will show the flow inside an ap…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: dosbo / atersakyan",
+   "«pick a time and i will show the flow inside an ap…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: dosbo / hersh-ranpura",
+   "«pick a time and i will show the flow inside an ap…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: dosbo / letal-yerganjiev-ms-rdn-cdces-ryt-67146365",
+   "«pick a time and i will show the flow inside an ap…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: christina-labib-cpc-b8838b25 / atersakyan",
+   "«tell me a time that suits and we can look at your…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: christina-labib-cpc-b8838b25 / hersh-ranpura",
+   "«tell me a time that suits and we can look at your…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: christina-labib-cpc-b8838b25 / letal-yerganjiev-ms-rdn-cdces-ryt-67146365",
+   "«tell me a time that suits and we can look at your…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: tara-fiano-rd-csowm-ldn-cdces-0956531a / atersakyan",
+   "«choose a time and i will show what a coach would…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: tara-fiano-rd-csowm-ldn-cdces-0956531a / hersh-ranpura",
+   "«choose a time and i will show what a coach would…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: tara-fiano-rd-csowm-ldn-cdces-0956531a / letal-yerganjiev-ms-rdn-cdces-ryt-67146365",
+   "«choose a time and i will show what a coach would…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: atersakyan / hersh-ranpura",
+   "«book a time and i will show you a record: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: atersakyan / letal-yerganjiev-ms-rdn-cdces-ryt-67146365",
+   "«book a time and i will show you a record: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: hersh-ranpura / letal-yerganjiev-ms-rdn-cdces-ryt-67146365",
+   "«choose a time and i will go through the sdk with…»"
+  ],
+  [
+   "sentence opening repeated",
+   "Vida Health ×10",
+   "«we support hipaa governed deployments…»: atersakyan, christina-labib-cpc-b8838b25, christopher-knaplund, dosbo"
+  ]
+ ]
+}

@@ -1,0 +1,630 @@
+{
+ "campaign": "2026-10-16-us-employer-obesity-care",
+ "checked": 32,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mdlive",
+ "generated": "2026-10-19T10:01:00",
+ "hard": [],
+ "soft": [
+  [
+   "near-duplicate sentence",
+   "MDLIVE: abhishekmehramd / tony-belthrop",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: abhishekmehramd / brett-foster-b984a634",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: abhishekmehramd / rachelstein211",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: abhishekmehramd / asim-ilyas-46143a11",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: abhishekmehramd / derekmcelfresh",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: abhishekmehramd / jennifer-c-lord-mba",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: abhishekmehramd / kimberly-brzezinski",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: abhishekmehramd / mac-davis01",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: abhishekmehramd / patrick-lawrence-47840756",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: abhishekmehramd / ariana-viale-29821129",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: abhishekmehramd / christina-chen-4882a0119",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: abhishekmehramd / maggie-williams-2a0ab477",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: abhishekmehramd / ali-krafft-727271b0",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: abhishekmehramd / sara-keyes-819697106",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: abhishekmehramd / alexsoltesz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: tony-belthrop / brett-foster-b984a634",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: tony-belthrop / rachelstein211",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: tony-belthrop / asim-ilyas-46143a11",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: tony-belthrop / derekmcelfresh",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: tony-belthrop / jennifer-c-lord-mba",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: tony-belthrop / kimberly-brzezinski",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: tony-belthrop / mac-davis01",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: tony-belthrop / patrick-lawrence-47840756",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: tony-belthrop / ariana-viale-29821129",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: tony-belthrop / christina-chen-4882a0119",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: tony-belthrop / maggie-williams-2a0ab477",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: tony-belthrop / ali-krafft-727271b0",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: tony-belthrop / sara-keyes-819697106",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: tony-belthrop / alexsoltesz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: brett-foster-b984a634 / rachelstein211",
+   "«if you want to see what members would see, we can…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: brett-foster-b984a634 / asim-ilyas-46143a11",
+   "«if you want to see what members would see, we can…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: brett-foster-b984a634 / derekmcelfresh",
+   "«if you want to see what members would see, we can…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: brett-foster-b984a634 / jennifer-c-lord-mba",
+   "«if you want to see what members would see, we can…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: brett-foster-b984a634 / kimberly-brzezinski",
+   "«if you want to see what members would see, we can…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: brett-foster-b984a634 / mac-davis01",
+   "«if you want to see what members would see, we can…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: brett-foster-b984a634 / ariana-viale-29821129",
+   "«if you want to see what members would see, we can…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: brett-foster-b984a634 / christina-chen-4882a0119",
+   "«if you want to see what members would see, we can…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: brett-foster-b984a634 / maggie-williams-2a0ab477",
+   "«if you want to see what members would see, we can…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: brett-foster-b984a634 / ali-krafft-727271b0",
+   "«if you want to see what members would see, we can…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: brett-foster-b984a634 / sara-keyes-819697106",
+   "«if you want to see what members would see, we can…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: brett-foster-b984a634 / alexsoltesz",
+   "«if you want to see what members would see, we can…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: rachelstein211 / asim-ilyas-46143a11",
+   "«i can show where it would fit at mdlive on a call…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: rachelstein211 / derekmcelfresh",
+   "«i can show where it would fit at mdlive on a call…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: rachelstein211 / jennifer-c-lord-mba",
+   "«i can show where it would fit at mdlive on a call…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: rachelstein211 / kimberly-brzezinski",
+   "«i can show where it would fit at mdlive on a call…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: rachelstein211 / mac-davis01",
+   "«i can show where it would fit at mdlive on a call…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: rachelstein211 / patrick-lawrence-47840756",
+   "«i can show where it would fit at mdlive on a call…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: rachelstein211 / ariana-viale-29821129",
+   "«i can show where it would fit at mdlive on a call…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: rachelstein211 / christina-chen-4882a0119",
+   "«i can show where it would fit at mdlive on a call…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: rachelstein211 / maggie-williams-2a0ab477",
+   "«i can show where it would fit at mdlive on a call…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: rachelstein211 / ali-krafft-727271b0",
+   "«i can show where it would fit at mdlive on a call…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: rachelstein211 / sara-keyes-819697106",
+   "«i can show where it would fit at mdlive on a call…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: rachelstein211 / alexsoltesz",
+   "«i can show where it would fit at mdlive on a call…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: asim-ilyas-46143a11 / derekmcelfresh",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: asim-ilyas-46143a11 / jennifer-c-lord-mba",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: asim-ilyas-46143a11 / kimberly-brzezinski",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: asim-ilyas-46143a11 / mac-davis01",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: asim-ilyas-46143a11 / patrick-lawrence-47840756",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: asim-ilyas-46143a11 / ariana-viale-29821129",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: asim-ilyas-46143a11 / christina-chen-4882a0119",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: asim-ilyas-46143a11 / maggie-williams-2a0ab477",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: asim-ilyas-46143a11 / ali-krafft-727271b0",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: asim-ilyas-46143a11 / sara-keyes-819697106",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: asim-ilyas-46143a11 / alexsoltesz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: derekmcelfresh / jennifer-c-lord-mba",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: derekmcelfresh / kimberly-brzezinski",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: derekmcelfresh / mac-davis01",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: derekmcelfresh / patrick-lawrence-47840756",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: derekmcelfresh / ariana-viale-29821129",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: derekmcelfresh / christina-chen-4882a0119",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: derekmcelfresh / maggie-williams-2a0ab477",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: derekmcelfresh / ali-krafft-727271b0",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: derekmcelfresh / sara-keyes-819697106",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: derekmcelfresh / alexsoltesz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: stanleyhebert / mac-davis01",
+   "«bring the front-end flow you have in mind and we…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: stanleyhebert / ariana-viale-29821129",
+   "«bring the front-end flow you have in mind and we…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: stanleyhebert / ali-krafft-727271b0",
+   "«bring the front-end flow you have in mind and we…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: jennifer-c-lord-mba / kimberly-brzezinski",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: jennifer-c-lord-mba / mac-davis01",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: jennifer-c-lord-mba / patrick-lawrence-47840756",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: jennifer-c-lord-mba / ariana-viale-29821129",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: jennifer-c-lord-mba / christina-chen-4882a0119",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: jennifer-c-lord-mba / maggie-williams-2a0ab477",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: jennifer-c-lord-mba / ali-krafft-727271b0",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: jennifer-c-lord-mba / sara-keyes-819697106",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: jennifer-c-lord-mba / alexsoltesz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: kimberly-brzezinski / mac-davis01",
+   "«i can show what a provider would see on a call: w…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: kimberly-brzezinski / patrick-lawrence-47840756",
+   "«i can show what a provider would see on a call: w…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: kimberly-brzezinski / ariana-viale-29821129",
+   "«i can show what a provider would see on a call: w…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: kimberly-brzezinski / christina-chen-4882a0119",
+   "«i can show what a provider would see on a call: w…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: kimberly-brzezinski / maggie-williams-2a0ab477",
+   "«i can show what a provider would see on a call: w…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: kimberly-brzezinski / ali-krafft-727271b0",
+   "«i can show what a provider would see on a call: w…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: kimberly-brzezinski / sara-keyes-819697106",
+   "«i can show what a provider would see on a call: w…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: kimberly-brzezinski / alexsoltesz",
+   "«i can show what a provider would see on a call: w…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: mac-davis01 / patrick-lawrence-47840756",
+   "«happy to walk through the flow on a call: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: mac-davis01 / ariana-viale-29821129",
+   "«happy to walk through the flow on a call: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: mac-davis01 / christina-chen-4882a0119",
+   "«happy to walk through the flow on a call: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: mac-davis01 / maggie-williams-2a0ab477",
+   "«happy to walk through the flow on a call: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: mac-davis01 / ali-krafft-727271b0",
+   "«happy to walk through the flow on a call: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: mac-davis01 / sara-keyes-819697106",
+   "«happy to walk through the flow on a call: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: mac-davis01 / alexsoltesz",
+   "«happy to walk through the flow on a call: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: patrick-lawrence-47840756 / ariana-viale-29821129",
+   "«open to a call for the review questions: we suppo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: patrick-lawrence-47840756 / christina-chen-4882a0119",
+   "«open to a call for the review questions: we suppo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: patrick-lawrence-47840756 / maggie-williams-2a0ab477",
+   "«open to a call for the review questions: we suppo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: patrick-lawrence-47840756 / ali-krafft-727271b0",
+   "«open to a call for the review questions: we suppo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: patrick-lawrence-47840756 / sara-keyes-819697106",
+   "«open to a call for the review questions: we suppo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: patrick-lawrence-47840756 / alexsoltesz",
+   "«open to a call for the review questions: we suppo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: ariana-viale-29821129 / christina-chen-4882a0119",
+   "«let me show a working flow on a call: we support…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: ariana-viale-29821129 / maggie-williams-2a0ab477",
+   "«let me show a working flow on a call: we support…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: ariana-viale-29821129 / ali-krafft-727271b0",
+   "«let me show a working flow on a call: we support…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: ariana-viale-29821129 / sara-keyes-819697106",
+   "«let me show a working flow on a call: we support…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: ariana-viale-29821129 / alexsoltesz",
+   "«let me show a working flow on a call: we support…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: christina-chen-4882a0119 / maggie-williams-2a0ab477",
+   "«i can show a sample result on a call: we support…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: christina-chen-4882a0119 / ali-krafft-727271b0",
+   "«i can show a sample result on a call: we support…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: christina-chen-4882a0119 / sara-keyes-819697106",
+   "«i can show a sample result on a call: we support…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: christina-chen-4882a0119 / alexsoltesz",
+   "«i can show a sample result on a call: we support…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: maggie-williams-2a0ab477 / ali-krafft-727271b0",
+   "«if useful, i can show the result view on a call:…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: maggie-williams-2a0ab477 / sara-keyes-819697106",
+   "«if useful, i can show the result view on a call:…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: maggie-williams-2a0ab477 / alexsoltesz",
+   "«if useful, i can show the result view on a call:…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: ali-krafft-727271b0 / sara-keyes-819697106",
+   "«i can go through the options on a call: we suppor…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: ali-krafft-727271b0 / alexsoltesz",
+   "«i can go through the options on a call: we suppor…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: axel-hadida / alexsoltesz",
+   "«bring your view of what the flow must connect to…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDLIVE: sara-keyes-819697106 / alexsoltesz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "sentence opening repeated",
+   "MDLIVE ×19",
+   "«we support hipaa governed deployments…»: abhishekmehramd, alexsoltesz, ali-krafft-727271b0, ariana-viale-29821129"
+  ]
+ ]
+}

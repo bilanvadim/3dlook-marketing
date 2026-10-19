@@ -1,0 +1,205 @@
+{
+ "campaign": "2026-10-16-us-employer-obesity-care",
+ "checked": 23,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-1",
+ "generated": "2026-10-19T09:55:24",
+ "hard": [],
+ "soft": [
+  [
+   "near-duplicate sentence",
+   "Goodpath: joebondi / billgianoukos",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Goodpath: joebondi / joanna-gholmie-2465125b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Goodpath: joebondi / jasontrees",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Goodpath: joebondi / nishantuppal",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Goodpath: joebondi / christelle-younes-15a7b812a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Goodpath: joebondi / samantha-wu-md",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Goodpath: billgianoukos / joanna-gholmie-2465125b",
+   "«grab a time to see it: we support hipaa-governed…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Goodpath: billgianoukos / jasontrees",
+   "«grab a time to see it: we support hipaa-governed…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Goodpath: billgianoukos / nishantuppal",
+   "«grab a time to see it: we support hipaa-governed…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Goodpath: billgianoukos / christelle-younes-15a7b812a",
+   "«grab a time to see it: we support hipaa-governed…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Goodpath: billgianoukos / samantha-wu-md",
+   "«grab a time to see it: we support hipaa-governed…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Goodpath: brian-harrigan-988b4b5 / nishantuppal",
+   "«hi brian, 3dlook has worked with 100+ clients.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Goodpath: joanna-gholmie-2465125b / jasontrees",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Goodpath: joanna-gholmie-2465125b / nishantuppal",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Goodpath: joanna-gholmie-2465125b / christelle-younes-15a7b812a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Goodpath: joanna-gholmie-2465125b / samantha-wu-md",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Goodpath: jasontrees / nishantuppal",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Goodpath: jasontrees / christelle-younes-15a7b812a",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Goodpath: jasontrees / samantha-wu-md",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Goodpath: nishantuppal / christelle-younes-15a7b812a",
+   "«happy to talk it through: we support hipaa-govern…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Goodpath: nishantuppal / samantha-wu-md",
+   "«happy to talk it through: we support hipaa-govern…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Goodpath: christelle-younes-15a7b812a / samantha-wu-md",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Digbi Health: dr-garima-sharma-3a512516 / ranjan-sinha-a531b01a",
+   "«if a call would help, grab a time: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Digbi Health: dr-garima-sharma-3a512516 / madison-green-8227ba212",
+   "«if a call would help, grab a time: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Digbi Health: dr-garima-sharma-3a512516 / rajan-bhuyan",
+   "«if a call would help, grab a time: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Digbi Health: dr-garima-sharma-3a512516 / saurabhsangeet",
+   "«if a call would help, grab a time: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Digbi Health: dr-garima-sharma-3a512516 / varunthakur1",
+   "«if a call would help, grab a time: we support hip…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Digbi Health: ranjan-sinha-a531b01a / madison-green-8227ba212",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Digbi Health: ranjan-sinha-a531b01a / rajan-bhuyan",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Digbi Health: ranjan-sinha-a531b01a / saurabhsangeet",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Digbi Health: ranjan-sinha-a531b01a / varunthakur1",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Digbi Health: madison-green-8227ba212 / rajan-bhuyan",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Digbi Health: madison-green-8227ba212 / saurabhsangeet",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Digbi Health: madison-green-8227ba212 / varunthakur1",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Digbi Health: rajan-bhuyan / saurabhsangeet",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Digbi Health: rajan-bhuyan / varunthakur1",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Digbi Health: saurabhsangeet / varunthakur1",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "sentence opening repeated",
+   "Goodpath ×7",
+   "«we support hipaa governed deployments…»: billgianoukos, christelle-younes-15a7b812a, jasontrees, joanna-gholmie-2465125b"
+  ],
+  [
+   "sentence opening repeated",
+   "Digbi Health ×6",
+   "«we support hipaa governed deployments…»: dr-garima-sharma-3a512516, madison-green-8227ba212, rajan-bhuyan, ranjan-sinha-a531b01a"
+  ]
+ ]
+}

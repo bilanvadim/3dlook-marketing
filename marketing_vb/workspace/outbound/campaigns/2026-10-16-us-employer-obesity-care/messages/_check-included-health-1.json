@@ -1,0 +1,605 @@
+{
+ "campaign": "2026-10-16-us-employer-obesity-care",
+ "checked": 35,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "included-health-1",
+ "generated": "2026-10-19T09:55:53",
+ "hard": [],
+ "soft": [
+  [
+   "near-duplicate sentence",
+   "Included Health: heather-johnson-5b520675 / mona-farhangi-61926270",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: heather-johnson-5b520675 / erinlabarge",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: heather-johnson-5b520675 / owenwtripp",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: heather-johnson-5b520675 / annabelliu",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: heather-johnson-5b520675 / tracy-wong-1000782",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: heather-johnson-5b520675 / jordana-blair-2431a12",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: heather-johnson-5b520675 / alexandra-yurkovic-9162212",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: heather-johnson-5b520675 / susanclune",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: heather-johnson-5b520675 / arjita",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: heather-johnson-5b520675 / meryl-fogg-0386778",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: heather-johnson-5b520675 / jaclynmarshall",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: heather-johnson-5b520675 / bonnie-grenis-4313093b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: heather-johnson-5b520675 / heather-washington-md",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: heather-johnson-5b520675 / pujita",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: heather-johnson-5b520675 / springertimothyj",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: mona-farhangi-61926270 / annabelliu",
+   "«hi mona, a typical basic integration takes 2-4 we…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: mona-farhangi-61926270 / arjita",
+   "«hi mona, a typical basic integration takes 2-4 we…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: mona-farhangi-61926270 / ksahu",
+   "«hi mona, a typical basic integration takes 2-4 we…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: mona-farhangi-61926270 / pujita",
+   "«hi mona, a typical basic integration takes 2-4 we…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: mona-farhangi-61926270 / erinlabarge",
+   "«happy to walk through the api on a call: we suppo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: mona-farhangi-61926270 / tracy-wong-1000782",
+   "«happy to walk through the api on a call: we suppo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: mona-farhangi-61926270 / jordana-blair-2431a12",
+   "«happy to walk through the api on a call: we suppo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: mona-farhangi-61926270 / alexandra-yurkovic-9162212",
+   "«happy to walk through the api on a call: we suppo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: mona-farhangi-61926270 / susanclune",
+   "«happy to walk through the api on a call: we suppo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: mona-farhangi-61926270 / meryl-fogg-0386778",
+   "«happy to walk through the api on a call: we suppo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: mona-farhangi-61926270 / jaclynmarshall",
+   "«happy to walk through the api on a call: we suppo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: mona-farhangi-61926270 / heather-washington-md",
+   "«happy to walk through the api on a call: we suppo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: mona-farhangi-61926270 / springertimothyj",
+   "«happy to walk through the api on a call: we suppo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: erinlabarge / owenwtripp",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: erinlabarge / annabelliu",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: erinlabarge / tracy-wong-1000782",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: erinlabarge / jordana-blair-2431a12",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: erinlabarge / alexandra-yurkovic-9162212",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: erinlabarge / susanclune",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: erinlabarge / arjita",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: erinlabarge / meryl-fogg-0386778",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: erinlabarge / jaclynmarshall",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: erinlabarge / bonnie-grenis-4313093b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: erinlabarge / heather-washington-md",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: erinlabarge / pujita",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: erinlabarge / springertimothyj",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: owenwtripp / annabelliu",
+   "«hi owen, 3dlook has worked with 100+ clients.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: owenwtripp / tracy-wong-1000782",
+   "«a call would show how it could look inside your a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: owenwtripp / jordana-blair-2431a12",
+   "«a call would show how it could look inside your a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: owenwtripp / alexandra-yurkovic-9162212",
+   "«a call would show how it could look inside your a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: owenwtripp / susanclune",
+   "«a call would show how it could look inside your a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: owenwtripp / arjita",
+   "«a call would show how it could look inside your a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: owenwtripp / meryl-fogg-0386778",
+   "«a call would show how it could look inside your a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: owenwtripp / heather-washington-md",
+   "«a call would show how it could look inside your a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: owenwtripp / pujita",
+   "«a call would show how it could look inside your a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: owenwtripp / springertimothyj",
+   "«a call would show how it could look inside your a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: annabelliu / arjita",
+   "«a typical basic integration takes 2-4 weeks.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: annabelliu / ksahu",
+   "«a typical basic integration takes 2-4 weeks.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: annabelliu / pujita",
+   "«a typical basic integration takes 2-4 weeks.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: annabelliu / tracy-wong-1000782",
+   "«a call can cover the technical path: we support h…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: annabelliu / jordana-blair-2431a12",
+   "«a call can cover the technical path: we support h…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: annabelliu / alexandra-yurkovic-9162212",
+   "«a call can cover the technical path: we support h…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: annabelliu / susanclune",
+   "«a call can cover the technical path: we support h…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: annabelliu / meryl-fogg-0386778",
+   "«a call can cover the technical path: we support h…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: annabelliu / jaclynmarshall",
+   "«a call can cover the technical path: we support h…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: annabelliu / heather-washington-md",
+   "«a call can cover the technical path: we support h…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: annabelliu / springertimothyj",
+   "«a call can cover the technical path: we support h…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: tracy-wong-1000782 / jordana-blair-2431a12",
+   "«easy to show on a call: we support hipaa-governed…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: tracy-wong-1000782 / alexandra-yurkovic-9162212",
+   "«easy to show on a call: we support hipaa-governed…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: tracy-wong-1000782 / susanclune",
+   "«easy to show on a call: we support hipaa-governed…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: tracy-wong-1000782 / arjita",
+   "«easy to show on a call: we support hipaa-governed…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: tracy-wong-1000782 / meryl-fogg-0386778",
+   "«easy to show on a call: we support hipaa-governed…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: tracy-wong-1000782 / jaclynmarshall",
+   "«easy to show on a call: we support hipaa-governed…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: tracy-wong-1000782 / heather-washington-md",
+   "«easy to show on a call: we support hipaa-governed…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: tracy-wong-1000782 / pujita",
+   "«easy to show on a call: we support hipaa-governed…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: tracy-wong-1000782 / springertimothyj",
+   "«easy to show on a call: we support hipaa-governed…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: jordana-blair-2431a12 / alexandra-yurkovic-9162212",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: jordana-blair-2431a12 / susanclune",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: jordana-blair-2431a12 / arjita",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: jordana-blair-2431a12 / meryl-fogg-0386778",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: jordana-blair-2431a12 / jaclynmarshall",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: jordana-blair-2431a12 / bonnie-grenis-4313093b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: jordana-blair-2431a12 / heather-washington-md",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: jordana-blair-2431a12 / pujita",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: jordana-blair-2431a12 / springertimothyj",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: alexandra-yurkovic-9162212 / susanclune",
+   "«happy to work out on a call which measure leads:…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: alexandra-yurkovic-9162212 / arjita",
+   "«happy to work out on a call which measure leads:…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: alexandra-yurkovic-9162212 / meryl-fogg-0386778",
+   "«happy to work out on a call which measure leads:…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: alexandra-yurkovic-9162212 / jaclynmarshall",
+   "«happy to work out on a call which measure leads:…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: alexandra-yurkovic-9162212 / heather-washington-md",
+   "«happy to work out on a call which measure leads:…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: alexandra-yurkovic-9162212 / pujita",
+   "«happy to work out on a call which measure leads:…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: alexandra-yurkovic-9162212 / springertimothyj",
+   "«happy to work out on a call which measure leads:…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: susanclune / arjita",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: susanclune / meryl-fogg-0386778",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: susanclune / jaclynmarshall",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: susanclune / bonnie-grenis-4313093b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: susanclune / heather-washington-md",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: susanclune / pujita",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: susanclune / springertimothyj",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: arjita / ksahu",
+   "«a typical basic integration takes 2-4 weeks.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: arjita / pujita",
+   "«a typical basic integration takes 2-4 weeks.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: arjita / meryl-fogg-0386778",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: arjita / jaclynmarshall",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: arjita / bonnie-grenis-4313093b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: arjita / heather-washington-md",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: arjita / springertimothyj",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: meryl-fogg-0386778 / jaclynmarshall",
+   "«pick a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: meryl-fogg-0386778 / heather-washington-md",
+   "«pick a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: meryl-fogg-0386778 / pujita",
+   "«pick a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: meryl-fogg-0386778 / springertimothyj",
+   "«pick a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: jaclynmarshall / heather-washington-md",
+   "«i can walk through the outputs on a call: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: jaclynmarshall / pujita",
+   "«i can walk through the outputs on a call: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: jaclynmarshall / springertimothyj",
+   "«i can walk through the outputs on a call: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: bonnie-grenis-4313093b / heather-washington-md",
+   "«on a call i can show how an advocate could point…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: bonnie-grenis-4313093b / pujita",
+   "«on a call i can show how an advocate could point…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: bonnie-grenis-4313093b / springertimothyj",
+   "«on a call i can show how an advocate could point…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: ksahu / pujita",
+   "«a typical basic integration takes 2-4 weeks.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: ksahu / springertimothyj",
+   "«send me a recent feature request and we can scope…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: heather-washington-md / pujita",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: heather-washington-md / springertimothyj",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Included Health: pujita / springertimothyj",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "sentence opening repeated",
+   "Included Health ×17",
+   "«we support hipaa governed deployments…»: alexandra-yurkovic-9162212, annabelliu, arjita, bonnie-grenis-4313093b"
+  ],
+  [
+   "sentence opening repeated",
+   "Included Health ×5",
+   "«a typical basic integration takes…»: annabelliu, arjita, ksahu, mona-farhangi-61926270"
+  ],
+  [
+   "sentence opening repeated",
+   "Included Health ×3",
+   "«two phone photos return waist…»: austin-aldrich-2192604, heather-conroy-02b9737, kerrikleigh"
+  ]
+ ]
+}

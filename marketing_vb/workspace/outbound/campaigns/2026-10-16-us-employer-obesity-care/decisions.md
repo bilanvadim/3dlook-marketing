@@ -392,3 +392,16 @@ varunthakur1 | PASS | 2 | product | 1 | Associate Product Manager at Digbi (Apol
 ## Vadim's checkpoint answers 2026-10-16 (validate)
 
 «приймаю всі твої рекомендації»: SEND 367 approved; Wu, Younes, Bhuyan stay PASS (non-US, US program); Noble and Pugh (eMed UK) stay WEAK, not sent by nick; the 5 conditional WEAK stay out; job-change risk accepted. Recorded in hypothesis.md, block `Vadim's decisions 2026-10-16 (validate checkpoint)`.
+
+## Coordinator fixes 2026-10-19 (messages)
+
+- Greeting hygiene in people-validated.csv (`first_name`, as for Dr. Garima on 2026-10-16): wbryansmithphd "W. Bryan" -> "Bryan", kerrikleigh "Kerri K." -> "Kerri", jasonblote "Jason M." -> "Jason", mmunsell "Mark G." -> "Mark", jaclynmarshall "Jaclyn Karlen" -> "Jaclyn", john-a-pabich-80a2841a "John A." -> "John", alexandermschwarze "Alexander M." -> "Alexander". annie-braun-gazda-b116065: "Annie Braun" / "Gazda" -> "Annie" / "Braun Gazda". sumeet-batra-md-mph-facoem-01755156: export parse error "Sumeet Batra," / "MD, MPH, FACOEM" -> "Sumeet" / "Batra".
+- amy-mushlin-884504: Anthem dropped from the hook as a precaution (the card bans a prospect's plan clients; whether Anthem is a Vida client is unknown). Messages QC 2026-10-19 left it to the coordinator.
+- wbryansmithphd (Vida): his bio names a current CTO role at Earthineering; the Vida role may be stale. Copy kept neutral; job-change risk was accepted at the validate checkpoint, so he stays SEND.
+- Messages fix rounds 1 and 2: `messages/_fix1-*-2026-10-19.md` (215 people, 314 items) and `messages/_fix2-*-2026-10-19.md` (21 people), built by a coordinator scan (same-company twins pinned to the later holder, "so" result lines, card rules restated as copy, QC items); applied by the same 14 writers.
+- Messages fix round 3 (Vadim, 2026-10-19: «давай» after agreeing to relax the bar): only what a reader would notice. Kept: odd sentences left by edits, replacement implications (Crossover), M2s with no value line, the same question for two colleagues, hook templates capped at two per company, buried proof lines, speed phrase off-topic, the QC-named items. Relaxed: paraphrase twins of the core claim (exact twins are 0), M1 questions close to card topics, accurate caution lines ("estimates"), call-sentence shapes. `messages/_fix3-*-2026-10-19.md`, 65 people, 77 items.
+- Coordinator mechanical fixes after round 3: no period right after the calendar link (43 messages: the sentence after it moves to its own paragraph) and a line break after the link where text followed it on the same line (13 MDLIVE M2s); `split-messages` re-run per batch. rob-sutton-cpa: "ten minutes" removed (no call length).
+
+## Vadim's answers 2026-10-19 (messages checkpoint questions)
+
+«всіх залишаємо»: wbryansmithphd (Vida, bio names a CTO role at Earthineering) stays SEND; the former-employer hooks (HealthJoy, Lyra Health, Spring Health, Eden Health, CuraLinc, TELUS Health, AgelessRx) stay; the card's finance angle "usage-priced capability vs fixed device spend" stays as written (~8 finance people).

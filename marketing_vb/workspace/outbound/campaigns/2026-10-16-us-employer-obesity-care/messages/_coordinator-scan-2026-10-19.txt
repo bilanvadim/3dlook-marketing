@@ -1,0 +1,64 @@
+
+=== Included Health  (96)
+  fixed lines: 112,100 5, 100+ clients 5, speed 1, 2-4 weeks 5 (cap ~19)
+  M2 opener: 2× «The REST API» | 2× «3DLOOK has worked» | 2× «112,100 scans in»
+  M1 question stem: 2× «How does your team» | 2× «How does Included Health» | 2× «What do employer clients» | 2× «What do clients ask»
+  M2 closer stem: 20× «Related: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/» | 10× «https://meetings.hubspot.com/nick-omelchak , encrypt data» | 7× «Privacy and retention detail:» | 2× «A short call can»
+  sentence stems: 20× «related: https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/»
+
+=== Omada Health  (68)
+  fixed lines: 34,000 7, 112,100 8, 100+ clients 10, speed 1, 2-4 weeks 4, 96-97% 2 (cap ~14)
+  M2 opener: 2× «A typical basic» | 2× «A completed scan» | 2× «A body-size record» | 2× «A call can»
+  M1 question stem: 2× «How does your team» | 2× «Where would a new» | 2× «Which parts of a»
+  M2 closer stem: 22× «https://3dlook.ai/content-hub/glp-1-market/» | 11× «https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/» | 2× «A call would show» | 2× «I can show a»
+  sentence stems: 22× «https://3dlook.ai/content-hub/glp-1-market/» | 11× «https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/»
+
+=== Vida Health  (47)
+  fixed lines: 34,000 6, 112,100 6, 100+ clients 6, speed 3, 2-4 weeks 4, 96-97% 1 (cap ~9)
+  M1 opener: 2× «Your focus on»
+  M2 opener: 3× «3DLOOK has worked»
+  M1 question stem: 2× «What do benefits consultants» | 2× «What would your team» | 2× «How do you explain»
+  M2 closer stem: 19× «https://3dlook.ai/content-hub/glp-1-market/» | 4× «https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/» | 2× «If the clinical program» | 2× «If the owner of»
+  sentence stems: 19× «https://3dlook.ai/content-hub/glp-1-market/»
+
+=== Crossover Health  (41)
+  fixed lines: 34,000 6, 112,100 7, 100+ clients 8, speed 1, 2-4 weeks 3 (cap ~8)
+  M1 opener: 3× «Noticed your background» | 2× «Your path from»
+  M2 opener: 2× «For a typical»
+  M1 question stem: 2× «What does your team»
+  M2 closer stem: 7× «https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/» | 5× «https://meetings.hubspot.com/nick-omelchak , encrypt data» | 4× «Privacy details: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/» | 2× «, encrypt data in»
+  sentence stems: 8× «3dlook has worked with» | 7× «112,100 scans in 2025» | 7× «https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/»
+
+=== eMed  (37)
+  fixed lines: 34,000 2, 112,100 3, 100+ clients 6, speed 1, 2-4 weeks 1 (cap ~7)
+  M1 opener: 2× «Wanted to reach» | 2× «Noticed your background» | 2× «Your line about» | 2× «Noticed your record»
+  M2 opener: 2× «A phone-only step»
+  M1 question stem: 2× «How do you track»
+  M2 closer stem: 2× «https://meetings.hubspot.com/nick-omelchak» | 2× «I can show it» | 2× «A short call would» | 2× «Here is my calendar»
+  sentence stems: 6× «3dlook has worked with»
+
+=== MDLIVE  (32)
+  fixed lines: 34,000 1, 112,100 2, 100+ clients 3, speed 1, 2-4 weeks 2 (cap ~6)
+  M1 opener: 2× «Twenty years of»
+  M2 opener: 2× «A 3D model»
+  M2 closer stem: 15× «https://3dlook.ai/content-hub/glp-1-market/» | 2× «Privacy FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/» | 2× «https://meetings.hubspot.com/nick-omelchak Or point me»
+  sentence stems: 15× «https://3dlook.ai/content-hub/glp-1-market/»
+
+=== Wondr Health  (23)
+  fixed lines: 34,000 3, 112,100 4, 100+ clients 3, speed 1, 2-4 weeks 3 (cap ~5)
+  M1 opener: 2× «Your bio says» | 2× «Noticed your background»
+  M2 opener: 2× «A typical basic» | 2× «A guided capture»
+  M1 question stem: 2× «What do employer clients»
+  M2 closer stem: 3× «https://meetings.hubspot.com/nick-omelchak Reference: https://3dlook.ai/content-hub/glp-1-market/» | 3× «https://meetings.hubspot.com/nick-omelchak Privacy FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/» | 2× «https://meetings.hubspot.com/nick-omelchak Background: https://3dlook.ai/content-hub/glp-1-market/»
+  sentence stems: 4× «112,100 scans in 2025»
+
+=== Goodpath  (13)
+  fixed lines: 34,000 1, 112,100 2, 100+ clients 2, speed 1, 2-4 weeks 1 (cap ~3)
+  M1 opener: 2× «Noticed your path»
+  M2 opener: 2× «3DLOOK has worked» | 2× «112,100 scans in»
+  M2 closer stem: 2× «https://meetings.hubspot.com/nick-omelchak , encrypt data»
+
+=== Digbi Health  (10)
+  fixed lines: 34,000 1, 112,100 1, 100+ clients 1, speed 1, 2-4 weeks 1 (cap ~2)
+  M2 opener: 2× «A 3D model»
+  M2 closer stem: 3× «Grab a time: https://meetings.hubspot.com/nick-omelchak»

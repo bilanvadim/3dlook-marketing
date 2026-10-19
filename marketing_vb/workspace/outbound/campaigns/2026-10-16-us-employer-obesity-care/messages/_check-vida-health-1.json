@@ -1,0 +1,400 @@
+{
+ "campaign": "2026-10-16-us-employer-obesity-care",
+ "checked": 35,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "vida-health-1",
+ "generated": "2026-10-19T09:57:02",
+ "hard": [],
+ "soft": [
+  [
+   "near-duplicate sentence",
+   "Vida Health: ashish-nag / amy-mushlin-884504",
+   "«i can show where it would fit in the app: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: ashish-nag / josephmurad",
+   "«i can show where it would fit in the app: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: ashish-nag / wbryansmithphd",
+   "«i can show where it would fit in the app: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: ashish-nag / christina-bowens",
+   "«i can show where it would fit in the app: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: ashish-nag / annie-braun-gazda-b116065",
+   "«i can show where it would fit in the app: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: ashish-nag / erin-mynaugh",
+   "«i can show where it would fit in the app: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: ashish-nag / laura-isaacson-rd",
+   "«i can show where it would fit in the app: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: ashish-nag / shane-giuliani",
+   "«i can show where it would fit in the app: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: ashish-nag / stevens-joshua",
+   "«i can show where it would fit in the app: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: ashish-nag / molliemcgill",
+   "«i can show where it would fit in the app: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: ashish-nag / jrgprzm",
+   "«i can show where it would fit in the app: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: ashish-nag / claudia-ryan-lcsw-b70109a0",
+   "«i can show where it would fit in the app: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: amy-mushlin-884504 / josephmurad",
+   "«if it fits your check-in design, pick a time here…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: amy-mushlin-884504 / wbryansmithphd",
+   "«if it fits your check-in design, pick a time here…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: amy-mushlin-884504 / christina-bowens",
+   "«if it fits your check-in design, pick a time here…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: amy-mushlin-884504 / annie-braun-gazda-b116065",
+   "«if it fits your check-in design, pick a time here…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: amy-mushlin-884504 / erin-mynaugh",
+   "«if it fits your check-in design, pick a time here…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: amy-mushlin-884504 / laura-isaacson-rd",
+   "«if it fits your check-in design, pick a time here…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: amy-mushlin-884504 / stevens-joshua",
+   "«if it fits your check-in design, pick a time here…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: amy-mushlin-884504 / molliemcgill",
+   "«if it fits your check-in design, pick a time here…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: amy-mushlin-884504 / jrgprzm",
+   "«if it fits your check-in design, pick a time here…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: josephmurad / billcampbellsales",
+   "«hi joe, 3dlook has worked with 100+ clients.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: josephmurad / wbryansmithphd",
+   "«a call would show how it sits in the app: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: josephmurad / christina-bowens",
+   "«a call would show how it sits in the app: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: josephmurad / annie-braun-gazda-b116065",
+   "«a call would show how it sits in the app: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: josephmurad / erin-mynaugh",
+   "«a call would show how it sits in the app: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: josephmurad / laura-isaacson-rd",
+   "«a call would show how it sits in the app: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: josephmurad / shane-giuliani",
+   "«a call would show how it sits in the app: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: josephmurad / stevens-joshua",
+   "«a call would show how it sits in the app: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: josephmurad / molliemcgill",
+   "«a call would show how it sits in the app: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: josephmurad / jrgprzm",
+   "«a call would show how it sits in the app: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: josephmurad / claudia-ryan-lcsw-b70109a0",
+   "«a call would show how it sits in the app: we supp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: wbryansmithphd / molliemcgill",
+   "«a two-photo scan returns 80+ body measurements.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: wbryansmithphd / christina-bowens",
+   "«happy to go through the details: we support hipaa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: wbryansmithphd / annie-braun-gazda-b116065",
+   "«happy to go through the details: we support hipaa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: wbryansmithphd / erin-mynaugh",
+   "«happy to go through the details: we support hipaa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: wbryansmithphd / laura-isaacson-rd",
+   "«happy to go through the details: we support hipaa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: wbryansmithphd / shane-giuliani",
+   "«happy to go through the details: we support hipaa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: wbryansmithphd / stevens-joshua",
+   "«happy to go through the details: we support hipaa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: wbryansmithphd / jrgprzm",
+   "«happy to go through the details: we support hipaa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: wbryansmithphd / claudia-ryan-lcsw-b70109a0",
+   "«happy to go through the details: we support hipaa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: christina-bowens / annie-braun-gazda-b116065",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: christina-bowens / erin-mynaugh",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: christina-bowens / laura-isaacson-rd",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: christina-bowens / shane-giuliani",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: christina-bowens / stevens-joshua",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: christina-bowens / molliemcgill",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: christina-bowens / jrgprzm",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: christina-bowens / claudia-ryan-lcsw-b70109a0",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: annie-braun-gazda-b116065 / erin-mynaugh",
+   "«i would value your clinical read: we support hipa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: annie-braun-gazda-b116065 / laura-isaacson-rd",
+   "«i would value your clinical read: we support hipa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: annie-braun-gazda-b116065 / shane-giuliani",
+   "«i would value your clinical read: we support hipa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: annie-braun-gazda-b116065 / stevens-joshua",
+   "«i would value your clinical read: we support hipa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: annie-braun-gazda-b116065 / molliemcgill",
+   "«i would value your clinical read: we support hipa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: annie-braun-gazda-b116065 / jrgprzm",
+   "«i would value your clinical read: we support hipa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: annie-braun-gazda-b116065 / claudia-ryan-lcsw-b70109a0",
+   "«i would value your clinical read: we support hipa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: erin-mynaugh / laura-isaacson-rd",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: erin-mynaugh / shane-giuliani",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: erin-mynaugh / stevens-joshua",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: erin-mynaugh / molliemcgill",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: erin-mynaugh / jrgprzm",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: erin-mynaugh / claudia-ryan-lcsw-b70109a0",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: laura-isaacson-rd / shane-giuliani",
+   "«a call would help me hear how your team reads pro…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: laura-isaacson-rd / stevens-joshua",
+   "«a call would help me hear how your team reads pro…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: laura-isaacson-rd / molliemcgill",
+   "«a call would help me hear how your team reads pro…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: laura-isaacson-rd / jrgprzm",
+   "«a call would help me hear how your team reads pro…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: laura-isaacson-rd / claudia-ryan-lcsw-b70109a0",
+   "«a call would help me hear how your team reads pro…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: shane-giuliani / stevens-joshua",
+   "«happy to walk through the operations side: we sup…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: shane-giuliani / molliemcgill",
+   "«happy to walk through the operations side: we sup…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: shane-giuliani / jrgprzm",
+   "«happy to walk through the operations side: we sup…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: shane-giuliani / claudia-ryan-lcsw-b70109a0",
+   "«happy to walk through the operations side: we sup…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: stevens-joshua / molliemcgill",
+   "«i can go through the integration with your team:…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: stevens-joshua / jrgprzm",
+   "«i can go through the integration with your team:…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: stevens-joshua / claudia-ryan-lcsw-b70109a0",
+   "«i can go through the integration with your team:…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: molliemcgill / jrgprzm",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: molliemcgill / claudia-ryan-lcsw-b70109a0",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Vida Health: jrgprzm / claudia-ryan-lcsw-b70109a0",
+   "«a call would show where it fits: we support hipaa…»"
+  ],
+  [
+   "sentence opening repeated",
+   "Vida Health ×13",
+   "«we support hipaa governed deployments…»: amy-mushlin-884504, annie-braun-gazda-b116065, ashish-nag, christina-bowens"
+  ]
+ ]
+}

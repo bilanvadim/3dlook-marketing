@@ -1,0 +1,290 @@
+{
+ "campaign": "2026-10-16-us-employer-obesity-care",
+ "checked": 35,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "emed-1",
+ "generated": "2026-10-19T09:56:49",
+ "hard": [],
+ "soft": [
+  [
+   "near-duplicate sentence",
+   "eMed: jheising / ericebanks",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: jheising / lindayaccarino",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: jheising / duane-kingston",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: jheising / justin-wilson-3bab7348",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: jheising / brittanihahn",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: jheising / ryan-adams-3a5595120",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: jheising / cassie-simko-cisa-crisc-47317985",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: jheising / alexcalleja",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: jheising / phillip-whitman-370b88290",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: jheising / dyan-hes-md-dipl-abom-50633b79",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: ericebanks / lindayaccarino",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: ericebanks / duane-kingston",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: ericebanks / justin-wilson-3bab7348",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: ericebanks / brittanihahn",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: ericebanks / ryan-adams-3a5595120",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: ericebanks / cassie-simko-cisa-crisc-47317985",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: ericebanks / alexcalleja",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: ericebanks / phillip-whitman-370b88290",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: ericebanks / dyan-hes-md-dipl-abom-50633b79",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: lindayaccarino / duane-kingston",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: lindayaccarino / justin-wilson-3bab7348",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: lindayaccarino / brittanihahn",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: lindayaccarino / ryan-adams-3a5595120",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: lindayaccarino / cassie-simko-cisa-crisc-47317985",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: lindayaccarino / alexcalleja",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: lindayaccarino / phillip-whitman-370b88290",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: lindayaccarino / dyan-hes-md-dipl-abom-50633b79",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: duane-kingston / justin-wilson-3bab7348",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: duane-kingston / brittanihahn",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: duane-kingston / ryan-adams-3a5595120",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: duane-kingston / cassie-simko-cisa-crisc-47317985",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: duane-kingston / alexcalleja",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: duane-kingston / phillip-whitman-370b88290",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: duane-kingston / dyan-hes-md-dipl-abom-50633b79",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: justin-wilson-3bab7348 / brittanihahn",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: justin-wilson-3bab7348 / ryan-adams-3a5595120",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: justin-wilson-3bab7348 / cassie-simko-cisa-crisc-47317985",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: justin-wilson-3bab7348 / alexcalleja",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: justin-wilson-3bab7348 / phillip-whitman-370b88290",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: justin-wilson-3bab7348 / dyan-hes-md-dipl-abom-50633b79",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: brittanihahn / ryan-adams-3a5595120",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: brittanihahn / cassie-simko-cisa-crisc-47317985",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: brittanihahn / alexcalleja",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: brittanihahn / phillip-whitman-370b88290",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: brittanihahn / dyan-hes-md-dipl-abom-50633b79",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: ryan-adams-3a5595120 / cassie-simko-cisa-crisc-47317985",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: ryan-adams-3a5595120 / alexcalleja",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: ryan-adams-3a5595120 / phillip-whitman-370b88290",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: ryan-adams-3a5595120 / dyan-hes-md-dipl-abom-50633b79",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: cassie-simko-cisa-crisc-47317985 / alexcalleja",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: cassie-simko-cisa-crisc-47317985 / phillip-whitman-370b88290",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: cassie-simko-cisa-crisc-47317985 / dyan-hes-md-dipl-abom-50633b79",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: alexcalleja / phillip-whitman-370b88290",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: alexcalleja / dyan-hes-md-dipl-abom-50633b79",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "eMed: phillip-whitman-370b88290 / dyan-hes-md-dipl-abom-50633b79",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "sentence opening repeated",
+   "eMed ×11",
+   "«we support hipaa governed deployments…»: alexcalleja, brittanihahn, cassie-simko-cisa-crisc-47317985, duane-kingston"
+  ]
+ ]
+}

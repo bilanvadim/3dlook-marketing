@@ -1,0 +1,880 @@
+{
+ "campaign": "2026-10-16-us-employer-obesity-care",
+ "checked": 35,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "omada-health-1",
+ "generated": "2026-10-19T09:55:46",
+ "hard": [],
+ "soft": [
+  [
+   "near-duplicate sentence",
+   "Omada Health: terry-miller-b1333a62 / kevin-masci-pharm-d-32b81b68",
+   "«find a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: terry-miller-b1333a62 / alisonmegliola",
+   "«find a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: terry-miller-b1333a62 / sunilkayiti",
+   "«find a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: terry-miller-b1333a62 / danika-harrison-570372",
+   "«find a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: terry-miller-b1333a62 / kalika-kekkar",
+   "«find a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: terry-miller-b1333a62 / patrick-curry-healthcare",
+   "«find a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: terry-miller-b1333a62 / franckverrot",
+   "«find a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: terry-miller-b1333a62 / spenceracross",
+   "«find a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: terry-miller-b1333a62 / kathryn-wintermantel-8b6a4732",
+   "«find a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: terry-miller-b1333a62 / wshao",
+   "«find a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: terry-miller-b1333a62 / akallarakuzhi",
+   "«find a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: terry-miller-b1333a62 / stanislav-b-b302704",
+   "«find a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: terry-miller-b1333a62 / seanpduffy",
+   "«find a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: terry-miller-b1333a62 / ellerycook",
+   "«find a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: terry-miller-b1333a62 / chunalex",
+   "«find a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: terry-miller-b1333a62 / danielleburns",
+   "«find a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: terry-miller-b1333a62 / annacnelson",
+   "«find a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: terry-miller-b1333a62 / marty-lynch-4858873b",
+   "«find a time here: we support hipaa-governed deplo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kevin-masci-pharm-d-32b81b68 / alisonmegliola",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kevin-masci-pharm-d-32b81b68 / sunilkayiti",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kevin-masci-pharm-d-32b81b68 / danika-harrison-570372",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kevin-masci-pharm-d-32b81b68 / kalika-kekkar",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kevin-masci-pharm-d-32b81b68 / patrick-curry-healthcare",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kevin-masci-pharm-d-32b81b68 / franckverrot",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kevin-masci-pharm-d-32b81b68 / spenceracross",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kevin-masci-pharm-d-32b81b68 / kathryn-wintermantel-8b6a4732",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kevin-masci-pharm-d-32b81b68 / wshao",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kevin-masci-pharm-d-32b81b68 / akallarakuzhi",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kevin-masci-pharm-d-32b81b68 / stanislav-b-b302704",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kevin-masci-pharm-d-32b81b68 / seanpduffy",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kevin-masci-pharm-d-32b81b68 / ellerycook",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kevin-masci-pharm-d-32b81b68 / chunalex",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kevin-masci-pharm-d-32b81b68 / danielleburns",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kevin-masci-pharm-d-32b81b68 / annacnelson",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kevin-masci-pharm-d-32b81b68 / marty-lynch-4858873b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: alisonmegliola / sunilkayiti",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: alisonmegliola / danika-harrison-570372",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: alisonmegliola / kalika-kekkar",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: alisonmegliola / patrick-curry-healthcare",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: alisonmegliola / franckverrot",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: alisonmegliola / spenceracross",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: alisonmegliola / kathryn-wintermantel-8b6a4732",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: alisonmegliola / wshao",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: alisonmegliola / akallarakuzhi",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: alisonmegliola / stanislav-b-b302704",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: alisonmegliola / seanpduffy",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: alisonmegliola / ellerycook",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: alisonmegliola / chunalex",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: alisonmegliola / danielleburns",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: alisonmegliola / annacnelson",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: alisonmegliola / marty-lynch-4858873b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: sunilkayiti / franckverrot",
+   "«hi sunil, a typical basic integration takes 2-4 w…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: sunilkayiti / akallarakuzhi",
+   "«hi sunil, a typical basic integration takes 2-4 w…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: sunilkayiti / danika-harrison-570372",
+   "«book here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: sunilkayiti / kalika-kekkar",
+   "«book here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: sunilkayiti / patrick-curry-healthcare",
+   "«book here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: sunilkayiti / spenceracross",
+   "«book here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: sunilkayiti / kathryn-wintermantel-8b6a4732",
+   "«book here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: sunilkayiti / wshao",
+   "«book here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: sunilkayiti / stanislav-b-b302704",
+   "«book here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: sunilkayiti / seanpduffy",
+   "«book here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: sunilkayiti / ellerycook",
+   "«book here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: sunilkayiti / chunalex",
+   "«book here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: sunilkayiti / danielleburns",
+   "«book here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: sunilkayiti / annacnelson",
+   "«book here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: sunilkayiti / marty-lynch-4858873b",
+   "«book here: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: danika-harrison-570372 / kalika-kekkar",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: danika-harrison-570372 / patrick-curry-healthcare",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: danika-harrison-570372 / franckverrot",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: danika-harrison-570372 / spenceracross",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: danika-harrison-570372 / kathryn-wintermantel-8b6a4732",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: danika-harrison-570372 / wshao",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: danika-harrison-570372 / akallarakuzhi",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: danika-harrison-570372 / stanislav-b-b302704",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: danika-harrison-570372 / seanpduffy",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: danika-harrison-570372 / ellerycook",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: danika-harrison-570372 / chunalex",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: danika-harrison-570372 / danielleburns",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: danika-harrison-570372 / annacnelson",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: danika-harrison-570372 / marty-lynch-4858873b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kalika-kekkar / patrick-curry-healthcare",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kalika-kekkar / franckverrot",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kalika-kekkar / spenceracross",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kalika-kekkar / kathryn-wintermantel-8b6a4732",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kalika-kekkar / wshao",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kalika-kekkar / akallarakuzhi",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kalika-kekkar / stanislav-b-b302704",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kalika-kekkar / seanpduffy",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kalika-kekkar / ellerycook",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kalika-kekkar / chunalex",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kalika-kekkar / danielleburns",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kalika-kekkar / annacnelson",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kalika-kekkar / marty-lynch-4858873b",
+   "«grab a time: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: patrick-curry-healthcare / franckverrot",
+   "«choose a time: we support hipaa-governed deployme…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: patrick-curry-healthcare / spenceracross",
+   "«choose a time: we support hipaa-governed deployme…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: patrick-curry-healthcare / kathryn-wintermantel-8b6a4732",
+   "«choose a time: we support hipaa-governed deployme…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: patrick-curry-healthcare / wshao",
+   "«choose a time: we support hipaa-governed deployme…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: patrick-curry-healthcare / akallarakuzhi",
+   "«choose a time: we support hipaa-governed deployme…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: patrick-curry-healthcare / stanislav-b-b302704",
+   "«choose a time: we support hipaa-governed deployme…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: patrick-curry-healthcare / seanpduffy",
+   "«choose a time: we support hipaa-governed deployme…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: patrick-curry-healthcare / ellerycook",
+   "«choose a time: we support hipaa-governed deployme…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: patrick-curry-healthcare / chunalex",
+   "«choose a time: we support hipaa-governed deployme…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: patrick-curry-healthcare / danielleburns",
+   "«choose a time: we support hipaa-governed deployme…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: patrick-curry-healthcare / annacnelson",
+   "«choose a time: we support hipaa-governed deployme…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: patrick-curry-healthcare / marty-lynch-4858873b",
+   "«choose a time: we support hipaa-governed deployme…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: franckverrot / akallarakuzhi",
+   "«hi franck, a typical basic integration takes 2-4…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: franckverrot / spenceracross",
+   "«pick a day: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: franckverrot / kathryn-wintermantel-8b6a4732",
+   "«pick a day: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: franckverrot / wshao",
+   "«pick a day: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: franckverrot / stanislav-b-b302704",
+   "«pick a day: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: franckverrot / seanpduffy",
+   "«pick a day: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: franckverrot / ellerycook",
+   "«pick a day: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: franckverrot / chunalex",
+   "«pick a day: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: franckverrot / danielleburns",
+   "«pick a day: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: franckverrot / annacnelson",
+   "«pick a day: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: franckverrot / marty-lynch-4858873b",
+   "«pick a day: we support hipaa-governed deployments…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: spenceracross / kathryn-wintermantel-8b6a4732",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: spenceracross / wshao",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: spenceracross / akallarakuzhi",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: spenceracross / stanislav-b-b302704",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: spenceracross / seanpduffy",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: spenceracross / ellerycook",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: spenceracross / chunalex",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: spenceracross / danielleburns",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: spenceracross / annacnelson",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: spenceracross / marty-lynch-4858873b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kathryn-wintermantel-8b6a4732 / wshao",
+   "«pick a slot: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kathryn-wintermantel-8b6a4732 / akallarakuzhi",
+   "«pick a slot: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kathryn-wintermantel-8b6a4732 / stanislav-b-b302704",
+   "«pick a slot: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kathryn-wintermantel-8b6a4732 / seanpduffy",
+   "«pick a slot: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kathryn-wintermantel-8b6a4732 / ellerycook",
+   "«pick a slot: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kathryn-wintermantel-8b6a4732 / chunalex",
+   "«pick a slot: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kathryn-wintermantel-8b6a4732 / danielleburns",
+   "«pick a slot: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kathryn-wintermantel-8b6a4732 / annacnelson",
+   "«pick a slot: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: kathryn-wintermantel-8b6a4732 / marty-lynch-4858873b",
+   "«pick a slot: we support hipaa-governed deployment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: wshao / akallarakuzhi",
+   "«i can show how it fits on a call: we support hipa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: wshao / stanislav-b-b302704",
+   "«i can show how it fits on a call: we support hipa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: wshao / seanpduffy",
+   "«i can show how it fits on a call: we support hipa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: wshao / ellerycook",
+   "«i can show how it fits on a call: we support hipa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: wshao / chunalex",
+   "«i can show how it fits on a call: we support hipa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: wshao / danielleburns",
+   "«i can show how it fits on a call: we support hipa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: wshao / annacnelson",
+   "«i can show how it fits on a call: we support hipa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: wshao / marty-lynch-4858873b",
+   "«i can show how it fits on a call: we support hipa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: akallarakuzhi / stanislav-b-b302704",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: akallarakuzhi / seanpduffy",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: akallarakuzhi / ellerycook",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: akallarakuzhi / chunalex",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: akallarakuzhi / danielleburns",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: akallarakuzhi / annacnelson",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: akallarakuzhi / marty-lynch-4858873b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: stanislav-b-b302704 / seanpduffy",
+   "«schedule here: we support hipaa-governed deployme…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: stanislav-b-b302704 / ellerycook",
+   "«schedule here: we support hipaa-governed deployme…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: stanislav-b-b302704 / chunalex",
+   "«schedule here: we support hipaa-governed deployme…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: stanislav-b-b302704 / danielleburns",
+   "«schedule here: we support hipaa-governed deployme…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: stanislav-b-b302704 / annacnelson",
+   "«schedule here: we support hipaa-governed deployme…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: stanislav-b-b302704 / marty-lynch-4858873b",
+   "«schedule here: we support hipaa-governed deployme…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: seanpduffy / ellerycook",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: seanpduffy / chunalex",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: seanpduffy / danielleburns",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: seanpduffy / annacnelson",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: seanpduffy / marty-lynch-4858873b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: ellerycook / chunalex",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: ellerycook / danielleburns",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: ellerycook / annacnelson",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: ellerycook / marty-lynch-4858873b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: chunalex / danielleburns",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: chunalex / annacnelson",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: chunalex / marty-lynch-4858873b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: danielleburns / annacnelson",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: danielleburns / marty-lynch-4858873b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Omada Health: annacnelson / marty-lynch-4858873b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "sentence opening repeated",
+   "Omada Health ×19",
+   "«we support hipaa governed deployments…»: akallarakuzhi, alisonmegliola, annacnelson, chunalex"
+  ],
+  [
+   "sentence opening repeated",
+   "Omada Health ×3",
+   "«a typical basic integration takes…»: akallarakuzhi, franckverrot, sunilkayiti"
+  ],
+  [
+   "sentence opening repeated",
+   "Omada Health ×3",
+   "«two photos waist and 80+…»: jenny-sproull-5303805, jill-belinky-7300a51, shariyar"
+  ]
+ ]
+}
