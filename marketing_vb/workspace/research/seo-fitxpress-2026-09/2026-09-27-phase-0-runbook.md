@@ -33,6 +33,7 @@ related: 2026-09-25-fitxpress-seo-plan.md (фаза 0), 2026-09-27-tz-dev-site.m
 | 0.4 HubSpot | 🟡 | Свойства созданы на контакте и сделке; `icp_segment` из 7 значений (см. 0.4 п. 1). Скрытые UTM-поля стоят во всех формах с просмотрами (02.10). `landing_page_first` заполняется в Contact, Pricing и с 15.10 в Popup. Workflow источника на сделке работает: `original_traffic_source` у 423 из 424 сделок с 2024-09. Workflow соискателей включён: 506 контактов. Формы переименованы по схеме (около 13.10). П. 4.2 и 4.3 сняты 12.10. | Старые соискатели не импортированы: `Job seeker` у 506, а по разбору 12.10 их около 1 110 (`job-seekers-legacy-import.csv`, 606 строк). Ветка-защита для MQL+ и контактов со сделками не подтверждена. `icp_segment` стоит только у соискателей: FX, MT и WM никто не проставляет, у сделок он пуст. Тестовая заявка с UTM в переписке не упоминается; за 02–16.10 `utm_source` пришёл у 1 из 103 новых контактов. |
 | 0.5 Квалификация | ✅ | Company и Job title в popup уже были обязательными. Бесплатные почтовые домены заблокированы на всех формах, кроме MT, двух ebook и Career (13.10). Lead scoring снят 13.10, см. 0.5 п. 2. | Домена `gmail.co.in` нет в стандартном списке HubSpot. Решили не добавлять (14.10). |
 | 0.6 Дашборд | ✅ 16.10 | Google Sheet «3DLOOK Organic Dashboard» на весь сайт (FitXpress, Mobile Tailor, Wrist), с 2025-09-29 по неделям, плюс отчёт в Telegram. Скрипт `scripts/organic-dashboard.py`, cron вт и ср 06:20 UTC. Цифры сверены с GSC, GA4, HubSpot и листом MT self-serve 16.10. | Таблицу расшарить команде и руководству (делает Вадим). |
+| 0.10 Одна форма FX-лендингов | ❌ добавлен 19.10 | В HubSpot три отдельные формы лендингов: fitness, telehealth (стоит и на BMI verification) и insurance (создана 19.10). Причина — шаг про одну форму в ранбук не попал. | Весь шаг 0.10: общая форма `FX \| LP \| Demo`, поле `fx_vertical`, GTM, перенос workflows, переключение трёх страниц. |
 | 0.7 Позиции | ✅ 16.10 | 86 пар ключ × страна (`rank-keywords.csv`): средняя позиция в Google из Search Console и позиция в Ahrefs, история за 54 недели, изменения в Telegram. | — |
 
 **Остальной план, что движется параллельно:**
@@ -98,6 +99,7 @@ related: 2026-09-25-fitxpress-seo-plan.md (фаза 0), 2026-09-27-tz-dev-site.m
 | 6–7 | 0.5 Квалификация popup и lead scoring | ты |
 | 5–10 | 0.6 Дашборд, 0.7 Трекинг позиций | я |
 | 8 | 0.3 Фильтры GA4 → «Active» | ты |
+| после 0.2 и 0.4 | 0.10 Одна демо-форма на все FX-лендинги | ты + девелопер |
 | 10 | Итоговая приёмка (раздел в конце) | ты + я |
 | +14 дней | Сверка GA4 и HubSpot | я |
 
@@ -293,6 +295,7 @@ GTM → **Tags** → New → **Custom HTML** → имя `HubSpot - form submit l
 | Homepage Popup | `home_popup` |
 | Telehealth & Weight Loss (former Health & Fitness LP) | `fx_lp_telehealth` |
 | Connected & Digital Fitness (former Health & Fitness LP) | `fx_lp_fitness` |
+| `FX \| LP \| Demo` — общая форма FX-лендингов (шаг 0.10, с 19.10) | `fx_lp_demo` |
 | Downloadable content (The Next Big Leap in Health) | `ebook_health` |
 | …(The Digital Health Revolution) 2025 | `ebook_glp1` |
 | Career submit form, Careers | `careers` |
@@ -457,9 +460,11 @@ Automation → **Workflows** → Create → From scratch → **Deal-based**.
 
 ### 5. Переименовать формы (~15 минут)
 Marketing → Forms → у каждой формы **Rename** по схеме `{Продукт} | {Где} | {Что}`:
-`FX | Pricing | Starter`, `FX | Pricing | Talk to sales`, `FX | LP Telehealth | Demo`, `FX | LP Fitness | Demo`, `3DLOOK | Home | Popup`, `3DLOOK | Contact | Contact & partnership`, `FX | Ebook | Next big leap in health`, `FX | Ebook | GLP-1`, `MT | Pricing | Enterprise`, `HR | Careers | Apply`.
+`FX | Pricing | Starter`, `FX | Pricing | Talk to sales`, `FX | LP | Demo`, `3DLOOK | Home | Popup`, `3DLOOK | Contact | Contact & partnership`, `FX | Ebook | Next big leap in health`, `FX | Ebook | GLP-1`, `MT | Pricing | Enterprise`, `HR | Careers | Apply`.
 
 После переименования таблица GUID в GTM не меняется: GUID остаётся тем же.
+
+_Исправлено 19.10:_ до этой даты здесь стояли `FX | LP Telehealth | Demo` и `FX | LP Fitness | Demo`, то есть форма под каждый лендинг. Это расходилось с решением от 29.09: на всех FX-лендингах одна форма `FX | LP | Demo`, вертикаль — в `fx_vertical`. Переход — шаг 0.10.
 
 ### Проверка 0.4
 - Открой `https://3dlook.ai/?utm_source=test&utm_medium=test&utm_campaign=phase0-check`, перейди на `/contact-us/` и отправь форму. У контакта в HubSpot заполнены `UTM source/medium/campaign = test / test / phase0-check` и `Landing page (first touch) = https://3dlook.ai/`.
@@ -545,6 +550,99 @@ HubSpot → Marketing → **Lead Scoring** (новый инструмент) и�
 
 ---
 
+## 0.10. Одна демо-форма на все FX-лендинги и поле `fx_vertical` (~1 день: ты ~4 часа, девелопер ~1 час)
+
+_Добавлено 2026-10-19._ Решение принято 29.09 и записано в ТЗ по трекингу (`2026-09-27-tz-tracking-hubspot-ga4.md`, B1, B2.5, B5) и в ките лендингов, а в этот ранбук не попало. Шаг 0.4.5 до 19.10 даже называл формы под каждую посадку. Поэтому в HubSpot сейчас три отдельные формы лендингов:
+
+| Форма | GUID | Где стоит |
+|---|---|---|
+| `FX \| LP Connected & Digital Fitness \| Demo` | `887dc2d4-6427-4a4a-a02e-9c2a82b6aa6e` | `/fitxpress/for-connected-and-digital-fitness/` |
+| `FX \| LP Telehealth & Digital Health \| Demo` | `5191936a-a8dc-41eb-8c2d-facfe0abf1f9` | telehealth-страница и `/for-bmi-verification/` |
+| `FX \| LP Insurance Underwriting \| Demo` | `11acb23a-e81c-46ee-bb23-4d47a0ef0125` | insurance-лендинг (ещё не опубликован), создана 19.10 |
+
+**Зачем.** Каждая новая форма — ещё одна копия согласия, блокировки gmail, уведомлений, workflows и строки в GTM. Копии расходятся: у insurance-формы поле объёма, у fitness и telehealth вместо него сайт. Telehealth-форма стоит и на BMI verification, поэтому по названию формы вертикаль там уже определяется неверно. С одной формой новый лендинг — это одна строка в GTM, а в HubSpot ничего не меняется.
+
+**Как устроено после перехода.** На всех FX-лендингах стоит одна форма `FX | LP | Demo` с одним дизайном. Различаются только заголовок над формой и текст вокруг неё, а они живут на странице, а не в HubSpot. Вертикаль GTM определяет по адресу страницы и записывает в скрытое поле `fx_vertical` формы, а также в параметр события `generate_lead` в GA4. Все три формы встроены как raw HTML (`renderRawHtml: true`), поэтому GTM может заполнить поле. UTM он заполняет тем же способом с 02.10.
+
+### 1. Свойство `fx_vertical` (~10 минут)
+HubSpot → Settings → Properties.
+- **Contact** → Create property: Label `FX vertical`, internal name `fx_vertical`, Dropdown select. Значения задать так, чтобы **internal value** совпадало с тем, что пишет GTM: `fitxpress_parent` · `bmi_verification` · `fitness` · `telehealth` · `glp1` · `insurance` · `wellness` · `bariatric` · `clinical_trials` · `occupational_health`.
+- **Deal** → такое же свойство с теми же значениями.
+
+Это страница, на которой оставили заявку, а не сегмент клиента: на wellness-лендинг может прийти страховщик. `icp_segment` по-прежнему ставит sales, и из `fx_vertical` его не заполняем.
+
+### 2. Сделать общую форму (~30 минут)
+Общей становится insurance-форма `11acb23a`: в ней уже нужные поля, а страница ещё не опубликована, так что история заявок не теряется. Marketing → Forms → открыть её:
+1. **Rename** → `FX | LP | Demo`.
+2. Видимые поля: First name, Last name, Business email, Company, Job title — обязательные. Expected monthly scan volume — необязательное. Варианты (по ТЗ от 30.09): Under 500 · 500–1,000 · 1,000–5,000 · Over 5,000 · Not sure yet. Сейчас там 1-500 / 501-1000 / More than 1000. Варианты меняются в свойстве `expected_monthly_scan_volume` (Settings → Properties).
+3. Скрытые поля: UTM (5 шт.), Landing page (first touch) — уже есть. Добавить `FX vertical`, **Make this field hidden**, значение по умолчанию не ставить.
+4. **Согласие** (Options → Data privacy and consent): галочка на обработку данных — обязательная, текст как в дизайне: «I agree to 3DLOOK processing my details to respond to this request, as described in the privacy policy.» Галочка на рассылку — **необязательная**. Сейчас обязательная галочка на рассылку стоит во всех трёх формах. Если без согласия на рассылку нельзя запросить демо, по GDPR такое согласие не считается добровольным, а UK и ЕС — наши рынки.
+5. Кнопка: `Book a demo` (как на страницах и в дизайне; сейчас `Let's talk`).
+6. **Уведомления и автоответ** (Options → Notifications, Follow-up email): открыть fitness- и telehealth-формы, посмотреть, кому уходят уведомления о заявке и есть ли follow-up email, и выставить то же в новой форме.
+7. **Publish / Update.**
+
+### 3. GTM (~30 минут)
+1. **Variables → New → Lookup Table**, имя `fx_vertical`. Input: `{{Page Path}}`. Default: оставить пустым. Строки (слеш в конце обязателен, Page Path отдаёт путь со слешем):
+
+   | Page Path | fx_vertical |
+   |---|---|
+   | `/fitxpress/` | `fitxpress_parent` |
+   | `/for-bmi-verification/` (потом и `/fitxpress/bmi-verification/`) | `bmi_verification` |
+   | `/fitxpress/for-connected-and-digital-fitness/` | `fitness` |
+   | `/structured-body-data-for-telehealth-digital-health-programs/` (потом и `/fitxpress/for-telehealth/`) | `telehealth` |
+   | `/fitxpress/for-glp-1-programs/` | `glp1` |
+   | `/fitxpress/for-insurance-underwriting/` | `insurance` |
+   | `/fitxpress/for-wellness-programs/` | `wellness` |
+   | `/fitxpress/for-bariatric-programs/` | `bariatric` |
+   | `/fitxpress/for-clinical-trials/` | `clinical_trials` |
+   | `/fitxpress/for-occupational-health/` | `occupational_health` |
+
+   Строки для ещё не опубликованных страниц можно завести сразу. Перед публикацией каждой страницы сверить её финальный URL с таблицей.
+2. **Тег `UTM - fill HubSpot hidden fields`** (из 0.4.2): в функции `values()` перед `return v;` добавить строки:
+   ```js
+   var fv = '{{fx_vertical}}';
+   if (fv && fv !== 'undefined') v.fx_vertical = fv;
+   ```
+   Остальное в теге не меняется: он уже заполняет пустые скрытые поля при `onFormReady` и в формах v4.
+3. **Lookup `form_name`** (из 0.2.2): добавить строку `FX | LP | Demo` (GUID `11acb23a-e81c-46ee-bb23-4d47a0ef0125`) → `fx_lp_demo`. Строки старых LP-форм не удалять: на них держится история в GA4.
+4. **Тег `GA4 - generate_lead`**: добавить параметр `fx_vertical` = `{{fx_vertical}}`.
+5. Preview → проверка (п. 6) → Publish, версия `Phase 0 - one FX form`.
+6. GA4 → Admin → Custom definitions → Create custom dimension: `fx_vertical`, Event scope.
+
+### 4. HubSpot: перенести на новую форму всё, что висит на старых (~1 час)
+1. **Workflows.** Automation → Workflows: найти все workflows, у которых в триггере или в ветках стоят fitness- или telehealth-форма: назначение owner, автоответ, sequence, списки. В каждый добавить `FX | LP | Demo` рядом со старой формой (через OR). Старую не убирать до конца перехода.
+2. **Workflow источника сделки** (0.4.3): добавить пятое действие Copy property value: `fx_vertical` контакта → `fx_vertical` сделки.
+3. **Списки и отчёты**, где фильтр стоит по старым формам: добавить новую форму.
+
+### 5. Переключить страницы (девелопер, ~1 час)
+По одной странице, после каждой — проверка (п. 6):
+1. `/fitxpress/for-connected-and-digital-fitness/`: в встраивании формы заменить `formId` `887dc2d4-…` на `11acb23a-e81c-46ee-bb23-4d47a0ef0125`.
+2. Telehealth-страница: `5191936a-…` → `11acb23a-…`.
+3. `/for-bmi-verification/`: `5191936a-…` → `11acb23a-…`.
+
+Если форма стоит в попапе Elementor, заменить в попапе. Новые лендинги (insurance, GLP-1, бариатрия) сразу встраивают `11acb23a-…`: в HTML-прототипах стоит заглушка с `/contact-us/`, её девелопер меняет на этот ID.
+
+### 6. Проверка на каждой странице
+1. Открой страницу с `?utm_source=test&utm_medium=test&utm_campaign=one-form-check` в режиме GTM Preview.
+2. Отправь форму с адресом `test+fx-<вертикаль>@3dlook.me`.
+3. Проверь:
+   - в GTM Preview на теге `GA4 - generate_lead` стоят `form_name = fx_lp_demo` и правильный `fx_vertical`; то же видно в GA4 DebugView;
+   - у контакта в HubSpot заполнены `fx_vertical`, `utm_*` и `landing_page_first`;
+   - пришло уведомление о заявке, сработали назначение owner и автоответ;
+   - на форме видны две галочки, и форма отправляется без галочки на рассылку.
+4. Удали тестовые контакты.
+
+### 7. Старые формы
+- Не удалять: в них история заявок, и на них ссылаются старые отчёты. Переименовать с пометкой `| OLD` в конце, чтобы их не выбрали для новой страницы.
+- У заявок, пришедших до перехода, `fx_vertical` пустой. Для истории вертикаль берётся по старой форме. Заявки telehealth-формы со страницы `/for-bmi-verification/` различаются по URL отправки (Forms → Submissions → столбец Page URL). Если нужно в отчётах — один раз проставить `fx_vertical` старым контактам массовой правкой.
+
+**Типичные ошибки**
+- `fx_vertical` не доходит до контакта, хотя в GTM Preview значение есть. Internal value в свойстве HubSpot не совпадает с тем, что пишет GTM (`Fitness` вместо `fitness`), и HubSpot отбрасывает значение.
+- Страница открыта без слеша в конце или с другим путём, и Lookup Table отдаёт пустое значение. Проверь `{{Page Path}}` в Preview и добавь строку.
+- После переключения перестали приходить уведомления sales: workflows или уведомления остались только на старой форме (п. 2.6 и 4.1).
+
+---
+
 ## Итоговая приёмка фазы 0 (день 10)
 
 Пройди список и отметь. Всё, что не ✅, — пришли мне, разберёмся.
@@ -561,6 +659,7 @@ HubSpot → Marketing → **Lead Scoring** (новый инструмент) и�
 - [ ] Тестовая заявка с UTM создаёт контакт с заполненными `utm_*` и `landing_page_first` (0.4). _`landing_page_first` заполняется в реальных заявках. Теста с UTM не было._
 - [x] Сделки получают `original_traffic_source` (0.4). _423 из 424 сделок с 2024-09._
 - [x] Popup не принимает gmail и требует Company и Job title (0.5)
+- [ ] На всех FX-лендингах одна форма `FX | LP | Demo`; тестовая заявка с каждой страницы даёт контакт с `fx_vertical` и `generate_lead` с `fx_vertical` в GA4 (0.10). _Добавлено 19.10._
 - [ ] ~~Lead scoring создан, порог MQL = 30 (0.5)~~ _Снято 13.10._
 - [x] Первый еженедельный отчёт пришёл в Telegram (0.6); трекинг позиций запущен (0.7). _16.10: таблица на весь сайт, отчёт за неделю 5–11.10 отправлен, cron вт/ср._
 
