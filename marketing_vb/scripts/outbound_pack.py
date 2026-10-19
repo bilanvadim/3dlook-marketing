@@ -1640,6 +1640,58 @@ HUNDRED_USE = re.compile(
     rf"|\b(?:in use at|used by|already used? by)\s+{_N100}"
     rf"|{_N100}[^.?!\n]{{0,40}}\btoday\b", re.I)
 
+# "so" introducing a result, 2026-10-19 (us-employer-obesity-care): the detector's rule wants
+# ", so" + a subject from its list + a verb from its list, and ~20 lines passed ("…, so your
+# pipeline team can judge the load", "…, so the guided capture lives inside the app"). In a
+# cold DM ", so <clause>" is that shape; the conversational ones ("so no pressure", "so just
+# tell me", "so I am asking") and the non-result senses are left alone.
+SO_RESULT = re.compile(
+    r",\s+so\s+(?!that\b|far\b|many\b|much\b|long\b|few\b|often\b|well\b|to speak\b|called\b|"
+    r"just\b|no\b|i\b|i'm\b|i'd\b|i'll\b|please\b|feel\b|if\b|here\b|let me\b)[a-z]", re.I)
+# A link with punctuation glued to it, 2026-10-19: 43 messages ended the calendar link with a
+# period ("…nick-omelchak. If…") and two AU FAQ links did the same; a client that keeps the
+# period in the link opens a 404.
+LINK_PUNCT = re.compile(r"https?://[^\s]*?[.,;:!?)](?=\s|$)")
+# A call length, written as a number or a word ("ten minutes" passed on 2026-10-19). Only a
+# failure where the hypothesis bans it: older campaigns offered "15 minutes" by design.
+CALL_LENGTH = re.compile(
+    r"\b(?:\d+|five|ten|fifteen|twenty|thirty|forty[- ]five|sixty|a few)[- ]?(?:min|mins|minutes?)\b"
+    r"|\bhalf an hour\b", re.I)
+# Card wording as copy, 2026-10-19: QC found ~40 rule sentences restated in messages ("body
+# composition values are estimates", "the phone as the only hardware", "the care team picks
+# the scans"). Five-word runs shared with the rule text (the "Rules for steps" section and
+# the lane notes), outside quotes, are counted per campaign. Account facts are left out: a
+# company line is supposed to reuse them. Runs that carry a product or compliance fact are
+# allowed copy and skipped.
+CARD_QUOTED = re.compile(r"\"[^\"]*\"|«[^»]*»|“[^”]*”|`[^`]*`")
+CARD_WORDS = re.compile(r"[a-z0-9+%]+")
+PRODUCT_WORDS = re.compile(
+    r"80\+|\bphotos?\b|\bmeasurements?\b|\b3d\b|\bapi\b|\bsdks?\b|\bbmi\b|\bbmr\b|\bscans?\b|\bwhite\b|"
+    r"\blabel\b|\bseconds\b|\bmass\b|\bguid(?:ance|ed)\b|\bscreen\b|\bcapture\b|\bwaist\b|\bhip\b|\bdelete[ds]?\b|"
+    r"\bprocessing\b|\bencrypt\w*\b|\bbaa\b|\bhipaa\b")
+LANE_NOTE = re.compile(r"(?m)^\s*- \*\*`[a-z-]+`\*\*.*$")
+
+
+def five_grams(text: str) -> set[str]:
+    w = CARD_WORDS.findall(text.lower())
+    return {" ".join(w[i:i + 5]) for i in range(len(w) - 4)}
+
+
+def card_rule_grams(text: str) -> set[str]:
+    """Five-word runs of the rule text the messages card carries, minus quoted sentences
+    (verbatim copy is licensed there) and minus the fact files' own wording."""
+    rules = [b for t, b in h2_sections(text) if "rules for steps" in t.lower()]
+    lanes = [m.group(0) for t, b in h2_sections(text) if "message angle" in t.lower()
+             for m in LANE_NOTE.finditer(b)]
+    grams = {g for g in five_grams(CARD_QUOTED.sub(" ", "\n".join(rules + lanes)))
+             if not PRODUCT_WORDS.search(g)}
+    pi = ROOT / "brand-assets" / "product-info"
+    for f in ("proof-points.md", "compliance.md", "messaging.md"):
+        if (pi / f).exists():
+            grams -= five_grams((pi / f).read_text(encoding="utf-8"))
+    return grams
+
+
 # Sentences the card makes verbatim, so a company-wide repeat of their opening is expected.
 MANDATED_STEMS = ("in most enterprise deployments", "fitxpress is not a medical device",
                   "for most evaluated measurements", "for most of the evaluated",
@@ -1673,6 +1725,9 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
     hyp_text = hypothesis_of(cdir)[0]
     demands_specific = bool(re.search(r"message 1 gate|product specific", hyp_text, re.I)) \
         or str(fm.get("message_gate", "")).lower() in ("specific", "number", "true", "yes")
+    bans_call_length = bool(re.search(r"no call length|no minutes", hyp_text, re.I))
+    rule_grams = card_rule_grams(hyp_text)
+    copied: dict[str, set[str]] = defaultdict(set)
 
     ref_call = referral_call(fm)
     hard: list[tuple[str, str, str]] = []      # (code, person, detail)
@@ -1737,6 +1792,19 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
             fs = first_sentence(b)
             if GENERIC_OPENER.search(fs):
                 hard.append(("generic opener", tag, clip(fs, 70)))
+            m = SO_RESULT.search(b)
+            if m:
+                hard.append(("«so» introducing a result", tag,
+                             f"«…{clip(b[max(0, m.start() - 30):m.end() + 30], 80)}»: two sentences, or «allowing…»"))
+            m = LINK_PUNCT.search(b)
+            if m:
+                hard.append(("punctuation on a link", tag,
+                             f"«{clip(m.group(0)[-30:], 40)}»: nothing may touch the end of a URL"))
+            m = CALL_LENGTH.search(b)
+            if m and bans_call_length:
+                hard.append(("call length", tag, f"«{m.group(0)}»: the hypothesis bans any call length"))
+            for g in five_grams(re.sub(r"https?://\S+", " ", b)) & rule_grams:
+                copied[g].add(pid)
             if det:
                 r = det.analyze(b, "en", "dm", profile)
                 for hf in r.get("hard_fails", []):
@@ -1880,6 +1948,19 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
         if len(who) >= 3:
             soft.append(("sentence opening repeated", f"{g} ×{len(who)}",
                          f"«{st}…»: " + ", ".join(sorted(who)[:4])))
+    # One line per run of card wording, longest-held first; overlapping windows of one phrase
+    # (the same people, or four words in common) collapse into the first, so the note names
+    # the phrase once.
+    shown: list[tuple[str, set[str]]] = []
+    for g, who in sorted(copied.items(), key=lambda x: (-len(x[1]), x[0])):
+        if len(who) < max(3, len(people) // 40):
+            break
+        w = g.split()
+        if any(who == sw or " ".join(w[:4]) in sg or " ".join(w[1:]) in sg for sg, sw in shown):
+            continue
+        shown.append((g, who))
+        soft.append(("card wording as copy", f"campaign ×{len(who)}",
+                     f"«{g}…»: " + ", ".join(sorted(who)[:4])))
     for (pid, n), b in bodies.items():
         if n == 2 and re.search(r"96-97%", first_sentence(b)):
             soft.append(("M2 opens with accuracy", f"{pid} M2", "lead with the outcome; the figure comes after"))

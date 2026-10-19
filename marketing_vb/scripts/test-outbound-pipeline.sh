@@ -724,6 +724,33 @@ cp "$B.good" "$B"
 mutate "100+ in the approved wording" "$B" '(One platform ran 34,000 scans in 2025\.)' '\1 3DLOOK has worked with 100+ clients.'
 check "«3DLOOK has worked with 100+ clients» -> 0" 0 $OP split-messages --campaign $P --in messages/_batch-all.md
 cp "$B.good" "$B"
+# 2026-10-19 (us-employer-obesity-care): what passed the gate and QC found by hand
+mutate "«so» introducing a result" "$B" 'Your roadmap covers tracking\.' 'Your roadmap covers tracking, so your team can see change early.'
+check "«, so your team can…» -> 1" 1 $OP split-messages --campaign $P --in messages/_batch-all.md
+grep_check "and the failure names it" "introducing a result" \
+  $OP split-messages --campaign $P --in messages/_batch-all.md
+cp "$B.good" "$B"
+mutate "a conversational «so»" "$B" 'Your roadmap covers tracking\.' 'Your roadmap covers tracking, so no pressure.'
+check "«, so no pressure» is not a result -> 0" 0 $OP split-messages --campaign $P --in messages/_batch-all.md
+cp "$B.good" "$B"
+mutate "a period glued to the calendar link" "$B" 'olena-kudriavtseva\n' 'olena-kudriavtseva.\n'
+check "«…olena-kudriavtseva.» -> 1" 1 $OP split-messages --campaign $P --in messages/_batch-all.md
+grep_check "and the failure names it" "punctuation on a link" \
+  $OP split-messages --campaign $P --in messages/_batch-all.md
+cp "$B.good" "$B"
+$OP split-messages --campaign $P --in messages/_batch-all.md >/dev/null 2>&1
+check "«15 min» without a call-length rule -> 0" 0 $OP check-messages --campaign $P
+cp "$CAMP/$P/hypothesis.md" "$CAMP/$P/hypothesis.md.bak"
+mutate "a call-length ban into the rules" "$CAMP/$P/hypothesis.md" '^(- No client is named anywhere in cold copy\.)$' '\1\n- No call length (no minutes).'
+check "«15 min» when the hypothesis bans call length -> 1" 1 $OP check-messages --campaign $P
+grep_check "and the failure names it" "call length" $OP check-messages --campaign $P
+mv "$CAMP/$P/hypothesis.md.bak" "$CAMP/$P/hypothesis.md"
+mutate "a rule sentence, anna" "$B" 'Your roadmap covers tracking\.' 'Your roadmap covers tracking. No client is named anywhere here.'
+mutate "a rule sentence, finn" "$B" 'Churn usually starts' 'No client is named anywhere here. Churn usually starts'
+mutate "a rule sentence, dan" "$B" 'Growth teams pay' 'No client is named anywhere here. Growth teams pay'
+grep_check "a rule sentence copied by three people is noted" "card wording as copy" \
+  $OP split-messages --campaign $P --in messages/_batch-all.md
+cp "$B.good" "$B"
 # 2026-10-07: one product-sentence opening in 10 of 15 people at a network, endings varied
 # (anna, finn and cara are all Groupco; dan is at Gamma)
 mutate "one opening, anna" "$B" 'A scan between check-ins shows change early\.' 'A guided two-photo scan from home shows change early between check-ins.'
