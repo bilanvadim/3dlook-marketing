@@ -120,7 +120,7 @@ Feature screen per row is in `notes` of companies.csv; sources in `source_url`. 
 - Website: https://www.preventicum.de
 - Source: https://preventicum.co.uk/
 - Facts for Message 1: Private executive health check-up practice in Essen (cardiology, radiology MRI) for self-payers and corporate clients; check-ups repeat on the client's cycle, no app or follow-up programme found.
-- Screen: segment=B; fit=3; retest=client cycle (unpublished); member_app=not found; body_measure_onsite=imaging (MRI); camera_scan=no; b2b=yes (executive check-ups); parent=none; product_hq=DE (Essen), London site does not route the account; released=vadim-2026-10-19. preventicum.de redirects to preventicum.co.uk. SIZE_UNPROVEN.
+- Screen: segment=B; fit=3; retest=client cycle (unpublished); member_app=not found; body_measure_onsite=imaging (MRI); camera_scan=no; b2b=yes (executive check-ups); parent=none; product_hq=DE (Essen), London site does not route the account; released=vadim-2026-10-19. preventicum.de redirects to preventicum.co.uk. SIZE_UNPROVEN. Check 2026-10-19: every preventicum.de path lands on preventicum.co.uk, footer "Preventicum UK Ltd" (Companies House 05149731, CQC-registered, London); no Essen or German entity on the live site and none found by search, so product_hq=DE is unproven; Essen not usable in Message 1 until confirmed; kept on olena under Vadim's decision (2) pending his call.
 
 ### Hello Inside (released by Vadim 2026-10-19)
 - Website: https://helloinside.com
@@ -154,8 +154,8 @@ wellabe.com is a US insurer (wrong row removed). The German Wellabe was absorbed
 - Neko Health (own hardware), Lykon (Lifesum group), Clinique La Prairie (declined 2026-10-13): hypothesis defaults.
 - Wellabe.com: US insurer, wrong company.
 - Bioniq: London product HQ and supplements-first. Routed note: katerina (UK), not an olena row.
-- Prevention Center (USZ, Zurich): hospital check-up department. Clinic Les Alpes: addiction and psychiatric clinic. Avea: supplements-first. Dr.Dropin (Oslo): telehealth GP service with employer checks, overlaps the telehealth thesis. Healthcaters, Vipali, Una Health: consumer or workplace wellness apps, DiGA. &niped (NL): one-off screening, Robidus-owned. OneLab (Stockholm): occupational health provider.
-- Holo (ES), Limitless (BE), Riva Medical (BE, 2-10 staff), BizMed (SE), Qura (IT, offering unclear), AERA Health (HQ unclear), Macromo, Biolytica: see pool or insufficient evidence.
+- Prevention Center (USZ, Zurich): hospital check-up department. Clinic Les Alpes: addiction and psychiatric clinic. Avea: supplements-first. Healthcaters, Vipali, Una Health: consumer or workplace wellness apps, DiGA. &niped (NL): one-off screening, Robidus-owned. OneLab (Stockholm): occupational health provider.
+- Holo (ES), Limitless (BE), Riva Medical (BE, 2-10 staff), BizMed (SE), Qura (IT, offering unclear), AERA Health (HQ unclear): insufficient evidence.
 - Blue Longevity, Longevity Suite, Recover Society, Cerva 16, Liv Longevity Labs, Medicus AI, Nightingale, Institut Pasteur de Lille, Helios Prevention Center, VIMED: anti-cases or no evidence (first pass).
 
 ## Coverage gaps / risks
@@ -172,4 +172,4 @@ Counting these would reach 25-30. Each is dropped only by a default or an anti-c
 - Neko Health (Open question 1), Lykon (Open question 2).
 - Longevity Suite (IT/CH): treatment network, if Vadim accepts diagnostics membership scope.
 
-(Seven names released by Vadim on 2026-10-19 were moved from this pool into the company list.)
+(Seven names released by Vadim on 2026-10-19 were moved from this pool into the company list; Dr.Dropin, Macromo and Biolytica were also taken off the excluded list above.)
