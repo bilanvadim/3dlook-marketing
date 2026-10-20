@@ -1,0 +1,88 @@
+{
+ "generated": "2026-10-20T05:40:21+00:00",
+ "items": [
+  {
+   "id": "6bda2757-38dc-4a58-8f4c-53536146f226",
+   "title": "CareCycle Launches Free AI-Powered Medicare Plan Comparison Tool",
+   "date": "2026-10-19",
+   "tags": [
+    "AgeTech / Senior Care",
+    "Medicare and Medicaid",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/carecycle-launches-free-ai-powered-medicare-plan-comparison-tool"
+  },
+  {
+   "id": "b6e97535-bf9d-40f7-a0f6-62dc3d8d64f1",
+   "title": "Allswell Raises $7M to Expand LGBTQ+ Mental Health Care",
+   "date": "2026-10-19",
+   "tags": [
+    "Mental & Behavioral Health",
+    "Investments and Partnerships",
+    "Health Equity / SDoH",
+    "Startup"
+   ],
+   "url": "https://hlth.com/insights/news/allswell-raises-7m-to-expand-lgbtq-mental-health-care"
+  },
+  {
+   "id": "bf1177d1-1d9a-4c92-9901-b606433989ad",
+   "title": "Carenet Health Acquires Invene to Scale Agentic AI for Major Payers",
+   "date": "2026-10-19",
+   "tags": [
+    "Payer (Insurer)",
+    "Interoperability / Data Management",
+    "Investments and Partnerships",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/carenet-health-acquires-invene-to-scale-agentic-ai-for-major-payers"
+  }
+ ],
+ "analyses": {
+  "6bda2757-38dc-4a58-8f4c-53536146f226": {
+   "id": "6bda2757-38dc-4a58-8f4c-53536146f226",
+   "score": 0,
+   "segment": "—",
+   "what": "CareCycle (YC) запустила безкоштовний AI-інструмент Match Your Medicare для порівняння планів Medicare за вартістю, ліками та мережею лікарів.",
+   "why": "Це інструмент для вибору страхового плану. Дані про тіло, BMI чи wellness-верифікацію тут не потрібні, тож точки входу для FitXpress немає.",
+   "play": "none",
+   "companies": [
+    "CareCycle",
+    "Y Combinator"
+   ],
+   "_date": "2026-10-19"
+  },
+  "b6e97535-bf9d-40f7-a0f6-62dc3d8d64f1": {
+   "id": "b6e97535-bf9d-40f7-a0f6-62dc3d8d64f1",
+   "score": 0,
+   "segment": "—",
+   "what": "Allswell залучила $7M seed на розширення віртуальної психотерапії для LGBTQ+ (DC, Maryland, Virginia). У 2027 планує додати medication management.",
+   "why": "Це лише поведінкове здоров'я, без weight-loss чи метрик тіла, тому FitXpress тут не потрібен.",
+   "play": "none",
+   "companies": [
+    "Allswell",
+    "Rethink Impact",
+    "Magnify Ventures",
+    "Ulu Ventures",
+    "Hopelab Ventures"
+   ],
+   "_date": "2026-10-19"
+  },
+  "bf1177d1-1d9a-4c92-9901-b606433989ad": {
+   "id": "bf1177d1-1d9a-4c92-9901-b606433989ad",
+   "score": 0,
+   "segment": "—",
+   "what": "Carenet Health купила Invene, консалтингову компанію з AI та data engineering, щоб масштабувати агентний AI і автоматизацію workflow для payers і провайдерів. Це вже 12-а угода Carenet, після Orbita.",
+   "why": "Ідеться про AI для адмін-процесів і інтеграції даних payers, без зв'язку з даними про тіло. До того ж за ICP компанії після свіжої M&A не беремо в роботу.",
+   "play": "none",
+   "companies": [
+    "Carenet Health",
+    "Invene",
+    "Orbita"
+   ],
+   "_date": "2026-10-19"
+  }
+ },
+ "posts": []
+}
