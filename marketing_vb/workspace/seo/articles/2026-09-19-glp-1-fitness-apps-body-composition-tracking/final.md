@@ -2,190 +2,140 @@
 slug: 2026-09-19-glp-1-fitness-apps-body-composition-tracking
 product: fitxpress
 status: edited
-title: "GLP-1 Muscle Loss and Fitness Apps: Tracking Body Composition Beyond Scale Weight"
+title: "GLP-1 Muscle Loss Concerns for Fitness Apps: Tracking Body Change Beyond Scale Weight"
 primary_keyword: glp-1 muscle loss
 intent: MOFU
 author: Assel Sekerova
 plan: plan.md
-word_count: 1828
-word_count_lint_incl_open_items: 2140
+revision: 2
+review_round: "Review 1 (2026-10-20), structural"
+edited: 2026-10-20
+editor_report: editor-report.md
+target_words: 1600
+word_count: 1616
+word_count_lint_incl_concept_notes: 1795
 editing_passes: 5
-edit_rounds: 2 (first pass, then QC fix pass on the QC report of the same day)
 ai_density_before: 0.0
 ai_density_after: 0.0
-claims_verified: [FX-001, FX-002, FX-005, FX-006, FX-007]
-claims_external: [Neeland Linge Birkenfeld 2024 PMID 38937282, joint advisory 2025 PMID 40445127, KFF Health Tracking Poll published 2025-11-14]
+gate_m1_note: gate 8 flags GLP-1 in the H1, the known title case accepted by Vadim at checkpoint 1 (2026-09-19); expanded at first prose use, title unchanged per plan
+claims_verified: [FXS-MEDICAL, T-MUSCLE-FUNCTION, T-TABLE, T-WEIGHT-SOURCE, T-ESTIMATES, T-BASELINE, FXS-POPULATION, FXS-DELIVERY, FXS-SPEED, FXS-OUTPUTS, T-BODY-PROGRESS, T-RECORDS-ACTORS, T-PRIVACY-ROLES, FXS-REPEAT, FXS-ACCURACY, T-REPEAT-SCOPE, T-VALIDATION, T-GUARDRAIL-DXA, T-34K, FXS-LIFECYCLE]
+claims_external: ["Neeland, Linge, Birkenfeld 2024, Diabetes Obes Metab, PMID 38937282 (abstract re-checked by the editor via NCBI E-utilities 2026-10-20: 40%-60%, 15% or less, organs/bone/fluids/water, 'appear to be adaptive')", "Joint advisory ACLM/ASN/OMA/TOS 2025, obesity.org release of 2025-05-30, paper PMID 40445127 (release re-checked by the editor 2026-10-20: 'adequate protein intake and strength training to preserve lean mass', 'muscle and bone loss'; the word 'resistance' does not occur)", "KFF Health Tracking Poll, published 2025-11-14 (re-checked by the editor 2026-10-20: 'About one in eight adults (12%) say that they are currently taking a GLP-1 drug')"]
 changes_summary: |
-  Round 1 (edit stage):
-  - Pass 1, citation dedup. Neeland 2024 PubMed link cut from 5 to 2: one in Section 3 (on the author names), one in FAQ 1. Every lean-mass sentence keeps attribution in words ("The review reports", "Other studies in the same review", "The same review notes", "Its definition of lean mass", "the authors write", FAQ 1 "a review by Neeland and colleagues notes"). No lean-mass or muscle statement is in our own voice.
-  - Pass 1, joint advisory. Two links to one advisory (PubMed paper and obesity.org release) cut to one, the PubMed record. obesity.org stays in the claim marker as the source of the priority wording (Open item 2).
-  - External numbers. The three allowed figures and their claim-external markers are kept. The writer's "eight nutritional priorities" was removed as an unlisted external number.
-  - Sentence splits. Neeland range (27 words) now three sentences, keeping "some" and both ends. Lean mass vs muscle (27) now two. Guardrail 7 sentence kept word for word in its short-name form (21 words); the DXA and BIA expansions moved into a lead-in sentence.
-  - Near-duplicate L32~L75 cut: the output list stays once, in Section 6 (FX-005).
-  - Repeated phrases reduced: "the prescribing program" 4 to 0 in prose, "GLP-1 treatment" 4 to 2, "GLP-1 programs" 4 to 2, "body composition tracking" 4 to 2, "body composition estimates" 4 to 2.
-  - Terminology: corrective "is an estimate, not a measurement" removed; "rests on" became "depends on".
-  - Verification: PubMed abstracts 38937282 and 40445127, the obesity.org release and the KFF release checked against the text; all internal URLs return 200. No customer names, no drug names, no em or en dashes, no banned words.
-  Round 2 (QC fix pass, coordinator items 1-8):
-  - Item 1. S3 now ends "Strength training is already part of the programs many fitness apps offer." ("delivers" gone). S4 now says what the view displays: "A fuller view also displays circumferences and composition estimates." S6 method sentence now uses compliance.md section 3: "Body composition estimates are derived from the body measurements along with height and optional weight." The repeatability sentence is scoped to "a trend view of body measurements", and FAQ 1 says the published accuracy figures cover body measurements. S2 training bullet no longer says training history puts the composition trend in context.
-  - Item 2. "Reference methods for body composition include DXA and professional BIA" became "Some clinical protocols and research studies require dual-energy X-ray absorptiometry (DXA) or professional bioelectrical impedance analysis (BIA)." Guardrail 7 sentence unchanged. S8 H2 and H3 now name "DXA or professional BIA"; the H3 bullets are practical conditions (protocol specifies the method, infrequent appointments, access to a facility).
-  - Item 3. Clinical boundary kept in the scope note, the S7 role split (table and one sentence) and FAQ 3. Cut: S2 "Who decides what?" bullet, S5 route bullet, S7 "FitXpress is not a medical device." (kept once, in the scope note) and its "decisions stay with the prescribing clinician" line, S8 clinician bullets, the pilot's "clinical questions routed out of the app", FAQ 2's last sentence. "Does not measure muscle" kept in the scope note and FAQ 1 only; the S6 sentence was cut.
-  - Item 4. Pointer closers cut from 13 to 4 (S3 market link, S4 visual-progress link, S9 tools link, CTA). S6 accuracy paragraph no longer ends on a framework pointer; the link sits mid-paragraph on "reported accuracy" (restored on coordinator request), and the repeatability paragraph keeps its own. The product-page link moved into the first S6 sentence. S1 and S8 links now open their paragraphs, and the S10 privacy link sits mid-paragraph. FAQ 1 and FAQ 3 carry their links on content phrases.
-  - Item 5. S9 kept as its own section, trimmed to two bullets. The coaching-article limitation is gone; the replacement is a GLP-1 point about a second record made by a different method when the program already uses DXA or professional BIA. S10 change thresholds and alternative path cut to one sentence each; thresholds links the coaching article, and the alternative path is the approved limitation sentence.
-  - Item 6. S1 "the choice turns on two questions" removed; the paragraph now carries the hub link and the approximate-picture sentence. The S5 colon aphorism is gone, and its point is replaced by the GLP-1 baseline point: a member may already be partway through treatment, so the baseline marks where the app's record begins. S8 lead-in "Each method answers a different question" became an explicit depends-on sentence. The S8 composition bullets that repeated S5 were replaced. FAQ 2 gained the point that scans spaced closer than the expected change add records without information.
-  - Items 7 and 8. Customer name removed from this frontmatter. word_count is article prose; the lint figure, which includes the Open items block, has its own field.
+  - Locked text: all 24 locked strings (R1-R4, every T-* and FXS-* sentence the plan assigns, the A3 repeatability lead, the P3b short form, the FAQ 2 G4 ending, the v2 Next steps pair) checked by script against final.md, each present exactly once, word for word. No locked sentence was moved out of its section or reworded.
+  - Pass 1, citation dedup. External sources: KFF once, obesity.org once, PubMed twice (Section 2 and FAQ 1, which is locked R3). Internal repeats kept on purpose: the fitness landing three times (decisions A2), the accuracy framework on P3a and P3b (the accuracy gate wants a link in each paragraph that carries a figure) and in FAQ 1 (R3), the privacy FAQ in Section 5 and FAQ 2, the coaching article in Section 4 and Section 5 (plan link table). Removed: the optional top-7 tools link (see editor-report.md, judgment call 4).
+  - Pass 2, structure. Section 1 down link rewritten so the anchor reads as part of the sentence ("With body composition tracking for fitness apps, circumferences and composition estimates sit on the same timeline as weight and training history."), at 15.8% of the body. Section 5 P3a now opens on why repeatability matters for a progress view; the framework sentence moved second. No connective openers between H2s.
+  - Pass 3, voice. Joint advisory: stacked negation "does not, by itself, fulfill all of that guidance" (M2 shape) became "An app that offers workouts can support one part of that guidance." Section 3 lead-in: "what the app does not conclude" became "which conclusions the app avoids". Section 4 review of differences gained one practical sentence: "Smaller differences can stay in the record without a callout in the member's view." Section 5: "GLP-1 programs ... use the same integration" hedged to "can use"; "Each record is read against" became "is best read against" (stated as the recommendation it is); the pilot's last sentence no longer reuses "baseline" in a second sense.
+  - Pass 3b. Hub-owned boundary section: the AI in Fitness hub owns "What FitXpress does not do", so the scope note and Section 5 carry the boundary (editorial-rewrites 7.4). Vertical boundary held: no dosing, eligibility, drug names or muscle assessment. Four link directions present. CTA is the MOFU evaluation link, no demo button.
+  - Pass 3c/3d. Detector CLEAN, 0.0 per 1,000 words, zero soft markers. Terminology Part 1 and Part 2 run as a checklist: no organization, buyer, we/our, you, rather than, plus, so, let, positioned as, content-plan labels, em or en dashes. One "X, not Y" kept (KFF scope, required by decisions 6). "customer" once, inside the canonical repeatability lead ("real-world customer dataset"), a contract sense.
+  - Pass 4. Abbreviations: GLP-1, API, SDK, BMR, DXA, BIA expanded at first body use; BMI and US bare; KFF is the organization's own name. Numbers: every figure is in approved_claims or an external claim marker. No banned words.
+  - Round 2 (publish fix pass, coordinator): gate_m1_note added to the frontmatter; '## Frequently asked questions' renamed '## FAQ'. No prose change.
+  - Round 3 (QC fix pass, QC 16/20 findings 1-2, Section 5 only). The T-34K paragraph already sat directly before the pilot paragraph; it gained one bridge sentence after its two locked sentences: "Before an app commits to periodic check-ins at that scale, it needs to know whether its own members come back for repeat scans." No link, no landing link, locked sentences verbatim. Pilot paragraph: its generic last sentence ("Measures the app already records, such as check-in rates, can be compared with their pre-launch levels.") became a two-sentence decision rule built from Section 4 and the plan's pre-launch comparison, with no numbers: "That interval is set before launch, long enough for the expected change to exceed observed scan-to-scan variation. The app team also sets in advance the repeat-completion level, measured against the app's pre-launch check-in rates, that justifies a wider rollout." QC point 3 (cut the scope note to one sentence) declined by the coordinator: decisions 6 keeps it verbatim.
 self_check: |
-  - What still read as machine-made after round 1, per QC: the refrain of one clinical boundary in eight places, thirteen paragraphs closing on a pointer, a colon aphorism in S5, and the two-questions formula with no choice set up. All four are rewritten; counts checked by script on the final text (boundary: scope note, S7, FAQ 3; closers: 4).
-  - Round 1's self-check overstated its fixes (it claimed the boundary and pointer problems were fixed). This round's counts come from a scripted pass over the file.
-  - Still template-shaped: 12 H2s with bold-label lists, kept because Vadim approved the 12-section outline. The S5 capture bullet still resembles the GLP-1 market article's capture requirement (Open item 7).
-  - Gate numbers, article prose only: 108 sentences, mean 14.2 words, 0 over 25, 0 over 35, longest 25. Detector 0.0 per 1,000 words, CLEAN.
+  - Section 5 still read as assembled: nine paragraphs, about 270 of its 492 words are locked approved copy, joined thinly. Fixed what is fixable around the locks: P3a now opens on the progress-view reason (the app-team thread) instead of on another page, and P1 no longer ends on a pointer to a vendor list. Left as is: two consecutive locked sentences both name "the fitness app company and the prescribing provider".
+  - The joint-advisory paragraph ended on a hedge built from two negatives, which read as defensive. Now one positive sentence.
+  - Section 4 is five bold-label blocks in a row, a textbook shape the plan prescribes. Kept, but the review-of-differences block now ends on what the app does with small differences, not on a dependency statement.
+  - Section 1 still ends on two pointer sentences (market, retention). Kept: the plan places them there, and the retention sentence is the boundary that keeps retention claims out of this page.
+  - Gate numbers after round 3: 94 sentences, mean 15.3 words, p90 22, over_25 1 (1.1%, the locked first sentence of T-PRIVACY-ROLES, 26 words), over_35 0. Detector 0.0/1000, CLEAN.
+open_items:
+  - "H1 (decisions 1, for Vadim): the reviewer's verbatim H1 'GLP-1 and Fitness Apps: Tracking Body Change Beyond Scale Weight' is a one-line swap. It removes the primary keyword from the H1, so gate 7 fails unless the primary keyword changes too. Shipped H1 keeps 'GLP-1 Muscle Loss Concerns for Fitness Apps: ...'."
+  - "34,000 scans (decisions 5, for Vadim): the reviewer asks for the customer's explicit permission to describe the use publicly. The 19.09 decision covers the anonymized mention. If sign-off is wanted and not given, the two T-34K sentences (their own paragraph in Section 5) cut cleanly."
+  - "Incoming links (decisions H, CMS work for Assel / site editors): after publication, add contextual links INTO this article from ai-in-fitness-industry and glp-1-market."
+  - "M1 on 'GLP-1' in the H1: accepted known failure (Vadim, 2026-09-19). article_lint.py reports FAIL on that one gate only; every other gate passes."
+  - "FYI, wording that differs from the decisions file's paraphrase (no action unless the reviewer wants her words back): the joint advisory says 'strength training', the advisory's own term on obesity.org (re-checked 2026-10-20; 'resistance' does not occur there), where decisions 6 says 'resistance training'; and the reviewer's 'does not, by itself, fulfill all of that guidance' ships as 'An app that offers workouts can support one part of that guidance.' (stacked-negation rule M2). Same meaning, no claim added."
 ---
 
-# GLP-1 Muscle Loss and Fitness Apps: Tracking Body Composition Beyond Scale Weight
+# GLP-1 Muscle Loss Concerns for Fitness Apps: Tracking Body Change Beyond Scale Weight
 
-## Where scale weight can fall short for members on GLP-1 treatment
+## Why GLP-1 treatment is a question for fitness apps
 
-(Cover) - Concept
+(Cover) - Concept: A phone on a gym bench beside a dumbbell. On screen, a simple fitness-app check-in card shows a dated weight line and a waist-circumference tile marked "body scan", with training-block markers along the time axis. Any body shown is a neutral outline with no muscle definition.
 
 A member taking a glucagon-like peptide-1 (GLP-1) medication logs a falling scale weight in a fitness app. The number shows how much weight changed. It does not show whether fat mass, lean mass, or fluid made up the change.
 
-In fitness apps, [structured body data](https://3dlook.ai/content-hub/ai-in-fitness-industry/) already supports progress tracking, personalization, and digital coaching. For that member, recording composition estimates and circumferences next to weight gives an approximate picture of what changed and where.
+In fitness apps, [structured body data](https://3dlook.ai/content-hub/ai-in-fitness-industry/) already supports progress tracking, personalization, and digital coaching. Waist, hip, thigh, and upper-arm circumferences show where change happens. A guided smartphone scan can capture them remotely.
 
-**Scope note.** The focus is fitness and coaching apps, including those operated by GLP-1 programs. FitXpress supplies body measurements and composition estimates, and its lean mass estimate is not a measurement of muscle. It does not evaluate GLP-1 medications, doses, or side effects. FitXpress is not a medical device. Clinical questions stay with the prescribing clinician.
+**Scope note.** The focus is fitness and coaching apps, including those operated by GLP-1 programs. FitXpress supplies body measurements and composition estimates, and its lean mass estimate is not a measurement of muscle. It does not evaluate GLP-1 medications, doses, or side effects. FitXpress is not a medical device. Clinical questions stay with the prescribing clinician. <!-- claim: FXS-MEDICAL -->
 
-## Short answer: what fitness apps can track beyond scale weight
+In a [KFF poll](https://www.kff.org/public-opinion/poll-1-in-8-adults-say-they-are-currently-taking-a-glp-1-drug-for-weight-loss-diabetes-or-another-condition-even-as-half-say-the-drugs-are-difficult-to-afford/), 12% of US adults said they were currently taking a GLP-1 drug, a figure for adults generally, not fitness app members. <!-- claim: external, source: KFF Health Tracking Poll, fielded 2025-10-27 to 2025-11-02, published 2025-11-14, re-checked 2026-10-20 -->
 
-- **Scale weight** records total change as one number and can be logged at every weigh-in.
-- **Body composition estimates** split that change into fat and lean components. Their meaning depends on the method that produced them. <!-- claim: FX-005 -->
-- **Circumferences** at the waist, hip, thigh, and upper arm show where change happens. A guided smartphone scan can capture them remotely.
-- **Training history** is already in the app, including strength progression and completed sessions.
+Some members on GLP-1 treatment also follow a strength program in the app. The app already holds their training history, such as strength progression and completed sessions. A weight chart alone leaves that training record disconnected from body-change data.
 
-## What research shows about GLP-1 muscle loss and lean mass
+For the app team, the question is what to show next to the scale number. With [body composition tracking for fitness apps](https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/), circumferences and composition estimates sit on the same timeline as weight and training history.
 
-A 2024 review by [Neeland, Linge, and Birkenfeld](https://pubmed.ncbi.nlm.nih.gov/38937282/) in *Diabetes, Obesity and Metabolism* examined lean mass changes with GLP-1-based therapies. The review reports that in some studies, lean mass reductions made up 40% to 60% of total weight lost. Other studies in the same review put the share at approximately 15% or less. The authors list population, drug-specific, and comorbidity effects among the possible reasons. <!-- claim: external, source: Neeland IJ, Linge J, Birkenfeld AL, Diabetes Obes Metab 2024, doi 10.1111/dom.15728, PMID 38937282, abstract verified verbatim 2026-09-19 -->
+On the program side, the GLP-1 market analysis explains [why scale weight alone gives an incomplete progress record](https://3dlook.ai/content-hub/glp-1-market/). Whether visible progress affects engagement and retention is a separate question, covered in [visual progress tracking for GLP-1 adherence and retention](https://3dlook.ai/content-hub/visual-progress-tracking-glp1-adherence-retention/).
 
-The same review notes that lean mass changes may not always reflect muscle changes. Its definition of lean mass also covers organs, bone, fluids, and water in fat tissue. Drawing on recent evidence, including magnetic resonance imaging studies, the authors write that skeletal muscle changes with GLP-1 receptor agonist treatment "appear to be adaptive". <!-- source: same abstract, PMID 38937282, re-checked 2026-09-19 -->
+## What the evidence says about GLP-1 muscle loss, and what a scan cannot determine
 
-[A 2025 joint advisory](https://www.obesity.org/nutritional-priorities-to-support-glp-1-therapy-for-obesity/) names muscle and bone loss among the challenges of GLP-1 therapy. It comes from the American College of Lifestyle Medicine, the American Society for Nutrition, the Obesity Medicine Association, and The Obesity Society. Its nutritional priorities include adequate protein intake and strength training to preserve lean mass. Strength training is already part of the programs many fitness apps offer. <!-- claim: external, source: link and recommendation wording both https://www.obesity.org/nutritional-priorities-to-support-glp-1-therapy-for-obesity/ (priority 6); paper is Mozaffarian et al., Obesity 2025, doi 10.1002/oby.24336, PMID 40445127; link moved to obesity.org at checkpoint 2 (Vadim, 2026-09-19); verified 2026-09-19 -->
+A 2024 review by [Neeland, Linge, and Birkenfeld](https://pubmed.ncbi.nlm.nih.gov/38937282/) in *Diabetes, Obesity and Metabolism* examined lean mass changes with GLP-1-based therapies. The review reports that in some studies, lean mass reductions made up 40% to 60% of total weight lost. Other studies in the same review put the share at approximately 15% or less. <!-- claim: external, source: Neeland IJ, Linge J, Birkenfeld AL, Diabetes Obes Metab 2024, doi 10.1111/dom.15728, PMID 38937282, abstract re-checked via NCBI E-utilities 2026-10-20 -->
 
-On the program side, the GLP-1 market analysis explains [why scale weight alone gives an incomplete progress record](https://3dlook.ai/content-hub/glp-1-market/).
+The same review notes that lean mass changes may not always reflect muscle changes. Its definition of lean mass also covers organs, bone, fluids, and water in fat tissue. The authors write that skeletal muscle changes with GLP-1 receptor agonist treatment "appear to be adaptive". <!-- claim: external, source: same abstract, PMID 38937282, re-checked 2026-10-20 -->
 
-## Why GLP-1 treatment is relevant to fitness and coaching apps
+[A 2025 joint advisory](https://www.obesity.org/nutritional-priorities-to-support-glp-1-therapy-for-obesity/) names muscle and bone loss among the challenges of GLP-1 therapy. It comes from the American College of Lifestyle Medicine, the American Society for Nutrition, the Obesity Medicine Association, and The Obesity Society. The advisory supports strength training, alongside adequate protein intake, as part of broader nutritional and medical management. An app that offers workouts can support one part of that guidance. <!-- claim: external, source: https://www.obesity.org/nutritional-priorities-to-support-glp-1-therapy-for-obesity/ (released 2025-05-30; priority 6 "adequate protein intake and strength training to preserve lean mass"; challenges "muscle and bone loss"); paper Mozaffarian et al., Obesity 2025, doi 10.1002/oby.24336, PMID 40445127; re-checked 2026-10-20 -->
 
-In a [KFF Health Tracking Poll](https://www.kff.org/public-opinion/poll-1-in-8-adults-say-they-are-currently-taking-a-glp-1-drug-for-weight-loss-diabetes-or-another-condition-even-as-half-say-the-drugs-are-difficult-to-afford/), about one in eight US adults (12%) said they were currently taking a GLP-1 drug. The figure covers use either to lose weight or to treat a chronic condition. KFF fielded the poll from October 27 to November 2, 2025. <!-- claim: external, source: KFF Health Tracking Poll, published 2025-11-14, verified 2026-09-19 -->
+A body scan cannot settle what this research leaves open about muscle. A clinician's assessment of muscle function is a separate question from a composition reading. <!-- claim: T-MUSCLE-FUNCTION -->
 
-Fitness and coaching apps are likely to count some of these adults among their members, whether or not a member tells the app.
+## What a fitness progress view can show for members on GLP-1 treatment
 
-For members treated for weight management, a falling scale weight is the expected direction. A progress view built on the scale then says little about what the training program adds. A fuller view also displays circumferences and composition estimates. Whether visible progress affects engagement and retention is a separate question, taken up in [visual progress tracking for GLP-1 adherence and retention](https://3dlook.ai/content-hub/visual-progress-tracking-glp1-adherence-retention/).
+The app team decides what its progress view displays, how each value is labeled, and which conclusions the app avoids. Those choices matter more when a member's weight changes for reasons outside the training program.
 
-## How a fitness app can track body composition during GLP-1 treatment
+<!-- claim: T-TABLE -->
 
-On the app side, the workflow covers a baseline, check-ins, capture conditions, and a progress view.
-
-- **Baseline.** The first scan takes place at onboarding or at the start of a strength program. A member may already be partway through treatment by then. The baseline marks where the app's record begins, and any earlier change sits outside it.
-- **Check-ins at defined points.** Scans follow the training plan, for example at the end of each training block.
-- **Repeatable capture conditions.** Members wear similar clothing and scan at about the same time of day, in the same setting. The guided flow checks pose and capture quality.
-- **One progress view.** Weight, circumferences, and composition estimates appear together, next to training history. Labels mark which values are estimates.
-
-(Image 1) - Concept
-
-The workflow runs the same way whether or not the app knows about a member's medication.
-
-## Where FitXpress fits
-
-(Image 2) - Concept
-
-[FitXpress for connected and digital fitness apps](https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/) embeds guided two-photo capture, front and side, through a software development kit (SDK). Results arrive in under 45 seconds. The outputs include 80+ body measurements, body composition estimates (body fat percentage, fat mass, and lean mass), and a 3D model. BMI and basal metabolic rate (BMR) are included as calculated metrics. <!-- claim: FX-006 --> <!-- claim: FX-005 -->
-
-For progress views, FitXpress compares two scans that the app selects. Body composition estimates are derived from the body measurements along with height and optional weight.
-
-Some clinical protocols and research studies require dual-energy X-ray absorptiometry (DXA) or professional bioelectrical impedance analysis (BIA). FitXpress is not equivalent to DXA, BIA, or a calibrated scale when the workflow, protocol, or regulatory standard requires those methods.
-
-What counts as adequate performance depends on how the measurements will be used. For a trend view of body measurements, repeatability is especially important, because each check-in is compared with an earlier scan. The [mobile body scanning accuracy framework](https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/) evaluates repeatability separately from accuracy. Internal repeatability testing used a real-world customer dataset with five scans per participant. For most of the evaluated measurements, typical scan-to-scan differences remained below 1 cm. <!-- claim: FX-002 -->
-
-A separate internal validation compared FitXpress measurements with expert pattern-maker tape measurements. Across the evaluated body measurements, [reported accuracy](https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/) was approximately 96-97%, with a typical absolute error of 1.5-2.0 cm depending on the body part. Detailed methodology is available under a non-disclosure agreement. These findings establish performance relative to the selected reference; they do not demonstrate superiority over expert tape measurement. <!-- claim: FX-001 -->
-
-A weight-loss management platform ran 34,000 FitXpress scans in 2025. It used them for periodic check-in progress tracking, 3D visualization, and body composition context. <!-- claim: FX-007 -->
-
-## What the app, the prescribing program, and FitXpress each handle
-
-When a member on GLP-1 treatment also uses a separate fitness app, two organizations hold parts of the progress record.
-
-| **Role** | **Responsible for** | **Uses body data to** |
+| **What the app receives** | **What it can show or do** | **What it should avoid concluding** |
 |---|---|---|
-| Prescribing clinician or GLP-1 program | Medication, dosing, side effects, and any clinical assessment of muscle or nutritional status | Review progress alongside clinical information, where its protocol includes body data |
-| Fitness or coaching app | Training programs, progress views, and member communication | Show measurement and composition trends next to training history |
-| Member | Completing scans and choosing what to share with each service | See change beyond the scale reading |
-| FitXpress | Body measurements, body composition estimates, a 3D model, and scan-to-scan comparison | Supply structured records to the app or program that integrates it |
+| Scale weight and scan estimates | Display dated trends with the measurement method labeled | Attribute a change to fat or muscle with certainty |
+| Circumferences and training history | Allow a member or coach to review both at a scheduled check-in | Claim the training program caused a measured change |
+| A concerning or inconsistent result | Check capture conditions and offer a route to the care team | Generate medication or clinical advice |
 
-FitXpress does not provide dose calculations, symptom tracking, prescribing recommendations, or automated clinical decision support.
+Weight in the progress view is the value the member enters or the app syncs from a connected scale. <!-- claim: T-WEIGHT-SOURCE --> Body composition estimates are derived from the body measurements along with height and optional weight. Body fat percentage comes from an anthropometric formula applied to those measurements. These are model-derived estimates to review alongside weight and measurements. They do not determine which tissue changed. <!-- claim: T-ESTIMATES -->
 
-## Scale weight, body composition estimates, and DXA or professional BIA: which fits when
+(Image 1) - Concept: An annotated app progress view, labeled "Illustrative example" on the image. Three dated trend rows share one time axis. Weight carries the label "entered by member" or "synced from scale". Waist and hip circumferences carry "body scan". Body composition estimates carry "estimate". Training blocks are shaded behind the axis, with check-in markers. One callout points at the method labels. No attribution of change to fat or muscle, and no medication fields.
 
-[Remote body measurement for online fitness coaching programs](https://3dlook.ai/content-hub/remote-body-measurement-online-fitness-coaching/) compares scales, tape measurements, photos, BIA, DXA, and mobile scans method by method. In a fitness app, the choice depends on how often members check in and what the result is used for.
+## How to run comparable body scan check-ins
 
-### Scale weight alone fits when
+On the app's side, comparable check-ins involve five parts: a baseline, a cadence, capture conditions, a review of differences, and an alternative path.
 
-- The app only needs a general weight trend.
-- Members check in rarely or decline body scans.
-- No training program in the app depends on composition context.
+**Baseline.** The first scan happens at onboarding or at the start of a strength program, with the same guided capture as later scans. A member may already be partway through treatment when the app's record begins. A later scan can establish a new baseline, but it cannot recreate the earlier measurement. <!-- claim: T-BASELINE -->
 
-### Body composition estimates fit when
+**Cadence.** Check-ins sit at defined points, such as the end of a training block. The interval depends on the expected change compared with typical scan-to-scan differences, and on the length of the block. Scans spaced closer than the change they are meant to show add records without adding information.
 
-- Members follow a strength program inside the app.
-- Coaches review check-ins as part of the program.
-- Check-ins happen remotely, between any clinic visits.
+**Capture conditions.** Members wear similar clothing and scan at about the same time of day, in the same setting. The guided flow checks pose and capture quality.
 
-### DXA or professional BIA fits when
+**Review of differences.** As in [online coaching programs](https://3dlook.ai/content-hub/remote-body-measurement-online-fitness-coaching/), the smallest difference worth showing a member depends on observed scan-to-scan variation and the check-in interval. Smaller differences can stay in the record without a callout in the member's view.
 
-- A clinical protocol or study specifies the method.
-- Measurements are infrequent enough to book as appointments.
-- Members can travel to a facility with the equipment.
+**An alternative path.** FitXpress was not specifically trained on data representing people with physical disabilities, and its measurement performance has not been established for this population. This matters when a disability affects the standard standing pose or capture sequence. <!-- claim: FXS-POPULATION --> The app can offer manual measurements or a weight-only progress view to members who cannot use standard capture.
 
-Consumer smart scales estimate composition through bioelectrical impedance, and readings depend on the device and the measurement conditions.
+## Where FitXpress fits, and what to test in a pilot
 
-## Fitness apps and GLP-1 programs this workflow fits
+(Image 2) - Concept: Capture to results. On the left, two phone screens show guided front and side capture, each with a pose outline and framing guide. On the right, a results screen shows a short list of circumferences, a smooth neutral 3D body model with no muscle definition, and composition estimates, each tagged "estimate".
 
-- **Fitness and coaching apps** that run strength programs with recurring check-ins, whether coaches review them or members follow a self-guided plan.
-- **GLP-1 programs** that add training features to their own GLP-1 app. [Structured body data for telehealth and digital health programs](https://3dlook.ai/structured-body-data-for-telehealth-digital-health-programs/) covers that setting. Clinics comparing vendors can start with [body composition and progress-tracking tools for remote GLP-1 clinics](https://3dlook.ai/content-hub/top-7-remote-body-composition-tools-glp-1-clinics/).
+FitXpress (3DLOOK) provides [body scanning for fitness apps](https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/) and supports body composition progress tracking inside the app's own interface. <!-- claim: FXS-DELIVERY --> The app embeds guided two-photo capture, front and side, through an application programming interface (API) or software development kit (SDK). Results arrive in under 45 seconds. <!-- claim: FXS-SPEED --> The outputs include 80+ body measurements, body composition estimates (body fat percentage, fat mass, and lean mass), and a 3D model. BMI and basal metabolic rate (BMR) are calculated metrics. <!-- claim: FXS-OUTPUTS --> GLP-1 programs that run their own member app can use the same integration.
 
-A member's GLP-1 program may already record body composition with DXA or professional BIA. The app's scans then form a second record made by a different method, and each record is best read against its own earlier values.
+The app company links each scan ID to its own member record and chooses which two scans to compare. 3DLOOK does not track individuals or determine whether two scans belong to the same person. <!-- claim: T-BODY-PROGRESS -->
 
-## Implementation and evaluation considerations
+When a member's treatment runs through a separate prescribing service, the fitness app company and the prescribing provider may each hold different records. <!-- claim: T-RECORDS-ACTORS --> Sharing records between the fitness app company and the prescribing provider depends on the [applicable lawful basis](https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/), privacy notices, member permissions, and the agreements between them. Consent is required in some workflows. <!-- claim: T-PRIVACY-ROLES -->
 
-**Consent and data sharing.** Photos, body measurements, and 3D models may be personal data, and body composition outputs can be health data, depending on use. The [FitXpress data privacy, security, and regulatory FAQ](https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/) covers storage, retention, and deletion. It also sets out how deployments work under the Health Insurance Portability and Accountability Act (HIPAA) and the General Data Protection Regulation (GDPR). When the app and a GLP-1 program are separate organizations, record sharing depends on the member's consent and on agreements between the two.
+Repeatability is especially important for a progress view, because each check-in is compared with an earlier scan. The [mobile body scanning accuracy framework](https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/) evaluates repeatability separately from accuracy. Internal repeatability testing used a real-world customer dataset with five repeated scans per participant. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm. <!-- claim: FXS-REPEAT -->
 
-**Change thresholds.** As in [online coaching programs](https://3dlook.ai/content-hub/remote-body-measurement-online-fitness-coaching/), the smallest difference worth showing a member depends on observed scan-to-scan variation and the check-in interval.
+A separate internal validation compared FitXpress measurements with expert pattern-maker tape measurements. Across the evaluated body measurements, [reported accuracy](https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/) was approximately 96-97%, with a typical absolute error of 1.5-2.0 cm depending on the body part. Detailed methodology is available under a non-disclosure agreement. <!-- claim: FXS-ACCURACY -->
 
-**An alternative measurement path.** FitXpress was not specifically trained on data representing people with physical disabilities, and its measurement performance has not been established for this population.
+These figures describe body measurements. They are not validated accuracy for lean mass, for detecting muscle loss, or for the smallest meaningful change during GLP-1 treatment. 3DLOOK's accuracy claims have not been peer-reviewed or externally validated through a third-party clinical study. <!-- claim: T-REPEAT-SCOPE --> <!-- claim: T-VALIDATION -->
 
-**Pilot measures.** A pilot can track scan completion, repeat check-in completion, and use of the progress view. Repeat completion matters most, because every comparison depends on members scanning again at the planned interval. Measures the app already records before launch, such as check-in rates, can be compared with a pre-pilot baseline.
+Some clinical protocols and research studies require dual-energy X-ray absorptiometry (DXA) or professional bioelectrical impedance analysis (BIA). FitXpress is not equivalent to DXA, BIA, or a calibrated scale when the workflow, protocol, or regulatory standard requires those methods. <!-- claim: T-GUARDRAIL-DXA --> [Remote body measurement for online fitness coaching programs](https://3dlook.ai/content-hub/remote-body-measurement-online-fitness-coaching/) compares scales, tape measurements, photos, BIA, DXA, and mobile scans method by method. Where the prescribing provider already records body composition with DXA or BIA, the app's scans form a second record made by a different method. Each record is best read against its own earlier values.
 
-## Frequently asked questions
+A weight-loss management platform ran 34,000 FitXpress scans in 2025. It used them for periodic check-in progress tracking, 3D visualization, and body composition context. <!-- claim: T-34K --> Before an app commits to periodic check-ins at that scale, it needs to know whether its own members come back for repeat scans.
+
+A pilot can track scan completion, repeat check-in completion, and use of the progress view. Repeat completion matters most, because every comparison depends on members scanning again at the planned interval. That interval is set before launch, long enough for the expected change to exceed observed scan-to-scan variation. The app team also sets in advance the repeat-completion level, measured against the app's pre-launch check-in rates, that justifies a wider rollout.
+
+## FAQ
 
 ### Can a mobile body scan measure muscle loss during GLP-1 treatment?
 
 A FitXpress scan does not measure muscle or muscle loss, and its [published accuracy figures](https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/) cover body measurements. The lean mass output is an estimate, and [a review by Neeland and colleagues](https://pubmed.ncbi.nlm.nih.gov/38937282/) notes that lean mass includes more than muscle. Where a protocol requires DXA, that method applies.
 
-### How often should a fitness app scan members on GLP-1 treatment?
-
-The interval depends on the size of the expected change compared with typical scan-to-scan differences, and on the length of the training block. Scans spaced closer than the change they are meant to show add records without adding information.
-
 ### Does a fitness app need to know whether a member takes a GLP-1 medication?
 
-Not for body composition tracking itself, because the scan and the progress view need only photos and basic profile details. Asking about medication is a [health-data decision](https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/) that involves purpose, notice, and consent.
+Not for body composition tracking itself, because the scan and the progress view need only photos and basic profile details. <!-- claim: FXS-LIFECYCLE --> Asking about medication is a [health-data decision](https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/) that involves purpose, lawful basis, notice, and consent where required.
 
 ## Next steps
 
 Compare the app's current progress view with what members on GLP-1 treatment need to see. Then [see how FitXpress supports body composition tracking in connected and digital fitness apps](https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/).
-
----
-
-## Open items (for Vadim, not for publication)
-
-- **M1 on the H1, accepted.** The abbreviations gate flags "GLP-1" in the H1. Vadim accepted this at checkpoint one. The H1 is unchanged, and GLP-1 is expanded at its first body use in Section 1.
-- **Joint advisory link.** Resolved at checkpoint 2: link moved to obesity.org (Vadim, 19.09.2026).
-- **Secondary keywords not placed.** The prose does not carry `glp-1 and muscle loss` or `glp 1 lean muscle loss`. Each placement tried in Section 3 read as keyword insertion. The primary keyword sits in the H1 and the Section 3 H2, as planned.
-- **Response time on the linked product page.** The fitness product page, linked in Section 6 and in the CTA, says results arrive "in under a minute". The article keeps the approved FX-006 response time. The two statements agree, but a reader sees both wordings.
-- **JAMA Viewpoint not used.** The plan allowed the Conte, Hall and Klein Viewpoint only if verified on the JAMA page. That page returns HTTP 403 to this environment and could not be verified. The Viewpoint is not in the text. Section 3's balance rests on the review's "appear to be adaptive".
-- **Planned lines removed in the QC fix pass.** Section 7 no longer repeats "FitXpress is not a medical device."; the scope note carries it once. The Section 2 "Who decides what?" bullet and the Section 5 clinical-route bullet are cut. The Section 10 alternative path keeps only the approved limitation sentence. The Section 8 headings now name the two methods (DXA, professional BIA) in place of "reference methods".
-- **Overlap with the GLP-1 market article.** QC noted that Section 5 echoes that article's progress-tracking requirements. The baseline bullet is now specific to members already on treatment. The capture-conditions bullet stays because the plan requires it, and it still resembles that article's capture requirement.

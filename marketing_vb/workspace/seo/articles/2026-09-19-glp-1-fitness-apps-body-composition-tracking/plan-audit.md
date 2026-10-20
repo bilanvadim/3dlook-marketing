@@ -3,6 +3,7 @@ slug: 2026-09-19-glp-1-fitness-apps-body-composition-tracking
 plan: plan.md
 stage: plan
 created: 2026-09-19
+revised: 2026-10-20 (Review 1 re-plan appended at the end; earlier sections unchanged)
 audience: seo-publisher, Vadim, external reviewer
 ---
 
@@ -345,3 +346,240 @@ at the coordinator's request:
 11. **Yazen named publicly for the first time in an article.** The case file permits SEO use and
     the pack approves FX-007, but no live article names Yazen yet. Please confirm, or the text
     says "a weight-loss management platform".
+
+---
+
+## Review 1 re-plan (2026-10-20)
+
+`plan.md` is now revision 2. Its frontmatter carries `revision: 2` and `review_round: "Review 1
+(2026-10-20), structural"`. The 12-section plan it replaces is snapshotted in `v2/plan.md`, and
+its text in `v2/final.md`.
+
+Everything above this heading describes that 12-section plan and stays as history. Where it
+disagrees with `plan.md` revision 2, `plan.md` governs.
+
+- **Still in force:** §1 (keyword decision), §2 (Phase 0 and the adjacent rows), §3 (CTA
+  reasoning) and §7 (source log).
+- **Settled:** §4, by Vadim on 2026-09-19 (standalone).
+- **Superseded:** §5's 12-section structure and §6's `FX-00N` claim ids. The pack of 2026-10-20
+  uses `FXS-*` and `T-*`.
+
+**Inputs, in authority order:**
+
+1. `review-1-decisions.md`, which wins;
+2. the context pack rebuilt on 2026-10-20;
+3. `review-1.md` (the reviewer read `v1/final.md`, an older text);
+4. `v2/plan.md` and `v2/final.md`.
+
+The run is in no-checkpoint mode (Vadim, 2026-09-21). Every judgment call below was decided by the
+canon and is recorded here for the publisher and for Vadim.
+
+### R1. H1 candidates and the choice
+
+The rule (decisions §1) has three parts:
+
+- the H1 carries the exact string "GLP-1 muscle loss";
+- it frames muscle loss as the question or concern the app team faces;
+- it must not read as if the app or the scan identifies, tracks or measures muscle loss.
+
+The second half stays "Tracking Body Change Beyond Scale Weight" or close to it.
+
+| Candidate | Keyword position | Could it read as the app or scan measuring muscle loss? | Verdict |
+|---|---|---|---|
+| **GLP-1 Muscle Loss Concerns for Fitness Apps: Tracking Body Change Beyond Scale Weight** | words 1-3 | No. "Concerns" makes muscle loss the worry the app team handles; the second half names what the app tracks, which is body change | **Chosen** |
+| When Members Ask About GLP-1 Muscle Loss: Tracking Body Change Beyond Scale Weight in Fitness Apps | words 5-7 | No | Rejected: 15 words, and the keyword runs past the first six words (Phase 2 rule) |
+| GLP-1 Muscle Loss and Fitness Apps: Tracking Body Change Beyond Scale Weight | words 1-3 | Yes, mildly: its first half is the pairing the reviewer flagged in v1 | Rejected |
+
+**Why the chosen H1.**
+
+- Gate 7 passes, with the keyword at the very start.
+- The framing answers the reviewer's concern directly. Members and coaches raise the concern, and
+  the second half gives the app's response: tracking body change beyond scale weight.
+- "for Fitness Apps" keeps the B2B reader in the title.
+- "Questions" was weighed in place of "Concerns" and dropped. "Muscle loss questions for fitness
+  apps" reads as questions the app should answer, and the article sends those to the clinician.
+- It avoids the landing's primary keyword, "body scanning for fitness apps" (`landing-map.md`
+  rule 3). The meta title and description follow the same rule (`plan.md`, Article meta).
+
+The reviewer's verbatim H1 is not a candidate under gate 7. It stays a one-line swap for Vadim
+(R7, item 1).
+
+### R2. Decisions file mapped to the plan
+
+| Decisions item | Disposition | Where in `plan.md` | Note |
+|---|---|---|---|
+| What does NOT change | kept | Frontmatter; Content Strategy Fit; Section 2 sources | Keyword, slug, author, hub, P1, one CTA, unnamed customer, three external sources, M1 accepted |
+| §1 Headline | amended | Recommended Title; Section 2 H2; Section 6 Q1 | Keyword in the H1 and the Section 2 H2 only; FAQ 1 first, v2 wording |
+| §2 Estimates | verbatim | Section 3 (T-ESTIMATES) | "Split" wording retired everywhere; the formula is not named |
+| §3 Table | verbatim | Section 3 (T-TABLE); Image 1 | One or two lead-in sentences; no sentence after the table restates it |
+| §4 Measurement vs composition | verbatim | Section 5, P3 (FXS-REPEAT, T-REPEAT-SCOPE, T-VALIDATION) | The §1.2 sentence replaces v2's; accuracy and NDA sentences kept; framework link once; no 0.40 cm |
+| §5 34,000 scans | kept with conditions | Section 5, P5 (T-34K); Writing constraints R4 | Own paragraph, no link, never with the product link; open item |
+| §6 Opening | accepted | Section 1 (opening, scope note) | Under the Section 1 H2. Short answer dropped; scale and circumference points moved into the opening and the table |
+| §6 Section 1 | accepted; KFF amended | Section 1 | KFF in one sentence, scoped to US adults; market and retention links; no retention claims |
+| §6 Section 2 | accepted; advisory amended | Section 2 | Neeland range; lean mass vs muscle; "appear to be adaptive"; advisory as broader management; T-MUSCLE-FUNCTION |
+| §6 Section 3 | accepted | Section 3 | Table, Image 1, estimates, weight source |
+| §6 Section 4 | accepted | Section 4 | T-BASELINE; cadence from v2 FAQ 2; thresholds with coaching link; FXS-POPULATION plus a manual or weight-only option |
+| §6 Section 5 | accepted | Section 5 | Outputs, Body Progress, records and privacy, evidence, guardrail, 34,000 scans, pilot; one contextual product link in P1 |
+| §6 FAQ | accepted | Section 6 | Two questions (R4, item 2) |
+| §6 Next steps | kept | Section 7 | The v2 two sentences |
+| §6 Condensed or removed | applied | R3 below | |
+| §6 Length | applied | `target_words: 1600` | Inside 1,400-1,800 |
+| G1 | accepted | Section 2 (T-MUSCLE-FUNCTION); "reference methods" banned in Writing constraints | DXA and BIA never presented as equivalent references |
+| G2 | amended | Section 3 (T-WEIGHT-SOURCE) | Smart Scales and the scan's weight estimate stay out of the article |
+| G3 | verbatim | Section 5, P2 (T-BODY-PROGRESS) | |
+| G4 | amended | Section 5, P2 (T-PRIVACY-ROLES); Section 6 Q2 | FAQ link once mid-paragraph; Q2 wording per R4, item 3 |
+| G5 | verbatim | Section 5, P2 (T-RECORDS-ACTORS); Writing constraints (actors) | No "organization(s)" for a known actor, article-wide |
+| G6 | accepted | Illustrations | "Illustrative example" label on Image 1; no muscle imagery on any visual |
+| H | open items | R7 | Incoming links, the reviewer's H1, customer permission |
+
+### R3. What was cut, and where its job went
+
+| v2 element | Fate | Where the job went |
+|---|---|---|
+| S1 opening and scope note | kept | Section 1. The scope note is verbatim. "Approximate picture of what changed and where" is retired because it implied the estimates show which tissue changed |
+| S2 Short answer (4 bullets) | removed (decisions §6) | Scale point: opening. Circumference point: opening and table row 2. Training history: Section 1 body and table row 2. The "split" bullet is replaced by T-ESTIMATES in Section 3 |
+| S3 research | condensed | Section 2. The reasons sentence (population, drug-specific, comorbidity) is dropped. The strength-training line is replaced by the amended advisory point. The `glp-1-market` link moves to Section 1 |
+| S4 why relevant to apps | condensed | Section 1. KFF goes from three sentences to one. The "likely to count some of these adults" hedge is cut: it is the extrapolation the reviewer warned against. The visual-progress link stays |
+| S5 app-side workflow | split | Baseline, check-ins and capture go to Section 4; the progress view goes to Section 3. "The workflow runs the same way whether or not the app knows…" is cut: FAQ 2 answers it, and decisions §6 keeps a FAQ only when the body does not |
+| S6 Where FitXpress fits | rebuilt | Section 5. T-BODY-PROGRESS replaces "FitXpress compares two scans that the app selects". FXS-REPEAT replaces the v2 repeatability sentence. The reframe sentence is dropped; the Section 4 thresholds point carries why repeatability matters for trends |
+| S7 roles table (4 rows) and dose sentence | removed (decisions §6) | Integration responsibilities go to Section 5, P2 (T-BODY-PROGRESS, T-RECORDS-ACTORS, T-PRIVACY-ROLES). The dose and decision-support sentence is cut: the scope note and table row 3 carry that boundary. editorial-rewrites §7 allows the scope note plus one boundary sentence in "Where FitXpress fits", here R2 |
+| S8 "which fits when" (three H3s, smart-scale sentence) | removed (decisions §6) | One sentence and the coaching link in Section 5, P4. The consumer smart-scale sentence goes with the section |
+| S9 "programs this workflow fits" | cut (decisions §6) | Second-record point: one optional sentence in Section 5, P4, placed after R2 so that DXA is expanded first (M1). Top-7 link: optional in Section 5, P1. Telehealth page link: cut (R4, item 12) |
+| S10 implementation | split | Privacy goes to Section 5, P2. Thresholds and the alternative path go to Section 4. The pilot goes to Section 5, P6 |
+| S11 FAQ (3 questions) | 2 kept | Q1 verbatim. "How often" goes to Section 4, Cadence. Q3 becomes Q2, with G4 wording |
+| S12 Next steps | kept | Section 7, verbatim |
+| Cover concept (stacked fat and lean bar per check-in) | replaced | It drew the "split" that decisions §2 retires. The new cover is in Illustrations |
+
+### R4. Calls made by the canon (no checkpoint)
+
+1. **Where the opening sits.** "No H2 of its own beyond the first section's" is read as: the
+   opening sits under the Section 1 H2. That matches the house pattern in editorial-rewrites §7:
+   no prose between the H1 and the first H2, and the cover goes under the first H2. Section 1's H2
+   fits the opening scene.
+2. **Two FAQ questions, not three.** editorial-rewrites §7 asks for three. Decisions §6 keeps a
+   question only if the body does not answer it, and only two qualify. The body already answers
+   every in-scope AEO prompt, so none adds a third question.
+3. **FAQ 2 wording.** G4 says the answer "keeps 'purpose, notice' and replaces a bare 'consent'
+   with 'lawful basis, notice, and consent where required'". Applied literally, "notice" would
+   appear twice. The merge is "purpose, lawful basis, notice, and consent where required". It
+   keeps every term G4 names, once each.
+4. **Mixed accuracy forms in one paragraph.** `accuracy-formulations.md` §5 says not to mix §1 and
+   §5 wording in one paragraph. Decisions §4 does three things:
+   - it locks the §1.2 repeatability sentence;
+   - it keeps the current §5 accuracy and NDA sentences ("current wording is canon");
+   - it puts the scope and validation sentences in the same paragraph, with one framework link.
+
+   Decisions wins. Every claim, figure and hedge is canon wording; only the register mixes.
+5. **Down-link depth.** `landing-map.md` rule 1 wants the down link in the first 30% of the body.
+   Decisions §6 places "one contextual product link … where the integration workflow is
+   discussed", which is Section 5, at about 63-68% of the body. Decisions wins. A second
+   contextual link higher up would break "one" (R7, item 4).
+6. **Joint advisory link.** The pack note says "One link (PubMed record)". Two sources say
+   obesity.org instead:
+   - decisions, "What does NOT change": "the 2025 joint advisory on obesity.org";
+   - Vadim's checkpoint 2 on 2026-09-19, which moved the link to obesity.org (recorded in
+     `v2/final.md`).
+
+   The plan uses obesity.org.
+7. **FXS-POPULATION.** Decisions quote sentence 1 only and add one sentence on the app's
+   alternatives.
+   - Sentence 2 ("This matters when a disability affects the standard standing pose or capture
+     sequence.") is allowed: optional, and verbatim if used.
+   - Sentence 3 ("the program needs a documented alternative measurement path") is replaced by the
+     app-specific alternatives sentence that decisions §6 asks for.
+8. **Two links to the coaching article.** Decisions §6 asks for the thresholds point "with its link"
+   (Section 4) and for "one sentence with a link" for the method comparison (Section 5). The two
+   links have different anchors, sit about 300 words apart and serve different jobs. Both stay.
+9. **"Let" in the reviewer's table.** Decisions §3 rules that no terminology fix is needed. The
+   detector's `let` pattern only fires on "let you/them/teams/…", so "Let a member" passes. If the
+   editor applies the guardrail's `let` to `allow` swap, that is the one kind of change §3
+   permits. The plan says so.
+10. **KFF hedge cut.** v2's "likely to count some of these adults among their members" inferred
+    app membership from a general-population figure. The reviewer: "describes US adults
+    generally, not fitness app members". With one sentence allowed, the hedge goes.
+11. **The Section 3 H2 avoids "GLP-1-aware".** The decisions' working title says "GLP-1-aware
+    fitness progress view". That can read as an app that records medication status, which
+    conflicts with FAQ 2: tracking does not need it. The H2 is "What a fitness progress view can
+    show for members on GLP-1 treatment".
+12. **Telehealth page link cut.** v2 linked it in the removed "programs this workflow fits"
+    section. Decisions keep "one CTA to the fitness product page" and do not list the telehealth
+    link as surviving. GLP-1 programs reach their landing from the GLP-1 hub.
+13. **Anchors to the fitness landing.**
+    - The Section 5 contextual link uses the row's first anchor, "body scanning for fitness apps",
+      in body copy only. That helps the landing hold its keyword, and rule 3 bars the anchor only
+      from the title, H1 and meta title.
+    - Next steps keeps v2's anchor, a light inflection of "body composition tracking for fitness
+      apps".
+14. **US spelling** in text that is not locked ("fulfill", "labeled"). The reviewer's table
+    already uses US forms.
+15. **Claim marker ids.** The pack moved from `FX-00N` to `FXS-*` and `T-*`, and gate 3 fails a
+    marker that is not in `approved_claims`. External sources sit outside that list, so they keep
+    v2's `claim: external, source: …` form.
+16. **T-PRIVACY-ROLES runs 26 words.** editorial-rewrites §8 would split a reviewer sentence over
+    25 words. Decisions say "do not paraphrase or improve", and decisions wins. One sentence over
+    25 words is inside gate 10's 6% allowance.
+17. **Length 1,600.** That is the middle of the 1,400-1,800 range. Section 5 gets the largest
+    budget (430) because it carries 12 locked claims.
+18. **No DXA or BIA in Section 2.** Their first use must be R2 in Section 5, which carries both
+    expansions. An earlier mention would fail M1 or double-expand R2.
+
+### R5. AEO
+
+- The `aeo_signals` were pulled on 2026-10-20, with `no_prompt_covers_topic: false`. No tracked
+  prompt asks about GLP-1 muscle loss directly. The mapping is in `plan.md`, "AI-assistant
+  questions (AEO)".
+- Prompt 565495617300 (28% visibility; our top-7 page cited 15 times): the must-cover names
+  FitXpress (3DLOOK) in the Section 5 P1 answer paragraph.
+- Prompt 565780364091 (1% visibility, the DXA alternatives question): not answered, because the
+  method comparison is removed. The coaching link is the route. It is the one in-scope prompt the
+  article leaves to another page.
+- `open_recommendations`: none matches this topic. The open items are about bariatrics, YouTube,
+  LinkedIn and PR, so no recommendation id applies.
+
+### R6. Gate notes
+
+- **The `--plan` lint was not run in this session.** The planner had no shell (Read, Write and
+  Grep only). Manual check against `gate_plan` and `SUPERSEDED`:
+  - frontmatter carries slug, primary_keyword, hub, intent, action_type and status (`draft`);
+  - `target_words: 1600`, and the labelled total row matches;
+  - there are seven `### Section N.` headings;
+  - a grep for retired terms found one hit. The terms checked: DXA's retired spelling, the two
+    retired fat sub-categories, the retired composition wording, the retired height range and the
+    wellness-scoped weight phrase. The one hit is the AEO prompt row, which carries "DXA (also
+    written DEXA)" on one line and is licensed by the DXA-on-the-same-line rule;
+  - no em or en dashes.
+  - The coordinator runs `python3 scripts/article_lint.py workspace/seo/articles/2026-09-19-glp-1-fitness-apps-body-composition-tracking/plan.md --plan`
+    before the write stage.
+- **Article stage:**
+  - Gate 7: the H1 and the Section 2 H2 carry `glp-1 muscle loss`.
+  - M1: the known failure on the H1 is accepted.
+  - Gate 9: the framework link is in Section 5, P3. There is no ISO benchmark. In Section 2, "40%
+    to 60%" is kept away from "variation" and similar words.
+  - Gate 3: the new id scheme, see R4, item 15.
+  - Gate 6: the plan covers all four link directions in the pack's `internal_link_targets`.
+
+### R7. Open items for Vadim (publish package and digest)
+
+1. **The reviewer's verbatim H1.** "GLP-1 and Fitness Apps: Tracking Body Change Beyond Scale
+   Weight" is a one-line swap if Vadim prefers it. The price: `glp-1 muscle loss` leaves the H1
+   and gate 7 fails. The swap therefore also changes the primary keyword, and with it the Section 2
+   H2, the meta title and the meta description. The chosen H1 meets the reviewer's concern and
+   keeps the keyword.
+2. **Customer permission for the 34,000-scan description.** The reviewer asks for explicit
+   permission to describe the customer's use publicly. Vadim's decision of 2026-09-19 covers the
+   anonymized mention ("a weight-loss management platform", never named). If he wants the
+   customer's sign-off on the use description, the two sentences in Section 5, P5 cut cleanly; the
+   paragraph stands alone.
+3. **Incoming links (CMS work, after publication).** Add contextual links into this article from
+   the AI in Fitness hub (`/content-hub/ai-in-fitness-industry/`) and the GLP-1 market article
+   (`/content-hub/glp-1-market/`). This is work on two other live pages for Assel or the site
+   editors. The pipeline does not do it.
+4. **Down-link depth.** The one contextual link to the fitness landing sits in Section 5, at
+   about 63-68% of the body, where decisions §6 places it. `landing-map.md` rule 1 asks for the
+   first 30%. If Vadim wants both, a second contextual link in the Section 1 body is a one-line
+   add.
+5. **Carried over, no action.**
+   - M1 on "GLP-1" in the H1 remains the accepted known failure (Vadim, 2026-09-19).
+   - Of the earlier open items (§10), 1, 2, 6, 7 and 11 were closed on 2026-09-19.
+   - `landing-map.md` now lists the fitness landing as live, which bears on §10 item 3. Whether
+     its copy mentions GLP-1 was not re-checked in this re-plan.

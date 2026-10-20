@@ -1,0 +1,213 @@
+source: HubSpot AEO, portal 6014382, via scripts/hubspot-aeo.py topic
+pulled: '2026-10-20'
+window:
+  from: '2026-09-20'
+  to: '2026-10-20'
+assistants:
+- ChatGPT
+- Gemini
+- Perplexity
+seed: GLP-1 muscle loss and fitness apps body composition tracking
+portal_visibility_avg: 37.4
+tracked_prompts_total: 25
+note: 'visibility = % of AI answers that name 3DLOOK. match = shared rare words with the topic, an ordering
+  hint only: judge relevance yourself. Prompt texts are raw buyer queries (they may say DEXA); canon wording
+  still applies in the article.'
+matched_prompts:
+- id: 565540613659
+  prompt: What’s the best body composition tracking software for a fitness app that wants smartphone-based
+    scans? Include sources.
+  visibility: 50
+  phase: CONSIDERATION
+  icp: Connected & Digital Fitness Segment
+  match: 8.96
+  runs_checked: 25
+  runs_naming_3dlook: 11
+  ai_cites:
+  - url: https://gainframe.app/blog/best-body-scanning-measurement-apps/
+    count: 10
+    ours: false
+  - url: https://docs.bodygram.com/platform
+    count: 9
+    ours: false
+  - url: https://gainframe.app/blog/best-body-composition-apps/
+    count: 9
+    ours: false
+  - url: https://workoutxapp.com/bodyscan.html
+    count: 8
+    ours: false
+  - url: https://leanlens.ai/blog/best-ai-body-scan-body-composition-apps
+    count: 8
+    ours: false
+  - url: https://gainframe.app/blog/best-body-tracking-apps/
+    count: 8
+    ours: false
+- id: 565495617300
+  prompt: How can a GLP-1 weight-loss clinic track patient body composition remotely? Include tools.
+  visibility: 28
+  phase: AWARENESS
+  icp: Telehealth & Weight-Loss Segment
+  match: 7.38
+  runs_checked: 25
+  runs_naming_3dlook: 3
+  ai_cites:
+  - url: https://3dlook.ai/content-hub/top-7-remote-body-composition-tools-glp-1-clinics/
+    count: 15
+    ours: true
+  - url: https://withings.com/us/en/health-solutions/insight-hub/lifemd-partners-withings-glp-1-weight-management-care
+    count: 8
+    ours: false
+  - url: https://withings.com/us/en/health-solutions/supporting-glp-1
+    count: 8
+    ours: false
+  - url: https://glp1nutrition.org/muscle-mass/dexa-and-other-body-composition-tools/
+    count: 8
+    ours: false
+  - url: https://glpcare.org/blog/holistic-weight-management
+    count: 7
+    ours: false
+  - url: https://patientnow.com/specialties/weight-loss-clinic-software
+    count: 7
+    ours: false
+- id: 565780364091
+  prompt: What are the best alternatives to DEXA scans for tracking body composition remotely?
+  visibility: 1
+  phase: AWARENESS
+  icp: Telehealth & Weight-Loss Segment
+  match: 4.83
+  runs_checked: 25
+  runs_naming_3dlook: 1
+  ai_cites:
+  - url: https://gainframe.app/blog/best-inbody-alternatives/
+    count: 11
+    ours: false
+  - url: https://3dlook.ai/content-hub/ai-body-scanners-vs-dexa-scans/
+    count: 9
+    ours: true
+  - url: https://realbodyfat.com/blog/best-dexa-scan-alternatives/
+    count: 8
+    ours: false
+  - url: https://bodilab.app/en/blog/dexa-scan-alternative.html
+    count: 8
+    ours: false
+  - url: https://bodyspec.com/blog/post/body_pod_scale_vs_clinical_test_vs_bodyspec_dexa_scan
+    count: 8
+    ours: false
+  - url: https://gainframe.app/blog/best-body-composition-apps/
+    count: 8
+    ours: false
+- id: 554650727321
+  prompt: Which mobile body scanning platforms support body composition progress tracking?
+  visibility: 15
+  phase: CONSIDERATION
+  icp: Telehealth & Weight-Loss Segment
+  match: 4.83
+- id: 565767450188
+  prompt: Which body scanning APIs are easiest to integrate into a fitness or wellness app?
+  visibility: 73
+  phase: CONSIDERATION
+  icp: Connected & Digital Fitness Segment
+  match: 4.56
+- id: 565540613660
+  prompt: What body scanning SDKs work for fitness apps with remote users?
+  visibility: 90
+  phase: CONSIDERATION
+  icp: Connected & Digital Fitness Segment
+  match: 4.56
+- id: 565780359239
+  prompt: Which body scanning tools are suitable for health and wellness apps that need HIPAA or GDPR
+    controls?
+  visibility: 83
+  phase: CONSIDERATION
+  icp: Telehealth & Weight-Loss Segment
+  match: 2.58
+- id: 554650727322
+  prompt: What are the top mobile body scanning APIs for health apps?
+  visibility: 75
+  phase: CONSIDERATION
+  icp: Telehealth & Weight-Loss Segment
+  match: 2.58
+no_prompt_covers_topic: false
+open_recommendations:
+- id: 184342641
+  priority: LOW
+  type: DOMAIN
+  status: NEW
+  title: 'LinkedIn Post: Explain remote body composition tracking'
+  content_title: How to track body composition between GLP-1 visits
+  content_topic: '"How GLP-1 weight-loss clinics can track body composition remotely between visits—and
+    what tools to include in the care plan"'
+  summary: Publish a practical post showing how GLP-1 weight-loss clinics can pair connected scales, body
+    measurement apps, progress photo protocols, and remote patient monitoring workflows to track body
+    composition between visits and position the brand as the clear telehealth obesity care solution.
+  influencing_citations:
+  - https://linkedin.com/posts/four-square-research_us-remote-patient-monitoring-system-market-activity-7493205563779141633-Gy-q
+  - https://linkedin.com/posts/carmenriosbenton_healthcareinnovation-medtech-patientadherence-activity-7493169435340435456-BNWC
+  - https://linkedin.com/posts/3dlook_from-pills-to-precision-how-3dlook-is-activity-7367187235726647296-tS1v
+  - https://linkedin.com/posts/3dlook_weightmanagement-digitalhealth-3dlook-activity-7345790790285123585-N-J3
+  match: 12.06
+- id: 183780570
+  priority: HIGH
+  type: CONTENT
+  status: NEW
+  title: Create a guide on bariatric measurement workflow automation
+  content_title: The Complete Guide to Bariatric Measurement Automation
+  content_topic: The Complete Guide to Automating Pre-Authorization Body Measurement Workflows for Bariatric
+    and Weight-Loss Surgery Programs
+  summary: Build a definitive guide that explains how bariatric and GLP-1 programs can automate remote
+    body measurement and body composition workflows for consultations and pre-authorization using smartphone
+    based tools instead of manual processes.
+  influencing_citations:
+  - https://tenovi.com/remote-patient-monitoring-devices-in-healthcare/
+  - https://curoflow.com/en/articles/telemedicine-software-weight-loss-clinics/
+  - https://telehealth.hhs.gov/providers/best-practice-guides/telehealth-and-remote-patient-monitoring/using-remote-patient
+  - https://healthsnap.io/remote-patient-monitoring-and-chronic-care-management-for-obesity-management-in-2024-2/
+  match: 7.38
+- id: 184342639
+  priority: HIGH
+  type: DOMAIN
+  status: NEW
+  title: 'YouTube Video: Publish body scanning demo comparison'
+  content_title: 'Body Scanning Demo: What to Evaluate First'
+  content_topic: 'Body scanning tools with free trials or demos: what to evaluate for apparel, fitness,
+    and telehealth use cases'
+  summary: Create a practical comparison video showing how to evaluate body scanning tools for apparel,
+    fitness, and telehealth demos, using 3DLOOK’s mobile 3D body measurement workflow as the anchor example.
+    Cover trial criteria like measurement accuracy, speed, body composition outputs, integration options,
+    smartphone capture flow, and privacy features.
+  influencing_citations:
+  - https://youtube.com/watch?v=4rjeAhd9wnc
+  - https://youtube.com/watch?v=U-T9TOEAksQ
+  - https://youtube.com/watch?v=XkQBvvz1fMU
+  - https://youtube.com/watch?v=mkWkFdwQCTA
+  match: 4.27
+- id: 184113103
+  priority: LOW
+  type: URL
+  status: NEW
+  title: Get 3DLOOK INC. featured in fit3d.com's "Best 3D Body Scanners 2025"
+  content_title: null
+  content_topic: Smartphone-based 3D body scanning as the best non-hardware alternative for fitness studios
+    that need body composition analysis and digital body measurement without dedicated scanner equipment
+  summary: Reach out to the editorial team or article author with a tailored pitch positioning 3DLOOK
+    INC. as the leading smartphone-based, no-hardware alternative for fitness studios that need body composition
+    insights and digital measurements without installing dedicated scanners. Offer concise expert input
+    on mobile 3D scanning for fitness use cases and request an update adding 3DLOOK INC. as a recommended
+    option or comparison entry in the guide.
+  influencing_citations: []
+  match: 4.27
+- id: 181747523
+  priority: HIGH
+  type: CONTENT
+  status: NEW
+  title: Create a product page on bariatric measurement workflows
+  content_title: Mobile Tailor for Bariatric Pre-Auth Measurements
+  content_topic: Mobile Tailor for Pre-Authorization Measurement Workflows in Bariatric and GLP-1 Clinics
+  summary: Position Mobile Tailor as the smartphone-based solution for remote pre-authorization measurements
+    and body data capture in bariatric and GLP-1 care workflows.
+  influencing_citations:
+  - https://play.google.com/store/apps/details?id=com.sizestream.sah
+  - https://play.google.com/store/apps/details?id=com.sizestream.sah&hl=en_US
+  - https://apps.apple.com/us/app/methreesixty-3d-body-scan-bmi/id1472541261
+  - https://tenovi.com/remote-weight-monitoring/
+  match: 2.98

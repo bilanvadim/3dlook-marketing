@@ -1,328 +1,394 @@
-# Built by context-pack-builder 2026-09-19 (read-only agent); saved to disk by the coordinator.
-# Coordinator edits vs the agent's hand-back: profile company -> none (seo track);
-# claims_discipline "Position AS" -> "Describe as" (terminology-guardrails.md bans "positioned as").
+# Rebuilt by context-pack-builder 2026-10-20 for Review 1 re-plan (read-only agent); saved to disk by the coordinator.
+# Stable sections are copied VERBATIM from _stable-fitxpress.yaml (rendered 2026-10-20). Delta = this topic only.
+# Authority order for the delta: review-1-decisions.md > this pack > review-1.md > old pack (2026-09-19).
 context_pack:
-  created: 2026-09-19
+  created: 2026-10-20
   product: fitxpress
   track: seo
   channel: blog
   profile: none
-  objective: "SEO article — GLP-1 and Fitness Apps: Tracking Body Composition, Not Just Weight — plan stage (keywords → title → outline) for seo-planner. Cross-cluster bridge, Hub 1 (AI in Fitness) filed row, explicit bridge into Hub 3 (GLP-1 Market). Pencilled October 2026, P1, create net-new."
-  target_agent: seo-planner
+  target_agent: seo-planner   # then seo-writer / seo-editor read the same pack
   slug: "2026-09-19-glp-1-fitness-apps-body-composition-tracking"
+  published_slug: "glp-1-muscle-loss-fitness-apps"   # unchanged, page not live (404 on 2026-10-20)
+  round: "Review 1 re-plan (STRUCTURAL): plan -> write -> edit -> publish -> qc -> git"
 
-  phase_0_resolved: true   # Orchestrator already located and verified the content-plan row — do not re-litigate
-  action_type: "Create net-new"   # verbatim from the sheet row — GATE family: GO → Phase 1
+  objective: >
+    Re-plan after Review 1 (structural) of the fitness-app article on GLP-1 muscle loss. The app
+    team's decisions are the organizing thread: what the app receives, shows, compares, and routes
+    for review. New section skeleton per review-1-decisions.md section 6 (Opening, Sections 1-5,
+    short FAQ, Next steps/CTA); the 12-section outline is replaced. Primary keyword "glp-1 muscle loss"
+    unchanged; slug glp-1-muscle-loss-fitness-apps unchanged. H1 rule (decisions section 1): contains the
+    exact string "GLP-1 muscle loss" (any case), framed as the question or concern the app team faces,
+    never as something the app or scan measures; keep "Tracking Body Change Beyond Scale Weight" or close
+    to it as the second half; planner proposes 2-3 candidates in plan-audit.md, picks one, gives the reason.
+    Target 1,400-1,800 words of article prose. Hub 1 (AI in Fitness), bridge into Hub 3 (GLP-1 Market),
+    create net-new, P1. One CTA to the fitness product page. Author Assel Sekerova.
+  scope_rule: >
+    FitXpress does not detect, reveal or measure muscle loss, and no sentence may imply it. Lean mass is
+    an estimate. Lean mass includes more than muscle. The scan does not determine which tissue changed.
+    No sentence says the scan shows or exposes lean mass loss behind the scale.
 
-  company_oneliner: "3DLOOK turns two smartphone photos into 80+ body measurements and a 3D model in under 45 seconds."
+  phase_0_resolved: true   # row located and verified earlier; do not re-litigate
+  action_type: "Create net-new"   # verbatim from the sheet row; GATE family: GO
+
+  company_oneliner: "3DLOOK turns two smartphone photos into a 3D body model and 80+ body measurements in 45 seconds, via API and SDK."
 
   product_summary: |
-    FitXpress: mobile body scanning that produces structured, repeatable body data
-    (80+ measurements, BMI, BMR, body fat %, lean/fat mass, 3D model) from two
-    smartphone photos. For this bridge topic: a structured body-data capture and
-    scan-to-scan comparison layer that fitness apps / coaching platforms can use to
-    show GLP-1 users (and any user) composition change, not just scale weight —
-    which is exactly the gap GLP-1-driven weight loss exposes (lean mass loss hidden
-    behind a falling number on the scale). Not a scale, not a clinical/diagnostic tool,
-    not a prescriber or dosing tool.
+    FitXpress: mobile body scanning that returns 80+ body measurements, a 3D model and body composition
+    estimates from two smartphone photos, delivered via API/SDK into the fitness app's own interface.
+    For this topic it is a structured capture and scan-to-scan comparison layer that a fitness app can
+    show next to weight, circumferences and training history. It is not a scale, not a medical device,
+    not a prescribing or dosing tool, and it does not determine which tissue changed.
 
+  # ---------------- approved_claims ----------------
   approved_claims:
-    - id: FX-001
+    # --- stable FXS-* (verbatim from _stable-fitxpress.yaml) ---
+    - id: FXS-SPEED
+      text: "Two photos (front + side); structured outputs in under 45 seconds."
+      source: "proof-points.md, Speed table"
+    - id: FXS-OUTPUTS
+      text: "80+ body measurements; body composition outputs: BMI, BMR, fat %, lean mass, fat mass, essential fat, beneficial fat."
+      source: "proof-points.md, Output coverage (формулировка строки 'Body composition outputs' дословно)"
+      note: "Всегда «80+ body measurements», никогда «80+ body metrics»; BMI/BMR/composition — calculated metrics/estimates, не measurements (terminology §2.13)."
+    - id: FXS-DELIVERY
+      text: "Delivered primarily via API/SDK integration directly into the customer's own product or interface; the FitXpress Admin Panel is an optional, complementary interface for monitoring and exporting results, for teams that do not want to build their own dashboard; it does not replace integration."
+      source: "overview.md (API and SDK) + решение Вадима на чекпоинте 1 Telehealth Documentation, 2026-09-21"
+      note: "«monitoring and exporting» — канон с 2026-09-23 (Вадим, Review 1 capture-quality FAQ, C11). Порядок ФИКСИРОВАН Вадимом 2026-09-21: API/SDK — главная история доставки, Admin Panel называется прямо («FitXpress Admin Panel», не «vendor console») и идёт вторым, как опция."
+    - id: FXS-ACCURACY
       text: "3DLOOK's measurement accuracy of approximately 96-97% across body metrics, with a typical absolute error of 1.5-2.0 cm per measurement, varying by body part"
-      source: "accuracy-formulations.md §1.1, verbatim from the live framework article"
-      note: "Never state without reference/population/protocol condition (§1.4-1.6) and a link to the framework article. Two benchmarks (this + ISO 8559 0.40 cm) never combined in one paragraph."
-    - id: FX-002
+      source: "accuracy-formulations.md §1.1, verbatim из живой framework-статьи"
+      note: "SECONDARY: только если статья реально обсуждает точность. Никогда без условия (референс/популяция/протокол) и без ссылки на framework-статью из того же абзаца. Два бенчмарка (этот и ISO 8559 0.40 cm) не совмещаются в одном абзаце."
+    - id: FXS-REPEAT
       text: "For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm"
-      source: "accuracy-formulations.md §1.2, the approved repeatability formulation (short form in §5: 'typical scan-to-scan differences remained below 1 cm')"
-      note: "This is the load-bearing claim for the article's thesis: repeatability, not one-time accuracy, is what lets small real composition changes survive measurement noise — directly relevant to 'not just weight'."
-    - id: FX-003
-      text: "95%+ overall repeatability consistency"
-      source: "2025 Accuracy & Repeatability Study"
-      publishable: false
-      note: "INTERNAL ONLY, do not publish. Live framework article describes this same study and gives no such percentage. Use FX-002 instead."
-    - id: FX-004
-      text: "Weight estimation ±3.5% average error margin (Smart Scales software output, not a scale)"
-      source: "FitXpress deck / proof-points.md Accuracy table"
-    - id: FX-005
-      text: "Body composition outputs: BMI, BMR, body fat %, lean mass, fat mass, essential fat, beneficial fat"
-      source: "Product spec (BMR Mifflin-St Jeor, body fat % US Navy formula)"
-      note: "Core to the article's angle — this is the 'not just weight' output set."
-    - id: FX-006
-      text: "80+ body measurements from two photos (front + side), results under 45 seconds"
-      source: "Product spec"
-    - id: FX-007
-      text: "Yazen (weight loss management platform): 34,000 scans in 2025 — highest scan volume of any FitXpress customer, used for periodic check-in progress tracking, 3D visualization for engagement, body composition (BMI, fat %, lean mass) for clinical context"
-      source: "brand-assets/product-info/case-studies/yazen.md"
-      note: "The right case for THIS bridge (weight-loss / GLP-1-adjacent + engagement + body composition). No geo attached — do not add one."
-      vadim_decision_2026_09_19: "DO NOT NAME YAZEN in this article, its meta, alt text, FAQ or publish package ('язен не згадуємо'). Write 'a weight-loss management platform'."
-    - id: FX-008
-      text: "HIPAA: FitXpress can support HIPAA-governed deployments where 3DLOOK acts as a business associate under an executed BAA, where applicable. GDPR: in most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR."
-      source: "compliance.md §1/§2, live trust FAQ 2026-09-16"
-      note: "Use only if the article's scope note touches compliance at all (GLP-1 is a sensitive vertical per about-me.md §12). Prefer a short note + link to the FAQ over restating it (content-plan.md guardrail: privacy rows are section-first / link to central FAQ)."
+      source: "accuracy-formulations.md §1.2"
+      note: "SECONDARY: для longitudinal/repeat-scan тем. Пишется «< 1 cm» / «below 1 cm», locked convention."
+    - id: FXS-POPULATION
+      text: "FitXpress was not specifically trained on data representing people with physical disabilities, and its measurement performance has not been established for this population. This matters when a disability affects the standard standing pose or capture sequence. In those cases, the program needs a documented alternative measurement path."
+      source: "accuracy-formulations.md §5 «Population limitation»; апрув Вадима 2026-09-11"
+      note: "Третье предложение — для workflow-статей (§5 сам так говорит); в остальных берутся первые два. Цифр не несёт."
+    - id: FXS-HIPAA
+      text: "FitXpress can support HIPAA-governed deployments where 3DLOOK acts as a business associate under an executed BAA, where applicable."
+      source: "compliance.md §1, живой trust FAQ"
+      note: "Section-first: короткая заметка + ссылка на FAQ, ответы FAQ не пересказывать. «HIPAA compliant/certified» — hard fail детектора."
+    - id: FXS-GDPR
+      text: "In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR."
+      source: "compliance.md §2 — каноническое предложение, дословно"
+      note: "Не выбрасывать «the data»; хедж «In most enterprise deployments» не срезается."
+    - id: FXS-IDS
+      text: "Scan records are associated with anonymized, randomly generated IDs; 3DLOOK cannot identify a specific individual from stored scan records."
+      source: "compliance.md §4"
+    - id: FXS-LIFECYCLE
+      text: "Submitted data: front/side photos + gender + height + optional weight. Generated data: body measurements, weight/BMI-related outputs, body composition estimates, a 3D model, scan-to-scan comparison outputs. Technical data: capture-quality/pose-validation flags, clothing classification, face-obfuscation confirmation, processing logs with timestamps and request metadata."
+      source: "compliance.md §3"
+    - id: FXS-RETENTION
+      text: "Measurements, body composition data and 3D models are retained on an ongoing basis unless the customer agreement says otherwise; deletion is by scan identifier on the customer's request."
+      source: "compliance.md §3/§4"
+      note: "«Processed, not stored» — запрещено: выводы ХРАНЯТСЯ."
+    - id: FXS-SCOPE
+      text: "Supports: remote intake and body-measurement capture; body composition outputs and Body Progress comparisons; structured data collection for research protocols; structured intake and supporting documentation for customer-managed eligibility workflows; patient/member engagement. Does not independently determine: a diagnosis, treatment, medication recommendation, fitness for duty, employment eligibility, insurance eligibility, clinical-trial eligibility, or any other high-impact individual decision. Final decisions stay with the customer's clinicians, underwriters or other designated decision-makers."
+      source: "compliance.md §7"
+      note: "Канонический boundary-блок («What FitXpress does not do», пункт 7 стандартной структуры about-me.md)."
+    - id: FXS-MEDICAL
+      text: "FitXpress is not a medical device."
+      source: "compliance.md; решение Вадима 2026-09-11 (4-е состояние правила)"
+      note: "Формулируется прямо; «positioned as» про любой product/intended-use/регуляторный факт — hard fail."
 
+    # --- topic claims LOCKED by review-1-decisions.md: place VERBATIM, do not paraphrase or improve ---
+    - id: T-ESTIMATES
+      text: "Body composition estimates are derived from the body measurements along with height and optional weight. Body fat percentage comes from an anthropometric formula applied to those measurements. These are model-derived estimates to review alongside weight and measurements. They do not determine which tissue changed."
+      source: "decisions section 2; grounding compliance.md §3 (composition values are estimates derived from measurements plus height and optional weight), terminology §2.13, how-it-works.md step 5"
+      note: "Three sentences, this order, where the article first explains the estimates. Do not name the US Navy formula. Remove every 'split(s) into fat and lean' wording."
+    - id: T-REPEAT-SCOPE
+      text: "These figures describe body measurements. They are not validated accuracy for lean mass, for detecting muscle loss, or for the smallest meaningful change during GLP-1 treatment."
+      source: "decisions section 4"
+      note: "Directly after the accuracy and repeatability sentences (FXS-ACCURACY, FXS-REPEAT, hyphens in 96-97% and 1.5-2.0 cm). The repeatability sentence REPLACES the old 'For most of the evaluated measurements, typical scan-to-scan differences remained below 1 cm.' Accuracy-framework link once in this paragraph. Never place 0.40 cm (ISO) in this article. NDA sentence may stay: 'Detailed methodology, including sample size, measurement-level results, and the definition of repeatability used in the analysis, is available under NDA.' (accuracy-formulations §1.8)."
+    - id: T-VALIDATION
+      text: "3DLOOK's accuracy claims have not been peer-reviewed or externally validated through a third-party clinical study."
+      source: "accuracy-formulations.md §1.9; decisions section 4"
+      note: "Same paragraph as T-REPEAT-SCOPE. Do not use 'independent', 'third-party', 'validated', 'peer-reviewed' about our own evidence outside this sentence. NCSU line (dataset enrichment, not independent validation) is available if scope comes up."
+    - id: T-BASELINE
+      text: "A later scan can establish a new baseline, but it cannot recreate the earlier measurement."
+      source: "decisions section 6, Section 4"
+      note: "Replaces 'a baseline skipped at onboarding cannot be taken afterwards'. Keep the point that a member may already be partway through treatment when the app's record begins."
+    - id: T-MUSCLE-FUNCTION
+      text: "A clinician's assessment of muscle function is a separate question from a composition reading."
+      source: "decisions G1"
+      note: "Section 2 or 5. Never call DXA and professional BIA 'reference methods' (headings included); a protocol names its own method; do not present them as equivalent references."
+    - id: T-WEIGHT-SOURCE
+      text: "Weight in the progress view is the value the member enters or the app syncs from a connected scale."
+      source: "decisions G2; how-it-works.md (Smart Scales is a beta output)"
+      note: "Section 3. Do not imply FitXpress capture supplies a measured scale weight."
+    - id: T-BODY-PROGRESS
+      text: "The app company links each scan ID to its own member record and chooses which two scans to compare. 3DLOOK does not track individuals or determine whether two scans belong to the same person."
+      source: "decisions G3; compliance.md §4, CLAUDE.md §12"
+      note: "Section 5. Never write that FitXpress tracks a member over time (use 'scan-to-scan comparison'). A visible difference between two 3D models is not by itself a clinically meaningful change."
+    - id: T-PRIVACY-ROLES
+      text: "Sharing records between the fitness app company and the prescribing provider depends on the applicable lawful basis, privacy notices, member permissions, and the agreements between them. Consent is required in some workflows."
+      source: "decisions G4; compliance.md §6 (the customer provides privacy notices, establishes the lawful basis, obtains consent where needed)"
+      note: "Link to the privacy FAQ once, mid-paragraph. REPLACES 'record sharing depends on the member's consent and on agreements between the two'. FAQ answer on asking about medication keeps 'purpose, notice' and replaces bare 'consent' with 'lawful basis, notice, and consent where required'."
+    - id: T-RECORDS-ACTORS
+      text: "the fitness app company and the prescribing provider may each hold different records."
+      source: "decisions G5; terminology-guardrails §2.14"
+      note: "REPLACES 'two organizations hold parts of the progress record'. No 'organization(s)' anywhere the actor is known. 'Company' for a FitXpress buyer."
+    - id: T-34K
+      text: "A weight-loss management platform ran 34,000 FitXpress scans in 2025. It used them for periodic check-in progress tracking, 3D visualization, and body composition context."
+      source: "proof-points.md Customer outcomes (2025 scans 34,000, internal customer breakdown); case-studies/yazen.md 'What they use'; decision section 5"
+      note: "PLACEMENT RULE: no link on this sentence and not in the same paragraph as the product-page link. No geography, no customer name. Vadim 2026-09-19: DO NOT NAME YAZEN anywhere (article, meta, alt text, FAQ, publish package). Open item for Vadim in digest: customer sign-off on the use description (the two sentences cut cleanly if wanted)."
+    - id: T-GUARDRAIL-DXA
+      text: "FitXpress is not equivalent to DXA, BIA, or a calibrated scale when the workflow, protocol, or regulatory standard requires those methods."
+      source: "accuracy-formulations §1.9 (equivalence rule); current v2 final.md sentence, kept"
+      note: "Verbatim, once. Lead-in sentence (separate): 'Some clinical protocols and research studies require dual-energy X-ray absorptiometry (DXA) or professional bioelectrical impedance analysis (BIA).'"
+
+    - id: T-TABLE
+      text: "Header: What the app receives | What it can show or do | What it should avoid concluding"
+      rows:
+        - ["Scale weight and scan estimates", "Display dated trends with the measurement method labeled", "Attribute a change to fat or muscle with certainty"]
+        - ["Circumferences and training history", "Allow a member or coach to review both at a scheduled check-in", "Claim the training program caused a measured change"]
+        - ["A concerning or inconsistent result", "Check capture conditions and offer a route to the care team", "Generate medication or clinical advice"]
+      source: "review-1.md, accepted verbatim by decisions section 3"
+      note: "Place in Section 3 with Image 1. One or two sentences before the table say why it matters to an app team. No sentence after the table restates it."
+
+  # ---------------- external sources (verified wording; attribute in words, never in our own voice) ----------------
+  external_sources:
+    - id: EXT-NEELAND
+      cite: "Neeland, Linge, Birkenfeld (2024), Diabetes, Obesity and Metabolism, PMID 38937282; link https://pubmed.ncbi.nlm.nih.gov/38937282/ (journal page 403s)"
+      verbatim_abstract:
+        - "in some studies, reductions in lean mass range between 40% and 60% as a proportion of total weight lost, while other studies show lean mass reductions of approximately 15% or less of total weight lost."
+        - "changes in lean mass may not always reflect changes in muscle mass as the former measure includes not only muscle but also organs, bone, fluids, and water in fat tissue."
+        - "skeletal muscle changes with GLP-1RA treatments appear to be adaptive"
+      note: "Keep: the range with attribution, lean mass vs muscle, 'appear to be adaptive'. No lean-mass or muscle statement in our own voice. Do not put 40%/60% within 40 characters after 'variation/variance/error/accuracy' (lint gate 9 reads it as an accuracy figure)."
+    - id: EXT-JOINT-ADVISORY
+      cite: "2025 joint advisory (ACLM, ASN, OMA, TOS; Mozaffarian et al.), Obesity doi 10.1002/oby.24336, PMID 40445127; priority wording https://www.obesity.org/nutritional-priorities-to-support-glp-1-therapy-for-obesity/"
+      verbatim_phrase: "adequate protein intake and strength training to preserve lean mass"
+      note: "AMENDED (decisions section 6): say it supports resistance training as part of broader nutritional and medical management, and that an app offering workouts does not, by itself, fulfil all of that guidance. REPLACES 'Strength training is already part of the programs many fitness apps offer.' No training or protein prescription. One link (PubMed record)."
+    - id: EXT-KFF
+      cite: "KFF Health Tracking Poll, fielded 2025-10-27 to 2025-11-02, published 2025-11-14; https://www.kff.org/public-opinion/poll-1-in-8-adults-say-they-are-currently-taking-a-glp-1-drug-for-weight-loss-diabetes-or-another-condition-even-as-half-say-the-drugs-are-difficult-to-afford/"
+      finding: "about one in eight US adults (12%) said they are currently taking a GLP-1 drug, to lose weight or to treat a chronic condition"
+      note: "ONE sentence (decisions section 6, Section 1) and it must say the figure describes US adults generally, not fitness app members. No extrapolation. JAMA Viewpoint (Conte, Hall, Klein) NOT used: unverifiable at the primary source (403)."
+
+  # ---------------- NOT to use ----------------
   claims_NOT_to_use_here:
-    - "UK Meds (7,500 scans, BMI verification for online pharmacy) — WRONG case for this piece. audience.md segment 1 'Don't': keep separate from UK online-pharmacy BMI compliance unless the piece is explicitly the bridge to eligibility verification, which this one is NOT (it's a fitness-app / body-composition bridge, not an eligibility/BMI-verification bridge). Use Yazen (FX-007), not UK Meds."
-    - "Per-measurement accuracy/repeatability figures (wrist 0.54cm, waist 2.14cm, chest 0.60cm variance, etc.) — technical material only, not for a hub/bridge article (accuracy-formulations.md §1, Review 1 item 16)."
-    - "Market sizing table (proof-points.md) — none of its five use cases (insurance, wellness rewards, bariatric, occ health, clinical trials) match this topic; do not borrow a TAM number from an unrelated vertical."
+    - "Smart Scales / predicted weight / weight-estimation error margin (the old FX-004, +-3.5%): beta feature, outside this article (decisions G2). Do not introduce it, even in passing."
+    - "95%+ repeatability consistency (old FX-003): internal, not published."
+    - "0.40 cm / ISO 8559 benchmark: never in this article (two benchmarks never combined)."
+    - "Per-measurement figures (wrist 0.54, waist 2.14, chest 0.60): technical material, not for a hub or bridge article."
+    - "UK Meds (7,500 scans, BMI verification): wrong case; this is not the eligibility bridge."
+    - "Market sizing table from proof-points.md: no row fits this topic."
+    - "Any wording that FitXpress or a scan detects, reveals, tracks or measures muscle or muscle loss, or exposes 'lean mass loss hidden behind the scale'. 'Split' of weight change into fat and lean components."
+    - "Method-comparison material as a section driver (scale vs scan vs DXA/BIA 'which fits when'): section REMOVED; one sentence with one link to the online coaching article instead."
+    - "'Reference methods include DXA and professional BIA', DXA and BIA presented as equivalent references."
+    - "Retention or adherence claims in Section 1; no outcome promises (the adherence article owns that angle)."
+    - "Naming the customer behind the 34,000 scans; any geography for it."
+    - "Naming the US Navy formula."
+    - "Muscle imagery: no muscle overlays, anatomical muscle imagery or 'muscle' labels on a body in Image 1, Image 2 or the cover concept."
+    - "Dosing, prescribing, drug-effectiveness or medication-advice claims; drug names."
+    - "Competitor names."
 
-  banned_claims:
-    - "most accurate body scanning / best-in-class (without a specific benchmarked figure)"
-    - "any accuracy figure reduced to one universal number without qualifying decision/reference/protocol/population/tolerance"
-    - "medical device / diagnostic / clinical assessment / dosing / prescribing recommendation"
+  banned_claims: "see banned_claims_stable below; plus every item in claims_NOT_to_use_here"
+
+  # ---------------- stable (verbatim) ----------------
+  banned_claims_stable:
+    - "most accurate body scanning / best-in-class (без конкретного бенчмарка)"
+    - "любая цифра точности, сведённая к одному универсальному числу без условия decision/reference/protocol/population/tolerance"
+    - "medical device / diagnostic / clinical assessment / dosing / prescribing recommendation / eligibility decisioning"
     - "replaces DXA (also written DEXA), BIA, calibrated scales, or clinician review"
-    - "automated eligibility, underwriting, or fraud-detection claims — this is not an eligibility-verification article"
-    - "guaranteed retention/adherence outcomes as a promise"
-    - "any number not in approved_claims (incl. invented fitness-app or GLP-1-platform customer metrics)"
-    - "named competitor comparisons (Prism Labs, Bodygram, etc.)"
-    - "HIPAA compliant / HIPAA certified / SOC 2 certified / FDA-cleared / 'no personal identifiers' / 'processed, not stored' / 'FitXpress tracks each patient over time'"
+    - "automated eligibility, underwriting, or fraud-detection claims"
+    - "guaranteed compliance / «makes you compliant» / guaranteed outcomes"
+    - "любое число не из approved_claims"
+    - "named competitor comparisons (Prism Labs, Bodygram, Size Stream и др.)"
+    - "HIPAA compliant / HIPAA certified / SOC 2 certified / FDA-cleared"
+    - "«no personal identifiers» / «no personal data» — retired 2026-09-18: фото и измерения могут быть персональными данными"
+    - "«processed, not stored» — выводы хранятся on an ongoing basis"
+    - "«FitXpress tracks each patient over time» → «the program compares scans it selects» / «scan-to-scan comparison»"
+    - "«95%+ repeatability consistency» — внутренняя цифра, НЕ публикуется"
 
   banned_words:
-    - leverage
-    - utilize
-    - harness
-    - robust
-    - seamless
     - comprehensive
     - delve
-    - navigate (metaphorical)
-    - tapestry
+    - disrupt
+    - groundbreaking
+    - harness
+    - leverage
     - realm
-    - unlock
-    - unleash
-    - game-changing
-    - cutting-edge
     - revolutionary
+    - robust
+    - seamless
+    - tapestry
+    - unparalleled
 
-  terminology_hard_bans:  # terminology-guardrails.md — writer holds these; editor runs full pass
-    - "em dash (— –) — always, no exceptions; use comma, period, or parentheses"
-    - "'objective' about our tech/outputs → standardized / timestamped / structured / repeatable"
-    - "'the reader' / 'this article' / 'see below' / 'the following sections'"
-    - "'by hand' → 'manually'; 'let' → 'allow'"
-    - "'plus' as a capability connector → 'including' / 'such as' / 'along with'"
-    - "'so' introducing a benefit → 'reducing…' / 'allowing…' / 'which can…'"
-    - "'positioned as' about product/intended-use/regulatory status → state boundary directly ('FitXpress is not a medical device')"
-    - "no presumed reader reaction; no behaviour attributed to concepts"
-    - "no triple parallelisms; no 'not just X, it's Y' — IMPORTANT: the working TITLE itself uses 'Not Just Weight' as a comparative phrase, not the banned 'it's not just X, it's Y' construction, so it is fine, but do not let body copy drift into that construction when explaining the composition-vs-weight point"
-    - "BMI / CEO / UK / US / EU are commonly known — do NOT expand"
-    - "'buyer' only for procurement/vendor-evaluation context; 'customer' only for contract/deployment/legal-role context; otherwise name the actor (fitness app, coaching platform, GLP-1 program, member)"
-    - "'80+ body measurements', never '80+ body metrics'; BMI/BMR/body composition are calculated metrics/estimates, not 'measurements'"
+  terminology: "Механические запреты НЕ дублируются здесь (урок bans-card.py: 4 копии правил, исполняет одна). Писатель читает brand-assets/style-guides/hard-bans-card.md (generated, один экран, не может разойтись с детектором). Судейские строки — corrective negation, we/our, you, buyer/customer, ярлыки контент-плана в заголовках — остаются в terminology-guardrails.md за редактором."
 
-  tone:
-    voice: "calm, specific, evidence-led B2B (about-me.md); the reframe move; lighter/less clinical than telehealth-only pieces (fitness segment) but still hedged on the GLP-1 half (sensitive vertical)"
-    length: "cross-cluster bridge article — comparable to other P1 supporting pieces, ~1,800-2,400 words unless seo-planner's outline needs more for the bridge framing"
-    format: "12-part standard structure (about-me.md); scope note early (GLP-1 is a sensitive vertical); comparison-by-role tone, not 'FitXpress wins everything'; FAQ block; CTA by intent"
-    dont: "no hype, no emoji, no diagnostic/clinical/dosing language, no eligibility/underwriting framing, no GLP-1 clinical-decision bleed, no UK-BMI-verification bleed"
+  terminology_topic_notes:   # delta, not a copy of the guardrails
+    - "'company' for a FitXpress buyer; 'organization' only as an umbrella (section 2.14); name the actor (fitness app company, prescribing provider, coach, member)."
+    - "DXA not DEXA in prose; DEXA only as a search term or published slug. Expand DXA, BIA and GLP-1 once at first use."
+    - "Body composition values are 'estimates'; 'body measurements' only for circumferences, lengths, widths (section 2.13)."
+    - "No page-role labels (bridge, hub, cluster, supporting content) in headings, anchors or text."
+    - "H1 and the muscle-loss FAQ: the app or scan is never the subject of 'measure/detect muscle loss' except in the negative FAQ answer."
 
-  # fitxpress only — sourced from about-me.md
-  voice_fingerprint:
-    - "The reframe move: 'is the scale number going down?' → 'is the composition change the intended one?' — GLP-1 weight loss includes lean mass loss the scale can't show"
-    - "Declarative and unhurried; mostly 10-20-word sentences, averaging under 16 words (article_lint.py gate 10); concrete over abstract — every claim carries a number, source, or disclosed limit"
-    - "Honest about limits in the same breath as capability; actor framing ('fitness apps', 'coaching platforms', 'GLP-1 programs', 'members'), not 'you'-spam"
-    - "Compare by role, not by hype — smart scale vs mobile scan vs DXA each fit different workflows, no clean sweep"
+  tone_base:
+    - "calm, specific, evidence-led B2B (about-me.md); the reframe move как утверждение, не риторический вопрос (поправка 2026-09-11)"
+    - "предложения в среднем < 16 слов (article_lint gate 10); декларативно, конкретика над абстракцией"
+    - "честность про лимиты в одном дыхании с возможностями; actor framing (telehealth program, care team, clinic), не «you»-спам"
+    - "sensitive verticals (telehealth, GLP-1, insurance, occ health, clinical trials): ранняя scope note курсивом"
+
+  tone_topic:
+    - "Fitness-app register, lighter than telehealth, hedged on the GLP-1 half. Decision thread: what the app receives, shows, compares, routes."
+    - "Scope note: keep current text (clinical boundary plus 'FitXpress is not a medical device.', stated once in the article). Current wording: 'The focus is fitness and coaching apps, including those operated by GLP-1 programs. FitXpress supplies body measurements and composition estimates, and its lean mass estimate is not a measurement of muscle. It does not evaluate GLP-1 medications, doses, or side effects. FitXpress is not a medical device. Clinical questions stay with the prescribing clinician.'"
+    - "Short Answer H2 is dropped; its scale and circumference points go into the opening or the table."
+
   claims_discipline:
-    - "NEVER: diagnose, make treatment/dosing/eligibility decisions, replace clinician/DXA/BIA/calibrated scale, guarantee retention/adherence outcomes, auto-detect fraud"
-    - "Describe as: mobile body-scanning / structured body-data capture / scan-to-scan progress-comparison layer that fitness apps and GLP-1 programs integrate; FitXpress is not a medical device, not a prescribing or dosing tool"
-  accuracy_framing:
-    - "Never reduce accuracy to one universal number — qualify by decision/reference/protocol/population/tolerance"
-    - "Repeatability is the load-bearing claim here (scan-to-scan consistency for longitudinal GLP-1/fitness tracking); write it as '< 1 cm' / 'below 1 cm', locked convention"
-    - "The two benchmarks (internal ~96-97%/1.5-2.0cm; ISO 8559-1 session-to-session 0.40cm) are never combined in one paragraph"
-    - "A paragraph carrying a figure links to https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/, not from a distant 'further reading' block"
+    - "NEVER: diagnose, make treatment/eligibility/clearance decisions, replace clinician/DXA/BIA/calibrated scale, guarantee compliance, auto-detect fraud."
+    - "Describe as: a mobile body-scanning solution; a structured body-data capture layer; a remote intake and documentation layer; a workflow-standardization tool; support for review, monitoring, documentation, and operational efficiency (about-me.md verbatim). FitXpress is not a medical device."
 
-  examples:
-    - file: "workspace/seo/articles/glp-1-market-hub/published-live-2026-08-28.md"
-      note: "Live GLP-1 Market hub (published 2026-08-28) — read for GLP-1-register, market-hedging, and to NOT duplicate its market-growth/progress-tracking-gap thesis. Up-link target."
-    - file: "workspace/seo/articles/2026-08-26-remote-body-measurement-online-fitness-coaching/published-live-2026-09-04.md"
-      note: "Live Fitness-hub sibling (published 2026-09-04, Digital Coaching cluster) — closest structural model: same hub, same 12-part shape, fitness-app register. NOTE its canonical tag pointed at glp-1-market; that was fixed on the site 09-18, but Search Console still showed 'Discovered — not indexed' (never crawled) on 09-21 while it waits for a recrawl. Link to it normally; this was a CMS issue, not a content one."
-    - reference_only: "brand-assets/style-guides/blog-style-guide.md + brand-assets/style-guides/editorial-rewrites.md + brand-assets/past-articles/blog/manual-vs-digital-intake-occupational-health-screening.md — mandatory per CLAUDE.md §15 pt 0-1 before writing; not embedded here for size, seo-writer/seo-planner reads directly."
+  # ---------------- skeleton (decisions section 6; H2 wording is the planner's, in '### Section N.' form) ----------------
+  section_skeleton:
+    opening: "Member on GLP-1 treatment; what the scale number does and does not show; one link to the AI in Fitness hub; scope note. No 'Short answer' H2."
+    section_1: "Why this is a fitness app question. Strength program plus weight chart leaves training record disconnected from body-change data. EXT-KFF one sentence. One link to glp-1-market, one to visual-progress-tracking-glp1-adherence-retention. No retention claims."
+    section_2: "What the evidence says, and what a scan cannot determine. H2 carries 'GLP-1 muscle loss'. EXT-NEELAND, lean mass vs muscle, 'appear to be adaptive', EXT-JOINT-ADVISORY (amended), T-MUSCLE-FUNCTION."
+    section_3: "What to show in a GLP-1-aware fitness progress view. T-TABLE, Image 1 (illustrative), T-ESTIMATES, T-WEIGHT-SOURCE."
+    section_4: "How to run comparable check-ins. Baseline (T-BASELINE), cadence (moved from FAQ), capture conditions, review of differences (change-threshold point: smallest difference worth showing depends on observed scan-to-scan variation and the interval; link to the online coaching article), alternative path (FXS-POPULATION first two sentences, plus one sentence: the app can offer manual measurements or a weight-only progress view for members who cannot use standard capture)."
+    section_5: "Where FitXpress fits and what to test in a pilot. FXS-OUTPUTS, FXS-SPEED, T-BODY-PROGRESS, integration responsibilities (T-PRIVACY-ROLES, T-RECORDS-ACTORS; replaces the 4-row roles table), measurement limits (FXS-ACCURACY, FXS-REPEAT, T-REPEAT-SCOPE, T-VALIDATION), T-34K (placement rule), T-GUARDRAIL-DXA once, pilot metrics. ADD one contextual link to the fitness product page where the integration workflow is discussed; keep the final CTA too."
+    faq: "Short. First: 'Can a mobile body scan measure muscle loss during GLP-1 treatment?' (current wording). Keep a question only if the body does not answer it. 'How often' goes into Section 4. 'Does a fitness app need to know whether a member takes a GLP-1 medication?' may stay, aligned with T-PRIVACY-ROLES."
+    next_steps_cta: "Keep. One CTA to the fitness product page."
+    removed_or_condensed:
+      - "Roles section and 4-row table: condensed into Section 5"
+      - "'Which fits when' scale vs scan vs DXA/BIA section: REMOVED, one sentence plus one link to remote-body-measurement-online-fitness-coaching"
+      - "'Fitness apps and GLP-1 programs this workflow fits': cut (second-record-by-different-method point may survive as one sentence in Section 4 or 5; GLP-1 tools article link may survive once)"
+      - "'Implementation and evaluation considerations': privacy to Section 5, thresholds and alternative path to Section 4, pilot to Section 5"
+    images:
+      image_1: "Annotated, explicitly 'Illustrative example' app progress view: dated weight, circumference and composition trends, method labels, training blocks. Section 3."
+      image_2: "Capture-to-results visual: two photos, guided capture, results."
+      rule: "Neither may show a scan measuring muscle tissue. Same rule for the cover concept."
 
-  competitors_context: |
-    Prism Labs is the primary FX competitor here — strong narrative in "body composition
-    beyond BMI" and weight-loss/GLP-1 programs specifically (competitors.md §1), plus
-    fitness/wellness lead-magnet scans. Bodygram is secondary, fitness-trainer-focused.
-    Our angle for this bridge: repeatability for longitudinal GLP-1 tracking + two-sided
-    integration (fitness-app UX + GLP-1-program rigor) that neither competitor combines as
-    cleanly, backed by workflow/compliance depth. Never name competitors in the article.
-
+  # ---------------- ICP ----------------
   icp_context:
-    segment: "Cross-cluster bridge — icp-detail.md/audience.md segment 1 (Telehealth & GLP-1 / Weight Loss Programs) × segment 8/3 (Connected & Digital Fitness). Write for BOTH actors: the GLP-1/weight-loss program AND the fitness/coaching app that serves GLP-1 users."
-    buyer_persona: "GLP-1 side: Founder/CEO, Chief Medical Officer, Head of Member Engagement/Retention, Head of Clinical Operations. Fitness side: Founder/CEO, Chief Product Officer, Head of Growth, VP User Engagement/Retention."
+    segment: "Connected & Digital Fitness (audience.md #3), with the GLP-1 program actor (audience.md #1) as the secondary reader. Write for the app team."
+    buyer_persona: "Fitness side: Founder/CEO, Chief Product Officer, Head of Growth, VP User Engagement. GLP-1 side: Head of Member Engagement, Chief Medical Officer."
     pain_points:
-      - "GLP-1 users lose lean mass alongside fat; the scale number alone hides which one is happening (core hook of the article's title)"
-      - "Members drop off after onboarding when progress isn't visible, and 'weight is going down' stops being a good enough signal for GLP-1 users specifically"
-      - "Fitness apps serving GLP-1 users compete on personalization but track composition with self-report or basic connected scales, which is 'outdated' against what body-data-native competitors offer"
-      - "Small real composition changes get lost in measurement noise with weak repeatability — repeat check-ins become a churn risk instead of an engagement engine"
-      - "Payers/enterprise partners increasingly expect measurable, defensible outcomes, not just a scale-weight trend line"
-    hero_message: "Make body progress visible — beyond the scale number — before GLP-1 members and fitness-app users drop off. (icp-detail.md §1 hero message, adapted for the bridge; alt: 'Best-in-class repeatability for programs that depend on repeat scans.')"
-    segment_hook: |
-      Telehealth & GLP-1 (audience.md #1): make body progress visible → repeat check-ins →
-      adherence → retention; repeatability (< 1 cm) so small real changes aren't lost in
-      measurement noise; longitudinal, defensible outcomes for payer/employer partners.
-      Connected & Digital Fitness (audience.md #3): visible transformation + body-data
-      personalization → engagement, retention, premium-tier monetization; tone lighter,
-      less clinical than the GLP-1 half.
+      - "A weight chart alone leaves the training record disconnected from body-change data"
+      - "Members on GLP-1 treatment see the scale fall whatever the training program adds"
+      - "Small real changes get lost in measurement noise without scan-to-scan repeatability"
+      - "Two parties (fitness app company, prescribing provider) hold different records"
+    hero_message: "Make body progress visible, beyond the scale number."
+    segment_hook: "Visible transformation plus body-data personalization -> engagement; tone lighter and less clinical than the GLP-1 half."
     do_not_say:
-      - "GLP-1 #1 (audience.md): no diagnostic claims; not a DXA or calibrated-scale replacement; no eligibility decisioning; keep separate from UK online-pharmacy BMI compliance — THIS piece is the fitness bridge, not the BMI-verification bridge, so UK Meds/eligibility language does not belong here"
-      - "Fitness #3 (audience.md): no medical, diagnostic, or clearance language; don't blur into wellness-rewards workflows (that's Hub 5, a different bridge)"
-      - "No dosing, prescribing, or medication-effectiveness claims about GLP-1 itself — FitXpress has nothing to say about the drug, only about the body-data layer around it"
+      - "No medical, diagnostic or clearance language; no eligibility decisioning; keep separate from UK online-pharmacy BMI compliance and from wellness rewards"
+      - "No dosing, prescribing or medication-effectiveness claims about GLP-1 itself"
+      - "Not a DXA or calibrated-scale replacement"
 
-  # track=seo + fitxpress only — content-plan.md row + content-strategy-guidelines.md §9/§11
+  competitors_context: "Prism Labs is the main FX competitor in GLP-1 and weight-loss programs. Never named in the article. Angle: repeatable scan-to-scan comparison inside the app's own interface via API/SDK."
+
+  # ---------------- content strategy / links ----------------
   content_strategy:
-    hub: "AI in Fitness (Hub 1) — filed as a cross-cluster bridge row into GLP-1 Market (Hub 3)"
+    hub: "AI in Fitness (Hub 1), filed as a cross-cluster bridge row into GLP-1 Market (Hub 3)"
     cluster: "GLP-1 bridge"
     intent: "Cross-cluster bridge"
-    action_type: "Create net-new"   # verbatim, content-plan.md:122 — GATE family: GO → Phase 1
+    action_type: "Create net-new"
     priority: "P1"
     pencilled: "October 2026"
-    existing_urls:
-      - "https://3dlook.ai/content-hub/glp-1-market/  # GLP-1 Market hub (refreshed 08-28) — named link target in the row; up-link / bridge partner, do NOT duplicate its market-growth/progress-tracking-gap thesis"
-      - "https://3dlook.ai/content-hub/visual-progress-tracking-glp1-adherence-retention/  # 'Visual Progress Tracking for GLP-1 Adherence & Retention' (Dec 2025, Supporting) — the row's second named link target ('visual-progress-tracking-glp1-...' resolved via published-articles-inventory.md). Also separately flagged in Hub 3 as a P2 refresh-expand target to 'own progress tracking' — link to it, do not re-do its progress-tracking-thesis work here"
-      - "https://3dlook.ai/content-hub/ai-in-fitness-industry/  # Fitness hub anchor (refreshed 07-31) — up-link, do not duplicate the broad overview"
-      - "https://3dlook.ai/content-hub/remote-body-measurement-online-fitness-coaching/  # Fitness hub sibling, Digital Coaching P1 (published 09-04) — sideways link, distinct intent (coaching-program workflow, not the GLP-1 bridge)"
-      - "https://3dlook.ai/content-hub/top-7-remote-body-composition-tools-glp-1-clinics/  # GLP-1 tools listicle (P0, published 08-21) — sideways link, do not duplicate the buyer-evaluation/tools-comparison intent"
     cannibalization_guardrail: >
-      Row verbatim (content-plan.md:122): "Keep fitness app strategy separate from wellness
-      and GLP-1 content." Read together with content-plan.md:157 (GLP-1 Market hub preamble):
-      "Every GLP-1 supporting asset must own a distinct intent and not repeat GLP-1 Market,
-      Online Pharmacy BMI Verification, Visual Progress Tracking or the GLP-1 tools list."
-      And content-plan.md:116 (Fitness hub preamble): supporting pieces must target "coaching,
-      comparison, app implementation, or the GLP-1 bridge" — this row IS that bridge slot, so
-      it does not compete with the coaching article, it is the deliberately-planned complement
-      to it. Do not duplicate: glp-1-market (market/progress thesis), top-7-remote-body-
-      composition-tools-glp-1-clinics (tools listicle), online-pharmacy-bmi-verification (BMI
-      eligibility — wrong bridge), remote-body-measurement-online-fitness-coaching (coaching-
-      workflow intent). Adjacent-not-duplicate: "Smart Scale vs AI Body Scan: What Fitness Apps
-      Should Track" (content-plan.md:123, P2, Review/decide, one shared comparison page for
-      fitness+wellness+nutrition+GLP-1 "only if demand supports it") — that row is a separate,
-      undecided GEO/comparison piece; this bridge article may reference smart scales in passing
-      (audience.md objection pattern) but must not become that comparison article.
-    recommendation: "Create net-new bridge (or a section in the GLP-1 Market hub, per the row's own phrasing) connecting two already-proven, already-live topics: GLP-1 progress tracking and fitness-app body-composition tracking. Angle: the scale number hides lean-mass loss during GLP-1 treatment; body composition tracking (not weight alone) is the fix, for both GLP-1 programs and the fitness/coaching apps serving their users."
-    vertical_boundary: >
-      Fitness (content-strategy-guidelines.md §9): "Owns fitness apps, digital coaching, body
-      recomposition, progress visibility, engagement, retention, and app features. Do not blur
-      too much into wellness rewards or GLP-1 clinical workflows." GLP-1 (§9): "Owns
-      medication-supported weight-loss progress tracking, body composition, patient records,
-      clinic workflows, baseline data, and tools for GLP-1 clinics. Do not duplicate the GLP-1
-      market page, visual progress page, Beyond BMI page, or online pharmacy BMI verification
-      article." This article is explicitly the licensed exception in both guardrails (audience.md
-      segment 1 Don't: "...unless the piece is explicitly the bridge") — it may blend fitness-app
-      and GLP-1-program framing, but the "do not duplicate" list above still applies in full, and
-      it must not drift into wellness-rewards (Hub 5) or online-pharmacy BMI-verification (Hub 2/4)
-      territory, which are different bridges.
+      Row: "Keep fitness app strategy separate from wellness and GLP-1 content." Do not duplicate:
+      glp-1-market (market and progress thesis), top-7-remote-body-composition-tools-glp-1-clinics (tools list),
+      online-pharmacy-bmi-verification (eligibility), remote-body-measurement-online-fitness-coaching
+      (coaching workflow and method comparison), visual-progress-tracking-glp1-adherence-retention
+      (owns the retention angle). The Smart Scale vs AI Body Scan comparison row (P2) stays a separate piece.
+    vertical_boundary: "Fitness owns apps, coaching, progress visibility, engagement. Do not blur into wellness rewards or GLP-1 clinical workflows. Licensed bridge exception applies, the do-not-duplicate list still applies in full."
     internal_link_targets:
       up:
-        - "https://3dlook.ai/content-hub/ai-in-fitness-industry/  # AI in Fitness hub — the row's home hub"
-        - "https://3dlook.ai/content-hub/glp-1-market/  # GLP-1 Market hub — the row's named bridge partner"
+        - "https://3dlook.ai/content-hub/ai-in-fitness-industry/"
+        - "https://3dlook.ai/content-hub/glp-1-market/"
       sideways:
-        - "https://3dlook.ai/content-hub/remote-body-measurement-online-fitness-coaching/  # Digital Coaching, same Fitness hub, distinct workflow intent"
-        - "https://3dlook.ai/content-hub/visual-progress-tracking-glp1-adherence-retention/  # progress-tracking/engagement angle, named in the row"
-        - "https://3dlook.ai/content-hub/top-7-remote-body-composition-tools-glp-1-clinics/  # GLP-1 buyer-evaluation tools"
+        - "https://3dlook.ai/content-hub/remote-body-measurement-online-fitness-coaching/   # method comparison (replaces the removed section) and change thresholds"
+        - "https://3dlook.ai/content-hub/visual-progress-tracking-glp1-adherence-retention/   # retention angle"
+        - "https://3dlook.ai/content-hub/top-7-remote-body-composition-tools-glp-1-clinics/   # optional, once, Section 1 or 5; AEO-cited"
       down:
-        - "https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/  # Fitness-side BOFU product page, per Hub 1 preamble"
-        - "https://3dlook.ai/fitxpress/for-telehealth-and-weight-loss/  # GLP-1/telehealth-side BOFU product page"
-        - "note: pick ONE primary CTA per about-me.md CTA discipline ('don't force one CTA onto every article') — likely the fitness-app page given the row's home hub, with the telehealth page offered as a secondary link for GLP-1-program readers"
+        - "https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/   # PRIMARY: one contextual link in Section 5 plus final CTA, never in the T-34K paragraph"
       trust:
-        - "https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/  # accuracy framework — cite whenever accuracy/repeatability is discussed"
-        - "https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/  # central trust FAQ, live since 09-16 — short context note only, do not restate; relevant given GLP-1 is a sensitive vertical"
+        - "https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/   # once in the accuracy paragraph, in the same paragraph as the figure"
+        - "https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/   # once, mid-paragraph in the privacy paragraph"
+    incoming_links_open_item: "After publication, contextual links INTO this article from the AI in Fitness hub and glp-1-market (CMS work by Assel; open item in the publish package, not done by the pipeline)."
 
-  # only for track=seo + fitxpress — from published-articles-inventory.md (LIVE registry: fact, not plan)
   published_inventory:
-    already_live: false   # confirmed: "GLP-1 and Fitness Apps" appears only in the open-P1 list (published-articles-inventory.md:475, "October pencils"), not in the Published Assets table. Safe to plan as net-new.
-    published_hub_articles:
-      - {slug: "ai-in-fitness-industry", title: "AI in Fitness: How Structured Body Data Powers Progress Tracking, Personalization, and Digital Coaching", published: "2026-07-31", role: "hub"}
-      - {slug: "remote-body-measurement-online-fitness-coaching", title: "Remote Body Measurement for Online Fitness Coaching Programs", published: "2026-09-04", role: "P1 supporting (Digital Coaching)", note: "canonical → glp-1-market fixed on the site 09-18; still not indexed on 09-21 (never crawled). Link normally"}
-      - {slug: "glp-1-market", title: "GLP-1 Market Growth and the Need for Better Patient Progress Tracking", published: "2026-08-28 (refresh; originally Oct 2024)", role: "hub"}
-      - {slug: "top-7-remote-body-composition-tools-glp-1-clinics", title: "7 Body Composition and Progress-Tracking Tools for Remote GLP-1 Clinics", published: "2026-08-21", role: "P0 supporting listicle"}
-      - {slug: "online-pharmacy-bmi-verification-a-2026-compliance-guide", title: "Online Pharmacy BMI Verification: A 2026 Compliance Guide", published: "2026-08-24 (rewrite)", role: "P0/P1, also owns Telehealth BMI verification — wrong bridge for this article, cited only as a boundary reminder"}
-      - {slug: "visual-progress-tracking-glp1-adherence-retention", title: "Visual Progress Tracking for GLP-1 Adherence & Retention", published: "2025-12 (Dec 2025)", role: "supporting, P2 refresh-expand target for 'progress tracking' cluster"}
-    recently_published:  # last 30 days as of 2026-09-19, i.e. since 2026-08-20
-      - {slug: "top-7-remote-body-composition-tools-glp-1-clinics", published: "2026-08-21", hub: "GLP-1 Market"}
-      - {slug: "online-pharmacy-bmi-verification-a-2026-compliance-guide", published: "2026-08-24", hub: "GLP-1 / Telehealth"}
-      - {slug: "glp-1-market", published: "2026-08-28", hub: "GLP-1 Market"}
-      - {slug: "remote-body-measurement-online-fitness-coaching", published: "2026-09-04", hub: "AI in Fitness"}
-      - {slug: "ai-body-data-wellness-platforms", published: "2026-09-14", hub: "Wellness Platforms", note: "canonical defect fixed 09-17, but still not indexed on 09-21 (last crawl 09-16). Do not read its search performance as a topic signal yet"}
-      - {slug: "bariatric-pre-qualification-mobile-3d-body-scanning", published: "2026-09-15", hub: "Bariatrics"}
-      - {slug: "fitxpress-data-privacy-security-regulatory-faq", published: "2026-09-16", hub: "Trust FAQ (Hub 0)"}
-    refresh_status: "Not a refresh — this row is net-new. No sibling article with this exact bridge intent exists to refresh. All directly-linked sibling hubs (Fitness, GLP-1 Market) are current (refreshed within the last 7 weeks); visual-progress-tracking-glp1-adherence-retention is older (Dec 2025) and is its own separate P2 refresh candidate, not this article's job to fix."
+    already_live: false   # slug glp-1-muscle-loss-fitness-apps returns 404 on 2026-10-20
+    refresh_status: "Net-new. Sibling hubs are live and current (ai-in-fitness-industry 2026-07-31, glp-1-market 2026-08-28, remote-body-measurement-online-fitness-coaching 2026-09-04). visual-progress-tracking-glp1-adherence-retention is Dec 2025 and its own P2 refresh candidate."
+    live_slugs: "see live_slugs below"
 
-  # only for track=seo — from scripts/ahrefs-keywords.py (Ahrefs API v3), pulled by orchestrator 2026-09-19. Real figures, not recalculated.
-  # null volume/difficulty = Ahrefs has NO figure. It is NOT zero.
+  # ---------------- stable live registry (verbatim) ----------------
+  live_slugs:
+    - mobile-body-scanning-patient-engagement
+    - the-potential-of-ai-in-telehealth
+    - ai-in-fitness-industry
+    - ai-body-data-health-hub
+    - clinical-trial-anthropometric-measurement-software-obesity-trials
+    - occupational-health-screening-software
+    - mobile-body-scanning-accuracy
+    - top-7-remote-body-composition-tools-glp-1-clinics
+    - online-pharmacy-bmi-verification-a-2026-compliance-guide
+    - glp-1-market
+    - bariatric-pre-qualification-mobile-3d-body-scanning
+    - remote-body-measurement-online-fitness-coaching
+    - ai-body-data-wellness-platforms
+    - fitxpress-data-privacy-security-regulatory-faq
+    - manual-vs-digital-intake-occupational-health-screening
+  recently_published:
+    - {slug: manual-vs-digital-intake-occupational-health-screening, published: "2026-09-21", title: "Manual vs Digital Intake in Occupational Health Screening: A Workflow Comparison"}
+
+  # ---------------- keywords (Ahrefs v3, pulled 2026-09-19; nothing recalculated; null = no figure, NOT zero) ----------------
   keywords_raw:
-    source: "ahrefs api v3 (keywords-explorer)"
+    source: "ahrefs api v3; files workspace/seo/_keywords/2026-09-19-glp-1-fitness-apps-body-composition-tracking*.yaml"
     pulled: "2026-09-19"
-    plan: "Standard 2022, billed monthly"
+    primary_keyword: "glp-1 muscle loss"   # unchanged (Vadim, checkpoint 1, 19.09)
+    seed_has_data: true
+    seed_metrics: {volume: 600, difficulty: 45, cpc: 8, traffic_potential: 100, parent_topic: "glp1 muscle loss"}
+    pencilled_title_exact_phrase: {seed_has_data: false, seed_metrics: null, note: "no measured demand; auto-picked 'just weight' is junk"}
+    variants:
+      - {keyword: "glp 1 muscle loss", volume: 400, difficulty: 11}
+      - {keyword: "glp 1 and muscle loss", volume: 250, difficulty: null}
+      - {keyword: "glp-1 muscle loss prevention", volume: 250, difficulty: 37, use: "only as the joint advisory's topic, never as advice"}
+      - {keyword: "does glp-1 cause muscle loss", volume: 250, difficulty: null}
+      - {keyword: "glp-1 and muscle loss", volume: 150, difficulty: 28}
+    secondary_cluster_app:
+      seed: {keyword: "glp-1 app", volume: 100, difficulty: null}
+      top: [{keyword: "glp-1 tracker app free", volume: 300, difficulty: null}, {keyword: "glp 1 app", volume: 200, difficulty: null}, {keyword: "best app for glp 1 tracking", volume: 150, difficulty: null}]
+    not_ours: "'body composition' (40000, KD 35) belongs to a broader TOFU cluster"
+    h1_note: "gate 7 (article_lint) requires the exact primary keyword in the H1 and in 1-2 H2s. The reviewer's H1 'GLP-1 and Fitness Apps: Tracking Body Change Beyond Scale Weight' drops it: open item for Vadim, one-line swap that also changes the primary keyword."
 
-    primary_seed:
-      file: "workspace/seo/_keywords/2026-09-19-glp-1-fitness-apps-body-composition-tracking.yaml"
-      seed: "GLP-1 and fitness apps tracking body composition not just weight"
-      seed_has_data: false
-      seed_metrics: null
-      note: >
-        The script's auto-picked idea_seed was "just weight" (highest-volume 2-word fragment,
-        150/mo, KD0) — a junk head term. Its 40 "ideas" are all irrelevant workout-noise queries
-        ("can you lose weight just by lifting weights no cardio" 250/mo, "just dance weight loss"
-        60/mo, etc.). Only two other fragments carried any measured volume: "glp-1 and" (30/mo,
-        KD null) and "just weight" itself (150/mo, KD0, informational+commercial+branded intent
-        per Ahrefs, also junk). No usable keyword data from this exact-phrase pull.
+  # ---------------- AEO ----------------
+  aeo_signals:
+    source: "HubSpot AEO, portal 6014382, via scripts/hubspot-aeo.py topic; file workspace/seo/_aeo/2026-10-20-glp-1-fitness-apps-body-composition-tracking.yaml"
+    pulled: "2026-10-20"
+    portal_visibility_avg: 37.4
+    no_prompt_covers_topic: false
+    note: "No tracked prompt asks about GLP-1 muscle loss directly. match is a sort order only; planner judges relevance. Prompt texts say DEXA, article prose says DXA."
+    matched_prompts:
+      - {id: 565540613659, prompt: "What's the best body composition tracking software for a fitness app that wants smartphone-based scans? Include sources.", visibility: 50, phase: CONSIDERATION, runs_naming_3dlook: 11, runs_checked: 25, ai_cites_ours: false, top_cited: "gainframe.app best-body-scanning-measurement-apps (10), docs.bodygram.com (9)"}
+      - {id: 565495617300, prompt: "How can a GLP-1 weight-loss clinic track patient body composition remotely? Include tools.", visibility: 28, phase: AWARENESS, runs_naming_3dlook: 3, runs_checked: 25, ai_cites_ours: true, ours_cited: "https://3dlook.ai/content-hub/top-7-remote-body-composition-tools-glp-1-clinics/ (15 citations)"}
+      - {id: 565780364091, prompt: "What are the best alternatives to DEXA scans for tracking body composition remotely?", visibility: 1, phase: AWARENESS, runs_naming_3dlook: 1, runs_checked: 25, ai_cites_ours: true, ours_cited: "https://3dlook.ai/content-hub/ai-body-scanners-vs-dexa-scans/ (9 citations)", guard: "This article does NOT answer it (method comparison removed); link to the coaching article only"}
+      - {id: 554650727321, prompt: "Which mobile body scanning platforms support body composition progress tracking?", visibility: 15, phase: CONSIDERATION}
+      - {id: 565767450188, prompt: "Which body scanning APIs are easiest to integrate into a fitness or wellness app?", visibility: 73, phase: CONSIDERATION}
+      - {id: 565540613660, prompt: "What body scanning SDKs work for fitness apps with remote users?", visibility: 90, phase: CONSIDERATION}
+    answerable_by_this_article: "565540613659 and 554650727321 (what a fitness app shows from body composition estimates over time; Section 3 and 5), partly 565495617300 (GLP-1 program actor). API/SDK prompts (73%, 90%) are already strong; keep FXS-DELIVERY wording in Section 5."
+    ours_already_cited_by_assistants: ["top-7-remote-body-composition-tools-glp-1-clinics (15)", "ai-body-scanners-vs-dexa-scans (9)"]
+    open_recommendations: "none matches this topic (all LOW/HIGH items are bariatric, YouTube, LinkedIn, PR); not an input to the plan"
 
-    additional_seeds:
-      - file: "workspace/seo/_keywords/2026-09-19-glp-1-fitness-apps-body-composition-tracking--seed-glp-1-body-composition.yaml"
-        seed: "glp-1 body composition"
-        seed_has_data: false
-        seed_metrics: null
-        notable_variants:
-          - {keyword: "glp-1 body", volume: 20, difficulty: null}
-          - {keyword: "body composition", volume: 40000, difficulty: 35, cpc: 60, traffic_potential: 2300, parent_topic: "what is body composition"}
-        note: "'body composition' alone is a 40K/mo head term but belongs to how-to-measure-body-composition territory (TOFU body-composition-education cluster), not this bridge article — too broad, not ours to target here."
+  # ---------------- fitxpress voice, from about-me.md ----------------
+  voice_fingerprint:
+    - "The reframe move as a statement: the question is what the app should show next to the scale number, not what the scale says."
+    - "Declarative and unhurried; sentence average under 16 words; every claim carries a number, source, or disclosed limit"
+    - "Honest about limits in the same breath as capability; actor framing (fitness app company, prescribing provider, member), not 'you'-spam"
+  accuracy_framing:
+    - "Never reduce accuracy to one universal number. The figures describe body measurements only (T-REPEAT-SCOPE)."
+    - "Repeatability written as 'less than 1 cm' per FXS-REPEAT, locked convention; the figure paragraph links to the accuracy framework."
+    - "Performance for people with physical disabilities has not been established (FXS-POPULATION)."
 
-      - file: "workspace/seo/_keywords/2026-09-19-glp-1-fitness-apps-body-composition-tracking--seed-glp-1-muscle-loss.yaml"
-        seed: "glp-1 muscle loss"
-        seed_has_data: true
-        seed_metrics: {volume: 600, difficulty: 45, cpc: 8, traffic_potential: 100, parent_topic: "glp1 muscle loss"}
-        note: "STRONGEST usable cluster — direct match for the article's 'not just weight' / lean-mass-loss angle."
-        top_ideas:
-          - {keyword: "glp-1 muscle loss", volume: 600, difficulty: 45, cpc: 8}
-          - {keyword: "glp 1 muscle loss", volume: 400, difficulty: 11, cpc: 8}
-          - {keyword: "glp 1 and muscle loss", volume: 250, difficulty: null, cpc: 7}
-          - {keyword: "glp-1 muscle loss prevention", volume: 250, difficulty: 37, cpc: null}
-          - {keyword: "does glp-1 cause muscle loss", volume: 250, difficulty: null, cpc: null}
-          - {keyword: "does glp 1 cause muscle loss", volume: 250, difficulty: null, cpc: 9}
-          - {keyword: "muscle loss glp-1", volume: 200, difficulty: null, cpc: 5}
-          - {keyword: "do glp 1 cause muscle loss", volume: 150, difficulty: null, cpc: 4}
-          - {keyword: "glp-1 and muscle loss", volume: 150, difficulty: 28, cpc: 9}
-          - {keyword: "glp-1 muscle loss supplements", volume: 100, difficulty: null, cpc: null}
-          - {keyword: "muscle loss with glp 1", volume: 100, difficulty: null, cpc: null}
-          - {keyword: "how to prevent muscle loss on glp 1", volume: 100, difficulty: null, cpc: null}
-        adjacent_broad_term: {keyword: "muscle loss", volume: 700, difficulty: 4, cpc: 6, traffic_potential: 6600, parent_topic: "muscle atrophy", note: "high traffic potential but not GLP-1-specific — background context, not a target keyword"}
-        remaining_ideas: "27 more long-tail variants (30-90/mo, mostly difficulty:null) in the source file — read it directly for the full list."
+  examples:
+    - {file: "workspace/seo/articles/2026-09-19-glp-1-fitness-apps-body-composition-tracking/v2/final.md", note: "current text, source of the retained sentences (scope note, DXA guardrail, FAQ 1). v1 is what the reviewer read."}
+    - {file: "workspace/seo/articles/2026-08-26-remote-body-measurement-online-fitness-coaching/published-live-2026-09-04.md", note: "live Fitness-hub sibling; owns method comparison"}
+    - {reference_only: "brand-assets/style-guides/blog-style-guide.md, editorial-rewrites.md, brand-assets/past-articles/blog/manual-vs-digital-intake-occupational-health-screening.md (CLAUDE.md §15)"}
 
-      - file: "workspace/seo/_keywords/2026-09-19-glp-1-fitness-apps-body-composition-tracking--seed-glp-1-app.yaml"
-        seed: "glp-1 app"
-        seed_has_data: true
-        seed_metrics: {volume: 100, difficulty: null, cpc: null, intents: {informational: true, commercial: true}}
-        note: "Second usable cluster — matches the 'fitness apps' half of the bridge (tracker-app demand)."
-        top_ideas:
-          - {keyword: "glp-1 tracker app free", volume: 300, difficulty: null, cpc: null}
-          - {keyword: "glp 1 app", volume: 200, difficulty: null, cpc: 600, note: "cpc looks like noise for this volume/topic, treat cautiously"}
-          - {keyword: "best app for glp 1 tracking", volume: 150, difficulty: null, cpc: null}
-          - {keyword: "free glp 1 tracker app", volume: 150, difficulty: null, cpc: null}
-          - {keyword: "glp 1 tracking app", volume: 100, difficulty: null, cpc: null}
-          - {keyword: "glp 1 tracker app", volume: 100, difficulty: null, cpc: null}
-          - {keyword: "glp-1 app", volume: 100, difficulty: null, cpc: null}
-          - {keyword: "best glp 1 app", volume: 100, difficulty: null, cpc: null}
-          - {keyword: "best glp-1 tracker app", volume: 90, difficulty: null, cpc: null}
-          - {keyword: "best glp 1 tracker app", volume: 90, difficulty: null, cpc: null}
-        remaining_ideas: "22 more long-tail variants (30-80/mo, all difficulty:null) in the source file."
+  open_items_for_vadim:   # publish package + digest, not article copy
+    - "Reviewer's verbatim H1 is a one-line swap but drops the primary keyword (gate 7 fails)."
+    - "Reviewer asked for explicit customer permission to describe the 34,000-scan use publicly; 19.09 anonymized decision stands."
+    - "Incoming links from the AI in Fitness hub and glp-1-market (CMS work)."
 
-    synthesis: >
-      No exact-match head term for the pencilled title carries measured demand — the primary
-      seed pull is unusable (junk "just weight" auto-pick). Two real, on-topic pockets exist:
-      (1) the "glp-1 muscle loss" cluster (600/mo seed, KD45, several 100-400/mo variants) —
-      a direct match for the article's core thesis (GLP-1 weight loss can mean lean-mass loss
-      the scale hides); (2) the "glp-1 app" / tracker-app cluster (100-300/mo, mostly
-      unmeasured difficulty) — matches the fitness-app half of the bridge. "body composition"
-      itself (40K/mo, KD35) is real volume but belongs to a different, broader TOFU cluster,
-      not this bridge piece. Recommend seo-planner build the outline around the muscle-loss /
-      composition-not-weight angle as primary intent, with app/tracker terms as a secondary
-      H2/FAQ angle, rather than chasing the broad "body composition" head term.
-
-  exclusions: null   # not applicable — track is seo, not outbound
+  exclusions: null
