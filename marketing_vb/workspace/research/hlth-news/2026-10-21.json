@@ -1,0 +1,106 @@
+{
+ "generated": "2026-10-21T05:40:55+00:00",
+ "items": [
+  {
+   "id": "a533f72f-54b8-412f-8e4c-2147da9d9b3b",
+   "title": "Notable Launches Flow Compass to Help Healthcare Organizations Manage AI Workforces",
+   "date": "2026-10-20",
+   "tags": [
+    "Operational Efficiency",
+    "Health System & Health Provider",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/notable-launches-flow-compass-to-help-healthcare-organizations-manage-ai-workforces"
+  },
+  {
+   "id": "db862f21-20f6-438f-8b61-a05f1ffa4981",
+   "title": "Abby Care Secures $82M to Expand Family Caregiver Support Platform",
+   "date": "2026-10-20",
+   "tags": [
+    "Medicare and Medicaid",
+    "Investments and Partnerships",
+    "Home Health",
+    "Startup",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/abby-care-secures-82m-to-expand-family-caregiver-support-platform"
+  },
+  {
+   "id": "ae7c1fd1-b2f1-49fb-bf2d-d3ad2fe3ded4",
+   "title": "Carda Health and American College of Lifestyle Medicine Partner to Expand Virtual Rehabilitation",
+   "date": "2026-10-20",
+   "tags": [
+    "Telehealth / Virtual Care / Remote Patient Monitoring",
+    "Association, Non Profit & Academia",
+    "Care Coordination / Navigation / Care Access",
+    "Health Tech, Solutions & Services",
+    "Chronic Condition Management"
+   ],
+   "url": "https://hlth.com/insights/news/carda-health-and-american-college-of-lifestyle-medicine-partner-to-expand-virtual-rehabilitation"
+  }
+ ],
+ "analyses": {
+  "a533f72f-54b8-412f-8e4c-2147da9d9b3b": {
+   "id": "a533f72f-54b8-412f-8e4c-2147da9d9b3b",
+   "score": 0,
+   "segment": "—",
+   "what": "Notable запустила Flow Compass — шар аналітики й управління AI-воркфлоу для health systems (адмін- та операційні задачі). Перші клієнти — NKC Health і Beacon Health System.",
+   "why": "Автоматизація адміністративних процесів лікарень, зв'язку з даними про тіло немає.",
+   "play": "none",
+   "companies": [
+    "Notable",
+    "NKC Health",
+    "Beacon Health System"
+   ],
+   "_date": "2026-10-20"
+  },
+  "db862f21-20f6-438f-8b61-a05f1ffa4981": {
+   "id": "db862f21-20f6-438f-8b61-a05f1ffa4981",
+   "score": 0,
+   "segment": "—",
+   "what": "Abby Care залучила $82M у Series C (лід — Transformation Capital), щоб розширити платформу, де члени родини стають сертифікованими оплачуваними доглядальниками в межах Medicaid HCBS під наглядом RN Care Managers.",
+   "why": "Домашній догляд і перевірка наданих послуг, а не дані про тіло. Немає ні weight-loss, ні BMI, ні underwriting.",
+   "play": "none",
+   "companies": [
+    "Abby Care",
+    "Transformation Capital",
+    "CVS Health Ventures",
+    "Frist Cressey Ventures",
+    "Pivotal Ventures",
+    "Khosla Ventures",
+    "Thrive Capital",
+    "Sequoia Capital"
+   ],
+   "_date": "2026-10-20"
+  },
+  "ae7c1fd1-b2f1-49fb-bf2d-d3ad2fe3ded4": {
+   "id": "ae7c1fd1-b2f1-49fb-bf2d-d3ad2fe3ded4",
+   "score": 2,
+   "segment": "FitXpress §1 Telehealth & GLP-1 (cardiometabolic / remote monitoring)",
+   "what": "Carda Health (віртуальна кардіо- та пульмонологічна реабілітація вдома) уклала партнерство з American College of Lifestyle Medicine, щоб розширити доступ до at-home rehab і запустити спільні дослідницькі пілоти. Раніше Carda уклала партнерства з Humana (supervised exercise, medication management, nutritional assessments) та Ornish Lifestyle Medicine.",
+   "why": "Carda веде реабілітацію вдома під клінічним наглядом, з оцінкою харчування й lifestyle-інтервенціями, тобто пацієнт поза клінікою. FitXpress з двох фото дає повторювані виміри тіла й оцінку ваги, тож програма може показувати пацієнту прогрес тіла й збирати структуровані дані для звітів партнерам на кшталт Humana. Але в статті не сказано, що Carda зараз відстежує вагу чи склад тіла, тож зв'язок треба перевірити.",
+   "play": "hook_for_existing",
+   "campaign": {
+    "title": "US: віртуальна кардіореабілітація та lifestyle medicine — прогрес тіла вдома",
+    "profile": "nick",
+    "market": "USA",
+    "targets": "Carda Health як окремий акаунт. Далі — схожі типи: віртуальні платформи кардіо- та кардіометаболічної реабілітації й програми intensive lifestyle medicine з нутриційним компонентом (крім уже законтачених Nick).",
+    "roles": "Founder / CEO, Chief Medical Officer / Medical Director, Head of Clinical Operations, Head of Product, Head of Outcomes / Program Insights",
+    "angle": "Carda розширює at-home rehab через ACLM і вже робить оцінку харчування для учасників Humana. Пропонуємо додати до цього повторюваний вимір тіла з двох фото на смартфоні, без ваг і сантиметрової стрічки вдома, щоб пацієнт бачив прогрес, а команда мала дані про результати для партнерів.",
+    "existing_campaign": "2026-09-29-us-cardiometabolic",
+    "task": "USA: virtual cardiac/cardiometabolic rehab and lifestyle-medicine platforms (start with Carda Health) — remote repeatable body-progress tracking for at-home programmes with nutrition assessments"
+   },
+   "caveat": "У статті немає жодного слова про вимір ваги чи складу тіла: фокус на кардіопульмональній функції, а пацієнти з COPD для FitXpress менш релевантні. Партнерство з ACLM освітньо-дослідницьке, тож тригер слабкий. Треба перевірити виручку $2M+. Кампанія 2026-09-29-us-cardiometabolic має фіксований список, тож Carda треба дописати або винести в міні-кампанію. Humana — великий enterprise, не таргет цієї кампанії. Carda немає в реєстрі контактів.",
+   "companies": [
+    "Carda Health",
+    "American College of Lifestyle Medicine",
+    "ACLM",
+    "Humana",
+    "Ornish Lifestyle Medicine"
+   ],
+   "_date": "2026-10-20"
+  }
+ },
+ "posts": []
+}
