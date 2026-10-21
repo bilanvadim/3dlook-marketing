@@ -61,7 +61,7 @@ Volume without these produces a site of pages that rank for nothing and answer n
 | FX — telehealth / weight loss | `fx-telehealth-weight-loss.md` | Yazen (34K scans) | `/structured-body-data-for-telehealth-digital-health-programs/` |
 | FX — online pharmacy / BMI | `fx-online-pharmacy-bmi.md` | UK Meds (7.5K scans) | `/for-bmi-verification/` |
 | FX — digital fitness | `fx-digital-fitness.md` | — | `/fitxpress/for-connected-and-digital-fitness/` |
-| FX — insurance underwriting | `fx-insurance-underwriting.md` | — | none |
+| FX — insurance underwriting | `fx-insurance-underwriting.md` | — | `/for-insurance-underwriting/` (live 2026-10-21) |
 | FX — wellness rewards | `fx-wellness-rewards.md` | — | none |
 | FX — bariatric pre-auth | `fx-bariatric-pre-auth.md` | — | none |
 | FX — occupational health | `fx-occupational-health.md` | — | none (hub article live) |

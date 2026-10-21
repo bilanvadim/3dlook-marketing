@@ -181,6 +181,7 @@ Use them when the argument is structurally a comparison. Don't force a table whe
 | `https://3dlook.ai/mobile-tailor/` | "Mobile Tailor" |
 | `https://3dlook.ai/mobile-tailor/for-on-demand-manufacturing/` | "Mobile Tailor" |
 | `https://3dlook.ai/for-bmi-verification/` | "BMI/build verification", "verification process", "live photo capture" |
+| `https://3dlook.ai/for-insurance-underwriting/` (live 2026-10-21, the insurance landing) | "accelerated underwriting", "build and BMI evidence for underwriting" (anchors from `landing-map.md`) |
 | `https://3dlook.ai/fitxpress/for-telehealth-and-weight-loss/` | "weight-loss and telehealth" |
 | `https://3dlook.ai/case-studies/` | "organizations that need structured body data" |
 | `https://3dlook.ai/content-hub/[other-article]/` | Article-title-as-anchor (full or partial title) |

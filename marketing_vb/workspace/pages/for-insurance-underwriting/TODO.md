@@ -7,6 +7,38 @@ date: 2026-08-31
 
 # TODO — /for-insurance-underwriting/
 
+## Live since 2026-10-21: post-launch
+
+Done on 2026-10-21: in `page-sitemap.xml`, indexed by Google with a self canonical, linked from the main
+menu, shared form `11acb23a` embedded, live text captured in `published-live-2026-10-21.md`,
+`landing-map.md` switched the Hub 4 row to `live`.
+
+- [ ] **GTM `fx_vertical`: add the row `/for-insurance-underwriting/` → `insurance`.** The lookup in the
+      phase-0 runbook (step 0.10 §3) and the tracking spec (B2.5) listed `/fitxpress/for-insurance-underwriting/`,
+      and Page Path matches exactly. Without the row, leads from this page arrive with an empty `fx_vertical`.
+      **Owner: Asselya (GTM).**
+- [ ] **Test lead from the page** per runbook 0.10 §6, `test+fx-insurance@3dlook.me`: `form_name = fx_lp_demo`,
+      `fx_vertical = insurance`, UTM fields filled. **Owner: Asselya.**
+- [ ] **Yoast title and meta description to the final values** (`page-final-2026-10-02.md` → Yoast). The live
+      title is the 2026-08-31 v1 one, without `accelerated underwriting`, which is the keyword rank tracking
+      watches for this page (`rank-keywords.csv`, US, target 5). **Owner: Asselya.**
+- [ ] **"9 vs 27" source label**: change "Gen Re, Next Gen Underwriting Survey" to the LIMRA study its link
+      points to. **Owner: Asselya.**
+- [ ] **Breadcrumb**: Home → FitXpress → FitXpress for Insurance Underwriting, as in the final copy. **Owner: Asselya.**
+- [ ] **Down link from the hub article** `/content-hub/mobile-body-scanning-insurance-underwriting/`
+      (landing-map rule 6). Today its body links only to `/for-bmi-verification/` ("BMI/build verification");
+      the landing is reachable from it only through the menu. Add one in-body link in the first 30%, anchor
+      "accelerated underwriting" or "build and BMI evidence for underwriting". It is the only published
+      article in Hub 4. **Owner: Asselya.**
+- [ ] **llms.txt on the site** (Last updated 2026-09-18) does not list the page. The repo draft
+      (`workspace/research/seo-fitxpress-2026-09/2026-09-27-llms.txt`) has the line now. **Owner: Asselya.**
+- [ ] **Root or `/fitxpress/`?** The page went live at the root while the 2026-09-27 hierarchy puts FX
+      verticals at `/fitxpress/for-{vertical}/`. A later move needs a 301 and a Search Console baseline.
+      **Owner: Vadim, Asselya.**
+- [ ] **`#demo` anchor.** Articles are told to link `{landing}#demo`; this page answers to `#form`.
+      Either add `id="demo"` to the form block or keep `#form` (landing-map now says `#form` for this row).
+- [ ] **Search Console at 30 and 90 days** (2026-11-20, 2027-01-19): item 20 below.
+
 > **Blind judge: 69 / 85, gate not taken. Weakest axis proof of belonging, 10 / 20. One hard fail:
 > fewer than two case studies from this vertical.** Same fact that failed G-I. Detail in
 > `judge-round-1.json`.

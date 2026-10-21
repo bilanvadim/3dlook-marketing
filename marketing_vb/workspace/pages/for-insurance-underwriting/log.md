@@ -16,3 +16,14 @@ the published hub article and the 29-slide insurance deck.
 
 **Checkpoint:** Vadim approves the G-I waiver, the slug and the customer-naming question before anything
 is built.
+
+**2026-10-21 · released**
+
+The page went live at `https://3dlook.ai/for-insurance-underwriting/` (WordPress `datePublished`
+2026-10-21 13:19 UTC). Checked the same day: HTTP 200, in `page-sitemap.xml`, Search Console "Submitted and
+indexed" with a self canonical (crawled 14:09 UTC), linked from the main menu, shared form `11acb23a`
+embedded. `/fitxpress/for-insurance-underwriting/` returns 404. The live text was captured to
+`published-live-2026-10-21.md`. Differences from the final copy are listed at the top of `README.md`, and
+the follow-ups at the top of `TODO.md`. The release was recorded in `landing-map.md`, `site-inventory.md`,
+`page-types.md`, the phase-0 runbook and tracking spec (GTM row), the llms.txt draft, the FitXpress parent
+TODO, the insurance use-case file and `blog-style-guide.md`.

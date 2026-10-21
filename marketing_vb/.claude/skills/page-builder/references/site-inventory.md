@@ -31,6 +31,7 @@ not mix them when checking cannibalisation — check both.
 | `/fitxpress/for-connected-and-digital-fitness/` | FX | Use-case page | already on the target pattern; final copy approved 2026-10-07 (`workspace/pages/for-connected-and-digital-fitness/page-final-2026-10-07.html`), in design; breadcrumb fix |
 | `/for-bmi-verification/` | FX | Use-case page | at root; moves to `/fitxpress/for-online-pharmacies/` (301) when rebuilt |
 | `/structured-body-data-for-telehealth-digital-health-programs/` | FX | Use-case page | at root; moves under `/fitxpress/for-…/` (301) only when rebuilt; best-built page on the site — finding 6 |
+| `/for-insurance-underwriting/` | FX | Use-case page | **live 2026-10-21**, the first new FX vertical page since the hierarchy decision, and it shipped at the root rather than at `/fitxpress/for-insurance-underwriting/` (404). Shared form `FX \| LP \| Demo` (`11acb23a`), anchor `#form`; `Service` + `FAQPage` (4 questions) schema; indexed the same day. Copy: `workspace/pages/for-insurance-underwriting/page-final-2026-10-02.md`, live snapshot `published-live-2026-10-21.md` |
 | `/pricing/` | both | Public pricing, FX and MT tabs | live figures |
 
 ### Proof, resources, conversion
@@ -95,6 +96,7 @@ vertical pages plus home, `/technology/`, `/pricing/`, `/mobile-tailor/` and `/c
 | `/structured-body-data-for-telehealth-digital-health-programs/` | ~1,613 | **yes, 13 questions** | **yes**, with `audienceType` and `areaServed` |
 | `/fitxpress/for-connected-and-digital-fitness/` | ~1,352 | no | no |
 | `/for-bmi-verification/` | ~659 | no | no |
+| `/for-insurance-underwriting/` (added 2026-10-21, live read) | ~1,180 | **yes, 4 questions** | **yes** |
 | `/mobile-tailor/for-uniforms/` | ~1,224 | no — despite 11 visible FAQ questions | no |
 | `/mobile-tailor/for-made-to-measure/` | ~1,201 | no | no |
 | `/mobile-tailor/for-on-demand-manufacturing/` | ~1,163 | no | no |

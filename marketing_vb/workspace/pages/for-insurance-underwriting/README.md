@@ -2,13 +2,36 @@
 product: fitxpress
 type: handoff-readme
 vertical: insurance-underwriting
-status: draft-awaiting-vadim
+status: live
 date: 2026-08-31
+published: 2026-10-21
 ---
 
 # Handoff — FitXpress for insurance underwriting
 
-> **Current state (2026-10-02):** the final copy passed to design is `page-final-2026-10-02.md` (and
+> **LIVE since 2026-10-21: <https://3dlook.ai/for-insurance-underwriting/>.** WordPress `datePublished`
+> 2026-10-21 13:19 UTC. Same day: listed in `page-sitemap.xml`, Search Console says "Submitted and indexed" with
+> a self canonical (crawled 14:09 UTC), and the main menu links to it as "Life Insurance Underwriting". Text
+> of record: `published-live-2026-10-21.md` (from `scripts/capture-live.py`). Post-launch work is at the top
+> of `TODO.md`.
+>
+> **How the live page differs from `page-final-2026-10-02.md`:**
+> 1. **URL at the root**, not the planned `/fitxpress/for-insurance-underwriting/` (that URL is a 404).
+>    The GTM `fx_vertical` lookup was written for the `/fitxpress/` path, so it needs a row for the live path.
+> 2. **Yoast title and meta description are the v1 values from 2026-08-31** ("Body Data for Life Insurance
+>    Underwriting | FitXpress"), not the final ones. The title is missing the focus keyphrase
+>    `accelerated underwriting`.
+> 3. **Breadcrumb** reads Home → H1 text; the final copy had Home → FitXpress → FitXpress for Insurance Underwriting.
+> 4. **The "9 vs 27" figure is labelled "Gen Re, Next Gen Underwriting Survey"** but links to the 2020 LIMRA
+>    release, which is the source the final copy names.
+> 5. **The demo buttons scroll to `#form`**, not `#demo`. The form is the shared `FX | LP | Demo`
+>    (`11acb23a-e81c-46ee-bb23-4d47a0ef0125`).
+> 6. **A logo strip, "Trusted by healthcare, digital health & remote-care teams"**: BeMap, Burlington Medical,
+>    Erakulis, Healthyr, Knosis, UK Meds, Warrior Consultants, Yazen. See open item 2 on customer naming.
+>
+> FAQ (4 questions) and the `Service` + `FAQPage` JSON-LD match the final copy.
+>
+> **Earlier state (2026-10-02):** the final copy passed to design is `page-final-2026-10-02.md` (and
 > `.html`), after Asselya's 21 edits (`comments-asselya-2026-10-02.md`). What changed against v2 and what
 > went into the page builder: `review-2026-10-02-final-vs-v2.md`. Everything below describes the
 > 2026-08-31 v1 and is kept for history.

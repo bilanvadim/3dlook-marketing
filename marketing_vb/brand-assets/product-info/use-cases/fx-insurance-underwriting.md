@@ -1,5 +1,21 @@
 # Use Case: FitXpress — Insurance Underwriting
 
+## Live page (since 2026-10-21)
+`https://3dlook.ai/for-insurance-underwriting/`, H1 "Second-source build and BMI evidence for accelerated
+underwriting". It is the newest approved public wording for this vertical, newer than the lines below. When
+they differ, take the page's wording. Text of record:
+`workspace/pages/for-insurance-underwriting/published-live-2026-10-21.md`. Articles link to it as the Hub 4
+landing (`brand-assets/content-strategy/landing-map.md`).
+
+Lines from the page that set the boundary:
+- FitXpress adds build evidence to cases on the accelerated path. It does not replace the paramedical exam
+  where the carrier's guidelines call for one.
+- Disclosed BMI and scan-derived BMI use the same supplied height. Smart Scales predicts weight, and the
+  carrier's threshold decides whether a disclosure flag is raised.
+- "FitXpress is not a medical device and does not make underwriting decisions. Eligibility, risk class, and
+  pricing remain with your underwriters."
+- The pilot path: walkthrough → shadow evaluation with outputs kept out of decisions → evidence comparison.
+
 ## The pain we remove
 Underwriting still depends on self-reported body metrics + manual verification, driving delays, drop-offs, and weak documentation.
 

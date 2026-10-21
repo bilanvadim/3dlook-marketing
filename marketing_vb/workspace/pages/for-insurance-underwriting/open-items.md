@@ -29,6 +29,11 @@ This item no longer blocks publishing. The open items below still do.
 Guardrail #2 forbids resolving this silently. The page takes the conservative path and **names nobody**.
 A yes on naming would materially strengthen the deployment block.
 
+**2026-10-21, live page:** the copy still names nobody, but the release added the site's logo strip
+("Trusted by healthcare, digital health & remote-care teams": BeMap, Burlington Medical, Erakulis, Healthyr,
+Knosis, UK Meds, Warrior Consultants, Yazen), which includes the three names the insurance deck lists under
+NDA. Recorded here, not decided.
+
 ## 3 · The ISO benchmark figures are missing from `proof-points.md` — Vadim
 
 `about-me.md` and the live telehealth page both carry the ISO 8559-1:2017 multi-company benchmark:
