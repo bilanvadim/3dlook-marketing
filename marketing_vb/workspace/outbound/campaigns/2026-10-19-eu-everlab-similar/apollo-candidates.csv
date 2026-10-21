@@ -1,108 +1,116 @@
 apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,last_refreshed_at,status
-60d9f83d94f1000001cce5e8,Baptiste,De***r,Founder & CTO,Lucis (YC P25),lucis.life,Lucis,2026-10-03T20:55:01.000+00:00,candidate
-607ff6699b06c30001b56d5f,Philippine,Br***l,Head of Growth & Marketing,Lucis (YC P25),lucis.life,Lucis,2026-10-14T10:51:42.000+00:00,candidate
-6108fa9bbe4d81000130080a,Max,Be***t,Founder,Lucis (YC P25),lucis.life,Lucis,2026-10-03T21:39:46.000+00:00,candidate
-6114efa511c92400016bc17b,Pierre,Gi***t,Head of Operations,Lucis (YC P25),lucis.life,Lucis,2026-10-04T11:23:21.000+00:00,candidate
-65082a19080ea10001594bc5,Sylvain,Pa***e,Founding Engineer,Lucis (YC P25),lucis.life,Lucis,2026-09-23T03:12:44.000+00:00,candidate
-5a7903a0a3ae611e19d22085,Hugo,Ma***y,Founding Designer,Lucis (YC P25),lucis.life,Lucis,2026-09-19T13:29:17.000+00:00,candidate
-66fa037ad1c6fd000189b9a1,Marwan,Ma***a,Founding Lead AI Engineer,Lucis (YC P25),lucis.life,Lucis,2026-10-15T21:32:59.000+00:00,candidate
-6321bf03612e4d0001265cd1,Eugenia,Ro***z,Product,Lucis (YC P25),lucis.life,Lucis,2026-09-11T21:36:45.000+00:00,candidate
-5fdc907ba6f7270001af4c4f,Leo,Tu***l,Founding Engineer,Lucis (YC P25),lucis.life,Lucis,2026-09-07T06:05:00.000+00:00,candidate
-66f1708bd773c60001485fe8,Andrew,Mc***y,Founder and CEO,Axo Longevity,axolongevity.com,Axo Longevity,2026-10-10T16:07:10.544+00:00,skipped-covered-by-sales-nav
-622893aa02df7300014037a1,Katarzyna,Ma***a,Head of Growth,Axo Longevity,axolongevity.com,Axo Longevity,2026-10-03T21:18:24.000+00:00,skipped-covered-by-sales-nav
-54a508127468693b8ce23777,Lucia,Te***n,Head of Product,Axo Longevity,axolongevity.com,Axo Longevity,2026-09-15T22:30:31.000+00:00,skipped-covered-by-sales-nav
-557091a2736964116c921500,Sergio,Ta***z,Co-founder - Chief Product & Growth Officer,Axo Longevity,axolongevity.com,Axo Longevity,2026-10-06T12:55:11.000+00:00,skipped-covered-by-sales-nav
+60d9f83d94f1000001cce5e8,Baptiste,De***r,Founder & CTO,Lucis (YC P25),lucis.life,Lucis,2026-10-03T20:55:01.000+00:00,skipped-not-in-topup-list
+607ff6699b06c30001b56d5f,Philippine,Br***l,Head of Growth & Marketing,Lucis (YC P25),lucis.life,Lucis,2026-10-14T10:51:42.000+00:00,skipped-not-in-topup-list
+6108fa9bbe4d81000130080a,Max,Be***t,Founder,Lucis (YC P25),lucis.life,Lucis,2026-10-03T21:39:46.000+00:00,skipped-not-in-topup-list
+6114efa511c92400016bc17b,Pierre,Gi***t,Head of Operations,Lucis (YC P25),lucis.life,Lucis,2026-10-04T11:23:21.000+00:00,skipped-not-in-topup-list
+65082a19080ea10001594bc5,Sylvain,Pa***e,Founding Engineer,Lucis (YC P25),lucis.life,Lucis,2026-09-23T03:12:44.000+00:00,skipped-not-in-topup-list
+5a7903a0a3ae611e19d22085,Hugo,Ma***y,Founding Designer,Lucis (YC P25),lucis.life,Lucis,2026-09-19T13:29:17.000+00:00,skipped-not-in-topup-list
+66fa037ad1c6fd000189b9a1,Marwan,Ma***a,Founding Lead AI Engineer,Lucis (YC P25),lucis.life,Lucis,2026-10-15T21:32:59.000+00:00,skipped-not-in-topup-list
+6321bf03612e4d0001265cd1,Eugenia,Ro***z,Product,Lucis (YC P25),lucis.life,Lucis,2026-09-11T21:36:45.000+00:00,skipped-not-in-topup-list
+5fdc907ba6f7270001af4c4f,Leo,Tu***l,Founding Engineer,Lucis (YC P25),lucis.life,Lucis,2026-09-07T06:05:00.000+00:00,skipped-not-in-topup-list
+66f1708bd773c60001485fe8,Andrew,Mc***y,Founder and CEO,Axo Longevity,axolongevity.com,Axo Longevity,2026-10-10T16:07:10.544+00:00,candidate
+622893aa02df7300014037a1,Katarzyna,Ma***a,Head of Growth,Axo Longevity,axolongevity.com,Axo Longevity,2026-10-03T21:18:24.000+00:00,skipped-not-in-topup-list
+54a508127468693b8ce23777,Lucia,Te***n,Head of Product,Axo Longevity,axolongevity.com,Axo Longevity,2026-09-15T22:30:31.000+00:00,skipped-not-in-topup-list
+557091a2736964116c921500,Sergio,Ta***z,Co-founder - Chief Product & Growth Officer,Axo Longevity,axolongevity.com,Axo Longevity,2026-10-06T12:55:11.000+00:00,candidate
 66fbf7af3acb6100013d5667,Octavia,Se***r,Co-Founder,Axo Longevity,axolongevity.com,Axo Longevity,2026-10-14T10:35:34.000+00:00,in-sales-nav
-61e5a5a5c16cda0001829999,Brenda,Ov***o,Product Marketing & CRM Lead,Axo Longevity,axolongevity.com,Axo Longevity,2026-09-25T21:56:02.000+00:00,skipped-covered-by-sales-nav
-54a4dc7f74686938acb68a69,Joana,Pi***s,Head of Lab Operations & International Expansion,Axo Longevity,axolongevity.com,Axo Longevity,2026-10-07T20:11:15.000+00:00,skipped-covered-by-sales-nav
-63d5555f1bf787000140c397,Piero,Da***a,"Lead Software Engineer | Full-Stack, Product & Integrations",Axo Longevity,axolongevity.com,Axo Longevity,2026-09-10T05:45:56.000+00:00,skipped-covered-by-sales-nav
-659690cedc86a10001095a57,Angela,Le***a,"Founding Marketer | Partnerships, Axo Longevity",Axo Longevity,axolongevity.com,Axo Longevity,2026-09-23T13:41:28.000+00:00,skipped-covered-by-sales-nav
+61e5a5a5c16cda0001829999,Brenda,Ov***o,Product Marketing & CRM Lead,Axo Longevity,axolongevity.com,Axo Longevity,2026-09-25T21:56:02.000+00:00,skipped-not-in-topup-list
+54a4dc7f74686938acb68a69,Joana,Pi***s,Head of Lab Operations & International Expansion,Axo Longevity,axolongevity.com,Axo Longevity,2026-10-07T20:11:15.000+00:00,skipped-not-in-topup-list
+63d5555f1bf787000140c397,Piero,Da***a,"Lead Software Engineer | Full-Stack, Product & Integrations",Axo Longevity,axolongevity.com,Axo Longevity,2026-09-10T05:45:56.000+00:00,skipped-not-in-topup-list
+659690cedc86a10001095a57,Angela,Le***a,"Founding Marketer | Partnerships, Axo Longevity",Axo Longevity,axolongevity.com,Axo Longevity,2026-09-23T13:41:28.000+00:00,skipped-not-in-topup-list
 6059bf12700dab00010d8221,Guenther,Pa***r,CEO & Founder,speak23,speak23.com,speak23,2026-10-06T11:22:37.000+00:00,in-sales-nav
-61304570de9a730001f15c47,Lisa,Pa***r,Co-Founder & CSO,speak23,speak23.com,speak23,2026-10-06T15:15:20.000+00:00,skipped-covered-by-sales-nav
-666308572070900001d7c4c2,Kevin,Na***i,"Cofounder, COO & Medical Director",Loovi,loovi.health,Loovi,2026-09-01T08:35:48.964+00:00,candidate
-665d862fe8451b000107cd00,Joel,Gr***r,Co-founder & CEO,Loovi,loovi.health,Loovi,2026-10-06T05:25:10.000+00:00,candidate
-685563d0feef170001c61936,Arian,Va***i,CTO,Loovi,loovi.health,Loovi,2025-06-20T16:32:24.806+00:00,candidate
-61266e9f0ade0e0001c49cb1,Tim,Se***e,CEO & Founder,Aeon,aeon.life,Aeon,2026-10-06T14:43:43.000+00:00,skipped-covered-by-sales-nav
-64350295a4ddd300013ee956,Manuel,Pu***h,Chief Medical Officer,Aeon,aeon.life,Aeon,2026-09-21T05:36:41.000+00:00,skipped-covered-by-sales-nav
-663f4f3ef5f3a80001a03bd5,Felix,Ha***r,Chief Medical Officer,Aeon,aeon.life,Aeon,2026-09-17T03:38:02.000+00:00,skipped-covered-by-sales-nav
-610a42dca534c500018e6844,Serge,We***t,Chief Product and Technology Officer,Aeon,aeon.life,Aeon,2026-09-27T00:49:44.000+00:00,skipped-covered-by-sales-nav
-669f870799f2d700019af1e7,Milan,So***c,Founding Engineer,Aeon,aeon.life,Aeon,2026-10-06T22:14:35.000+00:00,skipped-covered-by-sales-nav
-5f90467a3261b400014366a2,Nick,Le***n,Founder & CEO,Ahead Health,aheadhealth.com,Ahead Health,2026-10-06T18:24:45.000+00:00,skipped-covered-by-sales-nav
-5abc6759a6da9840419a2c46,Vinsensius,Ve***a,Co-Founder & CTO,Ahead Health,aheadhealth.com,Ahead Health,2026-09-12T03:09:52.000+00:00,skipped-covered-by-sales-nav
+61304570de9a730001f15c47,Lisa,Pa***r,Co-Founder & CSO,speak23,speak23.com,speak23,2026-10-06T15:15:20.000+00:00,skipped-not-in-topup-list
+666308572070900001d7c4c2,Kevin,Na***i,"Cofounder, COO & Medical Director",Loovi,loovi.health,Loovi,2026-09-01T08:35:48.964+00:00,skipped-not-in-topup-list
+665d862fe8451b000107cd00,Joel,Gr***r,Co-founder & CEO,Loovi,loovi.health,Loovi,2026-10-06T05:25:10.000+00:00,skipped-not-in-topup-list
+685563d0feef170001c61936,Arian,Va***i,CTO,Loovi,loovi.health,Loovi,2025-06-20T16:32:24.806+00:00,skipped-not-in-topup-list
+61266e9f0ade0e0001c49cb1,Tim,Se***e,CEO & Founder,Aeon,aeon.life,Aeon,2026-10-06T14:43:43.000+00:00,candidate
+64350295a4ddd300013ee956,Manuel,Pu***h,Chief Medical Officer,Aeon,aeon.life,Aeon,2026-09-21T05:36:41.000+00:00,candidate
+663f4f3ef5f3a80001a03bd5,Felix,Ha***r,Chief Medical Officer,Aeon,aeon.life,Aeon,2026-09-17T03:38:02.000+00:00,candidate
+610a42dca534c500018e6844,Serge,We***t,Chief Product and Technology Officer,Aeon,aeon.life,Aeon,2026-09-27T00:49:44.000+00:00,candidate
+669f870799f2d700019af1e7,Milan,So***c,Founding Engineer,Aeon,aeon.life,Aeon,2026-10-06T22:14:35.000+00:00,skipped-not-in-topup-list
+66fa22df6119970001970e2e,Juergen,Me***s,CEO,YEARS,years.co,YEARS,2026-10-04T00:56:07.238+00:00,skipped-not-in-topup-list
+6a06ee82c1236d00010ea7ca,Jan,He***s,Medical Director,YEARS,years.co,YEARS,2026-10-09T03:47:09.423+00:00,candidate
+615079cec60123000127c5de,Jan,Sc***z,Head of Operations & Business Development,YEARS,years.co,YEARS,2026-10-15T12:03:49.000+00:00,candidate
+5d6d618880f93eca7575ec14,Leonhard,Fr***h,AI & Product Lead,YEARS,years.co,YEARS,2026-10-05T00:03:38.263+00:00,candidate
+5fe1b43a5be0a70001768771,Dimitri,Vo***l,Head of Marketing & Growth,YEARS,years.co,YEARS,2026-10-16T18:16:24.600+00:00,candidate
+69882f80504a8100010d49c3,Sebastian,Ku***s,Head of Medical Operations & Governance,YEARS,years.co,YEARS,2026-10-04T11:37:25.000+00:00,candidate
+5f90467a3261b400014366a2,Nick,Le***n,Founder & CEO,Ahead Health,aheadhealth.com,Ahead Health,2026-10-06T18:24:45.000+00:00,candidate
+5abc6759a6da9840419a2c46,Vinsensius,Ve***a,Co-Founder & CTO,Ahead Health,aheadhealth.com,Ahead Health,2026-09-12T03:09:52.000+00:00,candidate
 610cfb9bb8219f000148e9a1,Dennis,He***n,Founding COO,Ahead Health,aheadhealth.com,Ahead Health,2026-10-04T02:44:01.000+00:00,in-sales-nav
 57d3999cf651252c1181afcf,Sven,Ja***e,Co-Founder & CPO,Ahead Health,aheadhealth.com,Ahead Health,2026-10-12T04:27:57.000+00:00,in-sales-nav
-60f151aeec37c800010fb05d,Willem,Ev***s,Founding Team,Ahead Health,aheadhealth.com,Ahead Health,2026-10-13T12:27:30.950+00:00,skipped-covered-by-sales-nav
-57e1a884a6da985707e1be43,David,Ga***r,Founding Software Engineer,Ahead Health,aheadhealth.com,Ahead Health,2026-09-08T02:56:35.162+00:00,skipped-covered-by-sales-nav
-60ffd5a3cc426700012ed3d6,Laurent,Me***r,Founding Software Engineer,Ahead Health,aheadhealth.com,Ahead Health,2026-09-08T09:04:22.000+00:00,skipped-covered-by-sales-nav
-65991bab252dff0001ba2b9d,Laura,Le***y,Founding Customer Success Lead,Ahead Health,aheadhealth.com,Ahead Health,2026-09-06T19:41:10.000+00:00,skipped-covered-by-sales-nav
-64af9ac05a4f210001906ca4,Emile,Br***s,Chief Technology Officer,Zoī,zoi.com,Zoī,2026-10-07T09:20:24.000+00:00,skipped-covered-by-sales-nav
-60d13e0831726f00013ba6a2,Jake,Pr***t,Head of Engineering,Zoī,zoi.com,Zoī,2026-10-14T18:04:42.000+00:00,skipped-covered-by-sales-nav
-67896f8cd589090001ba5587,Alice,Co***s,COO,Zoī,zoi.com,Zoī,2026-10-08T17:47:12.906+00:00,skipped-covered-by-sales-nav
-66f71050c180660001b64b9f,Paul,Du***y,Co-Founder,Zoī,zoi.com,Zoī,2026-10-08T09:46:34.000+00:00,skipped-covered-by-sales-nav
-61e82143bd0f1800017ddcbf,Emma,Bo***t,Head of Operations,Zoī,zoi.com,Zoī,2026-10-05T08:17:17.000+00:00,skipped-covered-by-sales-nav
-6138678278063700016fd838,Agathe,Pi***n,Product Manager,Zoī,zoi.com,Zoī,2026-09-23T05:11:53.000+00:00,skipped-covered-by-sales-nav
-696d1fcaae60070001eb7853,Prof,Je***e,Chief Medical and Science Officer,Zoī,zoi.com,Zoī,2026-09-20T03:09:07.000+00:00,skipped-covered-by-sales-nav
-5fe73842db0f690001aa54e5,Bruno,Ma***t,Head of Operations,AYUN,ayun.ch,AYUN,2026-10-11T21:12:36.000+00:00,candidate
-65de4bfe2fed6f0001b4f282,Natalia,Tr***a,Medical & Scientific Director,AYUN,ayun.ch,AYUN,2026-09-05T14:22:49.000+00:00,candidate
-682c6be2c4916400010d26cb,Ertan,Wi***r,Co-Founder & Co-CEO,care.health,care.health,CARE Preventive,2026-10-06T03:14:12.000+00:00,candidate
-6426ee5ab1fdb50001717422,Roman,Wa***r,Medical Director,care.health,care.health,CARE Preventive,2026-09-24T05:34:58.000+00:00,candidate
-57e14f63a6da987de59be78d,Ion,Ha***b,Co-Founder,care.health,care.health,CARE Preventive,2026-10-14T23:04:25.000+00:00,candidate
-66783c8e8149a80001d7ba78,Julien,Mo***r,Salesforce Director & Co-founder,care.health,care.health,CARE Preventive,2026-09-27T16:18:51.763+00:00,candidate
-611660342edf820001890470,Pauline,Sa***t,Head of Finance & Operations,care.health,care.health,CARE Preventive,2026-10-02T00:20:59.000+00:00,candidate
+60f151aeec37c800010fb05d,Willem,Ev***s,Founding Team,Ahead Health,aheadhealth.com,Ahead Health,2026-10-13T12:27:30.950+00:00,skipped-not-in-topup-list
+57e1a884a6da985707e1be43,David,Ga***r,Founding Software Engineer,Ahead Health,aheadhealth.com,Ahead Health,2026-09-08T02:56:35.162+00:00,skipped-not-in-topup-list
+60ffd5a3cc426700012ed3d6,Laurent,Me***r,Founding Software Engineer,Ahead Health,aheadhealth.com,Ahead Health,2026-09-08T09:04:22.000+00:00,skipped-not-in-topup-list
+65991bab252dff0001ba2b9d,Laura,Le***y,Founding Customer Success Lead,Ahead Health,aheadhealth.com,Ahead Health,2026-09-06T19:41:10.000+00:00,skipped-not-in-topup-list
+64af9ac05a4f210001906ca4,Emile,Br***s,Chief Technology Officer,Zoī,zoi.com,Zoī,2026-10-07T09:20:24.000+00:00,skipped-not-in-topup-list
+60d13e0831726f00013ba6a2,Jake,Pr***t,Head of Engineering,Zoī,zoi.com,Zoī,2026-10-14T18:04:42.000+00:00,skipped-not-in-topup-list
+67896f8cd589090001ba5587,Alice,Co***s,COO,Zoī,zoi.com,Zoī,2026-10-08T17:47:12.906+00:00,candidate
+66f71050c180660001b64b9f,Paul,Du***y,Co-Founder,Zoī,zoi.com,Zoī,2026-10-08T09:46:34.000+00:00,candidate
+61e82143bd0f1800017ddcbf,Emma,Bo***t,Head of Operations,Zoī,zoi.com,Zoī,2026-10-05T08:17:17.000+00:00,skipped-not-in-topup-list
+6138678278063700016fd838,Agathe,Pi***n,Product Manager,Zoī,zoi.com,Zoī,2026-09-23T05:11:53.000+00:00,skipped-not-in-topup-list
+696d1fcaae60070001eb7853,Prof,Je***e,Chief Medical and Science Officer,Zoī,zoi.com,Zoī,2026-09-20T03:09:07.000+00:00,candidate
+5fe73842db0f690001aa54e5,Bruno,Ma***t,Head of Operations,AYUN,ayun.ch,AYUN,2026-10-11T21:12:36.000+00:00,skipped-not-in-topup-list
+65de4bfe2fed6f0001b4f282,Natalia,Tr***a,Medical & Scientific Director,AYUN,ayun.ch,AYUN,2026-09-05T14:22:49.000+00:00,skipped-not-in-topup-list
+682c6be2c4916400010d26cb,Ertan,Wi***r,Co-Founder & Co-CEO,care.health,care.health,CARE Preventive,2026-10-06T03:14:12.000+00:00,skipped-not-in-topup-list
+6426ee5ab1fdb50001717422,Roman,Wa***r,Medical Director,care.health,care.health,CARE Preventive,2026-09-24T05:34:58.000+00:00,skipped-not-in-topup-list
+57e14f63a6da987de59be78d,Ion,Ha***b,Co-Founder,care.health,care.health,CARE Preventive,2026-10-14T23:04:25.000+00:00,skipped-not-in-topup-list
+66783c8e8149a80001d7ba78,Julien,Mo***r,Salesforce Director & Co-founder,care.health,care.health,CARE Preventive,2026-09-27T16:18:51.763+00:00,skipped-not-in-topup-list
+611660342edf820001890470,Pauline,Sa***t,Head of Finance & Operations,care.health,care.health,CARE Preventive,2026-10-02T00:20:59.000+00:00,skipped-not-in-topup-list
 66f725706054dd0001cc0687,Massimo,Pi***a,CEO,MDConcierge,mdconcierge.it,MDConcierge,2026-09-04T15:49:25.000+00:00,in-sales-nav
 66f91699de27170001f81874,Fabio,Be***o,Chief Operating Officer,MDConcierge,mdconcierge.it,MDConcierge,2026-09-10T19:11:01.000+00:00,in-sales-nav
-54a3f1d974686934420dd51f,Joanna,Be***z,Founder and CEO,Longevity Center | Europe,longevity-center.eu,Longevity Center Poland,2026-10-03T21:27:46.000+00:00,skipped-covered-by-sales-nav
-620587eee08ea90001ccdb96,Wanda,Ba***a,Head of Longevity Nutrition Department,Longevity Center | Europe,longevity-center.eu,Longevity Center Poland,2026-10-07T04:42:22.000+00:00,skipped-covered-by-sales-nav
-562ed321a6da98688c0003d3,Dariusz,So***i,Medical Director,Longevity Center | Europe,longevity-center.eu,Longevity Center Poland,2026-09-08T03:15:01.000+00:00,skipped-covered-by-sales-nav
-55704bc573696478eed26800,Marta,Ka***k,Product Manager,Longevity Center | Europe,longevity-center.eu,Longevity Center Poland,2026-10-05T17:22:14.236+00:00,skipped-covered-by-sales-nav
-6597ed0fda9837000130fab7,Elisabetta,Re***o,General Manager,Longevia Medical Clinic,longevia.it,Longevia Medical Clinic,2026-10-09T04:24:49.000+00:00,candidate
-616686c182588b000129ff27,Michael,Gr***h,Apotheker l Co-Founder & Geschäftsführer,Blue,blue.health,Blue Health Intelligence,2026-09-26T00:22:30.774+00:00,skipped-covered-by-sales-nav
-62a348a480c78f000155228b,Alex,Ri***r,Head of Product,Blue,blue.health,Blue Health Intelligence,2026-09-08T07:53:39.000+00:00,skipped-covered-by-sales-nav
-5be1405980f93ec9d7381451,Tamim,Al***e,Managing Director,Blue,blue.health,Blue Health Intelligence,2026-10-05T12:53:16.023+00:00,skipped-covered-by-sales-nav
+54a3f1d974686934420dd51f,Joanna,Be***z,Founder and CEO,Longevity Center | Europe,longevity-center.eu,Longevity Center Poland,2026-10-03T21:27:46.000+00:00,candidate
+620587eee08ea90001ccdb96,Wanda,Ba***a,Head of Longevity Nutrition Department,Longevity Center | Europe,longevity-center.eu,Longevity Center Poland,2026-10-07T04:42:22.000+00:00,skipped-not-in-topup-list
+562ed321a6da98688c0003d3,Dariusz,So***i,Medical Director,Longevity Center | Europe,longevity-center.eu,Longevity Center Poland,2026-09-08T03:15:01.000+00:00,candidate
+55704bc573696478eed26800,Marta,Ka***k,Product Manager,Longevity Center | Europe,longevity-center.eu,Longevity Center Poland,2026-10-05T17:22:14.236+00:00,skipped-not-in-topup-list
+6597ed0fda9837000130fab7,Elisabetta,Re***o,General Manager,Longevia Medical Clinic,longevia.it,Longevia Medical Clinic,2026-10-09T04:24:49.000+00:00,skipped-not-in-topup-list
+60cdb7c10fe6ed0001236698,Onno,Hu***e,Co-Founder & CEO,Blue Health Intelligence,bluehealth.co,Blue Health Intelligence,2026-10-10T23:09:02.000+00:00,in-sales-nav
+67d0382563a0f500018bb5c2,Peter-Paul,Le***w,Co-Founder & Co-CEO,Blue Health Intelligence,bluehealth.co,Blue Health Intelligence,2026-10-07T09:48:17.000+00:00,candidate
+54a2ad9674686935beb2a434,Leanne,Ve***k,Co-founder & CMedO,Blue Health Intelligence,bluehealth.co,Blue Health Intelligence,2026-10-01T16:54:39.000+00:00,candidate
 54ebcc8a746869444c2fc027,Khadija,Be***r,Co-founder & COO,Kor,kor.care,Kor,2026-10-14T20:02:16.000+00:00,in-sales-nav
 61099663aa948d0001519102,Samuel,Ro***e,Co-founder & CTO,Kor,kor.care,Kor,2026-09-22T11:42:50.000+00:00,in-sales-nav
 6725e80cd76181000197e7d3,Sophie,Ag***a,Co-founder,Kor,kor.care,Kor,2026-09-07T17:48:52.000+00:00,in-sales-nav
-6598ea89d67d62000181f08b,Matthieu,Ca***o,Product & Design,Kor,kor.care,Kor,2026-10-16T20:18:11.444+00:00,skipped-covered-by-sales-nav
-665d5dc7e44d8b00018d2a2f,Christoph,Sc***z,Chief Executive Officer,Mavie,work.mavie.care,Mavie Work,2026-10-08T03:56:04.000+00:00,candidate
-670662ea9914ae0001982cd1,Frederic,Be***k,CEO,Mavie,work.mavie.care,Mavie Work,2026-09-07T07:31:01.000+00:00,candidate
-686955d6f668f900019970f5,Jasmin,Co***n,Head of Growth,Mavie,work.mavie.care,Mavie Work,2026-09-24T06:30:01.000+00:00,candidate
-605d801c0ac83600014d92f0,Cezar,Ne***a,Head of Engineering,Mavie,work.mavie.care,Mavie Work,2026-10-12T13:40:46.098+00:00,candidate
-557090907369643ea68c1800,Nicolas,Ha***r,Medical Director,Mavie,work.mavie.care,Mavie Work,2026-08-25T10:37:38.000+00:00,candidate
-66f9fb5883ba0c0001769054,Andreas,We***s,Managing Director,Mavie,work.mavie.care,Mavie Work,2026-10-13T19:56:29.000+00:00,candidate
-54a7af92746869622048ec4b,Lukas,Ma***l,Managing Director,Mavie,work.mavie.care,Mavie Work,2026-10-16T13:44:56.000+00:00,candidate
-60d339be84c3ef00014f6bad,Ondrej,Ga***l,Managing Director,Mavie,work.mavie.care,Mavie Work,2026-10-13T09:00:43.000+00:00,candidate
-5f72ca667555490001ec2852,Toscane,Me***e,Co-founder,Mavie,work.mavie.care,Mavie Work,2026-10-08T08:01:43.000+00:00,candidate
-66fbe4ebe9bb1700018fa9fd,Doris,Bu***m,Head of Operations,Mavie,work.mavie.care,Mavie Work,2026-10-12T06:25:13.000+00:00,candidate
-66fc5f38de6cae00017dc284,Lea,Pa***k,Head of Product MavieMe,Mavie,work.mavie.care,Mavie Work,2026-10-06T06:51:25.000+00:00,candidate
-6784ed03ca185f000192106a,Megha,Bh***a,Product Manager,Mavie,work.mavie.care,Mavie Work,2026-09-12T02:02:46.000+00:00,candidate
-60b85c0ff7cc7c000153aed8,Christoph,Bo***n,"Head of Product, Mavie Next",Mavie,work.mavie.care,Mavie Work,2026-10-14T06:06:30.000+00:00,candidate
-62eb9bfcbc2fcd00014236a1,Vera,Br***e,Product Manager,Mavie,work.mavie.care,Mavie Work,2026-09-13T08:23:09.000+00:00,candidate
-66fbe4fee9bb1700018fb259,Andrea,Gr***s,"Head of Operations | Coach Management, Product Specialist Physical Wellbeing",Mavie,work.mavie.care,Mavie Work,2026-09-05T16:15:12.000+00:00,candidate
-5fdc5ee266268f0001c2455f,Victoria,So***a,Co-Founder/Venture Builder,Mavie,work.mavie.care,Mavie Work,2026-10-10T17:00:35.000+00:00,candidate
-6348d7279c7cee00017a7f2f,Janine,Wa***r,Head of Operations Physical Well-Being,Mavie,work.mavie.care,Mavie Work,2026-09-13T20:37:33.000+00:00,candidate
-5f4a97a258e539000135b991,Vedran,Bi***c,Deputy Managing Director - Mavie Subsidiary,Mavie,work.mavie.care,Mavie Work,2026-10-13T09:56:28.000+00:00,candidate
-5f4d74bea5f3a60001a0539d,Johanna,Re***h,Innovation Catalyst / Product Management,Mavie,work.mavie.care,Mavie Work,2026-09-12T11:38:03.000+00:00,candidate
-6412b8d7b1e2960001a482c7,Peter,Ma***t,Co-Founder,Circle Health,circle.health,Circle Health,2026-10-17T13:07:59.463+00:00,candidate
-5e60de6290f5720001bb89cd,Theresa,Sp***r,Head of Medical Operations,Circle Health,circle.health,Circle Health,2026-09-23T04:44:51.000+00:00,candidate
-6614ddf3e7d4a2000757adfa,Haif,Ro***d,CEO,Prescan,prescan.nl,Prescan,2026-10-17T09:08:43.000+00:00,skipped-covered-by-sales-nav
-5fcfe49d804e5300019201f5,Henrik,Fo***g,CEO,Werlabs,werlabs.se,Werlabs,2026-10-17T21:51:13.000+00:00,skipped-covered-by-sales-nav
+6598ea89d67d62000181f08b,Matthieu,Ca***o,Product & Design,Kor,kor.care,Kor,2026-10-16T20:18:11.444+00:00,skipped-not-in-topup-list
+665d5dc7e44d8b00018d2a2f,Christoph,Sc***z,Chief Executive Officer,Mavie,work.mavie.care,Mavie Work,2026-10-08T03:56:04.000+00:00,skipped-not-in-topup-list
+670662ea9914ae0001982cd1,Frederic,Be***k,CEO,Mavie,work.mavie.care,Mavie Work,2026-09-07T07:31:01.000+00:00,skipped-not-in-topup-list
+686955d6f668f900019970f5,Jasmin,Co***n,Head of Growth,Mavie,work.mavie.care,Mavie Work,2026-09-24T06:30:01.000+00:00,skipped-not-in-topup-list
+605d801c0ac83600014d92f0,Cezar,Ne***a,Head of Engineering,Mavie,work.mavie.care,Mavie Work,2026-10-12T13:40:46.098+00:00,skipped-not-in-topup-list
+557090907369643ea68c1800,Nicolas,Ha***r,Medical Director,Mavie,work.mavie.care,Mavie Work,2026-08-25T10:37:38.000+00:00,skipped-not-in-topup-list
+66f9fb5883ba0c0001769054,Andreas,We***s,Managing Director,Mavie,work.mavie.care,Mavie Work,2026-10-13T19:56:29.000+00:00,skipped-not-in-topup-list
+54a7af92746869622048ec4b,Lukas,Ma***l,Managing Director,Mavie,work.mavie.care,Mavie Work,2026-10-16T13:44:56.000+00:00,skipped-not-in-topup-list
+60d339be84c3ef00014f6bad,Ondrej,Ga***l,Managing Director,Mavie,work.mavie.care,Mavie Work,2026-10-13T09:00:43.000+00:00,skipped-not-in-topup-list
+5f72ca667555490001ec2852,Toscane,Me***e,Co-founder,Mavie,work.mavie.care,Mavie Work,2026-10-08T08:01:43.000+00:00,skipped-not-in-topup-list
+66fbe4ebe9bb1700018fa9fd,Doris,Bu***m,Head of Operations,Mavie,work.mavie.care,Mavie Work,2026-10-12T06:25:13.000+00:00,skipped-not-in-topup-list
+66fc5f38de6cae00017dc284,Lea,Pa***k,Head of Product MavieMe,Mavie,work.mavie.care,Mavie Work,2026-10-06T06:51:25.000+00:00,skipped-not-in-topup-list
+6784ed03ca185f000192106a,Megha,Bh***a,Product Manager,Mavie,work.mavie.care,Mavie Work,2026-09-12T02:02:46.000+00:00,skipped-not-in-topup-list
+60b85c0ff7cc7c000153aed8,Christoph,Bo***n,"Head of Product, Mavie Next",Mavie,work.mavie.care,Mavie Work,2026-10-14T06:06:30.000+00:00,skipped-not-in-topup-list
+62eb9bfcbc2fcd00014236a1,Vera,Br***e,Product Manager,Mavie,work.mavie.care,Mavie Work,2026-09-13T08:23:09.000+00:00,skipped-not-in-topup-list
+66fbe4fee9bb1700018fb259,Andrea,Gr***s,"Head of Operations | Coach Management, Product Specialist Physical Wellbeing",Mavie,work.mavie.care,Mavie Work,2026-09-05T16:15:12.000+00:00,skipped-not-in-topup-list
+5fdc5ee266268f0001c2455f,Victoria,So***a,Co-Founder/Venture Builder,Mavie,work.mavie.care,Mavie Work,2026-10-10T17:00:35.000+00:00,skipped-not-in-topup-list
+6348d7279c7cee00017a7f2f,Janine,Wa***r,Head of Operations Physical Well-Being,Mavie,work.mavie.care,Mavie Work,2026-09-13T20:37:33.000+00:00,skipped-not-in-topup-list
+5f4a97a258e539000135b991,Vedran,Bi***c,Deputy Managing Director - Mavie Subsidiary,Mavie,work.mavie.care,Mavie Work,2026-10-13T09:56:28.000+00:00,skipped-not-in-topup-list
+5f4d74bea5f3a60001a0539d,Johanna,Re***h,Innovation Catalyst / Product Management,Mavie,work.mavie.care,Mavie Work,2026-09-12T11:38:03.000+00:00,skipped-not-in-topup-list
+54ebc666746869444ca23e22,Wolfram,Sc***r,Founder and CEO,Concierge Medicine Europe,conciergemedicine.cz,Concierge Medicine Europe,2026-10-04T02:32:14.000+00:00,skipped-not-in-topup-list
+63414df9552dbe00015093a5,Katerina,Vr***a,Chief Operating Officer,Concierge Medicine Europe,conciergemedicine.cz,Concierge Medicine Europe,2026-09-07T13:13:33.000+00:00,candidate
+56651f99a6da9840f500a529,Mariana,Wo***a,Medical Director P4,Concierge Medicine Europe,conciergemedicine.cz,Concierge Medicine Europe,2026-10-12T04:50:40.088+00:00,candidate
+6412b8d7b1e2960001a482c7,Peter,Ma***t,Co-Founder,Circle Health,circle.health,Circle Health,2026-10-17T13:07:59.463+00:00,skipped-not-in-topup-list
+5e60de6290f5720001bb89cd,Theresa,Sp***r,Head of Medical Operations,Circle Health,circle.health,Circle Health,2026-09-23T04:44:51.000+00:00,skipped-not-in-topup-list
+6614ddf3e7d4a2000757adfa,Haif,Ro***d,CEO,Prescan,prescan.nl,Prescan,2026-10-17T09:08:43.000+00:00,candidate
+5fcfe49d804e5300019201f5,Henrik,Fo***g,CEO,Werlabs,werlabs.se,Werlabs,2026-10-17T21:51:13.000+00:00,candidate
 6099df66a1c12d0001215826,Simon,Li***n,Chief Technology Officer,Werlabs,werlabs.se,Werlabs,2026-10-15T21:47:06.000+00:00,in-sales-nav
 66fe434cc16028000104f4c9,Peter,Ro***d,COO,Werlabs,werlabs.se,Werlabs,2026-10-17T21:50:39.489+00:00,in-sales-nav
-54c286bd7468691639abf9a2,Olga,Li***u,Design and Product Lead,Werlabs,werlabs.se,Werlabs,2026-09-08T03:06:17.000+00:00,skipped-covered-by-sales-nav
+54c286bd7468691639abf9a2,Olga,Li***u,Design and Product Lead,Werlabs,werlabs.se,Werlabs,2026-09-08T03:06:17.000+00:00,skipped-not-in-topup-list
 5ba7f1f6f874f7583c0ff151,Ash,Pa***l,Director of Strategic Partnerships UK,Werlabs,werlabs.se,Werlabs,2026-10-14T19:38:40.000+00:00,in-sales-nav
-54a2d01f74686933188a7a3e,Kicki,Kj***d,Partnership and Customer Experience Manager,Werlabs,werlabs.se,Werlabs,2026-10-09T13:10:40.000+00:00,skipped-covered-by-sales-nav
+54a2d01f74686933188a7a3e,Kicki,Kj***d,Partnership and Customer Experience Manager,Werlabs,werlabs.se,Werlabs,2026-10-09T13:10:40.000+00:00,skipped-not-in-topup-list
 604fd1083d8af90001b7bf34,Mario,Ai***r,Founder & CEO,Hello Inside,helloinside.com,Hello Inside,2026-10-13T08:28:06.876+00:00,in-sales-nav
 60d36f1b650cdf00013e7302,Vinzenz,We***r,CTO and Founder,Hello Inside,helloinside.com,Hello Inside,2026-09-18T03:42:10.000+00:00,in-sales-nav
-54aac77274686923662a2419,Juergen,Fu***n,"COO, Co-Founder Hello Inside",Hello Inside,helloinside.com,Hello Inside,2026-10-18T08:17:10.783+00:00,skipped-covered-by-sales-nav
+54aac77274686923662a2419,Juergen,Fu***n,"COO, Co-Founder Hello Inside",Hello Inside,helloinside.com,Hello Inside,2026-10-18T08:17:10.783+00:00,skipped-not-in-topup-list
 54a216b57468693cddcfd20b,Kristoffer,In***n,CEO & Co-Founder,Dr.Dropin,drdropin.no,Dr.Dropin,2026-10-16T16:35:35.000+00:00,in-sales-nav
-66f8eea61fb6a700012096e3,Therese,Li***d,Co-CEO,Dr.Dropin,drdropin.no,Dr.Dropin,2026-10-07T10:44:37.059+00:00,skipped-covered-by-sales-nav
-66e6e21ce7b7990001dacc00,Espen,At***d,Chief Digital Officer,Dr.Dropin,drdropin.no,Dr.Dropin,2026-10-15T22:26:36.000+00:00,skipped-covered-by-sales-nav
-69c0e901b87ebf0001fa6378,Cathrine,Bo***d,CEO og Medgrunder,Dr.Dropin,drdropin.no,Dr.Dropin,2026-10-08T21:01:30.380+00:00,skipped-covered-by-sales-nav
+66f8eea61fb6a700012096e3,Therese,Li***d,Co-CEO,Dr.Dropin,drdropin.no,Dr.Dropin,2026-10-07T10:44:37.059+00:00,skipped-not-in-topup-list
+66e6e21ce7b7990001dacc00,Espen,At***d,Chief Digital Officer,Dr.Dropin,drdropin.no,Dr.Dropin,2026-10-15T22:26:36.000+00:00,skipped-not-in-topup-list
+69c0e901b87ebf0001fa6378,Cathrine,Bo***d,CEO og Medgrunder,Dr.Dropin,drdropin.no,Dr.Dropin,2026-10-08T21:01:30.380+00:00,skipped-not-in-topup-list
 611a166f34824300016024a0,Kristoffer,An***r,CEO Dr. Dropin Legetjenester,Dr.Dropin,drdropin.no,Dr.Dropin,2026-10-15T00:02:16.000+00:00,in-sales-nav
 66f61df4672c7000016f27ba,Markus,Oor,COO,Dr.Dropin,drdropin.no,Dr.Dropin,2026-09-12T09:52:03.000+00:00,in-sales-nav
-66fbee7978e1e00001717eb4,Helene,Fe***d,COO Dr.Dropin Legetjenester,Dr.Dropin,drdropin.no,Dr.Dropin,2026-10-18T23:12:13.678+00:00,skipped-covered-by-sales-nav
-605445f522c67d0001ebf3ce,Amalie,Eg***g,Product Manager,Dr.Dropin,drdropin.no,Dr.Dropin,2026-10-05T17:29:25.000+00:00,skipped-covered-by-sales-nav
-6022668150fa090001a46c6e,Daniel,So***i,Co-Founder and CMO,Dr.Dropin,drdropin.no,Dr.Dropin,2026-09-22T13:02:30.312+00:00,skipped-covered-by-sales-nav
-66f74eaf31303a00013a6d39,Eva,Ku***a,CEO & Co-Founder,Macromo,macromo.com,Macromo,2026-09-23T03:14:17.000+00:00,skipped-covered-by-sales-nav
-5f58d7f924da9c000173f951,Petr,St***k,CTO & Co-Founder,Macromo,macromo.com,Macromo,2026-10-09T04:28:56.672+00:00,skipped-covered-by-sales-nav
-690d3e1faea4da0001e664e7,Jensen,Ta***r,Chief CEO,Biolytica,biolytica.com,Biolytica,2026-10-15T11:30:06.654+00:00,candidate
+66fbee7978e1e00001717eb4,Helene,Fe***d,COO Dr.Dropin Legetjenester,Dr.Dropin,drdropin.no,Dr.Dropin,2026-10-18T23:12:13.678+00:00,skipped-not-in-topup-list
+605445f522c67d0001ebf3ce,Amalie,Eg***g,Product Manager,Dr.Dropin,drdropin.no,Dr.Dropin,2026-10-05T17:29:25.000+00:00,skipped-not-in-topup-list
+6022668150fa090001a46c6e,Daniel,So***i,Co-Founder and CMO,Dr.Dropin,drdropin.no,Dr.Dropin,2026-09-22T13:02:30.312+00:00,skipped-not-in-topup-list
+66f74eaf31303a00013a6d39,Eva,Ku***a,CEO & Co-Founder,Macromo,macromo.com,Macromo,2026-09-23T03:14:17.000+00:00,skipped-not-in-topup-list
+5f58d7f924da9c000173f951,Petr,St***k,CTO & Co-Founder,Macromo,macromo.com,Macromo,2026-10-09T04:28:56.672+00:00,skipped-not-in-topup-list

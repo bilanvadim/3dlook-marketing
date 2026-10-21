@@ -1043,6 +1043,14 @@ grep_check "registry: --waive-companies keeps contacted people excluded" "must b
 grep_check "registry: --waive-companies clears the company-level flag" "company_waived +1" \
   python3 $S/outbound-registry.py check --profile nick --waive-companies "Options Medical Weight Loss" \
   --input "$RC_OUT/in.csv" --output $RC_OUT/f.csv
+# Another profile's coverage is company-level too (2026-10-21: katerina's Circle Health Group
+# collides with olena's Berlin circle.health); without the waiver it stays excluded
+printf 'person_linkedin_url,full_name,company_name\nhttps://linkedin.com/in/never-recorded-ch,Never Recorded,Circle Health\n' > "$RC_OUT/ch.csv"
+grep_check "registry: another profile's coverage excludes without a waiver" "company_other_profile +1" \
+  python3 $S/outbound-registry.py check --profile olena --input "$RC_OUT/ch.csv" --output $RC_OUT/g.csv
+grep_check "registry: --waive-companies lifts another profile's coverage" "company_waived +1" \
+  python3 $S/outbound-registry.py check --profile olena --waive-companies "Circle Health" \
+  --input "$RC_OUT/ch.csv" --output $RC_OUT/h.csv
 
 echo "== existing tooling still green =="
 check "outbound-registry status" 0 python3 $S/outbound-registry.py status

@@ -11,28 +11,37 @@ status: awaiting_review
 
 ## Stats
 
-- 82 человека из 25 компаний (Sales Nav, 17 компаний; Apollo top-up, 8).
-- **PASS 61** (P1: 28, P2: 20, P3: 13) · **WEAK 7** · **FAIL 14**, из них 9 исключены реестром (7 Dr.Dropin: уже писали с `olena` или компанию уже вели с `olena`; 2 Circle Health: компанию ведёт `katerina`).
-- Остальные 5 FAIL: член совета директоров (Jon Sintorn, Werlabs), 4 коллизии имён или ненастоящий профиль (Frederic Beck и Toscane Mesnage, «Mavie», не UNIQA; Lars Aar, «CEO YEARS» в Норвегии с пустым профилем, у YEARS свой CEO в Берлине; Jensen Taylor, «Chief CEO» Biolytica из Сингапура).
-- Angle среди PASS: product 34 · technical-integration 10 · operations 8 · clinical 3 · partnership 3 · referral 3.
-- Приоритет зависит от title, не от fit. Руководители семи выпущенных компаний fit 3 (Macromo, Hello Inside, Preventicum UK) идут P1, как и остальные.
-- Кеп 50 на группу ни разу не достигнут. По группам (SEND): Mavie Work 16 (26%) · Lucis 8 · CARE Preventive 5 · Zoī 3 · Macromo 3 · Kor 3 · Loovi 3 · Axo Longevity 2 · Ahead Health 2 · MDConcierge 2 · Werlabs 2 · Hello Inside 2 · Aeon 2 · AYUN 2 · по 1: Blue Health Intelligence, Concierge Medicine Europe, Preventicum, speak23, YEARS, Longevia Medical Clinic.
-- В 20 компаниях из 25 есть хотя бы один SEND. Без единого SEND остались 5: Dr.Dropin (реестр), Circle Health (реестр, `katerina`), Biolytica (единственный человек ненастоящий), Prescan и Longevity Center Poland (только пустые профили, они в WEAK).
+- 105 человек из 24 компаний. Biolytica исключена решением Вадима от 2026-10-21. Источники: Sales Nav — 40 человек, Apollo — 65 (41 из первого добора и 24 из добора на уровне владельца от 10-21).
+- **PASS 86** (P1: 43, P2: 29, P3: 14) · **WEAK 8** · **FAIL 11**. Из FAIL 7 исключены реестром: все из Dr.Dropin, им уже писали с `olena`, или компанию уже вели с `olena`. Ещё 1 член совета директоров (Jon Sintorn, Werlabs) и 3 коллизии имён (Frederic Beck и Toscane Mesnage — другая компания «Mavie», не UNIQA; Lars Aar — «CEO YEARS» в Норвегии с пустым профилем).
+- Angle среди PASS: product 47 · operations 12 · technical-integration 11 · clinical 10 · partnership 3 · referral 3.
+- Приоритет зависит от title, не от fit. Руководители выпущенных компаний fit 3 идут P1, как и остальные.
+- Кеп 50 на группу не достигнут, сокращений нет (Вадим, 10-21: «не скорочуємо»). По группам (SEND): Mavie Work 16 (18%) · Lucis 8 · Zoī 6 · YEARS 6 · Aeon 5 · CARE Preventive 5 · Axo Longevity 4 · Ahead Health 4 · по 3: Werlabs, Blue Health Intelligence, Macromo, Concierge Medicine Europe, Kor, Loovi · по 2: MDConcierge, Hello Inside, Longevity Center Poland, AYUN, Circle Health · по 1: Preventicum, speak23, Prescan, Longevia Medical Clinic.
+- SEND есть в 23 компаниях из 24. Без SEND только Dr.Dropin (реестр).
+- 7 WEAK Вадим взял 10-21, их переводит в SEND координатор после этого прогона. Если Felix Harder останется в WEAK, рассылка составит 93 человека.
+
+## Widening 2026-10-21
+
+После чекпоинта Вадима я оценил 26 новых человек, прежние 79 решений не менял.
+- **24 человека из добора Apollo на уровне владельца**: Aeon 4, Werlabs 1, Axo Longevity 2, Ahead Health 2, Zoī 3, Longevity Center Poland 2, Prescan 1, YEARS 5, Blue Health Intelligence 2, Concierge Medicine Europe 2. PASS 23, WEAK 1. Это Felix Harder: Apollo называет его CMO Aeon в Мюнхене, а в headline он COO Quartz Healthcare.
+- **Circle Health (2 человека)**: Вадим снял покрытие `katerina` как коллизию имён, оба теперь в PASS. Peter Malmqvist — P2 product: сооснователь, но профиль выглядит как профиль инвестора, и он в Барселоне. Theresa Spiegelberger — P2 operations.
+- **Итого по 26: PASS 25, WEAK 1, FAIL 0.** Строка Jensen Taylor удалена вместе с Biolytica.
+- Axo: двое основателей из США (McCarthy, Tang-Sanchez) в PASS. По решению Вадима от 10-19 Axo остаётся на `olena`.
+- Новые люди в таблице SEND помечены `*`.
 
 ## Proposed to SEND
 
 | Группа | Человек | Title | P | Angle |
 |---|---|---|---|---|
-| Mavie Work | Christoph Schnedlitz | CEO | 1 | product |
+| Mavie Work | Christoph Schnedlitz | Chief Executive Officer | 1 | product |
 | Mavie Work | Andreas Weiss | Managing Director | 1 | product |
 | Mavie Work | Lukas Mayrl | Managing Director | 1 | product |
-| Mavie Work | Lea Paradzik | Head of Product MavieMe | 2 | product |
 | Mavie Work | Jasmin Cohen | Head of Growth | 2 | product |
 | Mavie Work | Ondrej Gandel | Managing Director, Mavie Next | 2 | partnership |
+| Mavie Work | Lea Paradzik | Head of Product MavieMe | 2 | product |
 | Mavie Work | Megha Bhola | Product Manager | 2 | product |
 | Mavie Work | Christoph Bodenstein | Head of Product, Mavie Next | 2 | product |
 | Mavie Work | Andrea Grandits | Head of Operations, Coach Management | 2 | product |
-| Mavie Work | Victoria Sobulska | Co-Founder / Venture Builder | 2 | partnership |
+| Mavie Work | Victoria Sobulska | Co-Founder/Venture Builder | 2 | partnership |
 | Mavie Work | Janine Wagenlechner | Head of Operations Physical Well-Being | 2 | operations |
 | Mavie Work | Vedran Bijelac | Deputy MD, Mavie subsidiary | 2 | product |
 | Mavie Work | Cezar Neaga | Head of Engineering | 3 | technical-integration |
@@ -44,80 +53,105 @@ status: awaiting_review
 | Lucis | Pierre Gimat | Head of Operations | 2 | operations |
 | Lucis | Eugenia Rodriguez | Product | 2 | product |
 | Lucis | Philippine Breuil | Head of Growth & Marketing | 3 | product |
-| Lucis | Marwan Mashra | Founding Lead AI Engineer | 3 | technical-integration |
 | Lucis | Sylvain Pace | Founding Engineer | 3 | referral |
+| Lucis | Marwan Mashra | Founding Lead AI Engineer | 3 | technical-integration |
 | Lucis | Leo Tuil | Founding Engineer | 3 | referral |
+| YEARS | Jürgen Mehrtens | Chief Executive Officer | 1 | product |
+| YEARS | Jan Hennigs * | Medical Director | 1 | clinical |
+| YEARS | Jan Schmitz * | Head of Operations & Business Development | 2 | operations |
+| YEARS | Leonhard Friedrich * | AI & Product Lead | 2 | product |
+| YEARS | Sebastian Kuss * | Head of Medical Operations & Governance | 2 | clinical |
+| YEARS | Dimitri Vogel * | Head of Marketing & Growth | 3 | product |
+| Zoī | Alexandre Hollard | Chief Product Officer | 1 | product |
+| Zoī | Ismaël Emelien | Co-Founder & CEO | 1 | product |
+| Zoī | Paul Dupuy * | Co-Founder | 1 | product |
+| Zoī | Prof Jerome * | Chief Medical and Science Officer | 1 | clinical |
+| Zoī | Alice Conques * | COO | 2 | operations |
+| Zoī | Emile B. | Chief Technology Officer | 3 | technical-integration |
+| Aeon | Tim Seithe * | CEO & Founder | 1 | product |
+| Aeon | Manuel Puntschuh * | Chief Medical Officer | 1 | clinical |
+| Aeon | Serge Weydert * | Chief Product and Technology Officer | 1 | product |
+| Aeon | Granit Alaj | VP Operations | 2 | operations |
+| Aeon | Pablo Tano | Vice President of AI | 3 | technical-integration |
 | CARE Preventive | Ertan Wittwer | Co-Founder & Co-CEO | 1 | product |
-| CARE Preventive | Ion Haab | Co-Founder | 1 | product |
 | CARE Preventive | Roman Walser | Medical Director | 1 | clinical |
+| CARE Preventive | Ion Haab | Co-Founder | 1 | product |
 | CARE Preventive | Julien Montier | Salesforce Director & Co-founder | 2 | technical-integration |
 | CARE Preventive | Pauline Sauvaget | Head of Finance & Operations | 3 | operations |
-| Zoī | Ismaël Emelien | Co-Founder & CEO | 1 | product |
-| Zoī | Alexandre Hollard | CPO | 1 | product |
-| Zoī | Emile B. | CTO | 3 | technical-integration |
-| Macromo | Eva Kuttichová | CEO & Co-Founder | 1 | product |
-| Macromo | Oliver Slapal | Head of Product | 1 | product |
-| Macromo | Michal Pohludka | Co-Founder (via parent studio) | 2 | product |
+| Ahead Health | Dennis Hermann | Founding COO | 1 | operations |
+| Ahead Health | Sven Jaeschke | Co-Founder & CPO | 1 | product |
+| Ahead Health | Nick Lenten * | Founder & CEO | 1 | product |
+| Ahead Health | Vinsensius Vega * | Co-Founder & CTO | 2 | technical-integration |
+| Axo Longevity | Octavia Seymour | Co-Founder (UK) | 1 | product |
+| Axo Longevity | Andrew McCarthy * | Founder & CEO (US) | 1 | product |
+| Axo Longevity | Sergio Tang-Sanchez * | Co-founder, CPGO (US) | 1 | product |
+| Axo Longevity | Alejandra Giménez | Head of Partnerships | 2 | partnership |
+| Blue Health Intelligence | Onno Huyghe | Co-Founder & CEO | 1 | product |
+| Blue Health Intelligence | Peter-Paul Leeuw * | Co-Founder & Co-CEO | 1 | product |
+| Blue Health Intelligence | Leanne Verdonck * | Co-founder & CMedO | 1 | clinical |
+| Concierge Medicine Europe | Wolfram A. Schleuter | Founder and CEO | 1 | product |
+| Concierge Medicine Europe | Katerina Vrbova * | Chief Operating Officer | 2 | operations |
+| Concierge Medicine Europe | Mariana Wohlfahrtova * | Medical Director P4 | 2 | clinical |
 | Kor | Sophie Agosta | Co-founder | 1 | product |
 | Kor | Khadija Benmansour | Co-Founder | 1 | product |
 | Kor | Samuel Roze | Co-founder & CTO | 2 | technical-integration |
+| Loovi | Kevin Najafi | Cofounder, COO & Medical Director | 1 | clinical |
 | Loovi | Joel Grajcer | Co-founder & CEO | 1 | product |
-| Loovi | Kevin Najafi | Co-founder, COO & Medical Director | 1 | clinical |
 | Loovi | Arian Vassili | CTO | 3 | technical-integration |
-| Axo Longevity | Octavia Seymour | Co-Founder (UK, остаётся на olena) | 1 | product |
-| Axo Longevity | Alejandra Giménez | Head of Partnerships | 2 | partnership |
-| Ahead Health | Sven Jaeschke | Co-Founder & CPO | 1 | product |
-| Ahead Health | Dennis Hermann | Co-Founder & COO | 1 | operations |
-| MDConcierge | Massimo Pietracaprina | CEO | 1 | product |
-| MDConcierge | Fabio Benevolo | Managing Director | 1 | product |
+| Macromo | Oliver Slapal | Head of Product | 1 | product |
+| Macromo | Eva Kuttichová | CEO & Co-Founder | 1 | product |
+| Macromo | Michal Pohludka | Co-Founder (via parent studio) | 2 | product |
+| Werlabs | Henrik Forsberg * | CEO | 1 | product |
 | Werlabs | Peter Roland | COO | 2 | operations |
-| Werlabs | Simon Lindgren | CTO | 3 | technical-integration |
-| Hello Inside | Mario Aichlseder | Founder & CEO | 1 | product |
-| Hello Inside | Vinzenz Weber | CTO & Co-Founder | 2 | technical-integration |
-| Aeon | Granit Alaj | VP Operations | 2 | operations |
-| Aeon | Pablo Tano | VP of AI | 3 | technical-integration |
+| Werlabs | Simon Lindgren | Chief Technology Officer | 3 | technical-integration |
 | AYUN | Natalia Trpchevska | Medical & Scientific Director | 1 | clinical |
 | AYUN | Bruno Marco-Dufort | Head of Operations | 2 | operations |
-| Blue Health Intelligence | Onno Huyghe | Co-Founder & CEO | 1 | product |
-| Concierge Medicine Europe | Wolfram A. Schleuter | Founder & CEO | 1 | product |
-| speak23 | Guenther Patterer | CEO & Founder | 1 | product |
-| YEARS | Jürgen Mehrtens | CEO | 1 | product |
+| Circle Health | Peter Malmqvist * | Co-Founder | 2 | product |
+| Circle Health | Theresa Spiegelberger * | Head of Medical Operations | 2 | operations |
+| Hello Inside | Mario Aichlseder | Founder & CEO | 1 | product |
+| Hello Inside | Vinzenz Weber | CTO and Founder | 2 | technical-integration |
+| Longevity Center Poland | Joanna Bensz * | Founder and CEO | 1 | product |
+| Longevity Center Poland | Dariusz Soldacki * | Medical Director | 1 | clinical |
+| MDConcierge | Massimo Pietracaprina | CEO | 1 | product |
+| MDConcierge | Fabio Benevolo | Managing Director | 1 | product |
 | Longevia Medical Clinic | Elisabetta Reggio | General Manager | 1 | product |
+| Prescan | Haif Rood-Nawzad * | CEO | 1 | product |
 | Preventicum | Gemma Frenchman | Managing Director (UK) | 1 | product |
+| speak23 | Guenther Patterer | CEO & Founder | 1 | product |
 
 ## WEAK — нужно решение Вадима
 
+Вадим уже взял первых семерых (10-21), координатор переводит их отдельно. Новое решение нужно только по Felix Harder.
+
 | Человек | Title | Группа | Почему на грани |
 |---|---|---|---|
-| Hannah Whitcombe | Head of Operations | Preventicum | По опыту (practice manager британских клиник) скорее всего руководит лондонской площадкой. По умолчанию из OQ5 локальный персонал британских клиник в рассылку не идёт, а твоё решение от 10-19 оставляет британских сотрудников на `olena`. Если берём, то angle operations. |
-| Nicolas Haffner | Medical Director | Mavie Work | В headline он медицинский руководитель частных клиник Goldenes Kreuz и Confraternität: это больничное направление, не Mavie Work. Если берём, то angle clinical. |
-| Eddy Van | Owner | Prescan | Пустой профиль, роль не подтверждается. В Prescan больше никого нет. |
-| leo glauberman | Owner | Preventicum | Пустой профиль, Германия. Владение не подтверждается. |
-| magdalena winnicka | Dyrektor | Longevity Center Poland | Пустой профиль. В этой компании больше никого нет. |
-| Ash Patel | Director of Strategic Partnerships UK | Werlabs | Пустой профиль, непонятно, что Werlabs делает в UK. Если берём, то angle partnership. |
-| Hugo Maury | Founding Designer | Lucis | В headline «Building Iris», возможно, ушёл в свой стартап. Если берём, то angle referral. |
+| Felix Harder | Chief Medical Officer | Aeon | **Новый.** Apollo называет его CMO Aeon в Мюнхене (это совпадает с расширением в Германию, и радиолог подходит к МРТ-чекапам Aeon), но в headline он COO Quartz Healthcare. Текущий работодатель неясен. Если берём, то angle clinical. CMO Aeon Manuel Puntschuh уже в SEND как P1. |
+| Hannah Whitcombe | Head of Operations | Preventicum | Взята Вадимом. Скорее всего руководит лондонской площадкой. Angle operations. |
+| Nicolas Haffner | Medical Director | Mavie Work | Взят Вадимом. Медицинский руководитель частных клиник Goldenes Kreuz и Confraternität. Angle clinical. |
+| Eddy Van | Owner | Prescan | Взят Вадимом. Пустой профиль. CEO Prescan (Haif Rood-Nawzad) теперь в SEND. |
+| leo glauberman | Owner | Preventicum | Взят Вадимом. Пустой профиль, Германия. |
+| magdalena winnicka | Dyrektor | Longevity Center Poland | Взята Вадимом. Пустой профиль. CEO и Medical Director теперь в SEND. |
+| Ash Patel | Director of Strategic Partnerships UK | Werlabs | Взят Вадимом. Пустой профиль. Angle partnership. |
+| Hugo Maury | Founding Designer | Lucis | Взят Вадимом. В headline «Building Iris». Angle referral. |
 
 ## Кого оставили за бортом: пулы
 
-В `skipped` 18 старших из 21 не отправляемого, но почти все отсеяны по жёстким причинам (реестр, коллизии, совет директоров), а не по функции. Пула, который добавляется через `promote` без смены правил, нет: все пограничные люди уже в WEAK.
+`skipped`: не отправляются 19 человек, из них 16 старших. Это 7 человек Dr.Dropin из реестра, 3 коллизии, 1 член совета директоров и 8 WEAK. Пула, который можно добавить через `promote` без смены правил, нет.
 
 | Пул | Людей | Кто | Предлагаемый angle | Что нужно поменять в гипотезе, чтобы их взять |
 |---|---|---|---|---|
-| Circle Health (Berlin) | 2 | Peter Malmqvist (Co-Founder), Theresa Spiegelberger (Head of Medical Operations) | product · operations | Твоё решение по коллизии: реестр матчит circle.health с Circle Health Group (UK), которую вела `katerina`. `--waive-companies` снимает только запрет того же профиля, поэтому нужна правка реестра или явное «берём» |
-| Dr.Dropin | 7 | Kristoffer Ingebrigtsen, Therese Borge Lied, Kristoffer Angerer, Markus Oor, Nora Guthe, Cathrine Børsand, Geir Langfeldt Olsen (board) | — | Не предлагаю: 6 из 7 уже получали сообщения с `olena` 2026-07-21, седьмой член совета директоров. Даже с `--waive-companies` никто не вернётся |
+| Dr.Dropin | 7 | Kristoffer Ingebrigtsen, Therese Borge Lied, Kristoffer Angerer, Markus Oor, Nora Guthe и ещё двое | не предлагаю | Не предлагаю: 6 из 7 уже получали сообщения с `olena` 2026-07-21, седьмой — член совета директоров. Даже с `--waive-companies` никто не вернётся. |
 
 ## Top concerns
 
-- **Mavie Work: 16 из 61 (26%) в одной организации UNIQA.** В группе смешаны три вещи: Mavie Work GmbH (корпоративное здоровье), Mavie Next (venture builder) и приложение MavieMe. Покупатель здесь — владелец корпоративной программы. Поэтому сокращать по удалённости от Mavie Work, а не по P3. Первыми уходят 6 человек из Mavie Next, venture-builder ролей и неназванной дочерней компании: Gandel, Bodenstein, Sobulska, Bijelac, Resch, Bhola. Тогда остаётся 10. Head of Engineering (Neaga) и Head of Operations (Busek-Baum) из самой Mavie Work остаются. Lea Paradzik (MavieMe) снижена до P2: в данных нет связи MavieMe с корпоративной программой.
-- **Lucis: 8 SEND в seed-стартап.** Оба основателя, Head of Operations и Product уже в списке. Вариант сокращения: сначала убрать двух founding engineers на referral (Pace, Tuil), останется 6. Дальше можно убрать AI-инженера (Mashra) и Head of Growth & Marketing (Breuil), останется 4.
-- **Инженеры в выгрузке Apollo.** Apollo искал по 40 title из гипотезы (`apollo-log.md`: «companies 25, 40 titles»). Founding engineers и founding designer Lucis, скорее всего, прошли по нестрогому совпадению с «Founder». Исправление — исключать title вроде «Founding Engineer» и «Founding Designer», а не менять способ поиска.
-- **Коллизии имён и ненастоящие профили: 4 из 82.** Это два «Mavie» из Apollo по домену, «CEO YEARS» в Норвегии и «Chief CEO» Biolytica. Из-за этого в Biolytica нет ни одного настоящего человека. По данным координатора (перепроверка в `companies.md` от 2026-10-19), CEO Biolytica — Arndt Rolfs.
-- **В пяти компаниях нет SEND на уровне владельца, ещё в одной он только британский.** В Werlabs отправляем только COO (P2) и CTO (P3). В Aeon (сегмент B) только VP Operations (P2) и VP of AI (P3). В Prescan (B) и Longevity Center Poland (C) только пустые профили в WEAK. В Biolytica никого. В Preventicum (B) единственный SEND — MD британского подразделения (P1), а центральный офис в Германии представлен одним «Owner» с пустым профилем. В Apollo уже есть необогащённые кандидаты уровня владельца по этим и другим тонким аккаунтам: Aeon, Werlabs, Axo, Ahead Health, Zoī, Longevity Center Poland, Prescan, Blue Health Intelligence. Добор возможен, точный список координатор вынесет Вадиму. Сюда я людей не добавлял.
-- **В карточке нет решения по британским сотрудникам на уровне человека.** Твоё решение 10-19 говорит, что аккаунт не роутится на `katerina`. OQ5 по умолчанию исключает локальный клинический персонал UK. Octavia Seymour и Gemma Frenchman из руководства, они в PASS. Hannah Whitcombe и Ash Patel в WEAK.
+- **Mavie Work: 16 из 86 (18%) в одной организации UNIQA.** В группе Mavie Work GmbH, Mavie Next (venture builder) и MavieMe. Вадим решил не сокращать. Lea Paradzik (MavieMe) — P2, потому что связь MavieMe с корпоративной программой не установлена.
+- **Axo Longevity: 3 из 4 SEND за пределами континентальной Европы** (сооснователь в UK, двое основателей в США), в Испании одна Head of Partnerships. По правилу product HQ (локация CEO и CPO) это указывало бы на США. Вадим 10-19 закрепил Axo за `olena`, решение действует, отмечаю на будущее.
+- **Инженеры в выгрузке Apollo.** Apollo искал по 40 title из гипотезы (`apollo-log.md`: «companies 25, 40 titles»). Founding engineers и founding designer Lucis, скорее всего, прошли по нестрогому совпадению с «Founder». Исправление — исключать такие title.
+- **Покрытие владельцев закрыто везде, кроме Preventicum.** Добор дал CEO или основателя в Aeon, Werlabs, Prescan, Longevity Center Poland, Ahead Health и Blue Health Intelligence. В Preventicum руководитель в SEND по-прежнему только британский (Gemma Frenchman). Германию представляет «Owner» с пустым профилем, взятый Вадимом.
+- **Коллизии имён: 3 из 105** (два «Mavie» из Apollo по домену, «CEO YEARS» в Норвегии). Felix Harder — четвёртый возможный случай, он в WEAK.
 
 ## Vadim — please confirm
 
-1. Список SEND (61 человек)?
-2. WEAK: кого берём (Whitcombe, Haffner, Eddy Van, Glauberman, Winnicka, Patel, Maury)?
-3. Пулы: Circle Health (2 человека) берём, то есть снимаем коллизию с `katerina`? Добираем через Apollo людей уровня владельца там, где их нет или мало (Aeon, Werlabs, Biolytica, Prescan, Longevity Center Poland и другие тонкие аккаунты; список от координатора)?
-4. Кеп не достигнут. Режем ли Mavie Work с 16 до 10 (без Mavie Next, venture-builder ролей и дочерней компании)? Режем ли Lucis с 8 до 6 (без founding engineers) или до 4?
+1. 25 новых PASS из расширения (23 из добора Apollo и 2 Circle Health)?
+2. Felix Harder (Aeon): берём?
+3. Итоговая рассылка: 86 PASS + 7 переведённых WEAK = 93 (94, если берём Harder)?

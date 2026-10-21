@@ -46,6 +46,19 @@ Vadim, verbatim: «https://docs.google.com/spreadsheets/d/1XIk3n6s8b7h5s2JzcjU6f
 2. **Apollo top-up only for the 8 companies with nobody in the sheet:** Lucis, Loovi, AYUN, CARE Preventive, Longevia Medical Clinic, Mavie Work, Circle Health, Biolytica; 42 people, 42 credits (`apollo-log.md`). The other 17 companies' Apollo candidates were left unenriched (`skipped-covered-by-sales-nav`).
 3. **Circle Health registry hit is a name collision, still excluded, question to Vadim:** `katerina` worked Circle Health Group (UK private hospitals) in `2026-09-27-uk-bariatric-prequal`, and the global company registry keys it as `circle-health` ("Group" is stripped as a legal suffix); this row is circle.health (Berlin). Nobody at circle.health is in any registry. `--waive-companies` lifts only a same-profile burn, not another profile's coverage, so the 2 Apollo people (Peter Malmqvist, Theresa Spiegelberger) stay `company covered by katerina` until Vadim decides.
 4. **Dr.Dropin stays excluded:** 6 of the 7 sheet people were contacted from `olena` in `2026-07-21-eu-telehealth-weightloss`; the 7th (a board member) falls under the company burn. Lifting it is Vadim's call (`--waive-companies`), and only people never contacted would come back.
+5. **Three websites corrected** (found while writing Account facts; web-verify had read them as "JS shell"): YEARS years.health → years.co (parked), Concierge Medicine Europe conciergemedicine.eu → conciergemedicine.cz (parked), Blue Health Intelligence blue.health → bluehealth.co (blue.health is BlueDigital, a pharmacy-loyalty company). biolytica.com is a domain-for-sale page; Biolytica has no live site found and nobody to send. No one was enriched from the wrong domains.
+
+### Vadim's decisions 2026-10-21: step-4 checkpoint
+
+Vadim, verbatim: «1. апрув 2. всых 3. знымаэмо 4. добрати 5. не скорочуэмо 6 викидаэмо звысно».
+
+1. **The 61 PASS people are approved.**
+2. **All 7 WEAK are taken** (promoted in their lanes): Eddy Van, leo glauberman, magdalena winnicka, Ash Patel, Hannah Whitcombe, Nicolas Haffner, Hugo Maury.
+3. **Circle Health: katerina's coverage is lifted for this campaign** (`outbound-registry.py check --waive-companies "Circle Health"`; since 2026-10-21 the waiver also lifts another profile's coverage). circle.health (Berlin) is not Circle Health Group (UK). Peter Malmqvist and Theresa Spiegelberger come back to the validator.
+4. **Apollo top-up of owner-level people at thin accounts:** Aeon, Werlabs, Axo Longevity, Ahead Health, Zoī, Longevity Center Poland, Prescan, YEARS, Blue Health Intelligence, Concierge Medicine Europe (the list put to him; ~36 credits). They go through the validator like everyone else.
+5. **No cuts:** Mavie Work and Lucis keep everyone who passes (cap 50 is not reached).
+6. **Biolytica is dropped** (domain for sale, no live site, nobody to send); removed from `companies.csv` and `companies-verified.csv`.
+7. Blue Health Intelligence stays (he approved its CEO among the 61; no answer on the on-site 3D scan risk, so the Account facts "Never" line carries it).
 
 ### Sub-segment: company types in scope
 

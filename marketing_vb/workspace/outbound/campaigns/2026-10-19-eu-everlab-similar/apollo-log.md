@@ -8,3 +8,10 @@ Written by `scripts/apollo-pull.py`. Credits are Apollo's own `credits_consumed`
 
 ## 2026-10-21 enrich → apollo-2026-10-21.csv
 - written 42, skipped 0, credits 42
+
+## 2026-10-21 search
+- companies 24, 40 titles
+- candidates 97, other employer 0, already in Sales Nav 18
+
+## 2026-10-21 enrich → apollo-2026-10-21-2.csv
+- written 24, skipped 0, credits 24
