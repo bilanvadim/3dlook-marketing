@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-19",
+  "last_updated": "2026-10-21",
   "companies": {
     "safariland": {
       "covered_by_profile": null,
@@ -2387,6 +2387,94 @@
       "campaign_id": "2026-10-16-us-employer-obesity-care",
       "product": "fitxpress",
       "date": "2026-10-16",
+      "status": "active"
+    },
+    "aionis": {
+      "display_name": "AIONIS",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-19-latam-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "care-club": {
+      "display_name": "Care Club",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-19-latam-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "centeni": {
+      "display_name": "Centeni",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-19-latam-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "era-longevity": {
+      "display_name": "ERA Longevity",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-19-latam-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "fleury-lifecare": {
+      "display_name": "Fleury Lifecare",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-19-latam-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "humanolab": {
+      "display_name": "Humanolab",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-19-latam-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "lonvida": {
+      "display_name": "Lonvida",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-19-latam-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "med-rio-check-up": {
+      "display_name": "Med-Rio Check-up",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-19-latam-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "previva": {
+      "display_name": "Previva",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-19-latam-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "timeless": {
+      "display_name": "Timeless",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-19-latam-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "zentum": {
+      "display_name": "Zentum",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-10-19-latam-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
       "status": "active"
     }
   }
