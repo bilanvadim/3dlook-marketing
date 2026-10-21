@@ -34,3 +34,11 @@ TODO, the insurance use-case file and `blog-style-guide.md`.
    `/fitxpress/for-insurance-underwriting/` with a 301. The steps are in `TODO.md`. Until the move,
    `landing-map.md` keeps the root URL as "Link now", with a relink line in the article's Open items.
 2. «логотипи ми можемо використовувати на сайті.» The logo strip stays, and open item 2 is closed for logos.
+
+**2026-10-21 · after reading the Slack thread with Asselya**
+
+Asselya kept the page at the root on purpose (DM, 15:13): with no real `/fitxpress/` page, the schema
+breadcrumb would point to a 404. Vadim accepted that, then: «коли повернемо фітекспрес на своє місце тоді і
+іншуренс перенесемо». The move is tied to `/fitxpress/` shipping. She had also tested the shared form on every
+landing (14:31), so the GTM item came off the list. The four remaining fixes went to Asselya and Nika in Slack
+#marketing, in Russian, without the move (Vadim's instruction).

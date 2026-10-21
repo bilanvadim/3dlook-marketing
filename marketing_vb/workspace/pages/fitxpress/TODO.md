@@ -77,8 +77,9 @@ Each industries card currently links to a live article. Switch the link when the
 
 Note: `workspace/pages/for-insurance-underwriting/` was drafted 2026-08-31 at the old root URL
 `/for-insurance-underwriting/`; under the 2026-09-27 hierarchy it belongs at `/fitxpress/for-…/`.
-It went live on 2026-10-21 at the root URL by mistake. Vadim, 2026-10-21: it moves to
-`/fitxpress/for-insurance-underwriting/` with a 301, as planned. The steps are in that page's `TODO.md`.
+It went live on 2026-10-21 at the root URL, because a child of a missing `/fitxpress/` would carry a
+breadcrumb to a 404 (Asselya). Vadim, 2026-10-21: it moves to `/fitxpress/for-insurance-underwriting/` with a
+301 when this page ships. The steps are in that page's `TODO.md`.
 
 ## 5. Nice to have
 

@@ -42,7 +42,7 @@ related: 2026-09-25-fitxpress-seo-plan.md (фаза 0), 2026-09-27-tz-dev-site.m
 - 2.4 llms.txt лежит на сайте (Last updated 2026-09-18).
 - 2.1 FAQ JSON-LD: FAQPage есть на trust-FAQ и `/wrist-measurement/`, на Capture Quality FAQ (опубликована 14.10) его нет.
 - Контент: пресс-релиз Wrist Measurement опубликован 08.10, Capture Quality FAQ опубликована 14.10, Асель делает перелинковку.
-- Фаза 1: фитнес-лендинг живой (`/fitxpress/for-connected-and-digital-fitness/`), сам `/fitxpress/` пока 301 на главную. **21.10 вышел insurance-лендинг** с общей формой `11acb23a`, в индексе с того же дня. Вышел по ошибке в корне, на `/for-insurance-underwriting/`. Вадим 21.10: переносим в `/fitxpress/for-insurance-underwriting/` по плану, с 301. Что осталось после выхода: `workspace/pages/for-insurance-underwriting/TODO.md`. GLP-1 и бариатрию делает Ника, Асель ревьюит (15.10). BMI verification остаётся на `/for-bmi-verification/` и расширяется Smart Scales и антифродом (07.10).
+- Фаза 1: фитнес-лендинг живой (`/fitxpress/for-connected-and-digital-fitness/`), сам `/fitxpress/` пока 301 на главную. **21.10 вышел insurance-лендинг** с общей формой `11acb23a`, в индексе с того же дня. Пока стоит в корне, на `/for-insurance-underwriting/`: без страницы `/fitxpress/` breadcrumb в schema вёл бы на 404 (Асель). Вадим 21.10: переносим в `/fitxpress/for-insurance-underwriting/` с 301, когда выйдет сам `/fitxpress/`. Асель 21.10 протестировала общую форму на всех посадках: параметры передаются. Что осталось после выхода: `workspace/pages/for-insurance-underwriting/TODO.md`. GLP-1 и бариатрию делает Ника, Асель ревьюит (15.10). BMI verification остаётся на `/for-bmi-verification/` и расширяется Smart Scales и антифродом (07.10).
 - Порядок от Асель: закончить фазу 0, перекалибровать аудит на новых данных, потом фаза 1. Ссылочный план она разбирает после фазы 0.
 - P1-6 и P2-1 перепроверены 19.10 (ТЗ переписано, ответ Асель в Slack). Пагинацию `/content-hub/` девелоперам не отдаём: `/sitemap/` из мая уже даёт Google путь ко всем постам, а 60 «сирот» лечатся контекстными ссылками (п. 1.5). По скорости только HTTP/2 вместе с P0-4 и CLS в приёмку редизайна `/pricing/`.
 
@@ -598,7 +598,7 @@ HubSpot → Settings → Properties.
    | `/fitxpress/for-clinical-trials/` | `clinical_trials` |
    | `/fitxpress/for-occupational-health/` | `occupational_health` |
 
-   Строки для ещё не опубликованных страниц можно завести сразу. **21.10:** insurance-лендинг по ошибке вышел в корне, на `/for-insurance-underwriting/`. Вадим: переносим в `/fitxpress/for-insurance-underwriting/` по плану, с 301. До переезда нужны обе строки, иначе у заявок со страницы `fx_vertical` будет пустым. Перед публикацией каждой страницы сверить её финальный URL с таблицей.
+   Строки для ещё не опубликованных страниц можно завести сразу. **21.10:** insurance-лендинг вышел в корне, на `/for-insurance-underwriting/`, и переедет в `/fitxpress/for-insurance-underwriting/` (301) вместе с выходом `/fitxpress/`. До переезда нужны обе строки, иначе у заявок со страницы `fx_vertical` будет пустым. Перед публикацией каждой страницы сверить её финальный URL с таблицей.
 2. **Тег `UTM - fill HubSpot hidden fields`** (из 0.4.2): в функции `values()` перед `return v;` добавить строки:
    ```js
    var fv = '{{fx_vertical}}';

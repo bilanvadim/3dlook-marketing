@@ -18,7 +18,10 @@ published: 2026-10-21
 > **How the live page differs from `page-final-2026-10-02.md`:**
 > 1. **URL at the root**, not the planned `/fitxpress/for-insurance-underwriting/` (that URL is a 404).
 >    **Vadim, 2026-10-21: «перенесемо в фітекспрес згідно плану. це помилка.»** The page moves to
->    `/fitxpress/for-insurance-underwriting/` with a 301 from the root URL. The steps are at the top of `TODO.md`.
+>    `/fitxpress/for-insurance-underwriting/` with a 301 from the root URL. Why it is at the root: Asselya kept it
+>    there (Slack, 2026-10-21 15:13) because without a real `/fitxpress/` page the schema breadcrumb would point
+>    to a 404, and Vadim accepted that. Vadim, later the same day: «коли повернемо фітекспрес на своє місце тоді
+>    і іншуренс перенесемо». So the move happens together with `/fitxpress/`, not before. The steps are in `TODO.md`.
 > 2. **Yoast title and meta description are the v1 values from 2026-08-31** ("Body Data for Life Insurance
 >    Underwriting | FitXpress"), not the final ones. The title is missing the focus keyphrase
 >    `accelerated underwriting`.

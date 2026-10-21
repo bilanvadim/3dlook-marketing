@@ -1,9 +1,9 @@
 # Use Case: FitXpress — Insurance Underwriting
 
 ## Live page (since 2026-10-21)
-`https://3dlook.ai/fitxpress/for-insurance-underwriting/`. It was published at `/for-insurance-underwriting/` by
-mistake and moves to the `/fitxpress/` URL with a 301 (Vadim, 2026-10-21); until then the root URL is the
-one that works. H1 "Second-source build and BMI evidence for accelerated underwriting". It is the newest approved public wording for this vertical, newer than the lines below. When
+`https://3dlook.ai/fitxpress/for-insurance-underwriting/`. It is live at `/for-insurance-underwriting/` until
+`/fitxpress/` ships, then moves there with a 301 (Vadim, 2026-10-21); until then the root URL is the one
+that works. H1 "Second-source build and BMI evidence for accelerated underwriting". It is the newest approved public wording for this vertical, newer than the lines below. When
 they differ, take the page's wording. Text of record:
 `workspace/pages/for-insurance-underwriting/published-live-2026-10-21.md`. Articles link to it as the Hub 4
 landing (`brand-assets/content-strategy/landing-map.md`).
