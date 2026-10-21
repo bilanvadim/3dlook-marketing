@@ -1,0 +1,1403 @@
+first_name,last_name,linkedin_url,company,title,email,connection_note,message_1,message_2
+Hannah,Whitcombe,https://linkedin.com/in/hannah-whitcombe-b2b35866,Preventicum,Head of Operations,,,"Hi Hannah,
+
+Your bio mentions business development within clinical services.
+
+At Preventicum, a client needs only a phone and a link, and the steps appear on screen. The scan returns 80+ body measurements.
+
+How does your team handle client questions after an assessment day?
+
+Olena","Hi Hannah,
+
+Your team would not need to arrange anything for a client at home, because the steps are on screen.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Is there a slot in my calendar that works? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Emile,B.,https://linkedin.com/in/emile-b-82bb9567,Zoī,Chief Technology Officer,,,"Hi Emile,
+
+You were CTO at Fitle and engineering manager at Luko, which means you have chosen SDKs before. FitXpress has web and mobile SDKs and an API with key authentication, and a scan from two photos gives 80+ body measurements.
+
+For the Zoī app, how do you decide when a capture flow needs your own team?
+
+Olena","Hi Emile,
+
+Outputs are stored and deletable by scan ID, and photos are deleted after processing or within 30 days.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+A slot to go through the SDKs: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Octavia,Seymour,https://linkedin.com/in/octavia-seymour,Axo Longevity,Co-Founder,,,"Hi Octavia,
+
+Your years building D2C businesses are a good lens for a membership like Axo Longevity.
+
+Members of Axo Longevity Care visit a lab twice a year, and the plan is adapted after each visit. From the member platform, FitXpress could ask for a front and a side photo and show 80+ body measurements.
+
+In your experience, what makes a membership worth keeping in the months between two visits?
+
+Olena","Hi Octavia,
+
+A scan is something a member does alone, from the member platform or from a link. 3DLOOK has worked with 100+ clients.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+If it sounds useful, grab a time here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Dennis,Hermann,https://linkedin.com/in/dennishermann,Ahead Health,Founding COO,,,"Hi Dennis,
+
+You were Head of Europe at Kaia Health before co-founding Ahead Health.
+
+Ahead Health members book follow-up tests after the first baseline. For the weeks between, FitXpress can add a photo capture, front and side, that gives 80+ body measurements.
+
+How does your team keep a member engaged before the next follow-up test?
+
+Olena","Hi Dennis,
+
+Every member follows the same on-screen steps on their own phone, which leaves your team with no equipment to organise. Across all 3DLOOK customers, 112,100 scans were run in 2025.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+I would be glad to look at the flow together: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Massimo,Pietracaprina,https://linkedin.com/in/massimo-pietracaprina-a528951,MDConcierge,CEO,,,"Hi Massimo,
+
+Your move from hospital HR leadership at IEO and Humanitas to CEO of MDConcierge caught my attention.
+
+A Medical Tutor builds each MDConcierge member's prevention plan. FitXpress could add a body measurement step to the digital tools: two photos, 80+ body measurements.
+
+What should a member be able to do alone, on a phone, between two check-ups?
+
+Olena","Hi Massimo,
+
+A step the member does alone gives the Medical Tutor one more topic for the next conversation.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Grab a moment in my calendar: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Fabio,Benevolo,https://linkedin.com/in/fabio-benevolo-399b832,MDConcierge,Direttore Generale - Managing Director,,,"Hi Fabio,
+
+Your profile puts digital innovation at the centre of your role as General Manager.
+
+FitXpress gives developers an API and SDKs, and returns 80+ body measurements and body composition estimates from two photos.
+
+When MDConcierge adds a new digital tool, does it build the tool in-house or work with a specialist?
+
+Olena","Hi Fabio,
+
+A tool brought in from outside must behave the same way each time. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+I am happy to walk through the integration points: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Peter,Roland,https://linkedin.com/in/peter-roland-737ab34,Werlabs,COO,,,"Hi Peter,
+
+You are COO at Werlabs, where medical staff answer member questions.
+
+The scan needs only a phone, and the on-screen steps are the same for every member. It returns 80+ body measurements.
+
+Each scan finishes quickly too, under 45 seconds from the photos to structured results.
+
+Which member questions take most of your team's time?
+
+Olena","Hi Peter,
+
+A step that guides itself leaves your team's time for medical questions.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Let us find a time: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Onno,Huyghe,https://linkedin.com/in/onnohuyghe,Blue Health Intelligence,Co-Founder & CEO,,,"Hi Onno,
+
+Swapfiets and Tibber are products people use every day, and Blue Health Intelligence now holds a personal action plan in the Blue app after the one-hour check.
+
+FitXpress could give the Blue app a body measurement step: a front and a side photo, 80+ body measurements.
+
+What would you like the Blue app to be for a member in an ordinary week?
+
+Olena","Hi Onno,
+
+A daily-use product grows on small actions, and a two-photo scan is one a member can do alone. In 2025, one platform completed 34,000 scans.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+I can show the member flow on a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Michal,Pohludka,https://linkedin.com/in/michal-pohludka-56223939,Macromo,Founder & CEO (mother company of the ventures below),,,"Hi Michal,
+
+Your profile reads From Science To People, and Macromo is one of the ventures behind it.
+
+Macromo turns science into a personal plan for each person. FitXpress adds a body measurement view: two phone photos give 80+ body measurements.
+
+From the studio, which part of Macromo do you see as the best home for a new measurement?
+
+Olena","Hi Michal,
+
+A studio sees many ventures, and a short call would show what the scan adds to one of them. Macromo could be where a home body measurement fits best, as one more input to a person's plan.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Take any slot you like: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Eddy,Van,https://linkedin.com/in/eddy-van-b323a9a,Prescan,Owner,,,"Hi Eddy,
+
+Quick note for you as the owner of Prescan: clients get one examination day, with everything kept in the online portal.
+
+Prescan could offer a home scan from that portal. Front and side photos taken on a phone return 80+ body measurements.
+
+Is a home scan something Prescan would consider adding to the portal?
+
+Olena","Hi Eddy,
+
+The online portal already holds everything from the examination day, and a body record taken at home could be added to that same place. In 2025, 34,000 scans were completed at one platform.
+
+If it looks relevant, my calendar is here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Wolfram A.,"Schleuter, MBL",https://linkedin.com/in/wschleuter,Concierge Medicine Europe,Founder and CEO,,,"Hi Wolfram,
+
+You write that executives often have access to almost everything except healthcare that fits their lives.
+
+Concierge Medicine Europe gives each member a personal doctor. A member could send a front and a side photo through a link on a phone and get 80+ body measurements, with no app to download.
+
+What does a member do for their health in a busy week away from the practice?
+
+Olena","Hi Wolfram,
+
+Members with full diaries can do this in their own time, wherever they are.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+I would welcome a conversation, my calendar is here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Gemma,Frenchman,https://linkedin.com/in/gemmafrenchman,Preventicum,Managing Director,,,"Hi Gemma,
+
+You returned to Preventicum in 2022 after a decade away.
+
+Preventicum clients get a written report and a client portal after the assessment day. A link could ask a client for a front and a side photo and give 80+ body measurements.
+
+What would you like a client to do at home in the months after the assessment day?
+
+Olena","Hi Gemma,
+
+Clients leave the assessment day with a report, and a link to a scan keeps them in touch afterwards. 3DLOOK has worked with 100+ clients.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+You are welcome to pick a time: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+leo,glauberman,https://linkedin.com/in/leo-glauberman-56657316,Preventicum,Owner,,,"Hi Leo,
+
+You own Preventicum International Group, and I have a small addition to suggest for its assessments.
+
+Preventicum runs one-day assessments with a written report. FitXpress takes two photos on a phone and gives 80+ body measurements.
+
+What is your view on a body measurement taken by the client at home, between two assessments?
+
+Olena","Hi Leo,
+
+The group decides what clients see, and the scan runs without equipment at any clinic.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Pick a time that suits you: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Sophie,Agosta,https://linkedin.com/in/sophie-agosta,Kor,Co-founder,,,"Hi Sophie,
+
+Kor follows each check-up with continuous medical follow-up, and the person can send their data to a doctor.
+
+FitXpress adds body data from the phone: a front and a side photo give 80+ body measurements that the person could keep in Kor.
+
+Which kinds of data would Kor like a person to add on their own?
+
+Olena","Hi Sophie,
+
+A person who adds measurements themselves has more to show a doctor. 3DLOOK has worked with 100+ clients.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Look at my calendar and choose a time: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Vinzenz,Weber,https://linkedin.com/in/vinzenzweber,Hello Inside,CTO and Founder,,,"Hi Vinzenz,
+
+Quick thought after reading your bio: at Hello Inside, Flutter in the app, Node.js behind it.
+
+FitXpress is a REST API with API-key authentication, along with web and mobile SDKs. A guided two-photo scan returns 80+ body measurements to your backend.
+
+Would your team send requests from the Node.js side, or embed an SDK in the Flutter app?
+
+Olena","Hi Vinzenz,
+
+Photos are deleted after processing or within 30 days, and stored outputs can be deleted by scan ID.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Book a technical walkthrough of the API and SDKs here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Samuel,ROZE,https://linkedin.com/in/sroze,Kor,Co-founder & CTO,,,"Hi Samuel,
+
+As CTO you carry the platform that holds Kor's health data, and every new data source lands on your desk first.
+
+FitXpress stores each scan's measurements against a scan ID, and your team can delete them by that ID. A REST API with key authentication sits behind it, and a front and a side photo give 80+ body measurements.
+
+How does Kor handle deletion requests across the health data it holds today?
+
+Olena","Hi Samuel,
+
+On a call I can show how scan IDs map to your own records and where deletion fits.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Send me a time or use my calendar: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Alejandra,Giménez,https://linkedin.com/in/alejandragimenezg,Axo Longevity,Head of Partnerships,,,"Hi Alejandra,
+
+You worked on health innovation partnerships at Hospital Clínic de Barcelona, and now you lead partnerships at Axo Longevity.
+
+3DLOOK offers FitXpress, a phone scan with 80+ body measurements from two photos, to companies that build it into their own membership.
+
+Would an outside body measurement tool ever belong in the Axo Longevity membership?
+
+Olena","Hi Alejandra,
+
+A short call would show how other teams embed the scan. One platform ran 34,000 scans in 2025.
+
+Tell me who looks after outside tools at Axo Longevity, or pick a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Guenther,Patterer,https://linkedin.com/in/guentherpatterer,speak23,CEO & Founder,,,"Hi Guenther,
+
+After each lab visit, a speak23 member gets a report and a login. You came to this after three decades in IT sales at SAP and IBM.
+
+A link in that login could ask members for two photos from home. The scan returns 80+ body measurements and body composition estimates.
+
+What do speak23 members do in their login between the lab visits?
+
+Olena","Hi Guenther,
+
+Between lab visits, a scan would give speak23 members a reason to open the login and add a body record from home. 3DLOOK has worked with 100+ clients.
+
+A call is easy to arrange here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Mario,Aichlseder,https://linkedin.com/in/marioaichlseder,Hello Inside,Founder & CEO,,,"Hi Mario,
+
+Your 14 years in digital health and fitness, starting at Runtastic, make you a good judge of what an app can ask of its users. Hello Inside already shapes its programmes around each life stage.
+
+Our scan can sit inside a partner's app or behind a web link. Two photos from the phone return 80+ body measurements and body composition estimates, through an API or SDKs.
+
+Would a body record taken at home fit any of the Hello Inside programmes?
+
+Olena","Hi Mario,
+
+A body record from home could add a new step to a Hello Inside programme, at the moment the programme asks for it. 3DLOOK has worked with 100+ clients.
+
+I can walk you through a demo here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Sven,"Jaeschke, D.Phil.",https://linkedin.com/in/svenjaeschke,Ahead Health,Co-Founder & CPO,,,"Hi Sven,
+
+Your line about the fragmented landscape of prevention matches how Ahead Health brings checks and plans into one online health report.
+
+FitXpress could add one more input to that report: two phone photos, front and side, become 80+ body measurements and body composition estimates. White-label SDKs keep the capture in Ahead Health's own look.
+
+Which input would you add to the report first?
+
+Olena","Hi Sven,
+
+The SDKs let your team own the capture screens, and the measurements arrive as data your report can display. 3DLOOK has worked with 100+ clients.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+My calendar is open if you want to compare notes on the roadmap: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Khadija,Benmansour,https://linkedin.com/in/khadija-benmansour-2535b7a8,Kor,Co-Founder,,,"Hi Khadija,
+
+You came to Kor from private equity at Eurazeo and consulting at McKinsey.
+
+Kor check-ups reach people through their employer or insurer. FitXpress gives 80+ body measurements from a front and a side photo, and the programme behind Kor decides what a person sees.
+
+What would you want a person to do on their own after a Kor check-up?
+
+Olena","Hi Khadija,
+
+Employers and insurers will ask how a new step is run, and the answer is two photos on a phone and no equipment.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+If useful, we can go through it live: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Jürgen,Mehrtens,https://linkedin.com/in/jürgen-mehrtens-116303b1,YEARS,Chief Executive Officer,,,"Hi Jürgen,
+
+Your bio says evidence-based is in the DNA of YEARS. After the check-up day, YEARS members get a year of follow-up in the app, and a home scan from two photos could be part of it, with 80+ body measurements.
+
+Where in the follow-up year do YEARS members spend most of their time in the app?
+
+Olena","Hi Jürgen,
+
+The scan could arrive in the YEARS app or behind a link, and YEARS chooses which measurements a member sees. 3DLOOK has worked with 100+ clients.
+
+I would like to show you how it would look: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Oliver,Slapal,https://linkedin.com/in/oliks,Macromo,Head of Product,,,"Hi Oliver,
+
+You write that you built and shipped products from early stage to growth.
+
+Macromo members come back for a yearly retest. An SDK could put a front-and-side photo capture into the app and return 80+ body measurements.
+
+What does the app ask a member to do in the months between yearly retests?
+
+Olena","Hi Oliver,
+
+As the owner of the roadmap, you decide how much of this lands in the app. A capture step gives the app one more thing to ask of a member between retests.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Does a slot in my calendar fit? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Simon,Lindgren,https://linkedin.com/in/simon-lindgren-269102a4,Werlabs,Chief Technology Officer,,,"Hi Simon,
+
+Werlabs holds a doctor's statement for each member in its journal, which makes access control the first technical question.
+
+FitXpress uses API-key authentication on a REST API and has web and mobile SDKs. A front and a side photo yield 80+ body measurements.
+
+How do you secure calls between the journal and other services today?
+
+Olena","Hi Simon,
+
+I can show the authentication flow and how scan data is deleted by scan ID.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Use my calendar when it suits you: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Ash,Patel,https://linkedin.com/in/ash-patel-20647b161,Werlabs,Director Of Strategic Partnerships UK,,,"Hi Ash,
+
+You lead strategic partnerships for the UK at Werlabs.
+
+3DLOOK offers FitXpress, a phone scan that gives 80+ body measurements from two photos, to companies that build it into their own services. Werlabs members have a doctor comment on each health check.
+
+Does Werlabs add outside services for its members?
+
+Olena","Hi Ash,
+
+A call would show how a partner connects the scan to its own service. One platform ran 34,000 scans in 2025.
+
+If UK partnerships sit with a colleague, please point me to them, or pick a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Alexandre,Hollard,https://linkedin.com/in/alexandre-hollard,Zoī,Chief Product Officer,,,"Hi Alexandre,
+
+Your bio says most people never open their check-up report again. A scan a member does at home gives something new to open between check-ups: 80+ body measurements from two photos.
+
+What do you want a Zoī member to open in the app once the report has been read?
+
+Olena","Hi Alexandre,
+
+A home scan gives the app a fresh item to open after the report, and Zoī decides which measurements a member sees. 3DLOOK has worked with 100+ clients.
+
+Calendar to see it in the Zoī app: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Pablo,Tano,https://linkedin.com/in/pablo-tano-a39a15164,Aeon,Vice President of AI,,,"Hi Pablo,
+
+Your work on machine learning in real-world systems, from Champalimaud to Axy, is why I am writing. FitXpress is an API with key authentication and web and mobile SDKs, and each scan from two photos returns 80+ body measurements as structured data.
+
+When Aeon weighs a new data source for the portal, what does it need to show before you trust it?
+
+Olena","Hi Pablo,
+
+If you want to test it technically, I can show the API calls and how outputs are stored and deleted by scan ID.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Send me a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Eva,Kuttichová,https://linkedin.com/in/evakuttichova,Macromo,CEO & Co-Founder,,,"Hi Eva,
+
+You write that daily habits are the foundation of long-term health.
+
+FitXpress offers 80+ body measurements from two phone photos, which could sit among the habits in the Macromo plan.
+
+Which habit in the Macromo plan do members keep up most easily?
+
+Olena","Hi Eva,
+
+A habit is easier to keep when a person sees a record of it. 3DLOOK has worked with 100+ clients.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+I would love to talk, my calendar is here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Granit,Alaj,https://linkedin.com/in/granitalaj,Aeon,VP Operations,,,"Hi Granit,
+
+Your bio talks about delivering clarity and trust to people in a sensitive moment. A member could take a two-photo scan on their own phone between the results walkthrough and the yearly retest, guided step by step, and get 80+ body measurements.
+
+How does your team stay in touch with an Aeon member in those months today?
+
+Olena","Hi Granit,
+
+The member does the scan alone, and the care team sees the measurements afterwards, which adds no appointment to your team's calendar. Members at one platform completed 34,000 scans in 2025.
+
+Tell me a time that works: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Ismaël,EMELIEN,https://linkedin.com/in/ismaël-emelien-a0286922b,Zoī,Co-Founder and CEO at Zoī,,,"Hi Ismaël,
+
+Zoī members come back each year, and between visits the app helps them put the recommendations into practice. A two-photo home scan could add 80+ body measurements to that.
+
+How do you want the Zoī app to feel in the months between two yearly check-ups?
+
+Olena","Hi Ismaël,
+
+A home scan fits how Zoī already works: the physician builds the plan, and the app helps the member put it into practice.
+
+A conversation would show how it looks in the app: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+magdalena,winnicka,https://linkedin.com/in/magdalena-winnicka-b08972313,Longevity Center Poland,Dyrektor,,,"Hi Magdalena,
+
+Longevity Center builds a personal plan with each member after a 360 assessment.
+
+FitXpress gives 80+ body measurements from a front and a side photo taken on a phone.
+
+Which Longevity Center service would work best as something a member does alone?
+
+Olena","Hi Magdalena,
+
+A phone scan is a service a member can use alone, and a short call would show where it could fit among yours.
+
+Here is my calendar for when you have a moment: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Andrew,McCarthy,https://linkedin.com/in/andrew-mccarthy-impact-entrepreneur,Axo Longevity,Founder and CEO,,,"Hi Andrew,
+
+Your headline says Axo Longevity gives people control over their own body and health.
+
+A member gets a personal plan after a lab visit. A two-photo scan could add 80+ body measurements to what a member knows about their own body.
+
+Which part of the platform do you want members to open most often?
+
+Olena","Hi Andrew,
+
+A person who wants control over their body gains from seeing their own measurements, and the scan puts them on a phone screen. Across all 3DLOOK customers, 112,100 scans were run in 2025.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Can we find a time? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Sergio,Tang-Sanchez,https://linkedin.com/in/tangsergio,Axo Longevity,Co-founder - Chief Product & Growth Officer,,,"Hi Sergio,
+
+Your headline calls Axo Longevity an AI preventive health membership.
+
+FitXpress can sit inside the member platform as an SDK: a front and a side photo give 80+ body measurements.
+
+Where would a body measurement fit in the sequence of steps a member follows on the platform?
+
+Olena","Hi Sergio,
+
+A new step in the platform is only worth adding if its data holds steady. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+Shall I walk you through the SDK flow? Calendar: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Tim,Seithe,https://linkedin.com/in/seithe,Aeon,CEO & Founder,,,"Hi Tim,
+
+The customer portal is where an Aeon member reads health trends after each yearly retest. A home scan from two photos could give the portal something to offer in the months in between, with 80+ body measurements behind it.
+
+How do you picture the months between two retests for an Aeon member?
+
+Olena","Hi Tim,
+
+Aeon would decide what a member sees from each scan, and the portal could show as much or as little as you choose. 3DLOOK has worked with 100+ clients.
+
+Pick a time to see how it would sit in the portal: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Manuel,Puntschuh,https://linkedin.com/in/puntschuh,Aeon,Chief Medical Officer,,,"Hi Manuel,
+
+You founded Origin Health Basel and now lead medicine at Aeon, where members retest once a year. From two photos, a home scan gives your doctors 80+ body measurements in between. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+How would you want an Aeon doctor to use a home scan after the results walkthrough?
+
+Olena","Hi Manuel,
+
+Body composition estimates, such as body fat % and lean mass, come with the measurements, and your doctors choose which scans to compare. FitXpress is not a medical device.
+
+I can walk you through it whenever you like: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Felix,Harder,https://linkedin.com/in/drfelixharder,Aeon,Chief Medical Officer,,,"Hi Felix,
+
+Aeon members retest once a year, and a physician goes through their results at the walkthrough. Between retests, a home scan from two photos adds 80+ body measurements that a physician can look at.
+
+If you were reviewing such a set, which measurements would you look at first?
+
+Olena","Hi Felix,
+
+The circumference measurements, such as waist and hip, come first in a scan, and body composition estimates such as body fat % and lean mass are there for a second look. The physician chooses which scans to compare. FitXpress is not a medical device.
+
+Book a time if it is useful: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Serge,Weydert,https://linkedin.com/in/serge-weydert,Aeon,Chief Product and Technology Officer,,,"Hi Serge,
+
+You have built health tech more than once, and I will keep this about the build. FitXpress comes as web and mobile SDKs, and a home scan from two photos could live inside the Aeon customer portal and return 80+ body measurements.
+
+How would your team prefer to add a capture step to the portal: through an SDK or a web link?
+
+Olena","Hi Serge,
+
+The web SDK would carry the capture flow in the portal, and the mobile SDK would do the same in a native app. Photos are deleted after processing or within 30 days.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Here is my calendar for a run through the SDKs: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Jan,Hennigs,https://linkedin.com/in/jkhennigs,YEARS,Medical Director,,,"Hi Jan,
+
+You are founding head of medicine at YEARS after years of internal and pulmonary medicine at Eppendorf. A member's home scan gives your doctors 80+ body measurements from two photos. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+Which body measurements would matter to your doctors after a member leaves the check-up day?
+
+Olena","Hi Jan,
+
+Your doctors can read body composition estimates, such as body fat % and lean mass, next to the measurements, and they choose which scans to compare. FitXpress is not a medical device.
+
+Whenever you have a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Jan,Schmitz,https://linkedin.com/in/janlukasschmitz,YEARS,Head of Operations & Business Development,,,"Hi Jan,
+
+Running operations at YEARS includes the concierge and the follow-up year after the check-up day. On their own phone, a member can scan with two photos and receive 80+ body measurements, with no extra visit.
+
+How does the concierge team plan its contact with members over the follow-up year?
+
+Olena","Hi Jan,
+
+The scan runs on the member's phone and asks nothing of the concierge's calendar.
+
+Tell me what suits you: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Leonhard,Friedrich,https://linkedin.com/in/leonhardfriedrich18,YEARS,AI & Product Lead,,,"Hi Leonhard,
+
+You work on AI and product at YEARS while studying for an MSc in Digital Health. From two photos, the scan gives 80+ body measurements and body composition estimates, such as body fat % and lean mass, with BMI and BMR calculated, as structured data.
+
+Which member data would be most useful to work with at YEARS?
+
+Olena","Hi Leonhard,
+
+Each scan arrives as structured data through an API or SDKs, with a field for every body measurement and for the body composition estimates.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+I can go through the data fields on a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Dimitri,Vogel,https://linkedin.com/in/dimitri-vogel,YEARS,Head of Marketing & Growth,,,"Hi Dimitri,
+
+Your mix of growth and operations suits the stretch after a YEARS check-up day. A two-photo scan on the member's own phone gives 80+ body measurements and something concrete to do at home.
+
+Which part of the follow-up year is hardest to describe to a new member?
+
+Olena","Hi Dimitri,
+
+A scan is a step you can describe in one line. Members at one platform completed 34,000 scans in 2025.
+
+If the member experience sits with someone else, point me to them. Otherwise here is my calendar: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Sebastian,Kuss,https://linkedin.com/in/sebastian-kuss,YEARS,Head of Medical Operations & Governance,,,"Hi Sebastian,
+
+Your title joins medical operations and governance at YEARS, which makes record quality your concern. Each home scan arrives with a date and 80+ body measurements, taken in the same guided way every time.
+
+What does a measurement need before your doctors will discuss it with a member?
+
+Olena","Hi Sebastian,
+
+I can walk through how scan data is stored and deleted: photos are deleted after processing or within 30 days, and outputs are deletable by scan ID. FitXpress is not a medical device.
+
+Send me a time: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Nick,Lenten,https://linkedin.com/in/nlenten,Ahead Health,Founder & CEO,,,"Hi Nick,
+
+Your headline, Building Europe's health OS, made me look at the Ahead Health member offer.
+
+FitXpress takes a front and a side photo and gives 80+ body measurements, which could become one more part of that offer.
+
+What would you want a member to feel about Ahead Health a few months after the first check?
+
+Olena","Hi Nick,
+
+The capture runs under Ahead Health's name, and the programme chooses what a member sees.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Book a call here to see how the capture would look under the Ahead Health name: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Vinsensius,Vega,https://linkedin.com/in/vinsensius-vega,Ahead Health,Co-Founder & CTO,,,"Hi Vinsensius,
+
+Ahead Health holds member data in an online health report, which makes integration the first question for any new input.
+
+FitXpress ships web and mobile SDKs, with a REST API and API-key authentication behind them. A front and a side photo go through it and give 80+ body measurements.
+
+Would your team use the API from the Ahead Health backend, or embed an SDK in the front end?
+
+Olena","Hi Vinsensius,
+
+On a call I can show how the SDK handles a scan session and where the API key sits.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Tell me a day that suits you, or pick one here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Alice,Conques,https://linkedin.com/in/alice-conques,Zoī,COO,,,"Hi Alice,
+
+Coming from health teams at Google and DeepMind, you will ask what a new Zoī member step costs operations. A two-photo scan on a member's own phone returns 80+ body measurements, taken at home between check-ups.
+
+Which parts of the concierge's week depend most on the yearly check-up date?
+
+Olena","Hi Alice,
+
+The scan adds no concierge task by default, since a member does it alone with guided steps.
+
+Tell me a day that works for you: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Paul,Dupuy,https://linkedin.com/in/pauldupuy89,Zoī,Co-Founder,,,"Hi Paul,
+
+You co-founded Workwell and Never Eat Alone before Zoī, and you know how fast a small product team moves. A Zoī member could do a two-photo scan from a web link, with no app update, and get 80+ body measurements.
+
+When Zoī adds something for members, how do you choose between the app and a link?
+
+Olena","Hi Paul,
+
+A link is the lightest way to try the scan, since the member needs only a phone camera, and one platform has recorded 34,000 scans in 2025.
+
+Tell me when to show you: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Jérôme,Salomon,https://linkedin.com/in/pr-jerome-salomon,Zoī,Chief Medical and Science Officer,,,"Hi Jérôme,
+
+As a former French Director General for Health, you know how preventive medicine is judged. A Zoī physician could look at 80+ body measurements from a member's home scan, taken from two photos. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+Which measurements would a Zoī physician want from a member at home, if any?
+
+Olena","Hi Jérôme,
+
+For preventive medicine judged on evidence, the scan gives a Zoī physician measurements taken the same guided way each time, and the physician decides which scans to compare. FitXpress is not a medical device.
+
+My calendar is here whenever you wish: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Joanna,Bensz,https://linkedin.com/in/joanna-bensz-205b315,Longevity Center Poland,Founder and CEO,,,"Hi Joanna,
+
+Your headline is about turning advanced science into working clinics.
+
+Longevity Center members follow a personal plan at home or in the centre. FitXpress gives each of them 80+ body measurements from two phone photos, in the same steps wherever they are.
+
+How do you see members keeping up their plan at home between check-ins?
+
+Olena","Hi Joanna,
+
+For a clinic group, the same phone steps give every member the same experience. 3DLOOK has worked with 100+ clients.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+I would be glad to show the flow, pick a time here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Dariusz,Soldacki,https://linkedin.com/in/dariusz-soldacki-md-phd-a178b819,Longevity Center Poland,Medical Director,,,"Hi Dariusz,
+
+You were Scientific Director at Longevity Center before becoming Medical Director.
+
+After the 360 assessment, a doctor and a team follow each member's plan. A member can send a front and a side photo from home, and FitXpress returns 80+ body measurements together with body composition estimates.
+
+Which measurements would you want your team to see from a member between check-ins?
+
+Olena","Hi Dariusz,
+
+Your team chooses which scans to compare, and a member can repeat a scan whenever the team asks. At one platform alone, 34,000 scans were logged in 2025.
+
+FitXpress is not a medical device.
+
+A conversation shows it best: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Peter-Paul,Leeuw,https://linkedin.com/in/peterpaul-deleeuw,Blue Health Intelligence,Co-Founder & Co-CEO,,,"Hi Peter-Paul,
+
+Amberscript turns audio into structured text, and FitXpress does something similar with body photos.
+
+From a front and a side photo it returns 80+ body measurements, and Blue Health Intelligence could offer that in the Blue app.
+
+Which new capability would you add to the Blue app first, if one were on the table?
+
+Olena","Hi Peter-Paul,
+
+White-label SDKs keep the Blue look, and the same API can serve a link for members without the app. 3DLOOK has worked with 100+ clients.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+I am happy to show how it looks inside an app: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Leanne,Verdonck,https://linkedin.com/in/leanne-verdonck-a643b474,Blue Health Intelligence,Co-founder & CMedO,,,"Hi Leanne,
+
+You worked in a GP practice before co-founding Blue Health Intelligence.
+
+A member who takes a scan at home gives the Blue care team 80+ body measurements and body composition estimates, each saved with its date and time. The care team decides which scans to look at.
+
+What body information would you want in front of you when a member asks how things are going?
+
+Olena","Hi Leanne,
+
+A repeated scan is only useful if it agrees with the last one. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+FitXpress is not a medical device.
+
+If you would like to see a sample scan record, here is my calendar: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Katerina,Vrbova,https://linkedin.com/in/kate%c5%99ina-vrbov%c3%a1-22bb7620a,Concierge Medicine Europe,Chief Operating Officer,,,"Hi Katerina,
+
+You started as VIP Concierge Manager and now run operations at Concierge Medicine Europe.
+
+Each scan reaches your team as 80+ body measurements, with no equipment to maintain at the practice.
+
+The scan itself is quick, at under 45 seconds from the photos to structured results.
+
+How does your team prepare a member for a task they do alone at home?
+
+Olena","Hi Katerina,
+
+Your team stays on the service side: every member gets the same guided steps, and nobody from the practice needs to be there.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+I can show the steps in a few clicks: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Mariana,Wohlfahrtova,https://linkedin.com/in/mariana-wohlfahrtova-0555b276,Concierge Medicine Europe,Medical Director P4,,,"Hi Mariana,
+
+You are a general practitioner and nephrologist who now directs the Prague 4 site of Concierge Medicine Europe.
+
+A member's scan taken at home reaches your doctors with a date and time, and your doctors choose which scans to open. FitXpress needs a front and a side photo and gives 80+ body measurements and body composition estimates.
+
+Which body measurements, if any, would help your doctors at a visit?
+
+Olena","Hi Mariana,
+
+Each doctor can choose whether a scan joins a visit at all. 3DLOOK has worked with 100+ clients.
+
+FitXpress is not a medical device.
+
+Would you like to see a sample record? Book a time here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Haif,Rood-Nawzad,https://linkedin.com/in/haif-rood,Prescan,CEO,,,"Hi Haif,
+
+As CEO of Prescan, you decide what a client gets after the examination day. A specialist already goes through everything on the day, and the online portal stays open.
+
+A link sent to the client's phone could add a home scan. Two photos return 80+ body measurements and body composition estimates.
+
+What would you want clients to be able to do at home after the examination day?
+
+Olena","Hi Haif,
+
+A home scan would give a Prescan client something to do after the examination day, from a link on their phone. 3DLOOK has worked with 100+ clients.
+
+Shall we find a time to look at it together? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Henrik,Forsberg,https://linkedin.com/in/henrik-forsberg-96637ba3,Werlabs,CEO,,,"Hi Henrik,
+
+Werlabs gets in touch with a member when it is time for the next yearly health check.
+
+That message could also point to a two-photo scan, which gives 80+ body measurements.
+
+What would you want a member to do in the Werlabs journal in the weeks before the next check?
+
+Olena","Hi Henrik,
+
+A member can act on a reminder at once, because the scan needs only a phone. 3DLOOK has worked with 100+ clients.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+I would be glad to talk, calendar here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Baptiste,Debever,https://linkedin.com/in/bdebever,Lucis,Founder & CTO,,,"Hi Baptiste,
+
+Your line about hiring to build the European preventive health platform stood out. FitXpress has web and mobile SDKs, and a member scans with two photos to get 80+ body measurements inside your own screens.
+
+Which framework is the Lucis app built on?
+
+Olena","Hi Baptiste,
+
+Privacy usually comes second: photos are deleted after processing or within 30 days, and outputs are stored and deletable by scan ID.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+A call to go through the SDK docs: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Philippine,Breuil,https://linkedin.com/in/philippine-breuil-a0aa41119,Lucis,Head of Growth & Marketing,,,"Hi Philippine,
+
+Marketing a twelve-month plan means explaining what a member does each month. A home scan from two photos, with 80+ body measurements, is one concrete step a member could do in the Lucis app.
+
+Which part of the plan is hardest to explain when you market Lucis?
+
+Olena","Hi Philippine,
+
+A scan screen inside the Lucis app gives marketing a concrete step to describe, and one platform handled 34,000 scans in 2025.
+
+If this sits with the product team, point me to them. Otherwise pick a time here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Max,Berthelot,https://linkedin.com/in/maximeberthelot,Lucis,Founder,,,"Hi Max,
+
+As a founder with a growth background, you probably think about why a member returns to an app. A Lucis member on the twelve-month plan could add a home scan from two photos, with 80+ body measurements behind it.
+
+Which moment in the plan do members open the Lucis app most?
+
+Olena","Hi Max,
+
+A scan step can appear in the Lucis app at the moment in the plan you pick, and Lucis chooses which measurements a member sees. 3DLOOK has worked with 100+ clients, and the capture flow is familiar ground for us.
+
+I can sketch it for the Lucis app: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Pierre,Gimat,https://linkedin.com/in/pierre-gimat,Lucis,Head of Operations,,,"Hi Pierre,
+
+Running operations at Lucis means planning around members who choose their own follow-up panel date. Between the baseline and that date, a member could take a two-photo scan on their own phone and get 80+ body measurements.
+
+How do you plan your team's load when each member picks the follow-up date?
+
+Olena","Hi Pierre,
+
+A home scan can fill the wait before a follow-up panel without a booking on your side.
+
+Here is my calendar if you want to see the flow: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Sylvain,Pace,https://linkedin.com/in/sylvain-pace-it-engineer,Lucis,Founding Engineer,,,"Hi Sylvain,
+
+Lucis members follow a doctor-reviewed plan for twelve months in the app, and a home scan from two photos could be one more step in it. It reaches the app through an API or SDK and brings 80+ body measurements.
+
+What does adding a new member feature look like on the Lucis backend?
+
+Olena","Hi Sylvain,
+
+I would like to talk about the scan with whoever decides what the Lucis app adds next.
+
+If that is not you, a pointer to that person helps as much. If it is you, here is my calendar: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Hugo,Maury,https://linkedin.com/in/mauryhugo,Lucis,Founding Designer,,,"Hi Hugo,
+
+Lucis shows members a doctor-reviewed plan and a follow-up panel in the app, and design decides what each month looks like. A capture of two photos, front and side, brings 80+ body measurements and could be one screen in that flow.
+
+Which member screen in the Lucis app took you longest to get right?
+
+Olena","Hi Hugo,
+
+If a capture screen ever comes up at Lucis and someone else owns that decision, tell me who. A call would show how it looks on a phone: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Marwan,Mashra,https://linkedin.com/in/marwanmashra,Lucis,Founding Lead AI Engineer,,,"Hi Marwan,
+
+Your R&D work at Jumbo Mana and your role as founding lead AI engineer at Lucis make you the person for the model side. From two photos, FitXpress provides 80+ body measurements and body composition estimates as structured data over an API.
+
+Which checks does a new data source pass before it enters the Lucis app?
+
+Olena","Hi Marwan,
+
+I can show the API responses and the body composition fields inside them.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Pick a time to go through them: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Eugenia,Rodriguez,https://linkedin.com/in/merodriguezmd,Lucis,Product,,,"Hi Eugenia,
+
+You worked on clinical AI at Mediktor and now on clinical product at Lucis, where a doctor reviews each plan. FitXpress gives body composition estimates, such as body fat % and lean mass, and 80+ body measurements from two photos.
+
+What would a Lucis doctor want from a member in the months after the plan starts?
+
+Olena","Hi Eugenia,
+
+A Lucis doctor would read the measurements, and you decide which ones appear in the app. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+Calendar to see a prototype flow: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Leo,Tuil,https://linkedin.com/in/leo-tuil,Lucis,Founding Engineer,,,"Hi Leo,
+
+Your years at AirStrip give you a view on mobile health apps. Lucis members use the app for results and a doctor-reviewed plan, and a home scan from two photos, with 80+ body measurements, would need only a camera in a browser or an app.
+
+Which phones and browsers does the Lucis app have to support?
+
+Olena","Hi Leo,
+
+Browser and phone support is the first thing I would walk through on a call.
+
+If the member app has an owner who decides this, point me to them. Calendar: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Kevin,Najafi,https://linkedin.com/in/kevin-najafi-685254303,Loovi,"Cofounder, COO & Medical Director",,,"Hi Kevin,
+
+You are both COO and Medical Director at Loovi, where members can chat with the health team between check-ins.
+
+A member could send a front and a side photo, giving the team 80+ body measurements and body composition estimates, dated by scan.
+
+What does the team look at today when a member writes in?
+
+Olena","Hi Kevin,
+
+Between check-ins the health team already talks with members, and a scan gives that conversation a measurement to start from. All 3DLOOK customers together completed 112,100 scans in 2025.
+
+FitXpress is not a medical device.
+
+A call would show the details: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Joel,Grajcer,https://linkedin.com/in/joelgrajcer,Loovi,Co-founder & CEO,,,"Hi Joel,
+
+Your headline speaks of a new era of health intelligence at Loovi.
+
+A Loovi member gets a personal plan after a doctor consultation. The Loovi app could ask for a front and a side photo and show 80+ body measurements.
+
+What is the next thing you would like a Loovi member to do at home?
+
+Olena","Hi Joel,
+
+The SDKs allow your team to design the whole screen the member sees. 3DLOOK has worked with 100+ clients.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+If you want to see a live flow, here is my calendar: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Arian,Vassili,https://linkedin.com/in/arian-vassili,Loovi,CTO,,,"Hi Arian,
+
+Loovi keeps member data on its own platform, and a new data source raises storage questions first.
+
+FitXpress is called with an API key and returns 80+ body measurements from a front and a side photo. Photos are deleted after processing or within 30 days.
+
+Which retention window would you pick for photos on the Loovi platform?
+
+Olena","Hi Arian,
+
+I can show the exact API calls and the deletion options for the Loovi platform.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Choose a time in my calendar: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Bruno,Marco-Dufort,https://linkedin.com/in/bruno-marco-dufort-224358162,AYUN,Head of Operations,,,"Hi Bruno,
+
+Came across your work in operations at AYUN. Between check-ups, each member's personal protocol runs at home, away from the clinic's daily routine.
+
+A member follows a guided sequence on whatever phone they have, with a front and a side photo, and gets 80+ body measurements back. A scan runs under 45 seconds from the photos to structured results.
+
+How does your team stay in touch with members between check-ups today?
+
+Olena","Hi Bruno,
+
+Every member would follow the same steps on any phone, which keeps extra work for your team low.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+If rollout planning is on your desk, a call can be booked here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Natalia,Trpchevska,https://linkedin.com/in/natalia-trpchevska,AYUN,Medical & Scientific Director,,,"Hi Natalia,
+
+Your move from translational scientist to Medical and Scientific Director at AYUN puts you close to how each member's protocol evolves. Between assessments, that work continues at the member's home.
+
+A member sends two photos from the phone, and the scan returns 80+ body measurements such as waist and hip, each dated. Your clinicians choose which scans to compare.
+
+What would you want to see from a member at home between two assessments?
+
+Olena","Hi Natalia,
+
+A clinician who compares two scans needs to know what counts as a real change. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+FitXpress is not a medical device.
+
+I would be glad to show it on a call, whenever suits you: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Ertan,Wittwer,https://linkedin.com/in/ertanwittwer,CARE Preventive,Co-Founder & Co-CEO,,,"Hi Ertan,
+
+At care, results and recommendations stay in the care app for long-term monitoring of values. A member could add a home scan from two photos there, giving 80+ body measurements between check-ups.
+
+Which feature would you add to the care app first, if you could pick one?
+
+Olena","Hi Ertan,
+
+The scan could sit in the care app under care's own branding, and care decides what each member sees.
+
+Pick a time that suits you: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Roman,Walser,https://linkedin.com/in/roman-walser-154512255,CARE Preventive,Medical Director,,,"Hi Roman,
+
+You hold a CAS in Digital Health and work in preventive medicine at care. A member's home scan gives 80+ body measurements from two photos, and repeatability matters for a doctor: for most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+Which follow-up conversations with a member would a home measurement help?
+
+Olena","Hi Roman,
+
+A doctor at care could read body composition estimates, such as body fat % and lean mass, next to the measurements, and choose which scans to compare. FitXpress is not a medical device.
+
+My calendar is here if you wish to see it: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Ion,Haab,https://linkedin.com/in/ionhaab,CARE Preventive,Co-Founder,,,"Hi Ion,
+
+You spent years in consulting and then in commercial roles at Singular before co-founding care. A member could take a two-photo scan at home between check-ups. Each scan runs under 45 seconds from the photos to structured results.
+
+Where in the care member offer would you put a home scan, if you put one anywhere?
+
+Olena","Hi Ion,
+
+A home scan lets care add to the member offer without adding a visit.
+
+I can show it on a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Julien,Montier,https://linkedin.com/in/julien-montier,CARE Preventive,Salesforce Director & Co-founder,,,"Hi Julien,
+
+You run Salesforce at care, which means you know what a new data source costs. FitXpress is an API with key authentication, and each scan from two photos returns 80+ body measurements as structured data, deletable by scan ID.
+
+What would a scan record need to carry to fit the member data you hold in Salesforce?
+
+Olena","Hi Julien,
+
+Each scan comes back keyed by scan ID, which can map to the member's record in Salesforce. Photos are deleted after processing or within 30 days.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Book a technical walkthrough here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Pauline,Sauvaget,https://linkedin.com/in/pauline-sauvaget,CARE Preventive,Head of Finance & Operations,,,"Hi Pauline,
+
+Your headline says you scale preventive healthcare at care, and the member journey between check-ups is probably on your list. A member can take a two-photo scan on their own phone and get 80+ body measurements, without a visit.
+
+Which step between two check-ups needs the most coordination in your team today?
+
+Olena","Hi Pauline,
+
+The scan adds no appointment and no equipment: the member does it alone with guided steps, which takes one coordination step out of the weeks between check-ups.
+
+Is this yours, or can you point me to the person who runs the care app? Calendar: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Elisabetta,Reggio,https://linkedin.com/in/elisabetta-tata-reggio-07b31847,Longevia Medical Clinic,General Manager,,,"Hi Elisabetta,
+
+As General Manager of Longevia Medical Clinic, you see how the Longevia Protocol goes on after the one-day check-up, through the member's dialogue with the team.
+
+A member can start a scan from a web link on any phone. Two photos give 80+ body measurements such as waist and hip.
+
+How do Longevia members stay in touch with their Longevity Specialist between periodic checks today?
+
+Olena","Hi Elisabetta,
+
+A link sent after the check-up would let a member add a body record from home, ready for the next conversation with the Longevity Specialist.
+
+Tell me what day suits you, or take a slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Christoph,Schnedlitz,https://linkedin.com/in/christophschnedlitz,Mavie Work,Chief Executive Officer,,,"Hi Christoph,
+
+Your aim to make Mavie Work the most impactful corporate health provider in CEE stood out to me.
+
+FitXpress takes two photos on a phone and gives each employee 80+ body measurements and body composition estimates, at home.
+
+Which part of the Mavie Work offer should employees reach for between on-site prevention checks?
+
+Olena","Hi Christoph,
+
+A home step gives Mavie Work employers one more thing to offer employees in the weeks between prevention checks.
+
+I can show it next to Mavie Move if you pick a time: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Jasmin,Cohen,https://linkedin.com/in/jasmin-cohen2,Mavie Work,Head of Growth,,,"Hi Jasmin,
+
+Your headline, ThereIsNoBodyB, made me think of a home scan that starts from each employee's own body.
+
+Mavie Work already has on-site prevention checks and the daily Mavie Move programme. A scan at home adds a first step without an appointment, with waist and hip among its 80+ body measurements.
+
+What is the first thing an employee does after joining a Mavie Work programme?
+
+Olena","Hi Jasmin,
+
+At one platform, people took 34,000 scans in 2025, which shows that a phone scan can become an everyday step.
+
+I would like to show how it could start the Mavie Move journey: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Cezar,Neaga,https://linkedin.com/in/cezarneaga,Mavie Work,Head of Engineering,,,"Hi Cezar,
+
+As Head of Engineering at Mavie Next, you decide how a new capability enters a product.
+
+FitXpress offers web and mobile SDKs for the photo capture and a REST API, secured by API key, for the 80+ body measurements.
+
+Would your team use the API from its own backend or open the capture through a web SDK?
+
+Olena","Hi Cezar,
+
+Photos are deleted after processing or within 30 days, and outputs are stored and deletable by scan ID.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+If you want to go through the integration points, pick a slot: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Nicolas,Haffner,https://linkedin.com/in/nicolas-haffner-a5783460,Mavie Work,Medical Director,,,"Hi Nicolas,
+
+As a specialist in orthopaedics and trauma, and an osteopath, you see patients in person, and Mavie Med could also see them at home.
+
+From two phone photos, your care team gets 80+ body measurements, and body composition comes as estimates.
+
+Which body measurements would your team find useful between a patient's visits?
+
+Olena","Hi Nicolas,
+
+Your team can compare two scans of a patient and judge the difference. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+FitXpress is not a medical device. I would be glad to show a sample record: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Andreas,Weiss,https://linkedin.com/in/andreas-weiss-66642b68,Mavie Work,Managing Director,,,"Hi Andreas,
+
+Your marketing strategy years at Accenture Song and Ebiquity make me curious how you think about uptake in Mavie Work.
+
+A scan at home turns two photos into 80+ body measurements and estimates such as body fat % and lean mass, between prevention checks.
+
+What brings an employee back to Mavie Work after the first check?
+
+Olena","Hi Andreas,
+
+An employee gets a concrete reason to open Mavie Work again between checks: their own body fat % and lean mass estimates.
+
+If that is useful for the employer offer, my calendar is here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Lukas,Mayrl,https://linkedin.com/in/lukas-mayrl-7093029b,Mavie Work,Managing Director,,,"Hi Lukas,
+
+Brand and venture building is your field. Your view on one idea for Mavie Work would help me.
+
+A phone scan gives an employee 80+ body measurements from two photos.
+
+How would you want a Mavie Work employee to feel after finishing a scan?
+
+Olena","Hi Lukas,
+
+The scan flow is white-label, which allows Mavie Work to frame the steps and the wording in its own brand voice.
+
+If you want to see how the flow looks on a phone, pick a time: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Ondrej,Gandel,https://linkedin.com/in/ondrejgandel,Mavie Work,Managing Director,,,"Hi Ondrej,
+
+You moved from CTO to Managing Director at Mavie Next. That gives you a view of both the build side and the business side of new health ventures.
+
+FitXpress is a white-label scan that a venture adds through API or SDKs. Two photos go in, and 80+ body measurements and body composition estimates come back.
+
+When Mavie Next builds a new health business, which parts do you prefer to bring in from partners?
+
+Olena","Hi Ondrej,
+
+Your engineers keep their time for the venture itself, because 3DLOOK maintains the capture flow and the body model.
+
+If a build-or-partner conversation makes sense, here is my calendar: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Doris,Busek-Baum,https://linkedin.com/in/doris-busek-baum-7606b4131,Mavie Work,Head of Operations,,,"Hi Doris,
+
+Your team manages the coaches and advisers behind Mavie Work's programmes.
+
+An employee does the scan alone at home, and an adviser can discuss the 80+ body measurements in the next conversation.
+
+How does your team prepare coaches and advisers when a new tool joins a programme?
+
+Olena","Hi Doris,
+
+Employees scan on their own phones, which keeps a rollout simple for your advisers, and the programme decides which body measurements a coach discusses with them.
+
+I can walk through a rollout plan with you: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Lea,Paradzik,https://linkedin.com/in/lea-paradzik,Mavie Work,Head of Product MavieMe,,,"Hi Lea,
+
+MavieMe lets people look after their health from home, with online doctor consultations.
+
+A phone scan could be one more home step in MavieMe: two photos give a person 80+ body measurements.
+
+Which step in MavieMe would you like a person to finish from the phone alone?
+
+Olena","Hi Lea,
+
+A person using MavieMe could bring a body record from home into an online consultation, taken from two photos.
+
+Shall I walk you through a MavieMe example? Times are here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Megha,Bhola,https://linkedin.com/in/drmeghabhola,Mavie Work,Product Manager,,,"Hi Megha,
+
+As Product Manager at Mavie Next, you scope what members can do in a new product.
+
+A member takes a front photo and a side photo on any phone, and the product receives 80+ body measurements.
+
+When you scope a Mavie Next feature, what can you ask a person to do alone on their phone?
+
+Olena","Hi Megha,
+
+Your team can build the step on 3DLOOK's web or mobile SDKs and skip drafting a capture flow.
+
+Grab a time and I will show the flow on a phone: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Christoph,Bodenstein,https://linkedin.com/in/christophbodenstein,Mavie Work,"Head of Product, Mavie Next",,,"Hi Christoph,
+
+Your headline says you build digital health products at Mavie Next, and a body scan is one that can be added quickly.
+
+A member opens a link in the browser and takes two photos, and the product receives 80+ body measurements.
+
+For a new Mavie Next venture, what is the fastest route you have found to put a feature in front of members?
+
+Olena","Hi Christoph,
+
+A link-based scan lets your team test an idea with members before any deeper integration.
+
+Here is my calendar if you want to see a demo: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Vera,Brockherde,https://linkedin.com/in/vera-brockherde-9a8240126,Mavie Work,Product Manager,,,"Hi Vera,
+
+As Product Manager for digital health at Mavie, you shape what members do day to day.
+
+A phone scan gives a member 80+ body measurements from two photos, a concrete starting point between check-ups.
+
+Which content in Mavie's digital health products do members use most when they ask what to do next?
+
+Olena","Hi Vera,
+
+A body record could sit next to coaching content and give members a starting point for what to read next.
+
+If the corporate programme team at Mavie Work is the better contact, point me to them, otherwise here is my calendar: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Andrea,Grandits,https://linkedin.com/in/andrea-grandits-42782b101,Mavie Work,"Head of Operations | Coach Management, Product Specialist Physical Wellbeing",,,"Hi Andrea,
+
+Your headline, ""Gesund geht's besser"", fits the coach work you lead at Mavie.
+
+A scan at home gives a member 80+ body measurements from two photos, which a coach can talk through when a member trains alone.
+
+What do Mavie's coaches work from when a member trains on their own between checks?
+
+Olena","Hi Andrea,
+
+A coach could open the next session with a member's 80+ body measurements and talk through what changed in the member's own routine.
+
+If you would like to see a sample, book a time here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Victoria,Sobulska,https://linkedin.com/in/victoria-sobulska-b5b7a0167,Mavie Work,Co-Founder/Venture Builder,,,"Hi Victoria,
+
+As a Mavie co-founder, you decide which capabilities a new venture builds itself.
+
+The scan is white-label and comes through API or SDKs: a person takes two photos and the venture receives 80+ body measurements.
+
+Which capability do you most often have to source from outside when a Mavie venture launches?
+
+Olena","Hi Victoria,
+
+A Mavie venture could offer its members a body record from launch day, with the scan as an existing capability.
+
+Tell me which venture to start with, and I will show the scan in that context: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Janine,Wagenlechner,https://linkedin.com/in/janine-wagenlechner,Mavie Work,Head of Operations Physical Well-Being,,,"Hi Janine,
+
+You have worked in medical training therapy and at Therme Wien. Physical well-being is home ground for you.
+
+A member photographs front and side with the same guided steps on any phone, and the programme receives 80+ body measurements.
+
+What does a Mavie member do for their physical well-being on days without a coach session?
+
+Olena","Hi Janine,
+
+Members follow the same steps on every phone, and your team needs no extra equipment for the scan.
+
+I can show the member's view in a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Vedran,Bijelac,https://linkedin.com/in/vedran-bijelac-00472714a,Mavie Work,Deputy Managing Director - Mavie Subsidiary,,,"Hi Vedran,
+
+Your headline speaks of building better futures in health and care, and Mavie runs prevention checks for employers while building new health businesses.
+
+A person at home takes two photos, and your offer gains 80+ body measurements to work with.
+
+As Deputy Managing Director, which questions about the Mavie offer reach your desk most often?
+
+Olena","Hi Vedran,
+
+A home scan could extend the Mavie offer into the months between prevention checks. 3DLOOK has worked with 100+ clients.
+
+If you want to look at where it fits, you can book time here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Johanna,Resch,https://linkedin.com/in/johanna-resch-connect,Mavie Work,Innovation Catalyst / Product Management,,,"Hi Johanna,
+
+As Innovation Catalyst at Mavie Next, you help ideas reach real members.
+
+A test group takes two photos each, and your idea gets 80+ body measurements to react to.
+
+What does Mavie Next test first when an idea needs real users?
+
+Olena","Hi Johanna,
+
+A first test group shows you which body measurements members look at first, and that guides what you build next.
+
+If someone else at Mavie Next handles pilots, I would be glad to talk to them: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"

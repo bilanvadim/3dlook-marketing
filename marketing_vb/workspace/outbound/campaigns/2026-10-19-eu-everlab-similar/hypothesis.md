@@ -69,6 +69,14 @@ Vadim, verbatim: «1. апрув 2. всых 3. знымаэмо 4. добрат
 1. **Circle Health held out of the send:** circle.health ceased practice operations at the end of August 2026 due to insolvency ([closure notice, 2026-08-31](https://www.circle.health/en/newsroom/closure), checked twice on 2026-10-21). Vadim's lift (step-4 checkpoint, 3) came before this was known. Peter Malmqvist and Theresa Spiegelberger are FAIL ("company closed") in `decisions.md`, so 92 people go to step 5 instead of 94; Vadim can reverse it.
 2. **Felix Harder promoted with the 7 WEAK:** he was in the Apollo list Vadim approved (Aeon CMO) and Vadim took every WEAK; his headline also names Quartz Healthcare.
 
+## Vadim's decisions 2026-10-21 (2): messages
+
+Vadim, verbatim: «1. апрув 2. лишаэмо 3.ок».
+
+1. **The texts for 92 people are approved** (messages QC 10 → 15/20 after fix rounds, round 4 verified mechanically) → `closelyhq-import.csv`, 92 rows, registry record for `olena` (92 people, 22 companies).
+2. **CARE stays written "care"** in copy, as the brand writes itself.
+3. **Blue Health Intelligence stays;** its on-site 3D scan is never mentioned in copy.
+
 ## What the closest accounts taught this campaign
 
 > 1. **Everlab declined** (AU): the founder called it interesting tech that they are not looking at right now (`2026-08-14-au-digital-fitness/responses-summary.md`).

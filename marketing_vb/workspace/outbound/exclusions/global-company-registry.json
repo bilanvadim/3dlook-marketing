@@ -2476,6 +2476,182 @@
       "product": "fitxpress",
       "date": "2026-10-19",
       "status": "active"
+    },
+    "aeon": {
+      "display_name": "Aeon",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-19-eu-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "ahead-health": {
+      "display_name": "Ahead Health",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-19-eu-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "axo-longevity": {
+      "display_name": "Axo Longevity",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-19-eu-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "ayun": {
+      "display_name": "AYUN",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-19-eu-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "blue-health-intelligence": {
+      "display_name": "Blue Health Intelligence",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-19-eu-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "care-preventive": {
+      "display_name": "CARE Preventive",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-19-eu-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "concierge-medicine-europe": {
+      "display_name": "Concierge Medicine Europe",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-19-eu-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "hello-inside": {
+      "display_name": "Hello Inside",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-19-eu-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "kor": {
+      "display_name": "Kor",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-19-eu-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "longevia-medical-clinic": {
+      "display_name": "Longevia Medical Clinic",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-19-eu-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "longevity-center-poland": {
+      "display_name": "Longevity Center Poland",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-19-eu-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "loovi": {
+      "display_name": "Loovi",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-19-eu-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "lucis": {
+      "display_name": "Lucis",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-19-eu-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "macromo": {
+      "display_name": "Macromo",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-19-eu-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "mavie-work": {
+      "display_name": "Mavie Work",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-19-eu-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "mdconcierge": {
+      "display_name": "MDConcierge",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-19-eu-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "prescan": {
+      "display_name": "Prescan",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-19-eu-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "preventicum": {
+      "display_name": "Preventicum",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-19-eu-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "speak23": {
+      "display_name": "speak23",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-19-eu-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "werlabs": {
+      "display_name": "Werlabs",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-19-eu-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "years": {
+      "display_name": "YEARS",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-19-eu-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
+    },
+    "zo": {
+      "display_name": "Zoī",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-19-eu-everlab-similar",
+      "product": "fitxpress",
+      "date": "2026-10-19",
+      "status": "active"
     }
   }
 }
