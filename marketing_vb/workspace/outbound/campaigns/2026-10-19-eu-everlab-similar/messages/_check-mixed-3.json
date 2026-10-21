@@ -1,0 +1,9 @@
+{
+ "campaign": "2026-10-19-eu-everlab-similar",
+ "checked": 8,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-3",
+ "generated": "2026-10-21T14:04:55",
+ "hard": [],
+ "soft": []
+}

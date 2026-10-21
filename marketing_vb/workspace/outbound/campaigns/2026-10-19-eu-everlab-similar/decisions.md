@@ -78,8 +78,8 @@ victoria-sobulska-b5b7a0167 | PASS | 2 | partnership | 1 | Co-founder and ventur
 janine-wagenlechner | PASS | 2 | operations | 1 | Head of Operations Physical Well-Being at Mavie, runs the physical programme a body scan belongs to.
 vedran-bijelac-00472714a | PASS | 2 | product | 1 | Deputy Managing Director of a Mavie subsidiary, co-decides the health offer.
 johanna-resch-connect | PASS | 3 | product | 1 | Innovation and product management at Mavie, junior, so P3.
-peteremalmqvist | PASS | 2 | product | 1 | Co-founder of circle.health (Berlin), now cleared by Vadim's waiver; P2 because his profile reads as founding investor and he sits in Barcelona.
-theresa-spiegelberger | PASS | 2 | operations | 1 | Head of Medical Operations at circle.health with an operations and BD background, runs the programme between assessments.
+peteremalmqvist | FAIL | | | | company closed: circle.health ceased practice operations at the end of August 2026 due to insolvency (closure notice 2026-08-31, checked 2026-10-21 by the coordinator); held for Vadim
+theresa-spiegelberger | FAIL | | | | company closed: circle.health ceased practice operations at the end of August 2026 due to insolvency (closure notice 2026-08-31, checked 2026-10-21 by the coordinator); held for Vadim
 seithe | PASS | 1 | product | 1 | CEO and founder of Aeon, decides what members get between full-body scans.
 puntschuh | PASS | 1 | clinical | 1 | Chief Medical Officer of Aeon, decides what the care team reviews between scans.
 drfelixharder | WEAK | | clinical | 1 | Apollo lists him as Aeon's CMO in Munich, which fits its Germany expansion, but his headline says COO at Quartz Healthcare, so his current employer is unclear.
@@ -104,3 +104,5 @@ peterpaul-deleeuw | PASS | 1 | product | 1 | Co-founder and co-CEO of Blue Healt
 leanne-verdonck-a643b474 | PASS | 1 | clinical | 1 | Co-founder and Chief Medical Officer of Blue Health Intelligence, owns clinical follow-up.
 kate%c5%99ina-vrbov%c3%a1-22bb7620a | PASS | 2 | operations | 1 | COO of Concierge Medicine Europe, runs client service between assessments.
 mariana-wohlfahrtova-0555b276 | PASS | 2 | clinical | 1 | Medical Director of the Prague 4 site of Concierge Medicine Europe; site level, so P2.
+
+<!-- coordinator 2026-10-21: pr-jerome-salomon name fixed in people-validated.csv (Apollo gave first "Prof", last "Jerome"; LinkedIn slug and profile = Prof. Jérôme Salomon) -->

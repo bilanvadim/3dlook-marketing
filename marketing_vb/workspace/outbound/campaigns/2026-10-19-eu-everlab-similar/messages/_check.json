@@ -1,0 +1,235 @@
+{
+ "campaign": "2026-10-19-eu-everlab-similar",
+ "checked": 92,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": null,
+ "generated": "2026-10-21T14:05:27",
+ "hard": [],
+ "soft": [
+  [
+   "no company line",
+   "magdalena-winnicka-b08972313 M1",
+   "«Longevity Center Poland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "joanna-bensz-205b315 M1",
+   "«Longevity Center Poland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "dariusz-soldacki-md-phd-a178b819 M1",
+   "«Longevity Center Poland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "ertanwittwer M1",
+   "«CARE Preventive» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "roman-walser-154512255 M1",
+   "«CARE Preventive» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "ionhaab M1",
+   "«CARE Preventive» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "julien-montier M1",
+   "«CARE Preventive» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "pauline-sauvaget M1",
+   "«CARE Preventive» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "cezarneaga M1",
+   "«Mavie Work» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "nicolas-haffner-a5783460 M1",
+   "«Mavie Work» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "ondrejgandel M1",
+   "«Mavie Work» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "lea-paradzik M1",
+   "«Mavie Work» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "drmeghabhola M1",
+   "«Mavie Work» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "christophbodenstein M1",
+   "«Mavie Work» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "vera-brockherde-9a8240126 M1",
+   "«Mavie Work» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "andrea-grandits-42782b101 M1",
+   "«Mavie Work» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "victoria-sobulska-b5b7a0167 M1",
+   "«Mavie Work» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "janine-wagenlechner M1",
+   "«Mavie Work» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "vedran-bijelac-00472714a M1",
+   "«Mavie Work» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "johanna-resch-connect M1",
+   "«Mavie Work» is not named: check it has a line only this company gets"
+  ],
+  [
+   "near-duplicate sentence",
+   "Preventicum: hannah-whitcombe-b2b35866 / gemmafrenchman",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Preventicum: hannah-whitcombe-b2b35866 / leo-glauberman-56657316",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Preventicum: gemmafrenchman / leo-glauberman-56657316",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Axo Longevity: octavia-seymour / andrew-mccarthy-impact-entrepreneur",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Ahead Health: dennishermann / svenjaeschke",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Ahead Health: dennishermann / nlenten",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Ahead Health: dennishermann / vinsensius-vega",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Ahead Health: svenjaeschke / nlenten",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Ahead Health: svenjaeschke / vinsensius-vega",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Ahead Health: nlenten / vinsensius-vega",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MDConcierge: massimo-pietracaprina-a528951 / fabio-benevolo-399b832",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Werlabs: peter-roland-737ab34 / simon-lindgren-269102a4",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Werlabs: peter-roland-737ab34 / henrik-forsberg-96637ba3",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Werlabs: simon-lindgren-269102a4 / henrik-forsberg-96637ba3",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Blue Health Intelligence: onnohuyghe / peterpaul-deleeuw",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Macromo: michal-pohludka-56223939 / oliks",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Macromo: michal-pohludka-56223939 / evakuttichova",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Macromo: oliks / evakuttichova",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Concierge Medicine Europe: wschleuter / kate%c5%99ina-vrbov%c3%a1-22bb7620a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Kor: sophie-agosta / sroze",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Kor: sophie-agosta / khadija-benmansour-2535b7a8",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Kor: sroze / khadija-benmansour-2535b7a8",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aeon: pablo-tano-a39a15164 / serge-weydert",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Lucis: bdebever / marwanmashra",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Loovi: joelgrajcer / arian-vassili",
+   "«in most enterprise deployments, the customer acts…»"
+  ]
+ ]
+}

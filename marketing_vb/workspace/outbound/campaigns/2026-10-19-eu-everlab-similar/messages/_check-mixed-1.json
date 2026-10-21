@@ -1,0 +1,45 @@
+{
+ "campaign": "2026-10-19-eu-everlab-similar",
+ "checked": 32,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-1",
+ "generated": "2026-10-21T14:05:00",
+ "hard": [],
+ "soft": [
+  [
+   "no company line",
+   "ertanwittwer M1",
+   "«CARE Preventive» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "roman-walser-154512255 M1",
+   "«CARE Preventive» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "ionhaab M1",
+   "«CARE Preventive» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "julien-montier M1",
+   "«CARE Preventive» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "pauline-sauvaget M1",
+   "«CARE Preventive» is not named: check it has a line only this company gets"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aeon: pablo-tano-a39a15164 / serge-weydert",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Lucis: bdebever / marwanmashra",
+   "«in most enterprise deployments, the customer acts…»"
+  ]
+ ]
+}

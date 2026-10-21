@@ -1,0 +1,70 @@
+{
+ "campaign": "2026-10-19-eu-everlab-similar",
+ "checked": 17,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mavie-work",
+ "generated": "2026-10-21T14:04:58",
+ "hard": [],
+ "soft": [
+  [
+   "no company line",
+   "cezarneaga M1",
+   "«Mavie Work» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "nicolas-haffner-a5783460 M1",
+   "«Mavie Work» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "ondrejgandel M1",
+   "«Mavie Work» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "lea-paradzik M1",
+   "«Mavie Work» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "drmeghabhola M1",
+   "«Mavie Work» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "christophbodenstein M1",
+   "«Mavie Work» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "vera-brockherde-9a8240126 M1",
+   "«Mavie Work» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "andrea-grandits-42782b101 M1",
+   "«Mavie Work» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "victoria-sobulska-b5b7a0167 M1",
+   "«Mavie Work» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "janine-wagenlechner M1",
+   "«Mavie Work» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "vedran-bijelac-00472714a M1",
+   "«Mavie Work» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "johanna-resch-connect M1",
+   "«Mavie Work» is not named: check it has a line only this company gets"
+  ]
+ ]
+}
