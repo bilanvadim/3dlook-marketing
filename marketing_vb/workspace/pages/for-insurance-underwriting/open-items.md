@@ -32,7 +32,12 @@ A yes on naming would materially strengthen the deployment block.
 **2026-10-21, live page:** the copy still names nobody, but the release added the site's logo strip
 ("Trusted by healthcare, digital health & remote-care teams": BeMap, Burlington Medical, Erakulis, Healthyr,
 Knosis, UK Meds, Warrior Consultants, Yazen), which includes the three names the insurance deck lists under
-NDA. Recorded here, not decided.
+NDA.
+
+**Logos: CLOSED 2026-10-21. Vadim: «логотипи ми можемо використовувати на сайті».** Client logos may be
+used on the website, which matches the 2026-09-27 rule (`docs/page-pipeline.md`: clients agree to logos,
+not to public case studies). The strip stays. Naming a customer in the page copy, as a case or a quote, is
+still not approved.
 
 ## 3 · The ISO benchmark figures are missing from `proof-points.md` — Vadim
 

@@ -17,7 +17,8 @@ published: 2026-10-21
 >
 > **How the live page differs from `page-final-2026-10-02.md`:**
 > 1. **URL at the root**, not the planned `/fitxpress/for-insurance-underwriting/` (that URL is a 404).
->    The GTM `fx_vertical` lookup was written for the `/fitxpress/` path, so it needs a row for the live path.
+>    **Vadim, 2026-10-21: «перенесемо в фітекспрес згідно плану. це помилка.»** The page moves to
+>    `/fitxpress/for-insurance-underwriting/` with a 301 from the root URL. The steps are at the top of `TODO.md`.
 > 2. **Yoast title and meta description are the v1 values from 2026-08-31** ("Body Data for Life Insurance
 >    Underwriting | FitXpress"), not the final ones. The title is missing the focus keyphrase
 >    `accelerated underwriting`.
@@ -27,7 +28,8 @@ published: 2026-10-21
 > 5. **The demo buttons scroll to `#form`**, not `#demo`. The form is the shared `FX | LP | Demo`
 >    (`11acb23a-e81c-46ee-bb23-4d47a0ef0125`).
 > 6. **A logo strip, "Trusted by healthcare, digital health & remote-care teams"**: BeMap, Burlington Medical,
->    Erakulis, Healthyr, Knosis, UK Meds, Warrior Consultants, Yazen. See open item 2 on customer naming.
+>    Erakulis, Healthyr, Knosis, UK Meds, Warrior Consultants, Yazen. **Fine: Vadim, 2026-10-21, client logos
+>    may be used on the website** (open item 2).
 >
 > FAQ (4 questions) and the `Service` + `FAQPage` JSON-LD match the final copy.
 >

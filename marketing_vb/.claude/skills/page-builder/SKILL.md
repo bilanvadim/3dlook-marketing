@@ -172,7 +172,7 @@ not reach Phase 4.
 levels. FAQ built from `faq.md` and real vertical objections, phrased the way a buyer asks. A
 comparison or criteria table where the topic allows — structured blocks are what AI search quotes.
 Schema per the Kit. **Only two pages on this site ship FAQPage and Service schema today** — the
-telehealth page and, since 2026-10-21, `/for-insurance-underwriting/` — while `/mobile-tailor/for-uniforms/` has eleven visible answers and no markup at
+telehealth page and, since 2026-10-21, the insurance landing — while `/mobile-tailor/for-uniforms/` has eleven visible answers and no markup at
 all. Copy the telehealth page's graph; it is the cheapest win available here.
 
 **5. UI/UX.** Run `references/ux-pass.md`. `DESIGN.md` decides tokens — Satoshi, `#143DFF` as the

@@ -69,7 +69,7 @@ Each industries card currently links to a live article. Switch the link when the
 | Telehealth and GLP-1 | `/structured-body-data-for-telehealth-digital-health-programs/` | `/fitxpress/for-telehealth-…/` when rebuilt (301) |
 | Online pharmacies | `/for-bmi-verification/` | `/fitxpress/for-online-pharmacies/` when rebuilt (301) |
 | Connected fitness | `/fitxpress/for-connected-and-digital-fitness/` | stays; fix its breadcrumb (`?page_id=36425`, 404) |
-| Life insurance | `/content-hub/mobile-body-scanning-insurance-underwriting/` | `/for-insurance-underwriting/`: **live since 2026-10-21, switch now** |
+| Life insurance | `/content-hub/mobile-body-scanning-insurance-underwriting/` | `/fitxpress/for-insurance-underwriting/` (the page is live; it moves there from the root URL with a 301) |
 | Employer wellness and health plans | `/content-hub/wellness-rewards-verification-employers-insurers-using-ai-3d-body-scanning/` | `/fitxpress/for-{wellness slug}/` |
 | Occupational health | `/content-hub/occupational-health-screening-software/` | `/fitxpress/for-occupational-health/` |
 | Clinical trials | `/content-hub/clinical-trial-anthropometric-measurement-software-obesity-trials/` | `/fitxpress/for-clinical-trials/` |
@@ -77,8 +77,8 @@ Each industries card currently links to a live article. Switch the link when the
 
 Note: `workspace/pages/for-insurance-underwriting/` was drafted 2026-08-31 at the old root URL
 `/for-insurance-underwriting/`; under the 2026-09-27 hierarchy it belongs at `/fitxpress/for-…/`.
-It went live on 2026-10-21 at the root URL anyway, and `/fitxpress/for-insurance-underwriting/` is a 404.
-Link the card to the live URL. Whether it moves later (with a 301) is open in that page's `TODO.md`.
+It went live on 2026-10-21 at the root URL by mistake. Vadim, 2026-10-21: it moves to
+`/fitxpress/for-insurance-underwriting/` with a 301, as planned. The steps are in that page's `TODO.md`.
 
 ## 5. Nice to have
 

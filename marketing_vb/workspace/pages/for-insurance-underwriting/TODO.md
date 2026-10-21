@@ -11,33 +11,45 @@ date: 2026-08-31
 
 Done on 2026-10-21: in `page-sitemap.xml`, indexed by Google with a self canonical, linked from the main
 menu, shared form `11acb23a` embedded, live text captured in `published-live-2026-10-21.md`,
-`landing-map.md` switched the Hub 4 row to `live`.
+`landing-map.md` marks the Hub 4 row as live at the wrong URL.
 
-- [ ] **GTM `fx_vertical`: add the row `/for-insurance-underwriting/` → `insurance`.** The lookup in the
-      phase-0 runbook (step 0.10 §3) and the tracking spec (B2.5) listed `/fitxpress/for-insurance-underwriting/`,
-      and Page Path matches exactly. Without the row, leads from this page arrive with an empty `fx_vertical`.
-      **Owner: Asselya (GTM).**
-- [ ] **Test lead from the page** per runbook 0.10 §6, `test+fx-insurance@3dlook.me`: `form_name = fx_lp_demo`,
-      `fx_vertical = insurance`, UTM fields filled. **Owner: Asselya.**
+Decided by Vadim on 2026-10-21: the root URL is a mistake, and the page moves to `/fitxpress/` as planned.
+Client logos may be used on the website, so the logo strip stays.
+
+- [ ] **Move to `/fitxpress/for-insurance-underwriting/`, with a 301 from `/for-insurance-underwriting/`.**
+      Do it now, while the page has one day of history. **Owner: Asselya + developer.**
+      1. WordPress: give the page the same parent as the fitness landing (its breadcrumb points at
+         `?page_id=36425`) and keep the slug `for-insurance-underwriting`.
+      2. 301 from `/for-insurance-underwriting/` to `/fitxpress/for-insurance-underwriting/`.
+      3. Point the main menu item "Life Insurance Underwriting" at the new URL directly, not through the 301.
+      4. JSON-LD: today the page's graph holds 14 references to the root URL. After the move none may remain,
+         in `@id`, `url` or the breadcrumb.
+      5. Check that the Yoast canonical is the new URL and that `page-sitemap.xml` lists the new URL, not the old one.
+      6. Search Console: inspect the new URL and request indexing. The old one should turn into "Page with
+         redirect" within days.
+      7. Breadcrumb Home → FitXpress → FitXpress for Insurance Underwriting comes with the parent. Its
+         FitXpress crumb repeats the fitness page's bug (`?page_id=36425`, a 404) until `/fitxpress/` ships.
+- [ ] **GTM `fx_vertical`: two rows, both `insurance`:** `/fitxpress/for-insurance-underwriting/` (the plan's
+      row, needed for the move) and `/for-insurance-underwriting/` (the page lives there until the move).
+      Page Path matches exactly, so without the root row today's leads arrive with an empty `fx_vertical`.
+      Then send a test lead per runbook 0.10 §6 from the URL the page is on, `test+fx-insurance@3dlook.me`:
+      `form_name = fx_lp_demo`, `fx_vertical = insurance`, UTM fields filled. **Owner: Asselya (GTM).**
 - [ ] **Yoast title and meta description to the final values** (`page-final-2026-10-02.md` → Yoast). The live
       title is the 2026-08-31 v1 one, without `accelerated underwriting`, which is the keyword rank tracking
       watches for this page (`rank-keywords.csv`, US, target 5). **Owner: Asselya.**
 - [ ] **"9 vs 27" source label**: change "Gen Re, Next Gen Underwriting Survey" to the LIMRA study its link
       points to. **Owner: Asselya.**
-- [ ] **Breadcrumb**: Home → FitXpress → FitXpress for Insurance Underwriting, as in the final copy. **Owner: Asselya.**
 - [ ] **Down link from the hub article** `/content-hub/mobile-body-scanning-insurance-underwriting/`
-      (landing-map rule 6). Today its body links only to `/for-bmi-verification/` ("BMI/build verification");
-      the landing is reachable from it only through the menu. Add one in-body link in the first 30%, anchor
-      "accelerated underwriting" or "build and BMI evidence for underwriting". It is the only published
-      article in Hub 4. **Owner: Asselya.**
-- [ ] **llms.txt on the site** (Last updated 2026-09-18) does not list the page. The repo draft
-      (`workspace/research/seo-fitxpress-2026-09/2026-09-27-llms.txt`) has the line now. **Owner: Asselya.**
-- [ ] **Root or `/fitxpress/`?** The page went live at the root while the 2026-09-27 hierarchy puts FX
-      verticals at `/fitxpress/for-{vertical}/`. A later move needs a 301 and a Search Console baseline.
-      **Owner: Vadim, Asselya.**
+      (landing-map rule 6), to the `/fitxpress/` URL once the page has moved. Today its body links only to
+      `/for-bmi-verification/` ("BMI/build verification"), and the landing is reachable from it only
+      through the menu. Add one in-body link in the first 30%, anchor "accelerated underwriting" or "build
+      and BMI evidence for underwriting". It is the only published article in Hub 4. **Owner: Asselya.**
+- [ ] **llms.txt on the site** (Last updated 2026-09-18) does not list the page. Add it with the `/fitxpress/`
+      URL after the move; the line is in the repo draft
+      (`workspace/research/seo-fitxpress-2026-09/2026-09-27-llms.txt`). **Owner: Asselya.**
 - [ ] **`#demo` anchor.** Articles are told to link `{landing}#demo`; this page answers to `#form`.
       Either add `id="demo"` to the form block or keep `#form` (landing-map now says `#form` for this row).
-- [ ] **Search Console at 30 and 90 days** (2026-11-20, 2027-01-19): item 20 below.
+- [ ] **Search Console at 30 and 90 days after the move**: item 20 below.
 
 > **Blind judge: 69 / 85, gate not taken. Weakest axis proof of belonging, 10 / 20. One hard fail:
 > fewer than two case studies from this vertical.** Same fact that failed G-I. Detail in

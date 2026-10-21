@@ -27,3 +27,10 @@ embedded. `/fitxpress/for-insurance-underwriting/` returns 404. The live text wa
 the follow-ups at the top of `TODO.md`. The release was recorded in `landing-map.md`, `site-inventory.md`,
 `page-types.md`, the phase-0 runbook and tracking spec (GTM row), the llms.txt draft, the FitXpress parent
 TODO, the insurance use-case file and `blog-style-guide.md`.
+
+**2026-10-21 · Vadim's decisions after the release**
+
+1. «перенесемо в фітекспрес згідно плану. це помилка.» The root URL is a mistake, and the page moves to
+   `/fitxpress/for-insurance-underwriting/` with a 301. The steps are in `TODO.md`. Until the move,
+   `landing-map.md` keeps the root URL as "Link now", with a relink line in the article's Open items.
+2. «логотипи ми можемо використовувати на сайті.» The logo strip stays, and open item 2 is closed for logos.

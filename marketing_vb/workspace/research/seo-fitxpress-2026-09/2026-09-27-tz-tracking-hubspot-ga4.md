@@ -136,7 +136,7 @@ updated: 2026-09-29 — одна форма на все FX-лендинги, `fx
    | `/fitxpress/for-connected-and-digital-fitness/` | `fitness` |
    | `/fitxpress/for-telehealth/` и старый `/structured-body-data-for-telehealth-digital-health-programs/` | `telehealth` |
    | `/fitxpress/for-glp-1-programs/` | `glp1` |
-   | `/for-insurance-underwriting/` (опубликован 21.10 в корне; при переезде добавить и `/fitxpress/for-insurance-underwriting/`) | `insurance` |
+   | `/fitxpress/for-insurance-underwriting/` и, до переезда (21.10 страница по ошибке вышла в корне), `/for-insurance-underwriting/` | `insurance` |
    | `/fitxpress/for-wellness-programs/` | `wellness` |
    | `/fitxpress/for-bariatric-programs/` (URL changed 2026-10-16) | `bariatric` |
    | `/fitxpress/for-clinical-trials/` | `clinical_trials` |
