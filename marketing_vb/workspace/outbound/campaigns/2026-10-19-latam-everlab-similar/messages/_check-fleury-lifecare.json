@@ -1,0 +1,9 @@
+{
+ "campaign": "2026-10-19-latam-everlab-similar",
+ "checked": 20,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "fleury-lifecare",
+ "generated": "2026-10-21T12:01:49",
+ "hard": [],
+ "soft": []
+}
