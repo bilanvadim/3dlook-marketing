@@ -13,3 +13,9 @@ Start here: `spec-2026-10-21.md` (Ukrainian), then `page-2026-10-21.md` (copy, E
 **Checks run:** `detect-ai-tells.py --channel page` on the copy: 0 hard bans, density 0.0; remaining flags are deliberate (H1 without a product name on a company page; GLP-1, IDs, IEEE left unexpanded). Prototype screenshots (jpeg in this folder): 1440 full page, 1440 with the Use cases menu open, 1280 stress test (6 cards), 390 full page; no horizontal scroll at 390 after the grid `min-width:0` fix; hero + CTA inside 1280×800.
 
 **Not done / waiting:** open items O-1…O-10 in the spec (Wrist card with Sales, head/hand card, awards, logos, privacy scope for MT/Wrist, new form, Sign in, /developers/, visuals, comparison table). Nothing committed or sent.
+
+## 2026-10-21 · Figma
+
+Prototype imported into Figma as editable layers (no screenshot images): https://www.figma.com/design/6qdzFiKR1VWXYrD4zciVyK (file «3DLOOK Homepage v1 (2026-10-21)», 3Dlook inc org). One page «Homepage v1 (2026-10-21)» with two 1440 px frames: `2:2` homepage with the 3 live products, `3:2` stress test with 6 products (2 fictional, layout check only). Imported with the official Figma plugin (`html_to_figma`) from a static render of `page-2026-10-21.html` (prototype bar and notes removed, step numbers as text, closed FAQ answers hidden).
+
+Known gaps: Satoshi is not available to the Figma agent, so text is set in Inter (swap the font in Figma, or upload Satoshi to the org fonts); layers are plain frames and text, not 3DLOOK-website components; no mobile frame yet (see `screenshot-390-full.jpeg`).
