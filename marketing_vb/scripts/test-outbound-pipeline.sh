@@ -713,6 +713,25 @@ check "created 2026-10-08, no key: referral without a link -> 1" 1 $OP check-mes
 mutate "referral_call: no opts out" "$CAMP/$P/hypothesis.md" '^profile:' 'referral_call: no\nprofile:'
 check "referral_call: no on a new campaign -> 0" 0 $OP check-messages --campaign $P
 mv "$CAMP/$P/hypothesis.md.bak" "$CAMP/$P/hypothesis.md"
+# 2026-10-21 (eu-everlab-similar): the rules said "No integration-time figure" and the card
+# still offered icp-detail's "2-4 weeks"; 4 technical M2s used it
+$OP card --campaign $P --for messages >/dev/null 2>&1
+grep_check "without a ban the card offers the integration figure" "Integration, for the technical-integration angle only" \
+  cat "$CAMP/$P/card-messages.md"
+cp "$CAMP/$P/hypothesis.md" "$CAMP/$P/hypothesis.md.bak"
+mutate "an integration-time ban in the rules" "$CAMP/$P/hypothesis.md" '^## Rules for steps 3-5$' \
+  '## Rules for steps 3-5\n\n- No integration-time figure.'
+check "card for messages with the ban -> 0" 0 $OP card --campaign $P --for messages
+grep_check "a banned integration figure leaves the card" "^0$" grep -c "Time-to-integrate" "$CAMP/$P/card-messages.md"
+grep_check "and the card says it is banned" "ban an integration-time figure" cat "$CAMP/$P/card-messages.md"
+mv "$CAMP/$P/hypothesis.md.bak" "$CAMP/$P/hypothesis.md"
+cp "$CAMP/$P/hypothesis.md" "$CAMP/$P/hypothesis.md.bak"
+mutate "a Message 1-only ban" "$CAMP/$P/hypothesis.md" '^## Rules for steps 3-5$' \
+  '## Rules for steps 3-5\n\n- No integration-time figure in Message 1.'
+$OP card --campaign $P --for messages >/dev/null 2>&1
+grep_check "a Message 1-only ban keeps the figure for Message 2" "Message 2 only" cat "$CAMP/$P/card-messages.md"
+mv "$CAMP/$P/hypothesis.md.bak" "$CAMP/$P/hypothesis.md"
+$OP card --campaign $P --for messages >/dev/null 2>&1
 cp "$B" "$B.good"
 mutate "the number out of a pair" "$B" ' One platform ran 34,000 scans in 2025\.' ''
 check "a pair with no number, in a campaign that demands one -> 1" 1 $OP split-messages --campaign $P --in messages/_batch-all.md

@@ -815,6 +815,18 @@ def bullets_about(section: str, word: str) -> str:
     return "\n".join(keep)
 
 
+def integration_time_rule(text: str) -> str | None:
+    """"ban" when the hypothesis forbids an integration-time figure, "m1" when only in
+    Message 1, None when it says nothing. Hypotheses word it as "No integration-time
+    figure", "No integration time, market … figures", "no integration-time figure in
+    Message 1"."""
+    hits = [m.group(0) for m in re.finditer(r"(?i)\bno\b[^.\n]{0,30}?\bintegration[- ]time"
+                                            r"[^.\n]*", text)]
+    if not hits:
+        return None
+    return "m1" if all(re.search(r"(?i)message 1|\bM1\b", h) for h in hits) else "ban"
+
+
 def build_card(cdir: Path, stage: str) -> str:
     text, fm = hypothesis_of(cdir)
     profile = profile_of(cdir, fm)
@@ -906,12 +918,19 @@ def build_card(cdir: Path, stage: str) -> str:
                 "photos, how fast), and the pair carries at least one number from this section",
                 "or one the campaign rules clear by name.", "",
                 demote("\n\n".join(f for f in facts if f)), ""]
-        if tti:
+        tti_rule = integration_time_rule(text)
+        if tti and tti_rule == "ban":
+            # 2026-10-21 (eu-everlab-similar): the rules said "No integration-time figure",
+            # this block still offered "2-4 weeks", and 4 technical M2s used it.
+            out += ["Integration time: the campaign rules ban an integration-time figure. "
+                    "No duration in any message.", ""]
+        elif tti:
             # The old wording ("A generic figure, never a promise for this company.") read as
             # a sentence and was pasted into copy word for word on 2026-10-02. Keep this an
             # instruction to the writer, with nothing quotable after the figure.
-            out += [f"Integration, for the technical-integration angle only (icp-detail.md): "
-                    f"{tti.group(1)}", "",
+            scope = ("for the technical-integration angle only, Message 2 only"
+                     if tti_rule == "m1" else "for the technical-integration angle only")
+            out += [f"Integration, {scope} (icp-detail.md): {tti.group(1)}", "",
                     "(Writer's instruction, not copy: call it typical for a basic integration; "
                     "do not present it as this company's timeline.)", ""]
         comp = pi / "compliance.md"
