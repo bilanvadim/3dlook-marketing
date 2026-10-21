@@ -10,6 +10,7 @@
 - Server-to-server integration
 - Authentication: API key
 - Returns: 80+ measurements, BMI, BMR, fat %, lean mass, fat mass, predicted 3D model, validation messages, Smart Scales (beta)
+- **Public wording (Vadim, 2026-10-21):** pages say "Smart Scales" with no "(beta)" label.
 
 ### SDKs
 

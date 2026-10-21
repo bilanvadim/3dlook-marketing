@@ -17,9 +17,9 @@ status: draft-v2
    deployment limit and add it to the higher-weight FAQ. It is not on the page yet: the API documentation
    is not a `proof-points.md` source (round-2 judge hard fail), so the confirmed limit goes into
    `proof-points.md` first.
-3. **Smart Scales status (product).** `tech-spec.md` labels it beta, and the page says "(beta)" in the
-   record table, the pre-qualification block and the queue mock. The live `/pricing/` lists "Predicted weight" with no label. If it is no
-   longer beta, drop the label everywhere at once.
+3. ~~**Smart Scales status (product).**~~ Resolved 2026-10-21 (Vadim, GLP-1 v4 review): pages say
+   "Smart Scales" with no "(beta)" label. Drop "(beta)" from the record table, the pre-qualification block
+   and the queue mock; Nika was told in the GLP-1 thread.
 
 ## Placeholders (search `[PLACEHOLDER]`)
 
