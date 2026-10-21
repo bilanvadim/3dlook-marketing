@@ -1,0 +1,79 @@
+apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,last_refreshed_at,status
+63c92fc11b757800015e4de5,Andres,Ca***o,Co-founder & CEO,Humanolab,humanolab.ai,Humanolab,2026-10-16T00:55:48.545+00:00,candidate
+606bcad518cddf00018581c3,Pascal,Vi***s,Cofounder & COO,Humanolab,humanolab.ai,Humanolab,2026-09-28T11:33:55.462+00:00,in-sales-nav
+63405726c1f9b200017b15c6,Cristina,Qu***o,Co-Founder,Humanolab,humanolab.ai,Humanolab,2026-10-12T09:12:36.000+00:00,in-sales-nav
+5e796110c3a6f700011915eb,Diego,Os***a,Co-Founder - GTM,Zentum,zentum.com,Zentum,2026-10-14T15:54:29.000+00:00,in-sales-nav
+5e6e90217bc5f40001afba6c,Felipe,Ca***l,"Co-Founder, Product & Marketing",Centeni,centeni.com.br,Centeni,2026-10-07T21:07:01.000+00:00,candidate
+57d583fca6da9853e64f36fb,Pedro,He***n,Founding Designer,Centeni,centeni.com.br,Centeni,2026-09-21T11:33:17.000+00:00,candidate
+5fa413bc435216000112a3e1,Vitor,Sa***a,Founding Engineer,Centeni,centeni.com.br,Centeni,2026-10-06T14:24:09.000+00:00,candidate
+63591f8b4ce31e00010e09a6,Lucy,Wa***e,Coordenadora Médica,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-10-07T09:10:24.000+00:00,candidate
+60c1cf135672bc0001cd9d2a,Lilian,Ro***a,Coordenadora Médica - Dermatologista,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-10-02T00:54:20.754+00:00,candidate
+61181cd16a8b800001314e09,Jeane,Ts***i,CEO,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-10-06T05:04:14.000+00:00,in-sales-nav
+6099d518bb3c750001ba6348,Maria,Ha***r,Coordenadora Médica do Atendimento,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-10-09T00:41:13.000+00:00,candidate
+57e066b0a6da981be9e2b4ac,Eduardo,Go***s,Coordenador Médico do Trabalho,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-10-15T05:07:08.000+00:00,candidate
+54a47cbf746869344267754b,Gustavo,Gu***s,Business Director | Operations Director,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-09-24T06:14:03.000+00:00,in-sales-nav
+5e825f0eb56450000144ef12,Paulo,Mt,Coordenador Médico do Trabalho,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-10-15T16:29:31.000+00:00,candidate
+60c263add6d137000188bf85,Alessandro,Fe***a,Diretor Executivo Comercial e Marketing,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-10-14T19:36:12.653+00:00,candidate
+63514df55b285f000134794d,Marcelo,Ni***o,Diretor Executivo - Plataforma Fleury Ortopedia,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-09-07T07:32:42.000+00:00,in-sales-nav
+611d3687ffa19c0001d94252,Joao,Al***a,Diretor Executivo de TI e Digital,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-10-14T17:13:51.011+00:00,candidate
+54a2baad74686938253bf238,David,Bi***n,Medical Coordinator,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-10-13T18:09:17.000+00:00,candidate
+652db95abf34670001197ed9,Eduardo,St***a,Medical Coordinator,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-09-19T22:48:21.000+00:00,candidate
+635939bc13d2ed0001efb9bc,Marco,Mi***l,Coordenador Médico de Telemedicina - Grupo Fleury,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-09-17T09:44:17.000+00:00,candidate
+648063dbdac5bc00011a1bba,Viviane,Go***s,Coordenadora Médica no Grupo Fleury (a+/Diagmax),Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-09-17T07:46:30.000+00:00,candidate
+64fc4498477ad40001ebf774,Rodrigo,Me***r,Head of Engineering,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-10-07T23:55:43.000+00:00,in-sales-nav
+54a5c5fc74686932092b53a7,Eliane,Do***o,Coordenadora Médica RM/TC - Amais Medicina e Saude,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-09-22T12:30:41.000+00:00,candidate
+57ddda1ba6da987af1232f4c,Eduardo,To***a,Coordenador Médico do Grupo de Ultrassonografia Fleury,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-09-07T07:28:28.000+00:00,candidate
+62a389ed8598df000173ac05,Pedro,Pi***o,Coordenador Médico de Atenção Primária à Saúde,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-09-08T01:11:19.000+00:00,candidate
+57dba2d5a6da98688b645f48,Romulo,Re***s,Medical Director,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-10-15T15:32:20.346+00:00,candidate
+57e156cda6da987d94b474c3,Marcio,Bo***r,MD,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-09-19T01:26:24.000+00:00,candidate
+65435fe3feef430001a78c68,Marcio,An***e,MD,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-10-16T19:47:37.742+00:00,candidate
+612116503acf480001d8ee83,Leticia,Le***e,Product Manager,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-09-08T03:29:05.000+00:00,candidate
+54c179d07468697af7e5b014,Aline,Va***i,Product Manager,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-09-08T09:59:44.000+00:00,candidate
+66a6980f47467d00016046e3,Andressa,Ar***o,Coordenador Relacionamento Médico,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-10-08T21:56:23.000+00:00,candidate
+6536294a5ff5200001901802,Elizabeth,Zoe,General Manager,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-09-16T14:53:22.000+00:00,candidate
+610839ded7df750001459284,Carlos,Mo***n,"Diretor de Operações Medicas Rj,es,ba,pe,rn,ma e Administração e Inteligencia Medica",Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-09-07T13:55:10.000+00:00,candidate
+5d6c3881a3ae6118c3293cf8,Fernanda,Ar***o,Group Product Manager,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-09-22T12:27:45.000+00:00,candidate
+674832632812fc000162417a,Luis,Pi***s,Coordenador de Relacionamento Médico,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-10-07T03:39:11.000+00:00,candidate
+60f594ee843a190001b91487,Carina,Pa***k,Operations Manager,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-09-22T19:13:13.000+00:00,candidate
+6357fd5b03a464000174151e,Luis,De***e,Co-coordenador Médico CDI Hospital Alemão Oswaldo Cruz / Fleury Medicina e Saúde,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-10-12T11:28:42.000+00:00,candidate
+609186b01ab4fd0001ef85a4,Marcos,Vi***l,Director Business Operations,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-10-12T05:03:45.000+00:00,in-sales-nav
+54ab6473746869084b017005,Valesca,Pr***s,"Executive Director, VP | People & Culture ; Procurement & Supply Chain ; Operational Excellence",Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-10-05T22:38:26.000+00:00,candidate
+6109ab2d6a3d2c0001fd5a1a,Gislaine,Lu***i,Médica do Trabalho Coordenadora Pcmso,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-10-07T04:48:24.000+00:00,candidate
+5c3e364280f93e3ef964d096,Pedro,Te***o,Coordenador de Relacionamento Médico - Regionais,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-10-06T20:02:16.000+00:00,candidate
+63997affae8e170001d9684d,Jefferson,An***i,Diretor de Negócios e Operações no Grupo Fleury,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-10-07T01:49:25.000+00:00,candidate
+5e6c5ab8f7a82b0001bc7ce2,Anderson,Pe***a,Coordenador de Relacionamento Médico no Grupo Fleury,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-09-17T04:50:28.000+00:00,candidate
+618dfce90a4f3a000195125e,Daniella,Ba***a,"Medical, R&D Director",Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-10-14T21:22:51.368+00:00,candidate
+65300f4250fc7200011b0950,Fabio,Su***n,Lead Product Designer | Estratégia & Gestão de UX,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-10-06T18:41:59.000+00:00,candidate
+64241604f900d80001dc439a,Guilherme,Ma***o,Operational Excellence Senior Manager,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-10-15T20:43:55.000+00:00,candidate
+60a7c3662c96410001ab4ae5,Rendrik,Fr***o,"Executive Director for Strategy, M&A, New Businesses, Innovation, R&D, Sustainability & Marketing at",Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-09-12T04:43:31.964+00:00,candidate
+557147c17369642c115b2900,Marcia,Tu***i,Coordenadora Medica do Grupo de Colposcopia e Histeroscopia - Fleury Medicina e Saude,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-09-07T18:13:37.000+00:00,candidate
+625c1c3142fe46000161322e,Ana,Pa***a,Customer Experience,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-09-22T13:13:08.000+00:00,candidate
+5e7a2f7d912c220001d4aacf,Marjorie,Co***i,Coordenadora Medica,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-09-18T02:25:34.000+00:00,candidate
+6426c6198b45f80001886157,Maria,Ma***o,Coodenador Médico do Trabalho,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-10-08T20:35:48.000+00:00,candidate
+65242de62b248800011542fe,Lucilene,Co***a,Gerente de Saude Corporativa,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-10-07T00:19:33.000+00:00,candidate
+6743c68a31103a00013eb792,Maxine,Vi***a,CAC Sp,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-09-08T02:58:46.000+00:00,candidate
+6954fbb7f855e50001ae91a9,Larissa,An***o,Operations,Grupo Fleury,fleury.com.br,Fleury Lifecare,2026-09-08T04:54:31.000+00:00,candidate
+6795226a0c20fd0001a9e484,Tomas,Be***z,Director General de Clínica,ERA longevity,eralongevity.co,ERA Longevity,2026-10-12T07:15:32.000+00:00,candidate
+66f66b8b9b032d00019a8763,Santiago,Fi***i,Co-Founder,ERA longevity,eralongevity.co,ERA Longevity,2026-09-22T13:01:43.000+00:00,in-sales-nav
+63ce7fb97aa9b90001d3f1e4,Luiz,Ma***e,CEO,Care Club,careclub.com.br,Care Club,2026-10-16T03:38:30.000+00:00,candidate
+613b16484d21eb0001f9964c,Renan,Ma***o,Diretor de Operações na Care Club,Care Club,careclub.com.br,Care Club,2026-10-15T12:28:51.878+00:00,candidate
+6864fc66339e810001646b04,Affreen,Pa***n,Founder,Care Club,careclub.com.br,Care Club,2026-10-17T10:02:32.825+00:00,candidate
+57e0978ca6da981bf1ec9a7a,Luanne,Wa***m,Executive Director,Care Club,careclub.com.br,Care Club,2026-10-07T14:14:04.161+00:00,candidate
+61b47136f118ac00018ec36c,Lucas,Si***i,Operational Manager,Care Club,careclub.com.br,Care Club,2026-09-25T11:35:38.068+00:00,candidate
+6169118b101a4a00014feb44,Murilo,Or***o,Senior Operations Manager,Care Club,careclub.com.br,Care Club,2026-10-12T08:07:37.551+00:00,candidate
+6168f143e8c2360001893e4e,Oleg,Ka***a,Chief Executive Officer,Previva,previva.mx,Previva,2026-09-15T19:14:27.000+00:00,candidate
+611ca5cadb76f20001303c27,Alfredo,Ca***l,"Co-Founder, CEO",Lonvida ® Wellness & Longevity,lonvida.com,Lonvida,2026-10-18T01:45:10.665+00:00,candidate
+67847ea60417e30001ce987a,Yosafat,Mo***o,Medical Director,Lonvida ® Wellness & Longevity,lonvida.com,Lonvida,2026-09-26T07:43:31.127+00:00,candidate
+603d5b5d45419100017b52ba,German,Ll***e,CEO & Founder,AIONIS,aionishealth.com,AIONIS,2026-09-12T03:15:57.000+00:00,in-sales-nav
+5e7cbf90b022e1000186b4ad,Agustin,Ll***e,Co-Founder,AIONIS,aionishealth.com,AIONIS,2026-09-03T05:11:51.000+00:00,in-sales-nav
+6000db9a89d72c0001dcbd71,Ana,Be***t,Brand and Content Manager,Timeless AI,gotimeless.ai,Timeless,2026-09-13T12:30:03.000+00:00,candidate
+61156204e7d6c500011b344d,Franco,La***e,CEO & Co-Founder en,Choiz,choiz.com.mx,Timeless,2026-10-04T11:46:39.829+00:00,candidate
+54a77f2d746869622059683a,Ignacio,D'***o,CPO & Co-Founder,Choiz,choiz.com.mx,Timeless,2026-10-14T17:47:00.000+00:00,candidate
+57e14d91a6da987d64973782,Ailton,Aq***s,Gerente de TI | IT Manager,Med-Rio Check-up,medriocheck-up.com.br,Med-Rio Check-up,2026-10-11T00:23:34.680+00:00,candidate
+6392fea0b82f200001d9c4b4,Marina,An***e,Gerente Médico,Med-Rio Check-up,medriocheck-up.com.br,Med-Rio Check-up,2026-09-16T08:25:53.000+00:00,candidate
+54ec4df5746869431199987b,Cinthia,Fe***z,Gerente Médica,Med-Rio Check-up,medriocheck-up.com.br,Med-Rio Check-up,2026-10-14T11:30:15.000+00:00,candidate
+612a40d001d8cd0001ee4628,Roberta,Be***l,Gerente Médica,Med-Rio Check-up,medriocheck-up.com.br,Med-Rio Check-up,2026-10-09T12:40:24.000+00:00,candidate
+614ee81f46ee04000125d18c,Pedro,Ju***a,Gerente Médico,Med-Rio Check-up,medriocheck-up.com.br,Med-Rio Check-up,2026-10-01T09:48:55.000+00:00,candidate
+67f0e6559380270001908533,Marabel,Ch***a,Head of Marketing,Toma Health,toma.mx,TOMA Health,2025-08-21T09:34:50.827+00:00,candidate
+54a63f0574686932093d35ce,Rowell,Ba***a,Head of Strategic Operations,Toma Health,toma.mx,TOMA Health,2026-10-09T09:16:41.033+00:00,candidate
+6848e54c36334e0001a0d60f,Chaza,Ba***a,Head of Administration,Toma Health,toma.mx,TOMA Health,2026-10-03T23:26:09.000+00:00,candidate
