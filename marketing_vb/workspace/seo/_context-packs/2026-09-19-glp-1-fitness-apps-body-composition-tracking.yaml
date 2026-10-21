@@ -133,20 +133,25 @@ context_pack:
     - id: T-34K
       text: "A weight-loss management platform ran 34,000 FitXpress scans in 2025. It used them for periodic check-in progress tracking, 3D visualization, and body composition context."
       source: "proof-points.md Customer outcomes (2025 scans 34,000, internal customer breakdown); case-studies/yazen.md 'What they use'; decision section 5"
-      note: "PLACEMENT RULE: no link on this sentence and not in the same paragraph as the product-page link. No geography, no customer name. Vadim 2026-09-19: DO NOT NAME YAZEN anywhere (article, meta, alt text, FAQ, publish package). Open item for Vadim in digest: customer sign-off on the use description (the two sentences cut cleanly if wanted)."
+      note: "PLACEMENT RULE: no link on this sentence and not in the same paragraph as the product-page link. No geography, no customer name. Vadim 2026-09-19: DO NOT NAME YAZEN anywhere (article, meta, alt text, FAQ, publish package). Vadim 2026-10-21 (Review 2): KEEP, open item closed."
     - id: T-GUARDRAIL-DXA
       text: "FitXpress is not equivalent to DXA, BIA, or a calibrated scale when the workflow, protocol, or regulatory standard requires those methods."
       source: "accuracy-formulations §1.9 (equivalence rule); current v2 final.md sentence, kept"
-      note: "Verbatim, once. Lead-in sentence (separate): 'Some clinical protocols and research studies require dual-energy X-ray absorptiometry (DXA) or professional bioelectrical impedance analysis (BIA).'"
+      note: "Verbatim, once. Lead-in sentence (separate), since Review 2 (A2): 'Some clinical protocols and research studies require DXA or professional BIA.' DXA and BIA are expanded at first use in Section 3 (second-record sentence)."
 
     - id: T-TABLE
-      text: "Header: What the app receives | What it can show or do | What it should avoid concluding"
+      text: "Header: App displays | Source | Interpretation shown to the member"
       rows:
-        - ["Scale weight and scan estimates", "Display dated trends with the measurement method labeled", "Attribute a change to fat or muscle with certainty"]
-        - ["Circumferences and training history", "Allow a member or coach to review both at a scheduled check-in", "Claim the training program caused a measured change"]
-        - ["A concerning or inconsistent result", "Check capture conditions and offer a route to the care team", "Generate medication or clinical advice"]
-      source: "review-1.md, accepted verbatim by decisions section 3"
-      note: "Place in Section 3 with Image 1. One or two sentences before the table say why it matters to an app team. No sentence after the table restates it."
+        - ["Weight trend", "Member-entered or synced scale reading", "Total weight change"]
+        - ["Waist and other circumferences", "Guided scans", "Measurement changes, subject to capture variation"]
+        - ["Fat and lean mass estimates", "FitXpress estimate from scan measurements", "Estimated trends; lean mass is not muscle mass"]
+        - ["Completed strength sessions and performance", "Fitness app", "Training context alongside the body-data trends"]
+      source: "review-2.md priority edit 3, accepted by review-2-decisions section 4 (cell 'FitXpress calculation' amended per terminology-guardrails 2.13); REPLACES the Review 1 table (archived in v3/final.md)"
+      note: "Section 3, followed by the weight/estimates paragraph, the disagreement paragraph (review capture conditions and earlier readings; no cause from one scan; clinical concerns to the prescribing provider) and the second-record-by-different-method point. Image 1 = annotated mockup of this four-row view."
+    - id: T-WEIGHT-INPUT
+      text: "In this workflow, the app sends the member's current progress-view weight as that optional input with each scan."
+      source: "review-2-decisions section 3 and A1; compliance.md (estimates derived from measurements plus height and optional weight); tech-spec.md (weight input is self-reported when provided)"
+      note: "Section 3, directly after the first T-ESTIMATES sentence. No Smart Scales, no predicted weight."
 
   # ---------------- external sources (verified wording; attribute in words, never in our own voice) ----------------
   external_sources:
@@ -161,11 +166,6 @@ context_pack:
       cite: "2025 joint advisory (ACLM, ASN, OMA, TOS; Mozaffarian et al.), Obesity doi 10.1002/oby.24336, PMID 40445127; priority wording https://www.obesity.org/nutritional-priorities-to-support-glp-1-therapy-for-obesity/"
       verbatim_phrase: "adequate protein intake and strength training to preserve lean mass"
       note: "AMENDED (decisions section 6): say it supports resistance training as part of broader nutritional and medical management, and that an app offering workouts does not, by itself, fulfil all of that guidance. REPLACES 'Strength training is already part of the programs many fitness apps offer.' No training or protein prescription. One link (PubMed record)."
-    - id: EXT-KFF
-      cite: "KFF Health Tracking Poll, fielded 2025-10-27 to 2025-11-02, published 2025-11-14; https://www.kff.org/public-opinion/poll-1-in-8-adults-say-they-are-currently-taking-a-glp-1-drug-for-weight-loss-diabetes-or-another-condition-even-as-half-say-the-drugs-are-difficult-to-afford/"
-      finding: "about one in eight US adults (12%) said they are currently taking a GLP-1 drug, to lose weight or to treat a chronic condition"
-      note: "ONE sentence (decisions section 6, Section 1) and it must say the figure describes US adults generally, not fitness app members. No extrapolation. JAMA Viewpoint (Conte, Hall, Klein) NOT used: unverifiable at the primary source (403)."
-
   # ---------------- NOT to use ----------------
   claims_NOT_to_use_here:
     - "Smart Scales / predicted weight / weight-estimation error margin (the old FX-004, +-3.5%): beta feature, outside this article (decisions G2). Do not introduce it, even in passing."
@@ -243,9 +243,9 @@ context_pack:
   # ---------------- skeleton (decisions section 6; H2 wording is the planner's, in '### Section N.' form) ----------------
   section_skeleton:
     opening: "Member on GLP-1 treatment; what the scale number does and does not show; one link to the AI in Fitness hub; scope note. No 'Short answer' H2."
-    section_1: "Why this is a fitness app question. Strength program plus weight chart leaves training record disconnected from body-change data. EXT-KFF one sentence. One link to glp-1-market, one to visual-progress-tracking-glp1-adherence-retention. No retention claims."
+    section_1: "Why this is a fitness app question. Strength program plus weight chart leaves training record disconnected from body-change data. KFF poll REMOVED (Vadim 2026-10-21, Review 2). Short answer (review-2-decisions section 2) directly after the opening paragraph. One link to glp-1-market, one to visual-progress-tracking-glp1-adherence-retention. No retention claims."
     section_2: "What the evidence says, and what a scan cannot determine. H2 carries 'GLP-1 muscle loss'. EXT-NEELAND, lean mass vs muscle, 'appear to be adaptive', EXT-JOINT-ADVISORY (amended), T-MUSCLE-FUNCTION."
-    section_3: "What to show in a GLP-1-aware fitness progress view. T-TABLE, Image 1 (illustrative), T-ESTIMATES, T-WEIGHT-SOURCE."
+    section_3: "What to show in a GLP-1-aware fitness progress view. T-TABLE (Review 2 table), T-WEIGHT-SOURCE, T-ESTIMATES with T-WEIGHT-INPUT, disagreement paragraph, second record by a different method (moved from Section 5 in Review 2) with the method-comparison link, Image 1 (illustrative)."
     section_4: "How to run comparable check-ins. Baseline (T-BASELINE), cadence (moved from FAQ), capture conditions, review of differences (change-threshold point: smallest difference worth showing depends on observed scan-to-scan variation and the interval; link to the online coaching article), alternative path (FXS-POPULATION first two sentences, plus one sentence: the app can offer manual measurements or a weight-only progress view for members who cannot use standard capture)."
     section_5: "Where FitXpress fits and what to test in a pilot. FXS-OUTPUTS, FXS-SPEED, T-BODY-PROGRESS, integration responsibilities (T-PRIVACY-ROLES, T-RECORDS-ACTORS; replaces the 4-row roles table), measurement limits (FXS-ACCURACY, FXS-REPEAT, T-REPEAT-SCOPE, T-VALIDATION), T-34K (placement rule), T-GUARDRAIL-DXA once, pilot metrics. ADD one contextual link to the fitness product page where the integration workflow is discussed; keep the final CTA too."
     faq: "Short. First: 'Can a mobile body scan measure muscle loss during GLP-1 treatment?' (current wording). Keep a question only if the body does not answer it. 'How often' goes into Section 4. 'Does a fitness app need to know whether a member takes a GLP-1 medication?' may stay, aligned with T-PRIVACY-ROLES."

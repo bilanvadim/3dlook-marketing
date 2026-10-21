@@ -1,8 +1,13 @@
-# QC: 2026-09-19-glp-1-fitness-apps-body-composition-tracking (revision 2)
+# QC: 2026-09-19-glp-1-fitness-apps-body-composition-tracking (revision 3, Review 2 round)
 
-Total: 16/20 (Good). Verdict: ship with notes.
+Total: 16/20 (Good). Verdict: approve with minor fixes (ship with notes).
 
-B and D are taken from the code verdicts (lint FAIL only on the accepted M1 gate for GLP-1 in the H1 and on word count 1749 against a target of 1600 when concept notes are included; detector 0.0/1000; checklist 17/17). A, C and E are my judgment.
+Reviewer: seo-qc (sonnet), input from `scripts/article_package.py qc-prompt`, 2026-10-21. The agent could
+not overwrite the revision 2 report (Write-only, file existed); the coordinator saved its report here
+verbatim in substance. The revision 2 report is in git (commit 93c4d79).
+
+B and D are taken from the code verdicts (lint FAIL only on the accepted M1 gate for GLP-1 in the H1;
+detector 0.0/1000; checklist 17/17; 1,820 words incl. concept lines). A, C and E are judgment.
 
 | Category | Score | Max |
 |---|---|---|
@@ -13,37 +18,55 @@ B and D are taken from the code verdicts (lint FAIL only on the accepted M1 gate
 | E. Position and value | 3 | 4 |
 
 ## A. Plan and intent: 4/5
-All seven outline sections are present and in order. The MOFU intent holds: the CTA is an evaluation link, not a demo button. The vertical boundary holds, with no dosing, no drug names and no muscle assessment.
-- Section 2 does what it promised. "A body scan cannot settle what this research leaves open about muscle" closes the evidence section on the limit.
-- Section 4's five parts (baseline, cadence, capture conditions, review of differences, alternative path) match the plan's "comparable check-ins" promise.
-- Section 5 carries more than its title says. "Where FitXpress fits, and what to test in a pilot" holds the product description, the privacy roles, the repeatability and accuracy figures, the DXA guardrail and the 34K case. The "what to test in a pilot" part is a single closing paragraph. The plan's second half is underweight.
+All seven outline sections are present and in order. Section 2 does not deliver its H2 promise "what a
+scan cannot determine": those limits moved to Section 5.
+
+## B. Facts: 5/5
+Accepted from the code verdict.
 
 ## C. Voice, readability, argument: 2/3
-Sections 1 to 4 have a clear through-line: the scale number is ambiguous, the evidence is unsettled, so the app labels its data, and check-ins are made comparable. That reads like someone who knows the problem.
-- Strong: "The number shows how much weight changed. It does not show whether fat mass, lean mass, or fluid made up the change." This opens plainly and sets up the whole argument.
-- Strong: "Scans spaced closer than the change they are meant to show add records without adding information." This is the voice of someone who has thought about cadence.
-- Weak: Section 5 reads as assembled. Roughly nine paragraphs run one after another, each a separate locked claim: delivery, T-BODY-PROGRESS, records and privacy, repeatability, accuracy, scope, DXA, 34K. The thread between them is thin. The 34K paragraph is stated and dropped, with no link to the pilot that follows. The editor's self-check already admits this.
-- Minor: the Section 1 "Scope note" and the two pointer sentences at the end of the section slow the opening before the argument starts.
-- Hedges are present but not smothering. The KFF sentence ("a figure for adults generally, not fitness app members") is an honest limit.
+The through-line holds: weight does not say what changed; label sources; do not assign a cause. The
+middle reads as assembled from approved lines.
+
+## D. Format: 2/3
+Checklist 17/17. One point off for the lint FAIL on M1 (GLP-1 in the H1), the accepted known failure.
 
 ## E. Position and value: 3/4
-The page takes a position a template would not: a scan estimate is a labeled model output, not a verdict on fat or muscle, and the app should say so in the UI.
-- The three-column table ("What it should avoid concluding") turns a disclaimer into a design rule. A generic page would only list benefits.
-- "Where the prescribing provider already records body composition with DXA or BIA, the app's scans form a second record made by a different method. Each record is best read against its own earlier values." This is a practical insight about two records that do not reconcile.
-- "Repeat completion matters most, because every comparison depends on members scanning again at the planned interval." A real pilot priority.
-- Gap: the pilot paragraph stays abstract. It names no thresholds, no sample, no duration and no decision rule. "Measures the app already records... can be compared with their pre-launch levels" could be written about any feature. The title promises "what to test", and this part is the one a product person would want.
+The article has a position; about 10 minutes of edits. Detector 0.0/1000 (≤ 25% threshold met).
 
-## For agent-improver
-for_agent_improver:
-1. Editor, locked-copy sections: when a section is more than half locked sentences (here Section 5), write one bridging sentence per join that states why the next claim follows from the previous one, not just a topic repeat. Add a closing sentence that ties the 34K case to what the pilot tests.
-2. Writer or planner: give "what to test in a pilot" its own concrete content in the outline (for example, the check-in interval chosen against observed scan-to-scan variation, the repeat-scan completion target, the decision rule for continuing). The outline slot was too generic, so the section came out generic.
-3. Editor: the Section 1 scope note and the two pointer sentences delay the argument. Where the hub owns the boundary, keep the scope note to one sentence and move the pointers to Next steps or the relevant later section.
+## Top findings
+1. "The scan does not measure muscle" repeats four times before Section 5: the short answer, the scope
+   note ("its lean mass estimate is not a measurement of muscle"), the end of Section 2, and the table
+   cell ("lean mass is not muscle mass"); again in the FAQ and Section 5. The scope note carries three
+   disclaimers in one paragraph. Keep one strong place plus the FAQ.
+2. The bridge into the 34K point does not follow: "Before an app commits to periodic check-ins at that
+   scale, it needs to know whether its own members come back for repeat scans." Another platform's
+   scale says nothing about this app's members. Also the join "approximately 96-97%" straight into "not
+   validated accuracy for lean mass". Add connective sentences around locked lines, do not touch them.
+3. Section 2 is unfinished and the pilot is thin. The Neeland ranges ("40% to 60%" vs "approximately 15%
+   or less") come without a conclusion for app design; add one sentence on what the spread means for
+   the display. The pilot reduces to "sets in advance the repeat-completion level"; name 2-3 metrics
+   with an example threshold form. Weak line: "An app that offers workouts can support one part of that
+   guidance."
+
+## What works
+- "A weight chart alone leaves that training record disconnected from body-change data."
+- The "second record made by a different method" idea for DXA/BIA.
+- The "alternative path" block for members who cannot use standard capture.
+- The disagreement paragraph: "weight falls and the waist measurement stays the same".
+
+Minor: the "(Cover) - Concept" line sits inside Section 1; check it is stripped at publication.
+
+## for_agent_improver
+1. Editor: add connectives around verbatim claim lines. Merge "scan does not measure muscle" repeats
+   into the scope note and FAQ.
+2. Outliner/writer: place "what a scan cannot determine" in Section 2, as the plan promises, and draw a
+   conclusion from the 40-60% vs 15% spread.
+3. Writer: give the pilot 2-3 named metrics and an example threshold form instead of "set in advance".
 
 ## coordinator_review
 
 ```
-agreement: ✅ agree (16/20 is fair: sections 1-4 carry the app-team thread; Section 5 is the weakest because ~270 of its words are locked copy the Review 1 decisions required verbatim)
-top_issue: Section 5 joins and a thin pilot slot — fixed in the editor's round-3 fix pass (bridge sentence after the 34,000-scan paragraph, two-sentence pilot decision rule, no new numbers); finding 3 (trim the scope note) declined because review-1-decisions.md §6 keeps the scope note verbatim
+agreement: ✅ agree (16/20 is fair; same score as revision 2, but the Review 2 asks are now in: concrete progress-view table with sources, disagreement paragraph, short answer at the top, reviewer's H1)
+top_issue: Section 2 lost its "what a scan cannot determine" sentence when review-2-decisions §2 allowed cutting the repeat; finding 3a fixed in the editor's QC fix pass (one sentence drawing the conclusion from the Neeland spread). Declined: finding 1 (the short answer, scope note and table cell are reviewer-mandated or locked); finding 2 (the 34K bridge came from the revision 2 QC fix pass, and it states what the app must check about its own members); finding 3b (no approved numbers exist for pilot thresholds; inventing them breaks claims discipline); the "workouts" sentence stays.
 ```
-
-Note for agent-improver: two of the three QC findings trace back to the coordinator's decisions file, not to the writer or editor. Locking many sentences into one section (decisions §4, §5, G3-G5 all landed in Section 5) makes it read as assembled; a decisions file should spread locked copy across sections or leave the editor room for one bridge per join. Also, the decisions file said the reviewer's table needed no fix while row 2 opened with the hard-banned "Let"; the planner caught it.

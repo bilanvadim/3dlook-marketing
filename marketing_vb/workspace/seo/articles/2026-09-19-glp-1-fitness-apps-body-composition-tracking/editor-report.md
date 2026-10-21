@@ -1,14 +1,141 @@
 ---
 slug: 2026-09-19-glp-1-fitness-apps-body-composition-tracking
-stage: edit (Review 1 rewrite, revision 2)
-written: 2026-10-20
+stage: edit (Review 2 edit round, revision 3)
+written: 2026-10-21
 by: seo-editor
-input: draft.md (revision 2), writer-notes.md
-output: final.md (status edited)
-authority: review-1-decisions.md (incl. section A) > plan.md > context pack > review-1.md
+input: final.md revision 2 (= v3/final.md, commit 93c4d79)
+output: final.md revision 3 (status edited)
+authority: review-2-decisions.md > review-1-decisions.md > plan.md > context pack > review-2.md (intent only)
 ---
 
 # Editor report
+
+## Fix pass (coordinator amendments A1 and A2, 2026-10-21)
+
+From review-2-decisions.md, section A. Two body changes; nothing else was touched.
+
+- **A1 (L97).** The weight-input sentence became, verbatim: "In this workflow, the app sends the member's current progress-view weight as that optional input with each scan." It stays in the same place, after T-ESTIMATES sentence 1. This closes judgment call 7 below.
+- **A2 (L135).** The first T-GUARDRAIL-DXA sentence became, verbatim: "Some clinical protocols and research studies require DXA or professional BIA." The second sentence is unchanged. DXA and BIA are now expanded once, in Section 3 (L101). This closes judgment call 3 and the open item.
+- **Gates after the fix pass.**
+  - `article_lint.py`: FAIL on 1 gate, the accepted M1 in the H1. Every other gate is ok.
+  - Detector: CLEAN, 0.0 per 1,000 words.
+  - Lint length: 1,820 (band 1,360-1,839). Prose without concept lines: 1,658.
+  - Sentences: 98, mean 15.3, p90 22, over_25 2 (2.0%), over_35 0.
+  - Locked-text script: 40 strings present exactly once, 18 retired strings absent (now including the old weight-input wording and the Section 5 expansion).
+- **Frontmatter.** Word counts, changes_summary, self_check and the length item are updated. The DXA item is closed.
+
+The figures in the Review 2 round section below are from before this fix pass. The ones above replace them.
+
+## Review 2 edit round (revision 3, 2026-10-21)
+
+This round edits the finished Review 1 text. It is not a re-plan. The section skeleton, FAQ and Next steps are unchanged. Line numbers (L) refer to the new final.md.
+
+### Gates, before and after
+
+| Gate | Before (revision 2 = v3/final.md) | After (revision 3) |
+|---|---|---|
+| `article_lint.py` verdict | FAIL, 1 gate: M1 on "GLP-1" in the H1 (accepted) | FAIL, 1 gate: M1 on "GLP-1" in the H1 (accepted). Every other gate is ok |
+| Prose length (lint, incl. concept lines) | 1,795 (band 1,360-1,839) | 1,825 (band 1,360-1,839) |
+| Prose without concept lines | 1,616 | 1,663 (decisions 12: 1,400-1,800) |
+| Sentence length | 94 sentences, mean 15.3, p90 22, over_25 1 (1.1%), over_35 0 | 98 sentences, mean 15.4, p90 22, over_25 2 (2.0%), over_35 0 |
+| Detector `--channel article` | CLEAN, 0.0/1000 | CLEAN, 0.0/1000, no hard fails, no house-rule violations, no soft markers |
+| Keyword placement | H1 + 1 H2 | H1 + 1 H2 (the new H1 keeps "GLP-1 Muscle Loss") |
+| Links | 13 total, 7 distinct, 4 directions | 13 total, 7 distinct, 4 directions |
+| Down link (fitness landing) | 15.8% of body | 13.5% of prose without concept lines (15.0% with them), Section 1 L72 |
+| `article_package.py checklist` (read-only) | 17/17 | 17/17. word_count shows the ±10% MISS, which is recorded in open items |
+| Locked text, by script | 24 strings | 40 strings present exactly once: Review 1 locks except the three lifted ones, all Review 2 verbatim lines, and the moved pair. 16 retired strings are absent |
+
+The sentences over 25 words are the moved second-record sentence (L101, 30 words: the unchanged wording plus the DXA and BIA expansions that decisions 5 requires at first body use) and the locked T-PRIVACY-ROLES sentence 1 (L127, 26 words).
+
+### Decisions, row by row
+
+| Row | What I did | Where |
+|---|---|---|
+| §0 already done | Checked, not touched. "split" is absent. T-REPEAT-SCOPE and T-VALIDATION, FXS-REPEAT, T-BODY-PROGRESS, T-RECORDS-ACTORS and T-PRIVACY-ROLES are each present once, verbatim. The repeated middle sections stay cut | L123-L135 |
+| §1 H1 | Applied verbatim. Frontmatter `title` matches. The Section 2 H2 keeps "GLP-1 muscle loss" | L58, L76 |
+| §2 short answer | Applied verbatim as its own paragraph directly after the scene paragraph, with no H2. The optional cut is applied: "A body scan cannot settle what this research leaves open about muscle." is gone. T-MUSCLE-FUNCTION and the scope note are verbatim | L66; T-MUSCLE-FUNCTION L80 |
+| §3 weight input | Applied verbatim, directly after T-ESTIMATES sentence 1. No Smart Scales, weight estimation or predicted weight | L97 |
+| §4 table | Review 2 table placed with a bold header row and the amended cell "FitXpress estimate from scan measurements". The T-TABLE marker stays above it, and both lead-in sentences are unchanged. The Review 1 table is gone, and its points now live in the disagreement paragraph (capture check, no cause from one scan, no training-program attribution, clinical concerns, no medication or clinical advice) | L86-L95 |
+| §4 disagreement paragraph | Written in four sentences, in the required order, with no numbers and no new claims. "Prescribing provider" is used, never "prescribing team" | L99 |
+| §4 Image 1 | Concept rewritten to the amended brief: four dated rows on one axis, the source labels, one callout, "Illustrative example", numbers marked illustrative, no muscle label, no attribution, no medication fields | L103 |
+| §5 move | The second-record pair moved from Section 5 to Section 3 with its wording unchanged, after the disagreement paragraph and before Image 1. The coaching-link sentence moved with it. DXA and BIA are expanded in the pair's first sentence, their new first body use. T-GUARDRAIL-DXA stays in Section 5, verbatim | L101, L135 |
+| §6 cadence and pilot | Both sentences deleted. The reviewer's sentence placed verbatim after "Check-ins sit at defined points...". Pilot sentence replaced verbatim. The review of differences is unchanged | L111, L139 |
+| §7 alternative path | Placed verbatim after the manual-measurements sentence. FXS-POPULATION and that sentence are unchanged | L117 |
+| §8 KFF | Paragraph and claim marker deleted, and the KFF entry removed from `claims_external`. No replacement statistic. The scope note is now followed directly by the strength-program paragraph, which needs no bridge | was L59 |
+| §9 34,000 scans | No text change. The open item is closed as "kept, Vadim 2026-10-21" | L137 |
+| §10 Image 2 | Concept rewritten as three panels: guided capture, scan-derived outputs, the app's own progress view. No muscle label, no overlays | L121 |
+| §11 incoming links | Kept as an open item | frontmatter |
+| §12 length and gates | Net change: +47 prose words without concept lines, +30 on the lint count. Inside 1,400-1,800. All gates ok except the accepted M1. Detector CLEAN | above |
+
+Declined: nothing. One optional item was applied (the §2 Section 2 cut).
+
+### Judgment calls
+
+**1. T-MUSCLE-FUNCTION moved up one paragraph, still in Section 2 and verbatim (L80).** With the "cannot settle" sentence cut, it would have stood alone as a one-sentence paragraph after the joint advisory. It follows naturally from the review's "appear to be adaptive" line: research on muscle, then the clinician's separate assessment. Section 2 now ends on "An app that offers workouts can support one part of that guidance.", which leads into the progress-view section.
+
+**2. Second-record paragraph: pair first, link sentence last (L101).** In Section 5 the link sentence came before the pair. In Section 3 the pair comes first, for two reasons:
+- It picks up "prescribing provider" from the last sentence of the disagreement paragraph.
+- The reviewer asks for the point first and the link to the method comparison second.
+
+The cost is one 30-word sentence. The unchanged wording takes the two expansions there, and a split would change the wording that decisions 5 locks. The gate allows it (2 of 98 sentences over 25).
+
+**3. DXA and BIA are now expanded twice (closed by coordinator amendment A2, see the fix pass above).** The second expansion is inside the locked T-GUARDRAIL-DXA sentence (L135). That sentence carried the expansions because it used to be the first use (plan R2: "R2 carries both expansions"). Review 2 decisions 5 keeps it verbatim, so I did not strip them. If the lock is relaxed, the fix is one line: "Some clinical protocols and research studies require DXA or professional BIA."
+
+**4. Disagreement paragraph wording (L99).**
+- The opening example, "as when weight falls and the waist measurement stays the same", makes "disagree" concrete. It adds no figure and no interpretation, and the next sentence but one rules out assigning a cause.
+- "A coach or the app first reviews…" keeps two sentences in a row from opening on "The app".
+- "Clinical concerns go to the prescribing provider" follows the decisions wording.
+- "Care team" (the old table row 3) no longer appears. The article's actor for clinical questions is "prescribing provider" (body) or "prescribing clinician" (locked scope note).
+
+**5. Section 1 reframe cut, down link rewritten (L72).** The short answer now says what an app can show two paragraphs earlier, so two sentences became repeats:
+- "For the app team, the question is what to show next to the scale number." is cut.
+- "...circumferences and composition estimates sit on the same timeline as weight and training history" is replaced.
+
+The down link now closes the strength paragraph with new content: "With body composition tracking for fitness apps, the app can add circumferences and composition estimates to that record at each check-in." It answers the "disconnected" sentence right before it. The landing-map anchor is unchanged and sits at 13.5%. The app-team thread is still carried by the Section 3 lead-in ("The app team decides...") and by the pilot. Plan Section 1 lists the reframe as must-cover. It was a Review 1 brief, and the Review 2 short answer now does its job, so QC should read it that way.
+
+**6. Hub sentence reordered (L68).** "In fitness apps, structured body data already supports..." became "Structured body data already supports ... in fitness apps." Two paragraphs in a row no longer open on "A fitness app" and "In fitness apps". Same words, same anchor.
+
+**7. Weight-input sentence (L97), verbatim, with a reading risk (closed by coordinator amendment A1, see the fix pass above).** "the app sends the same weight value with each scan as that optional input" can be read as "a constant weight on every scan". The intended reading is "the weight shown in the progress view is the value sent with the scan". It sits directly after "optional weight", which carries the intended reading. I kept it verbatim. If Assel flags it, an unambiguous form is "In this workflow, the app sends that weight value as the optional input with each scan."
+
+**8. T-ESTIMATES is no longer contiguous.** The plan asked for its three passages in one run. Review 2 decisions 3 puts the weight-input sentence directly after passage 1, and this file wins. The order is kept, and the T-ESTIMATES marker still closes the run.
+
+**9. Concept lines tightened to hold the length band.** The first assembly came to 1,905 on the lint count, over the 1,839 ceiling. The cuts that brought it to 1,825 came from three places:
+- The Image 1 and Image 2 concept lines, which keep every element the decisions require.
+- The Section 1 reframe sentence (call 5).
+- One sentence in the disagreement draft.
+
+The cover concept is unchanged. The full visual briefs belong in the publish package's image table, which the publisher needs to refresh (flag below).
+
+**10. Not changed, on purpose.**
+- The Section 4 sentence that names the five parts. It is house format (editorial-rewrites §7.6).
+- The T-34K bridge and the pilot decision rule (QC round 3).
+- FAQ and Next steps.
+- The "strength training" wording in the joint advisory (the Review 1 FYI stays).
+
+### Self-check (also in final.md `self_check`)
+
+- The muscle boundary is stated six times: scope note, short answer, T-MUSCLE-FUNCTION, the table cell, T-REPEAT-SCOPE and FAQ 1. Five are locked. The two free restatements are cut (Section 2, and the Section 1 reframe).
+- The weight and estimates paragraph is six locked or verbatim sentences in a row and still reads as assembled. See call 7.
+- Section 3 and Section 4 each say to keep methods apart: the provider's DXA or BIA record, and the app's manual fallback. Both are required verbatim, and they apply to different records.
+- The first draft of the disagreement paragraph had two sentences in a row opening on "The app" and an abstract example. Fixed.
+
+### Flags for the coordinator and the publisher
+
+- **Claim registry is stale.**
+  - The context pack (`workspace/seo/_context-packs/2026-09-19-glp-1-fitness-apps-body-composition-tracking.yaml`) still defines T-TABLE as the Review 1 rows and still carries EXT-KFF.
+  - `plan.md` does the same (Writing constraints, Section 1 KFF, Section 4 cadence bullets).
+  - I did not edit either file. QC should check the table against review-2-decisions §4.
+- **Publisher, meta and package.**
+  - The meta title ("GLP-1 Muscle Loss Concerns: Fitness App Progress Views") needs the re-check against the new H1 that decisions 1 asks for.
+  - The meta.md checklist still names KFF under anchors_sources and gives the old 15.8% link position.
+  - The meta.md and publish-package open item on the H1 swap is now closed.
+  - The publish package's image table and alt text describe the old Image 1 (three rows) and Image 2 (two panels).
+- **DXA and BIA double expansion.** Closed by amendment A2 in the fix pass.
+- **Length headroom.** 19 words under the lint ceiling after the fix pass (1,820 of 1,839). Any later addition to final.md needs a matching cut.
+
+---
+
+# Earlier rounds (revision 2, 2026-10-20), unchanged below
 
 ## Round 2 (publish fix pass, 2026-10-20)
 
