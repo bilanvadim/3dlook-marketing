@@ -50,6 +50,18 @@ Use for desaturated navy surfaces/gradients where the pure blue scale feels too 
 
 `⚠` Semantic status colors (success/pending/error) are not defined in the palette. If a status UI is needed (e.g. scan Success/Pending), choose accessible green/amber and flag for confirmation — do not treat as brand tokens.
 
+### Product colour coding (approved by Vadim, 2026-10-22)
+Each product owns one hue. Use it on cross-product surfaces (homepage, product menus and cards, Content Hub tags) so a visitor can tell the products apart at a glance. Product pages keep their own art direction.
+
+| Product | Token | Hex | Role |
+|---|---|---|---|
+| FitXpress | `--fx` / `--fx-l` | `#143DFF` / `#8A9CFF` | Electric blue; the light tint is for text and lines on dark |
+| Wrist Measurement | `--wm-deep` / `--wm` / `--wm-l` | `#1B0942` / `#7A3CF0` / `#B89BEE` | Violet, as on the live `/wrist-measurement/` hero |
+| Mobile Tailor | `--mt-paper` / `--mt-ink` | `#EEEBE5` / `#111111` | Strict monochrome for fashion: paper and ink |
+| Homepage base | `--ink2` | `#070A1C` | Near-black navy behind the product colours |
+
+Rules: one product colour per element, never mixed in one component; on dark use the light tints (`--fx-l`, `--wm-l`, `--mt-paper`); the electric-blue CTA stays the primary button everywhere.
+
 ---
 
 ## 3. Typography — Satoshi
@@ -195,6 +207,9 @@ Body text meets **AA contrast** minimum. Never place light text on light imagery
   /* layout + type */
   --maxw:1200px; --pad:clamp(24px,5vw,80px);
   --font:'Satoshi','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  /* product colour coding (§2, 2026-10-22) */
+  --fx:#143DFF; --fx-l:#8A9CFF; --wm-deep:#1B0942; --wm:#7A3CF0; --wm-l:#B89BEE;
+  --mt-paper:#EEEBE5; --mt-ink:#111111; --ink2:#070A1C;
 }
 /* @import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,900&display=swap'); */
 ```

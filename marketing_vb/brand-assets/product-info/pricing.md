@@ -16,6 +16,7 @@ Custom pricing available above 20K/mo.
 **No integration fee** (Vadim, 2026-09-30). Public: say it on pages, in outbound and in posts. It is an
 advantage over competitors. Page wording: "Plans start at $1,000 a month for up to 500 scans, with no
 integration fee."
+**Wrist Measurement has no integration fee either** (Vadim, 2026-10-22), so the homepage chip «No integration fee» covers both API products; Mobile Tailor needs no integration at all (SaaS dashboard, scan link or widget).
 
 ## How a customer starts (no self-serve trial)
 
