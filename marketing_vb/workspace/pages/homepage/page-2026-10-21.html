@@ -110,29 +110,44 @@ h3{font-size:clamp(22px,2vw,27px);font-weight:500}
 .proto button{font:700 12px/1 var(--font);padding:7px 10px;border-radius:var(--r-pill);border:1px solid #C9A93A;background:transparent;color:#4C3B00;cursor:pointer}
 .proto button[aria-pressed="true"]{background:#4C3B00;color:#FFF6D6;border-color:#4C3B00}
 
-/* header */
-.hdr{position:sticky;top:33px;z-index:50;background:rgba(5,15,64,.96);backdrop-filter:blur(8px);color:var(--white)}
-.hdr-in{display:flex;align-items:center;gap:28px;height:72px}
+/* header (navigation v1, site-architecture/architecture-2026-10-22.md) */
+.hdr{position:sticky;top:33px;z-index:50;background:var(--navy);color:var(--white)}
+.hdr-in{display:flex;align-items:center;gap:32px;height:72px}
 .logo{display:flex;align-items:center;gap:10px;font-weight:900;font-size:20px;letter-spacing:.02em;text-decoration:none;color:var(--white)}
 .logo svg{width:22px;height:20px}
-.nav{display:flex;gap:4px;flex:1}
-.nav>li{list-style:none;position:relative}
-.nav>li>button,.nav>li>a{font:500 16px/1 var(--font);color:var(--white);background:none;border:0;padding:12px 12px;border-radius:var(--r-5);cursor:pointer;text-decoration:none;display:inline-flex;gap:6px;align-items:center}
-.nav>li>button::after{content:"";width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-3px);opacity:.7}
-.nav>li>button:hover,.nav>li>a:hover,.nav>li>button[aria-expanded="true"]{background:rgba(255,255,255,.08)}
-.mega{position:absolute;left:0;top:calc(100% + 10px);background:var(--white);color:var(--ink);border-radius:var(--r-20);box-shadow:0 24px 60px rgba(5,15,64,.25);padding:20px;display:none;min-width:560px}
-.mega.open{display:block}
-.mega-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
-.mega a{display:block;text-decoration:none;padding:12px 14px;border-radius:var(--r-15)}
-.mega a:hover{background:var(--blue-50)}
-.mega .m-name{font-weight:700;display:flex;gap:8px;align-items:center}
-.mega .m-desc{font-size:14px;color:var(--g600);margin-top:2px}
-.mega .m-group{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--g500);padding:10px 14px 4px}
-.mega .m-foot{border-top:1px solid var(--g200);margin-top:10px;padding-top:10px;display:flex;gap:18px;font-size:14px}
-.mega .m-foot a{padding:6px 14px;color:var(--blue);font-weight:700}
-.hdr-right{display:flex;gap:10px;align-items:center}
-.hdr-right .signin{color:var(--white);font:500 15px/1 var(--font);text-decoration:none;opacity:.85}
-.burger{display:none;background:none;border:0;color:var(--white);width:44px;height:44px;cursor:pointer}
+.nav{display:flex;gap:2px;list-style:none;flex:1}
+.nav>li>button,.nav>li>a{font:500 16px/1 var(--font);color:var(--white);background:none;border:0;padding:12px 14px;border-radius:var(--r-5);cursor:pointer;text-decoration:none;display:inline-flex;gap:7px;align-items:center}
+.nav>li>button::after{content:"";width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-3px);opacity:.7;transition:transform .15s}
+.nav>li>button[aria-expanded="true"]::after{transform:rotate(-135deg) translateY(-1px)}
+.nav>li>button:hover,.nav>li>a:hover,.nav>li>button[aria-expanded="true"]{background:rgba(255,255,255,.09)}
+.hdr-right{display:flex;gap:14px;align-items:center;position:relative}
+.login{font:500 15px/1 var(--font);color:var(--blue-100);background:none;border:0;cursor:pointer;display:inline-flex;gap:6px;align-items:center;padding:10px 8px;border-radius:var(--r-5)}
+.login::after{content:"";width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px)}
+.login:hover,.login[aria-expanded="true"]{color:var(--white);background:rgba(255,255,255,.09)}
+.menu-btn{display:none;margin-left:auto;font:700 15px/1 var(--font);color:var(--white);background:rgba(255,255,255,.1);border:0;border-radius:var(--r-5);padding:11px 14px;cursor:pointer;gap:8px;align-items:center}
+.n-panel{position:absolute;left:0;right:0;top:72px;background:var(--white);color:var(--ink);box-shadow:0 30px 60px rgba(5,15,64,.22);display:none;border-radius:0 0 var(--r-20) var(--r-20)}
+.n-panel.open,.n-login.open{display:block}
+.n-panel>.wrap{padding-top:28px;padding-bottom:28px}
+.n-head{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:16px 18px;border-radius:var(--r-15);background:var(--blue-50);margin-bottom:22px;text-decoration:none}
+.n-head b{display:block;font-size:17px}
+.n-head span{color:var(--g700);font-size:14px}
+.n-head .go{font-weight:700;color:var(--blue);white-space:nowrap}
+.n-grp{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--g500);margin:0 0 10px 12px}
+.n-grid{display:grid;gap:6px 18px}
+.n-item{display:block;padding:12px;border-radius:var(--r-15);text-decoration:none}
+.n-item:hover{background:var(--blue-50)}
+.n-item .nm{font-weight:700;display:flex;gap:8px;align-items:center}
+.n-item .ds{display:block;color:var(--g600);font-size:14px;margin-top:2px}
+.n-foot{border-top:1px solid var(--g200);margin-top:18px;padding-top:14px;display:flex;gap:26px;flex-wrap:wrap;font-size:14px}
+.n-foot a{font-weight:700;color:var(--blue);text-decoration:none}
+.n-col-title{margin:0 0 6px 12px}
+.n-col-title b{display:block;font-size:15px}
+.n-col-title .own{display:block;font-size:12px;font-weight:700;color:var(--g500);letter-spacing:.04em;margin-top:2px}
+.n-col-title .own a{color:var(--blue);text-decoration:none}
+.n-uc .n-item{padding:9px 12px}
+.n-uc .n-item .nm{font-weight:500}
+.n-more{display:inline-block;margin:6px 0 0 12px;font-size:14px;font-weight:700;color:var(--blue);text-decoration:none}
+.n-login{position:absolute;right:120px;top:60px;width:320px;background:var(--white);color:var(--ink);border-radius:var(--r-20);box-shadow:0 24px 50px rgba(5,15,64,.25);padding:12px;display:none}
 .badge{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:var(--r-pill);padding:4px 8px;background:var(--blue-50);color:var(--blue-700)}
 .badge.dev{background:var(--g100);color:var(--g700)}
 .badge.ex{background:#FFF0C2;color:#6B5200}
@@ -257,9 +272,8 @@ h3{font-size:clamp(22px,2vw,27px);font-weight:500}
 
 /* responsive */
 @media (max-width:1020px){
-  .nav,.hdr-right .signin{display:none}
-  .burger{display:inline-flex;align-items:center;justify-content:center;margin-left:auto}
-  .hdr-right{margin-left:0}
+  .nav,.hdr-right{display:none}
+  .menu-btn{display:inline-flex}
   .hero-in,.how-grid,.co-grid,.cta-grid,.trust-grid{grid-template-columns:1fr}
   .hero-visual{min-height:300px;order:-1;display:none}
   .card.featured{grid-template-columns:1fr}
@@ -267,17 +281,23 @@ h3{font-size:clamp(22px,2vw,27px);font-weight:500}
 }
 @media (max-width:560px){
   .products-rest .c-visual{display:none}
-  .hdr-right .btn{padding:11px 14px;font-size:14px}
   .form .two{grid-template-columns:1fr}
   .legal{flex-direction:column}
 }
 /* mobile menu */
-.mnav{display:none;background:var(--navy);color:var(--white);padding:8px var(--pad) 24px}
+.mnav{display:none;background:var(--navy);color:var(--white);padding:4px var(--pad) 0}
 .mnav.open{display:block}
-.mnav details{border-bottom:1px solid rgba(177,189,255,.18);padding:14px 0}
-.mnav summary{font-weight:700;cursor:pointer;list-style:none}
-.mnav a{display:block;color:var(--white);text-decoration:none;padding:8px 0;opacity:.9}
-.mnav .top{display:block;padding:14px 0;border-bottom:1px solid rgba(177,189,255,.18);font-weight:700}
+.mnav details{border-bottom:1px solid rgba(177,189,255,.18)}
+.mnav summary{list-style:none;cursor:pointer;font-weight:700;font-size:18px;padding:16px 0;display:flex;justify-content:space-between}
+.mnav summary::-webkit-details-marker{display:none}
+.mnav summary::after{content:"+";color:var(--blue-200)}
+.mnav details[open] summary::after{content:"–"}
+.mnav .lnk{display:block;padding:10px 0 10px 12px;color:var(--blue-100);text-decoration:none}
+.mnav .lnk small{display:block;color:var(--n300);font-size:13px}
+.mnav .top{display:block;font-weight:700;font-size:18px;padding:16px 0;border-bottom:1px solid rgba(177,189,255,.18);color:var(--white);text-decoration:none}
+.mnav .sub{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--n300);padding:10px 0 2px 12px}
+.mnav .pin{position:sticky;bottom:0;background:var(--navy);padding:16px 0;display:grid}
+.mnav .pin .btn{justify-content:center}
 </style>
 </head>
 <body>
@@ -296,43 +316,37 @@ h3{font-size:clamp(22px,2vw,27px);font-weight:500}
       <svg viewBox="0 0 22 20" aria-hidden="true"><path d="M11 1 21 19H1z" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"/></svg>
       3DLOOK
     </a>
-    <ul class="nav" id="nav">
-      <li><button type="button" aria-expanded="false" aria-controls="mega-products">Products</button>
-        <div class="mega" id="mega-products"><div class="mega-grid" data-render="menu-products"></div>
-          <div class="m-foot"><a href="/technology/">Technology</a><a href="/pricing/">Pricing</a></div></div></li>
-      <li><button type="button" aria-expanded="false" aria-controls="mega-uc">Use cases</button>
-        <div class="mega" id="mega-uc" style="min-width:680px"><div class="mega-grid" data-render="menu-usecases" style="grid-template-columns:repeat(3,minmax(0,1fr))"></div></div></li>
-      <li><a href="/technology/">Technology</a></li>
+    <ul class="nav">
+      <li><button type="button" aria-expanded="false" aria-controls="p-products" data-menu="products">Products</button></li>
+      <li><button type="button" aria-expanded="false" aria-controls="p-industries" data-menu="industries">Industries</button></li>
       <li><a href="/pricing/">Pricing</a></li>
-      <li><button type="button" aria-expanded="false" aria-controls="mega-res">Resources</button>
-        <div class="mega" id="mega-res" style="min-width:300px"><div class="mega-grid" style="grid-template-columns:1fr">
-          <a href="/content-hub/"><span class="m-name">Content Hub</span><span class="m-desc">Guides, comparisons and product updates</span></a>
-          <a href="/case-studies/"><span class="m-name">Case studies</span></a>
-          <a href="/content-hub/mobile-body-scanning-accuracy/"><span class="m-name">Accuracy methodology</span></a>
-          <a href="/content-hub/fitxpress-data-privacy-security-regulatory-faq/"><span class="m-name">Privacy and security FAQ</span></a>
-        </div></div></li>
-      <li><button type="button" aria-expanded="false" aria-controls="mega-co">Company</button>
-        <div class="mega" id="mega-co" style="min-width:260px"><div class="mega-grid" style="grid-template-columns:1fr">
-          <a href="/about-us/"><span class="m-name">About us</span></a><a href="/partners/"><span class="m-name">Partners</span></a>
-          <a href="/careers/"><span class="m-name">Careers</span></a><a href="/contact-us/"><span class="m-name">Contact</span></a>
-        </div></div></li>
+      <li><button type="button" aria-expanded="false" aria-controls="p-resources" data-menu="resources">Resources</button></li>
+      <li><button type="button" aria-expanded="false" aria-controls="p-company" data-menu="company">Company</button></li>
     </ul>
     <div class="hdr-right">
-      <a class="signin" href="https://mtm.3dlook.me/">Sign in</a>
+      <button class="login" type="button" aria-expanded="false" aria-controls="p-login" data-menu="login">Log in</button>
       <a class="btn btn-blue" href="#demo" data-cta="header">Book a demo</a>
+      <div class="n-login" id="p-login" data-render="menu-login"></div>
     </div>
-    <button class="burger" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Open menu">
-      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mnav">
+      <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>Menu
     </button>
   </div>
-  <nav class="mnav" id="mnav" aria-label="Mobile">
-    <details><summary>Products</summary><div data-render="mnav-products"></div></details>
-    <details><summary>Use cases</summary><div data-render="mnav-usecases"></div></details>
-    <a class="top" href="/technology/">Technology</a>
-    <a class="top" href="/pricing/">Pricing</a>
-    <details><summary>Resources</summary><a href="/content-hub/">Content Hub</a><a href="/case-studies/">Case studies</a></details>
-    <details><summary>Company</summary><a href="/about-us/">About us</a><a href="/careers/">Careers</a><a href="/contact-us/">Contact</a></details>
-  </nav>
+  <div class="n-panel" id="p-products"><div class="wrap" data-render="menu-products"></div></div>
+  <div class="n-panel" id="p-industries"><div class="wrap" data-render="menu-industries"></div></div>
+  <div class="n-panel" id="p-resources"><div class="wrap"><div class="n-grid" style="grid-template-columns:repeat(4,1fr)">
+    <a class="n-item" href="/content-hub/"><span class="nm">Content Hub</span><span class="ds">Guides, comparisons and product updates</span></a>
+    <a class="n-item" href="/case-studies/"><span class="nm">Case studies</span><span class="ds">How clients use 3DLOOK body scanning</span></a>
+    <a class="n-item" href="/ebook-the-next-big-leap-in-health/"><span class="nm">eBooks</span><span class="ds">Long-form guides for health programs</span></a>
+    <a class="n-item" href="/developers/"><span class="nm">Developers</span><span class="ds">API, SDKs and integration guides</span></a>
+  </div></div></div>
+  <div class="n-panel" id="p-company"><div class="wrap"><div class="n-grid" style="grid-template-columns:repeat(4,1fr)">
+    <a class="n-item" href="/about-us/"><span class="nm">About us</span><span class="ds">Who we are, since 2016</span></a>
+    <a class="n-item" href="/careers/"><span class="nm">Careers</span><span class="ds">Open roles</span></a>
+    <a class="n-item" href="/partners/"><span class="nm">Partners</span><span class="ds">Integration and channel partners</span></a>
+    <a class="n-item" href="/contact-us/"><span class="nm">Contact</span><span class="ds">Sales, support and press</span></a>
+  </div></div></div>
+  <nav class="mnav" id="mnav" aria-label="Mobile" data-render="mnav"></nav>
 </header>
 
 <main>
@@ -531,7 +545,8 @@ h3{font-size:clamp(22px,2vw,27px);font-weight:500}
    Use cases: only status "live" render; "planned" stays in the data so it appears the day the page ships. */
 const PRODUCTS = [
   {
-    id: "fitxpress", name: "FitXpress", status: "live", featured: true, url: "/fitxpress/",
+    id: "fitxpress", name: "FitXpress", status: "live", featured: true, url: "/fitxpress/", family: "body",
+    allUseCases: "/fitxpress/#use-cases", login: {name: "FitXpress Admin Panel", url: "#fitxpress-admin-url", desc: "Monitor and export scan results"},
     anchor: "Explore the FitXpress AI body scanner",
     label: "Body scanning API for health and fitness programs",
     value: "Body measurements, BMI and body composition estimates that remote health programs, insurers and fitness apps can act on.",
@@ -540,34 +555,35 @@ const PRODUCTS = [
     industry: "Health and fitness", need: "Health and fitness body data", formOption: "Health and fitness body data (FitXpress)", segment: "FX",
     visual: "body",
     useCases: [
-      {name: "Telehealth and digital health programs", url: "/structured-body-data-for-telehealth-digital-health-programs/", status: "live"},
-      {name: "Weight and BMI verification", url: "/for-bmi-verification/", status: "live"},
+      {name: "Telehealth and digital health", url: "/structured-body-data-for-telehealth-digital-health-programs/", status: "live"},
+      {name: "BMI verification for online pharmacies", url: "/for-bmi-verification/", status: "live"},
       {name: "Life insurance underwriting", url: "/fitxpress/for-insurance-underwriting/", status: "live"},
-      {name: "Connected and digital fitness", url: "/fitxpress/for-connected-and-digital-fitness/", status: "live"},
+      {name: "Fitness apps", url: "/fitxpress/for-connected-and-digital-fitness/", status: "live"},
       {name: "GLP-1 programs", url: "/fitxpress/for-glp-1-programs/", status: "planned"},
       {name: "Bariatric programs", url: "/fitxpress/for-bariatric-programs/", status: "planned"},
-      {name: "Employee wellness programs", url: "/fitxpress/for-wellness-programs/", status: "planned"},
+      {name: "Employee wellness", url: "/fitxpress/for-wellness-programs/", status: "planned"},
       {name: "Occupational health", url: "/fitxpress/for-occupational-health/", status: "planned"},
       {name: "Clinical trials", url: "/fitxpress/for-clinical-trials/", status: "planned"}
     ]
   },
   {
-    id: "mobile-tailor", name: "Mobile Tailor", status: "live", url: "/mobile-tailor/",
+    id: "mobile-tailor", name: "Mobile Tailor", status: "live", url: "/mobile-tailor/", family: "body",
+    allUseCases: "/mobile-tailor/#use-cases", login: {name: "Mobile Tailor", url: "https://mtm.3dlook.me/", desc: "Measurement dashboard"},
     anchor: "Explore Mobile Tailor AI body measurements",
     label: "AI body measurements for apparel and uniforms",
     value: "Remote body measurements for made-to-measure brands, on-demand manufacturers and uniform programs.",
     returns: ["80+ body measurements", "3D body model", "measurement data for order and production systems"],
     builtFor: ["made-to-measure", "on-demand manufacturing", "uniform and protective-equipment programs"],
     industry: "Apparel and uniforms", need: "Measurements for apparel and uniforms", formOption: "Measurements for apparel and uniforms (Mobile Tailor)", segment: "MT",
-    visual: "body", secondary: {name: "Sign in", url: "https://mtm.3dlook.me/"},
+    visual: "body",
     useCases: [
       {name: "Made-to-measure", url: "/mobile-tailor/for-made-to-measure/", status: "live"},
       {name: "On-demand manufacturing", url: "/mobile-tailor/for-on-demand-manufacturing/", status: "live"},
-      {name: "Uniform fitting", url: "/mobile-tailor/for-uniforms/", status: "live"}
+      {name: "Uniforms and protective equipment", url: "/mobile-tailor/for-uniforms/", status: "live"}
     ]
   },
   {
-    id: "wrist", name: "Wrist Measurement", status: "live", url: "/wrist-measurement/",
+    id: "wrist", name: "Wrist Measurement", status: "live", url: "/wrist-measurement/", family: "hand",
     anchor: "Explore wrist measurement",
     label: "Wrist sizing API for jewelry, watches and wearables",
     value: "Wrist measurement from two smartphone photos, matched to the size chart a brand already uses.",
@@ -637,6 +653,39 @@ function card(p) {
     : `<article class="${cls}"><div class="c-visual" style="min-height:140px">${VISUALS[p.visual]}</div>${body}</article>`;
 }
 
+const FAMILIES = {body: "Body", hand: "Hand and wrist", head: "Head"};
+const navCard = p => `<a class="n-item" href="${p.url}"><span class="nm">${esc(p.name)} ${badge(p)}</span><span class="ds">${esc(p.label)}</span></a>`;
+function renderMenuProducts(ps) {
+  const head = `<a class="n-head" href="/technology/"><div><b>How 3DLOOK body scanning works</b><span>One two-photo capture and one body model behind every product</span></div><span class="go">Technology →</span></a>`;
+  let body;
+  if (ps.length <= 6) {
+    body = `<div class="n-grid" style="grid-template-columns:repeat(${Math.min(ps.length, 3)},1fr)">${ps.map(navCard).join("")}</div>`;
+  } else {
+    const fams = Object.keys(FAMILIES).filter(f => ps.some(p => (p.family || "body") === f));
+    body = `<div class="n-grid" style="grid-template-columns:repeat(${fams.length},1fr)">` + fams.map(f =>
+      `<div><div class="n-grp">${FAMILIES[f]}</div>${ps.filter(p => (p.family || "body") === f).map(navCard).join("")}</div>`).join("") + `</div>`;
+  }
+  return head + body + `<div class="n-foot"><a href="/content-hub/mobile-body-scanning-accuracy/">Accuracy</a><a href="/content-hub/fitxpress-data-privacy-security-regulatory-faq/">Privacy and security</a><a href="#products">Compare all products</a></div>`;
+}
+function renderMenuIndustries() {
+  const inds = industries();
+  return `<div class="n-grid n-uc" style="grid-template-columns:repeat(${Math.min(inds.length, 4)},1fr)">` + inds.map(([name, ps]) => {
+    const links = ps.flatMap(liveUseCases);
+    const more = links.length > 6 && ps[0].allUseCases ? `<a class="n-more" href="${ps[0].allUseCases}">All ${esc(name.toLowerCase())} use cases →</a>` : "";
+    return `<div><div class="n-col-title"><b>${esc(name)}</b><span class="own">${ps.map(p => `<a href="${p.url}">${esc(p.name)}</a>`).join(" · ")}</span></div>` +
+      links.slice(0, 6).map(u => `<a class="n-item" href="${u.url}"><span class="nm">${esc(u.name)}</span></a>`).join("") + more + `</div>`;
+  }).join("") + `</div>`;
+}
+function renderMobile(ps) {
+  return `<details><summary>Products</summary><a class="lnk" href="/technology/">How 3DLOOK body scanning works</a>${ps.map(p => `<a class="lnk" href="${p.url}">${esc(p.name)}<small>${esc(p.label)}</small></a>`).join("")}</details>` +
+    `<details><summary>Industries</summary>${industries().map(([n, pp]) => `<div class="sub">${esc(n)}</div>` + pp.flatMap(liveUseCases).slice(0, 6).map(u => `<a class="lnk" href="${u.url}">${esc(u.name)}</a>`).join("")).join("")}</details>` +
+    `<a class="top" href="/pricing/">Pricing</a>` +
+    `<details><summary>Resources</summary><a class="lnk" href="/content-hub/">Content Hub</a><a class="lnk" href="/case-studies/">Case studies</a><a class="lnk" href="/ebook-the-next-big-leap-in-health/">eBooks</a><a class="lnk" href="/developers/">Developers</a></details>` +
+    `<details><summary>Company</summary><a class="lnk" href="/about-us/">About us</a><a class="lnk" href="/careers/">Careers</a><a class="lnk" href="/partners/">Partners</a><a class="lnk" href="/contact-us/">Contact</a></details>` +
+    `<details><summary>Log in</summary>${ps.filter(p => p.login).map(p => `<a class="lnk" href="${p.login.url}">${esc(p.login.name)}</a>`).join("")}</details>` +
+    `<div class="pin"><a class="btn btn-blue" href="#demo">Book a demo</a></div>`;
+}
+
 function render() {
   const ps = visibleProducts();
   const R = (k, html) => document.querySelectorAll(`[data-render="${k}"]`).forEach(el => el.innerHTML = html);
@@ -647,39 +696,42 @@ function render() {
   R("usecases", industries().map(([ind, prods]) =>
     `<div class="uc-col"><h3>${esc(ind)}</h3><p class="uc-prod">${prods.map(p => `<a href="${p.url}">${esc(p.name)}</a>`).join(" · ")}</p>
      <ul>${prods.flatMap(liveUseCases).map(u => `<li><a href="${u.url}">${esc(u.name)}</a></li>`).join("")}</ul></div>`).join(""));
-  R("menu-products", ps.map(p => `<a href="${p.url}"><span class="m-name">${esc(p.name)} ${badge(p)}</span><span class="m-desc">${esc(p.label)}</span></a>`).join(""));
-  R("menu-usecases", industries().map(([ind, prods]) =>
-    `<div><div class="m-group">${esc(ind)}</div>${prods.flatMap(liveUseCases).map(u => `<a href="${u.url}"><span class="m-name" style="font-weight:500">${esc(u.name)}</span></a>`).join("")}</div>`).join(""));
-  R("mnav-products", ps.map(p => `<a href="${p.url}">${esc(p.name)}</a>`).join(""));
-  R("mnav-usecases", ps.flatMap(liveUseCases).map(u => `<a href="${u.url}">${esc(u.name)}</a>`).join(""));
+  R("menu-products", renderMenuProducts(ps));
+  R("menu-industries", renderMenuIndustries());
+  R("menu-login", ps.filter(p => p.login).map(p => `<a class="n-item" href="${p.login.url}"><span class="nm">${esc(p.login.name)}</span><span class="ds">${esc(p.login.desc)}</span></a>`).join(""));
+  R("mnav", renderMobile(ps));
   R("foot-products", ps.filter(p => p.status !== "in-development").map(p => `<li><a href="${p.url}">${esc(p.name)}</a></li>`).join(""));
   R("foot-usecases", ps.flatMap(liveUseCases).slice(0, 8).map(u => `<li><a href="${u.url}">${esc(u.name)}</a></li>`).join(""));
   R("form-options", '<option value="">Choose one</option>' + ps.filter(p => p.formOption).map(p =>
     `<option value="${p.segment}">${esc(p.formOption)}</option>`).join("") + (ps.some(p => p.formOption === "Something else") ? "" : '<option value="Other">Something else</option>'));
 }
 
-document.querySelectorAll(".proto button").forEach(b => b.addEventListener("click", () => {
+document.querySelectorAll(".proto button[data-mode]").forEach(b => b.addEventListener("click", e => {
+  e.stopPropagation();
   mode = b.dataset.mode;
-  document.querySelectorAll(".proto button").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+  document.querySelectorAll(".proto button[data-mode]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
   render();
 }));
 
-/* menus: click to open, Escape and outside click to close */
-const toggles = document.querySelectorAll(".nav button[aria-controls]");
-const closeAll = except => toggles.forEach(t => { if (t !== except) { t.setAttribute("aria-expanded", "false"); document.getElementById(t.getAttribute("aria-controls")).classList.remove("open"); } });
-toggles.forEach(t => t.addEventListener("click", e => {
-  e.stopPropagation();
-  const open = t.getAttribute("aria-expanded") !== "true";
-  closeAll(t);
-  t.setAttribute("aria-expanded", String(open));
-  document.getElementById(t.getAttribute("aria-controls")).classList.toggle("open", open);
-}));
-document.addEventListener("click", e => { if (!e.target.closest(".mega")) closeAll(); });
-document.addEventListener("keydown", e => { if (e.key === "Escape") closeAll(); });
-const burger = document.querySelector(".burger");
-burger.addEventListener("click", () => {
-  const open = burger.getAttribute("aria-expanded") !== "true";
-  burger.setAttribute("aria-expanded", String(open));
+/* menus: click (keyboard, touch) and 300 ms hover intent; Escape, outside click and leaving the header close */
+const triggers = [...document.querySelectorAll("[data-menu]")];
+const panelOf = t => document.getElementById(t.getAttribute("aria-controls"));
+function openMenu(name) {
+  triggers.forEach(t => { const on = t.dataset.menu === name; t.setAttribute("aria-expanded", String(on)); panelOf(t).classList.toggle("open", on); });
+}
+triggers.forEach(t => {
+  t.addEventListener("click", e => { e.stopPropagation(); openMenu(t.getAttribute("aria-expanded") === "true" ? null : t.dataset.menu); });
+  let timer;
+  t.addEventListener("mouseenter", () => { timer = setTimeout(() => openMenu(t.dataset.menu), 300); });
+  t.addEventListener("mouseleave", () => clearTimeout(timer));
+});
+document.addEventListener("click", e => { if (!e.target.closest(".n-panel,.n-login")) openMenu(null); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") openMenu(null); });
+document.querySelector(".hdr").addEventListener("mouseleave", () => openMenu(null));
+const menuBtn = document.querySelector(".menu-btn");
+menuBtn.addEventListener("click", () => {
+  const open = menuBtn.getAttribute("aria-expanded") !== "true";
+  menuBtn.setAttribute("aria-expanded", String(open));
   document.getElementById("mnav").classList.toggle("open", open);
 });
 

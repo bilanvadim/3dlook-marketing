@@ -1,7 +1,7 @@
 ---
 product: all
 type: site-architecture
-status: draft-v1, на рішення Вадима
+status: v1 approved by Vadim 2026-10-22 («ок»)
 date: 2026-10-22
 files: nav-prototype-2026-10-22.html (прототип меню, перемикач 3 / 5 / 8 продуктів) · research-navigation-2026-10-22.md · screenshot-*.jpeg
 related: ../homepage/spec-2026-10-21.md (реєстр продуктів), .claude/skills/page-builder/references/site-inventory.md
@@ -206,6 +206,8 @@ related: ../homepage/spec-2026-10-21.md (реєстр продуктів), .clau
 ---
 
 ## 10. Відкриті питання
+
+**10-22, після «ок» Вадима:** A-1 «Industries», A-2 Technology у Products, A-4 `/fitxpress/bmi-verification/` (виправлено в `site-inventory.md`) і A-7 (шапка в прототипі головної і у Figma) закрито. Відкриті A-3, A-5, A-6.
 
 | # | Питання | Пропозиція |
 |---|---|---|
