@@ -1,0 +1,97 @@
+{
+ "generated": "2026-10-22T05:40:55+00:00",
+ "items": [
+  {
+   "id": "f115bf12-95fc-45ff-9b17-c59b19c72891",
+   "title": "Baba Secures $40M to Expand AI-Powered Medicare Care Navigation and Launches BabaBench",
+   "date": "2026-10-21",
+   "tags": [
+    "Medicare and Medicaid",
+    "Startup",
+    "Care Coordination / Navigation / Care Access",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/baba-secures-40m-to-expand-ai-powered-medicare-care-navigation-and-launches-bababench"
+  },
+  {
+   "id": "4d976a4e-3132-4582-ba9e-c61b713349db",
+   "title": "Gene by Gene Partners With Children’s Mercy to Advance Whole Genome Sequencing for Pediatric Rare Disease Research",
+   "date": "2026-10-21",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Precision Medicine / Genomics",
+    "Health System & Health Provider",
+    "Medical Research",
+    "Diagnostics"
+   ],
+   "url": "https://hlth.com/insights/news/gene-by-gene-partners-with-children-s-mercy-to-advance-whole-genome-sequencing-for-pediatric-rare-disease-research"
+  },
+  {
+   "id": "85b707f1-33f9-4bb0-be1a-e4d7a4b6e2c8",
+   "title": "Fitnescity Health Opens Nationwide Preventive Imaging Network to Digital Health Platforms, With Superpower Among First API Partners",
+   "date": "2026-10-21",
+   "tags": [
+    "Preventive Health",
+    "Interoperability / Data Management",
+    "Diagnostics",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/fitnescity-health-opens-nationwide-preventive-imaging-network-to-digital-health-platforms-with-superpower-among-first-api-partners"
+  }
+ ],
+ "analyses": {
+  "f115bf12-95fc-45ff-9b17-c59b19c72891": {
+   "id": "f115bf12-95fc-45ff-9b17-c59b19c72891",
+   "score": 1,
+   "segment": "—",
+   "what": "Baba залучила $40M Series A, щоб розширити AI-навігацію та координацію догляду для пацієнтів Medicare, і запустила BabaBench — бенчмарк для AI-агентів в адміністративних процесах. Компанія пройшла відбір за всіма чотирма треками CMS ACCESS Model, серед них cardio-kidney-metabolic.",
+   "why": "Baba автоматизує адміністративну роботу (направлення, страхові спори, виписка з лікарні) і з даними про тіло не працює. Єдина зачіпка — outcomes-based оплата за CKM-треком ACCESS Model, але стаття не каже, які метрики там рахують, тому конкретної дії немає.",
+   "play": "none",
+   "companies": [
+    "Baba",
+    "Centers for Medicare & Medicaid Services"
+   ],
+   "_date": "2026-10-21"
+  },
+  "4d976a4e-3132-4582-ba9e-c61b713349db": {
+   "id": "4d976a4e-3132-4582-ba9e-c61b713349db",
+   "score": 0,
+   "segment": "—",
+   "what": "Gene by Gene робитиме повногеномне секвенування для програми Children’s Mercy (GA4K) з дослідження рідкісних генетичних хвороб у дітей.",
+   "why": "Це геноміка і педіатричні рідкісні хвороби, з даними про тіло й сегментами ICP не пов'язано.",
+   "play": "none",
+   "companies": [
+    "Gene by Gene",
+    "Children’s Mercy",
+    "Children’s Mercy Research Institute"
+   ],
+   "_date": "2026-10-21"
+  },
+  "85b707f1-33f9-4bb0-be1a-e4d7a4b6e2c8": {
+   "id": "85b707f1-33f9-4bb0-be1a-e4d7a4b6e2c8",
+   "score": 2,
+   "segment": "FitXpress §1 Telehealth & GLP-1",
+   "what": "Fitnescity Health через один API відкрила digital health платформам доступ до DEXA body composition, bone density, CT Coronary Calcium і VO2 Max у 1000+ локаціях США. Вже підключено 10 платформ, серед них Superpower. Стаття прямо згадує DEXA для моніторингу body composition у пацієнтів на GLP-1.",
+   "why": "Платформи превентивного здоров'я, лонгевіті, телехелс і GLP-1 хочуть мати body composition прямо в додатку, а не лише вагу. Це тригер §1 «додавання body composition для диференціації». Fitnescity продає їм це як DEXA, тобто очний візит у клініку. Між візитами прогрес учасник не бачить. FitXpress закриває цей проміжок: 2 фото в додатку дають body composition і 80+ вимірів для регулярних check-ins на 30/60/90 днях.",
+   "play": "lookalikes",
+   "campaign": {
+    "title": "US preventive-health & longevity memberships, що додають body composition (аналог Everlab-similar для США)",
+    "profile": "nick",
+    "market": "USA",
+    "targets": "Американські membership-платформи превентивного здоров'я та лонгевіті (лабораторні аналізи + AI-інсайти), які вже додають або планують додати DEXA/body composition. Також GLP-1 телехелс-платформи, яким потрібен контроль body composition на терапії. Superpower виключити, бо вже був у контакті. Інших 9 партнерів Fitnescity стаття не називає, їх треба знайти через research.",
+    "roles": "Founder / CEO, Chief Medical Officer / Medical Director, Head of Product, Head of Member Engagement / Retention, Head of Clinical Operations; CTO як technical-integration",
+    "angle": "Платформи превентивного здоров'я вже ставлять body composition поруч із біомаркерами, але DEXA — це запис у клініку раз на кілька місяців, і між візитами прогресу не видно. 2-фото скан у вашому додатку дає регулярні check-ins з body composition, щоб учасник бачив зміни до того, як відвалиться. DEXA він не замінює, а доповнює.",
+    "existing_campaign": "",
+    "task": "USA: preventive-health/longevity membership platforms adding DEXA/body composition to their app — in-app 2-photo body-comp check-ins between clinic DEXA visits (US version of Everlab-similar, Nick)"
+   },
+   "caveat": "Superpower вже контактував Nick, тож не писати. Сама Fitnescity — не покупець, а постачальник DEXA, тобто швидше конкурент чи альтернатива. Не порівнювати FitXpress з DEXA за точністю і не вживати «medical-grade». Позиціонувати як доповнення між візитами. Платформи, які щойно підключили DEXA, можуть вважати питання body composition закритим. У листі не стверджувати, що адресат партнер Fitnescity, поки це не перевірено.",
+   "companies": [
+    "Fitnescity Health",
+    "Superpower"
+   ],
+   "_date": "2026-10-21"
+  }
+ },
+ "posts": []
+}
