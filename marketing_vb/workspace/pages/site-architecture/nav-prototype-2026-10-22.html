@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3DLOOK navigation prototype</title>
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap">
+<!-- Navigation prototype, 2026-10-22. Rules: architecture-2026-10-22.md (Ukrainian).
+     Every menu, the footer and the mobile panel are rendered from ONE registry (PRODUCTS below), the same
+     registry as the homepage prototype. On WordPress the menus must be server-rendered <a href> links;
+     top-level items are <button aria-expanded>, never href="#". Stages 5 and 8 contain fictional products
+     for a layout test only. -->
+<style>
+:root{
+  --black:#000;--white:#fff;--blue:#143DFF;
+  --blue-50:#ECEFFF;--blue-100:#D8DEFF;--blue-200:#B1BDFF;--blue-300:#8A9CFF;--blue-400:#4F6DFF;
+  --blue-600:#0F2ECD;--blue-700:#0B2299;--blue-800:#08186B;--navy:#050F40;
+  --g50:#F9F9F9;--g100:#F2F2F2;--g200:#E5E5E5;--g300:#D1D1D1;--g400:#A8A8A8;--g500:#808080;
+  --g600:#666666;--g700:#4C4C4C;--g800:#333333;--ink:#1A1A1A;--n300:#BABFDB;
+  --r-5:5px;--r-15:15px;--r-20:20px;--r-pill:9999px;
+  --maxw:1200px;--pad:clamp(24px,5vw,80px);
+  --font:'Satoshi','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font);color:var(--ink);background:var(--g100);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--blue-200);outline-offset:2px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
+
+/* prototype controls */
+.proto{background:#FFF6D6;color:#4C3B00;font:500 13px/1.3 var(--font);padding:8px var(--pad);display:flex;gap:10px;align-items:center;flex-wrap:wrap;border-bottom:1px solid #EAD48A}
+.proto b{font-weight:700}
+.proto button{font:700 12px/1 var(--font);padding:7px 10px;border-radius:var(--r-pill);border:1px solid #C9A93A;background:transparent;color:#4C3B00;cursor:pointer}
+.proto button[aria-pressed="true"]{background:#4C3B00;color:#FFF6D6;border-color:#4C3B00}
+.proto .sep{width:1px;height:18px;background:#D9C27A;margin:0 4px}
+
+/* header */
+.hdr{position:relative;z-index:20;background:var(--navy);color:var(--white)}
+.hdr-in{display:flex;align-items:center;gap:32px;height:72px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;font-size:20px;letter-spacing:.02em}
+.logo svg{width:22px;height:20px}
+.nav{display:flex;gap:2px;list-style:none;flex:1}
+.nav>li>button,.nav>li>a{font:500 16px/1 var(--font);color:var(--white);background:none;border:0;padding:12px 14px;border-radius:var(--r-5);cursor:pointer;display:inline-flex;gap:7px;align-items:center}
+.nav>li>button::after{content:"";width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-3px);opacity:.7;transition:transform .15s}
+.nav>li>button[aria-expanded="true"]::after{transform:rotate(-135deg) translateY(-1px)}
+.nav>li>button:hover,.nav>li>a:hover,.nav>li>button[aria-expanded="true"]{background:rgba(255,255,255,.09)}
+.nav>li>a[aria-current="page"]{box-shadow:inset 0 -2px 0 var(--blue-300)}
+.right{display:flex;align-items:center;gap:14px;position:relative}
+.login{font:500 15px/1 var(--font);color:var(--blue-100);background:none;border:0;cursor:pointer;display:inline-flex;gap:6px;align-items:center;padding:10px 8px;border-radius:var(--r-5)}
+.login::after{content:"";width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px)}
+.login:hover,.login[aria-expanded="true"]{color:var(--white);background:rgba(255,255,255,.09)}
+.btn{display:inline-flex;align-items:center;font:700 16px/1 var(--font);padding:14px 22px;border-radius:var(--r-5);background:var(--blue);color:var(--white)}
+.btn:hover{background:var(--blue-600)}
+.menu-btn{display:none;margin-left:auto;font:700 15px/1 var(--font);color:var(--white);background:rgba(255,255,255,.1);border:0;border-radius:var(--r-5);padding:11px 14px;cursor:pointer;gap:8px;align-items:center}
+
+/* panels */
+.panel{position:absolute;left:0;right:0;top:72px;background:var(--white);color:var(--ink);box-shadow:0 30px 60px rgba(5,15,64,.22);display:none;border-radius:0 0 var(--r-20) var(--r-20)}
+.panel.open{display:block}
+.panel .wrap{padding-top:28px;padding-bottom:28px}
+.p-head{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:16px 18px;border-radius:var(--r-15);background:var(--blue-50);margin-bottom:22px}
+.p-head b{display:block;font-size:17px}
+.p-head span{color:var(--g700);font-size:14px}
+.p-head .go{font-weight:700;color:var(--blue);white-space:nowrap}
+.grp{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--g500);margin:0 0 10px 12px}
+.grid{display:grid;gap:6px 18px}
+.item{display:block;padding:12px;border-radius:var(--r-15)}
+.item:hover{background:var(--blue-50)}
+.item .nm{font-weight:700;display:flex;gap:8px;align-items:center}
+.item .ds{color:var(--g600);font-size:14px;margin-top:2px}
+.badge{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:var(--r-pill);padding:3px 7px;background:var(--blue-50);color:var(--blue-700)}
+.badge.new{background:#E3F7EA;color:#11632F}
+.badge.ex{background:#FFF0C2;color:#6B5200}
+.p-foot{border-top:1px solid var(--g200);margin-top:18px;padding-top:14px;display:flex;gap:26px;flex-wrap:wrap;font-size:14px}
+.p-foot a{font-weight:700;color:var(--blue)}
+.p-foot a.ext::after{content:" ↗"}
+.col-title{margin:0 0 6px 12px}
+.col-title b{display:block;font-size:15px}
+.col-title .own{display:block;font-size:12px;font-weight:700;color:var(--g500);letter-spacing:.04em;margin-top:2px}
+.col-title .own a{color:var(--blue)}
+.uc a.item{padding:9px 12px}
+.uc a.item .nm{font-weight:500}
+.more{display:inline-block;margin:6px 0 0 12px;font-size:14px;font-weight:700;color:var(--blue)}
+.small-panel{left:auto;width:auto;min-width:320px;border-radius:var(--r-20)}
+.login-panel{position:absolute;right:120px;top:60px;width:320px;background:var(--white);color:var(--ink);border-radius:var(--r-20);box-shadow:0 24px 50px rgba(5,15,64,.25);padding:12px;display:none}
+.login-panel.open{display:block}
+
+/* page under the header */
+.page{padding:48px 0 80px}
+.note{background:var(--white);border-radius:var(--r-20);padding:24px 28px;max-width:860px;color:var(--g700)}
+.note h2{font-size:22px;color:var(--ink);margin-bottom:8px}
+.note ul{margin:10px 0 0 18px}
+
+/* footer */
+.foot{background:var(--navy);color:var(--white);padding:56px 0 28px;border-radius:30px 30px 0 0}
+.foot-grid{display:grid;grid-template-columns:1.1fr repeat(4,1fr);gap:28px}
+.foot h4{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--n300);margin-bottom:12px}
+.foot ul{list-style:none;display:grid;gap:8px;font-size:15px}
+.foot a:hover{text-decoration:underline}
+.pills{display:flex;gap:8px;margin-top:16px}
+.pill{border:1px solid rgba(177,189,255,.4);border-radius:var(--r-pill);padding:5px 11px;font-size:12px;font-weight:700;color:var(--blue-100)}
+.legal{border-top:1px solid rgba(177,189,255,.18);margin-top:36px;padding-top:18px;display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--n300)}
+
+/* mobile */
+.mob{display:none;background:var(--navy);color:var(--white);padding:4px var(--pad) 0}
+.mob.open{display:block}
+.mob details{border-bottom:1px solid rgba(177,189,255,.18)}
+.mob summary{list-style:none;cursor:pointer;font-weight:700;font-size:18px;padding:16px 0;display:flex;justify-content:space-between}
+.mob summary::-webkit-details-marker{display:none}
+.mob summary::after{content:"+";color:var(--blue-200)}
+.mob details[open] summary::after{content:"–"}
+.mob .lnk{display:block;padding:10px 0 10px 12px;color:var(--blue-100)}
+.mob .lnk small{display:block;color:var(--n300);font-size:13px}
+.mob .top{display:block;font-weight:700;font-size:18px;padding:16px 0;border-bottom:1px solid rgba(177,189,255,.18)}
+.mob .sub{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--n300);padding:10px 0 2px 12px}
+.mob .pin{position:sticky;bottom:0;background:var(--navy);padding:16px 0;display:grid;gap:10px}
+.mob .pin .btn{justify-content:center}
+
+@media (max-width:1020px){
+  .nav,.right{display:none}
+  .menu-btn{display:inline-flex}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="proto" role="region" aria-label="Prototype controls">
+  <b>Navigation prototype 2026-10-22</b> · not part of the site ·
+  <span>Products:</span>
+  <button type="button" data-stage="3" aria-pressed="true">3 · today</button>
+  <button type="button" data-stage="5" aria-pressed="false">5 · + head, ring (examples)</button>
+  <button type="button" data-stage="8" aria-pressed="false">8 · families (fictional)</button>
+  <span class="sep"></span>
+  <span>Open:</span>
+  <button type="button" data-open="products" aria-pressed="false">Products</button>
+  <button type="button" data-open="industries" aria-pressed="false">Industries</button>
+  <button type="button" data-open="resources" aria-pressed="false">Resources</button>
+  <button type="button" data-open="company" aria-pressed="false">Company</button>
+  <button type="button" data-open="login" aria-pressed="false">Log in</button>
+</div>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="logo" href="/" aria-label="3DLOOK home"><svg viewBox="0 0 22 20" aria-hidden="true"><path d="M11 1 21 19H1z" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"/></svg>3DLOOK</a>
+    <ul class="nav">
+      <li><button type="button" aria-expanded="false" aria-controls="p-products" data-menu="products">Products</button></li>
+      <li><button type="button" aria-expanded="false" aria-controls="p-industries" data-menu="industries">Industries</button></li>
+      <li><a href="/pricing/">Pricing</a></li>
+      <li><button type="button" aria-expanded="false" aria-controls="p-resources" data-menu="resources">Resources</button></li>
+      <li><button type="button" aria-expanded="false" aria-controls="p-company" data-menu="company">Company</button></li>
+    </ul>
+    <div class="right">
+      <button class="login" type="button" aria-expanded="false" aria-controls="p-login" data-menu="login">Log in</button>
+      <a class="btn" href="/contact-us/">Book a demo</a>
+      <div class="login-panel" id="p-login" data-render="login"></div>
+    </div>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mob">
+      <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>Menu
+    </button>
+  </div>
+
+  <div class="panel" id="p-products"><div class="wrap" data-render="products"></div></div>
+  <div class="panel" id="p-industries"><div class="wrap" data-render="industries"></div></div>
+  <div class="panel" id="p-resources"><div class="wrap">
+    <div class="grid" style="grid-template-columns:repeat(4,1fr)">
+      <a class="item" href="/content-hub/"><span class="nm">Content Hub</span><span class="ds">Guides, comparisons and product updates</span></a>
+      <a class="item" href="/case-studies/"><span class="nm">Case studies</span><span class="ds">How clients use 3DLOOK body scanning</span></a>
+      <a class="item" href="/ebook-the-next-big-leap-in-health/"><span class="nm">eBooks</span><span class="ds">Long-form guides for health programs</span></a>
+      <a class="item" href="/developers/"><span class="nm">Developers</span><span class="ds">API, SDKs and integration guides</span></a>
+    </div>
+  </div></div>
+  <div class="panel" id="p-company"><div class="wrap">
+    <div class="grid" style="grid-template-columns:repeat(4,1fr)">
+      <a class="item" href="/about-us/"><span class="nm">About us</span><span class="ds">Who we are, since 2016</span></a>
+      <a class="item" href="/careers/"><span class="nm">Careers</span><span class="ds">Open roles</span></a>
+      <a class="item" href="/partners/"><span class="nm">Partners</span><span class="ds">Integration and channel partners</span></a>
+      <a class="item" href="/contact-us/"><span class="nm">Contact</span><span class="ds">Sales, support and press</span></a>
+    </div>
+  </div></div>
+
+  <nav class="mob" id="mob" aria-label="Mobile" data-render="mobile"></nav>
+</header>
+
+<main class="page">
+  <div class="wrap">
+    <div class="note">
+      <h2>What this prototype shows</h2>
+      <p>Five top-level items for any number of products: Products, Industries, Pricing, Resources, Company. Log in and Book a demo sit on the right. Switch the product count above: the header itself never changes, only the inside of the Products and Industries panels.</p>
+      <ul>
+        <li>Up to 6 products: one card per product in a grid.</li>
+        <li>From 7 products: columns by product family (Body · Hand and wrist · Head).</li>
+        <li>Industries: one column per industry family; only published pages; 6 links per column, then "All … use cases".</li>
+        <li>Every choice appears once. Technology is the first row of Products; Accuracy and Privacy sit in its footer row.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="logo" href="/"><svg viewBox="0 0 22 20" aria-hidden="true"><path d="M11 1 21 19H1z" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"/></svg>3DLOOK</a>
+        <div class="pills"><span class="pill">HIPAA Compliant</span><span class="pill">GDPR</span></div></div>
+      <div><h4>Products</h4><ul data-render="foot-products"></ul></div>
+      <div><h4>Industries</h4><ul data-render="foot-industries"></ul></div>
+      <div><h4>Resources</h4><ul><li><a href="/technology/">Technology</a></li><li><a href="/pricing/">Pricing</a></li><li><a href="/content-hub/">Content Hub</a></li><li><a href="/case-studies/">Case studies</a></li><li><a href="/developers/">Developers</a></li><li><a href="/content-hub/mobile-body-scanning-accuracy/">Accuracy</a></li><li><a href="/content-hub/fitxpress-data-privacy-security-regulatory-faq/">Privacy and security</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="/about-us/">About us</a></li><li><a href="/careers/">Careers</a></li><li><a href="/partners/">Partners</a></li><li><a href="/contact-us/">Contact</a></li></ul></div>
+    </div>
+    <div class="legal"><a href="/terms-and-policies/">Terms and policies</a><a href="/privacy-policy/">Privacy policy</a><a href="#cookie-settings">Cookie settings</a><a href="/sitemap/">Sitemap</a><span>© 3DLOOK Inc.</span></div>
+  </div>
+</footer>
+
+<script>
+/* Same registry shape as the homepage prototype. family: body | hand | head.
+   status: live | example. Use cases: only "live" render. */
+const ALL = [
+  {id:"fitxpress", name:"FitXpress", family:"body", stage:3, status:"live", url:"/fitxpress/",
+   label:"Body scanning API for health and fitness programs",
+   industry:"Health and fitness",
+   useCases:[
+     {name:"Telehealth and digital health", url:"/structured-body-data-for-telehealth-digital-health-programs/", status:"live"},
+     {name:"BMI verification for online pharmacies", url:"/for-bmi-verification/", status:"live"},
+     {name:"Life insurance underwriting", url:"/fitxpress/for-insurance-underwriting/", status:"live"},
+     {name:"Fitness apps", url:"/fitxpress/for-connected-and-digital-fitness/", status:"live"},
+     {name:"GLP-1 programs", url:"/fitxpress/for-glp-1-programs/", status:"planned"},
+     {name:"Bariatric programs", url:"/fitxpress/for-bariatric-programs/", status:"planned"},
+     {name:"Employee wellness", url:"/fitxpress/for-wellness-programs/", status:"planned"},
+     {name:"Occupational health", url:"/fitxpress/for-occupational-health/", status:"planned"},
+     {name:"Clinical trials", url:"/fitxpress/for-clinical-trials/", status:"planned"}],
+   allUseCases:"/fitxpress/#use-cases", login:{name:"FitXpress Admin Panel", url:"#fitxpress-admin-url", desc:"Monitor and export scan results"}},
+  {id:"mobile-tailor", name:"Mobile Tailor", family:"body", stage:3, status:"live", url:"/mobile-tailor/",
+   label:"AI body measurements for apparel and uniforms",
+   industry:"Apparel and uniforms",
+   useCases:[
+     {name:"Made-to-measure", url:"/mobile-tailor/for-made-to-measure/", status:"live"},
+     {name:"On-demand manufacturing", url:"/mobile-tailor/for-on-demand-manufacturing/", status:"live"},
+     {name:"Uniforms and protective equipment", url:"/mobile-tailor/for-uniforms/", status:"live"}],
+   allUseCases:"/mobile-tailor/#use-cases", login:{name:"Mobile Tailor", url:"https://mtm.3dlook.me/", desc:"Measurement dashboard"}},
+  {id:"wrist", name:"Wrist Measurement", family:"hand", stage:3, status:"live", url:"/wrist-measurement/",
+   label:"Wrist sizing API for jewelry, watches and wearables",
+   industry:"Jewelry, watches and wearables",
+   useCases:[{name:"Wrist sizing", url:"/wrist-measurement/", status:"live"}]},
+  {id:"head", name:"Head Measurement", family:"head", stage:5, status:"example", url:"#",
+   label:"Head size for helmets and headgear (example)",
+   industry:"Protective equipment",
+   useCases:[{name:"Helmet and headgear sizing (example)", url:"#", status:"live"}]},
+  {id:"ring", name:"Ring Sizing", family:"hand", stage:5, status:"example", url:"#",
+   label:"Finger size for rings and smart rings (example)",
+   industry:"Jewelry, watches and wearables",
+   useCases:[{name:"Ring sizing (example)", url:"#", status:"live"}]},
+  {id:"ex-f", name:"Product F", family:"body", stage:8, status:"example", url:"#", label:"Fictional, layout test only", industry:"Health and fitness", useCases:[]},
+  {id:"ex-g", name:"Product G", family:"hand", stage:8, status:"example", url:"#", label:"Fictional, layout test only", industry:"Jewelry, watches and wearables", useCases:[]},
+  {id:"ex-h", name:"Product H", family:"head", stage:8, status:"example", url:"#", label:"Fictional, layout test only", industry:"Protective equipment", useCases:[]}
+];
+const FAMILIES = {body:"Body", hand:"Hand and wrist", head:"Head"};
+let stage = 3;
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const products = () => ALL.filter(p => p.stage <= stage);
+const live = p => p.useCases.filter(u => u.status === "live");
+const badge = p => p.status === "example" ? '<span class="badge ex">Example</span>' : (p.isNew ? '<span class="badge new">New</span>' : "");
+const industries = () => {
+  const m = new Map();
+  products().forEach(p => { if (!m.has(p.industry)) m.set(p.industry, []); m.get(p.industry).push(p); });
+  return [...m.entries()].filter(([, ps]) => ps.some(p => live(p).length));
+};
+const card = p => `<a class="item" href="${p.url}"><span class="nm">${esc(p.name)} ${badge(p)}</span><span class="ds">${esc(p.label)}</span></a>`;
+
+function renderProducts() {
+  const ps = products();
+  const head = `<a class="p-head" href="/technology/"><div><b>How 3DLOOK body scanning works</b><span>One two-photo capture and one body model behind every product</span></div><span class="go">Technology →</span></a>`;
+  let body;
+  if (ps.length <= 6) {
+    body = `<div class="grid" style="grid-template-columns:repeat(${Math.min(ps.length, 3)},1fr)">${ps.map(card).join("")}</div>`;
+  } else {
+    const fams = Object.keys(FAMILIES).filter(f => ps.some(p => p.family === f));
+    body = `<div class="grid" style="grid-template-columns:repeat(${fams.length},1fr)">` + fams.map(f =>
+      `<div><div class="grp">${FAMILIES[f]}</div>${ps.filter(p => p.family === f).map(card).join("")}</div>`).join("") + `</div>`;
+  }
+  const foot = `<div class="p-foot"><a href="/content-hub/mobile-body-scanning-accuracy/">Accuracy</a><a href="/content-hub/fitxpress-data-privacy-security-regulatory-faq/">Privacy and security</a><a href="/#products">Compare all products</a></div>`;
+  return head + body + foot;
+}
+function renderIndustries() {
+  const inds = industries();
+  return `<div class="grid uc" style="grid-template-columns:repeat(${Math.min(inds.length, 4)},1fr)">` + inds.map(([name, ps]) => {
+    const links = ps.flatMap(p => live(p).map(u => ({...u, p})));
+    const shown = links.slice(0, 6);
+    const owner = ps.length === 1 ? `<a href="${ps[0].url}">${esc(ps[0].name)}</a>` : ps.map(p => `<a href="${p.url}">${esc(p.name)}</a>`).join(" · ");
+    const more = links.length > 6 && ps[0].allUseCases ? `<a class="more" href="${ps[0].allUseCases}">All ${esc(name.toLowerCase())} use cases →</a>` : "";
+    return `<div><div class="col-title"><b>${esc(name)}</b><span class="own">${owner}</span></div>${shown.map(u => `<a class="item" href="${u.url}"><span class="nm">${esc(u.name)}</span></a>`).join("")}${more}</div>`;
+  }).join("") + `</div>`;
+}
+function renderLogin() {
+  return products().filter(p => p.login).map(p => `<a class="item" href="${p.login.url}"><span class="nm">${esc(p.login.name)}</span><span class="ds">${esc(p.login.desc)}</span></a>`).join("");
+}
+function renderMobile() {
+  const ps = products();
+  const prod = `<details><summary>Products</summary><a class="lnk" href="/technology/">How 3DLOOK body scanning works</a>${ps.map(p => `<a class="lnk" href="${p.url}">${esc(p.name)}<small>${esc(p.label)}</small></a>`).join("")}</details>`;
+  const ind = `<details><summary>Industries</summary>${industries().map(([n, pp]) => `<div class="sub">${esc(n)}</div>` + pp.flatMap(p => live(p)).slice(0, 6).map(u => `<a class="lnk" href="${u.url}">${esc(u.name)}</a>`).join("")).join("")}</details>`;
+  return prod + ind +
+    `<a class="top" href="/pricing/">Pricing</a>` +
+    `<details><summary>Resources</summary><a class="lnk" href="/content-hub/">Content Hub</a><a class="lnk" href="/case-studies/">Case studies</a><a class="lnk" href="/ebook-the-next-big-leap-in-health/">eBooks</a><a class="lnk" href="/developers/">Developers</a></details>` +
+    `<details><summary>Company</summary><a class="lnk" href="/about-us/">About us</a><a class="lnk" href="/careers/">Careers</a><a class="lnk" href="/partners/">Partners</a><a class="lnk" href="/contact-us/">Contact</a></details>` +
+    `<details><summary>Log in</summary>${ps.filter(p => p.login).map(p => `<a class="lnk" href="${p.login.url}">${esc(p.login.name)}</a>`).join("")}</details>` +
+    `<div class="pin"><a class="btn" href="/contact-us/">Book a demo</a></div>`;
+}
+function render() {
+  const R = (k, h) => document.querySelectorAll(`[data-render="${k}"]`).forEach(el => el.innerHTML = h);
+  R("products", renderProducts());
+  R("industries", renderIndustries());
+  R("login", renderLogin());
+  R("mobile", renderMobile());
+  R("foot-products", products().map(p => `<li><a href="${p.url}">${esc(p.name)}</a></li>`).join(""));
+  R("foot-industries", industries().map(([n, ps]) => `<li><a href="${ps[0].url}">${esc(n)}</a></li>`).join(""));
+}
+
+/* open/close: click (keyboard and touch), hover intent 300 ms for mouse, Escape and outside click close */
+const triggers = [...document.querySelectorAll("[data-menu]")];
+const panelOf = t => document.getElementById(t.getAttribute("aria-controls"));
+function openMenu(name) {
+  triggers.forEach(t => { const on = t.dataset.menu === name; t.setAttribute("aria-expanded", String(on)); panelOf(t).classList.toggle("open", on); });
+  document.querySelectorAll(".proto [data-open]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.open === name)));
+}
+triggers.forEach(t => {
+  t.addEventListener("click", e => { e.stopPropagation(); openMenu(t.getAttribute("aria-expanded") === "true" ? null : t.dataset.menu); });
+  let timer;
+  t.addEventListener("mouseenter", () => { timer = setTimeout(() => openMenu(t.dataset.menu), 300); });
+  t.addEventListener("mouseleave", () => clearTimeout(timer));
+});
+document.addEventListener("click", e => { if (!e.target.closest(".panel,.login-panel,.proto")) openMenu(null); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") openMenu(null); });
+document.querySelector(".hdr").addEventListener("mouseleave", () => openMenu(null));
+const mb = document.querySelector(".menu-btn");
+mb.addEventListener("click", () => { const o = mb.getAttribute("aria-expanded") !== "true"; mb.setAttribute("aria-expanded", String(o)); document.getElementById("mob").classList.toggle("open", o); });
+
+document.querySelectorAll(".proto [data-stage]").forEach(b => b.addEventListener("click", e => {
+  e.stopPropagation(); stage = +b.dataset.stage;
+  document.querySelectorAll(".proto [data-stage]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+  const openName = (triggers.find(t => t.getAttribute("aria-expanded") === "true") || {}).dataset?.menu;
+  render(); if (openName) openMenu(openName);
+}));
+document.querySelectorAll(".proto [data-open]").forEach(b => b.addEventListener("click", e => { e.stopPropagation(); openMenu(b.getAttribute("aria-pressed") === "true" ? null : b.dataset.open); }));
+
+render();
+</script>
+</body>
+</html>
