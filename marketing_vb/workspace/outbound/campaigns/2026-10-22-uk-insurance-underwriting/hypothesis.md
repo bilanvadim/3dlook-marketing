@@ -223,6 +223,10 @@ Vadim approved the hypothesis after the QC fix round («все так. споч�
 6. **Chesnara Life is OUT.** Aviva is IN, and the AIG Life deal is never mentioned.
 7. **People source:** Sales Navigator first (`outbound_pack.py sales-nav-query`, with the United Kingdom geography filter added by hand), then an Apollo top-up (`apollo-pull.py search`, then `enrich`, with the credit count named to Vadim before `enrich` if it exceeds 100).
 
+## Vadim's decisions 2026-10-22 (3)
+
+After research, Vadim on the three displacement holds: «залишай всі». **Legal & General, Hannover Re UK Life Branch and Gen Re UK stay IN.** Their earlier face- or video-based estimates (L&G America's 2017 selfie quote, never launched in the UK; Gen Re's 2019 selfie-BMI prototype for the US and Asia; Hannover Re UK's face-scan study for vital signs, not build, and the group's video-BMI pilot in South Africa) are context for the company line only. The vendor and product names stay banned in copy.
+
 ## Validation criteria (Step 2 will check)
 
 - **Companies.** 28 named candidates (18 + 7 + 3); target 25 IN rows from groups A, B and C. Fewer than 22: stop and report to Vadim; do not widen to group risk, PMI, brokers or evidence suppliers on your own, and do not add companies to reach a number. Each insurer is confirmed open to new underwritten UK individual protection in 2026 (adviser site, product page or 2026 trade press); each reinsurer row is the UK life and health team writing UK protection; each platform is used by UK protection insurers at the point of sale.
