@@ -46,9 +46,6 @@ a{color:inherit;text-decoration:none}
 .nav>li>button:hover,.nav>li>a:hover,.nav>li>button[aria-expanded="true"]{background:rgba(255,255,255,.09)}
 .nav>li>a[aria-current="page"]{box-shadow:inset 0 -2px 0 var(--blue-300)}
 .right{display:flex;align-items:center;gap:14px;position:relative}
-.login{font:500 15px/1 var(--font);color:var(--blue-100);background:none;border:0;cursor:pointer;display:inline-flex;gap:6px;align-items:center;padding:10px 8px;border-radius:var(--r-5)}
-.login::after{content:"";width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px)}
-.login:hover,.login[aria-expanded="true"]{color:var(--white);background:rgba(255,255,255,.09)}
 .btn{display:inline-flex;align-items:center;font:700 16px/1 var(--font);padding:14px 22px;border-radius:var(--r-5);background:var(--blue);color:var(--white)}
 .btn:hover{background:var(--blue-600)}
 .menu-btn{display:none;margin-left:auto;font:700 15px/1 var(--font);color:var(--white);background:rgba(255,255,255,.1);border:0;border-radius:var(--r-5);padding:11px 14px;cursor:pointer;gap:8px;align-items:center}
@@ -81,8 +78,6 @@ a{color:inherit;text-decoration:none}
 .uc a.item .nm{font-weight:500}
 .more{display:inline-block;margin:6px 0 0 12px;font-size:14px;font-weight:700;color:var(--blue)}
 .small-panel{left:auto;width:auto;min-width:320px;border-radius:var(--r-20)}
-.login-panel{position:absolute;right:120px;top:60px;width:320px;background:var(--white);color:var(--ink);border-radius:var(--r-20);box-shadow:0 24px 50px rgba(5,15,64,.25);padding:12px;display:none}
-.login-panel.open{display:block}
 
 /* page under the header */
 .page{padding:48px 0 80px}
@@ -137,7 +132,6 @@ a{color:inherit;text-decoration:none}
   <button type="button" data-open="industries" aria-pressed="false">Industries</button>
   <button type="button" data-open="resources" aria-pressed="false">Resources</button>
   <button type="button" data-open="company" aria-pressed="false">Company</button>
-  <button type="button" data-open="login" aria-pressed="false">Log in</button>
 </div>
 
 <header class="hdr">
@@ -151,9 +145,7 @@ a{color:inherit;text-decoration:none}
       <li><button type="button" aria-expanded="false" aria-controls="p-company" data-menu="company">Company</button></li>
     </ul>
     <div class="right">
-      <button class="login" type="button" aria-expanded="false" aria-controls="p-login" data-menu="login">Log in</button>
       <a class="btn" href="/contact-us/">Book a demo</a>
-      <div class="login-panel" id="p-login" data-render="login"></div>
     </div>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mob">
       <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>Menu
@@ -166,7 +158,7 @@ a{color:inherit;text-decoration:none}
     <div class="grid" style="grid-template-columns:repeat(4,1fr)">
       <a class="item" href="/content-hub/"><span class="nm">Content Hub</span><span class="ds">Guides, comparisons and product updates</span></a>
       <a class="item" href="/case-studies/"><span class="nm">Case studies</span><span class="ds">How clients use 3DLOOK body scanning</span></a>
-      <a class="item" href="/ebook-the-next-big-leap-in-health/"><span class="nm">eBooks</span><span class="ds">Long-form guides for health programs</span></a>
+      <a class="item" href="/content-hub/category/ebooks/"><span class="nm">eBooks</span><span class="ds">Long-form guides on health and retail</span></a>
       <a class="item" href="/developers/"><span class="nm">Developers</span><span class="ds">API, SDKs and integration guides</span></a>
     </div>
   </div></div>
@@ -186,7 +178,7 @@ a{color:inherit;text-decoration:none}
   <div class="wrap">
     <div class="note">
       <h2>What this prototype shows</h2>
-      <p>Five top-level items for any number of products: Products, Industries, Pricing, Resources, Company. Log in and Book a demo sit on the right. Switch the product count above: the header itself never changes, only the inside of the Products and Industries panels.</p>
+      <p>Five top-level items for any number of products: Products, Industries, Pricing, Resources, Company. Book a demo sits on the right; the Mobile Tailor login lives in the footer (no header login: GA4 recorded zero clicks from the site to the app in 90 days, and FitXpress has no public login). Switch the product count above: the header itself never changes, only the inside of the Products and Industries panels.</p>
       <ul>
         <li>Up to 6 products: one card per product in a grid.</li>
         <li>From 7 products: columns by product family (Body · Hand and wrist · Head).</li>
@@ -207,7 +199,7 @@ a{color:inherit;text-decoration:none}
       <div><h4>Resources</h4><ul><li><a href="/technology/">Technology</a></li><li><a href="/pricing/">Pricing</a></li><li><a href="/content-hub/">Content Hub</a></li><li><a href="/case-studies/">Case studies</a></li><li><a href="/developers/">Developers</a></li><li><a href="/content-hub/mobile-body-scanning-accuracy/">Accuracy</a></li><li><a href="/content-hub/fitxpress-data-privacy-security-regulatory-faq/">Privacy and security</a></li></ul></div>
       <div><h4>Company</h4><ul><li><a href="/about-us/">About us</a></li><li><a href="/careers/">Careers</a></li><li><a href="/partners/">Partners</a></li><li><a href="/contact-us/">Contact</a></li></ul></div>
     </div>
-    <div class="legal"><a href="/terms-and-policies/">Terms and policies</a><a href="/privacy-policy/">Privacy policy</a><a href="#cookie-settings">Cookie settings</a><a href="/sitemap/">Sitemap</a><span>© 3DLOOK Inc.</span></div>
+    <div class="legal"><a href="/terms-and-policies/">Terms and policies</a><a href="/privacy-policy/">Privacy policy</a><a href="#cookie-settings">Cookie settings</a><a href="/sitemap/">Sitemap</a><span data-render="foot-logins"></span><span>© 3DLOOK Inc.</span></div>
   </div>
 </footer>
 
@@ -228,7 +220,7 @@ const ALL = [
      {name:"Employee wellness", url:"/fitxpress/for-wellness-programs/", status:"planned"},
      {name:"Occupational health", url:"/fitxpress/for-occupational-health/", status:"planned"},
      {name:"Clinical trials", url:"/fitxpress/for-clinical-trials/", status:"planned"}],
-   allUseCases:"/fitxpress/#use-cases", login:{name:"FitXpress Admin Panel", url:"#fitxpress-admin-url", desc:"Monitor and export scan results"}},
+   allUseCases:"/fitxpress/#use-cases"},
   {id:"mobile-tailor", name:"Mobile Tailor", family:"body", stage:3, status:"live", url:"/mobile-tailor/",
    label:"AI body measurements for apparel and uniforms",
    industry:"Apparel and uniforms",
@@ -290,25 +282,21 @@ function renderIndustries() {
     return `<div><div class="col-title"><b>${esc(name)}</b><span class="own">${owner}</span></div>${shown.map(u => `<a class="item" href="${u.url}"><span class="nm">${esc(u.name)}</span></a>`).join("")}${more}</div>`;
   }).join("") + `</div>`;
 }
-function renderLogin() {
-  return products().filter(p => p.login).map(p => `<a class="item" href="${p.login.url}"><span class="nm">${esc(p.login.name)}</span><span class="ds">${esc(p.login.desc)}</span></a>`).join("");
-}
 function renderMobile() {
   const ps = products();
   const prod = `<details><summary>Products</summary><a class="lnk" href="/technology/">How 3DLOOK body scanning works</a>${ps.map(p => `<a class="lnk" href="${p.url}">${esc(p.name)}<small>${esc(p.label)}</small></a>`).join("")}</details>`;
   const ind = `<details><summary>Industries</summary>${industries().map(([n, pp]) => `<div class="sub">${esc(n)}</div>` + pp.flatMap(p => live(p)).slice(0, 6).map(u => `<a class="lnk" href="${u.url}">${esc(u.name)}</a>`).join("")).join("")}</details>`;
   return prod + ind +
     `<a class="top" href="/pricing/">Pricing</a>` +
-    `<details><summary>Resources</summary><a class="lnk" href="/content-hub/">Content Hub</a><a class="lnk" href="/case-studies/">Case studies</a><a class="lnk" href="/ebook-the-next-big-leap-in-health/">eBooks</a><a class="lnk" href="/developers/">Developers</a></details>` +
+    `<details><summary>Resources</summary><a class="lnk" href="/content-hub/">Content Hub</a><a class="lnk" href="/case-studies/">Case studies</a><a class="lnk" href="/content-hub/category/ebooks/">eBooks</a><a class="lnk" href="/developers/">Developers</a></details>` +
     `<details><summary>Company</summary><a class="lnk" href="/about-us/">About us</a><a class="lnk" href="/careers/">Careers</a><a class="lnk" href="/partners/">Partners</a><a class="lnk" href="/contact-us/">Contact</a></details>` +
-    `<details><summary>Log in</summary>${ps.filter(p => p.login).map(p => `<a class="lnk" href="${p.login.url}">${esc(p.login.name)}</a>`).join("")}</details>` +
     `<div class="pin"><a class="btn" href="/contact-us/">Book a demo</a></div>`;
 }
 function render() {
   const R = (k, h) => document.querySelectorAll(`[data-render="${k}"]`).forEach(el => el.innerHTML = h);
   R("products", renderProducts());
   R("industries", renderIndustries());
-  R("login", renderLogin());
+  R("foot-logins", products().filter(p => p.login).map(p => `<a href="${p.login.url}">${esc(p.name)} login</a>`).join(""));
   R("mobile", renderMobile());
   R("foot-products", products().map(p => `<li><a href="${p.url}">${esc(p.name)}</a></li>`).join(""));
   R("foot-industries", industries().map(([n, ps]) => `<li><a href="${ps[0].url}">${esc(n)}</a></li>`).join(""));
@@ -327,7 +315,7 @@ triggers.forEach(t => {
   t.addEventListener("mouseenter", () => { timer = setTimeout(() => openMenu(t.dataset.menu), 300); });
   t.addEventListener("mouseleave", () => clearTimeout(timer));
 });
-document.addEventListener("click", e => { if (!e.target.closest(".panel,.login-panel,.proto")) openMenu(null); });
+document.addEventListener("click", e => { if (!e.target.closest(".panel,.proto")) openMenu(null); });
 document.addEventListener("keydown", e => { if (e.key === "Escape") openMenu(null); });
 document.querySelector(".hdr").addEventListener("mouseleave", () => openMenu(null));
 const mb = document.querySelector(".menu-btn");

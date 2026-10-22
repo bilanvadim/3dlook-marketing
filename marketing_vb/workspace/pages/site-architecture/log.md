@@ -15,3 +15,7 @@ Start here: `architecture-2026-10-22.md` (Ukrainian), then `nav-prototype-2026-1
 **Checks:** prototype screenshots at 1440 (Products and Industries at 3 / 5 / 8 products, Log in) and 390 (mobile menu); no horizontal scroll at 390.
 
 **Open:** A-1…A-7 in the architecture file. Nothing committed or sent.
+
+## 2026-10-22 · approved, then adjusted
+
+Vadim «ок» → A-1, A-2, A-4, A-7 closed. Later the same day: no header login (A-3: FitXpress has no public login; GA4 shows zero site clicks to the Mobile Tailor app), eBooks → `/content-hub/category/ebooks/` (A-5), head and ring not before 2027 (A-6). Prototype, screenshots and Figma updated; `screenshot-login.jpeg` removed.
