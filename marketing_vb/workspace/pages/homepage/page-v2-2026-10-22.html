@@ -61,7 +61,7 @@
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "item": {"@id": "https://3dlook.ai/fitxpress/#software", "name": "FitXpress", "url": "https://3dlook.ai/fitxpress/"}},
         {"@type": "ListItem", "position": 2, "item": {"@id": "https://3dlook.ai/mobile-tailor/#software", "name": "Mobile Tailor", "url": "https://3dlook.ai/mobile-tailor/"}},
-        {"@type": "ListItem", "position": 3, "item": {"@id": "https://3dlook.ai/wrist-measurement/#software", "name": "Wrist Measurement", "url": "https://3dlook.ai/wrist-measurement/"}}
+        {"@type": "ListItem", "position": 3, "item": {"@id": "https://3dlook.ai/wrist-measurement/#software", "name": "AI Wrist Measurement", "url": "https://3dlook.ai/wrist-measurement/"}}
       ]
     }
   ]
@@ -389,6 +389,41 @@ h3{font-size:clamp(22px,2vw,27px);font-weight:500}
 .mnav .sub{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--n300);padding:10px 0 2px 12px}
 .mnav .pin{position:sticky;bottom:0;background:var(--navy);padding:16px 0;display:grid}
 .mnav .pin .btn{justify-content:center}
+/* 10-22 · Asel's review: tiles inside the hero grid (phones: audience choice before the visual), 3-step flow, case line, card secondary link, scrollable mobile menu */
+.v2-in{grid-template-areas:"txt vis" "tiles tiles"}
+.v2-in>div:first-child{grid-area:txt}
+.v2-in>.v2-visual{grid-area:vis}
+.v2-in>.ptiles{grid-area:tiles;padding-top:0}
+.flow{grid-template-columns:repeat(3,1fr)}
+.case-line{text-align:center;margin-top:20px;font-size:15px}
+.card .c-links .sec{font-size:15px;font-weight:500;color:var(--g700);text-decoration:none}
+.card .c-links .sec:hover{color:var(--acc)}
+.mnav.open{max-height:calc(100dvh - 110px);overflow-y:auto;overscroll-behavior:contain}
+.vt{background:var(--ink2)}
+.vt .sec-head p{color:#C9CEE6}
+.vt-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px}
+.vt-card{display:flex;flex-direction:column;gap:10px;text-decoration:none;color:var(--white);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.14);border-top:3px solid var(--acc);border-radius:var(--r-20);padding:26px;transition:background .2s ease}
+.vt-card:hover{background:rgba(255,255,255,.08)}
+.vt-card b{font-size:20px}
+.vt-card span{color:#C9CEE6;font-size:15px}
+.vt-card em{margin-top:auto;padding-top:8px;font-style:normal;font-weight:700;font-size:15px;color:var(--acc)}
+.vt-card em::after,.vt-case em::after{content:" →"}
+.vt-note{margin-top:14px;font-size:13px;color:#8F95B2}
+.vt-case{display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;margin-top:28px;padding:22px 26px;border:1px solid rgba(255,255,255,.14);border-radius:var(--r-20);text-decoration:none;color:var(--white)}
+.vt-case:hover{background:rgba(255,255,255,.05)}
+.vt-logo{font-weight:900;letter-spacing:.08em;text-transform:uppercase;font-size:17px;color:#E3E6F3}
+.vt-txt small{display:block;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--fx-l)}
+.vt-txt b{display:block;font-size:20px;margin:4px 0}
+.vt-txt span{color:#C9CEE6;font-size:15px}
+.vt-case em{font-style:normal;font-weight:700;font-size:15px;color:var(--fx-l);white-space:nowrap}
+@media (max-width:1020px){
+  .vt-cards{grid-template-columns:1fr}
+  .vt-case{grid-template-columns:1fr;gap:10px}
+  .v2-in{grid-template-areas:"txt" "tiles" "vis"}
+  .v2-in>.ptiles{padding-bottom:0}
+  .v2-in>.v2-visual{margin-bottom:28px}
+  .flow{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
@@ -505,8 +540,8 @@ h3{font-size:clamp(22px,2vw,27px);font-weight:500}
         <span class="chipv wm" style="top:33%;left:62%">Wrist circumference</span>
         <span class="chipv wm" style="top:60%;left:62%">Matched to your size chart</span>
       </div>
+      <div class="ptiles" data-render="ptiles"></div>
     </div>
-    <div class="wrap"><div class="ptiles" data-render="ptiles"></div></div>
   </section>
 
   <!-- 2 · logos -->
@@ -524,8 +559,8 @@ h3{font-size:clamp(22px,2vw,27px);font-weight:500}
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow">Products</p>
-        <h2>Products built on one body-scanning technology</h2>
-        <p>Every 3DLOOK product uses the same two-photo capture and the same body model. Each one is built for a different workflow.</p>
+        <h2>Choose the product for what you need to measure</h2>
+        <p>Each 3DLOOK product has its own guided capture, outputs and route into your workflow.</p>
       </div>
       <div class="products" data-render="products"></div>
     </div>
@@ -540,18 +575,35 @@ h3{font-size:clamp(22px,2vw,27px);font-weight:500}
         <p>Mobile 3D body scanning estimates body shape and body measurements from photos taken on an ordinary smartphone camera, with no booth-style 3D body scanner or wearable. Each 3DLOOK 3D body scan needs two photos: one from the front and one from the side.</p>
       </div>
       <ol class="flow">
-        <li><div class="n">01</div><b>Your app or website</b><span>Guided capture with the 3DLOOK software development kit (SDK)</span><em>Customer side</em></li>
-        <li><div class="n">02</div><b>Your backend</b><span>Sends the photos and orchestrates application programming interface (API) calls</span><em>Customer side</em></li>
-        <li class="ours"><div class="n">03</div><b>3DLOOK API</b><span>Processes the photos into measurements, estimates and a 3D model</span><em>3DLOOK side</em></li>
-        <li><div class="n">04</div><b>Your backend</b><span>Receives the structured results</span><em>Customer side</em></li>
-        <li><div class="n">05</div><b>Your product</b><span>Shows the results where your workflow needs them</span><em>Customer side</em></li>
+        <li><div class="n">01</div><b>Capture</b><span>Guided photos in your app or website, with the 3DLOOK software development kit (SDK)</span><em>Customer side</em></li>
+        <li class="ours"><div class="n">02</div><b>Process</b><span>The 3DLOOK application programming interface (API) turns the photos into measurements, estimates and a 3D model</span><em>3DLOOK side</em></li>
+        <li><div class="n">03</div><b>Use the results</b><span>Your backend receives structured results, and your product shows them where the workflow needs them</span><em>Customer side</em></li>
       </ol>
       <div class="split">
         <div class="ours"><h3>3DLOOK provides</h3><ul><li>Guided capture with pose, framing and clothing checks</li><li>Photo processing and the body model</li><li>A structured results payload</li><li>Integration documentation and support</li></ul></div>
         <div><h3>Your team builds</h3><ul><li>The user journey and onboarding</li><li>Consent and privacy messaging</li><li>Where the results appear in your product</li><li>Your own decision rules and workflows</li></ul></div>
       </div>
-      <p class="mt-note"><b>Mobile Tailor</b>also works without any integration: a business sends a scan link or adds a measurement widget to its site, and the results appear in the Mobile Tailor dashboard.</p>
+      <p class="mt-note"><b>No integration needed for apparel.</b>Mobile Tailor works through scan links, a website measurement widget and a dashboard.</p>
       <p style="margin-top:22px"><a class="link-arrow" href="/technology/">Read how the body scanning technology works</a></p>
+    </div>
+  </section>
+
+  <!-- 4b · validation and trust (Asel's review; Vadim 10-22: «в такому вигляді ок», links out to the evidence pages) -->
+  <section class="section trust vt" id="validation">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Validation and trust</p>
+        <h2>Know what the data means. See how it is evaluated.</h2>
+        <p>Review the evidence for the measurements you need and the workflow you plan to support.</p>
+      </div>
+      <div class="vt-cards">
+        <a class="vt-card" href="/content-hub/mobile-body-scanning-accuracy/" style="--acc:#8A9CFF"><b>Body-scanning validation</b><span>Understand reference methods, measurement error and scan-to-scan repeatability for body measurements and derived outputs.</span><em>Read the accuracy framework</em></a>
+        <!-- developer: give the «Accuracy & validation» section of /wrist-measurement/ id="accuracy" and link /wrist-measurement/#accuracy -->
+        <a class="vt-card" href="/wrist-measurement/" style="--acc:#B89BEE"><b>Dedicated wrist validation</b><span>Review wrist-measurement accuracy against expert reference measurements and consistency across repeated scans in lab validation.</span><em>Explore wrist validation</em></a>
+        <a class="vt-card" href="/content-hub/fitxpress-data-privacy-security-regulatory-faq/" style="--acc:#EEEBE5"><b>Data, privacy and security</b><span>Review data retention, security controls and documentation for enterprise deployments. Requirements depend on your workflow and agreement.</span><em>Read the FitXpress privacy and security FAQ</em></a>
+      </div>
+      <p class="vt-note">Validation results depend on the measurement, reference method and capture conditions.</p>
+      <a class="vt-case" href="/content-hub/safarilands-aipowered-body-armor-fitting/"><span class="vt-logo">Safariland</span><span class="vt-txt"><small>Customer application · Apparel and protective equipment</small><b>Remote body measurements for body-armor fitting</b><span>See how Safariland uses 3DLOOK technology in its fitting workflow.</span></span><em>Read the case study</em></a>
     </div>
   </section>
 
@@ -559,13 +611,13 @@ h3{font-size:clamp(22px,2vw,27px);font-weight:500}
   <section class="section" id="latest">
     <div class="wrap">
       <div class="sec-row">
-        <div><p class="eyebrow">Content Hub</p><h2>Latest from the Content Hub</h2></div>
+        <div><p class="eyebrow">Content Hub</p><h2>From the Content Hub</h2></div>
         <a class="link-arrow" href="/content-hub/">All articles</a>
       </div>
       <div class="posts">
-        <a class="post" href="/content-hub/ai-wrist-measurement-expansion/" style="--acc:#7A3CF0"><span class="img" style="background-image:url(https://3dlook.ai/wp-content/uploads/2026/10/cover.webp)"></span><span class="meta"><span class="tag">Wrist Measurement</span><span>Oct 8, 2026</span></span><h3>3DLOOK Expands Its AI Measurement Technology to the Wrist</h3></a>
-        <a class="post" href="/content-hub/manual-vs-digital-intake-occupational-health-screening/" style="--acc:#143DFF"><span class="img" style="background-image:url(https://3dlook.ai/wp-content/uploads/2026/09/cover-4.webp)"></span><span class="meta"><span class="tag">FitXpress</span><span>Sep 21, 2026</span></span><h3>Manual vs Digital Intake in Occupational Health Screening: A Workflow Comparison</h3></a>
-        <a class="post" href="/content-hub/glp-1-market/" style="--acc:#143DFF"><span class="img" style="background-image:url(https://3dlook.ai/wp-content/uploads/2026/08/cover-3.webp)"></span><span class="meta"><span class="tag">FitXpress</span><span>Aug 28, 2026</span></span><h3>GLP-1 Market Growth and the Need for Better Patient Progress Tracking</h3></a>
+        <a class="post" href="/content-hub/mobile-body-scanning-accuracy/" style="--acc:#050F40"><span class="img" style="background-image:url(https://3dlook.ai/wp-content/uploads/2026/07/cover.webp)"></span><span class="meta"><span class="tag">Guide</span><span>Pinned</span></span><h3>Body Scanning Accuracy: An Enterprise Framework</h3></a>
+        <a class="post" href="/content-hub/fitxpress-capture-quality-user-experience-faq/" style="--acc:#143DFF"><span class="img" style="background-image:url(https://3dlook.ai/wp-content/uploads/2026/10/cover-1.webp)"></span><span class="meta"><span class="tag">FitXpress</span><span>Oct 14, 2026</span></span><h3>FitXpress User Experience and Capture Quality FAQ</h3></a>
+        <a class="post" href="/content-hub/ai-wrist-measurement-expansion/" style="--acc:#7A3CF0"><span class="img" style="background-image:url(https://3dlook.ai/wp-content/uploads/2026/10/cover.webp)"></span><span class="meta"><span class="tag">AI Wrist Measurement</span><span>Oct 8, 2026</span></span><h3>3DLOOK Expands Its AI Measurement Technology to the Wrist</h3></a>
       </div>
     </div>
   </section>
@@ -591,10 +643,11 @@ h3{font-size:clamp(22px,2vw,27px);font-weight:500}
     <div class="wrap">
       <h2 style="margin-bottom:28px">Frequently asked questions</h2>
       <div class="faq">
-        <details open><summary>What does 3DLOOK do?</summary><p>3DLOOK builds mobile body-scanning technology that turns two smartphone photos into body measurements, body composition estimates and 3D body models for businesses, delivered through an API and SDKs. FitXpress serves health and fitness programs, Mobile Tailor serves apparel and uniform companies, and Wrist Measurement serves jewelry, watch and wearable brands.</p></details>
-        <details><summary>Which 3DLOOK product fits my business?</summary><p>Health programs, insurers, online pharmacies and fitness apps use FitXpress for body measurements, BMI and body composition estimates. Made-to-measure brands, manufacturers and uniform programs use Mobile Tailor for garment measurements. Jewelry, watch and wearable brands use Wrist Measurement for wrist sizing.</p></details>
-        <details><summary>Can the scan run inside our own app?</summary><p>Yes. The web and mobile SDKs place the guided capture inside the business's own app or web flow, and the results return through the API. Onboarding, consent wording, loading screens and the results screen follow the business's own design. The photo capture layer stays fixed, because its pose and phone-angle checks protect measurement accuracy.</p></details>
-        <details><summary>How do I get access and pricing?</summary><p>FitXpress and Mobile Tailor plans are listed on the <a href="/pricing/">pricing page</a>. Access to the API and SDKs starts with a demo call, where the team confirms the workflow and the integration route.</p></details>
+        <details open><summary>What does 3DLOOK do?</summary><p>3DLOOK builds mobile measurement technology for businesses. Its body scanning turns two smartphone photos into body measurements, body composition estimates and 3D body models, delivered through an API and SDKs. FitXpress serves health, fitness and insurance programs, Mobile Tailor serves apparel and uniform companies, and AI Wrist Measurement serves jewelry, watch and wearable brands.</p></details>
+        <details><summary>Which 3DLOOK product fits my business?</summary><p>Health programs, insurers, online pharmacies and fitness apps use FitXpress for body measurements, BMI and body composition estimates. Made-to-measure brands, manufacturers and uniform programs use Mobile Tailor for garment measurements. Jewelry, watch and wearable brands use AI Wrist Measurement for wrist sizing.</p></details>
+        <details><summary>Do all 3DLOOK products use the same scan?</summary><p>FitXpress and Mobile Tailor use the same body scan: two guided photos, one from the front and one from the side. AI Wrist Measurement has its own flow: two guided photos of the wrist with a standard-size card as a reference, and the result in millimeters is delivered through an API and an SDK.</p></details>
+        <details><summary>Can the scan run inside our own app?</summary><p>Yes. The 3DLOOK SDKs place the guided capture inside the business's own app or web flow, and the results return through the API. Onboarding, consent wording, loading screens and the results screen follow the business's own design. The photo capture layer stays fixed, because its pose and phone-angle checks protect measurement accuracy.</p></details>
+        <details><summary>How do I get access and pricing?</summary><p>FitXpress and Mobile Tailor plans are listed on the <a href="/pricing/">pricing page</a>, and Mobile Tailor starts with a 7-day trial. Access to the API and SDKs starts with a demo call, where the team confirms the workflow and the integration route.</p></details>
       </div>
     </div>
   </section>
@@ -647,36 +700,38 @@ h3{font-size:clamp(22px,2vw,27px);font-weight:500}
    Use cases: only status "live" render; "planned" stays in the data so it appears the day the page ships. */
 const PRODUCTS = [
   {
-    id: "fitxpress", name: "FitXpress", status: "live", featured: true, url: "/fitxpress/", family: "body", lens: "fx", acc: "#143DFF", accL: "#8A9CFF",
+    id: "fitxpress", name: "FitXpress", status: "live", url: "/fitxpress/", family: "body", lens: "fx", acc: "#143DFF", accL: "#8A9CFF",
     allUseCases: "/fitxpress/#use-cases",
     anchor: "Explore the FitXpress AI body scanner",
-    label: "Body scanning API for health and fitness programs",
+    label: "Mobile body scanning for health, fitness and insurance",
     value: "Body measurements, BMI and body composition estimates that remote health programs, insurers and fitness apps can act on.",
-    returns: ["80+ body measurements", "BMI and basal metabolic rate (BMR)", "body composition estimates", "3D body model", "scan-to-scan comparison"],
+    returns: ["80+ body measurements", "BMI and basal metabolic rate (BMR)", "body composition estimates", "predicted weight (Smart Scales)", "3D body model", "Body Progress comparisons"],
     builtFor: ["telehealth and GLP-1 programs", "online pharmacies", "life insurance", "fitness apps"],
-    industry: "Health and fitness", need: "Health and fitness body data", formOption: "Health and fitness body data (FitXpress)", segment: "FX",
+    industry: "Health, fitness and insurance", need: "Health, fitness and insurance", formOption: "Body data for health, fitness, research or insurance", segment: "FX",
     visual: "body",
     useCases: [
       {name: "Telehealth and digital health", url: "/structured-body-data-for-telehealth-digital-health-programs/", status: "live"},
       {name: "BMI verification for online pharmacies", url: "/for-bmi-verification/", status: "live"},
       {name: "Life insurance underwriting", url: "/fitxpress/for-insurance-underwriting/", status: "live"},
       {name: "Fitness apps", url: "/fitxpress/for-connected-and-digital-fitness/", status: "live"},
+      /* interim: a Content Hub article stands in until the landing in `landing` ships; then url = landing */
+      {name: "Clinical trials", url: "/content-hub/clinical-trial-anthropometric-measurement-software-obesity-trials/", status: "live", landing: "/fitxpress/for-clinical-trials/"},
+      {name: "Occupational health", url: "/content-hub/occupational-health-screening-software/", status: "live", landing: "/fitxpress/for-occupational-health/"},
       {name: "GLP-1 programs", url: "/fitxpress/for-glp-1-programs/", status: "planned"},
       {name: "Bariatric programs", url: "/fitxpress/for-bariatric-programs/", status: "planned"},
-      {name: "Employee wellness", url: "/fitxpress/for-wellness-programs/", status: "planned"},
-      {name: "Occupational health", url: "/fitxpress/for-occupational-health/", status: "planned"},
-      {name: "Clinical trials", url: "/fitxpress/for-clinical-trials/", status: "planned"}
+      {name: "Employee wellness", url: "/fitxpress/for-wellness-programs/", status: "planned"}
     ]
   },
   {
     id: "mobile-tailor", name: "Mobile Tailor", status: "live", url: "/mobile-tailor/", family: "body", lens: "mt", acc: "#EEEBE5", accL: "#EEEBE5",
     allUseCases: "/mobile-tailor/#use-cases", login: {name: "Mobile Tailor", url: "https://mtm.3dlook.me/", desc: "Measurement dashboard"},
     anchor: "Explore Mobile Tailor AI body measurements",
-    label: "AI body measurements for apparel and uniforms",
+    label: "Mobile body measurements for apparel and uniforms",
+    trial: {text: "Start a 7-day trial", url: "/pricing/"},
     value: "Remote body measurements for made-to-measure brands, on-demand manufacturers and uniform programs.",
-    returns: ["80+ body measurements", "3D body model", "measurement data for order and production systems"],
+    returns: ["80+ body measurements", "3D body model", "a dashboard with data export", "scan links and a website measurement widget"],
     builtFor: ["made-to-measure", "on-demand manufacturing", "uniform and protective-equipment programs"],
-    industry: "Apparel and uniforms", need: "Measurements for apparel and uniforms", formOption: "Measurements for apparel and uniforms (Mobile Tailor)", segment: "MT",
+    industry: "Apparel and uniforms", need: "Apparel and uniforms", formOption: "Body measurements for apparel or uniforms", segment: "MT",
     visual: "tailor",
     useCases: [
       {name: "Made-to-measure", url: "/mobile-tailor/for-made-to-measure/", status: "live"},
@@ -685,13 +740,13 @@ const PRODUCTS = [
     ]
   },
   {
-    id: "wrist", name: "Wrist Measurement", status: "live", url: "/wrist-measurement/", family: "hand", lens: "wm", acc: "#7A3CF0", accL: "#B89BEE",
-    anchor: "Explore wrist measurement",
-    label: "Wrist sizing API for jewelry, watches and wearables",
-    value: "Wrist measurement from two smartphone photos, matched to the size chart a brand already uses.",
-    returns: ["wrist circumference", "a result mapped to the brand's size chart", "API and SDK delivery"],
-    builtFor: ["fine jewelry and bracelets", "watches", "wearables"],
-    industry: "Jewelry, watches and wearables", need: "Wrist size for jewelry and watches", formOption: "Wrist size (Wrist Measurement)", segment: "WM",
+    id: "wrist", name: "AI Wrist Measurement", status: "live", url: "/wrist-measurement/", family: "hand", lens: "wm", acc: "#7A3CF0", accL: "#B89BEE",
+    anchor: "Explore AI Wrist Measurement",
+    label: "Mobile wrist sizing for jewelry, watches and wearables",
+    value: "A wrist measurement in millimeters from two guided smartphone photos, mapped to the size chart and fit rules a brand already uses.",
+    returns: ["wrist circumference in millimeters", "processing in under 10 seconds", "a size recommendation from the brand's own size chart", "API and SDK delivery"],
+    builtFor: ["fine jewelry and bracelets", "watches", "consumer wearables", "connected health devices"],
+    industry: "Jewelry, watches and wearables", need: "Jewelry, watches and wearables", formOption: "Wrist sizing for jewelry, watches or wearables", segment: "WM",
     visual: "wrist",
     useCases: [{name: "Wrist sizing", url: "/wrist-measurement/", status: "live"}]
   },
@@ -700,7 +755,7 @@ const PRODUCTS = [
     anchor: "Talk to the team",
     label: "Another body measurement",
     value: "If your product depends on a body measurement that is not listed here, tell us what you need to measure.",
-    returns: [], builtFor: [], industry: null, need: null, formOption: "Something else", segment: "Other", visual: "dots", useCases: []
+    returns: [], builtFor: [], industry: null, need: null, formOption: "Something else or not sure yet", segment: "Other", visual: "dots", useCases: []
   },
   /* fictional entries for the stress test only */
   {
@@ -714,7 +769,7 @@ const PRODUCTS = [
   {
     id: "ex-ring", name: "Ring Sizing (example)", status: "example", url: "#",
     anchor: "Explore ring sizing", label: "Example card, layout test only",
-    value: "A sixth card wraps into the same grid; the featured card stays first.",
+    value: "A sixth card wraps into the same grid.",
     returns: ["finger circumference", "ring size"], builtFor: ["fine jewelry", "smart rings"],
     industry: "Jewelry, watches and wearables", need: "Ring size (example)", formOption: "Ring size (example)", segment: "Other", visual: "dots",
     useCases: [{name: "Ring sizing (example)", url: "#", status: "live"}]
@@ -750,7 +805,7 @@ function card(p) {
              (bf ? `<div><dt>Built for</dt><dd class="bf">${bf}</dd></div>` : "");
   const body = `<div class="c-top"><div><div class="c-name">${esc(p.name)}</div><div class="c-label">${esc(p.label)}</div></div>${badge(p)}</div>
     <p class="c-value">${esc(p.value)}</p>${dl ? `<dl>${dl}</dl>` : ""}
-    <div class="c-links"><a class="link-arrow" href="${p.url}" data-product="${p.id}">${esc(p.anchor)}</a></div>`;
+    <div class="c-links"><a class="link-arrow" href="${p.url}" data-product="${p.id}">${esc(p.anchor)}</a>${p.trial ? `<a class="sec" href="${p.trial.url}">${esc(p.trial.text)}</a>` : ""}</div>`;
   const cls = "card" + (p.featured ? " featured" : "") + (p.status !== "live" ? " dev" : "");
   return p.featured
     ? `<article class="${cls}" data-p="${p.id}"><div class="c-body">${body}</div><div class="c-visual">${VISUALS[p.visual]}</div></article>`
@@ -761,7 +816,7 @@ const hero = document.querySelector(".v2hero");
 const FAMILIES = {body: "Body", hand: "Hand and wrist", head: "Head"};
 const navCard = p => `<a class="n-item" href="${p.url}"><span class="nm">${esc(p.name)} ${badge(p)}</span><span class="ds">${esc(p.label)}</span></a>`;
 function renderMenuProducts(ps) {
-  const head = `<a class="n-head" href="/technology/"><div><b>How 3DLOOK body scanning works</b><span>One two-photo capture and one body model behind every product</span></div><span class="go">Technology →</span></a>`;
+  const head = `<a class="n-head" href="/technology/"><div><b>How 3DLOOK body scanning works</b><span>Guided two-photo capture, the body model and API delivery</span></div><span class="go">Technology →</span></a>`;
   let body;
   if (ps.length <= 6) {
     body = `<div class="n-grid" style="grid-template-columns:repeat(${Math.min(ps.length, 3)},1fr)">${ps.map(navCard).join("")}</div>`;
@@ -796,15 +851,15 @@ function render() {
   const featured = ps.filter(p => p.featured), rest = ps.filter(p => !p.featured);
   R("products", featured.map(card).join("") + `<div class="products-rest">${rest.map(card).join("")}</div>`);
   R("ptiles", ps.filter(p => p.lens).map(p =>
-    `<a class="ptile${p.lens === (hero && hero.dataset.lens) ? " on" : ""}" href="${p.url}" data-lens="${p.lens}" data-product="${p.id}" style="--acc:${p.acc};--acc-l:${p.accL}"><span class="pt-name">${esc(p.name)}</span><span class="pt-need">${esc(p.need)}</span><span class="bar"></span></a>`).join(""));
+    `<a class="ptile${p.lens === (hero && hero.dataset.lens) ? " on" : ""}" href="${p.url}" data-lens="${p.lens}" data-product="${p.id}" style="--acc:${p.acc};--acc-l:${p.accL}"><span class="pt-name">${esc(p.need)}</span><span class="pt-need">${esc(p.name)}</span><span class="bar"></span></a>`).join(""));
   R("menu-products", renderMenuProducts(ps));
   R("menu-industries", renderMenuIndustries());
   R("foot-logins", ps.filter(p => p.login).map(p => `<a href="${p.login.url}">${esc(p.login.name)} login</a>`).join(" · "));
   R("mnav", renderMobile(ps));
   R("foot-products", ps.filter(p => p.status !== "in-development").map(p => `<li><a href="${p.url}">${esc(p.name)}</a></li>`).join(""));
-  R("foot-usecases", ps.flatMap(liveUseCases).slice(0, 8).map(u => `<li><a href="${u.url}">${esc(u.name)}</a></li>`).join(""));
+  R("foot-usecases", ps.flatMap(liveUseCases).map(u => `<li><a href="${u.url}">${esc(u.name)}</a></li>`).join(""));
   R("form-options", '<option value="">Choose one</option>' + ps.filter(p => p.formOption).map(p =>
-    `<option value="${p.segment}">${esc(p.formOption)}</option>`).join("") + (ps.some(p => p.formOption === "Something else") ? "" : '<option value="Other">Something else</option>'));
+    `<option value="${p.segment}">${esc(p.formOption)}</option>`).join("") + (ps.some(p => p.formOption === "Something else or not sure yet") ? "" : '<option value="Other">Something else or not sure yet</option>'));
 }
 
 document.querySelectorAll(".proto button[data-mode]").forEach(b => b.addEventListener("click", e => {
