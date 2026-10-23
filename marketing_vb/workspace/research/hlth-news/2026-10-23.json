@@ -1,0 +1,94 @@
+{
+ "generated": "2026-10-23T05:40:22+00:00",
+ "items": [
+  {
+   "id": "fb8ffa72-cbc9-4999-ae11-49908eb74e3d",
+   "title": "Oracle and AstraZeneca Collaborate to Advance AI-Enabled Clinical Trials and Patient Recruitment",
+   "date": "2026-10-22",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Pharmaceutical and Life Science Innovation",
+    "Clinical Trial Solutions",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/oracle-and-astrazeneca-collaborate-to-advance-ai-enabled-clinical-trials-and-patient-recruitment"
+  },
+  {
+   "id": "5a800226-1911-4a79-a6b8-81e5902b0e60",
+   "title": "Verily Health and Autoimmune Registry Partner to Expand Cross-Disease Research Infrastructure",
+   "date": "2026-10-22",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Interoperability / Data Management",
+    "Patient Engagement / Experience",
+    "Association, Non Profit & Academia",
+    "Medical Research",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/verily-health-and-autoimmune-registry-partner-to-expand-cross-disease-research-infrastructure"
+  },
+  {
+   "id": "b80ff17f-3a6e-48dd-bc40-d880c061ea15",
+   "title": "Merck Partners with NVIDIA, Microsoft and Dawn Health to Develop AI-Powered Support for Rare Tumor Patients",
+   "date": "2026-10-22",
+   "tags": [
+    "Cancer Care",
+    "Life Sciences (Pharma & Biotech)",
+    "Patient Engagement / Experience",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/merck-partners-with-nvidia-microsoft-and-dawn-health-to-develop-ai-powered-support-for-rare-tumor-patients"
+  }
+ ],
+ "analyses": {
+  "fb8ffa72-cbc9-4999-ae11-49908eb74e3d": {
+   "id": "fb8ffa72-cbc9-4999-ae11-49908eb74e3d",
+   "score": 1,
+   "segment": "FitXpress §7 Clinical Trials",
+   "what": "Oracle Health і AstraZeneca підписали необов'язкову угоду про співпрацю. Вони хочуть дослідити, як AI може знаходити пацієнтів для клінічних досліджень в EHR і реальних медичних даних. Серед напрямів є кардіоваскулярні, ниркові та метаболічні захворювання.",
+   "why": "Тут ідеться про AI-пошук пацієнтів в EHR, а не про вимірювання тіла чи децентралізований збір даних удома. Угода лише дослідницька, а сторони — enterprise-гіганти, тому конкретного приводу для FitXpress немає.",
+   "play": "none",
+   "companies": [
+    "Oracle",
+    "Oracle Health",
+    "AstraZeneca",
+    "Ochsner Health",
+    "Cleveland Clinic"
+   ],
+   "_date": "2026-10-22"
+  },
+  "5a800226-1911-4a79-a6b8-81e5902b0e60": {
+   "id": "5a800226-1911-4a79-a6b8-81e5902b0e60",
+   "score": 0,
+   "segment": "—",
+   "what": "Verily Health стала партнером Autoimmune Registry Inc. (ARI). Verily дасть інфраструктуру для залучення пацієнтів, аналітики та обміну даними для міжхворобного реєстру автоімунних захворювань (5 000+ учасників).",
+   "why": "Реєстр автоімунних хвороб із даними, які повідомляють самі пацієнти. Зв'язку з даними про тіло, вагою чи BMI немає.",
+   "play": "none",
+   "companies": [
+    "Verily Health",
+    "Verily",
+    "Autoimmune Registry Inc.",
+    "ARI"
+   ],
+   "_date": "2026-10-22"
+  },
+  "b80ff17f-3a6e-48dd-bc40-d880c061ea15": {
+   "id": "b80ff17f-3a6e-48dd-bc40-d880c061ea15",
+   "score": 0,
+   "segment": "—",
+   "what": "Merck разом з NVIDIA, Microsoft і Dawn Health розробляє цілодобовий AI-компаньйон для пацієнтів із рідкісними пухлинами (desmoid, NF1-PN). Пілот запланований у кількох європейських країнах.",
+   "why": "Підтримка онкопацієнтів із рідкісними пухлинами: інформація й супровід лікування. Ні вимірювань тіла, ні BCRL-моніторингу тут немає.",
+   "play": "none",
+   "companies": [
+    "Merck",
+    "NVIDIA",
+    "Microsoft",
+    "Dawn Health"
+   ],
+   "_date": "2026-10-22"
+  }
+ },
+ "posts": []
+}
