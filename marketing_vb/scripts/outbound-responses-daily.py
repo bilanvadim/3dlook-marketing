@@ -789,6 +789,9 @@ def cmd_weekly(args) -> int:
                 "прийнятих (за ним і порівнюй кампанії). Позитивні = interested, question, "
                 "referral за класифікатором. «Без папки» = кампанія ще без відповідей або не з "
                 "пайплайну, назва з Closely.")
+    sid = load_sheet_state().get("spreadsheet_id")
+    if sid:
+        tail.append(f"Таблиця: {SHEET_URL.format(sid)}")
     blocks.append("\n".join(tail))
 
     messages = chunk(blocks)
@@ -799,6 +802,335 @@ def cmd_weekly(args) -> int:
         print("✗ Telegram send failed")
         return 1
     return 0 if not broken and age_h <= 30 else 1
+
+
+# ------------------------------------------------------------------------- sheet
+
+# Vadim, 2026-10-23: «давай в гугл шітс стату відображати по кампаніям для наглядності».
+# The same snapshot as `weekly`, one row per campaign, rewritten every morning. Sheets go
+# through oo, and organic-dashboard.py owns that transport (absolute URLs only, request in a
+# file): imported, not copied.
+SHEET_STATE = Path(os.environ.get("OUTBOUND_SHEET_STATE")
+                   or os.path.expanduser("~/.hermes/.outbound-stats-sheet.json"))
+SHEET_TITLE = os.environ.get("OUTBOUND_SHEET_TITLE") or "3DLOOK Outbound Stats"
+SHEET_URL = "https://docs.google.com/spreadsheets/d/{}/edit"
+TAB_CAMP, TAB_ACCT, TAB_HIST, TAB_ABOUT = "Кампанії", "Акаунти", "Історія", "Про таблицю"
+SHEET_TABS = (TAB_CAMP, TAB_ACCT, TAB_HIST, TAB_ABOUT)
+HEAD_ROWS = 3                                         # title, subtitle, blank; header below
+NAVY, BLUE = "#050F40", "#143DFF"                     # DESIGN.md
+_OD = None
+
+
+def _od():
+    global _OD
+    if _OD is None:
+        _OD = _load("organic_dashboard", HERE / "organic-dashboard.py")
+    return _OD
+
+
+def load_sheet_state() -> dict:
+    try:
+        return json.loads(SHEET_STATE.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+
+
+def step_replies(rows: list[dict]) -> dict:
+    """Replies to the invite, to Message 1 and to Message 2, from the snapshot's steps.
+
+    The flow is a TREE: `condition` steps fork it, and every branch carries its own
+    Message 1 -> Message 2 pair at a different depth. So neither list order nor depth
+    ranks a message; the number of message steps on its path from the root does (1 = M1,
+    2 = M2). Checked on the 09-02 payloads: AU 138392 gives invite 1 + M1 2 + M2 2 = its
+    5 replies, UK 139077 gives M2 1 + 3 = its 4."""
+    out = {"invite": None, "m1": None, "m2": None}
+    for r in rows:
+        steps = r.get("steps") or []
+        ids = {s.get("id") for s in steps}
+        kids: dict = {}
+        for s in steps:
+            kids.setdefault(s.get("prev"), []).append(s)
+        stack = [(s, 0) for s in steps if s.get("prev") not in ids]
+        seen: set = set()
+        while stack:
+            s, n_msg = stack.pop()
+            if s.get("id") in seen:
+                continue
+            seen.add(s.get("id"))
+            if s.get("type") == "message":
+                n_msg += 1
+            v = s.get("message_replied")
+            key = ("invite" if (s.get("type") or "").startswith("connection") else
+                   {1: "m1", 2: "m2"}.get(n_msg) if s.get("type") == "message" else None)
+            if key and isinstance(v, (int, float)):
+                out[key] = (out[key] or 0) + v
+            stack += [(k, n_msg) for k in kids.get(s.get("id"), [])]
+    return out
+
+
+def _ratio(a, b):
+    return round(a / b, 4) if isinstance(a, (int, float)) and b else ""
+
+
+def _v(x):
+    return "" if x is None else x
+
+
+def unit_title(u: dict) -> str:
+    return u["folder"][11:] if u["folder"] else " + ".join(r["name"] for r in u["rows"])
+
+
+def snapshot_units(path: Path) -> tuple[dict, list[dict]]:
+    snap = json.loads(path.read_text(encoding="utf-8"))
+    return snap, stat_units([r for r in snap["campaigns"] if "error" not in r])
+
+
+def sheet_values(snaps: list[Path]) -> dict:
+    snap, units = snapshot_units(snaps[-1])
+    try:
+        from zoneinfo import ZoneInfo
+        kyiv = datetime.fromisoformat(snap["pulled_at"].replace("Z", "+00:00")) \
+            .astimezone(ZoneInfo("Europe/Kyiv"))
+    except Exception:                                 # noqa: BLE001
+        kyiv = datetime.fromisoformat(snap["pulled_at"].replace("Z", "+00:00"))
+    sub = (f"Дані Closely на {kyiv:%d.%m.%Y %H:%M} за Києвом · оновлюється щоранку · "
+           f"кампанії, створені з {fmt_date(snap['since'])}")
+    broken = [r for r in snap["campaigns"] if "error" in r]
+    if broken:
+        sub += " · не зібрано: " + ", ".join(f"{r['closely_id']} «{r.get('name', '')}»"
+                                             for r in broken)
+
+    def order(u):
+        p = u["profile"]
+        return (PROFILE_ORDER.index(p) if p in PROFILE_ORDER else len(PROFILE_ORDER), p)
+
+    camp = [["Outbound — статистика кампаній"], [sub], [],
+            ["Акаунт", "Кампанія", "Назва в Closely", "Старт", "Статус", "Контактів",
+             "В роботі", "Інвайтів", "Прийняли", "% прийняли", "Повідомлень", "Відповіли",
+             "% відповіли (від прийнятих)", "Позитивних", "% позитивних (від прийнятих)",
+             "Відповіді на інвайт", "Відповіді на M1", "Відповіді на M2",
+             "7 днів: інвайтів", "7 днів: прийняли", "7 днів: відповідей", "Closely ID",
+             "Папка в репо"]]
+    for u in sorted(sorted(units, key=lambda u: u["date"], reverse=True), key=order):
+        f, sr = funnel(u["rows"]), step_replies(u["rows"])
+        camp.append([
+            account_label(u["profile"]), unit_title(u),
+            " + ".join(r["name"] for r in u["rows"]), u["date"],
+            "/".join(sorted({r.get("status") or "?" for r in u["rows"]})),
+            _v(f["contacts"]), _v(f["active"]), _v(f["sent"]), _v(f["acc"]),
+            _ratio(f["acc"], f["sent"]), _v(f["msg"]), _v(f["replied"]),
+            _ratio(f["replied"], f["acc"]), _v(u["positives"]),
+            _ratio(u["positives"], f["acc"]) if u["positives"] is not None else "",
+            _v(sr["invite"]), _v(sr["m1"]), _v(sr["m2"]),
+            _v(f["w_sent"]), _v(f["w_acc"]), _v(f["w_replied"]),
+            ", ".join(r["closely_id"] for r in u["rows"]), u["folder"]])
+
+    acct = [["Outbound — підсумки по акаунтах"], [sub], [],
+            ["Акаунт", "Кампаній", "Контактів", "В роботі", "Інвайтів", "Прийняли",
+             "% прийняли", "Повідомлень", "Відповіли", "% відповіли (від прийнятих)",
+             "Позитивних", "% позитивних (від прийнятих)", "7 днів: інвайтів",
+             "7 днів: прийняли", "7 днів: відповідей"]]
+    groups: dict[str, list[dict]] = {}
+    for u in units:
+        groups.setdefault(u["profile"], []).append(u)
+    for label, us in [(account_label(p), groups[p]) for p in sorted(groups, key=lambda p: order(
+            {"profile": p}))] + [("Разом", units)]:
+        f = funnel([r for u in us for r in u["rows"]])
+        pos = sum(u["positives"] or 0 for u in us)
+        acct.append([label, len(us), _v(f["contacts"]), _v(f["active"]), _v(f["sent"]),
+                     _v(f["acc"]), _ratio(f["acc"], f["sent"]), _v(f["msg"]),
+                     _v(f["replied"]), _ratio(f["replied"], f["acc"]), pos,
+                     _ratio(pos, f["acc"]), _v(f["w_sent"]), _v(f["w_acc"]),
+                     _v(f["w_replied"])])
+
+    hist = [["Outbound — історія знімків"], ["Один рядок на кампанію за кожну ніч. "
+                                             "Числа наростаючим підсумком."], [],
+            ["Дата знімка", "Акаунт", "Кампанія", "Інвайтів", "Прийняли", "Повідомлень",
+             "Відповіли", "Контактів в роботі"]]
+    for p in reversed(snaps):
+        try:
+            s, us = snapshot_units(p)
+        except (OSError, ValueError, KeyError):
+            continue
+        for u in sorted(us, key=order):
+            f = funnel(u["rows"])
+            hist.append([s["pulled_at"][:10], account_label(u["profile"]), unit_title(u),
+                         _v(f["sent"]), _v(f["acc"]), _v(f["msg"]), _v(f["replied"]),
+                         _v(f["active"])])
+
+    about = [["Про таблицю"], [], *[[x] for x in (
+        "Джерело: закритий API closely.io, той самий, з якого щоночі тягнуться відповіді. "
+        "Знімок пише closely-pull.py pull-all --stats о 23:30 UTC, таблицю переписує "
+        "outbound-responses-daily.py sheet щоранку. Правки руками зітруться.",
+        "Одна строка = одна кампанія. Папка в репо, розбита в Closely на кілька кампаній "
+        "(батчі), сумується в одну строку.",
+        "Відповіли = люди, яким Closely закрив послідовність відповіддю. % рахуються від "
+        "прийнятих: за ним і порівнюй кампанії. % від повідомлень завищує незавершені кампанії, "
+        "бо M2 ще не пішло.",
+        "Позитивні = interested, question, referral за класифікатором "
+        "(responses-classified.csv), по людях.",
+        "Відповіді на інвайт / M1 / M2 = відповіді після кроку послідовності, за статистикою "
+        "кроків Closely.",
+        "7 днів = події за останні 7 днів до знімка.",
+        "Кампанія без папки = у неї ще немає відповідей (папку знаходимо за тими, хто відповів) "
+        "або вона не з пайплайну. Назва та, що в Closely; акаунт визначено за account_id.",
+        "Історія: один рядок на кампанію за кожну ніч, від 2026-10-23.")]]
+    return {TAB_CAMP: camp, TAB_ACCT: acct, TAB_HIST: hist, TAB_ABOUT: about}
+
+
+def write_stats_sheet(values: dict, st: dict) -> tuple[str, bool]:
+    od = _od()
+    sid, created = st.get("spreadsheet_id"), False
+    if not sid:
+        sid = od.sheets("POST", "", {
+            "properties": {"title": SHEET_TITLE, "locale": "uk_UA", "timeZone": "Europe/Kyiv"},
+            "sheets": [{"properties": {"title": t, "index": i}}
+                       for i, t in enumerate(SHEET_TABS)]})["spreadsheetId"]
+        st["spreadsheet_id"], created = sid, True
+        SHEET_STATE.parent.mkdir(parents=True, exist_ok=True)
+        SHEET_STATE.write_text(json.dumps(st, indent=1), encoding="utf-8")
+    fields = "sheets(properties(sheetId,title),conditionalFormats)"
+    meta = od.sheets("GET", f"/{sid}?fields={fields}")
+    have = {s["properties"]["title"] for s in meta.get("sheets", [])}
+    if any(t not in have for t in SHEET_TABS):
+        od.sheets("POST", f"/{sid}:batchUpdate", {"requests": [
+            {"addSheet": {"properties": {"title": t}}} for t in SHEET_TABS if t not in have]})
+        meta = od.sheets("GET", f"/{sid}?fields={fields}")
+    tabs = {s["properties"]["title"]: s["properties"]["sheetId"] for s in meta["sheets"]}
+    size = {t: (max(len(v) + 20, 60), max(max(len(r) for r in v) + 2, 10))
+            for t, v in values.items()}
+
+    reqs: list[dict] = []
+    for s in meta.get("sheets", []):
+        for _ in s.get("conditionalFormats") or []:
+            reqs.append({"deleteConditionalFormatRule": {"sheetId": s["properties"]["sheetId"],
+                                                         "index": 0}})
+    for t in SHEET_TABS:
+        reqs.append({"updateSheetProperties": {"properties": {
+            "sheetId": tabs[t], "gridProperties": {
+                "rowCount": size[t][0], "columnCount": size[t][1],
+                "frozenRowCount": 0 if t == TAB_ABOUT else HEAD_ROWS + 1,
+                "frozenColumnCount": 2 if t == TAB_CAMP else 1 if t != TAB_ABOUT else 0}},
+            "fields": "gridProperties(rowCount,columnCount,frozenRowCount,frozenColumnCount)"}})
+    od.sheets("POST", f"/{sid}:batchUpdate", {"requests": reqs})
+    od.sheets("POST", f"/{sid}/values:batchClear", {"ranges": [f"'{t}'" for t in SHEET_TABS]})
+    # RAW: a campaign name is text even when it starts with = or +, a number stays a number
+    od.sheets("POST", f"/{sid}/values:batchUpdate", {"valueInputOption": "RAW", "data": [
+        {"range": f"'{t}'!A1", "values": v} for t, v in values.items()]})
+
+    rgb = od.rgb
+    reqs = []
+
+    def rng(sh, r0, r1, c0, c1):
+        return {"sheetId": sh, "startRowIndex": r0, "endRowIndex": r1,
+                "startColumnIndex": c0, "endColumnIndex": c1}
+
+    def fmt(sh, r0, r1, c0, c1, f, flds):
+        reqs.append({"repeatCell": {"range": rng(sh, r0, r1, c0, c1),
+                                    "cell": {"userEnteredFormat": f}, "fields": flds}})
+
+    def width(sh, c0, c1, px):
+        reqs.append({"updateDimensionProperties": {"range": {
+            "sheetId": sh, "dimension": "COLUMNS", "startIndex": c0, "endIndex": c1},
+            "properties": {"pixelSize": px}, "fields": "pixelSize"}})
+
+    font = {"fontFamily": "Arial", "fontSize": 10}
+    pct_cols = {TAB_CAMP: (9, 12, 14), TAB_ACCT: (6, 9, 11)}
+    for t in SHEET_TABS:
+        sh, (nrows, ncols), n = tabs[t], size[t], len(values[t])
+        reqs.append({"updateCells": {"range": rng(sh, 0, nrows, 0, ncols),
+                                     "fields": "userEnteredFormat"}})
+        fmt(sh, 0, nrows, 0, ncols, {"textFormat": font, "verticalAlignment": "MIDDLE"},
+            "userEnteredFormat(textFormat,verticalAlignment)")
+        fmt(sh, 0, 1, 0, 1, {"textFormat": {**font, "bold": True, "fontSize": 14,
+                                             "foregroundColor": rgb(NAVY)}},
+            "userEnteredFormat.textFormat")
+        if t == TAB_ABOUT:
+            width(sh, 0, 1, 900)
+            fmt(sh, 2, n, 0, 1, {"wrapStrategy": "WRAP"}, "userEnteredFormat.wrapStrategy")
+            continue
+        fmt(sh, 1, 2, 0, 1, {"textFormat": {**font, "italic": True,
+                                             "foregroundColor": rgb("#6B7280")}},
+            "userEnteredFormat.textFormat")
+        fmt(sh, HEAD_ROWS, HEAD_ROWS + 1, 0, ncols, {
+            "textFormat": {**font, "bold": True, "fontSize": 9,
+                           "foregroundColor": rgb("#FFFFFF")},
+            "backgroundColor": rgb(NAVY), "wrapStrategy": "WRAP"},
+            "userEnteredFormat(textFormat,backgroundColor,wrapStrategy)")
+        reqs.append({"updateDimensionProperties": {"range": {
+            "sheetId": sh, "dimension": "ROWS", "startIndex": HEAD_ROWS,
+            "endIndex": HEAD_ROWS + 1}, "properties": {"pixelSize": 48}, "fields": "pixelSize"}})
+        first_num = {TAB_CAMP: 5, TAB_ACCT: 1, TAB_HIST: 3}[t]
+        ncol_data = len(values[t][HEAD_ROWS])
+        width(sh, 0, first_num, 150)
+        width(sh, first_num, ncol_data, 92)
+        reqs.append({"setBasicFilter": {"filter": {"range": rng(sh, HEAD_ROWS, max(n, HEAD_ROWS + 1),
+                                                                0, ncol_data)}}})
+        if n <= HEAD_ROWS + 1:
+            continue                                  # no data rows: an empty range is a 400
+        fmt(sh, HEAD_ROWS + 1, n, first_num, ncol_data,
+            {"numberFormat": {"type": "NUMBER", "pattern": "#,##0"},
+             "horizontalAlignment": "RIGHT"},
+            "userEnteredFormat(numberFormat,horizontalAlignment)")
+        for c in pct_cols.get(t, ()):
+            fmt(sh, HEAD_ROWS + 1, n, c, c + 1,
+                {"numberFormat": {"type": "PERCENT", "pattern": "0.0%"}},
+                "userEnteredFormat.numberFormat")
+            # one scale per rate column, within the campaigns only (not the «Разом» row)
+            last = n - 1 if t == TAB_ACCT else n
+            if last > HEAD_ROWS + 1:
+                reqs.append({"addConditionalFormatRule": {"index": 0, "rule": {
+                    "ranges": [rng(sh, HEAD_ROWS + 1, last, c, c + 1)],
+                    "gradientRule": {"minpoint": {"color": rgb("#FFFFFF"), "type": "MIN"},
+                                     "maxpoint": {"color": rgb("#9DB0FF"), "type": "MAX"}}}}})
+        if t == TAB_CAMP:
+            width(sh, 0, 1, 190)
+            width(sh, 1, 2, 230)
+            width(sh, 2, 3, 250)
+            width(sh, 3, 5, 90)
+            width(sh, ncol_data - 2, ncol_data, 170)
+            fmt(sh, HEAD_ROWS + 1, n, ncol_data - 2, ncol_data,
+                {"horizontalAlignment": "LEFT"}, "userEnteredFormat.horizontalAlignment")
+            # positive replies are the column people look for first
+            fmt(sh, HEAD_ROWS + 1, n, 13, 14, {"textFormat": {**font, "bold": True,
+                                                              "foregroundColor": rgb(BLUE)}},
+                "userEnteredFormat.textFormat")
+        if t == TAB_ACCT:
+            fmt(sh, n - 1, n, 0, ncol_data, {"textFormat": {**font, "bold": True},
+                                            "backgroundColor": rgb("#EEF1FF")},
+                "userEnteredFormat(textFormat,backgroundColor)")
+        if t == TAB_HIST:
+            width(sh, 2, 3, 230)
+    od.sheets("POST", f"/{sid}:batchUpdate", {"requests": reqs})
+    return sid, created
+
+
+def cmd_sheet(args) -> int:
+    snaps = sorted(STATS_DIR.glob("????-??-??.json"))
+    if not snaps:
+        print(f"✗ no snapshot in {STATS_DIR} — the nightly `closely-pull.py pull-all --stats` "
+              "writes it")
+        return 1
+    values = sheet_values(snaps)
+    if args.dry_run:
+        for t, v in values.items():
+            print(f"== {t} ({len(v)} rows)")
+            for r in v[:12]:
+                print("  ", r)
+        return 0
+    st = load_sheet_state()
+    try:
+        sid, created = write_stats_sheet(values, st)
+    except Exception as e:                            # noqa: BLE001  (Broken, oo, network)
+        print(f"✗ sheet: {e}")
+        if args.notify:
+            OP.telegram_send(f"⚠️ Outbound-таблиця не оновилась: {short(str(e), 300)}")
+        return 3
+    print(f"→ {SHEET_URL.format(sid)}")
+    if created and args.notify:
+        OP.telegram_send("📊 Таблиця зі статистикою outbound-кампаній створена, оновлюється "
+                         f"щоранку: {SHEET_URL.format(sid)}")
+    return 0
 
 
 # ----------------------------------------------------------------------- status
@@ -842,9 +1174,15 @@ def main(argv=None) -> int:
                                       "snapshot (closely-pull.py pull-all --stats)")
     w.add_argument("--notify", action="store_true", help="send to Telegram (else print only)")
     w.set_defaults(func=cmd_weekly)
+    sh = sub.add_parser("sheet", help="rewrite the Google Sheet with per-campaign stats from "
+                                      "the latest snapshot (via oo)")
+    sh.add_argument("--notify", action="store_true",
+                    help="Telegram on failure, and once with the link when it is created")
+    sh.add_argument("--dry-run", action="store_true", help="print the rows, write nothing")
+    sh.set_defaults(func=cmd_sheet)
     args = ap.parse_args(argv)
 
-    if args.cmd in ("status", "weekly"):
+    if args.cmd in ("status", "weekly", "sheet"):
         return args.func(args)
     LOCK.parent.mkdir(parents=True, exist_ok=True)
     with LOCK.open("w") as lf:

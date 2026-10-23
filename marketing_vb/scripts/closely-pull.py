@@ -1498,6 +1498,20 @@ def cmd_stats(args, mapping: list[dict] | None = None) -> int:
                                 "finished_error")}
             row["lifetime"] = _stat_events(c, cid, STATS_EPOCH, now)
             row["last7"] = _stat_events(c, cid, week, now)
+            # Per step, so step 9 can tell a Message-1 reply from a Message-2 one (the
+            # question-in-M1, call-in-M2 rule). Own try: a missing split must not cost the
+            # campaign its funnel row. Steps link by prev_step_id, not by list order.
+            try:
+                q = urllib.parse.urlencode({"date_from": STATS_EPOCH, "date_to": now})
+                sd = c.get(f"/v1/drill/campaigns/{cid}/steps?{q}")
+                sd = (sd.get("data") if isinstance(sd, dict) and "data" in sd else sd) or {}
+                row["steps"] = [{"id": s.get("step_id"), "prev": s.get("prev_step_id"),
+                                 "type": s.get("step_type"), "delay_days": s.get("delay_days"),
+                                 **{k: _count_of((s.get("stats") or {}).get(k))
+                                    for k in STAT_EVENTS}}
+                                for s in sd.get("steps") or [] if isinstance(s, dict)]
+            except SystemExit as e:
+                row["steps_error"] = str(e)[:200]
             print(f"  ✓ {cid} {row['created_at']} {row['name'][:40]}")
         except SystemExit as e:
             failed += 1
