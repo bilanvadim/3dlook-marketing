@@ -1,0 +1,15 @@
+# Grid — mixed-1 (round 2)
+
+| person | M1 opener (first 3 words) | M1 product sentence | M1 question | M2 value line | easy out (shape) | closer |
+|---|---|---|---|---|---|---|
+| salpilato | Quick idea for | guided two-photo capture, 80+ measurements, 3D model, no device to ship (only DudeMeds mention) | where a capture fits when a new member starts the GLP-1 program | member takes the photos right after sign-up on own phone; 100+ clients | none (co-founder CEO) | "Want to see it? Time here:" |
+| jonathan-hancock | Noticed your background | two phone photos to composition estimates with BMI and BMR | what keeps continuing members engaged | a capture from home gives the app something to do, dated; 34,000 line | none (co-founder) | "If useful, my calendar is here:" |
+| johnsnedegar | Made me think | guided two-photo capture on any phone, 80+ measurements | how providers follow body change across in-person and telehealth | same capture from home before telehealth; speed sentence; provider picks captures | none (CEO) | "Open to a call? Pick a time:" |
+| sfinnern | Quick reaction to | guided capture on any phone, 3D model | what keeps weight patients active in the dashboard | 3D model gives members something to open; 34,000 line | none | "Free for a conversation?" |
+| alaric-murg | This stood out | 80+ measurements, waist and hip, two photos | what the care team looks at between follow-ups | waist beside weight gives one more number to talk through | intro to whoever runs the dashboard | "Happy to show it live:" |
+| nicholas-boerger | Caught my eye | white-label API and SDKs, phone only hardware, waist and hip | where in the dashboard a capture sits | capture screen in the dashboard in Maximus's look; 100+ clients | none | "Shall we walk through it?" |
+| stephenciniello | Got me thinking | two photos front and side, speed sentence | how growth tests onboarding changes | try capture as one onboarding variant with a small group | question: which team owns the roadmap | "Open to talking it through?" |
+| markrpoole | Came across your | web SDK, composition estimates with BMI and BMR | how to add a capture step through the web SDK | 2-4 weeks, web SDK covers capture screen; FAQ | "wrong desk? tell me who" | "Calendar if you'd like to dig in:" |
+| daniel-cw-hsu | Had a thought | REST API returning structured data | effort for a guided photo flow | REST API takes photos, returns structured timestamped measurements; 2-4 weeks; FAQ | question: is the web app yours to scope | "Book time here if it's worth a look:" |
+| nick-m-632b1177 | Spotted something | repeatability sentence (1.2) | measurements as outcome in research data | structured timestamped measurements beside outcome fields; FAQ | "a name for the portal owner would help" | "A call could cover it:" |
+| tylerrdyck | Curious about your | two phone photos to a composition estimate | how finance reads retention | small test group, retention shows if it helped; 112,100 line | question: would portal owner be better | "A call is easy to set up:" |

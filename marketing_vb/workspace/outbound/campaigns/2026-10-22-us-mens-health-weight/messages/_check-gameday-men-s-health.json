@@ -1,0 +1,2200 @@
+{
+ "campaign": "2026-10-22-us-mens-health-weight",
+ "checked": 31,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "gameday-men-s-health",
+ "generated": "2026-10-23T08:23:48",
+ "hard": [],
+ "soft": [
+  [
+   "no company line",
+   "mark-larey-b1951366 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "brandonmaughan M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "timothy-rempher-81347433 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "michael-tabor-5957195 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "jason-ange-32138a6 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "justinpenny M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "ampy-tyler-37a1b916 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "allen-brooke-834a1119 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "stephen-mercurio-20307b14a M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "shea-tiana M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "gina-dressler-2730271b0 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "jean-leisen-bondoc-97699b232 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "megann-grant-205521299 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "ron-noonan-50a102283 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "sommer-rushing-3a4782315 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "shelley-gay-a450443b5 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "danielleprosinski M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "halmdmba M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "julie-caputo-531a522b7 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "drquimbo M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "bonesflottmann M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "judson-threlkeld-4106439 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "alexander-peterson-896327b8 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "john-hudnall-2b26901a M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "chadcarman-677a12285 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "lisa-barr-m-d-90847623 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "carlos-elizondo-13898816a M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "richard-force-1b4589169 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "nicole-marlborough M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "tristyn-coffeen-5642a325b M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "anna-coble-bsn-rn-9b14a773 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / brandonmaughan",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / timothy-rempher-81347433",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / michael-tabor-5957195",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / jason-ange-32138a6",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / justinpenny",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / ampy-tyler-37a1b916",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / allen-brooke-834a1119",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / stephen-mercurio-20307b14a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / shea-tiana",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / gina-dressler-2730271b0",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / jean-leisen-bondoc-97699b232",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / megann-grant-205521299",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / ron-noonan-50a102283",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / sommer-rushing-3a4782315",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / shelley-gay-a450443b5",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / halmdmba",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / julie-caputo-531a522b7",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / drquimbo",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / bonesflottmann",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / judson-threlkeld-4106439",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / alexander-peterson-896327b8",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / john-hudnall-2b26901a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / chadcarman-677a12285",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / lisa-barr-m-d-90847623",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / carlos-elizondo-13898816a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: mark-larey-b1951366 / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / timothy-rempher-81347433",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / michael-tabor-5957195",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / jason-ange-32138a6",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / justinpenny",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / ampy-tyler-37a1b916",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / allen-brooke-834a1119",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / stephen-mercurio-20307b14a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / shea-tiana",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / gina-dressler-2730271b0",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / jean-leisen-bondoc-97699b232",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / megann-grant-205521299",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / ron-noonan-50a102283",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / sommer-rushing-3a4782315",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / shelley-gay-a450443b5",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / halmdmba",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / julie-caputo-531a522b7",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / drquimbo",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / bonesflottmann",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / judson-threlkeld-4106439",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / alexander-peterson-896327b8",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / john-hudnall-2b26901a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / chadcarman-677a12285",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / lisa-barr-m-d-90847623",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / carlos-elizondo-13898816a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: brandonmaughan / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / michael-tabor-5957195",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / jason-ange-32138a6",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / justinpenny",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / ampy-tyler-37a1b916",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / allen-brooke-834a1119",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / stephen-mercurio-20307b14a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / shea-tiana",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / gina-dressler-2730271b0",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / jean-leisen-bondoc-97699b232",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / megann-grant-205521299",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / ron-noonan-50a102283",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / sommer-rushing-3a4782315",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / shelley-gay-a450443b5",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / halmdmba",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / julie-caputo-531a522b7",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / drquimbo",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / bonesflottmann",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / judson-threlkeld-4106439",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / alexander-peterson-896327b8",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / john-hudnall-2b26901a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / chadcarman-677a12285",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / lisa-barr-m-d-90847623",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / carlos-elizondo-13898816a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: timothy-rempher-81347433 / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: michael-tabor-5957195 / jason-ange-32138a6",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: michael-tabor-5957195 / justinpenny",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: michael-tabor-5957195 / ampy-tyler-37a1b916",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: michael-tabor-5957195 / allen-brooke-834a1119",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: michael-tabor-5957195 / stephen-mercurio-20307b14a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: michael-tabor-5957195 / shea-tiana",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: michael-tabor-5957195 / gina-dressler-2730271b0",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: michael-tabor-5957195 / jean-leisen-bondoc-97699b232",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: michael-tabor-5957195 / megann-grant-205521299",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: michael-tabor-5957195 / ron-noonan-50a102283",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: michael-tabor-5957195 / sommer-rushing-3a4782315",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: michael-tabor-5957195 / shelley-gay-a450443b5",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: michael-tabor-5957195 / halmdmba",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: michael-tabor-5957195 / julie-caputo-531a522b7",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: michael-tabor-5957195 / drquimbo",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: michael-tabor-5957195 / bonesflottmann",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: michael-tabor-5957195 / judson-threlkeld-4106439",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: michael-tabor-5957195 / alexander-peterson-896327b8",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: michael-tabor-5957195 / john-hudnall-2b26901a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: michael-tabor-5957195 / chadcarman-677a12285",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: michael-tabor-5957195 / lisa-barr-m-d-90847623",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: michael-tabor-5957195 / carlos-elizondo-13898816a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: michael-tabor-5957195 / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: michael-tabor-5957195 / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: michael-tabor-5957195 / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jason-ange-32138a6 / justinpenny",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jason-ange-32138a6 / ampy-tyler-37a1b916",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jason-ange-32138a6 / allen-brooke-834a1119",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jason-ange-32138a6 / stephen-mercurio-20307b14a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jason-ange-32138a6 / shea-tiana",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jason-ange-32138a6 / gina-dressler-2730271b0",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jason-ange-32138a6 / jean-leisen-bondoc-97699b232",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jason-ange-32138a6 / megann-grant-205521299",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jason-ange-32138a6 / ron-noonan-50a102283",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jason-ange-32138a6 / sommer-rushing-3a4782315",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jason-ange-32138a6 / shelley-gay-a450443b5",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jason-ange-32138a6 / halmdmba",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jason-ange-32138a6 / julie-caputo-531a522b7",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jason-ange-32138a6 / drquimbo",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jason-ange-32138a6 / bonesflottmann",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jason-ange-32138a6 / judson-threlkeld-4106439",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jason-ange-32138a6 / alexander-peterson-896327b8",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jason-ange-32138a6 / john-hudnall-2b26901a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jason-ange-32138a6 / chadcarman-677a12285",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jason-ange-32138a6 / lisa-barr-m-d-90847623",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jason-ange-32138a6 / carlos-elizondo-13898816a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jason-ange-32138a6 / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jason-ange-32138a6 / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jason-ange-32138a6 / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: justinpenny / ampy-tyler-37a1b916",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: justinpenny / allen-brooke-834a1119",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: justinpenny / stephen-mercurio-20307b14a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: justinpenny / shea-tiana",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: justinpenny / gina-dressler-2730271b0",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: justinpenny / jean-leisen-bondoc-97699b232",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: justinpenny / megann-grant-205521299",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: justinpenny / ron-noonan-50a102283",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: justinpenny / sommer-rushing-3a4782315",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: justinpenny / shelley-gay-a450443b5",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: justinpenny / halmdmba",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: justinpenny / julie-caputo-531a522b7",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: justinpenny / drquimbo",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: justinpenny / bonesflottmann",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: justinpenny / judson-threlkeld-4106439",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: justinpenny / alexander-peterson-896327b8",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: justinpenny / john-hudnall-2b26901a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: justinpenny / chadcarman-677a12285",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: justinpenny / lisa-barr-m-d-90847623",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: justinpenny / carlos-elizondo-13898816a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: justinpenny / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: justinpenny / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: justinpenny / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ampy-tyler-37a1b916 / allen-brooke-834a1119",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ampy-tyler-37a1b916 / stephen-mercurio-20307b14a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ampy-tyler-37a1b916 / shea-tiana",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ampy-tyler-37a1b916 / gina-dressler-2730271b0",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ampy-tyler-37a1b916 / jean-leisen-bondoc-97699b232",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ampy-tyler-37a1b916 / megann-grant-205521299",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ampy-tyler-37a1b916 / ron-noonan-50a102283",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ampy-tyler-37a1b916 / sommer-rushing-3a4782315",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ampy-tyler-37a1b916 / shelley-gay-a450443b5",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ampy-tyler-37a1b916 / halmdmba",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ampy-tyler-37a1b916 / julie-caputo-531a522b7",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ampy-tyler-37a1b916 / drquimbo",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ampy-tyler-37a1b916 / bonesflottmann",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ampy-tyler-37a1b916 / judson-threlkeld-4106439",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ampy-tyler-37a1b916 / alexander-peterson-896327b8",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ampy-tyler-37a1b916 / john-hudnall-2b26901a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ampy-tyler-37a1b916 / chadcarman-677a12285",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ampy-tyler-37a1b916 / lisa-barr-m-d-90847623",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ampy-tyler-37a1b916 / carlos-elizondo-13898816a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ampy-tyler-37a1b916 / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ampy-tyler-37a1b916 / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ampy-tyler-37a1b916 / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: allen-brooke-834a1119 / stephen-mercurio-20307b14a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: allen-brooke-834a1119 / shea-tiana",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: allen-brooke-834a1119 / gina-dressler-2730271b0",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: allen-brooke-834a1119 / jean-leisen-bondoc-97699b232",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: allen-brooke-834a1119 / megann-grant-205521299",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: allen-brooke-834a1119 / ron-noonan-50a102283",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: allen-brooke-834a1119 / sommer-rushing-3a4782315",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: allen-brooke-834a1119 / shelley-gay-a450443b5",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: allen-brooke-834a1119 / halmdmba",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: allen-brooke-834a1119 / julie-caputo-531a522b7",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: allen-brooke-834a1119 / drquimbo",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: allen-brooke-834a1119 / bonesflottmann",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: allen-brooke-834a1119 / judson-threlkeld-4106439",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: allen-brooke-834a1119 / alexander-peterson-896327b8",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: allen-brooke-834a1119 / john-hudnall-2b26901a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: allen-brooke-834a1119 / chadcarman-677a12285",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: allen-brooke-834a1119 / lisa-barr-m-d-90847623",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: allen-brooke-834a1119 / carlos-elizondo-13898816a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: allen-brooke-834a1119 / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: allen-brooke-834a1119 / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: allen-brooke-834a1119 / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: stephen-mercurio-20307b14a / shea-tiana",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: stephen-mercurio-20307b14a / gina-dressler-2730271b0",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: stephen-mercurio-20307b14a / jean-leisen-bondoc-97699b232",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: stephen-mercurio-20307b14a / megann-grant-205521299",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: stephen-mercurio-20307b14a / ron-noonan-50a102283",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: stephen-mercurio-20307b14a / sommer-rushing-3a4782315",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: stephen-mercurio-20307b14a / shelley-gay-a450443b5",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: stephen-mercurio-20307b14a / halmdmba",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: stephen-mercurio-20307b14a / julie-caputo-531a522b7",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: stephen-mercurio-20307b14a / drquimbo",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: stephen-mercurio-20307b14a / bonesflottmann",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: stephen-mercurio-20307b14a / judson-threlkeld-4106439",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: stephen-mercurio-20307b14a / alexander-peterson-896327b8",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: stephen-mercurio-20307b14a / john-hudnall-2b26901a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: stephen-mercurio-20307b14a / chadcarman-677a12285",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: stephen-mercurio-20307b14a / lisa-barr-m-d-90847623",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: stephen-mercurio-20307b14a / carlos-elizondo-13898816a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: stephen-mercurio-20307b14a / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: stephen-mercurio-20307b14a / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: stephen-mercurio-20307b14a / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shea-tiana / gina-dressler-2730271b0",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shea-tiana / jean-leisen-bondoc-97699b232",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shea-tiana / megann-grant-205521299",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shea-tiana / ron-noonan-50a102283",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shea-tiana / sommer-rushing-3a4782315",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shea-tiana / shelley-gay-a450443b5",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shea-tiana / halmdmba",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shea-tiana / julie-caputo-531a522b7",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shea-tiana / drquimbo",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shea-tiana / bonesflottmann",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shea-tiana / judson-threlkeld-4106439",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shea-tiana / alexander-peterson-896327b8",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shea-tiana / john-hudnall-2b26901a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shea-tiana / chadcarman-677a12285",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shea-tiana / lisa-barr-m-d-90847623",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shea-tiana / carlos-elizondo-13898816a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shea-tiana / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shea-tiana / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shea-tiana / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: gina-dressler-2730271b0 / jean-leisen-bondoc-97699b232",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: gina-dressler-2730271b0 / megann-grant-205521299",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: gina-dressler-2730271b0 / ron-noonan-50a102283",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: gina-dressler-2730271b0 / sommer-rushing-3a4782315",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: gina-dressler-2730271b0 / shelley-gay-a450443b5",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: gina-dressler-2730271b0 / halmdmba",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: gina-dressler-2730271b0 / julie-caputo-531a522b7",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: gina-dressler-2730271b0 / drquimbo",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: gina-dressler-2730271b0 / bonesflottmann",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: gina-dressler-2730271b0 / judson-threlkeld-4106439",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: gina-dressler-2730271b0 / alexander-peterson-896327b8",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: gina-dressler-2730271b0 / john-hudnall-2b26901a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: gina-dressler-2730271b0 / chadcarman-677a12285",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: gina-dressler-2730271b0 / lisa-barr-m-d-90847623",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: gina-dressler-2730271b0 / carlos-elizondo-13898816a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: gina-dressler-2730271b0 / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: gina-dressler-2730271b0 / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: gina-dressler-2730271b0 / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jean-leisen-bondoc-97699b232 / megann-grant-205521299",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jean-leisen-bondoc-97699b232 / ron-noonan-50a102283",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jean-leisen-bondoc-97699b232 / sommer-rushing-3a4782315",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jean-leisen-bondoc-97699b232 / shelley-gay-a450443b5",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jean-leisen-bondoc-97699b232 / halmdmba",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jean-leisen-bondoc-97699b232 / julie-caputo-531a522b7",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jean-leisen-bondoc-97699b232 / drquimbo",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jean-leisen-bondoc-97699b232 / bonesflottmann",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jean-leisen-bondoc-97699b232 / judson-threlkeld-4106439",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jean-leisen-bondoc-97699b232 / alexander-peterson-896327b8",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jean-leisen-bondoc-97699b232 / john-hudnall-2b26901a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jean-leisen-bondoc-97699b232 / chadcarman-677a12285",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jean-leisen-bondoc-97699b232 / lisa-barr-m-d-90847623",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jean-leisen-bondoc-97699b232 / carlos-elizondo-13898816a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jean-leisen-bondoc-97699b232 / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jean-leisen-bondoc-97699b232 / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: jean-leisen-bondoc-97699b232 / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: megann-grant-205521299 / ron-noonan-50a102283",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: megann-grant-205521299 / sommer-rushing-3a4782315",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: megann-grant-205521299 / shelley-gay-a450443b5",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: megann-grant-205521299 / halmdmba",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: megann-grant-205521299 / julie-caputo-531a522b7",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: megann-grant-205521299 / drquimbo",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: megann-grant-205521299 / bonesflottmann",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: megann-grant-205521299 / judson-threlkeld-4106439",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: megann-grant-205521299 / alexander-peterson-896327b8",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: megann-grant-205521299 / john-hudnall-2b26901a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: megann-grant-205521299 / chadcarman-677a12285",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: megann-grant-205521299 / lisa-barr-m-d-90847623",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: megann-grant-205521299 / carlos-elizondo-13898816a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: megann-grant-205521299 / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: megann-grant-205521299 / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: megann-grant-205521299 / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ron-noonan-50a102283 / sommer-rushing-3a4782315",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ron-noonan-50a102283 / shelley-gay-a450443b5",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ron-noonan-50a102283 / halmdmba",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ron-noonan-50a102283 / julie-caputo-531a522b7",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ron-noonan-50a102283 / drquimbo",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ron-noonan-50a102283 / bonesflottmann",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ron-noonan-50a102283 / judson-threlkeld-4106439",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ron-noonan-50a102283 / alexander-peterson-896327b8",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ron-noonan-50a102283 / john-hudnall-2b26901a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ron-noonan-50a102283 / chadcarman-677a12285",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ron-noonan-50a102283 / lisa-barr-m-d-90847623",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ron-noonan-50a102283 / carlos-elizondo-13898816a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ron-noonan-50a102283 / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ron-noonan-50a102283 / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: ron-noonan-50a102283 / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: sommer-rushing-3a4782315 / shelley-gay-a450443b5",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: sommer-rushing-3a4782315 / halmdmba",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: sommer-rushing-3a4782315 / julie-caputo-531a522b7",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: sommer-rushing-3a4782315 / drquimbo",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: sommer-rushing-3a4782315 / bonesflottmann",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: sommer-rushing-3a4782315 / judson-threlkeld-4106439",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: sommer-rushing-3a4782315 / alexander-peterson-896327b8",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: sommer-rushing-3a4782315 / john-hudnall-2b26901a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: sommer-rushing-3a4782315 / chadcarman-677a12285",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: sommer-rushing-3a4782315 / lisa-barr-m-d-90847623",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: sommer-rushing-3a4782315 / carlos-elizondo-13898816a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: sommer-rushing-3a4782315 / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: sommer-rushing-3a4782315 / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: sommer-rushing-3a4782315 / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shelley-gay-a450443b5 / halmdmba",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shelley-gay-a450443b5 / julie-caputo-531a522b7",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shelley-gay-a450443b5 / drquimbo",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shelley-gay-a450443b5 / bonesflottmann",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shelley-gay-a450443b5 / judson-threlkeld-4106439",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shelley-gay-a450443b5 / alexander-peterson-896327b8",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shelley-gay-a450443b5 / john-hudnall-2b26901a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shelley-gay-a450443b5 / chadcarman-677a12285",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shelley-gay-a450443b5 / lisa-barr-m-d-90847623",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shelley-gay-a450443b5 / carlos-elizondo-13898816a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shelley-gay-a450443b5 / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shelley-gay-a450443b5 / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: shelley-gay-a450443b5 / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: halmdmba / julie-caputo-531a522b7",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: halmdmba / drquimbo",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: halmdmba / bonesflottmann",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: halmdmba / judson-threlkeld-4106439",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: halmdmba / alexander-peterson-896327b8",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: halmdmba / john-hudnall-2b26901a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: halmdmba / chadcarman-677a12285",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: halmdmba / lisa-barr-m-d-90847623",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: halmdmba / carlos-elizondo-13898816a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: halmdmba / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: halmdmba / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: halmdmba / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: julie-caputo-531a522b7 / drquimbo",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: julie-caputo-531a522b7 / bonesflottmann",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: julie-caputo-531a522b7 / judson-threlkeld-4106439",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: julie-caputo-531a522b7 / alexander-peterson-896327b8",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: julie-caputo-531a522b7 / john-hudnall-2b26901a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: julie-caputo-531a522b7 / chadcarman-677a12285",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: julie-caputo-531a522b7 / lisa-barr-m-d-90847623",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: julie-caputo-531a522b7 / carlos-elizondo-13898816a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: julie-caputo-531a522b7 / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: julie-caputo-531a522b7 / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: julie-caputo-531a522b7 / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: drquimbo / bonesflottmann",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: drquimbo / judson-threlkeld-4106439",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: drquimbo / alexander-peterson-896327b8",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: drquimbo / john-hudnall-2b26901a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: drquimbo / chadcarman-677a12285",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: drquimbo / lisa-barr-m-d-90847623",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: drquimbo / carlos-elizondo-13898816a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: drquimbo / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: drquimbo / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: drquimbo / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: bonesflottmann / judson-threlkeld-4106439",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: bonesflottmann / alexander-peterson-896327b8",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: bonesflottmann / john-hudnall-2b26901a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: bonesflottmann / chadcarman-677a12285",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: bonesflottmann / lisa-barr-m-d-90847623",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: bonesflottmann / carlos-elizondo-13898816a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: bonesflottmann / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: bonesflottmann / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: bonesflottmann / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: judson-threlkeld-4106439 / alexander-peterson-896327b8",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: judson-threlkeld-4106439 / john-hudnall-2b26901a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: judson-threlkeld-4106439 / chadcarman-677a12285",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: judson-threlkeld-4106439 / lisa-barr-m-d-90847623",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: judson-threlkeld-4106439 / carlos-elizondo-13898816a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: judson-threlkeld-4106439 / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: judson-threlkeld-4106439 / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: judson-threlkeld-4106439 / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: alexander-peterson-896327b8 / john-hudnall-2b26901a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: alexander-peterson-896327b8 / chadcarman-677a12285",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: alexander-peterson-896327b8 / lisa-barr-m-d-90847623",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: alexander-peterson-896327b8 / carlos-elizondo-13898816a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: alexander-peterson-896327b8 / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: alexander-peterson-896327b8 / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: alexander-peterson-896327b8 / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: john-hudnall-2b26901a / chadcarman-677a12285",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: john-hudnall-2b26901a / lisa-barr-m-d-90847623",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: john-hudnall-2b26901a / carlos-elizondo-13898816a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: john-hudnall-2b26901a / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: john-hudnall-2b26901a / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: john-hudnall-2b26901a / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: chadcarman-677a12285 / lisa-barr-m-d-90847623",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: chadcarman-677a12285 / carlos-elizondo-13898816a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: chadcarman-677a12285 / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: chadcarman-677a12285 / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: chadcarman-677a12285 / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: lisa-barr-m-d-90847623 / carlos-elizondo-13898816a",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: lisa-barr-m-d-90847623 / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: lisa-barr-m-d-90847623 / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: lisa-barr-m-d-90847623 / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: carlos-elizondo-13898816a / richard-force-1b4589169",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: carlos-elizondo-13898816a / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: carlos-elizondo-13898816a / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: richard-force-1b4589169 / tristyn-coffeen-5642a325b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: richard-force-1b4589169 / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gameday Men's Health: tristyn-coffeen-5642a325b / anna-coble-bsn-rn-9b14a773",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "sentence opening repeated",
+   "Gameday Men's Health ×29",
+   "«we support hipaa governed deployments…»: alexander-peterson-896327b8, allen-brooke-834a1119, ampy-tyler-37a1b916, anna-coble-bsn-rn-9b14a773"
+  ]
+ ]
+}

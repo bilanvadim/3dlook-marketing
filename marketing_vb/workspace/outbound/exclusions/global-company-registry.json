@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-21",
+  "last_updated": "2026-10-23",
   "companies": {
     "safariland": {
       "covered_by_profile": null,
@@ -2651,6 +2651,54 @@
       "campaign_id": "2026-10-19-eu-everlab-similar",
       "product": "fitxpress",
       "date": "2026-10-19",
+      "status": "active"
+    },
+    "dudemeds": {
+      "display_name": "DudeMeds",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-22-us-mens-health-weight",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "gameday-mens-health": {
+      "display_name": "Gameday Men's Health",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-22-us-mens-health-weight",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "hone-health": {
+      "display_name": "Hone Health",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-22-us-mens-health-weight",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "lasara-medical": {
+      "display_name": "LaSara Medical Group",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-22-us-mens-health-weight",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "marek-health": {
+      "display_name": "Marek Health",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-22-us-mens-health-weight",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "maximus": {
+      "display_name": "Maximus",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-22-us-mens-health-weight",
+      "product": "fitxpress",
+      "date": "2026-10-22",
       "status": "active"
     }
   }

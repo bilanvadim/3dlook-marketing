@@ -1,0 +1,1250 @@
+first_name,last_name,linkedin_url,company,title,email,connection_note,message_1,message_2
+Elizabeth,Simion,https://linkedin.com/in/elizabethsimion,Hone Health,"Senior Director, Data, Analytics & Machine Learning",,,"Hi Elizabeth,
+
+Thought I'd share an idea from your self-serve BI and AI products work. FitXpress returns body measurements as structured, timestamped records, 80+ per capture from two photos, which could sit beside biomarkers in Hone's data model.
+
+How would your team model body measurements next to biomarkers?
+
+Nick","Hi Elizabeth,
+
+For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm. Basic integrations typically run 2-4 weeks.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Privacy FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Open to a call on the schema?
+https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Melanie,Doukas,https://linkedin.com/in/melanie-doukas-74311661,Hone Health,Director of Provider Operations,,,"Hi Melanie,
+
+Noticed your background: bedside nursing, now provider operations at Hone. A member takes two photos, front and side, on a phone, and FitXpress returns waist and other circumferences from them, ready to read beside labs at a Hone follow-up.
+
+What does a Hone provider look at about a member's body when judging change at follow-up?
+
+Nick","Hi Melanie,
+
+Taken at home before the visit, a waist reading gives the provider one more thing to read beside labs. The same two photos return 80+ body measurements.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Want to put a call on the calendar?
+https://meetings.hubspot.com/nick-omelchak
+
+If provider tooling has a separate owner, I'd welcome that name.
+
+Nick"
+Mark,Larey,https://linkedin.com/in/mark-larey-b1951366,Gameday Men's Health,Director,,,"Hi Mark,
+
+Spotted your role as medical director at Gameday Hot Springs. Each capture brings 80+ body measurements, waist among them. The provider chooses which captures to compare.
+
+At a weight follow-up, what do you review to judge body change?
+
+Nick","Hi Mark,
+
+Between follow-ups, a member's home capture puts waist and body composition estimates in front of you to compare.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Book time here: https://meetings.hubspot.com/nick-omelchak
+
+If network tools run through HQ, who there should I ask?
+
+Nick"
+John,Snedegar,https://linkedin.com/in/johnsnedegar,LaSara Medical Group,CEO | Founder,,,"Hi John,
+
+Made me think about LaSara Medical Group: members of your GLP-1 programs see providers both in person and on telehealth.
+
+FitXpress is a guided two-photo capture on any phone that returns 80+ body measurements.
+
+How do your providers follow body change across those two kinds of visits?
+
+Nick","Hi John,
+
+Providers could get the same capture from home before a telehealth visit. Each scan returns a 3D model and measurements, under 45 seconds from the photos to structured results, and the provider picks which captures to compare.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Open to a call? Pick a time: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Matt,Buckleman,https://linkedin.com/in/matt-buckleman-3322771,Hone Health,CTO & Co-Founder,,,"Hi Matt,
+
+Had a thought from your enterprise architecture background, about Hone's portal. Our REST API and web SDK, white-label, add a guided capture step to a web app.
+
+Where would a web SDK capture step sit in the portal architecture?
+
+Nick","Hi Matt,
+
+The web SDK puts the capture on a portal page. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results. Typically, a basic integration takes 2-4 weeks.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Privacy FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Open to a call on your stack?
+https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Brandon,Maughan,https://linkedin.com/in/brandonmaughan,Gameday Men's Health,Director of Business Development,,,"Hi Brandon,
+
+Caught my eye: your background across logistics, partnerships and business development. FitXpress is white-label, offered as an API and as SDKs, and sits inside tools a company already runs. 80+ body measurements come back from two photos.
+
+What do prospective clinic partners ask Gameday about the weight line?
+
+Nick","Hi Brandon,
+
+Partners could watch a member's home step in a short demo, then ask their own questions.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Demo slot: https://meetings.hubspot.com/nick-omelchak
+
+Whoever at HQ handles member tools is welcome to take it from here.
+
+Nick"
+Steve,F.,https://linkedin.com/in/sfinnern,Maximus,Chief Operating Officer,,,"Hi Steve,
+
+Quick reaction to your headline, with its scaling of direct-to-consumer operations. Maximus patients use a dashboard with clinician messaging.
+
+FitXpress runs a guided capture on any phone, and each scan returns a 3D model.
+
+What keeps weight patients active in the Maximus dashboard right now?
+
+Nick","Hi Steve,
+
+A 3D model of their own capture gives members something to open in the dashboard. One weight-management platform ran 34,000 scans in 2025.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Free for a conversation? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Timothy,Rempher,https://linkedin.com/in/timothy-rempher-81347433,Gameday Men's Health,Director of Business Systems,,,"Hi Timothy,
+
+Your line about systems that don't connect stood out. FitXpress is a REST API with web and mobile SDKs, white-label. Two photos go in. It returns 80+ body measurements, under 45 seconds from the photos to structured results.
+
+Where would a capture result land in Gameday's systems if one integration served every clinic?
+
+Nick","Hi Timothy,
+
+A typical basic integration takes 2-4 weeks, and data arrives as structured, timestamped measurements.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days. Details: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Walk-through: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Michael,Tabor,https://linkedin.com/in/michael-tabor-5957195,Gameday Men's Health,Chief Innovation Officer,,,"Hi Michael,
+
+Quick thought after reading how you describe bringing ideas, strategy and talent together at Gameday. FitXpress runs on the phone in a member's pocket, front and side photos, with no hardware to ship. One weight-management platform ran 34,000 scans in 2025.
+
+When Gameday tests a new patient-facing tool, how does it get evaluated before clinics are offered it?
+
+Nick","Hi Michael,
+
+Seeing the member side first makes an evaluation concrete, and I can show a short working example.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+I can walk you through it: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Jason,Ange,https://linkedin.com/in/jason-ange-32138a6,Gameday Men's Health,Chief Operating Officer,,,"Hi Jason,
+
+Had a thought reading your headline, with Clinical Data beside COO at Gameday. A capture arrives as structured data: 80+ body measurements per member. 3DLOOK has worked with 100+ clients.
+
+How are weight members' records organized for the provider from one visit to the next?
+
+Nick","Hi Jason,
+
+Dated measurements from a home capture add a clear entry between two visits.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth a conversation? https://meetings.hubspot.com/nick-omelchak
+
+If HQ chooses these tools, a pointer to that contact works too.
+
+Nick"
+Jason,Clark,https://linkedin.com/in/jasonmclark,Hone Health,Vice President of Software Development,,,"Hi Jason,
+
+Quick one on your hands-on engineering background, with a question about Hone's member portal. FitXpress takes front and side photos through an SDK or direct API calls and sends back structured data.
+
+How are member flows in the portal built today?
+
+Nick","Hi Jason,
+
+Structured data returns to Hone's own backend, and the portal flow stays yours to build. A typical basic integration takes 2-4 weeks.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Privacy FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Call to size the work?
+https://meetings.hubspot.com/nick-omelchak
+
+A pointer to the engineer behind the member app works too.
+
+Nick"
+Mark,Poole,https://linkedin.com/in/markrpoole,Maximus,Head of Engineering,,,"Hi Mark,
+
+Came across your work as CTO at Prado and Ostro before heading engineering at Maximus. FitXpress ships a web SDK, and each scan returns body composition estimates with BMI and BMR calculated.
+
+How would your team add a capture step to the portal through a web SDK?
+
+Nick","Hi Mark,
+
+A typical basic integration takes 2-4 weeks, with the web SDK covering the capture screen.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Calendar if you'd like to dig in: https://meetings.hubspot.com/nick-omelchak
+Wrong desk? Tell me who owns the portal and I'll write to them.
+
+Nick"
+John,Marhefka,https://linkedin.com/in/john-marhefka-8527569,Hone Health,Senior Vice President Development,,,"Hi John,
+
+Your bio line, people-first leader building great software, stayed with me. The SDK step takes a member's front and side photos and hands Hone's app structured records.
+
+What is next on the member dashboard for your teams?
+
+Nick","Hi John,
+
+Records from a capture can feed a dashboard view directly, and a typical basic integration takes 2-4 weeks. 3DLOOK has worked with 100+ clients.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Privacy FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Time on the calendar?
+https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Justin,Penny,https://linkedin.com/in/justinpenny,Gameday Men's Health,"Managing Director, Alaska",,,"Hi Justin,
+
+Made me think about distance: you run Gameday Alaska as managing director. A guided capture on any phone, front and side, returns 80+ body measurements wherever a member is.
+
+How do members who live far away or travel stay in touch with your clinic between visits?
+
+Nick","Hi Justin,
+
+A member who travels can finish the step from a hotel room.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Pick a time: https://meetings.hubspot.com/nick-omelchak
+
+Should the tools come from HQ, which contact there handles them?
+
+Nick"
+Saad,Alam,https://linkedin.com/in/saad-alam-a146b311,Hone Health,Founder & CEO at Hone,,,"Hi Saad,
+
+Quick thought: Hone is your second company as a founder. FitXpress can run under Hone's own name inside the app members already use, with a guided two-photo capture on any phone and 80+ body measurements coming back.
+
+How does a member follow his body change across retests?
+
+Nick","Hi Saad,
+
+Between retests, a member could take the two photos himself at home, and Hone chooses what to show him next to the retest. One weight-management platform ran 34,000 scans in 2025.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Open to talking it through?
+https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Ampy,Tyler,https://linkedin.com/in/ampy-tyler-37a1b916,Gameday Men's Health,Chief Operating Officer,,,"Hi Ampy,
+
+Curious about your take, given patient experience sits in your headline at Gameday. Members get a 3D model of themselves from two photos, and the care side gets 80+ body measurements. 3DLOOK has worked with 100+ clients.
+
+How does a member at your clinic see his own progress between visits?
+
+Nick","Hi Ampy,
+
+Looking at his own 3D model between visits gives a member something of his own to follow.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Glad to show it: https://meetings.hubspot.com/nick-omelchak
+
+Not yours to decide? Tell me whose it is.
+
+Nick"
+Allen,Brooke,https://linkedin.com/in/allen-brooke-834a1119,Gameday Men's Health,Chief Strategy Officer,,,"Hi Allen,
+
+Noticed your background in finance ahead of the strategy seat at Gameday. Waist and hip are two of the 80+ body measurements FitXpress returns after front and side photos.
+
+Where does home capture fit in the network's plans for the weight line?
+
+Nick","Hi Allen,
+
+Home capture adds a data point between clinic visits, in the same shape for every Gameday clinic.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Link to a working-example call: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Josh,Turner,https://linkedin.com/in/josh-turner-61771a20,Marek Health,Executive Vice President,,,"Hi Josh,
+
+Noticed your background in purchasing and supplier development at ZF Group.
+
+Marek Health's coaches hold 1:1 check-ins, and FitXpress adds a guided capture from two photos, front and side, taken on the client's phone.
+
+How does Marek weigh a new service like this for its coaching model?
+
+Nick","Hi Josh,
+
+Our side of that weighing is short: a white-label API with SDKs places the capture inside the client experience Marek already runs, and a coach gets 80+ body measurements to open a check-in with.
+
+112,100 scans in 2025 across all 3DLOOK customers.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Book a call with me here: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Seth,Franz,https://linkedin.com/in/seth-franz,Hone Health,Co-Founder and Director of Operations,,,"Hi Seth,
+
+Your nonprofit background caught my eye: you founded one, and now you run the logistics of Hone's member testing, at home or at a partner lab. FitXpress adds a guided capture a member can finish at home too, from two photos.
+
+Which steps do members finish at home between retests today?
+
+Nick","Hi Seth,
+
+Members get one more thing to finish at home between retests. Each scan returns a timestamped record of 80+ body measurements, under 45 seconds from the photos to structured results.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth a call?
+https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Sal,Pilato,https://linkedin.com/in/salpilato,DudeMeds,Co-Founder + CEO,,,"Hi Sal,
+
+Quick idea for you: a new DudeMeds member could capture his starting body measurements from his own phone.
+
+FitXpress is a guided capture from two photos, front and side. It returns 80+ body measurements and a 3D model, with no device to ship.
+
+Where would a body capture fit when a new member starts your GLP-1 program?
+
+Nick","Hi Sal,
+
+In the start-up flow, a member could take the two photos right after signing up, on his own phone. 3DLOOK has worked with 100+ clients.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Want to see it? Time here: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Daniel,Hsu,https://linkedin.com/in/daniel-cw-hsu,Maximus,Director of Engineering,,,"Hi Daniel,
+
+Had a thought about the Maximus web app, given your full stack background. FitXpress gives back body measurements as structured data over a REST API.
+
+How much effort would a guided photo flow take on your side?
+
+Nick","Hi Daniel,
+
+The REST API takes the front and side photos and returns structured, timestamped measurements. Typical basic integrations run 2-4 weeks.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Book time here if it's worth a look: https://meetings.hubspot.com/nick-omelchak
+Is the web app yours to scope, or should I ask a different team?
+
+Nick"
+Ken,Vetrano,https://linkedin.com/in/ken-vetrano-23ba7258,Hone Health,Head of Partnerships & Community,,,"Hi Ken,
+
+Had to say hi after seeing your path from Runkeeper partnerships to community at Hone. Hone members could take a guided capture at home and get 80+ body measurements.
+
+What do Hone community members share about their progress today?
+
+Nick","Hi Ken,
+
+If members already talk about progress, a capture from home gives that conversation a measured value to point at. 3DLOOK has worked with 100+ clients.
+
+Open to a short call?
+https://meetings.hubspot.com/nick-omelchak
+
+Whoever owns the member portal could take it from here.
+
+Nick"
+Jerreck,McWilliams,https://linkedin.com/in/jerreck,Hone Health,Senior Director of Technology Operations,,,"Hi Jerreck,
+
+Quick reaction to your move from running engineering to technology operations at Hone, which prompted a vendor question. On our side, photos go to FitXpress over a REST API from the member's phone.
+
+How does a vendor that handles patient data pass technology review at Hone?
+
+Nick","Hi Jerreck,
+
+The privacy FAQ below covers how data is handled, and a typical basic integration takes 2-4 weeks. 112,100 scans in 2025 across all 3DLOOK customers.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Privacy FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Call to go through the review?
+https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Nick,M.,https://linkedin.com/in/nick-m-632b1177,Maximus,"Director, Data Engineering & Analytics",,,"Hi Nick,
+
+Spotted something: Maximus publishes its own clinical research, and you lead data engineering and analytics there. FitXpress returns body measurements as structured, timestamped records. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+How would body measurements fit as an outcome in Maximus's research data?
+
+Nick","Hi Nick,
+
+Structured measurements with a timestamp can sit next to other outcome fields in a research dataset.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+A call could cover it: https://meetings.hubspot.com/nick-omelchak
+A name for the portal owner would help if this is not your area.
+
+Nick"
+Nicholas,Del Prince,https://linkedin.com/in/nicholas-del-prince-244052ab,Hone Health,Associate Director of Performance Creative,,,"Hi Nicholas,
+
+Your direct response creative background stood out, and so did Hone's weight program. FitXpress could give that program one more feature to describe: a guided capture from front and side photos, with 80+ body measurements back.
+
+Which weight-program features does performance creative lead with at Hone?
+
+Nick","Hi Nicholas,
+
+In one line: take two photos at home and get 80+ body measurements back.
+
+Want to talk it over?
+https://meetings.hubspot.com/nick-omelchak
+
+Or point me to the weight-program product lead.
+
+Nick"
+Anthony,Malocu,https://linkedin.com/in/anthonymalocujr,Hone Health,"Senior Director, Customer Success",,,"Hi Anthony,
+
+This stood out: you moved up through Hone's own support team. When members write in about progress between retests, FitXpress gives your team body composition estimates, with BMI and BMR calculated, from two photos to talk through.
+
+What do members ask your team about their progress between retests?
+
+Nick","Hi Anthony,
+
+A member who sends two photos from home before writing in gives your team something concrete to answer from. 3DLOOK has worked with 100+ clients.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Got time for a call?
+https://meetings.hubspot.com/nick-omelchak
+
+Feel free to forward this to whoever owns the member app roadmap.
+
+Nick"
+Alaric,Murg,https://linkedin.com/in/alaric-murg,Maximus,Head of Care & Experience,,,"Hi Alaric,
+
+This stood out: you describe building care that patients want to stay in. At Maximus, members and clinicians message each other in the patient dashboard.
+
+FitXpress returns 80+ body measurements, waist and hip among them, from two photos.
+
+What does your care team look at to judge body change between follow-ups?
+
+Nick","Hi Alaric,
+
+A waist reading next to weight gives your care team one more number to talk through with a member between follow-ups.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Happy to show it live: https://meetings.hubspot.com/nick-omelchak
+A quick intro to whoever runs the dashboard works for me too.
+
+Nick"
+Nick,Boerger,https://linkedin.com/in/nicholas-boerger,Maximus,Director of Product Management,,,"Hi Nick,
+
+Caught my eye that you moved from product management at Carrot Health to Maximus, where members use a patient dashboard with clinician messaging.
+
+FitXpress comes as a white-label API and SDKs in Maximus's own look, and the phone is the only hardware. A scan returns waist and hip measurements.
+
+Where in the weight-program dashboard would a body capture sit?
+
+Nick","Hi Nick,
+
+Picture a capture screen in the dashboard, in Maximus's own look, that members open when they like. 3DLOOK has worked with 100+ clients.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Shall we walk through it? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Stephen,Mercurio,https://linkedin.com/in/stephen-mercurio-20307b14a,Gameday Men's Health,Chief Operating Officer,,,"Hi Stephen,
+
+Saw your earlier run leading Akua Behavioral Health. For a Gameday member, the part is two photos on a phone, front and side. 112,100 scans in 2025 across all 3DLOOK customers.
+
+How does HQ support clinic teams that run the weight line day to day?
+
+Nick","Hi Stephen,
+
+Support from HQ could include a home step that takes some work off busy visit days.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Calendar for a call: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Shea,Fears,https://linkedin.com/in/shea-tiana,Gameday Men's Health,Director of Corporate Operations,,,"Hi Shea,
+
+Came across your work on process, reporting and accountability behind growth. Each scan carries a timestamp, which gives a dated record per capture. One weight-management platform ran 34,000 scans in 2025.
+
+What do Gameday clinics report to HQ today on the weight line?
+
+Nick","Hi Shea,
+
+Clinic reports could draw on the same dated captures, taken from home between visits.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Grab a slot: https://meetings.hubspot.com/nick-omelchak
+
+Who at HQ owns patient tools? I would welcome a conversation with that person.
+
+Nick"
+Gina,Dressler,https://linkedin.com/in/gina-dressler-2730271b0,Gameday Men's Health,Director,,,"Hi Gina,
+
+Wanted to reach out, since you direct a Gameday clinic as an NP. FitXpress works from two photos. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+Before a weight follow-up, what would you want a member to send from home?
+
+Nick","Hi Gina,
+
+Circumferences from home could reach you before the member arrives.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Short call? https://meetings.hubspot.com/nick-omelchak
+
+An intro to the HQ owner of what members use would help.
+
+Nick"
+Jean,Leisen-Bondoc,https://linkedin.com/in/jean-leisen-bondoc-97699b232,Gameday Men's Health,Chief Operating Officer,,,"Hi Jean,
+
+Your learning and development background caught my eye at Gameday in the Greater Madison area. On screen, FitXpress walks a member through two photos, front and side.
+
+How do new staff learn the routine for weight visits?
+
+Nick","Hi Jean,
+
+Members complete the step at home, which leaves less to teach at the front desk. 80+ body measurements come back from it.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Calendar: https://meetings.hubspot.com/nick-omelchak
+
+Which person at HQ runs this? A name is enough.
+
+Nick"
+Daniel,Ward,https://linkedin.com/in/daniel-ward-5976a5204,Hone Health,Director of Partnerships & Client Experience,,,"Hi Daniel,
+
+Quick note: your partnerships and client experience role at Hone caught my eye. Waist and hip are among the 80+ body measurements FitXpress returns from two phone photos.
+
+What do partners and clients ask to see about member progress?
+
+Nick","Hi Daniel,
+
+Partners asking about member progress can be shown a dated waist reading from a capture made at home. 112,100 scans in 2025 across all 3DLOOK customers.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Could we find a time?
+https://meetings.hubspot.com/nick-omelchak
+
+Whoever handles client reporting is welcome to take the call.
+
+Nick"
+Phil,Daru,https://linkedin.com/in/phil-daru-594a26245,Marek Health,Executive Director of Performance,,,"Hi Phil,
+
+Caught my eye: a Hall of Fame coach now directing performance at Marek Health.
+
+FitXpress returns 80+ body measurements, waist and hip among them, from a guided capture on any phone.
+
+When one of your coaches opens a check-in, what does he look at about the client's body?
+
+Nick","Hi Phil,
+
+A coach who opens a check-in with the client's waist and hip in hand can spend the call on the conversation. Body composition estimates, with BMI and BMR calculated, come from the same capture.
+
+One weight-management platform ran 34,000 scans in 2025.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+A short call would show it live. Times are here: https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Megann,Grant,https://linkedin.com/in/megann-grant-205521299,Gameday Men's Health,Director of Operations,,,"Hi Megann,
+
+Had a look at your move from practice manager to director of operations at Gameday Austin. Two photos, front and side, give each member a first reference capture.
+
+How does your clinic use a member's first visit as the reference for later ones?
+
+Nick","Hi Megann,
+
+A first-week capture can sit beside later ones for the provider to compare, 80+ body measurements each time.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+See open times: https://meetings.hubspot.com/nick-omelchak
+
+The HQ team behind network tools could take this over.
+
+Nick"
+Jaci,Stratton,https://linkedin.com/in/jaci-stratton-4878b126a,Marek Health,Director of Operations,,,"Hi Jaci,
+
+Wanted to reach out about the step before a coach check-in at Marek Health.
+
+FitXpress needs only a client's own phone for a guided body capture, and each capture returns 80+ body measurements with a timestamp.
+
+How does a client's information reach his coach before a check-in today?
+
+Nick","Hi Jaci,
+
+Any coach can read a client's capture before the call starts. FitXpress returns 80+ body measurements, under 45 seconds from the photos to structured results.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Pick a slot that suits you: https://meetings.hubspot.com/nick-omelchak
+
+If someone else owns the client experience at Marek, tell me who and I'll write to them.
+
+Nick"
+Ron,Noonan,https://linkedin.com/in/ron-noonan-50a102283,Gameday Men's Health,President / Business Development,,,"Hi Ron,
+
+Thought I'd share something that fits your gym-business background, now at Gameday Roxbury and Rockaway. The same two-photo capture can run at both clinics, on whatever phone a member has. 112,100 scans in 2025 across all 3DLOOK customers.
+
+How do you keep one weight-line routine across both of your clinics?
+
+Nick","Hi Ron,
+
+One step on a member's phone looks the same at both clinics.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Link to book: https://meetings.hubspot.com/nick-omelchak
+
+Glad to loop in HQ's patient-tools contact too, whenever you like.
+
+Nick"
+SOMMER,RUSHING,https://linkedin.com/in/sommer-rushing-3a4782315,Gameday Men's Health,Director of Operations,,,"Hi Sommer,
+
+Quick one for you: running operations as franchise administrator at Gameday Lubbock. At home, a member follows prompts on screen and takes two photos, front and side.
+
+What are members asked to do at home between visits?
+
+Nick","Hi Sommer,
+
+Between visits, members could follow on-screen prompts for two photos and get 80+ body measurements.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Open slots: https://meetings.hubspot.com/nick-omelchak
+
+Handled above clinic level? Say who handles it.
+
+Nick"
+Shelley,Gay,https://linkedin.com/in/shelley-gay-a450443b5,Gameday Men's Health,"Chief Operating Officer (Jackals Temple Terrace, PA)",,,"Hi Shelley,
+
+Got me thinking: your bio talks about building systems and improving operations at Gameday Temple Terrace. FitXpress returns body composition estimates with BMI and BMR calculated, from a guided two-photo capture on the member's own phone.
+
+Where does staff time go on a busy weight-line day?
+
+Nick","Hi Shelley,
+
+Staff time at the visit goes to other work when the member does the capture, and 80+ body measurements come back.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Easy to show: https://meetings.hubspot.com/nick-omelchak
+
+Outside your remit? Let me know who to ask at HQ.
+
+Nick"
+Danielle,Cinelli,https://linkedin.com/in/danielleprosinski,Gameday Men's Health,Chief Marketing Officer,,,"Hi Danielle,
+
+This stood out: you moved from recruiting inside Gameday to leading marketing. For program materials, the feature is plain: members take two photos, front and side.
+
+What weight-line materials do clinics ask HQ marketing for?
+
+Nick","Hi Danielle,
+
+Materials for clinics can explain the member step in plain words, with the 80+ body measurements named once.
+
+Call link: https://meetings.hubspot.com/nick-omelchak
+
+I'd happily speak with whoever runs the member portal instead.
+
+Nick"
+Haleem,Mohammed,https://linkedin.com/in/halmdmba,Gameday Men's Health,Global Chief Medical Officer,,,"Hi Haleem,
+
+Your title covers every Gameday clinic, which is why I'm asking. Alongside waist and other circumferences, a capture gives body composition estimates, with BMI and BMR calculated. 3DLOOK has worked with 100+ clients.
+
+What clinical standard does Gameday set for weight follow-ups across its clinics?
+
+Nick","Hi Haleem,
+
+Circumferences from home between visits could sit inside a follow-up standard for every clinic.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Worth a call? https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Julie,Caputo,https://linkedin.com/in/julie-caputo-531a522b7,Gameday Men's Health,Chief Executive Officer,,,"Hi Julie,
+
+Saw your CEO title at Gameday and had a question. The capture is two photos, taken on the member's phone whenever it suits him.
+
+How do weight follow-ups fit around your members' work shifts?
+
+Nick","Hi Julie,
+
+Members finish the capture on their own time, outside work shifts, with 80+ body measurements as the result.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Reach me through my calendar: https://meetings.hubspot.com/nick-omelchak
+
+The HQ owner of patient tools is the person I would like to reach; a pointer is welcome.
+
+Nick"
+Eric,Quimbo,https://linkedin.com/in/drquimbo,Gameday Men's Health,Medical Director,,,"Hi Eric,
+
+Couldn't help but ask, given your emergency medicine background alongside the medical director role at Gameday Costa Mesa. A member's two photos return circumferences, waist among them, to look at beside weight. 112,100 scans in 2025 across all 3DLOOK customers.
+
+When a member's weight holds steady for several visits, what else do you look at?
+
+Nick","Hi Eric,
+
+Measurements from a capture between visits sit beside the weight when you review a steady stretch.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Time on my calendar: https://meetings.hubspot.com/nick-omelchak
+
+A name at network level would be just as useful.
+
+Nick"
+Jay,Flottmann,https://linkedin.com/in/bonesflottmann,Gameday Men's Health,Medical Director,,,"Hi Jay,
+
+Your telemedicine experience stood out next to the medical director role at Gameday Panama City. A 3D model and 80+ body measurements come out of the same two photos.
+
+How do you talk a member through body change at your clinic?
+
+Nick","Hi Jay,
+
+A 3D model gives the conversation something to look at, with measurements next to it.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Happy to demo: https://meetings.hubspot.com/nick-omelchak
+
+Forward this to the HQ owner of patient tools if that is simpler.
+
+Nick"
+Judson,Threlkeld,https://linkedin.com/in/judson-threlkeld-4106439,Gameday Men's Health,Owner and Medical Director,,,"Hi Judson,
+
+Spotted something at Gameday Camas: you own it and direct its medical care, with a teaching background at Baylor. FitXpress comes back with 80+ body measurements from the member's photos. One weight-management platform ran 34,000 scans in 2025.
+
+How does the first consultation at your clinic explain the way a new member's progress will be followed?
+
+Nick","Hi Judson,
+
+At the first consultation, the step a member will do at home can be shown on screen, with 80+ body measurements as the result.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Calendar link: https://meetings.hubspot.com/nick-omelchak
+
+Drop me a line with the HQ contact for patient tools, and I'll write to them.
+
+Nick"
+Alexander,Peterson,https://linkedin.com/in/alexander-peterson-896327b8,Gameday Men's Health,Medical Director/Owner,,,"Hi Alexander,
+
+Quick reaction to your Gameday Lexington profile: owner and medical director, with an emergency medicine background. A front photo and a side photo return 80+ body measurements. 112,100 scans in 2025 across all 3DLOOK customers.
+
+When a member pauses the weight program and later returns, what does your clinic have to pick up from?
+
+Nick","Hi Alexander,
+
+After a pause, one new capture gives your clinic a current starting point.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Let me know a time: https://meetings.hubspot.com/nick-omelchak
+
+I would also be glad to hear from the HQ team that chooses patient tools.
+
+Nick"
+John,Hudnall,https://linkedin.com/in/john-hudnall-2b26901a,Gameday Men's Health,Chief Executive Officer / Franchise Owner / Franchise Administrator,,,"Hi John,
+
+Quick idea for you, with your years as a franchise owner and performance coach, now at Gameday Omaha. FitXpress is built for host tools: web and mobile SDKs put a two-photo capture inside an app or portal, and 80+ body measurements come back.
+
+How do network tools reach your clinic today?
+
+Nick","Hi John,
+
+An SDK step can fit inside tools a network already runs, whichever route they take to your clinic.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+My calendar is here: https://meetings.hubspot.com/nick-omelchak
+
+Send me HQ's patient-tools contact and I'll take it from there.
+
+Nick"
+Chad,Carman,https://linkedin.com/in/chadcarman-677a12285,Gameday Men's Health,GameDay Men's Health - Medical Director,,,"Hi Chad,
+
+Remote medical director for Gameday, which prompted this: members send two photos from home, and 80+ body measurements reach you.
+
+How do you stay close to weight members' progress while working remotely?
+
+Nick","Hi Chad,
+
+Members send photos from home, and the measurements land on your screen without a visit.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Slot here: https://meetings.hubspot.com/nick-omelchak
+
+Hand-off welcome to the HQ contact who suits better.
+
+Nick"
+Lisa,Barr,https://linkedin.com/in/lisa-barr-m-d-90847623,Gameday Men's Health,"Medical Director Gameday Men's Health Va. Beach & Chesapeake, Va.",,,"Hi Lisa,
+
+Had to say hi: you serve as medical director for Gameday Virginia Beach and Chesapeake. Members of both clinics follow the same guided capture, and 80+ body measurements come back in one format.
+
+Between visits, how do you see waist and other circumferences next to weight at both clinics?
+
+Nick","Hi Lisa,
+
+Both clinics would see members' waist and other circumferences in one format beside weight.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Book a slot: https://meetings.hubspot.com/nick-omelchak
+
+Passing me the HQ contact for member tools works as well.
+
+Nick"
+Carlos,Elizondo,https://linkedin.com/in/carlos-elizondo-13898816a,Gameday Men's Health,Director of Clinical Services,,,"Hi Carlos,
+
+Reaching out because you lead clinical services at Gameday Brownsville as a family nurse practitioner. FitXpress offers 80+ body measurements per capture, laid out the same for every provider. One weight-management platform ran 34,000 scans in 2025.
+
+What does every provider at your clinic record the same way at a weight visit?
+
+Nick","Hi Carlos,
+
+Each provider would start from the same set of 80+ body measurements, laid out one way.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+See times here: https://meetings.hubspot.com/nick-omelchak
+
+Feel free to hand this to whoever picks tools at HQ.
+
+Nick"
+Richard,Force,https://linkedin.com/in/richard-force-1b4589169,Gameday Men's Health,Vice President: Sales & Coaching,,,"Hi Richard,
+
+Saw the move from director of sales to VP of sales and coaching at Gameday. For explaining the weight line, a live example helps: a member's two photos turn into a 3D model. 3DLOOK has worked with 100+ clients.
+
+How does your sales and coaching team share what works on the weight line across clinics?
+
+Nick","Hi Richard,
+
+Clinics can watch a live capture, which gives your team a ready example to share.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Quick demo link: https://meetings.hubspot.com/nick-omelchak
+
+A teammate at HQ with the tools brief can join the call.
+
+Nick"
+Nicole,Marlborough,https://linkedin.com/in/nicole-marlborough,Gameday Men's Health,VP of Brand Marketing,,,"Hi Nicole,
+
+Your path from marketing director to VP of brand marketing at Gameday caught my attention. FitXpress is a program feature members can describe in one line: a guided step that takes two photos, front and side, and returns body measurements.
+
+How do you describe the weight line to members today?
+
+Nick","Hi Nicole,
+
+A one-line description for members could mention just the photos at home and the 80+ body measurements.
+
+Chat link: https://meetings.hubspot.com/nick-omelchak
+
+Which teammate owns the portal? Send a name and I'll follow up there.
+
+Nick"
+Tristyn,Coffeen,https://linkedin.com/in/tristyn-coffeen-5642a325b,Gameday Men's Health,Director of Operational Initiatives,,,"Hi Tristyn,
+
+Spotted your path from clinic manager to franchise onboarding to network initiatives at Gameday. FitXpress ships as web and mobile SDKs, and the member's side is two photos, front and side.
+
+How would you roll a new step out from a few clinics to the whole network?
+
+Nick","Hi Tristyn,
+
+Starting at a few clinics lets the member step prove itself, with 80+ body measurements from two photos, before the rest of the network joins.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+If useful, here is my calendar: https://meetings.hubspot.com/nick-omelchak
+
+Whose desk at HQ covers rollout tooling? I'll reach out there directly.
+
+Nick"
+Anna,Coble,https://linkedin.com/in/anna-coble-bsn-rn-9b14a773,Gameday Men's Health,Managing Owner,,,"Hi Anna,
+
+Quick note on your Gameday clinic: you own it and bring an RN background. Two photos, front and side, work from anywhere, and 80+ body measurements come back.
+
+What happens at your clinic when a member moves near another Gameday clinic?
+
+Nick","Hi Anna,
+
+A member who moves can take the same two photos in his new town.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Time to talk: https://meetings.hubspot.com/nick-omelchak
+
+Happy to speak with HQ's patient-tools owner as well.
+
+Nick"
+Alba,Mertira,https://linkedin.com/in/alba-mertira,Hone Health,Co-Founder and CMO,,,"Hi Alba,
+
+Caught my eye: you were a founding-team growth hire before becoming Hone's CMO. A two-photo capture gives each member a 3D model of his own to come back to.
+
+Which early actions tell marketing that a new weight member will stay?
+
+Nick","Hi Alba,
+
+If a first capture counts among those early actions, marketing gets a concrete moment to message around. 112,100 scans in 2025 across all 3DLOOK customers.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Happy to walk through it live:
+https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Ayush,S,https://linkedin.com/in/ayushsoni01,Hone Health,"Sr. Director, Lifecycle Marketing",,,"Hi Ayush,
+
+Got me thinking about Hone's lifecycle messages. The capture is guided on screen, two photos, a front one and then a side one, which gives a message a clear task to point to.
+
+Which moments do Hone's lifecycle messages use to bring weight members back to the portal?
+
+Nick","Hi Ayush,
+
+Tying a message to a finished capture gives members something new to look at. The scan returns body composition estimates with BMI and BMR calculated, under 45 seconds from the photos to structured results.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+If a call makes sense, here is my calendar:
+https://meetings.hubspot.com/nick-omelchak
+
+Please share this with the owner of portal push content, if that is not you.
+
+Nick"
+Michael,Hagel,https://linkedin.com/in/hagel,Hone Health,Head of Product Design,,,"Hi Michael,
+
+Noticed overlap with your zero-to-one design work. A guided capture ends in a 3D model of the member, and it can be styled to match Hone.
+
+How would you shape a guided photo step in Hone's app?
+
+Nick","Hi Michael,
+
+Designers get on-screen guidance for the front and side photos, and the styling can follow Hone's look. Those two photos return 80+ body measurements.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Up for a call?
+https://meetings.hubspot.com/nick-omelchak
+
+If the member screens belong to another designer, tell me who.
+
+Nick"
+Andy,Nyquist,https://linkedin.com/in/andynyquist,Hone Health,Product Manager,,,"Hi Andy,
+
+The Longevity Biotech Fellowship on your path to Hone's product team caught my eye. FitXpress takes two photos per capture. For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm.
+
+What can members do on their own in the web app?
+
+Nick","Hi Andy,
+
+A member could take the capture on his phone from the web app without messaging the care team. The two photos bring back 80+ body measurements.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Care to set up a call?
+https://meetings.hubspot.com/nick-omelchak
+
+If the web app is someone else's, say who and I'll reach out.
+
+Nick"
+Rebecca,Higgins,https://linkedin.com/in/rebeccakayhiggins,Hone Health,Senior Product Manager,,,"Hi Rebecca,
+
+Curious about your take on a data feature for Hone members. FitXpress offers body composition estimates from a short guided photo step.
+
+How does product test a new member feature with a small group first at Hone?
+
+Nick","Hi Rebecca,
+
+For a small-group test, the SDK sits inside your app and members only need their phones. 112,100 scans in 2025 across all 3DLOOK customers.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Shall we book a call?
+https://meetings.hubspot.com/nick-omelchak
+
+Who owns member data features on your side?
+
+Nick"
+Yash,Kothari,https://linkedin.com/in/yash-kothari-amazon,Hone Health,AI Strategist (CEO's Office),,,"Hi Yash,
+
+Spotted something: your headline pairs Python and Langchain with the CEO's office at Hone. A 3D model comes back from FitXpress after a member sends two phone photos.
+
+Which member-facing steps does the CEO's office see AI automating next?
+
+Nick","Hi Yash,
+
+A capture step would run without staff once the member takes the photos. A scan returns a 3D model, under 45 seconds from the photos to structured results.
+
+Easy to book here:
+https://meetings.hubspot.com/nick-omelchak
+
+Not your area? The owner of member-facing workflows is welcome instead.
+
+Nick"
+Stuart,Blitz,https://linkedin.com/in/stuartblitz,Hone Health,Co-Founder/COO at Hone,,,"Hi Stuart,
+
+Quick idea for you: Hone tests members at home or at a partner lab, and you run operations at Hone. The only hardware behind 80+ body measurements from two photos is the member's own phone.
+
+How do you keep member follow-up consistent as membership grows?
+
+Nick","Hi Stuart,
+
+A member at home runs the same capture as a member anywhere else, which gives follow-up one consistent step. One weight-management platform ran 34,000 scans in 2025.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Put a time on my calendar:
+https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Alex,Treco,https://linkedin.com/in/alextreco,Hone Health,VP of Product,,,"Hi Alex,
+
+Came across your work: coaching product at WHOOP, now deciding what Hone's member web app gets next. FitXpress comes as web and mobile SDKs, white-labeled to look like Hone.
+
+When does Hone build a member feature in house, and when does it add one through an SDK?
+
+Nick","Hi Alex,
+
+Adding the capture through an SDK leaves your product team free to design the screens, with 80+ body measurements coming back behind them. One weight-management platform ran 34,000 scans in 2025.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Pick a time here if useful:
+https://meetings.hubspot.com/nick-omelchak
+
+Nick"
+Neika,Vrooman,https://linkedin.com/in/neika-colbourne,Hone Health,"VP, Brand Marketing",,,"Hi Neika,
+
+Your subscription and wellness brand background fits a question about Hone's weight program. A guided photo step, with body composition estimates behind it, is a feature the program could describe to members.
+
+How does brand marketing learn what members value in the program?
+
+Nick","Hi Neika,
+
+Members who take the capture at home may describe it in their own words, which brand marketing could listen for. 112,100 scans in 2025 across all 3DLOOK customers.
+
+A call is easy to set up here:
+https://meetings.hubspot.com/nick-omelchak
+
+Say the word if the member experience lead should get this instead.
+
+Nick"
+Ashley,Camerini,https://linkedin.com/in/ashley-camerini-3363717b,Hone Health,"SVP, Strategic Growth Initiatives",,,"Hi Ashley,
+
+Wanted to reach out about your growth initiatives at Hone, which followed your time running Rumble Boxing. A home body record could start with two photos, front and side, from the member's phone.
+
+Where would a home body record fit among Hone's growth initiatives?
+
+Nick","Hi Ashley,
+
+A small first test works like this: members take the capture themselves, and 80+ body measurements come back for the program. One weight-management platform ran 34,000 scans in 2025.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Let's find a time:
+https://meetings.hubspot.com/nick-omelchak
+
+Would a different leader own new member offers? Tell me who.
+
+Nick"
+Tobin,Abraham,https://linkedin.com/in/tobin-abraham,Hone Health,"Product Operations Manager, Care Delivery",,,"Hi Tobin,
+
+Made me think: your headline, Access and Power in Digital Systems, next to product operations for Hone's care delivery. A member's phone can send a capture, and FitXpress returns 80+ body measurements to the care team.
+
+How does member-submitted data reach the right person in care delivery?
+
+Nick","Hi Tobin,
+
+Care delivery receives the capture from home with its date attached, ready to open. 3DLOOK has worked with 100+ clients.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Does a call make sense?
+https://meetings.hubspot.com/nick-omelchak
+
+Care delivery tooling belongs to whom? A name is plenty.
+
+Nick"
+Carol,Hung,https://linkedin.com/in/carolkhung,Hone Health,Product,,,"Hi Carol,
+
+Your clinical platforms focus raised a question about Hone. FitXpress returns a 3D model and 80+ body measurements from two photos, for the clinician to read.
+
+What does it take to bring a new member measure onto Hone's clinical platform?
+
+Nick","Hi Carol,
+
+Structured data from the capture is ready for a clinician to open on the platform. 3DLOOK has worked with 100+ clients.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Want to compare notes on a call?
+https://meetings.hubspot.com/nick-omelchak
+
+The clinical platform roadmap may have another owner; name them and I'll write.
+
+Nick"
+Emily,Smith,https://linkedin.com/in/emily-smith-01435910b,Hone Health,Product,,,"Hi Emily,
+
+A training app on your path caught my attention: core product at Fitbod, now Hone. A member joining the weight line could start with a front and side photo, and a 3D model comes from those two photos.
+
+What starting point does a member record when joining the weight line?
+
+Nick","Hi Emily,
+
+Joining members get a first capture that the program can choose to show alongside later ones. The scan returns waist and hip among 80+ body measurements, under 45 seconds from the photos to structured results.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Call this week?
+https://meetings.hubspot.com/nick-omelchak
+
+Would the member feature roadmap owner be a better fit? I can write them.
+
+Nick"
+Steve,Ciniello,https://linkedin.com/in/stephenciniello,Maximus,Senior Growth Product Manager,,,"Hi Steve,
+
+Got me thinking about your path from PocketHealth product work to growth at Maximus, and how new weight patients start in the portal.
+
+FitXpress asks for two photos, front and side. It returns body measurements, under 45 seconds from the photos to structured results.
+
+How does growth test changes to the weight program's onboarding flow?
+
+Nick","Hi Steve,
+
+Maximus could try the guided capture as one onboarding variant with a small group of new members, then compare it with the current flow.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Open to talking it through? https://meetings.hubspot.com/nick-omelchak
+Which team owns the dashboard roadmap?
+
+Nick"
+Tyler,Dyck,https://linkedin.com/in/tylerrdyck,Maximus,VP Finance,,,"Hi Tyler,
+
+Curious about your take on retention at Maximus, coming from co-founding and finance work at Outro Health. FitXpress turns two phone photos into a body composition estimate.
+
+How does finance read retention in the weight program?
+
+Nick","Hi Tyler,
+
+A capture step in the member portal could be tried with a small group, and finance would see in retention whether it helped. 112,100 scans in 2025 across all 3DLOOK customers.
+
+A call is easy to set up: https://meetings.hubspot.com/nick-omelchak
+Would the member portal owner be a better person to ask?
+
+Nick"
+Brian,Kling,https://linkedin.com/in/brian-kling-1571b91a,Marek Health,Chief Technology Officer,,,"Hi Brian,
+
+Quick idea for Marek Health's tech team.
+
+FitXpress takes two photos, front and side, through a REST API with web and mobile SDKs, white-label.
+
+What would your team need to see before adding a guided photo step to the client experience?
+
+Nick","Hi Brian,
+
+Measurements come back over the API as structured, timestamped data, and a typical basic integration takes 2-4 weeks.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+Data privacy and security FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Walk through the spec on a call: https://meetings.hubspot.com/nick-omelchak
+
+Another engineer on the client app? Send me a name and I will share the spec.
+
+Nick"
+Memo,Canli,https://linkedin.com/in/memocanli,Marek Health,Head of Product,,,"Hi Memo,
+
+Got me thinking about a client at Marek Health with only his phone between coach check-ins.
+
+FitXpress turns two guided photos into a 3D model of the client's body that he can look at on his own screen.
+
+What can a client see and do on his own between check-ins today?
+
+Nick","Hi Memo,
+
+Between check-ins a client gets something of his own to open: the 3D model, along with waist and hip measurements from the same two photos.
+
+3DLOOK has worked with 100+ clients.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+My calendar is open here: https://meetings.hubspot.com/nick-omelchak
+
+The coaching program's owner may fit better, and a pointer from you is all I need.
+
+Nick"
+Nick,Rose,https://linkedin.com/in/nickrose07,Marek Health,Product Operations Manager,,,"Hi Nick,
+
+Had a thought about the steps a new client completes at Marek Health.
+
+FitXpress adds body composition estimates, with BMI and BMR calculated, to a two-photo capture that can sit among them.
+
+Which steps does a new client finish before the first coaching session?
+
+Nick","Hi Nick,
+
+Adding the capture to onboarding is one more screen for a new client: two guided photos, front and side. A coach then has 80+ body measurements for the first session.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+If it looks useful, we can go through it on a call: https://meetings.hubspot.com/nick-omelchak
+
+Forward this to whoever owns onboarding if that is not you.
+
+Nick"
+Jonathan,Hancock,https://linkedin.com/in/jonathan-hancock-71216a26,DudeMeds,Co-Founder + COO,,,"Hi Jonathan,
+
+Noticed your background as a clinical director, now running operations at DudeMeds. FitXpress turns two phone photos into body composition estimates, with BMI and BMR calculated.
+
+What keeps continuing-care members of your GLP-1 program engaged?
+
+Nick","Hi Jonathan,
+
+Continuing-care members get a short step they can come back to from home, and each capture carries its date. One weight-management platform ran 34,000 scans in 2025.
+
+We support HIPAA-governed deployments under a BAA, encrypt data in transit and at rest, and delete photos after processing or within 30 days.
+
+If useful, my calendar is here: https://meetings.hubspot.com/nick-omelchak
+
+Nick"

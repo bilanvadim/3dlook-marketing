@@ -1,0 +1,205 @@
+{
+ "campaign": "2026-10-22-us-mens-health-weight",
+ "checked": 73,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": null,
+ "generated": "2026-10-23T08:35:20",
+ "hard": [],
+ "soft": [
+  [
+   "no company line",
+   "mark-larey-b1951366 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "brandonmaughan M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "timothy-rempher-81347433 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "michael-tabor-5957195 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "jason-ange-32138a6 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "justinpenny M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "ampy-tyler-37a1b916 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "allen-brooke-834a1119 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "stephen-mercurio-20307b14a M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "shea-tiana M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "gina-dressler-2730271b0 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "jean-leisen-bondoc-97699b232 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "megann-grant-205521299 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "ron-noonan-50a102283 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "sommer-rushing-3a4782315 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "shelley-gay-a450443b5 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "danielleprosinski M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "halmdmba M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "julie-caputo-531a522b7 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "drquimbo M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "bonesflottmann M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "judson-threlkeld-4106439 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "alexander-peterson-896327b8 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "john-hudnall-2b26901a M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "chadcarman-677a12285 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "lisa-barr-m-d-90847623 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "carlos-elizondo-13898816a M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "richard-force-1b4589169 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "nicole-marlborough M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "tristyn-coffeen-5642a325b M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "anna-coble-bsn-rn-9b14a773 M1",
+   "«Gameday Men's Health» is not named: check it has a line only this company gets"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: elizabethsimion / matt-buckleman-3322771",
+   "«privacy faq: open to a call on the schema?»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: melanie-doukas-74311661 / matt-buckleman-3322771",
+   "«the same two photos return 80+ body measurements.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: melanie-doukas-74311661 / hagel",
+   "«the same two photos return 80+ body measurements.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: melanie-doukas-74311661 / andynyquist",
+   "«the same two photos return 80+ body measurements.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: matt-buckleman-3322771 / hagel",
+   "«the scan returns 80+ body measurements, .»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: matt-buckleman-3322771 / emily-smith-01435910b",
+   "«the scan returns 80+ body measurements, .»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: matt-buckleman-3322771 / jasonmclark",
+   "«typically, a basic integration takes 2-4 weeks.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: hagel / andynyquist",
+   "«those two photos return 80+ body measurements.»"
+  ]
+ ]
+}

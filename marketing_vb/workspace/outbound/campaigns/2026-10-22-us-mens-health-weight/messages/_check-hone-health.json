@@ -1,0 +1,1065 @@
+{
+ "campaign": "2026-10-22-us-mens-health-weight",
+ "checked": 25,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "hone-health",
+ "generated": "2026-10-23T08:25:00",
+ "hard": [],
+ "soft": [
+  [
+   "near-duplicate sentence",
+   "Hone Health: elizabethsimion / melanie-doukas-74311661",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: elizabethsimion / matt-buckleman-3322771",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: elizabethsimion / jasonmclark",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: elizabethsimion / john-marhefka-8527569",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: elizabethsimion / saad-alam-a146b311",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: elizabethsimion / seth-franz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: elizabethsimion / jerreck",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: elizabethsimion / anthonymalocujr",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: elizabethsimion / daniel-ward-5976a5204",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: elizabethsimion / alba-mertira",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: elizabethsimion / ayushsoni01",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: elizabethsimion / hagel",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: elizabethsimion / andynyquist",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: elizabethsimion / rebeccakayhiggins",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: elizabethsimion / stuartblitz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: elizabethsimion / alextreco",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: elizabethsimion / ashley-camerini-3363717b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: elizabethsimion / tobin-abraham",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: elizabethsimion / carolkhung",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: elizabethsimion / emily-smith-01435910b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: melanie-doukas-74311661 / matt-buckleman-3322771",
+   "«the same two photos return 80+ body measurements.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: melanie-doukas-74311661 / hagel",
+   "«the same two photos return 80+ body measurements.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: melanie-doukas-74311661 / andynyquist",
+   "«the same two photos return 80+ body measurements.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: melanie-doukas-74311661 / jasonmclark",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: melanie-doukas-74311661 / john-marhefka-8527569",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: melanie-doukas-74311661 / saad-alam-a146b311",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: melanie-doukas-74311661 / seth-franz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: melanie-doukas-74311661 / jerreck",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: melanie-doukas-74311661 / anthonymalocujr",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: melanie-doukas-74311661 / daniel-ward-5976a5204",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: melanie-doukas-74311661 / alba-mertira",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: melanie-doukas-74311661 / ayushsoni01",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: melanie-doukas-74311661 / rebeccakayhiggins",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: melanie-doukas-74311661 / stuartblitz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: melanie-doukas-74311661 / alextreco",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: melanie-doukas-74311661 / ashley-camerini-3363717b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: melanie-doukas-74311661 / tobin-abraham",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: melanie-doukas-74311661 / carolkhung",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: melanie-doukas-74311661 / emily-smith-01435910b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: matt-buckleman-3322771 / hagel",
+   "«the scan returns 80+ body measurements, .»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: matt-buckleman-3322771 / emily-smith-01435910b",
+   "«the scan returns 80+ body measurements, .»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: matt-buckleman-3322771 / jasonmclark",
+   "«typically, a basic integration takes 2-4 weeks.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: matt-buckleman-3322771 / john-marhefka-8527569",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: matt-buckleman-3322771 / saad-alam-a146b311",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: matt-buckleman-3322771 / seth-franz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: matt-buckleman-3322771 / jerreck",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: matt-buckleman-3322771 / anthonymalocujr",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: matt-buckleman-3322771 / daniel-ward-5976a5204",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: matt-buckleman-3322771 / alba-mertira",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: matt-buckleman-3322771 / ayushsoni01",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: matt-buckleman-3322771 / andynyquist",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: matt-buckleman-3322771 / rebeccakayhiggins",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: matt-buckleman-3322771 / stuartblitz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: matt-buckleman-3322771 / alextreco",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: matt-buckleman-3322771 / ashley-camerini-3363717b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: matt-buckleman-3322771 / tobin-abraham",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: matt-buckleman-3322771 / carolkhung",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jasonmclark / john-marhefka-8527569",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jasonmclark / saad-alam-a146b311",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jasonmclark / seth-franz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jasonmclark / jerreck",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jasonmclark / anthonymalocujr",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jasonmclark / daniel-ward-5976a5204",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jasonmclark / alba-mertira",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jasonmclark / ayushsoni01",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jasonmclark / hagel",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jasonmclark / andynyquist",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jasonmclark / rebeccakayhiggins",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jasonmclark / stuartblitz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jasonmclark / alextreco",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jasonmclark / ashley-camerini-3363717b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jasonmclark / tobin-abraham",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jasonmclark / carolkhung",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jasonmclark / emily-smith-01435910b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: john-marhefka-8527569 / saad-alam-a146b311",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: john-marhefka-8527569 / seth-franz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: john-marhefka-8527569 / jerreck",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: john-marhefka-8527569 / anthonymalocujr",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: john-marhefka-8527569 / daniel-ward-5976a5204",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: john-marhefka-8527569 / alba-mertira",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: john-marhefka-8527569 / ayushsoni01",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: john-marhefka-8527569 / hagel",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: john-marhefka-8527569 / andynyquist",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: john-marhefka-8527569 / rebeccakayhiggins",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: john-marhefka-8527569 / stuartblitz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: john-marhefka-8527569 / alextreco",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: john-marhefka-8527569 / ashley-camerini-3363717b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: john-marhefka-8527569 / tobin-abraham",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: john-marhefka-8527569 / carolkhung",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: john-marhefka-8527569 / emily-smith-01435910b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: saad-alam-a146b311 / seth-franz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: saad-alam-a146b311 / jerreck",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: saad-alam-a146b311 / anthonymalocujr",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: saad-alam-a146b311 / daniel-ward-5976a5204",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: saad-alam-a146b311 / alba-mertira",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: saad-alam-a146b311 / ayushsoni01",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: saad-alam-a146b311 / hagel",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: saad-alam-a146b311 / andynyquist",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: saad-alam-a146b311 / rebeccakayhiggins",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: saad-alam-a146b311 / stuartblitz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: saad-alam-a146b311 / alextreco",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: saad-alam-a146b311 / ashley-camerini-3363717b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: saad-alam-a146b311 / tobin-abraham",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: saad-alam-a146b311 / carolkhung",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: saad-alam-a146b311 / emily-smith-01435910b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: seth-franz / jerreck",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: seth-franz / anthonymalocujr",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: seth-franz / daniel-ward-5976a5204",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: seth-franz / alba-mertira",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: seth-franz / ayushsoni01",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: seth-franz / hagel",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: seth-franz / andynyquist",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: seth-franz / rebeccakayhiggins",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: seth-franz / stuartblitz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: seth-franz / alextreco",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: seth-franz / ashley-camerini-3363717b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: seth-franz / tobin-abraham",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: seth-franz / carolkhung",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: seth-franz / emily-smith-01435910b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jerreck / anthonymalocujr",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jerreck / daniel-ward-5976a5204",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jerreck / alba-mertira",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jerreck / ayushsoni01",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jerreck / hagel",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jerreck / andynyquist",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jerreck / rebeccakayhiggins",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jerreck / stuartblitz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jerreck / alextreco",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jerreck / ashley-camerini-3363717b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jerreck / tobin-abraham",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jerreck / carolkhung",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: jerreck / emily-smith-01435910b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: anthonymalocujr / daniel-ward-5976a5204",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: anthonymalocujr / alba-mertira",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: anthonymalocujr / ayushsoni01",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: anthonymalocujr / hagel",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: anthonymalocujr / andynyquist",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: anthonymalocujr / rebeccakayhiggins",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: anthonymalocujr / stuartblitz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: anthonymalocujr / alextreco",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: anthonymalocujr / ashley-camerini-3363717b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: anthonymalocujr / tobin-abraham",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: anthonymalocujr / carolkhung",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: anthonymalocujr / emily-smith-01435910b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: daniel-ward-5976a5204 / alba-mertira",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: daniel-ward-5976a5204 / ayushsoni01",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: daniel-ward-5976a5204 / hagel",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: daniel-ward-5976a5204 / andynyquist",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: daniel-ward-5976a5204 / rebeccakayhiggins",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: daniel-ward-5976a5204 / stuartblitz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: daniel-ward-5976a5204 / alextreco",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: daniel-ward-5976a5204 / ashley-camerini-3363717b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: daniel-ward-5976a5204 / tobin-abraham",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: daniel-ward-5976a5204 / carolkhung",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: daniel-ward-5976a5204 / emily-smith-01435910b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: alba-mertira / ayushsoni01",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: alba-mertira / hagel",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: alba-mertira / andynyquist",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: alba-mertira / rebeccakayhiggins",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: alba-mertira / stuartblitz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: alba-mertira / alextreco",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: alba-mertira / ashley-camerini-3363717b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: alba-mertira / tobin-abraham",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: alba-mertira / carolkhung",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: alba-mertira / emily-smith-01435910b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: ayushsoni01 / hagel",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: ayushsoni01 / andynyquist",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: ayushsoni01 / rebeccakayhiggins",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: ayushsoni01 / stuartblitz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: ayushsoni01 / alextreco",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: ayushsoni01 / ashley-camerini-3363717b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: ayushsoni01 / tobin-abraham",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: ayushsoni01 / carolkhung",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: ayushsoni01 / emily-smith-01435910b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: hagel / andynyquist",
+   "«those two photos return 80+ body measurements.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: hagel / rebeccakayhiggins",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: hagel / stuartblitz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: hagel / alextreco",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: hagel / ashley-camerini-3363717b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: hagel / tobin-abraham",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: hagel / carolkhung",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: hagel / emily-smith-01435910b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: andynyquist / rebeccakayhiggins",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: andynyquist / stuartblitz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: andynyquist / alextreco",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: andynyquist / ashley-camerini-3363717b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: andynyquist / tobin-abraham",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: andynyquist / carolkhung",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: andynyquist / emily-smith-01435910b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: rebeccakayhiggins / stuartblitz",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: rebeccakayhiggins / alextreco",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: rebeccakayhiggins / ashley-camerini-3363717b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: rebeccakayhiggins / tobin-abraham",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: rebeccakayhiggins / carolkhung",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: rebeccakayhiggins / emily-smith-01435910b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: stuartblitz / alextreco",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: stuartblitz / ashley-camerini-3363717b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: stuartblitz / tobin-abraham",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: stuartblitz / carolkhung",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: stuartblitz / emily-smith-01435910b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: alextreco / ashley-camerini-3363717b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: alextreco / tobin-abraham",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: alextreco / carolkhung",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: alextreco / emily-smith-01435910b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: ashley-camerini-3363717b / tobin-abraham",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: ashley-camerini-3363717b / carolkhung",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: ashley-camerini-3363717b / emily-smith-01435910b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: tobin-abraham / carolkhung",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: tobin-abraham / emily-smith-01435910b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hone Health: carolkhung / emily-smith-01435910b",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "sentence opening repeated",
+   "Hone Health ×21",
+   "«we support hipaa governed deployments…»: alba-mertira, alextreco, andynyquist, anthonymalocujr"
+  ]
+ ]
+}

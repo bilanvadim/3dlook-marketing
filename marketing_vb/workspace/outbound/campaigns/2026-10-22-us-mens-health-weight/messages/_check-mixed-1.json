@@ -1,0 +1,125 @@
+{
+ "campaign": "2026-10-22-us-mens-health-weight",
+ "checked": 11,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-1",
+ "generated": "2026-10-23T08:24:58",
+ "hard": [],
+ "soft": [
+  [
+   "near-duplicate sentence",
+   "Maximus: sfinnern / markrpoole",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Maximus: sfinnern / daniel-cw-hsu",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Maximus: sfinnern / nick-m-632b1177",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Maximus: sfinnern / alaric-murg",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Maximus: sfinnern / nicholas-boerger",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Maximus: sfinnern / stephenciniello",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Maximus: markrpoole / daniel-cw-hsu",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Maximus: markrpoole / nick-m-632b1177",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Maximus: markrpoole / alaric-murg",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Maximus: markrpoole / nicholas-boerger",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Maximus: markrpoole / stephenciniello",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Maximus: daniel-cw-hsu / nick-m-632b1177",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Maximus: daniel-cw-hsu / alaric-murg",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Maximus: daniel-cw-hsu / nicholas-boerger",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Maximus: daniel-cw-hsu / stephenciniello",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Maximus: nick-m-632b1177 / alaric-murg",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Maximus: nick-m-632b1177 / nicholas-boerger",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Maximus: nick-m-632b1177 / stephenciniello",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Maximus: alaric-murg / nicholas-boerger",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Maximus: alaric-murg / stephenciniello",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Maximus: nicholas-boerger / stephenciniello",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "DudeMeds: salpilato / jonathan-hancock-71216a26",
+   "«we support hipaa-governed deployments under a baa…»"
+  ],
+  [
+   "sentence opening repeated",
+   "Maximus ×7",
+   "«we support hipaa governed deployments…»: alaric-murg, daniel-cw-hsu, markrpoole, nicholas-boerger"
+  ]
+ ]
+}

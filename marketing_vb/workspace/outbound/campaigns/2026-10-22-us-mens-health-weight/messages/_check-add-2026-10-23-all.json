@@ -1,0 +1,9 @@
+{
+ "campaign": "2026-10-22-us-mens-health-weight",
+ "checked": 6,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "add-2026-10-23-all",
+ "generated": "2026-10-23T08:34:40",
+ "hard": [],
+ "soft": []
+}

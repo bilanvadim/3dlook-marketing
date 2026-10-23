@@ -918,6 +918,15 @@ def build_card(cdir: Path, stage: str) -> str:
                 "photos, how fast), and the pair carries at least one number from this section",
                 "or one the campaign rules clear by name.", "",
                 demote("\n\n".join(f for f in facts if f)), ""]
+        # 2026-10-23 (us-mens-health-weight): the rules pointed to "the §1.2 repeatability
+        # sentence" and proof-points.md to accuracy-formulations.md, but the card carried
+        # neither sentence. All three batches wrote "typical scan-to-scan differences of less
+        # than 1 cm" without "For most evaluated measurements", which claims every measurement.
+        rep = md_section(pi / "accuracy-formulations.md", "1.2 Repeatability", level="###")
+        if rep:
+            out += ["## Repeatability sentence (accuracy-formulations.md §1.2, verbatim)", "",
+                    "If a message cites repeatability, it uses the preferred sentence below word "
+                    "for word, first clause included.", "", demote(rep, 1), ""]
         tti_rule = integration_time_rule(text)
         if tti and tti_rule == "ban":
             # 2026-10-21 (eu-everlab-similar): the rules said "No integration-time figure",
@@ -1713,6 +1722,7 @@ def card_rule_grams(text: str) -> set[str]:
 
 # Sentences the card makes verbatim, so a company-wide repeat of their opening is expected.
 MANDATED_STEMS = ("in most enterprise deployments", "fitxpress is not a medical device",
+                  "we support hipaa-governed deployments",
                   "for most evaluated measurements", "for most of the evaluated",
                   "3dlook has worked with 100+", "112,100 scans", "one weight-management platform ran")
 
@@ -1924,7 +1934,9 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
     # two-photo scan that returns 80+ body measurements…" for 26 of 33). Exact matching
     # missed them. Mandated verbatim sentences are skipped.
     import difflib
-    verbatim = ("repeated scans showed", "112,100 scans", "34,000 scans")
+    # The US compliance line is mandated verbatim in every non-referral M2: on 2026-10-23 it
+    # made 635 of the 638 near-duplicate notes and buried the rest.
+    verbatim = ("repeated scans showed", "112,100 scans", "34,000 scans", "hipaa-governed deployments")
     per_group_s: dict[str, list[tuple[str, str]]] = defaultdict(list)
     for p in people:
         for n in (1, 2):
@@ -1967,6 +1979,49 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
         if len(who) >= 3:
             soft.append(("sentence opening repeated", f"{g} ×{len(who)}",
                          f"«{st}…»: " + ", ".join(sorted(who)[:4])))
+    # Per-company shapes, 2026-10-23 (us-mens-health-weight, QC 14/20, Vadim «апрув всього»):
+    # 9 pairs of colleagues shared their M1's first three words (the card allows none), ~21
+    # of 31 Gameday M1s carried one product-sentence skeleton behind different openings, and
+    # M2 value lines and easy outs fell into shared shapes. The five-word check above needs
+    # three people and the same five words; these key on the start of one part of the message.
+    product_rx = re.compile(r"(?i)fitxpress|80\+|two photos|front and side|3d model|\bsdks?\b|"
+                            r"\bapi\b|body composition")
+    subject_rx = re.compile(r"(?i)^(fitxpress|it|the scan|a scan|each scan|the capture|our capture)\b")
+
+    def lead(s: str, k: int) -> str:
+        return " ".join(re.findall(r"[^\W_]+(?:[+'][^\W_]*)?\+?", s.lower())[:k])
+
+    shapes: dict[tuple[str, str, str], set[str]] = defaultdict(set)
+    for p in people:
+        pid, g = p["person_id"], group_of(p, gmap)
+        for n in (1, 2):
+            b = bodies.get((pid, n))
+            if not b:
+                continue
+            tail = b.split(link, 1)[1] if (n == 2 and link and link in b) else ""
+            paras = [x.strip() for x in b.split("\n\n") if x.strip()][1:]
+            text = re.sub(r"https?://\S+", " ", " ".join(x for x in paras if x != owner))
+            sents = [s.strip() for s in re.split(r"(?<=[.?!])\s+", text) if s.strip()]
+            if n == 1 and sents:
+                shapes[(g, "M1 opener shared (first three words)", lead(sents[0], 3))].add(pid)
+                for s in sents[1:]:
+                    low = s.lower()
+                    if product_rx.search(s) and not s.endswith("?") \
+                            and not low.startswith(MANDATED_STEMS) and SPEED_PHRASE not in low:
+                        shapes[(g, "M1 product sentence shared", lead(subject_rx.sub("X", s), 6))].add(pid)
+            if n == 2:
+                free = [s for s in sents if not s.lower().startswith(MANDATED_STEMS)
+                        and not any(v in s.lower() for v in verbatim)]
+                if free:
+                    shapes[(g, "M2 value-line opening shared", lead(free[0], 3))].add(pid)
+                easy = " ".join(x.strip() for x in tail.strip().splitlines()
+                                if x.strip() and x.strip() != owner)
+                if easy:
+                    shapes[(g, "M2 easy out shared", lead(easy, 3))].add(pid)
+    need = {"M2 value-line opening shared": 3}
+    for (g, code, key), who in sorted(shapes.items()):
+        if key and len(who) >= need.get(code, 2):
+            soft.append((code, f"{g} ×{len(who)}", f"«{key}…»: " + ", ".join(sorted(who)[:4])))
     # One line per run of card wording, longest-held first; overlapping windows of one phrase
     # (the same people, or four words in common) collapse into the first, so the note names
     # the phrase once.
