@@ -77,6 +77,8 @@ def banner() -> dict:
            re.findall(r'"applicableLaw":"(gdpr|ccpa)"[^{}]*?"selectedRegion":(\[[^\]]*\]|"[^"]*")', html)}
     m = re.search(r'"name":"Analytics","slug":"analytics".{0,20000}?"defaultConsent":(\{[^}]*\})', html, re.S)
     out["analytics_default"] = m.group(1) if m else None
+    m = re.search(r'"_gdprAllowedRegions":(\[[^\]]*\])', html)
+    out["gdpr_regions"] = m.group(1) if m else None   # the GDPR banner shows only to these countries (or is_eu)
     m = re.search(r'"_renewConsent":"(\d+)"', html)
     out["renew"] = _dt.datetime.fromtimestamp(int(m.group(1)) / 1000, _dt.timezone.utc).strftime("%Y-%m-%d %H:%M")\
         if m else None
@@ -86,7 +88,9 @@ def banner() -> dict:
 
 
 def describe(b: dict) -> str:
-    return (f"GDPR: {b.get('gdpr', 'вимкнено')} · US State Laws: {b.get('ccpa', 'вимкнено')} · "
+    regions = b.get("gdpr_regions") or "[]"
+    uk = "UK є" if '"GB"' in regions else "⚠️ UK немає (британці не in_eu → без банера)" if regions != "[]" else "список порожній"
+    return (f"GDPR: {b.get('gdpr', 'вимкнено')} ({uk}) · US State Laws: {b.get('ccpa', 'вимкнено')} · "
             f"Analytics за замовчуванням: {b.get('analytics_default')} · renew consent: {b.get('renew')}")
 
 
