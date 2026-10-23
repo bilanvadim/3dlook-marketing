@@ -1,0 +1,580 @@
+apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,last_refreshed_at,status
+6006dd0cbb4e3a0001f3f474,Neil,Fi***n,Head of Underwriting Innovation,Aviva,aviva.co.uk,Aviva,2026-10-15T18:51:32.000+00:00,candidate
+686f8c2ca0f8ff0001f8912f,Adam,Ta***r,Technical Underwriting Manager - Underwriting Innovation,Aviva,aviva.co.uk,Aviva,2026-10-03T21:15:55.000+00:00,candidate
+5f4cda92176e150001c61ad9,Michelle,Cr***s,Underwriting Philosophy Manager,Aviva,aviva.co.uk,Aviva,2026-09-19T03:20:29.000+00:00,candidate
+5ad1994ea6da9883bff1ff1f,Tom,Pa***n,Underwriting Rules Developer,Aviva,aviva.co.uk,Aviva,2026-10-15T11:32:42.948+00:00,candidate
+6700aabc93082e00014b5657,Daryl,Wa***n,Head of Individual Protection Pricing,Aviva,aviva.co.uk,Aviva,2026-10-17T19:05:22.385+00:00,candidate
+66f9368bd1c6fd000144e37c,Stuart,Mc***r,Data Protection Officer,Aviva,aviva.co.uk,Aviva,2026-10-19T10:42:50.455+00:00,candidate
+54a434937468693b8cd7a134,Jon,Fo***y,"Underwriting Director, International Property",Aviva,aviva.co.uk,Aviva,2026-10-03T19:13:27.000+00:00,persona-out
+54a2963a7468693fdab9172e,Paul,Gl***r,Head of Underwriting,Aviva,aviva.co.uk,Aviva,2026-09-17T05:11:38.175+00:00,candidate
+66f7a98aa26e73000185b39f,Luke,Me***m,Digital Transformation,Aviva,aviva.co.uk,Aviva,2026-10-21T06:42:24.539+00:00,candidate
+61418ec16c17890001fa86b6,David,Si***n,Development Underwriter,Aviva,aviva.co.uk,Aviva,2026-07-21T01:30:46.000+00:00,candidate
+54a6e924746869705a028803,Chris,Co***n,Development Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-28T01:34:56.289+00:00,candidate
+54a438d274686938ac948636,Stuart,Sa***s,Head of Commercial Direct Underwriting Development,Aviva,aviva.co.uk,Aviva,2026-10-04T04:21:54.000+00:00,persona-out
+6076b7708a97a000010732ea,Rachel,Li***t,Development Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-05T03:54:31.000+00:00,candidate
+66fa250e611997000197cd0b,Ramesh,Si***h,"Underwriting Director, Financial Lines UK",Aviva,aviva.co.uk,Aviva,2026-10-15T05:07:37.969+00:00,persona-out
+57dbdb6da6da986893a28bbd,Zoe,Wr***t,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-03T08:01:33.000+00:00,persona-out
+65ec5a75dfb7360007345bcc,Nicky,Al***n,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-22T08:18:50.000+00:00,persona-out
+6700a7d778663e0001432983,Sameera,Ay***b,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-05T16:48:15.435+00:00,persona-out
+57d32283a6da98655f9aea59,Lorna,Me***m,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-08T05:33:32.601+00:00,persona-out
+5e83b5ec59ed1900018db2ef,Steve,Be***g,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-06T15:53:30.000+00:00,persona-out
+6700ed3d5f60ba0001623497,Obi,Di***e,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-08-15T22:01:42.230+00:00,persona-out
+66fbd18f938d470001d3041a,Jason,Ch***s,Head of Underwriting Transformation,Aviva,aviva.co.uk,Aviva,2026-10-15T19:03:18.000+00:00,candidate
+6153e27178481200014afe4f,Douglas,I'***n,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-03T07:02:19.000+00:00,persona-out
+64241e5562847c0001d3505e,Darren,Iv***s,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-07-23T09:24:44.000+00:00,persona-out
+62d1973ffd300c0001cb5eda,Jayne,Ki***y,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-15T10:02:37.459+00:00,persona-out
+57dd4c4ca6da987ae490e6b8,Matthew,Ne***y,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-05T01:48:01.537+00:00,persona-out
+6870bd36e128e70001d8f574,Bradley,Ro***e,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-16T02:19:26.149+00:00,persona-out
+5570e44973696416eb5d0200,Calvin,Ma***l,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-24T06:05:47.000+00:00,persona-out
+653207b80243930001403dc6,Josh,Do***t,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-12T02:57:44.096+00:00,persona-out
+5b34916ca6da98b2f3e8cdcb,Michael,We***s,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-04T04:37:57.000+00:00,persona-out
+675e655ede9e8c000144493c,Andrew,Ha***n,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-07-22T11:23:10.000+00:00,persona-out
+6107a2798b70f000019eef15,Victoria,Ro***n,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-07-21T05:33:11.000+00:00,persona-out
+6acf92a16df7b70001a3acb9,Robert,Mo***n,"Chief Underwriting Officer, Health and Protection",Aviva,aviva.co.uk,Aviva,2026-04-27T14:02:49.000+00:00,candidate
+5b1820b4a6da9878fedced1d,Caroline,Wr***t,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-29T02:21:01.246+00:00,persona-out
+5f4c5330e4cd4300010938e3,Ellen,Fe***e,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-28T04:48:57.468+00:00,persona-out
+6704f2a53d442500016b6dcf,Graham,Th***n,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-10T06:41:18.819+00:00,persona-out
+66a85e057fe9d100016618f2,Ola,Sz***n,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-08-21T18:53:32.534+00:00,persona-out
+5e708244d2687d0001557a76,Holly,Fr***r,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-03T21:47:54.000+00:00,persona-out
+54a638de7468693b8c9f96cc,Jackie,Po***y,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-09T04:05:48.263+00:00,persona-out
+6744622e0716530001c6ad75,Nicola,Jo***h,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-15T07:53:22.731+00:00,persona-out
+55c576607369647a0cc14400,Alan,Bu***r,Underwriting Manager.,Aviva,aviva.co.uk,Aviva,2026-10-15T14:34:53.983+00:00,persona-out
+64e8090b66103c0001a9aadd,Morag,Ra***y,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-09T05:29:18.000+00:00,persona-out
+5b2b792ba6da988aa51541c9,David,Li***y,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-08T07:44:53.000+00:00,persona-out
+67c32793f9f462000119aae8,Pauline,Pe***s,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-11T06:44:22.615+00:00,persona-out
+67739766086ab70001589bdf,Martin,Fe***e,Head of Underwriting Governance,Aviva,aviva.co.uk,Aviva,2026-10-15T04:02:11.398+00:00,in-sales-nav
+54a413b37468693676eaac2a,Morag,Pu***n,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-06T23:34:13.000+00:00,persona-out
+6645c2c06ed8850001ebc2e2,Ankur,Si***h,Digital Transformation Associate,Aviva,aviva.co.uk,Aviva,2026-10-04T07:55:52.000+00:00,candidate
+611b5a6defbb2700011a8487,Carmel,Ke***y,Senior Compliance Officer/Data Protection Officer,Aviva,aviva.co.uk,Aviva,2026-09-07T21:34:28.000+00:00,candidate
+54a48d887468693209627a50,Elaine,Ne***l,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-07T07:09:40.000+00:00,persona-out
+54ebfd13746869444c2f5338,Michael,Ga***l,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-06T05:09:48.000+00:00,persona-out
+6a27be966219320001ff1c8a,Alex,Mc***h,"Chief Underwriting Officer, Commercial Lines",Aviva,aviva.co.uk,Aviva,2026-09-04T03:09:31.000+00:00,persona-out
+652f838b80e2ee00016863f8,David,Ro***n,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-08T09:40:43.000+00:00,persona-out
+61fb981de4c7e400016e0f20,Ian,Fe***n,"Chief Underwriting Officer, Broker Business",Aviva,aviva.co.uk,Aviva,2026-10-04T04:09:36.000+00:00,persona-out
+6404f4242b1bb800019f0e00,Steven,Ma***s,Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-07-21T21:48:57.000+00:00,persona-out
+54a3192e7468692e717c2454,Jamie,Lye,Head of Underwriting Effectiveness,Aviva,aviva.co.uk,Aviva,2026-10-04T02:53:50.000+00:00,candidate
+5e5f6cd170ef2a0001ad752a,Alex,Be***h,Business Development Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-13T18:49:12.000+00:00,candidate
+5e6cc395d7f41a0001ffa8b0,Charlotte,Co***y,Business Development Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-16T10:21:39.922+00:00,candidate
+5570e5077369647719240500,Matt,Fo***l,Chief Underwriting Officer - Personal Lines,Aviva,aviva.co.uk,Aviva,2026-09-17T10:21:46.914+00:00,persona-out
+57e0cac3a6da987de598e62d,Sally,Ja***s,Senior Development Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-08T05:38:19.000+00:00,candidate
+54a495687468692cf0f8c052,Matthew,Fi***y,Business Development Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-04T01:04:12.000+00:00,candidate
+54a126c869702d8eeb716900,Dan,Ti***n,Head of Protection Reinsurance,Aviva,aviva.co.uk,Aviva,2026-08-09T22:41:24.000+00:00,candidate
+67019af70f15ea0001d41708,Hannah,Sp***o,Head of Innovation Engagement,Aviva,aviva.co.uk,Aviva,2026-10-07T07:47:00.000+00:00,in-sales-nav
+66f28413495e7000017cec79,James,Ap***n,Head of Innovation Delivery,Aviva,aviva.co.uk,Aviva,2026-10-11T12:01:02.564+00:00,in-sales-nav
+5b1b1b0ea6da98073229380c,Katriona,Cu***m,Head of Underwriting Counter Fraud,Aviva,aviva.co.uk,Aviva,2026-09-16T03:29:10.000+00:00,in-sales-nav
+66fa404d954fa90001eed49b,Paul,We***h,Group Head of Innovation,Aviva,aviva.co.uk,Aviva,2026-10-08T08:10:32.000+00:00,candidate
+54a918bb746869339987750c,Adam,El***s,Head of Product,Aviva,aviva.co.uk,Aviva,2026-09-28T04:33:13.968+00:00,in-sales-nav
+5ae40595a6da98d2cbb8eb8c,Mike,Ja***n,Head of Product,Aviva,aviva.co.uk,Aviva,2026-09-25T08:17:07.000+00:00,in-sales-nav
+66fa4d01e313d80001b818fc,James,Wh***y,Head of Underwriting Strategy & Governance,Aviva,aviva.co.uk,Aviva,2026-09-28T14:03:29.974+00:00,candidate
+6701103efd76940001a6df18,Andrew,Jo***s,Property Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-08-07T11:35:27.000+00:00,persona-out
+649c395779ac2b00016e202b,David,Co***k,Branch Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-19T12:20:59.000+00:00,persona-out
+54a602617468693442b4deba,Simon,Th***d,Underwriting Manager EAR,Aviva,aviva.co.uk,Aviva,2026-09-08T19:19:33.000+00:00,persona-out
+60cd098fc4d6c80001952243,Sarah,Re***e,Property Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-16T16:51:42.593+00:00,persona-out
+655a4a7926df570001cf21d8,Michael,Ha***l,Head of Product,Aviva,aviva.co.uk,Aviva,2026-08-10T18:18:24.000+00:00,candidate
+54a424f07468692abf2ca82f,Leanne,Hi***n,Team Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-03T23:43:12.000+00:00,persona-out
+61987f9a7b5d89000103f626,Emily,Ca***l,Team Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-04T07:54:11.000+00:00,persona-out
+660f8bf37c3d64000799f750,Jon,Cr***t,Underwriting Manager (Midlands),Aviva,aviva.co.uk,Aviva,2026-10-07T07:13:50.000+00:00,persona-out
+57dc1bcea6da98685376aeba,Barry,Ho***g,UK Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-06T21:34:35.881+00:00,persona-out
+5d61bc3e80f93e98b14117dc,Peter,Ke***m,Home Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-06T08:23:10.000+00:00,persona-out
+67012ceb222a810001420b51,Robert,Mo***s,Regional Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-03T20:51:51.000+00:00,persona-out
+55bf08ff7369643e5baa5a00,Dermot,Sk***r,Infrastructure Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-12T08:34:55.913+00:00,persona-out
+5fcd9a55f16e8f0001d987f3,Sharon,Ti***y,Commercial Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-17T21:29:21.349+00:00,persona-out
+6290f7f362b3ad0001853fca,Ben,Tr***r,Regional Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-04T03:19:36.000+00:00,persona-out
+6704e65917c7a90001f73c14,Richard,Ha***s,Senior Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-06T14:09:44.000+00:00,persona-out
+5ab8a69ea6da9815e43fc4b3,David,Ca***t,Chief Underwriting Officer - Broker & Affinity Personal Lines,Aviva,aviva.co.uk,Aviva,2026-07-23T20:57:03.000+00:00,persona-out
+69112f379a860800016c9dd7,Matthew,Wr***t,Global Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-03T03:25:13.000+00:00,persona-out
+54abf115746869332dd7ab17,Joyce,Si***n,Commercial Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-04T02:10:12.000+00:00,persona-out
+5ac21673a6da981c6d935c8f,Matthew,La***b,Regional Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-03T13:00:28.000+00:00,persona-out
+62720f2f819acb0001855fe1,Jonny,Cr***l,Senior Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-18T12:52:52.000+00:00,persona-out
+619bbc77b1307f0001d0a779,Alison,Ba***h,Senior Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-04T08:09:15.000+00:00,persona-out
+6ab38641ebe1220001944e4a,Lisa,Ch***e,Commecial Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-14T18:01:27.000+00:00,persona-out
+54a226c37468693fda542911,David,Di***y,Chief Underwriter Commercial and Corporate,Aviva,aviva.co.uk,Aviva,2026-10-08T14:52:45.765+00:00,persona-out
+66fd19ada3a37a0001161ce2,Paul,Su***n,Head of Underwriting Performance (commercial Lines),Aviva,aviva.co.uk,Aviva,2026-10-13T21:39:11.000+00:00,persona-out
+57e006d3a6da980b1483ba12,Jarrod,Mo***s,Underwriting Manager M&A,Aviva,aviva.co.uk,Aviva,2026-09-07T04:02:12.000+00:00,persona-out
+6704a7ccaefb4c000170d93e,Christopher,Br***y,High Value Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-22T03:12:22.000+00:00,persona-out
+5b242ac0a6da98e85472672d,Lisa,Wi***d,Speciality Lines Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-06T12:57:38.000+00:00,persona-out
+54a4f26a74686938ac717670,Sara,La***n,Senior Surety Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-03T19:37:31.000+00:00,persona-out
+54a4f4657468693442410771,Buland,Si***h,Underwriting Manager South East,Aviva,aviva.co.uk,Aviva,2026-09-12T19:31:50.000+00:00,persona-out
+5bb0c00ef874f75e931a6612,Patrick,Wa***s,Underwriting Manager - Financial Institutions,Aviva,aviva.co.uk,Aviva,2026-10-08T09:07:52.000+00:00,persona-out
+54aab1ff74686903772d2713,Leigh,Ja***s,Senior Property Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-30T15:47:55.814+00:00,persona-out
+54a3291774686930c2751559,Ben,Wo***n,Marine Trading & Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-07T22:55:26.000+00:00,persona-out
+54a7a1f77468696829ddff46,Richard,He***t,UK Schemes Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-07T21:52:01.000+00:00,persona-out
+64b82e62e60d610001d41e26,Jon,Av***t,Senior Property Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-20T20:14:23.000+00:00,persona-out
+67005223321e8b00014d8f48,Sam,Sc***d,Commercial Motor Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-03T22:51:36.000+00:00,persona-out
+60f7bac454cb8f0001717a97,David,De***m,Operational Risk and Innovation Director,Aviva,aviva.co.uk,Aviva,2026-09-15T06:46:26.000+00:00,candidate
+54c2b1b974686916398ea8b9,Douglas,Ru***s,Underwriting Manager - Wholesale Marine,Aviva,aviva.co.uk,Aviva,2026-10-02T15:13:33.693+00:00,persona-out
+5ab59a25a6da98b594219a39,Nick,Ev***s,Renewable Energy Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-09T12:28:10.000+00:00,in-sales-nav
+54a788f0746869622084f63d,Richard,Fa***s,Senior Liability Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-03T21:52:55.000+00:00,persona-out
+5ade07a1a6da984d81dc1703,Verity,Rh***s,Senior Motor Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-02T14:11:54.558+00:00,persona-out
+54c28b4c74686916394b72a5,Darren,St***t,Senior Motor Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-04T10:35:20.000+00:00,persona-out
+66fa24fe611997000197c75d,Laura,Ni***l,Senior Innovation Manager,Aviva,aviva.co.uk,Aviva,2026-09-10T06:26:25.000+00:00,candidate
+642c0144e75add00018435da,Louise,Mo***n,"Property Underwriting Manager, CUO",Aviva,aviva.co.uk,Aviva,2026-10-05T06:52:57.000+00:00,persona-out
+5b2ff13da6da982cba9360e3,Shane,Mu***y,Head of Product Change,Aviva,aviva.co.uk,Aviva,2026-10-06T16:15:56.623+00:00,in-sales-nav
+5c6b1970a3ae619c43006abe,Chris,Jo***n,Head of Product Operations,Aviva,aviva.co.uk,Aviva,2026-09-23T08:56:47.000+00:00,in-sales-nav
+66ff3e2860729700015748cd,Simon,Ll***d,Senior Technical Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-25T18:14:42.703+00:00,candidate
+57e1edc5a6da980926c83a25,Joe,Mc***h,Casualty Technical Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-13T19:04:11.000+00:00,persona-out
+65d994737e7433000137c99f,Colin,Ha***y,Senior Motor Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-07T21:58:37.000+00:00,persona-out
+54ebd24974686943114eee2c,Gary,Et***n,Corporate Property Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-12T19:09:42.000+00:00,persona-out
+6700c03aecad0100013889ff,Sam,Bu***h,Lloyds Construction Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-03T10:41:03.000+00:00,persona-out
+5e5ad58b2d5e63000101c8ba,Andrew,Gr***n,Head of Underwriting Quality (CUO Commercial Lines),Aviva,aviva.co.uk,Aviva,2026-10-13T16:35:44.235+00:00,persona-out
+54a2f43374686933186e3549,Caroline,Re***g,Underwriting Manager - Onshore Renewable Energy,Aviva,aviva.co.uk,Aviva,2026-09-30T05:50:14.518+00:00,persona-out
+5ab7c37ea6da98af86534b78,Tom,Br***n,Terrorism and Political Violence Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-09-06T09:16:54.000+00:00,persona-out
+61065cc445a0e000016e25d7,David,Tu***r,Liability Underwriting Manager - Corporate Risks,Aviva,aviva.co.uk,Aviva,2026-10-04T03:22:12.000+00:00,persona-out
+5b1e98f9a6da98e2319aff2b,Chris,No***e,"Underwriting Manager AMInstLM, DMU (AMS)",Aviva,aviva.co.uk,Aviva,2026-09-22T03:17:39.000+00:00,persona-out
+6700e3a15f60ba00015f5452,Sue,He***y,Head of Protection UW/Claims and Customer Services,Aviva,aviva.co.uk,Aviva,2026-09-10T03:37:37.000+00:00,in-sales-nav
+60c79a4492930c0001f7531f,Caspar,St***s,London Market Cyber Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-07T01:50:58.000+00:00,persona-out
+67013ac4b55c3e00015f5bcf,Megan,To***d,International New Business Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-12T02:25:46.716+00:00,candidate
+54c29e2574686916396f4faf,Jay,Th***r,Strategic Underwriting Manager - Accident & Health,Aviva,aviva.co.uk,Aviva,2026-10-07T19:42:01.189+00:00,candidate
+57d90a11a6da98728afa8a32,Tanya,Sh***y,Regional Property Underwriting Manager - North,Aviva,aviva.co.uk,Aviva,2026-10-07T06:10:40.000+00:00,persona-out
+5ac2c8a9a6da98e802077019,Alex,Wi***s,Property Underwriting Manager - US & International,Aviva,aviva.co.uk,Aviva,2026-07-22T12:12:15.000+00:00,persona-out
+5adfa655a6da984db191bdbb,Scott,Fe***n,Digital Solutions/ Commercial Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-09T10:58:04.000+00:00,persona-out
+61260393a3b69f000171f27f,Debbie,Pe***e,Large Corporate Underwriting Manager (PMI),Aviva,aviva.co.uk,Aviva,2026-09-06T13:34:58.000+00:00,persona-out
+66ff3bd66072970001564f24,Juliet,Fe***n,Senior Actuarial Innovation Manager,Aviva,aviva.co.uk,Aviva,2026-10-14T04:53:09.000+00:00,candidate
+678ebb2601201a0001ebfade,Claire,Ga***r,Personal Lines Motor Underwriting Manager,Aviva,aviva.co.uk,Aviva,2026-10-04T01:08:08.000+00:00,persona-out
+57df4f0da6da980b024c5891,Tom,Cr***n,Pricing Technician-Protection,Aviva,aviva.co.uk,Aviva,2026-09-23T03:17:09.082+00:00,candidate
+6606feee5641a500079f3569,Sarah,Ro***a,IT Commercial Lines Director & Chief Technology Officer,Aviva,aviva.co.uk,Aviva,2026-10-16T02:27:04.249+00:00,in-sales-nav
+54a73db37468696829dd2322,Gareth,Po***y,Senior Technical Underwriting Manager - Direct Commercial,Aviva,aviva.co.uk,Aviva,2026-10-15T20:06:38.000+00:00,persona-out
+5e841b910c8b1c000160b5c1,Alan,Wi***n,Group Risk Senior Scheme Underwriting Manager,Aviva,aviva.co.uk,Aviva,2025-09-16T11:56:17.292+00:00,persona-out
+67406420ba90b30001c3a4c7,Michael,Jo***s,"Customer Contact, MI and Operational Underwriting Manager",Aviva,aviva.co.uk,Aviva,2026-10-08T05:50:58.000+00:00,persona-out
+66f92623b0136a0001a2d3d6,Lili,Bu***s,"Head of Transformation, Protection",Aviva,aviva.co.uk,Aviva,2026-10-04T15:25:05.051+00:00,in-sales-nav
+6746babf450cc500010ef70a,Mark,Du***m,Head of Technical Underwriting,Aviva,aviva.co.uk,Aviva,2026-10-09T16:18:04.145+00:00,candidate
+5d53622080f93ecfa2fef9f8,David,C,"Head of Risk Business Partnering - Aviva Plc - UK Life, Health, Protection and Workplace Pensions",Aviva,aviva.co.uk,Aviva,2026-09-06T08:12:20.000+00:00,candidate
+610663ee9e09990001810ddc,Samantha,Sh***n,Head of Financial Institutions Underwriting,Aviva,aviva.co.uk,Aviva,2026-10-14T05:34:25.000+00:00,persona-out
+6868a97873529d000123ea56,Tim,Ci***m,Head of Cyber Protection,Aviva,aviva.co.uk,Aviva,2026-10-14T13:56:04.000+00:00,persona-out
+66fd4ff0dd3bf2000184f4d6,Richard,Ow***n,"UKGI Commercial Underwriting Manager for Strategy, Quality & Transformation",Aviva,aviva.co.uk,Aviva,2026-09-27T22:01:10.208+00:00,persona-out
+5d530f13f6512598ea1eb195,Ben,Jo***n,Underwriting Team Manager,Aviva,aviva.co.uk,Aviva,2026-10-16T10:59:41.695+00:00,persona-out
+54c25a51746869163922c18f,Jeremy,Ra***s,Underwriting & Complaints Manager,Aviva,aviva.co.uk,Aviva,2026-09-22T03:28:25.000+00:00,persona-out
+68a5a5bb607b56000139c499,Nicola,Sa***l,Underwriting Team Manager,Aviva,aviva.co.uk,Aviva,2026-09-12T01:51:20.509+00:00,persona-out
+602ee3f2077e7100011f2da7,Stephen,Bo***h,Underwriting Team Manager,Aviva,aviva.co.uk,Aviva,2026-10-03T07:06:39.651+00:00,persona-out
+61125692a1b8ac00015d3c0c,Grant,Bl***d,Underwriting Team Manager,Aviva,aviva.co.uk,Aviva,2026-09-07T10:26:51.000+00:00,persona-out
+63941b02921978000111b83a,Richard,Be***y,Head of M&A Underwriting,Aviva,aviva.co.uk,Aviva,2026-10-05T22:47:58.586+00:00,persona-out
+65333c1cc1dc8700013a3bc0,Adam,Ho***s,Underwriting Team Manager,Aviva,aviva.co.uk,Aviva,2026-10-03T22:43:51.000+00:00,persona-out
+54a7c67f74686965d9991351,Mike,Ko***t,Underwriting Effectiveness Manager,Aviva,aviva.co.uk,Aviva,2026-10-03T09:38:58.000+00:00,candidate
+615bcda7caf26500018eaba9,Louise,Hi***y,Underwriting Team Manager,Aviva,aviva.co.uk,Aviva,2026-09-19T12:46:09.000+00:00,persona-out
+5fcbe9da04756500019f4208,Stephen,Ha***s,Underwriting Team Manager,Aviva,aviva.co.uk,Aviva,2026-09-06T03:08:45.000+00:00,in-sales-nav
+60e42decd493e50001424715,Nick,Au***n,Protection Commercial Director,Aviva,aviva.co.uk,Aviva,2026-10-07T04:48:01.000+00:00,candidate
+54a709fa7468696220f3970f,Adam,Hy***n,Head of Casualty and Motor Technical Underwriting,Aviva,aviva.co.uk,Aviva,2026-09-18T03:45:56.000+00:00,persona-out
+670512c2a5ef2a00018b3605,Simon,Pa***e,Head of SME Underwriting and Portfolio Management,Aviva,aviva.co.uk,Aviva,2026-10-18T23:32:49.958+00:00,persona-out
+5ad437e9a6da9868063fab62,Victoria,Fr***s,Protection Propositions Director,Aviva,aviva.co.uk,Aviva,2026-10-16T19:30:08.424+00:00,in-sales-nav
+681e0392e1cee20001edd0e2,Mark,Wi***s,Underwriting Governance Manager,Aviva,aviva.co.uk,Aviva,2026-10-03T13:58:15.000+00:00,candidate
+63fccb970432d4000194a854,Anthony,Fo***s,Head of Property & Specialty Technical Underwriting,Aviva,aviva.co.uk,Aviva,2026-10-15T07:51:33.529+00:00,persona-out
+5ab9711ca6da98b7ad60a940,James,Be***n,Head of Commercial Pricing & Underwriting (Interim),Aviva,aviva.co.uk,Aviva,2026-10-09T09:42:38.000+00:00,persona-out
+54c2331e74686916393b9682,John,Sm***n,Head of Commercial Non-Motor Underwriting,Aviva,aviva.co.uk,Aviva,2026-10-03T11:23:10.000+00:00,persona-out
+66ff3d2d607297000156e4b2,Karen,Pa***m,Multinational Underwriting Strategy Manager,Aviva,aviva.co.uk,Aviva,2026-10-03T23:09:23.000+00:00,persona-out
+66fbe787a12d390001730fbb,Jane,Ol***t,Underwriting Data & Analytics Manager,Aviva,aviva.co.uk,Aviva,2026-09-24T19:17:45.342+00:00,candidate
+66f2a7333fe4f90001a5f55f,Ezeugo,Ag***a,Head of Cyber Strategy & Innovation,Aviva,aviva.co.uk,Aviva,2026-10-17T00:49:18.000+00:00,in-sales-nav
+5ad267dca6da9883cdd26d68,Lisa,Mo***s,Underwriting Assurance Manager - Schemes,Aviva,aviva.co.uk,Aviva,2026-09-06T00:11:23.000+00:00,persona-out
+5b2238eda6da9879407413d0,Jonathan,Sm***h,Head of UK Mid Market Underwriting,Aviva,aviva.co.uk,Aviva,2026-09-08T11:42:00.000+00:00,persona-out
+66eaf1bd82833500010c751b,Andy,Dow,Director of Outsourcing & Customer Protection,Aviva,aviva.co.uk,Aviva,2026-10-06T21:16:12.000+00:00,in-sales-nav
+5570ba747369644559a40100,Charlotte,Di***a,Head of Strategic Accounts- Protection Distribution,Aviva,aviva.co.uk,Aviva,2026-10-13T02:45:24.000+00:00,candidate
+54a9fd0c74686930addfb41b,Kelly,Mh***l,Interim Head of Governance & Assurance - Protection,Aviva,aviva.co.uk,Aviva,2026-10-07T07:27:56.000+00:00,candidate
+66f91149b0136a00019a1b0e,Harriet,Gr***s,Partnerships Manager - Group Innovation,Aviva,aviva.co.uk,Aviva,2026-10-06T16:37:13.140+00:00,candidate
+5d55d7fb80f93ea6e2ea63e0,Niall,Le***n,Property Technical Underwriter - Chief Underwriting Office,Aviva,aviva.co.uk,Aviva,2026-10-05T05:57:42.247+00:00,persona-out
+66fbc0868b1ff3000129005a,Daren,Bo***s,Protection Portfolio Distribution Director,Aviva,aviva.co.uk,Aviva,2026-07-21T15:12:00.751+00:00,candidate
+61078f61e9ce6400017fdfff,Mark,Ro***s,Scheme Underwriting Team Manager,Aviva,aviva.co.uk,Aviva,2026-03-08T13:00:31.757+00:00,persona-out
+66fa3303954fa90001ea56e0,Suzanne,La***n,Partnerships Manager - Group Innovation,Aviva,aviva.co.uk,Aviva,2026-10-05T03:47:48.000+00:00,candidate
+672c2f6a1590e00001fc6f5d,Christopher,Sm***l,Underwriting Oversight Manager (Aviva Syndicates),Aviva,aviva.co.uk,Aviva,2026-08-12T12:57:44.000+00:00,persona-out
+54a47d1e74686932094c7c4b,Gayle,Cl***e,Senior Underwriting Performance Manager,Aviva,aviva.co.uk,Aviva,2026-10-11T20:30:15.213+00:00,persona-out
+67f822dc1ee3e300010b6789,Tabitha,Ong,"Head of Financial Lines Technical Underwriting, CUO",Aviva,aviva.co.uk,Aviva,2026-09-15T08:48:56.820+00:00,persona-out
+66fe63f7227fb00001133e06,Andrew,Fi***r,"Automation, Innovation and Systems Manager",Aviva,aviva.co.uk,Aviva,2026-09-18T23:28:57.000+00:00,candidate
+60caa2a9d398f90001c91385,Lorna,B,Innovation Hackathon Engagement Manager,Aviva,aviva.co.uk,Aviva,2026-09-20T07:43:26.000+00:00,persona-out
+69f86c678476900001112a87,Penny,Je***n,Underwriting Quality Assurance Manager,Aviva,aviva.co.uk,Aviva,2026-09-06T01:07:21.000+00:00,candidate
+64e5e5b329339900016a4e8f,Maria,Ce***i,Head of Digital Product,Aviva,aviva.co.uk,Aviva,2026-09-22T09:45:42.000+00:00,candidate
+66ed2e28bef8570001d24b21,Jon,O'***l,Head of IT Aviva Protection UK,Aviva,aviva.co.uk,Aviva,2026-10-06T16:14:58.648+00:00,in-sales-nav
+5e5cdba8a4fe1d0001ae26da,Adrian,Nye,Health & Protection Procurement and Outsourcing Director,Aviva,aviva.co.uk,Aviva,2026-10-07T00:55:40.000+00:00,candidate
+54a5c38b7468693b8ccfa4a6,Manju,De***i,Head of Digital Portfolio-Group Strategy &Transformation,Aviva,aviva.co.uk,Aviva,2026-09-23T08:27:48.000+00:00,in-sales-nav
+67010e05fd76940001a63a21,Becky,Coe,Senior Liability Underwriter - Chief Underwriting Office,Aviva,aviva.co.uk,Aviva,2026-09-24T22:08:16.093+00:00,persona-out
+66f14d08c36874000176cb76,Jen,Ho***s,Head of Digital Product (Interim),Aviva,aviva.co.uk,Aviva,2026-10-19T05:10:39.000+00:00,in-sales-nav
+66fa21746119970001968d9d,Vincent,Gu***o,Growth & Innovation Marketing Manager,Aviva,aviva.co.uk,Aviva,2026-10-09T19:31:47.292+00:00,persona-out
+66f2cabb692988000125305d,Ajit,Dh***l,"CIO, Group Enterprise Technology",Aviva,aviva.co.uk,Aviva,2026-10-16T06:01:53.987+00:00,in-sales-nav
+631f1a842159b60001e9b555,Laura,Br***n,Group Protection Scheme Underwriting Team Manager,Aviva,aviva.co.uk,Aviva,2026-10-03T22:18:54.000+00:00,persona-out
+54a18a977468697d827a9200,Alex,Sa***q,Head of Customer and Product Management,Aviva,aviva.co.uk,Aviva,2026-10-15T15:19:04.000+00:00,in-sales-nav
+66fbe5fbc992e10001dca436,Gerard,St***y,"Senior Actuarial Manager, Financial Risk and Innovation",Aviva,aviva.co.uk,Aviva,2026-10-14T06:10:16.000+00:00,persona-out
+6ab74bf70a739e0001dd649e,David,Fl***g,Partnership Operations Digital Lead and Transformation Lead (Secondment),Aviva,aviva.co.uk,Aviva,2026-10-04T00:58:48.000+00:00,candidate
+68e67488bfacf70001f544f1,Max,He***y,Technical Reporting Lead - CIO Office,Aviva,aviva.co.uk,Aviva,2026-10-16T14:08:25.000+00:00,persona-out
+6347a02eede817000194d08d,Kate,Fo***t,CIO IT Supplier Manager,Aviva,aviva.co.uk,Aviva,2026-10-05T07:36:31.604+00:00,persona-out
+57df4a35a6da980b4a085456,Natalie,Co***e,Conduct & Compliance Manager | Personal Lines Underwriting,Aviva,aviva.co.uk,Aviva,2026-09-07T23:24:43.000+00:00,persona-out
+54a48e9374686934428ce050,Christiaan,Pi***r,Head of Commercial Product Propositions & Conduct,Aviva,aviva.co.uk,Aviva,2026-10-02T23:52:44.251+00:00,in-sales-nav
+60bf3a898b7f46000186614b,Jim,Ro***n,"Risk & Governance Manager, Underwriting Pricing & Product.",Aviva,aviva.co.uk,Aviva,2026-10-11T16:47:39.849+00:00,persona-out
+66f14fda798ad000019bde7b,Ian,Ra***e,Head of Technology Change & Platforms - Group Functions CIO,Aviva,aviva.co.uk,Aviva,2026-10-04T04:39:59.000+00:00,in-sales-nav
+63690cb40c9a6700014fb05d,Lewis,Ha***t,Operational Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-10T19:10:55.714+00:00,persona-out
+671d79f25b01f200010ce4e9,Joe,Sp***h,Cyber Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-03T09:47:35.000+00:00,persona-out
+66fa2a026119970001996b81,Michael,Ko***r,CUO Aviva Retail,Aviva,aviva.co.uk,Aviva,2026-10-11T13:55:41.000+00:00,candidate
+67049ef5aefb4c0001698409,Gordon,Ru***l,Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-17T22:57:40.050+00:00,persona-out
+54ab06177468690b75a9b11d,Jo,Qu***n,Wealth Innovation Lead,Aviva,aviva.co.uk,Aviva,2026-10-10T07:49:52.000+00:00,persona-out
+661126c7ca76f500075c3edb,Jessica,Ro***r,"Underwriter, Cyber & Technology",Aviva,aviva.co.uk,Aviva,2026-10-08T05:56:05.000+00:00,persona-out
+60f985bd6f370b0001059b17,Katie,So***i,Financial Lines Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-14T00:29:40.323+00:00,persona-out
+5c36adb980f93e97476692dc,Emma,Ha***t,Mid Market Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-12T04:29:31.727+00:00,persona-out
+631dbdb619f68b00015b6c03,Peta-Anne,Mc***h,Paalegal - DPO,Aviva,aviva.co.uk,Aviva,2026-09-08T19:18:52.000+00:00,persona-out
+5d5f134080f93eeaad8e4517,Guy,Ba***s,Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-07T19:24:26.226+00:00,persona-out
+5ac7ae9aa6da98410dd0bfaf,Robert,Hu***n,Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-02T05:24:13.000+00:00,persona-out
+54a713f77468696829272d13,Ric,Mu***d,Accident & Health Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-06T14:21:05.000+00:00,persona-out
+6129ba6c6d0017000139aee5,Robert,Ya***y,Underwriter – Commercial Crime & Directors & Officers,Aviva,aviva.co.uk,Aviva,2026-10-18T16:43:00.000+00:00,persona-out
+680f473b09f856000194b93c,Manda,Jo***s,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-03T20:58:40.000+00:00,persona-out
+6700db23c8d63b000178dad4,Aaron,Ca***r,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-03T16:21:55.522+00:00,persona-out
+5e2982a85e570a000140668d,Danni,Jo***s,Construction Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-05T18:41:48.103+00:00,persona-out
+6704a25baefb4c00016c7893,Georgia,Ro***s,Assistant Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-22T08:30:48.000+00:00,persona-out
+614ed26f10338c0001687f9c,Haden,Ro***s,Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-20T20:41:17.000+00:00,persona-out
+5f0eb1f8aaad11000115f5a5,Stephanie,Br***n,Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-02T21:55:22.521+00:00,persona-out
+610bbce44db4fa00019a579a,Jack,Gi***s,Underwriter,Aviva,aviva.co.uk,Aviva,2026-07-23T09:42:28.000+00:00,persona-out
+6700ea285f60ba00016154fb,Sandra,Sp***e,Schemes Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-01T05:54:12.210+00:00,persona-out
+681a43872860470001c88f02,Izzy,Bi***h,Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-19T12:49:42.000+00:00,persona-out
+54a604fe7468692fa23238bc,Lee,Go***d,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-01T17:32:53.287+00:00,persona-out
+6700883683eb9d00011a8adf,Abram,Se***n,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-23T08:57:58.000+00:00,persona-out
+54a6e5e2746869705aef4f02,Aubrey,Mc***d,Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-04T04:01:34.000+00:00,persona-out
+671735fd33d895000147a495,Amy,Ba***r,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-04T02:31:30.983+00:00,persona-out
+642bbc24181c5c0001858b7f,Luke,Re***y,Underwriter (Cyber),Aviva,aviva.co.uk,Aviva,2026-10-03T23:08:19.000+00:00,persona-out
+54aaa95574686908c8ff0d11,Suzi,Cl***w,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-19T12:39:04.000+00:00,persona-out
+60d4933c446f320001870bbc,Martin,Br***s,"HEAD of Products, Europe",Aviva,aviva.co.uk,Aviva,2026-10-12T07:42:56.000+00:00,in-sales-nav
+61ec2c1d7198320001dd73ef,Sean,Ta***r,Assistant Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-15T06:56:57.000+00:00,persona-out
+624d1928dda1ad0001e77851,Nicola,Mc***n,Solutions Underwriter UK Commercial,Aviva,aviva.co.uk,Aviva,2026-09-06T13:37:28.000+00:00,persona-out
+54eaaccf74686945eb866500,Jas,Si***u,Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-04T13:34:05.466+00:00,persona-out
+5d38a2b3f651256af67818af,Shelley,Gr***y,Fleet Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-04T02:02:39.000+00:00,persona-out
+63f5fd8545125d00019eb66f,Molly,We***h,Head Office Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-22T08:58:08.000+00:00,persona-out
+54a603217468693442891fbb,Stuart,Ba***t,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-22T09:04:19.000+00:00,persona-out
+5d575ca4f6512546ecb31c11,Flynn,Be***y,"Pricing Specialist, Home Pricing Adequacy",Aviva,aviva.co.uk,Aviva,2026-10-04T00:33:24.000+00:00,persona-out
+55714a80736964582b8a4000,Laighton,To***l,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-14T05:23:18.584+00:00,persona-out
+54a201a77468692e71b2dc04,Pamela,Me***e,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-13T22:43:31.000+00:00,persona-out
+6125ff3de12cf70001dd4207,Vandana,Ca***t,Pricing Specialist,Aviva,aviva.co.uk,Aviva,2026-10-08T09:58:01.000+00:00,persona-out
+64314e3a05dfb000011caa26,Kieran,Ma***n,Casualty Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-03T21:04:23.000+00:00,persona-out
+5e70a9251f9ac7000129a958,Ben,Ti***r,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-09T11:12:15.438+00:00,persona-out
+5f55b89f820a6d00010f9be5,Michelle,Hi***n,Solutions Underwriter UKGI,Aviva,aviva.co.uk,Aviva,2026-10-03T22:34:38.000+00:00,persona-out
+62ea78a8944c110001aa9362,Jordan,Ro***s,Trading Underwriter - Mid Market,Aviva,aviva.co.uk,Aviva,2026-09-07T11:35:08.000+00:00,persona-out
+6129bebb5bc50a000156269f,Adeyemi,On***a,Underwriter - Group Protection,Aviva,aviva.co.uk,Aviva,2026-09-06T04:47:49.000+00:00,persona-out
+671b739c0ae33f0001456d08,Danielle,Lo***r,Engineering Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-04T05:08:15.000+00:00,persona-out
+63cfa10902380400013ec6e1,Megan,Gr***s,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-04T00:52:56.000+00:00,persona-out
+682acf05f347c2000190e9e8,Liam,He***n,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-09T12:12:18.369+00:00,persona-out
+6ab881e2d7aa310001dbb358,Sam,Br***n,Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-06T05:41:47.000+00:00,persona-out
+642497ba0a0d510001892d56,Dominic,Sm***h,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-03T11:41:12.000+00:00,persona-out
+5e5cba0b4f0081000174815e,Alamin,Ra***d,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-20T21:45:51.000+00:00,persona-out
+612883c7ab13de0001420f4d,Lydia,Do***g,Cyber Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-12T04:09:32.000+00:00,persona-out
+5b32711fa6da98718871bc16,Steve,Hu***s,SME Solutions Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-13T15:35:43.315+00:00,persona-out
+6735098d08a10b000110d90a,Charlie,Ha***n,Commercial Lines Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-06T06:37:03.000+00:00,persona-out
+5e7ff91915c4150001376c72,Alison,Ma***n,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-22T09:14:57.000+00:00,persona-out
+66fd04579fb92c00014f6ed3,Deirdre,Bo***d,Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-29T06:45:50.659+00:00,persona-out
+665bd38db17ef200013bb20b,Casey,Bu***l,Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-13T10:14:13.252+00:00,persona-out
+54a482c27468692abf70064d,Emily,De***h,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-06T06:15:21.000+00:00,persona-out
+54aacafe746869236668281a,Martina,Co***y,Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-08T06:55:52.000+00:00,persona-out
+6a2dd8df863af500018aba28,Aisling,H,Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-01T12:20:28.978+00:00,persona-out
+6700b83e78663e000146b2b0,Toby,Mi***s,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-08T05:32:03.889+00:00,persona-out
+6704aec2aefb4c0001759de5,Grahame,Cl***e,"Underwriting Quality, Chief Underwriting Office",Aviva,aviva.co.uk,Aviva,2026-09-22T09:03:34.000+00:00,candidate
+57d39f47a6da985b65007a03,Charlotte,Pe***y,Assistant Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-03T10:17:13.000+00:00,persona-out
+62124d8c90b7da0001f9b4e6,Carol,Ni***l,Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-05T04:54:02.224+00:00,persona-out
+67053c21a5ef2a00019b33d3,Pauline,De***n,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-20T21:02:52.000+00:00,persona-out
+614d652b0015ad0001773e5c,Harriett,Ho***l,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-04T02:22:16.000+00:00,persona-out
+54a4eed174686932093cb66e,Ann,De***x,Fleet Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-10T17:35:22.184+00:00,persona-out
+698da840184a080001167d06,Alicia,Mc***n,Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-04T03:02:21.000+00:00,persona-out
+6704facde159ff00011f03e8,Frank,Cl***y,DUA Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-04T08:57:47.000+00:00,persona-out
+5abe5e19a6da98405a6bca6f,Simon,Po***r,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-23T07:50:30.000+00:00,persona-out
+67052a1ea5ef2a000194f4a0,Natalie,Lo***d,Assistant Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-18T12:43:55.000+00:00,persona-out
+6724937942dd530001675114,Marco,Mc***l,Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-03T22:35:16.000+00:00,persona-out
+606f440f79620c0001785085,Gwyn,Pr***e,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-14T20:33:03.777+00:00,persona-out
+66f1937d00692a0001f000a0,Joel,Ta***r,GI Pricing Specialist,Aviva,aviva.co.uk,Aviva,2026-10-05T08:16:02.865+00:00,persona-out
+5b305126a6da98ebe96ae03d,Safdar,Ali,Engineering Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-12T14:27:30.269+00:00,persona-out
+61f3b0defa457100012c0374,Louise,Sm***h,On-Site Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-07-21T01:23:21.000+00:00,persona-out
+5e785d18f0ce510001f09cfc,Jeremy,Cl***k,Fleet Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-12T10:07:47.236+00:00,persona-out
+5e66e8638db502000181863c,Lauren,Jo***s,Marine Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-28T15:12:33.599+00:00,persona-out
+6704f5973d442500016c89c7,Daniel,Mc***h,Schemes Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-03T21:57:08.000+00:00,persona-out
+671739a70a277d000198c3cc,Chris,Gr***e,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-20T20:57:59.000+00:00,persona-out
+57d6f9dfa6da986b55f0ac06,Lisa,Mu***y,Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-08T07:02:02.000+00:00,persona-out
+670030f0ede263000140b242,Adrian,Ca***w,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-07-21T22:31:23.000+00:00,persona-out
+62a31ef9fa515e0001be0493,George,Mc***n,Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-12T00:40:57.000+00:00,persona-out
+57e063dea6da981bed8a743b,Harry,Co***s,Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-08T15:18:23.383+00:00,persona-out
+57e08eb9a6da981c15d14431,Lauren,Ga***r,Scheme Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-02T01:51:53.345+00:00,persona-out
+6138350161b1e20001500ad5,Veronica,Mu***y,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-03T12:01:27.000+00:00,persona-out
+6426d5ef2d1f5c0001bdb3b2,Marie,Hu***t,Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-06T10:44:59.000+00:00,persona-out
+5e6fd4e248a22600014fca15,Ann,Do***n,Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-07T13:11:10.932+00:00,persona-out
+6704fd70e159ff00011ffce3,Elizabeth,Sy***s,Marine Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-09T20:19:46.832+00:00,persona-out
+695a6093eefaf00001e4ef6f,Luke,Pa***e,Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-09T04:44:46.000+00:00,persona-out
+54a1aa4c74686958609c2206,Debbie,St***s,On-site Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-12T16:59:24.780+00:00,persona-out
+64de5ac2fb4dcc0001da4e1a,Matthew,Co***y,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-04T01:17:21.000+00:00,persona-out
+6704f1813d442500016af47e,Emma,Mc***b,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-03T23:07:56.000+00:00,persona-out
+6704d80ab078760001e9aaed,Sean,He***y,Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-06T16:48:28.000+00:00,persona-out
+6704f5413d442500016c664a,Colin,Fo***r,Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-01T03:58:55.927+00:00,persona-out
+6955072aa5209e000162f959,Stephanie,Ta***i,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-04T01:57:30.000+00:00,persona-out
+57dd1664a6da987afd91066e,Siana,Ta***o,Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-29T14:54:28.644+00:00,persona-out
+67047c24aefb4c00014a9f31,Fiona,Mc***n,Financial Lines Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-04T03:47:56.000+00:00,persona-out
+60014cf5ca65c20001a57a5c,Sarah,An***s,Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-04T01:40:12.000+00:00,persona-out
+60c34d5e9b96720001df5ac3,Nicky,Ki***g,"PA - Global Chief Underwriting Officer, Personal Lines",Aviva,aviva.co.uk,Aviva,2026-10-03T10:38:55.000+00:00,persona-out
+54a435447468692fa27a2d35,Fiona,St***y,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-09-13T18:45:22.000+00:00,persona-out
+57d85ad3a6da98787bbf72c9,Lindsay,Fe***y,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-03T23:37:54.000+00:00,persona-out
+6704ab07aefb4c00017348f6,Gillian,Pa***n,Trading Underwriter,Aviva,aviva.co.uk,Aviva,2026-10-02T03:13:43.604+00:00,persona-out
+57d78753a6da9809f61653d5,Paul,Mu***n,Underwriting Development Head,Legal & General,legalandgeneral.com,Legal & General,2026-08-23T01:52:59.961+00:00,candidate
+54c204bf7468697af7bbef6d,Sara,De***r,Underwriting Rules User Business Analyst,Legal & General,legalandgeneral.com,Legal & General,2026-09-22T03:23:37.000+00:00,candidate
+54a7828f746869730a25ea3b,Matthew,Wi***n,Underwriting Development,Legal & General,legalandgeneral.com,Legal & General,2026-10-02T05:08:54.799+00:00,candidate
+54a62bf27468692cf0c471c7,Jayant,Ma***o,Digital Transformation,Legal & General,legalandgeneral.com,Legal & General,2026-10-13T20:10:23.076+00:00,candidate
+5b22ebe0a6da988060883399,Richard,Wh***y,Development Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-14T03:35:32.296+00:00,candidate
+61691db30c4f6b00019b7f4f,Allan,Go***y,Aura Configuration Analyst - Automated Underwriting,Legal & General,legalandgeneral.com,Legal & General,2026-09-06T22:09:47.000+00:00,persona-out
+69eb2b659fe7ac00018b2213,Jenni,Ph***s,Development Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-08T01:49:19.794+00:00,candidate
+5b227712a6da9879169490ec,John,Re***d,Claims & Underwriting Development Team Manager,Legal & General,legalandgeneral.com,Legal & General,2026-10-04T01:10:10.000+00:00,candidate
+54a73d7b746869730aed1222,Ann,Nu***l,Underwriting Development Specialist,Legal & General,legalandgeneral.com,Legal & General,2026-09-14T21:51:10.297+00:00,candidate
+57d4e059a6da985386c13fd8,Dean,Ve***n,Underwriting Manager,Legal & General,legalandgeneral.com,Legal & General,2026-10-03T22:30:30.000+00:00,persona-out
+65f9a5d24ab67a0006a6bc50,Kalpesh,Mi***y,Digital Transformation Specialist,Legal & General,legalandgeneral.com,Legal & General,2026-10-19T21:44:02.174+00:00,candidate
+5b3e7b59a6da98d3afc763fe,Tom,Gr***s,Head of New Business Bid Management,Legal & General,legalandgeneral.com,Legal & General,2026-09-10T06:08:58.000+00:00,persona-out
+675dc8412ed9ea000180cd63,Lee,Ta***r,Chief Technology Officer,Legal & General,legalandgeneral.com,Legal & General,2026-10-07T10:34:24.444+00:00,in-sales-nav
+66ff28342dac9b0001bbead7,David,Ba***s,Underwriting & Claims Director,Legal & General,legalandgeneral.com,Legal & General,2026-09-08T00:40:31.000+00:00,candidate
+54a4fc8c7468693b8c0d8073,Malcolm,Co***r,"Director, Pricing and Underwriting",Legal & General,legalandgeneral.com,Legal & General,2026-10-13T00:10:40.000+00:00,candidate
+680f6a48e4cc650001f0907a,David,Ha***n,Head of Product,Legal & General,legalandgeneral.com,Legal & General,2026-09-27T18:37:17.302+00:00,in-sales-nav
+54a3af15746869344253940a,Dave,Ch***n,"Head of Underwriting, Individual Retirement",Legal & General,legalandgeneral.com,Legal & General,2026-10-16T07:05:25.489+00:00,persona-out
+54a38e0f7468692fa2eb8502,Brian,Ke***p,Customer Underwriting Manager,Legal & General,legalandgeneral.com,Legal & General,2026-09-23T08:54:16.000+00:00,candidate
+684c31b1c0431e00015e904b,Cheryl,Hi***n,Chief Technology Officer Innovation,Legal & General,legalandgeneral.com,Legal & General,2026-10-13T03:55:20.024+00:00,in-sales-nav
+6ad594bfd15ee80001098c4c,Michael,Sp***i,Group CTO,Legal & General,legalandgeneral.com,Legal & General,2026-05-26T15:42:33.000+00:00,in-sales-nav
+54c170517468697af78a7b0e,Nicki,Pl***s,Head of Product and Proposition,Legal & General,legalandgeneral.com,Legal & General,2026-10-06T23:58:11.000+00:00,in-sales-nav
+54a3bd4b7468692abf9c9b0e,Huw,He***y,"Head of Product, PRT",Legal & General,legalandgeneral.com,Legal & General,2026-10-16T14:14:40.000+00:00,in-sales-nav
+660fc5bc9d60cd00079aa92d,Ruth,Av***y,Head of Product Engineering,Legal & General,legalandgeneral.com,Legal & General,2026-10-03T12:32:16.098+00:00,in-sales-nav
+6561f177b9fd7c00016ae60f,Tarun,Gu***a,Chief Medical Officer,Legal & General,legalandgeneral.com,Legal & General,2026-10-06T00:51:31.083+00:00,candidate
+6704ec63f0a063000163856b,Kelly,Yo***l,Head of Product Ops,Legal & General,legalandgeneral.com,Legal & General,2026-09-10T19:23:00.000+00:00,in-sales-nav
+697115f2bd54020001876523,Christina,Ni***u,CTO Group Functions,Legal & General,legalandgeneral.com,Legal & General,2026-10-18T09:37:33.908+00:00,in-sales-nav
+615073334d0b3d00013f189a,Steven,Mo***n,Head of Product Management,Legal & General,legalandgeneral.com,Legal & General,2026-09-27T04:23:49.138+00:00,in-sales-nav
+54a2c6967468693fda51e63b,Kerrie,Mi***n,Head of Product Governance,Legal & General,legalandgeneral.com,Legal & General,2026-10-14T23:55:29.000+00:00,in-sales-nav
+6ad365979c961b0001b305de,Claire,To***r,"Chief Technology Officer, OneTech Services",Legal & General,legalandgeneral.com,Legal & General,2026-07-31T05:18:54.000+00:00,in-sales-nav
+5ab9bc75a6da98b7224c7b46,Sarah,Ho***e,Senior Development Underwriter for Enhanced Annuities,Legal & General,legalandgeneral.com,Legal & General,2026-10-01T19:22:10.000+00:00,persona-out
+55d6cefcf3e5bb0f8200524f,Pierre,Kn***s,Head of Product Management-Infrastructure,Legal & General,legalandgeneral.com,Legal & General,2026-09-11T23:17:57.281+00:00,in-sales-nav
+6598fe9ff9b22400017f305d,Khurram,Na***m,Head of Product Ledger Accounting,Legal & General,legalandgeneral.com,Legal & General,2026-10-08T21:37:01.000+00:00,persona-out
+5b2c3b25a6da9863df45e66b,John,Gr***s,Head of Product Technical & Oversight,Legal & General,legalandgeneral.com,Legal & General,2026-10-04T14:41:03.093+00:00,candidate
+5e5a413068526d0001a556c8,Jonathan,Sa***s,Head of Product and Commerical Risk,Legal & General,legalandgeneral.com,Legal & General,2026-10-12T14:42:54.000+00:00,candidate
+66f57210133e1400013b5ebd,Nikitas,Ma***i,"Group Chief Technology Officer, Data Science Manager",Legal & General,legalandgeneral.com,Legal & General,2026-10-11T07:24:49.448+00:00,candidate
+5c6353f3a3ae61381d49f71c,Steve,Sc***n,"Senior Proposition Manager, Group Protection",Legal & General,legalandgeneral.com,Legal & General,2026-09-20T21:39:03.000+00:00,persona-out
+66f9f96683ba0c0001760cfa,Donna,Co***l,"Head of Reinsurance, Protection",Legal & General,legalandgeneral.com,Legal & General,2026-10-07T15:37:25.651+00:00,candidate
+66f047d1600196000179b7f7,Colin,Cl***e,"Head of Product Policy Strategy, Workplace Savings",Legal & General,legalandgeneral.com,Legal & General,2026-10-10T06:43:15.000+00:00,in-sales-nav
+54a40e3c7468693676d4e828,Chris,Ba***r,Head of Commercial Underwriting,Legal & General,legalandgeneral.com,Legal & General,2026-10-12T06:31:45.000+00:00,persona-out
+66ff05312dac9b0001b20797,Michael,Du***n,Underwriting Team Manager,Legal & General,legalandgeneral.com,Legal & General,2026-10-01T22:23:50.000+00:00,persona-out
+63481186584ee10001298e4a,Micah,Sm***h,Head of Retirement Innovation,Legal & General,legalandgeneral.com,Legal & General,2026-10-14T16:57:50.327+00:00,persona-out
+5ad89659a6da98e40b1522c3,Suzanne,Jo***s,Head of Finance - Group Protection,Legal & General,legalandgeneral.com,Legal & General,2026-10-17T11:31:16.000+00:00,persona-out
+54a52e977468692abf868683,Chloe,Ca***r,Head of Claims - Group Protection,Legal & General,legalandgeneral.com,Legal & General,2026-10-17T14:46:55.000+00:00,in-sales-nav
+6687a17c8da1900001e664f0,Chris,Ti***t,Head of Delivery - Group Protection,Legal & General,legalandgeneral.com,Legal & General,2026-10-01T19:18:28.000+00:00,persona-out
+61f503d57dabeb0001ab21e2,Scott,Wa***e,Customer Underwriting Team Manager,Legal & General,legalandgeneral.com,Legal & General,2026-07-23T06:38:32.000+00:00,candidate
+619971a81612bb000116af1b,Sarah,Ho***d,Customer Underwriting Team Manager,Legal & General,legalandgeneral.com,Legal & General,2026-10-05T02:41:09.198+00:00,candidate
+642ec4adef7e770001df534a,Nicky,Mc***e,Customer Underwriting Team Manager,Legal & General,legalandgeneral.com,Legal & General,2026-10-04T00:00:57.000+00:00,candidate
+66fe098c5e0d170001ef3e96,Tony,Si***r,Claims and Underwriting Distribution Manager,Legal & General,legalandgeneral.com,Legal & General,2026-10-11T01:38:47.817+00:00,candidate
+66f9a549611997000168f082,Lindsey,Sa***l,Technical Underwriting Team Manager,Legal & General,legalandgeneral.com,Legal & General,2026-10-10T04:33:04.574+00:00,candidate
+66f7a0abfe82a1000153f9d1,Pippa,Ba***r,"Commercial Director, Retail Protection",Legal & General,legalandgeneral.com,Legal & General,2026-10-16T20:42:36.000+00:00,candidate
+54a40b207468692cf03fa527,Nora,Br***h,Finance Director Protection and Retirements,Legal & General,legalandgeneral.com,Legal & General,2026-09-22T03:19:06.000+00:00,persona-out
+66f9a58c6119970001690122,Arnaud,Ca***e,Head of Retail Protection Claims Operations,Legal & General,legalandgeneral.com,Legal & General,2026-09-28T20:00:14.035+00:00,in-sales-nav
+62f990dd6e9a090001f33244,Yash,Gu***a,Head of Transformation | Retail - Group Protection,Legal & General,legalandgeneral.com,Legal & General,2026-10-13T17:39:28.000+00:00,in-sales-nav
+57d9c422a6da987fd1f12920,Sonya,Ci***E,Head of Data Protection - Group Functions,Legal & General,legalandgeneral.com,Legal & General,2026-09-29T16:40:19.542+00:00,in-sales-nav
+57dd2124a6da987b0d8a9d51,Hai,Luc,"Head of Actuarial Research, Retail Protection",Legal & General,legalandgeneral.com,Legal & General,2026-10-05T23:26:20.000+00:00,candidate
+5b340286a6da98710edc1d34,Vasoulla,Ec***u,Underwriting Service Delivery Manager,Legal & General,legalandgeneral.com,Legal & General,2026-10-04T04:22:24.000+00:00,persona-out
+57d8f410a6da9872625e6968,Bethan,Sh***d,Medical Underwriting Team Manager,Legal & General,legalandgeneral.com,Legal & General,2026-10-03T21:00:45.766+00:00,candidate
+66fbc9922a16c20001320739,Justin,Ch***i,"Group Head, Digital Channels & Innovation",Legal & General,legalandgeneral.com,Legal & General,2026-10-22T04:57:53.163+00:00,candidate
+6035419bd6f9f80001e4133a,Sam,Ho***y,Head of Conduct Risk & Compliance - Workplace Savings and Protection,Legal & General,legalandgeneral.com,Legal & General,2026-10-04T10:42:44.000+00:00,persona-out
+66ff0d622dac9b0001b40e7f,Prakash,Ra***y,IT & Transformation Director - Protection,Legal & General,legalandgeneral.com,Legal & General,2026-10-17T03:42:57.000+00:00,in-sales-nav
+66fe515c3c45f30001fb055b,James,Sh***k,Managing Director of Protection and Retail Retirement,Legal & General,legalandgeneral.com,Legal & General,2026-10-11T10:05:35.442+00:00,persona-out
+66f9bf136119970001734bcf,Jimmy,Tu***l,Head of Group Protection Customer Service Operations,Legal & General,legalandgeneral.com,Legal & General,2026-10-03T09:02:17.000+00:00,persona-out
+5570a9337369642178312800,John,Hu***d,Interim Commercial Director - Group Protection,Legal & General,legalandgeneral.com,Legal & General,2026-10-16T02:04:45.000+00:00,persona-out
+66fdd7415e0d170001dcc6f9,Andrew,Gr***s,Customer Underwriting Service Delivery Manager,Legal & General,legalandgeneral.com,Legal & General,2026-09-28T15:15:45.785+00:00,candidate
+66ff283f2dac9b0001bbee4a,Colin,Fi***d,"Distribution Director, Group Protection L&G",Legal & General,legalandgeneral.com,Legal & General,2026-09-28T04:36:53.899+00:00,persona-out
+6835e8b32012800001ff64e6,James,Le***s,Scheme Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-09-06T11:11:19.000+00:00,persona-out
+54ebccb0746869444c63e127,David,Ni***t,Scheme Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-15T22:42:36.241+00:00,persona-out
+612a572dc1bc69000179ee45,Georgia,Wh***r,Medical Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-10T12:23:50.385+00:00,persona-out
+57d4c787a6da9853ee9aa5f5,Laura,Co***h,Scheme Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-09-21T04:03:16.835+00:00,persona-out
+5ae814a0a6da98308277d418,Sarah,Le***s,Scheme Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-04T05:37:02.000+00:00,persona-out
+5d6ac97e80f93eabe732874e,Chris,Qu***n,Scheme Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-06T05:29:11.000+00:00,persona-out
+54a7470d74686975f861c425,Nikki,Bo***s,Scheme Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-03T15:20:49.000+00:00,persona-out
+6704fd5a744270000139de60,Natalie,Ri***y,Initial Risk Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-09-19T13:09:01.000+00:00,persona-out
+61eb8202181f3f000160ffa4,Raihan,Ch***y,Medical Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-01T21:30:39.467+00:00,persona-out
+64e52d99d17aab0001db9400,Sarah,Fe***a,Medical Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-03T12:52:42.000+00:00,persona-out
+54a5d4ca7468692fa28174ac,Emma,Sk***t,Underwriting,Legal & General,legalandgeneral.com,Legal & General,2026-09-05T22:19:26.000+00:00,persona-out
+6613ccd782311e0007daa838,Nancy,Sa***e,Medical Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-09-22T08:04:48.000+00:00,persona-out
+5b1e9a5da6da98e261a5f559,Rebecca,Ha***n,Medical Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-04T03:10:50.000+00:00,persona-out
+54a7537374686968291c132a,Sally,Ro***n,Medical Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-09-22T03:26:10.000+00:00,persona-out
+5b3a3e87a6da98556816d459,Rob,Ha***r,Life and Disability Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-16T23:14:37.172+00:00,persona-out
+60cee51355fc8b000174b4f7,Eimear,Br***n,Developing Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-17T02:50:05.180+00:00,persona-out
+57e1f018a6da9808c63f11b8,Helen,Bo***n,Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-09-25T18:06:38.364+00:00,persona-out
+57df496da6da980add31d0a4,Emma,Mo***e,Initial Risk Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-17T19:44:18.271+00:00,persona-out
+63ea22127a5969000169611a,Ella,Ye***s,Developing Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-09-22T03:05:07.000+00:00,persona-out
+54eba5837468694311476505,Natasha,Ki***y,Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-10T12:02:36.941+00:00,persona-out
+692ba1a68b38f300017a8cc2,Hayley,Pe***r,Scheme Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-09-23T09:25:09.000+00:00,persona-out
+54a2ea8074686930c21bdc46,Annelie,G,Scheme Underwriter -Group Protection,Legal & General,legalandgeneral.com,Legal & General,2026-10-04T08:53:21.000+00:00,persona-out
+6a9d41515c56e2000105fa84,Christian,Do***n,Medical Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-04T00:27:32.460+00:00,persona-out
+67427bd35314610001741d27,Tania,Go***z,Scheme Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-09-08T12:13:49.000+00:00,persona-out
+5abc7767a6da9841637a8eaf,Steven,Ca***r,Medical Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-09-22T03:10:34.000+00:00,persona-out
+57e1dbc4a6da9808de0ed754,Rob,Co***k,Scheme Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-04T03:15:04.000+00:00,persona-out
+67012cea222a810001420ad7,Trupti,Sh***a,Medical Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-09-22T03:16:45.000+00:00,persona-out
+626c002b546f9e0001eff2b5,Dan,Pe***s,Life and Disability Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-07-22T01:30:53.000+00:00,persona-out
+54a54a7174686938aca3778c,Alex,Mo***k,Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-16T18:42:41.629+00:00,persona-out
+61029d9bc796340001ebdea5,Claire,Em***y,Developing Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-09-22T09:33:34.000+00:00,persona-out
+5e7e0aa6f592ab0001bd9f06,Joe,Be***y,Initial Risk Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-03T22:28:45.000+00:00,persona-out
+54a6042774686934427c76bb,Corrine,Ke***y,Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-04T22:04:24.396+00:00,persona-out
+63480b1b259d120001ebcfae,Dean,Br***y,Medical Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-07T05:01:27.000+00:00,persona-out
+619976961241e90001d2080b,Tamsin,Sa***y,Medical Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-04T09:07:38.000+00:00,persona-out
+642304b414d41100016af070,Loretta,Wh***e,Initial Risk Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-09-22T09:37:37.000+00:00,persona-out
+615bc6020d1cf5000109eaf5,John,Ri***s,Specialist Pre-Sale Underwiter,Legal & General,legalandgeneral.com,Legal & General,2026-09-06T15:04:32.000+00:00,persona-out
+5d4c7da2f651254beb79dcc3,Rebecca,Wy***n,Scheme Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-09-17T23:22:05.000+00:00,persona-out
+69b6eb63fc28810001bfe031,Elena,Sa***a,Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-04T01:30:50.000+00:00,persona-out
+688dfddd65c58600014364d6,Juan,Ag***r,Initial Risk Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-03T19:47:36.000+00:00,persona-out
+5d670707a3ae6119d31342e2,Martin,Jo***n,Scheme Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-04T01:30:33.000+00:00,persona-out
+5f57655b84e37700014c9a47,James,Ev***s,Developing Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-01T17:57:28.000+00:00,in-sales-nav
+67434f50b5756100014eb23d,Joseph,Br***n,Initial Risk Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-04T08:27:06.000+00:00,persona-out
+62e2617fa1211b0001182dc3,Catherine,Tu***g,Medical Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-09-22T03:23:15.000+00:00,persona-out
+57df998ba6da980b1ddcdc41,Joanne,Wi***g,Scheme Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-09-06T18:30:10.000+00:00,persona-out
+670230ffb4262400013102bb,Mark,Wi***n,Medical Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-01T17:51:04.843+00:00,in-sales-nav
+6959bbafa4ac7300017d26e4,Gareth,Su***s,Medical Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-01T23:28:27.694+00:00,persona-out
+5ae7ea24a6da98306a64cb15,Rob,Bu***e,Initial Risk Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-04T01:32:21.000+00:00,persona-out
+54c1c1bf7468697af771d142,Carl,Im***y,Medical Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-09-30T12:44:00.365+00:00,persona-out
+6169369ddd69590001a2ac9b,Vicky,Je***s,Medical Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-09-22T03:27:01.000+00:00,persona-out
+54aa42b57468692914a90700,Judith,Br***d,Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-09-05T23:22:28.000+00:00,persona-out
+57ddc554a6da987b015b3d7c,Roger,Cl***s,Medical Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-09-22T03:09:56.000+00:00,persona-out
+54a747f074686965d91eee25,Locke,Ma***m,Developing Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-03T09:05:24.000+00:00,persona-out
+6348098e4ccf7f0001cda52d,Dougie,Re***n,Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-01T18:16:47.352+00:00,persona-out
+615bd0b3937c75000160b2dd,Charlotte,Em***y,Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-09-22T03:23:19.000+00:00,persona-out
+57d75f2fa6da985b7f754710,Stephen,Ma***y,Medical Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-09-22T03:07:17.000+00:00,persona-out
+54abbc687468693007858609,Tomas,Om***y,Medical Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-03T23:05:34.000+00:00,persona-out
+57dd1dcea6da987b1872d39d,Paul,Br***n,Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-04T02:35:46.000+00:00,persona-out
+684ff9196f73060001164d12,Andrew,Wa***n,Medical Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-09-22T03:10:19.000+00:00,persona-out
+666dcf6afad4260001884edb,Will,Ma***n,Initial Risk Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-03T15:13:32.000+00:00,persona-out
+57e09ef0a6da981c29dccec7,Lorraine,Sw***n,Scheme Underwriter,Legal & General,legalandgeneral.com,Legal & General,2026-10-07T06:28:29.000+00:00,persona-out
+5d651e3bf6512511732d2dc7,Ceri,Da***s,Underwriting Rules and Philosophy Developer,Royal London,royallondon.com,Royal London,2026-09-02T10:52:16.000+00:00,candidate
+54a4e17b7468692cf0a0cd6a,Dominic,Pa***n,Underwriting Philosophy Manager,Royal London,royallondon.com,Royal London,2026-10-01T15:26:10.000+00:00,candidate
+67c4509633c9b40001605249,Robert,Ar***e,Underwriting Rules Developer,Royal London,royallondon.com,Royal London,2026-10-04T12:14:16.985+00:00,candidate
+5c3f578af651257edbd389ff,William,St***n,Underwriting Rules Developer,Royal London,royallondon.com,Royal London,2026-09-23T18:25:42.000+00:00,candidate
+5c631533f65125345a01c686,Damian,Ma***k,Underwriting Rules Developer,Royal London,royallondon.com,Royal London,2026-09-08T12:32:38.000+00:00,candidate
+5ae3f966a6da98d44fe71a2b,Daniel,Sm***h,Underwriting Philosophy Developer,Royal London,royallondon.com,Royal London,2026-09-19T05:30:58.000+00:00,candidate
+56464946a6da9810710078e4,Vikki,La***n,Protection Pricing Actuary,Royal London,royallondon.com,Royal London,2026-08-17T05:12:17.704+00:00,candidate
+5d4a3c49f651255f1f630809,Jane,Ly***e,Development Underwriter,Royal London,royallondon.com,Royal London,2026-10-15T01:13:55.729+00:00,candidate
+5fb366d4bc9e1f000194c3f2,Craig,Pa***n,Chief Underwriter,Royal London,royallondon.com,Royal London,2026-09-19T03:24:38.000+00:00,candidate
+5ab9b7a0a6da98b80f583e1a,Robert,Mo***n,Head of Underwriting and Claims,Royal London,royallondon.com,Royal London,2026-09-06T04:37:20.000+00:00,candidate
+631de860ac701400015cc7f3,Seb,Bo***n,Rules & Development Underwriter,Royal London,royallondon.com,Royal London,2026-10-03T10:36:26.000+00:00,candidate
+671f98373ba2530001d18420,Fiona,Wy***n,Head of Protection Propositions,Royal London,royallondon.com,Royal London,2025-09-24T07:36:29.167+00:00,candidate
+6735802d0e899a0001318fab,Fi,Wy***n,Head of Protection Propositions,Royal London,royallondon.com,Royal London,2026-10-06T02:21:01.000+00:00,in-sales-nav
+54a738de74686975f87d8f20,Caitlin,St***h,Head of Protection Commercials and Business Quality,Royal London,royallondon.com,Royal London,2026-10-13T00:06:57.218+00:00,candidate
+66f3a285d3eba20001b54611,James,Tr***e,Automation and Innovation Manager,Royal London,royallondon.com,Royal London,2026-10-15T03:24:35.000+00:00,candidate
+60f10cf2c53886000119d979,Maureen,Du***h,Head of Product Management,Royal London,royallondon.com,Royal London,2026-09-09T05:07:51.952+00:00,in-sales-nav
+56a97f87f3e5bb1d5b005d84,Joshua,Go***n,Head of Automation and Innovation,Royal London,royallondon.com,Royal London,2026-09-25T05:57:02.000+00:00,in-sales-nav
+54a3858c7468692abf0f2701,Jones,,Head of Customer Experience (New Business),Royal London,royallondon.com,Royal London,2026-10-06T16:41:42.446+00:00,in-sales-nav
+60cbd53c4e6e9b0001ea6364,Jon,Fu***r,Protection Distribution Director,Royal London,royallondon.com,Royal London,2026-09-17T03:33:46.000+00:00,candidate
+6555a632afd03500014c1b95,Robin,Go***n,Underwriting Analytics Manager,Royal London,royallondon.com,Royal London,2026-10-04T09:06:12.000+00:00,candidate
+5ac1a1bda6da981cd655bf17,Fiona,Qu***n,Underwriting Team Manager,Royal London,royallondon.com,Royal London,2026-10-03T08:56:01.000+00:00,persona-out
+54a59bf17468693442d2849d,Eileen,Br***n,Team Manager Medical Underwriting,Royal London,royallondon.com,Royal London,2026-09-22T03:27:29.000+00:00,candidate
+54a72b2874686975f8c0c11b,James,Bl***y,Underwriting & Claims Quality Assurance Manager,Royal London,royallondon.com,Royal London,2026-09-22T03:28:12.000+00:00,candidate
+54a263507468692e71f0701f,Ed,By***e,Head of AI Product Management,Royal London,royallondon.com,Royal London,2026-10-08T07:24:34.959+00:00,persona-out
+66f885fb8dcef0000152ef23,Richard,Ba***s,Customer Service Director - Pensions Protection & Customer Relations,Royal London,royallondon.com,Royal London,2026-10-18T15:35:20.000+00:00,candidate
+611d693baa42fd0001a829b1,Ryan,Ne***y,Medical Underwriter,Royal London,royallondon.com,Royal London,2026-09-23T08:22:29.000+00:00,persona-out
+5e63438e258a5200017a87c9,Felicity,Pe***e,Medical Underwriter,Royal London,royallondon.com,Royal London,2026-10-08T19:37:59.685+00:00,persona-out
+5d6b3a3980f93e5bca7557df,Claire,Re***d,Underwriter,Royal London,royallondon.com,Royal London,2026-09-20T21:08:58.000+00:00,persona-out
+57df5167a6da980b2642ccb3,Elizabeth,Az***i,Underwriter,Royal London,royallondon.com,Royal London,2026-10-08T06:29:37.267+00:00,persona-out
+5570d6bb7369641befc53303,Richard,Ev***y,Underwriter,Royal London,royallondon.com,Royal London,2026-09-22T03:05:57.000+00:00,persona-out
+5abb04e2a6da9841796d1b41,Alan,Re***d,Medical Underwriter,Royal London,royallondon.com,Royal London,2026-09-07T11:46:24.000+00:00,persona-out
+5d3ba91080f93e42b777f47e,Steve,Ch***n,Medical Underwriter,Royal London,royallondon.com,Royal London,2026-09-08T19:21:37.000+00:00,persona-out
+6700f69f39d12f0001667a5a,Tim,La***e,Medical Underwriter,Royal London,royallondon.com,Royal London,2026-10-07T20:47:28.000+00:00,persona-out
+57e1cc39a6da98571feb74da,Ross,Do***e,Underwriter,Royal London,royallondon.com,Royal London,2026-10-12T21:11:15.167+00:00,persona-out
+675df7bc77e3b50001bbbac1,Louise,Th***n,Underwriter,Royal London,royallondon.com,Royal London,2026-07-22T11:37:45.000+00:00,persona-out
+6167c64bb5b2450001607d7d,Laura,Wi***s,Underwriter,Royal London,royallondon.com,Royal London,2026-09-08T19:29:34.000+00:00,persona-out
+662f017f8eaa55000686567f,Meghan,Ro***e,Medical Underwriter,Royal London,royallondon.com,Royal London,2026-07-23T08:05:09.000+00:00,persona-out
+60d1eda2dd2ece0001ec7eb7,Derek,Ke***h,Underwriter,Royal London,royallondon.com,Royal London,2026-09-05T22:01:40.000+00:00,persona-out
+5cbec56280f93ecb4862b9ad,Jennifer,Ki***y,Underwriter,Royal London,royallondon.com,Royal London,2026-10-14T08:25:16.521+00:00,persona-out
+66e52e0c6efe0000010af1ab,Vanessa,Cr***n,Underwriter,Royal London,royallondon.com,Royal London,2026-09-06T04:59:04.000+00:00,persona-out
+631ddb88d417700001ab13fd,Anna,Ru***l,Underwriter,Royal London,royallondon.com,Royal London,2026-09-22T03:09:36.000+00:00,persona-out
+66f6aecef5eec900016c3593,Alicia,Ke***r,Medical Underwriter,Royal London,royallondon.com,Royal London,2026-09-22T03:08:46.000+00:00,persona-out
+57dc7df8a6da987dafbf5299,Mark,Mc***y,Underwriter,Royal London,royallondon.com,Royal London,2026-10-04T09:03:56.000+00:00,persona-out
+5e665ab4ffc8eb00019e637e,Allan,St***t,Life and Disability Underwriter,Royal London,royallondon.com,Royal London,2026-09-22T03:10:58.000+00:00,persona-out
+55710fbc7369640ee8ec0e00,Bright,Un***s,Underwriter,Royal London,royallondon.com,Royal London,2026-07-21T03:53:02.000+00:00,persona-out
+54a1f70774686930c2314301,Mary-Alison,Ro***s,Underwriter,Royal London,royallondon.com,Royal London,2026-10-03T19:30:47.000+00:00,persona-out
+615be665cb1dc8000194c364,Julie,Dr***d,Underwriter,Royal London,royallondon.com,Royal London,2026-10-03T10:19:37.000+00:00,persona-out
+6997ec3eab2d440001299016,Chris,Ta***r,Underwriter,Royal London,royallondon.com,Royal London,2026-09-22T03:29:15.000+00:00,persona-out
+54a2aaf97468693a7e185634,Gary,Be***r,Protection Proposition Director,LV=,lv.com,LV=,2026-10-20T15:56:12.677+00:00,in-sales-nav
+57d71c2da6da9806050664e1,Lucy,Lu***e,Head of Protection Pricing at LV=,LV=,lv.com,LV=,2026-09-10T06:11:38.000+00:00,candidate
+5d6dffcff65125976bade5a5,Gareth,Hu***t,Development Underwriter,LV=,lv.com,LV=,2026-05-13T02:21:19.000+00:00,candidate
+606ebca06d9b200001381a04,Scott,Gr***l,Head of Underwriting,LV=,lv.com,LV=,2026-09-07T22:35:33.000+00:00,candidate
+64ed0b2fa4d6ff000188bd14,Rachel,Ha***g,Development Underwriter,LV=,lv.com,LV=,2026-09-22T03:07:42.000+00:00,candidate
+54a73072746869705a17c61d,Karl,Pi***g,Chief Technology Officer,LV=,lv.com,LV=,2026-10-06T20:55:58.000+00:00,in-sales-nav
+6247f2d1fe8af00001253436,Catherine,Jo***n,Schemes Underwriting Manager,LV=,lv.com,LV=,2026-07-22T11:45:55.000+00:00,persona-out
+66f0199c13ccb70001aaa75d,Steve,Di***h,Commercial Underwriting Manager,LV=,lv.com,LV=,2026-09-06T17:09:06.000+00:00,persona-out
+5ab8c912a6da981546a2edcd,David,Re***d,Motor & Breakdown Underwriting Manager,LV=,lv.com,LV=,2026-08-09T23:44:27.000+00:00,persona-out
+60a4611f8230a3000171cd32,Megan,Da***s,ER Senior Proposition Development Underwriter,LV=,lv.com,LV=,2026-09-06T06:17:25.000+00:00,candidate
+66fd94a96bbe610001b22e89,Andrew,Ma***h,Operational & E Commerce Underwriting Manager,LV=,lv.com,LV=,2026-07-23T20:24:17.000+00:00,persona-out
+609a7f1071d896000186cdfb,Julie,Co***e,Pet/Travel Technical Underwriting Manager,LV=,lv.com,LV=,2026-10-09T12:07:38.329+00:00,candidate
+66fa4f8fb2cc890001c6d68a,Stephanie,Ri***s,Head of Marketing (Protection),LV=,lv.com,LV=,2026-10-16T17:55:58.966+00:00,candidate
+5b203a59a6da98eeb0d40b3a,Adam,Da***n,Head of Distribution Quality - Protection,LV=,lv.com,LV=,2026-09-16T17:48:18.775+00:00,candidate
+624fe3b074804500011d741f,John,Ha***d,Head of Equity Release Underwriting,LV=,lv.com,LV=,2026-10-06T06:58:49.000+00:00,persona-out
+66f979119901a20001b63844,Anita,Fe***t,Chief Transformation and Technology Officer,LV=,lv.com,LV=,2026-10-11T05:22:32.000+00:00,in-sales-nav
+66ed7332d7a83e000178b412,Mike,Fa***l,Director of Protection Sales,LV=,lv.com,LV=,2026-10-15T12:58:50.000+00:00,candidate
+67018533b42624000110e2f8,Ronel,Ba***d,Underwriting,LV=,lv.com,LV=,2026-09-22T03:22:08.000+00:00,persona-out
+5abedf9aa6da98ce34ba9c36,Charlotte,Ja***n,Underwriter,LV=,lv.com,LV=,2026-10-03T03:31:59.000+00:00,persona-out
+5dd33bf0b080ca00015ea7ab,Deb,Ph***s,Medical Underwriter,LV=,lv.com,LV=,2026-10-03T15:59:46.000+00:00,persona-out
+55ca44cbf3e5bb16ee001742,Sophie,Mc***d,Fleet Underwriter,LV=,lv.com,LV=,2026-10-07T06:59:45.000+00:00,persona-out
+698481fcf074780001b80adb,Sai,Kr***n,Personal Lines Underwriter,LV=,lv.com,LV=,2026-09-06T00:25:41.000+00:00,persona-out
+57d9a563a6da98725ade7c5f,John,Hu***d,Medical Underwriter,LV=,lv.com,LV=,2026-09-22T03:23:07.000+00:00,persona-out
+5f4d13533907ff00015d3870,Catherine,Sh***n,Underwriter Support,LV=,lv.com,LV=,2026-09-05T23:57:43.000+00:00,persona-out
+54a21b007468692e7125570d,Simon,Vo***t,Protection Proposition Manager,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-10-20T07:07:23.278+00:00,candidate
+54a3dbea74686938ac72d218,Daniel,Mu***y,Underwriting Development Manager,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-10-16T11:01:49.840+00:00,candidate
+5abe6931a6da98415197877e,Eric,Wa***r,Development Underwriting Manager,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-09-22T03:14:01.000+00:00,candidate
+6700823b18c0de000139b266,Kerrie,Cr***s,Protection Underwriting Development Manager,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-10-03T14:19:19.000+00:00,candidate
+6700fae15f60ba0001665b84,Paul,Yo***g,Development Underwriter,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-09-22T03:26:06.000+00:00,candidate
+6704d3c1b078760001e72aed,Laura,Va***n,Head of Protection,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-10-01T11:10:49.595+00:00,in-sales-nav
+5ab9923aa6da98b770c48515,Tom,Gr***n,Development Underwriter,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-10-04T05:40:56.000+00:00,candidate
+66f8ab8d1fb6a7000104183a,Kate,Ly***s,Protection Director,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-10-07T01:34:40.000+00:00,in-sales-nav
+54c19b137468691639b79328,Nathan,Lo***k,Team Underwriting Manager,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-09-08T12:29:25.630+00:00,persona-out
+66fbc8322a16c200013195a9,Scott,In***s,Senior Technical Underwriting Manager,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-10-04T05:05:43.000+00:00,candidate
+61304ac65deeac00015a0918,Catherine,Tr***e,Head of Intermediary Distribution (Protection),Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-09-28T01:51:31.921+00:00,in-sales-nav
+54eba7d8746869444c495b07,Frances,He***e,Senior Underwriting Strategy Manager,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-02-18T05:28:02.327+00:00,candidate
+6700e91daec44900018777cb,David,Ru***l,Senior Manager Claims & Underwriting Strategy,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-10-06T03:55:49.000+00:00,candidate
+57d71215a6da9805fbda4962,Euan,Ro***n,Underwriter,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-09-22T03:32:27.000+00:00,persona-out
+6563877e7d83a200011104af,Stacey,Ca***r,Initial Underwriter (protection),Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-09-13T00:30:34.329+00:00,candidate
+60052f0e6ff1dd0001b3d8de,Lily,Ro***n,Underwriter,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-09-25T21:48:22.907+00:00,persona-out
+5e7896ed2a2a020001b59b68,Danish,Mi***a,Initial Underwriter,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-09-20T06:35:25.379+00:00,persona-out
+57d9a3dca6da98721aa50212,Theo,Za***i,Medical Underwriter,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-09-22T03:21:05.000+00:00,persona-out
+61694955e785660001ed6833,James,Ne***e,Life and Disability Underwriter,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-09-22T03:03:42.000+00:00,persona-out
+648071cebc93d10001748563,Samantha,Bu***s,Initial Underwriter,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-10-04T02:56:14.000+00:00,persona-out
+57e16580a6da987d7c33b8ce,Felicity,Te***w,Medical Underwriter,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-09-19T13:00:30.000+00:00,persona-out
+66ab175a1df18a00011b2bce,Jo,Du***y,Underwriter,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-10-05T08:13:33.386+00:00,persona-out
+61567bfee4631500016f24c0,Frances,Mc***e,Underwriter,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-10-03T21:38:23.000+00:00,persona-out
+6745d2f89e39d400016c0efb,Matthew,Wa***n,Underwriter,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-09-22T03:20:25.000+00:00,persona-out
+5dc27fd87be81c0001e422a5,Ian,Si***r,Underwriter,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-09-06T18:02:58.000+00:00,persona-out
+615bcd97ad37dc000121c1db,Sean,Lo***h,Medical Underwriter,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-09-20T08:50:56.000+00:00,persona-out
+61294a1a61e68d0001fb1dd1,Mya,Ar***t,Underwriter,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-10-05T04:11:21.000+00:00,persona-out
+60a2457c94e3040001abd34d,Samantha,Mc***n,Underwriter,Scottish Widows,scottishwidows.co.uk,Scottish Widows,2026-09-06T01:24:10.000+00:00,persona-out
+54a4db057468692fa254f668,David,Pi***n,Underwriting Rules Developer,The Exeter,the-exeter.com,The Exeter,2026-10-03T16:34:20.000+00:00,candidate
+66fbaafac0ee1d0001e069ca,Ed,Ly***n,Head of Underwriting Operations,The Exeter,the-exeter.com,The Exeter,2026-10-09T06:01:46.000+00:00,candidate
+5f6facb8059d700001720ca8,Helen,Ja***s,Head of Underwriting & IP & Life Claims,The Exeter,the-exeter.com,The Exeter,2026-10-06T09:58:38.000+00:00,candidate
+631f14b6180ac80001e6d9c5,Lara,Ha***s,Underwriting Team Manager,The Exeter,the-exeter.com,The Exeter,2026-10-12T16:16:14.987+00:00,candidate
+60d0791a3eb3d60001d30b6f,Simon,Ja***s,Underwriting,The Exeter,the-exeter.com,The Exeter,2026-10-14T14:50:40.000+00:00,persona-out
+66a7c3a0f104560001801341,Jackie,Ho***d,Underwriter,The Exeter,the-exeter.com,The Exeter,2026-10-04T00:51:40.000+00:00,persona-out
+642c106d1365ac00011875a0,Jo-Anna,Gi***s,Medical Underwriter,The Exeter,the-exeter.com,The Exeter,2026-10-06T12:36:24.327+00:00,persona-out
+674367c8b5ec0b0001bebf59,Pam,Ne***t,Medical Underwriter,The Exeter,the-exeter.com,The Exeter,2026-09-22T03:11:09.000+00:00,persona-out
+64942de84624ea0001b37ee7,Graham,La***y,Underwriter,The Exeter,the-exeter.com,The Exeter,2026-10-04T00:43:33.000+00:00,persona-out
+614ec56d0d18890001f777c5,Katie,Ba***n,Underwriter,The Exeter,the-exeter.com,The Exeter,2026-09-22T03:07:31.000+00:00,persona-out
+54a434c87468692cf0a6d234,Alan,Fr***e,Life & Disability Underwriter,The Exeter,the-exeter.com,The Exeter,2026-09-19T11:34:20.000+00:00,persona-out
+5f105f534393e60001c387b8,Andy,Ca***e,Medical Underwriter,The Exeter,the-exeter.com,The Exeter,2026-09-22T03:24:53.000+00:00,persona-out
+665964fee573b70001893e7c,Felicity,Ha***s,PMI Underwriter,The Exeter,the-exeter.com,The Exeter,2026-10-03T23:35:57.000+00:00,persona-out
+67249d9215a4870001122ed6,Zoe,O?***n,Medical Underwriter,The Exeter,the-exeter.com,The Exeter,2026-09-22T03:10:44.000+00:00,persona-out
+5f5b9a6b5f7f960001c523df,Robert,Ba***d,Medical Underwriter,The Exeter,the-exeter.com,The Exeter,2026-10-06T22:45:46.964+00:00,persona-out
+5d41b59780f93e6c9263d193,Michael,Ma***y,Underwriter,The Exeter,the-exeter.com,The Exeter,2026-09-22T03:13:01.000+00:00,persona-out
+67171e806e820900012816d6,Sue,Ki***e,Underwriting Manager,Cirencester Friendly Society Limited,cirencester-friendly.co.uk,Cirencester Friendly Society,2026-09-22T03:23:29.000+00:00,candidate
+54a2494474686930c250c81c,Steve,Be***e,Senior Development Underwriter,Cirencester Friendly Society Limited,cirencester-friendly.co.uk,Cirencester Friendly Society,2026-10-03T23:55:40.000+00:00,candidate
+6517f606f57bc900014149f4,Samuel,Nj***e,Underwriting Analytics & Development Manager,Cirencester Friendly Society Limited,cirencester-friendly.co.uk,Cirencester Friendly Society,2026-09-11T03:14:59.000+00:00,candidate
+64eccabd7a0d0f0001e0f61c,Michelle,Ca***h,Medical Underwriter,Cirencester Friendly Society Limited,cirencester-friendly.co.uk,Cirencester Friendly Society,2026-09-22T03:11:16.000+00:00,persona-out
+6273b83fa477830001c2b50d,Mark,Sm***h,Data Protection Officer,Holloway Friendly,holloway.co.uk,Holloway Friendly,2026-09-19T12:26:49.000+00:00,candidate
+54a4b7d07468692abf1dca5d,Jo,Wo***s,Head of Underwriting & Claims,Holloway Friendly,holloway.co.uk,Holloway Friendly,2026-10-03T16:53:47.000+00:00,candidate
+57e0ffb6a6da987d60b725c7,Jamie,We***h,Underwriting and Claims Technical Manager,Holloway Friendly,holloway.co.uk,Holloway Friendly,2026-09-05T14:39:03.899+00:00,candidate
+67052cf0a5ef2a000195fa60,Natalie,Ja***s,Claims and Underwriting Team Manager,Holloway Friendly,holloway.co.uk,Holloway Friendly,2026-09-19T03:10:21.000+00:00,candidate
+57df9410a6da980b53e0ed53,April,Do***s,Initial Underwriter,Holloway Friendly,holloway.co.uk,Holloway Friendly,2026-10-14T09:23:32.555+00:00,persona-out
+6758249e2dff5000011864b4,Michelle,Ma***l,Underwriter,Holloway Friendly,holloway.co.uk,Holloway Friendly,2026-09-22T03:25:00.000+00:00,persona-out
+54a70c73746869705a8daa10,Tracy,So***n,Medical Underwriter,Holloway Friendly,holloway.co.uk,Holloway Friendly,2026-09-22T03:10:47.000+00:00,persona-out
+5e859c95eeb8ab0001c218e4,Alex,Ya***s,Head of Underwriting,British Friendly Society Ltd,britishfriendly.com,British Friendly,2026-10-06T10:05:24.000+00:00,candidate
+54a22b8b7468693a7e1de212,Debbie,El***s,Head of Underwriting & Claims,British Friendly Society Ltd,britishfriendly.com,British Friendly,2026-09-19T03:09:50.000+00:00,candidate
+64959f326dd6960001887d3d,Andrew,In***m,Underwriter,British Friendly Society Ltd,britishfriendly.com,British Friendly,2026-10-04T04:38:43.000+00:00,persona-out
+6a7785d49a98b600011a13bc,Elaine,Bl***d,Underwriter,British Friendly Society Ltd,britishfriendly.com,British Friendly,2026-10-05T15:10:27.804+00:00,persona-out
+5e62f00a31c8b5000109b28c,Michael,Ja***n,Head of Underwriting,Shepherds Friendly,shepherdsfriendly.co.uk,Shepherds Friendly,2026-09-22T03:11:46.000+00:00,candidate
+5aeb9c3da6da9802a1973734,Steve,Sm***h,Head of Product,Shepherds Friendly,shepherdsfriendly.co.uk,Shepherds Friendly,2026-10-16T08:11:59.000+00:00,in-sales-nav
+54a289a274686930c205552a,Val,Br***s,Claims and Underwriting Manager,Shepherds Friendly,shepherdsfriendly.co.uk,Shepherds Friendly,2026-06-22T13:45:04.134+00:00,candidate
+5e6e562a094dcb0001fae1c0,Jasmine,Ry***n,Underwriter,Shepherds Friendly,shepherdsfriendly.co.uk,Shepherds Friendly,2026-10-04T00:09:32.000+00:00,persona-out
+66fa0e57611997000190937a,Killian,Fa***y,"Director, Protection Pricing",Pacific Life Re,pacificlifere.com,Pacific Life Re,2026-09-22T01:47:12.866+00:00,candidate
+66f9c03a611997000173c690,David,Wa***s,Underwriting Director,Pacific Life Re,pacificlifere.com,Pacific Life Re,2026-10-07T00:40:40.000+00:00,candidate
+5ad6c504a6da98e4470ad103,Alan,Do***t,Director of Underwriting,Pacific Life Re,pacificlifere.com,Pacific Life Re,2026-09-07T22:35:43.000+00:00,candidate
+6112d96933fbba0001cce1f8,Febby,Mu***a,"Head of Underwriting and Claims, Protection, Europe",Pacific Life Re,pacificlifere.com,Pacific Life Re,2026-10-16T19:45:20.000+00:00,candidate
+54eb176774686931b8bb5c08,Nikolai,Ha***g,Development Underwriter,Pacific Life Re,pacificlifere.com,Pacific Life Re,2026-10-06T03:27:21.000+00:00,candidate
+54a281d77468692e71089a28,Warren,Co***p,Chief Underwriter,Pacific Life Re,pacificlifere.com,Pacific Life Re,2026-07-21T05:32:25.000+00:00,candidate
+5e7f10f8ef1bdc00010cce47,Mala,Th***n,"Head of Protection, Europe",Pacific Life Re,pacificlifere.com,Pacific Life Re,2026-10-15T23:38:03.000+00:00,in-sales-nav
+66f58b09ab2ac800019dbd59,Caroline,Fip,Data Protection Officer - AVP,Pacific Life Re,pacificlifere.com,Pacific Life Re,2026-09-20T21:43:17.000+00:00,in-sales-nav
+60f5b6f1e3480a00018ac5cb,Justin,Fa***w,"Manager, Underwriting",Pacific Life Re,pacificlifere.com,Pacific Life Re,2026-10-15T19:29:56.451+00:00,candidate
+68e668675f83d40001b5e5a7,Paul,Re***k,Head of Medical Underwriting & Claims,Pacific Life Re,pacificlifere.com,Pacific Life Re,2026-10-17T00:20:45.000+00:00,candidate
+5d663c9e80f93eede2b598c2,Daragh,Br***y,"Head of Risk, Global Protection & Capital Solutions",Pacific Life Re,pacificlifere.com,Pacific Life Re,2026-10-04T02:01:45.000+00:00,candidate
+616a42c72a6fd9000164044a,Caroline,Sm***h,Underwriting and Claims Developer,Pacific Life Re,pacificlifere.com,Pacific Life Re,2026-10-06T22:51:12.025+00:00,candidate
+5f4e4fa3149e8800011609cb,James,Si***s,Underwriting Developer,Pacific Life Re,pacificlifere.com,Pacific Life Re,2026-09-22T03:27:37.000+00:00,candidate
+61148a6e76a5d9000187471b,Byron,Le***h,Underwriter,Pacific Life Re,pacificlifere.com,Pacific Life Re,2026-09-28T05:17:47.237+00:00,persona-out
+602e4d4752f47a00013d31ca,Kylie,Ir***n,Chief Product Officer,UnderwriteMe,underwriteme.com,UnderwriteMe,2026-09-20T03:29:39.000+00:00,in-sales-nav
+57dfb2d8a6da980b53e19f63,Helen,Su***s,Lead Development Underwriter,UnderwriteMe,underwriteme.com,UnderwriteMe,2026-09-10T05:41:08.175+00:00,candidate
+54a3a62274686938ac03ca07,James,He***n,"Manager, Development Underwriting",UnderwriteMe,underwriteme.com,UnderwriteMe,2026-10-13T21:45:28.954+00:00,candidate
+60505f2778f0ea0001dea868,Pete,Ma***n,Lead Development Underwriter (NA and UK&I),UnderwriteMe,underwriteme.com,UnderwriteMe,2026-09-08T07:26:34.000+00:00,candidate
+5b2ef802a6da982ccac5949e,Will,Mi***r,"VP, Head of Legal and Risk and DPO",UnderwriteMe,underwriteme.com,UnderwriteMe,2026-10-06T20:05:14.120+00:00,candidate
