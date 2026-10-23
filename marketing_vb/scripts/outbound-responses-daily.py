@@ -27,6 +27,10 @@ WHAT IT DOES
                 none yet. A morning with no replies still gets a one-line message, because
                 a silent cron is how the pull was lost for sixteen nights in September.
     status   read-only: what is pending, what is dirty, and what the state file remembers.
+    weekly   Mondays 06:10 UTC. The full funnel per campaign and per sending account
+             (invites, accepted, messages, replied, positive replies, last 7 days) from the
+             snapshot `closely-pull.py pull-all --stats` writes each night into
+             ~/.hermes/outbound-stats/. Read-only, no Closely session. Since 2026-10-23.
 
 WHAT COUNTS AS NEW
 ------------------
@@ -55,7 +59,8 @@ USAGE
     scripts/outbound-responses-daily.py night   [--dry-run]
     scripts/outbound-responses-daily.py morning [--notify] [--dry-run]
     scripts/outbound-responses-daily.py status
-Without --notify, `morning` prints the report instead of sending it. Env for tests:
+    scripts/outbound-responses-daily.py weekly  [--notify]
+Without --notify, `morning` and `weekly` print the report instead of sending it. Env for tests:
 HO_DB, OUTBOUND_DAILY_STATE, OUTBOUND_DAILY_LOCK, OUTBOUND_DAILY_MVB_RUN.
 Exit codes: 0 = ok · 1 = something needs attention (it is in the output) · 3 = broken setup.
 """
@@ -646,6 +651,156 @@ def chunk(blocks: list[str]) -> list[str]:
     return out
 
 
+# ------------------------------------------------------------------------ weekly
+
+# Vadim, 2026-10-23: full stats on every outreach campaign, collected at night with the
+# replies. `closely-pull.py pull-all --stats` writes the snapshot (lifetime + last 7 days
+# per Closely campaign); this only reads it, so it never opens a Closely session.
+STATS_DIR = Path(os.environ.get("OUTBOUND_STATS_DIR")
+                 or os.path.expanduser("~/.hermes/outbound-stats"))
+POSITIVE = ("interested", "question", "referral")    # the morning report's "needs a reaction"
+PROFILE_ORDER = ("katerina", "nick", "olena", "katya", "vadim")
+
+
+def _sum(rows: list[dict], part: str, key: str):
+    vals = [(r.get(part) or {}).get(key) for r in rows]
+    vals = [v for v in vals if isinstance(v, (int, float))]
+    return sum(vals) if vals else None
+
+
+def _n(v) -> str:
+    return "?" if v is None else f"{v:,}".replace(",", " ")
+
+
+def _pct(a, b) -> str:
+    return f" ({100 * a / b:.1f}%)" if a is not None and b else ""
+
+
+def positives(cdir: Path) -> int:
+    """People with at least one reply the classifier put in POSITIVE."""
+    return len({person_of(r) for r in read_csv(cdir / CLASSIFIED)
+                if (r.get("category") or "").strip() in POSITIVE})
+
+
+def stat_units(rows: list[dict]) -> list[dict]:
+    """One unit per folder (summing its Closely campaigns), else per Closely campaign.
+    A campaign with no folder gets its sender from the account_id its mapped siblings use."""
+    acct_profile: dict = {}
+    for r in rows:
+        if r.get("folder") and r.get("account_id") is not None:
+            acct_profile.setdefault(r["account_id"],
+                                    campaign_profile(CAMPAIGNS / r["folder"], []))
+    groups: dict[str, list[dict]] = {}
+    for r in rows:
+        groups.setdefault(r.get("folder") or "closely:" + r["closely_id"], []).append(r)
+    units = []
+    for rs in groups.values():
+        folder = rs[0].get("folder") or ""
+        prof = (campaign_profile(CAMPAIGNS / folder, []) if folder
+                else acct_profile.get(rs[0].get("account_id")))
+        units.append({"folder": folder, "rows": rs,
+                      "profile": prof or f"Closely account {rs[0].get('account_id', '?')}",
+                      "date": folder[:10] if folder else min(r["created_at"] for r in rs),
+                      "positives": positives(CAMPAIGNS / folder) if folder else None})
+    return units
+
+
+def funnel(rows: list[dict]) -> dict:
+    replied = _sum(rows, "contacts", "finished_reply")
+    return {"contacts": _sum(rows, "contacts", "total"),
+            "active": _sum(rows, "contacts", "active"),
+            "sent": _sum(rows, "lifetime", "connection_sent"),
+            "acc": _sum(rows, "lifetime", "connection_accepted"),
+            "msg": _sum(rows, "lifetime", "message_sent"),
+            "replied": replied if replied is not None
+            else _sum(rows, "lifetime", "message_replied"),
+            "w_sent": _sum(rows, "last7", "connection_sent"),
+            "w_acc": _sum(rows, "last7", "connection_accepted"),
+            "w_replied": _sum(rows, "last7", "message_replied")}
+
+
+def week_line(f: dict) -> str:
+    return (f"7 днів: +{_n(f['w_sent'])} інвайтів, +{_n(f['w_acc'])} прийняли, "
+            f"+{_n(f['w_replied'])} відповідей")
+
+
+def cmd_weekly(args) -> int:
+    snaps = sorted(STATS_DIR.glob("????-??-??.json"))
+    if not snaps:
+        msg = (f"📊 Outbound: знімка статистики немає в {STATS_DIR}. Його пише нічний "
+               "`closely-pull.py pull-all --stats`; дивись ~/.hermes/logs/closely-pull.log")
+        print(msg)
+        if args.notify:
+            OP.telegram_send(msg)
+        return 1
+    snap = json.loads(snaps[-1].read_text(encoding="utf-8"))
+    pulled = datetime.fromisoformat(snap["pulled_at"].replace("Z", "+00:00"))
+    age_h = (now_utc() - pulled).total_seconds() / 3600
+    rows = [r for r in snap["campaigns"] if "error" not in r]
+    broken = [r for r in snap["campaigns"] if "error" in r]
+    units = stat_units(rows)
+
+    t = funnel(rows)
+    pos = sum(u["positives"] or 0 for u in units)
+    head = [f"📊 Outbound — повна статистика, {now_utc():%d.%m}",
+            f"Closely на {pulled:%d.%m %H:%M} UTC · {len(units)} "
+            f"{plural(len(units), 'кампанія', 'кампанії', 'кампаній')} з {fmt_date(snap['since'])}",
+            "",
+            f"Разом: інвайтів {_n(t['sent'])} · прийняли {_n(t['acc'])}{_pct(t['acc'], t['sent'])}"
+            f" · відповіли {_n(t['replied'])}{_pct(t['replied'], t['acc'])}"
+            f" · позитивних {pos}",
+            week_line(t)]
+    if age_h > 30:
+        head.append(f"⚠️ знімок старий ({age_h:.0f} год): нічний pull не дописав статистику, "
+                    "дивись ~/.hermes/logs/closely-pull.log")
+    blocks = ["\n".join(head)]
+
+    by_prof: dict[str, list[dict]] = {}
+    for u in units:
+        by_prof.setdefault(u["profile"], []).append(u)
+    order = sorted(by_prof, key=lambda p: (PROFILE_ORDER.index(p) if p in PROFILE_ORDER
+                                           else len(PROFILE_ORDER), p))
+    for prof in order:
+        us = sorted(by_prof[prof], key=lambda u: u["date"], reverse=True)
+        pf = funnel([r for u in us for r in u["rows"]])
+        lines = [f"👤 {account_label(prof)} — інвайтів {_n(pf['sent'])}, прийняли "
+                 f"{_n(pf['acc'])}{_pct(pf['acc'], pf['sent'])}, відповіли "
+                 f"{_n(pf['replied'])}{_pct(pf['replied'], pf['acc'])}"]
+        for u in us:
+            f = funnel(u["rows"])
+            title = (u["folder"][11:] if u["folder"] else
+                     "«" + " + ".join(r["name"] for r in u["rows"]) + "», без папки")
+            status = "/".join(sorted({r.get("status") or "?" for r in u["rows"]}))
+            lines.append(f"• {title} · {fmt_date(u['date'])} · {status}")
+            lines.append(f"  контактів {_n(f['contacts'])} (в роботі {_n(f['active'])}) · "
+                         f"інвайтів {_n(f['sent'])} · прийняли {_n(f['acc'])}{_pct(f['acc'], f['sent'])}"
+                         f" · повідомлень {_n(f['msg'])} · відповіли {_n(f['replied'])}"
+                         f"{_pct(f['replied'], f['acc'])}"
+                         + (f" · позитивних {u['positives']}" if u["positives"] else ""))
+            if any(f[k] for k in ("w_sent", "w_acc", "w_replied")):
+                lines.append("  " + week_line(f))
+        blocks.append("\n".join(lines))
+
+    tail = []
+    if broken:
+        tail.append("⚠️ не зібрано: " + "; ".join(
+            f"{r['closely_id']} «{r.get('name', '')}» ({short(r['error'], 80)})" for r in broken))
+    tail.append("Відповіли = люди, яким Closely закрив послідовність відповіддю; % від "
+                "прийнятих (за ним і порівнюй кампанії). Позитивні = interested, question, "
+                "referral за класифікатором. «Без папки» = кампанія ще без відповідей або не з "
+                "пайплайну, назва з Closely.")
+    blocks.append("\n".join(tail))
+
+    messages = chunk(blocks)
+    for m in messages:
+        print(m)
+        print("-" * 40)
+    if args.notify and not all(OP.telegram_send(m) for m in messages):
+        print("✗ Telegram send failed")
+        return 1
+    return 0 if not broken and age_h <= 30 else 1
+
+
 # ----------------------------------------------------------------------- status
 
 def cmd_status(args) -> int:
@@ -683,9 +838,13 @@ def main(argv=None) -> int:
     m.set_defaults(func=cmd_morning)
     s = sub.add_parser("status", help="read-only overview")
     s.set_defaults(func=cmd_status)
+    w = sub.add_parser("weekly", help="full funnel per campaign from the nightly Closely "
+                                      "snapshot (closely-pull.py pull-all --stats)")
+    w.add_argument("--notify", action="store_true", help="send to Telegram (else print only)")
+    w.set_defaults(func=cmd_weekly)
     args = ap.parse_args(argv)
 
-    if args.cmd == "status":
+    if args.cmd in ("status", "weekly"):
         return args.func(args)
     LOCK.parent.mkdir(parents=True, exist_ok=True)
     with LOCK.open("w") as lf:

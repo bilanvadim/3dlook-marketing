@@ -1434,6 +1434,96 @@ def cmd_metrics_all(args) -> int:
     return 0 if failed == 0 else 1
 
 
+# -------------------------------------------------------------------------- stats
+
+# The whole-funnel snapshot behind the weekly report (outbound-responses-daily.py weekly).
+# Vadim, 2026-10-23: full stats on every outreach campaign, collected at night together
+# with the replies. metrics-final.json could not serve: it was last written 2026-09-02,
+# covers the five folders that had replies by then, and is tracked in git, so a nightly
+# rewrite would leave it dirty in every `git status`. The snapshot lives outside the repo.
+#
+# Keyed by CLOSELY campaign, not by folder. campaign_mapping() only sees campaigns that
+# already have repliers, and 15 import CSVs share one header, so a campaign with no reply
+# yet cannot be filed under a folder. It still belongs in the stats: listed under its
+# Closely name, with the sender taken from its account_id.
+STATS_DIR = Path(os.environ.get("OUTBOUND_STATS_DIR")
+                 or Path.home() / ".hermes" / "outbound-stats")
+STATS_SINCE = "2026-07-01"           # the agent pipeline's first folder is 2026-07-08
+STATS_EPOCH = 1704067200             # 2024-01-01, the same lifetime window as `metrics`
+STAT_EVENTS = ("connection_sent", "connection_accepted", "message_sent", "message_replied")
+
+
+def _stat_events(c: "Closely", cid: str, date_from: int, date_to: int) -> dict:
+    q = urllib.parse.urlencode({"date_from": date_from, "date_to": date_to})
+    d = c.get(f"/v1/drill/campaigns/{cid}/events-summary?{q}")
+    inner = (d.get("data") if isinstance(d, dict) and "data" in d else d) or {}
+    return {k: _count_of(inner.get(k)) for k in STAT_EVENTS}
+
+
+def cmd_stats(args, mapping: list[dict] | None = None) -> int:
+    """Lifetime + last-7-days funnel for every Closely campaign since --since."""
+    c = Closely(verbose=True)
+    c.ensure_auth()
+    if mapping is None:
+        print("→ mapping Closely campaigns to our folders")
+        mapping = campaign_mapping(c)
+    folder_of = {r["closely_id"]: r["folder"] for r in mapping if r.get("folder")}
+
+    camps = _listy(c.get("/v1/campaigns/?limit=999"), ("campaigns", "data", "results", "items"))
+    now = int(time.time())
+    week = now - 7 * 86400
+    rows, failed = [], 0
+    for camp in camps:
+        cid = str(_first(camp, ("campaign_id", "id")))
+        created = str(_first(camp, ("created_at", "created", "date_created")))
+        if not re.match(r"^\d{4}-\d{2}-\d{2}", created):
+            created = ""                     # unknown here: the detail call below decides
+        if not cid or (created and created[:10] < args.since and cid not in folder_of):
+            continue
+        row = {"closely_id": cid, "name": str(_first(camp, ("name", "title"))).strip(),
+               "created_at": created[:10], "folder": folder_of.get(cid, "")}
+        try:
+            det = c.get(f"/v2/campaigns/{cid}")
+            det = (det.get("data") if isinstance(det, dict) else None) or {}
+            row.update(name=str(det.get("name") or row["name"]).strip(),
+                       created_at=str(det.get("created_at") or created)[:10],
+                       status=det.get("status") or "", account_id=det.get("account_id"))
+            if re.match(r"^\d{4}-\d{2}-\d{2}$", row["created_at"]) and \
+                    row["created_at"] < args.since and not row["folder"]:
+                continue
+            cs = c.get(f"/v1/drill/campaigns/{cid}/contacts-summary")
+            cs = (cs.get("data") if isinstance(cs, dict) and "data" in cs else cs) or {}
+            row["contacts"] = {k: _count_of(cs.get(k)) for k in
+                               ("total", "active", "finished_reply", "finished_no_reply",
+                                "finished_error")}
+            row["lifetime"] = _stat_events(c, cid, STATS_EPOCH, now)
+            row["last7"] = _stat_events(c, cid, week, now)
+            print(f"  ✓ {cid} {row['created_at']} {row['name'][:40]}")
+        except SystemExit as e:
+            failed += 1
+            row["error"] = str(e)[:200]
+            print(f"  ✗ {cid}: {str(e)[:90]}", file=sys.stderr)
+        rows.append(row)
+
+    snap = {"pulled_at": __import__("datetime").datetime.now(
+                __import__("datetime").timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "since": args.since,
+            "source": "closely.io private app API: /v1/drill/campaigns/{id}/events-summary "
+                      "+ contacts-summary, /v2/campaigns/{id}",
+            "campaigns": rows}
+    print(f"\n{len(rows)} campaign(s) since {args.since}, {failed} failed")
+    if args.dry_run:
+        print("  (--dry-run: nothing written)")
+        return 0 if failed == 0 else 1
+    STATS_DIR.mkdir(parents=True, exist_ok=True)
+    dst = STATS_DIR / (snap["pulled_at"][:10] + ".json")
+    tmp = dst.with_suffix(".tmp")
+    tmp.write_text(json.dumps(snap, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    os.replace(tmp, dst)
+    print(f"→ wrote {dst}")
+    return 0 if failed == 0 else 1
+
+
 # ----------------------------------------------------------------------- pull-all
 
 def cmd_pull_all(args) -> int:
@@ -1477,6 +1567,17 @@ def cmd_pull_all(args) -> int:
         print()
 
     print(f"{'-' * 66}\n{ok} campaign(s) pulled, {failed} failed")
+
+    # Same run, so the same Closely session: a separate stats invocation would be one more
+    # eviction. Its failure does not fail the pull (replies matter more, and the alert
+    # would blame them); the weekly report flags a stale or partial snapshot instead.
+    if getattr(args, "stats", False):
+        print(f"\n{'=' * 66}\nstats snapshot\n{'=' * 66}")
+        try:
+            cmd_stats(argparse.Namespace(since=STATS_SINCE, dry_run=args.dry_run),
+                      mapping=rows)
+        except SystemExit as e:
+            print(f"  ✗ stats: {e}", file=sys.stderr)
     return 0 if failed == 0 else 1
 
 
@@ -1542,7 +1643,15 @@ def main(argv=None) -> int:
     pa = sub.add_parser("pull-all",
                         help="map, then pull every mapped campaign (this is the cron entry)")
     pa.add_argument("--dry-run", action="store_true")
+    pa.add_argument("--stats", action="store_true",
+                    help="then write the funnel snapshot (see `stats`) in the same session")
     pa.set_defaults(func=cmd_pull_all)
+
+    st = sub.add_parser("stats", help="funnel snapshot of every Closely campaign since "
+                                      f"--since into {STATS_DIR} (the weekly report reads it)")
+    st.add_argument("--since", default=STATS_SINCE, help="YYYY-MM-DD, by campaign creation")
+    st.add_argument("--dry-run", action="store_true")
+    st.set_defaults(func=cmd_stats)
 
     mc = sub.add_parser("map-campaigns",
                         help="match Closely campaigns to our folders by contact overlap")
