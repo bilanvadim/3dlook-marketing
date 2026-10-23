@@ -13,27 +13,27 @@ Validated in five `icp-validator` batches: Aviva 449 · Legal & General 298 · o
 
 ## Stats
 
-1,283 people (Sales Navigator 1,006 + Apollo 277, 23 of 23 companies; Vadim approved 135 + 144 Apollo credits) · **PASS 148** (P1 32 · P2 64 · P3 52) · **WEAK 130** · FAIL 1005 · excluded by registry 0 · cap 50 per group, largest group 20 PASS.
+1,283 people (Sales Navigator 1,006 + Apollo 277, 23 of 23 companies; Vadim approved 135 + 144 Apollo credits) · **PASS 160** (P1 31 · P2 72 · P3 57) · **WEAK 136** · FAIL 987 · excluded by registry 0 · cap 50 per group, largest group 21 PASS.
 
-PASS by angle: underwriting 46 · reinsurance 35 · proposition 23 · referral 18 · technical-integration 15 · partnership 8 · medical 3
+PASS by angle: underwriting 57 · reinsurance 36 · proposition 23 · referral 19 · technical-integration 14 · partnership 9 · medical 2
 
 | Group | PASS | WEAK | FAIL |
 |---|---|---|---|
-| Aviva | 20 | 24 | 453 |
-| Royal London | 15 | 15 | 109 |
-| Legal & General | 14 | 24 | 287 |
-| Pacific Life Re | 11 | 10 | 25 |
-| Swiss Re UK | 10 | 1 | 4 |
+| Aviva | 21 | 29 | 447 |
+| Legal & General | 19 | 27 | 279 |
+| Royal London | 18 | 14 | 107 |
+| Pacific Life Re | 12 | 9 | 25 |
+| Scottish Widows | 10 | 1 | 13 |
 | Zurich UK | 8 | 15 | 23 |
 | VitalityLife | 8 | 14 | 8 |
-| Scottish Widows | 8 | 3 | 13 |
-| UnderwriteMe | 7 | 7 | 0 |
+| Swiss Re UK | 8 | 3 | 4 |
+| UnderwriteMe | 8 | 6 | 0 |
 | Munich Re UK Life Branch | 6 | 3 | 4 |
 | RGA UK | 6 | 0 | 1 |
-| LV= | 5 | 4 | 44 |
+| LV= | 5 | 5 | 43 |
+| The Exeter | 5 | 1 | 9 |
 | SCOR UK | 5 | 1 | 3 |
 | Guardian Financial Services | 5 | 0 | 0 |
-| The Exeter | 4 | 1 | 10 |
 | Shepherds Friendly | 4 | 2 | 7 |
 | Cirencester Friendly Society | 4 | 0 | 4 |
 | iPipeline UK | 3 | 0 | 0 |
@@ -43,9 +43,17 @@ PASS by angle: underwriting 46 · reinsurance 35 · proposition 23 · referral 1
 | Gen Re UK | 1 | 0 | 1 |
 | Iress UK | 0 | 1 | 0 |
 
+## Vadim — please confirm
+
+1. **Group parents (decision 2).** Pravina Ladva, Swiss Re Group Chief Digital and Technology Officer: WEAK, held because the Swiss Re parent is open for Olena. Emma Jones and Rebecca Abayakoon, RGA global underwriting philosophy heads based in London: PASS P2 from katerina, while the RGA parent is open for Nick. Keep, move, or drop?
+2. **P1 titles held as WEAK:** Louise Colley (Zurich, Protection Director, empty profile), Grace Flowers (Zurich, CUO, GI history), Szymon Marszalek and Paul Yarham (Vitality, Directors of Pricing and Underwriting, life or health not shown), Deborah Smith (Swiss Re, CMO, only trainee-grade history in the row). Take any of them?
+3. **Vitality:** the 6 heads of product with no line shown: all as P3 `proposition`, or none? Zurich underwriting managers with empty profiles (Andy Penny, Mark Paxford): drop?
+4. **Pools:** recommended first is CEOs and COOs of the single-line protection mutuals as `referral` (Holloway, Shepherds, The Exeter, Cirencester returned no other owner there). The rest are in each batch section.
+5. **Royal London × LV=.** Two web searches found only the 2021-22 history (Bain vote failed, Royal London talks ended); QC could not verify either way. If a deal closed, LV= (5 PASS) falls under the recent-acquisition rule. Confirm before import.
+
 ## Main finding: the Sales Navigator export was pulled by company, not by title
 
-All three Sales Nav validators found it independently: the export is every senior person at each company (speechwriting, events, catering, PAs), and the underwriting owners the persona is built on were missing at all 12 companies. Of 1,006 Sales Nav people 45 PASS. The two Apollo pulls by the hypothesis titles gave 54 of 135 and 49 of 142, and brought in the underwriting and medical lanes: Royal London Chief Underwriter, L&G Underwriting & Claims Director and CMO, Aviva Head of Underwriting Strategy & Governance, heads of underwriting at British Friendly and Shepherds Friendly, the reinsurers' CUOs and CMOs.
+All three Sales Nav validators found it independently: the export is every senior person at each company (speechwriting, events, catering, PAs). Across the 12 companies it held no Chief Underwriter, CUO, CMO or development/philosophy/rules underwriter; the only P1 underwriting owner was Sue Hendry (Aviva, Head of Protection UW/Claims and Customer Services). Of 1,006 Sales Nav people 45 PASS. The two Apollo pulls by the hypothesis titles gave 52 of 135 and 63 of 142 (after the QC fix round), and brought in the underwriting and medical lanes: Royal London Chief Underwriter, L&G Underwriting & Claims Director and CMO, Aviva Head of Underwriting Strategy & Governance, heads of underwriting at British Friendly and Shepherds Friendly, the reinsurers' CUOs and CMOs.
 
 ## Data issues
 
@@ -60,9 +68,24 @@ All three Sales Nav validators found it independently: the export is every senio
 
 ## Batch: Apollo title top-up for the Sales Nav companies (142)
 
-**Counts:** PASS 49 (P1 10 · P2 30 · P3 9) · WEAK 30 · FAIL 63 (Fiona Wynn = Fi Wynn from Sales Nav, renamed slug → FAIL as duplicate) · registry 0.
+**Counts:** PASS 63 (P1 10 · P2 38 · P3 15) · WEAK 34 · FAIL 45 · registry 0.
 
-#### Proposed to SEND (title top-up)
+| Group | n | P1 | P2 | P3 | WEAK | FAIL |
+|---|---|---|---|---|---|---|
+| Aviva | 48 | 2 | 4 | 3 | 10 | 29 |
+| Legal & General | 27 | 3 | 4 | 5 | 10 | 5 |
+| Royal London | 18 | 1 | 9 | 1 | 4 | 3 |
+| Pacific Life Re | 11 | 2 | 4 | 1 | 4 | 0 |
+| Scottish Widows | 10 | 0 | 7 | 1 | 1 | 1 |
+| LV= | 9 | 0 | 3 | 0 | 3 | 3 |
+| The Exeter | 4 | 0 | 2 | 1 | 0 | 1 |
+| Holloway Friendly | 4 | 0 | 0 | 1 | 0 | 3 |
+| UnderwriteMe | 4 | 0 | 3 | 1 | 0 | 0 |
+| Cirencester Friendly Society | 3 | 0 | 2 | 1 | 0 | 0 |
+| British Friendly | 2 | 1 | 0 | 0 | 1 | 0 |
+| Shepherds Friendly | 2 | 1 | 0 | 0 | 1 | 0 |
+
+#### Proposed to SEND
 | Group | Person | Title | P | Angle |
 |---|---|---|---|---|
 | Aviva | James Whitty | Head of Underwriting Strategy & Governance | 1 | underwriting |
@@ -73,6 +96,7 @@ All three Sales Nav validators found it independently: the export is every senio
 | Aviva | Sally James | Senior Development Underwriter | 2 | underwriting |
 | Aviva | Paul Welsh | Group Head of Innovation | 3 | referral |
 | Aviva | Harriet Granville-Jones | Partnerships Manager - Group Innovation | 3 | referral |
+| Aviva | Suzanne Lawson | Partnerships Manager - Group Innovation | 3 | referral |
 | British Friendly | Alex Yates | Head of Underwriting | 1 | underwriting |
 | Cirencester Friendly Society | Steve Betteridge | Senior Development Underwriter | 2 | underwriting |
 | Cirencester Friendly Society | Samuel Njoroge | Underwriting Analytics & Development Manager | 2 | underwriting |
@@ -85,21 +109,29 @@ All three Sales Nav validators found it independently: the export is every senio
 | Legal & General | Tarun Gupta | Chief Medical Officer | 1 | medical |
 | Legal & General | Pippa Barber | Commercial Director, Retail Protection | 1 | proposition |
 | Legal & General | Sara Denyer | Underwriting Rules User Business Analyst | 2 | underwriting |
+| Legal & General | Jenni Phillips | Development Underwriter | 2 | underwriting |
 | Legal & General | John Redmond | Claims & Underwriting Development Team Manager | 2 | underwriting |
 | Legal & General | Hai Luc | Head of Actuarial Research, Retail Protection | 2 | proposition |
+| Legal & General | Brian Kemp | Customer Underwriting Manager | 3 | underwriting |
+| Legal & General | Scott Wallace | Customer Underwriting Team Manager | 3 | underwriting |
+| Legal & General | Nicky McRae | Customer Underwriting Team Manager | 3 | underwriting |
+| Legal & General | Bethan Shepherd | Medical Underwriting Team Manager | 3 | underwriting |
 | Legal & General | Andrew Greatbanks | Customer Underwriting Service Delivery Manager | 3 | underwriting |
 | Pacific Life Re | David Waters | Underwriting Director | 1 | reinsurance |
 | Pacific Life Re | Febby Mulewa | Head of Underwriting and Claims, Protection, Europe | 1 | reinsurance |
 | Pacific Life Re | Killian Farrelly | Director, Protection Pricing | 2 | reinsurance |
 | Pacific Life Re | Nikolai Harrowing | Development Underwriter | 2 | reinsurance |
 | Pacific Life Re | Caroline Smith | Underwriting and Claims Developer | 2 | reinsurance |
+| Pacific Life Re | James Sims | Underwriting Developer | 2 | reinsurance |
 | Pacific Life Re | Justin Farrow | Manager, Underwriting | 3 | reinsurance |
 | Royal London | Craig Paterson | Chief Underwriter | 1 | underwriting |
 | Royal London | Ceri Davies | Underwriting Rules and Philosophy Developer | 2 | underwriting |
 | Royal London | Dominic Pagan | Underwriting Philosophy Manager | 2 | underwriting |
+| Royal London | Robert Arbuckle | Underwriting Rules Developer | 2 | underwriting |
 | Royal London | William Stratton | Underwriting Rules Developer | 2 | underwriting |
 | Royal London | Damian Mapplebeck | Underwriting Rules Developer | 2 | underwriting |
-
+| Royal London | Jane Lyle | Development Underwriter | 2 | underwriting |
+| Royal London | Seb Bowden | Rules & Development Underwriter | 2 | underwriting |
 | Royal London | Caitlin Stronach | Head of Protection Commercials and Business Quality | 2 | proposition |
 | Royal London | Robin Goodwin | Underwriting Analytics Manager | 2 | underwriting |
 | Royal London | James Blaney | Underwriting & Claims Quality Assurance Manager | 3 | underwriting |
@@ -107,62 +139,82 @@ All three Sales Nav validators found it independently: the export is every senio
 | Scottish Widows | Daniel Musty | Underwriting Development Manager | 2 | underwriting |
 | Scottish Widows | Eric Walker | Development Underwriting Manager | 2 | underwriting |
 | Scottish Widows | Kerrie Cross | Protection Underwriting Development Manager | 2 | underwriting |
+| Scottish Widows | Paul Young | Development Underwriter | 2 | underwriting |
+| Scottish Widows | Tom Green | Development Underwriter | 2 | underwriting |
 | Scottish Widows | David Russell | Senior Manager Claims & Underwriting Strategy | 2 | underwriting |
 | Scottish Widows | Scott Innes | Senior Technical Underwriting Manager | 3 | underwriting |
 | Shepherds Friendly | Michael Jackson | Head of Underwriting | 1 | underwriting |
 | The Exeter | David Piggin | Underwriting Rules Developer | 2 | underwriting |
 | The Exeter | Ed Lyon | Head of Underwriting Operations | 2 | underwriting |
+| The Exeter | Lara Harkins | Underwriting Team Manager | 3 | underwriting |
 | UnderwriteMe | Helen Sutherland-Thomas | Lead Development Underwriter | 2 | partnership |
 | UnderwriteMe | James Hetherington | Manager, Development Underwriting | 2 | partnership |
+| UnderwriteMe | Pete Martin | Lead Development Underwriter (NA and UK&I) | 2 | partnership |
 | UnderwriteMe | Will Miller | VP, Head of Legal and Risk and DPO | 3 | technical-integration |
 
-#### WEAK (title top-up)
-| Person | Title | Group | Why borderline |
-|---|---|---|---|
-| Stuart McKellar | Data Protection Officer | Aviva | DPO title at multi-line Aviva with a paralegal background: likely a member of the data protection team, not the protection DPO, and the line is not shown. |
-| Robert Morrison | Chief Underwriting Officer | Aviva | Chief Underwriting Officer title would be P1 if protection, but the profile is empty, the line is not shown, and the other Aviva CUO titles in this batch are GI (Michael Korner, Jason Chambers' former SME role). |
-| Dan Tinson | Head of Protection Reinsurance | Aviva | Head of Protection Reinsurance owns the treaties whose reinsurers sign off evidence changes, but reinsurance management is not a tier in the card. |
-| Suzanne Lawson | Partnerships Manager - Group Innovation | Aviva | Second Partnerships Manager in Group Innovation, next to Harriet Granville-Jones and Paul Welsh (both PASS), with a corporate affairs and UK Life business management background: add only if Vadim wants depth in that team. |
-| Adrian Nye | Health & Protection Procurement and Outsourcing Director | Aviva | Health and Protection procurement and outsourcing director who would hold the evidence-supplier contracts, but procurement is outside the card's functions and his headline places him at Aviva Health (PMI). |
-| Debbie Elms | Head of Underwriting & Claims | British Friendly | Head of Underwriting and Claims, but Alex Yates also holds Head of Underwriting at British Friendly and her career is claims-led, so one title is probably stale. |
-| Scott Greenhill | Head of Underwriting | LV= | Head of Underwriting would be P1, but the profile is empty and the LV= name also covers the GI business now owned by Allianz, so the line is not shown. |
-| Adam Davison | Head of Distribution Quality - Protection | LV= | Head of Distribution Quality for Protection owns the quality of adviser-submitted business, which touches disclosure, but the role is adviser-facing and outside the card's tiers. |
-| Matthew Wilton | Underwriting Development | Legal & General | London underwriting development role with a life-assurance contract background, but L&G's London underwriting development head (Paul Murchan) runs Retail Retirement, so this may be annuities. |
-| Richard Whaley | Development Underwriter | Legal & General | Cardiff development underwriter, likely in John Redmond's development team (PASS), with an enhanced-annuity past: the line is not certain and the team is already covered. |
-| Jenni Phillips | Development Underwriter | Legal & General | Cardiff development underwriter, likely in John Redmond's development team (PASS): add only if Vadim wants a second voice from that team. |
-| Ann Nuttall | Underwriting Development Specialist | Legal & General | Underwriting Development Specialist with an empty profile at multi-line L&G: P2 if protection, but neither the line nor the person can be confirmed. |
-| Malcolm Cooper | Director, Pricing and Underwriting | Legal & General | Director, Pricing and Underwriting would be P1, but his headline reads "Old, happy - not looking for work" and the same title is also listed as a past role, so he may have retired. |
-| Donna Cowell | Head of Reinsurance, Protection | Legal & General | Head of Reinsurance for Protection and former Head of Pricing at Swiss Re iptiQ EMEA: close to pricing and to the reinsurers who approve evidence changes, but reinsurance management is not a tier in the card. |
-| Justin Choi | Group Head, Digital Channels & Innovation | Legal & General | Group Head of Digital Channels and Innovation fits the card's group-wide innovation lead (P3 referral), but his profile reads as brand, content and channels. |
-| Alan Dott | Director of Underwriting | Pacific Life Re | Director of Underwriting would be P1, but the profile is empty and Pacific Life Re already has two underwriting leads PASS in this batch. |
-| Warren Copp | Chief Underwriter | Pacific Life Re | Chief Underwriter would be P1, but the profile is empty, so the person and the current role cannot be confirmed. |
-| Paul Reddick | Head of Medical Underwriting & Claims | Pacific Life Re | Head of Medical Underwriting and Claims would be P1 or P2, but the profile is empty and cannot be confirmed. |
-| Daragh Brady | Head of Risk, Global Protection & Capital Solutions | Pacific Life Re | Head of Risk for Global Protection and Capital Solutions: the card gives everyone at a reinsurer the reinsurance lane, but it names the CRO line as not the buyer. |
-| James Sims | Underwriting Developer | Pacific Life Re | Underwriting Developer, the third developer at Pacific Life Re in this batch: add only for depth. |
-| Robert Arbuckle | Underwriting Rules Developer | Royal London | Underwriting Rules Developer (ex-Bright Grey, Scottish Provident), a fifth rules or philosophy person at Royal London in this batch: add only if Vadim wants depth in one team. |
-| Daniel Smith | Underwriting Philosophy Developer | Royal London | Underwriting Philosophy Developer, but his headline still says Development Underwriter at Aviva, so the current employer needs a check, and Royal London's rules team is already covered. |
-| Jane Lyle | Development Underwriter | Royal London | Development Underwriter (ex-Scottish Widows, L&G) in a Royal London rules and development team already covered by four PASS: add only for depth. |
-| Robert Morrison | Head of Underwriting and Claims | Royal London | Head of Underwriting and Claims would be P1, but the profile is empty and the same name has an empty Aviva CUO record in this batch, so identity needs a check. |
-| Seb Bowden | Rules & Development Underwriter | Royal London | Rules and Development Underwriter, ex-L&G development underwriter and medical underwriting trainer, in a Royal London rules team already covered by four PASS: add only for depth. |
-| Paul Young | Development Underwriter | Scottish Widows | Development Underwriter in a Scottish Widows development team already covered by three PASS managers: add only for depth. |
-| Tom Green | Development Underwriter | Scottish Widows | Development Underwriter and former medical underwriting manager in a Scottish Widows development team already covered by three PASS managers: add only for depth. |
-| Frances Heggie | Senior Underwriting Strategy Manager | Scottish Widows | Senior Underwriting Strategy Manager would be P2, but the profile is empty and David Russell (PASS) already covers underwriting strategy. |
-| Val Brookes | Claims and Underwriting Manager | Shepherds Friendly | Claims and Underwriting Manager with an empty profile and a claims-first title, at a society whose head of underwriting is already PASS. |
-| Pete Martin | Lead Development Underwriter (NA and UK&I) | UnderwriteMe | Lead Development Underwriter for North America and UK&I, the third development underwriting lead at UnderwriteMe in this batch: add only for depth. |
+#### WEAK
+| Person | Title | Group | Angle | Why borderline |
+|---|---|---|---|---|
+| Stuart McKellar | Data Protection Officer | Aviva | technical-integration | Holds a data protection officer title after a paralegal role, which reads as one of several data protection staff at Aviva; whether he covers protection is not shown. |
+| Robert Morrison | Chief Underwriting Officer | Aviva | underwriting | The CUO title would be P1 for protection, yet Apollo has no history for him and both other Aviva CUO titles in this batch sit in general insurance. |
+| Dan Tinson | Head of Protection Reinsurance | Aviva | proposition | Manages protection reinsurance, so the treaty partners who must accept any evidence change deal with him, though the card gives reinsurance management no tier. |
+| Simon Lloyd | Senior Technical Underwriting Manager | Aviva | underwriting | Senior technical underwriting manager in London; Aviva's head of technical underwriting comes from GI exposure management, but Scottish Widows and L&G use the same title in protection, so his line is open. |
+| Tom Craven | Pricing Technician-Protection | Aviva | proposition | Junior pricing technician inside protection after bulk-annuity quotation work: the function has a lane, but he sits well below the pricing heads the card tiers. |
+| David C | Head of Risk Business Partnering - Aviva Plc - UK Life, Health, Protection and Workplace… | Aviva | referral | Risk business partnering head whose remit names UK Life, Health and Protection, so protection is in scope, but risk owns no evidence decision and Apollo truncates his surname. |
+| Mike Konstant | Underwriting Effectiveness Manager | Aviva | underwriting | Nothing in Apollo beyond the title; Jamie Lye, who heads underwriting effectiveness, comes from GI, so this is probably GI, though his own record does not prove it. |
+| Kelly Mhasal | Interim Head of Governance & Assurance - Protection | Aviva | referral | Interim head of protection governance and assurance, so she sits inside protection and near post-issue audit findings, but governance is not a buying role and the post is interim. |
+| Penny Jemison | Underwriting Quality Assurance Manager | Aviva | underwriting | Underwriting quality at Aviva shows up in this batch only inside the GI chief underwriting office (Grahame Clarke), and Apollo has no history for her, so protection is possible but unshown. |
+| Adrian Nye | Health & Protection Procurement and Outsourcing Director | Aviva | referral | Runs procurement and outsourcing for Health and Protection and would hold the nurse-screening and GP-report contracts, but buying evidence is not owning it, and his headline puts him on the Aviva Health (PMI) side. |
+| Debbie Elms | Head of Underwriting & Claims | British Friendly | underwriting | Head of Underwriting and Claims, but Alex Yates also holds Head of Underwriting at British Friendly and her career is claims-led, so one title is probably stale. |
+| Scott Greenhill | Head of Underwriting | LV= | underwriting | Head of Underwriting would be P1, but Apollo has no history and LV= branding still covers the GI business Allianz owns, so line and person are unconfirmed. |
+| Stephanie Richards | Head of Marketing (Protection) | LV= | referral | Heads protection marketing after marketing roles at Iress, an adviser software firm; inside protection, but marketing does not own underwriting evidence. |
+| Adam Davison | Head of Distribution Quality - Protection | LV= | proposition | Owns the quality of business advisers submit for protection, which touches disclosure accuracy, but the job is adviser-facing and has no tier. |
+| Matthew Wilton | Underwriting Development | Legal & General | underwriting | Works in underwriting development in London after contract life-assurance work, but L&G's London underwriting development head runs Retail Retirement, so he may be on annuities. |
+| Richard Whaley | Development Underwriter | Legal & General | underwriting | His L&G record includes enhanced annuity underwriting, so this Cardiff development role could be on the retirement side, although his latest earlier role, senior medical underwriter, points to protection. |
+| Ann Nuttall | Underwriting Development Specialist | Legal & General | underwriting | Underwriting development specialist with nothing else in Apollo, and L&G runs underwriting development in Retail Retirement as well as protection, so neither line nor person is confirmed. |
+| Malcolm Cooper | Director, Pricing and Underwriting | Legal & General | proposition | His pricing-and-underwriting directorship would be P1, but the headline "Old, happy - not looking for work" and the same title among his past roles suggest he has retired. |
+| John Graves | Head of Product Technical & Oversight | Legal & General | proposition | Heads product technical and oversight, a head-of-product post the card ranks P3, but his background is pensions product and the line he oversees now is not shown. |
+| Jonathan Saggers | Head of Product and Commerical Risk | Legal & General | referral | Head of product and commercial risk with an HSBC insurance distribution past; the line is not shown and risk does not own evidence, though protection product could be in his remit. |
+| Donna Cowell | Head of Reinsurance, Protection | Legal & General | proposition | Ex-head of pricing at Swiss Re iptiQ EMEA now running protection reinsurance, which puts her between pricing and the reinsurers who approve evidence changes; the card has no tier for that seat. |
+| Sarah Holifield | Customer Underwriting Team Manager | Legal & General | underwriting | Customer underwriting team manager in Wales with no history in Apollo, so the person and the current role are unconfirmed. |
+| Lindsey Samuel | Technical Underwriting Team Manager | Legal & General | underwriting | Apollo gives only a title, technical underwriting team manager, and a Cardiff location near L&G's protection development and medical underwriting teams; the person is unconfirmed. |
+| Justin Choi | Group Head, Digital Channels & Innovation | Legal & General | referral | Holds the group digital channels and innovation post the card ranks P3 referral, yet his career is brand, content and channels at Rolls-Royce and elsewhere. |
+| Alan Dott | Director of Underwriting | Pacific Life Re | reinsurance | No history at all in Apollo behind a director of underwriting title, so the person needs confirming before a P1 send. |
+| Warren Copp | Chief Underwriter | Pacific Life Re | reinsurance | Chief Underwriter per Apollo, but with an empty record nothing confirms the person or that the title is current. |
+| Paul Reddick | Head of Medical Underwriting & Claims | Pacific Life Re | reinsurance | Medical underwriting and claims head per Apollo; the blank profile leaves identity and tenure unverified. |
+| Daragh Brady | Head of Risk, Global Protection & Capital Solutions | Pacific Life Re | reinsurance | Moved from finance and strategy to head of risk for global protection and capital solutions; the reinsurance lane covers him, but the card calls the CRO line not the buyer. |
+| Daniel Smith | Underwriting Philosophy Developer | Royal London | underwriting | Apollo lists him as Royal London's underwriting philosophy developer, but his headline still names Aviva as his employer, so the current company needs checking. |
+| Vikki Larkin | Protection Pricing Actuary | Royal London | proposition | Protection pricing actuary, a function with a proposition lane, but below the pricing-head tier and with no history in Apollo. |
+| Robert Morrison | Head of Underwriting and Claims | Royal London | underwriting | Head of underwriting and claims would be P1, yet his Apollo record is blank and the same name carries a blank Aviva CUO record, so identity must be checked first. |
+| Richard Basham-Jones | Customer Service Director - Pensions Protection & Customer Relations | Royal London | referral | Customer service director whose remit covers pensions and protection, so he is partly inside protection, but service does not own evidence and pensions leads his title. |
+| Frances Heggie | Senior Underwriting Strategy Manager | Scottish Widows | underwriting | Senior underwriting strategy manager would be P2, but there is no history in Apollo to confirm the person or the protection line. |
+| Val Brookes | Claims and Underwriting Manager | Shepherds Friendly | underwriting | Claims and underwriting manager whose title puts claims first and whose Apollo record is empty, so the role cannot be confirmed. |
 
-#### FAIL (title top-up), by the validator's reason
+Fiona Wynn (Apollo) = Fi Wynn (Sales Nav), renamed slug: the Apollo row is FAIL as a duplicate and does not appear above.
 
-retired per headline 3 · gi business development underwriter 2 · underwriting ops team manager 2 · gi underwriting innovation, ex-nig commercial 1 · gi property technical underwriting 1 · gi head of underwriting, ex-azur 1 · intranet digital workplace, no line 1 · gi commercial development underwriter 1 · gi development underwriter, perth 1 · gi development underwriter, ex-mga 1 · gi sme underwriting transformation 1 · associate-level digital transformation 1 · gi underwriting effectiveness, ex-norwich union insurance 1 · gi construction trading underwriter 1 · gi head of product 1 · cio operational risk director 1 · innovation manager, no line shown 1 · gi technical underwriting team 1 · gi international commercial underwriting 1 · gi accident and health 1 · actuarial innovation manager, no line 1 · pricing technician, below head 1 · gi technical underwriting, ex-exposure management 1 · risk business partnering (cro line) 1 · gi underwriting effectiveness, empty profile 1 · gi underwriting governance 1 · gi underwriting analytics, perth 1 · protection distribution, adviser-facing 1 · protection governance and assurance 1 · protection distribution director 1 · automation manager, no line, empty 1 · gi underwriting quality, empty profile 1 · gi partnership operations secondment 1 · gi retail cuo, motor background 1 · gi chief underwriting office quality 1 · retail retirement underwriting development 1 · data engineer below cto 1 · m365 it specialist 1 · customer underwriting team manager 1 · product governance, pensions background 1 · product and commercial risk 1 · data science manager, not cto 1 · ops team manager, empty profile 1 · adviser-facing distribution manager 1 · team manager, empty profile 1 · medical underwriting team manager 1 · pricing actuary below head, empty 1 · automation manager, no line shown 1 · customer service director, pensions-led 1 · equity release, out of line 1 · gi pet and travel 1 · protection marketing head 1 · protection sales director 1 · individual initial underwriter 1 · on a career break 1 · underwriting team manager 1 · left holloway per headline 1 · claims-led team manager 1
+**After QC (fix round):** team managers judged on business line only (5 FAIL → PASS P3, 2 → WEAK on empty profile); the "team already covered" argument dropped (8 WEAK → PASS P2); protection governance / marketing and 6 more protection-side functions FAIL → WEAK; 3 Aviva underwriting titles whose GI line was only inferred FAIL → WEAK. Inference to know: L&G's "customer underwriting" desk is read as the protection tele-underwriting team (Kemp, Wallace, McRae, Greatbanks); no row says "protection" on its own.
+
+#### Pools left out (seniors first)
+| Pool | People | Who | Angle | What would have to change |
+|---|---|---|---|---|
+| Protection distribution and sales | 4 | Mike Farrell (Director of Protection Sales, LV=), Daren Boys (Protection Portfolio Distribution Director, Aviva), Charlotte Dipfa (Head of Strategic Accounts, Protection Distribution, Aviva), Tony Silvester (L&G) | referral | lift the adviser-facing distribution exclusion for directors |
+| Innovation / transformation, no protection scope | 6 | David Fleming, Laura Nicol, Juliet Fenton, Andrew Fisher, Ankur Singh (Aviva), James Trehane (Royal London) | referral | take innovation staff who are neither group-wide leads nor in protection |
+| Group IT, data, CIO functions | 5 | David Debnam (Operational Risk & Innovation Director, Aviva), Luke Mepham (Aviva), Nikitas Mahmudi, Kalpesh Mistry, Jayant Maroo (L&G) | technical-integration | extend the lane below CTO and architecture |
+| Claims | 1 | Natalie James (Holloway) | underwriting | Open question 4 |
+| Not offered | 28 | GI 20 (19 Aviva incl. Michael Korner, CUO Aviva Retail; 1 LV= pet/travel), retirement / equity release 2, left or retired 5, individual underwriter 1 | none | — |
+
+#### Data notes from the validator
+Two blank Robert Morrison records; three blank senior titles at Pacific Life Re; two Heads of Underwriting at British Friendly; Daniel Smith's headline still names Aviva; some departures show in headlines while Apollo lists the role as current.
 
 ## Batch: Apollo gap top-up (135)
 
-**Counts:** PASS 54 (P1 13 · P2 24 · P3 17) · WEAK 37 · FAIL 44 · registry 0.
+**Counts:** PASS 52 (P1 12 · P2 24 · P3 16) · WEAK 39 · FAIL 44 · registry 0.
 
 | Group | n | P1 | P2 | P3 | WEAK | FAIL |
 |---|---|---|---|---|---|---|
 | Zurich UK | 46 | 1 | 3 | 4 | 15 | 23 |
 | VitalityLife | 30 | 0 | 5 | 3 | 14 | 8 |
-| Swiss Re UK | 15 | 3 | 5 | 2 | 1 | 4 |
+| Swiss Re UK | 15 | 2 | 5 | 1 | 3 | 4 |
 | Munich Re UK Life Branch | 13 | 3 | 2 | 1 | 3 | 4 |
 | SCOR UK | 9 | 1 | 3 | 1 | 1 | 3 |
 | RGA UK | 7 | 2 | 3 | 1 | 0 | 1 |
@@ -172,13 +224,120 @@ retired per headline 3 · gi business development underwriter 2 · underwriting 
 | Gen Re UK | 2 | 1 | 0 | 0 | 0 | 1 |
 | Iress UK | 1 | 0 | 0 | 0 | 1 | 0 |
 
-**P1 sample:** Sabrina Lane (Zurich Chief Underwriter), Nick Rice (Guardian Head of UW & Claims), Natalie Kelly / Claire Nolan / Deborah Smith CMO (Swiss Re), Madhu Sridharan CUO / Matt Bone / Adrian Stevenson (Munich Re), Tim Smith (Hannover Re), Lynn Baillie (Gen Re CUO), Mike Evans / Anna Graham (RGA), Helen Croft (SCOR).
+#### Proposed to SEND
+| Group | Person | Title | P | Angle |
+|---|---|---|---|---|
+| Gen Re UK | Lynn Baillie | Chief Underwriting Officer | 1 | reinsurance |
+| Guardian Financial Services | Nick Rice | Head of Underwriting and Claims | 1 | underwriting |
+| Guardian Financial Services | Andrew Newton | Development Underwriting Manager | 2 | underwriting |
+| Guardian Financial Services | Richard Stadon | Strategic Underwriting Manager | 2 | underwriting |
+| Guardian Financial Services | Caroline Froude | Head of Technical Underwriting | 2 | underwriting |
+| Guardian Financial Services | Jane Tarbuck | Operational Underwriting Team Manager | 3 | underwriting |
+| Hannover Re UK Life Branch | Tim Smith | Head of Protection | 1 | reinsurance |
+| Hannover Re UK Life Branch | Andrea Gregory | Underwriting and Claims Manager | 3 | reinsurance |
+| Munich Re UK Life Branch | Adrian Stevenson | Head of Protection | 1 | reinsurance |
+| Munich Re UK Life Branch | Matt Bone | Head of Underwriting & Claims | 1 | reinsurance |
+| Munich Re UK Life Branch | Madhu Sridharan | CUO | 1 | reinsurance |
+| Munich Re UK Life Branch | Lloyd Williams | Underwriting Development Manager | 2 | reinsurance |
+| Munich Re UK Life Branch | Jonathan Carnell | Consultant Medical Officer | 2 | medical |
+| Munich Re UK Life Branch | James Norton | Underwriting & Claims Operations Manager | 3 | reinsurance |
+| RGA UK | Mike Evans | Chief Underwriter - Protection | 1 | reinsurance |
+| RGA UK | Anna Graham | Head of Protection, UK and Ireland | 1 | reinsurance |
+| RGA UK | Anna Currie | Underwriting Research and Development Manager | 2 | reinsurance |
+| RGA UK | Emma Jones | Head of Global Underwriting Philosophy Delivery | 2 | reinsurance |
+| RGA UK | Rebecca Abayakoon | Head of Global Underwriting Philosophy Design at Reinsurance Group of America, Incorporat… | 2 | reinsurance |
+| RGA UK | Dean Scotson | DPO (emea) | 3 | technical-integration |
+| SCOR UK | Helen Croft | Head of Life & Health Underwriting & Claims UK & Ireland | 1 | reinsurance |
+| SCOR UK | Hannah Cook | Head of Protection Business Development | 2 | reinsurance |
+| SCOR UK | Gill Salton | Underwriting & Claims Development Manager | 2 | reinsurance |
+| SCOR UK | Ricky D'Gama | Head of Modelling & Innovation | 2 | reinsurance |
+| SCOR UK | Anil Girdhari | Senior Underwriting Manager Life & Health | 3 | reinsurance |
+| Swiss Re UK | Claire Nolan | Head of Claims & Underwriting | 1 | reinsurance |
+| Swiss Re UK | Natalie Kelly | Head L&H Underwriting, Claims and R&D | 1 | reinsurance |
+| Swiss Re UK | Denise Bates | Head of Income Protection Pricing UKI | 2 | reinsurance |
+| Swiss Re UK | Alana Paterson-Barker | Head of Pricing, Life & Health, UK&I | 2 | reinsurance |
+| Swiss Re UK | Vicki Livingstone | Underwriting Proposition Manager | 2 | reinsurance |
+| Swiss Re UK | Andrew Graham | Underwriting Solution Manager | 2 | reinsurance |
+| Swiss Re UK | Tim Knaust | L&H Underwriting & Claims Propositions Manager for UK & Ireland | 2 | reinsurance |
+| Swiss Re UK | Dave Evans | Data Protection Officer | 3 | technical-integration |
+| VitalityLife | Nicky Roux | Underwriting Research and Development Manager | 2 | underwriting |
+| VitalityLife | Andrew Smith | Underwriting Philosophy and Automation Manager | 2 | underwriting |
+| VitalityLife | Lorna Miller | Strategic Underwriting Manager | 2 | underwriting |
+| VitalityLife | Kathryn Conniff | Life Underwriting Service Director | 2 | underwriting |
+| VitalityLife | James Ayland | Director of Data Science - Life Pricing and Underwriting | 2 | underwriting |
+| VitalityLife | Fareeha Brownless | Head of Product (Life) | 3 | proposition |
+| VitalityLife | Catherine Bowen-Walker | Head of Data Protection and UK DPO | 3 | technical-integration |
+| VitalityLife | Simon Evans | Chief Product & Delivery Officer UK - Vitality | 3 | proposition |
+| Zurich UK | Sabrina Lane | Chief Underwriter | 1 | underwriting |
+| Zurich UK | Adrian Hill | Life Development Underwriter | 2 | underwriting |
+| Zurich UK | Ryan Parsons | Senior Development Underwriter | 2 | underwriting |
+| Zurich UK | Scott Reid | Head of Propositions & Pricing, Digital Protection Hub | 2 | proposition |
+| Zurich UK | Rebecca McGeoch | UK Data Protection Officer | 3 | technical-integration |
+| Zurich UK | Steve Smith | Global Senior Underwriting Manager | 3 | underwriting |
+| Zurich UK | Fraser Ballantine | Underwriting Quality & Risk Manager | 3 | underwriting |
+| Zurich UK | Gareth Jenkins | Head of Life Product and Inforce | 3 | proposition |
+| iPipeline UK | Danny Essam | Head of Product | 3 | partnership |
+| iPipeline UK | Kaj Makaswaran | Underwriting Services Manager | 3 | partnership |
+| iPipeline UK | Helena Mbcs | Director Data Protection | 3 | technical-integration |
 
-**Validator's questions:** (1) 6 Vitality heads of product, line not shown: all P3 or none? (2) 2 Vitality Directors of Pricing and Underwriting (Marszalek, Yarham): both P1? (3) Zurich Underwriting Managers with empty profiles (Penny, Paxford): drop?
+#### WEAK
+| Person | Title | Group | Angle | Why borderline |
+|---|---|---|---|---|
+| David Brownlow | Global Head of Life & Health Data Operations & Solutions | Hannover Re UK Life Branch | reinsurance | Global Head of L&H Data Operations and Solutions, ex CFO of the UK Life Branch: data and solutions could host an evaluation, but the lineage is finance. |
+| Stuart Crichton | Underwriting & Claims Manager / Senior Underwriter | Hannover Re UK Life Branch | reinsurance | UK-based (Edinburgh), but his headline is Head of Life Underwriting and Claims for Ireland, which is not katerina's market. |
+| Gideon Cheok | Head of Product Design (UK & RSA) | Iress UK | partnership | Head of Product Design (UX) across Iress UK and South Africa: design rather than product ownership, protection scope not shown. |
+| Louis Pereira | Underwriting Manager | Munich Re UK Life Branch | reinsurance | Underwriting Manager with an empty profile; this group also returned Great Lakes UK (P&C), so life is not confirmed. |
+| Armin Fox | Underwriting Manager | Munich Re UK Life Branch | reinsurance | Underwriting Manager, ex SVP and head of section at Munich Re; life or P&C not shown. |
+| Rose Duffy | Interim Head of Underwriting Operations | Munich Re UK Life Branch | reinsurance | Interim Head of Underwriting Operations (headline: senior underwriting analyst); an operations role, life or P&C not shown. |
+| Emma Denby | Underwriting Innovation & Data Strategy Manager | SCOR UK | reinsurance | Underwriting Innovation and Data Strategy Manager is a P2 title, but her headline is actuarial analyst and SCOR UK also runs P&C; life not shown. |
+| Simon Jenner | CTO & CSO (Chief Technology & Security Officer) | Swiss Re UK | technical-integration | Chief Technology and Security Officer title, but Swiss Re's group technology chief is Pravina Ladva and his scope here is unclear (ex National Grid CISO). |
+| Deborah Smith | Chief Medical Officer | Swiss Re UK | medical | Chief Medical Officer title at Swiss Re UK, but the only earlier roles are trainee-grade NHS posts (CT2 neurology, acute medicine specialty doctor); P1 needs the role confirmed before she goes out. |
+| Pravina Ladva | Group Chief Digital and Technology Officer | Swiss Re UK | technical-integration | Swiss Re Group Chief Digital and Technology Officer, a parent-level executive; decision 2 sends only the UK team from katerina and leaves the Swiss Re parent open for Olena, so held for Vadim. |
+| Louise Cowan | Head of Product - Innovation | VitalityLife | proposition | Head of Product (Innovation) at Vitality UK with a CRM product background; life or health side not shown. |
+| Dave Roberts | Underwriting Manager | VitalityLife | underwriting | Underwriting Manager (P3) at Vitality, ex senior underwriter at Aviva; Vitality UK also underwrites health, and life is not confirmed. |
+| Nick Telfer | Head of Protection Specialists | VitalityLife | proposition | Title is Head of Protection Specialists (an adviser-facing team), but his headline says Head of Protection Development and his background is protection product. |
+| Neil Hartigan | Head of Underwriting & Claims Quality | VitalityLife | underwriting | Head of Underwriting and Claims Quality fits the post-issue audit KPI, but the profile is empty and life or health is not shown. |
+| Szymon Marszalek | Director of Pricing and Underwriting | VitalityLife | underwriting | Director of Pricing and Underwriting is a P1 title, but Vitality UK has two such directors and life or health is not shown; James Ayland's title confirms a separate Life Pricing and Underwriting function. |
+| Paul Yarham | Director of Pricing and Underwriting | VitalityLife | underwriting | Director of Pricing and Underwriting, P1 if life; his commercial and market pricing background reads like the health side. |
+| Sharon Powell | Head of Product | VitalityLife | proposition | Head of Product at Vitality UK (ex digital product manager there); life or health side not shown. |
+| Gareth Alan-Williams | Head of Product | VitalityLife | proposition | Head of Product at Vitality UK (ex portfolio management and VitalityCar change); life or health side not shown. |
+| Becca Cooke | Head of Product | VitalityLife | proposition | Head of Product at Vitality UK with a customer-acquisition platform background; life or health side not shown. |
+| Chris Puzey | Portfolio Underwriting Manager | VitalityLife | underwriting | Portfolio Underwriting Manager with an Aviva pricing background; portfolio underwriting is a corporate-health or GI term, life not shown. |
+| Hannah Leech | Senior Underwriting Manager | VitalityLife | underwriting | Senior Underwriting Manager (P3), but her background is customer service at Vitality and PruHealth; life or health not shown. |
+| Harpreet Sarna | Chief Medical Officer | VitalityLife | medical | Chief Medical Officer is a P1 title, but no earlier role is medical (charity trustee, WBS ambassador); check it is not Chief Marketing Officer. |
+| Rachel Loudain | Head of Product Management | VitalityLife | proposition | Head of Product Management with an ASOS customer-experience background; life or health side not shown. |
+| Stuart Jackson | Head of Product Management - Adviser, Employer & Servicing | VitalityLife | proposition | Head of Product for the adviser, employer and servicing platforms: the adviser portal carries life applications, but employer is health and servicing is post-sale. |
+| Grace Flowers | Chief Underwriting Officer | Zurich UK | underwriting | CUO is a P1 title, but her earlier role was Head of Retail UW at Zurich Insurance plc (the GI carrier) and Zurich protection uses the Chief Underwriter title (Sabrina Lane), so she is probably the GI CUO. |
+| Mike Lytheer | Data Protection Officer | Zurich UK | technical-integration | Data Protection Officer title, but his earlier role (senior operations assistant) points to a team-level role; Rebecca McGeoch is the UK DPO. |
+| Louise Colley | Protection Director | Zurich UK | proposition | Protection Director is a P1 title, but the profile is empty: no role history to confirm she holds it now. |
+| Shaun Beale | Claims & Underwriting Development | Zurich UK | underwriting | Claims and Underwriting Development in Swindon (Zurich's life office) fits P2, but the profile is empty and half the title is claims. |
+| Sally Watford | Head of Underwriting Operations | Zurich UK | underwriting | Head of Underwriting Operations; the line is not shown and her reinsurance-services background reads GI. |
+| Andy Penny | Underwriting Manager | Zurich UK | underwriting | Underwriting Manager (P3) with an empty profile: life or GI cannot be told, and most Zurich UK underwriting managers here are GI. |
+| Mark Paxford | Underwriting Manager | Zurich UK | underwriting | Underwriting Manager (P3) with an empty profile; lives near Zurich's Swindon life office, but the line is not shown. |
+| Emma Coleman | Life Development Underwriter | Zurich UK | underwriting | Life Development Underwriter in Swindon is a P2 fit, but the profile is empty and there is no second confirmation. |
+| Paul Barker | Innovation Manager | Zurich UK | referral | Innovation Manager with an IT business-systems background; no protection scope shown, so P3 group-wide at best (referral lane). |
+| Charlotte Hayes | Medical Underwriting Manager | Zurich UK | underwriting | Medical Underwriting Manager in Swindon, but her background is group risk underwriting (an anti-case); individual protection is not confirmed. |
+| Pete Sanderson | Head of Operations - Retail Protection | Zurich UK | referral | Head of Operations for Retail Protection (ex Head of Automation and Robotics) runs protection new-business processing; operations is not a named function, so referral only if Vadim adds it. |
+| John Lavender | Underwriting Business Manager | Zurich UK | underwriting | Underwriting Business Manager whose background is mortgage and protection advice, hinting at the life side; an operations role and the line is not confirmed. |
+| Chloe Eggleton | Innovation Lead / Senior Project Manager | Zurich UK | referral | Innovation Lead combined with Senior Project Manager, procurement IT background; no protection scope shown. |
+| Simon Guest | Head of Customer Solutions & Partnerships, Global Life Protection | Zurich UK | referral | Senior in Global Life Protection, but customer solutions and partnerships is distribution-facing and global; referral at most. |
+| Kylie Maxam | Operational Transformation Underwriter Zurich | Zurich UK | underwriting | Operational Transformation Underwriter in Swindon, ex Guardian medical underwriter: life side and change work, but an individual underwriter title without development or rules. |
 
-**Data:** identity collisions missed by flags (Apollo rows have no other-company-page): Nichola H (artist), Alwyn Roberts (Wynn Resorts) → FAIL. VitalityLife page mixes VitalityHealth. Munich Re includes Great Lakes (P&C), Gen Re includes Faraday (P&C). Zurich: both CUOs are GI; protection lead titled Chief Underwriter. CMO checks: Deborah Smith (Swiss Re, P1) thin history; Harpreet Sarna (Vitality, WEAK) no medical history.
+#### Pools left out (seniors first)
+| Pool | People | Who | Angle | What would have to change |
+|---|---|---|---|---|
+| GI / P&C underwriting leaders at multi-line groups | 8 | Sam Thomas (Zurich, interim CUO), Grant Thompson (Zurich, Head of UW), Scott Bailey (Zurich, Global CUO A&H), Tony Ayles (Great Lakes UK CUO), Marie Biggas (SCOR CUO), Paula Wolfenson, Lawrence Harper, Louise Martin | none | out of line: build is not rated in GI, a different campaign |
+| L&H seniors at reinsurers outside underwriting | 5 | Andy Parkinson (Swiss Re, Head of L&H Claims EMEA), Paul Bevan (RGA, Annuities Chief UW & Head of Protection Claims), Colin Bannister (Swiss Re, L&H Valuation), Dean Galligan (Swiss Re, L&H Transactions), Doug Scott (Munich Re, Block Risk Transfer) | referral | Open question 4 (claims) = yes; valuation/capital as referral only |
+| Vitality product marketing | 2 | Prema Sohun (Head of Product Marketing, VitalityLife), Sarah Squelch | referral | product marketing as a referral function |
+| Vitality adviser-facing protection | 2 | Gary King (Head of Protection Specialists), Fergus Bescoby | referral | lift the adviser-facing exclusion for heads of specialist teams |
+| Vitality claims / health product | 3 | Charles Nolan (claims & ops product), Jessica Jones, Jonathan Hubbard (PMI) | referral (Nolan only) | Nolan: Open question 4; the other two are VitalityHealth (anti-case) |
+| Not offered | 24 | GI underwriters and managers 15, retired / identity collisions 4 (Nicky Bray, Graham Johnston, Nichola H, Alwyn Roberts), junior/admin 4, Zurich retirement 1 | none | — |
 
-Pools: GI/P&C leaders 8 (none) · reinsurer L&H seniors outside UW 5 (referral, needs claims=yes) · Vitality product marketing 2 · Vitality adviser-facing 2 · Vitality claims/health 3 · Zurich retirement 1 · GI ICs 15 · left/collisions 4 · junior 4.
+#### Data notes from the validator
+- Apollo rows carry no `other-company-page` flag: two collisions caught by headline (Nichola H, artist; Alwyn Roberts, Wynn Resorts).
+- VitalityLife's page mixes VitalityHealth; Munich Re includes Great Lakes (P&C); Gen Re includes Faraday (P&C). Lynn Baillie passed as the L&H CUO on her Gen Re career: inference, nothing in the row says L&H.
+- Zurich: both CUOs (Grace Flowers, Sam Thomas) have GI histories; the protection lead is titled Chief Underwriter (Sabrina Lane). "Development Underwriter" at Zurich is mostly the GI broker-sales role.
+- Validator's questions: the 6 Vitality heads of product with no line shown (all P3 or none?); the 2 Vitality Directors of Pricing and Underwriting (both P1?); Zurich underwriting managers with empty profiles (drop?).
 
 ## Batch: Royal London, LV=, Pacific Life Re, Scottish Widows, The Exeter, mutuals, UnderwriteMe (259)
 
@@ -384,4 +543,4 @@ Not proposed: GI 104, wealth/pensions 27, distribution ~12, governance/HR/financ
 
 ## Skipped pools (script)
 
-`skipped-detail.md`: 1135 not sent. Pools with a proposed angle are in each batch section above; add by name with `outbound_pack.py promote --names "…" --angle … --pool …`.
+`skipped-detail.md`: 1123 not sent. Pools with a proposed angle are in each batch section above; add by name with `outbound_pack.py promote --names "…" --angle … --pool …`.

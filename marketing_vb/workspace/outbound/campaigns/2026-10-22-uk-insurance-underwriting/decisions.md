@@ -1005,8 +1005,8 @@ andrew-squires-2a84a6348 | FAIL | | | | corporate actuarial, reinsurer
 robin-crouch-b3033836b | FAIL | | | | duplicate profile, change head
 curtis-elphick-2b3168441 | FAIL | | | | head chef
 vik-escandell-a77808415 | FAIL | | | | operations head, empty profile
-grace-flowers-6b23712a | WEAK | | | 1 | CUO is a P1 title, but her earlier role was Head of Retail UW at Zurich Insurance plc (the GI carrier) and Zurich protection uses the Chief Underwriter title (Sabrina Lane), so she is probably the GI CUO.
-mike-lytheer-b552741a | WEAK | | | 1 | Data Protection Officer title, but his earlier role (senior operations assistant) points to a team-level role; Rebecca McGeoch is the UK DPO.
+grace-flowers-6b23712a | WEAK | | underwriting | 1 | CUO is a P1 title, but her earlier role was Head of Retail UW at Zurich Insurance plc (the GI carrier) and Zurich protection uses the Chief Underwriter title (Sabrina Lane), so she is probably the GI CUO.
+mike-lytheer-b552741a | WEAK | | technical-integration | 1 | Data Protection Officer title, but his earlier role (senior operations assistant) points to a team-level role; Rebecca McGeoch is the UK DPO.
 nichola-h-8abb81b3 | FAIL | | | | identity mismatch: artist profile
 grant-thompson-5913b760 | FAIL | | | | GI head of underwriting
 iain-terry-b262068 | FAIL | | | | London Market GI underwriter
@@ -1014,69 +1014,69 @@ rebecca-mcgeoch-186807134 | PASS | 3 | technical-integration | 1 | UK Data Prote
 sam-thomas-98183a47 | FAIL | | | | GI CUO (mid-market lineage)
 sabrina-lane-406a0b65 | PASS | 1 | underwriting | 1 | Chief Underwriter (Zurich's protection title) who previously headed Underwriting Development: owns non-medical limits, evidence and the rules engine.
 nicky-bray-9b21b418 | FAIL | | | | retired per headline (left)
-louise-colley-4252243a | WEAK | | | 1 | Protection Director is a P1 title, but the profile is empty: no role history to confirm she holds it now.
-shaun-beale-18574224 | WEAK | | | 1 | Claims and Underwriting Development in Swindon (Zurich's life office) fits P2, but the profile is empty and half the title is claims.
-sally-watford-35a798310 | WEAK | | | 1 | Head of Underwriting Operations; the line is not shown and her reinsurance-services background reads GI.
+louise-colley-4252243a | WEAK | | proposition | 1 | Protection Director is a P1 title, but the profile is empty: no role history to confirm she holds it now.
+shaun-beale-18574224 | WEAK | | underwriting | 1 | Claims and Underwriting Development in Swindon (Zurich's life office) fits P2, but the profile is empty and half the title is claims.
+sally-watford-35a798310 | WEAK | | underwriting | 1 | Head of Underwriting Operations; the line is not shown and her reinsurance-services background reads GI.
 paul-green-fcii-31886280 | FAIL | | | | GI underwriting manager
-andy-penny-42859137 | WEAK | | | 1 | Underwriting Manager (P3) with an empty profile: life or GI cannot be told, and most Zurich UK underwriting managers here are GI.
+andy-penny-42859137 | WEAK | | underwriting | 1 | Underwriting Manager (P3) with an empty profile: life or GI cannot be told, and most Zurich UK underwriting managers here are GI.
 mike-green-a1a6162a | FAIL | | | | GI property underwriting manager
-mark-paxford-75267011b | WEAK | | | 1 | Underwriting Manager (P3) with an empty profile; lives near Zurich's Swindon life office, but the line is not shown.
+mark-paxford-75267011b | WEAK | | underwriting | 1 | Underwriting Manager (P3) with an empty profile; lives near Zurich's Swindon life office, but the line is not shown.
 joanne-andersen-81b894407 | FAIL | | | | underwriting training academy manager
 karen-feeney-78102293 | FAIL | | | | GI broker development underwriter
 adrianhhill | PASS | 2 | underwriting | 1 | Life Development Underwriter (ex Dentists' Provident, an income-protection insurer): the team that changes the protection rules engine.
 richard-wood-70a97480 | FAIL | | | | GI development underwriter
 joe-sharpe-90772134b | FAIL | | | | GI development underwriter
-emma-coleman-072400219 | WEAK | | | 1 | Life Development Underwriter in Swindon is a P2 fit, but the profile is empty and there is no second confirmation.
+emma-coleman-072400219 | WEAK | | underwriting | 1 | Life Development Underwriter in Swindon is a P2 fit, but the profile is empty and there is no second confirmation.
 ryan-parsons-15497b81 | PASS | 2 | underwriting | 1 | Senior Development Underwriter whose only prior insurer is The Exeter (income protection), which places him on the protection side where development underwriters change the rules.
 louise-martin-8b33b260 | FAIL | | | | GI broker propositions head
 scott-bailey-a68a727 | FAIL | | | | GI accident and health CUO
-paul-barker-376bb546 | WEAK | | | 1 | Innovation Manager with an IT business-systems background; no protection scope shown, so P3 group-wide at best (referral lane).
+paul-barker-376bb546 | WEAK | | referral | 1 | Innovation Manager with an IT business-systems background; no protection scope shown, so P3 group-wide at best (referral lane).
 harry-trust-17b72a201 | FAIL | | | | GI accident and health underwriter
 gosia-boys-b7399219 | FAIL | | | | GI portfolio underwriter
-charlotte-hayes-662785137 | WEAK | | | 1 | Medical Underwriting Manager in Swindon, but her background is group risk underwriting (an anti-case); individual protection is not confirmed.
+charlotte-hayes-662785137 | WEAK | | underwriting | 1 | Medical Underwriting Manager in Swindon, but her background is group risk underwriting (an anti-case); individual protection is not confirmed.
 scott-reid-950a3410 | PASS | 2 | proposition | 1 | Head of Propositions and Pricing for Zurich's Digital Protection Hub: decides where a step sits in the digital protection application.
 steve-smith-17111a95 | PASS | 3 | underwriting | 1 | Global underwriting manager who came up as a senior underwriting developer and life claims assessor: life-side rules owner.
 rodmckie | FAIL | | | | retirement and pensions product
 paula-wolfenson-a18331b | FAIL | | | | global GI underwriting governance
 laura-eade-57857914 | FAIL | | | | PMO in CTO office
-pete-sanderson | WEAK | | | 1 | Head of Operations for Retail Protection (ex Head of Automation and Robotics) runs protection new-business processing; operations is not a named function, so referral only if Vadim adds it.
+pete-sanderson | WEAK | | referral | 1 | Head of Operations for Retail Protection (ex Head of Automation and Robotics) runs protection new-business processing; operations is not a named function, so referral only if Vadim adds it.
 aza-row-cert-cii-8b6810a9 | FAIL | | | | GI underwriting business manager
-john-lavender-273243b5 | WEAK | | | 1 | Underwriting Business Manager whose background is mortgage and protection advice, hinting at the life side; an operations role and the line is not confirmed.
+john-lavender-273243b5 | WEAK | | underwriting | 1 | Underwriting Business Manager whose background is mortgage and protection advice, hinting at the life side; an operations role and the line is not confirmed.
 michelle-tyas-bbb58428 | FAIL | | | | GI underwriting performance manager
 elizabeth-wybrants-1ba944105 | FAIL | | | | GI commercial performance manager
 anna-daventry-0b3530260 | FAIL | | | | GI underwriting partnering manager
 fraser-ballantine-b4204527 | PASS | 3 | underwriting | 1 | Underwriting Quality and Risk Manager, ex Development Underwriter at AIG Life: owns post-issue audit findings, a campaign KPI.
-chloe-eggleton-llb-hons-041b3981 | WEAK | | | 1 | Innovation Lead combined with Senior Project Manager, procurement IT background; no protection scope shown.
+chloe-eggleton-llb-hons-041b3981 | WEAK | | referral | 1 | Innovation Lead combined with Senior Project Manager, procurement IT background; no protection scope shown.
 gareth-jenkins-26010578 | PASS | 3 | proposition | 1 | Head of Life Product and Inforce at Zurich UK Life: owns the protection product the application step would sit in.
-simonguest100 | WEAK | | | 1 | Senior in Global Life Protection, but customer solutions and partnerships is distribution-facing and global; referral at most.
+simonguest100 | WEAK | | referral | 1 | Senior in Global Life Protection, but customer solutions and partnerships is distribution-facing and global; referral at most.
 matt-sainsbury | FAIL | | | | GI corporate risk innovation
-kylie-maxam-954007218 | WEAK | | | 1 | Operational Transformation Underwriter in Swindon, ex Guardian medical underwriter: life side and change work, but an individual underwriter title without development or rules.
+kylie-maxam-954007218 | WEAK | | underwriting | 1 | Operational Transformation Underwriter in Swindon, ex Guardian medical underwriter: life side and change work, but an individual underwriter title without development or rules.
 nicky-le-roux-7b8b758 | PASS | 2 | underwriting | 1 | Underwriting R&D manager and Strategic Underwriting Technical Manager at VitalityLife: researches and sets the evidence rules.
 andrew-smith-51224b38 | PASS | 2 | underwriting | 1 | Owns underwriting philosophy and automation at VitalityLife (ex Head of Underwriting Development at Munich Re): decides what the rules engine asks for.
-louise-cowan-692b9b123 | WEAK | | | 1 | Head of Product (Innovation) at Vitality UK with a CRM product background; life or health side not shown.
-dave-roberts-421a6540 | WEAK | | | 1 | Underwriting Manager (P3) at Vitality, ex senior underwriter at Aviva; Vitality UK also underwrites health, and life is not confirmed.
-nick-telfer-191b2419 | WEAK | | | 1 | Title is Head of Protection Specialists (an adviser-facing team), but his headline says Head of Protection Development and his background is protection product.
+louise-cowan-692b9b123 | WEAK | | proposition | 1 | Head of Product (Innovation) at Vitality UK with a CRM product background; life or health side not shown.
+dave-roberts-421a6540 | WEAK | | underwriting | 1 | Underwriting Manager (P3) at Vitality, ex senior underwriter at Aviva; Vitality UK also underwrites health, and life is not confirmed.
+nick-telfer-191b2419 | WEAK | | proposition | 1 | Title is Head of Protection Specialists (an adviser-facing team), but his headline says Head of Protection Development and his background is protection product.
 gary-king-4063ab5b | FAIL | | | | adviser-facing protection specialists head
-neil-hartigan-3a939035b | WEAK | | | 1 | Head of Underwriting and Claims Quality fits the post-issue audit KPI, but the profile is empty and life or health is not shown.
-szymon-marszalek | WEAK | | | 1 | Director of Pricing and Underwriting is a P1 title, but Vitality UK has two such directors and life or health is not shown; James Ayland's title confirms a separate Life Pricing and Underwriting function.
-paul-yarham-945164a0 | WEAK | | | 1 | Director of Pricing and Underwriting, P1 if life; his commercial and market pricing background reads like the health side.
+neil-hartigan-3a939035b | WEAK | | underwriting | 1 | Head of Underwriting and Claims Quality fits the post-issue audit KPI, but the profile is empty and life or health is not shown.
+szymon-marszalek | WEAK | | underwriting | 1 | Director of Pricing and Underwriting is a P1 title, but Vitality UK has two such directors and life or health is not shown; James Ayland's title confirms a separate Life Pricing and Underwriting function.
+paul-yarham-945164a0 | WEAK | | underwriting | 1 | Director of Pricing and Underwriting, P1 if life; his commercial and market pricing background reads like the health side.
 alwyn-roberts-msc-beng-75357a153 | FAIL | | | | identity mismatch: electrician, Wynn Resorts
-sharon-a-powell-2a919aab | WEAK | | | 1 | Head of Product at Vitality UK (ex digital product manager there); life or health side not shown.
-gareth-alan-williams-7709b658 | WEAK | | | 1 | Head of Product at Vitality UK (ex portfolio management and VitalityCar change); life or health side not shown.
-beccacooke | WEAK | | | 1 | Head of Product at Vitality UK with a customer-acquisition platform background; life or health side not shown.
-chris-puzey-04754a83 | WEAK | | | 1 | Portfolio Underwriting Manager with an Aviva pricing background; portfolio underwriting is a corporate-health or GI term, life not shown.
-hannah-leech-4244846a | WEAK | | | 1 | Senior Underwriting Manager (P3), but her background is customer service at Vitality and PruHealth; life or health not shown.
+sharon-a-powell-2a919aab | WEAK | | proposition | 1 | Head of Product at Vitality UK (ex digital product manager there); life or health side not shown.
+gareth-alan-williams-7709b658 | WEAK | | proposition | 1 | Head of Product at Vitality UK (ex portfolio management and VitalityCar change); life or health side not shown.
+beccacooke | WEAK | | proposition | 1 | Head of Product at Vitality UK with a customer-acquisition platform background; life or health side not shown.
+chris-puzey-04754a83 | WEAK | | underwriting | 1 | Portfolio Underwriting Manager with an Aviva pricing background; portfolio underwriting is a corporate-health or GI term, life not shown.
+hannah-leech-4244846a | WEAK | | underwriting | 1 | Senior Underwriting Manager (P3), but her background is customer service at Vitality and PruHealth; life or health not shown.
 lorna-miller-714608aa | PASS | 2 | underwriting | 1 | Strategic Underwriting Manager, the VitalityLife team that sets underwriting strategy (same team as Nicky Le Roux).
 kathrynconniff | PASS | 2 | underwriting | 1 | Life Underwriting Service Director: runs life underwriting operations and owns referral volume and time to decision.
 fareeha-brownless-nee-hasani-84b7b413 | PASS | 3 | proposition | 1 | Head of Product (Life) with a digital product background: owns the life application journey where a capture step would sit.
-harpreetsarna | WEAK | | | 1 | Chief Medical Officer is a P1 title, but no earlier role is medical (charity trustee, WBS ambassador); check it is not Chief Marketing Officer.
+harpreetsarna | WEAK | | medical | 1 | Chief Medical Officer is a P1 title, but no earlier role is medical (charity trustee, WBS ambassador); check it is not Chief Marketing Officer.
 fergus-bescoby-0b604ba1 | FAIL | | | | distribution-facing UW manager, empty profile
-rachel-l-2387142a | WEAK | | | 1 | Head of Product Management with an ASOS customer-experience background; life or health side not shown.
+rachel-l-2387142a | WEAK | | proposition | 1 | Head of Product Management with an ASOS customer-experience background; life or health side not shown.
 charles-nolan-85401435a | FAIL | | | | claims and operations product head
 james-ayland-6181bab5 | PASS | 2 | underwriting | 1 | Director of Data Science for Life Pricing and Underwriting: the person who would run a shadow evaluation on VitalityLife applicants.
 prema-sohun-9488195b | FAIL | | | | product marketing head
 jessicavjones | FAIL | | | | VitalityHealth product head
-stuart-jackson-bb8a035b | WEAK | | | 1 | Head of Product for the adviser, employer and servicing platforms: the adviser portal carries life applications, but employer is health and servicing is post-sale.
+stuart-jackson-bb8a035b | WEAK | | proposition | 1 | Head of Product for the adviser, employer and servicing platforms: the adviser portal carries life applications, but employer is health and servicing is post-sale.
 catherine-bowen-walker-llm-cipp-e-63050134 | PASS | 3 | technical-integration | 1 | Head of Data Protection and UK DPO at Vitality: signs off processing of applicant photos.
 simon-evans-9296844b | PASS | 3 | proposition | 1 | Chief Product and Delivery Officer for Vitality UK: owns product and delivery across both lines, the life application included.
 sarah-squelch-65597851 | FAIL | | | | product marketing head
@@ -1091,22 +1091,22 @@ dave-evans-bb20a920 | PASS | 3 | technical-integration | 1 | DPO at Swiss Re UK 
 colin-bannister-26a6b2149 | FAIL | | | | L&H valuation actuary
 andy-parkinson-b4621483 | FAIL | | | | L&H claims head
 nidhi-papde | FAIL | | | | junior digital transformation
-simon-jenner-ciso | WEAK | | | 1 | Chief Technology and Security Officer title, but Swiss Re's group technology chief is Pravina Ladva and his scope here is unclear (ex National Grid CISO).
-drdeborahasmith | PASS | 1 | medical | 1 | Chief Medical Officer at Swiss Re UK, a doctor by background (acute medicine): signs off how build evidence may be used in client manuals.
+simon-jenner-ciso | WEAK | | technical-integration | 1 | Chief Technology and Security Officer title, but Swiss Re's group technology chief is Pravina Ladva and his scope here is unclear (ex National Grid CISO).
+drdeborahasmith | WEAK | | medical | 1 | Chief Medical Officer title at Swiss Re UK, but the only earlier roles are trainee-grade NHS posts (CT2 neurology, acute medicine specialty doctor); P1 needs the role confirmed before she goes out.
 claire-nolan-01708830 | PASS | 1 | reinsurance | 1 | Head of Claims and Underwriting, ex Head of L&H Underwriting for Europe, ME and Africa: the UK L&H underwriting lead at Swiss Re.
 dean-galligan-a2501a60 | FAIL | | | | L&H transactions (capital deals)
 alana-paterson-barker-fia-cera-5a759315 | PASS | 2 | reinsurance | 1 | Head of Pricing, Life and Health, UK and Ireland: the protection pricing head at the reinsurer.
 vicki-livingstone-259a7098 | PASS | 2 | reinsurance | 1 | Underwriting Proposition Manager, ex medical underwriter and underwriting auditor: designs the underwriting propositions Swiss Re offers UK insurers.
 andrew-graham-2398a8ba | PASS | 2 | reinsurance | 1 | Underwriting Solution Manager, ex Magnum consultant: works on the rules engine Swiss Re licenses to UK insurers.
-pravina-ladva | PASS | 3 | technical-integration | 1 | Group Chief Digital and Technology Officer, UK-based, earlier technology and operations chief on the life side: group-wide tech owner, P3 per card.
+pravina-ladva | WEAK | | technical-integration | 1 | Swiss Re Group Chief Digital and Technology Officer, a parent-level executive; decision 2 sends only the UK team from katerina and leaves the Swiss Re parent open for Olena, so held for Vadim.
 natalie-kelly-447331a | PASS | 1 | reinsurance | 1 | Head of L&H Underwriting, Claims and R&D, ex iptiQ CUO: L&H underwriting lead with an R&D remit.
 tim-knaust-1b852a55 | PASS | 2 | reinsurance | 1 | L&H Underwriting and Claims Propositions Manager for UK and Ireland: designs the client propositions.
 lloyd-williams62 | PASS | 2 | reinsurance | 1 | Underwriting Development Manager (headline: Underwriting Proposition Manager) at Munich Re's UK life branch.
 adrian-stevenson | PASS | 1 | reinsurance | 1 | Head of Protection at Munich Re UK Life, ex head of L&H business development: leads the UK protection book with client insurers.
 matt-bone-4b127a4a | PASS | 1 | reinsurance | 1 | Head of Underwriting and Claims at the UK Life Branch, ex Munich Re head of underwriting: the UK underwriting lead.
-louis-pereira-1aab15218 | WEAK | | | 1 | Underwriting Manager with an empty profile; this group also returned Great Lakes UK (P&C), so life is not confirmed.
-armin-fox-897378a | WEAK | | | 1 | Underwriting Manager, ex SVP and head of section at Munich Re; life or P&C not shown.
-rose-duffy-14768482 | WEAK | | | 1 | Interim Head of Underwriting Operations (headline: senior underwriting analyst); an operations role, life or P&C not shown.
+louis-pereira-1aab15218 | WEAK | | reinsurance | 1 | Underwriting Manager with an empty profile; this group also returned Great Lakes UK (P&C), so life is not confirmed.
+armin-fox-897378a | WEAK | | reinsurance | 1 | Underwriting Manager, ex SVP and head of section at Munich Re; life or P&C not shown.
+rose-duffy-14768482 | WEAK | | reinsurance | 1 | Interim Head of Underwriting Operations (headline: senior underwriting analyst); an operations role, life or P&C not shown.
 tony-ayles-b2a3a633 | FAIL | | | | P&C CUO (Great Lakes UK)
 jonathan-carnell-26526b205 | PASS | 2 | medical | 1 | Consultant Medical Officer, also CMO at a friendly society: the medical officer role at the reinsurer.
 lisa-filer-250b6696 | FAIL | | | | underwriting support administration
@@ -1115,19 +1115,19 @@ doug-s-0b498056 | FAIL | | | | block risk transfer (capital deals)
 sridharanmadhusudhanan | PASS | 1 | reinsurance | 1 | CUO, ex Head of L&H for Europe and Latin America at Munich Re: the L&H underwriting head.
 vinoth-loganathan-37a223170 | FAIL | | | | junior actuarial pricing assistant
 tsmithfia | PASS | 1 | reinsurance | 1 | Head of Protection at Hannover Re UK Life, ex head of Munich Re's global life underwriting and pricing office.
-david-brownlow-ca-chartered-insurer-dippfs-b285b116 | WEAK | | | 1 | Global Head of L&H Data Operations and Solutions, ex CFO of the UK Life Branch: data and solutions could host an evaluation, but the lineage is finance.
+david-brownlow-ca-chartered-insurer-dippfs-b285b116 | WEAK | | reinsurance | 1 | Global Head of L&H Data Operations and Solutions, ex CFO of the UK Life Branch: data and solutions could host an evaluation, but the lineage is finance.
 andrea-gregory-76144635 | PASS | 3 | reinsurance | 1 | Underwriting and Claims Manager at Hannover Re UK Life, a career underwriter there.
-stuart-crichton | WEAK | | | 1 | UK-based (Edinburgh), but his headline is Head of Life Underwriting and Claims for Ireland, which is not katerina's market.
+stuart-crichton | WEAK | | reinsurance | 1 | UK-based (Edinburgh), but his headline is Head of Life Underwriting and Claims for Ireland, which is not katerina's market.
 lynn-baillie-b468427 | PASS | 1 | reinsurance | 1 | Chief Underwriting Officer at Gen Re in London, career at Gen Re rather than its P&C syndicate Faraday: the UK L&H underwriting lead.
 richardtunnard | FAIL | | | | P&C actuarial (Faraday)
 anna-c-6b5a7226 | PASS | 2 | reinsurance | 1 | Underwriting R&D Manager at RGA UK: researches new evidence sources for client underwriting.
-emma-jones-99a3834b | PASS | 2 | reinsurance | 1 | Head of Global Underwriting Philosophy Delivery, ex Head of Digital Underwriting: rolls philosophy changes into client manuals.
-rebecca-abayakoon-certified-falu-bcom-snrassoc-anziif-669b345 | PASS | 2 | reinsurance | 1 | Head of Global Underwriting Philosophy Design at RGA, London-based: designs the philosophy client manuals follow.
+emma-jones-99a3834b | PASS | 2 | reinsurance | 1 | Head of Global Underwriting Philosophy Delivery (ex Head of Digital Underwriting), a global role held from the UK; decision 2 leaves the RGA parent open for Nick, so Vadim to confirm she goes from katerina.
+rebecca-abayakoon-certified-falu-bcom-snrassoc-anziif-669b345 | PASS | 2 | reinsurance | 1 | Head of Global Underwriting Philosophy Design, a global role held from London; decision 2 leaves the RGA parent open for Nick, so Vadim to confirm she goes from katerina.
 mike-evans-9760a310a | PASS | 1 | reinsurance | 1 | Chief Underwriter, Protection, UK and Ireland at RGA: the UK protection underwriting lead.
 anna-graham-fia | PASS | 1 | reinsurance | 1 | Head of Protection, UK and Ireland at RGA: owns the UK protection business with client insurers.
 paul-bevan-372a3a14 | FAIL | | | | annuities underwriting, claims head
 deanscotson | PASS | 3 | technical-integration | 1 | DPO for EMEA at RGA: reviews the data flows of a shadow evaluation.
-emma-denby-4836a78 | WEAK | | | 1 | Underwriting Innovation and Data Strategy Manager is a P2 title, but her headline is actuarial analyst and SCOR UK also runs P&C; life not shown.
+emma-denby-4836a78 | WEAK | | reinsurance | 1 | Underwriting Innovation and Data Strategy Manager is a P2 title, but her headline is actuarial analyst and SCOR UK also runs P&C; life not shown.
 helen-croft-underwriting | PASS | 1 | reinsurance | 1 | Head of L&H Underwriting and Claims for UK and Ireland, ex Chief Underwriter at AIG Life.
 lawrence-harper-2862608 | FAIL | | | | P&C underwriting governance (Lloyd's)
 hannah-cook-73585829 | PASS | 2 | reinsurance | 1 | Head of Protection Business Development, ex head of retail protection pricing at L&G: carries propositions to UK insurers.
@@ -1136,149 +1136,149 @@ marie-biggas-012bb021 | FAIL | | | | P&C CUO (Business Solutions)
 graham-johnston-aa606211 | FAIL | | | | retired, P&C travel lineage
 anilgirdhari | PASS | 3 | reinsurance | 1 | Senior Underwriting Manager L&H (actuary, business acceptance): treaty underwriting at SCOR Global Life.
 ricky-dgama | PASS | 2 | reinsurance | 1 | Head of Modelling and Innovation, ex Director of L&H Innovation at SCOR.
-gideoncheok | WEAK | | | 1 | Head of Product Design (UX) across Iress UK and South Africa: design rather than product ownership, protection scope not shown.
+gideoncheok | WEAK | | partnership | 1 | Head of Product Design (UX) across Iress UK and South Africa: design rather than product ownership, protection scope not shown.
 danny-essam-43242013 | PASS | 3 | partnership | 1 | Head of Product at iPipeline UK, the protection quote-and-apply platform where one integration reaches many insurers.
 kaj-makaswaran-64a176188 | PASS | 3 | partnership | 1 | Underwriting Services Manager at iPipeline UK: configures insurer underwriting on the platform.
 helena-ashton-mbcs-4775788 | PASS | 3 | technical-integration | 1 | Privacy and Data Protection Director at iPipeline UK: signs off a new data flow on the platform.
 neil-fitton-141aba29 | FAIL | | | | GI underwriting innovation, ex-NIG Commercial
 actaylor | FAIL | | | | GI property technical underwriting
-michelle-cross-88958422 | PASS | 2 | underwriting | 1 | Underwriting Philosophy Manager who came up through Aviva life underwriting and philosophy-and-development, so she shapes the protection evidence rules.
-tom-parkinson-03190190 | PASS | 2 | underwriting | 1 | Underwriting Rules Developer with an Aviva life underwriting background: builds the protection rules where a build referral threshold would live.
-daryl-warren-a773a64a | PASS | 2 | proposition | 1 | Head of Individual Protection Pricing at Aviva, the protection pricing head the card puts in P2 proposition.
-stuart-mckellar-3951a643 | WEAK | | technical-integration | 1 | DPO title at multi-line Aviva with a paralegal background: likely a member of the data protection team, not the protection DPO, and the line is not shown.
+michelle-cross-88958422 | PASS | 2 | underwriting | 1 | Runs underwriting philosophy after moving up from Aviva life underwriting and the philosophy-and-development desk, so the protection evidence rules are hers to shape.
+tom-parkinson-03190190 | PASS | 2 | underwriting | 1 | A former Aviva life underwriter who now codes the underwriting rules, which is where a build referral threshold would be set.
+daryl-warren-a773a64a | PASS | 2 | proposition | 1 | Leads individual protection pricing after a spell running the actuarial coding hub, the pricing-head seat the card places in P2.
+stuart-mckellar-3951a643 | WEAK | | technical-integration | 1 | Holds a data protection officer title after a paralegal role, which reads as one of several data protection staff at Aviva; whether he covers protection is not shown.
 paul-glennerster-0a5a6a31 | FAIL | | | | GI head of underwriting, ex-Azur
-lukemepham | FAIL | | | | intranet digital workplace, no line
+lukemepham | FAIL | | | | group intranet IT, outside protection
 david-simpson-10a35362 | FAIL | | | | GI commercial development underwriter
-chris-colbron-2b159970 | FAIL | | | | GI development underwriter, Perth
+chris-colbron-2b159970 | FAIL | | | | GI development underwriter, ex-Bonus
 rachel-lilliott-04b09248 | FAIL | | | | GI development underwriter, ex-MGA
 jason-chambers-7034935 | FAIL | | | | GI SME underwriting transformation
-robert-morrison-801161b7 | WEAK | | underwriting | 1 | Chief Underwriting Officer title would be P1 if protection, but the profile is empty, the line is not shown, and the other Aviva CUO titles in this batch are GI (Michael Korner, Jason Chambers' former SME role).
-ankursingh-analyst | FAIL | | | | associate-level digital transformation
+robert-morrison-801161b7 | WEAK | | underwriting | 1 | The CUO title would be P1 for protection, yet Apollo has no history for him and both other Aviva CUO titles in this batch sit in general insurance.
+ankursingh-analyst | FAIL | | | | DT associate, no protection scope
 carmel-kelly-34078512 | FAIL | | | | retired per headline
 jamie-lye-73671a8 | FAIL | | | | GI underwriting effectiveness, ex-Norwich Union Insurance
-alex-beech-420497127 | FAIL | | | | GI business development underwriter
+alex-beech-420497127 | FAIL | | | | GI broker-trading underwriter
 charlotte-connelly-463295168 | FAIL | | | | GI construction trading underwriter
-sally-james-75186623 | PASS | 2 | underwriting | 1 | Senior Development Underwriter who came from AIG's development underwriting, the protection team whose rules-engine work the card cites and which Aviva absorbed.
-matthew-findlay-48619941 | FAIL | | | | GI business development underwriter
-dan-tinson-b2a9a15b | WEAK | | proposition | 1 | Head of Protection Reinsurance owns the treaties whose reinsurers sign off evidence changes, but reinsurance management is not a tier in the card.
-paul-welsh-a27b7a61 | PASS | 3 | referral | 1 | Group Head of Innovation with a product and proposition background: the card's group-wide innovation lead, P3 referral.
-james-whitty-05a1545a | PASS | 1 | underwriting | 1 | Head of Underwriting Strategy and Governance who came from Aviva Health and Protection underwriting strategy and automated underwriting: the senior protection underwriting owner in this batch.
+sally-james-75186623 | PASS | 2 | underwriting | 1 | Senior development underwriter whose previous job was development underwriting at AIG, the protection team Aviva took over and whose rules-engine changes the card cites.
+matthew-findlay-48619941 | FAIL | | | | GI business development underwriter title
+dan-tinson-b2a9a15b | WEAK | | proposition | 1 | Manages protection reinsurance, so the treaty partners who must accept any evidence change deal with him, though the card gives reinsurance management no tier.
+paul-welsh-a27b7a61 | PASS | 3 | referral | 1 | As Group Head of Innovation with a product and proposition past, he is the group-wide innovation lead the card puts at P3 referral.
+james-whitty-05a1545a | PASS | 1 | underwriting | 1 | Heads underwriting strategy and governance after running Health and Protection underwriting strategy and automated underwriting: the most senior protection underwriting owner Apollo found at Aviva.
 michael-hall-500ba648 | FAIL | | | | GI head of product
-david-debnam-5aa31772 | FAIL | | | | CIO operational risk director
-laurajnicol | FAIL | | | | innovation manager, no line shown
-simon-lloyd-8059522b | FAIL | | | | GI technical underwriting team
+david-debnam-5aa31772 | FAIL | | | | group CIO risk, outside protection
+laurajnicol | FAIL | | | | innovation manager, no protection scope
+simon-lloyd-8059522b | WEAK | | underwriting | 1 | Senior technical underwriting manager in London; Aviva's head of technical underwriting comes from GI exposure management, but Scottish Widows and L&G use the same title in protection, so his line is open.
 megan-toogood-1b6279149 | FAIL | | | | GI international commercial underwriting
 jay-thacker-2538119 | FAIL | | | | GI accident and health
-juliet-fenton | FAIL | | | | actuarial innovation manager, no line
-tom-craven-92207778 | FAIL | | | | pricing technician, below head
+juliet-fenton | FAIL | | | | actuarial innovation, no protection scope
+tom-craven-92207778 | WEAK | | proposition | 1 | Junior pricing technician inside protection after bulk-annuity quotation work: the function has a lane, but he sits well below the pricing heads the card tiers.
 mark-dunham-473045122 | FAIL | | | | GI technical underwriting, ex-exposure management
-david-c-26bb0418 | FAIL | | | | risk business partnering (CRO line)
-mike-konstant-498b3486 | FAIL | | | | GI underwriting effectiveness, empty profile
-nicholas-john-austin | PASS | 1 | proposition | 1 | Protection Commercial Director, formerly MD Individual Protection and Head of Pricing at AIG Life: a protection director, P1 proposition.
-mark-williams-8544313b | FAIL | | | | GI underwriting governance
-jane-oliphant-60279a43 | FAIL | | | | GI underwriting analytics, Perth
+david-c-26bb0418 | WEAK | | referral | 1 | Risk business partnering head whose remit names UK Life, Health and Protection, so protection is in scope, but risk owns no evidence decision and Apollo truncates his surname.
+mike-konstant-498b3486 | WEAK | | underwriting | 1 | Nothing in Apollo beyond the title; Jamie Lye, who heads underwriting effectiveness, comes from GI, so this is probably GI, though his own record does not prove it.
+nicholas-john-austin | PASS | 1 | proposition | 1 | Ran Individual Protection and pricing at AIG Life before becoming Protection Commercial Director: a protection director, the card's P1 proposition seat.
+mark-williams-8544313b | FAIL | | | | GI governance, ex-Bonus on-site underwriter
+jane-oliphant-60279a43 | FAIL | | | | GI analytics, ex-travel pricing
 charlottepower | FAIL | | | | protection distribution, adviser-facing
-kelly-mhasal-b22b6129 | FAIL | | | | protection governance and assurance
-harriet-granville-jones-innovation | PASS | 3 | referral | 1 | Partnerships Manager in Aviva Group Innovation who scouts start-ups: the group's intake route for a new vendor, P3 referral.
+kelly-mhasal-b22b6129 | WEAK | | referral | 1 | Interim head of protection governance and assurance, so she sits inside protection and near post-issue audit findings, but governance is not a buying role and the post is interim.
+harriet-granville-jones-innovation | PASS | 3 | referral | 1 | Scouts start-ups for Aviva Group Innovation as partnerships manager, which makes her the group's door for a new vendor (P3 referral).
 daren-boys-6719881 | FAIL | | | | protection distribution director
-suzanne-lawson-2368623 | WEAK | | referral | 1 | Second Partnerships Manager in Group Innovation, next to Harriet Granville-Jones and Paul Welsh (both PASS), with a corporate affairs and UK Life business management background: add only if Vadim wants depth in that team.
-andrew-fisher-968a3919 | FAIL | | | | automation manager, no line, empty
-penny-jemison-b5883433a | FAIL | | | | GI underwriting quality, empty profile
-adrian-nye-6b2422158 | WEAK | | referral | 1 | Health and Protection procurement and outsourcing director who would hold the evidence-supplier contracts, but procurement is outside the card's functions and his headline places him at Aviva Health (PMI).
-david-fleming-a73369426 | FAIL | | | | GI partnership operations secondment
+suzanne-lawson-2368623 | PASS | 3 | referral | 1 | Group Innovation partnerships manager who was business manager to Aviva's UK Life and Savings leadership, so she knows who in protection would sponsor a pilot.
+andrew-fisher-968a3919 | FAIL | | | | automation manager, no protection scope
+penny-jemison-b5883433a | WEAK | | underwriting | 1 | Underwriting quality at Aviva shows up in this batch only inside the GI chief underwriting office (Grahame Clarke), and Apollo has no history for her, so protection is possible but unshown.
+adrian-nye-6b2422158 | WEAK | | referral | 1 | Runs procurement and outsourcing for Health and Protection and would hold the nurse-screening and GP-report contracts, but buying evidence is not owning it, and his headline puts him on the Aviva Health (PMI) side.
+david-fleming-a73369426 | FAIL | | | | DT lead, no protection scope
 michael-korner-14b432 | FAIL | | | | GI retail CUO, motor background
-grahameclarke123 | FAIL | | | | GI chief underwriting office quality
+grahameclarke123 | FAIL | | | | GI chief underwriting office, Perth
 paul-murchan-8494a1a9 | FAIL | | | | Retail Retirement underwriting development
-sara-denyer-b81a2a92 | PASS | 2 | underwriting | 1 | Underwriting Rules business analyst and former Life and Disability underwriter in L&G's rules team, where a build threshold would be configured.
-matthew-wilton-49408544 | WEAK | | underwriting | 1 | London underwriting development role with a life-assurance contract background, but L&G's London underwriting development head (Paul Murchan) runs Retail Retirement, so this may be annuities.
-jayant-maroo-92763865 | FAIL | | | | data engineer below CTO
-richard-whaley-2a4459132 | WEAK | | underwriting | 1 | Cardiff development underwriter, likely in John Redmond's development team (PASS), with an enhanced-annuity past: the line is not certain and the team is already covered.
-jenni-phillips-98892a24 | WEAK | | underwriting | 1 | Cardiff development underwriter, likely in John Redmond's development team (PASS): add only if Vadim wants a second voice from that team.
-john-redmond-884597a | PASS | 2 | underwriting | 1 | Claims and Underwriting Development Team Manager in Cardiff whose combined claims-and-underwriting remit marks protection: leads the team that changes the rules.
-ann-nuttall-37776726 | WEAK | | underwriting | 1 | Underwriting Development Specialist with an empty profile at multi-line L&G: P2 if protection, but neither the line nor the person can be confirmed.
-kalpesh-mistry | FAIL | | | | M365 IT specialist
-david-banks-9b750391 | PASS | 1 | underwriting | 1 | Underwriting and Claims Director, promoted from deputy, with a combined underwriting-and-claims remit that marks protection: the chief-underwriter role at L&G.
-malcolm-cooper-b0638718 | WEAK | | proposition | 1 | Director, Pricing and Underwriting would be P1, but his headline reads "Old, happy - not looking for work" and the same title is also listed as a past role, so he may have retired.
-brian-kemp-0467b898 | FAIL | | | | customer underwriting team manager
-drtarungupta | PASS | 1 | medical | 1 | Chief Medical Officer at L&G with a NICE GP reference panel background: signs off what an estimated value may be used for, P1 medical.
-john-graves-a176161a | FAIL | | | | product governance, pensions background
-jonathan-saggers-4ab31918 | FAIL | | | | product and commercial risk
-nikitasmhs | FAIL | | | | data science manager, not CTO
-donna-cowell-insurance | WEAK | | proposition | 1 | Head of Reinsurance for Protection and former Head of Pricing at Swiss Re iptiQ EMEA: close to pricing and to the reinsurers who approve evidence changes, but reinsurance management is not a tier in the card.
-scott-wallace-b608b49b | FAIL | | | | underwriting ops team manager
-sarah-holifield-454023211 | FAIL | | | | ops team manager, empty profile
-nicky-mcrae-a4a3b5206 | FAIL | | | | underwriting ops team manager
+sara-denyer-b81a2a92 | PASS | 2 | underwriting | 1 | Business analyst for the underwriting rules engine who was a life and disability underwriter, so she knows both the rule and the case it changes.
+matthew-wilton-49408544 | WEAK | | underwriting | 1 | Works in underwriting development in London after contract life-assurance work, but L&G's London underwriting development head runs Retail Retirement, so he may be on annuities.
+jayant-maroo-92763865 | FAIL | | | | data engineer, no protection scope
+richard-whaley-2a4459132 | WEAK | | underwriting | 1 | His L&G record includes enhanced annuity underwriting, so this Cardiff development role could be on the retirement side, although his latest earlier role, senior medical underwriter, points to protection.
+jenni-phillips-98892a24 | PASS | 2 | underwriting | 1 | Cardiff-based development underwriter with earlier L&G development work on record, working beside the protection rule changes John Redmond's team makes.
+john-redmond-884597a | PASS | 2 | underwriting | 1 | Manages claims and underwriting development in Cardiff after running underwriting training and an underwriting team; the joint claims-and-underwriting remit is protection.
+ann-nuttall-37776726 | WEAK | | underwriting | 1 | Underwriting development specialist with nothing else in Apollo, and L&G runs underwriting development in Retail Retirement as well as protection, so neither line nor person is confirmed.
+kalpesh-mistry | FAIL | | | | workplace IT (M365), outside protection
+david-banks-9b750391 | PASS | 1 | underwriting | 1 | Promoted from deputy to Underwriting and Claims Director, the L&G seat that owns evidence rules; the joined claims remit marks it as protection.
+malcolm-cooper-b0638718 | WEAK | | proposition | 1 | His pricing-and-underwriting directorship would be P1, but the headline "Old, happy - not looking for work" and the same title among his past roles suggest he has retired.
+brian-kemp-0467b898 | PASS | 3 | underwriting | 1 | Customer underwriter turned team manager on L&G's customer underwriting desk, the protection tele-underwriting team that takes applicants' disclosures, so P3.
+drtarungupta | PASS | 1 | medical | 1 | A GP who sat on NICE's reference panel and is now L&G's Chief Medical Officer: signs off what an estimated value may be used for.
+john-graves-a176161a | WEAK | | proposition | 1 | Heads product technical and oversight, a head-of-product post the card ranks P3, but his background is pensions product and the line he oversees now is not shown.
+jonathan-saggers-4ab31918 | WEAK | | referral | 1 | Head of product and commercial risk with an HSBC insurance distribution past; the line is not shown and risk does not own evidence, though protection product could be in his remit.
+nikitasmhs | FAIL | | | | group CTO office data science
+donna-cowell-insurance | WEAK | | proposition | 1 | Ex-head of pricing at Swiss Re iptiQ EMEA now running protection reinsurance, which puts her between pricing and the reinsurers who approve evidence changes; the card has no tier for that seat.
+scott-wallace-b608b49b | PASS | 3 | underwriting | 1 | Runs a customer underwriting team in Edinburgh, coming from operations management at Aptia and Diligenta: P3, closer to the referral workload than to the rules.
+sarah-holifield-454023211 | WEAK | | underwriting | 1 | Customer underwriting team manager in Wales with no history in Apollo, so the person and the current role are unconfirmed.
+nicky-mcrae-a4a3b5206 | PASS | 3 | underwriting | 1 | Brewin Dolphin administration manager who now leads a customer underwriting team, P3 on the same protection tele-underwriting desk as Brian Kemp.
 tony-silvester-8022016a | FAIL | | | | adviser-facing distribution manager
-lindsey-samuel-38344287 | FAIL | | | | team manager, empty profile
-pippa-barber-nee-keefe-487b64b6 | PASS | 1 | proposition | 1 | Commercial Director for Retail Protection (and Retail Annuities): the protection director who decides where a step sits in the application, P1 proposition.
-hai-luc-67306367 | PASS | 2 | proposition | 1 | Head of Actuarial Research for Retail Protection, previously risk pricing and research: owns the evidence on how build feeds price, P2 proposition.
-bethan-shepherd-12a39763 | FAIL | | | | medical underwriting team manager
-choi-justin | WEAK | | referral | 1 | Group Head of Digital Channels and Innovation fits the card's group-wide innovation lead (P3 referral), but his profile reads as brand, content and channels.
-andrew-greatbanks-9712b03b | PASS | 3 | underwriting | 1 | Customer Underwriting Service Delivery Manager and former Head of Customer Underwriting: runs the tele-underwriting operation that handles referrals, P3.
-ceri-davies-11b175165 | PASS | 2 | underwriting | 1 | Underwriting Rules and Philosophy Developer who came from post-issue sampling: writes the rules and has checked the cases a build gap affects.
-dominic-pagan-4077583 | PASS | 2 | underwriting | 1 | Underwriting Philosophy Manager who was a rules and development underwriter: owns the philosophy the card names as the buyer's core.
-robert-arbuckle-b4aa3669 | WEAK | | underwriting | 1 | Underwriting Rules Developer (ex-Bright Grey, Scottish Provident), a fifth rules or philosophy person at Royal London in this batch: add only if Vadim wants depth in one team.
-william-stratton-8ab764104 | PASS | 2 | underwriting | 1 | Underwriting Rules Developer, formerly Technical Architect for Underwriting Strategy at AIG Life: the rules-engine builder the card cites.
-damian-mapplebeck-99103818 | PASS | 2 | underwriting | 1 | Underwriting Rules Developer who has built on Magnum, iPipeline SS/G and UnderwriteMe engines: knows where a referral rule would be wired.
-daniel-smith-64507433 | WEAK | | underwriting | 1 | Underwriting Philosophy Developer, but his headline still says Development Underwriter at Aviva, so the current employer needs a check, and Royal London's rules team is already covered.
-vikki-larkin-b850a8aa | FAIL | | | | pricing actuary below head, empty
-jane-lyle-a6a2b5182 | WEAK | | underwriting | 1 | Development Underwriter (ex-Scottish Widows, L&G) in a Royal London rules and development team already covered by four PASS: add only for depth.
-craig-paterson-970183a | PASS | 1 | underwriting | 1 | Chief Underwriter at Royal London, formerly its Underwriting and Claims Philosophy Manager: the role the card cites as owning non-medical limits and evidence.
-robert-morrison-58a15a6 | WEAK | | underwriting | 1 | Head of Underwriting and Claims would be P1, but the profile is empty and the same name has an empty Aviva CUO record in this batch, so identity needs a check.
-sebbowden | WEAK | | underwriting | 1 | Rules and Development Underwriter, ex-L&G development underwriter and medical underwriting trainer, in a Royal London rules team already covered by four PASS: add only for depth.
+lindsey-samuel-38344287 | WEAK | | underwriting | 1 | Apollo gives only a title, technical underwriting team manager, and a Cardiff location near L&G's protection development and medical underwriting teams; the person is unconfirmed.
+pippa-barber-nee-keefe-487b64b6 | PASS | 1 | proposition | 1 | Commercial director across Retail Protection and Retail Annuities: the protection director who decides where a step sits in the application.
+hai-luc-67306367 | PASS | 2 | proposition | 1 | Leads actuarial research for Retail Protection after risk pricing and research roles, so the evidence on how build moves price comes from his team.
+bethan-shepherd-12a39763 | PASS | 3 | underwriting | 1 | Cardiff medical underwriting team manager who came up as a customer and senior medical underwriter; L&G records medical and enhanced annuity underwriting separately, so this is protection.
+choi-justin | WEAK | | referral | 1 | Holds the group digital channels and innovation post the card ranks P3 referral, yet his career is brand, content and channels at Rolls-Royce and elsewhere.
+andrew-greatbanks-9712b03b | PASS | 3 | underwriting | 1 | Former head of customer underwriting now running service delivery for it: owns the operation that would receive flagged cases.
+ceri-davies-11b175165 | PASS | 2 | underwriting | 1 | Writes underwriting rules and philosophy after post-issue sampling work, which shows which disclosures later proved wrong.
+dominic-pagan-4077583 | PASS | 2 | underwriting | 1 | Underwriting Philosophy Manager, risen through rules and development underwriting at Royal London: owns the philosophy the card names as the buyer's core.
+robert-arbuckle-b4aa3669 | PASS | 2 | underwriting | 1 | Ex-Scottish Provident underwriting team manager and Bright Grey rules developer, now writing Royal London's rules: a P2 rules developer.
+william-stratton-8ab764104 | PASS | 2 | underwriting | 1 | Moved from technical architect for underwriting strategy at AIG Life, the team whose rules-engine changes the card cites, to rules developer here.
+damian-mapplebeck-99103818 | PASS | 2 | underwriting | 1 | Has built rules on Magnum, iPipeline SS/G and UnderwriteMe engines, so he knows where a referral rule would plug in.
+daniel-smith-64507433 | WEAK | | underwriting | 1 | Apollo lists him as Royal London's underwriting philosophy developer, but his headline still names Aviva as his employer, so the current company needs checking.
+vikki-larkin-b850a8aa | WEAK | | proposition | 1 | Protection pricing actuary, a function with a proposition lane, but below the pricing-head tier and with no history in Apollo.
+jane-lyle-a6a2b5182 | PASS | 2 | underwriting | 1 | Development underwriter with earlier development work at Scottish Widows and underwriting at L&G: changes Royal London's protection rules.
+craig-paterson-970183a | PASS | 1 | underwriting | 1 | Chief Underwriter, formerly Royal London's underwriting and claims philosophy manager: the role the card cites as owning non-medical limits and evidence.
+robert-morrison-58a15a6 | WEAK | | underwriting | 1 | Head of underwriting and claims would be P1, yet his Apollo record is blank and the same name carries a blank Aviva CUO record, so identity must be checked first.
+sebbowden | PASS | 2 | underwriting | 1 | Trained medical underwriters and did development work at L&G before joining Royal London's rules and development desk.
 fiona-wynn-72936a4 | FAIL | | | | duplicate of fi-wynn-72936a4 (same profile, renamed slug)
-caitlin-stronach | PASS | 2 | proposition | 1 | Head of Protection Commercials and Business Quality, previously head of business quality control: owns the post-sale quality findings the card lists as a KPI.
-james-trehane-24593257 | FAIL | | | | automation manager, no line shown
-robin-goodwin-039aa5271 | PASS | 2 | underwriting | 1 | Underwriting Analytics Manager, formerly Underwriting Philosophy Manager at Bright Grey: measures referral and disclosure outcomes, the research side of underwriting.
+caitlin-stronach | PASS | 2 | proposition | 1 | Heads protection commercials and business quality, having led business quality control: the post-sale findings the card lists as a KPI land with her.
+james-trehane-24593257 | FAIL | | | | automation manager, no protection scope
+robin-goodwin-039aa5271 | PASS | 2 | underwriting | 1 | Underwriting analytics manager who was underwriting philosophy manager at Bright Grey: measures referral and disclosure outcomes, the research side of underwriting.
 eileen-brown-1a401232 | FAIL | | | | retired per headline
-james-blaney-85456b60 | PASS | 3 | underwriting | 1 | Underwriting and Claims QA Manager, formerly underwriting manager: owns the audit findings the card lists as a KPI, P3.
-richard-basham-jones-7678a617 | FAIL | | | | customer service director, pensions-led
-lucy-luscombe-837866b2 | PASS | 2 | proposition | 1 | Head of Protection Pricing at LV=, the protection pricing head the card puts in P2 proposition.
-gareth-hurst-b2053a148 | PASS | 2 | underwriting | 1 | Development Underwriter with a life and disability underwriting career: changes the rules a build referral would sit in.
-scott-greenhill-546ab7133 | WEAK | | underwriting | 1 | Head of Underwriting would be P1, but the profile is empty and the LV= name also covers the GI business now owned by Allianz, so the line is not shown.
-rachel-haig-993536223 | PASS | 2 | underwriting | 1 | Development Underwriter, previously development underwriter at Scottish Widows: changes the protection rules.
-megan-davies-cemap-498abb190 | FAIL | | | | equity release, out of line
-julie-constable-34a6804 | FAIL | | | | GI pet and travel
-stephanie-richards77 | FAIL | | | | protection marketing head
-adam-davison-17b73112a | WEAK | | proposition | 1 | Head of Distribution Quality for Protection owns the quality of adviser-submitted business, which touches disclosure, but the role is adviser-facing and outside the card's tiers.
+james-blaney-85456b60 | PASS | 3 | underwriting | 1 | QA manager for underwriting and claims after an underwriting manager role; post-issue audit findings are a card KPI, so P3.
+richard-basham-jones-7678a617 | WEAK | | referral | 1 | Customer service director whose remit covers pensions and protection, so he is partly inside protection, but service does not own evidence and pensions leads his title.
+lucy-luscombe-837866b2 | PASS | 2 | proposition | 1 | An LV= actuary who now heads protection pricing, the pricing seat the card ranks P2.
+gareth-hurst-b2053a148 | PASS | 2 | underwriting | 1 | Came to development underwriting from senior life and disability underwriting on the Aegon contract at Serco: writes the rules a build referral would sit in.
+scott-greenhill-546ab7133 | WEAK | | underwriting | 1 | Head of Underwriting would be P1, but Apollo has no history and LV= branding still covers the GI business Allianz owns, so line and person are unconfirmed.
+rachel-haig-993536223 | PASS | 2 | underwriting | 1 | Development underwriter and senior life and disability underwriter at Scottish Widows before LV=, so protection rule changes are her daily work.
+megan-davies-cemap-498abb190 | FAIL | | | | equity release, retirement line
+julie-constable-34a6804 | FAIL | | | | GI pet and travel (Allianz)
+stephanie-richards77 | WEAK | | referral | 1 | Heads protection marketing after marketing roles at Iress, an adviser software firm; inside protection, but marketing does not own underwriting evidence.
+adam-davison-17b73112a | WEAK | | proposition | 1 | Owns the quality of business advisers submit for protection, which touches disclosure accuracy, but the job is adviser-facing and has no tier.
 mike-farrell-21054617 | FAIL | | | | protection sales director
-simon-vooght-34184925 | PASS | 2 | proposition | 1 | Protection Proposition Manager, a title the card pulls by name: decides where a step sits in the application.
-daniel-musty-23a73716 | PASS | 2 | underwriting | 1 | Underwriting Development Manager, formerly an L&G underwriting team manager: leads the team that changes the protection rules.
-eric-walker-4471a7b2 | PASS | 2 | underwriting | 1 | Development Underwriting Manager who was a Scottish Widows development underwriter: owns rule changes in protection.
-kerriecross | PASS | 2 | underwriting | 1 | Protection Underwriting Development Manager, formerly Head of Underwriting Rules Development at Aegon: the protection rules owner.
-paul-young-708558b0 | WEAK | | underwriting | 1 | Development Underwriter in a Scottish Widows development team already covered by three PASS managers: add only for depth.
-tom-green-240a9222 | WEAK | | underwriting | 1 | Development Underwriter and former medical underwriting manager in a Scottish Widows development team already covered by three PASS managers: add only for depth.
-scott-innes-98b84830 | PASS | 3 | underwriting | 1 | Senior Technical Underwriting Manager who came from Scottish Widows life and disability underwriting: an underwriting manager, P3.
-frances-heggie-3388b23 | WEAK | | underwriting | 1 | Senior Underwriting Strategy Manager would be P2, but the profile is empty and David Russell (PASS) already covers underwriting strategy.
-david-russell-10548311a | PASS | 2 | underwriting | 1 | Senior Manager for Claims and Underwriting Strategy, formerly product manager and lead development underwriter at UnderwriteMe: sets strategy and knows the platform side.
+simon-vooght-34184925 | PASS | 2 | proposition | 1 | Protection Proposition Manager, a title the card pulls by name, after protection development and BDM roles: shapes the application journey.
+daniel-musty-23a73716 | PASS | 2 | underwriting | 1 | Manages underwriting development after leading an underwriting team at L&G: his team changes the protection rules.
+eric-walker-4471a7b2 | PASS | 2 | underwriting | 1 | Was a Scottish Widows development underwriter before taking over development underwriting management, so protection rule changes run through him.
+kerriecross | PASS | 2 | underwriting | 1 | Headed underwriting rules development at Aegon; now the protection underwriting development manager, with a headline that calls her an underwriting strategy leader.
+paul-young-708558b0 | PASS | 2 | underwriting | 1 | Senior underwriter turned development underwriter at Scottish Widows, now on the team that edits the protection rules (P2).
+tom-green-240a9222 | PASS | 2 | underwriting | 1 | Development underwriter who previously managed medical underwriting and is treasurer of the Forum of Claims and Underwriting Scotland: a P2 rules voice.
+scott-innes-98b84830 | PASS | 3 | underwriting | 1 | Senior technical underwriting manager who came from life and disability underwriting at Scottish Widows: an underwriting manager, P3.
+frances-heggie-3388b23 | WEAK | | underwriting | 1 | Senior underwriting strategy manager would be P2, but there is no history in Apollo to confirm the person or the protection line.
+david-russell-10548311a | PASS | 2 | underwriting | 1 | Sets claims and underwriting strategy after being product manager and lead development underwriter at UnderwriteMe, so he also knows the platform side.
 stacey-calder-326752112 | FAIL | | | | individual initial underwriter
-david-piggin-a6039a27 | PASS | 2 | underwriting | 1 | Underwriting Rules Developer, formerly underwriting project manager at Shepherds Friendly: builds The Exeter's underwriting rules.
-ed-lyon-803766210 | PASS | 2 | underwriting | 1 | Head of Underwriting Operations, formerly an L&G underwriting team manager: runs underwriting at a mid-sized protection insurer.
-helen-jacobs-45130831 | FAIL | | | | on a career break
-lara-harkins-27835b21a | FAIL | | | | underwriting team manager
-sue-kissane-859216121 | PASS | 3 | underwriting | 1 | Underwriting Manager at a small income protection society, formerly its senior medical underwriter: likely the senior underwriter there.
-steve-betteridge-b5041a5b | PASS | 2 | underwriting | 1 | Senior Development Underwriter who has developed Cirencester's rules for years: changes the evidence rules.
-samuel-njoroge-ba-hons-dipcii-dldu-amus-9b571672 | PASS | 2 | underwriting | 1 | Underwriting Analytics and Development Manager, formerly senior development underwriter: owns rule development and the data behind it.
+david-piggin-a6039a27 | PASS | 2 | underwriting | 1 | Develops The Exeter's underwriting rules after project-managing underwriting at Shepherds Friendly.
+ed-lyon-803766210 | PASS | 2 | underwriting | 1 | Head of underwriting operations, previously an L&G underwriting team manager: runs underwriting at a mid-sized protection insurer.
+helen-jacobs-45130831 | FAIL | | | | on a career break (left)
+lara-harkins-27835b21a | PASS | 3 | underwriting | 1 | Team manager whose record shows life and disability underwriting at The Exeter and AIG, so the protection line is confirmed: P3.
+sue-kissane-859216121 | PASS | 3 | underwriting | 1 | Underwriting manager who was the society's senior medical underwriter, probably the most senior underwriter at a small income protection insurer.
+steve-betteridge-b5041a5b | PASS | 2 | underwriting | 1 | Senior development underwriter promoted within Cirencester's development team: changes the society's evidence rules.
+samuel-njoroge-ba-hons-dipcii-dldu-amus-9b571672 | PASS | 2 | underwriting | 1 | Combines underwriting analytics with development management after senior development underwriting, so he owns both the rules and the data on them.
 mark-smith-94a48538 | FAIL | | | | retired per headline
 jo-woodwards-44227b14 | FAIL | | | | left Holloway per headline
 jamie-welch-12b73b62 | PASS | 3 | underwriting | 1 | Underwriting and Claims Technical Manager at a society whose Head of Underwriting and Claims has just left: the remaining technical owner, claims-led career, so P3.
-natalie-james-7206471ba | FAIL | | | | claims-led team manager
+natalie-james-7206471ba | FAIL | | | | claims-first role, Open question 4
 alex-yates-78568889 | PASS | 1 | underwriting | 1 | Head of Underwriting, formerly a development underwriter at LV= and team manager at The Exeter: owns the evidence rules at British Friendly.
 debbie-elms-66765013 | WEAK | | underwriting | 1 | Head of Underwriting and Claims, but Alex Yates also holds Head of Underwriting at British Friendly and her career is claims-led, so one title is probably stale.
 michael-jackson-2417835b | PASS | 1 | underwriting | 1 | Head of Underwriting at Shepherds Friendly, previously ran underwriting and the claims team there: owns the evidence rules.
-val-brookes-05a32914 | WEAK | | underwriting | 1 | Claims and Underwriting Manager with an empty profile and a claims-first title, at a society whose head of underwriting is already PASS.
-killian-farrelly-96422a60 | PASS | 2 | reinsurance | 1 | Director of Protection Pricing (VP, Europe) at Pacific Life Re: prices the build risk a client evaluation would test.
-david-waters-05719b114 | PASS | 1 | reinsurance | 1 | Underwriting Director, formerly Chief Underwriter at Gen Re: a UK underwriting lead at a reinsurer, P1.
-alan-dott-b28527131 | WEAK | | reinsurance | 1 | Director of Underwriting would be P1, but the profile is empty and Pacific Life Re already has two underwriting leads PASS in this batch.
-febby-mulewa-7190a597 | PASS | 1 | reinsurance | 1 | Head of Underwriting and Claims for Protection in Europe, formerly Head of Underwriting L&H UKI at Swiss Re: the reinsurer's L&H underwriting lead.
-nikolai-harrowing-5246b353 | PASS | 2 | reinsurance | 1 | Development Underwriter at Pacific Life Re: on the team that designs client underwriting rules.
-warren-copp-40313769 | WEAK | | reinsurance | 1 | Chief Underwriter would be P1, but the profile is empty, so the person and the current role cannot be confirmed.
-justin-farrow-226782108 | PASS | 3 | reinsurance | 1 | Underwriting Manager at Pacific Life Re, ex-Swiss Re L&H underwriter: P3 underwriting manager on the reinsurance side.
-paul-reddick-154934a | WEAK | | reinsurance | 1 | Head of Medical Underwriting and Claims would be P1 or P2, but the profile is empty and cannot be confirmed.
-daragh-b-8075581a | WEAK | | reinsurance | 1 | Head of Risk for Global Protection and Capital Solutions: the card gives everyone at a reinsurer the reinsurance lane, but it names the CRO line as not the buyer.
-caroline-smith-78180535 | PASS | 2 | reinsurance | 1 | Senior Underwriting and Claims Developer at Pacific Life Re: builds the underwriting rules and evaluations offered to clients.
-james-sims-846a9251 | WEAK | | reinsurance | 1 | Underwriting Developer, the third developer at Pacific Life Re in this batch: add only for depth.
-helen-sutherland-thomas-223335123 | PASS | 2 | partnership | 1 | Lead Development Underwriter, formerly Magnum test manager at Swiss Re: builds the rules insurers run on the platform.
-james-hetherington-461ba352 | PASS | 2 | partnership | 1 | Manager of Development Underwriting at UnderwriteMe: leads the team that writes rules for insurer clients.
-pete-martin-5b401069 | WEAK | | partnership | 1 | Lead Development Underwriter for North America and UK&I, the third development underwriting lead at UnderwriteMe in this batch: add only for depth.
+val-brookes-05a32914 | WEAK | | underwriting | 1 | Claims and underwriting manager whose title puts claims first and whose Apollo record is empty, so the role cannot be confirmed.
+killian-farrelly-96422a60 | PASS | 2 | reinsurance | 1 | Directs protection pricing (VP for Europe), so he prices the build risk a client evaluation would test.
+david-waters-05719b114 | PASS | 1 | reinsurance | 1 | Was Chief Underwriter at Gen Re and is now underwriting director: a UK underwriting lead at a reinsurer, P1.
+alan-dott-b28527131 | WEAK | | reinsurance | 1 | No history at all in Apollo behind a director of underwriting title, so the person needs confirming before a P1 send.
+febby-mulewa-7190a597 | PASS | 1 | reinsurance | 1 | Heads underwriting and claims for protection in Europe after leading L&H underwriting for UK and Ireland at Swiss Re.
+nikolai-harrowing-5246b353 | PASS | 2 | reinsurance | 1 | Medical underwriter at Just Group and L&G turned development underwriter, on the team that designs client underwriting rules.
+warren-copp-40313769 | WEAK | | reinsurance | 1 | Chief Underwriter per Apollo, but with an empty record nothing confirms the person or that the title is current.
+justin-farrow-226782108 | PASS | 3 | reinsurance | 1 | Manages underwriters after senior underwriting here and L&H underwriting at Swiss Re: P3 on the reinsurance side.
+paul-reddick-154934a | WEAK | | reinsurance | 1 | Medical underwriting and claims head per Apollo; the blank profile leaves identity and tenure unverified.
+daragh-b-8075581a | WEAK | | reinsurance | 1 | Moved from finance and strategy to head of risk for global protection and capital solutions; the reinsurance lane covers him, but the card calls the CRO line not the buyer.
+caroline-smith-78180535 | PASS | 2 | reinsurance | 1 | Senior underwriting and claims developer who started as a reinsurance underwriter here: builds the rules and evaluations offered to clients.
+james-sims-846a9251 | PASS | 2 | reinsurance | 1 | Underwriting developer with L&D underwriting at Pacific Life Re and medical underwriting at Just Retirement behind him.
+helen-sutherland-thomas-223335123 | PASS | 2 | partnership | 1 | Ran Magnum testing at Swiss Re before leading development underwriting here: builds the rules insurers run on the platform.
+james-hetherington-461ba352 | PASS | 2 | partnership | 1 | Manages development underwriting at UnderwriteMe after rising from development underwriter: leads the rule-writing for insurer clients.
+pete-martin-5b401069 | PASS | 2 | partnership | 1 | Leads development underwriting for UK&I and North America after heading North American underwriting at UnderwriteMe; based in Scotland.
 will-miller-78139133 | PASS | 3 | technical-integration | 1 | VP, Head of Legal and Risk and DPO at UnderwriteMe: any data flow into the platform goes through him, P3 technical-integration.
