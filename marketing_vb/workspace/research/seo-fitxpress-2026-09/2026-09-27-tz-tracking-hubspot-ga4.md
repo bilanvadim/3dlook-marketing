@@ -176,7 +176,9 @@ updated: 2026-09-29 — одна форма на все FX-лендинги, `fx
 
 ### B6. Отчёт «FitXpress organic» в HubSpot
 
-Дашборд из четырёх отчётов:
+**Отменено 2026-10-23.** Эти отчёты живут в Google Sheet «3DLOOK Organic Dashboard» (вкладки Monthly, Contacts by page, Recent contacts), подробности в ранбуке фазы 0, п. 0.6. В HubSpot ничего собирать не нужно.
+
+Исходная спецификация. Дашборд из четырёх отчётов:
 1. Контакты по месяцам: `original source` × рабочий или личный email.
 2. Контакты с рабочим email по `first_page_seen` (топ-30) и `first_conversion_form`.
 3. FX-сделки (pipeline `Health & Fitness`) по `original_traffic_source` × квартал: количество, стадии, выигранные.
@@ -189,7 +191,7 @@ updated: 2026-09-29 — одна форма на все FX-лендинги, `fx
 - Тестовая сделка в `Health & Fitness` за 5 минут получает `original_traffic_source`, `first_page_seen` и `fx_vertical`.
 - Форма `FX | LP | Demo`, отправленная с двух разных лендингов, создаёт два контакта с разными `fx_vertical`.
 - Отправка popup с gmail-адресом блокируется (если выбран вариант 2).
-- Дашборд B6 открывается и показывает данные.
+- ~~Дашборд B6 открывается и показывает данные.~~ Отменено 23.10.
 
 ---
 

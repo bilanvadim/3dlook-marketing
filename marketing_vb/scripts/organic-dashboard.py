@@ -16,8 +16,12 @@ WHAT IT WRITES (one Google Sheet, owned by vadim.bilan@3dlook.me; sharing is don
   Dashboard     last 4 weeks vs previous 4, quarters vs the plan's targets, key keywords, six charts
                 (chart data lives in the hidden tab _chart)
   Weekly        one row per week (Mon-Sun) since 2025-09-29
-  Monthly       the same per calendar month, plus FitXpress deals by first-touch source
+  Monthly       the same per calendar month, plus FitXpress deals by first-touch source, work-email
+                contacts by original source (AI assistants apart from organic) and deals from AI
   Leads by form GA4 generate_lead by form_name, weekly, since the event exists (2026-10-07)
+  Contacts by page  work-email contacts by first page seen, last 12 months: top 30 pages, source split, forms
+  Recent contacts   every work-email contact of the last 90 days: source, first page, first form, fx_vertical,
+                    a link to the HubSpot record (no names or emails: the Sheet is open to the whole domain)
   Rankings      keyword x country: Ahrefs position now, change, Google avg position, last 12 weeks
   Rank history  every keyword x country x week (long format)
   Top pages     last 4 weeks, top 50 pages by Google clicks, with GA4 organic sessions
@@ -41,6 +45,8 @@ SOURCES AND DEFINITIONS
     estimated from the app account id), so they match the sheet Whitney and Kate read.
     Deals: product = pipeline (PIPELINES); source = original_traffic_source copied from the contact
     by the deal workflow (runbook 0.4).
+    The two contact tabs replace spec B6 (a HubSpot dashboard), dropped 2026-10-23: HubSpot reports can't
+    apply the exclusions and the product classifier above, so they would show other numbers.
   * Ahrefs API v3 site-explorer/organic-keywords for 3dlook.ai on the Sunday of each week (top 100;
     "—" = not in the top 100). ~50 units per country per week, cached in the state file, so only new
     weeks are paid for. Volume and KD from keywords-explorer/overview, refreshed every 30 days.
@@ -112,6 +118,7 @@ AI_SOURCE = (r"(chatgpt|openai|perplexity|claude\.ai|anthropic|gemini\.google|ba
 
 PRODUCTS = ["FitXpress", "Mobile Tailor", "Wrist Measurement"]
 SHORT = {"FitXpress": "FX", "Mobile Tailor": "MT", "Wrist Measurement": "WM"}
+PORTAL = 6014382                                # HubSpot account, for record links
 PIPELINES = {"67834452": "FitXpress",          # Health & Fitness
              "2491523": "Mobile Tailor", "1666823": "Mobile Tailor", "41462559": "Mobile Tailor",
              "942531392": "Wrist Measurement"}
@@ -470,6 +477,19 @@ FORM_FX = re.compile(r"^FX\b|FX Starter|FX Pricing|FX Pro\b|Telehealth & Weight 
 FORM_MT = re.compile(r"^MT\b|Pricing page \(Entreprise|Enterprise plan", re.I)
 FORM_WM = re.compile(r"^WM\b|\bWM Landing|wrist", re.I)
 WRIST_TEXT = re.compile(r"wrist|watch|bracelet", re.I)
+SOURCE_LABEL = {"ORGANIC_SEARCH": "Organic search", "AI_REFERRALS": "AI assistants", "DIRECT_TRAFFIC": "Direct",
+                "REFERRALS": "Referrals", "SOCIAL_MEDIA": "Social", "PAID_SEARCH": "Paid", "PAID_SOCIAL": "Paid",
+                "EMAIL_MARKETING": "Email & campaigns", "OTHER_CAMPAIGNS": "Email & campaigns", "OFFLINE": "Offline"}
+SOURCES = ["Organic search", "AI assistants", "Direct", "Referrals", "Social", "Paid", "Email & campaigns",
+           "Offline", "Not set"]
+
+
+def page_label(url: str | None) -> str | None:
+    """First page seen as a path on 3dlook.ai, or host + path elsewhere (the MT app, old domains)."""
+    if not url:
+        return None
+    host = urllib.parse.urlsplit(url).netloc.lower().removeprefix("www.") if "://" in url else ""
+    return norm_path(url) if host in ("", "3dlook.ai") else host + norm_path(url).rstrip("/")
 
 
 def collect_hubspot(start: _dt.date, end: _dt.date) -> dict:
@@ -478,7 +498,8 @@ def collect_hubspot(start: _dt.date, end: _dt.date) -> dict:
     lo, hi = f"{start.isoformat()}T00:00:00Z", f"{(end + _dt.timedelta(days=1)).isoformat()}T00:00:00Z"
     window = [{"propertyName": "createdate", "operator": "GTE", "value": lo},
               {"propertyName": "createdate", "operator": "LT", "value": hi}]
-    props = sorted(set(hr.PROPS) | {"createdate", "hs_analytics_source", "icp_segment"})
+    props = sorted(set(hr.PROPS) | {"createdate", "hs_analytics_source", "hs_analytics_source_data_1",
+                                     "icp_segment", "fx_vertical"})
     contacts = hubspot_search("CONTACT", [{"filters": window + [{"propertyName": "first_conversion_event_name",
                                                                   "operator": "HAS_PROPERTY"}]}], props)
     inbound, dropped = [], defaultdict(int)
@@ -515,7 +536,10 @@ def collect_hubspot(start: _dt.date, end: _dt.date) -> dict:
                     product = "Not assigned"
         src = p.get("hs_analytics_source") or ""
         inbound.append({"day": _dt.date.fromisoformat(p["createdate"][:10]), "work": work, "product": product,
-                        "organic": src in ("ORGANIC_SEARCH", "AI_REFERRALS")})
+                        "organic": src in ("ORGANIC_SEARCH", "AI_REFERRALS"),
+                        "source": SOURCE_LABEL.get(src, "Not set"), "source_detail": p.get("hs_analytics_source_data_1"),
+                        "page": page_label(p.get("hs_analytics_first_url")), "form": form or None,
+                        "fx_vertical": p.get("fx_vertical"), "id": p["_id"]})
 
     deals = []
     for d in hubspot_search("DEAL", [{"filters": window}],
@@ -526,7 +550,7 @@ def collect_hubspot(start: _dt.date, end: _dt.date) -> dict:
                "Offline & outbound" if ots == "Offline Sources" else "Other")
         deals.append({"day": _dt.date.fromisoformat(d["createdate"][:10]),
                       "product": PIPELINES.get(d.get("pipeline") or "", "Other"),
-                      "source": src, "won": d.get("hs_is_closed_won") == "true"})
+                      "source": src, "ai": ots == "AI Referrals", "won": d.get("hs_is_closed_won") == "true"})
 
     mt = load_module("mt_selfserve_report", MT_SELFSERVE)
     rows, _stats = mt.build_rows(mt.pull_app_users(), end)
@@ -637,6 +661,7 @@ def build(end: _dt.date, gsc_pages, gsc_kw, ga, hs, ahr, kws, state) -> dict:
         if c["work"]:
             A.add(c["day"], "work")
             A.add(c["day"], f"work|{c['product']}")
+            A.add(c["day"], f"work_src|{c['source']}")
             if c["organic"]:
                 A.add(c["day"], "work_organic")
                 A.add(c["day"], f"work_organic|{c['product']}")
@@ -646,6 +671,8 @@ def build(end: _dt.date, gsc_pages, gsc_kw, ga, hs, ahr, kws, state) -> dict:
         A.add(d["day"], f"deals|{d['product']}")
         if d["source"] == "Organic search & AI":
             A.add(d["day"], f"deals_organic|{d['product']}")
+        if d["ai"]:
+            A.add(d["day"], "deals_ai")
         if d["won"]:
             A.add(d["day"], f"won|{d['product']}")
         if d["product"] == "FitXpress":
@@ -678,12 +705,14 @@ def build(end: _dt.date, gsc_pages, gsc_kw, ga, hs, ahr, kws, state) -> dict:
             a["impr"] += impr
             a["posw"] += posw
     return {"weeks": weeks, "A": A, "forms": forms, "top": top, "gkw": gkw, "ahr": ahr, "kws": kws,
-            "end": end, "overview": state.get("overview", {})}
+            "end": end, "overview": state.get("overview", {}), "work": [c for c in hs["contacts"] if c["work"]]}
 
 
 # ------------------------------------------------------------------ sheet values
 
-TABS = ["Dashboard", "Weekly", "Monthly", "Leads by form", "Rankings", "Rank history", "Top pages", "About", "_chart"]
+TABS = ["Dashboard", "Weekly", "Monthly", "Leads by form", "Contacts by page", "Recent contacts", "Rankings",
+        "Rank history", "Top pages", "About", "_chart"]
+PAGE_DAYS, PAGE_TOP, RECENT_DAYS = 365, 30, 90
 BLUE, ORANGE, AQUA, YELLOW, MAGENTA, GRAY = "#143DFF", "#EB6834", "#1BAF7A", "#EDA100", "#E87BA4", "#A8A8A8"
 NAVY, INK, MUTED, LINE = "#050F40", "#1A1A1A", "#666666", "#E5E5E5"
 PRODUCT_COLOR = {"FitXpress": BLUE, "Mobile Tailor": ORANGE, "Wrist Measurement": AQUA, "General": GRAY,
@@ -742,7 +771,9 @@ def tab_values(r: dict) -> dict:
 
     srcs = ["Organic search & AI", "Direct", "Offline & outbound", "Other"]
     rows = [["Month", *metric_hdr, *[f"FitXpress deals: {s}" for s in srcs],
-             *[f"Deals won so far: {p}" for p in PRODUCTS], "Note"]]
+             *[f"Deals won so far: {p}" for p in PRODUCTS],
+             *[f"Work-email contacts by source: {s}" for s in SOURCES], "New deals from AI assistants: all products",
+             "Note"]]
     for ym, a in M.items():
         first = _dt.date.fromisoformat(ym + "-01")
         last = next_month(first) - _dt.timedelta(days=1)
@@ -750,7 +781,8 @@ def tab_values(r: dict) -> dict:
         note = "; ".join(x for x in (f"to {fmt_day(end)}" if end < last else "",
                                      "" if ok else "GA4 not recording 5 Feb – 25 Jun 2026") if x)
         rows.append([first.isoformat(), *metric_cols(a, next_month(first) > GA4_LEADS_SINCE, ok),
-                     *[n(a[f"fx_src|{s}"]) for s in srcs], *[n(a[f"won|{p}"]) for p in PRODUCTS], note or None])
+                     *[n(a[f"fx_src|{s}"]) for s in srcs], *[n(a[f"won|{p}"]) for p in PRODUCTS],
+                     *[n(a[f"work_src|{s}"]) for s in SOURCES], n(a["deals_ai"]), note or None])
     out["Monthly"] = rows
 
     totals = defaultdict(int)
@@ -761,6 +793,40 @@ def tab_values(r: dict) -> dict:
     out["Leads by form"] = [["Week (Mon)", *forms, "Total", "Demo clicks"]] + [
         [wk.isoformat(), *[r["forms"].get(wk, {}).get(f, 0) for f in forms], sum(r["forms"].get(wk, {}).values()),
          n(W[wk]["demo_clicks"])] for wk in lead_weeks]
+
+    # ---- work-email contacts by first page and the recent ones one by one (spec B6, reports 2, 4 and 5)
+    year_ago, recent = end - _dt.timedelta(days=PAGE_DAYS - 1), end - _dt.timedelta(days=RECENT_DAYS - 1)
+    pages = defaultdict(lambda: {"all": 0, "organic": 0, "ai": 0, "recent": 0, "forms": defaultdict(int),
+                                 "last": None})
+    for c in r["work"]:
+        if not year_ago <= c["day"] <= end:
+            continue
+        a = pages[c["page"] or "(not set)"]
+        a["all"] += 1
+        a["organic"] += c["source"] == "Organic search"
+        a["ai"] += c["source"] == "AI assistants"
+        a["recent"] += c["day"] >= recent
+        a["forms"][c["form"] or "(none)"] += 1
+        a["last"] = max(a["last"] or c["day"], c["day"])
+    ranked = sorted(pages.items(), key=lambda kv: (-kv[1]["all"], -kv[1]["organic"] - kv[1]["ai"], kv[0]))
+    rows = [["First page seen", "Product of the page", f"Work-email contacts, {fmt_day(year_ago)} {year_ago.year} – "
+             f"{fmt_day(end)} {end.year}", "From organic search", "From AI assistants", "From other sources",
+             f"Last {RECENT_DAYS} days", "First form (contacts)", "Latest contact"]]
+    for page, a in ranked[:PAGE_TOP]:
+        forms_txt = "; ".join(f"{f} ×{k}" for f, k in sorted(a["forms"].items(), key=lambda fk: (-fk[1], fk[0]))[:4])
+        rows.append([page, page_product(page) if page.startswith("/") else None if page == "(not set)" else
+                     "Other site", a["all"], a["organic"],
+                     a["ai"], a["all"] - a["organic"] - a["ai"], a["recent"], forms_txt, a["last"].isoformat()])
+    rest = [a for _, a in ranked[PAGE_TOP:]]
+    if rest:
+        rows.append([f"Other pages ({len(rest)})", None, *[sum(a[k] for a in rest) for k in ("all", "organic", "ai")],
+                     sum(a["all"] - a["organic"] - a["ai"] for a in rest), sum(a["recent"] for a in rest), None, None])
+    out["Contacts by page"] = rows
+    out["Recent contacts"] = [["Created", "Product", "Original source", "Source detail", "First page seen",
+                               "First form", "FX vertical", "HubSpot"]] + [
+        [c["day"].isoformat(), c["product"], c["source"], c["source_detail"], c["page"], c["form"], c["fx_vertical"],
+         f'=HYPERLINK("https://app.hubspot.com/contacts/{PORTAL}/record/0-1/{c["id"]}","Open")']
+        for c in sorted(r["work"], key=lambda c: (c["day"], c["id"]), reverse=True) if recent <= c["day"] <= end]
 
     # ---- keywords
     sundays = [wk + _dt.timedelta(days=6) for wk in weeks]
@@ -1008,6 +1074,17 @@ ABOUT = [
                                "accounts excluded; the same definition as the “Mobile Tailor self-serve sign-ups” "
                                "sheet. Accounts the app created through its integration show HubSpot source "
                                "Offline, so “from organic search or AI” is a lower bound."],
+    ["Contact sources", "Monthly tab, “Work-email contacts by source”: the HubSpot original source of the same "
+                        "work-email inbound contacts, with AI assistants (ChatGPT, Perplexity …) apart from organic "
+                        "search. Not set = HubSpot has no source (mostly meetings and imports)."],
+    ["Contacts by page", "Work-email inbound contacts of the last 12 months by the first page HubSpot saw them on "
+                         "(any source), top 30 pages. First form = the first form or meeting they converted on. "
+                         "A page outside 3dlook.ai is shown with its host. Small numbers: read it as a list of "
+                         "what brought people in, not as conversion rates."],
+    ["Recent contacts", "Every work-email inbound contact of the last 90 days, newest first. Source detail = "
+                        "HubSpot's drill-down (the AI assistant's site, the referring domain, the import type). FX "
+                        "vertical is set by the shared FitXpress landing form. No names or emails here; HubSpot = a "
+                        "link to the record (needs HubSpot access)."],
     ["Deals", "HubSpot deals created in the period. FitXpress = pipeline Health & Fitness; Mobile Tailor = Mobile "
               "Tailor, Mobile Tailor Enterprise and MT self-serve pipelines; Wrist Measurement = Wrist Measurement "
               "pipeline. Source = the contact's original traffic source, copied onto the deal. Won = closed won "
@@ -1145,6 +1222,7 @@ def write_sheet(sid: str, meta: dict, v: dict) -> None:
     nweekly = len(v["Weekly"][0])
     widths = {"Weekly": (100, nweekly, 105), "Monthly": (120, len(v["Monthly"][0]), 105),
               "Leads by form": (100, len(v["Leads by form"][0]), 115),
+              "Contacts by page": None, "Recent contacts": None,
               "Rank history": None, "Rankings": None, "Top pages": None}
     for t, spec in widths.items():
         sh = tabs[t]
@@ -1178,6 +1256,16 @@ def write_sheet(sid: str, meta: dict, v: dict) -> None:
     for i, px in enumerate([440, 180, 130, 100, 110, 100, 110, 120, 110]):
         width(TP, i, i + 1, px)
     fmt(TP, 1, size["Top pages"][0], 3, 9, {"numberFormat": {"type": "NUMBER", "pattern": "#,##0.#"}}, "userEnteredFormat.numberFormat")
+    CP = tabs["Contacts by page"]
+    for i, px in enumerate([420, 130, 130, 100, 100, 100, 90, 420, 100]):
+        width(CP, i, i + 1, px)
+    fmt(CP, 1, size["Contacts by page"][0], 8, 9, {"numberFormat": {"type": "DATE", "pattern": "d mmm yyyy"}},
+        "userEnteredFormat.numberFormat")
+    RC = tabs["Recent contacts"]
+    for i, px in enumerate([100, 130, 120, 180, 420, 260, 150, 80]):
+        width(RC, i, i + 1, px)
+    fmt(RC, 1, size["Recent contacts"][0], 0, 1, {"numberFormat": {"type": "DATE", "pattern": "d mmm yyyy"}},
+        "userEnteredFormat.numberFormat")
     AB = tabs["About"]
     width(AB, 0, 1, 190)
     width(AB, 1, 2, 900)
