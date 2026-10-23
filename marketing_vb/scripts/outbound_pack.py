@@ -628,6 +628,40 @@ def strip_employment(s: str) -> str:
                   "", s or "", flags=re.I)
 
 
+LEGAL_TAIL = re.compile(r"^(inc|llc|ltd|limited|plc|corp|co|gmbh|ag|pty|lp|llp)\.?$", re.I)
+
+
+def split_roles(experience: str) -> list[str]:
+    """'Title at Company, Title at Company' -> one item per role.
+
+    Sales Navigator and Apollo both join roles with ", ", and titles carry commas of their
+    own: "EA to Amanda Blanc, Group Chief Executive Officer at Aviva" is ONE role. A plain
+    split made the title's tail a fake earlier role on 30+ Aviva rows (2026-10-23) and hid
+    `empty-profile` from single-role people. A piece without " at " is the head of the next
+    role's title, so it is glued on; a bare legal suffix ("Inc.") goes back to the company.
+    """
+    roles: list[str] = []
+    buf: list[str] = []
+    for part in strip_employment(experience).split(", "):
+        if not part.strip():
+            continue
+        # "Inc." after a company, or the rest of "BAPRAS (British Association of Plastic, …)"
+        if roles and not buf and (LEGAL_TAIL.match(part.strip())
+                                  or roles[-1].count("(") > roles[-1].count(")")):
+            roles[-1] += ", " + part
+            continue
+        buf.append(part)
+        if " at " in part:
+            roles.append(", ".join(buf))
+            buf = []
+    if buf:                              # trailing pieces with no " at ": a company's tail
+        if roles:
+            roles[-1] += ", " + ", ".join(buf)
+        else:
+            roles.append(", ".join(buf))
+    return roles
+
+
 def legit_company_pages(people: list[dict], raw: dict[str, dict], gmap: dict[str, str],
                         urls: dict[str, set[str]]) -> dict[str, set[str]]:
     """group -> company pages that really are that group.
@@ -662,7 +696,7 @@ def person_flags(p: dict, raw: dict, profile: str, grp: str,
         known = urls.get(grp) or set()
         if cslug and known and cslug not in known:
             flags.append(f"other-company-page:{cslug}")
-        roles = [r for r in strip_employment(raw.get("experience", "")).split(", ") if r]
+        roles = split_roles(raw.get("experience", ""))
         if not raw.get("bio", "").strip() and not raw.get("skills", "").strip() and len(roles) <= 1:
             flags.append("empty-profile")
         owner = PIPE.geo_profile(raw.get("location", ""))
@@ -715,7 +749,7 @@ def cmd_compact(args) -> int:
         for f in flags:
             flagged[f.split(":")[0]] += 1
         title = p.get("title", "")
-        exp = [x for x in strip_employment(r.get("experience", "")).split(", ") if x]
+        exp = split_roles(r.get("experience", ""))
         rows.append({
             "person_id": pid,
             "full_name": p.get("full_name") or f"{p.get('first_name','')} {p.get('last_name','')}".strip(),
@@ -1478,7 +1512,7 @@ def cmd_profiles(args) -> int:
         for p in sorted(ppl, key=lambda x: (group_of(x, gmap), wave_of(x), x.get("priority", "9"))):
             pid = p["person_id"]
             r = raw.get(pid, {})
-            exp = [x for x in strip_employment(r.get("experience", "")).split(", ") if x]
+            exp = split_roles(r.get("experience", ""))
             head = clip(r.get("headline", ""), 140)
             out += [f"### {pid}",
                     f"{p.get('full_name','')} · first name: {p.get('first_name','')} · "
