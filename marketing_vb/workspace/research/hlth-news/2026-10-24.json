@@ -1,0 +1,94 @@
+{
+ "generated": "2026-10-24T05:40:49+00:00",
+ "items": [
+  {
+   "id": "a2feaab2-ad35-4d3b-b535-7388407831ce",
+   "title": "Eko Health Launches FDA-Cleared CORE 300 Stethoscope with AI-Assisted Heart Murmur Detection",
+   "date": "2026-10-23",
+   "tags": [
+    "Primary Care",
+    "Diagnostics",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/eko-health-launches-fda-cleared-core-300-stethoscope-with-ai-assisted-heart-murmur-detection"
+  },
+  {
+   "id": "a4204354-bbfd-41e4-a928-931a7413483c",
+   "title": "Talkiatry Expands Integrated Therapy and Psychiatry Services Across All 50 U.S. States",
+   "date": "2026-10-23",
+   "tags": [
+    "Mental & Behavioral Health",
+    "Telehealth / Virtual Care / Remote Patient Monitoring",
+    "Investments and Partnerships",
+    "Startup",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/talkiatry-expands-integrated-therapy-and-psychiatry-services-across-all-50-u-s-states"
+  },
+  {
+   "id": "d2326ef8-66da-48b5-9298-a0e82c398620",
+   "title": "Withings and Function Integrate Connected Health Data with Comprehensive Lab Testing",
+   "date": "2026-10-23",
+   "tags": [
+    "Consumer Wellness and Technology",
+    "Diagnostics",
+    "Health Tech, Solutions & Services",
+    "Chronic Condition Management"
+   ],
+   "url": "https://hlth.com/insights/news/withings-and-function-integrate-connected-health-data-with-comprehensive-lab-testing"
+  }
+ ],
+ "analyses": {
+  "a2feaab2-ad35-4d3b-b535-7388407831ce": {
+   "id": "a2feaab2-ad35-4d3b-b535-7388407831ce",
+   "score": 0,
+   "segment": "—",
+   "what": "Eko Health запустила в США стетоскоп CORE 300 з FDA 510(k). AI в ньому знаходить структурні шуми серця, пристрій коштує $199, AI-аналіз іде за підпискою Eko+ ($119.99 на рік). Далі компанія планує запуск у Canada, UK і Європі.",
+   "why": "Це цифрова аускультація для серцевого скринінгу в primary care. Body data, BMI і вимірювання тіла тут взагалі не задіяні.",
+   "play": "none",
+   "companies": [
+    "Eko Health"
+   ],
+   "_date": "2026-10-23"
+  },
+  "a4204354-bbfd-41e4-a928-931a7413483c": {
+   "id": "a4204354-bbfd-41e4-a928-931a7413483c",
+   "score": 0,
+   "segment": "—",
+   "what": "Talkiatry, що раніше в 2026 році залучила Series D на $210M, розширила інтегровану терапію й психіатрію на всі 50 штатів США. У компанії 400+ терапевтів і 800+ психіатрів у штаті, страхове покриття понад 170M людей.",
+   "why": "Це mental health telehealth, де вага, BMI і прогрес тіла не входять у клінічний workflow, тож точки входу для FitXpress немає.",
+   "play": "none",
+   "companies": [
+    "Talkiatry",
+    "American Medical Group Association"
+   ],
+   "_date": "2026-10-23"
+  },
+  "d2326ef8-66da-48b5-9298-a0e82c398620": {
+   "id": "d2326ef8-66da-48b5-9298-a0e82c398620",
+   "score": 2,
+   "segment": "FitXpress §1 Telehealth & GLP-1 (preventive-health / longevity memberships, як у кампаніях Everlab look-alike)",
+   "what": "Withings і Function стали партнерами: дані з пристроїв Withings (body composition, тиск тощо) тепер синхронізуються в застосунок Function, а результати 160+ лабораторних тестів Function з'являються в застосунку Withings. Серед сценаріїв компанії прямо називають контроль ваги та моніторинг змін на GLP-1. Поки що працює лише в США, членство Function коштує $365 на рік.",
+   "why": "Function, preventive-health мембершип у США, додав longitudinal body composition до лабораторних тестів і прямо прив'язав це до GLP-1. Отже, у сегменті body progress стає частиною продукту. Але ці дані з'являються лише в тих членів, хто має пристрій Withings (у статті йдеться про знижку 10% на нього). FitXpress дає body composition, BMI і 80+ вимірювань з двох фото смартфона прямо в застосунку, тож будь-який схожий мембершип може показувати прогрес між лабораторними тестами без доставки заліза.",
+   "play": "lookalikes",
+   "companies": [
+    "Withings",
+    "Function"
+   ],
+   "campaign": {
+    "title": "US preventive-health & longevity memberships (Function look-alike)",
+    "profile": "nick",
+    "market": "USA",
+    "targets": "Американські мембершипи з лабораторними тестами, preventive health і longevity (типу Function), а також longevity-клініки з членством, у продукті яких ще немає пристрою для body composition. Superpower виключити: nick уже з ними контактував. Сам Function лише як окремий тест з низьким пріоритетом.",
+    "roles": "Founder / CEO, Head of Product / Product Manager, Chief Medical Officer / Medical Director, Head of Member Engagement / Retention, CTO (кут technical-integration)",
+    "angle": "Function щойно поставив body composition поруч із результатами аналізів і говорить про моніторинг змін на GLP-1, тобто ринок вже чекає видимого body progress між лабораторними тестами. Ви можете дати це кожному члену з двох фото смартфона у своєму застосунку, без ваг і без партнерства з виробником пристроїв.",
+    "existing_campaign": "",
+    "task": "USA: preventive-health/longevity lab-testing memberships (Function look-alikes) without a body-composition device — add photo-based body composition and progress tracking between lab panels, incl. GLP-1 members"
+   },
+   "caveat": "Function щойно обрав апаратне рішення (Withings), тому прямий пітч Function конкурує зі свіжим партнером, лише low-priority. Superpower вже контактований (nick). Окремого US longevity-кейсу в ICP немає, тож сегмент притягнутий до §1, як у кампаніях Everlab look-alike для EU та LATAM: потрібна перевірка Вадимом. Для lookalikes перевірити поріг revenue $2M+ і відсутність власних device-партнерств. Не обіцяти клінічних результатів щодо GLP-1 чи lean mass і не згадувати точність.",
+   "_date": "2026-10-23"
+  }
+ },
+ "posts": []
+}
