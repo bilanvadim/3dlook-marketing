@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-23",
+  "last_updated": "2026-10-26",
   "companies": {
     "safariland": {
       "covered_by_profile": null,
@@ -2697,6 +2697,182 @@
       "display_name": "Maximus",
       "covered_by_profile": "nick",
       "campaign_id": "2026-10-22-us-mens-health-weight",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "aviva": {
+      "display_name": "Aviva",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-22-uk-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "british-friendly": {
+      "display_name": "British Friendly",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-22-uk-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "cirencester-friendly-society": {
+      "display_name": "Cirencester Friendly Society",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-22-uk-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "exeter": {
+      "display_name": "The Exeter",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-22-uk-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "gen-re-uk": {
+      "display_name": "Gen Re UK",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-22-uk-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "guardian-financial-services": {
+      "display_name": "Guardian Financial Services",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-22-uk-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "hannover-re-uk-life-branch": {
+      "display_name": "Hannover Re UK Life Branch",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-22-uk-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "holloway-friendly": {
+      "display_name": "Holloway Friendly",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-22-uk-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "ipipeline-uk": {
+      "display_name": "iPipeline UK",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-22-uk-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "legal-general": {
+      "display_name": "Legal & General",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-22-uk-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "lv": {
+      "display_name": "LV=",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-22-uk-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "munich-re-uk-life-branch": {
+      "display_name": "Munich Re UK Life Branch",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-22-uk-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "pacific-life-re": {
+      "display_name": "Pacific Life Re",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-22-uk-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "rga-uk": {
+      "display_name": "RGA UK",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-22-uk-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "royal-london": {
+      "display_name": "Royal London",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-22-uk-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "scor-uk": {
+      "display_name": "SCOR UK",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-22-uk-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "scottish-widows": {
+      "display_name": "Scottish Widows",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-22-uk-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "shepherds-friendly": {
+      "display_name": "Shepherds Friendly",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-22-uk-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "swiss-re-uk": {
+      "display_name": "Swiss Re UK",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-22-uk-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "underwriteme": {
+      "display_name": "UnderwriteMe",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-22-uk-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "vitalitylife": {
+      "display_name": "VitalityLife",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-22-uk-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-22",
+      "status": "active"
+    },
+    "zurich-uk": {
+      "display_name": "Zurich UK",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-22-uk-insurance-underwriting",
       "product": "fitxpress",
       "date": "2026-10-22",
       "status": "active"

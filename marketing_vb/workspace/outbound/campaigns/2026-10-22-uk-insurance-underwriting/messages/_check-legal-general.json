@@ -1,0 +1,435 @@
+{
+ "campaign": "2026-10-22-uk-insurance-underwriting",
+ "checked": 19,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "legal-general",
+ "generated": "2026-10-26T10:32:04",
+ "hard": [],
+ "soft": [
+  [
+   "pricing word",
+   "hai-luc-67306367 M1",
+   "Hi Hai, Quick note on your move from pricing to leading actuarial research for Retail Protection at Legal & G…"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: spiterimichael / tariq-surty-8911101",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: spiterimichael / nicki-plews-b037aa2b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: spiterimichael / jenni-phillips-98892a24",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: spiterimichael / david-banks-9b750391",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: spiterimichael / brian-kemp-0467b898",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: spiterimichael / scott-wallace-b608b49b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: spiterimichael / pippa-barber-nee-keefe-487b64b6",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: spiterimichael / bethan-shepherd-12a39763",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: spiterimichael / andrew-greatbanks-9712b03b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: tariq-surty-8911101 / nicki-plews-b037aa2b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: tariq-surty-8911101 / jenni-phillips-98892a24",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: tariq-surty-8911101 / david-banks-9b750391",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: tariq-surty-8911101 / brian-kemp-0467b898",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: tariq-surty-8911101 / scott-wallace-b608b49b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: tariq-surty-8911101 / pippa-barber-nee-keefe-487b64b6",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: tariq-surty-8911101 / bethan-shepherd-12a39763",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: tariq-surty-8911101 / andrew-greatbanks-9712b03b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jennyreeve / gary-m-3b7b913b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jennyreeve / sdavis2",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jennyreeve / crissaunders",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jennyreeve / sara-denyer-b81a2a92",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jennyreeve / john-redmond-884597a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jennyreeve / drtarungupta",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jennyreeve / nicky-mcrae-a4a3b5206",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jennyreeve / hai-luc-67306367",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: gary-m-3b7b913b / sdavis2",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: gary-m-3b7b913b / crissaunders",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: gary-m-3b7b913b / sara-denyer-b81a2a92",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: gary-m-3b7b913b / john-redmond-884597a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: gary-m-3b7b913b / drtarungupta",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: gary-m-3b7b913b / nicky-mcrae-a4a3b5206",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: gary-m-3b7b913b / hai-luc-67306367",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: sdavis2 / crissaunders",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: sdavis2 / sara-denyer-b81a2a92",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: sdavis2 / john-redmond-884597a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: sdavis2 / drtarungupta",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: sdavis2 / nicky-mcrae-a4a3b5206",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: sdavis2 / hai-luc-67306367",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: crissaunders / sara-denyer-b81a2a92",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: crissaunders / john-redmond-884597a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: crissaunders / drtarungupta",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: crissaunders / nicky-mcrae-a4a3b5206",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: crissaunders / hai-luc-67306367",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: nicki-plews-b037aa2b / jenni-phillips-98892a24",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: nicki-plews-b037aa2b / david-banks-9b750391",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: nicki-plews-b037aa2b / brian-kemp-0467b898",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: nicki-plews-b037aa2b / scott-wallace-b608b49b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: nicki-plews-b037aa2b / pippa-barber-nee-keefe-487b64b6",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: nicki-plews-b037aa2b / bethan-shepherd-12a39763",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: nicki-plews-b037aa2b / andrew-greatbanks-9712b03b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: sara-denyer-b81a2a92 / john-redmond-884597a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: sara-denyer-b81a2a92 / drtarungupta",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: sara-denyer-b81a2a92 / nicky-mcrae-a4a3b5206",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: sara-denyer-b81a2a92 / hai-luc-67306367",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jenni-phillips-98892a24 / david-banks-9b750391",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jenni-phillips-98892a24 / brian-kemp-0467b898",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jenni-phillips-98892a24 / scott-wallace-b608b49b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jenni-phillips-98892a24 / pippa-barber-nee-keefe-487b64b6",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jenni-phillips-98892a24 / bethan-shepherd-12a39763",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jenni-phillips-98892a24 / andrew-greatbanks-9712b03b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: john-redmond-884597a / drtarungupta",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: john-redmond-884597a / nicky-mcrae-a4a3b5206",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: john-redmond-884597a / hai-luc-67306367",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: david-banks-9b750391 / brian-kemp-0467b898",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: david-banks-9b750391 / scott-wallace-b608b49b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: david-banks-9b750391 / pippa-barber-nee-keefe-487b64b6",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: david-banks-9b750391 / bethan-shepherd-12a39763",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: david-banks-9b750391 / andrew-greatbanks-9712b03b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: brian-kemp-0467b898 / scott-wallace-b608b49b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: brian-kemp-0467b898 / pippa-barber-nee-keefe-487b64b6",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: brian-kemp-0467b898 / bethan-shepherd-12a39763",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: brian-kemp-0467b898 / andrew-greatbanks-9712b03b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: drtarungupta / nicky-mcrae-a4a3b5206",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: drtarungupta / hai-luc-67306367",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: scott-wallace-b608b49b / pippa-barber-nee-keefe-487b64b6",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: scott-wallace-b608b49b / bethan-shepherd-12a39763",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: scott-wallace-b608b49b / andrew-greatbanks-9712b03b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: nicky-mcrae-a4a3b5206 / hai-luc-67306367",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: pippa-barber-nee-keefe-487b64b6 / bethan-shepherd-12a39763",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: pippa-barber-nee-keefe-487b64b6 / andrew-greatbanks-9712b03b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: bethan-shepherd-12a39763 / andrew-greatbanks-9712b03b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«a smart scales weight estimate…»: andrew-greatbanks-9712b03b, drtarungupta, gary-m-3b7b913b, scott-wallace-b608b49b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«a threshold the insurer sets…»: andrew-greatbanks-9712b03b, crissaunders, drtarungupta, scott-wallace-b608b49b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«to the insurer s systems…»: nicki-plews-b037aa2b, spiterimichael, tariq-surty-8911101"
+  ]
+ ]
+}

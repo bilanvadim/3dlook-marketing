@@ -1,0 +1,270 @@
+{
+ "campaign": "2026-10-22-uk-insurance-underwriting",
+ "checked": 35,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-3",
+ "generated": "2026-10-26T10:36:21",
+ "hard": [],
+ "soft": [
+  [
+   "pricing word",
+   "lucy-luscombe-837866b2 M1",
+   "Hi Lucy, Your years as an actuary at LV= now feed the protection pricing you lead, where build loadings meet…"
+  ],
+  [
+   "pricing word",
+   "lucy-luscombe-837866b2 M2",
+   "The record sits beside pricing and does not rate or price."
+  ],
+  [
+   "near-duplicate sentence",
+   "The Exeter: suzy-esson-996a5875 / toby-bainbridge-063483a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Exeter: jack-southcott-30959929 / david-piggin-a6039a27",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Exeter: jack-southcott-30959929 / ed-lyon-803766210",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Exeter: jack-southcott-30959929 / lara-harkins-27835b21a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Exeter: david-piggin-a6039a27 / ed-lyon-803766210",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Exeter: david-piggin-a6039a27 / lara-harkins-27835b21a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Exeter: ed-lyon-803766210 / lara-harkins-27835b21a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Shepherds Friendly: teamsandell / ann-marie-o-dea-72104a24",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Shepherds Friendly: teamsandell / michael-williams-0901a823",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Shepherds Friendly: teamsandell / samuelchivers",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Shepherds Friendly: teamsandell / elizabeth-cook-2019",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Shepherds Friendly: ann-marie-o-dea-72104a24 / michael-williams-0901a823",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Shepherds Friendly: ann-marie-o-dea-72104a24 / samuelchivers",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Shepherds Friendly: ann-marie-o-dea-72104a24 / elizabeth-cook-2019",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Shepherds Friendly: michael-williams-0901a823 / samuelchivers",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Shepherds Friendly: michael-williams-0901a823 / elizabeth-cook-2019",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Shepherds Friendly: samuelchivers / elizabeth-cook-2019",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Shepherds Friendly: steve-smith-85b45976 / michael-jackson-2417835b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Cirencester Friendly Society: johnunderwood2 / sue-kissane-859216121",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Cirencester Friendly Society: johnunderwood2 / steve-betteridge-b5041a5b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Cirencester Friendly Society: johnunderwood2 / samuel-njoroge-ba-hons-dipcii-dldu-amus-9b571672",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Cirencester Friendly Society: sue-kissane-859216121 / steve-betteridge-b5041a5b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Cirencester Friendly Society: sue-kissane-859216121 / samuel-njoroge-ba-hons-dipcii-dldu-amus-9b571672",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Cirencester Friendly Society: steve-betteridge-b5041a5b / samuel-njoroge-ba-hons-dipcii-dldu-amus-9b571672",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "LV=: karl-pickering-1918555 / gary-beyer-37995610",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "LV=: karl-pickering-1918555 / lucy-luscombe-837866b2",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "LV=: karl-pickering-1918555 / gareth-hurst-b2053a148",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "LV=: gary-beyer-37995610 / gareth-hurst-b2053a148",
+   "«fitxpress would add one: 2 photos return a smart…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "LV=: gary-beyer-37995610 / lucy-luscombe-837866b2",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "LV=: lucy-luscombe-837866b2 / gareth-hurst-b2053a148",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re UK Life Branch: lloyd-williams62 / adrian-stevenson",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re UK Life Branch: lloyd-williams62 / matt-bone-4b127a4a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re UK Life Branch: lloyd-williams62 / james-norton-591741b2",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re UK Life Branch: adrian-stevenson / matt-bone-4b127a4a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re UK Life Branch: adrian-stevenson / james-norton-591741b2",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re UK Life Branch: matt-bone-4b127a4a / james-norton-591741b2",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re UK Life Branch: jonathan-carnell-26526b205 / sridharanmadhusudhanan",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA UK: anna-c-6b5a7226 / emma-jones-99a3834b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA UK: anna-c-6b5a7226 / anna-graham-fia",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA UK: anna-c-6b5a7226 / deanscotson",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA UK: emma-jones-99a3834b / anna-graham-fia",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA UK: emma-jones-99a3834b / deanscotson",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA UK: rebecca-abayakoon-certified-falu-bcom-snrassoc-anziif-669b345 / mike-evans-9760a310a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA UK: anna-graham-fia / deanscotson",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×17",
+   "«a smart scales weight estimate…»: adrian-stevenson, ann-marie-o-dea-72104a24, anna-c-6b5a7226, anna-graham-fia"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«a flag when the gap…»: anna-c-6b5a7226, david-piggin-a6039a27, elizabeth-cook-2019, gareth-hurst-b2053a148"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«between declared and estimated weight…»: david-piggin-a6039a27, ed-lyon-803766210, mike-evans-9760a310a, sue-kissane-859216121"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«a gap between declared and…»: david-piggin-a6039a27, mike-evans-9760a310a, sue-kissane-859216121"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«how often a flag agrees…»: lloyd-williams62, rachel-haig-993536223, steve-betteridge-b5041a5b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«within 30 days per the…»: deanscotson, johnunderwood2, samuelchivers"
+  ]
+ ]
+}

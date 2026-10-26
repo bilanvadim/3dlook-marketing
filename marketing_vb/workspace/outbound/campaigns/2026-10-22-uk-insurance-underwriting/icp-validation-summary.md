@@ -51,6 +51,16 @@ PASS by angle: underwriting 57 · reinsurance 36 · proposition 23 · referral 1
 4. **Pools:** recommended first is CEOs and COOs of the single-line protection mutuals as `referral` (Holloway, Shepherds, The Exeter, Cirencester returned no other owner there). The rest are in each batch section.
 5. **Royal London × LV=.** Two web searches found only the 2021-22 history (Bain vote failed, Royal London talks ended); QC could not verify either way. If a deal closed, LV= (5 PASS) falls under the recent-acquisition rule. Confirm before import.
 
+### Vadim's answers, 2026-10-26
+
+Every recommended option taken (`hypothesis.md`, «Vadim's decisions 2026-10-26»), applied through `decisions.md` + `apply-decisions`: **PASS 176** (+16) · WEAK 125 · FAIL 982.
+
+1. Group parents as they are: Ladva WEAK; Emma Jones and Rebecca Abayakoon stay PASS P2.
+2. Marszalek and Yarham (P1 `underwriting`), Deborah Smith (P1 `medical`) go out; Colley and Flowers stay WEAK.
+3. The six VitalityLife heads of product go out as P3 `proposition`; Andy Penny and Mark Paxford FAIL.
+4. Pool A1 only: CEOs/COOs of the single-line mutuals as P3 `referral` (Pears, Barrell, O'Dea, J. Sandell, Chivers, Esson, Howe). Every other pool stays out.
+5. Royal London × LV=: no deal (talks ended February 2022; Royal London later bought only Wealth Wizards from LV=). LV= stays.
+
 ## Main finding: the Sales Navigator export was pulled by company, not by title
 
 All three Sales Nav validators found it independently: the export is every senior person at each company (speechwriting, events, catering, PAs). Across the 12 companies it held no Chief Underwriter, CUO, CMO or development/philosophy/rules underwriter; the only P1 underwriting owner was Sue Hendry (Aviva, Head of Protection UW/Claims and Customer Services). Of 1,006 Sales Nav people 45 PASS. The two Apollo pulls by the hypothesis titles gave 52 of 135 and 63 of 142 (after the QC fix round), and brought in the underwriting and medical lanes: Royal London Chief Underwriter, L&G Underwriting & Claims Director and CMO, Aviva Head of Underwriting Strategy & Governance, heads of underwriting at British Friendly and Shepherds Friendly, the reinsurers' CUOs and CMOs.

@@ -746,7 +746,7 @@ kannansundarraj | FAIL | | | | IT transformation, scope not shown
 kim-brown-47361a399 | FAIL | | | | master trust pensions, out of line
 lee-taylor-3498b93a2 | FAIL | | | | duplicate of lee-taylor-0216721a
 leanne-blasdale-150b063b5 | FAIL | | | | customer payroll, no line
-suzy-esson-996a5875 | FAIL | | | | COO, not evidence owner
+suzy-esson-996a5875 | PASS | 3 | referral | 1 | COO of The Exeter, earlier COO and board member at Holloway Friendly; P3 referral by Vadim 2026-10-26.
 jay-brown-8b844674 | FAIL | | | | estates and facilities head
 marc-perry-dip-pfs-39325a73 | FAIL | | | | advice channel distribution director
 amy-higgs-a1960563 | PASS | 3 | referral | 1 | Head of Strategic Transformation at Royal London: a group-wide transformation lead, which the card tiers P3 in the referral lane.
@@ -760,7 +760,7 @@ mike-byrne-598a7072 | FAIL | | | | BPA, out of line
 kaylee-beveridge-b3682b71 | FAIL | | | | PMO head
 phil-quarmby-b41b4b71 | FAIL | | | | data transformation head
 etienneburger | FAIL | | | | group strategy director
-teamsandell | FAIL | | | | CEO, insurer not platform
+teamsandell | PASS | 3 | referral | 1 | CEO of Shepherds Friendly with a customer and proposition background (Embark Group); P3 referral by Vadim 2026-10-26.
 catherine-hewitt-865a0 | FAIL | | | | comms, bancassurance and wealth
 rebecca-myatt-9527aa30 | FAIL | | | | customer experience head
 ali-law-b65291 | WEAK | | technical-integration | 1 | CIO at The Exeter, a protection-and-health mutual with no CTO in the pull: the card excludes CIOs as group-wide, which does not hold at an insurer this size.
@@ -777,7 +777,7 @@ michael-lyne-ab55051 | FAIL | | | | actuarial platforms IT
 kevin-gilling-71b0952 | FAIL | | | | property and facilities
 ianbromwich | FAIL | | | | CIO, card excludes
 mylesrix | FAIL | | | | global operations head, reinsurer
-benhowe | FAIL | | | | COO, not evidence owner
+benhowe | PASS | 3 | referral | 1 | COO of Cirencester Friendly Society, consulting background (Revica); P3 referral by Vadim 2026-10-26.
 charlesking001 | WEAK | | reinsurance | 1 | Head of Digital Process at Pacific Life Re with a Swiss Re insurance risk review background: could be underwriting process digitisation or internal process work, and the title does not say which.
 ruaridh-wallace | FAIL | | | | IT platform head
 alan-green-55620b4 | FAIL | | | | technology solutions director, reinsurer
@@ -906,7 +906,7 @@ aaron-c-67887252 | FAIL | | | | business continuity, reinsurer
 gillian-hunt-2b77a521 | FAIL | | | | pensions business development
 lee-bowd | FAIL | | | | infrastructure head, reinsurer
 chris-agius-1143aa22 | FAIL | | | | internal audit head
-ann-marie-o-dea-72104a24 | FAIL | | | | group CEO, insurer
+ann-marie-o-dea-72104a24 | PASS | 3 | referral | 1 | CEO of Shepherds Group, parent of the Shepherds Friendly protection mutual; P3 referral by Vadim 2026-10-26.
 claire-hird-29948523 | FAIL | | | | outsourced operations head
 michael-williams-0901a823 | PASS | 3 | referral | 1 | Chief Change Officer at Shepherds Friendly: the society-wide transformation lead, P3 referral per the card.
 leemwilson | FAIL | | | | data and AI strategy
@@ -924,7 +924,7 @@ alan-ritchie-45b48056 | FAIL | | | | equity release, out of line
 willhutchinson | WEAK | | technical-integration | 1 | Director of Engineering (data and AI) at UnderwriteMe, one of four engineering directors with no CTO in the pull.
 sergeykobzar | WEAK | | technical-integration | 1 | Director of Engineering at UnderwriteMe, one of four engineering directors with no CTO in the pull.
 neil-mccaig | FAIL | | | | data engineering head
-pearsben | FAIL | | | | CEO, insurer not platform
+pearsben | PASS | 3 | referral | 1 | CEO of Holloway Friendly, an income protection mutual where the export returned no other underwriting owner; P3 referral by Vadim 2026-10-26.
 maureen-blair-95bb7726 | FAIL | | | | data transformation delivery
 stephen-carr-2643b127 | FAIL | | | | operational resilience director
 jack-southcott-30959929 | PASS | 2 | proposition | 1 | Head of Proposition (Protection) at The Exeter: a protection proposition head, P2 per the card.
@@ -937,7 +937,7 @@ saraopenshaw | FAIL | | | | PMO head
 stuart-basquil-657a792a | FAIL | | | | workplace pensions business development
 james-harrison-8374412a | FAIL | | | | business controls head
 daniel-simpson-340ab860 | WEAK | | proposition | 1 | Chief Commercial Officer at Shepherds Friendly with a product, proposition and insurance pricing background: at a small mutual the commercial chief may own the protection proposition.
-samuelchivers | FAIL | | | | COO, not evidence owner
+samuelchivers | PASS | 3 | referral | 1 | COO of Shepherds Friendly, formerly chaired the AFM IT network roundtable; P3 referral by Vadim 2026-10-26.
 alanpich | WEAK | | technical-integration | 1 | Director of Platform Engineering at UnderwriteMe, one of four engineering directors with no CTO in the pull.
 matthew-barclay-63a65412a | WEAK | | reinsurance | 1 | Director in Client Solutions at Pacific Life Re (ex head of financial risk at Utmost Life and Pensions): the solutions team per the card, but his background points to financial rather than underwriting solutions.
 nikeshsmistry | FAIL | | | | chief audit officer
@@ -976,7 +976,7 @@ sophie-hadfield-718b22111 | WEAK | | proposition | 1 | Head of Proposition at mu
 martin-boniface-jones-371173112 | PASS | 2 | reinsurance | 1 | AVP in R&D at Pacific Life Re (actuary): the reinsurer research team the card names.
 paul-bowker-7144a2112 | FAIL | | | | BPA solutions, out of line
 wendy-m-3242a9130 | FAIL | | | | PA
-sarah-barrell-133690131 | FAIL | | | | COO, not evidence owner
+sarah-barrell-133690131 | PASS | 3 | referral | 1 | COO for Wiltshire Friendly, now part of Holloway Friendly (the merger is never mentioned in copy); P3 referral by Vadim 2026-10-26.
 jack-lisamore-a63125136 | FAIL | | | | workplace business development
 philip-jones-cmgr-mcmi-992537166 | FAIL | | | | resource planning head
 nic-herbert-aa587a170 | WEAK | | technical-integration | 1 | Head of Technology and Change at British Friendly, a small income-protection mutual: the top technology owner there, though the title is not CTO.
@@ -1018,9 +1018,9 @@ louise-colley-4252243a | WEAK | | proposition | 1 | Protection Director is a P1 
 shaun-beale-18574224 | WEAK | | underwriting | 1 | Claims and Underwriting Development in Swindon (Zurich's life office) fits P2, but the profile is empty and half the title is claims.
 sally-watford-35a798310 | WEAK | | underwriting | 1 | Head of Underwriting Operations; the line is not shown and her reinsurance-services background reads GI.
 paul-green-fcii-31886280 | FAIL | | | | GI underwriting manager
-andy-penny-42859137 | WEAK | | underwriting | 1 | Underwriting Manager (P3) with an empty profile: life or GI cannot be told, and most Zurich UK underwriting managers here are GI.
+andy-penny-42859137 | FAIL |  |  |  | Underwriting Manager at Zurich UK with an empty profile; dropped by Vadim 2026-10-26.
 mike-green-a1a6162a | FAIL | | | | GI property underwriting manager
-mark-paxford-75267011b | WEAK | | underwriting | 1 | Underwriting Manager (P3) with an empty profile; lives near Zurich's Swindon life office, but the line is not shown.
+mark-paxford-75267011b | FAIL |  |  |  | Underwriting Manager at Zurich UK with an empty profile; dropped by Vadim 2026-10-26.
 joanne-andersen-81b894407 | FAIL | | | | underwriting training academy manager
 karen-feeney-78102293 | FAIL | | | | GI broker development underwriter
 adrianhhill | PASS | 2 | underwriting | 1 | Life Development Underwriter (ex Dentists' Provident, an income-protection insurer): the team that changes the protection rules engine.
@@ -1053,17 +1053,17 @@ matt-sainsbury | FAIL | | | | GI corporate risk innovation
 kylie-maxam-954007218 | WEAK | | underwriting | 1 | Operational Transformation Underwriter in Swindon, ex Guardian medical underwriter: life side and change work, but an individual underwriter title without development or rules.
 nicky-le-roux-7b8b758 | PASS | 2 | underwriting | 1 | Underwriting R&D manager and Strategic Underwriting Technical Manager at VitalityLife: researches and sets the evidence rules.
 andrew-smith-51224b38 | PASS | 2 | underwriting | 1 | Owns underwriting philosophy and automation at VitalityLife (ex Head of Underwriting Development at Munich Re): decides what the rules engine asks for.
-louise-cowan-692b9b123 | WEAK | | proposition | 1 | Head of Product (Innovation) at Vitality UK with a CRM product background; life or health side not shown.
+louise-cowan-692b9b123 | PASS | 3 | proposition | 1 | Head of Product (Innovation) at VitalityLife with a CRM product background; P3 proposition by Vadim 2026-10-26.
 dave-roberts-421a6540 | WEAK | | underwriting | 1 | Underwriting Manager (P3) at Vitality, ex senior underwriter at Aviva; Vitality UK also underwrites health, and life is not confirmed.
 nick-telfer-191b2419 | WEAK | | proposition | 1 | Title is Head of Protection Specialists (an adviser-facing team), but his headline says Head of Protection Development and his background is protection product.
 gary-king-4063ab5b | FAIL | | | | adviser-facing protection specialists head
 neil-hartigan-3a939035b | WEAK | | underwriting | 1 | Head of Underwriting and Claims Quality fits the post-issue audit KPI, but the profile is empty and life or health is not shown.
-szymon-marszalek | WEAK | | underwriting | 1 | Director of Pricing and Underwriting is a P1 title, but Vitality UK has two such directors and life or health is not shown; James Ayland's title confirms a separate Life Pricing and Underwriting function.
-paul-yarham-945164a0 | WEAK | | underwriting | 1 | Director of Pricing and Underwriting, P1 if life; his commercial and market pricing background reads like the health side.
+szymon-marszalek | PASS | 1 | underwriting | 1 | Director of Pricing and Underwriting at VitalityLife; life or health side not shown in the row, sent as P1 by Vadim 2026-10-26.
+paul-yarham-945164a0 | PASS | 1 | underwriting | 1 | Director of Pricing and Underwriting at VitalityLife with a commercial and market pricing background; sent as P1 by Vadim 2026-10-26.
 alwyn-roberts-msc-beng-75357a153 | FAIL | | | | identity mismatch: electrician, Wynn Resorts
-sharon-a-powell-2a919aab | WEAK | | proposition | 1 | Head of Product at Vitality UK (ex digital product manager there); life or health side not shown.
-gareth-alan-williams-7709b658 | WEAK | | proposition | 1 | Head of Product at Vitality UK (ex portfolio management and VitalityCar change); life or health side not shown.
-beccacooke | WEAK | | proposition | 1 | Head of Product at Vitality UK with a customer-acquisition platform background; life or health side not shown.
+sharon-a-powell-2a919aab | PASS | 3 | proposition | 1 | Head of Product at VitalityLife, line not shown; P3 proposition by Vadim 2026-10-26.
+gareth-alan-williams-7709b658 | PASS | 3 | proposition | 1 | Head of Product at VitalityLife, line not shown; P3 proposition by Vadim 2026-10-26.
+beccacooke | PASS | 3 | proposition | 1 | Head of Product at VitalityLife, line not shown; P3 proposition by Vadim 2026-10-26.
 chris-puzey-04754a83 | WEAK | | underwriting | 1 | Portfolio Underwriting Manager with an Aviva pricing background; portfolio underwriting is a corporate-health or GI term, life not shown.
 hannah-leech-4244846a | WEAK | | underwriting | 1 | Senior Underwriting Manager (P3), but her background is customer service at Vitality and PruHealth; life or health not shown.
 lorna-miller-714608aa | PASS | 2 | underwriting | 1 | Strategic Underwriting Manager, the VitalityLife team that sets underwriting strategy (same team as Nicky Le Roux).
@@ -1071,12 +1071,12 @@ kathrynconniff | PASS | 2 | underwriting | 1 | Life Underwriting Service Directo
 fareeha-brownless-nee-hasani-84b7b413 | PASS | 3 | proposition | 1 | Head of Product (Life) with a digital product background: owns the life application journey where a capture step would sit.
 harpreetsarna | WEAK | | medical | 1 | Chief Medical Officer is a P1 title, but no earlier role is medical (charity trustee, WBS ambassador); check it is not Chief Marketing Officer.
 fergus-bescoby-0b604ba1 | FAIL | | | | distribution-facing UW manager, empty profile
-rachel-l-2387142a | WEAK | | proposition | 1 | Head of Product Management with an ASOS customer-experience background; life or health side not shown.
+rachel-l-2387142a | PASS | 3 | proposition | 1 | Head of Product Management at VitalityLife, line not shown; P3 proposition by Vadim 2026-10-26.
 charles-nolan-85401435a | FAIL | | | | claims and operations product head
 james-ayland-6181bab5 | PASS | 2 | underwriting | 1 | Director of Data Science for Life Pricing and Underwriting: the person who would run a shadow evaluation on VitalityLife applicants.
 prema-sohun-9488195b | FAIL | | | | product marketing head
 jessicavjones | FAIL | | | | VitalityHealth product head
-stuart-jackson-bb8a035b | WEAK | | proposition | 1 | Head of Product for the adviser, employer and servicing platforms: the adviser portal carries life applications, but employer is health and servicing is post-sale.
+stuart-jackson-bb8a035b | PASS | 3 | proposition | 1 | Head of Product Management for adviser, employer and servicing at VitalityLife; P3 proposition by Vadim 2026-10-26.
 catherine-bowen-walker-llm-cipp-e-63050134 | PASS | 3 | technical-integration | 1 | Head of Data Protection and UK DPO at Vitality: signs off processing of applicant photos.
 simon-evans-9296844b | PASS | 3 | proposition | 1 | Chief Product and Delivery Officer for Vitality UK: owns product and delivery across both lines, the life application included.
 sarah-squelch-65597851 | FAIL | | | | product marketing head
@@ -1092,7 +1092,7 @@ colin-bannister-26a6b2149 | FAIL | | | | L&H valuation actuary
 andy-parkinson-b4621483 | FAIL | | | | L&H claims head
 nidhi-papde | FAIL | | | | junior digital transformation
 simon-jenner-ciso | WEAK | | technical-integration | 1 | Chief Technology and Security Officer title, but Swiss Re's group technology chief is Pravina Ladva and his scope here is unclear (ex National Grid CISO).
-drdeborahasmith | WEAK | | medical | 1 | Chief Medical Officer title at Swiss Re UK, but the only earlier roles are trainee-grade NHS posts (CT2 neurology, acute medicine specialty doctor); P1 needs the role confirmed before she goes out.
+drdeborahasmith | PASS | 1 | medical | 1 | Chief Medical Officer at Swiss Re UK; earlier roles in the row are NHS training posts only, sent as P1 by Vadim 2026-10-26.
 claire-nolan-01708830 | PASS | 1 | reinsurance | 1 | Head of Claims and Underwriting, ex Head of L&H Underwriting for Europe, ME and Africa: the UK L&H underwriting lead at Swiss Re.
 dean-galligan-a2501a60 | FAIL | | | | L&H transactions (capital deals)
 alana-paterson-barker-fia-cera-5a759315 | PASS | 2 | reinsurance | 1 | Head of Pricing, Life and Health, UK and Ireland: the protection pricing head at the reinsurer.

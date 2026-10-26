@@ -1,0 +1,445 @@
+{
+ "campaign": "2026-10-22-uk-insurance-underwriting",
+ "checked": 35,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-2",
+ "generated": "2026-10-26T10:32:48",
+ "hard": [],
+ "soft": [
+  [
+   "pricing word",
+   "scott-reid-950a3410 M1",
+   "Hi Scott, Heading propositions and pricing for Zurich's Digital Protection Hub, you decide where a step sits…"
+  ],
+  [
+   "pricing word",
+   "denise-bates-06945338 M1",
+   "Hi Denise, Build loadings in income protection pricing are part of your remit as Head of Income Protection Pr…"
+  ],
+  [
+   "pricing word",
+   "denise-bates-06945338 M2",
+   "Hi Denise, An evaluation can show how often a flag agrees with build evidence collected another way, which is…"
+  ],
+  [
+   "pricing word",
+   "alana-paterson-barker-fia-cera-5a759315 M1",
+   "Hi Alana, As Head of Pricing, Life & Health for the UK and Ireland at Swiss Re, you are close to the assumpti…"
+  ],
+  [
+   "pricing word",
+   "alana-paterson-barker-fia-cera-5a759315 M2",
+   "An evaluation gives pricing flag counts per threshold, and the agreement rate with other build evidence shows…"
+  ],
+  [
+   "no company line",
+   "natalie-kelly-447331a M1",
+   "«Swiss Re UK» is not named: check it has a line only this company gets"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: andrew-doran-7a154617 / saitejokiran",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: andrew-doran-7a154617 / riccardorossilbs",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: andrew-doran-7a154617 / kylie-irwin-385398154",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: andrew-doran-7a154617 / helen-sutherland-thomas-223335123",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: andrew-doran-7a154617 / james-hetherington-461ba352",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: andrew-doran-7a154617 / pete-martin-5b401069",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: saitejokiran / riccardorossilbs",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: saitejokiran / kylie-irwin-385398154",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: saitejokiran / helen-sutherland-thomas-223335123",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: saitejokiran / james-hetherington-461ba352",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: saitejokiran / pete-martin-5b401069",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: riccardorossilbs / kylie-irwin-385398154",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: riccardorossilbs / helen-sutherland-thomas-223335123",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: riccardorossilbs / james-hetherington-461ba352",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: riccardorossilbs / pete-martin-5b401069",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: kylie-irwin-385398154 / helen-sutherland-thomas-223335123",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: kylie-irwin-385398154 / james-hetherington-461ba352",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: kylie-irwin-385398154 / pete-martin-5b401069",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: helen-sutherland-thomas-223335123 / james-hetherington-461ba352",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: helen-sutherland-thomas-223335123 / pete-martin-5b401069",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: james-hetherington-461ba352 / pete-martin-5b401069",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: lyonskate81 / david-russell-10548311a",
+   "«fitxpress puts 2 photos into it and returns one t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: lyonskate81 / kerriecross",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: lyonskate81 / tom-green-240a9222",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: lyonskate81 / scott-innes-98b84830",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: laura-vaughan-b7ba132b2 / simon-vooght-34184925",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: laura-vaughan-b7ba132b2 / daniel-musty-23a73716",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: laura-vaughan-b7ba132b2 / eric-walker-4471a7b2",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: laura-vaughan-b7ba132b2 / paul-young-708558b0",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: simon-vooght-34184925 / daniel-musty-23a73716",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: simon-vooght-34184925 / eric-walker-4471a7b2",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: simon-vooght-34184925 / paul-young-708558b0",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: daniel-musty-23a73716 / eric-walker-4471a7b2",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: daniel-musty-23a73716 / paul-young-708558b0",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: eric-walker-4471a7b2 / paul-young-708558b0",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: kerriecross / tom-green-240a9222",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: kerriecross / scott-innes-98b84830",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: kerriecross / david-russell-10548311a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: tom-green-240a9222 / scott-innes-98b84830",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: tom-green-240a9222 / david-russell-10548311a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: scott-innes-98b84830 / david-russell-10548311a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich UK: rebecca-mcgeoch-186807134 / ryan-parsons-15497b81",
+   "«hi rebecca, in most enterprise deployments, the c…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich UK: rebecca-mcgeoch-186807134 / scott-reid-950a3410",
+   "«hi rebecca, in most enterprise deployments, the c…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich UK: rebecca-mcgeoch-186807134 / fraser-ballantine-b4204527",
+   "«hi rebecca, in most enterprise deployments, the c…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich UK: sabrina-lane-406a0b65 / adrianhhill",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich UK: sabrina-lane-406a0b65 / steve-smith-17111a95",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich UK: sabrina-lane-406a0b65 / gareth-jenkins-26010578",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich UK: adrianhhill / steve-smith-17111a95",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich UK: adrianhhill / gareth-jenkins-26010578",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich UK: ryan-parsons-15497b81 / scott-reid-950a3410",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich UK: ryan-parsons-15497b81 / fraser-ballantine-b4204527",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich UK: scott-reid-950a3410 / fraser-ballantine-b4204527",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich UK: steve-smith-17111a95 / gareth-jenkins-26010578",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: denise-bates-06945338 / drdeborahasmith",
+   "«the smart scales estimate has approximately 3.5%…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: denise-bates-06945338 / andrew-graham-2398a8ba",
+   "«the smart scales estimate has approximately 3.5%…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: denise-bates-06945338 / natalie-kelly-447331a",
+   "«the smart scales estimate has approximately 3.5%…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: denise-bates-06945338 / tim-knaust-1b852a55",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: dave-evans-bb20a920 / claire-nolan-01708830",
+   "«hi dave, in most enterprise deployments, the cust…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: dave-evans-bb20a920 / alana-paterson-barker-fia-cera-5a759315",
+   "«hi dave, in most enterprise deployments, the cust…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: dave-evans-bb20a920 / vicki-livingstone-259a7098",
+   "«hi dave, in most enterprise deployments, the cust…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: dave-evans-bb20a920 / natalie-kelly-447331a",
+   "«hi dave, in most enterprise deployments, the cust…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: drdeborahasmith / andrew-graham-2398a8ba",
+   "«the estimate from smart scales carries approximat…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: drdeborahasmith / natalie-kelly-447331a",
+   "«the estimate from smart scales carries approximat…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: drdeborahasmith / tim-knaust-1b852a55",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: claire-nolan-01708830 / alana-paterson-barker-fia-cera-5a759315",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: claire-nolan-01708830 / vicki-livingstone-259a7098",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: claire-nolan-01708830 / natalie-kelly-447331a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: alana-paterson-barker-fia-cera-5a759315 / vicki-livingstone-259a7098",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: alana-paterson-barker-fia-cera-5a759315 / natalie-kelly-447331a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: vicki-livingstone-259a7098 / natalie-kelly-447331a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: andrew-graham-2398a8ba / natalie-kelly-447331a",
+   "«smart scales has approximately 3.5% mean absolute…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: andrew-graham-2398a8ba / tim-knaust-1b852a55",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×21",
+   "«a smart scales weight estimate…»: adrianhhill, andrew-graham-2398a8ba, claire-nolan-01708830, daniel-musty-23a73716"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«a flag when the gap…»: adrianhhill, claire-nolan-01708830, natalie-kelly-447331a, riccardorossilbs"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«is not a scale reading…»: andrew-graham-2398a8ba, denise-bates-06945338, drdeborahasmith, sabrina-lane-406a0b65"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«cases each candidate threshold would…»: claire-nolan-01708830, daniel-musty-23a73716, laura-vaughan-b7ba132b2, sabrina-lane-406a0b65"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«how often a flag agrees…»: claire-nolan-01708830, daniel-musty-23a73716, denise-bates-06945338, sabrina-lane-406a0b65"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«30 days per the insurer…»: dave-evans-bb20a920, rebecca-mcgeoch-186807134, will-miller-78139133"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«between declared and estimated weight…»: david-russell-10548311a, lyonskate81, sabrina-lane-406a0b65"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«candidate threshold would flag and…»: claire-nolan-01708830, daniel-musty-23a73716, sabrina-lane-406a0b65"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«how many cases each candidate…»: daniel-musty-23a73716, laura-vaughan-b7ba132b2, sabrina-lane-406a0b65"
+  ]
+ ]
+}

@@ -1,0 +1,2650 @@
+{
+ "campaign": "2026-10-22-uk-insurance-underwriting",
+ "checked": 176,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": null,
+ "generated": "2026-10-26T10:37:08",
+ "hard": [],
+ "soft": [
+  [
+   "pricing word",
+   "daryl-warren-a773a64a M1",
+   "Hi Daryl, Quick one, given your move from the actuarial coding hub to individual protection pricing at Aviva."
+  ],
+  [
+   "pricing word",
+   "hai-luc-67306367 M1",
+   "Hi Hai, Quick note on your move from pricing to leading actuarial research for Retail Protection at Legal & G…"
+  ],
+  [
+   "pricing word",
+   "lucy-luscombe-837866b2 M1",
+   "Hi Lucy, Your years as an actuary at LV= now feed the protection pricing you lead, where build loadings meet…"
+  ],
+  [
+   "pricing word",
+   "lucy-luscombe-837866b2 M2",
+   "The record sits beside pricing and does not rate or price."
+  ],
+  [
+   "pricing word",
+   "killian-farrelly-96422a60 M1",
+   "Hi Killian, Quick note for someone who prices protection in Europe at Pacific Life Re: build is priced on a d…"
+  ],
+  [
+   "pricing word",
+   "killian-farrelly-96422a60 M2",
+   "Hi Killian, Pricing could see a count of the cases each candidate threshold would flag, kept apart from any r…"
+  ],
+  [
+   "pricing word",
+   "scott-reid-950a3410 M1",
+   "Hi Scott, Heading propositions and pricing for Zurich's Digital Protection Hub, you decide where a step sits…"
+  ],
+  [
+   "pricing word",
+   "szymon-marszalek M1",
+   "As you oversee pricing and underwriting together, where would a gap between declared and estimated weight sta…"
+  ],
+  [
+   "pricing word",
+   "paul-yarham-945164a0 M1",
+   "Hi Paul, Came across your work: market pricing, then commercial pricing and underwriting at VitalityLife."
+  ],
+  [
+   "pricing word",
+   "paul-yarham-945164a0 M2",
+   "Hi Paul, On a shadow set we can count how many cases each candidate threshold would flag, kept apart from any…"
+  ],
+  [
+   "pricing word",
+   "james-ayland-6181bab5 M1",
+   "Hi James, Wanted to reach out as Data Science Director for life pricing and underwriting at VitalityLife: a s…"
+  ],
+  [
+   "no company line",
+   "catherine-bowen-walker-llm-cipp-e-63050134 M1",
+   "«VitalityLife» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "caroline-froude-53118414 M1",
+   "«Guardian Financial Services» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "jane-tarbuck-11487341 M1",
+   "«Guardian Financial Services» is not named: check it has a line only this company gets"
+  ],
+  [
+   "pricing word",
+   "denise-bates-06945338 M1",
+   "Hi Denise, Build loadings in income protection pricing are part of your remit as Head of Income Protection Pr…"
+  ],
+  [
+   "pricing word",
+   "denise-bates-06945338 M2",
+   "Hi Denise, An evaluation can show how often a flag agrees with build evidence collected another way, which is…"
+  ],
+  [
+   "pricing word",
+   "alana-paterson-barker-fia-cera-5a759315 M1",
+   "Hi Alana, As Head of Pricing, Life & Health for the UK and Ireland at Swiss Re, you are close to the assumpti…"
+  ],
+  [
+   "pricing word",
+   "alana-paterson-barker-fia-cera-5a759315 M2",
+   "An evaluation gives pricing flag counts per threshold, and the agreement rate with other build evidence shows…"
+  ],
+  [
+   "no company line",
+   "natalie-kelly-447331a M1",
+   "«Swiss Re UK» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "tsmithfia M1",
+   "«Hannover Re UK Life Branch» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "andrea-gregory-76144635 M1",
+   "«Hannover Re UK Life Branch» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "kaj-makaswaran-64a176188 M1",
+   "«iPipeline UK» is not named: check it has a line only this company gets"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Exeter: suzy-esson-996a5875 / toby-bainbridge-063483a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Exeter: jack-southcott-30959929 / david-piggin-a6039a27",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Exeter: jack-southcott-30959929 / ed-lyon-803766210",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Exeter: jack-southcott-30959929 / lara-harkins-27835b21a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Exeter: david-piggin-a6039a27 / ed-lyon-803766210",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Exeter: david-piggin-a6039a27 / lara-harkins-27835b21a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Exeter: ed-lyon-803766210 / lara-harkins-27835b21a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: amy-higgs-a1960563 / leeellisone",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: amy-higgs-a1960563 / goodwinjoshua",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: amy-higgs-a1960563 / malexandratou",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: amy-higgs-a1960563 / fi-wynn-72936a4",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: amy-higgs-a1960563 / dominic-pagan-4077583",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: amy-higgs-a1960563 / robert-arbuckle-b4aa3669",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: amy-higgs-a1960563 / craig-paterson-970183a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: amy-higgs-a1960563 / robin-goodwin-039aa5271",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: leeellisone / goodwinjoshua",
+   "«one timestamped record returns to royal london's…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: leeellisone / fi-wynn-72936a4",
+   "«one timestamped record returns to royal london's…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: leeellisone / damian-mapplebeck-99103818",
+   "«one timestamped record returns to royal london's…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: leeellisone / malexandratou",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: leeellisone / dominic-pagan-4077583",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: leeellisone / robert-arbuckle-b4aa3669",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: leeellisone / craig-paterson-970183a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: leeellisone / robin-goodwin-039aa5271",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: goodwinjoshua / craig-paterson-970183a",
+   "«in a royal london application fitxpress needs 2 p…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: goodwinjoshua / fi-wynn-72936a4",
+   "«a timestamped record is returned to royal london'…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: goodwinjoshua / damian-mapplebeck-99103818",
+   "«a timestamped record is returned to royal london'…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: goodwinjoshua / malexandratou",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: goodwinjoshua / dominic-pagan-4077583",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: goodwinjoshua / robert-arbuckle-b4aa3669",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: goodwinjoshua / robin-goodwin-039aa5271",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: malexandratou / fi-wynn-72936a4",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: malexandratou / dominic-pagan-4077583",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: malexandratou / robert-arbuckle-b4aa3669",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: malexandratou / craig-paterson-970183a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: malexandratou / robin-goodwin-039aa5271",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: fi-wynn-72936a4 / dominic-pagan-4077583",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: fi-wynn-72936a4 / robert-arbuckle-b4aa3669",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: fi-wynn-72936a4 / craig-paterson-970183a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: fi-wynn-72936a4 / robin-goodwin-039aa5271",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: james-sandell-4686b59 / carrie-johnson-81744515",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: james-sandell-4686b59 / ceri-davies-11b175165",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: james-sandell-4686b59 / william-stratton-8ab764104",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: james-sandell-4686b59 / damian-mapplebeck-99103818",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: james-sandell-4686b59 / jane-lyle-a6a2b5182",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: james-sandell-4686b59 / sebbowden",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: james-sandell-4686b59 / caitlin-stronach",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: james-sandell-4686b59 / james-blaney-85456b60",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: carrie-johnson-81744515 / ceri-davies-11b175165",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: carrie-johnson-81744515 / william-stratton-8ab764104",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: carrie-johnson-81744515 / damian-mapplebeck-99103818",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: carrie-johnson-81744515 / jane-lyle-a6a2b5182",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: carrie-johnson-81744515 / sebbowden",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: carrie-johnson-81744515 / caitlin-stronach",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: carrie-johnson-81744515 / james-blaney-85456b60",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: ceri-davies-11b175165 / robin-goodwin-039aa5271",
+   "«hi ceri, an evaluation counts how many cases each…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: ceri-davies-11b175165 / william-stratton-8ab764104",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: ceri-davies-11b175165 / damian-mapplebeck-99103818",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: ceri-davies-11b175165 / jane-lyle-a6a2b5182",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: ceri-davies-11b175165 / sebbowden",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: ceri-davies-11b175165 / caitlin-stronach",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: ceri-davies-11b175165 / james-blaney-85456b60",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: dominic-pagan-4077583 / robert-arbuckle-b4aa3669",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: dominic-pagan-4077583 / craig-paterson-970183a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: dominic-pagan-4077583 / robin-goodwin-039aa5271",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: robert-arbuckle-b4aa3669 / craig-paterson-970183a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: robert-arbuckle-b4aa3669 / robin-goodwin-039aa5271",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: william-stratton-8ab764104 / damian-mapplebeck-99103818",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: william-stratton-8ab764104 / jane-lyle-a6a2b5182",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: william-stratton-8ab764104 / sebbowden",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: william-stratton-8ab764104 / caitlin-stronach",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: william-stratton-8ab764104 / james-blaney-85456b60",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: damian-mapplebeck-99103818 / robin-goodwin-039aa5271",
+   "«in the application, fitxpress takes 2 photos, est…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: damian-mapplebeck-99103818 / jane-lyle-a6a2b5182",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: damian-mapplebeck-99103818 / sebbowden",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: damian-mapplebeck-99103818 / caitlin-stronach",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: damian-mapplebeck-99103818 / james-blaney-85456b60",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: jane-lyle-a6a2b5182 / sebbowden",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: jane-lyle-a6a2b5182 / caitlin-stronach",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: jane-lyle-a6a2b5182 / james-blaney-85456b60",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: craig-paterson-970183a / caitlin-stronach",
+   "«two photos in the application let fitxpress flag…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: craig-paterson-970183a / robin-goodwin-039aa5271",
+   "«smart scales gives approximately 3.5% mean absolu…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: sebbowden / caitlin-stronach",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: sebbowden / james-blaney-85456b60",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: caitlin-stronach / james-blaney-85456b60",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: spiterimichael / tariq-surty-8911101",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: spiterimichael / nicki-plews-b037aa2b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: spiterimichael / jenni-phillips-98892a24",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: spiterimichael / david-banks-9b750391",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: spiterimichael / brian-kemp-0467b898",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: spiterimichael / scott-wallace-b608b49b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: spiterimichael / pippa-barber-nee-keefe-487b64b6",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: spiterimichael / bethan-shepherd-12a39763",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: spiterimichael / andrew-greatbanks-9712b03b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: tariq-surty-8911101 / nicki-plews-b037aa2b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: tariq-surty-8911101 / jenni-phillips-98892a24",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: tariq-surty-8911101 / david-banks-9b750391",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: tariq-surty-8911101 / brian-kemp-0467b898",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: tariq-surty-8911101 / scott-wallace-b608b49b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: tariq-surty-8911101 / pippa-barber-nee-keefe-487b64b6",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: tariq-surty-8911101 / bethan-shepherd-12a39763",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: tariq-surty-8911101 / andrew-greatbanks-9712b03b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jennyreeve / gary-m-3b7b913b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jennyreeve / sdavis2",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jennyreeve / crissaunders",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jennyreeve / sara-denyer-b81a2a92",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jennyreeve / john-redmond-884597a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jennyreeve / drtarungupta",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jennyreeve / nicky-mcrae-a4a3b5206",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jennyreeve / hai-luc-67306367",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: gary-m-3b7b913b / sdavis2",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: gary-m-3b7b913b / crissaunders",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: gary-m-3b7b913b / sara-denyer-b81a2a92",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: gary-m-3b7b913b / john-redmond-884597a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: gary-m-3b7b913b / drtarungupta",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: gary-m-3b7b913b / nicky-mcrae-a4a3b5206",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: gary-m-3b7b913b / hai-luc-67306367",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: sdavis2 / crissaunders",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: sdavis2 / sara-denyer-b81a2a92",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: sdavis2 / john-redmond-884597a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: sdavis2 / drtarungupta",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: sdavis2 / nicky-mcrae-a4a3b5206",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: sdavis2 / hai-luc-67306367",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: crissaunders / sara-denyer-b81a2a92",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: crissaunders / john-redmond-884597a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: crissaunders / drtarungupta",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: crissaunders / nicky-mcrae-a4a3b5206",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: crissaunders / hai-luc-67306367",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: nicki-plews-b037aa2b / jenni-phillips-98892a24",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: nicki-plews-b037aa2b / david-banks-9b750391",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: nicki-plews-b037aa2b / brian-kemp-0467b898",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: nicki-plews-b037aa2b / scott-wallace-b608b49b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: nicki-plews-b037aa2b / pippa-barber-nee-keefe-487b64b6",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: nicki-plews-b037aa2b / bethan-shepherd-12a39763",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: nicki-plews-b037aa2b / andrew-greatbanks-9712b03b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: sara-denyer-b81a2a92 / john-redmond-884597a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: sara-denyer-b81a2a92 / drtarungupta",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: sara-denyer-b81a2a92 / nicky-mcrae-a4a3b5206",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: sara-denyer-b81a2a92 / hai-luc-67306367",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jenni-phillips-98892a24 / david-banks-9b750391",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jenni-phillips-98892a24 / brian-kemp-0467b898",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jenni-phillips-98892a24 / scott-wallace-b608b49b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jenni-phillips-98892a24 / pippa-barber-nee-keefe-487b64b6",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jenni-phillips-98892a24 / bethan-shepherd-12a39763",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: jenni-phillips-98892a24 / andrew-greatbanks-9712b03b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: john-redmond-884597a / drtarungupta",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: john-redmond-884597a / nicky-mcrae-a4a3b5206",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: john-redmond-884597a / hai-luc-67306367",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: david-banks-9b750391 / brian-kemp-0467b898",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: david-banks-9b750391 / scott-wallace-b608b49b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: david-banks-9b750391 / pippa-barber-nee-keefe-487b64b6",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: david-banks-9b750391 / bethan-shepherd-12a39763",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: david-banks-9b750391 / andrew-greatbanks-9712b03b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: brian-kemp-0467b898 / scott-wallace-b608b49b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: brian-kemp-0467b898 / pippa-barber-nee-keefe-487b64b6",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: brian-kemp-0467b898 / bethan-shepherd-12a39763",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: brian-kemp-0467b898 / andrew-greatbanks-9712b03b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: drtarungupta / nicky-mcrae-a4a3b5206",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: drtarungupta / hai-luc-67306367",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: scott-wallace-b608b49b / pippa-barber-nee-keefe-487b64b6",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: scott-wallace-b608b49b / bethan-shepherd-12a39763",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: scott-wallace-b608b49b / andrew-greatbanks-9712b03b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: nicky-mcrae-a4a3b5206 / hai-luc-67306367",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: pippa-barber-nee-keefe-487b64b6 / bethan-shepherd-12a39763",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: pippa-barber-nee-keefe-487b64b6 / andrew-greatbanks-9712b03b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: bethan-shepherd-12a39763 / andrew-greatbanks-9712b03b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Shepherds Friendly: teamsandell / ann-marie-o-dea-72104a24",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Shepherds Friendly: teamsandell / michael-williams-0901a823",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Shepherds Friendly: teamsandell / samuelchivers",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Shepherds Friendly: teamsandell / elizabeth-cook-2019",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Shepherds Friendly: ann-marie-o-dea-72104a24 / michael-williams-0901a823",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Shepherds Friendly: ann-marie-o-dea-72104a24 / samuelchivers",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Shepherds Friendly: ann-marie-o-dea-72104a24 / elizabeth-cook-2019",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Shepherds Friendly: michael-williams-0901a823 / samuelchivers",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Shepherds Friendly: michael-williams-0901a823 / elizabeth-cook-2019",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Shepherds Friendly: samuelchivers / elizabeth-cook-2019",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Shepherds Friendly: steve-smith-85b45976 / michael-jackson-2417835b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: marina-belezina-2451b0 / arslanhannani",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: marina-belezina-2451b0 / manjudevinatarajan",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: marina-belezina-2451b0 / joel-manstoff",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: marina-belezina-2451b0 / amanhayer",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: marina-belezina-2451b0 / hannah-spiro-27b12b106",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: marina-belezina-2451b0 / michelle-cross-88958422",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: marina-belezina-2451b0 / paul-welsh-a27b7a61",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: marina-belezina-2451b0 / harriet-granville-jones-innovation",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: marina-belezina-2451b0 / suzanne-lawson-2368623",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: steve-lister-87b0671 / rahannon",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: steve-lister-87b0671 / liliburdass",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: steve-lister-87b0671 / sue-hendry-a8415a17",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: steve-lister-87b0671 / jon-oneal",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: steve-lister-87b0671 / victoria-francis-09949480",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: steve-lister-87b0671 / tom-parkinson-03190190",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: steve-lister-87b0671 / daryl-warren-a773a64a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: steve-lister-87b0671 / sally-james-75186623",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: steve-lister-87b0671 / james-whitty-05a1545a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: steve-lister-87b0671 / nicholas-john-austin",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: rahannon / hannah-spiro-27b12b106",
+   "«a timestamped record goes back to aviva's systems.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: rahannon / daryl-warren-a773a64a",
+   "«a timestamped record goes back to aviva's systems.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: rahannon / james-whitty-05a1545a",
+   "«a timestamped record goes back to aviva's systems.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: rahannon / liliburdass",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: rahannon / sue-hendry-a8415a17",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: rahannon / jon-oneal",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: rahannon / victoria-francis-09949480",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: rahannon / tom-parkinson-03190190",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: rahannon / sally-james-75186623",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: rahannon / nicholas-john-austin",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: arslanhannani / manjudevinatarajan",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: arslanhannani / joel-manstoff",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: arslanhannani / amanhayer",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: arslanhannani / hannah-spiro-27b12b106",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: arslanhannani / michelle-cross-88958422",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: arslanhannani / paul-welsh-a27b7a61",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: arslanhannani / harriet-granville-jones-innovation",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: arslanhannani / suzanne-lawson-2368623",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: manjudevinatarajan / joel-manstoff",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: manjudevinatarajan / amanhayer",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: manjudevinatarajan / hannah-spiro-27b12b106",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: manjudevinatarajan / michelle-cross-88958422",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: manjudevinatarajan / paul-welsh-a27b7a61",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: manjudevinatarajan / harriet-granville-jones-innovation",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: manjudevinatarajan / suzanne-lawson-2368623",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: liliburdass / sue-hendry-a8415a17",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: liliburdass / jon-oneal",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: liliburdass / victoria-francis-09949480",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: liliburdass / tom-parkinson-03190190",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: liliburdass / daryl-warren-a773a64a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: liliburdass / sally-james-75186623",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: liliburdass / james-whitty-05a1545a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: liliburdass / nicholas-john-austin",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: joel-manstoff / amanhayer",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: joel-manstoff / hannah-spiro-27b12b106",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: joel-manstoff / michelle-cross-88958422",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: joel-manstoff / paul-welsh-a27b7a61",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: joel-manstoff / harriet-granville-jones-innovation",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: joel-manstoff / suzanne-lawson-2368623",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: sue-hendry-a8415a17 / michelle-cross-88958422",
+   "«smart scales estimates weight at approximately 3.…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: sue-hendry-a8415a17 / jon-oneal",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: sue-hendry-a8415a17 / victoria-francis-09949480",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: sue-hendry-a8415a17 / tom-parkinson-03190190",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: sue-hendry-a8415a17 / daryl-warren-a773a64a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: sue-hendry-a8415a17 / sally-james-75186623",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: sue-hendry-a8415a17 / james-whitty-05a1545a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: sue-hendry-a8415a17 / nicholas-john-austin",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: amanhayer / hannah-spiro-27b12b106",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: amanhayer / michelle-cross-88958422",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: amanhayer / paul-welsh-a27b7a61",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: amanhayer / harriet-granville-jones-innovation",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: amanhayer / suzanne-lawson-2368623",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: jon-oneal / victoria-francis-09949480",
+   "«the data handling answers are in the privacy faq:…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: jon-oneal / tom-parkinson-03190190",
+   "«the data handling answers are in the privacy faq:…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: jon-oneal / daryl-warren-a773a64a",
+   "«the data handling answers are in the privacy faq:…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: jon-oneal / sally-james-75186623",
+   "«the data handling answers are in the privacy faq:…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: jon-oneal / james-whitty-05a1545a",
+   "«the data handling answers are in the privacy faq:…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: jon-oneal / nicholas-john-austin",
+   "«the data handling answers are in the privacy faq:…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: victoria-francis-09949480 / tom-parkinson-03190190",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: victoria-francis-09949480 / daryl-warren-a773a64a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: victoria-francis-09949480 / sally-james-75186623",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: victoria-francis-09949480 / james-whitty-05a1545a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: victoria-francis-09949480 / nicholas-john-austin",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: hannah-spiro-27b12b106 / daryl-warren-a773a64a",
+   "«the timestamped record returns to aviva's systems.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: hannah-spiro-27b12b106 / michelle-cross-88958422",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: hannah-spiro-27b12b106 / paul-welsh-a27b7a61",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: hannah-spiro-27b12b106 / harriet-granville-jones-innovation",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: hannah-spiro-27b12b106 / suzanne-lawson-2368623",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: michelle-cross-88958422 / paul-welsh-a27b7a61",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: michelle-cross-88958422 / harriet-granville-jones-innovation",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: michelle-cross-88958422 / suzanne-lawson-2368623",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: tom-parkinson-03190190 / james-whitty-05a1545a",
+   "«it holds a weight estimate from 2 photos, bmi fro…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: tom-parkinson-03190190 / daryl-warren-a773a64a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: tom-parkinson-03190190 / sally-james-75186623",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: tom-parkinson-03190190 / nicholas-john-austin",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: daryl-warren-a773a64a / sally-james-75186623",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: daryl-warren-a773a64a / james-whitty-05a1545a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: daryl-warren-a773a64a / nicholas-john-austin",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: sally-james-75186623 / james-whitty-05a1545a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: sally-james-75186623 / nicholas-john-austin",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: paul-welsh-a27b7a61 / harriet-granville-jones-innovation",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: paul-welsh-a27b7a61 / suzanne-lawson-2368623",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: james-whitty-05a1545a / nicholas-john-austin",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: harriet-granville-jones-innovation / suzanne-lawson-2368623",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Cirencester Friendly Society: johnunderwood2 / sue-kissane-859216121",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Cirencester Friendly Society: johnunderwood2 / steve-betteridge-b5041a5b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Cirencester Friendly Society: johnunderwood2 / samuel-njoroge-ba-hons-dipcii-dldu-amus-9b571672",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Cirencester Friendly Society: sue-kissane-859216121 / steve-betteridge-b5041a5b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Cirencester Friendly Society: sue-kissane-859216121 / samuel-njoroge-ba-hons-dipcii-dldu-amus-9b571672",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Cirencester Friendly Society: steve-betteridge-b5041a5b / samuel-njoroge-ba-hons-dipcii-dldu-amus-9b571672",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "LV=: karl-pickering-1918555 / gary-beyer-37995610",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "LV=: karl-pickering-1918555 / lucy-luscombe-837866b2",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "LV=: karl-pickering-1918555 / gareth-hurst-b2053a148",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "LV=: gary-beyer-37995610 / gareth-hurst-b2053a148",
+   "«fitxpress would add one: 2 photos return a smart…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "LV=: gary-beyer-37995610 / lucy-luscombe-837866b2",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "LV=: lucy-luscombe-837866b2 / gareth-hurst-b2053a148",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: sandi-sohal-2853aa13 / mala-thurston-22a0b499",
+   "«smart scales has approximately 3.5% mean absolute…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: sandi-sohal-2853aa13 / réka-halász-9a72b585",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: sandi-sohal-2853aa13 / martin-boniface-jones-371173112",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: sandi-sohal-2853aa13 / nikolai-harrowing-5246b353",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: caroline-burton-cipp-e-cipm-fip-33482145 / mala-thurston-22a0b499",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: caroline-burton-cipp-e-cipm-fip-33482145 / killian-farrelly-96422a60",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: caroline-burton-cipp-e-cipm-fip-33482145 / david-waters-05719b114",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: caroline-burton-cipp-e-cipm-fip-33482145 / febby-mulewa-7190a597",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: caroline-burton-cipp-e-cipm-fip-33482145 / justin-farrow-226782108",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: caroline-burton-cipp-e-cipm-fip-33482145 / caroline-smith-78180535",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: caroline-burton-cipp-e-cipm-fip-33482145 / james-sims-846a9251",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: réka-halász-9a72b585 / martin-boniface-jones-371173112",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: réka-halász-9a72b585 / nikolai-harrowing-5246b353",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: mala-thurston-22a0b499 / killian-farrelly-96422a60",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: mala-thurston-22a0b499 / david-waters-05719b114",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: mala-thurston-22a0b499 / febby-mulewa-7190a597",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: mala-thurston-22a0b499 / justin-farrow-226782108",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: mala-thurston-22a0b499 / caroline-smith-78180535",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: mala-thurston-22a0b499 / james-sims-846a9251",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: martin-boniface-jones-371173112 / nikolai-harrowing-5246b353",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: killian-farrelly-96422a60 / david-waters-05719b114",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: killian-farrelly-96422a60 / febby-mulewa-7190a597",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: killian-farrelly-96422a60 / justin-farrow-226782108",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: killian-farrelly-96422a60 / caroline-smith-78180535",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: killian-farrelly-96422a60 / james-sims-846a9251",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: david-waters-05719b114 / febby-mulewa-7190a597",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: david-waters-05719b114 / justin-farrow-226782108",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: david-waters-05719b114 / caroline-smith-78180535",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: david-waters-05719b114 / james-sims-846a9251",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: febby-mulewa-7190a597 / justin-farrow-226782108",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: febby-mulewa-7190a597 / caroline-smith-78180535",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: febby-mulewa-7190a597 / james-sims-846a9251",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: justin-farrow-226782108 / caroline-smith-78180535",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: justin-farrow-226782108 / james-sims-846a9251",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life Re: caroline-smith-78180535 / james-sims-846a9251",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: andrew-doran-7a154617 / saitejokiran",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: andrew-doran-7a154617 / riccardorossilbs",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: andrew-doran-7a154617 / kylie-irwin-385398154",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: andrew-doran-7a154617 / helen-sutherland-thomas-223335123",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: andrew-doran-7a154617 / james-hetherington-461ba352",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: andrew-doran-7a154617 / pete-martin-5b401069",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: saitejokiran / riccardorossilbs",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: saitejokiran / kylie-irwin-385398154",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: saitejokiran / helen-sutherland-thomas-223335123",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: saitejokiran / james-hetherington-461ba352",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: saitejokiran / pete-martin-5b401069",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: riccardorossilbs / kylie-irwin-385398154",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: riccardorossilbs / helen-sutherland-thomas-223335123",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: riccardorossilbs / james-hetherington-461ba352",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: riccardorossilbs / pete-martin-5b401069",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: kylie-irwin-385398154 / helen-sutherland-thomas-223335123",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: kylie-irwin-385398154 / james-hetherington-461ba352",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: kylie-irwin-385398154 / pete-martin-5b401069",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: helen-sutherland-thomas-223335123 / james-hetherington-461ba352",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: helen-sutherland-thomas-223335123 / pete-martin-5b401069",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "UnderwriteMe: james-hetherington-461ba352 / pete-martin-5b401069",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: lyonskate81 / david-russell-10548311a",
+   "«fitxpress puts 2 photos into it and returns one t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: lyonskate81 / kerriecross",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: lyonskate81 / tom-green-240a9222",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: lyonskate81 / scott-innes-98b84830",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: laura-vaughan-b7ba132b2 / simon-vooght-34184925",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: laura-vaughan-b7ba132b2 / daniel-musty-23a73716",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: laura-vaughan-b7ba132b2 / eric-walker-4471a7b2",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: laura-vaughan-b7ba132b2 / paul-young-708558b0",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: simon-vooght-34184925 / daniel-musty-23a73716",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: simon-vooght-34184925 / eric-walker-4471a7b2",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: simon-vooght-34184925 / paul-young-708558b0",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: daniel-musty-23a73716 / eric-walker-4471a7b2",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: daniel-musty-23a73716 / paul-young-708558b0",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: eric-walker-4471a7b2 / paul-young-708558b0",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: kerriecross / tom-green-240a9222",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: kerriecross / scott-innes-98b84830",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: kerriecross / david-russell-10548311a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: tom-green-240a9222 / scott-innes-98b84830",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: tom-green-240a9222 / david-russell-10548311a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Scottish Widows: scott-innes-98b84830 / david-russell-10548311a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Holloway Friendly: pearsben / sarah-barrell-133690131",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich UK: rebecca-mcgeoch-186807134 / ryan-parsons-15497b81",
+   "«hi rebecca, in most enterprise deployments, the c…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich UK: rebecca-mcgeoch-186807134 / scott-reid-950a3410",
+   "«hi rebecca, in most enterprise deployments, the c…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich UK: rebecca-mcgeoch-186807134 / fraser-ballantine-b4204527",
+   "«hi rebecca, in most enterprise deployments, the c…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich UK: sabrina-lane-406a0b65 / adrianhhill",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich UK: sabrina-lane-406a0b65 / steve-smith-17111a95",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich UK: sabrina-lane-406a0b65 / gareth-jenkins-26010578",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich UK: adrianhhill / steve-smith-17111a95",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich UK: adrianhhill / gareth-jenkins-26010578",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich UK: ryan-parsons-15497b81 / scott-reid-950a3410",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich UK: ryan-parsons-15497b81 / fraser-ballantine-b4204527",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich UK: scott-reid-950a3410 / fraser-ballantine-b4204527",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich UK: steve-smith-17111a95 / gareth-jenkins-26010578",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: nicky-le-roux-7b8b758 / andrew-smith-51224b38",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: nicky-le-roux-7b8b758 / louise-cowan-692b9b123",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: nicky-le-roux-7b8b758 / paul-yarham-945164a0",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: nicky-le-roux-7b8b758 / gareth-alan-williams-7709b658",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: nicky-le-roux-7b8b758 / beccacooke",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: nicky-le-roux-7b8b758 / lorna-miller-714608aa",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: nicky-le-roux-7b8b758 / kathrynconniff",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: nicky-le-roux-7b8b758 / fareeha-brownless-nee-hasani-84b7b413",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: nicky-le-roux-7b8b758 / james-ayland-6181bab5",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: nicky-le-roux-7b8b758 / catherine-bowen-walker-llm-cipp-e-63050134",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: andrew-smith-51224b38 / louise-cowan-692b9b123",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: andrew-smith-51224b38 / paul-yarham-945164a0",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: andrew-smith-51224b38 / gareth-alan-williams-7709b658",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: andrew-smith-51224b38 / beccacooke",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: andrew-smith-51224b38 / lorna-miller-714608aa",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: andrew-smith-51224b38 / kathrynconniff",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: andrew-smith-51224b38 / fareeha-brownless-nee-hasani-84b7b413",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: andrew-smith-51224b38 / james-ayland-6181bab5",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: andrew-smith-51224b38 / catherine-bowen-walker-llm-cipp-e-63050134",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: louise-cowan-692b9b123 / paul-yarham-945164a0",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: louise-cowan-692b9b123 / gareth-alan-williams-7709b658",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: louise-cowan-692b9b123 / beccacooke",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: louise-cowan-692b9b123 / lorna-miller-714608aa",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: louise-cowan-692b9b123 / kathrynconniff",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: louise-cowan-692b9b123 / fareeha-brownless-nee-hasani-84b7b413",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: louise-cowan-692b9b123 / james-ayland-6181bab5",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: louise-cowan-692b9b123 / catherine-bowen-walker-llm-cipp-e-63050134",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: szymon-marszalek / sharon-a-powell-2a919aab",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: szymon-marszalek / rachel-l-2387142a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: szymon-marszalek / stuart-jackson-bb8a035b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: szymon-marszalek / simon-evans-9296844b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: paul-yarham-945164a0 / gareth-alan-williams-7709b658",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: paul-yarham-945164a0 / beccacooke",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: paul-yarham-945164a0 / lorna-miller-714608aa",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: paul-yarham-945164a0 / kathrynconniff",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: paul-yarham-945164a0 / fareeha-brownless-nee-hasani-84b7b413",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: paul-yarham-945164a0 / james-ayland-6181bab5",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: paul-yarham-945164a0 / catherine-bowen-walker-llm-cipp-e-63050134",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: sharon-a-powell-2a919aab / rachel-l-2387142a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: sharon-a-powell-2a919aab / stuart-jackson-bb8a035b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: sharon-a-powell-2a919aab / simon-evans-9296844b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: gareth-alan-williams-7709b658 / beccacooke",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: gareth-alan-williams-7709b658 / lorna-miller-714608aa",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: gareth-alan-williams-7709b658 / kathrynconniff",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: gareth-alan-williams-7709b658 / fareeha-brownless-nee-hasani-84b7b413",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: gareth-alan-williams-7709b658 / james-ayland-6181bab5",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: gareth-alan-williams-7709b658 / catherine-bowen-walker-llm-cipp-e-63050134",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: beccacooke / lorna-miller-714608aa",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: beccacooke / kathrynconniff",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: beccacooke / fareeha-brownless-nee-hasani-84b7b413",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: beccacooke / james-ayland-6181bab5",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: beccacooke / catherine-bowen-walker-llm-cipp-e-63050134",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: lorna-miller-714608aa / kathrynconniff",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: lorna-miller-714608aa / fareeha-brownless-nee-hasani-84b7b413",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: lorna-miller-714608aa / james-ayland-6181bab5",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: lorna-miller-714608aa / catherine-bowen-walker-llm-cipp-e-63050134",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: kathrynconniff / fareeha-brownless-nee-hasani-84b7b413",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: kathrynconniff / james-ayland-6181bab5",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: kathrynconniff / catherine-bowen-walker-llm-cipp-e-63050134",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: fareeha-brownless-nee-hasani-84b7b413 / james-ayland-6181bab5",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: fareeha-brownless-nee-hasani-84b7b413 / catherine-bowen-walker-llm-cipp-e-63050134",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: rachel-l-2387142a / stuart-jackson-bb8a035b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: rachel-l-2387142a / simon-evans-9296844b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: james-ayland-6181bab5 / catherine-bowen-walker-llm-cipp-e-63050134",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "VitalityLife: stuart-jackson-bb8a035b / simon-evans-9296844b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Guardian Financial Services: andrew-newton-a1bb7115b / nick-rice-59394882",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Guardian Financial Services: andrew-newton-a1bb7115b / richard-stadon-64b7029",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Guardian Financial Services: andrew-newton-a1bb7115b / jane-tarbuck-11487341",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Guardian Financial Services: nick-rice-59394882 / richard-stadon-64b7029",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Guardian Financial Services: nick-rice-59394882 / jane-tarbuck-11487341",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Guardian Financial Services: richard-stadon-64b7029 / jane-tarbuck-11487341",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: denise-bates-06945338 / drdeborahasmith",
+   "«the smart scales estimate has approximately 3.5%…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: denise-bates-06945338 / andrew-graham-2398a8ba",
+   "«the smart scales estimate has approximately 3.5%…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: denise-bates-06945338 / natalie-kelly-447331a",
+   "«the smart scales estimate has approximately 3.5%…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: denise-bates-06945338 / tim-knaust-1b852a55",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: dave-evans-bb20a920 / claire-nolan-01708830",
+   "«hi dave, in most enterprise deployments, the cust…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: dave-evans-bb20a920 / alana-paterson-barker-fia-cera-5a759315",
+   "«hi dave, in most enterprise deployments, the cust…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: dave-evans-bb20a920 / vicki-livingstone-259a7098",
+   "«hi dave, in most enterprise deployments, the cust…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: dave-evans-bb20a920 / natalie-kelly-447331a",
+   "«hi dave, in most enterprise deployments, the cust…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: drdeborahasmith / andrew-graham-2398a8ba",
+   "«the estimate from smart scales carries approximat…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: drdeborahasmith / natalie-kelly-447331a",
+   "«the estimate from smart scales carries approximat…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: drdeborahasmith / tim-knaust-1b852a55",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: claire-nolan-01708830 / alana-paterson-barker-fia-cera-5a759315",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: claire-nolan-01708830 / vicki-livingstone-259a7098",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: claire-nolan-01708830 / natalie-kelly-447331a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: alana-paterson-barker-fia-cera-5a759315 / vicki-livingstone-259a7098",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: alana-paterson-barker-fia-cera-5a759315 / natalie-kelly-447331a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: vicki-livingstone-259a7098 / natalie-kelly-447331a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: andrew-graham-2398a8ba / natalie-kelly-447331a",
+   "«smart scales has approximately 3.5% mean absolute…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re UK: andrew-graham-2398a8ba / tim-knaust-1b852a55",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re UK Life Branch: lloyd-williams62 / adrian-stevenson",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re UK Life Branch: lloyd-williams62 / matt-bone-4b127a4a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re UK Life Branch: lloyd-williams62 / james-norton-591741b2",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re UK Life Branch: adrian-stevenson / matt-bone-4b127a4a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re UK Life Branch: adrian-stevenson / james-norton-591741b2",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re UK Life Branch: matt-bone-4b127a4a / james-norton-591741b2",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re UK Life Branch: jonathan-carnell-26526b205 / sridharanmadhusudhanan",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA UK: anna-c-6b5a7226 / emma-jones-99a3834b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA UK: anna-c-6b5a7226 / anna-graham-fia",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA UK: anna-c-6b5a7226 / deanscotson",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA UK: emma-jones-99a3834b / anna-graham-fia",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA UK: emma-jones-99a3834b / deanscotson",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA UK: rebecca-abayakoon-certified-falu-bcom-snrassoc-anziif-669b345 / mike-evans-9760a310a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA UK: anna-graham-fia / deanscotson",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR UK: helen-croft-underwriting / anilgirdhari",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR UK: hannah-cook-73585829 / gill-salton-414848180",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR UK: hannah-cook-73585829 / ricky-dgama",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR UK: gill-salton-414848180 / ricky-dgama",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "iPipeline UK: danny-essam-43242013 / kaj-makaswaran-64a176188",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×75",
+   "«a smart scales weight estimate…»: adrian-stevenson, adrianhhill, alex-yates-78568889, amanhayer"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×22",
+   "«a flag when the gap…»: adrianhhill, amy-higgs-a1960563, andrew-newton-a1bb7115b, anilgirdhari"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×19",
+   "«between declared and estimated weight…»: amy-higgs-a1960563, andrew-greatbanks-9712b03b, beccacooke, caitlin-stronach"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×17",
+   "«is not a scale reading…»: alex-yates-78568889, andrew-graham-2398a8ba, caroline-froude-53118414, craig-paterson-970183a"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×16",
+   "«how often a flag agrees…»: ceri-davies-11b175165, claire-nolan-01708830, daniel-musty-23a73716, daryl-warren-a773a64a"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×13",
+   "«how many cases each candidate…»: andrew-greatbanks-9712b03b, ceri-davies-11b175165, daniel-musty-23a73716, david-banks-9b750391"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×12",
+   "«within 30 days per the…»: caroline-burton-cipp-e-cipm-fip-33482145, catherine-bowen-walker-llm-cipp-e-63050134, dave-evans-bb20a920, deanscotson"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×11",
+   "«a threshold the insurer sets…»: andrew-greatbanks-9712b03b, beccacooke, crissaunders, denise-bates-06945338"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×11",
+   "«days per the insurer s…»: caroline-burton-cipp-e-cipm-fip-33482145, catherine-bowen-walker-llm-cipp-e-63050134, dave-evans-bb20a920, deanscotson"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×11",
+   "«when the gap crosses the…»: anilgirdhari, anna-c-6b5a7226, claire-nolan-01708830, danny-essam-43242013"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×10",
+   "«a gap between declared and…»: andrew-greatbanks-9712b03b, beccacooke, caitlin-stronach, caroline-smith-78180535"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×10",
+   "«each candidate threshold would flag…»: andrew-greatbanks-9712b03b, ceri-davies-11b175165, claire-nolan-01708830, daniel-musty-23a73716"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×10",
+   "«in the application a smart…»: alex-yates-78568889, anna-c-6b5a7226, danny-essam-43242013, david-waters-05719b114"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×8",
+   "«to the insurer s systems…»: febby-mulewa-7190a597, gareth-jenkins-26010578, nicki-plews-b037aa2b, scott-reid-950a3410"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×7",
+   "«at the point of sale…»: adrian-stevenson, andrew-doran-7a154617, arslanhannani, matt-bone-4b127a4a"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«the insurer s policy retained…»: dave-evans-bb20a920, deanscotson, james-sandell-4686b59, rebecca-mcgeoch-186807134"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«flag and how often a…»: ceri-davies-11b175165, claire-nolan-01708830, daniel-musty-23a73716, sabrina-lane-406a0b65"
+  ]
+ ]
+}

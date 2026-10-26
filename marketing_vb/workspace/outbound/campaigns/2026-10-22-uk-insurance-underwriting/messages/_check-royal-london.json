@@ -1,0 +1,405 @@
+{
+ "campaign": "2026-10-22-uk-insurance-underwriting",
+ "checked": 18,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "royal-london",
+ "generated": "2026-10-26T10:35:18",
+ "hard": [],
+ "soft": [
+  [
+   "near-duplicate sentence",
+   "Royal London: amy-higgs-a1960563 / leeellisone",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: amy-higgs-a1960563 / goodwinjoshua",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: amy-higgs-a1960563 / malexandratou",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: amy-higgs-a1960563 / fi-wynn-72936a4",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: amy-higgs-a1960563 / dominic-pagan-4077583",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: amy-higgs-a1960563 / robert-arbuckle-b4aa3669",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: amy-higgs-a1960563 / craig-paterson-970183a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: amy-higgs-a1960563 / robin-goodwin-039aa5271",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: leeellisone / goodwinjoshua",
+   "«one timestamped record returns to royal london's…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: leeellisone / fi-wynn-72936a4",
+   "«one timestamped record returns to royal london's…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: leeellisone / damian-mapplebeck-99103818",
+   "«one timestamped record returns to royal london's…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: leeellisone / malexandratou",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: leeellisone / dominic-pagan-4077583",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: leeellisone / robert-arbuckle-b4aa3669",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: leeellisone / craig-paterson-970183a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: leeellisone / robin-goodwin-039aa5271",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: goodwinjoshua / craig-paterson-970183a",
+   "«in a royal london application fitxpress needs 2 p…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: goodwinjoshua / fi-wynn-72936a4",
+   "«a timestamped record is returned to royal london'…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: goodwinjoshua / damian-mapplebeck-99103818",
+   "«a timestamped record is returned to royal london'…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: goodwinjoshua / malexandratou",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: goodwinjoshua / dominic-pagan-4077583",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: goodwinjoshua / robert-arbuckle-b4aa3669",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: goodwinjoshua / robin-goodwin-039aa5271",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: malexandratou / fi-wynn-72936a4",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: malexandratou / dominic-pagan-4077583",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: malexandratou / robert-arbuckle-b4aa3669",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: malexandratou / craig-paterson-970183a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: malexandratou / robin-goodwin-039aa5271",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: fi-wynn-72936a4 / dominic-pagan-4077583",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: fi-wynn-72936a4 / robert-arbuckle-b4aa3669",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: fi-wynn-72936a4 / craig-paterson-970183a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: fi-wynn-72936a4 / robin-goodwin-039aa5271",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: james-sandell-4686b59 / carrie-johnson-81744515",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: james-sandell-4686b59 / ceri-davies-11b175165",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: james-sandell-4686b59 / william-stratton-8ab764104",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: james-sandell-4686b59 / damian-mapplebeck-99103818",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: james-sandell-4686b59 / jane-lyle-a6a2b5182",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: james-sandell-4686b59 / sebbowden",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: james-sandell-4686b59 / caitlin-stronach",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: james-sandell-4686b59 / james-blaney-85456b60",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: carrie-johnson-81744515 / ceri-davies-11b175165",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: carrie-johnson-81744515 / william-stratton-8ab764104",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: carrie-johnson-81744515 / damian-mapplebeck-99103818",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: carrie-johnson-81744515 / jane-lyle-a6a2b5182",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: carrie-johnson-81744515 / sebbowden",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: carrie-johnson-81744515 / caitlin-stronach",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: carrie-johnson-81744515 / james-blaney-85456b60",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: ceri-davies-11b175165 / robin-goodwin-039aa5271",
+   "«hi ceri, an evaluation counts how many cases each…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: ceri-davies-11b175165 / william-stratton-8ab764104",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: ceri-davies-11b175165 / damian-mapplebeck-99103818",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: ceri-davies-11b175165 / jane-lyle-a6a2b5182",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: ceri-davies-11b175165 / sebbowden",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: ceri-davies-11b175165 / caitlin-stronach",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: ceri-davies-11b175165 / james-blaney-85456b60",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: dominic-pagan-4077583 / robert-arbuckle-b4aa3669",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: dominic-pagan-4077583 / craig-paterson-970183a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: dominic-pagan-4077583 / robin-goodwin-039aa5271",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: robert-arbuckle-b4aa3669 / craig-paterson-970183a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: robert-arbuckle-b4aa3669 / robin-goodwin-039aa5271",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: william-stratton-8ab764104 / damian-mapplebeck-99103818",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: william-stratton-8ab764104 / jane-lyle-a6a2b5182",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: william-stratton-8ab764104 / sebbowden",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: william-stratton-8ab764104 / caitlin-stronach",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: william-stratton-8ab764104 / james-blaney-85456b60",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: damian-mapplebeck-99103818 / robin-goodwin-039aa5271",
+   "«in the application, fitxpress takes 2 photos, est…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: damian-mapplebeck-99103818 / jane-lyle-a6a2b5182",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: damian-mapplebeck-99103818 / sebbowden",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: damian-mapplebeck-99103818 / caitlin-stronach",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: damian-mapplebeck-99103818 / james-blaney-85456b60",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: jane-lyle-a6a2b5182 / sebbowden",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: jane-lyle-a6a2b5182 / caitlin-stronach",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: jane-lyle-a6a2b5182 / james-blaney-85456b60",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: craig-paterson-970183a / caitlin-stronach",
+   "«two photos in the application let fitxpress flag…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: craig-paterson-970183a / robin-goodwin-039aa5271",
+   "«smart scales gives approximately 3.5% mean absolu…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: sebbowden / caitlin-stronach",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: sebbowden / james-blaney-85456b60",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: caitlin-stronach / james-blaney-85456b60",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«between declared and estimated weight…»: amy-higgs-a1960563, caitlin-stronach, craig-paterson-970183a, goodwinjoshua"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«a gap between declared and…»: caitlin-stronach, craig-paterson-970183a, goodwinjoshua"
+  ]
+ ]
+}

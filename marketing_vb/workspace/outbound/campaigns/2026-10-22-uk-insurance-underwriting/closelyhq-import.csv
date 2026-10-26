@@ -1,0 +1,2987 @@
+first_name,last_name,linkedin_url,company,title,email,connection_note,message_1,message_2
+Suzy,Esson,https://linkedin.com/in/suzy-esson-996a5875,The Exeter,Chief Operating Officer,,,"Hi Suzy,
+
+You lead operational modernisation at a growing mutual, and The Exeter's adviser journey is part of that work.
+
+FitXpress would add a second source of build evidence to the adviser journey: 2 photos, and a flag only where The Exeter's own threshold is crossed.
+
+How does The Exeter decide which adviser journey changes go first?
+
+Katerina","Hi Suzy,
+
+The step returns one timestamped record to The Exeter's systems, and underwriting stays with its own team. FitXpress is not a medical device and does not make underwriting decisions.
+
+Grab a time: https://meetings.hubspot.com/katerina-galich
+
+If underwriting philosophy is owned elsewhere, a pointer would help.
+
+Katerina"
+Amy,Higgs,https://linkedin.com/in/amy-higgs-a1960563,Royal London,Head of Strategic Transformation,,,"Hi Amy,
+
+Noticed overlap with your strategic transformation remit at Royal London: a new evidence step in point-of-sale protection applications touches the journey and the systems behind it.
+
+Royal London's application would gain a FitXpress step: 2 photos, then a flag when the gap between declared and estimated weight crosses a threshold Royal London sets, and one timestamped record returned.
+
+Which protection journey changes sit highest on the transformation agenda this year?
+
+Katerina","Hi Amy,
+
+Where the step fits among this year's protection journey changes is something a shadow evaluation can show, with no effect on live cases.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+A call would cover it: https://meetings.hubspot.com/katerina-galich
+If the new-business journey sits with a colleague, a pointer to them works just as well.
+https://3dlook.ai/for-insurance-underwriting/
+
+Katerina"
+Michael,Spiteri,https://linkedin.com/in/spiterimichael,Legal & General,Group CTO,,,"Hi Michael,
+
+Curious about your take, given your focus on applying AI and machine learning at Legal & General. FitXpress is a smaller piece: an SDK step in the application.
+
+The SDK captures 2 photos and returns one timestamped record to the insurer's systems, with a Smart Scales weight estimate and a flag above the insurer's threshold.
+
+Who signs off a new vendor in the application path, and what do they ask for?
+
+Katerina","Hi Michael,
+
+Integration is through a REST API and SDKs. In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs. Data handling is set out here:
+https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Worth a call with your architects? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Jonathan,Sandell,https://linkedin.com/in/teamsandell,Shepherds Friendly,CEO,,,"Hi Jonathan,
+
+Your background in proposition work, most recently at Embark Group, now sits behind the income protection journey at Shepherds Friendly.
+
+FitXpress leaves a timestamped record on the case file: 2 photos at application, a Smart Scales estimate of weight, and a flag only where the gap passes the society's threshold.
+
+How does the society weigh a change to the income protection journey before it goes live?
+
+Katerina","Hi Jonathan,
+
+A call would show how a second source of build evidence sits in the application, with underwriting left to the society's own team. FitXpress is not a medical device and does not make underwriting decisions.
+
+Calendar: https://meetings.hubspot.com/katerina-galich
+
+If the new-business journey belongs to someone else, a pointer to them works too.
+
+Katerina"
+Marina,Belezina,https://linkedin.com/in/marina-belezina-2451b0,Aviva,Group Director Strategy & Innovation,,,"Hi Marina,
+
+Wanted to reach out given your strategy and innovation remit across Aviva. One place it touches protection: point-of-sale cases where build is declared and no medical evidence is collected.
+
+FitXpress is built for that gap. It takes 2 photos in the application and uses Smart Scales to estimate weight, flagging a difference from declared weight above Aviva's threshold. Aviva's rules decide what happens next.
+
+Where would new evidence steps like this sit in your protection strategy?
+
+Katerina","Hi Marina,
+
+I can show what the record looks like and how a shadow evaluation would run on Aviva's own threshold. If this belongs elsewhere, point me to whoever owns underwriting philosophy for protection.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+https://meetings.hubspot.com/katerina-galich
+
+More detail: https://3dlook.ai/for-insurance-underwriting/
+
+Katerina"
+Lee,Ellis,https://linkedin.com/in/leeellisone,Royal London,Group Chief Digital Officer,,,"Hi Lee,
+
+Quick one, given your remit to modernise and consolidate digital capabilities at Royal London.
+
+FitXpress is a step for protection applications: 2 photos, a Smart Scales weight estimate, and a flag only when the gap with declared weight crosses a threshold Royal London sets. One timestamped record returns to Royal London's systems.
+
+How does a new step get into a digital application at Royal London?
+
+Katerina","Hi Lee,
+
+From a digital view, the point is what reaches the systems: one record per applicant, on a random identifier.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+I would welcome a call: https://meetings.hubspot.com/katerina-galich
+Whoever owns the adviser e-application is equally welcome to take it, if you point me there.
+
+Katerina"
+Steve,Lister,https://linkedin.com/in/steve-lister-87b0671,Aviva,"Head of Architecture | Insurance, Wealth & Retirement",,,"Hi Steve,
+
+Noticed overlap with your bio: how components, people and technology interact. A capture step in an application is one more component in Aviva's protection journey.
+
+FitXpress is an SDK step capturing 2 photos. Back comes one timestamped record with a Smart Scales weight estimate, BMI from the declared height, and a flag above a threshold Aviva sets.
+
+Who reviews a new capture component before it goes into Aviva's protection application journey?
+
+Katerina","Hi Steve,
+
+REST API and SDKs, with photos deleted after processing or within 30 days per the insurer's policy, retained photos blurred and faces obscured at capture. Security documents go through legal@3dlook.me.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Walk-through? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Tariq,Surty,https://linkedin.com/in/tariq-surty-8911101,Legal & General,Chief Technology Officer,,,"Hi Tariq,
+
+Noticed your CTO role for Retail at Legal & General, which owns the systems a new application step would plug into.
+
+FitXpress is an SDK step: the applicant's 2 photos go in, and one timestamped record with a Smart Scales estimate and a threshold flag comes back to the insurer's systems.
+
+Where would a capture step like this connect to your e-application: the front end, or a service behind it?
+
+Katerina","Hi Tariq,
+
+For the review pack: REST API and SDKs, photos deleted after processing or within 30 days per the insurer's policy, scan records on random identifiers. In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs. Documents come through legal@3dlook.me.
+
+Shall we go through it on a call? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Joshua,Goodwin,https://linkedin.com/in/goodwinjoshua,Royal London,Head of Transformation and Innovation,,,"Hi Joshua,
+
+Thought I'd share, given your automation and AI background: manual referral steps in new business are where a new input matters most.
+
+In a Royal London application FitXpress needs 2 photos and flags a gap between declared and estimated weight only above a threshold Royal London sets. A timestamped record is returned to Royal London's systems.
+
+Where does manual referral work sit in new business processing today?
+
+Katerina","Hi Joshua,
+
+The threshold also sets referral volume: a high one sends few cases to an underwriter, and Royal London picks it.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Could we have a short call? https://meetings.hubspot.com/katerina-galich
+If underwriting philosophy is the right owner, a name there would do.
+
+Katerina"
+Rachel,Hannon,https://linkedin.com/in/rahannon,Aviva,"Chief Transformation Officer - UK Life | Insurance, Wealth and Retirement",,,"Hi Rachel,
+
+Spotted something in your title: transformation across UK Life, which takes in Aviva's protection application journey.
+
+For that journey we built FitXpress: 2 photos, a weight estimate from Smart Scales, BMI from the declared height, and a flag once the gap passes a threshold Aviva sets. A timestamped record goes back to Aviva's systems.
+
+How is a new step in the application tested with advisers before it joins a journey?
+
+Katerina","Hi Rachel,
+
+A shadow pilot suits a change of this kind: advisers see the step while outputs stay out of decisions. It connects to the application by API or SDK.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Time to talk it over? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Ben,Howe,https://linkedin.com/in/benhowe,Cirencester Friendly Society,Chief Operating Officer,,,"Hi Ben,
+
+Cirencester Friendly Society's May change, a minimum monthly benefit for members with irregular incomes, shows its income protection range still being developed.
+
+FitXpress is one more step for the application: 2 photos, a Smart Scales weight estimate, BMI from the declared height, and a flag only above a threshold the society sets, returned as one timestamped record.
+
+How does a new application step go from idea to release at Cirencester?
+
+Katerina","Hi Ben,
+
+For the society this is a second source of build evidence on cases it decides without medical evidence; underwriting stays with its own team. FitXpress is not a medical device and does not make underwriting decisions.
+
+You can pick a time here: https://meetings.hubspot.com/katerina-galich
+
+If underwriting philosophy sits with someone else, a pointer to them would be just as welcome.
+
+Katerina"
+Myrto (Myrsini),A.,https://linkedin.com/in/malexandratou,Royal London,Head of Strategy & Innovation,,,"Hi Myrto,
+
+Made me think, given your strategy and innovation brief at Royal London: new evidence sources reach underwriting only if someone assesses them first.
+
+FitXpress adds one timestamped record to the case file, built from 2 photos taken in the application. A flag appears only when declared and estimated weight diverge past a threshold Royal London sets.
+
+How does your team assess a new evidence source before it goes to a business area?
+
+Katerina","Hi Myrto,
+
+Your team would get something concrete to assess from a shadow evaluation: the flags raised at a candidate threshold, with outputs kept out of decisions.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+A call to talk it over: https://meetings.hubspot.com/katerina-galich
+Or point me to whoever owns build rules in underwriting.
+
+Katerina"
+John,Underwood,https://linkedin.com/in/johnunderwood2,Cirencester Friendly Society,Director Of Technology,,,"Hi John,
+
+Noticed your years running IT infrastructure and operations at St. James's Place before Cirencester Friendly Society.
+
+FitXpress is an SDK step: 2 photos in the application return a Smart Scales weight estimate and BMI from the declared height, with a flag above the threshold the society sets. The result lands as one timestamped structured record.
+
+Which checks would Cirencester want completed before a vendor's SDK goes into its new-business journey?
+
+Katerina","Hi John,
+
+There is a REST API and SDKs, with one record per applicant on random identifiers. Photos are deleted after processing or within 30 days per the insurer's policy.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Documents via legal@3dlook.me, privacy FAQ here:
+https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+Book a call here: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Fi,Wynn,https://linkedin.com/in/fi-wynn-72936a4,Royal London,Head of Protection Propositions,,,"Hi Fi,
+
+Came across your work in end-to-end proposition development, now across Royal London's protection propositions.
+
+FitXpress adds 2 photos to the application, calculates BMI from the declared height and flags a gap with the estimated weight only above a threshold Royal London sets. The step ends with a timestamped record returned to Royal London's systems.
+
+Which advisers would you want to try a step like that first, and what would you ask them?
+
+Katerina","Hi Fi,
+
+A small group of advisers could try the step in a shadow evaluation, with outputs kept out of decisions.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+I can walk through how an adviser test might run: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Karl,Pickering,https://linkedin.com/in/karl-pickering-1918555,LV=,Chief Technology Officer,,,"Hi Karl,
+
+Noticed your long career in regulated financial services, now as CTO at LV=. A new application step is judged there on integration first.
+
+FitXpress is an SDK step in the e-application that takes 2 photos and returns one structured, timestamped record, with a flag above the LV= threshold.
+
+What would a vendor SDK have to show your architecture team before LV= considered it for the e-application?
+
+Katerina","Hi Karl,
+
+There is a REST API and SDKs, and the record is one per applicant. It can reach the underwriting workbench as structured data.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+If a call helps: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+James,Sandell,https://linkedin.com/in/james-sandell-4686b59,Royal London,UK CIO / CTO,,,"Hi James,
+
+Quick reaction to your CIO and CTO role at Royal London: any new step in new business arrives through a vendor review.
+
+FitXpress is an API and SDK step in the application, built on 2 photos. It returns one structured record, and any flag depends on a threshold Royal London sets for the gap between declared and estimated weight.
+
+When an SDK step for the e-application reaches your desk, what does your team ask for first?
+
+Katerina","Hi James,
+
+For the review: REST API and SDKs, scan records on random identifiers, photos deleted after processing or within 30 days per the insurer's policy, retained photos blurred, faces obscured at capture.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+A call: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Arslan,Hannani,https://linkedin.com/in/arslanhannani,Aviva,Chief Innovation Officer,,,"Hi Arslan,
+
+Quick reaction to your headline: innovation and new ventures at Aviva. A practical test case sits in protection, at the point of sale with no medical evidence.
+
+We built FitXpress for it: 2 photos, a Smart Scales estimate of weight, BMI from the declared height, and a flag above the threshold Aviva sets. The output is one timestamped record in Aviva's systems.
+
+How does a new capability get from the innovation team into a protection journey?
+
+Katerina","Hi Arslan,
+
+Worth a short call on what the record contains and why an evaluation precedes any live use. If someone else runs the protection new-business journey, a pointer to them would do.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Jenny,Reeve,https://linkedin.com/in/jennyreeve,Legal & General,Group Head of Transformation,,,"Hi Jenny,
+
+Quick idea from your Group transformation seat at Legal & General. The record from FitXpress sits on the case file: timestamped, structured, built from 2 photos and a Smart Scales estimate, with a flag only above the threshold the insurer sets.
+
+It matters for point-of-sale protection cases decided without medical evidence. When a new step like that is proposed, how does it get through Group governance?
+
+Katerina","Hi Jenny,
+
+I would like to show the record and the evaluation path, which counts flags per threshold before anything touches a live case. FitXpress is not a medical device and does not make underwriting decisions. If underwriting philosophy belongs to someone else, point me to whoever owns it.
+
+A short call: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Toby,Bainbridge,https://linkedin.com/in/toby-bainbridge-063483a,The Exeter,Head of Insurance Solutions,,,"Hi Toby,
+
+As Head of Insurance Solutions at The Exeter, you shape how Income First and Real Life reach advisers, including the disclosure capture before the application.
+
+Placed after that disclosure capture, FitXpress takes 2 photos and returns a timestamped record, with a flag where The Exeter's threshold is crossed.
+
+Where in the adviser journey would a step like that fit best?
+
+Katerina","Hi Toby,
+
+The step would follow disclosure capture in the same adviser flow. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results. The records go to The Exeter's systems only.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Happy to talk: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Gary,M.,https://linkedin.com/in/gary-m-3b7b913b,Legal & General,Transformation Director - Retail,,,"Hi Gary,
+
+Caught my eye: Transformation Director for Retail at Legal & General, the division writing individual protection. FitXpress adds a step to that application: 2 photos give a Smart Scales weight estimate, and the insurer's threshold decides whether a flag is raised.
+
+Which parts of the Retail protection journey are open to change this year?
+
+Katerina","Hi Gary,
+
+A call would show where the step could sit in the Retail journey. FitXpress is not a medical device and does not make underwriting decisions. If the new-business journey belongs to someone else, a name is all I need.
+
+https://meetings.hubspot.com/katerina-galich
+
+The step in more detail:
+https://3dlook.ai/for-insurance-underwriting/
+
+Katerina"
+Manju,Devi,https://linkedin.com/in/manjudevinatarajan,Aviva,Head of Digital Portfolio-Group Strategy &Transformation,,,"Hi Manju,
+
+Quick thought from your digital product background: a portfolio decision often comes down to which application steps are worth changing at Aviva.
+
+For protection, FitXpress takes 2 photos in the application. A flag appears when the Smart Scales weight estimate differs from the declared figure by more than Aviva's threshold, and each applicant gets one timestamped, structured record.
+
+Which changes to protection applications sit in your digital portfolio at the moment?
+
+Katerina","Hi Manju,
+
+Technically it is a REST API call and a capture step, with the threshold held by the insurer. I can take you through it live, or you could point me to whoever owns the adviser application experience.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Lili,Burdass,https://linkedin.com/in/liliburdass,Aviva,"Head of Transformation, Protection",,,"Hi Lili,
+
+Quick note on your role as Head of Transformation, Protection at Aviva: the application journey is where much of that change lands.
+
+In the protection application, FitXpress takes 2 photos and estimates weight with Smart Scales. Aviva's threshold decides when a flag is raised, and one timestamped record comes back.
+
+How is drop-off measured when a new step joins the protection application?
+
+Katerina","Hi Lili,
+
+A pilot would give you a completion count before any rollout, from a sample offered the step with outputs kept out of decisions.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Would a call suit? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Joel,Manstoff,https://linkedin.com/in/joel-manstoff,Aviva,Group Head of Transformation,,,"Hi Joel,
+
+Couldn't help but ask after reading that you treat transformation as a mindset. Protection at Aviva has a concrete case: point-of-sale applications where build is only declared.
+
+FitXpress takes 2 photos and returns a Smart Scales weight estimate with a threshold flag set by Aviva, all on a timestamped record.
+
+How would you sequence a small evidence step like this against other change in protection?
+
+Katerina","Hi Joel,
+
+The scope can stay small: a shadow run on one set of cases, with outputs kept out of decisions. A call would show what it asks of a team. Whoever owns the protection change roadmap might be the better first conversation.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Gary,Beyer,https://linkedin.com/in/gary-beyer-37995610,LV=,Protection Proposition Director,,,"Hi Gary,
+
+As Protection Proposition Director at LV=, you decide where steps sit in a protection application sold through advisers.
+
+FitXpress would add one: 2 photos return a Smart Scales weight estimate and BMI from the declared height, with a flag when the gap crosses a threshold LV= sets. One timestamped record goes back to LV= systems.
+
+Where does an adviser first record a client's weight at LV= today, and what would sit beside it?
+
+Katerina","Hi Gary,
+
+Beside that declaration, completion would be measured in the evaluation, with results going to LV= systems only. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Time to talk? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Sandi,Sohal,https://linkedin.com/in/sandi-sohal-2853aa13,Pacific Life Re,"AVP, Basis Development, R&D",,,"Hi Sandi,
+
+Your bio on turning data into insight across protection and longevity prompted a note on build evidence for Pacific Life Re's clients.
+
+FitXpress adds two photos to an application and returns a timestamped record, with BMI from the declared height and a flag when declared and estimated weight differ by more than the insurer's own threshold.
+
+What would your basis team need to see in an evaluation before build-band evidence reaches a client?
+
+Katerina","Hi Sandi,
+
+An evaluation would report how many cases each candidate threshold flags and how often a flag agrees with build evidence collected separately. Smart Scales has approximately 3.5% mean absolute error under evaluated conditions, and it is not a scale reading.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Open to a call on the design? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Caroline,Burton CIPP/E CIPM FIP,https://linkedin.com/in/caroline-burton-cipp-e-cipm-fip-33482145,Pacific Life Re,Data Protection Officer - AVP,,,"Hi Caroline,
+
+Wanted to reach out given your data protection background across FTSE 100 groups, now as DPO at Pacific Life Re. A photo step in a client insurer's new-business journey raises processor questions.
+
+FitXpress takes 2 photos in the application. Photos are deleted after processing or within 30 days, per the insurer's policy, and scan records sit on random identifiers.
+
+What does your review ask of a new data processor before it reaches a client journey?
+
+Katerina","Hi Caroline,
+
+For the review file: retained photos are blurred, faces are obscured at capture, and documents come through legal@3dlook.me.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Happy to cover it on a call: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Carrie,Johnson,https://linkedin.com/in/carrie-johnson-81744515,Royal London,Customer Lifestage Director - Protection and Build & Grow,,,"Hi Carrie,
+
+Quick thought on Royal London protection: you refreshed the income protection occupation classes this year, and build is still declared at application.
+
+FitXpress adds a short photo step to the application: 2 photos, with BMI worked out from the declared height. A flag follows only above a threshold Royal London sets, with one timestamped record per case.
+
+Where in your protection journey do applicants drop off today?
+
+Katerina","Hi Carrie,
+
+An evaluation reports how many applicants complete the photo step, set against the drop-off you see today. FitXpress returns 80+ body measurements, under 45 seconds from the photos to structured results.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Worth a call? https://meetings.hubspot.com/katerina-galich
+
+The detail is on the landing page:
+https://3dlook.ai/for-insurance-underwriting/
+
+Katerina"
+Andrew,Doran,https://linkedin.com/in/andrew-doran-7a154617,UnderwriteMe,Chief Executive Officer at UnderwriteMe,,,"Hi Andrew,
+
+Running UnderwriteMe from an underwriter's seat means the Decision Platform is judged on what it does at the point of sale.
+
+FitXpress adds 2 photos to the application and places one timestamped, structured record on the case file, with a flag when declared and estimated weight differ by more than the insurer's threshold.
+
+What do insurers most often want from the Decision Platform on build when an application goes in?
+
+Katerina","Hi Andrew,
+
+For the Decision Platform, the connection is a REST API, or SDKs for web and mobile, and the timestamped record for each applicant returns there. FitXpress is not a medical device and does not make underwriting decisions.
+
+A short conversation?
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Sue,Hendry,https://linkedin.com/in/sue-hendry-a8415a17,Aviva,Head of Protection UW/Claims and Customer Services,,,"Hi Sue,
+
+Saw the news on Aviva's non-medical limits and the move of medical exams to nurse-led screening. It leaves cases where build is declared and no screening follows.
+
+FitXpress is a step for exactly those cases. Applicants take 2 photos, Smart Scales estimates their weight, and BMI is calculated from the declared height. A gap beyond Aviva's own threshold raises a flag, and Aviva's underwriters decide what follows.
+
+On those cases, what does your team see today to judge build?
+
+Katerina","Hi Sue,
+
+A shadow evaluation would count how many cases each candidate threshold flags and how often a flag matches separately collected build evidence. Smart Scales estimates weight at approximately 3.5% mean absolute error under evaluated conditions, and the estimate is not a scale reading.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Happy to go through it: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Aman,Hayer,https://linkedin.com/in/amanhayer,Aviva,Group Transformation Director,,,"Hi Aman,
+
+Caught my eye: your headline on the efficiency and effectiveness of operations. In Aviva protection, referrals to an underwriter are one place that shows.
+
+FitXpress asks for 2 photos and returns a Smart Scales weight estimate with BMI from the declared height. Only a gap beyond Aviva's threshold produces a flag, on a timestamped record.
+
+Which measures does the transformation team use to judge whether a referral step earns its place?
+
+Katerina","Hi Aman,
+
+An evaluation would count how many cases a candidate threshold flags, which gives a measure to judge the step against. If that sits with someone else, whoever leads protection underwriting day to day is the person to ask.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Sai Tejo,Kiran,https://linkedin.com/in/saitejokiran,UnderwriteMe,Director of Product Management,,,"Hi Sai Tejo,
+
+You describe yourself as passionate about platforms, and as Director of Product Management at UnderwriteMe you decide which partner steps join one.
+
+FitXpress is a step insurers could offer: 2 photos in the application, a Smart Scales weight estimate and a flag at the insurer's threshold, returned as one structured record.
+
+When is a partner step worth offering to insurers on the platform?
+
+Katerina","Hi Sai Tejo,
+
+The build flag would arrive inside the record returned to the platform, which makes it a small addition to review on the roadmap. FitXpress is not a medical device and does not make underwriting decisions.
+
+I would welcome a call:
+https://meetings.hubspot.com/katerina-galich
+
+If partnerships sit with another colleague, a pointer works too.
+
+Katerina"
+Riccardo,Rossi,https://linkedin.com/in/riccardorossilbs,UnderwriteMe,Product Manager Director,,,"Hi Riccardo,
+
+As a product director at UnderwriteMe, you decide what enters an adviser journey on the Protection Platform.
+
+FitXpress would add 2 photos at the application stage, with a Smart Scales weight estimate and a flag when the gap from declared weight crosses an insurer's threshold. A structured record comes back to the platform.
+
+How would a step like that enter an adviser's journey?
+
+Katerina","Hi Riccardo,
+
+SDKs for web and mobile would carry the step into the adviser journey, and each applicant's record would return to the platform. FitXpress is not a medical device and does not make underwriting decisions.
+
+Talk it through?
+https://meetings.hubspot.com/katerina-galich
+
+If the adviser journey belongs to another team, I would be glad of an introduction.
+
+Katerina"
+Ann-Marie,O'Dea,https://linkedin.com/in/ann-marie-o-dea-72104a24,Shepherds Friendly,CEO Shepherds Group,,,"Hi Ann-Marie,
+
+As CEO of Shepherds Group you sponsor the income protection at Shepherds Friendly, where cover starts from day one on interactive underwriting.
+
+FitXpress would add 2 photos to the application and return a Smart Scales weight estimate, BMI from the declared height and a flag above a threshold the society sets, as one timestamped record.
+
+How does an application change get sponsored at group level, from first idea to sign-off?
+
+Katerina","Hi Ann-Marie,
+
+Underwriting stays with the society's own team, and one record per applicant comes back to its systems. A short call would cover what that looks like. FitXpress is not a medical device and does not make underwriting decisions.
+
+Choose a time: https://meetings.hubspot.com/katerina-galich
+
+Or point me to whoever leads underwriting at the society.
+
+Katerina"
+Steve,Davis,https://linkedin.com/in/sdavis2,Legal & General,Group Director of Transformation,,,"Hi Steve,
+
+This stood out: a Group Director of Transformation with a background in digital proposition development, now at Legal & General. FitXpress would sit inside the protection application: 2 photos and a Smart Scales estimate, with the insurer's threshold deciding when a flag is raised.
+
+Legal & General's rules and underwriters decide what happens next. When the protection application changes, who sets the evidence a new step must carry?
+
+Katerina","Hi Steve,
+
+A walk-through would cover the record and the shadow evaluation design, which keeps outputs away from live cases. FitXpress is not a medical device and does not make underwriting decisions. If a colleague owns the build rules in protection underwriting, I would gladly be pointed their way.
+
+Calendar: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Cris,Saunders,https://linkedin.com/in/crissaunders,Legal & General,Head of Groupwide Digital Products,,,"Hi Cris,
+
+Made me think: you lead digital products across Legal & General, and the protection application is one of those journeys. FitXpress is a camera step in it: the applicant takes 2 photos, and a Smart Scales estimate is flagged only above a threshold the insurer sets, with one timestamped record returned.
+
+Where in a digital protection journey would you test a step like that first?
+
+Katerina","Hi Cris,
+
+I can show the step as an applicant would meet it, and the record the insurer receives. FitXpress is not a medical device and does not make underwriting decisions. If the adviser-facing application sits with another team, a pointer to its owner works just as well.
+
+Slot here: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Michael,Williams,https://linkedin.com/in/michael-williams-0901a823,Shepherds Friendly,Chief Change Officer,,,"Hi Michael,
+
+You lead change at Shepherds Friendly after portfolio and programme work at Schroders Personal Wealth. A new application step reaches you as a delivery question.
+
+For delivery it is one step: the applicant takes 2 photos, and FitXpress returns a timestamped record with a flag wherever the society's threshold is crossed.
+
+How would a step like that be sized and sequenced in the change portfolio?
+
+Katerina","Hi Michael,
+
+FitXpress is one integration step for the application, offered wherever the society chooses. In a change portfolio that gives one deliverable to size, with one record returned per applicant. FitXpress is not a medical device and does not make underwriting decisions.
+
+See if it fits: https://meetings.hubspot.com/katerina-galich
+
+If underwriting policy sits elsewhere, I would be glad of a name.
+
+Katerina"
+Kate,Lyons,https://linkedin.com/in/lyonskate81,Scottish Widows,Protection Director,,,"Hi Kate,
+
+Your focus on data-led decision making in protection is why I am writing.
+
+At Scottish Widows the application is where declared build first enters a case. FitXpress puts 2 photos into it and returns one timestamped record, with a flag only where the gap between declared and estimated weight crosses a threshold Scottish Widows sets.
+
+Which stage of your protection journey carries the most hand-offs between adviser and client today?
+
+Katerina","Hi Kate,
+
+Completion would be measured in the evaluation at whichever stage you pick, before any journey changes. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results. FitXpress is not a medical device and does not make underwriting decisions.
+
+Happy to show it on a call:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Ben,Pears,https://linkedin.com/in/pearsben,Holloway Friendly,Chief Executive Officer,,,"Hi Ben,
+
+Wanted to reach out about how Holloway Friendly works: instant underwriting decisions at the point of sale on income protection.
+
+On those cases build is declared. FitXpress would add 2 photos taken in the application, a Smart Scales weight estimate, and a flag only when the gap crosses a threshold Holloway Friendly sets, as one timestamped record.
+
+Where in the application is build declared today, and who sees it?
+
+Katerina","Hi Ben,
+
+On an instant decision the added record sits with the application, where an underwriter can see it if a case is ever referred. FitXpress is not a medical device and does not make underwriting decisions.
+
+If a call is useful, here is my calendar: https://meetings.hubspot.com/katerina-galich
+Otherwise, point me to whoever owns underwriting philosophy.
+
+Katerina"
+Jack,Southcott,https://linkedin.com/in/jack-southcott-30959929,The Exeter,Head of Proposition (Protection),,,"Hi Jack,
+
+Your route from the Exeter Family Friendly product team to Head of Proposition (Protection) means you know how a change feels to advisers and clients.
+
+With FitXpress, applicants would take 2 photos in the application, with a Smart Scales estimate of weight behind them and a flag raised only above a threshold The Exeter sets.
+
+How do you measure drop-off when a new step enters the application?
+
+Katerina","Hi Jack,
+
+The evaluation would count applicants who start the step and do not finish it, which gives a drop-off figure for that step alone. Results go to The Exeter's systems only.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Our landing page: https://3dlook.ai/for-insurance-underwriting/
+
+Try this slot: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Sam,Chivers,https://linkedin.com/in/samuelchivers,Shepherds Friendly,Chief Operating Officer,,,"Hi Sam,
+
+As COO of Shepherds Friendly, with day-to-day operations in your remit, a new vendor in the application is likely to cross your desk.
+
+FitXpress is an SDK step that takes 2 photos in the application and sends back one timestamped record, with a flag only above the society's own threshold.
+
+How does Shepherds Friendly review a new data processor before it touches the application?
+
+Katerina","Hi Sam,
+
+Photos are deleted after processing or within 30 days per the society's policy, and scan records sit on random identifiers. FitXpress is not a medical device and does not make underwriting decisions.
+
+Time on my calendar: https://meetings.hubspot.com/katerina-galich
+
+A pointer to whoever owns the evidence rules would also do.
+
+Katerina"
+Nicki,Plews,https://linkedin.com/in/nicki-plews-b037aa2b,Legal & General,Head of Product and Proposition,,,"Hi Nicki,
+
+Got me thinking about your path from protection strategy to leading product and proposition at Legal & General. February's plainer policy documents for advisers suggest the adviser experience is a live priority.
+
+FitXpress is a step inside the application: 2 photos feed a Smart Scales estimate, and a flag goes to the insurer only above its own threshold.
+
+How would you test a new step with advisers before it reached a live journey?
+
+Katerina","Hi Nicki,
+
+Adviser testing would use the evaluation: completion of the photo step and how many cases a threshold would flag, with the record going to the insurer's systems only.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Would a short call to plan an adviser test make sense? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Steve,Smith,https://linkedin.com/in/steve-smith-85b45976,Shepherds Friendly,Head of Product,,,"Hi Steve,
+
+You have led underwriting teams and now drive protection strategy at Shepherds Friendly. You see the application from both sides.
+
+FitXpress is a step for the interactive journey: 2 photos return a Smart Scales weight estimate and BMI from the declared height, and the society's own threshold decides when a flag is raised.
+
+From your underwriting years, how much extra effort at application would an adviser accept for a stronger build record?
+
+Katerina","Hi Steve,
+
+Advisers would meet one short step, and the record goes to Shepherds Friendly systems only. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Landing page, if you want a look:
+https://3dlook.ai/for-insurance-underwriting/
+
+Book here: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Jon,O'Neal,https://linkedin.com/in/jon-oneal,Aviva,Head of IT Aviva Protection UK,,,"Hi Jon,
+
+Thought I'd share something relevant to Head of IT for Aviva Protection UK, given your years in regulated insurance environments.
+
+FitXpress is a capture step with 2 photos. The returned record carries a Smart Scales weight estimate, BMI from the declared height and a threshold flag that Aviva configures.
+
+Which formats does Aviva's underwriting workbench accept for evidence from outside systems?
+
+Katerina","Hi Jon,
+
+Integration is a REST API and SDKs, and scan records sit on random identifiers. The data handling answers are in the privacy FAQ: https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+A technical call: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Victoria,Francis,https://linkedin.com/in/victoria-francis-09949480,Aviva,Protection Propositions Director,,,"Hi Victoria,
+
+Got me thinking: your bio puts customer outcomes next to risk management, the balance a new application step has to hit.
+
+The record FitXpress sends to Aviva's systems comes from 2 photos: a Smart Scales weight estimate, BMI from the declared height, and a flag when the gap crosses a threshold Aviva sets.
+
+Where in the application journey would a two-photo step sit best, with advisers or at the client's declaration?
+
+Katerina","Hi Victoria,
+
+Completion decides whether a step stays, and an evaluation would measure it. The scan returns the record, under 45 seconds from the photos to structured results.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Shall we find a time? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Réka,Halász,https://linkedin.com/in/réka-halász-9a72b585,Pacific Life Re,"AVP, Basis Development, R&D",,,"Hi Réka,
+
+Spotted something in your background: longevity risk and consulting, now R&D at Pacific Life Re, where new evidence is judged before clients see it.
+
+From two photos taken inside an application, FitXpress returns one timestamped, structured record, with BMI from the declared height and a flag above a threshold the insurer sets.
+
+How does R&D decide which new remote evidence sources are worth taking to a client for evaluation?
+
+Katerina","Hi Réka,
+
+A client evaluation is how we would start: 2 photos per applicant, with outputs kept out of decisions. R&D would see flag counts for each candidate threshold before a client commits to anything.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Would a call be a sensible next step? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Hannah,Spiro,https://linkedin.com/in/hannah-spiro-27b12b106,Aviva,Head of Innovation Engagement,,,"Hi Hannah,
+
+Quick idea for you on protection applications at Aviva, where build is declared and no medical evidence follows.
+
+FitXpress covers those with 2 photos and a Smart Scales weight estimate, with a flag where the estimate differs from declared weight by more than Aviva's threshold. The timestamped record returns to Aviva's systems.
+
+When an outside capability reaches you, what does it need to show before it goes to a protection team?
+
+Katerina","Hi Hannah,
+
+The part a protection team can judge quickly is the evaluation design, run on Aviva's threshold with outputs kept out of decisions. I can walk through it on a call, or you could point me to whoever in protection underwriting would assess new evidence.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+https://meetings.hubspot.com/katerina-galich
+
+The landing page has the rest: https://3dlook.ai/for-insurance-underwriting/
+
+Katerina"
+Mala,Thurston,https://linkedin.com/in/mala-thurston-22a0b499,Pacific Life Re,"Head of Protection, Europe",,,"Hi Mala,
+
+Quick thought on Pacific Life Re's protection business in Europe: many client cases are decided without medical evidence, and build on them is declared.
+
+FitXpress takes 2 photos inside the application and returns one timestamped, structured record, with a flag when declared and estimated weight differ by more than the threshold the insurer sets. The insurer's rules decide what follows.
+
+When a client asks your team about new evidence, how do you decide what is worth putting in front of their underwriters?
+
+Katerina","Hi Mala,
+
+One client is enough to count how many cases each candidate threshold flags. Smart Scales estimates weight at approximately 3.5% mean absolute error under evaluated conditions, and it is not a scale reading.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Would a call to walk through the design be useful? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Martin,Boniface-Jones,https://linkedin.com/in/martin-boniface-jones-371173112,Pacific Life Re,"AVP, R&D",,,"Hi Martin,
+
+Had a thought about R&D at Pacific Life Re: build is declared on most point-of-sale cases, and R&D is where a second source would first be sized.
+
+FitXpress returns a Smart Scales weight estimate from 2 photos taken in the application, with a flag only when the gap to the declared weight crosses the insurer's threshold.
+
+At what size of gap would R&D treat a flag as worth testing with a client?
+
+Katerina","Hi Martin,
+
+Candidate thresholds can be placed against the estimate's error band in a shadow evaluation, before any output reaches a case.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Happy to go through it on a call: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Sarah,Barrell,https://linkedin.com/in/sarah-barrell-133690131,Holloway Friendly,Chief Operating Officer (Wiltshire Friendly),,,"Hi Sarah,
+
+Quick note on your operations role at Holloway Friendly, an income protection mutual.
+
+FitXpress would be a small addition to the application: 2 photos, a Smart Scales weight estimate, BMI from the declared height, and a flag if the gap crosses a threshold the society sets. One timestamped record goes back to your systems.
+
+How would a new step like that be reviewed operationally at Holloway Friendly?
+
+Katerina","Hi Sarah,
+
+Operationally it is one added step and one record returned to your systems, which keeps the review to a single data flow. FitXpress is not a medical device and does not make underwriting decisions.
+
+Call? https://meetings.hubspot.com/katerina-galich
+Or point me to whoever runs the new-business journey.
+
+Katerina"
+Elizabeth,Cook,https://linkedin.com/in/elizabeth-cook-2019,Shepherds Friendly,Head of Business Innovations,,,"Hi Elizabeth,
+
+You lead business innovations for protection at Shepherds Friendly, with product and partnership development behind you.
+
+One idea to test is FitXpress: 2 photos in the application give a Smart Scales weight estimate and BMI from the declared height, with a flag when the gap crosses a threshold the society sets. One timestamped record comes back.
+
+How does an idea like that get tested with advisers before the society adopts it?
+
+Katerina","Hi Elizabeth,
+
+Advisers would see a short extra step, and the evaluation would show how it lands before anything goes live. FitXpress is not a medical device and does not make underwriting decisions. More detail here:
+https://3dlook.ai/for-insurance-underwriting/
+
+Let us talk: https://meetings.hubspot.com/katerina-galich
+
+A name for whoever owns the application journey would also help.
+
+Katerina"
+Kylie,Irwin,https://linkedin.com/in/kylie-irwin-385398154,UnderwriteMe,Chief Product Officer,,,"Hi Kylie,
+
+As Chief Product Officer at UnderwriteMe, with enterprise SaaS and AI-enabled platforms behind you, you decide which steps join a journey.
+
+FitXpress takes 2 photos in the application and returns one structured record, with a Smart Scales weight estimate, BMI from the declared height and a flag at the insurer's own threshold.
+
+Which parts of the Decision Platform application journey can take an extra step without slowing it?
+
+Katerina","Hi Kylie,
+
+For the product team, the footprint is web and mobile SDKs along with an API, taking 2 photos, front and side. Each applicant's timestamped record returns to the platform. FitXpress is not a medical device and does not make underwriting decisions.
+
+Shall we look at it together?
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Laura,Vaughan,https://linkedin.com/in/laura-vaughan-b7ba132b2,Scottish Widows,Head of Protection,,,"Hi Laura,
+
+As Head of Protection at Scottish Widows, you own the journey a new step would join.
+
+FitXpress would add a step to the application: 2 photos, with a flag only above the threshold Scottish Widows chooses. Your underwriters keep the rules.
+
+Which adviser groups would you want in the first conversation about a new step in the journey?
+
+Katerina","Hi Laura,
+
+A shadow evaluation would run beside the current journey, with results kept out of decisions. It reports completion and how many cases each candidate threshold would flag. In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Would a call be useful?
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Michelle,Cross,https://linkedin.com/in/michelle-cross-88958422,Aviva,Underwriting Philosophy Manager,,,"Hi Michelle,
+
+Came across your work, from the philosophy and development desk to owning Aviva's underwriting philosophy. The evidence rules are yours to shape.
+
+FitXpress works from 2 photos, and its flag appears only where Smart Scales and the declared weight differ by more than a threshold Aviva sets.
+
+Which evidence would you want logged before a build flag ever reached an underwriter's desk?
+
+Katerina","Hi Michelle,
+
+Smart Scales has approximately 3.5% mean absolute error under evaluated conditions and is not a scale reading. Any useful threshold would sit well above that error, and Aviva sets it.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+I can walk through a design here: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Tom,Parkinson,https://linkedin.com/in/tom-parkinson-03190190,Aviva,Underwriting Rules Developer,,,"Hi Tom,
+
+Curious about your take, as someone who underwrote at Aviva and now codes its rules. A build rule is only as good as the input it reads.
+
+FitXpress returns one timestamped, structured record per applicant. It holds a weight estimate from 2 photos, BMI from the declared height, and a flag if the gap crosses the threshold Aviva sets.
+
+When a rule reads build today, which fields does it take, and where would one more fit?
+
+Katerina","Hi Tom,
+
+The record arrives by REST API or SDK, with the threshold as a value Aviva owns and changes. A shadow run first shows how many cases a given value flags.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Glad to show the record format: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Daryl,Warren,https://linkedin.com/in/daryl-warren-a773a64a,Aviva,Head of Individual Protection Pricing,,,"Hi Daryl,
+
+Quick one, given your move from the actuarial coding hub to individual protection pricing at Aviva. Build loadings depend on how well declared build is evidenced.
+
+FitXpress has applicants take 2 photos in the application. Smart Scales estimates weight, BMI is calculated from the declared height, and a flag is raised at a threshold Aviva chooses. The timestamped record is returned to Aviva's systems.
+
+How are build loadings and the cost of evidence weighed on point-of-sale cases?
+
+Katerina","Hi Daryl,
+
+An evaluation gives you a count before anything is decided: how many cases a candidate threshold flags, and how often a flag agrees with separately collected build evidence.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Easiest to discuss live: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Sally,James,https://linkedin.com/in/sally-james-75186623,Aviva,Senior Development Underwriter,,,"Hi Sally,
+
+Made me think about development underwriting, where new evidence is tested before it reaches live cases at Aviva.
+
+FitXpress takes 2 photos at the point of sale and estimates weight with Smart Scales. BMI follows from the declared height, and a flag fires only past a threshold Aviva sets. The record is timestamped and structured.
+
+When you test a new rule, what usually decides that build evidence is good enough?
+
+Katerina","Hi Sally,
+
+A first test can stay small: one set of cases and a few candidate thresholds, with a count of how often a flag agrees with build evidence collected separately. Outputs stay out of decisions throughout.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Open to a conversation? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Paul,Welsh,https://linkedin.com/in/paul-welsh-a27b7a61,Aviva,Group Head of Innovation,,,"Hi Paul,
+
+Your path through product, proposition and venture work into group innovation at Aviva is a useful lens on this.
+
+One candidate is FitXpress: 2 photos in a protection application, Smart Scales for the weight estimate, BMI from the declared height, and a flag at Aviva's own threshold. The result is a single structured, timestamped record.
+
+What turns an idea from the innovation lab into a test inside protection?
+
+Katerina","Hi Paul,
+
+If the idea fits, the first test is a shadow evaluation with outputs kept out of decisions. I would be glad to take you through the record on a call. If protection propositions sit with someone else, a name would be welcome.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+James,Whitty,https://linkedin.com/in/james-whitty-05a1545a,Aviva,Head of Underwriting Strategy & Governance,,,"Hi James,
+
+Noticed your background, from automation and philosophy into underwriting strategy and governance at Aviva. Governance is where a new evidence source gets its rules.
+
+What FitXpress returns is a record: a weight estimate from 2 photos, BMI worked out from the declared height, and a flag where the gap passes the threshold Aviva sets. It is timestamped and goes to Aviva's systems.
+
+Where do you see gaps between declared and estimated weight mattering most for Aviva's build bands?
+
+Katerina","Hi James,
+
+For governance, the evaluation comes before anything touches a case. Outputs stay out of decisions while a shadow run shows how many cases each threshold would flag.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+If a call would help, here is my diary: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Nick,Austin,https://linkedin.com/in/nicholas-john-austin,Aviva,Protection Commercial Director,,,"Hi Nick,
+
+This stood out: Protection Commercial Director is the seat where terms, adviser feedback and cost meet.
+
+FitXpress puts 2 photos into the application and records a Smart Scales weight estimate against the declared height, with a flag at a threshold Aviva sets. Aviva's underwriters decide what a flag changes.
+
+Where do advisers tell you terms moved after application, and how often?
+
+Katerina","Hi Nick,
+
+The commercial case sits in cases that get no screening and later see terms change. A shadow run on Aviva's own threshold would size that before anyone commits.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+My calendar is here: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Harriet,Granville-Jones,https://linkedin.com/in/harriet-granville-jones-innovation,Aviva,Partnerships Manager - Group Innovation,,,"Hi Harriet,
+
+You scout start-ups for Aviva Group Innovation. This one is narrow: protection point-of-sale cases where build is declared.
+
+FitXpress takes 2 photos in the application and gives a Smart Scales weight estimate. A gap from declared weight over a threshold Aviva sets is flagged on a timestamped record.
+
+What does a start-up in insurance evidence have to show before you take it to a business unit?
+
+Katerina","Hi Harriet,
+
+The test I would propose runs in shadow on Aviva's threshold, with outputs kept out of decisions until the counts are in. A call would show it. The underwriter who would sit on that evaluation may be the better contact.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Suzanne,Lawson,https://linkedin.com/in/suzanne-lawson-2368623,Aviva,Partnerships Manager - Group Innovation,,,"Hi Suzanne,
+
+Your time alongside Aviva's UK Life and Savings leadership, now in Group Innovation partnerships, gives you a view of how protection ideas get picked up.
+
+The idea is FitXpress: 2 photos in a protection application and a Smart Scales weight estimate, with a flag only when the gap passes a threshold Aviva sets. Aviva's systems receive one timestamped record.
+
+When an idea touches the application, who in protection usually sponsors a first test?
+
+Katerina","Hi Suzanne,
+
+A first test would be modest: a shadow run, Aviva's threshold, no effect on any case. I would welcome a call on it, or the name of the sponsor you had in mind for a protection pilot.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Sara,Denyer,https://linkedin.com/in/sara-denyer-b81a2a92,Legal & General,Underwriting Rules User Business Analyst,,,"Hi Sara,
+
+Spotted something in your background: life and disability underwriter first, now the business analyst for Legal & General's underwriting rules. You know the rule and the case it changes.
+
+FitXpress would give the rules one more input: a flag at the insurer's threshold on the gap between declared weight and a Smart Scales estimate from 2 photos.
+
+When you test a change to the rules, which past cases would you run it against?
+
+Katerina","Hi Sara,
+
+Those past cases are where a build flag would be counted: how many each candidate threshold would flag, and how often a flag agrees with build evidence collected separately. FitXpress is not a medical device and does not make underwriting decisions.
+
+Is a call to scope that worthwhile? https://meetings.hubspot.com/katerina-galich
+
+Landing page for reference:
+https://3dlook.ai/for-insurance-underwriting/
+
+Katerina"
+Jenni,Phillips,https://linkedin.com/in/jenni-phillips-98892a24,Legal & General,Development Underwriter,,,"Hi Jenni,
+
+Wanted to reach out and congratulate you on Woman of the Year - Underwriting 2026 at the COVER awards. Development work at Legal & General sits close to the January changes in the life and CI application questions.
+
+FitXpress would be a new source of build evidence for that work: 2 photos in the application give a Smart Scales estimate, flagged against a threshold the company sets.
+
+As a development underwriter, which checks would FitXpress need to pass with you before it touched live cases?
+
+Katerina","Hi Jenni,
+
+Keeping every output away from live cases is the point of a shadow evaluation: your team compares flags with the build evidence it already holds.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+I can sketch the design on a call: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+John,Redmond,https://linkedin.com/in/john-redmond-884597a,Legal & General,Claims & Underwriting Development Team Manager,,,"Hi John,
+
+Noticed overlap with your path: underwriter, then training, now development at Legal & General. You see what happens when an application rule changes.
+
+A build flag would be one such change, raised by FitXpress when a Smart Scales estimate from 2 photos sits far from declared weight, at a threshold the company sets.
+
+When a rule change reaches your team, how do you test it before underwriters rely on it?
+
+Katerina","Hi John,
+
+Underwriters would see the flag and the timestamped record on the case file, with Legal & General setting the threshold. A dry run on a sample of applications would show your team the effect before any live case. FitXpress is not a medical device and does not make underwriting decisions.
+
+Open to a call on how your team would test it? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+David,Banks,https://linkedin.com/in/david-banks-9b750391,Legal & General,Underwriting & Claims Director,,,"Hi David,
+
+Noticed your move up to run underwriting at Legal & General. The January rework of the life and CI application questions aimed at fewer manual referrals, which made me think of cases decided with no nurse screening.
+
+FitXpress flags only the gap between declared weight and a Smart Scales estimate, from 2 photos in the application, at a threshold Legal & General sets.
+
+How is build checked on those cases today?
+
+Katerina","Hi David,
+
+A shadow evaluation would count how many cases each candidate threshold flags and how often a flag agrees with build evidence collected separately, with outputs kept out of decisions.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Would a call to design that be useful? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Brian,Kemp,https://linkedin.com/in/brian-kemp-0467b898,Legal & General,Customer Underwriting Manager,,,"Hi Brian,
+
+Noticed your path from customer underwriter to team manager in Edinburgh, on the desk at Legal & General that takes disclosures from applicants.
+
+In the application the applicant takes 2 photos, and FitXpress returns a Smart Scales estimate. Above the insurer's threshold a flag appears on the case for your underwriters.
+
+When a phone conversation gives a build near a band edge, what does your team do next?
+
+Katerina","Hi Brian,
+
+Underwriters on your desk would see the flag beside what they already ask on the call, and each case would keep its own timestamped record.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Open to a call? https://meetings.hubspot.com/katerina-galich
+
+Landing page:
+https://3dlook.ai/for-insurance-underwriting/
+
+Katerina"
+Tarun,Gupta,https://linkedin.com/in/drtarungupta,Legal & General,Chief Medical Officer,,,"Hi Tarun,
+
+Noticed your years as a GP and on NICE's reference panel, now as Chief Medical Officer at Legal & General. A question about what an estimated value may be used for.
+
+FitXpress returns a Smart Scales weight estimate from 2 photos in the application, and a flag appears only above a threshold the insurer sets. The rules stay with Legal & General.
+
+Before a weight estimate goes into referral rules, which questions would you want answered first?
+
+Katerina","Hi Tarun,
+
+Smart Scales has approximately 3.5% mean absolute error under evaluated conditions, not a scale reading. Any flag should sit well beyond that figure, and Legal & General would choose where the line falls. FitXpress is not a medical device and does not make underwriting decisions.
+
+Happy to walk through it: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Scott,Wallace,https://linkedin.com/in/scott-wallace-b608b49b,Legal & General,Customer Underwriting Team Manager,,,"Hi Scott,
+
+Quick reaction to your move from operations management into running an underwriting team at Legal & General. You see the referral workload first-hand.
+
+On each application, FitXpress takes 2 photos and a Smart Scales weight estimate, flagging only gaps to declared weight above a threshold the insurer sets.
+
+How do manual referrals on build reach your team today?
+
+Katerina","Hi Scott,
+
+The evaluation counts how many referrals each candidate threshold would create before anything goes live, giving your team the workload in advance.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Worth a call? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Nicky,McRae,https://linkedin.com/in/nicky-mcrae-a4a3b5206,Legal & General,Customer Underwriting Team Manager,,,"Hi Nicky,
+
+Had a thought about your move from administration management into leading an underwriting team at Legal & General.
+
+Each application would carry a timestamped FitXpress record: 2 photos, a Smart Scales estimate and a flag only above the insurer's threshold.
+
+What would make a flag useful to your team when a case reaches the desk?
+
+Katerina","Hi Nicky,
+
+The record sits on the case file, with declared and estimated build shown together against the threshold used. FitXpress is not a medical device and does not make underwriting decisions.
+
+A short call would show what a record looks like. https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Pippa,Barber,https://linkedin.com/in/pippa-barber-nee-keefe-487b64b6,Legal & General,"Commercial Director, Retail Protection",,,"Hi Pippa,
+
+Quick thought, given your remit across Retail Protection and Retail Annuities. After Legal & General's January rework of the life and CI application questions, any new step has to earn its place in the journey.
+
+FitXpress would sit in the application: the applicant takes 2 photos, and it returns a Smart Scales estimate and one timestamped record, with a flag above the insurer's threshold.
+
+How do you judge whether a new application step is worth keeping?
+
+Katerina","Hi Pippa,
+
+Completion of the photo step would be measured in the evaluation, showing drop-off before anything goes live.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+I can walk through the design: https://meetings.hubspot.com/katerina-galich
+
+More on the step:
+https://3dlook.ai/for-insurance-underwriting/
+
+Katerina"
+Hai,Luc,https://linkedin.com/in/hai-luc-67306367,Legal & General,"Head of Actuarial Research, Retail Protection",,,"Hi Hai,
+
+Quick note on your move from pricing to leading actuarial research for Retail Protection at Legal & General. The evidence on how build moves price sits with your team.
+
+With FitXpress, each application carries one timestamped record: a Smart Scales estimate from 2 photos, BMI from the declared height and a flag at the insurer's threshold.
+
+How do you weigh the cost of extra build evidence against the loadings it might change?
+
+Katerina","Hi Hai,
+
+For research the record is the useful part: it is structured and timestamped, allowing declared and estimated build to be compared across applications. FitXpress is not a medical device and does not make underwriting decisions.
+
+Would a call help to scope it? https://meetings.hubspot.com/katerina-galich
+
+Details here:
+https://3dlook.ai/for-insurance-underwriting/
+
+Katerina"
+Bethan,Shepherd,https://linkedin.com/in/bethan-shepherd-12a39763,Legal & General,Medical Underwriting Team Manager,,,"Hi Bethan,
+
+Couldn't help but notice the pre-sale and senior medical underwriting in your background before managing the team at Legal & General.
+
+FitXpress works on cases with no medical screening: 2 photos in the application give a Smart Scales estimate, flagged above a threshold Legal & General sets.
+
+When a case arrives with declared weight and nothing measured, what do your underwriters lean on?
+
+Katerina","Hi Bethan,
+
+The scan sits beside what your team already reviews and replaces none of it. A flag refers only gaps above the threshold.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Could we talk it through? https://meetings.hubspot.com/katerina-galich
+
+Further reading:
+https://3dlook.ai/for-insurance-underwriting/
+
+Katerina"
+Andrew,Greatbanks,https://linkedin.com/in/andrew-greatbanks-9712b03b,Legal & General,Customer Underwriting Service Delivery Manager,,,"Hi Andrew,
+
+Quick one, given you ran underwriting at Legal & General and now run its service delivery: your operation would receive any flagged case.
+
+FitXpress flags a gap between declared and estimated weight when it crosses a threshold the insurer sets, from 2 photos in the application and a Smart Scales weight estimate.
+
+If a flag added referrals, what would you need to see first to plan for it?
+
+Katerina","Hi Andrew,
+
+The evaluation answers with counts: how many cases each candidate threshold would flag, before any flag reaches a live case.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+A call could set out the numbers: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Ceri,Davies,https://linkedin.com/in/ceri-davies-11b175165,Royal London,Underwriting Rules and Philosophy Developer,,,"Hi Ceri,
+
+Quick note on your path at Royal London: post-issue sampling, then writing the rules. That shows where a build band edge matters.
+
+FitXpress takes 2 photos in the application and compares estimated weight with the declared figure. A flag appears only if the gap crosses a threshold Royal London sets, and a timestamped record goes on the case file.
+
+Where in the rules you write is build set today, and who signs off a change to it?
+
+Katerina","Hi Ceri,
+
+An evaluation counts how many cases each candidate threshold would flag, and how often a flag agrees with separately collected build evidence.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Happy to plan it on a call: https://meetings.hubspot.com/katerina-galich
+Background for the team:
+https://3dlook.ai/for-insurance-underwriting/
+
+Katerina"
+Dominic,Pagan,https://linkedin.com/in/dominic-pagan-4077583,Royal London,Underwriting Philosophy Manager,,,"Hi Dominic,
+
+Got me thinking about your route at Royal London, from rules development to Underwriting Philosophy Manager.
+
+FitXpress works from two photos taken in the application. It estimates weight with Smart Scales, calculates BMI from the declared height and raises a flag only when the gap crosses a threshold you set.
+
+How often does the philosophy team revisit the build guidance, and what prompts a review?
+
+Katerina","Hi Dominic,
+
+A review of build guidance could use a shadow evaluation, which keeps every output away from decisions. Any threshold would sit well above the estimate's margin: approximately 3.5% mean absolute error under evaluated conditions, and not a scale reading.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Happy to go through the design: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Robert,Arbuckle,https://linkedin.com/in/robert-arbuckle-b4aa3669,Royal London,Underwriting Rules Developer,,,"Hi Robert,
+
+Caught my eye: years of rules work, from Scottish Provident through to Royal London. With income protection occupation classes refreshed this year, build on income protection deserves its own look.
+
+Royal London sets a threshold, and FitXpress raises a flag only when the weight gap from 2 photos in the application passes it, with a timestamped record.
+
+How does the build rule differ between income protection and life or CI cases?
+
+Katerina","Hi Robert,
+
+A shadow evaluation could show how a flag would read against the income protection build rule, before any wording is drafted.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+A call to sketch the rule wording: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+William,Stratton,https://linkedin.com/in/william-stratton-8ab764104,Royal London,Underwriting Rules Developer,,,"Hi William,
+
+This stood out: underwriting strategy design in your background, now rules development at Royal London. Rules developers see what a new input has to look like.
+
+FitXpress returns one timestamped, structured record to Royal London's systems from 2 photos in the application. A flag is raised only where the weight gap passes a threshold Royal London sets.
+
+Which fields would that record need to carry to be usable in your rules?
+
+Katerina","Hi William,
+
+Scan records sit on random identifiers. The call could start from the fields your rules would read.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Shall we go through the record on a call? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Damian,Mapplebeck,https://linkedin.com/in/damian-mapplebeck-99103818,Royal London,Underwriting Rules Developer,,,"Hi Damian,
+
+Spotted something: your headline covers rules built across several underwriting engines, which means you know where a referral rule plugs in.
+
+In the application, FitXpress takes 2 photos, estimates weight with Smart Scales and flags a gap against the declared figure only above a threshold Royal London sets. A timestamped record goes to Royal London's systems.
+
+How would you test a referral rule on a build gap before it reaches live cases?
+
+Katerina","Hi Damian,
+
+That test could run as a shadow evaluation, with outputs kept out of decisions while you see what each threshold would flag.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Call if useful: https://meetings.hubspot.com/katerina-galich
+Landing page, for reference:
+https://3dlook.ai/for-insurance-underwriting/
+
+Katerina"
+Jane,Lyle,https://linkedin.com/in/jane-lyle-a6a2b5182,Royal London,Development Underwriter,,,"Hi Jane,
+
+Wanted to reach out: development underwriting at Royal London covers the changes made to protection rules.
+
+FitXpress returns one timestamped record per case from 2 photos in the application, with a flag only where the gap between declared and estimated weight crosses a threshold Royal London sets.
+
+How do you decide today whether a change to build handling is worth taking forward?
+
+Katerina","Hi Jane,
+
+A development case rests on numbers, and the evaluation supplies them: how many cases each candidate threshold would flag.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Could we talk it through? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Craig,Paterson,https://linkedin.com/in/craig-paterson-970183a,Royal London,Chief Underwriter,,,"Hi Craig,
+
+Noticed your background: philosophy work at Royal London before the Chief Underwriter role. Cases decided under non-medical limits carry declared build and no screening.
+
+Two photos in the application let FitXpress flag a gap between declared and estimated weight, only above a threshold Royal London sets. One timestamped record goes on the case file, and your rules decide what follows.
+
+What would make you comfortable testing a new source of build evidence on live point-of-sale cases?
+
+Katerina","Hi Craig,
+
+At your chosen threshold, a shadow evaluation would show how many point-of-sale cases a flag sends to an underwriter. Smart Scales gives approximately 3.5% mean absolute error under evaluated conditions and is not a scale reading.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Would a call make sense? Calendar here: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Seb,Bowden,https://linkedin.com/in/sebbowden,Royal London,Rules & Development Underwriter,,,"Hi Seb,
+
+Had a thought, given you trained medical underwriters before joining Royal London's rules and development desk: a flag only helps if the underwriter reading it knows what it means.
+
+FitXpress gives the case file one timestamped record from 2 photos taken in the application, and an underwriter sees a flag only past a threshold Royal London sets.
+
+What would an underwriter need to see on that record to act on it?
+
+Katerina","Hi Seb,
+
+A flag reaches an underwriter as a prompt to refer, with the weight estimate beside it on the record.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+I can show a sample record on a call: https://meetings.hubspot.com/katerina-galich
+More here:
+https://3dlook.ai/for-insurance-underwriting/
+
+Katerina"
+Caitlin,Stronach,https://linkedin.com/in/caitlin-stronach,Royal London,Head of Protection Commercials and Business Quality,,,"Hi Caitlin,
+
+Couldn't help but ask, given your path from business quality control to protection commercials at Royal London.
+
+FitXpress asks for 2 photos in the application and flags a gap between declared and estimated weight above a threshold Royal London sets. A timestamped record sits on the case file for later review.
+
+When terms change after application, how does that show up in your business quality reviews?
+
+Katerina","Hi Caitlin,
+
+Business quality reviews could compare each flag with the terms given after application, using a shadow evaluation.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Evaluation design first, if you like: https://meetings.hubspot.com/katerina-galich
+Further reading:
+https://3dlook.ai/for-insurance-underwriting/
+
+Katerina"
+Robin,Goodwin,https://linkedin.com/in/robin-goodwin-039aa5271,Royal London,Underwriting Analytics Manager,,,"Hi Robin,
+
+Curious about your take, as someone running underwriting analytics at Royal London after philosophy and rules work.
+
+From two photos in the application, FitXpress estimates weight with Smart Scales and flags a gap against declared weight only above a threshold Royal London sets. Each case gets a timestamped structured record.
+
+Which existing data would you use to judge how often such a flag agrees with other build evidence?
+
+Katerina","Hi Robin,
+
+The evaluation produces the counts you would want: cases flagged at each candidate threshold, and how often a flag agrees with separately collected build evidence. Smart Scales estimates weight at approximately 3.5% mean absolute error under evaluated conditions, and the result is not a scale reading.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Open to a call? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+James,Blaney,https://linkedin.com/in/james-blaney-85456b60,Royal London,Underwriting & Claims Quality Assurance Manager,,,"Hi James,
+
+Quick idea for you, on quality assurance of underwriting at Royal London.
+
+From 2 photos taken in the application, FitXpress puts a timestamped, structured record on the case file, flagged only where declared and estimated weight differ by more than Royal London's threshold.
+
+When a review looks at build on a case that had no nurse screening, what is on the file to check against?
+
+Katerina","Hi James,
+
+A reviewer would see the same record the underwriter saw, with the weight estimate beside it.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Want to see one on a call? https://meetings.hubspot.com/katerina-galich
+The page behind it:
+https://3dlook.ai/for-insurance-underwriting/
+
+Katerina"
+Lucy,Luscombe,https://linkedin.com/in/lucy-luscombe-837866b2,LV=,Head of Protection Pricing at LV=,,,"Hi Lucy,
+
+Your years as an actuary at LV= now feed the protection pricing you lead, where build loadings meet the cost of evidence.
+
+From 2 photos in the application, FitXpress gives LV= a second source of build evidence, with a flag only above a threshold LV= sets and a timestamped record.
+
+When a build loading is set, how much of it rests on declared weight alone?
+
+Katerina","Hi Lucy,
+
+For LV= the first output would be flag counts at each candidate threshold, an input to the view on loadings. The record sits beside pricing and does not rate or price.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Calendar: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Gareth,Hurst,https://linkedin.com/in/gareth-hurst-b2053a148,LV=,Development Underwriter,,,"Hi Gareth,
+
+Senior life and disability underwriting on the Aegon contract, then development underwriting at LV=: you have worked the cases and now write the rules behind them.
+
+FitXpress adds 2 photos to the application and returns a Smart Scales weight estimate, BMI from the declared height and a flag when the gap crosses the threshold LV= sets.
+
+Where do your rules lean on declared weight alone for build today?
+
+Katerina","Hi Gareth,
+
+A second source would matter most where the gap is large. Smart Scales has approximately 3.5% mean absolute error under evaluated conditions, not a scale reading, and the threshold sits well above it.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Book a call here: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Rachel,Haig,https://linkedin.com/in/rachel-haig-993536223,LV=,Development Underwriter,,,"Hi Rachel,
+
+Protection rule changes at LV= are your daily work, built on years of life and disability underwriting.
+
+FitXpress would give a rule a new input: 2 photos taken in the application and a flag raised only where the gap crosses a threshold LV= sets.
+
+Which result from a shadow run would persuade you to propose a build rule change?
+
+Katerina","Hi Rachel,
+
+A shadow run shows how often a flag agrees with build evidence collected separately, which is the evidence a rule change rests on.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Happy to walk through it: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Simon,Vooght,https://linkedin.com/in/simon-vooght-34184925,Scottish Widows,Protection Proposition Manager,,,"Hi Simon,
+
+Your route from business development into protection proposition work means you know how advisers handle an application.
+
+In an adviser-keyed case, FitXpress would take 2 photos and return one structured record, with a Smart Scales weight estimate and a flag when the gap from declared weight crosses Scottish Widows' own threshold.
+
+How do you measure drop-off when a new step enters an adviser-keyed application?
+
+Katerina","Hi Simon,
+
+My suggestion is to start with the measurement. In an evaluation, completion of the step is counted by journey, which shows drop-off before anything goes live. In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+If you would like the set-up walked through:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Daniel,Musty,https://linkedin.com/in/daniel-musty-23a73716,Scottish Widows,Underwriting Development Manager,,,"Hi Daniel,
+
+Since January, life, CI and income protection cases at Scottish Widows capture key disclosures before the application. That made me wonder what follows for build.
+
+FitXpress adds 2 photos, a Smart Scales weight estimate and BMI from the declared height, with a flag only when the gap crosses a threshold your team sets.
+
+What does Scottish Widows rely on for build when a life, CI or income protection case moves straight through without a nurse?
+
+Katerina","Hi Daniel,
+
+An evaluation counts how many cases each candidate threshold would flag, and how often a flag agrees with independently collected build evidence. Cases that already capture disclosures before the application could be the first set to count.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+If the design is worth discussing:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Eric,Walker,https://linkedin.com/in/eric-walker-4471a7b2,Scottish Widows,Development Underwriting Manager,,,"Hi Eric,
+
+You went from development underwriter to managing development underwriting at Scottish Widows, which makes build band edges familiar ground.
+
+The threshold stays with your team: FitXpress takes 2 photos in the application and flags a gap in weight only when it passes that threshold.
+
+Which gaps in declared weight would your team want to see before the rating on a build band changes?
+
+Katerina","Hi Eric,
+
+Everything can run as a shadow evaluation, with results kept away from live decisions while your team reads them. Each applicant gets one timestamped record for the case file. In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+A call would be easy to arrange:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Kerrie,Cross,https://linkedin.com/in/kerriecross,Scottish Widows,Protection Underwriting Development Manager,,,"Hi Kerrie,
+
+Your years in underwriting rules development, rules engine included, make you the right person to ask how a new input gets judged.
+
+In the application, FitXpress would take 2 photos and raise a flag where declared and estimated weight differ by more than Scottish Widows' own threshold. The record is structured and timestamped, and the rules stay yours.
+
+Where in the rules engine would a build flag most naturally sit: as a limit on cases or as a referral rule?
+
+Katerina","Hi Kerrie,
+
+The evaluation can report how many cases each threshold flags and where a flag would sit in your rule set. FitXpress is not a medical device and does not make underwriting decisions.
+
+Details are at
+https://3dlook.ai/for-insurance-underwriting/
+and a slot to talk is here:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Paul,Young,https://linkedin.com/in/paul-young-708558b0,Scottish Widows,Development Underwriter,,,"Hi Paul,
+
+You moved from senior underwriter to the team that edits the protection rules at Scottish Widows, income protection included.
+
+Each case gets one timestamped record from 2 photos, and FitXpress raises a flag only above the threshold the insurer sets.
+
+Is build treated differently on income protection than on life and CI?
+
+Katerina","Hi Paul,
+
+If income protection needs its own threshold, the evaluation can count flags separately by product line. The record is timestamped and structured, ready for the case file. In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Free for a call?
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Tom,Green,https://linkedin.com/in/tom-green-240a9222,Scottish Widows,Development Underwriter,,,"Hi Tom,
+
+Medical underwriting management gave you a close view of measured weight, from GP reports and screenings, set against declared weight.
+
+On cases with neither, FitXpress adds 2 photos, a Smart Scales weight estimate and a flag when a gap crosses a threshold Scottish Widows sets.
+
+Where a GP report or screening gives a measured weight, how does the underwriter reconcile it with the declared figure?
+
+Katerina","Hi Tom,
+
+The estimate has a margin, which is why a referral threshold would sit well above it. Smart Scales has approximately 3.5% mean absolute error under evaluated conditions, and it is not a scale reading. FitXpress is not a medical device and does not make underwriting decisions.
+
+I could talk it through:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Scott,Innes,https://linkedin.com/in/scott-innes-98b84830,Scottish Widows,Senior Technical Underwriting Manager,,,"Hi Scott,
+
+Technical underwriting at Scottish Widows is where a new referral trigger gets tested, and your life and disability background suits that.
+
+FitXpress adds 2 photos in the application and a Smart Scales weight estimate, with a flag only when the gap from declared weight crosses a threshold the insurer sets.
+
+Who in technical underwriting signs off a new referral trigger before it enters the manual?
+
+Katerina","Hi Scott,
+
+In an evaluation the record stays away from live cases, and your team reads each flag before anything changes. FitXpress is not a medical device and does not make underwriting decisions.
+
+I would value your view on a call:
+https://meetings.hubspot.com/katerina-galich
+
+If the manual sits with someone else, a pointer to them would help.
+
+Katerina"
+David,Russell,https://linkedin.com/in/david-russell-10548311a,Scottish Widows,Senior Manager Claims & Underwriting Strategy,,,"Hi David,
+
+Your path from product management and development underwriting into underwriting strategy covers both sides of a rule change.
+
+FitXpress would add 2 photos to the application and return one timestamped record, with a flag where the gap between declared and estimated weight crosses a threshold Scottish Widows sets. BMI uses the declared height.
+
+How does the strategy team decide which application questions earn a second source of evidence?
+
+Katerina","Hi David,
+
+A shadow evaluation gives the strategy work numbers to judge by: cases flagged at each candidate threshold, and the agreement rate with other build evidence on the file. The insurer's own rules stay in charge. FitXpress is not a medical device and does not make underwriting decisions.
+
+Calendar for a talk:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+David,Piggin,https://linkedin.com/in/david-piggin-a6039a27,The Exeter,Underwriting Rules Developer,,,"Hi David,
+
+A build threshold would be one more rule among those you develop at The Exeter.
+
+FitXpress takes 2 photos in the application and returns a Smart Scales weight estimate, BMI from the declared height and a flag when the gap crosses a threshold The Exeter sets.
+
+In the rules you develop, how large would a gap between declared and estimated weight have to be to alter a build rating?
+
+Katerina","Hi David,
+
+Shadow counts for each candidate threshold would give the rules team a first read. Each count would come with the cases behind it for the rules team to test against.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Open diary: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Ed,Lyon,https://linkedin.com/in/ed-lyon-803766210,The Exeter,Head of Underwriting Operations,,,"Hi Ed,
+
+Cases at The Exeter that are decided without medical evidence pass through the underwriting operations you run.
+
+For those cases, FitXpress would add 2 photos and a timestamped record, with a flag wherever the gap between declared and estimated weight passes The Exeter's threshold.
+
+What evidence does your team lean on for build when a case closes without any nurse contact?
+
+Katerina","Hi Ed,
+
+Build evidence collected separately can sit beside a flag, and a shadow run shows how often the two agree.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Call link: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Lara,Harkins,https://linkedin.com/in/lara-harkins-27835b21a,The Exeter,Underwriting Team Manager,,,"Hi Lara,
+
+Noticed your path at The Exeter, from life and disability underwriter to underwriting team manager.
+
+The Exeter's own threshold decides when FitXpress raises a flag. It takes 2 photos in the application and returns a Smart Scales weight estimate with BMI from the declared height.
+
+How does build get treated on Income First against Real Life?
+
+Katerina","Hi Lara,
+
+A gap only matters if it would change a rating. The flag refers only the larger gaps to an underwriter.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Reply or book: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Sue,Kissane,https://linkedin.com/in/sue-kissane-859216121,Cirencester Friendly Society,Underwriting Manager,,,"Hi Sue,
+
+Moving from senior medical underwriter to Underwriting Manager at Cirencester Friendly Society puts income protection build gaps in your hands.
+
+FitXpress puts a timestamped record on the case file from 2 photos in the application, with a flag only where the gap crosses a threshold the society sets.
+
+In your own cases, how large does a gap between declared and estimated weight need to be before you would refer it?
+
+Katerina","Hi Sue,
+
+The threshold is Cirencester's to set. A call could cover how an evaluation would count the cases it flags, with each flagged case going to your underwriters.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Diary link if useful: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Steve,Betteridge,https://linkedin.com/in/steve-betteridge-b5041a5b,Cirencester Friendly Society,Senior Development Underwriter,,,"Hi Steve,
+
+Noticed your move up to Senior Development Underwriter at Cirencester Friendly Society, which puts the evidence rules for Income Assured close to you.
+
+Inside the application, 2 photos from FitXpress return a Smart Scales weight estimate and BMI from the declared height. A flag is raised only when the gap crosses a threshold the society sets, and one timestamped record goes back to your systems.
+
+On cases that see no nurse screening, where does declared build stand alone today?
+
+Katerina","Hi Steve,
+
+A shadow evaluation would count how many Cirencester cases each candidate threshold flags, and how often a flag agrees with build evidence collected separately. Outputs stay out of decisions while the development team reads the numbers.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Worth a call? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Samuel,Njoroge,https://linkedin.com/in/samuel-njoroge-ba-hons-dipcii-dldu-amus-9b571672,Cirencester Friendly Society,Underwriting Analytics & Development Manager,,,"Hi Samuel,
+
+Your path from development underwriting to analytics at Cirencester Friendly Society means you hold the rules and the data behind them. A build signal would be read there first.
+
+Each scan leaves one timestamped record: FitXpress takes 2 photos in the application, estimates weight with Smart Scales, and flags a gap only where the society's own threshold is crossed.
+
+What build data do you hold on income protection cases today?
+
+Katerina","Hi Samuel,
+
+A shadow run would chart how many cases each threshold flags, with no output reaching a case. Smart Scales has approximately 3.5% mean absolute error under evaluated conditions, not a scale reading, which puts useful thresholds well above it.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+A slot is open here: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Jamie,Welch,https://linkedin.com/in/jamie-welch-12b73b62,Holloway Friendly,Underwriting and Claims Technical Manager,,,"Hi Jamie,
+
+Had a thought about your technical role at Holloway Friendly.
+
+When a declared build sets terms, the case file holds one number from the applicant. FitXpress adds 2 photos in the application, a Smart Scales weight estimate and a flag when the gap crosses the society's own threshold, recorded with a timestamp.
+
+At which point in a Holloway Friendly decision does a declared build first set terms?
+
+Katerina","Hi Jamie,
+
+On the case file you would see a structured record next to the declared figures, and Holloway Friendly's rules decide how it is used.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Could we talk? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Alex,Yates,https://linkedin.com/in/alex-yates-78568889,British Friendly,Head of Underwriting,,,"Hi Alex,
+
+Noticed British Friendly reviewed its non-medical limits on Protect in May.
+
+On cases like those, build is declared and no medical evidence sits behind it. FitXpress adds 2 photos in the application: a Smart Scales weight estimate, BMI from the declared height, and a flag only when the gap crosses a threshold British Friendly sets. One timestamped, structured record is returned.
+
+Where on a Protect application does a declared build carry the most weight in your terms?
+
+Katerina","Hi Alex,
+
+A shadow evaluation would count how many Protect cases each candidate threshold flags. Smart Scales gives approximately 3.5% mean absolute error under evaluated conditions and is not a scale reading, which is why the threshold sits well above it.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Happy to walk through the design: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Michael,Jackson,https://linkedin.com/in/michael-jackson-2417835b,Shepherds Friendly,Head of Underwriting,,,"Hi Michael,
+
+Shepherds Friendly describes its income protection as interactive underwriting with cover from day one, which makes the application the main evidence point.
+
+FitXpress adds 2 photos to that step and flags a gap between declared weight and the Smart Scales estimate only when it crosses a threshold your team sets, with a timestamped record behind it.
+
+What stands behind a declared build on your income protection when no nurse screening follows?
+
+Katerina","Hi Michael,
+
+In a shadow evaluation Shepherds Friendly would see how many cases each candidate threshold flags before any output reaches a case. Your underwriters keep every decision.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+If useful, a slot is open here: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Killian,Farrelly,https://linkedin.com/in/killian-farrelly-96422a60,Pacific Life Re,"Director, Protection Pricing",,,"Hi Killian,
+
+Quick note for someone who prices protection in Europe at Pacific Life Re: build is priced on a declared figure wherever no medical evidence exists.
+
+FitXpress adds a second source: 2 photos in the application, one timestamped record, and a flag above the insurer's threshold. It does not rate or price anything.
+
+Where does declared build carry the most uncertainty in your European protection pricing?
+
+Katerina","Hi Killian,
+
+Pricing could see a count of the cases each candidate threshold would flag, kept apart from any rating.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Can we set up a call? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+David,Waters,https://linkedin.com/in/david-waters-05719b114,Pacific Life Re,Underwriting Director,,,"Hi David,
+
+Noticed your background: chief underwriter roles first, now underwriting director at Pacific Life Re.
+
+On cases a client decides without medical evidence, declared build is the evidence on file. FitXpress adds 2 photos in the application, a Smart Scales weight estimate and BMI from the declared height, with a flag when the gap crosses the client's own threshold.
+
+Which client cases that you review rely on declared build alone, and what do you do with them today?
+
+Katerina","Hi David,
+
+A shadow evaluation would show how many of those cases each candidate threshold flags, with outputs kept out of decisions.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Worth a call to look at it? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Febby,Mulewa,https://linkedin.com/in/febby-mulewa-7190a597,Pacific Life Re,"Head of Underwriting and Claims, Protection, Europe",,,"Hi Febby,
+
+Saw the news that you now lead underwriting for protection in Europe at Pacific Life Re.
+
+FitXpress returns one timestamped, structured record to the insurer's systems from 2 photos taken in the application, with a flag when declared and estimated weight differ beyond the insurer's threshold.
+
+Which parts of your team's rules and guidance would a build flag have to be written into first?
+
+Katerina","Hi Febby,
+
+One client could run an evaluation for a set period, with output kept out of decisions and flag counts reviewed afterwards by threshold.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Could we find a time to talk it through? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Nikolai,Harrowing,https://linkedin.com/in/nikolai-harrowing-5246b353,Pacific Life Re,Development Underwriter,,,"Hi Nikolai,
+
+This stood out: medical underwriting at Just Group, now development underwriting at Pacific Life Re. On cases clients decide without a nurse screening, build is whatever the applicant declares.
+
+The rules stay with the insurer: FitXpress adds 2 photos to the application and raises a flag only when the gap to declared weight crosses the insurer's threshold.
+
+When you draft rules for a client, which weight differences would you want flagged before they reach an underwriter?
+
+Katerina","Hi Nikolai,
+
+An evaluation would list which weight differences each candidate threshold flags, giving your team a view before any rule is drafted. It returns a timestamped record, and the insurer decides every outcome.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+If a short call would help, here is my calendar: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Justin,Farrow,https://linkedin.com/in/justin-farrow-226782108,Pacific Life Re,"Manager, Underwriting",,,"Hi Justin,
+
+Caught my eye: your move from income protection underwriting into managing underwriters at Pacific Life Re.
+
+FitXpress adds 2 photos to an application and returns one timestamped record; a flag appears only if the insurer's threshold is crossed.
+
+On cases your team reviews with no nurse screening, what do your underwriters rely on for build?
+
+Katerina","Hi Justin,
+
+Your underwriters would see how often a flag agrees with build evidence collected separately, with output kept out of cases.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Would a call be useful? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Caroline,Smith,https://linkedin.com/in/caroline-smith-78180535,Pacific Life Re,Underwriting and Claims Developer,,,"Hi Caroline,
+
+Came across your work: reinsurance underwriter first, now building the rules and evaluations Pacific Life Re offers clients.
+
+One element an evaluation could include is a second source of build evidence. Two photos taken inside the application let FitXpress flag a gap between declared and estimated weight, only above the insurer's threshold.
+
+When you build an evaluation for a client, who sets the threshold and how is it agreed?
+
+Katerina","Hi Caroline,
+
+The client's team sets the threshold in the evaluation, and a weight estimate comes back as one timestamped record along with 80+ body measurements.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Shall we find a time? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+James,Sims,https://linkedin.com/in/james-sims-846a9251,Pacific Life Re,Underwriting Developer,,,"Hi James,
+
+Quick one, prompted by your path through life and disability underwriting and medical underwriting into development work at Pacific Life Re.
+
+FitXpress turns 2 photos in the application into a Smart Scales weight estimate and BMI from the declared height. A flag is raised only above the insurer's threshold.
+
+In the rules you develop, what does build evidence look like when a case has no nurse screening?
+
+Katerina","Hi James,
+
+In a shadow evaluation, a flag sits beside the declared build on cases without a nurse screening, with no effect on the cases themselves.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Worth a conversation? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Helen,Sutherland-Thomas,https://linkedin.com/in/helen-sutherland-thomas-223335123,UnderwriteMe,Lead Development Underwriter,,,"Hi Helen,
+
+Leading development underwriting at UnderwriteMe means writing the rules insurers run on the platform.
+
+FitXpress would hand those rules a structured record from 2 photos: a Smart Scales weight estimate, BMI from the declared height and a flag where the gap crosses the insurer's threshold.
+
+Where in an insurer's rule set would a flag like that be read?
+
+Katerina","Hi Helen,
+
+The record is timestamped, one per applicant, and returned through an API. The insurer sets the threshold. FitXpress is not a medical device and does not make underwriting decisions.
+
+Could we talk it over?
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+James,Hetherington,https://linkedin.com/in/james-hetherington-461ba352,UnderwriteMe,"Manager, Development Underwriting",,,"Hi James,
+
+Managing development underwriting at UnderwriteMe puts you where insurer thresholds get configured.
+
+FitXpress returns a flag from 2 photos when declared and estimated weight differ by more than the threshold an insurer sets, along with a Smart Scales weight estimate and BMI from the declared height.
+
+How is a threshold for an extra input set up and tested with an insurer?
+
+Katerina","Hi James,
+
+The insurer decides where the step appears in its own journey, and the flag threshold is its choice too. Your team could read the first flags in a shadow evaluation before any rule is written. FitXpress is not a medical device and does not make underwriting decisions.
+
+Would you like to see it?
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Pete,Martin,https://linkedin.com/in/pete-martin-5b401069,UnderwriteMe,Lead Development Underwriter (NA and UK&I),,,"Hi Pete,
+
+With UK&I and North America both in your remit at UnderwriteMe, you see how insurers test new inputs.
+
+FitXpress puts 2 photos into the application and raises a flag where declared and estimated weight differ by more than the insurer's threshold. A Smart Scales weight estimate and BMI from the declared height sit behind it.
+
+How is an additional evidence step tested with an insurer before it reaches live rules?
+
+Katerina","Hi Pete,
+
+A timestamped record per applicant comes back to the platform through an API, ready for a test rule. An insurer could run it in shadow mode on its own cases first, with flags read by the development team only. FitXpress is not a medical device and does not make underwriting decisions.
+
+Would a conversation be useful?
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Will,Miller,https://linkedin.com/in/will-miller-78139133,UnderwriteMe,"VP, Head of Legal and Risk and DPO",,,"Hi Will,
+
+As Head of Legal and Risk and DPO at UnderwriteMe, you would review any data flowing into the platform.
+
+For each applicant, FitXpress returns one timestamped record from 2 photos, with a flag at the insurer's threshold. Scan records sit on random identifiers.
+
+How do you review a new data processor before its data reaches the platform?
+
+Katerina","Hi Will,
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs. Photos are deleted after processing or within 30 days per the insurer's policy, retained photos are blurred and faces are obscured at capture.
+
+Call, or legal@3dlook.me for documents:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Rebecca,McGeoch,https://linkedin.com/in/rebecca-mcgeoch-186807134,Zurich UK,UK Data Protection Officer,,,"Hi Rebecca,
+
+Your supplier assurance and resilience background suits the review a photo-capture step in the protection application would need.
+
+FitXpress takes 2 photos in the application and returns one timestamped record, with scan records on random identifiers and a flag at the insurer's threshold.
+
+What would a DPIA at Zurich need to cover for a photo step in the protection application?
+
+Katerina","Hi Rebecca,
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs. Photos are deleted after processing or within 30 days per the insurer's policy, retained photos are blurred and faces are obscured at capture.
+
+A call, or legal@3dlook.me:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Sabrina,Lane,https://linkedin.com/in/sabrina-lane-406a0b65,Zurich UK,Chief Underwriter,,,"Hi Sabrina,
+
+As Chief Underwriter at Zurich, you hold the non-medical limits and the evidence behind them.
+
+Zurich's rules decide what follows: FitXpress adds 2 photos to the application and raises a flag only where the gap between declared and estimated weight crosses the threshold Zurich sets.
+
+Which build decisions sit with you today on cases that carry no medical evidence?
+
+Katerina","Hi Sabrina,
+
+An evaluation counts how many cases each candidate threshold would flag, and how often a flag agrees with build evidence collected another way. Smart Scales has approximately 3.5% mean absolute error under evaluated conditions, and it is not a scale reading. FitXpress is not a medical device and does not make underwriting decisions.
+
+Time for a call?
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Adrian,Hill,https://linkedin.com/in/adrianhhill,Zurich UK,Life Development Underwriter,,,"Hi Adrian,
+
+Your underwriting path, from income protection specialists to development underwriting at Zurich, covers several build conventions.
+
+FitXpress returns a Smart Scales weight estimate and BMI from the declared height out of 2 photos, with a flag when the gap crosses Zurich's threshold. The record is timestamped.
+
+Which weight gaps would, in your experience, start to move a build rating on cases you handle?
+
+Katerina","Hi Adrian,
+
+The evaluation could stay in shadow mode, with results out of decisions and flags reviewed by your team. It would show which weight gaps on current cases produce a flag at each threshold you try. FitXpress is not a medical device and does not make underwriting decisions.
+
+Details:
+https://3dlook.ai/for-insurance-underwriting/
+Calendar:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Ryan,Parsons,https://linkedin.com/in/ryan-parsons-15497b81,Zurich UK,Senior Development Underwriter,,,"Hi Ryan,
+
+Moving from senior underwriter to senior development underwriter means you now write the rule changes.
+
+FitXpress puts 2 photos in the Zurich application and raises a flag where declared and estimated weight differ by more than Zurich's threshold. It also gives a Smart Scales weight estimate and BMI from the declared height.
+
+What would you want proven on historical applications before a new input earns a draft rule?
+
+Katerina","Hi Ryan,
+
+We would set the evaluation up so that flags are read by your team and never reach a case. In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Open to a call?
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Scott,Reid,https://linkedin.com/in/scott-reid-950a3410,Zurich UK,"Head of Propositions & Pricing, Digital Protection Hub",,,"Hi Scott,
+
+Heading propositions and pricing for Zurich's Digital Protection Hub, you decide where a step sits in the digital application.
+
+With FitXpress, the digital application gains 2 photos and a flag only above the threshold Zurich sets.
+
+Which stage of the Hub's application do you watch most closely for completion?
+
+Katerina","Hi Scott,
+
+Completion at that stage would be read in the evaluation. The scan returns 80+ body measurements, under 45 seconds from the photos to structured results. The record goes to the insurer's systems only. In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+More at
+https://3dlook.ai/for-insurance-underwriting/
+and a calendar here:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Steve,Smith,https://linkedin.com/in/steve-smith-17111a95,Zurich UK,Global Senior Underwriting Manager,,,"Hi Steve,
+
+You came up as a senior underwriting developer and now manage underwriting at Zurich, which makes rule changes familiar territory.
+
+For Zurich, FitXpress would take 2 photos in the application, give a Smart Scales weight estimate and flag a gap from declared weight that crosses a threshold Zurich sets.
+
+Does build get handled differently on income protection than on life and CI?
+
+Katerina","Hi Steve,
+
+A threshold per product line is possible in an evaluation, and each line's flags can be read separately. Income protection cases would show their own flag counts next to life and CI. FitXpress is not a medical device and does not make underwriting decisions.
+
+Might a call help?
+https://meetings.hubspot.com/katerina-galich
+
+If the rules sit with a colleague, I would appreciate the name.
+
+Katerina"
+Fraser,Ballantine,https://linkedin.com/in/fraser-ballantine-b4204527,Zurich UK,Underwriting Quality & Risk Manager,,,"Hi Fraser,
+
+Quality and risk work in underwriting means you see how a new rule input gets checked.
+
+Here, FitXpress adds 2 photos to the application and a timestamped record, with a Smart Scales weight estimate and a flag at the threshold Zurich sets.
+
+How would a new input be quality-checked before it reached live cases?
+
+Katerina","Hi Fraser,
+
+The agreement rate between a flag and other build evidence on the file is the figure a quality view needs, and an evaluation reports it. In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Notes at
+https://3dlook.ai/for-insurance-underwriting/
+and a slot here:
+https://meetings.hubspot.com/katerina-galich
+
+If quality review sits with another team, point me their way.
+
+Katerina"
+Gareth,Jenkins,https://linkedin.com/in/gareth-jenkins-26010578,Zurich UK,Head of Life Product and Inforce,,,"Hi Gareth,
+
+As Head of Life Product and Inforce at Zurich, you own the product that the application step would sit in, and the adviser journey already captures disclosures before the application.
+
+On the product side, FitXpress adds 2 photos and a Smart Scales weight estimate, with a flag at the threshold Zurich sets.
+
+Which adviser conversations tell you most about terms moving after application?
+
+Katerina","Hi Gareth,
+
+The record would give those conversations a timestamped reference to point back to. It goes to the insurer's systems only. FitXpress is not a medical device and does not make underwriting decisions.
+
+Worth a look together?
+https://meetings.hubspot.com/katerina-galich
+Background:
+https://3dlook.ai/for-insurance-underwriting/
+
+If the journey belongs to another colleague, I would value an introduction.
+
+Katerina"
+Nicky,Roux,https://linkedin.com/in/nicky-le-roux-7b8b758,VitalityLife,Underwriting Research and Development Manager,,,"Hi Nicky,
+
+Caught my eye: underwriting research and development at Vitality UK, now strategic underwriting technical work at VitalityLife.
+
+FitXpress gives a Smart Scales weight estimate and BMI from the declared height, using 2 photos taken in the application. A flag is raised only when the gap crosses a threshold VitalityLife sets.
+
+When your team tests a new evidence source, what result would make you take it from research into a live case?
+
+Katerina","Hi Nicky,
+
+The results that would move a new source forward are flag counts per candidate threshold and how often a flag agrees with build evidence collected separately; a shadow evaluation produces both with output kept away from live cases.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Is a call something you would find useful? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Andrew,Smith,https://linkedin.com/in/andrew-smith-51224b38,VitalityLife,Underwriting Philosophy and Automation Manager,,,"Hi Andrew,
+
+Got me thinking about where build sits in the automation you own at VitalityLife. Cases that reach an automated decision carry a declared build and no screening.
+
+FitXpress adds 2 photos in the application and a flag above the threshold your rules set, with one timestamped record on the file.
+
+Where in the automation you own would an additional source of build evidence be easiest to try?
+
+Katerina","Hi Andrew,
+
+The record is structured, which allows it to enter a rules engine as an extra input; the rules and the thresholds stay VitalityLife's.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Would you have time for a call? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Louise,Cowan,https://linkedin.com/in/louise-cowan-692b9b123,VitalityLife,Head of Product - Innovation,,,"Hi Louise,
+
+Noticed your background: CRM product management at Vitality before heading product for innovation.
+
+A photo step in the life application is one idea worth testing. FitXpress takes 2 photos and returns a timestamped record; VitalityLife's own threshold decides when anything is flagged.
+
+How does innovation test a new step with advisers before it reaches the journey?
+
+Katerina","Hi Louise,
+
+An evaluation can start with a small group of advisers, with completion for the step reported alongside their feedback.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Could we talk? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Szymon,Marszalek,https://linkedin.com/in/szymon-marszalek,VitalityLife,Director of Pricing and Underwriting,,,"Hi Szymon,
+
+Saw the news of the Dynamic Underwriting Benefit, a sign that build already shapes terms at VitalityLife. At application, a declared build first sets the loading.
+
+FitXpress adds two photos at that point and flags a gap between declared and estimated weight above a threshold VitalityLife sets, with a timestamped record. It sits apart from the benefit.
+
+As you oversee pricing and underwriting together, where would a gap between declared and estimated weight start to move a build rating?
+
+Katerina","Hi Szymon,
+
+A shadow evaluation would show how many cases each candidate threshold flags. Smart Scales estimates weight at approximately 3.5% mean absolute error under evaluated conditions, and it is not a scale reading; a referral threshold sits well above it.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Would you be open to a call? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Paul,Yarham,https://linkedin.com/in/paul-yarham-945164a0,VitalityLife,Director of Pricing and Underwriting,,,"Hi Paul,
+
+Came across your work: market pricing, then commercial pricing and underwriting at VitalityLife. Build loadings are set on a declared figure when no medical evidence exists.
+
+FitXpress adds 2 photos to the application and returns a timestamped record with a flag above the insurer's threshold. It does not rate or price.
+
+How do build loadings and the cost of evidence weigh against each other at the point of sale today?
+
+Katerina","Hi Paul,
+
+On a shadow set we can count how many cases each candidate threshold would flag, kept apart from any pricing.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Is a call worth setting up? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Sharon,Powell,https://linkedin.com/in/sharon-a-powell-2a919aab,VitalityLife,Head of Product,,,"Hi Sharon,
+
+Curious about your take: your digital experience background, now as Head of Product at VitalityLife, made me think of one step in the life application.
+
+FitXpress asks the applicant for 2 photos and returns a timestamped record to the insurer's systems. A flag appears only above a threshold VitalityLife sets.
+
+How is drop-off measured when a new step enters the application?
+
+Katerina","Hi Sharon,
+
+In an evaluation, applicants who start the photo step and do not finish it can be counted separately from the rest of the application.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Would a call be worthwhile? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Gareth,Alan-Williams,https://linkedin.com/in/gareth-alan-williams-7709b658,VitalityLife,Head of Product,,,"Hi Gareth,
+
+Quick note on your portfolio and change background at Vitality, now product for VitalityLife.
+
+FitXpress could sit in the application as a step that takes 2 photos. It returns a timestamped record with a flag above the insurer's threshold.
+
+Where in the application would a step like this belong, the adviser-keyed stage or the client's own declaration?
+
+Katerina","Hi Gareth,
+
+The step ships as web and mobile SDKs or through an API and can be placed at either stage, with the choice left to VitalityLife.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Could we set up a call? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Becca,Cooke,https://linkedin.com/in/beccacooke,VitalityLife,Head of Product,,,"Hi Becca,
+
+This stood out: product work on platforms at Maersk and Tradebyte before VitalityLife.
+
+FitXpress adds 2 photos to a life application and returns a timestamped record, flagging a gap between declared and estimated weight only above a threshold the insurer sets.
+
+What do advisers tell product when a client's terms change after application because of build?
+
+Katerina","Hi Becca,
+
+An evaluation could give product flag counts by threshold to set beside what advisers report, with output kept out of live cases.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Would a call suit? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Lorna,Miller,https://linkedin.com/in/lorna-miller-714608aa,VitalityLife,Strategic Underwriting Manager,,,"Hi Lorna,
+
+Noticed overlap with your work as Strategic Underwriting Manager at Vitality UK: where limits sit, and what evidence the cases under them carry.
+
+FitXpress returns a Smart Scales weight estimate from 2 photos in the application, flagging a gap to the declared weight only above a threshold VitalityLife sets.
+
+When you set strategy for limits, how much margin above the estimate's error would you want before a flag reaches an underwriter?
+
+Katerina","Hi Lorna,
+
+For a strategy review, an evaluation gives counts of flags per threshold, set against the limits as they stand.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Would a conversation help? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Kathryn,Conniff,https://linkedin.com/in/kathrynconniff,VitalityLife,Life Underwriting Service Director,,,"Hi Kathryn,
+
+Quick reaction to your role running life underwriting operations at VitalityLife: referral volume and time to decision sit with you.
+
+With 2 photos in the application, FitXpress flags only gaps between declared and estimated weight that cross a threshold VitalityLife sets, as one timestamped record on the case file.
+
+Which cases reach an underwriter today on build alone, and what does that add to time to decision?
+
+Katerina","Hi Kathryn,
+
+The evaluation shows how many extra referrals each candidate threshold would create before any case reaches an underwriter.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Open to a call? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Fareeha,Brownless,https://linkedin.com/in/fareeha-brownless-nee-hasani-84b7b413,VitalityLife,Head of Product (Life),,,"Hi Fareeha,
+
+Quick idea for you as Head of Product (Life): the life application journey is yours, and a capture step would sit somewhere in it.
+
+FitXpress would ask the applicant for 2 photos, and VitalityLife's own threshold would decide when its timestamped record carries a flag.
+
+Which point in the life application, from first question to submission, would you protect most from an added step?
+
+Katerina","Hi Fareeha,
+
+An evaluation could place the step at the point you choose and compare completion there with the journey as it runs now; applicants who prefer to skip it carry on as today.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+May I suggest a call? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Rachel,Loudain,https://linkedin.com/in/rachel-l-2387142a,VitalityLife,Head of Product Management,,,"Hi Rachel,
+
+Made me think: product discovery and evaluation at ASOS, now product management at VitalityLife.
+
+A new step has to earn its place in the life application. FitXpress returns a timestamped record from 2 photos, and the insurer's own threshold decides what gets flagged.
+
+Which completion measure would you look at first for a two-photo step?
+
+Katerina","Hi Rachel,
+
+The evaluation reports completion for the photo step by itself, a figure discovery work can judge the step by.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Would it be useful to talk? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+James,Ayland,https://linkedin.com/in/james-ayland-6181bab5,VitalityLife,Director of Data Science - Life Pricing and Underwriting,,,"Hi James,
+
+Wanted to reach out as Data Science Director for life pricing and underwriting at VitalityLife: a shadow evaluation of anything new would run through your team.
+
+FitXpress returns a timestamped, structured record from 2 photos taken in the application, with BMI from declared height and a flag above the threshold the insurer sets.
+
+Which agreement measure would your team want from a flag before it informs any rule or model?
+
+Katerina","Hi James,
+
+The evaluation reports flag counts per threshold and agreement with build evidence collected separately.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Shall we find a time to discuss it? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Stuart,Jackson,https://linkedin.com/in/stuart-jackson-bb8a035b,VitalityLife,"Head of Product Management - Adviser, Employer & Servicing",,,"Hi Stuart,
+
+Spotted something: adviser, employer and servicing sit under one product role at VitalityLife.
+
+FitXpress could add a step where the client takes 2 photos, returning a timestamped record with a flag above a threshold VitalityLife sets.
+
+Which of the adviser, employer and servicing journeys you run would see a photo step first, and why?
+
+Katerina","Hi Stuart,
+
+Adviser-led and employer journeys would need different handover points; an SDK or API lets VitalityLife place the step separately in each.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Worth a call? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Catherine,Bowen-Walker,https://linkedin.com/in/catherine-bowen-walker-llm-cipp-e-63050134,VitalityLife,Head of Data Protection and UK DPO,,,"Hi Catherine,
+
+Had a thought on your role as Head of Data Protection and UK DPO at Vitality: any photo step in an application passes through you.
+
+FitXpress takes 2 photos in the application. Photos are deleted after processing or within 30 days, per the insurer's policy, and scan records sit on random identifiers.
+
+What would your review need from a new data processor before a photo step reaches applicants?
+
+Katerina","Hi Catherine,
+
+Retained photos are blurred, and faces are obscured at capture. Documents for review come through legal@3dlook.me.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Happy to cover it on a call: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Simon,Evans,https://linkedin.com/in/simon-evans-9296844b,VitalityLife,Chief Product & Delivery Officer UK - Vitality,,,"Hi Simon,
+
+Couldn't help but ask, given your Chief Product & Delivery Officer role: the life application at VitalityLife sits inside what you deliver.
+
+FitXpress arrives as an SDK or API and returns one timestamped record from 2 photos, with a flag above the threshold the insurer sets.
+
+How does a new step earn a place in the delivery plan for the life application?
+
+Katerina","Hi Simon,
+
+The record goes to the insurer's systems only, through SDKs for web and mobile or an API, which keeps the delivery work to one integration.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Could we put time aside to talk? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Andrew,Newton,https://linkedin.com/in/andrew-newton-a1bb7115b,Guardian Financial Services,Development Underwriting Manager,,,"Hi Andrew,
+
+Caught my eye that your team at Guardian Financial Services changes the rules engine.
+
+A build step would arrive as an input to those rules. FitXpress takes 2 photos in the application and returns a Smart Scales weight estimate, BMI from the declared height and a flag when the gap crosses a threshold you set, as one timestamped record.
+
+When your team changes the engine, what does a new input need to prove before it touches a case?
+
+Katerina","Hi Andrew,
+
+On what a new input must prove, a shadow run is one answer: the flags stay out of live cases while your team compares them with what your rules decide today.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+I can show a worked record on a call: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Nick,Rice,https://linkedin.com/in/nick-rice-59394882,Guardian Financial Services,Head of Underwriting and Claims,,,"Hi Nick,
+
+Quick thought: Guardian Financial Services has spent the first half refining its rules disclosure by disclosure, with mental health done and cholesterol next.
+
+FitXpress would sit at the same stage for build: Guardian chooses the threshold, and a flag reaches the case with one structured record built from 2 photos.
+
+Where does build sit on that list?
+
+Katerina","Hi Nick,
+
+The faster decisions you have built should stay as they are. The record only adds a second source of build evidence on cases that get none, and Guardian's rules and underwriters decide what a flag means.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Time for a call? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Richard,Stadon,https://linkedin.com/in/richard-stadon-64b7029,Guardian Financial Services,Strategic Underwriting Manager,,,"Hi Richard,
+
+Made me think of the strategy side at Guardian Financial Services: some cases never see a nurse screening, and build on them rests on what was declared.
+
+FitXpress adds evidence there without replacing anything. 2 photos give a Smart Scales weight estimate and a flag when the gap crosses a threshold Guardian sets. One timestamped record goes back to Guardian's systems.
+
+Which cases without a nurse screening would you want a second source of build evidence on first?
+
+Katerina","Hi Richard,
+
+A worked record is easier to judge than a description. For the cases you rank first, it would show the estimate and the declared figure side by side, with the threshold Guardian chose.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Shall we go through one on a call? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Caroline,Froude,https://linkedin.com/in/caroline-froude-53118414,Guardian Financial Services,Head of Technical Underwriting,,,"Hi Caroline,
+
+Noticed your remit: referral standards at Guardian for cases that go to an underwriter.
+
+A build flag would join those referrals. With FitXpress, 2 photos in the application produce a Smart Scales weight estimate and BMI from the declared height, and it raises a flag only above a threshold Guardian sets. The flag arrives with a timestamped, structured record.
+
+What would a build flag have to carry to count as a referral under your standards?
+
+Katerina","Hi Caroline,
+
+The threshold would sit well above the estimate's margin: Smart Scales gives approximately 3.5% mean absolute error under evaluated conditions and is not a scale reading. FitXpress is not a medical device and does not make underwriting decisions.
+
+Would a short call help you judge it? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Jane,Tarbuck,https://linkedin.com/in/jane-tarbuck-11487341,Guardian Financial Services,Operational Underwriting Team Manager,,,"Hi Jane,
+
+Quick one on the referral queue you run at Guardian.
+
+If a gap in declared build crosses Guardian's own threshold, the case would join that queue. FitXpress starts from 2 photos in the application, and the flag arrives with one timestamped record attached.
+
+What does an underwriter see today when a referral reaches your queue?
+
+Katerina","Hi Jane,
+
+A flagged case would arrive with its record. The underwriter would open it to find the declared figure, the estimate and the threshold in one place, with no extra step to fetch them.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Open to a call? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Denise,Bates,https://linkedin.com/in/denise-bates-06945338,Swiss Re UK,Head of Income Protection Pricing UKI,,,"Hi Denise,
+
+Build loadings in income protection pricing are part of your remit as Head of Income Protection Pricing for the UK and Ireland at Swiss Re.
+
+FitXpress works from 2 photos taken in the application and flags a gap only when it crosses a threshold the insurer sets.
+
+How do you weigh the cost of extra build evidence against the loading it supports?
+
+Katerina","Hi Denise,
+
+An evaluation can show how often a flag agrees with build evidence collected another way, which is the number a pricing view needs. The Smart Scales estimate has approximately 3.5% mean absolute error under evaluated conditions, and it is not a scale reading. FitXpress is not a medical device and does not make underwriting decisions.
+
+Could we talk?
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Dave,Evans,https://linkedin.com/in/dave-evans-bb20a920,Swiss Re UK,Data Protection Officer,,,"Hi Dave,
+
+As Data Protection Officer at Swiss Re UK, you would review any data a shadow evaluation with a client insurer involved.
+
+FitXpress takes 2 photos in an insurer's application and returns one timestamped record, with scan records on random identifiers.
+
+How does Swiss Re UK review a new data processor in that setting?
+
+Katerina","Hi Dave,
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs. Photos are deleted after processing or within 30 days per the insurer's policy, retained photos are blurred and faces are obscured at capture.
+
+Documents via legal@3dlook.me, or a call:
+https://meetings.hubspot.com/katerina-galich
+
+If vendor review sits elsewhere, a pointer is welcome.
+
+Katerina"
+Deborah,Smith,https://linkedin.com/in/drdeborahasmith,Swiss Re UK,Chief Medical Officer,,,"Hi Deborah,
+
+As Chief Medical Officer at Swiss Re UK, you would judge what a software weight estimate may be used for, and Life Guide is where build guidance lives.
+
+The threshold sits with the insurer: FitXpress takes 2 photos in the application and flags only gaps above it, from a Smart Scales weight estimate.
+
+Which questions would you put to a software weight estimate before letting it near the build guidance?
+
+Katerina","Hi Deborah,
+
+A referral threshold would sit well above the estimate's margin, set by the insurer. The estimate from Smart Scales carries approximately 3.5% mean absolute error under evaluated conditions, and it is not a scale reading. FitXpress is not a medical device and does not make underwriting decisions.
+
+Shall we talk it through?
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Claire,Nolan,https://linkedin.com/in/claire-nolan-01708830,Swiss Re UK,Head of Claims & Underwriting,,,"Hi Claire,
+
+After leading L&H underwriting for Europe, the Middle East and Africa, you now hold the UK underwriting lead at Swiss Re.
+
+FitXpress is a candidate for the build section: 2 photos in the insurer's application, a Smart Scales weight estimate, BMI from the declared height, and a flag when the gap crosses the client's own threshold.
+
+When a client insurer brings Swiss Re a new kind of evidence, how does the UK underwriting team decide to try it?
+
+Katerina","Hi Claire,
+
+With one client insurer, the team could count the cases each candidate threshold would flag, and how often a flag agrees with build evidence collected another way. In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Worth a call?
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Alana,Paterson-Barker,https://linkedin.com/in/alana-paterson-barker-fia-cera-5a759315,Swiss Re UK,"Head of Pricing, Life & Health, UK&I",,,"Hi Alana,
+
+As Head of Pricing, Life & Health for the UK and Ireland at Swiss Re, you are close to the assumptions behind build.
+
+FitXpress adds a step to the insurer's application: 2 photos, one timestamped record, and a flag only when declared and estimated weight differ by more than the insurer's threshold.
+
+What would your team need to see before a second source of build evidence changed a pricing assumption?
+
+Katerina","Hi Alana,
+
+Where the step is offered stays the insurer's choice. An evaluation gives pricing flag counts per threshold, and the agreement rate with other build evidence shows how much weight a flag could carry in an assumption.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Open to a conversation?
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Vicki,Livingstone,https://linkedin.com/in/vicki-livingstone-259a7098,Swiss Re UK,Underwriting Proposition Manager,,,"Hi Vicki,
+
+You design the underwriting propositions Swiss Re offers UK insurers, with a medical underwriter's eye.
+
+FitXpress would add one item to that range: 2 photos in the application, a Smart Scales weight estimate, a flag at the insurer's own threshold and one structured record.
+
+What would a client need to see on a one-page proposition for remote build evidence?
+
+Katerina","Hi Vicki,
+
+A shadow evaluation is where such a proposition earns its place: flags counted at each candidate threshold, and the agreement rate against other build evidence. In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+More at
+https://3dlook.ai/for-insurance-underwriting/
+and a slot here:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Andrew,Graham,https://linkedin.com/in/andrew-graham-2398a8ba,Swiss Re UK,Underwriting Solution Manager,,,"Hi Andrew,
+
+Your years as a Magnum consultant and now as Underwriting Solution Manager at Swiss Re put you closest to where a build flag would sit.
+
+From 2 photos, FitXpress returns a Smart Scales weight estimate and BMI from the declared height, and flags a gap crossing the insurer's threshold. The timestamped record is structured for a rules engine.
+
+How would a gap-based build flag sit alongside the existing build rules in Magnum?
+
+Katerina","Hi Andrew,
+
+A rule would read the flag at a threshold well above the estimate's error. Smart Scales has approximately 3.5% mean absolute error under evaluated conditions, and it is not a scale reading. FitXpress is not a medical device and does not make underwriting decisions.
+
+Calendar:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Natalie,Kelly,https://linkedin.com/in/natalie-kelly-447331a,Swiss Re UK,"Head L&H Underwriting, Claims and R&D",,,"Hi Natalie,
+
+Your remit joins L&H underwriting and R&D, which is where a new evidence source gets its first look.
+
+FitXpress turns 2 photos from an insurer's application into a Smart Scales weight estimate, BMI from the declared height and one structured record, with a flag when the gap crosses the client's threshold.
+
+Which kinds of remote evidence does your R&D work look at for underwriting?
+
+Katerina","Hi Natalie,
+
+For R&D, a shadow evaluation with results kept away from decisions is the useful form. The weight is a Smart Scales estimate, at approximately 3.5% mean absolute error under evaluated conditions, and not a scale reading. In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+I can share the design:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Tim,Knaust,https://linkedin.com/in/tim-knaust-1b852a55,Swiss Re UK,L&H Underwriting & Claims Propositions Manager for UK & Ireland,,,"Hi Tim,
+
+You shape client propositions for the UK and Ireland at Swiss Re, after years in client strategy and solutions.
+
+FitXpress adds 2 photos to an insurer's application, a Smart Scales weight estimate and a flag at the insurer's threshold.
+
+If a build flag existed, which part of the Life Guide build guidance would need to change?
+
+Katerina","Hi Tim,
+
+A small shadow evaluation with one client would do. Results stay out of decisions, and flag counts are taken at each candidate threshold.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Would you take a call on it?
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Lloyd,Williams,https://linkedin.com/in/lloyd-williams62,Munich Re UK Life Branch,Underwriting Development Manager,,,"Hi Lloyd,
+
+What the branch takes to client insurers passes through underwriting proposition work at Munich Re UK Life Branch.
+
+FitXpress takes 2 photos in the application and gives a client insurer one timestamped record, with a flag where the gap crosses the insurer's own threshold.
+
+What does a proposal for a new evidence source need to show before it goes to a client?
+
+Katerina","Hi Lloyd,
+
+A shadow run reports how many cases get flagged and how often a flag agrees with build evidence collected separately. For a proposal, that gives the proposition team a count of flagged cases and a record format a client insurer's systems can take in.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Next step: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Adrian,Stevenson,https://linkedin.com/in/adrian-stevenson,Munich Re UK Life Branch,Head of Protection,,,"Hi Adrian,
+
+Noticed your move from life and health business development to leading protection at Munich Re UK Life Branch.
+
+One candidate for conversations with client insurers is FitXpress: 2 photos taken in an insurer's application return a Smart Scales weight estimate and BMI from the declared height, with a flag at the insurer's own threshold.
+
+In your conversations with client insurers, where does build evidence at the point of sale come up?
+
+Katerina","Hi Adrian,
+
+A shadow run with one client insurer would give you something concrete to take into those conversations: flag counts at the insurer's threshold, with outputs kept out of decisions.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Open slot: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Matt,Bone,https://linkedin.com/in/matt-bone-4b127a4a,Munich Re UK Life Branch,Head of Underwriting & Claims,,,"Hi Matt,
+
+The UK underwriting philosophy at Munich Re UK Life Branch is where a new build signal would be judged.
+
+FitXpress raises a flag only above the insurer's own threshold, working from 2 photos in the application and a Smart Scales estimate of weight, and it leaves a timestamped record.
+
+Would a build flag sit there as a referral trigger or as a note for the underwriter?
+
+Katerina","Hi Matt,
+
+The evaluation can stay narrow: the cases a client insurer decides at the point of sale, and how a flag compares with build evidence already on file. For your philosophy, it shows whether a flag earns a place as a referral trigger or only as a note.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Want to see it? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Jonathan,Carnell,https://linkedin.com/in/jonathan-carnell-26526b205,Munich Re UK Life Branch,Consultant Medical Officer,,,"Hi Jonathan,
+
+Noticed your work as a practising GP and RCGP representative for insurance medicine, now as Consultant Medical Officer at Munich Re UK Life Branch.
+
+FitXpress takes 2 photos in an insurer's application, produces a Smart Scales weight estimate and raises a flag only above a threshold the insurer sets.
+
+Where would you draw the line on what a software estimate of weight may inform in a referral rule?
+
+Katerina","Hi Jonathan,
+
+Smart Scales has approximately 3.5% mean absolute error under evaluated conditions, not a scale reading, and the insurer sets the threshold. FitXpress is not a medical device and does not make underwriting decisions.
+
+Pick a time: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+James,Norton,https://linkedin.com/in/james-norton-591741b2,Munich Re UK Life Branch,Underwriting & Claims Operations Manager,,,"Hi James,
+
+Operations for underwriting at Munich Re UK Life Branch absorb whatever a new evidence source adds to the workflow.
+
+FitXpress adds 2 photos to an insurer's application: a Smart Scales weight estimate, BMI from the declared height, and a flag above the insurer's threshold, as one timestamped record per applicant.
+
+What would your team need in a record to route a flagged case without further questions?
+
+Katerina","Hi James,
+
+One record per applicant is what comes back, in a structured form a case system can read, and outputs stay out of decisions in a shadow evaluation. For your team that is one structured item per case to route to the underwriter.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Let me know: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Madhu,Sridharan,https://linkedin.com/in/sridharanmadhusudhanan,Munich Re UK Life Branch,CUO,,,"Hi Madhu,
+
+As CUO of Munich Re UK Life Branch and an actuary, you weigh new evidence by its error and its use.
+
+FitXpress works from 2 photos in an insurer's application and a Smart Scales estimate of weight, flagging a gap only at the insurer's threshold.
+
+What error level would you want stated before an estimate like that earns a place in a client's referral rule?
+
+Katerina","Hi Madhu,
+
+For an actuary the stated error matters: Smart Scales has approximately 3.5% mean absolute error under evaluated conditions, not a scale reading. An insurer's referral threshold would sit well above that. FitXpress is not a medical device and does not make underwriting decisions.
+
+Calendar link: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Tim,Smith,https://linkedin.com/in/tsmithfia,Hannover Re UK Life Branch,Head of Protection,,,"Hi Tim,
+
+Noticed your background in protection business leadership and in-force management, now at Hannover Re's UK branch, where mortality and critical illness build bands drive terms.
+
+FitXpress is a candidate for a client evaluation: 2 photos in the application give a Smart Scales weight estimate and a flag when the gap crosses the insurer's threshold, as one timestamped record.
+
+Where in the UK mortality and critical illness treaties does a build band most often change terms?
+
+Katerina","Hi Tim,
+
+An evaluation could run on past applications with the output held back from decisions, counting how many cases each threshold flags. Smart Scales gives approximately 3.5% mean absolute error under evaluated conditions and is not a scale reading. FitXpress is not a medical device and does not make underwriting decisions.
+
+Shall we sketch it together? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Andrea,Gregory,https://linkedin.com/in/andrea-gregory-76144635,Hannover Re UK Life Branch,Underwriting and Claims Manager,,,"Hi Andrea,
+
+Spotted something in your path: underwriter, then manager, all at Hannover Re.
+
+For a manual or rules engine you support, a build flag would be one more input. FitXpress takes 2 photos in the application and returns a Smart Scales weight estimate and a flag above the threshold the insurer sets, with a timestamped record.
+
+If a gap like that arrived, which of your rules would decide what happens to the case?
+
+Katerina","Hi Andrea,
+
+The record holds the weight estimate, BMI from the declared height and the flag. The insurer's rules decide what happens next.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Happy to talk it through: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Lynn,Baillie,https://linkedin.com/in/lynn-baillie-b468427,Gen Re UK,Chief Underwriting Officer,,,"Hi Lynn,
+
+Got me thinking: Gen Re's Protection Pulse follows UK protection, and a Chief Underwriting Officer sees which cases insurers still decide on declared build alone.
+
+FitXpress adds a second source there. 2 photos taken in the application give a Smart Scales weight estimate and a flag when the gap crosses the insurer's own threshold, returned as one timestamped record.
+
+When you take new evidence to a client insurer, what do you want in hand before the first conversation?
+
+Katerina","Hi Lynn,
+
+In a client evaluation, outputs stay out of decisions and the insurer sees how many cases each threshold would flag. Smart Scales gives approximately 3.5% mean absolute error under evaluated conditions and is not a scale reading.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Happy to go through it: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Anna,Currie,https://linkedin.com/in/anna-c-6b5a7226,RGA UK,Underwriting Research and Development Manager,,,"Hi Anna,
+
+New evidence sources reach client insurers after passing through underwriting research and development at RGA UK.
+
+FitXpress is one to look at: 2 photos taken in the application, a Smart Scales weight estimate, BMI from the declared height and a flag when the gap crosses the insurer's threshold.
+
+What would a source need to show you before it goes in front of clients?
+
+Katerina","Hi Anna,
+
+A first measure would be the agreement rate between a flag and build evidence collected separately. It also shows how many cases a candidate threshold would flag, which gives the evidence a size as well as a quality.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Take a look: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Emma,Jones,https://linkedin.com/in/emma-jones-99a3834b,RGA UK,Head of Global Underwriting Philosophy Delivery,,,"Hi Emma,
+
+Noticed your move from digital underwriting for EMEA to delivering underwriting philosophy at RGA UK.
+
+What comes back from FitXpress is one timestamped record, built from 2 photos in an insurer's application, with a flag where the gap passes the insurer's threshold.
+
+How does a new evidence item move from idea into the rules you deliver?
+
+Katerina","Hi Emma,
+
+The record is structured, and a rules engine can read the flag and the weight estimate as fields. The insurer decides which of them a rule may use.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+My calendar: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Rebecca,Abayakoon,https://linkedin.com/in/rebecca-abayakoon-certified-falu-bcom-snrassoc-anziif-669b345,RGA UK,"Head of Global Underwriting Philosophy Design at Reinsurance Group of America, Incorporated",,,"Hi Rebecca,
+
+Your path from global underwriting manuals to heading philosophy design at RGA UK puts the build section in your remit.
+
+FitXpress compares a Smart Scales weight estimate from 2 photos with the weight declared, and flags the gap only above the insurer's threshold.
+
+When you write the build section of a manual, how do you weigh a declared weight against one measured at screening?
+
+Katerina","Hi Rebecca,
+
+The build section could carry one added line naming the gap size that prompts a referral. The insurer's rules decide what follows. FitXpress is not a medical device and does not make underwriting decisions.
+
+Join me here: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Mike,Evans,https://linkedin.com/in/mike-evans-9760a310a,RGA UK,Chief Underwriter - Protection,,,"Hi Mike,
+
+Your route from senior underwriter to Chief Underwriter for protection in the UK and Ireland has run inside RGA throughout.
+
+Taken in the application, 2 photos give FitXpress a Smart Scales weight estimate to set against the declared weight, and a flag if the gap crosses the insurer's threshold.
+
+From your years underwriting, how big a gap between declared and estimated weight would justify a referral on build?
+
+Katerina","Hi Mike,
+
+A shadow run would count how many UK protection cases each gap size would flag, giving your team the workload before any rule changes. FitXpress is not a medical device and does not make underwriting decisions.
+
+Slot here: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Anna,Graham,https://linkedin.com/in/anna-graham-fia,RGA UK,"Head of Protection, UK and Ireland",,,"Hi Anna,
+
+Noticed that you head protection for the UK and Ireland at RGA UK, working with insurers on cases they decide without medical evidence.
+
+On cases like that, FitXpress takes 2 photos in the application and returns a Smart Scales weight estimate and BMI from the declared height, with a flag at the insurer's own threshold and a timestamped record.
+
+What do your client insurers ask you for when a case has no medical evidence?
+
+Katerina","Hi Anna,
+
+A shadow run with one client insurer would give a first answer to that: what a flag looks like on that insurer's own cases, held outside every underwriting decision.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Free to talk? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Dean,Scotson,https://linkedin.com/in/deanscotson,RGA UK,DPO (emea),,,"Hi Dean,
+
+As DPO for EMEA at RGA UK, data handling for any new tool sits with you.
+
+FitXpress takes 2 photos in the insurer's application and returns one timestamped record, with scan records on random identifiers and a flag above the insurer's threshold.
+
+Which data-handling documents would you want in hand before a client insurer begins a shadow evaluation with a new vendor?
+
+Katerina","Hi Dean,
+
+Photos are deleted after processing or within 30 days per the insurer's policy, retained photos are blurred, and scan records sit on random identifiers.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Documents via legal@3dlook.me, call here: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Helen,Croft,https://linkedin.com/in/helen-croft-underwriting,SCOR UK,Head of Life & Health Underwriting & Claims UK & Ireland,,,"Hi Helen,
+
+Quick reaction to your remit: life and health underwriting for SCOR across the UK and Ireland.
+
+FitXpress is built for the point of sale. 2 photos taken in the application produce one timestamped record, and a flag appears only above a threshold the insurer sets.
+
+Before SCOR takes a new kind of build evidence to a client, what does your team want to have seen?
+
+Katerina","Hi Helen,
+
+An evaluation with a client would count flags per candidate threshold and how often they match other build evidence. Smart Scales gives approximately 3.5% mean absolute error under evaluated conditions and is not a scale reading. FitXpress is not a medical device and does not make underwriting decisions.
+
+Open to a call on the design? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Hannah,Cook,https://linkedin.com/in/hannah-cook-73585829,SCOR UK,Head of Protection Business Development,,,"Hi Hannah,
+
+Noticed overlap with your work: taking protection propositions to UK insurers at SCOR.
+
+One you could carry is a second source of build evidence. FitXpress takes 2 photos in the application and gives a Smart Scales weight estimate and a flag above the threshold the insurer sets, with a timestamped record.
+
+Which of the insurers you work with would you take a second source of build evidence to first?
+
+Katerina","Hi Hannah,
+
+With any of them, the useful thing to bring is a record they can inspect: the weight estimate, BMI from the declared height and the flag. The insurer sets the threshold.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Free for a call? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Gill,Salton,https://linkedin.com/in/gill-salton-414848180,SCOR UK,Underwriting & Claims Development Manager,,,"Hi Gill,
+
+Curious about your take as development manager for underwriting at SCOR L&H.
+
+Manual build guidance usually rests on declared weight. FitXpress adds 2 photos in the application, a Smart Scales weight estimate and BMI from the declared height, with a flag when the gap crosses the threshold the insurer sets.
+
+Which parts of the manual's build section would you revisit if an estimate sat beside the declared weight?
+
+Katerina","Hi Gill,
+
+A test could compare flags with the build bands in the manual, case by case, with outputs kept out of decisions.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Shall we arrange a call? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Anil,Girdhari,https://linkedin.com/in/anilgirdhari,SCOR UK,Senior Underwriting Manager Life & Health,,,"Hi Anil,
+
+Couldn't help but ask about treaty business acceptance at SCOR Global Life.
+
+If a client treaty were to include remote build evidence, FitXpress would work from 2 photos taken in the application and return a Smart Scales weight estimate and a flag when the gap crosses the insurer's threshold, as one timestamped record.
+
+What would business acceptance need to see first?
+
+Katerina","Hi Anil,
+
+A shadow run on one client's cases would count how often the flag fires and show what the record holds, before any treaty wording changes. FitXpress is not a medical device and does not make underwriting decisions.
+
+Worth a call? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Ricky,D'Gama,https://linkedin.com/in/ricky-dgama,SCOR UK,Head of Modelling & Innovation,,,"Hi Ricky,
+
+This stood out: you head modelling and innovation at SCOR, after leading L&H innovation.
+
+FitXpress turns 2 photos into a Smart Scales weight estimate and BMI from the declared height, with a flag above an insurer's threshold, in one timestamped record.
+
+How does your team scope a new evidence source before it goes to clients?
+
+Katerina","Hi Ricky,
+
+The record is structured, which suits modelling work, and the flag threshold is a parameter you can vary in a test.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Want to see a sample? Book here: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Danny,Essam,https://linkedin.com/in/danny-essam-43242013,iPipeline UK,Head of Product,,,"Hi Danny,
+
+Noticed overlap with your product at iPipeline: Advanced Underwriting reaches all advisers through SolutionBuilder.
+
+FitXpress could add a step to that journey: 2 photos in the application, a Smart Scales weight estimate, BMI from the declared height and a flag when the gap crosses the insurer's threshold, with one timestamped record per applicant.
+
+Where in the SolutionBuilder journey would a build step belong, and who decides?
+
+Katerina","Hi Danny,
+
+Your team would call an API or embed an SDK on web or mobile, and the platform receives a timestamped record for each applicant. FitXpress is not a medical device and does not make underwriting decisions.
+
+Shall we compare notes? https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Kaj,Makaswaran,https://linkedin.com/in/kaj-makaswaran-64a176188,iPipeline UK,Underwriting Services Manager,,,"Hi Kaj,
+
+Quick idea for you, given how Advanced Underwriting captures disclosures before the application.
+
+Build stays a declared figure there. FitXpress adds 2 photos in the application, a Smart Scales weight estimate and a flag when the gap crosses a threshold the insurer sets, as one structured record.
+
+When you configure an insurer's underwriting on the platform, where does a declared build get handled?
+
+Katerina","Hi Kaj,
+
+In a rules configuration the flag would be one more field to read, set against a threshold the insurer chooses and sitting next to the declared height and weight. FitXpress is not a medical device and does not make underwriting decisions.
+
+A call would show the fields: https://meetings.hubspot.com/katerina-galich
+More here: https://3dlook.ai/for-insurance-underwriting/
+
+Katerina"
+Helena,Mbcs,https://linkedin.com/in/helena-ashton-mbcs-4775788,iPipeline UK,Director Data Protection,,,"Hi Helena,
+
+Quick note for the person who signs off data flows at iPipeline UK.
+
+A scan step would send 2 photos from the application: FitXpress returns a Smart Scales weight estimate, BMI from the declared height and a flag above the threshold the insurer sets, as one timestamped record.
+
+How does iPipeline review a new data processor for a journey on its platform?
+
+Katerina","Hi Helena,
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs. Photos are deleted after processing or within 30 days per the insurer's policy; scan records use random identifiers.
+
+Documents: legal@3dlook.me. Call: https://meetings.hubspot.com/katerina-galich
+
+Katerina"

@@ -1,0 +1,125 @@
+{
+ "campaign": "2026-10-22-uk-insurance-underwriting",
+ "checked": 20,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-4",
+ "generated": "2026-10-26T10:32:02",
+ "hard": [],
+ "soft": [
+  [
+   "no company line",
+   "caroline-froude-53118414 M1",
+   "«Guardian Financial Services» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "jane-tarbuck-11487341 M1",
+   "«Guardian Financial Services» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "tsmithfia M1",
+   "«Hannover Re UK Life Branch» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "andrea-gregory-76144635 M1",
+   "«Hannover Re UK Life Branch» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "kaj-makaswaran-64a176188 M1",
+   "«iPipeline UK» is not named: check it has a line only this company gets"
+  ],
+  [
+   "near-duplicate sentence",
+   "Holloway Friendly: pearsben / sarah-barrell-133690131",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Guardian Financial Services: andrew-newton-a1bb7115b / nick-rice-59394882",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Guardian Financial Services: andrew-newton-a1bb7115b / richard-stadon-64b7029",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Guardian Financial Services: andrew-newton-a1bb7115b / jane-tarbuck-11487341",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Guardian Financial Services: nick-rice-59394882 / richard-stadon-64b7029",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Guardian Financial Services: nick-rice-59394882 / jane-tarbuck-11487341",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Guardian Financial Services: richard-stadon-64b7029 / jane-tarbuck-11487341",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR UK: helen-croft-underwriting / anilgirdhari",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR UK: hannah-cook-73585829 / gill-salton-414848180",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR UK: hannah-cook-73585829 / ricky-dgama",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR UK: gill-salton-414848180 / ricky-dgama",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "iPipeline UK: danny-essam-43242013 / kaj-makaswaran-64a176188",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×17",
+   "«a smart scales weight estimate…»: alex-yates-78568889, andrea-gregory-76144635, andrew-newton-a1bb7115b, anilgirdhari"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×9",
+   "«a flag when the gap…»: andrew-newton-a1bb7115b, anilgirdhari, danny-essam-43242013, gill-salton-414848180"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«in the application a smart…»: alex-yates-78568889, danny-essam-43242013, gill-salton-414848180, jamie-welch-12b73b62"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«when the gap crosses the…»: anilgirdhari, danny-essam-43242013, gill-salton-414848180, jamie-welch-12b73b62"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«is not a scale reading…»: alex-yates-78568889, caroline-froude-53118414, helen-croft-underwriting, lynn-baillie-b468427"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«the threshold the insurer sets…»: andrea-gregory-76144635, gill-salton-414848180, hannah-cook-73585829, helena-ashton-mbcs-4775788"
+  ]
+ ]
+}
