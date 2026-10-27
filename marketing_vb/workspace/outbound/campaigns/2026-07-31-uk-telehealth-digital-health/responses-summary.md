@@ -1,192 +1,82 @@
-# Responses Summary — 2026-07-31-uk-telehealth-digital-health (as of 2026-09-21)
+# Responses Summary — 2026-07-31-uk-telehealth-digital-health (as of 2026-10-26)
 
-**This replaces the 2026-09-02 partial run.** That run classified 4 replies pulled from
-Closely's inbox listing. The listing hid two thirds of the campaign's actual repliers —
-the campaign's own contact records showed 9 repliers where the listing showed 3.
-`responses-raw.csv` has since been rebuilt from the authoritative per-campaign contact
-drill and now aggregates two Closely campaigns that both belong to this folder (139205 +
-139077). It held **17 replies from 13 people** as of the 2026-09-02/03 full re-run.
-
-**Incremental update, 2026-09-21:** 3 new replies arrived after the 2026-09-02/03 run,
-all from Huma contacts pulled via campaign 139205. They are appended to
-`responses-classified.csv` without altering any of the prior 17 rows. `responses-raw.csv`
-now holds 20 rows / 16 unique people. All 3 new rows have a `thread_file` and were
-classified against the real outbound thread.
-
-15 of 17 rows from the prior run had a `thread_file` and were classified against the real
-outbound thread. **2 rows (both Sadeq N. Yazdi) have no `thread_file`** — his company and
-the original message angle are unknown, so both are classified from the reply text alone
-and marked `confidence: low`, flagged in-line in the CSV and below.
+Re-pull since the 2026-09-21 classification run added 3 new rows: a decline from Carolyn Pallister
+(Slimming World, 2026-10-26) that supersedes her earlier interested reply, a referral from Amin
+Rezaeian (Huma, 2026-09-24) that softens his earlier decline, and a bare "thanks" from Michael Moc
+(Huma, 2026-09-28) with no new signal. All 23 rows from `responses-raw.csv` are classified below
+(20 carried over from the prior run, 3 new).
 
 ## Counts
-- Total responses: 20 (16 unique people)
-- Interested: 4 (20%) ← **передать сейлзам**
-- Maybe-later: 4 (20%)
-- Referrals: 1 (5%)
-- Decline: 5 (25%)
+- Total responses: 23
+- Interested: 4 (17.4%) — **2 of these are a live handoff (Abraham Morse x2, same thread); 1 is Moein Kafi; 1 (Carolyn Pallister, 2026-08-24) is historical and superseded by her own 2026-10-26 decline on the same thread — do not hand that one to sales**
+- Maybe-later: 4 (17.4%)
+- Referrals: 2 (8.7%)
+- Decline: 6 (26.1%)
 - Negative: 0 (0%)
-- Questions: 2 (10%) — требуют личного ответа Вадима
-- OOO: 0 (0%)
-- Other/unclear: 4 (20%)
-
-Against `hypothesis.md`'s targets: reply rate needs the send count to compute properly
-(not in this file), but positive replies (interested) = 4, which already clears the
-"qualified leads ≥ 2" bar on raw count — though see the caution on Abraham Morse below
-before calling all 4 qualified. The 3 new replies did not add a new interested or
-question row; they added 1 maybe-later, 1 decline, and 1 other/unclear.
+- Questions: 2 (8.7%) — require Vadim/Katerina's personal reply
+- OOO: 0
+- Other/unclear: 5 (21.7%) — mostly bare "thanks"-only acknowledgments with no business signal
 
 ## Interested — for sales handoff
 
-### Abraham Morse — Director, Global Clinical Programs — Vira Health
-- Replied to: Message 1
-- Their message (13:33:19): «I am interested to learn more about your tech. I want to be
-  transparent that Vira does not seem to have a need for it at this time. If you are still
-  willing to demo for me, I will schedule a meeting.»
-- Their message (18:41:07, same day): «done. see you on 8/31 [signed] Nick»
-- Extracted intent: wants a demo, explicitly asked to schedule a meeting, and — per the
-  second message — **a meeting is already booked for 8/31**.
-- Objection: he is transparent that Vira Health itself has no current stated need — this
-  reads as personal/technical curiosity plus a possible future-need relationship, not a
-  live company-level deal. Treat the demo accordingly; don't oversell urgency.
-- **Flag for Vadim:** the confirmation message signs off "Nick," not Katerina, who owns
-  this thread per `messages/deeb8e662104.md`. Worth checking whether this contact was
-  actually engaged via a different sending account, and separately whether Vira Health's
-  HQ is in-scope for a UK-only campaign (`hypothesis.md` anti-cases: "US-only or
-  non-UK-operating platforms").
-- Suggested next step: confirm who owns the 8/31 meeting internally, prep the demo around
-  clinical-programme measurement consistency (his stated hook), full thread in
-  `messages/deeb8e662104.md`.
-
 ### Moein Kafi — Field CEO — Huma
 - Replied to: Message 2
-- Their message: «sound interesting. Let's have short call. I'm keen on understanding more
-  of your product.»
-- Extracted intent: explicit, unprompted ask for a short call to learn more.
-- Suggested next step: send the calendar link, 15-20 min intro on how the API/SDK fits
-  Huma's virtual-care programmes. Full thread: `messages-batch2/223f0357ba58.md`.
-- **Note:** a colleague of his at Huma, Hojat Modaresizadeh (Senior Software Engineer),
-  separately replied to redirect us to "one of the Field CEOs" — see Referrals below. That
-  referral is already actioned by this reply; no separate outbound touch needed there.
+- Their message: «Hi Katerina, sound interesting. Let's have short call. I'm keen on understanding more of your product.»
+- Extracted intent: wants a short intro call to understand the product, no time proposed yet
+- Suggested next step: send calendar link, 15-20 min, frame around Huma's virtual-care programmes
+- Full thread: `messages-batch2/223f0357ba58.md` + response in CSV
+- Cross-reference: Hojat Modaresizadeh (Huma, same campaign) referred outreach to "the Field CEOs" as a role — Moein Kafi already picking this up means that referral is effectively actioned.
 
-### Carolyn Pallister — Head of Nutrition, Research & Health — Slimming World
-- Replied to: Message 1
-- Their message (2026-08-24): «thanks for your messages. I'm going to pass this info onto
-  our Research Manager and will look to arrange a meeting soon. We've got a bit of leave
-  in the team at the moment so leave it with us - we'll be in touch!»
-- Extracted intent: explicit intent to arrange a meeting, delegated to the Research
-  Manager, with an acknowledged delay for team leave. Confidence: medium — the ask is real
-  but timing and ownership are both soft.
-- A second reply the next day (👍 only) is logged separately as `other/unclear` — it reads
-  as an acknowledgment of a Katerina follow-up not captured in the thread file, not a new
-  signal. Don't double-count it in any rollup.
-- Suggested next step: if no meeting request arrives in ~2-3 weeks, follow up and offer to
-  loop the Research Manager in directly. Full thread: `messages-batch2/4fec588f4b08.md`.
+### Abraham Morse — Vira Health
+- Replied to: Message 1 (both rows)
+- Their message: «I am interested to learn more about your tech... If you are still willing to demo for me, I will schedule a meeting», followed same day by «done. see you on 8/31, Nick»
+- Extracted intent: demo requested and meeting confirmed for 8/31. He is explicitly transparent that "Vira does not seem to have a need for it at this time" — treat as early-stage/curiosity-driven, not an active deal yet.
+- Suggested next step: confirm internally who is running the 8/31 meeting — the sign-off reads "Nick," not Katerina, who owns this thread. Worth a quick check with Vadim before the call happens.
+- Full thread: `messages/deeb8e662104.md` + response in CSV
+
+### Carolyn Pallister — Head of Nutrition, Research & Health — Slimming World (NOT a current handoff — flagged for visibility only)
+- Her 2026-08-24 reply said she'd arrange a meeting with Slimming World's Research Manager (classified interested at the time)
+- Her 2026-10-26 reply reports the outcome: the meeting happened, and the answer came back «this isn't something we'd be looking to pursue right now»
+- This is now a decline, not an active lead — included here only so sales doesn't act on the stale interested row sitting earlier in the CSV.
 
 ## Questions — Vadim needs to reply personally
 
-### Ali BahaAbadi — Senior Android Software Engineer — Huma
-- Question: «is the SDK available for both Android and iOS, or Android only?»
-- Context: says the offer "looks interesting," will share with his team and get back to
-  us — no call ask yet, so this stays `question` per the campaign rule (an internal-review
-  promise plus a factual question is not `interested`).
-- Objection: none stated.
-- Fact-checked against `tech-spec.md`: both a native iOS (Swift) SDK and a native Android
-  (Kotlin) SDK exist, plus a React SDK and a REST API.
+### Ali BahaAbadi (Huma)
+- Question: «is the SDK available for both Android and iOS, or Android only?» (alongside "this looks interesting, I'll share it with the team")
 - Suggested draft answer (Vadim, edit to taste):
-> «Hi Ali, glad it's useful for the team review. Both platforms are covered natively - iOS
-> (Swift) and Android (Kotlin) SDKs, plus a REST API if that fits your stack better. Happy
-> to send the docs over, or once the team's had a look, a quick 10-15 min call to walk
-> through the integration path could save time:
-> https://meetings.hubspot.com/katerina-galich. Best, Katerina»
+> «Hi Ali, glad it's useful for the team review. Both platforms are covered natively, iOS (Swift) and Android (Kotlin) SDKs, plus a REST API if that fits your stack better. Happy to send the docs over, or once the team's had a look, a quick 10-15 min call to walk through the integration path could save time: https://meetings.hubspot.com/katerina-galich.»
 
-### Sadeq N. Yazdi — title/company unknown (no thread_file)
-- Question: «May I have more information about them so I can talk about it with the
-  managers and then connect them to you.»
-- Context: **no `thread_file` for this contact** — his company, title, and which of our
-  messages he's replying to are all unknown. Classified from reply text alone,
-  `confidence: low`, per the task's rule for the 2 no-thread rows.
-- A second message from him one minute later ("FYI, we already have some similar
-  features") reads as a build-vs-buy objection layered onto the same request — logged as
-  its own `other/unclear` row since it's not itself a question, but it belongs to the same
-  exchange.
-- Suggested draft answer (Vadim, edit to taste — confirm his company first):
-> «Hi Sadeq, happy to send more detail; could you confirm which team you're with so I make
-> sure I send the right materials? In short: two smartphone photos give 80+ measurements
-> and body composition (96-97% accuracy, under 45 seconds) as structured data your
-> managers can review, via API or SDK. Glad to send docs or a short deck, whichever is
-> easier to pass along. Best, Katerina»
-- **Do this one last** — confirming identity before replying matters more here than speed.
-
-## Referrals
-
-### Hojat Modaresizadeh — Senior Software Engineer — Huma
-- Their message: «Reach out to one of the Field CEOs, they can better help.»
-- Role-based referral, no named individual. **Already actioned**: Moein Kafi, Field CEO at
-  Huma, is in this same pull and replied `interested` with an explicit call ask (see
-  above). No new outbound contact needed here unless Huma has multiple regional Field
-  CEOs worth reaching separately.
+### Sadeq N. Yazdi (Huma — resolved 2026-09-02 as a duplicate LinkedIn profile; original thread file not on disk under this person_id)
+- Question: asks for more information about our features so he can raise it with "the managers," sent one minute before/after a separate message claiming "we already have some similar features"
+- Caveat: no `messages/{person_id}.md` exists for this contact under this ID, so the original message angle is unconfirmed — low confidence on context, not on the fact that he's asking a question
+- Suggested draft answer (Vadim, edit to taste):
+> «Hi Sadeq, happy to send more detail; could you confirm which team you're with so I make sure I send the right materials? In short: two smartphone photos give 80+ measurements and body composition (96-97% accuracy, under 45 seconds) as structured data your managers can review, via API or SDK.»
 
 ## Negative responses — pattern check
 
-0 of 20 (0%) — well under the 5% threshold, no negative/annoyed responses in this pull,
-including the 3 new replies added 2026-09-21.
-
-One softer messaging note, filed under `decline` rather than `negative`: **Scott Lyons**
-(Senior Data Engineer, Slimming World) read the API pitch as a personal-use developer tool
-rather than a B2B capability for his employer's platform ("sounds interesting but I'm not
-sure it's something I would have a use for in my personal time"). Message 1 leads with
-"your data engineering work... stood out" and an API/docs-first frame — closer to a
-dev-tool pitch than a business-capability pitch for someone in his role. **Amin Rezaeian**
-(Lead Backend Software Engineer, Huma, added 2026-09-21) is a second data point in the
-same direction: a firm decline citing lack of decision-making authority ("I'm not the
-decision maker and have no time and energy to connect you") plus a claim that "these kind
-of services are never used by Huma." Two engineer-titled declines is worth watching as a
-pattern, though the Huma account overall is mixed, not uniformly cold — see the note under
-Recommendations below.
+Zero responses landed in `negative` this pull (no irritation, no "stop contacting me"). Decline sits at
+26.1% (6/23), which is a normal range for cold outbound and mostly reads as genuine fit mismatches
+(Slimming World: personal-use framing missed a B2B buyer three times; Zoe: explicit "doesn't align with
+product roadmap"; Huma: "not the decision maker, historically never used" — though that same person
+turned around two and a half weeks later with a named referral, so even this account's "decline" wasn't
+final). No messaging pattern to fix here.
 
 ## Recommendations
 
-- **Sales handoff, in priority order:** Abraham Morse (Vira Health — meeting already
-  booked for 8/31, verify ownership first), Moein Kafi (Huma — wants a call), Carolyn
-  Pallister (Slimming World — wants a meeting via her Research Manager, softer timing).
-- **Answer the 2 questions this week** — Ali BahaAbadi (Huma) has a clean factual ask with
-  no objection; Sadeq N. Yazdi needs identity confirmation first since his thread is
-  missing.
-- **Confirm the Abraham Morse "Nick" sign-off and Vira Health's geo fit** before treating
-  the 8/31 meeting as routine — this campaign is scoped England-HQ only
-  (`hypothesis.md`), and the confirmation message wasn't signed by the profile that owns
-  this thread.
-- **Exclude 5 declines going forward:** Sue Thompson, Joanna Armstrong, Scott Lyons
-  (all Slimming World), Sergio Millán Rodríguez (Zoe), and **Amin Rezaeian** (Huma, added
-  2026-09-21 — direct "no," not decision maker, no time to connect us to anyone, claims
-  Huma historically doesn't use "these kind of services"; no referral or reopen signal).
-- **Nurture pipeline, 4 maybe-later:** Lysette Mazur (Slimming World, PR team forward),
-  Kamil Aleksander Wyszynski (Physitrack, explicit "stay connected"), Daniel Sleeper (Zoe,
-  conditional internal share), and **Michael Moc** (Huma/eConsult, Account Manager, added
-  2026-09-21 — compliments the product's value for "remote validation" and "cost and time
-  savings" but says his customers are NHS organisations and GP practices on eConsult's
-  consultation/messaging platform, a different product surface, and closes with a
-  conditional "I will surely get back in touch if there are any possible opportunities in
-  the future"). Revisit on a 6-week to 4-month horizon depending on how concrete their
-  door-open language was (Kamil's is the most explicit).
-- **Other/unclear, 4 total, no action needed:** Sadeq N. Yazdi's second message (build-
-  vs-buy aside, same exchange as his logged question), Carolyn Pallister's thumbs-up
-  (acknowledgment, not a new signal), Joanna Armstrong's "thank you so much" (acknowledgment
-  after her already-logged decline), and **Mosn Faraji** (Huma, Staff Product Designer,
-  added 2026-09-21 — "Hi, Thanks Katerina." with no content beyond the pleasantry).
-- **Geo check on the 3 new replies:** all three (Mosn Faraji, Amin Rezaeian, Michael Moc)
-  are Huma / eConsult contacts, same UK-headquartered account already in this pull via
-  Moein Kafi, Hojat Modaresizadeh and Ali BahaAbadi — no non-UK geo concern raised by this
-  batch. Michael Moc's mention of "nhs organisations and GP practices" as his own customer
-  base is, if anything, a confirming signal for this campaign's UK/NHS-adjacent scope, not
-  a flag.
-- **Persona note:** of the 4 `interested` replies, 2 are the actual target buyer type
-  (Carolyn Pallister as Head of Nutrition/Research; Abraham Morse as Director of Clinical
-  Programs), and 1 (Moein Kafi, Field CEO) is an adjacent operator role, not one of
-  `hypothesis.md`'s three named personas but senior enough to matter. This is a better
-  persona match than the first partial pull reported.
-- **Data-quality flag for whoever runs step 9 next:** 2 of 17 rows from the original pull
-  (Sadeq N. Yazdi) carry no `thread_file` and no company_name in `responses-raw.csv`
-  either — worth tracing why those two rows lack what every other row has before the next
-  classification pull. The 3 rows added 2026-09-21 all had clean `thread_file` links and
-  no such gap.
+- Add **Sid Foroughi, Head of Engineering, Huma** as a new outbound contact — Amin Rezaeian named him
+  directly as a referral on 2026-09-24 after his own earlier decline. This is a live next step that would
+  have been missed without the re-pull.
+- Do not re-contact Carolyn Pallister (Slimming World) near-term — her 2026-08-24 interested signal is
+  now resolved to a decline as of 2026-10-26, following an actual internal meeting on her side.
+- Huma as an account shows a genuinely mixed signal in this single pull: one interested (Moein Kafi,
+  Field CEO), one referral-to-named-contact (Amin Rezaeian → Sid Foroughi), one role-based referral
+  (Hojat Modaresizadeh → "a Field CEO," already actioned by Moein picking it up), one maybe-later
+  (Michael Moc), one decline (Amin Rezaeian's first message, later softened), and one other/unclear
+  (Mosn Faraji). Worth treating Huma as a multi-thread account rather than drawing one conclusion from
+  any single reply.
+- Confirm with Vadim who is actually running the Abraham Morse / Vira Health 8/31 meeting — the
+  confirmation message is signed "Nick," not Katerina, who sent the original outreach on this thread.
+- Slimming World pattern across this pull (Sue Thompson, Scott Lyons, Joanna Armstrong — all decline;
+  Lysette Mazur — maybe-later via PR team; Carolyn Pallister — now decline after an actual meeting) is
+  one company with five non-advancing contacts. Consider whether Slimming World should be deprioritized
+  for further individual outreach in this market until there's a new reason to re-approach.
