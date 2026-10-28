@@ -36,3 +36,4 @@
   1,298 employees). Card 2 of the problem block relied on one study (Contardo Ayala, +5.98 cm); replaced with a
   1-6 cm range, direction varies (Ross 2020, Contardo Ayala 2014, Dekkers 2008). Review and sources file updated;
   the thread still carries the old 5.98 cm card and the summary line.
+- 2026-10-28, correction posted in the thread (ts 1793187426.171739): card 2 → "1 to 6 cm", direction varies.

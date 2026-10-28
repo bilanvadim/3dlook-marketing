@@ -28,3 +28,5 @@
   threshold above scan-to-scan variation, fraud block, pilot measures; A is the fitness buyer. New problem block in EN.
   Not sent yet: waits for Vadim's go.
 - Side effect: Dekkers 2008 corrected the clinical trials problem card (5.98 cm → 1-6 cm range), see that log.
+- 2026-10-28, sent on Vadim's «так відправ обидва»: Russian reply in Nika's thread (ts 1793187403.118109, mentions Nika
+  and Asselya) plus `review-2026-10-28-nika-ru.md` (F0CCD915P9V) and `sources-problem-block.md` (F0CDP1PT524).
