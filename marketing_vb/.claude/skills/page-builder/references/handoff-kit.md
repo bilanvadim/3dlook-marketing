@@ -75,6 +75,11 @@ clinical or regulatory framing, and any accuracy statement that had to be scoped
   `audienceType` and `areaServed`, plus **FAQPage on the FAQ block**, have to be added on top. One page
   already does this — `/structured-body-data-for-telehealth-digital-health-programs/` — so point the
   receiving team at its JSON-LD as the working example instead of describing the markup from scratch.
+  Entity names and `@id`s come from `docs/schema-entities.csv`, a snapshot of Asselya's entity inventory.
+  Reuse an entity's `@id`; don't mint a new one. Organization is always `https://3dlook.ai/#organization`,
+  Yoast's own id, even where the file still says otherwise (`docs/schema-entities.md`). Validate in
+  validator.schema.org. Google dropped FAQ rich results on 2026-05-07, so the Rich Results Test no longer
+  checks FAQPage.
 - **Blocks and page builder.** Say which sections are plain blocks and which need the page builder,
   and which existing page to clone as the closest template —
   `/structured-body-data-for-telehealth-digital-health-programs/` is the best-built vertical page on

@@ -15,7 +15,7 @@ date: 2026-10-07
 
 ## Build
 - [ ] Shared HubSpot form `FX | LP | Demo` at `#demo`; GTM lookup row for this path → `fx_vertical = connected-and-digital-fitness`.
-- [ ] Schema from `page-final-2026-10-07.html` (WebPage, Service, FAQPage, BreadcrumbList; FAQ answers text-identical, checked 2026-10-07); Rich Results Test.
+- [ ] Schema from `page-final-2026-10-07.html` (WebPage, Service, FAQPage, BreadcrumbList; FAQ answers text-identical, checked 2026-10-07). Align the `@id`s with `docs/schema-entities.csv` (Organization = `https://3dlook.ai/#organization`) and validate in validator.schema.org. Google dropped FAQ rich results on 2026-05-07, so the Rich Results Test no longer checks FAQPage.
 - [ ] H1 size: check the hero still fits 1280×800 with the final's shorter H1.
 - [ ] Logo row under the hero strip: Zing Coach and verv first (in the final), then the rest of the cleared client set from design, alt text = client name.
 - [ ] Comparison: table on desktop, cards under 960 px (in the final's CSS); check both.

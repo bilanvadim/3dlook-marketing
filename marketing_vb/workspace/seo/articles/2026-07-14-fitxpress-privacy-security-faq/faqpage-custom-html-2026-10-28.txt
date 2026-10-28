@@ -1,0 +1,124 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/#faq",
+  "isPartOf": {
+    "@id": "https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What data does FitXpress process and generate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A FitXpress scan begins with a guided capture flow and returns structured outputs in under 45 seconds. The flow includes three categories of data: submitted data, generated data, and technical data produced during processing. Submitted data includes front and side photos captured through the guided mobile flow, gender, height, and optional weight. Generated data may include body measurements, weight- and BMI-related outputs, body composition estimates, a 3D model, and comparison outputs between scans. Technical data includes capture-quality and pose-validation flags, clothing classification, face-obfuscation confirmation, and processing logs with timestamps and request metadata. Body measurements describe circumference and length at defined body points, while body composition values are estimates derived from those measurements and submitted inputs, including height and optional weight."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How are data storage, retention, and deletion handled?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Photos are deleted immediately after processing, or 3DLOOK may retain photos for up to 30 days under a customer-specific policy. Any retained photo is automatically blurred; face obfuscation is applied at capture, regardless of the retention policy. When an enterprise customer collects photos through its own application using the FitXpress SDK, the customer determines whether copies are retained in its own systems. 3DLOOK retains measurements, body composition data, and 3D models on an ongoing basis, unless otherwise specified in the applicable customer agreement or required in connection with a deletion request. FitXpress production data retention is governed by the applicable customer agreement and DPA. Scan records are associated with anonymized identifiers, and 3DLOOK cannot identify a specific individual from the stored data. To request deletion of specific scan outputs, the customer provides the relevant scan identifiers to 3DLOOK."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does body and 3D model progress tracking work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Body Progress compares two scans by their scan IDs and shows how the body has changed between them. The comparison can include measurements, body composition estimates, weight-related estimates, and 3D models, depending on the selected outputs. 3DLOOK does not track individuals or determine whether two scans belong to the same person. The customer selects the scans to be compared, and the comparison is performed between those specific scan records. The required records depend on the type of comparison."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who controls and owns FitXpress data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rights and responsibilities relating to FitXpress data are divided among end users, enterprise customers, and 3DLOOK. End users hold data subject rights over their personal data, including access, correction, portability, deletion, restriction, and objection, where applicable under the governing privacy framework. In most FitXpress deployments, the enterprise customer is the data controller, so end-user requests are generally routed through the customer. The enterprise customer holds contractual rights to the data it submits and to the outputs generated from it, including measurements, body composition estimates, and 3D models. 3DLOOK holds the limited use rights needed to provide and improve the service, as set out in the applicable customer agreement, and retains ownership of its software, algorithms, and underlying models. 3DLOOK does not sell customer data or use it for advertising. Where permitted by the customer agreement, 3DLOOK may use aggregated or anonymized data for analytics, service improvement, and other purposes described in the applicable agreement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does 3DLOOK use customer data to train AI models?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Production customer data is not used for model training unless the customer provides explicit, documented authorization. The applicable DPA and customer agreement define the permitted uses of customer data. Where permitted by the customer agreement, 3DLOOK may use aggregated or anonymized production data for internal analytics, capacity planning, and service improvement. Data is considered anonymized only when it meets applicable legal and technical standards. Technical service logs, used for debugging, security monitoring, and operational support, form a separate category and are not repurposed for training."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does 3DLOOK protect FitXpress data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "3DLOOK groups its FitXpress security controls into four areas. Data protection includes Transport Layer Security (TLS) for data in transit and encryption for data stored in Amazon S3. Access and platform security include role-based access control (RBAC), least-privilege provisioning, separation of development and production environments, tenant isolation, API key authentication, and administrative access controls. Security operations include logging and monitoring, vulnerability management, patch management, change management, incident-response procedures, and business continuity and disaster recovery plans. Testing and assurance include regular independent third-party penetration testing and security reviews."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What security and compliance documentation is available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enterprise stakeholders can request security documentation, a Data Processing Agreement (DPA), a Business Associate Agreement (BAA), penetration-test summaries, architecture and data-flow diagrams, subprocessor information, incident-response information, business continuity and disaster recovery information, and security questionnaires. Certain materials are available under an NDA. The SOC 2 Attestation Report is not yet available because 3DLOOK is working toward obtaining it. Documentation is shared with qualified enterprise customers through the security or procurement review process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does FitXpress support HIPAA, GDPR, and CCPA/CPRA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "HIPAA may apply when FitXpress is used by a covered entity or a business associate that processes protected health information (PHI). Where it applies, 3DLOOK may act as a business associate under an executed BAA for qualifying enterprise deployments. The GDPR and the UK GDPR govern the processing of personal data relating to individuals in the European Economic Area (EEA) and the United Kingdom (UK). In most FitXpress deployments, the enterprise customer is the data controller and 3DLOOK is the data processor. Where applicable, 3DLOOK provides a DPA that incorporates Standard Contractual Clauses (SCCs) for international transfers, with a UK Addendum where UK GDPR applies. Where the CCPA/CPRA applies, 3DLOOK generally acts as a service provider or contractor that processes personal information on the customer’s behalf."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is FitXpress data biometric or health data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Classification depends on the data type, the processing purpose, the jurisdiction, and the deployment. No single legal classification applies to every FitXpress output. Photos, body measurements, and 3D models may constitute personal data when they can be linked to an identifiable individual. Body composition and weight-related metrics can be health data or sensitive data depending on how the customer uses them. FitXpress photos and body outputs are not automatically classified as biometric data solely because they describe physical characteristics. FitXpress processes photographs and inputs to generate body measurements, models, metrics, and indexes. These outputs are not produced or used for identification or authentication. The enterprise customer generally determines the purpose of the deployment and must assess how the data is classified within its workflow."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is 3DLOOK SOC 2 certified?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SOC 2 is an attestation examination performed by an independent auditor, not a product certification. 3DLOOK is working toward obtaining a SOC 2 Attestation Report and has completed an initial readiness assessment aligned with SOC 2 Trust Services Criteria. Alternative security evidence, including penetration-test summaries, the security overview, and security-questionnaire responses, is available to qualified enterprise customers under NDA. This documentation remains distinct from a completed SOC 2 examination."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does FitXpress qualify as a medical device under the UK MDR or EU MDR?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FitXpress does not meet the definition of a medical device under the UK Medical Devices Regulations 2002 (UK MDR) or the EU Medical Devices Regulation (EU MDR), based on its current intended purpose and functionality. This conclusion is documented in a Product Classification Assessment prepared by 3DLOOK’s independent regulatory advisors, with a formal confirmation available to qualified enterprise customers. FitXpress does not diagnose, recommend treatment, provide clinical guidance, or make clinical decisions. Outputs are informational only and require independent interpretation and decision-making. The enterprise customer is responsible for assessing whether its use of FitXpress complies with applicable regulations and for any regulatory obligations arising from the integration of the outputs into its workflow."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is FitXpress’s regulatory status with the FDA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FitXpress has not been cleared, authorized, or approved by the U.S. Food and Drug Administration (FDA). 3DLOOK makes no representation as to whether FDA clearance, authorization, or approval is required for any particular customer’s use case. FitXpress provides structured body data for use within customer-defined workflows and does not independently determine a diagnosis, treatment recommendation, fitness for duty, employment eligibility, insurance eligibility, clinical-trial eligibility, or other high-impact individual decision. The enterprise customer is responsible for assessing whether its complete integrated workflow, including how outputs are used and what claims are communicated to end users, triggers FDA requirements. 3DLOOK has no responsibility for the customer’s FDA compliance assessment or obligations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What uses are supported, and what decisions should not rely on FitXpress alone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FitXpress supports remote intake and body-measurement capture, body-composition outputs and Body Progress comparisons between scans, structured data collection for research protocols, structured intake and supporting documentation for customer-managed eligibility workflows, and patient or member engagement. FitXpress does not independently determine a diagnosis, treatment, medication recommendation, fitness for duty, employment eligibility, insurance eligibility, clinical-trial eligibility, or any other high-impact individual decision. It does not provide dose calculations, symptom tracking, prescribing recommendations, or automated clinical decision support. These workflows require appropriate validation, human review, and customer-defined decision rules that align with applicable law. Final decisions remain the responsibility of the customer’s clinicians, underwriters, or other designated decision-makers operating under an approved governance process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can procurement, legal, or security teams request additional information?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enterprise stakeholders can request the following through 3DLOOK’s standard procurement channel or at legal@3dlook.me: security documentation; a Data Processing Agreement (DPA); a Business Associate Agreement (BAA), where HIPAA applies; penetration-test summaries under NDA; architecture and data-flow diagrams under NDA; subprocessor information; regulatory-status confirmation; product documentation and performance information; and deletion and integration documentation. Internal security files, audit materials, policies, and penetration test reports are not publicly available and are shared with qualified enterprise customers under an NDA."
+      }
+    }
+  ]
+}
+</script>

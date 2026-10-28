@@ -137,13 +137,23 @@ Sitemap: https://3dlook.ai/sitemap_index.xml
 
 **Приёмка:** Search Console → Settings → robots.txt показывает новую версию без ошибок. URL `https://3dlook.ai/?s=test` в тесте robots.txt — «Blocked».
 
-## P1-2. FAQ-schema на trust-FAQ невалидна
+## P1-2. ~~FAQ-schema на trust-FAQ невалидна~~ — передан маркетингу 2026-10-28
 
-**Проблема:** на `/content-hub/fitxpress-data-privacy-security-regulatory-faq/` WordPress (`wpautop`) вставляет `<br />` внутрь JSON-LD FAQPage. Разметка ломается, rich result не показывается.
+**Проблема (перепроверено 2026-10-28):** на `/content-hub/fitxpress-data-privacy-security-regulatory-faq/` JSON-LD FAQPage стоит в классическом блоке статьи, WordPress вставляет в него `<br />`, и JSON не парсится. На `/content-hub/fitxpress-capture-quality-user-experience-faq/` FAQPage нет вовсе.
 
-**Сделать:** вывести JSON-LD так, чтобы его не трогал `wpautop`: через Yoast FAQ-блок, через Custom HTML-блок с отключённым autop или хуком в `wp_head`. Проверить все страницы с FAQPage.
+**Что изменилось:** Google с 7 мая 2026 не показывает FAQ rich results ни одному сайту, а 15 июня снял документацию ([changelog](https://developers.google.com/search/updates#removing-faq-rich-result)). FAQPage оставляем как корректную разметку для Bing и ИИ-ассистентов, но сниппет больше не цель, и Rich Results Test для приёмки не годится.
 
-**Приёмка:** [Rich Results Test](https://search.google.com/test/rich-results) по странице — «FAQ: valid items detected», 0 ошибок.
+**Сделать (маркетинг, Асель; девелопер не нужен):** в обеих статьях JSON-LD вставить блоком «Custom HTML», в нём WordPress не ставит `<br />`. В trust-FAQ текущий блок с кодом заменить на Custom HTML. Готовые блоки отправлены Асель в Slack 28.10:
+- `trust-faq-faqpage-custom-html.txt` — прежний JSON без `<br />`, 14 вопросов, совпадают с H3;
+- `capture-quality-faq-faqpage-custom-html.txt` — новый, 13 вопросов по живому тексту статьи.
+
+У обоих `@id` = адрес страницы + `#faq` и `isPartOf` → страница, чтобы FAQ был связан с графом Yoast. Если текст ответов в статье поменяется, JSON пересобрать.
+
+Блок FAQ Yoast в FAQ-статьях не используем: он видимый и продублировал бы вопросы, которые уже стоят в теле статьи как H3. В обычных статьях с коротким FAQ внизу блок Yoast — правильный вариант (так сделаны wellness-hub, occ-health, remote-measurement).
+
+Отдельный schema-плагин (Schema Pro, Schema App, Rank Math Pro) не берём, разобрано 28.10: P1-2 — баг блока, P1-4 — данные пользователей, а ручная разметка лендингов уже работает. `@id` сущностей берутся из файла сущностей Асель (копия: `docs/schema-entities.csv`).
+
+**Приёмка:** в исходном коде обеих страниц внутри `<script type="application/ld+json">` нет `<br />`; [validator.schema.org](https://validator.schema.org/) — 0 ошибок, FAQPage с 14 и 13 вопросами. Если `<br />` всё же появится, тогда к девелоперу: вывод через `wp_head`.
 
 ## P1-3. Alt-тексты логотипов на главной
 
@@ -197,6 +207,8 @@ Sitemap: https://3dlook.ai/sitemap_index.xml
 **Проблема:** на `/fitxpress/for-connected-and-digital-fitness/` breadcrumb ведёт на `?page_id=36425` (404).
 
 **Сделать** (**с релизом /fitxpress/**): breadcrumb Home → FitXpress (`/fitxpress/`) → текущая страница. До релиза временно убрать средний уровень, чтобы не вести на 404.
+
+**Вместе с пересборкой страницы (добавлено 2026-10-28):** сейчас на живой странице только граф Yoast, без `Service` и `FAQPage`. Полный граф ставится так же, как на insurance и wrist: JSON — из `workspace/pages/for-connected-and-digital-fitness/page-final-2026-10-07.html` (WebPage, Service, FAQPage, BreadcrumbList), `@id` сверить с `docs/schema-entities.csv`, Organization = `https://3dlook.ai/#organization`. Приёмка — validator.schema.org, 0 ошибок.
 
 ## P1-6. ~~`/content-hub/`: пагинация и фильтры~~ — снят 2026-10-19, перенесён в перелинковку (план, п. 1.5)
 

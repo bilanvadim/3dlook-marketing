@@ -289,7 +289,7 @@ status: v3 — 2026-09-27 утверждены иерархия /fitxpress/, о�
 
 ### Фаза 2. Техническая гигиена (недели 1–3, параллельно)
 
-- **FAQ JSON-LD:** убрать `wpautop` из блока, прогнать Rich Results Test по всем FAQ-страницам.
+- **FAQ JSON-LD (переписано 2026-10-28):** Google снял FAQ rich results 07.05.2026, цель теперь валидная разметка, а не сниппет. FAQ-статьи: один FAQPage блоком Custom HTML, делает маркетинг (ТЗ, P1-2). Обычные статьи с FAQ внизу: блок FAQ Yoast. Проверка — validator.schema.org. Отдельный schema-плагин не берём (28.10).
 - **`robots.txt`:** пересобрать группы. Для `*` закрыть `/?s=`, `/author/`, `*utm*=`.
 - **GPTBot (решение 2026-09-27: пускаем).** Девелопер находит, где рождается 403 (Cloudflare «Block AI bots» или Bot Fight Mode, Wordfence, WAF хостинга), и разрешает user-agent GPTBot. Проверка: `curl -A "GPTBot" https://3dlook.ai/` должен вернуть 200. OAI-SearchBot, ChatGPT-User, ClaudeBot, PerplexityBot и Google-Extended уже получают 200, их не трогать.
 - **`llms.txt`:** пересобрать (главная как FitXpress, `/for-*`, хабы, `/developers/`, trust-FAQ), убрать URL с редиректами. `/blog/` — один 301 вместо двух.
