@@ -1,0 +1,94 @@
+{
+ "generated": "2026-10-28T05:40:19+00:00",
+ "items": [
+  {
+   "id": "df85a480-af6c-48ca-a03e-9da8ea610b25",
+   "title": "Walmart Partners With General Medicine to Expand Better Care Services",
+   "date": "2026-10-27",
+   "tags": [
+    "Investments and Partnerships",
+    "Health System & Health Provider",
+    "Startup",
+    "Care Coordination / Navigation / Care Access",
+    "Retail Health",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/walmart-partners-with-general-medicine-to-expand-better-care-services"
+  },
+  {
+   "id": "912b4a87-8d0d-431c-bef9-a1e536acac56",
+   "title": "Paradromics Receives FDA Approval to Expand Brain Implant Trial Recruitment",
+   "date": "2026-10-27",
+   "tags": [
+    "Clinical Trial Solutions",
+    "Diagnostics",
+    "Health Tech, Solutions & Services",
+    "Policy and Regulation"
+   ],
+   "url": "https://hlth.com/insights/news/paradromics-receives-fda-approval-to-expand-brain-implant-trial-recruitment"
+  },
+  {
+   "id": "05c24a13-3f07-41a3-9f8b-e6f448908062",
+   "title": "Senseonics Begins Human Trial of Fully Implantable One-Year CGM",
+   "date": "2026-10-27",
+   "tags": [
+    "Clinical Trial Solutions",
+    "Diagnostics",
+    "Health Tech, Solutions & Services",
+    "Chronic Condition Management"
+   ],
+   "url": "https://hlth.com/insights/news/senseonics-begins-human-trial-of-fully-implantable-one-year-cgm"
+  }
+ ],
+ "analyses": {
+  "df85a480-af6c-48ca-a03e-9da8ea610b25": {
+   "id": "df85a480-af6c-48ca-a03e-9da8ea610b25",
+   "score": 1,
+   "segment": "—",
+   "what": "Walmart разом із General Medicine розширює Better Care Services до цифрового маркетплейсу на 900+ медичних продуктів і послуг: urgent care, primary care, mental health, chronic disease management, лабораторні тести. General Medicine нещодавно залучила $120M у Series B.",
+   "why": "Це маркетплейс і навігація до лікарів без weight-loss/GLP-1 чи body-tracking workflow, тому прямого місця для FitXpress немає; максимум — контент про тренд retail health.",
+   "play": "none",
+   "companies": [
+    "Walmart",
+    "General Medicine",
+    "Walmart Health",
+    "PillPack",
+    "Amazon Pharmacy"
+   ],
+   "caveat": "",
+   "_date": "2026-10-27"
+  },
+  "912b4a87-8d0d-431c-bef9-a1e536acac56": {
+   "id": "912b4a87-8d0d-431c-bef9-a1e536acac56",
+   "score": 0,
+   "segment": "—",
+   "what": "FDA дозволила Paradromics набирати учасників у дослідження Connect-One імплантованого BCI Connexus по всіх континентальних США, без обмеження в чотири години дороги до центру.",
+   "why": "Brain-computer interface для комунікації ніяк не пов'язаний із вимірюваннями тіла чи сегментами 3DLOOK.",
+   "play": "none",
+   "companies": [
+    "Paradromics",
+    "UC Davis Health",
+    "Mass General Brigham",
+    "University of Michigan Health",
+    "Neuralink",
+    "Precision Neuroscience"
+   ],
+   "caveat": "",
+   "_date": "2026-10-27"
+  },
+  "05c24a13-3f07-41a3-9f8b-e6f448908062": {
+   "id": "05c24a13-3f07-41a3-9f8b-e6f448908062",
+   "score": 0,
+   "segment": "—",
+   "what": "Senseonics почала перше дослідження на людях повністю імплантованого CGM Freedom (до одного року роботи, без зовнішнього трансмітера). Pivotal trial заплановано на 2027 рік, а комерційний запуск — на 2028.",
+   "why": "Senseonics виробляє пристрої для моніторингу глюкози. Компанія не купує body-data, а в дослідженні немає антропометрії, тож для FitXpress сигналу немає.",
+   "play": "none",
+   "companies": [
+    "Senseonics"
+   ],
+   "caveat": "",
+   "_date": "2026-10-27"
+  }
+ },
+ "posts": []
+}
