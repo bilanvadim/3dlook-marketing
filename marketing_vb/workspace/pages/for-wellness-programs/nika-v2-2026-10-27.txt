@@ -1,0 +1,451 @@
+TITLE: Wellness Rewards Verification | FitXpress by 3DLOOKExample reward threshold compared with typical scan-to-scan variation
+META viewport : width=device-width, initial-scale=1
+META description : Verify wellness progress remotely for employer and insurer reward programs. Two guided smartphone photos return a timestamped body-measurement record.
+META canonical : https://3dlook.ai/fitxpress/for-health-plans-and-employer-wellness/
+META theme-color : #050f40
+META og:type : website
+META og:title : Wellness Rewards Verification | FitXpress by 3DLOOK
+META og:description : Verify wellness progress remotely for employer and insurer reward programs. Two guided smartphone photos return a timestamped body-measurement record.
+META og:url : https://3dlook.ai/fitxpress/for-health-plans-and-employer-wellness/
+JSON-LD blocks: 1
+  types: ['WebPage', 'Service', 'Brand', 'BusinessAudience', 'Thing', 'Thing', 'Thing', 'Thing', 'Thing', 'Thing', 'Organization', 'FAQPage', 'Question', 'Answer', 'Question', 'Answer', 'Question', 'Answer', 'Question', 'Answer', 'Question', 'Answer', 'Question', 'Answer', 'Question', 'Answer', 'Question', 'Answer', 'Question', 'Answer', 'BreadcrumbList', 'ListItem', 'ListItem']
+=====
+Wellness Rewards Verification | FitXpress by 3DLOOK
+
+Skip to content
+
+ 3DLOOK
+ How it worksPricingQuestionsBook a demo
+
+ Home/FitXpress for wellness rewards
+
+Employer and insurer wellness rewards
+
+# FitXpress for wellness rewards: verify wellness progress remotely for employer and insurer programs
+
+Participants complete a guided two-photo scan on their phone at baseline and at each checkpoint. Your program receives a timestamped body-measurement record in under 45 seconds, ready for the rules and review that decide the reward.
+
+Book a demo ↗How verification works ↓
+
+Guided capture on a phone, a sample verification record and the integration options for your reward platform.
+
+Participant 7731-B12-week healthy weight programIllustrative data
+
+12 January 2027Baseline scan, at home
+6 April 2027Week 12 scan, at home
+
+Waist measurement −4.3 cm96.4 cm→92.1 cm
+
+Body-fat estimate −1.6 percentage points33.8%→32.2%
+
+Pose check passedClothing check passedScan IDs and timestamps
+
+Program rule, set by the administratorWaist reduction of 3 cm or more from baseline. Meets the rule. Sent to administrator review.
+
+Illustrative values and rule, not participant results. Body composition values are estimates. The program's system applies the rule, and the administrator decides the reward.
+
+2 photosguided front and side capture at home
+
+Under 45 secfrom photos to a structured record
+
+< 1 cmtypical scan-to-scan difference for most evaluated measurements
+
+No onsite visitbaseline and checkpoints from the participant's phone
+
+100+ clients have used 3DLOOK body scanning since 2016, across digital health, weight management and apparel.
+
+The problem
+
+## Wellness rewards depend on proof that is easy to dispute and hard to collect
+
+Most programs verify milestones with self-reported numbers, paperwork or onsite screening events. Each source adds manual review, and none fits a workforce or membership spread across locations.
+
+40%
+Self-reported height and weight underestimated the prevalence of severe obesity by 40% compared with bias-corrected estimates.US Centers for Disease Control and Prevention (CDC).
+
+43%
+of larger firms offering health benefits provide biometric screening, a recurring verification workload for HR and benefits teams.KFF Employer Health Benefits Survey.
+
+62%
+of large firms with biometric screening tie it to incentives or penalties. When money depends on the result, the record has to hold up.KFF Employer Health Benefits Survey.
+
+78%
+of remote-capable US workers are hybrid (52%) or fully remote (26%). Onsite screening days miss many of them.Gallup.
+
+- 
+
+### Self-report is unreliable
+Participants underreport weight and overreport height, often without intending to. Reward decisions built on those inputs are weak.
+
+- 
+
+### Onsite checks do not scale
+Fixed appointments across offices, remote staff and shift workers make repeat verification cycles slow and expensive.
+
+- 
+
+### Manual review delays the reward
+Chasing forms and confirming documents slows reward delivery, and a late reward loses its motivational effect.
+
+- 
+
+### Inconsistent proof erodes trust
+Participants question whether standards apply equally. Program owners question the data behind each payout.
+
+Who it is for
+
+## One verification record for employer, insurer and hybrid reward programs
+
+The same guided scan and the same record format work whether the employer, the health plan or a wellness vendor runs the program.
+
+- Employers
+
+### Confirm milestones across a distributed workforce
+Self-insured and fully insured employers running wellness incentives confirm completion and progress for hybrid, remote and multi-site teams without screening days.
+CHRO · Head of Wellness or Director of Wellbeing · Benefits lead
+
+- Insurers and health plans
+
+### Verify reward milestones across large memberships
+Health plans, including Medicare Advantage plans with health rewards, verify member milestones remotely and apply the same standard across states and populations.
+VP Population Health · Health Plan Operations Director · Compliance and Risk
+
+- Vendors and program operators
+
+### Run cleaner administration for clients
+Wellness platforms and benefit administrators add a standardized verification step to the programs they run, with one record format for every client.
+Wellness Program Administrator · Head of Product · Operations lead
+
+How it works
+
+## From a home scan to a reward decision in one verification flow
+
+FitXpress handles capture and measurement. Your program keeps the rules, the review and the reward.
+
+- 
+
+### Guided scan at home
+The participant follows voice and visual prompts and takes front and side photos with the phone on a stable surface.FitXpress
+
+- 
+
+### Measurements returned
+80+ body measurements, body composition estimates and capture checks return through the API in under 45 seconds.FitXpress
+
+- 
+
+### Program rules applied
+Your platform compares the record with the program's milestones: completion, a measured change or maintenance against baseline.Your program
+
+- 
+
+### Administrator review
+Administrators review results, exceptions and flagged scans in one queue, with the scan record attached.Your program
+
+- 
+
+### Reward issued
+Once approved, the participant receives the reward or program credit through your existing system.Your program
+
+Review and exceptions
+
+## Review every checkpoint against the same record
+
+Each scan arrives with the same fields, a timestamp and the result of the capture checks. Administrators review results that meet a milestone, results below it and scans that need a retake in one place.
+
+Exceptions stop being a chase for paperwork. A flagged scan goes back to the participant as a retake prompt.
+
+Reward decisions stay with the administrator. FitXpress supports remote verification and documentation for incentive programs. Reward and eligibility determinations remain with the program administrator.
+
+See the review flow in the demo
+
+Week 12 checkpointScans received 30 March to 6 AprilIllustrative view
+
+All
+Meets rule
+Below rule
+Flagged
+
+- Participant 7731-BMeets rule · to reviewHome scan, 6 April · capture checks passedWaist −4.3 cm from baseline
+
+- Participant 2208-KMeets rule · to reviewHome scan, 2 April · capture checks passedWaist −3.1 cm from baseline
+
+- Participant 5410-ABelow rule · next checkpointHome scan, 31 March · capture checks passedWaist −1.2 cm from baseline
+
+- Participant 9067-CClothing flag · retake sentHome scan, 30 March · Clothing Detector flagValues pending retake
+
+4 scans received2 meet rule · 1 below · 1 flagged
+ Illustrative interface, rule and values, not participant results. FitXpress returns the data and capture flags; your reward platform displays the queue and applies the rules.
+
+Fair reward rules
+
+## Set milestone thresholds above scan-to-scan variation
+
+A fair rule rewards real change. Repeated FitXpress scans of the same person typically differ by less than 1 cm for most evaluated measurements. A threshold set well above that range rewards measured progress, not one-off variation.
+
+Every participant is measured with the same guided capture and the same processing, which keeps the standard the same across locations and work schedules.
+
+Publish the rules to participants. State what qualifies, how often to scan and what happens after a retake. Clear criteria make rewards easier to administer and easier to defend.
+
+Waist change from baselineExample threshold against scan-to-scan variationIllustrative
+
+CompletionA baseline scan completed by the deadline.
+
+ParticipationScheduled checkpoint scans completed on time.
+
+Measured improvementA change from baseline above the program threshold.
+
+MaintenanceA measurement held within range of the baseline.
+
+ Illustrative threshold and reward types. Your program sets the rules, and keeps an alternative way to qualify for participants who cannot complete a scan.
+
+Program integrity
+
+## A capture flow built to make submissions easier to check
+
+When money or benefits depend on a result, the record has to hold up in a dispute or an audit. The guided flow gives reviewers more to check than a typed number or an uploaded photo.
+
+- 
+
+### Camera capture only
+Photos are taken inside the guided flow, with no upload from the phone's gallery.
+
+- 
+
+### Checks during the shot
+Real-Time Pose Validation and the Clothing Detector check pose, framing and clothing before the scan is accepted.
+
+- 
+
+### Comparable records over time
+Every checkpoint follows the same workflow, and reviewers compare each scan with earlier ones for the same participant.
+
+- 
+
+### A dated evidence trail
+Each record shows what was captured and when, which supports review of flagged submissions and later audits.
+
+These controls support fraud review. They do not replace program rules, administrator review or the program's own audit process.
+
+Outputs
+
+## What each verification scan returns
+
+FitXpress returns each scan as a timestamped record through the application programming interface (API), with the same fields at baseline and at every checkpoint.
+
+ Body measurements
+
+### 80+ body measurements
+Waist, hip, chest, thigh and other dimensions in centimeters, produced by the same processing at every scan.
+ Body composition
+
+### Body composition estimates
+Body-fat percentage, fat mass and lean mass estimates. Body mass index (BMI) and basal metabolic rate (BMR) are calculated metrics.
+ Capture integrity
+
+### Quality checks and flags
+Pose validation results and Clothing Detector flags are stored with each scan, ready for your retake and exception rules.
+ Traceability
+
+### Timestamp and scan identifier
+Each record shows when the values were produced. Scan records use randomly generated identifiers, which your program maps to participant IDs.
+ 3D model
+
+### 3D body model and 3D Body Progress
+A 3D model reconstructed from each scan. On Pro, compare two scans in a 3D view for participant-facing progress.
+ Data delivery
+
+### Formats for reward and reporting tools
+JavaScript Object Notation (JSON) through the API, comma-separated values (CSV) export from the FitXpress Admin Panel and 3D model export.
+
+FitXpress is not a medical device. It supports remote verification and documentation for incentive programs; reward and eligibility determinations remain with the program administrator.
+
+See a sample record in the demo
+
+Compare approaches
+
+## Compare verification methods for wellness rewards
+
+Most programs combine several methods. Each one trades reach against consistency in a different way.
+
+Comparison of wellness rewards verification methods
+
+Dimension | 
+FitXpress | 
+Self-report | 
+Onsite screening | 
+Manual document review | 
+
+Where participants complete it | 
+At home, on their phone | 
+Anywhere | 
+At a screening event or clinic | 
+Wherever the document comes from | 
+
+Standardization | 
+Same guided capture and processing for every scan | 
+None | 
+Depends on staff and equipment at each site | 
+Depends on the document and the reviewer | 
+
+Repeat checkpoints | 
+Comparable records at each checkpoint | 
+Easy to repeat, hard to compare | 
+Each cycle needs new appointments | 
+Each cycle needs new documents | 
+
+Evidence trail | 
+Timestamped record with capture checks | 
+A typed value | 
+Screening results, where recorded | 
+Files kept by the reviewer | 
+
+Scale across locations | 
+Any location with a phone | 
+Any location | 
+Limited by sites and staffing | 
+Limited by reviewer time | 
+
+### FitXpressWhere participants complete itAt home, on their phoneStandardizationSame guided capture and processing for every scanRepeat checkpointsComparable records at each checkpointEvidence trailTimestamped record with capture checksScale across locationsAny location with a phone
+
+### Self-reportWhere participants complete itAnywhereStandardizationNoneRepeat checkpointsEasy to repeat, hard to compareEvidence trailA typed valueScale across locationsAny location
+
+### Onsite screeningWhere participants complete itAt a screening event or clinicStandardizationDepends on staff and equipment at each siteRepeat checkpointsEach cycle needs new appointmentsEvidence trailScreening results, where recordedScale across locationsLimited by sites and staffing
+
+### Manual document reviewWhere participants complete itWherever the document comes fromStandardizationDepends on the document and the reviewerRepeat checkpointsEach cycle needs new documentsEvidence trailFiles kept by the reviewerScale across locationsLimited by reviewer time
+
+Onsite biometric screening stays the right tool for measures a photo cannot capture, such as blood pressure or blood tests. FitXpress covers body-measurement milestones without the visit.
+
+Validation, privacy and compliance
+
+## Review measurement performance and data governance before the first reward cycle
+
+Repeatability decides whether a change between baseline and checkpoint is real. Accuracy against expert manual measurement shows how a single value relates to a tape measure.
+
+< 1 cmTypical scan-to-scan difference for most evaluated body measurements.
+
+96 to 97%Body-measurement accuracy against expert manual measurement, with typical absolute error of 1.5 to 2.0 cm.
+
+0.89 cmWaist repeatability across repeated scans.
+
+2.14 cmWaist mean absolute error against expert manual measurement, in the same study.
+
+These figures come from internal validation and have not been peer-reviewed. The validation population covered ages 16 to 78, weights of 38 to 210 kg and heights of 150 to 220 cm, from the US and Europe. Accuracy is not published by body shape or skin tone. Results depend on form-fitting clothing, a completed guided capture and an entered height within 2 cm. Body composition values are estimates. Supporting methodology is available under a non-disclosure agreement (NDA).
+
+Body scanning accuracy, repeatability and validation methodology
+
+- Consent and noticesYour program explains what is collected, why and how it is used before the first scan. In most deployments, your organization acts as data controller.
+
+- Health Insurance Portability and Accountability Act (HIPAA)Where HIPAA applies, FitXpress can support the deployment with 3DLOOK acting as a business associate under an executed Business Associate Agreement (BAA).
+
+- Photo retentionFitXpress deletes photos immediately after processing or retains them for up to 30 days under a contract-specific policy. Retained photos are blurred, and face obfuscation is applied during capture.
+
+- Participant identifiersFitXpress does not receive names or contact details. Scan records use randomly generated identifiers, which your program maps to participant IDs.
+
+- Encryption and accessData is encrypted in transit with Transport Layer Security (TLS) and at rest. Role-based access control and least-privilege provisioning govern access to production data.
+
+- General Data Protection Regulation (GDPR)3DLOOK acts as data processor. A data processing agreement (DPA) with Standard Contractual Clauses (SCCs) covers international transfers, with a UK Addendum where UK GDPR applies.
+
+- Hosting and model trainingData is hosted on Amazon Web Services (AWS), primarily in the US-West-2 region and partly in the US-East-1 region. 3DLOOK does not use production customer data to train its models without the customer’s explicit, documented authorization.
+
+- Security documentationA security overview is available on request. A penetration-test summary and architecture and data-flow diagrams are available under NDA. 3DLOOK is working toward a System and Organization Controls (SOC) 2 attestation report.
+
+The FitXpress data, privacy, security and regulatory frequently asked questions cover hosting, deletion, SOC 2 and FDA information. Privacy contact: privacy@3dlook.me. Procurement and legal: legal@3dlook.me.
+
+Pilot and pricing
+
+## Start with one reward cycle for one population
+
+Run a baseline and one checkpoint with a defined group of employees or members, next to your current verification method. Agree the measures with benefits, operations and compliance before launch.
+
+Starter
+$1,000 per month for up to 500 scans.
+
+Pro
+$1,500 per month for up to 1,000 scans, including 3D Body Progress and 3D Goal Visualization.
+
+Personalized
+Scan volumes above 1,000 a month, a multilingual guided capture flow, dedicated customer support and annual plan discounts. Large employer and plan populations usually start here.
+ All plans include API access, web and mobile software development kits (SDKs) and guided implementation support.
+
+View FitXpress plans and pricing ↗
+
+- 
+
+### Review the program
+The demo covers guided capture on a phone, a sample verification record and how results reach your reward platform.
+
+- 
+
+### Design the pilot
+Choose the population, the milestone rules, the checkpoint schedule and the alternative path for participants who cannot scan.
+
+- 
+
+### Review the results
+Compare the agreed measures with your current verification method and decide the rollout scope.
+
+### Measures to agree for the pilot
+
+- Checkpoint completion rate
+- Scans that pass capture checks on the first attempt
+- Disputed reward decisions
+- Administrator time per validated checkpoint
+- Cost per validated checkpoint
+- Days from scan to reward decision
+
+Discuss a pilot
+
+Frequently asked questions
+
+## Questions from benefits, operations and compliance teams
+Who decides whether a participant earns the reward?
+Your program. FitXpress returns measurements, estimates and capture checks. Your platform applies the milestone rules, and the program administrator makes reward and eligibility determinations.
+How should we set reward thresholds?
+Set thresholds well above scan-to-scan variation, which is typically under 1 cm for most evaluated measurements. State the rules to participants in advance: what qualifies, the checkpoint schedule and what happens after a retake.
+How does FitXpress help with fraud?
+Photos are taken inside the guided flow, with no gallery upload. Pose and clothing checks run during capture, and every checkpoint produces a comparable, dated record. These controls support review of suspicious submissions. They do not detect every form of misuse, and your program keeps its own review and audit process.
+What about participants who cannot complete a scan?
+The participant stands for the scan, and the current dataset does not support wheelchair users or amputees. Programs should keep an alternative way to qualify for the reward. Two gender options are available, and height, weight and gender are required inputs.
+Can participants use their own phones?
+Yes. Capture runs on iOS 15 or later and on Android phones, including older models, which may show a lower frame rate during capture. The participant places the phone on a stable surface and follows voice and visual prompts.
+Does FitXpress support HIPAA-governed programs?
+Where HIPAA applies, FitXpress can support the deployment with 3DLOOK acting as a business associate under an executed BAA. HIPAA is a regulatory framework, not a certification. Your organization determines whether its program involves protected health information.
+How do results reach our reward and reporting systems?
+Results return through the API as JSON once processing is complete, delivered through webhook events with polling as the documented fallback. Webhooks currently have no automatic retries or signature verification, and polling is the recommended backup. Your team or platform vendor connects the results to reward, reporting and dashboard tools. The FitXpress Admin Panel provides CSV export.
+Where is data hosted?
+On AWS, primarily in the US-West-2 region and partly in the US-East-1 region. For participants in the EU and UK, 3DLOOK provides a DPA with SCCs and a UK Addendum where UK GDPR applies.
+Is FitXpress a medical device?
+No. An independent regulatory assessment concluded that FitXpress does not meet the medical-device definition under the UK Medical Devices Regulations 2002 (UK MDR) or the EU Medical Devices Regulation (EU MDR) for its current intended purpose. FitXpress is not cleared, authorized or approved by the US Food and Drug Administration (FDA).
+
+Book a demo
+
+## See FitXpress in a wellness reward cycle
+
+Review guided capture, a sample verification record and how results reach your reward platform.
+
+- Guided front and side capture on a phone
+- A sample baseline and checkpoint record with capture checks
+- API delivery and pilot options for one population
+
+Not ready to talk
+
+- Wellness rewards verification for employers and insurers
+
+- FitXpress data, privacy and regulatory FAQ
+
+- FitXpress for connected fitness
+
+- FitXpress for telehealth and weight loss
+
+### Request a FitXpress demo
+
+Share your contact details and your program's requirements with 3DLOOK.
+
+Loading the demo request form…
+
+You can also request a demo through the contact page.Open the 3DLOOK demo request page ↗
+
+Contact details are processed as described in the 3DLOOK privacy policy.
+
+© 2026 3DLOOK · FitXpress for wellness rewards. FitXpress is not a medical device.Procurement and security documentation: legal@3dlook.me

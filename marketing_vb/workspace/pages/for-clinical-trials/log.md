@@ -32,3 +32,7 @@
   stays as is; send the review and commit. Review, `gate-reports.md` and the landing-map row updated.
 - 2026-10-28, sent on Vadim's «відправ»: Russian reply in Nika's thread (ts 1793184940.493989, mentions Nika and
   Asselya) plus `review-2026-10-28-nika-ru.md` (F0CCSBV4Y6A) and `sources-problem-block.md` (F0CCU583V3L) as files.
+- 2026-10-28, correction after sending: the wellness source check found Dekkers 2008 (self-measured waist +1.1 cm,
+  1,298 employees). Card 2 of the problem block relied on one study (Contardo Ayala, +5.98 cm); replaced with a
+  1-6 cm range, direction varies (Ross 2020, Contardo Ayala 2014, Dekkers 2008). Review and sources file updated;
+  the thread still carries the old 5.98 cm card and the summary line.

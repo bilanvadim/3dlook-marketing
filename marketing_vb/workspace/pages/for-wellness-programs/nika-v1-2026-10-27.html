@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Body Progress Tracking for Wellness Platforms | FitXpress</title>
+<meta name="description" content="Two smartphone photos give your wellness app 80+ body measurements and body composition estimates, dated for scan-to-scan progress comparison.">
+<link rel="canonical" href="https://3dlook.ai/fitxpress/for-wellness-platforms/">
+<meta name="theme-color" content="#050f40">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Body Progress Tracking for Wellness Platforms | FitXpress">
+<meta property="og:description" content="Two smartphone photos give your wellness app 80+ body measurements and body composition estimates, dated for scan-to-scan progress comparison.">
+<meta property="og:url" content="https://3dlook.ai/fitxpress/for-wellness-platforms/">
+<!--
+  FitXpress wellness platforms landing page · v1 · 2026-10-27
+  Built on the clinical trials landing page v1 (itself built on bariatric v4): same structure, visual system, form and tracking code. Class prefix fx-wp.
+  Audience: consumer wellness apps, lifestyle and nutrition coaching, habit-building products, digital well-being ecosystems,
+  employee wellness apps (scope from the "AI Body Data for Wellness Platforms" content hub article, Sept 2026).
+  Buyer roles: Head of Product or Chief Product Officer, Head of Growth or Engagement, coaching operations, mobile lead (technical blocker),
+  VP Customer Success where an employer client is the audience.
+  Message: (1) scale weight is the only physical progress signal most wellness apps have, and it stays flat while waist and hip change.
+  (2) Repeated two-photo scans give the member and the coach a dated comparison. (3) The platform decides what members see and what happens next.
+  Direction applied from the Fitness call (Oct 2026): FitXpress is presented as a reliable technical partner whose measurements improve the member's
+  progress experience. No claim that FitXpress moves retention, churn, engagement or conversion. Those appear only as measures to agree in a pilot.
+  Out of scope, routed elsewhere: incentive or reward verification (health plans and employer wellness page), workout programming
+  (connected fitness page), patient monitoring (telehealth page).
+  CONFIRM BEFORE PUBLISHING:
+   - Canonical URL /fitxpress/for-wellness-platforms/ is PROPOSED. No wellness use-case file exists in the project; scope comes from the content hub article.
+   - Design system conflict: the project doc "Landing-page design system" (ink/paper, Space Grotesk, Manrope) and the Connected Fitness prototype (2 Oct)
+     use one look. GLP-1, bariatric and clinical trials prototypes (6 to 27 Oct) use the navy, blue and Satoshi look. This page follows the newer three.
+   - Employer-wellness pain ("employer clients ask what changed") is INFERRED from the Connected Fitness draft, sub-vertical 1.5. Not interview-sourced.
+   - Validation height range: proof set says 150 to 205 cm, articles and sibling pages say 150 to 220 cm. Page uses 220 to match siblings.
+   - HIPAA is left out of the page body and mentioned in one FAQ only, per the Fitness positioning note (consumer wellness buyer).
+   - Hosting is US only (AWS US-West-2, US-East-1). Stated openly; EU platforms will ask.
+   - SOC 2 stated as in progress, per Regulatory FAQ (reviewed by Legal and Security, September 2026).
+   - Content hub URL for "AI Body Data for Wellness Platforms" is unknown. Link marked [PLACEHOLDER].
+   - Sibling URLs /fitxpress/for-connected-fitness/ and /fitxpress/for-health-plans-and-employer-wellness/ follow the Connected Fitness prototype; confirm live paths.
+   - The site footer mentions a 7-day trial; the pricing file does not. Trial not mentioned on this page.
+  No wellness platform client, case study or quote exists. Case and quote slots dropped. Client logo strip reduced to the company-level line;
+  the sibling pages' logos (Yazen, UK Meds, Healthyr) are not wellness clients, and naming permission is contradictory (proof set, section 9, item 5).
+  No competitor is named, so no Katerina review is needed.
+  En and em dashes are not used, per BANNED CONSTRUCTIONS. Ranges are written with "to".
+  Remove data-prototype-chrome header/footer when the WordPress theme supplies them.
+-->
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&amp;display=swap">
+<style>
+.fx-wp-page{--blue:#143dff;--navy:#050f40;--pale:#ecefff;--ink:#1a1a1a;--muted:#4c4c4c;--line:#e5e5e5;--font:'Satoshi',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-family:var(--font);font-size:17px;line-height:1.55;color:var(--ink);background:#fff;overflow-wrap:break-word}
+.fx-wp-page,.fx-wp-page *{box-sizing:border-box}
+.fx-wp-page a{color:var(--blue);text-underline-offset:3px}
+.fx-wp-page a:hover{text-decoration-thickness:2px}
+.fx-wp-page :is(a,button,summary,input,select,textarea):focus-visible{outline:3px solid #8a9cff;outline-offset:4px}
+.fx-wp-page :is(h1,h2,h3,p,figure){margin:0}
+.fx-wp-page :is(h1,h2,h3){font-weight:700;letter-spacing:-.025em;line-height:1.12}
+.fx-wp-page h1{font-size:clamp(32px,3.9vw,50px);max-width:21ch}
+.fx-wp-page h2{font-size:clamp(30px,3.8vw,48px);max-width:24ch}
+.fx-wp-page h3{font-size:22px;line-height:1.24}
+.fx-wp-page :is(svg,img){max-width:100%}
+.fx-wp-page button{font-family:var(--font)}
+.fx-wp-page [hidden]{display:none!important}
+.fx-wp-page [id]{scroll-margin-top:24px}
+.fx-wp-page .fx-wp-wrap{max-width:1280px;padding:0 clamp(20px,5vw,64px);margin:0 auto}
+.fx-wp-page .fx-wp-section{padding:clamp(56px,7.5vw,96px) 0}
+.fx-wp-page .fx-wp-light{background:#f9f9f9}
+.fx-wp-page .fx-wp-navy{background:radial-gradient(100% 75% at 85% 0%,#244ce1 0%,#08186b 44%,var(--navy) 100%);color:#fff}
+.fx-wp-page .fx-wp-navy a{color:#d8deff}
+.fx-wp-page .fx-wp-eyebrow{margin-bottom:16px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
+.fx-wp-page .fx-wp-navy .fx-wp-eyebrow{color:#b1bdff}
+.fx-wp-page .fx-wp-lead{font-size:20px;line-height:1.55;margin-top:24px;max-width:56ch}
+.fx-wp-page .fx-wp-intro{margin-top:20px;max-width:70ch;color:var(--muted)}
+.fx-wp-page .fx-wp-navy .fx-wp-intro{color:#d8deff}
+.fx-wp-page .fx-wp-more{margin-top:26px;font-size:16px}
+.fx-wp-page .fx-wp-more a{font-weight:700}
+.fx-wp-page .fx-wp-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:15px 24px;border:0;border-radius:5px;font-size:16px;line-height:1.25;font-weight:700;text-decoration:none;text-align:center;cursor:pointer;transition:background .15s ease,transform .15s ease}
+.fx-wp-page .fx-wp-btn:hover{transform:translateY(-1px)}
+.fx-wp-page .fx-wp-btn-blue{background:var(--blue);color:#fff}
+.fx-wp-page .fx-wp-btn-blue:hover{background:#0f2ecd}
+.fx-wp-page .fx-wp-btn-white{background:#fff;color:var(--navy)}
+.fx-wp-page .fx-wp-navy .fx-wp-btn-white{color:var(--navy)}
+.fx-wp-page .fx-wp-btn-white:hover{background:var(--pale)}
+.fx-wp-page .fx-wp-actions{display:flex;align-items:center;gap:16px 24px;flex-wrap:wrap;margin-top:30px}
+.fx-wp-page .fx-wp-action-link{font-weight:700;padding:10px 0;min-height:44px;display:inline-flex;align-items:center;gap:8px}
+.fx-wp-page .fx-wp-micro{font-size:14px;color:#d8deff;margin-top:14px}
+.fx-wp-page .fx-wp-chrome{background:var(--navy);color:#fff;border-bottom:1px solid #ffffff26}
+.fx-wp-page .fx-wp-chrome .fx-wp-wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:76px}
+.fx-wp-page .fx-wp-logo{display:inline-flex;align-items:center;gap:9px;color:#fff;font-size:21px;font-weight:900;text-decoration:none;letter-spacing:.02em}
+.fx-wp-page .fx-wp-logo svg{width:22px;height:22px}
+.fx-wp-page .fx-wp-nav{display:flex;align-items:center;gap:25px}
+.fx-wp-page .fx-wp-nav>a:not(.fx-wp-btn){font-size:14px;color:#d8deff;text-decoration:none}
+.fx-wp-page .fx-wp-crumbs{padding-top:26px;font-size:13px;color:#b1bdff}
+.fx-wp-page .fx-wp-crumbs a{color:#d8deff;text-decoration:none}
+.fx-wp-page .fx-wp-crumbs span[aria-hidden]{padding:0 9px}
+.fx-wp-page .fx-wp-hero{padding-bottom:56px}
+.fx-wp-page .fx-wp-hero-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.85fr);gap:clamp(28px,5vw,64px);align-items:center;padding-top:40px}
+.fx-wp-page .fx-wp-record{background:#fff;color:var(--ink);border-radius:20px;padding:26px;box-shadow:0 24px 64px #00000026}
+.fx-wp-page .fx-wp-record-head{display:flex;justify-content:space-between;align-items:start;gap:14px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.fx-wp-page .fx-wp-record-head strong{font-size:18px}
+.fx-wp-page .fx-wp-example{display:inline-block;font-size:11px;font-weight:700;color:#4c4c4c;background:#f2f2f2;padding:4px 8px;border-radius:999px;white-space:nowrap}
+.fx-wp-page .fx-wp-dates{display:flex;justify-content:space-between;gap:10px;margin-top:18px;font-size:12px;color:#666}
+.fx-wp-page .fx-wp-dates strong{display:block;color:#333;font-size:14px}
+.fx-wp-page .fx-wp-dates>div:last-child{text-align:right}
+.fx-wp-page .fx-wp-record-list{margin:12px 0 0}
+.fx-wp-page .fx-wp-record-list>div{padding:14px 0;border-bottom:1px solid var(--line)}
+.fx-wp-page .fx-wp-record-list dt{font-size:14px;font-weight:500;display:flex;gap:8px 14px;justify-content:space-between;align-items:baseline;flex-wrap:wrap}
+.fx-wp-page .fx-wp-record-list dt span{font-size:12px;font-weight:700;color:var(--blue)}
+.fx-wp-page .fx-wp-record-list dt span.fx-wp-flat{color:#666}
+.fx-wp-page .fx-wp-record-list dd{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:6px 0 0;font-size:22px;font-variant-numeric:tabular-nums;line-height:1.25;color:#666}
+.fx-wp-page .fx-wp-record-list dd strong{color:var(--ink)}
+.fx-wp-page .fx-wp-record-list dd span[aria-hidden]{font-size:18px;color:#a8a8a8}
+.fx-wp-page .fx-wp-flag{background:var(--pale);padding:14px;margin-top:18px;border-radius:10px;font-size:14px;line-height:1.5}
+.fx-wp-page .fx-wp-disclosure{margin-top:14px;font-size:12px;color:#666;line-height:1.6}
+.fx-wp-page .fx-wp-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:#ffffff26;border:1px solid #ffffff26;border-radius:14px;overflow:hidden;margin-top:48px}
+.fx-wp-page .fx-wp-strip>div{padding:21px 20px;background:#050f40cc}
+.fx-wp-page .fx-wp-strip b{display:block;font-size:25px;line-height:1.2;letter-spacing:-.025em}
+.fx-wp-page .fx-wp-strip span{display:block;font-size:13px;margin-top:6px;color:#d8deff}
+.fx-wp-page .fx-wp-trusted{background:var(--navy);color:#d8deff;border-top:1px solid #ffffff26}
+.fx-wp-page .fx-wp-trusted-inner{display:flex;align-items:center;gap:38px;flex-wrap:wrap;min-height:84px;padding-top:18px;padding-bottom:18px}
+.fx-wp-page .fx-wp-trusted p{font-size:14px;margin:0}
+.fx-wp-page .fx-wp-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin:32px 0 0;padding:0;list-style:none}
+.fx-wp-page .fx-wp-cards li{padding:23px;border:1px solid var(--line);border-radius:15px;background:#fff}
+.fx-wp-page .fx-wp-cards h3{font-size:21px}
+.fx-wp-page .fx-wp-cards p{font-size:16px;margin-top:12px;color:var(--muted)}
+.fx-wp-page .fx-wp-cards .fx-wp-tag{display:inline-block;margin-bottom:12px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#666}
+.fx-wp-page .fx-wp-progress-layout{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1fr);gap:clamp(30px,5vw,64px);align-items:center}
+.fx-wp-page .fx-wp-progress-text p:not(.fx-wp-eyebrow){margin-top:20px;color:var(--muted)}
+.fx-wp-page .fx-wp-feature-note{border-left:3px solid var(--blue);padding:14px 18px;background:#fff;font-size:15px}
+.fx-wp-page .fx-wp-light .fx-wp-feature-note{background:#fff}
+.fx-wp-page .fx-wp-section:not(.fx-wp-light) .fx-wp-feature-note{background:#f9f9f9}
+.fx-wp-page .fx-wp-progress-visual{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:0 16px 44px #050f4008}
+.fx-wp-page .fx-wp-visual-top{display:flex;align-items:start;justify-content:space-between;gap:14px;font-size:18px;font-weight:700}
+.fx-wp-page .fx-wp-visual-top small{display:block;font-size:13px;font-weight:400;color:#666;margin-top:3px}
+.fx-wp-page .fx-wp-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}
+.fx-wp-page .fx-wp-tab{font-size:13px;font-weight:700;min-height:44px;border:1px solid var(--line);border-radius:999px;padding:9px 14px;color:#4c4c4c;background:#fff;cursor:pointer}
+.fx-wp-page .fx-wp-tab[aria-pressed=true]{color:var(--blue);background:var(--pale);border-color:#b1bdff}
+.fx-wp-page .fx-wp-tab:disabled{cursor:default}
+.fx-wp-page .fx-wp-chart-heading{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-top:22px;font-size:14px}
+.fx-wp-page .fx-wp-chart-heading strong{font-size:25px;color:var(--blue);letter-spacing:-.025em}
+.fx-wp-page .fx-wp-chart-heading strong.fx-wp-flat{color:#4c4c4c}
+.fx-wp-page .fx-wp-chart-heading strong small{font-size:14px;font-weight:500;color:var(--muted)}
+.fx-wp-page .fx-wp-chart{display:block;width:100%;height:auto;margin-top:5px;font-family:var(--font)}
+.fx-wp-page .fx-wp-chart .fx-wp-axis{font-size:12px;fill:#666}
+.fx-wp-page .fx-wp-chart .fx-wp-gridline{stroke:#e5e5e5;stroke-width:1}
+.fx-wp-page .fx-wp-chart .fx-wp-line{stroke:var(--blue);stroke-width:3;fill:none}
+.fx-wp-page .fx-wp-chart .fx-wp-line-grey{stroke:#8a8a8a;stroke-width:3;fill:none}
+.fx-wp-page .fx-wp-chart .fx-wp-point{fill:var(--blue);stroke:#fff;stroke-width:3}
+.fx-wp-page .fx-wp-chart .fx-wp-point-grey{fill:#8a8a8a;stroke:#fff;stroke-width:3}
+.fx-wp-page .fx-wp-chart .fx-wp-value{font-size:17px;fill:var(--ink);font-weight:700}
+.fx-wp-page .fx-wp-chart .fx-wp-date{font-size:12px;fill:#666}
+.fx-wp-page .fx-wp-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:36px}
+.fx-wp-page .fx-wp-outputs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:36px}
+.fx-wp-page .fx-wp-output{padding:26px;border:1px solid var(--line);border-radius:15px;background:#fff}
+.fx-wp-page .fx-wp-output .fx-wp-output-label{display:block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:12px}
+.fx-wp-page .fx-wp-output p{margin-top:12px;color:var(--muted);font-size:16px}
+.fx-wp-page .fx-wp-closing{margin-top:24px;max-width:80ch;color:var(--muted);font-size:16px}
+.fx-wp-page .fx-wp-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:36px 0 0;padding:0;list-style:none;counter-reset:fxstep}
+.fx-wp-page .fx-wp-steps li{padding:28px;border:1px solid var(--line);border-radius:15px;background:#fff;counter-increment:fxstep}
+.fx-wp-page .fx-wp-steps li:before{content:'0' counter(fxstep);display:block;color:var(--blue);font-weight:900;font-size:15px;margin-bottom:18px}
+.fx-wp-page .fx-wp-steps p{margin-top:12px;color:var(--muted);font-size:16px}
+.fx-wp-page .fx-wp-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:15px;margin-top:36px;background:#fff}
+.fx-wp-page .fx-wp-table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.5}
+.fx-wp-page .fx-wp-table :is(th,td){text-align:left;vertical-align:top;padding:19px 16px;border-bottom:1px solid var(--line)}
+.fx-wp-page .fx-wp-table tr:last-child :is(th,td){border-bottom:0}
+.fx-wp-page .fx-wp-table thead th{font-size:13px;background:#f9f9f9}
+.fx-wp-page .fx-wp-table thead th:nth-child(2){color:var(--blue)}
+.fx-wp-page .fx-wp-table tbody td:nth-child(2){background:var(--pale)}
+.fx-wp-page .fx-wp-table tbody th{font-size:13px;width:15%}
+.fx-wp-page .fx-wp-comparison-cards{display:none;margin-top:28px;gap:18px}
+.fx-wp-page .fx-wp-comparison-card{border:1px solid var(--line);border-radius:15px;padding:24px;background:#fff}
+.fx-wp-page .fx-wp-featured{border-color:#b1bdff;background:var(--pale)}
+.fx-wp-page .fx-wp-featured h3{color:var(--blue)}
+.fx-wp-page .fx-wp-comparison-card dl{margin:20px 0 0}
+.fx-wp-page .fx-wp-comparison-card dt{font-size:12px;font-weight:700;color:#666;margin-top:15px}
+.fx-wp-page .fx-wp-comparison-card dd{font-size:16px;margin:4px 0 0}
+.fx-wp-page .fx-wp-figs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px;margin-top:36px}
+.fx-wp-page .fx-wp-figs>div{border-top:1px solid #ffffff40;padding-top:24px}
+.fx-wp-page .fx-wp-figs b{display:block;font-size:clamp(44px,5vw,64px);line-height:1;letter-spacing:-.03em}
+.fx-wp-page .fx-wp-figs span{display:block;max-width:42ch;color:#d8deff;margin-top:12px;font-size:16px}
+.fx-wp-page .fx-wp-proof-note{margin-top:26px;padding:18px 22px;background:#ffffff0e;border-left:3px solid #8a9cff;color:#d8deff;font-size:15px}
+.fx-wp-page .fx-wp-data{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:36px 0 0;padding:0;list-style:none}
+.fx-wp-page .fx-wp-data li{padding:22px;border:1px solid #ffffff26;border-radius:15px;background:#ffffff08;font-size:15px}
+.fx-wp-page .fx-wp-data strong{display:block;margin-bottom:8px;font-size:16px}
+.fx-wp-page .fx-wp-data span{color:#d8deff}
+.fx-wp-page .fx-wp-pilot{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(30px,5vw,64px);align-items:start}
+.fx-wp-page .fx-wp-price{border:1px solid var(--line);border-radius:15px;background:#f9f9f9;padding:26px;margin-top:28px}
+.fx-wp-page .fx-wp-price>p+p{margin-top:14px}
+.fx-wp-page .fx-wp-price b{font-size:20px}
+.fx-wp-page .fx-wp-price small{display:block;margin-top:18px;color:#666;font-size:13px}
+.fx-wp-page .fx-wp-steps-v{list-style:none;margin:8px 0 0;padding:0;counter-reset:fxpilot}
+.fx-wp-page .fx-wp-steps-v li{position:relative;padding:0 0 27px 56px;counter-increment:fxpilot}
+.fx-wp-page .fx-wp-steps-v li:before{content:counter(fxpilot);position:absolute;left:0;top:0;width:36px;height:36px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;display:grid;place-items:center}
+.fx-wp-page .fx-wp-steps-v p{color:var(--muted);font-size:16px;margin-top:8px}
+.fx-wp-page .fx-wp-out{margin:12px 0 0;padding:0;list-style:none}
+.fx-wp-page .fx-wp-out li{padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
+.fx-wp-page .fx-wp-faq{border-top:1px solid #d1d1d1;margin-top:36px}
+.fx-wp-page .fx-wp-faq details{border-bottom:1px solid #d1d1d1}
+.fx-wp-page .fx-wp-faq summary{display:flex;justify-content:space-between;align-items:baseline;gap:22px;list-style:none;cursor:pointer;padding:22px 0;font-size:20px;font-weight:700;line-height:1.4;min-height:48px}
+.fx-wp-page .fx-wp-faq summary::-webkit-details-marker{display:none}
+.fx-wp-page .fx-wp-faq summary:after{content:'+';font-size:25px;color:var(--blue);flex-shrink:0}
+.fx-wp-page .fx-wp-faq details[open] summary:after{content:'−'}
+.fx-wp-page .fx-wp-answer{max-width:80ch;margin:0 0 24px;color:var(--muted);font-size:16px}
+.fx-wp-page .fx-wp-cta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(30px,5vw,64px);align-items:start}
+.fx-wp-page .fx-wp-demo-list{margin:26px 0 0;padding:0;list-style:none;color:#d8deff}
+.fx-wp-page .fx-wp-demo-list li{padding:12px 0;border-top:1px solid #ffffff26;font-size:16px}
+.fx-wp-page .fx-wp-related{margin-top:30px}
+.fx-wp-page .fx-wp-related p{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#b1bdff}
+.fx-wp-page .fx-wp-related ul{margin:10px 0 0;padding:0;list-style:none}
+.fx-wp-page .fx-wp-related li{padding:9px 0;font-size:16px}
+.fx-wp-page .fx-wp-related a{font-weight:700}
+.fx-wp-page .fx-wp-form{padding:28px;border-radius:20px;color:var(--ink);background:#fff;min-width:0}
+.fx-wp-page .fx-wp-form h3{font-size:24px}
+.fx-wp-page .fx-wp-form>p{margin-top:12px;color:var(--muted);font-size:14px}
+.fx-wp-page .fx-wp-form a{color:var(--blue)}
+.fx-wp-page .fx-wp-form-host{margin-top:22px;min-width:0}
+.fx-wp-page .fx-wp-form-host iframe{width:100%!important;max-width:100%;border:0}
+.fx-wp-page .fx-wp-form-host :is(input,select,textarea){font-family:var(--font);max-width:100%}
+.fx-wp-page .fx-wp-form-fallback{border-top:1px solid var(--line);padding-top:18px;margin-top:20px;font-size:13px}
+.fx-wp-page .fx-wp-form-fallback a{display:inline-flex;align-items:center;min-height:44px;font-weight:700}
+.fx-wp-page .fx-wp-form-status{font-size:14px;color:#666}
+.fx-wp-page .fx-wp-foot{background:var(--navy);color:#d8deff;font-size:13px;border-top:1px solid #ffffff26}
+.fx-wp-page .fx-wp-foot .fx-wp-wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px 30px;padding-top:30px;padding-bottom:30px}
+.fx-wp-page .fx-wp-foot a{color:#d8deff}
+.fx-wp-page .fx-wp-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.fx-wp-page .fx-wp-skip{position:absolute;z-index:100;left:20px;top:10px;transform:translateY(-150%);background:#fff;padding:12px;color:var(--navy);border-radius:5px}
+.fx-wp-page .fx-wp-skip:focus{transform:translateY(0)}
+.fx-wp-page .fx-wp-queue{list-style:none;margin:18px 0 0;padding:0}
+.fx-wp-page .fx-wp-queue li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.fx-wp-page .fx-wp-queue li:last-child{border-bottom:0}
+.fx-wp-page .fx-wp-queue strong{font-size:16px}
+.fx-wp-page .fx-wp-q-meta{grid-column:1;font-size:13px;color:#666}
+.fx-wp-page .fx-wp-status{grid-column:2;grid-row:1/span 2;align-self:center;font-size:12px;font-weight:700;padding:6px 10px;border-radius:999px;white-space:nowrap}
+.fx-wp-page .fx-wp-status-ok{background:#f2f2f2;color:#333}
+.fx-wp-page .fx-wp-status-flag{background:var(--pale);color:var(--blue)}
+.fx-wp-page .fx-wp-legend{display:flex;gap:18px;flex-wrap:wrap;margin-top:6px;font-size:12px;color:#666}
+@media(max-width:1050px){
+ .fx-wp-page .fx-wp-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .fx-wp-page .fx-wp-comparison-table{display:none}
+ .fx-wp-page .fx-wp-comparison-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:900px){
+ .fx-wp-page :is(.fx-wp-hero-grid,.fx-wp-progress-layout,.fx-wp-pilot,.fx-wp-cta){grid-template-columns:1fr}
+ .fx-wp-page .fx-wp-hero-grid{align-items:start}
+ .fx-wp-page h1{max-width:27ch}
+ .fx-wp-page .fx-wp-record{max-width:560px;width:100%}
+ .fx-wp-page .fx-wp-progress-visual{max-width:650px;width:100%}
+ .fx-wp-page .fx-wp-strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .fx-wp-page .fx-wp-steps{grid-template-columns:1fr}
+ .fx-wp-page .fx-wp-steps li{padding:24px}
+ .fx-wp-page .fx-wp-nav>a:not(.fx-wp-btn){display:none}
+}
+@media(max-width:600px){
+ .fx-wp-page .fx-wp-queue li{grid-template-columns:1fr}
+ .fx-wp-page .fx-wp-status{grid-column:1;grid-row:auto;justify-self:start;margin-top:6px;white-space:normal}
+ .fx-wp-page{font-size:16px}
+ .fx-wp-page .fx-wp-chrome .fx-wp-wrap{min-height:68px;gap:12px}
+ .fx-wp-page .fx-wp-chrome .fx-wp-btn{padding:12px 16px;min-height:44px;font-size:14px}
+ .fx-wp-page .fx-wp-logo{font-size:19px}
+ .fx-wp-page .fx-wp-hero-grid{padding-top:30px}
+ .fx-wp-page .fx-wp-lead{font-size:18px}
+ .fx-wp-page :is(.fx-wp-cards,.fx-wp-stats,.fx-wp-outputs,.fx-wp-comparison-cards,.fx-wp-figs,.fx-wp-data){grid-template-columns:1fr}
+ .fx-wp-page :is(.fx-wp-record,.fx-wp-progress-visual,.fx-wp-form){padding:20px}
+ .fx-wp-page .fx-wp-record-list dd{font-size:20px}
+ .fx-wp-page .fx-wp-chart-heading{align-items:start;flex-direction:column;gap:4px}
+ .fx-wp-page .fx-wp-chart-heading strong{font-size:22px}
+ .fx-wp-page .fx-wp-faq summary{font-size:18px}
+ .fx-wp-page .fx-wp-strip>div{padding:19px 16px}
+ .fx-wp-page .fx-wp-strip b{font-size:22px}
+}
+@media(max-width:360px){
+ .fx-wp-page .fx-wp-strip{grid-template-columns:1fr}
+ .fx-wp-page .fx-wp-record-head,.fx-wp-page .fx-wp-visual-top{flex-wrap:wrap}
+}
+@media(prefers-reduced-motion:reduce){.fx-wp-page *{transition:none!important}}
+</style>
+</head>
+<body style="margin:0">
+
+<div class="fx-wp-page">
+<a class="fx-wp-skip" href="#main">Skip to content</a>
+<header class="fx-wp-chrome" data-prototype-chrome="header">
+ <div class="fx-wp-wrap">
+  <a class="fx-wp-logo" href="https://3dlook.ai/" aria-label="3DLOOK home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 22 20H2z" fill="#fff"/></svg>3DLOOK</a>
+  <nav class="fx-wp-nav" aria-label="Page navigation"><a href="#how-it-works">How it works</a><a href="#pricing">Pricing</a><a href="#faq">Questions</a><a class="fx-wp-btn fx-wp-btn-white" href="#demo" data-cta="header">Book a demo</a></nav>
+ </div>
+</header>
+<main id="main">
+<section class="fx-wp-navy fx-wp-hero" aria-labelledby="hero-heading">
+ <div class="fx-wp-wrap">
+  <nav class="fx-wp-crumbs" aria-label="Breadcrumb"><a href="https://3dlook.ai/">Home</a><span aria-hidden="true">/</span><span aria-current="page">FitXpress for wellness platforms</span></nav>
+  <div class="fx-wp-hero-grid">
+   <div>
+    <p class="fx-wp-eyebrow">Wellness apps, coaching and employee wellness</p>
+    <h1 id="hero-heading">FitXpress for wellness platforms: show members the body progress their scale misses</h1>
+    <p class="fx-wp-lead">Members scan with two photos on their own phone at baseline and at each check-in. Your platform receives 80+ body measurements, body composition estimates and a 3D body model in under 45 seconds, dated for a side-by-side progress view.</p>
+    <div class="fx-wp-actions"><a class="fx-wp-btn fx-wp-btn-white" href="#demo" data-cta="hero">Book a demo <span aria-hidden="true">↗</span></a><a class="fx-wp-action-link" href="#progress">See the progress view <span aria-hidden="true">↓</span></a></div>
+    <p class="fx-wp-micro">Guided capture on a phone, a sample member record and the integration options for your app.</p>
+   </div>
+   <aside class="fx-wp-record" aria-label="Illustrative member progress record">
+    <div class="fx-wp-record-head"><strong>Member 20418</strong><span class="fx-wp-example">Illustrative data</span></div>
+    <div class="fx-wp-dates"><div><strong>12 January 2027</strong>Baseline scan</div><div><strong>9 March 2027</strong>Week 8 scan</div></div>
+    <dl class="fx-wp-record-list">
+     <div><dt>Entered weight <span class="fx-wp-flat">−0.3 kg</span></dt><dd><span>74.2 kg</span><span aria-hidden="true">→</span><strong>73.9 kg</strong></dd></div>
+     <div><dt>Waist measurement <span>−3.4 cm</span></dt><dd><span>84.0 cm</span><span aria-hidden="true">→</span><strong>80.6 cm</strong></dd></div>
+     <div><dt>Hip measurement <span>−1.3 cm</span></dt><dd><span>102.5 cm</span><span aria-hidden="true">→</span><strong>101.2 cm</strong></dd></div>
+     <div><dt>Body-fat estimate <span>−1.1 percentage points</span></dt><dd><span>31.2%</span><span aria-hidden="true">→</span><strong>30.1%</strong></dd></div>
+    </dl>
+    <p class="fx-wp-flag">Weight is almost unchanged. The waist measurement is 3.4 cm smaller than at baseline.</p>
+    <p class="fx-wp-disclosure">Illustrative values, not member results. Body composition values are estimates. Your platform decides which results members see.</p>
+   </aside>
+  </div>
+  <div class="fx-wp-strip">
+   <div><b>2 photos</b><span>guided front and side capture on the member's phone</span></div>
+   <div><b>Under 45 sec</b><span>from photos to a structured record</span></div>
+   <div><b>&lt; 1 cm</b><span>typical scan-to-scan difference for most evaluated measurements</span></div>
+   <div><b>From $1,000</b><span>per month, with guided implementation support</span></div>
+  </div>
+ </div>
+</section>
+<section class="fx-wp-trusted" aria-label="About 3DLOOK">
+  <div class="fx-wp-wrap fx-wp-trusted-inner">
+    <p>100+ clients have used 3DLOOK body scanning since 2016, across digital health, weight management and apparel.</p>
+  </div>
+</section>
+<section class="fx-wp-section fx-wp-light" id="problem" aria-labelledby="problem-heading">
+ <div class="fx-wp-wrap">
+  <p class="fx-wp-eyebrow">The problem</p>
+  <h2 id="problem-heading">Scale weight often stays flat while the member's body changes</h2>
+  <p class="fx-wp-intro">Scale weight can hold steady for weeks while waist, hip and body-fat change. When weight is the only physical signal, the change a member makes stays outside the progress view.</p>
+  <ul class="fx-wp-cards">
+   <li><h3>The scale hides change</h3><p>A member who loses fat and holds lean mass sees a flat number. The app has nothing else to show at the check-in.</p></li>
+   <li><h3>Progress photos do not compare</h3><p>Camera-roll photos differ in angle, distance and lighting. Neither the member nor the coach can read a change from them with confidence.</p></li>
+   <li><h3>Personalization stops at the survey</h3><p>Content and coaching prompts run on a stated goal and a self-reported weight. Members on the same goal receive the same journey.</p></li>
+   <li><span class="fx-wp-tag">Employee wellness</span><h3>Program reports rest on self-report</h3><p>Employer clients ask what changed in the program. Self-reported weigh-ins give the platform little to report.</p></li>
+  </ul>
+ </div>
+</section>
+<section class="fx-wp-section" aria-labelledby="benefits-heading">
+ <div class="fx-wp-wrap">
+  <p class="fx-wp-eyebrow">For product, growth and coaching teams</p>
+  <h2 id="benefits-heading">Add a measured body record to the wellness journey you already run</h2>
+  <p class="fx-wp-intro">One guided scan at baseline and at each check-in returns the same fields every time. Your platform decides what members see and what happens next.</p>
+  <ul class="fx-wp-cards">
+   <li><h3>A progress view beyond weight</h3><p>Show waist, hip and body-fat change next to scale weight, with the date of each scan.</p></li>
+   <li><h3>Results tied to the member's goal</h3><p>A waist goal shows the waist. A body composition goal shows fat mass and lean mass estimates. Other outputs stay in secondary views.</p></li>
+   <li><h3>A shared reference for coaching</h3><p>The coach reviews the same dated comparison the member sees, and the check-in conversation starts from what changed.</p></li>
+   <li><h3>A physical trend for personalization</h3><p>Each scan adds a dated record to the member profile. Your rules combine it with goals, habits and activity to select content.</p></li>
+  </ul>
+ </div>
+</section>
+<section class="fx-wp-section fx-wp-light" id="progress" aria-labelledby="progress-heading">
+ <div class="fx-wp-wrap fx-wp-progress-layout">
+  <div class="fx-wp-progress-text">
+   <p class="fx-wp-eyebrow">Progress view</p>
+   <h2 id="progress-heading">Show members where their body changed between check-ins</h2>
+   <p>Each follow-up scan is compared with the baseline. The progress view shows the measurements that moved, the direction of change and the date of each scan.</p>
+   <p>Body-fat percentage is shown as a dated trend with a plain-language explanation, which reduces the risk of overinterpreting a single value.</p>
+   <p class="fx-wp-feature-note"><strong>3D Body Progress on Pro.</strong> Place the baseline and current 3D body models side by side, with the measurements that changed highlighted.</p>
+   <div class="fx-wp-actions"><a class="fx-wp-btn fx-wp-btn-blue" href="#demo" data-cta="progress">See the progress view in the demo</a></div>
+  </div>
+  <figure class="fx-wp-progress-visual">
+   <div class="fx-wp-visual-top"><div>Member 20418<small>Baseline to week 12, four check-ins</small></div><span class="fx-wp-example">Illustrative view</span></div>
+   <div class="fx-wp-tabs" role="group" aria-label="Choose the measurement to view"><button class="fx-wp-tab" type="button" aria-pressed="true" data-progress-metric="waist" aria-controls="waist-panel weight-panel" disabled>Waist measurement</button><button class="fx-wp-tab" type="button" aria-pressed="false" data-progress-metric="weight" aria-controls="waist-panel weight-panel" disabled>Entered weight</button></div>
+   <div id="waist-panel" class="fx-wp-chart-panel">
+    <div class="fx-wp-chart-heading"><span>Waist measurement</span><strong>−4.5 <small>cm from baseline at week 12</small></strong></div>
+    <svg class="fx-wp-chart" viewBox="0 0 440 240" role="img" aria-labelledby="waist-chart-title waist-chart-desc">
+     <title id="waist-chart-title">Illustrative waist measurement across four scans</title><desc id="waist-chart-desc">Waist measurement is 84.0 centimeters at baseline on 12 January, 82.4 on 9 February, 80.6 on 9 March and 79.5 on 6 April. The vertical axis spans 78 to 90 centimeters.</desc>
+     <g class="fx-wp-gridline"><path d="M50 38H412M50 94H412M50 150H412M50 206H412"/></g>
+     <g class="fx-wp-axis"><text x="36" y="42" text-anchor="end">90</text><text x="36" y="98" text-anchor="end">86</text><text x="36" y="154" text-anchor="end">82</text><text x="36" y="210" text-anchor="end">78</text><text x="14" y="18">cm</text></g>
+     <path class="fx-wp-line" d="M92 122L196 144.4L300 169.6L396 185"/>
+     <circle class="fx-wp-point" cx="92" cy="122" r="6"/><circle class="fx-wp-point" cx="196" cy="144.4" r="6"/><circle class="fx-wp-point" cx="300" cy="169.6" r="6"/><circle class="fx-wp-point" cx="396" cy="185" r="6"/>
+     <g class="fx-wp-value"><text x="92" y="102" text-anchor="middle">84.0</text><text x="196" y="124" text-anchor="middle">82.4</text><text x="300" y="150" text-anchor="middle">80.6</text><text x="396" y="165" text-anchor="middle">79.5</text></g>
+     <g class="fx-wp-date"><text x="92" y="232" text-anchor="middle">12 Jan</text><text x="196" y="232" text-anchor="middle">9 Feb</text><text x="300" y="232" text-anchor="middle">9 Mar</text><text x="396" y="232" text-anchor="middle">6 Apr</text></g>
+    </svg>
+   </div>
+   <div id="weight-panel" class="fx-wp-chart-panel" hidden>
+    <div class="fx-wp-chart-heading"><span>Entered weight</span><strong class="fx-wp-flat">−0.4 <small>kg from baseline at week 12</small></strong></div>
+    <svg class="fx-wp-chart" viewBox="0 0 440 240" role="img" aria-labelledby="weight-chart-title weight-chart-desc">
+     <title id="weight-chart-title">Illustrative entered weight across four scans</title><desc id="weight-chart-desc">Entered weight is 74.2 kilograms at baseline on 12 January, 74.4 on 9 February, 73.9 on 9 March and 73.8 on 6 April. The vertical axis spans 70 to 82 kilograms.</desc>
+     <g class="fx-wp-gridline"><path d="M50 38H412M50 94H412M50 150H412M50 206H412"/></g>
+     <g class="fx-wp-axis"><text x="36" y="42" text-anchor="end">82</text><text x="36" y="98" text-anchor="end">78</text><text x="36" y="154" text-anchor="end">74</text><text x="36" y="210" text-anchor="end">70</text><text x="14" y="18">kg</text></g>
+     <path class="fx-wp-line-grey" d="M92 147.2L196 144.4L300 151.4L396 152.8"/>
+     <circle class="fx-wp-point-grey" cx="92" cy="147.2" r="6"/><circle class="fx-wp-point-grey" cx="196" cy="144.4" r="6"/><circle class="fx-wp-point-grey" cx="300" cy="151.4" r="6"/><circle class="fx-wp-point-grey" cx="396" cy="152.8" r="6"/>
+     <g class="fx-wp-value"><text x="92" y="127" text-anchor="middle">74.2</text><text x="196" y="124" text-anchor="middle">74.4</text><text x="300" y="131" text-anchor="middle">73.9</text><text x="396" y="133" text-anchor="middle">73.8</text></g>
+     <g class="fx-wp-date"><text x="92" y="232" text-anchor="middle">12 Jan</text><text x="196" y="232" text-anchor="middle">9 Feb</text><text x="300" y="232" text-anchor="middle">9 Mar</text><text x="396" y="232" text-anchor="middle">6 Apr</text></g>
+    </svg>
+   </div>
+   <p class="fx-wp-legend">Both charts span 12 units on the vertical axis, which keeps the two lines comparable.</p>
+   <figcaption class="fx-wp-disclosure">Illustrative interface and values, not member results. Your platform designs the progress view and decides which outputs members see.</figcaption>
+   <p class="fx-wp-sr" id="progress-status" aria-live="polite" aria-atomic="true"></p>
+  </figure>
+ </div>
+</section>
+<section class="fx-wp-section" id="personalization" aria-labelledby="personalization-heading">
+ <div class="fx-wp-wrap fx-wp-progress-layout">
+  <div class="fx-wp-progress-text">
+   <p class="fx-wp-eyebrow">Personalization and coaching</p>
+   <h2 id="personalization-heading">Connect each scan result to the next step in the member's journey</h2>
+   <p>A comparison is useful when it leads somewhere. Your rules turn the change since baseline into a progress card, an article, a coaching prompt or the next scheduled check-in.</p>
+   <p>In a coached program, the coach opens the same dated comparison the member sees. In an automated program, the comparison selects the content.</p>
+   <p class="fx-wp-feature-note"><strong>Program logic, set by your team.</strong> FitXpress returns the data and capture flags. Your platform owns the rules, the wording members read and the timing of each prompt.</p>
+   <div class="fx-wp-actions"><a class="fx-wp-btn fx-wp-btn-blue" href="#demo" data-cta="personalization">Discuss your member journey</a></div>
+  </div>
+  <figure class="fx-wp-progress-visual">
+   <div class="fx-wp-visual-top"><div>Next-step rules<small>Week 8 check-in</small></div><span class="fx-wp-example">Illustrative rules</span></div>
+   <ul class="fx-wp-queue">
+    <li><strong>Waist down 2 cm or more since baseline</strong><span class="fx-wp-status fx-wp-status-flag">Progress card and article</span><span class="fx-wp-q-meta">Uses the waist measurement from both scans</span></li>
+    <li><strong>Weight flat, waist down</strong><span class="fx-wp-status fx-wp-status-flag">Coach prompt</span><span class="fx-wp-q-meta">Coach explains where the change happened</span></li>
+    <li><strong>No follow-up scan 6 weeks after baseline</strong><span class="fx-wp-status fx-wp-status-ok">Check-in reminder</span><span class="fx-wp-q-meta">Uses the date of the last scan</span></li>
+    <li><strong>Capture flag on the scan</strong><span class="fx-wp-status fx-wp-status-ok">Retake prompt</span><span class="fx-wp-q-meta">Uses the pose and clothing checks returned with the scan</span></li>
+   </ul>
+   <figcaption class="fx-wp-disclosure">Illustrative rules. FitXpress does not set program rules or send messages to members; your platform does.</figcaption>
+  </figure>
+ </div>
+</section>
+<section class="fx-wp-section fx-wp-light" id="record" aria-labelledby="record-heading">
+ <div class="fx-wp-wrap">
+  <p class="fx-wp-eyebrow">Outputs</p>
+  <h2 id="record-heading">The same record format at baseline and at every check-in</h2>
+  <p class="fx-wp-intro">FitXpress returns each scan as a timestamped record through the application programming interface (API). The fields stay the same from scan to scan, and each record is ready to compare with the one before it.</p>
+  <div class="fx-wp-outputs">
+   <article class="fx-wp-output"><span class="fx-wp-output-label">Body measurements</span><h3>80+ body measurements</h3><p>Waist, hip, chest, thigh and other dimensions in centimeters, produced by the same processing at every scan.</p></article>
+   <article class="fx-wp-output"><span class="fx-wp-output-label">Body composition</span><h3>Body composition estimates</h3><p>Body-fat percentage, fat mass and lean mass estimates. Body mass index (BMI) and basal metabolic rate (BMR) are calculated metrics.</p></article>
+   <article class="fx-wp-output"><span class="fx-wp-output-label">3D model</span><h3>3D body model and 3D Body Progress</h3><p>A 3D model reconstructed from each scan. On Pro, compare two scans in a 3D view and show a goal with 3D Goal Visualization.</p></article>
+   <article class="fx-wp-output"><span class="fx-wp-output-label">Capture quality</span><h3>Pose and clothing checks</h3><p>Real-Time Pose Validation and the Clothing Detector correct the capture during the shot. Their results return with each scan for your retake rules.</p></article>
+   <article class="fx-wp-output"><span class="fx-wp-output-label">Comparison</span><h3>Timestamp and scan identifier</h3><p>Each record shows when it was captured. Your platform selects two scan identifiers, and FitXpress returns the comparison between them.</p></article>
+   <article class="fx-wp-output"><span class="fx-wp-output-label">Data delivery</span><h3>Formats for your app and analytics</h3><p>JavaScript Object Notation (JSON) through the API, comma-separated values (CSV) export from the FitXpress Admin Panel and 3D model export.</p></article>
+  </div>
+  <p class="fx-wp-closing">FitXpress is not a medical device. It provides structured body data for wellness and coaching experiences; how results are presented and used stays with your platform.</p>
+  <div class="fx-wp-actions"><a class="fx-wp-btn fx-wp-btn-blue" href="#demo" data-cta="record">See a sample record in the demo</a></div>
+ </div>
+</section>
+<section class="fx-wp-section" id="how-it-works" aria-labelledby="workflow-heading">
+ <div class="fx-wp-wrap">
+  <p class="fx-wp-eyebrow">How it works</p>
+  <h2 id="workflow-heading">Add a two-photo scan to your app's check-in flow</h2>
+  <p class="fx-wp-intro">Your team embeds FitXpress through the API and web and mobile software development kits (SDKs). The capture flow is white-label, and members stay inside your app throughout.</p>
+  <ol class="fx-wp-steps">
+   <li><h3>Baseline scan with your consent screen</h3><p>Your app explains which data is captured, how it is used and how long it is kept. The member then completes the first guided front and side capture.</p></li>
+   <li><h3>Check-ins under the same conditions</h3><p>The member repeats the scan with the same pose and similar conditions. For body-change programs, 4 to 12 weeks between scans is a practical starting range.</p></li>
+   <li><h3>Comparison into the experience</h3><p>Results return through webhook events, with polling as the documented fallback. Your app updates the progress view and triggers the next step.</p></li>
+  </ol>
+  <p class="fx-wp-intro">Native SDKs capture on the device and work offline; processing starts when the photos reach the API. <a href="https://3dlook.ai/technology/">3DLOOK’s mobile body scanning technology</a> explains the capture and processing approach.</p>
+ </div>
+</section>
+<section class="fx-wp-section fx-wp-light" aria-labelledby="compare-heading">
+ <div class="fx-wp-wrap">
+  <p class="fx-wp-eyebrow">Compare approaches</p>
+  <h2 id="compare-heading">Choose the progress signal for each part of the program</h2>
+  <p class="fx-wp-intro">Most wellness apps already collect some body data from members. Each method answers a different question at a different cost to the member.</p>
+  <div class="fx-wp-scroll fx-wp-comparison-table"><table class="fx-wp-table"><caption class="fx-wp-sr">Comparison of progress-tracking methods in a wellness app</caption><thead><tr><th scope="col">Dimension</th><th scope="col">FitXpress</th><th scope="col">Self-reported weigh-ins</th><th scope="col">Progress photos</th><th scope="col">Bioelectrical impedance (BIA) scale</th></tr></thead><tbody><tr><th scope="row">What the platform receives</th><td>80+ body measurements, body composition estimates, a 3D model and a timestamp</td><td>A weight value typed by the member</td><td>Images with no measurements</td><td>Weight and body composition estimates, where the scale connects to the app</td></tr><tr><th scope="row">What the member needs</th><td>A phone and two guided photos</td><td>A bathroom scale</td><td>A phone</td><td>A compatible scale at home</td></tr><tr><th scope="row">Main source of variation</th><td>Capture conditions, clothing and entered height</td><td>Time of day, scale and typing errors</td><td>Angle, distance, lighting and pose</td><td>Hydration, time of day and the device's equation</td></tr><tr><th scope="row">What it shows about change</th><td>Where the body changed, with dated values</td><td>Total weight change</td><td>A visual impression, without values</td><td>Total weight and estimated composition change</td></tr></tbody></table></div>
+  <div class="fx-wp-comparison-cards"><article class="fx-wp-comparison-card fx-wp-featured"><h3>FitXpress</h3><dl><dt>What the platform receives</dt><dd>80+ body measurements, body composition estimates, a 3D model and a timestamp</dd><dt>What the member needs</dt><dd>A phone and two guided photos</dd><dt>Main source of variation</dt><dd>Capture conditions, clothing and entered height</dd><dt>What it shows about change</dt><dd>Where the body changed, with dated values</dd></dl></article><article class="fx-wp-comparison-card"><h3>Self-reported weigh-ins</h3><dl><dt>What the platform receives</dt><dd>A weight value typed by the member</dd><dt>What the member needs</dt><dd>A bathroom scale</dd><dt>Main source of variation</dt><dd>Time of day, scale and typing errors</dd><dt>What it shows about change</dt><dd>Total weight change</dd></dl></article><article class="fx-wp-comparison-card"><h3>Progress photos</h3><dl><dt>What the platform receives</dt><dd>Images with no measurements</dd><dt>What the member needs</dt><dd>A phone</dd><dt>Main source of variation</dt><dd>Angle, distance, lighting and pose</dd><dt>What it shows about change</dt><dd>A visual impression, without values</dd></dl></article><article class="fx-wp-comparison-card"><h3>Bioelectrical impedance (BIA) scale</h3><dl><dt>What the platform receives</dt><dd>Weight and body composition estimates, where the scale connects to the app</dd><dt>What the member needs</dt><dd>A compatible scale at home</dd><dt>Main source of variation</dt><dd>Hydration, time of day and the device's equation</dd><dt>What it shows about change</dt><dd>Total weight and estimated composition change</dd></dl></article></div>
+  <p class="fx-wp-closing">Scale weight stays a useful trend. FitXpress adds measurements next to it, with no extra device for the member.</p>
+ </div>
+</section>
+<section class="fx-wp-section fx-wp-navy" aria-labelledby="proof-heading">
+ <div class="fx-wp-wrap">
+  <p class="fx-wp-eyebrow">Validation and data handling</p>
+  <h2 id="proof-heading">Check repeatability and data handling before the first check-in ships</h2>
+  <p class="fx-wp-intro">A progress view compares each member with themselves. Repeatability decides whether a change between two scans is real or noise. Accuracy against expert manual measurement shows how a single value relates to a tape measure.</p>
+  <div class="fx-wp-figs">
+   <div><b>&lt; 1 cm</b><span>Typical scan-to-scan difference for most evaluated body measurements.</span></div>
+   <div><b>96 to 97%</b><span>Body-measurement accuracy against expert manual measurement, with typical absolute error of 1.5 to 2.0 cm.</span></div>
+   <div><b>0.89 cm</b><span>Waist repeatability across repeated scans.</span></div>
+   <div><b>2.14 cm</b><span>Waist mean absolute error against expert manual measurement, in the same study.</span></div>
+  </div>
+  <p class="fx-wp-proof-note">These figures come from internal validation and have not been peer-reviewed. The validation population covered ages 16 to 78, weights of 38 to 210 kg and heights of 150 to 220 cm, from the US and Europe. Accuracy is not published by body shape or skin tone. Results depend on form-fitting clothing, a completed guided capture and an entered height within 2 cm. Body composition values are estimates. Supporting methodology is available under a non-disclosure agreement (NDA).</p>
+  <p class="fx-wp-more"><a href="https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/">Body scanning accuracy, repeatability and validation methodology</a></p>
+  <ul class="fx-wp-data">
+   <li><strong>Photo retention</strong><span>FitXpress deletes photos immediately after processing or retains them for up to 30 days under a contract-specific policy. Retained photos are blurred, and face obfuscation is applied during capture.</span></li>
+   <li><strong>Member identifiers</strong><span>FitXpress does not receive names or contact details. Scan records use randomly generated identifiers, which your platform maps to member profiles.</span></li>
+   <li><strong>General Data Protection Regulation (GDPR)</strong><span>In most deployments, your platform acts as data controller and 3DLOOK acts as data processor. A data processing agreement (DPA) with Standard Contractual Clauses (SCCs) covers international transfers, with a UK Addendum where UK GDPR applies.</span></li>
+   <li><strong>Hosting</strong><span>FitXpress data is hosted on Amazon Web Services (AWS), primarily in the US-West-2 region and partly in the US-East-1 region.</span></li>
+   <li><strong>App release requirements</strong><span>Your app's privacy policy, consent screen and health and fitness entries in App Store privacy details and the Google Play Data safety form cover the scan. Your team owns that wording.</span></li>
+   <li><strong>Encryption and model training</strong><span>Data is encrypted in transit with Transport Layer Security (TLS) and at rest. 3DLOOK does not use production customer data to train its models without the customer’s explicit, documented authorization.</span></li>
+   <li><strong>Deletion</strong><span>Your platform requests deletion of specific scan outputs by sending their scan identifiers to 3DLOOK.</span></li>
+   <li><strong>Regulatory status</strong><span>An independent regulatory assessment concluded that FitXpress does not meet the medical-device definition under the UK Medical Devices Regulations 2002 (UK MDR) or the EU Medical Devices Regulation (EU MDR) for its current intended purpose. FitXpress is not cleared, authorized or approved by the US Food and Drug Administration (FDA).</span></li>
+  </ul>
+  <p class="fx-wp-more">The <a href="https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/">FitXpress data, privacy, security and regulatory frequently asked questions</a> cover hosting, deletion, SOC 2 and FDA information. Privacy contact: <a href="mailto:privacy@3dlook.me">privacy@3dlook.me</a>.</p>
+ </div>
+</section>
+<section class="fx-wp-section" id="pricing" aria-labelledby="pilot-heading">
+ <div class="fx-wp-wrap fx-wp-pilot">
+  <div>
+   <p class="fx-wp-eyebrow">Pilot and pricing</p>
+   <h2 id="pilot-heading">Start with one check-in cycle for one member cohort</h2>
+   <p class="fx-wp-intro">Run a baseline scan and one follow-up with a defined group of members. Agree the measures with product, growth and coaching before launch, and review them together at the end.</p>
+   <div class="fx-wp-price">
+    <p><b>Starter</b><br>$1,000 per month for up to 500 scans.</p>
+    <p><b>Pro</b><br>$1,500 per month for up to 1,000 scans, including 3D Body Progress and 3D Goal Visualization.</p>
+    <p>Both plans include API access, web and mobile SDKs and guided implementation support. Personalized plans cover higher scan volumes, a multilingual guided capture flow and dedicated customer support.</p>
+    <small>Monthly plan pricing. Scope and implementation requirements are agreed with your team.</small>
+    <p class="fx-wp-more"><a href="https://3dlook.ai/pricing/">View FitXpress plans and pricing <span aria-hidden="true">↗</span></a></p>
+   </div>
+  </div>
+  <div>
+   <ol class="fx-wp-steps-v">
+    <li><h3>Review the journey</h3><p>The demo covers guided capture on a phone, a sample member record and where the scan fits in your app's check-in flow.</p></li>
+    <li><h3>Design the pilot</h3><p>Choose the cohort, the check-in interval, the results members see and the next-step rules. Agree the measures before launch.</p></li>
+    <li><h3>Review the results</h3><p>Read the agreed measures with your team and decide the scope of the rollout.</p></li>
+   </ol>
+   <h3>Measures to agree for the pilot</h3>
+   <ul class="fx-wp-out"><li>Scan completion rate at baseline</li><li>Retake rate</li><li>Second-scan rate at the follow-up check-in</li><li>Use of the progress view</li><li>Member understanding of the displayed results</li></ul>
+   <div class="fx-wp-actions"><a class="fx-wp-btn fx-wp-btn-blue" href="#demo" data-cta="pilot">Discuss a pilot</a></div>
+  </div>
+ </div>
+</section>
+<section class="fx-wp-section fx-wp-light" id="faq" aria-labelledby="faq-heading">
+ <div class="fx-wp-wrap"><p class="fx-wp-eyebrow">Frequently asked questions</p><h2 id="faq-heading">Questions from wellness product, coaching and data teams</h2><div class="fx-wp-faq"><details open><summary>How often should members scan?</summary><p class="fx-wp-answer">For body-change programs, 4 to 12 weeks between scans is a practical starting range, adjusted to the program goal and the expected rate of change. Consistent capture conditions matter more than frequency, because repeatability decides whether the change between two scans is real.</p></details>
+<details><summary>Which results should members see?</summary><p class="fx-wp-answer">Your platform decides. A focused progress view shows the measurements tied to the member's goal, for example the waist for a waist goal or fat mass and lean mass estimates for a body composition goal. Labels state which outputs are measurements and which are estimates.</p></details>
+<details><summary>Can members use their own phones?</summary><p class="fx-wp-answer">Yes. Capture runs on iOS 15 or later and on Android phones, including older models, which may show a lower frame rate during capture. No other equipment is needed. The member stands for the scan, and the current dataset does not support wheelchair users or amputees. Two gender options are available. Height, weight and gender are required inputs, and an entered height more than 2 cm off affects results.</p></details>
+<details><summary>Does FitXpress measure muscle?</summary><p class="fx-wp-answer">FitXpress reports fat mass and lean mass estimates. Lean mass includes organs, bone and water along with muscle; it is not a direct measurement of skeletal muscle.</p></details>
+<details><summary>Does 3DLOOK know which scans belong to which member?</summary><p class="fx-wp-answer">No. Scan records carry randomly generated identifiers. Your platform links them to member profiles and selects the two scans to compare, and FitXpress returns the comparison between those records.</p></details>
+<details><summary>Can we use scan results for wellness rewards or incentives?</summary><p class="fx-wp-answer">Programs that connect body data to rewards need additional governance, a privacy review and clear program rules. Reward and eligibility determinations stay with the program administrator. <a href="https://3dlook.ai/fitxpress/for-health-plans-and-employer-wellness/">FitXpress for health plans and employer wellness</a> covers remote verification for incentive programs.</p></details>
+<details><summary>Who handles member consent and privacy notices?</summary><p class="fx-wp-answer">In most deployments, your platform is the data controller. Your team provides the privacy notice, sets the lawful basis, obtains consent where the workflow requires it and defines retention. 3DLOOK processes scan data on your behalf under the DPA. Where the Health Insurance Portability and Accountability Act (HIPAA) applies to your deployment, 3DLOOK can act as a business associate under an executed Business Associate Agreement (BAA).</p></details>
+<details><summary>How does scan data reach our app?</summary><p class="fx-wp-answer">Results return through the API as JSON, delivered through webhook events with polling as the documented fallback. Webhooks currently have no automatic retries or signature verification, and polling is the recommended backup. The FitXpress Admin Panel provides a central view of scan results and CSV export.</p></details>
+<details><summary>Is FitXpress a medical device?</summary><p class="fx-wp-answer">No. An independent regulatory assessment concluded that FitXpress does not meet the medical-device definition under UK MDR or EU MDR for its current intended purpose. FitXpress is not cleared, authorized or approved by the FDA. It does not diagnose conditions or make health decisions.</p></details></div></div>
+</section>
+<section class="fx-wp-section fx-wp-navy" id="demo" aria-labelledby="demo-heading">
+ <div class="fx-wp-wrap fx-wp-cta">
+  <div>
+   <p class="fx-wp-eyebrow">Book a demo</p>
+   <h2 id="demo-heading">See FitXpress in your member journey</h2>
+   <p class="fx-wp-intro">Review guided capture, a sample member record and the integration options for your app's check-in flow.</p>
+   <ul class="fx-wp-demo-list"><li>Guided front and side capture on a phone</li><li>A sample baseline and follow-up comparison</li><li>API, SDK and white-label options for your app</li></ul>
+   <div class="fx-wp-related">
+    <p>Not ready to talk</p>
+    <ul>
+     <!-- [PLACEHOLDER] Replace href with the published URL of "AI Body Data for Wellness Platforms: Progress Tracking, Personalization, and Engagement". -->
+     <li><a href="https://3dlook.ai/content-hub/">AI body data for wellness platforms</a></li>
+     <li><a href="https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/">How to evaluate mobile body scanning accuracy</a></li>
+     <li><a href="https://3dlook.ai/fitxpress/for-connected-fitness/">FitXpress for connected fitness</a></li>
+     <li><a href="https://3dlook.ai/fitxpress/for-health-plans-and-employer-wellness/">FitXpress for health plans and employer wellness</a></li>
+    </ul>
+   </div>
+  </div>
+  <div class="fx-wp-form">
+   <h3>Request a FitXpress demo</h3>
+   <p>Share your contact details and your platform's requirements with 3DLOOK.</p>
+   <div class="fx-wp-form-host" id="fx-wp-demo-form"><p class="fx-wp-form-status" id="fx-wp-form-status" role="status">Loading the demo request form…</p><noscript><p>Request your demo through the 3DLOOK contact-page link.</p></noscript></div>
+   <div class="fx-wp-form-fallback"><p>You can also request a demo through the contact page.</p><a href="https://3dlook.ai/contact-us/" target="_blank" rel="noopener" data-cta="demo-fallback">Open the 3DLOOK demo request page <span aria-hidden="true">↗</span></a></div>
+   <p>Contact details are processed as described in the <a href="https://3dlook.ai/privacy-policy/">3DLOOK privacy policy</a>.</p>
+  </div>
+ </div>
+</section>
+</main>
+<footer class="fx-wp-foot" data-prototype-chrome="footer"><div class="fx-wp-wrap"><span>© 2026 3DLOOK · FitXpress for wellness platforms. FitXpress is not a medical device.</span><span>Procurement and security documentation: <a href="mailto:legal@3dlook.me">legal@3dlook.me</a></span></div></footer>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://3dlook.ai/fitxpress/for-wellness-platforms/#webpage",
+      "url": "https://3dlook.ai/fitxpress/for-wellness-platforms/",
+      "name": "Body Progress Tracking for Wellness Platforms | FitXpress",
+      "description": "Two smartphone photos give your wellness app 80+ body measurements and body composition estimates, dated for scan-to-scan progress comparison.",
+      "inLanguage": "en",
+      "isPartOf": {"@id": "https://3dlook.ai/#website"},
+      "about": {"@id": "https://3dlook.ai/fitxpress/for-wellness-platforms/#service"},
+      "mainEntity": {"@id": "https://3dlook.ai/fitxpress/for-wellness-platforms/#service"},
+      "hasPart": {"@id": "https://3dlook.ai/fitxpress/for-wellness-platforms/#faq"},
+      "breadcrumb": {"@id": "https://3dlook.ai/fitxpress/for-wellness-platforms/#breadcrumb"}
+    },
+    {
+      "@type": "Service",
+      "@id": "https://3dlook.ai/fitxpress/for-wellness-platforms/#service",
+      "name": "FitXpress for wellness platforms",
+      "url": "https://3dlook.ai/fitxpress/for-wellness-platforms/",
+      "provider": {"@id": "https://3dlook.ai/#organization"},
+      "brand": {"@type": "Brand", "name": "FitXpress"},
+      "serviceType": "Body progress tracking for wellness apps, lifestyle coaching and employee wellness platforms",
+      "description": "FitXpress provides two-photo body scanning through an application programming interface and software development kits, returning 80+ body measurements, body composition estimates, a 3D body model, capture-quality checks, scan identifiers and timestamps for scan-to-scan progress comparison inside wellness apps.",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Consumer wellness apps, lifestyle and nutrition coaching platforms, habit-building products, digital well-being ecosystems and employee wellness platforms"
+      },
+      "areaServed": ["US", "GB", "CA", "DE", "AE", "AU", "EU"],
+      "serviceOutput": [
+        {"@type": "Thing", "name": "80+ body measurements"},
+        {"@type": "Thing", "name": "Body composition estimates"},
+        {"@type": "Thing", "name": "Calculated metrics"},
+        {"@type": "Thing", "name": "Capture-quality checks"},
+        {"@type": "Thing", "name": "Timestamps and scan identifiers"},
+        {"@type": "Thing", "name": "3D body model"},
+        {"@type": "Thing", "name": "3D Body Progress (Pro plan)"}
+      ]
+    },
+    {"@type": "Organization", "@id": "https://3dlook.ai/#organization", "name": "3DLOOK", "url": "https://3dlook.ai/"},
+    {
+      "@type": "FAQPage",
+      "@id": "https://3dlook.ai/fitxpress/for-wellness-platforms/#faq",
+      "url": "https://3dlook.ai/fitxpress/for-wellness-platforms/",
+      "name": "Questions from wellness product, coaching and data teams",
+      "mainEntity": [
+        {"@type": "Question", "name": "How often should members scan?", "acceptedAnswer": {"@type": "Answer", "text": "For body-change programs, 4 to 12 weeks between scans is a practical starting range, adjusted to the program goal and the expected rate of change. Consistent capture conditions matter more than frequency, because repeatability decides whether the change between two scans is real."}},
+        {"@type": "Question", "name": "Which results should members see?", "acceptedAnswer": {"@type": "Answer", "text": "Your platform decides. A focused progress view shows the measurements tied to the member's goal, for example the waist for a waist goal or fat mass and lean mass estimates for a body composition goal. Labels state which outputs are measurements and which are estimates."}},
+        {"@type": "Question", "name": "Can members use their own phones?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Capture runs on iOS 15 or later and on Android phones, including older models, which may show a lower frame rate during capture. No other equipment is needed. The member stands for the scan, and the current dataset does not support wheelchair users or amputees. Two gender options are available. Height, weight and gender are required inputs, and an entered height more than 2 cm off affects results."}},
+        {"@type": "Question", "name": "Does FitXpress measure muscle?", "acceptedAnswer": {"@type": "Answer", "text": "FitXpress reports fat mass and lean mass estimates. Lean mass includes organs, bone and water along with muscle; it is not a direct measurement of skeletal muscle."}},
+        {"@type": "Question", "name": "Does 3DLOOK know which scans belong to which member?", "acceptedAnswer": {"@type": "Answer", "text": "No. Scan records carry randomly generated identifiers. Your platform links them to member profiles and selects the two scans to compare, and FitXpress returns the comparison between those records."}},
+        {"@type": "Question", "name": "Can we use scan results for wellness rewards or incentives?", "acceptedAnswer": {"@type": "Answer", "text": "Programs that connect body data to rewards need additional governance, a privacy review and clear program rules. Reward and eligibility determinations stay with the program administrator. FitXpress for health plans and employer wellness covers remote verification for incentive programs."}},
+        {"@type": "Question", "name": "Who handles member consent and privacy notices?", "acceptedAnswer": {"@type": "Answer", "text": "In most deployments, your platform is the data controller. Your team provides the privacy notice, sets the lawful basis, obtains consent where the workflow requires it and defines retention. 3DLOOK processes scan data on your behalf under the DPA. Where the Health Insurance Portability and Accountability Act (HIPAA) applies to your deployment, 3DLOOK can act as a business associate under an executed Business Associate Agreement (BAA)."}},
+        {"@type": "Question", "name": "How does scan data reach our app?", "acceptedAnswer": {"@type": "Answer", "text": "Results return through the API as JSON, delivered through webhook events with polling as the documented fallback. Webhooks currently have no automatic retries or signature verification, and polling is the recommended backup. The FitXpress Admin Panel provides a central view of scan results and CSV export."}},
+        {"@type": "Question", "name": "Is FitXpress a medical device?", "acceptedAnswer": {"@type": "Answer", "text": "No. An independent regulatory assessment concluded that FitXpress does not meet the medical-device definition under UK MDR or EU MDR for its current intended purpose. FitXpress is not cleared, authorized or approved by the FDA. It does not diagnose conditions or make health decisions."}}
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://3dlook.ai/fitxpress/for-wellness-platforms/#breadcrumb",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://3dlook.ai/"},
+        {"@type": "ListItem", "position": 2, "name": "FitXpress for wellness platforms", "item": "https://3dlook.ai/fitxpress/for-wellness-platforms/"}
+      ]
+    }
+  ]
+}
+</script>
+<script>
+(function () {
+ 'use strict';
+ var root = document.querySelector('.fx-wp-page');
+ if (!root) return;
+ var pagePath = '/fitxpress/for-wellness-platforms/';
+ function track(event, properties) {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push(Object.assign({event: event, fx_vertical: 'wellness-platforms', landing_page: pagePath}, properties || {}));
+ }
+ root.querySelectorAll('[data-cta]').forEach(function (link) {
+  link.addEventListener('click', function () {
+   track('demo_click', {cta_position: link.getAttribute('data-cta'), link_url: link.getAttribute('href')});
+  });
+ });
+
+ var metricButtons = root.querySelectorAll('[data-progress-metric]');
+ metricButtons.forEach(function (button) {
+  button.disabled = false;
+  button.addEventListener('click', function () {
+   var metric = button.getAttribute('data-progress-metric');
+   metricButtons.forEach(function (item) {item.setAttribute('aria-pressed', String(item === button));});
+   root.querySelector('#waist-panel').hidden = metric !== 'waist';
+   root.querySelector('#weight-panel').hidden = metric !== 'weight';
+   root.querySelector('#progress-status').textContent = metric === 'waist'
+    ? 'Waist measurement: 84.0 cm at baseline on 12 January; 79.5 cm at week 12 on 6 April. Change: minus 4.5 cm.'
+    : 'Entered weight: 74.2 kg at baseline on 12 January; 73.8 kg at week 12 on 6 April. Change: minus 0.4 kg.';
+  });
+ });
+
+ // Verified public contact-page form. Replace formId with the approved shared
+ // "FX | LP | Demo" ID when available. Do not invent fields or a form endpoint.
+ // Keep the fallback link: it also works when scripts or third-party forms are blocked.
+ var formConfig = {region: 'na1', portalId: '6014382', formId: 'f227f5ce-8ce1-473d-a4f8-597c832979cc'};
+ var host = root.querySelector('#fx-wp-demo-form');
+ var status = root.querySelector('#fx-wp-form-status');
+ var formStarted = false;
+ var submitted = false;
+ var timeout;
+ function showFallbackStatus() {
+  if (status && status.isConnected) status.textContent = 'Use the contact-page link to request your demo.';
+ }
+ function createForm() {
+  if (!(window.hbspt && window.hbspt.forms)) {showFallbackStatus(); return;}
+  try {
+   window.hbspt.forms.create(Object.assign({}, formConfig, {
+    target: '#fx-wp-demo-form',
+    onFormReady: function () {
+     window.clearTimeout(timeout);
+     if (status && status.isConnected) status.remove();
+    },
+    onFormSubmitted: function () {
+     if (submitted) return;
+     submitted = true;
+     // Map this success-only event to the existing lead conversion in GTM.
+     // Do not add a second generate_lead tag if HubSpot already supplies one.
+     track('fitxpress_demo_form_submitted', {form_id: formConfig.formId, cta_position: 'demo-form'});
+    }
+   }));
+  } catch (error) {showFallbackStatus();}
+ }
+ function loadForm() {
+  if (formStarted) return;
+  formStarted = true;
+  timeout = window.setTimeout(showFallbackStatus, 12000);
+  if (window.hbspt && window.hbspt.forms) {createForm(); return;}
+  var existing = Array.from(document.scripts).find(function (script) {
+   return /js\.hsforms\.net\/forms\/(?:embed\/)?v2\.js/.test(script.src);
+  });
+  if (existing) {
+   existing.addEventListener('load', createForm, {once: true});
+   existing.addEventListener('error', showFallbackStatus, {once: true});
+   return;
+  }
+  var script = document.createElement('script');
+  script.src = 'https://js.hsforms.net/forms/embed/v2.js';
+  script.async = true;
+  script.onload = createForm;
+  script.onerror = showFallbackStatus;
+  document.head.appendChild(script);
+ }
+ if ('IntersectionObserver' in window) {
+  var observer = new IntersectionObserver(function (entries) {
+   if (entries.some(function (entry) {return entry.isIntersecting;})) {observer.disconnect(); loadForm();}
+  }, {rootMargin: '600px 0px'});
+  observer.observe(host);
+ } else {loadForm();}
+}());
+</script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+TITLE: Remote Biometric Screening & Body Measurements | 3DLOOK
+META viewport : width=device-width, initial-scale=1
+META description : Add at-home body measurements to employee wellness programs with FitXpress. Two smartphone photos provide waist measurements, BMI and body composition estimates.
+META canonical : https://3dlook.ai/fitxpress/for-wellness-programs/
+META theme-color : #050f40
+META og:type : website
+META og:title : Remote Biometric Screening & Body Measurements | 3DLOOK
+META og:description : Add at-home body measurements to employee wellness programs with FitXpress. Two smartphone photos provide waist measurements, BMI and body composition estimates.
+META og:url : https://3dlook.ai/fitxpress/for-wellness-programs/
+JSON-LD blocks: 1
+  types: ['WebPage', 'Service', 'Brand', 'FAQPage', 'Question', 'Answer', 'Question', 'Answer', 'Question', 'Answer', 'Question', 'Answer', 'Question', 'Answer', 'Question', 'Answer', 'BreadcrumbList', 'ListItem', 'ListItem']
+=====
+Remote Biometric Screening & Body Measurements | 3DLOOK
+
+Skip to content
+
+3DLOOKMeasurementsHow it worksPilot & pricingBook a demo
+
+Home/FitXpress for wellness programs
+
+FitXpress for employee wellness programs
+
+# Remote Biometric Screening for Employee Wellness: Body Measurements at Home
+
+Add at-home biometric screening for body measurements to your company wellness program. FitXpress uses two guided smartphone photos to provide waist and other body dimensions, calculated BMI and body composition estimates for your existing platform.
+
+Book a demo ↗See screening outputs ↓
+
+Live smartphone capture · API and SDK integration · Body measurements in under 45 seconds
+
+Body screening recordEmployee wellness assessmentIllustrative data
+
+Scan ID: EX-1042At-home smartphone capture
+27 Oct 2026Timestamped result
+
+Waist circumference body measurement35.8 in
+Hip circumference body measurement40.2 in
+BMI calculated metric26.1
+Body fat estimate29.4%
+
+Guided live captureScan IDQuality checks
+
+Illustrative values only. FitXpress provides body-related outputs and capture information. Screening interpretation, program decisions and reporting remain with the program operator. Blood pressure and laboratory tests require other tools.
+
+2 photosfront and side guided smartphone capture
+80+body measurements, including waist and hip dimensions
+Under 45 secmeasurement processing after photo capture
+API + SDKfor wellness platform integration
+
+FitXpress by 3DLOOK brings mobile body measurement technology to health, fitness and wellness workflows.
+
+Screening scope
+
+## What FitXpress adds to a biometric screening program
+FitXpress covers body dimensions and related calculated or estimated metrics. It can complement onsite biometric screening and other services for the components that require clinical equipment or laboratory testing.
+
+Measured body dimensions
+
+### Waist and 80+ body measurements
+Waist, hip, chest, thigh and other circumferences and dimensions generated from guided front and side smartphone photos.
+Calculated body metric
+
+### BMI from height and weight
+BMI is calculated from height and weight inputs. It is not directly measured from the photos. Weight-source verification through Smart Scales is in beta and should be confirmed for the intended deployment.
+Estimated body metrics
+
+### Body composition estimates
+Body-fat percentage, fat mass and lean mass are estimates. They should be identified as estimates in employee-facing results and any program reporting.
+Provided separately
+
+### Blood pressure and blood tests
+FitXpress does not measure blood pressure, blood glucose, cholesterol or laboratory biomarkers. Programs that require them must use appropriate separate screening methods.
+
+FitXpress is not a medical device and does not diagnose conditions, interpret screening results, or determine employee eligibility or incentives.
+See a sample screening record
+
+Built for program operators
+
+## Remote body measurements for companies and wellness platforms
+FitXpress provides a measurement component that can be integrated into existing screening experiences. Each operator keeps responsibility for participant communication, any required additional screening and program decisions.
+
+- Employers
+
+### Company biometric screening across locations
+Offer the body-measurement component to employees at home, across offices, remote teams and different work schedules.
+- Technology vendors
+
+### For corporate wellness platforms
+Integrate mobile body measurements into your employee wellness app, screening workflow or reporting system through the API and SDKs.
+- Health plans and providers
+
+### Support remote member assessment
+Collect structured body measurements for eligible wellness workflows while keeping clinical measurements and benefit decisions in the appropriate systems.
+
+How it works
+
+## From at-home capture to your screening platform
+FitXpress manages guided capture and measurement processing. Your platform manages participant accounts, screening requirements, interpretation and reporting.
+
+- 
+
+### Open screening
+An employee starts the mobile scan from the company or wellness platform experience.Your platform
+- 
+
+### Capture two photos
+FitXpress provides visual and voice guidance for a live front and side capture.FitXpress
+- 
+
+### Process measurements
+Body measurements, calculated metrics, estimates and capture-quality information are generated.FitXpress
+- 
+
+### Receive results
+Structured scan outputs and identifiers are available through the API for integration.FitXpress
+- 
+
+### Manage the program
+Your system handles participant records, reporting and any follow-up or incentive decisions.Your platform
+
+Discuss integration
+
+Applications
+
+## One body-measurement workflow, several wellness use cases
+- 
+
+### At-home employee screening
+Collect waist and other body measurements without requiring an onsite appointment for this part of screening.
+- 
+
+### Periodic wellness assessments
+Provide a consistent method for baseline and follow-up scans within an employee wellness app.
+- 
+
+### Wellness rewards programs
+Supply timestamped measurement records that a program operator may use as one input for administrator review and rewards verification.
+How wellness rewards verification works
+
+Product capabilities
+
+## A remote alternative for the body-measurement portion of onsite biometric screening
+For biometric screening companies and employers, FitXpress adds mobile body measurement without claiming to replace clinical tests or a complete screening service.
+
+- 
+
+### Camera-only capture
+Employees take photos in the guided flow; uploading pictures from a phone gallery is not supported.
+- 
+
+### Capture quality support
+Real-Time Pose Validation and clothing checks help identify issues during capture. Program-specific retake handling is configured separately.
+- 
+
+### Comparable scan records
+Each scan returns structured body metrics that a platform can use alongside its participant records. Comparisons between two scans use the relevant scan IDs.
+- 
+
+### Integration options
+API and web and mobile SDK options support integration into existing wellness and screening experiences.
+
+Accuracy and data governance
+
+## Review measurement performance and privacy controls before deployment
+
+96–97%Reported body-measurement accuracy against expert manual measurements in internal validation.
+< 1 cmTypical scan-to-scan difference for most evaluated measurements in internal testing.
+Internal performance findings are not peer-reviewed clinical outcomes. Typical absolute body-measurement error against manual measurements is 1.5 to 2.0 cm. Accuracy and repeatability describe different properties. Results depend on supported capture conditions and form-fitting clothing; body composition values are estimates.
+
+- Limited collectionIntegration can use scan identifiers without sending employee names or contact details to FitXpress.
+- Live capturePhoto-gallery upload is disabled. Capture-quality checks support data quality and review; they cannot prevent every misuse.
+- Photo handlingFor the FitXpress health workflow, input photos are not stored after processing. Confirm the exact deployment configuration and contractual retention terms before launch.
+- Security arrangementsEncryption and access controls support deployment review. Available documentation and agreements depend on implementation.
+- Regulatory responsibilities3DLOOK can execute a Business Associate Agreement where HIPAA applies and support relevant data processing arrangements. No blanket ADA, GINA, EEOC or HIPAA compliance claim is made for employee wellness programs.
+- Program responsibilityThe employer or program operator determines required notices, consent, screening alternatives, access rules and participant-facing interpretation.
+
+Read the FitXpress privacy and security FAQ
+
+Pilot and commercial options
+
+## Start with a remote body-measurement screening pilot
+Test the capture experience, output quality and integration with a defined employee or member group. Confirm required additional screening methods and participant accommodations separately.
+
+Starter
+From $1,000 per month, up to 500 requests.
+Pro
+From $1,500 per month, up to 1,000 requests.
+Enterprise / personalized
+Discuss API and SDK integration, volume requirements and deployment options for a corporate wellness platform or larger employer population.Pricing is indicative and subject to the current FitXpress commercial offer. A request is the relevant FitXpress billing unit.
+View FitXpress plans and pricing
+
+- 
+
+### Review the workflow
+See guided capture, sample screening outputs and API delivery.
+- 
+
+### Define the pilot
+Agree participant eligibility, integration requirements, supported devices and alternative screening methods.
+- 
+
+### Evaluate the results
+Review capture completion, measurement quality, integration effort and support needs before expanding.
+Discuss a pilot
+
+Frequently asked questions
+
+## Questions about remote biometric screening
+Can FitXpress replace onsite biometric screening?
+FitXpress provides the body-measurement component of remote biometric screening. Participants can complete guided scans at home for waist and other body dimensions, BMI and body composition estimates. Blood pressure measurements and blood tests require separate screening methods.
+What data does FitXpress collect for an employee wellness program?
+FitXpress returns 80+ body measurements, including waist and hip dimensions, alongside BMI calculated from height and weight, body composition estimates, capture-quality information and scan identifiers. Results are delivered through an application programming interface (API).
+How can corporate wellness platforms and employee wellness apps integrate FitXpress?
+FitXpress offers API and software development kit (SDK) integration with guided smartphone capture. The wellness platform links scan results to its participant records, screening workflow and reporting tools. FitXpress does not determine program eligibility or issue rewards.
+Can employees complete biometric body measurements on their own phones?
+Yes. Employees follow visual and voice instructions to capture front and side photos using a supported smartphone. Live capture does not allow selecting photos from the phone gallery. Participants who cannot use the current standing capture flow need an alternative screening method.
+What privacy and security controls are available for employee wellness apps?
+FitXpress supports guided live capture, scan identifiers and data processing arrangements. Where HIPAA applies to a specific deployment, 3DLOOK can act as a business associate under an executed Business Associate Agreement (BAA). GDPR-related responsibilities and international transfers depend on the deployment and applicable agreements. No general legal compliance determination is provided for employer wellness programs.
+How accurate are FitXpress body measurements?
+Internal validation reports 96 to 97% body-measurement accuracy against expert manual measurement, with typical absolute error of 1.5 to 2.0 cm. Typical scan-to-scan differences are under 1 cm for most evaluated measurements. Results depend on capture conditions, clothing and correct height input. Body composition outputs are estimates.
+
+Book a demo
+
+## See FitXpress in a wellness screening workflow
+Explore guided smartphone capture, body-measurement outputs and integration options for your company or wellness platform.
+- Two-photo mobile capture with quality checks
+- Sample waist, BMI and body composition outputs
+- API and SDK integration plus pilot discussion
+
+### Request a FitXpress demo
+Share your contact details and screening requirements with 3DLOOK.
+
+Loading the demo request form…
+
+You can also request a demo through the contact page.Open the 3DLOOK contact page ↗
+Contact details are processed as described in the 3DLOOK privacy policy.
+
+© 2026 3DLOOK · FitXpress for wellness programsFitXpress is not a medical device.

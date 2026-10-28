@@ -107,6 +107,7 @@ All quotes below come from the primary documents. FDA PDFs were read from the Wa
    - EMA, 2016 guideline, §4.2.1, p. 5: waist circumference "should be documented as secondary endpoints". https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-clinical-evaluation-medicinal-products-used-weight-management_en.pdf
 4. **Self-measured waist is no substitute.**
    - Contardo Ayala 2014, 622 participants: "self-measured WC was overestimated by 5.98 ± 4.82 cm". Ross 2020 summarises studies in which people underestimate by 1 to 3 cm, so even the direction of the error varies. https://pubmed.ncbi.nlm.nih.gov/25274418/
+   - Added 2026-10-28 (from the wellness check, `../for-wellness-programs/sources-problem-block.md`): Dekkers et al. 2008, 1,298 overweight employees: "WC was significantly … over-reported by 1.1 cm". So the single-study 5.98 cm is the high end; the safe card is a range of about 1 to 6 cm with the direction varying.
    - FDA DCT guidance (final, Sept 2024, §III.A, p. 4): home tests "may introduce variability compared to tests performed under supervision". https://www.fda.gov/media/167696/download
 5. **FDA treats visit burden as a retention issue.**
    - Obesity draft guidance, §V.B, p. 17: protocols should include "offers of transportation to the clinic", along with options for those "unable or unwilling to continue all study visits".

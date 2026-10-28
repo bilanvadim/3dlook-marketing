@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wellness Rewards Verification | FitXpress by 3DLOOK</title>
+<meta name="description" content="Verify wellness progress remotely for employer and insurer reward programs. Two guided smartphone photos return a timestamped body-measurement record.">
+<link rel="canonical" href="https://3dlook.ai/fitxpress/for-health-plans-and-employer-wellness/">
+<meta name="theme-color" content="#050f40">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wellness Rewards Verification | FitXpress by 3DLOOK">
+<meta property="og:description" content="Verify wellness progress remotely for employer and insurer reward programs. Two guided smartphone photos return a timestamped body-measurement record.">
+<meta property="og:url" content="https://3dlook.ai/fitxpress/for-health-plans-and-employer-wellness/">
+<!--
+  FitXpress wellness rewards landing page · v2 · 2026-10-27
+  Replaces v1 ("wellness platforms": consumer wellness apps). Source per Nika: the content hub article
+  "Wellness Rewards Verification for Employers & Insurers Using AI 3D Body Scanning" (Assel Sekerova, updated 22 Sept 2026),
+  read together with the "Health plans and employer wellness" use-case file, the approved hero line, the approved proof set
+  and the Regulatory FAQ (reviewed by Legal and Security, Sept 2026).
+  Same structure, visual system, form and tracking code as the clinical trials prototype. Class prefix fx-wr.
+  Audience: employers running wellness incentive programs, insurers and health plans (including Medicare Advantage),
+  wellness vendors and program operators. Buyer titles: CHRO, Head of Wellness or Director of Wellbeing, VP Population Health,
+  Health Plan Operations Director, Compliance and Risk, Wellness Program Administrator.
+  Approved hero line: "Verify wellness progress remotely to reduce disputes, boost participation, and improve program reporting."
+  Used in the H1 (verify wellness progress remotely) and the hero lead. Participation and dispute outcomes are written as design intent
+  and as pilot measures, because no customer in this vertical exists yet.
+
+  WHERE THE ARTICLE WAS NOT FOLLOWED (claims the approved files do not support):
+   - "objective" inputs: banned word for our own output. Replaced with "standardized" and "consistent".
+   - "making photo manipulation almost impossible": not defensible. Page says capture checks and comparable records support fraud review.
+   - "The system compares outputs with predefined program rules": FitXpress does not apply reward rules. Page says the program's system
+     applies them, per the product capabilities file ("reward and eligibility determinations remain with the program administrator").
+   - "built to meet HIPAA's core security and privacy principles": replaced with the Regulatory FAQ wording (BAA where HIPAA applies).
+   - "processing typically under 40 seconds" and "full scan flow under a minute": proof set says under 45 seconds. Page uses 45.
+   - "scan outputs flow into claims systems, reward systems ... without manual re-entry": no connectors are documented. Page says results
+     return through the API and the client's team connects them to its reward and reporting tools.
+  CONFIRM BEFORE PUBLISHING:
+   - "The scan flow excludes photo upload" (article, fraud section) is stated on the page. Confirm with product that capture is camera-only.
+   - Market figures are taken from the article. Source names (CDC, KFF Employer Health Benefits Survey, Gallup) are added for attribution;
+     add the article's original links before publishing.
+   - Canonical URL /fitxpress/for-health-plans-and-employer-wellness/ is PROPOSED, matching the sibling link in the Connected Fitness prototype.
+   - Content hub URL of the wellness rewards article is unknown. Link marked [PLACEHOLDER].
+   - Validation height range: proof set says 150 to 205 cm, articles and sibling pages say 150 to 220 cm. Page uses 220.
+   - Hosting is US only (AWS US-West-2, US-East-1). EU and UK insurers (Bupa, Vitality, AXA, Allianz, Generali on the Brainstorm list) will ask.
+   - SOC 2 stated as in progress, per Regulatory FAQ.
+   - Design: follows the GLP-1, bariatric and clinical trials prototypes (navy, blue, Satoshi), not the "Landing-page design system" doc.
+  No client, case study or quote exists in this vertical. Case and quote slots dropped. Logo strip reduced to the company-level line.
+  No competitor is named, so no Katerina review is needed.
+  En and em dashes are not used, per BANNED CONSTRUCTIONS. Ranges are written with "to".
+  Remove data-prototype-chrome header/footer when the WordPress theme supplies them.
+-->
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&amp;display=swap">
+<style>
+.fx-wr-page{--blue:#143dff;--navy:#050f40;--pale:#ecefff;--ink:#1a1a1a;--muted:#4c4c4c;--line:#e5e5e5;--font:'Satoshi',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-family:var(--font);font-size:17px;line-height:1.55;color:var(--ink);background:#fff;overflow-wrap:break-word}
+.fx-wr-page,.fx-wr-page *{box-sizing:border-box}
+.fx-wr-page a{color:var(--blue);text-underline-offset:3px}
+.fx-wr-page a:hover{text-decoration-thickness:2px}
+.fx-wr-page :is(a,button,summary,input,select,textarea):focus-visible{outline:3px solid #8a9cff;outline-offset:4px}
+.fx-wr-page :is(h1,h2,h3,p,figure){margin:0}
+.fx-wr-page :is(h1,h2,h3){font-weight:700;letter-spacing:-.025em;line-height:1.12}
+.fx-wr-page h1{font-size:clamp(32px,3.9vw,50px);max-width:21ch}
+.fx-wr-page h2{font-size:clamp(30px,3.8vw,48px);max-width:24ch}
+.fx-wr-page h3{font-size:22px;line-height:1.24}
+.fx-wr-page :is(svg,img){max-width:100%}
+.fx-wr-page button{font-family:var(--font)}
+.fx-wr-page [hidden]{display:none!important}
+.fx-wr-page [id]{scroll-margin-top:24px}
+.fx-wr-page .fx-wr-wrap{max-width:1280px;padding:0 clamp(20px,5vw,64px);margin:0 auto}
+.fx-wr-page .fx-wr-section{padding:clamp(56px,7.5vw,96px) 0}
+.fx-wr-page .fx-wr-light{background:#f9f9f9}
+.fx-wr-page .fx-wr-navy{background:radial-gradient(100% 75% at 85% 0%,#244ce1 0%,#08186b 44%,var(--navy) 100%);color:#fff}
+.fx-wr-page .fx-wr-navy a{color:#d8deff}
+.fx-wr-page .fx-wr-eyebrow{margin-bottom:16px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
+.fx-wr-page .fx-wr-navy .fx-wr-eyebrow{color:#b1bdff}
+.fx-wr-page .fx-wr-lead{font-size:20px;line-height:1.55;margin-top:24px;max-width:56ch}
+.fx-wr-page .fx-wr-intro{margin-top:20px;max-width:70ch;color:var(--muted)}
+.fx-wr-page .fx-wr-navy .fx-wr-intro{color:#d8deff}
+.fx-wr-page .fx-wr-more{margin-top:26px;font-size:16px}
+.fx-wr-page .fx-wr-more a{font-weight:700}
+.fx-wr-page .fx-wr-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:15px 24px;border:0;border-radius:5px;font-size:16px;line-height:1.25;font-weight:700;text-decoration:none;text-align:center;cursor:pointer;transition:background .15s ease,transform .15s ease}
+.fx-wr-page .fx-wr-btn:hover{transform:translateY(-1px)}
+.fx-wr-page .fx-wr-btn-blue{background:var(--blue);color:#fff}
+.fx-wr-page .fx-wr-btn-blue:hover{background:#0f2ecd}
+.fx-wr-page .fx-wr-btn-white{background:#fff;color:var(--navy)}
+.fx-wr-page .fx-wr-navy .fx-wr-btn-white{color:var(--navy)}
+.fx-wr-page .fx-wr-btn-white:hover{background:var(--pale)}
+.fx-wr-page .fx-wr-actions{display:flex;align-items:center;gap:16px 24px;flex-wrap:wrap;margin-top:30px}
+.fx-wr-page .fx-wr-action-link{font-weight:700;padding:10px 0;min-height:44px;display:inline-flex;align-items:center;gap:8px}
+.fx-wr-page .fx-wr-micro{font-size:14px;color:#d8deff;margin-top:14px}
+.fx-wr-page .fx-wr-chrome{background:var(--navy);color:#fff;border-bottom:1px solid #ffffff26}
+.fx-wr-page .fx-wr-chrome .fx-wr-wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:76px}
+.fx-wr-page .fx-wr-logo{display:inline-flex;align-items:center;gap:9px;color:#fff;font-size:21px;font-weight:900;text-decoration:none;letter-spacing:.02em}
+.fx-wr-page .fx-wr-logo svg{width:22px;height:22px}
+.fx-wr-page .fx-wr-nav{display:flex;align-items:center;gap:25px}
+.fx-wr-page .fx-wr-nav>a:not(.fx-wr-btn){font-size:14px;color:#d8deff;text-decoration:none}
+.fx-wr-page .fx-wr-crumbs{padding-top:26px;font-size:13px;color:#b1bdff}
+.fx-wr-page .fx-wr-crumbs a{color:#d8deff;text-decoration:none}
+.fx-wr-page .fx-wr-crumbs span[aria-hidden]{padding:0 9px}
+.fx-wr-page .fx-wr-hero{padding-bottom:56px}
+.fx-wr-page .fx-wr-hero-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.85fr);gap:clamp(28px,5vw,64px);align-items:center;padding-top:40px}
+.fx-wr-page .fx-wr-record{background:#fff;color:var(--ink);border-radius:20px;padding:26px;box-shadow:0 24px 64px #00000026}
+.fx-wr-page .fx-wr-record-head{display:flex;justify-content:space-between;align-items:start;gap:14px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.fx-wr-page .fx-wr-record-head strong{font-size:18px}
+.fx-wr-page .fx-wr-record-head small{display:block;font-size:13px;font-weight:400;color:#666;margin-top:3px}
+.fx-wr-page .fx-wr-example{display:inline-block;font-size:11px;font-weight:700;color:#4c4c4c;background:#f2f2f2;padding:4px 8px;border-radius:999px;white-space:nowrap}
+.fx-wr-page .fx-wr-dates{display:flex;justify-content:space-between;gap:10px;margin-top:18px;font-size:12px;color:#666}
+.fx-wr-page .fx-wr-dates strong{display:block;color:#333;font-size:14px}
+.fx-wr-page .fx-wr-dates>div:last-child{text-align:right}
+.fx-wr-page .fx-wr-record-list{margin:12px 0 0}
+.fx-wr-page .fx-wr-record-list>div{padding:14px 0;border-bottom:1px solid var(--line)}
+.fx-wr-page .fx-wr-record-list dt{font-size:14px;font-weight:500;display:flex;gap:8px 14px;justify-content:space-between;align-items:baseline;flex-wrap:wrap}
+.fx-wr-page .fx-wr-record-list dt span{font-size:12px;font-weight:700;color:var(--blue)}
+.fx-wr-page .fx-wr-record-list dd{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:6px 0 0;font-size:22px;font-variant-numeric:tabular-nums;line-height:1.25;color:#666}
+.fx-wr-page .fx-wr-record-list dd strong{color:var(--ink)}
+.fx-wr-page .fx-wr-record-list dd span[aria-hidden]{font-size:18px;color:#a8a8a8}
+.fx-wr-page .fx-wr-rule{margin-top:18px;border-radius:10px;background:var(--pale);padding:14px;font-size:14px;line-height:1.5}
+.fx-wr-page .fx-wr-rule b{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--blue);margin-bottom:4px}
+.fx-wr-page .fx-wr-checks{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.fx-wr-page .fx-wr-pill{font-size:12px;font-weight:700;padding:5px 10px;border-radius:999px;background:#f2f2f2;color:#333}
+.fx-wr-page .fx-wr-disclosure{margin-top:14px;font-size:12px;color:#666;line-height:1.6}
+.fx-wr-page .fx-wr-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:#ffffff26;border:1px solid #ffffff26;border-radius:14px;overflow:hidden;margin-top:48px}
+.fx-wr-page .fx-wr-strip>div{padding:21px 20px;background:#050f40cc}
+.fx-wr-page .fx-wr-strip b{display:block;font-size:25px;line-height:1.2;letter-spacing:-.025em}
+.fx-wr-page .fx-wr-strip span{display:block;font-size:13px;margin-top:6px;color:#d8deff}
+.fx-wr-page .fx-wr-trusted{background:var(--navy);color:#d8deff;border-top:1px solid #ffffff26}
+.fx-wr-page .fx-wr-trusted-inner{display:flex;align-items:center;min-height:84px;padding-top:18px;padding-bottom:18px}
+.fx-wr-page .fx-wr-trusted p{font-size:14px;margin:0}
+.fx-wr-page .fx-wr-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:36px}
+.fx-wr-page .fx-wr-stat{border:1px solid var(--line);border-radius:20px;padding:26px;background:#fff}
+.fx-wr-page .fx-wr-stat b{display:block;font-size:clamp(38px,4vw,54px);line-height:1;letter-spacing:-.03em;color:var(--blue)}
+.fx-wr-page .fx-wr-stat p{margin-top:16px;font-size:16px}
+.fx-wr-page .fx-wr-stat small{display:block;font-size:13px;line-height:1.5;margin-top:12px;color:#666}
+.fx-wr-page .fx-wr-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin:32px 0 0;padding:0;list-style:none}
+.fx-wr-page .fx-wr-cards.fx-wr-three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.fx-wr-page .fx-wr-cards li{padding:23px;border:1px solid var(--line);border-radius:15px;background:#fff}
+.fx-wr-page .fx-wr-cards h3{font-size:21px}
+.fx-wr-page .fx-wr-cards p{font-size:16px;margin-top:12px;color:var(--muted)}
+.fx-wr-page .fx-wr-cards .fx-wr-tag{display:block;margin-bottom:12px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
+.fx-wr-page .fx-wr-cards .fx-wr-roles{font-size:14px;color:#666;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+.fx-wr-page .fx-wr-layout{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1fr);gap:clamp(30px,5vw,64px);align-items:center}
+.fx-wr-page .fx-wr-text p:not(.fx-wr-eyebrow){margin-top:20px;color:var(--muted)}
+.fx-wr-page .fx-wr-feature-note{border-left:3px solid var(--blue);padding:14px 18px;font-size:15px;background:#fff}
+.fx-wr-page .fx-wr-section:not(.fx-wr-light) .fx-wr-feature-note{background:#f9f9f9}
+.fx-wr-page .fx-wr-visual{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:0 16px 44px #050f4008;min-width:0}
+.fx-wr-page .fx-wr-visual-top{display:flex;align-items:start;justify-content:space-between;gap:14px;font-size:18px;font-weight:700}
+.fx-wr-page .fx-wr-visual-top small{display:block;font-size:13px;font-weight:400;color:#666;margin-top:3px}
+.fx-wr-page .fx-wr-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}
+.fx-wr-page .fx-wr-tab{font-size:13px;font-weight:700;min-height:44px;border:1px solid var(--line);border-radius:999px;padding:9px 14px;color:#4c4c4c;background:#fff;cursor:pointer}
+.fx-wr-page .fx-wr-tab[aria-pressed=true]{color:var(--blue);background:var(--pale);border-color:#b1bdff}
+.fx-wr-page .fx-wr-tab:disabled{cursor:default}
+.fx-wr-page .fx-wr-queue{list-style:none;margin:18px 0 0;padding:0}
+.fx-wr-page .fx-wr-queue li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.fx-wr-page .fx-wr-queue li:last-child{border-bottom:0}
+.fx-wr-page .fx-wr-queue strong{font-size:16px}
+.fx-wr-page .fx-wr-q-meta{grid-column:1;font-size:13px;color:#666}
+.fx-wr-page .fx-wr-q-val{grid-column:1;font-size:14px;font-variant-numeric:tabular-nums}
+.fx-wr-page .fx-wr-status{grid-column:2;grid-row:1/span 3;align-self:center;font-size:12px;font-weight:700;padding:6px 10px;border-radius:999px;white-space:nowrap}
+.fx-wr-page .fx-wr-status-ok{background:#f2f2f2;color:#333}
+.fx-wr-page .fx-wr-status-flag{background:var(--pale);color:var(--blue)}
+.fx-wr-page .fx-wr-queue-total{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:4px;padding-top:14px;font-size:13px;color:#666}
+.fx-wr-page .fx-wr-scale{display:block;width:100%;height:auto;margin-top:18px;font-family:var(--font)}
+.fx-wr-page .fx-wr-scale .fx-wr-axis{font-size:12px;fill:#666}
+.fx-wr-page .fx-wr-scale .fx-wr-baseline{stroke:#c9c9c9;stroke-width:2}
+.fx-wr-page .fx-wr-scale .fx-wr-tick{stroke:#c9c9c9;stroke-width:1}
+.fx-wr-page .fx-wr-scale .fx-wr-noise{fill:#ecefff;stroke:#b1bdff;stroke-width:1}
+.fx-wr-page .fx-wr-scale .fx-wr-threshold{stroke:var(--ink);stroke-width:2;stroke-dasharray:5 4}
+.fx-wr-page .fx-wr-scale .fx-wr-change{fill:var(--blue);stroke:#fff;stroke-width:3}
+.fx-wr-page .fx-wr-scale .fx-wr-label{font-size:13px;fill:var(--ink);font-weight:700}
+.fx-wr-page .fx-wr-scale .fx-wr-sub{font-size:12px;fill:#666}
+.fx-wr-page .fx-wr-types{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px;border-top:1px solid var(--line);padding-top:20px}
+.fx-wr-page .fx-wr-types>div{background:#f9f9f9;border-radius:10px;padding:14px;font-size:14px}
+.fx-wr-page .fx-wr-types strong{display:block;font-size:14px;margin-bottom:4px}
+.fx-wr-page .fx-wr-types span{color:#666}
+.fx-wr-page .fx-wr-outputs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:36px}
+.fx-wr-page .fx-wr-output{padding:26px;border:1px solid var(--line);border-radius:15px;background:#fff}
+.fx-wr-page .fx-wr-output .fx-wr-output-label{display:block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:12px}
+.fx-wr-page .fx-wr-output p{margin-top:12px;color:var(--muted);font-size:16px}
+.fx-wr-page .fx-wr-closing{margin-top:24px;max-width:80ch;color:var(--muted);font-size:16px}
+.fx-wr-page .fx-wr-steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;margin:36px 0 0;padding:0;list-style:none;counter-reset:fxstep}
+.fx-wr-page .fx-wr-steps li{padding:24px;border:1px solid var(--line);border-radius:15px;background:#fff;counter-increment:fxstep}
+.fx-wr-page .fx-wr-steps li:before{content:'0' counter(fxstep);display:block;color:var(--blue);font-weight:900;font-size:15px;margin-bottom:16px}
+.fx-wr-page .fx-wr-steps h3{font-size:19px}
+.fx-wr-page .fx-wr-steps p{margin-top:10px;color:var(--muted);font-size:15px}
+.fx-wr-page .fx-wr-steps .fx-wr-owner{display:block;margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#666}
+.fx-wr-page .fx-wr-steps .fx-wr-owner.fx-wr-ours{color:var(--blue)}
+.fx-wr-page .fx-wr-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:15px;margin-top:36px;background:#fff}
+.fx-wr-page .fx-wr-table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.5}
+.fx-wr-page .fx-wr-table :is(th,td){text-align:left;vertical-align:top;padding:19px 16px;border-bottom:1px solid var(--line)}
+.fx-wr-page .fx-wr-table tr:last-child :is(th,td){border-bottom:0}
+.fx-wr-page .fx-wr-table thead th{font-size:13px;background:#f9f9f9}
+.fx-wr-page .fx-wr-table thead th:nth-child(2){color:var(--blue)}
+.fx-wr-page .fx-wr-table tbody td:nth-child(2){background:var(--pale)}
+.fx-wr-page .fx-wr-table tbody th{font-size:13px;width:15%}
+.fx-wr-page .fx-wr-comparison-cards{display:none;margin-top:28px;gap:18px}
+.fx-wr-page .fx-wr-comparison-card{border:1px solid var(--line);border-radius:15px;padding:24px;background:#fff}
+.fx-wr-page .fx-wr-featured{border-color:#b1bdff;background:var(--pale)}
+.fx-wr-page .fx-wr-featured h3{color:var(--blue)}
+.fx-wr-page .fx-wr-comparison-card dl{margin:20px 0 0}
+.fx-wr-page .fx-wr-comparison-card dt{font-size:12px;font-weight:700;color:#666;margin-top:15px}
+.fx-wr-page .fx-wr-comparison-card dd{font-size:16px;margin:4px 0 0}
+.fx-wr-page .fx-wr-figs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px;margin-top:36px}
+.fx-wr-page .fx-wr-figs>div{border-top:1px solid #ffffff40;padding-top:24px}
+.fx-wr-page .fx-wr-figs b{display:block;font-size:clamp(44px,5vw,64px);line-height:1;letter-spacing:-.03em}
+.fx-wr-page .fx-wr-figs span{display:block;max-width:42ch;color:#d8deff;margin-top:12px;font-size:16px}
+.fx-wr-page .fx-wr-proof-note{margin-top:26px;padding:18px 22px;background:#ffffff0e;border-left:3px solid #8a9cff;color:#d8deff;font-size:15px}
+.fx-wr-page .fx-wr-data{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:36px 0 0;padding:0;list-style:none}
+.fx-wr-page .fx-wr-data li{padding:22px;border:1px solid #ffffff26;border-radius:15px;background:#ffffff08;font-size:15px}
+.fx-wr-page .fx-wr-data strong{display:block;margin-bottom:8px;font-size:16px}
+.fx-wr-page .fx-wr-data span{color:#d8deff}
+.fx-wr-page .fx-wr-pilot{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(30px,5vw,64px);align-items:start}
+.fx-wr-page .fx-wr-price{border:1px solid var(--line);border-radius:15px;background:#f9f9f9;padding:26px;margin-top:28px}
+.fx-wr-page .fx-wr-price>p+p{margin-top:14px}
+.fx-wr-page .fx-wr-price b{font-size:20px}
+.fx-wr-page .fx-wr-price small{display:block;margin-top:18px;color:#666;font-size:13px}
+.fx-wr-page .fx-wr-steps-v{list-style:none;margin:8px 0 0;padding:0;counter-reset:fxpilot}
+.fx-wr-page .fx-wr-steps-v li{position:relative;padding:0 0 27px 56px;counter-increment:fxpilot}
+.fx-wr-page .fx-wr-steps-v li:before{content:counter(fxpilot);position:absolute;left:0;top:0;width:36px;height:36px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;display:grid;place-items:center}
+.fx-wr-page .fx-wr-steps-v p{color:var(--muted);font-size:16px;margin-top:8px}
+.fx-wr-page .fx-wr-out{margin:12px 0 0;padding:0;list-style:none}
+.fx-wr-page .fx-wr-out li{padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
+.fx-wr-page .fx-wr-faq{border-top:1px solid #d1d1d1;margin-top:36px}
+.fx-wr-page .fx-wr-faq details{border-bottom:1px solid #d1d1d1}
+.fx-wr-page .fx-wr-faq summary{display:flex;justify-content:space-between;align-items:baseline;gap:22px;list-style:none;cursor:pointer;padding:22px 0;font-size:20px;font-weight:700;line-height:1.4;min-height:48px}
+.fx-wr-page .fx-wr-faq summary::-webkit-details-marker{display:none}
+.fx-wr-page .fx-wr-faq summary:after{content:'+';font-size:25px;color:var(--blue);flex-shrink:0}
+.fx-wr-page .fx-wr-faq details[open] summary:after{content:'−'}
+.fx-wr-page .fx-wr-answer{max-width:80ch;margin:0 0 24px;color:var(--muted);font-size:16px}
+.fx-wr-page .fx-wr-cta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(30px,5vw,64px);align-items:start}
+.fx-wr-page .fx-wr-demo-list{margin:26px 0 0;padding:0;list-style:none;color:#d8deff}
+.fx-wr-page .fx-wr-demo-list li{padding:12px 0;border-top:1px solid #ffffff26;font-size:16px}
+.fx-wr-page .fx-wr-related{margin-top:30px}
+.fx-wr-page .fx-wr-related p{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#b1bdff}
+.fx-wr-page .fx-wr-related ul{margin:10px 0 0;padding:0;list-style:none}
+.fx-wr-page .fx-wr-related li{padding:9px 0;font-size:16px}
+.fx-wr-page .fx-wr-related a{font-weight:700}
+.fx-wr-page .fx-wr-form{padding:28px;border-radius:20px;color:var(--ink);background:#fff;min-width:0}
+.fx-wr-page .fx-wr-form h3{font-size:24px}
+.fx-wr-page .fx-wr-form>p{margin-top:12px;color:var(--muted);font-size:14px}
+.fx-wr-page .fx-wr-form a{color:var(--blue)}
+.fx-wr-page .fx-wr-form-host{margin-top:22px;min-width:0}
+.fx-wr-page .fx-wr-form-host iframe{width:100%!important;max-width:100%;border:0}
+.fx-wr-page .fx-wr-form-host :is(input,select,textarea){font-family:var(--font);max-width:100%}
+.fx-wr-page .fx-wr-form-fallback{border-top:1px solid var(--line);padding-top:18px;margin-top:20px;font-size:13px}
+.fx-wr-page .fx-wr-form-fallback a{display:inline-flex;align-items:center;min-height:44px;font-weight:700}
+.fx-wr-page .fx-wr-form-status{font-size:14px;color:#666}
+.fx-wr-page .fx-wr-foot{background:var(--navy);color:#d8deff;font-size:13px;border-top:1px solid #ffffff26}
+.fx-wr-page .fx-wr-foot .fx-wr-wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px 30px;padding-top:30px;padding-bottom:30px}
+.fx-wr-page .fx-wr-foot a{color:#d8deff}
+.fx-wr-page .fx-wr-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.fx-wr-page .fx-wr-skip{position:absolute;z-index:100;left:20px;top:10px;transform:translateY(-150%);background:#fff;padding:12px;color:var(--navy);border-radius:5px}
+.fx-wr-page .fx-wr-skip:focus{transform:translateY(0)}
+@media(max-width:1180px){
+ .fx-wr-page .fx-wr-steps{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:1050px){
+ .fx-wr-page :is(.fx-wr-cards,.fx-wr-stats){grid-template-columns:repeat(2,minmax(0,1fr))}
+ .fx-wr-page .fx-wr-cards.fx-wr-three{grid-template-columns:1fr}
+ .fx-wr-page .fx-wr-comparison-table{display:none}
+ .fx-wr-page .fx-wr-comparison-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:900px){
+ .fx-wr-page :is(.fx-wr-hero-grid,.fx-wr-layout,.fx-wr-pilot,.fx-wr-cta){grid-template-columns:1fr}
+ .fx-wr-page .fx-wr-hero-grid{align-items:start}
+ .fx-wr-page h1{max-width:27ch}
+ .fx-wr-page .fx-wr-record{max-width:560px;width:100%}
+ .fx-wr-page .fx-wr-visual{max-width:650px;width:100%}
+ .fx-wr-page .fx-wr-strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .fx-wr-page .fx-wr-steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .fx-wr-page .fx-wr-nav>a:not(.fx-wr-btn){display:none}
+}
+@media(max-width:600px){
+ .fx-wr-page{font-size:16px}
+ .fx-wr-page .fx-wr-queue li{grid-template-columns:1fr}
+ .fx-wr-page .fx-wr-status{grid-column:1;grid-row:auto;justify-self:start;margin-top:6px;white-space:normal}
+ .fx-wr-page .fx-wr-chrome .fx-wr-wrap{min-height:68px;gap:12px}
+ .fx-wr-page .fx-wr-chrome .fx-wr-btn{padding:12px 16px;min-height:44px;font-size:14px}
+ .fx-wr-page .fx-wr-logo{font-size:19px}
+ .fx-wr-page .fx-wr-hero-grid{padding-top:30px}
+ .fx-wr-page .fx-wr-lead{font-size:18px}
+ .fx-wr-page :is(.fx-wr-cards,.fx-wr-stats,.fx-wr-outputs,.fx-wr-comparison-cards,.fx-wr-figs,.fx-wr-data,.fx-wr-steps,.fx-wr-types){grid-template-columns:1fr}
+ .fx-wr-page :is(.fx-wr-record,.fx-wr-visual,.fx-wr-form){padding:20px}
+ .fx-wr-page .fx-wr-record-list dd{font-size:20px}
+ .fx-wr-page .fx-wr-faq summary{font-size:18px}
+ .fx-wr-page .fx-wr-strip>div{padding:19px 16px}
+ .fx-wr-page .fx-wr-strip b{font-size:22px}
+}
+@media(max-width:360px){
+ .fx-wr-page .fx-wr-strip{grid-template-columns:1fr}
+ .fx-wr-page .fx-wr-record-head,.fx-wr-page .fx-wr-visual-top{flex-wrap:wrap}
+}
+@media(prefers-reduced-motion:reduce){.fx-wr-page *{transition:none!important}}
+</style>
+</head>
+<body style="margin:0">
+
+<div class="fx-wr-page">
+<a class="fx-wr-skip" href="#main">Skip to content</a>
+<header class="fx-wr-chrome" data-prototype-chrome="header">
+ <div class="fx-wr-wrap">
+  <a class="fx-wr-logo" href="https://3dlook.ai/" aria-label="3DLOOK home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 22 20H2z" fill="#fff"/></svg>3DLOOK</a>
+  <nav class="fx-wr-nav" aria-label="Page navigation"><a href="#how-it-works">How it works</a><a href="#pricing">Pricing</a><a href="#faq">Questions</a><a class="fx-wr-btn fx-wr-btn-white" href="#demo" data-cta="header">Book a demo</a></nav>
+ </div>
+</header>
+<main id="main">
+<section class="fx-wr-navy fx-wr-hero" aria-labelledby="hero-heading">
+ <div class="fx-wr-wrap">
+  <nav class="fx-wr-crumbs" aria-label="Breadcrumb"><a href="https://3dlook.ai/">Home</a><span aria-hidden="true">/</span><span aria-current="page">FitXpress for wellness rewards</span></nav>
+  <div class="fx-wr-hero-grid">
+   <div>
+    <p class="fx-wr-eyebrow">Employer and insurer wellness rewards</p>
+    <h1 id="hero-heading">FitXpress for wellness rewards: verify wellness progress remotely for employer and insurer programs</h1>
+    <p class="fx-wr-lead">Participants complete a guided two-photo scan on their phone at baseline and at each checkpoint. Your program receives a timestamped body-measurement record in under 45 seconds, ready for the rules and review that decide the reward.</p>
+    <div class="fx-wr-actions"><a class="fx-wr-btn fx-wr-btn-white" href="#demo" data-cta="hero">Book a demo <span aria-hidden="true">↗</span></a><a class="fx-wr-action-link" href="#how-it-works">How verification works <span aria-hidden="true">↓</span></a></div>
+    <p class="fx-wr-micro">Guided capture on a phone, a sample verification record and the integration options for your reward platform.</p>
+   </div>
+   <aside class="fx-wr-record" aria-label="Illustrative verification record">
+    <div class="fx-wr-record-head"><div><strong>Participant 7731-B</strong><small>12-week healthy weight program</small></div><span class="fx-wr-example">Illustrative data</span></div>
+    <div class="fx-wr-dates"><div><strong>12 January 2027</strong>Baseline scan, at home</div><div><strong>6 April 2027</strong>Week 12 scan, at home</div></div>
+    <dl class="fx-wr-record-list">
+     <div><dt>Waist measurement <span>−4.3 cm</span></dt><dd><span>96.4 cm</span><span aria-hidden="true">→</span><strong>92.1 cm</strong></dd></div>
+     <div><dt>Body-fat estimate <span>−1.6 percentage points</span></dt><dd><span>33.8%</span><span aria-hidden="true">→</span><strong>32.2%</strong></dd></div>
+    </dl>
+    <div class="fx-wr-checks"><span class="fx-wr-pill">Pose check passed</span><span class="fx-wr-pill">Clothing check passed</span><span class="fx-wr-pill">Scan IDs and timestamps</span></div>
+    <p class="fx-wr-rule"><b>Program rule, set by the administrator</b>Waist reduction of 3 cm or more from baseline. Meets the rule. Sent to administrator review.</p>
+    <p class="fx-wr-disclosure">Illustrative values and rule, not participant results. Body composition values are estimates. The program's system applies the rule, and the administrator decides the reward.</p>
+   </aside>
+  </div>
+  <div class="fx-wr-strip">
+   <div><b>2 photos</b><span>guided front and side capture at home</span></div>
+   <div><b>Under 45 sec</b><span>from photos to a structured record</span></div>
+   <div><b>&lt; 1 cm</b><span>typical scan-to-scan difference for most evaluated measurements</span></div>
+   <div><b>No onsite visit</b><span>baseline and checkpoints from the participant's phone</span></div>
+  </div>
+ </div>
+</section>
+<section class="fx-wr-trusted" aria-label="About 3DLOOK">
+  <div class="fx-wr-wrap fx-wr-trusted-inner">
+    <p>100+ clients have used 3DLOOK body scanning since 2016, across digital health, weight management and apparel.</p>
+  </div>
+</section>
+<section class="fx-wr-section fx-wr-light" id="problem" aria-labelledby="problem-heading">
+ <div class="fx-wr-wrap">
+  <p class="fx-wr-eyebrow">The problem</p>
+  <h2 id="problem-heading">Wellness rewards depend on proof that is easy to dispute and hard to collect</h2>
+  <p class="fx-wr-intro">Most programs verify milestones with self-reported numbers, paperwork or onsite screening events. Each source adds manual review, and none fits a workforce or membership spread across locations.</p>
+  <div class="fx-wr-stats">
+   <div class="fx-wr-stat"><b>40%</b><p>Self-reported height and weight underestimated the prevalence of severe obesity by 40% compared with bias-corrected estimates.</p><small>US Centers for Disease Control and Prevention (CDC).</small></div>
+   <div class="fx-wr-stat"><b>43%</b><p>of larger firms offering health benefits provide biometric screening, a recurring verification workload for HR and benefits teams.</p><small>KFF Employer Health Benefits Survey.</small></div>
+   <div class="fx-wr-stat"><b>62%</b><p>of large firms with biometric screening tie it to incentives or penalties. When money depends on the result, the record has to hold up.</p><small>KFF Employer Health Benefits Survey.</small></div>
+   <div class="fx-wr-stat"><b>78%</b><p>of remote-capable US workers are hybrid (52%) or fully remote (26%). Onsite screening days miss many of them.</p><small>Gallup.</small></div>
+  </div>
+  <ul class="fx-wr-cards">
+   <li><h3>Self-report is unreliable</h3><p>Participants underreport weight and overreport height, often without intending to. Reward decisions built on those inputs are weak.</p></li>
+   <li><h3>Onsite checks do not scale</h3><p>Fixed appointments across offices, remote staff and shift workers make repeat verification cycles slow and expensive.</p></li>
+   <li><h3>Manual review delays the reward</h3><p>Chasing forms and confirming documents slows reward delivery, and a late reward loses its motivational effect.</p></li>
+   <li><h3>Inconsistent proof erodes trust</h3><p>Participants question whether standards apply equally. Program owners question the data behind each payout.</p></li>
+  </ul>
+ </div>
+</section>
+<section class="fx-wr-section" aria-labelledby="who-heading">
+ <div class="fx-wr-wrap">
+  <p class="fx-wr-eyebrow">Who it is for</p>
+  <h2 id="who-heading">One verification record for employer, insurer and hybrid reward programs</h2>
+  <p class="fx-wr-intro">The same guided scan and the same record format work whether the employer, the health plan or a wellness vendor runs the program.</p>
+  <ul class="fx-wr-cards fx-wr-three">
+   <li><span class="fx-wr-tag">Employers</span><h3>Confirm milestones across a distributed workforce</h3><p>Self-insured and fully insured employers running wellness incentives confirm completion and progress for hybrid, remote and multi-site teams without screening days.</p><p class="fx-wr-roles">CHRO · Head of Wellness or Director of Wellbeing · Benefits lead</p></li>
+   <li><span class="fx-wr-tag">Insurers and health plans</span><h3>Verify reward milestones across large memberships</h3><p>Health plans, including Medicare Advantage plans with health rewards, verify member milestones remotely and apply the same standard across states and populations.</p><p class="fx-wr-roles">VP Population Health · Health Plan Operations Director · Compliance and Risk</p></li>
+   <li><span class="fx-wr-tag">Vendors and program operators</span><h3>Run cleaner administration for clients</h3><p>Wellness platforms and benefit administrators add a standardized verification step to the programs they run, with one record format for every client.</p><p class="fx-wr-roles">Wellness Program Administrator · Head of Product · Operations lead</p></li>
+  </ul>
+ </div>
+</section>
+<section class="fx-wr-section fx-wr-light" id="how-it-works" aria-labelledby="workflow-heading">
+ <div class="fx-wr-wrap">
+  <p class="fx-wr-eyebrow">How it works</p>
+  <h2 id="workflow-heading">From a home scan to a reward decision in one verification flow</h2>
+  <p class="fx-wr-intro">FitXpress handles capture and measurement. Your program keeps the rules, the review and the reward.</p>
+  <ol class="fx-wr-steps">
+   <li><h3>Guided scan at home</h3><p>The participant follows voice and visual prompts and takes front and side photos with the phone on a stable surface.</p><span class="fx-wr-owner fx-wr-ours">FitXpress</span></li>
+   <li><h3>Measurements returned</h3><p>80+ body measurements, body composition estimates and capture checks return through the API in under 45 seconds.</p><span class="fx-wr-owner fx-wr-ours">FitXpress</span></li>
+   <li><h3>Program rules applied</h3><p>Your platform compares the record with the program's milestones: completion, a measured change or maintenance against baseline.</p><span class="fx-wr-owner">Your program</span></li>
+   <li><h3>Administrator review</h3><p>Administrators review results, exceptions and flagged scans in one queue, with the scan record attached.</p><span class="fx-wr-owner">Your program</span></li>
+   <li><h3>Reward issued</h3><p>Once approved, the participant receives the reward or program credit through your existing system.</p><span class="fx-wr-owner">Your program</span></li>
+  </ol>
+ </div>
+</section>
+<section class="fx-wr-section" id="review" aria-labelledby="review-heading">
+ <div class="fx-wr-wrap fx-wr-layout">
+  <div class="fx-wr-text">
+   <p class="fx-wr-eyebrow">Review and exceptions</p>
+   <h2 id="review-heading">Review every checkpoint against the same record</h2>
+   <p>Each scan arrives with the same fields, a timestamp and the result of the capture checks. Administrators review results that meet a milestone, results below it and scans that need a retake in one place.</p>
+   <p>Exceptions stop being a chase for paperwork. A flagged scan goes back to the participant as a retake prompt.</p>
+   <p class="fx-wr-feature-note"><strong>Reward decisions stay with the administrator.</strong> FitXpress supports remote verification and documentation for incentive programs. Reward and eligibility determinations remain with the program administrator.</p>
+   <div class="fx-wr-actions"><a class="fx-wr-btn fx-wr-btn-blue" href="#demo" data-cta="review">See the review flow in the demo</a></div>
+  </div>
+  <figure class="fx-wr-visual">
+   <div class="fx-wr-visual-top"><div>Week 12 checkpoint<small>Scans received 30 March to 6 April</small></div><span class="fx-wr-example">Illustrative view</span></div>
+   <div class="fx-wr-tabs" role="group" aria-label="Filter checkpoint records"><button class="fx-wr-tab" type="button" aria-pressed="true" data-queue-filter="all" aria-controls="checkpoint-log" disabled>All</button><button class="fx-wr-tab" type="button" aria-pressed="false" data-queue-filter="meets" aria-controls="checkpoint-log" disabled>Meets rule</button><button class="fx-wr-tab" type="button" aria-pressed="false" data-queue-filter="below" aria-controls="checkpoint-log" disabled>Below rule</button><button class="fx-wr-tab" type="button" aria-pressed="false" data-queue-filter="flagged" aria-controls="checkpoint-log" disabled>Flagged</button></div>
+   <ul class="fx-wr-queue" id="checkpoint-log">
+    <li data-status="meets"><strong>Participant 7731-B</strong><span class="fx-wr-status fx-wr-status-flag">Meets rule · to review</span><span class="fx-wr-q-meta">Home scan, 6 April · capture checks passed</span><span class="fx-wr-q-val">Waist −4.3 cm from baseline</span></li>
+    <li data-status="meets"><strong>Participant 2208-K</strong><span class="fx-wr-status fx-wr-status-flag">Meets rule · to review</span><span class="fx-wr-q-meta">Home scan, 2 April · capture checks passed</span><span class="fx-wr-q-val">Waist −3.1 cm from baseline</span></li>
+    <li data-status="below"><strong>Participant 5410-A</strong><span class="fx-wr-status fx-wr-status-ok">Below rule · next checkpoint</span><span class="fx-wr-q-meta">Home scan, 31 March · capture checks passed</span><span class="fx-wr-q-val">Waist −1.2 cm from baseline</span></li>
+    <li data-status="flagged"><strong>Participant 9067-C</strong><span class="fx-wr-status fx-wr-status-ok">Clothing flag · retake sent</span><span class="fx-wr-q-meta">Home scan, 30 March · Clothing Detector flag</span><span class="fx-wr-q-val">Values pending retake</span></li>
+   </ul>
+   <div class="fx-wr-queue-total"><span>4 scans received</span><span>2 meet rule · 1 below · 1 flagged</span></div>
+   <figcaption class="fx-wr-disclosure">Illustrative interface, rule and values, not participant results. FitXpress returns the data and capture flags; your reward platform displays the queue and applies the rules.</figcaption>
+   <p class="fx-wr-sr" id="queue-status" aria-live="polite" aria-atomic="true"></p>
+  </figure>
+ </div>
+</section>
+<section class="fx-wr-section fx-wr-light" id="rules" aria-labelledby="rules-heading">
+ <div class="fx-wr-wrap fx-wr-layout">
+  <div class="fx-wr-text">
+   <p class="fx-wr-eyebrow">Fair reward rules</p>
+   <h2 id="rules-heading">Set milestone thresholds above scan-to-scan variation</h2>
+   <p>A fair rule rewards real change. Repeated FitXpress scans of the same person typically differ by less than 1 cm for most evaluated measurements. A threshold set well above that range rewards measured progress, not one-off variation.</p>
+   <p>Every participant is measured with the same guided capture and the same processing, which keeps the standard the same across locations and work schedules.</p>
+   <p class="fx-wr-feature-note"><strong>Publish the rules to participants.</strong> State what qualifies, how often to scan and what happens after a retake. Clear criteria make rewards easier to administer and easier to defend.</p>
+  </div>
+  <figure class="fx-wr-visual">
+   <div class="fx-wr-visual-top"><div>Waist change from baseline<small>Example threshold against scan-to-scan variation</small></div><span class="fx-wr-example">Illustrative</span></div>
+   <svg class="fx-wr-scale" viewBox="0 0 440 170" role="img" aria-labelledby="scale-title scale-desc">
+    <title id="scale-title">Example reward threshold compared with typical scan-to-scan variation</title>
+    <desc id="scale-desc">A scale from 0 to 5 centimeters of waist reduction. The band from 0 to 1 centimeter marks typical scan-to-scan difference. A dashed line at 3 centimeters marks an example program threshold. A participant's change of 4.3 centimeters sits above the threshold.</desc>
+    <rect class="fx-wr-noise" x="60" y="62" width="68" height="36" rx="4"/>
+    <line class="fx-wr-baseline" x1="60" y1="98" x2="400" y2="98"/>
+    <g><line class="fx-wr-tick" x1="60" y1="98" x2="60" y2="106"/><line class="fx-wr-tick" x1="128" y1="98" x2="128" y2="106"/><line class="fx-wr-tick" x1="196" y1="98" x2="196" y2="106"/><line class="fx-wr-tick" x1="264" y1="98" x2="264" y2="106"/><line class="fx-wr-tick" x1="332" y1="98" x2="332" y2="106"/><line class="fx-wr-tick" x1="400" y1="98" x2="400" y2="106"/></g>
+    <g class="fx-wr-axis"><text x="60" y="122" text-anchor="middle">0</text><text x="128" y="122" text-anchor="middle">1</text><text x="196" y="122" text-anchor="middle">2</text><text x="264" y="122" text-anchor="middle">3</text><text x="332" y="122" text-anchor="middle">4</text><text x="400" y="122" text-anchor="middle">5 cm</text></g>
+    <line class="fx-wr-threshold" x1="264" y1="40" x2="264" y2="98"/>
+    <circle class="fx-wr-change" cx="352.4" cy="80" r="8"/>
+    <text class="fx-wr-label" x="94" y="52" text-anchor="middle">&lt; 1 cm</text>
+    <text class="fx-wr-label" x="264" y="30" text-anchor="middle">Threshold 3 cm</text>
+    <text class="fx-wr-label" x="352.4" y="62" text-anchor="middle">4.3 cm</text>
+    <text class="fx-wr-sub" x="94" y="150" text-anchor="middle">Scan-to-scan</text>
+    <text class="fx-wr-sub" x="94" y="165" text-anchor="middle">difference</text>
+    <text class="fx-wr-sub" x="352.4" y="150" text-anchor="middle">Participant 7731-B</text>
+   </svg>
+   <div class="fx-wr-types">
+    <div><strong>Completion</strong><span>A baseline scan completed by the deadline.</span></div>
+    <div><strong>Participation</strong><span>Scheduled checkpoint scans completed on time.</span></div>
+    <div><strong>Measured improvement</strong><span>A change from baseline above the program threshold.</span></div>
+    <div><strong>Maintenance</strong><span>A measurement held within range of the baseline.</span></div>
+   </div>
+   <figcaption class="fx-wr-disclosure">Illustrative threshold and reward types. Your program sets the rules, and keeps an alternative way to qualify for participants who cannot complete a scan.</figcaption>
+  </figure>
+ </div>
+</section>
+<section class="fx-wr-section" id="integrity" aria-labelledby="integrity-heading">
+ <div class="fx-wr-wrap">
+  <p class="fx-wr-eyebrow">Program integrity</p>
+  <h2 id="integrity-heading">A capture flow built to make submissions easier to check</h2>
+  <p class="fx-wr-intro">When money or benefits depend on a result, the record has to hold up in a dispute or an audit. The guided flow gives reviewers more to check than a typed number or an uploaded photo.</p>
+  <ul class="fx-wr-cards">
+   <li><h3>Camera capture only</h3><p>Photos are taken inside the guided flow, with no upload from the phone's gallery.</p></li>
+   <li><h3>Checks during the shot</h3><p>Real-Time Pose Validation and the Clothing Detector check pose, framing and clothing before the scan is accepted.</p></li>
+   <li><h3>Comparable records over time</h3><p>Every checkpoint follows the same workflow, and reviewers compare each scan with earlier ones for the same participant.</p></li>
+   <li><h3>A dated evidence trail</h3><p>Each record shows what was captured and when, which supports review of flagged submissions and later audits.</p></li>
+  </ul>
+  <p class="fx-wr-closing">These controls support fraud review. They do not replace program rules, administrator review or the program's own audit process.</p>
+ </div>
+</section>
+<section class="fx-wr-section fx-wr-light" id="record" aria-labelledby="record-heading">
+ <div class="fx-wr-wrap">
+  <p class="fx-wr-eyebrow">Outputs</p>
+  <h2 id="record-heading">What each verification scan returns</h2>
+  <p class="fx-wr-intro">FitXpress returns each scan as a timestamped record through the application programming interface (API), with the same fields at baseline and at every checkpoint.</p>
+  <div class="fx-wr-outputs">
+   <article class="fx-wr-output"><span class="fx-wr-output-label">Body measurements</span><h3>80+ body measurements</h3><p>Waist, hip, chest, thigh and other dimensions in centimeters, produced by the same processing at every scan.</p></article>
+   <article class="fx-wr-output"><span class="fx-wr-output-label">Body composition</span><h3>Body composition estimates</h3><p>Body-fat percentage, fat mass and lean mass estimates. Body mass index (BMI) and basal metabolic rate (BMR) are calculated metrics.</p></article>
+   <article class="fx-wr-output"><span class="fx-wr-output-label">Capture integrity</span><h3>Quality checks and flags</h3><p>Pose validation results and Clothing Detector flags are stored with each scan, ready for your retake and exception rules.</p></article>
+   <article class="fx-wr-output"><span class="fx-wr-output-label">Traceability</span><h3>Timestamp and scan identifier</h3><p>Each record shows when the values were produced. Scan records use randomly generated identifiers, which your program maps to participant IDs.</p></article>
+   <article class="fx-wr-output"><span class="fx-wr-output-label">3D model</span><h3>3D body model and 3D Body Progress</h3><p>A 3D model reconstructed from each scan. On Pro, compare two scans in a 3D view for participant-facing progress.</p></article>
+   <article class="fx-wr-output"><span class="fx-wr-output-label">Data delivery</span><h3>Formats for reward and reporting tools</h3><p>JavaScript Object Notation (JSON) through the API, comma-separated values (CSV) export from the FitXpress Admin Panel and 3D model export.</p></article>
+  </div>
+  <p class="fx-wr-closing">FitXpress is not a medical device. It supports remote verification and documentation for incentive programs; reward and eligibility determinations remain with the program administrator.</p>
+  <div class="fx-wr-actions"><a class="fx-wr-btn fx-wr-btn-blue" href="#demo" data-cta="record">See a sample record in the demo</a></div>
+ </div>
+</section>
+<section class="fx-wr-section" aria-labelledby="compare-heading">
+ <div class="fx-wr-wrap">
+  <p class="fx-wr-eyebrow">Compare approaches</p>
+  <h2 id="compare-heading">Compare verification methods for wellness rewards</h2>
+  <p class="fx-wr-intro">Most programs combine several methods. Each one trades reach against consistency in a different way.</p>
+  <div class="fx-wr-scroll fx-wr-comparison-table"><table class="fx-wr-table"><caption class="fx-wr-sr">Comparison of wellness rewards verification methods</caption><thead><tr><th scope="col">Dimension</th><th scope="col">FitXpress</th><th scope="col">Self-report</th><th scope="col">Onsite screening</th><th scope="col">Manual document review</th></tr></thead><tbody><tr><th scope="row">Where participants complete it</th><td>At home, on their phone</td><td>Anywhere</td><td>At a screening event or clinic</td><td>Wherever the document comes from</td></tr><tr><th scope="row">Standardization</th><td>Same guided capture and processing for every scan</td><td>None</td><td>Depends on staff and equipment at each site</td><td>Depends on the document and the reviewer</td></tr><tr><th scope="row">Repeat checkpoints</th><td>Comparable records at each checkpoint</td><td>Easy to repeat, hard to compare</td><td>Each cycle needs new appointments</td><td>Each cycle needs new documents</td></tr><tr><th scope="row">Evidence trail</th><td>Timestamped record with capture checks</td><td>A typed value</td><td>Screening results, where recorded</td><td>Files kept by the reviewer</td></tr><tr><th scope="row">Scale across locations</th><td>Any location with a phone</td><td>Any location</td><td>Limited by sites and staffing</td><td>Limited by reviewer time</td></tr></tbody></table></div>
+  <div class="fx-wr-comparison-cards"><article class="fx-wr-comparison-card fx-wr-featured"><h3>FitXpress</h3><dl><dt>Where participants complete it</dt><dd>At home, on their phone</dd><dt>Standardization</dt><dd>Same guided capture and processing for every scan</dd><dt>Repeat checkpoints</dt><dd>Comparable records at each checkpoint</dd><dt>Evidence trail</dt><dd>Timestamped record with capture checks</dd><dt>Scale across locations</dt><dd>Any location with a phone</dd></dl></article><article class="fx-wr-comparison-card"><h3>Self-report</h3><dl><dt>Where participants complete it</dt><dd>Anywhere</dd><dt>Standardization</dt><dd>None</dd><dt>Repeat checkpoints</dt><dd>Easy to repeat, hard to compare</dd><dt>Evidence trail</dt><dd>A typed value</dd><dt>Scale across locations</dt><dd>Any location</dd></dl></article><article class="fx-wr-comparison-card"><h3>Onsite screening</h3><dl><dt>Where participants complete it</dt><dd>At a screening event or clinic</dd><dt>Standardization</dt><dd>Depends on staff and equipment at each site</dd><dt>Repeat checkpoints</dt><dd>Each cycle needs new appointments</dd><dt>Evidence trail</dt><dd>Screening results, where recorded</dd><dt>Scale across locations</dt><dd>Limited by sites and staffing</dd></dl></article><article class="fx-wr-comparison-card"><h3>Manual document review</h3><dl><dt>Where participants complete it</dt><dd>Wherever the document comes from</dd><dt>Standardization</dt><dd>Depends on the document and the reviewer</dd><dt>Repeat checkpoints</dt><dd>Each cycle needs new documents</dd><dt>Evidence trail</dt><dd>Files kept by the reviewer</dd><dt>Scale across locations</dt><dd>Limited by reviewer time</dd></dl></article></div>
+  <p class="fx-wr-closing">Onsite biometric screening stays the right tool for measures a photo cannot capture, such as blood pressure or blood tests. FitXpress covers body-measurement milestones without the visit.</p>
+ </div>
+</section>
+<section class="fx-wr-section fx-wr-navy" aria-labelledby="proof-heading">
+ <div class="fx-wr-wrap">
+  <p class="fx-wr-eyebrow">Validation, privacy and compliance</p>
+  <h2 id="proof-heading">Review measurement performance and data governance before the first reward cycle</h2>
+  <p class="fx-wr-intro">Repeatability decides whether a change between baseline and checkpoint is real. Accuracy against expert manual measurement shows how a single value relates to a tape measure.</p>
+  <div class="fx-wr-figs">
+   <div><b>&lt; 1 cm</b><span>Typical scan-to-scan difference for most evaluated body measurements.</span></div>
+   <div><b>96 to 97%</b><span>Body-measurement accuracy against expert manual measurement, with typical absolute error of 1.5 to 2.0 cm.</span></div>
+   <div><b>0.89 cm</b><span>Waist repeatability across repeated scans.</span></div>
+   <div><b>2.14 cm</b><span>Waist mean absolute error against expert manual measurement, in the same study.</span></div>
+  </div>
+  <p class="fx-wr-proof-note">These figures come from internal validation and have not been peer-reviewed. The validation population covered ages 16 to 78, weights of 38 to 210 kg and heights of 150 to 220 cm, from the US and Europe. Accuracy is not published by body shape or skin tone. Results depend on form-fitting clothing, a completed guided capture and an entered height within 2 cm. Body composition values are estimates. Supporting methodology is available under a non-disclosure agreement (NDA).</p>
+  <p class="fx-wr-more"><a href="https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/">Body scanning accuracy, repeatability and validation methodology</a></p>
+  <ul class="fx-wr-data">
+   <li><strong>Consent and notices</strong><span>Your program explains what is collected, why and how it is used before the first scan. In most deployments, your organization acts as data controller.</span></li>
+   <li><strong>Health Insurance Portability and Accountability Act (HIPAA)</strong><span>Where HIPAA applies, FitXpress can support the deployment with 3DLOOK acting as a business associate under an executed Business Associate Agreement (BAA).</span></li>
+   <li><strong>Photo retention</strong><span>FitXpress deletes photos immediately after processing or retains them for up to 30 days under a contract-specific policy. Retained photos are blurred, and face obfuscation is applied during capture.</span></li>
+   <li><strong>Participant identifiers</strong><span>FitXpress does not receive names or contact details. Scan records use randomly generated identifiers, which your program maps to participant IDs.</span></li>
+   <li><strong>Encryption and access</strong><span>Data is encrypted in transit with Transport Layer Security (TLS) and at rest. Role-based access control and least-privilege provisioning govern access to production data.</span></li>
+   <li><strong>General Data Protection Regulation (GDPR)</strong><span>3DLOOK acts as data processor. A data processing agreement (DPA) with Standard Contractual Clauses (SCCs) covers international transfers, with a UK Addendum where UK GDPR applies.</span></li>
+   <li><strong>Hosting and model training</strong><span>Data is hosted on Amazon Web Services (AWS), primarily in the US-West-2 region and partly in the US-East-1 region. 3DLOOK does not use production customer data to train its models without the customer’s explicit, documented authorization.</span></li>
+   <li><strong>Security documentation</strong><span>A security overview is available on request. A penetration-test summary and architecture and data-flow diagrams are available under NDA. 3DLOOK is working toward a System and Organization Controls (SOC) 2 attestation report.</span></li>
+  </ul>
+  <p class="fx-wr-more">The <a href="https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/">FitXpress data, privacy, security and regulatory frequently asked questions</a> cover hosting, deletion, SOC 2 and FDA information. Privacy contact: <a href="mailto:privacy@3dlook.me">privacy@3dlook.me</a>. Procurement and legal: <a href="mailto:legal@3dlook.me">legal@3dlook.me</a>.</p>
+ </div>
+</section>
+<section class="fx-wr-section" id="pricing" aria-labelledby="pilot-heading">
+ <div class="fx-wr-wrap fx-wr-pilot">
+  <div>
+   <p class="fx-wr-eyebrow">Pilot and pricing</p>
+   <h2 id="pilot-heading">Start with one reward cycle for one population</h2>
+   <p class="fx-wr-intro">Run a baseline and one checkpoint with a defined group of employees or members, next to your current verification method. Agree the measures with benefits, operations and compliance before launch.</p>
+   <div class="fx-wr-price">
+    <p><b>Starter</b><br>$1,000 per month for up to 500 scans.</p>
+    <p><b>Pro</b><br>$1,500 per month for up to 1,000 scans, including 3D Body Progress and 3D Goal Visualization.</p>
+    <p><b>Personalized</b><br>Scan volumes above 1,000 a month, a multilingual guided capture flow, dedicated customer support and annual plan discounts. Large employer and plan populations usually start here.</p>
+    <small>All plans include API access, web and mobile software development kits (SDKs) and guided implementation support.</small>
+    <p class="fx-wr-more"><a href="https://3dlook.ai/pricing/">View FitXpress plans and pricing <span aria-hidden="true">↗</span></a></p>
+   </div>
+  </div>
+  <div>
+   <ol class="fx-wr-steps-v">
+    <li><h3>Review the program</h3><p>The demo covers guided capture on a phone, a sample verification record and how results reach your reward platform.</p></li>
+    <li><h3>Design the pilot</h3><p>Choose the population, the milestone rules, the checkpoint schedule and the alternative path for participants who cannot scan.</p></li>
+    <li><h3>Review the results</h3><p>Compare the agreed measures with your current verification method and decide the rollout scope.</p></li>
+   </ol>
+   <h3>Measures to agree for the pilot</h3>
+   <ul class="fx-wr-out"><li>Checkpoint completion rate</li><li>Scans that pass capture checks on the first attempt</li><li>Disputed reward decisions</li><li>Administrator time per validated checkpoint</li><li>Cost per validated checkpoint</li><li>Days from scan to reward decision</li></ul>
+   <div class="fx-wr-actions"><a class="fx-wr-btn fx-wr-btn-blue" href="#demo" data-cta="pilot">Discuss a pilot</a></div>
+  </div>
+ </div>
+</section>
+<section class="fx-wr-section fx-wr-light" id="faq" aria-labelledby="faq-heading">
+ <div class="fx-wr-wrap"><p class="fx-wr-eyebrow">Frequently asked questions</p><h2 id="faq-heading">Questions from benefits, operations and compliance teams</h2><div class="fx-wr-faq"><details open><summary>Who decides whether a participant earns the reward?</summary><p class="fx-wr-answer">Your program. FitXpress returns measurements, estimates and capture checks. Your platform applies the milestone rules, and the program administrator makes reward and eligibility determinations.</p></details>
+<details><summary>How should we set reward thresholds?</summary><p class="fx-wr-answer">Set thresholds well above scan-to-scan variation, which is typically under 1 cm for most evaluated measurements. State the rules to participants in advance: what qualifies, the checkpoint schedule and what happens after a retake.</p></details>
+<details><summary>How does FitXpress help with fraud?</summary><p class="fx-wr-answer">Photos are taken inside the guided flow, with no gallery upload. Pose and clothing checks run during capture, and every checkpoint produces a comparable, dated record. These controls support review of suspicious submissions. They do not detect every form of misuse, and your program keeps its own review and audit process.</p></details>
+<details><summary>What about participants who cannot complete a scan?</summary><p class="fx-wr-answer">The participant stands for the scan, and the current dataset does not support wheelchair users or amputees. Programs should keep an alternative way to qualify for the reward. Two gender options are available, and height, weight and gender are required inputs.</p></details>
+<details><summary>Can participants use their own phones?</summary><p class="fx-wr-answer">Yes. Capture runs on iOS 15 or later and on Android phones, including older models, which may show a lower frame rate during capture. The participant places the phone on a stable surface and follows voice and visual prompts.</p></details>
+<details><summary>Does FitXpress support HIPAA-governed programs?</summary><p class="fx-wr-answer">Where HIPAA applies, FitXpress can support the deployment with 3DLOOK acting as a business associate under an executed BAA. HIPAA is a regulatory framework, not a certification. Your organization determines whether its program involves protected health information.</p></details>
+<details><summary>How do results reach our reward and reporting systems?</summary><p class="fx-wr-answer">Results return through the API as JSON once processing is complete, delivered through webhook events with polling as the documented fallback. Webhooks currently have no automatic retries or signature verification, and polling is the recommended backup. Your team or platform vendor connects the results to reward, reporting and dashboard tools. The FitXpress Admin Panel provides CSV export.</p></details>
+<details><summary>Where is data hosted?</summary><p class="fx-wr-answer">On AWS, primarily in the US-West-2 region and partly in the US-East-1 region. For participants in the EU and UK, 3DLOOK provides a DPA with SCCs and a UK Addendum where UK GDPR applies.</p></details>
+<details><summary>Is FitXpress a medical device?</summary><p class="fx-wr-answer">No. An independent regulatory assessment concluded that FitXpress does not meet the medical-device definition under the UK Medical Devices Regulations 2002 (UK MDR) or the EU Medical Devices Regulation (EU MDR) for its current intended purpose. FitXpress is not cleared, authorized or approved by the US Food and Drug Administration (FDA).</p></details></div></div>
+</section>
+<section class="fx-wr-section fx-wr-navy" id="demo" aria-labelledby="demo-heading">
+ <div class="fx-wr-wrap fx-wr-cta">
+  <div>
+   <p class="fx-wr-eyebrow">Book a demo</p>
+   <h2 id="demo-heading">See FitXpress in a wellness reward cycle</h2>
+   <p class="fx-wr-intro">Review guided capture, a sample verification record and how results reach your reward platform.</p>
+   <ul class="fx-wr-demo-list"><li>Guided front and side capture on a phone</li><li>A sample baseline and checkpoint record with capture checks</li><li>API delivery and pilot options for one population</li></ul>
+   <div class="fx-wr-related">
+    <p>Not ready to talk</p>
+    <ul>
+     <!-- [PLACEHOLDER] Replace href with the published URL of "Wellness Rewards Verification for Employers & Insurers Using AI 3D Body Scanning". -->
+     <li><a href="https://3dlook.ai/content-hub/">Wellness rewards verification for employers and insurers</a></li>
+     <li><a href="https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/">FitXpress data, privacy and regulatory FAQ</a></li>
+     <li><a href="https://3dlook.ai/fitxpress/for-connected-fitness/">FitXpress for connected fitness</a></li>
+     <li><a href="https://3dlook.ai/fitxpress/for-telehealth-and-weight-loss/">FitXpress for telehealth and weight loss</a></li>
+    </ul>
+   </div>
+  </div>
+  <div class="fx-wr-form">
+   <h3>Request a FitXpress demo</h3>
+   <p>Share your contact details and your program's requirements with 3DLOOK.</p>
+   <div class="fx-wr-form-host" id="fx-wr-demo-form"><p class="fx-wr-form-status" id="fx-wr-form-status" role="status">Loading the demo request form…</p><noscript><p>Request your demo through the 3DLOOK contact-page link.</p></noscript></div>
+   <div class="fx-wr-form-fallback"><p>You can also request a demo through the contact page.</p><a href="https://3dlook.ai/contact-us/" target="_blank" rel="noopener" data-cta="demo-fallback">Open the 3DLOOK demo request page <span aria-hidden="true">↗</span></a></div>
+   <p>Contact details are processed as described in the <a href="https://3dlook.ai/privacy-policy/">3DLOOK privacy policy</a>.</p>
+  </div>
+ </div>
+</section>
+</main>
+<footer class="fx-wr-foot" data-prototype-chrome="footer"><div class="fx-wr-wrap"><span>© 2026 3DLOOK · FitXpress for wellness rewards. FitXpress is not a medical device.</span><span>Procurement and security documentation: <a href="mailto:legal@3dlook.me">legal@3dlook.me</a></span></div></footer>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://3dlook.ai/fitxpress/for-health-plans-and-employer-wellness/#webpage",
+      "url": "https://3dlook.ai/fitxpress/for-health-plans-and-employer-wellness/",
+      "name": "Wellness Rewards Verification | FitXpress by 3DLOOK",
+      "description": "Verify wellness progress remotely for employer and insurer reward programs. Two guided smartphone photos return a timestamped body-measurement record.",
+      "inLanguage": "en",
+      "isPartOf": {"@id": "https://3dlook.ai/#website"},
+      "about": {"@id": "https://3dlook.ai/fitxpress/for-health-plans-and-employer-wellness/#service"},
+      "mainEntity": {"@id": "https://3dlook.ai/fitxpress/for-health-plans-and-employer-wellness/#service"},
+      "hasPart": {"@id": "https://3dlook.ai/fitxpress/for-health-plans-and-employer-wellness/#faq"},
+      "breadcrumb": {"@id": "https://3dlook.ai/fitxpress/for-health-plans-and-employer-wellness/#breadcrumb"}
+    },
+    {
+      "@type": "Service",
+      "@id": "https://3dlook.ai/fitxpress/for-health-plans-and-employer-wellness/#service",
+      "name": "FitXpress for wellness rewards",
+      "url": "https://3dlook.ai/fitxpress/for-health-plans-and-employer-wellness/",
+      "provider": {"@id": "https://3dlook.ai/#organization"},
+      "brand": {"@type": "Brand", "name": "FitXpress"},
+      "serviceType": "Remote body-measurement verification for employer and insurer wellness rewards programs",
+      "description": "FitXpress provides two-photo body scanning through an application programming interface and software development kits, returning 80+ body measurements, body composition estimates, capture-quality checks, scan identifiers and timestamps that support remote verification and documentation for wellness incentive programs.",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Employers running wellness incentive programs, health insurers and health plans including Medicare Advantage plans, employer benefit and wellness platforms, and population-health vendors"
+      },
+      "areaServed": ["US", "CA", "GB", "DE", "AE", "AU"],
+      "serviceOutput": [
+        {"@type": "Thing", "name": "80+ body measurements"},
+        {"@type": "Thing", "name": "Body composition estimates"},
+        {"@type": "Thing", "name": "Calculated metrics"},
+        {"@type": "Thing", "name": "Capture-quality checks and flags"},
+        {"@type": "Thing", "name": "Timestamps and scan identifiers"},
+        {"@type": "Thing", "name": "3D body model"}
+      ]
+    },
+    {"@type": "Organization", "@id": "https://3dlook.ai/#organization", "name": "3DLOOK", "url": "https://3dlook.ai/"},
+    {
+      "@type": "FAQPage",
+      "@id": "https://3dlook.ai/fitxpress/for-health-plans-and-employer-wellness/#faq",
+      "url": "https://3dlook.ai/fitxpress/for-health-plans-and-employer-wellness/",
+      "name": "Questions from benefits, operations and compliance teams",
+      "mainEntity": [
+        {"@type": "Question", "name": "Who decides whether a participant earns the reward?", "acceptedAnswer": {"@type": "Answer", "text": "Your program. FitXpress returns measurements, estimates and capture checks. Your platform applies the milestone rules, and the program administrator makes reward and eligibility determinations."}},
+        {"@type": "Question", "name": "How should we set reward thresholds?", "acceptedAnswer": {"@type": "Answer", "text": "Set thresholds well above scan-to-scan variation, which is typically under 1 cm for most evaluated measurements. State the rules to participants in advance: what qualifies, the checkpoint schedule and what happens after a retake."}},
+        {"@type": "Question", "name": "How does FitXpress help with fraud?", "acceptedAnswer": {"@type": "Answer", "text": "Photos are taken inside the guided flow, with no gallery upload. Pose and clothing checks run during capture, and every checkpoint produces a comparable, dated record. These controls support review of suspicious submissions. They do not detect every form of misuse, and your program keeps its own review and audit process."}},
+        {"@type": "Question", "name": "What about participants who cannot complete a scan?", "acceptedAnswer": {"@type": "Answer", "text": "The participant stands for the scan, and the current dataset does not support wheelchair users or amputees. Programs should keep an alternative way to qualify for the reward. Two gender options are available, and height, weight and gender are required inputs."}},
+        {"@type": "Question", "name": "Can participants use their own phones?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Capture runs on iOS 15 or later and on Android phones, including older models, which may show a lower frame rate during capture. The participant places the phone on a stable surface and follows voice and visual prompts."}},
+        {"@type": "Question", "name": "Does FitXpress support HIPAA-governed programs?", "acceptedAnswer": {"@type": "Answer", "text": "Where HIPAA applies, FitXpress can support the deployment with 3DLOOK acting as a business associate under an executed BAA. HIPAA is a regulatory framework, not a certification. Your organization determines whether its program involves protected health information."}},
+        {"@type": "Question", "name": "How do results reach our reward and reporting systems?", "acceptedAnswer": {"@type": "Answer", "text": "Results return through the API as JSON once processing is complete, delivered through webhook events with polling as the documented fallback. Webhooks currently have no automatic retries or signature verification, and polling is the recommended backup. Your team or platform vendor connects the results to reward, reporting and dashboard tools. The FitXpress Admin Panel provides CSV export."}},
+        {"@type": "Question", "name": "Where is data hosted?", "acceptedAnswer": {"@type": "Answer", "text": "On AWS, primarily in the US-West-2 region and partly in the US-East-1 region. For participants in the EU and UK, 3DLOOK provides a DPA with SCCs and a UK Addendum where UK GDPR applies."}},
+        {"@type": "Question", "name": "Is FitXpress a medical device?", "acceptedAnswer": {"@type": "Answer", "text": "No. An independent regulatory assessment concluded that FitXpress does not meet the medical-device definition under the UK Medical Devices Regulations 2002 (UK MDR) or the EU Medical Devices Regulation (EU MDR) for its current intended purpose. FitXpress is not cleared, authorized or approved by the US Food and Drug Administration (FDA)."}}
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://3dlook.ai/fitxpress/for-health-plans-and-employer-wellness/#breadcrumb",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://3dlook.ai/"},
+        {"@type": "ListItem", "position": 2, "name": "FitXpress for wellness rewards", "item": "https://3dlook.ai/fitxpress/for-health-plans-and-employer-wellness/"}
+      ]
+    }
+  ]
+}
+</script>
+<script>
+(function () {
+ 'use strict';
+ var root = document.querySelector('.fx-wr-page');
+ if (!root) return;
+ var pagePath = '/fitxpress/for-health-plans-and-employer-wellness/';
+ function track(event, properties) {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push(Object.assign({event: event, fx_vertical: 'wellness-rewards', landing_page: pagePath}, properties || {}));
+ }
+ root.querySelectorAll('[data-cta]').forEach(function (link) {
+  link.addEventListener('click', function () {
+   track('demo_click', {cta_position: link.getAttribute('data-cta'), link_url: link.getAttribute('href')});
+  });
+ });
+
+ var filterButtons = root.querySelectorAll('[data-queue-filter]');
+ var queueItems = root.querySelectorAll('#checkpoint-log li');
+ var labels = {all: 'Showing all 4 scans.', meets: 'Showing 2 scans that meet the program rule, waiting for administrator review.', below: 'Showing 1 scan below the program rule.', flagged: 'Showing 1 flagged scan with a retake sent.'};
+ filterButtons.forEach(function (button) {
+  button.disabled = false;
+  button.addEventListener('click', function () {
+   var filter = button.getAttribute('data-queue-filter');
+   filterButtons.forEach(function (item) {item.setAttribute('aria-pressed', String(item === button));});
+   queueItems.forEach(function (item) {item.hidden = filter !== 'all' && item.getAttribute('data-status') !== filter;});
+   root.querySelector('#queue-status').textContent = labels[filter];
+  });
+ });
+
+ // Verified public contact-page form. Replace formId with the approved shared
+ // "FX | LP | Demo" ID when available. Do not invent fields or a form endpoint.
+ // Keep the fallback link: it also works when scripts or third-party forms are blocked.
+ var formConfig = {region: 'na1', portalId: '6014382', formId: 'f227f5ce-8ce1-473d-a4f8-597c832979cc'};
+ var host = root.querySelector('#fx-wr-demo-form');
+ var status = root.querySelector('#fx-wr-form-status');
+ var formStarted = false;
+ var submitted = false;
+ var timeout;
+ function showFallbackStatus() {
+  if (status && status.isConnected) status.textContent = 'Use the contact-page link to request your demo.';
+ }
+ function createForm() {
+  if (!(window.hbspt && window.hbspt.forms)) {showFallbackStatus(); return;}
+  try {
+   window.hbspt.forms.create(Object.assign({}, formConfig, {
+    target: '#fx-wr-demo-form',
+    onFormReady: function () {
+     window.clearTimeout(timeout);
+     if (status && status.isConnected) status.remove();
+    },
+    onFormSubmitted: function () {
+     if (submitted) return;
+     submitted = true;
+     // Map this success-only event to the existing lead conversion in GTM.
+     // Do not add a second generate_lead tag if HubSpot already supplies one.
+     track('fitxpress_demo_form_submitted', {form_id: formConfig.formId, cta_position: 'demo-form'});
+    }
+   }));
+  } catch (error) {showFallbackStatus();}
+ }
+ function loadForm() {
+  if (formStarted) return;
+  formStarted = true;
+  timeout = window.setTimeout(showFallbackStatus, 12000);
+  if (window.hbspt && window.hbspt.forms) {createForm(); return;}
+  var existing = Array.from(document.scripts).find(function (script) {
+   return /js\.hsforms\.net\/forms\/(?:embed\/)?v2\.js/.test(script.src);
+  });
+  if (existing) {
+   existing.addEventListener('load', createForm, {once: true});
+   existing.addEventListener('error', showFallbackStatus, {once: true});
+   return;
+  }
+  var script = document.createElement('script');
+  script.src = 'https://js.hsforms.net/forms/embed/v2.js';
+  script.async = true;
+  script.onload = createForm;
+  script.onerror = showFallbackStatus;
+  document.head.appendChild(script);
+ }
+ if ('IntersectionObserver' in window) {
+  var observer = new IntersectionObserver(function (entries) {
+   if (entries.some(function (entry) {return entry.isIntersecting;})) {observer.disconnect(); loadForm();}
+  }, {rootMargin: '600px 0px'});
+  observer.observe(host);
+ } else {loadForm();}
+}());
+</script>
+</body>
+</html>

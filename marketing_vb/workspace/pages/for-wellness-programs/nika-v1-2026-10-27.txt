@@ -1,0 +1,395 @@
+TITLE: Body Progress Tracking for Wellness Platforms | FitXpressIllustrative waist measurement across four scansIllustrative entered weight across four scans
+META viewport : width=device-width, initial-scale=1
+META description : Two smartphone photos give your wellness app 80+ body measurements and body composition estimates, dated for scan-to-scan progress comparison.
+META canonical : https://3dlook.ai/fitxpress/for-wellness-platforms/
+META theme-color : #050f40
+META og:type : website
+META og:title : Body Progress Tracking for Wellness Platforms | FitXpress
+META og:description : Two smartphone photos give your wellness app 80+ body measurements and body composition estimates, dated for scan-to-scan progress comparison.
+META og:url : https://3dlook.ai/fitxpress/for-wellness-platforms/
+JSON-LD blocks: 1
+  types: ['WebPage', 'Service', 'Brand', 'BusinessAudience', 'Thing', 'Thing', 'Thing', 'Thing', 'Thing', 'Thing', 'Thing', 'Organization', 'FAQPage', 'Question', 'Answer', 'Question', 'Answer', 'Question', 'Answer', 'Question', 'Answer', 'Question', 'Answer', 'Question', 'Answer', 'Question', 'Answer', 'Question', 'Answer', 'Question', 'Answer', 'BreadcrumbList', 'ListItem', 'ListItem']
+=====
+Body Progress Tracking for Wellness Platforms | FitXpress
+
+Skip to content
+
+ 3DLOOK
+ How it worksPricingQuestionsBook a demo
+
+ Home/FitXpress for wellness platforms
+
+Wellness apps, coaching and employee wellness
+
+# FitXpress for wellness platforms: show members the body progress their scale misses
+
+Members scan with two photos on their own phone at baseline and at each check-in. Your platform receives 80+ body measurements, body composition estimates and a 3D body model in under 45 seconds, dated for a side-by-side progress view.
+
+Book a demo ↗See the progress view ↓
+
+Guided capture on a phone, a sample member record and the integration options for your app.
+
+Member 20418Illustrative data
+
+12 January 2027Baseline scan
+9 March 2027Week 8 scan
+
+Entered weight −0.3 kg74.2 kg→73.9 kg
+
+Waist measurement −3.4 cm84.0 cm→80.6 cm
+
+Hip measurement −1.3 cm102.5 cm→101.2 cm
+
+Body-fat estimate −1.1 percentage points31.2%→30.1%
+
+Weight is almost unchanged. The waist measurement is 3.4 cm smaller than at baseline.
+
+Illustrative values, not member results. Body composition values are estimates. Your platform decides which results members see.
+
+2 photosguided front and side capture on the member's phone
+
+Under 45 secfrom photos to a structured record
+
+< 1 cmtypical scan-to-scan difference for most evaluated measurements
+
+From $1,000per month, with guided implementation support
+
+100+ clients have used 3DLOOK body scanning since 2016, across digital health, weight management and apparel.
+
+The problem
+
+## Scale weight often stays flat while the member's body changes
+
+Scale weight can hold steady for weeks while waist, hip and body-fat change. When weight is the only physical signal, the change a member makes stays outside the progress view.
+
+- 
+
+### The scale hides change
+A member who loses fat and holds lean mass sees a flat number. The app has nothing else to show at the check-in.
+
+- 
+
+### Progress photos do not compare
+Camera-roll photos differ in angle, distance and lighting. Neither the member nor the coach can read a change from them with confidence.
+
+- 
+
+### Personalization stops at the survey
+Content and coaching prompts run on a stated goal and a self-reported weight. Members on the same goal receive the same journey.
+
+- Employee wellness
+
+### Program reports rest on self-report
+Employer clients ask what changed in the program. Self-reported weigh-ins give the platform little to report.
+
+For product, growth and coaching teams
+
+## Add a measured body record to the wellness journey you already run
+
+One guided scan at baseline and at each check-in returns the same fields every time. Your platform decides what members see and what happens next.
+
+- 
+
+### A progress view beyond weight
+Show waist, hip and body-fat change next to scale weight, with the date of each scan.
+
+- 
+
+### Results tied to the member's goal
+A waist goal shows the waist. A body composition goal shows fat mass and lean mass estimates. Other outputs stay in secondary views.
+
+- 
+
+### A shared reference for coaching
+The coach reviews the same dated comparison the member sees, and the check-in conversation starts from what changed.
+
+- 
+
+### A physical trend for personalization
+Each scan adds a dated record to the member profile. Your rules combine it with goals, habits and activity to select content.
+
+Progress view
+
+## Show members where their body changed between check-ins
+
+Each follow-up scan is compared with the baseline. The progress view shows the measurements that moved, the direction of change and the date of each scan.
+
+Body-fat percentage is shown as a dated trend with a plain-language explanation, which reduces the risk of overinterpreting a single value.
+
+3D Body Progress on Pro. Place the baseline and current 3D body models side by side, with the measurements that changed highlighted.
+
+See the progress view in the demo
+
+Member 20418Baseline to week 12, four check-insIllustrative view
+
+Waist measurement
+Entered weight
+
+Waist measurement−4.5 cm from baseline at week 12
+
+Entered weight−0.4 kg from baseline at week 12
+
+Both charts span 12 units on the vertical axis, which keeps the two lines comparable.
+ Illustrative interface and values, not member results. Your platform designs the progress view and decides which outputs members see.
+
+Personalization and coaching
+
+## Connect each scan result to the next step in the member's journey
+
+A comparison is useful when it leads somewhere. Your rules turn the change since baseline into a progress card, an article, a coaching prompt or the next scheduled check-in.
+
+In a coached program, the coach opens the same dated comparison the member sees. In an automated program, the comparison selects the content.
+
+Program logic, set by your team. FitXpress returns the data and capture flags. Your platform owns the rules, the wording members read and the timing of each prompt.
+
+Discuss your member journey
+
+Next-step rulesWeek 8 check-inIllustrative rules
+
+- Waist down 2 cm or more since baselineProgress card and articleUses the waist measurement from both scans
+
+- Weight flat, waist downCoach promptCoach explains where the change happened
+
+- No follow-up scan 6 weeks after baselineCheck-in reminderUses the date of the last scan
+
+- Capture flag on the scanRetake promptUses the pose and clothing checks returned with the scan
+
+ Illustrative rules. FitXpress does not set program rules or send messages to members; your platform does.
+
+Outputs
+
+## The same record format at baseline and at every check-in
+
+FitXpress returns each scan as a timestamped record through the application programming interface (API). The fields stay the same from scan to scan, and each record is ready to compare with the one before it.
+
+ Body measurements
+
+### 80+ body measurements
+Waist, hip, chest, thigh and other dimensions in centimeters, produced by the same processing at every scan.
+ Body composition
+
+### Body composition estimates
+Body-fat percentage, fat mass and lean mass estimates. Body mass index (BMI) and basal metabolic rate (BMR) are calculated metrics.
+ 3D model
+
+### 3D body model and 3D Body Progress
+A 3D model reconstructed from each scan. On Pro, compare two scans in a 3D view and show a goal with 3D Goal Visualization.
+ Capture quality
+
+### Pose and clothing checks
+Real-Time Pose Validation and the Clothing Detector correct the capture during the shot. Their results return with each scan for your retake rules.
+ Comparison
+
+### Timestamp and scan identifier
+Each record shows when it was captured. Your platform selects two scan identifiers, and FitXpress returns the comparison between them.
+ Data delivery
+
+### Formats for your app and analytics
+JavaScript Object Notation (JSON) through the API, comma-separated values (CSV) export from the FitXpress Admin Panel and 3D model export.
+
+FitXpress is not a medical device. It provides structured body data for wellness and coaching experiences; how results are presented and used stays with your platform.
+
+See a sample record in the demo
+
+How it works
+
+## Add a two-photo scan to your app's check-in flow
+
+Your team embeds FitXpress through the API and web and mobile software development kits (SDKs). The capture flow is white-label, and members stay inside your app throughout.
+
+- 
+
+### Baseline scan with your consent screen
+Your app explains which data is captured, how it is used and how long it is kept. The member then completes the first guided front and side capture.
+
+- 
+
+### Check-ins under the same conditions
+The member repeats the scan with the same pose and similar conditions. For body-change programs, 4 to 12 weeks between scans is a practical starting range.
+
+- 
+
+### Comparison into the experience
+Results return through webhook events, with polling as the documented fallback. Your app updates the progress view and triggers the next step.
+
+Native SDKs capture on the device and work offline; processing starts when the photos reach the API. 3DLOOK’s mobile body scanning technology explains the capture and processing approach.
+
+Compare approaches
+
+## Choose the progress signal for each part of the program
+
+Most wellness apps already collect some body data from members. Each method answers a different question at a different cost to the member.
+
+Comparison of progress-tracking methods in a wellness app
+
+Dimension | 
+FitXpress | 
+Self-reported weigh-ins | 
+Progress photos | 
+Bioelectrical impedance (BIA) scale | 
+
+What the platform receives | 
+80+ body measurements, body composition estimates, a 3D model and a timestamp | 
+A weight value typed by the member | 
+Images with no measurements | 
+Weight and body composition estimates, where the scale connects to the app | 
+
+What the member needs | 
+A phone and two guided photos | 
+A bathroom scale | 
+A phone | 
+A compatible scale at home | 
+
+Main source of variation | 
+Capture conditions, clothing and entered height | 
+Time of day, scale and typing errors | 
+Angle, distance, lighting and pose | 
+Hydration, time of day and the device's equation | 
+
+What it shows about change | 
+Where the body changed, with dated values | 
+Total weight change | 
+A visual impression, without values | 
+Total weight and estimated composition change | 
+
+### FitXpressWhat the platform receives80+ body measurements, body composition estimates, a 3D model and a timestampWhat the member needsA phone and two guided photosMain source of variationCapture conditions, clothing and entered heightWhat it shows about changeWhere the body changed, with dated values
+
+### Self-reported weigh-insWhat the platform receivesA weight value typed by the memberWhat the member needsA bathroom scaleMain source of variationTime of day, scale and typing errorsWhat it shows about changeTotal weight change
+
+### Progress photosWhat the platform receivesImages with no measurementsWhat the member needsA phoneMain source of variationAngle, distance, lighting and poseWhat it shows about changeA visual impression, without values
+
+### Bioelectrical impedance (BIA) scaleWhat the platform receivesWeight and body composition estimates, where the scale connects to the appWhat the member needsA compatible scale at homeMain source of variationHydration, time of day and the device's equationWhat it shows about changeTotal weight and estimated composition change
+
+Scale weight stays a useful trend. FitXpress adds measurements next to it, with no extra device for the member.
+
+Validation and data handling
+
+## Check repeatability and data handling before the first check-in ships
+
+A progress view compares each member with themselves. Repeatability decides whether a change between two scans is real or noise. Accuracy against expert manual measurement shows how a single value relates to a tape measure.
+
+< 1 cmTypical scan-to-scan difference for most evaluated body measurements.
+
+96 to 97%Body-measurement accuracy against expert manual measurement, with typical absolute error of 1.5 to 2.0 cm.
+
+0.89 cmWaist repeatability across repeated scans.
+
+2.14 cmWaist mean absolute error against expert manual measurement, in the same study.
+
+These figures come from internal validation and have not been peer-reviewed. The validation population covered ages 16 to 78, weights of 38 to 210 kg and heights of 150 to 220 cm, from the US and Europe. Accuracy is not published by body shape or skin tone. Results depend on form-fitting clothing, a completed guided capture and an entered height within 2 cm. Body composition values are estimates. Supporting methodology is available under a non-disclosure agreement (NDA).
+
+Body scanning accuracy, repeatability and validation methodology
+
+- Photo retentionFitXpress deletes photos immediately after processing or retains them for up to 30 days under a contract-specific policy. Retained photos are blurred, and face obfuscation is applied during capture.
+
+- Member identifiersFitXpress does not receive names or contact details. Scan records use randomly generated identifiers, which your platform maps to member profiles.
+
+- General Data Protection Regulation (GDPR)In most deployments, your platform acts as data controller and 3DLOOK acts as data processor. A data processing agreement (DPA) with Standard Contractual Clauses (SCCs) covers international transfers, with a UK Addendum where UK GDPR applies.
+
+- HostingFitXpress data is hosted on Amazon Web Services (AWS), primarily in the US-West-2 region and partly in the US-East-1 region.
+
+- App release requirementsYour app's privacy policy, consent screen and health and fitness entries in App Store privacy details and the Google Play Data safety form cover the scan. Your team owns that wording.
+
+- Encryption and model trainingData is encrypted in transit with Transport Layer Security (TLS) and at rest. 3DLOOK does not use production customer data to train its models without the customer’s explicit, documented authorization.
+
+- DeletionYour platform requests deletion of specific scan outputs by sending their scan identifiers to 3DLOOK.
+
+- Regulatory statusAn independent regulatory assessment concluded that FitXpress does not meet the medical-device definition under the UK Medical Devices Regulations 2002 (UK MDR) or the EU Medical Devices Regulation (EU MDR) for its current intended purpose. FitXpress is not cleared, authorized or approved by the US Food and Drug Administration (FDA).
+
+The FitXpress data, privacy, security and regulatory frequently asked questions cover hosting, deletion, SOC 2 and FDA information. Privacy contact: privacy@3dlook.me.
+
+Pilot and pricing
+
+## Start with one check-in cycle for one member cohort
+
+Run a baseline scan and one follow-up with a defined group of members. Agree the measures with product, growth and coaching before launch, and review them together at the end.
+
+Starter
+$1,000 per month for up to 500 scans.
+
+Pro
+$1,500 per month for up to 1,000 scans, including 3D Body Progress and 3D Goal Visualization.
+
+Both plans include API access, web and mobile SDKs and guided implementation support. Personalized plans cover higher scan volumes, a multilingual guided capture flow and dedicated customer support.
+ Monthly plan pricing. Scope and implementation requirements are agreed with your team.
+
+View FitXpress plans and pricing ↗
+
+- 
+
+### Review the journey
+The demo covers guided capture on a phone, a sample member record and where the scan fits in your app's check-in flow.
+
+- 
+
+### Design the pilot
+Choose the cohort, the check-in interval, the results members see and the next-step rules. Agree the measures before launch.
+
+- 
+
+### Review the results
+Read the agreed measures with your team and decide the scope of the rollout.
+
+### Measures to agree for the pilot
+
+- Scan completion rate at baseline
+- Retake rate
+- Second-scan rate at the follow-up check-in
+- Use of the progress view
+- Member understanding of the displayed results
+
+Discuss a pilot
+
+Frequently asked questions
+
+## Questions from wellness product, coaching and data teams
+How often should members scan?
+For body-change programs, 4 to 12 weeks between scans is a practical starting range, adjusted to the program goal and the expected rate of change. Consistent capture conditions matter more than frequency, because repeatability decides whether the change between two scans is real.
+Which results should members see?
+Your platform decides. A focused progress view shows the measurements tied to the member's goal, for example the waist for a waist goal or fat mass and lean mass estimates for a body composition goal. Labels state which outputs are measurements and which are estimates.
+Can members use their own phones?
+Yes. Capture runs on iOS 15 or later and on Android phones, including older models, which may show a lower frame rate during capture. No other equipment is needed. The member stands for the scan, and the current dataset does not support wheelchair users or amputees. Two gender options are available. Height, weight and gender are required inputs, and an entered height more than 2 cm off affects results.
+Does FitXpress measure muscle?
+FitXpress reports fat mass and lean mass estimates. Lean mass includes organs, bone and water along with muscle; it is not a direct measurement of skeletal muscle.
+Does 3DLOOK know which scans belong to which member?
+No. Scan records carry randomly generated identifiers. Your platform links them to member profiles and selects the two scans to compare, and FitXpress returns the comparison between those records.
+Can we use scan results for wellness rewards or incentives?
+Programs that connect body data to rewards need additional governance, a privacy review and clear program rules. Reward and eligibility determinations stay with the program administrator. FitXpress for health plans and employer wellness covers remote verification for incentive programs.
+Who handles member consent and privacy notices?
+In most deployments, your platform is the data controller. Your team provides the privacy notice, sets the lawful basis, obtains consent where the workflow requires it and defines retention. 3DLOOK processes scan data on your behalf under the DPA. Where the Health Insurance Portability and Accountability Act (HIPAA) applies to your deployment, 3DLOOK can act as a business associate under an executed Business Associate Agreement (BAA).
+How does scan data reach our app?
+Results return through the API as JSON, delivered through webhook events with polling as the documented fallback. Webhooks currently have no automatic retries or signature verification, and polling is the recommended backup. The FitXpress Admin Panel provides a central view of scan results and CSV export.
+Is FitXpress a medical device?
+No. An independent regulatory assessment concluded that FitXpress does not meet the medical-device definition under UK MDR or EU MDR for its current intended purpose. FitXpress is not cleared, authorized or approved by the FDA. It does not diagnose conditions or make health decisions.
+
+Book a demo
+
+## See FitXpress in your member journey
+
+Review guided capture, a sample member record and the integration options for your app's check-in flow.
+
+- Guided front and side capture on a phone
+- A sample baseline and follow-up comparison
+- API, SDK and white-label options for your app
+
+Not ready to talk
+
+- AI body data for wellness platforms
+
+- How to evaluate mobile body scanning accuracy
+
+- FitXpress for connected fitness
+
+- FitXpress for health plans and employer wellness
+
+### Request a FitXpress demo
+
+Share your contact details and your platform's requirements with 3DLOOK.
+
+Loading the demo request form…
+
+You can also request a demo through the contact page.Open the 3DLOOK demo request page ↗
+
+Contact details are processed as described in the 3DLOOK privacy policy.
+
+© 2026 3DLOOK · FitXpress for wellness platforms. FitXpress is not a medical device.Procurement and security documentation: legal@3dlook.me

@@ -8,6 +8,9 @@ for: Nika (+ Asselya)
 
 # Clinical trials: разбор трёх драфтов (28.10)
 
+> Исправлено 28.10 после отправки: карточка 2 блока проблемы. Вместо одного исследования (5.98 см) — разброс по
+> трём источникам, см. раздел 2.
+
 Проверено по пайплайну страниц. Цифры сверены с первоисточниками, claims с `proof-points` / `compliance` /
 `tech-spec`, угол с контент-планом хаба и картой ключей. Дальше детектор, рендер на 1280 и 375 px и слепые
 судьи, по одному на каждую версию. Версии ниже называю по углу: **A** — v3 Ники (стандартизация по сайтам),
@@ -20,8 +23,9 @@ for: Nika (+ Asselya)
    замера для исследования» мы не вытягиваем (раздел 1). Поэтому базой берём B (твоя v2) и правки C, а не A.
    Hero и value cards пишем для DCT-платформ.
 2. **Боль надо переписать.** BELIEVE и 30-45% не держатся (раздел 2). Честная дыра другая: дома исследование
-   уже получает вес, а обхваты нет. EMA просит талию как вторичный endpoint, а самозамер завышает её в среднем
-   на 5.98 см. Черновик блока на английском в разделе 2.
+   уже получает вес, а обхваты нет. EMA просит талию как вторичный endpoint, а самозамер расходится с замером
+   специалиста в среднем на 1-6 см, и в разных исследованиях в разную сторону. Черновик блока на английском в
+   разделе 2.
 3. **Что обязательно убрать:** React Native (во всех трёх), offline, webhooks, iOS 15, «2 см», «audit-ready»,
    BMI pre-check. Форму заменить на общую, заглушки удалить. В C вернуть канон «not a medical device» (раздел 3).
 4. **Длина:** A ~3 150, B ~2 910, C ~2 070 при бюджете 1 100-1 600 и 4-6 FAQ. План сокращения в разделе 4.
@@ -79,9 +83,10 @@ waist circumference во вторичных endpoints.
 
 - **Дома уже меряют вес, а талию нет.** FDA в DHT guidance прямо допускает домашний вес для того же endpoint,
   при условии verification и validation (§IV.D.2). Талию EMA просит документировать как вторичный endpoint
-  (guideline 2016, §4.2.1). Сам участник её не измерит: при самостоятельном замере талию завышали в среднем
-  на 5.98 см (Contardo Ayala 2014, 622 человека). Значит, между визитами у исследования есть вес и нет
-  обхватов. Это наша дыра, и она честная.
+  (guideline 2016, §4.2.1). Самозамер её не заменяет: у 622 взрослых талию завышали в среднем на 5.98 см
+  (Contardo Ayala 2014), у 1 298 сотрудников на 1.1 см (Dekkers 2008), а в части исследований её занижали на
+  1-3 см (обзор IAS/ICCR, Ross 2020). Ошибка непредсказуема даже по знаку. Значит, между визитами у
+  исследования есть вес и нет надёжных обхватов. Это наша дыра, и она честная.
 - **Удалённые визиты FDA считает вопросом удержания.** Obesity draft guidance советует предлагать транспорт и
   варианты для тех, кто не может ходить на все визиты. DCT guidance: домашние активности «may reduce the
   need for travel and improve engagement, recruitment, and retention». Цитировать можно только с этим «may».
@@ -92,7 +97,7 @@ waist circumference во вторичных endpoints.
 
 **Чего не писать:** dropout из-за визитов «только на замер» (источника нет); любые цифры снижения dropout
 от удалённых визитов (у FDA только «may»); 30-45% как текущий attrition; «FDA требует DXA». И не ставить
-рядом 5.98 см самозамера и наши 1.5-2.0 см: это разные исследования и разные эталоны, а guardrail #2
+рядом ошибку самозамера и наши 1.5-2.0 см: это разные исследования и разные эталоны, а guardrail #2
 запрещает их сводить.
 
 ### Блок проблемы под угол B: черновик (EN)
@@ -108,8 +113,9 @@ waist circumference во вторичных endpoints.
 > **Card 1: "Secondary endpoint".** The European Medicines Agency asks for waist circumference to be documented
 > as a secondary endpoint in weight-management trials. [European Medicines Agency guideline, 2016]
 >
-> **Card 2: "5.98 cm".** Participants who measured their own waist overestimated it by 5.98 cm on average, in a
-> study of 622 adults. [Contardo Ayala et al., 2014]
+> **Card 2: "1 to 6 cm".** Self-measured waist differs from a trained measurer's reading by about 1 to 6 cm on
+> average, depending on the study, and the direction of the error varies. [Ross et al., IAS/ICCR consensus, 2020;
+> Contardo Ayala et al., 2014; Dekkers et al., 2008]
 >
 > FitXpress adds waist, hip and 80+ body measurements to the home check-in, captured from two guided phone
 > photos inside the study's own app. The sponsor decides how the additional data is used.
