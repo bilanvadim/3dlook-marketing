@@ -30,3 +30,5 @@
   (DCT platform vs sponsor) and on rewriting `fx-clinical-trials.md`.
 - 2026-10-28, Vadim's answers: «1. для платформ 2. ні 3. так». Hero for DCT platforms; `fx-clinical-trials.md`
   stays as is; send the review and commit. Review, `gate-reports.md` and the landing-map row updated.
+- 2026-10-28, sent on Vadim's «відправ»: Russian reply in Nika's thread (ts 1793184940.493989, mentions Nika and
+  Asselya) plus `review-2026-10-28-nika-ru.md` (F0CCSBV4Y6A) and `sources-problem-block.md` (F0CCU583V3L) as files.
