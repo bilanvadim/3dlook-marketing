@@ -1,0 +1,105 @@
+{
+ "generated": "2026-10-29T05:42:02+00:00",
+ "items": [
+  {
+   "id": "761313df-129a-439f-90a3-5cd79ea402d5",
+   "title": "Counsel Health Launches AI-Powered Weight Management Program Through LillyDirect Partnership",
+   "date": "2026-10-28",
+   "tags": [
+    "Startup",
+    "Primary Care",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services",
+    "Chronic Condition Management"
+   ],
+   "url": "https://hlth.com/insights/news/counsel-health-launches-ai-powered-weight-management-program-through-lillydirect-partnership"
+  },
+  {
+   "id": "b22694b2-ddb8-4272-a297-c4bd905a9485",
+   "title": "AI-Enabled Clinical Decision Support Improves Antibiotic Prescribing in Rural Australian Hospitals",
+   "date": "2026-10-28",
+   "tags": [
+    "Operational Efficiency",
+    "Health System & Health Provider",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/ai-enabled-clinical-decision-support-improves-antibiotic-prescribing-in-rural-australian-hospitals"
+  },
+  {
+   "id": "582149f8-a6c3-4856-ba9d-e1947d29c462",
+   "title": "Vera Health Secures $28.5M to Expand AI-Powered Clinical Search Platform",
+   "date": "2026-10-28",
+   "tags": [
+    "Investments and Partnerships",
+    "Clinical Trial Solutions",
+    "Startup",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/vera-health-secures-28-5m-to-expand-ai-powered-clinical-search-platform"
+  }
+ ],
+ "analyses": {
+  "761313df-129a-439f-90a3-5cd79ea402d5": {
+   "id": "761313df-129a-439f-90a3-5cd79ea402d5",
+   "score": 3,
+   "segment": "FitXpress §1 Telehealth & GLP-1",
+   "what": "Counsel Health запустила програму weight management: GLP-1 (Zepbound, Wegovy, Foundayo) плюс longitudinal primary care та AI check-ins. Через партнерство з LillyDirect програма доступна в 44 штатах США. Ціна: $300 на рік або $29 за візит.",
+   "why": "Пацієнти отримують рецепт після digital intake та оцінки лікаря, а AI check-ins стежать за титрацією і переносимістю. FitXpress може додати в intake BMI з двох фото, перевірений замість self-report, а в регулярні check-ins — повторні вимірювання тіла та body composition, щоб прогрес між візитами був видимим. Фраза засновника «prescription alone is not a care model» прямо збігається з нашим longitudinal-кутом.",
+   "campaign": {
+    "title": "Counsel Health: GLP-1 weight management через LillyDirect",
+    "profile": "nick",
+    "market": "USA",
+    "targets": "Counsel Health: кампанія на один акаунт (fixed list, як Options Medical Weight Loss / Virta Health). Опційно — інші virtual care провайдери, доступні через LillyDirect; у статті вони не названі, потрібен research.",
+    "roles": "Founder/CEO (Dr. Muthu Alagappan), Chief Medical Officer / Medical Director, Head of Product, Head of Clinical Operations, CTO",
+    "angle": "Ви щойно запустили GLP-1 weight management через LillyDirect у 44 штатах і самі кажете, що рецепт — це ще не care model. Два фото на digital intake дають перевірений BMI, а ті самі скани в AI check-ins показують прогрес тіла між візитами, поки пацієнт не кинув терапію.",
+    "existing_campaign": "",
+    "task": "USA: Counsel Health (one-account fixed list, Nick) — BMI verification at digital intake + repeat body scans inside AI check-ins for its new GLP-1 weight management program via LillyDirect"
+   },
+   "caveat": "У реєстрі компанії немає: не клієнт і з нею ще не контактували. Виручка й розмір у статті не вказані (тег Startup), тож треба перевірити поріг $2M+. Не подавати LillyDirect/Eli Lilly як партнера 3DLOOK і не робити клінічних claims про GLP-1. Платформа chat-based: перевірити, чи є в них мобільний app-flow, куди можна вбудувати скан.",
+   "play": "direct_account",
+   "companies": [
+    "Counsel Health",
+    "LillyDirect",
+    "Eli Lilly and Company",
+    "Notable Health"
+   ],
+   "_date": "2026-10-28"
+  },
+  "b22694b2-ddb8-4272-a297-c4bd905a9485": {
+   "id": "b22694b2-ddb8-4272-a297-c4bd905a9485",
+   "score": 0,
+   "segment": "—",
+   "what": "Незалежна оцінка UTS і St Vincent's Hospital Sydney показала, що AI-інструмент Clinical Branches (AMPS) покращив призначення антибіотиків у сільських лікарнях Західної Австралії. Водночас із 68 сайтів інструментом стабільно користувалися лише 9.",
+   "why": "Це підтримка лікарських рішень щодо антибіотиків у лікарнях: ні body data, ні сегментів ICP 3DLOOK тут немає.",
+   "play": "none",
+   "companies": [
+    "University of Technology Sydney",
+    "St Vincent's Hospital Sydney",
+    "Clinical Branches",
+    "Western Australian Country Health Service"
+   ],
+   "_date": "2026-10-28"
+  },
+  "582149f8-a6c3-4856-ba9d-e1947d29c462": {
+   "id": "582149f8-a6c3-4856-ba9d-e1947d29c462",
+   "score": 0,
+   "segment": "—",
+   "what": "Vera Health залучила $28.5M у раунді Series A, щоб розширювати AI-пошук медичної літератури для клініцистів (понад 800 тис. користувачів, 190 країн). Конкуренти: OpenEvidence, Doximity Ask, ClinicalKey, UpToDate.",
+   "why": "Це AI-пошук медичних доказів для лікарів: не наш ICP, вимірювання тіла тут не потрібні.",
+   "play": "none",
+   "companies": [
+    "Vera Health",
+    "OpenEvidence",
+    "Doximity",
+    "Elsevier",
+    "Wolters Kluwer"
+   ],
+   "_date": "2026-10-28"
+  }
+ },
+ "posts": [
+  "workspace/social/hlth-news/counsel-health-launches-ai-powered-weight-management-program-through-lillydirect-partnership/linkedin-vadim/post.md"
+ ]
+}
