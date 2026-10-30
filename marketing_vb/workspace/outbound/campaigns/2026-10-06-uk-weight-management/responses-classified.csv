@@ -1,16 +1,92 @@
-"person_id","linkedin_url","full_name","company","response_date","category","confidence","summary","extracted_action","suggested_reply_draft"
-"bjorn-ronaasen","https://www.linkedin.com/in/bjorn-ronaasen/","Bjorn Ronaasen","Counterweight","2026-10-23T14:43:09+03:00","interested","high","Apologized for the delayed reply and agreed to book a call: «Sure. I'll book something in now.»","Wants to schedule a call about clinical oversight/reporting fit for CW2; will self-book.","Hi Bjorn, great - here's the link to grab a time: https://meetings.hubspot.com/katerina-galich. Looking forward to it."
-"bjorn-ronaasen","https://www.linkedin.com/in/bjorn-ronaasen/","Bjorn Ronaasen","Counterweight","2026-10-09T13:46:39+03:00","question","high","Asked what the call would be about: «Thanks for your interest. What would you like to discuss?»","Needs a one-line brief on the discussion topic before committing to a call.","Hi Bjorn, happy to explain - I'd like to discuss how a two-photo home scan could support clinical oversight for the CW2 programme. Could we grab 15 minutes?"
-"juli-mey","https://www.linkedin.com/in/juli-mey/","Juli Mey","MoreLife (UK) Ltd","2026-10-23T20:04:42+03:00","interested","high","Apologized for the delay and said she would be happy to learn more about FitXpress for practitioner workflows at MoreLife, and will schedule time via the calendar.","Wants a 15-min call on FitXpress fit for Tier 3 practitioner workflows; will self-schedule via calendar link.","Hi Juli, lovely to hear from you - here's my calendar: https://meetings.hubspot.com/katerina-galich. Pick whatever works best."
-"juli-mey","https://www.linkedin.com/in/juli-mey/","Juli Mey","MoreLife (UK) Ltd","2026-10-09T19:41:20+03:00","interested","high","Agreed to plan a call together next week and asked for Katerina's availability.","Wants a call next week; needs Katerina's availability (days/times).","Hi Juli, thank you - I'm free [insert days/times] next week, or you can pick a slot directly here: https://meetings.hubspot.com/katerina-galich."
-"mzwandile-mahlangu-36ba93122","https://www.linkedin.com/in/mzwandile-mahlangu-36ba93122/","Mzwandile Mahlangu","Counterweight","2026-10-16T12:45:54+03:00","referral","high","Referred the reporting question to «@Naeem Witbooi» at Counterweight.","New contact to add to outbound: Naeem Witbooi, likely owns programme reporting at Counterweight Ltd.",""
-"jasoncya","https://www.linkedin.com/in/jasoncya/","Dr. Jason Chin Yu Aun","Reset Health","2026-10-19T11:14:15+03:00","maybe-later","medium","Acknowledged the outreach and said he will check internally and revert back on the partner-technology question for Roczen.","Awaiting his internal check; follow up in 2-3 weeks if no further reply.",""
-"daniela-alves-aba63749","https://www.linkedin.com/in/daniela-alves-aba63749/","Daniela Alves","Homerton Healthcare NHS Foundation Trust","2026-10-20T15:45:50+03:00","referral","high","Referred the weight management service query to «Dorottya Norton, the lead AHP lead».","New contact to add to outbound: Dorottya Norton, lead AHP lead at Homerton weight management service.",""
-"sarah-le-brocq-85b07a26","https://www.linkedin.com/in/sarah-le-brocq-85b07a26/","Sarah Le Brocq","Perspectum Ltd","2026-10-22T10:19:58+03:00","question","high","Asked for a one-pager or overview of FitXpress that she can share internally with Perspectum.","Send a FitXpress one-pager / overview document for her to forward to Perspectum stakeholders.","Hi Sarah, thank you - attaching our FitXpress overview one-pager here [link/attach]. Happy to join a call with the Perspectum team if useful."
-"elliot-mcewan-1b969219b","https://www.linkedin.com/in/elliot-mcewan-1b969219b/","Elliot McEwan","Counterweight","2026-10-22T01:19:50+03:00","question","medium","Questioned whether the outreach was an automated message: «Is this an automated message?»","Confirm the message is from Katerina personally, then restate the original ask about who decides on partner capabilities at Counterweight.","Hi Elliot, not automated - this is Katerina writing directly. I was hoping to find who at Counterweight decides on new partner capabilities for members. Any pointer appreciated."
-"sean-patrick-mcgowan-a3b114248","https://www.linkedin.com/in/sean-patrick-mcgowan-a3b114248/","Sean-Patrick McGowan","Reset Health","2026-10-21T19:02:00+03:00","question","medium","Asked for more information to be emailed to opportunities@resethealth.clinic so he can pass it to the internal team.","Send a short info packet / one-pager to opportunities@resethealth.clinic as requested.","Hi Sean-Patrick, thank you - sending a short overview to opportunities@resethealth.clinic now so your team has the details."
-"judyhoskins","https://www.linkedin.com/in/judyhoskins/","Judy Hoskins","LighterLife","2026-10-24T11:59:33+03:00","other/unclear","medium","Said she is no longer with LighterLife and thanked Katerina for the contact, with no referral given.","No active lead here; consider separately finding her replacement or the current online-delivery contact at LighterLife.",""
-"georgina-walsh-33b4b5127","https://www.linkedin.com/in/georgina-walsh-33b4b5127/","Georgina Walsh","LighterLife","2026-10-28T01:03:47+02:00","other/unclear","low","Brief sign-off, «Good luck», sent the day after providing a referral email.","None actionable; reads as a closing remark, no further ask needed.",""
-"georgina-walsh-33b4b5127","https://www.linkedin.com/in/georgina-walsh-33b4b5127/","Georgina Walsh","LighterLife","2026-10-27T12:08:36+02:00","referral","medium","Said it is handled in-house and to email for advice: «if you email them they can advise, helo@lighterlife.com» (likely a typo for hello@lighterlife.com).","Follow up via hello@lighterlife.com (verify spelling) regarding who owns online programme delivery at LighterLife.",""
-"dr-sahira-dar-59801453","https://www.linkedin.com/in/dr-sahira-dar-59801453/","Dr Sahira Dar","Lanarkshire Medical Group","2026-10-27T18:52:15+02:00","decline","high","Thanked Katerina for the information but said FitXpress «is not suitable for the space I am working in».","Exclude from future campaigns; not a fit for her current GP / lifestyle coaching setting.",""
-"dr-sahira-dar-59801453","https://www.linkedin.com/in/dr-sahira-dar-59801453/","Dr Sahira Dar","Lanarkshire Medical Group","2026-10-27T18:51:46+02:00","other/unclear","low","Brief courtesy reply, «Thanks Katerina», sent one minute before her substantive decline message.","None; precedes the decline reply in the same thread, no separate action needed.",""
+"person_id","linkedin_url","full_name","company","response_date","category","confidence","summary","extracted_action","suggested_reply_draft","referral_to","followup_draft","followup_draft_2"
+"bjorn-ronaasen","https://www.linkedin.com/in/bjorn-ronaasen/","Bjorn Ronaasen","Counterweight","2026-10-23T14:43:09+03:00","interested","high","Apologized for the delayed reply and agreed to book a call: «Sure. I'll book something in now.»","Wants to schedule a call about clinical oversight/reporting fit for CW2; will self-book.","Hi Bjorn, great - here's the link to grab a time: https://meetings.hubspot.com/katerina-galich. Looking forward to it.","","",""
+"bjorn-ronaasen","https://www.linkedin.com/in/bjorn-ronaasen/","Bjorn Ronaasen","Counterweight","2026-10-09T13:46:39+03:00","question","high","Asked what the call would be about: «Thanks for your interest. What would you like to discuss?»","Needs a one-line brief on the discussion topic before committing to a call.","Hi Bjorn, happy to explain - I'd like to discuss how a two-photo home scan could support clinical oversight for the CW2 programme. Could we grab 15 minutes?","","",""
+"juli-mey","https://www.linkedin.com/in/juli-mey/","Juli Mey","MoreLife (UK) Ltd","2026-10-23T20:04:42+03:00","interested","high","Apologized for the delay and said she would be happy to learn more about FitXpress for practitioner workflows at MoreLife, and will schedule time via the calendar.","Wants a 15-min call on FitXpress fit for Tier 3 practitioner workflows; will self-schedule via calendar link.","Hi Juli, lovely to hear from you - here's my calendar: https://meetings.hubspot.com/katerina-galich. Pick whatever works best.","","",""
+"juli-mey","https://www.linkedin.com/in/juli-mey/","Juli Mey","MoreLife (UK) Ltd","2026-10-09T19:41:20+03:00","interested","high","Agreed to plan a call together next week and asked for Katerina's availability.","Wants a call next week; needs Katerina's availability (days/times).","Hi Juli, thank you - I'm free [insert days/times] next week, or you can pick a slot directly here: https://meetings.hubspot.com/katerina-galich.","","",""
+"mzwandile-mahlangu-36ba93122","https://www.linkedin.com/in/mzwandile-mahlangu-36ba93122/","Mzwandile Mahlangu","Counterweight","2026-10-16T12:45:54+03:00","referral","high","Referred the reporting question to «@Naeem Witbooi» at Counterweight.","New contact to add to outbound: Naeem Witbooi, likely owns programme reporting at Counterweight Ltd.","Hi Mzwandile,
+
+Thanks for pointing me to Naeem Witbooi, I'll get in touch.
+
+If you're comfortable making a quick intro, that would help. If not, I'm glad to write to Naeem myself.
+
+Katerina","Naeem Witbooi, Counterweight","[CHECK: Bjorn Ronaasen at Counterweight said on 10-23 he would book a call. Send this now or after that call?]
+
+Hi Naeem,
+
+Mzwandile Mahlangu pointed me to you on programme reporting at Counterweight.
+
+FitXpress turns two phone photos into 80+ body measurements, and each scan is timestamped. That can add waist and other measurements to programme reports alongside weight.
+
+Would a short call make sense?
+
+Katerina","Hi Naeem,
+
+One question: how are body measurements collected for programme reporting today, at appointments, self-reported, or not at all?
+
+If it's useful to compare notes, here is my calendar: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+"jasoncya","https://www.linkedin.com/in/jasoncya/","Dr. Jason Chin Yu Aun","Reset Health","2026-10-19T11:14:15+03:00","maybe-later","medium","Acknowledged the outreach and said he will check internally and revert back on the partner-technology question for Roczen.","Awaiting his internal check; follow up in 2-3 weeks if no further reply.","Hi Jason,
+
+Thank you, nice to e-meet you too. No rush on my side. If I don't hear back, I'll check in again in a few months.
+
+Katerina","","[CHECK: he said he'd revert, and 2-3 weeks may suit better than 90 days. Sean-Patrick McGowan (Reset Health) asked for info by email on 10-21.]
+
+Hi Jason,
+
+In October you kindly said you'd check internally on who looks at partner technology for Roczen. Did anything come of it?
+
+If it's easier, I can send a short overview by email for whoever should see it.
+
+Katerina",""
+"daniela-alves-aba63749","https://www.linkedin.com/in/daniela-alves-aba63749/","Daniela Alves","Homerton Healthcare NHS Foundation Trust","2026-10-20T15:45:50+03:00","referral","high","Referred the weight management service query to «Dorottya Norton, the lead AHP lead».","New contact to add to outbound: Dorottya Norton, lead AHP lead at Homerton weight management service.","Hi Daniela,
+
+No need to apologise, and thank you for the pointer. I'll reach out to Dorottya Norton.
+
+Would you be comfortable mentioning to her that I'll be in touch?
+
+Katerina","Dorottya Norton, lead AHP lead, Homerton Healthcare NHS Foundation Trust (weight management service)","Hi Dorottya,
+
+Daniela Alves suggested I contact you as the AHP lead for the weight management service at Homerton.
+
+FitXpress is a phone scan: two photos return 80+ body measurements, under 45 seconds from the photos to structured results. Patients could do it at home between clinic appointments, and the service gets a structured record of each scan.
+
+Would a short conversation be useful?
+
+Katerina","Hi Dorottya,
+
+If it's easier, I can send a short overview by email first for you and the team to look at.
+
+Or, if a conversation suits you better, you can pick a time here: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+"sarah-le-brocq-85b07a26","https://www.linkedin.com/in/sarah-le-brocq-85b07a26/","Sarah Le Brocq","Perspectum Ltd","2026-10-22T10:19:58+03:00","question","high","Asked for a one-pager or overview of FitXpress that she can share internally with Perspectum.","Send a FitXpress one-pager / overview document for her to forward to Perspectum stakeholders.","Hi Sarah, thank you - attaching our FitXpress overview one-pager here [link/attach]. Happy to join a call with the Perspectum team if useful.","","",""
+"elliot-mcewan-1b969219b","https://www.linkedin.com/in/elliot-mcewan-1b969219b/","Elliot McEwan","Counterweight","2026-10-22T01:19:50+03:00","question","medium","Questioned whether the outreach was an automated message: «Is this an automated message?»","Confirm the message is from Katerina personally, then restate the original ask about who decides on partner capabilities at Counterweight.","Hi Elliot, not automated - this is Katerina writing directly. I was hoping to find who at Counterweight decides on new partner capabilities for members. Any pointer appreciated.","","",""
+"sean-patrick-mcgowan-a3b114248","https://www.linkedin.com/in/sean-patrick-mcgowan-a3b114248/","Sean-Patrick McGowan","Reset Health","2026-10-21T19:02:00+03:00","question","medium","Asked for more information to be emailed to opportunities@resethealth.clinic so he can pass it to the internal team.","Send a short info packet / one-pager to opportunities@resethealth.clinic as requested.","Hi Sean-Patrick, thank you - sending a short overview to opportunities@resethealth.clinic now so your team has the details.","","",""
+"judyhoskins","https://www.linkedin.com/in/judyhoskins/","Judy Hoskins","LighterLife","2026-10-24T11:59:33+03:00","other/unclear","medium","Said she is no longer with LighterLife and thanked Katerina for the contact, with no referral given.","No active lead here; consider separately finding her replacement or the current online-delivery contact at LighterLife.","","","",""
+"georgina-walsh-33b4b5127","https://www.linkedin.com/in/georgina-walsh-33b4b5127/","Georgina Walsh","LighterLife","2026-10-28T01:03:47+02:00","other/unclear","low","Brief sign-off, «Good luck», sent the day after providing a referral email.","None actionable; reads as a closing remark, no further ask needed.","","","",""
+"georgina-walsh-33b4b5127","https://www.linkedin.com/in/georgina-walsh-33b4b5127/","Georgina Walsh","LighterLife","2026-10-27T12:08:36+02:00","referral","medium","Said it is handled in-house and to email for advice: «if you email them they can advise, helo@lighterlife.com» (likely a typo for hello@lighterlife.com).","Follow up via hello@lighterlife.com (verify spelling) regarding who owns online programme delivery at LighterLife.","Hi Georgina,
+
+Thank you for the steer, and for the good wishes. I'll email the team at that address.
+
+If you're happy to tell them to expect my note, thank you. If not, no problem at all.
+
+Katerina","helo@lighterlife.com","[CHECK: email, not LinkedIn. Written as helo@, likely hello@lighterlife.com. Who sends it?]
+
+Hello,
+
+Georgina Walsh suggested I write to this address. I'm Katerina from 3DLOOK, looking for whoever runs online delivery of the LighterLife programme.
+
+Our FitXpress scan runs inside an app: two phone photos return 80+ body measurements.
+
+Could you point me to the right person or pass this on?
+
+Katerina","Hello,
+
+I wrote recently about online delivery of the LighterLife programme. If there is a particular person I should contact, a name would help, and I'm glad to send a short overview by email first.
+
+If a call is easier, here is my calendar: https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+"dr-sahira-dar-59801453","https://www.linkedin.com/in/dr-sahira-dar-59801453/","Dr Sahira Dar","Lanarkshire Medical Group","2026-10-27T18:52:15+02:00","decline","high","Thanked Katerina for the information but said FitXpress «is not suitable for the space I am working in».","Exclude from future campaigns; not a fit for her current GP / lifestyle coaching setting.","","","",""
+"dr-sahira-dar-59801453","https://www.linkedin.com/in/dr-sahira-dar-59801453/","Dr Sahira Dar","Lanarkshire Medical Group","2026-10-27T18:51:46+02:00","other/unclear","low","Brief courtesy reply, «Thanks Katerina», sent one minute before her substantive decline message.","None; precedes the decline reply in the same thread, no separate action needed.","","","",""

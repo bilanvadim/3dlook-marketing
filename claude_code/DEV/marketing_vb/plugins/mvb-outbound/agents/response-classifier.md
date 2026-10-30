@@ -106,8 +106,15 @@ python3 /home/vadim_prod/3dlook-marketing/marketing_vb/scripts/closely-pull.py \
 `workspace/outbound/campaigns/{campaign}/responses-classified.csv`:
 
 ```csv
-person_id,linkedin_url,full_name,company,response_date,category,confidence,summary,extracted_action,suggested_reply_draft
+person_id,linkedin_url,full_name,company,response_date,category,confidence,summary,extracted_action,suggested_reply_draft,referral_to,followup_draft,followup_draft_2
 ```
+
+**С 2026-10-30 колонок тринадцать.** `referral_to`, `followup_draft` и `followup_draft_2` — новые;
+файл переписывается целиком с новым заголовком, старые строки получают их тоже (пустыми, если
+нечего писать). Утренний скрипт кладёт черновики в таблицу «3DLOOK Outbound — відповіді лідам»:
+Гліб отправляет их в Closely и спрашивает Вадима, только если сомневается. Переадресованных людей
+никто руками не пишет: следующая кампания того же отправителя импортирует их с
+`followup_draft` (Message 1) и `followup_draft_2` (Message 2). Что и как писать — `brand-assets/product-info/outbound-reply-kit.md`.
 
 Plus `workspace/outbound/campaigns/{campaign}/responses-summary.md`:
 
@@ -152,6 +159,12 @@ Plus `workspace/outbound/campaigns/{campaign}/responses-summary.md`:
 ## Правила
 
 - **Не пиши «interested», если они не сказали явно** что хотят разговора. «Sounds interesting, but...» = maybe-later, не interested.
-- **suggested_reply_draft** — только для questions и interested. Это черновик; Вадим всё равно правит.
+- **Черновики — по `brand-assets/product-info/outbound-reply-kit.md`, прочитай его до первой строки.**
+  `suggested_reply_draft` пишешь для interested, question, referral и maybe-later (раньше — только
+  для первых двух, и переадресации с «не сейчас» оставались без ответа: 10 и 11 человек к
+  2026-10-30). `followup_draft`: для referral — Message 1 названному человеку, для maybe-later — проверка
+  через 90 дней. `followup_draft_2`: только для referral, Message 2 через пять дней. `referral_to` —
+  кого назвали, как в kit. Для decline, negative, out-of-office и other/unclear все пустые.
+  Что проверить перед отправкой — первой строкой `[CHECK: …]`, не `[VADIM: …]`.
 - **confidence: low** ставь, когда сомневаешься. Это сигнал для ручной разборки.
 - **После записи** — в Telegram идёт компактный отчёт + список interested с кнопкой «передать в sales». Сам ничего не передаёшь.

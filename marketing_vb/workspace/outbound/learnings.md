@@ -41,7 +41,10 @@ its own sender's baseline, not with the pooled one:
 | katya (Israel, LatAm) | 94/254 (37.0%) | 9/94 (9.6%) | 5/94 (5.3%) |
 | vadim (Australia) | 60/338 (17.8%) | 8/60 (13.3%) | 5/60 (8.3%) |
 
-Katerina is the only CEO and the only UK sender, so title and market cannot be separated (OPEN-2).
+Katerina is the only CEO and the only UK sender. Vadim, 2026-10-30: the lead is the CEO title, he
+tested it before («у Катерини краще бо вона СЕО, я це перевіряв раніше»). So the sender's
+profile is part of the offer: title, headline and current employer are what a prospect sees
+before accepting (HYP-7).
 
 **HYP-3 [confirmed] Australian invites are accepted least.** Vadim's AU lists: 60/338 accepted,
 against 824/2919 for every other sender. Size an AU list for that rate: about 1.6 times the
@@ -54,6 +57,12 @@ has the fewest positives (3/87): `[watch]`.
 
 **HYP-5 [directional] LatAm accepts most and replies least.** Accepted 56/127 and 28/47 (the
 second still running); replied 5/56. A LatAm hypothesis plans for many accepted and few answers.
+
+**HYP-7 [directional] The sender's profile decides acceptance.** Follows from HYP-2 and
+HYP-3. Every sender profile shows 3DLOOK as the current employer, a headline that names the
+buyer's problem (not "marketing" or a former agency), and a photo. Profile fixes for `vadim`
+(Australia) and `olena` (Europe) were agreed on 2026-10-30; compare their acceptance from
+December against HYP-2.
 
 **HYP-6 [directional] Lanes that drew no reply.** `virtual-care` 0/94, `retention` 0/53,
 `weight-management` 0/42, `digital-transformation` 0/39 people contacted. Do not reuse these
@@ -82,7 +91,11 @@ The rest: coaching lead, Tier 3 practitioner lead, obesity consultant, dietitian
 operations lead, head of commercial, regional partnerships manager, director of clinical
 programmes, senior director of clinical research, GM health and wellbeing.
 
-**PPL-5 [watch] Stale contacts.** 5/72 repliers had left the company on the list.
+**PPL-5 [watch] Stale contacts.** 5/72 repliers had left the company on the list. Checked
+2026-10-30: of the four that can be traced, two came from Sales Navigator exports with no role
+start date and one from Apollo with a role started in 2009 (a recent leaver). A filter on
+Apollo's role start date would have caught none of them, so there is no filter. A leaver who
+names a successor is a referral.
 
 ## Messages
 
@@ -105,7 +118,9 @@ the campaign rules allow, say once what the scan gives that a device in the clin
 in the card. Never name the device or its maker.
 
 **MSG-5 [watch] "Send me something I can share."** 4/34 positive repliers asked for a one-pager
-or materials. Do not promise materials in a message until the reply kit exists (proposal P2).
+or materials. The refreshed 2-pager is in review (2026-10-30). Its Drive link goes into
+`outbound-reply-kit.md` once Vadim approves it: Closely cannot attach files. Until then, no
+campaign message promises materials.
 
 **MSG-6 [directional] Compliance and platform questions** (FDA / CE 1, iOS and Android 1) are
 answered from `brand-assets/product-info/compliance.md` §9 and the product facts, never improvised.
@@ -117,8 +132,6 @@ automated or who was writing. Openers that could fit any company read as a templ
 
 - **OPEN-1** Does the Message 2 call ask beat the old Message 2? December, once the campaigns
   started after 2026-10-07 have 15+ replies.
-- **OPEN-2** Is Katerina's lead the CEO title or the UK market? Only Vadim can set up the test
-  (a UK list from another profile, or a non-UK list from Katerina).
 - **OPEN-3** Does AU acceptance recover after a profile change (proposal P1)?
 - **OPEN-4** Insurance underwriting (UK, EU, US) is the first large non-weight-loss segment.
   Compare with HYP-1 and HYP-2 in December.
@@ -129,3 +142,4 @@ automated or who was writing. Openers that could fit any company read as a templ
 | version | what changed | source | approved |
 |---|---|---|---|
 | 2026-10-30 | First version: 19 mature campaigns, 3,257 invites, 113 replies | learnings/2026-10-30-pooled-analysis.md | Vadim, 2026-10-30 («роби всі кроки») |
+| 2026-10-30 | Vadim's answers to P1–P6: HYP-2 cause = CEO title (OPEN-2 closed), HYP-7 new, PPL-5 no filter, MSG-5 reply kit + 2-pager | learnings/2026-10-30-pooled-analysis.md «Decisions» | Vadim, 2026-10-30 |

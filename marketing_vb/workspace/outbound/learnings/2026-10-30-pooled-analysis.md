@@ -5,7 +5,7 @@ analyzed: 2026-10-30
 data: data-2026-10-29.md (scripts/outbound-learnings.py build, Closely snapshot 2026-10-29T23:37Z)
 scope: 19 mature campaigns (3,257 invites, 884 accepted, 113 replied), 1,433 people at person level, 72 classified repliers
 learnings_version: 2026-10-30
-status: applied to learnings.md 2026-10-30 (Vadim: «роби всі кроки»); proposals P1–P6 await Vadim
+status: applied to learnings.md 2026-10-30 (Vadim: «роби всі кроки»); P1–P6 decided by Vadim 2026-10-30 (section «Decisions»)
 ---
 
 # Pooled outbound analysis — 2026-10-30
@@ -150,6 +150,26 @@ accepted, 28/47 (59.6%) in the immature Everlab-like list; replies 5/56 (8.9%).
   countries replied before the EU insurance campaign starts.
 - **P6. Stale contacts.** 5/72 repliers had left. Sales Navigator lists are fresher than Apollo;
   the validator could drop people whose current role start is unknown in Apollo-sourced rows.
+
+## Decisions (Vadim, 2026-10-30)
+
+- **P1 → a.** Vadim updates his own LinkedIn profile for the Australian audience; the AU list is not
+  widened meanwhile. Profile guidance went to him in chat (headline, current roles, photo, About, activity).
+- **P2 → yes.** Reply kit `brand-assets/product-info/outbound-reply-kit.md`; the Feb 2025 2-pager
+  (Drive `FitXpress_2_Pager.pdf`) is being refreshed and goes out as a Drive link, because Closely
+  cannot attach files. Drafts go to the sheet «3DLOOK Outbound — відповіді лідам»; every morning
+  the links to it and to the stats sheet go to Telegram and to Slack (Vadim and Hlib). Vadim
+  approves each draft, Hlib sends it in Closely.
+- **P3 → yes.** Referrals get their own tab with an intro draft; Hlib finds the named person's LinkedIn.
+  (Faster than waiting for the next campaign of the profile, which was the original wording.)
+- **P4 → 90 days.** «Not now» leads get a check-in draft; the row flips to «чекає Вадима» on the due date.
+- **P5 → look at the profile.** Apollo's record of Olena's profile shows no current title, no
+  headline and no 3DLOOK employer; her last listed roles are business development at software
+  agencies, ended July 2025. To confirm on the live profile.
+- **P6 → enabled by Vadim, not built.** Checked first: the traceable leavers came from Sales
+  Navigator exports or were recent leavers; an Apollo role-start filter would have caught none
+  and dropped 75 of 896 Apollo people. Reported back to Vadim.
+- **OPEN-2 → closed.** Vadim: Katerina's lead is the CEO title, he tested it before.
 
 ## Limits
 

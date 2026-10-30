@@ -1,4 +1,20 @@
-"person_id","linkedin_url","full_name","company","response_date","category","confidence","summary","extracted_action","suggested_reply_draft"
-"swapnil-kamankar-799b96a","https://www.linkedin.com/in/swapnil-kamankar-799b96a/","Swapnil Kamankar","AIA Australia","2026-10-08T06:51:56+03:00","interested","high","Replying to Message 2's ask for a brief intro call, he is on leave travelling overseas and proactively proposes connecting the week of 20 October upon return. Door stays open, no decline language.","Wants an intro call during the week of 20 October (currently on leave, returns by then). Propose concrete slots for 20 to 24 October.","Hi Swapnil, thanks for the note, enjoy the trip. The week of the 20th works well on our side too. Would Tuesday or Wednesday that week suit for a brief call? Happy to send a calendar link once you confirm a day. Vadim"
-"kimmareeclough","https://www.linkedin.com/in/kimmareeclough/","Kim Clough","AIA Australia","2026-10-14T04:42:54+03:00","referral","high","In reply to the ask for the right reader on AIA Vitality features, Kim names a referral: «Try Luke Ashby». No title or further context given beyond the name.","Add Luke Ashby as a new outbound contact at AIA Australia for the Vitality angle. Confirm his LinkedIn profile and title before adding him to a sequence. Thank Kim for the referral, no further ask needed from her.",""
-"marc-hermann-3132ab5b","https://www.linkedin.com/in/marc-hermann-3132ab5b/","Marc Hermann","Everlab","2026-10-14T05:06:35+03:00","decline","high","Polite, direct decline. Finds the tech interesting but says it is «not something we're looking at right now», with no specific future timeframe or reopening signal, wishes luck and closes the thread.","Exclude Marc Hermann / Everlab from future FitXpress campaigns per the decline policy. No reply required beyond an optional brief thank-you.",""
+"person_id","linkedin_url","full_name","company","response_date","category","confidence","summary","extracted_action","suggested_reply_draft","referral_to","followup_draft","followup_draft_2"
+"swapnil-kamankar-799b96a","https://www.linkedin.com/in/swapnil-kamankar-799b96a/","Swapnil Kamankar","AIA Australia","2026-10-08T06:51:56+03:00","interested","high","Replying to Message 2's ask for a brief intro call, he is on leave travelling overseas and proactively proposes connecting the week of 20 October upon return. Door stays open, no decline language.","Wants an intro call during the week of 20 October (currently on leave, returns by then). Propose concrete slots for 20 to 24 October.","Hi Swapnil, thanks for the note, enjoy the trip. The week of the 20th works well on our side too. Would Tuesday or Wednesday that week suit for a brief call? Happy to send a calendar link once you confirm a day. Vadim","","",""
+"kimmareeclough","https://www.linkedin.com/in/kimmareeclough/","Kim Clough","AIA Australia","2026-10-14T04:42:54+03:00","referral","high","In reply to the ask for the right reader on AIA Vitality features, Kim names a referral: «Try Luke Ashby». No title or further context given beyond the name.","Add Luke Ashby as a new outbound contact at AIA Australia for the Vitality angle. Confirm his LinkedIn profile and title before adding him to a sequence. Thank Kim for the referral, no further ask needed from her.","","Luke Ashby, AIA Australia","[CHECK: Luke was in this campaign's 10-02 import. If he already has M1/M2, send this in that thread.]
+
+Hi Luke,
+
+Kim Clough suggested you as the right person for a note on AIA Vitality features.
+
+Members would take two photos at home, in the app they already use, and get 80+ body measurements between Vitality Health Checks. The program decides what members see.
+
+Would a short call be useful? I can suggest two times.
+
+Vadim","Hi Luke,
+
+One more detail: alongside the measurements, the same two photos give body composition estimates and a 3D model.
+
+Would Tuesday or Thursday next week at 5pm Melbourne time work for a short call?
+
+Vadim"
+"marc-hermann-3132ab5b","https://www.linkedin.com/in/marc-hermann-3132ab5b/","Marc Hermann","Everlab","2026-10-14T05:06:35+03:00","decline","high","Polite, direct decline. Finds the tech interesting but says it is «not something we're looking at right now», with no specific future timeframe or reopening signal, wishes luck and closes the thread.","Exclude Marc Hermann / Everlab from future FitXpress campaigns per the decline policy. No reply required beyond an optional brief thank-you.","","","",""

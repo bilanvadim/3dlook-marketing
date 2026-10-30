@@ -40,6 +40,9 @@ UK=$CAMP/2026-09-01-uk-erakulis-similar
 AU=$CAMP/2026-07-16-au-telehealth
 US=$CAMP/2026-08-07-us-digital-fitness
 TMP_CAMPAIGNS=()
+# build-import appends queued named referrals (outbound_pack.REFERRALS). Never the real queue:
+# a test campaign would «add» real people and mark them as sent.
+export OUTBOUND_REFERRALS=$(mktemp -t outbound-referrals-test.XXXXXX.json)
 
 pass=0; fail=0
 
@@ -49,6 +52,7 @@ cleanup() {
 import shutil, sys; shutil.rmtree('$CAMP/$c', ignore_errors=True)"
   done
   [ -n "${STUB_PID:-}" ] && kill "$STUB_PID" 2>/dev/null
+  rm -f "${OUTBOUND_REFERRALS:-}"
   return 0
 }
 trap cleanup EXIT
@@ -822,6 +826,33 @@ grep_check "a wave-2 promotion lands in the one import file" "Cara" cat "$CAMP/$
 check "the import file passes check-import -> 0" 0 \
   python3 $S/outbound-pipeline.py check-import --campaign $P
 check "build-import refuses to clobber -> 1" 1 $OP build-import --campaign $P
+# 2026-10-30: a named referral Hlib gave a LinkedIn rides in the next import of its profile,
+# with its own two messages; one with a [CHECK: …] note left in is held back
+python3 - "$OUTBOUND_REFERRALS" <<'EOF'
+import json, sys
+m1 = "Hi Zoe,\n\nAnna suggested I write to you about remote body scans in your app.\n\nOlena"
+m2 = "Hi Zoe,\n\nOne more detail: two photos, 80+ body measurements.\n\nOlena"
+json.dump({"ref|a": {"profile": "olena", "first_name": "Zoe", "last_name": "Ref",
+                     "linkedin_url": "https://www.linkedin.com/in/zoe-ref-test", "company": "Refco",
+                     "message_1": m1, "message_2": m2, "status": "queued"},
+           "ref|b": {"profile": "olena", "first_name": "Max", "last_name": "Ref",
+                     "linkedin_url": "https://www.linkedin.com/in/max-ref-test", "company": "Refco",
+                     "message_1": "[CHECK: ask Vadim]\n" + m1, "message_2": m2, "status": "queued"},
+           "ref|c": {"profile": "nick", "first_name": "Ned", "linkedin_url":
+                     "https://www.linkedin.com/in/ned-ref-test", "message_1": m1, "message_2": m2,
+                     "status": "queued"}}, open(sys.argv[1], "w"))
+EOF
+check "build-import --overwrite with queued referrals -> 0" 0 $OP build-import --campaign $P --overwrite
+grep_check "the queued referral is in the import" "zoe-ref-test" cat "$CAMP/$P/closelyhq-import.csv"
+check "a referral with a [CHECK] note is not -> 1" 1 grep -q "max-ref-test" "$CAMP/$P/closelyhq-import.csv"
+check "another profile's referral is not -> 1" 1 grep -q "ned-ref-test" "$CAMP/$P/closelyhq-import.csv"
+check "the queue records added / skipped / untouched" 0 python3 -c "
+import json, sys
+q = json.load(open('$OUTBOUND_REFERRALS'))
+sys.exit(0 if q['ref|a']['status'] == 'added:$P' and q['ref|b']['status'].startswith('skipped:')
+         and q['ref|c']['status'] == 'queued' else 1)"
+check "the import with the referral passes check-import -> 0" 0 \
+  python3 $S/outbound-pipeline.py check-import --campaign $P
 grep_check "profiles --only-missing: nothing to write when all have messages" "already have messages" \
   $OP profiles --campaign $P --only-missing
 ONE=$(ls $CAMP/$P/messages/ | grep -v '^_' | head -1)

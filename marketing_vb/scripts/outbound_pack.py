@@ -64,6 +64,7 @@ import datetime as dt
 import difflib
 import importlib.util
 import json
+import os
 import re
 import shutil
 import sys
@@ -2250,6 +2251,11 @@ def cmd_build_import(args) -> int:
         # `wave` column may still be filled in older lists; it no longer splits anything.
         files["closelyhq-import.csv"].append(row)
 
+    profile = profile_of(cdir)
+    ref_rows, ref_outcome = referral_rows(
+        cdir, profile, {norm_linkedin(r["linkedin_url"]) for r in files["closelyhq-import.csv"]})
+    files["closelyhq-import.csv"] += ref_rows
+
     existing = [n for n in files if (out_dir / n).exists()]
     if existing and not args.overwrite:
         print(f"✗ {', '.join(existing)} already exist in {rel(out_dir)}. They may have been\n"
@@ -2272,7 +2278,16 @@ def cmd_build_import(args) -> int:
                 file=str((out_dir / name).resolve()), campaign=None, infile=None))
         print(f"  {'✓' if res == 0 else '✗'} {name}: {len(rows)} rows, check-import exit {res}")
         rc = rc or res
-    profile = profile_of(cdir)
+    if ref_outcome:
+        log += ["", "## Named referrals (drafts sheet → outbound-referrals.json)", ""]
+        log += [f"- {k.split('|')[-1][:60]}: {v}" for k, v in ref_outcome.items()]
+        print(f"  referrals: {sum(v.startswith('added') for v in ref_outcome.values())} added, "
+              f"{sum(v.startswith('skipped') for v in ref_outcome.values())} skipped")
+        if not args.out_dir:
+            q = load_referrals()
+            for k, v in ref_outcome.items():
+                q[k].update({"status": v, "status_on": today()})
+            save_referrals(q)
     log += ["", "## After the import", "", "```",
             f"scripts/outbound-registry.py record --campaign {cdir.name} --profile {profile}",
             "```", ""]
@@ -2284,6 +2299,108 @@ def cmd_build_import(args) -> int:
               "  Vadim raises the cap or the list is cut.", file=sys.stderr)
         return 1
     return rc
+
+
+# ================================================================== referrals
+
+# Vadim, 2026-10-30: «Гліб не може додати руками 1 людину через клоузлі і написати що хтось там
+# рекомендував. він може тільки знайти лінкедин. інші кроки давай на тобі. ти автоматом додаш до
+# наступної кампанії ці контакти з повідомленням». A lead who names a colleague gets a row in
+# the drafts sheet (outbound-responses-daily.py), Hlib fills the colleague's LinkedIn there, the
+# morning sync moves the row into this queue, and the next build-import of a campaign from the
+# same profile appends the person with the two messages written for them (response-classifier:
+# followup_draft, followup_draft_2). The queue lives outside the public repo, like the other
+# ~/.hermes state, and the morning sync writes the outcome back to the sheet.
+REFERRALS = Path(os.environ.get("OUTBOUND_REFERRALS")
+                 or Path.home() / ".hermes" / "outbound-referrals.json")
+PLACEHOLDER = re.compile(r"\{[^{}]*\}|\[(?:CHECK|VADIM)\b[^\]]*\]")
+
+
+def load_referrals() -> dict:
+    try:
+        return json.loads(REFERRALS.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+
+
+def save_referrals(q: dict) -> None:
+    REFERRALS.parent.mkdir(parents=True, exist_ok=True)
+    REFERRALS.write_text(json.dumps(q, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
+def contacted_by(url: str) -> str:
+    """The profile whose registry already holds this person, or ''."""
+    from urllib.parse import unquote
+    u = unquote(norm_linkedin(url))
+    for prof in REG.PROFILES:
+        reg = REG.load_json(REG.profile_registry_path(prof), REG.blank_profile_registry(prof))
+        if u in {unquote(x) for x in reg.get("excluded_people_urls", [])}:
+            return prof
+    return ""
+
+
+def person_name(text: str) -> tuple[str, str]:
+    """(first, last) when «Кого назвали» starts with a person's name, else ('', '').
+    «Head of Product (name not given), orienteme» and «team: product team» are not names."""
+    head = re.sub(r"^team:\s*", "", text or "").split(",")[0].strip()
+    parts = head.split()
+    if (text or "").lower().startswith("team:") or not 1 <= len(parts) <= 4 \
+            or any(ch.isdigit() or ch in "()@/:" for ch in head) \
+            or not all(w[0].isupper() for w in parts):
+        return "", ""
+    return parts[0], " ".join(parts[1:])
+
+
+def referral_messages(r: dict) -> dict[int, str]:
+    first = (r.get("first_name") or "").strip()
+    return {i: re.sub(r"\{\s*first[ _]name\s*\}", first, (r.get(f"message_{i}") or "").strip(),
+                      flags=re.I) for i in (1, 2)}
+
+
+def referral_problem(r: dict) -> str:
+    """Why a queued referral cannot go into an import as it stands, in the sheet's language."""
+    profile = r.get("profile", "")
+    msgs = referral_messages(r)
+    if "linkedin.com/in/" not in (r.get("linkedin_url") or ""):
+        return "немає посилання на профіль LinkedIn"
+    if not (r.get("first_name") or "").strip():
+        return "немає імені: впишіть ім'я і прізвище на початку «Кого назвали»"
+    if not msgs[1] or not msgs[2]:
+        return "порожнє повідомлення 1 або 2"
+    if any(PLACEHOLDER.search(m) for m in msgs.values()):
+        return "у повідомленні лишилась позначка [CHECK: …] або {…}: приберіть її"
+    for i in (1, 2):
+        if len(msgs[i]) > CAPS[i]:
+            return f"повідомлення {i} довше за {CAPS[i]} знаків"
+    if any("—" in m or "–" in m for m in msgs.values()):
+        return "тире в повідомленні"
+    if any(m.rstrip().splitlines()[-1].strip() != OWNER.get(profile, "?") for m in msgs.values()):
+        return f"підпис не «{OWNER.get(profile, '?')}»"
+    return ""
+
+
+def referral_rows(cdir: Path, profile: str, taken: set[str]) -> tuple[list[dict], dict]:
+    """Import rows for this profile's queued referrals, plus {key: outcome} to record."""
+    rows, outcome = [], {}
+    for key, r in load_referrals().items():
+        if r.get("profile") != profile or r.get("status", "") not in ("queued", f"added:{cdir.name}"):
+            continue                                  # another profile, added elsewhere, or skipped
+        url = norm_linkedin(r.get("linkedin_url", ""))
+        why = referral_problem(r)
+        if not why and url in taken:
+            why = "вже є у списку цієї кампанії"
+        if not why and r.get("status") == "queued" and (prof := contacted_by(url)):
+            why = f"цій людині вже писали з акаунта {prof}"
+        if why:
+            outcome[key] = f"skipped:{why}"
+            continue
+        msgs = referral_messages(r)
+        rows.append({"first_name": r["first_name"].strip(), "last_name": (r.get("last_name") or "").strip(),
+                     "linkedin_url": url, "company": r.get("company", ""), "title": r.get("title", ""),
+                     "email": "", "connection_note": "", "message_1": msgs[1], "message_2": msgs[2]})
+        outcome[key] = f"added:{cdir.name}"
+        taken.add(url)
+    return rows, outcome
 
 
 def _quiet(fn, ns) -> int:

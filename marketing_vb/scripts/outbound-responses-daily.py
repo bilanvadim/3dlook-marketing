@@ -60,6 +60,7 @@ USAGE
     scripts/outbound-responses-daily.py morning [--notify] [--dry-run]
     scripts/outbound-responses-daily.py status
     scripts/outbound-responses-daily.py weekly  [--notify]
+    scripts/outbound-responses-daily.py replies-sheet [--dry-run]   # drafts sheet (morning runs it too)
 Without --notify, `morning` and `weekly` print the report instead of sending it. Env for tests:
 HO_DB, OUTBOUND_DAILY_STATE, OUTBOUND_DAILY_LOCK, OUTBOUND_DAILY_MVB_RUN.
 Exit codes: 0 = ok · 1 = something needs attention (it is in the output) · 3 = broken setup.
@@ -77,7 +78,7 @@ import re
 import sqlite3
 import subprocess
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -608,10 +609,18 @@ def cmd_morning(args) -> int:
         blocks = ["\n".join(head)] + sections
         tail = [pull_note] + commit_notes
         blocks.append("\n".join(tail))
-        blocks.append("Чернетки відповідей і повний розбір: responses-summary.md у папці кампанії.")
     else:
         blocks = [f"📬 Outbound, {day}: нових відповідей немає. {pull_note}."
                   + ("\n" + "\n".join(commit_notes) if commit_notes else "")]
+
+    # 3. the drafts sheet (Vadim approves, Hlib sends) and both links, Telegram + Slack
+    sheet_res, sheet_err = None, ""
+    try:
+        sheet_res = sync_reply_sheet(camps, args.dry_run)
+    except Exception as e:                            # noqa: BLE001  (oo, Sheets, network)
+        sheet_err = str(e)
+        problems += 1
+    blocks.append("\n".join(links_lines(sheet_res, sheet_err)))
 
     messages = chunk(blocks)
     for m in messages:
@@ -624,6 +633,8 @@ def cmd_morning(args) -> int:
         if not sent:
             problems += 1
             print("✗ Telegram send failed — nothing marked as reported, tomorrow repeats it")
+        if not slack_post(slack_text(day, total, sheet_res, sheet_err)):
+            problems += 1
     # Reported = seen by Vadim. A printed dry look (no --notify) marks nothing.
     if args.notify and sent and not args.dry_run:
         for slug, keys in mark.items():
@@ -1133,6 +1144,467 @@ def cmd_sheet(args) -> int:
     return 0
 
 
+# ------------------------------------------------------------------ reply drafts
+
+# Vadim, 2026-10-30: «давай зробимо файл таблицю куди ти будеш вносити чернетки відповідей …
+# зранку присилать в слак мені і Глібу. Бо Гліб потім відповідає в клоузлі лідам». Then: «від
+# мене не треба погодження. Гліб якщо буде сумніватись то сам у мене спитає» and «Гліб … може
+# тільки знайти лінкедин. інші кроки давай на тобі». Before this the drafts sat in
+# responses-summary.md inside the public repo, and Hlib, who answers leads in Closely, never saw
+# them. One sheet, three queues, each ordered by date, oldest on top:
+#   Відповіді           every reply with its draft; Hlib sends it in Closely
+#   Переадресації       a lead named a colleague: Hlib fills the LinkedIn, this script queues the
+#                       person (outbound_pack.REFERRALS) and the next build-import of the same
+#                       profile adds them with their own two messages
+#   Повторний контакт   «not now» leads, a check-in draft that becomes «до відправки» on day 90
+# Rows are appended by a hidden key and never rewritten, so Hlib's statuses and edits survive.
+# Drafts come from responses-classified.csv (response-classifier, reply kit
+# brand-assets/product-info/outbound-reply-kit.md).
+REPLY_STATE = Path(os.environ.get("OUTBOUND_REPLY_SHEET_STATE")
+                   or os.path.expanduser("~/.hermes/.outbound-replies-sheet.json"))
+REPLY_TITLE = "3DLOOK Outbound — відповіді лідам"
+TAB_R, TAB_REF, TAB_RC, TAB_HOW = "Відповіді", "Переадресації", "Повторний контакт", "Як це працює"
+SLACK_CHANNEL = os.environ.get("OUTBOUND_SLACK_CHANNEL") or "D0CC6GESJ90"   # DM Vadim and Hlib
+# Hlib answers leads in Closely (memory: reference_hlib_leadgen_slack); his Slack address.
+SHARE_WITH = [e for e in (os.environ.get("OUTBOUND_REPLY_SHARE") or "hlib@3dlook.me").split(",") if e]
+RECONTACT_DAYS = 90
+FIRST_LOOKBACK_DAYS = 14                              # replies older than this were answered by hand
+TO_SEND, NO_REPLY, DUE_LATER = "до відправки", "не відповідаємо", "чекає дати"
+NEED_LI, QUEUED, ADDED, SKIPPED = ("потрібен LinkedIn", "у черзі: наступна кампанія",
+                                   "додано в кампанію", "пропущено")
+REPLY_COLS = {
+    TAB_R: ["Дата", "Кампанія", "Відповідає з акаунта", "Лід", "Посада", "Компанія", "LinkedIn",
+            "Що написав лід", "Категорія", "Суть і що зробити", "Чернетка відповіді", "Статус",
+            "Коментар", "Відправлено (коли)", "key"],
+    TAB_REF: ["Дата", "Кампанія", "Акаунт", "Хто переадресував", "Компанія", "Кого назвали",
+              "LinkedIn названого (заповнює Гліб)", "Повідомлення 1 (після прийняття інвайту)",
+              "Повідомлення 2 (через 5 днів)", "Статус", "Коментар", "key"],
+    TAB_RC: ["Нагадати з", "Дата відповіді", "Кампанія", "Акаунт", "Лід", "Посада", "Компанія",
+             "LinkedIn", "Що сказав тоді", "Чернетка", "Статус", "Коментар", "key"],
+}
+STATUSES = {
+    TAB_R: [TO_SEND, "питання до Вадима", "відправлено", NO_REPLY],
+    TAB_REF: [NEED_LI, "не знайшов LinkedIn", QUEUED, ADDED, SKIPPED],
+    TAB_RC: [DUE_LATER, TO_SEND, "питання до Вадима", "відправлено", "не пишемо"],
+}
+DEFAULTS = {TO_SEND, NO_REPLY, DUE_LATER, NEED_LI, ""}
+HOWTO = [
+    [REPLY_TITLE],
+    ["Чернетки відповідей лідам з outbound-кампаній. Оновлюється щоранку о 06:00 UTC, разом зі "
+     "звітом у Telegram і повідомленням у Slack (Вадим і Гліб). Усі вкладки йдуть за датою: "
+     "старіші вгорі, нові внизу."],
+    [""],
+    ["Як працює"],
+    ["1. Вночі closely-pull забирає нові відповіді, класифікатор пише категорію і чернетку."],
+    ["2. Зранку скрипт додає нові рядки. Старі рядки не переписуються: статуси, правки і "
+     "коментарі лишаються."],
+    ["3. Гліб відправляє чернетку в Closely з акаунта з колонки «Відповідає з акаунта» і ставить "
+     "«відправлено». Текст можна правити прямо в колонці чернетки. Якщо є сумнів, статус "
+     "«питання до Вадима» і питання в «Коментар»."],
+    ["4. [CHECK: …] на початку чернетки: що перевірити перед відправкою. Перед відправкою цей "
+     "рядок видалити."],
+    [""],
+    ["Вкладки"],
+    [f"«{TAB_R}»: кожна відповідь ліда. Без чернетки (відмова, OOO, неясно) рядок одразу має "
+     f"статус «{NO_REPLY}»."],
+    [f"«{TAB_REF}»: лід назвав іншу людину. Гліб знаходить її LinkedIn і вставляє посилання "
+     "(для «team:» ще й вписує ім'я в «Кого назвали»). Більше нічого: наступного ранку людина стає "
+     f"в чергу, а наступна кампанія того ж акаунта сама додає її з двома повідомленнями з цієї "
+     "вкладки. Статус покаже, в яку кампанію вона пішла."],
+    [f"«{TAB_RC}»: лід сказав «не зараз». Через {RECONTACT_DAYS} днів статус сам стає "
+     f"«{TO_SEND}», Гліб пише в ту саму розмову в Closely."],
+    [""],
+    ["Колонка key службова, її не чіпати: за нею скрипт знає, які рядки вже додано."],
+]
+
+
+def _reply_state() -> dict:
+    try:
+        return json.loads(REPLY_STATE.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+
+
+def _save_reply_state(st: dict) -> None:
+    REPLY_STATE.parent.mkdir(parents=True, exist_ok=True)
+    REPLY_STATE.write_text(json.dumps(st, indent=1), encoding="utf-8")
+
+
+def _col(n: int) -> str:
+    out = ""
+    while n:
+        n, r = divmod(n - 1, 26)
+        out = chr(65 + r) + out
+    return out
+
+
+def _rng(tab: str, a1: str = "") -> str:
+    from urllib.parse import quote
+    return quote(f"'{tab}'" + (f"!{a1}" if a1 else ""), safe="")
+
+
+def _notes(text: str) -> str:
+    """Drafts written before 2026-10-30 address their notes to Vadim; Hlib checks them now."""
+    return (text or "").strip().replace("[VADIM:", "[CHECK:")
+
+
+def _pack():
+    return _load("outbound_pack", HERE / "outbound_pack.py")
+
+
+def reply_queues(camps: list[dict], since: str) -> dict[str, list[dict]]:
+    """{tab: [{key, row}]} built from every campaign's raw + classified replies."""
+    out: dict[str, list[dict]] = {TAB_R: [], TAB_REF: [], TAB_RC: []}
+    today = now_utc().date()
+    for c in camps:
+        slug, acct = c["slug"], account_label(c["profile"])
+        titles = {}
+        for name in ("closelyhq-import.csv", "people-validated.csv", "people-approved.csv"):
+            for r in read_csv(c["dir"] / name):
+                li = (r.get("linkedin_url") or r.get("person_linkedin_url") or "").strip()
+                if li and r.get("title"):
+                    titles["li:" + REG.norm_linkedin(li)] = r["title"]
+        seen_person: set = set()
+        for r in sorted(c["raw"], key=lambda x: x.get("response_date") or ""):
+            hit = c["cl"].find(r)
+            if not hit:
+                continue                              # tomorrow, once the classifier has run
+            cat = (hit.get("category") or "").strip()
+            key = f"{slug}|{reply_key(r)}"
+            who = r.get("full_name") or hit.get("full_name") or "?"
+            li = (r.get("linkedin_url") or hit.get("linkedin_url") or "").strip()
+            title = r.get("title") or titles.get(person_of(r), "")
+            co = hit.get("company") or r.get("company_name") or ""
+            day = (r.get("response_date") or "")[:10]
+            draft = _notes(hit.get("suggested_reply_draft"))
+            gist = hit.get("summary", "")
+            act = _notes(hit.get("extracted_action"))
+            if act and cat in ("interested", "question", "referral", "maybe-later"):
+                gist = f"{gist}\n▸ {act}"
+            if day >= since:
+                out[TAB_R].append({"key": key, "row": [
+                    day, slug, acct, who, title, co, li, r.get("response_text", ""),
+                    CATEGORY_UA.get(cat, cat), gist, draft,
+                    TO_SEND if draft else NO_REPLY, "", "", key]})
+            person = person_of(r)
+            if person in seen_person:
+                continue                              # one queue entry per person, from the first reply
+            if cat == "referral":
+                seen_person.add(person)
+                ref = (hit.get("referral_to") or "").strip()
+                out[TAB_REF].append({"key": f"ref|{key}", "row": [
+                    day, slug, acct, f"{who}{', ' + title if title else ''}", co,
+                    ref or "(не названо, див. «Суть» у вкладці «Відповіді»)", "",
+                    _notes(hit.get("followup_draft")), _notes(hit.get("followup_draft_2")),
+                    NEED_LI, "", f"ref|{key}"]})
+            elif cat == "maybe-later" and day:
+                seen_person.add(person)
+                due = (datetime.fromisoformat(day) + timedelta(days=RECONTACT_DAYS)).date()
+                out[TAB_RC].append({"key": f"rc|{key}", "row": [
+                    due.isoformat(), day, slug, acct, who, title, co, li,
+                    short(hit.get("summary", ""), 400), _notes(hit.get("followup_draft")),
+                    TO_SEND if due <= today else DUE_LATER, "", f"rc|{key}"]})
+    for q in out.values():
+        q.sort(key=lambda x: (x["row"][0], x["row"][1], x["key"]))
+    return out
+
+
+def share(file_id: str, email: str, role: str) -> None:
+    _od().oo(["connector", "run", "googledrive", "-a", "permissions.create", "-d", json.dumps(
+        {"fileId": file_id, "role": role, "type": "user", "emailAddress": email,
+         "send_notification_email": False})])
+
+
+def ensure_reply_sheet(st: dict) -> tuple[str, dict, bool]:
+    od = _od()
+    sid, created = st.get("spreadsheet_id"), False
+    if not sid:
+        sid = od.sheets("POST", "", {
+            "properties": {"title": REPLY_TITLE, "locale": "uk_UA", "timeZone": "Europe/Kyiv"},
+            "sheets": [{"properties": {"title": t, "index": i}}
+                       for i, t in enumerate((TAB_R, TAB_REF, TAB_RC, TAB_HOW))]})["spreadsheetId"]
+        st.update({"spreadsheet_id": sid,
+                    "since": (now_utc().date() - timedelta(days=FIRST_LOOKBACK_DAYS)).isoformat()})
+        _save_reply_state(st)
+        created = True
+    meta = od.sheets("GET", f"/{sid}?fields=sheets(properties(sheetId,title))")
+    tabs = {s["properties"]["title"]: s["properties"]["sheetId"] for s in meta["sheets"]}
+    if created:
+        _format_reply_sheet(sid, tabs, (TAB_R, TAB_REF, TAB_RC))
+    for email in SHARE_WITH:
+        if email in st.get("shared", []):
+            continue
+        share(sid, email, "writer")
+        st.setdefault("shared", []).append(email)
+        _save_reply_state(st)
+    return sid, tabs, created
+
+
+def _format_reply_sheet(sid: str, tabs: dict, data_tabs) -> None:
+    od, rgb = _od(), _od().rgb
+    font = {"fontFamily": "Arial", "fontSize": 10}
+    od.sheets("POST", f"/{sid}/values:batchClear", {"ranges": [f"'{TAB_HOW}'"]})
+    od.sheets("POST", f"/{sid}/values:batchUpdate", {"valueInputOption": "RAW", "data": [
+        {"range": f"'{t}'!A1", "values": [REPLY_COLS[t]]} for t in data_tabs]
+        + [{"range": f"'{TAB_HOW}'!A1", "values": HOWTO}]})
+    reqs: list[dict] = []
+    wide = {TAB_R: {7: 320, 9: 300, 10: 420, 12: 220}, TAB_REF: {7: 380, 8: 380, 10: 220},
+            TAB_RC: {8: 300, 9: 420, 11: 220}}
+    colors = ((TO_SEND, "#FFF4CC"), ("питання до Вадима", "#FDE2E1"), ("відправлено", "#EEF1FF"),
+              (NEED_LI, "#FFF4CC"), (QUEUED, "#DDF5E3"), (ADDED, "#EEF1FF"), (SKIPPED, "#FDE2E1"))
+    for t in data_tabs:
+        cols = REPLY_COLS[t]
+        sh, n, st_col = tabs[t], len(cols), cols.index("Статус")
+        reqs += [
+            {"updateSheetProperties": {"properties": {"sheetId": sh, "gridProperties": {
+                "frozenRowCount": 1, "columnCount": n, "rowCount": 1000}},
+                "fields": "gridProperties(frozenRowCount,columnCount,rowCount)"}},
+            {"repeatCell": {"range": {"sheetId": sh}, "cell": {"userEnteredFormat": {
+                "textFormat": font, "verticalAlignment": "TOP", "wrapStrategy": "WRAP"}},
+                "fields": "userEnteredFormat(textFormat,verticalAlignment,wrapStrategy)"}},
+            {"repeatCell": {"range": {"sheetId": sh, "startRowIndex": 0, "endRowIndex": 1},
+                            "cell": {"userEnteredFormat": {
+                                "textFormat": {**font, "bold": True, "foregroundColor": rgb("#FFFFFF")},
+                                "backgroundColor": rgb(NAVY), "wrapStrategy": "WRAP"}},
+                            "fields": "userEnteredFormat(textFormat,backgroundColor,wrapStrategy)"}},
+            {"updateDimensionProperties": {"range": {"sheetId": sh, "dimension": "COLUMNS",
+                                                     "startIndex": 0, "endIndex": n},
+                                           "properties": {"pixelSize": 130}, "fields": "pixelSize"}},
+            {"updateDimensionProperties": {"range": {"sheetId": sh, "dimension": "COLUMNS",
+                                                     "startIndex": n - 1, "endIndex": n},
+                                           "properties": {"hiddenByUser": True},
+                                           "fields": "hiddenByUser"}},
+            {"setDataValidation": {"range": {"sheetId": sh, "startRowIndex": 1, "endRowIndex": 1000,
+                                             "startColumnIndex": st_col, "endColumnIndex": st_col + 1},
+                                   "rule": {"condition": {"type": "ONE_OF_LIST", "values": [
+                                       {"userEnteredValue": v} for v in STATUSES[t]]},
+                                       "showCustomUi": True, "strict": False}}},
+            {"setBasicFilter": {"filter": {"range": {"sheetId": sh, "startRowIndex": 0,
+                                                     "startColumnIndex": 0, "endColumnIndex": n - 1}}}},
+        ]
+        for c, px in wide[t].items():
+            reqs.append({"updateDimensionProperties": {"range": {
+                "sheetId": sh, "dimension": "COLUMNS", "startIndex": c, "endIndex": c + 1},
+                "properties": {"pixelSize": px}, "fields": "pixelSize"}})
+        for value, color in colors:
+            if not any(x.startswith(value) for x in STATUSES[t]):
+                continue
+            reqs.append({"addConditionalFormatRule": {"index": 0, "rule": {
+                "ranges": [{"sheetId": sh, "startRowIndex": 1, "endRowIndex": 1000,
+                            "startColumnIndex": st_col, "endColumnIndex": st_col + 1}],
+                "booleanRule": {"condition": {"type": "TEXT_STARTS_WITH",
+                                              "values": [{"userEnteredValue": value}]},
+                                "format": {"backgroundColor": rgb(color)}}}}})
+    sh = tabs[TAB_HOW]
+    reqs += [
+        {"updateDimensionProperties": {"range": {"sheetId": sh, "dimension": "COLUMNS",
+                                                 "startIndex": 0, "endIndex": 1},
+                                       "properties": {"pixelSize": 900}, "fields": "pixelSize"}},
+        {"repeatCell": {"range": {"sheetId": sh}, "cell": {"userEnteredFormat": {
+            "textFormat": font, "wrapStrategy": "WRAP"}},
+            "fields": "userEnteredFormat(textFormat,wrapStrategy)"}},
+        {"repeatCell": {"range": {"sheetId": sh, "startRowIndex": 0, "endRowIndex": 1},
+                        "cell": {"userEnteredFormat": {"textFormat": {
+                            **font, "bold": True, "fontSize": 14, "foregroundColor": rgb(NAVY)}}},
+                        "fields": "userEnteredFormat.textFormat"}},
+    ]
+    for r in (3, 9):
+        reqs.append({"repeatCell": {"range": {"sheetId": sh, "startRowIndex": r, "endRowIndex": r + 1},
+                                    "cell": {"userEnteredFormat": {"textFormat": {**font, "bold": True}}},
+                                    "fields": "userEnteredFormat.textFormat"}})
+    od.sheets("POST", f"/{sid}:batchUpdate", {"requests": reqs})
+
+
+def _rebuild(sid: str, tabs: dict) -> dict:
+    """Drop and recreate the data tabs. Refuses once anyone has worked in the sheet."""
+    od = _od()
+    for t in (TAB_R, TAB_REF, TAB_RC):
+        have = od.sheets("GET", f"/{sid}/values/{_rng(t)}").get("values") or []
+        hdr = have[0] if have else []
+        for r in have[1:]:
+            row = dict(zip(hdr, r))
+            human = [k for k in ("Коментар", "Коментар Вадима", "Відправлено (хто, коли)",
+                                 "Відправлено (коли)", "LinkedIn названого (знаходить Гліб)",
+                                 "LinkedIn названого (заповнює Гліб)") if (row.get(k) or "").strip()]
+            if row.get("Статус", "") not in DEFAULTS | {"чекає Вадима"} or human:
+                raise RuntimeError(f"«{t}» already has work in it ({row.get('Лід') or row.get('Хто переадресував')}); "
+                                   "not rebuilding")
+    reqs = [{"deleteSheet": {"sheetId": tabs[t]}} for t in (TAB_R, TAB_REF, TAB_RC)]
+    reqs += [{"addSheet": {"properties": {"title": t, "index": i}}}
+             for i, t in enumerate((TAB_R, TAB_REF, TAB_RC))]
+    od.sheets("POST", f"/{sid}:batchUpdate", {"requests": reqs})
+    meta = od.sheets("GET", f"/{sid}?fields=sheets(properties(sheetId,title))")
+    tabs = {s["properties"]["title"]: s["properties"]["sheetId"] for s in meta["sheets"]}
+    _format_reply_sheet(sid, tabs, (TAB_R, TAB_REF, TAB_RC))
+    return tabs
+
+
+def _sync_referrals(sid: str, rows: list[list[str]]) -> list[dict]:
+    """Sheet → queue for rows Hlib gave a LinkedIn; queue → sheet for what build-import did.
+    A row that cannot go out as it stands is marked «пропущено: why» at once, so Hlib sees it
+    the same morning; setting «потрібен LinkedIn» again after a fix re-queues it.
+    Returns the status cells to write."""
+    pk = _pack()
+    q, changed, cells = pk.load_referrals(), False, []
+    cols = REPLY_COLS[TAB_REF]
+    ix = {c: i for i, c in enumerate(cols)}
+    for n, r in enumerate(rows, start=2):
+        r = r + [""] * (len(cols) - len(r))
+        key, status = r[ix["key"]], r[ix["Статус"]]
+        li = r[ix["LinkedIn названого (заповнює Гліб)"]].strip()
+        item = q.get(key)
+        ist = (item or {}).get("status", "")
+        if li and (not item or ist == "queued" or (ist.startswith("skipped") and status == NEED_LI)):
+            slug = key.split("|")[1]
+            first, last = pk.person_name(r[ix["Кого назвали"]])
+            fresh = {"profile": campaign_profile(CAMPAIGNS / slug, []), "source_campaign": slug,
+                     "referrer": r[ix["Хто переадресував"]], "company": r[ix["Компанія"]],
+                     "first_name": first, "last_name": last, "linkedin_url": li,
+                     "message_1": r[ix["Повідомлення 1 (після прийняття інвайту)"]],
+                     "message_2": r[ix["Повідомлення 2 (через 5 днів)"]]}
+            why = pk.referral_problem(fresh)
+            fresh["status"] = f"skipped:{why}" if why else "queued"
+            fresh["status_on"] = now_utc().date().isoformat()
+            if {k: v for k, v in (item or {}).items() if k != "status_on"} != \
+                    {k: v for k, v in fresh.items() if k != "status_on"}:
+                q[key], changed = fresh, True
+            item = q[key]
+        if not item:
+            continue
+        ist = item["status"]
+        want = (f"{QUEUED} {item['profile']}" if ist == "queued" else
+                f"{ADDED} {ist[6:]}" if ist.startswith("added:") else
+                f"{SKIPPED}: {ist[8:]}" if ist.startswith("skipped:") else "")
+        if want and status != want:
+            cells.append({"range": f"'{TAB_REF}'!{_col(ix['Статус'] + 1)}{n}", "values": [[want]]})
+    if changed:
+        pk.save_referrals(q)
+    return cells
+
+
+def sync_reply_sheet(camps: list[dict], dry: bool = False, rebuild: bool = False) -> dict:
+    """Append new rows, sync referrals, flip due check-ins, keep every tab in date order."""
+    st = _reply_state()
+    since = st.get("since") or (now_utc().date() - timedelta(days=FIRST_LOOKBACK_DAYS)).isoformat()
+    queues = reply_queues(camps, since)
+    res = {"url": SHEET_URL.format(st["spreadsheet_id"]) if st.get("spreadsheet_id") else "",
+           "new": {t: 0 for t in queues}, "to_send": 0, "need_li": 0, "queued": 0,
+           "due_now": 0, "created": False}
+    if dry:
+        for t, q in queues.items():
+            print(f"== {t}: {len(q)} candidate rows")
+            for x in q[:5]:
+                print("   ", [str(v)[:40] for v in x["row"][:-1]])
+        return res
+    od = _od()
+    sid, tabs, created = ensure_reply_sheet(st)
+    if rebuild and not created:
+        tabs = _rebuild(sid, tabs)
+    res.update({"url": SHEET_URL.format(sid), "created": created})
+    today = now_utc().date().isoformat()
+    sorts = []
+    for t, q in queues.items():
+        cols = REPLY_COLS[t]
+        st_i = cols.index("Статус")
+        have = od.sheets("GET", f"/{sid}/values/{_rng(t, f'A1:{_col(len(cols))}')}").get("values") or []
+        keys = {r[len(cols) - 1] for r in have[1:] if len(r) >= len(cols)}
+        new = [x["row"] for x in q if x["key"] not in keys]
+        if new:
+            od.sheets("POST", f"/{sid}/values/{_rng(t, 'A1')}:append"
+                              "?valueInputOption=RAW&insertDataOption=INSERT_ROWS",
+                      {"values": new})
+            have += new
+        res["new"][t] = len(new)
+        cells = []
+        if t == TAB_REF:
+            cells = _sync_referrals(sid, have[1:])
+        for i, r in enumerate(have[1:], start=2):
+            r = r + [""] * (len(cols) - len(r))
+            status = r[st_i]
+            if t == TAB_RC and status == DUE_LATER and r[0] and r[0] <= today:
+                cells.append({"range": f"'{t}'!{_col(st_i + 1)}{i}", "values": [[TO_SEND]]})
+                res["due_now"] += 1
+                status = TO_SEND
+            res["to_send"] += status == TO_SEND
+            res["need_li"] += t == TAB_REF and status == NEED_LI
+        if cells:
+            od.sheets("POST", f"/{sid}/values:batchUpdate", {"valueInputOption": "RAW", "data": cells})
+        res["queued"] += sum(1 for c in cells if t == TAB_REF and c["values"][0][0].startswith(QUEUED))
+        if len(have) > 2:
+            sorts.append({"sortRange": {"range": {"sheetId": tabs[t], "startRowIndex": 1,
+                                                  "endRowIndex": len(have), "startColumnIndex": 0,
+                                                  "endColumnIndex": len(cols)},
+                                        "sortSpecs": [{"dimensionIndex": 0, "sortOrder": "ASCENDING"},
+                                                      {"dimensionIndex": 1, "sortOrder": "ASCENDING"}]}})
+    if sorts:
+        od.sheets("POST", f"/{sid}:batchUpdate", {"requests": sorts})
+    return res
+
+
+def slack_post(text: str) -> bool:
+    try:
+        _od().oo(["connector", "run", "slack", "-a", "post_message", "-d", json.dumps(
+            {"channelId": SLACK_CHANNEL, "text": text, "unfurlLinks": False, "unfurlMedia": False})])
+        return True
+    except Exception as e:                            # noqa: BLE001  (oo, network)
+        print(f"✗ Slack: {e}")
+        return False
+
+
+def links_lines(res: dict | None, err: str = "") -> list[str]:
+    stats = load_sheet_state().get("spreadsheet_id")
+    out = []
+    if res and res.get("url"):
+        n = res["new"]
+        bits = [f"нових рядків {n[TAB_R]}", f"до відправки {res['to_send']}"]
+        if n[TAB_REF] or res["need_li"]:
+            bits.append(f"переадресацій без LinkedIn {res['need_li']}")
+        if res["due_now"]:
+            bits.append(f"час нагадати {res['due_now']}")
+        out.append(f"📝 Чернетки відповідей ({', '.join(bits)}): {res['url']}")
+    elif err:
+        out.append(f"⚠️ Таблиця чернеток не оновилась: {short(err, 200)}")
+    if stats:
+        out.append(f"📊 Статистика кампаній: {SHEET_URL.format(stats)}")
+    return out
+
+
+def slack_text(day: str, total: int, res: dict | None, err: str = "") -> str:
+    """Hlib reads Russian (memory: reference_hlib_leadgen_slack); posted as Vadim in their DM."""
+    stats = load_sheet_state().get("spreadsheet_id")
+    head = (f"📬 Outbound, {day}: {total} "
+            f"{plural(total, 'новый ответ', 'новых ответа', 'новых ответов')}" if total
+            else f"📬 Outbound, {day}: новых ответов нет")
+    lines = [head]
+    if res and res.get("url"):
+        lines.append(f"К отправке в Closely: {res['to_send']} (если сомневаешься, статус "
+                     "«питання до Вадима»).")
+        if res["need_li"]:
+            lines.append(f"Переадресации без LinkedIn: {res['need_li']}. Нужна только ссылка на "
+                         "профиль названного человека, остальное сделает следующая кампания.")
+        if res["due_now"]:
+            lines.append(f"Пора напомнить «не сейчас»-лидам: {res['due_now']}")
+        lines.append(f"Черновики: {res['url']}")
+    elif err:
+        lines.append(f"⚠️ Таблица черновиков не обновилась: {short(err, 200)}")
+    if stats:
+        lines.append(f"Статистика: {SHEET_URL.format(stats)}")
+    return "\n".join(lines)
+
+
+def cmd_replies_sheet(args) -> int:
+    try:
+        res = sync_reply_sheet(survey(), args.dry_run, args.rebuild)
+    except Exception as e:                            # noqa: BLE001
+        print(f"✗ reply sheet: {e}")
+        return 3
+    if not args.dry_run:
+        print(f"→ {res['url']}  new {res['new']}  to send {res['to_send']}  need LinkedIn "
+              f"{res['need_li']}  queued {res['queued']}  due {res['due_now']}"
+              + ("  (created)" if res["created"] else ""))
+    return 0
+
+
 # ----------------------------------------------------------------------- status
 
 def cmd_status(args) -> int:
@@ -1180,9 +1652,15 @@ def main(argv=None) -> int:
                     help="Telegram on failure, and once with the link when it is created")
     sh.add_argument("--dry-run", action="store_true", help="print the rows, write nothing")
     sh.set_defaults(func=cmd_sheet)
+    rs = sub.add_parser("replies-sheet", help="append new reply drafts, referrals and due "
+                                              "check-ins to the drafts sheet (via oo)")
+    rs.add_argument("--dry-run", action="store_true", help="print the candidate rows, write nothing")
+    rs.add_argument("--rebuild", action="store_true",
+                    help="recreate the data tabs (refuses once anyone has worked in them)")
+    rs.set_defaults(func=cmd_replies_sheet)
     args = ap.parse_args(argv)
 
-    if args.cmd in ("status", "weekly", "sheet"):
+    if args.cmd in ("status", "weekly", "sheet", "replies-sheet"):
         return args.func(args)
     LOCK.parent.mkdir(parents=True, exist_ok=True)
     with LOCK.open("w") as lf:
