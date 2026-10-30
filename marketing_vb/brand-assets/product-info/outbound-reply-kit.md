@@ -32,7 +32,7 @@ replies and no ready answer to any of them.
 
 | What | Link | State |
 |---|---|---|
-| FitXpress overview (2-pager PDF, Drive) | `PENDING` | Refresh of the Feb 2025 2-pager in review with Vadim. Until this row has a link, offer "a short overview by email" instead of a link |
+| FitXpress overview (2-pager PDF, Drive) | https://drive.google.com/file/d/1klMAX33al59T7H0oiTSDPq6wJ3ODvWd5/view | `FitXpress_Overview_2026.pdf`, refresh of the Feb 2025 2-pager, approved by Vadim 2026-10-30. Link on its own line, nothing glued to it |
 | Privacy, security and regulatory FAQ | https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/ | live |
 | Sender calendars | `brand-assets/product-info/outbound-message2-template.md` (table by profile) | `vadim` has none: offer two time slots instead |
 
@@ -54,10 +54,10 @@ replies and no ready answer to any of them.
 > Both. We provide iOS and Android SDKs, a React SDK for web, and a REST API.
 
 **A4. "Send me something I can share with the team."**
-> Here is a two-page overview you can forward: {overview link}. Happy to walk the team through it
-> on a short call if useful.
-(while the overview link is PENDING: "Happy to send a short overview by email, what address
-works best?")
+> Here is a two-page overview you can forward:
+> {overview link}
+> Happy to walk the team through it on a short call if useful.
+
 
 **A5. "Is this an automated message?"** Answer honestly.
 > Fair question. The first note went out through a sequencing tool; this reply is me. {one line

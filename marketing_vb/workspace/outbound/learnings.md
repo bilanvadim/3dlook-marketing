@@ -118,9 +118,9 @@ the campaign rules allow, say once what the scan gives that a device in the clin
 in the card. Never name the device or its maker.
 
 **MSG-5 [watch] "Send me something I can share."** 4/34 positive repliers asked for a one-pager
-or materials. The refreshed 2-pager is in review (2026-10-30). Its Drive link goes into
-`outbound-reply-kit.md` once Vadim approves it: Closely cannot attach files. Until then, no
-campaign message promises materials.
+or materials. The refreshed 2-pager (Drive, approved 2026-10-30) is the answer, as a link in
+`outbound-reply-kit.md`: Closely cannot attach files. Replies offer it; a cold Message 1 or 2
+does not, unless the campaign rules say so.
 
 **MSG-6 [directional] Compliance and platform questions** (FDA / CE 1, iOS and Android 1) are
 answered from `brand-assets/product-info/compliance.md` §9 and the product facts, never improvised.
