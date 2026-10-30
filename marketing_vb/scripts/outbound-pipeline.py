@@ -482,6 +482,9 @@ def scope_hash(text: str) -> tuple[str, dict[str, str]]:
     return hashlib.sha256(basis.encode("utf-8")).hexdigest()[:16], secs
 
 
+LEARNINGS_SINCE = "2026-10-30"                   # hypotheses created after this must cite learnings.md
+
+
 def cmd_hypothesis_gate(args) -> int:
     import json
     cdir = campaign_dir(args.campaign)
@@ -504,6 +507,22 @@ def cmd_hypothesis_gate(args) -> int:
         print(f"\n✗ hypothesis status is {status or 'missing'}, not `approved`. "
               "Step 2 needs an approved hypothesis.", file=sys.stderr)
         return 1
+
+    # 2026-10-30: the pooled analysis of past campaigns lives in learnings.md, and a
+    # hypothesis written after it must say what it took from it. Before that date there was
+    # nothing to read, so older hypotheses pass as they are.
+    # No `created:` means an old-format file: hypothesis-generator has always written one.
+    m = re.search(r"^created:\s*(\d{4}-\d{2}-\d{2})", text, re.M)
+    if m and m.group(1) > LEARNINGS_SINCE:
+        miss = [w for w, rx in (("`learnings: <version>` in the frontmatter",
+                                 r"(?m)^learnings:\s*\d{4}-\d{2}-\d{2}"),
+                                ("a `## Learnings applied` section",
+                                 r"(?m)^##\s+Learnings applied\s*$")) if not re.search(rx, text)]
+        if miss:
+            print(f"\n✗ missing {' and '.join(miss)}. Read workspace/outbound/learnings.md and "
+                  "say which items the hypothesis applies or departs from.", file=sys.stderr)
+            return 1
+        print("  learnings     " + re.search(r"(?m)^learnings:\s*(\S+)", text).group(1))
 
     if args.stamp:
         lock.write_text(json.dumps({

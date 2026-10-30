@@ -162,6 +162,15 @@ check "unapproved status -> 1" 1 python3 $S/outbound-pipeline.py hypothesis-gate
 # the scope is already broken by the edit above, so the exit code alone cannot say why
 grep_check "unapproved status is named as the cause" "status is draft" \
   python3 $S/outbound-pipeline.py hypothesis-gate --campaign $T
+# 2026-10-30: a hypothesis created after the pooled analysis must cite learnings.md
+L=_test-learnings; TMP_CAMPAIGNS+=("$L"); mkdir -p "$CAMP/$L"
+printf -- '---\nstatus: approved\ncreated: 2026-11-02\n---\n\n## Vertical\nX.\n' > "$CAMP/$L/hypothesis.md"
+check "new hypothesis without learnings -> 1" 1 python3 $S/outbound-pipeline.py hypothesis-gate --campaign $L
+grep_check "names what is missing" "missing .learnings: <version>. in the frontmatter and a .## Learnings applied. section" \
+  python3 $S/outbound-pipeline.py hypothesis-gate --campaign $L
+printf -- '---\nstatus: approved\ncreated: 2026-11-02\nlearnings: 2026-10-30\n---\n\n## Vertical\nX.\n\n## Learnings applied\n- HYP-2\n' > "$CAMP/$L/hypothesis.md"
+check "new hypothesis citing learnings -> 0" 0 python3 $S/outbound-pipeline.py hypothesis-gate --campaign $L
+check "learnings.md passes its own gate" 0 python3 $S/outbound-learnings.py check
 
 echo "== validate-companies =="
 # Inline fixtures in a temp campaign. These checks used to read the live UK campaign

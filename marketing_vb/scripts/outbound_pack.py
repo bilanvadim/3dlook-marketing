@@ -921,6 +921,17 @@ def build_card(cdir: Path, stage: str) -> str:
             out += ["### What every message must carry (hypothesis.md, Validation criteria)", "",
                     gate, ""]
 
+    # 2026-10-30: what the pooled analysis of past campaigns taught, so the validator and the
+    # writers act on it without reading the analysis. learnings.md decides the wording;
+    # `[watch]` items ride along so nobody re-derives them as new ideas.
+    learn = md_section(LEARNINGS, LEARN_SECTION[stage])
+    if learn:
+        ver = re.search(r"(?m)^version:\s*(\S+)", LEARNINGS.read_text(encoding="utf-8"))
+        out += [f"## What past campaigns taught (learnings.md {ver.group(1) if ver else '?'}, verbatim)",
+                "", "Campaign rules above win over these. `[directional]` is the default; say "
+                "why when you depart from it. `[watch]` is not a rule yet.", "",
+                demote(learn), ""]
+
     pi = ROOT / "brand-assets" / "product-info"
     if stage == "validate":
         m = re.search(r"icp-detail\.md[` ]*(?:§|section )\s*(\d+)", text)
@@ -999,6 +1010,10 @@ def build_card(cdir: Path, stage: str) -> str:
     return "\n".join(out).rstrip() + "\n"
 
 
+LEARNINGS = ROOT / "workspace" / "outbound" / "learnings.md"
+LEARN_SECTION = {"validate": "People", "messages": "Messages"}
+
+
 def card_path(cdir: Path, stage: str) -> Path:
     return cdir / f"card-{stage}.md"
 
@@ -1013,6 +1028,8 @@ def card_is_fresh(cdir: Path, stage: str) -> tuple[bool, str]:
         return False, "hypothesis scope changed since the card was built"
     if p.stat().st_mtime < (cdir / "hypothesis.md").stat().st_mtime:
         return False, "hypothesis.md is newer than the card"
+    if LEARNINGS.exists() and p.stat().st_mtime < LEARNINGS.stat().st_mtime:
+        return False, "learnings.md is newer than the card"
     return True, "fresh"
 
 

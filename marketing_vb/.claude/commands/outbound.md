@@ -15,6 +15,9 @@ model: sonnet
   (`YYYY-MM-DD-...`), так что отличить его от stage невозможно спутать.
 - Если первое слово не из списка Stages, а похоже на слаг — **СТОП**, спроси Вадима,
   какую стадию он имел в виду. Не угадывай.
+- **`learnings` и `learnings-apply` — не про одну кампанию.** Второе слово у них — дата
+  данных (`data-2026-11-01`) или proposals (`2026-11-01`), а не слаг: папку кампании не ищи,
+  `outbound_pack.py next` не запускай. Раздел «Выводы по всем кампаниям» ниже.
 
 **Почему разбор явный, а не позиционный.** Раньше stage и slug брались позиционными
 подстановками (первый и второй аргумент). 2026-09-02 при программном вызове
@@ -56,6 +59,8 @@ python3 /home/vadim_prod/3dlook-marketing/marketing_vb/scripts/outbound_pack.py 
 | `import` | — | **нет** | `outbound_pack.py build-import`, `outbound-registry.py record` |
 | `responses` | `closely-pull.py pull` (если файл старше 24 ч), `check-responses` | `response-classifier` | `check-classified` |
 | `analyze` | — | `campaign-analyzer` (opus) | — |
+| `learnings` | `outbound-learnings.py build` (если `data-*.md` из аргумента нет) | `campaign-analyzer` (opus), **pooled mode** | `outbound-learnings.py check --proposals <файл>` |
+| `learnings-apply` | — | **нет** | `outbound-learnings.py check`, коммит |
 
 `extract` и `import` — это код. Агентов `people-extractor` и `closelyhq-importer` запускай
 только разбираться, почему команда упала.
@@ -243,6 +248,29 @@ headless-сессия на этом кончилась, классификато
 **`import` не отдавать Вадиму, если `check-import` вернул exit 1.**
 `2026-07-16-au-telehealth` — 253 строки с пустыми `first_name` / `last_name` /
 `linkedin_url`, семь недель в статусе «imported» с нулём отправленных.
+
+## Выводы по всем кампаниям: `learnings` и `learnings-apply` (с 2026-10-30)
+
+Вадим, 2026-10-30: «а ти робиш якісь висновки і покращуєш систему на основі даних по
+кампаніям?» — нет: шаг 9 прошёл один раз (5 кампаний, 2026-09-02), 18 из 29 папок с ответами
+никто не разбирал, и агентам негде было прочитать выводы. Теперь:
+
+- **`workspace/outbound/learnings.md`** — правила из сводного разбора, с ID и уровнем
+  доказательности. `hypothesis-generator` читает его целиком; `card --for validate` несёт его
+  `## People`, `card --for messages` — `## Messages`. `hypothesis-gate` не пускает гипотезу,
+  созданную после 2026-10-30, без `learnings:` во frontmatter и секции `## Learnings applied`.
+- **`learnings data-YYYY-MM-DD`** ставит cron 1-го числа (`outbound-learnings.py monthly
+  --notify`, 07:15 UTC). Цифры уже посчитаны в `workspace/outbound/learnings/data-*.md`.
+  Запусти `campaign-analyzer` в pooled mode **на переднем плане** (как классификатор), прогони
+  `check --proposals`. Финальный ответ — TL;DR агента и строка «Застосувати: `Аутбаунд
+  learnings-apply YYYY-MM-DD`». `learnings.md` не трогаешь, не коммитишь.
+- **`learnings-apply YYYY-MM-DD [крім ID…]`** — Вадим написал это в Telegram, это и есть апрув.
+  Перенеси из `learnings/YYYY-MM-DD-proposals.md` раздел «Зміни в learnings.md» в
+  `learnings.md` (кроме названных ID), подними `version:` и `data:` во frontmatter, добавь
+  строку в Change log («approved: Vadim, дата»), в proposals поставь `status: applied`.
+  Гейт `outbound-learnings.py check` зелёный → `git add` этих двух файлов и data-файла,
+  коммит `outbound: learnings <version>`, push. Пропозиции P1, P2… (скрипты, промпты, решения)
+  сам не применяешь: перечисли их в ответе как «нужна интерактивная сессия».
 
 ## Чекпоинты Вадима (НЕ запускаешь автоматически)
 

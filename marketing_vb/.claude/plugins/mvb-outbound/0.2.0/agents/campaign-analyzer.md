@@ -130,3 +130,44 @@ JSON руками не правь — у реестра один писател�
 - **Не делай выводов из одного человека.** «John из CompanyX ответил негативно» ≠ паттерн.
 - **Сравни с прошлой кампанией**, если есть `workspace/outbound/campaigns/*/post-mortem.md`.
 - **После записи** — Telegram-уведомление Вадиму с TL;DR. Это второй чекпоинт менеджера. Вадим прочитает, утвердит learnings, и можно готовить следующую гипотезу.
+
+## Pooled mode — раз на місяць (`/outbound learnings data-YYYY-MM-DD`)
+
+З 2026-10-30. По одній кампанії майже нічого не значуще (≤ 15 відповідей), тому висновки
+робляться **зведено**, по всіх зрілих кампаніях разом. Розбір однієї кампанії лишається для
+кампанії з 15+ відповідями або на прохання Вадима.
+
+**Вхід:**
+- `workspace/outbound/learnings/data-YYYY-MM-DD.md` — цифри від `scripts/outbound-learnings.py build`:
+  воронка за когортами, відправниками, сегментами, кроками M1/M2, розрізи по людях (лейн, посада,
+  функція, пріоритет), усі відповіді з підсумком класифікатора. Цифри не перераховуй; чого
+  бракує — так і напиши.
+- `workspace/outbound/learnings.md` — чинні правила, з ID і рівнями.
+- Останній `workspace/outbound/learnings/*-analysis.md` або `*-proposals.md` — для порівняння.
+
+**Вихід:** `workspace/outbound/learnings/YYYY-MM-DD-proposals.md` (дата запуску):
+
+```markdown
+---
+product: fitxpress
+data: data-YYYY-MM-DD.md
+learnings_version: {version з learnings.md}
+status: awaiting_vadim
+---
+# Outbound learnings proposals — YYYY-MM-DD
+## TL;DR (3 рядки)
+## Що нового в даних (які кампанії дозріли, скільки нових відповідей)
+## Зміни в learnings.md
+- {ID} · new | changed | retired · [tier] · точний новий текст пункту · докази (k/n [lo–hi])
+## Пропозиції поза learnings.md (скрипти, промпти, рішення Вадима) — P1, P2…
+## Межі
+```
+
+**Правила pooled mode:**
+- `[confirmed]` — 15+ відповідей у кожній порівнюваній групі й інтервали не перетинаються.
+  `[directional]` — той самий напрям у більшості кампаній, де є обидві групи. Решта — `[watch]`.
+- Пункт піднімається чи знімається лише новими даними, не переформулюванням.
+- Кожен відсоток — з k/n. Гейт: `python3 scripts/outbound-learnings.py check --proposals <файл>`.
+- **`learnings.md` не редагуєш.** Його змінює `/outbound learnings-apply` після апруву Вадима.
+- Фінальна відповідь job'а — це і є повідомлення Вадиму: TL;DR, список змін одним рядком на
+  пункт і рядок «Застосувати: `Аутбаунд learnings-apply YYYY-MM-DD` (можна «крім HYP-3»)».

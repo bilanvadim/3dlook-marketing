@@ -15,6 +15,9 @@ tools: Read, Grep, Glob, WebSearch, Bash
 
 ## Вход
 
+- **`workspace/outbound/learnings.md` — первым и целиком.** Что показали все прошлые кампании
+  сводно: базовые цифры каждого отправителя, какие сегменты, люди и углы отвечают, а какие нет.
+  Сырые `campaigns/*/responses-*.csv` не перечитывай: цифры там уже сведены, с знаменателями.
 - `/home/vadim_prod/3dlook-marketing/marketing_vb/CLAUDE.md` — продукт, ICP (секция 4), гео профилей (секция 5)
 - `brand-assets/product-info/INDEX.md` — карта продуктовых документов
 - `brand-assets/product-info/icp-detail.md` — подробный ICP **по каждому из двух продуктов**
@@ -42,7 +45,11 @@ tools: Read, Grep, Glob, WebSearch, Bash
 ## Алгоритм
 
 1. Прочитай продукт, ICP, прошлые гипотезы.
-2. Если есть прошлые — посмотри, что **сработало** (response rate ≥ 5%) и что **провалилось**. Не повторяй провалы.
+2. Сверь идею с `learnings.md`: `[confirmed]` выполняешь, `[directional]` — дефолт, отступление
+   только с причиной, `[watch]` не трогаешь. Всё, что применил или от чего отступил, — в секцию
+   `## Learnings applied` (формат ниже). Правило «посмотри, что сработало (response rate ≥ 5%)», стоявшее
+   здесь до 2026-10-30, опиралось на разбор, которого не было: post-mortem написан для 5 кампаний
+   из 29, а по одной кампании (≤ 15 ответов) сработавшее от случайного не отличить.
 3. Сделай WebSearch по индустриальным трендам — что сейчас болит у вертикали, которую рассматриваешь.
 4. Сформулируй гипотезу в чёткой структуре.
 
@@ -60,6 +67,7 @@ status: draft
 use_case: fx-digital-fitness        # имя файла из brand-assets/product-info/use-cases/, без .md
 cap_per_group: 50                   # инвайтов на компанию или группу; дефолт 50 для всех кампаний (Вадим 2026-09-29), меняет только Вадим
 banned_terms: []                    # что нельзя называть в копии ЭТОЙ кампании, кроме клиентов и конкурентов
+learnings: 2026-10-30               # version из frontmatter workspace/outbound/learnings.md, который ты прочитал
 ---
 
 # Outbound Hypothesis — {YYYY-MM-DD}
@@ -118,14 +126,19 @@ Head of Retention
 ## Anti-cases (где НЕ работает)
 - ...
 
+## Learnings applied
+- HYP-2: baseline отправителя {profile} — accepted X/Y, replied X/Y; цели ниже от него
+- PPL-1: ... (как применено в этой гипотезе)
+- Отступаю от HYP-6: ... (одна строка почему)
+
 ## Validation criteria (Step 2 will check)
 - Существует ли минимум 30 компаний в этой подсегменте → company-researcher проверит
 - Доступны ли C-level контакты в Sales Nav / открытых источниках
 - Есть ли у нас релевантный кейс или хотя бы аналог в product-info
 
 ## Success metrics for this campaign
-- Acceptance rate: target ≥ 30%
-- Reply rate: target ≥ 5%
+- Acceptance rate: target = baseline этого отправителя (learnings.md HYP-2), с числами
+- Reply rate (replied / accepted): target ≥ baseline отправителя, с числами
 - Positive replies: target ≥ N
 - Qualified leads: target ≥ M
 
@@ -137,7 +150,9 @@ Head of Retention
 
 Их читает код, а не человек. `cap_per_group` проверяют `promote` и `build-import`.
 `banned_terms` проверяет гейт сообщений. `use_case` выбирает файл use case для карточки
-сообщений. Блок `titles` превращается в фильтр Sales Navigator.
+сообщений. Блок `titles` превращается в фильтр Sales Navigator. `learnings` и секцию
+`## Learnings applied` проверяет `hypothesis-gate`: у гипотезы, созданной после 2026-10-30,
+без них step 2 не стартует. Иначе выводы прошлых кампаний снова никто бы не прочитал.
 
 Выгрузка по компании вместо выгрузки по title стоила двух кампаний: 2026-09-28 в
 EU-экспорте 276 человек из 321 (86%) не были кандидатами, а настоящих покупателей (CPO,
