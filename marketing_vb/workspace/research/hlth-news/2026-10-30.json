@@ -1,0 +1,101 @@
+{
+ "generated": "2026-10-30T05:41:04+00:00",
+ "items": [
+  {
+   "id": "b4a3bb1a-7928-45a9-baeb-7656ece3f5a7",
+   "title": "OpenAI Faces Wrongful Death Lawsuit Over Alleged ChatGPT Medication Advice",
+   "date": "2026-10-29",
+   "tags": [
+    "Patient Engagement / Experience",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services",
+    "Policy and Regulation"
+   ],
+   "url": "https://hlth.com/insights/news/openai-faces-wrongful-death-lawsuit-over-alleged-chatgpt-medication-advice"
+  },
+  {
+   "id": "bfab3717-2b9f-467e-8183-99b04550796e",
+   "title": "ŌURA and UC San Diego Health Launch Clinical Trial Examining GLP-1 Treatment Outcomes",
+   "date": "2026-10-29",
+   "tags": [
+    "Precision Medicine / Genomics",
+    "Association, Non Profit & Academia",
+    "Clinical Trial Solutions",
+    "Health Tech, Solutions & Services",
+    "Chronic Condition Management"
+   ],
+   "url": "https://hlth.com/insights/news/ura-and-uc-san-diego-health-launch-clinical-trial-examining-glp-1-treatment-outcomes"
+  },
+  {
+   "id": "2b6c9233-f6d5-4c3e-a400-ebde30a70058",
+   "title": "ASAM and OpenEvidence Partner to Integrate Addiction Medicine Guidelines Into Clinical AI Platform",
+   "date": "2026-10-29",
+   "tags": [
+    "Mental & Behavioral Health",
+    "Association, Non Profit & Academia",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/asam-and-openevidence-partner-to-integrate-addiction-medicine-guidelines-into-clinical-ai-platform"
+  }
+ ],
+ "analyses": {
+  "b4a3bb1a-7928-45a9-baeb-7656ece3f5a7": {
+   "id": "b4a3bb1a-7928-45a9-baeb-7656ece3f5a7",
+   "score": 0,
+   "segment": "—",
+   "what": "Батьки 31-річної пацієнтки з епілепсією подали позов про wrongful death проти OpenAI і Sam Altman. Вони стверджують, що ChatGPT (GPT-4o) склав їй план відмови від lamotrigine без погодження з лікарем.",
+   "why": "Це судовий позов про AI-поради щодо ліків. До вимірів тіла чи будь-якого сегмента ICP 3DLOOK стосунку не має.",
+   "play": "none",
+   "companies": [
+    "OpenAI",
+    "Social Media Victims Law Center",
+    "The Schenk Law Firm"
+   ],
+   "_date": "2026-10-29"
+  },
+  "bfab3717-2b9f-467e-8183-99b04550796e": {
+   "id": "bfab3717-2b9f-467e-8183-99b04550796e",
+   "score": 2,
+   "segment": "FitXpress §1 Telehealth & GLP-1",
+   "what": "ŌURA разом з UC San Diego Health запустила своє перше клінічне дослідження SMART-BMI (NCT07736729). Це багаторічне дослідження того, як сон, пульс і активність з Oura Ring пов'язані з результатами в пацієнтів на GLP-1 або після баріатричної операції: втрата ваги, HbA1c, treatment persistence. Окремо Mount Sinai Doctors–Concierge Care додає дані Oura Ring 5 у свою Healthspan Membership.",
+   "why": "Новина підтверджує біль сегмента: GLP-1 і баріатричні програми не бачать, що відбувається з пацієнтом між візитами, і навіть wearable-компанія будує на цьому окреме дослідження. У SMART-BMI Oura збирає сон, пульс і активність, а виміри тіла між візитами в переліку не згадуються. FitXpress закриває саме це: 2-фото скан у застосунку пацієнта дає BMI, body composition і 80+ вимірів для check-ins на 30/60/90 днях замість self-report і фото на вагах. Ні Oura, ні UC San Diego Health не є реальними акаунтами, тож це хук для вже затвердженої US-кампанії.",
+   "play": "hook_for_existing",
+   "campaign": {
+    "title": "Хук «прогалина між візитами» для US obesity medicine",
+    "profile": "nick",
+    "market": "USA",
+    "targets": "Фіксований список US physician-led obesity medicine practices, які ведуть пацієнтів на GLP-1 і після баріатрії; за потреби той самий хук для списку 2026-09-29-us-cardiometabolic",
+    "roles": "Medical Director / CMO, Head of Clinical Operations, Head of Product, Head of Member Engagement / Retention",
+    "angle": "Oura і UC San Diego Health щойно запустили багаторічне дослідження GLP-1 і баріатрії, бо період між візитами — це сліпа зона. Як змінюються вага й тіло між візитами, теж належить до цієї зони: FitXpress додає у ваш застосунок домашній 2-фото скан (BMI, body composition, 80+ вимірів) для check-ins на 30/60/90 днях.",
+    "existing_campaign": "2026-09-29-us-obesity-medicine",
+    "task": "USA: add Oura × UC San Diego SMART-BMI GLP-1/bariatric trial as a 'between-visit data gap' hook to the us-obesity-medicine sequence — at-home 2-photo body scan for 30/60/90-day check-ins"
+   },
+   "caveat": "Не пітчити Oura чи UC San Diego Health напряму: Oura — великий consumer wearable, який сам називає себе non-medical device, а протокол SMART-BMI вже зареєстрований. Список кампанії фіксований і вже в роботі в nick, тому це хук для наступних кроків, а не новий cold-список. Не подавати це як «ми краще за Oura» і не робити клінічних тверджень про моніторинг.",
+   "companies": [
+    "ŌURA",
+    "UC San Diego Health",
+    "Maven Clinic",
+    "Johns Hopkins School of Medicine",
+    "Mount Sinai Doctors–Concierge Care",
+    "American Medical Student Association"
+   ],
+   "_date": "2026-10-29"
+  },
+  "2b6c9233-f6d5-4c3e-a400-ebde30a70058": {
+   "id": "2b6c9233-f6d5-4c3e-a400-ebde30a70058",
+   "score": 0,
+   "segment": "—",
+   "what": "ASAM і OpenEvidence інтегрують клінічні гайдлайни з addiction medicine в AI-платформу OpenEvidence для клініцистів. Рекомендації показуватимуться прямо в робочому процесі лікаря.",
+   "why": "Клінічна AI-довідка з лікування залежностей. До даних про тіло і до ICP 3DLOOK стосунку не має.",
+   "play": "none",
+   "companies": [
+    "American Society of Addiction Medicine",
+    "ASAM",
+    "OpenEvidence"
+   ],
+   "_date": "2026-10-29"
+  }
+ },
+ "posts": []
+}
