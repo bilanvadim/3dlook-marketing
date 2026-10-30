@@ -39,8 +39,13 @@ import datetime as _dt
 import json
 import os
 import re
+import socket
 import subprocess
 import sys
+import time
+import urllib.error
+import urllib.parse
+import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ART_ROOT = os.path.join(ROOT, "workspace", "seo", "articles")
@@ -63,6 +68,88 @@ NAMED_ENTITIES = [
 # Устаревший телехелс-URL: 301 на structured-body-data-...; в brand-assets ещё
 # встречается старая форма, и паки её наследуют (память 2026-09-19).
 STALE_URLS = ["/fitxpress/for-telehealth-and-weight-loss/"]
+
+# Живые ссылки (2026-10-30, обещано Асель 29.10). Агенты берут адреса из карты
+# лендингов, контент-плана и прошлых статей; переехавшая страница проходит
+# дальше — так в статью попала старая ссылка на запрос демо (404, Асель
+# чинила руками 27.10). Свои страницы должны отвечать 200 без редиректа: 301
+# тоже ❌, в заметке конечный адрес, на который заменить. Чужие — < 400 после
+# редиректов; 401/403/429 — сайт режет ботов, это ⚠️ без ❌. Запросы к
+# 3dlook.ai строго по очереди с паузой: параллельный curl ловит 503 (GSC-аудит).
+SITE_HOSTS = {"3dlook.ai", "www.3dlook.ai"}
+LINK_UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+           "(KHTML, like Gecko) Chrome/130.0 Safari/537.36")
+LINK_PAUSE_S = 0.3
+LINK_TIMEOUT_S = 20
+
+
+class _NoRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, *args, **kwargs):
+        return None
+
+
+def _extract_links(body: str):
+    """Все http(s)-ссылки статьи: markdown-анкоры, голые URL, относительные /path."""
+    body = re.sub(r"<!--.*?-->", "", body, flags=re.S)
+    urls = set()
+    for m in re.finditer(r"\]\(\s*<?([^)\s>]+)>?(?:\s+\"[^\"]*\")?\s*\)", body):
+        urls.add(m.group(1))
+    for m in re.finditer(r"(?<![\(<])https?://[^\s)\]>\"'`]+", body):
+        urls.add(m.group(0).rstrip(".,;:"))
+    out = set()
+    for u in urls:
+        if u.startswith("/") and not u.startswith("//"):
+            u = "https://3dlook.ai" + u
+        if not u.startswith(("http://", "https://")):
+            continue  # mailto:, tel:, #якорь
+        out.add(u.split("#")[0])
+    return sorted(out)
+
+
+def _probe(url: str, follow: bool):
+    """(status, location | None, error | None) одного GET без чтения тела."""
+    opener = (urllib.request.build_opener() if follow
+              else urllib.request.build_opener(_NoRedirect()))
+    req = urllib.request.Request(url, headers={"User-Agent": LINK_UA})
+    try:
+        with opener.open(req, timeout=LINK_TIMEOUT_S) as r:
+            return r.status, None, None
+    except urllib.error.HTTPError as e:
+        loc = e.headers.get("Location") if e.headers else None
+        return e.code, (urllib.parse.urljoin(url, loc) if loc else None), None
+    except (urllib.error.URLError, socket.timeout, OSError) as e:
+        return None, None, str(getattr(e, "reason", e))[:80]
+
+
+def check_links(body: str):
+    """(ok, note): ❌ на любую свою ссылку не-200 и на мёртвую чужую."""
+    links = _extract_links(body)
+    bad, warn = [], []
+    for u in links:
+        own = urllib.parse.urlparse(u).hostname in SITE_HOSTS
+        code, loc, err = _probe(u, follow=not own)
+        if own:
+            time.sleep(LINK_PAUSE_S)
+            if code == 200:
+                continue
+            if code and 300 <= code < 400:
+                bad.append(f"{u} → {code} на {loc or '?'} (заменить на конечный адрес)")
+            else:
+                bad.append(f"{u} → {code or err}")
+        elif code and code < 400:
+            continue
+        elif code in (401, 403, 429):
+            warn.append(f"{u} → {code} (бот-защита, проверить глазами)")
+        elif err and "timed out" in err:
+            warn.append(f"{u} → таймаут (проверить глазами)")
+        else:
+            bad.append(f"{u} → {code or err}")
+    note = f"{len(links)} ссылок, ❌ {len(bad)}, ⚠️ {len(warn)}"
+    if bad:
+        note += "; ❌ " + " · ".join(bad)
+    if warn:
+        note += "; ⚠️ " + " · ".join(warn)
+    return not bad, note
 
 
 def _die(code: int, msg: str) -> "None":
@@ -176,6 +263,7 @@ def build_checklist(slug: str):
     text_l = body.lower()
     named_hits = sorted({n for n in NAMED_ENTITIES if n.lower() in text_l})
     stale_hits = [u for u in STALE_URLS if u in body]
+    links_ok, links_note = check_links(body)
     med = body.count("FitXpress is not a medical device.")
     positioned = len(re.findall(r"positioned as", body, re.I))
     faq_qs = 0
@@ -254,6 +342,7 @@ def build_checklist(slug: str):
              block="compliance"),
         item("no_stale_urls", not stale_hits,
              "устаревшие URL: " + (", ".join(stale_hits) or "нет")),
+        item("links_live", links_ok, links_note, block="links"),
         item("accuracy_discipline", _gate(lint, "accuracy").get("ok"),
              str(_gate(lint, "accuracy").get("info", {})), block="compliance"),
         item("m1_abbreviations", g_m1.get("ok") or m1_title_only,
@@ -284,10 +373,15 @@ def build_checklist(slug: str):
 def _stop_rule(items, judgment_fails=0):
     fails = [i for i in items if not i["ok"]]
     comp = [i for i in fails if i["block"] == "compliance"]
+    # Битая ссылка — STOP сама по себе: опубликованный 404 видит читатель,
+    # а не только линтер (2026-10-30).
+    dead = [i for i in fails if i["block"] == "links"]
     total = len(fails) + judgment_fails
     if comp:
         return ("STOP", "❌ в блоке positioning/compliance: "
                 + ", ".join(i["key"] for i in comp))
+    if dead:
+        return ("STOP", "❌ ссылки не отвечают 200: " + dead[0]["note"])
     if total >= 2:
         return ("STOP", f"{total} ❌ суммарно (порог 2)")
     return ("OK", "")
