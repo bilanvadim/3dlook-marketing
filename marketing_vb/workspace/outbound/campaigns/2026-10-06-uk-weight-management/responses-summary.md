@@ -1,82 +1,90 @@
-# Responses Summary — 2026-10-06-uk-weight-management (as of 2026-10-28)
+# Responses Summary — 2026-10-06-uk-weight-management (as of 2026-10-30)
 
 ## Counts
-- Total responses: 15
-- Interested: 3 (20%) ← **передать сейлзам**
+- Total responses: 16
+- Interested: 3 (19%) ← **передать сейлзам**
 - Maybe-later: 1
 - Referrals: 3
 - Decline: 1
 - Negative: 0 (0%)
 - Questions: 4 (требуют личного ответа)
-- Out-of-office: 0
-- Other/unclear: 3
+- OOO: 0
+- Other/unclear: 4
 
-Note: counts are per-response row, not per-person — Bjorn Ronaasen and Juli Mey each
-replied twice (first a clarifying question/confirmation, then an explicit "let's book"),
-so they appear in more than one category below.
+Note: one person (Bjorn Ronaasen) and one person (Juli Mey) each have two rows in this file —
+an earlier question/negotiation message and a later interested message in the same thread. They
+are counted once each below under Interested; see the CSV for both rows.
 
 ## Interested — for sales handoff
 
-### Bjorn Ronaasen — Coaching Lead, Medical Management and Clinical Oversight — Counterweight
-- Replied to: Message 1
-- Their message: «Hi Katerina. Apologies for the delay in getting back to you. Sure. I'll book something in now.»
-- Extracted intent: wants to book a call, no specific window stated — send the calendar link.
-- Suggested next step: send `https://meetings.hubspot.com/katerina-galich`, confirm the discussion topic (clinical oversight / reporting fit for the CW2 programme — see his earlier question in Questions below).
-- Full thread: `messages/bjorn-ronaasen.md` + both responses in CSV.
+### Bjorn Ronaasen — Counterweight
+- Replied to: Message 1 (initial question on 2026-10-09), then self-booked on 2026-10-23
+- Their message: «Sure. I'll book something in now.»
+- Extracted intent: wants a call about clinical oversight / reporting fit for the CW2 programme; self-booking via calendar.
+- Suggested next step: send calendar link if not already booked, confirm call on calendar.
+- Full thread: `messages/bjorn-ronaasen.md` + responses in CSV
 
-### Juli Mey — Tier 3 Practitioner Lead (Sussex, GM, Essex) — MoreLife (UK) Ltd
-- Replied to: Message 1 and Message 2 (two separate replies, both positive)
+### Juli Mey — MoreLife (UK) Ltd
+- Replied to: Message 1 (and earlier Message 2 reply on 2026-10-09)
 - Their message: «I appreciate you reaching out and would be happy to learn more about FitXpress and how it could support practitioner workflows at MoreLife. I'll take a look at your calendar, see what works & schedule time in.»
-- Extracted intent: wants a 15-min call on FitXpress fit for Tier 3 practitioner workflows; will self-schedule via the calendar link. Her earlier reply (10-09) already asked for availability for "next week" — she may book before seeing any further message from us.
-- Suggested next step: confirm calendar link is current, no need to chase — she is already moving to book.
-- Full thread: `messages/juli-mey.md` + both responses in CSV.
+- Extracted intent: wants a 15-min call on FitXpress fit for Tier 3 practitioner workflows; will self-schedule.
+- Suggested next step: confirm calendar link reached her, hold a slot for a 15-20 min call.
+- Full thread: `messages/juli-mey.md` + responses in CSV
 
 ## Questions — Vadim needs to reply personally
 
-### Bjorn Ronaasen
-- Question: «Thanks for your interest. What would you like to discuss?» (sent 10-09, before his 10-23 "let's book" reply — may already be resolved by the time this is read)
+### Bjorn Ronaasen (first reply, 2026-10-09)
+- Question: «Thanks for your interest. What would you like to discuss?»
 - Suggested draft answer (Vadim, edit to taste):
 > «Hi Bjorn, happy to explain - I'd like to discuss how a two-photo home scan could support clinical oversight for the CW2 programme. Could we grab 15 minutes?»
+- Note: superseded by his later interested reply on 2026-10-23, but his own message implies he never got a concrete answer to this question before booking — worth sending the answer anyway.
 
-### Sarah Le Brocq — Obesity Consultant — Perspectum Ltd
+### Sarah Le Brocq — Perspectum Ltd
 - Question: «Do you have a one pager or overview of what FitXpress does that I can share with Perspectum?»
-- Suggested draft answer (Vadim, edit to taste):
-> «Hi Sarah, thank you - attaching our FitXpress overview one-pager here [link/attach]. Happy to join a call with the Perspectum team if useful.»
-- Note: needs an actual one-pager attached/linked before sending — check if one exists in brand-assets.
+- Suggested draft answer:
+> «Hi Sarah, thank you. Here is our FitXpress overview: https://drive.google.com/file/d/1klMAX33al59T7H0oiTSDPq6wJ3ODvWd5/view. Happy to join a call with the Perspectum team if useful.»
 
-### Elliot McEwan — Dietitian / Partnership Representative — Counterweight
-- Question: «Is this an automated message?» — skeptical opener, low-medium confidence this leads anywhere.
-- Suggested draft answer (Vadim, edit to taste):
+### Elliot McEwan — Counterweight
+- Question: «Is this an automated message?»
+- Suggested draft answer:
 > «Hi Elliot, not automated - this is Katerina writing directly. I was hoping to find who at Counterweight decides on new partner capabilities for members. Any pointer appreciated.»
 
-### Sean-Patrick McGowan — Graduate Commercial Associate — Reset Health
-- Question: «Could you email this over with a little more information to opportunities@resethealth.clinic? That way I can pass it along to the team internally.»
-- Suggested draft answer (Vadim, edit to taste):
-> «Hi Sean-Patrick, thank you - sending a short overview to opportunities@resethealth.clinic now so your team has the details.»
-- Note: `opportunities@resethealth.clinic` is a generic inbox — treat as medium confidence that this reaches a real decision path, follow up by LinkedIn in 2 weeks if nothing comes back from that address.
+### Sean-Patrick McGowan — Reset Health
+- Question: «Could you email this over with a little more information to opportunities@resethealth.clinic?»
+- Suggested draft answer:
+> «Hi Sean-Patrick, thank you. Here is a two-page overview your team can use: https://drive.google.com/file/d/1klMAX33al59T7H0oiTSDPq6wJ3ODvWd5/view. Happy to set up a short call once they have had a look.»
+- Note: this goes by email, not LinkedIn/Closely.
 
-## Referrals — new contacts for outbound
+## Referrals — new contacts for next outbound round
 
-- **Mzwandile Mahlangu** (Counterweight) → referred to **Naeem Witbooi** for programme reporting ownership.
-- **Daniela Alves** (Homerton Healthcare NHS Foundation Trust) → referred to **Dorottya Norton, lead AHP lead**, for the weight management service.
-- **Georgina Walsh** (LighterLife, 10-27 reply) → referred to **hello@lighterlife.com** (sent as "helo@lighterlife.com" — likely typo) for online-delivery ownership questions. Her follow-up the next day was just «Good luck», logged separately under other/unclear.
+- **Naeem Witbooi, Counterweight** — named by Mzwandile Mahlangu. Flag: Bjorn Ronaasen (also Counterweight) separately agreed to a call on 2026-10-23; coordinate timing before Naeem's Message 1 goes out.
+- **Dorottya Norton, lead AHP lead, Homerton Healthcare NHS Foundation Trust (weight management service)** — named by Daniela Alves.
+- **helo@lighterlife.com (likely hello@lighterlife.com)** — named by Georgina Walsh, LighterLife. This is an email inbox, not a LinkedIn profile; verify spelling before sending. Separately, Judy Hoskins (also LighterLife) said she has left the company with no referral given.
 
-Action: add Naeem Witbooi and Dorottya Norton as new people for outbound tracking; follow up with LighterLife's general inbox under the referral, not as a new named contact.
+All three have `followup_draft` (Message 1) and `followup_draft_2` (Message 2, +5 days) pre-written
+in the CSV for import into the next campaign of the same sender (Katerina).
+
+## Maybe-later
+
+### Dr. Jason Chin Yu Aun — Reset Health
+- Said he will check internally and revert on who looks at partner technology for Roczen.
+- `followup_draft` is a 2-3 week check-in rather than the standard 90-day window, since he explicitly
+  said he'd come back to her — flagged with `[CHECK: …]` for Hlib/Vadim to confirm timing.
 
 ## Negative responses — pattern check
 
-0 of 15 responses (0%) were negative. No pattern concern — well below the 5% threshold.
-One decline (Dr Sahira Dar, Lanarkshire Medical Group: «I don't [think] this is suitable for the space I am working in») is a clean, polite no with no door-open language — exclude from future campaigns, no messaging issue indicated.
+None this round (0 of 16). No messaging pattern concern.
 
-## Other/unclear
+## Left the company / no lead
 
-- **Judy Hoskins** (LighterLife): «I'm no longer with LighterLife but thank you for the contact.» No referral given — dead end on this contact, no action beyond marking inactive.
-- **Georgina Walsh** (LighterLife, 10-28 reply): «Good luck» — closing remark, sent a day after her referral reply, no further action.
-- **Dr Sahira Dar** (Lanarkshire Medical Group, 18:51 reply): «Thanks Katerina» — courtesy line sent one minute before her substantive decline message in the same thread; no separate action.
+- **Judy Hoskins (LighterLife)** — said she's no longer with LighterLife, no successor named. Other/unclear.
+- **Katrina Campbell-Wareham (Counterweight Diabetes Coach)** — said she no longer works for Counterweight (wrote "Counterwight"), no successor named. Other/unclear. Counterweight already has two live threads in this batch (Bjorn Ronaasen — interested, Mzwandile Mahlangu — referral to Naeem Witbooi, Elliot McEwan — question); no separate action needed beyond what's already in motion there.
+- **Georgina Walsh (LighterLife), second message "Good luck"** — closing remark after her referral message the day before; no action needed.
+- **Dr Sahira Dar, "Thanks Katerina"** — courtesy reply one minute before her substantive decline; no separate action.
 
 ## Recommendations
 
-1. **Priority handoff to sales:** Bjorn Ronaasen (Counterweight) and Juli Mey (MoreLife) are both actively moving to book calls — get calendar confirmations locked in before momentum drops, this campaign has had multiple late/delayed replies already (both apologized for response delay).
-2. **Vadim to answer personally:** 4 questions above, especially Sarah Le Brocq (Perspectum) who has a clear, concrete ask (one-pager) and a credible partnership angle (obesity imaging / body composition research) — worth prioritizing over the two Counterweight skeptical/holding replies.
-3. **New outbound contacts:** Naeem Witbooi and Dorottya Norton should be queued for people-extraction/outbound on the Counterweight and Homerton threads respectively — do not re-contact Mzwandile Mahlangu or Daniela Alves on this topic, they've already done their part.
-4. **Reply-count caveat:** 4 of the 11 unique people in this batch replied twice (Bjorn Ronaasen, Juli Mey, Georgina Walsh, Dr Sahira Dar), so the 15 rows above cover 11 unique people, not 15. Report sales handoff by person, not by row, to avoid double-counting.
+- Prioritize Bjorn Ronaasen and Juli Mey calls — both self-booking, highest-intent replies in this batch.
+- Coordinate the Naeem Witbooi (Counterweight) outreach with the already-in-progress Bjorn Ronaasen call so Counterweight doesn't get two uncoordinated asks at once.
+- Confirm hello@lighterlife.com spelling before sending the Message 1 draft.
+- Decide Jason Chin Yu Aun's follow-up cadence (2-3 weeks vs. standard 90 days) before the draft goes out — flagged `[CHECK: …]` in the CSV.
