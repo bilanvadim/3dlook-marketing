@@ -1,0 +1,95 @@
+{
+ "generated": "2026-10-31T05:40:14+00:00",
+ "items": [
+  {
+   "id": "f0472299-3614-45f0-bc13-07cd5e3f1930",
+   "title": "Anthropic Files for IPO, Seeks Nasdaq Listing Under ANT",
+   "date": "2026-10-30",
+   "tags": [
+    "Investor & Accelerator",
+    "Investments and Partnerships",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services",
+    "Policy and Regulation"
+   ],
+   "url": "https://hlth.com/insights/news/anthropic-files-for-ipo-seeks-nasdaq-listing-under-ant"
+  },
+  {
+   "id": "33dfa582-c39f-44ad-a11e-4ad09af5e5fb",
+   "title": "Atrium Health and NC State Health Plan Reach Agreement to Resolve Provider Network Dispute",
+   "date": "2026-10-30",
+   "tags": [
+    "Alternative Payment Models",
+    "Payer (Insurer)",
+    "Government",
+    "Health System & Health Provider",
+    "Care Coordination / Navigation / Care Access",
+    "Policy and Regulation"
+   ],
+   "url": "https://hlth.com/insights/news/atrium-health-and-nc-state-health-plan-reach-agreement-to-resolve-provider-network-dispute"
+  },
+  {
+   "id": "177dea09-0034-471e-b9ee-e81ae5bc79e9",
+   "title": "Midstream Health Raises $20M to Improve Health Systems’ Financial Sustainability",
+   "date": "2026-10-30",
+   "tags": [
+    "Investments and Partnerships",
+    "Operational Efficiency",
+    "Health System & Health Provider",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/midstream-health-raises-20m-to-improve-health-systems-financial-sustainability"
+  }
+ ],
+ "analyses": {
+  "f0472299-3614-45f0-bc13-07cd5e3f1930": {
+   "id": "f0472299-3614-45f0-bc13-07cd5e3f1930",
+   "score": 0,
+   "segment": "—",
+   "what": "Anthropic подала документи на IPO на Nasdaq (тікер ANT). Виручка за 1-ше півріччя 2026 становить $16.3B. У ризиках компанія згадує можливу шкоду пацієнтам і регуляторні вимоги до AI в healthcare.",
+   "why": "Це фінансова новина AI-вендора, яка не стосується жодного ICP-сегмента FitXpress чи Mobile Tailor.",
+   "play": "none",
+   "companies": [
+    "Anthropic",
+    "OpenAI"
+   ],
+   "_date": "2026-10-30"
+  },
+  "33dfa582-c39f-44ad-a11e-4ad09af5e5fb": {
+   "id": "33dfa582-c39f-44ad-a11e-4ad09af5e5fb",
+   "score": 0,
+   "segment": "—",
+   "what": "Atrium Health і North Carolina State Health Plan уклали багаторічну угоду й завершили спір щодо участі в провайдерській мережі та цін. Atrium закриває свою Affordability Protection Program, а штат відкликає позов.",
+   "why": "Йдеться про ціни й доступ до мережі провайдерів між payer і health system. Wellness/rewards-програм і верифікації даних тіла тут немає.",
+   "play": "none",
+   "companies": [
+    "Atrium Health",
+    "North Carolina State Health Plan"
+   ],
+   "_date": "2026-10-30"
+  },
+  "177dea09-0034-471e-b9ee-e81ae5bc79e9": {
+   "id": "177dea09-0034-471e-b9ee-e81ae5bc79e9",
+   "score": 0,
+   "segment": "—",
+   "what": "Midstream Health залучила $20M у Series A на AI-платформу для фінансових операцій лікарень: незатребувані ребейти, недоплати від payers, контракти. Раунд очолив Valtruis.",
+   "why": "Це hospital finance ops AI, і він ніяк не пов'язаний із вимірюванням тіла, BMI чи даними про прогрес.",
+   "play": "none",
+   "companies": [
+    "Midstream Health",
+    "Valtruis",
+    "Andreessen Horowitz",
+    "Foundry",
+    "CommonSpirit Ventures",
+    "CommonSpirit Health",
+    "Mount Sinai Health System",
+    "Houston Methodist",
+    "Fairview Health Services",
+    "Keck Medicine of USC"
+   ],
+   "_date": "2026-10-30"
+  }
+ },
+ "posts": []
+}
