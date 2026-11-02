@@ -746,8 +746,13 @@ grep_check "a Message 1-only ban keeps the figure for Message 2" "Message 2 only
 mv "$CAMP/$P/hypothesis.md.bak" "$CAMP/$P/hypothesis.md"
 $OP card --campaign $P --for messages >/dev/null 2>&1
 cp "$B" "$B.good"
-mutate "the number out of a pair" "$B" ' One platform ran 34,000 scans in 2025\.' ''
+# 2026-11-02 (eu-insurance-underwriting): "two photos" spelled out is the number too, so Finn's
+# pair keeps one when the scan count goes; the pair loses it only when the photos go as well
+mutate "the scan count out of a pair" "$B" ' One platform ran 34,000 scans in 2025\.' ''
+check "«two photos» alone is the pair's number -> 0" 0 $OP split-messages --campaign $P --in messages/_batch-all.md
+mutate "the photos out of the same pair" "$B" 'from two photos\.' 'as body measurements.'
 check "a pair with no number, in a campaign that demands one -> 1" 1 $OP split-messages --campaign $P --in messages/_batch-all.md
+grep_check "and the failure names it" "no number" $OP split-messages --campaign $P --in messages/_batch-all.md
 cp "$B.good" "$B"
 # 2026-10-07: "100+" is the all-time 3DLOOK count, not current FitXpress users
 mutate "100+ as current users" "$B" '(One platform ran 34,000 scans in 2025\.)' '\1 100+ clients use FitXpress today.'
@@ -766,6 +771,30 @@ grep_check "and the failure names it" "introducing a result" \
 cp "$B.good" "$B"
 mutate "a conversational «so»" "$B" 'Your roadmap covers tracking\.' 'Your roadmap covers tracking, so no pressure.'
 check "«, so no pressure» is not a result -> 0" 0 $OP split-messages --campaign $P --in messages/_batch-all.md
+cp "$B.good" "$B"
+# 2026-11-02 (eu-insurance-underwriting): "let" is banned in all content (terminology §2.8)
+mutate "«lets» into a message" "$B" 'Your roadmap covers tracking\.' 'Your roadmap lets members track change.'
+check "«lets members track» -> 1" 1 $OP split-messages --campaign $P --in messages/_batch-all.md
+grep_check "and the failure names it" "«let»" $OP split-messages --campaign $P --in messages/_batch-all.md
+cp "$B.good" "$B"
+# 2026-11-02: "diagnose" inside the platform name vers.diagnose is not a diagnosis claim
+mutate "a platform named vers.diagnose" "$B" 'Your roadmap covers tracking\.' 'Your roadmap covers tracking, as vers.diagnose does for brokers.'
+check "«vers.diagnose» is a name, not a claim -> 0" 0 $OP split-messages --campaign $P --in messages/_batch-all.md
+mutate "a real diagnosis claim" "$B" 'as vers\.diagnose does for brokers\.' 'and the scan can diagnose obesity.'
+check "«diagnose obesity» is still a claim -> 1" 1 $OP split-messages --campaign $P --in messages/_batch-all.md
+cp "$B.good" "$B"
+# 2026-11-02 (eu-insurance-underwriting): a lane's question target kept as the question, and
+# one question asked of two people
+cp "$CAMP/$P/hypothesis.md" "$CAMP/$P/hypothesis.md.bak"
+mutate "a lane with question targets" "$CAMP/$P/hypothesis.md" '^## Rules for steps 3-5$' \
+  '## Message angle\n\n- **`retention`** Target: churn. Question targets: which members drop off after the first month of tracking progress; how the app shows body change between check-ins.\n\n## Rules for steps 3-5'
+mutate "the target as Anna's question" "$B" 'Your roadmap covers tracking\.' 'Your roadmap covers tracking. Which members drop off after their first month of tracking progress?'
+mutate "the same question for Finn" "$B" 'Churn usually starts' 'Which members drop off after their first month of tracking progress? Churn usually starts'
+grep_check "a question target kept as the question is noted" "card question target as the question" \
+  $OP split-messages --campaign $P --in messages/_batch-all.md
+grep_check "one question asked of two people is noted" "M1 question repeated" \
+  $OP split-messages --campaign $P --in messages/_batch-all.md
+mv "$CAMP/$P/hypothesis.md.bak" "$CAMP/$P/hypothesis.md"
 cp "$B.good" "$B"
 mutate "a period glued to the calendar link" "$B" 'olena-kudriavtseva\n' 'olena-kudriavtseva.\n'
 check "«…olena-kudriavtseva.» -> 1" 1 $OP split-messages --campaign $P --in messages/_batch-all.md

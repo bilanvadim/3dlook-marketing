@@ -1688,9 +1688,13 @@ PRICE_SOFT = re.compile(r"\b[Pp]ric(e|es|ing)\b|\btiers?\b")
 
 # What "a product specific" is, mechanically. The 2026-07-21 campaign sent 307 first
 # messages and none carried one; it drew 1 reply from 67 sends.
+# "two photos" spelled out counts as the number too (2026-11-02, eu-insurance-underwriting):
+# the gate took only the digit form, so ~40 writers who wrote the words in Message 1 bolted
+# a number onto Message 2 ("It comes from 2 photos, front and side.", "It returns 80+ body
+# measurements.", "112,100 scans…" as M2's first sentence) to pass, and QC scored it.
 NUMBER_FACT = re.compile(
     r"\b\d[\d,.]*\+?\s?(%|body measurements|measurements|scans|seconds|sec\b|weeks?|days?|"
-    r"photos|minutes?)|\b\d+-\d+\s?(weeks?|%)|\bunder \d+", re.I)
+    r"photos|minutes?)|\b\d+-\d+\s?(weeks?|%)|\bunder \d+|\btwo (?:phone |smartphone )?photos\b", re.I)
 PRODUCT_SPECIFIC = re.compile(
     r"two (phone |smartphone )?photos|2 photos|3D (body |progress |model)|body composition|"
     r"body measurements|lean mass|fat mass|SDK|API", re.I)
@@ -1728,6 +1732,14 @@ HUNDRED_USE = re.compile(
 SO_RESULT = re.compile(
     r",\s+so\s+(?!that\b|far\b|many\b|much\b|long\b|few\b|often\b|well\b|to speak\b|called\b|"
     r"just\b|no\b|i\b|i'm\b|i'd\b|i'll\b|please\b|feel\b|if\b|here\b|let me\b)[a-z]", re.I)
+# "let" / "lets" / "letting", 2026-11-02: terminology-guardrails §2.8 bans it in all content
+# ("allow" instead), and two lines passed the gate ("A call would let me show", "ALLFINANZ
+# lets authorised underwriters build…") until QC found them.
+LET_WORD = re.compile(r"\b(?:let|lets|letting)\b", re.I)
+# Product and company names the claims detector would misread: "diagnose" inside
+# "vers.diagnose" (a German risk-check platform and a prospect) failed as a diagnosis claim on
+# 2026-11-02, and the writer dropped the platform's name from its own CEO's message.
+DETECTOR_MASK = re.compile(r"\bvers\.diagnose\b", re.I)
 # A link with punctuation glued to it, 2026-10-19: 43 messages ended the calendar link with a
 # period ("…nick-omelchak. If…") and two AU FAQ links did the same; a client that keeps the
 # period in the link opens a 404.
@@ -1770,6 +1782,30 @@ def card_rule_grams(text: str) -> set[str]:
         if (pi / f).exists():
             grams -= five_grams((pi / f).read_text(encoding="utf-8"))
     return grams
+
+
+QT_STOP = set("""a an the of on in at to for and or with by from as is are be would could does do how
+what which who whose where when that this those these their its it there than before after into
+about any each one new own person people team company""".split())
+
+
+def question_targets(hyp_text: str) -> list[tuple[str, set[str]]]:
+    """(target, content words) for every "Question targets:" item in the lane notes."""
+    out = []
+    for t, b in h2_sections(hyp_text):
+        if "message angle" not in t.lower():
+            continue
+        for m in LANE_NOTE.finditer(b):
+            q = re.search(r"Question targets?:\s*(.*?)(?:\.\s+(?:Message 2|Pricing heads)\b|\.\s*$|$)",
+                          m.group(0))
+            if not q:
+                continue
+            for item in re.split(r";\s*", q.group(1)):
+                words = {w for w in CARD_WORDS.findall(CARD_QUOTED.sub(" ", item).lower())
+                         if w not in QT_STOP and len(w) > 2}
+                if len(words) >= 4:
+                    out.append((item.strip(), words))
+    return out
 
 
 # Sentences the card makes verbatim, so a company-wide repeat of their opening is expected.
@@ -1877,6 +1913,10 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
             if m:
                 hard.append(("«so» introducing a result", tag,
                              f"«…{clip(b[max(0, m.start() - 30):m.end() + 30], 80)}»: two sentences, or «allowing…»"))
+            m = LET_WORD.search(re.sub(r"https?://\S+", " ", b))
+            if m:
+                hard.append(("«let»", tag,
+                             f"«…{clip(b[max(0, m.start() - 25):m.end() + 25], 70)}»: «allow» (terminology §2.8)"))
             m = LINK_PUNCT.search(b)
             if m:
                 hard.append(("punctuation on a link", tag,
@@ -1887,7 +1927,7 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
             for g in five_grams(re.sub(r"https?://\S+", " ", b)) & rule_grams:
                 copied[g].add(pid)
             if det:
-                r = det.analyze(b, "en", "dm", profile)
+                r = det.analyze(DETECTOR_MASK.sub("the platform", b), "en", "dm", profile)
                 for hf in r.get("hard_fails", []):
                     marks = ", ".join(sorted({h["marker"] for h in hf["hits"]})[:3])
                     hard.append((f"detector: {hf['category']}", tag, marks))
@@ -2087,6 +2127,36 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
         shown.append((g, who))
         soft.append(("card wording as copy", f"campaign ×{len(who)}",
                      f"«{g}…»: " + ", ".join(sorted(who)[:4])))
+    # The card's question targets kept as the question, 2026-11-02 (eu-insurance-underwriting):
+    # QC found ~40 M1 questions built from a lane's "Question targets" with its noun phrases
+    # intact ("At which band edges would a gap … change a build rating?" ×9), and the same
+    # question at several companies with only the name swapped. Word order varies, so the test
+    # is coverage: most of a target's content words inside one question.
+    targets = question_targets(hyp_text)
+    asked: dict[str, set[str]] = defaultdict(set)
+    same_q: dict[str, set[str]] = defaultdict(set)
+    for p in people:
+        pid = p["person_id"]
+        b = bodies.get((pid, 1), "")
+        mask = set(CARD_WORDS.findall(group_of(p, gmap).lower()))
+        for q in (x.strip() for x in re.split(r"(?<=[.?!])\s+|\n+", b)):
+            if not q.endswith("?"):
+                continue
+            words = set(CARD_WORDS.findall(q.lower()))
+            for t, tw in targets:
+                if len(tw & words) >= max(4, round(0.75 * len(tw))):
+                    asked[t].add(pid)
+            key = " ".join(w for w in CARD_WORDS.findall(q.lower()) if w not in mask)
+            if len(key.split()) >= 5:
+                same_q[key].add(pid)
+    for t, who in sorted(asked.items(), key=lambda x: -len(x[1])):
+        if len(who) >= 2:
+            soft.append(("card question target as the question", f"campaign ×{len(who)}",
+                         f"«{clip(t, 60)}»: " + ", ".join(sorted(who)[:4])))
+    for q, who in sorted(same_q.items(), key=lambda x: -len(x[1])):
+        if len(who) >= 2:
+            soft.append(("M1 question repeated", f"campaign ×{len(who)}",
+                         f"«{clip(q, 60)}»: " + ", ".join(sorted(who)[:4])))
     for (pid, n), b in bodies.items():
         if n == 2 and re.search(r"96-97%", first_sentence(b)):
             soft.append(("M2 opens with accuracy", f"{pid} M2", "lead with the outcome; the figure comes after"))
