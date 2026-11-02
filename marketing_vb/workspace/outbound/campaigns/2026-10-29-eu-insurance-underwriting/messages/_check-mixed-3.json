@@ -1,0 +1,290 @@
+{
+ "campaign": "2026-10-29-eu-insurance-underwriting",
+ "checked": 33,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-3",
+ "generated": "2026-11-02T20:49:40",
+ "hard": [],
+ "soft": [
+  [
+   "no company line",
+   "von-kielpinski M1",
+   "«Hannover Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "paulanthonycourtney M1",
+   "«New Ireland Assurance» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "margot-wilson-889156b M1",
+   "«Hannover Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "dr-gabriele-teichmann-222665a M1",
+   "«Hannover Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "steven-hardy-1b8b261b M1",
+   "«Hannover Re Ireland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "thomas-lay-b3173484 M1",
+   "«Allianz Lebensversicherungs-AG» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "denis-eivers-13b13a105 M1",
+   "«New Ireland Assurance» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "marc-schanbacher-83b243170 M1",
+   "«Allianz Lebensversicherungs-AG» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "annette-seitz-5b2baa146 M1",
+   "«Allianz Lebensversicherungs-AG» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "marcel-beißer-b9b8b617b M1",
+   "«Allianz Lebensversicherungs-AG» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "ronan-scully-3953a57a M1",
+   "«New Ireland Assurance» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "noel-finnegan-6b9694a M1",
+   "«New Ireland Assurance» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "susanne-buchholz-628198bb M1",
+   "«Hannover Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "rolf-kulemann-61052443 M1",
+   "«Hannover Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Re Germany: margot-wilson-889156b / dr-gabriele-teichmann-222665a",
+   "«smart scales has approximately 3.5% mean absolute…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Re Germany: margot-wilson-889156b / susanne-buchholz-628198bb",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Re Germany: margot-wilson-889156b / rolf-kulemann-61052443",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Re Germany: dr-gabriele-teichmann-222665a / susanne-buchholz-628198bb",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Re Germany: dr-gabriele-teichmann-222665a / rolf-kulemann-61052443",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Re Germany: susanne-buchholz-628198bb / rolf-kulemann-61052443",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "LV 1871: amirfattah / jakob-limbach-160729309",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "LV 1871: david-ibl / dr-georg-bechler-799a1615a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "LV 1871: david-ibl / ralf-woltmann-592970163",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "LV 1871: david-ibl / sandrajohn",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "LV 1871: dr-georg-bechler-799a1615a / ralf-woltmann-592970163",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "LV 1871: dr-georg-bechler-799a1615a / sandrajohn",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "LV 1871: ralf-woltmann-592970163 / sandrajohn",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "New Ireland Assurance: paulanthonycourtney / denis-eivers-13b13a105",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "New Ireland Assurance: paulanthonycourtney / ronan-scully-3953a57a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "New Ireland Assurance: denis-eivers-13b13a105 / ronan-scully-3953a57a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allianz Lebensversicherungs-AG: thomas-lay-b3173484 / annette-seitz-5b2baa146",
+   "«fitxpress adds 2 photos in the application and a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allianz Lebensversicherungs-AG: marc-schanbacher-83b243170 / annette-seitz-5b2baa146",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allianz Lebensversicherungs-AG: marc-schanbacher-83b243170 / marcel-beißer-b9b8b617b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allianz Lebensversicherungs-AG: annette-seitz-5b2baa146 / marcel-beißer-b9b8b617b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Volkswohl Bund: jan-müller-nrw / dana-rienh%c3%b6fer-28a064258",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Volkswohl Bund: erik-schwarz-588b15214 / carina-gervens-547a04279",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Volkswohl Bund: erik-schwarz-588b15214 / finja-dumstorff-321383275",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Volkswohl Bund: carina-gervens-547a04279 / finja-dumstorff-321383275",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich Life Ireland: michael-vesey-1125772ab / cormac-frawley-53932253",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich Life Ireland: michael-vesey-1125772ab / niall-walsh-447b5686",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zurich Life Ireland: cormac-frawley-53932253 / niall-walsh-447b5686",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "a.s.r.: angelique-r-072a756 / marnomiddelbos",
+   "«hi angelique, smart scales has approximately 3.5%…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "a.s.r.: angelique-r-072a756 / andr%c3%a9-rozemuller-1407171b",
+   "«hi angelique, smart scales has approximately 3.5%…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "a.s.r.: angelique-r-072a756 / gert-lokhorst-9331648",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "a.s.r.: marnomiddelbos / andr%c3%a9-rozemuller-1407171b",
+   "«smart scales has approximately 3.5% mean absolute…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "a.s.r.: marnomiddelbos / gert-lokhorst-9331648",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "a.s.r.: gert-lokhorst-9331648 / andr%c3%a9-rozemuller-1407171b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "sentence opening repeated",
+   "a.s.r. ×3",
+   "«smart scales has approximately 3…»: andr%c3%a9-rozemuller-1407171b, angelique-r-072a756, marnomiddelbos"
+  ],
+  [
+   "M1 product sentence shared",
+   "Allianz Lebensversicherungs-AG ×2",
+   "«x adds 2 photos in the…»: annette-seitz-5b2baa146, thomas-lay-b3173484"
+  ],
+  [
+   "M1 product sentence shared",
+   "Volkswohl Bund ×2",
+   "«x takes 2 photos in the…»: carina-gervens-547a04279, dana-rienh%c3%b6fer-28a064258"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×32",
+   "«a smart scales weight estimate…»: amirfattah, andr%c3%a9-rozemuller-1407171b, angelique-r-072a756, annette-seitz-5b2baa146"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×10",
+   "«is not a scale reading…»: andr%c3%a9-rozemuller-1407171b, angelique-r-072a756, colette-houton-86233219, dana-rienh%c3%b6fer-28a064258"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×7",
+   "«between declared and estimated weight…»: dr-gabriele-teichmann-222665a, gert-lokhorst-9331648, marnomiddelbos, noel-finnegan-6b9694a"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«30 days per the insurer…»: amirfattah, cormac-frawley-53932253, ronan-scully-3953a57a, von-kielpinski"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«a gap between declared and…»: dr-gabriele-teichmann-222665a, marnomiddelbos, noel-finnegan-6b9694a, rolf-kulemann-61052443"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«a threshold the insurer sets…»: cormac-frawley-53932253, dr-gabriele-teichmann-222665a, rolf-kulemann-61052443, von-kielpinski"
+  ]
+ ]
+}

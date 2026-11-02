@@ -283,3 +283,9 @@ Claims heads (decision 8), P&C at reinsurers, private health, pensions and inves
 
 1. Fresh `hypothesis-generator` writes `### Account facts` for the 31 groups with PASS (four new country rows included) from `companies.md`, under Message angle.
 2. `outbound_pack.py card --for messages` → `profiles` → `message-sequencer` batches with `_grid-<batch>.md` up front → `check-messages` → opus QC → Vadim's second checkpoint.
+
+## After the checkpoint (2026-11-02, account facts check)
+
+- **Julien Descombes (Swiss Re Switzerland, P1) → FAIL, left the company.** Bloomberg Government (2026-02-02) reports Swiss Re parted ways with its L&H chief underwriting officer; his swissre.com profile reads "Former Chief Underwriting Officer L&H Re"; Karen Tan holds the role from 2026-10-01. Standing decision 4 (people who left FAIL). **SEND 130** (P1 20 · P2 57 · P3 53), Swiss Re Switzerland 14.
+- **Laura Corrigan (Zurich Life Ireland) → FAIL, business line.** Her headline reads "Head of New Business, GI Ireland" at Zurich Insurance plc (general insurance). Earlier roles: commercial underwriting and Patrona Underwriting (P&C). She joined only through Apollo's zurich.com domain. Found by the messages QC on 2026-11-02.
+- **Michael Ewers (Munich Re Germany) → FAIL, business line.** He is CTO of Munich Re Markets GmbH, which structures reinsurance for savings, retirement and investment products, not protection underwriting. Found by the messages QC on 2026-11-02. **SEND 128** (P1 20 · P2 56 · P3 52).

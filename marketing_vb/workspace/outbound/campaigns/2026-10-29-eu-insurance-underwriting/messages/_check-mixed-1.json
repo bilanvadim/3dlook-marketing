@@ -1,0 +1,830 @@
+{
+ "campaign": "2026-10-29-eu-insurance-underwriting",
+ "checked": 30,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-1",
+ "generated": "2026-11-02T20:49:38",
+ "hard": [],
+ "soft": [
+  [
+   "no company line",
+   "christoph-henschel-a7961466 M1",
+   "«Munich Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "keyvanizadi M1",
+   "«Munich Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "velina-peneva M1",
+   "«Swiss Re Switzerland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "ianlong M1",
+   "«Swiss Re Switzerland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "ginger-turner-b867284 M1",
+   "«Swiss Re Switzerland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "ashish-agarwal-0219716 M1",
+   "«Swiss Re Switzerland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "annamazerant M1",
+   "«Swiss Re Switzerland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "dan-lacurezeanu-857672b M1",
+   "«Swiss Re Switzerland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "claude-schwarz-55b61112 M1",
+   "«Swiss Re Switzerland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "francesca-tamma-556a0225 M1",
+   "«Swiss Re Switzerland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "carl-christensen-66bba028 M1",
+   "«Swiss Re Switzerland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "markus-unterkofler M1",
+   "«Swiss Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "kshiti-a-b06494a8 M1",
+   "«Munich Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "sergio-lopez-jimenez-fia M1",
+   "«Swiss Re Switzerland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "roland-schneider-529b65b9 M1",
+   "«Munich Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "sebastian-strasser-bb5a238a M1",
+   "«Swiss Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "christian-helmes-5537a994 M1",
+   "«Munich Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "volker-homola-ba2a49164 M1",
+   "«Munich Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "rainer-helfenstein-aab817135 M1",
+   "«Swiss Re Switzerland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "fabian-schmitt-748430154 M1",
+   "«Munich Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "wolfgang-mörlein-1ab715209 M1",
+   "«Munich Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "greeting",
+   "charpentier-carole-84a43aa M1",
+   "«Hi Carole,» has no «Charpentier»"
+  ],
+  [
+   "greeting",
+   "charpentier-carole-84a43aa M2",
+   "«Hi Carole,» has no «Charpentier»"
+  ],
+  [
+   "no company line",
+   "charpentier-carole-84a43aa M1",
+   "«Swiss Re Switzerland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "augusto-diaz-leante-919422 M1",
+   "«Swiss Re Switzerland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "johnschoonbee M1",
+   "«Swiss Re Switzerland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "luisaljimenez M1",
+   "«Munich Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "mirjam-jonker-heidolph-42866877 M1",
+   "«Munich Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "thomas-gei%c3%9fler-902a60157 M1",
+   "«Munich Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "albansenn M1",
+   "«Munich Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "steven-wiseman-9126719a M1",
+   "«Munich Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "cosima-escher-b6786a208 M1",
+   "«Munich Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: christoph-henschel-a7961466 / keyvanizadi",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: christoph-henschel-a7961466 / roland-schneider-529b65b9",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: christoph-henschel-a7961466 / volker-homola-ba2a49164",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: christoph-henschel-a7961466 / fabian-schmitt-748430154",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: christoph-henschel-a7961466 / luisaljimenez",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: christoph-henschel-a7961466 / mirjam-jonker-heidolph-42866877",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: christoph-henschel-a7961466 / thomas-gei%c3%9fler-902a60157",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: christoph-henschel-a7961466 / albansenn",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: christoph-henschel-a7961466 / steven-wiseman-9126719a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: christoph-henschel-a7961466 / cosima-escher-b6786a208",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: keyvanizadi / volker-homola-ba2a49164",
+   "«fitxpress runs on 2 photos inside the insurer's a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: keyvanizadi / cosima-escher-b6786a208",
+   "«fitxpress runs on 2 photos inside the insurer's a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: keyvanizadi / roland-schneider-529b65b9",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: keyvanizadi / fabian-schmitt-748430154",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: keyvanizadi / luisaljimenez",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: keyvanizadi / mirjam-jonker-heidolph-42866877",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: keyvanizadi / thomas-gei%c3%9fler-902a60157",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: keyvanizadi / albansenn",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: keyvanizadi / steven-wiseman-9126719a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: kshiti-a-b06494a8 / christian-helmes-5537a994",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: kshiti-a-b06494a8 / wolfgang-mörlein-1ab715209",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: roland-schneider-529b65b9 / volker-homola-ba2a49164",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: roland-schneider-529b65b9 / fabian-schmitt-748430154",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: roland-schneider-529b65b9 / luisaljimenez",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: roland-schneider-529b65b9 / mirjam-jonker-heidolph-42866877",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: roland-schneider-529b65b9 / thomas-gei%c3%9fler-902a60157",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: roland-schneider-529b65b9 / albansenn",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: roland-schneider-529b65b9 / steven-wiseman-9126719a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: roland-schneider-529b65b9 / cosima-escher-b6786a208",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: christian-helmes-5537a994 / wolfgang-mörlein-1ab715209",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: volker-homola-ba2a49164 / fabian-schmitt-748430154",
+   "«fitxpress puts 2 photos into the application and…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: volker-homola-ba2a49164 / luisaljimenez",
+   "«fitxpress puts 2 photos into the application and…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: volker-homola-ba2a49164 / mirjam-jonker-heidolph-42866877",
+   "«fitxpress puts 2 photos into the application and…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: volker-homola-ba2a49164 / albansenn",
+   "«fitxpress puts 2 photos into the application and…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: volker-homola-ba2a49164 / cosima-escher-b6786a208",
+   "«fitxpress puts 2 photos into the application and…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: volker-homola-ba2a49164 / thomas-gei%c3%9fler-902a60157",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: volker-homola-ba2a49164 / steven-wiseman-9126719a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: fabian-schmitt-748430154 / cosima-escher-b6786a208",
+   "«fitxpress takes 2 photos in the application and r…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: fabian-schmitt-748430154 / luisaljimenez",
+   "«a flag is raised only when it differs from the de…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: fabian-schmitt-748430154 / mirjam-jonker-heidolph-42866877",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: fabian-schmitt-748430154 / thomas-gei%c3%9fler-902a60157",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: fabian-schmitt-748430154 / albansenn",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: fabian-schmitt-748430154 / steven-wiseman-9126719a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: luisaljimenez / albansenn",
+   "«fitxpress asks the applicant for 2 photos and ret…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: luisaljimenez / cosima-escher-b6786a208",
+   "«fitxpress asks the applicant for 2 photos and ret…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: luisaljimenez / mirjam-jonker-heidolph-42866877",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: luisaljimenez / thomas-gei%c3%9fler-902a60157",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: luisaljimenez / steven-wiseman-9126719a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: mirjam-jonker-heidolph-42866877 / cosima-escher-b6786a208",
+   "«fitxpress would ask for 2 photos inside the appli…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: mirjam-jonker-heidolph-42866877 / thomas-gei%c3%9fler-902a60157",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: mirjam-jonker-heidolph-42866877 / albansenn",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: mirjam-jonker-heidolph-42866877 / steven-wiseman-9126719a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: thomas-gei%c3%9fler-902a60157 / albansenn",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: thomas-gei%c3%9fler-902a60157 / steven-wiseman-9126719a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: thomas-gei%c3%9fler-902a60157 / cosima-escher-b6786a208",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: albansenn / cosima-escher-b6786a208",
+   "«fitxpress needs 2 photos and returns a smart scal…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: albansenn / steven-wiseman-9126719a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Germany: steven-wiseman-9126719a / cosima-escher-b6786a208",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: velina-peneva / ianlong",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: velina-peneva / ginger-turner-b867284",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: velina-peneva / annamazerant",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: velina-peneva / claude-schwarz-55b61112",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: velina-peneva / francesca-tamma-556a0225",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: velina-peneva / carl-christensen-66bba028",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: velina-peneva / sergio-lopez-jimenez-fia",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: velina-peneva / rainer-helfenstein-aab817135",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: velina-peneva / charpentier-carole-84a43aa",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: velina-peneva / augusto-diaz-leante-919422",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: velina-peneva / johnschoonbee",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: ianlong / ginger-turner-b867284",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: ianlong / annamazerant",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: ianlong / claude-schwarz-55b61112",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: ianlong / francesca-tamma-556a0225",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: ianlong / carl-christensen-66bba028",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: ianlong / sergio-lopez-jimenez-fia",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: ianlong / rainer-helfenstein-aab817135",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: ianlong / charpentier-carole-84a43aa",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: ianlong / augusto-diaz-leante-919422",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: ianlong / johnschoonbee",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: ginger-turner-b867284 / annamazerant",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: ginger-turner-b867284 / claude-schwarz-55b61112",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: ginger-turner-b867284 / francesca-tamma-556a0225",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: ginger-turner-b867284 / carl-christensen-66bba028",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: ginger-turner-b867284 / sergio-lopez-jimenez-fia",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: ginger-turner-b867284 / rainer-helfenstein-aab817135",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: ginger-turner-b867284 / charpentier-carole-84a43aa",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: ginger-turner-b867284 / augusto-diaz-leante-919422",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: ginger-turner-b867284 / johnschoonbee",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: ashish-agarwal-0219716 / dan-lacurezeanu-857672b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: annamazerant / claude-schwarz-55b61112",
+   "«smart scales is a weight estimate with approximat…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: annamazerant / augusto-diaz-leante-919422",
+   "«smart scales is a weight estimate with approximat…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: annamazerant / johnschoonbee",
+   "«smart scales is a weight estimate with approximat…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: annamazerant / francesca-tamma-556a0225",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: annamazerant / carl-christensen-66bba028",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: annamazerant / sergio-lopez-jimenez-fia",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: annamazerant / rainer-helfenstein-aab817135",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: annamazerant / charpentier-carole-84a43aa",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: claude-schwarz-55b61112 / charpentier-carole-84a43aa",
+   "«in the application, 2 photos yield a smart scales…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: claude-schwarz-55b61112 / francesca-tamma-556a0225",
+   "«a flag appears only when it differs from the decl…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: claude-schwarz-55b61112 / augusto-diaz-leante-919422",
+   "«smart scales is a weight estimate with approximat…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: claude-schwarz-55b61112 / johnschoonbee",
+   "«smart scales is a weight estimate with approximat…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: claude-schwarz-55b61112 / carl-christensen-66bba028",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: claude-schwarz-55b61112 / sergio-lopez-jimenez-fia",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: claude-schwarz-55b61112 / rainer-helfenstein-aab817135",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: francesca-tamma-556a0225 / carl-christensen-66bba028",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: francesca-tamma-556a0225 / sergio-lopez-jimenez-fia",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: francesca-tamma-556a0225 / rainer-helfenstein-aab817135",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: francesca-tamma-556a0225 / charpentier-carole-84a43aa",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: francesca-tamma-556a0225 / augusto-diaz-leante-919422",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: francesca-tamma-556a0225 / johnschoonbee",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: carl-christensen-66bba028 / sergio-lopez-jimenez-fia",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: carl-christensen-66bba028 / rainer-helfenstein-aab817135",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: carl-christensen-66bba028 / charpentier-carole-84a43aa",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: carl-christensen-66bba028 / augusto-diaz-leante-919422",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: carl-christensen-66bba028 / johnschoonbee",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: sergio-lopez-jimenez-fia / rainer-helfenstein-aab817135",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: sergio-lopez-jimenez-fia / charpentier-carole-84a43aa",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: sergio-lopez-jimenez-fia / augusto-diaz-leante-919422",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: sergio-lopez-jimenez-fia / johnschoonbee",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: rainer-helfenstein-aab817135 / charpentier-carole-84a43aa",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: rainer-helfenstein-aab817135 / augusto-diaz-leante-919422",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: rainer-helfenstein-aab817135 / johnschoonbee",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: charpentier-carole-84a43aa / augusto-diaz-leante-919422",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: charpentier-carole-84a43aa / johnschoonbee",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Switzerland: augusto-diaz-leante-919422 / johnschoonbee",
+   "«smart scales is a weight estimate with approximat…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Germany: markus-unterkofler / sebastian-strasser-bb5a238a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "sentence opening repeated",
+   "Swiss Re Switzerland ×4",
+   "«smart scales is a weight…»: annamazerant, augusto-diaz-leante-919422, claude-schwarz-55b61112, johnschoonbee"
+  ],
+  [
+   "sentence opening repeated",
+   "Munich Re Germany ×3",
+   "«smart scales is a weight…»: albansenn, cosima-escher-b6786a208, luisaljimenez"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×23",
+   "«a smart scales weight estimate…»: albansenn, annamazerant, ashish-agarwal-0219716, carl-christensen-66bba028"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×8",
+   "«is not a scale reading…»: albansenn, annamazerant, augusto-diaz-leante-919422, claude-schwarz-55b61112"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«30 days per the insurer…»: ashish-agarwal-0219716, kshiti-a-b06494a8, wolfgang-mörlein-1ab715209"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«a threshold the insurer sets…»: claude-schwarz-55b61112, johnschoonbee, luisaljimenez"
+  ]
+ ]
+}

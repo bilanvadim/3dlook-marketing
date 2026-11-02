@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-26",
+  "last_updated": "2026-11-02",
   "companies": {
     "safariland": {
       "covered_by_profile": null,
@@ -2875,6 +2875,238 @@
       "campaign_id": "2026-10-22-uk-insurance-underwriting",
       "product": "fitxpress",
       "date": "2026-10-22",
+      "status": "active"
+    },
+    "a-s-r": {
+      "display_name": "a.s.r.",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "achmea": {
+      "display_name": "Achmea",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "acorn-life": {
+      "display_name": "Acorn Life",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "allianz-lebensversicherungs": {
+      "display_name": "Allianz Lebensversicherungs-AG",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "alte-leipziger-lebensversicherung": {
+      "display_name": "Alte Leipziger Lebensversicherung",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "aviva-ireland": {
+      "display_name": "Aviva Ireland",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "axa-life-europe": {
+      "display_name": "AXA Life Europe",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "cosmosdirekt": {
+      "display_name": "CosmosDirekt",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "gen-re-germany": {
+      "display_name": "Gen Re Germany",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "hannover-re-germany": {
+      "display_name": "Hannover Re Germany",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "hannover-re-ireland": {
+      "display_name": "Hannover Re Ireland",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "hannoversche-lebensversicherung": {
+      "display_name": "Hannoversche Lebensversicherung",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "irish-life-assurance": {
+      "display_name": "Irish Life Assurance",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "lv-1871": {
+      "display_name": "LV 1871",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "morgen-morgen": {
+      "display_name": "Morgen & Morgen",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "munich-re-automation-solutions": {
+      "display_name": "Munich Re Automation Solutions",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "munich-re-germany": {
+      "display_name": "Munich Re Germany",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "nationale-nederlanden": {
+      "display_name": "Nationale-Nederlanden",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "new-ireland-assurance": {
+      "display_name": "New Ireland Assurance",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "royal-london-ireland": {
+      "display_name": "Royal London Ireland",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "scor-france": {
+      "display_name": "SCOR France",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "scor-germany": {
+      "display_name": "SCOR Germany",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "scor-ireland": {
+      "display_name": "SCOR Ireland",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "swiss-life-deutschland": {
+      "display_name": "Swiss Life Deutschland",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "swiss-re-germany": {
+      "display_name": "Swiss Re Germany",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "swiss-re-switzerland": {
+      "display_name": "Swiss Re Switzerland",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "vers-diagnose": {
+      "display_name": "vers.diagnose",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "volkswohl-bund": {
+      "display_name": "Volkswohl Bund",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "zurich-life-ireland": {
+      "display_name": "Zurich Life Ireland",
+      "covered_by_profile": "olena",
+      "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
       "status": "active"
     }
   }

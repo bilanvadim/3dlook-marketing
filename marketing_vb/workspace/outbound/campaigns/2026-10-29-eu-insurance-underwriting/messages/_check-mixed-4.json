@@ -1,0 +1,235 @@
+{
+ "campaign": "2026-10-29-eu-insurance-underwriting",
+ "checked": 35,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-4",
+ "generated": "2026-11-02T20:46:58",
+ "hard": [],
+ "soft": [
+  [
+   "no company line",
+   "holger-krebs-547b0865 M1",
+   "«Alte Leipziger Lebensversicherung» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "rensengelen M1",
+   "«Nationale-Nederlanden» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "remco-de-mol-392b5a6 M1",
+   "«Nationale-Nederlanden» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "brian-o-malley-8a67a837 M1",
+   "«Aviva Ireland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "koos-van-der-veen-9653a110 M1",
+   "«Nationale-Nederlanden» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "caroline-doory-51770315 M1",
+   "«Aviva Ireland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "claire-donohoe-fca-85394717 M1",
+   "«Aviva Ireland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "gabriela-heyne-86a182118 M1",
+   "«Morgen & Morgen» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "fabian-van-lancker M1",
+   "«vers.diagnose» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "karsten-vogel-alh M1",
+   "«Alte Leipziger Lebensversicherung» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "mathias-schniebs-a9a053297 M1",
+   "«Hannoversche Lebensversicherung» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "mark-cree-12207b26 M1",
+   "«Aviva Ireland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "karen-o-flaherty-qfa-sia-3b798555 M1",
+   "«Aviva Ireland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "jean-larkin-b3b55333 M1",
+   "«Aviva Ireland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "florian-kreutzkam M1",
+   "«Hannoversche Lebensversicherung» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "christian-langenstra%c3%9f-826419379 M1",
+   "«Hannoversche Lebensversicherung» is not named: check it has a line only this company gets"
+  ],
+  [
+   "M2 opener repeated",
+   "campaign ×4",
+   "«smart scales has approximately 3.5% mean absolute…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "AXA Life Europe: john-mccormack-b27ba76a / eoinlynam",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nationale-Nederlanden: rensengelen / remco-de-mol-392b5a6",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Automation Solutions: r3425 / georgefox1",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Automation Solutions: r3425 / darrendempsey",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Automation Solutions: georgefox1 / darrendempsey",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Achmea: claudia-stewart-duijndam-32109536 / emiliegale",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Achmea: claudia-stewart-duijndam-32109536 / tomasverhoeven",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Achmea: emiliegale / tomasverhoeven",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva Ireland: brian-o-malley-8a67a837 / lyonsmichelle",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva Ireland: brian-o-malley-8a67a837 / karen-o-flaherty-qfa-sia-3b798555",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva Ireland: caroline-doory-51770315 / claire-donohoe-fca-85394717",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva Ireland: caroline-doory-51770315 / mark-cree-12207b26",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva Ireland: caroline-doory-51770315 / jean-larkin-b3b55333",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva Ireland: claire-donohoe-fca-85394717 / karen-o-flaherty-qfa-sia-3b798555",
+   "«fitxpress takes 2 photos in the application and r…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva Ireland: claire-donohoe-fca-85394717 / jean-larkin-b3b55333",
+   "«fitxpress takes 2 photos in the application and r…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva Ireland: claire-donohoe-fca-85394717 / mark-cree-12207b26",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva Ireland: mark-cree-12207b26 / jean-larkin-b3b55333",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva Ireland: lyonsmichelle / karen-o-flaherty-qfa-sia-3b798555",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva Ireland: karen-o-flaherty-qfa-sia-3b798555 / jean-larkin-b3b55333",
+   "«fitxpress adds 2 photos to a quote and returns a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Morgen & Morgen: klaus-strumberger-0699538 / gabriela-heyne-86a182118",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Morgen & Morgen: klaus-strumberger-0699538 / benjamin-brummer-b4ba6124a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Morgen & Morgen: gabriela-heyne-86a182118 / benjamin-brummer-b4ba6124a",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "CosmosDirekt: nicole-heidemeyer-a861a910a / erik-guth%c3%b6rl-332347245",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannoversche Lebensversicherung: florian-kreutzkam / christian-langenstra%c3%9f-826419379",
+   "«a flag is raised only when the gap to the declare…»"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×24",
+   "«a smart scales weight estimate…»: benjamin-brummer-b4ba6124a, claire-donohoe-fca-85394717, claudia-stewart-duijndam-32109536, diana-glenewinkel-317329179"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×7",
+   "«30 days per the insurer…»: caroline-clinton-b8a45738, darrendempsey, gabriela-heyne-86a182118, koos-van-der-veen-9653a110"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«is not a scale reading…»: elaine-morales-glynn-192896214, erik-guth%c3%b6rl-332347245, florian-kreutzkam, jean-larkin-b3b55333"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«a flag when the gap…»: caroline-clinton-b8a45738, darrendempsey, koos-van-der-veen-9653a110, larskietzer"
+  ]
+ ]
+}

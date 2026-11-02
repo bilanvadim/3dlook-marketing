@@ -203,7 +203,7 @@ thomas-j-böhm | FAIL |  |  |  | IT application team head
 timo-herklotz-11203135b | FAIL |  |  |  | regional sales
 jessica-müller-650600364 | FAIL |  |  |  | engineering P&C underwriting
 michael-vesey-1125772ab | PASS | 1 | proposition | 1 | Head of Protection Proposition at Zurich Life Ireland, earlier propositions actuary: owns where the step sits in protection.
-laura-corrigan-78467483 | PASS | 2 | proposition | 1 | Head of New Business at Zurich Life Ireland, ex technical underwriter: runs the point of sale where evidence is asked.
+laura-corrigan-78467483 | FAIL |  |  |  | Business line: headline «Business Lines, Head of New Business, GI Ireland» at Zurich Insurance plc (general insurance), earlier commercial underwriting and Patrona Underwriting (P&C MGA); joined Zurich Life Ireland only through Apollo's zurich.com domain (coordinator, messages QC 2026-11-02)
 shane-farrelly-fsai-08521330 | WEAK |  | underwriting | 1 | Head of Underwriting Analytics (P2 by ruling 6), but earlier Head of Personal Property at Zurich Insurance: may sit in Zurich GI, not Life.
 colette-houton-86233219 | PASS | 1 | underwriting | 1 | Head of Underwriting at Zurich Life Assurance plc, Ireland: owns evidence requirements and build rating.
 cormac-frawley-53932253 | PASS | 3 | technical-integration | 1 | Head of Data Protection at Zurich Life Ireland: card DPO lane, the body-photo data question goes to him.
@@ -418,7 +418,7 @@ daniel-meier-phd-saa | WEAK |  | reinsurance | 1 | Heads L&H risk modelling: L&H
 luizpbueno | WEAK |  | reinsurance | 1 | L&H, serves Italy and Iberia: head-office L&H market head for markets outside the cut.
 brian-gray-0b75953b | WEAK |  | underwriting | 1 | Group Chief Underwriting Officer with an empty profile and group-wide (P&C and L&H) scope; Julien Descombes holds the L&H CUO seat (ruling 10).
 augusto-diaz-leante-919422 | PASS | 2 | reinsurance | 1 | Managing Director and Head of L&H Continental Europe: the group-wide L&H business head for Germany and the Netherlands (ruling 3); P2 because business rather than underwriting head.
-julien-descombes- | PASS | 1 | underwriting | 1 | Chief Underwriting Officer L&H Reinsurance, former Head L&H Products: owns Swiss Re's L&H underwriting standards, build rating included.
+julien-descombes- | FAIL |  |  |  | Left Swiss Re: Bloomberg Government 2026-02-02 reports Swiss Re parted ways with its L&H chief underwriting officer, his swissre.com profile reads Former CUO L&H Re, and Karen Tan holds the role from 2026-10-01; the LinkedIn title is stale (coordinator, account facts check 2026-11-02)
 johnschoonbee | PASS | 2 | medical | 1 | Global Chief Medical Officer: decides what a build estimate may be used for; reinsurer CMOs are P2 medical officers by the card, same as Hannover Re's Group Medical Officer (QC fix 2026-11-02)
 michael-kamm-a4810a32 | WEAK |  | reinsurance | 1 | L&H, serves Switzerland and MENA: L&H underwriting manager (P3 by tier) for markets outside the cut.
 pavel-cerny-24237a25 | WEAK |  | reinsurance | 1 | L&H, serves Central and Eastern Europe: L&H underwriting manager (P3 by tier) for a market outside the cut.
@@ -581,7 +581,7 @@ patrick-steenwegen-45787b3a1 | FAIL |  |  |  | corporate property head
 rodrigobelloube | WEAK |  | underwriting | 1 | Chief Underwriting Officer with no line shown; ex CEO Munich Re Brazil suggests P&C or LatAm, P1 only if the role is L&H Europe.
 stefan-riedel | FAIL |  |  |  | P&C CUO, energy background
 simon-hudson-166091b | FAIL |  |  |  | retired, headline says so
-michael-ewers-21973193 | PASS | 3 | technical-integration | 1 | CTO in Munich (ex head of architecture and innovation at Telefonica Germany): card P3 technical-integration.
+michael-ewers-21973193 | FAIL |  |  |  | Business line: headline «CTO bei Munich Re Markets GmbH», Munich Re's unit structuring reinsurance for savings, retirement and investment products, not protection underwriting (coordinator, messages QC 2026-11-02)
 luisaljimenez | PASS | 1 | underwriting | 1 | Heads the Corporate Underwriting and Claims L&H section (earlier head of an underwriting section there): Munich Re's L&H underwriting standards function, judged on the underwriting half (ruling 9).
 mirjam-jonker-heidolph-42866877 | PASS | 3 | underwriting | 1 | Life Underwriting Manager at Munich Re in Munich: L&H underwriting manager, card P3 (ruling 5).
 thomas-gei%c3%9fler-902a60157 | PASS | 1 | underwriting | 1 | Chief Underwriter Germany Life/Health (ex Prokurist Risikoprüfung): the L&H underwriting head for Germany, card P1 at a reinsurer.

@@ -1,0 +1,520 @@
+{
+ "campaign": "2026-10-29-eu-insurance-underwriting",
+ "checked": 30,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-2",
+ "generated": "2026-11-02T20:46:56",
+ "hard": [],
+ "soft": [
+  [
+   "no company line",
+   "christopher-curran-3ab8b12 M1",
+   "«Irish Life Assurance» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "kelvingillen M1",
+   "«Irish Life Assurance» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "fouzia-boussetta-845a321 M1",
+   "«SCOR Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "laura-mongan-65b6b934 M1",
+   "«Irish Life Assurance» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "carstengiese M1",
+   "«Gen Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "siobhanbuckley M1",
+   "«Irish Life Assurance» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "alan-q-5b99221a M1",
+   "«Irish Life Assurance» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "jenny-mcdonnell-82a4a61b M1",
+   "«SCOR Ireland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "teppert M1",
+   "«Gen Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "redmond-murphy-87343727 M1",
+   "«SCOR Ireland» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "patricia-smith-b8747827 M1",
+   "«Irish Life Assurance» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "brendan-lambe-8820b92b M1",
+   "«Irish Life Assurance» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "lucie-aubry-0b760630 M1",
+   "«SCOR France» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "thomas-trompetter-8326aa22a M1",
+   "«SCOR Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "st%c3%a9phanie-haas-maret-4a822573 M1",
+   "«SCOR France» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "marvin-dewkurun-5474a363 M1",
+   "«SCOR France» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "manuel-plisson-812978a M1",
+   "«SCOR France» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "rwcastellini M1",
+   "«SCOR France» is not named: check it has a line only this company gets"
+  ],
+  [
+   "pricing word",
+   "elsa-renouf-helfen-93a9283b M1",
+   "Hi Elsa, Noticed how your path runs from business acceptance to Chief Pricing & Underwriting Officer for L&H…"
+  ],
+  [
+   "no company line",
+   "elsa-renouf-helfen-93a9283b M1",
+   "«SCOR France» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "antoine-moll-6373042 M1",
+   "«SCOR France» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "adrien-givaudan-658600190 M1",
+   "«SCOR France» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "annika-schilling-a8157392 M1",
+   "«Gen Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "upasdika M1",
+   "«Gen Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "simon-fallais-phd-b06a5323 M1",
+   "«Gen Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "andres-webersinke-2921085 M1",
+   "«Gen Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "carina-betz-180b82106 M1",
+   "«Gen Re Germany» is not named: check it has a line only this company gets"
+  ],
+  [
+   "near-duplicate sentence",
+   "Irish Life Assurance: christopher-curran-3ab8b12 / kelvingillen",
+   "«one idea may belong to protection, where applicat…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Irish Life Assurance: christopher-curran-3ab8b12 / siobhanbuckley",
+   "«the idea is 2 photos in the application and a sma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Irish Life Assurance: christopher-curran-3ab8b12 / shay-browne-34a99a19",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Irish Life Assurance: christopher-curran-3ab8b12 / alan-q-5b99221a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Irish Life Assurance: kelvingillen / laura-mongan-65b6b934",
+   "«protection applications with no examination carry…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Irish Life Assurance: kelvingillen / shay-browne-34a99a19",
+   "«protection applications with no examination carry…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Irish Life Assurance: kelvingillen / alan-q-5b99221a",
+   "«protection applications with no examination carry…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Irish Life Assurance: laura-mongan-65b6b934 / shay-browne-34a99a19",
+   "«term life and income protection applications that…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Irish Life Assurance: laura-mongan-65b6b934 / alan-q-5b99221a",
+   "«term life and income protection applications that…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Irish Life Assurance: laura-mongan-65b6b934 / richard-l-6b832012",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Irish Life Assurance: laura-mongan-65b6b934 / siobhanbuckley",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Irish Life Assurance: laura-mongan-65b6b934 / patricia-smith-b8747827",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Irish Life Assurance: laura-mongan-65b6b934 / brendan-lambe-8820b92b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Irish Life Assurance: laura-mongan-65b6b934 / lauren-mccormack1",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Irish Life Assurance: richard-l-6b832012 / siobhanbuckley",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Irish Life Assurance: richard-l-6b832012 / patricia-smith-b8747827",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Irish Life Assurance: richard-l-6b832012 / brendan-lambe-8820b92b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Irish Life Assurance: richard-l-6b832012 / lauren-mccormack1",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Irish Life Assurance: siobhanbuckley / patricia-smith-b8747827",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Irish Life Assurance: siobhanbuckley / brendan-lambe-8820b92b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Irish Life Assurance: siobhanbuckley / lauren-mccormack1",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Irish Life Assurance: shay-browne-34a99a19 / alan-q-5b99221a",
+   "«retail protection applications that see no examin…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Irish Life Assurance: patricia-smith-b8747827 / brendan-lambe-8820b92b",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Irish Life Assurance: patricia-smith-b8747827 / lauren-mccormack1",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Irish Life Assurance: brendan-lambe-8820b92b / lauren-mccormack1",
+   "«in most enterprise deployments, the customer acts…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR Germany: fouzia-boussetta-845a321 / thomas-trompetter-8326aa22a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gen Re Germany: carstengiese / teppert",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gen Re Germany: carstengiese / annika-schilling-a8157392",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gen Re Germany: carstengiese / upasdika",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gen Re Germany: carstengiese / simon-fallais-phd-b06a5323",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gen Re Germany: carstengiese / andres-webersinke-2921085",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gen Re Germany: carstengiese / carina-betz-180b82106",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gen Re Germany: teppert / annika-schilling-a8157392",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gen Re Germany: teppert / upasdika",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gen Re Germany: teppert / simon-fallais-phd-b06a5323",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gen Re Germany: teppert / andres-webersinke-2921085",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gen Re Germany: teppert / carina-betz-180b82106",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gen Re Germany: annika-schilling-a8157392 / andres-webersinke-2921085",
+   "«smart scales has approximately 3.5% mean absolute…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gen Re Germany: annika-schilling-a8157392 / carina-betz-180b82106",
+   "«smart scales has approximately 3.5% mean absolute…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gen Re Germany: annika-schilling-a8157392 / upasdika",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gen Re Germany: annika-schilling-a8157392 / simon-fallais-phd-b06a5323",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gen Re Germany: upasdika / simon-fallais-phd-b06a5323",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gen Re Germany: upasdika / andres-webersinke-2921085",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gen Re Germany: upasdika / carina-betz-180b82106",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gen Re Germany: simon-fallais-phd-b06a5323 / andres-webersinke-2921085",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gen Re Germany: simon-fallais-phd-b06a5323 / carina-betz-180b82106",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gen Re Germany: andres-webersinke-2921085 / carina-betz-180b82106",
+   "«on the estimate itself, smart scales has approxim…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR Ireland: jenny-mcdonnell-82a4a61b / redmond-murphy-87343727",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR Ireland: jenny-mcdonnell-82a4a61b / jennifer-coleman-761b6b5b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR Ireland: redmond-murphy-87343727 / jennifer-coleman-761b6b5b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR France: lucie-aubry-0b760630 / st%c3%a9phanie-haas-maret-4a822573",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR France: lucie-aubry-0b760630 / manuel-plisson-812978a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR France: lucie-aubry-0b760630 / rwcastellini",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR France: lucie-aubry-0b760630 / elsa-renouf-helfen-93a9283b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR France: lucie-aubry-0b760630 / antoine-moll-6373042",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR France: lucie-aubry-0b760630 / adrien-givaudan-658600190",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR France: st%c3%a9phanie-haas-maret-4a822573 / manuel-plisson-812978a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR France: st%c3%a9phanie-haas-maret-4a822573 / rwcastellini",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR France: st%c3%a9phanie-haas-maret-4a822573 / elsa-renouf-helfen-93a9283b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR France: st%c3%a9phanie-haas-maret-4a822573 / antoine-moll-6373042",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR France: st%c3%a9phanie-haas-maret-4a822573 / adrien-givaudan-658600190",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR France: manuel-plisson-812978a / rwcastellini",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR France: manuel-plisson-812978a / elsa-renouf-helfen-93a9283b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR France: manuel-plisson-812978a / antoine-moll-6373042",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR France: manuel-plisson-812978a / adrien-givaudan-658600190",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR France: rwcastellini / elsa-renouf-helfen-93a9283b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR France: rwcastellini / antoine-moll-6373042",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR France: rwcastellini / adrien-givaudan-658600190",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR France: elsa-renouf-helfen-93a9283b / antoine-moll-6373042",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR France: elsa-renouf-helfen-93a9283b / adrien-givaudan-658600190",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR France: antoine-moll-6373042 / adrien-givaudan-658600190",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×16",
+   "«a smart scales weight estimate…»: adrien-givaudan-658600190, annika-schilling-a8157392, brendan-lambe-8820b92b, carstengiese"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«is not a scale reading…»: andres-webersinke-2921085, annika-schilling-a8157392, carina-betz-180b82106, elsa-renouf-helfen-93a9283b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«a flag when the gap…»: elsa-renouf-helfen-93a9283b, lauren-mccormack1, richard-l-6b832012"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«when the gap crosses the…»: carina-betz-180b82106, elsa-renouf-helfen-93a9283b, richard-l-6b832012"
+  ]
+ ]
+}
