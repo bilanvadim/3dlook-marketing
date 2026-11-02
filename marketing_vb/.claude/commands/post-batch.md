@@ -122,7 +122,36 @@ directory listing when a subcommand answers the same question.
    bare `quality-controller`. Then add your one-line `coordinator_review` to each
    report (agreement + top_issue), per CLAUDE.md §14.
 
-7. **Assemble.**
+7. **Video: one short HyperFrames clip for the pack** (added 2026-11-02). It is
+   written from the FINAL posts, so it runs after steps 4-6. Skip this step when
+   `python3 scripts/social_video.py status $1` shows both `reel` and `feed` under
+   `formats` with `"stale": false`.
+
+   ```bash
+   python3 scripts/social_video.py prompt $1 --write
+   ```
+
+   Spawn `post-drafter` once more, with exactly this prompt, and WAIT for it:
+
+   > Read the file `workspace/social/articles/$1/_video-prompt.md` and execute it
+   > exactly. It is your complete assignment: the rules, the output shape and the
+   > pack's final posts are inside it. Read nothing else first. Save the JSON to the
+   > path its "## Output" section names, then reply with the one line it asks for.
+
+   ```bash
+   python3 scripts/social_video.py lint $1
+   python3 scripts/social_video.py render $1
+   ```
+
+   Lint exit 1 → one follow-up to `post-drafter` quoting the lint lines (two rounds
+   maximum). `render` takes one to two minutes: run it in the foreground and wait. It
+   commits and pushes the two MP4s to the private repo itself (`private_repo` in its
+   output); do not run git for them. A
+   `check failed` result means a line does not fit its card: send the findings to the
+   drafter once, then render again. The video never blocks the pack: after two failed
+   rounds, record what failed in your summary and go on to step 8.
+
+8. **Assemble.**
 
    ```bash
    python3 scripts/social_pack.py profiles $1
@@ -140,8 +169,15 @@ directory listing when a subcommand answers the same question.
 
    Do not write any of the three by hand. There is no visual-brief step (removed
    2026-09-20): the designer builds each visual from the post's Design tip in the
-   digest.
+   digest. The digest and the report pick up the video from `_video/` on their own.
 
-8. **Final self-check before your summary** — the same check the Stop hook makes:
+   When the report says `Video: rendered ✅`, send the two MP4s to Vadim:
+
+   ```bash
+   python3 scripts/social_video.py notify $1
+   ```
+
+9. **Final self-check before your summary** — the same check the Stop hook makes:
    every active profile has a `post.md` and `publish-report.md` says N/N. Report the
-   angle map, lint state, QC scores, and anything you left unresolved.
+   angle map, lint state, QC scores, the video's hook and render state, and anything
+   you left unresolved.

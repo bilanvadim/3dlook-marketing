@@ -6,7 +6,7 @@
     "source_file": "workspace/seo/articles/top-7-remote-body-composition-tools-glp-1-clinics/published-live-2026-10-17.md",
     "source_status": "published",
     "published_url": "https://3dlook.ai/content-hub/top-7-remote-body-composition-tools-glp-1-clinics/",
-    "date": "2026-10-17"
+    "date": "2026-11-02"
   },
   "profiles": [
     {
@@ -95,5 +95,23 @@
       "reason": "not in this pack (_pack.json profiles)"
     }
   ],
-  "ready_for_review": true
+  "ready_for_review": true,
+  "video": {
+    "copy": "workspace/social/articles/aeo-glp-1-tracking-between-visits/_video/video.json",
+    "status": "rendered",
+    "formats": {
+      "reel": {
+        "file": "aeo-glp-1-tracking-between-visits-reel.mp4",
+        "ratio": "9:16",
+        "duration": 19.4,
+        "use": "Instagram Reels / Stories"
+      },
+      "feed": {
+        "file": "aeo-glp-1-tracking-between-visits-feed.mp4",
+        "ratio": "4:5",
+        "duration": 19.4,
+        "use": "LinkedIn company page, Facebook, Instagram feed"
+      }
+    }
+  }
 }

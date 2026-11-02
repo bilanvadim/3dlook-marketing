@@ -1,0 +1,200 @@
+<!doctype html>
+<!--
+  stat-reel: the house template for the social pack's short video (HyperFrames).
+
+  Filled by `scripts/social_video.py build|render <slug>`. Never edit a filled copy,
+  edit THIS file: every double-brace placeholder below is replaced by the script, texts arrive
+  HTML-escaped, and the block between STAT:START/STAT:END is dropped when the copy
+  has no stat. Timing (T.*) is computed by the script from word counts, so a
+  longer line gets longer on screen without anyone touching this file.
+
+  Art direction follows DESIGN.md: navy radial glow, faint measurement grid,
+  Satoshi, electric blue only as the single accent, light tints for type on dark,
+  precise motion with no bounce or overshoot (§9). Satoshi resolves through
+  local(): it is installed on the VPS from the official Fontshare package, and
+  the font files never enter this public repo (ITF FFL §02: no distribution).
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width={{W}}, height={{H}}" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Satoshi"; font-weight: 400; src: local("Satoshi Regular"), local("Satoshi-Regular"); }
+      @font-face { font-family: "Satoshi"; font-weight: 500; src: local("Satoshi Medium"), local("Satoshi-Medium"); }
+      @font-face { font-family: "Satoshi"; font-weight: 700; src: local("Satoshi Bold"), local("Satoshi-Bold"); }
+      @font-face { font-family: "Satoshi"; font-weight: 900; src: local("Satoshi Black"), local("Satoshi-Black"); }
+
+      :root {
+        --navy: #050F40;
+        --blue-800: #08186B;
+        --blue-700: #0B2299;
+        --blue-400: #4F6DFF;
+        --blue-300: #8A9CFF;
+        --blue-200: #B1BDFF;
+        --blue-100: #D8DEFF;
+        --white: #FFFFFF;
+        --pad-x: 88px;
+        --safe-top: {{SAFE_TOP}}px;
+        --safe-bottom: {{SAFE_BOTTOM}}px;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: {{W}}px; height: {{H}}px; overflow: hidden; background: var(--navy); }
+      #root { width: 100%; height: 100%; position: relative; font-family: "Satoshi", sans-serif; color: var(--white); }
+
+      /* ---- the ground: navy glow + measurement grid, alive for the whole film ---- */
+      #ground { position: absolute; inset: 0; background: var(--navy); overflow: hidden; }
+      #glow {
+        position: absolute; left: 50%; top: 30%; width: 1500px; height: 1500px;
+        margin-left: -750px; margin-top: -750px; border-radius: 50%;
+        background: radial-gradient(circle at center, rgba(79,109,255,0.55) 0%, rgba(11,34,153,0.55) 28%, rgba(8,24,107,0.45) 48%, rgba(5,15,64,0) 70%);
+      }
+      #grid {
+        position: absolute; inset: 0;
+        background-image:
+          repeating-linear-gradient(0deg, rgba(177,189,255,0.07) 0 1px, transparent 1px 72px),
+          repeating-linear-gradient(90deg, rgba(177,189,255,0.07) 0 1px, transparent 1px 72px);
+        -webkit-mask-image: radial-gradient(ellipse at 50% 40%, #000 0%, rgba(0,0,0,0.6) 45%, transparent 80%);
+                mask-image: radial-gradient(ellipse at 50% 40%, #000 0%, rgba(0,0,0,0.6) 45%, transparent 80%);
+      }
+
+      /* ---- frame furniture: logo top-left, measurement ruler as the progress bar ---- */
+      #logo { position: absolute; left: var(--pad-x); top: var(--safe-top); width: 300px; height: 44px; }
+      #logo svg { width: 300px; height: 44px; display: block; }
+      #ruler { position: absolute; left: var(--pad-x); right: var(--pad-x); bottom: var(--safe-bottom); height: 22px; }
+      #ruler-ticks {
+        position: absolute; inset: 0;
+        background-image:
+          linear-gradient(rgba(177,189,255,0.35), rgba(177,189,255,0.35)),
+          repeating-linear-gradient(90deg, rgba(177,189,255,0.35) 0 2px, transparent 2px 36px);
+        background-size: 100% 2px, 100% 10px;
+        background-position: 0 100%, 0 100%;
+        background-repeat: no-repeat;
+      }
+      #ruler-fill { position: absolute; left: 0; right: 0; bottom: 0; height: 4px; background: var(--blue-400); transform-origin: left center; }
+
+      /* ---- cards: full frame, content inside the platform's safe zone ---- */
+      .card {
+        position: absolute; inset: 0;
+        display: flex; flex-direction: column; justify-content: center;
+        padding: calc(var(--safe-top) + 120px) var(--pad-x) calc(var(--safe-bottom) + 90px);
+      }
+      .eyebrow { font-size: 30px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue-300); margin-bottom: 32px; }
+      .hook { font-size: {{HOOK_SIZE}}px; font-weight: 700; line-height: 1.06; letter-spacing: -0.02em; max-width: 904px; }
+
+      .stat-value { font-size: {{STAT_SIZE}}px; font-weight: 900; line-height: 0.95; letter-spacing: -0.03em; color: var(--white); white-space: nowrap; }
+      .stat-rule { width: 520px; height: 18px; margin: 30px 0 34px; position: relative; transform-origin: left center; }
+      .stat-rule::before { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 4px; background: var(--blue-400); }
+      .stat-rule::after {
+        content: ""; position: absolute; inset: 0;
+        background-image: repeating-linear-gradient(90deg, var(--blue-300) 0 2px, transparent 2px 52px);
+        background-size: 100% 12px; background-position: 0 100%; background-repeat: no-repeat;
+      }
+      .stat-label { font-size: 46px; font-weight: 500; line-height: 1.22; color: var(--blue-100); max-width: 904px; }
+      .stat-source { font-size: 26px; font-weight: 400; line-height: 1.35; color: var(--blue-300); margin-top: 28px; max-width: 904px; }
+
+      .points { list-style: none; display: flex; flex-direction: column; gap: 46px; }
+      .pt { display: flex; align-items: flex-start; gap: 30px; font-size: {{POINT_SIZE}}px; font-weight: 700; line-height: 1.14; letter-spacing: -0.01em; max-width: 904px; }
+      .pt-dot { flex: 0 0 22px; width: 22px; height: 22px; margin-top: 0.32em; border-radius: 9999px; background: var(--blue-400); box-shadow: 0 0 0 7px rgba(79,109,255,0.25); }
+
+      .close { font-size: {{CLOSE_SIZE}}px; font-weight: 700; line-height: 1.08; letter-spacing: -0.02em; max-width: 904px; }
+      .cta-row { margin-top: 56px; display: flex; }
+      .cta {
+        display: inline-flex; align-items: center; gap: 16px;
+        padding: 26px 44px; border-radius: 9999px; background: var(--white); color: var(--navy);
+        font-size: 36px; font-weight: 700; line-height: 1;
+      }
+      .cta svg { width: 28px; height: 28px; display: block; }
+      .url { margin-top: 30px; font-size: {{URL_SIZE}}px; font-weight: 500; color: var(--blue-200); overflow-wrap: anywhere; max-width: 904px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="{{DURATION}}" data-width="{{W}}" data-height="{{H}}">
+
+      <div id="ground" class="clip" data-start="0" data-duration="{{DURATION}}" data-track-index="0">
+        <div id="glow"></div>
+        <div id="grid"></div>
+      </div>
+
+      <div id="hook-card" class="card clip" data-start="{{HOOK_START}}" data-duration="{{HOOK_DUR}}" data-track-index="1">
+        <div id="hook-eyebrow" class="eyebrow">{{EYEBROW}}</div>
+        <h1 id="hook-line" class="hook">{{HOOK}}</h1>
+      </div>
+
+      <!--STAT:START-->
+      <div id="stat-card" class="card clip" data-start="{{STAT_START}}" data-duration="{{STAT_DUR}}" data-track-index="2">
+        <div id="stat-value" class="stat-value">{{STAT_VALUE}}</div>
+        <div id="stat-rule" class="stat-rule"></div>
+        <p id="stat-label" class="stat-label">{{STAT_LABEL}}</p>
+        <p id="stat-source" class="stat-source">Source: {{STAT_SOURCE}}</p>
+      </div>
+      <!--STAT:END-->
+
+      <div id="points-card" class="card clip" data-start="{{POINTS_START}}" data-duration="{{POINTS_DUR}}" data-track-index="3">
+        <ul class="points">
+{{POINTS_HTML}}
+        </ul>
+      </div>
+
+      <div id="close-card" class="card clip" data-start="{{CLOSE_START}}" data-duration="{{CLOSE_DUR}}" data-track-index="4">
+        <h2 id="close-line" class="close">{{CLOSE}}</h2>
+        <div class="cta-row">
+          <div id="cta" class="cta">{{CTA}}<svg viewBox="0 0 24 24" fill="none" stroke="#050F40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></div>
+        </div>
+        <div id="url" class="url">{{URL}}</div>
+      </div>
+
+      <div id="logo" class="clip" data-start="0" data-duration="{{DURATION}}" data-track-index="5">{{LOGO_SVG}}</div>
+
+      <div id="ruler" class="clip" data-start="0" data-duration="{{DURATION}}" data-track-index="6">
+        <div id="ruler-ticks"></div>
+        <div id="ruler-fill"></div>
+      </div>
+    </div>
+
+    <script>
+      // Card windows, seconds — computed by social_video.py from the copy.
+      const T = {{TIMES_JSON}};
+      const tl = gsap.timeline({ paused: true });
+      const IN = { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power3.out" };
+      const FROM = { opacity: 0, y: 40, filter: "blur(8px)" };
+      const out = (sel, card) => tl.to(sel, { opacity: 0, y: -24, duration: 0.42, ease: "power2.in" }, card.end - 0.5);
+
+      // ground: a slow drift so no frame is ever static, and the ruler measures the film
+      tl.fromTo("#glow", { x: -60, y: 0, scale: 1 }, { x: 60, y: 90, scale: 1.12, duration: T.total, ease: "sine.inOut" }, 0);
+      tl.fromTo("#grid", { y: 0 }, { y: -72, duration: T.total, ease: "none" }, 0);
+      tl.fromTo("#ruler-fill", { scaleX: 0 }, { scaleX: 1, duration: T.total, ease: "none" }, 0);
+      tl.fromTo("#logo", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "power2.out" }, 0.1);
+
+      // 1. hook
+      tl.fromTo("#hook-eyebrow", FROM, { ...IN }, T.hook.start + 0.15);
+      tl.fromTo("#hook-line", FROM, { ...IN, duration: 0.85 }, T.hook.start + 0.32);
+      out(["#hook-eyebrow", "#hook-line"], T.hook);
+
+      // 2. stat (absent when the copy has none)
+      if (T.stat) {
+        tl.fromTo("#stat-value", { clipPath: "inset(0% 100% 0% 0%)", opacity: 1 }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.9, ease: "power3.out" }, T.stat.start + 0.15);
+        tl.fromTo("#stat-rule", { scaleX: 0 }, { scaleX: 1, duration: 0.8, ease: "power2.inOut" }, T.stat.start + 0.55);
+        tl.fromTo("#stat-label", FROM, { ...IN }, T.stat.start + 0.85);
+        tl.fromTo("#stat-source", FROM, { ...IN }, T.stat.start + 1.15);
+        out(["#stat-value", "#stat-rule", "#stat-label", "#stat-source"], T.stat);
+      }
+
+      // 3. points, one keypoint at a time
+      T.points.items.forEach((at, i) => {
+        tl.fromTo(`#pt-${i} .pt-dot`, { scale: 0 }, { scale: 1, duration: 0.35, ease: "power2.out" }, at);
+        tl.fromTo(`#pt-${i} .pt-text`, { opacity: 0, x: 30, filter: "blur(6px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.6, ease: "power3.out" }, at + 0.08);
+      });
+      out(".pt", T.points);
+
+      // 4. close + CTA, held to the end
+      tl.fromTo("#close-line", FROM, { ...IN, duration: 0.85 }, T.close.start + 0.15);
+      tl.fromTo("#cta", { opacity: 0, y: 24, scale: 0.97 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }, T.close.start + 0.7);
+      tl.fromTo("#url", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.out" }, T.close.start + 1.0);
+      tl.fromTo("#cta svg", { x: 0, y: 0 }, { x: 4, y: -4, duration: 0.5, ease: "sine.inOut", repeat: 3, yoyo: true }, T.close.start + 1.6);
+
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

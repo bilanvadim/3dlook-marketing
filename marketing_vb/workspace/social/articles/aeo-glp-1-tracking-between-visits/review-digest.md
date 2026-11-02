@@ -2,7 +2,7 @@
 
 Question (HubSpot AEO #184342641): How can GLP-1 weight-loss clinics track body composition remotely between visits, and what tools belong in the care plan?
 Article: `workspace/seo/articles/top-7-remote-body-composition-tools-glp-1-clinics/published-live-2026-10-17.md`
-Date: 2026-10-17
+Date: 2026-11-02
 Profiles: 8
 
 ---
@@ -247,6 +247,27 @@ The full comparison of seven methods is linked in the comments.
 > **Format:** text
 > **Adaptation:** no visual needed, native platform format
 > **Keep:** n/a
+
+---
+
+## Video (HyperFrames)
+
+**Eyebrow:** GLP-1 programs
+
+**Hook:** Hold every between-visit body composition tool to the same questions
+
+**Stat:** 43%: of firms with 5,000 or more workers covered GLP-1 drugs for weight loss (Source: KFF 2025 Employer Health Benefits Survey)
+
+**Points:**
+- What does it measure directly?
+- How repeatable are results at home?
+- Where is clinician review required?
+
+**Close:** Seven categories compared, with the complete buyer checklist → Read the full article
+
+**4:5** (19.4 s, LinkedIn company page, Facebook, Instagram feed): `3dlook-marketing-private/social-video/aeo-glp-1-tracking-between-visits/aeo-glp-1-tracking-between-visits-feed.mp4` · frames `_video/feed-sheet.jpg`
+
+**9:16** (19.4 s, Instagram Reels / Stories): `3dlook-marketing-private/social-video/aeo-glp-1-tracking-between-visits/aeo-glp-1-tracking-between-visits-reel.mp4` · frames `_video/reel-sheet.jpg`
 
 
 ---

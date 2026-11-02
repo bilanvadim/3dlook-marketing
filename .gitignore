@@ -57,3 +57,8 @@ dist/
 # runtime state written by telegram-bot/notify.py: maps a short callback token to an
 # artifact path, because Telegram caps callback_data at 64 bytes. Local, regenerated.
 marketing_vb/workspace/.callback-tokens.json
+
+# Rendered social videos (marketing_vb/scripts/social_video.py, 2026-11-02) live in the PRIVATE repo
+# (3dlook-marketing-private/social-video/<slug>/), committed and pushed there by the script. They
+# only land here when that checkout is missing; this rule keeps them out of the public history.
+marketing_vb/workspace/social/articles/*/_video/*.mp4
