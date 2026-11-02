@@ -177,7 +177,18 @@ directory listing when a subcommand answers the same question.
    python3 scripts/social_video.py notify $1
    ```
 
-9. **Final self-check before your summary** — the same check the Stop hook makes:
+9. **Commit** (Vadim, 2026-11-02: every pack ends in git, as articles do).
+
+   ```bash
+   python3 scripts/social_pack.py commit $1
+   ```
+
+   It commits and pushes this pack's folder and nothing else (never run `git add -A`
+   or any git command yourself here: other jobs keep uncommitted work in the same
+   checkout). `pushed` or `unchanged` is done; `committed, push failed` or any other
+   status goes in the FIRST line of your summary. The commit hash goes in the summary.
+
+10. **Final self-check before your summary** — the same check the Stop hook makes:
    every active profile has a `post.md` and `publish-report.md` says N/N. Report the
-   angle map, lint state, QC scores, the video's hook and render state, and anything
-   you left unresolved.
+   angle map, lint state, QC scores, the video's hook and render state, the commit
+   hash, and anything you left unresolved.

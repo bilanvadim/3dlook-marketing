@@ -180,8 +180,20 @@ do not "just check" with a directory listing when a subcommand answers the same 
      schema is owned by `social-publisher`, and the reason it is generated is that three
      agents used to each carry their own copy of it.
 
+     Then commit the pack (only the profile that assembles does this, so parallel
+     profile jobs never race for the git index):
+
+     ```bash
+     python3 scripts/social_pack.py commit $1
+     ```
+
+     It commits and pushes this pack's folder and nothing else (never run `git add -A`
+     or any git command yourself here: other jobs keep uncommitted work in the same
+     checkout). `pushed` or `unchanged` is done; `committed, push failed` or any other
+     status goes in the FIRST line of your summary. The commit hash goes in the summary.
+
 8. **Report** the profile, the source file and its status, the lint verdict, whether QC
-   ran, and either what remains or the digest path.
+   ran, and either what remains or the digest path and the commit hash.
 
 ## Rules
 

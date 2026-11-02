@@ -237,7 +237,7 @@
 | SEO | пайплайн `seo/*` | Keywords → ... → Publish → trigger social |
 | Brand guardian | `brand-checker` (shared) | Проверка тона / no-go / AI-сигнатур |
 
-**Social, основной режим — БАТЧ** (решение Вадима 2026-09-20): `mvb-run.py posts {slug} --batch` → одна job `/post-batch` → один `post-drafter` (opus) пишет весь пак → `post-lint.py` с гейтом по НАПИСАННЫМ профилям → `post-brand-checker` и `post-quality-controller` по выборке → manifest / digest / report скриптом → апрув Вадима в Telegram → дизайнер по `### Design tip`. Fan-out (`posts {slug}` без флага) — для точечных пересборов: job'ы только на профили без post.md. `/post-from-article` — интерактивный fallback. Квартальный план для соцсетей не используется.
+**Social, основной режим — БАТЧ** (решение Вадима 2026-09-20): `mvb-run.py posts {slug} --batch` → одна job `/post-batch` → один `post-drafter` (opus) пишет весь пак → `post-lint.py` с гейтом по НАПИСАННЫМ профилям → `post-brand-checker` и `post-quality-controller` по выборке → manifest / digest / report скриптом → видео (`social_video.py`) → `social_pack.py commit` (commit+push только папки пака, с 2026-11-02) → апрув Вадима в Telegram → дизайнер по `### Design tip`. Fan-out (`posts {slug}` без флага) — для точечных пересборов: job'ы только на профили без post.md. `/post-from-article` — интерактивный fallback. Квартальный план для соцсетей не используется.
 
 **Механика — скриптами, не агентами:** `scripts/social_pack.py`, `scripts/post-lint.py`, `scripts/article_package.py`, `scripts/outbound_pack.py`. Агенты пишут и судят; разрешение источника, сборка промптов, длины, числа, манифесты и импорты — код. Stop-hook `.claude/hooks/posts-artifact-gate.py` не даёт social-сессии завершиться без обещанных post.md.
 

@@ -68,6 +68,17 @@ hand-edit the template's filled copies: the template is
    python3 scripts/social_video.py notify $1
    ```
 
-6. **Summary:** the hook, which post's angle it came from, both durations, lint and
-   render state. Read `_video/reel-sheet.jpg` (one frame per card) before you write it
+6. **Commit.**
+
+   ```bash
+   python3 scripts/social_pack.py commit $1
+   ```
+
+   It commits and pushes this pack's folder and nothing else (never run `git add -A`
+   or any git command yourself here: other jobs keep uncommitted work in the same
+   checkout). `pushed` or `unchanged` is done; `committed, push failed` or any other
+   status goes in the FIRST line of your summary. The commit hash goes in the summary.
+
+7. **Summary:** the hook, which post's angle it came from, both durations, lint and
+   render state, the commit hash. Read `_video/reel-sheet.jpg` (one frame per card) before you write it
    and say if any card looks wrong.

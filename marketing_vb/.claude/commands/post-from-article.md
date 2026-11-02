@@ -138,8 +138,19 @@ run, is most of what this command used to cost.
    depended on which one wrote last: that is how the 2026-08-21 run shipped a manifest in
    the obsolete `drafts:` form listing 3 profiles while 9 posts sat on disk.
 
-6. **Report:** "N posts ready for article $1. Source: `<file>` (status: `<status>`). Digest:
-   `workspace/social/articles/$1/review-digest.md`." Note any profile skipped and why, and
+6. **Commit.**
+
+   ```bash
+   python3 scripts/social_pack.py commit $1
+   ```
+
+   It commits and pushes this pack's folder and nothing else (never run `git add -A`
+   or any git command yourself here: other jobs keep uncommitted work in the same
+   checkout). `pushed` or `unchanged` is done; `committed, push failed` or any other
+   status goes in the FIRST line of your summary. The commit hash goes in the summary.
+
+7. **Report:** "N posts ready for article $1. Source: `<file>` (status: `<status>`). Digest:
+   `workspace/social/articles/$1/review-digest.md`. Commit: `<hash>`." Note any profile skipped and why, and
    any lint warning left standing.
 
 ## Rules

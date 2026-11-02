@@ -54,6 +54,7 @@ USAGE
     scripts/social_pack.py digest   <slug> [--write]
     scripts/social_pack.py report   <slug> [--write]
     scripts/social_pack.py scores   [<slug>]
+    scripts/social_pack.py commit   <slug> [--no-push]   # git: this pack's folder only
 """
 from __future__ import annotations
 
@@ -1386,6 +1387,83 @@ post's Design tip (the separate visual-brief step was removed 2026-09-20).
 
 
 # ---------------------------------------------------------------------------
+# git: every pack ends in git (Vadim, 2026-11-02: «так додай автокоміт»)
+# ---------------------------------------------------------------------------
+
+def _git(root: str, *args, timeout: int = 120):
+    import subprocess
+    return subprocess.run(["git", "-C", root, *args], capture_output=True, text=True,
+                          timeout=timeout)
+
+
+def commit_pack(slug: str, push: bool = True):
+    """Commit (and push) this pack's folder, and nothing else in the repo.
+
+    Same contract as the article pipeline's git-final (new-article.md): only this
+    slug's files, never `add -A`, because other jobs leave their own uncommitted work
+    in the same checkout (the outbound cron among them). `git commit -- <path>`
+    takes only the pack folder even if something else is staged. A rejected push is
+    retried once after `pull --rebase --autostash`. Returns (result dict, exit code)."""
+    root = _git(PROJ, "rev-parse", "--show-toplevel").stdout.strip()
+    if not root:
+        return {"status": "error", "why": "not a git checkout"}, 2
+    rel = os.path.relpath(pack_root(slug), root)
+    if not os.path.isdir(pack_root(slug)):
+        return {"status": "error", "why": f"no pack at {rel}"}, 2
+    _git(root, "add", "--", rel)
+    if _git(root, "diff", "--cached", "--quiet", "--", rel).returncode == 0:
+        return {"status": "unchanged", "path": rel}, 0
+    files = [f for f in _git(root, "diff", "--cached", "--name-only", "--", rel).stdout.splitlines() if f]
+
+    man, _err = build_manifest(slug)
+    lines = []
+    head = f"social: {slug} pack"
+    if man:
+        prof = man["profiles"]
+        ready = sum(1 for e in prof if e["status"] == "ready")
+        head += f", {ready}/{len(prof)} ready"
+        lines.append("Profiles: " + ", ".join(
+            f"{e['profile_id']} {e['status']}" + (f" QC {e['qc_score']}" if e.get("qc_score") else "")
+            for e in prof))
+        vid = man.get("video")
+        if vid:
+            fm = vid.get("formats") or {}
+            head += (", video " + " + ".join(e["ratio"] for e in fm.values())) if fm else ", video copy"
+            v = _video(slug)
+            hook = ((v.get("spec") or {}).get("hook")) if v else ""
+            priv = ""
+            try:
+                from social_video import PRIVATE_ROOT, PRIVATE_VIDEO
+                priv = _git(str(PRIVATE_ROOT), "log", "-1", "--format=%h", "--",
+                            f"{PRIVATE_VIDEO}/{slug}").stdout.strip()
+            except Exception:  # noqa: BLE001
+                pass
+            lines.append(f"Video: {vid['status']}" + (f', hook "{hook}"' if hook else "")
+                         + (f"; MP4s in 3dlook-marketing-private {priv}" if priv else ""))
+    lines.append(f"Files: {len(files)} under {rel}/")
+    lines.append("Committed by scripts/social_pack.py commit (every pack ends in git, 2026-11-02).")
+    msg = head + "\n\n" + "\n".join(lines) + "\n"
+
+    c = _git(root, "commit", "-m", msg, "--", rel)
+    if c.returncode:
+        return {"status": "commit failed", "log": (c.stdout + c.stderr)[-500:]}, 1
+    sha = _git(root, "rev-parse", "--short", "HEAD").stdout.strip()
+    out = {"status": "committed", "commit": sha, "files": files}
+    if not push:
+        return out, 0
+    p = _git(root, "push", "origin", "HEAD", timeout=300)
+    if p.returncode:
+        _git(root, "pull", "--rebase", "--autostash", timeout=300)
+        p = _git(root, "push", "origin", "HEAD", timeout=300)
+        out["commit"] = _git(root, "rev-parse", "--short", "HEAD").stdout.strip()
+    if p.returncode:
+        out.update(status="committed, push failed", log=(p.stdout + p.stderr)[-500:])
+        return out, 1
+    out["status"] = "pushed"
+    return out, 0
+
+
+# ---------------------------------------------------------------------------
 # cli
 # ---------------------------------------------------------------------------
 
@@ -1408,7 +1486,15 @@ def main(argv=None) -> int:
         sp.add_argument("slug")
         sp.add_argument("profile", nargs="?")
         sp.add_argument("--check-prefix", action="store_true")
+    cp = sub.add_parser("commit", help="git commit + push this pack's folder only")
+    cp.add_argument("slug")
+    cp.add_argument("--no-push", action="store_true")
     a = p.parse_args(argv)
+
+    if a.cmd == "commit":
+        res, rc = commit_pack(a.slug, push=not a.no_push)
+        print(json.dumps(res, indent=2, ensure_ascii=False))
+        return rc
 
     if a.cmd == "profiles":
         act = active_profiles()
