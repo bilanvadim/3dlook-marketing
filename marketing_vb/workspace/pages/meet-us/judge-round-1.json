@@ -1,0 +1,27 @@
+{
+  "round": 1,
+  "date": "2026-11-02",
+  "judge": "fresh general-purpose subagent, event-page scorecard (gate-reports.md)",
+  "result": {
+    "scores": {
+      "event_facts": 13,
+      "claims_discipline": 12,
+      "conversion": 14,
+      "one_screen_one_job": 11,
+      "human_copy": 6,
+      "register_vocabulary": 8,
+      "technical_placement": 7
+    },
+    "total": 71,
+    "hard_fails": [
+      "[PLACEHOLDER] markers left in the page: [MAP] plus the CES exhibitor directory link (Variant A), the HubSpot Meetings embed (Variants A and B), the CES promo code and the CES registration link (Variant A free-pass block)"
+    ],
+    "lowest": "human_copy",
+    "one_fix": "Replace every [MAP]/[PLACEHOLDER] marker with its live value: the CES exhibitor directory URL showing booth 55630, the HubSpot Meetings booth embed (A) and the sales demo embed (B), and the promo code and registration URL from the Exhibitor Dashboard. Until the code arrives, take the 'No CES badge yet?' block off the page, and cut the unverified 2026 badge pickup sentence from it."
+  },
+  "applied_after_round": [
+    "Cut the unverified badge pick-up sentence (page.md, page.html, fact-sheet, open-items)",
+    "TODO 1: no promo code by launch -> remove the pass block"
+  ],
+  "not_applied": "Placeholders need external inputs (TODO blockers 1-4, 6). Round 2 runs with a NEW judge once they are filled, before publishing."
+}
