@@ -1,0 +1,159 @@
+(1/5) 1.5 Перелінковка: що і куди додати (перевірено на живому сайті 30.10)
+
+Стан: з 11 пріоритетних постів контекстне посилання має лише один (top-7, зі статті про GLP-1 muscle loss). Нижче 32 посилання: 29 на ці 11 постів + 3 на ROI-статтю, яку переопублікували сьогодні. Згруповано за статтею-джерелом: відкрити статтю в редакторі й додати всі її посилання за один захід.
+
+Як читати: у [дужках] слова, які вже є в тексті. Їх виділити й поставити посилання. «ДОДАТИ» = вставити нове речення (таких 5). Без UTM, без nofollow, у тій самій вкладці.
+
+⏸ СПОЧАТКУ ТЕКСТ. Три цілі мають формулювання, на які не можна вести трафік:
+• fit3d-vs-3dlook, блок «Performance Metrics»: «Weight prediction: 96-97% accuracy with 3.5% average error», «BMI prediction: 89%…», «95% repeatability», «Over 1 million data points per scan». 96–97% у нас — це точність обмірів проти рулетки, а не ваги. Замінити на канон: «Repeatability testing used a real-world customer dataset with five scans per participant. For most of the evaluated measurements, typical scan-to-scan differences remained below 1 cm.» + «A separate validation compared FitXpress measurements with expert pattern-maker tape measurements. Across the evaluated body measurements, reported accuracy was approximately 96-97%, with a typical absolute error of 1.5-2.0 cm depending on the body part. Detailed methodology is available under a non-disclosure agreement.» + посилання на mobile-body-scanning-accuracy.
+• 3d-body-scanning-apps-market-analysis…, блок про 3DLOOK: «under 30 seconds» → «under 45 seconds»; «96-97% measurement accuracy with 95%+ repeatability rates» → той самий канон; прибрати «while maintaining clinical-grade precision».
+• breast-cancer-related-lymphedema…: «can be a cost-effective BCRL detection solution» → «can offer a cost-effective way to track limb measurements between clinic visits» (FitXpress нічого не детектує).
+Посилання з позначкою ⏸ ставити після цих правок.
+
+Ще одна м'яка правка, не блокує: у 3d-body-scanning H2 «Health Risk Assessment and Early Detection» → «Health-related body measures over time», а «can identify concerning trends early» → «shows trends a coach or clinician can review».
+
+=====
+
+(2/5) 📄 https://3dlook.ai/content-hub/ai-in-fitness-industry/  (фітнес-хаб)
+1. розділ «Progress tracking: scan-to-scan comparison». ДОДАТИ нове речення в кінці абзацу, що починається «Weight is a composite number.»:
+   «[Visible abs] are a common example: whether they show depends on body fat level and where fat sits, not on scale weight.»
+   → https://3dlook.ai/content-hub/visible-abs-myths-measurable-outcomes-ai-driven-3d-body-scanning/  [visible abs]
+2. розділ «Fitness apps track activity well. Tracking body change is harder»:
+   «Scale weight can [fluctuate with hydration, food intake, time of day], and hormone-related fluid changes.»
+   → https://3dlook.ai/content-hub/the-enormous-impact-of-daily-physiological-changes-on-the-accuracy-of-our-body-measurements/  [daily body changes]
+3. розділ «Structured body data: the foundation layer»:
+   «Body-composition estimates ([body fat percentage], lean mass, fat mass)»
+   → https://3dlook.ai/content-hub/body-fat-percentage-men-women-ai-3d-scanning-goals/  [body fat % men & women]
+4. розділ «Personalization: body data as additional context»:
+   «A change in estimated lean mass, for example, may prompt a coach to review nutrition, [training load], recovery, and measurement conditions before deciding whether to adjust the program.»
+   → https://3dlook.ai/content-hub/body-composition-activities-exercises-training-aesthetics-future-mobile-progress-tracking/  [body composition exercises]
+
+📄 https://3dlook.ai/content-hub/ai-body-data-health-hub/  (головний health-хаб)
+5. розділ «Explore verified body data by health program»:
+   «Programs built around GLP-1 medications need to [show change beyond a single number on the scale].»
+   → https://3dlook.ai/content-hub/top-7-remote-body-composition-tools-glp-1-clinics/  [top-7 tools GLP-1]
+
+📄 https://3dlook.ai/content-hub/the-potential-of-ai-in-telehealth/  (telehealth-хаб)
+6. розділ «Where AI fits in remote-care workflows»:
+   «Standardized capture and clear documentation can [help remote-monitoring workflows scale] while maintaining a more consistent basis for review.»
+   → https://3dlook.ai/content-hub/accuracy-drives-roi-digital-health/  [ROI (оновлена 30.10)]
+
+📄 https://3dlook.ai/content-hub/glp-1-market/  (GLP-1 хаб)
+7. розділ «How the GLP-1 Care Ecosystem Is Evolving»:
+   «Across these models, [recurring progress tracking] requires a consistent capture process, longitudinal records, and appropriate access for the teams responsible for patient or program review.»
+   → https://3dlook.ai/content-hub/top-7-remote-body-composition-tools-glp-1-clinics/  [top-7 tools GLP-1]
+8. розділ «The Infrastructure Challenge Created by Market Growth». ДОДАТИ нове речення в кінці абзацу, що починається «The relationship between visible progress, engagement, and retention is examined in Vis…»:
+   «The staff time behind that tracking, and how to model its cost, is covered in [accuracy and digital health ROI].»
+   → https://3dlook.ai/content-hub/accuracy-drives-roi-digital-health/  [ROI (оновлена 30.10)]
+
+=====
+
+(3/5) 📄 https://3dlook.ai/content-hub/beyond-bmi-business/
+9. без підзаголовка (знайти через Ctrl+F):
+   «Research investigating BMI accuracy found that whereas only 36% of participants were classified as obese by BMI, close to 3 in 4 were considered obese according to measures of [total body fat percentage].»
+   → https://3dlook.ai/content-hub/body-fat-percentage-men-women-ai-3d-scanning-goals/  [body fat % men & women]
+10. розділ «Business Impact: Multi-Modal Success in the Modern Market»:
+   «Instead of seeing only modest weight changes that may not reflect significant body composition improvements, clients can observe reductions in visceral fat, increases in muscle mass, and [improvements in body fat percentage].»
+   → https://3dlook.ai/content-hub/body-fat-percentage/  [body fat % for clients]
+11. розділ «Transforming Weight Loss Outcomes Through Precision Measurement»:
+   «Adjust [exercise programming] to preserve muscle while optimizing fat loss»
+   → https://3dlook.ai/content-hub/body-composition-activities-exercises-training-aesthetics-future-mobile-progress-tracking/  [body composition exercises]
+
+📄 https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/
+12. розділ «Why camera-roll uploads provide limited verification»:
+   «The operational effect of these limitations increases as application volume and [manual-review requirements grow].»
+   → https://3dlook.ai/content-hub/accuracy-drives-roi-digital-health/  [ROI (оновлена 30.10)]
+
+📄 https://3dlook.ai/content-hub/ai-body-scanners-vs-dexa-scans/
+13. розділ «Decision framework»:
+   «[Hardware scanners] support structured measurement workflows when users are on-site.»
+   → https://3dlook.ai/content-hub/fit3d-vs-3dlook/  [Fit3D vs 3DLOOK] ⏸ після правки цілі (див. повідомлення 1)
+14. розділ «What FitXpress and AI body scanners do well»:
+   «The same workflow underpins [remote body composition tracking] deployments across digital health programs, such as telehealth, GLP-1, and metabolic programs.»
+   → https://3dlook.ai/content-hub/top-7-remote-body-composition-tools-glp-1-clinics/  [top-7 tools GLP-1]
+
+📄 https://3dlook.ai/content-hub/lean-body-mass-vs-muscle-mass/
+15. без підзаголовка (знайти через Ctrl+F):
+   «[These water fluctuations] account for most rapid changes in LBM measurements that clients often mistake for muscle gains.»
+   → https://3dlook.ai/content-hub/the-enormous-impact-of-daily-physiological-changes-on-the-accuracy-of-our-body-measurements/  [daily body changes]
+16. розділ «Practical Applications for Fitness Professionals»:
+   «Clients with high total LBM but low muscle mass percentage need strength training emphasis, while those with appropriate muscle mass but [excess body fat] benefit from metabolic approaches that preserve muscle while reducing fat.»
+   → https://3dlook.ai/content-hub/body-fat-percentage/  [body fat % for clients]
+
+📄 https://3dlook.ai/content-hub/remote-body-measurement-online-fitness-coaching/
+17. розділ «The measurement problem in online fitness coaching programs»:
+   «Body weight [varies with hydration, food intake, time of day], and the scale used.»
+   → https://3dlook.ai/content-hub/the-enormous-impact-of-daily-physiological-changes-on-the-accuracy-of-our-body-measurements/  [daily body changes]
+18. розділ «What remote body measurement provides»:
+   «Body-composition estimates, including [body fat percentage], lean body mass, and fat mass»
+   → https://3dlook.ai/content-hub/body-fat-percentage/  [body fat % for clients]
+
+=====
+
+(4/5) 📄 https://3dlook.ai/content-hub/body-fat-percentage-men-women-ai-3d-scanning-goals/
+19. розділ «Reverse Engineering Body Composition»:
+   «Fitness specialists and clinicians can “reverse engineer” [a client’s desired aesthetic] and determine the ideal body fat percentage for women or men to achieve their target loo…»
+   → https://3dlook.ai/content-hub/visible-abs-myths-measurable-outcomes-ai-driven-3d-body-scanning/  [visible abs]
+20. розділ «Why Traditional Measurement Methods Fail»:
+   «Body fat percentage estimates generated through [AI-powered 3D body scanning] are predictive models.»
+   → https://3dlook.ai/content-hub/3d-body-scanning/  [3D body scanning]
+
+📄 https://3dlook.ai/content-hub/ai-body-data-wellness-platforms/
+21. розділ «Turning comparison into a useful wellness platform experience»:
+   «[Body fat percentage requires a particular context].»
+   → https://3dlook.ai/content-hub/body-fat-percentage-men-women-ai-3d-scanning-goals/  [body fat % men & women]
+
+📄 https://3dlook.ai/content-hub/wellness-rewards-verification-employers-insurers-using-ai-3d-body-scanning/
+22. без підзаголовка (знайти через Ctrl+F):
+   «[AI-driven 3D body scanning] can help verify eligibility and progress in a wellness rewards program.»
+   → https://3dlook.ai/content-hub/3d-body-scanning/  [3D body scanning]
+
+📄 https://3dlook.ai/content-hub/mobile-body-scanning-insurance-underwriting/
+23. розділ «Introduction»:
+   «[Mobile 3D body scanning] provides a practical support for addressing this evidence gap.»
+   → https://3dlook.ai/content-hub/3d-body-scanning/  [3D body scanning]
+
+📄 https://3dlook.ai/content-hub/skinny-fat-body-type/
+24. розділ «Skinny Fat vs. Toned»:
+   «Another case is when two people have similar body fat percentages, but one may [look noticeably fitter and toned] because of having developed muscle mass.»
+   → https://3dlook.ai/content-hub/visible-abs-myths-measurable-outcomes-ai-driven-3d-body-scanning/  [visible abs]
+
+📄 https://3dlook.ai/content-hub/body-fat-percentage/
+25. розділ «Why Body Fat Percentage Drives Client Success»:
+   «“Skinny fat” clients with normal weight but high body fat percentages need [strength training] with adequate nutrition to build muscle mass while maintaining or slightly reducing fat.»
+   → https://3dlook.ai/content-hub/body-composition-activities-exercises-training-aesthetics-future-mobile-progress-tracking/  [body composition exercises]
+
+📄 https://3dlook.ai/content-hub/body-scanning-technology-comparison/
+26. розділ «Where 3DLOOK Fits Best»:
+   «However, since the user has to travel to the device, wait for setup, and complete the scan in a controlled environment, [the full user journey of hardware scanning] is much longer.»
+   → https://3dlook.ai/content-hub/fit3d-vs-3dlook/  [Fit3D vs 3DLOOK] ⏸ після правки цілі (див. повідомлення 1)
+
+📄 https://3dlook.ai/content-hub/top-fitness-tech-companies/
+27. розділ «Final Thoughts». ДОДАТИ нове речення в кінці абзацу, що починається «Whether you’re looking to build strength, improve cardio, or enhance overall health, th…»:
+   «For the healthcare side of the market, see our overview of [top health tech companies].»
+   → https://3dlook.ai/content-hub/top-health-tech-companies/  [top health tech]
+
+=====
+
+(5/5) 📄 https://3dlook.ai/content-hub/3d-body-scanning/
+28. розділ «3D Body Scanning»:
+   «High-end options like [Fit3D] and Styku use specialized scanning booths with multiple sensors but require significant investment and dedicated space.»
+   → https://3dlook.ai/content-hub/fit3d-vs-3dlook/  [Fit3D vs 3DLOOK] ⏸ після правки цілі (див. повідомлення 1)
+29. розділ «3D Body Scanning»:
+   «The [3D body scanning market] offers various solutions with different methodologies, accuracy levels, and accessibility.»
+   → https://3dlook.ai/content-hub/3d-body-scanning-apps-market-analysis-and-innovation-benchmarks/  [apps market analysis] ⏸ після правки цілі (див. повідомлення 1)
+
+📄 https://3dlook.ai/content-hub/bia-scan/
+30. розділ «The Evolution Beyond BIA»:
+   «The [3D body scanning market] is projected to reach $2.8 billion by 2027, driven by solutions addressing BIA’s core limitations.»
+   → https://3dlook.ai/content-hub/3d-body-scanning-apps-market-analysis-and-innovation-benchmarks/  [apps market analysis] ⏸ після правки цілі (див. повідомлення 1)
+
+📄 https://3dlook.ai/content-hub/ai-healthcare-ai-used-today-key-applications-real-world-examples-industry-impact/
+31. розділ «Business Impact of AI in Healthcare». ДОДАТИ нове речення в кінці абзацу, що починається «Driving efficiency gains, cost savings, and new revenue opportunities, the economic imp…»:
+   «For profiles of companies working in this space, see our overview of [top health tech companies].»
+   → https://3dlook.ai/content-hub/top-health-tech-companies/  [top health tech]
+32. розділ «Benefits of AI in Healthcare». ДОДАТИ нове речення в кінці абзацу, що починається «Personalized patient care: AI expands medical care capacity beyond traditional hospital…»:
+   «One example is [tracking limb measurements at home after breast cancer treatment].»
+   → https://3dlook.ai/content-hub/breast-cancer-related-lymphedema-explained-3d-body-scanning-can-transform-early-detection-monitoring-care-management/  [BCRL] ⏸ після правки цілі (див. повідомлення 1)
+
+Після всіх правок напиши, і я перерахую сирітські пости тим самим краулом.
