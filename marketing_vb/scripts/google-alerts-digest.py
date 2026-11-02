@@ -20,13 +20,17 @@ HOW
    memory leaks in) keeps what is really about the watched entity or the market and drops
    namesakes. It returns a clean title, the source and a one-line note in English.
 4. One message to the Slack channel (`oo connector run slack post_message`, Vadim's identity),
-   grouped: 3DLOOK / people / products / competitors / market. Nothing relevant = no post.
+   grouped: 3DLOOK / people / products / clients / competitors / market. Nothing relevant = no post.
    Everything in Slack is English (Vadim 2026-10-09: «все має бути на англ в слаці»).
    The same digest goes as an HTML email from his mailbox to --email / $GOOGLE_ALERTS_EMAIL_TO
    (Vadim 2026-10-09: «давай ще Каті Галіч на пошту відправляти»), after the Slack post, so a
    failed Slack post never leaves a sent email behind to be duplicated on the retry.
 5. Failures go to Vadim's Telegram. Mail older than the lookback is never touched, and so is
    the inbox: the script only reads.
+
+Clients (Kate Kondakova 2026-11-02: «наши крупные клиенты? типа берлингтон и сафари»): the ones
+with a public case study are in ALERTS below. A client whose name may not sit
+in this public repo lives in PRIVATE_ALERTS (private repo): its alerts and its line for the filter.
 
 Posted = processed. Without --post the script prints and marks nothing. Analyses are cached in
 the state file, so a retry after a failed post does not pay twice.
@@ -76,6 +80,9 @@ FALLBACK_MODEL = "opus"
 OWN_HOSTS = ("3dlook.ai", "3dlook.me")
 KEEP_DAYS = 60                                       # state pruning
 SILENT_DAYS = 7                                      # no alert mail this long = alerts broken
+# {"alerts": [[category, query, hl], ...], "watch": "filter line(s) for those clients"}
+PRIVATE_ALERTS = Path(os.environ.get("GOOGLE_ALERTS_PRIVATE") or os.path.expanduser(
+    "~/3dlook-marketing-private/ops/google-alerts-digest/private-alerts.json"))
 
 # The alerts Vadim keeps at google.com/alerts. Defaults there are right for all but the
 # Cyrillic one (Language → Any). Edit here, then `links`, then create the new ones by hand.
@@ -88,6 +95,12 @@ ALERTS = [
     ("product", '"FitXpress"', "en"),
     ("product", '"Mobile Tailor"', "en"),
     ("product", '"wrist measurement" OR "wrist sizing" OR "wrist sizer" app OR smartphone OR API OR AI OR online', "en"),
+    ("client", '"Safariland"', "en"),
+    ("client", '"Burlington Medical"', "en"),
+    ("client", '"Generation Tux"', "en"),
+    ("client", '"Jim\'s Formal Wear"', "en"),
+    ("client", '"UK Meds"', "en"),
+    ("client", 'Yazen obesity OR GLP-1 OR "weight loss" OR clinic', "en"),
     ("competitor", '"Prism Labs"', "en"),
     ("competitor", '"Bodygram"', "en"),
     ("competitor", '"Size Stream" OR "SizeStream"', "en"),
@@ -104,7 +117,16 @@ ALERTS = [
 ]
 
 SECTIONS = [("company", "3DLOOK"), ("people", "People"), ("product", "Products"),
-            ("competitor", "Competitors"), ("market", "Market")]
+            ("client", "Clients"), ("competitor", "Competitors"), ("market", "Market")]
+
+
+def private_alerts() -> dict:
+    """Alerts and filter lines kept out of this public repo. Missing file = public list only."""
+    try:
+        d = json.loads(PRIVATE_ALERTS.read_text(encoding="utf-8"))
+    except OSError:
+        return {"alerts": [], "watch": ""}
+    return {"alerts": [tuple(x) for x in d.get("alerts", [])], "watch": (d.get("watch") or "").strip()}
 
 
 def now_utc() -> datetime:
@@ -238,6 +260,13 @@ smartphone photos via API, mapped to a brand's size chart; for jewelry, bracelet
 wearables; it has no product name of its own). "Mobile Tailor" as a generic tailoring service \
 is a namesake; medical wrist studies (carpal tunnel, wrist circumference as a health marker) \
 are noise for the wrist product.
+- Clients: Safariland (body armor, PPE and public-safety uniforms), Burlington Medical \
+(radiation protection aprons), Generation Tux and Jim's Formal Wear (formalwear rental), \
+UK Meds (UK online pharmacy), Yazen (Nordic obesity and weight-loss clinic; NOT people named \
+Yazen).{private_watch} For clients keep company news: funding, M&A, leadership changes, \
+launches, partnerships, contracts, expansion, layoffs, regulatory or legal action, and anything \
+on fit, sizing or measuring. Drop shop and product listings, deals and coupons, user reviews, \
+forum threads and how-to content.
 - Direct competitors: Prism Labs (mobile body composition scanning, NOT other "Prism" \
 companies), Bodygram, Size Stream.
 - Adjacent: Spren (body composition app, NOT the fantasy-novel "spren"), Styku, Fit3D, InBody \
@@ -255,8 +284,8 @@ content is noise.
 development (launch, funding, partnership, regulation, study, notable case) in the areas above.
 - 3DLOOK's own job ads and its own social posts: keep=false (drop_reason "own content").
 - Competitor job ads: keep=true, category competitor, note says what role they hire for.
-- category: company | people | product | competitor | market.
-- entity: the watched name the item is about (e.g. "Bodygram"), or "" for market items.
+- category: company | people | product | client | competitor | market.
+- entity: the watched name the item is about (e.g. "Bodygram", "Safariland"), or "" for market items.
 - title: the article title as published, cleaned of site suffixes like " - YouTube" or \
 " | LinkedIn". source: the publication or site name.
 - note: English, at most 20 words: what happened and, if not obvious, why it matters for 3DLOOK. \
@@ -299,7 +328,9 @@ def claude_json(prompt: str, model: str) -> tuple[dict, float]:
 def analyze(items: list[dict], model: str) -> dict[str, dict]:
     listing = "\n\n".join(f"id: {i['key']}\nalert: {i['query']} ({i['kind']})\nurl: {i['url']}\n"
                           f"text: {i['text']}" for i in items)
-    prompt = TASK.format(overview=OVERVIEW.read_text(encoding="utf-8"), items=listing)
+    watch = private_alerts()["watch"]
+    prompt = TASK.format(overview=OVERVIEW.read_text(encoding="utf-8"), items=listing,
+                         private_watch=f"\n{watch}" if watch else "")
     last = None
     for attempt, m in enumerate([model, model, FALLBACK_MODEL]):
         if attempt:
@@ -336,7 +367,7 @@ def digest(items: list[dict], an: dict[str, dict], day: str) -> tuple[str, list,
                        key=lambda i: an[i["key"]].get("entity", ""))
         if group:
             groups.append((label, [(i, an[i["key"]], an[i["key"]].get("entity", "")
-                                    if cat in ("competitor", "people") else "") for i in group]))
+                                    if cat in ("client", "competitor", "people") else "") for i in group]))
     return head, groups, len(items) - n
 
 
@@ -374,7 +405,8 @@ def render_email(items: list[dict], an: dict[str, dict], day: str) -> tuple[str,
         out.append("</ul>")
     foot = f"Filtered out as noise: {dropped}. " if dropped else ""
     out.append(f'<p style="color:#777;font-size:12px;margin-top:18px">{foot}'
-               "Daily digest of Google Alerts on 3DLOOK, our people, products, competitors and market.</p>")
+               "Daily digest of Google Alerts on 3DLOOK, our people, products, clients, competitors "
+               "and market.</p>")
     out.append("</div>")
     return head, "".join(out)
 
@@ -522,7 +554,7 @@ def cmd_run(a) -> int:
 
 
 def cmd_links(a) -> int:
-    for cat, q, hl in ALERTS:
+    for cat, q, hl in ALERTS + private_alerts()["alerts"]:
         url = "https://www.google.com/alerts?" + urllib.parse.urlencode({"q": q, "hl": hl})
         print(f"{cat:<11} {q}\n            {url}")
     return 0
@@ -536,6 +568,8 @@ def cmd_status(a) -> int:
     print(f"last processed: {max(st['messages'].values(), default='—')}")
     print(f"channel: {CHANNEL or '— (set GOOGLE_ALERTS_SLACK_CHANNEL or pass --channel)'}")
     print(f"email: {EMAIL_TO or '— (set GOOGLE_ALERTS_EMAIL_TO or pass --email)'}")
+    pa = private_alerts()["alerts"]
+    print(f"private alerts: {len(pa)} from {PRIVATE_ALERTS}" if pa else f"private alerts: — ({PRIVATE_ALERTS})")
     return 0
 
 
