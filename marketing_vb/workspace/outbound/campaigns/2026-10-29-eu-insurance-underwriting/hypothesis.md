@@ -248,6 +248,15 @@ Vadim approved the hypothesis after the QC fix round (QC 15/20, report `workspac
 12. **Reinsurer market teams outside the head-office country FAIL,** count reported at step 4; a country row only on his OK.
 13. **People source** (carried from the UK twin): Sales Navigator title pull with the geography filter first, then an Apollo top-up with the credit count named before `enrich` if it exceeds 100.
 
+## Vadim's decisions 2026-11-02 (step 4 checkpoint)
+
+Taken at the validate checkpoint (`icp-validation-summary.md`, opus QC 15/20 then a coordinator fix round), all four recommended options:
+
+1. **SEND list** = the 127 PASS after the QC fix round, plus five WEAK held only for an empty profile: Erik Guthoerl (CosmosDirekt), Christian Langenstrass (Hannoversche), Ralf Woltmann (LV 1871), Andre Rozemuller (a.s.r.), Carina Betz (Gen Re). The eight a.s.r. medisch adviseurs with no visible line stay WEAK.
+2. **Open question 12, reversed for four rows:** country rows `Swiss Re Germany` (Germany), `SCOR Germany` (Germany), `SCOR Ireland` (Ireland) and `Hannover Re Ireland` (Ireland) for the groups' L&H market teams. People join by their export cell relabelled by location (coordinator, as for RGA). Location rule for these rows = the row's country; the card's other rules apply unchanged. `record` registers the four suffixed slugs for olena; bare parents and US entities stay open for Nick. Other branches (Munich Re Ireland, SCOR Netherlands, Swiss Re Netherlands) stay FAIL.
+3. **Trims:** group architects and the group CTO without L&H scope out (Niall Sweeney, Paul Notté de Vaupleux, Alexandre Hudelot, Jean-Philippe Rigal, Achraf Ben Abdallah); Irish Life `referral` capped at four (kept Shay Browne, Christopher Curran, Kelvin Gillen, Alan Q.).
+4. **No Sales Navigator title re-pull** by Hlib: the campaign runs on this list. NN, Achmea, Die Bayerische, Swiss Life Deutschland and Irish Life stay without an underwriting owner; Allianz Nederland Leven, Dialog, Europa, HDI and RGA Ireland stay without people.
+
 ## Validation criteria (Step 2 will check)
 
 - **Companies.** 32 named candidates (34 with Open question 2's default); target 26-30 IN. Fewer than 22: stop and report to Vadim; never widen on your own (reserve list, Belgium, France, brokers, evidence suppliers) or add companies to reach a number. Each insurer writes new individually underwritten life, disability or protection business in its market in 2026 (product page, broker site or 2026 trade press); each reinsurer row is the group's L&H head-office entity in the row's country; each platform is used by insurers at the point of sale.

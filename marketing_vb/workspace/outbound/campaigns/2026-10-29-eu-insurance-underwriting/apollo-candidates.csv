@@ -1,0 +1,976 @@
+apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,last_refreshed_at,status
+652fb24f58e128000186aac3,Lauren,Mc***k,Head of Health & Protection Proposition,Irish Life,irishlife.ie,Irish Life Assurance,2026-10-23T14:42:06.000+00:00,candidate
+54a6e5fd7468696de7cd5c02,Siobhan,Bu***y,Head of Product and Proposition - Health and Protection Lines,Irish Life,irishlife.ie,Irish Life Assurance,2026-10-23T14:06:25.000+00:00,in-sales-nav
+54a3c83d7468692fa2306d12,Marian,Co***y,Head of Protection and Health Propositions at Irish Life Employer Solutions,Irish Life,irishlife.ie,Irish Life Assurance,2026-10-08T12:47:31.910+00:00,in-sales-nav
+60efe8424727c70001c0c69a,Ross,Bl***d,"Head of Digital, Strategy & Transformation",Irish Life,irishlife.ie,Irish Life Assurance,2026-10-23T05:31:00.000+00:00,in-sales-nav
+66fe4b4f34b8ca0001b267bd,Christopher,Cu***n,Head of Research and Innovation Partnerships,Irish Life,irishlife.ie,Irish Life Assurance,2026-10-07T15:46:18.000+00:00,in-sales-nav
+54a2dc8974686930c215b542,Laura,Mo***n,Head of Products & Propositions,Irish Life,irishlife.ie,Irish Life Assurance,2026-10-06T23:44:15.082+00:00,in-sales-nav
+611bc99f9243b2000182e805,Kyle,Mc***a,Underwriter,Irish Life,irishlife.ie,Irish Life Assurance,2026-10-06T10:08:11.000+00:00,persona-out
+6128534e8c0db50001c7081d,Conor,Br***e,Executive Underwriter,Irish Life,irishlife.ie,Irish Life Assurance,2026-09-08T14:34:48.000+00:00,persona-out
+612a805798cd14000199a699,Felicity,Ca***l,Underwriter,Irish Life,irishlife.ie,Irish Life Assurance,2026-10-23T07:23:24.000+00:00,persona-out
+5fa18f0a997a870001d29545,Aisling,Qu***n,Scheme Underwriter,Irish Life,irishlife.ie,Irish Life Assurance,2026-09-23T11:55:25.000+00:00,persona-out
+616a40e2c5aa0b00015e3950,David,Mc***n,Underwriter,Irish Life,irishlife.ie,Irish Life Assurance,2026-10-23T15:29:19.000+00:00,persona-out
+68146bbc5676c600018688e0,Lee,Ba***t,Underwriter,Irish Life,irishlife.ie,Irish Life Assurance,2026-10-23T21:39:24.000+00:00,persona-out
+683d3aadfd6f4d00016acb9e,Evelyn,Mo***y,Life and Disability Underwriter,Irish Life,irishlife.ie,Irish Life Assurance,2026-10-06T01:21:28.000+00:00,persona-out
+673add759a23c5000109531c,Michael,Ve***y,Head of Protection Proposition,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-22T13:09:54.284+00:00,candidate
+54a437d77468692fa2acf635,Laura,Co***n,Head of New Business,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-09T21:54:34.554+00:00,candidate
+60f0ff0e1d18b300010d4a75,Marc,Gu***e,Technical Director Underwriting GI EMEA,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-09-22T14:54:40.817+00:00,persona-out
+6139ec89d516cd0001abe8e8,Siobhan,Co***t,Chief Underwriting Officer Ireland GI,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-22T03:14:23.000+00:00,persona-out
+6782d02ccd59d70001fcece8,Shane,Fa***y,Head of Underwriting Analytics,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-12T18:51:14.000+00:00,candidate
+54a815a5746869705af91960,Eamon,Hu***y,Commercial Underwriting Manager,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-05T17:29:11.000+00:00,persona-out
+66fc1114373a2900013a4647,Gonzalo,An***s,Global Technical Underwriting Manager,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-21T10:05:35.000+00:00,persona-out
+54a2e18c74686935bebabd43,Colette,Ho***n,Head of Underwriting at Zurich Life Assurance plc (Ireland),Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-26T02:47:38.139+00:00,candidate
+54a8a7a47468692d1c110f03,Fiona,Di***n,Head of Personal Lines Underwriting,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-09T14:56:28.755+00:00,persona-out
+54a5cd867468693442c183a9,Cormac,Fr***y,Head of Data Protection,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-26T08:40:29.000+00:00,candidate
+600ac93ac26a890001643f10,Niall,Wa***h,Head of Business Innovation,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-23T02:46:10.000+00:00,candidate
+54a498e87468693b8c05ba53,Liam,Du***n,Head of Personal Product Distribution,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-06T01:23:44.000+00:00,persona-out
+66f5496ae6a57100018eb980,Caitlin,Co***e,"Head of Compliance Innovation and Excellence, EMEA Regional Compliance",Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-02T02:33:58.554+00:00,persona-out
+5dbb7a0e920b440001f37cf4,Helen,De***y,Head of Personal Lines Product Management (ad Interim),Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-13T15:36:15.000+00:00,persona-out
+60011e9447893f000123905e,Shane,Mu***n,Financial Lines Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-20T08:15:46.000+00:00,persona-out
+61fd1296c41aac0001211887,Aisling,Mu***y,Business Lines Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-18T23:19:23.000+00:00,persona-out
+6480e470e9e0dc0001512e07,Diane,Mc***e,Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-03T10:42:41.978+00:00,persona-out
+60ca68ed58803d000116e342,Jason,O'***l,Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-23T14:38:04.000+00:00,persona-out
+633057978e0e8e0001e8c564,Michael,Ph***n,Personal Lines Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-09-22T11:24:36.000+00:00,persona-out
+671cd35863124c0001591500,Genevieve,Ke***e,Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-06T06:38:08.000+00:00,persona-out
+61388c06bf5b0500012aa0f1,Tammy,Si***y,Large Case Team Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-23T08:35:50.000+00:00,persona-out
+6198b2823af4170001abd458,Deirdre,Co***s,Business Lines Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-09T09:01:30.000+00:00,persona-out
+55705f467369640c95b37300,Pauline,Po***r,Agri Product Underwriting Specialist,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-23T18:12:38.000+00:00,persona-out
+62f7c1dac9142e0001cc5330,Patrick,Ba,Agri Market Facing Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-21T20:08:53.000+00:00,persona-out
+658c107c35ebdf000124cab1,Lisa,Mu***y,Business Motor Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-09-12T04:20:26.000+00:00,persona-out
+54a44e817468693209c34e3d,Sinead,Ga***y,Agri Market Facing Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-20T14:09:22.000+00:00,persona-out
+66b44cce532bef000121f7bf,Aisling,Mdi,Business Lines Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-09-12T11:41:37.000+00:00,persona-out
+612bd6d792885a0001b19ee2,Roy,Nu***n,Personal Lines Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-09-13T07:33:47.000+00:00,persona-out
+697fefc2eed19b00011d4e14,Chloe,Ma***y,Market Face Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-23T03:53:12.000+00:00,persona-out
+6599078959c0c0000135e6c3,Alison,Ms***c,Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-23T07:55:02.000+00:00,persona-out
+6659713a48ea3d000189abd5,Kieran,Sl***s,Business Lines Underwriter - Mid-Market,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-05T21:06:55.000+00:00,persona-out
+61679df53cf7ae00019759ef,Gerry,Mc***n,Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-09T05:15:01.000+00:00,persona-out
+691eb92a65a0200001bf7b41,Nicky,Ro***e,Agri Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-04T13:09:44.000+00:00,persona-out
+642485a6cd06a00001fdec4f,Lisa,O'***d,Business Lines Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-21T22:33:36.000+00:00,persona-out
+6481b21ebecc9d0001fd3d94,Rebecca,Po***r,Agri Market Facing Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-20T20:57:19.000+00:00,persona-out
+645bab35d3b10a0001d1cfa0,Sarah,O'***l,Commercial Lines Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-05T01:43:20.000+00:00,persona-out
+6739c53ae6cf06000124e921,Clodagh,Wh***e,Personal Lines Market Facing Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-06T11:47:49.000+00:00,persona-out
+63b3dcfc3445e30001da6d84,Gary,Mu***y,Business Lines Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-23T22:09:53.000+00:00,persona-out
+614e96869066db000134276d,Jamie-Lee,Re***d,Agri Market Facing Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-19T03:09:54.000+00:00,persona-out
+64283f6b8de9d20001184c59,Jimmy,Do***e,Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-09-10T10:06:24.000+00:00,persona-out
+5f61c916b9f77f00010a2cf0,Susan,Gi***n,Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-23T23:49:50.000+00:00,persona-out
+5ba616bff874f7585e05665a,Colin,De***n,Agri Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-23T22:18:27.000+00:00,persona-out
+69c365ff7443ee000106b029,Jamie,Fu***g,Personal Lines Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-05T07:17:52.111+00:00,persona-out
+6867a51c166138000110d059,Michael,Ke***g,Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-20T06:34:20.000+00:00,persona-out
+60c6682782366f0001679466,Colette,O'***l,Market Underwriter,Zurich Insurance,zurichlife.ie,Zurich Life Ireland,2026-10-23T07:59:56.000+00:00,persona-out
+66fa5413fc0afa0001cbd412,Ronan,Sc***y,Head of Operational Risk and Data Protection Officer,New Ireland Assurance,newireland.ie,New Ireland Assurance,2026-10-18T18:03:58.000+00:00,candidate
+54a50d6874686938acf22779,Noel,Fi***n,Chief Underwriter,New Ireland Assurance,newireland.ie,New Ireland Assurance,2026-10-05T06:40:03.000+00:00,candidate
+68d51fe7d0a8600001c9cac1,Shane,Fe***n,Deputy Data Protection Officer,New Ireland Assurance,newireland.ie,New Ireland Assurance,2026-10-24T21:34:02.561+00:00,candidate
+57c6a980a6da9817f1b5e314,Rachael,Wi***s,Senior Development Underwriter,New Ireland Assurance,newireland.ie,New Ireland Assurance,2026-10-20T21:17:03.000+00:00,persona-out
+55714f4a73696457b7687b00,Paul,Co***y,Head of Product,New Ireland Assurance,newireland.ie,New Ireland Assurance,2026-10-07T07:42:37.000+00:00,in-sales-nav
+65aa885eb9be280001706f95,Stephen,Do***y,Head of Product Delivery,New Ireland Assurance,newireland.ie,New Ireland Assurance,2026-10-24T03:43:57.000+00:00,in-sales-nav
+6873c8ae5cf2f5000125b194,Jonathan,Du***y,Head of Business Support & Innovation,New Ireland Assurance,newireland.ie,New Ireland Assurance,2026-10-20T16:31:03.000+00:00,persona-out
+61ffd6496d9f0c0001f77e7a,Alison,Le***e,Medical Underwriter,New Ireland Assurance,newireland.ie,New Ireland Assurance,2026-10-07T12:22:05.540+00:00,persona-out
+54a5f7ad7468692abfe4afb7,Terri,Wi***s,Life and Disability Underwriter,New Ireland Assurance,newireland.ie,New Ireland Assurance,2026-10-18T17:37:18.000+00:00,persona-out
+6167e12df49ac50001533eb3,Audrey,En***s,Underwriter,New Ireland Assurance,newireland.ie,New Ireland Assurance,2026-10-17T13:32:18.260+00:00,persona-out
+68f954709a8959000106e751,Mark,Cr***e,Underwriting Manager Philosophy & Innovation,Aviva,aviva.ie,Aviva Ireland,2026-10-25T18:05:52.610+00:00,candidate
+5c6fe44880f93eb3fad590d5,Michelle,Ly***s,Data Protection Officer,Aviva,aviva.ie,Aviva Ireland,2026-10-23T16:43:42.000+00:00,candidate
+68d60bf368f49d0001cf15a7,Stephanie,Fo***r,Data Protection Officer,Aviva,aviva.ie,Aviva Ireland,2026-10-04T20:13:34.000+00:00,candidate
+5ed65f89c069510001432a87,Karen,O'***y,Individual Protection Proposition Lead,Aviva,aviva.ie,Aviva Ireland,2026-09-23T10:37:26.000+00:00,candidate
+62283136241d490001e2d26d,Jean,La***n,Head of Underwriting,Aviva,aviva.ie,Aviva Ireland,2026-10-18T19:53:04.000+00:00,candidate
+54a5c09d7468692abf1c8aa5,Ger,La***n,Underwriting Manager,Aviva,aviva.ie,Aviva Ireland,2026-10-22T01:43:38.000+00:00,persona-out
+54a327517468693cdd755f58,Don,St***n,Digital Transformation Manager,Aviva,aviva.ie,Aviva Ireland,2026-10-07T02:54:05.000+00:00,persona-out
+54a3b2197468693676485d0b,Keith,Cu***m,Marine Underwriting Manager,Aviva,aviva.ie,Aviva Ireland,2026-10-21T22:07:35.000+00:00,persona-out
+5a7ae7d6a3ae61e78ab75305,Hazel,Ke***n,Construction Underwriting Manager,Aviva,aviva.ie,Aviva Ireland,2026-10-25T08:56:36.000+00:00,persona-out
+68607ddfaa4a0900010d0e67,Michelle,Fc***i,PI & Cyber Underwriting Manager,Aviva,aviva.ie,Aviva Ireland,2026-10-19T15:55:26.093+00:00,persona-out
+54a4cf967468692abf512965,Simone,O'***r,Management Liability & Crime – Deputy Underwriting Manager,Aviva,aviva.ie,Aviva Ireland,2026-10-21T20:09:14.725+00:00,persona-out
+6688c96c8ec13d000144262f,Matthew,Wi***n,Engineering Renewables & Legal Contingencies Underwriting Manager,Aviva,aviva.ie,Aviva Ireland,2026-10-17T17:07:26.000+00:00,persona-out
+54a7c6fd7468696de7661351,Derek,Sm***r,"Management Liability, Crime and FI Underwriting Manager",Aviva,aviva.ie,Aviva Ireland,2026-10-09T05:34:44.000+00:00,persona-out
+60f131f55f4a79000176038f,Celine,Ke***y,Underwriting Capability Manager,Aviva,aviva.ie,Aviva Ireland,2026-09-12T10:49:38.000+00:00,persona-out
+54a3ba147468692cf080ef0d,Pat,Sr***n,Underwriting Academy Capability Manager,Aviva,aviva.ie,Aviva Ireland,2026-09-10T11:57:16.000+00:00,persona-out
+60f00f1df5fa920001296770,Adele,Cu***n,Liability Underwriting & Portfolio Manager,Aviva,aviva.ie,Aviva Ireland,2026-10-19T03:13:41.000+00:00,persona-out
+66f6533e68121e000164467d,Margaret,Ev***y,Personal Lines Underwriting Solutions Manager,Aviva,aviva.ie,Aviva Ireland,2026-10-06T16:35:56.665+00:00,persona-out
+5e7d6c111310f80001200298,David,Lee,Scheme Underwriting Team Manager,Aviva,aviva.ie,Aviva Ireland,2026-10-06T01:50:38.000+00:00,persona-out
+61fe9793adc62e0001986d4e,Grainne,Gr***e,Personal Lines Underwriting Assistant Manager,Aviva,aviva.ie,Aviva Ireland,2026-09-10T12:58:59.000+00:00,persona-out
+54ec2fb87468694311298f61,Chloe,Ga***r,Personal Lines Underwriting Assistant Manager,Aviva,aviva.ie,Aviva Ireland,2026-09-14T06:23:34.000+00:00,persona-out
+63a85c239ab9b000013a4dac,Emma,Co***n,Agri Portfolio Manager & Commercial Underwriting Lead,Aviva,aviva.ie,Aviva Ireland,2026-10-20T08:16:30.000+00:00,persona-out
+61b4b0d0a3fce700010b9560,Jordan,La***y,Financial Lines Underwriter,Aviva,aviva.ie,Aviva Ireland,2026-10-27T02:47:20.853+00:00,persona-out
+5aaee447a6da98c45ff9bed0,Tom,Do***e,Commercial Motor Team Leader & Specialist Underwriter,Aviva,aviva.ie,Aviva Ireland,2026-10-19T09:11:14.000+00:00,persona-out
+645f81e41c88240001ed5ed1,Lewis,Ca***y,Speciality Lines Underwriter,Aviva,aviva.ie,Aviva Ireland,2026-10-23T06:20:40.000+00:00,persona-out
+57dbe8fea6da9868abe22cb9,Damian,Fa***l,Commercial Lines Underwriter,Aviva,aviva.ie,Aviva Ireland,2026-10-18T17:17:20.000+00:00,persona-out
+54a1822969702d939b93c901,Sylvia,Ha***n,Life and Disability Underwriter,Aviva,aviva.ie,Aviva Ireland,2026-10-23T03:26:57.000+00:00,persona-out
+5b1f34ada6da98e22674e868,Peter,Vi***t,Underwriter,Aviva,aviva.ie,Aviva Ireland,2026-10-04T19:56:41.000+00:00,persona-out
+57dd08d4a6da987aec1ee548,Deirdre,Wy***e,Underwriter,Aviva,aviva.ie,Aviva Ireland,2026-09-23T10:04:52.000+00:00,persona-out
+67d5b46cdca6db0001b03ac2,Mark,Wa***s,Underwriter,Aviva,aviva.ie,Aviva Ireland,2026-10-20T10:09:11.000+00:00,persona-out
+61e4275f39e33e0001f08238,Sukhbir,Sa***a,Personal Lines Underwriter,Aviva,aviva.ie,Aviva Ireland,2026-10-25T13:19:07.047+00:00,persona-out
+54c27db274686916393b3e9e,Pat,O'***y,Property Underwriter,Aviva,aviva.ie,Aviva Ireland,2026-10-04T14:05:42.000+00:00,persona-out
+615be1f84ca78100015969b3,Betty,Ev***s,Underwriter,Aviva,aviva.ie,Aviva Ireland,2026-10-05T16:39:50.000+00:00,persona-out
+69c35c372425c50001c20a41,David,To***v,Underwriter,Aviva,aviva.ie,Aviva Ireland,2026-09-18T05:39:46.000+00:00,persona-out
+54c179767468697af75f7414,Marcus,Sh***y,Commercial Lines Underwriter,Aviva,aviva.ie,Aviva Ireland,2026-09-08T09:30:27.000+00:00,persona-out
+636cb23b6b02b00001ee4e98,Laura,Ow***s,Commercial Lines Underwriter,Aviva,aviva.ie,Aviva Ireland,2026-10-04T14:27:33.000+00:00,persona-out
+5d44f967a3ae61736d9685dd,Fran,Ke***y,Commercial Lines Underwriter,Aviva,aviva.ie,Aviva Ireland,2026-10-20T01:59:33.000+00:00,persona-out
+63a40992444ff50001876393,Damien,Mc***s,Underwriter,Aviva,aviva.ie,Aviva Ireland,2026-10-28T01:38:45.812+00:00,persona-out
+6425c175fde18400019289d1,Anne,Mc***n,Underwriter,Aviva,aviva.ie,Aviva Ireland,2026-10-25T10:38:03.000+00:00,persona-out
+6954a61fa972b000016465b1,Cerys,Bo***d,Underwriter,Aviva,aviva.ie,Aviva Ireland,2026-10-23T12:33:08.000+00:00,persona-out
+5e5e6fb7be52310001ca1c96,Daniel,Co***y,Group Protection Scheme Underwriter,Aviva,aviva.ie,Aviva Ireland,2026-10-06T07:31:37.000+00:00,persona-out
+66667240bbef2b00013a2452,Emma,M,Commercial Lines Underwriter,Aviva,aviva.ie,Aviva Ireland,2026-09-15T08:03:01.000+00:00,persona-out
+62454f5fcd027900019d579b,Michael,Mu***n,Underwriter,Aviva,aviva.ie,Aviva Ireland,2026-10-23T07:50:35.000+00:00,persona-out
+6755cc1b63a1c70001d16f15,Gavin,Sh***y,E-Trade Underwriter,Aviva,aviva.ie,Aviva Ireland,2026-09-14T06:02:24.000+00:00,persona-out
+64300935d3d6c80001f69ad3,Gabriele,Ka***e,Underwriter Administrator,Aviva,aviva.ie,Aviva Ireland,2026-10-24T09:21:54.000+00:00,persona-out
+65d82a32ce4b050001fc17a3,Zaria,Bo***e,Personal Lines Underwriter,Aviva,aviva.ie,Aviva Ireland,2026-10-21T08:18:39.000+00:00,persona-out
+54a6059d7468692cf0e091bb,Matthew,Ti***y,Head of Underwriting,Royal London Ireland,royallondon.ie,Royal London Ireland,2026-10-19T08:57:14.000+00:00,candidate
+5d4ab1abf65125d1ad21afb5,Laura,Du***y,Medical Underwriter,Royal London Ireland,royallondon.ie,Royal London Ireland,2026-10-23T06:25:41.000+00:00,persona-out
+6357bc8f5e098c000131c55c,Mathew,Be***y,Underwriter,Royal London Ireland,royallondon.ie,Royal London Ireland,2026-09-12T16:33:55.000+00:00,persona-out
+645b753c28e95800017cb37b,Nicola,Fe***n,Initial Underwriter,Royal London Ireland,royallondon.ie,Royal London Ireland,2026-10-23T08:33:13.000+00:00,persona-out
+5f08b031623b6f00011a68f6,Denise,Ja***n,Underwriting,Royal London Ireland,royallondon.ie,Royal London Ireland,2026-09-27T08:24:15.193+00:00,persona-out
+638a7085899c6600014ad9c3,Elaine,Gl***n,Underwriting Manager,Acorn Life DAC,acornlife.ie,Acorn Life,2026-10-04T14:28:53.000+00:00,candidate
+5c3f7f59a3ae611aa9b7bc15,Maeve,Mc***s,DPO,Acorn Life DAC,acornlife.ie,Acorn Life,2026-09-24T06:18:08.000+00:00,persona-out
+66f5d4d4522b77000162628a,Ross,Mo***y,Head of Claims Strategy and Innovation,Laya healthcare,layalifeinsurance.ie,AXA Life Europe,2026-10-26T17:31:36.759+00:00,persona-out
+5f0a9d8589ffdb00014cc3a3,Anthony,Fs***i,Head of Pricing and Product,Laya healthcare,layalifeinsurance.ie,AXA Life Europe,2026-10-23T18:44:52.000+00:00,candidate
+60703b401a9c5d00015c9a32,Kevin,Wr***n,Head of Pricing and Product Development,Laya healthcare,layalifeinsurance.ie,AXA Life Europe,2026-10-25T15:16:46.709+00:00,candidate
+69189c977304250001439208,Clare,Fs***i,Head of Pricing and Product Development,Laya healthcare,layalifeinsurance.ie,AXA Life Europe,2026-10-23T07:36:10.000+00:00,candidate
+697b11a15bffc60001c83dfa,Astrid,Ha***y,Underwriter Reporting Accountant,Laya healthcare,layalifeinsurance.ie,AXA Life Europe,2026-10-23T05:01:33.000+00:00,persona-out
+6481e2eddac6ef0001dad1cd,Anita,Ra***i,Fachberatung Eigene Mitarbeiter | Risikoprüfung,Allianz Lebensversicherungs-AG,allianz.de,Allianz Lebensversicherungs-AG,2026-09-13T09:18:52.000+00:00,persona-out
+5f4e8e3dd95fc70001651110,Ricarda,Be***k,Referentin Risikoprüfung und Leistungsregulierung,Allianz Lebensversicherungs-AG,allianz.de,Allianz Lebensversicherungs-AG,2026-09-12T16:15:30.000+00:00,persona-out
+69f9c2eefcc9ce000165d869,Tim,Re***z,Werkstudent Neuantrag und Risikoprüfung,Allianz Lebensversicherungs-AG,allianz.de,Allianz Lebensversicherungs-AG,2026-10-05T20:12:56.000+00:00,persona-out
+6acef15138816d000187f4d4,Sabine,Ho***g,Head of Innovation at Allianz Germany GmbH,Allianz Lebensversicherungs-AG,allianz.de,Allianz Lebensversicherungs-AG,2026-06-26T19:38:32.000+00:00,persona-out
+60ae292747f4be00011834ce,Petja,Pu***i,Head Sales Controlling/Planning Instruments Broker Channel Management Life and Health,Allianz Lebensversicherungs-AG,allianz.de,Allianz Lebensversicherungs-AG,2026-10-18T07:27:07.000+00:00,persona-out
+61b4718a109be300011578cc,Stefanie,Sp***r,Underwriter,Allianz Lebensversicherungs-AG,allianz.de,Allianz Lebensversicherungs-AG,2026-10-14T12:46:40.597+00:00,persona-out
+60c6abc45347880001b27e6d,Boris,Be***g,Referent Produktmanagement und Underwriting,Allianz Lebensversicherungs-AG,allianz.de,Allianz Lebensversicherungs-AG,2026-10-05T16:08:51.000+00:00,persona-out
+66ebd0d91000d500018d449b,David,Mo***a,Referent Datenschutz,Swiss Life Deutschland,swisslife.de,Swiss Life Deutschland,2026-10-01T10:57:39.000+00:00,persona-out
+5d50d312a3ae61aff0e54755,Ralf,Wo***n,Gesellschaftsarzt,LV 1871,lv1871.de,LV 1871,2026-10-23T17:05:56.000+00:00,candidate
+669b9fa0b242220001f8ad19,Laura,Si***r,Expertin Biometrie,LV 1871,lv1871.de,LV 1871,2026-10-09T07:05:34.000+00:00,persona-out
+66ae03124e4a600001508ac9,Jakob,Li***h,Produktmanager Biometrie,LV 1871,lv1871.de,LV 1871,2026-10-08T12:15:11.000+00:00,candidate
+5efde3d3b04c1d00da9ab7fb,Sandra,Jo***n,Leiterin Risikoprüfung/Leistungsprüfung,LV 1871,lv1871.de,LV 1871,2026-10-23T17:37:27.000+00:00,candidate
+6a26024ef54ace0001f5608e,Monica,Ru***e,Werkstudentin Risikoprüfung Lebensversicherung,LV 1871,lv1871.de,LV 1871,2026-10-05T18:17:47.000+00:00,persona-out
+66eda41a1be97400012c84f9,Amir,Fa***h,CIO · CTO / COO,LV 1871,lv1871.de,LV 1871,2026-11-01T06:03:15.285+00:00,candidate
+62ec2f6511537d0001c3d11a,Panos,Ka***s,Spezialist Biometrie,die Bayerische,diebayerische.de,Die Bayerische,2026-09-12T06:26:44.000+00:00,persona-out
+691a6b7d0f361f0001f218f9,Jessica,Gr***n,Biometrie-Spezialistin,die Bayerische,diebayerische.de,Die Bayerische,2026-09-12T04:06:41.000+00:00,persona-out
+6126cf0e79c57100014ca846,Nadine,Me***r,Biometrie-Spezialistin,die Bayerische,diebayerische.de,Die Bayerische,2026-09-08T22:08:30.000+00:00,persona-out
+637a15cfd586f700017d6735,Christine,Ki***r,Aktuar Controlling / Pricing Komposit,die Bayerische,diebayerische.de,Die Bayerische,2026-09-13T20:15:51.000+00:00,persona-out
+64907e768c107a0001802c93,Michael,Sc***r,Underwriter Gewerbe,die Bayerische,diebayerische.de,Die Bayerische,2026-10-04T10:22:55.563+00:00,persona-out
+62ec4e5148b1bf000186e030,Judith,Ri***n,Underwriter,die Bayerische,diebayerische.de,Die Bayerische,2026-09-24T04:57:50.000+00:00,persona-out
+66ee5350f6acea0001ef3599,Lucas,Mo***i,Underwriter Vertrieb für Gewerbliche & Private Sachversicherungen,die Bayerische,diebayerische.de,Die Bayerische,2026-10-23T14:28:25.000+00:00,persona-out
+57d6de30a6da98544131350a,Philip,We***l,Spezialist Sales & Operations Biometrie,Hannoversche Lebensversicherung AG,hannoversche.de,Hannoversche Lebensversicherung,2026-10-04T14:12:04.000+00:00,persona-out
+54a2c15b746869382513f23a,Florian,Kr***m,Abteilungsleiter Leben Risikoprüfung und Leistung,Hannoversche Lebensversicherung AG,hannoversche.de,Hannoversche Lebensversicherung,2026-10-23T05:02:19.000+00:00,candidate
+695ac3c113cec300017dd9c0,Christian,La***s,Leiter Underwriting,Hannoversche Lebensversicherung AG,hannoversche.de,Hannoversche Lebensversicherung,2026-10-04T12:08:13.000+00:00,candidate
+67a458117ee3cc0001342164,Sabine,Sc***d,Underwriter,Hannoversche Lebensversicherung AG,hannoversche.de,Hannoversche Lebensversicherung,2026-10-04T22:21:23.000+00:00,persona-out
+613a0a74dcade20001919dc4,Erik,Sc***z,Produktmanager Biometrie,Volkswohl Bund Versicherungen,volkswohl-bund.de,Volkswohl Bund,2026-09-12T07:30:42.000+00:00,candidate
+64ed0f7a48c3210001656045,Carina,Ge***s,Teamleiterin Produktmanagement Biometrie,Volkswohl Bund Versicherungen,volkswohl-bund.de,Volkswohl Bund,2026-10-08T08:14:07.000+00:00,candidate
+67445f09491c020001783fbd,Finja,Du***f,Product Owner Vergleichsrechner Biometrie,Volkswohl Bund Versicherungen,volkswohl-bund.de,Volkswohl Bund,2026-10-05T22:19:02.000+00:00,candidate
+63d7f56daa4f1b00018897fb,Dana,Ri***r,Gruppenleiterin Privatkunden Leben / Antragsprüfung und -entscheidung,Volkswohl Bund Versicherungen,volkswohl-bund.de,Volkswohl Bund,2026-10-06T10:56:24.552+00:00,candidate
+61690d6a4ada1100014d8231,Carsten,He***r,Underwriter,Volkswohl Bund Versicherungen,volkswohl-bund.de,Volkswohl Bund,2026-09-24T01:46:21.238+00:00,persona-out
+6361560ba94de20001470f74,Erik,Gu***l,Head of Underwriting Leben,CosmosDirekt,cosmosdirekt.de,CosmosDirekt,2026-10-20T11:11:11.607+00:00,candidate
+6ad70a0cb9488b0001602179,Maren,Me***l,Sachbearbeiterin Risikoprüfung Lebensversicherung (Medical Underwriting),CosmosDirekt,cosmosdirekt.de,CosmosDirekt,2026-10-16T02:23:16.000+00:00,persona-out
+62c8432e5ffb7a00013fab5c,Simon,Ko***b,Property Underwriter,Dialog Versicherungen,dialog-leben.de,Dialog,2026-10-09T08:11:57.000+00:00,persona-out
+60d4ebf9d9a7e700013325d5,Alessia,Na***n,Underwriter,Dialog Versicherungen,dialog-leben.de,Dialog,2026-09-26T22:36:18.567+00:00,persona-out
+61f154cce349e60001c78b54,Alina,Ge***r,Underwriter,Dialog Versicherungen,dialog-leben.de,Dialog,2026-09-19T13:11:03.000+00:00,persona-out
+68a318140f4a320001c73fb8,Frederic,St***z,Underwriter Firmenkunden Sachgeschäft,Dialog Versicherungen,dialog-leben.de,Dialog,2026-10-16T05:53:11.000+00:00,persona-out
+66250e5ae671bc00072f9319,Gregor,Kob,Underwriter,Dialog Versicherungen,dialog-leben.de,Dialog,2026-10-06T05:12:46.000+00:00,persona-out
+66ee689e8f909e0001c7f7ac,Maren,Bo***f,Underwriter Firmenkunden Sachgeschäft,Dialog Versicherungen,dialog-leben.de,Dialog,2026-10-09T10:25:30.000+00:00,persona-out
+65e01d85e6e68e000102dc09,Serena,Sc***d,Underwriter,Dialog Versicherungen,dialog-leben.de,Dialog,2026-09-12T17:16:55.000+00:00,persona-out
+54aa9e6d7468690b75df710e,Eva,Fr***z,Underwriting Manager Property,NN,nn.nl,Nationale-Nederlanden,2026-10-26T13:00:12.789+00:00,persona-out
+54ec4fa5746869444cc6fa7c,Pieter,Ro***n,A.i. Data Protection Officer at Nationale-Nederlanden Bank,NN,nn.nl,Nationale-Nederlanden,2026-09-22T03:15:56.000+00:00,persona-out
+54ec236774686943116c9057,Katie,Li***a,Medisch Adviseur,a.s.r.,asr.nl,a.s.r.,2026-10-05T14:06:02.000+00:00,candidate
+57db886ca6da9868bbfee5b0,Marlot,Li***a,Medisch Adviseur,a.s.r.,asr.nl,a.s.r.,2026-09-12T09:47:36.000+00:00,candidate
+55708d15736964257b350d00,Caroline,Yn***a,Medisch Adviseur,a.s.r.,asr.nl,a.s.r.,2026-10-17T06:19:08.000+00:00,candidate
+57e0c6c9a6da987d5c3b879b,Constance,Ko***s,Medisch Adviseur,a.s.r.,asr.nl,a.s.r.,2026-09-12T06:49:07.000+00:00,candidate
+54ec02f9746869431155593d,Mattanja,Di***s,Medisch Adviseur,a.s.r.,asr.nl,a.s.r.,2026-10-11T00:51:55.000+00:00,candidate
+6816baa45abb3d0001997555,Hans,Ba***k,Medisch Adviseur,a.s.r.,asr.nl,a.s.r.,2026-10-04T12:36:07.000+00:00,candidate
+66aca375e3c99100016c05cf,Angelique,R,Medisch Adviseur,a.s.r.,asr.nl,a.s.r.,2026-10-22T07:02:39.000+00:00,candidate
+67878c6ed76e4c0001f0c4eb,Evelien,Gr***t,Medisch Adviseur,a.s.r.,asr.nl,a.s.r.,2026-09-24T04:56:17.000+00:00,candidate
+6198c6961c36f0000163c453,Raad,,Medisch Adviseur,a.s.r.,asr.nl,a.s.r.,2026-10-23T21:47:56.000+00:00,candidate
+54a2ea9c7468693a7ec0e446,Marga,Va***e,Medisch Adviseur,a.s.r.,asr.nl,a.s.r.,2026-09-13T09:51:37.000+00:00,candidate
+66d37a7c8304b700010d3d57,Bjoern,Bl***g,"Medisch Adviseur, Letselschade",a.s.r.,asr.nl,a.s.r.,2026-10-08T07:34:34.000+00:00,persona-out
+54a3e2a374686932091c1d1b,Yvette,Ba***s,Medisch Adviseur Personenschade,a.s.r.,asr.nl,a.s.r.,2026-10-04T20:08:14.000+00:00,persona-out
+614ecb98d854d900015829da,Latifa,Am***m,Acceptatie,a.s.r.,asr.nl,a.s.r.,2026-10-04T22:54:57.000+00:00,persona-out
+57d99823a6da98724a5b3984,Anath,Br***r,"Verzekeringsarts, Medisch Adviseur",a.s.r.,asr.nl,a.s.r.,2026-10-05T12:36:59.000+00:00,persona-out
+60479bf8289db70001f5fa75,Jorine,La***r,Medisch Adviseur Inkomen / Personenschade,a.s.r.,asr.nl,a.s.r.,2026-10-08T11:06:03.000+00:00,persona-out
+61726f68647a890001064b71,Jacqueline,Br***k,Teammanager Acceptatie,a.s.r.,asr.nl,a.s.r.,2026-10-23T20:07:24.000+00:00,persona-out
+66802eccfdcb270001b2af64,Caroline,Gr***a,Acceptatie Coach,a.s.r.,asr.nl,a.s.r.,2026-09-09T11:41:21.000+00:00,persona-out
+57e094bca6da981c15d162f6,Marno,Mi***s,Medisch Adviseur Inkomen bij ASR,a.s.r.,asr.nl,a.s.r.,2026-10-05T17:06:09.000+00:00,candidate
+55714e5573696457bf806e00,Sue,Ja***r,Hypotheek Specialist Acceptatie,a.s.r.,asr.nl,a.s.r.,2026-10-04T12:23:09.000+00:00,persona-out
+54a51bc17468693b8cd1947d,Renee,Sc***t,Medewerkster Acceptatie CCZ,a.s.r.,asr.nl,a.s.r.,2026-10-05T21:04:08.000+00:00,persona-out
+609be0ef8739be0001365f4e,Kelt,St***p,Coördinator Acceptatie Particulier,a.s.r.,asr.nl,a.s.r.,2026-10-23T06:36:38.000+00:00,persona-out
+6014fc0c918f8200016a27ce,Margit,Me***k,Coördinator Acceptatie AVB,a.s.r.,asr.nl,a.s.r.,2026-09-08T01:51:15.000+00:00,persona-out
+62e2bffce9de880001195e8d,Silsila,Sa***k,Medewerker Acceptatie Particulieren,a.s.r.,asr.nl,a.s.r.,2026-10-09T05:42:53.000+00:00,persona-out
+5dd1760a1e5dec000135e471,Lisanne,Va***n,Teammanager Acceptatie Hypotheken,a.s.r.,asr.nl,a.s.r.,2026-09-13T08:47:55.000+00:00,persona-out
+57d538cba6da9853bed88896,Myrthe,Wo***f,Klantadviseur Zorg Acceptatie,a.s.r.,asr.nl,a.s.r.,2026-09-12T10:44:27.000+00:00,persona-out
+5e84656cc0296f000158f394,Marc,Ge***s,Coördinator Acceptatie Zakelijk Verkeer,a.s.r.,asr.nl,a.s.r.,2026-10-04T11:29:13.000+00:00,persona-out
+671a108dc640a2000102d3a3,Danielle,Sn***k,Teamcoördinator a.s.r Hypotheken Acceptatie,a.s.r.,asr.nl,a.s.r.,2026-10-23T06:38:11.000+00:00,persona-out
+54a381287468692abfcf8f00,Gert,Lo***t,Teammanager Inkomen Acceptatie Individueel,a.s.r.,asr.nl,a.s.r.,2026-09-12T20:25:44.000+00:00,candidate
+57d62ccaa6da9806747a1920,Anouk,Ak***n,Coördinator Service Acceptatie Particulier,a.s.r.,asr.nl,a.s.r.,2026-09-10T14:47:24.000+00:00,persona-out
+54c1a12e7468697af7afca2d,Sandra,Re***n,Coördinator Service Acceptatie Particulier,a.s.r.,asr.nl,a.s.r.,2026-10-01T23:27:00.000+00:00,persona-out
+54c21d0774686916394d667a,Richard,Bl***w,Acceptatie Zakelijk Coördinator Landmateriaal & Transport,a.s.r.,asr.nl,a.s.r.,2026-09-12T17:01:20.000+00:00,persona-out
+615286a767493d0001855e62,Sanne,Jo***s,Klantadviseur Schade Acceptatie Particulier,a.s.r.,asr.nl,a.s.r.,2026-07-27T01:52:11.000+00:00,persona-out
+6520e3f8cf083800017b9eeb,Jessica,Po***e,Klantenservicemedewerker Afdeling Acceptatie Zorgverzekeringen,a.s.r.,asr.nl,a.s.r.,2026-10-23T20:05:00.000+00:00,persona-out
+682ffdda80d0b60001da8b83,Shirley,Br***g,Acceptatie Schade Verkeer Zakelijk,a.s.r.,asr.nl,a.s.r.,2026-09-09T17:48:51.000+00:00,persona-out
+64314ee67dc63a0001086231,Nabil,A,Stagiar Service Team Acceptatie Particulier,a.s.r.,asr.nl,a.s.r.,2026-10-06T12:39:21.000+00:00,persona-out
+55cc275ef3e5bb2b240027ca,Janny,Vo***r,Senior Medewerker Acceptatie en Beheer,a.s.r.,asr.nl,a.s.r.,2026-09-10T13:23:50.000+00:00,persona-out
+54a612ca7468692fa25a6fc0,Charl,Jo***g,Medewerker Acceptatie en Beheer Schade Particulier,a.s.r.,asr.nl,a.s.r.,2026-10-05T20:46:24.000+00:00,persona-out
+5f0ed79cbbfc1b0001e7d152,Marla,Va***n,Coördinator Service Acceptatie Particulier bij a.s.r. Verzekeringen,a.s.r.,asr.nl,a.s.r.,2026-09-16T03:13:31.000+00:00,persona-out
+614d88449b874f00018cc330,Shaila,Ro***n,Klantadviseur Zorg Acceptatie bij asr Verzekeringen,a.s.r.,asr.nl,a.s.r.,2026-10-25T08:35:57.000+00:00,persona-out
+55714f937369642ccca17300,Lex,He***s,"Medewerker Uitkeringen, Acceptatie, Uitkeringen Direct Ingaande Lijfrentes",a.s.r.,asr.nl,a.s.r.,2026-09-19T00:42:30.000+00:00,persona-out
+57e0eeb7a6da987dbceb0547,Andre,Ro***r,Teammanager Managed Care en AOV Medisch Acceptatie,a.s.r.,asr.nl,a.s.r.,2026-09-13T09:58:18.000+00:00,candidate
+5ad7ba11a6da98e3829aea41,Humphrey,Ba***r,Coördinator Garage | Team Varia | Schade Acceptatie Zakelijk,a.s.r.,asr.nl,a.s.r.,2026-09-17T23:28:23.000+00:00,persona-out
+54a5f2367468692cf01f56b5,Monique,Va***t,"Medisch Behandelaar, Adviseur bij Arbeidsongeschiktheid",a.s.r.,asr.nl,a.s.r.,2026-09-12T18:57:51.000+00:00,persona-out
+57e0e940a6da987dc46ad1fa,Ruben,Va***n,Data Governance Officer (Income Protection Insurance),a.s.r.,asr.nl,a.s.r.,2026-10-18T23:45:18.000+00:00,candidate
+54a3cb777468693442d17613,Jeroen,Gr***d,"Underwriter, Specials Automotive",a.s.r.,asr.nl,a.s.r.,2026-10-04T19:49:18.000+00:00,persona-out
+54a4dc237468693b8c8c1369,Theo,Be***n,Senior Actuaris Productontwikkeling & Pricing,a.s.r.,asr.nl,a.s.r.,2026-08-03T22:49:02.700+00:00,persona-out
+54a243ef7468693cdd6f451b,Jos,Bl***h,Underwriting Expert,a.s.r.,asr.nl,a.s.r.,2026-09-23T05:17:20.000+00:00,persona-out
+54a222f17468693825b50e10,Jan-Willem,Ri***n,Teamondersteuner (underwriter),a.s.r.,asr.nl,a.s.r.,2026-09-09T20:01:16.000+00:00,persona-out
+57e1bd93a6da9856dadb27e5,Hanna,Ni***g,Medical Advisor,a.s.r.,asr.nl,a.s.r.,2026-09-12T13:58:03.000+00:00,persona-out
+60ed75e645042100012a6280,Jan-Ton,Va***e,Adviserend Geneeskundige,a.s.r.,asr.nl,a.s.r.,2026-09-12T06:21:11.000+00:00,persona-out
+57d629e7a6da9806234a7b98,Rene,St***s,Medisch Adviseur,Achmea,achmea.nl,Achmea,2026-09-08T10:20:45.000+00:00,candidate
+655c57aa853bf8000105b313,Rose-Marieke,Br***s,Medisch Adviseur Personenschade,Achmea,achmea.nl,Achmea,2026-10-05T12:57:58.000+00:00,persona-out
+54a32cf17468693a7e024b5a,Pauline,Sc***t,Bedrijfsarts/ Medisch Adviseur,Achmea,achmea.nl,Achmea,2026-10-06T05:05:14.822+00:00,persona-out
+57e04deea6da980dfb2e9993,Eric,Mo***s,Acceptatie-advieseur,Achmea,achmea.nl,Achmea,2026-09-12T09:18:18.000+00:00,persona-out
+6967563e485021000192c96e,Fatma,E,Acceptatie & Beheer,Achmea,achmea.nl,Achmea,2026-10-23T05:03:48.000+00:00,persona-out
+634912b6f2f6170001c78a5b,Sjeel,Ba***s,Acceptatie Support,Achmea,achmea.nl,Achmea,2026-07-25T05:57:43.000+00:00,persona-out
+54a4ca207468693b8c369363,Tjeerd,Wi***a,Acceptatie Adviseur,Achmea,achmea.nl,Achmea,2026-10-20T04:25:31.521+00:00,persona-out
+54ebb2ad746869444caab410,Tor-Ivar,Ba***o,Acceptatie Tester,Achmea,achmea.nl,Achmea,2026-09-12T07:40:18.000+00:00,persona-out
+57e1298aa6da987d64965840,Johan,Fr***s,Acceptatie Adviseur,Achmea,achmea.nl,Achmea,2026-09-10T16:34:58.000+00:00,persona-out
+54aa99d8746869037761a20d,Roswita,Va***e,Teammanager Acceptatie,Achmea,achmea.nl,Achmea,2026-10-09T06:50:05.000+00:00,persona-out
+60fca3b87867bf0001e50a58,Yvon,De***g,Orthopedisch Chirurg - Medisch Adviseur Letselschade,Achmea,achmea.nl,Achmea,2026-10-06T10:06:02.000+00:00,persona-out
+57d4d67ca6da985386c0e3fd,Danielle,Ta***n,Specialist Medische Acceptatie,Achmea,achmea.nl,Achmea,2026-10-23T19:23:05.000+00:00,persona-out
+5e7580a6d87de60001b168fc,Joke,Va***n,Expert Acceptatie & Beheer,Achmea,achmea.nl,Achmea,2026-10-09T07:45:46.000+00:00,persona-out
+5f109a9ed6a0c0000198c485,Lyanne,Wi***s,Acceptatie en Polisbeheer,Achmea,achmea.nl,Achmea,2026-09-12T13:37:35.000+00:00,persona-out
+681b2c303c5b7400018267fa,Tim,Va***k,Trafficmanager Acceptatie Bedrijven,Achmea,achmea.nl,Achmea,2026-10-20T14:21:45.000+00:00,persona-out
+57de69eda6da987b65e843f0,Astrid,Te***n,Medewerker Acceptatie & Beheer,Achmea,achmea.nl,Achmea,2026-09-10T16:06:11.000+00:00,persona-out
+54a2449c7468693cddc37e1b,Chinh,Tr***g,Specialist Acceptatie & Beheer,Achmea,achmea.nl,Achmea,2026-09-12T11:36:40.000+00:00,persona-out
+57d8d551a6da98725ad60373,Mark,V,Specialist Acceptatie & Beheer,Achmea,achmea.nl,Achmea,2026-09-13T20:23:41.000+00:00,persona-out
+64ecafad43288e0001d81bf0,Anneke,Vr***s,Polisbeheer en Acceptatie,Achmea,achmea.nl,Achmea,2026-10-08T05:16:00.000+00:00,persona-out
+6320723511357a00019d0a11,John,Do***t,Acceptatie & Polisbeheer WIA,Achmea,achmea.nl,Achmea,2026-10-04T18:36:52.000+00:00,persona-out
+5ee5b9ab79d94c0001933d73,Ton,Ve***l,Adviseur Acceptatie & Beheer,Achmea,achmea.nl,Achmea,2026-09-10T08:05:45.000+00:00,persona-out
+5f49832e9497320001291f0d,Johan,Fr***s,Acceptatie Adviseur Inkomen,Achmea,achmea.nl,Achmea,2026-09-10T14:00:48.000+00:00,persona-out
+55708f0f7369642606b81d00,Hans,Ti***g,Senior Acceptatie Adviseur,Achmea,achmea.nl,Achmea,2026-10-27T15:11:54.653+00:00,persona-out
+5eedc5efbff75a0001e5aec4,Jeannette,De***d,Specialist Acceptatie & Beheer,Achmea,achmea.nl,Achmea,2026-10-04T14:11:05.000+00:00,persona-out
+66fd79c2a5c8530001c49506,Thijs,Fl***r,Digital Transformation Manager,Achmea,achmea.nl,Achmea,2026-10-02T11:39:38.846+00:00,persona-out
+67e52e9128bd7c000113abd7,John,Va***n,Teammanager Acceptatie & Risicodeskundigheid Landbouw,Achmea,achmea.nl,Achmea,2026-09-09T11:23:12.000+00:00,persona-out
+69f984c1a709470001a22988,Julia,Mo***n,Acceptatie en Polisbeheer,Achmea,achmea.nl,Achmea,2026-10-23T07:19:26.000+00:00,persona-out
+63284700998cd00001f8afd5,Karin,Ho***a,Medewerker Acceptatie en Polisbeheer,Achmea,achmea.nl,Achmea,2026-09-23T10:26:12.000+00:00,persona-out
+563f8183a6da980e9200d14d,Nicole,Vu***n,Medewerker Acceptatie en Beheer,Achmea,achmea.nl,Achmea,2026-10-04T10:07:18.000+00:00,persona-out
+54c1c83a746869163965a145,Pieper,,Medewerker Acceptatie & Verkoopservice AOV,Achmea,achmea.nl,Achmea,2026-10-05T01:14:19.000+00:00,persona-out
+54a5196a7468692cf0f8d77c,Spencer,Hu***n,Expert Acceptatie en Beheer,Achmea,achmea.nl,Achmea,2026-09-12T03:21:01.000+00:00,persona-out
+54a398cb7468693209be6404,Jolanda,Jo***a,Acceptant Aansprakelijkheid | Acceptatie Bedrijven,Achmea,achmea.nl,Achmea,2026-10-22T19:42:58.000+00:00,persona-out
+57df3a03a6da980af0eac593,Anthony,Va***p,Acceptatie-adviseur bij Achmea,Achmea,achmea.nl,Achmea,2026-10-31T00:16:29.390+00:00,persona-out
+563f69c5a6da980e92000392,Danielle,Lo***n,Senior Medewerker Acceptatie & Polisbeheer,Achmea,achmea.nl,Achmea,2026-10-10T19:13:39.535+00:00,persona-out
+5b389087a6da980c37742755,Yvonne,Po***s,Medewerker Acceptatie & Beheer Levensverzekeringen,Achmea,achmea.nl,Achmea,2026-09-12T04:53:36.000+00:00,persona-out
+54a209ec74686935beca4907,Jeroen,Va***n,Senior Manager Acceptatie & Polisbeheer,Achmea,achmea.nl,Achmea,2026-09-12T10:01:45.000+00:00,persona-out
+669b581eb6119f0001a03716,Aniek,Kr***e,Medisch Behandelaar Acceptatie AOV,Achmea,achmea.nl,Achmea,2026-10-05T01:25:10.000+00:00,persona-out
+6421e7314ed4750001eb2302,Tarik,Pi***d,Acceptatie en Polisbeheer AOV,Achmea,achmea.nl,Achmea,2026-06-11T04:59:54.000+00:00,persona-out
+57db856fa6da986853750490,Jeroen,Bu***a,Manager Acceptatie Bedrijven BTV2,Achmea,achmea.nl,Achmea,2026-10-23T00:56:48.226+00:00,persona-out
+5add1cdba6da9862ba7079cd,Tea,Gr***s,Medewerker Acceptatie & Beheer Schadeverzekeringen,Achmea,achmea.nl,Achmea,2026-09-12T02:20:59.000+00:00,persona-out
+5e5b0ea5c1efc4000138aa3d,Madeleine,V,Specialist Acceptatie en Beheer,Achmea,achmea.nl,Achmea,2026-07-25T11:28:15.000+00:00,persona-out
+54a484cb7468692abf7aad4d,Barbara,Po***a,Manager Conversie Acceptatie MKB,Achmea,achmea.nl,Achmea,2026-10-23T15:57:43.089+00:00,persona-out
+54ebbaad746869444c6aae17,Gertine,Ho***r,Teammanager Acceptatie Regio Zuid,Achmea,achmea.nl,Achmea,2026-09-13T19:48:07.000+00:00,persona-out
+54a3c5da7468693b8cab7011,Joost,Cr***n,Medewerker Acceptatie & Beheer Levensverzekeringen,Achmea,achmea.nl,Achmea,2026-10-23T06:24:35.000+00:00,persona-out
+68511650ef4868000110cba3,Sarah,Ve***n,Medisch Behandelaar Acceptatie (AOV),Achmea,achmea.nl,Achmea,2026-10-06T11:26:13.000+00:00,persona-out
+6168f9882b369e00017d0dc1,Karima,Al***a,Medewerker Acceptatie & Beheer Levensverzekeringen,Achmea,achmea.nl,Achmea,2026-10-05T21:28:36.000+00:00,persona-out
+6431406566d7e100016dc48e,Demi,Ko***j,Medewerker Acceptatie en Polisbeheer,Achmea,achmea.nl,Achmea,2026-09-23T04:59:55.000+00:00,persona-out
+68c8eecf1f704500017035af,Luuk,Zi***a,Medewerker Acceptatie & Polisbeheer WIA MKB,Achmea,achmea.nl,Achmea,2026-09-12T06:59:23.000+00:00,persona-out
+57da293ca6da985b81d9881d,Yvet,Te***n,Strategisch Productmanager | Lead Acceptatie,Achmea,achmea.nl,Achmea,2026-09-10T20:25:28.000+00:00,persona-out
+5e830bc7fddb9100017bf70c,Monique,Va***m,Medewerker Acceptatie en Polisbeheer,Achmea,achmea.nl,Achmea,2026-09-10T13:01:52.000+00:00,persona-out
+5571424f736964243a970000,Wouter,Ka***r,Medewerker Acceptatie en Beheer Pensioenen,Achmea,achmea.nl,Achmea,2026-09-12T03:00:31.000+00:00,persona-out
+57d7587aa6da985b47c8a46c,Jan-Marc,Bo***e,Manager Acceptatie en Risicodeskundigheid Agro,Achmea,achmea.nl,Achmea,2026-10-28T13:56:56.702+00:00,persona-out
+604dfea685de8e00016e79f9,Raiza,Bi***r,Medewerker Acceptatie & Polisbeheer Schade Particulier,Achmea,achmea.nl,Achmea,2026-10-04T12:35:24.000+00:00,persona-out
+54aba085746869332d6fa901,Carolien,Sc***s,Medewerker Acceptatie en Polisbeheer Verzuimverzekeringen,Achmea,achmea.nl,Achmea,2026-09-23T04:48:28.000+00:00,persona-out
+57d7f14fa6da980a2e7ffd27,Sylvia,De***e,Coach bij Interpolis Acceptatie MKB,Achmea,achmea.nl,Achmea,2026-10-04T14:05:14.000+00:00,persona-out
+614ec60b68eed8000163cd05,Soultana,Bo***l,Medewerker Acceptatie & Polisbeheer BCP en ZIB,Achmea,achmea.nl,Achmea,2026-10-04T11:38:40.000+00:00,persona-out
+65b9428c574ae4000106a65e,Jacques,Li***k,"Part-time Medisch Adviseur, CBA Medisch Specialistische Zorg, Divisie Zorg en Gezondheid",Achmea,achmea.nl,Achmea,2026-10-05T00:46:17.000+00:00,persona-out
+635291fab218450001c25242,Brandon,Se***t,Medewerker Acceptatie en Polisbeheer Schade Particulier,Achmea,achmea.nl,Achmea,2026-10-24T09:33:55.000+00:00,persona-out
+54c24ad274686916395cb28a,Hennie,Va***r,Manager Lijnondersteuning & Procesbeheer en Offerte & Acceptatie,Achmea,achmea.nl,Achmea,2026-09-19T00:07:33.000+00:00,persona-out
+54ab71967468690ae62e8207,Marjo,Li***g,Specialist Acceptatie en Beheer Pensioen,Achmea,achmea.nl,Achmea,2026-09-07T16:47:53.780+00:00,persona-out
+685a350a25f1ca000189c3e6,Wim,Me***k,Inspecteur Particuliere Risico's afd. Acceptatie Achmea,Achmea,achmea.nl,Achmea,2026-09-12T01:31:15.000+00:00,persona-out
+55e59524f3e5bb6d94000105,Ruben,Va***n,Underwriter Health / Expert Acceptatie & Beheer Schade & Inkomen,Achmea,achmea.nl,Achmea,2026-10-05T06:45:43.000+00:00,persona-out
+6356b328de53a20001be5d51,Ingrid,Br***e,Acceptatie Adviseur Hypotheekbescherming & Ongevallen + Arbeidsongeschikheidsverzekeringen (AOV),Achmea,achmea.nl,Achmea,2026-09-23T11:53:16.000+00:00,persona-out
+54eadc9a74686931e27da602,Marco,Bo***k,Senior Manager Acceptatie Bedrijven - CUO Commercial P&C,Achmea,achmea.nl,Achmea,2026-10-26T04:01:11.388+00:00,persona-out
+5f072898d81c690001462ce8,Shanta,Ra***t,Medewerker Acceptatie en Beheer | Services Inkomen Collectief,Achmea,achmea.nl,Achmea,2026-09-22T11:54:07.000+00:00,persona-out
+57d6e596a6da9854594ed6be,Janneke,St***g,"Medewerker Acceptatie en Beheer, Afdeling A&P MKB",Achmea,achmea.nl,Achmea,2026-10-12T08:29:29.000+00:00,persona-out
+5e764d1467fbf30001022b2d,Sonja,Te***n,Medewerker Acceptatie en Beheer op de Afdeling Pensioen en Leven,Achmea,achmea.nl,Achmea,2026-10-04T09:34:55.000+00:00,persona-out
+6ae42e1fe215220001606108,Hanneke,Sc***n,Directeur Operations en IT (COO) Achmea Pensioen en Leven,Achmea,achmea.nl,Achmea,2026-10-23T06:02:37.000+00:00,persona-out
+54c2579b746869163989df8e,Nuri,Bo***k,Underwriter,Achmea,achmea.nl,Achmea,2026-09-09T15:47:16.000+00:00,persona-out
+54abb4a37468692a6bf1a807,Maud,Bo***n,"Insurance Physician, Medical Advisor RGA, Verzekeringsarts",Achmea,achmea.nl,Achmea,2026-10-30T21:43:05.238+00:00,persona-out
+54a40a3d7468692fa2077327,Alfons,Mu***j,Underwriter Brand,Achmea,achmea.nl,Achmea,2026-10-17T14:31:41.692+00:00,persona-out
+54a795d0746869705a182843,Michiel,Gi***s,Underwriter CAR at Avero Achmea,Achmea,achmea.nl,Achmea,2026-10-20T08:25:38.333+00:00,persona-out
+54a2992974686938255a502f,Michelle,Bu***s,Underwriter Zakelijke Mobiliteit,Achmea,achmea.nl,Achmea,2026-10-25T06:23:25.000+00:00,persona-out
+54a20e207468693825bce908,Age,Me***r,Underwriter,Achmea,achmea.nl,Achmea,2026-10-04T16:27:23.000+00:00,persona-out
+54c2118274686916397f6974,Toos,St***s,Medical Underwriter,Achmea,achmea.nl,Achmea,2026-09-10T13:05:11.000+00:00,persona-out
+54a74085746869705ac58823,Felicia,Wa***r,Medical Advisor,Achmea,achmea.nl,Achmea,2026-09-09T03:45:47.000+00:00,persona-out
+54a3a9177468692abf174408,Trix,Ho***r,Underwriter,Achmea,achmea.nl,Achmea,2026-10-06T02:21:56.000+00:00,persona-out
+5570ab6a7369643bf9121e00,Adil,Bo***i,Underwriter,Achmea,achmea.nl,Achmea,2026-09-12T11:41:40.000+00:00,persona-out
+54a3d0927468692abf87bc14,Suzanne,Va***k,Underwriter Mobiliteit,Achmea,achmea.nl,Achmea,2026-10-04T10:38:22.000+00:00,persona-out
+54aaeb7f74686923666ef61c,Arjan,Ko***j,Underwriter Mobility,Achmea,achmea.nl,Achmea,2026-09-13T08:53:09.000+00:00,persona-out
+54ebd955746869444c6c7632,Siep,Ve***a,Underwriter,Achmea,achmea.nl,Achmea,2026-10-29T21:57:48.737+00:00,persona-out
+54c1b887746869163969773b,Ad,Va***l,Medical Advisor,Achmea,achmea.nl,Achmea,2026-10-23T14:17:43.000+00:00,persona-out
+5d6e030380f93eea8ef1643e,Gerrie,Oe***a,"Schaderegelaar, Adviseur Volmachten, Auditor",Achmea,achmea.nl,Achmea,2026-09-23T09:58:22.000+00:00,persona-out
+54a2b5667468693825447c37,Johan,De,Underwriter,Achmea,achmea.nl,Achmea,2026-10-29T22:45:47.095+00:00,persona-out
+60f0f9e9e20f7b00016beec4,Ron,Jo***g,Senior Underwriting Manager Property Within P&C Midcorp Steering,Allianz Nederland,allianz.nl,Allianz Nederland Leven,2026-10-04T19:35:45.000+00:00,persona-out
+60f10e60adddd600015b5747,Lisette,Di***k,"Team Manager Underwriting Pension, PPI & Income",Allianz Nederland,allianz.nl,Allianz Nederland Leven,2026-10-15T06:09:32.292+00:00,persona-out
+5d3c0eeaf65125797f100a57,Sam,He***s,Underwriter,Allianz Nederland,allianz.nl,Allianz Nederland Leven,2026-10-07T06:53:51.000+00:00,persona-out
+6770bdcc010fa3000177eb35,Tofike,Ba***a,Underwriter,Allianz Nederland,allianz.nl,Allianz Nederland Leven,2026-10-17T01:16:53.283+00:00,persona-out
+54eb896d74686931e2b14815,Kees,Ro***t,Underwriter,Allianz Nederland,allianz.nl,Allianz Nederland Leven,2026-10-08T09:48:41.232+00:00,persona-out
+54a736ff7468696b7fe3991f,Gerda,Fe***a,Assistent Medisch Adviseur,Scildon,scildon.nl,Scildon,2026-10-25T10:24:34.000+00:00,persona-out
+54a5d8a37468693b8cb9b0ad,Susanna,St***n,"Medewerker Claims, Underwriting en Claims",Scildon,scildon.nl,Scildon,2026-10-23T21:06:10.000+00:00,persona-out
+5e8d75ed29f8b800012e4320,Charpentier,Ca***e,Magnum Underwriting Rules Manager,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-04T14:19:32.000+00:00,candidate
+642590a106c2c9000134d77e,Daniel,Me***r,Head Life & Health Risk Modelling,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-21T21:56:42.000+00:00,candidate
+54a328ff74686935be4fbf58,Luiz,Bu***o,"Market Head Life & Health Italy, Iberia",Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-28T00:02:01.569+00:00,candidate
+5e8fc419b2fccd0001edf55c,Tanja,Bu***t,Head of Life & Health Swiss Statutory Valuation,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-21T11:13:38.000+00:00,persona-out
+54a307d97468693cddd3614f,Enzo,Vi***e,Head of Life&Health Pricing Tools Development,Swiss Re,swissre.com,Swiss Re Switzerland,2026-09-23T11:37:33.000+00:00,in-sales-nav
+66f8db65a817d60001a5a65c,Dalia,Ch***a,Head Underwriting Strategy Corporate Solutions,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-24T05:35:03.000+00:00,persona-out
+54a2481e7468693a7eb98c1c,Nina,Je***r,Head Underwriting Governance and Learning & Development,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-24T15:33:56.000+00:00,persona-out
+54a138d569702d1e3f3f0100,Manfred,Wa***r,Digital Transformation,Swiss Re,swissre.com,Swiss Re Switzerland,2026-11-01T00:11:49.387+00:00,persona-out
+66f58579d6389300012c73c9,Andrea,Sc***i,Chief Underwriting Officer Casualty,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-22T14:58:59.893+00:00,persona-out
+5fd68f08d3e47e00014a2543,Brian,Gr***y,Group Chief Underwriting Officer,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-18T11:52:55.000+00:00,candidate
+66d5479e861506000117a166,Augusto,Di***e,"Managing Director at Swiss Re, Head of Life & Health Continental Europe",Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-22T21:00:16.010+00:00,candidate
+54a70cb97468696b7fd97d10,Kaspar,Mu***r,Chief Underwriting Officer Structured Solutions,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-13T08:55:38.000+00:00,persona-out
+54a533427468692abf351485,Theo,Ba***n,Head Underwriting Excellence,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-24T13:05:44.000+00:00,persona-out
+54aab9b674686908c8b78f15,Paolo,Fi***a,PMO (Digital Transformation),Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-11T23:23:06.335+00:00,persona-out
+6321b51fd5a5e30001da6ccf,Raffaella,Ba***e,Chief Underwriter Aviation,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-22T16:43:27.727+00:00,persona-out
+54ebfeea746869444c7cc139,Julien,De***s,Chief Underwriting Officer Life & Health Reinsurance,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-23T19:55:19.000+00:00,candidate
+69fafdfc31149d0001491478,Gianfranco,Lot,Chief Underwriting Officer P&C Reinsurance,Swiss Re,swissre.com,Swiss Re Switzerland,2026-07-21T19:46:25.000+00:00,persona-out
+640ac912178aa000013ed068,Niek,Ni***s,Underwriting Manager BeNeLux,Swiss Re,swissre.com,Swiss Re Switzerland,2026-07-28T13:30:51.467+00:00,persona-out
+54ec0437746869444cab233e,Nunzio,Pe***o,Underwriting Manager eUnit,Swiss Re,swissre.com,Swiss Re Switzerland,2026-09-21T15:35:36.040+00:00,persona-out
+61296351298f800001f47048,James,Ma***l,Senior Digital Transformation Manager,Swiss Re,swissre.com,Swiss Re Switzerland,2026-09-30T22:02:13.288+00:00,persona-out
+54ec3161746869444c7dae62,Roger,We***r,Chief Underwriter Financial Lines,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-17T08:42:22.326+00:00,persona-out
+5b3ecb85a6da98d36a211613,Lukas,Ho***n,Senior Portfolio Underwriter (Digital Transformation),Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-24T17:45:06.000+00:00,persona-out
+66f8d25ba817d60001a1f956,Tomas,Hr***a,Governance Manager - Contracts Digital Transformation Program,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-31T23:07:12.102+00:00,persona-out
+54a283d77468693fda15e528,John,Sc***e,Global Chief Medical Officer,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-23T10:05:14.000+00:00,candidate
+54a7965f74686975f8595043,Nina,Mo***a,Head Contracts Product Development & Innovation,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-09T10:08:55.000+00:00,in-sales-nav
+54a538177468693209ad7586,Heike,Kl***n,"Head Underwriting and Claims France, Switzerland and BeNeLux, Vice President",Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-24T17:11:28.000+00:00,persona-out
+66f58542d6389300012c5a77,Tobias,Al***r,"Digital Transformation Lead Client Engagement @ Swiss Re, Reinsurance",Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-17T09:18:12.000+00:00,persona-out
+54abc3d27468692a6b6bb90b,Michael,Ka***m,L&H Underwriting Manager CH & MENA,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-23T08:27:27.000+00:00,candidate
+672864e74d3c080001cbb3dc,Humberto,Si***a,VP- Senior Sustainability Underwriting Manager,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-22T22:33:51.000+00:00,persona-out
+5c6606ea80f93e9e0ddeca44,Marcel,An***e,Head Product Centre Agriculture & Parametric,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-21T16:17:05.000+00:00,in-sales-nav
+5570919773696418e9264800,Tatiana,Sc***h,Head of Marketing Life & Health Re,Swiss Re,swissre.com,Swiss Re Switzerland,2026-09-25T07:10:07.000+00:00,persona-out
+6212916b81a8de00019a5ad5,Dirk,Go***n,Head of Cost Allocation Life & Health,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-19T08:53:24.000+00:00,persona-out
+54a5acbc7468693209ab69a0,Alena,Fa***a,Senior Client Manager & Facultative Underwriting Initiatives Lead | Swiss Re,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-24T05:21:34.000+00:00,persona-out
+6241788ecbed8e000195c3ef,Leticia,Ba***r,Head Product Centre Credit & Surety - Reinsurance,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-23T10:26:14.000+00:00,in-sales-nav
+66f92d5ab0136a0001a5d433,Ian,Lo***g,"Head of Operational Excellence, Life & Health Reinsurance",Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-29T11:36:32.000+00:00,in-sales-nav
+6aca68b07fe24e0001136d70,Camilo,Al***z,Head Treaty Engineering Underwriting,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-05T19:24:10.000+00:00,persona-out
+66fbbbff7d71ed0001774ea3,Iwona,Sw***a,Underwriting Governance Manager,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-23T03:36:04.000+00:00,persona-out
+6acfca057639700001826054,Katharine,Ki***d,Head of Product & Experience Design P&C Re,Swiss Re,swissre.com,Swiss Re Switzerland,2026-04-30T19:58:15.000+00:00,persona-out
+605ad8ddd621a70001a8ee5b,Vasco,Nu***s,Chief Digital & Technology Officer,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-23T21:33:54.925+00:00,in-sales-nav
+66052f5d09da340007f55234,Ueli,Ko***d,Head Data-Driven Underwriting & Analytics,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-09T07:28:33.000+00:00,in-sales-nav
+66ed653a29d17f0001d72eb2,Andre,Vo***k,Head of Group Underwriting Advisory,Swiss Re,swissre.com,Swiss Re Switzerland,2025-07-10T14:53:20.248+00:00,persona-out
+5b3908e6a6da980bc4d9915c,Jason,St***e,Head of Business Development Life & Health Solutions EMEA UK&I,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-17T23:20:56.000+00:00,in-sales-nav
+57e055f1a6da981be576a89f,Ginger,Tu***r,"Head Data & Systems, Life & Health Reinsurance COO",Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-24T16:39:38.000+00:00,in-sales-nav
+611d6aeb000c280001cd77f6,Christian,Ku***z,Head P&C Re Underwriting Transformation,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-23T21:12:34.000+00:00,persona-out
+6a7acf8d4cf1990001c138a8,Daniel,Ue***i,Head Legal & Compliance Analytics & Innovation,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-23T15:23:50.000+00:00,persona-out
+66f3a786e2547c00019346e1,Yamin,Gr***r,"Chief Operating Officer, Group Digital & Technology",Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-18T00:02:55.000+00:00,persona-out
+61251059039ba30001babbf2,Neso,At***i,"Head of Property Underwriting Globals, P&C Reinsurance",Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-22T07:45:00.000+00:00,persona-out
+66053a19507fbb0007d66a9d,Stephan,Mu***r,Head Engineering Product Centre,Swiss Re,swissre.com,Swiss Re Switzerland,2025-11-11T11:18:08.162+00:00,persona-out
+611f9175ca74130001666b01,Tobias,Sc***r,Head of Data & Technology for Group Risk Management & Underwriting,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-18T05:09:32.226+00:00,persona-out
+68a2dde9fa80320001583e35,Sara,En***s,Senior Sustainability Project Manager - Group Underwriting,Swiss Re,swissre.com,Swiss Re Switzerland,2026-09-24T06:14:58.000+00:00,persona-out
+5b2dce6aa6da982cf2b18a9f,Dean,Ro***n,Head Marine & Energy Product Center,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-30T21:05:43.754+00:00,in-sales-nav
+60e6457d9435a300011e7f47,Georgiana,La***n,Global People Partner Life & Health Reinsurance & Group Asset Management & Head of HR EMEA Countries,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-22T05:18:53.000+00:00,persona-out
+683d8ae283892e0001ca8d7a,Aline,Av***n,"Head A&H Product & Strategy, Global",Swiss Re,swissre.com,Swiss Re Switzerland,2026-09-26T21:38:18.000+00:00,in-sales-nav
+57df9b2ca6da980af97aec65,Amalia,Ka***u,Project Manager in P&C Reinsurance - Underwriting Transformation,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-09T05:03:23.000+00:00,persona-out
+6089ae95d82e4100015be21f,Paul,Va***x,"Head of Enterprise Architecture Delivery | Scaling AI, Business Transformation & Digital Value",Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-22T07:32:07.000+00:00,in-sales-nav
+54a536f674686938acbe5486,Jean-Francois,Wi***r,Head FP&A Product Hub Zurich and London,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-23T05:26:25.000+00:00,persona-out
+54a500a17468692fa2c11e75,Pavel,Ce***y,"Manager L&H Underwriting, Central & Eastern Europe at Swiss Re",Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-24T16:25:35.000+00:00,candidate
+66f8c91da817d600019e88a9,Thomas,Ba***r,Engineering Underwriter,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-17T20:42:05.973+00:00,persona-out
+66ff2aad3f12c90001d33b7f,Eunice,Ch***n,"Key Committee Manager, DOO & Strategy Lead l Group CUO & Group CRO Office",Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-07T07:44:53.000+00:00,persona-out
+685c0b6caad7ef0001cc6ab5,Clemens,Sc***e,Property Treaty Underwriter,Swiss Re,swissre.com,Swiss Re Switzerland,2026-06-23T08:02:32.000+00:00,persona-out
+57d3cd16a6da9853c6cba8b9,Sebastian,Pf***r,Group Underwriting,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-23T12:55:53.000+00:00,persona-out
+5f69b752b38b450001f45de8,Theodosia,La***i,Marine Underwriter,Swiss Re,swissre.com,Swiss Re Switzerland,2026-09-29T22:58:51.361+00:00,persona-out
+6110b0118400b400015758a5,Fabio,Ce***e,Marine Underwriter,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-23T20:39:13.000+00:00,persona-out
+57dd2a11a6da987b0158bfb5,Daniel,Ku***i,Underwriter,Swiss Re,swissre.com,Swiss Re Switzerland,2026-09-10T19:43:35.000+00:00,persona-out
+564b630ba6da980e37016504,Gian,Co***a,Underwriter Facultative Casualty,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-26T00:30:11.817+00:00,persona-out
+6320590e630a5000015d0358,Simon,Je***i,Marine Underwriter,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-21T11:36:41.883+00:00,persona-out
+54a3b73f7468692fa2090b0d,Andreas,Ma***r,"Underwriter, Regional Leader Facultative Property",Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-11T00:08:11.654+00:00,persona-out
+64edf375d8523a0001ff5a1d,Xiruo,Wa***g,Parametric Underwriter & Product Manager,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-12T10:31:49.000+00:00,persona-out
+611201cc4d68fb0001756289,Dragoslav,Ta***c,Underwriter,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-04T11:07:59.000+00:00,persona-out
+61150a8cba6df90001f895e7,Jozef,Ma***y,Property Underwriter,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-07T07:00:44.000+00:00,persona-out
+54a751317468696829fb4029,Volker,Ha***n,Underwriting/Operations,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-23T06:26:11.000+00:00,persona-out
+54a2d6c974686935be557c40,Daniel,Sc***r,Market Underwriter,Swiss Re,swissre.com,Swiss Re Switzerland,2026-09-10T18:45:49.000+00:00,persona-out
+64a6a2f2a20d430001e2a3a6,Maria,Re***a,Underwriter Facultative Casualty,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-22T11:34:01.000+00:00,persona-out
+63230fb13cb2c80001847b34,Momoko,Is***a,Financial Lines Underwriter,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-09T10:43:12.000+00:00,persona-out
+6359810542ecfa0001c175e4,Michael,Go***d,Underwriter,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-23T04:59:00.000+00:00,persona-out
+6480d4f5ae999b00010dabaf,Stefan,Gu***l,Underwriter,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-22T06:41:48.000+00:00,persona-out
+66ee6d7cba21c50001bbf391,Nataliia,Ma***k,Underwriter Trade Finance,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-18T18:06:53.000+00:00,persona-out
+5e860c7e88ce0d00014d38af,Janic,Bu***i,Underwriter & Product Manager Agriculture,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-21T23:05:48.000+00:00,persona-out
+57dcafeba6da987d3ccf2ef3,Olivier,Ch***e,"Expert Casualty Underwriter, Globals, CUO Reinsurance",Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-20T09:14:09.000+00:00,persona-out
+643156837dc63a0001091510,Elena,Pa***o,Marine Underwriter,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-06T00:57:14.000+00:00,persona-out
+564d7cc4a6da983af400ba73,Christiana,Wu***h,Underwriter Facultative Casualty,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-08T19:48:31.000+00:00,persona-out
+57dfb39ca6da980b53e1a3e0,Julian,Yu***a,Underwriter,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-23T20:16:29.000+00:00,persona-out
+54a5ef4774686936769b4fb4,Markus,Re***d,Property Treaty Underwriter,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-06T09:39:52.296+00:00,persona-out
+646cc117d8ae440001ac62ca,Gael,Ce***n,Underwriter,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-23T07:58:31.000+00:00,persona-out
+57dd6d5da6da987b519a784c,Pierre,Mo***n,Property UW,Swiss Re,swissre.com,Swiss Re Switzerland,2026-09-10T12:35:18.000+00:00,persona-out
+54a4eaa87468692cf013c56d,Hayley,Sh***p,Underwriter,Swiss Re,swissre.com,Swiss Re Switzerland,2026-09-09T18:20:22.000+00:00,persona-out
+65a54e14556c68000160442d,Lars,An***n,Underwriter,Swiss Re,swissre.com,Swiss Re Switzerland,2026-10-05T08:36:30.000+00:00,persona-out
+57e0cc3fa6da987d5c3ba90a,Alexander,Sc***t,Head of Underwriting Solutions for Specialty Reinsurance,Munich Re,munichre.com,Munich Re Germany,2026-10-17T10:07:25.000+00:00,persona-out
+601d6d247c622f00013d9265,Mobolaji,Jo***h,Global Consultant - Automated Underwriting,Munich Re,munichre.com,Munich Re Germany,2026-10-13T04:26:26.000+00:00,persona-out
+57d4d568a6da9853ae8fbc19,Ferdinand,Za***n,Global Consultant Automated Underwriting,Munich Re,munichre.com,Munich Re Germany,2026-09-13T20:43:16.000+00:00,persona-out
+64dd1b76d17499000171bb8d,Rodrigo,Be***e,Chief Underwriting Officer,Munich Re,munichre.com,Munich Re Germany,2026-10-27T17:34:40.625+00:00,candidate
+60ffc51a997ff7000165c7db,Roland,Sc***r,Head of Life&Health Data and Digital - Group Technology,Munich Re,munichre.com,Munich Re Germany,2026-10-06T22:08:12.000+00:00,in-sales-nav
+6558f6b7c0618400019d4357,Stefan,Ri***l,Chief Underwriting Officer,Munich Re,munichre.com,Munich Re Germany,2026-10-27T03:55:52.554+00:00,candidate
+6126250c2fc28e00014e9cbb,Wolfgang,Mo***n,Chief Data Protection Officer,Munich Re,munichre.com,Munich Re Germany,2026-10-23T16:23:38.000+00:00,candidate
+66f1118be1016f00018cfbc9,Manuel,Fa***n,Head of Innovation,Munich Re,munichre.com,Munich Re Germany,2026-10-24T17:16:27.000+00:00,in-sales-nav
+689da2a9f53ab5000186258a,Julia,Kr***r,Chief Underwriting Officer - Surety,Munich Re,munichre.com,Munich Re Germany,2026-09-16T04:14:56.229+00:00,persona-out
+60faae10ed36db0001cf61d4,Ludwig,Gr***h,Head of New Business Models,Munich Re,munichre.com,Munich Re Germany,2026-10-24T19:24:43.091+00:00,in-sales-nav
+5f0e82069103f3000147857c,Andreas,Di***l,Chief Underwriting Officer Green Solution,Munich Re,munichre.com,Munich Re Germany,2026-10-21T07:28:17.000+00:00,persona-out
+662d513e425ee00006d38682,Julia,Sc***e,Chief Underwriting Officer (CUO) Casualty,Munich Re,munichre.com,Munich Re Germany,2026-10-20T08:25:29.000+00:00,persona-out
+57e19528a6da987d9c4938b2,Claudia,Wi***e,Underwriting Manager,Munich Re,munichre.com,Munich Re Germany,2026-09-12T00:50:24.000+00:00,persona-out
+610b6ad143a3a1000131c5d8,Simon,Hu***n,Head of Underwriting Services,Munich Re,munichre.com,Munich Re Germany,2026-09-12T02:14:27.000+00:00,candidate
+617240439138e80001ceb0bf,Elena,Fe***z,Underwriting Manager,Munich Re,munichre.com,Munich Re Germany,2026-10-09T09:53:34.000+00:00,persona-out
+60efbb9ce16cd6000178db9c,Jurgen,Re***t,Chief Underwriter Cyber,Munich Re,munichre.com,Munich Re Germany,2026-10-29T20:07:36.973+00:00,persona-out
+68033efe47b1a300010e73d6,Michael,Ew***s,CTO,Munich Re,munichre.com,Munich Re Germany,2026-10-06T07:17:08.000+00:00,candidate
+57d8e11aa6da98723a16802d,Sabine,St***y,"Chief Underwriting Officer Agriculture, Americas & Europe",Munich Re,munichre.com,Munich Re Germany,2026-10-27T00:52:51.039+00:00,persona-out
+5f48b0cc706d3d00012c81bc,Sophia,Wa***r,Chief Underwriting Officer and Global Head of Cyber - Munich Re Facultative and Corporate,Munich Re,munichre.com,Munich Re Germany,2026-10-18T17:49:44.000+00:00,persona-out
+67dd938dc82a8800011b8fa4,Monika,Ha***e,Global Chief Underwriting Officer Casualty Facultative & Corporate,Munich Re,munichre.com,Munich Re Germany,2026-10-24T18:43:03.000+00:00,persona-out
+6ad54c60a2054200012581c5,Marco,Pe***c,Head of Cyber Business Development and Underwriting,Munich Re,munichre.com,Munich Re Germany,2026-07-13T08:47:26.000+00:00,persona-out
+61e6d0eaa109d8000113b155,Luis,Ji***z,Head of Corporate Underwriting and Claims Life&Health Section,Munich Re,munichre.com,Munich Re Germany,2026-10-06T01:17:58.000+00:00,candidate
+60ec42dd8dfaf40001b6ef21,Beatrix,Ha***r,"Chief Underwriting Officer Global Property, Facultative and Corporate",Munich Re,munichre.com,Munich Re Germany,2026-10-12T22:15:16.000+00:00,persona-out
+638daf66292fb00001c939a9,Mirjam,Jo***h,Life Underwriting Manager,Munich Re,munichre.com,Munich Re Germany,2026-09-12T17:40:53.000+00:00,candidate
+55e29ca9f3e5bb7d44004633,Stefan,We***r,Chief Underwriting Officer Aviation and Contingency & Crisis Management (Reinsurance),Munich Re,munichre.com,Munich Re Germany,2026-10-25T04:37:03.099+00:00,persona-out
+66f8a74b1fb6a700010275cf,Martin,Br***l,Senior Project Manager - Digital Transformation,Munich Re,munichre.com,Munich Re Germany,2026-10-23T15:19:00.000+00:00,persona-out
+610b6a8c47bbfb0001aa2b57,Thomas,Ge***r,Chief Underwriter Germany Life/Health,Munich Re,munichre.com,Munich Re Germany,2026-10-18T16:54:22.000+00:00,candidate
+54a7c0ce74686975f8027050,Alban,Se***n,Chief Medical Officer,Munich Re,munichre.com,Munich Re Germany,2026-10-18T03:21:04.169+00:00,candidate
+6433ef761e2890000189f8e1,Christian,Ha***e,Head of New Business Origination DACH | Munich Re Markets,Munich Re,munichre.com,Munich Re Germany,2026-10-06T12:10:16.000+00:00,persona-out
+54ebf84c746869444c71c434,Harald,Sc***l,Underwriting Manager Casualty Fac. DACH & Digital Underwriting,Munich Re,munichre.com,Munich Re Germany,2026-10-23T06:00:31.000+00:00,persona-out
+610011af57d2030001ea0928,Henrik,Lu***d,Underwriting Manager - Energy Oil & Gas,Munich Re,munichre.com,Munich Re Germany,2026-10-15T19:17:03.467+00:00,persona-out
+60737a34ae7d09000151f968,Achim,Do***h,Underwriting Manager CIP Engineering - Construction,Munich Re,munichre.com,Munich Re Germany,2026-09-16T03:22:55.000+00:00,persona-out
+60f10d352829e50001383483,Mark,Sw***y,Underwriting Manager - Cyber - Europe & RoW,Munich Re,munichre.com,Munich Re Germany,2026-10-05T23:49:06.000+00:00,persona-out
+61001c5cd558ca00010203db,Ralf,Kr***r,Underwriting Manager Casualty - Lloyd‘s and Bermuda,Munich Re,munichre.com,Munich Re Germany,2026-09-10T21:05:14.000+00:00,persona-out
+619b6ab653a72c0001351919,Paul,Ze***k,CTO Risk Management Partners,Munich Re,munichre.com,Munich Re Germany,2026-10-12T11:16:58.431+00:00,persona-out
+610c4003a67f3f000107f3bf,Joachim,Ha***n,Underwriting Manager New Risk Solutions,Munich Re,munichre.com,Munich Re Germany,2026-10-06T15:58:19.000+00:00,persona-out
+54a594ac7468692cf014009c,Michael,Bi***r,"Head of Underwriting Property Treaty Caribbean, Mexico & Central America",Munich Re,munichre.com,Munich Re Germany,2026-10-13T06:23:24.000+00:00,persona-out
+60a7c42d4f4bd500012b3985,Julia,De***s,"Interim Global Chief Underwriting Officer Cyber, Munich Re Facultative & Corporate",Munich Re,munichre.com,Munich Re Germany,2026-10-16T06:23:00.000+00:00,persona-out
+57d4adf5a6da9853a6628fad,Steven,Wi***n,Senior Medical Consultant/Senior Medical Officer,Munich Re,munichre.com,Munich Re Germany,2026-10-31T05:31:28.231+00:00,candidate
+60f9b920f311940001fee259,Cyrus,De***i,"Underwriting Manager Property Treaty, UK/Netjerlands/Nordics",Munich Re,munichre.com,Munich Re Germany,2026-10-16T03:38:15.000+00:00,persona-out
+54a5ce797468693442e1d7a9,Betsy,Dr***e,Head of Product Cluster Input Management,Munich Re,munichre.com,Munich Re Germany,2026-08-06T21:07:28.348+00:00,persona-out
+60ffc51a8a4dab0001df0ac6,Keyvan,Iz***i,"Head of Digital Services, Life & Health",Munich Re,munichre.com,Munich Re Germany,2026-10-09T06:38:41.000+00:00,in-sales-nav
+60ec42e40940e70001a74e27,Carsten,To***h,"Head of Cyber Underwriting and Business Development Central, Southern and Eastern Europe",Munich Re,munichre.com,Munich Re Germany,2026-10-23T19:30:58.000+00:00,in-sales-nav
+6199bd85b97ea600014cde7d,Cosima,Es***r,Head of Client Management Life & Health,Munich Re,munichre.com,Munich Re Germany,2026-10-23T10:45:26.000+00:00,candidate
+66f8b4561fb6a7000107e85f,Jack,St***w,"Property Fac Underwriting Manager - US, Bermuda & UK",Munich Re,munichre.com,Munich Re Germany,2026-10-29T11:14:29.064+00:00,persona-out
+5d55f72680f93ef4762886e3,Jona,St***r,Head of Global Life Health Marketing Communications,Munich Re,munichre.com,Munich Re Germany,2026-10-20T01:01:36.000+00:00,persona-out
+5570848273696453823ca100,Matthias,Pi***e,Head of Casualty Treaty Underwriting,Munich Re,munichre.com,Munich Re Germany,2026-10-05T07:53:32.000+00:00,persona-out
+57dfe00ba6da980ac6bf6b3b,Christian,Gu***h,Head of Financial Controlling Life & Health (Section),Munich Re,munichre.com,Munich Re Germany,2026-10-23T16:35:06.000+00:00,persona-out
+5e7d60341310f800011fb423,Judit,Ca***u,Head of Technical Reinsurance Accounting Life & Health,Munich Re,munichre.com,Munich Re Germany,2026-11-01T11:06:36.030+00:00,persona-out
+60f1d04d5411260001c5bd30,Simone,Al***t,Head of Credit Risk Underwriting,Munich Re,munichre.com,Munich Re Germany,2026-10-20T15:22:00.161+00:00,persona-out
+610c31314eaf8000014034ea,Maria,Fi***r,Head of Section Property Treaty Underwriting,Munich Re,munichre.com,Munich Re Germany,2026-10-24T07:57:45.000+00:00,persona-out
+61bcbb9fea7e020001ff77a7,Jennifer,H,Head of Section Data Maintenance and Processing Life&Health,Munich Re,munichre.com,Munich Re Germany,2025-05-29T18:57:57.517+00:00,in-sales-nav
+67a1df0452e0850001045d88,Sebastian,Kr***n,"Global Group Head of Innovation Investment Management, Managing Director 1880fwd GmbH & Apinity GmbH",Munich Re,munichre.com,Munich Re Germany,2026-10-04T12:16:12.000+00:00,persona-out
+5f5f173b8247ec0001aa89df,Volker,Ho***a,Head of Business Development Life/Health for Continental Europe,Munich Re,munichre.com,Munich Re Germany,2026-10-20T11:51:49.000+00:00,in-sales-nav
+5d3a08dca3ae61ca7a12de2f,Bettina,Br***w,"Head of Claims Life&Health Europe, Israel and Latin America",Munich Re,munichre.com,Munich Re Germany,2026-10-23T12:55:42.000+00:00,persona-out
+66ec30b3dac128000146d619,Ali,Ku***u,Head of Cyber Services and Innovation,Munich Re,munichre.com,Munich Re Germany,2026-10-30T21:06:34.517+00:00,in-sales-nav
+60080e61ac49e0000114fdde,Erwin,Acs,Head of Department Investment Steering Primary Insurance Life & Health,Munich Re,munichre.com,Munich Re Germany,2026-10-05T13:14:30.000+00:00,persona-out
+5570a0fe7369643174680c00,Alexander,Al***n,Section Head: Corporate Underwriting - Georisks,Munich Re,munichre.com,Munich Re Germany,2026-10-23T18:49:35.000+00:00,persona-out
+66a9bbedd7b8220001303e55,Oliver,Ku***l,Head of Property Treaty Underwriting Germany,Munich Re,munichre.com,Munich Re Germany,2026-10-17T13:14:23.952+00:00,persona-out
+60f6f648f1d1d200011ccb75,Ralph,Ho***n,Head of Legal & Distribution Corporate Underwriting,Munich Re,munichre.com,Munich Re Germany,2026-10-20T18:05:28.000+00:00,persona-out
+57e02171a6da980b5c7b4574,Kshiti,An***a,"Regional Head of IT Solution Delivery Life&health, Emea)",Munich Re,munichre.com,Munich Re Germany,2026-10-08T09:50:28.000+00:00,candidate
+5f5fd8db2ec16b00017e9109,Heike,Ma***s,"Head of Sustainability, Corporate Underwriting Non-life",Munich Re,munichre.com,Munich Re Germany,2026-10-22T20:55:43.000+00:00,in-sales-nav
+5e2f364e3d3cc5000158ece2,Michael,He***z,Head of Project Delivery - Underwriting & Claims (Non-Life),Munich Re,munichre.com,Munich Re Germany,2026-10-23T23:09:58.000+00:00,in-sales-nav
+54a284f37468692e719b9329,Stefanie,Re***s,"Head of Property, Agro, Contingency in Corporate Underwriting",Munich Re,munichre.com,Munich Re Germany,2026-10-24T08:34:07.000+00:00,persona-out
+635685a219e9a40001a8fbba,Martin,Se***r,"Head of Actuarial Reporting Life/Health Reinsurance Europe, Latin America, Middle East",Munich Re,munichre.com,Munich Re Germany,2026-10-12T18:54:02.783+00:00,persona-out
+66f8a8991fb6a7000102f0ba,Christian,He***l,Senior Project Manager at Corporate Underwriting Cyber,Munich Re,munichre.com,Munich Re Germany,2026-10-14T11:37:24.000+00:00,persona-out
+60f1dcadfdaca500014922cc,Stephan,Sc***r,Head of Property Treaty Underwriting - Global Clients / North America,Munich Re,munichre.com,Munich Re Germany,2026-10-22T00:34:25.070+00:00,persona-out
+60f9cb78460ffb00010f3357,Martin,Gr***l,"Head of Casualty Treaty Underwriting UK/Ireland, Netherlands, Nordics",Munich Re,munichre.com,Munich Re Germany,2025-05-14T06:18:25.984+00:00,persona-out
+57dc11e4a6da98688397b871,Alexander,Be***d,"Head of Corporate Underwriting Casualty, Marine, Aviation & Cross-Line",Munich Re,munichre.com,Munich Re Germany,2026-09-12T11:29:49.000+00:00,persona-out
+672fb6a00d55d00001928c23,Manuela,Ge***n,"Head of Casualty Treaty Underwriting - Iberia, Latin America, Caribbean",Munich Re,munichre.com,Munich Re Germany,2026-10-17T02:46:08.000+00:00,persona-out
+57d3dae7a6da9853e6401804,Simon,Se***r,Head of Casualty Treaty Underwriting Cee/see and Business Building & Operations,Munich Re,munichre.com,Munich Re Germany,2026-10-17T03:14:38.000+00:00,persona-out
+54a328947468693318f65358,Christoph,Bo***m,"Head of Property Treaty Underwriting Section (UK, Ireland, Netherlands, Nordics)",Munich Re,munichre.com,Munich Re Germany,2026-10-24T13:38:21.000+00:00,persona-out
+6101571015a2490001c4009b,Bernhard,Ob***r,"Head of Department - Property Treaty Underwriting for UK/I, Nordics & Netherlands",Munich Re,munichre.com,Munich Re Germany,2026-10-24T04:14:35.000+00:00,persona-out
+66ed62167373d80001a2ace8,Axel,St***n,"Head of Global IT Strategy, IT Governance, IT Compliance and Project Mgmt. Pool (Office of the CIO)",Munich Re,munichre.com,Munich Re Germany,2026-10-19T09:08:40.000+00:00,persona-out
+6700abb51cdec9000136a6c8,Mithatcan,Ay***s,Property Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-17T22:21:21.150+00:00,persona-out
+616a4308fe8db800017167ee,Subhasis,Ra***r,Underwriting,Munich Re,munichre.com,Munich Re Germany,2026-10-08T15:09:47.715+00:00,persona-out
+66f8c06c1fb6a700010d53ba,Christoph,Wi***n,Chief Operating Officer and Chief UW Officer New Risk Solutions MR Facultative & Corporate,Munich Re,munichre.com,Munich Re Germany,2026-10-25T23:34:50.000+00:00,persona-out
+57d41751a6da98538e7433d5,Theresa,Mi***h,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-24T15:43:08.000+00:00,persona-out
+57db77b8a6da9868c295382e,Simone,St***h,Cyber Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-09T08:03:20.000+00:00,persona-out
+60e417275155e20001a851e3,Florian,De***n,Risk Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-21T14:54:14.000+00:00,persona-out
+57d987b0a6da98722a86c36e,Milan,Ka***r,Underwriter | Digital Assets,Munich Re,munichre.com,Munich Re Germany,2026-10-18T04:10:02.000+00:00,persona-out
+5ab743fea6da98af5494b5ab,Aneta,St***a,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-09-12T18:00:25.000+00:00,persona-out
+54aad22074686908c8151e1b,Nilton,Di***z,Corporate Power and Utilities Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-23T15:38:03.000+00:00,persona-out
+5f4eb80db4dddd0001a8ea62,Justus,Mu***r,Underwriter Marine,Munich Re,munichre.com,Munich Re Germany,2026-08-30T08:30:56.841+00:00,persona-out
+557096057369640914df5300,Elisa,Ta***o,Cyber Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-09-22T11:24:11.000+00:00,persona-out
+5e7ed6ce15cdce000197e999,Yassine,La***r,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-31T09:50:49.650+00:00,persona-out
+62e291b91ea6e70001cd07ef,Lancelot,Ke***s,Property Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-09-23T05:14:02.000+00:00,persona-out
+66ee48ee51f2cf00017ba38f,Malte,Sc***e,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-09-12T01:29:26.000+00:00,persona-out
+643e917091c9a90001a50642,Kity,Cu***n,Underwriter Contingency & Crisis Management,Munich Re,munichre.com,Munich Re Germany,2026-10-06T12:27:59.000+00:00,persona-out
+5e7716dbe5c317000118afc8,Nelvis,Fo***n,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-17T14:13:53.000+00:00,persona-out
+57d44290a6da98538e76e651,Maximilian,Sc***k,Aviation Underwriting,Munich Re,munichre.com,Munich Re Germany,2026-10-20T15:24:59.000+00:00,persona-out
+60f81f59ed895d0001b52109,Johan,Ro***z,Casualty Treaty Actuary & Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-09-10T17:17:33.000+00:00,persona-out
+61383338cddf9b00013c5f92,Sophie,Ha***n,Underwriter Middle East / North Africa,Munich Re,munichre.com,Munich Re Germany,2026-09-12T16:59:54.000+00:00,persona-out
+5e8be77959aea000017281c7,Georg,Ba***r,Underwriter E-Mobility,Munich Re,munichre.com,Munich Re Germany,2026-10-21T07:12:06.000+00:00,persona-out
+610c8eb3761fcc00019efe5d,Matthias,To***s,"Underwriter, Geologist",Munich Re,munichre.com,Munich Re Germany,2026-10-21T20:39:03.000+00:00,persona-out
+60f5dc5edc56c00001505fe2,Florian,Wa***z,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-09T10:21:54.000+00:00,persona-out
+610aa463899e62000130a8a8,Uwe,Sc***r,Senior Cyber Business Consultant & Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-16T02:31:32.000+00:00,persona-out
+60f9c8c10847290001398f89,Carlos,Du***n,Casualty Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-05T13:23:28.000+00:00,persona-out
+60ee691081b4c6000112f06b,Christina,Ru***e,Property Treaty Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-04T12:39:07.000+00:00,persona-out
+60defba275b54c000193f05d,Johannes,St***l,Corporate Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-23T19:01:26.000+00:00,persona-out
+60f9b2dadb722a00014219a1,Klaus,Ma***r,Underwriter Financial Lines Facultative,Munich Re,munichre.com,Munich Re Germany,2026-09-22T11:18:51.000+00:00,persona-out
+60f260d51099220001e5bebe,Michael,Mc***r,"Casualty Treaty Underwriter, Munich Re US",Munich Re,munichre.com,Munich Re Germany,2026-09-10T15:46:54.000+00:00,persona-out
+6352966ead10d90001774466,Markus,Wi***r,Underwriter Global Clients & Lloyd's,Munich Re,munichre.com,Munich Re Germany,2026-10-09T06:08:15.000+00:00,persona-out
+62eb68fd2ab2300001f193a2,Tessa,Ve***f,Legal Expert & Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-05T03:18:59.310+00:00,persona-out
+62ec600d2801a50001da806d,Anna,Sc***n,Underwriter Property Treaty Caribbean,Munich Re,munichre.com,Munich Re Germany,2026-10-05T16:59:20.000+00:00,persona-out
+57dd2c39a6da987af1206daf,Marc,Ro***s,Corporate Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-05T10:13:33.000+00:00,persona-out
+57d34501a6da9865801f854c,Marcelo,Ca***a,Underwriter at Specialty Re (Global Clients & North America),Munich Re,munichre.com,Munich Re Germany,2026-10-24T00:04:58.000+00:00,persona-out
+626a415320afc9000194e96c,Rebecca,Am***r,Corporate Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-09-10T08:50:30.000+00:00,persona-out
+610c6465f9b82700017efb55,Laura,St***r,Underwriter Casualty Facultative,Munich Re,munichre.com,Munich Re Germany,2026-10-23T12:07:43.000+00:00,persona-out
+60eedb0b431a7b000161996b,Alex,Bo***d,Energy Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-15T21:09:23.987+00:00,persona-out
+69f1e1c2d6e24c000123fc67,Cornelia,We***l,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-09-10T19:42:54.000+00:00,persona-out
+5efefc915678db000160a444,Saskia,Ro***n,Property Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-23T14:10:38.000+00:00,persona-out
+6497d21bfe73e300017c7d4a,Maria,Ne***r,Underwriter Marine,Munich Re,munichre.com,Munich Re Germany,2026-10-23T22:18:03.000+00:00,persona-out
+60f03c3b4de2190001a6ed87,Kisnthrie,Na***o,Corporate Underwriter: Casualty,Munich Re,munichre.com,Munich Re Germany,2026-09-13T07:45:21.000+00:00,persona-out
+6113535e2fcbaa0001400b1e,Johann,Pa***l,"Senior Vice President, Senior Underwriter & Client Manager",Munich Re,munichre.com,Munich Re Germany,2026-10-12T16:03:58.000+00:00,persona-out
+57da14a4a6da985b13b44eeb,Frank,Mu***d,Engineering Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-04T16:58:20.000+00:00,persona-out
+57d9aa5ca6da98724a5c52f5,Assia,Sc***n,Underwriter Green Solutions,Munich Re,munichre.com,Munich Re Germany,2026-10-15T16:53:05.000+00:00,persona-out
+659f114037e6bd0001290a30,Garima,Ka***i,Property Treaty Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-08T12:39:38.000+00:00,persona-out
+60ee6999fd73d8000114206f,Samy,Fa***h,Property Treaty Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-24T10:15:51.000+00:00,persona-out
+5e892b830df1560001d6ef65,Julian,Ru***z,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-26T13:28:02.356+00:00,persona-out
+60eee2a4082834000105a427,Sarah,Fa***i,Underwriter & Actuary,Munich Re,munichre.com,Munich Re Germany,2026-10-31T16:58:55.000+00:00,persona-out
+5f5adba0b8a8520001c5356a,Maria,Ba***a,Property Treaty Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-15T01:46:03.627+00:00,persona-out
+661a3c81fd96d40007b314af,Tewodros,Fe***e,Engineering Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-09-10T14:29:09.000+00:00,persona-out
+61c33cfd1a6e580001a714bc,Fernando,C,Energy Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-09-22T11:13:37.000+00:00,persona-out
+57d7eb9fa6da980a36d19091,Magdalena,No***a,"Client Underwriter | Trade Credit, Surety and Political Risk",Munich Re,munichre.com,Munich Re Germany,2026-09-27T07:16:15.151+00:00,persona-out
+5fe5b1c6fa45bd000164f9d0,Patricia,Pu***e,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-23T12:30:13.000+00:00,persona-out
+610157c135d71d000128e8c6,Florian,Ri***s,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-22T14:02:31.000+00:00,persona-out
+663c9008bbd45d00018c1692,Ioana,Di***r,Corporate Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-28T16:06:09.775+00:00,persona-out
+63230417d4b86b0001efe163,Mayu,Sa***a,Engineering Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-28T01:35:03.398+00:00,persona-out
+616a567b310ea40001a4632c,Marco,Ni***y,Energy Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-23T05:56:05.000+00:00,persona-out
+5e859ddaa77a9e0001b6b656,Hanna,Du***e,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-22T07:36:29.000+00:00,persona-out
+60c3f83c95ab580001f33c1f,Christina,Le***r,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-04T13:40:42.000+00:00,persona-out
+60f0328d1fd0d100014b4aee,Marianne,Ja***n,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-04T22:24:17.000+00:00,persona-out
+5d56e2ccf651254ae2390298,Astrid,He***g,Underwriter Casualty Facultative,Munich Re,munichre.com,Munich Re Germany,2026-10-24T08:02:01.000+00:00,persona-out
+610c3e927dcc6d0001675f7b,Sarah,To***n,Underwriter Casualty Treaty Iberia,Munich Re,munichre.com,Munich Re Germany,2026-10-05T19:15:48.623+00:00,persona-out
+610ab8a6f6c2630001ee5ef3,Stefanie,Ma***i,Marine Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-09-30T08:19:18.496+00:00,persona-out
+65e3dfa714dfee0007bc2c2a,Tobias,Hi***r,Corporate Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-22T23:38:49.739+00:00,persona-out
+5f5a855c1e34c2000158f61a,Katrin,Ha***n,Corporate Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-24T06:31:18.000+00:00,persona-out
+60f6fbb0cf46bf00010b2afe,Tobias,Bo***h,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-06T15:25:37.922+00:00,persona-out
+6150742e200fab000130dff6,David,St***r,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-09-12T18:41:25.000+00:00,persona-out
+5e76e1d6d37a9a00012af875,Alexander,Vo***t,Risk Underwriter,Munich Re,munichre.com,Munich Re Germany,2025-05-09T12:37:43.953+00:00,persona-out
+613a0ac1c8c2010001d8d441,David,Or***a,Underwriter Global Downstream Energy,Munich Re,munichre.com,Munich Re Germany,2026-10-06T11:28:56.000+00:00,persona-out
+54ab9f967468692ca19f3501,Daniel,Ba***o,"Chief UW and Claims L&H for Iberia (Spain and Portugal), Italia, Malta and Latin America",Munich Re,munichre.com,Munich Re Germany,2026-10-12T22:41:39.000+00:00,persona-out
+6353ff542da8c00001393184,Christina,Sp***h,Property Treaty Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-29T11:16:37.826+00:00,persona-out
+5d65e5ff80f93e446e2da67b,Thabang,Ma***a,Property Treaty Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-06T04:08:09.000+00:00,persona-out
+54a3b98374686938ac7eec0d,Eduard,Ca***o,Energy Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-09-12T12:20:06.000+00:00,persona-out
+63a4359643bb9900014fce88,Hannah,Ka***n,Corporate Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-09-12T10:50:40.000+00:00,persona-out
+60feed2765a38700011b5477,Roland,Re***l,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-23T08:13:28.000+00:00,persona-out
+54c158a17468697af7e91100,Andreas,La***n,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-09T00:11:21.060+00:00,persona-out
+60fabf4faf52630001b3979b,Christoph,Ju***g,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-23T20:33:12.000+00:00,persona-out
+610ab90fdb3e090001e44bfc,Silke,Zi***l,Property Underwriter Facultative,Munich Re,munichre.com,Munich Re Germany,2026-10-24T08:33:31.000+00:00,persona-out
+60fa4733c1eab300019713dc,Martin,Li***r,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-08T09:45:23.000+00:00,persona-out
+6354215b10de04000109ce48,Max,Ha***h,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-28T04:41:26.579+00:00,persona-out
+616a4381936e010001db68be,Monika,Ba***r,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-04T09:39:38.000+00:00,persona-out
+60feed26bfa0fe0001e327b3,Christian,Ar***n,"Actuarial Consultant, Underwriter",Munich Re,munichre.com,Munich Re Germany,2026-10-25T23:32:56.000+00:00,persona-out
+610b6aac63bb31000136150f,Albert,Do***r,Underwriter Agro Europe/Latin America,Munich Re,munichre.com,Munich Re Germany,2026-10-04T23:22:29.000+00:00,persona-out
+60ff8d3461dcf30001706112,Maria,Do***i,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-06T02:43:57.000+00:00,persona-out
+610adc4fb164f700014503ff,Ralf,Me***l,Property Treaty Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-08T12:19:20.000+00:00,persona-out
+6481f1b6cc1d3500014b5258,Michael,Ja***g,Underwriter Contingency,Munich Re,munichre.com,Munich Re Germany,2026-10-04T15:08:27.058+00:00,persona-out
+60fed56de98d4d00011851f8,Marco,Ma***n,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-09-12T06:22:52.000+00:00,persona-out
+695053bcb4ad650001295d2d,Dietmar,Cl***r,Underwriter Feuer Fak. für Deutschland bei Munich Re (Group),Munich Re,munichre.com,Munich Re Germany,2026-10-23T20:12:15.000+00:00,persona-out
+5e71ef24436f1e00016e5f75,Cordula,El***g,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-23T08:02:37.000+00:00,persona-out
+5e5a49e79ac6aa000129f717,Sabrina,Gr***r,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-05T21:26:13.000+00:00,persona-out
+665601a9e192090001d281e7,Daniela,Be***d,Underwriter /Actuary Casualty Treaty Global Clients,Munich Re,munichre.com,Munich Re Germany,2026-03-02T14:30:17.109+00:00,persona-out
+57d3921ff651252beea0fb9e,Carolin,Su***t,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-23T08:16:44.000+00:00,persona-out
+5e8063870bc02200010cbb9b,Christian,Ma***l,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-23T05:04:06.000+00:00,persona-out
+54c1e3df7468697af7f1bf58,Michael,Bl***y,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-09-08T18:32:37.000+00:00,persona-out
+5e657113901d330001f450e4,Anna,Be***r,Property Treaty Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-09-12T19:54:50.000+00:00,persona-out
+60faadd128695a0001c152cc,Marco,La***k,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-09-12T10:03:56.000+00:00,persona-out
+5d51f28080f93e3dfa29f574,Claudia,Bu***f,Corporate Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-09-24T20:35:07.709+00:00,persona-out
+5adae829a6da9862ae84e650,Alexandra,Ma***s,Business Developer and Underwriter - AI Performance Risks,Munich Re,munichre.com,Munich Re Germany,2026-10-16T04:50:09.000+00:00,persona-out
+661638510e72460007b99917,Matthias,Ba***h,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-04T20:26:50.000+00:00,persona-out
+60ff8cf7997ff70001652ae1,Michael,Ra***h,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-23T15:59:37.401+00:00,persona-out
+5e7e3cfa53d6980001ce1dbf,Hendrik,Ba***h,Marine Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-04T18:54:44.000+00:00,persona-out
+5fe0136ef246380001f96a9c,Adrien,H,"Underwriter, Global Credit Solutions",Munich Re,munichre.com,Munich Re Germany,2026-10-23T01:18:50.000+00:00,persona-out
+67c188320735ff0001fd4ebe,Laura,T,Underwriter Natural Resources/Energy,Munich Re,munichre.com,Munich Re Germany,2025-07-24T19:59:45.729+00:00,persona-out
+605d192979bd2a0001872ac1,Maika,Be***r,Corporate Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-08T06:24:15.000+00:00,persona-out
+63ea1fce3686e80001b04c63,Michael,Ho***r,Underwriter Contingency,Munich Re,munichre.com,Munich Re Germany,2026-10-24T16:59:51.000+00:00,persona-out
+673ad4e00badf9000163bf8a,Romanos,Pa***s,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-23T07:18:12.000+00:00,persona-out
+633f3f91f294860001e6d568,Yvonne,Sc***k,Marine Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-07-24T20:39:22.000+00:00,persona-out
+60f10f2a7facfc0001aa291b,Sebastian,La***r,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-05T13:03:47.000+00:00,persona-out
+54a4b459746869344232dc5c,Thomas,St***r,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-07T07:12:47.000+00:00,persona-out
+54a139c569702de5b3fe6200,Papaxenidis,Mu***r,Underwriter,Munich Re,munichre.com,Munich Re Germany,2025-10-05T23:32:52.191+00:00,persona-out
+57d6e803a6da9854594f0193,Friedrich,Sc***n,Underwriter Space,Munich Re,munichre.com,Munich Re Germany,2026-10-12T23:39:07.000+00:00,persona-out
+6357f20803a464000172a001,Juyang,Pa***k,Engineering Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-04T16:43:04.000+00:00,persona-out
+648091207eec6800016000a4,Felix,He***g,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-06T08:43:46.000+00:00,persona-out
+6359ff3257f31b0001ccec96,Katharina,K,Underwriting,Munich Re,munichre.com,Munich Re Germany,2026-10-28T12:31:46.776+00:00,persona-out
+54a2db817468693cdd58fa41,Hyun-Moo,Je***n,Engineering Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-25T19:26:21.000+00:00,persona-out
+610d3f757ec74f0001cd535a,Paul,Bu***g,Underwriter Marine,Munich Re,munichre.com,Munich Re Germany,2026-09-10T09:53:18.000+00:00,persona-out
+57dfdccba6da980b658bcda0,Cristina,He***s,Risk Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-23T04:30:29.000+00:00,persona-out
+5e713a5508143c00017d9376,Daniel,We***t,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-23T21:35:35.000+00:00,persona-out
+61274810b222210001af1734,Benedict,Ha***r,Underwriter | Cyber Reinsurance Central Europe,Munich Re,munichre.com,Munich Re Germany,2026-10-18T18:40:43.000+00:00,persona-out
+5f09ae313f6bd000018995c1,Katarzyna,Ga***a,Facultative Mining Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-05T07:28:21.000+00:00,persona-out
+611516953755370001e22556,Ryan,Ow***n,Corporate Underwriting,Munich Re,munichre.com,Munich Re Germany,2026-10-11T00:24:00.000+00:00,persona-out
+5e5be8870f3d54000190a37b,Catherine,To***n,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-07T05:48:18.000+00:00,persona-out
+5d473e0da3ae61babd68f186,Simon,Wa***e,Property Treaty Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-29T22:56:17.727+00:00,persona-out
+6138218ffd20000001c716b8,Mariana,Lu***a,Underwriter Munich RE,Munich Re,munichre.com,Munich Re Germany,2026-10-21T01:21:57.316+00:00,persona-out
+5e6890a43b99ff00011d6c3f,Johannes,Sc***d,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-21T07:39:01.000+00:00,persona-out
+610ae21743b0940001e9afb7,Klaus,Pa***n,Underwriter & Actuary,Munich Re,munichre.com,Munich Re Germany,2026-10-06T10:53:54.000+00:00,persona-out
+60f10ea8e67b200001d8ee9b,Kostas,Ar***u,"Underwriter, Dipl. Civil Engineer / Geologist",Munich Re,munichre.com,Munich Re Germany,2026-10-09T08:05:37.000+00:00,persona-out
+616a42c604cf7400016ec722,Denise,Wo***r,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-09-09T07:41:05.000+00:00,persona-out
+63fccbdf5a91ff00010ce9aa,Martina,Fe***r,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-09-10T07:01:26.000+00:00,persona-out
+60dd33a80f0512000165fa5a,Ignacio,Go***a,Engineer - Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-09-12T17:09:15.000+00:00,persona-out
+6139f90a1e9a1000018cfbf6,Simon,Ba***r,Energy Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-09-24T12:00:24.825+00:00,persona-out
+60f5a2a59f8c98000141f1e1,Joachim,Pa***k,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-09-23T10:08:48.000+00:00,persona-out
+60ff1bedaafdbc0001c36f31,Sabine,Fr***g,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-24T12:50:27.000+00:00,persona-out
+5f5377cdecf9190001ec2dd7,Oksana,K,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-09-09T00:24:49.000+00:00,persona-out
+610abe5c87c3820001141b49,Martina,Fo***r,Underwriter at Munich Re,Munich Re,munichre.com,Munich Re Germany,2026-09-10T07:02:26.000+00:00,persona-out
+6436888dbaddb10001c311d3,Amelie,Bo***p,Assistant Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-29T00:57:28.451+00:00,persona-out
+64905c4380c8e20001e5ee63,Katja,We***r,Underwriter,Munich Re,munichre.com,Munich Re Germany,2025-10-01T19:05:46.059+00:00,in-sales-nav
+5e6c0b93ddf4b40001f04fa5,Franziska,Th***o,Underwriter Property Treaty for Central America & Mexico,Munich Re,munichre.com,Munich Re Germany,2026-10-22T11:02:16.000+00:00,persona-out
+612a6d78d135e800016a764b,Christopher,Ja***s,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-04T10:39:21.000+00:00,persona-out
+5b31be6fa6da9840a9e4ef19,Abby,K,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-18T02:35:13.000+00:00,persona-out
+616a442a6f34120001f6e177,Andrea,Ma***s,Underwriter Marine,Munich Re,munichre.com,Munich Re Germany,2026-10-09T20:28:03.671+00:00,persona-out
+5e7e2dffc70cb900018f3c96,Florian,G,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-23T07:46:55.000+00:00,persona-out
+54a4e92d7468693209b3e66c,Andreas,Ma***s,"Corporate Underwriting, Business Consultant",Munich Re,munichre.com,Munich Re Germany,2026-09-08T11:40:39.000+00:00,persona-out
+6aa618c061d9850001a3ee85,Wolfgang,Mo***n,DPO,Munich Re,munichre.com,Munich Re Germany,2026-10-23T04:14:40.000+00:00,persona-out
+54a4cd1a7468692cf06b8b64,Alexander,Ke***r,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-23T05:15:45.000+00:00,persona-out
+610d5a6aadc63100018c4fd1,Gunda,Ka***r,Underwriting,Munich Re,munichre.com,Munich Re Germany,2026-10-05T15:06:24.000+00:00,persona-out
+634728690b416000019466b9,Karl-Dusan,Ko***k,Property Treaty Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-05T18:39:54.000+00:00,persona-out
+617247a67705700001d828b1,Christina,Ja***s,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-06T02:20:10.000+00:00,persona-out
+54a4039f7468693b8c861425,Weber,Co***>,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-10-23T21:52:48.000+00:00,persona-out
+610c4ab70818e800017a4603,Bernd,Gu***r,Underwriter,Munich Re,munichre.com,Munich Re Germany,2026-09-08T17:40:34.000+00:00,persona-out
+64a8099f0e5b6c0001e48bfa,Dusan,Ko***k,ATZ- ex Underwriter Property Treaty,Munich Re,munichre.com,Munich Re Germany,2026-10-31T07:09:32.520+00:00,persona-out
+6167eceadac8870001c1edda,Karsten,Ko***h,Data Protection Officer,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-14T22:50:26.676+00:00,candidate
+69393e579028610001e145fb,Alexander,Ge***o,Chief Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-26T14:49:00.261+00:00,candidate
+54a4cd2274686936765b4964,Edgar,Ch***z,Chief Underwriter & VP at Hannover Re,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-07T02:29:54.000+00:00,candidate
+57de7d34a6da987af1251429,Susanne,Bu***z,Chief Medical Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-18T18:29:08.000+00:00,candidate
+63dcef535194160001e538ed,Patricia,Ma***t,Team Manager Underwriting and Knowledge,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-23T19:57:43.000+00:00,persona-out
+54eb3aca74686931b882650c,Rolf,Ku***n,Team Manager L&H Underwriting Solutions,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-23T08:57:12.000+00:00,candidate
+54a4f74a74686938ac7d1472,Hamilton,Ma***s,Underwriter P&C Latam,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-16T14:25:07.822+00:00,persona-out
+66c564882fb9440001bd06f5,Maria,Ha***t,"Underwriter, Power & Renewable Energy",Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-22T10:14:26.000+00:00,persona-out
+641b0f36797c400001a758cc,Merle,St***n,Underwriter Index-based and Parametric Solutions,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-10T15:16:08.000+00:00,persona-out
+5ef6337458544c00012f446a,Alfonso,Pe***a,Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-09T07:31:02.000+00:00,persona-out
+5e5d8a81542a2b00016f1418,Kristin,Ge***h,Underwriter - Retrocessions & Capital Markets,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-23T05:18:14.000+00:00,persona-out
+5ae2f466a6da981b660e423b,Montserrat,Ga***a,Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-20T09:38:55.000+00:00,persona-out
+60d418613d323b000141c2b8,Vincent,Gr***e,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-09T13:39:12.000+00:00,persona-out
+61e79a1e2b07990001c689df,Angela,Ja***o,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-26T14:12:38.504+00:00,persona-out
+57d9bfd0a6da987fcdcb18a6,Sonia,Fo***g,Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-23T09:04:43.000+00:00,persona-out
+612bddd68f7cf70001cc9c5f,Frank,Cr***r,Associate Cyber Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-23T04:23:18.000+00:00,persona-out
+60c16f4e09d8dc0001e457e7,Karl,Fr***s,"Associate Underwriter - Credit, Surety and Political Risk",Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-12T13:40:59.000+00:00,persona-out
+613add4a2a5b3100013c3623,Giacomo,Ve***e,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-04T13:33:47.000+00:00,persona-out
+5e8f36b836a4fb0001ad8a34,Valeria,Hu***a,Assistant Vice President / Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-18T17:24:05.000+00:00,persona-out
+6431663a1a2b240001426ac6,Lars,Br***s,Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-08T11:42:02.000+00:00,persona-out
+60cb294eaae5ae000112123a,Jannik,Sc***n,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-05T02:38:21.000+00:00,persona-out
+5b9a4462324d445c38275c02,Magdalena,Dec,Underwriter UK&Ireland,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-13T20:32:00.000+00:00,persona-out
+663e299e1f65600001fb94cf,Lauritz,Fr***k,Assistant Vice President / Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-08T03:37:38.610+00:00,persona-out
+6512ae677d050f0001fa9a1a,Konstantin,Ba***r,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-04T19:21:14.000+00:00,persona-out
+62e7abc05c9e4400017a0091,Andre,St***e,Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-09T11:04:54.000+00:00,persona-out
+64ed377fa016760001378628,Bruna,Mo***a,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-08T11:06:27.000+00:00,persona-out
+6356bc2bed5ae40001a2ee10,Roberto,Fi***r,Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-08T03:40:25.129+00:00,persona-out
+6153e2a3e8045c00019e9573,Yannick,Se***h,Associate Underwriter - US Property Treaty Department,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-08T21:10:35.000+00:00,persona-out
+63527a2637e4f20001e3d327,Tobias,Sc***g,Medical Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-13T10:24:15.000+00:00,persona-out
+60eaf4a0ee6bf60001d2492c,Clara,He***g,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-23T11:22:59.000+00:00,persona-out
+613afae72b2dc80001e49d87,Diana,Ca***s,"Associate Underwriter - Credit, Surety and Political Risk",Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-05T00:05:49.000+00:00,persona-out
+5fd67a6318587d0001360fd9,Malte,Co***n,Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-24T17:58:24.000+00:00,persona-out
+62ee7ab1bc700100016ad1e2,Subhekshya,Ac***a,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-10T13:24:06.000+00:00,persona-out
+642abee46933ab00014b1a11,Kerstin,Ko***e,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-07-27T08:49:56.000+00:00,persona-out
+6343ff196dc77700011fdba7,Arne,Ko***t,Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-17T14:10:44.050+00:00,persona-out
+68490e9c128ba100017a22fe,Sinja,La***n,Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-06T00:43:46.000+00:00,persona-out
+624bfd0f43344e00017a9a46,Ralf,Lo***e,Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-23T05:55:15.000+00:00,persona-out
+662d387719c7d70007fb91dc,Lukas,Bu***e,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-23T14:48:19.000+00:00,persona-out
+614d810ce8aec700010485b3,Julian,Wi***e,Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-13T07:53:09.000+00:00,persona-out
+64ca66b8885468000162df93,Till,Vo***t,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-13T10:01:43.000+00:00,persona-out
+5e68f86e9e809a0001f23fa3,Olaf,La***z,Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-23T12:54:55.000+00:00,persona-out
+66a6b8a947467d000165da69,Jessica,Sc***e,Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-23T14:47:00.000+00:00,persona-out
+642ad79af64708000163bb7e,Jessica,Fe***e,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-05T20:10:09.000+00:00,persona-out
+57e1c8d7a6da985757ed7fb1,Ariel,Mi***i,Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-19T01:08:01.000+00:00,persona-out
+64eca1a065c35b0001453263,Yonatan,We***w,Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-05T19:27:46.000+00:00,persona-out
+5570a89d73696420aa272900,Monica,Ap***o,Senior Casualty & Financial Lines Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-12T11:04:38.000+00:00,persona-out
+57d3e7f1a6da98537ecb170d,Georg,Mu***n,Underwriter - Index Based and Parametric Solutions,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-23T10:37:30.000+00:00,persona-out
+66a6f8eb75d41e0001480413,Malena-Isabel,Ro***o,Business Analyst Underwriting,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-23T07:39:10.000+00:00,persona-out
+5e8239c8ec624500011caef9,Lisa,S,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-05T23:57:41.000+00:00,persona-out
+6665b6103b22930001b2cfc5,Tania,Ga***a,Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-18T22:09:37.000+00:00,persona-out
+63dcf7d70052270001af9c15,John-Alexander,Pr***s,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-18T18:21:56.000+00:00,persona-out
+685fe6af8c33f30001ddd6e8,Juan,Gu***s,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-06T07:30:33.000+00:00,persona-out
+6188bf1e561f4a0001c59745,Humberto,Pa***a,Facultative Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-04T11:29:12.000+00:00,persona-out
+614d77fa4e436a00012630f9,Justine,Kl***e,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-24T04:09:39.000+00:00,persona-out
+643023fd343b760001426045,Bianca,Fe***r,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-09T01:19:55.000+00:00,persona-out
+64258d544e6830000108c1dd,Maximilian,Be***r,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-10T12:48:15.000+00:00,persona-out
+64316875c786510001633a88,Bennet,St***r,"Associate Underwriter, Power & Renewable Energy",Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-24T09:23:46.000+00:00,persona-out
+64300b995b151200016e63e9,Andrea,Fi***i,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-12T04:55:28.000+00:00,persona-out
+654495d81c8fdd0001a47591,Marcel,Kl***t,Underwriter Advanced Solutions,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-28T23:57:32.159+00:00,persona-out
+62813ffaa6b76f0001080ea0,Morten,Sc***k,Facultative Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-20T18:44:09.000+00:00,persona-out
+674ecee9fe21bb0001c91b53,Julia,Pe***a,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-19T01:27:31.221+00:00,persona-out
+684fd83b529ce80001f72d39,Enrico,Tr***e,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-13T09:25:54.000+00:00,persona-out
+6666519893a0490001b6f803,Florian,Fr***h,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-24T05:51:09.000+00:00,persona-out
+632298c6f1f98b0001be13a3,Philip,Ei***l,Retrocession Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-12T07:56:24.000+00:00,persona-out
+642ad149bbbb0500010c67f9,Igor,Me***k,Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-11T22:08:33.871+00:00,persona-out
+634a2c8cb51dcb0001e194a3,Adrian,La***r,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-13T09:43:25.000+00:00,persona-out
+65e810cfce15b10007767a63,Octavio,Al***r,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-22T10:22:35.000+00:00,persona-out
+62500a4a37424200015fe967,Finn,Ra***e,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-10T08:30:01.000+00:00,persona-out
+5e6b00a41c317d00015c4d20,Yi,Li,Pricing Actuary & Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-19T04:31:44.000+00:00,persona-out
+63dacd6f5d70bc0001c45acb,Angela,Em***e,Deputy Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-10T10:25:39.000+00:00,persona-out
+68d8f1bc3bc63c00018ef5c8,Gustav,Ri***r,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-08-05T01:28:15.000+00:00,persona-out
+665ebb0cfe785e00010e01dd,Camila,Go***z,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-19T13:24:37.000+00:00,persona-out
+5d448eca80f93edbb9f5202f,Achim,Sc***r,Underwriter for North American Specialty Business,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-19T01:00:42.000+00:00,persona-out
+61725add1c03400001caa543,Anna,Ko***g,Underwriter / Assistant Vice President,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-23T08:32:20.000+00:00,persona-out
+69a3a43455eb4300011cfc8e,Helge,Sa***n,Associate Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-19T00:57:36.000+00:00,persona-out
+5abb2200a6da98410015f370,Elisabeth,Ma***a,Underwriter Assistance by Agricultural Risks Department,Hannover Re,hannover-re.com,Hannover Re Germany,2026-09-21T09:05:18.000+00:00,persona-out
+5e6595c3f221e100011d4224,Elizabeth,Ra***o,Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-29T08:23:52.788+00:00,persona-out
+68d89f3c83fe2900011c2f46,Beate,,Underwriting,Hannover Re,hannover-re.com,Hannover Re Germany,2026-02-13T23:50:20.706+00:00,persona-out
+616a40c2483ce60001a47df4,Patricia,Be***r,Assistant Underwriter,Hannover Re,hannover-re.com,Hannover Re Germany,2026-10-23T12:46:14.000+00:00,persona-out
+54a4844474686932097aae4d,Stephanie,Ma***t,Head of Life & Health UW Risk Management,SCOR,scor.com,SCOR France,2026-10-23T07:03:20.806+00:00,candidate
+557090aa73696425f2832f00,Emmanuel,Ro***n,Automotive Underwriting Innovation Manager,SCOR,scor.com,SCOR France,2026-10-06T18:02:49.000+00:00,persona-out
+6acedd4dd93c390001fb4a4b,Maria,Br***i,Chief Underwriting Officer,SCOR,scor.com,SCOR France,2026-07-27T08:58:14.000+00:00,candidate
+60d99e9c208e9e0001e79f73,Marvin,De***n,Group Data Protection Officer,SCOR,scor.com,SCOR France,2026-10-20T11:02:55.000+00:00,candidate
+60d590cbedbfc60001b9e20f,Claire,Ju***d,Group Data Protection Officer (DPO),SCOR,scor.com,SCOR France,2026-10-23T21:04:50.950+00:00,candidate
+610c104c6ec8bc00013ee7dd,Eric,Le***r,Alternative Solutions - Chief Underwriting Officer,SCOR,scor.com,SCOR France,2026-10-28T07:05:32.542+00:00,persona-out
+54a7e3ab74686975f8ba9556,Daniel,Du***s,Head of P&C Underwriting Solutions,SCOR,scor.com,SCOR France,2026-10-24T19:06:25.000+00:00,persona-out
+604749d1e1b3010001ce785e,Achraf,Ab***h,Chief Technology Officer,SCOR,scor.com,SCOR France,2026-10-08T09:00:39.247+00:00,in-sales-nav
+60c03670e82ce60001a3f092,Sebastien,He***n,Deputy Chief Underwriting Officer - Cyber Solutions,SCOR,scor.com,SCOR France,2026-10-22T02:36:05.000+00:00,persona-out
+54a5a99f7468693442ca999f,Madhu,Da***y,Chief Digital Officer & Chief Product Officer,SCOR,scor.com,SCOR France,2026-10-22T20:54:39.000+00:00,persona-out
+5fd201edd6587e0001ca1198,Cecile,Vu***g,Retrocession Chief Technical Officer,SCOR,scor.com,SCOR France,2026-10-04T21:15:53.000+00:00,persona-out
+60f0167c2a2136000144928e,Renaud,Am***e,"Head of Underwriting Management, Specialty Insurance",SCOR,scor.com,SCOR France,2026-10-17T20:15:29.000+00:00,persona-out
+54ec04267468694311cd543e,Marie,At***a,Underwriting Manager Casualty France,SCOR,scor.com,SCOR France,2026-10-13T18:42:52.564+00:00,persona-out
+54a52dce7468692cf0102b83,Laetitia,Tr***n,"Head of Underwriting Management Reinsurance & MGA, Specialty Lines CUO",SCOR,scor.com,SCOR France,2026-10-27T05:29:50.660+00:00,persona-out
+66fa184f611997000193a052,Manuel,Pl***n,Chief Underwriting Transformation Officer,SCOR,scor.com,SCOR France,2026-10-24T07:01:49.000+00:00,candidate
+66f9edc861199700018683f3,Roberto,Ca***i,Head of Data Science - Life&Health,SCOR,scor.com,SCOR France,2026-10-20T04:39:18.000+00:00,candidate
+684cfa71b9d7cc00016cd96b,Sabine,Je***t,Head of Agile - Life & Health Domain,SCOR,scor.com,SCOR France,2026-10-05T23:56:35.000+00:00,candidate
+54a7cdcb74686965d9494852,Elsa,Re***n,L&H Chief Pricing & Underwriting Officer,SCOR,scor.com,SCOR France,2026-10-18T07:05:22.000+00:00,candidate
+60f02b29db73670001f50305,Sylvie,Se***x,Manager Underwriting Scor,SCOR,scor.com,SCOR France,2026-10-09T05:14:42.000+00:00,persona-out
+563b6b13a6da980b5900093f,Antoine,Mo***l,Head of Medical Underwriting Modelling,SCOR,scor.com,SCOR France,2026-10-21T11:37:18.000+00:00,candidate
+5e8631d39190410001e1425f,Adrien,Gi***n,Senior Life Underwriting Risk Manager,SCOR,scor.com,SCOR France,2026-10-25T19:26:40.000+00:00,candidate
+66ee06509e03990001a45a50,Mathieu,De***r,COO IT Division Manager,SCOR,scor.com,SCOR France,2026-10-20T18:33:05.000+00:00,persona-out
+57d74803a6da985ba846cdd0,Sophie,Ch***n,Responsable Sélection des Risques et Sinistres / Head of Medical Underwriting and Claims,SCOR,scor.com,SCOR France,2026-10-27T07:51:59.809+00:00,candidate
+57df3439a6da980ad2787cde,Ahmed,Ch***e,"Underwriter - Client Relationship Manager, Middle East",SCOR,scor.com,SCOR France,2026-09-09T11:38:40.000+00:00,persona-out
+5e7eab4281753900016e6f80,Louis,Ro***d,Alternative Solutions Underwriter,SCOR,scor.com,SCOR France,2026-10-25T08:09:15.000+00:00,persona-out
+5571324b73696453559e0e00,Eric,Po***t,Souscripteur,SCOR,scor.com,SCOR France,2026-10-04T10:48:52.000+00:00,persona-out
+6219e218d46fac0001835d7d,Ignacio,Ca***n,Alternative Solutions Underwriter,SCOR,scor.com,SCOR France,2025-09-17T18:17:56.192+00:00,persona-out
+54a47a5c74686938ac520a4b,Veronqiue,Po***n,Treaty Underwriter,SCOR,scor.com,SCOR France,2026-09-09T13:08:15.000+00:00,persona-out
+6861e35d20c6db0001ca3936,Sophie,Ca***n,Spécialiste Tarification,SCOR,scor.com,SCOR France,2026-09-10T07:06:23.000+00:00,persona-out
+673448db201bc1000138f3dc,Michele,Be***r,Casualty Underwriter,SCOR,scor.com,SCOR France,2026-10-24T13:12:06.000+00:00,persona-out
+57dd1762a6da987b3d3c47ca,Yvan,Be***d,Directeur e la Souscription Monde,SCOR,scor.com,SCOR France,2026-09-10T07:21:19.000+00:00,persona-out
+6201481850edc40001397ce2,Annika,Sc***g,Head of Underwriting Research,Gen Re,genre.com,Gen Re Germany,2026-10-25T04:19:10.002+00:00,candidate
+66f5ef41627ceb0001793b9b,Tim,Ep***t,Head of Life/Health Products & Analytics,Gen Re,genre.com,Gen Re Germany,2026-10-18T18:02:51.000+00:00,in-sales-nav
+54a7458d7468696829980625,Annika,Lu***n,Research Underwriting Manager,Gen Re,genre.com,Gen Re Germany,2026-09-12T02:48:04.000+00:00,persona-out
+630ed570a163aa0001dcf1b7,Maximilian,Fi***r,Entwickler Risikoprüfung,Gen Re,genre.com,Gen Re Germany,2026-10-05T15:31:27.000+00:00,candidate
+5c4ec7f380f93e558d707ecc,Holger,Sc***i,Chief Underwriter,Gen Re,genre.com,Gen Re Germany,2026-10-05T10:17:54.000+00:00,candidate
+5f7da1a7d6f6960001f80bef,Ulrich,Pa***a,Head of Life/Health Europe / Latin America / Middle East / North Africa,Gen Re,genre.com,Gen Re Germany,2026-09-07T21:59:05.000+00:00,candidate
+57e0a391a6da981be9e41a1a,Jens,Vo***s,Chief Underwriting Officer Energy Business,Gen Re,genre.com,Gen Re Germany,2026-10-07T07:41:26.000+00:00,persona-out
+54a4a4c07468693209af8c57,Simon,Fa***s,Medical Research Specialist | Underwriting Research,Gen Re,genre.com,Gen Re Germany,2026-10-23T13:01:39.000+00:00,candidate
+610cbba3fea5430001be38b4,Andres,We***e,Global Chief Underwriting Officer - Life/Health,Gen Re,genre.com,Gen Re Germany,2026-10-18T17:03:53.000+00:00,candidate
+562fd892a6da984877009fa1,Alfredo,Fe***r,"Head of Life and Health Mediterranean, Middle East, North Africa, Latin America and Direct Marketing",Gen Re,genre.com,Gen Re Germany,2026-10-23T07:51:59.000+00:00,persona-out
+6662e0cfc896b200018859e4,Linus,Ma***e,Werkstudent Versicherung im Bereich Risikoprüfung / Underwriting International,Gen Re,genre.com,Gen Re Germany,2026-10-04T11:58:45.000+00:00,persona-out
+54a46f0f7468692abfc3ba46,Stephanie,Ge***r,Underwriting Manager Teamlead MENA,Gen Re,genre.com,Gen Re Germany,2026-09-12T15:25:51.000+00:00,persona-out
+57dbfbcca6da9868574c2e6e,Carina,Be***z,Underwriting Manager Life/Health,Gen Re,genre.com,Gen Re Germany,2026-09-25T06:26:35.431+00:00,candidate
+614d62175cff550001265c84,Dennis,Wi***h,Underwriter,Gen Re,genre.com,Gen Re Germany,2026-09-13T19:42:56.000+00:00,persona-out
+63e3c2901b94080001798e8a,Elena,Do***o,Underwriter,Gen Re,genre.com,Gen Re Germany,2026-10-04T09:25:23.000+00:00,persona-out
+6019f1c5a306d6000187690f,Rawad,Mo***d,Associate Underwriter,Gen Re,genre.com,Gen Re Germany,2026-10-09T08:40:37.126+00:00,persona-out
+643ff32d6611bc0001c0ab32,Emilia,Be***k,Underwriting International,Gen Re,genre.com,Gen Re Germany,2026-10-09T09:18:15.000+00:00,persona-out
+63fcff5ec4a9de000177766e,David,St***n,Underwriter,Gen Re,genre.com,Gen Re Germany,2026-10-06T05:08:50.000+00:00,persona-out
+672c59666140640001648b8f,Frederik,Wi***s,Underwriter,Gen Re,genre.com,Gen Re Germany,2026-09-12T02:41:34.000+00:00,persona-out
+68b2ff7a72d1c900010ea329,Vincent,De***y,"Head of AI Process Innovation, EMEA","Reinsurance Group of America, Incorporated",rgare.com,RGA Ireland,2026-10-13T08:55:41.000+00:00,other-employer
+57e0cc3fa6da987d5c3ba90a,Alexander,Sc***t,Head of Underwriting Solutions for Specialty Reinsurance,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-17T10:07:25.000+00:00,duplicate
+601d6d247c622f00013d9265,Mobolaji,Jo***h,Global Consultant - Automated Underwriting,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-13T04:26:26.000+00:00,duplicate
+57d4d568a6da9853ae8fbc19,Ferdinand,Za***n,Global Consultant Automated Underwriting,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-13T20:43:16.000+00:00,duplicate
+64dd1b76d17499000171bb8d,Rodrigo,Be***e,Chief Underwriting Officer,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-27T17:34:40.625+00:00,duplicate
+60ffc51a997ff7000165c7db,Roland,Sc***r,Head of Life&Health Data and Digital - Group Technology,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-06T22:08:12.000+00:00,in-sales-nav
+6558f6b7c0618400019d4357,Stefan,Ri***l,Chief Underwriting Officer,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-27T03:55:52.554+00:00,duplicate
+6126250c2fc28e00014e9cbb,Wolfgang,Mo***n,Chief Data Protection Officer,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T16:23:38.000+00:00,duplicate
+689da2a9f53ab5000186258a,Julia,Kr***r,Chief Underwriting Officer - Surety,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-16T04:14:56.229+00:00,duplicate
+66f1118be1016f00018cfbc9,Manuel,Fa***n,Head of Innovation,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-24T17:16:27.000+00:00,in-sales-nav
+60faae10ed36db0001cf61d4,Ludwig,Gr***h,Head of New Business Models,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-24T19:24:43.091+00:00,in-sales-nav
+5f0e82069103f3000147857c,Andreas,Di***l,Chief Underwriting Officer Green Solution,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-21T07:28:17.000+00:00,duplicate
+662d513e425ee00006d38682,Julia,Sc***e,Chief Underwriting Officer (CUO) Casualty,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-20T08:25:29.000+00:00,duplicate
+57e19528a6da987d9c4938b2,Claudia,Wi***e,Underwriting Manager,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-12T00:50:24.000+00:00,duplicate
+610b6ad143a3a1000131c5d8,Simon,Hu***n,Head of Underwriting Services,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-12T02:14:27.000+00:00,duplicate
+617240439138e80001ceb0bf,Elena,Fe***z,Underwriting Manager,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-09T09:53:34.000+00:00,duplicate
+60efbb9ce16cd6000178db9c,Jurgen,Re***t,Chief Underwriter Cyber,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-29T20:07:36.973+00:00,duplicate
+68033efe47b1a300010e73d6,Michael,Ew***s,CTO,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-06T07:17:08.000+00:00,duplicate
+57d8e11aa6da98723a16802d,Sabine,St***y,"Chief Underwriting Officer Agriculture, Americas & Europe",Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-27T00:52:51.039+00:00,duplicate
+5f48b0cc706d3d00012c81bc,Sophia,Wa***r,Chief Underwriting Officer and Global Head of Cyber - Munich Re Facultative and Corporate,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-18T17:49:44.000+00:00,duplicate
+67dd938dc82a8800011b8fa4,Monika,Ha***e,Global Chief Underwriting Officer Casualty Facultative & Corporate,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-24T18:43:03.000+00:00,duplicate
+6ad54c60a2054200012581c5,Marco,Pe***c,Head of Cyber Business Development and Underwriting,Munich Re,munichre.com,Munich Re Automation Solutions,2026-07-13T08:47:26.000+00:00,duplicate
+61e6d0eaa109d8000113b155,Luis,Ji***z,Head of Corporate Underwriting and Claims Life&Health Section,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-06T01:17:58.000+00:00,duplicate
+60ec42dd8dfaf40001b6ef21,Beatrix,Ha***r,"Chief Underwriting Officer Global Property, Facultative and Corporate",Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-12T22:15:16.000+00:00,duplicate
+638daf66292fb00001c939a9,Mirjam,Jo***h,Life Underwriting Manager,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-12T17:40:53.000+00:00,duplicate
+55e29ca9f3e5bb7d44004633,Stefan,We***r,Chief Underwriting Officer Aviation and Contingency & Crisis Management (Reinsurance),Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-25T04:37:03.099+00:00,duplicate
+66f8a74b1fb6a700010275cf,Martin,Br***l,Senior Project Manager - Digital Transformation,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T15:19:00.000+00:00,duplicate
+610b6a8c47bbfb0001aa2b57,Thomas,Ge***r,Chief Underwriter Germany Life/Health,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-18T16:54:22.000+00:00,duplicate
+54a7c0ce74686975f8027050,Alban,Se***n,Chief Medical Officer,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-18T03:21:04.169+00:00,duplicate
+6433ef761e2890000189f8e1,Christian,Ha***e,Head of New Business Origination DACH | Munich Re Markets,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-06T12:10:16.000+00:00,duplicate
+54ebf84c746869444c71c434,Harald,Sc***l,Underwriting Manager Casualty Fac. DACH & Digital Underwriting,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T06:00:31.000+00:00,duplicate
+610011af57d2030001ea0928,Henrik,Lu***d,Underwriting Manager - Energy Oil & Gas,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-15T19:17:03.467+00:00,duplicate
+60737a34ae7d09000151f968,Achim,Do***h,Underwriting Manager CIP Engineering - Construction,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-16T03:22:55.000+00:00,duplicate
+60f10d352829e50001383483,Mark,Sw***y,Underwriting Manager - Cyber - Europe & RoW,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-05T23:49:06.000+00:00,duplicate
+61001c5cd558ca00010203db,Ralf,Kr***r,Underwriting Manager Casualty - Lloyd‘s and Bermuda,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-10T21:05:14.000+00:00,duplicate
+619b6ab653a72c0001351919,Paul,Ze***k,CTO Risk Management Partners,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-12T11:16:58.431+00:00,duplicate
+610c4003a67f3f000107f3bf,Joachim,Ha***n,Underwriting Manager New Risk Solutions,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-06T15:58:19.000+00:00,duplicate
+60a7c42d4f4bd500012b3985,Julia,De***s,"Interim Global Chief Underwriting Officer Cyber, Munich Re Facultative & Corporate",Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-16T06:23:00.000+00:00,duplicate
+54a594ac7468692cf014009c,Michael,Bi***r,"Head of Underwriting Property Treaty Caribbean, Mexico & Central America",Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-13T06:23:24.000+00:00,duplicate
+57d4adf5a6da9853a6628fad,Steven,Wi***n,Senior Medical Consultant/Senior Medical Officer,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-31T05:31:28.231+00:00,duplicate
+66f2cade5bbb1200013ff18c,Declan,O'***l,"Head of Digital and Innovation Strategy, Life & Health Reinsurance, Europe and Latin America",Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-29T03:22:27.622+00:00,in-sales-nav
+60f9b920f311940001fee259,Cyrus,De***i,"Underwriting Manager Property Treaty, UK/Netjerlands/Nordics",Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-16T03:38:15.000+00:00,duplicate
+54a5ce797468693442e1d7a9,Betsy,Dr***e,Head of Product Cluster Input Management,Munich Re,munichre.com,Munich Re Automation Solutions,2026-08-06T21:07:28.348+00:00,duplicate
+60ffc51a8a4dab0001df0ac6,Keyvan,Iz***i,"Head of Digital Services, Life & Health",Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-09T06:38:41.000+00:00,in-sales-nav
+60ec42e40940e70001a74e27,Carsten,To***h,"Head of Cyber Underwriting and Business Development Central, Southern and Eastern Europe",Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T19:30:58.000+00:00,in-sales-nav
+6199bd85b97ea600014cde7d,Cosima,Es***r,Head of Client Management Life & Health,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T10:45:26.000+00:00,duplicate
+66f8b4561fb6a7000107e85f,Jack,St***w,"Property Fac Underwriting Manager - US, Bermuda & UK",Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-29T11:14:29.064+00:00,duplicate
+5d55f72680f93ef4762886e3,Jona,St***r,Head of Global Life Health Marketing Communications,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-20T01:01:36.000+00:00,duplicate
+5570848273696453823ca100,Matthias,Pi***e,Head of Casualty Treaty Underwriting,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-05T07:53:32.000+00:00,duplicate
+57dfe00ba6da980ac6bf6b3b,Christian,Gu***h,Head of Financial Controlling Life & Health (Section),Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T16:35:06.000+00:00,duplicate
+5e7d60341310f800011fb423,Judit,Ca***u,Head of Technical Reinsurance Accounting Life & Health,Munich Re,munichre.com,Munich Re Automation Solutions,2026-11-01T11:06:36.030+00:00,duplicate
+60f1d04d5411260001c5bd30,Simone,Al***t,Head of Credit Risk Underwriting,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-20T15:22:00.161+00:00,duplicate
+610c31314eaf8000014034ea,Maria,Fi***r,Head of Section Property Treaty Underwriting,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-24T07:57:45.000+00:00,duplicate
+61bcbb9fea7e020001ff77a7,Jennifer,H,Head of Section Data Maintenance and Processing Life&Health,Munich Re,munichre.com,Munich Re Automation Solutions,2025-05-29T18:57:57.517+00:00,in-sales-nav
+67a1df0452e0850001045d88,Sebastian,Kr***n,"Global Group Head of Innovation Investment Management, Managing Director 1880fwd GmbH & Apinity GmbH",Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-04T12:16:12.000+00:00,duplicate
+5f5f173b8247ec0001aa89df,Volker,Ho***a,Head of Business Development Life/Health for Continental Europe,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-20T11:51:49.000+00:00,in-sales-nav
+5d3a08dca3ae61ca7a12de2f,Bettina,Br***w,"Head of Claims Life&Health Europe, Israel and Latin America",Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T12:55:42.000+00:00,duplicate
+66ec30b3dac128000146d619,Ali,Ku***u,Head of Cyber Services and Innovation,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-30T21:06:34.517+00:00,in-sales-nav
+60080e61ac49e0000114fdde,Erwin,Acs,Head of Department Investment Steering Primary Insurance Life & Health,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-05T13:14:30.000+00:00,duplicate
+5570a0fe7369643174680c00,Alexander,Al***n,Section Head: Corporate Underwriting - Georisks,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T18:49:35.000+00:00,duplicate
+66a9bbedd7b8220001303e55,Oliver,Ku***l,Head of Property Treaty Underwriting Germany,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-17T13:14:23.952+00:00,duplicate
+60f6f648f1d1d200011ccb75,Ralph,Ho***n,Head of Legal & Distribution Corporate Underwriting,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-20T18:05:28.000+00:00,duplicate
+57e02171a6da980b5c7b4574,Kshiti,An***a,"Regional Head of IT Solution Delivery Life&health, Emea)",Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-08T09:50:28.000+00:00,duplicate
+5f5fd8db2ec16b00017e9109,Heike,Ma***s,"Head of Sustainability, Corporate Underwriting Non-life",Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-22T20:55:43.000+00:00,in-sales-nav
+5e2f364e3d3cc5000158ece2,Michael,He***z,Head of Project Delivery - Underwriting & Claims (Non-Life),Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T23:09:58.000+00:00,in-sales-nav
+54a284f37468692e719b9329,Stefanie,Re***s,"Head of Property, Agro, Contingency in Corporate Underwriting",Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-24T08:34:07.000+00:00,duplicate
+635685a219e9a40001a8fbba,Martin,Se***r,"Head of Actuarial Reporting Life/Health Reinsurance Europe, Latin America, Middle East",Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-12T18:54:02.783+00:00,duplicate
+66f8a8991fb6a7000102f0ba,Christian,He***l,Senior Project Manager at Corporate Underwriting Cyber,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-14T11:37:24.000+00:00,duplicate
+60f1dcadfdaca500014922cc,Stephan,Sc***r,Head of Property Treaty Underwriting - Global Clients / North America,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-22T00:34:25.070+00:00,duplicate
+60f9cb78460ffb00010f3357,Martin,Gr***l,"Head of Casualty Treaty Underwriting UK/Ireland, Netherlands, Nordics",Munich Re,munichre.com,Munich Re Automation Solutions,2025-05-14T06:18:25.984+00:00,duplicate
+57dc11e4a6da98688397b871,Alexander,Be***d,"Head of Corporate Underwriting Casualty, Marine, Aviation & Cross-Line",Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-12T11:29:49.000+00:00,duplicate
+672fb6a00d55d00001928c23,Manuela,Ge***n,"Head of Casualty Treaty Underwriting - Iberia, Latin America, Caribbean",Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-17T02:46:08.000+00:00,duplicate
+57d3dae7a6da9853e6401804,Simon,Se***r,Head of Casualty Treaty Underwriting Cee/see and Business Building & Operations,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-17T03:14:38.000+00:00,duplicate
+54a328947468693318f65358,Christoph,Bo***m,"Head of Property Treaty Underwriting Section (UK, Ireland, Netherlands, Nordics)",Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-24T13:38:21.000+00:00,duplicate
+6101571015a2490001c4009b,Bernhard,Ob***r,"Head of Department - Property Treaty Underwriting for UK/I, Nordics & Netherlands",Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-24T04:14:35.000+00:00,duplicate
+66ed62167373d80001a2ace8,Axel,St***n,"Head of Global IT Strategy, IT Governance, IT Compliance and Project Mgmt. Pool (Office of the CIO)",Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-19T09:08:40.000+00:00,duplicate
+6700abb51cdec9000136a6c8,Mithatcan,Ay***s,Property Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-17T22:21:21.150+00:00,duplicate
+616a4308fe8db800017167ee,Subhasis,Ra***r,Underwriting,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-08T15:09:47.715+00:00,duplicate
+66f8c06c1fb6a700010d53ba,Christoph,Wi***n,Chief Operating Officer and Chief UW Officer New Risk Solutions MR Facultative & Corporate,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-25T23:34:50.000+00:00,duplicate
+57d41751a6da98538e7433d5,Theresa,Mi***h,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-24T15:43:08.000+00:00,duplicate
+57db77b8a6da9868c295382e,Simone,St***h,Cyber Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-09T08:03:20.000+00:00,duplicate
+60e417275155e20001a851e3,Florian,De***n,Risk Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-21T14:54:14.000+00:00,duplicate
+57d987b0a6da98722a86c36e,Milan,Ka***r,Underwriter | Digital Assets,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-18T04:10:02.000+00:00,duplicate
+5ab743fea6da98af5494b5ab,Aneta,St***a,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-12T18:00:25.000+00:00,duplicate
+54aad22074686908c8151e1b,Nilton,Di***z,Corporate Power and Utilities Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T15:38:03.000+00:00,duplicate
+5f4eb80db4dddd0001a8ea62,Justus,Mu***r,Underwriter Marine,Munich Re,munichre.com,Munich Re Automation Solutions,2026-08-30T08:30:56.841+00:00,duplicate
+557096057369640914df5300,Elisa,Ta***o,Cyber Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-22T11:24:11.000+00:00,duplicate
+5e7ed6ce15cdce000197e999,Yassine,La***r,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-31T09:50:49.650+00:00,duplicate
+62e291b91ea6e70001cd07ef,Lancelot,Ke***s,Property Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-23T05:14:02.000+00:00,duplicate
+66ee48ee51f2cf00017ba38f,Malte,Sc***e,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-12T01:29:26.000+00:00,duplicate
+643e917091c9a90001a50642,Kity,Cu***n,Underwriter Contingency & Crisis Management,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-06T12:27:59.000+00:00,duplicate
+5e7716dbe5c317000118afc8,Nelvis,Fo***n,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-17T14:13:53.000+00:00,duplicate
+57d44290a6da98538e76e651,Maximilian,Sc***k,Aviation Underwriting,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-20T15:24:59.000+00:00,duplicate
+60f81f59ed895d0001b52109,Johan,Ro***z,Casualty Treaty Actuary & Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-10T17:17:33.000+00:00,duplicate
+61383338cddf9b00013c5f92,Sophie,Ha***n,Underwriter Middle East / North Africa,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-12T16:59:54.000+00:00,duplicate
+5e8be77959aea000017281c7,Georg,Ba***r,Underwriter E-Mobility,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-21T07:12:06.000+00:00,duplicate
+610c8eb3761fcc00019efe5d,Matthias,To***s,"Underwriter, Geologist",Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-21T20:39:03.000+00:00,duplicate
+60f5dc5edc56c00001505fe2,Florian,Wa***z,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-09T10:21:54.000+00:00,duplicate
+610aa463899e62000130a8a8,Uwe,Sc***r,Senior Cyber Business Consultant & Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-16T02:31:32.000+00:00,duplicate
+60f9c8c10847290001398f89,Carlos,Du***n,Casualty Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-05T13:23:28.000+00:00,duplicate
+60ee691081b4c6000112f06b,Christina,Ru***e,Property Treaty Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-04T12:39:07.000+00:00,duplicate
+60defba275b54c000193f05d,Johannes,St***l,Corporate Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T19:01:26.000+00:00,duplicate
+60f9b2dadb722a00014219a1,Klaus,Ma***r,Underwriter Financial Lines Facultative,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-22T11:18:51.000+00:00,duplicate
+60f260d51099220001e5bebe,Michael,Mc***r,"Casualty Treaty Underwriter, Munich Re US",Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-10T15:46:54.000+00:00,duplicate
+6352966ead10d90001774466,Markus,Wi***r,Underwriter Global Clients & Lloyd's,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-09T06:08:15.000+00:00,duplicate
+62eb68fd2ab2300001f193a2,Tessa,Ve***f,Legal Expert & Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-05T03:18:59.310+00:00,duplicate
+62ec600d2801a50001da806d,Anna,Sc***n,Underwriter Property Treaty Caribbean,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-05T16:59:20.000+00:00,duplicate
+57dd2c39a6da987af1206daf,Marc,Ro***s,Corporate Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-05T10:13:33.000+00:00,duplicate
+57d34501a6da9865801f854c,Marcelo,Ca***a,Underwriter at Specialty Re (Global Clients & North America),Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-24T00:04:58.000+00:00,duplicate
+626a415320afc9000194e96c,Rebecca,Am***r,Corporate Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-10T08:50:30.000+00:00,duplicate
+610c6465f9b82700017efb55,Laura,St***r,Underwriter Casualty Facultative,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T12:07:43.000+00:00,duplicate
+60eedb0b431a7b000161996b,Alex,Bo***d,Energy Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-15T21:09:23.987+00:00,duplicate
+69f1e1c2d6e24c000123fc67,Cornelia,We***l,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-10T19:42:54.000+00:00,duplicate
+5efefc915678db000160a444,Saskia,Ro***n,Property Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T14:10:38.000+00:00,duplicate
+6497d21bfe73e300017c7d4a,Maria,Ne***r,Underwriter Marine,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T22:18:03.000+00:00,duplicate
+60f03c3b4de2190001a6ed87,Kisnthrie,Na***o,Corporate Underwriter: Casualty,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-13T07:45:21.000+00:00,duplicate
+6113535e2fcbaa0001400b1e,Johann,Pa***l,"Senior Vice President, Senior Underwriter & Client Manager",Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-12T16:03:58.000+00:00,duplicate
+57da14a4a6da985b13b44eeb,Frank,Mu***d,Engineering Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-04T16:58:20.000+00:00,duplicate
+57d9aa5ca6da98724a5c52f5,Assia,Sc***n,Underwriter Green Solutions,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-15T16:53:05.000+00:00,duplicate
+659f114037e6bd0001290a30,Garima,Ka***i,Property Treaty Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-08T12:39:38.000+00:00,duplicate
+60ee6999fd73d8000114206f,Samy,Fa***h,Property Treaty Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-24T10:15:51.000+00:00,duplicate
+5e892b830df1560001d6ef65,Julian,Ru***z,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-26T13:28:02.356+00:00,duplicate
+60eee2a4082834000105a427,Sarah,Fa***i,Underwriter & Actuary,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-31T16:58:55.000+00:00,duplicate
+5f5adba0b8a8520001c5356a,Maria,Ba***a,Property Treaty Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-15T01:46:03.627+00:00,duplicate
+661a3c81fd96d40007b314af,Tewodros,Fe***e,Engineering Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-10T14:29:09.000+00:00,duplicate
+61c33cfd1a6e580001a714bc,Fernando,C,Energy Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-22T11:13:37.000+00:00,duplicate
+57d7eb9fa6da980a36d19091,Magdalena,No***a,"Client Underwriter | Trade Credit, Surety and Political Risk",Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-27T07:16:15.151+00:00,duplicate
+5fe5b1c6fa45bd000164f9d0,Patricia,Pu***e,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T12:30:13.000+00:00,duplicate
+610157c135d71d000128e8c6,Florian,Ri***s,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-22T14:02:31.000+00:00,duplicate
+663c9008bbd45d00018c1692,Ioana,Di***r,Corporate Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-28T16:06:09.775+00:00,duplicate
+63230417d4b86b0001efe163,Mayu,Sa***a,Engineering Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-28T01:35:03.398+00:00,duplicate
+616a567b310ea40001a4632c,Marco,Ni***y,Energy Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T05:56:05.000+00:00,duplicate
+5e859ddaa77a9e0001b6b656,Hanna,Du***e,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-22T07:36:29.000+00:00,duplicate
+60c3f83c95ab580001f33c1f,Christina,Le***r,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-04T13:40:42.000+00:00,duplicate
+60f0328d1fd0d100014b4aee,Marianne,Ja***n,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-04T22:24:17.000+00:00,duplicate
+5d56e2ccf651254ae2390298,Astrid,He***g,Underwriter Casualty Facultative,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-24T08:02:01.000+00:00,duplicate
+610c3e927dcc6d0001675f7b,Sarah,To***n,Underwriter Casualty Treaty Iberia,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-05T19:15:48.623+00:00,duplicate
+610ab8a6f6c2630001ee5ef3,Stefanie,Ma***i,Marine Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-30T08:19:18.496+00:00,duplicate
+65e3dfa714dfee0007bc2c2a,Tobias,Hi***r,Corporate Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-22T23:38:49.739+00:00,duplicate
+5f5a855c1e34c2000158f61a,Katrin,Ha***n,Corporate Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-24T06:31:18.000+00:00,duplicate
+60f6fbb0cf46bf00010b2afe,Tobias,Bo***h,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-06T15:25:37.922+00:00,duplicate
+6150742e200fab000130dff6,David,St***r,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-12T18:41:25.000+00:00,duplicate
+5e76e1d6d37a9a00012af875,Alexander,Vo***t,Risk Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2025-05-09T12:37:43.953+00:00,duplicate
+613a0ac1c8c2010001d8d441,David,Or***a,Underwriter Global Downstream Energy,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-06T11:28:56.000+00:00,duplicate
+54ab9f967468692ca19f3501,Daniel,Ba***o,"Chief UW and Claims L&H for Iberia (Spain and Portugal), Italia, Malta and Latin America",Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-12T22:41:39.000+00:00,duplicate
+6353ff542da8c00001393184,Christina,Sp***h,Property Treaty Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-29T11:16:37.826+00:00,duplicate
+5d65e5ff80f93e446e2da67b,Thabang,Ma***a,Property Treaty Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-06T04:08:09.000+00:00,duplicate
+54a3b98374686938ac7eec0d,Eduard,Ca***o,Energy Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-12T12:20:06.000+00:00,duplicate
+63a4359643bb9900014fce88,Hannah,Ka***n,Corporate Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-12T10:50:40.000+00:00,duplicate
+60feed2765a38700011b5477,Roland,Re***l,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T08:13:28.000+00:00,duplicate
+54c158a17468697af7e91100,Andreas,La***n,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-09T00:11:21.060+00:00,duplicate
+60fabf4faf52630001b3979b,Christoph,Ju***g,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T20:33:12.000+00:00,duplicate
+610ab90fdb3e090001e44bfc,Silke,Zi***l,Property Underwriter Facultative,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-24T08:33:31.000+00:00,duplicate
+60fa4733c1eab300019713dc,Martin,Li***r,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-08T09:45:23.000+00:00,duplicate
+6354215b10de04000109ce48,Max,Ha***h,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-28T04:41:26.579+00:00,duplicate
+616a4381936e010001db68be,Monika,Ba***r,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-04T09:39:38.000+00:00,duplicate
+60feed26bfa0fe0001e327b3,Christian,Ar***n,"Actuarial Consultant, Underwriter",Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-25T23:32:56.000+00:00,duplicate
+610b6aac63bb31000136150f,Albert,Do***r,Underwriter Agro Europe/Latin America,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-04T23:22:29.000+00:00,duplicate
+60ff8d3461dcf30001706112,Maria,Do***i,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-06T02:43:57.000+00:00,duplicate
+610adc4fb164f700014503ff,Ralf,Me***l,Property Treaty Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-08T12:19:20.000+00:00,duplicate
+6481f1b6cc1d3500014b5258,Michael,Ja***g,Underwriter Contingency,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-04T15:08:27.058+00:00,duplicate
+60fed56de98d4d00011851f8,Marco,Ma***n,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-12T06:22:52.000+00:00,duplicate
+695053bcb4ad650001295d2d,Dietmar,Cl***r,Underwriter Feuer Fak. für Deutschland bei Munich Re (Group),Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T20:12:15.000+00:00,duplicate
+5e71ef24436f1e00016e5f75,Cordula,El***g,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T08:02:37.000+00:00,duplicate
+5e5a49e79ac6aa000129f717,Sabrina,Gr***r,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-05T21:26:13.000+00:00,duplicate
+665601a9e192090001d281e7,Daniela,Be***d,Underwriter /Actuary Casualty Treaty Global Clients,Munich Re,munichre.com,Munich Re Automation Solutions,2026-03-02T14:30:17.109+00:00,duplicate
+57d3921ff651252beea0fb9e,Carolin,Su***t,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T08:16:44.000+00:00,duplicate
+5e8063870bc02200010cbb9b,Christian,Ma***l,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T05:04:06.000+00:00,duplicate
+54c1e3df7468697af7f1bf58,Michael,Bl***y,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-08T18:32:37.000+00:00,duplicate
+5e657113901d330001f450e4,Anna,Be***r,Property Treaty Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-12T19:54:50.000+00:00,duplicate
+60faadd128695a0001c152cc,Marco,La***k,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-12T10:03:56.000+00:00,duplicate
+5d51f28080f93e3dfa29f574,Claudia,Bu***f,Corporate Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-24T20:35:07.709+00:00,duplicate
+5adae829a6da9862ae84e650,Alexandra,Ma***s,Business Developer and Underwriter - AI Performance Risks,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-16T04:50:09.000+00:00,duplicate
+661638510e72460007b99917,Matthias,Ba***h,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-04T20:26:50.000+00:00,duplicate
+60ff8cf7997ff70001652ae1,Michael,Ra***h,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T15:59:37.401+00:00,duplicate
+5e7e3cfa53d6980001ce1dbf,Hendrik,Ba***h,Marine Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-04T18:54:44.000+00:00,duplicate
+5fe0136ef246380001f96a9c,Adrien,H,"Underwriter, Global Credit Solutions",Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T01:18:50.000+00:00,duplicate
+67c188320735ff0001fd4ebe,Laura,T,Underwriter Natural Resources/Energy,Munich Re,munichre.com,Munich Re Automation Solutions,2025-07-24T19:59:45.729+00:00,duplicate
+605d192979bd2a0001872ac1,Maika,Be***r,Corporate Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-08T06:24:15.000+00:00,duplicate
+63ea1fce3686e80001b04c63,Michael,Ho***r,Underwriter Contingency,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-24T16:59:51.000+00:00,duplicate
+673ad4e00badf9000163bf8a,Romanos,Pa***s,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T07:18:12.000+00:00,duplicate
+633f3f91f294860001e6d568,Yvonne,Sc***k,Marine Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-07-24T20:39:22.000+00:00,duplicate
+60f10f2a7facfc0001aa291b,Sebastian,La***r,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-05T13:03:47.000+00:00,duplicate
+54a4b459746869344232dc5c,Thomas,St***r,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-07T07:12:47.000+00:00,duplicate
+54a139c569702de5b3fe6200,Papaxenidis,Mu***r,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2025-10-05T23:32:52.191+00:00,duplicate
+57d6e803a6da9854594f0193,Friedrich,Sc***n,Underwriter Space,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-12T23:39:07.000+00:00,duplicate
+6357f20803a464000172a001,Juyang,Pa***k,Engineering Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-04T16:43:04.000+00:00,duplicate
+648091207eec6800016000a4,Felix,He***g,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-06T08:43:46.000+00:00,duplicate
+6359ff3257f31b0001ccec96,Katharina,K,Underwriting,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-28T12:31:46.776+00:00,duplicate
+54a2db817468693cdd58fa41,Hyun-Moo,Je***n,Engineering Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-25T19:26:21.000+00:00,duplicate
+610d3f757ec74f0001cd535a,Paul,Bu***g,Underwriter Marine,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-10T09:53:18.000+00:00,duplicate
+57dfdccba6da980b658bcda0,Cristina,He***s,Risk Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T04:30:29.000+00:00,duplicate
+5e713a5508143c00017d9376,Daniel,We***t,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T21:35:35.000+00:00,duplicate
+61274810b222210001af1734,Benedict,Ha***r,Underwriter | Cyber Reinsurance Central Europe,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-18T18:40:43.000+00:00,duplicate
+5f09ae313f6bd000018995c1,Katarzyna,Ga***a,Facultative Mining Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-05T07:28:21.000+00:00,duplicate
+611516953755370001e22556,Ryan,Ow***n,Corporate Underwriting,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-11T00:24:00.000+00:00,duplicate
+5e5be8870f3d54000190a37b,Catherine,To***n,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-07T05:48:18.000+00:00,duplicate
+5d473e0da3ae61babd68f186,Simon,Wa***e,Property Treaty Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-29T22:56:17.727+00:00,duplicate
+6138218ffd20000001c716b8,Mariana,Lu***a,Underwriter Munich RE,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-21T01:21:57.316+00:00,duplicate
+5e6890a43b99ff00011d6c3f,Johannes,Sc***d,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-21T07:39:01.000+00:00,duplicate
+610ae21743b0940001e9afb7,Klaus,Pa***n,Underwriter & Actuary,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-06T10:53:54.000+00:00,duplicate
+60f10ea8e67b200001d8ee9b,Kostas,Ar***u,"Underwriter, Dipl. Civil Engineer / Geologist",Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-09T08:05:37.000+00:00,duplicate
+616a42c604cf7400016ec722,Denise,Wo***r,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-09T07:41:05.000+00:00,duplicate
+63fccbdf5a91ff00010ce9aa,Martina,Fe***r,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-10T07:01:26.000+00:00,duplicate
+60dd33a80f0512000165fa5a,Ignacio,Go***a,Engineer - Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-12T17:09:15.000+00:00,duplicate
+6139f90a1e9a1000018cfbf6,Simon,Ba***r,Energy Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-24T12:00:24.825+00:00,duplicate
+60f5a2a59f8c98000141f1e1,Joachim,Pa***k,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-23T10:08:48.000+00:00,duplicate
+6102acbfb303f600012e9c3a,Deb,Ca***r,Property Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-12T14:02:19.000+00:00,persona-out
+60ff1bedaafdbc0001c36f31,Sabine,Fr***g,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-24T12:50:27.000+00:00,duplicate
+5f5377cdecf9190001ec2dd7,Oksana,K,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-09T00:24:49.000+00:00,duplicate
+610abe5c87c3820001141b49,Martina,Fo***r,Underwriter at Munich Re,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-10T07:02:26.000+00:00,duplicate
+6436888dbaddb10001c311d3,Amelie,Bo***p,Assistant Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-29T00:57:28.451+00:00,duplicate
+64905c4380c8e20001e5ee63,Katja,We***r,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2025-10-01T19:05:46.059+00:00,in-sales-nav
+55710c7873696431f9840200,Alison,Ty***l,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-22T22:18:30.000+00:00,persona-out
+5e6c0b93ddf4b40001f04fa5,Franziska,Th***o,Underwriter Property Treaty for Central America & Mexico,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-22T11:02:16.000+00:00,duplicate
+612a6d78d135e800016a764b,Christopher,Ja***s,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-04T10:39:21.000+00:00,duplicate
+5b31be6fa6da9840a9e4ef19,Abby,K,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-18T02:35:13.000+00:00,duplicate
+616a442a6f34120001f6e177,Andrea,Ma***s,Underwriter Marine,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-09T20:28:03.671+00:00,duplicate
+5e7e2dffc70cb900018f3c96,Florian,G,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T07:46:55.000+00:00,duplicate
+54a4e92d7468693209b3e66c,Andreas,Ma***s,"Corporate Underwriting, Business Consultant",Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-08T11:40:39.000+00:00,duplicate
+6aa618c061d9850001a3ee85,Wolfgang,Mo***n,DPO,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T04:14:40.000+00:00,duplicate
+54a4cd1a7468692cf06b8b64,Alexander,Ke***r,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T05:15:45.000+00:00,duplicate
+610d5a6aadc63100018c4fd1,Gunda,Ka***r,Underwriting,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-05T15:06:24.000+00:00,duplicate
+634728690b416000019466b9,Karl-Dusan,Ko***k,Property Treaty Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-05T18:39:54.000+00:00,duplicate
+617247a67705700001d828b1,Christina,Ja***s,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-06T02:20:10.000+00:00,duplicate
+54a4039f7468693b8c861425,Weber,Co***>,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-23T21:52:48.000+00:00,duplicate
+610c4ab70818e800017a4603,Bernd,Gu***r,Underwriter,Munich Re,munichre.com,Munich Re Automation Solutions,2026-09-08T17:40:34.000+00:00,duplicate
+64a8099f0e5b6c0001e48bfa,Dusan,Ko***k,ATZ- ex Underwriter Property Treaty,Munich Re,munichre.com,Munich Re Automation Solutions,2026-10-31T07:09:32.520+00:00,duplicate
