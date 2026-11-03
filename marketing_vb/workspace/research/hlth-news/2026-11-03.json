@@ -1,0 +1,97 @@
+{
+ "generated": "2026-11-03T05:40:22+00:00",
+ "items": [
+  {
+   "id": "522dbcb8-0137-4e11-b2c0-502ca0ac692a",
+   "title": "Zocdoc Integrates Real-Time Appointment Booking Into Instinct",
+   "date": "2026-11-02",
+   "tags": [
+    "Interoperability / Data Management",
+    "Care Coordination / Navigation / Care Access",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/zocdoc-integrates-real-time-appointment-booking-into-instinct"
+  },
+  {
+   "id": "de0c3da9-13d9-412b-aa4c-695843a6ec0c",
+   "title": "BCBSMA Partners With Medzown to Connect Members With Clinical Trials",
+   "date": "2026-11-02",
+   "tags": [
+    "Cancer Care",
+    "Payer (Insurer)",
+    "Precision Medicine / Genomics",
+    "Clinical Trial Solutions",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/bcbsma-partners-with-medzown-to-connect-members-with-clinical-trials"
+  },
+  {
+   "id": "f3d6ad0f-be88-492c-9463-a4b7dd184306",
+   "title": "Kivo Health Secures $10M to Expand Virtual COPD Care",
+   "date": "2026-11-02",
+   "tags": [
+    "Telehealth / Virtual Care / Remote Patient Monitoring",
+    "Investments and Partnerships",
+    "Startup",
+    "Health Tech, Solutions & Services",
+    "Chronic Condition Management"
+   ],
+   "url": "https://hlth.com/insights/news/kivo-health-secures-10m-to-expand-virtual-copd-care"
+  }
+ ],
+ "analyses": {
+  "522dbcb8-0137-4e11-b2c0-502ca0ac692a": {
+   "id": "522dbcb8-0137-4e11-b2c0-502ca0ac692a",
+   "score": 0,
+   "segment": "—",
+   "what": "Zocdoc підключає онлайн-запис до лікаря в реальному часі до AI-асистента Instinct через свій MCP-сервер. Instinct приєднується до Care Access Network разом із Google Gemini, Amazon Health AI та іншими.",
+   "why": "Новина про запис до лікаря й навігацію AI-агентів. Дані про тіло тут ніяк не задіяні, тож для FitXpress і Mobile Tailor немає жодного зв'язку.",
+   "play": "none",
+   "companies": [
+    "Zocdoc",
+    "Instinct",
+    "Google Gemini",
+    "Amazon Health AI",
+    "Yelp",
+    "Healthgrades",
+    "Blue Shield of California"
+   ],
+   "_date": "2026-11-02"
+  },
+  "de0c3da9-13d9-412b-aa4c-695843a6ec0c": {
+   "id": "de0c3da9-13d9-412b-aa4c-695843a6ec0c",
+   "score": 0,
+   "segment": "—",
+   "what": "BCBSMA і Medzown підбирають клінічні дослідження для членів страхового плану зі складними захворюваннями, насамперед онкологічними. Участь добровільна й безкоштовна.",
+   "why": "Це підбір онкологічних досліджень для пацієнтів, а не CRO чи метаболічне дослідження, де потрібні вимірювання тіла. У статті немає нічого, що стосується ICP FitXpress §7.",
+   "play": "none",
+   "companies": [
+    "Blue Cross Blue Shield of Massachusetts",
+    "BCBSMA",
+    "Medzown",
+    "Thyme Care"
+   ],
+   "_date": "2026-11-02"
+  },
+  "f3d6ad0f-be88-492c-9463-a4b7dd184306": {
+   "id": "f3d6ad0f-be88-492c-9463-a4b7dd184306",
+   "score": 1,
+   "segment": "—",
+   "what": "Kivo Health залучила $10M у раунді Series A на віртуальну легеневу реабілітацію для літніх людей із COPD у США. До програми входять домашній набір (планшет, пульсоксиметр), групові відеосесії й віддалений моніторинг, далі компанія планує розширюватися на інші хронічні стани.",
+   "why": "У статті немає ні ваги, ні BMI, ні складу тіла: це дихальна реабілітація, а не програма контролю ваги. Зв'язок із FitXpress лише через загальний тренд віддаленого моніторингу (RPM), конкретного use case немає.",
+   "play": "none",
+   "companies": [
+    "Kivo Health",
+    "Allumia Ventures",
+    "Corewell Health Ventures",
+    "Y Combinator",
+    "Heuristic Capital",
+    "MassMutual Ventures"
+   ],
+   "caveat": "Аудиторія — літні пацієнти з COPD. Про потребу в метриках тіла в статті не сказано нічого, тож будь-яка гіпотеза про BMI була б нашою вигадкою.",
+   "_date": "2026-11-02"
+  }
+ },
+ "posts": []
+}
