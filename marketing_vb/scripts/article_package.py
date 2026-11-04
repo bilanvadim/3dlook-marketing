@@ -260,14 +260,31 @@ def build_checklist(slug: str):
     h2s = [l[3:].strip() for l in body.splitlines() if l.startswith("## ")]
     kw_in_h2 = sum(1 for h in h2s if kw_l and kw_l in h.lower())
 
-    text_l = body.lower()
+    # Claim markers (<!-- claim: MT-CASE-SAFARILAND -->) are stripped before the CMS,
+    # so a client name inside a claim ID is not a named entity on the page
+    # (false positive, 2026-11-04, virtual-clothing-try-on refresh).
+    text_l = re.sub(r"<!--.*?-->", "", body, flags=re.S).lower()
+    # FitXpress-health template items (medical framing, boundary section, scope
+    # note) do not apply to Mobile Tailor apparel articles (2026-11-04).
+    is_mt = (cp.get("product") or plan_fm.get("product") or "") == "mobile_tailor"
+    # Link directions: require the ones the pack actually defines; all four when
+    # the pack defines none (the MT pack has no "down" landing, landing-map is FX-only).
+    targets = (cp.get("content_strategy") or {}).get("internal_link_targets") or {}
+    pack_dirs = []
+    for d in ("up", "sideways", "down", "trust"):
+        want = targets.get(d)
+        want = [want] if isinstance(want, str) else (want or [])
+        if any(str(u).startswith("http") for u in want):
+            pack_dirs.append(d)
+    need_dirs = pack_dirs or ["up", "sideways", "down", "trust"]
     named_hits = sorted({n for n in NAMED_ENTITIES if n.lower() in text_l})
     stale_hits = [u for u in STALE_URLS if u in body]
     links_ok, links_note = check_links(body)
     med = body.count("FitXpress is not a medical device.")
     positioned = len(re.findall(r"positioned as", body, re.I))
     faq_qs = 0
-    faq_at = body.find("## FAQ")
+    m_faq = re.search(r"^## (FAQ|Frequently asked questions)", body, re.M | re.I)
+    faq_at = m_faq.start() if m_faq else -1
     if faq_at >= 0:
         faq_qs = len(re.findall(r"^### ", body[faq_at:], re.M))
     not_do = bool(re.search(r"^##.*does not do", body, re.M | re.I))
@@ -332,9 +349,10 @@ def build_checklist(slug: str):
              f"{words} слов против target {target} (полоса линтера ±15%; "
              f"жёсткие ±10% = {'ok' if words and target and abs(words-target)/target <= 0.10 else 'MISS — отметить в open items'})"),
         item("links_4_directions",
-             all(g_links.get(d, 0) >= 1 for d in ("up", "sideways", "down", "trust")),
-             f"направления: {g_links}"),
-        item("medical_framing", med >= 1 and positioned == 0,
+             all(g_links.get(d, 0) >= 1 for d in need_dirs),
+             f"направления: {g_links}; обязательные по паку: {need_dirs}"),
+        item("medical_framing", (is_mt or med >= 1) and positioned == 0,
+             ("n/a для Mobile Tailor; " if is_mt else "") +
              f"«FitXpress is not a medical device.» ×{med}; "
              f"«positioned as» ×{positioned}", block="compliance"),
         item("no_named_entities", not named_hits,
@@ -353,9 +371,11 @@ def build_checklist(slug: str):
              f"mean {_gate(lint, 'sentence').get('info', {}).get('mean_words')}"),
         item("faq_present", faq_at >= 0 and faq_qs >= 2,
              f"FAQ: {faq_qs} вопросов"),
-        item("boundary_section", not_do or scope_note,
+        item("boundary_section", is_mt or not_do or scope_note,
+             ("n/a для Mobile Tailor; " if is_mt else "") +
              f"«does not do»-секция: {not_do}; scope note сверху: {scope_note}"),
-        item("scope_note_early", scope_note,
+        item("scope_note_early", is_mt or scope_note,
+             ("n/a для Mobile Tailor; " if is_mt else "") +
              "курсивная scope note в первых строках"),
     ]
     ctx = {
