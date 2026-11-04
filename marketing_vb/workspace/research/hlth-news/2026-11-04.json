@@ -1,0 +1,87 @@
+{
+ "generated": "2026-11-04T05:40:20+00:00",
+ "items": [
+  {
+   "id": "5c45ac98-4d63-424b-923a-92a7024f1ce8",
+   "title": "athenahealth Launches athenaPatient MCP to Connect Patient Records With Anthropic’s Claude",
+   "date": "2026-11-03",
+   "tags": [
+    "Interoperability / Data Management",
+    "Patient Engagement / Experience",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/athenahealth-launches-athenapatient-mcp-to-connect-patient-records-with-anthropic-s-claude"
+  },
+  {
+   "id": "2001d264-19f3-43cd-ae1a-a6ec8dc833b3",
+   "title": "StimCardio Raises $30M to Advance Wearable Atrial Fibrillation Therapy",
+   "date": "2026-11-03",
+   "tags": [
+    "Investments and Partnerships",
+    "Startup",
+    "Diagnostics",
+    "Digital Medicine",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/stimcardio-raises-30m-to-advance-wearable-atrial-fibrillation-therapy"
+  },
+  {
+   "id": "30b26caf-b78b-4f4b-b489-fd6fef971af4",
+   "title": "Glooko Launches EndoTool IV Cloud to Improve Hospital Glycemic Management",
+   "date": "2026-11-03",
+   "tags": [
+    "Cyber Security",
+    "Operational Efficiency",
+    "Health System & Health Provider",
+    "Health Tech, Solutions & Services",
+    "Chronic Condition Management"
+   ],
+   "url": "https://hlth.com/insights/news/glooko-launches-endotool-iv-cloud-to-improve-hospital-glycemic-management"
+  }
+ ],
+ "analyses": {
+  "5c45ac98-4d63-424b-923a-92a7024f1ce8": {
+   "id": "5c45ac98-4d63-424b-923a-92a7024f1ce8",
+   "score": 0,
+   "segment": "—",
+   "what": "athenahealth запустила athenaPatient MCP: пацієнти в США можуть підключити свою EHR до Claude і питати про аналізи, ліки, vital signs і діагнози. Доступно для підписників Claude Pro та Claude Max.",
+   "why": "Це інтеграція EHR зі споживчим AI-асистентом. До даних про тіло, BMI чи програм схуднення вона не стосується, тож для FitXpress тут немає ні тригера, ні акаунта.",
+   "play": "none",
+   "companies": [
+    "athenahealth",
+    "Anthropic"
+   ],
+   "_date": "2026-11-03"
+  },
+  "2001d264-19f3-43cd-ae1a-a6ec8dc833b3": {
+   "id": "2001d264-19f3-43cd-ae1a-a6ec8dc833b3",
+   "score": 0,
+   "segment": "—",
+   "what": "StimCardio залучила $30M Series A на Rhyvive, носимий на зап'ясті пристрій для неінвазивної стимуляції нерва при фібриляції передсердь. Гроші підуть на pivotal-дослідження NeuroPulse 2 і на підготовку De Novo подання до FDA.",
+   "why": "Це терапевтичний кардіо-девайс. Антропометрія, BMI чи склад тіла в цій історії не фігурують, тож для 3DLOOK немає точки входу.",
+   "play": "none",
+   "companies": [
+    "StimCardio",
+    "Metis Medtech",
+    "Catalyst Health Ventures",
+    "Apple",
+    "Google"
+   ],
+   "_date": "2026-11-03"
+  },
+  "30b26caf-b78b-4f4b-b489-fd6fef971af4": {
+   "id": "30b26caf-b78b-4f4b-b489-fd6fef971af4",
+   "score": 0,
+   "segment": "—",
+   "what": "Glooko запустила EndoTool IV Cloud, хмарну систему розрахунку доз внутрішньовенного інсуліну для лікарень. Продукт уже продається в США.",
+   "why": "Це клінічний інструмент для стаціонару, що допомагає лікарям дозувати інсулін біля ліжка пацієнта. Віддалений трекінг тіла чи перевірка BMI тут не потрібні. Glooko працює і з амбулаторним діабетом, але ця новина не дає приводу для outreach.",
+   "play": "none",
+   "companies": [
+    "Glooko"
+   ],
+   "_date": "2026-11-03"
+  }
+ },
+ "posts": []
+}
