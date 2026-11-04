@@ -1,0 +1,138 @@
+source: HubSpot AEO, portal 6014382, via scripts/hubspot-aeo.py topic
+pulled: '2026-11-04'
+window:
+  from: '2026-10-05'
+  to: '2026-11-04'
+assistants:
+- ChatGPT
+- Gemini
+- Perplexity
+seed: virtual try-on clothes
+portal_visibility_avg: 32.6
+tracked_prompts_total: 25
+note: 'visibility = % of AI answers that name 3DLOOK. match = shared rare words with the topic, an ordering
+  hint only: judge relevance yourself. Prompt texts are raw buyer queries (they may say DEXA); canon wording
+  still applies in the article.'
+matched_prompts:
+- id: 565780359239
+  prompt: Which body scanning tools are suitable for health and wellness apps that need HIPAA or GDPR
+    controls?
+  visibility: 68
+  phase: CONSIDERATION
+  icp: Telehealth & Weight-Loss Segment
+  match: 2.06
+  runs_checked: 0
+  runs_naming_3dlook: 0
+  ai_cites: []
+- id: 565767450188
+  prompt: Which body scanning APIs are easiest to integrate into a fitness or wellness app?
+  visibility: 61
+  phase: CONSIDERATION
+  icp: Connected & Digital Fitness Segment
+  match: 2.06
+  runs_checked: 0
+  runs_naming_3dlook: 0
+  ai_cites: []
+- id: 565540613660
+  prompt: What body scanning SDKs work for fitness apps with remote users?
+  visibility: 78
+  phase: CONSIDERATION
+  icp: Connected & Digital Fitness Segment
+  match: 2.06
+  runs_checked: 0
+  runs_naming_3dlook: 0
+  ai_cites: []
+- id: 565540613659
+  prompt: What’s the best body composition tracking software for a fitness app that wants smartphone-based
+    scans? Include sources.
+  visibility: 45
+  phase: CONSIDERATION
+  icp: Connected & Digital Fitness Segment
+  match: 2.06
+- id: 554650727322
+  prompt: What are the top mobile body scanning APIs for health apps?
+  visibility: 67
+  phase: CONSIDERATION
+  icp: Telehealth & Weight-Loss Segment
+  match: 2.06
+- id: 565780359240
+  prompt: What body measurement tools minimize exposure of personal data during remote scans?
+  visibility: 12
+  phase: CONSIDERATION
+  icp: Telehealth & Weight-Loss Segment
+  match: 1.53
+- id: 565767449918
+  prompt: What’s the difference between measurement accuracy and repeatability in AI body scanning?
+  visibility: 0
+  phase: AWARENESS
+  icp: Telehealth & Weight-Loss Segment
+  match: 1.53
+- id: 565780362499
+  prompt: How accurate are smartphone body scanning tools compared with manual measurements? Include limitations.
+  visibility: 2
+  phase: AWARENESS
+  icp: Telehealth & Weight-Loss Segment
+  match: 1.53
+no_prompt_covers_topic: false
+open_recommendations:
+- id: 184940079
+  priority: HIGH
+  type: URL
+  status: NEW
+  title: Get 3DLOOK INC. featured in robosize.com's "Free Body Scanning Tools Guide"
+  content_title: null
+  content_topic: null
+  summary: Reach out to the editorial team or article author with a tailored addition positioning 3DLOOK
+    INC. as a retailer-ready mobile 3D body scanning platform that goes beyond raw measurements by delivering
+    80+ measurements from two smartphone photos, virtual try-on, and size recommendation workflows. Ask
+    for a new comparison entry or expert-note update that clarifies where 3DLOOK fits in the guide's key
+    distinction between developer demos, consumer scan apps, and end-to-end retail sizing platforms.
+  influencing_citations: []
+  match: 10.51
+- id: 184113103
+  priority: MEDIUM
+  type: URL
+  status: NEW
+  title: Get 3DLOOK INC. featured in fit3d.com's "Best 3D Body Scanners"
+  content_title: null
+  content_topic: null
+  summary: Contact the Fit3D editorial team or article author with a smartphone-first alternative angle
+    for fitness studios, emphasizing 3DLOOK INC.'s two-photo, hardware-free body measurement and body
+    composition capabilities for non-invasive assessments. Request an update that adds 3DLOOK INC. as
+    a recommended option for operators who want virtual body measurement without dedicated scanner hardware.
+  influencing_citations: []
+  match: 4.83
+- id: 184742664
+  priority: HIGH
+  type: CONTENT
+  status: NEW
+  title: Create a product page on mobile body composition tracking
+  content_title: Mobile Tailor for Body Composition Tracking
+  content_topic: null
+  summary: Position Mobile Tailor as a smartphone based body scanning solution for fitness and telehealth
+    apps that need fast progress tracking and precise body composition related measurements without hardware.
+  influencing_citations: []
+  match: 3.22
+- id: 184940145
+  priority: MEDIUM
+  type: CONTENT
+  status: NEW
+  title: Create a product page on fitness app body scanning
+  content_title: Fitxpress for Fitness App Body Composition
+  content_topic: null
+  summary: Position Fitxpress as the smartphone-based body composition tracking solution for fitness apps
+    with fast API-ready onboarding, precise measurements, and no-hardware user capture.
+  influencing_citations: []
+  match: 3.22
+- id: 184940146
+  priority: MEDIUM
+  type: CONTENT
+  status: NEW
+  title: Create a comparison listicle on body composition software
+  content_title: Best Body Composition Software for Fitness Apps
+  content_topic: null
+  summary: Create a decision-stage comparison listicle that evaluates smartphone-based body composition
+    tracking software for fitness apps across SDK readiness, measurement accuracy, privacy safeguards,
+    and source-backed differentiation.
+  influencing_citations: []
+  match: 3.22

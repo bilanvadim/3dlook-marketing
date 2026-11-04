@@ -1,0 +1,497 @@
+# Context pack built by context-pack-builder 2026-11-04, saved by the coordinator; coordinator_decisions added.
+context_pack:
+  created: 2026-11-04
+  product: mobile_tailor
+  track: seo
+  channel: blog
+  slug_workspace: virtual-clothing-try-on-mt-refresh
+  live_slug: virtual-clothing-try-on
+  live_url: https://3dlook.ai/content-hub/virtual-clothing-try-on/
+  target_agent: seo-planner (then seo-writer, seo-editor, seo-publisher read the same pack)
+  action_type: refresh-reposition-in-place
+  objective: 'Rewrite the live 2023 post "Virtual Try-on for Clothing: The Future of Fashion?" so it keeps its try-on
+    search traffic (~100 clicks/month before the 2026-09-24 noindex) and bridges to Mobile Tailor: try-on shows
+    how a garment looks; fit and size come from body measurements, which is where Mobile Tailor sits (made-to-measure,
+    custom apparel, formalwear rental, uniforms). Remove every YourFit mention and number. 3DLOOK does not sell
+    try-on visualization today. Never imply Mobile Tailor renders garments on a person.
+
+    '
+  brief_files:
+    gap_analysis: workspace/seo/articles/virtual-clothing-try-on-mt-refresh/refresh-gap-analysis.md
+    baseline_live_text: workspace/seo/articles/virtual-clothing-try-on-mt-refresh/published-live-2026-11-04.md
+  phase_0: overridden by Vadim 2026-11-04, refresh-reposition-in-place, same URL
+  voice_note: 'Mobile Tailor path. about-me.md / audience.md (FitXpress health voice) and FXS-* claims are NOT applied.
+    Tone: CLAUDE.md §6 + blog-style-guide (2026: measured, hedged, workflow-framed). Default author Assel Sekerova
+    unless Vadim/Asel keep the 2023 byline (open item).'
+  company_oneliner: 3DLOOK turns two smartphone photos into a 3D body model and 80+ body measurements in 45 seconds,
+    via API and SDK.
+  product_summary: 'Mobile Tailor (apparel and uniforms): same scanning technology as FitXpress, optimized for garment
+    fit.
+
+    Hero (messaging.md): "80+ body measurements from 2 photos for precise custom fit, without an in-person fitting."
+
+    Sold to MTM brands, on-demand manufacturers, uniform companies, custom alterations.
+
+    KPIs it moves: return rate due to fit, cost per remake, order-to-delivery time, AOV / repeat purchase.
+
+    '
+  content_strategy:
+    hub: Apparel (Mobile Tailor), no content-plan row
+    cluster: Virtual Try-On / Sizing (inventory section)
+    intent: Informational/MOFU (try-on research) with a Mobile Tailor bridge
+    action_type: refresh-reposition-in-place
+    priority: Vadim explicit go 2026-11-04
+    existing_urls:
+    - https://3dlook.ai/content-hub/virtual-clothing-try-on/
+    cannibalization_guardrail: virtual-fitting-room-for-ecommerce and ar-clothing-try-on-tools cover close topics.
+      This post owns the broad 'virtual try-on clothes' query and links to them for depth; it does not copy their
+      sections. (gap analysis §3.8)
+    recommendation: Try-on stays the primary intent; Mobile Tailor answers one sub-question inside it (fit and size).
+      Bridge = 1-2 sections plus CTA, ~20-30% of text. Length 1,900-2,400 words (live ~2,350). Keep Virtual Try-On
+      in H1 and title. Same slug, no redirect (94 live referring domains, 133 backlinks). Do not turn it into an
+      MT product page (answer to Asel's objection).
+    vertical_boundary: Apparel try-on vs measurement. Never say or imply Mobile Tailor does virtual try-on or renders
+      garments on a person. Mention of YourFit (even 'formerly') is forbidden. Tailoor-style 3D configurators may
+      be described only as consuming measurements from Mobile Tailor, see approved_claims MT-CFG.
+    internal_link_targets:
+      up:
+      - https://3dlook.ai/mobile-tailor/
+      sideways:
+      - https://3dlook.ai/content-hub/virtual-fitting-room-for-ecommerce/
+      - https://3dlook.ai/content-hub/ar-clothing-try-on-tools/
+      - https://3dlook.ai/content-hub/body-measurement-app-for-clothing/
+      - https://3dlook.ai/content-hub/how-to-take-your-body-measurements-at-home/
+      - https://3dlook.ai/content-hub/body-scanning-technology-for-apparel/
+      - https://3dlook.ai/content-hub/on-demand-clothing-manufacturing/
+      trust:
+      - https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/
+      optional_down:
+      - https://3dlook.ai/mobile-tailor/for-on-demand-manufacturing/
+      notes:
+        up: 'primary CTA: Mobile Tailor product page'
+        sideways: pick 2-3 fit/measurement posts + link the two cannibalization-depth posts where their topic is
+          mentioned
+        trust: one bridge paragraph with the verbatim accuracy formulation (MT-ACC-SECONDARY) links here; lint requires
+          every direction covered
+        optional_down: only if on-demand manufacturing is mentioned (not a lint direction)
+      gap_analysis_pick_rule: 2-3 apparel posts beyond the CTA (§3.8); restore 2-3 try-on-anchor links from apparel
+        posts at republish (§6 step 5)
+    note_apparel_slugs: 'The stable live_slugs list below is FitXpress-only. Apparel slugs were checked against
+      published-articles-inventory.md (lines 222, 225, 232, 322-329, 337), all listed as published. Not HTTP-checked:
+      run the link-200 check before publish.'
+  approved_claims:
+  - id: MT-HERO
+    text: 80+ body measurements from 2 photos for precise custom fit, without an in-person fitting.
+    source: messaging.md Mobile Tailor MTM hero; use-cases/mt-made-to-measure.md
+    note: 'Anti-positioning: say ''remove unnecessary fittings'', never ''replace your in-person fitting'' (messaging.md).'
+  - id: MT-SPEED
+    text: Two photos (front + side); structured outputs in under 45 seconds.
+    source: 'proof-points.md Speed; the only public timing definition: ''under 45 seconds from the photos to structured
+      results'' (tech-spec.md, Vadim 2026-09-23)'
+  - id: MT-OUTPUTS
+    text: 80+ body measurements.
+    source: proof-points.md Output coverage
+    note: Always 'body measurements', never 'body metrics'.
+  - id: MT-PIPE
+    text: Production-ready measurements and 3D models that streamline pattern, design, and OMS automation.
+    source: messaging.md Mobile Tailor On-Demand Manufacturing hero
+  - id: MT-UNIFORM
+    text: Measure large groups remotely to reduce fitting events, alterations, and order-to-delivery time.
+    source: messaging.md Mobile Tailor Uniform Fitting hero
+  - id: MT-RETENTION
+    text: 4 legacy Mobile Tailor customers have 5+ years of retention.
+    source: proof-points.md Aggregate; mt-made-to-measure.md
+    note: Use only as a durability point, not tied to a named client.
+  - id: MT-CFG
+    text: 'Tailoor: AI-powered 3D configurator for custom apparel (reference customer).'
+    source: use-cases/mt-made-to-measure.md; gap analysis §3.5
+    note: 'OPEN ITEM: naming Tailoor publicly is not cleared by canon, see open_items. Default: unnamed (''a 3D
+      configurator for custom apparel'').'
+  - id: MT-CLIENTS
+    text: 3DLOOK has worked with 100+ clients.
+    source: 'proof-points.md Aggregate, Vadim 2026-09-30: the one public client count'
+    note: 'Never ''100+ clients use ...'', ''today'', ''already use''. 67 active customers, 112,100 scans, ARR,
+      per-client scan counts: NOT public.'
+  - id: MT-IEEE
+    text: Winner, 2019 Retail Digital Transformation Grand Challenge, run by the 3D Retail Coalition with Kalypso
+      and IEEE. / Participant in the IEEE 3D Body Processing working group, which is developing standards for mobile
+      body scanning.
+    source: proof-points.md, terminology-guardrails.md §2.11
+    note: Optional. These two sentences only, verbatim.
+  - id: MT-ACC-SECONDARY
+    text: 3DLOOK's measurement accuracy of approximately 96-97% across body metrics, with a typical absolute error
+      of 1.5-2.0 cm per measurement, varying by body part
+    source: accuracy-formulations.md §1.1, verbatim
+    note: SECONDARY, only if the bridge discusses accuracy. Must carry its reference (expert manual measurement)
+      and link to mobile-body-scanning-accuracy in the same paragraph. Never mixed with ISO 8559 0.40 cm. Repeatability
+      only as 'less than 1 cm' (accuracy-formulations.md §1.2/§5). Per-measurement numbers not for blog.
+  - id: MT-CASE-SAFARILAND
+    text: 'Safariland: custom-fit PPE; Mobile Tailor scanning integrated into the customer ordering flow; 80+ measurements
+      feed pattern and manufacturing pipeline; measurement consistency to avoid remakes.'
+    source: case-studies/safariland.md
+    note: 'CONDITIONAL on the naming rule (open_items #1). No outcome percentages (file: confirm with Vadim). Never
+      ARR or scan count.'
+  - id: MT-CASE-JIMS
+    text: 'Jim''s Formal Wear: wedding parties scan from their own phones; results feed customization for each member;
+      used for nearly 5 years.'
+    source: case-studies/jims-formal-wear.md (file marks SEO use as 'example' for distributed group measuring)
+    note: 'CONDITIONAL on open_items #1. Never $51K ARR or 3,200 scans.'
+  claims_NOT_to_use_here:
+  - 'YourFit: any mention, ''formerly'', history, and all YourFit figures (48% fewer returns, TA3 Swim 47%, +31%
+    engagement, +16% conversions, +23% AOV). TA3 Swim is a YourFit case: drop it.'
+  - Anything implying Mobile Tailor does virtual try-on, garment rendering or visualization on a person
+  - Covid framing; 2017-2024 stats not re-verified from a primary source (Statista AR $198bn forecast, Body Labs,
+    Zeekit/Memomi, MySizeID unless confirmed current)
+  - Per-client scan counts, ARR, 67 active customers, 112,100 scans (not website material)
+  - Outcome percentages for clients (e.g. 'reduced returns by X%') unless a number exists in proof-points.md with
+    a source
+  - '''free trial'' wording and any trial duration or scan counts in body copy. faq.md/pricing.md: no self-serve
+    trial, site action is ''Book a demo''. Conflicts with the 7-day trial in gap analysis §3.9, see open_items #2'
+  - 'MT pricing figures (faq.md: custom enterprise contracts; ARR ranges are internal)'
+  - '''replace your in-person fitting''; ''most accurate body scanning''; ''AI-powered'' as a standalone value'
+  banned_claims_stable:
+  - most accurate body scanning / best-in-class (без конкретного бенчмарка)
+  - любая цифра точности, сведённая к одному универсальному числу без условия decision/reference/protocol/population/tolerance
+  - guaranteed compliance / «makes you compliant» / guaranteed outcomes
+  - любое число не из approved_claims
+  - named competitor comparisons (Prism Labs, Bodygram, Size Stream и др.)
+  - HIPAA compliant / HIPAA certified / SOC 2 certified / FDA-cleared
+  - '«no personal identifiers» / «no personal data» — retired 2026-09-18: фото и измерения могут быть персональными
+    данными'
+  - «processed, not stored» — выводы хранятся on an ongoing basis
+  - «95%+ repeatability consistency» — внутренняя цифра, НЕ публикуется
+  - IEEE-certified / -recognized / -validated / -backed, 'IEEE Grand Challenge', 'member of IEEE standards' (only
+    the two approved sentences in MT-IEEE)
+  - 'reserved words on our own evidence: independent, third-party, validated, clinically validated, peer-reviewed'
+  - em dash (— –) anywhere; DEXA (use DXA, 'DXA (also written DEXA)' only as a search term)
+  banned_words:
+  - comprehensive
+  - delve
+  - disrupt
+  - groundbreaking
+  - harness
+  - leverage
+  - realm
+  - revolutionary
+  - robust
+  - seamless
+  - tapestry
+  - unparalleled
+  terminology: Механические запреты НЕ дублируются здесь. Писатель читает brand-assets/style-guides/hard-bans-card.md
+    (generated). Судейские строки (corrective negation, we/our, you, buyer/customer, organization, ярлыки контент-плана
+    в заголовках) остаются в terminology-guardrails.md за редактором.
+  tone:
+    voice: calm, specific, evidence-led; hedged 2026 tone, not the 2023 industry-hype tone of the live text; the
+      reframe move stated as a claim
+    sentences: average < 16 words (article_lint gate 10)
+    format: try-on stays primary; H2s map to query clusters (gap analysis §3.3); bridge section placed where the
+      live 'Replicating real garments in the digital world' sits; product-page link in a body section, not the intro
+      (blog-style-guide)
+    audience_note: Traffic is mostly consumers and students (India 142 clicks, US 76, UK 51 of 12 months); buyer
+      for the bridge is MTM/uniform/formalwear operator. Write the answer for the consumer query first, then the
+      operator bridge.
+  icp_context:
+    segments:
+    - MTM Brands & Tailors
+    - Uniform Companies
+    - On-Demand Manufacturers (secondary)
+    buyer_persona: Founder/CEO (small MTM brands), Head of E-commerce, VP Operations; for uniforms VP Operations
+      / Director of Procurement
+    pain_points:
+    - Manual measuring is slow, inconsistent and hard to scale
+    - High remake and alteration costs; margin pressure from remakes
+    - Uncertain fit lowers conversion; shoppers hesitate to order custom clothing online
+    - Unreliable remote measuring; international onboarding is hard
+    hero_message: 80+ body measurements from 2 photos for precise custom fit, without an in-person fitting.
+    do_not_say:
+    - no try-on or garment visualization capability
+    - no replacement of in-person fitting in absolute terms
+    - no invented outcome percentages
+    competitors_context: Name no competitors (public content rule). Mirrorsize and Bodd are the apparel-side competitors;
+      not needed here.
+  published_inventory:
+    already_live: true
+    live_modified: '2026-09-24'
+    robots_state: noindex, follow; restore index at republish (gap analysis §6)
+    related_apparel_live:
+    - virtual-fitting-room-for-ecommerce
+    - ar-clothing-try-on-tools
+    - virtual-dressing
+    - size-recommendation-tools
+    - sizing-solutions-for-fashion-brands
+    - body-measurement-app-for-clothing
+    - how-to-take-your-body-measurements-at-home
+    - body-scanning-technology-for-apparel
+    - on-demand-clothing-manufacturing
+    - apparel-return-rates-the-stats-retailers-cannot-ignore
+    - solving-the-800m-problem-of-apparel-returns
+    refresh_status: 'no prior refresh recorded in inventory; precedents for refresh-in-place: accuracy-roi-telehealth-refresh,
+      bariatric-hub-refresh, glp-1-market-hub-refresh'
+  live_slugs:
+  - mobile-body-scanning-patient-engagement
+  - the-potential-of-ai-in-telehealth
+  - ai-in-fitness-industry
+  - ai-body-data-health-hub
+  - clinical-trial-anthropometric-measurement-software-obesity-trials
+  - occupational-health-screening-software
+  - mobile-body-scanning-accuracy
+  - top-7-remote-body-composition-tools-glp-1-clinics
+  - online-pharmacy-bmi-verification-a-2026-compliance-guide
+  - glp-1-market
+  - bariatric-pre-qualification-mobile-3d-body-scanning
+  - remote-body-measurement-online-fitness-coaching
+  - ai-body-data-wellness-platforms
+  - fitxpress-data-privacy-security-regulatory-faq
+  - manual-vs-digital-intake-occupational-health-screening
+  recently_published: []
+  gsc_evidence:
+    baseline: '~100 clicks/month until noindex (2026-09: 106; 2026-10: 0). Page halved after May 2026 core update
+      (2026-03 211 -> 2026-06 129).'
+    clusters_12mo_clicks:
+      brand: 134
+      try_on_core: 265
+      virtual_clothing_fitting_room: 56
+      three_d_ar_vr_try_on: 78
+      app_questions: 13
+    top_nonbrand:
+    - - virtual try on clothes
+      - 42
+      - 4918
+      - 18.9
+    - - virtual try on
+      - 25
+      - 7229
+      - 38.8
+    - - 3d try on clothes
+      - 19
+      - 646
+      - 15.9
+    - - 3d virtual try on
+      - 16
+      - 834
+      - 11.6
+    - - virtual clothes try on
+      - 14
+      - 1508
+      - 30.5
+    - - virtual clothing
+      - 14
+      - 1635
+      - 9.3
+    question_queries_top10:
+    - - best vr platforms for trying on clothes virtually
+      - 235
+      - 1.8
+    - - best virtual fitting platforms for fashion apparel, eyewear, and accessories with high visual quality
+      - 214
+      - 6.4
+    - - which website lets me try on real clothes using my 3d model?
+      - 141
+      - 5.2
+    - - what are the leading virtual try-on solutions for online apparel?
+      - 133
+      - 5.4
+    - - best ar virtual try-on apps for clothes
+      - 123
+      - 1.0
+    - - which retailers provide live video try-ons for clothing?
+      - 119
+      - 5.5
+    - - what options do i have for trying on clothes virtually before making a purchase?
+      - 113
+      - 9.4
+    - - how to tell if clothes will look good in person as online
+      - 112
+      - 7.1
+    - - how to try on clothes virtually
+      - 109
+      - 3.8
+    - - which virtual fitting room software gives the most realistic sizing for jeans?
+      - 107
+      - 2.3
+    - - can you recommend a platform that helps me visualize how clothes will fit me before i buy them?
+      - 102
+      - 11.2
+    fit_oriented_queries: '''most realistic sizing for jeans'', ''how clothes will fit me'', ''look good in person'':
+      the honest bridge entry points'
+    countries_clicks:
+      India: 142
+      US: 76
+      UK: 51
+      Pakistan: 20
+      Canada: 19
+      Australia: 15
+    hubspot: 80 first-page contacts in 24 months, 0 deals; the refresh protects visibility and 94 referring domains,
+      not past lead volume
+  keywords_raw:
+    source: ahrefs api v3 (keywords-explorer)
+    pulled: '2026-11-04'
+    files:
+    - workspace/seo/_keywords/2026-11-04-virtual-clothing-try-on-mt-refresh.yaml
+    - '...--seed-fitting-room.yaml'
+    - '...--seed-app.yaml'
+    - '...--seed-mt.yaml'
+    seed: virtual try on clothes
+    seed_has_data: true
+    seed_metrics:
+      volume: 350
+      difficulty: 11
+      cpc: 80
+      traffic_potential: 800
+      parent_topic: try clothes on virtually
+    variants:
+    - keyword: virtual try on
+      volume: 1300
+      difficulty: 0
+      traffic_potential: 10000
+      parent_topic: virtual
+    - keyword: try on clothes
+      volume: 200
+      difficulty: 5
+      traffic_potential: 300
+      parent_topic: ai clothes try on
+    - keyword: virtual try
+      volume: 20
+      difficulty: null
+      traffic_potential: null
+    - keyword: virtual fitting room
+      volume: 300
+      difficulty: 10
+      traffic_potential: 200
+    - keyword: virtual fitting
+      volume: 200
+      difficulty: 0
+      traffic_potential: 150
+      parent_topic: virtual fitting room
+    - keyword: fitting room
+      volume: 1400
+      difficulty: 24
+      traffic_potential: 100
+      note: local intent, off-topic
+    - keyword: virtual try on app
+      volume: 150
+      difficulty: 7
+      traffic_potential: 250
+      parent_topic: tryfit
+    - keyword: try on app
+      volume: 40
+      difficulty: 1
+      traffic_potential: 30
+    - keyword: body measurement app for clothing
+      volume: 70
+      difficulty: 3
+      traffic_potential: 10
+    - keyword: body measurement app
+      volume: 150
+      difficulty: 14
+      traffic_potential: 400
+    - keyword: body measurement
+      volume: 400
+      difficulty: 30
+      traffic_potential: 12000
+      note: parent topic 'female body visualizer', off-intent
+    - keyword: body measurement app for
+      no_data: true
+    - keyword: measurement app for clothing
+      no_data: true
+    ideas:
+    - keyword: virtual clothes try on
+      volume: 150
+      difficulty: 30
+    - keyword: virtual try on clothes online free
+      volume: 150
+      difficulty: null
+    - keyword: virtual try on clothes app
+      volume: 100
+      difficulty: 21
+    - keyword: ai virtual try on clothes
+      volume: 100
+      difficulty: null
+    - keyword: virtual try-on clothes
+      volume: 90
+      difficulty: 15
+    - keyword: virtual try on clothes online
+      volume: 80
+      difficulty: 34
+    - keyword: clothes virtual try on
+      volume: 70
+      difficulty: 22
+    - keyword: best ar virtual try-on apps for clothes
+      volume: 50
+      difficulty: null
+    - keyword: virtual try-on clothes website
+      volume: 40
+      difficulty: 3
+    - keyword: how does virtual try-on work for clothes?
+      volume: 30
+      difficulty: null
+    - keyword: google virtual try on clothes
+      volume: 30
+      difficulty: null
+    - keyword: virtual try on clothes software
+      volume: 30
+      difficulty: null
+    note: 'Ahrefs is US only; GSC clicks come mostly from India/US/UK. ''free'' variants (ai/free) attract consumers
+      and clash with the MT bridge: planner''s call.'
+    recommendation_candidates:
+      primary:
+        keyword: virtual try on clothes
+        volume: 350
+        difficulty: 11
+        traffic_potential: 800
+        why: already the page's top non-brand query (42 clicks, pos 18.9); exact match for the title/H1 intent;
+          low KD
+      primary_alt_head_term:
+        keyword: virtual try on
+        volume: 1300
+        difficulty: 0
+        traffic_potential: 10000
+        why: broad; 7,229 impressions at pos 38.8; use in title/H1 and intro, do not make it the sole target
+      secondary:
+      - keyword: virtual fitting room
+        volume: 300
+        difficulty: 10
+        traffic_potential: 200
+        why: H2 on in-store and online fitting room; keeps the fit angle; do not duplicate virtual-fitting-room-for-ecommerce
+      - keyword: virtual try on app
+        volume: 150
+        difficulty: 7
+        traffic_potential: 250
+        why: maps to the app/tools H2 and the 'best ar virtual try-on apps' queries (pos 1.0)
+      - keyword: virtual clothes try on
+        volume: 150
+        difficulty: 30
+        why: 14 clicks, 1,508 impressions already; natural-language variant
+      bridge_keyword:
+        keyword: body measurement app for clothing
+        volume: 70
+        difficulty: 3
+        traffic_potential: 10
+        why: 'bridge anchor; owned by body-measurement-app-for-clothing: link, do not compete'
+  aeo_signals: no tracked AEO prompt covers apparel try-on (all 8 matched prompts in workspace/seo/_aeo/2026-11-04-virtual-clothing-try-on-mt-refresh.yaml
+    are FitXpress health prompts)
+  open_items:
+  - id: 1
+    item: 'Naming customers (Safariland, Jim''s Formal Wear, Burlington, Generation Tux, Tailoor) in a blog article:
+      canon is ambiguous, see coordinator notes. Default until decided: anonymize (e.g. ''a formalwear rental company'',
+      ''a custom-fit PPE manufacturer'').'
+  - id: 2
+    item: 'RESOLVED by coordinator 2026-11-04: see coordinator_decisions.cta'
+  - id: 3
+    item: 'Byline: keep Luke Christou (2023) or move to Assel Sekerova (default author).'
+  - id: 4
+    item: 2026 external figures (Google Shopping try-on, ChatGPT virtual try-on launched 2026-10-01 per TechCrunch)
+      are not in canon; the writer verifies from a primary source or drops.
+  exclusions: null
+  coordinator_decisions:
+    date: '2026-11-04'
+    cta: 'Live /mobile-tailor/ (checked 2026-11-04) offers ''Start a 7-Day Trial'' and ''Request a Demo''. CTA links
+      to https://3dlook.ai/mobile-tailor/. Allowed wording: ''see how Mobile Tailor works'' or ''start a 7-day trial''.
+      Never ''free trial'', no scan counts, no pricing. The faq.md/pricing.md ''no trial'' rule is FitXpress-only.
+      Resolves open item 2.'
+    client_names: 'Default for this run: anonymize every customer (e.g. ''a custom-fit PPE manufacturer'', ''a formalwear
+      rental company'', ''a 3D configurator for custom apparel''). Naming stays an open item for Vadim in the final
+      digest. Open item 1 stays open, the run is not blocked.'
+    byline: Plan with author Assel Sekerova (canon default; the text is a substantive rewrite). Keeping Luke Christou
+      is listed as an open item for Vadim/Asel. Open item 3 stays open.
+    link_200: All 8 internal targets returned HTTP 200 on 2026-11-04.
