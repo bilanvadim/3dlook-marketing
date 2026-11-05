@@ -270,6 +270,13 @@ Vadim approved the hypothesis after the QC fix round (QC 17/20, report `workspac
 11. **Canada-located people FAIL,** count reported at step 4.
 12. **People source:** Sales Navigator title pull with the United States geography filter and the line-of-business exclusions on the whole search first, then an Apollo top-up with the credit count named before `enrich` if it exceeds 100.
 
+## Vadim's decisions 2026-11-05
+
+1. **People source changed to Apollo only.** Hlib's Sales Navigator sheet (2026-11-04, 616 rows) was a Seniority «Owner/Partner» pull with one persona fit, so it is not used. Apollo, US-located, at most 15 people per company (director level and up), 395 credits; then a 13-credit top-up for Mutual of Omaha and Munich Re Life US, whose life underwriting heads the first selection had missed. Details in `apollo-log.md`.
+2. **List approved at the step-4 checkpoint** (QC 17/20 after one fix round): every PASS, plus the 11 WEAK the validator recommended as P3 (carrier underwriters whose role is clear and line is not stated). The other WEAK stay out.
+3. **Referral pools taken:** pool A (non-buyers inside individual life: Lynn Brown, Ashley Destito, Robert Reynolds) and pool B (6 DI sales people), both angle `referral`. Pools C-F stay out.
+4. **Result:** 406 people judged (393 + 13 top-up), 298 to send. «Teague Jim» (pool B) may carry a reversed name: check the greeting before step 5.
+
 ## Validation criteria (Step 2 will check)
 
 - **Companies.** 34 named candidates; target 26-30 IN. Fewer than 22: stop and report to Vadim; never widen on your own (reserve list, simplified issue, brokers, evidence vendors, health plans) or add companies to reach a number. Each carrier writes new individually underwritten life or DI business with an accelerated, fluidless or no-exam path in 2026 (agent or producer guide, underwriting guide, product page or 2026 trade press); each reinsurer row is the group's US L&H entity; each platform is used by US carriers for e-application or new-business underwriting.
