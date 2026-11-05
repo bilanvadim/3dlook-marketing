@@ -1,0 +1,89 @@
+{
+ "generated": "2026-11-05T05:40:22+00:00",
+ "items": [
+  {
+   "id": "9e75d544-b3f7-48ee-9984-2adaf84a5d08",
+   "title": "WHOOP and Ulta Beauty Announce Retail Partnership to Expand Access to Wearable Health Technology",
+   "date": "2026-11-04",
+   "tags": [
+    "Consumer Wellness and Technology",
+    "Investments and Partnerships",
+    "Retail Health",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/whoop-and-ulta-beauty-announce-retail-partnership-to-expand-access-to-wearable-health-technology"
+  },
+  {
+   "id": "b2e8a132-c575-46f4-8d95-6449b8b25ad8",
+   "title": "nPhase Secures $30 Million to Expand AI-Powered Clinical Data Management Platform",
+   "date": "2026-11-04",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Investments and Partnerships",
+    "Clinical Trial Solutions",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/nphase-secures-30-million-to-expand-ai-powered-clinical-data-management-platform"
+  },
+  {
+   "id": "4b9cc708-8b69-4741-a48b-a54d64650acf",
+   "title": "Samsung Introduces FDA-Cleared Sleep Apnea Detection on Galaxy Ring and Watch Devices",
+   "date": "2026-11-04",
+   "tags": [
+    "Consumer Wellness and Technology",
+    "Diagnostics",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/samsung-introduces-fda-cleared-sleep-apnea-detection-on-galaxy-ring-and-watch-devices"
+  }
+ ],
+ "analyses": {
+  "9e75d544-b3f7-48ee-9984-2adaf84a5d08": {
+   "id": "9e75d544-b3f7-48ee-9984-2adaf84a5d08",
+   "score": 1,
+   "segment": "FitXpress §8 Connected & Digital Fitness",
+   "what": "Від березня 2027 року WHOOP 5.0 і WHOOP MG продаватимуться на Ulta.com і в частині магазинів Ulta Beauty у США. У програмі лояльності Ulta близько 47 млн учасників.",
+   "why": "Це новина про роздрібну дистрибуцію wearable, а не про роботу з даними тіла. В ICP WHOOP значиться лише як adjacent для benchmarking, тож реальним акаунтом він не є. Хіба що тема для контенту: wellness і beauty-ритейл зближуються.",
+   "play": "content_only",
+   "companies": [
+    "WHOOP",
+    "Ulta Beauty"
+   ],
+   "caveat": "",
+   "_date": "2026-11-04"
+  },
+  "b2e8a132-c575-46f4-8d95-6449b8b25ad8": {
+   "id": "b2e8a132-c575-46f4-8d95-6449b8b25ad8",
+   "score": 1,
+   "segment": "FitXpress §7 Clinical Trials",
+   "what": "nPhase залучила $30M у Series D, щоб розвивати AI-native платформу clinical data management і agentic AI. Платформа збирає й валідує дані з дослідницьких центрів, лабораторій, від пацієнтів і з digital health sensors.",
+   "why": "nPhase продає EDC і data management, а не проводить metabolic/obesity trials і не займається at-home збором антропометрії. Тому прямого тригера для FitXpress немає, є лише загальний тренд AI у клінічних дослідженнях.",
+   "play": "none",
+   "companies": [
+    "nPhase",
+    "QuantHealth",
+    "Paradigm Health",
+    "Flatiron Health",
+    "PhaseV"
+   ],
+   "caveat": "",
+   "_date": "2026-11-04"
+  },
+  "4b9cc708-8b69-4741-a48b-a54d64650acf": {
+   "id": "4b9cc708-8b69-4741-a48b-a54d64650acf",
+   "score": 0,
+   "segment": "—",
+   "what": "Samsung запустила у США оновлену функцію виявлення sleep apnea на Galaxy Ring і Galaxy Watch9. Перед цим у липні 2026 року функція отримала FDA 510(k) clearance.",
+   "why": "Це скринінг sleep apnea на основі SpO2, PPG і акселерометра. До даних тіла, BMI чи вимірювань для одягу новина не має стосунку.",
+   "play": "none",
+   "companies": [
+    "Samsung Electronics America",
+    "Samsung Electronics"
+   ],
+   "caveat": "",
+   "_date": "2026-11-04"
+  }
+ },
+ "posts": []
+}
