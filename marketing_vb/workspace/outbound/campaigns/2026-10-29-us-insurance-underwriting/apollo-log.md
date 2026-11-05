@@ -19,3 +19,6 @@ Written by `scripts/apollo-pull.py`. Credits are Apollo's own `credits_consumed`
 
 ## 2026-11-05 enrich → apollo-2026-11-05-2.csv
 - written 13, skipped 0, credits 13
+
+## 2026-11-05 identity fix before step 5
+- `teague-jim-481208a`: Apollo returned first «Teague», last «Jim» (reversed). The Standard's own GI News bulletin (2010-07-15, standard.com/di/field/communications/GINews/2010/jul/20100715_MGA.html) names Regional Director **Jim Teague** (individual disability). Set full_name «Jim Teague», first_name «Jim», last_name «Teague» in people-raw.csv and people-validated.csv (decision 4 of Vadim's decisions 2026-11-05).

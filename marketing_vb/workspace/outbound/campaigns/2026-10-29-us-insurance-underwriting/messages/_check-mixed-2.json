@@ -1,0 +1,810 @@
+{
+ "campaign": "2026-10-29-us-insurance-underwriting",
+ "checked": 26,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-2",
+ "generated": "2026-11-05T13:40:39",
+ "hard": [],
+ "soft": [
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: bryan-flynn-21866b9 / michael-farrell-5611685",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: bryan-flynn-21866b9 / matthewburrill",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: bryan-flynn-21866b9 / brian-pemberton-09ba289",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: bryan-flynn-21866b9 / david-wexler-47978554",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: bryan-flynn-21866b9 / ashley-destito-a636194b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: bryan-flynn-21866b9 / salene-hitchcock-gear-a8207a12",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: bryan-flynn-21866b9 / dan-manley-b15759",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: bryan-flynn-21866b9 / joel-larson-31339b223",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: bryan-flynn-21866b9 / karnatrautman",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: bryan-flynn-21866b9 / naishami-patel-do-6788267",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: bryan-flynn-21866b9 / jill-fallon-944a9812",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: bryan-flynn-21866b9 / vikrambalwani",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: michael-farrell-5611685 / matthewburrill",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: michael-farrell-5611685 / brian-pemberton-09ba289",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: michael-farrell-5611685 / david-wexler-47978554",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: michael-farrell-5611685 / ashley-destito-a636194b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: michael-farrell-5611685 / salene-hitchcock-gear-a8207a12",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: michael-farrell-5611685 / dan-manley-b15759",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: michael-farrell-5611685 / joel-larson-31339b223",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: michael-farrell-5611685 / karnatrautman",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: michael-farrell-5611685 / naishami-patel-do-6788267",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: michael-farrell-5611685 / jill-fallon-944a9812",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: michael-farrell-5611685 / vikrambalwani",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: matthewburrill / brian-pemberton-09ba289",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: matthewburrill / david-wexler-47978554",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: matthewburrill / ashley-destito-a636194b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: matthewburrill / salene-hitchcock-gear-a8207a12",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: matthewburrill / dan-manley-b15759",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: matthewburrill / joel-larson-31339b223",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: matthewburrill / karnatrautman",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: matthewburrill / naishami-patel-do-6788267",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: matthewburrill / jill-fallon-944a9812",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: matthewburrill / vikrambalwani",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: brian-pemberton-09ba289 / naishami-patel-do-6788267",
+   "«two photos in fitxpress yield a smart scales weig…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: brian-pemberton-09ba289 / joel-larson-31339b223",
+   "«one timestamped record per applicant goes with it.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: brian-pemberton-09ba289 / jill-fallon-944a9812",
+   "«one timestamped record per applicant goes with it.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: brian-pemberton-09ba289 / vikrambalwani",
+   "«one timestamped record per applicant goes with it.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: brian-pemberton-09ba289 / david-wexler-47978554",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: brian-pemberton-09ba289 / ashley-destito-a636194b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: brian-pemberton-09ba289 / salene-hitchcock-gear-a8207a12",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: brian-pemberton-09ba289 / dan-manley-b15759",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: brian-pemberton-09ba289 / karnatrautman",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: david-wexler-47978554 / ashley-destito-a636194b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: david-wexler-47978554 / salene-hitchcock-gear-a8207a12",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: david-wexler-47978554 / dan-manley-b15759",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: david-wexler-47978554 / joel-larson-31339b223",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: david-wexler-47978554 / karnatrautman",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: david-wexler-47978554 / naishami-patel-do-6788267",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: david-wexler-47978554 / jill-fallon-944a9812",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: david-wexler-47978554 / vikrambalwani",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: ashley-destito-a636194b / salene-hitchcock-gear-a8207a12",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: ashley-destito-a636194b / dan-manley-b15759",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: ashley-destito-a636194b / joel-larson-31339b223",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: ashley-destito-a636194b / karnatrautman",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: ashley-destito-a636194b / naishami-patel-do-6788267",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: ashley-destito-a636194b / jill-fallon-944a9812",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: ashley-destito-a636194b / vikrambalwani",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: salene-hitchcock-gear-a8207a12 / jill-fallon-944a9812",
+   "«fitxpress's step takes two photos and returns a s…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: salene-hitchcock-gear-a8207a12 / dan-manley-b15759",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: salene-hitchcock-gear-a8207a12 / joel-larson-31339b223",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: salene-hitchcock-gear-a8207a12 / karnatrautman",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: salene-hitchcock-gear-a8207a12 / naishami-patel-do-6788267",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: salene-hitchcock-gear-a8207a12 / vikrambalwani",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: dan-manley-b15759 / joel-larson-31339b223",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: dan-manley-b15759 / karnatrautman",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: dan-manley-b15759 / naishami-patel-do-6788267",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: dan-manley-b15759 / jill-fallon-944a9812",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: dan-manley-b15759 / vikrambalwani",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: joel-larson-31339b223 / jill-fallon-944a9812",
+   "«one timestamped record per applicant lands on the…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: joel-larson-31339b223 / vikrambalwani",
+   "«one timestamped record per applicant lands on the…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: joel-larson-31339b223 / karnatrautman",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: joel-larson-31339b223 / naishami-patel-do-6788267",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: karnatrautman / naishami-patel-do-6788267",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: karnatrautman / jill-fallon-944a9812",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: karnatrautman / vikrambalwani",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: naishami-patel-do-6788267 / jill-fallon-944a9812",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: naishami-patel-do-6788267 / vikrambalwani",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Prudential Financial: jill-fallon-944a9812 / vikrambalwani",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: nicole-lund-4055466 / julia-oleson-547066106",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: nicole-lund-4055466 / jaime-pulsfus",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: nicole-lund-4055466 / kari-turtinen-31a178133",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: nicole-lund-4055466 / tim-ranfranz-falu-fmli-81559b1a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: nicole-lund-4055466 / brandon-may-do-dbim-ms-4288a5150",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: nicole-lund-4055466 / judy-finney-md-1882a34",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: nicole-lund-4055466 / dupe-adewunmi",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: nicole-lund-4055466 / gregory-soltner-do-dbim-falu-flmi-210a6632",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: nicole-lund-4055466 / joel-weiner-md-facp-flmi-18b07151",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: nicole-lund-4055466 / chris-yiannias-000427116",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: nicole-lund-4055466 / jonathan-mcallister-a91a5647",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: nicole-lund-4055466 / allysonschrader",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: julia-oleson-547066106 / jaime-pulsfus",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: julia-oleson-547066106 / kari-turtinen-31a178133",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: julia-oleson-547066106 / tim-ranfranz-falu-fmli-81559b1a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: julia-oleson-547066106 / brandon-may-do-dbim-ms-4288a5150",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: julia-oleson-547066106 / judy-finney-md-1882a34",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: julia-oleson-547066106 / dupe-adewunmi",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: julia-oleson-547066106 / gregory-soltner-do-dbim-falu-flmi-210a6632",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: julia-oleson-547066106 / joel-weiner-md-facp-flmi-18b07151",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: julia-oleson-547066106 / chris-yiannias-000427116",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: julia-oleson-547066106 / jonathan-mcallister-a91a5647",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: julia-oleson-547066106 / allysonschrader",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: jaime-pulsfus / kari-turtinen-31a178133",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: jaime-pulsfus / tim-ranfranz-falu-fmli-81559b1a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: jaime-pulsfus / brandon-may-do-dbim-ms-4288a5150",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: jaime-pulsfus / judy-finney-md-1882a34",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: jaime-pulsfus / dupe-adewunmi",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: jaime-pulsfus / gregory-soltner-do-dbim-falu-flmi-210a6632",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: jaime-pulsfus / joel-weiner-md-facp-flmi-18b07151",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: jaime-pulsfus / chris-yiannias-000427116",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: jaime-pulsfus / jonathan-mcallister-a91a5647",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: jaime-pulsfus / allysonschrader",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: kari-turtinen-31a178133 / tim-ranfranz-falu-fmli-81559b1a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: kari-turtinen-31a178133 / brandon-may-do-dbim-ms-4288a5150",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: kari-turtinen-31a178133 / judy-finney-md-1882a34",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: kari-turtinen-31a178133 / dupe-adewunmi",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: kari-turtinen-31a178133 / gregory-soltner-do-dbim-falu-flmi-210a6632",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: kari-turtinen-31a178133 / joel-weiner-md-facp-flmi-18b07151",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: kari-turtinen-31a178133 / chris-yiannias-000427116",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: kari-turtinen-31a178133 / jonathan-mcallister-a91a5647",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: kari-turtinen-31a178133 / allysonschrader",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: tim-ranfranz-falu-fmli-81559b1a / brandon-may-do-dbim-ms-4288a5150",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: tim-ranfranz-falu-fmli-81559b1a / judy-finney-md-1882a34",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: tim-ranfranz-falu-fmli-81559b1a / dupe-adewunmi",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: tim-ranfranz-falu-fmli-81559b1a / gregory-soltner-do-dbim-falu-flmi-210a6632",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: tim-ranfranz-falu-fmli-81559b1a / joel-weiner-md-facp-flmi-18b07151",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: tim-ranfranz-falu-fmli-81559b1a / chris-yiannias-000427116",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: tim-ranfranz-falu-fmli-81559b1a / jonathan-mcallister-a91a5647",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: tim-ranfranz-falu-fmli-81559b1a / allysonschrader",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: brandon-may-do-dbim-ms-4288a5150 / judy-finney-md-1882a34",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: brandon-may-do-dbim-ms-4288a5150 / dupe-adewunmi",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: brandon-may-do-dbim-ms-4288a5150 / gregory-soltner-do-dbim-falu-flmi-210a6632",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: brandon-may-do-dbim-ms-4288a5150 / joel-weiner-md-facp-flmi-18b07151",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: brandon-may-do-dbim-ms-4288a5150 / chris-yiannias-000427116",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: brandon-may-do-dbim-ms-4288a5150 / jonathan-mcallister-a91a5647",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: brandon-may-do-dbim-ms-4288a5150 / allysonschrader",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: judy-finney-md-1882a34 / dupe-adewunmi",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: judy-finney-md-1882a34 / gregory-soltner-do-dbim-falu-flmi-210a6632",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: judy-finney-md-1882a34 / joel-weiner-md-facp-flmi-18b07151",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: judy-finney-md-1882a34 / chris-yiannias-000427116",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: judy-finney-md-1882a34 / jonathan-mcallister-a91a5647",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: judy-finney-md-1882a34 / allysonschrader",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: dupe-adewunmi / chris-yiannias-000427116",
+   "«one timestamped record per applicant sits behind…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: dupe-adewunmi / jonathan-mcallister-a91a5647",
+   "«one timestamped record per applicant sits behind…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: dupe-adewunmi / gregory-soltner-do-dbim-falu-flmi-210a6632",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: dupe-adewunmi / joel-weiner-md-facp-flmi-18b07151",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: dupe-adewunmi / allysonschrader",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: gregory-soltner-do-dbim-falu-flmi-210a6632 / jonathan-mcallister-a91a5647",
+   "«one timestamped record per applicant goes to the…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: gregory-soltner-do-dbim-falu-flmi-210a6632 / joel-weiner-md-facp-flmi-18b07151",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: gregory-soltner-do-dbim-falu-flmi-210a6632 / chris-yiannias-000427116",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: gregory-soltner-do-dbim-falu-flmi-210a6632 / allysonschrader",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: joel-weiner-md-facp-flmi-18b07151 / chris-yiannias-000427116",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: joel-weiner-md-facp-flmi-18b07151 / jonathan-mcallister-a91a5647",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: joel-weiner-md-facp-flmi-18b07151 / allysonschrader",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: chris-yiannias-000427116 / jonathan-mcallister-a91a5647",
+   "«a timestamped record per applicant documents it.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: chris-yiannias-000427116 / allysonschrader",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Northwestern Mutual: jonathan-mcallister-a91a5647 / allysonschrader",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "sentence opening repeated",
+   "Prudential Financial ×4",
+   "«one timestamped record per applicant…»: brian-pemberton-09ba289, jill-fallon-944a9812, joel-larson-31339b223, vikrambalwani"
+  ],
+  [
+   "sentence opening repeated",
+   "Northwestern Mutual ×3",
+   "«one timestamped record per applicant…»: dupe-adewunmi, gregory-soltner-do-dbim-falu-flmi-210a6632, jonathan-mcallister-a91a5647"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×25",
+   "«a smart scales weight estimate…»: allysonschrader, brandon-may-do-dbim-ms-4288a5150, brian-pemberton-09ba289, bryan-flynn-21866b9"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×9",
+   "«one timestamped record per applicant…»: ashley-destito-a636194b, brian-pemberton-09ba289, dupe-adewunmi, gregory-soltner-do-dbim-falu-flmi-210a6632"
+  ]
+ ]
+}

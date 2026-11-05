@@ -1,0 +1,555 @@
+{
+ "campaign": "2026-10-29-us-insurance-underwriting",
+ "checked": 31,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-8",
+ "generated": "2026-11-05T13:40:52",
+ "hard": [],
+ "soft": [
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: kurtis-stewart-50446643 / marty-johnson-a25b8ab8",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: kurtis-stewart-50446643 / timothy-tse-md-mba-1b328a3b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: kurtis-stewart-50446643 / anjali-masand-md-dbim-44966a7a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: kurtis-stewart-50446643 / tracey-schifferdecker-55584a72",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: kurtis-stewart-50446643 / thomas-ferguson-33b4521b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: kurtis-stewart-50446643 / donna-rogers-98304012",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: kurtis-stewart-50446643 / mike-bauer-582a2481",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: marty-johnson-a25b8ab8 / tracey-schifferdecker-55584a72",
+   "«in a drop-ticket flow, two photos in the e-applic…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: marty-johnson-a25b8ab8 / timothy-tse-md-mba-1b328a3b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: marty-johnson-a25b8ab8 / anjali-masand-md-dbim-44966a7a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: marty-johnson-a25b8ab8 / thomas-ferguson-33b4521b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: marty-johnson-a25b8ab8 / donna-rogers-98304012",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: marty-johnson-a25b8ab8 / mike-bauer-582a2481",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: timothy-tse-md-mba-1b328a3b / anjali-masand-md-dbim-44966a7a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: timothy-tse-md-mba-1b328a3b / tracey-schifferdecker-55584a72",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: timothy-tse-md-mba-1b328a3b / thomas-ferguson-33b4521b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: timothy-tse-md-mba-1b328a3b / donna-rogers-98304012",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: timothy-tse-md-mba-1b328a3b / mike-bauer-582a2481",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: anjali-masand-md-dbim-44966a7a / tracey-schifferdecker-55584a72",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: anjali-masand-md-dbim-44966a7a / thomas-ferguson-33b4521b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: anjali-masand-md-dbim-44966a7a / donna-rogers-98304012",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: anjali-masand-md-dbim-44966a7a / mike-bauer-582a2481",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: tracey-schifferdecker-55584a72 / thomas-ferguson-33b4521b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: tracey-schifferdecker-55584a72 / donna-rogers-98304012",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: tracey-schifferdecker-55584a72 / mike-bauer-582a2481",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: thomas-ferguson-33b4521b / donna-rogers-98304012",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: thomas-ferguson-33b4521b / mike-bauer-582a2481",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Mutual of Omaha: donna-rogers-98304012 / mike-bauer-582a2481",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Life US: jennifer-dalton-9408a339 / greg-dewey-982920221",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Life US: jennifer-dalton-9408a339 / shane-banks-2a7a2852",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Life US: jennifer-dalton-9408a339 / pattiarellano",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Life US: jennifer-dalton-9408a339 / robert-lund-56708349",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Life US: jennifer-dalton-9408a339 / gina-guzman-67396b148",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Life US: jennifer-dalton-9408a339 / brad-heltemes-109a342b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Life US: greg-dewey-982920221 / shane-banks-2a7a2852",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Life US: greg-dewey-982920221 / pattiarellano",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Life US: greg-dewey-982920221 / robert-lund-56708349",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Life US: greg-dewey-982920221 / gina-guzman-67396b148",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Life US: greg-dewey-982920221 / brad-heltemes-109a342b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Life US: shane-banks-2a7a2852 / pattiarellano",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Life US: shane-banks-2a7a2852 / robert-lund-56708349",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Life US: shane-banks-2a7a2852 / gina-guzman-67396b148",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Life US: shane-banks-2a7a2852 / brad-heltemes-109a342b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Life US: pattiarellano / robert-lund-56708349",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Life US: pattiarellano / gina-guzman-67396b148",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Life US: pattiarellano / brad-heltemes-109a342b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Life US: robert-lund-56708349 / gina-guzman-67396b148",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Life US: robert-lund-56708349 / brad-heltemes-109a342b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Munich Re Life US: gina-guzman-67396b148 / brad-heltemes-109a342b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: rebecca-severson-certified-falu-flmi-ara-acs-5536552b / kenny-membreno-582a091a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: rebecca-severson-certified-falu-flmi-ara-acs-5536552b / ryanphawkins",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: rebecca-severson-certified-falu-flmi-ara-acs-5536552b / jeffrey-einhorn",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: rebecca-severson-certified-falu-flmi-ara-acs-5536552b / rhonda-steffel-heling-30b798a6",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: rebecca-severson-certified-falu-flmi-ara-acs-5536552b / ronelle-moe-7a4a70280",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: rebecca-severson-certified-falu-flmi-ara-acs-5536552b / jean-pfundtner-58626076",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: rebecca-severson-certified-falu-flmi-ara-acs-5536552b / bbrunick",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: kenny-membreno-582a091a / ryanphawkins",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: kenny-membreno-582a091a / jeffrey-einhorn",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: kenny-membreno-582a091a / rhonda-steffel-heling-30b798a6",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: kenny-membreno-582a091a / ronelle-moe-7a4a70280",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: kenny-membreno-582a091a / jean-pfundtner-58626076",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: kenny-membreno-582a091a / bbrunick",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: ryanphawkins / jeffrey-einhorn",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: ryanphawkins / rhonda-steffel-heling-30b798a6",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: ryanphawkins / ronelle-moe-7a4a70280",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: ryanphawkins / jean-pfundtner-58626076",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: ryanphawkins / bbrunick",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: jeffrey-einhorn / rhonda-steffel-heling-30b798a6",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: jeffrey-einhorn / ronelle-moe-7a4a70280",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: jeffrey-einhorn / jean-pfundtner-58626076",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: jeffrey-einhorn / bbrunick",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: rhonda-steffel-heling-30b798a6 / ronelle-moe-7a4a70280",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: rhonda-steffel-heling-30b798a6 / jean-pfundtner-58626076",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: rhonda-steffel-heling-30b798a6 / bbrunick",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: ronelle-moe-7a4a70280 / jean-pfundtner-58626076",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: ronelle-moe-7a4a70280 / bbrunick",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Thrivent: jean-pfundtner-58626076 / bbrunick",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: kevinerdahl1 / teague-jim-481208a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: kevinerdahl1 / jeremy-horner-b549853",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: kevinerdahl1 / jeffrey-nattis-35a8964",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: kevinerdahl1 / jody-pfeifer-70629215",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: kevinerdahl1 / michael-ash-dollowitch",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: kevinerdahl1 / rajesh-mondkar-12a1293a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: kevinerdahl1 / tony-fung-9129169",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: teague-jim-481208a / jeremy-horner-b549853",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: teague-jim-481208a / jeffrey-nattis-35a8964",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: teague-jim-481208a / jody-pfeifer-70629215",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: teague-jim-481208a / michael-ash-dollowitch",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: teague-jim-481208a / rajesh-mondkar-12a1293a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: teague-jim-481208a / tony-fung-9129169",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: jeremy-horner-b549853 / jeffrey-nattis-35a8964",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: jeremy-horner-b549853 / jody-pfeifer-70629215",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: jeremy-horner-b549853 / michael-ash-dollowitch",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: jeremy-horner-b549853 / rajesh-mondkar-12a1293a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: jeremy-horner-b549853 / tony-fung-9129169",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: jeffrey-nattis-35a8964 / jody-pfeifer-70629215",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: jeffrey-nattis-35a8964 / michael-ash-dollowitch",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: jeffrey-nattis-35a8964 / rajesh-mondkar-12a1293a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: jeffrey-nattis-35a8964 / tony-fung-9129169",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: jody-pfeifer-70629215 / michael-ash-dollowitch",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: jody-pfeifer-70629215 / rajesh-mondkar-12a1293a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: jody-pfeifer-70629215 / tony-fung-9129169",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: michael-ash-dollowitch / rajesh-mondkar-12a1293a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: michael-ash-dollowitch / tony-fung-9129169",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "The Standard: rajesh-mondkar-12a1293a / tony-fung-9129169",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×19",
+   "«a smart scales weight estimate…»: donna-rogers-98304012, greg-dewey-982920221, jeffrey-einhorn, jeffrey-nattis-35a8964"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«taken in the e application…»: anjali-masand-md-dbim-44966a7a, donna-rogers-98304012, kevinerdahl1, pattiarellano"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«between declared and estimated weight…»: anjali-masand-md-dbim-44966a7a, gina-guzman-67396b148, rhonda-steffel-heling-30b798a6"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«is not a scale reading…»: robert-lund-56708349, ronelle-moe-7a4a70280, timothy-tse-md-mba-1b328a3b"
+  ]
+ ]
+}

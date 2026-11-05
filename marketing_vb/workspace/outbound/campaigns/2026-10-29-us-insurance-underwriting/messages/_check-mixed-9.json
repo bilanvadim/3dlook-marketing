@@ -1,0 +1,225 @@
+{
+ "campaign": "2026-10-29-us-insurance-underwriting",
+ "checked": 32,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-9",
+ "generated": "2026-11-05T13:36:43",
+ "hard": [],
+ "soft": [
+  [
+   "no company line",
+   "gay-kemmis-76523410 M1",
+   "«Securian Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "robert-reynolds-77626a8 M1",
+   "«Securian Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "jeffrey-noren-00a879231 M1",
+   "«Securian Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "john-helberg-b4544612 M1",
+   "«Securian Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "lara-shemtob-md-b41456236 M1",
+   "«Securian Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "shona-murray-283910134 M1",
+   "«Securian Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "brian-rock-fsa-cera-maaa-25203b142 M1",
+   "«Securian Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nationwide: cathy-allocco-58672618 / matt-mylroie-48780994",
+   "«an outline of that shadow run is at fitxpress is…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nationwide: tim-lyons-7098023 / todd-lukens-7a0aa4",
+   "«fitxpress sits behind an api or sdk: two photos i…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nationwide: todd-lukens-7a0aa4 / paulobpinho",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nationwide: todd-lukens-7a0aa4 / michael-moore-a2568a26",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Nationwide: paulobpinho / michael-moore-a2568a26",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Securian Financial: gay-kemmis-76523410 / robert-reynolds-77626a8",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Securian Financial: gay-kemmis-76523410 / shona-murray-283910134",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Securian Financial: gay-kemmis-76523410 / brian-rock-fsa-cera-maaa-25203b142",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Securian Financial: robert-reynolds-77626a8 / shona-murray-283910134",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Securian Financial: robert-reynolds-77626a8 / brian-rock-fsa-cera-maaa-25203b142",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Securian Financial: jeffrey-noren-00a879231 / brian-rock-fsa-cera-maaa-25203b142",
+   "«fitxpress would put two photos at that step, givi…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Securian Financial: jeffrey-noren-00a879231 / john-helberg-b4544612",
+   "«a page showing how the step sits inside an applic…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Securian Financial: shona-murray-283910134 / brian-rock-fsa-cera-maaa-25203b142",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Symetra: mary-bates-491652139 / mindi-work-046a345",
+   "«a page outlining how that comparison is set up is…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Symetra: silke-lavallee / mike-derrig-65213323",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Symetra: silke-lavallee / dimitrirobert",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Symetra: silke-lavallee / harry-stanger-6423021b3",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Symetra: mike-derrig-65213323 / dimitrirobert",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Symetra: mike-derrig-65213323 / harry-stanger-6423021b3",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Symetra: dimitrirobert / harry-stanger-6423021b3",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gen Re US: sarahfusco2 / davidmchien",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gen Re US: sarahfusco2 / georgette-chekiri",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gen Re US: frankchechel / michaelcliftlifeunderwriting",
+   "«a page that lays out that path for a carrier is a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Gen Re US: davidmchien / georgette-chekiri",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zinnia: timothy-nash-1815973 / brad-medd-3172b710",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zinnia: timothy-nash-1815973 / jenniferabboud",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zinnia: timothy-nash-1815973 / vrai-productmanager",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zinnia: michael-hogan-1849132a / michael-celi",
+   "«a page laying out that evaluation for a carrier p…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zinnia: brad-medd-3172b710 / jenniferabboud",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zinnia: brad-medd-3172b710 / vrai-productmanager",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Zinnia: jenniferabboud / vrai-productmanager",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×28",
+   "«a smart scales weight estimate…»: brad-medd-3172b710, brian-rock-fsa-cera-maaa-25203b142, cathy-allocco-58672618, davidmchien"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«30 days per the carrier…»: jamal-b-70b7b32a, tim-lyons-7098023, timothy-nash-1815973"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«a flag when the gap…»: frankchechel, matt-mylroie-48780994, silke-lavallee"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«is not a scale reading…»: georgette-chekiri, paulobpinho, shona-murray-283910134"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«when the gap crosses the…»: frankchechel, matt-mylroie-48780994, mike-derrig-65213323"
+  ]
+ ]
+}

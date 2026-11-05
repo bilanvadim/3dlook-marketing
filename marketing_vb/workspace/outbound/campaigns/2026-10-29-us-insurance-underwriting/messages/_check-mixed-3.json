@@ -1,0 +1,860 @@
+{
+ "campaign": "2026-10-29-us-insurance-underwriting",
+ "checked": 26,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-3",
+ "generated": "2026-11-05T13:40:42",
+ "hard": [],
+ "soft": [
+  [
+   "no company line",
+   "frank-mikalonis-594b3816 M1",
+   "«Principal Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "michele-ramsey-cipp-us-814877a M1",
+   "«Principal Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "terry-huisman-91231b48 M1",
+   "«Principal Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "josh-heidemann-6a89a34 M1",
+   "«Principal Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "cody-schiffer-falu-flmi-53b84385 M1",
+   "«Principal Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "hermanbob M1",
+   "«Principal Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "nate-berns-61472a216 M1",
+   "«Principal Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "kris-vanderkooy-md-dbim-flmi-aa751b122 M1",
+   "«Principal Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "mariancoffey M1",
+   "«Principal Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "mike-sir-84b7b610 M1",
+   "«Principal Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "jeff-kruger-9a130b24 M1",
+   "«Principal Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "heatherdawson33 M1",
+   "«Principal Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "bryantfuller M1",
+   "«Principal Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: helen-colberg-05a71153 / laurie-borowski",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: helen-colberg-05a71153 / andrew-langemeier-falu-flmi-b7398813a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: helen-colberg-05a71153 / jordanjonassen",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: helen-colberg-05a71153 / david-moon-045b748",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: helen-colberg-05a71153 / ericskaiser",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: helen-colberg-05a71153 / jasvinder-khera-10bbb620a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: helen-colberg-05a71153 / mike-link-679151134",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: helen-colberg-05a71153 / katie-kermode-md-428495330",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: helen-colberg-05a71153 / elaine-szewc-80785530b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: helen-colberg-05a71153 / sheila-macdonnell-a762b22b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: helen-colberg-05a71153 / christopherlintecum",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: helen-colberg-05a71153 / kevin-hill-2429849",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: laurie-borowski / andrew-langemeier-falu-flmi-b7398813a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: laurie-borowski / jordanjonassen",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: laurie-borowski / david-moon-045b748",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: laurie-borowski / ericskaiser",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: laurie-borowski / jasvinder-khera-10bbb620a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: laurie-borowski / mike-link-679151134",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: laurie-borowski / katie-kermode-md-428495330",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: laurie-borowski / elaine-szewc-80785530b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: laurie-borowski / sheila-macdonnell-a762b22b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: laurie-borowski / christopherlintecum",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: laurie-borowski / kevin-hill-2429849",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: andrew-langemeier-falu-flmi-b7398813a / jordanjonassen",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: andrew-langemeier-falu-flmi-b7398813a / david-moon-045b748",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: andrew-langemeier-falu-flmi-b7398813a / ericskaiser",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: andrew-langemeier-falu-flmi-b7398813a / jasvinder-khera-10bbb620a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: andrew-langemeier-falu-flmi-b7398813a / mike-link-679151134",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: andrew-langemeier-falu-flmi-b7398813a / katie-kermode-md-428495330",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: andrew-langemeier-falu-flmi-b7398813a / elaine-szewc-80785530b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: andrew-langemeier-falu-flmi-b7398813a / sheila-macdonnell-a762b22b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: andrew-langemeier-falu-flmi-b7398813a / christopherlintecum",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: andrew-langemeier-falu-flmi-b7398813a / kevin-hill-2429849",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: jordanjonassen / david-moon-045b748",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: jordanjonassen / ericskaiser",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: jordanjonassen / jasvinder-khera-10bbb620a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: jordanjonassen / mike-link-679151134",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: jordanjonassen / katie-kermode-md-428495330",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: jordanjonassen / elaine-szewc-80785530b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: jordanjonassen / sheila-macdonnell-a762b22b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: jordanjonassen / christopherlintecum",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: jordanjonassen / kevin-hill-2429849",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: david-moon-045b748 / ericskaiser",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: david-moon-045b748 / jasvinder-khera-10bbb620a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: david-moon-045b748 / mike-link-679151134",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: david-moon-045b748 / katie-kermode-md-428495330",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: david-moon-045b748 / elaine-szewc-80785530b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: david-moon-045b748 / sheila-macdonnell-a762b22b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: david-moon-045b748 / christopherlintecum",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: david-moon-045b748 / kevin-hill-2429849",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: ericskaiser / jasvinder-khera-10bbb620a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: ericskaiser / mike-link-679151134",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: ericskaiser / katie-kermode-md-428495330",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: ericskaiser / elaine-szewc-80785530b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: ericskaiser / sheila-macdonnell-a762b22b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: ericskaiser / christopherlintecum",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: ericskaiser / kevin-hill-2429849",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: jasvinder-khera-10bbb620a / mike-link-679151134",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: jasvinder-khera-10bbb620a / katie-kermode-md-428495330",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: jasvinder-khera-10bbb620a / elaine-szewc-80785530b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: jasvinder-khera-10bbb620a / sheila-macdonnell-a762b22b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: jasvinder-khera-10bbb620a / christopherlintecum",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: jasvinder-khera-10bbb620a / kevin-hill-2429849",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: mike-link-679151134 / katie-kermode-md-428495330",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: mike-link-679151134 / elaine-szewc-80785530b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: mike-link-679151134 / sheila-macdonnell-a762b22b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: mike-link-679151134 / christopherlintecum",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: mike-link-679151134 / kevin-hill-2429849",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: katie-kermode-md-428495330 / elaine-szewc-80785530b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: katie-kermode-md-428495330 / sheila-macdonnell-a762b22b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: katie-kermode-md-428495330 / christopherlintecum",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: katie-kermode-md-428495330 / kevin-hill-2429849",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: elaine-szewc-80785530b / sheila-macdonnell-a762b22b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: elaine-szewc-80785530b / christopherlintecum",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: elaine-szewc-80785530b / kevin-hill-2429849",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: sheila-macdonnell-a762b22b / christopherlintecum",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: sheila-macdonnell-a762b22b / kevin-hill-2429849",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "John Hancock: christopherlintecum / kevin-hill-2429849",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: frank-mikalonis-594b3816 / terry-huisman-91231b48",
+   "«fitxpress puts two photos into the application an…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: frank-mikalonis-594b3816 / michele-ramsey-cipp-us-814877a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: frank-mikalonis-594b3816 / josh-heidemann-6a89a34",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: frank-mikalonis-594b3816 / cody-schiffer-falu-flmi-53b84385",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: frank-mikalonis-594b3816 / hermanbob",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: frank-mikalonis-594b3816 / nate-berns-61472a216",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: frank-mikalonis-594b3816 / kris-vanderkooy-md-dbim-flmi-aa751b122",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: frank-mikalonis-594b3816 / mariancoffey",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: frank-mikalonis-594b3816 / mike-sir-84b7b610",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: frank-mikalonis-594b3816 / jeff-kruger-9a130b24",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: frank-mikalonis-594b3816 / heatherdawson33",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: frank-mikalonis-594b3816 / bryantfuller",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: michele-ramsey-cipp-us-814877a / terry-huisman-91231b48",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: michele-ramsey-cipp-us-814877a / josh-heidemann-6a89a34",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: michele-ramsey-cipp-us-814877a / cody-schiffer-falu-flmi-53b84385",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: michele-ramsey-cipp-us-814877a / hermanbob",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: michele-ramsey-cipp-us-814877a / nate-berns-61472a216",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: michele-ramsey-cipp-us-814877a / kris-vanderkooy-md-dbim-flmi-aa751b122",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: michele-ramsey-cipp-us-814877a / mariancoffey",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: michele-ramsey-cipp-us-814877a / mike-sir-84b7b610",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: michele-ramsey-cipp-us-814877a / jeff-kruger-9a130b24",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: michele-ramsey-cipp-us-814877a / heatherdawson33",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: michele-ramsey-cipp-us-814877a / bryantfuller",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: terry-huisman-91231b48 / kris-vanderkooy-md-dbim-flmi-aa751b122",
+   "«fitxpress would add two photos there and return a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: terry-huisman-91231b48 / josh-heidemann-6a89a34",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: terry-huisman-91231b48 / cody-schiffer-falu-flmi-53b84385",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: terry-huisman-91231b48 / hermanbob",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: terry-huisman-91231b48 / nate-berns-61472a216",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: terry-huisman-91231b48 / mariancoffey",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: terry-huisman-91231b48 / mike-sir-84b7b610",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: terry-huisman-91231b48 / jeff-kruger-9a130b24",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: terry-huisman-91231b48 / heatherdawson33",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: terry-huisman-91231b48 / bryantfuller",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: josh-heidemann-6a89a34 / cody-schiffer-falu-flmi-53b84385",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: josh-heidemann-6a89a34 / hermanbob",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: josh-heidemann-6a89a34 / nate-berns-61472a216",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: josh-heidemann-6a89a34 / kris-vanderkooy-md-dbim-flmi-aa751b122",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: josh-heidemann-6a89a34 / mariancoffey",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: josh-heidemann-6a89a34 / mike-sir-84b7b610",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: josh-heidemann-6a89a34 / jeff-kruger-9a130b24",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: josh-heidemann-6a89a34 / heatherdawson33",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: josh-heidemann-6a89a34 / bryantfuller",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: cody-schiffer-falu-flmi-53b84385 / hermanbob",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: cody-schiffer-falu-flmi-53b84385 / nate-berns-61472a216",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: cody-schiffer-falu-flmi-53b84385 / kris-vanderkooy-md-dbim-flmi-aa751b122",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: cody-schiffer-falu-flmi-53b84385 / mariancoffey",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: cody-schiffer-falu-flmi-53b84385 / mike-sir-84b7b610",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: cody-schiffer-falu-flmi-53b84385 / jeff-kruger-9a130b24",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: cody-schiffer-falu-flmi-53b84385 / heatherdawson33",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: cody-schiffer-falu-flmi-53b84385 / bryantfuller",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: hermanbob / nate-berns-61472a216",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: hermanbob / kris-vanderkooy-md-dbim-flmi-aa751b122",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: hermanbob / mariancoffey",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: hermanbob / mike-sir-84b7b610",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: hermanbob / jeff-kruger-9a130b24",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: hermanbob / heatherdawson33",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: hermanbob / bryantfuller",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: nate-berns-61472a216 / kris-vanderkooy-md-dbim-flmi-aa751b122",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: nate-berns-61472a216 / mariancoffey",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: nate-berns-61472a216 / mike-sir-84b7b610",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: nate-berns-61472a216 / jeff-kruger-9a130b24",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: nate-berns-61472a216 / heatherdawson33",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: nate-berns-61472a216 / bryantfuller",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: kris-vanderkooy-md-dbim-flmi-aa751b122 / mariancoffey",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: kris-vanderkooy-md-dbim-flmi-aa751b122 / mike-sir-84b7b610",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: kris-vanderkooy-md-dbim-flmi-aa751b122 / jeff-kruger-9a130b24",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: kris-vanderkooy-md-dbim-flmi-aa751b122 / heatherdawson33",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: kris-vanderkooy-md-dbim-flmi-aa751b122 / bryantfuller",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: mariancoffey / bryantfuller",
+   "«fitxpress could sit beside that step: two photos…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: mariancoffey / mike-sir-84b7b610",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: mariancoffey / jeff-kruger-9a130b24",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: mariancoffey / heatherdawson33",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: mike-sir-84b7b610 / jeff-kruger-9a130b24",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: mike-sir-84b7b610 / heatherdawson33",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: mike-sir-84b7b610 / bryantfuller",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: jeff-kruger-9a130b24 / heatherdawson33",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: jeff-kruger-9a130b24 / bryantfuller",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Principal Financial: heatherdawson33 / bryantfuller",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×23",
+   "«a smart scales weight estimate…»: andrew-langemeier-falu-flmi-b7398813a, bryantfuller, christopherlintecum, cody-schiffer-falu-flmi-53b84385"
+  ]
+ ]
+}

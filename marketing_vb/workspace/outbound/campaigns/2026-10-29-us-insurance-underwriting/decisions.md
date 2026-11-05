@@ -28,7 +28,7 @@ joel-weiner-md-facp-flmi-18b07151 | PASS | 2 | medical | 1 | VP Medical Director
 chris-yiannias-000427116 | PASS | 2 | medical | 1 | VP Medical Director at Northwestern Mutual, ex VP Medical Director at a life reinsurer.
 jonathan-mcallister-a91a5647 | PASS | 2 | medical | 1 | VP Medical Director at Northwestern Mutual, earlier VP Medical Director at Mutual of Omaha and Unum medical consultant.
 allysonschrader | PASS | 3 | technical-integration | 1 | Chief Digital and Technology Officer at Northwestern Mutual: CTO-level owner of the integration review.
-peter-rogers-falu | PASS | 1 | underwriting | 1 | Head of Accelerated Underwriting, ex associate chief underwriter for research and automation: the accelerated-rules owner the persona names first, so P1 although the tier list puts accelerated leads at P2.
+peter-rogers-falu | FAIL | | underwriting | | 2026-11-05 account-facts check: Apollo headline 2026-10-04: «Former Head of Accelerated Underwriting at Mass Mutual (retired)»
 warnershue | PASS | 2 | underwriting | 1 | Head of Underwriting at MassMutual, but earlier roles are team-lead level, so the scope may be one unit: P2.
 dhru-swadia-50b57469 | PASS | 3 | technical-integration | 1 | Head of New Business Technology at MassMutual: the new-business technology owner the technical-integration lane names.
 jason-paine-a0a76416 | PASS | 1 | underwriting | 1 | Head of Disability Underwriting and New Business, ex Head of Life New Business: owns DI evidence rules and the DI application.
@@ -38,7 +38,7 @@ kathleen-coughlin-38415319 | PASS | 2 | underwriting | 1 | DI Chief Underwriter 
 alycia-bellody-055726335 | PASS | 1 | proposition | 1 | Head of Life New Business at MassMutual, ex Senior Director of Underwriting: owns the life application and agent experience.
 katie-fiermonte-710475222 | FAIL | | | | annuity new business
 brandon-smithhart-b6184485 | PASS | 2 | underwriting | 1 | Head of Underwriting Platform at MassMutual: the rules and automation platform a scan flag would feed.
-melinda-marcotte-09473023 | PASS | 2 | proposition | 1 | Head of Life New Business for MassMutual's brokerage channel (MMSD); one Apollo role.
+melinda-marcotte-09473023 | FAIL | | proposition | | 2026-11-05 account-facts check: Apollo headline 2026-10-08: «Retired - Former Head of MMSD Life New Business»
 derek-alexander-5718863 | FAIL | | | | broker-dealer investment operations
 amandawallace | FAIL | | | | policyholder service and annuities
 danielgarant | PASS | 2 | underwriting | 1 | Head of Data Science for Underwriting at MassMutual: builds the models that would score agreement with holdouts.
@@ -105,14 +105,14 @@ nick-weber-72b14432 | FAIL | | | | annuity product
 alex-crawford-17205223 | PASS | 2 | underwriting | 1 | AVP Underwriting at Protective, career in life underwriting.
 shawn-fourez-72628142 | PASS | 2 | underwriting | 1 | VP Underwriting at Protective; line not stated, so P2.
 stephen-lininger-392aa332 | PASS | 2 | underwriting | 1 | 2nd VP Underwriting at Protective, ex life underwriting manager.
-kristin-blake-9079794 | PASS | 2 | underwriting | 1 | 2nd VP Underwriting at Protective.
+kristin-blake-9079794 | FAIL | | underwriting | | 2026-11-05 account-facts check: Apollo headline 2026-10-18: «Retired 2nd VP Underwriting at Protective Life»
 mark-barnum-b3041619 | PASS | 2 | underwriting | 1 | 2nd VP Underwriting at Protective, ex AVP Life Underwriting there.
 bradgabel | PASS | 1 | underwriting | 1 | VP and Chief Underwriting Officer at Protective, past AHOU president: owns underwriting rules.
 frances-freeman-69582136 | PASS | 3 | proposition | 1 | 2nd VP New Business Operations at Protective; line not stated, one Apollo role.
 justintallen | PASS | 3 | technical-integration | 1 | CISO at Protective.
 dick-byrne-b26952a | FAIL | | | | retired per headline
 lindsayhackney | PASS | 2 | proposition | 1 | VP Life Product Strategy at Protective.
-steve-mac-donald-0a000a30 | PASS | 2 | underwriting | 1 | Chief Underwriter at Protective; one Apollo role, so P2 not P1.
+steve-mac-donald-0a000a30 | FAIL | | underwriting | | 2026-11-05 account-facts check: Steve Mac Donald retired as Protective's chief underwriting officer in 2017 (dig-in.com 2017-02-07, Brad Gabel replaced him); stale profile
 jamie-lane-4b923091 | PASS | 2 | proposition | 1 | VP, Head of New Business Operations at Protective, ex VP Protection Operations.
 susan-sucha-219b9016a | PASS | 2 | medical | 1 | Medical Director at Protective.
 kennethbyrd | PASS | 1 | proposition | 1 | VP, Head of Protection New Business Operations at Protective (headline: SVP Operations): head of individual life new business, a card P1 seat.
@@ -150,7 +150,7 @@ bryantfuller | PASS | 3 | proposition | 1 | Head of Product for Individual Solut
 patricia-demeno-hoffman-cpcu-au-346a1832 | FAIL | | | | P&C commercial lines
 carrie-ellis-pmp-scpm-34a84637 | FAIL | | | | P&C underwriting operations
 kimberly-k-53730316 | FAIL | | | | P&C E&S quality assurance
-khalid-rahmani-hia-ab884611 | WEAK | | underwriting | 1 | Director of Underwriting at Nationwide, line not stated: most Nationwide underwriting is P&C.
+khalid-rahmani-hia-ab884611 | FAIL | | underwriting | | 2026-11-05 account-facts check: Nationwide Specialty Insurance: medical stop loss, accident and health (Apollo headline); outside individual life
 emilia-meyer-2983a4214 | FAIL | | | | P&C personal lines
 teresa-massey-70b86b49 | WEAK | | underwriting | 1 | VP Underwriting for institutional (corporate-owned) life, which is mostly guaranteed or simplified issue.
 cathy-allocco-58672618 | WEAK | | underwriting | 1 | VP Underwriting, Product and Pricing at Nationwide, line not stated and earlier roles under the P&C brand.
@@ -170,18 +170,18 @@ john-helberg-b4544612 | PASS | 1 | underwriting | 1 | Chief Underwriter, Individ
 lara-shemtob-md-b41456236 | PASS | 2 | medical | 1 | Medical Director at Securian.
 shona-murray-283910134 | PASS | 1 | medical | 1 | Chief Medical Director at Securian, promoted from associate medical director there.
 brian-rock-fsa-cera-maaa-25203b142 | PASS | 2 | proposition | 1 | Director and Actuary, Life Product Development at Securian.
-joe-townsend-7a358512 | PASS | 1 | underwriting | 1 | VP Life Underwriting at Corebridge, ex VP at AIG and senior underwriting director: owns life underwriting.
-jeff-winkelmann-380a6918 | PASS | 2 | underwriting | 1 | VP Underwriting at Corebridge.
-elizabeth-cloud-b336987 | PASS | 2 | underwriting | 1 | Head of Underwriting Solutions at Corebridge.
-sakib-siddiqi-59035526 | PASS | 2 | proposition | 1 | Head of Life Pricing at Corebridge: pricing heads are P2 proposition per Vadim 2026-10-29.
-james-mayberry-6934a6106 | PASS | 1 | underwriting | 1 | VP and Head of Underwriting Automation Solutions at Corebridge: owns the automated decision path, VP level puts him at P1.
-marjorie-ma | PASS | 2 | proposition | 1 | Head of Product, Life Insurance at Corebridge.
-melissa-cozart-476b784 | PASS | 3 | technical-integration | 1 | VP and Chief Privacy Officer at Corebridge.
+joe-townsend-7a358512 | FAIL | | underwriting | | 2026-11-05 Vadim: Corebridge OUT (all-stock combination with Equitable agreed 2026-03-26, shareholders approved 2026-07-30, closing expected by year-end 2026; recent-deal rule, as Brighthouse)
+jeff-winkelmann-380a6918 | FAIL | | underwriting | | 2026-11-05 Vadim: Corebridge OUT (all-stock combination with Equitable agreed 2026-03-26, shareholders approved 2026-07-30, closing expected by year-end 2026; recent-deal rule, as Brighthouse)
+elizabeth-cloud-b336987 | FAIL | | underwriting | | 2026-11-05 Vadim: Corebridge OUT (all-stock combination with Equitable agreed 2026-03-26, shareholders approved 2026-07-30, closing expected by year-end 2026; recent-deal rule, as Brighthouse)
+sakib-siddiqi-59035526 | FAIL | | proposition | | 2026-11-05 Vadim: Corebridge OUT (all-stock combination with Equitable agreed 2026-03-26, shareholders approved 2026-07-30, closing expected by year-end 2026; recent-deal rule, as Brighthouse)
+james-mayberry-6934a6106 | FAIL | | underwriting | | 2026-11-05 Vadim: Corebridge OUT (all-stock combination with Equitable agreed 2026-03-26, shareholders approved 2026-07-30, closing expected by year-end 2026; recent-deal rule, as Brighthouse)
+marjorie-ma | FAIL | | proposition | | 2026-11-05 Vadim: Corebridge OUT (all-stock combination with Equitable agreed 2026-03-26, shareholders approved 2026-07-30, closing expected by year-end 2026; recent-deal rule, as Brighthouse)
+melissa-cozart-476b784 | FAIL | | technical-integration | | 2026-11-05 Vadim: Corebridge OUT (all-stock combination with Equitable agreed 2026-03-26, shareholders approved 2026-07-30, closing expected by year-end 2026; recent-deal rule, as Brighthouse)
 tyra-wheatley-b71590196 | FAIL | | | | state filings, product compliance
-david-russo0922 | PASS | 3 | technical-integration | 1 | CTO at Corebridge, previously CTO of AIG Life and Retirement.
-gopalakuthethur | PASS | 3 | referral | 1 | VP Digital Transformation at Corebridge, product leader from banking and broking: group-wide digital lead, referral per the card.
-leighsteffek | PASS | 3 | referral | 1 | VP Digital Transformation at Corebridge, former chief of staff and digital enablement head there: group-wide, referral per the card.
-carly-darnell-cisa-441a5810 | PASS | 2 | proposition | 1 | VP, Head of Retail New Business Operations at Corebridge, previously head of life new business.
+david-russo0922 | FAIL | | technical-integration | | 2026-11-05 Vadim: Corebridge OUT (all-stock combination with Equitable agreed 2026-03-26, shareholders approved 2026-07-30, closing expected by year-end 2026; recent-deal rule, as Brighthouse)
+gopalakuthethur | FAIL | | referral | | 2026-11-05 Vadim: Corebridge OUT (all-stock combination with Equitable agreed 2026-03-26, shareholders approved 2026-07-30, closing expected by year-end 2026; recent-deal rule, as Brighthouse)
+leighsteffek | FAIL | | referral | | 2026-11-05 Vadim: Corebridge OUT (all-stock combination with Equitable agreed 2026-03-26, shareholders approved 2026-07-30, closing expected by year-end 2026; recent-deal rule, as Brighthouse)
+carly-darnell-cisa-441a5810 | FAIL | | proposition | | 2026-11-05 Vadim: Corebridge OUT (all-stock combination with Equitable agreed 2026-03-26, shareholders approved 2026-07-30, closing expected by year-end 2026; recent-deal rule, as Brighthouse)
 tinahaley | FAIL | | | | retirement product head
 goodridm | FAIL | | | | deputy CTO, CTO listed
 richard-leechow-8621655 | FAIL | | | | CIO, group-wide
@@ -233,7 +233,7 @@ al-barth-a486292a | PASS | 2 | underwriting | 1 | Director Life Underwriting at 
 julie-zehr-1b2a7189 | FAIL | | | | group business underwriting
 beverley-sloley-flmi-mba-ba112027 | PASS | 2 | underwriting | 1 | Director of Underwriting at Ameritas, ex chief underwriter at another carrier.
 daniel-dan-buchholz-certified-falu-clu-flmi-acs-3613a216 | PASS | 2 | underwriting | 1 | Managing Director, Underwriting at Ameritas, life underwriting credentials (FALU).
-lined-mason-36786542 | PASS | 3 | proposition | 1 | 2nd VP New Business at Ameritas (headline says VP Policy Services); line not stated.
+lined-mason-36786542 | FAIL | | proposition | | 2026-11-05 account-facts check: Current role VP Policy Services (in-force service) at Ameritas per Apollo experience and headline; the 2nd VP New Business title is stale
 scott-delisi-4a855b7 | FAIL | | | | DI distribution
 pete-kaczmar-78a6816 | WEAK | | underwriting | 1 | Director of Underwriting for National Accounts and Partners: at Ameritas this may be group dental and vision (out) or individual partner channels (in).
 kyle-o-donnell-a7b9918 | PASS | 2 | proposition | 1 | VP Life Product Development at Ameritas.
@@ -241,7 +241,7 @@ lynn-saddoris-mba-b188749 | PASS | 3 | proposition | 1 | Director, Product Manag
 scott-corbett-6b32469 | PASS | 2 | underwriting | 1 | VP and Chief Underwriter at Ameritas; one Apollo role, so P2 not P1.
 timothy-steffen-md-dbim-469092256 | PASS | 1 | medical | 1 | VP and Medical Director at Ameritas and past AAIM president: the lead medical voice on non-measured inputs.
 michelle-visconti-44752189 | PASS | 2 | underwriting | 1 | 2nd VP Individual Underwriting Operations at Ameritas (headline adds new business).
-kelly-halverson-2a8a467 | PASS | 1 | underwriting | 1 | SVP, Chief Actuary and Underwriting, Individual at Ameritas: owns individual underwriting and pricing.
+kelly-halverson-2a8a467 | PASS | 1 | proposition | 1 | EVP, Individual Division at Ameritas since 2026-09-01 (Ameritas newsroom 2026-08-31); earlier SVP, Chief Actuary and Underwriting, Individual. Lane moved to proposition 2026-11-05.
 paul-greene-40b337a4 | PASS | 1 | underwriting | 1 | Chief Underwriting Officer at Foresters US, ex corporate VP at a large mutual and chief underwriter: owns underwriting rules.
 samricheson | FAIL | | | | annuity product
 kory-petoske-15a70194 | PASS | 2 | underwriting | 1 | Director, Underwriting Rules and Innovation at Sammons: the rules owner a flag would plug into.
@@ -274,7 +274,7 @@ kevinerdahl1 | WEAK | | underwriting | 1 | VP Underwriting at The Standard, line
 christopher-m-ott | FAIL | | | | group new-case underwriting
 rodney-yoder-638a12161 | FAIL | | | | group regional accounts underwriting
 teague-jim-481208a | FAIL | | | | DI regional sales
-tom-foran-12b80a1 | WEAK | | underwriting | 1 | VP Underwriting and Product Development at The Standard, line not stated (group or individual DI).
+tom-foran-12b80a1 | FAIL | | underwriting | | 2026-11-05 account-facts check: Apollo experience lists «Retired» first since 2022-02 (village.ai the same); was group benefits at The Standard
 jeremy-horner-b549853 | PASS | 2 | proposition | 1 | VP Individual Disability Insurance at The Standard: owns the IDI business; P2 per PPL-1.
 stephanie-mobarry-61720731 | FAIL | | | | retirement plan new business
 jeffrey-nattis-35a8964 | WEAK | | underwriting | 1 | Director of Medical Underwriting at The Standard, earlier sales support at a health plan: line not stated, and much medical underwriting there is group evidence of insurability.
@@ -305,7 +305,7 @@ nick-sontheimer-b01084178 | PASS | 2 | reinsurance | 1 | VP and Managing Actuary
 dave-rengachary | PASS | 1 | reinsurance | 1 | SVP, Head of Underwriting for US Individual Life at RGA (headline), chaired the ACLI risk classification committee.
 ron-hollowell-92b1861b | PASS | 3 | technical-integration | 1 | SVP CTO at RGA.
 braam-kruger-35771576 | PASS | 3 | reinsurance | 1 | VP and CRO for US Individual Life at RGA: a line-specific risk owner, not group-wide, so kept at P3.
-holowaty-carl-a7518837 | PASS | 2 | medical | 1 | SVP and Chief Medical Director at RGA US; one Apollo role, so P2 not P1.
+holowaty-carl-a7518837 | FAIL | | medical | | 2026-11-05 account-facts check: RGA's SVP and Chief Medical Director seat is held by Dr. Nico van Zyl since July 2025 (rgare.com people page); empty profile
 carolyn-caruthers-stewart-86109221 | FAIL | | | | technology operations COO
 matthew-burns-04b4bb2a | FAIL | | | | P&C underwriting
 sarahfusco2 | PASS | 2 | reinsurance | 1 | VP Underwriting Executive at Gen Re, active in the home office life underwriters association.
@@ -319,7 +319,7 @@ nabaneeta-s-1641b57 | WEAK | | reinsurance | 1 | Deputy Global CUO for pricing a
 joe-curtin-94261623a | PASS | 2 | reinsurance | 1 | VP Chief Underwriter, Individual Life production at Gen Re.
 victor-min-61b6019 | FAIL | | | | P&C catastrophe underwriting
 georgette-chekiri | PASS | 2 | medical | 1 | VP and Medical Director at Gen Re, ex carrier medical director.
-cecilramotar | PASS | 2 | reinsurance | 1 | Underwriting VP at Gen Re (headline: underwriting and risk management), ex life underwriter.
+cecilramotar | FAIL | | reinsurance | | 2026-11-05 account-facts check: Gen Re contributor page: VP, Senior Underwriting Executive, Group & Health division (Medicare Supplement, group life): group is an anti-case
 laurenmillwee | FAIL | | | | P&C underwriting specialist
 melissa-trimble-83904815 | FAIL | | | | P&C underwriting specialist
 amy-sahs-464ab3112 | FAIL | | | | P&C property underwriting
@@ -355,7 +355,7 @@ stacy-stauffer-falu-flmi-b922b384 | PASS | 2 | reinsurance | 1 | Director, Under
 ashley-hunt-768031272 | PASS | 2 | reinsurance | 1 | Director, Underwriting Partnerships at SCOR, ex director of underwriting strategy at Ethos.
 terry-feeney-83296979 | FAIL | | | | retired per headline
 jacqueline-cuevas-rplu-31ba0a11 | FAIL | | | | P&C program underwriting
-laura-cutshall-25543627 | PASS | 2 | reinsurance | 1 | Director, Velogica Underwriting and Configuration: configures SCOR's automated underwriting engine.
+laura-cutshall-25543627 | PASS | 2 | reinsurance | 1 | Moved 2026-11-05 from SCOR (Vadim): Hannover Re US ReFlex page (read 2026-11-05) names her AVP, ReFlex Underwriting Solutions; earlier Director, Velogica Underwriting and Configuration at SCOR and VP Underwriting Design Consultant at Swiss Re: client-facing automated underwriting rules at a US reinsurer, P2.
 jessica-lenhard-fsa-4b216047 | PASS | 2 | reinsurance | 1 | SVP, Head of US Client Solutions for Individual Life at SCOR.
 regina-rosace-m-d-faap-dbim-33836715 | PASS | 2 | medical | 1 | VP Medical Director at SCOR Life Americas.
 david-elias-ph-d-005aa8b | PASS | 3 | reinsurance | 1 | VP and Deputy Head of Inforce Management, Pricing and Underwriting at SCOR: in-force focus, so P3.
@@ -371,7 +371,7 @@ cynthia-landry-922908a2 | PASS | 2 | reinsurance | 1 | VP Life Underwriting at S
 mandy-bovan-almi-acs-33055198 | PASS | 2 | reinsurance | 1 | VP Manager Underwriting Solutions at Swiss Re (headline: life underwriting innovation and automation).
 bess-ganeff-07a5b022 | PASS | 1 | reinsurance | 1 | SVP and Head of Underwriting Americas at Swiss Re, ex head of operations for Americas life and health.
 vicki-garrett-54256920 | PASS | 2 | reinsurance | 1 | VP US Facultative Underwriting Manager at Swiss Re (headline: underwriting client relationship lead).
-bill-moore-013a4328 | PASS | 2 | reinsurance | 1 | Chief Underwriter and Managing Director at Swiss Re, ex EVP chief underwriter at a life reinsurer: P2 because Bess Ganeff holds the US underwriting head seat at Swiss Re.
+bill-moore-013a4328 | FAIL | | reinsurance | | 2026-11-05 account-facts check: Stale profile: title since 1998; village.ai shows Swiss Re 1998-2016, then Underwriting Innovations LLC and FOXO BioScience
 dave-loparco-3604241ab | PASS | 2 | reinsurance | 1 | VP, Head of US Underwriting Risk Management at Swiss Re.
 craig-ospalik-20445078 | WEAK | | reinsurance | 1 | SVP Treaty Underwriting Leader at Swiss Re in Schaumburg, earlier regional treaty underwriter at GE Reinsurance: line not stated, treaty titles are usually P&C.
 samrat-dua | PASS | 3 | technical-integration | 1 | Chief Digital and Technology Officer, Swiss Re Reinsurance.

@@ -1,0 +1,285 @@
+{
+ "campaign": "2026-10-29-us-insurance-underwriting",
+ "checked": 28,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-7",
+ "generated": "2026-11-05T13:40:50",
+ "hard": [],
+ "soft": [
+  [
+   "pricing word",
+   "tasha-boland-fsa-cera-4632a3109 M1",
+   "Which class movements would pricing review want counted before an input like that is judged worthwhile?"
+  ],
+  [
+   "pricing word",
+   "tasha-boland-fsa-cera-4632a3109 M2",
+   "Hi Tasha, For pricing review, a parallel run on exam cases counts how many files a flag would refer at each t…"
+  ],
+  [
+   "pricing word",
+   "david-elias-ph-d-005aa8b M1",
+   "How much does build at application matter to in-force pricing and underwriting work?"
+  ],
+  [
+   "near-duplicate sentence",
+   "MassMutual: warnershue / dhru-swadia-50b57469",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MassMutual: warnershue / jason-paine-a0a76416",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MassMutual: warnershue / lynn-brown-0b27474",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MassMutual: warnershue / kathleen-coughlin-38415319",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MassMutual: warnershue / danielgarant",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MassMutual: dhru-swadia-50b57469 / jason-paine-a0a76416",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MassMutual: dhru-swadia-50b57469 / lynn-brown-0b27474",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MassMutual: dhru-swadia-50b57469 / kathleen-coughlin-38415319",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MassMutual: dhru-swadia-50b57469 / danielgarant",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MassMutual: jason-paine-a0a76416 / lynn-brown-0b27474",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MassMutual: jason-paine-a0a76416 / kathleen-coughlin-38415319",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MassMutual: jason-paine-a0a76416 / danielgarant",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MassMutual: tasha-boland-fsa-cera-4632a3109 / alycia-bellody-055726335",
+   "«taken in the e-application, two photos give fitxp…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MassMutual: lynn-brown-0b27474 / kathleen-coughlin-38415319",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MassMutual: lynn-brown-0b27474 / danielgarant",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MassMutual: kathleen-coughlin-38415319 / danielgarant",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR Life Americas: michelle-spevak-50476213 / brooke-morgan-of-cincinnati",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR Life Americas: michelle-spevak-50476213 / ed-sheehan-36768718a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR Life Americas: michelle-spevak-50476213 / james-atkins-flmi-falu-a919a564",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR Life Americas: michelle-spevak-50476213 / regina-rosace-m-d-faap-dbim-33836715",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR Life Americas: michelle-spevak-50476213 / david-elias-ph-d-005aa8b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR Life Americas: brooke-morgan-of-cincinnati / ed-sheehan-36768718a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR Life Americas: brooke-morgan-of-cincinnati / james-atkins-flmi-falu-a919a564",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR Life Americas: brooke-morgan-of-cincinnati / regina-rosace-m-d-faap-dbim-33836715",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR Life Americas: brooke-morgan-of-cincinnati / david-elias-ph-d-005aa8b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR Life Americas: ed-sheehan-36768718a / james-atkins-flmi-falu-a919a564",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR Life Americas: ed-sheehan-36768718a / regina-rosace-m-d-faap-dbim-33836715",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR Life Americas: ed-sheehan-36768718a / david-elias-ph-d-005aa8b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR Life Americas: james-atkins-flmi-falu-a919a564 / regina-rosace-m-d-faap-dbim-33836715",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR Life Americas: james-atkins-flmi-falu-a919a564 / david-elias-ph-d-005aa8b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR Life Americas: ashley-hunt-768031272 / jessica-lenhard-fsa-4b216047",
+   "«how the step looks in an application is shown at…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SCOR Life Americas: regina-rosace-m-d-faap-dbim-33836715 / david-elias-ph-d-005aa8b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Americas: eric-hoerr-certified-falu-flmi-071b77b1 / kevin-m-o-hanlon",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Americas: eric-hoerr-certified-falu-flmi-071b77b1 / cynthia-landry-922908a2",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Americas: eric-hoerr-certified-falu-flmi-071b77b1 / vicki-garrett-54256920",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Americas: eric-hoerr-certified-falu-flmi-071b77b1 / dave-loparco-3604241ab",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Americas: eric-hoerr-certified-falu-flmi-071b77b1 / samrat-dua",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Americas: kevin-m-o-hanlon / cynthia-landry-922908a2",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Americas: kevin-m-o-hanlon / vicki-garrett-54256920",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Americas: kevin-m-o-hanlon / dave-loparco-3604241ab",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Americas: kevin-m-o-hanlon / samrat-dua",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Americas: cynthia-landry-922908a2 / samrat-dua",
+   "«a flag appears only above a threshold the client…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Americas: cynthia-landry-922908a2 / vicki-garrett-54256920",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Americas: cynthia-landry-922908a2 / dave-loparco-3604241ab",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Americas: mandy-bovan-almi-acs-33055198 / kimberly-poulopoulos",
+   "«what the api returns is described at fitxpress is…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Americas: bess-ganeff-07a5b022 / kimberly-poulopoulos",
+   "«how the step looks inside an application is shown…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Americas: vicki-garrett-54256920 / dave-loparco-3604241ab",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Americas: vicki-garrett-54256920 / samrat-dua",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Swiss Re Americas: dave-loparco-3604241ab / samrat-dua",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×25",
+   "«a smart scales weight estimate…»: alycia-bellody-055726335, ashley-hunt-768031272, brandon-smithhart-b6184485, brooke-morgan-of-cincinnati"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«one timestamped record per applicant…»: brandon-smithhart-b6184485, james-atkins-flmi-falu-a919a564, patrick-scanlon-8774a417b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«the gap crosses the threshold…»: alycia-bellody-055726335, ed-sheehan-36768718a, tasha-boland-fsa-cera-4632a3109"
+  ]
+ ]
+}

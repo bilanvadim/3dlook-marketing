@@ -1,0 +1,715 @@
+{
+ "campaign": "2026-10-29-us-insurance-underwriting",
+ "checked": 24,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-4",
+ "generated": "2026-11-05T13:41:56",
+ "hard": [],
+ "soft": [
+  [
+   "pricing word",
+   "ernest-armijos-270aa9378 M1",
+   "How does life pricing think about the value of a build signal on files that carry no measured weight?"
+  ],
+  [
+   "pricing word",
+   "ernest-armijos-270aa9378 M2",
+   "Hi Ernest, The evaluation would report how often the flag fires and how completion goes, which gives pricing…"
+  ],
+  [
+   "pricing word",
+   "tristan-fontugne-5477b89 M2",
+   "A pointer to the pricing actuaries is welcome if the table is theirs."
+  ],
+  [
+   "pricing word",
+   "russell-kolmin M1",
+   "Hi Russell, Couldn't help but ask, given your years in life pricing."
+  ],
+  [
+   "pricing word",
+   "russell-kolmin M2",
+   "Hi Russell, An evaluation would run on term applicants whose weight an exam measures anyway, comparing each e…"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: jenniferglessner / teesun",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: jenniferglessner / tj-doan-a8042597",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: jenniferglessner / christopher-hall-898635277",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: jenniferglessner / ernest-armijos-270aa9378",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: jenniferglessner / alanbub",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: jenniferglessner / victoria-liu-fsa-fcia-98519a14",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: jenniferglessner / mark-vincent-0946a624",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: jenniferglessner / john-dieck-a2310036",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: jenniferglessner / david-mcnamara-jd-cfp%c2%ae-5b584912",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: jenniferglessner / tristan-fontugne-5477b89",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: jenniferglessner / matt-winegar-68303421",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: teesun / tj-doan-a8042597",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: teesun / christopher-hall-898635277",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: teesun / ernest-armijos-270aa9378",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: teesun / alanbub",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: teesun / victoria-liu-fsa-fcia-98519a14",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: teesun / mark-vincent-0946a624",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: teesun / john-dieck-a2310036",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: teesun / david-mcnamara-jd-cfp%c2%ae-5b584912",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: teesun / tristan-fontugne-5477b89",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: teesun / matt-winegar-68303421",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: tj-doan-a8042597 / christopher-hall-898635277",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: tj-doan-a8042597 / ernest-armijos-270aa9378",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: tj-doan-a8042597 / alanbub",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: tj-doan-a8042597 / victoria-liu-fsa-fcia-98519a14",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: tj-doan-a8042597 / mark-vincent-0946a624",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: tj-doan-a8042597 / john-dieck-a2310036",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: tj-doan-a8042597 / david-mcnamara-jd-cfp%c2%ae-5b584912",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: tj-doan-a8042597 / tristan-fontugne-5477b89",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: tj-doan-a8042597 / matt-winegar-68303421",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: christopher-hall-898635277 / ernest-armijos-270aa9378",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: christopher-hall-898635277 / alanbub",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: christopher-hall-898635277 / victoria-liu-fsa-fcia-98519a14",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: christopher-hall-898635277 / mark-vincent-0946a624",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: christopher-hall-898635277 / john-dieck-a2310036",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: christopher-hall-898635277 / david-mcnamara-jd-cfp%c2%ae-5b584912",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: christopher-hall-898635277 / tristan-fontugne-5477b89",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: christopher-hall-898635277 / matt-winegar-68303421",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: ernest-armijos-270aa9378 / alanbub",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: ernest-armijos-270aa9378 / victoria-liu-fsa-fcia-98519a14",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: ernest-armijos-270aa9378 / mark-vincent-0946a624",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: ernest-armijos-270aa9378 / john-dieck-a2310036",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: ernest-armijos-270aa9378 / david-mcnamara-jd-cfp%c2%ae-5b584912",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: ernest-armijos-270aa9378 / tristan-fontugne-5477b89",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: ernest-armijos-270aa9378 / matt-winegar-68303421",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: alanbub / victoria-liu-fsa-fcia-98519a14",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: alanbub / mark-vincent-0946a624",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: alanbub / john-dieck-a2310036",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: alanbub / david-mcnamara-jd-cfp%c2%ae-5b584912",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: alanbub / tristan-fontugne-5477b89",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: alanbub / matt-winegar-68303421",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: victoria-liu-fsa-fcia-98519a14 / mark-vincent-0946a624",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: victoria-liu-fsa-fcia-98519a14 / john-dieck-a2310036",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: victoria-liu-fsa-fcia-98519a14 / david-mcnamara-jd-cfp%c2%ae-5b584912",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: victoria-liu-fsa-fcia-98519a14 / tristan-fontugne-5477b89",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: victoria-liu-fsa-fcia-98519a14 / matt-winegar-68303421",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: mark-vincent-0946a624 / john-dieck-a2310036",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: mark-vincent-0946a624 / david-mcnamara-jd-cfp%c2%ae-5b584912",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: mark-vincent-0946a624 / tristan-fontugne-5477b89",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: mark-vincent-0946a624 / matt-winegar-68303421",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: john-dieck-a2310036 / david-mcnamara-jd-cfp%c2%ae-5b584912",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: john-dieck-a2310036 / tristan-fontugne-5477b89",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: john-dieck-a2310036 / matt-winegar-68303421",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: david-mcnamara-jd-cfp%c2%ae-5b584912 / tristan-fontugne-5477b89",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: david-mcnamara-jd-cfp%c2%ae-5b584912 / matt-winegar-68303421",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Pacific Life: tristan-fontugne-5477b89 / matt-winegar-68303421",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: alex-crawford-17205223 / shawn-fourez-72628142",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: alex-crawford-17205223 / stephen-lininger-392aa332",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: alex-crawford-17205223 / mark-barnum-b3041619",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: alex-crawford-17205223 / bradgabel",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: alex-crawford-17205223 / frances-freeman-69582136",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: alex-crawford-17205223 / justintallen",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: alex-crawford-17205223 / lindsayhackney",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: alex-crawford-17205223 / jamie-lane-4b923091",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: alex-crawford-17205223 / susan-sucha-219b9016a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: alex-crawford-17205223 / kennethbyrd",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: alex-crawford-17205223 / russell-kolmin",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: shawn-fourez-72628142 / lindsayhackney",
+   "«the fitxpress scan is two photos in the e-applica…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: shawn-fourez-72628142 / frances-freeman-69582136",
+   "«smart scales returns a weight estimate, flagged o…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: shawn-fourez-72628142 / stephen-lininger-392aa332",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: shawn-fourez-72628142 / mark-barnum-b3041619",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: shawn-fourez-72628142 / bradgabel",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: shawn-fourez-72628142 / justintallen",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: shawn-fourez-72628142 / jamie-lane-4b923091",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: shawn-fourez-72628142 / susan-sucha-219b9016a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: shawn-fourez-72628142 / kennethbyrd",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: shawn-fourez-72628142 / russell-kolmin",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: stephen-lininger-392aa332 / mark-barnum-b3041619",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: stephen-lininger-392aa332 / bradgabel",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: stephen-lininger-392aa332 / frances-freeman-69582136",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: stephen-lininger-392aa332 / justintallen",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: stephen-lininger-392aa332 / lindsayhackney",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: stephen-lininger-392aa332 / jamie-lane-4b923091",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: stephen-lininger-392aa332 / susan-sucha-219b9016a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: stephen-lininger-392aa332 / kennethbyrd",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: stephen-lininger-392aa332 / russell-kolmin",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: mark-barnum-b3041619 / bradgabel",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: mark-barnum-b3041619 / frances-freeman-69582136",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: mark-barnum-b3041619 / justintallen",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: mark-barnum-b3041619 / lindsayhackney",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: mark-barnum-b3041619 / jamie-lane-4b923091",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: mark-barnum-b3041619 / susan-sucha-219b9016a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: mark-barnum-b3041619 / kennethbyrd",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: mark-barnum-b3041619 / russell-kolmin",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: bradgabel / susan-sucha-219b9016a",
+   "«hi brad, smart scales has approximately 3.5% mean…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: bradgabel / frances-freeman-69582136",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: bradgabel / justintallen",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: bradgabel / lindsayhackney",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: bradgabel / jamie-lane-4b923091",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: bradgabel / kennethbyrd",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: bradgabel / russell-kolmin",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: frances-freeman-69582136 / lindsayhackney",
+   "«a weight estimate comes back, flagged only above…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: frances-freeman-69582136 / susan-sucha-219b9016a",
+   "«a weight estimate comes back, flagged only above…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: frances-freeman-69582136 / justintallen",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: frances-freeman-69582136 / jamie-lane-4b923091",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: frances-freeman-69582136 / kennethbyrd",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: frances-freeman-69582136 / russell-kolmin",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: justintallen / lindsayhackney",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: justintallen / jamie-lane-4b923091",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: justintallen / susan-sucha-219b9016a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: justintallen / kennethbyrd",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: justintallen / russell-kolmin",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: lindsayhackney / susan-sucha-219b9016a",
+   "«the smart scales weight estimate comes with a fla…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: lindsayhackney / jamie-lane-4b923091",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: lindsayhackney / kennethbyrd",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: lindsayhackney / russell-kolmin",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: jamie-lane-4b923091 / russell-kolmin",
+   "«fitxpress could be two photos taken in the e-appl…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: jamie-lane-4b923091 / susan-sucha-219b9016a",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: jamie-lane-4b923091 / kennethbyrd",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: susan-sucha-219b9016a / kennethbyrd",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: susan-sucha-219b9016a / russell-kolmin",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Protective Life: kennethbyrd / russell-kolmin",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×17",
+   "«a smart scales weight estimate…»: alanbub, bradgabel, christopher-hall-898635277, david-mcnamara-jd-cfp%c2%ae-5b584912"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«is not a scale reading…»: alex-crawford-17205223, bradgabel, jenniferglessner, mark-vincent-0946a624"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«a threshold the carrier sets…»: john-dieck-a2310036, mark-vincent-0946a624, matt-winegar-68303421"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«one timestamped record per applicant…»: david-mcnamara-jd-cfp%c2%ae-5b584912, lindsayhackney, teesun"
+  ]
+ ]
+}

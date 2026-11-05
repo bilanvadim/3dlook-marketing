@@ -1,0 +1,880 @@
+{
+ "campaign": "2026-10-29-us-insurance-underwriting",
+ "checked": 32,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-6",
+ "generated": "2026-11-05T13:40:47",
+ "hard": [],
+ "soft": [
+  [
+   "pricing word",
+   "nathan-hill-24b77626 M1",
+   "Hi Nathan, Got me thinking about how RGA weighs the cost of new evidence in individual life pricing."
+  ],
+  [
+   "pricing word",
+   "nick-sontheimer-b01084178 M1",
+   "Hi Nick, Wanted to reach out about pricing data at RGA, where a shadow evaluation of build evidence could pro…"
+  ],
+  [
+   "pricing word",
+   "nick-sontheimer-b01084178 M2",
+   "Hi Nick, An evaluation on a client's exam cases gives pricing counts of flags per threshold, set against the…"
+  ],
+  [
+   "no company line",
+   "jeremy-vest-59167291 M1",
+   "«Hannover Life Re America» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "renee-mcclintic-falu-flmi-hiaa-acs-66954113 M1",
+   "«Hannover Life Re America» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "eric-flender-b4b198172 M1",
+   "«Hannover Life Re America» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "brian-hiserote-640575b3 M1",
+   "«Hannover Life Re America» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "james-mcardle-590a9663 M1",
+   "«Hannover Life Re America» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "susan-l-mayer-falu-flmi-07601824 M1",
+   "«Hannover Life Re America» is not named: check it has a line only this company gets"
+  ],
+  [
+   "pricing word",
+   "seanconrad M1",
+   "Hi Sean, Made me think about traditional life pricing and data analytics meeting accelerated and automated un…"
+  ],
+  [
+   "no company line",
+   "seanconrad M1",
+   "«Hannover Life Re America» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "elena-a-s-4a902718b M1",
+   "«Hannover Life Re America» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "kevin-bettis-certified-falu-flmi-ara-acs-airc-a7809a25 M1",
+   "«Hannover Life Re America» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "laura-cutshall-25543627 M1",
+   "«Hannover Life Re America» is not named: check it has a line only this company gets"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: terri-drahn-9743a099 / neal-hasty-a8b356231",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: terri-drahn-9743a099 / tracy-regier-72866a38",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: terri-drahn-9743a099 / aniton-william-61399344",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: terri-drahn-9743a099 / tricia-wood-a730745",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: terri-drahn-9743a099 / andrew-vigar-falu-flmi-74579219",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: terri-drahn-9743a099 / sgjense",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: terri-drahn-9743a099 / virginiagreene",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: terri-drahn-9743a099 / michael-k-469910295",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: terri-drahn-9743a099 / christine-kor-aronski-14784125",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: terri-drahn-9743a099 / ben-wadsley-62460413",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: neal-hasty-a8b356231 / tracy-regier-72866a38",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: neal-hasty-a8b356231 / aniton-william-61399344",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: neal-hasty-a8b356231 / tricia-wood-a730745",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: neal-hasty-a8b356231 / andrew-vigar-falu-flmi-74579219",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: neal-hasty-a8b356231 / sgjense",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: neal-hasty-a8b356231 / virginiagreene",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: neal-hasty-a8b356231 / michael-k-469910295",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: neal-hasty-a8b356231 / christine-kor-aronski-14784125",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: neal-hasty-a8b356231 / ben-wadsley-62460413",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: tracy-regier-72866a38 / aniton-william-61399344",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: tracy-regier-72866a38 / tricia-wood-a730745",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: tracy-regier-72866a38 / andrew-vigar-falu-flmi-74579219",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: tracy-regier-72866a38 / sgjense",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: tracy-regier-72866a38 / virginiagreene",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: tracy-regier-72866a38 / michael-k-469910295",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: tracy-regier-72866a38 / christine-kor-aronski-14784125",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: tracy-regier-72866a38 / ben-wadsley-62460413",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: aniton-william-61399344 / tricia-wood-a730745",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: aniton-william-61399344 / andrew-vigar-falu-flmi-74579219",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: aniton-william-61399344 / sgjense",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: aniton-william-61399344 / virginiagreene",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: aniton-william-61399344 / michael-k-469910295",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: aniton-william-61399344 / christine-kor-aronski-14784125",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: aniton-william-61399344 / ben-wadsley-62460413",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: tricia-wood-a730745 / andrew-vigar-falu-flmi-74579219",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: tricia-wood-a730745 / sgjense",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: tricia-wood-a730745 / virginiagreene",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: tricia-wood-a730745 / michael-k-469910295",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: tricia-wood-a730745 / christine-kor-aronski-14784125",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: tricia-wood-a730745 / ben-wadsley-62460413",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: andrew-vigar-falu-flmi-74579219 / sgjense",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: andrew-vigar-falu-flmi-74579219 / virginiagreene",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: andrew-vigar-falu-flmi-74579219 / michael-k-469910295",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: andrew-vigar-falu-flmi-74579219 / christine-kor-aronski-14784125",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: andrew-vigar-falu-flmi-74579219 / ben-wadsley-62460413",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: sgjense / virginiagreene",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: sgjense / michael-k-469910295",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: sgjense / christine-kor-aronski-14784125",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: sgjense / ben-wadsley-62460413",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: virginiagreene / michael-k-469910295",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: virginiagreene / christine-kor-aronski-14784125",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: virginiagreene / ben-wadsley-62460413",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: michael-k-469910295 / christine-kor-aronski-14784125",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: michael-k-469910295 / ben-wadsley-62460413",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Transamerica: christine-kor-aronski-14784125 / ben-wadsley-62460413",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: jennifer-johnson-certified-falu-clu-flmi-b5155b42 / jacqueline-waas-05a79145",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: jennifer-johnson-certified-falu-clu-flmi-b5155b42 / colin-deforge-0639701",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: jennifer-johnson-certified-falu-clu-flmi-b5155b42 / caroline-specter-a9b8ab57",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: jennifer-johnson-certified-falu-clu-flmi-b5155b42 / mark-brann-ab79a322",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: jennifer-johnson-certified-falu-clu-flmi-b5155b42 / michaelhillunderwriter",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: jennifer-johnson-certified-falu-clu-flmi-b5155b42 / nathan-hill-24b77626",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: jennifer-johnson-certified-falu-clu-flmi-b5155b42 / nick-sontheimer-b01084178",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: jennifer-johnson-certified-falu-clu-flmi-b5155b42 / dave-rengachary",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: jennifer-johnson-certified-falu-clu-flmi-b5155b42 / ron-hollowell-92b1861b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: jennifer-johnson-certified-falu-clu-flmi-b5155b42 / braam-kruger-35771576",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: jacqueline-waas-05a79145 / mark-brann-ab79a322",
+   "«one candidate input is fitxpress: two photos in t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: jacqueline-waas-05a79145 / colin-deforge-0639701",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: jacqueline-waas-05a79145 / caroline-specter-a9b8ab57",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: jacqueline-waas-05a79145 / michaelhillunderwriter",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: jacqueline-waas-05a79145 / nathan-hill-24b77626",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: jacqueline-waas-05a79145 / nick-sontheimer-b01084178",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: jacqueline-waas-05a79145 / dave-rengachary",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: jacqueline-waas-05a79145 / ron-hollowell-92b1861b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: jacqueline-waas-05a79145 / braam-kruger-35771576",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: colin-deforge-0639701 / caroline-specter-a9b8ab57",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: colin-deforge-0639701 / mark-brann-ab79a322",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: colin-deforge-0639701 / michaelhillunderwriter",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: colin-deforge-0639701 / nathan-hill-24b77626",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: colin-deforge-0639701 / nick-sontheimer-b01084178",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: colin-deforge-0639701 / dave-rengachary",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: colin-deforge-0639701 / ron-hollowell-92b1861b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: colin-deforge-0639701 / braam-kruger-35771576",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: caroline-specter-a9b8ab57 / mark-brann-ab79a322",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: caroline-specter-a9b8ab57 / michaelhillunderwriter",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: caroline-specter-a9b8ab57 / nathan-hill-24b77626",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: caroline-specter-a9b8ab57 / nick-sontheimer-b01084178",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: caroline-specter-a9b8ab57 / dave-rengachary",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: caroline-specter-a9b8ab57 / ron-hollowell-92b1861b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: caroline-specter-a9b8ab57 / braam-kruger-35771576",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: mark-brann-ab79a322 / michaelhillunderwriter",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: mark-brann-ab79a322 / nathan-hill-24b77626",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: mark-brann-ab79a322 / nick-sontheimer-b01084178",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: mark-brann-ab79a322 / dave-rengachary",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: mark-brann-ab79a322 / ron-hollowell-92b1861b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: mark-brann-ab79a322 / braam-kruger-35771576",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: michaelhillunderwriter / nathan-hill-24b77626",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: michaelhillunderwriter / nick-sontheimer-b01084178",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: michaelhillunderwriter / dave-rengachary",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: michaelhillunderwriter / ron-hollowell-92b1861b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: michaelhillunderwriter / braam-kruger-35771576",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: nathan-hill-24b77626 / nick-sontheimer-b01084178",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: nathan-hill-24b77626 / dave-rengachary",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: nathan-hill-24b77626 / ron-hollowell-92b1861b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: nathan-hill-24b77626 / braam-kruger-35771576",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: nick-sontheimer-b01084178 / dave-rengachary",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: nick-sontheimer-b01084178 / ron-hollowell-92b1861b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: nick-sontheimer-b01084178 / braam-kruger-35771576",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: dave-rengachary / ron-hollowell-92b1861b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: dave-rengachary / braam-kruger-35771576",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA US: ron-hollowell-92b1861b / braam-kruger-35771576",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: jeremy-vest-59167291 / renee-mcclintic-falu-flmi-hiaa-acs-66954113",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: jeremy-vest-59167291 / eric-flender-b4b198172",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: jeremy-vest-59167291 / brian-hiserote-640575b3",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: jeremy-vest-59167291 / james-mcardle-590a9663",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: jeremy-vest-59167291 / susan-l-mayer-falu-flmi-07601824",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: jeremy-vest-59167291 / seanconrad",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: jeremy-vest-59167291 / elena-a-s-4a902718b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: jeremy-vest-59167291 / kevin-bettis-certified-falu-flmi-ara-acs-airc-a7809a25",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: jeremy-vest-59167291 / laura-cutshall-25543627",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: renee-mcclintic-falu-flmi-hiaa-acs-66954113 / eric-flender-b4b198172",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: renee-mcclintic-falu-flmi-hiaa-acs-66954113 / brian-hiserote-640575b3",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: renee-mcclintic-falu-flmi-hiaa-acs-66954113 / james-mcardle-590a9663",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: renee-mcclintic-falu-flmi-hiaa-acs-66954113 / susan-l-mayer-falu-flmi-07601824",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: renee-mcclintic-falu-flmi-hiaa-acs-66954113 / seanconrad",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: renee-mcclintic-falu-flmi-hiaa-acs-66954113 / elena-a-s-4a902718b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: renee-mcclintic-falu-flmi-hiaa-acs-66954113 / kevin-bettis-certified-falu-flmi-ara-acs-airc-a7809a25",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: renee-mcclintic-falu-flmi-hiaa-acs-66954113 / laura-cutshall-25543627",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: eric-flender-b4b198172 / brian-hiserote-640575b3",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: eric-flender-b4b198172 / james-mcardle-590a9663",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: eric-flender-b4b198172 / susan-l-mayer-falu-flmi-07601824",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: eric-flender-b4b198172 / seanconrad",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: eric-flender-b4b198172 / elena-a-s-4a902718b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: eric-flender-b4b198172 / kevin-bettis-certified-falu-flmi-ara-acs-airc-a7809a25",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: eric-flender-b4b198172 / laura-cutshall-25543627",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: brian-hiserote-640575b3 / james-mcardle-590a9663",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: brian-hiserote-640575b3 / susan-l-mayer-falu-flmi-07601824",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: brian-hiserote-640575b3 / seanconrad",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: brian-hiserote-640575b3 / elena-a-s-4a902718b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: brian-hiserote-640575b3 / kevin-bettis-certified-falu-flmi-ara-acs-airc-a7809a25",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: brian-hiserote-640575b3 / laura-cutshall-25543627",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: james-mcardle-590a9663 / susan-l-mayer-falu-flmi-07601824",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: james-mcardle-590a9663 / seanconrad",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: james-mcardle-590a9663 / elena-a-s-4a902718b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: james-mcardle-590a9663 / kevin-bettis-certified-falu-flmi-ara-acs-airc-a7809a25",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: james-mcardle-590a9663 / laura-cutshall-25543627",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: susan-l-mayer-falu-flmi-07601824 / seanconrad",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: susan-l-mayer-falu-flmi-07601824 / elena-a-s-4a902718b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: susan-l-mayer-falu-flmi-07601824 / kevin-bettis-certified-falu-flmi-ara-acs-airc-a7809a25",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: susan-l-mayer-falu-flmi-07601824 / laura-cutshall-25543627",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: seanconrad / elena-a-s-4a902718b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: seanconrad / kevin-bettis-certified-falu-flmi-ara-acs-airc-a7809a25",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: seanconrad / laura-cutshall-25543627",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: elena-a-s-4a902718b / kevin-bettis-certified-falu-flmi-ara-acs-airc-a7809a25",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: elena-a-s-4a902718b / laura-cutshall-25543627",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hannover Life Re America: kevin-bettis-certified-falu-flmi-ara-acs-airc-a7809a25 / laura-cutshall-25543627",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×25",
+   "«a smart scales weight estimate…»: andrew-vigar-falu-flmi-74579219, aniton-william-61399344, ben-wadsley-62460413, braam-kruger-35771576"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«30 days per the carrier…»: ron-hollowell-92b1861b, sgjense, tricia-wood-a730745"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«a flag when the gap…»: jennifer-johnson-certified-falu-clu-flmi-b5155b42, neal-hasty-a8b356231, virginiagreene"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«is not a scale reading…»: christine-kor-aronski-14784125, elena-a-s-4a902718b, virginiagreene"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«one timestamped record per applicant…»: caroline-specter-a9b8ab57, james-mcardle-590a9663, seanconrad"
+  ]
+ ]
+}

@@ -1,0 +1,1005 @@
+{
+ "campaign": "2026-10-29-us-insurance-underwriting",
+ "checked": 28,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-1",
+ "generated": "2026-11-05T13:40:36",
+ "hard": [],
+ "soft": [
+  [
+   "no company line",
+   "kory-petoske-15a70194 M1",
+   "«Sammons Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "amy-rider-falu-flmi-ab466944 M1",
+   "«Sammons Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "pat-grashel-46202a8b M1",
+   "«Sammons Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "beth-abbott-1b495925 M1",
+   "«Sammons Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "nicole-duncan-falu-flmi-airc-acs-03992313 M1",
+   "«Sammons Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "mattrise M1",
+   "«Sammons Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "christie-brammer-92b2a467 M1",
+   "«Sammons Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "elizabeth-alexander-5a6a0b235 M1",
+   "«Sammons Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "pjmocarski M1",
+   "«Sammons Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "courtney-jacobson-certified-falu-almi-acs-6a4b9096 M1",
+   "«Sammons Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "roger-hofer-79065019 M1",
+   "«Sammons Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "matt-webster-389321228 M1",
+   "«Sammons Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "norma-davis-9064212b M1",
+   "«Sammons Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "katrishaneisse M1",
+   "«Sammons Financial» is not named: check it has a line only this company gets"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: dean-galgano-aalu-fmli-i-6279595 / sharon-garner-certified-falu-flmi-8a587980",
+   "«two photos taken in the e-application give fitxpr…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: dean-galgano-aalu-fmli-i-6279595 / marianne-cumming-9b85442b",
+   "«two photos taken in the e-application give fitxpr…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: dean-galgano-aalu-fmli-i-6279595 / jack-nance-a02ba649",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: dean-galgano-aalu-fmli-i-6279595 / chris-feldges-falu-flmi-mba-acs-501083a5",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: dean-galgano-aalu-fmli-i-6279595 / micheleohler",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: dean-galgano-aalu-fmli-i-6279595 / matthew-lawrence-clark",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: dean-galgano-aalu-fmli-i-6279595 / michael-clark-61006a107",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: dean-galgano-aalu-fmli-i-6279595 / billbellpml",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: dean-galgano-aalu-fmli-i-6279595 / amzadhossain",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: dean-galgano-aalu-fmli-i-6279595 / gretchen-dinucci-74b33b45",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: dean-galgano-aalu-fmli-i-6279595 / velezjacqueline",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: dean-galgano-aalu-fmli-i-6279595 / brent-ricci-7b922a132",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: dean-galgano-aalu-fmli-i-6279595 / jacqueline-fallon-977295173",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: jack-nance-a02ba649 / chris-feldges-falu-flmi-mba-acs-501083a5",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: jack-nance-a02ba649 / micheleohler",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: jack-nance-a02ba649 / matthew-lawrence-clark",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: jack-nance-a02ba649 / michael-clark-61006a107",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: jack-nance-a02ba649 / billbellpml",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: jack-nance-a02ba649 / amzadhossain",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: jack-nance-a02ba649 / gretchen-dinucci-74b33b45",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: jack-nance-a02ba649 / sharon-garner-certified-falu-flmi-8a587980",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: jack-nance-a02ba649 / velezjacqueline",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: jack-nance-a02ba649 / marianne-cumming-9b85442b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: jack-nance-a02ba649 / brent-ricci-7b922a132",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: jack-nance-a02ba649 / jacqueline-fallon-977295173",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: chris-feldges-falu-flmi-mba-acs-501083a5 / micheleohler",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: chris-feldges-falu-flmi-mba-acs-501083a5 / matthew-lawrence-clark",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: chris-feldges-falu-flmi-mba-acs-501083a5 / michael-clark-61006a107",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: chris-feldges-falu-flmi-mba-acs-501083a5 / billbellpml",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: chris-feldges-falu-flmi-mba-acs-501083a5 / amzadhossain",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: chris-feldges-falu-flmi-mba-acs-501083a5 / gretchen-dinucci-74b33b45",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: chris-feldges-falu-flmi-mba-acs-501083a5 / sharon-garner-certified-falu-flmi-8a587980",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: chris-feldges-falu-flmi-mba-acs-501083a5 / velezjacqueline",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: chris-feldges-falu-flmi-mba-acs-501083a5 / marianne-cumming-9b85442b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: chris-feldges-falu-flmi-mba-acs-501083a5 / brent-ricci-7b922a132",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: chris-feldges-falu-flmi-mba-acs-501083a5 / jacqueline-fallon-977295173",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: micheleohler / matthew-lawrence-clark",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: micheleohler / michael-clark-61006a107",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: micheleohler / billbellpml",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: micheleohler / amzadhossain",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: micheleohler / gretchen-dinucci-74b33b45",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: micheleohler / sharon-garner-certified-falu-flmi-8a587980",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: micheleohler / velezjacqueline",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: micheleohler / marianne-cumming-9b85442b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: micheleohler / brent-ricci-7b922a132",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: micheleohler / jacqueline-fallon-977295173",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: matthew-lawrence-clark / amzadhossain",
+   "«fitxpress takes two photos through an api or sdk…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: matthew-lawrence-clark / michael-clark-61006a107",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: matthew-lawrence-clark / billbellpml",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: matthew-lawrence-clark / gretchen-dinucci-74b33b45",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: matthew-lawrence-clark / sharon-garner-certified-falu-flmi-8a587980",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: matthew-lawrence-clark / velezjacqueline",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: matthew-lawrence-clark / marianne-cumming-9b85442b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: matthew-lawrence-clark / brent-ricci-7b922a132",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: matthew-lawrence-clark / jacqueline-fallon-977295173",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: michael-clark-61006a107 / billbellpml",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: michael-clark-61006a107 / amzadhossain",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: michael-clark-61006a107 / gretchen-dinucci-74b33b45",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: michael-clark-61006a107 / sharon-garner-certified-falu-flmi-8a587980",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: michael-clark-61006a107 / velezjacqueline",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: michael-clark-61006a107 / marianne-cumming-9b85442b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: michael-clark-61006a107 / brent-ricci-7b922a132",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: michael-clark-61006a107 / jacqueline-fallon-977295173",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: billbellpml / amzadhossain",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: billbellpml / gretchen-dinucci-74b33b45",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: billbellpml / sharon-garner-certified-falu-flmi-8a587980",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: billbellpml / velezjacqueline",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: billbellpml / marianne-cumming-9b85442b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: billbellpml / brent-ricci-7b922a132",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: billbellpml / jacqueline-fallon-977295173",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: amzadhossain / gretchen-dinucci-74b33b45",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: amzadhossain / sharon-garner-certified-falu-flmi-8a587980",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: amzadhossain / velezjacqueline",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: amzadhossain / marianne-cumming-9b85442b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: amzadhossain / brent-ricci-7b922a132",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: amzadhossain / jacqueline-fallon-977295173",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: gretchen-dinucci-74b33b45 / sharon-garner-certified-falu-flmi-8a587980",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: gretchen-dinucci-74b33b45 / velezjacqueline",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: gretchen-dinucci-74b33b45 / marianne-cumming-9b85442b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: gretchen-dinucci-74b33b45 / brent-ricci-7b922a132",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: gretchen-dinucci-74b33b45 / jacqueline-fallon-977295173",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: sharon-garner-certified-falu-flmi-8a587980 / velezjacqueline",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: sharon-garner-certified-falu-flmi-8a587980 / marianne-cumming-9b85442b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: sharon-garner-certified-falu-flmi-8a587980 / brent-ricci-7b922a132",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: sharon-garner-certified-falu-flmi-8a587980 / jacqueline-fallon-977295173",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: velezjacqueline / marianne-cumming-9b85442b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: velezjacqueline / brent-ricci-7b922a132",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: velezjacqueline / jacqueline-fallon-977295173",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: marianne-cumming-9b85442b / brent-ricci-7b922a132",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: marianne-cumming-9b85442b / jacqueline-fallon-977295173",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Penn Mutual: brent-ricci-7b922a132 / jacqueline-fallon-977295173",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: kory-petoske-15a70194 / amy-rider-falu-flmi-ab466944",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: kory-petoske-15a70194 / pat-grashel-46202a8b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: kory-petoske-15a70194 / beth-abbott-1b495925",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: kory-petoske-15a70194 / nicole-duncan-falu-flmi-airc-acs-03992313",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: kory-petoske-15a70194 / mattrise",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: kory-petoske-15a70194 / christie-brammer-92b2a467",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: kory-petoske-15a70194 / elizabeth-alexander-5a6a0b235",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: kory-petoske-15a70194 / pjmocarski",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: kory-petoske-15a70194 / courtney-jacobson-certified-falu-almi-acs-6a4b9096",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: kory-petoske-15a70194 / roger-hofer-79065019",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: kory-petoske-15a70194 / matt-webster-389321228",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: kory-petoske-15a70194 / norma-davis-9064212b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: kory-petoske-15a70194 / katrishaneisse",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: amy-rider-falu-flmi-ab466944 / pat-grashel-46202a8b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: amy-rider-falu-flmi-ab466944 / beth-abbott-1b495925",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: amy-rider-falu-flmi-ab466944 / nicole-duncan-falu-flmi-airc-acs-03992313",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: amy-rider-falu-flmi-ab466944 / mattrise",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: amy-rider-falu-flmi-ab466944 / christie-brammer-92b2a467",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: amy-rider-falu-flmi-ab466944 / elizabeth-alexander-5a6a0b235",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: amy-rider-falu-flmi-ab466944 / pjmocarski",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: amy-rider-falu-flmi-ab466944 / courtney-jacobson-certified-falu-almi-acs-6a4b9096",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: amy-rider-falu-flmi-ab466944 / roger-hofer-79065019",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: amy-rider-falu-flmi-ab466944 / matt-webster-389321228",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: amy-rider-falu-flmi-ab466944 / norma-davis-9064212b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: amy-rider-falu-flmi-ab466944 / katrishaneisse",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: pat-grashel-46202a8b / beth-abbott-1b495925",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: pat-grashel-46202a8b / nicole-duncan-falu-flmi-airc-acs-03992313",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: pat-grashel-46202a8b / mattrise",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: pat-grashel-46202a8b / christie-brammer-92b2a467",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: pat-grashel-46202a8b / elizabeth-alexander-5a6a0b235",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: pat-grashel-46202a8b / pjmocarski",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: pat-grashel-46202a8b / courtney-jacobson-certified-falu-almi-acs-6a4b9096",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: pat-grashel-46202a8b / roger-hofer-79065019",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: pat-grashel-46202a8b / matt-webster-389321228",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: pat-grashel-46202a8b / norma-davis-9064212b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: pat-grashel-46202a8b / katrishaneisse",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: beth-abbott-1b495925 / nicole-duncan-falu-flmi-airc-acs-03992313",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: beth-abbott-1b495925 / mattrise",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: beth-abbott-1b495925 / christie-brammer-92b2a467",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: beth-abbott-1b495925 / elizabeth-alexander-5a6a0b235",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: beth-abbott-1b495925 / pjmocarski",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: beth-abbott-1b495925 / courtney-jacobson-certified-falu-almi-acs-6a4b9096",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: beth-abbott-1b495925 / roger-hofer-79065019",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: beth-abbott-1b495925 / matt-webster-389321228",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: beth-abbott-1b495925 / norma-davis-9064212b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: beth-abbott-1b495925 / katrishaneisse",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: nicole-duncan-falu-flmi-airc-acs-03992313 / mattrise",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: nicole-duncan-falu-flmi-airc-acs-03992313 / christie-brammer-92b2a467",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: nicole-duncan-falu-flmi-airc-acs-03992313 / elizabeth-alexander-5a6a0b235",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: nicole-duncan-falu-flmi-airc-acs-03992313 / pjmocarski",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: nicole-duncan-falu-flmi-airc-acs-03992313 / courtney-jacobson-certified-falu-almi-acs-6a4b9096",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: nicole-duncan-falu-flmi-airc-acs-03992313 / roger-hofer-79065019",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: nicole-duncan-falu-flmi-airc-acs-03992313 / matt-webster-389321228",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: nicole-duncan-falu-flmi-airc-acs-03992313 / norma-davis-9064212b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: nicole-duncan-falu-flmi-airc-acs-03992313 / katrishaneisse",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: mattrise / christie-brammer-92b2a467",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: mattrise / elizabeth-alexander-5a6a0b235",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: mattrise / pjmocarski",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: mattrise / courtney-jacobson-certified-falu-almi-acs-6a4b9096",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: mattrise / roger-hofer-79065019",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: mattrise / matt-webster-389321228",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: mattrise / norma-davis-9064212b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: mattrise / katrishaneisse",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: christie-brammer-92b2a467 / elizabeth-alexander-5a6a0b235",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: christie-brammer-92b2a467 / pjmocarski",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: christie-brammer-92b2a467 / courtney-jacobson-certified-falu-almi-acs-6a4b9096",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: christie-brammer-92b2a467 / roger-hofer-79065019",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: christie-brammer-92b2a467 / matt-webster-389321228",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: christie-brammer-92b2a467 / norma-davis-9064212b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: christie-brammer-92b2a467 / katrishaneisse",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: elizabeth-alexander-5a6a0b235 / pjmocarski",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: elizabeth-alexander-5a6a0b235 / courtney-jacobson-certified-falu-almi-acs-6a4b9096",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: elizabeth-alexander-5a6a0b235 / roger-hofer-79065019",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: elizabeth-alexander-5a6a0b235 / matt-webster-389321228",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: elizabeth-alexander-5a6a0b235 / norma-davis-9064212b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: elizabeth-alexander-5a6a0b235 / katrishaneisse",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: pjmocarski / courtney-jacobson-certified-falu-almi-acs-6a4b9096",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: pjmocarski / roger-hofer-79065019",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: pjmocarski / matt-webster-389321228",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: pjmocarski / norma-davis-9064212b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: pjmocarski / katrishaneisse",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: courtney-jacobson-certified-falu-almi-acs-6a4b9096 / roger-hofer-79065019",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: courtney-jacobson-certified-falu-almi-acs-6a4b9096 / matt-webster-389321228",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: courtney-jacobson-certified-falu-almi-acs-6a4b9096 / norma-davis-9064212b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: courtney-jacobson-certified-falu-almi-acs-6a4b9096 / katrishaneisse",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: roger-hofer-79065019 / matt-webster-389321228",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: roger-hofer-79065019 / norma-davis-9064212b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: roger-hofer-79065019 / katrishaneisse",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: matt-webster-389321228 / norma-davis-9064212b",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: matt-webster-389321228 / katrishaneisse",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sammons Financial: norma-davis-9064212b / katrishaneisse",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×22",
+   "«a smart scales weight estimate…»: amy-rider-falu-flmi-ab466944, amzadhossain, beth-abbott-1b495925, billbellpml"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«a threshold the carrier sets…»: amzadhossain, matthew-lawrence-clark, pjmocarski"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«taken in the e application…»: amy-rider-falu-flmi-ab466944, dean-galgano-aalu-fmli-i-6279595, michael-clark-61006a107"
+  ]
+ ]
+}

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-02",
+  "last_updated": "2026-11-05",
   "companies": {
     "safariland": {
       "covered_by_profile": null,
@@ -3105,6 +3105,254 @@
       "display_name": "Zurich Life Ireland",
       "covered_by_profile": "olena",
       "campaign_id": "2026-10-29-eu-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "ameritas": {
+      "display_name": "Ameritas",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "bestow": {
+      "display_name": "Bestow",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "ethos": {
+      "display_name": "Ethos",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "foresters-financial-us": {
+      "display_name": "Foresters Financial US",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "gen-re-us": {
+      "display_name": "Gen Re US",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "guardian-life": {
+      "display_name": "Guardian Life",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "hannover-life-re-america": {
+      "display_name": "Hannover Life Re America",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "ipipeline-us": {
+      "display_name": "iPipeline US",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "john-hancock": {
+      "display_name": "John Hancock",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "ladder-life": {
+      "display_name": "Ladder Life",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "lincoln-financial": {
+      "display_name": "Lincoln Financial",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "massmutual": {
+      "display_name": "MassMutual",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "munich-re-life-us": {
+      "display_name": "Munich Re Life US",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "mutual-of-omaha": {
+      "display_name": "Mutual of Omaha",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "nationwide": {
+      "display_name": "Nationwide",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "northwestern-mutual": {
+      "display_name": "Northwestern Mutual",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "pacific-life": {
+      "display_name": "Pacific Life",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "penn-mutual": {
+      "display_name": "Penn Mutual",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "principal-financial": {
+      "display_name": "Principal Financial",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "protective-life": {
+      "display_name": "Protective Life",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "prudential-financial": {
+      "display_name": "Prudential Financial",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "rga-us": {
+      "display_name": "RGA US",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "sammons-financial": {
+      "display_name": "Sammons Financial",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "scor-life-americas": {
+      "display_name": "SCOR Life Americas",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "securian-financial": {
+      "display_name": "Securian Financial",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "standard": {
+      "display_name": "The Standard",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "swiss-re-americas": {
+      "display_name": "Swiss Re Americas",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "symetra": {
+      "display_name": "Symetra",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "thrivent": {
+      "display_name": "Thrivent",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "transamerica": {
+      "display_name": "Transamerica",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-29",
+      "status": "active"
+    },
+    "zinnia": {
+      "display_name": "Zinnia",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-10-29-us-insurance-underwriting",
       "product": "fitxpress",
       "date": "2026-10-29",
       "status": "active"

@@ -1,0 +1,160 @@
+{
+ "campaign": "2026-10-29-us-insurance-underwriting",
+ "checked": 16,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-10",
+ "generated": "2026-11-05T13:35:41",
+ "hard": [],
+ "soft": [
+  [
+   "no company line",
+   "paul-greene-40b337a4 M1",
+   "«Foresters Financial US» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "rmackillop M1",
+   "«Ladder Life» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "hale-laura M1",
+   "«Ladder Life» is not named: check it has a line only this company gets"
+  ],
+  [
+   "no company line",
+   "keerthi-mandala M1",
+   "«Ladder Life» is not named: check it has a line only this company gets"
+  ],
+  [
+   "near-duplicate sentence",
+   "Ethos: spflan / nicholelmyers",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Ethos: spflan / vipulethos",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Ethos: spflan / ashwath-muralidharan-945a415",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Ethos: nicholelmyers / vipulethos",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Ethos: nicholelmyers / ashwath-muralidharan-945a415",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Ethos: vipulethos / ashwath-muralidharan-945a415",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Ladder Life: rmackillop / hale-laura",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Ladder Life: rmackillop / keerthi-mandala",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Ladder Life: hale-laura / keerthi-mandala",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "iPipeline US: katie-kahl-15049526 / chriscella",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "iPipeline US: katie-kahl-15049526 / alexctompkins",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "iPipeline US: chriscella / alexctompkins",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bestow: laura-mckiernan / david-peters-9b1b6898",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bestow: laura-mckiernan / malenoir",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bestow: laura-mckiernan / dbelanger1",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bestow: laura-mckiernan / ericwonsuklee",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bestow: david-peters-9b1b6898 / malenoir",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bestow: david-peters-9b1b6898 / dbelanger1",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bestow: david-peters-9b1b6898 / ericwonsuklee",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bestow: malenoir / dbelanger1",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bestow: malenoir / ericwonsuklee",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bestow: dbelanger1 / ericwonsuklee",
+   "«fitxpress is not a medical device and does not ma…»"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×15",
+   "«a smart scales weight estimate…»: alexctompkins, ashwath-muralidharan-945a415, chriscella, dbelanger1"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«a flag when the gap…»: katie-kahl-15049526, laura-mckiernan, nicholelmyers, paul-greene-40b337a4"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«one timestamped record per applicant…»: alexctompkins, ericwonsuklee, katie-kahl-15049526, laura-mckiernan"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«when the gap crosses the…»: katie-kahl-15049526, laura-mckiernan, paul-greene-40b337a4"
+  ]
+ ]
+}
