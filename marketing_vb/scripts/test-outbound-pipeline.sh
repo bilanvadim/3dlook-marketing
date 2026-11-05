@@ -618,6 +618,18 @@ check "card --for validate -> 0" 0 $OP card --campaign $P --for validate
 check "card --for messages -> 0" 0 $OP card --campaign $P --for messages
 check "fresh card passes --check -> 0" 0 $OP card --campaign $P --for messages --check
 grep_check "the card carries no pricing section" "^0$" grep -c "^### Pricing" "$CAMP/$P/card-messages.md"
+# 2026-11-05 (us-insurance-underwriting): the template's «Not written yet» reached step 5 unseen
+grep_check "no account facts section: a warning, not a block" "has no .*Account facts" \
+  $OP card --campaign $P --for messages
+cp "$CAMP/$P/hypothesis.md" "$CAMP/$P/hypothesis.md.bak"
+mutate "a placeholder Account facts section" "$CAMP/$P/hypothesis.md" '^## Rules for steps 3-5$' \
+  '### Account facts (filled after step 2)\n\nNot written yet. A fresh round writes one bullet per group.\n\n## Rules for steps 3-5'
+check "placeholder account facts block the messages card -> 1" 1 $OP card --campaign $P --for messages
+mutate "a company bullet into Account facts" "$CAMP/$P/hypothesis.md" '^Not written yet\. A fresh round writes one bullet per group\.$' \
+  '- **Groupco:** Launched a progress tab in 2026 (https://a.example). Use: the tab. Never: figures.'
+check "account facts with a bullet -> 0" 0 $OP card --campaign $P --for messages
+mv "$CAMP/$P/hypothesis.md.bak" "$CAMP/$P/hypothesis.md"
+$OP card --campaign $P --for messages >/dev/null 2>&1
 # "New South Wales" contains "wales": 65 Sydney people were flagged geo:katerina (2026-10-02).
 GEO='import importlib.util as u, sys
 s = u.spec_from_file_location("p", "scripts/outbound-pipeline.py"); m = u.module_from_spec(s); s.loader.exec_module(m)
@@ -670,6 +682,19 @@ check "promote: by name, within the cap -> 0" 0 \
   $OP promote --campaign $P --names "Cara Dahl" --angle referral --wave 2 --pool H
 check "promote: over cap_per_group -> 1" 1 $OP promote --campaign $P --names "Ben Cole" --angle technical-integration
 grep_check "promote keeps the previous list" "people-validated-v2-" ls "$CAMP/$P"
+# 2026-11-05 (us-insurance-underwriting): a re-run of apply-decisions dropped 20 checkpoint
+# promotions; a promotion now survives while the decision it overrode is unchanged
+grep_check "apply-decisions keeps a promotion it did not decide" "kept 1 promotion" \
+  $OP apply-decisions --campaign $P --in decisions.md
+grep_check "and Cara is still to send" "cara-dahl,.*,SEND,Added by Vadim" cat "$CAMP/$P/people-validated.csv"
+sed 's/^cara-dahl | FAIL | | | | finance$/cara-dahl | WEAK | | referral | | finance seat, not the buyer/' \
+  "$CAMP/$P/decisions.md" > "$CAMP/$P/decisions-weak.md"
+grep_check "a decision changed since the promotion wins, and says so" "promotion\(s\) dropped" \
+  $OP apply-decisions --campaign $P --in decisions-weak.md
+grep_check "and Cara is back to review" "cara-dahl,.*,WEAK,,REVIEW," cat "$CAMP/$P/people-validated.csv"
+rm -f "$CAMP/$P/decisions-weak.md"
+check "promote Cara again for the steps below -> 0" 0 \
+  $OP promote --campaign $P --names "Cara Dahl" --angle referral --wave 2 --pool H
 
 check "profiles -> 0" 0 $OP profiles --campaign $P
 LINK="Worth 15 min? https://meetings.hubspot.com/olena-kudriavtseva"
@@ -839,7 +864,67 @@ check "an opener the template bans -> 1" 1 $OP split-messages --campaign $P --in
 cp "$B.good" "$B"
 mutate "template hook phrase" "$B" 'Growth teams pay' 'Noticed your background in growth. Teams pay'
 check "a hook phrase the template lists is not a failure -> 0" 0 $OP split-messages --campaign $P --in messages/_batch-all.md
+cp "$B.good" "$B"
+# 2026-11-05: "plus" as a connector is banned in all content and the gate never looked
+mutate "«plus» into a message" "$B" 'Two phone photos return 80\+ body measurements' 'Two phone photos return 80+ body measurements plus a 3D model'
+check "«measurements plus a 3D model» -> 1" 1 $OP split-messages --campaign $P --in messages/_batch-all.md
+grep_check "and the failure names it" "«plus» as a connector" $OP split-messages --campaign $P --in messages/_batch-all.md
+cp "$B.good" "$B"
+mutate "a product named «… Plus II»" "$B" 'Your roadmap covers tracking\.' 'Your roadmap covers tracking, like Advantage Plus II does.'
+check "«Advantage Plus II» is a name -> 0" 0 $OP split-messages --campaign $P --in messages/_batch-all.md
 cp "$B.good" "$B"; rm -f "$B.good"
+grep_check "before the strict gate, an M1 without the company is a note" "no company line" \
+  $OP check-messages --campaign $P
+# The strict gate, 2026-11-05 (us-insurance-underwriting, Vadim «роби все»): hard from a
+# hypothesis created that day on. Its own batch, clean first, then one defect at a time.
+CAL=https://meetings.hubspot.com/olena-kudriavtseva
+BS="$CAMP/$P/messages/_batch-strict.md"
+{ msg anna-berg Anna "Groupco's roadmap covers progress tracking. FitXpress returns 80+ body measurements from two photos taken in the app. Which screen would show members their change first?" \
+      "A scan between check-ins could show change before members lose interest.
+
+Open to a call on where it fits? $CAL"
+  msg finn-gade Finn "Noticed the retention work at Groupco. Two photos in the app give each member a fresh set of body measurements. Where does churn start for your members today?" \
+      "Members who see their waist change tend to stay longer.
+
+Would a short talk on retention help? Pick a time at $CAL"
+  msg dan-eriksson Dan "Caught my eye: growth at Gamma depends on month two. Two phone photos return 80+ body measurements in the app. What keeps a new member past the first month?" \
+      "Visible change in month two can protect payback.
+
+Happy to walk through it on a call: $CAL"
+  msg cara-dahl Cara "Curious who at Groupco owns body-progress features in the app. A body scan from two photos returns 80+ measurements for each member. Who would be the right person to ask?" \
+      "If it sits with product, a name is enough.
+
+Open to a short call either way? $CAL"; } > "$BS"
+cp "$CAMP/$P/hypothesis.md" "$CAMP/$P/hypothesis.md.bak"
+mutate "a hypothesis created on 2026-11-06" "$CAMP/$P/hypothesis.md" '^profile:' 'created: 2026-11-06\nprofile:'
+check "strict gate, clean batch -> 0" 0 $OP split-messages --campaign $P --in messages/_batch-strict.md
+cp "$BS" "$BS.good"
+mutate "the company out of Anna's M1" "$BS" "^Groupco's roadmap covers progress tracking\." "The roadmap covers progress tracking."
+grep_check "strict: an M1 that never names the company fails" "✗ no company line" \
+  $OP split-messages --campaign $P --in messages/_batch-strict.md
+cp "$BS.good" "$BS"
+mutate "a second «Noticed» at Groupco" "$BS" "^Groupco's roadmap covers progress tracking\." "Noticed that Groupco's roadmap covers progress tracking."
+grep_check "strict: two Message 1s at one company open on one hook word" "✗ M1 hook word shared" \
+  $OP split-messages --campaign $P --in messages/_batch-strict.md
+cp "$BS.good" "$BS"
+mutate "a landing link after Anna's call line" "$BS" '^(Open to a call on where it fits\? https://meetings\.hubspot\.com/olena-kudriavtseva)$' \
+  '\1\n\nMore detail on the page https://3dlook.ai/fitxpress/'
+grep_check "strict: a line after the call line fails" "✗ calendar link not last" \
+  $OP split-messages --campaign $P --in messages/_batch-strict.md
+cp "$BS.good" "$BS"
+mutate "a call line that offers no call" "$BS" '^Open to a call on where it fits\?' 'The link is here:'
+grep_check "strict: a link with no call offer fails" "✗ no call offer by the link" \
+  $OP split-messages --campaign $P --in messages/_batch-strict.md
+cp "$BS.good" "$BS"
+mutate "one sentence for Anna" "$BS" '^A scan between check-ins could show change before members lose interest\.$' 'Members who notice change early tend to renew their plan for another season.'
+mutate "the same sentence for Finn" "$BS" '^Members who see their waist change tend to stay longer\.$' 'Members who notice change early tend to renew their plan for another season.'
+grep_check "strict: the same sentence at one company fails" "✗ same sentence at one company" \
+  $OP split-messages --campaign $P --in messages/_batch-strict.md
+mutate "that sentence quoted in the rules" "$CAMP/$P/hypothesis.md" '^(- No client is named anywhere in cold copy\.)$' \
+  '\1\n- Value line, verbatim: "Members who notice change early tend to renew their plan for another season."'
+check "a sentence the hypothesis quotes may repeat -> 0" 0 $OP split-messages --campaign $P --in messages/_batch-strict.md
+mv "$CAMP/$P/hypothesis.md.bak" "$CAMP/$P/hypothesis.md"
+rm -f "$BS" "$BS.good"
 check "restored batch -> 0" 0 $OP split-messages --campaign $P --in messages/_batch-all.md
 check "qc-prompt before step 4 has a summary -> 1" 1 $OP qc-prompt --campaign $P --stage validate
 printf '# ICP Validation Summary\n' > "$CAMP/$P/icp-validation-summary.md"

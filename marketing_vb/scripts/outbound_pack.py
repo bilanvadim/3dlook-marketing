@@ -256,6 +256,36 @@ def referral_call(fm: dict) -> bool:
     return str(fm.get("created", "")).strip()[:10] >= "2026-10-07"
 
 
+# The stricter message gate, 2026-11-05 (us-insurance-underwriting, 277 people, QC 12/20
+# twice; Vadim «роби все»). Writers left every soft note in place, so what QC kept finding
+# became failures: the same sentence at one company, an M1 that never names the company, a
+# shared hook word, a call line that is not the last line or offers no call. Hard for
+# hypotheses created on or after this day, a note before it, so a re-run of the gate on a
+# sent campaign does not repaint it; `strict_gate: yes|no` overrides the date.
+STRICT_SINCE = "2026-11-05"
+
+
+def strict_gate(fm: dict) -> bool:
+    v = str(fm.get("strict_gate", "")).strip().lower()
+    if v:
+        return v in ("yes", "true")
+    return str(fm.get("created", "")).strip()[:10] >= STRICT_SINCE
+
+
+def account_facts_state(hyp_text: str) -> tuple[str, int]:
+    """("missing" | "placeholder" | "ok", bullet count) for `### Account facts`.
+
+    2026-11-05: the US insurance hypothesis still carried the template's "Not written yet"
+    when step 5 began; the card was built from it without a word, and only the coordinator's
+    memory of the LatAm lesson (writers given no company facts lean on the job title)
+    stopped ten batches from starting on it."""
+    m = re.search(r"(?ms)^### Account facts[^\n]*\n(.*?)(?=^#{2,3} |\Z)", hyp_text)
+    if not m:
+        return "missing", 0
+    bullets = len(re.findall(r"(?m)^- \*\*[^*\n]+:\*\*", m.group(1)))
+    return ("ok" if bullets else "placeholder"), bullets
+
+
 def raw_index(cdir: Path) -> dict[str, dict]:
     """person_id -> raw Sales Navigator row, keys lower-cased."""
     out: dict[str, dict] = {}
@@ -1041,6 +1071,19 @@ def cmd_card(args) -> int:
         ok, why = card_is_fresh(cdir, stage)
         print(("✓ " if ok else "✗ ") + f"{rel(card_path(cdir, stage))}: {why}")
         return 0 if ok else 1
+    if stage == "messages":
+        state, n = account_facts_state((cdir / "hypothesis.md").read_text(encoding="utf-8")
+                                       if (cdir / "hypothesis.md").exists() else "")
+        if state == "placeholder":
+            print("✗ hypothesis.md: `### Account facts` has no company bullets yet (the template's "
+                  "placeholder). Before step 5 a fresh hypothesis-generator round writes one bullet "
+                  "per group with SEND people: dated facts with URLs, then Use: and Never:.",
+                  file=sys.stderr)
+            return 1
+        if state == "missing":
+            print("  ⚠ hypothesis.md has no `### Account facts`: writers will get no company facts "
+                  "beyond the job title (2026-10-21 lesson). Add it before step 5 unless this "
+                  "campaign is a re-run.")
     text = build_card(cdir, stage)
     dst = card_path(cdir, stage)
     dst.write_text(text, encoding="utf-8")
@@ -1129,6 +1172,15 @@ def cmd_apply_decisions(args) -> int:
         return 1
 
     gmap = group_map(cdir)
+    # People Vadim added with `promote` after validation, 2026-11-05 (us-insurance-underwriting):
+    # this command rebuilds the list from the decisions file alone, which still holds the
+    # validator's WEAK/FAIL for them, so a re-run silently dropped 20 checkpoint promotions
+    # (pools W, A and B). A promotion is kept while the decision it overrode is unchanged; a
+    # decision changed since (the coordinator failing a promoted person who turned out to be
+    # retired) wins, and both counts are printed.
+    before = {r.get("person_id"): r for r in read_csv(cdir / "people-validated.csv")} \
+        if (cdir / "people-validated.csv").exists() else {}
+    kept, dropped = [], []
     rows = []
     for p in people:
         pid = p["person_id"]
@@ -1138,6 +1190,18 @@ def cmd_apply_decisions(args) -> int:
         excluded = bool((ex.get("exclusion_flag") or "").strip())
         decision = "FAIL" if excluded else d["decision"]
         url = pick(p, "person_linkedin_url", "linkedin_url")
+        old = before.get(pid) or {}
+        was = re.search(r"^Added by Vadim [^;]*; was (\w+):", old.get("reason") or "")
+        if was and (old.get("send") or "").upper() == "SEND" and decision != "PASS":
+            prior = {"REVIEW": "WEAK"}.get(was.group(1).upper(), was.group(1).upper())
+            if not excluded and prior == decision:
+                kept.append(pid)
+                rows.append({k: old.get(k, "") for k in VALIDATED_COLS} | {
+                    "full_name": p.get("full_name", ""), "first_name": p.get("first_name", ""),
+                    "last_name": p.get("last_name", ""), "linkedin_url": url, "person_linkedin_url": url,
+                    "title": p.get("title", ""), "flags": c.get("flags", "")})
+                continue
+            dropped.append(f"{pid} ({prior} → {decision})")
         rows.append({
             "person_id": pid, "full_name": p.get("full_name", ""),
             "first_name": p.get("first_name", ""), "last_name": p.get("last_name", ""),
@@ -1165,6 +1229,12 @@ def cmd_apply_decisions(args) -> int:
     n = Counter(r["decision"] for r in rows)
     print(f"✓ {rel(dst)}: {len(rows)} people · PASS {n['PASS']} · WEAK {n['WEAK']} · FAIL {n['FAIL']}"
           + (f" · previous kept as {snap.name}" if snap else ""))
+    if kept:
+        print(f"  kept {len(kept)} promotion(s) made after validation: " + ", ".join(kept[:6])
+              + (" …" if len(kept) > 6 else ""))
+    if dropped:
+        print(f"  ⚠ {len(dropped)} promotion(s) dropped, the decision changed since: "
+              + ", ".join(dropped[:6]) + (" …" if len(dropped) > 6 else ""))
     _print_distribution(cdir, [r for r in rows if r["send"] == "SEND"])
     return 0
 
@@ -1736,6 +1806,62 @@ SO_RESULT = re.compile(
 # ("allow" instead), and two lines passed the gate ("A call would let me show", "ALLFINANZ
 # lets authorised underwriters build…") until QC found them.
 LET_WORD = re.compile(r"\b(?:let|lets|letting)\b", re.I)
+# "plus" as a connector, 2026-11-05: terminology-guardrails bans it in all content and the gate
+# never looked ("FitXpress is 2 photos plus a Smart Scales weight estimate…" passed). Lower case
+# only, and a sentence-initial "Plus,": a product called "Advantage Plus II" is a name.
+PLUS_WORD = re.compile(r"\bplus\b|(?:^|[.!?]\s+)Plus\b", re.M)
+# The light hooks of the Message 1 template, by their first word ("Quick note", "Quick one",
+# "Quick idea for you" are one hook to a reader who gets two of them). 2026-11-05: Northwestern
+# Mutual 7/13 and Prudential 6/13 opened on «Noticed…»; the three-word check saw «noticed your
+# background» and «noticed you moved» as different.
+HOOK_WORDS = {"circling", "saw", "quick", "noticed", "came", "got", "curious", "spotted", "thought",
+              "had", "caught", "wanted", "this", "made", "couldn't", "couldn’t"}
+# The call line, 2026-11-05: after a rule against bare labels, ~70 of 277 Message 2s ended on a
+# passive «Times are open at <link>» or a landing link after the call, and some no longer offered
+# a call at all («Happy to take it from there whenever you are ready:»).
+# A booking phrase next to the calendar link counts as the offer ("pick a time at", "my calendar
+# is at", "walk through it together"): demanding the word "call" everywhere would make
+# «on a call at» the next stock form.
+CALL_WORDS = re.compile(
+    r"\b(call|calls|talk|talking|conversation|chat|meet|meeting|speak|discuss|discussion|walkthrough)\b"
+    r"|\bcalendar\b|\btogether\b|\b(walk|walking|go|going)\s+(you\s+)?through\b|\bcompare notes\b"
+    r"|\b(book|pick|grab|find|choose|reserve|schedule|set up|arrange)\w*\b[^.?!]{0,25}\b(time|slot|times|slots)\b",
+    re.I)
+# Sentences that may share wording at one company: the product description (the card makes
+# every M1 say what comes back) and the data-handling forms from compliance.md.
+PRODUCT_SENT = re.compile(r"(?i)fitxpress|smart scales|two photos|2 photos|weight estimate|80\+|"
+                          r"\bsdks?\b|\bapi\b|body composition|3d model")
+DATA_FORMS = re.compile(r"(?i)deleted after processing|blurred|obscured at capture|encrypt|\btls\b|"
+                        r"random identifiers?|legal@3dlook")
+NAME_SUFFIX = re.compile(r"(?i)[\s-]+(health|healthcare|medical|clinic|australia|uk|usa|us|europe|"
+                         r"group|inc\.?|ltd\.?|pty ltd|life|financial|americas|america|insurance|"
+                         r"assurance|holdings|company|co\.?)$")
+NAME_GENERIC = {"the", "first", "national", "american", "general", "united", "global", "new",
+                "mutual", "life", "health", "pacific", "standard"}
+
+
+def company_names(g: str) -> set[str]:
+    """Forms of a group name a Message 1 may use: the full name, its slug keys, the name with
+    legal or geographic tails cut ("Guardian Life" → "guardian", "Munich Re Life US" → "munich
+    re"), the text in brackets, and a distinctive first word ("Hannover Life Re America" →
+    "hannover"). 2026-11-05: the gate wanted «Guardian Life» and «Securian Financial» verbatim
+    and flagged 76 people, 67 of whom named the company in its short form."""
+    low = g.lower().strip()
+    names = {low} | {k.replace("-", " ") for k in PIPE.company_keys(g)}
+    outside = re.sub(r"\([^)]*\)", " ", low).strip()
+    names |= {x.strip().lower() for x in re.findall(r"\(([^)]*)\)", g)}
+    short = re.sub(r"^the\s+", "", outside)
+    while True:
+        cut = NAME_SUFFIX.sub("", short).strip()
+        if cut == short:
+            break
+        short = cut
+    if len(short) >= 3:
+        names.add(short)
+    words = re.findall(r"[a-z0-9&'’.]+", re.sub(r"^the\s+", "", outside))
+    if words and len(words[0]) >= 4 and words[0] not in NAME_GENERIC:
+        names.add(words[0])
+    return {n for n in names if n}
 # Product and company names the claims detector would misread: "diagnose" inside
 # "vers.diagnose" (a German risk-check platform and a prospect) failed as a diagnosis claim on
 # 2026-11-02, and the writer dropped the platform's name from its own CEO's message.
@@ -1847,6 +1973,8 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
     copied: dict[str, set[str]] = defaultdict(set)
 
     ref_call = referral_call(fm)
+    strict = strict_gate(fm)
+    hooks: dict[str, dict[str, list[str]]] = defaultdict(lambda: defaultdict(list))
     hard: list[tuple[str, str, str]] = []      # (code, person, detail)
     soft: list[tuple[str, str, str]] = []
     bodies: dict[tuple[str, int], str] = {}
@@ -1917,6 +2045,11 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
             if m:
                 hard.append(("«let»", tag,
                              f"«…{clip(b[max(0, m.start() - 25):m.end() + 25], 70)}»: «allow» (terminology §2.8)"))
+            m = PLUS_WORD.search(re.sub(r"https?://\S+", " ", b))
+            if m:
+                hard.append(("«plus» as a connector", tag,
+                             f"«…{clip(b[max(0, m.start() - 25):m.end() + 25], 70)}»: «along with», «as well as» "
+                             "or a second sentence"))
             m = LINK_PUNCT.search(b)
             if m:
                 hard.append(("punctuation on a link", tag,
@@ -1968,14 +2101,24 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
         g = group_of(p, gmap)
         m1_low = (msgs.get(1) or "").lower()
         if m1_low and g and g != "?":
-            names = {g.lower()} | {k.replace("-", " ") for k in PIPE.company_keys(g)}
-            short = re.sub(r"(?i)[\s-]*(health|healthcare|medical|clinic|australia|uk|usa|us|"
-                           r"europe|group|inc\.?|ltd\.?|pty ltd)$", "", g).strip().lower()
-            if len(short) >= 3:
-                names.add(short)            # copy says "9am" for 9amHealth
+            names = company_names(g)        # copy says "9am" for 9amHealth, "Guardian" for Guardian Life
             if not any(nm and nm in m1_low for nm in names):
-                soft.append(("no company line", f"{pid} M1",
-                             f"«{g}» is not named: check it has a line only this company gets"))
+                (hard if strict else soft).append(
+                    ("no company line", f"{pid} M1",
+                     f"«{g}» is not named in any form: name the company and give it a line only it gets"))
+            w = re.findall(r"[a-z’']+", first_sentence(msgs.get(1) or "").lower())
+            if w and w[0] in HOOK_WORDS:
+                hooks[g][w[0].replace("’", "'")].append(pid)
+        # The call line, 2026-11-05: last before the signature, and a call in so many words.
+        if strict and link and m2 and link in m2:
+            paras = [x.strip() for x in m2.split("\n\n") if x.strip() and x.strip() != owner]
+            last = paras[-1] if paras else ""
+            if link not in last:
+                hard.append(("calendar link not last", f"{pid} M2",
+                             f"the call line closes the message; «{clip(last, 50)}» comes after it"))
+            elif not CALL_WORDS.search(last.replace(link, " ")):
+                hard.append(("no call offer by the link", f"{pid} M2",
+                             f"«{clip(last.replace(link, '').strip(), 60)}»: offer a call, a talk or a conversation"))
 
     dup: dict[str, list[str]] = defaultdict(list)
     for (pid, n), b in bodies.items():
@@ -1983,6 +2126,12 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
     for who in dup.values():
         if len(who) > 1:
             hard.append(("identical text", who[0], "same body as " + ", ".join(who[1:4])))
+    for g, by_word in hooks.items():
+        for word, who in by_word.items():
+            if len(who) >= 2:
+                (hard if strict else soft).append(
+                    ("M1 hook word shared", f"{g} ×{len(who)}",
+                     f"«{word.capitalize()}…» opens {len(who)} Message 1s: " + ", ".join(sorted(who)[:4])))
 
     for n in (1, 2):
         per_group: dict[tuple[str, str], list[str]] = defaultdict(list)
@@ -2029,7 +2178,13 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
     # The US compliance line is mandated verbatim in every non-referral M2: on 2026-10-23 it
     # made 635 of the 638 near-duplicate notes and buried the rest.
     verbatim = ("repeated scans showed", "112,100 scans", "34,000 scans", "hipaa-governed deployments")
-    per_group_s: dict[str, list[tuple[str, str]]] = defaultdict(list)
+    # A campaign's own mandated sentences, 2026-11-05: the insurance compliance line («FitXpress is
+    # not a medical device and does not make underwriting decisions.») is quoted in the hypothesis
+    # and made 1,200 of 1,283 near-duplicate notes, burying the real twins. Any sentence the
+    # hypothesis quotes in full is licensed copy.
+    quoted = [q.strip(" \"«»“”`.").lower() for q in CARD_QUOTED.findall(hyp_text)]
+    quoted = [q[:40] for q in quoted if len(q) >= 30]
+    per_group_s: dict[str, list[tuple[str, str, str]]] = defaultdict(list)
     for p in people:
         for n in (1, 2):
             b = bodies.get((p["person_id"], n))
@@ -2038,18 +2193,31 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
             for s in re.split(r"(?<=[.?!])\s+", re.sub(r"https?://\S+", "", b)):
                 s = s.strip()
                 low = s.lower()
-                if len(s) > 40 and not any(v in low for v in verbatim):
-                    per_group_s[group_of(p, gmap)].append((p["person_id"], low.replace(SPEED_PHRASE, "")))
+                if len(s) > 40 and not any(v in low for v in verbatim) \
+                        and not low.startswith(MANDATED_STEMS) and not any(q in low for q in quoted):
+                    per_group_s[group_of(p, gmap)].append(
+                        (p["person_id"], low.replace(SPEED_PHRASE, ""), s))
     for g, items in per_group_s.items():
         seen_pairs = set()
         for i in range(len(items)):
             for j in range(i + 1, len(items)):
-                (pa, sa), (pb, sb) = items[i], items[j]
+                (pa, sa, ra), (pb, sb, rb) = items[i], items[j]
                 if pa == pb or (pa, pb) in seen_pairs:
                     continue
-                if difflib.SequenceMatcher(None, sa, sb).ratio() >= 0.8:
+                ratio = difflib.SequenceMatcher(None, sa, sb).ratio()
+                if ratio >= 0.8:
                     seen_pairs.add((pa, pb))
-                    soft.append(("near-duplicate sentence", f"{g}: {pa} / {pb}", f"«{clip(sa, 50)}»"))
+                    # The same sentence at one company is a mail merge when it is forwarded
+                    # (QC 2026-11-05: Munich Re 7/7 on one alitheia sentence). The product
+                    # description and the data-handling forms may share wording, never a whole
+                    # sentence; everything else may not share a near-copy either.
+                    same = re.sub(r"\W+", " ", sa).strip() == re.sub(r"\W+", " ", sb).strip()
+                    free = not (PRODUCT_SENT.search(ra) or DATA_FORMS.search(ra))
+                    if strict and (same or (ratio >= 0.9 and free)):
+                        hard.append(("same sentence at one company", f"{g}: {pa} / {pb}",
+                                     f"«{clip(ra, 60)}»: reword one of them"))
+                    else:
+                        soft.append(("near-duplicate sentence", f"{g}: {pa} / {pb}", f"«{clip(sa, 50)}»"))
     # Sentence openings within a company, 2026-10-07 (eu-weight-loss-nutrition): the card's
     # sample easy out went into ~30 messages and one product-sentence opening into 10 of 15
     # people at one network. Their endings differed, so the whole-sentence check above
