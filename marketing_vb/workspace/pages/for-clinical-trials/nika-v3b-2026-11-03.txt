@@ -1,0 +1,428 @@
+TITLE: Remote Anthropometric Measurement in Trials | FitXpress (55)
+META viewport : width=device-width, initial-scale=1 
+META description : Add waist, hip and 80+ body measurements to remote check-ins in obesity trials. FitXpress runs white-label inside the study app or DCT platform. (144)
+META canonical : https://3dlook.ai/fitxpress/for-clinical-trials/ 
+META theme-color : #050f40 
+META og:type : website 
+META og:title : Remote Anthropometric Measurement in Trials | FitXpress 
+META og:description : Add waist, hip and 80+ body measurements to remote check-ins in obesity trials. FitXpress runs white-label inside the study app or DCT platform. 
+META og:url : https://3dlook.ai/fitxpress/for-clinical-trials/ 
+JSON-LD types: ['WebPage', 'Service', 'Brand', 'BusinessAudience', 'Thing', 'Thing', 'Thing', 'Thing', 'Thing', 'Organization', 'FAQPage', 'Question', 'Answer', 'Question', 'Answer', 'Question', 'Answer', 'Question', 'Answer', 'Question', 'Answer', 'BreadcrumbList', 'ListItem', 'ListItem']
+=====
+Remote Anthropometric Measurement in Trials | FitXpress
+
+Skip to content
+
+ 3DLOOK
+ How it worksPricingQuestionsBook a demo
+
+ Home/FitXpress for clinical trials
+
+Obesity and metabolic clinical trials
+
+# FitXpress for clinical trials: add remote body measurements to the participant app
+
+Collect waist, hip and 80+ body measurements from two phone photos, at home and at the site. FitXpress adds remote anthropometric measurement for clinical trials to your decentralized clinical trial (DCT) or participant-app platform. It runs white-label inside the app participants already use and returns each scan as a timestamped record for the study database.
+
+Book a demo ↗How it works ↓
+
+White-label capture on a phone, a sample study record and integration options.
+
+Participant 0142 · Site 04Illustrative data
+
+3 November 2026Baseline, scanned at the site
+29 December 2026Week 8, scanned at home
+
+Waist measurement −4.3 cm
+112.4 cm→108.1 cm
+
+Hip measurement −2.8 cm
+121.0 cm→118.2 cm
+
+Body-fat estimate −1.5 percentage points
+41.3%→39.8%
+
+Home scan between site visits. Capture checks passed; added to the study record with a timestamp and scan identifier.
+
+Illustrative values, not participant results. Body composition values are estimates. The protocol sets the scan schedule, and the study team decides which results, if any, participants see.
+
+2 photosguided front and side capture on a phone
+
+Under 45 secprocessing from photos to a structured record
+
+White-labelinside the study’s app, with its branding and consent flow
+
+From $1,000per month, with guided implementation support
+
+100+ clients have used 3DLOOK body scanning since 2016, including digital health and weight management programs.
+
+The problem
+
+## What do remote check-ins miss in obesity and metabolic trials?
+
+Remote check-ins already return body weight. Waist and hip still need a site visit and a trained measurer, so between visits the study has no body measurements.
+
+Secondary endpoint
+The European Medicines Agency expects waist circumference as a secondary endpoint in weight-management trials.
+Guideline on clinical evaluation of medicinal products used in weight management.
+
+1 to 6 cm
+Self-measured waist misses a trained measurer’s reading by 1 to 6 cm on average, in either direction.
+Waist circumference as a vital sign in clinical practice: a Consensus Statement from the IAS and ICCR Working Group on Visceral Obesity; Validity of self-measured waist circumference in adults at risk of type 2 diabetes and cardiovascular disease; Accuracy of self-reported body weight, height and waist circumference in a Dutch overweight working population.
+
+FitXpress adds waist, hip and 80+ body measurements to the home check-in, from two phone photos inside the study’s own app.
+
+For DCT and participant-app platforms
+
+## Add a body measurement to the study without adding a device or an app
+
+One guided scan on a phone works at the site visit and at home, inside the study’s existing technology.
+
+- 
+
+### A data point between visits
+
+Participants add waist, hip and 80+ body measurements from home between site and imaging visits.
+
+- 
+
+### Inside the study’s app
+
+White-label capture runs in the participant app or trial platform already in use, under its branding and consent flow.
+
+- 
+
+### No hardware to ship
+
+Capture uses the participant’s phone or a study-provided device. Sites and participants need no analyzer or scanner.
+
+- 
+
+### A record for the data pipeline
+
+Each scan carries a timestamp and a scan identifier, ready to map to the study database.
+
+White-label integration
+
+## Run body scans inside the participant app the study already uses
+
+Participants scan in the same app they use for diaries and questionnaires, under the platform’s branding and consent flow. There is no separate app to install.
+
+Results return to the platform’s backend through the application programming interface (API). The platform team maps them to the electronic data capture (EDC) system. FitXpress does not provide a prebuilt EDC integration.
+
+Kits for each stack. Web and mobile software development kits (SDKs), including supported iOS and Android integrations.
+
+See the integration in the demo
+
+Participant tasks · Week 8Study app with the platform’s brandingIllustrative view
+
+All tasksCompletedDue
+
+- Daily diaryCompleted29 December, 08:12Platform questionnaire
+
+- Body scan · 2 photosDue todayWeek 8 home scan · about 1 minuteFitXpress guided capture
+
+- Medication logCompleted29 December, 08:15Platform form
+
+- Week 8 questionnaireDue in 2 daysOpens 31 DecemberPlatform questionnaire
+
+4 tasks this week2 completed · 2 due
+
+Illustrative study app. FitXpress provides the guided capture and the structured results; the platform controls the task list, schedule, consent and results visibility.
+
+Outputs and capabilities
+
+## One record format at baseline and at every later scan
+
+FitXpress returns each scan as a timestamped record through the API, with the same fields at every scan. The study’s data management team or platform vendor maps these fields to the study database.
+
+Participant 0142Baseline to week 12, site and home scansIllustrative view
+
+Waist measurementHip measurement
+
+Waist measurement−6.2 cm from baseline at week 12
+
+Hip measurement−4.1 cm from baseline at week 12
+
+Site visit scanHome scan
+
+Illustrative interface and values, not participant results or a treatment effect. The protocol sets the scan schedule, and the study team decides which results participants and sites see.
+
+ Body measurements
+
+### 80+ body measurements
+
+Waist, hip, chest, thigh and other dimensions in centimeters, produced by the same processing at every scan.
+
+The study gets waist and hip data at home check-ins, not only at site visits.
+
+ Body composition
+
+### Body composition estimates
+
+Body-fat percentage, fat mass and lean mass estimates. BMI and basal metabolic rate (BMR) are calculated metrics.
+
+The study sees composition estimates between imaging visits. Imaging stays the reference.
+
+ Traceability
+
+### Timestamp and scan identifier
+
+Each record shows when the values were produced. Scan records use randomly generated identifiers, which the study maps to its own participant numbers.
+
+No personal identifiers are processed on the 3DLOOK side.
+
+ Data delivery
+
+### Formats for the study database
+
+JavaScript Object Notation (JSON) through the API, comma-separated values (CSV) export from the FitXpress Admin Panel and 3D model export.
+
+The field mapping is built once and covers every later scan.
+
+FitXpress is not a medical device. It captures and documents body measurements as additional study data; endpoint selection, endpoint validation and protocol compliance remain with the sponsor and the investigator.
+
+See a sample record in the demo
+
+How it works
+
+## Embed body scans in the trial technology the study already runs
+
+The platform team embeds FitXpress through the SDKs and retrieves results through the API. The FitXpress Admin Panel gives a central view of scan results with CSV export, for teams that do not build their own dashboard.
+
+- 
+
+### Embed guided capture
+
+Add the scan as a task in the participant app, with the platform’s branding, consent language and schedule. The coordinator runs the baseline scan at the site.
+
+- 
+
+### Participants scan on schedule
+
+Participants complete front and side capture at home on the schedule the protocol sets. Real-Time Pose Validation guides pose and framing during each scan.
+
+- 
+
+### Results to the platform backend
+
+Results return through the API. The data management team maps each field and timestamp to the EDC system.
+
+ 3DLOOK provides
+
+### Capture and processing
+
+- Guided capture with pose and clothing checks
+
+- Photo processing and body modeling
+
+- Structured results through the API
+
+- Integration documentation and guided implementation support
+
+ The study platform controls
+
+### The participant experience and the data
+
+- Branding, task schedule and participant journey
+
+- Consent language and privacy messaging
+
+- Which results participants and sites see
+
+- Where records go in the study database
+
+The recommended integration combines the SDK’s guided capture with the API for results retrieval. 3DLOOK’s mobile body scanning technology explains the capture and processing approach.
+
+Compare approaches
+
+## Choose where each body measurement enters the protocol
+
+FitXpress sits alongside tape measurement, bioelectrical impedance analysis (BIA), dual-energy X-ray absorptiometry (DXA) and magnetic resonance imaging (MRI), not in place of them.
+
+How anthropometric measurement workflows operate in obesity trials
+
+Comparison of body measurement methods in a clinical trial
+
+ | Dimension
+ | FitXpress
+ | Tape measure at a site visit
+ | Clinic BIA
+ | DXA or MRI
+
+ | Timing
+ | Site visits and between visits
+ | Scheduled site visits
+ | Site visits
+ | Imaging visits, often for a subset of participants
+
+ | Output
+ | 80+ body measurements, body composition estimates, a 3D model
+ | Selected circumferences
+ | Body composition estimates
+ | Body composition and regional fat. DXA also measures bone.
+
+ | Requires
+ | A smartphone
+ | Trained site staff
+ | An analyzer at the site
+ | An imaging facility and central reading
+
+ | Role in the trial
+ | Additional data between visits
+ | Protocol-defined measurement
+ | Protocol-defined checkpoints
+ | Reference method where the protocol requires it
+
+### FitXpress
+
+Timing
+Site visits and between visits
+Output
+80+ body measurements, body composition estimates, a 3D model
+Requires
+A smartphone
+Role in the trial
+Additional data between visits
+
+### Tape measure at a site visit
+
+Timing
+Scheduled site visits
+Output
+Selected circumferences
+Requires
+Trained site staff
+Role in the trial
+Protocol-defined measurement
+
+### Clinic BIA
+
+Timing
+Site visits
+Output
+Body composition estimates
+Requires
+An analyzer at the site
+Role in the trial
+Protocol-defined checkpoints
+
+### DXA or MRI
+
+Timing
+Imaging visits, often for a subset of participants
+Output
+Body composition and regional fat. DXA also measures bone.
+Requires
+An imaging facility and central reading
+Role in the trial
+Reference method where the protocol requires it
+
+FitXpress adds anthropometric data between visits, with no dedicated hardware.
+
+Validation and data handling
+
+## How repeatable is FitXpress, and how is study data handled?
+
+For a measurement repeated between visits, repeatability is the deciding property. It determines whether a baseline scan and a week 12 scan can be compared. FitXpress’s internal validation evaluates repeated scans and comparisons with expert manual measurements.
+
+< 1 cmTypical scan-to-scan difference for most evaluated body measurements.
+
+96 to 97%Body-measurement accuracy against expert manual measurement, with typical absolute error of 1.5 to 2.0 cm.
+
+These figures come from internal validation and have not been peer-reviewed. The validation population covered ages 16 to 78, weights of 38 to 210 kg and heights of 150 to 220 cm, from the US and Europe; performance outside this range has not been characterized. Accuracy is not published by body shape or skin tone. Body composition values are estimates. Supporting methodology is available under a non-disclosure agreement (NDA).
+
+Body scanning accuracy, repeatability and validation methodology
+
+- Photo retentionFitXpress deletes photos immediately after processing or retains them for up to 30 days under a contract-specific policy. Retained photos are blurred, and face obfuscation is applied during capture.
+
+- HostingFitXpress data is hosted on Amazon Web Services (AWS), primarily in the US-West-2 region and partly in the US-East-1 region.
+
+- General Data Protection Regulation (GDPR)In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR. A data processing agreement (DPA) with Standard Contractual Clauses (SCCs) covers international transfers, with a UK Addendum where UK GDPR applies.
+
+- Regulatory statusAn independent regulatory assessment concluded that FitXpress does not meet the definition of a medical device under the UK Medical Devices Regulations 2002 (UK MDR) or the EU Medical Devices Regulation (EU MDR) for its current intended purpose. FitXpress is not cleared, authorized or approved by the US Food and Drug Administration (FDA).
+
+- Vendor qualification documentsA security overview, penetration-test summary, architecture and data-flow diagrams and an incident-response overview are available under NDA. 3DLOOK is working toward a System and Organization Controls (SOC) 2 attestation report.
+
+The FitXpress data, privacy, security and regulatory frequently asked questions cover hosting, deletion, SOC 2 and FDA information. Privacy contact: privacy@3dlook.me.
+
+Pilot and pricing
+
+## Start with one study or one platform integration
+
+Sponsors and contract research organizations can add FitXpress as an additional exploratory measurement in one study. Trial platforms can start with an integration pilot in a test study. Agree the scope, the data flow and the success criteria before launch.
+
+Plans from $1,000 per month, with no integration fee.
+
+View FitXpress plans and pricing ↗
+
+- 
+
+### Review the integration
+
+The demo covers white-label capture on a phone, a sample study record, the data export and the integration options for the participant app or platform.
+
+- 
+
+### Define the pilot
+
+Select the study or test environment, the participant cohort, the scan schedule and the data flow. Agree the evaluation period and the success criteria before launch.
+
+- 
+
+### Evaluate the results
+
+Review the agreed measures with the study or platform team and decide on the scope for later studies.
+
+Discuss a pilot
+
+Frequently asked questions
+
+## Questions from clinical operations, data management and platform teams
+
+### Is FitXpress a medical device?
+
+No. An independent regulatory assessment concluded that FitXpress does not meet the definition of a medical device under UK MDR or EU MDR for its current intended purpose. FitXpress is not cleared, authorized or approved by the FDA. The sponsor assesses the regulatory status of the complete study workflow, including how the outputs are used.
+
+### How can obesity trials collect body measurements between site visits?
+
+Participants complete a guided two-photo scan at home in the study’s participant app, and FitXpress returns waist, hip and 80+ body measurements to the study’s backend through the API. The sponsor decides how the data is used, for example as an exploratory endpoint, in a substudy or for participant follow-up between visits. The FDA guidance on digital health technologies for remote data acquisition (December 2023) recommends that sponsors use fit-for-purpose technologies and address verification and validation, whether or not the technology is a device. Protocol-defined methods, such as a calibrated scale, tape measurement, DXA or MRI, keep their role.
+
+### Can FitXpress run white-label inside a DCT platform?
+
+Yes. The platform team embeds guided capture through web and mobile SDKs, including supported iOS and Android integrations, and configures the interface, flow, branding, consent text and privacy links. Participants stay inside the platform’s app throughout the scan.
+
+### Can scan results stay hidden from participants and site staff?
+
+Yes. Capture runs in the participant app, and results go to the study’s backend through the API. The study team decides which results, if any, participants and site staff see.
+
+### Does FitXpress measure muscle?
+
+FitXpress reports fat mass and lean mass estimates. Lean mass includes organs, bone and water along with muscle; it is not a direct measurement of skeletal muscle. Trials that assess muscle preservation use DXA, MRI or another method the protocol defines.
+
+Book a demo
+
+## See FitXpress inside a study app
+
+Explore white-label capture, a sample study record and the integration options for the participant app or trial platform the study uses.
+
+- White-label guided capture on a phone
+
+- A sample record with a timestamp and scan identifier
+
+- Integration options and a pilot plan
+
+How to evaluate mobile body scanning accuracy
+
+### Request a FitXpress demo
+
+Share your contact details and study requirements with 3DLOOK.
+
+Loading the demo request form…
+
+You can also request a demo through the contact page.
+Open the 3DLOOK demo request page ↗
+
+Contact details are processed as described in the 3DLOOK privacy policy.
+
+© 2026 3DLOOK · FitXpressProcurement and security documentation: legal@3dlook.me

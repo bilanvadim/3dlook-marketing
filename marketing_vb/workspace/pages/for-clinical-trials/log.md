@@ -37,3 +37,26 @@
   1-6 cm range, direction varies (Ross 2020, Contardo Ayala 2014, Dekkers 2008). Review and sources file updated;
   the thread still carries the old 5.98 cm card and the summary line.
 - 2026-10-28, correction posted in the thread (ts 1793187426.171739): card 2 → "1 to 6 cm", direction varies.
+
+## 2026-11-05: round 2, Nika's v3 of 2026-11-03 (Vadim: «подивись канал в слаці по маркетингу. Ніка там скинула 2 лендінга на затвердження»)
+
+- Source: #marketing (C0C0TBSM90E), top-level post ts 1793706421.008019, 2026-11-03 11:47 UTC, Nika (U0BSD11QFFX):
+  updated version, "if all edits are in place, let's pass it to design"; one question: keep the review's H1 "FitXpress
+  for DCT platforms: …" which says nothing about the industry? The file already carries her H1 "FitXpress for clinical
+  trials: add remote body measurements to the participant app". File `fitxpress-clinical-trials-landing-v3.html`
+  (F0CEH6N6Z9P) → `nika-v3b-2026-11-03.html` (+ `.txt`). No thread replies as of 11-05.
+- Checks: review §3 items done (React Native, offline, webhooks, iOS, 2 cm, gender, blinding, audit-ready, pre-check,
+  placeholders gone; GDPR, MDR, FDA, accuracy population + NDA canon; title 55 / description 144; 5 FAQ as H3; price line
+  with no integration fee; problem block from the review). Detector `--channel page`: no hard bans.
+- Left: form still `f227f5ce` (/contact-us/; shared FX | LP | Demo = `11acb23a-…`, public JSON has `fx_vertical`);
+  "No personal identifiers are processed on the 3DLOOK side" (retired by compliance.md); "96 to 97%" / "1.5 to 2.0 cm"
+  (house format hyphens); logo caption tail after "since 2016"; ~1,990 visible words (budget 1,100-1,600).
+  Nika's "150-205 cm" note is stale: 150-220 confirmed 2026-09-02.
+- `fact-sheet-2026-11-05.md` written. Blind judge round 2: **59** (round 1 B 52), no hard fails, lowest sales argument;
+  `judge-round-2-nika-v3b.json`. Judge's one fix (delete the white-label integration block) not taken as is: for the
+  platform buyer it is the main block, so merge it into How it works instead.
+- Vadim 11-05: new /pricing/ (redesign + requests) goes live within days. The CT page names no unit, so no change.
+- 2026-11-05, sent on Vadim's «відправ і коміт та пуш»: Russian reply (ts 1793872584.645639) in the original thread
+  1793092031.104189. Nika's 11-03 post was a reply there, broadcast to the channel. Five fixes (form `11acb23a`,
+  personal-identifiers line, 96-97% format, caption ends at "since 2016", merge white-label into How it works to cut
+  length), her H1 kept, minor items listed.

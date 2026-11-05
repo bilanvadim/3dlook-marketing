@@ -30,3 +30,23 @@
 - Side effect: Dekkers 2008 corrected the clinical trials problem card (5.98 cm → 1-6 cm range), see that log.
 - 2026-10-28, sent on Vadim's «так відправ обидва»: Russian reply in Nika's thread (ts 1793187403.118109, mentions Nika
   and Asselya) plus `review-2026-10-28-nika-ru.md` (F0CCD915P9V) and `sources-problem-block.md` (F0CDP1PT524).
+
+## 2026-11-05: round 2, Nika's v4 of 2026-11-03 (same request as clinical trials)
+
+- Source: #marketing (C0C0TBSM90E), top-level post ts 1793707093.599559, 2026-11-03 11:58 UTC, Nika (U0BSD11QFFX):
+  "rewrote the page per the edits, please have a look". File `fitxpress-wellness-programs-v4.html` (F0CEH9APUDP) →
+  `nika-v4-2026-11-03.html` (+ `.txt`). No thread replies as of 11-05.
+- Checks: review structure applied (H1, title 58, description 150, problem block, "what it changes" lines in scope,
+  one line per audience, 3 steps with FitXpress / your platform, reward threshold above scan-to-scan variation,
+  integrity block, pilot with 4 measures and a comparison group, 5 FAQ as H3, 100+ clients since 2016, photo and
+  accuracy canon, Smart Scales without beta, Service audience + areaServed). ~1,520 visible words. Detector: no hard bans.
+- Left: form `f227f5ce` → `11acb23a-…`; camera-only / no gallery upload and "standing capture flow" not in tech-spec
+  (voice prompts are, fitness final wording); three "so + benefit"; data block not canonical (encryption line, no hosting,
+  no privacy contact); "weight-source verification" overstates Smart Scales (estimate + mismatch flag).
+- Pricing: page says requests. Vadim 11-05: new /pricing/ (redesign + requests) goes live within days, so keep requests
+  and publish together.
+- `fact-sheet-2026-11-05.md` written. Blind judge round 2: **57** (round 1 C 46), no hard fails, lowest sales argument;
+  `judge-round-2-nika-v4.json`.
+- 2026-11-05, sent on Vadim's «відправ і коміт та пуш»: Russian reply (ts 1793872585.773159) in the original thread
+  1793092164.544279 (Nika's 11-03 post was a broadcast reply there). Five fixes (form `11acb23a`, gallery / standing to
+  confirm or cut, three "so", canonical data lines, Smart Scales wording), requests kept for the new /pricing/.
