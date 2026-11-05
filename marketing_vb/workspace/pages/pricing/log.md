@@ -1,7 +1,7 @@
 ---
 product: fitxpress, mobile_tailor
 type: pricing
-status: draft-in-review
+status: live (2026-11-05)
 ---
 
 # /pricing/ redesign — log
@@ -21,3 +21,8 @@ status: draft-in-review
 3. One request per billable action; 2D progress on Pro; monthly pool on annual plans.
 4. Failed scans stay off the page.
 5. Smart Scales beta label; Mobile Tailor trial price; "respond within one business day".
+
+## 2026-11-05
+
+- The new /pricing/ is live (FitXpress, Mobile Tailor and Wrist tabs; requests as the FX unit). Snapshot of the live page: `live-2026-11-05/published-live-2026-11-05.{html,md}` (captured ~14:15 UTC, after someone changed the Yoast title to "3DLOOK Pricing | FitXpress, Mobile Tailor & Wrist").
+- Technical audit: `live-2026-11-05/audit-2026-11-05.md`. P1: hero videos of 6.6–10 MB without faststart or poster; homepage hero images preloaded on /pricing/; `pricing_plan_click` sends the button text, so plans can't be told apart, and MT trial clicks aren't tracked; GA4 `form_start` fires 4–5 times per view because of hidden HubSpot forms. P2: Wrist form missing from the GTM map; MT form lacks 3 hidden fields; mtm signup returns 404; Request indexing; meta description and og:image.
