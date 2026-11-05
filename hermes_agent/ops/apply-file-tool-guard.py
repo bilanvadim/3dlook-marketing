@@ -36,6 +36,12 @@ ANCHOR_021 = (
     "            \"Edit ~/.hermes/config.yaml directly or use 'hermes config' instead.\")\n"
     "    return None\n"
 )
+# 0.22 (checked 05.11.2026) added a skill_lock check after the config one, so
+# the final `return None` now follows that line instead.
+ANCHOR_022 = (
+    "        return f\"Refusing to write to {filepath}: {reason}\"\n"
+    "    return None\n"
+)
 ANCHOR_019 = (
     "            \"Edit ~/.hermes/config.yaml directly or use 'hermes config' instead.\"\n"
     "        )\n"
@@ -80,7 +86,7 @@ def _resolve():
         # Pick the body by the local the function actually exposes, so a REFRESH
         # of an already-patched file writes the shape that file can execute.
         body = GUARD_BODY_021 if "candidates = (" in s else GUARD_BODY_019
-        anchor = ANCHOR_021 if ANCHOR_021 in s else ANCHOR_019
+        anchor = next((a for a in (ANCHOR_022, ANCHOR_021) if a in s), ANCHOR_019)
         return path, s, anchor, body
     return None, None, None, None
 

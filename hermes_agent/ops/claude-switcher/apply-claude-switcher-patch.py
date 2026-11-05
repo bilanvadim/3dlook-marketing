@@ -48,6 +48,9 @@ RUN_INBOUND_PY = _seam_file("run_inbound.py")   # dispatch · lobby-topic · for
 RUN_TURN_PY = _seam_file("run_turn.py")         # intercept-primary/followup · media recall
 RUN_TOPICS_PY = _seam_file("run_topics.py")     # lobby-no-pin
 RUN_BUSY_PY = _seam_file("run_busy.py")         # busy acknowledgements (cosmetic)
+# 0.22: the primary turn prep (intercept-primary · media-recall-primary) left run_turn.py.
+_RTP = os.path.join(GATEWAY, "run_turn_prepare.py")
+RUN_TURN_PRIMARY_PY = _RTP if os.path.exists(_RTP) else RUN_TURN_PY
 
 
 def _find_adapter():
@@ -254,6 +257,13 @@ S1_INSERT_021 = (
     "            logger.debug(\"claude-switcher turn intercept failed\", exc_info=True)\n"
 )
 S1_PRESENT = "[hermes-switcher] sticky Claude Code mode — route the turn to Claude"
+# 0.22 (checked 05.11.2026) moved the primary turn prep into run_turn_prepare.py,
+# and its early-out now returns the refusal text instead of None.
+S1_ANCHOR_022 = (
+    "        if message_text is None:\n"
+    "            # A refused local turn answers with its refusal (session_context_refs.turn_references).\n"
+    "            return getattr(event, \"_gateway_turn_refusal\", None), _session_env_tokens\n"
+)
 
 
 # --- run.py: forward-picker (forwarded msg in the topic lobby) -------------
@@ -909,9 +919,12 @@ def main():
              lambda a: a + (LOBBY_PIN_INSERT_021 if a is LOBBY_PIN_ANCHOR_021 else LOBBY_PIN_INSERT),
              LOBBY_PIN_PRESENT),
         ]),
+        (RUN_TURN_PRIMARY_PY, [
+            ("intercept-primary", [S1_ANCHOR_022, S1_ANCHOR_021, S1_ANCHOR, S1_ANCHOR_016],
+             lambda a: a + (S1_INSERT_021 if a in (S1_ANCHOR_021, S1_ANCHOR_022) else S1_INSERT),
+             S1_PRESENT),
+        ]),
         (RUN_TURN_PY, [
-            ("intercept-primary", [S1_ANCHOR_021, S1_ANCHOR, S1_ANCHOR_016],
-             lambda a: a + (S1_INSERT_021 if a is S1_ANCHOR_021 else S1_INSERT), S1_PRESENT),
             ("intercept-followup", [S2_ANCHOR_021, S2_ANCHOR, S2_ANCHOR_016],
              lambda a: a + (S2_INSERT_021 if a is S2_ANCHOR_021 else S2_INSERT), S2_PRESENT),
         ]),
@@ -931,8 +944,14 @@ def main():
     # 3b. Media recall for Hermes turns. Separate pass: it is anchored on the intercept
     # blocks the pass above just wrote, and _patch_file re-reads the file, so the same
     # code path works fresh and already-patched.
-    r = _patch_file(RUN_TURN_PY, [
+    r = _patch_file(RUN_TURN_PRIMARY_PY, [
         ("media-recall-primary", [AUG1_ANCHOR_021, AUG1_ANCHOR], after(AUG1_INSERT), AUG1_PRESENT),
+    ])
+    if isinstance(r, list):
+        problems += [f"{os.path.basename(RUN_TURN_PRIMARY_PY)}:{m}" for m in r]
+    else:
+        print(f"{os.path.basename(RUN_TURN_PRIMARY_PY)} (media recall): {r}")
+    r = _patch_file(RUN_TURN_PY, [
         ("media-recall-followup", [AUG2_ANCHOR_021, AUG2_ANCHOR],
          lambda a: a + (AUG2_INSERT_021 if a is AUG2_ANCHOR_021 else AUG2_INSERT), AUG2_PRESENT),
     ])

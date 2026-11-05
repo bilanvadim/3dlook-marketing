@@ -285,7 +285,10 @@ def main():
     # to Telegram and, worse, returned before every patcher below, so the day's anchor
     # checks never ran on freshly pulled code. When the code really moved, carry on.
     head_after = _git_head()
-    if r.returncode != 0 and "Update complete!" in r.stdout:
+    # 05.11.2026: an autostash that cannot be restored ("did NOT restore them") also
+    # exits 1 after the code moved — so judge by HEAD, not by the wording.
+    moved = bool(head_after) and head_after != head_before
+    if r.returncode != 0 and (moved or "Update complete!" in r.stdout):
         log(f"`hermes update` rc={r.returncode} AFTER completing "
             f"(HEAD {head_before or '?'} -> {head_after or '?'}); continuing with the patchers")
         rl.telegram(f"⚠️ Hermes update: код обновлён (HEAD {head_before or '?'} → "
