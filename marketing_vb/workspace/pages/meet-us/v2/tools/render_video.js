@@ -4,7 +4,7 @@ const {spawn}=require('child_process'); const path=require('path');
 (async()=>{
   const [,,file,out,fpsArg]=process.argv; const fps=+(fpsArg||30);
   const b=await chromium.launch({executablePath:'/usr/bin/google-chrome'});
-  const p=await b.newPage({viewport:{width:1080,height:1080},deviceScaleFactor:1});
+  const p=await b.newPage({viewport:{width:+(process.env.VW||1080),height:+(process.env.VH||1080)},deviceScaleFactor:1});
   await p.goto('file://'+path.resolve(file)); await p.waitForTimeout(400);
   const dur=await p.evaluate(()=>window.__duration);
   const ff=spawn('ffmpeg',['-y','-loglevel','error','-f','image2pipe','-framerate',String(fps),'-i','-',

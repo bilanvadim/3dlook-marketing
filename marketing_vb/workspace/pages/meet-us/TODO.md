@@ -52,3 +52,6 @@ Search for `[PLACEHOLDER` in page.md and page.html: every hit below has one.
 | 16 | Re-check the two routes in `v2/map_data.py` against the final CES floor plan: doors open as entrances during show hours, booth position, aisle widths. Rebuild (`python3 v2/build.py`), re-render the videos | Vadim | Dec 10 |
 | 17 | GTM: add `cta_find_hero`, `map_route_select` (route), `map_replay` to the event list in item 11 | Asel | by Nov 24 |
 | 18 | Ring is part of the booth demo (Vadim, 11-03), but ring sizing is not built per claims registry CLM-CAP-017 and is never named on the site before launch. The "What is new" card keeps the approved wrist sentence | Vadim | n/a |
+| 19 | Watch the FitXpress YouTube video (452QOv0O2Hw, 2024) now in the hero: no «HIPAA compliant» or other retired claims, else pick another video | Vadim | before launch |
+| 20 | Replace the hero video with the booth video (B7) when it is ready; keep the same 16:9 card | Kristina, Asel | Dec 18 |
+| 21 | Move the Figma file from Vadim's drafts into the team project and share with Kristina and Asel | Vadim | Nov 7 |

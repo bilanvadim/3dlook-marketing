@@ -53,15 +53,31 @@ v1 (`../page.md`, `../page.html`) stays the copy source. v2 adds one block, **"H
   text alternative; the SVG has `title` + `desc`.
 - **Tabs.** `role=tablist/tab/tabpanel`, arrow keys move between tabs, focus ring `#B1BDFF` 3 px.
 - **Analytics (GTM, add to README v1 list):** `cta_find_hero` (hero text link), `map_route_select`
-  (`route`: foyer|west), `map_replay`.
+  (`route`: foyer|west), `map_replay`, `video_play` (`video`).
 - **WordPress.** The block is plain HTML + inline SVG + ~3 KB JS, classes `.mu-find*`, `.m-*`. Copy the
   `<section id="find">` from `out/page-v2.html`, its CSS and the first `<script>`.
 
+## Figma (dev handoff)
+
+https://www.figma.com/design/W6J8FtviwHjRejXnFKfJvN (3Dlook inc, Vadim's drafts). Pages: Cover, Landing ·
+Variant A, Landing · Variant B, Find-us map · motion (Smart Animate flows + motion spec), Components
+(all states), Handoff notes. Local variables «3DLOOK web tokens» with CSS code syntax, Satoshi text styles
+per breakpoint. Built with `use_figma` from the same copy and map data as this folder.
+
+## Hero and About videos (Vadim, 2026-11-06)
+
+Kristina's booth video (B7) comes closer to the show, the page is needed now. Hero = YouTube
+«FitXpress - AI-Powered Body Scanning» `452QOv0O2Hw` (2024) until B7 is ready; the 10-year video
+`UVrdZlhAkeo` (team montage) sits in a new «Ten years of 3DLOOK» block next to the about line. Both are
+click-to-load facades (thumbnail + play, `youtube-nocookie` iframe after the click, GTM `video_play`).
+Vadim checks the FitXpress video for old claims (e.g. «HIPAA compliant») before launch.
+
 ## Videos
 
-Square 1080×1080 MP4, H.264, no sound: overview → zoom to the start → the camera walks the route with
-the step caption → zoom on the booth → "See you at booth 55630" end card. For LinkedIn posts, invite
-emails (as a GIF or a link), WhatsApp to guests on the day, the booth team's phones.
+- **Loop, both routes at once** (Vadim: «декілька роутів одночасно… зациклим»): 1080×1350, 12 s,
+  seamless (routes fade back to the first frame), route A blue, route B navy, two lanes on the shared
+  aisle. `out/video-loop.html`. MP4 + 480 px GIF (388 KB, for emails) in Drive «CES 2027 Marketing».
+- Single routes, 1080×1080, 16 s, captions + end card: one per entrance.
 
 ## Before launch
 

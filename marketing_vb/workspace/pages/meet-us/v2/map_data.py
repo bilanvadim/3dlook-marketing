@@ -151,3 +151,12 @@ if __name__ == "__main__":
     for k, r in ROUTES.items():
         L = route_length(r["points"])
         print(k, round(L, 1), "units =", round(L * M_PER_UNIT), "m")
+
+# both routes at once (loop video, Figma Route=All): two lanes on the shared part
+ROUTES_ALL = {
+    "foyer": {"letter": "A", "color": "#143DFF",
+              "points": [(856, 690), (856, 667.5), (703.5, 667.5), (703.5, 496), (713.2, 483), (713.2, 450.8),
+                         (805.9, 450.8), (805.9, 393)]},
+    "west": {"letter": "B", "color": "#050F40",
+             "points": [(566, 646), (577, 628), (580, 576), (580, 454.6), (809.7, 454.6), (809.7, 393)]},
+}

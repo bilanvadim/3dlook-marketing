@@ -348,6 +348,23 @@ body{margin:0;font-family:var(--font);color:var(--ink);background:var(--white);l
 .is-anim .mu-booth-ring{transform-box:fill-box;transform-origin:center;animation:muPulse 1.6s ease-out infinite}
 @keyframes muPulse{0%{transform:scale(.6);opacity:.9}100%{transform:scale(2.2);opacity:0}}
 
+/* ---------- YouTube cards (click-to-load, youtube-nocookie) */
+.mu-hero-media{margin:0}
+.mu-video{position:relative;display:block;width:100%;aspect-ratio:16/9;border:0;padding:0;border-radius:20px;overflow:hidden;
+  background:#000;cursor:pointer;box-shadow:0 20px 48px rgba(0,0,0,.35);text-decoration:none}
+.mu-video img,.mu-video iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0;display:block}
+.mu-play{position:absolute;left:50%;top:50%;width:72px;height:72px;margin:-36px 0 0 -36px;border-radius:9999px;background:rgba(255,255,255,.94);
+  display:flex;align-items:center;justify-content:center;transition:transform .15s ease;box-shadow:0 8px 24px rgba(5,15,64,.3)}
+.mu-play svg{width:26px;height:26px;margin-left:4px}
+.mu-video:hover .mu-play{transform:scale(1.06)}
+.mu-video-cap{font-size:14px;color:var(--blue-200);margin:12px 0 0}
+.mu-about-sec{padding:96px 0 120px}
+.mu-about-grid{display:grid;grid-template-columns:5fr 7fr;gap:30px;align-items:center}
+.mu-about-sec h3{font-size:20px;line-height:1.3;margin:0 0 12px}
+.mu-about-sec p{margin:0;color:var(--g700);font-size:17px}
+.mu-about-sec .mu-video{box-shadow:0 12px 32px rgba(5,15,64,.12)}
+.mu-about-sec .mu-video-cap{color:var(--g600)}
+
 /* ---------- booking */
 .mu-book{display:grid;grid-template-columns:5fr 7fr;grid-template-areas:"intro embed" "extra embed";
   column-gap:30px;row-gap:24px;align-items:start;grid-template-rows:auto 1fr}
@@ -390,7 +407,9 @@ body{margin:0;font-family:var(--font);color:var(--ink);background:var(--white);l
   .proto-header .mu-wrap{height:72px}
   .mu-hero{padding:80px 0 120px}
   .mu-hero-grid{grid-template-columns:1fr}
-  .mu-hero-visual{display:none}
+  .mu-hero-media{margin-top:40px}
+  .mu-about-grid{grid-template-columns:1fr;gap:24px}
+  .mu-about-sec{padding:80px 0 96px}
   .mu h1{font-size:48px}
   .mu-lede{font-size:19px}
   .mu h2{font-size:36px}
@@ -441,6 +460,9 @@ body{margin:0;font-family:var(--font);color:var(--ink);background:var(--white);l
   .mu-book-intro p{font-size:17px}
   .mu-embed{min-height:520px;padding:24px}
   .mu-about{padding:60px 0 80px}
+  .mu-hero-media{margin-top:32px}
+  .mu-video{border-radius:15px}
+  .mu-about-sec{padding:60px 0 80px}
   .proto-footer{border-radius:20px 20px 0 0;padding:48px 0}
 }
 """
@@ -531,6 +553,40 @@ JS = r"""
 """
 
 
+PLAY_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z" fill="#050F40"/></svg>'
+VIDEOS = {
+    "fitxpress": {"id": "452QOv0O2Hw", "label": "Play video: FitXpress, body scanning on a smartphone",
+                  "cap": "Video: FitXpress body scanning on a smartphone", "thumb": "assets/yt-fitxpress.jpg"},
+    "ten": {"id": "UVrdZlhAkeo", "label": "Play video: ten years of 3DLOOK",
+            "cap": "Video: ten years of 3DLOOK, 2016-2026", "thumb": "assets/yt-ten-years.jpg"},
+}
+VIDEO_MODE = {"mode": "embed", "inline_thumbs": False}
+
+
+def video_card(key):
+    v = VIDEOS[key]
+    if VIDEO_MODE["inline_thumbs"]:
+        src = "data:image/jpeg;base64," + base64.b64encode((HERE / v["thumb"]).read_bytes()).decode()
+    else:
+        src = f'https://i.ytimg.com/vi/{v["id"]}/maxresdefault.jpg'
+    lazy = '' if VIDEO_MODE["inline_thumbs"] else ' loading="lazy"'
+    inner = f'<img src="{src}" alt=""{lazy} width="960" height="540"><span class="mu-play">{PLAY_SVG}</span>'
+    if VIDEO_MODE["mode"] == "link":
+        card = (f'<a class="mu-video" href="https://www.youtube.com/watch?v={v["id"]}" target="_blank" rel="noopener" '
+                f'aria-label="{v["label"]}">{inner}</a>')
+    else:
+        card = (f'<button class="mu-video" type="button" data-yt="{v["id"]}" data-mu-event="video_play" '
+                f'aria-label="{v["label"]}">{inner}</button>')
+    return f'{card}<p class="mu-video-cap">{v["cap"]}</p>'
+
+
+VIDEO_JS = """<script>document.querySelectorAll('.mu-video[data-yt]').forEach(function(b){b.addEventListener('click',function(){
+var id=b.getAttribute('data-yt'),f=document.createElement('iframe');
+f.src='https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0&modestbranding=1';f.title=b.getAttribute('aria-label').replace('Play video: ','');
+f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;b.innerHTML='';b.appendChild(f);b.style.cursor='default';
+if(window.dataLayer)dataLayer.push({event:'video_play',video:id});},{once:true})});</script>"""
+
+
 # ---------------------------------------------------------------- html parts
 def topbar():
     return (f'<div class="mu-topbar"><span class="is-long">{COPY["topbar"]}</span>'
@@ -566,8 +622,7 @@ def hero(v):
     return (f'<section class="mu-hero"><div class="mu-wrap mu-hero-grid"><div>'
             f'<p class="mu-eyebrow">{c["eyebrow"]}</p><h1>{c["h1"]}</h1><p class="mu-lede">{c["lede"]}</p>'
             f'<div class="mu-actions">{actions}</div>{micro}</div>'
-            f'<div class="mu-hero-visual" role="img" aria-label="Guided body scan on a phone">'
-            f'[PLACEHOLDER: hero visual, guided-capture phone UI, still from the booth video (Kristina, B7)]</div>'
+            f'<div class="mu-hero-media">{video_card("fitxpress")}</div>'
             f'</div></section>')
 
 
@@ -655,7 +710,9 @@ def page(v="A", *, js=True, fonts="embed", view=None, step_state=None, chrome=Tr
         body.append(find_block("foyer", view, step_state))
     body.append(cards(v))
     body.append(book(v))
-    body.append(f'<div class="mu-wrap"><p class="mu-about">{COPY["about"]}</p></div>')
+    body.append(f'<section class="mu-about-sec" aria-labelledby="mu-ten"><div class="mu-wrap mu-about-grid">'
+                f'<div><h3 id="mu-ten">Ten years of 3DLOOK</h3><p>{COPY["about"]}</p></div>'
+                f'<div>{video_card("ten")}</div></div></section>')
     body.append('</main>')
     if chrome:
         body.append(footer())
@@ -672,7 +729,7 @@ document.querySelectorAll('.mu-tab').forEach(function(t){t.addEventListener('cli
     return (f'<!doctype html><html lang="en"><head><meta charset="utf-8">'
             f'<meta name="viewport" content="width=device-width, initial-scale=1">'
             f'<title>{title}{title_suffix}</title><meta name="robots" content="noindex, follow">'
-            f'{font_link}<style>{font_css}\n{CSS}</style></head><body>{"".join(body)}{script}{meta_js}</body></html>')
+            f'{font_link}<style>{font_css}\n{CSS}</style></head><body>{"".join(body)}{script}{meta_js}{VIDEO_JS if js and VIDEO_MODE["mode"] == "embed" else ""}</body></html>')
 
 
 # ---------------------------------------------------------------- static export for Figma
@@ -715,7 +772,9 @@ def static_page(v, width, step_state=None):
     if width < 600 and v == "A":
         h = FINAL_MOBILE[2] * 8 / 7
         view = (FINAL_MOBILE[0], FINAL_MOBILE[1] + (FINAL_MOBILE[3] - h) / 2, FINAL_MOBILE[2], h)
+    VIDEO_MODE.update(inline_thumbs=True)
     doc = page(v, js=False, fonts="embed", view=view, step_state=step_state)
+    VIDEO_MODE.update(inline_thumbs=False)
     css_block = re.search(r"<style>(.*?)</style>", doc, re.S).group(1)
     # font faces have no media queries, safe to unwrap whole block
     doc = doc.replace(css_block, unwrap_media(css_block, width) + f"\nhtml,body{{width:{width}px}}")
@@ -790,10 +849,79 @@ __frame(0);
 
 def artifact_page():
     """same page for the claude.ai artifact preview: the host adds doctype/head/body"""
+    VIDEO_MODE.update(mode="link", inline_thumbs=True)
     doc = page("A")
+    VIDEO_MODE.update(mode="embed", inline_thumbs=False)
     head_style = re.search(r"<style>.*?</style>", doc, re.S).group(0)
     body = re.search(r"<body>(.*)</body>", doc, re.S).group(1)
     return f"<title>CES 2027 Meet-us Page</title>\n{head_style}\n{body}"
+
+
+def video_loop_page():
+    """1080 x 1350 seamless loop: both routes draw at the same time, then fade back to the first frame"""
+    import re as _re
+    svg = map_svg("foyer", (495, 333, 420, 420 * 1000 / 1080), idp="vl")
+    svg = _re.sub(r'<g class="mu-route".*?</g>', '', svg, flags=_re.S)
+    svg = svg.replace('<g class="mu-walker"', '<g class="mu-walker-x"')
+    lanes = []
+    for k, r in M.ROUTES_ALL.items():
+        p = r["points"]; c = r["color"]
+        d = "M" + " L".join(f"{x:g},{y:g}" for x, y in p)
+        ch = "".join(f'<path class="vl-chev m-chev" data-at="{at:.1f}" transform="translate({x:.2f} {y:.2f}) rotate({a:.0f})" '
+                     f'd="M-1.5,-1.9 L0.9,0 L-1.5,1.9"/>' for x, y, a, at in chevrons(p))
+        sx, sy = p[0]
+        lanes.append(f'<g class="vl-route" data-route="{k}">'
+                     f'<path d="{d}" fill="none" stroke="{c}" stroke-opacity=".25" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=".1 4"/>'
+                     f'<path class="vl-line" d="{d}" fill="none" stroke="{c}" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>'
+                     f'<g class="vl-chevs">{ch}</g>'
+                     f'<g class="vl-walker"><circle r="7" fill="{c}" fill-opacity=".2"/><circle r="3.3" fill="{c}" stroke="#fff" stroke-width="1.4"/></g>'
+                     f'<g transform="translate({sx:g} {sy:g})"><circle r="5.6" fill="{c}" stroke="#fff" stroke-width="1.2"/>'
+                     f'<text y="2.5" text-anchor="middle" font-family="Satoshi" font-weight="700" font-size="7" fill="#fff">{r["letter"]}</text></g>'
+                     f'</g>')
+    # routes go under the booth and its callout
+    svg = svg.replace('<circle class="mu-booth-ring', "".join(lanes) + '<circle class="mu-booth-ring', 1)
+    legend = "".join(
+        f'<div class="vl-row"><b style="background:{M.ROUTES_ALL[k]["color"]}">{M.ROUTES_ALL[k]["letter"]}</b>'
+        f'<span><strong>{r["tab"]}</strong>{ENTRANCE_SUB[k]}</span></div>' for k, r in M.ROUTES.items())
+    return f"""<!doctype html><html><head><meta charset="utf-8"><style>{font_faces()}
+{CSS}
+html,body{{margin:0;width:1080px;height:1350px;overflow:hidden;background:#EEF0F6}}
+.vl-top{{position:absolute;left:56px;right:56px;top:44px;display:flex;justify-content:space-between;align-items:flex-start}}
+.vl-top h1{{font:700 50px/1.05 var(--font);letter-spacing:-.02em;color:#050F40;margin:0}}
+.vl-top p{{font:500 24px var(--font);color:#4C4C4C;margin:10px 0 0}}
+.vl-brand{{display:flex;align-items:center;background:#050F40;border-radius:9999px;padding:16px 22px}}
+.vl-brand svg{{width:150px;height:22px;display:block}} .vl-brand svg path{{fill:#fff}}
+.vl-map{{position:absolute;left:0;top:160px;width:1080px;height:1000px}} .vl-map svg{{width:1080px;height:1000px;display:block}}
+.vl-legend{{position:absolute;left:40px;right:40px;bottom:36px;background:#fff;border-radius:24px;padding:22px 28px;display:grid;gap:14px;
+  box-shadow:0 10px 40px rgba(5,15,64,.14)}}
+.vl-row{{display:grid;grid-template-columns:44px 1fr;gap:18px;align-items:center;font:500 24px/1.3 var(--font);color:#4C4C4C}}
+.vl-row b{{width:44px;height:44px;border-radius:9999px;color:#fff;display:flex;align-items:center;justify-content:center;font:700 22px var(--font)}}
+.vl-row strong{{display:block;font:700 27px/1.25 var(--font);color:#1A1A1A}}
+.m-t{{font-size:7.5px}}
+</style></head><body>
+<div class="vl-top"><div><h1>Two ways to booth 55630</h1><p>Venetian Expo, Level 2, Halls A-D · CES 2027, January 6-9</p></div>
+<div class="vl-brand">{logo().replace('class="proto-logo"', '')}</div></div>
+<div class="vl-map" data-mu-find><div class="mu-mapbox" style="border:0;border-radius:0;aspect-ratio:auto;width:1080px;height:1000px;background:#EEF0F6">{svg}</div></div>
+<div class="vl-legend">{legend}</div>
+<script>
+var R=[].map.call(document.querySelectorAll('.vl-route'),function(g){{var p=g.querySelector('.vl-line'),L=p.getTotalLength();p.style.strokeDasharray=L+' '+L;
+  return {{g:g,p:p,L:L,w:g.querySelector('.vl-walker'),ch:[].map.call(g.querySelectorAll('.vl-chev'),function(c){{return {{el:c,at:+c.getAttribute('data-at')}}}})}}}});
+var ring=document.querySelector('.mu-booth-ring'), call=document.querySelector('.m-callout'), CALL0=call.getAttribute('transform');
+var T={{intro:.8,travel:7,arrive:1.8,hold:1.4,fade:1}};
+function clamp(v,a,b){{return Math.max(a,Math.min(b,v))}}
+function ease(x){{return x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2}}
+window.__duration=T.intro+T.travel+T.arrive+T.hold+T.fade;
+window.__frame=function(t){{
+  var t1=T.intro,t2=t1+T.travel,t3=t2+T.arrive+T.hold,t4=t3+T.fade;
+  var k=ease(clamp((t-t1)/T.travel,0,1)), fade=1-clamp((t-t3)/T.fade,0,1);
+  R.forEach(function(r){{var len=r.L*k; r.p.style.strokeDashoffset=r.L-len; r.p.style.opacity=fade;
+    r.ch.forEach(function(c){{c.el.style.opacity=(c.at<=len?1:0)*fade}});
+    var pt=r.p.getPointAtLength(len); r.w.setAttribute('transform','translate('+pt.x+' '+pt.y+')'); r.w.style.opacity=(t>=t1?1:0)*fade;}});
+  var a=t>=t2&&t<t3?((t-t2)%1.2)/1.2:0; ring.setAttribute('r',6+a*10); ring.style.opacity=t>=t2&&t<t3?(1-a)*.9:.6;
+  var pop=t>=t2&&t<t2+.5?Math.sin((t-t2)/.5*Math.PI)*.12:0; call.setAttribute('transform',CALL0+' scale('+(1+pop)+')');
+}};
+__frame(0);
+</script></body></html>"""
 
 
 def main():
@@ -809,6 +937,7 @@ def main():
             (OUT / "figma" / f"{v}-{w}.html").write_text(static_page(v, w))
     for k in M.ROUTES:
         (OUT / f"video-{k}.html").write_text(video_page(k))
+    (OUT / "video-loop.html").write_text(video_loop_page())
     print("ok", sorted(p.name for p in OUT.rglob("*.html")))
 
 
