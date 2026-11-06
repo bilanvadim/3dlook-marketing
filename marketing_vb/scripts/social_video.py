@@ -445,7 +445,10 @@ def fill(spec, fmt: str, url: str) -> tuple[str, dict]:
         "W": f["w"], "H": f["h"], "SAFE_TOP": f["safe_top"], "SAFE_BOTTOM": f["safe_bottom"],
         "DURATION": T["total"],
         "HOOK_SIZE": 92 if hook_len <= 50 else 84 if hook_len <= 66 else 76,
-        "STAT_SIZE": int(min(300, 900 / (0.6 * max(3, len(stat["value"]))))) if stat else 300,
+        # 904 px = content width (1080 - 2 × 88). Satoshi Black digits and "%" measure
+        # ~0.67 em, not 0.6: at 0.6 "40-60%" rendered 999 px and failed `check`
+        # (text_box_overflow, 2026-11-06). 0.75 keeps a 0.8 em worst case on canvas.
+        "STAT_SIZE": int(min(300, 904 / (0.75 * max(3, len(stat["value"]))))) if stat else 300,
         "POINT_SIZE": 58 if pmax <= 32 else 52 if pmax <= 42 else 48,
         "CLOSE_SIZE": 76 if len(spec["close"]) <= 40 else 66,
         "URL_SIZE": 30 if len(du) <= 44 else 26,
