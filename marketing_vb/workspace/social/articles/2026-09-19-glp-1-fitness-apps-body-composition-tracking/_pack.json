@@ -4,5 +4,13 @@
   "generated": "2026-11-06",
   "article_of_record": "workspace/seo/articles/2026-09-19-glp-1-fitness-apps-body-composition-tracking/published-live-2026-11-06.md",
   "drafter_model": "opus",
-  "qc_policy": "sampled"
+  "qc_policy": "sampled",
+  "digest_approved": {
+    "by": "Vadim",
+    "date": "2026-11-06",
+    "via": "Claude Code chat («апрув паку»), after review in git (5613478)",
+    "digest": "review-digest.md (batch job #213 + rewrite round for katya/olena/company/katerina, 9/9)",
+    "video": "reel 9:16 + feed 4:5, 18.8 s, private repo 0d52d98",
+    "next": "дизайнер делает визуалы по Design tip каждого поста"
+  }
 }
