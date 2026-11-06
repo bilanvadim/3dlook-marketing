@@ -1,0 +1,91 @@
+{
+ "generated": "2026-11-06T05:40:24+00:00",
+ "items": [
+  {
+   "id": "de44f274-97be-44c8-9d1a-19efa33c9c6a",
+   "title": "Neurotronics Receives FDA Clearance for AI-Powered Sleep Analysis Software",
+   "date": "2026-11-05",
+   "tags": [
+    "Diagnostics",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services",
+    "Policy and Regulation"
+   ],
+   "url": "https://hlth.com/insights/news/neurotronics-receives-fda-clearance-for-ai-powered-sleep-analysis-software"
+  },
+  {
+   "id": "4f9dea93-8a27-424e-957b-2bc633e4e697",
+   "title": "LeanTaaS Acquires LookDeep Health to Expand iQueue Platform with Ambient AI Capabilities",
+   "date": "2026-11-05",
+   "tags": [
+    "Telehealth / Virtual Care / Remote Patient Monitoring",
+    "Investments and Partnerships",
+    "Health System & Health Provider",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/leantaas-acquires-lookdeep-health-to-expand-iqueue-platform-with-ambient-ai-capabilities"
+  },
+  {
+   "id": "b4f85bee-712b-46e6-925d-e9339047cfb9",
+   "title": "CVS Health Announces Plans to Separate CVS Pharmacy into Independent Public Company by 2028",
+   "date": "2026-11-05",
+   "tags": [
+    "Payer (Insurer)",
+    "Investments and Partnerships",
+    "Health System & Health Provider",
+    "Primary Care",
+    "Retail Health"
+   ],
+   "url": "https://hlth.com/insights/news/cvs-health-announces-plans-to-separate-cvs-pharmacy-into-independent-public-company-by-2028"
+  }
+ ],
+ "analyses": {
+  "de44f274-97be-44c8-9d1a-19efa33c9c6a": {
+   "id": "de44f274-97be-44c8-9d1a-19efa33c9c6a",
+   "score": 0,
+   "segment": "—",
+   "what": "Neurotronics отримала FDA 510(k) clearance для Sleep Analysis Module: AI-софт, який оцінює загальний час сну за PPG-сигналами з пульсоксиметра під час домашнього тесту на апное сну. Модуль інтегрують у платформу Polysmith.",
+   "why": "Діагностика сну за PPG-сигналами. Тут немає даних про тіло, BMI чи обміри, тож це поза ICP FitXpress і Mobile Tailor.",
+   "play": "none",
+   "companies": [
+    "Neurotronics",
+    "EnsoData"
+   ],
+   "_date": "2026-11-05"
+  },
+  "4f9dea93-8a27-424e-957b-2bc633e4e697": {
+   "id": "4f9dea93-8a27-424e-957b-2bc633e4e697",
+   "score": 0,
+   "segment": "—",
+   "what": "LeanTaaS купила LookDeep Health, щоб додати ambient AI і computer vision у платформу iQueue. На її основі запускають iQueue for Virtual Care: камери в лікарняних палатах розпізнають рухи й падіння пацієнтів, а система ставить задачі virtual nursing і virtual observation.",
+   "why": "Це лікарняні операції та стаціонарний моніторинг падінь. Computer vision тут не стосується обмірів тіла чи BMI, а отже й сегментів 3DLOOK.",
+   "play": "none",
+   "companies": [
+    "LeanTaaS",
+    "LookDeep Health",
+    "Aidin"
+   ],
+   "_date": "2026-11-05"
+  },
+  "b4f85bee-712b-46e6-925d-e9339047cfb9": {
+   "id": "b4f85bee-712b-46e6-925d-e9339047cfb9",
+   "score": 1,
+   "segment": "FitXpress §4 Health Plans / Employer Wellness",
+   "what": "CVS Health до першої половини 2028 року виділяє CVS Pharmacy в окрему публічну компанію. Aetna, Caremark, Oak Street Health і Signify Health залишаються в CVS Health. У Q3 2026 роздрібні аптеки видали на 23% більше рецептів на GLP-1.",
+   "why": "Aetna є в ICP §3/§4, але йдеться про масштабну корпоративну реструктуризацію, і в статті немає тригера щодо wellness, андеррайтингу чи верифікації BMI. Корисна хіба цифра «+23% видач GLP-1» як контекст для контенту про зростання GLP-1 у США.",
+   "play": "content_only",
+   "companies": [
+    "CVS Health",
+    "CVS Pharmacy",
+    "Aetna",
+    "Caremark",
+    "Oak Street Health",
+    "Signify Health"
+   ],
+   "caveat": "Реструктуризацію ICP прирівнює до M&A, а це критерій виключення: цикл продажу зупиняється. До того ж це надвеликий enterprise.",
+   "_date": "2026-11-05"
+  }
+ },
+ "posts": []
+}
