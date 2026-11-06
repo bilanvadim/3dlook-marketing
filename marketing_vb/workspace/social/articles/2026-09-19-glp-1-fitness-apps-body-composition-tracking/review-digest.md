@@ -74,7 +74,7 @@ Read the full article:
 
 ## linkedin-company
 
-GLP-1 treatment has changed what a progress screen needs to show.
+Glucagon-like peptide-1 (GLP-1) treatment has changed what a progress screen needs to show.
 
 When a member loses weight on these medications, the scale records the change. It does not show whether fat mass, lean mass, or fluid made up that change. A 2024 review in Diabetes, Obesity and Metabolism examined lean mass change with these therapies. In some studies, reductions in lean mass accounted for 40% to 60% of total weight loss. Other studies put the share at approximately 15% or less. A single weight number sits on top of all of it.
 
@@ -100,11 +100,11 @@ Read the full article on how fitness apps can track progress beyond scale weight
 
 ## linkedin-katerina
 
-GLP-1 has quietly rewritten what a progress screen is expected to show.
+Glucagon-like peptide-1 (GLP-1) treatment has quietly rewritten what a progress screen is expected to show.
 
 A year ago, weight was enough. Now a weight drop raises a harder question. Was it fat, lean mass, or fluid?
 
-The research is why. One 2024 review found lean mass made up 40% to 60% of total weight loss in some studies, and 15% or less in others. That is a wide range to hide under a single number.
+The research is why. One 2024 review found lean mass made up 40% to 60% of total weight loss in some studies, and approximately 15% or less in others. That is a wide range to hide under a single number.
 
 The market is moving toward progress records that separate trends by source. Weight, measurements, composition estimates, training history, each labeled.
 
@@ -130,7 +130,7 @@ Where have you seen an honest limit win a deal over a bolder promise?
 
 In digital health, the vendor who admits limits is usually the safer bet.
 
-GLP-1 has every platform racing to show more than scale weight. That is the right instinct. The risk is a vendor who oversells what a body scan can tell you.
+Glucagon-like peptide-1 (GLP-1) treatment has every platform racing to show more than scale weight. That is the right instinct. The risk is a vendor who oversells what a body scan can tell you.
 
 Here is a test I'd run on any body-data vendor. Ask what their product refuses to claim.
 
@@ -138,7 +138,7 @@ A credible answer sounds like this. A scan estimates lean mass, and lean mass is
 
 A vendor who promises muscle measurement from two photos is telling you how the next conversation goes wrong.
 
-For a buying team, that restraint is not weakness. It is what protects member trust once the feature ships.
+When I compare vendors, I score that restraint as a strength. It tells me they know where their data stops.
 
 What is the first limit you ask a vendor to put in writing?
 
@@ -180,21 +180,23 @@ When you scoped an app-plus-provider program, where did you draw the line?
 
 ## linkedin-olena
 
-The fastest way to lose members from a scan workflow is to assume everyone can stand for it.
+Every body scan workflow needs a path that works without the scan.
 
-A standard body scan needs a standing pose and a capture sequence. Not every member can do that. FitXpress was not specifically trained on data representing people with physical disabilities, and its performance for that group has not been established.
+A standard scan relies on a standing pose and a guided capture sequence. A disability can affect either one.
 
-If the only path is the standard scan, those members quietly drop out. That shows up later as patchy data and uneven adoption.
+Our own product, FitXpress, was not specifically trained on data representing people with physical disabilities. Its measurement performance has not been established for this population.
 
-The fix is to design the fallback first. Offer manual measurements or a weight-only progress view, and label the method behind every value. Keep results from different methods as separate trends. A switch in method should never look like real body change.
+I'd design the non-scan path first, before the scan flow. Members who cannot use standard capture get manual measurements or a weight-only progress view.
 
-Inclusive capture is not a nice-to-have. It is what keeps your progress data honest across a whole cohort.
+Then I'd label every value with the method behind it. Results from different methods stay as separate trends.
 
-The article covers this alternative path in more detail.
+A manual waist reading and a scanned waist reading belong on two lines. On one line, a switch in method can pass for a change in the body.
 
-How do you handle members who can't complete a standard scan today?
+If a member can't use the standard scan, what does your progress view show them today?
 
-**CTA:** Engaging question + invitation to read the article.
+Read the article before you plan your check-ins:
+
+**CTA:** Discussion question, then invitation to read the article.
 
 > **Design tip**
 > **Article visual:** None needed. A consultative adoption point reads best as plain text on this profile.
@@ -234,20 +236,22 @@ How are you setting the threshold for a change worth showing?
 
 ## Video (HyperFrames)
 
-⚠️ Not rendered from the current copy: `python3 scripts/social_video.py render 2026-09-19-glp-1-fitness-apps-body-composition-tracking`.
-
 **Eyebrow:** GLP-1 progress tracking
 
 **Hook:** GLP-1 changed what a progress screen needs to show
 
-**Stat:** 40-60%: of weight loss was lean mass, some studies (Source: Diabetes, Obesity and Metabolism, 2024)
+**Stat:** 40-60%: of weight loss was lean mass in some studies, 15% or less in others (Source: 2024 review in Diabetes, Obesity and Metabolism)
 
 **Points:**
 - Weight and body measurements
 - Body composition estimates
 - Completed strength sessions
 
-**Close:** A fuller, honest view of progress than the scale → Read the full article
+**Close:** How fitness apps can track progress beyond scale weight → Read the full article
+
+**4:5** (18.8 s, LinkedIn company page, Facebook, Instagram feed): `3dlook-marketing-private/social-video/2026-09-19-glp-1-fitness-apps-body-composition-tracking/2026-09-19-glp-1-fitness-apps-body-composition-tracking-feed.mp4` · frames `_video/feed-sheet.jpg`
+
+**9:16** (18.8 s, Instagram Reels / Stories): `3dlook-marketing-private/social-video/2026-09-19-glp-1-fitness-apps-body-composition-tracking/2026-09-19-glp-1-fitness-apps-body-composition-tracking-reel.mp4` · frames `_video/reel-sheet.jpg`
 
 
 ---

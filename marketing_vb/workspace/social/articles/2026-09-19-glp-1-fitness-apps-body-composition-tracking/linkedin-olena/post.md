@@ -10,27 +10,29 @@ created: 2026-11-06
 
 ## Post: linkedin-olena / glp-1-muscle-loss-fitness-apps
 
-**Angle:** Adoption and trust: a scan workflow that assumes everyone can stand for it quietly loses members. Teach one thing: design the fallback capture path first, label the method, keep methods as separate trends.
-**Claims used:** FitXpress was not specifically trained on data representing people with physical disabilities, performance not established for that population; the app can offer manual measurements or a weight-only progress view; the progress view labels the method behind each value and keeps results from different methods as separate trends.
-**Length:** ~162 / 100-170 words
+**Angle:** Implementation: a scan workflow needs a path that works without the scan. Teach the order: design the non-scan path before the scan flow, label every value with its method, keep methods as separate trends.
+**Claims used:** A disability can affect the standard standing pose or capture sequence; FitXpress "was not specifically trained on data representing people with physical disabilities, and its measurement performance has not been established for this population"; the app can offer manual measurements or a weight-only progress view to members who cannot use standard capture; the progress view labels the method behind each value and keeps results from different methods as separate trends.
+**Length:** 150 / 100-170 words
 
 ---
 
-The fastest way to lose members from a scan workflow is to assume everyone can stand for it.
+Every body scan workflow needs a path that works without the scan.
 
-A standard body scan needs a standing pose and a capture sequence. Not every member can do that. FitXpress was not specifically trained on data representing people with physical disabilities, and its performance for that group has not been established.
+A standard scan relies on a standing pose and a guided capture sequence. A disability can affect either one.
 
-If the only path is the standard scan, those members quietly drop out. That shows up later as patchy data and uneven adoption.
+Our own product, FitXpress, was not specifically trained on data representing people with physical disabilities. Its measurement performance has not been established for this population.
 
-The fix is to design the fallback first. Offer manual measurements or a weight-only progress view, and label the method behind every value. Keep results from different methods as separate trends. A switch in method should never look like real body change.
+I'd design the non-scan path first, before the scan flow. Members who cannot use standard capture get manual measurements or a weight-only progress view.
 
-Inclusive capture is not a nice-to-have. It is what keeps your progress data honest across a whole cohort.
+Then I'd label every value with the method behind it. Results from different methods stay as separate trends.
 
-The article covers this alternative path in more detail.
+A manual waist reading and a scanned waist reading belong on two lines. On one line, a switch in method can pass for a change in the body.
 
-How do you handle members who can't complete a standard scan today?
+If a member can't use the standard scan, what does your progress view show them today?
 
-**CTA:** Engaging question + invitation to read the article.
+Read the article before you plan your check-ins:
+
+**CTA:** Discussion question, then invitation to read the article.
 
 ---
 

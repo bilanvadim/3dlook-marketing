@@ -1,0 +1,37 @@
+{
+  "formats": {
+    "reel": {
+      "file": "2026-09-19-glp-1-fitness-apps-body-composition-tracking-reel.mp4",
+      "where": "3dlook-marketing-private/social-video/2026-09-19-glp-1-fitness-apps-body-composition-tracking/2026-09-19-glp-1-fitness-apps-body-composition-tracking-reel.mp4",
+      "sheet": "reel-sheet.jpg",
+      "ratio": "9:16",
+      "use": "Instagram Reels / Stories",
+      "width": 1080,
+      "height": 1920,
+      "duration": 18.8,
+      "bytes": 3966902,
+      "sha256": "5a9dabfa72e5e6bf",
+      "quality": "delivery",
+      "spec_sha": "e466fa697f8800e3",
+      "template_sha": "04825e1f7b0a1e55"
+    },
+    "feed": {
+      "file": "2026-09-19-glp-1-fitness-apps-body-composition-tracking-feed.mp4",
+      "where": "3dlook-marketing-private/social-video/2026-09-19-glp-1-fitness-apps-body-composition-tracking/2026-09-19-glp-1-fitness-apps-body-composition-tracking-feed.mp4",
+      "sheet": "feed-sheet.jpg",
+      "ratio": "4:5",
+      "use": "LinkedIn company page, Facebook, Instagram feed",
+      "width": 1080,
+      "height": 1350,
+      "duration": 18.8,
+      "bytes": 3485116,
+      "sha256": "950608275876c043",
+      "quality": "delivery",
+      "spec_sha": "e466fa697f8800e3",
+      "template_sha": "04825e1f7b0a1e55"
+    }
+  },
+  "rendered_at": "2026-11-06T09:12:09+00:00",
+  "hyperframes": "0.9.1",
+  "url": "3dlook.ai/content-hub/glp-1-muscle-loss-fitness-apps"
+}

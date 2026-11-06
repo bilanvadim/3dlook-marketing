@@ -1,10 +1,12 @@
 {
   "eyebrow": "GLP-1 progress tracking",
   "hook": "GLP-1 changed what a progress screen needs to show",
-  "stat": {"value": "40-60%",
-    "label": "of weight loss was lean mass, some studies",
-    "source": "Diabetes, Obesity and Metabolism, 2024"},
+  "stat": {
+    "value": "40-60%",
+    "label": "of weight loss was lean mass in some studies, 15% or less in others",
+    "source": "2024 review in Diabetes, Obesity and Metabolism"
+  },
   "points": ["Weight and body measurements", "Body composition estimates", "Completed strength sessions"],
-  "close": "A fuller, honest view of progress than the scale",
-  "from_profiles": ["linkedin-company", "facebook-company", "instagram-company"]
+  "close": "How fitness apps can track progress beyond scale weight",
+  "from_profiles": ["linkedin-company", "linkedin-katerina", "instagram-company", "facebook-company"]
 }

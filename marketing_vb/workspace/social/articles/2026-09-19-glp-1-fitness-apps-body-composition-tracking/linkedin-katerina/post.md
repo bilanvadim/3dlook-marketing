@@ -11,16 +11,16 @@ created: 2026-11-06
 ## Post: linkedin-katerina / glp-1-muscle-loss-fitness-apps
 
 **Angle:** Strategic observation: GLP-1 moved the market toward progress records beyond scale weight, and the differentiator is now restraint. Honest product limits are becoming a buying criterion.
-**Claims used:** Weight doesn't show fat/lean/fluid split; Neeland 2024 review 40-60% and ~15% or less; lean mass is not muscle; no scan proves which tissue changed.
-**Length:** ~157 / 100-170 words
+**Claims used:** Weight doesn't show fat/lean/fluid split; Neeland 2024 review 40-60% and approximately 15% or less; lean mass is not muscle; no scan proves which tissue changed.
+**Length:** 165 / 100-170 words
 
 ---
 
-GLP-1 has quietly rewritten what a progress screen is expected to show.
+Glucagon-like peptide-1 (GLP-1) treatment has quietly rewritten what a progress screen is expected to show.
 
 A year ago, weight was enough. Now a weight drop raises a harder question. Was it fat, lean mass, or fluid?
 
-The research is why. One 2024 review found lean mass made up 40% to 60% of total weight loss in some studies, and 15% or less in others. That is a wide range to hide under a single number.
+The research is why. One 2024 review found lean mass made up 40% to 60% of total weight loss in some studies, and approximately 15% or less in others. That is a wide range to hide under a single number.
 
 The market is moving toward progress records that separate trends by source. Weight, measurements, composition estimates, training history, each labeled.
 

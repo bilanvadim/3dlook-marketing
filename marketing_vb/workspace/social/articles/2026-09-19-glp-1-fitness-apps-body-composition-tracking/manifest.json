@@ -45,7 +45,7 @@
       "post_file": "linkedin-company/post.md",
       "format": "carousel",
       "status": "ready",
-      "word_count_body": 225
+      "word_count_body": 227
     },
     {
       "profile_id": "linkedin-katerina",
@@ -54,7 +54,7 @@
       "post_file": "linkedin-katerina/post.md",
       "format": "text",
       "status": "ready",
-      "word_count_body": 161
+      "word_count_body": 165
     },
     {
       "profile_id": "linkedin-vadim",
@@ -82,7 +82,7 @@
       "post_file": "linkedin-olena/post.md",
       "format": "text",
       "status": "ready",
-      "word_count_body": 162
+      "word_count_body": 150
     },
     {
       "profile_id": "linkedin-katya",
@@ -91,7 +91,7 @@
       "post_file": "linkedin-katya/post.md",
       "format": "text",
       "status": "ready",
-      "word_count_body": 157
+      "word_count_body": 161
     }
   ],
   "profiles_skipped": [
@@ -103,7 +103,20 @@
   "ready_for_review": true,
   "video": {
     "copy": "workspace/social/articles/2026-09-19-glp-1-fitness-apps-body-composition-tracking/_video/video.json",
-    "status": "copy-only",
-    "formats": {}
+    "status": "rendered",
+    "formats": {
+      "reel": {
+        "file": "2026-09-19-glp-1-fitness-apps-body-composition-tracking-reel.mp4",
+        "ratio": "9:16",
+        "duration": 18.8,
+        "use": "Instagram Reels / Stories"
+      },
+      "feed": {
+        "file": "2026-09-19-glp-1-fitness-apps-body-composition-tracking-feed.mp4",
+        "ratio": "4:5",
+        "duration": 18.8,
+        "use": "LinkedIn company page, Facebook, Instagram feed"
+      }
+    }
   }
 }

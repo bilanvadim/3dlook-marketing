@@ -12,11 +12,11 @@ created: 2026-11-06
 
 **Angle:** The market trend behind the article: GLP-1 raised the bar for what a progress view must show, and the design task is source-labeled trends. FitXpress positioned as the enabling layer, not the centre.
 **Claims used:** Weight does not show whether fat/lean/fluid changed; Neeland 2024 review 40-60% and ~15% or less; under 45 seconds, 80+ body measurements, composition estimates, 3D model; separate source-labeled trends; lean mass is not muscle; FitXpress is not a medical device; treatment decisions remain with the prescribing clinician.
-**Length:** ~225 / 180-280 words
+**Length:** 225 / 180-280 words
 
 ---
 
-GLP-1 treatment has changed what a progress screen needs to show.
+Glucagon-like peptide-1 (GLP-1) treatment has changed what a progress screen needs to show.
 
 When a member loses weight on these medications, the scale records the change. It does not show whether fat mass, lean mass, or fluid made up that change. A 2024 review in Diabetes, Obesity and Metabolism examined lean mass change with these therapies. In some studies, reductions in lean mass accounted for 40% to 60% of total weight loss. Other studies put the share at approximately 15% or less. A single weight number sits on top of all of it.
 
