@@ -1136,6 +1136,9 @@ def qc_plan(slug: str):
       * the first profile in digest order always runs — it sets the angle map the
         rest of the pack diverges from, and a bad angle there propagates;
       * every profile whose lint gate fails runs, whatever the sample says;
+      * every profile whose lint PASSES with a corrective-negation warning runs too
+        (since 2026-11-06): the shape is licensed only for a real boundary, and that
+        call needs a reader;
       * one rotating profile runs, chosen from the slug so the choice is stable
         across resumes and spreads coverage over packs rather than always landing
         on the same account.
@@ -1156,9 +1159,24 @@ def qc_plan(slug: str):
         r = subprocess.run([sys.executable, os.path.join(HERE, "post-lint.py"),
                             slug, pid, "--gate"],
                            capture_output=True, text=True)
-        if r.returncode == 1 and pid not in picked:
+        if pid in picked:
+            continue
+        if r.returncode == 1:
             picked.append(pid)
             why[pid] = "lint reported hard fails"
+            continue
+        # A lint PASS can still carry a judgment call no regex settles. Corrective
+        # negation is the one routed here (2026-11-06): two unsampled posts of the
+        # glp-1-muscle-loss pack shipped "X is not Y. It is Z" and failed brand-check
+        # once someone looked.
+        try:
+            res = json.loads(r.stdout or "{}")
+        except ValueError:
+            res = {}
+        if any(w.get("check") == "ai-tells:corrective_contrast"
+               for w in res.get("warnings", []) or []):
+            picked.append(pid)
+            why[pid] = "lint flagged corrective negation (needs a brand-check judgment)"
 
     # Two rotating picks, not one, so a clean pack still gets three LLM passes out
     # of nine: the angle-setter plus one company and one personal account. Derived

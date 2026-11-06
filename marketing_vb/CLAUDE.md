@@ -327,7 +327,7 @@
 Независимый QC (рубрика — `docs/quality-rubric.md`, отчёты — `workspace/_quality/`):
 
 - **`quality-controller`** (mvb-core, opus) оценивает артефакты по 20-балльной шкале: статьи, брифы, outbound.
-- **`post-quality-controller`** (mvb-social, sonnet) — соцпосты; вход готовым от `scripts/social_pack.py qc-prompt`; выборка 3 из 9 профилей (`qc-plan`) плюс безусловно каждый профиль, где упал линтер.
+- **`post-quality-controller`** (mvb-social, sonnet) — соцпосты; вход готовым от `scripts/social_pack.py qc-prompt`; выборка 3 из 9 профилей (`qc-plan`) плюс безусловно каждый профиль, где упал линтер или где он предупредил о corrective negation («X is not Y. It is Z», с 2026-11-06).
 - **Координатор** после каждого авто-QC дописывает в отчёт `coordinator_review`.
 - **`agent-improver`** анализирует QC + coordinator notes и предлагает правки промптов: каждые 2 недели или после 20+ артефактов.
 

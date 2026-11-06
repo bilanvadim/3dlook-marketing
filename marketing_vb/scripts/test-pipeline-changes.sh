@@ -226,6 +226,12 @@ t  "Type G limits apply to the trust FAQ"    'python3 scripts/article_lint.py wo
 t  "article limits unchanged for others"     'python3 scripts/article_lint.py $A/final.md --json --no-exit-code | python3 -c "import sys,json; g=[x for x in json.load(sys.stdin)[\"gates\"] if x[\"gate\"]==\"sentence length\"][0]; sys.exit(0 if \"article (mean <= 16\" in g[\"info\"].get(\"limits\",\"\") else 1)"'
 t  "context pack is valid yaml"              "python3 -c \"import yaml; yaml.safe_load(open('$P'))\""
 t  "every new script parses without warning" 'for f in scripts/article_lint.py scripts/bans-card.py scripts/sync-agent-copies.py; do python3 -W error::SyntaxWarning -c "import ast; ast.parse(open(\"$f\").read())" || exit 1; done'
+# ---- corrective negation split over two sentences (2026-11-06, glp-1-muscle-loss pack) --------
+# Soft in the detector; post-lint shows it as a warning and qc-plan routes the profile to review.
+t  "post: split corrective negation flagged"   'printf "For a buying team, that restraint is not weakness. It is what protects trust.\n" | python3 brand-assets/style-guides/scripts/detect-ai-tells.py --stdin --channel post | python3 -c "import sys,json; sys.exit(0 if json.load(sys.stdin).get(\"soft_hits\",{}).get(\"corrective_contrast\") else 1)"'
+tn "post: medical-device boundary licensed"     'printf "FitXpress is not a medical device. It is a measurement layer for programs.\n" | python3 brand-assets/style-guides/scripts/detect-ai-tells.py --stdin --channel post | python3 -c "import sys,json; sys.exit(0 if json.load(sys.stdin).get(\"soft_hits\",{}).get(\"corrective_contrast\") else 1)"'
+tn "post: plain negation not flagged"           'printf "Lean mass is not muscle. No scan proves which tissue changed.\n" | python3 brand-assets/style-guides/scripts/detect-ai-tells.py --stdin --channel post | python3 -c "import sys,json; sys.exit(0 if json.load(sys.stdin).get(\"soft_hits\",{}).get(\"corrective_contrast\") else 1)"'
+t  "social scripts parse without warning"      'for f in scripts/post-lint.py scripts/social_pack.py scripts/social_video.py; do python3 -W error::SyntaxWarning -c "import ast; ast.parse(open(\"$f\").read())" || exit 1; done'
 
 echo
 echo "######## $pass passed, $fail failed ########"

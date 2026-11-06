@@ -537,6 +537,13 @@ SOFT_EN = {
         r"\brather\s+than\b",
         r"\b(?:is|are|was|were|means|becomes|comes)\s+(?:a|an|the)?\s*[\w-]+(?:\s+[\w-]+){0,3},\s+not\s+(?:a|an|the)?\s*[\w-]+",
         r"\bit'?s\s+(?:about|a)\s+[\w-]+(?:\s+[\w-]+){0,3},\s+not\b",
+        # The same contrast split over two sentences: "X is not Y. It is Z." / "isn't Y.
+        # It's Z." Added 2026-11-06 after two posts of the glp-1-muscle-loss pack passed
+        # lint with it ("that restraint is not weakness. It is what protects..."). On the
+        # corpus that day: 22 hits in 167 posts and articles, all genuine, none licensed.
+        r"\b(?:(?:is|are|was|were)\s+not|['’](?:s|re)\s+not|isn['’]t|aren['’]t|wasn['’]t|weren['’]t)"
+        r"\s+(?:just\s+|only\s+|simply\s+)?(?:a\s+|an\s+|the\s+)?[\w-]+(?:\s+[\w-]+){0,4}\.\s+"
+        r"(?:it|they|this|that)(?:\s+(?:is|are|was|were)\b|['’](?:s|re)\b)",
     ],
     # terminology-guardrails.md 1.10 (Doc synced 2026-09-14) — internal content-cluster labels.
     # "bridge", "hub", "pillar", "cluster", "spoke", "supporting content" name a page's role in our
@@ -750,6 +757,8 @@ LICENSES = {
     # 2026-09-18): "HIPAA is a regulatory framework, not a certification."
     "corrective_contrast": [
         r"\bnot\s+a\s+(?:product\s+)?certification\b",
+        # the prescribed boundary sentence (CLAUDE.md §6), whatever follows it
+        r"\bnot\s+a\s+medical\s+device\b",
     ],
 }
 
@@ -1174,6 +1183,10 @@ def analyze(text: str, lang: str, channel_name: str, profile: str = None) -> dic
         "hard_fails": hard_fails,
         "house_rule_violations": house,
         "markers_by_category": dict(sorted(markers_by_category.items(), key=lambda x: -x[1])),
+        # Per-hit detail for the SOFT categories, so a caller can surface the ones it
+        # cares about (post-lint shows corrective_contrast as a warning, 2026-11-06).
+        "soft_hits": {cat: [{"match": mt, "line": ln, "excerpt": ex} for mt, ln, ex in hits]
+                      for cat, hits in soft_hits.items() if hits},
         "style_metrics": sm,
         "top_offenders": top,
     }

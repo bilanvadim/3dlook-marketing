@@ -436,6 +436,15 @@ def lint(path: str, source_text: str = "", source_slug: str = ""):
     for v in det.get("house_rule_violations", []) or []:
         t = str(v)
         (H if re.search(r"hashtag|emoji", t, re.I) else W)("ai-tells:house_rule", t[:160])
+    # Corrective negation ("X, not Y" / "X is not Y. It is Z") is SOFT in the detector:
+    # the terminology Doc licenses it for a real product, clinical, legal or regulatory
+    # boundary, and no regex tells a boundary from a slight. Until 2026-11-06 post-lint
+    # dropped soft hits entirely, so the shape shipped in 21 posts unseen. Now it is a
+    # warning here, and `social_pack.py qc-plan` routes the profile to brand-check + QC.
+    for h in (det.get("soft_hits") or {}).get("corrective_contrast", []):
+        W("ai-tells:corrective_contrast",
+          f"{h.get('excerpt', '')[:140]} — judgment: keep only for a product/clinical/"
+          f"legal/regulatory boundary, otherwise state the approach positively")
 
     return {
         "post": rel,

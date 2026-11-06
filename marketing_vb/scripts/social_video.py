@@ -57,8 +57,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 PROJ = os.path.dirname(HERE)                                  # …/marketing_vb
 sys.path.insert(0, HERE)
 from social_pack import (                                     # noqa: E402
-    extract_body, pack_meta, pack_profiles, pack_root, published_url,
-    split_frontmatter,
+    HUMAN_END, HUMAN_START, extract_body, pack_meta, pack_profiles, pack_root,
+    published_url, split_frontmatter,
 )
 
 TEMPLATE = os.path.join(PROJ, "brand-assets", "video", "stat-reel.html")
@@ -203,6 +203,27 @@ def load_spec(slug: str):
 # prompt
 # ---------------------------------------------------------------------------
 
+def brief_claims(slug: str) -> str:
+    """The pack's "Claims discipline" section from `_run-brief.md` (HUMAN block), or "".
+
+    Added 2026-11-06: the video prompt carried only the final posts, so a rule that lives
+    in the brief and not in any single post ("quote BOTH lean-mass ranges or neither")
+    never reached the drafter, and the glp-1-muscle-loss video put "40-60%" on screen
+    alone. The posts obeyed it because their prompt includes the brief; now this one does."""
+    path = os.path.join(pack_root(slug), "_run-brief.md")
+    if not os.path.exists(path):
+        return ""
+    text = open(path, encoding="utf-8").read()
+    m = re.search(re.escape(HUMAN_START) + r"(.*?)" + re.escape(HUMAN_END), text, re.S)
+    if not m:
+        return ""
+    sec = re.search(r"^## Claims discipline[^\n]*\n(.*?)(?=^## |\Z)", m.group(1), re.S | re.M)
+    body = sec.group(1).strip() if sec else ""
+    if not body or body.startswith("_Fill in"):
+        return ""                               # empty template: nothing to pass on
+    return body
+
+
 def build_prompt(slug: str):
     posts = final_posts(slug)
     if not posts:
@@ -271,6 +292,15 @@ Write exactly this shape to `{rel_spec}` (UTF-8 JSON, no comments, no trailing t
 `from_profiles` lists the posts whose wording you used. When the file is saved, reply
 with one line: the hook, and which profile's angle it comes from.
 """]
+    claims = brief_claims(slug)
+    if claims:
+        parts.append(
+            "## Claims discipline for this pack (from the run brief)\n\n"
+            "The posts below were written under these rules. They bind the video too, and "
+            "where a post and this section differ, this section wins. A figure the section "
+            "says to give together with another (both ends of a finding, a boundary, a "
+            "qualifier) goes on screen together or not at all: a silent card cannot add the "
+            "context a post had around it.\n\n" + claims + "\n")
     if aeo.get("question"):
         parts.append(f"## The question this pack answers\n\n{aeo['question']}\n")
     parts.append("## The final posts\n")
