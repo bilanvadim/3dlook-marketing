@@ -1,0 +1,88 @@
+{
+ "generated": "2026-11-07T05:40:24+00:00",
+ "items": [
+  {
+   "id": "dfd75ce7-496f-4a38-8b62-12aa13c978ea",
+   "title": "CMS Finalizes 2027 Physician Fee Schedule with Reforms to Value-Based Care and Medicare Payments",
+   "date": "2026-11-06",
+   "tags": [
+    "Government",
+    "Medicare and Medicaid",
+    "Value Based Care (VBC)",
+    "Health System & Health Provider",
+    "Policy and Regulation"
+   ],
+   "url": "https://hlth.com/insights/news/cms-finalizes-2027-physician-fee-schedule-with-reforms-to-value-based-care-and-medicare-payments"
+  },
+  {
+   "id": "1c63cdf5-bd30-48a2-ab66-87a9023325b5",
+   "title": "Ellipsis Health Acquires Kouper Health to Integrate AI Voice Technology with Care Navigation",
+   "date": "2026-11-06",
+   "tags": [
+    "Investments and Partnerships",
+    "Care Coordination / Navigation / Care Access",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/ellipsis-health-acquires-kouper-health-to-integrate-ai-voice-technology-with-care-navigation"
+  },
+  {
+   "id": "ab6ab97c-a282-4317-a8f3-f34e2eff23da",
+   "title": "Chai Discovery and Roche Partner to Advance AI-Driven Drug Discovery",
+   "date": "2026-11-06",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Investments and Partnerships",
+    "Drug Discovery / Pharma / Biotech",
+    "Startup",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/chai-discovery-and-roche-partner-to-advance-ai-driven-drug-discovery"
+  }
+ ],
+ "analyses": {
+  "dfd75ce7-496f-4a38-8b62-12aa13c978ea": {
+   "id": "dfd75ce7-496f-4a38-8b62-12aa13c978ea",
+   "score": 1,
+   "segment": "—",
+   "what": "CMS затвердив Medicare Physician Fee Schedule на 2027 рік: поступове згортання MIPS, нові MVP для діабету, гіпертензії та hospitalist care, більше гнучкості для ACO. Також з'являються шляхи оплати health and well-being coaching і shared medical appointments.",
+   "why": "Загальна політика Medicare без згадки ожиріння, BMI чи вимірювань тіла, тому конкретного акаунта чи кампанії немає. Максимум пост для US про оплату коучингу та звітність за результатами.",
+   "play": "content_only",
+   "companies": [
+    "Centers for Medicare & Medicaid Services",
+    "CMS Innovation Center"
+   ],
+   "_date": "2026-11-06"
+  },
+  "1c63cdf5-bd30-48a2-ab66-87a9023325b5": {
+   "id": "1c63cdf5-bd30-48a2-ab66-87a9023325b5",
+   "score": 0,
+   "segment": "—",
+   "what": "Ellipsis Health (AI voice agent Sage з vocal biomarkers для психічного здоров'я) купила Kouper Health (AI care navigation, EHR-інтеграції, longitudinal patient maps для health systems).",
+   "why": "Голосовий AI для психічного здоров'я та навігація пацієнтів у лікарнях не пов'язані з даними про тіло. До того ж це свіже поглинання, що за ICP є критерієм виключення.",
+   "play": "none",
+   "companies": [
+    "Ellipsis Health",
+    "Kouper Health",
+    "PromptWell",
+    "Cigna International"
+   ],
+   "_date": "2026-11-06"
+  },
+  "ab6ab97c-a282-4317-a8f3-f34e2eff23da": {
+   "id": "ab6ab97c-a282-4317-a8f3-f34e2eff23da",
+   "score": 0,
+   "segment": "—",
+   "what": "Chai Discovery уклала угоду з Roche: її AI-моделі для дизайну білкових молекул застосовуватимуть у кількох програмах розробки ліків Roche.",
+   "why": "Це AI для розробки ліків, з вимірюваннями тіла й FitXpress не пов'язано.",
+   "play": "none",
+   "companies": [
+    "Chai Discovery",
+    "Roche"
+   ],
+   "_date": "2026-11-06"
+  }
+ },
+ "posts": []
+}
