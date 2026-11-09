@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-05",
+  "last_updated": "2026-11-09",
   "companies": {
     "safariland": {
       "covered_by_profile": null,
@@ -1764,9 +1764,9 @@
     "homerton-healthcare-nhs-foundation-trust": {
       "display_name": "Homerton Healthcare NHS Foundation Trust",
       "covered_by_profile": "katerina",
-      "campaign_id": "2026-10-06-uk-weight-management",
+      "campaign_id": "2026-10-22-uk-insurance-underwriting",
       "product": "fitxpress",
-      "date": "2026-10-06",
+      "date": "2026-10-22",
       "status": "active"
     },
     "lanarkshire-medical": {
@@ -3355,6 +3355,14 @@
       "campaign_id": "2026-10-29-us-insurance-underwriting",
       "product": "fitxpress",
       "date": "2026-10-29",
+      "status": "active"
+    },
+    "iress-uk": {
+      "display_name": "Iress UK",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-10-22-uk-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-10-22",
       "status": "active"
     }
   }

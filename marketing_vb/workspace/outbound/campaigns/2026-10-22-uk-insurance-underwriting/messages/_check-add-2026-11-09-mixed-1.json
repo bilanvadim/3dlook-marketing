@@ -1,0 +1,40 @@
+{
+ "campaign": "2026-10-22-uk-insurance-underwriting",
+ "checked": 33,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "add-2026-11-09-mixed-1",
+ "generated": "2026-11-09T13:29:55",
+ "hard": [],
+ "soft": [
+  [
+   "near-duplicate sentence",
+   "Zurich UK: mike-lytheer-b552741a / pete-sanderson",
+   "«fitxpress takes two photos in the application and…»"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×14",
+   "«a flag when the gap…»: ali-law-b65291, chris-walker-89864b50, daragh-b-8075581a, emma-coleman-072400219"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×11",
+   "«a smart scales weight estimate…»: hannah-leech-4244846a, ianmmcnamara, kristiansc, martyn-luke-22623548"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«at the point of sale…»: alan-dott-b28527131, chris-walker-89864b50, nick-telfer-191b2419, paulrmburu"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«in the application a smart…»: emma-coleman-072400219, martyn-luke-22623548, paulrmburu, richardedwardpurcell"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«a threshold the insurer sets…»: charlesking001, himal-patel-0020901, paul-reddick-154934a"
+  ]
+ ]
+}

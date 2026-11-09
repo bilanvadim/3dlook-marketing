@@ -1,0 +1,25 @@
+{
+ "campaign": "2026-10-22-uk-insurance-underwriting",
+ "checked": 10,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "add-2026-11-09-mixed-2",
+ "generated": "2026-11-09T13:24:25",
+ "hard": [],
+ "soft": [
+  [
+   "pricing word",
+   "daniel-simpson-340ab860 M1",
+   "Hi Daniel, Your earlier roles in product and insurance pricing give you a view of evidence cost and loadings…"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×10",
+   "«a smart scales weight estimate…»: damion-m-41537a21, daniel-simpson-340ab860, darren-wing-05376920, david-brownlow-ca-chartered-insurer-dippfs-b285b116"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«the application a smart scales…»: damion-m-41537a21, darren-wing-05376920, val-brookes-05a32914"
+  ]
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "campaign": "2026-10-22-uk-insurance-underwriting",
+ "checked": 25,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "add-2026-11-09-aviva",
+ "generated": "2026-11-09T13:27:35",
+ "hard": [],
+ "soft": [
+  [
+   "near-duplicate sentence",
+   "Aviva: tasneem-harnekar / alistair-hargreaves-aaa09741b",
+   "«fitxpress takes 2 photos, estimates weight with s…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Aviva: ashley-stevens-a07701ba / kelly-mhasal-b22b6129",
+   "«i can take you through both on a call: katerina»"
+  ],
+  [
+   "sentence opening repeated",
+   "Aviva ×3",
+   "«a smart scales weight estimate…»: angelaluget, david-c-26bb0418, msasaki"
+  ],
+  [
+   "sentence opening repeated",
+   "Aviva ×3",
+   "«fitxpress asks for 2 photos…»: alistair-hargreaves-aaa09741b, louise-m-b23b3116, nathan-tomlinson-27aa0881"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×10",
+   "«a smart scales weight estimate…»: amanda-weston-b9a81146, angelaluget, brian-spinks-1b665a18, christhompsonx"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«a flag when the gap…»: ashley-stevens-a07701ba, david-c-26bb0418, gary-williams-93932815, msasaki"
+  ]
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "campaign": "2026-10-22-uk-insurance-underwriting",
+ "checked": 20,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "add-2026-11-09-royal-london",
+ "generated": "2026-11-09T13:29:54",
+ "hard": [],
+ "soft": [
+  [
+   "pricing word",
+   "russellwjohnston M1",
+   "Hi Russell, Pricing models and ML-Ops are the two threads in your background, and both meet a vendor estimate…"
+  ],
+  [
+   "pricing word",
+   "vikki-larkin-b850a8aa M1",
+   "Hi Vikki, The build loadings you work with as a protection pricing actuary at Royal London start from the wei…"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: sarah-farquharson-a6066a34 / finlay-boyd-99a63539",
+   "«the flag goes up when that gap passes a threshold…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: sarah-farquharson-a6066a34 / sophie-hadfield-718b22111",
+   "«the flag goes up when that gap passes a threshold…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: lee-hope-2086a73 / chris-miller-uk",
+   "«the flag depends on whether the gap between decla…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: daniel-thomson-uk / maureen-duckworth-1ba98623",
+   "«a flag appears when the gap between declared weig…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: daniel-thomson-uk / daniel-smith-64507433",
+   "«a flag appears when the gap between declared weig…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Royal London: julieclapperton / richard-basham-jones-7678a617",
+   "«i would be glad to hear the adviser view on a cal…»"
+  ],
+  [
+   "sentence opening repeated",
+   "Royal London ×4",
+   "«2 photos in the application…»: phil-quarmby-b41b4b71, ritwik-samsi-11442b11, vicki-wharton, vikki-larkin-b850a8aa"
+  ],
+  [
+   "sentence opening repeated",
+   "Royal London ×3",
+   "«fitxpress takes 2 photos at…»: daniel-smith-64507433, lee-hope-2086a73, sophie-hadfield-718b22111"
+  ],
+  [
+   "M1 product sentence shared",
+   "Royal London ×2",
+   "«x takes 2 photos at application…»: daniel-smith-64507433, sophie-hadfield-718b22111"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«a smart scales weight estimate…»: daniel-thomson-uk, phil-quarmby-b41b4b71, ritwik-samsi-11442b11, russellwjohnston"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«a flag when the gap…»: etienneburger, phil-quarmby-b41b4b71, ritwik-samsi-11442b11"
+  ]
+ ]
+}

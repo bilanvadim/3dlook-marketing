@@ -1,0 +1,50 @@
+{
+ "campaign": "2026-10-22-uk-insurance-underwriting",
+ "checked": 20,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "add-2026-11-09-legal-general",
+ "generated": "2026-11-09T13:31:54",
+ "hard": [],
+ "soft": [
+  [
+   "pricing word",
+   "emese-simoradik-msc-asa-cera M1",
+   "Hi Emese, A product director with an actuary's training reads a new application step as both a journey change…"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: david-stewart-080a6435 / steven-morrison-90425586",
+   "«fitxpress would supply one: from 2 photos comes a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: david-stewart-080a6435 / sarah-holifield-454023211",
+   "«fitxpress would supply one: from 2 photos comes a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: steven-morrison-90425586 / andy-bergin-389278109",
+   "«fitxpress would add a step there, taking 2 photos…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: steven-morrison-90425586 / sarah-holifield-454023211",
+   "«fitxpress would add a step there, taking 2 photos…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Legal & General: andy-bergin-389278109 / matthew-wilton-49408544",
+   "«i can talk through the integration points on a ca…»"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×9",
+   "«a smart scales weight estimate…»: choi-justin, david-stewart-080a6435, donna-cowell-insurance, emese-simoradik-msc-asa-cera"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«at the point of sale…»: 74lancater, james-mcmillan-b2795b59, martin-todd-755a0420, simonsheldonconsulting"
+  ]
+ ]
+}

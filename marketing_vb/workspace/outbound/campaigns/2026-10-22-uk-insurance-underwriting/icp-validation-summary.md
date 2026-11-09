@@ -554,3 +554,127 @@ Not proposed: GI 104, wealth/pensions 27, distribution ~12, governance/HR/financ
 ## Skipped pools (script)
 
 `skipped-detail.md`: 1123 not sent. Pools with a proposed angle are in each batch section above; add by name with `outbound_pack.py promote --names "…" --angle … --pool …`.
+
+## Widening 2026-11-09 (Vadim «давай розширемо… з наявних списків»)
+
+Rules: hypothesis.md «Vadim's decisions 2026-11-09». Source: people already in people-raw.csv (no new pull, no credits). 3 parallel icp-validator batches (Aviva / L&G / rest) over 125 WEAK + 195 FAIL rows with transformation, strategy, innovation, data, AI or architecture titles; coordinator overrides: Kate Smalley stays FAIL (Group Tech's own transformation), One Piccadilly Gardens FAIL (a building), Matt Rushbrooke, Tom Craven, Kevin Milne WEAK (individual contributors), two of four UnderwriteMe engineering directors held (Simon Coutts, Sergey Kobzar), Wayne Lancaster lane medical → referral.
+
+**Added: 108** · SEND 176 → 284 · WEAK 125 → 28.
+
+By source: WEAK review 75, transformation/strategy 17, data/AI/architecture 16.
+By tier and lane: P3 referral 35, P3 technical-integration 24, P3 proposition 15, P3 reinsurance 8, P3 underwriting 6, P2 underwriting 6, P2 proposition 5, P3 partnership 3, P2 reinsurance 2, P1 reinsurance 2, P1 underwriting 1, P1 medical 1.
+
+| Company | Name | Title | P | Lane | Source |
+|---|---|---|---|---|---|
+| Aviva | Dan Tinson | Head of Protection Reinsurance | 2 | proposition | WEAK review |
+| Aviva | Adrian Nye | Health & Protection Procurement and Outsourcing Director | 3 | referral | WEAK review |
+| Aviva | Alistair Hargreaves | Director of Customer Strategy | 3 | referral | transformation/strategy |
+| Aviva | Amanda Weston | Head of Partnerships | 3 | referral | WEAK review |
+| Aviva | Angela Luget | Chief AI Officer | 3 | technical-integration | data/AI/architecture |
+| Aviva | Ashley Murray | Head of Retail Propositions & Change | 3 | proposition | WEAK review |
+| Aviva | Ashley Stevens | Global Head of Transformation | 3 | referral | WEAK review |
+| Aviva | Bharat Aheer | Head of Customer & Transformation | 3 | referral | transformation/strategy |
+| Aviva | Brian Spinks | Head of New BusinessDevelopment, Propositions & Insights | 3 | proposition | WEAK review |
+| Aviva | Chris Thompson | Head of Artificial Intelligence | 3 | technical-integration | data/AI/architecture |
+| Aviva | Dan Turner | Head of Change | 3 | proposition | WEAK review |
+| Aviva | David C | Head of Risk Business Partnering - Aviva Plc - UK Life, Health, Protec | 3 | referral | WEAK review |
+| Aviva | David Montgomery | Chief Operating Officer - IWR | 3 | referral | WEAK review |
+| Aviva | Gary Williams | Director of Product and Undewriting | 3 | underwriting | WEAK review |
+| Aviva | James Appleton | Head of Innovation Delivery | 3 | referral | WEAK review |
+| Aviva | Jen Hobbs | Head of Digital Product (Interim) | 3 | proposition | WEAK review |
+| Aviva | Juan Gómez-Reino Garrido | CIO Insurance Wealth Retirement and Group Deputy CIO | 3 | technical-integration | WEAK review |
+| Aviva | Kelly Mhasal | Interim Head of Governance & Assurance - Protection | 3 | referral | WEAK review |
+| Aviva | Louise M. | Head of Propositions | 3 | proposition | WEAK review |
+| Aviva | Maria C. | Head of Digital Product | 3 | proposition | WEAK review |
+| Aviva | Megumi Takenoshita | Group Strategy Director | 3 | referral | transformation/strategy |
+| Aviva | Michael Sasaki | IT Director IWR | 3 | technical-integration | WEAK review |
+| Aviva | Nathan Tomlinson | Group Strategy Principal (Head of Group Strategy) | 3 | referral | transformation/strategy |
+| Aviva | Stuart McKellar | Data Protection Officer | 3 | technical-integration | WEAK review |
+| Aviva | Tasneem Harnekar | Head of Transformation | 3 | referral | transformation/strategy |
+| British Friendly | Debbie Elms | Head of Underwriting & Claims | 1 | underwriting | WEAK review |
+| British Friendly | Nic Herbert | Head of Techology & Change | 3 | technical-integration | WEAK review |
+| Hannover Re UK Life Branch | David Brownlow | Global Head of Life & Health Data Operations & Solutions | 3 | reinsurance | WEAK review |
+| Holloway Friendly | Darren Wing | Head of IT and Change | 3 | technical-integration | WEAK review |
+| Iress UK | Gideon Cheok | Head of Product Design (UK & RSA) | 3 | partnership | WEAK review |
+| LV= | Martyn Luke | Head of Protection Change | 2 | proposition | WEAK review |
+| LV= | Adam Davison | Head of Distribution Quality - Protection | 3 | referral | WEAK review |
+| LV= | Annabel Banks | Head of Data | 3 | technical-integration | data/AI/architecture |
+| LV= | Chris Walker | Strategy Director | 3 | referral | transformation/strategy |
+| LV= | Jonathan Manning | Head of Change (S&R) | 3 | proposition | WEAK review |
+| LV= | Stephanie Richards | Head of Marketing (Protection) | 3 | referral | WEAK review |
+| Legal & General | Donna Cowell | Head of Reinsurance, Protection | 2 | proposition | WEAK review |
+| Legal & General | Matthew Wilton | Underwriting Development | 2 | underwriting | WEAK review |
+| Legal & General | Richard Whaley | Development Underwriter | 2 | underwriting | WEAK review |
+| Legal & General | Andy Bergin | Head of Product and Delivery | 3 | proposition | WEAK review |
+| Legal & General | Cheryl Hinton | Chief Technology Officer Innovation | 3 | referral | WEAK review |
+| Legal & General | David Stewart | Head of Group Data Science | 3 | technical-integration | data/AI/architecture |
+| Legal & General | Emese Simoradik | Product Director | 3 | proposition | WEAK review |
+| Legal & General | James Jarman | Chief Data and Analytics Officer, Retail | 3 | technical-integration | data/AI/architecture |
+| Legal & General | James McMillan | Head of Group Strategy | 3 | referral | transformation/strategy |
+| Legal & General | Jonathan Saggers | Head of Product and Commerical Risk | 3 | referral | WEAK review |
+| Legal & General | Judit F. | Head of IT & InfoSec (LGRS) | 3 | technical-integration | WEAK review |
+| Legal & General | Justin Choi | Group Head, Digital Channels & Innovation | 3 | referral | WEAK review |
+| Legal & General | Kannan Sundarraj | IT & Transformation Director | 3 | referral | transformation/strategy |
+| Legal & General | Mark Bird | Chief Data Officer (Group Functions) | 3 | technical-integration | data/AI/architecture |
+| Legal & General | Martin Todd | Head of Strategy, Retail | 3 | referral | transformation/strategy |
+| Legal & General | Prakash Rautaray | IT & Transformation Director | 3 | referral | transformation/strategy |
+| Legal & General | Sarah Holifield | Customer Underwriting Team Manager | 3 | underwriting | WEAK review |
+| Legal & General | Simon Sheldon | Transformation Director | 3 | referral | transformation/strategy |
+| Legal & General | Steven Morrison | Head Of Product Management | 3 | proposition | WEAK review |
+| Legal & General | Wayne Lancaster | Head Of Clinical Operations | 3 | referral | WEAK review |
+| Pacific Life Re | Alan Dott | Director of Underwriting | 1 | reinsurance | WEAK review |
+| Pacific Life Re | Paul Reddick | Head of Medical Underwriting & Claims | 1 | reinsurance | WEAK review |
+| Pacific Life Re | Richard Purcell | Client Solutions Director | 2 | reinsurance | WEAK review |
+| Pacific Life Re | Ben Acheson-Gray | AVP, Technical Services, Europe & North America | 3 | reinsurance | WEAK review |
+| Pacific Life Re | Charles King | Head of Digital Process | 3 | reinsurance | WEAK review |
+| Pacific Life Re | Daragh Brady | Head of Risk, Global Protection & Capital Solutions | 3 | reinsurance | WEAK review |
+| Pacific Life Re | Hannah Rothery | Director of Strategy, Division | 3 | reinsurance | transformation/strategy |
+| Pacific Life Re | Himal Patel | Head of Enterprise Architecture Pacific Life Re | 3 | reinsurance | data/AI/architecture |
+| Pacific Life Re | Ian McNamara | Global Head of Data | 3 | reinsurance | data/AI/architecture |
+| Pacific Life Re | Matthew Barclay | Director, Client Solutions | 3 | reinsurance | WEAK review |
+| Royal London | Daniel Smith | Underwriting Philosophy Developer | 2 | underwriting | WEAK review |
+| Royal London | Charul Scott | Head of Architecture | 3 | technical-integration | data/AI/architecture |
+| Royal London | Chris Miller | Group Chief Data & AI Officer | 3 | technical-integration | data/AI/architecture |
+| Royal London | Daniel T. | Head of Proposition | 3 | proposition | WEAK review |
+| Royal London | Etienne B. | Group Strategy Director | 3 | referral | transformation/strategy |
+| Royal London | Finlay Boyd | Head of Commercial Insight / Planning / E2E Transformation | 3 | referral | WEAK review |
+| Royal London | Julie Clapperton | Head of Strategic Development | 3 | referral | transformation/strategy |
+| Royal London | Lee Hope | Head of Architecture | 3 | technical-integration | data/AI/architecture |
+| Royal London | Lee Wilson | Group Head of Data & AI Strategy | 3 | technical-integration | data/AI/architecture |
+| Royal London | Maureen Duckworth | Head of Product Management | 3 | proposition | WEAK review |
+| Royal London | Minoka Radhakrishnan | Head of Strategy | 3 | referral | transformation/strategy |
+| Royal London | Phil Quarmby | Head of Data Transformation | 3 | referral | transformation/strategy |
+| Royal London | Richard Basham-Jones | Customer Service Director - Pensions Protection & Customer Relations | 3 | referral | WEAK review |
+| Royal London | Ritwik Samsi | Group Corporate Development Director | 3 | referral | WEAK review |
+| Royal London | Russell Johnston | Head of Data Science & Advanced Analytics | 3 | technical-integration | data/AI/architecture |
+| Royal London | Sarah Farquharson | Head of Transformation and Performance | 3 | referral | WEAK review |
+| Royal London | Shikha Merchant | Digital Principal Architect(Director) | 3 | technical-integration | data/AI/architecture |
+| Royal London | Sophie Hadfield | Head of Proposition | 3 | proposition | WEAK review |
+| Royal London | Vicki Wharton | Group Customer Operations Director | 3 | referral | WEAK review |
+| Royal London | Vikki Larkin | Protection Pricing Actuary | 3 | proposition | WEAK review |
+| SCOR UK | Emma Denby | Underwriting Innovation & Data Strategy Manager | 2 | reinsurance | WEAK review |
+| Scottish Widows | Frances Heggie | Senior Underwriting Strategy Manager | 2 | underwriting | WEAK review |
+| Shepherds Friendly | Daniel Simpson | Chief Commercial Officer | 2 | proposition | WEAK review |
+| Shepherds Friendly | Damion M. | Head of Data | 3 | technical-integration | data/AI/architecture |
+| Shepherds Friendly | Val Brookes | Claims and Underwriting Manager | 3 | underwriting | WEAK review |
+| The Exeter | Ali Law | Chief Information Officer | 3 | technical-integration | WEAK review |
+| The Exeter | Rob Viant | Head of Architecture and Strategy | 3 | technical-integration | data/AI/architecture |
+| The Exeter | Simon Trowbridge | Head of Change | 3 | referral | transformation/strategy |
+| UnderwriteMe | Alan Pich | Director of Platform Engineering | 3 | technical-integration | WEAK review |
+| UnderwriteMe | Kristian Samuel-Camps | Director of Product Operations | 3 | partnership | WEAK review |
+| UnderwriteMe | Paul Mburu | Head of Strategy | 3 | partnership | WEAK review |
+| UnderwriteMe | Will Hutchinson | Director of Engineering | 3 | technical-integration | WEAK review |
+| VitalityLife | Harpreet Sarna | Chief Medical Officer | 1 | medical | WEAK review |
+| VitalityLife | Neil Hartigan | Head of Underwriting & Claims Quality | 2 | underwriting | WEAK review |
+| VitalityLife | Nick Telfer | Head of Protection Specialists | 2 | proposition | WEAK review |
+| VitalityLife | Dave Roberts | Underwriting Manager | 3 | underwriting | WEAK review |
+| VitalityLife | Hannah Leech | Senior Underwriting Manager | 3 | underwriting | WEAK review |
+| Zurich UK | Emma Coleman | Life Development Underwriter | 2 | underwriting | WEAK review |
+| Zurich UK | Mike Lytheer | Data Protection Officer | 3 | technical-integration | WEAK review |
+| Zurich UK | Pete Sanderson | Head of Operations - Retail Protection | 3 | proposition | WEAK review |
+| Zurich UK | Sally Watford | Head of Underwriting Operations | 3 | underwriting | WEAK review |
+| Zurich UK | Simon Guest | Head of Customer Solutions & Partnerships, Global Life Protection | 3 | referral | WEAK review |
+
+**Borderline, for Vadim:** Alan Dott and Paul Reddick (Pacific Life Re, P1, empty profiles: title only); Annabel Banks (LV= Head of Data, GI-only past employers); Sally Watford (Zurich Head of UW Operations, GI-looking history); Mark Bird (L&G CDO Group Functions, read as group-wide); Simon Sheldon (L&G Transformation Director, passed on life/reinsurance history); Wayne Lancaster (L&G Head of Clinical Operations, may sit in group protection); Adrian Nye (Aviva H&P procurement, headline says Aviva Health); David Brownlow (Hannover Re global L&H data operations, kept: ex-CFO of the UK Life Branch). Kept out on purpose: Laura Mason (L&G Retail CEO, multi-line), Robert Morrison (Aviva CUO, empty profile), Yash Gupta (L&G Group Protection = anti-case), Warren Copp (retired from Pacific Life Re).
+
+Messages: 5 message-sequencer batches (add-2026-11-09-*), grids first, existing company messages given as context. Opus QC 12/20 (workspace/_quality/outbound/2026-11-09-message-sequencer-uk-insurance-underwriting-widening.md) → one fix round from per-batch fix files + coordinator line edits → gate and strict-gate diagnostic 0 hard for all 108, every pair read by the coordinator. The campaign gate keeps 6 hard «let» failures in 10-26 messages that were already sent (rule added 2026-11-02); they are not touched. Import: closelyhq-import-widening-2026-11-09.csv (108 rows).
