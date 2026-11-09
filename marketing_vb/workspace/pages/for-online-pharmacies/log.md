@@ -9,3 +9,6 @@
 - Ahrefs (~1,000 units): no measured buyer demand for pharmacy phrases in GB or US (see `gate-reports.md`).
 - Phase 0 intake, G-I (pass: standing FX waiver, demand note) and G-A written in `gate-reports.md`. Stopped at the G-A
   checkpoint: URL, angle, H1 and who drafts are Vadim's call.
+- 2026-11-09, Vadim's reply to the checkpoint: «ок, коміт та пуш» (typed in the Latin layout). Read as OK on the URL
+  (`/for-online-pharmacies/` → 301 `/fitxpress/for-online-pharmacies/`) and the angle. Still open: H1 (A or B) and
+  who drafts (Nika or page-builder).

@@ -77,4 +77,4 @@ medical device"; never "meets GPhC requirements" or "GPhC compliant".
 
 **Title draft:** "Weight & BMI Verification for Online Pharmacies | FitXpress" (59).
 
-**Checkpoint (Vadim): URL, angle, H1, and who drafts (Nika as on other use cases, or page-builder here).**
+**Checkpoint (Vadim): URL, angle, H1, and who drafts (Nika as on other use cases, or page-builder here).** 2026-11-09: «ок» → URL and angle approved; H1 and drafter still open.
