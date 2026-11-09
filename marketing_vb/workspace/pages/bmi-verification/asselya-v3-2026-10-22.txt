@@ -1,0 +1,366 @@
+Remote BMI Verification & Smart Scales | FitXpress by 3DLOOK
+
+Skip to content
+
+LANDING PAGE MOCKUP · Intended URL: 3dlook.ai/for-bmi-verification/
+
+[IMG alt='3DLOOK']
+
+How it works
+
+Use cases
+
+Capture controls
+
+FAQ
+
+Request a demoDemo ↗
+
+Menu
+
+FitXpress · BMI verification
+
+[H1] Remote BMI verification
+from two guided photos.
+
+Cross-check self-reported weight with a two-photo scan. FitXpress Smart Scales generates predicted weight and calculates BMI using supplied height, giving your team additional evidence for review.
+
+Request a demo ↗
+
+See how it works ↓
+
+Two guided photosResults within 45 seconds¹Web & mobile integration
+
+FitXpress provides supporting body data. Eligibility, prescribing, and underwriting decisions remain with your designated professionals.
+
+LIVE CAPTURE · NO PHOTO UPLOADS [IMG alt='FitXpress front and side capture with green pose-alignment markers']
+Capture in your app. Review in your workflow.
+Two guided photos → predicted weight → calculated BMI
+
+Selected companies
+using FitXpress
+
+[IMG alt='Burlington Medical'] [IMG alt='Verv'] [IMG alt='MagicFit'] [IMG alt='Healthyr'] [IMG alt='Coredirection']
+
+FitXpress customers across use cases. Logos do not imply adoption of BMI verification or Smart Scales.
+
+Additional evidence for remote review
+
+[H2] Cross-check reported weight
+before your team decides.
+
+Remote intake often relies on a person’s reported weight. A discrepancy may require additional evidence before a pharmacy, care team, or insurer can complete review.
+
+FitXpress adds a scan-derived weight estimate to that process. Your team determines how supplied height is verified, what differences require attention, and when a calibrated measurement is needed. Eligibility, prescribing, and underwriting remain with the responsible professionals.
+
+How it works
+
+[H2] From guided capture
+to your review process.
+
+Embed the capture step in your existing app or web experience.
+
+GUIDED FRONT + SIDE CAPTURE [IMG alt='FitXpress front and side capture with green pose-alignment markers']
+Real-Time Pose Validation (RTPV) checks positioning before capture can continue.
+
+01
+
+[H3] Provide inputs and capture live
+
+Collect profile inputs, supplied height, and self-reported weight. Users take front and side photos inside the guided capture flow. Existing photos cannot be uploaded.
+
+02
+
+[H3] Generate and compare results
+
+Smart Scales estimates weight from the photos without a connected scale. BMI uses supplied height. Your system can compare predicted and reported values using the same height.
+
+03
+
+[H3] Route for review
+
+Your system applies your rules, routes discrepancies to designated reviewers, and records decisions. Define an assisted or alternative route for people who cannot scan.
+
+What your team receives
+
+[H2] Weight and BMI,
+ready for your review process.
+
+Separate FitXpress outputs from the comparison and routing your team configures.
+
+01
+
+[H3] Predicted weight
+
+Smart Scales provides a software-generated weight estimate from two guided photos.
+
+02
+
+[H3] BMI using supplied height
+
+BMI = weight in kilograms ÷ height in meters². Height is an input; FitXpress does not independently measure it in this flow.
+
+03
+
+[H3] Your comparison and routing
+
+Your system compares reported and predicted values, displays differences, and applies review rules. Confirm applicable capture-quality information during integration.
+
+✳ FitXpress / Review workspaceCapture completed
+
+[H3] BMI cross-check
+
+ILLUSTRATIVE DATA · NOT A PATIENT RECORD
+
+Metric
+
+Imperial
+
+✓ Front + side photos✓ Pose requirements met
+
+Self-reported weight78.0kg
+Calculated BMI26.1
+
+Smart Scales predicted weight84.0kg
+Calculated BMI28.1
+
+Same supplied height for both calculations173 cm
+
+!
+Difference exceeds example threshold
++7.7% weight difference · Route to designated reviewer
+
+Try an example:
+Above threshold
+
+Within threshold
+
+Example threshold: 5%. Your team defines thresholds using model error, intended use, and review requirements. A mismatch does not establish fraud.
+
+Concept interface showing how your team could present scan outputs.
+
+Capture quality & anti-fraud support
+
+[H2] Live capture.
+No photo uploads.
+
+Combine in-session capture, quality information, and defined review rules. No single check establishes identity or excludes every manipulation attempt.
+
+[H3] Live capture is required
+
+Users must take both photos live inside the standard capture flow. Uploading existing photos from a camera roll or file is not supported. This removes the standard route for submitting previously saved or edited photos.
+
+[H3] Pose and clothing information
+
+RTPV requires alignment checks.
+Clothing-related flags support review
+; the Clothing Detector does not automatically request a clothing change or rescan.
+
+[H3] Discrepancy review
+
+Compare reported and predicted values alongside capture-quality information. Account for expected model error before setting an escalation threshold.
+
+[H3] Prompted-action liveness Coming soon
+
+A prompted action, such as lifting a hand, is planned as an additional capture check. Confirm release timing and supported integrations with 3DLOOK.
+
+Choose evidence for your process
+
+[H2] How the methods compare.
+
+| Method
+| Data source & user requirements
+| Output & appropriate use
+
+| Self-report
+| Person enters weight and height.
+| Reported values and calculated BMI; no independent weight cross-check.
+
+| FitXpress Smart Scales
+| Two live guided photos and required profile inputs, including supplied height.
+| Predicted weight and calculated BMI; additional evidence for remote review.
+
+| Calibrated scale
+| Person uses a calibrated scale; supervision depends on the protocol.
+| Measured weight; use when your protocol requires a calibrated reference. BMI also requires height.
+
+Select the method required by your clinical, regulatory, or underwriting process. Scan-derived weight remains an estimate.
+
+One feature · Multiple workflows
+
+[H2] BMI evidence where
+your team needs it.
+
+Configure collection, comparison, and review around the requirements of your use case.
+
+01 / PHARMACY
+
+[H3] Online pharmacies
+
+Add scan-derived evidence to weight-loss intake or refill review, including glucagon-like peptide-1 (GLP-1) prescribing workflows. Pharmacy teams assess whether the complete process meets their requirements.
+
+02 / TELEHEALTH
+
+[H3] Digital health programs
+
+Collect additional body data during enrollment or scheduled check-ins. Define when a discrepancy needs review, another capture, or an alternative measurement method.
+
+03 / INSURANCE
+
+[H3] Life insurance underwriting
+
+Give authorized reviewers a second body-data source alongside application disclosures. The carrier determines case routing and any additional evidence required.
+
+04 / WELLNESS
+
+[H3] Employer and insurer wellness
+
+Add structured body data to participation or rewards reviews where appropriate. Program rules determine how scan results contribute and how exceptions are handled.
+
+Evaluate with context
+
+[H2] Match the evidence
+to the decision.
+
+[H3] Assess accuracy against a defined reference
+
+Assess Smart Scales against your required reference method, intended population, and acceptable error. The published framework describes
+internal validation
+and explains why body-measurement accuracy, weight-estimation error, and repeatability are different measures.
+
+Reference methodPopulation scopeExpected errorReview threshold
+
+[H3] Data handling depends on your deployment
+
+Confirm retention, hosting, access, and contractual safeguards during procurement. Confirm the rules for retaining photos and scan outputs separately. Responsibilities under HIPAA and GDPR depend on the parties’ roles, processing, and applicable agreements.
+
+Retention policyAccess rulesContractual safeguards
+
+[H3] Connect to the workflow you already run.
+
+Integrate through web or mobile software development kits (SDKs) and an application programming interface (API). Your team controls onboarding, result display, storage, and review routing. The core capture flow is standardized.
+
+Evaluate before rollout
+
+[H2] Define a pilot around your review requirements.
+
+01 / Walk through capture
+Review live photo capture, user instructions, accessibility, and the alternative measurement route.
+
+02 / Review sample outputs
+Confirm required fields, integration, result display, privacy responsibilities, and reviewer access.
+
+03 / Set evaluation criteria
+Agree on the reference method, intended population, acceptable error, completion measures, and discrepancy-review process before evaluating results.
+
+Request a demo ↗
+
+Supporting evidence and implementation resources
+
+Optional detail for clinical, technical, and compliance review.
+
+Body data for health programs
+
+Online pharmacy BMI verification
+
+Accuracy framework
+
+Capture quality and processing time¹
+
+Privacy and security
+
+Your questions, answered
+
+[H2] Before you
+integrate.
+
+Key distinctions for product, clinical, compliance, and underwriting teams.
+
+Can users upload saved photos?
+
+No. The standard capture flow requires users to take both photos live. Camera-roll and file uploads are unavailable. Live capture supports anti-fraud review; it does not establish identity or rule out every manipulation attempt.
+
+What does “BMI verification” mean here?
+
+A cross-check between self-reported data and scan-derived predicted weight, with BMI calculated using supplied height. FitXpress does not independently measure height in this flow.
+
+Is Smart Scales a physical scale?
+
+No. Smart Scales generates predicted weight through software. Use the measurement method required by your protocol whenever calibrated weight is necessary.
+
+Does a mismatch mean fraud?
+
+No. Differences can reflect reporting error, capture conditions, or model error. Your reviewers assess the context and determine what additional evidence is needed.
+
+Does FitXpress approve eligibility or prescribing?
+
+No. FitXpress is not a medical device. Qualified professionals retain responsibility for clinical decisions, and carriers retain responsibility for underwriting decisions.
+
+What happens if someone cannot complete capture?
+
+Your program defines the alternative route, which may include assisted capture or another measurement method. Consider accessibility and user support before launch.
+
+Can we use the scan for progress tracking too?
+
+FitXpress also provides body measurements, body-composition estimates, and 3D models. Your program can compare selected scans through a separate progress workflow.
+
+See FitXpress in your workflow
+
+[H2] Review BMI verification
+with the 3DLOOK team.
+
+Discuss live capture, Smart Scales outputs, integration, and a pilot evaluation for your use case.
+
+FitXpress is not a medical device. Required reference measurements and professional review remain part of your process.
+
+Work email
+
+Company
+
+Use caseSelect your use caseOnline pharmaciesDigital health programsLife insurance underwritingEmployer and insurer wellnessOther
+
+Request a demo ↗
+
+Mockup form for review. No information is sent.
+
+[IMG alt='3DLOOK']
+
+© 2026 3DLOOK. Mockup for review. Example values illustrate comparison logic and do not represent validation or customer outcomes.
+
+Privacy policy ↗
+
+---LINKS---
+#main
+https://3dlook.ai/
+#how-it-works
+#use-cases
+#controls
+#faq
+#demo
+#demo
+#how-it-works
+https://3dlook.ai/content-hub/fitxpress-capture-quality-user-experience-faq/
+https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/
+#demo
+https://3dlook.ai/content-hub/ai-body-data-health-hub/
+https://3dlook.ai/content-hub/online-pharmacy-bmi-verification-a-2026-compliance-guide/
+https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/
+https://3dlook.ai/content-hub/fitxpress-capture-quality-user-experience-faq/
+https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/
+https://3dlook.ai/
+https://3dlook.ai/privacy-policy/
+---IMGS---
+('3DLOOK', 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD', None)
+('FitXpress front and side capture with green pose-alignment markers', 'data:image/webp;base64,UklGRqxqAABXRUJQV', 'lazy')
+('Burlington Medical', 'data:image/webp;base64,UklGRqQKAABXRUJQV', None)
+('Verv', 'data:image/webp;base64,UklGRkwHAABXRUJQV', None)
+('MagicFit', 'data:image/webp;base64,UklGRtYKAABXRUJQV', None)
+('Healthyr', 'data:image/webp;base64,UklGRtAGAABXRUJQV', None)
+('Coredirection', 'data:image/webp;base64,UklGRggcAABXRUJQV', None)
+('FitXpress front and side capture with green pose-alignment markers', 'data:image/webp;base64,UklGRqxqAABXRUJQV', 'lazy')
+('3DLOOK', 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD', 'lazy')
+---FORMS---
+('form', {'id': 'demo-form'})
+('input', {'type': 'email', 'placeholder': 'name@company.com'})
+('input', {'placeholder': 'Company name'})
+('select', {})

@@ -59,7 +59,7 @@ Volume without these produces a site of pages that rank for nothing and answer n
 | Vertical | Use-case file | Cases available | Live page |
 |---|---|---|---|
 | FX — telehealth / weight loss | `fx-telehealth-weight-loss.md` | Yazen (34K scans) | `/structured-body-data-for-telehealth-digital-health-programs/` |
-| FX — online pharmacy / BMI | `fx-online-pharmacy-bmi.md` | UK Meds (7.5K scans) | `/for-bmi-verification/` |
+| FX — online pharmacy / BMI | `fx-online-pharmacy-bmi.md` | UK Meds (7.5K scans) | planned `/for-online-pharmacies/` (Vadim 2026-11-09); `/for-bmi-verification/` is the feature page that explains BMI verification and links to it |
 | FX — digital fitness | `fx-digital-fitness.md` | — | `/fitxpress/for-connected-and-digital-fitness/` |
 | FX — insurance underwriting | `fx-insurance-underwriting.md` | — | live 2026-10-21 at `/for-insurance-underwriting/`; moves to `/fitxpress/for-insurance-underwriting/` (301) when `/fitxpress/` ships |
 | FX — wellness rewards | `fx-wellness-rewards.md` | — | none |

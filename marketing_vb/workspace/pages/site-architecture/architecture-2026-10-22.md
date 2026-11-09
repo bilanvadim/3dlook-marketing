@@ -224,3 +224,5 @@ related: ../homepage/spec-2026-10-21.md (реєстр продуктів), .clau
 | A-5 | eBooks у Resources | **Закрито 10-22:** eBooks три («The Next Big Leap in Health» — сторінка, «The Digital Health Revolution» і «The AI Advantage» — пости). Пункт меню веде на `/content-hub/category/ebooks/`. Зараз категорія показує лише «The Digital Health Revolution»: Асель додає в неї «The AI Advantage» і картку-посилання на «The Next Big Leap in Health» |
 | A-6 | Head і ring у меню | **Закрито 10-22:** продукти з'являться у 2027, продуктова команда лише вивчає питання. До запуску на сайті їх не називаємо; у прототипах вони лишаються тільки як приклади для перевірки сітки |
 | A-7 | Шапку прототипу головної (6 пунктів із Technology) привести до цієї схеми | Після твого апруву, разом з оновленням кадру у Figma |
+
+**11-09, Вадим:** BMI-сторінка — сторінка функції: пояснює, веде на use-case лендинги і тримає ключі. Аптекам продає окремий лендинг `/for-online-pharmacies/` (UK, GPhC), потім `/fitxpress/for-online-pharmacies/` (301). Це скасовує нотатку A-4 про те, що BMI-сторінка замінює аптечну.
