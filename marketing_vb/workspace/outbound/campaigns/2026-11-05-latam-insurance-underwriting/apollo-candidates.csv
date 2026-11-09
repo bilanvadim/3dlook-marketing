@@ -1,26 +1,26 @@
 apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,last_refreshed_at,status
 64ecb81f8e728400011ef8b5,Maria,Ar***a,Estagiária de Produtos Vida,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-09-17T22:01:58.000+00:00,not-selected
 5d59470380f93e67b0e551da,Felipe,Fr***a,Analista de Produtos - Vida,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-09-25T05:28:28.000+00:00,not-selected
-57d44cd2a6da9853d621157b,Beatriz,He***a,Coordenador de Produtos Vida,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-09-08T03:50:23.000+00:00,candidate
+57d44cd2a6da9853d621157b,Beatriz,He***a,Coordenador de Produtos Vida,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-09-08T03:50:23.000+00:00,enriched
 5ad208c5a6da9883a3b1dcbd,Patricia,Ma***l,Analista de Produtos Vida,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-09-29T23:04:27.522+00:00,not-selected
 5dd74be9cbd12a0001911d1a,Larissa,No***a,Analista de Produtos Vida Jr.,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-26T17:44:40.999+00:00,not-selected
-66f6cb1b9e828b0001181dc2,Marcela,Gu***s,Gerente de Produtos Senior | GPM | Produtos Vida,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-23T04:09:38.000+00:00,candidate
-54a29f1274686933187f7c30,Luciana,Ba***s,Diretora de Desenvolvimento de Produtos - Vida,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-24T13:18:46.000+00:00,candidate
+66f6cb1b9e828b0001181dc2,Marcela,Gu***s,Gerente de Produtos Senior | GPM | Produtos Vida,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-23T04:09:38.000+00:00,enriched
+54a29f1274686933187f7c30,Luciana,Ba***s,Diretora de Desenvolvimento de Produtos - Vida,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-24T13:18:46.000+00:00,in-sales-nav
 673efbc3e8b4bc0001428821,Maria,So***a,Faturamento Vida Individual,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-09T19:36:13.000+00:00,not-selected
 54a2972774686935bebf022e,Carlos,Se***a,Comercial Seguros de Pessoas,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-23T18:35:52.000+00:00,not-selected
-55d6da2bf3e5bb319f002076,Rafael,Sa***e,Gerente de Subscrição e Aceitação Vida,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-10T15:38:10.000+00:00,candidate
+55d6da2bf3e5bb319f002076,Rafael,Sa***e,Gerente de Subscrição e Aceitação Vida,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-10T15:38:10.000+00:00,enriched
 614e94e41fa81e0001fdbca8,Patricia,Fe***s,Subscrição,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-09-17T03:05:42.000+00:00,not-selected
 6480b4d9a91fbf00016968a7,Gabriela,Pe***a,Atuária Pleno,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-06T17:22:26.000+00:00,not-selected
 62c916cd13ad380001bf3098,Pedro,Pi***o,Estagiário Atuarial,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-07T20:27:14.000+00:00,not-selected
 54a43d137468692abf8b5537,Marcelle,Pa***a,Analista Atuarial,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-25T12:00:48.000+00:00,not-selected
-665774e8fac3930001d45605,Leonardo,Hi***o,Gerente Atuarial,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2025-08-07T14:37:32.407+00:00,candidate
+665774e8fac3930001d45605,Leonardo,Hi***o,Gerente Atuarial,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2025-08-07T14:37:32.407+00:00,enriched
 5ef49e41cd19220001ab4134,Bruno,Pe***o,Consultor Atuarial,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-23T23:25:10.000+00:00,not-selected
 66f95e7406ffaa00013f2927,Joao,Fa***o,Estagiário Atuarial,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-09-17T19:10:20.000+00:00,not-selected
 66a685097b7dc60001c0f850,Lara,So***s,Analista Atuarial,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-23T23:00:41.751+00:00,not-selected
 6481da788d750000015fe34b,Carol,Ba***a,Técnico Subscrição,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-09-26T02:54:53.446+00:00,not-selected
 61691a1894b2860001b945a0,Gustavo,Ba***s,Analista Trainee Atuarial,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-07T08:25:30.000+00:00,not-selected
 5dca784c61de83000157f5d5,Gabriela,Be***e,Consultor de Governança em SI e Proteção de Dados,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-09-12T20:51:56.000+00:00,not-selected
-5efb128ddca90800014c3254,Ligia,Ab***u,Superintendente Executiva Atuarial,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-09-21T11:28:21.000+00:00,candidate
+5efb128ddca90800014c3254,Ligia,Ab***u,Superintendente Executiva Atuarial,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-09-21T11:28:21.000+00:00,enriched
 66f9738e5d6bfa0001fd0e20,Rafael,Co***a,Analista de Subscrição Senior,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-09-18T03:52:55.000+00:00,not-selected
 66650e068ce82d0001bab97f,Pedro,Ro***s,Analista de Subscrição Junior,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-25T22:24:48.980+00:00,not-selected
 5f4c807f31ed4900019d1a34,Igor,Ro***s,Analista de Subscrição Pleno,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-13T09:49:18.000+00:00,not-selected
@@ -31,25 +31,25 @@ apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,l
 62751cc9a18f15000126b770,Erleson,Fr***e,Analista de Subscrição Pleno,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-09-19T05:23:38.000+00:00,not-selected
 6425e7aec302fa0001e747db,Daniele,Ro***s,Analista de Subscrição Jr,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-14T04:05:17.000+00:00,not-selected
 654be1bcf264cc0001887e8e,Cleyson,Me***i,Consultor de Inovação,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-29T14:51:27.084+00:00,not-selected
-60d4a1732f1aec0001830b7f,Jimmy,Mo***e,Underwriting Coordinator,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-23T23:32:30.000+00:00,candidate
-6219dc5dff1d920001f0a58e,Priscilla,Te***a,Gerente Atuarial de Vida e Previdência,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-30T01:31:19.404+00:00,candidate
+60d4a1732f1aec0001830b7f,Jimmy,Mo***e,Underwriting Coordinator,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-23T23:32:30.000+00:00,enriched
+6219dc5dff1d920001f0a58e,Priscilla,Te***a,Gerente Atuarial de Vida e Previdência,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-30T01:31:19.404+00:00,enriched
 6102a5ca596c3f00011192e1,Israel,To***o,Analista de Processos de Subscrição Sênior,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-29T20:19:25.627+00:00,not-selected
 6955032ea352f300015cc394,Gabrielle,Re***o,Auxíliar Administrativo - Financeiro e Atuarial,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-09-10T05:40:46.000+00:00,not-selected
 5d384067f65125167db1721e,Luis,Ra***l,Superintendente Comercial - Parcerias Bancassurance,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-09-16T08:02:37.000+00:00,not-selected
 5e75801614e7fc00019fb681,Rodrigo,Ba***s,Analista de Subscrição de Risco Sênior,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-18T20:32:27.000+00:00,not-selected
-54a447c77468693209ea323b,Pier,Ie***o,Gerente de Subscrição/Precificação Vida | Icatu Seguros,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-18T04:57:34.000+00:00,candidate
+54a447c77468693209ea323b,Pier,Ie***o,Gerente de Subscrição/Precificação Vida | Icatu Seguros,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-18T04:57:34.000+00:00,enriched
 6481c7fd400d3100013e38b8,Jeniffer,Za***n,Subscritor de Riscos / Underwriting,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-03T00:27:50.038+00:00,not-selected
 5f6d9b32f23ff90001e2961e,Yasmin,Al***a,Senior Innovation Analyst,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-07T08:38:25.000+00:00,not-selected
 63dcee535194160001e51b57,Jessika,Fo***a,Analista de Precificação de Riscos e Atuarial FMP Sr,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-10T09:08:49.000+00:00,not-selected
 5d4a9d59f65125bfca7cd724,Anna,Fe***s,Analista de Inovação - Designer de Serviço Sênior,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-23T18:16:58.000+00:00,not-selected
 6198739617bc900001ab2da0,Beatriz,Ba***i,Designer de Serviços e Analista de Inovação,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-09T20:31:44.000+00:00,not-selected
-66f560a13b4805000157d596,Humberto,Sa***g,Head of Digital Experience | Digital Transformation | UX | Product Manager,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-09-11T05:15:01.000+00:00,candidate
+66f560a13b4805000157d596,Humberto,Sa***g,Head of Digital Experience | Digital Transformation | UX | Product Manager,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-09-11T05:15:01.000+00:00,enriched
 54eba8467468694311bfc807,Wanderico,Ca***s,Atuário Pleno,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-14T15:19:23.000+00:00,not-selected
-6047c20944c57500019bbbcf,Nei,Gi***o,Product Leader,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-25T02:07:55.617+00:00,candidate
-60ddd4a38dd08200012362f1,Larissa,To***s,Product Manager,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-13T05:21:30.741+00:00,candidate
-621861954bb5e600010941bd,Thays,Ma***o,Staff Product Manager,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-14T09:04:29.000+00:00,candidate
-64eeef2c531d910001566334,Ingrid,Pe***a,Product Manager,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-31T06:02:17.753+00:00,candidate
-5dc08f413f35290001b00c5e,Jose,Ma***s,Product Manager,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-14T06:29:52.000+00:00,candidate
+6047c20944c57500019bbbcf,Nei,Gi***o,Product Leader,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-25T02:07:55.617+00:00,enriched
+60ddd4a38dd08200012362f1,Larissa,To***s,Product Manager,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-13T05:21:30.741+00:00,enriched
+621861954bb5e600010941bd,Thays,Ma***o,Staff Product Manager,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-14T09:04:29.000+00:00,enriched
+64eeef2c531d910001566334,Ingrid,Pe***a,Product Manager,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-31T06:02:17.753+00:00,enriched
+5dc08f413f35290001b00c5e,Jose,Ma***s,Product Manager,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-14T06:29:52.000+00:00,enriched
 647c26458bf15000016bbc2c,Pedro,Vi***a,Produto,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-08T03:03:57.000+00:00,not-selected
 60e46109413220000171bbbc,Bruno,Al***s,Product Manager,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-14T11:24:24.000+00:00,not-selected
 62410aae233cf10001219450,Vanessa,Ca***o,Product Owner | Product Manager,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-24T01:32:19.000+00:00,not-selected
@@ -64,29 +64,29 @@ apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,l
 5b32f895a6da9871708f8fb1,Cezar,Go***i,Atuário,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-09-16T05:10:37.000+00:00,not-selected
 5eebfca5b7ea110001f2c79b,Josiele,Bu***i,Atuário,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-23T18:41:40.000+00:00,not-selected
 5641466ba6da9806f0005644,Carla,Pi***s,Product Manager,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,2026-10-23T23:45:50.376+00:00,not-selected
-5f0bc38ea0031f00013e5013,Dayana,Me***o,Coordenadora de Produtos Vida,MAG Seguros,mag.com.br,MAG Seguros,2026-10-14T03:04:10.000+00:00,candidate
+5f0bc38ea0031f00013e5013,Dayana,Me***o,Coordenadora de Produtos Vida,MAG Seguros,mag.com.br,MAG Seguros,2026-10-14T03:04:10.000+00:00,enriched
 54a7fdff74686965d94c095b,Paloma,Fe***z,Atuária Senior,MAG Seguros,mag.com.br,MAG Seguros,2026-10-24T14:42:56.039+00:00,not-selected
 619960425bb013000129fe27,Amanda,Mo***l,Atuária Pleno,MAG Seguros,mag.com.br,MAG Seguros,2026-10-14T15:20:29.000+00:00,not-selected
 69aaa224b4adab0001da8c9c,Camilla,Es***a,Estagiário Atuarial,MAG Seguros,mag.com.br,MAG Seguros,2026-10-01T07:45:49.000+00:00,not-selected
 5b1ae3d9a6da9828b8cc7f1c,Renata,Ve***a,Supervisora Atuarial,MAG Seguros,mag.com.br,MAG Seguros,2026-10-06T19:37:39.000+00:00,not-selected
 6167fa4ee2db1a0001851344,Gabriel,Go***s,Especialista Atuarial,MAG Seguros,mag.com.br,MAG Seguros,2026-09-17T06:15:33.000+00:00,not-selected
 693c46032367f10001b6c031,Jessica,S,Estagiária Atuarial,MAG Seguros,mag.com.br,MAG Seguros,2026-03-10T20:13:40.000+00:00,not-selected
-5f5596f79feeae0001c4d389,Carlos,Fi***o,Gerente Atuarial,MAG Seguros,mag.com.br,MAG Seguros,2026-10-11T21:36:27.593+00:00,candidate
+5f5596f79feeae0001c4d389,Carlos,Fi***o,Gerente Atuarial,MAG Seguros,mag.com.br,MAG Seguros,2026-10-11T21:36:27.593+00:00,enriched
 642ac3cf12324c00019a2462,Maria,Gu***s,Especialista em Seguros de Pessoas e Previdência,MAG Seguros,mag.com.br,MAG Seguros,2026-09-26T20:02:16.000+00:00,not-selected
 613a08b4fc09580001cb312d,Veronica,Pi***a,Analista Atuarial Pleno,MAG Seguros,mag.com.br,MAG Seguros,2026-10-07T01:48:55.000+00:00,not-selected
 63d8ff269f8ee20001116dc0,Rafaella,Ma***o,Analista Atuarial Jr,MAG Seguros,mag.com.br,MAG Seguros,2026-09-07T18:21:57.000+00:00,not-selected
 5f607b3ff4a1d60001b535d1,Carolina,Mo***r,Analista Atuarial Júnior,MAG Seguros,mag.com.br,MAG Seguros,2026-09-18T02:19:09.000+00:00,not-selected
 5d4186c880f93e5d30e1185c,Camila,Le***l,Atuária Jr. em Resseguro,MAG Seguros,mag.com.br,MAG Seguros,2026-09-17T07:28:07.000+00:00,not-selected
-54a1c3e47468695860772d0f,Rafael,Fr***o,Diretor Atuarial/ Chief Actuary,MAG Seguros,mag.com.br,MAG Seguros,2026-10-06T16:39:40.000+00:00,candidate
+54a1c3e47468695860772d0f,Rafael,Fr***o,Diretor Atuarial/ Chief Actuary,MAG Seguros,mag.com.br,MAG Seguros,2026-10-06T16:39:40.000+00:00,enriched
 66b3372e5eeac70001e3a0b7,Ellen,Co***a,Underwriting Analyst,MAG Seguros,mag.com.br,MAG Seguros,2026-10-08T16:02:43.000+00:00,not-selected
 67347ef9ddaf47000185e94d,Ana,Fo***a,Underwriting Analyst,MAG Seguros,mag.com.br,MAG Seguros,2026-09-17T07:47:22.000+00:00,not-selected
 622760de8f37110001fa6902,Marcos,Go***s,Desenvolvedor Back-End .Net | Time Subscrição,MAG Seguros,mag.com.br,MAG Seguros,2026-10-06T20:50:24.000+00:00,not-selected
-62b1ce36dbe7ac000109cc9c,Luis,Ol***a,Technology Director,MAG Seguros,mag.com.br,MAG Seguros,2026-09-13T21:31:42.000+00:00,candidate
+62b1ce36dbe7ac000109cc9c,Luis,Ol***a,Technology Director,MAG Seguros,mag.com.br,MAG Seguros,2026-09-13T21:31:42.000+00:00,in-sales-nav
 54a2e4107468693cdd09aa44,Milena,Ta***n,Assistente - Depto De Underwriting,MAG Seguros,mag.com.br,MAG Seguros,2026-10-12T20:01:28.212+00:00,not-selected
 665b2d2c166331000171501c,Bruna,Do***r,Analista de Underwriting Jr.,MAG Seguros,mag.com.br,MAG Seguros,2026-09-16T14:16:34.000+00:00,not-selected
 66a486fc8c31c500016d328b,Mauriceia,Sa***s,Analista de Underwriting Jr.,MAG Seguros,mag.com.br,MAG Seguros,2026-10-08T22:42:42.000+00:00,not-selected
 5d6cdeecf65125578fd80b82,Ana,Me***s,Analista de Underwriting Pl,MAG Seguros,mag.com.br,MAG Seguros,2026-10-24T05:39:38.000+00:00,not-selected
-5aafd54ba6da98c34c9b1503,Rodrigo,Cu***a,Gerente de Produtos e Inteligência de Mercado,MAG Seguros,mag.com.br,MAG Seguros,2026-09-28T20:29:47.592+00:00,candidate
+5aafd54ba6da98c34c9b1503,Rodrigo,Cu***a,Gerente de Produtos e Inteligência de Mercado,MAG Seguros,mag.com.br,MAG Seguros,2026-09-28T20:29:47.592+00:00,enriched
 64270d26c24ebc000181fabd,Luciana,Ma***o,Gerente Comercial Especialista em Seguros de Vida,MAG Seguros,mag.com.br,MAG Seguros,2026-09-23T13:04:01.000+00:00,not-selected
 6269ab2c4013570001bc86a7,Rebeca,Ba***s,Atuário Pleno,MAG Seguros,mag.com.br,MAG Seguros,2026-10-08T19:22:22.000+00:00,not-selected
 6072598d70576500018d32de,Paulo,Af***o,Especialista em Seguro de Vida,MAG Seguros,mag.com.br,MAG Seguros,2026-09-23T13:32:29.000+00:00,not-selected
@@ -95,7 +95,7 @@ apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,l
 64a6a19bc221220001e9f277,Filipe,Ja***m,Especialista em Seguro de Vida,MAG Seguros,mag.com.br,MAG Seguros,2026-09-15T04:48:17.000+00:00,not-selected
 5e82845709b14a00018f2d1a,Elaine,Fr***a,Analista de Seguros ( Especialista em Seguro de Vida e Previdência Privada),MAG Seguros,mag.com.br,MAG Seguros,2026-10-08T17:33:26.000+00:00,not-selected
 5f08e7015587410001120716,Eder,Do***o,Especialista em Seguro de Vida,MAG Seguros,mag.com.br,MAG Seguros,2026-09-23T13:12:40.000+00:00,not-selected
-66ae3a3d0826e300013c6691,Elaine,Fa***a,Product Manager,MAG Seguros,mag.com.br,MAG Seguros,2026-10-23T16:57:41.000+00:00,candidate
+66ae3a3d0826e300013c6691,Elaine,Fa***a,Product Manager,MAG Seguros,mag.com.br,MAG Seguros,2026-10-23T16:57:41.000+00:00,enriched
 5571515a73696457f7d68500,Romacele,Pa***t,Especialista em Seguro de Vida,MAG Seguros,mag.com.br,MAG Seguros,2026-10-14T15:15:31.000+00:00,not-selected
 5e8d4e5be662660001b5da30,Caio,Co***s,Atuário Pleno,MAG Seguros,mag.com.br,MAG Seguros,2026-10-07T03:51:54.000+00:00,not-selected
 63598968e862b000014103f3,Nuno,Ri***o,Especialista em Seguro de Vida,MAG Seguros,mag.com.br,MAG Seguros,2026-10-10T01:44:57.000+00:00,not-selected
@@ -113,7 +113,7 @@ apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,l
 645a3c240a45700001d1d0ec,Samir,Sa***s,Especialista em Seguro de Vida,MAG Seguros,mag.com.br,MAG Seguros,2026-10-08T23:36:19.000+00:00,not-selected
 60d1f19e4c2ca100019f1af1,Mayara,Na***o,Atuária,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-20T12:32:25.484+00:00,not-selected
 54a2e04074686935be195043,Francine,Le***e,Atuária,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-18T05:20:37.000+00:00,not-selected
-5ba48b7af874f7c0698e1628,Pedro,Fi***o,Gerente Atuarial de Pricing e Subscrição,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-18T08:54:01.000+00:00,candidate
+5ba48b7af874f7c0698e1628,Pedro,Fi***o,Gerente Atuarial de Pricing e Subscrição,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-18T08:54:01.000+00:00,enriched
 5d691d3df65125f2dda921ab,Raquel,Bof,Consultora Atuarial,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-13T12:20:49.000+00:00,not-selected
 6598ed41e388dd00012da59a,Amaro,Ju***r,Analista Atuarial,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-08T21:42:23.000+00:00,not-selected
 5e7fdceaa51459000113919f,Guilherme,Is***i,Gerente Atuarial,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-16T19:51:33.624+00:00,not-selected
@@ -150,8 +150,8 @@ apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,l
 6359280acd38390001178ab0,Larissa,Sa***s,Analista Atuarial Pleno,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-07T00:42:05.000+00:00,not-selected
 66a4d5fc4905750001ab97ba,Alef,No***a,Analista Subscrição Risco,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-23T18:06:44.000+00:00,not-selected
 57dac97da6da984ab7c6a3e1,Rachel,Pe***o,Analista Atuarial Sr,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-18T14:27:59.000+00:00,not-selected
-563ed550a6da987bf3008450,Marcio,Gl***i,Gerente de Subscrição,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-11T12:37:22.000+00:00,candidate
-678424712d86d000016f04e8,Thiago,So***a,Superintendente de Subscrição,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-13T00:29:38.000+00:00,candidate
+563ed550a6da987bf3008450,Marcio,Gl***i,Gerente de Subscrição,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-11T12:37:22.000+00:00,enriched
+678424712d86d000016f04e8,Thiago,So***a,Superintendente de Subscrição,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-13T00:29:38.000+00:00,enriched
 54a57a747468692abf1a3b98,Wanderson,Un***k,Assistente De Subscrição,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-13T21:17:44.000+00:00,not-selected
 54a237897468693a7ed6b316,Elizabeth,Ca***o,Analista de Subscrição,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-17T18:14:33.000+00:00,not-selected
 61304df547a9ac0001a7d9e1,Amanda,Vi***s,Analista Atuarial Sênior,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-19T23:06:22.000+00:00,not-selected
@@ -175,13 +175,13 @@ apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,l
 6921452dec2362000175b66f,Jose,Ar***o,Assist. de Subscrição Responsabilidade Civil,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-09T14:25:55.000+00:00,not-selected
 5e769b9cac55eb0001e3c7f7,Daniel,Ho***r,Analista de Subscrição de Risco,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-09T13:03:59.000+00:00,not-selected
 629fcaef9ec62c000157fc94,Rafael,Al***a,Estagiário de Subscrição de Risco,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-08T01:42:54.000+00:00,not-selected
-68a2e3a5c3b7f900011cc5bd,Fabiana,Sc***n,Coordenador de Subscrição de Riscos,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-07T18:44:25.000+00:00,candidate
+68a2e3a5c3b7f900011cc5bd,Fabiana,Sc***n,Coordenador de Subscrição de Riscos,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-07T18:44:25.000+00:00,enriched
 6ad5974dc11d6100014a82c2,Luis,Ca***a,Estagiário de Inovação,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-15T23:55:47.000+00:00,not-selected
-639d4aaf8a03340001031728,Amanda,Ne***o,Coordenador de Subscrição de Riscos,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-07T18:38:51.000+00:00,candidate
+639d4aaf8a03340001031728,Amanda,Ne***o,Coordenador de Subscrição de Riscos,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-07T18:38:51.000+00:00,enriched
 5c45d89ea3ae610d723b8d89,Andressa,Li***s,Analista de Inovação,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-15T08:50:00.930+00:00,not-selected
 5acb5805a6da98c647177dab,Rodrigo,Ba***a,Coordenador de Subscrição Equipamentos Frota,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-07T02:14:31.000+00:00,not-selected
 54a54aaa7468693442e7488c,Leniro,Pe***o,Analista Atuarial Capital e Solvência,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-20T10:26:01.000+00:00,not-selected
-612a4bf20c0a89000155d094,Gabriel,So***s,Gerente de Subscrição de Risco,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-14T16:07:15.000+00:00,candidate
+612a4bf20c0a89000155d094,Gabriel,So***s,Gerente de Subscrição de Risco,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-14T16:07:15.000+00:00,enriched
 69ad3f574be35e0001062821,Matheus,Cy***o,Analista de Subscrição de Risco,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-07T18:02:58.000+00:00,not-selected
 67580aca97493d000198ce47,Raphael,So***a,Gerente de Subscrição de Automóveis,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-20T08:05:29.000+00:00,not-selected
 6583ed3b57447e0001235b16,Carolina,Yo***i,Analista Subscrição de Risco Jr,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-23T22:28:41.000+00:00,not-selected
@@ -207,17 +207,17 @@ apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,l
 64820003dc4fd400019485cd,Vitor,Ma***s,Gerente Sênior de Subscrição Auto e Frota,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-09T00:41:00.000+00:00,not-selected
 57d821aaa6da980a0e738651,Heverton,Li***a,Analista A. de Subscrição de Riscos- Frotas,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-14T16:23:39.000+00:00,not-selected
 5e761f9d4619de0001bc7c2a,Angelo,Ma***i,Gerente de Subscrição de Risco – Auto Frota,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-07T14:12:11.000+00:00,not-selected
-5dd484da61cbaf00012eff21,Aline,Mi***a,Innovation Coordinator,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-12T17:23:18.000+00:00,candidate
+5dd484da61cbaf00012eff21,Aline,Mi***a,Innovation Coordinator,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-12T17:23:18.000+00:00,enriched
 5f6973a61ee7d80001c5c598,Giulia,Va***s,Risk Underwriting Analyst,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-13T16:32:00.000+00:00,not-selected
-67e01ff89c26c50001dfdfd1,Jose,Lo***o,Diretor de Inovação & Digital & Dados,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-24T03:12:54.000+00:00,candidate
+67e01ff89c26c50001dfdfd1,Jose,Lo***o,Diretor de Inovação & Digital & Dados,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-24T03:12:54.000+00:00,in-sales-nav
 6425ab7b3d05af000141e0c8,Pedro,Mu***z,Analista de Subscrição de Riscos Corporativos Jr,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-23T18:50:26.000+00:00,not-selected
-664f3018601cf7000165427f,Ivo,Ca***o,Innovation Lead,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-27T10:10:00.265+00:00,candidate
+664f3018601cf7000165427f,Ivo,Ca***o,Innovation Lead,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-27T10:10:00.265+00:00,enriched
 612955dccb56540001c2cdf8,Leandro,Me***o,Analista de Pricing/Subscrição de Risco Jr,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-17T10:15:27.000+00:00,not-selected
 651865da49a6480001545ae5,Ruan,Ne***s,Estágio em Subscrição | Auto RE | Bradesco Seguros,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-17T16:30:38.000+00:00,not-selected
 648083a52c9590000139b900,Nikole,Kl***z,Analista de Inovação com IA,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-06T20:44:42.000+00:00,not-selected
 665b49037d7e880001932776,Leandro,Re***o,Analista de Subscrição de Risco Pl | Precificação,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-06T15:23:50.000+00:00,not-selected
 6666083193a0490001abacce,Felipe,Fe***s,Analista Assistente de Subscrição de Risco - Auto Frota,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-19T07:05:48.000+00:00,not-selected
-66d7e9ce2fee4800015edef7,Fernando,Me***a,Gerente Sr. Inovação e Transformação Ágil,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-25T20:49:56.000+00:00,candidate
+66d7e9ce2fee4800015edef7,Fernando,Me***a,Gerente Sr. Inovação e Transformação Ágil,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-25T20:49:56.000+00:00,enriched
 5f6d7433dcd82600016517d0,Giovanna,Al***o,Analista Sr de Pesquisa de Inovação,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-19T09:47:19.000+00:00,not-selected
 6425e26b0f141d00010f7092,Gabriel,Go***s,Analista de Subscrição de Risco PL Produto Auto Individual,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-08T21:07:59.000+00:00,not-selected
 63123096f26d460001d7aba1,Claudionor,Ju***r,Analista de Inovação e Transformação Ágil,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-21T08:21:02.000+00:00,not-selected
@@ -227,19 +227,19 @@ apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,l
 6abb5a7c76ce8a000184b949,Juliana,Sa***s,Analista de Pesquisa e Inovação Junior,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-07T22:03:40.000+00:00,not-selected
 679e1d8055a6d900013d8d09,Gisele,Ta***s,Analista Atuarial em Risco de Precificação e Gestão de Modelos,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-19T01:54:14.000+00:00,not-selected
 669c4ead9b4a4a0001f23b9a,Marcelo,Si***a,Gerência de Subscrição e Emissão de Riscos Diversos e Patrimoniais,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-11T13:16:11.000+00:00,not-selected
-54a6314b7468693676d338c9,Felipe,Sz***r,Gerente Sênior de Inovação e Transformação Digital,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-24T03:14:30.000+00:00,candidate
+54a6314b7468693676d338c9,Felipe,Sz***r,Gerente Sênior de Inovação e Transformação Digital,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-24T03:14:30.000+00:00,in-sales-nav
 678611e188628100012ce7b0,Nelson,Me***a,IT Director,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-18T00:08:24.000+00:00,not-selected
 54a4a6037468692abf93f357,Luiz,D'***o,Analista de Subscrição de Riscos Coorporativo na Bradesco Vida e Previdência,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-07T07:54:44.000+00:00,not-selected
 6432a73345e0030001fa6c20,Paula,Ra***l,RTE - Release Train Engineer - no Escritório de Inovação e Transformação Ágil,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-14T11:40:42.000+00:00,not-selected
 5d4decdaa3ae61022449708e,Rafael,Di***s,Head de Vendas Canais Digitais e Estratégia de Ofertas Life Cycle,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-19T01:26:13.000+00:00,not-selected
-669a95d95f7fc00001e93e4d,Denis,Ne***i,"CISO | Information Security, Cybersecurity, Privacy & Digital Fraud Prevention",Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-25T15:21:56.000+00:00,candidate
+669a95d95f7fc00001e93e4d,Denis,Ne***i,"CISO | Information Security, Cybersecurity, Privacy & Digital Fraud Prevention",Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-25T15:21:56.000+00:00,enriched
 57dd47e0a6da987b6db04147,Raquel,Mo***s,Product Manager,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-27T03:42:29.842+00:00,not-selected
 613ad6854808210001e8f923,Giovanna,So***a,Product Manager,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-07T13:47:24.139+00:00,not-selected
 6267c915d9a45e0001e91ece,Lucas,Fa***a,Group Product Manager,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-17T19:31:44.000+00:00,not-selected
 648090c098623700017b4431,Bruno,Pi***o,Atuário Pleno,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-08T14:02:12.000+00:00,not-selected
 5570918f7369643054621e00,Pedro,Si***a,Líder Técnico e Scrum Master | Projetos e Produtos de Tecnologia,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-13T00:45:16.000+00:00,not-selected
 5571364f7369646255ff1900,Leonardo,Mi***a,Product Manager,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-09T14:41:26.000+00:00,not-selected
-54eaf08b74686931e2314204,Abelardo,Fi***o,Superintende Tecnico,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-07T17:53:19.000+00:00,candidate
+54eaf08b74686931e2314204,Abelardo,Fi***o,Superintende Tecnico,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-07T17:53:19.000+00:00,enriched
 6425e42ca82bd700013926ce,Mateus,Li***a,Atuário Pleno,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-14T02:07:43.000+00:00,not-selected
 5ddf88440a3d5e000119f2ed,Diego,Er***s,Product Manager,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-14T06:48:01.000+00:00,not-selected
 5f60348995e6ac0001c6c141,Adomi,Nu***s,Product Manager,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-07T11:23:19.000+00:00,not-selected
@@ -247,7 +247,7 @@ apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,l
 54a286277468693318f01d29,Soraia,Ma***s,Gerente de Produtos - Canais Corretor e Digital,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-23T18:09:44.000+00:00,not-selected
 603204e9cbafb10001d764b7,Marco,Ju***r,Atuário Pl,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-07T01:08:48.000+00:00,not-selected
 5d38af2bf651251bb503d52b,Elton,Co***o,Especialista em Seguros Vida Previdencia,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-19T06:05:28.000+00:00,not-selected
-612234d3974e510001aba7f0,Andre,An***s,PM - Product Manager,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-15T10:27:50.000+00:00,candidate
+612234d3974e510001aba7f0,Andre,An***s,PM - Product Manager,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-15T10:27:50.000+00:00,enriched
 6475f4a5b604860001b89f89,Marta,Si***a,Product Manager,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-09T21:20:28.000+00:00,not-selected
 6426f9c9764a7f0001c5c618,Marcela,Ol***a,Product Manager,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-09-17T17:02:46.000+00:00,not-selected
 54a4c4377468693209ce7a61,Leandro,Si***a,Subescritor,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,2026-10-13T17:23:30.000+00:00,not-selected
@@ -260,7 +260,7 @@ apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,l
 57dfe1c2a6da980b38c61b51,Tamires,Ra***o,Analista || - Produtos Vida/Viagem,Allianz Brasil,allianz.com.br,Allianz Brasil,2026-09-26T01:05:35.000+00:00,not-selected
 62a3631414c9680001d92c3d,Laura,Ke***h,Atuária II,Allianz Brasil,allianz.com.br,Allianz Brasil,2026-09-14T07:35:02.000+00:00,not-selected
 66f98689649cba0001a40df8,Pedro,Do***s,Analista Atuarial Pleno,Allianz Brasil,allianz.com.br,Allianz Brasil,2026-10-14T09:10:51.000+00:00,not-selected
-57e0a6e0a6da981c1de911d5,Henrique,Ga***e,Gerente de Subscrição,Allianz Brasil,allianz.com.br,Allianz Brasil,2026-10-13T10:00:24.000+00:00,candidate
+57e0a6e0a6da981c1de911d5,Henrique,Ga***e,Gerente de Subscrição,Allianz Brasil,allianz.com.br,Allianz Brasil,2026-10-13T10:00:24.000+00:00,enriched
 685e11d0a8e2980001245c6d,Nicolly,Va***l,Analista Técnica Atuarial,Allianz Brasil,allianz.com.br,Allianz Brasil,2026-10-24T05:29:48.000+00:00,not-selected
 6865f86dcc50cf000125d735,Manuel,Va***s,Técnico de Riscos ( Subscrição),Allianz Brasil,allianz.com.br,Allianz Brasil,2026-10-14T11:17:09.000+00:00,not-selected
 54c2acaa7468697af7ba7ab8,Nikolas,Sa***s,Governança e Subscrição de Produtos,Allianz Brasil,allianz.com.br,Allianz Brasil,2026-09-13T11:56:14.000+00:00,not-selected
@@ -271,14 +271,14 @@ apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,l
 613a1e5253ea4b00015c36c5,Bruna,Si***a,Assistente de Subscrição Linhas Financeiras,Allianz Brasil,allianz.com.br,Allianz Brasil,2026-10-06T22:53:29.000+00:00,not-selected
 66ffa10db37af100014e7e9a,Joao,Fe***a,Estagiário de Subscrição de Riscos Massificados,Allianz Brasil,allianz.com.br,Allianz Brasil,2026-09-19T06:16:23.000+00:00,not-selected
 6878a91f4a094f0001a1166c,Bruna,Ol***a,Especialista Vida l Subscrição de Riscos,Allianz Brasil,allianz.com.br,Allianz Brasil,2026-09-29T06:24:46.699+00:00,not-selected
-66fa8c2810aef600016c550b,Luiz,Vi***a,IT Leader | CTO,Allianz Brasil,allianz.com.br,Allianz Brasil,2026-10-15T16:07:13.722+00:00,candidate
+66fa8c2810aef600016c550b,Luiz,Vi***a,IT Leader | CTO,Allianz Brasil,allianz.com.br,Allianz Brasil,2026-10-15T16:07:13.722+00:00,in-sales-nav
 54a51f147468692abf3fae7e,Caio,Sa***i,Property Underwriting Manager,Allianz Brasil,allianz.com.br,Allianz Brasil,2026-10-13T23:42:28.705+00:00,not-selected
-54a44b567468693209f0513c,Priscila,Ra***o,Underwriting Governance & Product Manager,Allianz Brasil,allianz.com.br,Allianz Brasil,2026-10-13T16:09:15.000+00:00,candidate
+54a44b567468693209f0513c,Priscila,Ra***o,Underwriting Governance & Product Manager,Allianz Brasil,allianz.com.br,Allianz Brasil,2026-10-13T16:09:15.000+00:00,enriched
 5b392c33a6da980c3ec2cd2e,Bruno,Ga***o,Inteligência de Mercado e Inovação,Allianz Brasil,allianz.com.br,Allianz Brasil,2026-10-28T23:55:04.954+00:00,not-selected
 54a212a67468693318b14d0a,Veronica,Go***s,Head of Product Manager - Retail Non-motor,Allianz Brasil,allianz.com.br,Allianz Brasil,2026-10-17T03:56:33.000+00:00,not-selected
 6574071a4c35950001e9025d,Vivian,Vaz,"Estagiária em Seguros de Automóvel (Vistorias, Subscrição e Dados)",Allianz Brasil,allianz.com.br,Allianz Brasil,2026-09-08T11:33:03.000+00:00,not-selected
 64c8012849f64f000180e905,Victor,Mey,Analista de Experiência do Usuário e Inovação,Allianz Brasil,allianz.com.br,Allianz Brasil,2026-10-07T15:36:02.000+00:00,not-selected
-605dd31301eb5e0001c58b0a,Clarice,Se***a,Líder de Projetos | Estratégia & Inovação | User Experience,Allianz Brasil,allianz.com.br,Allianz Brasil,2026-10-20T10:24:13.875+00:00,candidate
+605dd31301eb5e0001c58b0a,Clarice,Se***a,Líder de Projetos | Estratégia & Inovação | User Experience,Allianz Brasil,allianz.com.br,Allianz Brasil,2026-10-20T10:24:13.875+00:00,enriched
 54a7ec137468696829575c57,Juliana,Pe***a,Analyst III - Customer & Innovation,Allianz Brasil,allianz.com.br,Allianz Brasil,2026-10-06T21:15:01.000+00:00,not-selected
 60dcbdebb852470001db734a,Rosely,Fo***a,Director of Operations and Technology,Allianz Brasil,allianz.com.br,Allianz Brasil,2026-10-23T18:14:55.000+00:00,not-selected
 60edcc51e87b510001422226,Ana,Ka***e,Associate Director | IT HR Business Partner,Allianz Brasil,allianz.com.br,Allianz Brasil,2026-10-01T14:36:01.738+00:00,not-selected
@@ -307,21 +307,21 @@ apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,l
 674557b701a3a20001074fcf,Marco,Si***a,Property Underwriter,Allianz Brasil,allianz.com.br,Allianz Brasil,2026-10-14T09:03:04.000+00:00,not-selected
 64299a83df1a840001d2f4ff,David,Gr***a,Engineering & Construction Underwriter,Allianz Brasil,allianz.com.br,Allianz Brasil,2026-09-19T13:53:08.000+00:00,not-selected
 60d2a9eef07f4a0001f2756e,Vitor,Ca***o,Analista Atuarial,Azos,azos.com.br,Azos,2026-10-06T15:46:53.000+00:00,not-selected
-54a511eb7468692fa201ca7a,Ana,Bo***s,Head Atuarial,Azos,azos.com.br,Azos,2026-10-07T03:51:37.000+00:00,candidate
-5e6eeed5b5ba350001e49168,Victor,Re***s,Coordenador de Subscrição,Azos,azos.com.br,Azos,2026-10-06T18:00:02.000+00:00,candidate
+54a511eb7468692fa201ca7a,Ana,Bo***s,Head Atuarial,Azos,azos.com.br,Azos,2026-10-07T03:51:37.000+00:00,in-sales-nav
+5e6eeed5b5ba350001e49168,Victor,Re***s,Coordenador de Subscrição,Azos,azos.com.br,Azos,2026-10-06T18:00:02.000+00:00,enriched
 57d6f9e2a6da986added0924,Mariane,Ca***o,Analista de Subscrição Pleno,Azos,azos.com.br,Azos,2026-10-15T06:54:14.000+00:00,not-selected
 6908587aeca15d00013db80d,Nycolle,Mi***a,Analista de Subscrição - Pleno,Azos,azos.com.br,Azos,2026-10-30T09:59:50.961+00:00,not-selected
 5f4c1f6f9c360b00017d69db,Fabiana,Ol***a,Analista de Subscrição Sênior,Azos,azos.com.br,Azos,2026-10-19T06:38:51.000+00:00,not-selected
-5d392fc1f65125f4e3dc2fe4,Rodrigo,Te***a,Head of Product,Azos,azos.com.br,Azos,2026-10-18T23:39:54.000+00:00,candidate
+5d392fc1f65125f4e3dc2fe4,Rodrigo,Te***a,Head of Product,Azos,azos.com.br,Azos,2026-10-18T23:39:54.000+00:00,in-sales-nav
 6480753f2142800001e0cf83,Thamyris,Mo***e,Analista de Subscrição Pleno,Azos,azos.com.br,Azos,2026-10-27T00:25:24.785+00:00,not-selected
 54a82ce874686975f8659965,Andre,Ca***s,Diretor de Subscrição e Sinistros,Azos,azos.com.br,Azos,2026-10-26T04:28:17.349+00:00,not-selected
-6111f0b2c07b2d00010a3b5d,Julia,Wa***s,Group Product Manager,Azos,azos.com.br,Azos,2026-10-22T11:21:11.000+00:00,candidate
-66830f65552d8b0001015d7e,Thais,Na***a,Product Manager,Azos,azos.com.br,Azos,2026-10-24T09:27:32.000+00:00,candidate
-6860dfac5d253200014a3727,Julia,Ma***s,Product Manager,Azos,azos.com.br,Azos,2026-09-17T10:03:33.000+00:00,candidate
+6111f0b2c07b2d00010a3b5d,Julia,Wa***s,Group Product Manager,Azos,azos.com.br,Azos,2026-10-22T11:21:11.000+00:00,enriched
+66830f65552d8b0001015d7e,Thais,Na***a,Product Manager,Azos,azos.com.br,Azos,2026-10-24T09:27:32.000+00:00,enriched
+6860dfac5d253200014a3727,Julia,Ma***s,Product Manager,Azos,azos.com.br,Azos,2026-09-17T10:03:33.000+00:00,enriched
 6481f3895f57b8000164a84f,German,Ma***z,Gerente Comercial Vida Individual,AXA México,axa.mx,AXA Seguros México,2026-09-15T13:11:59.000+00:00,not-selected
 54eba095746869444ce83c01,Cristian,Ba***a,Tecnico Suscripción,AXA México,axa.mx,AXA Seguros México,2026-09-13T20:52:58.980+00:00,not-selected
 5e60a98a13752500014a4acc,Edna,Ri***a,Suscripción Colectividades,AXA México,axa.mx,AXA Seguros México,2026-10-15T12:15:44.000+00:00,not-selected
-60ce92f2eaad9d000113bf52,Abdi,Lo***z,Gerente de Suscripción,AXA México,axa.mx,AXA Seguros México,2026-10-15T08:04:48.000+00:00,candidate
+60ce92f2eaad9d000113bf52,Abdi,Lo***z,Gerente de Suscripción,AXA México,axa.mx,AXA Seguros México,2026-10-15T08:04:48.000+00:00,enriched
 63a9a8303e070d00014c1cbf,Javier,Me***a,Director Suscripción Daños,AXA México,axa.mx,AXA Seguros México,2026-09-21T20:29:21.000+00:00,not-selected
 63c3b2522c40fe0001fb43bf,Irais,Ca***a,Commercial Development Specialist – Individual Life Insurance,AXA México,axa.mx,AXA Seguros México,2026-09-13T21:40:11.000+00:00,not-selected
 667cde91820641000102f34e,Jose,Ca***a,Chief Technology Officer,AXA México,axa.mx,AXA Seguros México,2026-11-05T14:13:14.311+00:00,not-selected
@@ -329,15 +329,15 @@ apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,l
 63dba69f679c5600010fd021,Mariana,Av***a,"Head of Product, Proposition and Strategy Non Life Insurance | Underwriting: Home & SMEs Insurance.",AXA México,axa.mx,AXA Seguros México,2026-10-28T21:21:19.000+00:00,not-selected
 606bbc7bdb9855000157c644,David,Ar***a,Head of Health & Life Claims,AXA México,axa.mx,AXA Seguros México,2026-10-24T09:54:02.000+00:00,not-selected
 5ad0f629a6da9883a3adc201,Veronica,Ga***a,Subdirección Suscripción Lineas Financieras,AXA México,axa.mx,AXA Seguros México,2025-05-20T16:31:26.751+00:00,not-selected
-60d3cdaec3ab0f0001997915,Gabriela,Es***a,Gerente Regional de Suscripción,AXA México,axa.mx,AXA Seguros México,2026-10-08T23:01:36.089+00:00,candidate
+60d3cdaec3ab0f0001997915,Gabriela,Es***a,Gerente Regional de Suscripción,AXA México,axa.mx,AXA Seguros México,2026-10-08T23:01:36.089+00:00,enriched
 69d74fc57619de00010978be,Jorge,Ve***o,Especialista en Suscripción Salud,AXA México,axa.mx,AXA Seguros México,2026-10-17T06:02:42.042+00:00,not-selected
 5d383015a3ae610e5e5adc76,Gerardo,Ve***a,Property Underwriting Manager,AXA México,axa.mx,AXA Seguros México,2026-10-12T03:57:48.619+00:00,not-selected
-57de42a2a6da987af1248936,Maritere,Ro***z,Head of Customer Innovation,AXA México,axa.mx,AXA Seguros México,2026-10-23T05:02:09.000+00:00,candidate
-6006a1f451339f0001c61f26,Beltrando,Pi***i,Executive Vice President Health and Life,AXA México,axa.mx,AXA Seguros México,2026-10-29T02:13:42.000+00:00,candidate
+57de42a2a6da987af1248936,Maritere,Ro***z,Head of Customer Innovation,AXA México,axa.mx,AXA Seguros México,2026-10-23T05:02:09.000+00:00,in-sales-nav
+6006a1f451339f0001c61f26,Beltrando,Pi***i,Executive Vice President Health and Life,AXA México,axa.mx,AXA Seguros México,2026-10-29T02:13:42.000+00:00,enriched
 66672e3d3192ef000152de29,Jose,Ga***l,GenEx & IT & Procurement Risk Deputy Director,AXA México,axa.mx,AXA Seguros México,2026-02-02T03:53:54.188+00:00,not-selected
-6088bb6325e20a0001be3b13,Efrain,Or***z,CISO,AXA México,axa.mx,AXA Seguros México,2026-10-28T10:30:51.000+00:00,candidate
+6088bb6325e20a0001be3b13,Efrain,Or***z,CISO,AXA México,axa.mx,AXA Seguros México,2026-10-28T10:30:51.000+00:00,in-sales-nav
 600b67ae88596600011309f5,Jose,Pa***o,Product Manager,AXA México,axa.mx,AXA Seguros México,2026-10-14T23:55:20.000+00:00,not-selected
-684e4355c57da90001407ce9,Tonantzin,Ga***o,Actuary Life Insurance Reserves Manager,AXA México,axa.mx,AXA Seguros México,2026-10-15T00:06:58.000+00:00,candidate
+684e4355c57da90001407ce9,Tonantzin,Ga***o,Actuary Life Insurance Reserves Manager,AXA México,axa.mx,AXA Seguros México,2026-10-15T00:06:58.000+00:00,enriched
 5d4fbe98a3ae6187dc2bb298,Dafne,Qu***r,Actuary,AXA México,axa.mx,AXA Seguros México,2026-10-15T01:57:44.000+00:00,not-selected
 6568a6f6ec5a3e000123e9d3,Dan,Ag***e,Sr. Underwriter,AXA México,axa.mx,AXA Seguros México,2026-09-13T12:16:58.000+00:00,not-selected
 5f0ff1be3289e8000135e62b,Alberto,To***s,Underwriter Jr Financial Lines,AXA México,axa.mx,AXA Seguros México,2026-10-23T14:46:00.000+00:00,not-selected
@@ -348,8 +348,8 @@ apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,l
 666628077aa83500016fd5aa,Ricardo,Me***a,Underwriter,AXA México,axa.mx,AXA Seguros México,2026-08-29T12:32:52.000+00:00,not-selected
 64c10219391fed00010c0739,Roberto,Al***a,Actuary,AXA México,axa.mx,AXA Seguros México,2026-10-27T20:03:47.140+00:00,not-selected
 68c602117e541d000165c449,Joceline,Es***a,Actuary,AXA México,axa.mx,AXA Seguros México,2026-09-27T07:55:47.538+00:00,not-selected
-684fc14c08ab3f00011ca94f,Andres,Sa***o,Coordinador de Protección de Datos Personales,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com,Seguros Banorte,2026-09-19T07:32:17.000+00:00,candidate
-68ca656eedac370001c01cfc,Susana,Gr***s,Gerente de Suscripcion de Seguros de Personas,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com,Seguros Banorte,2026-07-17T22:49:46.000+00:00,candidate
+684fc14c08ab3f00011ca94f,Andres,Sa***o,Coordinador de Protección de Datos Personales,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com.mx,Seguros Banorte,2026-09-19T07:32:17.000+00:00,enriched
+68ca656eedac370001c01cfc,Susana,Gr***s,Gerente de Suscripcion de Seguros de Personas,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com.mx,Seguros Banorte,2026-07-17T22:49:46.000+00:00,enriched
 6640924bcbf531000127b49b,Jeremy,Al***o,Licenciado en Actuaría.,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com,Seguros Banorte,2026-10-30T00:37:37.459+00:00,not-selected
 6422efb22d29550001139cdf,Jose,Na***o,Suscripción Daños,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com,Seguros Banorte,2026-05-28T06:59:23.000+00:00,not-selected
 68deb7b2427098000130c381,Angelica,Sa***z,Licenciado en Actuaría,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com,Seguros Banorte,2026-07-19T02:09:38.000+00:00,not-selected
@@ -358,19 +358,19 @@ apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,l
 6743d70c46bcae00013f190c,Jose,Ma***z,Analista de Suscripción,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com,Seguros Banorte,2026-10-09T18:49:12.496+00:00,not-selected
 65448ab2c8fa8000016e4687,Cynthia,E,Suscripción Comercial Pyme Regional,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com,Seguros Banorte,2026-08-30T03:21:10.000+00:00,not-selected
 674199443b2f830001f38287,Yamile,Hu***a,Analista Actuarial,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com,Seguros Banorte,2026-10-15T09:28:33.000+00:00,not-selected
-57d9293ca6da98721661b3da,Francisco,Mo***a,Gerente Actuarial,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com,Seguros Banorte,2026-10-25T12:40:50.000+00:00,candidate
-6656f178fe84f90001b50547,Leonardo,Pe***z,Coordinador Actuarial,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com,Seguros Banorte,2026-08-30T11:54:32.000+00:00,candidate
+57d9293ca6da98721661b3da,Francisco,Mo***a,Gerente Actuarial,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com.mx,Seguros Banorte,2026-10-25T12:40:50.000+00:00,enriched
+6656f178fe84f90001b50547,Leonardo,Pe***z,Coordinador Actuarial,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com.mx,Seguros Banorte,2026-08-30T11:54:32.000+00:00,enriched
 63a981f43a59de000162313e,Fatima,Le***a,Jefe Tecnico Actuarial,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com,Seguros Banorte,2026-10-15T07:44:38.000+00:00,not-selected
 6ad532dc72a3140001261528,Luis,Lo***z,Analista Técnico Actuarial,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com,Seguros Banorte,2026-10-15T10:40:15.000+00:00,not-selected
 673c25cbad68c90001e42247,Fabiola,Ja***o,Jefe Técnico Actuarial,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com,Seguros Banorte,2026-08-14T00:20:07.000+00:00,not-selected
-5e63a3d85d5a160001cadb48,Luis,Pi***n,Regional Underwriting Manager,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com,Seguros Banorte,2026-10-15T01:02:16.000+00:00,candidate
-6125be1658f7ce000152d1fc,Yahir,He***z,Subdirector Actuarial de Riesgos,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com,Seguros Banorte,2026-05-29T15:09:54.000+00:00,candidate
-6a36d5044fe04700010802af,Ricardo,So***a,Coordinador de Proyecto Actuarial,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com,Seguros Banorte,2026-10-22T17:22:24.000+00:00,candidate
-57d54c83a6da9853a6677f2b,Eduardo,Ro***o,Subdirector Digital Attacker | Innovación y Producto,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com,Seguros Banorte,2026-10-21T02:27:54.000+00:00,candidate
+5e63a3d85d5a160001cadb48,Luis,Pi***n,Regional Underwriting Manager,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com.mx,Seguros Banorte,2026-10-15T01:02:16.000+00:00,enriched
+6125be1658f7ce000152d1fc,Yahir,He***z,Subdirector Actuarial de Riesgos,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com.mx,Seguros Banorte,2026-05-29T15:09:54.000+00:00,enriched
+6a36d5044fe04700010802af,Ricardo,So***a,Coordinador de Proyecto Actuarial,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com.mx,Seguros Banorte,2026-10-22T17:22:24.000+00:00,enriched
+57d54c83a6da9853a6677f2b,Eduardo,Ro***o,Subdirector Digital Attacker | Innovación y Producto,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com.mx,Seguros Banorte,2026-10-21T02:27:54.000+00:00,enriched
 63ac59b48ad1c30001b70fe1,Luis,Sa***l,Actuary,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com,Seguros Banorte,2026-10-03T04:15:35.742+00:00,not-selected
 5eea430e23b14f00013968ca,Yazmin,Ji***z,Actuaria,BANORTE SEGUROS Y PENSIONES,segurosbanorte.com,Seguros Banorte,2026-09-09T16:24:01.821+00:00,not-selected
 6ad4d0087ed8d1000191395f,Horacio,To***a,CISO,HSBC M,hsbc.com.mx,HSBC Seguros México,2026-09-25T22:43:36.000+00:00,not-selected
-5b53dfb9060cd40345a7fae5,Sandra,Me***z,Subdirector de Productos de Vida,BBVA en México,bbva.mx,BBVA Seguros México,2026-10-15T19:25:04.000+00:00,candidate
+5b53dfb9060cd40345a7fae5,Sandra,Me***z,Subdirector de Productos de Vida,BBVA en México,bbva.mx,BBVA Seguros México,2026-10-15T19:25:04.000+00:00,in-sales-nav
 666720362f2e8c000188cb44,Alma,To***s,Abogado Especialista en Protección de Datos Personales,BBVA en México,bbva.mx,BBVA Seguros México,2026-08-09T10:00:57.000+00:00,not-selected
 673f0184f31f6700013f3244,Guadalupe,Vi***a,Egresada en Lic. Actuaría,BBVA en México,bbva.mx,BBVA Seguros México,2026-10-22T07:13:59.181+00:00,not-selected
 54a5b4257468692abf2b8da1,Edgar,Mo***y,Innovación Operativa,BBVA en México,bbva.mx,BBVA Seguros México,2026-10-01T21:46:32.922+00:00,not-selected
@@ -384,7 +384,7 @@ apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,l
 57d934f9a6da98721a9fbfb5,German,Pi***a,IT Director,BBVA en México,bbva.mx,BBVA Seguros México,2026-10-01T19:07:49.000+00:00,not-selected
 61ebe097d84de1000138ef00,Mario,Gl***a,Director Estrategia Legal de Innovación y Nuevas Tecnologías,BBVA en México,bbva.mx,BBVA Seguros México,2026-10-14T16:43:45.718+00:00,not-selected
 67372577a2789500017e9c59,Erick,Te***a,Senior Expert en Comunicación de Ciberseguridad e Innovación,BBVA en México,bbva.mx,BBVA Seguros México,2026-09-15T12:35:26.000+00:00,not-selected
-6139ed07a31aa400016565ab,Liliana,R,Directora de Producto de Seguros y Función Actuarial,BBVA en México,bbva.mx,BBVA Seguros México,2026-10-16T13:20:59.309+00:00,candidate
+6139ed07a31aa400016565ab,Liliana,R,Directora de Producto de Seguros y Función Actuarial,BBVA en México,bbva.mx,BBVA Seguros México,2026-10-16T13:20:59.309+00:00,in-sales-nav
 635667c6c3f97e0001408832,Vianney,Ro***z,Open Banking Business Innovation Front Senior Manager,BBVA en México,bbva.mx,BBVA Seguros México,2026-10-23T08:49:56.000+00:00,not-selected
 63fcd40bf887320001b92142,Rodolfo,Re***s,Estrategia Legal de Innovación y Nuevas Tecnologías Banca de Consumo,BBVA en México,bbva.mx,BBVA Seguros México,2026-10-11T03:24:39.639+00:00,not-selected
 54a306067468693fda228c4e,Alejandro,Ol***a,Head of Strategy & Business Innovation en Open Banking,BBVA en México,bbva.mx,BBVA Seguros México,2026-10-30T02:58:02.906+00:00,not-selected
@@ -446,8 +446,8 @@ apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,l
 5dde1b87327f1e00015c246d,Jorge,Re***n,Lic. en Actuaría,MAPFRE MEXICO,mapfre.com.mx,MAPFRE México,2026-10-17T18:41:27.347+00:00,not-selected
 65247f55328de00001340445,Florencia,Ne***z,Responsable Suscripción Salud,MAPFRE MEXICO,mapfre.com.mx,MAPFRE México,2026-10-14T21:11:43.000+00:00,not-selected
 6358c40789017f0001fddd3b,Ana,Lo***z,Responsable Suscripción Daños,MAPFRE MEXICO,mapfre.com.mx,MAPFRE México,2026-10-23T14:03:24.000+00:00,not-selected
-6689fcff4308190001afb9c0,Mario,Me***z,Subdirector Suscripción Vida,MAPFRE MEXICO,mapfre.com.mx,MAPFRE México,2026-10-25T01:36:12.489+00:00,candidate
-60fe822398d8370001b33396,Juan,Pe***z,Director Actuarial,MAPFRE MEXICO,mapfre.com.mx,MAPFRE México,2026-10-21T22:20:04.000+00:00,candidate
+6689fcff4308190001afb9c0,Mario,Me***z,Subdirector Suscripción Vida,MAPFRE MEXICO,mapfre.com.mx,MAPFRE México,2026-10-25T01:36:12.489+00:00,enriched
+60fe822398d8370001b33396,Juan,Pe***z,Director Actuarial,MAPFRE MEXICO,mapfre.com.mx,MAPFRE México,2026-10-21T22:20:04.000+00:00,enriched
 54a1f6b474686930c2962501,Lourdes,Ba***o,Gerente General Suscripción Automóviles,MAPFRE MEXICO,mapfre.com.mx,MAPFRE México,2026-08-30T05:20:38.000+00:00,not-selected
 6422c3445470c10001525925,Enrique,To***s,Subdirector Suscripción Daños en Mapfre Mexico,MAPFRE MEXICO,mapfre.com.mx,MAPFRE México,2026-06-08T21:10:32.000+00:00,not-selected
 55714e4473696458c16f6100,Edgard,To***s,Responsable Técnico y de Suscripción Fianzas,MAPFRE MEXICO,mapfre.com.mx,MAPFRE México,2026-10-15T17:53:58.000+00:00,not-selected
@@ -455,17 +455,17 @@ apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,l
 66d4a224a84e510001e34a62,Francisco,Mo***s,Director Técnico Daños,MAPFRE MEXICO,mapfre.com.mx,MAPFRE México,2026-09-18T10:16:25.000+00:00,not-selected
 68650324d337ab0001fa5f98,Ana,Ga***a,Actuaria,MAPFRE MEXICO,mapfre.com.mx,MAPFRE México,2026-09-09T22:30:40.500+00:00,not-selected
 6742272efdc58b00016905c2,Ruben,Ca***o,Especialista en Seguros de Vida,MAPFRE MEXICO,mapfre.com.mx,MAPFRE México,2026-10-18T00:42:26.380+00:00,not-selected
-5ce43622f6512573b0de19a5,Keiko,Im***o,Chief Underwriter,"Reinsurance Group of America, Incorporated",rgare.com,RGA Mexico,2026-10-26T23:32:26.000+00:00,candidate
+5ce43622f6512573b0de19a5,Keiko,Im***o,Chief Underwriter,"Reinsurance Group of America, Incorporated",rgare.com,RGA Mexico,2026-10-26T23:32:26.000+00:00,enriched
 5f70f66653b15800015fb6db,Luisa,Ca***a,Underwriting,"Reinsurance Group of America, Incorporated",rgare.com,RGA Mexico,2026-10-15T01:02:25.000+00:00,not-selected
 65529300573ef10001a5376f,Ruben,Ma***i,Actuarial Analyst,"Reinsurance Group of America, Incorporated",rgare.com,RGA Mexico,2026-10-15T11:04:32.000+00:00,not-selected
 5f0c7c3adaa3a50001baf351,Ricardo,Mo***l,Sr Actuarial Analyst,"Reinsurance Group of America, Incorporated",rgare.com,RGA Mexico,2026-10-29T03:54:07.290+00:00,not-selected
 674288352bc3870001b2d00a,Sandra,Es***a,Sr. Actuarial Analyst,"Reinsurance Group of America, Incorporated",rgare.com,RGA Mexico,2026-09-21T09:09:32.278+00:00,not-selected
 676a6208a303550001d44ca4,Fabiola,En***n,Senior Actuarial Analyst,"Reinsurance Group of America, Incorporated",rgare.com,RGA Mexico,2026-10-26T02:45:25.350+00:00,not-selected
 611d0fd8e722e10001236736,Marlene,Ju***z,Senior Actuarial Analyst,"Reinsurance Group of America, Incorporated",rgare.com,RGA Mexico,2026-10-16T07:02:14.235+00:00,not-selected
-54c1f2867468697af72d2662,Carolyn,Pr***d,"Head of Underwriting, Latin America","Reinsurance Group of America, Incorporated",rgare.com,RGA Mexico,2026-11-01T00:54:52.252+00:00,candidate
+54c1f2867468697af72d2662,Carolyn,Pr***d,"Head of Underwriting, Latin America","Reinsurance Group of America, Incorporated",rgare.com,RGA Mexico,2026-11-01T00:54:52.252+00:00,enriched
 57c696a2a6da9817f5034d5d,Mayra,Su***z,Actuary,"Reinsurance Group of America, Incorporated",rgare.com,RGA Mexico,2026-10-27T22:50:10.542+00:00,not-selected
 6352848cc0849100019acb5a,Marcela,Or***a,Medical Underwriter,"Reinsurance Group of America, Incorporated",rgare.com,RGA Mexico,2026-09-30T17:10:37.948+00:00,not-selected
-614d966541c5b1000135bb9d,Claudia,Ro***z,Director Suscripción,SCOR,scor.com,SCOR Mexico,2026-08-20T14:46:29.872+00:00,candidate
+614d966541c5b1000135bb9d,Claudia,Ro***z,Director Suscripción,SCOR,scor.com,SCOR Mexico,2026-08-20T14:46:29.872+00:00,in-sales-nav
 68b9070531bf7c000179d1b9,Aline,L,Life & Health Pricing Actuary | Especialista Atuarial,Swiss Re,swissre.com,Swiss Re Brasil,2026-10-01T18:35:50.000+00:00,not-selected
 5ad0a322a6da9883dc270338,Taciana,Ol***a,Subscrição,Swiss Re,swissre.com,Swiss Re Brasil,2026-10-08T20:30:36.000+00:00,not-selected
 66a66139cea3e900011093fb,Luis,Pa***i,Life & Health Pricing Actuary,Swiss Re,swissre.com,Swiss Re Brasil,2026-09-30T01:12:47.000+00:00,not-selected
@@ -489,7 +489,7 @@ apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,l
 69b776d1d8fa060001285b6d,Vitoria,Ta***s,Associate Underwriter Surety,Swiss Re,swissre.com,Swiss Re Brasil,2026-10-23T17:30:56.000+00:00,not-selected
 57d39c18f651252bf91003ab,Herminia,Ro***o,Underwriter,Swiss Re,swissre.com,Swiss Re Brasil,2026-09-07T15:07:43.000+00:00,not-selected
 6598db913c70f300010723f0,Belen,Ba***a,Technical Accounting Life & Health,Swiss Re,swissre.com,Swiss Re Mexico,2026-08-29T11:23:45.000+00:00,not-selected
-6755f911fd6b690001cb279d,Gabriela,Fe***z,Senior Client Manager Life and Health,Swiss Re,swissre.com,Swiss Re Mexico,2025-07-14T12:51:40.058+00:00,candidate
+6755f911fd6b690001cb279d,Gabriela,Fe***z,Senior Client Manager Life and Health,Swiss Re,swissre.com,Swiss Re Mexico,2025-07-14T12:51:40.058+00:00,enriched
 66481e96d450f300014f63fb,Alma,Fr***o,Underwriting Associate,Swiss Re,swissre.com,Swiss Re Mexico,2026-09-15T21:29:57.000+00:00,not-selected
 60cbeb79cae8a10001581c7d,Karina,Ru***z,Underwriting Associate,Swiss Re,swissre.com,Swiss Re Mexico,2026-08-30T08:55:43.000+00:00,not-selected
 66eec5a2329f580001800015,Maria,Le***n,Underwriting Associate,Swiss Re,swissre.com,Swiss Re Mexico,2026-10-15T15:50:14.681+00:00,not-selected
@@ -509,7 +509,7 @@ apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,l
 65ce1178865e880001db6837,Ivan,Va***s,Senior Fac Underwriting Coordinator,Swiss Re,swissre.com,Swiss Re Mexico,2026-10-15T09:42:04.000+00:00,not-selected
 67445502f1d8c70001e80617,Diego,To***s,Senior Treaty Underwriting Analyst,Swiss Re,swissre.com,Swiss Re Mexico,2026-09-24T13:12:20.546+00:00,not-selected
 67e7b2148b1719000144ef31,Jose,Ma***z,Fac Underwriting Coordinator ll,Swiss Re,swissre.com,Swiss Re Mexico,2026-09-22T19:29:58.000+00:00,not-selected
-6353cb682c9c4e0001001088,Antonio,F,"Assistant Medical Director, Latam",Swiss Re,swissre.com,Swiss Re Mexico,2026-10-29T09:59:06.286+00:00,candidate
+6353cb682c9c4e0001001088,Antonio,F,"Assistant Medical Director, Latam",Swiss Re,swissre.com,Swiss Re Mexico,2026-10-29T09:59:06.286+00:00,enriched
 5e76604c14e7fc0001f5a2aa,Gabriela,Tr***s,Senior Facultative Underwriting Coordinator,Swiss Re,swissre.com,Swiss Re Mexico,2026-05-25T10:06:38.000+00:00,not-selected
 662b1d20be37560007da72e5,Carlos,Ro***n,Senior Casualty Underwriting Assitant,Swiss Re,swissre.com,Swiss Re Mexico,2026-10-15T05:23:11.000+00:00,not-selected
 60abb6573d3459000183b5c8,Johana,Re***s,Senior Treaty Underwriting Analyst,Swiss Re,swissre.com,Swiss Re Mexico,2026-09-09T22:58:06.000+00:00,not-selected
@@ -537,6 +537,18 @@ apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,l
 6516a166fa1b8c000186fd9e,Sofia,Ro***z,Product Manager,Swiss Re,swissre.com,Swiss Re Mexico,2026-08-22T15:14:16.766+00:00,not-selected
 54a4a6987468692fa2e78558,Elsa,Ma***s,Actuary,Swiss Re,swissre.com,Swiss Re Mexico,2026-10-04T13:06:18.373+00:00,not-selected
 5e7d7ae302aeca000164ea79,Bryan,Pa***o,Actuarial Analyst,Hannover Re,hannover-re.com,Hannover Re Mexico,2025-09-30T06:03:25.993+00:00,not-selected
-5b9a69c2f874f7f736d900f9,Julio,Le***n,Underwriting Manager,Hannover Re,hannover-re.com,Hannover Re Mexico,2026-08-31T03:23:38.831+00:00,candidate
+5b9a69c2f874f7f736d900f9,Julio,Le***n,Underwriting Manager,Hannover Re,hannover-re.com,Hannover Re Mexico,2026-08-31T03:23:38.831+00:00,enriched
 68c4f2ff902b230001721e1f,Leonel,Ev***s,L&H Actuarial Analyst,Hannover Re,hannover-re.com,Hannover Re Mexico,2026-10-14T22:47:36.000+00:00,not-selected
-66689a055804330001a9cb24,Bryan,Ur***o,L&H Actuarial Manager,Hannover Re,hannover-re.com,Hannover Re Mexico,2026-10-23T21:28:02.836+00:00,candidate
+66689a055804330001a9cb24,Bryan,Ur***o,L&H Actuarial Manager,Hannover Re,hannover-re.com,Hannover Re Mexico,2026-10-23T21:28:02.836+00:00,enriched
+54abce457468692ca11f7a0e,Jose,Ju***o,Director de Seguros Protection,HSBC,,HSBC Seguros México,2026-11-06T22:59:42.750+00:00,enriched
+626083c412523e0001557fc0,Juan,Ca***o,Head of Insurance Specialists HSBC Seguros,HSBC,,HSBC Seguros México,2026-09-18T15:55:32.000+00:00,enriched
+57de3c62a6da987b59de1121,Hector,La***a,SD Técnico Global Vida,BBVA,,BBVA Seguros México,2026-09-26T21:58:51.365+00:00,enriched
+60be2d270429900001c76f7e,Xabier,Ri***a,Director Estrategia y Portafolio de Seguros,BBVA en México,,BBVA Seguros México,2026-11-01T23:23:06.000+00:00,enriched
+54a6f98b74686965d9d37109,Daniel,Be***a,"Director de Tecnología, Seguros y Pensiones",BBVA,,BBVA Seguros México,2026-09-22T16:25:30.677+00:00,enriched
+6a24c42fa1cd8e0001508616,Moises,Ar***s,Presidente BBVA Seguros,BBVA en México,,BBVA Seguros México,2026-09-30T17:06:36.216+00:00,enriched
+57d48062a6da9853f5411736,Julio,Ol***a,President,BB Seguros,,Brasilseg,2026-10-11T01:21:01.000+00:00,enriched
+54a82ece74686975f8554166,Bernardo,Ca***o,Diretor-Presidente na Bradesco Vida e Previdência,Bradesco Seguros,,Bradesco Vida e Previdência,2026-10-29T03:21:24.000+00:00,enriched
+54a90b01746869334a2fa40b,Estevao,Sc***i,Diretor na Bradesco Vida e Previdência,Bradesco Seguros,,Bradesco Vida e Previdência,2026-10-06T14:48:06.000+00:00,enriched
+695ad0d8727e3a00012b8bfa,Alessandro,Ma***i,Superintendente Sênior na Bradesco Vida e Previdência,Bradesco Seguros,,Bradesco Vida e Previdência,2026-10-14T10:15:28.000+00:00,enriched
+685ccb6af28eb70001e01d41,Francisco,Ma***s,Head of L&H Business Development Latin America,SCOR,,SCOR Mexico,2026-10-13T12:53:56.000+00:00,enriched
+684e597798d1980001ae4017,Yolanda,Gu***z,"Senior Client Manager - Mexico, Central America & Caribbean L&H",SCOR,,SCOR Mexico,2026-10-14T22:05:48.000+00:00,enriched
