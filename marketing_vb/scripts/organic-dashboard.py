@@ -31,6 +31,9 @@ SOURCES AND DEFINITIONS
   * Google Search Console (sc-domain:3dlook.ai), final data only. Clicks by page are summed from
     [date, page] rows, so anonymised queries are included. Pages are grouped by URL (PAGE RULES) and
     each group belongs to a product (PRODUCT_OF_GROUP).
+    Clicks from Arabic-speaking countries (ARAB_COUNTRIES) are also shown apart: consumer queries in Arabic
+    ("3D body shape from height and weight") land on the homepage. Not the ICP. That cluster was lost on
+    2026-01-27 and came back from the week of 2026-10-19, so it would otherwise read as organic growth.
   * GA4 property 251675969. Traffic tagged by the "Internal Traffic" and "Developer Traffic" data
     filters (Testing mode since 2026-10-01) is excluded. Organic = session default channel group
     "Organic Search". AI assistants = session source matching AI_SOURCE.
@@ -111,6 +114,9 @@ GA4_GAP = (_dt.date(2026, 2, 5), _dt.date(2026, 6, 25))
 TITLE = "3DLOOK Organic Dashboard"
 RANK_WEEKS = 12                                 # heat-map columns on the Rankings tab
 OVERVIEW_TTL_DAYS = 30
+
+# GSC country codes (ISO 3166-1 alpha-3). Consumer Arabic queries, not the ICP: see the docstring.
+ARAB_COUNTRIES = "^(sau|are|egy|jor|kwt|qat|bhr|omn|irq|mar|dza|tun|lby|lbn|syr|yem|pse|sdn)$"
 
 INTERNAL_FILTERS = ["Internal Traffic", "Developer Traffic"]
 AI_SOURCE = (r"(chatgpt|openai|perplexity|claude\.ai|anthropic|gemini\.google|bard\.google|copilot|deepseek|"
@@ -425,6 +431,16 @@ def collect_gsc_pages(start: _dt.date, end: _dt.date) -> list[tuple]:
     return out
 
 
+def collect_gsc_arab(start: _dt.date, end: _dt.date) -> list[tuple]:
+    """(day, clicks, impressions) from Arabic-speaking countries, whole site."""
+    out = []
+    for a, b in month_chunks(start, end):
+        for r in gsc(a, b, ["date"], [{"dimension": "country", "operator": "includingRegex",
+                                        "expression": ARAB_COUNTRIES}]):
+            out.append((_dt.date.fromisoformat(r["keys"][0]), r["clicks"], r["impressions"]))
+    return out
+
+
 def collect_gsc_keywords(start: _dt.date, end: _dt.date, kws: list[dict]) -> list[tuple]:
     """(day, query, country, clicks, impressions, position*impressions) for the tracked keywords."""
     words = sorted({k["keyword"] for k in kws})
@@ -629,7 +645,7 @@ class Agg:
             self.Q[quarter_key(day)][key] += value
 
 
-def build(end: _dt.date, gsc_pages, gsc_kw, ga, hs, ahr, kws, state) -> dict:
+def build(end: _dt.date, gsc_pages, gsc_arab, gsc_kw, ga, hs, ahr, kws, state) -> dict:
     weeks = []
     w = HISTORY_START
     while w + _dt.timedelta(days=6) <= end:
@@ -639,9 +655,13 @@ def build(end: _dt.date, gsc_pages, gsc_kw, ga, hs, ahr, kws, state) -> dict:
     for day, path, clicks, impr, _ in gsc_pages:
         g = page_group(path)
         A.add(day, "clicks", clicks)
+        A.add(day, "clicks_ex_arab", clicks)
         A.add(day, f"clicks|{g}", clicks)
         A.add(day, f"clicks|{PRODUCT_OF_GROUP[g]}", clicks)
         A.add(day, "impr", impr)
+    for day, clicks, _ in gsc_arab:
+        A.add(day, "clicks_arab", clicks)
+        A.add(day, "clicks_ex_arab", -clicks)
     for day, path, s, e, _ in ga["landing"]:
         p = page_product(path)
         A.add(day, "org_sessions", s)
@@ -744,7 +764,8 @@ def tab_values(r: dict) -> dict:
 
     def metric_cols(a, lead_ok, ga_ok=True):
         g = (lambda x: n(x)) if ga_ok else (lambda x: None)
-        return [n(a["clicks"]), *[n(a[f"clicks|{p}"]) for p in SITE_PRODUCTS], *[n(a[f"clicks|{g_}"]) for g_ in GROUPS],
+        return [n(a["clicks"]), n(a["clicks_ex_arab"]), n(a["clicks_arab"]),
+                *[n(a[f"clicks|{p}"]) for p in SITE_PRODUCTS], *[n(a[f"clicks|{g_}"]) for g_ in GROUPS],
                 n(a["impr"]), g(a["org_sessions"]), g(a["org_engaged"]),
                 *[g(a[f"org_engaged|{p}"]) for p in SITE_PRODUCTS], g(a["ai_sessions"]),
                 n(a["leads"]) if lead_ok else None, n(a["demo_clicks"]) if lead_ok else None,
@@ -753,7 +774,9 @@ def tab_values(r: dict) -> dict:
                 n(a["mt_signups"]), n(a["mt_signups_organic"]),
                 *[v for p in PRODUCTS for v in (n(a[f"deals|{p}"]), n(a[f"deals_organic|{p}"]))]]
 
-    metric_hdr = ["Google clicks: whole site", *[f"Google clicks: {p}" for p in SITE_PRODUCTS],
+    metric_hdr = ["Google clicks: whole site", "Google clicks: whole site excl. Arabic-speaking countries",
+                  "Google clicks: Arabic-speaking countries (consumer queries, not ICP)",
+                  *[f"Google clicks: {p}" for p in SITE_PRODUCTS],
                   *[f"Google clicks: {g}" for g in GROUPS], "Google impressions: whole site",
                   "GA4 organic sessions", "GA4 engaged organic sessions",
                   *[f"Engaged organic sessions: {p}" for p in SITE_PRODUCTS], "Sessions from AI assistants",
@@ -946,6 +969,8 @@ def tab_values(r: dict) -> dict:
          kpi("Organic Google clicks, whole site", "clicks"),
          *[kpi(f"   {p} pages and content", f"clicks|{p}") for p in PRODUCTS],
          kpi("   Homepage and general pages", "clicks|General"),
+         kpi("Organic Google clicks, whole site excl. Arabic-speaking countries", "clicks_ex_arab"),
+         kpi("   Arabic-speaking countries (consumer queries, not ICP)", "clicks_arab"),
          kpi("Engaged organic sessions, whole site (GA4)", "org_engaged"),
          kpi("Sessions from AI assistants (ChatGPT, Perplexity, Gemini …)", "ai_sessions"),
          kpi("Inbound contacts with a work email", "work"),
@@ -1047,6 +1072,11 @@ ABOUT = [
               "(about two days' lag)."],
     ["Google clicks", "Google Search Console, sc-domain:3dlook.ai, web search, all countries. Summed by page, so "
                       "anonymised queries are included."],
+    ["Arabic-speaking countries", "Google clicks from Saudi Arabia, Iraq, Egypt, the UAE and the other Arab League "
+                                  "countries, shown apart. They are consumer queries in Arabic (“3D body shape from "
+                                  "height and weight”) that land on the homepage, not our buyers. Lost on 27 Jan "
+                                  "2026, back from the week of 19 Oct 2026. Without this split they read as organic "
+                                  "growth."],
     ["Page groups and products", "FitXpress = /fitxpress/…, /for-…, the telehealth page and Content Hub articles on "
                                  "health, fitness, GLP-1, body composition, insurance, occupational health. Mobile "
                                  "Tailor = /mobile-tailor/…, YourFit and apparel/fashion articles. Wrist Measurement "
@@ -1390,6 +1420,8 @@ def report_text(r: dict, v: dict, sid: str) -> str:
              f"• Кліки з Google, весь сайт: {val('clicks')}",
              f"  FitXpress {n(W[wk]['clicks|FitXpress'])} · MT {n(W[wk]['clicks|Mobile Tailor'])} · "
              f"Wrist {n(W[wk]['clicks|Wrist Measurement'])} · головна і загальні {n(W[wk]['clicks|General'])}",
+             f"  без арабських країн: {val('clicks_ex_arab')}; арабські (споживчі запити, не ICP): "
+             f"{n(W[wk]['clicks_arab'])}",
              f"• Сесії з AI-асистентів: {val('ai_sessions')}",
              f"• Заявки на сайті (GA4): {n(W[wk]['leads'])} · demo-кліки: {n(W[wk]['demo_clicks'])}",
              f"• Контакти з робочою поштою: {n(W[wk]['work'])} (FX {n(W[wk]['work|FitXpress'])} · "
@@ -1425,12 +1457,13 @@ def run(args) -> int:
     sundays = [HISTORY_START + _dt.timedelta(days=7 * i + 6) for i in range(weeks_n)]
     print(f"window {HISTORY_START} … {end} ({weeks_n} weeks)", file=sys.stderr)
     gsc_pages = collect_gsc_pages(HISTORY_START, end)
+    gsc_arab = collect_gsc_arab(HISTORY_START, end)
     gsc_kw = collect_gsc_keywords(HISTORY_START, end, kws)
     ga = collect_ga4(HISTORY_START, end)
     hs = collect_hubspot(HISTORY_START, end)
     ahr = collect_ahrefs(kws, sundays, state, use_api=not args.no_ahrefs)
     save_state(state)                            # keep the paid-for Ahrefs snapshots even if the Sheet fails
-    r = build(end, gsc_pages, gsc_kw, ga, hs, ahr, kws, state)
+    r = build(end, gsc_pages, gsc_arab, gsc_kw, ga, hs, ahr, kws, state)
     v = tab_values(r)
     print(f"gsc page rows {len(gsc_pages)}, keyword rows {len(gsc_kw)}, ga4 landing rows {len(ga['landing'])}, "
           f"hubspot contacts {hs['raw_contacts']} → inbound {len(hs['contacts'])} (dropped {hs['dropped']}), "
