@@ -1,0 +1,135 @@
+{
+ "campaign": "2026-11-05-latam-insurance-underwriting",
+ "checked": 35,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-1",
+ "generated": "2026-11-10T09:48:20",
+ "hard": [],
+ "soft": [
+  [
+   "pricing word",
+   "ana-bobis-382975a9 M1",
+   "Hi Ana, Azos's online quote asks for height and weight before any health question, and your pricing builds on…"
+  ],
+  [
+   "pricing word",
+   "ana-bobis-382975a9 M2",
+   "A colleague who maintains the pricing assumptions may be the better contact."
+  ],
+  [
+   "pricing word",
+   "raul-lobo-800596105 M1",
+   "Hi Raul, Your move from pricing at Stone to leading data at Azos fits a question about inputs."
+  ],
+  [
+   "pricing word",
+   "rafael-lopes-ribeiro M1",
+   "Hi Rafael, On Private Solutions cases issued without exams at MAG Seguros, nobody measures the applicant, and…"
+  ],
+  [
+   "pricing word",
+   "rafael-lopes-ribeiro M2",
+   "Hi Rafael, Pricing for Private Solutions stays as it is."
+  ],
+  [
+   "near-duplicate sentence",
+   "BBVA Seguros México: nachogarciacanton / luis-hidalgo-50216b12b",
+   "«the insurer's threshold decides when a flag appea…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "MAG Seguros: marco-giorgetti-824bbb23 / carlos-am%c3%a9rico-pugliesi-figueiredo-1631bb14",
+   "«the owner of underwriting rules for declaration c…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Azos: renatotfarias / raul-lobo-800596105",
+   "«fitxpress takes 2 photos in the application.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Azos: ana-bobis-382975a9 / bernardo-correa-ribeiro-73620394",
+   "«the flag appears only when the gap from the decla…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Azos: bernardo-correa-ribeiro-73620394 / julia-martins-pm",
+   "«a flag appears only when the gap from the declare…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Azos: julia-martins-pm / acalazans",
+   "«next to that screen, the applicant takes 2 photos…»"
+  ],
+  [
+   "sentence opening repeated",
+   "BBVA Seguros México ×13",
+   "«fitxpress does not make underwriting…»: daniel-oliva-becerra-a9665996, daniel-ordaz-palacios-27b22845, felipe-orozco-8287b5142, fernando-campos-garcía-850716a3"
+  ],
+  [
+   "sentence opening repeated",
+   "MAG Seguros ×9",
+   "«fitxpress does not make underwriting…»: carlos-am%c3%a9rico-pugliesi-figueiredo-1631bb14, dayana-gon%c3%a7alves-s-bandeira-de-mello-37163433, eugenioguerimjr-198b8924, larissa-althoff-71907094"
+  ],
+  [
+   "sentence opening repeated",
+   "Azos ×13",
+   "«fitxpress does not make underwriting…»: acalazans, ana-bobis-382975a9, bernardo-correa-ribeiro-73620394, heloisa-falcão"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "Azos ×2",
+   "«azos's online quote…»: acalazans, ana-bobis-382975a9"
+  ],
+  [
+   "M1 product sentence shared",
+   "BBVA Seguros México ×2",
+   "«x adds 2 photos and a…»: h%c3%a9ctor-ju%c3%a1rez-lara-4a35a028, isaac-flores-lira-856743189"
+  ],
+  [
+   "M1 product sentence shared",
+   "BBVA Seguros México ×2",
+   "«x takes 2 photos in the…»: fernando-campos-garcía-850716a3, pedro-lopez-comision-de-honor-b50a0835"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×8",
+   "«a smart scales weight estimate…»: daniel-ordaz-palacios-27b22845, h%c3%a9ctor-ju%c3%a1rez-lara-4a35a028, isaac-flores-lira-856743189, liliana-r-1052a38"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«a gap between declared and…»: acalazans, carlos-am%c3%a9rico-pugliesi-figueiredo-1631bb14, felipe-orozco-8287b5142, liliana-r-1052a38"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«a threshold the insurer sets…»: daniel-ordaz-palacios-27b22845, isaac-flores-lira-856743189, pedro-lopez-comision-de-honor-b50a0835, sandra-nacul-méndez-60693736"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«above the estimate s error…»: ana-bobis-382975a9, rafael-lopes-ribeiro, renatotfarias"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«acceptance extra premiums and routing…»: acalazans, carlos-am%c3%a9rico-pugliesi-figueiredo-1631bb14, liliana-r-1052a38"
+  ],
+  [
+   "speed wording",
+   "rafael-clo M1",
+   "use «under 45 seconds from the photos to structured results» verbatim"
+  ],
+  [
+   "speed wording",
+   "luan-noe M1",
+   "use «under 45 seconds from the photos to structured results» verbatim"
+  ],
+  [
+   "speed wording",
+   "victor-ribeiro-reis M1",
+   "use «under 45 seconds from the photos to structured results» verbatim"
+  ]
+ ]
+}

@@ -1,0 +1,110 @@
+{
+ "campaign": "2026-11-05-latam-insurance-underwriting",
+ "checked": 35,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-2",
+ "generated": "2026-11-10T09:49:14",
+ "hard": [],
+ "soft": [
+  [
+   "near-duplicate sentence",
+   "Allianz Brasil: eduard-folch / javier-bernat-a16397162",
+   "«in vida individual sales without an exam, nobody…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allianz Brasil: javier-bernat-a16397162 / caio-souza-787b8215",
+   "«an applicant takes 2 photos, smart scales gives a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "AXA Seguros México: estelle--hascoet / tonantzintapia",
+   "«axa's life applications have asked for height and…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "AXA Seguros México: beltrando-pini-59318630 / tonantzintapia",
+   "«axa's individual life applications have asked for…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA Mexico: dominique-hierro-116a1943 / jesus-spinola-grandio-80462345",
+   "«fitxpress brings 2 photos to the application, wit…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "RGA Mexico: jesus-spinola-grandio-80462345 / lorena-cruz-vega-1153825a",
+   "«client insurers decide many life cases on a decla…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Seguros Banorte: andres-amtzs / susana-granados-049025309",
+   "«if a call helps, you can pick a slot at kateryna»"
+  ],
+  [
+   "sentence opening repeated",
+   "Brasilseg ×3",
+   "«fitxpress does not make underwriting…»: gustavo-oliveira-guga-969114145, júlio-cezar-oliveira-oliveira-393b5444, thiago-affonso-borsari-29456365"
+  ],
+  [
+   "sentence opening repeated",
+   "MAPFRE México ×7",
+   "«fitxpress does not make underwriting…»: aldono, felipe-octavio-gutierrez-manjarrez-a87b5224, juanorp, manuel-matamoros-arreguin-4a225066"
+  ],
+  [
+   "sentence opening repeated",
+   "Allianz Brasil ×8",
+   "«fitxpress does not make underwriting…»: alexandra-rossini-ruz-0a132028, caio-souza-787b8215, eduard-folch, fabio-morita"
+  ],
+  [
+   "sentence opening repeated",
+   "AXA Seguros México ×7",
+   "«fitxpress does not make underwriting…»: beltrando-pini-59318630, efrainb, estelle--hascoet, jj-lunac"
+  ],
+  [
+   "sentence opening repeated",
+   "RGA Mexico ×6",
+   "«fitxpress does not make underwriting…»: carolyn-pritchard-9151b621, cesarcastilloarroyo, dominique-hierro-116a1943, jesus-spinola-grandio-80462345"
+  ],
+  [
+   "sentence opening repeated",
+   "Seguros Banorte ×4",
+   "«fitxpress does not make underwriting…»: andres-amtzs, eduardo-guti%c3%a9rrez-rojo-712930103, luis-pi%c3%b1%c3%b3n-2053b7145, susana-granados-049025309"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×18",
+   "«a smart scales weight estimate…»: aldono, andres-amtzs, dominique-hierro-116a1943, efrainb"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«a gap between declared and…»: cesarcastilloarroyo, fabio-morita, lorena-cruz-vega-1153825a, robertogonzalezmend"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«acceptance extra premiums and routing…»: fabio-morita, lorena-cruz-vega-1153825a, robertogonzalezmend, susana-granados-049025309"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«a threshold the insurer sets…»: andres-amtzs, efrainb, maritere-torcida"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«above the estimate s error…»: alexandra-rossini-ruz-0a132028, carolyn-pritchard-9151b621, juanorp"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«current route for anyone who…»: jesus-spinola-grandio-80462345, manuel-matamoros-arreguin-4a225066, maritere-torcida"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«in the application a smart…»: efrainb, josemilson-silva-132851b, keiko-imuro-419585159"
+  ]
+ ]
+}

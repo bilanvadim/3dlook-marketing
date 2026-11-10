@@ -1,0 +1,120 @@
+{
+ "campaign": "2026-11-05-latam-insurance-underwriting",
+ "checked": 23,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "bradesco-vida-e-previd-ncia",
+ "generated": "2026-11-10T09:47:49",
+ "hard": [],
+ "soft": [
+  [
+   "pricing word",
+   "pedropaulof M1",
+   "Hi Pedro, Noticed your pricing and underwriting role at Bradesco Vida e Previdência."
+  ],
+  [
+   "pricing word",
+   "pedropaulof M2",
+   "Hi Pedro, For pricing, the useful part is one timestamped record per applicant, delivered through the API or…"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bradesco Vida e Previdência: guilherme-haraguchi / josefielloureiro",
+   "«where a life application is decided on a declarat…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bradesco Vida e Previdência: ney-ferraz-dias / estevao-scripilliti",
+   "«you can choose a time for a call at kateryna»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bradesco Vida e Previdência: thais-polegato-1822003a / alessandro-malavazi",
+   "«for life cases accepted on a health declaration,…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bradesco Vida e Previdência: thais-polegato-1822003a / pedropaulof",
+   "«for life cases accepted on a health declaration,…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bradesco Vida e Previdência: thais-polegato-1822003a / marcio-gliosci-39b634106",
+   "«my calendar for a call is open at kateryna»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bradesco Vida e Previdência: dirlei-jordão-96246b40 / reisedilson",
+   "«hi dirlei, on the insurance side of your remit at…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bradesco Vida e Previdência: almir-ximenes-25a8aa4b / thiago-dos-santos-sousa-4a0bb722",
+   "«fitxpress adds 2 photos at that step and flags a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bradesco Vida e Previdência: caio-mastronell-86a67758 / pedropaulof",
+   "«you can pick a time with me at kateryna»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bradesco Vida e Previdência: caio-mastronell-86a67758 / jos%c3%a9-luiz-fontes",
+   "«you can pick a time with me at kateryna»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bradesco Vida e Previdência: bernardo-castello / marcio-gliosci-39b634106",
+   "«fitxpress adds 2 photos to cases decided on what…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bradesco Vida e Previdência: bernardo-castello / fabio-magalh%c3%a3es-",
+   "«i would value a call, and you can book it at kate…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bradesco Vida e Previdência: alessandro-malavazi / pedropaulof",
+   "«where those cases rest on a declaration, no exam…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bradesco Vida e Previdência: pedropaulof / gabriel-nobre-soares-9165ab123",
+   "«on cases decided on a declaration, no exam measur…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bradesco Vida e Previdência: pedropaulof / jos%c3%a9-luiz-fontes",
+   "«you can book a call with me at kateryna»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bradesco Vida e Previdência: gabriel-nobre-soares-9165ab123 / abelardo-filho-39486487",
+   "«on declaration cases, no exam measures height or…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bradesco Vida e Previdência: fernando-mendon%c3%a7a-8b47855 / abelardo-filho-39486487",
+   "«in that journey no exam measures height or weight.»"
+  ],
+  [
+   "sentence opening repeated",
+   "Bradesco Vida e Previdência ×23",
+   "«fitxpress does not make underwriting…»: abelardo-filho-39486487, alessandro-malavazi, almir-ximenes-25a8aa4b, bernardo-castello"
+  ],
+  [
+   "sentence opening repeated",
+   "Bradesco Vida e Previdência ×3",
+   "«fitxpress adds 2 photos to…»: bernardo-castello, marcio-gliosci-39b634106, pedropaulof"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×7",
+   "«a smart scales weight estimate…»: bernardo-castello, fernando-mendon%c3%a7a-8b47855, fernandocampilho, gabriel-nobre-soares-9165ab123"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«one timestamped record per applicant…»: felipeszuster, fernando-mendon%c3%a7a-8b47855, guilherme-haraguchi, jos%c3%a9-luiz-fontes"
+  ]
+ ]
+}

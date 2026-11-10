@@ -1,0 +1,45 @@
+{
+ "campaign": "2026-11-05-latam-insurance-underwriting",
+ "checked": 12,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-3",
+ "generated": "2026-11-10T09:46:30",
+ "hard": [],
+ "soft": [
+  [
+   "pricing word",
+   "yolanda-gutierrez-b674b717b M1",
+   "Hi Yolanda, Had a thought on your move from pricing actuary to client management for Mexican L&H at SCOR."
+  ],
+  [
+   "pricing word",
+   "bryan-urbano-b38a71106 M1",
+   "Hi Bryan, Got me thinking about L&H pricing at Hannover Re Mexico, where you help clients design products."
+  ],
+  [
+   "pricing word",
+   "bryan-urbano-b38a71106 M2",
+   "Hi Bryan, For a pricing assumption the estimate's error matters."
+  ],
+  [
+   "sentence opening repeated",
+   "Swiss Re Mexico ×3",
+   "«fitxpress does not make underwriting…»: antonioferramd, gmfentanez1402, paulina-noyola-87a3a6112"
+  ],
+  [
+   "sentence opening repeated",
+   "SCOR Mexico ×3",
+   "«fitxpress does not make underwriting…»: claudia-rodríguez-gomez-5a6253162, franciscomajos, yolanda-gutierrez-b674b717b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«a smart scales weight estimate…»: bryan-urbano-b38a71106, claudia-rodríguez-gomez-5a6253162, franciscomajos, gmfentanez1402"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«is not a scale reading…»: antonioferramd, bryan-urbano-b38a71106, claudia-rodríguez-gomez-5a6253162"
+  ]
+ ]
+}

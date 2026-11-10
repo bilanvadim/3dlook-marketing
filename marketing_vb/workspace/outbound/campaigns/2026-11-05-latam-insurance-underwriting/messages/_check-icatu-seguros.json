@@ -1,0 +1,50 @@
+{
+ "campaign": "2026-11-05-latam-insurance-underwriting",
+ "checked": 21,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "icatu-seguros",
+ "generated": "2026-11-10T09:47:34",
+ "hard": [],
+ "soft": [
+  [
+   "pricing word",
+   "l%c3%adgia-abreu-6871b9147 M1",
+   "Hi Ligia, Icatu raised the highest sum insured on its individual life products in July, which gives each pric…"
+  ],
+  [
+   "pricing word",
+   "l%c3%adgia-abreu-6871b9147 M2",
+   "Hi Ligia, A flag at the threshold you choose would show your pricing team which larger cases carry a gap betw…"
+  ],
+  [
+   "pricing word",
+   "priscilla-teixeira-58140031 M1",
+   "Pricing that older entry age is part of your work."
+  ],
+  [
+   "near-duplicate sentence",
+   "Icatu Seguros: rachel-ferreira-bonel-85583a73 / rafael-saile-90296635",
+   "«the capture is 2 photos in the application.»"
+  ],
+  [
+   "sentence opening repeated",
+   "Icatu Seguros ×21",
+   "«fitxpress does not make underwriting…»: andreolivacarneiro, antonio-carlos-almeida-braga-656229135, beatriz-helena-150154b8, bernardo-dieckmann-8a399678"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«a flag when the gap…»: beatriz-helena-150154b8, bernardo-dieckmann-8a399678, césar-saut-5444563b4, humberto-sardenberg"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«a smart scales weight estimate…»: beatriz-helena-150154b8, humberto-sardenberg, ingrid-pereira-39a8882b, marcela-gueiros"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«between declared and estimated weight…»: bernardo-dieckmann-8a399678, l%c3%adgia-abreu-6871b9147, leonardohijino"
+  ]
+ ]
+}

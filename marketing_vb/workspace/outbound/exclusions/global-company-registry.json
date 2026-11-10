@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-09",
+  "last_updated": "2026-11-10",
   "companies": {
     "safariland": {
       "covered_by_profile": null,
@@ -3363,6 +3363,150 @@
       "campaign_id": "2026-10-22-uk-insurance-underwriting",
       "product": "fitxpress",
       "date": "2026-10-22",
+      "status": "active"
+    },
+    "allianz-brasil": {
+      "display_name": "Allianz Brasil",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-05-latam-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-11-05",
+      "status": "active"
+    },
+    "axa-seguros-m-xico": {
+      "display_name": "AXA Seguros México",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-05-latam-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-11-05",
+      "status": "active"
+    },
+    "azos": {
+      "display_name": "Azos",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-05-latam-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-11-05",
+      "status": "active"
+    },
+    "bbva-seguros-m-xico": {
+      "display_name": "BBVA Seguros México",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-05-latam-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-11-05",
+      "status": "active"
+    },
+    "bradesco-vida-e-previd-ncia": {
+      "display_name": "Bradesco Vida e Previdência",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-05-latam-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-11-05",
+      "status": "active"
+    },
+    "brasilseg": {
+      "display_name": "Brasilseg",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-05-latam-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-11-05",
+      "status": "active"
+    },
+    "hannover-re-brasil": {
+      "display_name": "Hannover Re Brasil",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-05-latam-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-11-05",
+      "status": "active"
+    },
+    "hannover-re-mexico": {
+      "display_name": "Hannover Re Mexico",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-05-latam-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-11-05",
+      "status": "active"
+    },
+    "hsbc-seguros-m-xico": {
+      "display_name": "HSBC Seguros México",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-05-latam-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-11-05",
+      "status": "active"
+    },
+    "icatu-seguros": {
+      "display_name": "Icatu Seguros",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-05-latam-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-11-05",
+      "status": "active"
+    },
+    "mag-seguros": {
+      "display_name": "MAG Seguros",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-05-latam-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-11-05",
+      "status": "active"
+    },
+    "mapfre-m-xico": {
+      "display_name": "MAPFRE México",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-05-latam-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-11-05",
+      "status": "active"
+    },
+    "rga-mexico": {
+      "display_name": "RGA Mexico",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-05-latam-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-11-05",
+      "status": "active"
+    },
+    "scor-brasil": {
+      "display_name": "SCOR Brasil",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-05-latam-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-11-05",
+      "status": "active"
+    },
+    "scor-mexico": {
+      "display_name": "SCOR Mexico",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-05-latam-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-11-05",
+      "status": "active"
+    },
+    "seguros-banorte": {
+      "display_name": "Seguros Banorte",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-05-latam-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-11-05",
+      "status": "active"
+    },
+    "swiss-re-brasil": {
+      "display_name": "Swiss Re Brasil",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-05-latam-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-11-05",
+      "status": "active"
+    },
+    "swiss-re-mexico": {
+      "display_name": "Swiss Re Mexico",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-05-latam-insurance-underwriting",
+      "product": "fitxpress",
+      "date": "2026-11-05",
       "status": "active"
     }
   }
