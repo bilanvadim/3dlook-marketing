@@ -1,0 +1,126 @@
+  Body Composition
+  Tracking for GLP-1
+  Programs
+  Help patients see progress beyond scale weight. Care
+  teams review change at every remote check-in, and
+  patients see it in your app, from two smartphone
+  photos.
+
+
+
+
+     The Challenge                                                            The 3DLOOK Solution
+     Scale weight shows how much a patient lost. It does not                  FitXpress adds a guided body scan to the
+     show how much of that loss was fat and how much was                      program's existing check-in schedule, inside its
+     lean mass. In a SURMOUNT-1 substudy, about 25% of                        own app. Two photos return 80+ body
+     weight lost was lean mass. Between clinic visits, a                      measurements and body composition estimates
+     program that tracks only weight cannot follow body                       in under 45 seconds, as a timestamped record
+     composition.                                                             for the care team and the patient.
+
+
+        Weight-only         Unseen lean           No data                        2 guided photos           Under 45
+         tracking            mass loss         between visits                    (front and side)          seconds
+
+
+       Self-reported         Flat scale                                           Your brand, in            SDK and
+          weight               weeks                                                your app                  API
+
+
+
+
+                          80+ Body                                                                             Smart Scales
+                          Measurements                                                                         Weight Estimate
+Scan Delivers
+What Every
+
+
+
+
+                                                                                                               Waist Change
+                          3D Body Progress
+                                                                                                               Between Check-Ins
+                          (Pro)
+
+
+                          Body Composition                                                                     Check-In
+                          Estimates                                                                            Comparison
+
+
+
+                          BMI and BMR                                                                          Timestamped API
+                                                                                                               Record
+
+
+
+
+      2 Smartphone                Under 45                                                    Structured                   Care-Team
+                                                                AI Analysis
+      Photos                      Seconds                                                     Body Data                    Review
+                                                                                                                                   3dlook.ai
+
+
+                                                                                 Built for Enterprise
+      What This Means                                                            Integration
+      for Your Business                                                          Guided capture embeds in your app;
+                                                                                 results return via the API.
+
+
+                                                                                                                         HIPAA Support
+                                                                                           REST API
+      Progress Beyond        Guided Scans at         A Shared View                                                       Under BAA
+      Scale Weight           Home                    for Care Teams
+                                                                                           Mobile SDK                    Configurable
+                                                                                           (iOS & Android)               Photo Retention
+
+
+                                                                                           Web SDK                       Encrypted Data
+     Patient-Facing          Entered Weight          Scans Under
+     Progress                Cross-Check             Your Brand
+                                                                                           White-Label                   Guided
+                                                                                           Deployment                    Implementation
+
+
+
+                       Pose Validation            Measurements
+                   2                        4
+                       Guides Capture             Generated
+
+
+
+
+                                                                 Data Returned
+                                                                    via API
+
+
+
+
+         Patient Receives          AI Processes                                                          Care Team Reviews
+     1                         3                                                                   5
+         Scan Link                 Body Data                                                             Each Check-In
+
+
+
+
+                                                      Ideal Use Cases
+          GLP-1 Programs           Telehealth        Weight Management Clinics         Metabolic Health Apps       Coaching Programs
+
+
+                             Employer Metabolic Programs            Remote Check-Ins           Dietitian Teams
+
+
+
+
+Why 3DLOOK
+Since 2016, 100+ clients have used 3DLOOK body scanning,
+                                                                                       See FitXpress in Your
+including weight management programs. In internal validation,
+repeat scans differed by less than 1 cm for most measurements.
+                                                                                       Patient Check-In Flow
+FitXpress is not a medical device.
+                                                                                       Guided capture on a phone, a sample record and
+                                                                                       patient-facing progress views.
+   Two Smartphone Photos                   No Hardware
+   Under 45-Second Scan                    White-Label in Your App
+                                                                                              Book a demo
+   80+ Body Measurements                   No Integration Fee
+

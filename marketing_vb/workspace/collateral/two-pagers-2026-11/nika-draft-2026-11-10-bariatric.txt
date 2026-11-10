@@ -1,0 +1,126 @@
+  Body Data for
+  Bariatric Follow-Up
+  Patients scan at home between visits, and the care
+  team gets waist and body composition data at each
+  follow-up. FitXpress can also check BMI before the
+  first consultation.
+
+
+
+
+     The Challenge                                                           The 3DLOOK Solution
+     US-accredited programs follow every patient through 30                  FitXpress runs a guided body scan on the
+     days, 6 months and 1 year, and UK guidance asks for                     patient's own phone at the program's follow-up
+     two years. Each missed time frame means documented                      time frames. Two photos return 80+ body
+     contact attempts, and a phone check-in returns a scale                  measurements and body composition estimates
+     weight at best. A weight-only check cannot show lean                    in under 45 seconds, filed against the pre-
+     mass loss.                                                              surgery baseline for care-team review.
+
+
+        Missed time         Weight-only       Repeat contact                   2 guided photos           Under 45
+          frames             check-ins          attempts                       (front and side)          seconds
+
+
+        Unseen lean         Unchecked                                             Scans from             SDK and
+         mass loss          intake BMI                                              home                   API
+
+
+
+
+                           80+ Body                                                                         Circumference
+                           Measurements                                                                     Measurements
+Scan Delivers
+What Every
+
+
+
+
+                                                                                                            Waist Change
+                           3D Body Progress
+                                                                                                            from Baseline
+                           (Pro)
+
+
+                           Body Composition                                                                 Follow-Up
+                           Estimates                                                                        Comparison
+
+
+
+                           BMI and BMR                                                                      Timestamped API
+                                                                                                            Record
+
+
+
+
+      2 Smartphone                Under 45                                                  Structured                  Care-Team
+                                                               AI Analysis
+      Photos                      Seconds                                                   Body Data                   Review
+                                                                                                                                   3dlook.ai
+
+
+                                                                                    Built for Enterprise
+      What This Means                                                               Integration
+      for Your Business                                                             FitXpress fits the program's follow-up
+                                                                                    schedule and existing systems.
+
+
+                                                                                                                         HIPAA Support
+                                                                                            REST API
+      Follow-Up from        Body Data at              BMI Check                                                          Under BAA
+      Home                  Every Time Frame          Before
+                                                      Surgeon Time
+                                                                                            Mobile SDK                   Configurable
+                                                                                            (iOS & Android)              Photo Retention
+
+
+                                                                                            Web SDK                      Encrypted Data
+      Body Composition      Progress from the         Scans Without
+      Beside Weight         Baseline                  Staff Help
+                                                                                            Admin Panel,                 Guided
+                                                                                            CSV Export                   Implementation
+
+
+
+                       Guided Front and            Measurements
+                   2                         4
+                       Side Capture                Generated
+
+
+
+
+                                                                  Data Returned
+                                                                     via API
+
+
+
+
+         Patient Receives           AI Processes                                                        Care Team Reviews
+     1                        3                                                                     5
+         Scan Link                  Body Data                                                           Against Baseline
+
+
+
+
+                                                       Ideal Use Cases
+            Intake Scans          BMI Checks           Bariatric Surgery Programs        Metabolic Programs         Pre-Qualification
+
+
+                                  Post-Surgery Follow-Up               Patient Portals        Obesity Care Teams
+
+
+
+
+Why 3DLOOK
+Since 2016, 100+ clients have used 3DLOOK body scanning. In
+                                                                                         See Bariatric Follow-Up in
+internal validation, repeat scans differed by less than 1 cm for
+most measurements. FitXpress is not a medical device; clinical
+                                                                                         Your Own Pathway
+decisions stay with the care team.
+                                                                                         Guided capture on a phone, a follow-up comparison
+                                                                                         against the baseline and pilot options.
+   Two Smartphone Photos                   Scans from Home
+   Under 45-Second Scan                    No Hardware
+                                                                                               Book a demo
+   80+ Body Measurements                   No Integration Fee
+

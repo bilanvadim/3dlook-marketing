@@ -1,0 +1,126 @@
+  Body Data for
+  Connected and
+  Digital Fitness
+  Give members a clearer view of body progress at
+  each check-in. FitXpress returns 80+ body
+  measurements and body composition estimates from
+  two guided smartphone photos.
+
+
+
+
+     The Challenge                                                            The 3DLOOK Solution
+     Most fitness apps track progress with a weight log.                      FitXpress runs a guided body scan inside the
+     Weight often barely moves while waist, fat mass and lean                 platform's own app, on the member's phone.
+     mass change. Members who see only a flat weight line                     Two photos return 80+ body measurements
+     have little evidence that the program works, and                         and body composition estimates in under 45
+     progress photos carry no measurements.                                   seconds, sent to the platform as a structured
+                                                                              record through the API.
+
+
+        Flat weight        Unmeasured          Self-reported                     2 guided photos          Under 45
+            line             photos               weight                         (front and side)         seconds
+
+
+       Scans outside        Club-only                                             White-label, in          SDK and
+          the app         body scanners                                            your app                  API
+
+
+
+
+                          80+ Body                                                                            Circumference
+                          Measurements                                                                        Measurements
+Scan Delivers
+What Every
+
+
+
+
+                                                                                                              Waist and Hip
+                          3D Body Progress
+                                                                                                              Change
+                          (Pro)
+
+
+                          Body Composition                                                                    Scan-to-Scan
+                          Estimates                                                                           Comparison
+
+
+
+                          BMI and BMR                                                                         Timestamped API
+                                                                                                              Record
+
+
+
+
+     2 Smartphone                 Under 45                                                   Structured                   In-App
+                                                                AI Analysis
+     Photos                       Seconds                                                    Body Data                    Progress
+                                                                                                                                     3dlook.ai
+
+
+                                                                                   Built for Enterprise
+      What This Means                                                              Integration
+      for Your Business                                                            Embed FitXpress inside your own app,
+                                                                                   under your own brand.
+
+
+                                                                                                                           GDPR Principles
+                                                                                           REST API
+      Progress at            Changes Beyond          Programs Built                                                        Applied
+      Every Check-In         Body Weight             on Body Data
+                                                                                           Mobile SDK                      Configurable
+                                                                                           (iOS & Android)                 Photo Retention
+
+
+                                                                                           Web SDK                         Encrypted Data
+      Features for           Progress Kept in        Scans Under
+      Your Premium           Your App                Your Brand
+      Tier                                                                                 White-Label                     Guided
+                                                                                           Deployment                      Implementation
+
+
+
+                       Pose Validation            Measurements
+                   2                        4
+                       Guides Capture             Generated
+
+
+
+
+                                                                 Data Returned
+                                                                    via API
+
+
+
+
+          Member Starts a          AI Processes                                                          Admin Panel for
+      1                        3                                                                   5
+          Scan in the App          Body Data                                                             Coach Review
+
+
+
+
+                                                      Ideal Use Cases
+           Workout Apps        Coaching Apps         Connected Fitness Platforms       Digital Fitness Apps           Virtual Training
+
+
+                             Fitness Subscription Platforms       Member Onboarding            Premium Tiers
+
+
+
+
+Why 3DLOOK
+Since 2016, 100+ clients have used 3DLOOK body scanning,
+                                                                                       See FitXpress in the
+including fitness teams. Repeat scans typically differ by less than
+1 cm for most measurements, which makes progress between
+                                                                                       Member Flow
+check-ins readable. FitXpress is not a medical device.
+                                                                                       A phone walkthrough of the member flow, a sample
+                                                                                       progress record and a scoped pilot cohort.
+   Two Smartphone Photos                  No Hardware
+   Under 45-Second Scan                   White-Label in Your App
+                                                                                             Book a demo
+   80+ Body Measurements                  No Integration Fee
+
