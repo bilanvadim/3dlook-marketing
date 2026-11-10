@@ -1,0 +1,100 @@
+{
+ "generated": "2026-11-10T05:41:37+00:00",
+ "items": [
+  {
+   "id": "85449475-99a0-4a12-b9c3-1d06f081fb7e",
+   "title": "Heidi Cuts 18% of Workforce as Two Co-Founders Prepare to Exit Following A$475M Funding Round",
+   "date": "2026-11-09",
+   "tags": [
+    "Investments and Partnerships",
+    "Operational Efficiency",
+    "Startup",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/heidi-cuts-18-of-workforce-as-two-co-founders-prepare-to-exit-following-a-475m-funding-round"
+  },
+  {
+   "id": "ca246b28-b2b7-492a-b8a8-6ee07572ee07",
+   "title": "Google DeepMind Expands Antigravity With AI Drug Discovery Tools",
+   "date": "2026-11-09",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Drug Discovery / Pharma / Biotech",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/google-deepmind-expands-antigravity-with-ai-drug-discovery-tools"
+  },
+  {
+   "id": "000b2d30-1195-436d-ba89-cdcc6443e987",
+   "title": "Hims & Hers Partners With Eli Lilly to Offer Branded Weight-Loss Medications",
+   "date": "2026-11-09",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Telehealth / Virtual Care / Remote Patient Monitoring",
+    "Investments and Partnerships",
+    "Health Tech, Solutions & Services",
+    "Chronic Condition Management"
+   ],
+   "url": "https://hlth.com/insights/news/hims-and-hers-partners-with-eli-lilly-to-offer-branded-weight-loss-medications"
+  }
+ ],
+ "analyses": {
+  "85449475-99a0-4a12-b9c3-1d06f081fb7e": {
+   "id": "85449475-99a0-4a12-b9c3-1d06f081fb7e",
+   "score": 0,
+   "segment": "—",
+   "what": "Heidi з Мельбурна (AI для клінічної документації) скорочує близько 18% персоналу. Це відбувається через шість тижнів після фінансування на A$475M, а двоє з трьох співзасновників готуються піти.",
+   "why": "Heidi робить AI-scribe для клінічних записів. Вимірювання тіла чи BMI тут не потрібні, у жоден ICP-сегмент не потрапляє.",
+   "play": "none",
+   "companies": [
+    "Heidi"
+   ],
+   "_date": "2026-11-09"
+  },
+  "ca246b28-b2b7-492a-b8a8-6ee07572ee07": {
+   "id": "ca246b28-b2b7-492a-b8a8-6ee07572ee07",
+   "score": 0,
+   "segment": "—",
+   "what": "Google DeepMind додав в Antigravity AI-агентів для drug discovery: пошук літератури, моделі потентності та пропозиції нових молекул.",
+   "why": "Це ранній R&D молекул у фармі. До даних про тіло чи сегментів 3DLOOK стосунку немає.",
+   "play": "none",
+   "companies": [
+    "Google DeepMind",
+    "Isomorphic Labs",
+    "Iambic",
+    "Owkin"
+   ],
+   "_date": "2026-11-09"
+  },
+  "000b2d30-1195-436d-ba89-cdcc6443e987": {
+   "id": "000b2d30-1195-436d-ba89-cdcc6443e987",
+   "score": 3,
+   "segment": "FitXpress §1 Telehealth & GLP-1 (+ §2 BMI Verification)",
+   "what": "Hims & Hers домовилися з Eli Lilly: Zepbound і Foundayo тепер доступні через їхню платформу за схемою virtual consultation → призначення, якщо воно клінічно доречне → доставка додому. Компанія відмовляється від compounded GLP-1 на користь branded препаратів (раніше так само домовилася з Novo Nordisk). У Q1 і Q2 були збитки, а маржа на branded препаратах зазвичай нижча.",
+   "why": "Тепер кожен пацієнт проходить virtual consultation, а після призначення — регулярні check-ins і clinical support. Тобто є і потік intake з перевіркою eligibility, і довгострокова програма. FitXpress вбудовується в їхній застосунок: з двох фото отримуємо BMI і 80+ вимірів на intake (Smart Scales ловить розбіжність із self-report) і для longitudinal трекінгу на check-ins (3D-візуалізація прогресу). При нижчій маржі на branded препаратах автоматизація intake і валідації знімає ручну роботу з клінічної команди.",
+   "play": "direct_account",
+   "campaign": {
+    "title": "US: Hims & Hers — перевірка даних тіла для branded GLP-1 (один акаунт)",
+    "profile": "nick",
+    "market": "USA",
+    "targets": "Тільки Hims & Hers, кампанія з одним акаунтом, як 2026-10-02-us-virta-health і 2026-10-01-us-options-medical-weight-loss. У реєстрі компанії немає, і клієнтом вона не є.",
+    "roles": "Chief Medical Officer / Medical Director (weight management), Head of Clinical Operations, Head of Product / PM weight loss, Head of Member Engagement / Retention, Growth & Revenue Operations, CTO (кут technical-integration)",
+    "angle": "Після переходу на branded Zepbound/Foundayo кожна virtual consultation має давати лікарю надійні дані про тіло, а маржа стала тоншою. FitXpress дає BMI і заміри з двох фото прямо в intake і на кожному check-in замість ручних фото на вагах, а прогрес пацієнта видно ще до того, як він піде.",
+    "existing_campaign": "",
+    "task": "USA: Hims & Hers (один акаунт) — після партнерства з Lilly (Zepbound/Foundayo) запропонувати верифікований BMI на virtual consultation і трекінг прогресу тіла на check-ins"
+   },
+   "caveat": "Великий публічний гравець, тож enterprise-цикл буде довгим і можлива власна in-house розробка. Квартальні збитки й витрати на вихід із compounded GLP-1 можуть заморозити бюджети на нових vendors. У стаття прямо сказано, що рішення про призначення ухвалює лікар самостійно, тому позиціонувати скан треба як вхідні дані для клініциста, а не як визначення eligibility. Не використовувати формулювання на кшталт «FDA» чи цифри точності щодо 3DLOOK.",
+   "companies": [
+    "Hims & Hers",
+    "Eli Lilly",
+    "Novo Nordisk"
+   ],
+   "_date": "2026-11-09"
+  }
+ },
+ "posts": [
+  "workspace/social/hlth-news/hims-and-hers-partners-with-eli-lilly-to-offer-branded-weight-loss-medications/linkedin-vadim/post.md"
+ ]
+}
