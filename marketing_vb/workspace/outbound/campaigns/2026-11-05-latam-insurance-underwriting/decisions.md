@@ -306,7 +306,7 @@ rodrigopadova | PASS | 3 | proposition | 1 | Icatu head of digital products: own
 jesus-spinola-grandio-80462345 | PASS | 1 | reinsurance | 1 | RGA CEO Latin America, Mexico-based: the Latin American L&H head the card puts at P1 at a life-only reinsurer.
 thiagoraugusto | FAIL | | | | data engineering below CIO
 carloscastillopmp | FAIL | | | | IT infrastructure below CTO
-ivan-passos-6ab45517 | FAIL | | | | located in Brazil, row is Mexico
+ivan-passos-6ab45517 | FAIL | | | | stale title: "CEO Brazil" rests only on a 2009 article; Hannover Re names João Caproni head of the Rio office and SUSEP ordinances 2023/2026 agree (Account facts round 2026-11-10); overrides the pool A promotion.
 adriano-afonso-cruz-3635524a | FAIL | | | | service chief, no function
 edgarmendezocadiz | FAIL | | | | IT below CTO
 marcelo-rocha-de-oliveira-a9b6a51a | FAIL | | | | IT below the CIO
@@ -365,7 +365,7 @@ jj-lunac | PASS | 3 | technical-integration | 1 | AXA México director of techno
 alexandre-arias-bb596b92 | FAIL | | | | IT below the CIO
 fernando-barroso-laiz-82325292 | FAIL | | | | security and fraud control
 jose-luis-campos-tronco-9374b392 | FAIL | | | | not at the company
-bernardo-correa-ribeiro-73620394 | PASS | 1 | proposition | 1 | Azos co-founder: founder of a digital life insurer that owns its application journey.
+bernardo-correa-ribeiro-73620394 | PASS | 2 | referral | 1 | Azos co-founder whose current title is CMO (Account facts round 2026-11-10: RGA-style role re-check, theorg + Azos releases); marketing does not own the application (PPL-3), so referral into the underwriting and product owners.
 larissa-althoff-71907094 | FAIL | | | | distribution partnerships
 raul-lobo-800596105 | WEAK |  |  |  | Data, engineering or infrastructure head outside the card's technical-integration list (CTO, CIO, architect, CISO, DPO, digital channel tech); learnings PPL-3 engineering 1/90 (QC reconciliation 2026-11-09)
 aparecido-josé-isac-8bb94b95 | FAIL | | | | internal audit
@@ -403,7 +403,7 @@ filial-brasilia-048523254 | WEAK |  |  |  | Company-named profile, held for Vadi
 zaya-zaccirattchy-6a9807255 | FAIL | | | | not at the company
 bbf-asociados-0496181b3 | WEAK |  |  |  | Company-named profile, held for Vadim by standing decision 4; not a person at the insurer, coordinator recommends FAIL (QC reconciliation 2026-11-09)
 geovanni-alberto-rábago-flores-9273641b4 | FAIL | | | | territorial operations
-carlos-rogoginsky-junior-49170a1b5 | FAIL | | | | dental background, no life line
+carlos-rogoginsky-junior-49170a1b5 | FAIL | | | | wrong company: senior superintendent at Bradesco Saúde, the health insurer now in Bradsaúde (Revista Apólice 2026-10-20); Account facts round 2026-11-10 overrides the pool C promotion.
 mery-lany-120101228 | FAIL | | | | empty profile, title only
 beatriz-fernandes-duarte-738817215 | FAIL | | | | not at the company
 armando-camacho-40045a261 | FAIL | | | | supplier management, operations
@@ -488,3 +488,9 @@ estevao-scripilliti | WEAK | | referral | | Diretor at Bradesco Vida e Previdên
 alessandro-malavazi | WEAK | | proposition | | Superintendente Sênior at Bradesco Vida e Previdência with no function shown; his actuarial past points to life pricing, and he is the account's only route-in below C-level if taken.
 franciscomajos | PASS | 2 | reinsurance | 1 | Heads SCOR's L&H business development for Latin America from Mexico City, the desk that brings L&H solutions to Mexican cedents (reinsurance lane covers all non-P&C staff); BD, not underwriting, so P2.
 yolanda-gutierrez-b674b717b | PASS | 2 | reinsurance | 1 | SCOR Senior Client Manager for L&H covering Mexico, ex pricing actuary: the client-underwriting contact for Mexican cedents, P2 per the card.
+acalazans | PASS | 1 | underwriting | 1 | Added by Vadim 2026-11-10 (owner top-up after the Account facts round): Azos Diretor de Subscrição e Sinistros since 2025-08, earlier Diretor de Seguros (product, underwriting, pricing, claims); owns underwriting at a digital life insurer.
+caio-souza-787b8215 | PASS | 1 | proposition | 1 | Added by Vadim 2026-11-10 (owner top-up): Allianz Brasil Diretor de Produtos Vida since 2025-09 (Revista Apólice year review 2025-12: joined as director of Vida); owns the individual life product.
+bernardo-dieckmann-8a399678 | PASS | 2 | underwriting | 1 | Added by Vadim 2026-11-10 (owner top-up): Icatu director since 1999, named as the life pricing and acceptance director in Icatu's 2024-11 digital underwriting release; empty profile, so P2.
+fabio-magalh%c3%a3es- | PASS | 3 | referral | 1 | Added by Vadim 2026-11-10 (owner top-up): Diretor Comercial na Bradesco Vida e Previdência since 2025-07; sales does not own the application (PPL-3), so referral.
+fernandocampilho | PASS | 3 | technical-integration | 1 | Added by Vadim 2026-11-10 (owner top-up): Superintendente Sênior de Tecnologia at Bradesco Seguros since 2022, ex Data & AI at Accenture; vendor and SDK review.
+jos%c3%a9-luiz-fontes | PASS | 3 | referral | 1 | Added by Vadim 2026-11-10 (owner top-up): Bradesco Vida e Previdência superintendente sênior de Negócios (Account facts round), earlier corporate superintendent roles at Bradesco Seguros; referral.

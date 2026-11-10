@@ -314,7 +314,7 @@ apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,l
 5f4c1f6f9c360b00017d69db,Fabiana,Ol***a,Analista de Subscrição Sênior,Azos,azos.com.br,Azos,2026-10-19T06:38:51.000+00:00,not-selected
 5d392fc1f65125f4e3dc2fe4,Rodrigo,Te***a,Head of Product,Azos,azos.com.br,Azos,2026-10-18T23:39:54.000+00:00,in-sales-nav
 6480753f2142800001e0cf83,Thamyris,Mo***e,Analista de Subscrição Pleno,Azos,azos.com.br,Azos,2026-10-27T00:25:24.785+00:00,not-selected
-54a82ce874686975f8659965,Andre,Ca***s,Diretor de Subscrição e Sinistros,Azos,azos.com.br,Azos,2026-10-26T04:28:17.349+00:00,not-selected
+54a82ce874686975f8659965,Andre,Ca***s,Diretor de Subscrição e Sinistros,Azos,azos.com.br,Azos,2026-10-26T04:28:17.349+00:00,candidate
 6111f0b2c07b2d00010a3b5d,Julia,Wa***s,Group Product Manager,Azos,azos.com.br,Azos,2026-10-22T11:21:11.000+00:00,enriched
 66830f65552d8b0001015d7e,Thais,Na***a,Product Manager,Azos,azos.com.br,Azos,2026-10-24T09:27:32.000+00:00,enriched
 6860dfac5d253200014a3727,Julia,Ma***s,Product Manager,Azos,azos.com.br,Azos,2026-09-17T10:03:33.000+00:00,enriched
@@ -552,3 +552,8 @@ apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,l
 695ad0d8727e3a00012b8bfa,Alessandro,Ma***i,Superintendente Sênior na Bradesco Vida e Previdência,Bradesco Seguros,,Bradesco Vida e Previdência,2026-10-14T10:15:28.000+00:00,enriched
 685ccb6af28eb70001e01d41,Francisco,Ma***s,Head of L&H Business Development Latin America,SCOR,,SCOR Mexico,2026-10-13T12:53:56.000+00:00,enriched
 684e597798d1980001ae4017,Yolanda,Gu***z,"Senior Client Manager - Mexico, Central America & Caribbean L&H",SCOR,,SCOR Mexico,2026-10-14T22:05:48.000+00:00,enriched
+5ccb0b8080f93e83a384aec1,Caio,So***a,Diretor de Produtos Vida,Allianz,allianz.com.br,Allianz Brasil,,candidate
+54a5093e7468693676634677,Bernardo,Di***n,Director,Icatu Seguros,icatuseguros.com.br,Icatu Seguros,,candidate
+6357e0dcd93bf90001bf03c8,Fabio,Ma***s,Diretor Comercial na Bradesco Vida e Previdência,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,,candidate
+5abadc64a6da984048acb6d5,Fernando,Ca***o,Superintendente Senior de TI,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,,candidate
+54a589ff7468692cf0aa529a,Jose,Fo***s,Superintendent,Bradesco Seguros,bradescoseguros.com.br,Bradesco Vida e Previdência,,candidate
