@@ -52,7 +52,7 @@ path (demo call → hands-on demo access → free first month after signing → 
 Mobile Tailor pricing is custom (enterprise contract). Reference internal customer ARRs for anchoring:
 - Safariland: $256K ARR
 - Burlington Medical: $309K ARR
-- Generation Tux: $77K ARR
+- Generation Tux: $77K ARR (⛔ don't use as an anchor from 2026-11: account status changed, details in the private repo `board/2026-q3/`)
 - Jim's Formal Wear: $51K ARR
 
 In outbound, do NOT cite specific MT customer ARRs publicly. Use these only for sales conversations and pricing benchmarks.

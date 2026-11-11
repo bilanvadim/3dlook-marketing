@@ -11,7 +11,8 @@ A: Internal validation against expert pattern-maker manual measurements shows ap
 A: We're a different category. InBody and DXA (also written DEXA, which is how buyers usually search for it) are clinical-grade hardware (slow, expensive, in-clinic). Scales tell you weight only. We give 80+ measurements + body composition from any smartphone, in any location, in 45 seconds — at scale.
 
 **Q: What happens if photo lighting is bad?**
-A: Our model is minimally affected by lighting. Real-time pose validation guides the user. AI clothing detector flags issues. We've tested across hundreds of real-world environments.
+*(Internal 2026-11-11: the Clothing Detector sentence was removed until its Q4 2026 release is confirmed, see `roadmap.md`.)*
+A: Our model is minimally affected by lighting. Real-time pose validation guides the user. We've tested across hundreds of real-world environments.
 
 **Q: Does it work with all body types?**
 A: Yes — training data spans ages 16-78, weight 38-210 kg, height 150-220 cm, 48% male / 52% female. We continuously improve for unique body proportions.

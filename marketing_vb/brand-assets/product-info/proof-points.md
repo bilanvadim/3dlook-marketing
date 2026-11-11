@@ -100,7 +100,7 @@
 | Jim's Formal Wear | 2025 scans | 3,200 | Internal |
 | Jim's Formal Wear | Customer lifetime | 58 months | Internal |
 | Jim's Formal Wear | Use case | Remote measuring for wedding parties | Internal |
-| Generation Tux | Use case | DTC online formal wear rental | Internal |
+| Generation Tux | Use case | DTC online formal wear rental. ⛔ Not a current-client reference in new materials from 2026-11 (account status, see private repo `board/2026-q3/`) | Internal |
 
 ### Aggregate
 | Claim | Number | Source |

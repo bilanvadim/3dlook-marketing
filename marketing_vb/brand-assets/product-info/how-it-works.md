@@ -5,14 +5,14 @@
 1. User stands in front and side positions
 2. Takes two photos with any smartphone, fully clothed, any background
 3. Real-Time Pose Validation (RTPV) guides positioning and framing in real time; phone tilt is a separate SDK check
-4. The Clothing Detector (real-time clothing detection) flags loose / oversized clothing and prompts user to adjust
+4. The Clothing Detector (real-time clothing detection) flags loose / oversized clothing and prompts user to adjust *(internal description; release of the retrained detector and its API output is Q4 2026, so public copy follows `tech-spec.md` → Clothing Detector → Status)*
 5. Face is automatically obfuscated for privacy
 6. Photos sent to API → 3D model + measurements returned in under 45 seconds
 
 ## Backend pipeline
 
 1. **Computer vision detection** — algorithms detect human body under clothing
-2. **AI clothing detector** — classifies fit type (sport / regular / oversized) and adjusts 3D output
+2. **AI clothing detector** — classifies fit type (sport / regular / oversized) and adjusts 3D output *(internal; not for public copy until the Q4 2026 release, see `roadmap.md`)*
 3. **Statistical generative human body model** (proprietary, patented) — creates 3D model
 4. **Measurement extraction** — 80+ body measurements computed from the 3D model
 5. **Body composition** — BMI, BMR, fat %, lean mass, fat mass derived from model

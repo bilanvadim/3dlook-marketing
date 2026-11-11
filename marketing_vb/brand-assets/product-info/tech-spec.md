@@ -58,12 +58,14 @@
 
 **Approved feature name (Vadim, 2026-09-23):** "Clothing Detector", a capture-quality feature. Public wording until product confirms the classes and the payload field: "The Clothing Detector identifies clothing conditions that may interfere with capture and can prompt corrective action." The internal notes below (sport / regular / oversized, payload) are not for public copy yet.
 
+**Status (2026-11-11, `roadmap.md`):** the Q3 2026 quarterly update moved the Clothes Detector retrain and clothes detection in the API to Q4 2026. Vadim 2026-11-11: it will be live by the conference. Until release is confirmed, every page and post uses the 2026-10-07 safer level below (no clothing flags in the returned record, no "prompts the user"). After release, product confirms the classes and payload field and the open item below closes with one wording.
+
 **Page wording since 2026-10-02 (final insurance landing, Asselya's edit, approved by Vadim):** "Clothing-related information can be surfaced for review" and, in the failed-scan answer, "Clothing-related information may be surfaced for review; it does not trigger a retake." Real-Time Pose Validation "pauses capture until pose and framing requirements are met." **Superseded on new pages since 2026-10-07 (fitness final, Vadim):** until product confirms, pages use the safer level: RTPV "gives pose and framing guidance during capture, with voice prompts for a member scanning alone"; the returned record is described as "processing status and timestamps", without pose and framing validation results or clothing-related information. The insurance final still carries the 2026-10-02 wording. **Open item:** "does not trigger a retake" contradicts "can prompt corrective action" above and the "Flags inappropriate attire and prompts user" note below; product to confirm which is current, then one wording everywhere.
 
 - Classifies fit type per scan: `sport` / `regular` / `oversized`
 - Flags inappropriate attire and prompts user
 - Notifies clinical / business team via response payload
-- Updated models coming Q3 2025
+- Retrained model on re-annotated data + clothes detection in the API: Q4 2026 (was planned for Q3 2026, see `roadmap.md`)
 
 ### Performance characteristics
 - Time from photo to results: under 45 seconds. **The only public timing definition (Vadim, 2026-09-23):** "under 45 seconds from the photos to structured results". No "under 40 seconds", "under a minute", "under 10 seconds", or processing-only / capture-only splits.

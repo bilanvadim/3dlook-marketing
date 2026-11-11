@@ -14,6 +14,7 @@
 | `competitors.md` | Prism Labs / Size Stream / Fit:match / Bodygram / Mirrorsize / Bodd / Apple risk (verified 2026-10-15) | hypothesis-generator, seo-outline-builder |
 | `compliance.md` | HIPAA, GDPR, encryption, photo retention | message-sequencer (insurance/healthcare) |
 | `tech-spec.md` | API, SDK, white-label | tech-focused content |
+| `roadmap.md` | **Feature status gate** (live / ready / testing / planned Q4 2026 / 2027) + company priorities Q4'26–Q1'27, from the Q3'26 quarterly update; what NOT to describe as live | all writers before naming a feature; quarterly-strategist («особые точки») |
 | `case-studies/` | Реальные клиенты с метриками | message-sequencer, post-drafter |
 | `use-cases/` | Use case + ICP + KPI + market sizing | hypothesis-generator |
 | `faq.md` | Возражения / ответы | message-sequencer |
@@ -54,7 +55,7 @@
 | `case-studies/uk-meds.md` | UK Meds | FX | BMI verification, 7.5K сканов |
 | `case-studies/yazen.md` | Yazen | FX | Weight loss, 34K сканов |
 | `case-studies/jims-formal-wear.md` | Jim's Formal Wear | MT | 3.2K сканов |
-| `case-studies/generation-tux.md` | Generation Tux | MT | DTC formal wear rental |
+| `case-studies/generation-tux.md` | Generation Tux | MT | DTC formal wear rental. ⛔ Not for new materials from 2026-11 (account status; see the file) |
 
 ## Когда что читать
 

@@ -1,5 +1,7 @@
 # Case Study: Generation Tux — Mobile Tailor
 
+> ⛔ **2026-11-11: do not use in new materials** (posts, outbound, pages, decks) as a current-client reference or a growth signal. Account status changed in Q4 2026; details in the private repo `3dlook-marketing-private/board/2026-q3/`. Already published materials stay as they are.
+
 ## Customer
 Generation Tux — DTC online formal wear rental.
 

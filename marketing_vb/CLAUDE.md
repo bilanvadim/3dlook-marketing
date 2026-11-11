@@ -38,8 +38,10 @@
 - **Целевые рынки:** made-to-measure apparel, on-demand manufacturing, uniform companies (PPE, medical, public safety), bridal/formalwear, custom alterations
 - **Что делает:** 80+ body measurements для precise custom fit, reduce returns/remakes
 - **Ценность:** measurement consistency, remote measuring at scale, integration в OMS/3D config
-- **Live customers:** Safariland (custom-fit PPE, 15.5K сканов/год), Burlington Medical (radiation aprons, 11.5K), Jim's Formal Wear, Generation Tux, Tailoor, Redthread
+- **Live customers:** Safariland (custom-fit PPE, 15.5K сканов/год), Burlington Medical (radiation aprons, 11.5K), Jim's Formal Wear, Tailoor, Redthread. *Generation Tux — не называть в новых материалах с 2026-11 (статус аккаунта, `case-studies/generation-tux.md`).*
 - **Lifetime metrics:** 4 legacy MT клиентов с 5+ лет retention
+
+**Статус фич и продуктовый роадмап:** `brand-assets/product-info/roadmap.md` (из квартального апдейта Q3 2026, прочитан 2026-11-11). Как доступное описываем только то, что там в колонке Live; готовое к релизу, в тестах и запланированное (Clothing Detector в API, anti-fraud, MT localization, публичный wrist SDK, fingers, head) — нет. Height verification и DEXA — 2027.
 
 **Когда какой продукт:** в каждой outbound-кампании / SEO-статье / посте — указывай явно `product: fitxpress | mobile_tailor` в frontmatter артефакта. Агенты используют разный ICP и фактуру в зависимости от продукта.
 
