@@ -14,7 +14,7 @@ this file in the same commit as the copy that uses it.
 | Area | Feature | Status | How to write about it |
 |---|---|---|---|
 | FitXpress | Admin panel: photo-deletion date, failed-scan messages | Live | OK as a capability |
-| FitXpress | Anti-fraud live human validation (iOS/Android SDK) | Ready for release, not live | Not as a live capability. "Coming soon" is backed (this reverses item 4 of the BMI-page review of 2026-11-09, which asked to remove the "Prompted-action liveness, Coming soon" card). Event visuals = "coming" |
+| FitXpress | Anti-fraud live human validation (iOS/Android SDK) | Ready for release. Vadim 11-11: live before the BMI-verification page ships | On the BMI page it may be described as a capability (not "coming soon") once product confirms the release before publishing; this reverses item 4 of the BMI-page review of 2026-11-09. Elsewhere, until that release: "coming soon" |
 | FitXpress | Anti-fraud ratio validation | Planned Q4 2026 | Don't claim |
 | FitXpress | Clothing Detector / clothes detection in the API | Retrain + API planned Q4 2026. Vadim 11-11: live by the conference | Keep the 2026-10-07 safer wording from `tech-spec.md` until release is confirmed; no payload flags, classes or "prompts the user" |
 | FitXpress | Android SDK on devices without a gyroscope | Planned Q4 2026 | Don't promise "any Android device" beyond the current wording |
