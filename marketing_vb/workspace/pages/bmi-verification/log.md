@@ -42,3 +42,8 @@
   mentions Asselya) with `review-2026-11-09-asselya-ru.md` (F0CFQK9UARM) and `keywords-2026-11-09.md` (F0CFQKA2L15).
 - Decision recorded in `landing-map.md` (BMI row = feature page; new row for online pharmacies), `site-inventory.md`,
   `page-types.md` and `site-architecture/architecture-2026-10-22.md` (reverses the 10-22 A-4 note).
+- 2026-11-11, review item 4 reversed (Vadim: «лівнес теж вже буде до релізу сторінки»; Q3'26 board update lists
+  liveness as ready for release in the iOS/Android SDKs). Russian correction posted in Asselya's thread
+  1792656114.772339 (ts 1794409611.489999): keep the card; at publication drop «Coming soon» + the «Confirm release
+  timing» line if released, otherwise keep «Coming soon»; confirm release and integrations with product first.
+  See `brand-assets/product-info/roadmap.md`.
