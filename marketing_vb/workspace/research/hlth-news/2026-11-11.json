@@ -1,0 +1,87 @@
+{
+ "generated": "2026-11-11T05:40:55+00:00",
+ "items": [
+  {
+   "id": "49d7e620-4673-4c9a-a2e4-1f78a892c324",
+   "title": "Lilly’s Foundayo Significantly Reduces Sleep Apnea Severity Beyond Weight Loss Benefits",
+   "date": "2026-11-10",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Medical Research",
+    "Drug Discovery / Pharma / Biotech",
+    "Chronic Condition Management"
+   ],
+   "url": "https://hlth.com/insights/news/lilly-s-foundayo-significantly-reduces-sleep-apnea-severity-beyond-weight-loss-benefits"
+  },
+  {
+   "id": "a3665ef9-d90e-4dd0-ba63-609aa4fa38f6",
+   "title": "HealthTap Launches Virtual Primary Care Program for Medicare Advantage Members",
+   "date": "2026-11-10",
+   "tags": [
+    "Payer (Insurer)",
+    "Telehealth / Virtual Care / Remote Patient Monitoring",
+    "Medicare and Medicaid",
+    "Primary Care",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/healthtap-launches-virtual-primary-care-program-for-medicare-advantage-members"
+  },
+  {
+   "id": "fdc95751-f8dc-403e-8518-af250e94c0b7",
+   "title": "AWS Launches $100M Initiative to Expand AI-Powered Healthcare Access Globally",
+   "date": "2026-11-10",
+   "tags": [
+    "Health Equity / SDoH",
+    "Association, Non Profit & Academia",
+    "Health System & Health Provider",
+    "Care Coordination / Navigation / Care Access",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/aws-launches-100m-initiative-to-expand-ai-powered-healthcare-access-globally"
+  }
+ ],
+ "analyses": {
+  "49d7e620-4673-4c9a-a2e4-1f78a892c324": {
+   "id": "49d7e620-4673-4c9a-a2e4-1f78a892c324",
+   "score": 1,
+   "segment": "FitXpress §1 Telehealth & GLP-1",
+   "what": "Eli Lilly оголосила позитивні результати Phase 3 ATTAIN-OSA: пероральний GLP-1 Foundayo (orforglipron) за 52 тижні знизив тяжкість обструктивного апное сну в дорослих з ожирінням/надвагою, середня втрата ваги ~11%. Подача до FDA для цього показання запланована до кінця 2026.",
+   "why": "Це фарма-readout без схвалення; Lilly не акаунт, і telehealth/GLP-1-платформи не мають через це нового тригера купувати зараз — максимум контент-ідея про розширення GLP-1 за межі схуднення.",
+   "play": "content_only",
+   "companies": [
+    "Eli Lilly",
+    "Lilly"
+   ],
+   "caveat": "Схвалення FDA ще немає; не будувати outbound-меседжі на клінічних результатах препарату — регуляторний ризик.",
+   "_date": "2026-11-10"
+  },
+  "a3665ef9-d90e-4dd0-ba63-609aa4fa38f6": {
+   "id": "a3665ef9-d90e-4dd0-ba63-609aa4fa38f6",
+   "score": 1,
+   "segment": "—",
+   "what": "HealthTap запустила програму віртуальної первинної допомоги для планів Medicare Advantage: постійний лікар, проактивний outreach від плану, доступ до історичних медкарт. У першому розгортанні 35% контактованих записалися, 19% пройшли перший візит за 6 тижнів.",
+   "why": "Virtual primary care для MA без жодного weight-loss/GLP-1/body-data компонента в статті — конкретного зв'язку з FitXpress немає.",
+   "play": "none",
+   "companies": [
+    "HealthTap"
+   ],
+   "caveat": "Якщо підтвердиться, що в HealthTap є weight-management лінія, переоцінити окремо (USA, nick).",
+   "_date": "2026-11-10"
+  },
+  "fdc95751-f8dc-403e-8518-af250e94c0b7": {
+   "id": "fdc95751-f8dc-403e-8518-af250e94c0b7",
+   "score": 0,
+   "segment": "—",
+   "what": "AWS запустила AWS Health Impact Initiative — $100M на 5 років для nonprofit, держорганів, дослідницьких установ, провайдерів і healthtech-компаній, що через AI та хмару розширюють доступ до медичної допомоги для underserved-популяцій.",
+   "why": "Грантова хмарна програма AWS для health equity — не покупець і не сигнал жодного ICP-сегмента 3DLOOK.",
+   "play": "none",
+   "companies": [
+    "Amazon Web Services",
+    "AWS"
+   ],
+   "_date": "2026-11-10"
+  }
+ },
+ "posts": []
+}
