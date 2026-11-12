@@ -1,0 +1,113 @@
+{
+ "generated": "2026-11-12T05:41:30+00:00",
+ "items": [
+  {
+   "id": "5b0d7378-b30c-4127-9a7d-2c4e51663089",
+   "title": "Google Cloud Launches Gemini for Healthcare, Integrating AI Workflows Across Epic, Oracle Health and Enterprise Systems",
+   "date": "2026-11-11",
+   "tags": [
+    "Payer (Insurer)",
+    "Interoperability / Data Management",
+    "Operational Efficiency",
+    "Health System & Health Provider",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/google-cloud-launches-gemini-for-healthcare-integrating-ai-workflows-across-epic-oracle-health-and-enterprise-systems"
+  },
+  {
+   "id": "b747c2af-e8ca-449f-a530-3fbdfc41060d",
+   "title": "Fitnescity Health Launches Whole-Body MRI Screening Across Nearly 100 U.S. Locations",
+   "date": "2026-11-11",
+   "tags": [
+    "Consumer Wellness and Technology",
+    "Preventive Health",
+    "Diagnostics",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/fitnescity-health-launches-whole-body-mri-screening-across-nearly-100-u-s-locations"
+  },
+  {
+   "id": "7d1d1b4f-dd3c-4bef-802d-fb1eaa570d5e",
+   "title": "Oura to Acquire Counsel Health for $625M, Integrating AI-Powered Primary Care with Continuous Biometric Monitoring",
+   "date": "2026-11-11",
+   "tags": [
+    "Investments and Partnerships",
+    "Primary Care",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/oura-to-acquire-counsel-health-for-625m-integrating-ai-powered-primary-care-with-continuous-biometric-monitoring"
+  }
+ ],
+ "analyses": {
+  "5b0d7378-b30c-4127-9a7d-2c4e51663089": {
+   "id": "5b0d7378-b30c-4127-9a7d-2c4e51663089",
+   "score": 0,
+   "segment": "—",
+   "what": "Google Cloud запустила в США preview Gemini for Healthcare. Це enterprise AI-платформа з агентами для клінічних і адміністративних процесів провайдерів і страховиків: prior authorization, eligibility, claims. Інтегрується з Epic, Oracle Health та іншими системами.",
+   "why": "Enterprise AI для EHR- і payer-адміністрування. Не стосується body data і не потрапляє в жоден ICP-сегмент 3DLOOK.",
+   "play": "none",
+   "companies": [
+    "Google Cloud",
+    "Epic",
+    "Oracle Health",
+    "Optum",
+    "TriZetto",
+    "GoodRx",
+    "Salesforce",
+    "Suki",
+    "UiPath"
+   ],
+   "_date": "2026-11-11"
+  },
+  "b747c2af-e8ca-449f-a530-3fbdfc41060d": {
+   "id": "b747c2af-e8ca-449f-a530-3fbdfc41060d",
+   "score": 2,
+   "segment": "FitXpress §1 Telehealth & GLP-1 (preventive-health / longevity, Everlab look-alike)",
+   "what": "Fitnescity Health запустила whole-body MRI скринінг майже в 100 локаціях США. Скринінг доступний напряму споживачам і через API для партнерських health-платформ. З жовтня 2026 цей API вже підключив 10 платформ до DEXA body composition, bone density і CT calcium scoring у 1000+ локацій.",
+   "why": "Новина показує, що US preventive-health платформи вбудовують body composition у свій продукт через API. Але DEXA/MRI — це очний скан раз на кілька місяців, а між сканами учасник прогресу не бачить. FitXpress дає 2-фото скан у додатку: body composition і 80+ вимірів для частих check-in між клінічними сканами, тобто видимий longitudinal прогрес для retention. Сама Fitnescity — інфраструктура доступу до діагностики, а не програма з членством і retention, тому це сигнал по сегменту, а не прямий акаунт.",
+   "play": "lookalikes",
+   "campaign": {
+    "title": "US preventive-health платформи з DEXA: щомісячні check-in між клінічними сканами",
+    "profile": "nick",
+    "market": "USA",
+    "targets": "US preventive-health / longevity membership платформи та consumer health apps, що дають учасникам DEXA body composition або imaging-скринінг через партнерів (Everlab look-alike для США). Fitnescity Health — окремо, як можлива партнерська розмова, а не основний акаунт.",
+    "roles": "Founder / CEO, Head of Product, Chief Medical Officer / Medical Director, Head of Member Engagement / Retention, Head of Partnerships",
+    "angle": "Ви вже додали DEXA body composition, але це очний скан раз на кілька місяців, і між сканами учасник прогресу не бачить. 2-фото скан у вашому додатку показує прогрес тіла на кожному місячному check-in.",
+    "existing_campaign": "",
+    "task": "USA: preventive-health / longevity membership platforms offering DEXA body composition or imaging via partners — in-app 2-photo body check-ins between clinic scans (Everlab look-alike, Nick)"
+   },
+   "caveat": "Тригер непрямий: новина про MRI, а хук про body composition узято з фону (жовтневий запуск API). FitXpress не можна подавати як заміну DEXA, і точність не порівнювати. Superpower nick уже контактував. Fitnescity може побачити в at-home скані конкурента своїм DEXA-бронюванням. Revenue Fitnescity у статті не вказано. Для США look-alike кампанії ще нема — потрібна нова гіпотеза, як аналог 2026-10-19-eu-everlab-similar.",
+   "companies": [
+    "Fitnescity Health"
+   ],
+   "_date": "2026-11-11"
+  },
+  "7d1d1b4f-dd3c-4bef-802d-fb1eaa570d5e": {
+   "id": "7d1d1b4f-dd3c-4bef-802d-fb1eaa570d5e",
+   "score": 2,
+   "segment": "FitXpress §1 Telehealth & GLP-1 (cardiometabolic)",
+   "what": "Oura підписала угоду про купівлю AI primary care провайдера Counsel Health за $625M cash, закриття очікується до кінця 2026. Приблизно 6M членів Oura отримають у додатку консультації, рецепти й направлення. Фокус — preventive, acute і chronic care, зокрема cardiometabolic.",
+   "why": "Сама Oura не акаунт: це щойно оголошене M&A (універсальне виключення) і масштаб ~$1.75B revenue. Проте wearable з ~6M членів заходить у cardiometabolic chronic care з рецептами, і це прямий конкурентний тиск на US cardiometabolic та weight-management платформи. Відрізнитися вони можуть видимим прогресом тіла: FitXpress додає в їхній додаток 2-фото скан з body composition і 80+ вимірами для регулярних check-in.",
+   "play": "hook_for_existing",
+   "campaign": {
+    "title": "Хук Oura–Counsel Health для US cardiometabolic кампанії",
+    "profile": "nick",
+    "market": "USA",
+    "targets": "Ще не контактовані акаунти з фіксованого списку US cardiometabolic платформ, а також follow-up тим, хто вже в послідовності. Oura і Counsel Health не таргетити.",
+    "roles": "Founder / CEO, Chief Medical Officer / Medical Director, Head of Product, Head of Member Engagement / Retention",
+    "angle": "Oura купує Counsel Health за $625M і переносить cardiometabolic care з рецептами в додаток для ~6M людей. Коли wearable стає клінікою, ваша перевага — прогрес тіла, який учасник бачить на кожному check-in.",
+    "existing_campaign": "2026-09-29-us-cardiometabolic",
+    "task": "USA: add Oura–Counsel Health ($625M) as a timely hook in 2026-09-29-us-cardiometabolic follow-ups — wearables entering cardiometabolic care, differentiate with visible body progress"
+   },
+   "caveat": "Oura і Counsel Health не писати: M&A, enterprise. Не стверджувати, що Oura не міряє body composition — у статті цього немає. Багато US cardiometabolic акаунтів nick уже контактував (Virta Health, 9amHealth, Omada Health, Vida Health), тож хук годиться переважно для follow-up або залишку списку. Хук конкурентний, а не власний тригер акаунта.",
+   "companies": [
+    "Oura",
+    "Counsel Health"
+   ],
+   "_date": "2026-11-11"
+  }
+ },
+ "posts": []
+}
