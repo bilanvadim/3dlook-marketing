@@ -12,7 +12,10 @@ the white file was already used by `brand-assets/video/stat-reel.html`). The sym
 `uploads/2025/04/icon-3dlook-svg.svg`. The black lockup and the white symbol are the same paths with the fill
 switched, which the brand guideline allows (the logo is always black or white). Collected 2026-11-12.
 The master file is the Figma file «3DLOOK-logo» (`HnZOyPwutxybq0LXXNcbbq`), linked from the guideline's
-Download button; re-check against it when Figma access is on.
+Download button. **Verified against it 2026-11-12:** the lockup is the same 9 paths in the same 248×36 box
+(coordinates within 0.001), and the symbol has the same shape (the master frame is tighter, 31×26; the site
+file keeps a margin, 40×35). Master frames: `3DLOOK_black` / `3DLOOK_white` (lockup), `3DLOOK_symbol_black` /
+`3DLOOK_symbol_white`, `Symbol`.
 
 **Rules (brand guideline, Google Slides «3DLOOK Branding» `1p1cW9pE-a4nvqlRRUzirIU6tvSksz7T20YxaFMAuEQ4`, slides 6-9):**
 - The horizontal lockup is the primary logo; use it in most cases. Never use outdated versions.
