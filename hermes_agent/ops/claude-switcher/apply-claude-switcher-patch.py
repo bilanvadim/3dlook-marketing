@@ -480,6 +480,12 @@ ADAPTER_ANCHOR_021 = (
     "        cb = self._callback_ctx(query)\n"
     "        # Model picker / generic choice picker (/reasoning, /fast) need a chat id.\n"
 )
+# 0.23.1 (3b42157858, 2026-11-10) changed `data = query.data` to `data = query.data or ""`,
+# which killed the 3-line 0.21 anchor and with it every csw:/ho: button for three days.
+# Anchor on the one line that has to exist for the prefix tables to work at all (unique in
+# adapter.py, `data` is already bound above it), so the next rewording of its neighbours
+# does not take the panel down again.
+ADAPTER_ANCHOR_023 = "        cb = self._callback_ctx(query)\n"
 
 
 # --- adapter.py: register the inline-query handler (system launcher) --------
@@ -646,6 +652,11 @@ ADAPTER_FWD_INSERT_021 = (
     "        except Exception:\n"
     "            pass\n"
 )
+# 0.23.1 added `self._note_arrival(event)` above the drop check and `self._accept_update()`
+# below the super() call, so the 0.21 six-line anchor no longer matches. The super() call is
+# the seam itself (after it the merged batch sits in _pending_text_batches) and is unique in
+# adapter.py; the 0.21 insert goes right after it unchanged.
+ADAPTER_FWD_ANCHOR_023 = "        super()._enqueue_text_event(event)\n"
 ADAPTER_FWD_PRESENT = "[hermes-switcher] preserve forward provenance across batching"
 
 
@@ -964,10 +975,10 @@ def main():
     # provenance. 0.19/0.21 anchors are complete blocks → append after them; 0.16's is
     # the head of the NEXT branch → insert before it. Hence the explicit builders.
     r = _patch_file(ADAPTER_PY, [
-        ("panel-callback", [ADAPTER_ANCHOR_021, ADAPTER_ANCHOR, ADAPTER_ANCHOR_016],
+        ("panel-callback", [ADAPTER_ANCHOR_021, ADAPTER_ANCHOR_023, ADAPTER_ANCHOR, ADAPTER_ANCHOR_016],
          lambda a: (ADAPTER_INSERT + a) if a is ADAPTER_ANCHOR_016 else (a + ADAPTER_INSERT),
          'data.startswith("csw:")'),
-        ("escalation-callback", [ADAPTER_ANCHOR_021, ADAPTER_ANCHOR, ADAPTER_ANCHOR_016],
+        ("escalation-callback", [ADAPTER_ANCHOR_021, ADAPTER_ANCHOR_023, ADAPTER_ANCHOR, ADAPTER_ANCHOR_016],
          lambda a: (ADAPTER_HO_INSERT + a) if a is ADAPTER_ANCHOR_016 else (a + ADAPTER_HO_INSERT),
          ADAPTER_HO_PRESENT, True),
         ("inline-query", [ADAPTER_IQ_ANCHOR_021, ADAPTER_IQ_ANCHOR_020, ADAPTER_IQ_ANCHOR],
@@ -975,8 +986,8 @@ def main():
                         else ADAPTER_IQ_INSERT_020 if a is ADAPTER_IQ_ANCHOR_020
                         else ADAPTER_IQ_INSERT),
          ADAPTER_IQ_PRESENT),
-        ("fwd-provenance", [ADAPTER_FWD_ANCHOR_021, ADAPTER_FWD_ANCHOR],
-         lambda a: a + (ADAPTER_FWD_INSERT_021 if a is ADAPTER_FWD_ANCHOR_021 else ADAPTER_FWD_INSERT),
+        ("fwd-provenance", [ADAPTER_FWD_ANCHOR_021, ADAPTER_FWD_ANCHOR_023, ADAPTER_FWD_ANCHOR],
+         lambda a: a + (ADAPTER_FWD_INSERT if a is ADAPTER_FWD_ANCHOR else ADAPTER_FWD_INSERT_021),
          ADAPTER_FWD_PRESENT),
     ])
     if isinstance(r, list):

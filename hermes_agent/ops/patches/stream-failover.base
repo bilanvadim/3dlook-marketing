@@ -1,1 +1,1 @@
-08165d58931841cee713468ae89032af7c57060a feat(desktop): the dimmed composer comes back after 5s without scrolling
+3b421578588243f920886e6fe79a6faa87ea026e fix(telegram): a typing tick no longer freezes a group's streamed preview

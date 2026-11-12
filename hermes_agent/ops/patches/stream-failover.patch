@@ -1,8 +1,8 @@
 diff --git a/agent/chat_completion_helpers.py b/agent/chat_completion_helpers.py
-index c68d7bf6648..863cb437e10 100644
+index 5f2cf34698..d5e06a2e15 100644
 --- a/agent/chat_completion_helpers.py
 +++ b/agent/chat_completion_helpers.py
-@@ -3993,6 +3993,17 @@ class _StreamingCall(StreamingWaitMonitor):
+@@ -3909,6 +3909,17 @@ class _StreamingCall(StreamingWaitMonitor):
              api_mode=getattr(self.agent, "api_mode", None))
          if _cls is not None and _cls.reason == FailoverReason.content_policy_blocked:
              _stub._content_filter_terminated = True
@@ -21,10 +21,10 @@ index c68d7bf6648..863cb437e10 100644
  
      def run(self):
 diff --git a/agent/turn_truncation.py b/agent/turn_truncation.py
-index e5e3e8ad39d..4db24c02106 100644
+index df38b75714..542b4e4a94 100644
 --- a/agent/turn_truncation.py
 +++ b/agent/turn_truncation.py
-@@ -262,21 +262,38 @@ def _abort_reason(agent: Any, content: Any, has_tool_calls: bool) -> Optional[tu
+@@ -269,23 +269,45 @@ def _abort_reason(agent: Any, content: Any, has_tool_calls: bool) -> Optional[tu
      return None
  
  
@@ -62,12 +62,21 @@ index e5e3e8ad39d..4db24c02106 100644
          force=True, diagnostic=True,
      )
 -    agent._emit_diagnostic_status("Content filter terminated stream; switching to fallback...")
+-    if agent._try_activate_fallback(reason=FailoverReason.content_policy_blocked):
+-        logger.warning("%sContent filter terminated the stream — switched to fallback", agent.log_prefix)
 +    agent._emit_diagnostic_status("Provider failed mid-stream; switching to fallback..." if _pf
 +                                  else "Content filter terminated stream; switching to fallback...")
-     if agent._try_activate_fallback():
++    # A dead provider is a transport failure, not a policy block: name it the way the stub's
++    # own failure is named below (FailoverReason.timeout), so the switch notice tells the truth.
++    if agent._try_activate_fallback(
++        reason=FailoverReason.timeout if _pf else FailoverReason.content_policy_blocked
++    ):
++        logger.warning("%s%s — switched to fallback", agent.log_prefix,
++                       "Provider died mid-stream" if _pf else "Content filter terminated the stream")
          # Roll partial content back to the last clean turn so the fallback gets a
          # coherent continuation point; unmark survivors (their text left the partial).
-@@ -366,7 +383,12 @@ def _continue_text(st: _Trunc, _retry: TurnRetryState, assistant_message: Any) -
+         if st.truncated_response_parts:
+@@ -374,7 +396,12 @@ def _continue_text(st: _Trunc, _retry: TurnRetryState, assistant_message: Any) -
          )
      return st.end_turn(
          partial_response or _CEILING_NO_TEXT,
@@ -81,7 +90,7 @@ index e5e3e8ad39d..4db24c02106 100644
      )
  
  
-@@ -523,7 +545,7 @@ def recover_from_truncation(
+@@ -531,7 +558,7 @@ def recover_from_truncation(
          return st.end_turn(user_response, error)
  
      if agent.api_mode in _CONTINUABLE_MODES:

@@ -127,18 +127,20 @@ def gateway_started_at():
 # patcher's prose (their vocabulary is already three words wide: already /
 # patched / refreshed, and a new one would read as "nothing changed").
 _AGENT = f"{HOME}/.hermes/hermes-agent"
-# Exactly the files a vendored patch touches, verified 2026-09-06 against
-# `git -C ~/.hermes/hermes-agent diff --stat`, which is the authoritative inventory.
-# 0.21 split the runner and the truncation loop apart, so most of this list moved:
+# Exactly the files a vendored patch touches, re-verified 2026-11-12 on v0.23.1
+# (3b42157858) against `git -C ~/.hermes/hermes-agent diff --stat`, which is the
+# authoritative inventory. 0.21 split the runner and the truncation loop apart, and
+# 0.22.7 split run_turn.py again, so most of this list moved:
 #   tools/file_tools_write_guards.py       +12   file-tool guard  (was tools/file_tools.py)
 #   gateway/run_inbound.py                 +24   switcher: dispatch, lobby, forward-picker
-#   gateway/run_turn.py                    +29   switcher: turn intercepts + media recall
+#   gateway/run_turn.py                    +14   switcher: media recall
+#   gateway/run_turn_prepare.py            +15   switcher: turn intercept + media recall (from run_turn.py)
 #   gateway/run_topics.py                   +6   switcher: lobby-no-pin
-#   gateway/run_busy.py                    +18   switcher: Russian busy acks (cosmetic)
+#   gateway/run_busy.py                     +0   switcher: Russian busy acks (cosmetic; seams absent since 09-05)
 #   hermes_cli/commands.py                  +8   switcher: command registry
 #   plugins/platforms/telegram/adapter.py  +73   switcher: csw:/ho: callbacks, inline, fwd
 #   agent/chat_completion_helpers.py       +11   stream-failover
-#   agent/turn_truncation.py               +34   stream-failover  (was agent/conversation_loop.py)
+#   agent/turn_truncation.py           +35 −8   stream-failover  (was agent/conversation_loop.py)
 #   gateway/claude_switcher.py           (new)   switcher module
 # gateway/run.py is deliberately NOT here any more: after the 0.21 split no patcher
 # writes to it, and listing a file nothing installs makes the fingerprint move for a
@@ -147,6 +149,7 @@ _PATCHED_FILES = (
     f"{_AGENT}/tools/file_tools_write_guards.py",           # file-tool guard
     f"{_AGENT}/gateway/run_inbound.py",                     # switcher
     f"{_AGENT}/gateway/run_turn.py",                        # switcher
+    f"{_AGENT}/gateway/run_turn_prepare.py",                # switcher (since 0.22.7)
     f"{_AGENT}/gateway/run_topics.py",                      # switcher
     f"{_AGENT}/gateway/run_busy.py",                        # switcher (cosmetic)
     f"{_AGENT}/hermes_cli/commands.py",                     # switcher
