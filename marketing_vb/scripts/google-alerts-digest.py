@@ -131,6 +131,9 @@ ALERTS = [
     ("legal", '"consumer health data" OR "My Health My Data" OR "health data privacy" law OR act OR lawsuit OR enforcement', "en"),
     ("legal", '"state privacy law" OR "comprehensive privacy law" signed OR effective OR amendment', "en"),
     ("legal", 'GDPR OR "UK GDPR" OR ICO OR EDPB "health data" OR "biometric data" OR "special category"', "en"),
+    # Olena Chorna 2026-11-12, reply to the first issue: «add UK data protection legislation»
+    ("legal", '"UK GDPR" OR "Data (Use and Access) Act" OR "Data Protection Act 2018" OR "UK data protection"', "en"),
+    ("legal", '"Information Commissioner\'s Office" OR "Information Commissioner" guidance OR fine OR reprimand OR consultation OR code', "en"),
     ("legal", '"AI Act" OR "Colorado AI Act" biometric OR health OR insurance OR "high-risk"', "en"),
     ("legal", 'HIPAA OR FTC "health app" OR telehealth OR "Health Breach Notification" rule OR enforcement OR settlement', "en"),
     ("legal", '"general wellness" OR "software as a medical device" FDA OR MDR guidance OR rule', "en"),
@@ -310,8 +313,11 @@ processing body photos, body measurements and health-related estimates for busin
 US, UK and EU. In scope: biometric privacy laws and lawsuits (Illinois BIPA, Texas, Washington, \
 Colorado and others), especially over face or body scans, selfies and virtual try-on; consumer \
 health data laws (Washington My Health My Data and similar) and new or amended US state \
-privacy laws; HIPAA and FTC health privacy rules and enforcement; GDPR and UK GDPR on health \
-or biometric data (regulator guidance, fines, court rulings, EU-US data transfers); the EU AI \
+privacy laws; HIPAA and FTC health privacy rules and enforcement; GDPR on health or biometric \
+data (regulator guidance, fines, court rulings, EU-US data transfers); UK data protection law \
+in general, not only health or biometric data (UK GDPR, Data Protection Act 2018, Data (Use and \
+Access) Act 2025 and its commencement, PECR, ICO guidance, codes, consultations, fines and \
+reprimands, UK adequacy and data transfers); the EU AI \
 Act and US AI laws where they touch biometrics, health, insurance or employment; FDA and EU \
 MDR rules on wellness versus medical-device software; rules for online weight-loss and GLP-1 \
 prescribing (GPhC, MHRA, FDA, state telehealth rules), including BMI checks. Keep: a law \
