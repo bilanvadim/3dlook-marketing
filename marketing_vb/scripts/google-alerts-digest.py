@@ -31,6 +31,15 @@ HOW
 Clients (Kate Kondakova 2026-11-02: «наши крупные клиенты? типа берлингтон и сафари»): the ones
 with a public case study are in ALERTS below. A client whose name may not sit
 in this public repo lives in PRIVATE_ALERTS (private repo): its alerts and its line for the filter.
+Kondakova 2026-11-12: watch the clients' lawsuits, claims and financial results too («их фин
+результат напрямую может на нас повлиять»), so the parent companies are watched as well
+(Safariland → Cadre Holdings, Burlington Medical → TIDI Products since 2026-01).
+
+Legal & regulatory (Kondakova 2026-11-12: «Лене страшно надо получать ссылки ... по полиси»,
+«регуляторные штуки тоже можно в общий канал»; Vadim: «для Чорної треба лише її тематика ...
+окремо на почту»): laws, regulator moves and court cases on biometric and health data, AI and
+online prescribing. The section goes into the shared digest, and a legal-only email goes to
+--legal-email / $GOOGLE_ALERTS_LEGAL_EMAIL_TO (Olena Chorna, legal).
 
 Posted = processed. Without --post the script prints and marks nothing. Analyses are cached in
 the state file, so a retry after a failed post does not pay twice.
@@ -38,7 +47,8 @@ the state file, so a retry after a failed post does not pay twice.
 State: ~/.hermes/.google-alerts-state.json · log: ~/.hermes/logs/google-alerts.log (cron)
 
 USAGE
-    scripts/google-alerts-digest.py run [--post] [--channel C0...] [--email a@x,b@y] [--lookback-days 3]
+    scripts/google-alerts-digest.py run [--post] [--channel C0...] [--email a@x,b@y] [--legal-email c@x]
+                                        [--lookback-days 3]
     scripts/google-alerts-digest.py links        # prefilled google.com/alerts links
     scripts/google-alerts-digest.py status
 
@@ -72,6 +82,7 @@ OO = shutil.which("oo") or str(Path.home() / ".local" / "bin" / "oo")
 GMAIL_QUERY = "from:googlealerts-noreply@google.com newer_than:{days}d"
 CHANNEL = os.environ.get("GOOGLE_ALERTS_SLACK_CHANNEL", "")
 EMAIL_TO = os.environ.get("GOOGLE_ALERTS_EMAIL_TO", "")       # comma-separated
+LEGAL_EMAIL_TO = os.environ.get("GOOGLE_ALERTS_LEGAL_EMAIL_TO", "")   # legal section only
 STATE = Path(os.environ.get("GOOGLE_ALERTS_STATE") or os.path.expanduser("~/.hermes/.google-alerts-state.json"))
 LOCK = Path(os.path.expanduser("~/.hermes/.google-alerts.lock"))
 CLAUDE_CWD = Path(os.path.expanduser("~/.hermes/google-alerts-cwd"))
@@ -96,7 +107,9 @@ ALERTS = [
     ("product", '"Mobile Tailor"', "en"),
     ("product", '"wrist measurement" OR "wrist sizing" OR "wrist sizer" app OR smartphone OR API OR AI OR online', "en"),
     ("client", '"Safariland"', "en"),
+    ("client", '"Cadre Holdings"', "en"),
     ("client", '"Burlington Medical"', "en"),
+    ("client", '"TIDI Products"', "en"),
     ("client", '"Generation Tux"', "en"),
     ("client", '"Jim\'s Formal Wear"', "en"),
     ("client", '"UK Meds"', "en"),
@@ -114,10 +127,19 @@ ALERTS = [
     ("market", '"BMI verification" OR "verified BMI" OR "BMI fraud" OR "weight verification"', "en"),
     ("market", '"made-to-measure" OR uniforms "body scanning" OR "3D body scan" OR "digital measuring"', "en"),
     ("market", '"virtual try-on" watch OR bracelet OR jewelry', "en"),
+    ("legal", '"biometric privacy" OR BIPA lawsuit OR "class action" OR settlement OR ruling OR law', "en"),
+    ("legal", '"consumer health data" OR "My Health My Data" OR "health data privacy" law OR act OR lawsuit OR enforcement', "en"),
+    ("legal", '"state privacy law" OR "comprehensive privacy law" signed OR effective OR amendment', "en"),
+    ("legal", 'GDPR OR "UK GDPR" OR ICO OR EDPB "health data" OR "biometric data" OR "special category"', "en"),
+    ("legal", '"AI Act" OR "Colorado AI Act" biometric OR health OR insurance OR "high-risk"', "en"),
+    ("legal", 'HIPAA OR FTC "health app" OR telehealth OR "Health Breach Notification" rule OR enforcement OR settlement', "en"),
+    ("legal", '"general wellness" OR "software as a medical device" FDA OR MDR guidance OR rule', "en"),
+    ("legal", 'GLP-1 OR "weight loss" "online prescribing" OR "remote prescribing" OR GPhC OR MHRA OR "telehealth rules"', "en"),
 ]
 
 SECTIONS = [("company", "3DLOOK"), ("people", "People"), ("product", "Products"),
-            ("client", "Clients"), ("competitor", "Competitors"), ("market", "Market")]
+            ("client", "Clients"), ("competitor", "Competitors"), ("market", "Market"),
+            ("legal", "Legal & regulatory")]
 
 
 def private_alerts() -> dict:
@@ -260,13 +282,17 @@ smartphone photos via API, mapped to a brand's size chart; for jewelry, bracelet
 wearables; it has no product name of its own). "Mobile Tailor" as a generic tailoring service \
 is a namesake; medical wrist studies (carpal tunnel, wrist circumference as a health marker) \
 are noise for the wrist product.
-- Clients: Safariland (body armor, PPE and public-safety uniforms), Burlington Medical \
-(radiation protection aprons), Generation Tux and Jim's Formal Wear (formalwear rental), \
+- Clients: Safariland (body armor, PPE and public-safety uniforms; its parent is Cadre \
+Holdings, NYSE: CDRE), Burlington Medical (radiation protection aprons; owned by TIDI Products \
+since January 2026), Generation Tux and Jim's Formal Wear (formalwear rental), \
 UK Meds (UK online pharmacy), Yazen (Nordic obesity and weight-loss clinic; NOT people named \
 Yazen).{private_watch} For clients keep company news: funding, M&A, leadership changes, \
-launches, partnerships, contracts, expansion, layoffs, regulatory or legal action, and anything \
-on fit, sizing or measuring. Drop shop and product listings, deals and coupons, user reviews, \
-forum threads and how-to content.
+launches, partnerships, contracts, expansion, layoffs, financial results and guidance, \
+lawsuits, claims, recalls, regulatory or legal action, and anything on fit, sizing or \
+measuring. A client's financial health matters to 3DLOOK directly. Parent-company corporate \
+news counts for the client: entity is the client name (e.g. "Safariland" for a Cadre Holdings \
+earnings report), and the note names the parent. Drop shop and product listings, deals and \
+coupons, user reviews, forum threads and how-to content.
 - Direct competitors: Prism Labs (mobile body composition scanning, NOT other "Prism" \
 companies), Bodygram, Size Stream.
 - Adjacent: Spren (body composition app, NOT the fantasy-novel "spren"), Styku, Fit3D, InBody \
@@ -278,13 +304,37 @@ programs, online pharmacies (BMI verification), insurers, employer wellness, fit
 made-to-measure apparel and uniform makers, and online sizing for jewelry, watch and wearable \
 brands (wrist sizing, virtual try-on for watches and bracelets). Generic diet, gym or fashion \
 content is noise.
+- Legal & regulatory (read by 3DLOOK's legal team, which keeps the privacy policy, terms, DPAs \
+and compliance answers current): concrete legal developments on what 3DLOOK does, i.e. \
+processing body photos, body measurements and health-related estimates for businesses in the \
+US, UK and EU. In scope: biometric privacy laws and lawsuits (Illinois BIPA, Texas, Washington, \
+Colorado and others), especially over face or body scans, selfies and virtual try-on; consumer \
+health data laws (Washington My Health My Data and similar) and new or amended US state \
+privacy laws; HIPAA and FTC health privacy rules and enforcement; GDPR and UK GDPR on health \
+or biometric data (regulator guidance, fines, court rulings, EU-US data transfers); the EU AI \
+Act and US AI laws where they touch biometrics, health, insurance or employment; FDA and EU \
+MDR rules on wellness versus medical-device software; rules for online weight-loss and GLP-1 \
+prescribing (GPhC, MHRA, FDA, state telehealth rules), including BMI checks. Keep: a law \
+passed, signed, amended or taking effect; a regulator's rule, guidance, warning or \
+enforcement; a court ruling; a class action filed or settled; a fine. Law-firm client alerts \
+count when they report such a development. Drop: explainers and evergreen guides, webinars and \
+events, vendor marketing, opinion without a concrete development, and biometrics in policing, \
+border control, banking KYC or workplace time clocks unless the item sets a rule for consumer \
+apps or health data.
 
 ## Rules
 - keep=true only if the item is really about a watched entity, or is a concrete market \
-development (launch, funding, partnership, regulation, study, notable case) in the areas above.
+development (launch, funding, partnership, regulation, study, notable case) in the areas above, \
+or a concrete legal development in the legal scope above.
 - 3DLOOK's own job ads and its own social posts: keep=false (drop_reason "own content").
 - Competitor job ads: keep=true, category competitor, note says what role they hire for.
-- category: company | people | product | client | competitor | market.
+- category: company | people | product | client | competitor | market | legal. A law, rule, \
+ruling or enforcement action goes under legal, not market, even when it comes from a market \
+alert. Legal news about a watched client or competitor goes under client or competitor, \
+except a case over biometric or health data: that is a precedent for the legal team, so it \
+goes under legal, with the company name as entity.
+- For legal items the note says which jurisdiction, what changed and when it takes effect, \
+if the item says so.
 - entity: the watched name the item is about (e.g. "Bodygram", "Safariland"), or "" for market items.
 - title: the article title as published, cleaned of site suffixes like " - YouTube" or \
 " | LinkedIn". source: the publication or site name.
@@ -355,19 +405,22 @@ def esc(s: str) -> str:
     return html.escape(s or "", quote=False)         # Slack mrkdwn escapes & < > only
 
 
-def digest(items: list[dict], an: dict[str, dict], day: str) -> tuple[str, list, int]:
-    """(headline, [(section label, [(item, analysis, who)])], dropped) shared by Slack and email."""
-    kept = [i for i in items if an[i["key"]]["keep"]]
+def digest(items: list[dict], an: dict[str, dict], day: str,
+           only: str = "") -> tuple[str, list, int]:
+    """(headline, [(section label, [(item, analysis, who)])], dropped) shared by Slack and email.
+    only="legal" = that one section, for the legal-only email."""
+    kept = [i for i in items if an[i["key"]]["keep"] and (not only or an[i["key"]]["category"] == only)]
     n = len(kept)
     date = datetime.strptime(day, "%Y-%m-%d").strftime("%b %-d")
-    head = f"Google Alerts · {date} · {n} mention{'' if n == 1 else 's'}"
+    title = f"{dict(SECTIONS)[only]} alerts" if only else "Google Alerts"
+    head = f"{title} · {date} · {n} {'item' if only else 'mention'}{'' if n == 1 else 's'}"
     groups = []
     for cat, label in SECTIONS:
         group = sorted((i for i in kept if an[i["key"]]["category"] == cat),
                        key=lambda i: an[i["key"]].get("entity", ""))
         if group:
             groups.append((label, [(i, an[i["key"]], an[i["key"]].get("entity", "")
-                                    if cat in ("client", "competitor", "people") else "") for i in group]))
+                                    if cat in ("client", "competitor", "people", "legal") else "") for i in group]))
     return head, groups, len(items) - n
 
 
@@ -388,8 +441,9 @@ def render(items: list[dict], an: dict[str, dict], day: str) -> str:
     return "\n".join(lines)
 
 
-def render_email(items: list[dict], an: dict[str, dict], day: str) -> tuple[str, str]:
-    head, groups, dropped = digest(items, an, day)
+def render_email(items: list[dict], an: dict[str, dict], day: str,
+                 only: str = "") -> tuple[str, str]:
+    head, groups, dropped = digest(items, an, day, only)
     e = lambda s: html.escape(s or "")               # noqa: E731
     out = ['<div style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.45;'
            'color:#1a1a1a;max-width:640px">', f'<p style="font-size:16px"><b>{e(head)}</b></p>']
@@ -403,10 +457,14 @@ def render_email(items: list[dict], an: dict[str, dict], day: str) -> tuple[str,
             out.append(f'<li style="margin-bottom:8px">{who}<a href="{e(i["url"])}">'
                        f'{e(a["title"] or i["url"])}</a>{src}{note}</li>')
         out.append("</ul>")
-    foot = f"Filtered out as noise: {dropped}. " if dropped else ""
-    out.append(f'<p style="color:#777;font-size:12px;margin-top:18px">{foot}'
-               "Daily digest of Google Alerts on 3DLOOK, our people, products, clients, competitors "
-               "and market.</p>")
+    if only:
+        foot = ("Daily digest of Google Alerts on laws, regulators and court cases about biometric "
+                "and health data, AI and online prescribing. Reply to this email to change the topics.")
+    else:
+        foot = (f"Filtered out as noise: {dropped}. " if dropped else "") + (
+            "Daily digest of Google Alerts on 3DLOOK, our people, products, clients, competitors, "
+            "market and regulation.")
+    out.append(f'<p style="color:#777;font-size:12px;margin-top:18px">{foot}</p>')
     out.append("</div>")
     return head, "".join(out)
 
@@ -437,6 +495,7 @@ def cmd_run(a) -> int:
         return 0
     channel = a.channel or CHANNEL
     emails = [x.strip() for x in (a.email or EMAIL_TO).split(",") if x.strip()]
+    legal_emails = [x.strip() for x in (a.legal_email or LEGAL_EMAIL_TO).split(",") if x.strip()]
     if a.post and not channel:
         print("no Slack channel: pass --channel or set GOOGLE_ALERTS_SLACK_CHANNEL", file=sys.stderr)
         return 3
@@ -513,11 +572,15 @@ def cmd_run(a) -> int:
                 save_state(st)                       # a failed post must not pay again
         an = {i["key"]: st["analyses"][i["key"]] for i in items}
         kept = sum(1 for i in items if an[i["key"]]["keep"])
+        legal = sum(1 for i in items if an[i["key"]]["keep"] and an[i["key"]]["category"] == "legal")
         text = render(items, an, day)
         if not a.post:
             print(text)
             if kept and emails:
                 print(f"\n(email to {', '.join(emails)}: «{render_email(items, an, day)[0]}»)")
+            if legal and legal_emails:
+                print(f"(legal email to {', '.join(legal_emails)}: "
+                      f"«{render_email(items, an, day, 'legal')[0]}»)")
             for i in items:
                 if not an[i["key"]]["keep"]:
                     print(f"  [drop] {i['query']} · {an[i['key']].get('drop_reason')} · {i['text'][:90]}")
@@ -538,6 +601,14 @@ def cmd_run(a) -> int:
                     # post to Slack twice. Vadim gets the failure and can forward by hand.
                     log(f"email failed: {e}")
                     tg(f"⚠️ Google Alerts: у Slack дайджест пішов, а лист на {', '.join(emails)} — ні "
+                       f"({str(e)[:200]}). Перешли вручну, якщо треба.")
+            if legal and legal_emails:
+                try:
+                    send_email(legal_emails, *render_email(items, an, day, "legal"))
+                    log(f"legal emailed: {', '.join(legal_emails)} ({legal} items)")
+                except Broken as e:
+                    log(f"legal email failed: {e}")
+                    tg(f"⚠️ Google Alerts: юридичний лист на {', '.join(legal_emails)} не пішов "
                        f"({str(e)[:200]}). Перешли вручну, якщо треба.")
         log(f"posted: {kept} kept, {len(items) - kept} dropped" if kept else
             f"nothing relevant ({len(items)} dropped) — no post")
@@ -568,6 +639,7 @@ def cmd_status(a) -> int:
     print(f"last processed: {max(st['messages'].values(), default='—')}")
     print(f"channel: {CHANNEL or '— (set GOOGLE_ALERTS_SLACK_CHANNEL or pass --channel)'}")
     print(f"email: {EMAIL_TO or '— (set GOOGLE_ALERTS_EMAIL_TO or pass --email)'}")
+    print(f"legal email: {LEGAL_EMAIL_TO or '— (set GOOGLE_ALERTS_LEGAL_EMAIL_TO or pass --legal-email)'}")
     pa = private_alerts()["alerts"]
     print(f"private alerts: {len(pa)} from {PRIVATE_ALERTS}" if pa else f"private alerts: — ({PRIVATE_ALERTS})")
     return 0
@@ -580,6 +652,8 @@ def main(argv=None) -> int:
     r.add_argument("--post", action="store_true", help="post to Slack and mark processed (else print only)")
     r.add_argument("--channel", default="", help="Slack channel id (default $GOOGLE_ALERTS_SLACK_CHANNEL)")
     r.add_argument("--email", default="", help="comma-separated recipients (default $GOOGLE_ALERTS_EMAIL_TO)")
+    r.add_argument("--legal-email", default="",
+                   help="legal-section-only recipients (default $GOOGLE_ALERTS_LEGAL_EMAIL_TO)")
     r.add_argument("--lookback-days", type=int, default=3, help="gmail newer_than window (default 3)")
     r.add_argument("--model", default=MODEL, help=f"claude model alias (default {MODEL})")
     sub.add_parser("links", help="prefilled google.com/alerts link per alert")
