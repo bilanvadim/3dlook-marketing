@@ -7,8 +7,9 @@
 ```
 brand-assets/
 ├── README.md                       (этот файл)
-├── brand-guidelines/               # Официальный гайдбук [НУЖНО ЗАЛИТЬ]
-├── logos/                          # Логотипы [НУЖНО ЗАЛИТЬ]
+├── brand-guidelines/README.md      # ✓ Где брендбук (Google Slides) и куда сведены его правила (DESIGN.md)
+├── logos/                          # ✓ 2026-11-12: lockup + symbol, black/white SVG + правила
+├── product-imagery/                # ✓ 2026-11-12: 34 продуктовых изображения с сайта + INDEX.md
 ├── color-palette/
 │   └── colors.md                   # ✓ Готов (Vadim confirm точных HEX)
 ├── fonts/
@@ -55,8 +56,8 @@ brand-assets/
 ## Что Вадиму осталось залить
 
 ### Критично (без этого визуальные агенты не работают):
-1. **`logos/`** — `logo-primary.svg`, `logo-white.svg`, `logo-mono.svg`, `logo-favicon.png`
-2. **`brand-guidelines/`** — официальный бренд-бук PDF (если есть)
+1. ~~`logos/`~~ — готово 2026-11-12 (с живого сайта, см. `logos/README.md`)
+2. ~~`brand-guidelines/`~~ — брендбук найден (Google Slides), правила сведены в `DESIGN.md`
 3. **`past-posts/{profile}/`** — минимум 10 постов на каждый активный профиль с метриками
 4. **`past-posts/_figma-exports/`** — топ-10 banner'ов из Blog banners Figma + ключевые страницы 3DLOOK website Figma
 
@@ -83,7 +84,8 @@ brand-assets/
 - [x] product-info/ — полная база знаний
 - [x] color-palette + fonts (предварительно)
 - [x] competitors/list.md
-- [ ] logos/ — Vadim
-- [ ] brand-guidelines/ — Vadim
+- [x] logos/ (2026-11-12)
+- [x] brand-guidelines/ → Google Slides + DESIGN.md (2026-11-12)
+- [x] product-imagery/ (2026-11-12)
 - [ ] past-posts/{profile}/ — Vadim
 - [ ] past-posts/_figma-exports/ — Vadim

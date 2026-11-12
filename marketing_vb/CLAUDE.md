@@ -191,11 +191,11 @@
 
 ## 7. Бренд-ассеты
 
-**Дизайн — единый источник правды: `DESIGN.md` (корень репо).** Подтверждённый экспорт из официальной Figma: цвета (electric blue `#143DFF`, navy `#050F40`, полные blue/gray/neutral шкалы), типографика (**Satoshi**), spacing, border-radius, кнопки, header/footer, motion, art direction, copy-paste `:root` CSS. Читать перед любым визуальным артефактом (бриф, лендинг, HTML-прототип, 2-pager, deck, email).
+**Дизайн — единый источник правды: `DESIGN.md` (корень репо).** Подтверждённый экспорт из официальной Figma: цвета (electric blue `#143DFF`, navy `#050F40`, полные blue/gray/neutral шкалы), типографика (**Satoshi**; в деках **Jost**), логотип и его правила, spacing, border-radius, кнопки, header/footer, motion, art direction, copy-paste `:root` CSS. Читать перед любым визуальным артефактом (бриф, лендинг, HTML-прототип, 2-pager, deck, email).
 
 См. также `brand-assets/`. Перед визуальным брифом или постом агент **обязательно** читает:
 - `DESIGN.md` — **все токены дизайна** (заменяет старые `colors.md` / `fonts.md`)
-- `brand-assets/brand-guidelines/` — гайдлайны (если есть PDF)
+- `brand-assets/logos/` — логотипы (всегда чёрный или белый) и `brand-assets/product-imagery/` — реальные продуктовые изображения с сайта (`INDEX.md`); брендбук — Google Slides, его правила уже в `DESIGN.md` (`brand-assets/brand-guidelines/README.md`)
 - `brand-assets/past-posts/` — последние посты под каждый профиль
 
 > ⚠️ `brand-assets/color-palette/colors.md` (`#2962FF`) и `brand-assets/fonts/fonts.md` (Inter) — **устарели** (это были placeholder-ы до получения Figma). Каноничны `#143DFF` и **Satoshi** из `DESIGN.md`. Оба старых файла переведены в redirect-заглушки. Не воскрешать `#2962FF` / Inter (см. `DESIGN.md` §15 superseded).

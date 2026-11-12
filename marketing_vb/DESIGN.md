@@ -3,6 +3,8 @@
 > Read before building any marketing artifact (landing page, HTML prototype, 2-pager, deck, social, email). Single source of truth for brand tokens and art direction. Voice lives in `about-me.md`; audience in `audience.md`.
 >
 > **Rule for agents:** use tokens exactly as written. All values below are confirmed from the official Figma export (`Color / Typography / Buttons / Border Radius / Spacing / Header / Footer`) unless marked `⚠`. Never introduce fonts, colors, or radii not defined here. Never resurrect superseded values (§15).
+>
+> **Sources (2026-11-12):** tokens = Figma export above · logo rules, secondary font, icons, photography and deck rules = the 3DLOOK brand guideline, Google Slides «3DLOOK Branding» `1p1cW9pE-a4nvqlRRUzirIU6tvSksz7T20YxaFMAuEQ4` (Vadim's copy of Kristina's 2024 guideline) · files = `brand-assets/logos/` and `brand-assets/product-imagery/` (collected from the live site, each with its README / INDEX).
 
 ---
 
@@ -66,9 +68,9 @@ Rules: one product colour per element, never mixed in one component; on dark use
 
 ## 3. Typography — Satoshi
 
-**Typeface:** **Satoshi** for both headings and body.
-**Weights:** Regular **400** · Medium **500** · Semi Bold **600** · Bold **700** (Black **900** available for display accents).
-**Import:** `https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,900&display=swap`
+**Typeface:** **Satoshi** for both headings and body (web, print, social, video). Decks use Jost (§3b).
+**Weights:** Regular **400** · Medium **500** · Bold **700** (Light **300** and Black **900** exist for display accents). **Satoshi has no 600:** the guideline lists Light / Regular / Medium / Bold, the live site serves only 400 / 500 / 700, and the Figma org fonts are static styles. A `600` request renders as 700, so headings marked Semi Bold below are set in Bold.
+**Import:** `https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap`
 **Fallback:** `'Satoshi','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif`. Embed or outline Satoshi in print PDFs.
 
 ### Headings
@@ -77,8 +79,8 @@ Rules: one product colour per element, never mixed in one component; on dark use
 | Display | 80px | Bold (700) |
 | H1 | 65px | Bold (700) |
 | H2 | 50px | Bold (700) |
-| H3 | 40px | Semi Bold (600) |
-| H4 | 35px | Semi Bold (600) |
+| H3 | 40px | Bold (700) (Figma label «Semi Bold»; no 600 exists) |
+| H4 | 35px | Bold (700) (same) |
 | H5 | 27px | Medium (500) |
 
 Heading treatment: line-height ~1.08, letter-spacing −0.02em. On web, scale headings responsively (e.g. `clamp()`) down from these desktop sizes.
@@ -94,6 +96,9 @@ Heading treatment: line-height ~1.08, letter-spacing −0.02em. On web, scale he
 | Body-menu | 16px | Medium (500) |
 
 Body line-height 1.5. **Eyebrow technique** (signature): small uppercase label above section headings — 13px, weight 700, letter-spacing 0.14em, color `--blue` (muted variant `--g500`), margin-bottom 18px. **Hero stat numerals:** oversized (print 72–120pt; web large `clamp()`).
+
+### 3b. Jost — secondary typeface (brand guideline, slide 12)
+**Jost** is used **in presentations (Google Slides decks), in the Mobile Tailor widget, and wherever Satoshi is unavailable.** Weights: Light 300 · Regular 400 · Medium 500 · Semi Bold 600. Free on Google Fonts (`https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap`), so it works in Slides and in Claude artifacts where Fontshare can't load.
 
 ---
 
@@ -172,7 +177,25 @@ Scroll-reveal with stagger on section entry; `scroll-behavior: smooth`; always h
 - **Motif:** the 3DLOOK triangle mark + fine measurement-line accent, used sparingly (never edge stripes).
 - Soft, believable shadows; generous negative space; device mockups with real scan metrics.
 
-`⚠` Logo files, exact triangle-mark geometry, clearspace, and minimum sizes are not in this export. Request the logo/brand-mark asset kit before reproducing the mark at small sizes.
+- **Product imagery library:** `brand-assets/product-imagery/` (34 images from the latest pages of the live site: 3D renders, capture UI on phones, dashboard on a laptop, API code card, Wrist and Mobile Tailor sets). Use these before generating anything; never generate fake product UI. `INDEX.md` says what each one shows and where it may be used.
+
+### Logo (brand guideline, slides 6-9)
+Files and full rules: `brand-assets/logos/README.md`. In short: the **horizontal lockup** (symbol + wordmark) is the primary logo; the symbol alone is for tight spaces. **Always black or white**, never blue, gradient, outlined, shadowed, 3D, stretched, rotated, mirrored or cropped. Minimum size: lockup **90 px wide**, symbol **20 px high**. Keep clearspace around it. On imagery, darken or lighten the image until the logo reads.
+
+### Icons (slide 13)
+Simple, light line icons with one consistent stroke weight across a set; keep lines as light as the surrounding type. Icons support, they don't replace product imagery (§1 "Product over icons"). No icon set is stored yet; draw new ones in that style.
+
+### Photography (slides 14-15)
+Always high quality (upscale if needed). Vibe: **aspirational, confident, elegant, clear.** The guideline's own examples are fashion editorials from the retail era; for FitXpress use real people in health, fitness and clinical settings in the same register (see `product-imagery/fitxpress/lifestyle-person-with-app.png`), and keep fashion imagery for Mobile Tailor.
+
+### Presentations / decks (slides 16-21)
+Decks are set in **Jost** (§3b) on black and white with electric blue as the single accent.
+- **Cover:** an image, or just the logos (3DLOOK × partner) on a dark or light background.
+- **Lines** are the main device: a **black** line above or beside the title, a **grey** line to separate text blocks. A line is always as long as the row it belongs to.
+- **Title length:** on dense slides the title takes at most ⅓ of the slide width (½ at most); secondary text may sit to the right of the title.
+- **Black rectangle** behind a short subtitle to label a visual.
+- **Circles with numbers** for steps, agendas and numbered lists.
+- Charts: §2 reserves the blue mids (`#8A9CFF` / `#4F6DFF`) for data-viz; the guideline's chart examples (slide 19) use multi-colour series for many categories. `⚠` No chart palette is defined beyond that.
 
 ---
 
@@ -218,10 +241,13 @@ Body text meets **AA contrast** minimum. Never place light text on light imagery
 
 ## 14. Do / Don't
 **Do:** keep electric blue as one sharp accent · lead proof zones with oversized numerals · use navy radial glow + texture, never flat · prefer product imagery · use the type scale and spacing steps exactly · use the eyebrow technique · white CTA button on navy · honor reduced-motion.
-**Don't:** spread `#143DFF` across large fills · use flat navy blocks · use icons where a product asset fits · invent sizes/radii off-scale · put light text on imagery without a scrim · introduce fonts other than Satoshi.
+**Don't:** spread `#143DFF` across large fills · use flat navy blocks · use icons where a product asset fits · invent sizes/radii off-scale · put light text on imagery without a scrim · introduce fonts other than Satoshi (web, print, social, video) and Jost (decks, Mobile Tailor widget) · colour the logo or use a 3D version of the symbol · request Satoshi 600.
 
 ---
 
 ## 15. Superseded — do NOT use
 - **Bricolage Grotesque** and **IBM Plex Sans** appeared in the earliest telehealth prototype, built **before** this design system existed. They are **not** brand fonts. Canonical type is **Satoshi** only.
 - Earlier ad-hoc radii (22/34/7px) and the smaller gray set — replaced by the confirmed scales above.
+- **3D / extruded versions of the symbol** (the site favicon `uploads/2023/10/cropped-3dlook-black-logo-1-*.png`, Drive folders «3dlook_logo + mark» 2021 and «Logo-Fonts 2021») — outdated; the guideline says don't make the symbol 3D. Use `brand-assets/logos/`.
+- **«Brand Guideline.pdf» on Drive (2026-10-22)** is the Activitis Education brand book, not 3DLOOK. The 2021 «3DLOOK Brand Identity Guidelines» PDF is superseded by the Slides guideline above.
+- Guideline neutral `#F3F3F3` = the same role as `--g100` `#F2F2F2`; use the token on web, either is fine in Slides.
