@@ -1,0 +1,25 @@
+{
+ "campaign": "2026-10-29-eu-insurance-underwriting",
+ "checked": 29,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "add-2026-11-12-all",
+ "generated": "2026-11-12T13:33:39",
+ "hard": [],
+ "soft": [
+  [
+   "no company line",
+   "sara-fenelon-6850921a M1",
+   "«Gen Re Germany» is not named in any form: name the company and give it a line only it gets"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«a smart scales weight estimate…»: ariane-ehlers, klemens-binswanger-99585712, roman-lerch-6135a8127, ueli-konrad"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«is not a scale reading…»: daniel-meier-phd-saa, raphael-rimelin-a734208, sophie-chapelain-64965141"
+  ]
+ ]
+}

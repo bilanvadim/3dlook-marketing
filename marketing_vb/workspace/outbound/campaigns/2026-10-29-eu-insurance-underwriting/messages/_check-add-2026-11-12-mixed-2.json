@@ -1,0 +1,15 @@
+{
+ "campaign": "2026-10-29-eu-insurance-underwriting",
+ "checked": 13,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "add-2026-11-12-mixed-2",
+ "generated": "2026-11-12T13:33:40",
+ "hard": [],
+ "soft": [
+  [
+   "card wording as copy",
+   "campaign ×8",
+   "«a smart scales weight estimate…»: andreas-bayerstadler-20b9b6111, dirk-heiss-80a72b4, dr-till-boehmer, ermirqeli"
+  ]
+ ]
+}

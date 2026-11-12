@@ -1,0 +1,912 @@
+first_name,last_name,linkedin_url,company,title,email,connection_note,message_1,message_2
+Ueli,Konrad,https://linkedin.com/in/ueli-konrad,Swiss Re Switzerland,Head Data-Driven Underwriting & Analytics,,,"Hi Ueli,
+
+Quick thought on data-driven underwriting and analytics solutions at Swiss Re: a case with no examination holds one declared weight and little else on build.
+
+Applicants take 2 photos in the application, and the insurer receives a Smart Scales weight estimate. The insurer sets how far the estimate may sit from the declared weight, and a flag marks cases beyond that distance.
+
+Which existing data would you set a build signal against first?
+
+Olena","Hi Ueli,
+
+Two figures describe a first run: how many cases each limit flags, and how often the flagged cases agree with other build evidence.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Happy to set up a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Mark,W.,https://linkedin.com/in/mark-w-28796b,Swiss Re Switzerland,Group Chief Data & Analytics Officer,,,"Hi Mark,
+
+Group data and analytics at Swiss Re are yours. On applications with no doctor's examination, weight is a declared value, and a remote build record would add an estimate beside it.
+
+FitXpress returns that estimate from 2 photos in an insurer's application, as a Smart Scales value with a timestamp, and flags cases where the difference exceeds the insurer's threshold.
+
+Does a group data model have a place for an estimate that sits beside a declared value?
+
+Olena","Hi Mark,
+
+In the record the two values stay in separate fields, and each keeps its own source. An insurer evaluating the step holds the records itself.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+If the owner of Magnum is the better first reader, I will write to them.
+
+The two fields can be shown on a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Jeffrey,Krook,https://linkedin.com/in/jeffreykrook,Nationale-Nederlanden,Head of Group IT Transformation,,,"Hi Jeffrey,
+
+Your bio describes leading IT services, data and AI for the life business of Nationale-Nederlanden.
+
+In the application, 2 photos give a weight estimate, and the record flags a case when it differs from the declared weight by more than a limit NN sets. Integration runs through a REST API or SDKs.
+
+Which checks would a new data source go through in IT before data and AI teams use it?
+
+Olena","Hi Jeffrey,
+
+The record arrives as structured fields with a timestamp and a random identifier, ready for a data team to read. The insurer sets the threshold, and the flag is one field among them.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+If another IT lead reviews new data sources for life, I would be glad of the name.
+
+A call to walk through the fields: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Myra,B.,https://linkedin.com/in/myra-b-8ab88b34,New Ireland Assurance,Head of Strategic Change,,,"Hi Myra,
+
+Your bio describes mobilising and delivering change programmes, and a photo step in a protection application would be a change to plan at New Ireland.
+
+The application would carry 2 photos, and Smart Scales would return a weight estimate. A flag follows only when the estimate and the declared weight differ by more than a limit set for protection cases.
+
+When a change to the protection application reaches you, how is it scoped before it gets a programme slot?
+
+Olena","Hi Myra,
+
+Scoping is simple here, because the first stage is a shadow phase: flags are counted on cases the insurer picks, and nothing changes on the case.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+If the new-business journey for protection belongs to another owner, please say who.
+
+A call on the scope: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Declan,O'Neill,https://linkedin.com/in/declanjoneill,Munich Re Germany,"Head of Digital and Innovation Strategy, Life & Health Reinsurance, Europe and Latin America",,,"Hi Declan,
+
+At Munich Re you work on digital and innovation strategy for L&H across Europe and Latin America. On cases with no examination, build is only a declared weight.
+
+In the insurer's application the applicant gives 2 photos, Smart Scales returns a weight estimate, and FitXpress flags the case if the estimate departs from the declared weight by more than a limit the insurer sets.
+
+How does digital and innovation strategy for L&H decide which new evidence source reaches a client insurer?
+
+Olena","Hi Declan,
+
+For a first insurer, the evaluation runs beside its usual route on its own non-medical applications, and each limit under test is counted. Outputs stay away from every case file.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+If innovation scouting sits in another team, please say which.
+
+I can take you through the design on a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Yosra,JEMAI,https://linkedin.com/in/yjemai,SCOR France,Head of French Multichannel Distribution Market & African Markets,,,"Hi Yosra,
+
+Your title pairs multichannel distribution with partnerships at SCOR L&H. Where an insurer sells through several channels, some cases may carry no doctor's examination, and build is declared.
+
+With FitXpress, applicants take 2 photos during the application, and the insurer receives a Smart Scales weight estimate. A flag is added only when the estimate lies further from the declared weight than the insurer's own limit allows.
+
+In multichannel distribution, which channel would your insurer partners most want build evidence on?
+
+Olena","Hi Yosra,
+
+An insurer can try the step in one channel while the others stay on today's route, and the evaluation counts flags for each limit under test. Applicants who do not scan keep the current path.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+A pointer to whoever runs online channel partnerships would help.
+
+A time that suits you for a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Paul,Clerkin,https://linkedin.com/in/paulclerkin,Irish Life Assurance,Director of Digital & Technology,,,"Hi Paul,
+
+If a new step enters an application journey at Irish Life Assurance, Digital and Technology would carry it.
+
+FitXpress offers two routes: a web or mobile SDK, or a REST API request. The applicant takes 2 photos in the journey, and the insurer gets back a weight estimate, flagged only if it differs from the declared weight by more than the insurer's limit.
+
+How does your team usually carry a third-party step into a journey: as an SDK in the page or as a request from your back end?
+
+Olena","Hi Paul,
+
+On the page the SDK takes the photos, and from the back end an API call does. In both cases one timestamped record comes back to the insurer.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+To compare the two routes on a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Ermir,Qeli,https://linkedin.com/in/ermirqeli,Swiss Re Switzerland,Head Data Science & AI,,,"Hi Ermir,
+
+Data science and AI at Swiss Re reach underwriting, and underwriting teams ask for features that someone has to test. A remote build record is one candidate.
+
+FitXpress turns 2 photos in an insurer's application into a Smart Scales weight estimate placed beside the declared weight. A flag marks cases where the insurer's tolerance for their difference is exceeded.
+
+Would your team test such a field first as a model feature or as an input to Magnum?
+
+Olena","Hi Ermir,
+
+Testing as a feature needs both weights for the same applicant, and each record carries them together. The insurer's evaluation produces them on its own applications and keeps them.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+If L&H analytics owns that first test, I will take it there.
+
+I could present the record structure on a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Dirk,Heiss,https://linkedin.com/in/dirk-heiss-80a72b4,Munich Re Germany,"Head of Digital Platforms, Data and AI (Business Technology)",,,"Hi Dirk,
+
+Munich Re's digital underwriting tools sit on its platforms, and a client insurer's application is where a remote build record would start.
+
+The step is an API integration. The applicant's 2 photos go to FitXpress, and one structured record comes back with a Smart Scales weight estimate, the declared weight beside it, and a flag when their difference passes the insurer's own limit.
+
+Which side would own the interface for a step like this: the insurer's application or Munich Re's platform?
+
+Olena","Hi Dirk,
+
+The step reaches an application through SDKs for web and mobile, or by a direct call to the REST API. The insurer chooses the route, and a shadow evaluation runs entirely inside its own application.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+My next message would go to whoever runs client integrations, if you would rather.
+
+The two integration routes can be explained on a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Dr. Till,Böhmer,https://linkedin.com/in/dr-till-boehmer,Munich Re Germany,"Head of Central Analytics (Data, Analytics and AI)",,,"Hi Till,
+
+An insurer that tests a new build field produces numbers for analysts to read, and the choice of comparison shapes what they show.
+
+In FitXpress the applicant adds 2 photos in the application, and a Smart Scales weight estimate comes back beside the declared weight. The insurer sets a tolerance for the difference, and a flag marks cases outside it.
+
+For such an evaluation, which comparison would central analytics at Munich Re expect: the estimate against the declared weight, or against a measured weight?
+
+Olena","Hi Till,
+
+A comparison against measured weights covers only the cases where a weighing exists, which is a smaller group than all applications in an evaluation. The insurer can count both comparisons side by side and keeps the results.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+The actuarial team that studies build experience may prefer to take this up, and I would write to them next.
+
+Your reading of the comparison could be covered on a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Sean,Egan,https://linkedin.com/in/sean-egan-04b80536,Irish Life Assurance,Director - Strategy and Change,,,"Hi Sean,
+
+Irish Life's protection range includes income protection beside term life. Where an application carries no examination, the weight on file is the applicant's own figure.
+
+FitXpress adds a photo step to the application: the applicant takes 2 photos, and Irish Life's systems receive a weight estimate for the case. Irish Life could set the gap between that estimate and the declared weight at which a flag appears.
+
+Which Irish Life protection cover is next in line for a shorter application?
+
+Olena","Hi Sean,
+
+A first evaluation can cover a single protection cover, for example income protection. It records how often estimate and declared weight diverge at limits Irish Life tries out.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+If the medical side of underwriting should see this first, I would welcome an introduction.
+
+If you would like to hear the evaluation design, my calendar is here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Raphael,Rimelin,https://linkedin.com/in/raphael-rimelin-a734208,Hannover Re Germany,General Manager,,,"Hi Raphael,
+
+At Hannover Re in Paris you are General Manager for life and health. Where an insurer sells cover with no doctor's examination, build is declared.
+
+The applicant would send 2 photos from the application. Smart Scales estimates weight, and the case carries a flag only if the estimate and the declared weight are far enough apart to pass a limit the insurer sets.
+
+Which numbers would a client's actuaries ask for first before trusting such an estimate?
+
+Olena","Hi Raphael,
+
+A client's own applications supply the numbers: each limit under test is counted against all cases in the run. The estimate comes from Smart Scales, with approximately 3.5% mean absolute error under evaluated conditions, and it is not a scale reading.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+If client relations for insurers sit with a colleague, a name is enough.
+
+To go through the numbers on a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Martijn,Reijerse,https://linkedin.com/in/martijnreijerse,SCOR France,Chief Technology Officer Life&Health and Digital Solutions,,,"Hi Martijn,
+
+You lead technology for L&H and Digital Solutions at SCOR. A tool for client insurers has to fit how those insurers integrate.
+
+A client insurer reaches FitXpress by REST API or through SDKs for web and mobile. After 2 photos in the application, the record carries a weight estimate and a flag if it differs from the declared weight by more than the insurer's limit.
+
+What would a client insurer's IT ask you first about a tool like this?
+
+Olena","Hi Martijn,
+
+FitXpress returns one record per applicant through its REST API, on a random identifier, and the SDKs carry the photo step. Photos are deleted after processing or within 30 days, per the insurer's policy.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+A name for whoever reviews integrations first would be useful.
+
+A call can go through the interfaces: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Enzo,Vitale,https://linkedin.com/in/enzovitale,Swiss Re Switzerland,Head of Life&Health Pricing Tools Development,,,"Hi Enzo,
+
+Swiss Re's L&H actuarial tools are built in the team you lead. Where a tool uses build from applications with no examination, the value is a declared weight.
+
+FitXpress returns an estimated weight from 2 photos in the application. Declared and estimated weight sit side by side in the record, and the insurer's limit on their difference decides on a flag.
+
+Would your tools need declared and estimated weight as separate fields, or as one difference?
+
+Olena","Hi Enzo,
+
+The record holds both weights and the flag, along with BMI from the declared height and 80+ body measurements. An evaluation on a client's cases gives your team real values for each.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+If another team specifies the inputs of those tools, please say which.
+
+Details can be covered on a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Klemens,Binswanger,https://linkedin.com/in/klemens-binswanger-99585712,Swiss Re Switzerland,Head UW & Claims Continental Europe,,,"Hi Klemens,
+
+Since January you head underwriting and claims in Swiss Re's L&H Europe team. On any case with no examination, build is declared.
+
+Inside the application the applicant takes 2 photos. The record then holds a Smart Scales weight estimate and a flag if it departs from the declared weight by the margin the insurer chooses.
+
+Which build evidence do you regard as enough for a non-medical case, and which needs more?
+
+Olena","Hi Klemens,
+
+A first evaluation uses one insurer's own rules, and the insurer names the limits to test. The run shows how many applications each limit would flag.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Times for a call are open here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Madhu,D.,https://linkedin.com/in/madhu-d-24842112,SCOR France,Chief Digital Officer & Chief Product  Officer,,,"Hi Madhu,
+
+Product and digital at SCOR are both yours, and a remote build record could be a new input for the underwriting tools SCOR offers its clients.
+
+FitXpress adds an SDK step to an insurer's application. The applicant takes 2 photos, and a Smart Scales weight estimate returns beside the declared weight, with a flag where the insurer's threshold on the difference is met.
+
+How would SCOR's product side describe a build field like that to a client insurer?
+
+Olena","Hi Madhu,
+
+One evaluation at a client would give SCOR's product side a complete example of the record, from the SDK step to the flag. The insurer runs it on its own applications and keeps the results.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+The L&H product owner would be my next message, if that suits you.
+
+I can show the record on a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Samantha,OKeeffe,https://linkedin.com/in/samanthaokeeffe,Irish Life Assurance,Head of Strategic Programmes,,,"Hi Samantha,
+
+Your bio names operating model design and M&A integration. Irish Life protection cases that go without an examination rest on declared build.
+
+A photo step in the application takes 2 photos and produces a Smart Scales weight estimate. A flag would mark a case where that estimate and the declared weight disagree beyond a limit Irish Life defines.
+
+Is the protection application journey part of any programme you head at the moment?
+
+Olena","Hi Samantha,
+
+A programme that touches the protection application could add this step as a background test run, with results recorded while the journey for applicants stays as it is today.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Forwarding this to whoever owns the protection proposition would work as well.
+
+Pick any day that suits for a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Sara,Fenelon,https://linkedin.com/in/sara-fenelon-6850921a,Gen Re Germany,Directeur VieSanté France,,,"Hi Sara,
+
+You head Gen Re's life and health business in France. Where an insurer sells cover without an examination or weighing, build is declared and little else backs it.
+
+Applicants would take 2 photos in the application, and the insurer would see an estimated weight next to the declared one. A flag marks only a difference above the insurer's own margin.
+
+What would a first evaluation with one insurer need to show to be worth your team's time?
+
+Olena","Hi Sara,
+
+For one insurer the work is a comparison: its usual route against the same applications with the step added, with a flag count for each limit under test.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+If a product team handles new tools for insurers, their name would help.
+
+My calendar, for a call on the design: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Alan,Brady,https://linkedin.com/in/alan-brady-58582b4a,Irish Life Assurance,Head of Strategy,,,"Hi Alan,
+
+Declared build is the only body data on a protection application at Irish Life that sees no examination.
+
+From 2 photos in the application, FitXpress produces a weight estimate and one timestamped record. Irish Life could choose the gap between estimate and declared weight above which the record carries a flag.
+
+How does the planning cycle at Irish Life decide which protection process improvements get funded?
+
+Olena","Hi Alan,
+
+An evaluation gives a funding discussion a number to work with: how many applications would reach a flag at each limit Irish Life considers.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Tell me if new business operations are the better place for this, and I will write to them.
+
+Here is a link to book a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Nicola,Prendergast,https://linkedin.com/in/nicolaprendergast2024,Irish Life Assurance,Head of Program Management and Change,,,"Hi Nicola,
+
+A new protection product launches with an application that sets what evidence is asked for. At Irish Life, where no examination applies, that evidence is declared build.
+
+Two photos in the application give FitXpress what it needs for a weight estimate. Irish Life would define how wide a gap to the declared weight is worth a flag.
+
+At a protection product launch, which team signs off the evidence the application asks for?
+
+Olena","Hi Nicola,
+
+A launch can include a background evaluation of the photo step, giving the sign-off measured flag rates to review.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Another lead may run the broker application process. This note is fine to forward to that person.
+
+My calendar for a video call on this topic is here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Sofia,Kyriakopoulou,https://linkedin.com/in/sofiakyriakopoulou,SCOR France,"Group Chief Technology, Data & AI Officer",,,"Hi Sofia,
+
+Your bio speaks of delivering analytics and AI solutions. A solution that reads an insurer's application needs an interface behind each new field.
+
+FitXpress is an API and SDK step. The applicant sends 2 photos, and a Smart Scales weight estimate returns with a timestamp, held beside the declared weight. A flag marks cases where the insurer's threshold on their difference is exceeded.
+
+How is a new external API reviewed at SCOR before a tool reads from it?
+
+Olena","Hi Sofia,
+
+The insurer can request deletion of specific scans by scan identifier. Photos are deleted after processing or within 30 days, per the insurer's policy.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+Review documents go through legal@3dlook.me.
+
+If vendor onboarding is a separate function at SCOR, I would contact that team instead.
+
+The interfaces can be covered on a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Thibault,ANTOINE,https://linkedin.com/in/thibault-antoine-697b1425,SCOR France,Group Chief AI Officer,,,"Hi Thibault,
+
+Only applicants who scan would have an estimated weight. A model that reads an insurer's application would see that field for part of the cases at SCOR's clients.
+
+FitXpress returns it from 2 photos in the application: a Smart Scales weight estimate beside the declared weight, with a timestamp and a flag where the insurer's rule finds the two too far apart.
+
+How would an AI team at SCOR treat a field that is present for only some applicants?
+
+Olena","Hi Thibault,
+
+A missing record can have more than one cause: the insurer did not offer the step, or the applicant did not scan. The insurer decides where the step is offered and keeps its usual route for applicants who cannot or do not scan.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Model risk may own this question, and if so I would take it to that team.
+
+We could go through missing records on a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+SarahJane,Johnston,https://linkedin.com/in/sj-johnston,Irish Life Assurance,Head of Change Management,,,"Hi SarahJane,
+
+Every addition to a live application system goes through testing, and a photo step would too. For protection cover that Irish Life accepts without an examination, the weight on file is the one the applicant typed in.
+
+The scan takes 2 photos inside the application and returns the estimated weight next to the declared one. Irish Life would set how far apart the two numbers must be before a flag appears.
+
+How does Irish Life test a change to the application with real applicants before release?
+
+Olena","Hi SarahJane,
+
+The step arrives as an SDK or an API call that returns one record per application, which gives testers a single new output to check.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+A colleague who releases changes to the application system could weigh in instead.
+
+To go through the technical route on a call, book a time here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Denis,McManus,https://linkedin.com/in/denismcm,Irish Life Assurance,Director of Strategy,,,"Hi Denis,
+
+Mortgage protection can be quoted online at Irish Life. Once such a quote becomes a case without an examination, the weight on file comes from the applicant.
+
+FitXpress turns 2 photos from the application into a weight estimate. A flag would appear when the estimate and the declared weight diverge by a margin Irish Life chooses.
+
+Which route is growing faster for Irish Life protection, advisers or online?
+
+Olena","Hi Denis,
+
+An evaluation can report advised and online applications separately, showing how often a flag would appear in each route.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+For sales and distribution of protection, this note can go to whoever leads that side.
+
+A call on the two routes can be booked here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Mark,Rodgers,https://linkedin.com/in/mark-rodgers-3150852b,Irish Life Assurance,Head of Data Architecture and Engineering,,,"Hi Mark,
+
+You run data architecture and engineering at Irish Life. Where a protection case has no examination, build is a declared weight.
+
+Two photos from the applicant become a weight estimate, and the record flags a case if estimate and declared weight differ by more than the insurer's limit.
+
+How would your data model link a record keyed only to a random identifier back to its case?
+
+Olena","Hi Mark,
+
+The record carries a timestamp and a random identifier, and the insurer decides how it attaches to a case. It also holds declared and estimated BMI, along with 80+ body measurements.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+A call can cover the fields: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Eimear,Saul,https://linkedin.com/in/eimear-saul-a90211122,Irish Life Assurance,Strategy Director,,,"Hi Eimear,
+
+Your bio describes a long career in technology and portfolio management. Where Irish Life writes cover without a medical, the only weight in the file is the one the applicant gives.
+
+With 2 photos taken in the application, FitXpress estimates weight. Where that estimate sits far from the declared figure, by a distance Irish Life would fix, the case would carry a flag.
+
+Which systems does a protection application pass through at Irish Life before a case is set up?
+
+Olena","Hi Eimear,
+
+The photo step sits inside the application and returns one record by API or SDK, which means one new input on the route you describe.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+If the application platform has its own owner at Irish Life, I would contact them as well.
+
+Book a time to speak here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Roman,Lerch,https://linkedin.com/in/roman-lerch-6135a8127,Swiss Re Germany,Head Client Management ACEE | L&H Reinsurance,,,"Hi Roman,
+
+At Swiss Re you look after L&H clients in Austria and CEE. Where an insurer sells cover with no examination, build is declared.
+
+With 2 photos in the application, an insurer gets a Smart Scales weight estimate and a flag whenever the declared weight and the estimate are apart by more than the insurer allows.
+
+Which remote evidence would you first present to an insurer that wants more on build?
+
+Olena","Hi Roman,
+
+A design for one insurer is short: the step runs beside its current route, and each limit under test gets a flag count.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+If another team introduces new tools to insurers, a pointer to them is fine.
+
+A short call would suffice to cover it: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Lisa,Plunkett,https://linkedin.com/in/lisa-plunkett-08240282,New Ireland Assurance,Head of Individual Business,,,"Hi Lisa,
+
+Individual business at New Ireland includes protection for family and income, and where no doctor's examination applies, build is declared.
+
+FitXpress would bring 2 photos into the application, and New Ireland would receive an estimated weight. A flag shows only when the difference from the declared weight passes a margin New Ireland chooses.
+
+For individual protection, which cases would you keep outside a photo step?
+
+Olena","Hi Lisa,
+
+An evaluation would show how often a flag appears on individual cases, and the insurer can exclude any case by rule. An applicant who does not scan keeps today's route.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+If a product manager owns individual application design, I would welcome a pointer.
+
+I am glad to go through it on a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Jude,Devins,https://linkedin.com/in/jude-devins-16581a84,Royal London Ireland,Head of Change and Technology,,,"Hi Jude,
+
+Your profile shows large programme delivery, now as Head of Change and Technology at Royal London Ireland. A new step in the application would be one more change to plan.
+
+FitXpress can be called through a REST API or built in with an SDK. After 2 photos in the application, the insurer receives a weight estimate, with a flag only if it differs from the declared weight by more than the insurer's limit.
+
+Where would such a step run in your estate: inside Royal London Ireland's own application or in the tool a broker uses?
+
+Olena","Hi Jude,
+
+For a change plan the step is one integration: the SDK or API call passes the 2 photos, and a dated record returns to Royal London Ireland. Retained photos are blurred and faces are obscured at capture.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+If a delivery lead owns the broker interface, a pointer is welcome.
+
+A technical call can be set up here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Jürgen,Wendlandt,https://linkedin.com/in/juergen-wendlandt,Munich Re Germany,Global Head of Data,,,"Hi Jürgen,
+
+Munich Re's data assets are in your charge, and every field in them has an origin that someone must be able to state.
+
+A remote build record has two origins in one row. The declared weight comes from the applicant's form. The estimate comes from FitXpress, which takes 2 photos in the application and returns a Smart Scales value with a timestamp, and the insurer's threshold on the gap between the two sets a flag.
+
+What origin details would a field like that need in Munich Re's data descriptions?
+
+Olena","Hi Jürgen,
+
+In an insurer's evaluation, origin stays visible in every row: the declared weight comes from the form and the estimate from the scan.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Stewardship of L&H underwriting data may sit with someone else, and I would raise it there.
+
+Field origins could be the topic of a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Juliane,Kania,https://linkedin.com/in/juliane-kania-7b5393b5,Alte Leipziger Lebensversicherung,Bereichsleiterin,,,"Hi Juliane,
+
+You lead FO Privatkundengeschäft Leben at Alte Leipziger, and your bio covers service and digital work. Where a retail life application is decided on the health questions, build is a single declared weight.
+
+A scan adds 2 photos to the application. The estimated weight is held against the declared one, and a flag is set only if the difference passes a limit Alte Leipziger chooses.
+
+Where in retail life operations is an application decided on the health answers alone?
+
+Olena","Hi Juliane,
+
+A first look is a count: how many retail cases a given threshold would flag, set against build evidence gathered separately. The company's rules decide what any flag means.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Whoever writes the guidelines for the health questions is welcome instead.
+
+Happy to talk it through on a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Fabian,Winter,https://linkedin.com/in/fabian-winter-13bb1688,Munich Re Germany,Chief Data and AI Officer,,,"Hi Fabian,
+
+Underwriting tools at a reinsurer run on the fields of an insurer's application, and a remote build record would be a new kind of field for them.
+
+FitXpress produces it from 2 photos taken in the application. The Smart Scales estimate is placed beside the declared weight, with a flag where the insurer's tolerance for the gap between them is exceeded.
+
+What would such an external field need in its description before Munich Re's tools could read it?
+
+Olena","Hi Fabian,
+
+The record keeps the declared weight and the estimate in separate fields under one timestamp. A field description can name the source of each, and an insurer running a shadow evaluation would hold the records itself.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+If the L&H underwriting engines have a separate owner, I will write to that person next.
+
+I can lay out the record on a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Pia,"Burghartz, PhD",https://linkedin.com/in/pia-burghartz-phd-96082a90,Swiss Re Switzerland,Global Head Behavioral Consulting Practice,,,"Hi Pia,
+
+Your headline at Swiss Re talks about helping insurers grow their topline with behavioural science.
+
+An insurer's application would gain a step of 2 photos. The record raises a flag only when the estimated weight and the declared weight are further apart than the insurer's own limit.
+
+How would your practice describe the value of extra evidence on non-medical applications to an insurer?
+
+Olena","Hi Pia,
+
+Your practice would have something concrete to show a client: flag counts per limit on the client's own applications, with the live journey unchanged.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+If consulting work on applications is led by another colleague, a name is welcome.
+
+Pick a day for a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Kate,Campbell,https://linkedin.com/in/campbellkate,Aviva Ireland,Director of Strategy and Governance,,,"Hi Kate,
+
+Your role at Aviva Life and Pensions Ireland joins strategy with governance. Protection cases sold with no doctor's examination carry only a declared build.
+
+A FitXpress step would ask applicants for 2 photos. Smart Scales returns a weight estimate, and the record flags a case only if estimate and declared weight differ by more than a limit Aviva sets.
+
+Is build evidence on those cases part of the strategy discussion, or does it stay inside underwriting?
+
+Olena","Hi Kate,
+
+Before an evaluation starts, its scope can be written down: which cases take part and who sets the limit. Every case outcome stays with Aviva's own process.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Should risk assessment for protection be led from elsewhere, a name from you is enough.
+
+A call is easy to arrange here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Kristoph,"Steikert, PhD",https://linkedin.com/in/steikert,SCOR France,Chief Data Officer,,,"Hi Kristoph,
+
+A field called estimated weight means little until its definition says how it was produced.
+
+FitXpress produces it from 2 photos in an insurer's application, as a Smart Scales weight estimate held beside the declared weight with a timestamp. The insurer sets the threshold on their difference, and the record carries a flag for cases above it.
+
+How would a data catalogue at SCOR describe an estimated weight that comes from an external API?
+
+Olena","Hi Kristoph,
+
+A definition for the field would name its method and keep the declared weight as a separate field. An evaluation at an insurer shows the full set of fields before anyone writes that definition.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+If cataloguing belongs to a data governance lead, I would write to that person.
+
+Do you want to set up a conversation on field definitions? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Julia,Fein (Krezdorn),https://linkedin.com/in/julia-krezdorn,Munich Re Germany,Head of Department - Artificial Intelligence,,,"Hi Julia,
+
+Applications that reach an insurer without a doctor's examination hold one weight, the one the applicant declares. A model in Munich Re's L&H underwriting tools that reads them would meet a second weight if the insurer used a software estimate.
+
+The estimate is returned from 2 photos in the application, as a Smart Scales value beside the declared weight, with a flag where the insurer's tolerance for the difference is exceeded.
+
+What would your team want to know about how an estimate is produced before a model reads it as an input?
+
+Olena","Hi Julia,
+
+A model team would find the estimate and the declared weight as separate fields in each record, never merged into one value. An insurer's evaluation produces those pairs on its own applications and keeps the results.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+I can take this to L&H model validation if that fits.
+
+Provenance of the estimate can be covered on a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Andreas,Bayerstadler,https://linkedin.com/in/andreas-bayerstadler-20b9b6111,Munich Re Germany,Head of AI,,,"Hi Andreas,
+
+A weight estimate adds a column next to the declared weight, and a model team decides what history that column needs before it is used.
+
+FitXpress produces it: the applicant takes 2 photos in the insurer's application, and a Smart Scales weight estimate comes back with a timestamp. The record flags cases where the insurer's rule finds the declared weight and the estimate too far apart.
+
+How much history would a model team at Munich Re want on such a column before testing it?
+
+Olena","Hi Andreas,
+
+The timestamp on each record is what starts the history. An evaluation at an insurer builds a dated series from the first application it includes, and that series stays with the insurer that ran it.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+I am ready to put the history question to whoever owns the L&H models.
+
+I would like to discuss the timestamp history on a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Gianfranco Raffaele,Tommasi,https://linkedin.com/in/gianfranco-raffaele-tommasi,SCOR France,Head of Life & Health Analytics Products - Data & AI Office,,,"Hi Gianfranco,
+
+In SCOR's Data & AI Office you lead the analytics products for L&H. A case with no examination holds one build value, a declared weight.
+
+From 2 photos in the application, FitXpress returns an estimated weight, and a flag marks cases where it departs from the declared weight by more than the insurer's limit.
+
+Could a build field from the application become part of an analytics product?
+
+Olena","Hi Gianfranco,
+
+An evaluation on one client's applications yields a dated record per case, with declared and estimated BMI side by side, and counts flags for each limit under test. The insurer's rules decide what a flag means.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Find a call slot here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Marie,Murphy,https://linkedin.com/in/marie-murphy-613067165,New Ireland Assurance,Head of Actuarial & Product Services,,,"Hi Marie,
+
+You head Actuarial and Product Services at New Ireland. On applications with no examination, build is a single declared weight.
+
+With 2 photos in the application, an estimated weight arrives beside it, and a flag is set only if the difference between them passes a limit chosen by the insurer. One record comes back.
+
+How would your team check whether a new evidence field belongs in the application at all?
+
+Olena","Hi Marie,
+
+An evaluation yields a dated record for each case the insurer includes, with declared and estimated BMI side by side. Product services can read that table before anything in the application changes.
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR, with a DPA that includes SCCs.
+
+If experience monitoring is run by another actuary, I would be glad of an introduction.
+
+Call options are in my calendar: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Sebastian,Soika,https://linkedin.com/in/sebastiansoika,Munich Re Germany,Head of Client Management,,,"Hi Sebastian,
+
+Munich Re's L&H page lists you as head of client management for Israel, Austria, CEE, Greece and Cyprus. Where an insurer sells cover without a doctor's examination, build is declared.
+
+An insurer would ask applicants for 2 photos and get a weight estimate from Smart Scales. Only a distance past the insurer's chosen limit between estimate and declared weight raises a flag.
+
+Which of your insurer conversations would be the natural place to mention remote build evidence?
+
+Olena","Hi Sebastian,
+
+Each insurer can agree its own evaluation: its rules and its limit decide what is counted, and nothing reaches a case. The insurer decides where the step is offered.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Should another colleague lead this topic with insurers, I am happy to contact them.
+
+A call can be booked here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Claudia,Szwillus,https://linkedin.com/in/claudia-szwillus-b00924142,Swiss Re Germany,Head of UW and Claims L&H NACEE( Nordics Austria Central and Eastern Europe),,,"Hi Claudia,
+
+You lead L&H underwriting and claims at Swiss Re for the Nordics, Austria and CEE. Where a client sells cover without an examination, declared build is what the file holds.
+
+FitXpress adds 2 photos to an insurer's application and returns an estimated weight. The record flags a case when the estimate sits well away from the declared weight, by a margin the insurer chooses.
+
+What should an underwriter be able to do with a build flag on a case that has no examination?
+
+Olena","Hi Claudia,
+
+A flag is a pointer for the underwriter. The insurer's own rules decide whether it leads to a referral, and an evaluation counts how often each margin under test would raise one.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+I would welcome a call to go through the options: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Aisling,Bradfield,https://linkedin.com/in/aisling-bradfield-b42698185,SCOR Ireland,Head of Behavioural Science at SCOR Global Life,,,"Hi Aisling,
+
+You head behavioural science at SCOR in Dublin, and a photo step would be a new request to applicants.
+
+FitXpress would ask for 2 photos in the insurer's application. Smart Scales returns a weight estimate, and the record flags a case only if the estimate sits beyond the insurer's limit from the declared weight.
+
+Which part of the application step would you want tested with applicants before anything else?
+
+Olena","Hi Aisling,
+
+A study can run on an insurer's own journey, with the step shown to a share of applicants and the usual route left open for everyone else.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+If client research is led by a colleague, I would welcome an introduction.
+
+An outline of the study design, on a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Ariane,Ehlers,https://linkedin.com/in/ariane-ehlers,Swiss Re Switzerland,Market Head L&H Belgium & Luxembourg,,,"Hi Ariane,
+
+You write that you love designing creative and innovative solutions, now as market head at Swiss Re. Declared build on cases with no examination is one place for a new evidence step.
+
+Applicants would take 2 photos in the application. The insurer sees a Smart Scales weight estimate, and its own limit on the difference from the declared weight decides on a flag.
+
+Where in an insurer's application would you try a new evidence step first?
+
+Olena","Hi Ariane,
+
+A first try asks little of the insurer: its current journey stays as it is, and each limit under test gets a flag count.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Please choose a time for a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Marlot,Linstra,https://linkedin.com/in/marlot-linstra-520056b6,a.s.r.,Medisch Adviseur,,,"Hi Marlot,
+
+If a software weight estimate reached an AOV file, it would appear as one more line beside the declared weight.
+
+FitXpress would produce it from 2 photos in the application, with a flag where the insurer's own threshold on the difference is exceeded.
+
+At a.s.r., would a medical adviser on income cover want such a flag to prompt a doctor's weighing or to stay a note on the file?
+
+Olena","Hi Marlot,
+
+The estimate has a stated error. Smart Scales is a weight estimate with approximately 3.5% mean absolute error under evaluated conditions, and it is not a scale reading. A flag would only point a case to an underwriter.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+The medical director for income cover could be the right person for this, and I would write to them.
+
+Could we speak about the evidence a medical reader would want? https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Daniel,Meier,https://linkedin.com/in/daniel-meier-phd-saa,Swiss Re Switzerland,Head Life & Health Risk Modelling,,,"Hi Daniel,
+
+In L&H risk modelling at Swiss Re, build on cases with no examination comes in as one declared weight.
+
+An applicant's photos become an estimated weight, and the record sets it beside the declared weight with a flag only for a difference above the insurer's limit. The step needs 2 photos.
+
+Would a second, dated build value on such cases be of any use in your modelling work?
+
+Olena","Hi Daniel,
+
+The estimate comes from Smart Scales, with approximately 3.5% mean absolute error under evaluated conditions, and it is not a scale reading. An evaluation then shows how often a flag agrees with other build evidence on the same cases.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+A call to compare notes: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Luiz,Bueno,https://linkedin.com/in/luizpbueno,Swiss Re Switzerland,"Market Head Life & Health Italy, Iberia",,,"Hi Luiz,
+
+Your route from products actuary to market head for L&H Italy and Iberia at Swiss Re caught my eye. For cases sold without an examination, build is a declared weight.
+
+Each case would be compared: 2 photos in the application give an estimated weight, and a flag appears when its distance from the declared weight exceeds a limit the insurer sets.
+
+Which data would a products actuary want next to a declared weight before a product rule relies on it?
+
+Olena","Hi Luiz,
+
+An evaluation on one insurer's applications gives first numbers: how many cases each limit would flag, out of all cases in the run.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+Book a call here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Michael,Kamm,https://linkedin.com/in/michael-kamm-a4810a32,Swiss Re Switzerland,L&H Underwriting Manager CH & MENA,,,"Hi Michael,
+
+For Swiss Re, you manage L&H underwriting for Switzerland and MENA. Where a client insurer accepts a case without an examination, build is a declared weight.
+
+Two photos taken during the application give Smart Scales what it needs for a weight estimate. The insurer names a maximum difference between estimate and declared weight, and a flag marks cases beyond it.
+
+On such a case, which evidence besides declared build would you point a client insurer to today?
+
+Olena","Hi Michael,
+
+With one client insurer, the step would run beside its current route, and the flag counts show how many cases would go to its underwriters.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+A conversation could start here: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Pavel,Cerny,https://linkedin.com/in/pavel-cerny-24237a25,Swiss Re Switzerland,"Manager L&H Underwriting, Central & Eastern Europe at Swiss Re",,,"Hi Pavel,
+
+Your L&H underwriting work at Swiss Re covers clients in Central and Eastern Europe. If a client's guidelines cover cases with no examination, build there is declared.
+
+Once the applicant has taken 2 photos, Smart Scales produces a weight estimate. The estimate is read against the declared weight, and only a difference past the insurer's chosen limit raises a flag.
+
+Which part of a client's guidelines would a structured build record touch first?
+
+Olena","Hi Pavel,
+
+A client's guideline text does not change in an evaluation. The step runs beside it, and flag counts show how often a gap would have crossed the client's threshold.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+To discuss it, use this link: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"
+Sophie,Chapelain,https://linkedin.com/in/sophie-chapelain-64965141,SCOR France,Responsable Sélection des Risques et Sinistres / Head of Medical Underwriting and Claims,,,"Hi Sophie,
+
+You lead medical risk selection at SCOR in Paris. Where a client insurer accepts a case with no examination or weighing, build is declared.
+
+Applicants take 2 photos during the application, and Smart Scales returns a weight estimate. The record flags a case when estimate and declared weight lie apart by more than the insurer's limit, and a referral to an underwriter follows only if the insurer's rules say so.
+
+Would medical risk selection accept the estimate as a reason for referral by itself, or only next to other evidence?
+
+Olena","Hi Sophie,
+
+In shadow mode no estimate reaches a case. Flags are counted first, and medical risk selection reads them. Smart Scales has approximately 3.5% mean absolute error under evaluated conditions, and it is not a scale reading.
+
+FitXpress is not a medical device and does not make underwriting decisions.
+
+The medical officer who writes build guidance would be a fine contact too.
+
+Happy to walk through the evaluation on a call: https://meetings.hubspot.com/olena-kudriavtseva
+
+Olena"

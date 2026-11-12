@@ -1,0 +1,9 @@
+{
+ "campaign": "2026-10-29-eu-insurance-underwriting",
+ "checked": 7,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "add-2026-11-12-mixed-1",
+ "generated": "2026-11-12T13:32:38",
+ "hard": [],
+ "soft": []
+}

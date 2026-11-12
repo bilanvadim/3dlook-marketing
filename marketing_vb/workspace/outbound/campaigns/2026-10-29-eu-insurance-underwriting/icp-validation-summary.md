@@ -289,3 +289,107 @@ Claims heads (decision 8), P&C at reinsurers, private health, pensions and inves
 - **Julien Descombes (Swiss Re Switzerland, P1) → FAIL, left the company.** Bloomberg Government (2026-02-02) reports Swiss Re parted ways with its L&H chief underwriting officer; his swissre.com profile reads "Former Chief Underwriting Officer L&H Re"; Karen Tan holds the role from 2026-10-01. Standing decision 4 (people who left FAIL). **SEND 130** (P1 20 · P2 57 · P3 53), Swiss Re Switzerland 14.
 - **Laura Corrigan (Zurich Life Ireland) → FAIL, business line.** Her headline reads "Head of New Business, GI Ireland" at Zurich Insurance plc (general insurance). Earlier roles: commercial underwriting and Patrona Underwriting (P&C). She joined only through Apollo's zurich.com domain. Found by the messages QC on 2026-11-02.
 - **Michael Ewers (Munich Re Germany) → FAIL, business line.** He is CTO of Munich Re Markets GmbH, which structures reinsurance for savings, retirement and investment products, not protection underwriting. Found by the messages QC on 2026-11-02. **SEND 128** (P1 20 · P2 56 · P3 52).
+
+## Widening 2026-11-12 (Vadim «з наявного списку по іншуренс розшир гіпотезу і додай контакти під розсилку»)
+
+Rules: hypothesis.md «Vadim's decisions 2026-11-12» (four widenings, all taken in AskUserQuestion; 2026-11-02 holds kept). Source: people already in people-raw.csv (no new pull, no credits). Pool 242 (58 WEAK + 184 FAIL rows with transformation, strategy, innovation, digital, data, AI or architecture titles, or reinsurer market/branch rows), enriched with Bio and Experience from the export, judged by 4 parallel icp-validator batches (Swiss Re 69 / Munich Re + Hannover Re + Gen Re 74 / SCOR 44 / insurers + platforms 55) under one shared rulings sheet (R1-R19). Registry check against all five profiles: 0 people already contacted.
+
+**Coordinator changes after the merge** (marked "(coordinator, widening 2026-11-12)" in decisions.md): web check of every new P1/P2 and of the stale seats (2026-11-12): Michael Haas (left Swiss Re end-2025), Brian Gray (Group CUO 2008-2012, stale profile) and Paul Murray (CEO L&H Re until 2026-10-01; Velina Peneva, already SEND, holds the seat) → FAIL; Raphael Rimelin (Hannover Re, Head of L&H France & MENA since March 2025) FAIL → PASS P2; Klemens Binswanger P2 → P1 (Head of Underwriting & Claims, Swiss Re L&H Europe since January 2026); Ariane Ehlers P2 → P3 (Christophe Heck heads L&H France, BeNeLux & Switzerland since 2026-01-12). Madhu D. (SCOR group CDO/CPO) PASS → WEAK, listed with the group data/AI chiefs. Florian Fuchsbrunner, Rodrigo Belloube (P&C in bio/headline), Katja Rettig (Munich Re Markets) and Dominik Renggli (cat/climate risk) WEAK → FAIL; Shane Farrelly (Zurich GI pricing) WEAK → FAIL by the insurers batch.
+
+**Added: 29** · SEND 128 → 157 · WEAK 58 → 51. (30 after validation; Marco Spagnuolo moved back to WEAK after the messages QC: his role is in-force retention, not new business.)
+
+By source: reinsurer L&H, rest of Europe 14, WEAK review 9, transformation/strategy 4, data/AI/architecture 2.
+By tier and lane: P1 reinsurance 2, P2 reinsurance 9, P3 proposition 2, P3 referral 2, P3 reinsurance 8, P3 technical-integration 5, P3 underwriting 1.
+
+**Not confirmed on the web** (no public trace; title from the 2026-11-02 Sales Navigator export): Claudia Szwillus, Roman Lerch, Ariane Ehlers, Sophie Chapelain, Yosra Jemai, Ueli Konrad (only 2022 traces, L&H Magnum). Confirmed: Klemens Binswanger, Luiz Bueno, Sebastian Soika, Sara Fenelon, Aisling Bradfield, Raphael Rimelin.
+
+| Company | Name | Title | Location | P | Lane | Source |
+|---|---|---|---|---|---|---|
+| Alte Leipziger Lebensversicherung | Juliane Kania | Bereichsleiterin | Germany | 3 | underwriting | WEAK review |
+| Aviva Ireland | Kate Campbell | Director of Strategy and Governance | Ireland | 3 | referral | transformation/strategy |
+| Gen Re Germany | Sara Fenelon | Directeur VieSanté France | France | 2 | reinsurance | reinsurer L&H, rest of Europe |
+| Hannover Re Germany | Raphael Rimelin | General Manager | France | 2 | reinsurance | reinsurer L&H, rest of Europe |
+| Irish Life Assurance | Mark Rodgers | Head of Data Architecture and Engineering | Ireland | 3 | technical-integration | data/AI/architecture |
+| Irish Life Assurance | Paul Clerkin | Director of Digital & Technology | Ireland | 3 | technical-integration | transformation/strategy |
+| Munich Re Germany | Sebastian Soika | Head of Client Management | Germany | 2 | reinsurance | reinsurer L&H, rest of Europe |
+| Munich Re Germany | Declan O'Neill | Head of Digital and Innovation Strategy, Life & Health Reinsurance, Europe  | Ireland | 3 | reinsurance | reinsurer L&H, rest of Europe |
+| Nationale-Nederlanden | Jeffrey Krook | Head of Group IT Transformation | Netherlands | 3 | technical-integration | data/AI/architecture |
+| New Ireland Assurance | Lisa Plunkett | Head of Individual Business | Ireland | 3 | proposition | WEAK review |
+| New Ireland Assurance | Marie Murphy | Head of Actuarial & Product Services | Ireland | 3 | proposition | WEAK review |
+| New Ireland Assurance | Myra B. | Head of Strategic Change | Ireland | 3 | referral | transformation/strategy |
+| Royal London Ireland | Jude Devins | Head of Change and Technology | Ireland | 3 | technical-integration | transformation/strategy |
+| SCOR France | Sophie Chapelain | Responsable Sélection des Risques et Sinistres / Head of Medical Underwriti | France | 2 | reinsurance | reinsurer L&H, rest of Europe |
+| SCOR France | Yosra JEMAI | Head of French Multichannel Distribution Market & African Markets | France | 2 | reinsurance | reinsurer L&H, rest of Europe |
+| SCOR France | Gianfranco Raffaele Tommasi | Head of Life & Health Analytics Products - Data & AI Office | Switzerland | 3 | reinsurance | reinsurer L&H, rest of Europe |
+| SCOR France | Martijn Reijerse | Chief Technology Officer Life&Health and Digital Solutions | Netherlands | 3 | technical-integration | reinsurer L&H, rest of Europe |
+| SCOR Ireland | Aisling Bradfield | Head of Behavioural Science at SCOR Global Life | Ireland | 2 | reinsurance | WEAK review |
+| Swiss Re Germany | Claudia Szwillus | Head of UW and Claims L&H NACEE( Nordics Austria Central and Eastern Europe | Germany | 1 | reinsurance | reinsurer L&H, rest of Europe |
+| Swiss Re Germany | Roman Lerch | Head Client Management ACEE, L&H Reinsurance | Germany | 2 | reinsurance | reinsurer L&H, rest of Europe |
+| Swiss Re Switzerland | Klemens Binswanger | Head UW & Claims Continental Europe | Switzerland | 1 | reinsurance | WEAK review |
+| Swiss Re Switzerland | Luiz Bueno | Market Head Life & Health Italy, Iberia | Zuerich, Zurich, Switz | 2 | reinsurance | reinsurer L&H, rest of Europe |
+| Swiss Re Switzerland | Ueli Konrad | Head Data-Driven Underwriting & Analytics | Switzerland | 2 | reinsurance | WEAK review |
+| Swiss Re Switzerland | Ariane Ehlers | Market Head L&H Belgium & Luxembourg | Switzerland | 3 | reinsurance | reinsurer L&H, rest of Europe |
+| Swiss Re Switzerland | Daniel Meier | Head Life & Health Risk Modelling | Zuerich, Zurich, Switz | 3 | reinsurance | WEAK review |
+| Swiss Re Switzerland | Enzo Vitale | Head of Life&Health Pricing Tools Development | Switzerland | 3 | reinsurance | WEAK review |
+| Swiss Re Switzerland | Michael Kamm | L&H Underwriting Manager CH & MENA | Zuerich, Zurich, Switz | 3 | reinsurance | reinsurer L&H, rest of Europe |
+| Swiss Re Switzerland | Pavel Cerny | Manager L&H Underwriting, Central & Eastern Europe at Swiss Re | Zuerich, Zurich, Switz | 3 | reinsurance | reinsurer L&H, rest of Europe |
+| Swiss Re Switzerland | Pia Burghartz, PhD | Global Head Behavioral Consulting Practice | Switzerland | 3 | reinsurance | WEAK review |
+
+### Held WEAK for Vadim after the widening
+
+**Group-wide data/AI chiefs at reinsurers, no L&H line (item 3; extends the 2026-11-02 architect trim): 12**
+
+- Mark W., Group Chief Data & Analytics Officer (Swiss Re Switzerland)
+- Ermir Qeli, Head Data Science & AI (Swiss Re Switzerland)
+- Dirk Heiss, Head of Digital Platforms, Data and AI (Business Technology) (Munich Re Germany)
+- Dr. Till Böhmer, Head of Central Analytics (Data, Analytics and AI) (Munich Re Germany)
+- Madhu D., Chief Digital Officer & Chief Product  Officer (SCOR France)
+- Sofia Kyriakopoulou, Group Chief Technology, Data & AI Officer (SCOR France)
+- Thibault ANTOINE, Group Chief AI Officer (SCOR France)
+- Jürgen Wendlandt, Global Head of Data (Munich Re Germany)
+- Fabian Winter, Chief Data and AI Officer (Munich Re Germany)
+- Kristoph Steikert, PhD, Chief Data Officer (SCOR France)
+- Julia Fein (Krezdorn), Head of Department - Artificial Intelligence (Munich Re Germany)
+- Andreas Bayerstadler, Head of AI (Munich Re Germany)
+
+**Irish Life over the referral cap of 4 (Vadim 2026-11-02): 7**
+
+- Sean Egan, Director - Strategy and Change (Irish Life Assurance)
+- Samantha OKeeffe, Head of Strategic Programmes (Irish Life Assurance)
+- Alan Brady, Head of Strategy (Irish Life Assurance)
+- Nicola Prendergast, Head of Program Management and Change (Irish Life Assurance)
+- SarahJane Johnston, Head of Change Management (Irish Life Assurance)
+- Denis McManus, Director of Strategy (Irish Life Assurance)
+- Eimear Saul, Strategy Director (Irish Life Assurance)
+
+**Other WEAK kept: 32** (holds of 2026-11-02, second DPOs, empty profiles, platform engineering, and Marco Spagnuolo after the messages QC): Marco Spagnuolo (Swiss Re Switzerland); Glenn Lambkin (Munich Re Automation Solutions); Arthur van der Wal (Achmea); Jason Stone (Swiss Re Switzerland); Sean Doyle (Munich Re Automation Solutions); Jennifer H. (Munich Re Germany); Aline Avedikian (Swiss Re Switzerland); Klaus Künzel (Gen Re Germany); Marian Conway (Irish Life Assurance); Brent Engelke (SCOR Ireland); Alf Neumann (Allianz Lebensversicherungs-AG); Greg Ward (Irish Life Assurance); David Zimmermann-Kollenda (Gen Re Germany); Sabine Ottmann (Munich Re Germany); Konstantin Lofink (Hannover Re Germany); Domenico Semeraro (SCOR Germany); Shane Ferguson (New Ireland Assurance); Stephanie Forrester (Aviva Ireland); Katie Linstra (a.s.r.); Marlot Linstra (a.s.r.); Caroline Yntema (a.s.r.); Constance Koevoets (a.s.r.); Mattanja Dirks (a.s.r.); Hans Balk (a.s.r.); Evelien Groot (a.s.r.); Marga Van Liere (a.s.r.); Rene Steenks (Achmea); Karsten Koch (Hannover Re Germany); Maria Brohmi (SCOR France); Claire Juillard (SCOR France); Maximilian Fischer (Gen Re Germany); Holger Schmarowski (Gen Re Germany).
+
+Borderline for Vadim: Marlot Linstra (a.s.r.) shows «Medisch Adviseur Inkomen» in her headline, the same line as Marno Middelbos (SEND P2), but stays WEAK under the a.s.r. hold; Jason Stone (Swiss Re, BD L&H EMEA UK&I) stays WEAK as a UK&I title.
+
+### Messages 2026-11-12
+
+One message-sequencer batch `add-2026-11-12-all` (grid `_grid-add-2026-11-12-all.md`, existing pairs of the same companies as input). Opus QC **10/20** (`workspace/_quality/outbound/2026-11-12-message-sequencer-eu-insurance-underwriting-widening.md`): product sentences, hooks, closers and CTAs echoed colleagues already contacted; 8 M1s had no gap to the declared weight; claims about people beyond their profiles; easy outs on both P1s. Fix round 1 by the same writer (Swiss Re block rewritten from a new grid, line edits for the rest), then coordinator line edits: 17 title-recital openers («X is your title at…», the new stock form), near-duplicates against sent pairs, shared M2 opener and CTAs. Gate: 0 hard over 157 people; soft notes on the new pairs = Sara Fenelon «Gen Re Germany not named» (named as Gen Re), the canonical 30-day photo sentence shared with Marvin Dewkurun, «the insurer sets the threshold» (Jeffrey Krook). Strict-gate diagnostic: only the Sara false positive. No second QC.
+
+
+### Vadim «додай усіх» 2026-11-12 (+20, hypothesis item 7)
+
+After the widening report Vadim added all 20 people it offered by name: **SEND 157 → 177**, WEAK 51 → 31. In decisions.md the rows read "added by Vadim 2026-11-12 («додай усіх», hypothesis item 7); was WEAK".
+
+- **12 group-wide data and AI chiefs, P3 `reinsurance`** (Sofia Kyriakopoulou P3 `technical-integration`):
+  - Swiss Re: Mark W., Ermir Qeli.
+  - Munich Re: Fabian Winter, Jürgen Wendlandt, Till Böhmer, Dirk Heiss, Julia Fein, Andreas Bayerstadler.
+  - SCOR: Madhu D., Sofia Kyriakopoulou, Thibault Antoine, Kristoph Steikert.
+- **7 Irish Life strategy and change heads, P3 `referral`**: Alan Brady, Denis McManus, Eimear Saul, Nicola Prendergast, Samantha OKeeffe, SarahJane Johnston, Sean Egan. The Irish Life referral cap goes from 4 to 11.
+- **Marlot Linstra (a.s.r.), P2 `medical`**: Medisch Adviseur Inkomen.
+
+**Web check of the 12 (2026-11-12): nobody found moved or left.**
+- Confirmed:
+  - Fabian Winter: Munich Re interview, 2026-07-14.
+  - Andreas Bayerstadler: same source.
+  - Sofia Kyriakopoulou: Group CTDAO since 2026-03-01.
+  - Ermir Qeli and Thibault Antoine: weak sources (SCOR pages still say Chief Analytics Officer).
+- **Till Böhmer holds the seat in an interim capacity for nine months from February 2026** (reinsurancene.ws, 2026-02-04), so it may end about now.
+- No public trace, which is not evidence that they left: Mark W., Jürgen Wendlandt, Dirk Heiss (undated aggregators only), Julia Fein (2026 Munich Re source names Bayerstadler as Head of AI), Madhu D. (SCOR's top digital executive found is David Sütterle), Kristoph Steikert.
+
+Messages: batches `add-2026-11-12-mixed-1` (Irish Life 7) and `add-2026-11-12-mixed-2` (12 reinsurers + a.s.r.), grids up front against the existing pairs; coordinator line edits after a full read (a retention claim for Mark W., an invented field-naming claim for Kristoph, three Irish Life near-duplicates); gate 0 hard over 177.
+Messages QC for the 20 (opus): **10/20** (`workspace/_quality/outbound/2026-11-12-message-sequencer-eu-insurance-underwriting-widening-2.md`). It flagged three things: frames copied from sent colleagues; a data-sharing premise in 5 M2s («the client exports records to the reinsurer»), which the card does not support; and non-buyers left without an easy out. Fix round 1 by the same two writers changed the angle for the data and AI chiefs to the reinsurer's own L&H underwriting tools reading a third-party field (hypothetical) and rewrote the Irish Life 7 from a new grid. My line edits after a full read covered claims about record fields and timestamps, CTAs and two shared M2 openers. Gate: 0 hard over 177. No second QC. Dry-run import: 177 rows, check-import 0, the 128 already imported byte-identical, 49 new.
