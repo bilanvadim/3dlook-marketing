@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3DLOOK hero v3: scan lens</title>
+<!--
+  Homepage hero v3 (2026-11-13, v3.1). A mannequin turns slowly; a lens follows the cursor and shows the scan
+  inside it (x-ray body, point mesh, tape loops). The metrics appear one at a time: when the lens reaches a
+  metric's point on the body, its card opens with the value counting up, and the whole scene takes on that
+  product's colour: FitXpress blue (body composition), Wrist violet (wrist and finger), Mobile Tailor
+  paper and ink (body measurements).
+  Reference: landonorris.com hero (cursor lens reveals a second layer) + the 3DLOOK LinkedIn cover (metric cards).
+
+  Body: MakeHuman base mesh, body group, CC0 1.0 -> hero-body-mesh.json -> tools/make-hero-v3-mesh.py
+  (sculpted display-mannequin head from tools/hero_head.py, arms lowered, tape loops, anchors) -> hero-v3-body.json.
+  Production: a 3DLOOK-generated body. Values are one consistent illustrative person; body composition values are estimates.
+
+  URL parameters
+    ?w=1440&h=1200   stage size in design px (default 1440 x 1200)
+    ?finger=0        hide the finger card and loops (fingers are not a public product claim yet, roadmap.md)
+    ?render=1        frame capture: no animation loop, window.renderAt(seconds) renders one frame
+    ?clean=1 / ?cam=x,y,z,lx,ly,lz,fov   debug close-ups of the mannequin (no lens, no cards)
+    default          live: the cursor flies on its own; a real mouse takes over and hands back after 2.5 s idle
+-->
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+<style>
+  :root {
+    --ink2: #070A1C; --navy: #050F40; --navy2: #08186B;
+    --fx: #143DFF; --fx-l: #8A9CFF; --fx-t: #B1BDFF;
+    --wm-deep: #1B0942; --wm: #7A3CF0; --wm-l: #B89BEE;
+    --mt-paper: #EEEBE5; --mt-ink: #111111;
+    --W: 1440px; --H: 1200px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--ink2); }
+  body { display: grid; place-items: center; overflow: hidden; font-family: 'Satoshi', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; -webkit-font-smoothing: antialiased; }
+  body.render { display: block; place-items: normal; overflow: hidden; }
+  body.render #fit { position: absolute; left: 0; top: 0; }
+  #fit { position: relative; }
+  #stage { position: absolute; left: 0; top: 0; width: var(--W); height: var(--H); overflow: hidden; transform-origin: 0 0; color: #fff; background: var(--ink2); }
+
+  /* one backdrop per product; the scene crossfades between them as the lens moves from metric to metric */
+  #bgs { position: absolute; inset: 0; isolation: isolate; }
+  .bg { position: absolute; inset: 0; opacity: 0; will-change: opacity, mask-image; }
+  .bg::before { /* measurement-dot grid, fading out to the edges */
+    content: ''; position: absolute; inset: 0;
+    background-image: radial-gradient(circle, var(--dotc) 1.1px, transparent 1.7px);
+    background-size: 30px 30px; background-position: 15px 15px;
+    -webkit-mask-image: radial-gradient(ellipse 62% 58% at 50% 48%, #000 25%, transparent 78%);
+            mask-image: radial-gradient(ellipse 62% 58% at 50% 48%, #000 25%, transparent 78%);
+  }
+  #bg-fx { --dotc: rgba(177, 189, 255, .22);
+    background:
+      radial-gradient(ellipse 34% 7% at 50% 93.5%, rgba(79, 109, 255, .22), rgba(79, 109, 255, 0) 70%),
+      radial-gradient(ellipse 52% 46% at 50% 46%, rgba(20, 61, 255, .30), rgba(11, 34, 153, .16) 45%, rgba(8, 24, 107, 0) 75%),
+      radial-gradient(ellipse 80% 75% at 50% 48%, #08186B 0%, #050F40 42%, #070A1C 78%); }
+  #bg-wm { --dotc: rgba(214, 198, 246, .20);
+    background:
+      radial-gradient(ellipse 34% 7% at 50% 93.5%, rgba(184, 155, 238, .22), rgba(184, 155, 238, 0) 70%),
+      radial-gradient(ellipse 52% 46% at 50% 46%, rgba(122, 60, 240, .34), rgba(74, 28, 170, .18) 45%, rgba(27, 9, 66, 0) 75%),
+      radial-gradient(ellipse 80% 75% at 50% 48%, #36138C 0%, #1B0942 42%, #0C0520 78%); }
+  #bg-mt { --dotc: rgba(17, 17, 17, .12);
+    background:
+      radial-gradient(ellipse 28% 5% at 50% 93.8%, rgba(17, 17, 17, .17), rgba(17, 17, 17, 0) 72%),
+      radial-gradient(ellipse 72% 64% at 50% 45%, #FFFFFF 0%, #F7F5F1 42%, #EEEBE5 74%, #E5E1D9 100%); }
+
+  #gl, #wires { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+  #wires { overflow: visible; }
+
+  /* metric card: one at a time, next to its point on the body; the eyebrow names the product group */
+  .card {
+    position: absolute; left: 0; top: 0; width: 336px; height: 128px; padding: 18px 26px 0; border-radius: 18px;
+    border: 2px solid transparent; opacity: 0; visibility: hidden;
+    -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+    will-change: opacity, transform;
+  }
+  .card .eb {
+    position: absolute; left: 2px; bottom: calc(100% + 16px); font-size: 23px; font-weight: 700; letter-spacing: .14em;
+    text-transform: uppercase; display: flex; align-items: center; gap: 10px; white-space: nowrap;
+  }
+  .card.right .eb { left: auto; right: 2px; }
+  .card .eb i { width: 11px; height: 11px; border-radius: 50%; background: currentColor; display: block; }
+  .card .lab { font-size: 28px; font-weight: 500; display: flex; align-items: center; gap: 12px; line-height: 1.2; }
+  .card .lab i { width: 11px; height: 11px; border-radius: 50%; display: block; flex: none; }
+  .card .val { font-size: 58px; font-weight: 700; letter-spacing: -.02em; line-height: 1.12; margin-top: 4px; font-variant-numeric: tabular-nums; }
+  .card .val b { font-weight: 700; }
+  .card .val span { font-size: 29px; font-weight: 500; letter-spacing: 0; margin-left: 6px; }
+  .card.fx { background: linear-gradient(180deg, rgba(20, 30, 84, .80), rgba(8, 14, 48, .80)); border-color: rgba(138, 156, 255, .62); box-shadow: 0 0 34px rgba(138, 156, 255, .28), inset 0 0 0 1px rgba(138, 156, 255, .10); }
+  .card.wm { background: linear-gradient(180deg, rgba(66, 26, 146, .80), rgba(27, 9, 66, .80)); border-color: rgba(184, 155, 238, .62); box-shadow: 0 0 34px rgba(184, 155, 238, .28), inset 0 0 0 1px rgba(184, 155, 238, .10); }
+  .card.mt { background: rgba(255, 255, 255, .82); border-color: rgba(17, 17, 17, .14); box-shadow: 0 18px 44px rgba(17, 17, 17, .10); color: var(--mt-ink); }
+  .card.fx .lab, .card.wm .lab { color: rgba(255, 255, 255, .74); } .card.mt .lab { color: rgba(17, 17, 17, .62); }
+  .card.fx .val span, .card.wm .val span { color: rgba(255, 255, 255, .72); } .card.mt .val span { color: rgba(17, 17, 17, .55); }
+  .card.fx .eb { color: var(--fx-l); } .card.wm .eb { color: var(--wm-l); } .card.mt .eb { color: var(--mt-ink); }
+  .card.fx .lab i { background: var(--fx-l); } .card.wm .lab i { background: var(--wm-l); } .card.mt .lab i { background: var(--mt-ink); }
+
+  body:not(.render) #stage { cursor: none; } /* the lens dot is the cursor */
+  #cursor { position: absolute; left: 0; top: 0; width: 0; height: 0; pointer-events: none; will-change: transform; }
+  #cursor .dot { position: absolute; left: -9px; top: -9px; width: 18px; height: 18px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 6px rgba(138, 156, 255, .30), 0 2px 12px rgba(0, 0, 0, .35); }
+  #note { position: absolute; left: 0; right: 0; bottom: 24px; text-align: center; font-size: 22px; letter-spacing: .02em; color: rgba(255, 255, 255, .38); }
+  body.no-note #note { display: none; }
+  body.debug .card, body.debug #wires, body.debug #note, body.debug #cursor { display: none; }
+</style>
+</head>
+<body>
+<div id="fit">
+  <div id="stage" aria-label="3D body scan: a lens moves over a mannequin and shows body composition estimates, wrist and finger size, and body measurements, one at a time" role="img">
+    <div id="bgs"><div class="bg" id="bg-fx"></div><div class="bg" id="bg-wm"></div><div class="bg" id="bg-mt"></div></div>
+    <canvas id="gl"></canvas>
+    <svg id="wires" aria-hidden="true"></svg>
+
+    <div class="card fx" data-k="bmi" data-v="22.7"><div class="eb"><i></i>Body composition · estimates</div><div class="lab"><i></i>BMI</div><div class="val"><b>22.7</b></div></div>
+    <div class="card fx" data-k="lean" data-v="103"><div class="eb"><i></i>Body composition · estimates</div><div class="lab"><i></i>Lean body mass</div><div class="val"><b>103</b><span>lb</span></div></div>
+    <div class="card fx" data-k="bodyfat" data-v="27"><div class="eb"><i></i>Body composition · estimates</div><div class="lab"><i></i>Body fat</div><div class="val"><b>27</b><span>%</span></div></div>
+    <div class="card wm" data-k="wrist" data-v="6.2"><div class="eb"><i></i>Wrist and fingers</div><div class="lab"><i></i>Wrist</div><div class="val"><b>6.2</b><span>in</span></div></div>
+    <div class="card wm" data-k="finger" data-v="2.13"><div class="eb"><i></i>Wrist and fingers</div><div class="lab"><i></i>Finger</div><div class="val"><b>2.13</b><span>in</span></div></div>
+    <div class="card mt right" data-k="bust" data-v="34"><div class="eb"><i></i>Body measurements</div><div class="lab"><i></i>Bust</div><div class="val"><b>34</b><span>in</span></div></div>
+    <div class="card mt right" data-k="waist" data-v="27.5"><div class="eb"><i></i>Body measurements</div><div class="lab"><i></i>Waist</div><div class="val"><b>27.5</b><span>in</span></div></div>
+    <div class="card mt right" data-k="hips" data-v="39"><div class="eb"><i></i>Body measurements</div><div class="lab"><i></i>Hips</div><div class="val"><b>39</b><span>in</span></div></div>
+    <div class="card mt right" data-k="thigh" data-v="21.5"><div class="eb"><i></i>Body measurements</div><div class="lab"><i></i>Thigh</div><div class="val"><b>21.5</b><span>in</span></div></div>
+
+    <div id="note">Example scan. Body composition values are estimates.</div>
+    <div id="cursor"><div class="dot"></div></div>
+  </div>
+</div>
+
+<script type="module">
+import * as THREE from 'three';
+import { Line2 } from 'three/addons/lines/Line2.js';
+import { LineGeometry } from 'three/addons/lines/LineGeometry.js';
+import { LineMaterial } from 'three/addons/lines/LineMaterial.js';
+
+const Q = new URLSearchParams(location.search);
+const W = +Q.get('w') || 1440, H = +Q.get('h') || 1200;
+const RENDER = Q.has('render');
+const SHOW_FINGER = Q.get('finger') !== '0';
+const DEBUG_LENS = Q.has('clean') ? 0 : Q.has('xray') ? 50 : 1;   // debug close-ups: no lens / lens everywhere
+const LOOP = 20;                       // seconds; everything time-based is periodic in LOOP
+const LENS_R = 0.105 * W;              // lens radius, design px
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches && !RENDER;
+
+const stage = document.getElementById('stage'), fit = document.getElementById('fit');
+document.documentElement.style.setProperty('--W', W + 'px'); document.documentElement.style.setProperty('--H', H + 'px');
+if (RENDER) document.body.classList.add('render');
+if (DEBUG_LENS !== 1) document.body.classList.add('debug');
+if (!SHOW_FINGER) document.querySelector('.card[data-k="finger"]').remove();
+
+/* ---------- mesh ---------- */
+const data = await (await fetch('hero-v3-body.json')).json();
+const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+const q = new Int16Array(b64(data.pos).buffer), idx = new Uint16Array(b64(data.idx).buffer);
+const pos = new Float32Array(q.length);
+for (let i = 0; i < q.length; i++) { const k = i % 3; pos[i] = data.min[k] + (q[i] + 32768) / 65535 * (data.max[k] - data.min[k]); }
+const geo = new THREE.BufferGeometry();
+geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+geo.setIndex(new THREE.BufferAttribute(idx, 1));
+geo.computeVertexNormals();
+
+/* ---------- product themes ---------- */
+// Each product owns one look (DESIGN.md product colour coding): FitXpress blue, Wrist violet on dark;
+// Mobile Tailor strict paper and ink. Dark themes blend into each other; "light" mixes in the paper look.
+const hex = h => new THREE.Color(h);
+const PAL = {
+  fx: { rim: [0.54, 0.61, 1.0], fill: [0.31, 0.43, 1.0], hLo: [0.05, 0.07, 0.18], hHi: [0.20, 0.23, 0.38],
+        deep: hex('#0B2299'), mid: hex('#4F6DFF'), xrim: hex('#8A9CFF'), line: hex('#B1BDFF'), pt: hex('#DCE2FF'),
+        glass: [0.012, 0.02, 0.07, 0.40], edge: [0.54, 0.61, 1.0], loopMt: hex('#EEEBE5'), loopWm: hex('#B89BEE'),
+        dot: [255, 255, 255], ring: [138, 156, 255], note: [255, 255, 255, 0.38] },
+  wm: { rim: [0.72, 0.60, 0.95], fill: [0.48, 0.24, 0.94], hLo: [0.09, 0.04, 0.17], hHi: [0.27, 0.20, 0.40],
+        deep: hex('#2E0F7A'), mid: hex('#7A3CF0'), xrim: hex('#B89BEE'), line: hex('#D6C6F6'), pt: hex('#EEE6FF'),
+        glass: [0.035, 0.012, 0.075, 0.42], edge: [0.72, 0.61, 0.93], loopMt: hex('#EEEBE5'), loopWm: hex('#B89BEE'),
+        dot: [255, 255, 255], ring: [184, 155, 238], note: [255, 255, 255, 0.40] },
+  mt: { rim: [0, 0, 0], fill: [0.56, 0.54, 0.51], hLo: [0.30, 0.29, 0.28], hHi: [0.52, 0.51, 0.49],
+        pt: hex('#111111'), glass: [0.53, 0.525, 0.515, 0.55], edge: [0.067, 0.067, 0.067], loopMt: hex('#111111'), loopWm: hex('#7A3CF0'),
+        dot: [17, 17, 17], ring: [17, 17, 17], note: [17, 17, 17, 0.46] },
+};
+const lerp = (a, b, t) => a + (b - a) * t;
+const lerpA = (a, b, t) => a.map((v, i) => lerp(v, b[i], t));
+const lerpC = (a, b, t) => a.clone().lerp(b, t);
+
+/* ---------- renderer, camera, passes ---------- */
+const canvas = document.getElementById('gl');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: false, alpha: true, premultipliedAlpha: true, preserveDrawingBuffer: RENDER, powerPreference: 'high-performance' });
+renderer.setClearColor(0x000000, 0);
+renderer.autoClear = true;
+const camera = new THREE.PerspectiveCamera(22, W / H, 0.1, 50);
+camera.position.set(0, 1.02, 6.05); camera.lookAt(0, 0.985, 0);
+if (Q.get('cam')) { const c = Q.get('cam').split(',').map(Number); camera.position.set(c[0], c[1], c[2]); camera.lookAt(c[3], c[4], c[5]); camera.fov = c[6] || 22; camera.updateProjectionMatrix(); } // debug close-ups
+camera.updateMatrixWorld(true);
+const scene = new THREE.Scene();
+const body = new THREE.Group(); scene.add(body);
+const L_OUT = 1, L_BACK = 2, L_IN = 3;
+const onLayer = (o, l) => { o.layers.set(l); return o; };
+
+const U = { uTime: { value: 0 }, uRes: { value: new THREE.Vector2(W, H) }, tBack: { value: null }, uLight: { value: 0 } };
+const v3 = a => new THREE.Vector3(...a);
+
+// 1) outside: a porcelain mannequin, studio key light, product-coloured fill and rim (on paper: a soft edge darkening)
+const MU = { uRim: { value: v3(PAL.fx.rim) }, uFill: { value: v3(PAL.fx.fill) }, uHemiLo: { value: v3(PAL.fx.hLo) }, uHemiHi: { value: v3(PAL.fx.hHi) } };
+const mannequin = onLayer(new THREE.Mesh(geo, new THREE.ShaderMaterial({
+  side: THREE.DoubleSide, uniforms: { ...U, ...MU },
+  vertexShader: `varying vec3 vN; varying vec3 vV; varying float vY;
+    void main(){ vY = position.y; vN = normalize(normalMatrix * normal); vec4 mv = modelViewMatrix * vec4(position, 1.0); vV = normalize(-mv.xyz); gl_Position = projectionMatrix * mv; }`,
+  fragmentShader: `uniform vec3 uRim, uFill, uHemiLo, uHemiHi; uniform float uLight;
+    varying vec3 vN; varying vec3 vV; varying float vY;
+    void main(){
+      vec3 N = normalize(vN); vec3 V = normalize(vV);
+      if (!gl_FrontFacing) N = -N;
+      vec3 Lk = normalize(vec3(-0.50, 0.62, 0.60)), Lf = normalize(vec3(0.85, -0.05, 0.45));
+      float key = max((dot(N, Lk) + 0.22) / 1.22, 0.0);
+      float fill = max((dot(N, Lf) + 0.20) / 1.20, 0.0);
+      vec3 hemi = mix(uHemiLo, uHemiHi, N.y * 0.5 + 0.5);
+      float ndv = max(dot(N, V), 0.0);
+      float rim = pow(1.0 - ndv, 3.0);
+      float spec = pow(max(dot(N, normalize(Lk + V)), 0.0), 28.0);
+      vec3 albedo = mix(vec3(0.95, 0.955, 0.98), vec3(0.965, 0.955, 0.94), uLight);
+      vec3 col = albedo * (key * vec3(1.0, 0.99, 0.97) * 1.12 + fill * uFill * 0.34 + hemi * 0.42)
+               + spec * 0.22 + rim * uRim * 0.75;
+      col *= 1.0 - uLight * 0.34 * pow(1.0 - ndv, 2.0);
+      col *= mix(mix(0.45, 0.66, uLight), 1.0, smoothstep(0.0, 0.75, vY));
+      col = 1.0 - exp(-col * 1.15);
+      gl_FragColor = vec4(col, 1.0);
+    }`
+})), L_OUT);
+body.add(mannequin);
+
+// 2) inside, pass A: distance to the nearest back face (thickness = back - front)
+const backDepth = onLayer(new THREE.Mesh(geo, new THREE.ShaderMaterial({
+  side: THREE.BackSide,
+  vertexShader: `varying float vD; void main(){ vec4 mv = modelViewMatrix * vec4(position, 1.0); vD = -mv.z; gl_Position = projectionMatrix * mv; }`,
+  fragmentShader: `#include <packing>
+    varying float vD; void main(){ gl_FragColor = packDepthToRGBA(clamp(vD / 12.0, 0.0, 0.9999)); }`
+})), L_BACK);
+body.add(backDepth);
+
+// 2) inside, pass B: x-ray body (glow by thickness), triplanar scan grid, sweeping beam.
+//    Dark themes glow; the paper theme is an ink drawing on frosted paper.
+const XU = { cDeep: { value: PAL.fx.deep.clone() }, cMid: { value: PAL.fx.mid.clone() }, cRim: { value: PAL.fx.xrim.clone() }, cLine: { value: PAL.fx.line.clone() } };
+const xray = onLayer(new THREE.Mesh(geo, new THREE.ShaderMaterial({
+  uniforms: { ...U, ...XU },
+  transparent: true, premultipliedAlpha: true, depthWrite: true, polygonOffset: true, polygonOffsetFactor: 1, polygonOffsetUnits: 2,
+  vertexShader: `varying vec3 vN; varying vec3 vV; varying vec3 vP; varying float vD;
+    void main(){ vP = position; vN = normalize(normalMatrix * normal); vec4 mv = modelViewMatrix * vec4(position, 1.0); vV = normalize(-mv.xyz); vD = -mv.z; gl_Position = projectionMatrix * mv; }`,
+  fragmentShader: `#include <packing>
+    uniform sampler2D tBack; uniform vec2 uRes; uniform float uTime; uniform float uLight; uniform vec3 cDeep, cMid, cRim, cLine;
+    varying vec3 vN; varying vec3 vV; varying vec3 vP; varying float vD;
+    float gridLine(float x, float f){ float t = x * f; float d = abs(fract(t) - 0.5); float w = fwidth(t); return 1.0 - smoothstep(w * 0.25, w * 1.0, 0.5 - d); }
+    void main(){
+      vec3 N = normalize(vN); vec3 V = normalize(vV);
+      float back = unpackRGBAToDepth(texture2D(tBack, gl_FragCoord.xy / uRes)) * 12.0;
+      float thick = back > 0.001 ? max(back - vD, 0.0) : 0.0;
+      float g = smoothstep(0.0, 0.30, thick);
+      float fres = pow(1.0 - max(dot(N, V), 0.0), 2.0);
+      vec3 an = abs(normalize(vP - vec3(0.0, vP.y, 0.0) + vec3(0.0001)));
+      float rings = gridLine(vP.y, 34.0);
+      float meri = mix(gridLine(vP.x, 34.0), gridLine(vP.z, 34.0), smoothstep(0.35, 0.75, an.x));
+      float beamY = 2.15 - 2.5 * fract(uTime / ${(LOOP / 2).toFixed(1)});
+      float beam = exp(-pow((vP.y - beamY) * 7.0, 2.0));
+      vec3 fill = mix(cDeep * 0.55, cMid * 0.85, g * g) * (0.35 + 0.65 * g);
+      vec3 colD = fill * 0.55 + cRim * fres * 1.15 + cLine * (rings * 0.85 + meri * 0.30) * (0.55 + 1.6 * beam) + cMid * beam * 0.28;
+      float aD = clamp(0.30 + 0.30 * g + fres * 0.6 + rings * 0.45 + meri * 0.15, 0.0, 1.0);
+      vec3 paper = mix(vec3(0.955, 0.945, 0.925), vec3(0.86, 0.845, 0.82), g);
+      float ink = clamp((rings * 0.85 + meri * 0.30) * (0.6 + 0.9 * beam) + fres * 0.55, 0.0, 1.0);
+      vec3 colL = mix(paper, vec3(0.067), ink);
+      float aL = clamp(0.45 + 0.25 * g + ink * 0.5, 0.0, 1.0);
+      vec3 col = mix(colD, colL, uLight); float a = mix(aD, aL, uLight);
+      gl_FragColor = vec4(col * a, a);
+    }`
+})), L_IN);
+xray.renderOrder = 1;
+body.add(xray);
+
+// point mesh like the LinkedIn cover (depth-tested against the x-ray surface, so only the front shows)
+const ptsGeo = new THREE.BufferGeometry();           // non-indexed: one dot per vertex, minus the masked ones
+{ const hide = new Set(data.noDot || []), P = geo.getAttribute('position').array, N = geo.getAttribute('normal').array, p = [], n = [];
+  for (let i = 0; i < P.length / 3; i++) if (!hide.has(i)) { p.push(P[3 * i], P[3 * i + 1], P[3 * i + 2]); n.push(N[3 * i], N[3 * i + 1], N[3 * i + 2]); }
+  ptsGeo.setAttribute('position', new THREE.Float32BufferAttribute(p, 3)); ptsGeo.setAttribute('normal', new THREE.Float32BufferAttribute(n, 3)); }
+const pts = onLayer(new THREE.Points(ptsGeo, new THREE.ShaderMaterial({
+  uniforms: { ...U, uSize: { value: 3.2 }, cPt: { value: PAL.fx.pt.clone() } },
+  transparent: true, premultipliedAlpha: true, depthWrite: false,
+  vertexShader: `uniform float uSize; uniform float uTime; varying float vB; varying vec3 vN; varying vec3 vV;
+    void main(){ vec4 mv = modelViewMatrix * vec4(position, 1.0); vN = normalize(normalMatrix * normal); vV = normalize(-mv.xyz);
+      float beamY = 2.15 - 2.5 * fract(uTime / ${(LOOP / 2).toFixed(1)}); vB = exp(-pow((position.y - beamY) * 7.0, 2.0));
+      gl_PointSize = uSize * (1.0 + vB * 0.8); gl_Position = projectionMatrix * mv; }`,
+  fragmentShader: `uniform vec3 cPt; varying float vB; varying vec3 vN; varying vec3 vV;
+    void main(){ vec2 c = gl_PointCoord - 0.5; float d = length(c); float a = smoothstep(0.5, 0.18, d);
+      float facing = max(dot(normalize(vN), normalize(vV)), 0.0);
+      a *= (0.38 + 0.45 * facing + vB * 0.7);
+      gl_FragColor = vec4(cPt * a, a); }`
+})), L_IN);
+pts.renderOrder = 2;
+body.add(pts);
+
+// tape loops: Mobile Tailor paper/ink for body measurements, Wrist violet for wrist and fingers
+// (vertex colours carry only the front/back brightness; the theme sets material.color)
+const loopMats = [];
+function loop(points, kind, { width = 2.4, dashed = false, front = 1.0, back = 0.28 } = {}) {
+  const P = points.map(p => new THREE.Vector3(...p));
+  const c = P.reduce((a, b) => a.add(b), new THREE.Vector3()).divideScalar(P.length);
+  const flat = [], cols = [];
+  for (let i = 0; i <= P.length; i++) {
+    const p = P[i % P.length]; flat.push(p.x, p.y, p.z);
+    const f = p.z > c.z ? front : back;                      // front half bright, back half dim
+    cols.push(f, f, f);
+  }
+  const g = new LineGeometry(); g.setPositions(flat); g.setColors(cols);
+  const m = new LineMaterial({ color: 0xffffff, vertexColors: true, linewidth: width, dashed, dashSize: 0.018, gapSize: 0.012, transparent: true, depthTest: false, depthWrite: false });
+  loopMats.push([m, kind]);
+  const l = new Line2(g, m); l.computeLineDistances(); l.renderOrder = 3;
+  return onLayer(l, L_IN);
+}
+const loopsByKey = {};
+for (const k of ['bust', 'waist', 'hips', 'thigh']) body.add(loopsByKey[k] = loop(data.loops[k], 'mt', { dashed: true, width: 3.4 }));
+body.add(loopsByKey.wrist = loop(data.loops.wrist_l, 'wm', { width: 3.4 }));
+body.add(loop(data.loops.wrist, 'wm', { width: 2.0, front: 0.55, back: 0.18 }));
+if (SHOW_FINGER) for (const f of data.loops.fingers) {
+  const main = f.name === 'ring';                              // the finger the card measures
+  const l = loop(f.pts_l, 'wm', { width: main ? 3.2 : 2.0, front: main ? 1.0 : 0.5, back: main ? 0.35 : 0.15 });
+  body.add(l); if (main) loopsByKey.finger = l;
+  body.add(loop(f.pts, 'wm', { width: 1.4, front: 0.4, back: 0.12 }));
+}
+
+// composite: outside everywhere, inside under the lens (gooey trail), glass tint and a fine grid in the lens
+const TRAIL = 10;
+const composite = new THREE.ShaderMaterial({
+  uniforms: { tOuter: { value: null }, tInner: { value: null }, uTrail: { value: Array.from({ length: TRAIL }, () => new THREE.Vector3()) }, uPR: { value: 1 },
+              uGlass: { value: new THREE.Vector4(...PAL.fx.glass) }, uEdge: { value: v3(PAL.fx.edge) }, uLight: U.uLight },
+  transparent: true, premultipliedAlpha: true, depthTest: false, depthWrite: false,
+  vertexShader: `varying vec2 vUv; void main(){ vUv = uv; gl_Position = vec4(position.xy, 0.0, 1.0); }`,
+  fragmentShader: `uniform sampler2D tOuter, tInner; uniform vec3 uTrail[${TRAIL}]; uniform float uPR; uniform vec4 uGlass; uniform vec3 uEdge; uniform float uLight; varying vec2 vUv;
+    float smax(float a, float b, float k){ float h = clamp(0.5 + 0.5 * (a - b) / k, 0.0, 1.0); return mix(b, a, h) + k * h * (1.0 - h); }
+    void main(){
+      vec2 p = gl_FragCoord.xy;
+      float sd = -1e4;
+      for (int i = 0; i < ${TRAIL}; i++) { vec3 c = uTrail[i]; sd = smax(sd, c.z - length(p - c.xy), 46.0 * uPR); }
+      float aa = 1.1 * uPR;
+      float m = smoothstep(-aa, aa, sd);
+      vec4 o = texture2D(tOuter, vUv), n = texture2D(tInner, vUv);
+      vec4 col = mix(o, n, m);
+      vec2 gp = abs(fract(p / (26.0 * uPR)) - 0.5) * 26.0 * uPR;
+      float grid = 1.0 - smoothstep(0.0, 0.9 * uPR, min(gp.x, gp.y));
+      vec4 glass = uGlass + vec4(uEdge * 0.11 * grid, 0.11 * grid);
+      col += glass * m * (1.0 - col.a);
+      float edge = exp(-pow(sd / (2.1 * uPR), 2.0));
+      float halo = exp(-abs(sd) / (16.0 * uPR)) * (sd < 0.0 ? 0.20 : 0.10) * mix(1.0, 0.6, uLight);
+      float e = clamp(edge * 0.85 + halo, 0.0, 1.0);
+      col = col * (1.0 - e) + vec4(uEdge, 1.0) * e;           // ring and halo: a glow on dark, an ink edge on paper
+      gl_FragColor = col;
+    }`
+});
+const quad = new THREE.Mesh(new THREE.BufferGeometry().setAttribute('position', new THREE.Float32BufferAttribute([-1, -1, 0, 3, -1, 0, -1, 3, 0], 3)).setAttribute('uv', new THREE.Float32BufferAttribute([0, 0, 2, 0, 0, 2], 2)), composite);
+const quadScene = new THREE.Scene(); quadScene.add(quad);
+const quadCam = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
+
+let rtOut, rtIn, rtBack, PR = 1;
+function setSize(pr) {
+  PR = pr;
+  renderer.setPixelRatio(pr); renderer.setSize(W, H, false);
+  const bw = Math.round(W * pr), bh = Math.round(H * pr);
+  [rtOut, rtIn, rtBack].forEach(rt => rt && rt.dispose());
+  rtOut = new THREE.WebGLRenderTarget(bw, bh, { samples: 4 });
+  rtIn = new THREE.WebGLRenderTarget(bw, bh, { samples: 4 });
+  rtBack = new THREE.WebGLRenderTarget(bw, bh, { minFilter: THREE.NearestFilter, magFilter: THREE.NearestFilter });
+  U.uRes.value.set(bw, bh); U.tBack.value = rtBack.texture;
+  composite.uniforms.tOuter.value = rtOut.texture; composite.uniforms.tInner.value = rtIn.texture; composite.uniforms.uPR.value = pr;
+  loopMats.forEach(([m]) => m.resolution.set(bw, bh));
+  pts.material.uniforms.uSize.value = 3.2 * pr;
+}
+
+/* ---------- motion: body yaw, anchors on screen, the cursor path ---------- */
+const TAU = Math.PI * 2;
+const yawAt = t => 0.36 * Math.sin(TAU * t / LOOP - 0.6);
+const ANCH = Object.fromEntries(Object.entries(data.anchors).map(([k, v]) => [k, new THREE.Vector3(...v)]));
+const tmp = new THREE.Vector3();
+function project(v, yaw) {           // body-space point -> design px at a given yaw
+  const c = Math.cos(yaw), s = Math.sin(yaw);
+  tmp.set(v.x * c + v.z * s, v.y, -v.x * s + v.z * c).project(camera);
+  return [(tmp.x * 0.5 + 0.5) * W, (0.5 - tmp.y * 0.5) * H];
+}
+// waypoints: BMI, across to the tape measurements (right, top to bottom), the left hand, up the left side
+const ROUTE = [
+  ['bmi', [12, -4]], ['bust', [-26, 14]], ['waist', [-18, 4]], ['hips', [-30, -6]], ['thigh', [-26, 10]],
+  ...(SHOW_FINGER ? [['finger', [14, 6]]] : []), ['wrist', [16, -6]], ['bodyfat', [8, 6]], ['lean', [10, 0]],
+];
+const PHASE = 0.3;                   // t = 0 sits just past the BMI stop, so the first frame (and the poster) shows a card
+const smoother = x => x * x * x * (x * (x * 6 - 15) + 10);
+function cr(p0, p1, p2, p3, u) {     // Catmull-Rom
+  const u2 = u * u, u3 = u2 * u;
+  return [0, 1].map(k => 0.5 * ((2 * p1[k]) + (-p0[k] + p2[k]) * u + (2 * p0[k] - 5 * p1[k] + 4 * p2[k] - p3[k]) * u2 + (-p0[k] + 3 * p1[k] - 3 * p2[k] + p3[k]) * u3));
+}
+function autoCursor(t) {
+  t = ((t % LOOP) + LOOP) % LOOP;
+  const yaw = yawAt(t), n = ROUTE.length;
+  const wp = ROUTE.map(([k, off]) => { const [x, y] = project(ANCH[k], yaw); return [x + off[0], y + off[1]]; });
+  const f = t / LOOP * n + PHASE, i = Math.floor(f), s = f - i;
+  const u = 0.25 * s + 0.75 * smoother(s);                  // slows down at every waypoint
+  const [x, y] = cr(wp[(i - 1 + n) % n], wp[i % n], wp[(i + 1) % n], wp[(i + 2) % n], u);
+  const w = TAU * t / LOOP;                                 // a small hand wobble, periodic in LOOP
+  return [x + 5 * Math.sin(3 * w) + 3 * Math.sin(7 * w + 1), y + 4 * Math.cos(4 * w + 0.5) + 3 * Math.sin(9 * w)];
+}
+
+// live mode: the real mouse takes over, then hands back to the autopilot
+const hist = [];                     // [time, x, y] of the shown cursor (live mode)
+let user = null, userT = -1e9, mix = 0, shown = null;
+function cursorAt(t) {
+  if (RENDER || !hist.length) return autoCursor(t);
+  if (t >= hist[hist.length - 1][0]) return hist[hist.length - 1].slice(1);
+  for (let i = hist.length - 1; i > 0; i--) if (hist[i - 1][0] <= t) {
+    const [t0, x0, y0] = hist[i - 1], [t1, x1, y1] = hist[i], u = (t - t0) / ((t1 - t0) || 1);
+    return [x0 + (x1 - x0) * u, y0 + (y1 - y0) * u];
+  }
+  return hist[0].slice(1);
+}
+const smooth = (a, b, x) => { const t = Math.min(1, Math.max(0, (x - a) / (b - a))); return t * t * (3 - 2 * t); };
+function lensSD(px, py, trail) { let sd = -1e4; for (const [x, y, r] of trail) { const d = r - Math.hypot(px - x, py - y); const h = Math.min(1, Math.max(0, 0.5 + 0.5 * (d - sd) / 46)); sd = sd + (d - sd) * h + 46 * h * (1 - h); } return sd; }
+function trailAt(t) { return Array.from({ length: TRAIL }, (_, i) => { const [x, y] = cursorAt(t - i * 0.055); return [x, y, LENS_R * (1 - 0.055 * i)]; }); }
+
+/* ---------- cards and leader lines ---------- */
+const SVGNS = 'http://www.w3.org/2000/svg';
+const wires = document.getElementById('wires'); wires.setAttribute('viewBox', `0 0 ${W} ${H}`);
+const TINT = { fx: '#8A9CFF', mt: '#111111', wm: '#B89BEE' };
+const CW = 336, CH = 128, EB = 56, COL_X = { left: Math.round(W * 0.06), right: Math.round(W * 0.94 - CW) };
+const cards = [...document.querySelectorAll('.card')].map(el => {
+  const k = el.dataset.k, kind = el.classList.contains('fx') ? 'fx' : el.classList.contains('wm') ? 'wm' : 'mt';
+  const side = kind === 'mt' ? 'right' : 'left';
+  const line = document.createElementNS(SVGNS, 'polyline'); line.setAttribute('fill', 'none'); line.setAttribute('stroke', TINT[kind]); line.setAttribute('stroke-width', 2.2); line.setAttribute('stroke-linejoin', 'round');
+  const halo = document.createElementNS(SVGNS, 'circle'); halo.setAttribute('fill', 'none'); halo.setAttribute('stroke', TINT[kind]); halo.setAttribute('stroke-width', 2);
+  const dot = document.createElementNS(SVGNS, 'circle'); dot.setAttribute('r', 6.5); dot.setAttribute('fill', TINT[kind]);
+  wires.append(line, halo, dot);
+  const val = el.dataset.v, dec = (val.split('.')[1] || '').length;
+  // each card sits beside its own point (body at rest), inside the stage
+  const y = Math.round(Math.min(H * 0.86 - CH, Math.max(H * 0.08 + EB, project(ANCH[k], 0)[1] - CH / 2)));
+  const x = COL_X[side];
+  el.style.left = x + 'px'; el.style.top = y + 'px';
+  return { el, k, kind, side, line, halo, dot, x, y, num: el.querySelector('.val b'), value: +val, dec };
+});
+
+/* ---------- the show: which card is open, and the scene's product colour ---------- */
+// A small state machine stepped at a fixed rate, so frame capture is deterministic and the loop seamless:
+// renderAt(t) replays the previous LOOP seconds when it jumps, which lands on the periodic state.
+const DT = 1 / 60, HOLD = 2.4;
+const KINDS = ['fx', 'wm', 'mt'];
+const S = { t: null };
+function resetShow(t) {
+  Object.assign(S, { t, open: -1, since: -1e9, lastHit: -1e9, vis: cards.map(() => 0), from: 'fx', to: 'fx', swT: -1e9, swX: W / 2, swY: H / 2 });
+}
+function stepShow(t) {
+  const trail = trailAt(t), yaw = reduce ? 0 : yawAt(t);
+  const hit = cards.map(c => { const [ax, ay] = project(ANCH[c.k], yaw); return smooth(LENS_R * 0.30, LENS_R * 0.60, lensSD(ax, ay, trail)); });
+  let best = -1, bv = 0; hit.forEach((v, i) => { if (v > bv) { bv = v; best = i; } });
+  if (best >= 0 && bv > 0.55) {
+    if (S.open < 0 || (best !== S.open && bv > hit[S.open] + 0.1)) { S.open = best; S.since = t; }
+    if (best === S.open) S.lastHit = t;
+  }
+  if (S.open >= 0 && t - S.lastHit > HOLD) S.open = -1;
+  // the open card waits for the previous one to fade, so two cards never overlap
+  const others = Math.max(0, ...S.vis.filter((_, i) => i !== S.open));
+  S.vis = S.vis.map((v, i) => { const on = i === S.open && others < 0.04; return v + ((on ? 1 : 0) - v) * (1 - Math.exp(-DT * (on ? 6.5 : 11))); });
+  // a new product colour spreads from the lens over the scene; it holds while no card is open
+  if (S.open >= 0 && cards[S.open].kind !== S.to) {
+    S.from = wipeAt(t) < 0.5 ? S.from : S.to; S.to = cards[S.open].kind; S.swT = t; [S.swX, S.swY] = trail[0];
+  }
+}
+const WIPE = 1.1;                    // seconds
+const wipeAt = t => { const p = Math.min(1, Math.max(0, (t - S.swT) / WIPE)); return p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2; };
+function showAt(t) {
+  if (S.t === null || t < S.t - 1e-6 || t - S.t > 1.5) resetShow(t - LOOP - DT * 0.5);
+  while (S.t + DT <= t + 1e-9) { S.t += DT; stepShow(S.t); }
+}
+
+/* ---------- theme ---------- */
+const BG = { fx: document.getElementById('bg-fx'), wm: document.getElementById('bg-wm'), mt: document.getElementById('bg-mt') };
+const cursorDot = document.querySelector('#cursor .dot'), note = document.getElementById('note');
+const rgba = (c, a) => `rgba(${c.map(Math.round).join(',')},${a.toFixed(3)})`;
+function applyTheme(t) {
+  const e = S.from === S.to ? 1 : wipeAt(t);
+  const th = { fx: 0, wm: 0, mt: 0 }; th[S.from] += 1 - e; th[S.to] += e;
+  // backdrops: the old one underneath, the new one revealed by a soft circle growing from where the lens was
+  const R = e * (Math.hypot(Math.max(S.swX, W - S.swX), Math.max(S.swY, H - S.swY)) + 120);
+  for (const k of KINDS) {
+    const el = BG[k], under = k === S.from && e < 1, over = k === S.to;
+    el.style.opacity = under || over ? '1' : '0';
+    el.style.zIndex = over ? '1' : '0';
+    const mask = over && e < 1 ? `radial-gradient(circle at ${S.swX.toFixed(1)}px ${S.swY.toFixed(1)}px, #000 ${Math.max(0, R - 110).toFixed(1)}px, transparent ${R.toFixed(1)}px)` : 'none';
+    el.style.webkitMaskImage = mask; el.style.maskImage = mask;
+  }
+  const light = th.mt, q = th.wm / Math.max(1e-4, th.fx + th.wm);
+  const D = k => Array.isArray(PAL.fx[k]) ? lerpA(PAL.fx[k], PAL.wm[k], q) : lerpC(PAL.fx[k], PAL.wm[k], q);
+  const T = k => Array.isArray(PAL.fx[k]) ? lerpA(D(k), PAL.mt[k], light) : lerpC(D(k), PAL.mt[k], light);
+  U.uLight.value = light;
+  MU.uRim.value.set(...T('rim')); MU.uFill.value.set(...T('fill')); MU.uHemiLo.value.set(...T('hLo')); MU.uHemiHi.value.set(...T('hHi'));
+  XU.cDeep.value.copy(D('deep')); XU.cMid.value.copy(D('mid')); XU.cRim.value.copy(D('xrim')); XU.cLine.value.copy(D('line'));
+  pts.material.uniforms.cPt.value.copy(T('pt'));
+  composite.uniforms.uGlass.value.set(...T('glass')); composite.uniforms.uEdge.value.set(...T('edge'));
+  const lm = T('loopMt'), lw = T('loopWm');
+  for (const [m, kind] of loopMats) m.color.copy(kind === 'mt' ? lm : lw);
+  const dot = T('dot'), ring = T('ring'), nt = T('note');
+  cursorDot.style.background = rgba(dot, 1);
+  cursorDot.style.boxShadow = `0 0 0 6px ${rgba(ring, lerp(0.30, 0.16, light))}, 0 2px 12px rgba(0,0,0,${lerp(0.35, 0.12, light).toFixed(3)})`;
+  note.style.color = rgba(nt.slice(0, 3), nt[3]);
+}
+
+/* ---------- one frame ---------- */
+const easeOut = x => 1 - Math.pow(1 - x, 3);
+function frame(t) {
+  showAt(t);
+  const yaw = reduce ? 0 : yawAt(t);
+  body.rotation.y = yaw; body.updateMatrixWorld(true);
+  U.uTime.value = ((t % LOOP) + LOOP) % LOOP;
+  const trail = trailAt(t);
+  applyTheme(t);
+
+  cards.forEach((c, i) => {
+    const v = S.vis[i], e = easeOut(v);
+    const [ax, ay] = project(ANCH[c.k], yaw);
+    const live = v > 0.002;
+    c.el.style.visibility = live ? 'visible' : 'hidden';
+    c.line.style.display = c.dot.style.display = c.halo.style.display = live ? '' : 'none';
+    if (!live) return;
+    // leader line draws itself from the point on the body out to the card
+    const ex = c.side === 'left' ? c.x + CW : c.x, ey = c.y + CH / 2, bx = c.side === 'left' ? ex + 34 : ex - 34;
+    const len = Math.hypot(bx - ax, ey - ay) + Math.abs(ex - bx);
+    c.line.setAttribute('points', `${ax.toFixed(1)},${ay.toFixed(1)} ${bx},${ey} ${ex},${ey}`);
+    c.line.setAttribute('stroke-dasharray', `${len.toFixed(1)} ${len.toFixed(1)}`);
+    c.line.setAttribute('stroke-dashoffset', (len * (1 - e)).toFixed(1));
+    c.line.setAttribute('stroke-opacity', (0.9 * v).toFixed(3));
+    c.dot.setAttribute('cx', ax.toFixed(1)); c.dot.setAttribute('cy', ay.toFixed(1)); c.dot.setAttribute('opacity', v.toFixed(3));
+    c.halo.setAttribute('cx', ax.toFixed(1)); c.halo.setAttribute('cy', ay.toFixed(1)); c.halo.setAttribute('r', (8 + 11 * e).toFixed(2)); c.halo.setAttribute('stroke-opacity', (0.7 * v).toFixed(3));
+    c.el.style.opacity = v.toFixed(3);
+    c.el.style.transform = `translateX(${((c.side === 'left' ? -1 : 1) * 18 * (1 - e)).toFixed(2)}px)`;
+    // the value counts up while the card opens (a reading coming in), then holds
+    const p = i === S.open ? Math.min(1, Math.max(0, (t - S.since - 0.15) / 0.85)) : 1;
+    c.num.textContent = (c.value * easeOut(p)).toFixed(c.dec);
+  });
+  for (const k in loopsByKey) { const i = cards.findIndex(c => c.k === k); if (i >= 0) loopsByKey[k].material.opacity = 0.5 + 0.5 * S.vis[i]; }
+
+  // cursor
+  const [cx, cy] = trail[0];
+  document.getElementById('cursor').style.transform = `translate(${cx.toFixed(2)}px, ${cy.toFixed(2)}px)`;
+  trail.forEach(([x, y, r], i) => composite.uniforms.uTrail.value[i].set(x * PR, (H - y) * PR, r * PR * DEBUG_LENS));
+
+  // passes
+  camera.layers.set(L_OUT); renderer.setRenderTarget(rtOut); renderer.clear(); renderer.render(scene, camera);
+  camera.layers.set(L_BACK); renderer.setRenderTarget(rtBack); renderer.clear(); renderer.render(scene, camera);
+  camera.layers.set(L_IN); renderer.setRenderTarget(rtIn); renderer.clear(); renderer.render(scene, camera);
+  renderer.setRenderTarget(null); renderer.clear(); renderer.render(quadScene, quadCam);
+}
+
+/* ---------- run ---------- */
+await document.fonts.ready;
+if (RENDER) {
+  setSize(1);
+  window.renderAt = t => { frame(t); renderer.getContext().finish(); return true; };
+  window.heroReady = true;
+} else {
+  const fitStage = () => {
+    const s = Math.min(innerWidth / W, innerHeight / H);
+    stage.style.transform = `scale(${s})`; fit.style.width = W * s + 'px'; fit.style.height = H * s + 'px';
+    setSize(Math.min(2, Math.max(1, devicePixelRatio * s)));
+    return s;
+  };
+  let scale = fitStage(); addEventListener('resize', () => { scale = fitStage(); });
+  stage.addEventListener('pointermove', e => { const r = stage.getBoundingClientRect(); user = [(e.clientX - r.left) / scale, (e.clientY - r.top) / scale]; userT = performance.now(); });
+  stage.addEventListener('pointerleave', () => { userT = -1e9; });
+  const t0 = performance.now(); let last = t0;
+  const tick = now => {
+    const t = (now - t0) / 1000, dt = Math.min(0.05, (now - last) / 1000); last = now;
+    const active = now - userT < 2500;
+    mix += ((active ? 1 : 0) - mix) * (1 - Math.exp(-dt * (active ? 6 : 1.6)));
+    const auto = reduce ? project(ANCH.bmi, 0) : autoCursor(t);
+    const target = user && mix > 0.001 ? [auto[0] + (user[0] - auto[0]) * mix, auto[1] + (user[1] - auto[1]) * mix] : auto;
+    shown = shown ? [shown[0] + (target[0] - shown[0]) * (1 - Math.exp(-dt * 9)), shown[1] + (target[1] - shown[1]) * (1 - Math.exp(-dt * 9))] : target;
+    hist.push([t, shown[0], shown[1]]); while (hist.length && hist[0][0] < t - 1.6) hist.shift();
+    frame(t);
+    requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+}
+</script>
+</body>
+</html>
