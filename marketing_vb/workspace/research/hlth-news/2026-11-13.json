@@ -1,0 +1,91 @@
+{
+ "generated": "2026-11-13T05:40:29+00:00",
+ "items": [
+  {
+   "id": "6d0a2838-5bc9-4087-954d-5ffb54aea78c",
+   "title": "23andMe and Scripps Research Partner on Digital Alzheimer's Prevention Study",
+   "date": "2026-11-12",
+   "tags": [
+    "Telehealth / Virtual Care / Remote Patient Monitoring",
+    "Precision Medicine / Genomics",
+    "Association, Non Profit & Academia",
+    "Clinical Trial Solutions",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/23andme-and-scripps-research-partner-on-digital-alzheimer-s-prevention-study"
+  },
+  {
+   "id": "8dbd84a0-5adb-445d-84f5-bb9217acc3f7",
+   "title": "McKinsey Projects U.S. Healthcare EBITDA Growth as AI Reshapes Industry Economics",
+   "date": "2026-11-12",
+   "tags": [
+    "Professional Services",
+    "Payer (Insurer)",
+    "Investments and Partnerships",
+    "Operational Efficiency",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/mckinsey-projects-u-s-healthcare-ebitda-growth-as-ai-reshapes-industry-economics"
+  },
+  {
+   "id": "847ff1dd-96f6-45b0-8d75-e825bbc4c5da",
+   "title": "Zus Health Raises $33M to Expand AI-Powered Healthcare Data Platform",
+   "date": "2026-11-12",
+   "tags": [
+    "Interoperability / Data Management",
+    "Investments and Partnerships",
+    "Startup",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/zus-health-raises-33m-to-expand-ai-powered-healthcare-data-platform"
+  }
+ ],
+ "analyses": {
+  "6d0a2838-5bc9-4087-954d-5ffb54aea78c": {
+   "id": "6d0a2838-5bc9-4087-954d-5ffb54aea78c",
+   "score": 1,
+   "segment": "FitXpress §7 Clinical Trials",
+   "what": "23andMe Research Institute і Scripps Research Translational Institute запускають децентралізоване дослідження профілактики Alzheimer's. У ньому 1,200 учасників віком 60–80 років, віртуальний lifestyle coaching, моніторинг через Oura Rings і біомаркери (p-tau217).",
+   "why": "Формат дослідження (siteless) суміжний із сегментом Clinical Trials, але це не metabolic/obesity trial і вимірювання тіла в статті не згадуються.",
+   "play": "none",
+   "companies": [
+    "23andMe",
+    "23andMe Research Institute",
+    "Scripps Research Translational Institute",
+    "SRTI",
+    "Oura",
+    "Lifebit",
+    "Troper Wojcicki Philanthropies"
+   ],
+   "_date": "2026-11-12"
+  },
+  "8dbd84a0-5adb-445d-84f5-bb9217acc3f7": {
+   "id": "8dbd84a0-5adb-445d-84f5-bb9217acc3f7",
+   "score": 1,
+   "segment": "—",
+   "what": "McKinsey опублікувала прогноз для охорони здоров'я США на 2027: EBITDA галузі зростатиме на 7% CAGR до 2030. 74% організацій планують купувати AI-можливості ззовні, а EBITDA payers впала з $62B до $9B.",
+   "why": "Загальний тренд без конкретного акаунта. Можлива лише тема для контенту на кшталт «купувати чи будувати AI».",
+   "play": "content_only",
+   "companies": [
+    "McKinsey & Company"
+   ],
+   "_date": "2026-11-12"
+  },
+  "847ff1dd-96f6-45b0-8d75-e825bbc4c5da": {
+   "id": "847ff1dd-96f6-45b0-8d75-e825bbc4c5da",
+   "score": 0,
+   "segment": "—",
+   "what": "Zus Health залучила $33M у раунді Series B на розвиток AI-платформи, яка об'єднує розрізнені медичні дані (EHR, аптеки, лабораторії) в longitudinal patient records.",
+   "why": "Платформа працює з даними EHR, не з даними про тіло, і не входить у жоден сегмент ICP.",
+   "play": "none",
+   "companies": [
+    "Zus Health",
+    "athenahealth"
+   ],
+   "_date": "2026-11-12"
+  }
+ },
+ "posts": []
+}
