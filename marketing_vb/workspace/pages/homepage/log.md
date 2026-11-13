@@ -77,7 +77,7 @@ Vadim: landonorris.com as the reference (a cursor lens reveals a second layer), 
 - **Renders** (`tools/render-hero-v3.mjs`, 480 frames at 30 fps, deterministic `renderAt(t)`, ~0.9 s per frame on this VPS): `renders/hero-v3-lens-1440x1200.mp4` (4.1 MB, master), `.webm` (2.2 MB, for the site), `hero-v3-lens-960x800.mp4` (1.2 MB), `hero-v3-lens-600.gif` (5.3 MB, preview only), `hero-v3-lens-poster.jpg`, `hero-v3-lens-no-finger-1440x1200.mp4`. Screenshots of the prototype: `screenshot-v3-1440-hero.jpeg`, `screenshot-v3-1280-hero.jpeg`.
 - **Drive:** folder «Homepage hero v3 · scan lens (2026-11-13)» `14LO3k8OKzz1tIvg7qsxmljwFoTb-1XWJ` (not shared): all renders, both screenshots, `hero-v3-live-webgl.zip` (live page + mesh + README).
 - **For the site:** `<video autoplay muted loop playsinline poster>` with WebM then MP4, as in `page-v3-2026-11-13.html`; the live WebGL page is the richer option (real mouse takes over) but costs three.js + 350 KB of mesh.
-- **Not committed** (the public repo would carry the ring-finger card; run the wrist repo patterns before any push).
+- **Committed later** with v3.1 (54ee49d), on Vadim's «коміт та пуш»; wrist confidentiality patterns: 0 hits, no accuracy figures.
 
 ## 2026-11-13 · Hero v3.1: luxury mannequin head, one metric at a time, product colours
 
@@ -90,5 +90,5 @@ Vadim on v3: «голова сильно на яйце схожа. давай в
 - **Loop** 20 s (was 16): BMI → bust → waist → hips → thigh → finger → wrist → body fat → lean mass; ~2.2 s per metric. Frame 0 (and the poster) shows the BMI card on blue.
 - **Prototype.** `page-v3-2026-11-13.html`: the video now sits in a rounded panel; the edge fade made the paper phase glow against the navy hero.
 - **Renders v3.1** (600 frames at 30 fps, ~0.78 s per frame; the loop seam checked on raw frames: the step 19.97 → 0 s equals a normal frame step): `renders/hero-v3-lens-1440x1200.mp4` (4.9 MB, master), `.webm` (2.7 MB, for the site), `hero-v3-lens-960x800.mp4` (1.6 MB), `hero-v3-lens-600.gif` (5.8 MB, 15 fps, preview only), `hero-v3-lens-poster.jpg` (= frame 0, BMI on blue), `hero-v3-lens-no-finger-1440x1200.mp4` (8 stops). Screenshots: `screenshot-v3-1440-hero.jpeg` (blue phase), `screenshot-v3-1440-hero-mt.jpeg` (paper phase), `screenshot-v3-1280-hero.jpeg`.
-- **Drive** `14LO3k8OKzz1tIvg7qsxmljwFoTb-1XWJ`: the nine v3 files updated in place (same links; Drive keeps the v3 revisions), plus `screenshot-v3-1440-hero-mt.jpeg`. Still not shared. **Not committed.**
+- **Drive** `14LO3k8OKzz1tIvg7qsxmljwFoTb-1XWJ`: the nine v3 files updated in place (same links; Drive keeps the v3 revisions), plus `screenshot-v3-1440-hero-mt.jpeg`. Shared with Kristina, Asel and Nika (writer) for the review. Committed 54ee49d.
 - **Review (11-13):** posted in #marketing (video + description; prototype screenshots in the thread), asked Kristina, Asel and Nika to evaluate; the Drive folder is shared with the three of them.
