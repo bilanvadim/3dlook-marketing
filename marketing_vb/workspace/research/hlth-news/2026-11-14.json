@@ -1,0 +1,86 @@
+{
+ "generated": "2026-11-14T05:40:17+00:00",
+ "items": [
+  {
+   "id": "4d152003-e524-4b8d-9f90-3fbc078e7f77",
+   "title": "Nanopath Raises $25M to Advance 15-Minute Vaginitis Diagnostic Test",
+   "date": "2026-11-13",
+   "tags": [
+    "Women's Health",
+    "Investments and Partnerships",
+    "Startup",
+    "Diagnostics",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/nanopath-raises-25m-to-advance-15-minute-vaginitis-diagnostic-test"
+  },
+  {
+   "id": "7fd478b1-0e73-4c98-9b6c-599fb9e87954",
+   "title": "Orakl Oncology Raises $34M to Expand AI-Powered Cancer Clinical Trial Prediction Platform",
+   "date": "2026-11-13",
+   "tags": [
+    "Cancer Care",
+    "Life Sciences (Pharma & Biotech)",
+    "Clinical Trial Solutions",
+    "Startup",
+    "Artificial Intelligence / Machine Learning"
+   ],
+   "url": "https://hlth.com/insights/news/orakl-oncology-raises-34m-to-expand-ai-powered-cancer-clinical-trial-prediction-platform"
+  },
+  {
+   "id": "ba617e86-b6ce-453c-84ed-db980bef4e88",
+   "title": "ALIS by Medtelligent Integrates with Anthropic’s Claude to Expand AI Access in Senior Living",
+   "date": "2026-11-13",
+   "tags": [
+    "AgeTech / Senior Care",
+    "Operational Efficiency",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/alis-by-medtelligent-integrates-with-anthropic-s-claude-to-expand-ai-access-in-senior-living"
+  }
+ ],
+ "analyses": {
+  "4d152003-e524-4b8d-9f90-3fbc078e7f77": {
+   "id": "4d152003-e524-4b8d-9f90-3fbc078e7f77",
+   "score": 0,
+   "segment": "—",
+   "what": "Nanopath (Массачусетс) залучила $25M Series B, з них $2M грантами. Гроші підуть на FDA 510(k)-дослідження 15-хвилинного point-of-care тесту на вагініт, розширення виробництва та підготовку до комерційного запуску.",
+   "why": "Молекулярна діагностика інфекцій, тобто дані про тіло тут не потрібні, і жодному сегменту ICP 3DLOOK це не відповідає.",
+   "play": "none",
+   "companies": [
+    "Nanopath"
+   ],
+   "_date": "2026-11-13"
+  },
+  "7fd478b1-0e73-4c98-9b6c-599fb9e87954": {
+   "id": "7fd478b1-0e73-4c98-9b6c-599fb9e87954",
+   "score": 0,
+   "segment": "—",
+   "what": "Orakl Oncology (Париж) залучила $34M Series A, загалом уже $50M. Платформа на основі AI, органоїдів пухлин і клінічних даних прогнозує відповідь на лікування раку та результати клінічних досліджень. Компанія відкриває команди в США та UK.",
+   "why": "Це онкологічний drug development. Компанія не є CRO і не проводить метаболічних досліджень з антропометрією, тож під FitXpress §7 Clinical Trials не підходить.",
+   "play": "none",
+   "companies": [
+    "Orakl Oncology",
+    "Gustave Roussy",
+    "Sanofi"
+   ],
+   "_date": "2026-11-13"
+  },
+  "ba617e86-b6ce-453c-84ed-db980bef4e88": {
+   "id": "ba617e86-b6ce-453c-84ed-db980bef4e88",
+   "score": 0,
+   "segment": "—",
+   "what": "ALIS by Medtelligent, ПЗ для senior living (assisted living, memory care), запустила MCP-конектор до Claude від Anthropic. Через нього команди догляду отримують у Claude дані про заклад і резидентів.",
+   "why": "Ця новина про AI-доступ до операційних даних у senior living, а скан тіла чи body-дані в цьому процесі не потрібні. Сегмента в ICP немає.",
+   "play": "none",
+   "companies": [
+    "ALIS by Medtelligent",
+    "Medtelligent",
+    "Anthropic"
+   ],
+   "_date": "2026-11-13"
+  }
+ },
+ "posts": []
+}
