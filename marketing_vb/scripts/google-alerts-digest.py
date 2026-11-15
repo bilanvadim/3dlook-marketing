@@ -26,10 +26,10 @@ HOW
    (Vadim 2026-10-09: «давай ще Каті Галіч на пошту відправляти»), after the Slack post, so a
    failed Slack post never leaves a sent email behind to be duplicated on the retry.
 5. Failures go to Vadim's Telegram.
-6. Processed alert mail is then marked read and labelled «Google Alerts» (Vadim 2026-11-15:
-   «щоб моя пошта виглядала чистою»). Mail that failed to parse stays unread, so a broken
-   format still shows in the inbox. Nothing is archived or deleted. `tidy` does the same once
-   for all older alert mail.
+6. Processed alert mail is then marked read, labelled «Google Alerts» and archived out of the
+   inbox (Vadim 2026-11-15: «щоб моя пошта виглядала чистою», then «додай» to archiving). Mail
+   that failed to parse stays unread in the inbox, so a broken format still shows. Nothing is
+   deleted. `tidy` does the same once for all older alert mail.
 
 Clients (Kate Kondakova 2026-11-02: «наши крупные клиенты? типа берлингтон и сафари»): the ones
 with a public case study are in ALERTS below. A client whose name may not sit
@@ -54,7 +54,7 @@ USAGE
                                         [--lookback-days 3]
     scripts/google-alerts-digest.py links        # prefilled google.com/alerts links
     scripts/google-alerts-digest.py status
-    scripts/google-alerts-digest.py tidy [--apply]   # mark older processed alert mail read + label
+    scripts/google-alerts-digest.py tidy [--apply]   # older processed alert mail: read + label + archive
 
 Exit codes: 0 = ok · 1 = gmail, analysis or Slack failed (Telegram alert with --post) · 3 = setup.
 """
@@ -228,14 +228,14 @@ def label_id() -> str:
 
 
 def tidy(mails: list[dict]) -> int:
-    """Mark these alert mails read and add the label. Mails already done are skipped, so a
-    failed run is healed by the next one. Returns how many were changed."""
+    """Mark these alert mails read, add the label and archive them (out of INBOX). Mails already
+    done are skipped, so a failed run is healed by the next one. Returns how many were changed."""
     lid = label_id()
     todo = [m["messageId"] for m in mails
-            if "UNREAD" in (m.get("labelIds") or []) or lid not in (m.get("labelIds") or [])]
+            if {"UNREAD", "INBOX"} & set(m.get("labelIds") or []) or lid not in (m.get("labelIds") or [])]
     for n in range(0, len(todo), 1000):
         oo(["connector", "run", "gmail", "-a", "batch_modify_messages", "-d", json.dumps(
-            {"messageIds": todo[n:n + 1000], "addLabelIds": [lid], "removeLabelIds": ["UNREAD"]})])
+            {"messageIds": todo[n:n + 1000], "addLabelIds": [lid], "removeLabelIds": ["UNREAD", "INBOX"]})])
     return len(todo)
 
 
@@ -662,11 +662,11 @@ def cmd_run(a) -> int:
     try:
         n = tidy([m for m in mails if m["messageId"] in st["messages"]])
         if n:
-            log(f"gmail: {n} alert mail(s) marked read + «{LABEL}»")
+            log(f"gmail: {n} alert mail(s) marked read + «{LABEL}» + archived")
     except Broken as e:
         log(f"gmail tidy failed: {e}")
         if tg and st.get("tidy_warned") != day:
-            tg(f"⚠️ Google Alerts: дайджест пішов, але листи алертів не позначились прочитаними "
+            tg(f"⚠️ Google Alerts: дайджест пішов, але листи алертів не прибрались з інбоксу "
                f"({str(e)[:200]}). Спробую наступного прогону.")
             st["tidy_warned"] = day
             save_state(st)
@@ -674,7 +674,7 @@ def cmd_run(a) -> int:
 
 
 def cmd_tidy(a) -> int:
-    """One-off: older alert mail, marked read + labelled. Mail from the last --lookback-days
+    """One-off: older alert mail, marked read + labelled + archived. Mail from the last --lookback-days
     that the digest has not processed yet is left alone for the next run."""
     st = load_state()
     mails = oo(["connector", "run", "gmail", "-a", "fetch_emails", "-d", json.dumps(
@@ -726,7 +726,7 @@ def main(argv=None) -> int:
     r.add_argument("--model", default=MODEL, help=f"claude model alias (default {MODEL})")
     sub.add_parser("links", help="prefilled google.com/alerts link per alert")
     sub.add_parser("status", help="what was processed")
-    t = sub.add_parser("tidy", help="mark older processed alert mail read and label it")
+    t = sub.add_parser("tidy", help="older processed alert mail: mark read, label, archive")
     t.add_argument("--apply", action="store_true", help="change the mailbox (else count only)")
     t.add_argument("--lookback-days", type=int, default=3, help="leave unprocessed mail this new alone")
     a = ap.parse_args(argv)
