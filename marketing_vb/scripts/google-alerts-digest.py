@@ -25,8 +25,11 @@ HOW
    The same digest goes as an HTML email from his mailbox to --email / $GOOGLE_ALERTS_EMAIL_TO
    (Vadim 2026-10-09: «давай ще Каті Галіч на пошту відправляти»), after the Slack post, so a
    failed Slack post never leaves a sent email behind to be duplicated on the retry.
-5. Failures go to Vadim's Telegram. Mail older than the lookback is never touched, and so is
-   the inbox: the script only reads.
+5. Failures go to Vadim's Telegram.
+6. Processed alert mail is then marked read and labelled «Google Alerts» (Vadim 2026-11-15:
+   «щоб моя пошта виглядала чистою»). Mail that failed to parse stays unread, so a broken
+   format still shows in the inbox. Nothing is archived or deleted. `tidy` does the same once
+   for all older alert mail.
 
 Clients (Kate Kondakova 2026-11-02: «наши крупные клиенты? типа берлингтон и сафари»): the ones
 with a public case study are in ALERTS below. A client whose name may not sit
@@ -51,6 +54,7 @@ USAGE
                                         [--lookback-days 3]
     scripts/google-alerts-digest.py links        # prefilled google.com/alerts links
     scripts/google-alerts-digest.py status
+    scripts/google-alerts-digest.py tidy [--apply]   # mark older processed alert mail read + label
 
 Exit codes: 0 = ok · 1 = gmail, analysis or Slack failed (Telegram alert with --post) · 3 = setup.
 """
@@ -80,6 +84,7 @@ PIPE = HERE / "outbound-pipeline.py"                 # telegram_send
 
 OO = shutil.which("oo") or str(Path.home() / ".local" / "bin" / "oo")
 GMAIL_QUERY = "from:googlealerts-noreply@google.com newer_than:{days}d"
+LABEL = os.environ.get("GOOGLE_ALERTS_LABEL", "Google Alerts")   # Gmail label for processed mail
 CHANNEL = os.environ.get("GOOGLE_ALERTS_SLACK_CHANNEL", "")
 EMAIL_TO = os.environ.get("GOOGLE_ALERTS_EMAIL_TO", "")       # comma-separated
 LEGAL_EMAIL_TO = os.environ.get("GOOGLE_ALERTS_LEGAL_EMAIL_TO", "")   # legal section only
@@ -208,6 +213,30 @@ def fetch_mail(days: int, limit: int = 100) -> list[dict]:
     data = oo(["connector", "run", "gmail", "-a", "fetch_emails", "-d", json.dumps(
         {"query": GMAIL_QUERY.format(days=days), "maxResults": limit, "detail": "full"})])
     return data.get("messages") or []
+
+
+def label_id() -> str:
+    """Id of the «Google Alerts» label; created on first use. Looked up every run, so a label
+    renamed or deleted by hand is found again or recreated."""
+    for lb in oo(["connector", "run", "gmail", "-a", "list_labels"]).get("labels") or []:
+        if lb.get("name") == LABEL:
+            return lb["id"]
+    made = oo(["connector", "run", "gmail", "-a", "create_label", "-d", json.dumps(
+        {"name": LABEL, "labelListVisibility": "labelShow", "messageListVisibility": "show"})])
+    log(f"created gmail label «{LABEL}» ({made.get('id')})")
+    return made["id"]
+
+
+def tidy(mails: list[dict]) -> int:
+    """Mark these alert mails read and add the label. Mails already done are skipped, so a
+    failed run is healed by the next one. Returns how many were changed."""
+    lid = label_id()
+    todo = [m["messageId"] for m in mails
+            if "UNREAD" in (m.get("labelIds") or []) or lid not in (m.get("labelIds") or [])]
+    for n in range(0, len(todo), 1000):
+        oo(["connector", "run", "gmail", "-a", "batch_modify_messages", "-d", json.dumps(
+            {"messageIds": todo[n:n + 1000], "addLabelIds": [lid], "removeLabelIds": ["UNREAD"]})])
+    return len(todo)
 
 
 def mail_text(m: dict) -> str:
@@ -627,6 +656,39 @@ def cmd_run(a) -> int:
     for i in items + own:
         st["urls"][i["url"]] = day
     save_state(st)
+
+    # Clean inbox: everything processed in the lookback, including earlier runs' mail that a
+    # failed tidy left unread. Unparsed mail is not in st["messages"] and stays unread.
+    try:
+        n = tidy([m for m in mails if m["messageId"] in st["messages"]])
+        if n:
+            log(f"gmail: {n} alert mail(s) marked read + «{LABEL}»")
+    except Broken as e:
+        log(f"gmail tidy failed: {e}")
+        if tg and st.get("tidy_warned") != day:
+            tg(f"⚠️ Google Alerts: дайджест пішов, але листи алертів не позначились прочитаними "
+               f"({str(e)[:200]}). Спробую наступного прогону.")
+            st["tidy_warned"] = day
+            save_state(st)
+    return 0
+
+
+def cmd_tidy(a) -> int:
+    """One-off: older alert mail, marked read + labelled. Mail from the last --lookback-days
+    that the digest has not processed yet is left alone for the next run."""
+    st = load_state()
+    mails = oo(["connector", "run", "gmail", "-a", "fetch_emails", "-d", json.dumps(
+        {"query": "from:googlealerts-noreply@google.com", "maxResults": 500, "detail": "summary"})]
+              ).get("messages") or []
+    cutoff = (now_utc() - timedelta(days=a.lookback_days)).strftime("%Y-%m-%dT%H:%M:%S")
+    done = [m for m in mails if m["messageId"] in st["messages"] or m.get("messageTimestamp", "") < cutoff]
+    unread = sum("UNREAD" in (m.get("labelIds") or []) for m in done)
+    print(f"alert mails: {len(mails)} · to tidy: {len(done)} ({unread} unread) · "
+          f"left for the next run: {len(mails) - len(done)}")
+    if a.apply:
+        print(f"changed: {tidy(done)}")
+    else:
+        print("dry run: add --apply")
     return 0
 
 
@@ -664,11 +726,14 @@ def main(argv=None) -> int:
     r.add_argument("--model", default=MODEL, help=f"claude model alias (default {MODEL})")
     sub.add_parser("links", help="prefilled google.com/alerts link per alert")
     sub.add_parser("status", help="what was processed")
+    t = sub.add_parser("tidy", help="mark older processed alert mail read and label it")
+    t.add_argument("--apply", action="store_true", help="change the mailbox (else count only)")
+    t.add_argument("--lookback-days", type=int, default=3, help="leave unprocessed mail this new alone")
     a = ap.parse_args(argv)
     if not OVERVIEW.exists() or not PIPE.exists() or not Path(OO).exists():
         print("broken setup: overview.md, outbound-pipeline.py or oo missing", file=sys.stderr)
         return 3
-    return {"run": cmd_run, "links": cmd_links, "status": cmd_status}[a.cmd](a)
+    return {"run": cmd_run, "links": cmd_links, "status": cmd_status, "tidy": cmd_tidy}[a.cmd](a)
 
 
 if __name__ == "__main__":
