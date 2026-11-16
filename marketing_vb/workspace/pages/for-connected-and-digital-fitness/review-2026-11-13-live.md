@@ -123,3 +123,5 @@ White-label і «Under» у стрічці, два заголовки FAQ. Ре�
 2026-11-15: Асель у Slack DM, російською (адреса + кроки, 6 дослівних текстів, решта, чекліст на реліз):
 https://3dlook.slack.com/archives/D0A1Q2E02P3/p1794736650307869
 2026-11-15, пізніше: на прохання Вадима з повідомлення прибрано тексти приватності й дизайн-пункти (лого, картки, таблиця). Лишились адреса, meta/og:image, чекліст на реліз.
+
+2026-11-16: сторінка повернулась на `/fitxpress/for-connected-and-digital-fitness/` о 10:20 UTC (200, canonical/og на себе, index, у sitemap лише фінальна адреса). 301 в один крок з `/digital-fitness/`, `/for-connected-and-digital-fitness/`, `?page_id=45555`, http. GTM-рядок старого шляху працює (`fitness`); 18 посилань і llms.txt знову правильні. 404 було щонайменше 10:12–10:20 UTC. Лишилось: JSON-LD у шаблоні теми ще з `/digital-fitness/` (9 місць: @id, url, breadcrumb); пункт меню Use Cases = довільне посилання на `/for-connected-and-digital-fitness/` (через 301).
