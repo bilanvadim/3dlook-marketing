@@ -47,3 +47,27 @@
   1792656114.772339 (ts 1794409611.489999): keep the card; at publication drop «Coming soon» + the «Confirm release
   timing» line if released, otherwise keep «Coming soon»; confirm release and integrations with product first.
   See `brand-assets/product-info/roadmap.md`.
+
+## 2026-11-16: review of Asselya's mockup v7 (Vadim: «в слаці канал маркетинг Асселя кидала на ревью бмі сторінку. подивись»)
+
+- Source: same thread 1792656114.772339, reply 2026-11-12 10:33 UTC (ts 1794479611.471359): «Вроде все комментарии
+  учтены», file `3dlook-bmi-verification-mockup-v7.html` (F0CHY5CT68G) → `asselya-v7-2026-11-12.html`, text
+  `asselya-v7-2026-11-12.txt`.
+- Applied from the 11-09 review: FitXpress in H1 («Remote BMI verification with FitXpress»), H2 «What is BMI
+  verification?» with definition + CDC 5.3% vs 8.8%, shared logo strip with UK Meds and Yazen first and the caption
+  «100+ clients have used 3DLOOK body scanning since 2016, including online pharmacies» (Burlington stays: it is in the
+  shared strip of the live use-case pages; the hard fail was the «using FitXpress» heading, now gone), RTPV and
+  Clothing Detector at the confirmed level, pose chip removed, 3.5% MAE + accuracy link, «Under 45 sec», five data
+  rows, «BMI verification methods compared» + video-consultation row, routing links on all vertical cards, liveness
+  card kept as «Coming soon» (11-11 correction), one pricing line, FAQ 7 → 5. Detector: no hard bans, AI 0.7/1,000,
+  direct address 19.5 (was ~26), «review» 23 (was 35).
+- Left: bariatric card → `/fitxpress/for-bariatric-programs/` = 404 (use the bariatric article); H3 «Pose and
+  clothing information» carries only the clothing line; Erakulis missing from the shared strip; meta description 160;
+  «serve as»; two H2 ending in «review process»; brand query lands here but FitXpress is never defined.
+- `fact-sheet-v7.md` for the judge. Blind judge round 2, feature-page scale (explains 25, claims 25, routing 20,
+  search 15, copy 10, technical 5): **79/100**, hard fail = bariatric 404. `judge-round-2-asselya-v7.json`.
+  Rejected judge items: collapse the five data rows to a note (contradicts our 11-09 ask and the live fitness page),
+  insurance anchor «Accelerated underwriting» → title (the anchor is the landing key on purpose), drop «↗» (site
+  button pattern), legal@ instead of privacy@ (we asked for privacy@, as on the fitness page), «in this flow» height
+  hedge (height verification is on the 2027 roadmap), extra «scale photo» row in the methods table (scope).
+- Russian reply drafted: `reply-2026-11-16-asselya-v7-ru.md`. Vadim: «спочатку висновки тут покажи», then «коміт та пуш та відправ у слак» → SENT as a text reply in thread 1792656114.772339 (ts 1794838086.310489), no files.

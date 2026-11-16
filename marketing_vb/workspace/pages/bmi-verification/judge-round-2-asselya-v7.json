@@ -1,0 +1,24 @@
+{
+  "scores": {
+    "Explains the feature": 21,
+    "Claims discipline": 22,
+    "Routing to use-case pages": 14,
+    "Search and AI visibility": 12,
+    "Human copy in the buyer's language": 6,
+    "Place in the site and technical layer": 4
+  },
+  "total": 79,
+  "hard_fails": [
+    "Bariatric programs card (05 / BARIATRICS): 'Explore bariatric programs ↗' links to https://3dlook.ai/fitxpress/for-bariatric-programs/, which returns 404 (landing not published). This is a broken link in a primary use-case route."
+  ],
+  "lowest": "Human copy in the buyer's language",
+  "one_fix": "Repoint the dead bariatric route. In card 05, change href 'https://3dlook.ai/fitxpress/for-bariatric-programs/' to 'https://3dlook.ai/content-hub/bariatric-pre-qualification-mobile-3d-body-scanning/' (live, ranks #1 for 'mobile body scanning software remote bmi verification'). Change the anchor 'Explore bariatric programs ↗' to 'Bariatric pre-qualification with mobile body scanning →'. Switch the link back to /fitxpress/for-bariatric-programs/ only after that landing returns 200.",
+  "other_fixes": [
+    "Serve the brand query. Google shows only this page for 'fitxpress', but the page never says what FitXpress is until the last FAQ. In 'What is BMI verification?', replace 'FitXpress uses two guided smartphone photos to estimate weight and calculates BMI using the supplied height.' with 'FitXpress is 3DLOOK's body-scanning software for apps and websites, delivered as web and mobile SDKs and an API. From two guided smartphone photos, its Smart Scales feature estimates weight, and FitXpress calculates BMI using the supplied height.' This adds no new claims, because the SDK/API and Smart Scales are already stated on the page.",
+    "Tighten the height boundary. 'Height is an input; FitXpress does not independently measure it in this flow.' The words 'in this flow' imply that FitXpress measures height somewhere else, and the fact sheet says it does not measure height at all. Replace with 'Height is an input. FitXpress does not measure height.'",
+    "Cut the repetition and the line that reads like a design note. 'review' appears 23 times in about 1,400 words, 'supplied height' 7 times and 'additional evidence' 6 times. Direct address runs at 19.5 per 1,000 words against a budget of 12.5. Two consecutive H2s both end in 'review process'. Replace the H2 'Weight and BMI, ready for your review process.' with 'What FitXpress returns.' Replace its subtitle 'Separate FitXpress outputs from the comparison and routing your team configures.' with 'FitXpress returns predicted weight and BMI. Your system runs the comparison and the routing.' Also replace the vague 'Confirm applicable capture-quality information during integration.' with 'Capture-quality fields available to your system are confirmed during integration.'",
+    "Data block: per CLAUDE.md §12, add a short note and the FAQ link instead of retelling the trust FAQ. Also send buyers' document requests to legal@, because privacy@ is the end-user rights channel. Replace the five-row 'How FitXpress handles data' list and 'FitXpress privacy and security FAQ · privacy@3dlook.me' with: 'Photos are deleted after processing or within 30 days under the customer's policy, and scan records carry random IDs. In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR. Encryption, retention and model-training details: FitXpress privacy and security FAQ. Security and legal documents: legal@3dlook.me.'",
+    "Methods table: add a common remote method the table leaves out, which strengthens the page for 'bmi verification methods' queries. Insert a row after 'Video consultation': Method 'Scale photo or video'; Data source 'Person submits an image or clip of a scale display, sometimes standing on the scale.'; Output 'Shows a reading; when it was taken and who stood on the scale can be hard to confirm. BMI also requires height.'",
+    "Insurance card anchor: the anchor 'Accelerated underwriting ↗' does not match the card title 'Life insurance underwriting' and the /for-insurance-underwriting/ target. Replace it with 'Body data for life insurance underwriting →'. Also drop '↗' from all internal links ('Online pharmacy BMI verification ↗', 'Body data for telehealth and digital health programs ↗', 'Body data for wellness platforms ↗', 'Request a demo ↗' on #demo), because '↗' signals an external site or a new tab."
+  ]
+}
