@@ -33,5 +33,123 @@
   },
   "rendered_at": "2026-11-06T09:12:09+00:00",
   "hyperframes": "0.9.1",
-  "url": "3dlook.ai/content-hub/glp-1-muscle-loss-fitness-apps"
+  "url": "3dlook.ai/content-hub/glp-1-muscle-loss-fitness-apps",
+  "sound": {
+    "rendered_at": "2026-11-16T14:24:18+00:00",
+    "earshot": "0.4.1",
+    "cues": [
+      {
+        "role": "land",
+        "sound": "pro_pop_in/deep",
+        "at": 0.35,
+        "start": 0.349,
+        "seed": 1133510782,
+        "level_db": -5.0,
+        "clean": true,
+        "warnings": []
+      },
+      {
+        "role": "whoosh",
+        "sound": "whoosh_fast/heavy",
+        "at": 4.787,
+        "start": 4.337,
+        "seed": 1864245503,
+        "level_db": -7.0,
+        "clean": true,
+        "warnings": []
+      },
+      {
+        "role": "tick",
+        "sound": "pro_hover_tick/ping",
+        "at": 5.139,
+        "start": 5.138,
+        "seed": 2094108523,
+        "level_db": -12.0,
+        "clean": true,
+        "warnings": []
+      },
+      {
+        "role": "pop",
+        "sound": "pro_pop_in/round",
+        "at": 10.03,
+        "start": 10.029,
+        "seed": 276866903,
+        "level_db": -7.0,
+        "clean": true,
+        "warnings": []
+      },
+      {
+        "role": "pop",
+        "sound": "pro_pop_in/round",
+        "at": 11.03,
+        "start": 11.029,
+        "seed": 276882741,
+        "level_db": -7.0,
+        "clean": true,
+        "warnings": []
+      },
+      {
+        "role": "pop",
+        "sound": "pro_pop_in/round",
+        "at": 12.03,
+        "start": 12.029,
+        "seed": 276890660,
+        "level_db": -7.0,
+        "clean": true,
+        "warnings": []
+      },
+      {
+        "role": "whoosh",
+        "sound": "whoosh_fast/heavy",
+        "at": 15.187,
+        "start": 14.736,
+        "seed": 1864261341,
+        "level_db": -7.0,
+        "clean": true,
+        "warnings": []
+      },
+      {
+        "role": "ding",
+        "sound": "pro_notify/ding_1822",
+        "at": 15.789,
+        "start": 15.789,
+        "seed": 0,
+        "level_db": -10.0,
+        "clean": true,
+        "warnings": []
+      }
+    ],
+    "bed": null,
+    "mix": {
+      "peak_dbfs": -1.0,
+      "true_peak_dbtp": -0.99,
+      "lufs_i": -19.4
+    },
+    "formats": {
+      "reel": {
+        "file": "2026-09-19-glp-1-fitness-apps-body-composition-tracking-reel-sound.mp4",
+        "where": "3dlook-marketing-private/social-video/2026-09-19-glp-1-fitness-apps-body-composition-tracking/2026-09-19-glp-1-fitness-apps-body-composition-tracking-reel-sound.mp4",
+        "ratio": "9:16",
+        "use": "Instagram Reels / Stories",
+        "width": 1080,
+        "height": 1920,
+        "duration": 18.8,
+        "bytes": 4054253,
+        "sha256": "24fddcc73125eaf6",
+        "video_sha": "5a9dabfa72e5e6bf"
+      },
+      "feed": {
+        "file": "2026-09-19-glp-1-fitness-apps-body-composition-tracking-feed-sound.mp4",
+        "where": "3dlook-marketing-private/social-video/2026-09-19-glp-1-fitness-apps-body-composition-tracking/2026-09-19-glp-1-fitness-apps-body-composition-tracking-feed-sound.mp4",
+        "ratio": "4:5",
+        "use": "LinkedIn company page, Facebook, Instagram feed",
+        "width": 1080,
+        "height": 1350,
+        "duration": 18.8,
+        "bytes": 3572467,
+        "sha256": "99d148ddc96376a5",
+        "video_sha": "950608275876c043"
+      }
+    }
+  }
 }

@@ -15,7 +15,10 @@ say and pass. Everything else is code, same rule as social_pack.py:
     lint   <slug> [--json]    shape, lengths, numbers vs the pack's posts, AI-tells
     build  <slug>             fill the template into the build dir (no render)
     render <slug> [--format reel|feed|all] [--quality draft|looks|delivery]
-    notify <slug>             send the rendered MP4s to Vadim's Telegram
+    sound  <slug> [--format …] [--bed FILE] [--notify]
+                              OPTIONAL: the same MP4s with sound effects on the cuts
+                              (earshot bank, scripts/social_sound.py) → <slug>-<fmt>-sound.mp4
+    notify <slug> [--sound]   send the rendered MP4s to Vadim's Telegram
     status <slug>             JSON: copy / renders / stale
 
 Files:
@@ -73,6 +76,30 @@ SATOSHI = ("Regular", "Medium", "Bold", "Black")    # the weights the template u
 
 HF_VERSION = "0.9.1"            # pinned: a CLI upgrade changes renders; bump deliberately
 FPS = 30
+
+# --- sound (optional, 2026-11-16) -------------------------------------------------
+# The silent MP4 stays the pack's video; `sound` adds a second file with effects on
+# the template's own motion. earshot lives in its own venv without torch (pinned
+# 4ac3d2a = 0.4.1): `pip install --no-deps "earshot @ git+https://github.com/Leonxlnx/
+# earshot@4ac3d2a…"` + numpy scipy soundfile soxr pyloudnorm numba librosa.
+EARSHOT_PY = os.environ.get("EARSHOT_PYTHON") or str(Path.home() / ".local/share/earshot-venv/bin/python")
+SOUND_SCRIPT = os.path.join(HERE, "social_sound.py")
+# role → (earshot bank id, align, level dB under a -1 dBFS take, offset s from the
+# visual event). Ids and levels from earshot's `minimal` kit (effects-only films, no
+# music bed); offsets from its `launch` kit (medians measured on pro launch films:
+# a pop-in thump lands +30 ms after the move, a whoosh peak +37 ms, a click -11 ms).
+SOUND_PALETTE = {
+    "land":   ("pro_pop_in/deep", "onset", -5.0, 0.03),       # hook line arrives: low round thump
+    "whoosh": ("whoosh_fast/heavy", "peak", -7.0, 0.037),     # card change into stat / close
+    "tick":   ("pro_hover_tick/ping", "onset", -12.0, -0.011),  # the stat ruler starts to draw
+    "pop":    ("pro_pop_in/round", "onset", -7.0, 0.03),      # each keypoint's dot scales in
+    "ding":   ("pro_notify/ding_1822", "onset", -10.0, -0.011),  # the CTA button lands
+}
+WHOOSH_SHAPE = {"dur": 0.7, "apex": 0.45}   # builds through the outgoing card's fade
+# A music bed is optional and must carry a licence sidecar (<bed>.json: licence, title,
+# author, source_url). Company posts have no room for attribution, so only licences
+# that need none pass (Openverse filter: "Use commercially" + CC0 / Public Domain Mark).
+BED_LICENCES = {"cc0", "pdm"}
 DEFAULT_CTA = "Read the full article"
 
 FORMATS = {
@@ -594,7 +621,7 @@ def _git(*args, timeout=120):
                           capture_output=True, text=True, timeout=timeout)
 
 
-def commit_private(slug: str, report: dict):
+def commit_private(slug: str, report: dict, label: str = ""):
     """Commit and push this pack's renders in the private repo, and nothing else.
 
     `git commit -- <path>` takes only our folder even if someone left other changes
@@ -607,7 +634,7 @@ def commit_private(slug: str, report: dict):
     if not _git("diff", "--cached", "--quiet", "--", rel).returncode:
         return {"status": "unchanged"}
     ok = [f"{e['ratio']} {e['duration']} s" for e in report["formats"].values() if e.get("status") == "ok"]
-    msg = (f"social-video: {slug} ({', '.join(ok)})\n\n"
+    msg = (f"social-video: {slug}{label} ({', '.join(ok)})\n\n"
            f"Rendered by marketing_vb/scripts/social_video.py from "
            f"workspace/social/articles/{slug}/_video/video.json (public repo).")
     c = _git("commit", "-m", msg, "--", rel)
@@ -692,6 +719,135 @@ def render(slug: str, fmts, quality: str, commit: bool = True):
 
 
 # ---------------------------------------------------------------------------
+# sound (optional): effects on the template's own motion, muxed onto the silent MP4
+# ---------------------------------------------------------------------------
+
+def sound_cues(T: dict) -> list:
+    """Where the template moves (stat-reel.html's GSAP timeline), as sound cues.
+
+    Sparse on purpose: one thump as the hook lands, a whoosh into the stat and into
+    the close, a tick as the ruler draws, a pop per keypoint dot, a ding on the CTA.
+    No whoosh into the points card: its first pop comes 0.35 s after the cut."""
+    def cue(role, event_s, **shape):
+        sid, align, level, offset = SOUND_PALETTE[role]
+        return {"role": role, "sound": sid, "align": align, "level_db": level,
+                "at": round(event_s + offset, 3), **shape}
+    out = [cue("land", T["hook"]["start"] + 0.32)]
+    if "stat" in T:
+        out.append(cue("whoosh", T["stat"]["start"] + 0.15, **WHOOSH_SHAPE))
+        out.append(cue("tick", T["stat"]["start"] + 0.55))
+    out += [cue("pop", at) for at in T["points"]["items"]]
+    out.append(cue("whoosh", T["close"]["start"] + 0.15, **WHOOSH_SHAPE))
+    # the CTA's scale-in starts at +0.7 from opacity 0; it reads as "there" ~0.1 s later
+    # (frame check 2026-11-16: at +0.69 the button was still invisible)
+    out.append(cue("ding", T["close"]["start"] + 0.8))
+    return out
+
+
+def _bed_licence(path: str):
+    """(licence dict, error). The sidecar is <bed>.json or <bed stem>.json."""
+    cands = [path + ".json", os.path.splitext(path)[0] + ".json"]
+    side = next((p for p in cands if os.path.exists(p)), None)
+    if not side:
+        return None, (f"no licence sidecar for the bed ({cands[1]}): licence, title, author, "
+                      "source_url, read on the item's own page, not on the search result")
+    try:
+        lic = json.load(open(side, encoding="utf-8"))
+    except ValueError as e:
+        return None, f"{side}: {e}"
+    missing = [k for k in ("licence", "title", "author", "source_url") if not lic.get(k)]
+    if missing:
+        return None, f"{side}: missing {', '.join(missing)}"
+    if str(lic["licence"]).lower().replace(" ", "").replace("-", "") not in BED_LICENCES:
+        return None, (f"bed licence {lic['licence']!r} needs attribution or limits use; company posts "
+                      f"take only {sorted(BED_LICENCES)}")
+    return {k: lic[k] for k in ("licence", "title", "author", "source_url")}, None
+
+
+def _has_audio(path: str) -> bool:
+    p = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "a", "-show_entries",
+                        "stream=codec_name", "-of", "csv=p=0", path], capture_output=True, text=True)
+    return bool(p.stdout.strip())
+
+
+def sound(slug: str, fmts, bed: str | None = None, bed_start: float = 0.0, commit: bool = True):
+    """Mix the effects once (both shapes share the timings) and mux them onto each render."""
+    if not os.path.exists(EARSHOT_PY):
+        return {"error": f"earshot venv not found at {EARSHOT_PY} (set EARSHOT_PYTHON)"}, 1
+    s = summary(slug)
+    if s.get("error"):
+        return {"error": s["error"]}, 1
+    if s.get("stale"):
+        return {"error": "the renders are older than video.json or the template; render again first"}, 1
+    have = [f for f in fmts if f in s.get("formats", {})]
+    if not have:
+        return {"error": f"nothing rendered for {slug} in {fmts}; run `render` first"}, 1
+    T = timings(s["spec"])
+    work = BUILD_ROOT / slug / "sound"
+    work.mkdir(parents=True, exist_ok=True)
+    job = {"total": T["total"], "out": str(work / "mix.wav"), "cues": sound_cues(T),
+           "bed": None, "target_lufs": -14.0, "true_peak_db": -1.0}
+    lic = None
+    if bed:
+        lic, err = _bed_licence(bed)
+        if err:
+            return {"error": err}, 1
+        wav = work / "bed.wav"
+        c = subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(bed_start), "-i", bed,
+                            "-t", str(T["total"]), "-ar", "48000", "-ac", "2", str(wav)],
+                           capture_output=True, text=True)
+        if c.returncode:
+            return {"error": f"bed decode failed: {c.stderr[-400:]}"}, 1
+        job["bed"] = {"path": str(wav), "lufs": -24.0, "fade_in": 0.4, "fade_out": 1.2}
+        lic = {**lic, "file": os.path.basename(bed), "start_s": bed_start}
+    (work / "job.json").write_text(json.dumps(job, indent=2), encoding="utf-8")
+    r = subprocess.run([EARSHOT_PY, "-I", SOUND_SCRIPT, str(work / "job.json")],
+                       capture_output=True, text=True, timeout=600,
+                       env=dict(os.environ, EARSHOT_OFFLINE="1", HF_HUB_OFFLINE="1"))
+    mix = _json_tail(r.stdout)
+    if r.returncode or not mix:
+        return {"error": "mix failed", "log": (r.stdout + r.stderr)[-1500:]}, 1
+
+    meta_p = render_meta_path(slug)
+    meta = json.load(open(meta_p, encoding="utf-8"))
+    snd = {"rendered_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+           "earshot": mix.get("earshot"), "cues": mix["cues"], "bed": lic,
+           "mix": {k: mix.get(k) for k in ("peak_dbfs", "true_peak_dbtp", "lufs_i")},
+           "formats": dict((meta.get("sound") or {}).get("formats") or {})}
+    report = {"mix": snd["mix"], "cues": len(mix["cues"]), "unclean": mix.get("unclean"),
+              "bed": lic, "formats": {}}
+    rc = 0
+    for fmt in have:
+        silent = os.path.join(mp4_dir(slug), s["formats"][fmt]["file"])
+        dst = os.path.join(mp4_dir(slug), f"{slug}-{fmt}-sound.mp4")
+        c = subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", silent, "-i", job["out"],
+                            "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy", "-c:a", "aac",
+                            "-b:a", "192k", "-ar", "48000", "-t", str(T["total"]),
+                            "-movflags", "+faststart", dst], capture_output=True, text=True)
+        dur, w, h = _probe(dst) if not c.returncode else (0, None, None)
+        if c.returncode or not _has_audio(dst) or abs(dur - T["total"]) > 0.15:
+            report["formats"][fmt] = {"status": "mux failed", "log": (c.stderr or f"{dur:.2f}s")[-400:]}
+            rc = 1
+            continue
+        e = s["formats"][fmt]
+        entry = {"file": os.path.basename(dst), "where": mp4_display(slug, os.path.basename(dst)),
+                 "ratio": e["ratio"], "use": e["use"], "width": w, "height": h,
+                 "duration": round(dur, 2), "bytes": os.path.getsize(dst), "sha256": _sha(dst),
+                 "video_sha": e["sha256"]}          # the silent render it was muxed onto
+        snd["formats"][fmt] = entry
+        report["formats"][fmt] = {"status": "ok", **entry}
+    if any(v.get("status") == "ok" for v in report["formats"].values()):
+        meta["sound"] = snd
+        json.dump(meta, open(meta_p, "w", encoding="utf-8"), indent=2)
+        open(meta_p, "a").write("\n")
+        if commit:
+            report["private_repo"] = commit_private(slug, report, label=" + sound")
+            if report["private_repo"]["status"] not in ("pushed", "unchanged", "skipped"):
+                rc = 1
+    return report, rc
+
+
+# ---------------------------------------------------------------------------
 # status (also read by social_pack.py for manifest / digest / report)
 # ---------------------------------------------------------------------------
 
@@ -715,6 +871,15 @@ def summary(slug: str) -> dict:
                 if e.get("spec_sha") != spec_now or e.get("template_sha") != tpl_now:
                     out["stale"] = True
         out["rendered_at"] = meta.get("rendered_at")
+        snd = meta.get("sound") or {}
+        sf = {f: e for f, e in (snd.get("formats") or {}).items()
+              if os.path.exists(os.path.join(mp4_dir(slug), e.get("file", "")))}
+        if sf:
+            # stale when the silent render under it changed since the mux
+            out["sound"] = {"formats": sf, "mix": snd.get("mix"), "bed": snd.get("bed"),
+                            "stale": out["stale"] or any(
+                                e.get("video_sha") != (out["formats"].get(f) or {}).get("sha256")
+                                for f, e in sf.items())}
     return out
 
 
@@ -735,8 +900,17 @@ def _tg_creds():
     return bot, chat
 
 
-def notify(slug: str) -> int:
+def notify(slug: str, with_sound: bool = False) -> int:
     s = summary(slug)
+    if with_sound:
+        snd = s.get("sound") or {}
+        if not snd.get("formats"):
+            print(f"✗ no sound version for `{slug}`; run `sound` first", file=sys.stderr)
+            return 1
+        if snd.get("stale"):
+            print("✗ the sound version is older than the render under it; run `sound` again", file=sys.stderr)
+            return 1
+        s = {**s, "formats": snd["formats"], "stale": False}
     if not s.get("formats"):
         print(f"✗ nothing rendered for `{slug}`", file=sys.stderr)
         return 1
@@ -753,7 +927,8 @@ def notify(slug: str) -> int:
         e = s["formats"].get(fmt)
         if not e:
             continue
-        cap = (f"🎬 {slug}: {e['ratio']}, {e['duration']:.0f} с, для {e['use']}.\n"
+        cap = (f"🎬 {slug}: {e['ratio']}, {e['duration']:.0f} с, для {e['use']}"
+               f"{', зі звуком (earshot)' if with_sound else ''}.\n"
                f"Хук: {spec.get('hook', '')}\n"
                f"Текст: workspace/social/articles/{slug}/_video/video.json. Апрув разом з дайджестом.")
         # token through --config on stdin, never argv: /proc is world-readable
@@ -790,7 +965,14 @@ def main(argv=None) -> int:
     p.add_argument("--quality", choices=["draft", "looks", "delivery"], default="delivery")
     p.add_argument("--no-commit", action="store_true",
                    help="do not commit+push the MP4s in the private repo (iterating)")
+    p = sub.add_parser("sound"); p.add_argument("slug")
+    p.add_argument("--format", choices=[*FORMATS, "all"], default="all")
+    p.add_argument("--bed", help="optional music bed (CC0 / PDM only, with a <bed>.json licence sidecar)")
+    p.add_argument("--bed-start", type=float, default=0.0, help="seconds into the bed to start from")
+    p.add_argument("--no-commit", action="store_true")
+    p.add_argument("--notify", action="store_true", help="send the sound versions to Telegram")
     p = sub.add_parser("notify"); p.add_argument("slug")
+    p.add_argument("--sound", action="store_true", help="send the sound versions instead")
     p = sub.add_parser("status"); p.add_argument("slug")
     a = ap.parse_args(argv)
 
@@ -842,8 +1024,16 @@ def main(argv=None) -> int:
         print(json.dumps(rep, indent=2, ensure_ascii=False))
         return rc
 
+    if a.cmd == "sound":
+        fmts = list(FORMATS) if a.format == "all" else [a.format]
+        rep, rc = sound(a.slug, fmts, a.bed, a.bed_start, commit=not a.no_commit)
+        print(json.dumps(rep, indent=2, ensure_ascii=False))
+        if not rc and a.notify:
+            rc = notify(a.slug, with_sound=True)
+        return rc
+
     if a.cmd == "notify":
-        return notify(a.slug)
+        return notify(a.slug, with_sound=a.sound)
 
     if a.cmd == "status":
         print(json.dumps(summary(a.slug), indent=2, ensure_ascii=False))
