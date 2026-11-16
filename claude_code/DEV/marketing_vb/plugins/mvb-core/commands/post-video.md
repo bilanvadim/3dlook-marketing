@@ -23,9 +23,11 @@ hand-edit the template's filled copies: the template is
    python3 scripts/social_video.py status $1
    ```
 
-   Both `reel` and `feed` under `formats` and `"stale": false` → the video is current:
-   go to step 5 only if Vadim asked for it to be sent again, otherwise stop and say so.
-   `copy` present but stale or unrendered → go to step 3.
+   Both `reel` and `feed` under `formats`, `"stale": false`, and the same two under
+   `sound.formats` with `sound.stale` false → the video is current: go to step 5 only
+   if Vadim asked for it to be sent again, otherwise stop and say so. Renders current
+   but `sound` missing or stale → run only the `sound` line of step 3, then go on to
+   step 4. `copy` present but stale or unrendered → go to step 3.
 
 2. **The copy.**
 
@@ -45,6 +47,7 @@ hand-edit the template's filled copies: the template is
    ```bash
    python3 scripts/social_video.py lint $1
    python3 scripts/social_video.py render $1
+   python3 scripts/social_video.py sound $1
    ```
 
    Lint exit 1 → one follow-up to the same `post-drafter` quoting the lint lines (two
@@ -54,6 +57,11 @@ hand-edit the template's filled copies: the template is
    `check failed` result means a line does not fit its card: send the findings to the
    drafter once, then render again.
 
+   `sound` (since 2026-11-16) muxes a music bed and effects into
+   `<slug>-<fmt>-sound.mp4` in about ten seconds and commits them itself. `lufs_i` near
+   -14 and `true_peak_dbtp` -1.0 are normal; report `limiter_warning: true` or a
+   non-empty `unclean`. If it fails, the silent MP4s stay the video: say so, go on.
+
 4. **Re-assemble the pack** so the digest and the report carry the video:
 
    ```bash
@@ -62,7 +70,7 @@ hand-edit the template's filled copies: the template is
    python3 scripts/social_pack.py report   $1 --write
    ```
 
-5. **Send it.**
+5. **Send it** (the sound versions when they are fresh, else the silent ones).
 
    ```bash
    python3 scripts/social_video.py notify $1
@@ -79,6 +87,6 @@ hand-edit the template's filled copies: the template is
    checkout). `pushed` or `unchanged` is done; `committed, push failed` or any other
    status goes in the FIRST line of your summary. The commit hash goes in the summary.
 
-7. **Summary:** the hook, which post's angle it came from, both durations, lint and
-   render state, the commit hash. Read `_video/reel-sheet.jpg` (one frame per card) before you write it
+7. **Summary:** the hook, which post's angle it came from, both durations, lint,
+   render and sound state (track, LUFS), the commit hash. Read `_video/reel-sheet.jpg` (one frame per card) before you write it
    and say if any card looks wrong.

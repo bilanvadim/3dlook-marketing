@@ -151,6 +151,19 @@ directory listing when a subcommand answers the same question.
    drafter once, then render again. The video never blocks the pack: after two failed
    rounds, record what failed in your summary and go on to step 8.
 
+   Then the sound version (added 2026-11-16, Vadim: «дозволяю музику»): a music bed
+   from the private library, its start fitted to the beat grid, and effects on the
+   template's motion, muxed into `<slug>-<fmt>-sound.mp4` next to the silent MP4s.
+
+   ```bash
+   python3 scripts/social_video.py sound $1
+   ```
+
+   About ten seconds, no model. It commits the two files to the private repo itself.
+   Read `mix` in its output: `lufs_i` near -14 and `true_peak_dbtp` at -1.0 are normal;
+   say in your summary if `limiter_warning` is true or `unclean` is not empty. A failure
+   never blocks the pack either: the silent MP4s stay the video, note it and go on.
+
 8. **Assemble.**
 
    ```bash
@@ -171,7 +184,8 @@ directory listing when a subcommand answers the same question.
    2026-09-20): the designer builds each visual from the post's Design tip in the
    digest. The digest and the report pick up the video from `_video/` on their own.
 
-   When the report says `Video: rendered ✅`, send the two MP4s to Vadim:
+   When the report says `Video: rendered ✅`, send the two MP4s to Vadim (the sound
+   versions when `sound` succeeded, the silent ones otherwise; `notify` picks):
 
    ```bash
    python3 scripts/social_video.py notify $1
@@ -190,5 +204,5 @@ directory listing when a subcommand answers the same question.
 
 10. **Final self-check before your summary** — the same check the Stop hook makes:
    every active profile has a `post.md` and `publish-report.md` says N/N. Report the
-   angle map, lint state, QC scores, the video's hook and render state, the commit
+   angle map, lint state, QC scores, the video's hook, render and sound state, the commit
    hash, and anything you left unresolved.

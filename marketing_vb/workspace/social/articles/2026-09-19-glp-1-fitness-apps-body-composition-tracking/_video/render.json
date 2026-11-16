@@ -35,95 +35,144 @@
   "hyperframes": "0.9.1",
   "url": "3dlook.ai/content-hub/glp-1-muscle-loss-fitness-apps",
   "sound": {
-    "rendered_at": "2026-11-16T14:24:18+00:00",
+    "rendered_at": "2026-11-16T15:01:22+00:00",
     "earshot": "0.4.1",
     "cues": [
       {
         "role": "land",
-        "sound": "pro_pop_in/deep",
+        "sound": "pro_pop_in/round",
         "at": 0.35,
         "start": 0.349,
-        "seed": 1133510782,
-        "level_db": -5.0,
+        "end": 0.52,
+        "seed": 276866903,
+        "gain_db": -12.3,
+        "bed_db": 8.0,
         "clean": true,
-        "warnings": []
+        "warnings": [],
+        "over_bed_db": 10.8
       },
       {
         "role": "whoosh",
-        "sound": "whoosh_fast/heavy",
+        "sound": "whoosh_fast/crisp",
         "at": 4.787,
-        "start": 4.337,
-        "seed": 1864245503,
-        "level_db": -7.0,
+        "start": 4.338,
+        "end": 5.038,
+        "seed": 420116625,
+        "gain_db": -5.32,
+        "bed_db": 9.0,
         "clean": true,
-        "warnings": []
+        "warnings": [],
+        "over_bed_db": 8.3
       },
       {
         "role": "tick",
         "sound": "pro_hover_tick/ping",
-        "at": 5.139,
-        "start": 5.138,
+        "at": 5.15,
+        "start": 5.149,
+        "end": 5.188,
         "seed": 2094108523,
-        "level_db": -12.0,
+        "gain_db": -2.65,
+        "bed_db": 3.0,
         "clean": true,
-        "warnings": []
+        "warnings": [],
+        "capped_db": 5.4
       },
       {
         "role": "pop",
-        "sound": "pro_pop_in/round",
-        "at": 10.03,
-        "start": 10.029,
-        "seed": 276866903,
-        "level_db": -7.0,
+        "sound": "ui_pop/soft",
+        "at": 10.004,
+        "start": 10.002,
+        "end": 10.182,
+        "seed": 1,
+        "gain_db": -6.13,
+        "bed_db": 8.5,
         "clean": true,
-        "warnings": []
+        "warnings": [],
+        "over_bed_db": 7.6
       },
       {
         "role": "pop",
-        "sound": "pro_pop_in/round",
-        "at": 11.03,
-        "start": 11.029,
-        "seed": 276882741,
-        "level_db": -7.0,
+        "sound": "ui_pop/soft",
+        "at": 11.004,
+        "start": 11.002,
+        "end": 11.187,
+        "seed": 15839,
+        "gain_db": -5.0,
+        "bed_db": 8.5,
         "clean": true,
-        "warnings": []
+        "warnings": [],
+        "capped_db": 0.2,
+        "over_bed_db": 6.2
       },
       {
         "role": "pop",
-        "sound": "pro_pop_in/round",
-        "at": 12.03,
-        "start": 12.029,
-        "seed": 276890660,
-        "level_db": -7.0,
+        "sound": "ui_pop/soft",
+        "at": 12.004,
+        "start": 12.002,
+        "end": 12.184,
+        "seed": 23758,
+        "gain_db": -6.3,
+        "bed_db": 8.5,
         "clean": true,
-        "warnings": []
+        "warnings": [],
+        "over_bed_db": 8.1
       },
       {
         "role": "whoosh",
-        "sound": "whoosh_fast/heavy",
+        "sound": "whoosh_fast/crisp",
         "at": 15.187,
         "start": 14.736,
-        "seed": 1864261341,
-        "level_db": -7.0,
+        "end": 15.436,
+        "seed": 420132463,
+        "gain_db": -6.27,
+        "bed_db": 9.0,
         "clean": true,
-        "warnings": []
+        "warnings": [],
+        "over_bed_db": 8.4
       },
       {
         "role": "ding",
-        "sound": "pro_notify/ding_1822",
-        "at": 15.789,
-        "start": 15.789,
-        "seed": 0,
-        "level_db": -10.0,
+        "sound": "notify/mid_tine",
+        "at": 15.8,
+        "start": 15.796,
+        "end": 16.221,
+        "seed": 1,
+        "gain_db": -6.4,
+        "bed_db": 8.5,
         "clean": true,
-        "warnings": []
+        "warnings": [],
+        "over_bed_db": 7.8
       }
     ],
-    "bed": null,
+    "bed": {
+      "licence": "CC BY 4.0",
+      "title": "Happy Beats / Business Moves Vol. 1",
+      "author": "Sascha Ende",
+      "source_url": "https://ende.app/en",
+      "file": "happy-beats-business-moves-vol-1-by-ende-dot-app.mp3",
+      "start_s": 47.72,
+      "beat_fit": {
+        "start_s": 47.72,
+        "tempo_bpm": 120.19,
+        "mean_miss_ms": 86,
+        "window_intensity": 0.95,
+        "miss_ms": {
+          "land@0.35": 51,
+          "whoosh@4.787": 5,
+          "tick@5.15": 141,
+          "pop@10.004": 208,
+          "pop@11.004": 210,
+          "pop@12.004": 200,
+          "whoosh@15.187": 112,
+          "ding@15.8": 2
+        }
+      }
+    },
     "mix": {
-      "peak_dbfs": -1.0,
-      "true_peak_dbtp": -0.99,
-      "lufs_i": -19.4
+      "peak_dbfs": -1.01,
+      "true_peak_dbtp": -1.0,
+      "lufs_i": -14.1,
+      "limiter_max_db": 3.0
     },
     "formats": {
       "reel": {
@@ -134,8 +183,8 @@
         "width": 1080,
         "height": 1920,
         "duration": 18.8,
-        "bytes": 4054253,
-        "sha256": "24fddcc73125eaf6",
+        "bytes": 4437809,
+        "sha256": "d02218c1a39b692d",
         "video_sha": "5a9dabfa72e5e6bf"
       },
       "feed": {
@@ -146,8 +195,8 @@
         "width": 1080,
         "height": 1350,
         "duration": 18.8,
-        "bytes": 3572467,
-        "sha256": "99d148ddc96376a5",
+        "bytes": 3956023,
+        "sha256": "7a6e6c1bfe66c9b7",
         "video_sha": "950608275876c043"
       }
     }

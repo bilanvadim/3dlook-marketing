@@ -232,7 +232,7 @@
 | Brand voice (пост) | `post-brand-checker` | 10/13-пунктный чек одного поста |
 | QC (пост) | `post-quality-controller` | 20-балльная рубрика, выборка 3 из 9, sonnet, §14 |
 | Сборка пака | `scripts/social_pack.py` | source · brief · prompt · qc-prompt · qc-plan · manifest · digest · report · scores |
-| Видео пака | `scripts/social_video.py` | 15-20 с, 9:16 + 4:5, текст пишет `post-drafter` из финальных постов, рендер HyperFrames по `brand-assets/video/stat-reel.html`; шаг 7 `/post-batch`, для готовых паков `/post-video`. Пак не блокирует. Опционально `sound` — эффекты earshot на склейках, отдельный `-sound.mp4` (`docs/social-workflow.md`) |
+| Видео пака | `scripts/social_video.py` | 15-20 с, 9:16 + 4:5, текст пишет `post-drafter` из финальных постов, рендер HyperFrames по `brand-assets/video/stat-reel.html`; шаг 7 `/post-batch`, для готовых паков `/post-video`. Пак не блокирует. Затем `sound`: музыка из приватной библиотеки (CC BY без кредита — решение Вадима 2026-11-16) + эффекты earshot, отдельный `-sound.mp4`, `notify` шлёт его (`docs/social-workflow.md`) |
 | Дизайнер | Человек | Делает визуал сам, по `### Design tip` каждого поста в дайджесте (шаг `visual-brief` удалён 2026-09-20, решение Вадима: «дизайнер сам это делает») |
 | Апрувер | Вадим (через Telegram) | Чекпоинты social и outbound. **SEO-статьи с 2026-09-21 идут без остановок** (plan → publish → git commit+push одним прогоном); Вадим ревьюит пост-фактум по финальному дайджесту и коммиту — см. `.claude/commands/new-article.md` «Режим без чекпоинтов» |
 | Outbound | пайплайн `outbound/*` | Hypothesis → ... → Campaign analysis |

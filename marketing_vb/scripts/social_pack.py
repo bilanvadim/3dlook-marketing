@@ -1347,6 +1347,16 @@ def build_digest(slug: str):
             vb += [f"**{e.get('ratio')}** ({e.get('duration')} s, {e.get('use')}): "
                    f"`{e.get('where') or '_video/' + str(e.get('file'))}` · "
                    f"frames `_video/{e.get('sheet')}`", ""]
+        snd = v.get("sound") or {}
+        if snd.get("formats"):                    # since 2026-11-16: music bed + effects
+            bed, mx = snd.get("bed") or {}, snd.get("mix") or {}
+            vb += [("⚠️ Sound is older than the render: "
+                    f"`python3 scripts/social_video.py sound {slug}`." if snd.get("stale") else
+                    f"**Sound:** {bed.get('title') or 'effects only'}"
+                    f"{' (' + bed['author'] + ', ' + bed['licence'] + ', no credit shown)' if bed.get('author') else ''}"
+                    f" · {mx.get('lufs_i')} LUFS · "
+                    + " · ".join(f"`{e.get('where') or e.get('file')}`"
+                                 for _, e in sorted(snd["formats"].items()))), ""]
         parts.append("\n".join(vb))
     elif v.get("error"):
         parts.append(f"## Video (HyperFrames)\n\n⚠️ {v['error']}\n")

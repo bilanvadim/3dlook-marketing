@@ -15,10 +15,13 @@ say and pass. Everything else is code, same rule as social_pack.py:
     lint   <slug> [--json]    shape, lengths, numbers vs the pack's posts, AI-tells
     build  <slug>             fill the template into the build dir (no render)
     render <slug> [--format reel|feed|all] [--quality draft|looks|delivery]
-    sound  <slug> [--format …] [--bed FILE] [--notify]
-                              OPTIONAL: the same MP4s with sound effects on the cuts
-                              (earshot bank, scripts/social_sound.py) → <slug>-<fmt>-sound.mp4
-    notify <slug> [--sound]   send the rendered MP4s to Vadim's Telegram
+    sound  <slug> [--format …] [--bed FILE | --no-music] [--bed-start S] [--notify]
+                              the same MP4s with a music bed (the pack's track from
+                              <private>/audio/beds, its start fitted to the beat grid) and
+                              effects on the template's motion (earshot bank,
+                              scripts/social_sound.py) → <slug>-<fmt>-sound.mp4
+    notify <slug> [--sound | --silent]
+                              send the MP4s to Vadim's Telegram (sound versions when fresh)
     status <slug>             JSON: copy / renders / stale
 
 Files:
@@ -77,29 +80,45 @@ SATOSHI = ("Regular", "Medium", "Bold", "Black")    # the weights the template u
 HF_VERSION = "0.9.1"            # pinned: a CLI upgrade changes renders; bump deliberately
 FPS = 30
 
-# --- sound (optional, 2026-11-16) -------------------------------------------------
-# The silent MP4 stays the pack's video; `sound` adds a second file with effects on
+# --- sound (2026-11-16) -------------------------------------------------------------
+# The silent MP4 stays; `sound` adds <slug>-<fmt>-sound.mp4: a music bed plus effects on
 # the template's own motion. earshot lives in its own venv without torch (pinned
 # 4ac3d2a = 0.4.1): `pip install --no-deps "earshot @ git+https://github.com/Leonxlnx/
 # earshot@4ac3d2a…"` + numpy scipy soundfile soxr pyloudnorm numba librosa.
 EARSHOT_PY = os.environ.get("EARSHOT_PYTHON") or str(Path.home() / ".local/share/earshot-venv/bin/python")
 SOUND_SCRIPT = os.path.join(HERE, "social_sound.py")
 # role → (earshot bank id, align, level dB under a -1 dBFS take, offset s from the
-# visual event). Ids and levels from earshot's `minimal` kit (effects-only films, no
-# music bed); offsets from its `launch` kit (medians measured on pro launch films:
-# a pop-in thump lands +30 ms after the move, a whoosh peak +37 ms, a click -11 ms).
-SOUND_PALETTE = {
-    "land":   ("pro_pop_in/deep", "onset", -5.0, 0.03),       # hook line arrives: low round thump
-    "whoosh": ("whoosh_fast/heavy", "peak", -7.0, 0.037),     # card change into stat / close
-    "tick":   ("pro_hover_tick/ping", "onset", -12.0, -0.011),  # the stat ruler starts to draw
-    "pop":    ("pro_pop_in/round", "onset", -7.0, 0.03),      # each keypoint's dot scales in
-    "ding":   ("pro_notify/ding_1822", "onset", -10.0, -0.011),  # the CTA button lands
+# visual event, bed_db = the effect's loudest 50 ms over the music just before it).
+# Offsets and bed_db are earshot's `launch` kit (medians measured on pro launch films
+# cut to music); with music the ids are that kit's too. Without music (--no-music) the
+# ids and levels come from its `minimal` kit, made for effects-only films.
+SOUND_PALETTES = {
+    "music": {
+        "land":   ("pro_pop_in/round", "onset", -5.5, 0.03, 8.0),     # hook line arrives
+        "whoosh": ("whoosh_fast/crisp", "peak", -5.5, 0.037, 9.0),    # card change into stat / close
+        "tick":   ("pro_hover_tick/ping", "onset", 0.0, 0.0, 3.0),    # the stat ruler starts to draw
+        "pop":    ("ui_pop/soft", "onset", -8.0, 0.004, 8.5),         # each keypoint's dot scales in
+        "ding":   ("notify/mid_tine", "onset", -8.5, 0.0, 8.5),       # the CTA button lands
+    },
+    "fx-only": {
+        "land":   ("pro_pop_in/deep", "onset", -5.0, 0.03, None),
+        "whoosh": ("whoosh_fast/heavy", "peak", -7.0, 0.037, None),
+        "tick":   ("pro_hover_tick/ping", "onset", -12.0, -0.011, None),
+        "pop":    ("pro_pop_in/round", "onset", -7.0, 0.03, None),
+        "ding":   ("pro_notify/ding_1822", "onset", -10.0, -0.011, None),
+    },
 }
 WHOOSH_SHAPE = {"dur": 0.7, "apex": 0.45}   # builds through the outgoing card's fade
-# A music bed is optional and must carry a licence sidecar (<bed>.json: licence, title,
-# author, source_url). Company posts have no room for attribution, so only licences
-# that need none pass (Openverse filter: "Use commercially" + CC0 / Public Domain Mark).
-BED_LICENCES = {"cc0", "pdm"}
+# Music beds: <private>/audio/beds/<stem>.mp3 + <stem>.json (licence sidecar: licence,
+# title, author, source_url) + optional <stem>.music-cues.json (beat grid, the /brag
+# format). The five Sascha Ende tracks there came with github.com/latent-spaces/brag.
+# Licences: CC0, PDM and plain CC BY. Vadim 2026-11-16: «дозволяю музику і не треба
+# зазначати автора»: CC BY music runs without an on-screen or caption credit (the
+# author calls credit optional). NC / ND / SA stay out: commercial posts, no share-alike.
+BEDS_DIR = PRIVATE_ROOT / "audio" / "beds"
+BED_LICENCE_RE = re.compile(r"^(cc0(10)?|pdm|publicdomain(mark)?|ccby([1-4]0)?)$")
+# cue weights for lining the music's beats up with the picture: card changes matter most
+BEAT_WEIGHTS = {"whoosh": 3.0, "ding": 2.0, "land": 1.5, "pop": 1.0, "tick": 0.5}
 DEFAULT_CTA = "Read the full article"
 
 FORMATS = {
@@ -719,18 +738,20 @@ def render(slug: str, fmts, quality: str, commit: bool = True):
 
 
 # ---------------------------------------------------------------------------
-# sound (optional): effects on the template's own motion, muxed onto the silent MP4
+# sound: a music bed + effects on the template's own motion, muxed onto the silent MP4
 # ---------------------------------------------------------------------------
 
-def sound_cues(T: dict) -> list:
+def sound_cues(T: dict, palette: str = "music") -> list:
     """Where the template moves (stat-reel.html's GSAP timeline), as sound cues.
 
     Sparse on purpose: one thump as the hook lands, a whoosh into the stat and into
     the close, a tick as the ruler draws, a pop per keypoint dot, a ding on the CTA.
     No whoosh into the points card: its first pop comes 0.35 s after the cut."""
+    pal = SOUND_PALETTES[palette]
+
     def cue(role, event_s, **shape):
-        sid, align, level, offset = SOUND_PALETTE[role]
-        return {"role": role, "sound": sid, "align": align, "level_db": level,
+        sid, align, level, offset, bed_db = pal[role]
+        return {"role": role, "sound": sid, "align": align, "level_db": level, "bed_db": bed_db,
                 "at": round(event_s + offset, 3), **shape}
     out = [cue("land", T["hook"]["start"] + 0.32)]
     if "stat" in T:
@@ -758,10 +779,77 @@ def _bed_licence(path: str):
     missing = [k for k in ("licence", "title", "author", "source_url") if not lic.get(k)]
     if missing:
         return None, f"{side}: missing {', '.join(missing)}"
-    if str(lic["licence"]).lower().replace(" ", "").replace("-", "") not in BED_LICENCES:
-        return None, (f"bed licence {lic['licence']!r} needs attribution or limits use; company posts "
-                      f"take only {sorted(BED_LICENCES)}")
+    if not BED_LICENCE_RE.match(re.sub(r"[\s.\-_]", "", str(lic["licence"]).lower())):
+        return None, (f"bed licence {lic['licence']!r} is not CC0 / PDM / plain CC BY: "
+                      "NC, ND and SA are out for company posts")
     return {k: lic[k] for k in ("licence", "title", "author", "source_url")}, None
+
+
+def bed_library():
+    """[(audio path, licence, beat grid or None)] for every bed whose sidecar passes."""
+    out = []
+    if not BEDS_DIR.is_dir():
+        return out
+    for p in sorted(BEDS_DIR.iterdir()):
+        if p.suffix.lower() not in (".mp3", ".wav", ".flac", ".ogg", ".m4a"):
+            continue
+        lic, err = _bed_licence(str(p))
+        if err:
+            continue
+        cj = p.with_name(p.stem + ".music-cues.json")
+        try:
+            grid = json.load(open(cj, encoding="utf-8")) if cj.exists() else None
+        except ValueError:
+            grid = None
+        out.append((str(p), lic, grid))
+    return out
+
+
+def beat_fit(grid: dict, cues: list, total: float, step: float = 0.01) -> dict:
+    """Where in the track to start so its beats land on the picture's cues.
+
+    One free number: the start s. Cue c sounds at music time s + c.at; its miss is the
+    distance to the nearest beat. Score = weighted mean miss as a share of the beat
+    period, minus half the mean beat intensity of the window (a loud, busy part beats
+    a quiet intro). The card timings come from the copy, not from the music, so the
+    pops (1.0 s apart) cannot all sit on a ~0.55 s grid; the whooshes and the ding
+    weigh most (BEAT_WEIGHTS)."""
+    import bisect
+    beats = [(float(b["time"]), float(b.get("intensity") or 0)) for b in grid.get("beats") or []]
+    times = [b[0] for b in beats]
+    dur = float(grid.get("duration") or (times[-1] if times else 0))
+    if len(times) < 8 or dur < total + 1.0:
+        return {}
+    period = (times[-1] - times[0]) / (len(times) - 1)
+    w = [(c["at"], BEAT_WEIGHTS.get(c["role"], 1.0)) for c in cues]
+    wsum = sum(x for _, x in w)
+
+    def miss(m):
+        i = bisect.bisect_left(times, m)
+        return min(abs(m - times[j]) for j in (i - 1, i) if 0 <= j < len(times))
+    best = None
+    s = 0.0
+    while s <= dur - total - 0.5:
+        err = sum(x * miss(s + at) for at, x in w) / wsum
+        lo, hi = bisect.bisect_left(times, s), bisect.bisect_right(times, s + total)
+        inten = sum(b[1] for b in beats[lo:hi]) / max(1, hi - lo)
+        score = err / period - 0.5 * inten
+        if best is None or score < best[0]:
+            best = (score, s, err, inten)
+        s = round(s + step, 3)
+    _, s, err, inten = best
+    return {"start_s": s, "tempo_bpm": grid.get("tempo"), "mean_miss_ms": round(err * 1000),
+            "window_intensity": round(inten, 2),
+            "miss_ms": {f"{c['role']}@{c['at']}": round(miss(s + c["at"]) * 1000) for c in cues}}
+
+
+def pick_bed(slug: str):
+    """The pack's track: stable per slug (packs rotate through the library, a re-run
+    keeps its music). None when the library is empty."""
+    lib = bed_library()
+    if not lib:
+        return None
+    return lib[int(hashlib.sha256(slug.encode()).hexdigest(), 16) % len(lib)]
 
 
 def _has_audio(path: str) -> bool:
@@ -770,8 +858,11 @@ def _has_audio(path: str) -> bool:
     return bool(p.stdout.strip())
 
 
-def sound(slug: str, fmts, bed: str | None = None, bed_start: float = 0.0, commit: bool = True):
-    """Mix the effects once (both shapes share the timings) and mux them onto each render."""
+def sound(slug: str, fmts, bed: str | None = "auto", bed_start: float | None = None, commit: bool = True):
+    """Mix once (both shapes share the timings) and mux onto each render.
+
+    bed: "auto" = the pack's track from the library (pick_bed), a path = that file
+    (it needs a passing licence sidecar), None = effects only."""
     if not os.path.exists(EARSHOT_PY):
         return {"error": f"earshot venv not found at {EARSHOT_PY} (set EARSHOT_PYTHON)"}, 1
     s = summary(slug)
@@ -785,21 +876,33 @@ def sound(slug: str, fmts, bed: str | None = None, bed_start: float = 0.0, commi
     T = timings(s["spec"])
     work = BUILD_ROOT / slug / "sound"
     work.mkdir(parents=True, exist_ok=True)
-    job = {"total": T["total"], "out": str(work / "mix.wav"), "cues": sound_cues(T),
-           "bed": None, "target_lufs": -14.0, "true_peak_db": -1.0}
-    lic = None
-    if bed:
+    lic, grid, note = None, None, None
+    if bed == "auto":
+        got = pick_bed(slug)
+        if got:
+            bed, lic, grid = got
+        else:
+            bed, note = None, f"no music library at {BEDS_DIR}: effects only"
+    elif bed:
         lic, err = _bed_licence(bed)
         if err:
             return {"error": err}, 1
+        cj = Path(bed).with_name(Path(bed).stem + ".music-cues.json")
+        grid = json.load(open(cj, encoding="utf-8")) if cj.exists() else None
+    cues = sound_cues(T, "music" if bed else "fx-only")
+    job = {"total": T["total"], "out": str(work / "mix.wav"), "cues": cues,
+           "bed": None, "target_lufs": -14.0, "true_peak_db": -1.0}
+    if bed:
+        fit = beat_fit(grid, cues, T["total"]) if (grid and bed_start is None) else {}
+        start = bed_start if bed_start is not None else fit.get("start_s", 0.0)
         wav = work / "bed.wav"
-        c = subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(bed_start), "-i", bed,
+        c = subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(start), "-i", bed,
                             "-t", str(T["total"]), "-ar", "48000", "-ac", "2", str(wav)],
                            capture_output=True, text=True)
         if c.returncode:
             return {"error": f"bed decode failed: {c.stderr[-400:]}"}, 1
-        job["bed"] = {"path": str(wav), "lufs": -24.0, "fade_in": 0.4, "fade_out": 1.2}
-        lic = {**lic, "file": os.path.basename(bed), "start_s": bed_start}
+        job["bed"] = {"path": str(wav), "fade_in": 0.3, "fade_out": 1.2}
+        lic = {**lic, "file": os.path.basename(bed), "start_s": start, "beat_fit": fit or None}
     (work / "job.json").write_text(json.dumps(job, indent=2), encoding="utf-8")
     r = subprocess.run([EARSHOT_PY, "-I", SOUND_SCRIPT, str(work / "job.json")],
                        capture_output=True, text=True, timeout=600,
@@ -812,10 +915,12 @@ def sound(slug: str, fmts, bed: str | None = None, bed_start: float = 0.0, commi
     meta = json.load(open(meta_p, encoding="utf-8"))
     snd = {"rendered_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
            "earshot": mix.get("earshot"), "cues": mix["cues"], "bed": lic,
-           "mix": {k: mix.get(k) for k in ("peak_dbfs", "true_peak_dbtp", "lufs_i")},
+           "mix": {k: mix.get(k) for k in ("peak_dbfs", "true_peak_dbtp", "lufs_i", "limiter_max_db")},
            "formats": dict((meta.get("sound") or {}).get("formats") or {})}
     report = {"mix": snd["mix"], "cues": len(mix["cues"]), "unclean": mix.get("unclean"),
-              "bed": lic, "formats": {}}
+              "over_bed_db": {f"{c['role']}@{c['at']}": c.get("over_bed_db") for c in mix["cues"]
+                              if c.get("over_bed_db") is not None} or None,
+              "limiter_warning": mix.get("limiter_warning"), "bed": lic, "note": note, "formats": {}}
     rc = 0
     for fmt in have:
         silent = os.path.join(mp4_dir(slug), s["formats"][fmt]["file"])
@@ -900,8 +1005,12 @@ def _tg_creds():
     return bot, chat
 
 
-def notify(slug: str, with_sound: bool = False) -> int:
+def notify(slug: str, with_sound: bool | None = None) -> int:
+    """with_sound None = the sound versions when they exist and are fresh, else the silent ones."""
     s = summary(slug)
+    if with_sound is None:
+        snd = s.get("sound") or {}
+        with_sound = bool(snd.get("formats")) and not snd.get("stale")
     if with_sound:
         snd = s.get("sound") or {}
         if not snd.get("formats"):
@@ -928,7 +1037,7 @@ def notify(slug: str, with_sound: bool = False) -> int:
         if not e:
             continue
         cap = (f"🎬 {slug}: {e['ratio']}, {e['duration']:.0f} с, для {e['use']}"
-               f"{', зі звуком (earshot)' if with_sound else ''}.\n"
+               f"{', зі звуком' if with_sound else ', німе'}.\n"
                f"Хук: {spec.get('hook', '')}\n"
                f"Текст: workspace/social/articles/{slug}/_video/video.json. Апрув разом з дайджестом.")
         # token through --config on stdin, never argv: /proc is world-readable
@@ -967,12 +1076,18 @@ def main(argv=None) -> int:
                    help="do not commit+push the MP4s in the private repo (iterating)")
     p = sub.add_parser("sound"); p.add_argument("slug")
     p.add_argument("--format", choices=[*FORMATS, "all"], default="all")
-    p.add_argument("--bed", help="optional music bed (CC0 / PDM only, with a <bed>.json licence sidecar)")
-    p.add_argument("--bed-start", type=float, default=0.0, help="seconds into the bed to start from")
+    p.add_argument("--bed", default="auto",
+                   help="music bed file (needs a <stem>.json licence sidecar); default: the pack's track "
+                        "from <private>/audio/beds")
+    p.add_argument("--no-music", action="store_true", help="effects only, no music bed")
+    p.add_argument("--bed-start", type=float, default=None,
+                   help="seconds into the bed to start from (default: fitted to the beat grid)")
     p.add_argument("--no-commit", action="store_true")
     p.add_argument("--notify", action="store_true", help="send the sound versions to Telegram")
     p = sub.add_parser("notify"); p.add_argument("slug")
-    p.add_argument("--sound", action="store_true", help="send the sound versions instead")
+    g = p.add_mutually_exclusive_group()
+    g.add_argument("--sound", action="store_true", help="only the sound versions (fail if missing)")
+    g.add_argument("--silent", action="store_true", help="only the silent renders")
     p = sub.add_parser("status"); p.add_argument("slug")
     a = ap.parse_args(argv)
 
@@ -1026,14 +1141,15 @@ def main(argv=None) -> int:
 
     if a.cmd == "sound":
         fmts = list(FORMATS) if a.format == "all" else [a.format]
-        rep, rc = sound(a.slug, fmts, a.bed, a.bed_start, commit=not a.no_commit)
+        rep, rc = sound(a.slug, fmts, None if a.no_music else a.bed, a.bed_start,
+                        commit=not a.no_commit)
         print(json.dumps(rep, indent=2, ensure_ascii=False))
         if not rc and a.notify:
             rc = notify(a.slug, with_sound=True)
         return rc
 
     if a.cmd == "notify":
-        return notify(a.slug, with_sound=a.sound)
+        return notify(a.slug, with_sound=True if a.sound else False if a.silent else None)
 
     if a.cmd == "status":
         print(json.dumps(summary(a.slug), indent=2, ensure_ascii=False))

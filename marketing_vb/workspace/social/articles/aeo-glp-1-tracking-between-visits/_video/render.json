@@ -33,5 +33,171 @@
   },
   "rendered_at": "2026-11-02T08:24:32+00:00",
   "hyperframes": "0.9.1",
-  "url": "3dlook.ai/content-hub"
+  "url": "3dlook.ai/content-hub",
+  "sound": {
+    "rendered_at": "2026-11-16T15:01:11+00:00",
+    "earshot": "0.4.1",
+    "cues": [
+      {
+        "role": "land",
+        "sound": "pro_pop_in/round",
+        "at": 0.35,
+        "start": 0.349,
+        "end": 0.52,
+        "seed": 276866903,
+        "gain_db": -9.87,
+        "bed_db": 8.0,
+        "clean": true,
+        "warnings": [],
+        "over_bed_db": 11.8
+      },
+      {
+        "role": "whoosh",
+        "sound": "whoosh_fast/crisp",
+        "at": 4.787,
+        "start": 4.338,
+        "end": 5.038,
+        "seed": 420116625,
+        "gain_db": -5.09,
+        "bed_db": 9.0,
+        "clean": true,
+        "warnings": [],
+        "over_bed_db": 8.4
+      },
+      {
+        "role": "tick",
+        "sound": "pro_hover_tick/ping",
+        "at": 5.15,
+        "start": 5.149,
+        "end": 5.188,
+        "seed": 2094108523,
+        "gain_db": -3.93,
+        "bed_db": 3.0,
+        "clean": true,
+        "warnings": [],
+        "capped_db": 6.9
+      },
+      {
+        "role": "pop",
+        "sound": "ui_pop/soft",
+        "at": 10.004,
+        "start": 10.002,
+        "end": 10.182,
+        "seed": 1,
+        "gain_db": -6.02,
+        "bed_db": 8.5,
+        "clean": true,
+        "warnings": [],
+        "over_bed_db": 7.6
+      },
+      {
+        "role": "pop",
+        "sound": "ui_pop/soft",
+        "at": 11.004,
+        "start": 11.002,
+        "end": 11.187,
+        "seed": 15839,
+        "gain_db": -4.91,
+        "bed_db": 8.5,
+        "clean": true,
+        "warnings": [],
+        "over_bed_db": 6.1
+      },
+      {
+        "role": "pop",
+        "sound": "ui_pop/soft",
+        "at": 12.004,
+        "start": 12.002,
+        "end": 12.184,
+        "seed": 23758,
+        "gain_db": -5.94,
+        "bed_db": 8.5,
+        "clean": true,
+        "warnings": [],
+        "over_bed_db": 7.6
+      },
+      {
+        "role": "whoosh",
+        "sound": "whoosh_fast/crisp",
+        "at": 15.787,
+        "start": 15.337,
+        "end": 16.037,
+        "seed": 420132463,
+        "gain_db": -5.53,
+        "bed_db": 9.0,
+        "clean": true,
+        "warnings": [],
+        "over_bed_db": 7.6
+      },
+      {
+        "role": "ding",
+        "sound": "notify/mid_tine",
+        "at": 16.4,
+        "start": 16.396,
+        "end": 16.822,
+        "seed": 1,
+        "gain_db": -6.06,
+        "bed_db": 8.5,
+        "clean": true,
+        "warnings": [],
+        "over_bed_db": 7.5
+      }
+    ],
+    "bed": {
+      "licence": "CC BY 4.0",
+      "title": "Happy Beats / Business Moves Vol. 1",
+      "author": "Sascha Ende",
+      "source_url": "https://ende.app/en",
+      "file": "happy-beats-business-moves-vol-1-by-ende-dot-app.mp3",
+      "start_s": 47.67,
+      "beat_fit": {
+        "start_s": 47.67,
+        "tempo_bpm": 120.19,
+        "mean_miss_ms": 78,
+        "window_intensity": 0.95,
+        "miss_ms": {
+          "land@0.35": 1,
+          "whoosh@4.787": 55,
+          "tick@5.15": 191,
+          "pop@10.004": 158,
+          "pop@11.004": 160,
+          "pop@12.004": 150,
+          "whoosh@15.787": 61,
+          "ding@16.4": 53
+        }
+      }
+    },
+    "mix": {
+      "peak_dbfs": -1.01,
+      "true_peak_dbtp": -1.0,
+      "lufs_i": -14.1,
+      "limiter_max_db": 3.1
+    },
+    "formats": {
+      "reel": {
+        "file": "aeo-glp-1-tracking-between-visits-reel-sound.mp4",
+        "where": "3dlook-marketing-private/social-video/aeo-glp-1-tracking-between-visits/aeo-glp-1-tracking-between-visits-reel-sound.mp4",
+        "ratio": "9:16",
+        "use": "Instagram Reels / Stories",
+        "width": 1080,
+        "height": 1920,
+        "duration": 19.4,
+        "bytes": 4459711,
+        "sha256": "2412be72d1555d09",
+        "video_sha": "e5dc49eb4765fb96"
+      },
+      "feed": {
+        "file": "aeo-glp-1-tracking-between-visits-feed-sound.mp4",
+        "where": "3dlook-marketing-private/social-video/aeo-glp-1-tracking-between-visits/aeo-glp-1-tracking-between-visits-feed-sound.mp4",
+        "ratio": "4:5",
+        "use": "LinkedIn company page, Facebook, Instagram feed",
+        "width": 1080,
+        "height": 1350,
+        "duration": 19.4,
+        "bytes": 4001681,
+        "sha256": "02b785dc0e9ec708",
+        "video_sha": "c825d38f225c7c06"
+      }
+    }
+  }
 }
