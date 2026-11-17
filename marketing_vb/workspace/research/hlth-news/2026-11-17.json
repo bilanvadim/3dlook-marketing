@@ -1,0 +1,92 @@
+{
+ "generated": "2026-11-17T05:40:14+00:00",
+ "items": [
+  {
+   "id": "356c9fbc-e16b-4e7e-8dc4-00ba2cfd98d5",
+   "title": "Dyania Health Partners With NVIDIA to Deploy Clinical AI Within Hospital Systems",
+   "date": "2026-11-16",
+   "tags": [
+    "Interoperability / Data Management",
+    "Operational Efficiency",
+    "Health System & Health Provider",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/dyania-health-partners-with-nvidia-to-deploy-clinical-ai-within-hospital-systems"
+  },
+  {
+   "id": "3fafc733-8fd5-4deb-a42f-1c945d0b8d96",
+   "title": "Doximity Partners With NewYork-Presbyterian to Expand Clinical AI Adoption",
+   "date": "2026-11-16",
+   "tags": [
+    "Interoperability / Data Management",
+    "Operational Efficiency",
+    "Health System & Health Provider",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/doximity-partners-with-newyork-presbyterian-to-expand-clinical-ai-adoption"
+  },
+  {
+   "id": "44f24c4e-0870-4fea-b2cc-2118e78cae2e",
+   "title": "Wolters Kluwer Acquires AgileMD for Up to $100M to Expand AI-Powered Clinical Decision Support",
+   "date": "2026-11-16",
+   "tags": [
+    "Investments and Partnerships",
+    "Operational Efficiency",
+    "Health System & Health Provider",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/wolters-kluwer-acquires-agilemd-for-up-to-100m-to-expand-ai-powered-clinical-decision-support"
+  }
+ ],
+ "analyses": {
+  "356c9fbc-e16b-4e7e-8dc4-00ba2cfd98d5": {
+   "id": "356c9fbc-e16b-4e7e-8dc4-00ba2cfd98d5",
+   "score": 0,
+   "segment": "—",
+   "what": "Dyania Health і NVIDIA розгортають платформу Synapsis AI всередині лікарняної інфраструктури. Платформа аналізує неструктуровані медичні записи для досліджень і пошуку прогалин у лікуванні. Пілот із Cleveland Clinic: прогноз деградації аортального клапана.",
+   "why": "Це AI для аналізу EHR у лікарнях. Тут немає даних про тіло, BMI чи віддаленого збору вимірювань, тому для FitXpress нерелевантно.",
+   "play": "none",
+   "companies": [
+    "Dyania Health",
+    "NVIDIA",
+    "Cleveland Clinic"
+   ],
+   "_date": "2026-11-16"
+  },
+  "3fafc733-8fd5-4deb-a42f-1c945d0b8d96": {
+   "id": "3fafc733-8fd5-4deb-a42f-1c945d0b8d96",
+   "score": 0,
+   "segment": "—",
+   "what": "Doximity розширює партнерство з NewYork-Presbyterian: Doximity Ask (вбудований в Epic) і Doximity Scribe для клінічної документації та підтримки рішень лікарів.",
+   "why": "Це AI-асистенти для лікарів в академічних медцентрах. До body data, weight-loss чи андеррайтингу стосунку немає.",
+   "play": "none",
+   "companies": [
+    "Doximity",
+    "NewYork-Presbyterian",
+    "Columbia University Vagelos College of Physicians and Surgeons",
+    "Weill Cornell Medicine",
+    "Epic",
+    "Wolters Kluwer Health",
+    "Pathway Medical"
+   ],
+   "_date": "2026-11-16"
+  },
+  "44f24c4e-0870-4fea-b2cc-2118e78cae2e": {
+   "id": "44f24c4e-0870-4fea-b2cc-2118e78cae2e",
+   "score": 0,
+   "segment": "—",
+   "what": "Wolters Kluwer Health купує AgileMD за суму до $100M: $40M одразу і до $60M у вигляді earn-out. Мета — вбудувати clinical decision support (Pathways, eCART) в EHR разом з UpToDate Expert AI.",
+   "why": "Це M&A у сегменті стаціонарного clinical decision support. Жоден ICP-сегмент 3DLOOK ця новина не зачіпає.",
+   "play": "none",
+   "companies": [
+    "Wolters Kluwer Health",
+    "AgileMD"
+   ],
+   "_date": "2026-11-16"
+  }
+ },
+ "posts": []
+}
