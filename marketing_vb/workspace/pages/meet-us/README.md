@@ -48,9 +48,9 @@ restart GA4 sessions.
 
 | Placement | Link |
 |---|---|
-| Booth back wall QR | `https://3dlook.ai/meet-us/?utm_source=ces2027&utm_medium=qr&utm_campaign=ces2027&utm_content=booth-wall` |
-| Flyer QR | same, `utm_content=flyer` |
-| Business cards | same, `utm_content=card-katerina` / `card-whitney` / `card-ihor` |
+| Booth back wall + cabinet QR | **not /meet-us/** (decision 2026-11-17): a visitor at the booth needs no map, route or pass code. Both QRs print the short link `https://3dlook.ai/booth/`, a redirect in Redirection (no new plugin). Jan 6-9 it goes to Max's demo tool with `?utm_source=ces2027&utm_medium=qr&utm_campaign=ces2027&utm_content=booth`, if Max confirms visitors can scan on their own phones; otherwise to the follow-up booking. From Jan 10 it goes to the demo booking. Only the printed URL is fixed (artwork final Nov 30); the target can change after print. One link, so wall and cabinet scans count together |
+| Flyer QR | `https://3dlook.ai/meet-us/?utm_source=ces2027&utm_medium=qr&utm_campaign=ces2027&utm_content=flyer`. People scan it later (hotel, office); the page's phases cover that: booth booking during the show, "Missed us at CES?" from Jan 11, then a 301 to demo booking |
+| Business cards | **vCard QR** (Asel), no page. The vCard's URL field carries `https://3dlook.ai/meet-us/?utm_source=ces2027&utm_medium=card&utm_campaign=ces2027&utm_content=card-katerina` (`card-whitney` / `card-ihor`). Keep the vCard short so the QR stays readable at about 20 mm |
 | Invitation emails | `utm_source=hubspot&utm_medium=email&utm_campaign=ces2027&utm_content=invite-1` (2, 3) |
 | LinkedIn outreach | `utm_source=linkedin&utm_medium=outreach&utm_campaign=ces2027&utm_content={sender}` |
 | Email signatures | `utm_source=signature&utm_medium=email&utm_campaign=ces2027` |

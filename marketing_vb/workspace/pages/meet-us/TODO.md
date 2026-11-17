@@ -41,6 +41,7 @@ Search for `[PLACEHOLDER` in page.md and page.html: every hit below has one.
 | 10 | Build in WordPress from page.html, Yoast `noindex, follow`, no menu | Asel | by Nov 24 |
 | 11 | GTM: events `cta_book_hero` (button), `soft_online_demo` (link) and the HubSpot booking success message → GA4 `meeting_booked` with page path. Verify each by hand | Asel | by Nov 24 |
 | 12 | UTM links and QR codes from README.md for every off-site placement | Asel | by Nov 20 (QR goes to print on Dec 2) |
+| 12a | Short link `3dlook.ai/booth/` in Redirection (booth wall + cabinet QR, decision 2026-11-17, see README Tracking). Until Jan 5: point it at `/meet-us/`; Jan 6-9: Max's demo tool (or the follow-up booking if self-scan on own phones is a no); from Jan 10: demo booking. Business cards: vCard QR, not a page | Asel; Vadim confirms the Jan 6-9 target with Max | link by Nov 20 (goes on the wall artwork) |
 | 13 | Top bar and the `/contact-us/` line (copy in page.md), December 1 → January 9. No UTM on internal links | Asel | Dec 1 |
 | 14 | Variant B on January 11: swap the hero, remove the facts row and the pass block, point the embed at the sales demo link; top bar off | Asel, Nika | Jan 11-12 |
 | 15 | After January 31: next event on the same URL, or 301 to the demo booking page | Vadim | Feb 1 |
