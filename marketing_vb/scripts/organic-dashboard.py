@@ -118,6 +118,16 @@ OVERVIEW_TTL_DAYS = 30
 # GSC country codes (ISO 3166-1 alpha-3). Consumer Arabic queries, not the ICP: see the docstring.
 ARAB_COUNTRIES = "^(sau|are|egy|jor|kwt|qat|bhr|omn|irq|mar|dza|tun|lby|lbn|syr|yem|pse|sdn)$"
 
+# Buyer markets: where the ICP is (US and UK first, then CA/AU/NZ and the EU/EEA + CH). The consumer
+# "3D body shape" cluster lives elsewhere: the Arab countries, then Vietnam, Indonesia, Thailand, Turkey
+# and Pakistan from Nov 2026, so "excl. Arabic-speaking countries" stopped filtering it out (2026-11-17).
+CORE_COUNTRIES = ("^(usa|gbr|can|aus|nzl|irl|deu|fra|nld|bel|lux|aut|che|esp|prt|ita|swe|nor|dnk|fin|isl|pol|"
+                  "cze|svk|hun|rou|bgr|grc|hrv|svn|est|lva|ltu|mlt|cyp)$")
+# Page-drop alert (Telegram): a page that averaged PAGE_ALERT_MIN_CLICKS+ clicks a week over the previous
+# four weeks and lost PAGE_ALERT_DROP of them (and at least PAGE_ALERT_MIN_LOSS clicks), or slid
+# PAGE_ALERT_POS+ positions with PAGE_ALERT_MIN_IMPR+ impressions in both periods.
+PAGE_ALERT_MIN_CLICKS, PAGE_ALERT_DROP, PAGE_ALERT_MIN_LOSS = 8, 0.30, 5
+PAGE_ALERT_POS, PAGE_ALERT_MIN_IMPR = 3.0, 100
 INTERNAL_FILTERS = ["Internal Traffic", "Developer Traffic"]
 AI_SOURCE = (r"(chatgpt|openai|perplexity|claude\.ai|anthropic|gemini\.google|bard\.google|copilot|deepseek|"
              r"grok|you\.com|meta\.ai|mistral)")
@@ -283,8 +293,13 @@ def ga4(body: dict) -> list[dict]:
 
 
 def ga4_filter(*extra: dict) -> dict:
+    # staging.3dlook.me sends to the production stream: ~half of pricing_plan_click and demo_click
+    # since Sep 2026 were staging QA (checked 2026-11-17)
     exprs = [{"notExpression": {"filter": {"fieldName": "testDataFilterName",
-                                           "inListFilter": {"values": INTERNAL_FILTERS}}}}, *extra]
+                                           "inListFilter": {"values": INTERNAL_FILTERS}}}},
+             {"notExpression": {"filter": {"fieldName": "hostName",
+                                           "stringFilter": {"matchType": "CONTAINS", "value": "staging"}}}},
+             *extra]
     return {"andGroup": {"expressions": exprs}}
 
 
@@ -437,6 +452,16 @@ def collect_gsc_arab(start: _dt.date, end: _dt.date) -> list[tuple]:
     for a, b in month_chunks(start, end):
         for r in gsc(a, b, ["date"], [{"dimension": "country", "operator": "includingRegex",
                                         "expression": ARAB_COUNTRIES}]):
+            out.append((_dt.date.fromisoformat(r["keys"][0]), r["clicks"], r["impressions"]))
+    return out
+
+
+def collect_gsc_core(start: _dt.date, end: _dt.date) -> list[tuple]:
+    """(day, clicks, impressions) from the buyer markets (CORE_COUNTRIES), whole site."""
+    out = []
+    for a, b in month_chunks(start, end):
+        for r in gsc(a, b, ["date"], [{"dimension": "country", "operator": "includingRegex",
+                                        "expression": CORE_COUNTRIES}]):
             out.append((_dt.date.fromisoformat(r["keys"][0]), r["clicks"], r["impressions"]))
     return out
 
@@ -645,7 +670,7 @@ class Agg:
             self.Q[quarter_key(day)][key] += value
 
 
-def build(end: _dt.date, gsc_pages, gsc_arab, gsc_kw, ga, hs, ahr, kws, state) -> dict:
+def build(end: _dt.date, gsc_pages, gsc_arab, gsc_kw, ga, hs, ahr, kws, state, gsc_core=()) -> dict:
     weeks = []
     w = HISTORY_START
     while w + _dt.timedelta(days=6) <= end:
@@ -662,6 +687,8 @@ def build(end: _dt.date, gsc_pages, gsc_arab, gsc_kw, ga, hs, ahr, kws, state) -
     for day, clicks, _ in gsc_arab:
         A.add(day, "clicks_arab", clicks)
         A.add(day, "clicks_ex_arab", -clicks)
+    for day, clicks, _ in gsc_core:
+        A.add(day, "clicks_core", clicks)
     for day, path, s, e, _ in ga["landing"]:
         p = page_product(path)
         A.add(day, "org_sessions", s)
@@ -715,6 +742,35 @@ def build(end: _dt.date, gsc_pages, gsc_arab, gsc_kw, ga, hs, ahr, kws, state) -
             top[path]["engaged"] += e
             top[path]["key_events"] += k
 
+    # page-drop alert: last week against the average of the four weeks before it
+    page_alerts = []
+    if len(weeks) >= 5:
+        cur_wk, prev_wks = weeks[-1], set(weeks[-5:-1])
+        pw = defaultdict(lambda: defaultdict(float))
+        for day, path, clicks, impr, posw in gsc_pages:
+            m = monday(day)
+            k = "c" if m == cur_wk else "p" if m in prev_wks else None
+            if k:
+                pw[path][k + "_clicks"] += clicks
+                pw[path][k + "_impr"] += impr
+                pw[path][k + "_posw"] += posw
+        for path, a in pw.items():
+            p_clicks, c_clicks = a["p_clicks"] / 4, a["c_clicks"]
+            p_pos = a["p_posw"] / a["p_impr"] if a["p_impr"] else None
+            c_pos = a["c_posw"] / a["c_impr"] if a["c_impr"] else None
+            lost = p_clicks - c_clicks
+            click_drop = (p_clicks >= PAGE_ALERT_MIN_CLICKS and lost >= PAGE_ALERT_MIN_LOSS
+                          and c_clicks <= p_clicks * (1 - PAGE_ALERT_DROP))
+            pos_drop = (p_pos is not None and c_pos is not None and c_pos - p_pos >= PAGE_ALERT_POS
+                        and a["p_impr"] / 4 >= PAGE_ALERT_MIN_IMPR and a["c_impr"] >= PAGE_ALERT_MIN_IMPR
+                        and p_clicks >= 2)
+            gone = p_clicks >= PAGE_ALERT_MIN_CLICKS and a["c_impr"] == 0
+            if click_drop or pos_drop or gone:
+                page_alerts.append({"path": path, "group": page_group(path), "prev_clicks": p_clicks,
+                                    "clicks": c_clicks, "prev_pos": p_pos, "pos": c_pos, "lost": lost,
+                                    "gone": gone, "click_drop": click_drop, "pos_drop": pos_drop})
+        page_alerts.sort(key=lambda x: -x["lost"])
+
     gkw = defaultdict(lambda: defaultdict(float))
     rev_country = {v: k for k, v in GSC_COUNTRY.items()}
     for day, q, ctry, clicks, impr, posw in gsc_kw:
@@ -725,7 +781,8 @@ def build(end: _dt.date, gsc_pages, gsc_arab, gsc_kw, ga, hs, ahr, kws, state) -
             a["impr"] += impr
             a["posw"] += posw
     return {"weeks": weeks, "A": A, "forms": forms, "top": top, "gkw": gkw, "ahr": ahr, "kws": kws,
-            "end": end, "overview": state.get("overview", {}), "work": [c for c in hs["contacts"] if c["work"]]}
+            "end": end, "overview": state.get("overview", {}), "work": [c for c in hs["contacts"] if c["work"]],
+            "page_alerts": page_alerts}
 
 
 # ------------------------------------------------------------------ sheet values
@@ -764,7 +821,7 @@ def tab_values(r: dict) -> dict:
 
     def metric_cols(a, lead_ok, ga_ok=True):
         g = (lambda x: n(x)) if ga_ok else (lambda x: None)
-        return [n(a["clicks"]), n(a["clicks_ex_arab"]), n(a["clicks_arab"]),
+        return [n(a["clicks"]), n(a["clicks_ex_arab"]), n(a["clicks_arab"]), n(a["clicks_core"]),
                 *[n(a[f"clicks|{p}"]) for p in SITE_PRODUCTS], *[n(a[f"clicks|{g_}"]) for g_ in GROUPS],
                 n(a["impr"]), g(a["org_sessions"]), g(a["org_engaged"]),
                 *[g(a[f"org_engaged|{p}"]) for p in SITE_PRODUCTS], g(a["ai_sessions"]),
@@ -776,6 +833,7 @@ def tab_values(r: dict) -> dict:
 
     metric_hdr = ["Google clicks: whole site", "Google clicks: whole site excl. Arabic-speaking countries",
                   "Google clicks: Arabic-speaking countries (consumer queries, not ICP)",
+                  "Google clicks: buyer markets (US, UK, Canada, Australia, EU)",
                   *[f"Google clicks: {p}" for p in SITE_PRODUCTS],
                   *[f"Google clicks: {g}" for g in GROUPS], "Google impressions: whole site",
                   "GA4 organic sessions", "GA4 engaged organic sessions",
@@ -971,6 +1029,7 @@ def tab_values(r: dict) -> dict:
          kpi("   Homepage and general pages", "clicks|General"),
          kpi("Organic Google clicks, whole site excl. Arabic-speaking countries", "clicks_ex_arab"),
          kpi("   Arabic-speaking countries (consumer queries, not ICP)", "clicks_arab"),
+         kpi("Organic Google clicks from buyer markets (US, UK, Canada, Australia, EU)", "clicks_core"),
          kpi("Engaged organic sessions, whole site (GA4)", "org_engaged"),
          kpi("Sessions from AI assistants (ChatGPT, Perplexity, Gemini …)", "ai_sessions"),
          kpi("Inbound contacts with a work email", "work"),
@@ -1077,6 +1136,14 @@ ABOUT = [
                                   "height and weight”) that land on the homepage, not our buyers. Lost on 27 Jan "
                                   "2026, back from the week of 19 Oct 2026. Without this split they read as organic "
                                   "growth."],
+    ["Buyer markets", "Google clicks from the countries where our buyers are: the US, the UK, Canada, Australia, "
+                      "New Zealand, the EU/EEA and Switzerland. Use this row, not the whole-site total, to judge "
+                      "whether relevant traffic grows: the consumer “3D body shape” queries come from the "
+                      "Arabic-speaking countries, Vietnam, Indonesia, Thailand, Turkey and Pakistan and swing by "
+                      "hundreds of clicks a week."],
+    ["Page-drop alert", "The weekly Telegram report lists every page that averaged 8+ clicks a week over the "
+                        "previous four weeks and lost 30%+ of them (at least 5 clicks), disappeared from Google, "
+                        "or slid 3+ positions with 100+ impressions a week."],
     ["Page groups and products", "FitXpress = /fitxpress/…, /for-…, the telehealth page and Content Hub articles on "
                                  "health, fitness, GLP-1, body composition, insurance, occupational health. Mobile "
                                  "Tailor = /mobile-tailor/…, YourFit and apparel/fashion articles. Wrist Measurement "
@@ -1422,6 +1489,7 @@ def report_text(r: dict, v: dict, sid: str) -> str:
              f"Wrist {n(W[wk]['clicks|Wrist Measurement'])} · головна і загальні {n(W[wk]['clicks|General'])}",
              f"  без арабських країн: {val('clicks_ex_arab')}; арабські (споживчі запити, не ICP): "
              f"{n(W[wk]['clicks_arab'])}",
+             f"  ринки покупців (US, UK, CA, AU, EU): {val('clicks_core')}",
              f"• Сесії з AI-асистентів: {val('ai_sessions')}",
              f"• Заявки на сайті (GA4): {n(W[wk]['leads'])} · demo-кліки: {n(W[wk]['demo_clicks'])}",
              f"• Контакти з робочою поштою: {n(W[wk]['work'])} (FX {n(W[wk]['work|FitXpress'])} · "
@@ -1430,6 +1498,21 @@ def report_text(r: dict, v: dict, sid: str) -> str:
              f"• MT self-serve sign-ups: {n(W[wk]['mt_signups'])}, з органіки/AI: {n(W[wk]['mt_signups_organic'])}",
              f"• Нові угоди: FX {n(W[wk]['deals|FitXpress'])} · MT {n(W[wk]['deals|Mobile Tailor'])} · "
              f"WM {n(W[wk]['deals|Wrist Measurement'])}"]
+    pa = r.get("page_alerts") or []
+    lines.append("")
+    if pa:
+        lines.append("⚠️ Сторінки, що просіли (тиждень проти сер. 4 попередніх):")
+        for x in pa[:10]:
+            why = ("зникла з Google" if x["gone"] else
+                   f"кліки {x['prev_clicks']:.0f} → {x['clicks']:.0f}" if x["click_drop"] else
+                   f"кліки {x['prev_clicks']:.0f} → {x['clicks']:.0f}")
+            pos = (f", позиція {x['prev_pos']:.1f} → {x['pos']:.1f}"
+                   if x["prev_pos"] is not None and x["pos"] is not None else "")
+            lines.append(f"⬇️ {x['path']} ({x['group']}): {why}{pos}")
+        if len(pa) > 10:
+            lines.append(f"…ще {len(pa) - 10}")
+    else:
+        lines.append("Сторінки: жодна ключова не втратила 30%+ кліків чи 3+ позиції.")
     moves = v["_alerts"]
     lines.append("")
     if moves:
@@ -1458,12 +1541,13 @@ def run(args) -> int:
     print(f"window {HISTORY_START} … {end} ({weeks_n} weeks)", file=sys.stderr)
     gsc_pages = collect_gsc_pages(HISTORY_START, end)
     gsc_arab = collect_gsc_arab(HISTORY_START, end)
+    gsc_core = collect_gsc_core(HISTORY_START, end)
     gsc_kw = collect_gsc_keywords(HISTORY_START, end, kws)
     ga = collect_ga4(HISTORY_START, end)
     hs = collect_hubspot(HISTORY_START, end)
     ahr = collect_ahrefs(kws, sundays, state, use_api=not args.no_ahrefs)
     save_state(state)                            # keep the paid-for Ahrefs snapshots even if the Sheet fails
-    r = build(end, gsc_pages, gsc_arab, gsc_kw, ga, hs, ahr, kws, state)
+    r = build(end, gsc_pages, gsc_arab, gsc_kw, ga, hs, ahr, kws, state, gsc_core)
     v = tab_values(r)
     print(f"gsc page rows {len(gsc_pages)}, keyword rows {len(gsc_kw)}, ga4 landing rows {len(ga['landing'])}, "
           f"hubspot contacts {hs['raw_contacts']} → inbound {len(hs['contacts'])} (dropped {hs['dropped']}), "
