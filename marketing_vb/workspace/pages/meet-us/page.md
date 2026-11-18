@@ -19,7 +19,7 @@ date: 2026-11-02
 # Variant A · before and during the show (live now → January 9, 2027)
 
 <!-- slot: hero · [HERO] -->
-**Eyebrow:** CES 2027 · Las Vegas · January 6-9
+**Eyebrow:** CES® 2027 · Las Vegas · January 6-9
 
 # Meet 3DLOOK at CES 2027, booth 55630
 
@@ -58,8 +58,8 @@ hall.
 <!-- slot: pass -->
 ### No CES badge yet?
 
-Our guests register for CES free with the code **[PLACEHOLDER: customer promo code from the Exhibitor Dashboard]**
-at [PLACEHOLDER: CES registration link]. Register before you fly.
+Use our code **[PLACEHOLDER: customer promo code from the Exhibitor Dashboard]** for $149 off CES registration.
+Valid until December 31. [Register for CES]([PLACEHOLDER: CES registration link])
 
 <!-- slot: soft alternative -->
 Not going to Las Vegas? [Request an online demo](https://3dlook.ai/contact-us/) instead.
@@ -68,11 +68,14 @@ Not going to Las Vegas? [Request an online demo](https://3dlook.ai/contact-us/) 
 3DLOOK builds smartphone body measurement technology for enterprises and has worked with 100+
 clients since 2016.
 
+<!-- slot: trademark line (CTA rule, small print, both variants) -->
+CES® and its logo are registered trademarks of the Consumer Technology Association.
+
 ---
 
 # Variant B · after the show (January 11 → January 31, 2027)
 
-**Eyebrow:** CES 2027 · Las Vegas
+**Eyebrow:** CES® 2027 · Las Vegas
 
 # Missed us at CES 2027?
 
@@ -100,12 +103,14 @@ Pick a 30-minute slot. The invite carries the video link.
 3DLOOK builds smartphone body measurement technology for enterprises and has worked with 100+
 clients since 2016.
 
+CES® and its logo are registered trademarks of the Consumer Technology Association.
+
 ---
 
 # Site-wide entry points (task D3)
 
 **Top bar, all pages, December 1 → January 9:**
-Meet 3DLOOK at CES 2027 · Booth 55630, Venetian Expo · **Book a meeting →** `/meet-us/#book`
+Meet 3DLOOK at CES® 2027 · Booth 55630, Venetian Expo · **Book a meeting →** `/meet-us/#book`
 
 **One line on /contact-us/, above the form, same dates:**
-At CES 2027 in Las Vegas? [Book a meeting at booth 55630 →](https://3dlook.ai/meet-us/#book)
+At CES® 2027 in Las Vegas? [Book a meeting at booth 55630 →](https://3dlook.ai/meet-us/#book)

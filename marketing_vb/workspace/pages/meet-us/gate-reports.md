@@ -27,7 +27,7 @@ pros-and-cons review, chose a one-screen event page over a full landing and over
 |---|---|
 | Placed | `/meet-us/`, standalone, no parent, no breadcrumbs. Not in the header (five items, approved 2026-10-22) and not in the Company menu. Event-agnostic slug, so the page can carry later events, and no "CES" in the path (CTA contract §37) |
 | Cannibalisation | None: noindex, and no page or article targets CES queries |
-| Inbound internal links | Top bar on all pages (December 1 to January 9) and one line on `/contact-us/` (task D3). Off-site: QR codes, emails, LinkedIn, email signatures, CES directory listing |
+| Inbound internal links | Top bar on all pages (December 1 to January 9) and one line on `/contact-us/` (task D3). Off-site: QR codes, emails, LinkedIn, CES directory listing (no email signatures, Vadim 2026-11-18) |
 | Baseline | Not needed: the URL returns 404 today |
 | Vadim approved placement, URL and angle | Yes, 2026-11-02 ("да, обнови") |
 

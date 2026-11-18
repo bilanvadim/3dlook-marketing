@@ -40,7 +40,7 @@ date: 2026-11-02
 | A corner booth | CTA sales email 2026-10-16: "55630 is a corner, open on two sides" |
 | Wrist sizing is now part of the 3DLOOK platform | Approved external wording for wrist (wrist programme content rules §10); no wrist figures |
 | more body areas are in development | Wording approved by Vadim for the CES directory listing, 2026-10-27 |
-| Our guests register for CES free with the code | CTA exhibitor benefit: up to 1,000 free registrations for customers and prospects, via the promo code in the Exhibitor Dashboard. **The code itself is not received yet** |
+| $149 off CES registration, valid until December 31 | Exhibitor Discount Code from the Exhibitor Dashboard (received 2026-11-13, the code itself stays out of this repo). Standard Pass is $149 until Nov 30 and $349 from Dec 1, so the page never says «free» (Vadim, 2026-11-18) |
 | SDK and API | 3DLOOK integration guides (Web, iOS and Android SDKs; API) |
 | 30 minutes, CEO or sales team | Internal meeting format from the marketing plan, not a product claim |
 

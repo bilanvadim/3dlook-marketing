@@ -9,7 +9,7 @@ date: 2026-11-02
 # /meet-us/ — CES 2027 event page
 
 One-screen page for CES 2027 (booth 55630, Venetian Expo, January 6-9, 2027). Not a full landing:
-booth facts, what we show, booking, the free-pass code. Event-agnostic URL so it can carry the next
+booth facts, what we show, booking, the $149-off CES registration code. Event-agnostic URL so it can carry the next
 event. Plan context: Google Doc «CES 2027: план подготовки маркетинга», tasks D1, D3, D5.
 
 ## Files
@@ -53,7 +53,6 @@ restart GA4 sessions.
 | Business cards | **vCard QR** (Asel), no page. The vCard's URL field carries `https://3dlook.ai/meet-us/?utm_source=ces2027&utm_medium=card&utm_campaign=ces2027&utm_content=card-katerina` (`card-whitney` / `card-ihor`). Keep the vCard short so the QR stays readable at about 20 mm |
 | Invitation emails | `utm_source=hubspot&utm_medium=email&utm_campaign=ces2027&utm_content=invite-1` (2, 3) |
 | LinkedIn outreach | `utm_source=linkedin&utm_medium=outreach&utm_campaign=ces2027&utm_content={sender}` |
-| Email signatures | `utm_source=signature&utm_medium=email&utm_campaign=ces2027` |
 | CES directory listing | `utm_source=ces-directory&utm_medium=referral&utm_campaign=ces2027` |
 
 GTM events: `cta_book_hero`, `soft_online_demo`, `meeting_booked` (HubSpot Meetings success message).
