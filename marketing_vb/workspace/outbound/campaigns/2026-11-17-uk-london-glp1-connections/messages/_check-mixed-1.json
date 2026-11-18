@@ -1,0 +1,150 @@
+{
+ "campaign": "2026-11-17-uk-london-glp1-connections",
+ "checked": 31,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-1",
+ "generated": "2026-11-17T21:08:10",
+ "hard": [],
+ "soft": [
+  [
+   "near-duplicate sentence",
+   "SheMed: pujavyas23 / rachael-joy-a2355bb0",
+   "«could we meet for 30 minutes in london on 23 to 2…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Doctor Care Anywhere: kavita-d-45181719b / biran-pankhania-39762b1b",
+   "«i'd like to show you a two-photo capture taken in…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Doctor Care Anywhere: patrick-roberts-bbb855227 / laura-o-riordan-89289587",
+   "«would you give me 30 minutes at your office?»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Doctor Care Anywhere: kamran-iqbal-a38905154 / laura-o-riordan-89289587",
+   "«could we sit down for 30 minutes at your office?»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Doctor Care Anywhere: biran-pankhania-39762b1b / laura-o-riordan-89289587",
+   "«could i borrow 30 minutes in london, 23 to 25 nov…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Juniper: sarah-jane-frydman / patrick-jaffe",
+   "«would you have 30 minutes in london, 23 to 25 nov…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Juniper: sarah-jane-frydman / alice-pan-28435535",
+   "«would you have 30 minutes in london, 23 to 25 nov…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Juniper: patrick-jaffe / alice-pan-28435535",
+   "«could you give me 30 minutes in london on 23 to 2…»"
+  ],
+  [
+   "sentence opening repeated",
+   "SheMed ×3",
+   "«i'm in london 23 to…»: ifrah-asmat-015601292, paulet-chika-adimonye-07918361, pujavyas23"
+  ],
+  [
+   "sentence opening repeated",
+   "SheMed ×3",
+   "«a dpa with sccs is…»: ifrah-asmat-015601292, rachael-joy-a2355bb0, sarah-todd-davidson"
+  ],
+  [
+   "sentence opening repeated",
+   "Doctor Care Anywhere ×4",
+   "«i'd like to show you…»: biran-pankhania-39762b1b, kavita-d-45181719b, laura-o-riordan-89289587, patrick-roberts-bbb855227"
+  ],
+  [
+   "sentence opening repeated",
+   "Doctor Care Anywhere ×4",
+   "«i'm in london 23 to…»: biran-pankhania-39762b1b, kamran-iqbal-a38905154, patrick-roberts-bbb855227, sweta-k-0435a31b5"
+  ],
+  [
+   "sentence opening repeated",
+   "Doctor Care Anywhere ×5",
+   "«i'm in london from 23…»: anushka-mehrotra-8b557a151, davidravech, deepali-gambhir-dixon-59a3841a, laura-o-riordan-89289587"
+  ],
+  [
+   "sentence opening repeated",
+   "Doctor Care Anywhere ×3",
+   "«would 30 minutes at your…»: anushka-mehrotra-8b557a151, davidravech, deepali-gambhir-dixon-59a3841a"
+  ],
+  [
+   "sentence opening repeated",
+   "Doctor Care Anywhere ×4",
+   "«a dpa with sccs is…»: anushka-mehrotra-8b557a151, deepali-gambhir-dixon-59a3841a, sayhitoluis, zoe-sullivan-2031796"
+  ],
+  [
+   "sentence opening repeated",
+   "Juniper ×3",
+   "«i'm in london 23 to…»: hina-sarwar-19b0a4108, patrick-jaffe, sarah-jane-frydman"
+  ],
+  [
+   "sentence opening repeated",
+   "Reset Health ×3",
+   "«could we meet for 30…»: dr-laura-falvey-134306176, laura-newson-a0146a20, racheldreycroft"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "Doctor Care Anywhere ×4",
+   "«doctor care anywhere…»: davidravech, kamran-iqbal-a38905154, patrick-roberts-bbb855227, zoe-sullivan-2031796"
+  ],
+  [
+   "M2 easy out shared",
+   "Doctor Care Anywhere ×2",
+   "«london if a…»: patrick-roberts-bbb855227, sayhitoluis"
+  ],
+  [
+   "M2 easy out shared",
+   "Reset Health ×2",
+   "«london or a…»: ciara-cook, oliver-mcguinness-6001894a"
+  ],
+  [
+   "M2 easy out shared",
+   "SheMed ×2",
+   "«london or a…»: rachael-joy-a2355bb0, sarah-todd-davidson"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×7",
+   "«expects prescribers to verify independently…»: anushka-mehrotra-8b557a151, dr-laura-falvey-134306176, kavita-d-45181719b, kelly-m-236a2693"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«23 to 25 november and…»: hina-sarwar-19b0a4108, ifrah-asmat-015601292, kamran-iqbal-a38905154, laura-newson-a0146a20"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«phone taken in the session…»: ciara-cook, gianluca-uberti-83669121, oliver-mcguinness-6001894a, patrick-jaffe"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«in the same session as…»: alice-pan-28435535, laura-o-riordan-89289587, patrick-roberts-bbb855227, rochellecmorris"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«independently the weight height or…»: anushka-mehrotra-8b557a151, dr-laura-falvey-134306176, sarah-jane-frydman, sayhitoluis"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«on a phone taken in…»: oliver-mcguinness-6001894a, patrick-jaffe, patrick-roberts-bbb855227, sweta-k-0435a31b5"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«could we meet for 30 minutes if you are in london from 23 t…»: kavita-d-45181719b, kevinwjoshua"
+  ]
+ ]
+}

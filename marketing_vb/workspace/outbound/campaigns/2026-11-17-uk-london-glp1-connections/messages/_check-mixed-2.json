@@ -1,0 +1,75 @@
+{
+ "campaign": "2026-11-17-uk-london-glp1-connections",
+ "checked": 35,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-2",
+ "generated": "2026-11-17T21:07:51",
+ "hard": [],
+ "soft": [
+  [
+   "greeting",
+   "tyankolatev M1",
+   "«Hi Tyanko,» has no «Engr. Tyanko»"
+  ],
+  [
+   "greeting",
+   "tyankolatev M2",
+   "«Hi Tyanko,» has no «Engr. Tyanko»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hollowood Chemists: jainilpatel / sunil-patel-642baa38",
+   "«hi jainil, hollowood chemists runs glp-1 treatmen…»"
+  ],
+  [
+   "sentence opening repeated",
+   "Numan ×3",
+   "«i'm in london 23 to…»: bryony-henderson-a2911657, danielle-brightman-76199b1b7, tatjana-k-331b92160"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×10",
+   "«on a phone taken in…»: adrian-wilkinson-7a5029a, craig-watt-16944859, darryl-dethick-6353b38a, jamaal-khan-732a88242"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×7",
+   "«expects prescribers to verify independently…»: aanisah-sherbaz-b76aa5190, bryony-henderson-a2911657, caroline-cleary-24075743, fiona-burns-bb2b4b95"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×7",
+   "«phone taken in the session…»: craig-watt-16944859, darryl-dethick-6353b38a, jamaal-khan-732a88242, ricardo-laverty-b6429326"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«a predicted weight cross check…»: bryony-henderson-a2911657, craig-watt-16944859, danielle-brightman-76199b1b7, katherinedegnen"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«in the same session as…»: ahsan-bhatti-bb1105122, dalia-k-978841261, james-o-loan-a9b15977, wlunt"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«23 to 25 november and…»: danielle-brightman-76199b1b7, gary-evans-757937180, ruth-pointon-07b62a162"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«above the pharmacy s threshold…»: caroline-cleary-24075743, fiona-burns-bb2b4b95, jamaal-khan-732a88242"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«one timestamped record per patient…»: aanisah-sherbaz-b76aa5190, jamaal-khan-732a88242, james-o-loan-a9b15977"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«the camera roll picker disabled…»: calum-mackenzie-chambers, danielle-brightman-76199b1b7, katherinedegnen"
+  ]
+ ]
+}

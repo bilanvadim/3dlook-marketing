@@ -1,0 +1,9 @@
+{
+ "campaign": "2026-11-17-uk-london-glp1-connections",
+ "checked": 2,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "add-2026-11-17-all",
+ "generated": "2026-11-17T21:09:06",
+ "hard": [],
+ "soft": []
+}

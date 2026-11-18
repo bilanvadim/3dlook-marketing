@@ -1,0 +1,50 @@
+{
+ "campaign": "2026-11-17-uk-london-glp1-connections",
+ "checked": 26,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-3",
+ "generated": "2026-11-17T21:07:01",
+ "hard": [],
+ "soft": [
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«one timestamped record per patient…»: andrewcaplan1, dara-o-malley-a70ab598, doruk-on, kevintroykyle"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«phone taken in the session…»: amir-bhogal-202946308, chris-bland-16063119, hira-malik-19080241, leighton-humphreys-883a82a9"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«expects prescribers to verify independently…»: andy-boysan-37a79037, bilal-al-sheikh-hussain-72839216b, manjit-jhooty-4971443, parvinder-singh-sagoo-bb0a6657"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«in the same session as…»: abdullahsabyah, carlbamford123, catherine-hyatt, dara-o-malley-a70ab598"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«on a phone taken in…»: amir-bhogal-202946308, hira-malik-19080241, leighton-humphreys-883a82a9, manjit-jhooty-4971443"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«a predicted weight cross check…»: kasim-gulzar-mrpharms-86b177134, omar-el-gohary-730524159, seyed"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«the camera roll picker disabled…»: caleum-sean-fox-norbury-133970194, carlbamford123, rajive-patel"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«could we meet in london 23 to 25 november for 30 minutes or…»: andrewcaplan1, kasim-gulzar-mrpharms-86b177134"
+  ]
+ ]
+}

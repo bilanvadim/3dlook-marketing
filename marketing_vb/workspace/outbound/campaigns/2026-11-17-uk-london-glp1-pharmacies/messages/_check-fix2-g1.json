@@ -1,0 +1,81 @@
+{
+ "campaign": "2026-11-17-uk-london-glp1-pharmacies",
+ "checked": 44,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "fix2-g1",
+ "generated": "2026-11-17T21:41:23",
+ "hard": [
+  [
+   "«so» introducing a result",
+   "joe-newell-product M2",
+   "«…isables the camera-roll picker, so images come from the live sessi»: two sentences, or «allowing…»"
+  ],
+  [
+   "same sentence at one company",
+   "Medino: alessandro-grenci / christianjakobsson",
+   "«If you are in London from 23 to 25 November, could we meet…»: reword one of them"
+  ]
+ ],
+ "soft": [
+  [
+   "M1 closing ask repeated",
+   "Medino ×2",
+   "«if you are in london from 23 to 25 november, coul…»: alessandro-grenci, christianjakobsson"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "PillSorted ×2",
+   "«pillsorted offers glp…»: alister-huong-4b4a944b, zeinab-samira-ardeshir-97a391174"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×14",
+   "«a predicted weight cross check…»: aida-babanari-2115ba152, ana-carolina-gon%c3%a7alves-91305630, dr-amel-imam-27616852, joe-newell-product"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×10",
+   "«expects prescribers to verify independently…»: alessandro-grenci, ana-carolina-gon%c3%a7alves-91305630, joshuagcclick, karim-nassar-370a55106"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×8",
+   "«phone taken in the session…»: alessandro-grenci, ana-carolina-gon%c3%a7alves-91305630, jane-wilkins-374970116, kuljeetsohal"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×7",
+   "«for anyone who does not…»: christianjakobsson, nigel-swift-64862685, oliviaferro, philip-hawkins-46b0548b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«cross check against the declared…»: aida-babanari-2115ba152, dr-amel-imam-27616852, joe-newell-product, ruchirakarunadasa"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«current route for anyone who…»: christianjakobsson, nigel-swift-64862685, oliviaferro, philip-hawkins-46b0548b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«one timestamped record per patient…»: christianjakobsson, faisaltuddy, nigel-swift-64862685, raj-bhogal-ba4b63338"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«the camera roll picker disabled…»: aida-babanari-2115ba152, kuljeetsohal, mir-kirmani-51b483184, richard-bosworth-ab9b6115"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«a smart scales weight estimate…»: barbara-mcgowan-a36891192, james-harmsworth-king-1045575a, sunny-dhain-5b2926347"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×7",
+   "«if you are in london from 23 to 25 november could we meet f…»: alessandro-grenci, christianjakobsson, christopher-tufts-281bb7141, jane-wilkins-374970116"
+  ]
+ ]
+}

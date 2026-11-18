@@ -1,0 +1,40 @@
+{
+ "campaign": "2026-11-17-uk-london-glp1-pharmacies",
+ "checked": 14,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-2",
+ "generated": "2026-11-17T21:05:37",
+ "hard": [],
+ "soft": [
+  [
+   "card wording as copy",
+   "campaign ×10",
+   "«a predicted weight cross check…»: aida-babanari-2115ba152, ana-carolina-gon%c3%a7alves-91305630, dr-amel-imam-27616852, kamran-raja-b11897198"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«expects prescribers to verify independently…»: ana-carolina-gon%c3%a7alves-91305630, jane-wilkins-374970116, karim-nassar-370a55106, kuljeetsohal"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«cross check against the declared…»: dr-amel-imam-27616852, ruchirakarunadasa, yvonne-lim-ba1b7119a"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«for anyone who does not…»: jane-wilkins-374970116, philip-hawkins-46b0548b, ruchirakarunadasa"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«one timestamped record per patient…»: kamran-raja-b11897198, raj-bhogal-ba4b63338, robin-winfield-19a3a12b6"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«the camera roll picker disabled…»: aida-babanari-2115ba152, richard-bosworth-ab9b6115, ruchirakarunadasa"
+  ]
+ ]
+}

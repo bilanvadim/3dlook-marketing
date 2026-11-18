@@ -1,0 +1,110 @@
+{
+ "campaign": "2026-11-17-uk-london-glp1-connections",
+ "checked": 72,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": null,
+ "generated": "2026-11-17T21:43:23",
+ "hard": [],
+ "soft": [
+  [
+   "greeting",
+   "tyankolatev M1",
+   "«Hi Tyanko,» has no «Engr. Tyanko»"
+  ],
+  [
+   "greeting",
+   "tyankolatev M2",
+   "«Hi Tyanko,» has no «Engr. Tyanko»"
+  ],
+  [
+   "M2 opener repeated",
+   "campaign ×11",
+   "«3dlook has worked with 100+ clients.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Reset Health: ciara-cook / dr-laura-falvey-134306176",
+   "«could you spare 30 minutes in london on 23 to 25…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "TribElle: sahithikamaravadi / julie-boora-7ab2a08b",
+   "«could i visit you for 30 minutes at your office?»"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×27",
+   "«on a phone taken in…»: aanisah-sherbaz-b76aa5190, amir-bhogal-202946308, anushka-mehrotra-8b557a151, carlbamford123"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×25",
+   "«phone taken in the session…»: aanisah-sherbaz-b76aa5190, amir-bhogal-202946308, anushka-mehrotra-8b557a151, carlbamford123"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×15",
+   "«expects prescribers to verify independently…»: aanisah-sherbaz-b76aa5190, andy-boysan-37a79037, bilal-al-sheikh-hussain-72839216b, bryony-henderson-a2911657"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×9",
+   "«23 to 25 november and…»: abdullahsabyah, anushka-mehrotra-8b557a151, dalia-k-978841261, danielle-brightman-76199b1b7"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×9",
+   "«a predicted weight cross check…»: bryony-henderson-a2911657, craig-watt-16944859, danielle-brightman-76199b1b7, gary-evans-757937180"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×9",
+   "«same session as the consultation…»: abdullahsabyah, ahsan-bhatti-bb1105122, alice-pan-28435535, dalia-k-978841261"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×8",
+   "«in the same session as…»: abdullahsabyah, ahsan-bhatti-bb1105122, alice-pan-28435535, dalia-k-978841261"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×7",
+   "«current route for anyone who…»: amit-vassa-45352780, ciara-cook, gianluca-uberti-83669121, mark-pedder"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×7",
+   "«one timestamped record per patient…»: aanisah-sherbaz-b76aa5190, dara-o-malley-a70ab598, doruk-on, james-o-loan-a9b15977"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«keeps its current route for…»: ciara-cook, gianluca-uberti-83669121, mark-pedder, sophie-kanani-acharya-9b5804144"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«a gphc spokesperson said in…»: alyza-gines, leighton-humphreys-883a82a9, mubin-bux-062434173, sophie-kanani-acharya-9b5804144"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«the camera roll picker disabled…»: caleum-sean-fox-norbury-133970194, calum-mackenzie-chambers, carlbamford123, rajive-patel"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«would 30 minutes at your office work»: amit-vassa-45352780, sweta-k-0435a31b5"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«would you meet for 30 minutes then or talk by phone»: declan-lismore-22401a214, leighton-humphreys-883a82a9"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«could we spend 30 minutes at your office»: bryony-henderson-a2911657, pujavyas23"
+  ]
+ ]
+}

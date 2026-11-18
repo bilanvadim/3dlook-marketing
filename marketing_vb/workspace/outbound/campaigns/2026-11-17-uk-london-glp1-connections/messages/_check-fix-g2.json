@@ -1,0 +1,180 @@
+{
+ "campaign": "2026-11-17-uk-london-glp1-connections",
+ "checked": 72,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "fix-g2",
+ "generated": "2026-11-17T21:27:34",
+ "hard": [],
+ "soft": [
+  [
+   "greeting",
+   "tyankolatev M1",
+   "«Hi Tyanko,» has no «Engr. Tyanko»"
+  ],
+  [
+   "greeting",
+   "tyankolatev M2",
+   "«Hi Tyanko,» has no «Engr. Tyanko»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Doctor Care Anywhere: patrick-roberts-bbb855227 / laura-o-riordan-89289587",
+   "«would you give me 30 minutes at your office?»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Juniper: sarah-jane-frydman / patrick-jaffe",
+   "«would you have 30 minutes in london, 23 to 25 nov…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Juniper: sarah-jane-frydman / alice-pan-28435535",
+   "«would you have 30 minutes in london, 23 to 25 nov…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Juniper: patrick-jaffe / alice-pan-28435535",
+   "«could you give me 30 minutes in london on 23 to 2…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "TribElle: sahithikamaravadi / julie-boora-7ab2a08b",
+   "«could i visit you for 30 minutes at your office?»"
+  ],
+  [
+   "near-duplicate sentence",
+   "SheMed: pujavyas23 / rachael-joy-a2355bb0",
+   "«could we meet for 30 minutes in london on 23 to 2…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Numan: danielle-brightman-76199b1b7 / bryony-henderson-a2911657",
+   "«if 30 minutes in london on 23 to 25 november suit…»"
+  ],
+  [
+   "sentence opening repeated",
+   "Doctor Care Anywhere ×3",
+   "«i'd like to show you…»: kavita-d-45181719b, laura-o-riordan-89289587, patrick-roberts-bbb855227"
+  ],
+  [
+   "sentence opening repeated",
+   "Doctor Care Anywhere ×3",
+   "«i'm in london from 23…»: anushka-mehrotra-8b557a151, laura-o-riordan-89289587, patrick-roberts-bbb855227"
+  ],
+  [
+   "sentence opening repeated",
+   "Juniper ×3",
+   "«i'm in london 23 to…»: alyza-gines, patrick-jaffe, sarah-jane-frydman"
+  ],
+  [
+   "sentence opening repeated",
+   "Numan ×3",
+   "«if 30 minutes in london…»: bryony-henderson-a2911657, danielle-brightman-76199b1b7, ruth-pointon-07b62a162"
+  ],
+  [
+   "M2 easy out shared",
+   "Doctor Care Anywhere ×2",
+   "«london if a…»: patrick-roberts-bbb855227, sayhitoluis"
+  ],
+  [
+   "M2 easy out shared",
+   "Reset Health ×2",
+   "«london or a…»: ciara-cook, oliver-mcguinness-6001894a"
+  ],
+  [
+   "M2 easy out shared",
+   "SheMed ×2",
+   "«london or a…»: rachael-joy-a2355bb0, sarah-todd-davidson"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×25",
+   "«phone taken in the session…»: amir-bhogal-202946308, carlbamford123, caroline-cleary-24075743, chris-bland-16063119"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×24",
+   "«on a phone taken in…»: amir-bhogal-202946308, carlbamford123, caroline-cleary-24075743, craig-watt-16944859"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×18",
+   "«expects prescribers to verify independently…»: aanisah-sherbaz-b76aa5190, andy-boysan-37a79037, anushka-mehrotra-8b557a151, bilal-al-sheikh-hussain-72839216b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×16",
+   "«independently the weight height or…»: aanisah-sherbaz-b76aa5190, andy-boysan-37a79037, anushka-mehrotra-8b557a151, bilal-al-sheikh-hussain-72839216b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×9",
+   "«one timestamped record per patient…»: aanisah-sherbaz-b76aa5190, chris-bland-16063119, dara-o-malley-a70ab598, doruk-on"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×8",
+   "«a predicted weight cross check…»: bryony-henderson-a2911657, craig-watt-16944859, danielle-brightman-76199b1b7, kasim-gulzar-mrpharms-86b177134"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×8",
+   "«in the same session as…»: abdullahsabyah, ahsan-bhatti-bb1105122, alice-pan-28435535, dalia-k-978841261"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«current route for anyone who…»: amit-vassa-45352780, chrischan92, gianluca-uberti-83669121, mark-pedder"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«a gphc spokesperson said in…»: alyza-gines, declan-lismore-22401a214, leighton-humphreys-883a82a9, mubin-bux-062434173"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«the camera roll picker disabled…»: caleum-sean-fox-norbury-133970194, calum-mackenzie-chambers, carlbamford123, katherinedegnen"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«23 to 25 november and…»: dara-o-malley-a70ab598, gary-evans-757937180, patrick-roberts-bbb855227, timrendell"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«keeps its current route for…»: chrischan92, gianluca-uberti-83669121, mark-pedder, sophie-kanani-acharya-9b5804144"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«with the declared weight against…»: alyza-gines, declan-lismore-22401a214, patrick-roberts-bbb855227, timrendell"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«could we meet for 30 minutes if you are in london from 23 t…»: kavita-d-45181719b, kevinwjoshua"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«could we have 30 minutes at your office»: abdullahsabyah, dalia-k-978841261"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«would you meet for 30 minutes then or talk by phone»: declan-lismore-22401a214, leighton-humphreys-883a82a9"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«is there room for 30 minutes at your office»: alyza-gines, sarah-todd-davidson"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«would 30 minutes at your office work»: amit-vassa-45352780, anushka-mehrotra-8b557a151"
+  ]
+ ]
+}

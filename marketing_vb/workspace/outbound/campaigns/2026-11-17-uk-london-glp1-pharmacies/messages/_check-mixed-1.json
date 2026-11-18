@@ -1,0 +1,60 @@
+{
+ "campaign": "2026-11-17-uk-london-glp1-pharmacies",
+ "checked": 35,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-1",
+ "generated": "2026-11-17T21:08:18",
+ "hard": [],
+ "soft": [
+  [
+   "card wording as copy",
+   "campaign ×12",
+   "«expects prescribers to verify independently…»: alessandro-grenci, barbara-mcgowan-a36891192, david-lepley-73714053, glenn-madden-3b7a9795"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«a predicted weight cross check…»: joe-newell-product, kristienbateman, niamh-mcmillan, stephen-thomas-7409965"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«for anyone who does not…»: christianjakobsson, nigel-swift-64862685, paul-halsall-8471a852, phillburton"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«in the same session as…»: faisaltuddy, glenn-madden-3b7a9795, niamh-mcmillan, stuart-peak-13736622"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«a mismatch threshold the pharmacy…»: faisaltuddy, joshuagcclick, stuart-peak-13736622"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«one timestamped record per patient…»: christianjakobsson, faisaltuddy, stuart-peak-13736622"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«record and the flagged cases…»: chiaulingchow, glenn-madden-3b7a9795, paul-halsall-8471a852"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×6",
+   "«if you are in london from 23 to 25 november could we meet f…»: alister-huong-4b4a944b, christianjakobsson, jess-peek-57b437183, peter-thnoia-9355b2141"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«could we take 30 minutes at your office»: chloe-ferro, gabriel-kohen-08889311b"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«could we spend 30 minutes at your office»: joe-newell-product, oliviaferro"
+  ]
+ ]
+}

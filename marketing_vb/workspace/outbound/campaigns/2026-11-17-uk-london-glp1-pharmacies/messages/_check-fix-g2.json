@@ -1,0 +1,70 @@
+{
+ "campaign": "2026-11-17-uk-london-glp1-pharmacies",
+ "checked": 44,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "fix-g2",
+ "generated": "2026-11-17T21:27:38",
+ "hard": [],
+ "soft": [
+  [
+   "card wording as copy",
+   "campaign ×14",
+   "«expects prescribers to verify independently…»: alessandro-grenci, ana-carolina-gon%c3%a7alves-91305630, barbara-mcgowan-a36891192, glenn-madden-3b7a9795"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×13",
+   "«a predicted weight cross check…»: aida-babanari-2115ba152, ana-carolina-gon%c3%a7alves-91305630, dr-amel-imam-27616852, karim-nassar-370a55106"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«for anyone who does not…»: christianjakobsson, nigel-swift-64862685, philip-hawkins-46b0548b, phillburton"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«one timestamped record per patient…»: christianjakobsson, faisaltuddy, nigel-swift-64862685, raj-bhogal-ba4b63338"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«current route for anyone who…»: christianjakobsson, nigel-swift-64862685, philip-hawkins-46b0548b, phillburton"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«phone taken in the session…»: alessandro-grenci, jane-wilkins-374970116, phillburton, tannaz-s-18b67011b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«cross check against the declared…»: dr-amel-imam-27616852, ruchirakarunadasa, stephen-thomas-7409965, yvonne-lim-ba1b7119a"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«in the same session as…»: faisaltuddy, glenn-madden-3b7a9795, richard-bosworth-ab9b6115, stuart-peak-13736622"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«a mismatch threshold the pharmacy…»: faisaltuddy, joshuagcclick, raj-bhogal-ba4b63338"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«the camera roll picker disabled…»: aida-babanari-2115ba152, richard-bosworth-ab9b6115, ruchirakarunadasa"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×8",
+   "«if you are in london from 23 to 25 november could we meet f…»: alister-huong-4b4a944b, christianjakobsson, christopher-tufts-281bb7141, jane-wilkins-374970116"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«could we spend 30 minutes at your office»: joe-newell-product, oliviaferro"
+  ]
+ ]
+}
