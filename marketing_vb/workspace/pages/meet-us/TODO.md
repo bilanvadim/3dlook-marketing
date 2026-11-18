@@ -38,7 +38,7 @@ Search for `[PLACEHOLDER` in page.md and page.html: every hit below has one.
 
 | # | What | Who | When |
 |---|---|---|---|
-| 10 | Build in WordPress from page.html, Yoast `noindex, follow`, no menu | Asel | by Nov 24 |
+| 10 | **Changed 11-18:** build the «Event page» template per `dev-spec.html` (Google Doc «/meet-us/ event page: developer spec»), first fill for CES incl. Yoast `noindex, follow`, no menu | Pasha (first fill); Asel edits the fields after launch | staging Nov 23, live Nov 24 |
 | 11 | GTM: events `cta_book_hero` (button), `soft_online_demo` (link) and the HubSpot booking success message → GA4 `meeting_booked` with page path. Verify each by hand | Asel | by Nov 24 |
 | 12 | UTM links and QR codes from README.md for every off-site placement | Asel | by Nov 20 (QR goes to print on Dec 2) |
 | 12a | Short link `3dlook.ai/booth/` in Redirection (booth wall + cabinet QR, decision 2026-11-17, see README Tracking). Until Jan 5: point it at `/meet-us/`; Jan 6-9: Max's demo tool (or the follow-up booking if self-scan on own phones is a no); from Jan 10: demo booking. Business cards: vCard QR, not a page | Asel; Vadim confirms the Jan 6-9 target with Max | link by Nov 20 (goes on the wall artwork) |
@@ -56,3 +56,13 @@ Search for `[PLACEHOLDER` in page.md and page.html: every hit below has one.
 | 19 | Watch the FitXpress YouTube video (452QOv0O2Hw, 2024) now in the hero: no «HIPAA compliant» or other retired claims, else pick another video | Vadim | before launch |
 | 20 | Replace the hero video with the booth video (B7) when it is ready; keep the same 16:9 card | Kristina, Asel | Dec 18 |
 | 21 | Move the Figma file from Vadim's drafts into the team project and share with Kristina and Asel | Vadim | Nov 7 |
+
+## Dev spec (2026-11-18, `dev-spec.html`)
+
+| # | What | Who | When |
+|---|---|---|---|
+| 22 | Figma «Conference» still differs from the spec: route tabs show «about 230 m / about 200 m» (remove), eyebrow needs «CES®», trademark line above «Let's talk», the Hall D tab in Meet us_1440 shows the west map poster | Kristina | before staging, Nov 23 |
+| 23 | Sign off the interactive dot motion in the hero on staging (spec section 4) | Kristina | Nov 23 |
+| 24 | Booking stays the HubSpot Meetings iframe (Vadim, 11-18); Kristina's calendar is the layout only. Parked: own calendar on the HubSpot Scheduler API (round robin booking not documented, a community report of MISSING_SCOPES on booking, no captcha or UTM through the API) | Vadim | n/a |
+| 25 | Drive folder «Find-us map v3 (2026-11-13)» is open to anyone with the link (view), so Pasha downloads the videos. Pasha uploads them to the Media Library and replaces them after the December route check, not Asel | Pasha | Nov 23; Dec 10 |
+| 26 | Kristina, Asel and Nika confirm in the #ces-2027-marketing-prep thread that their parts are taken into work | Vadim checks | after the 11-18 post |

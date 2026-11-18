@@ -18,6 +18,7 @@ event. Plan context: Google Doc «CES 2027: план подготовки мар
 |---|---|
 | `page.md` | Copy: variant A (now → January 9), variant B (January 11 → 31), top bar and Contact line |
 | `page.html` | Self-contained prototype of variant A, `DESIGN.md` tokens, classes `.mu-*` |
+| `dev-spec.html` | **Developer spec (2026-11-18), the build source now.** Source of the Google Doc «/meet-us/ event page: developer spec» (`1LcWzN3tRuRpdDGnPiGIVNSKTTQ3uzUUjGToZYldGsqc`, CES 2027 Marketing folder). «Event page» template with fields (constructor for the next conferences), interactive dot hero, route map videos, HubSpot Meetings widget, noindex, GTM. Design = Kristina's Figma «Website» → «Conference». The discount code is redacted here |
 | `TODO.md` | Blockers first; every `[PLACEHOLDER` in the files is listed there |
 | `fact-sheet.md` | Source of every figure, checks done, what is unverified |
 | `gate-reports.md` | Kit substitution, G-A, deliberate deviations, G-T status, event scorecard |
@@ -35,6 +36,8 @@ event. Plan context: Google Doc «CES 2027: план подготовки мар
 On mobile the order is hero → facts → cards → heading → embed → pass → soft link.
 
 ## WordPress and Yoast
+
+> **2026-11-18:** the build follows `dev-spec.html` and Kristina's Figma, not `page.html`. Pasha builds the template and fills it for CES the first time; after launch Asel edits the fields. The notes below still hold where they don't contradict the spec.
 
 - Build from `page.html`: delete the two `data-prototype-chrome` blocks; the theme supplies header and footer.
 - Yoast: SEO title `Meet 3DLOOK at CES 2027 · Booth 55630`; meta description as in `page.html`; Advanced → `noindex`, follow. The page leaves the Yoast sitemap on its own. Add it to no menu.

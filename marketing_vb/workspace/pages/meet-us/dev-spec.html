@@ -1,0 +1,207 @@
+<!-- Source of the Google Doc «/meet-us/ event page: developer spec» (1LcWzN3tRuRpdDGnPiGIVNSKTTQ3uzUUjGToZYldGsqc), 2026-11-18.
+     The Doc is the live version. The CES discount code is redacted here on purpose. -->
+<html><head><meta charset="utf-8"><title>/meet-us/ event page: developer spec</title></head><body>
+
+<h1>/meet-us/ event page: developer spec</h1>
+<p><b>Owner:</b> Vadim · <b>Design:</b> Kristina · <b>Build and first fill for CES:</b> Pasha · <b>Content updates after launch, tracking:</b> Asel<br>
+<b>Go-live:</b> Tue, Nov 24, 2026 (hard date: the first invite email and the CES announcement link to this page)<br>
+<b>Last updated:</b> Nov 18, 2026</p>
+
+<h2>1. What we are building</h2>
+<ul>
+<li>One page at <b>3dlook.ai/meet-us/</b> where we invite people to meet us at a conference. The first event is CES 2027: booth 55630, Venetian Expo, Las Vegas, January 6-9, 2027.</li>
+<li><b>The page is a template.</b> We run several conferences a year. Marketing must be able to change every text, image, video, link and block for the next event in WP admin, without a developer.</li>
+<li><b>The page is not indexed.</b> It is a working tool for conference prep. People reach it from invite emails, LinkedIn outreach, the flyer QR, business cards and social posts. It is not in the menus, the sitemap or search.</li>
+<li>Design: Kristina's Figma (links below), 4 widths. The first screen has an <b>interactive dot background</b> (section 4).</li>
+</ul>
+
+<h2>2. Sources</h2>
+<table border="1" cellpadding="6">
+<tr><th>What</th><th>Where</th></tr>
+<tr><td>Design, 4 widths</td><td>Figma «Website», page «Conference»: <a href="https://www.figma.com/design/nSO7lnnQqCaTRokR841Ew1/Website?node-id=5114-2374">open</a>. Frames: Meet us_1920 (5338:3739), Meet us_1440 (5170:5929), Meet us_744 (5341:938), Meet us_375 (5344:548). Booking mock components: 5331:204</td></tr>
+<tr><td>Map videos and posters</td><td>Google Drive: CES 2027 → CES 2027 Marketing → <a href="https://drive.google.com/drive/folders/1JL6o5kZhEnXSqFLBM-pPIlK83DmnuQd1">Find-us map v3 (2026-11-13)</a>. File list in section 6. Do not use the subfolder «Old · whole floor (do not use)»</td></tr>
+<tr><td>Meeting booking</td><td>HubSpot Meetings link: <a href="https://meetings.hubspot.com/katerina-galich/booth-55630">meetings.hubspot.com/katerina-galich/booth-55630</a>. Embed code in section 8</td></tr>
+<tr><td>Copy</td><td>Figma is the source. Section 9 lists the corrections that are not in Figma yet. They override Figma</td></tr>
+</table>
+
+<h2>3. Page structure</h2>
+<table border="1" cellpadding="6">
+<tr><th>#</th><th>Block</th><th>What is in it</th></tr>
+<tr><td>0</td><td>Header</td><td>The live site header from the theme. Figma shows the old menu (Use Cases, Wrist, Made-to-Measure…). Ignore it, do not rebuild it</td></tr>
+<tr><td>1</td><td>Hero</td><td>Interactive dot background. Eyebrow, H1, line under the H1, lede, button «Book a meeting at the booth» (scrolls to #book), «About FitXpress» video button. Facts row: date card, location card with the link «See the route» (scrolls to #find), blue booth card «A corner booth / 55630»</td></tr>
+<tr><td>2</td><td>Find us (#find)</td><td>Heading «How do you find booth 55630?», lede, route tabs, numbered steps, looping map video (section 6)</td></tr>
+<tr><td>3</td><td>What you can see</td><td>Heading and 3 cards: image, title, text</td></tr>
+<tr><td>4</td><td>Book a meeting (#book)</td><td>Heading, intro, time zone line, HubSpot Meetings widget, discount code block, link to an online demo (section 8)</td></tr>
+<tr><td>5</td><td>Small print</td><td>One small line above «Let's talk» (trademark notice, section 9)</td></tr>
+<tr><td>6</td><td>Let's talk + footer</td><td>The site-wide blocks, the same as on every other page</td></tr>
+</table>
+<p><b>Hidden layers in Figma are not part of the page.</b> Do not build: the «Highlights» eyebrows («The Problem», «The Underwriting Record»), the FitXpress API paragraph under «What can you see…», the «Map note» under the map, the second «About» play button next to the main button, and the layer «Waving-blue-digital-fabric-loop» (a stock file, licence unknown).</p>
+
+<h2>4. Hero: interactive dot background</h2>
+<p>The dots must react to the user. This is the main visual idea of the page.</p>
+<ul>
+<li><b>Look at rest:</b> black background with a grid of small grey dots, as in the Figma layer «Dots BG» (grid about 40 px, dots 1-3 px, different brightness, dim under a 42% black overlay). Take sizes and colours from Figma.</li>
+<li><b>Mouse:</b> dots near the cursor (radius about 150-200 px) grow, get brighter and turn brand blue (#143DFF at the edge of the effect, #B1BDFF near the centre). They move slightly away from the cursor. When the cursor leaves, they return to rest smoothly (about 0.5 s).</li>
+<li><b>No cursor activity:</b> a slow, quiet wave or twinkle across the grid, so the screen feels alive on load and on phones.</li>
+<li><b>Touch screens:</b> a tap on the hero sends a ripple from the tap point. Do not block page scrolling.</li>
+<li><b>prefers-reduced-motion:</b> static dots, no animation.</li>
+<li><b>Text stays readable:</b> limit the brightness of the effect behind the text block. Contrast of text against the background at least 4.5:1.</li>
+<li><b>Tech:</b> one &lt;canvas&gt; behind the hero content, plain JavaScript with Canvas 2D. No three.js, no new libraries, no plugins. requestAnimationFrame. Pause when the hero is off screen (IntersectionObserver) or the tab is hidden. Cap devicePixelRatio at 2. Load the script deferred.</li>
+<li><b>No impact on loading:</b> the H1 and the button render without JS. Before JS starts, the hero shows a static dot image (export of «Dots BG») as a CSS background.</li>
+<li><b>Sign-off:</b> Kristina approves the final motion (radius, colours, speed) on staging.</li>
+</ul>
+<p><b>«About FitXpress» button:</b> opens a modal with the YouTube video 452QOv0O2Hw through youtube-nocookie.com. The player loads only on click. The video ID is a field, so we can switch to the booth video in December.</p>
+
+<h2>5. Constructor: how the template works</h2>
+<ul>
+<li><b>Who fills it:</b> Pasha fills the template for CES the first time: all texts, images, videos and Yoast settings. After launch, and for the next conferences, Asel changes the content in the fields.</li>
+<li>A custom page template «Event page» in the theme (/wp-content/themes/3dlook/). All content comes from custom fields: use what the theme already uses for fields (ACF, if it is installed). No Elementor.</li>
+<li><b>No new plugins.</b> Vadim's rule for 3dlook.ai. If something cannot be done without one, ask Vadim first.</li>
+<li>HTML is rendered on the server. JS only adds behaviour (dots, tabs, video, modal).</li>
+<li>Every block has a <b>Show / Hide</b> switch. Hidden blocks leave no gaps and no empty markup.</li>
+<li>Anchors (#find, #book) are fields with these defaults.</li>
+<li>More than one page can use the template at the same time, for example the live event and a draft for the next one.</li>
+<li>Field labels in English, with a short hint: image sizes, character limits, where the text appears.</li>
+</ul>
+
+<table border="1" cellpadding="6">
+<tr><th>Block</th><th>Fields</th></tr>
+<tr><td>Hero</td><td>Show/Hide; interactive dots on/off; fallback background image; eyebrow; H1; line under the H1; lede; button label + target (anchor or URL); video button label + YouTube ID (empty = no button)</td></tr>
+<tr><td>Facts row</td><td>Show/Hide; repeater of 1-3 cards: icon (date / location), title, link label, link URL or anchor; highlight card: small label («A corner booth») + big value («55630»), Show/Hide</td></tr>
+<tr><td>Find us</td><td>Show/Hide; heading; lede; repeater of 1-4 routes: tab label, route key for analytics (e.g. «foyer»), MP4 video, poster image, optional mobile MP4 + poster, repeater of steps (text). One route = no tabs</td></tr>
+<tr><td>Cards</td><td>Show/Hide; heading; repeater of 1-4 cards: image, title, text</td></tr>
+<tr><td>Booking</td><td>Show/Hide; heading; intro; time zone line; HubSpot Meetings URL; fallback button label + URL (used when the Meetings URL is empty)</td></tr>
+<tr><td>Code block</td><td>Show/Hide; heading; text (with bold for the code); link label + URL; optional «hide after» date</td></tr>
+<tr><td>Soft link</td><td>Text before the link; link label; URL</td></tr>
+<tr><td>Small print</td><td>One line of text; empty = hidden</td></tr>
+</table>
+<p>If the «hide after» date is built: WP Rocket caches the page, so the block must also disappear from the cached copy (clear the page cache on that date). If this is hard, skip the date field: Asel will switch the block off by hand on January 1.</p>
+<p><b>Acceptance test for the constructor:</b> Asel builds a test page for a made-up event on staging: another name and dates, one route without tabs, two cards, no code block, no video button. No code changes, and it looks right at all 4 widths.</p>
+
+<h2>6. Find us: route map</h2>
+<ul>
+<li><b>Tabs:</b> «Hall D entrance» and «Hall C entrance». Labels only: remove «about 230 m» and «about 200 m» (Vadim's decision, still in Figma). Default tab: Hall D entrance.</li>
+<li><b>Video:</b> &lt;video autoplay muted loop playsinline&gt; with a poster. No controls, no Replay button, no distance or walking time, no note under the map. The route animation loops by itself (11.4 s).</li>
+<li>A tab switch swaps the video and the steps and starts the new video from the beginning.</li>
+<li>The steps are an ordered list. Their numbers match the numbers on the map.</li>
+<li>Load the video only when the block gets close to the screen. Until then, show the poster. Reserve the space (aspect ratio 1600:1272) so the page does not jump.</li>
+<li>prefers-reduced-motion: poster only, no autoplay.</li>
+<li>The video is decorative for screen readers (aria-hidden). The steps carry the information. Tabs: role="tablist", aria-selected, arrow keys.</li>
+<li><b>Pasha downloads the files from the Drive folder (anyone with the link can view and download) and uploads them to the WordPress Media Library.</b> Do not link to Google Drive.</li>
+<li><b>Note:</b> in the Figma 1440 frame, the Hall D tab shows the west poster. Use the foyer files for Hall D.</li>
+</ul>
+
+<table border="1" cellpadding="6">
+<tr><th>Tab</th><th>Video (MP4, 1600×1272, H.264)</th><th>Poster (PNG)</th></tr>
+<tr><td>Hall D entrance</td><td><a href="https://drive.google.com/file/d/1nLJLjv7OdIt05m6QSUPg9ZSoIQkRSiu2/view">ces2027-booth-55630-map-foyer-1600.mp4</a> (395 KB)</td><td><a href="https://drive.google.com/file/d/1UPq7UCsKKXEEp3cGQqy4hEXkFZruxsdz/view">ces2027-booth-55630-map-foyer-poster-1600.png</a></td></tr>
+<tr><td>Hall C entrance</td><td><a href="https://drive.google.com/file/d/1JdKO6043S02fDIYThux3s7g5IfAFjHWk/view">ces2027-booth-55630-map-west-1600.mp4</a> (387 KB)</td><td><a href="https://drive.google.com/file/d/1iYb9Ca45K7r0F6UeWDa4SZzbBVJokCN-/view">ces2027-booth-55630-map-west-poster-1600.png</a></td></tr>
+</table>
+<p>The GIFs in the same folder are for email and social. Not for the page.</p>
+
+<p><b>Steps, Hall D entrance:</b></p>
+<ol>
+<li>Leave the escalators and walk along the Venetian Ballroom, keeping it on your right.</li>
+<li>At the end of the ballroom, turn right into the corridor to the Hall D entrance.</li>
+<li>Go through the Hall D entrance and straight on to the main Health aisle.</li>
+<li>Turn right and walk about 40 m, then turn left into a narrow aisle.</li>
+<li>Booth 55630 is about 25 m ahead on your left, at the corner.</li>
+</ol>
+<p><b>Steps, Hall C entrance:</b></p>
+<ol>
+<li>Walk along the west concourse to the Hall C entrance.</li>
+<li>Go through the Hall C entrance and follow the aisle to the main Health aisle.</li>
+<li>Turn right, pass the Health Hub and keep going about 95 m. Turn left into a narrow aisle.</li>
+<li>Booth 55630 is about 25 m ahead on your left, at the corner.</li>
+</ol>
+<p>Marketing checks both routes against the final floor plan by Dec 10. If anything changes, we put new files with the same names in the same folder and Pasha replaces them on the site.</p>
+<p><b>Phones:</b> at 375 px the map is about 343 px wide. If the labels are unreadable on staging, tell us. We will render a mobile crop, and the mobile video field takes it.</p>
+
+<h2>7. Cards «What can you see at booth 55630?»</h2>
+<p>Three cards from Figma (image, title, text). Export the images from Figma (WebP, 2x). The third card's title is «Wrist and finger sizing», text as in Figma.</p>
+
+<h2>8. Book a meeting (#book)</h2>
+<ul>
+<li><b>The calendar in Figma is a mock.</b> The real widget is HubSpot Meetings in an iframe: round robin between Katerina and Whitney, 15-minute slots, January 6-9. Page CSS does not reach inside the iframe. Build the left column and a container the size of the mock, and the widget fills it. Do not build a custom calendar or use HubSpot's internal booking API.</li>
+<li>Embed code:<br>
+<code>&lt;div class="meetings-iframe-container" data-src="https://meetings.hubspot.com/katerina-galich/booth-55630?embed=true"&gt;&lt;/div&gt;</code><br>
+<code>&lt;script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"&gt;&lt;/script&gt;</code><br>
+The URL comes from the Booking field. The script loads only when the block exists.</li>
+<li><b>Time zone line</b> next to the widget: «Times show in your time zone. Pick Pacific Time in the menu to see Las Vegas time.» The widget shows the visitor's local time, and before the show almost nobody is in Las Vegas yet.</li>
+<li><b>Code block:</b> heading «No CES badge yet?». Text: «Use our code <b>[code: in the Google Doc only, kept out of this repo]</b> for $149 off CES registration. Valid until December 31.» Link «Register for CES» → https://registration.experientevent.com/showCES271/Wizard/Landing. The code is case-sensitive: copy it exactly. Never write «free». The block goes off on January 1, 2027.</li>
+<li><b>Soft link:</b> «Not going to Las Vegas? Request an online demo instead.» → https://3dlook.ai/contact-us/</li>
+<li>Exclude MeetingsEmbedCode.js and the dots script from delayed JS (WP Rocket «Delay JS» and Flying Scripts). Otherwise the widget appears only after the first scroll or click. Test the widget with cookies accepted and with cookies not yet accepted (WebToffee banner).</li>
+</ul>
+
+<h2>9. Copy changes not yet in Figma</h2>
+<table border="1" cellpadding="6">
+<tr><th>Where</th><th>Text</th></tr>
+<tr><td>Hero eyebrow</td><td>CES® 2027 · Las Vegas · January 6-9 (® only on the first «CES» of the page)</td></tr>
+<tr><td>Small print, above «Let's talk»</td><td>CES® and its logo are registered trademarks of the Consumer Technology Association.</td></tr>
+<tr><td>Route tabs</td><td>«Hall D entrance», «Hall C entrance», without distances</td></tr>
+<tr><td>Booking</td><td>Time zone line (section 8)</td></tr>
+</table>
+<p>There is no CES logo on the page, and that stays so (CTA brand rules).</p>
+
+<h2>10. Indexing and SEO</h2>
+<ul>
+<li>Yoast: <b>noindex, follow</b>. Yoast leaves noindex pages out of the sitemap by itself.</li>
+<li>Make noindex the template default in code (Yoast robots filter), so a new event page can't get indexed by mistake.</li>
+<li>Do not block the URL in robots.txt: Google has to read the noindex.</li>
+<li>Not in the header, footer or any menu. Not in site search, related posts or other automatic lists.</li>
+<li>No schema markup.</li>
+<li>Title and meta description per page in Yoast. CES: «Meet 3DLOOK at CES 2027 · Booth 55630». OG image 1200×630 from Kristina, set in Yoast.</li>
+<li>The slug stays /meet-us/. No «CES» in URLs (CTA contract).</li>
+</ul>
+
+<h2>11. Analytics</h2>
+<p>Asel sets the GTM tags. On the page, give each tracked element a stable attribute such as <code>data-track="cta_book_hero"</code>. Do not rely on CSS classes: some old GTM triggers still point at selectors of pages that no longer exist.</p>
+<table border="1" cellpadding="6">
+<tr><th>Event</th><th>When</th></tr>
+<tr><td>cta_book_hero</td><td>Click on the hero button</td></tr>
+<tr><td>cta_find_hero</td><td>Click on «See the route»</td></tr>
+<tr><td>map_route_select</td><td>Tab click, with the route key (foyer / west)</td></tr>
+<tr><td>soft_online_demo</td><td>Click on «Request an online demo»</td></tr>
+<tr><td>meeting_booked</td><td>Booking completed in the widget. HubSpot sends a postMessage with meetingBookSucceeded. Push it to dataLayer</td></tr>
+</table>
+<p>No UTM tags on links inside the site.</p>
+
+<h2>12. Quality bar</h2>
+<ul>
+<li>The 4 Figma widths (1920, 1440, 744, 375). Fluid in between, no horizontal scroll.</li>
+<li>Satoshi and the colours from the theme. Visible keyboard focus (ring #B1BDFF, 3 px).</li>
+<li>Mobile: LCP under 2.5 s, CLS under 0.1. Video and widget space reserved.</li>
+<li>Tested in Chrome, Safari (macOS + iPhone), Firefox, Edge, Android Chrome.</li>
+</ul>
+
+<h2>13. Site-wide top bar</h2>
+<p>Separate small task, also reusable for future events: a thin bar above the header on all pages. Fields in theme options: on/off, text, link, show from / show until. For CES: «Meet us at CES® · Booth 55630 · Book a meeting» → /meet-us/#book, from Dec 1, 2026 to Jan 9, 2027.</p>
+
+<h2>14. Page life cycle (content changes, no dev work)</h2>
+<table border="1" cellpadding="6">
+<tr><th>Date</th><th>What happens</th><th>Who</th></tr>
+<tr><td>Nov 23</td><td>Staging link for review: Vadim, Kristina, Asel</td><td>Pasha</td></tr>
+<tr><td>Nov 24</td><td>Page live (invite email 1 and the CES announcement link to it)</td><td>Pasha</td></tr>
+<tr><td>Dec 1</td><td>Top bar on</td><td>Asel</td></tr>
+<tr><td>by Dec 10</td><td>Map files replaced if the floor plan changed</td><td>Vadim → Pasha</td></tr>
+<tr><td>Dec 18</td><td>Hero video switches to the booth video, if it is ready</td><td>Kristina → Asel</td></tr>
+<tr><td>Jan 1</td><td>Code block off</td><td>Asel</td></tr>
+<tr><td>Jan 11</td><td>After-show version: «Missed us at CES 2027?», booking switched to an online demo, facts and code blocks off, top bar off</td><td>Asel, Nika</td></tr>
+<tr><td>Feb 1</td><td>Next event on the same URL, or a 301 to demo booking (Redirection). CES content must be off the site by Feb 8, 2027 (CTA rule)</td><td>Vadim</td></tr>
+</table>
+
+<h2>15. Not in this task</h2>
+<ul>
+<li>Short link 3dlook.ai/booth/ for the booth QR: Asel, in Redirection.</li>
+<li>HubSpot Meetings settings: Vadim and Katerina.</li>
+<li>QR codes and UTM links: Asel.</li>
+<li>Copy: Nika and Vadim.</li>
+</ul>
+
+<h2>16. Open questions</h2>
+<ul>
+<li>Dot motion: Kristina approves on staging.</li>
+<li>Map on phones: if it is unreadable at 375 px, marketing renders a mobile version.</li>
+<li>Hero video (YouTube 452QOv0O2Hw, 2024): Vadim checks it for outdated claims before launch.</li>
+</ul>
+
+</body></html>
