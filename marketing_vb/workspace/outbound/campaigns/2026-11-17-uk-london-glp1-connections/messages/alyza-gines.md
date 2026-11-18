@@ -2,8 +2,8 @@
 
 ## Context used
 - Angle: operations
-- Hook: Juniper GLP-1 service with coaching; GPhC spokesperson quote
-- Proof point: two photos; threshold flag to a clinician
+- Hook: Juniper coaching; GPhC spokesperson quote
+- Proof point: two photos; speed sentence
 
 ---
 
@@ -15,22 +15,26 @@ Hi Alyza,
 
 Juniper pairs GLP-1 treatment with coaching. A GPhC spokesperson said in January 2026 that "having one photo by itself is not going to be sufficient".
 
-I run 3DLOOK, and I'd like to show you a capture on a phone that takes two photos in the session. I'm in London on 23 to 25 November. Would you have 30 minutes to spare at your office?
+A photo from a camera roll also carries no proof of when it was taken. At 3DLOOK we make FitXpress, which saves each check as one timestamped structured record for your team, with a Smart Scales weight estimate and BMI beside the declared figures. The patient takes two guided photos on their phone during the consultation, front and side, and gallery uploads are blocked. A mismatch above the threshold Juniper chooses goes to a clinician to review. Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+I'm in London 23 to 25 November. Could we spend 30 minutes at your office?
 https://meetings.hubspot.com/katerina-galich/london
 
 Katerina
 
-**Char count:** 409 / 600
+**Char count:** 876 / 900
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Alyza,
 
-Smart Scales gives a software estimate of weight, shown next to the declared weight. A gap above the threshold Juniper sets goes to a clinician to review.
+The scan is under 45 seconds from the photos to structured results. Juniper keeps its current route for anyone who does not scan.
 
-Could we meet for 30 minutes at your office on 23 to 25 November? You can pick a time here: https://meetings.hubspot.com/katerina-galich/london
+I'm in London 23 to 25 November. Could we meet for 30 minutes at your office? You can pick a time here:
+https://meetings.hubspot.com/katerina-galich/london
 
-For a call, my calendar is here: https://meetings.hubspot.com/katerina-galich
+For a phone call, my calendar is here:
+https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 399 / 550
+**Char count:** 392 / 900

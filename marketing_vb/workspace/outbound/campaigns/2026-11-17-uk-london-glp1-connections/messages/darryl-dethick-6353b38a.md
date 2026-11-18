@@ -2,8 +2,8 @@
 
 ## Context used
 - Angle: compliance
-- Hook: Head of Pharmacy; paid weight management at some branches
-- Proof point: two photos; threshold; boundary sentence
+- Hook: Peak Pharmacy branches list a paid weight management service
+- Proof point: two photos; speed sentence; boundary sentence
 
 ---
 
@@ -13,23 +13,25 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Darryl,
 
-Some Peak Pharmacy branches list a paid weight management service, and I'd like to learn whether medicated weight loss is part of what your side handles and how weight is confirmed. 3DLOOK's two-photo capture on a phone, taken in the session, returns a timestamped record for the pharmacy file.
+Some Peak Pharmacy branches list a paid weight management service, and I'd like to learn whether medicated weight loss is part of it and how weight is confirmed. A photo uploaded from a camera roll gives a pharmacy no way to tell when it was taken.
+
+At 3DLOOK we make FitXpress, which captures 2 photos on the patient's phone in the session, guided for pose and framing, with the camera-roll picker disabled. Your clinicians see a Smart Scales weight estimate beside the declared weight, and a gap above the threshold the pharmacy sets goes to a clinician. Each check leaves one timestamped record for the pharmacy file.
 
 I'm in London 23 to 25 November. Could we find 30 minutes then, or talk by phone?
-
 https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 445 / 600
+**Char count:** 770 / 900
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Darryl,
 
-The pharmacy sets the mismatch threshold, and a clinician reviews whatever it flags. FitXpress is not a medical device and does not make eligibility decisions.
+The scan is under 45 seconds from the photos to structured results. FitXpress is not a medical device and does not make eligibility decisions. Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
 
-My calendar for a call: https://meetings.hubspot.com/katerina-galich
+My calendar for a call:
+https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 251 / 550
+**Char count:** 359 / 900

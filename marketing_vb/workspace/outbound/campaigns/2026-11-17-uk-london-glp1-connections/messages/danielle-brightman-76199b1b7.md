@@ -2,8 +2,8 @@
 
 ## Context used
 - Angle: product
-- Hook: Director of Clinical Product; coaching around the prescription
-- Proof point: SDK; two photos front and side; pose and framing
+- Hook: Director of Clinical Product, Numan coaching programme
+- Proof point: 2 photos front and side; threshold; record
 
 ---
 
@@ -13,25 +13,28 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Danielle,
 
-Numan pairs the prescription with coaching, and I'd like to see where weight is confirmed in that journey today. At 3DLOOK we built an SDK capture of two photos, front and side, that adds a predicted-weight cross-check and a timestamped record in the same session.
+Numan pairs the prescription with coaching, and I'd like to see how a weight check sits in that journey. Whatever the route, what reaches a clinical review file varies from case to case.
+
+At 3DLOOK we make FitXpress. Inside the consultation the patient takes 2 photos on their phone, front and side. A Smart Scales weight estimate and BMI appear next to the declared figures, a gap above the threshold Numan sets goes to a clinician, and each check leaves one timestamped record in the same structure. It is built as an SDK, with pose and framing guidance and camera-roll uploads switched off.
 
 I'm in London 23 to 25 November. Could I visit Numan for 30 minutes?
 https://meetings.hubspot.com/katerina-galich/london
 
 Katerina
 
-**Char count:** 410 / 600
+**Char count:** 739 / 900
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Danielle,
 
-During capture the SDK shows pose and framing guidance on screen, and the two photos feed one structured record.
+The scan also returns 80+ body measurements. On data handling, photos are deleted after processing or within 30 days, per the pharmacy's policy, and retained photos are blurred with faces obfuscated at capture. Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
 
-I can meet in London on 23 to 25 November, and you can choose a 30-minute slot here: https://meetings.hubspot.com/katerina-galich/london
+If you can spare 30 minutes in London on 23 to 25 November, choose a slot here:
+https://meetings.hubspot.com/katerina-galich/london
 
 For a call, you can book a time here:
 https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 358 / 550
+**Char count:** 576 / 900

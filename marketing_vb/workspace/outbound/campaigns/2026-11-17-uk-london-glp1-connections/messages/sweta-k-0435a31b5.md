@@ -2,8 +2,8 @@
 
 ## Context used
 - Angle: operations
-- Hook: DCA behaviour programme alongside treatment; operations lane
-- Proof point: two photos; current route stays
+- Hook: Operations Manager; behaviour programme alongside treatment
+- Proof point: two photos; speed sentence; current route
 
 ---
 
@@ -13,24 +13,28 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Sweta,
 
-Doctor Care Anywhere's weight-loss patients follow a behaviour programme as well as treatment. I run 3DLOOK, and I'd like to show you a two-photo capture on a phone that gives the programme a weight record from the same session as the consultation.
+Doctor Care Anywhere's weight-loss patients follow a behaviour programme as well as treatment. When weight is confirmed at a distance, the material in a file can differ from one case to the next.
 
-I'm in London on 23 to 25 November. Would 30 minutes at your office work?
+FitXpress, which 3DLOOK makes, runs from 2 photos taken on the patient's phone during the consultation, guided for pose and framing. Each check is saved as one timestamped record from that session, which gives the programme a weight record dated to the consultation. The record holds a Smart Scales weight estimate and BMI beside the declared weight.
+
+I'm in London 23 to 25 November. Could I come to your office for 30 minutes?
 https://meetings.hubspot.com/katerina-galich/london
 
 Katerina
 
-**Char count:** 396 / 600
+**Char count:** 698 / 900
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Sweta,
 
-Doctor Care Anywhere keeps its current route for anyone who does not scan, and the capture adds one record per patient to the programme.
+The scan is under 45 seconds from the photos to structured results. Anyone who does not scan keeps the current route at Doctor Care Anywhere. Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
 
-I am in London on 23 to 25 November and can come to you for 30 minutes, at a time you choose here: https://meetings.hubspot.com/katerina-galich/london
+I'm in London 23 to 25 November and can come to your office for 30 minutes, at a time you choose here:
+https://meetings.hubspot.com/katerina-galich/london
 
-Calls are open in my calendar here: https://meetings.hubspot.com/katerina-galich
+My calendar for a phone call is here:
+https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 391 / 550
+**Char count:** 527 / 900

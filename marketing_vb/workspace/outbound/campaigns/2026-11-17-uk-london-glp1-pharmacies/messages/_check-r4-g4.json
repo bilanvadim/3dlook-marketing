@@ -1,0 +1,115 @@
+{
+ "campaign": "2026-11-17-uk-london-glp1-pharmacies",
+ "checked": 44,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "r4-g4",
+ "generated": "2026-11-18T13:44:22",
+ "hard": [],
+ "soft": [
+  [
+   "M2 opener repeated",
+   "campaign ×5",
+   "«the scan is under 45 seconds from the photos to s…»"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "PillSorted ×2",
+   "«pillsorted offers glp…»: alister-huong-4b4a944b, zeinab-samira-ardeshir-97a391174"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×14",
+   "«a smart scales weight estimate…»: barbara-mcgowan-a36891192, chloe-ferro, christopher-tufts-281bb7141, glenn-madden-3b7a9795"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×10",
+   "«a predicted weight cross check…»: aida-babanari-2115ba152, ana-carolina-gon%c3%a7alves-91305630, dr-amel-imam-27616852, joe-newell-product"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×10",
+   "«expects prescribers to verify independently…»: alessandro-grenci, ana-carolina-gon%c3%a7alves-91305630, joshuagcclick, karim-nassar-370a55106"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×8",
+   "«a gap above the threshold…»: barbara-mcgowan-a36891192, chloe-ferro, nigel-swift-64862685, oliviaferro"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×7",
+   "«for anyone who does not…»: christianjakobsson, nigel-swift-64862685, oliviaferro, philip-hawkins-46b0548b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«current route for anyone who…»: christianjakobsson, nigel-swift-64862685, oliviaferro, philip-hawkins-46b0548b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«for pose and framing with…»: barbara-mcgowan-a36891192, glenn-madden-3b7a9795, robin-winfield-19a3a12b6, ruchirakarunadasa"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«declared figures a gap above…»: barbara-mcgowan-a36891192, chloe-ferro, nigel-swift-64862685, robin-winfield-19a3a12b6"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«is flagged for a clinician…»: barbara-mcgowan-a36891192, chloe-ferro, oliviaferro, ruchirakarunadasa"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«one timestamped record per patient…»: christianjakobsson, faisaltuddy, raj-bhogal-ba4b63338, stuart-peak-13736622"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«the camera roll picker disabled…»: aida-babanari-2115ba152, christopher-tufts-281bb7141, mir-kirmani-51b483184, richard-bosworth-ab9b6115"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«a threshold the pharmacy sets…»: alessandro-grenci, christopher-tufts-281bb7141, kuljeetsohal"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«carries no proof of when…»: chloe-ferro, glenn-madden-3b7a9795, rachel-jones-9b89bb14b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«cross check against the declared…»: aida-babanari-2115ba152, dr-amel-imam-27616852, joe-newell-product"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«keeps its current route for…»: nigel-swift-64862685, oliviaferro, philip-hawkins-46b0548b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«next to the declared figures…»: nigel-swift-64862685, richard-bosworth-ab9b6115, robin-winfield-19a3a12b6"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«record for the review file…»: rachna-chhatralia-1b80ba2b3, robin-winfield-19a3a12b6, tannaz-s-18b67011b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«weight is only a number…»: nigel-swift-64862685, oliviaferro, ruchirakarunadasa"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×6",
+   "«if you are in london from 23 to 25 november could we meet f…»: christianjakobsson, christopher-tufts-281bb7141, jane-wilkins-374970116, jess-peek-57b437183"
+  ]
+ ]
+}

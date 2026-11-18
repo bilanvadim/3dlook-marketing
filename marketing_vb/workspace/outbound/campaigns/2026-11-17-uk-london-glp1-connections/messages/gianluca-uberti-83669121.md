@@ -2,8 +2,8 @@
 
 ## Context used
 - Angle: operations
-- Hook: operations time of Juniper's weight check; VP Operations
-- Proof point: two photos; speed sentence; current route stays
+- Hook: how Juniper confirms weight when treatment starts
+- Proof point: two photos; record; 100+ clients
 
 ---
 
@@ -13,24 +13,28 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Gianluca,
 
-I'd like to understand how much operations time Juniper's weight check takes today. My company, 3DLOOK, has a two-photo capture on a phone that gives the team a timestamped record from the session.
+I'd like to hear how Juniper confirms a patient's weight when GLP-1 treatment starts. When checks are done in different ways, what reaches a review file differs from case to case.
 
-I'm in London from 23 to 25 November. Would you be open to 30 minutes at your office?
+At 3DLOOK we make FitXpress. The patient takes 2 photos on their phone in the same session as the consultation, guided for pose and framing, and every image comes from that session. Each check is saved as one timestamped structured record, with a Smart Scales weight estimate beside the declared weight. Juniper sets a mismatch threshold, and a clinician looks at any case that passes it.
+
+I'm in London 23 to 25 November. Would you be open to 30 minutes at your office?
 https://meetings.hubspot.com/katerina-galich/london
 
 Katerina
 
-**Char count:** 360 / 600
+**Char count:** 727 / 900
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Gianluca,
 
-For the operations team, the scan takes under 45 seconds from the photos to structured results. Juniper keeps its current route for anyone who does not scan.
+3DLOOK has worked with 100+ clients. Photos are deleted after processing or within 30 days, per the pharmacy's policy. Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
 
-If 30 minutes at your office on 23 to 25 November is possible, a slot can be picked here: https://meetings.hubspot.com/katerina-galich/london
+Would 30 minutes at your office on 23 to 25 November work? A slot can be picked here:
+https://meetings.hubspot.com/katerina-galich/london
 
-A call slot can be picked here: https://meetings.hubspot.com/katerina-galich
+Phone slots are in this calendar:
+https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 402 / 550
+**Char count:** 486 / 900

@@ -2,8 +2,8 @@
 
 ## Context used
 - Angle: compliance
-- Hook: Founder and Superintendent; free monthly video consultation
-- Proof point: two photos; Smart Scales estimate; boundary sentence
+- Hook: LIVVE free monthly video consultation
+- Proof point: two photos; threshold; 100+ clients
 
 ---
 
@@ -13,23 +13,27 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Melissa,
 
-LIVVE gives each patient a free monthly video consultation with a prescribing pharmacist. At 3DLOOK we built a capture of two photos on a phone, taken in the session, that adds a structured, timestamped record the pharmacy keeps between those calls.
+LIVVE gives each patient a free monthly video consultation with a prescribing pharmacist. A weight shown on video has to be judged by eye, and what ends up in the file differs from case to case.
 
-I'm in London 23 to 25 November. Would you have 30 minutes for me then, or a call?
+At 3DLOOK we make FitXpress for the time between calls. The patient takes 2 photos on their phone, guided for pose and framing, with camera-roll uploads switched off. A pharmacist sees a Smart Scales weight estimate and BMI beside the declared figures, a gap above the threshold LIVVE sets is flagged for review, and each check is kept as one timestamped record. Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
 
+If you're in London 23 to 25 November, could we meet for 30 minutes? A call works as well.
 https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 402 / 600
+**Char count:** 843 / 900
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Melissa,
 
-Smart Scales gives a software weight estimate that sits beside the declared weight. The pharmacy sets the threshold at which a gap is flagged to a pharmacist, and the monthly video consultation stays as it is. FitXpress is not a medical device and does not make eligibility decisions.
+3DLOOK has worked with 100+ clients. BMI is calculated from the height the patient supplies, and the monthly video consultation stays where it is.
 
-If a call suits you, my calendar is here: https://meetings.hubspot.com/katerina-galich
+FitXpress is not a medical device and does not make eligibility decisions.
+
+To talk it through, my calendar is here:
+https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 395 / 550
+**Char count:** 332 / 900

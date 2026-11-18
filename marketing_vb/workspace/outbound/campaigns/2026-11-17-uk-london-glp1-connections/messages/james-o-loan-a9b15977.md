@@ -2,7 +2,7 @@
 
 ## Context used
 - Angle: leadership
-- Hook: CEO, empty profile; weight confirmed in the same session
+- Hook: CEO; online consultation
 - Proof point: two photos; 100+ clients
 
 ---
@@ -13,23 +13,27 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi James,
 
-Chemist4U treats patients through an online consultation, and confirming weight in that same session keeps the journey in one place. At 3DLOOK we use two photos on a phone, taken in the session, to leave a timestamped record the pharmacy keeps.
+Chemist4U offers Wegovy and Mounjaro through a secure online consultation. In general, a weight typed into an online form is only a number, and a review file can end up holding little more than that figure.
 
-If you are in London 23 to 25 November, could we use 30 minutes together? A call is just as welcome.
+At 3DLOOK we make FitXpress to add evidence to the declared weight. Before the session ends the patient takes 2 photos on their phone, with the camera roll switched off. The clinician sees a Smart Scales estimate and BMI beside the declared weight, and the pharmacy keeps one timestamped record per check. It runs inside Chemist4U's own flow through an SDK or API.
+
+If you are in London from 23 to 25 November, could we have 30 minutes together, or would you prefer a call?
 https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 412 / 600
+**Char count:** 747 / 900
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi James,
 
-3DLOOK has worked with 100+ clients. For Chemist4U the output would be one timestamped record per patient, held in the pharmacy's own files.
+The pharmacy chooses how large a gap between the estimate and the declared weight must be before a case goes to a clinician. 3DLOOK has worked with 100+ clients.
 
-A call to see how it would sit in your service is easy to arrange here:
+Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+If a call would help, you can book one here:
 https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 279 / 550
+**Char count:** 399 / 900

@@ -2,8 +2,8 @@
 
 ## Context used
 - Angle: clinical
-- Hook: Pharmulous video with the scale reading; cross-check next to it
-- Proof point: two photos; software estimate; boundary sentence
+- Hook: Medical Director, Pharmulous full-length video with scale reading
+- Proof point: 2 photos; estimate beside declared; data handling
 
 ---
 
@@ -13,22 +13,25 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Amel,
 
-Pharmulous asks for a video showing the patient full length with the scale reading. I run 3DLOOK: two photos on the phone, taken in the same session, give a predicted-weight cross-check against the declared weight and a timestamped record a clinician can open.
+At Pharmulous the weight step is a full-length video of the patient with the scale reading in shot. A scales video can only be judged by watching it back.
 
-Could we have 30 minutes at your Surbiton office on 23 to 25 November, to see where that sits next to the video?
+I run 3DLOOK. FitXpress gives a different input: the patient takes 2 photos on their phone in the same session, guided for pose and framing, with camera-roll uploads switched off. A Smart Scales weight estimate and BMI appear beside the declared weight for the clinician, and a gap above the threshold Pharmulous sets is flagged for review. Each check stays as one timestamped record in the patient's file. Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+I'm in London 23 to 25 November. Would you have 30 minutes for me at the Surbiton office on one of those days?
 https://meetings.hubspot.com/katerina-galich/london
 
 Katerina
 
-**Char count:** 446 / 600
+**Char count:** 871 / 900
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Amel,
 
-Smart Scales is a software estimate that appears beside the declared weight for the clinician. The clinician decides what happens next. FitXpress is not a medical device and does not make eligibility decisions.
+On data handling, photos are deleted after processing or within 30 days, per the pharmacy's policy. FitXpress is not a medical device and does not make eligibility decisions.
 
-If you would rather talk by phone, my calendar is here: https://meetings.hubspot.com/katerina-galich
+I can show the flow on a call:
+https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 332 / 550
+**Char count:** 271 / 900

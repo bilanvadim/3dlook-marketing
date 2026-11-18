@@ -2,8 +2,8 @@
 
 ## Context used
 - Angle: operations
-- Hook: The Independent Pharmacy from Bristol; time the weight check takes
-- Proof point: two photos; speed sentence; GDPR line
+- Hook: The Independent Pharmacy supplies GLP-1 from Bristol
+- Proof point: two photos; speed sentence
 
 ---
 
@@ -13,24 +13,25 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Philip,
 
-The Independent Pharmacy supplies GLP-1 treatment from Bristol, and I'd like to hear how long confirming a patient's weight takes there today. I run 3DLOOK: two photos on the phone, taken in the session, give a predicted-weight cross-check and a timestamped record.
+The Independent Pharmacy supplies GLP-1 treatment from Bristol, and I'd like to hear how weight is confirmed when a patient first applies. When weight is entered or photographed at a distance, what goes into the file differs from case to case.
 
-If you are in London on 23 to 25 November, could we meet for 30 minutes, or would a call suit you better?
+I run 3DLOOK. FitXpress takes 2 photos on the patient's phone in the session, guided for pose and framing, with camera-roll uploads switched off. The team gets one timestamped record per check, with a Smart Scales weight estimate beside the declared weight, and gaps above the threshold the pharmacy sets are flagged for a clinician. Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+If you're in London on 23 to 25 November, could we meet for 30 minutes, or would a call suit you better?
 https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 439 / 600
+**Char count:** 876 / 900
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Philip,
 
 The pharmacy keeps its current route for anyone who does not scan. The scan is under 45 seconds from the photos to structured results.
 
-In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR.
-
-My calendar is open for a call: https://meetings.hubspot.com/katerina-galich
+My calendar is open for a call:
+https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 358 / 550
+**Char count:** 234 / 900

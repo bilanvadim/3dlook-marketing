@@ -94,6 +94,17 @@ OWNER = {"katerina": "Katerina", "nick": "Nick", "olena": "Olena",
          "katya": "Kateryna", "vadim": "Vadim"}
 CAPS = {1: 600, 2: 550}
 
+
+def caps_of(fm: dict) -> dict[int, int]:
+    """Message caps for one campaign. Default 600/550; a hypothesis may raise them with
+    `message_max_chars: 900` (both) or `message_max_chars: 900/800` (Vadim's call,
+    first used 2026-11-18 for the London GLP-1 campaigns)."""
+    v = str((fm or {}).get("message_max_chars") or "").strip()
+    nums = [int(x) for x in re.findall(r"\d+", v)]
+    if not nums:
+        return dict(CAPS)
+    return {1: nums[0], 2: nums[1] if len(nums) > 1 else nums[0]}
+
 # How Vadim names a profile in a request. "Лена" is olena, not a new person.
 PROFILE_ALIASES = {
     "olena": ("olena", "lena", "elena", "олена", "лена", "лены", "лени", "елена"),
@@ -918,7 +929,7 @@ def build_card(cdir: Path, stage: str) -> str:
         out += ["## Sender", "",
                 f"- signature: exactly `{OWNER.get(profile, '?')}` on its own last line",
                 "- language: English",
-                "- Message 1 ≤ 600 characters, Message 2 ≤ 550 (the script counts)",
+                f"- Message 1 ≤ {caps_of(fm)[1]} characters, Message 2 ≤ {caps_of(fm)[2]} (the script counts)",
                 (f"- calendar link for Message 2, plain text: {link}" if link else
                  "- no calendar link for this profile: close Message 2 with a soft ask"),
                 ("- every lane, referral included: Message 1 is context (what the scan returns"
@@ -1653,12 +1664,12 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 {m1}
 
-**Char count:** {n1} / 600
+**Char count:** {n1} / {c1}
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 {m2}
 
-**Char count:** {n2} / 550
+**Char count:** {n2} / {c2}
 """
 
 
@@ -1697,6 +1708,7 @@ def cmd_split_messages(args) -> int:
         close = difflib.get_close_matches(u, list(by_id), n=1, cutoff=0.8)
         errs.append(f"{u}: not on the send list" + (f" (did you mean {close[0]}?)" if close else ""))
     gmap = group_map(cdir)
+    caps = caps_of(hypothesis_of(cdir)[1])
     mdir = cdir / "messages"
     mdir.mkdir(exist_ok=True)
     written = 0
@@ -1709,7 +1721,8 @@ def cmd_split_messages(args) -> int:
             company=p.get("company_name", ""),
             angle=p.get("recommended_message_angle", ""), wave=wave_of(p),
             hook=m["hook"] or "—", proof=m["proof"] or "—",
-            m1=m["m1"], n1=len(m["m1"]), m2=m["m2"], n2=len(m["m2"])), encoding="utf-8")
+            m1=m["m1"], n1=len(m["m1"]), m2=m["m2"], n2=len(m["m2"]),
+            c1=caps[1], c2=caps[2]), encoding="utf-8")
         written += 1
     print(f"→ {rel(src)}: {written} people written to messages/")
     for e in errs[:12]:
@@ -1995,8 +2008,8 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
             bodies[(pid, n)] = b
             lens[n].append(len(b))
             tag = f"{pid} M{n}"
-            if len(b) > CAPS[n]:
-                hard.append(("too long", tag, f"{len(b)} / {CAPS[n]}"))
+            if len(b) > caps_of(fm)[n]:
+                hard.append(("too long", tag, f"{len(b)} / {caps_of(fm)[n]}"))
             lines = [x.strip() for x in b.splitlines() if x.strip()]
             if owner and lines[-1] != owner:
                 hard.append(("signature", tag, f"last line is «{clip(lines[-1], 40)}», not «{owner}»"))

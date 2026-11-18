@@ -2,8 +2,8 @@
 
 ## Context used
 - Angle: operations
-- Hook: DCA clinical governance includes manual review of photos; operations lane
-- Proof point: two photos; speed sentence
+- Hook: COO; manual photo review in DCA clinical governance
+- Proof point: two photos; controller line
 
 ---
 
@@ -13,22 +13,25 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Kristien,
 
-A manual review of photos is part of Doctor Care Anywhere's clinical governance. I run 3DLOOK: FitXpress takes two photos on a phone in the session and adds a predicted-weight cross-check and a timestamped record for the reviewer to work from.
+A manual review of photos is part of Doctor Care Anywhere's clinical governance. A photo that came from a camera roll has no proof of when it was taken, and the reviewer has nothing measured to read it against.
+
+I run 3DLOOK. With FitXpress the patient takes 2 photos on their phone in the session, guided for pose and framing, and a Smart Scales weight estimate and BMI appear beside the declared weight. A gap above the threshold you set is flagged for a clinician, and each check is saved as a timestamped record.
 
 I'm in London on 23 to 25 November. Would 30 minutes at your office suit you?
 https://meetings.hubspot.com/katerina-galich/london
 
 Katerina
 
-**Char count:** 398 / 600
+**Char count:** 671 / 900
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Kristien,
 
-The scan takes under 45 seconds from the photos to structured results. A reviewer reads a structured record beside the declared weight.
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR. Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
 
-If a call would help, my calendar is here: https://meetings.hubspot.com/katerina-galich
+If a call would help, my calendar is here:
+https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 248 / 550
+**Char count:** 360 / 900

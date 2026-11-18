@@ -2,8 +2,8 @@
 
 ## Context used
 - Angle: compliance
-- Hook: independent pharmacist prescriber at Oushk
-- Proof point: two photos; Smart Scales estimate; boundary sentence
+- Hook: Co-Founder and independent pharmacist prescriber
+- Proof point: 2 photos; clinician decides; speed sentence; boundary sentence
 
 ---
 
@@ -13,23 +13,27 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Hira,
 
-As a prescriber at Oushk, you decide what a weight check can support. I would like to hear how weight is confirmed there today and what it leaves in the patient record.
+Oushk Pharmacy runs maintenance plans for Wegovy and Mounjaro, and I would like to hear how its weight verification works today. In general, a typed weight is only a number, and a camera-roll photo carries no proof of when it was taken.
 
-That is what 3DLOOK built: two photos on a phone, taken in the session, give an estimate to read beside the declared weight. I will be in London 23 to 25 November. Would a 30-minute meeting suit you, or a call?
+I run 3DLOOK. FitXpress gives the prescriber a Smart Scales weight estimate and BMI beside the declared figures, from 2 photos the patient takes on their phone in the session with the camera roll switched off. A gap above the threshold Oushk sets goes to a prescriber, who decides what it means, and each check is kept as a timestamped record for the patient file. Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
 
+I will be in London 23 to 25 November. Would a 30-minute meeting suit you, or a call?
 https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 446 / 600
+**Char count:** 879 / 900
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Hira,
 
-Smart Scales is a software estimate. A gap above the threshold you set sends the case to a prescriber, and the clinician decides. FitXpress is not a medical device and does not make eligibility decisions.
+The scan is under 45 seconds from the photos to structured results. Anyone who does not scan keeps the current route.
 
-A call works well to go through it: https://meetings.hubspot.com/katerina-galich
+FitXpress is not a medical device and does not make eligibility decisions.
+
+A call works well to go through it:
+https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 306 / 550
+**Char count:** 295 / 900

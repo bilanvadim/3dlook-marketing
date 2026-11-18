@@ -2,8 +2,8 @@
 
 ## Context used
 - Angle: operations
-- Hook: PillSorted free online consultation; time the weight check takes
-- Proof point: two photos; speed sentence
+- Hook: Director of Operations, PillSorted live scales video in app
+- Proof point: 2 photos; speed; current route
 
 ---
 
@@ -13,22 +13,25 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Alister,
 
-PillSorted offers GLP-1 injections, oral and maintenance options after a free online consultation. I'd like to hear how long the weight check takes today. I run 3DLOOK: two photos on the patient's phone, taken in the same session, return a structured record.
+PillSorted's weight step is a live video on scales in the app. A video recording is unstructured, and nothing in it can be filed as a data point.
 
-Could we compare notes on that step for 30 minutes if you are in London on 23 to 25 November, or on a call?
+I run 3DLOOK, and FitXpress covers the same step with 2 photos on the patient's phone, taken in the session and guided for pose and framing, with camera-roll uploads switched off. The result is a Smart Scales weight estimate and BMI beside the declared figures, and one structured, timestamped record per check. Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+Could we compare notes for 30 minutes if you are in London on 23 to 25 November, or on a call?
 https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 435 / 600
+**Char count:** 747 / 900
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Alister,
 
-The scan is under 45 seconds from the photos to structured results. Patients who do not scan keep the current route.
+The scan runs under 45 seconds from the photos to structured results. Patients who do not scan keep the current route.
 
-I can show it live on a short call: https://meetings.hubspot.com/katerina-galich
+I can show it live on a short call:
+https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 221 / 550
+**Char count:** 223 / 900

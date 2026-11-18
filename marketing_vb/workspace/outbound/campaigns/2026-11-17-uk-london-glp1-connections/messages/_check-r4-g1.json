@@ -1,0 +1,181 @@
+{
+ "campaign": "2026-11-17-uk-london-glp1-connections",
+ "checked": 72,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "r4-g1",
+ "generated": "2026-11-18T13:43:46",
+ "hard": [
+  [
+   "«so» introducing a result",
+   "julie-boora-7ab2a08b M1",
+   "«…. At 3DLOOK we make FitXpress, so each consultation could leave o»: two sentences, or «allowing…»"
+  ]
+ ],
+ "soft": [
+  [
+   "greeting",
+   "tyankolatev M1",
+   "«Hi Tyanko,» has no «Engr. Tyanko»"
+  ],
+  [
+   "greeting",
+   "tyankolatev M2",
+   "«Hi Tyanko,» has no «Engr. Tyanko»"
+  ],
+  [
+   "M2 opener repeated",
+   "campaign ×10",
+   "«3dlook has worked with 100+ clients.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Reset Health: ciara-cook / dr-laura-falvey-134306176",
+   "«could you spare 30 minutes in london on 23 to 25…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Doctor Care Anywhere: kavita-d-45181719b / laura-o-riordan-89289587",
+   "«the patient takes 2 photos on their phone inside…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "TribElle: sahithikamaravadi / julie-boora-7ab2a08b",
+   "«could i visit you for 30 minutes at your office?»"
+  ],
+  [
+   "sentence opening repeated",
+   "Doctor Care Anywhere ×6",
+   "«liveness controls may require a…»: anushka-mehrotra-8b557a151, kavita-d-45181719b, laura-o-riordan-89289587, patrick-roberts-bbb855227"
+  ],
+  [
+   "M1 product sentence shared",
+   "Numan ×2",
+   "«at 3dlook we make fitxpress…»: bryony-henderson-a2911657, danielle-brightman-76199b1b7"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×20",
+   "«a smart scales weight estimate…»: amir-bhogal-202946308, anushka-mehrotra-8b557a151, bryony-henderson-a2911657, carlbamford123"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×16",
+   "«expects prescribers to verify independently…»: aanisah-sherbaz-b76aa5190, andy-boysan-37a79037, bilal-al-sheikh-hussain-72839216b, bryony-henderson-a2911657"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×15",
+   "«a gap above the threshold…»: alyza-gines, amir-bhogal-202946308, carlbamford123, chris-bland-16063119"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×11",
+   "«is flagged for a clinician…»: amir-bhogal-202946308, carlbamford123, chris-bland-16063119, jamiesmithwebb"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×9",
+   "«23 to 25 november and…»: abdullahsabyah, anushka-mehrotra-8b557a151, dalia-k-978841261, dara-o-malley-a70ab598"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×9",
+   "«for pose and framing with…»: chris-bland-16063119, jainilpatel, jamiesmithwebb, kavita-d-45181719b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×8",
+   "«next to the declared figures…»: bryony-henderson-a2911657, chris-bland-16063119, danielle-brightman-76199b1b7, kavita-d-45181719b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×7",
+   "«check is saved as one…»: jainilpatel, leighton-humphreys-883a82a9, mohamed-obiedalla-a26b1034, omar-el-gohary-730524159"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×7",
+   "«current route for anyone who…»: amit-vassa-45352780, ciara-cook, gianluca-uberti-83669121, mark-pedder"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«one timestamped record per patient…»: aanisah-sherbaz-b76aa5190, dara-o-malley-a70ab598, james-o-loan-a9b15977, kevintroykyle"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«differs from case to case…»: abdullahsabyah, amir-bhogal-202946308, julie-boora-7ab2a08b, rajive-patel"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«in the same session as…»: abdullahsabyah, ahsan-bhatti-bb1105122, alice-pan-28435535, dalia-k-978841261"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«on their phone inside the…»: carlbamford123, doruk-on, kavita-d-45181719b, leighton-humphreys-883a82a9"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«the camera roll picker disabled…»: caleum-sean-fox-norbury-133970194, calum-mackenzie-chambers, jamiesmithwebb, rajive-patel"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«30 days per the pharmacy…»: andy-boysan-37a79037, danielle-brightman-76199b1b7, joel-grenan-68b64024b, kavita-d-45181719b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«a gphc spokesperson said in…»: alyza-gines, leighton-humphreys-883a82a9, mubin-bux-062434173, sophie-kanani-acharya-9b5804144"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«a predicted weight cross check…»: craig-watt-16944859, gary-evans-757937180, kasim-gulzar-mrpharms-86b177134, parvinder-singh-sagoo-bb0a6657"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«clinician sees a smart scales…»: jainilpatel, leighton-humphreys-883a82a9, mohamed-obiedalla-a26b1034, rajive-patel"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«has to be judged by…»: anushka-mehrotra-8b557a151, patrick-roberts-bbb855227, seyed, sweta-k-0435a31b5"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«keeps its current route for…»: ciara-cook, gianluca-uberti-83669121, mark-pedder, sophie-kanani-acharya-9b5804144"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«declared figures a gap above…»: danielle-brightman-76199b1b7, jainilpatel, sahithikamaravadi"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«weight is only a number…»: amir-bhogal-202946308, carlbamford123, jainilpatel"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«would you meet for 30 minutes then or talk by phone»: declan-lismore-22401a214, leighton-humphreys-883a82a9"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«could we spend 30 minutes at your office»: bryony-henderson-a2911657, pujavyas23"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«could we have 30 minutes at your office»: abdullahsabyah, rajive-patel"
+  ]
+ ]
+}

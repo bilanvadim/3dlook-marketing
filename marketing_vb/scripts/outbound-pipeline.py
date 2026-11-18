@@ -883,6 +883,15 @@ def cmd_check_import(args) -> int:
     # message_1 gives 253/253 rows over the 600 cap (median 902) with an em dash in
     # 253/253. Identity-only checks would have waved that through.
     CAPS = {"message_1": 600, "message_2": 550}
+    # A campaign may raise the caps in its hypothesis frontmatter (`message_max_chars`),
+    # read by outbound_pack.caps_of; the import sits next to that hypothesis.
+    hyp = src.parent / "hypothesis.md"
+    if hyp.exists():
+        fm_m = re.search(r"^message_max_chars:\s*(\d+)(?:\s*/\s*(\d+))?\s*$",
+                         hyp.read_text(encoding="utf-8").split("\n---", 1)[0], re.M)
+        if fm_m:
+            CAPS = {"message_1": int(fm_m.group(1)),
+                    "message_2": int(fm_m.group(2) or fm_m.group(1))}
     over_cap: dict[str, tuple[int, int]] = {}
     emdash: dict[str, int] = {}
     for logical, cap in CAPS.items():

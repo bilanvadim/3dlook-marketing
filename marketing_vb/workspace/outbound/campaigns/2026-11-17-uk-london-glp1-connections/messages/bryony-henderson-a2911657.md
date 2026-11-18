@@ -2,8 +2,8 @@
 
 ## Context used
 - Angle: compliance
-- Hook: Medical Director; Foundayo added in 2026; GPhC verify point
-- Proof point: two photos; boundary sentence
+- Hook: Medical Director, Numan Foundayo 2026
+- Proof point: GPhC verify point; estimate for clinician; boundary
 
 ---
 
@@ -13,25 +13,28 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Bryony,
 
-Numan added Foundayo to its programme in 2026. GPhC guidance expects prescribers to verify independently the weight, height or BMI a patient declares, and at 3DLOOK we built a two-photo capture in the session with a predicted-weight cross-check for a clinician to review.
+Numan added Foundayo to its programme in 2026, and GPhC guidance expects prescribers to verify independently the weight, height or BMI a patient declares. At a distance, a declared weight has to be judged without anything to check it against.
+
+FitXpress is what we build at 3DLOOK. The patient takes 2 photos on their phone in the consultation, with camera-roll uploads switched off. Your clinicians see a Smart Scales weight estimate and BMI next to the declared figures, and the clinician decides what to do with any gap above the threshold Numan sets. One timestamped record per check goes into the review file.
 
 I'm in London 23 to 25 November. Could we spend 30 minutes at your office?
 https://meetings.hubspot.com/katerina-galich/london
 
 Katerina
 
-**Char count:** 421 / 600
+**Char count:** 764 / 900
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Bryony,
 
-Smart Scales gives a software estimate of weight, and the clinical team decides what to do with it. FitXpress is not a medical device and does not make eligibility decisions.
+Smart Scales gives a software estimate of weight, which is a different thing from a scale reading, and a clinician reads it alongside the declared figure. FitXpress is not a medical device and does not make eligibility decisions. Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
 
-If 30 minutes in London on 23 to 25 November suits you, pick a time here: https://meetings.hubspot.com/katerina-galich/london
+If 30 minutes in London on 23 to 25 November suits you, pick a time here:
+https://meetings.hubspot.com/katerina-galich/london
 
 A call is easy to book here:
 https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 398 / 550
+**Char count:** 578 / 900

@@ -2,8 +2,8 @@
 
 ## Context used
 - Angle: product
-- Hook: DCA health coach in the weight-loss journey; product lane
-- Proof point: two photos; pose and framing guidance; server-side option; GDPR roles sentence
+- Hook: Head of Product; health coach alongside the prescriber
+- Proof point: SDK; two photos; pose guidance
 
 ---
 
@@ -13,22 +13,25 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Elaine,
 
-Doctor Care Anywhere's weight-loss patients have a health coach alongside their prescriber. I run 3DLOOK: FitXpress is an SDK that takes two photos on a phone in the session, with a timestamped record, and I'd like to see where it could sit in that journey.
+Doctor Care Anywhere's weight-loss patients have a health coach alongside their prescriber. A photo only becomes a weight once someone reads it by eye.
+
+I run 3DLOOK. FitXpress is an SDK that takes 2 photos on the patient's phone in the session, and the API returns a timestamped record with a Smart Scales weight estimate and BMI beside the declared weight. A gap above the threshold the clinical team sets comes back as a flag for a clinician. I'd like to see where that could sit in the journey.
 
 I'm in London on 23 to 25 November. Could we spend 30 minutes at your office on that?
 https://meetings.hubspot.com/katerina-galich/london
 
 Katerina
 
-**Char count:** 418 / 600
+**Char count:** 659 / 900
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Elaine,
 
-The capture comes with pose and framing guidance, and a server-side option keeps the body metrics out of the patient's view. In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR.
+The capture comes with pose and framing guidance on screen, and the SDK disables the camera-roll picker. Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
 
-I can take your team through the SDK on a call: https://meetings.hubspot.com/katerina-galich
+I can take your team through the SDK on a call:
+https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 363 / 550
+**Char count:** 345 / 900

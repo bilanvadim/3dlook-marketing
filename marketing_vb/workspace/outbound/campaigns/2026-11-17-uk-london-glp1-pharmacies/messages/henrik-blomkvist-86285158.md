@@ -2,8 +2,8 @@
 
 ## Context used
 - Angle: product
-- Hook: Co-founder, London; where a weight step sits in the consultation flow
-- Proof point: SDK; two photos; pose and framing; GDPR line
+- Hook: Director and Co-founder, Medino consultation flow
+- Proof point: SDK and API; camera-roll picker disabled; speed; controller line
 
 ---
 
@@ -13,23 +13,25 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Henrik,
 
-I'd like to see where a step that confirms weight could sit in Medino's consultation flow. I run 3DLOOK, and FitXpress is an SDK: the patient takes two photos on the phone during the consultation.
+Medino includes the consultation with its Mounjaro, Wegovy and Foundayo, and I'd like to see where a step that confirms weight could sit in that flow. When weight is entered by the patient, what reaches a prescriber's file differs from case to case.
 
-I'm in London from 23 to 25 November. Could we meet for 30 minutes?
+I run 3DLOOK, and FitXpress is an SDK with an API. It drops into Medino's own flow: the patient takes 2 photos on their phone during the consultation, guided for pose and framing, with the camera-roll picker disabled. The API returns a Smart Scales weight estimate, BMI and one timestamped structured record, and a gap above the threshold Medino sets is flagged for a clinician.
+
+I'm in London 23 to 25 November. Could we meet for 30 minutes?
 https://meetings.hubspot.com/katerina-galich/london
 
 Katerina
 
-**Char count:** 339 / 600
+**Char count:** 767 / 900
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Henrik,
 
-Capture includes pose and framing guidance, and a server-side option keeps body metrics out of the patient's view. In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR.
+A server-side option keeps body metrics out of the patient's view. The scan runs under 45 seconds from the photos to structured results. In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR. Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
 
 For a technical call:
 https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 327 / 550
+**Char count:** 474 / 900

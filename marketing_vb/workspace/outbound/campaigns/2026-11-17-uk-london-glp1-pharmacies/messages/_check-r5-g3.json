@@ -1,0 +1,175 @@
+{
+ "campaign": "2026-11-17-uk-london-glp1-pharmacies",
+ "checked": 44,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "r5-g3",
+ "generated": "2026-11-18T14:01:52",
+ "hard": [],
+ "soft": [
+  [
+   "sentence opening repeated",
+   "HeliosX ×4",
+   "«liveness controls may require a…»: jess-peek-57b437183, niamh-mcmillan, phillburton, stuart-peak-13736622"
+  ],
+  [
+   "sentence opening repeated",
+   "Medino ×3",
+   "«liveness controls may require a…»: alessandro-grenci, christianjakobsson, henrik-blomkvist-86285158"
+  ],
+  [
+   "sentence opening repeated",
+   "PillTime ×3",
+   "«liveness controls may require a…»: murdo-macmillan-12931a26b, peter-thnoia-9355b2141, wayne-rees-51129412b"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "Day Lewis Pharmacy ×2",
+   "«day lewis pharmacy…»: mir-kirmani-51b483184, rachna-chhatralia-1b80ba2b3"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×37",
+   "«a smart scales weight estimate…»: aida-babanari-2115ba152, alessandro-grenci, alister-huong-4b4a944b, ana-carolina-gon%c3%a7alves-91305630"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×28",
+   "«a gap above the threshold…»: aida-babanari-2115ba152, alessandro-grenci, ana-carolina-gon%c3%a7alves-91305630, barbara-mcgowan-a36891192"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×18",
+   "«for pose and framing with…»: alister-huong-4b4a944b, ana-carolina-gon%c3%a7alves-91305630, barbara-mcgowan-a36891192, dr-amel-imam-27616852"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×18",
+   "«is flagged for a clinician…»: barbara-mcgowan-a36891192, chloe-ferro, faisaltuddy, gabriel-kohen-08889311b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×10",
+   "«declared figures a gap above…»: alessandro-grenci, ana-carolina-gon%c3%a7alves-91305630, barbara-mcgowan-a36891192, chloe-ferro"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×10",
+   "«expects prescribers to verify independently…»: alessandro-grenci, ana-carolina-gon%c3%a7alves-91305630, joshuagcclick, karim-nassar-370a55106"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×9",
+   "«30 days per the pharmacy…»: alessandro-grenci, barbara-mcgowan-a36891192, dr-amel-imam-27616852, faisaltuddy"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×9",
+   "«weight is only a number…»: alessandro-grenci, ana-carolina-gon%c3%a7alves-91305630, gabriel-kohen-08889311b, karim-nassar-370a55106"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×8",
+   "«a typed weight is only…»: alessandro-grenci, ana-carolina-gon%c3%a7alves-91305630, gabriel-kohen-08889311b, karim-nassar-370a55106"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×8",
+   "«above the threshold the pharmacy…»: aida-babanari-2115ba152, faisaltuddy, jane-wilkins-374970116, karim-nassar-370a55106"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×8",
+   "«each check is saved as…»: aida-babanari-2115ba152, christianjakobsson, faisaltuddy, james-harmsworth-king-1045575a"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×8",
+   "«for anyone who does not…»: christianjakobsson, nigel-swift-64862685, oliviaferro, philip-hawkins-46b0548b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×7",
+   "«current route for anyone who…»: christianjakobsson, nigel-swift-64862685, oliviaferro, philip-hawkins-46b0548b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×7",
+   "«next to the declared figures…»: alessandro-grenci, gabriel-kohen-08889311b, nigel-swift-64862685, peter-thnoia-9355b2141"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×7",
+   "«no proof of when it…»: chloe-ferro, faisaltuddy, glenn-madden-3b7a9795, jane-wilkins-374970116"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«differs from case to case…»: henrik-blomkvist-86285158, philip-hawkins-46b0548b, raj-bhogal-ba4b63338, stephen-thomas-7409965"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«pharmacy sets is flagged for…»: faisaltuddy, jane-wilkins-374970116, joshuagcclick, karim-nassar-370a55106"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«the camera roll picker disabled…»: aida-babanari-2115ba152, christopher-tufts-281bb7141, henrik-blomkvist-86285158, mir-kirmani-51b483184"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«is saved as one timestamped…»: christianjakobsson, faisaltuddy, james-harmsworth-king-1045575a, sunny-dhain-5b2926347"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«as one timestamped structured record…»: faisaltuddy, rachna-chhatralia-1b80ba2b3, sunny-dhain-5b2926347, tannaz-s-18b67011b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«camera roll carries no proof…»: chloe-ferro, faisaltuddy, jane-wilkins-374970116, rachel-jones-9b89bb14b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«keeps its current route for…»: nigel-swift-64862685, oliviaferro, philip-hawkins-46b0548b, raj-bhogal-ba4b63338"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«record for the review file…»: ana-carolina-gon%c3%a7alves-91305630, faisaltuddy, rachna-chhatralia-1b80ba2b3, robin-winfield-19a3a12b6"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«timestamped structured record for the…»: alessandro-grenci, ana-carolina-gon%c3%a7alves-91305630, faisaltuddy, rachna-chhatralia-1b80ba2b3"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«when it was taken and…»: faisaltuddy, glenn-madden-3b7a9795, jane-wilkins-374970116, kristienbateman"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«has to be judged by…»: faisaltuddy, jess-peek-57b437183, ruchirakarunadasa"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«the pharmacy s own flow…»: aida-babanari-2115ba152, mir-kirmani-51b483184, rachel-jones-9b89bb14b"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×4",
+   "«if you are in london from 23 to 25 november could we meet f…»: christopher-tufts-281bb7141, jess-peek-57b437183, peter-thnoia-9355b2141, stephen-thomas-7409965"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«if you are in london on 23 to 25 november could we meet for…»: christianjakobsson, sunny-dhain-5b2926347"
+  ]
+ ]
+}

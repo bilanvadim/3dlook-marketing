@@ -2,8 +2,8 @@
 
 ## Context used
 - Angle: product
-- Hook: weight confirmation before a Mounjaro prescription and at refills
-- Proof point: two photos; photo deletion; speed sentence
+- Hook: Lead Product Manager; prescription and refill moments
+- Proof point: two photos; speed sentence; data handling
 
 ---
 
@@ -13,24 +13,30 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Tamara,
 
-I'd like to understand how weight is confirmed before a Mounjaro prescription at Second Nature and again at refills. With 3DLOOK, two photos on a phone, taken in the session, would give each of those moments a timestamped record the clinical team keeps.
+I'd like to understand how weight is confirmed before a Mounjaro prescription at Second Nature and again at refills. In general, a figure a patient declares carries no evidence of when it was given.
 
-I'll be in London on 23 to 25 November. Might 30 minutes work for a conversation about it?
+At 3DLOOK we make FitXpress. With prompts on screen, the patient takes 2 photos on their phone in the session. Each of those moments can then carry a Smart Scales estimate and BMI beside the declared weight, with one timestamped record per check for the file. A gap above the threshold the programme sets is flagged for a clinician.
+
+I'll be in London 23 to 25 November. Might 30 minutes work for a conversation about it?
 https://meetings.hubspot.com/katerina-galich/london
 
 Katerina
 
-**Char count:** 419 / 600
+**Char count:** 695 / 900
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Tamara,
 
 The scan takes under 45 seconds from the photos to structured results. Photos are deleted after processing or within 30 days, as the programme's policy sets.
 
-Could we meet for 30 minutes in London on 23 to 25 November? You can pick a time here: https://meetings.hubspot.com/katerina-galich/london
+Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
 
-For a call, pick a slot here: https://meetings.hubspot.com/katerina-galich
+Could we meet for 30 minutes in London on 23 to 25 November? You can pick a time here:
+https://meetings.hubspot.com/katerina-galich/london
+
+For a call, pick a slot here:
+https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 395 / 550
+**Char count:** 521 / 900

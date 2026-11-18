@@ -2,8 +2,8 @@
 
 ## Context used
 - Angle: referral
-- Hook: Second Nature Mounjaro programme; referral ask
-- Proof point: two photos; GPhC verify point
+- Hook: Partnerships Manager; Mounjaro programme
+- Proof point: two photos; 100+ clients
 
 ---
 
@@ -13,24 +13,32 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Aanisah,
 
-Second Nature runs a Mounjaro programme, and GPhC guidance expects prescribers to verify independently the weight, height or BMI a patient declares. I run 3DLOOK: two photos on a phone, taken in the session, can support that.
+Second Nature runs a Mounjaro programme, and GPhC guidance expects prescribers to verify independently the weight, height or BMI a patient declares. At a distance a typed weight is only a number.
 
-I'm in London on 23 to 25 November. Could we have 30 minutes in London, or could you point me to whoever runs the programme?
+I run 3DLOOK, and FitXpress adds a check to a programme like that: 2 photos on the patient's phone inside the session, guided for pose and framing, with camera-roll uploads switched off. The clinician sees a Smart Scales estimate and BMI beside the declared figures, and each check is saved as a timestamped record for the file.
+
+I'm in London 23 to 25 November. Could we have 30 minutes in London, or could you point me to whoever runs the programme?
 https://meetings.hubspot.com/katerina-galich/london
 
 Katerina
 
-**Char count:** 426 / 600
+**Char count:** 723 / 900
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Aanisah,
 
-The scan leaves one timestamped record per patient. If this belongs on someone else's desk, a name is all I need.
+One setting is the programme's to make: how large a gap between estimate and declared weight sends a case to a clinician. 3DLOOK has worked with 100+ clients.
 
-If you would like 30 minutes in London on 23 to 25 November, this is the link: https://meetings.hubspot.com/katerina-galich/london
+Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
 
-My calendar for a phone call: https://meetings.hubspot.com/katerina-galich
+If someone else runs the weight side of the programme, a name is all I need.
+
+If 30 minutes in London on 23 to 25 November suits you, you can pick a time here:
+https://meetings.hubspot.com/katerina-galich/london
+
+To talk by phone, my calendar is here:
+https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 344 / 550
+**Char count:** 605 / 900

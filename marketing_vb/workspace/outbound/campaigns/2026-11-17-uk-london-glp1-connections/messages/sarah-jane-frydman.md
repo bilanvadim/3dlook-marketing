@@ -2,8 +2,8 @@
 
 ## Context used
 - Angle: product
-- Hook: Juniper GLP-1 programme built for women; product lane
-- Proof point: two photos; SDK; camera-roll picker disabled; server-side option
+- Hook: Juniper GLP-1 programme for women; SDK placement
+- Proof point: SDK; API; camera-roll off
 
 ---
 
@@ -13,24 +13,28 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Sarah-Jane,
 
-Juniper has built its GLP-1 programme for women, and I'd like to show you where a two-photo capture could fit in through an SDK. I run 3DLOOK.
+Juniper has built its GLP-1 programme for women. A typed weight is only a number, wherever it is collected.
 
-I'm in London on 23 to 25 November. Could we take 30 minutes at your office to look at the flow?
+FitXpress, which we make at 3DLOOK, goes into Juniper's own flow through our SDK or API. Inside the consultation the patient takes 2 photos on their phone, with the gallery picker switched off and pose guidance on screen. The API returns the Smart Scales weight estimate and BMI with the declared figures in one timestamped structured record, and a mismatch beyond Juniper's own threshold is passed to a clinician. Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+I'm in London 23 to 25 November. Could we take 30 minutes at your office to look at where it would sit?
 https://meetings.hubspot.com/katerina-galich/london
 
 Katerina
 
-**Char count:** 318 / 600
+**Char count:** 831 / 900
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Sarah-Jane,
 
-The SDK disables the camera-roll picker, and a server-side option keeps the body metrics out of the patient's view.
+There is a server-side option where the patient does not see the body metrics. The API also returns 80+ body measurements.
 
-If 30 minutes at your office on 23 to 25 November suits the product team, the diary is here: https://meetings.hubspot.com/katerina-galich/london
+If 30 minutes at your office on 23 to 25 November suits the product team, you can pick a time here:
+https://meetings.hubspot.com/katerina-galich/london
 
-I am glad to take your product team through it on a call: https://meetings.hubspot.com/katerina-galich
+To go through it with the team by phone:
+https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 391 / 550
+**Char count:** 388 / 900

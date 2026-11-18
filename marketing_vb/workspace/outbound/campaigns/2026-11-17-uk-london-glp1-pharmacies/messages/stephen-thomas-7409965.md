@@ -2,8 +2,8 @@
 
 ## Context used
 - Angle: compliance
-- Hook: Superintendent; online consultation with ID to camera and scales at hand
-- Proof point: two photos; threshold; boundary sentence
+- Hook: Superintendent Pharmacist; online consultation with ID and scales
+- Proof point: 2 photos; threshold; speed sentence; boundary sentence
 
 ---
 
@@ -13,24 +13,27 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Stephen,
 
-In Rowlands' online weight consultation, the patient holds ID to the camera and has body scales at hand. I run 3DLOOK: a two-photo capture in the same session would add a predicted-weight cross-check against the declared weight and a timestamped record for the file.
+In Rowlands' online weight consultation, the patient holds ID to the camera and has body scales at hand. Reading scales on a screen is a judgement by eye.
+
+I run 3DLOOK. With FitXpress the patient takes 2 photos on their phone in the same session, guided for pose and framing, with camera-roll uploads switched off. The pharmacist sees a Smart Scales weight estimate and BMI beside the declared weight, a gap above the threshold Rowlands sets is flagged for the pharmacist, and each check is one timestamped record for the file. Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
 
 If you are in London from 23 to 25 November, could we meet for 30 minutes? A call works too.
-
 https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 429 / 600
+**Char count:** 815 / 900
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Stephen,
 
-The threshold is set by the pharmacy, and the pharmacist handles each flagged gap. FitXpress is not a medical device and does not make eligibility decisions.
+BMI comes from the supplied height, and the scan is under 45 seconds from the photos to structured results.
+
+FitXpress is not a medical device and does not make eligibility decisions.
 
 Shall we speak by phone?
 https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 251 / 550
+**Char count:** 277 / 900

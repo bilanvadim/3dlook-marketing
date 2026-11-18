@@ -2,8 +2,8 @@
 
 ## Context used
 - Angle: compliance
-- Hook: Day Lewis clinician measurements in branch; record between appointments
-- Proof point: two photos; SDK camera-roll; speed sentence; DPA line
+- Hook: Professional Services Pharmacist Superintendents Department; oral and injectable options
+- Proof point: two photos; speed sentence; DPA
 
 ---
 
@@ -13,22 +13,27 @@ _Без note — отправляем запрос в друзья без соп
 ## Message 1 — Opener (сразу после принятия запроса)
 Hi Mir,
 
-Day Lewis Pharmacy's weight service has a clinician taking measurements in branch. I run 3DLOOK, and a capture of two photos on the patient's phone could add a record between those appointments.
+Day Lewis Pharmacy offers oral and injectable weight loss medication subject to a consultation, and I run 3DLOOK. We make FitXpress for the check-in side of a service like that.
 
-Could I come to your office for 30 minutes on 23 to 25 November?
+A weight a patient reports between appointments has no evidence attached to it. FitXpress is an SDK: the patient takes 2 photos on their phone in a session, with the camera-roll picker disabled and pose and framing guided on screen. The API returns a Smart Scales weight estimate and BMI with a timestamp, one structured record per check for the pharmacy's file.
+
+I'm in London 23 to 25 November. Could I come to your office for 30 minutes?
 https://meetings.hubspot.com/katerina-galich/london
 
 Katerina
 
-**Char count:** 331 / 600
+**Char count:** 690 / 900
 
 ## Message 2 — Value + demo call (+5 дней, если нет ответа)
 Hi Mir,
 
-The SDK keeps the camera-roll picker disabled, and the capture happens in the session. The scan is under 45 seconds from the photos to structured results. A DPA with SCCs is available on request.
+The scan is under 45 seconds from the photos to structured results. The API returns the data into the pharmacy's own flow. A DPA with SCCs is available on request.
 
-If a call suits you, the booking page is here: https://meetings.hubspot.com/katerina-galich
+Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+If a call suits you, the booking page is here:
+https://meetings.hubspot.com/katerina-galich
 
 Katerina
 
-**Char count:** 307 / 550
+**Char count:** 401 / 900
