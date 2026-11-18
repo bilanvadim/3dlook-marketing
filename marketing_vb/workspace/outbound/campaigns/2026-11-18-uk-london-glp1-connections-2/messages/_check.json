@@ -1,0 +1,15 @@
+{
+ "campaign": "2026-11-18-uk-london-glp1-connections-2",
+ "checked": 4,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": null,
+ "generated": "2026-11-18T17:43:30",
+ "hard": [],
+ "soft": [
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«a smart scales weight estimate…»: abbas-k-6506431b0, camrankhan, paulcmarshall, rizwan-ali-85342856"
+  ]
+ ]
+}

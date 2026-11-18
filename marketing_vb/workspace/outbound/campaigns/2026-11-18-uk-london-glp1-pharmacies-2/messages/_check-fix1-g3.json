@@ -1,0 +1,125 @@
+{
+ "campaign": "2026-11-18-uk-london-glp1-pharmacies-2",
+ "checked": 37,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "fix1-g3",
+ "generated": "2026-11-18T17:07:32",
+ "hard": [],
+ "soft": [
+  [
+   "M2 opener repeated",
+   "campaign ×4",
+   "«the scan is under 45 seconds from the photos to s…»"
+  ],
+  [
+   "sentence opening repeated",
+   "HeliosX ×3",
+   "«liveness controls may require a…»: barryjamespace, kathryn-ganz-53ba2664, nicholasfaulkner"
+  ],
+  [
+   "sentence opening repeated",
+   "Numan ×3",
+   "«liveness controls may require a…»: mo-umar-99085551, qaisermazhar, ugne-kerseviciute"
+  ],
+  [
+   "sentence opening repeated",
+   "Reset Health ×3",
+   "«liveness controls may require a…»: alexnancekievill, rebecca-ryan-1a42b444, thomas-curtis-844271263"
+  ],
+  [
+   "sentence opening repeated",
+   "Second Nature ×4",
+   "«i'm in london 23 to…»: chris-edson, michael-whitman-a5a44550, michaelgibbs1, rosie-carr-421a7a76"
+  ],
+  [
+   "sentence opening repeated",
+   "Second Nature ×4",
+   "«liveness controls may require a…»: chris-edson, michael-whitman-a5a44550, michaelgibbs1, rosie-carr-421a7a76"
+  ],
+  [
+   "sentence opening repeated",
+   "Day Lewis Pharmacy ×3",
+   "«i'm in london 23 to…»: mark-mcguire-1b60a32b1, rupa-patel-b97a8292, sampateldaylewis"
+  ],
+  [
+   "sentence opening repeated",
+   "Day Lewis Pharmacy ×4",
+   "«liveness controls may require a…»: mark-mcguire-1b60a32b1, rupa-patel-b97a8292, sampateldaylewis, shimalpatel"
+  ],
+  [
+   "sentence opening repeated",
+   "Day Lewis Pharmacy ×3",
+   "«the patient takes 2 photos…»: mark-mcguire-1b60a32b1, rupa-patel-b97a8292, shimalpatel"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×32",
+   "«a smart scales weight estimate…»: aisha-suleman-44867a7a, alexnancekievill, amish-patel-96b103259, barryjamespace"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×12",
+   "«is flagged for a clinician…»: alexnancekievill, amish-patel-96b103259, barryjamespace, catherine-bell-9802a9220"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×9",
+   "«check is saved as one…»: alexnancekievill, barryjamespace, catherine-bell-9802a9220, kuldip-chana-78985945"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×8",
+   "«a gap above the threshold…»: gurdev-channa-ab79a244, jay-jetley-232a0013, jeff-hadaway, mark-mcguire-1b60a32b1"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×7",
+   "«as one timestamped structured record…»: amish-patel-96b103259, catherine-bell-9802a9220, kuldip-chana-78985945, mo-umar-99085551"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×7",
+   "«the camera roll picker disabled…»: alexnancekievill, barryjamespace, erinchuah, kuldip-chana-78985945"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«next to the declared figures…»: barryjamespace, mark-mcguire-1b60a32b1, mo-umar-99085551, qaisermazhar"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«clinician sees a smart scales…»: kathryn-ganz-53ba2664, mo-umar-99085551, rebecca-ryan-1a42b444, rosie-carr-421a7a76"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«the declared figures a gap…»: mark-mcguire-1b60a32b1, mo-umar-99085551, omar-kadir-77821619, scott-mcdougall-2b864a35"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«30 days per the pharmacy…»: john-foreman-9555022ba, rupa-patel-b97a8292, waqqass-sheikh-4aaa186b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«expects prescribers to verify independently…»: amish-patel-96b103259, kuldip-chana-78985945, waqqass-sheikh-4aaa186b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«for anyone who does not…»: aisha-suleman-44867a7a, avtar-sagoo-4630a231, nikita-dhain-440013339"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«picker disabled pose and framing…»: jay-jetley-232a0013, katy-h-98007610, martyn-k"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«could i come to your office for 30 minutes»: john-foreman-9555022ba, nicholas-sears-5528683b"
+  ]
+ ]
+}

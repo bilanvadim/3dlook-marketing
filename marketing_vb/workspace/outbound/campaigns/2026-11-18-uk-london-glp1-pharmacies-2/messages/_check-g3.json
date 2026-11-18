@@ -1,0 +1,20 @@
+{
+ "campaign": "2026-11-18-uk-london-glp1-pharmacies-2",
+ "checked": 11,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "g3",
+ "generated": "2026-11-18T17:07:36",
+ "hard": [],
+ "soft": [
+  [
+   "card wording as copy",
+   "campaign ×7",
+   "«a smart scales weight estimate…»: gurdev-channa-ab79a244, katy-h-98007610, kuldip-chana-78985945, martyn-k"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«a gap above the threshold…»: gurdev-channa-ab79a244, nikita-dhain-440013339, omar-kadir-77821619"
+  ]
+ ]
+}

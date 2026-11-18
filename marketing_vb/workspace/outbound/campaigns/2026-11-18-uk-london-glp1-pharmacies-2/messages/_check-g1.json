@@ -1,0 +1,85 @@
+{
+ "campaign": "2026-11-18-uk-london-glp1-pharmacies-2",
+ "checked": 17,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "g1",
+ "generated": "2026-11-18T17:05:15",
+ "hard": [],
+ "soft": [
+  [
+   "sentence opening repeated",
+   "HeliosX ×3",
+   "«liveness controls may require a…»: barryjamespace, kathryn-ganz-53ba2664, nicholasfaulkner"
+  ],
+  [
+   "sentence opening repeated",
+   "Numan ×3",
+   "«liveness controls may require a…»: mo-umar-99085551, qaisermazhar, ugne-kerseviciute"
+  ],
+  [
+   "sentence opening repeated",
+   "Reset Health ×3",
+   "«liveness controls may require a…»: alexnancekievill, rebecca-ryan-1a42b444, thomas-curtis-844271263"
+  ],
+  [
+   "sentence opening repeated",
+   "Second Nature ×4",
+   "«i'm in london 23 to…»: chris-edson, michael-whitman-a5a44550, michaelgibbs1, rosie-carr-421a7a76"
+  ],
+  [
+   "sentence opening repeated",
+   "Second Nature ×4",
+   "«liveness controls may require a…»: chris-edson, michael-whitman-a5a44550, michaelgibbs1, rosie-carr-421a7a76"
+  ],
+  [
+   "sentence opening repeated",
+   "Day Lewis Pharmacy ×3",
+   "«i'm in london 23 to…»: mark-mcguire-1b60a32b1, rupa-patel-b97a8292, sampateldaylewis"
+  ],
+  [
+   "sentence opening repeated",
+   "Day Lewis Pharmacy ×4",
+   "«liveness controls may require a…»: mark-mcguire-1b60a32b1, rupa-patel-b97a8292, sampateldaylewis, shimalpatel"
+  ],
+  [
+   "sentence opening repeated",
+   "Day Lewis Pharmacy ×3",
+   "«the patient takes 2 photos…»: mark-mcguire-1b60a32b1, rupa-patel-b97a8292, shimalpatel"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×17",
+   "«a smart scales weight estimate…»: alexnancekievill, barryjamespace, chris-edson, kathryn-ganz-53ba2664"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«check is saved as one…»: alexnancekievill, barryjamespace, mark-mcguire-1b60a32b1, mo-umar-99085551"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«clinician sees a smart scales…»: kathryn-ganz-53ba2664, mo-umar-99085551, rebecca-ryan-1a42b444, rosie-carr-421a7a76"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«is flagged for a clinician…»: alexnancekievill, barryjamespace, michaelgibbs1, mo-umar-99085551"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«next to the declared figures…»: barryjamespace, mark-mcguire-1b60a32b1, mo-umar-99085551, qaisermazhar"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«the camera roll picker disabled…»: alexnancekievill, barryjamespace, nicholasfaulkner, qaisermazhar"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«the declared figures a gap…»: mark-mcguire-1b60a32b1, mo-umar-99085551, thomas-curtis-844271263"
+  ]
+ ]
+}

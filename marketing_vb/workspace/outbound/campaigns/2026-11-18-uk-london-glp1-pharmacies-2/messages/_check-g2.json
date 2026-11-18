@@ -1,0 +1,30 @@
+{
+ "campaign": "2026-11-18-uk-london-glp1-pharmacies-2",
+ "checked": 9,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "g2",
+ "generated": "2026-11-18T17:04:56",
+ "hard": [],
+ "soft": [
+  [
+   "card wording as copy",
+   "campaign ×8",
+   "«a smart scales weight estimate…»: aisha-suleman-44867a7a, amish-patel-96b103259, catherine-bell-9802a9220, erinchuah"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«is flagged for a clinician…»: amish-patel-96b103259, catherine-bell-9802a9220, erinchuah, nicholas-sears-5528683b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«a gap above the threshold…»: jay-jetley-232a0013, jeff-hadaway, nicholas-sears-5528683b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«as one timestamped structured record…»: amish-patel-96b103259, catherine-bell-9802a9220, waqqass-sheikh-4aaa186b"
+  ]
+ ]
+}

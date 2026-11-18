@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-17",
+  "last_updated": "2026-11-18",
   "companies": {
     "safariland": {
       "covered_by_profile": null,
@@ -873,17 +873,17 @@
     "numan": {
       "display_name": "Numan",
       "covered_by_profile": "katerina",
-      "campaign_id": "2026-11-17-uk-london-glp1-pharmacies",
+      "campaign_id": "2026-11-18-uk-london-glp1-pharmacies-2",
       "product": "fitxpress",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "status": "active"
     },
     "second-nature": {
       "display_name": "Second Nature",
       "covered_by_profile": "katerina",
-      "campaign_id": "2026-11-17-uk-london-glp1-pharmacies",
+      "campaign_id": "2026-11-18-uk-london-glp1-pharmacies-2",
       "product": "fitxpress",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "status": "active"
     },
     "voy": {
@@ -1682,9 +1682,9 @@
     "nowpatient": {
       "display_name": "NowPatient",
       "covered_by_profile": "katerina",
-      "campaign_id": "2026-11-17-uk-london-glp1-connections",
+      "campaign_id": "2026-11-18-uk-london-glp1-pharmacies-2",
       "product": "fitxpress",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "status": "active"
     },
     "nutracheck": {
@@ -1826,9 +1826,9 @@
     "reset-health": {
       "display_name": "Reset Health",
       "covered_by_profile": "katerina",
-      "campaign_id": "2026-11-17-uk-london-glp1-pharmacies",
+      "campaign_id": "2026-11-18-uk-london-glp1-pharmacies-2",
       "product": "fitxpress",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "status": "active"
     },
     "saira-nutrition": {
@@ -3534,17 +3534,17 @@
     "chemist4u": {
       "display_name": "Chemist4U",
       "covered_by_profile": "katerina",
-      "campaign_id": "2026-11-17-uk-london-glp1-pharmacies",
+      "campaign_id": "2026-11-18-uk-london-glp1-pharmacies-2",
       "product": "fitxpress",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "status": "active"
     },
     "day-lewis-pharmacy": {
       "display_name": "Day Lewis Pharmacy",
       "covered_by_profile": "katerina",
-      "campaign_id": "2026-11-17-uk-london-glp1-pharmacies",
+      "campaign_id": "2026-11-18-uk-london-glp1-pharmacies-2",
       "product": "fitxpress",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "status": "active"
     },
     "doctor-care-anywhere": {
@@ -3558,9 +3558,9 @@
     "family-chemist": {
       "display_name": "The Family Chemist",
       "covered_by_profile": "katerina",
-      "campaign_id": "2026-11-17-uk-london-glp1-pharmacies",
+      "campaign_id": "2026-11-18-uk-london-glp1-pharmacies-2",
       "product": "fitxpress",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "status": "active"
     },
     "hollowood-chemists": {
@@ -3574,17 +3574,17 @@
     "independent-pharmacy": {
       "display_name": "The Independent Pharmacy",
       "covered_by_profile": "katerina",
-      "campaign_id": "2026-11-17-uk-london-glp1-pharmacies",
+      "campaign_id": "2026-11-18-uk-london-glp1-pharmacies-2",
       "product": "fitxpress",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "status": "active"
     },
     "iq-doctor": {
       "display_name": "IQ Doctor",
       "covered_by_profile": "katerina",
-      "campaign_id": "2026-11-17-uk-london-glp1-connections",
+      "campaign_id": "2026-11-18-uk-london-glp1-connections-2",
       "product": "fitxpress",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "status": "active"
     },
     "jhl-pharmacies": {
@@ -3598,9 +3598,9 @@
     "juniper": {
       "display_name": "Juniper",
       "covered_by_profile": "katerina",
-      "campaign_id": "2026-11-17-uk-london-glp1-connections",
+      "campaign_id": "2026-11-18-uk-london-glp1-pharmacies-2",
       "product": "fitxpress",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "status": "active"
     },
     "kamsons": {
@@ -3662,9 +3662,9 @@
     "pharmica": {
       "display_name": "Pharmica",
       "covered_by_profile": "katerina",
-      "campaign_id": "2026-11-17-uk-london-glp1-pharmacies",
+      "campaign_id": "2026-11-18-uk-london-glp1-pharmacies-2",
       "product": "fitxpress",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "status": "active"
     },
     "pharmulous": {
@@ -3694,9 +3694,9 @@
     "privatedoc": {
       "display_name": "PrivateDoc",
       "covered_by_profile": "katerina",
-      "campaign_id": "2026-11-17-uk-london-glp1-pharmacies",
+      "campaign_id": "2026-11-18-uk-london-glp1-pharmacies-2",
       "product": "fitxpress",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "status": "active"
     },
     "pyramid-pharmacy": {
@@ -3742,9 +3742,9 @@
     "simplymeds-online": {
       "display_name": "SimplyMeds Online",
       "covered_by_profile": "katerina",
-      "campaign_id": "2026-11-17-uk-london-glp1-pharmacies",
+      "campaign_id": "2026-11-18-uk-london-glp1-pharmacies-2",
       "product": "fitxpress",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "status": "active"
     },
     "st-helens-pharmacy": {
@@ -3782,25 +3782,25 @@
     "chemist-click": {
       "display_name": "Chemist Click",
       "covered_by_profile": "katerina",
-      "campaign_id": "2026-11-17-uk-london-glp1-pharmacies",
+      "campaign_id": "2026-11-18-uk-london-glp1-connections-2",
       "product": "fitxpress",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "status": "active"
     },
     "green-light-pharmacy": {
       "display_name": "Green Light Pharmacy",
       "covered_by_profile": "katerina",
-      "campaign_id": "2026-11-17-uk-london-glp1-pharmacies",
+      "campaign_id": "2026-11-18-uk-london-glp1-pharmacies-2",
       "product": "fitxpress",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "status": "active"
     },
     "heliosx": {
       "display_name": "HeliosX",
       "covered_by_profile": "katerina",
-      "campaign_id": "2026-11-17-uk-london-glp1-pharmacies",
+      "campaign_id": "2026-11-18-uk-london-glp1-pharmacies-2",
       "product": "fitxpress",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "status": "active"
     },
     "john-bell-croyden": {
@@ -3822,17 +3822,17 @@
     "my-london-pharmacy": {
       "display_name": "My London Pharmacy",
       "covered_by_profile": "katerina",
-      "campaign_id": "2026-11-17-uk-london-glp1-pharmacies",
+      "campaign_id": "2026-11-18-uk-london-glp1-pharmacies-2",
       "product": "fitxpress",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "status": "active"
     },
     "rowlands-pharmacy": {
       "display_name": "Rowlands Pharmacy",
       "covered_by_profile": "katerina",
-      "campaign_id": "2026-11-17-uk-london-glp1-pharmacies",
+      "campaign_id": "2026-11-18-uk-london-glp1-connections-2",
       "product": "fitxpress",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "status": "active"
     },
     "simple-online-pharmacy": {
@@ -3841,6 +3841,46 @@
       "campaign_id": "2026-11-17-uk-london-glp1-pharmacies",
       "product": "fitxpress",
       "date": "2026-11-17",
+      "status": "active"
+    },
+    "britannia-pharmacy": {
+      "display_name": "Britannia Pharmacy",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-11-18-uk-london-glp1-pharmacies-2",
+      "product": "fitxpress",
+      "date": "2026-11-18",
+      "status": "active"
+    },
+    "chana-chemist": {
+      "display_name": "Chana Chemist",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-11-18-uk-london-glp1-pharmacies-2",
+      "product": "fitxpress",
+      "date": "2026-11-18",
+      "status": "active"
+    },
+    "everest-pharmacy": {
+      "display_name": "Everest Pharmacy",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-11-18-uk-london-glp1-pharmacies-2",
+      "product": "fitxpress",
+      "date": "2026-11-18",
+      "status": "active"
+    },
+    "pprx": {
+      "display_name": "PPRX",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-11-18-uk-london-glp1-pharmacies-2",
+      "product": "fitxpress",
+      "date": "2026-11-18",
+      "status": "active"
+    },
+    "well-pharmacy": {
+      "display_name": "Well Pharmacy",
+      "covered_by_profile": "katerina",
+      "campaign_id": "2026-11-18-uk-london-glp1-pharmacies-2",
+      "product": "fitxpress",
+      "date": "2026-11-18",
       "status": "active"
     }
   }

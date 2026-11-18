@@ -1,0 +1,80 @@
+{
+ "campaign": "2026-11-18-uk-london-glp1-pharmacies-2",
+ "checked": 26,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "fix2-g3",
+ "generated": "2026-11-18T17:33:08",
+ "hard": [],
+ "soft": [
+  [
+   "M2 opener repeated",
+   "campaign ×4",
+   "«the scan is under 45 seconds from the photos to s…»"
+  ],
+  [
+   "sentence opening repeated",
+   "Second Nature ×3",
+   "«i'm in london 23 to…»: chris-edson, michaelgibbs1, rosie-carr-421a7a76"
+  ],
+  [
+   "sentence opening repeated",
+   "Second Nature ×3",
+   "«liveness controls may require a…»: chris-edson, michaelgibbs1, rosie-carr-421a7a76"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×22",
+   "«a smart scales weight estimate…»: aisha-suleman-44867a7a, amish-patel-96b103259, barryjamespace, catherine-bell-9802a9220"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×8",
+   "«is flagged for a clinician…»: barryjamespace, catherine-bell-9802a9220, gurdev-channa-ab79a244, michaelgibbs1"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«check is saved as one…»: barryjamespace, catherine-bell-9802a9220, kuldip-chana-78985945, mo-umar-99085551"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«as one timestamped structured record…»: catherine-bell-9802a9220, john-foreman-9555022ba, kuldip-chana-78985945, mo-umar-99085551"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«clinician sees a smart scales…»: kathryn-ganz-53ba2664, mo-umar-99085551, rebecca-ryan-1a42b444, rosie-carr-421a7a76"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«a gap above the threshold…»: gurdev-channa-ab79a244, mo-umar-99085551, nicholas-sears-5528683b, omar-kadir-77821619"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«next to the declared figures…»: barryjamespace, jay-jetley-232a0013, mo-umar-99085551, rishikrishna"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«the declared figures a gap…»: mo-umar-99085551, omar-kadir-77821619, thomas-curtis-844271263, waqqass-sheikh-4aaa186b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«23 to 25 november and…»: avtar-sagoo-4630a231, catherine-bell-9802a9220, thomas-curtis-844271263"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«that sends a case to…»: martyn-k, nikita-dhain-440013339, yousef-yaghoubi-b9a25986"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«the camera roll picker disabled…»: barryjamespace, kuldip-chana-78985945, martyn-k"
+  ]
+ ]
+}

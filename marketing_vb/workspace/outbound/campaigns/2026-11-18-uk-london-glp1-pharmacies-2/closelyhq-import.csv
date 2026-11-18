@@ -1,0 +1,483 @@
+first_name,last_name,linkedin_url,company,title,email,connection_note,message_1,message_2
+Kathryn,Ganz,https://linkedin.com/in/kathryn-ganz-53ba2664,HeliosX,Product Director,,,"Hi Kathryn,
+
+MedExpress sells Wegovy as an injection and as a pill. When weight is confirmed outside the consultation, nothing ties the figure to the session it belongs to.
+
+FitXpress, an SDK from 3DLOOK, adds a capture screen to the consultation. The patient takes 2 photos on their phone, with pose and framing guided on screen and camera-roll uploads switched off. The clinician then sees a Smart Scales weight estimate and BMI beside the declared figures, and each check leaves one timestamped structured record. A gap over the limit HeliosX picks goes to a clinician.
+
+I'm in London 23 to 25 November. Could I have 30 minutes at your office to show the capture screen?
+https://meetings.hubspot.com/katerina-galich/london
+
+Katerina","Hi Kathryn,
+
+BMI is worked out from the height the patient enters, next to the weight estimate. The scan also returns 80+ body measurements.
+
+Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+To talk through the build by phone, book a time here:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Waqqass,Sheikh,https://linkedin.com/in/waqqass-sheikh-4aaa186b,Everest Pharmacy,Director,,,"Hi Waqqass,
+
+Through Everslim, Everest Pharmacy sells Mounjaro, Wegovy and Foundayo online, and GPhC guidance expects prescribers to verify independently the weight, height or BMI a patient declares. Remote weight checks come in several forms, and what each one leaves for review differs.
+
+I run 3DLOOK, and a FitXpress check starts with 2 photos the patient takes on their phone in the consultation, with camera-roll uploads off. What reaches review is one timestamped structured record, with a Smart Scales weight estimate and BMI beside the declared figures. A gap beyond the threshold the pharmacy sets is flagged for a clinician.
+
+If you are in London on 23 to 25 November, could I have 30 minutes with you, or a call at another time?
+https://meetings.hubspot.com/katerina-galich
+
+Katerina","Hi Waqqass,
+
+Photos are deleted after processing or within 30 days, per the pharmacy's policy. FitXpress is not a medical device and does not make eligibility decisions. Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+To talk it through, my calendar is here:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Martyn,K.,https://linkedin.com/in/martyn-k,Chemist4U,Chief Technology Officer,,,"Hi Martyn,
+
+Chemist4U is an online-only pharmacy, with Saxenda and liraglutide on its list alongside Wegovy and Mounjaro. Whatever form it is typed into, a declared weight arrives with nothing to show how it was arrived at.
+
+I run 3DLOOK. For each check, FitXpress sets a Smart Scales weight estimate against the declared weight, and Chemist4U chooses the gap that sends a case to clinical review. The inputs are 2 photos taken on the patient's phone in the consultation, with the camera-roll picker disabled in the SDK, and the API hands the comparison back as a timestamped structured record.
+
+Would a 30-minute working session on 23 to 25 November, in London or by phone, suit your diary?
+https://meetings.hubspot.com/katerina-galich
+
+Katerina","Hi Martyn,
+
+Retained photos are blurred and faces are obfuscated at capture, and scan records sit on random identifiers. In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR.
+
+Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+To go through the integration on a call, pick a time here:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Avtar,Sagoo,https://linkedin.com/in/avtar-sagoo-4630a231,SimplyMeds Online,Chief Operations Officer,,,"Hi Avtar,
+
+For an online pharmacy like SimplyMeds Online, weights collected in different forms are hard to compare from one case to the next.
+
+I run 3DLOOK. FitXpress gives every patient the same guided capture: 2 photos on their phone inside the consultation, with on-screen guidance for pose and framing. The pharmacy receives one timestamped structured record per check, holding the declared weight, a Smart Scales estimate and BMI, and a gap beyond the limit SimplyMeds chooses reaches a clinician.
+
+I'll be in London from 23 to 25 November. Could we take 30 minutes then to look at how the capture would run day to day, or speak by phone if you are not there?
+https://meetings.hubspot.com/katerina-galich
+
+Katerina","Hi Avtar,
+
+The scan is under 45 seconds from the photos to structured results. SimplyMeds Online would keep its current route for anyone who does not scan.
+
+Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+To go through how it would run day to day on a call, choose a time here:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Rishi,Krishna,https://linkedin.com/in/rishikrishna,Pharmica,Chief Executive Officer,,,"Hi Rishi,
+
+The Wegovy pill is part of what Pharmica sells online, next to Wegovy injection and Mounjaro. When the declared weight is the only weight available, a clinician has no other source to read it against.
+
+I run 3DLOOK. FitXpress leaves the pharmacy one timestamped structured record for each weight check, produced in the consultation itself from 2 photos on the patient's phone with camera-roll uploads switched off. The record holds a Smart Scales weight estimate and BMI next to the declared figures, and cases where the gap passes Pharmica's threshold are flagged for a clinician.
+
+I'm in London from 23 to 25 November. Which of those days could you spare 30 minutes at Pharmica?
+https://meetings.hubspot.com/katerina-galich/london
+
+Katerina","Hi Rishi,
+
+The patient gets pose and framing guidance on screen while capturing. In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR.
+
+Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+You can book a call with me here:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Scott,McDougall,https://linkedin.com/in/scott-mcdougall-2b864a35,The Independent Pharmacy,Co-Founder,,,"Hi Scott,
+
+Foundayo sits alongside Wegovy and Mounjaro at The Independent Pharmacy, all prescribed after an online assessment. A BMI worked out from a declared weight and height can be only as firm as the declaration.
+
+I run 3DLOOK. FitXpress is built to run in the pharmacy's own flow through an SDK or API. For each assessment it takes 2 photos on the patient's phone and returns a timestamped structured record, with a Smart Scales estimate and BMI next to the declared weight, and a case goes to a clinician when the gap is wider than the pharmacy allows.
+
+Will you be in London at any point from 23 to 25 November? I'd value 30 minutes, and a call is a fine alternative.
+https://meetings.hubspot.com/katerina-galich
+
+Katerina","Hi Scott,
+
+Scan records sit on random identifiers. In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR.
+
+Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+To talk it over by phone, a slot can be picked here:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Nicholas,Sears,https://linkedin.com/in/nicholas-sears-5528683b,NowPatient,Senior Operations Manager at Infohealth Ltd,,,"Hi Nicholas,
+
+Alongside Mounjaro and Wegovy, NowPatient sells Mysimba and orlistat. A video call shows a patient on camera, and a weight judged from that picture is a reading by eye.
+
+I run 3DLOOK. FitXpress gives the clinician a Smart Scales weight estimate and BMI to read beside the declared figures, and a gap above the threshold NowPatient sets is flagged for a clinician. Behind it are 2 photos the patient captures on their phone in the consultation, with prompts on screen for position and framing.
+
+I'm in London 23 to 25 November. Could I come to your office for 30 minutes?
+https://meetings.hubspot.com/katerina-galich/london
+
+Katerina","Hi Nicholas,
+
+BMI is calculated from the height the patient supplies. Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+A call can be arranged here:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Katy,H.,https://linkedin.com/in/katy-h-98007610,Well Pharmacy,Head of Digital Product,,,"Hi Katy,
+
+Well Pharmacy's online weight management has patients complete a consultation form, optionally share photos, and join a video call. A photo or a video of a patient is judged by eye, and a camera-roll photo shows neither when it was taken nor a figure to check it against.
+
+I run 3DLOOK. For Well's product team, FitXpress is an SDK: a capture screen that could sit before or beside the video call, where the patient takes 2 photos on their own phone, with camera-roll uploads disabled and pose and framing guided on screen. Through the API Well receives a Smart Scales weight estimate and BMI together with the declared figures, as a timestamped structured record, and a flag at a gap size Well chooses.
+
+If you are in London on 23 to 25 November, could we meet for 30 minutes and map where the capture would go? A call is fine if not.
+https://meetings.hubspot.com/katerina-galich
+
+Katerina","Hi Katy,
+
+The scan is under 45 seconds from the photos to structured results. There is also a server-side option where the patient does not see the body metrics.
+
+Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+I can go through the SDK and API on a call, and you can pick a time here:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Mike,Gibbs,https://linkedin.com/in/michaelgibbs1,Second Nature,Co-founder & COO,,,"Hi Mike,
+
+In a remote programme like Second Nature's, a typed weight is the figure someone entered, with no second source beside it.
+
+FitXpress, our product at 3DLOOK, puts a camera step into a programme. Prompts guide the patient through 2 photos on the phone, and one timestamped, structured record returns with a Smart Scales weight estimate and BMI beside the declared figures. Second Nature picks the size of gap that goes to a clinician.
+
+My London dates are 23 to 25 November. Could you spare 30 minutes there to go through where the step fits in delivery?
+https://meetings.hubspot.com/katerina-galich/london
+
+Katerina","Hi Mike,
+
+Photos kept after processing are blurred, and faces are obfuscated at capture. Scan records sit on random identifiers.
+
+Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+For a call, my booking page is here:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Barry,Pace,https://linkedin.com/in/barryjamespace,HeliosX,Director of Product,,,"Hi Barry,
+
+In a MedExpress consultation flow, a typed weight on its own gives the product nothing to compare it with.
+
+3DLOOK, which I run, makes FitXpress as an SDK. The patient takes 2 photos on their phone inside the session, the camera-roll picker is disabled, and the API returns a Smart Scales weight estimate and BMI beside the declared figures. HeliosX chooses the gap size that sends a case to a clinician, and each check is saved as one timestamped record.
+
+I'm in London 23 to 25 November. Would you have 30 minutes at your office for a walk through the SDK?
+https://meetings.hubspot.com/katerina-galich/london
+
+Katerina","Hi Barry,
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR. The API returns the results into HeliosX's own flow.
+
+Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+If a call suits you, the booking page is here:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Rebecca,Ryan,https://linkedin.com/in/rebecca-ryan-1a42b444,Reset Health,Head of Product,,,"Hi Rebecca,
+
+In Reset Health's app flow, a typed weight is a single field, and nothing else can corroborate it.
+
+3DLOOK, which I run, makes FitXpress as an SDK with an API. The API returns a Smart Scales weight estimate and BMI as fields beside the declared figures, from 2 photos taken on the patient's phone in the session. The SDK disables the camera-roll picker and guides pose and framing, and each check comes back as one timestamped record. Reset Health decides how large a gap goes to a clinician.
+
+I'm in London 23 to 25 November. Could we take 30 minutes there to go through the SDK?
+https://meetings.hubspot.com/katerina-galich/london
+
+Katerina","Hi Rebecca,
+
+Retained photos are blurred, with faces obfuscated at capture. In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR.
+
+Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+To talk it through by phone, you can book here:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Gurdev,Channa,https://linkedin.com/in/gurdev-channa-ab79a244,Britannia Pharmacy,Owner,,,"Hi Gurdev,
+
+Britannia Pharmacy runs a booked weight loss service in which a health professional assesses suitability, with ongoing support and monitoring. A weight measured at an appointment says little about the weeks that follow.
+
+I run 3DLOOK. FitXpress adds a remote check between visits: the patient takes 2 photos on their phone, with pose and framing guided on screen and no uploads from the camera roll. The declared figures are shown with a Smart Scales weight estimate and BMI, a gap above the threshold Britannia sets is flagged for a clinician, and each check is one timestamped structured record. The appointment itself stays as it is.
+
+I'm in London 23 to 25 November. Could I call in at your Stratford premises for 30 minutes?
+https://meetings.hubspot.com/katerina-galich/london
+
+Katerina","Hi Gurdev,
+
+Anyone who prefers not to scan keeps the current route. A DPA with SCCs is available on request.
+
+Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+I can walk you through it on a call whenever suits you:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Jay,Jetley,https://linkedin.com/in/jay-jetley-232a0013,PrivateDoc,VP of Engineering,,,"Hi Jay,
+
+Where does a weight check sit in PrivateDoc's consultation flow today? A photo that comes in as an upload carries nothing about the session it came from.
+
+I run 3DLOOK. FitXpress returns one timestamped structured record per check through its API, with a Smart Scales weight estimate and BMI next to the declared figures, and differences beyond a threshold PrivateDoc sets arrive flagged for a clinician. The capture is an SDK step: 2 photos on the patient's phone, camera-roll picker disabled.
+
+I would like 30 minutes in London on 23 to 25 November to go through where it would sit in your flow.
+https://meetings.hubspot.com/katerina-galich/london
+
+Katerina","Hi Jay,
+
+Photos are deleted after processing or within 30 days, per the pharmacy's policy. Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+If you would like to go through it on a call, my calendar is here:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Chris,Edson,https://linkedin.com/in/chris-edson,Second Nature,CEO & Co-founder,,,"Hi Chris,
+
+Second Nature runs its Mounjaro programme remotely. The record of a typed weight holds the figure and nothing around it.
+
+FitXpress, which 3DLOOK builds, turns 2 photos from the patient's phone into a Smart Scales weight estimate and BMI shown beside the declared figures. The check is saved as one timestamped structured record, and any gap beyond a limit Second Nature defines is passed to a clinician.
+
+I will be in London 23 to 25 November. Could we meet there for 30 minutes to cover the record and the threshold?
+https://meetings.hubspot.com/katerina-galich/london
+
+Katerina","Hi Chris,
+
+FitXpress is not a medical device and does not make eligibility decisions. A DPA with SCCs is available on request.
+
+Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+My calendar has slots for a call:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Kuldip,Chana,https://linkedin.com/in/kuldip-chana-78985945,Chana Chemist,MD,,,"Hi Kuldip,
+
+Chana Chemist offers weight management in its branches, with regular check-ins at the branch a patient chooses. A branch check-in reads the weight on the day, and the next reading waits for the next check-in.
+
+I run 3DLOOK. FitXpress gives Chana Chemist a remote option for the weeks in between: the patient takes 2 photos on their phone with the camera-roll picker disabled, and a Smart Scales weight estimate and BMI sit beside the declared figures. Gaps past a limit the pharmacy chooses go to a clinician, and the check is saved as one timestamped structured record.
+
+I'm in London on 23 to 25 November. Could we meet at your Southall office for 30 minutes?
+https://meetings.hubspot.com/katerina-galich/london
+
+Katerina","Hi Kuldip,
+
+Smart Scales gives a software estimate of weight for the clinician to read beside the declared figure, and the clinician decides what happens next. FitXpress is not a medical device and does not make eligibility decisions.
+
+Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+My calendar is open if you would like to talk it through by phone:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Omar,Kadir,https://linkedin.com/in/omar-kadir-77821619,PPRX,Founder,,,"Hi Omar,
+
+PPRX is a Perivale pharmacy built around weight loss, and I'd like to hear how it confirms a patient's weight today. A weight typed in or read out on a call is a number, and a number alone gives a clinician little to review.
+
+I run 3DLOOK. FitXpress puts the check inside the consultation: the patient takes 2 photos on their phone, with pose and framing guided on screen, and the prescriber sees a Smart Scales weight estimate and BMI beside the declared figures. A gap above the threshold PPRX sets goes to a clinician, and each check becomes one timestamped structured record.
+
+I'm in London on 23 to 25 November. Is there a 30-minute slot at PPRX that suits you on one of those days?
+https://meetings.hubspot.com/katerina-galich/london
+
+Katerina","Hi Omar,
+
+There is a server-side option where the patient does not see the body metrics. FitXpress is not a medical device and does not make eligibility decisions.
+
+Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+A time for a call can be chosen here:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Mo,Umar,https://linkedin.com/in/mo-umar-99085551,Numan,Vice President Operations,,,"Hi Mo,
+
+How does weight fit into Numan's onboarding of a new patient? A declared weight needs a number beside it before it can be checked.
+
+3DLOOK, which I run, makes FitXpress. It adds that number at the same moment: the patient takes 2 photos on their phone in the session, and a Smart Scales weight estimate and BMI arrive beside the declared figures as one timestamped record. A gap over the limit Numan sets is marked for a clinician.
+
+I'm in London 23 to 25 November and can come to your office for 30 minutes to go through it.
+https://meetings.hubspot.com/katerina-galich/london
+
+Katerina","Hi Mo,
+
+Scan records sit on random identifiers.
+
+Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+A call can be set up here:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Rosie,Carr,https://linkedin.com/in/rosie-carr-421a7a76,Second Nature,Head of Clinical and Member Experience,,,"Hi Rosie,
+
+Clinical work at Second Nature now includes its Mounjaro programme. Taken alone, a declared weight tells a clinician only what was said, with no reference point beside it.
+
+At 3DLOOK, which I run, FitXpress works from 2 photos the patient takes on their phone during the session, and the clinician sees a Smart Scales weight estimate and BMI beside the declared figures. Where a gap passes the limit Second Nature chooses, the clinician is alerted, and each check is saved as one timestamped record.
+
+I'm in London 23 to 25 November. Would 30 minutes there suit you, so I can show what the estimate can and cannot be used for?
+https://meetings.hubspot.com/katerina-galich/london
+
+Katerina","Hi Rosie,
+
+Smart Scales gives a software estimate of weight. The clinician reads it beside the declared figure and decides what any gap means.
+
+Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+Pose and framing guidance runs on screen during capture. To arrange a call, here is my calendar:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Aisha,Suleman,https://linkedin.com/in/aisha-suleman-44867a7a,Everest Pharmacy,Director of Operations,,,"Hi Aisha,
+
+Everest Pharmacy also sees weight-loss patients face to face in its branches. Wherever a weight is typed in, nothing sits beside it for a clinician to compare.
+
+I run 3DLOOK. FitXpress asks the patient for 2 photos on their phone in the session, with on-screen guidance for pose and framing and the camera-roll option off. The prescriber then reads a Smart Scales weight estimate and BMI beside the declared figures, and each check is kept as one timestamped record.
+
+I'm in London 23 to 25 November. If you are there, could we meet for 30 minutes?
+https://meetings.hubspot.com/katerina-galich
+
+Katerina","Hi Aisha,
+
+The scan is under 45 seconds from the photos to structured results. Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+If a call would help, my calendar is here:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Yousef,Yaghoubi,https://linkedin.com/in/yousef-yaghoubi-b9a25986,My London Pharmacy,Strategic Advisor,,,"Hi Yousef,
+
+Wegovy, Mounjaro, Foundayo and liraglutide are all sold online by My London Pharmacy. A photo or a video shows how a patient looks and carries no weight figure of its own.
+
+I run 3DLOOK. Built into the pharmacy's own flow through an SDK or API, FitXpress asks the patient for 2 photos on their phone during the consultation, with on-screen prompts for position, and a Smart Scales estimate and BMI appear next to the declared weight. The pharmacy picks a gap size that sends a case to a clinician, and each check is saved as one timestamped structured record.
+
+Could we meet for 30 minutes on 23 to 25 November, at My London Pharmacy or anywhere in London that suits you?
+https://meetings.hubspot.com/katerina-galich/london
+
+Katerina","Hi Yousef,
+
+The scan is under 45 seconds from the photos to structured results. 3DLOOK has worked with 100+ clients.
+
+Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+I can show how it would sit in the pharmacy's flow on a short call:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Shimal,P.,https://linkedin.com/in/shimalpatel,Day Lewis Pharmacy,Group Chief Operating Officer,,,"Hi Shimal,
+
+At Day Lewis Pharmacy a clinician reviews BMI as part of the weight service. Any check that needs the patient in a branch ties the timing of a follow-up to the visit slot.
+
+FitXpress, the product 3DLOOK makes, is built for the days between visits. The patient takes 2 photos on their phone with on-screen guidance and camera-roll uploads switched off, and Smart Scales gives a weight estimate and BMI beside the declared figures for review. A gap above the threshold Day Lewis sets is flagged, and every check ends as one timestamped record.
+
+I'll be in London 23 to 25 November. Would you see me for 30 minutes at your office on one of those days?
+https://meetings.hubspot.com/katerina-galich/london
+
+Katerina","Hi Shimal,
+
+3DLOOK has worked with 100+ clients. Scan records sit on random identifiers.
+
+Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+For a call, pick a time here:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Amish,Patel,https://linkedin.com/in/amish-patel-96b103259,NowPatient,Director,,,"Hi Amish,
+
+NowPatient sells Mounjaro, Wegovy injection and tablets, and Foundayo. A weight confirmed in the consultation session itself leaves a clear record of when it was taken.
+
+I run 3DLOOK. With FitXpress the patient takes 2 photos on their phone during the consultation, and the pharmacy receives one timestamped structured record of the check, with a Smart Scales weight estimate and BMI beside the declared figures. Camera-roll uploads are switched off, and the size of gap that goes to a clinician is NowPatient's choice.
+
+I'm in London 23 to 25 November. Could we spend 30 minutes at your office going through how this would sit in the app?
+https://meetings.hubspot.com/katerina-galich/london
+
+Katerina","Hi Amish,
+
+In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR. Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+For a call, my calendar is here:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Catherine,Bell,https://linkedin.com/in/catherine-bell-9802a9220,Juniper,Head of Services,,,"Hi Catherine,
+
+What does a Juniper clinician have beside a declared weight when treatment is prescribed? Whatever the method, a declared weight alone gives nothing to compare it with.
+
+I run 3DLOOK. FitXpress gives the clinician a Smart Scales weight estimate and BMI beside the declared figures, from 2 photos the patient takes on their phone during the consultation. Where the two figures differ by more than a threshold Juniper sets, the case is flagged for a clinician. Each check is saved as one timestamped structured record.
+
+I'm in London 23 to 25 November, and I would like 30 minutes at your office to show you where it fits.
+https://meetings.hubspot.com/katerina-galich/london
+
+Katerina","Hi Catherine,
+
+The Smart Scales figure is a software estimate that sits beside the declared weight, and the clinician decides what follows. Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+If you would like to see it, a call can be booked here:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Thomas,Curtis,https://linkedin.com/in/thomas-curtis-844271263,Reset Health,Head of Clinical Development,,,"Hi Thomas,
+
+What sits beside a declared weight in Reset Health's clinical review today? A declared weight is a statement, and a record of it can hold only that statement.
+
+I run 3DLOOK, which makes FitXpress. Smart Scales is a software estimate of weight, worked out from 2 photos, front and side, captured on the patient's phone during the consultation. It sits beside the declared weight and BMI, the clinician decides what any difference means, and Reset Health chooses the size of difference that prompts a review. Each check is stored as a timestamped record.
+
+I'll be in London 23 to 25 November and would welcome 30 minutes in person on what a clinician can read from the estimate.
+https://meetings.hubspot.com/katerina-galich/london
+
+Katerina","Hi Thomas,
+
+Records from each scan are tied to random identifiers, and pose and framing guidance runs on screen during capture.
+
+Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+If a call is useful, my calendar is here:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+John,Foreman,https://linkedin.com/in/john-foreman-9555022ba,Green Light Pharmacy,Founding Director,,,"Hi John,
+
+Across London, Green Light Pharmacy runs weight management from its branches. Each visit produces a single weight on a single day.
+
+I run 3DLOOK. With FitXpress, for the weeks between visits, the patient can take 2 photos on their phone, with the camera roll switched off and pose and framing guided on screen. The pharmacist reads a Smart Scales estimate and BMI against the declared weight, is alerted when the gap passes a threshold Green Light Pharmacy chooses, and each check is stored as one timestamped structured record.
+
+I'm in London 23 to 25 November. Would 30 minutes at your office suit you on one of those days?
+https://meetings.hubspot.com/katerina-galich/london
+
+Katerina","Hi John,
+
+The scan also returns 80+ body measurements. The scan is under 45 seconds from the photos to structured results.
+
+Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+If you would like to hear more, a call can be booked here:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
+Nikita,Dhain,https://linkedin.com/in/nikita-dhain-440013339,The Family Chemist,Director,,,"Hi Nikita,
+
+Wegovy tablets, Mounjaro, Foundayo and liraglutide are all sold by The Family Chemist, online only. A weight entered on any online form stands alone, with nothing to read it against.
+
+I run 3DLOOK. Each FitXpress check ends as a timestamped structured record: a Smart Scales weight estimate set against the declared weight, with a gap size chosen by the pharmacy that sends a case to a clinician. The patient makes it in the consultation itself, taking 2 photos on their phone, guided for pose and framing, with no uploads from the camera roll.
+
+I'm in London on 23 to 25 November. Could you spare 30 minutes if you are there? A call would do otherwise.
+https://meetings.hubspot.com/katerina-galich
+
+Katerina","Hi Nikita,
+
+The Family Chemist would keep its current route for anyone who does not scan. A DPA with SCCs is available on request.
+
+Liveness controls may require a prompted action during capture, helping indicate whether the session involved a live person.
+
+If a call would be useful, my diary is here:
+https://meetings.hubspot.com/katerina-galich
+
+Katerina"
