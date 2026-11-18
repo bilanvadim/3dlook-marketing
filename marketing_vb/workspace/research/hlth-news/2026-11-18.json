@@ -1,0 +1,103 @@
+{
+ "generated": "2026-11-18T05:41:01+00:00",
+ "items": [
+  {
+   "id": "37227364-ce2b-4ef1-aafb-2a3cdfbc3245",
+   "title": "Viz.ai and Wolters Kluwer Partner to Integrate AI-Powered Care Coordination With UpToDate Clinical Evidence",
+   "date": "2026-11-17",
+   "tags": [
+    "Interoperability / Data Management",
+    "Care Coordination / Navigation / Care Access",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/viz-ai-and-wolters-kluwer-partner-to-integrate-ai-powered-care-coordination-with-uptodate-clinical-evidence"
+  },
+  {
+   "id": "1be99dff-a324-4b2a-aaad-68c3d8cd6b9f",
+   "title": "Calibrate and Withings Study Finds Comprehensive Care Boosts GLP-1 Weight Loss by Over 60%",
+   "date": "2026-11-17",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Medical Research",
+    "Digital Medicine",
+    "Health Tech, Solutions & Services",
+    "Chronic Condition Management"
+   ],
+   "url": "https://hlth.com/insights/news/calibrate-and-withings-study-finds-comprehensive-care-boosts-glp-1-weight-loss-by-over-60"
+  },
+  {
+   "id": "561578e6-e33a-43f0-b0be-91c4564a7050",
+   "title": "Apple Partners With OpenEvidence to Launch New Health Research Study",
+   "date": "2026-11-17",
+   "tags": [
+    "Patient Engagement / Experience",
+    "Medical Research",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/apple-partners-with-openevidence-to-launch-new-health-research-study"
+  }
+ ],
+ "analyses": {
+  "37227364-ce2b-4ef1-aafb-2a3cdfbc3245": {
+   "id": "37227364-ce2b-4ef1-aafb-2a3cdfbc3245",
+   "score": 0,
+   "segment": "—",
+   "what": "Viz.ai і Wolters Kluwer Health інтегрують AI для виявлення пацієнтів і координації догляду з UpToDate Expert AI у Viz.ai One. Платформа вже працює приблизно у 2,000 госпіталів США.",
+   "why": "Клінічний AI для госпіталів (care coordination, доказова медицина). Немає зв'язку з даними про тіло.",
+   "play": "none",
+   "companies": [
+    "Viz.ai",
+    "Wolters Kluwer Health",
+    "Wolters Kluwer",
+    "Sanofi",
+    "Regeneron",
+    "Novartis",
+    "Johnson & Johnson"
+   ],
+   "caveat": "",
+   "_date": "2026-11-17"
+  },
+  "1be99dff-a324-4b2a-aaad-68c3d8cd6b9f": {
+   "id": "1be99dff-a324-4b2a-aaad-68c3d8cd6b9f",
+   "score": 2,
+   "segment": "FitXpress §1 Telehealth & GLP-1",
+   "what": "Calibrate Health і Withings опублікували дворічне real-world дослідження (4,961 дорослий у США): GLP-1 разом із комплексним клінічним і поведінковим доглядом асоціюється з більшою на 60%+ втратою ваги, ніж лише GLP-1. У 974 учасників через смарт-ваги Withings відстежували body composition (muscle-to-fat ratio).",
+   "why": "Програма Calibrate спирається на регулярні виміри ваги й body composition, щоб між візитами бачити плато, повторний набір ваги та втрату м'язів. Дослідження прямо адресоване employers і health plans, які оцінюють покриття GLP-1, тож для US obesity-програм body composition стає частиною outcomes. FitXpress дає body composition і 80+ вимірів із двох фото прямо в застосунку програми, без окремого пристрою, для baseline і follow-up check-ins на 30/60/90 днях.",
+   "play": "hook_for_existing",
+   "companies": [
+    "Calibrate Health",
+    "Calibrate",
+    "Withings"
+   ],
+   "campaign": {
+    "title": "US obesity care: body composition як outcome після дослідження Calibrate/Withings",
+    "profile": "nick",
+    "market": "USA",
+    "targets": "US obesity- і GLP-1-програми, що продають employers і health plans та трекають лише вагу або self-report. Calibrate і вже контактовані акаунти (Found, Omada Health, Vida Health, Wondr Health, Virta Health тощо) не повторювати. Лукалайки з ICP для перевірки статусу: Noom, Ro, LifeMD, Sequence (WeightWatchers Clinic).",
+    "roles": "Chief Medical Officer / Medical Director, Head of Outcomes / Program Insights, Head of Product, Head of Member Engagement / Retention, Founder / CEO",
+    "angle": "Calibrate і Withings щойно показали employers і health plans дворічні дані, де body composition (muscle-to-fat ratio) входить в outcomes. Якщо ваша програма бачить лише вагу, FitXpress додає body composition і виміри з двох фото прямо в застосунку, на кожному check-in і без окремого пристрою.",
+    "existing_campaign": "2026-10-16-us-employer-obesity-care",
+    "task": "USA: employer/health-plan obesity & GLP-1 programs tracking only weight — hook on Calibrate/Withings 2-year study, add body composition from two photos at every check-in (feed 2026-10-16-us-employer-obesity-care)"
+   },
+   "caveat": "Calibrate уже контактував nick, тож direct cold на них не робити. Withings — hardware-вендор, не таргет; не позиціонувати FitXpress «проти ваг» і не обіцяти точність body composition. Дослідження обсерваційне: не цитувати 60%/17.3% як результат FitXpress. Більшість акаунтів у фіксованих US-списках уже контактовані, потрібні нові лукалайки.",
+   "_date": "2026-11-17"
+  },
+  "561578e6-e33a-43f0-b0be-91c4564a7050": {
+   "id": "561578e6-e33a-43f0-b0be-91c4564a7050",
+   "score": 1,
+   "segment": "—",
+   "what": "Apple разом з OpenEvidence запустила Apple Health AI Usage Study до 200,000 учасників у США. Дослідження вивчає, як люди сприймають і використовують відповіді AI про здоров'я, з опційним шерингом даних HealthKit.",
+   "why": "Загальний тренд consumer AI у здоров'ї. У статті немає нічого про виміри тіла чи body composition, тож немає й конкретного play.",
+   "play": "none",
+   "companies": [
+    "Apple",
+    "OpenEvidence"
+   ],
+   "caveat": "",
+   "_date": "2026-11-17"
+  }
+ },
+ "posts": []
+}
