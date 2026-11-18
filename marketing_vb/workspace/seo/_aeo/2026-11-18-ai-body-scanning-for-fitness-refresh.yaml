@@ -1,0 +1,142 @@
+source: HubSpot AEO, portal 6014382, via scripts/hubspot-aeo.py topic
+pulled: '2026-11-18'
+window:
+  from: '2026-10-19'
+  to: '2026-11-18'
+assistants:
+- ChatGPT
+- Gemini
+- Perplexity
+seed: AI body scanning for fitness apps
+portal_visibility_avg: 32.3
+tracked_prompts_total: 25
+note: 'visibility = % of AI answers that name 3DLOOK. match = shared rare words with the topic, an ordering
+  hint only: judge relevance yourself. Prompt texts are raw buyer queries (they may say DEXA); canon wording
+  still applies in the article.'
+matched_prompts:
+- id: 565540613659
+  prompt: What’s the best body composition tracking software for a fitness app that wants smartphone-based
+    scans? Include sources.
+  visibility: 43
+  phase: CONSIDERATION
+  icp: Connected & Digital Fitness Segment
+  match: 6.07
+  runs_checked: 0
+  runs_naming_3dlook: 0
+  ai_cites: []
+- id: 565767450188
+  prompt: Which body scanning APIs are easiest to integrate into a fitness or wellness app?
+  visibility: 54
+  phase: CONSIDERATION
+  icp: Connected & Digital Fitness Segment
+  match: 5.06
+  runs_checked: 0
+  runs_naming_3dlook: 0
+  ai_cites: []
+- id: 565540613660
+  prompt: What body scanning SDKs work for fitness apps with remote users?
+  visibility: 75
+  phase: CONSIDERATION
+  icp: Connected & Digital Fitness Segment
+  match: 5.06
+  runs_checked: 0
+  runs_naming_3dlook: 0
+  ai_cites: []
+- id: 565780358696
+  prompt: What’s the best alternative to hardware 3D body scanners for fitness studios?
+  visibility: 22
+  phase: AWARENESS
+  icp: Connected & Digital Fitness Segment
+  match: 4.77
+- id: 565780359239
+  prompt: Which body scanning tools are suitable for health and wellness apps that need HIPAA or GDPR
+    controls?
+  visibility: 75
+  phase: CONSIDERATION
+  icp: Telehealth & Weight-Loss Segment
+  match: 3.2
+- id: 554650727322
+  prompt: What are the top mobile body scanning APIs for health apps?
+  visibility: 66
+  phase: CONSIDERATION
+  icp: Telehealth & Weight-Loss Segment
+  match: 3.2
+- id: 565494878373
+  prompt: Which body scanning tools support high-volume scan workflows for enterprise customers?
+  visibility: 32
+  phase: CONSIDERATION
+  icp: Telehealth & Weight-Loss Segment
+  match: 3.07
+- id: 554650727324
+  prompt: Best mobile body scanning software for fitness and wellness platforms?
+  visibility: 55
+  phase: CONSIDERATION
+  icp: Telehealth & Weight-Loss Segment
+  match: 3.07
+no_prompt_covers_topic: false
+open_recommendations:
+- id: 184940079
+  priority: MEDIUM
+  type: URL
+  status: NEW
+  title: Get 3DLOOK INC. featured in robosize.com's "Free Body Scanner Tools"
+  content_title: null
+  content_topic: null
+  summary: Reach out to the robosize.com editorial team or article author with a tailored pitch to add
+    3DLOOK INC. as a retailer- and fitness-ready smartphone body scanning option, leading with its two-photo
+    capture, 80+ measurements in under 60 seconds, and hardware-free demoability. Offer an expert quote
+    on how to evaluate free trials for measurement accuracy, privacy, and fit-readiness, and request an
+    update that includes 3DLOOK INC. in the comparison.
+  influencing_citations: []
+  match: 5.62
+- id: 185383829
+  priority: MEDIUM
+  type: URL
+  status: NEW
+  title: Get 3DLOOK INC. featured in fit3d.com's "Best 3D Body Scanners 2025"
+  content_title: null
+  content_topic: null
+  summary: 'Reach out to the editorial team or article author with a smartphone-first alternative angle:
+    pitch 3DLOOK INC. as a no-hardware option for fitness studios that need body measurements, body composition
+    tracking, and visual progress monitoring without dedicated scanning equipment. Offer a concise expert
+    note on 3DLOOK''s two-photo mobile capture and request an update adding 3DLOOK INC. to the comparison
+    as a fit for studios prioritizing remote accessibility and lower setup friction.'
+  influencing_citations: []
+  match: 5.62
+- id: 184342662
+  priority: HIGH
+  type: CONTENT
+  status: NEW
+  title: Create a comparison listicle on body scanning software
+  content_title: Best Mobile Body Scanning Software Compared
+  content_topic: null
+  summary: Compare smartphone based body scanning software for fitness apps and enterprise teams with
+    clear criteria around accuracy, repeatability, workflow scale, demos, and hardware free deployment.
+  influencing_citations: []
+  match: 5.06
+- id: 184940080
+  priority: MEDIUM
+  type: URL
+  status: NEW
+  title: Get 3DLOOK INC. featured in fit3d.com's "Best 3D Body Scanners 2025"
+  content_title: null
+  content_topic: null
+  summary: Reach out to the editorial team or article author with a tailored addition for the buyer’s-guide
+    section covering apparel, wellness, and mobile-first use cases, positioning 3DLOOK INC. as a smartphone-based
+    3D body scanning alternative that delivers 80+ measurements from two photos without dedicated hardware.
+    Offer expert input on setup cost, scalability, and remote measurement accuracy, and ask for a new
+    mention or comparison entry that expands the guide beyond installed scanner systems.
+  influencing_citations: []
+  match: 3.76
+- id: 185383818
+  priority: LOW
+  type: DOMAIN
+  status: NEW
+  title: 'LinkedIn Post: Explain scan validation basics'
+  content_title: How to Validate AI Body Scans Across Conditions
+  content_topic: null
+  summary: Publish a practical post explaining how to check whether AI body scan measurements stay accurate
+    and repeatable when lighting, pose, and clothing vary so buyers see your brand as the clearest source
+    on measurement reliability.
+  influencing_citations: []
+  match: 3.6

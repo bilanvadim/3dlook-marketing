@@ -1,0 +1,380 @@
+context_pack:
+  created: 2026-11-18
+  product: fitxpress
+  track: seo
+  objective: "refresh-in-place: ai-body-scanning-for-fitness (Hub 1 AI in Fitness, MOFU commercial use case, bridge to the fitness landing)"
+  target_agent: seo-planner (then seo-writer/seo-editor)
+  workspace: ai-body-scanning-for-fitness-refresh
+
+  # STABLE (verbatim from _stable-fitxpress.yaml, rendered 2026-11-04)
+  company_oneliner: "3DLOOK turns two smartphone photos into a 3D body model and 80+ body measurements in 45 seconds, via API and SDK."
+
+  approved_claims:
+    - id: FXS-SPEED
+      text: "Two photos (front + side); structured outputs in under 45 seconds."
+      source: "proof-points.md, Speed table"
+    - id: FXS-OUTPUTS
+      text: "80+ body measurements; body composition outputs: BMI, BMR, fat %, lean mass, fat mass, essential fat, beneficial fat."
+      source: "proof-points.md, Output coverage (формулировка строки 'Body composition outputs' дословно)"
+      note: "Всегда «80+ body measurements», никогда «80+ body metrics»; BMI/BMR/composition — calculated metrics/estimates, не measurements (terminology §2.13)."
+    - id: FXS-DELIVERY
+      text: "Delivered primarily via API/SDK integration directly into the customer's own product or interface; the FitXpress Admin Panel is an optional, complementary interface for monitoring and exporting results, for teams that do not want to build their own dashboard; it does not replace integration."
+      source: "overview.md (API and SDK) + решение Вадима на чекпоинте 1 Telehealth Documentation, 2026-09-21"
+      note: "«monitoring and exporting» — канон с 2026-09-23 (Вадим, Review 1 capture-quality FAQ, C11). Порядок ФИКСИРОВАН Вадимом 2026-09-21: API/SDK — главная история доставки, Admin Panel называется прямо («FitXpress Admin Panel», не «vendor console») и идёт вторым, как опция."
+    - id: FXS-ACCURACY
+      text: "3DLOOK's measurement accuracy of approximately 96-97% across body metrics, with a typical absolute error of 1.5-2.0 cm per measurement, varying by body part"
+      source: "accuracy-formulations.md §1.1, verbatim из живой framework-статьи"
+      note: "SECONDARY: только если статья реально обсуждает точность. Никогда без условия (референс/популяция/протокол) и без ссылки на framework-статью из того же абзаца. Два бенчмарка (этот и ISO 8559 0.40 cm) не совмещаются в одном абзаце."
+    - id: FXS-REPEAT
+      text: "For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm"
+      source: "accuracy-formulations.md §1.2"
+      note: "SECONDARY: для longitudinal/repeat-scan тем. Пишется «< 1 cm» / «below 1 cm», locked convention."
+    - id: FXS-POPULATION
+      text: "FitXpress was not specifically trained on data representing people with physical disabilities, and its measurement performance has not been established for this population. This matters when a disability affects the standard standing pose or capture sequence. In those cases, the program needs a documented alternative measurement path."
+      source: "accuracy-formulations.md §5 «Population limitation»; апрув Вадима 2026-09-11"
+      note: "Третье предложение — для workflow-статей (§5 сам так говорит); в остальных берутся первые два. Цифр не несёт."
+    - id: FXS-HIPAA
+      text: "FitXpress can support HIPAA-governed deployments where 3DLOOK acts as a business associate under an executed BAA, where applicable."
+      source: "compliance.md §1, живой trust FAQ"
+      note: "Section-first: короткая заметка + ссылка на FAQ, ответы FAQ не пересказывать. «HIPAA compliant/certified» — hard fail детектора."
+    - id: FXS-GDPR
+      text: "In most enterprise deployments, the customer acts as the data controller and 3DLOOK acts as the data processor under GDPR."
+      source: "compliance.md §2 — каноническое предложение, дословно"
+      note: "Не выбрасывать «the data»; хедж «In most enterprise deployments» не срезается."
+    - id: FXS-IDS
+      text: "Scan records are associated with anonymized, randomly generated IDs; 3DLOOK cannot identify a specific individual from stored scan records."
+      source: "compliance.md §4"
+    - id: FXS-LIFECYCLE
+      text: "Submitted data: front/side photos + gender + height + optional weight. Generated data: body measurements, weight/BMI-related outputs, body composition estimates, a 3D model, scan-to-scan comparison outputs. Technical data: capture-quality/pose-validation flags, clothing classification, face-obfuscation confirmation, processing logs with timestamps and request metadata."
+      source: "compliance.md §3"
+    - id: FXS-RETENTION
+      text: "Measurements, body composition data and 3D models are retained on an ongoing basis unless the customer agreement says otherwise; deletion is by scan identifier on the customer's request."
+      source: "compliance.md §3/§4"
+      note: "«Processed, not stored» — запрещено: выводы ХРАНЯТСЯ."
+    - id: FXS-SCOPE
+      text: "Supports: remote intake and body-measurement capture; body composition outputs and Body Progress comparisons; structured data collection for research protocols; structured intake and supporting documentation for customer-managed eligibility workflows; patient/member engagement. Does not independently determine: a diagnosis, treatment, medication recommendation, fitness for duty, employment eligibility, insurance eligibility, clinical-trial eligibility, or any other high-impact individual decision. Final decisions stay with the customer's clinicians, underwriters or other designated decision-makers."
+      source: "compliance.md §7"
+      note: "Канонический boundary-блок. Fitness: брать только первое утверждение о поддержке (capture, Body Progress comparisons, member engagement) и короткую границу; клинические пункты не разворачивать, тон fitness светлый и не клинический (audience.md §3)."
+    - id: FXS-MEDICAL
+      text: "FitXpress is not a medical device."
+      source: "compliance.md; решение Вадима 2026-09-11 (4-е состояние правила)"
+      note: "Формулируется прямо; «positioned as» про любой product/intended-use/регуляторный факт — hard fail."
+    # topic-specific (moved from additional_approved_claims_topic_specific, 2026-11-18)
+    - id: FIT-ADJUST
+      text: "Health and fitness apps: 24% of users are active on day 1 and 7% on day 30 (global figures, 2022 data)."
+      source: "workspace/pages/for-connected-and-digital-fitness/fact-sheet.md, row 'Adjust'; primary: Adjust, Mobile app retention benchmarks for 2023, https://www.adjust.com/blog/get-the-mobile-app-retention-benchmarks-for-2023/ (verified on the primary page 2026-10-02)"
+      note: "Read as app users, not paying members. Name the source and the year in the sentence. Landing wording: '24% → 7% of health and fitness app users are active on day 1; 7% are still active on day 30.' Do not quote the landing's sentence as the article's own; vary the framing, keep the figures."
+    - id: FIT-KIDMAN
+      text: "A median of 70% of users discontinued use of lifestyle behavior and mental health apps within the first 100 days; lack of personalization is among the reasons."
+      source: "fact-sheet.md, row 'A median of 70%'; primary: Kidman PG, Curtis RG, Watson A, Maher CA. When and Why Adults Abandon Lifestyle Behavior and Mental Health Mobile Apps: Scoping Review. J Med Internet Res 2024;26:e56897, https://www.jmir.org/2024/1/e56897 (abstract: 'a median of 70% of users discontinued use within the first 100 days'; full text lists 'Lack of personalization' under Content and features; verified via Europe PMC 2026-10-02)"
+      note: "Say 'median', lifestyle and mental health apps, scoping review. Not 'fitness apps lose 70%'. Not a claim that a scan fixes it."
+    - id: FIT-SDK
+      text: "Web and mobile SDKs, including supported iOS and Android integrations. Recommended setup: the SDK together with the API, because pose and framing validation runs in the SDK's capture layer."
+      source: "tech-spec.md (public SDK wording, Vadim 2026-09-23; 'integrate the SDK, not just API'), via fact-sheet.md"
+      note: "Order stays API/SDK first (FXS-DELIVERY). No 'any Android device'; no iOS/Android SDK feature beyond tech-spec wording."
+    - id: FIT-RTPV
+      text: "Real-Time Pose Validation pauses capture until pose and framing requirements are met; voice prompts guide a member scanning alone."
+      source: "tech-spec.md RTPV; roadmap.md ('Real-Time Pose Validation (RTPV)' Live, approved wording in tech-spec.md); live landing 2026-11-13 ('pose and framing guidance during capture, with voice prompts')"
+      note: "Say 'helps avoid retakes', never an internal retake figure. Do not name 'RTPV 2.0'. Clothing Detector in the API is planned (roadmap.md): do not describe payload flags or 'prompts the user'."
+    - id: FIT-WHITELABEL
+      text: "The platform designs the onboarding, consent and results screens, so the member sees the scan under the app's own brand and the platform chooses what the member and the coach see. The photo-capture layer, where pose validation runs, stays fixed to protect measurement quality."
+      source: "tech-spec.md 'What's customizable (white-label)' / 'What's NOT customizable'; fact-sheet.md"
+    - id: FIT-CAPTURE
+      text: "The scan runs on the member's own phone, with no hardware and no club visit. For repeat scans, keep conditions consistent: form-fitting clothing, the same place, the phone on a stable surface."
+      source: "tech-spec.md ('Works on any smartphone camera', Recommended capture environment); fact-sheet.md"
+      note: "Repeatability depends on consistent capture (accuracy-formulations.md §1.2 context)."
+    - id: FIT-PLAN
+      text: "3D Body Progress tracking and 3D Goal Visualization are features of the FitXpress Pro plan."
+      source: "live /pricing/ read 2026-10-02 and 2026-10-06 via fact-sheet.md; landing 2026-11-13"
+      note: "Name the 3D features only with 'on the FitXpress Pro plan'. The live /pricing/ lists no 3D model on Starter. No plan prices or request counts in the article (landing owns them; pricing.md: public copy keeps sales-path figures out). 'No integration fee' is allowed (pricing.md, Vadim 2026-09-30) if needed."
+    - id: FIT-OUTPUTS-NOTE
+      text: "The accuracy figures describe body measurements. Body composition estimates are derived from the measurements with height and, where provided, weight."
+      source: "compliance.md §3; fact-sheet.md; terminology §2.13"
+      note: "Needed wherever FXS-ACCURACY appears with body composition nearby. BMI is a calculated metric from height and weight, not a measure of body fat (fixes a live-page defect)."
+    - id: FIT-EVIDENCE-LIMIT
+      text: "These figures come from internal validation of body measurements; detailed methodology is available under a non-disclosure agreement. 3DLOOK's accuracy claims have not been peer-reviewed or externally validated through a third-party clinical study."
+      source: "accuracy-formulations.md §1.8 and §1.9 (verbatim); live landing uses a variant"
+      note: "Quote only these two sentences from §1.9. Do not use 'independent', 'third-party', 'validated', 'peer-reviewed' as claims about our own evidence. Do not use the 'positioned as equivalent' sentences from §1.9; for equivalence use 'FitXpress is not equivalent to DXA, BIA, or a calibrated scale when the workflow, protocol, or regulatory standard requires those methods.' (§2.1 option 2)."
+    - id: FIT-BODY-PROGRESS
+      text: "Body Progress compares two scans chosen by the platform; 3DLOOK does not track individuals."
+      source: "compliance.md §4, via fact-sheet.md"
+      note: "Never 'FitXpress tracks each member over time'. Write 'the platform compares scans it selects' or 'scan-to-scan comparison'."
+    - id: FIT-ACSM
+      text: "ACSM's 2027 Worldwide Fitness Trends (ACSM's Health & Fitness Journal, Nov/Dec 2026; released 2026-10-20): wearable technology ranked No. 1, mobile exercise apps rose from No. 4 to No. 2, data-driven training technology held at No. 8; more than 1,400 fitness professionals responded."
+      source: "ACSM release via Newswise, 2026-10-20, https://www.newswise.com/articles/acsm-announces-top-fitness-trends-for-2027 (verified by the coordinator 2026-11-18: 'Mobile exercise apps climbed from No. 4 to No. 2, while data-driven training technology held steady at No. 8'; 'more than 1,400 fitness professionals'); primary https://www.acsm.org/2027-fitness-trends/ (403 from the VPS); DOI 10.1249/fit.0000000000001208"
+      note: "Forecast survey of fitness professionals rating how widely they observe trends, not usage data. The release says the ranking does not establish that a product or program is effective. Says nothing about body scanning."
+
+  banned_claims:
+    - "most accurate body scanning / best-in-class (без конкретного бенчмарка)"
+    - "любая цифра точности, сведённая к одному универсальному числу без условия decision/reference/protocol/population/tolerance"
+    - "medical device / diagnostic / clinical assessment / dosing / prescribing recommendation / eligibility decisioning"
+    - "replaces DXA (also written DEXA), BIA, calibrated scales, or clinician review"
+    - "automated eligibility, underwriting, or fraud-detection claims"
+    - "guaranteed compliance / «makes you compliant» / guaranteed outcomes"
+    - "любое число не из approved_claims"
+    - "named competitor comparisons (Prism Labs, Bodygram, Size Stream и др.)"
+    - "HIPAA compliant / HIPAA certified / SOC 2 certified / FDA-cleared"
+    - "«no personal identifiers» / «no personal data» — retired 2026-09-18: фото и измерения могут быть персональными данными"
+    - "«processed, not stored» — выводы хранятся on an ongoing basis"
+    - "«FitXpress tracks each patient over time» → «the program compares scans it selects» / «scan-to-scan comparison»"
+    - "«95%+ repeatability consistency» — внутренняя цифра, НЕ публикуется"
+
+  banned_words: [comprehensive, delve, disrupt, groundbreaking, harness, leverage, realm, revolutionary, robust, seamless, tapestry, unparalleled]
+
+  terminology: "Механические запреты НЕ дублируются здесь (урок bans-card.py: 4 копии правил, исполняет одна). Писатель читает brand-assets/style-guides/hard-bans-card.md (generated, один экран, не может разойтись с детектором). Судейские строки — corrective negation, we/our, you, buyer/customer, ярлыки контент-плана в заголовках — остаются в terminology-guardrails.md за редактором."
+
+  tone_base:
+    - "calm, specific, evidence-led B2B (about-me.md); the reframe move как утверждение, не риторический вопрос (поправка 2026-09-11)"
+    - "предложения в среднем < 16 слов (article_lint gate 10); декларативно, конкретика над абстракцией"
+    - "честность про лимиты в одном дыхании с возможностями; actor framing (telehealth program, care team, clinic), не «you»-спам"
+    - "sensitive verticals (telehealth, GLP-1, insurance, occ health, clinical trials): ранняя scope note курсивом"
+
+  claims_discipline:
+    - "NEVER: diagnose, make treatment/eligibility/clearance decisions, replace clinician/DXA/BIA/calibrated scale, guarantee compliance, auto-detect fraud."
+    - "Describe as: a mobile body-scanning solution; a structured body-data capture layer; a remote intake and documentation layer; a workflow-standardization tool; support for review, monitoring, documentation, and operational efficiency (about-me.md verbatim). FitXpress is not a medical device."
+
+  live_slugs:
+    - mobile-body-scanning-patient-engagement
+    - the-potential-of-ai-in-telehealth
+    - ai-in-fitness-industry
+    - ai-body-data-health-hub
+    - clinical-trial-anthropometric-measurement-software-obesity-trials
+    - occupational-health-screening-software
+    - mobile-body-scanning-accuracy
+    - top-7-remote-body-composition-tools-glp-1-clinics
+    - online-pharmacy-bmi-verification-a-2026-compliance-guide
+    - glp-1-market
+    - bariatric-pre-qualification-mobile-3d-body-scanning
+    - remote-body-measurement-online-fitness-coaching
+    - ai-body-data-wellness-platforms
+    - fitxpress-data-privacy-security-regulatory-faq
+    - manual-vs-digital-intake-occupational-health-screening
+
+  recently_published: []
+
+  # TOPIC DELTA
+
+  tone_adjustments_topic:
+    - "Fitness register is lighter and less clinical (audience.md §3); no scope-note italics needed beyond one plain line 'FitXpress is not a medical device.' near the record/outputs section."
+    - "Reader = product, growth and founder roles at connected and digital fitness companies (icp-detail.md §8: Founder/CEO, CPO, Head of Growth, VP Engagement/Retention, CTO, Product Manager). Actor framing: fitness app, product team, coach, platform. Not 'you'-spam, not 'customer' unless a contract is meant."
+    - "Segment hook (audience.md §3): visible transformation plus body-data personalization leading to engagement, retention and premium-tier monetization."
+    - "Segment pains (icp-detail.md §8 / audience.md §3): churn without visible progress; high churn after onboarding; generic recommendations with limited personalization; hard to differentiate; rising CAC needs stronger engagement."
+    - "do_not_say: medical, diagnostic or clearance language; do not blur into GLP-1 clinical or wellness-rewards workflows; no 'AI-powered' as a standalone value; no competitor or client names; no hype words from the live page (revolutionary, game-changer, unprecedented, harnesses, seamless, leverage, comprehensive, Moreover, 'Plus,' as a connector)."
+
+  content_strategy:
+    note: "Phase 0 gate OVERRIDDEN. Asselya Sekerova requested this refresh on 2026-11-18 (Slack DM); Vadim told the coordinator to do what she asks. Content-plan rows for this URL are non-create (Hub 1 'Fitness apps': Review / decide P2; 'Product strategy': Create net-new P2 with this URL as existing). The driving row is 1.x1 (Refresh / expand, P1) from research/seo-fitxpress-2026-09/2026-09-27-content-plan-rows-for-assel.md §D, a proposal list, not yet in the synced content-plan.md. Same precedent as accuracy-roi-telehealth-refresh (09-23) and virtual-clothing-try-on-mt-refresh (11-04). Do not re-run the STOP logic. Republish at the existing URL; the slug does not change; no net-new page."
+    rows:
+      - hub: "Hub 1 — AI in Fitness"
+        cluster: "Fitness use case (row 1.x1)"
+        intent: "MOFU"
+        action_type: "Refresh / expand"
+        priority: "P1"
+        existing_urls: ["https://3dlook.ai/content-hub/ai-body-scanning-for-fitness/"]
+        recommendation: "Per sheet row 1.x1 (rows-for-assel §D): hub ai-in-fitness-industry is educational and this article is commercial. Make it the bridge to /fitxpress/for-connected-and-digital-fitness/: CTA above 30%, fresh examples, no repeats of the hub. Data: 57 contacts, 4 deals; GA4 sessions 410 to 29 year over year."
+      - hub: "Hub 1 — AI in Fitness"
+        cluster: "Fitness apps"
+        intent: "BOFU / commercial"
+        action_type: "Review / decide"
+        priority: "P2"
+        existing_urls: ["https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/", "https://3dlook.ai/content-hub/ai-body-scanning-for-fitness/"]
+        recommendation: "Use the existing FitXpress page as the BOFU destination. If publishing, make it a use-case article and link to the product page, not a replacement."
+      - hub: "Hub 1 — AI in Fitness"
+        cluster: "Product strategy"
+        intent: "MOFU"
+        action_type: "Create net-new"
+        priority: "P2"
+        existing_urls: ["https://3dlook.ai/content-hub/ai-body-scanning-for-fitness/"]
+        recommendation: "Better as a new section inside the AI Fitness hub first. Create standalone later only if search demand appears. Retention lever for progress visibility lives here as one section, not a standalone."
+    hub1_header_note: "content-plan.md Hub 1 header (hub live 2026-07-31): do not create another broad AI-in-fitness or AI-body-scanning-for-fitness overview; supporting pieces must target coaching, comparison, app implementation or the GLP-1 bridge; send BOFU traffic to the fitness landing. This refresh stays a commercial use-case bridge (where a phone scan sits in the member journey), not an overview."
+    vertical_boundary: "Fitness (audience.md §3, icp-detail.md §8): owns visible progress, retention, premium-tier features, app and product strategy. Keep separate from GLP-1 clinical workflows and wellness-rewards verification. No diagnostic, medical or clearance language. Smart Scales / BMI verification belongs to the BMI pages, not here."
+    landing_map_rules_to_apply:
+      - "Rule 1: one down link to the landing, first one inside the first 30% of the article body; anchor from the row's list: 'body scanning for fitness apps', 'mobile alternative to a gym body scanner', 'body composition tracking for fitness apps' (as written or lightly inflected). Never 'click here' or a bare URL."
+      - "Rule 3: the article title, H1 and meta title must NOT use the landing's primary keyword 'body scanning for fitness apps' (take the informational version). This conflicts with the 'fitness apps' H1 suggestion in gap analysis §4; planner must resolve (e.g. keep 'AI body scanning' + 'fitness' without that exact phrase) and record the choice."
+      - "Rule 4: demo CTA. Checked live 2026-11-18: the landing's Book a demo buttons use href=\"#form\" and the form block has id=\"form\" (no #demo). Use https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/#form for any demo link; plain text CTAs link the page itself."
+    internal_link_targets:
+      up:
+        - "https://3dlook.ai/content-hub/ai-in-fitness-industry/"
+      sideways:
+        - "https://3dlook.ai/content-hub/remote-body-measurement-online-fitness-coaching/"
+        - "https://3dlook.ai/content-hub/body-scanning-technology-for-weight-loss/"
+        - "https://3dlook.ai/content-hub/ai-body-scanners-vs-dexa-scans/"
+        - "https://3dlook.ai/content-hub/glp-1-muscle-loss-fitness-apps/"
+        - "https://3dlook.ai/content-hub/body-scanning-technology-comparison/"
+      down:
+        - "https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/"
+      trust:
+        - "https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/"
+        - "https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/"
+    link_notes:
+      down: "PRIMARY conversion destination. CTA 1 inside the first 30%, CTA 2 mid, CTA 3 end (one-CTA rule overridden for this article). Live URL checked by the coordinator 2026-11-18: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/ answers 200 (moved back from /digital-fitness/ on 2026-11-16; /digital-fitness/ now 301s to it). Link this URL directly."
+      up: "Once. No capability landscape, personalization or coaching survey."
+      sideways: "One link each at most; every one is a pointer, not a section. body-scanning-technology-comparison (2-photo vs video vs hardware, 2026-05-22) is the closest neighbour to the 'alternative to hardware scanners' AEO question: link for the method comparison, do not restate it."
+      trust: "Accuracy figure paragraph links the framework article in the same paragraph. Privacy: one short note plus the FAQ link, no restating."
+      all_slugs_checked: "Verified in published-articles-inventory.md: ai-in-fitness-industry, remote-body-measurement-online-fitness-coaching, body-scanning-technology-for-weight-loss, ai-body-scanners-vs-dexa-scans, body-scanning-technology-comparison, mobile-body-scanning-accuracy (live_slugs), fitxpress-data-privacy-security-regulatory-faq (live_slugs). glp-1-muscle-loss-fitness-apps: not in the inventory; verified from workspace/seo/articles/2026-09-19-glp-1-fitness-apps-body-composition-tracking/published-live-2026-11-06.md (published 2026-10-29). Landing: landing-map.md row Hub 1 and workspace/pages/for-connected-and-digital-fitness/published-live-2026-11-13.md."
+      optional_live_neighbours_not_targets: "connected-fitness-industry, top-trends-and-features-in-fitness-apps, top-fitness-tech-companies, top-fitness-industry-trends, virtual-body-measurements exist in the inventory. The live page's 'Further reading' block links three of them. Planner decides whether to keep any; none is required."
+
+  published_inventory:
+    already_live: true
+    note: "THIS IS THE REFRESH TARGET (expected, not a Phase-0 stop). published-articles-inventory.md line 177: ai-body-scanning-for-fitness / AI Body Scanning for Fitness / pre-2026 (live 2024-06-12, modified 2026-07-08) / Education, filed under Fitness (Hub #4 in the inventory numbering). The inventory has no hub-1 refresh entry for it yet."
+    published_hub_articles:
+      - {slug: "ai-in-fitness-industry", published: "2026-07-31", role: "hub"}
+      - {slug: "remote-body-measurement-online-fitness-coaching", published: "2026-09-04", role: "P1 cluster, digital coaching"}
+      - {slug: "glp-1-muscle-loss-fitness-apps", published: "2026-10-29", role: "GLP-1 bridge for fitness apps"}
+    refresh_status: "No earlier refresh of this URL on record; live byline Dana Vioreanu, modified 2026-07-08."
+    inbound_editorial_links_today: "Sitewide crawl running at pack time; the coordinator appends the result to refresh-gap-analysis.md §6. Known: the ai-in-fitness-industry hub links this URL."
+
+  existing_urls:
+    - "https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/  # landing, conversion destination (200 on 2026-11-18): do not restate pricing, the record table or its FAQ"
+    - "https://3dlook.ai/content-hub/ai-in-fitness-industry/  # Hub 1: owns capability landscape, structured body data, scan-to-scan progress, personalization, digital coaching, bias, implementation: link up once"
+    - "https://3dlook.ai/content-hub/remote-body-measurement-online-fitness-coaching/  # owns remote measurement in online coaching: link for coaching only"
+    - "https://3dlook.ai/content-hub/body-scanning-technology-for-weight-loss/  # row 1.x2, refresh pending, owns weight-loss progress tracking: one link, no weight-loss section"
+    - "https://3dlook.ai/content-hub/ai-body-scanners-vs-dexa-scans/  # owns the AI scan vs DXA (also written DEXA) comparison: link only if DXA comes up"
+    - "https://3dlook.ai/content-hub/glp-1-muscle-loss-fitness-apps/  # GLP-1 users inside fitness apps: one link at most"
+    - "https://3dlook.ai/content-hub/body-scanning-technology-comparison/  # 2-photo vs video vs hardware: link for method comparison"
+    - "https://3dlook.ai/content-hub/mobile-body-scanning-accuracy/  # accuracy framework: the only place accuracy is explained"
+    - "https://3dlook.ai/content-hub/fitxpress-data-privacy-security-regulatory-faq/  # privacy, retention, regulatory"
+    - "https://3dlook.ai/  # homepage and planned /fitxpress/ own 'AI body scanner' and 'body scanner app': do not target as primary keyword"
+
+  cannibalization_guardrails:
+    - "ai-in-fitness-industry (live 2026-07-31) owns AI in fitness broadly: link up once; no capability landscape, no personalization/coaching survey, no bias section, no 'who can use it' list. Its H2s: Why AI in fitness matters now / AI fitness capability landscape / Structured body data: the foundation layer / Progress tracking: scan-to-scan comparison / Personalization / Digital coaching / Bias and accessibility / Implementation and evaluation considerations / Who can use structured body data / Where FitXpress fits / What FitXpress does not do."
+    - "Fitness landing (live 2026-11-13) owns product, record table, pricing, pilot steps and its FAQ (onboarding completion, gym body scan, SDKs for remote users, how results are delivered, scan frequency, Apple Health / Health Connect). The article must not restate those answers. The 'what is a body scan at the gym' and 'SDKs for remote users' answers already exist there: the article takes the product-team decision angle (where in the journey, hardware vs photos vs in-app, how to test), not a second FAQ."
+    - "remote-body-measurement-online-fitness-coaching owns coaching programs: link, no coaching deep-dive."
+    - "body-scanning-technology-for-weight-loss (1.x2 refresh pending): no weight-loss section beyond one link; cut the live page's weight-loss and predictive-analytics passages."
+    - "ai-body-scanners-vs-dexa-scans owns method comparison with DXA: no comparison here."
+    - "glp-1-muscle-loss-fitness-apps: one link at most; no GLP-1 content."
+    - "mobile-body-scanning-accuracy: sole home of accuracy explanation."
+    - "fitxpress-data-privacy-security-regulatory-faq: one short note plus link."
+    - "Homepage and /fitxpress/ (planned) own 'AI body scanner' / 'body scanner app': may appear naturally, not as primary keyword. GSC Aug-Nov 2026 AI-body-scan queries: homepage 1,792 impr. at 7.2; ai-body-scanners-vs-dexa-scans 638 at 8.2; ai-in-fitness-industry 651 at 16.9; this page 171 at 35.8."
+    - "Do not make a free consumer app, 'free', 'nude scanner' or 'weight guesser' queries a target: that demand is consumer; the buyer is the product team."
+
+  additional_approved_claims_topic_specific: "Moved into approved_claims by the coordinator 2026-11-18 (article_lint gate 3 reads approved_claims only): FIT-ADJUST, FIT-KIDMAN, FIT-SDK, FIT-RTPV, FIT-WHITELABEL, FIT-CAPTURE, FIT-PLAN, FIT-OUTPUTS-NOTE, FIT-EVIDENCE-LIMIT, FIT-BODY-PROGRESS, FIT-ACSM."
+
+  claims_NOT_to_use_here:
+    - "Client names. Blog rule: blog-style-guide.md pre-publish checklist: 'if no published case-study agreement exists, anonymize'. Fact sheet: case-studies/ holds no fitness client and no fitness logo is cleared; the landing carries no fitness proof. UK Meds, Yazen, Healthyr and any logo-strip names stay out; Zing Coach and Verv (listed as clients in the review file) stay out. If proof of use is wanted: 'production infrastructure already deployed in remote weight-management and BMI-verification workflows' (landing wording, proof-points.md Customer outcomes, no names)."
+    - "Competitor and vendor names (blog-style-guide Competitors: category only): remove Bodygee and Neko Health from the live text; do not name fitness apps whose scan is supplied by a competitor."
+    - "Live-page numbers without a primary source: 'global fitness app market growing over 10% annually'; '28% of gym members used AI apps daily in 2023' (gitnux); '53% after the first month' (exercise.com); '71% abandon in 3 months' (dr-muscle.com); the 2021 Stanford tracking study and the 2017 AI health coach study (PMC6238835). Cut."
+    - "Per-measurement accuracy figures (wrist, waist, chest), '95%+ repeatability', the ISO 8559 0.40 cm figure (separate benchmark; if ever used, never in the same paragraph as the 96-97% / 1.5-2.0 cm / < 1 cm set)."
+    - "Capabilities not in roadmap.md Live: exercise-form analysis, real-time monitoring of weight 'throughout the day', predictive analytics for dietary lapses or emotional eating, workout personalization engine, motion tracking, early detection of health issues, medical diagnostics, 'metabolic rate' effects on weight loss. Anti-fraud human validation, Clothing Detector in API, Android without gyroscope: not described as available."
+    - "Description of hardware scanners as the same category as FitXpress (live text 'multiparametric MRI', 'rotating platform ... infrared sensor'): hardware is a separate category, FitXpress uses two smartphone photos."
+    - "Mobile Tailor, fashion/retail, try-on paragraph (off-topic here). Jazzercise / Woman's World history."
+    - "Pricing figures, the record table, the landing's FAQ answers."
+
+  refresh:
+    live_url: "https://3dlook.ai/content-hub/ai-body-scanning-for-fitness/"
+    slug: "ai-body-scanning-for-fitness  # UNCHANGED: republish at the existing URL, no net-new page"
+    live_published: "2024-06-12"
+    live_modified: "2026-07-08"
+    baseline_file: "workspace/seo/articles/ai-body-scanning-for-fitness-refresh/published-live-2026-11-18.md"
+    baseline_words: "~2,400"
+    target_length: "1,600-2,200 words (MOFU use-case article, not a hub)"
+    live_byline: "Dana Vioreanu (2024)"
+    byline_recommendation: "Assel Sekerova (CLAUDE.md §15 default; she requested the refresh). OPEN ITEM: her call, flag it in the publish package and digest."
+    indexing_status: "Indexed, self-canonical, no robots meta (gap analysis §1)."
+    phase_0_override: "Gate overridden; see content_strategy.note. Planner proceeds directly to planning; do not re-ask the Phase-0 question."
+
+    search_console_summary: "Clicks/impr/pos by month: 2025-07 255/26,341/8.6; 2025-08 260/32,226/9.4; 2025-10 143/29,771/6.3; 2025-12 92/24,944/6.6; 2026-03 148/16,558/7.8; 2026-04 63/7,009/6.8; 2026-06 17/1,869/13.5; 2026-07 10/891/25.0; 2026-10 7/518/19.7. Fall starts April 2026, in line with the sitewide drop. Queries that worked Aug-Nov 2025 (impr / pos): ai body scanner app 3,963 / 5.3; ai body scanner 2,347 / 2.3; ai body scanner free 520 / 6.2; body analysis ai 514 / 5.9; body scanner ai 309 / 1.0; ai body fat scanner 262 / 6.1; ai body analysis 261 / 5.1; best ai body scanner app 251 / 6.5; ai body scan fitness 121 / 2.8; ai body scanner for weight loss 128 / 2.9. Aug-Nov 2026 the same family sits at positions 25-80. Demand is mostly consumer (free app, self-scan). The row still credits the page with 57 contacts and 4 deals."
+
+    defects_to_remove:  # gap analysis §2
+      - {live_text: "H1 'Revolutionizing Fitness Tracking…'; 'game-changer', 'revolutionary advancement', 'unprecedented accuracy', 'harnesses the power', 'seamless', 'leverage' (x4), 'comprehensive', 'Moreover', 'Plus,' as a connector", fix: "hard bans; rewrite in the 2026 measured tone (CLAUDE.md §6, hard-bans-card.md)"}
+      - {live_text: "'AI fitness scanners use advanced technologies like multiparametric MRI and human pose estimation'", fix: "false for FitXpress; two smartphone photos (tech-spec.md)"}
+      - {live_text: "'rotating platform for 30 seconds, an infrared sensor …'", fix: "hardware category: describe separately and plainly, not as the same thing"}
+      - {live_text: "'real-time analysis of exercise recordings … improve exercise form'", fix: "not a FitXpress capability; roadmap.md Live column only"}
+      - {live_text: "'precise', 'accurate', 'highly accurate and precise measurements', 'a level of detail and accuracy previously only available in specialized clinics'", fix: "bare accuracy claims; use accuracy-formulations.md verbatim (FXS-ACCURACY / FXS-REPEAT) with the condition and the framework link in the same paragraph"}
+      - {live_text: "'BMI … measures a person's body fat'", fix: "factually wrong; BMI is calculated from height and weight"}
+      - {live_text: "'over 80 measurements … fat percentage … BMI and BMR'", fix: "FXS-OUTPUTS wording: 80+ body measurements; BMI and BMR are calculated metrics; body composition values are estimates"}
+      - {live_text: "'real-time monitoring of weight changes … throughout the day'; 'predict … emotional eating'", fix: "cut, not FitXpress and unsourced"}
+      - {live_text: "'FitXpress … can show fitness customers in real-time how the changes in their metabolic rate affect their weight loss'", fix: "overclaim; describe 3D Goal Visualization and Body Progress as canon does (Pro plan)"}
+      - {live_text: "'Health monitoring … early detection of potential health issues'; 'Medical diagnostics'", fix: "medical framing; cut. 'FitXpress is not a medical device.'"}
+      - {live_text: "'progress photos provide an objective perspective'", fix: "'objective' banned about our tech and output: use standardized, timestamped, repeatable"}
+      - {live_text: "Bodygee named and described; Neko Health", fix: "competitor and off-topic vendor naming; category only"}
+      - {live_text: "Mobile Tailor paragraph ('Fashion and retail')", fix: "cut"}
+      - {live_text: "three FitXpress links to https://3dlook.ai/", fix: "to the fitness landing"}
+      - {live_text: "'Get a demo of FitXpress' at about 45% of the page, then nothing until the end", fix: "first CTA in the first 30%"}
+      - {live_text: "Jazzercise / Woman's World history section; Evolution of Body Measurement Insights", fix: "cut as filler"}
+      - {live_text: "mechanical: em dashes, Title Case headings, 'Moreover', 'Plus', 'rather than'", fix: "detector hard fails; run scripts/article_lint.py"}
+
+    unsupported_numbers_cut: "See claims_NOT_to_use_here (market growth >10%, gitnux 28%, 53%, 71%, Stanford 2021, PMC6238835). Replace with FIT-ADJUST and FIT-KIDMAN only. Any other new number or example must be verified at its primary source, with date, before it goes in."
+
+    keep:  # gap analysis §2-§4 mapped onto the live text
+      - "URL words in H1/title: 'AI body scanning' and 'fitness' (see landing_map rule 3 conflict on the exact 'body scanning for fitness apps' phrase)."
+      - "The tape-measure to scan transition, shortened to a few sentences, and the correction that BMI is a calculated metric."
+      - "The two-photo explanation, rewritten to FXS-SPEED / FXS-OUTPUTS wording, with one sentence separating hardware scanners from a phone scan."
+      - "Progress photos vs a structured record: the useful idea in the live 'fitness progress photo apps' section, rewritten without 'objective'."
+      - "Visual progress and retention argument, rebuilt on FIT-ADJUST and FIT-KIDMAN."
+      - "Link to body-scanning-technology-for-weight-loss as one sentence; link to ai-in-fitness-industry once."
+    cut:
+      - "Evolution/history sections, the Introduction filler, the Jazzercise paragraph."
+      - "'Precision and Speed' section in full (MRI, rotating platform, exercise-form claims)."
+      - "'Real-World Applications' list (health monitoring, fashion/retail, medical diagnostics) with Bodygee and Neko Health."
+      - "Weight-loss and predictive analytics sections; 'Next Level of Personal Training' (28% gitnux statistic); 'Enhancing Gym Experiences' as written."
+      - "The live conclusion ('Embrace the Future ...', 'game-changer', 'revolutionary advancement')."
+      - "Any restating of the landing: pricing, record table, FAQ answers."
+
+    angle: "Reader: product, growth and founder roles at connected and digital fitness companies (coaching apps, connected-equipment platforms, workout apps, gym chains with an app); ICP segment Connected & digital fitness, $1M+ revenue. Article OWNS the commercial case for adding a phone-based body scan to a fitness app: where a scan sits in the member journey (baseline at onboarding, scheduled check-ins, progress review with a coach, a premium-tier feature); what it produces and does not produce; why visible progress matters for retention (FIT-ADJUST, FIT-KIDMAN); the choice between in-club hardware, progress photos and an in-app scan; how to test it with a member cohort. Bridge, not a copy of the landing: category questions first, then to the landing. AEO: answer 'best alternative to hardware 3D body scanners for fitness studios' and 'best body composition tracking software for a fitness app that wants smartphone-based scans' as direct question-shaped H2s or FAQ items, with the 22% and 43% visibility prompts as the gaps. Fresh examples: category-level, dated and verified at a primary source, or none."
+
+    cta_override: "Three text CTAs to the fitness landing, all to {landing} (the one-CTA rule is overridden for this article, same as ROI and try-on): first CTA inside the first 30% of the body (short answer or first two H2s), a mid CTA, a closing CTA. Anchors from landing-map.md Hub 1 row only. 'Book a demo' href = the landing URL + #form (verified live 2026-11-18). No other form, no /contact-us/."
+
+    post_publish_for_asselya: "Internal links to add on OTHER pages after publication are NOT the writer's job; the coordinator lists them in refresh-gap-analysis.md §6 from the crawl."
+
+    open_items_for_publish_package:
+      - "Byline: Assel Sekerova vs keep Dana Vioreanu (her call)."
+      - "Landing URL and demo anchor verified 2026-11-18: /fitxpress/for-connected-and-digital-fitness/ 200, demo anchor #form. Re-check at publish."
+      - "H1/title vs landing-map rule 3 (primary keyword exclusion)."
+      - "Fresh examples: verify at a primary source or omit."
+
+  keywords_raw:
+    source: "ahrefs api v3 (keywords-explorer), Standard 2022 plan, country us"
+    pulled: "2026-11-18"
+    seed: "ai body scanning for fitness"
+    seed_has_data: false
+    seed_metrics: null
+    guidance: "Primary keyword is NOT 'ai body scanner' (owned by /fitxpress/ per landing-map; today it 301s to the homepage). The exact seed and both fitness-app phrasings have no measured demand (Ahrefs no_data, not zero): treat the earned GSC queries as the real signal. Planner chooses among fitness-app use-case phrasings; data below. Volume is monthly US."
+    no_data_phrases: ["ai body scanning for fitness", "body scanning for fitness", "body scanning for fitness apps", "scanning for fitness apps", "for fitness apps", "ai body scanning for"]
+    variants:
+      - {keyword: "ai body scanning", volume: 0, difficulty: null}
+      - {keyword: "ai body", volume: 400, difficulty: 1, intent: "informational+commercial"}
+      - {keyword: "ai body scan", volume: 70, difficulty: 2, parent_topic: "ai body scanner"}
+      - {keyword: "ai body scan app", volume: 10, difficulty: null}
+      - {keyword: "ai body scan fitness app", volume: 10, difficulty: null}
+      - {keyword: "body scan app", volume: 200, difficulty: 38, parent_topic: "body scanner"}
+      - {keyword: "body scanning", volume: 400, difficulty: 37, traffic_potential: 600}
+      - {keyword: "body scanner", volume: 1000, difficulty: 47, traffic_potential: 300}
+      - {keyword: "ai body scanner (owned by /fitxpress/ and homepage)", volume: 150, difficulty: 1, traffic_potential: 80}
+      - {keyword: "ai body scanner app", volume: 30, difficulty: 0}
+      - {keyword: "ai body fat scanner", volume: 60, difficulty: null}
+      - {keyword: "fitness apps", volume: 2800, difficulty: 64, traffic_potential: 4000}
+      - {keyword: "ai-powered fitness apps", volume: 800, difficulty: 12, cpc: 120}
+      - {keyword: "ai fitness apps", volume: 100, difficulty: 32}
+      - {keyword: "ai-driven fitness apps", volume: 100, difficulty: null}
+      - {keyword: "fitness apps development company", volume: 150, difficulty: 0, cpc: 700}
+      - {keyword: "for fitness", volume: 40, difficulty: 30}
+    ideas_broad_consumer_not_targets:
+      - {keyword: "best apps for fitness", volume: 11000, difficulty: 42}
+      - {keyword: "free fitness apps", volume: 6800, difficulty: 66}
+      - {keyword: "best fitness apps", volume: 2500, difficulty: 36}
+    note: "Rows above are the relevant subset; the four full pulls are in workspace/seo/_keywords/2026-11-18-ai-body-scanning-for-fitness-refresh*.yaml (units spent 261 + 966 + 457 + seed ai body scanner). null = Ahrefs has no figure, not zero. 'fitness apps development company' (150 / KD 0, CPC 700) is the only builder-intent phrase with measured volume."
+
+  aeo_signals:
+    source: "HubSpot AEO, portal 6014382, via scripts/hubspot-aeo.py topic"
+    pulled: "2026-11-18"
+    window: "2026-10-19 to 2026-11-18"
+    portal_visibility_avg: 32.3
+    no_prompt_covers_topic: false
+    matched_prompts:
+      - {id: 565540613659, prompt: "What's the best body composition tracking software for a fitness app that wants smartphone-based scans? Include sources.", visibility: 43, phase: CONSIDERATION, icp: "Connected & Digital Fitness Segment", match: 6.07, runs_checked: 0, runs_naming_3dlook: 0, ai_cites: []}
+      - {id: 565767450188, prompt: "Which body scanning APIs are easiest to integrate into a fitness or wellness app?", visibility: 54, phase: CONSIDERATION, icp: "Connected & Digital Fitness Segment", match: 5.06, runs_checked: 0, runs_naming_3dlook: 0, ai_cites: []}
+      - {id: 565540613660, prompt: "What body scanning SDKs work for fitness apps with remote users?", visibility: 75, phase: CONSIDERATION, icp: "Connected & Digital Fitness Segment", match: 5.06, runs_checked: 0, runs_naming_3dlook: 0, ai_cites: []}
+      - {id: 565780358696, prompt: "What's the best alternative to hardware 3D body scanners for fitness studios?", visibility: 22, phase: AWARENESS, icp: "Connected & Digital Fitness Segment", match: 4.77}
+      - {id: 565780359239, prompt: "Which body scanning tools are suitable for health and wellness apps that need HIPAA or GDPR controls?", visibility: 75, phase: CONSIDERATION, icp: "Telehealth & Weight-Loss Segment", match: 3.2}
+      - {id: 554650727322, prompt: "What are the top mobile body scanning APIs for health apps?", visibility: 66, phase: CONSIDERATION, icp: "Telehealth & Weight-Loss Segment", match: 3.2}
+      - {id: 565494878373, prompt: "Which body scanning tools support high-volume scan workflows for enterprise customers?", visibility: 32, phase: CONSIDERATION, icp: "Telehealth & Weight-Loss Segment", match: 3.07}
+      - {id: 554650727324, prompt: "Best mobile body scanning software for fitness and wellness platforms?", visibility: 55, phase: CONSIDERATION, icp: "Telehealth & Weight-Loss Segment", match: 3.07}
+    open_recommendations:
+      - {id: 184940079, priority: MEDIUM, type: URL, status: NEW, title: "Get 3DLOOK INC. featured in robosize.com's \"Free Body Scanner Tools\"", match: 5.62}
+      - {id: 185383829, priority: MEDIUM, type: URL, status: NEW, title: "Get 3DLOOK INC. featured in fit3d.com's \"Best 3D Body Scanners 2025\"", match: 5.62}
+      - {id: 184342662, priority: HIGH, type: CONTENT, status: NEW, title: "Create a comparison listicle on body scanning software", content_title: "Best Mobile Body Scanning Software Compared", summary: "Compare smartphone based body scanning software for fitness apps and enterprise teams with clear criteria around accuracy, repeatability, workflow scale, demos, and hardware free deployment.", match: 5.06}
+      - {id: 184940080, priority: MEDIUM, type: URL, status: NEW, title: "Get 3DLOOK INC. featured in fit3d.com's \"Best 3D Body Scanners 2025\"", match: 3.76}
+      - {id: 185383818, priority: LOW, type: DOMAIN, status: NEW, title: "LinkedIn Post: Explain scan validation basics", content_title: "How to Validate AI Body Scans Across Conditions", match: 3.6}
+    note: "visibility = % of AI answers naming 3DLOOK; match is sort order only, planner judges relevance. Prompt texts may say DEXA; canon wording (DXA) applies in the article. ai_cites are empty or absent in this pull. The listicle recommendation (184342662) would name vendors: outside this refresh (competitor rule) and a separate asset."
+
+  exclusions: null
