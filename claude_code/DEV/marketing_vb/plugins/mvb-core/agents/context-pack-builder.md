@@ -111,13 +111,14 @@ internal_link_targets, keywords_raw и aeo_signals (файлы уже на ди�
 - **Зачем:** без этого шага статьи и посты пишутся generic-тоном продукта, не отвечая на конкретную боль читателя и легко нарушая границы сегмента (диагностика, decisioning). Этот шаг делает контент направленным на конкретного buyer persona и безопасным по claims.
 
 ### 7b. Select content-strategy row (только для `track = seo`, FitXpress)
-- Прочитай `brand-assets/content-strategy/content-plan.md` (hub/cluster editorial matrix — офлайн-копия стратегической таблицы) и найди **строку**, соответствующую `objective`/теме статьи (сопоставь по hub + cluster + intent).
+- Найди в `brand-assets/content-strategy/content-plan.md` (hub/cluster editorial matrix — офлайн-копия стратегической таблицы) **строку**, соответствующую `objective`/теме статьи (сопоставь по hub + cluster + intent). С 2026-11-19 файл ~110 КБ, таблицы сгенерированы из CSV: не читай его целиком, ищи Grep'ом по ключевым словам темы и slug, потом прочитай свой хаб (раздел `## Hub N`, его преамбулу и repo notes) и легенду action type.
 - Если строка не найдена → верни `content_strategy: not_in_plan` с пометкой, чтобы seo-planner Phase 0 остановился и спросил Вадима о размещении. **Не выдумывай размещение.**
 - Из найденной строки вытяни компактно (это ГЕЙТ для seo-planner):
-  - `hub`, `cluster`, `intent`, `action_type`, `priority` — `action_type` и `priority` **дословно** из строки (с 2026-09-17 это свободный текст вроде `Section-first / link to central FAQ; standalone only if …` или `P0 - published`); семейство по легенде `content-plan.md` определяет seo-planner, не ты. Не сокращай уточнение — в нём правило строки.
+  - `hub`, `cluster`, `intent`, `action_type`, `priority` — `action_type` и `priority` **дословно** из строки (с листа v3.0, 2026-11-19, ровно 15 значений вроде `Create net-new`, `Refresh / CTR`, `Review + publish draft`; priority вида `P1` или `P0 - published`); семейство по легенде `content-plan.md` определяет seo-planner, не ты. Не сокращай уточнение — в нём правило строки.
   - `existing_urls`: URL из «URL of already published articles» (refresh target / internal-link source / cannibalization warning)
   - `cannibalization_guardrail`: дословно из строки
-  - `recommendation`: дословный угол/решение из строки
+  - `recommendation`: дословный угол/решение из строки (если начинается с `Condition: …` — это часть гейта, не сокращай)
+  - `demand`: колонка «Demand / KD», дословно, если не пустая
 - Из `content-strategy-guidelines.md` §9 добавь `vertical_boundary` для этого vertical (что owns + что НЕЛЬЗЯ: decisioning / диагностика / clearance / замена reference-методов).
 - Собери `internal_link_targets` в 4 направления (§11): up (hub), sideways (related clusters), down (FitXpress/BOFU product page), trust (accuracy framework `mobile-body-scanning-accuracy` + central Privacy/Regulatory FAQ).
 - **Зачем:** без строки стратегии статьи пишутся от title и дублируют существующие хабы. Этот блок даёт seo-planner action_type-гейт, cannibalization guardrail и vertical boundary ещё до кластеризации ключей.

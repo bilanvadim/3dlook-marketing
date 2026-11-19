@@ -1,13 +1,20 @@
 3DLOOK Health Content Strategy: Updated Planning Notes,,
 ,,
 Action Type,Count,Notes
-Create if validated,8,Auto-count from the plan table
-Create net-new,50,Auto-count from the plan table
-Lead magnet / sales asset,8,Auto-count from the plan table
-Publish planned hub,2,Auto-count from the plan table
-Refresh / expand existing,14,Auto-count from the plan table
-Refresh / expand hub,6,Auto-count from the plan table
-Review / decide,7,Auto-count from the plan table
+Published / maintain,19,"Live page. Monitor, interlink, update only if a row below names this page."
+Create net-new,21,Write a new page. The intent is not owned by any live page.
+Create if validated,6,"Write only when the condition at the start of Recommendations is met (sales, search or campaign)."
+Create net-new tool,4,"Interactive tool page (calculator), built by a developer, with a short explainer."
+Refresh / expand,9,Edit the live URL in column J; one brief covers every angle listed for that URL.
+Refresh / expand into hub,1,Turn the live URL into the hub of its cluster.
+Refresh / expand + merge,1,Refresh the stronger page and 301 the weaker one into it.
+Refresh / CTR,2,"Keep the content; rewrite title, meta and first screen for click-through."
+Refresh / link to hub,1,Link-only pass: add the hub link and the FitXpress block; no rewrite.
+Merge (301),1,"Move the useful parts into the named page, then 301 this URL."
+Section-first,18,Add as a section of the named hub or page; standalone only if the stated condition is met.
+Review / decide,8,"Decide the format (page, section, lead magnet, defer) before any writing."
+Lead magnet / sales asset,8,Checklist or guide for download or embedding; not a thin indexed page.
+Review + publish draft,2,"A draft exists. Asselya reviews it against the current rules, then it is published; no new writing."
 ,,
 Main recommendations across the strategy,Applies to,Operational meaning
 Refresh before creating,"AI Fitness, AI Telehealth, GLP-1, Insurance, Wellness Rewards, Bariatrics",The strongest existing assets should become hubs or expanded sections before publishing near-duplicate articles.

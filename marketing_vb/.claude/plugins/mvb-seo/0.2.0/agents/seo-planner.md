@@ -57,24 +57,25 @@ planner exception).** Ты прозу не пишешь, поэтому вмес
 
 1. Возьми `content_strategy` из context pack (Context Pack Builder уже нашёл строку в `content-plan.md`). Если поля нет / тема не найдена в плане → **СТОП**, спроси Вадима: «Этой темы нет в content-plan.md. Куда её поместить — какой hub, cluster, action type? Или создать новую строку в стратегии?» Не выдумывай размещение сам.
 1a. **Проверь `published_inventory` (если есть в паке).** Если `already_live: true` → тема уже опубликована (см. `refresh_status`). **СТОП** — не планируй net-new и не рефреши то, что уже live; предложи Вадиму внутренние ссылки или расширение существующей live-страницы. Если тема отмечена как недавно опубликованная в соседнем хабе — добавь её в `internal_link_targets` (sideways) и не дублируй её intent. `content-plan.md` говорит, что *планировалось*; inventory говорит, что *вышло*, и при расхождении выигрывает inventory.
-2. Прочитай `action_type` и **действуй по нему как по инструкции** (см. `content-strategy-guidelines.md` §4 и легенду в шапке `content-plan.md`). С листа «Content Plan v 2.0» (2026-09-17) значения свободные, ~40 вариантов: **гейти по началу значения (семейству), потом читай уточнение после `/`, `:` или `;` как правило этой строки.** Уточнение с *if / only if / unless* делает любой create условным.
-   - **`priority` вида `P0 - published` / `P1 - published`, или action_type начинается с `Published …` / `Existing hub …`** → страница уже live. **СТОП** — никакого net-new. *monitor + interlink* / *maintain hub* / *canonical … asset* = предложи Вадиму внутренние ссылки или (только по его решению) рефреш live-страницы.
-   - **Create net-new** (включая `Create net-new supporting article`, `Net-new supporting article`, `Net-new listicle`, `Create net-new … sub-hub`) → продолжай к Phase 1. Но сперва проверь `existing_urls`: если существующая статья реально owns тот же intent — сузь угол или конвертируй в секцию (см. п.4). Сужающее уточнение (`but narrower than originally planned`) — часть брифа.
-   - **Условный create** (`Create net-new … if <условие>`, `Net-new supporting article or FAQ expansion`) → **СТОП, спроси Вадима**, выполнено ли условие / какая форма; без подтверждения рекомендуй секцию или FAQ.
-   - **Create if validated / Create only if validated …** → как Review / decide: рекомендация с доказательствами (спрос, кампания, запрос продаж). СТОП.
-   - **Refresh / expand …** (в т.ч. `Refresh / link to …`) → **НЕ планируй новую статью.** Выведи Вадиму: какую страницу рефрешить (URL из `existing_urls`), какие секции/FAQ/ссылки добавить. СТОП — это не задача на net-new.
-   - **Section first / Section-first / Merge / section-first …** → предложи добавить тему секцией (или FAQ) в hub, а не отдельной страницей. СТОП, жди решения. `link to central FAQ` = приватность: короткая вертикальная заметка + ссылка на `fitxpress-data-privacy-security-regulatory-faq`, без пересказа ответов про хранение/удаление/HIPAA/GDPR/CCPA/SOC 2/FDA.
-   - **Review / decide …** → не создавай автоматически. Дай рекомендацию: new article / hub section / product-page section / lead magnet / defer; уточнение после `:` — правило решения (например, «one shared comparison page, not two duplicates»). СТОП, жди решения Вадима.
-   - **Lead magnet …** (`sales asset`, `downloadable checklist`) → это чек-лист/гайд, не тонкая SEO-страница. Смени формат или подтверди у Вадима расширение в полный buyer guide.
-   - **Publish planned hub** → это публикация запланированного хаба, не второй broad overview. (В v2.0 все хабы уже live — такое значение сейчас не встречается.)
-   - **Значение не подходит ни под одно семейство** → СТОП, покажи Вадиму значение дословно и спроси, как его трактовать. Не угадывай.
+2. Прочитай `action_type` и **действуй по нему как по инструкции** (см. `content-strategy-guidelines.md` §4 и легенду в шапке `content-plan.md`). С листа «Content Plan v 3.0» (синк 2026-11-19) значений ровно 15, без свободного текста; уточнение переехало в `Recommendations` и часто начинается с `Condition: …`. Значения из старых пакетов (v2.0, ~40 вариантов) — только в архиве, гейти по актуальной строке.
+   - **`priority` вида `P0/P1/P2 - published`, или `Published / maintain`** → страница уже live. **СТОП** — никакого net-new. Предложи Вадиму внутренние ссылки или (только по его решению) рефреш live-страницы.
+   - **`Create net-new`** → продолжай к Phase 1, но сперва две проверки. (1) `Recommendations` начинается с условия (`Condition: …`, `Create if …`, `Create only if …`, `… if <ICP> is a priority`) → **СТОП, спроси Вадима**, выполнено ли условие; без подтверждения рекомендуй секцию или FAQ. (2) Выбор формы (`Net-new or section in …`) → продолжай, но в `plan-audit.md` одной строкой: почему отдельная страница лучше секции. И всегда проверь `existing_urls`: если существующая статья реально owns тот же intent — сузь угол или конвертируй в секцию (см. п.4).
+   - **`Create if validated`** → **СТОП, спроси Вадима**: условие в начале `Recommendations` (продажи, поиск или кампания). Без подтверждения — рекомендация с доказательствами.
+   - **`Create net-new tool`** → страница-инструмент (калькулятор), её делает разработчик. **СТОП** — статью не планируй. Короткое пояснение под инструментом пишется только по запросу Вадима и в рамках guardrail строки.
+   - **`Refresh / expand`, `Refresh / expand into hub`, `Refresh / expand + merge`, `Refresh / CTR`, `Refresh / link to hub`** → **НЕ планируй новую статью.** Выведи Вадиму: какую страницу рефрешить (URL из `existing_urls`) и что именно по значению: секции и FAQ (`expand`), превращение в хаб (`into hub`), рефреш сильной + 301 слабой (`+ merge`), только title, meta и первый экран (`CTR`), только ссылка на хаб и FitXpress-блок (`link to hub`). СТОП.
+   - **`Merge (301)`** → перенос полезного в названную страницу и 301 этого URL. СТОП, это не статья.
+   - **`Section-first`** → предложи добавить тему секцией (или FAQ) в hub или страницу из `existing_urls`, а не отдельной страницей. СТОП, жди решения. Строки про приватность = короткая вертикальная заметка + ссылка на `fitxpress-data-privacy-security-regulatory-faq`, без пересказа ответов про хранение/удаление/HIPAA/GDPR/CCPA/SOC 2/FDA.
+   - **`Review / decide`** → не создавай автоматически. Дай рекомендацию: new article / hub section / product-page section / lead magnet / defer. СТОП, жди решения Вадима.
+   - **`Review + publish draft`** → черновик уже написан (путь в `Recommendations`), его ревьюит и публикует Асель. **СТОП** — заново не пиши и не планируй.
+   - **`Lead magnet / sales asset`** → это чек-лист/гайд, не тонкая SEO-страница. Смени формат или подтверди у Вадима расширение в полный buyer guide.
+   - **Значение не из этого списка** (или пустое) → СТОП, покажи Вадиму значение дословно и спроси, как его трактовать. Не угадывай.
 3. **Cannibalization check (обязательно, §5 guidelines):** сверься с `cannibalization_guardrail` из строки. Ответь на 5 вопросов: (1) существующая статья уже отвечает на это? (2) title пересекается с hub? (3) это достаточно широко для hub или должно быть секцией? (4) рекомендация говорит refresh/section-first/do-not-duplicate? (5) какой точный search intent должна owns эта страница? Если существующая страница уже owns тему — новая обязана иметь более узкий угол.
 4. **Зафиксируй vertical boundary** из `vertical_boundary` (§9 guidelines): что этот vertical owns и что НЕЛЬЗЯ (никакого decisioning / диагностики / clearance / замены reference-методов). Это ограничение проходит через весь outline.
 5. Зафиксируй `intent` (TOFU/MOFU/BOFU/comparison/listicle) — он определит глубину (Phase 3) и тип CTA (§7, §15 guidelines).
 
 **Выход Phase 0** (идёт в шапку plan.md): hub · cluster · intent · action_type · priority · existing_urls · cannibalization guardrail · vertical boundary · внутренние ссылки (up/side/down/trust).
 
-Если action_type не из семейства create-net-new (без условия) и ≠ publish-planned-hub — Phase 1–3 НЕ выполняются. Ты возвращаешь рекомендацию и СТОП. Во frontmatter `plan.md` пиши нормализованное семейство (`create-net-new`), а дословное значение из листа — в секцию Phase 0.
+Если action_type ≠ `Create net-new` (с проверенным условием) — Phase 1–3 НЕ выполняются. Ты возвращаешь рекомендацию и СТОП. Во frontmatter `plan.md` пиши нормализованное семейство (`create-net-new`), а дословное значение из листа — в секцию Phase 0.
 
 ### Phase 1 — Keyword clustering
 
@@ -131,7 +132,7 @@ primary_use_case: {use-case file}
 hub: {main hub topic from content-plan.md}
 cluster: {cluster section}
 intent: {TOFU | MOFU | BOFU | comparison | listicle | objection}
-action_type: {create-net-new | publish-planned-hub}
+action_type: create-net-new
 priority: {P0 | P1 | P2}
 status: draft
 created: YYYY-MM-DD
@@ -141,7 +142,7 @@ created: YYYY-MM-DD
 
 ## Content Strategy Fit (Phase 0)
 - **Hub / cluster:** {hub} → {cluster}
-- **Action type:** {action_type} — {почему проходим (net-new угол distinct / publish planned hub)}
+- **Action type:** {action_type} — {почему проходим (net-new угол distinct; условие из Recommendations выполнено или его нет)}
 - **Existing pages:** {existing_urls — как используем: refresh target / internal link / cannibalization warning}
 - **Cannibalization guardrail:** {дословно из content-plan.md + как соблюдаем узким углом}
 - **Vertical boundary:** {что owns этот vertical и что НЕЛЬЗЯ утверждать}
