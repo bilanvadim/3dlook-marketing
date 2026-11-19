@@ -1,0 +1,90 @@
+{
+ "generated": "2026-11-19T05:40:21+00:00",
+ "items": [
+  {
+   "id": "10db8702-4a6b-4464-ad97-64642ba83625",
+   "title": "Ambience Healthcare Launches AI Care Orchestration Suite to Improve Hospital Discharges and Case Mix Index",
+   "date": "2026-11-18",
+   "tags": [
+    "Operational Efficiency",
+    "Care Coordination / Navigation / Care Access",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/ambience-healthcare-launches-ai-care-orchestration-suite-to-improve-hospital-discharges-and-case-mix-index"
+  },
+  {
+   "id": "bee9240e-0773-4e75-baa4-ac840e796633",
+   "title": "Suki Launches AI Platform to Automate Prior Authorization and Clinical Documentation",
+   "date": "2026-11-18",
+   "tags": [
+    "Interoperability / Data Management",
+    "Operational Efficiency",
+    "Health System & Health Provider",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/suki-launches-ai-platform-to-automate-prior-authorization-and-clinical-documentation"
+  },
+  {
+   "id": "06dd02aa-b44e-401a-b3dd-bc3eb9953d3b",
+   "title": "Humana Launches Nationwide Gold Card Program for Healthcare Providers",
+   "date": "2026-11-18",
+   "tags": [
+    "Payer (Insurer)",
+    "Operational Efficiency",
+    "Health System & Health Provider",
+    "Care Coordination / Navigation / Care Access",
+    "Policy and Regulation"
+   ],
+   "url": "https://hlth.com/insights/news/humana-launches-nationwide-gold-card-program-for-healthcare-providers"
+  }
+ ],
+ "analyses": {
+  "10db8702-4a6b-4464-ad97-64642ba83625": {
+   "id": "10db8702-4a6b-4464-ad97-64642ba83625",
+   "score": 0,
+   "segment": "—",
+   "what": "Ambience Healthcare запустила в платформі Ambience Chorus AI-інструменти Rounding Assistant і Discharge Readiness. Вони допомагають лікарням планувати обходи та виписку пацієнтів у стаціонарі.",
+   "why": "Це операційний AI для стаціонарів (документація, кодування, виписка), де дані про тіло не потрібні. Не стосується ні FitXpress, ні Mobile Tailor.",
+   "play": "none",
+   "companies": [
+    "Ambience Healthcare",
+    "Onvida Health",
+    "St. Luke's Health System"
+   ],
+   "_date": "2026-11-18"
+  },
+  "bee9240e-0773-4e75-baa4-ac840e796633": {
+   "id": "bee9240e-0773-4e75-baa4-ac840e796633",
+   "score": 0,
+   "segment": "—",
+   "what": "Suki запустила Suki OS: AI-платформу для prior authorization, перевірки повноти документації та кодування, побудовану на ambient clinical documentation. Компанія нещодавно залучила $90M у раунді Series E.",
+   "why": "Це автоматизація документації та revenue cycle для провайдерів. Збирати верифіковані дані про тіло в цьому процесі не потрібно, тож для 3DLOOK тригера немає.",
+   "play": "none",
+   "companies": [
+    "Suki",
+    "Stellar Health",
+    "ECLAT",
+    "Epic",
+    "MEDITECH"
+   ],
+   "_date": "2026-11-18"
+  },
+  "06dd02aa-b44e-401a-b3dd-bc3eb9953d3b": {
+   "id": "06dd02aa-b44e-401a-b3dd-bc3eb9953d3b",
+   "score": 1,
+   "segment": "FitXpress §4 Health Plans / Employer Wellness",
+   "what": "З 1 грудня 2026 Humana запускає по всій країні програму Gold Card. Близько 50 000 провайдерів з якісною історією надання допомоги зможуть обходити prior authorization для MRI, CT, MRA та фізичної/ерготерапії.",
+   "why": "Humana є серед прикладів в ICP §4, але новина про prior authorization для візуалізації та терапії, а не про wellness-програми, винагороди чи верифікацію BMI, тож конкретного приводу для outreach немає.",
+   "play": "none",
+   "companies": [
+    "Humana",
+    "athenahealth"
+   ],
+   "caveat": "Humana — великий enterprise-платник у США. Звертатися варто лише з приводу wellness/rewards, а не цієї новини.",
+   "_date": "2026-11-18"
+  }
+ },
+ "posts": []
+}
