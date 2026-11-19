@@ -1,0 +1,110 @@
+apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,last_refreshed_at,status
+60a7abcf3d6d750001a4aaa9,Henk,Th***s,Product Director,Basic-Fit,basic-fit.com,Basic-Fit,2026-11-04T06:56:35.000+00:00,candidate
+54a55889746869344231cc90,Jake,Ho***r,Product Owner,Basic-Fit,basic-fit.com,Basic-Fit,2026-11-14T08:39:07.545+00:00,candidate
+5f4d5508db99a2000181dddf,Youri,Va***t,Product Owner,Basic-Fit,basic-fit.com,Basic-Fit,2026-11-01T09:39:31.000+00:00,candidate
+6acf4a3fb2bc710001e9654f,Rene,Mo***s,Chief Executive Officer,Basic-Fit,basic-fit.com,Basic-Fit,2026-11-13T07:11:38.611+00:00,candidate
+615d275fd6deb200018075b7,Valentina,Su***a,Product Owner,Basic-Fit,basic-fit.com,Basic-Fit,2026-11-05T19:46:16.000+00:00,candidate
+5de8b3555f38cc0001fc05f6,Eloise,Ci***a,Product Owner App,Basic-Fit,basic-fit.com,Basic-Fit,2026-11-08T12:09:26.378+00:00,candidate
+57d924cfa6da98721eb2d047,Venkat,Ko***u,"Product Owner, Salesforce",Basic-Fit,basic-fit.com,Basic-Fit,2026-11-13T16:04:28.782+00:00,candidate
+5f4c7e5c8063cf0001ddb46a,Basiel,Ja***l,Jr Product Owner,Basic-Fit,basic-fit.com,Basic-Fit,2026-11-06T05:09:48.000+00:00,candidate
+68413f9fa5740f0001686d2c,Thomas,Va***n,Digital Marketing Director (International),Basic-Fit,basic-fit.com,Basic-Fit,2026-11-06T17:18:37.000+00:00,candidate
+5fa90eb0f70ec500018a98ea,Ieva,Al***a,Senior Product Owner IT,Basic-Fit,basic-fit.com,Basic-Fit,2026-10-26T03:47:01.000+00:00,candidate
+55714cd773696457ffa05500,Vijay,At***n,Senior Product Owner IT,Basic-Fit,basic-fit.com,Basic-Fit,2026-11-04T02:12:57.000+00:00,candidate
+64249963f3d62b0001a56626,Julia,Ku***a,Product Owner Chatbot | AI Solutions,Basic-Fit,basic-fit.com,Basic-Fit,2026-11-03T13:11:42.000+00:00,candidate
+65c8e71df2761400015ef4da,Muzafer,Ip***i,"Post Production Intern, Founder",Basic-Fit,basic-fit.com,Basic-Fit,2026-10-06T07:01:51.000+00:00,candidate
+5570951c7369641901137400,Hakim,Bo***s,Head Coach,Basic-Fit,basic-fit.com,Basic-Fit,2026-10-28T02:58:27.000+00:00,candidate
+60ad194f56d472000158d4a9,Tomica,Mi***i,Head Coach,Basic-Fit,basic-fit.com,Basic-Fit,2026-10-08T13:18:16.662+00:00,candidate
+626b5ba34aaa10000111bd97,Neso,Du***c,Head Coach,Basic-Fit,basic-fit.com,Basic-Fit,2026-10-23T22:11:10.000+00:00,candidate
+66f204be0bfa530001f40e87,Johannes,Ma***n,CEO,Fitness First Germany GmbH,fitnessfirst.de,LifeFit Group,2026-11-04T00:23:33.000+00:00,candidate
+6787822dc46597000155bd86,Rene,So***h,Head of Operations FFBW | Fitness First,Fitness First Germany GmbH,fitnessfirst.de,LifeFit Group,2026-11-06T22:58:55.000+00:00,candidate
+629253afd6d8940001227d12,Emma,Le***r,CEO & Founder,Bodystreet Global Headquarters,bodystreet.com,Bodystreet,2026-11-11T22:34:27.359+00:00,candidate
+60fba8675bbae100019dfea4,Matthias,Le***r,CEO & Founder Bodystreet,Bodystreet Global Headquarters,bodystreet.com,Bodystreet,2026-11-05T18:10:00.657+00:00,candidate
+5f662d2dea9d170001da2be8,Alexander,Be***r,Managing Director,INJOY Deutschland,injoy.de,INJOY,2026-11-06T01:13:59.000+00:00,candidate
+66f60a8adc22d80001045ac0,Andre,Na***l,Managing Director,ELEMENTS FITNESS GmbH,elements.com,ELEMENTS Fitness & Wellness,2026-11-08T18:14:52.311+00:00,candidate
+6736ff6b9bcdef000149d565,Fabio,Go***s,Managing Director,ELEMENTS FITNESS GmbH,elements.com,ELEMENTS Fitness & Wellness,2026-10-25T06:07:00.000+00:00,candidate
+54a7dbe374686962207fe254,Leo,Li***g,CTO,EVO,evofitness.no,EVO Fitness,2026-10-31T01:01:31.000+00:00,candidate
+6432d46bc276a100014808ca,Peter,Wi***n,Chief Operating Officer (CEO Designate),Fitness24Seven,fitness24seven.com,Fitness24Seven,2026-11-11T23:52:54.000+00:00,candidate
+66f9c2076119970001748154,Viktor,Jo***n,Chief Product Officer,Actic Group (publ.),actic.se,Actic,2026-11-01T23:07:43.000+00:00,candidate
+57d7b1ffa6da9809c23a10b2,Nagyb,Lu***a,Managing Director,Actic Group (publ.),actic.se,Actic,2026-10-03T17:56:26.350+00:00,candidate
+5d5b6098a3ae61b527bd4a6e,Cathrine,Al***d,Product Owner Operational Systems Group,Actic Group (publ.),actic.se,Actic,2026-10-23T13:20:35.000+00:00,candidate
+5f6314885de1e2000124cf30,Francoise,Go***l,CEO,L'Orange bleue,lorangebleue.fr,L'Orange Bleue,2026-11-11T19:36:29.137+00:00,candidate
+60e55b7b70e9af0001225633,Adrien,Pr***s,CEO,L'Orange bleue,lorangebleue.fr,L'Orange Bleue,2026-10-25T17:13:11.020+00:00,candidate
+6a25baab3d90110001a5f676,Valentin,Ta***t,CEO,L'Orange bleue,lorangebleue.fr,L'Orange Bleue,2026-10-10T05:18:34.273+00:00,candidate
+6857a02711c0e20001b3b1f1,Jose,Ne***s,Chairman / CEO,L'Orange bleue,lorangebleue.fr,L'Orange Bleue,2026-11-03T14:52:32.000+00:00,candidate
+614d638ef06ed70001203d89,Emilie,Me***l,Managing Director,L'Orange bleue,lorangebleue.fr,L'Orange Bleue,2026-11-09T16:43:06.433+00:00,candidate
+57dfe7bba6da980ad27c8369,Eugenio,Ca***i,Director de Producto Corporativo,GOfit,go-fit.es,GO fit,2026-10-23T06:58:22.000+00:00,candidate
+5f53b42948eee700012f6c8e,Javier,Vi***l,Chief Technology Officer,GOfit,go-fit.es,GO fit,2026-11-16T06:12:44.926+00:00,candidate
+57da74b1a6da984a64798494,Mario,Ba***a,Chief Executive Officer,GOfit,go-fit.es,GO fit,2026-10-22T13:33:24.000+00:00,candidate
+68386bf28cbe800001a08c13,Jesus,Ga***a,Managing Director,GOfit,go-fit.es,GO fit,2026-10-29T09:51:59.000+00:00,candidate
+57df2687a6da983a1fbfbcaf,Javier,Sm***h,Head of Products,GOfit,go-fit.es,GO fit,2026-10-23T15:38:48.000+00:00,candidate
+64902a0809a3ed0001e3e032,Sofia,Ra***s,Technical Director & Fitness Group Project Owner | Solinca Classic Porto,Solinca,solinca.pt,Solinca,2026-10-28T11:56:56.000+00:00,candidate
+616907125c8a79000144d1e1,Adrian,Pa***h,Head Coach (personal Training),Benefit Systems SA,corp.benefitsystems.pl,Benefit Systems,2026-09-21T10:16:07.000+00:00,candidate
+62751c065a4a8a0001c3a204,Karolina,Ro***k,Product Owner,Benefit Systems SA,corp.benefitsystems.pl,Benefit Systems,2026-11-02T12:44:29.000+00:00,candidate
+57dbf3aea6da9868630816d1,Patrycja,Ad***k,Product Owner,Benefit Systems SA,corp.benefitsystems.pl,Benefit Systems,2026-10-06T07:07:18.000+00:00,candidate
+626fb3dece05110001467d40,Agata,Dz***t,Product Owner,Benefit Systems SA,corp.benefitsystems.pl,Benefit Systems,2026-10-27T02:09:47.014+00:00,candidate
+672482e4fc6c8b00017c36b2,Kamil,Sm***l,Product Owner,Benefit Systems SA,corp.benefitsystems.pl,Benefit Systems,2026-11-03T17:11:35.921+00:00,candidate
+602fad9e9746640001f5d33a,Jakub,Ki***i,Senior Product Manager,Benefit Systems SA,corp.benefitsystems.pl,Benefit Systems,2026-10-22T06:28:28.000+00:00,candidate
+57daca21a6da984a384f1171,Joanna,Ba***k,Senior Product Manager,Benefit Systems SA,corp.benefitsystems.pl,Benefit Systems,2026-10-29T09:04:19.000+00:00,candidate
+63f84cb68049fa0001f4b225,Karolina,Wo***z,Head of Product Growth,Benefit Systems SA,corp.benefitsystems.pl,Benefit Systems,2026-10-30T22:13:52.000+00:00,candidate
+5d8a0d2380f93e60586cdcfa,Filip,Cy***i,Senior Product Owner,Benefit Systems SA,corp.benefitsystems.pl,Benefit Systems,2026-10-28T23:01:45.000+00:00,candidate
+6102d3029012470001014389,Katarzyna,Gl***a,Deputy Director of Product Strategy Development,Benefit Systems SA,corp.benefitsystems.pl,Benefit Systems,2026-11-05T22:36:58.906+00:00,candidate
+67357a013d1b7400016a1fbc,Aleksandra,Kw***a,Analityk Biznesowy / Product Owner,Benefit Systems SA,corp.benefitsystems.pl,Benefit Systems,2026-11-05T10:43:04.000+00:00,candidate
+54a3b7ae7468692abf68e30c,Tomasz,Ne***k,Analityk Systemowy | Product Owner,Benefit Systems SA,corp.benefitsystems.pl,Benefit Systems,2026-11-01T07:56:44.000+00:00,candidate
+57d872dea6da98468fa5cb40,Jacek,Ko***z,Product Owner Marketing Automattion,Benefit Systems SA,corp.benefitsystems.pl,Benefit Systems,2026-11-06T06:41:56.470+00:00,candidate
+54a617517468692cf0a415c1,Monika,Ko***n,Analityk Biznesowy / Product Owner,Benefit Systems SA,corp.benefitsystems.pl,Benefit Systems,2026-10-25T06:04:50.000+00:00,candidate
+57d5ffdda6da9861994b970c,Maciej,Bo***s,Product Owner Aplikacji Mobilnych,Benefit Systems SA,corp.benefitsystems.pl,Benefit Systems,2026-10-18T10:15:06.123+00:00,candidate
+66fcf6d1d8fffb000191b271,Artur,Zd***z,Product Owner | Business Systems Analyst,Benefit Systems SA,corp.benefitsystems.pl,Benefit Systems,2026-09-24T06:13:19.000+00:00,candidate
+5d393a4b80f93ebbee38e068,Lukasz,Za***a,Starszy Analityk Biznesowy/Product Owner,Benefit Systems SA,corp.benefitsystems.pl,Benefit Systems,2026-10-23T05:14:02.000+00:00,candidate
+5e8468812e9ae90001f74fb2,Aleksandra,Ka***a,Starszy Analityk Biznesowy /Product Owner,Benefit Systems SA,corp.benefitsystems.pl,Benefit Systems,2026-10-23T05:53:38.000+00:00,candidate
+66e94dddb886a80001ebbae9,Anna,Bi***a,Director of MultiSport Product Development,Benefit Systems SA,corp.benefitsystems.pl,Benefit Systems,2026-10-29T10:02:27.000+00:00,candidate
+66fbf471a12d3900017738dc,Jolanta,Ry***z,Managing Director M&A / Strategy / New Business Development,Benefit Systems SA,corp.benefitsystems.pl,Benefit Systems,2026-11-07T14:40:12.000+00:00,candidate
+66fe691e21557a00011de345,Jarek,Zu***o,Head of Delivery & Product Operations,Benefit Systems SA,corp.benefitsystems.pl,Benefit Systems,2026-10-26T02:33:52.000+00:00,candidate
+54a2c47274686935beee013b,Christopher,He***n,Nordic Head of Digital Product Development,SATS Norge,sats.no,SATS,2026-10-28T11:15:53.000+00:00,candidate
+57d43514a6da9853967ee5ac,Stefan,Si***n,Founder and CEO,SATS Norge,sats.no,SATS,2026-11-02T16:21:15.000+00:00,candidate
+557032a8736964777b3ec000,Kristian,An***s,Head of Business Development,SATS Norge,sats.no,SATS,2026-10-09T10:40:15.000+00:00,candidate
+54a22a4a7468693fdaa37112,Ellen,Va***g,Chief Product Officer,SATS Norge,sats.no,SATS,2026-10-18T19:58:40.000+00:00,candidate
+54a739e374686965d920c920,Annika,St***k,Head of Training,SATS Norge,sats.no,SATS,2026-10-04T11:35:27.000+00:00,candidate
+57da46d8a6da984a54b7dc75,Gaute,Sa***l,Chief Digital Officer (CDO),SATS Norge,sats.no,SATS,2026-11-06T18:21:19.626+00:00,candidate
+60c79db17b4b4500012125fc,Sondre,Gr***r,CEO,SATS Norge,sats.no,SATS,2026-10-05T23:34:11.000+00:00,candidate
+54a127ba69702dcef9565800,Komlin,Re***y,Managing Director,SATS Norge,sats.no,SATS,2026-10-24T15:11:52.377+00:00,candidate
+57d691f9a6da98546a509801,Prabhat,Sr***v,Managing Director,SATS Norge,sats.no,SATS,2026-10-06T19:19:52.000+00:00,candidate
+57d5a93ea6da98536ee5b992,Sofie,Sa***n,Head of CEO Administration,SATS Norge,sats.no,SATS,2026-10-28T13:10:27.000+00:00,candidate
+62d5a2ea1b620c0001794108,Mette,Li***t,Nordic Head of Group Training,SATS Norge,sats.no,SATS,2026-10-28T16:32:28.000+00:00,candidate
+5fce46eb77edbf0001411c8d,Henrik,Wi***e,Nordic Product Manager & Web Team Lead,SATS Norge,sats.no,SATS,2026-10-26T18:57:32.317+00:00,candidate
+6860a186ec37a2000118c456,Martin,St***n,Nordic Application Manager,SATS Norge,sats.no,SATS,2026-10-28T23:31:02.000+00:00,candidate
+5f92c545667c35000181aef5,Bernardo,Bo***o,Cofounder | CTO,Trainingym,trainingym.com,Trainingym,2026-11-10T07:38:05.000+00:00,candidate
+54a565d67468692abf74b494,Juanma,Mo***o,Head of Product,Trainingym,trainingym.com,Trainingym,2026-11-01T22:09:53.264+00:00,candidate
+5ff8aa7bf962520001f753b3,Rafa,Ma***s,Founder,Trainingym,trainingym.com,Trainingym,2026-10-22T18:46:28.163+00:00,candidate
+6762550d36cdef0001c2cdf9,Nick,Va***l,Chief Product Officer,Virtuagym,virtuagym.com,Virtuagym,2026-11-01T19:56:06.000+00:00,candidate
+61e04663ca16be000126775f,Nuno,Fi***o,Lead Product Manager,Virtuagym,virtuagym.com,Virtuagym,2026-10-26T06:11:13.893+00:00,candidate
+66f16e4374dd450001dc7800,Paulo,Cu***o,Product Owner Mobile,Virtuagym,virtuagym.com,Virtuagym,2026-11-08T09:08:14.801+00:00,candidate
+60d2eda665b13f0001674b6d,Hugo,Br***m,Founder,Virtuagym,virtuagym.com,Virtuagym,2026-11-10T20:33:05.145+00:00,candidate
+68d54f4a8817950001fccd7e,Daniel,So***i,CEO,Freeletics,freeletics.com,Freeletics,2026-11-11T19:36:23.000+00:00,candidate
+60eda9f8f9825a00017ea77e,Henry,Ga***t,CTO,Freeletics,freeletics.com,Freeletics,2026-10-31T09:51:22.933+00:00,candidate
+68d4f4bcab8a7700013f6830,Franziska,Es***y,Head of Product,Freeletics,freeletics.com,Freeletics,2026-10-17T23:52:33.000+00:00,candidate
+5c644c2880f93e5303e908c1,Idil,Bo***y,Senior Product Manager,Freeletics,freeletics.com,Freeletics,2026-10-31T20:28:09.000+00:00,candidate
+611b6a5436e0fb00012dfee9,Daria,Ku***a,Senior Product - Growth,Freeletics,freeletics.com,Freeletics,2026-11-02T12:24:29.000+00:00,candidate
+6acd514b053b3c0001ce4a54,Philipp,Ha***l,Chief Business Officer,Freeletics,freeletics.com,Freeletics,2026-11-03T12:04:56.000+00:00,candidate
+54ebb3e2746869444c53c311,Stefanie,Sc***s,Head of Business Development,Gymondo,gymondo.com,Gymondo,2026-11-13T16:25:07.187+00:00,candidate
+60cb838e18abba00010c8300,Matias,Ol***o,CTO,Gymondo,gymondo.com,Gymondo,2026-11-06T10:36:26.887+00:00,candidate
+5f5af7d19840180001d1a919,Beatrice,Br***h,Head Coach Gymondo Germany,Gymondo,gymondo.com,Gymondo,2026-10-26T06:24:39.000+00:00,candidate
+682ae899dcbc5200013cc62c,Martin,Ma***c,Founder & CEO,Fitify,gofitify.com,Fitify,2026-11-12T10:18:43.033+00:00,candidate
+60caf30b934b5a0001860cd9,Matous,Sk***a,Co-founder & CTO,Fitify,gofitify.com,Fitify,2026-11-05T12:19:32.000+00:00,candidate
+664847cf5aa03100013a52d7,Thanh,He***s,Founder,Fitify,gofitify.com,Fitify,2026-10-24T17:41:40.035+00:00,candidate
+57df4f63a6da980b0b5515e1,Paul,Wo***k,Director of Product Engineering,Yazio,yazio.com,Yazio,2026-10-18T00:14:43.806+00:00,candidate
+684999a8c7bfc000012f5536,Michel,Zi***e,Senior Product Manager,Yazio,yazio.com,Yazio,2026-11-03T01:51:09.000+00:00,candidate
+67ffb8a88125060001ac670a,Guillem,Ca***o,Senior Product Manager,Yazio,yazio.com,Yazio,2026-11-06T04:06:18.000+00:00,candidate
+624ed139914c650001895322,Victoria,Ko***a,Senior Product Manager,Yazio,yazio.com,Yazio,2026-10-22T10:26:22.000+00:00,candidate
+626cc8c79720a500018f9673,Anna,K,Senior Product Manager,Yazio,yazio.com,Yazio,2026-11-04T23:14:36.509+00:00,candidate
+605ce90abb234b00019f2f3f,Ricardo,Ma***e,Senior Product Manager,Yazio,yazio.com,Yazio,2026-08-27T04:02:59.771+00:00,candidate
+5d450f68f651253ecdd64040,Alexandra,Vo***a,Senior Product Manager Monetization,Yazio,yazio.com,Yazio,2026-08-21T06:04:37.772+00:00,candidate
+54a53be37468693676f98c87,Jakob,Ot***o,Senior Product Manager Web,Yazio,yazio.com,Yazio,2026-11-13T22:41:12.934+00:00,candidate
+65f7af687b64470006d4436a,Ausrine,Ba***j,Chief of Staff to the CEO at Yazio,Yazio,yazio.com,Yazio,2026-11-05T20:03:06.435+00:00,candidate
+66d444349c94fc00010f326c,Florian,We***n,Co-Founder & President,Yazio,yazio.com,Yazio,2026-11-05T19:47:35.000+00:00,candidate
+60eee31b2a8c8a000135c85c,Love,Th***n,Head of Product,Lifesum,lifesum.com,Lifesum,2026-11-10T19:34:55.000+00:00,candidate
+696c7675a95d900001a16769,Marcus,Gn***s,Group CIO/ CEO Lifesum inc/ Co-founder/board Member,Lifesum,lifesum.com,Lifesum,2026-11-11T23:45:48.000+00:00,candidate
+5f8ff94742ef250001107548,Dimitri,Ts***a,"Senior Director, Business Operations & Growth Product",Lifesum,lifesum.com,Lifesum,2026-11-07T04:52:57.000+00:00,candidate
+54a2217d74686930c2fd470f,Christian,Wi***n,CXO,Lifesum,lifesum.com,Lifesum,2026-11-15T15:25:09.925+00:00,candidate
+618a33d93fa6a60001765d59,Cecilia,He***m,Head of Partnership Operations,Lifesum,lifesum.com,Lifesum,2026-10-30T21:38:00.000+00:00,candidate
+66f60f72dc22d8000105fe96,Thomas,Ad***m,CTO | Co-Founder,Fastic,fastic.com,Fastic,2026-11-05T19:43:46.000+00:00,candidate
+66f2434e6c72ae000126eb98,Ben,Bak,CEO,Fastic,fastic.com,Fastic,2026-11-19T02:09:43.833+00:00,candidate

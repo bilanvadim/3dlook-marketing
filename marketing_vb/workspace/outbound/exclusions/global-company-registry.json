@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-18",
+  "last_updated": "2026-11-19",
   "companies": {
     "safariland": {
       "covered_by_profile": null,
@@ -3882,6 +3882,12 @@
       "product": "fitxpress",
       "date": "2026-11-18",
       "status": "active"
+    },
+    "erakulis": {
+      "display_name": "Erakulis",
+      "covered_by_profile": null,
+      "status": "existing_customer_excluded",
+      "note": "customer — never enters outbound (exclusions/README.md)"
     }
   }
 }

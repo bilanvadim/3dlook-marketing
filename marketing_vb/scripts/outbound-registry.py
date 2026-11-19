@@ -76,6 +76,9 @@ EXISTING_CUSTOMERS = [
     "Generation Tux", "Tailoor", "Redthread", "Healthyr",
     # Fitness clients, Vadim 2026-10-07 (their logos are on the fitness landing).
     "Zing Coach", "Verv",
+    # On the client logo strip of every use-case page (Vadim 2026-11-06); was missing here
+    # until the 2026-11-19 connected-fitness hypotheses found it (Vadim 2026-11-19).
+    "Erakulis",
 ]
 
 LEGAL_SUFFIXES = {
