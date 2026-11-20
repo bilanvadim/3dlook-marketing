@@ -1,0 +1,115 @@
+{
+ "generated": "2026-11-20T05:42:42+00:00",
+ "items": [
+  {
+   "id": "471b9848-ed29-4827-9a5a-41792a2ab082",
+   "title": "Isomorphic Labs Secures $5B to Accelerate AI-Powered Drug Discovery",
+   "date": "2026-11-19",
+   "tags": [
+    "Investor & Accelerator",
+    "Life Sciences (Pharma & Biotech)",
+    "Investments and Partnerships",
+    "Drug Discovery / Pharma / Biotech",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/isomorphic-labs-secures-5b-to-accelerate-ai-powered-drug-discovery"
+  },
+  {
+   "id": "d476b58e-eda0-4c29-97a3-49a89984f377",
+   "title": "UnitedHealthcare Launches Community Pharmacy-Based Care Model",
+   "date": "2026-11-19",
+   "tags": [
+    "Payer (Insurer)",
+    "Health System & Health Provider",
+    "Care Coordination / Navigation / Care Access",
+    "Retail Health",
+    "Chronic Condition Management"
+   ],
+   "url": "https://hlth.com/insights/news/unitedhealthcare-launches-community-pharmacy-based-care-model"
+  },
+  {
+   "id": "60926313-f569-485b-b442-6b474c1c6718",
+   "title": "Noom Introduces Noom Band to Expand Metabolic Health Monitoring",
+   "date": "2026-11-19",
+   "tags": [
+    "Consumer Wellness and Technology",
+    "Employee Wellness / Benefits / Workplace Health",
+    "Health Tech, Solutions & Services",
+    "Chronic Condition Management"
+   ],
+   "url": "https://hlth.com/insights/news/noom-introduces-noom-band-to-expand-metabolic-health-monitoring"
+  }
+ ],
+ "analyses": {
+  "471b9848-ed29-4827-9a5a-41792a2ab082": {
+   "id": "471b9848-ed29-4827-9a5a-41792a2ab082",
+   "score": 0,
+   "segment": "—",
+   "what": "Isomorphic Labs (вийшла з Google DeepMind) залучила $5B у Series C на свою AI-платформу для розробки ліків. Гроші підуть на розширення власного pipeline і підготовку перших кандидатів до випробувань на людях.",
+   "why": "Це AI для розробки ліків, тож із даними тіла та ICP 3DLOOK новина ніяк не пов'язана.",
+   "play": "none",
+   "companies": [
+    "Isomorphic Labs",
+    "Google DeepMind",
+    "Greenoaks",
+    "Sequoia Capital",
+    "Andreessen Horowitz",
+    "Alphabet",
+    "Thrive Capital",
+    "MGX",
+    "GV",
+    "CapitalG",
+    "Temasek",
+    "UK Sovereign AI Fund",
+    "Eli Lilly",
+    "Novartis",
+    "Johnson & Johnson",
+    "Biohub",
+    "Meta"
+   ],
+   "_date": "2026-11-19"
+  },
+  "d476b58e-eda0-4c29-97a3-49a89984f377": {
+   "id": "d476b58e-eda0-4c29-97a3-49a89984f377",
+   "score": 1,
+   "segment": "FitXpress §4 Health Plans / Employer Wellness (дотично)",
+   "what": "UnitedHealthcare разом із CPSEN запустила UHC Pharmacy Care Hub для Medicaid-членів у 7 штатах. Аптеки там дають telehealth, medication management, point-of-care тести й координацію хронічної допомоги.",
+   "why": "Модель про аптечні тести й Medicaid: ваги, BMI чи wellness-rewards у ній немає, а UnitedHealthcare — мегаентерпрайз, тож конкретного хука для FitXpress не видно.",
+   "play": "none",
+   "companies": [
+    "UnitedHealthcare",
+    "CPSEN"
+   ],
+   "_date": "2026-11-19"
+  },
+  "60926313-f569-485b-b442-6b474c1c6718": {
+   "id": "60926313-f569-485b-b442-6b474c1c6718",
+   "score": 3,
+   "segment": "FitXpress §1 Telehealth & GLP-1",
+   "what": "Noom разом із Sensor Bio запускає Noom Band — браслет, що міряє пульс, HRV, SpO2, сон і активність. На початку 2027 його без доплати отримають клієнти Noom серед роботодавців і health plans. Ще Noom готується до CMS ACCESS Model з метою вимірюваного покращення ваги, тиску та HbA1c.",
+   "why": "Noom Med веде GLP-1 пацієнтів і будує екосистему моніторингу «ширше за трекінг ваги», але браслет не бачить змін самого тіла. FitXpress додає в Noom app скан із 2 фото: BMI, склад тіла, 80+ замірів, 3D-візуалізацію прогресу між чекінами, а також перевірку розбіжностей із self-reported вагою (Smart Scales). Noom розблоковує браслет за ранні milestones, тобто engagement у перші місяці для них пріоритет, і саме тут допомагає видимий прогрес тіла. Хук про ACCESS Model можна перевикористати в 2026-09-29-us-cardiometabolic.",
+   "play": "direct_account",
+   "companies": [
+    "Noom",
+    "Sensor Bio",
+    "Centers for Medicare & Medicaid Services"
+   ],
+   "campaign": {
+    "title": "2026-11-20 — US Noom (один акаунт): дані тіла поруч із Noom Band",
+    "profile": "nick",
+    "market": "USA",
+    "targets": "Noom — один акаунт, fixed list (за зразком кампаній по Virta / Options)",
+    "roles": "Chief Medical Officer / Medical Director (Noom Med), Head of Product, Head of Member Engagement / Retention, Head of Outcomes / Program Insights, CTO (technical-integration)",
+    "angle": "Noom Band бачить серце, сон і активність, але не те, як змінюється тіло на GLP-1. Скан із 2 фото в Noom app додає до тих самих milestones заміри, склад тіла й 3D-прогрес, а також структуровані дані тіла під цілі щодо ваги в ACCESS Model і для employer / health plan клієнтів.",
+    "existing_campaign": "",
+    "task": "USA: Noom (one-account list) — add a 2-photo body scan next to Noom Band for Noom Med GLP-1 members and ACCESS Model weight outcomes"
+   },
+   "caveat": "Noom — великий гравець і щойно вклався у власне залізо з Sensor Bio, тож може відкласти сторонні інтеграції. Клієнти отримають браслет лише на початку 2027. Не обіцяти, що дані FitXpress відповідають вимогам CMS ACCESS. Не подавати їхні 34% і +90 хв сну як причинний ефект: це спостережні дані. Noom — лише приклад з ICP, тож перед outreach перевірити, чи вони не клієнт і не в роботі.",
+   "_date": "2026-11-19"
+  }
+ },
+ "posts": [
+  "workspace/social/hlth-news/noom-introduces-noom-band-to-expand-metabolic-health-monitoring/linkedin-vadim/post.md"
+ ]
+}
