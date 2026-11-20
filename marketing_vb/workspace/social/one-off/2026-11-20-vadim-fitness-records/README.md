@@ -5,7 +5,7 @@ Hlib Hlazovyi wrote a LinkedIn post for Vadim (`linkedin-vadim`) and sent it in 
 (US units). Vadim asked for a review. The post supports the AU + NZ connected-fitness outbound from Vadim's profile
 (`workspace/outbound/campaigns/2026-11-19-au-connected-fitness`).
 
-Status: review + rewrite + metric visual ready for Vadim. Vadim publishes from his own account.
+Status: review sent to Hlib on 2026-11-20 (Vadim «давай»): DM ts 1795193566.255739 (ru review + «на будущее» rules + final text) and the metric visual F0CKNSB0TEW. Vadim publishes from his own account.
 
 ## Files
 
