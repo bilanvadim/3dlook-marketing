@@ -7,7 +7,7 @@ attached is the 4:5 visual made for Nick's post the day before
 краще відео до нього». The post supports Katya's LatAm + MX connected-fitness outbound
 (`workspace/outbound/campaigns/2026-11-19-latam-connected-fitness`).
 
-Status: review + rewrite + video ready for Vadim. Not yet sent to Hlib.
+Status: sent to Hlib on 2026-11-20 (Vadim «давай»): DM ts 1795192980.418809 (ru review + final text) and the sound video F0CKQRNE1ND. Hlib publishes from Katya's account.
 
 ## Files
 
