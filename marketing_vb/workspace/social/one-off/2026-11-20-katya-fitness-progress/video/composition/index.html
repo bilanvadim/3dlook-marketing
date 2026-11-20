@@ -1,0 +1,303 @@
+<!doctype html>
+<!--
+  One-off video for Kateryna Boichuk's FitXpress progress post (2026-11-20).
+  1080×1350 (4:5, LinkedIn feed), 22 s, silent. Built by ../build.sh into
+  ~/.cache/mvb-social-video/oneoff-2026-11-20-katya-fitness-progress/feed/ and rendered with
+  hyperframes@0.9.1 (same pin as scripts/social_video.py).
+
+  Every line on screen comes from post/post.md. Numbers are one illustrative member, metric
+  (the profile's audience is LatAm + MX outbound): weight −0.3 kg, waist −2.5 cm, body fat −2%
+  over 12 weeks. Product imagery is real UI from brand-assets/product-imagery/fitxpress/.
+  Art direction: house stat-reel (navy glow, measurement grid, Satoshi, one electric-blue accent,
+  precise motion with no bounce, DESIGN.md §9).
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1350" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Satoshi"; font-weight: 400; src: local("Satoshi Regular"), local("Satoshi-Regular"); }
+      @font-face { font-family: "Satoshi"; font-weight: 500; src: local("Satoshi Medium"), local("Satoshi-Medium"); }
+      @font-face { font-family: "Satoshi"; font-weight: 700; src: local("Satoshi Bold"), local("Satoshi-Bold"); }
+      @font-face { font-family: "Satoshi"; font-weight: 900; src: local("Satoshi Black"), local("Satoshi-Black"); }
+
+      :root {
+        --navy: #050F40;
+        --blue-800: #08186B;
+        --blue-700: #0B2299;
+        --blue-400: #4F6DFF;
+        --blue-300: #8A9CFF;
+        --blue-200: #B1BDFF;
+        --blue-100: #D8DEFF;
+        --white: #FFFFFF;
+        --pad-x: 88px;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1350px; overflow: hidden; background: var(--navy); }
+      #root { width: 100%; height: 100%; position: relative; font-family: "Satoshi", sans-serif; color: var(--white); }
+
+      /* ground */
+      #ground { position: absolute; inset: 0; background: var(--navy); overflow: hidden; }
+      #glow {
+        position: absolute; left: 50%; top: 32%; width: 1500px; height: 1500px;
+        margin-left: -750px; margin-top: -750px; border-radius: 50%;
+        background: radial-gradient(circle at center, rgba(79,109,255,0.50) 0%, rgba(11,34,153,0.50) 28%, rgba(8,24,107,0.40) 48%, rgba(5,15,64,0) 70%);
+      }
+      #grid {
+        position: absolute; inset: 0;
+        background-image:
+          repeating-linear-gradient(0deg, rgba(177,189,255,0.07) 0 1px, transparent 1px 72px),
+          repeating-linear-gradient(90deg, rgba(177,189,255,0.07) 0 1px, transparent 1px 72px);
+        -webkit-mask-image: radial-gradient(ellipse at 50% 40%, #000 0%, rgba(0,0,0,0.6) 45%, transparent 80%);
+                mask-image: radial-gradient(ellipse at 50% 40%, #000 0%, rgba(0,0,0,0.6) 45%, transparent 80%);
+      }
+
+      /* furniture */
+      #logo { position: absolute; left: var(--pad-x); top: 96px; width: 300px; height: 44px; }
+      #logo img { width: 300px; height: 44px; display: block; }
+      #ruler { position: absolute; left: var(--pad-x); right: var(--pad-x); bottom: 96px; height: 22px; }
+      #ruler-ticks {
+        position: absolute; inset: 0;
+        background-image:
+          linear-gradient(rgba(177,189,255,0.35), rgba(177,189,255,0.35)),
+          repeating-linear-gradient(90deg, rgba(177,189,255,0.35) 0 2px, transparent 2px 36px);
+        background-size: 100% 2px, 100% 10px; background-position: 0 100%, 0 100%; background-repeat: no-repeat;
+      }
+      #ruler-fill { position: absolute; left: 0; right: 0; bottom: 0; height: 4px; background: var(--blue-400); transform-origin: left center; }
+
+      /* scenes */
+      .scene { position: absolute; inset: 0; }
+      .abs { position: absolute; }
+      .eyebrow { font-size: 30px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--blue-300); }
+      .glass {
+        background: rgba(216,222,255,0.06);
+        border: 1.5px solid rgba(177,189,255,0.28);
+        border-radius: 28px;
+        box-shadow: 0 30px 80px rgba(2,6,30,0.45);
+      }
+
+      /* 1 · hook */
+      #s1 { display: flex; flex-direction: column; justify-content: center; padding: 216px var(--pad-x) 210px; }
+      #s1 .eyebrow { margin-bottom: 36px; }
+      .hook { font-size: 108px; font-weight: 700; line-height: 1.04; letter-spacing: -0.025em; max-width: 904px; }
+      .noise-word { position: relative; display: inline-block; color: var(--blue-200); }
+      #noise-line { position: absolute; left: -4px; right: -4px; bottom: -22px; height: 30px; overflow: visible; }
+
+      /* 2 · the scale */
+      #s2-eyebrow { left: var(--pad-x); top: 236px; }
+      #chart { left: var(--pad-x); top: 306px; width: 904px; height: 560px; padding: 34px 40px 30px 40px; }
+      #chart-title { font-size: 34px; font-weight: 700; display: flex; justify-content: space-between; align-items: baseline; }
+      #chart-title span { font-size: 26px; font-weight: 500; color: var(--blue-300); }
+      #chart svg { display: block; margin-top: 18px; overflow: visible; }
+      #big-num { left: var(--pad-x); top: 912px; font-size: 176px; font-weight: 900; line-height: 1; letter-spacing: -0.035em; white-space: nowrap; }
+      #big-num small { font-size: 96px; font-weight: 700; letter-spacing: -0.02em; color: var(--blue-200); margin-left: 18px; }
+      #s2-caption { left: var(--pad-x); top: 1120px; max-width: 904px; font-size: 48px; font-weight: 500; line-height: 1.2; color: var(--blue-100); }
+
+      /* 3 · same 12 weeks, measured */
+      #s3-eyebrow { left: var(--pad-x); top: 236px; }
+      #models { left: 20px; top: 286px; height: 760px; width: auto; -webkit-mask-image: linear-gradient(180deg, #000 78%, transparent 100%); mask-image: linear-gradient(180deg, #000 78%, transparent 100%); }
+      #prog { left: 468px; top: 430px; width: 524px; padding: 38px 40px 34px; background: rgba(8,24,107,0.72); }
+      #prog-title { font-size: 36px; font-weight: 700; }
+      #prog-sub { font-size: 24px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue-300); margin-top: 8px; }
+      .row { margin-top: 34px; }
+      .row-top { display: flex; justify-content: space-between; align-items: baseline; font-size: 32px; font-weight: 500; color: var(--blue-100); }
+      .row-top b { font-size: 40px; font-weight: 700; color: var(--white); font-variant-numeric: tabular-nums; }
+      .row-top b.flat { color: var(--blue-200); }
+      .bar { height: 12px; border-radius: 9999px; background: rgba(177,189,255,0.16); margin-top: 14px; overflow: hidden; }
+      .bar i { display: block; height: 100%; border-radius: 9999px; background: var(--blue-400); transform-origin: left center; }
+      .bar i.flat { background: var(--blue-200); opacity: 0.6; }
+      #prog-note { margin-top: 30px; font-size: 22px; font-weight: 500; color: var(--blue-300); }
+      #s3-line { left: var(--pad-x); top: 1066px; max-width: 904px; font-size: 52px; font-weight: 700; line-height: 1.12; letter-spacing: -0.015em; }
+      #s3-line em { font-style: normal; color: var(--blue-200); }
+
+      /* 4 · the product */
+      #s4-eyebrow { left: var(--pad-x); top: 236px; }
+      #s4-head { left: var(--pad-x); top: 282px; font-size: 76px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.05; }
+      #shot { left: 260px; top: 392px; width: 560px; height: 528px; border-radius: 32px; overflow: hidden; background: #fff; box-shadow: 0 34px 90px rgba(2,6,30,0.55); }
+      #shot img { width: 560px; height: 528px; display: block; }
+      #scan-window { position: absolute; left: 247px; top: 58px; width: 252px; height: 470px; overflow: hidden; }
+      #scan-line { position: absolute; left: 0; right: 0; top: 0; height: 4px; background: var(--blue-400); box-shadow: 0 0 22px 6px rgba(79,109,255,0.75); }
+      #scan-tint { position: absolute; left: 0; right: 0; top: 0; height: 0; background: linear-gradient(180deg, rgba(79,109,255,0.0), rgba(79,109,255,0.18)); }
+      #chips { left: var(--pad-x); right: var(--pad-x); top: 952px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+      .chip { display: inline-flex; align-items: center; gap: 14px; padding: 16px 28px; border-radius: 9999px; font-size: 31px; font-weight: 700; line-height: 1; background: rgba(216,222,255,0.08); border: 1.5px solid rgba(177,189,255,0.35); }
+      .chip .dot { width: 14px; height: 14px; border-radius: 9999px; background: var(--blue-400); box-shadow: 0 0 0 5px rgba(79,109,255,0.25); }
+      .chip.solid { background: var(--white); color: var(--navy); border-color: var(--white); }
+      .chip.solid .dot { background: var(--blue-400); }
+
+      /* 5 · close */
+      #s5 { display: flex; flex-direction: column; justify-content: center; padding: 216px var(--pad-x) 230px; }
+      #s5 .eyebrow { margin-bottom: 34px; }
+      .close { font-size: 92px; font-weight: 700; line-height: 1.06; letter-spacing: -0.025em; max-width: 904px; }
+      .cta-row { margin-top: 58px; display: flex; }
+      .cta { display: inline-flex; align-items: center; gap: 16px; padding: 26px 44px; border-radius: 9999px; background: var(--white); color: var(--navy); font-size: 36px; font-weight: 700; line-height: 1; }
+      .cta svg { width: 28px; height: 28px; display: block; }
+      .url { margin-top: 30px; font-size: 31px; font-weight: 500; color: var(--blue-200); }
+      .foot { margin-top: 64px; font-size: 26px; font-weight: 500; color: var(--blue-300); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="22" data-width="1080" data-height="1350">
+
+      <div id="ground" class="clip" data-start="0" data-duration="22" data-track-index="0">
+        <div id="glow"></div>
+        <div id="grid"></div>
+      </div>
+
+      <!-- 1 · hook (0 – 3.6) -->
+      <div id="s1" class="scene clip" data-start="0" data-duration="3.6" data-track-index="1">
+        <div id="s1-eyebrow" class="eyebrow">Fitness app progress</div>
+        <h1 id="s1-hook" class="hook">Weight alone makes real progress look like <span class="noise-word">noise.<svg id="noise-line" viewBox="0 0 300 30" preserveAspectRatio="none"><path id="noise-path" d="M2 16 L22 9 L38 21 L55 6 L71 19 L90 11 L104 24 L124 8 L140 18 L158 5 L176 22 L193 10 L210 20 L228 7 L245 17 L262 12 L280 21 L298 13" fill="none" stroke="#4F6DFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></h1>
+      </div>
+
+      <!-- 2 · the scale (3.6 – 8.4) -->
+      <div id="s2" class="scene clip" data-start="3.6" data-duration="4.8" data-track-index="2">
+        <div id="s2-eyebrow" class="abs eyebrow">12 weeks of training</div>
+        <div id="chart" class="abs glass">
+          <div id="chart-title">Weight <span>kg · week 1 → week 12</span></div>
+          <svg width="824" height="420" viewBox="0 0 824 420">
+            <g stroke="rgba(177,189,255,0.16)" stroke-width="1.5">
+              <line x1="70" y1="20" x2="824" y2="20"/><line x1="70" y1="175" x2="824" y2="175"/><line x1="70" y1="330" x2="824" y2="330"/>
+            </g>
+            <g fill="#8A9CFF" font-family="Satoshi, sans-serif" font-size="22" font-weight="500">
+              <text x="0" y="27">68</text><text x="0" y="182">64</text><text x="0" y="337">60</text>
+              <text x="70" y="390">Wk 1</text><text x="410" y="390">Wk 6</text><text x="748" y="390">Wk 12</text>
+            </g>
+            <g id="wline-wrap">
+              <path id="wline" d="M90 182 L151 170 L212 190 L273 175 L334 186 L395 178 L456 198 L517 182 L578 190 L639 186 L700 202 L761 194" fill="none" stroke="#B1BDFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle id="wdot-a" cx="90" cy="182" r="9" fill="#B1BDFF"/>
+              <circle id="wdot-b" cx="761" cy="194" r="11" fill="#4F6DFF" stroke="#fff" stroke-width="4"/>
+            </g>
+          </svg>
+        </div>
+        <div id="big-num" class="abs"><span id="kg-val">0.0</span><small>kg</small></div>
+        <div id="s2-caption" class="abs">On the scale, that reads as failure.</div>
+      </div>
+
+      <!-- 3 · same 12 weeks, measured (8.4 – 13.6) -->
+      <div id="s3" class="scene clip" data-start="8.4" data-duration="5.2" data-track-index="3">
+        <div id="s3-eyebrow" class="abs eyebrow">Same 12 weeks, measured</div>
+        <img id="models" class="abs" src="assets/3d-body-models.webp" alt="" />
+        <div id="prog" class="abs glass">
+          <div id="prog-title">Your progress</div>
+          <div id="prog-sub">12 weeks</div>
+          <div class="row" id="r-weight"><div class="row-top">Weight <b class="flat"><span id="v-weight">0.0</span> kg</b></div><div class="bar"><i class="flat" id="b-weight"></i></div></div>
+          <div class="row" id="r-waist"><div class="row-top">Waist <b><span id="v-waist">0.0</span> cm</b></div><div class="bar"><i id="b-waist"></i></div></div>
+          <div class="row" id="r-fat"><div class="row-top">Body fat <b><span id="v-fat">0</span>%</b></div><div class="bar"><i id="b-fat"></i></div></div>
+          <div id="prog-note">Illustrative member</div>
+        </div>
+        <div id="s3-line" class="abs">Show the numbers that move<br>on a <em>4 to 12 week clock.</em></div>
+      </div>
+
+      <!-- 4 · the product (13.6 – 18.4) -->
+      <div id="s4" class="scene clip" data-start="13.6" data-duration="4.8" data-track-index="4">
+        <div id="s4-eyebrow" class="abs eyebrow">FitXpress</div>
+        <div id="s4-head" class="abs">Two guided phone photos.</div>
+        <div id="shot" class="abs">
+          <img src="assets/capture-person-and-phone.webp" alt="" />
+          <div id="scan-window"><div id="scan-tint"></div><div id="scan-line"></div></div>
+        </div>
+        <div id="chips" class="abs">
+          <div class="chip" id="c1"><span class="dot"></span>80+ body measurements</div>
+          <div class="chip" id="c2"><span class="dot"></span>Body composition estimates</div>
+          <div class="chip solid" id="c3"><span class="dot"></span>Under 45 seconds</div>
+        </div>
+      </div>
+
+      <!-- 5 · close (18.4 – 22) -->
+      <div id="s5" class="scene clip" data-start="18.4" data-duration="3.6" data-track-index="5">
+        <div id="s5-eyebrow" class="eyebrow">FitXpress for fitness apps</div>
+        <h2 id="s5-line" class="close">Members compare check-ins in your app, under your brand.</h2>
+        <div class="cta-row"><div id="cta" class="cta">See how it works<svg viewBox="0 0 24 24" fill="none" stroke="#050F40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></div></div>
+        <div id="url" class="url">3dlook.ai/fitxpress/for-connected-and-digital-fitness</div>
+        <div id="foot" class="foot">FitXpress is not a medical device. It doesn’t replace a coach.</div>
+      </div>
+
+      <div id="logo" class="clip" data-start="0" data-duration="22" data-track-index="6"><img src="assets/3dlook-logo-white.svg" alt="3DLOOK" /></div>
+
+      <div id="ruler" class="clip" data-start="0" data-duration="22" data-track-index="7">
+        <div id="ruler-ticks"></div>
+        <div id="ruler-fill"></div>
+      </div>
+    </div>
+
+    <script>
+      const TOTAL = 22;
+      const S = { s1: [0, 3.6], s2: [3.6, 8.4], s3: [8.4, 13.6], s4: [13.6, 18.4], s5: [18.4, 22] };
+      const tl = gsap.timeline({ paused: true });
+      const FROM = { opacity: 0, y: 40, filter: "blur(8px)" };
+      const IN = { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power3.out" };
+      const out = (sels, end) => tl.to(sels, { opacity: 0, y: -24, duration: 0.42, ease: "power2.in" }, end - 0.5);
+      const num = (sel, from, to, dec, at, dur) => {
+        const o = { v: from }, el = document.querySelector(sel);
+        const fmt = (v) => (v < 0 ? "−" : "") + Math.abs(v).toFixed(dec);
+        tl.fromTo(o, { v: from }, { v: to, duration: dur, ease: "power2.out", immediateRender: false, onUpdate: () => { el.textContent = fmt(o.v); } }, at);
+      };
+
+      // ground, logo, ruler
+      tl.fromTo("#glow", { x: -60, y: 0, scale: 1 }, { x: 60, y: 90, scale: 1.12, duration: TOTAL, ease: "sine.inOut" }, 0);
+      tl.fromTo("#grid", { y: 0 }, { y: -72, duration: TOTAL, ease: "none" }, 0);
+      tl.fromTo("#ruler-fill", { scaleX: 0 }, { scaleX: 1, duration: TOTAL, ease: "none" }, 0);
+      
+      // 1 · hook — the jagged line draws under "noise."
+      const np = document.querySelector("#noise-path"), nl = np.getTotalLength();
+      // the hook is on screen from frame 0: LinkedIn previews and thumbnails often take the first frame
+      tl.fromTo("#s1-hook", { scale: 1.0, transformOrigin: "0% 50%" }, { scale: 1.025, duration: 3.0, ease: "sine.inOut" }, 0);
+      tl.fromTo(np, { attr: { "stroke-dasharray": nl, "stroke-dashoffset": nl } }, { attr: { "stroke-dashoffset": 0 }, duration: 0.9, ease: "power2.inOut" }, 0.5);
+      out(["#s1-eyebrow", "#s1-hook"], S.s1[1]);
+
+      // 2 · the scale — a flat, jittery line; the counter lands on −0.3
+      const s2 = S.s2[0];
+      const wl = document.querySelector("#wline"), wll = wl.getTotalLength();
+      tl.fromTo("#s2-eyebrow", FROM, { ...IN }, s2 + 0.1);
+      tl.fromTo("#chart", FROM, { ...IN }, s2 + 0.2);
+      tl.fromTo("#wdot-a", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.3, ease: "power2.out" }, s2 + 0.6);
+      tl.fromTo(wl, { attr: { "stroke-dasharray": wll, "stroke-dashoffset": wll } }, { attr: { "stroke-dashoffset": 0 }, duration: 1.6, ease: "power1.inOut" }, s2 + 0.7);
+      tl.fromTo("#wdot-b", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.35, ease: "power2.out" }, s2 + 2.25);
+      tl.fromTo("#big-num", FROM, { ...IN }, s2 + 1.6);
+      num("#kg-val", 0, -0.3, 1, s2 + 1.7, 1.0);
+      tl.fromTo("#s2-caption", FROM, { ...IN }, s2 + 2.5);
+      out(["#s2-eyebrow", "#chart", "#big-num", "#s2-caption"], S.s2[1]);
+
+      // 3 · same 12 weeks, measured — the bars that move
+      const s3 = S.s3[0];
+      tl.fromTo("#s3-eyebrow", FROM, { ...IN }, s3 + 0.1);
+      tl.fromTo("#models", { opacity: 0, x: -40, scale: 1.04 }, { opacity: 1, x: 0, scale: 1, duration: 1.0, ease: "power3.out" }, s3 + 0.15);
+      tl.fromTo("#models", { y: 0 }, { y: -18, duration: 5.0, ease: "sine.inOut" }, s3 + 0.15);
+      tl.fromTo("#prog", { opacity: 0, x: 40, filter: "blur(8px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.75, ease: "power3.out" }, s3 + 0.45);
+      tl.fromTo("#b-weight", { scaleX: 0 }, { scaleX: 0.035, duration: 0.6, ease: "power2.out" }, s3 + 1.0);
+      num("#v-weight", 0, -0.3, 1, s3 + 1.0, 0.6);
+      tl.fromTo("#b-waist", { scaleX: 0 }, { scaleX: 0.64, duration: 1.0, ease: "power2.out" }, s3 + 1.45);
+      num("#v-waist", 0, -2.5, 1, s3 + 1.45, 1.0);
+      tl.fromTo("#b-fat", { scaleX: 0 }, { scaleX: 0.5, duration: 1.0, ease: "power2.out" }, s3 + 1.9);
+      num("#v-fat", 0, -2, 0, s3 + 1.9, 1.0);
+      tl.fromTo("#prog-note", { opacity: 0 }, { opacity: 1, duration: 0.4 }, s3 + 2.6);
+      tl.fromTo("#s3-line", FROM, { ...IN, duration: 0.8 }, s3 + 2.7);
+      out(["#s3-eyebrow", "#models", "#prog", "#s3-line"], S.s3[1]);
+
+      // 4 · the product — capture, scan sweep, what comes back
+      const s4 = S.s4[0];
+      tl.fromTo("#s4-eyebrow", FROM, { ...IN }, s4 + 0.1);
+      tl.fromTo("#s4-head", FROM, { ...IN }, s4 + 0.2);
+      tl.fromTo("#shot", { opacity: 0, y: 50, scale: 0.97 }, { opacity: 1, y: 0, scale: 1, duration: 0.8, ease: "power3.out" }, s4 + 0.35);
+      tl.fromTo("#scan-line", { y: 0, opacity: 0 }, { y: 466, opacity: 1, duration: 1.5, ease: "power1.inOut" }, s4 + 1.0);
+      tl.fromTo("#scan-tint", { height: 0 }, { height: 470, duration: 1.5, ease: "power1.inOut" }, s4 + 1.0);
+      tl.to(["#scan-line", "#scan-tint"], { opacity: 0, duration: 0.35, ease: "power2.out" }, s4 + 2.55);
+      ["#c1", "#c2", "#c3"].forEach((c, i) => tl.fromTo(c, { opacity: 0, y: 26, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, s4 + 1.7 + i * 0.42));
+      out(["#s4-eyebrow", "#s4-head", "#shot", "#chips"], S.s4[1]);
+
+      // 5 · close, held to the end
+      const s5 = S.s5[0];
+      tl.fromTo("#s5-eyebrow", FROM, { ...IN }, s5 + 0.1);
+      tl.fromTo("#s5-line", FROM, { ...IN, duration: 0.85 }, s5 + 0.25);
+      tl.fromTo("#cta", { opacity: 0, y: 24, scale: 0.97 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }, s5 + 0.8);
+      tl.fromTo("#url", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.out" }, s5 + 1.05);
+      tl.fromTo("#foot", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.out" }, s5 + 1.25);
+      tl.fromTo("#cta svg", { x: 0, y: 0 }, { x: 4, y: -4, duration: 0.5, ease: "sine.inOut", repeat: 2, yoyo: true }, s5 + 1.6);
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

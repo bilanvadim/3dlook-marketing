@@ -1,0 +1,39 @@
+{
+  "bed": {
+    "licence": "CC BY 4.0",
+    "title": "Happy Beats / Business Moves Vol. 9",
+    "author": "Sascha Ende",
+    "source_url": "https://ende.app/en",
+    "file": "happy-beats-business-moves-vol-9-by-ende-dot-app.mp3",
+    "start_s": 74.64,
+    "beat_fit": {
+      "start_s": 74.64,
+      "tempo_bpm": 114.84,
+      "mean_miss_ms": 90,
+      "window_intensity": 0.9,
+      "miss_ms": {
+        "land@0.53": 109,
+        "whoosh@3.787": 10,
+        "tick@4.15": 169,
+        "whoosh@8.587": 41,
+        "pop@9.404": 186,
+        "pop@9.854": 259,
+        "pop@10.304": 191,
+        "whoosh@13.787": 6,
+        "pop@15.304": 68,
+        "pop@15.724": 182,
+        "pop@16.144": 238,
+        "whoosh@18.587": 57,
+        "ding@19.2": 136
+      }
+    }
+  },
+  "mix": {
+    "peak_dbfs": -1.01,
+    "true_peak_dbtp": -1.0,
+    "lufs_i": -14.2,
+    "limiter_max_db": 3.1
+  },
+  "cues": 13,
+  "file": "2026-11-20-katya-fitness-progress-feed-sound.mp4"
+}
