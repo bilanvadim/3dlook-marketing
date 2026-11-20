@@ -1,13 +1,13 @@
 # Sales Navigator pull — 2026-11-19-latam-connected-fitness
 
-Profile: **katya** · generated 2026-11-19 from the hypothesis (```titles block).
+Profile: **katya** · generated 2026-11-20 from the hypothesis (```titles block).
 
 **Pull by TITLE inside the company list, never by company alone.** A company-only
 pull returns whole staff lists: 276 of 321 people (86%) on the 2026-09-28 EU export
 and 72 of 98 on the UK one were never candidates, and the real buyers (CPO, Head of
 Product, brand GMs) were missing from both.
 
-## 1. Current company (15)
+## 1. Current company (23)
 
 - Smart Fit (incl. Bio Ritmo) — https://www.linkedin.com/company/smartfit
 - Bluefit — https://www.linkedin.com/company/bluefit-academias
@@ -24,6 +24,14 @@ Product, brand GMs) were missing from both.
 - Pacto Soluções — https://www.linkedin.com/company/pacto-solucoes
 - EVO (W12) — https://www.linkedin.com/company/w12-evo
 - Nextfit — https://www.linkedin.com/company/nextfit
+- Bodytech Company (Bodytech Brasil) — https://www.linkedin.com/company/bodytech-company
+- Allp Fit — https://www.linkedin.com/company/allp-fit
+- Spinning Center Gym — https://www.linkedin.com/company/spinning-center
+- Action Black — https://www.linkedin.com/company/action-s-a-s
+- Cia Athletica — https://www.linkedin.com/company/companhia-athletica
+- BIGG — https://www.linkedin.com/company/bigg-gimnasios
+- Fitco — https://www.linkedin.com/company/fitco-latam
+- Competition Academia — https://www.linkedin.com/company/competition-academia
 
 ## 2. Current job title (73 titles)
 
