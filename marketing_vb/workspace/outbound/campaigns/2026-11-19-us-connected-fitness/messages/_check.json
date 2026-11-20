@@ -1,35 +1,480 @@
 {
  "campaign": "2026-11-19-us-connected-fitness",
- "checked": 109,
+ "checked": 150,
  "source": "people-validated.csv (send == SEND)",
  "batch": null,
- "generated": "2026-11-20T09:56:32",
+ "generated": "2026-11-20T10:39:13",
  "hard": [],
  "soft": [
   [
+   "label before a number or link",
+   "renato-moratore-b3089b134 M1",
+   "«FitXpress from 3DLOOK returns the measu…»: say it in a sentence or drop it"
+  ],
+  [
+   "label before a number or link",
+   "kelsi-farmer-ba097a4b M1",
+   "«FitXpress from 3DLOOK adds the measurem…»: say it in a sentence or drop it"
+  ],
+  [
+   "M1 closing ask repeated",
+   "Peloton ×2",
+   "«which screens around a fixed capture, such as con…»: evie-mcquiston-2a417292, clarissa-woods-16a60b12"
+  ],
+  [
+   "M1 closing ask repeated",
+   "Peloton ×2",
+   "«in your view, does a scan belong at onboarding or…»: bfoncillas, greetingsmj"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: meghiggins21 / lauren-peters34",
+   "«how does your team test a new onboarding step bef…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: francisshanahan / nompute",
+   "«the member takes 2 guided photos on their phone,…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: francisshanahan / mottaqui-karim",
+   "«what would it take to build a capture sdk like th…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: francisshanahan / raulesantos",
+   "«happy to walk your team through the setup on a ca…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: francisshanahan / renato-moratore-b3089b134",
+   "«happy to walk your team through the setup on a ca…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: francisshanahan / jamescarrozza",
+   "«happy to walk your team through the setup on a ca…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: nompute / theodorelui",
+   "«a separate scanning app puts the member and the r…»"
+  ],
+  [
+   "same sentence at one company",
+   "Peloton: nompute / nolan-bishop",
+   "«A separate scanning app puts the member and the result unde…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Peloton: nompute / nimit-shah-b2b6a744",
+   "«A separate scanning app puts the member and the result unde…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: nompute / tobyj",
+   "«the member takes 2 photos on their phone, and the…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: nompute / jamescarrozza",
+   "«hi michael, on data handling, photos are deleted…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: nompute / mottaqui-karim",
+   "«i can go through it on a call, or point me to who…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: nompute / clarissa-woods-16a60b12",
+   "«i can go through it on a call, or point me to who…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: theodorelui / nolan-bishop",
+   "«hi ted, a separate body-scanning app puts the mem…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: theodorelui / nimit-shah-b2b6a744",
+   "«hi ted, a separate body-scanning app puts the mem…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: raulesantos / renato-moratore-b3089b134",
+   "«i can talk through scope on a call, or point me t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: raulesantos / jamescarrozza",
+   "«i can talk through scope on a call, or point me t…»"
+  ],
+  [
+   "same sentence at one company",
+   "Peloton: tworetzky / mario-joseph-pasquino",
+   "«Hi Brent, A pilot would compare day-90 retention between a…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: tworetzky / greetingsmj",
+   "«hi brent, a pilot would compare day-90 retention…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: mottaqui-karim / clarissa-woods-16a60b12",
+   "«happy to go deeper on a call, or point me to whoe…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: mottaqui-karim / bfoncillas",
+   "«happy to go deeper on a call, or point me to whoe…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: lauren-peters34 / clarissa-woods-16a60b12",
+   "«fitxpress from 3dlook adds a body scan step: 2 gu…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: lauren-peters34 / nolan-bishop",
+   "«hi lauren, on the build side, web and mobile sdks…»"
+  ],
+  [
+   "same sentence at one company",
+   "Peloton: evie-mcquiston-2a417292 / clarissa-woods-16a60b12",
+   "«Which screens around a fixed capture, such as consent and r…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: renato-moratore-b3089b134 / kelsi-farmer-ba097a4b",
+   "«fitxpress from 3dlook returns the measurement: 2…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: renato-moratore-b3089b134 / jamescarrozza",
+   "«happy to show it on a call, or point me to whoeve…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: mario-joseph-pasquino / shirley-wang-9624abab",
+   "«on the pro plan, 3d body progress tracking and 3d…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: mario-joseph-pasquino / tobyj",
+   "«how does your team judge a new paid feature befor…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: mario-joseph-pasquino / greetingsmj",
+   "«hi mario, a pilot could compare day-30 retention…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: mario-joseph-pasquino / clarissa-woods-16a60b12",
+   "«happy to talk it through on a call, or point me t…»"
+  ],
+  [
+   "same sentence at one company",
+   "Peloton: mario-joseph-pasquino / caitlin-borisjuk-20284723",
+   "«Happy to talk it through on a call, or point me to whoever…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: mario-joseph-pasquino / kelsi-farmer-ba097a4b",
+   "«happy to talk it through on a call, or point me t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: clarissa-woods-16a60b12 / tobyj",
+   "«the member takes 2 guided photos on their phone,…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: clarissa-woods-16a60b12 / bfoncillas",
+   "«happy to talk it through on a call, or point me t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: clarissa-woods-16a60b12 / caitlin-borisjuk-20284723",
+   "«happy to talk it through on a call, or point me t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: miranda-cl-evans / shirley-wang-9624abab",
+   "«on the pro plan, 3d body progress tracking shows…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: miranda-cl-evans / caitlin-borisjuk-20284723",
+   "«i can show both on a call, or point me to whoever…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: miranda-cl-evans / kelsi-farmer-ba097a4b",
+   "«i can show both on a call, or point me to whoever…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: miranda-cl-evans / mollyhallahan",
+   "«i can show both on a call, or point me to whoever…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: miranda-cl-evans / tobyj",
+   "«i can show both on a call, or point me to whoever…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: miranda-cl-evans / rebeccayou",
+   "«i can show both on a call, or point me to whoever…»"
+  ],
+  [
+   "same sentence at one company",
+   "Peloton: bfoncillas / greetingsmj",
+   "«In your view, does a scan belong at onboarding or at the fi…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: bfoncillas / mollyhallahan",
+   "«happy to show it on a call, or point me to whoeve…»"
+  ],
+  [
+   "same sentence at one company",
+   "Peloton: nolan-bishop / nimit-shah-b2b6a744",
+   "«A separate scanning app puts the member and the result unde…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Peloton: nolan-bishop / seung-jin-lee-0983643a",
+   "«Happy to go through it on a call, or point me to whoever ow…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Peloton: caitlin-borisjuk-20284723 / kelsi-farmer-ba097a4b",
+   "«Happy to walk through it on a call, or point me to whoever…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Peloton: caitlin-borisjuk-20284723 / tobyj",
+   "«Happy to walk through it on a call, or point me to whoever…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: caitlin-borisjuk-20284723 / seung-jin-lee-0983643a",
+   "«happy to walk through it on a call, or point me t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: kelsi-farmer-ba097a4b / tobyj",
+   "«i can walk through it on a call, or point me to w…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: kelsi-farmer-ba097a4b / nimit-shah-b2b6a744",
+   "«i can walk through it on a call, or point me to w…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: michaelnortiz / jonanglee",
+   "«calendar below if a call makes sense, or point me…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Peloton: tobyj / greetingsmj",
+   "«hi toby, if it helps to see it measured, a pilot…»"
+  ],
+  [
+   "same sentence at one company",
+   "Peloton: nimit-shah-b2b6a744 / seung-jin-lee-0983643a",
+   "«How does a partner capability enter the Peloton app today?»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "MyFitnessPal: oaktownolivia / sgaat",
+   "«Pick a time for a call here, or point me to whoever owns pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "sentence opening repeated",
+   "Peloton ×10",
+   "«the member takes 2 photos…»: allisonschloss, jacquelyn-zaydel, juliannaslaten, meghiggins21"
+  ],
+  [
+   "sentence opening repeated",
+   "Peloton ×3",
+   "«how does your team test…»: crystal-qin, lauren-peters34, meghiggins21"
+  ],
+  [
+   "sentence opening repeated",
+   "Peloton ×3",
+   "«the member takes 2 guided…»: clarissa-woods-16a60b12, francisshanahan, mario-joseph-pasquino"
+  ],
+  [
+   "sentence opening repeated",
+   "Peloton ×3",
+   "«what does a member see…»: allisonschloss, nickcaldwell, shirley-wang-9624abab"
+  ],
+  [
+   "sentence opening repeated",
+   "Peloton ×3",
+   "«a separate scanning app puts…»: nimit-shah-b2b6a744, nolan-bishop, nompute"
+  ],
+  [
+   "sentence opening repeated",
+   "Peloton ×3",
+   "«fitxpress from 3dlook is an…»: nolan-bishop, nompute, seung-jin-lee-0983643a"
+  ],
+  [
+   "sentence opening repeated",
+   "Peloton ×3",
+   "«a scan returns 80+ body…»: crystal-qin, kmcnabb, lauren-peters34"
+  ],
+  [
+   "sentence opening repeated",
+   "MyFitnessPal ×3",
+   "«2 guided photos front and…»: kelsey-van-ackeren, meganstaggoverton, sgaat"
+  ],
+  [
+   "sentence opening repeated",
+   "Peloton ×4",
+   "«happy to talk it through…»: clarissa-woods-16a60b12, mario-joseph-pasquino, theodorelui, tobyj"
+  ],
+  [
+   "sentence opening repeated",
+   "Peloton ×13",
+   "«2 guided photos on the…»: ashlynmusillo, caitlin-borisjuk-20284723, crystal-qin, greetingsmj"
+  ],
+  [
+   "sentence opening repeated",
+   "Peloton ×3",
+   "«a weigh in gives one…»: cole-shipley, mottaqui-karim, tworetzky"
+  ],
+  [
+   "sentence opening repeated",
+   "Peloton ×3",
+   "«a progress screen could show…»: allisonschloss, cole-shipley, jacquelyn-zaydel"
+  ],
+  [
+   "sentence opening repeated",
+   "Peloton ×5",
+   "«fitxpress from 3dlook adds a…»: caitlin-borisjuk-20284723, jamescarrozza, jonanglee, lauren-peters34"
+  ],
+  [
+   "sentence opening repeated",
+   "Peloton ×3",
+   "«which screens around a fixed…»: clarissa-woods-16a60b12, evie-mcquiston-2a417292, mollyhallahan"
+  ],
+  [
+   "sentence opening repeated",
+   "Peloton ×4",
+   "«on the pro plan 3d…»: allisonschloss, mario-joseph-pasquino, miranda-cl-evans, shirley-wang-9624abab"
+  ],
+  [
+   "sentence opening repeated",
+   "Peloton ×3",
+   "«2 photos on the member's…»: jamescarrozza, miranda-cl-evans, uclahill"
+  ],
+  [
+   "sentence opening repeated",
+   "Peloton ×3",
+   "«i can walk through it…»: emilygaffney, kelsi-farmer-ba097a4b, nimit-shah-b2b6a744"
+  ],
+  [
+   "sentence opening repeated",
+   "Peloton ×3",
+   "«calendar below if a call…»: greetingsmj, jonanglee, michaelnortiz"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "Lose It! ×2",
+   "«lose it…»: pete-wierzbinski-38153610, taylor-smyrnos"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "Peloton ×4",
+   "«your headline on…»: evie-mcquiston-2a417292, mario-joseph-pasquino, nolan-bishop, raulesantos"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "Peloton ×2",
+   "«your route from…»: kelsi-farmer-ba097a4b, tobyj"
+  ],
+  [
+   "M1 product sentence shared",
+   "Peloton ×2",
+   "«3dlook built fitxpress to show where…»: allisonschloss, shirley-wang-9624abab"
+  ],
+  [
+   "M1 product sentence shared",
+   "Peloton ×3",
+   "«the member takes 2 guided photos…»: clarissa-woods-16a60b12, francisshanahan, mario-joseph-pasquino"
+  ],
+  [
+   "M1 product sentence shared",
+   "Peloton ×5",
+   "«the member takes 2 photos on…»: juliannaslaten, mottaqui-karim, nolan-bishop, nompute"
+  ],
+  [
+   "M1 product sentence shared",
+   "Peloton ×3",
+   "«x from 3dlook adds a body…»: caitlin-borisjuk-20284723, lauren-peters34, rebeccayou"
+  ],
+  [
+   "M1 product sentence shared",
+   "Peloton ×3",
+   "«x from 3dlook is an sdk…»: nolan-bishop, nompute, seung-jin-lee-0983643a"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×29",
+   "«on the member s phone…»: ashlynmusillo, bfoncillas, caitlin-borisjuk-20284723, christina-to"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×11",
+   "«at the first check in…»: becca-valente-31b59424, bfoncillas, bmaloley, caitlin-borisjuk-20284723"
+  ],
+  [
    "card wording as copy",
    "campaign ×10",
-   "«on the member s phone…»: christina-to, greg-nuckols-92545595, jasonbhwang, joeli-spencer-5bab67167"
+   "«there is no integration fee…»: bentbartlett, emilygaffney, ericreimers, jmcluff"
   ],
   [
    "card wording as copy",
-   "campaign ×9",
-   "«there is no integration fee…»: bentbartlett, ericreimers, jmcluff, joeli-spencer-5bab67167"
-  ],
-  [
-   "card wording as copy",
-   "campaign ×8",
-   "«at the first check in…»: becca-valente-31b59424, bmaloley, jacob-wax-b2218295, jake-grundstein"
-  ],
-  [
-   "card wording as copy",
-   "campaign ×7",
+   "campaign ×10",
    "«to the member profile through…»: alisa-aguirre, an-li-5662b365, bethraewendt, chris-muir"
   ],
   [
    "card wording as copy",
-   "campaign ×6",
+   "campaign ×8",
    "«at the next check in…»: andrew-sugerman, barbarathornethomsen, burtonhohman, josephrodonis"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×7",
+   "«onboarding consent and results screens…»: ajbednarek, bfoncillas, francisshanahan, lauren-peters34"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×7",
+   "«the member app s progress…»: amartanna-cpa-ca, francisshanahan, jamescarrozza, luanaperez"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×7",
+   "«to compare at the next…»: barbarathornethomsen, burtonhohman, josephrodonis, renato-moratore-b3089b134"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×7",
+   "«where the body changed stays…»: elizabeth-palmer-97820997, jmcluff, mottaqui-karim, nicholasjrobinson"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«30 and day 90 retention…»: anapischl, caitlin-borisjuk-20284723, jake-grundstein, nicholasjrobinson"
   ],
   [
    "card wording as copy",
@@ -38,18 +483,28 @@
   ],
   [
    "card wording as copy",
-   "campaign ×6",
-   "«where the body changed stays…»: elizabeth-palmer-97820997, jmcluff, nicholasjrobinson, thosniles"
+   "campaign ×5",
+   "«at onboarding and at the…»: becca-valente-31b59424, caitlin-borisjuk-20284723, nicholasjrobinson, robcanning"
   ],
   [
    "card wording as copy",
    "campaign ×5",
-   "«30 and day 90 retention…»: anapischl, jake-grundstein, nicholasjrobinson, robcanning"
+   "«check in to the next…»: bfoncillas, evie-mcquiston-2a417292, robcanning, robert-benjamin-a7906b104"
   ],
   [
    "card wording as copy",
    "campaign ×5",
-   "«to compare at the next…»: barbarathornethomsen, burtonhohman, josephrodonis, stephanie-raterman"
+   "«height and where provided weight…»: greg-nuckols-92545595, jonanglee, lindsay-pontello, meganstaggoverton"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«links each record to the…»: chris-muir, john-ybarra-mba, nimit-shah-b2b6a744, thaovdoan"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«the member s own phone…»: jenna-moore-ms-cscs-a99827a1, joncilley, mirelacialai, stephanie-raterman"
   ],
   [
    "card wording as copy",
@@ -59,12 +514,22 @@
   [
    "card wording as copy",
    "campaign ×4",
-   "«at onboarding and at the…»: becca-valente-31b59424, nicholasjrobinson, robcanning, trent-ward-12b992b2"
+   "«from one check in to…»: bfoncillas, evie-mcquiston-2a417292, robert-benjamin-a7906b104, vptaylo"
   ],
   [
    "card wording as copy",
    "campaign ×4",
-   "«the member s own phone…»: jenna-moore-ms-cscs-a99827a1, joncilley, mirelacialai, stephanie-raterman"
+   "«layer stays fixed to protect…»: ajbednarek, deepakmm, nickcaldwell, rkekelis"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«which screens around a fixed…»: clarissa-woods-16a60b12, evie-mcquiston-2a417292, john-santo-096310149, mollyhallahan"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«30 days under the company…»: jamescarrozza, nompute, sarah-rodenberg"
   ],
   [
    "card wording as copy",
@@ -79,11 +544,6 @@
   [
    "card wording as copy",
    "campaign ×3",
-   "«check in to the next…»: robcanning, robert-benjamin-a7906b104, vptaylo"
-  ],
-  [
-   "card wording as copy",
-   "campaign ×3",
    "«could review girths and lengths…»: elizabeth-gray-94237a106, jeffrey-scott-nasm-cpt-nasm-cnc-8b171447, kevin-j-custer-14a2b76"
   ],
   [
@@ -94,22 +554,22 @@
   [
    "card wording as copy",
    "campaign ×3",
-   "«height and where provided weight…»: greg-nuckols-92545595, lindsay-pontello, meganstaggoverton"
+   "«only what the member enters…»: greetingsmj, jake-grundstein, prasanna-swaminathan-6bbb4713"
   ],
   [
-   "card wording as copy",
+   "card question target as the question",
    "campaign ×3",
-   "«layer stays fixed to protect…»: deepakmm, nickcaldwell, rkekelis"
+   "«which screens around a fixed capture (onboarding, consent,…»: clarissa-woods-16a60b12, evie-mcquiston-2a417292, joncilley"
   ],
   [
-   "card wording as copy",
+   "card question target as the question",
    "campaign ×3",
-   "«links each record to the…»: chris-muir, john-ybarra-mba, zekebrustkern"
+   "«what a member sees at the first check-in today beyond weigh…»: allisonschloss, annakatedavis, jrafferty"
   ],
   [
-   "card wording as copy",
+   "card question target as the question",
    "campaign ×3",
-   "«the member app s progress…»: amartanna-cpa-ca, luanaperez, matt-lehrer-67664014"
+   "«what the team would need to see before body data shapes a p…»: greg-nuckols-92545595, jonanglee, meganstaggoverton"
   ],
   [
    "card question target as the question",
@@ -119,12 +579,32 @@
   [
    "card question target as the question",
    "campaign ×2",
-   "«what a member sees at the first check-in today beyond weigh…»: annakatedavis, jrafferty"
+   "«what trainers or members ask for most around progress»: jacob-wax-b2218295, kelsi-farmer-ba097a4b"
   ],
   [
    "card question target as the question",
    "campaign ×2",
-   "«what the team would need to see before body data shapes a p…»: greg-nuckols-92545595, meganstaggoverton"
+   "«how the app keeps progress photos or measurements now»: annafurr, renato-moratore-b3089b134"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«whether a scan belongs at onboarding or at the first check-…»: bfoncillas, greetingsmj"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«how often a program block is reviewed»: kevin-j-custer-14a2b76, rebeccayou"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«which screens around a fixed capture such as consent and re…»: clarissa-woods-16a60b12, evie-mcquiston-2a417292"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«in your view does a scan belong at onboarding or at the fir…»: bfoncillas, greetingsmj"
   ]
  ]
 }

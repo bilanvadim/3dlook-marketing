@@ -19,3 +19,18 @@ Written by `scripts/apollo-pull.py`. Credits are Apollo's own `credits_consumed`
 ## 2026-11-20 enrich → apollo-2026-11-20.csv
 - written 66, skipped 1, credits 67
   - skipped Pat Do***e: no LinkedIn URL
+
+## 2026-11-20 search
+- companies 7, seniority owner,founder,c_suite,partner,vp,head,director
+- candidates 38, other employer 0, already in Sales Nav 17
+
+## 2026-11-20 top-up selection (coordinator, Vadim «Так, 58 кредитів»)
+- Vadim asked whether 109 covers Sales Nav + Apollo for every company: Apollo had been enriched only for gaps (67). Top-up approved: Peloton persona rows and a seniority search for small companies.
+- The 67 enriched earlier are now status `enriched` (enrich charges every `candidate` row again otherwise).
+- Peloton: 42 of 59 `held-peloton` rows reopened (persona titles; design, marketing, quality, hardware, planning stay held).
+- Free seniority search (owner, founder, c_suite, partner, vp, head, director) for Hydrow, Trainwell, Ladder, Fitbod, TrueCoach, Exercise.com, Jefit via a scratch wrapper around cmd_search, merged by apollo_id: 47 new rows; off-persona titles held (marketing, supply chain, brand, creative, copywriting, growth, commercial, sales, support). TrueCoach 0 found; Fitbod 0 new.
+- To enrich: 58 (Peloton 42, Ladder 7, Hydrow 3, Trainwell 2, Exercise.com 2, Jefit 2).
+
+## 2026-11-20 enrich → apollo-2026-11-20-2.csv
+- written 57, skipped 1, credits 58
+  - skipped Jack Te***y: no LinkedIn URL

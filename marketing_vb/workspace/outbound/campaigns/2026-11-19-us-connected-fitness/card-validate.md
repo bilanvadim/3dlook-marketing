@@ -349,6 +349,29 @@ Recorded by the coordinator from Vadim's answers at the hypothesis checkpoint (A
 - **Segment approved as written** («Як запропонували»): connected-fitness hardware with a membership, coaching apps, coaching platforms for trainers, workout and fitness-nutrition subscriptions. Gym and studio chains stay out; marketplaces and corporate networks (Wellhub, ClassPass) stay out.
 - People who replied in 2026-08-07 (e.g. the iFIT Chief Subscription & Content Officer, "interested") are not re-messaged here; they go to Nick for a personal follow-up.
 
+### Vadim's decisions 2026-11-20 (step 4, pools)
+
+Recorded by the coordinator from Vadim's answer on 2026-11-20 (AskUserQuestion, after validation and QC 17/20). People came from Hlib's Sales Navigator sheet (a seniority pull, 305 rows) and 66 Apollo rows (67 credits, «67 кредитів»). 79 were SEND and the registry removed 64. Vadim took every pool offered:
+
+- **A: ABC Fitness, Trainerize not named (11).** These are product leaders (CPO, SVP and VP Product, 5 PM directors) and partnership owners (VP Partnerships, VP Corporate Development, Director Partner Solutions) at Trainerize's parent. They are the only US route to Trainerize: its own PMs are in Canada and Serbia. For this campaign only, the parent's product and partnership owners count as group C buyers even when the profile does not name Trainerize. Copy speaks to Trainerize and the trainers on it, never to ABC's club software (gyms stay out of the segment).
+- **B: customer-experience heads (5)**, angle `referral` (MyFitnessPal, Ergatta, Centr, Tonal, Fitbod). This settles the card's contradiction: a department head of CX or post-sales counts as a P3 referral; support staff below head level stay Not the buyer.
+- **C: Tonal Head Coaches (2)**, angle `coaching`. At Tonal, Head Coach counts as a program role even for on-camera coaches.
+- **D: Peloton strategy, program management and user research (7)**, angle `referral`.
+- **E: subscription growth and retention inside the subscription team (2)**, angle `membership` (Peloton, iFIT). Lifecycle and CRM marketing outside the subscription team stays out.
+- Pools F (hardware, R&D, commercial equipment), G (C-level over 500 staff), H (engineering) and I (DTC, retail, international) were not offered and stay out.
+- **WEAK rows (coordinator, under the 2026-11-19 «no stop at validate» rule):** Greg Nuckols goes to SEND, because his raw headline "Co-Owner of MacroFactor and Stronger By Science" confirms him (compact.csv had dropped it). The account-facts round web-checks the rest, and the confirmed ones are promoted: Ben Schultz, Emily Baldwin, Keith Kraker, Sarah Molhan, Heather Guymon, Jordan Annis, William Feroe, Nate Silva, Yi Chang, Rianita Ummah, Lisa Privitera and Jeff Laborde.
+- **Outcome of the account-facts round (2026-11-20, coordinator):** two were promoted. Keith Kraker is confirmed as Carbon co-founder on joincarbon.com (`leadership`, P3). Lisa Privitera owns the Echelon Coach program and is not on-camera talent (`coaching`, P2). Kelly Card was raised to P1: the Trainerize 2026 roadmap post (2026-01-18) names him SVP of Product at ABC Trainerize. The other ten stay REVIEW and are not sent:
+  - not found: Ben Schultz, Emily Baldwin, Sarah Molhan, Heather Guymon, William Feroe, Nate Silva, Yi Chang, Rianita Ummah;
+  - probably left: Jordan Annis;
+  - equipment side, not the app: Jeff Laborde.
+
+  109 SEND.
+- **Messages approved (Vadim 2026-11-20, «апрув по текстам»):** 109 pairs after QC r2 14/20 and the line-edit pass, gate 0 hard. On the same day: «і дослівно теж можна», so the same sentence for colleagues at one company is allowed too; the gate's "same sentence at one company" is a note now.
+- **Top-up after approval (Vadim 2026-11-20, «Так, 58 кредитів»):** Apollo was enriched for 57 more people: Peloton persona rows (42) and a seniority search (director+, founders) at Hydrow, Trainwell, Ladder, Fitbod, TrueCoach, Exercise.com and Jefit. They get the same persona and the same pools A–E rulings as the first 109. Peloton's cap stays 50.
+- **Engineering test (Vadim 2026-11-20, «Топ-інженери як тест»):** past campaigns got 1 reply from 90 engineers and 0 from 55 operations people (learnings PPL-3). Top engineering leaders of the member app or platform at IN companies are now a `referral` PASS marked TEST: CTO; VP, Head or Senior Director of Engineering; Director of Engineering for the app, mobile or platform. Each gets one technical question (what building a capture SDK into the app would take) and an easy out to the product owner. Hardware, firmware, IT, enterprise apps, data infrastructure and operations stay out.
+- **Repeats at one company (Vadim 2026-11-20):** «так а чого не можна повторів? якщо біль для цієї компанії і посади людини підходить то і можна повтор». The "about a fifth" ratio for pain targets, question targets, Message 2 value points, easy-out targets and the order of Message 1's parts is withdrawn: they may repeat when they fit each person's company and role. Only the wording stays each person's own (no twin sentences between colleagues).
+- **Messages QC 11/20 (2026-11-20), Vadim «Раунд правок»:** a fix round instead of a rewrite. The coordinator fixed one card error. The `product` lane's last question target used to ask what a white-label capture would have to match in the app's design. That contradicts the capture layer staying fixed, so it now asks which screens around a fixed capture (onboarding, consent, results) the team would want in its own brand. The gate gained three checks (Vadim: hard for no product name in Message 1 and for the same Message 2 sentence or body at two companies; soft for labels before a number or link and for British spelling in a US campaign).
+
 ### Open questions for Vadim
 
 Each open question carries the default the run follows until Vadim answers. Questions 1 to 6 and 9

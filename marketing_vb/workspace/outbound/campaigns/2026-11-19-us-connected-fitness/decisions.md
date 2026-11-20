@@ -100,7 +100,7 @@ andrea-buch | FAIL | | | | registry: already contacted from nick
 benjamingammon | FAIL | | | | registry: already contacted from nick
 joncilley | PASS | 2 | product | 1 | Director of Product Management at Peloton: the card's director-of-product tier; consumer product background, area unstated.
 laurencraig7 | FAIL | | | | parent payments VP
-ryan-mott-51660a11 | PASS | 3 | data | 1 | VP, Data Product at Ladder (headline; the title field said VP Product): data-product scope, so P3; Ladder's app VP Product is already in the registry.
+ryan-mott-51660a11 | PASS | 3 | product | 1 | VP, Data Product at Ladder (headline; the title field said VP Product): data-product scope, so P3; Ladder's app VP Product is already in the registry.
 bmaloley | PASS | 2 | leadership | 1 | Founder on Ladder's company page, a company well under 500 staff; identity to confirm in the account-facts round (Ladder fitness, not Ladder Life: his profile lists an insurance advisory seat); no app scope, so P2.
 asmakhancsm | FAIL | | | | program management, operations
 megmc | FAIL | | | | technical program management
@@ -350,3 +350,62 @@ bansal-nitin | PASS | 3 | product | 1 | Product Manager at Jefit, a small single
 gzxiaotongyang | FAIL | | | | product marketing analyst
 jrafferty | PASS | 1 | product | 1 | VP of Product at Centr (ex-VP Product at Zero, a health app): owns the member app.
 productobsessedlaura | PASS | 3 | product | 1 | Product Manager at Centr, promoted from APM: P3.
+
+# Top-up 2026-11-20 (57 Apollo rows; fresh validator, merged by the coordinator)
+ashlynmusillo | PASS | 2 | coaching | 1 | Senior Director of Programming and Fitness Development at Peloton who was Senior Director of Programming before, so she owns the classes and programs a member follows (P2 programming owner).
+juliannaslaten | PASS | 2 | coaching | 1 | Director of Programming at Peloton, promoted from programming manager roles there, so she owns the program schedule members train on (P2 programming owner).
+lauren-peters34 | PASS | 2 | product | 1 | Director of Product at Peloton and a Group PM there before, which puts her in the P2 tier; the profile names no member-app scope, so not P1.
+evie-mcquiston-2a417292 | PASS | 2 | product | 1 | Group PM for Platform Strategy and Consumer Systems who was earlier PM for the Music Platform and App, so a group PM with consumer-app scope (P2).
+renato-moratore-b3089b134 | PASS | 3 | product | 1 | Principal PM at Peloton, promoted from Lead and Senior PM there; the profile names no scope, so P3.
+mario-joseph-pasquino | PASS | 3 | product | 1 | Group PM for Commerce whose headline names conversion and subscription growth, a persona KPI; commerce scope keeps him at P3 per the tier.
+allisonschloss | PASS | 2 | product | 1 | Director of Product Management at Peloton, earlier Group and Senior PM there, so director of product (P2); no member-app scope is named, so not P1.
+david-shelton-b227b275 | FAIL | | | | apparel merchandising, retail product
+clarissa-woods-16a60b12 | PASS | 3 | product | 1 | Senior PM at Peloton who was Senior PM at Tempo before, a connected-fitness app; her Peloton scope is not named, so P3.
+miranda-cl-evans | PASS | 3 | product | 1 | Senior PM at Peloton whose background is order experience, so commerce-leaning scope (P3 per the tier).
+crystal-qin | PASS | 3 | product | 1 | Product at Peloton who was Director of Product at Daily Harvest; her current scope and level are not stated, so P3.
+ellaverhees | FAIL | | | | Precor commercial equipment PM
+bfoncillas | PASS | 3 | product | 1 | Senior PM at Peloton who was Head of Product at Breathwrk, a wellness app; her Peloton scope is not named, so P3.
+nolan-bishop | PASS | 3 | product | 1 | Senior PM at Peloton whose headline says he builds 0-to-1 software products in AI and IoT; scope unclear, possibly devices, so P3.
+jamie-han-4a722566 | FAIL | | | | supply chain IT PM
+emilygaffney | PASS | 2 | coaching | 1 | VP Content Programming and Operations at Peloton, earlier Global Senior Director of Programming, so she owns the programmed content members follow (P2).
+caitlin-borisjuk-20284723 | PASS | 3 | membership | 1 | Senior Director of Membership Strategy and Engagement: engagement inside the membership team is pool E (membership P3); her CRM and retention-marketing background keeps it at P3.
+kelsi-farmer-ba097a4b | PASS | 3 | product | 1 | Senior PM for eComm at Peloton: the tier puts commerce PMs at P3 as a product route-in.
+cteahan | FAIL | | | | PR, communications director
+irina-veligan | FAIL | | | | located in Poland (olena)
+michaelnortiz | PASS | 3 | coaching | 1 | Manager for Fitness Development, Content and Programming at Peloton: he sits in the programming team below head level, so P3 coaching.
+christie-nakajima | FAIL | | | | internal enterprise AI PM
+jamescarrozza | PASS | 3 | referral | 1 | SVP Global Operations and Member Experience, the head of Peloton's member-experience department (pool B CX head, referral P3); his headline is supply chain, so he is not a buyer.
+matthew-falcioni-73a76451 | FAIL | | | | product analytics, data science
+uclahill | PASS | 2 | coaching | 1 | SVP Global Content Strategy and Programming at Peloton, earlier VP Content Programming, so she owns the content and instructor programs members follow (P2).
+mattcolletta | WEAK | | | | Lead PM for Tablet and Display Systems, a hardware PM: the tier puts hardware PMs at P3, but pool F (hardware) stayed out, so this is Vadim's call.
+mollyhallahan | PASS | 3 | product | 1 | PM at Peloton who was Senior PM at Rita Health and Modern Health, both member-facing health apps; her Peloton scope is not named, so P3.
+tobyj | PASS | 3 | product | 1 | PM at Peloton who moved over from Member Engagement and Retention there; the product role is related but below senior, so P3.
+nimit-shah-b2b6a744 | PASS | 3 | product | 1 | Product at Peloton who was in Product at Facebook; scope and level are not stated, so P3.
+greetingsmj | PASS | 2 | product | 1 | Product at Peloton who was Senior PM for Onboarding and Membership there, the exact step where a check-in would sit (P2).
+jonanglee | PASS | 3 | product | 1 | PM at Peloton who came from TikTok product and content analytics; scope not named, so P3.
+jacquelyn-zaydel | PASS | 2 | product | 1 | PM for Workout Experience at Peloton who was Senior PM for Member Experience at Vida Health and a PM at WeightWatchers, so her scope is the in-app member experience (P2 on scope).
+maria-gutierrez-051769169 | FAIL | | | | social content, marketing
+margot-feeney-595335169 | FAIL | | | | product data science
+lindsay-spinabelli | WEAK | | | | Title says only Product and her previous role was Senior Web Content Manager at Peloton, so it could be member-app product or web content; the profile does not say.
+patricia-saubusse-7934b7a9 | FAIL | | | | located in UK (katerina)
+hilda-volkmann-22126b4 | FAIL | | | | hardware product lifecycle
+salvatorenicosia108 | FAIL | | | | studio lighting production
+rebeccayou | PASS | 3 | product | 1 | PM for Content Tooling and Studio Platform, which sits next to programming; the tier puts unrelated-scope PMs at P3, and she was earlier a core-product PM at Blue Apron.
+shirley-wang-9624abab | PASS | 3 | product | 1 | PM at Peloton who was a PM at Spotify, a consumer subscription app; her Peloton scope is not named, so P3.
+tracygevedon | WEAK | | | | PM by title, but her headline is business analyst and product owner for media asset management, an internal content IT system; IT is out for engineering and unclear for product.
+seung-jin-lee-0983643a | PASS | 3 | product | 1 | PM at Peloton who came up through Technical Relationship Manager and operations roles there; scope not named, so P3.
+christensenjenna | FAIL | | | | already contacted from nick
+francescashinhodler | FAIL | | | | located in UK, investor
+melissakoda | FAIL | | | | already contacted from nick
+matt-spettel | FAIL | | | | already contacted from nick
+john-lague | FAIL | | | | already contacted from nick
+david-tondreau | FAIL | | | | name collision: YC W25 Ladder
+tom-digan-b1068b20 | FAIL | | | | already contacted from nick
+willcray | FAIL | | | | name collision: YC W25 Ladder
+william-mathews-90513419a | FAIL | | | | collision, UK estate-agency AI
+%e9%97%95-%e5%ad%9f%e5%90%89-98ab4333 | FAIL | | | | located in China, empty
+nicholas-ladder-42a02043a | WEAK | | | | Founder and CEO of a small app would be P1 leadership, but the profile is empty and his surname is the company name, a likely collision or junk account; confirm by web before sending.
+math-master5-a9a01b338 | WEAK | | | | Bare Head title with an empty profile (coordinator rule: WEAK); the account name reads like a placeholder, so drop unless the web check confirms a real person.
+philip-morton | PASS | 3 | referral | 1 | Director of Customer Success at Exercise.com, the post-sales department head of a group C platform (pool B CX head, referral P3).
+sarah-miller-5960a690 | PASS | 3 | coaching | 1 | Director of Trainer Success at Exercise.com is the card's group C coach-success lead (coaching lane); her headline is a stale student line and shows no scope, so P3 not P2.
+ying-lin-49145027 | WEAK | | | | Founder and CEO of Jefit, a small app, so in persona as leadership, but the profile is empty, so a second confirmation is needed before PASS.

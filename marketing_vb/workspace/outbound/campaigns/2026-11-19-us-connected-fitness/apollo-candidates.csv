@@ -3,179 +3,179 @@ apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,l
 672780f587dc260001115d10,Meg,Hi***s,VP of Product,Peloton Interactive,onepeloton.com,Peloton,2026-11-10T06:49:47.000+00:00,in-sales-nav
 66f69a7645593400015910f5,Billy,Ki***y,"VP, Product Design",Peloton Interactive,onepeloton.com,Peloton,2026-11-11T20:01:15.000+00:00,held-peloton
 60e85f4d9ad52200011e8414,Mingbo,Zh***o,Vice President of Product Development,Peloton Interactive,onepeloton.com,Peloton,2026-10-21T03:44:51.000+00:00,in-sales-nav
-6728b553e23c2300017ed9b6,Ashlyn,Mu***o,"Senior Director, Programming & Fitness Development",Peloton Interactive,onepeloton.com,Peloton,2026-11-11T10:16:32.000+00:00,held-peloton
-64cc9f681ee72e00017d5a66,Julianna,Sl***n,"Director, Programming",Peloton Interactive,onepeloton.com,Peloton,2026-11-10T09:07:55.000+00:00,held-peloton
-6558ec5673d9ed0001c8d5df,Lauren,Pe***s,Director of Product,Peloton Interactive,onepeloton.com,Peloton,2026-11-16T10:30:34.023+00:00,held-peloton
-66fdab057a4c220001eca4c3,Evie,Mc***n,Group Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-02T15:19:57.170+00:00,held-peloton
+6728b553e23c2300017ed9b6,Ashlyn,Mu***o,"Senior Director, Programming & Fitness Development",Peloton Interactive,onepeloton.com,Peloton,2026-11-11T10:16:32.000+00:00,enriched
+64cc9f681ee72e00017d5a66,Julianna,Sl***n,"Director, Programming",Peloton Interactive,onepeloton.com,Peloton,2026-11-10T09:07:55.000+00:00,enriched
+6558ec5673d9ed0001c8d5df,Lauren,Pe***s,Director of Product,Peloton Interactive,onepeloton.com,Peloton,2026-11-16T10:30:34.023+00:00,enriched
+66fdab057a4c220001eca4c3,Evie,Mc***n,Group Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-02T15:19:57.170+00:00,enriched
 667cff6c7ed46b0001e1554d,Justin,Ru***e,"Senior Director, Partnerships Marketing",Peloton Interactive,onepeloton.com,Peloton,2026-11-10T04:18:47.000+00:00,held-peloton
 610b32ea00a185000177ebb0,Nick,Ca***l,Chief Product Officer,Peloton Interactive,onepeloton.com,Peloton,2026-11-10T07:17:18.000+00:00,in-sales-nav
-66fa9d0fbd0c94000152f5e2,Renato,Mo***e,Principal Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-02T09:04:08.000+00:00,held-peloton
+66fa9d0fbd0c94000152f5e2,Renato,Mo***e,Principal Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-02T09:04:08.000+00:00,enriched
 66ab54e1de3ccc000198bf3e,Ben,Sc***z,Director of Product Management,Peloton Interactive,onepeloton.com,Peloton,2026-11-05T15:22:24.000+00:00,in-sales-nav
-60ed7d422d151100013d46f6,Mario,Pa***o,"Group Product Manager, Commerce",Peloton Interactive,onepeloton.com,Peloton,2026-11-12T06:09:43.000+00:00,held-peloton
+60ed7d422d151100013d46f6,Mario,Pa***o,"Group Product Manager, Commerce",Peloton Interactive,onepeloton.com,Peloton,2026-11-12T06:09:43.000+00:00,enriched
 5aa5fa9ba6da98fe416665c7,Ben,Tan,"Director, Product Quality",Peloton Interactive,onepeloton.com,Peloton,2026-10-22T20:40:08.000+00:00,held-peloton
 60b55b6846ad0b00019931c5,Cole,Sh***y,Director of Product Management,Peloton Interactive,onepeloton.com,Peloton,2026-11-12T09:58:36.000+00:00,in-sales-nav
-66f6f23e6ff7440001b453c3,Allison,Sc***s,Director of Product Management,Peloton Interactive,onepeloton.com,Peloton,2026-11-11T20:15:30.000+00:00,held-peloton
+66f6f23e6ff7440001b453c3,Allison,Sc***s,Director of Product Management,Peloton Interactive,onepeloton.com,Peloton,2026-11-11T20:15:30.000+00:00,enriched
 5f70f8cf8154c80001f414a5,Jon,Ci***y,"Director, Product Management",Peloton Interactive,onepeloton.com,Peloton,2026-11-01T20:54:47.000+00:00,in-sales-nav
 54a9050a74686930adf5250a,Nick,Br***r,Director of Product Design,Peloton Interactive,onepeloton.com,Peloton,2026-11-05T12:59:39.000+00:00,held-peloton
 66ff713293a36500012e5890,Sean,Gr***m,"Director, Product & Design (Content)",Peloton Interactive,onepeloton.com,Peloton,2026-11-05T13:27:26.000+00:00,held-peloton
-60a63f6ba5fe2200014c2fda,David,Sh***n,Director of Product - Apparel & Accessories,Peloton Interactive,onepeloton.com,Peloton,2026-11-10T08:13:21.000+00:00,held-peloton
+60a63f6ba5fe2200014c2fda,David,Sh***n,Director of Product - Apparel & Accessories,Peloton Interactive,onepeloton.com,Peloton,2026-11-10T08:13:21.000+00:00,enriched
 66ff525693a365000125214a,Joeli,Sp***r,"Director, Strategic Partnerships",Peloton Interactive,onepeloton.com,Peloton,2026-11-06T09:30:46.106+00:00,in-sales-nav
 66faf34702cfe100014c6e65,Samantha,Yeh,Global Director of Product Marketing,Peloton Interactive,onepeloton.com,Peloton,2026-11-12T08:02:53.000+00:00,held-peloton
 66f179fdb42ec0000158ec05,Joseph,Sa***i,"Director, Product Line Architecture",Peloton Interactive,onepeloton.com,Peloton,2026-11-04T05:45:35.000+00:00,in-sales-nav
-61e8f9406327690001830091,Clarissa,Wo***s,Senior Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-15T04:32:06.196+00:00,held-peloton
+61e8f9406327690001830091,Clarissa,Wo***s,Senior Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-15T04:32:06.196+00:00,enriched
 6879cfd25eeef10001e1d4fd,Chris,Ti***n,"Senior Director, Product Marketing",Peloton Interactive,onepeloton.com,Peloton,2026-11-01T04:20:02.000+00:00,held-peloton
 54a766397468696de718f530,Minqaad,Ra***a,"Director, Product Safety & Regulatory",Peloton Interactive,onepeloton.com,Peloton,2026-11-12T08:59:19.000+00:00,held-peloton
-66fc23c8f3686a00011e918a,Miranda,Ev***s,Senior Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-07T14:47:32.000+00:00,held-peloton
-65587a78ac47fb00019dd994,Crystal,Qin,Senior Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-08T18:21:48.000+00:00,held-peloton
-5e8c2cde2c63e40001c1e0ee,Ella,Ve***s,Senior Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-10T06:45:39.000+00:00,held-peloton
-6a9f9cb38018810001b6f3d7,Blanca,Fo***s,Senior Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-05T20:28:15.000+00:00,held-peloton
+66fc23c8f3686a00011e918a,Miranda,Ev***s,Senior Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-07T14:47:32.000+00:00,enriched
+65587a78ac47fb00019dd994,Crystal,Qin,Senior Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-08T18:21:48.000+00:00,enriched
+5e8c2cde2c63e40001c1e0ee,Ella,Ve***s,Senior Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-10T06:45:39.000+00:00,enriched
+6a9f9cb38018810001b6f3d7,Blanca,Fo***s,Senior Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-05T20:28:15.000+00:00,enriched
 673719104278330001f2cf13,Philip,Br***n,"Legal Director, Product Safety",Peloton Interactive,onepeloton.com,Peloton,2026-10-20T06:09:03.000+00:00,held-peloton
-5b891128324d44733ede2eb5,Nolan,Bi***p,Senior Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-08T06:10:46.000+00:00,held-peloton
-610cc5c54ae2f70001b8b282,Jamie,Han,Senior Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-07T14:09:10.949+00:00,held-peloton
-54aac02874686908c8f36217,Emily,Ga***y,"Vice President, Content Programming & Operations",Peloton Interactive,onepeloton.com,Peloton,2026-11-12T07:53:49.000+00:00,held-peloton
-67c70f8dbf1aa0000184bdaf,Caitlin,Bo***k,"Senior Director, Membership Strategy and Engagement",Peloton Interactive,onepeloton.com,Peloton,2026-11-05T17:26:04.000+00:00,held-peloton
-66f722b5ee7394000121aee7,Kelsi,Fa***r,"Senior Product Manager, eComm",Peloton Interactive,onepeloton.com,Peloton,2026-11-16T10:03:48.067+00:00,held-peloton
+5b891128324d44733ede2eb5,Nolan,Bi***p,Senior Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-08T06:10:46.000+00:00,enriched
+610cc5c54ae2f70001b8b282,Jamie,Han,Senior Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-07T14:09:10.949+00:00,enriched
+54aac02874686908c8f36217,Emily,Ga***y,"Vice President, Content Programming & Operations",Peloton Interactive,onepeloton.com,Peloton,2026-11-12T07:53:49.000+00:00,enriched
+67c70f8dbf1aa0000184bdaf,Caitlin,Bo***k,"Senior Director, Membership Strategy and Engagement",Peloton Interactive,onepeloton.com,Peloton,2026-11-05T17:26:04.000+00:00,enriched
+66f722b5ee7394000121aee7,Kelsi,Fa***r,"Senior Product Manager, eComm",Peloton Interactive,onepeloton.com,Peloton,2026-11-16T10:03:48.067+00:00,enriched
 5f53cdb529bf960001873efb,Peter,Se***o,Senior Software Quality & Release Readiness Lead — Fitness Programming & Music Platform,Peloton Interactive,onepeloton.com,Peloton,2026-10-08T04:01:03.000+00:00,held-peloton
-55708db273696425fab71000,Caitlin,Te***n,"Senior Director, Product, Technology & Innovation Communications",Peloton Interactive,onepeloton.com,Peloton,2026-10-10T17:23:39.000+00:00,held-peloton
+55708db273696425fab71000,Caitlin,Te***n,"Senior Director, Product, Technology & Innovation Communications",Peloton Interactive,onepeloton.com,Peloton,2026-10-10T17:23:39.000+00:00,enriched
 66fc69d0de6cae000180e016,Kathryn,Hu***y,Senior Legal Managing Director (Product & Commercial),Peloton Interactive,onepeloton.com,Peloton,2026-11-11T14:30:25.000+00:00,held-peloton
-60a2405ed9b249000105d53f,Irina,Ve***n,"Senior Product Manager, E-commerce",Peloton Interactive,onepeloton.com,Peloton,2026-11-07T15:28:09.000+00:00,held-peloton
-5b22b707a6da9878de9f09b2,Michael,Or***z,"Fitness Development, Content & Programming",Peloton Interactive,onepeloton.com,Peloton,2026-11-04T20:25:09.000+00:00,held-peloton
-66fdf6d75e0d170001e830ac,Christie,Na***a,"Senior Product Manager, Enterprise AI",Peloton Interactive,onepeloton.com,Peloton,2026-11-11T09:45:34.000+00:00,held-peloton
+60a2405ed9b249000105d53f,Irina,Ve***n,"Senior Product Manager, E-commerce",Peloton Interactive,onepeloton.com,Peloton,2026-11-07T15:28:09.000+00:00,enriched
+5b22b707a6da9878de9f09b2,Michael,Or***z,"Fitness Development, Content & Programming",Peloton Interactive,onepeloton.com,Peloton,2026-11-04T20:25:09.000+00:00,enriched
+66fdf6d75e0d170001e830ac,Christie,Na***a,"Senior Product Manager, Enterprise AI",Peloton Interactive,onepeloton.com,Peloton,2026-11-11T09:45:34.000+00:00,enriched
 66ff654893a36500012ab1d9,Brad,Fa***n,"VP, Global Head of Strategic Partnerships & Corporate Development",Peloton Interactive,onepeloton.com,Peloton,2026-11-12T03:48:34.000+00:00,in-sales-nav
 66f363fc775fc90001874c98,Steven,Ba***a,"Director, Global Lifecycle Marketing: Personalization & Agentic",Peloton Interactive,onepeloton.com,Peloton,2026-11-12T10:04:25.000+00:00,held-peloton
-66ff697593a36500012c069d,James,Ca***a,"SVP, Global Operations & Member Experience",Peloton Interactive,onepeloton.com,Peloton,2026-11-16T14:06:21.062+00:00,held-peloton
+66ff697593a36500012c069d,James,Ca***a,"SVP, Global Operations & Member Experience",Peloton Interactive,onepeloton.com,Peloton,2026-11-16T14:06:21.062+00:00,enriched
 57e01359a6da980add365d0b,Molly,Du***s,Senior Hardware Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-05T10:27:38.000+00:00,held-peloton
 5baf3737324d44cafd311109,Beth,We***t,"Director, User Research - Connected Fitness",Peloton Interactive,onepeloton.com,Peloton,2026-11-11T07:20:12.000+00:00,in-sales-nav
-5fa47dc8ea38ab0001f43b0f,Matthew,Fa***i,Senior Manager Product Analytics,Peloton Interactive,onepeloton.com,Peloton,2026-10-29T13:22:27.000+00:00,held-peloton
+5fa47dc8ea38ab0001f43b0f,Matthew,Fa***i,Senior Manager Product Analytics,Peloton Interactive,onepeloton.com,Peloton,2026-10-29T13:22:27.000+00:00,enriched
 54a5d70a74686938acf80ead,Dana,Ho***y,Senior Manager Product Design,Peloton Interactive,onepeloton.com,Peloton,2026-11-11T11:38:26.142+00:00,held-peloton
 62185b1920e48c0001a36e00,Kat,Ho***r,"Senior Manager, Product Design",Peloton Interactive,onepeloton.com,Peloton,2026-11-04T16:57:05.000+00:00,held-peloton
 60104b962ef7a90001d32076,Eduarda,Sa***r,"Senior Manager, Global Product Marketing",Peloton Interactive,onepeloton.com,Peloton,2026-11-12T09:57:53.000+00:00,held-peloton
 54a9be29746869334abbcc18,Mark,Ma***g,"Sr. Manager, Product Operations and Quality",Peloton Interactive,onepeloton.com,Peloton,2026-11-05T08:03:54.000+00:00,held-peloton
-66f6ee7a6ff7440001b333b0,Amanda,Hi***l,"Senior Vice President, Global Content Strategy & Programming",Peloton Interactive,onepeloton.com,Peloton,2026-11-07T06:43:14.000+00:00,held-peloton
-66ada1f9615d900001333039,Matt,Co***a,"Lead Product Manager, Tablet and Display Systems",Peloton Interactive,onepeloton.com,Peloton,2026-11-11T13:29:38.198+00:00,held-peloton
-55714c377369642c29c75200,Molly,Ha***n,Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-10T18:50:21.000+00:00,held-peloton
-66fc0ca50d08c300013617d0,Toby,Jo***s,Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-17T19:56:57.964+00:00,held-peloton
-5aa5437fa6da986c5ce14c56,Nimit,Sh***h,Product,Peloton Interactive,onepeloton.com,Peloton,2026-11-12T05:46:15.727+00:00,held-peloton
-658e65b328d1c10001c78f93,MJ,Kim,Product,Peloton Interactive,onepeloton.com,Peloton,2026-11-10T23:45:54.117+00:00,held-peloton
-66f6da9b8c553300012ec0f1,Jonathan,Lee,Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-05T16:21:09.000+00:00,held-peloton
-66ff911404dd81000189c6f2,Jacquelyn,Za***l,"Product Manager, Workout Experience",Peloton Interactive,onepeloton.com,Peloton,2026-11-01T12:27:54.833+00:00,held-peloton
-60a2ac44a9f9270001080b95,Maria,Gu***z,Social Content Manager,Peloton Interactive,onepeloton.com,Peloton,2026-10-30T19:03:23.000+00:00,held-peloton
-5e6d2e01fc61490001b41e9f,Margot,Fe***y,Product Data Science,Peloton Interactive,onepeloton.com,Peloton,2026-10-29T13:06:23.574+00:00,held-peloton
-57d4bfc8a6da9853a66317ea,Lindsay,Sp***i,Product,Peloton Interactive,onepeloton.com,Peloton,2026-11-04T21:28:08.851+00:00,held-peloton
-66f8561c7a9fc200011b6769,Patricia,Sa***e,Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-10-23T11:09:26.000+00:00,held-peloton
-66fc5fc7c4d98c0001839cb0,Hilda,Vo***n,Product Lifecycle Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-15T15:32:25.123+00:00,held-peloton
-646f70a0b98a1400019f87d1,Salvatore,Ni***a,Lighting Content Manager,Peloton Interactive,onepeloton.com,Peloton,2026-10-31T16:30:57.000+00:00,held-peloton
-66faa892bd0c94000155cc6e,Rebecca,You,"Product Manager, Content Tooling & Studio Platform",Peloton Interactive,onepeloton.com,Peloton,2026-11-05T12:40:53.000+00:00,held-peloton
-5c35831080f93eaf8100281d,Shirley,Wa***g,Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-10-01T03:14:24.000+00:00,held-peloton
-66fc18060d08c3000139b1a1,Tracy,Ge***n,Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-08T17:42:50.000+00:00,held-peloton
-57d3df83a6da9853def23741,Seung,Lee,Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-11T04:12:14.000+00:00,held-peloton
+66f6ee7a6ff7440001b333b0,Amanda,Hi***l,"Senior Vice President, Global Content Strategy & Programming",Peloton Interactive,onepeloton.com,Peloton,2026-11-07T06:43:14.000+00:00,enriched
+66ada1f9615d900001333039,Matt,Co***a,"Lead Product Manager, Tablet and Display Systems",Peloton Interactive,onepeloton.com,Peloton,2026-11-11T13:29:38.198+00:00,enriched
+55714c377369642c29c75200,Molly,Ha***n,Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-10T18:50:21.000+00:00,enriched
+66fc0ca50d08c300013617d0,Toby,Jo***s,Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-17T19:56:57.964+00:00,enriched
+5aa5437fa6da986c5ce14c56,Nimit,Sh***h,Product,Peloton Interactive,onepeloton.com,Peloton,2026-11-12T05:46:15.727+00:00,enriched
+658e65b328d1c10001c78f93,MJ,Kim,Product,Peloton Interactive,onepeloton.com,Peloton,2026-11-10T23:45:54.117+00:00,enriched
+66f6da9b8c553300012ec0f1,Jonathan,Lee,Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-05T16:21:09.000+00:00,enriched
+66ff911404dd81000189c6f2,Jacquelyn,Za***l,"Product Manager, Workout Experience",Peloton Interactive,onepeloton.com,Peloton,2026-11-01T12:27:54.833+00:00,enriched
+60a2ac44a9f9270001080b95,Maria,Gu***z,Social Content Manager,Peloton Interactive,onepeloton.com,Peloton,2026-10-30T19:03:23.000+00:00,enriched
+5e6d2e01fc61490001b41e9f,Margot,Fe***y,Product Data Science,Peloton Interactive,onepeloton.com,Peloton,2026-10-29T13:06:23.574+00:00,enriched
+57d4bfc8a6da9853a66317ea,Lindsay,Sp***i,Product,Peloton Interactive,onepeloton.com,Peloton,2026-11-04T21:28:08.851+00:00,enriched
+66f8561c7a9fc200011b6769,Patricia,Sa***e,Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-10-23T11:09:26.000+00:00,enriched
+66fc5fc7c4d98c0001839cb0,Hilda,Vo***n,Product Lifecycle Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-15T15:32:25.123+00:00,enriched
+646f70a0b98a1400019f87d1,Salvatore,Ni***a,Lighting Content Manager,Peloton Interactive,onepeloton.com,Peloton,2026-10-31T16:30:57.000+00:00,enriched
+66faa892bd0c94000155cc6e,Rebecca,You,"Product Manager, Content Tooling & Studio Platform",Peloton Interactive,onepeloton.com,Peloton,2026-11-05T12:40:53.000+00:00,enriched
+5c35831080f93eaf8100281d,Shirley,Wa***g,Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-10-01T03:14:24.000+00:00,enriched
+66fc18060d08c3000139b1a1,Tracy,Ge***n,Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-08T17:42:50.000+00:00,enriched
+57d3df83a6da9853def23741,Seung,Lee,Product Manager,Peloton Interactive,onepeloton.com,Peloton,2026-11-11T04:12:14.000+00:00,enriched
 640e8dca110d5700018f856a,Kurtis,Ho***r,"Senior Vice President, Product Development",iFIT,ifit.com,iFIT,2026-11-19T00:33:47.410+00:00,in-sales-nav
 54a53dc17468692fa296bc88,Michelle,Ga***o,"Vice President, Product Management",iFIT,ifit.com,iFIT,2026-10-30T01:41:38.974+00:00,in-sales-nav
-63b46c131145b10001a6f3a0,Danielle,Pe***p,"Subscription Retention Manager, Onboarding & Engagement",iFIT,ifit.com,iFIT,2026-11-03T06:51:09.000+00:00,candidate
-66dda9846c68a40001f6c6e6,Danae,Hi***h,"Director, Product Partnerships",iFIT,ifit.com,iFIT,2026-11-11T21:12:12.000+00:00,candidate
-685772b64374730001358de2,Emily,Pa***s,Head of Content Programming,iFIT,ifit.com,iFIT,2026-11-05T22:26:03.529+00:00,candidate
-54a6edee746869705a4c5305,Heather,Gu***n,Manager of Fitness Programming,iFIT,ifit.com,iFIT,2026-09-30T17:01:38.000+00:00,candidate
+63b46c131145b10001a6f3a0,Danielle,Pe***p,"Subscription Retention Manager, Onboarding & Engagement",iFIT,ifit.com,iFIT,2026-11-03T06:51:09.000+00:00,enriched
+66dda9846c68a40001f6c6e6,Danae,Hi***h,"Director, Product Partnerships",iFIT,ifit.com,iFIT,2026-11-11T21:12:12.000+00:00,enriched
+685772b64374730001358de2,Emily,Pa***s,Head of Content Programming,iFIT,ifit.com,iFIT,2026-11-05T22:26:03.529+00:00,enriched
+54a6edee746869705a4c5305,Heather,Gu***n,Manager of Fitness Programming,iFIT,ifit.com,iFIT,2026-09-30T17:01:38.000+00:00,enriched
 673ad94998e40f0001e8b990,John,Ga***r,Sports Marketing Partnerships Director,iFIT,ifit.com,iFIT,2026-10-29T08:19:24.000+00:00,held-off-persona
 677947cbdff9c500019e948f,Keith,Ha***d,Chief Product Officer,iFIT,ifit.com,iFIT,2026-11-06T21:20:30.800+00:00,in-sales-nav
 604c03b1d905730001473370,Mike,Ma***n,Director of Product Marketing,iFIT,ifit.com,iFIT,2026-10-24T19:00:42.000+00:00,held-off-persona
 57e08ccba6da981c29dc677a,Laurel,Je***n,Director of Product Safety,iFIT,ifit.com,iFIT,2026-11-04T21:59:53.000+00:00,held-off-persona
 66f0fcfe2016e200014641d8,Yvette,Mc***n,"Director of Product Marketing, Pilates",iFIT,ifit.com,iFIT,2026-11-11T21:27:47.000+00:00,held-off-persona
-5b3c9dfea6da98a0a41757a9,Shayne,Je***p,Senior Product Manager,iFIT,ifit.com,iFIT,2026-10-22T11:11:35.000+00:00,candidate
-66fcc5177fa64100015bf528,Cristal,Be***m,Commercial Senior Product Manager,iFIT,ifit.com,iFIT,2026-11-09T12:20:49.000+00:00,candidate
-54a5ba3d74686938ac8973a3,Natalie,Ve***a,"SR Director, Product Management at iFIT",iFIT,ifit.com,iFIT,2026-10-03T05:32:38.000+00:00,candidate
-54a6ec0f74686975f8d39904,Kaitlyn,Mc***e,Director of Content & Product Strategy,iFIT,ifit.com,iFIT,2026-11-01T22:20:34.000+00:00,candidate
+5b3c9dfea6da98a0a41757a9,Shayne,Je***p,Senior Product Manager,iFIT,ifit.com,iFIT,2026-10-22T11:11:35.000+00:00,enriched
+66fcc5177fa64100015bf528,Cristal,Be***m,Commercial Senior Product Manager,iFIT,ifit.com,iFIT,2026-11-09T12:20:49.000+00:00,enriched
+54a5ba3d74686938ac8973a3,Natalie,Ve***a,"SR Director, Product Management at iFIT",iFIT,ifit.com,iFIT,2026-10-03T05:32:38.000+00:00,enriched
+54a6ec0f74686975f8d39904,Kaitlyn,Mc***e,Director of Content & Product Strategy,iFIT,ifit.com,iFIT,2026-11-01T22:20:34.000+00:00,enriched
 59dc8fc2a6da9819feb3db3a,Anthony,Fr***o,"Director, FP&A - Product and Operations",iFIT,ifit.com,iFIT,2026-11-05T15:47:49.000+00:00,held-off-persona
-652ee8eaff051e00019ba542,Janie,Go***k,Senior Director of Software Product Management,iFIT,ifit.com,iFIT,2026-10-22T22:30:17.000+00:00,candidate
+652ee8eaff051e00019ba542,Janie,Go***k,Senior Director of Software Product Management,iFIT,ifit.com,iFIT,2026-10-22T22:30:17.000+00:00,enriched
 6108c0e0a62da70001075525,Emily,Gl***r,"Sr. Director of DTC, Digital Product & Site Merchandising",iFIT,ifit.com,iFIT,2026-11-05T09:12:35.000+00:00,held-off-persona
 54a456ac74686934425cc43f,Adam,Gu***r,"Vice President of Sales Freemotion Fitness, North America",iFIT,ifit.com,iFIT,2026-11-05T16:46:50.000+00:00,held-off-persona
 5d4e9142a3ae6185237ebc4e,Chris,M,"Sr. Vice President of Global Sales Freemotion Fitness, a Division of iFit Health and Fitness",iFIT,ifit.com,iFIT,2026-11-05T05:52:13.000+00:00,held-off-persona
-57d6a0fca6da98541129d96d,Teresa,Fr***s,Senior International Product Manager – iFIT (NordicTrack & ProForm),iFIT,ifit.com,iFIT,2026-10-23T08:41:00.000+00:00,candidate
+57d6a0fca6da98541129d96d,Teresa,Fr***s,Senior International Product Manager – iFIT (NordicTrack & ProForm),iFIT,ifit.com,iFIT,2026-10-23T08:41:00.000+00:00,enriched
 6729ee7bb4654300010680a6,Gary,We***s,"Senior Vice President, Hardware Product Development",iFIT,ifit.com,iFIT,2026-10-22T16:43:11.000+00:00,held-off-persona
 64a83a15054b6a000159971d,Pilar,Lo***z,KAM iFIT/ NodricTrack Mexico,iFIT,ifit.com,iFIT,2026-11-03T15:59:21.000+00:00,held-off-persona
-66fd8ab1100e9d0001da6d55,Emily,Ba***n,Subscription Partnerships,iFIT,ifit.com,iFIT,2026-11-19T18:42:46.991+00:00,candidate
+66fd8ab1100e9d0001da6d55,Emily,Ba***n,Subscription Partnerships,iFIT,ifit.com,iFIT,2026-11-19T18:42:46.991+00:00,enriched
 613a23800355aa0001694c0c,David,Ha***s,Certified Product Manager,iFIT,ifit.com,iFIT,2026-11-13T23:04:10.027+00:00,in-sales-nav
 57d7351ca6da9864b0225770,Katherine,Ga***r,Subscription Winback Manager,iFIT,ifit.com,iFIT,2026-11-16T01:30:13.820+00:00,held-off-persona
-610462fa38dcd500015d2196,Sarah,Mi***s,Product Manager,iFIT,ifit.com,iFIT,2026-11-07T22:07:24.000+00:00,candidate
-613ae856108b3d000117fb8d,Robert,Wi***n,Content Manager,iFIT,ifit.com,iFIT,2026-10-25T16:14:20.000+00:00,candidate
-54a2bffe7468693825f2913a,Jordan,An***s,Product Manager,iFIT,ifit.com,iFIT,2026-10-22T17:28:06.000+00:00,candidate
-5639cfaaa6da983e9a00a95e,Mike,Ca***e,Product Manager,iFIT,ifit.com,iFIT,2026-11-07T15:33:14.000+00:00,candidate
-54a2f3827468692e71e74049,Maureen,Key,Senior Fitness Programming Specialist,Tonal,tonal.com,Tonal,2026-11-07T18:20:51.000+00:00,candidate
-54a2b4137468693fdaa2aa36,Molly,Ri***k,"Vice President, Content",Tonal,tonal.com,Tonal,2026-11-02T23:32:15.000+00:00,candidate
-5570905a73696425f2f22b00,Joe,Ro***s,Head Coach,Tonal,tonal.com,Tonal,2026-11-11T17:41:15.000+00:00,candidate
-54a60d327468692cf0cf0bbe,Tanysha,Sm***h,Head Coach,Tonal,tonal.com,Tonal,2026-11-05T08:52:14.135+00:00,candidate
-60b698a44d9eff0001fa3e76,Jonathan,Sh***n,Chief Product and Content Officer,Tonal,tonal.com,Tonal,2026-11-12T10:28:35.000+00:00,candidate
-60f00424c4f5560001c9f62e,Zach,Le***s,"Senior Director of Product, Software",Tonal,tonal.com,Tonal,2026-11-05T19:35:21.000+00:00,candidate
-67a940ccdaedd30001121252,Jenna,Mo***e,"Director, Performance (Programming) & Talent",Tonal,tonal.com,Tonal,2026-11-09T23:39:24.000+00:00,candidate
+610462fa38dcd500015d2196,Sarah,Mi***s,Product Manager,iFIT,ifit.com,iFIT,2026-11-07T22:07:24.000+00:00,enriched
+613ae856108b3d000117fb8d,Robert,Wi***n,Content Manager,iFIT,ifit.com,iFIT,2026-10-25T16:14:20.000+00:00,enriched
+54a2bffe7468693825f2913a,Jordan,An***s,Product Manager,iFIT,ifit.com,iFIT,2026-10-22T17:28:06.000+00:00,enriched
+5639cfaaa6da983e9a00a95e,Mike,Ca***e,Product Manager,iFIT,ifit.com,iFIT,2026-11-07T15:33:14.000+00:00,enriched
+54a2f3827468692e71e74049,Maureen,Key,Senior Fitness Programming Specialist,Tonal,tonal.com,Tonal,2026-11-07T18:20:51.000+00:00,enriched
+54a2b4137468693fdaa2aa36,Molly,Ri***k,"Vice President, Content",Tonal,tonal.com,Tonal,2026-11-02T23:32:15.000+00:00,enriched
+5570905a73696425f2f22b00,Joe,Ro***s,Head Coach,Tonal,tonal.com,Tonal,2026-11-11T17:41:15.000+00:00,enriched
+54a60d327468692cf0cf0bbe,Tanysha,Sm***h,Head Coach,Tonal,tonal.com,Tonal,2026-11-05T08:52:14.135+00:00,enriched
+60b698a44d9eff0001fa3e76,Jonathan,Sh***n,Chief Product and Content Officer,Tonal,tonal.com,Tonal,2026-11-12T10:28:35.000+00:00,enriched
+60f00424c4f5560001c9f62e,Zach,Le***s,"Senior Director of Product, Software",Tonal,tonal.com,Tonal,2026-11-05T19:35:21.000+00:00,enriched
+67a940ccdaedd30001121252,Jenna,Mo***e,"Director, Performance (Programming) & Talent",Tonal,tonal.com,Tonal,2026-11-09T23:39:24.000+00:00,enriched
 67b960931548230001189b6f,Maddie,Ka***n,"Senior Manager, Product Marketing",Tonal,tonal.com,Tonal,2026-11-09T20:00:48.000+00:00,held-off-persona
-55dbce9bf3e5bb2f00000d96,Brooke,Sa***n,Staff Product Manager,Tonal,tonal.com,Tonal,2026-10-27T18:03:26.800+00:00,candidate
+55dbce9bf3e5bb2f00000d96,Brooke,Sa***n,Staff Product Manager,Tonal,tonal.com,Tonal,2026-10-27T18:03:26.800+00:00,enriched
 5dc49ab9c1f4a00001aabe11,Humberto,He***z,Product Quality Manager,Tonal,tonal.com,Tonal,2026-10-31T00:55:11.000+00:00,held-off-persona
-66445b075056e5000175b799,Anna,Fu***r,Staff Product Manager,Tonal,tonal.com,Tonal,2026-11-10T23:28:17.000+00:00,candidate
+66445b075056e5000175b799,Anna,Fu***r,Staff Product Manager,Tonal,tonal.com,Tonal,2026-11-10T23:28:17.000+00:00,enriched
 60c6b88bdacc4f000176902b,Lauren,Si***i,Director of Product Management,"Hydrow, Inc.",hydrow.com,Hydrow,2026-10-12T22:49:05.000+00:00,in-sales-nav
 66f619cf6b154900011a3812,Kathleen,De***g,Director of Product Marketing,"Hydrow, Inc.",hydrow.com,Hydrow,2026-10-10T05:22:30.000+00:00,held-off-persona
 5f9b496d0b510100015109c8,William,Fe***e,"Vice President, Product Development",Echelon,echelonfit.com,Echelon,2026-10-24T06:21:55.781+00:00,in-sales-nav
-64eefd2d2ef3b00001e34b41,Lisa,Pr***a,Vice President of Fitness & Wellness | Echelon Coach,Echelon,echelonfit.com,Echelon,2026-11-09T11:16:58.000+00:00,candidate
-611572d227f0100001a09cf1,Kevin,Cu***r,Chief Content Officer,Echelon,echelonfit.com,Echelon,2026-10-23T02:33:20.000+00:00,candidate
-54abeb1d74686930075db815,Becca,Va***e,"Senior Director, Content & Programming",Echelon,echelonfit.com,Echelon,2026-10-17T23:00:48.000+00:00,candidate
+64eefd2d2ef3b00001e34b41,Lisa,Pr***a,Vice President of Fitness & Wellness | Echelon Coach,Echelon,echelonfit.com,Echelon,2026-11-09T11:16:58.000+00:00,enriched
+611572d227f0100001a09cf1,Kevin,Cu***r,Chief Content Officer,Echelon,echelonfit.com,Echelon,2026-10-23T02:33:20.000+00:00,enriched
+54abeb1d74686930075db815,Becca,Va***e,"Senior Director, Content & Programming",Echelon,echelonfit.com,Echelon,2026-10-17T23:00:48.000+00:00,enriched
 6113963d0b25c2000182b7ec,Lauren,Fo***s,President of SaaS Partnerships & Sales,Echelon,echelonfit.com,Echelon,2026-11-12T05:19:46.000+00:00,held-off-persona
 611b1813f6b2fb000132be05,Angelo,Ra***t,"President- Echelon Fitness International, LLC.",Echelon,echelonfit.com,Echelon,2026-11-02T23:50:02.000+00:00,in-sales-nav
-5b1ac28fa6da9828f6c67193,Patrick,Ma***s,Senior Technical Product Manager,Echelon,echelonfit.com,Echelon,2026-11-03T10:29:16.000+00:00,candidate
+5b1ac28fa6da9828f6c67193,Patrick,Ma***s,Senior Technical Product Manager,Echelon,echelonfit.com,Echelon,2026-11-03T10:29:16.000+00:00,enriched
 606f59730d0eae000124d402,Kelli,Le***e,Vice President Strategic Partnerships,Echelon,echelonfit.com,Echelon,2026-11-10T04:40:08.273+00:00,in-sales-nav
 66f1aaf0fef7e100014a974e,Heidi,Jo***s,"SVP Strategic Partnerships, Echelon",Echelon,echelonfit.com,Echelon,2026-10-24T18:56:59.000+00:00,in-sales-nav
-66ef34dd14f1ee0001403ddc,John,Sa***o,Co-Founder and CPO at EchelonFit,Echelon,echelonfit.com,Echelon,2026-11-15T06:54:09.288+00:00,candidate
-66fab1c346e4c50001b5e48c,An,Li,Group Product Manager,Ergatta,ergatta.com,Ergatta,2026-10-29T14:17:50.000+00:00,candidate
+66ef34dd14f1ee0001403ddc,John,Sa***o,Co-Founder and CPO at EchelonFit,Echelon,echelonfit.com,Echelon,2026-11-15T06:54:09.288+00:00,enriched
+66fab1c346e4c50001b5e48c,An,Li,Group Product Manager,Ergatta,ergatta.com,Ergatta,2026-10-29T14:17:50.000+00:00,enriched
 5b2ac566a6da988ab7508e11,Maximillian,Po***o,Design Director & Product Designer,Ergatta,ergatta.com,Ergatta,2026-10-26T06:56:13.000+00:00,held-off-persona
 66fb12f254a2d70001a8af6c,Jason,Hw***g,VP of Partnerships,Future,future.co,Future,2026-11-06T18:07:45.000+00:00,in-sales-nav
-60bb024098189a0001d37d47,Meredith,Ha***s,Chief Product and Technology Officer,Future,future.co,Future,2026-11-12T04:16:28.000+00:00,candidate
+60bb024098189a0001d37d47,Meredith,Ha***s,Chief Product and Technology Officer,Future,future.co,Future,2026-11-12T04:16:28.000+00:00,enriched
 6528f25ec68c8b0001f82518,Daphne,Yo***g,Director of Marketing and Business Development,Future,future.co,Future,2026-09-24T02:07:47.851+00:00,held-off-persona
-57e0ec9aa6da987dc46ae6f2,Jake,Qu***n,Product Manager,Future,future.co,Future,2026-10-22T18:33:50.000+00:00,candidate
+57e0ec9aa6da987dc46ae6f2,Jake,Qu***n,Product Manager,Future,future.co,Future,2026-10-22T18:33:50.000+00:00,enriched
 66f6d8305c956b000174a584,Ryan,Mo***t,"VP, Product",Ladder,joinladder.com,Ladder,2026-11-05T14:37:03.000+00:00,in-sales-nav
 66f69fa744f6860001fd8fba,Ben,Ga***n,"Vice President, Product @ Ladder",Ladder,joinladder.com,Ladder,2026-11-11T18:30:59.000+00:00,in-sales-nav
 66581fc4a61d64000158b976,Joshua,Gn***m,VP of Product (Head of Product),Fitbod,fitbod.me,Fitbod,2026-11-05T08:14:39.000+00:00,in-sales-nav
 66d447f95aecc60001c9d1bf,Thiago,Ma***o,"Head of Data Science, Research, and AI",Fitbod,fitbod.me,Fitbod,2026-11-01T17:43:29.000+00:00,in-sales-nav
 66fe1f427932dd0001ed3bd4,Jesse,Pa***a,Senior Head of Sales & Partnerships/ Trainer at Fitbod,Fitbod,fitbod.me,Fitbod,2026-11-18T13:43:55.017+00:00,held-off-persona
 66f5124403268b0001614867,Jesse,Ve***e,"Co-Founder, CPO",Fitbod,fitbod.me,Fitbod,2026-11-12T06:51:39.000+00:00,in-sales-nav
-60f17be3f5e67b0001871ce6,Maggie,Mo***n,Growth Product,Fitbod,fitbod.me,Fitbod,2026-11-09T16:26:01.061+00:00,candidate
-606d9c508009350001dde742,Taylor,Ma***n,Staff Product Manager,Fitbod,fitbod.me,Fitbod,2026-11-06T06:56:07.000+00:00,candidate
-60904d1f070a240001419ea2,Scott,Ho***n,Head Content Creator,RP Strength,rpstrength.com,RP Strength,2026-11-08T14:11:45.000+00:00,candidate
-6740706d3db16100015856d5,Jovana,Pa***c,Senior Product Manager,ABC Trainerize,trainerize.com,Trainerize,2026-11-06T16:25:39.232+00:00,candidate
-662247762bbeb60007e377ca,Kevin,N,Senior Product Manager,ABC Trainerize,trainerize.com,Trainerize,2026-09-18T05:21:32.000+00:00,candidate
-57d38f38f651252c39ba8d8d,Alex,Ko***k,Senior Product Manager,ABC Trainerize,trainerize.com,Trainerize,2026-10-27T04:59:54.051+00:00,candidate
-652a1c05492c04000138beeb,Tung,Tr***n,Head of Product,Everfit,everfit.io,Everfit,2026-11-04T11:16:12.000+00:00,candidate
-5ff93057e6fb170001ca1f35,Carly,Bo***z,Senior Product Manager,Everfit,everfit.io,Everfit,2026-11-07T21:36:14.000+00:00,candidate
+60f17be3f5e67b0001871ce6,Maggie,Mo***n,Growth Product,Fitbod,fitbod.me,Fitbod,2026-11-09T16:26:01.061+00:00,enriched
+606d9c508009350001dde742,Taylor,Ma***n,Staff Product Manager,Fitbod,fitbod.me,Fitbod,2026-11-06T06:56:07.000+00:00,enriched
+60904d1f070a240001419ea2,Scott,Ho***n,Head Content Creator,RP Strength,rpstrength.com,RP Strength,2026-11-08T14:11:45.000+00:00,enriched
+6740706d3db16100015856d5,Jovana,Pa***c,Senior Product Manager,ABC Trainerize,trainerize.com,Trainerize,2026-11-06T16:25:39.232+00:00,enriched
+662247762bbeb60007e377ca,Kevin,N,Senior Product Manager,ABC Trainerize,trainerize.com,Trainerize,2026-09-18T05:21:32.000+00:00,enriched
+57d38f38f651252c39ba8d8d,Alex,Ko***k,Senior Product Manager,ABC Trainerize,trainerize.com,Trainerize,2026-10-27T04:59:54.051+00:00,enriched
+652a1c05492c04000138beeb,Tung,Tr***n,Head of Product,Everfit,everfit.io,Everfit,2026-11-04T11:16:12.000+00:00,enriched
+5ff93057e6fb170001ca1f35,Carly,Bo***z,Senior Product Manager,Everfit,everfit.io,Everfit,2026-11-07T21:36:14.000+00:00,enriched
 6741ad7e0befe700019639aa,Yaghoub,Me***r,Exercise Physiologist,Daxko Exercise,exercise.com,Exercise.com,2026-06-20T22:31:57.000+00:00,other-employer
 61136fe649af39000171b97e,Ruth,Sy***a,"VP, Product Management",MyFitnessPal,myfitnesspal.com,MyFitnessPal,2026-11-07T18:49:16.501+00:00,in-sales-nav
 69c23a35d3a1750001a9d1b1,Katie,Le***n,VP Product and Lifecycle Marketing,MyFitnessPal,myfitnesspal.com,MyFitnessPal,2026-11-01T14:21:51.000+00:00,held-off-persona
 61136efcac018000010722dc,Tim,Ho***y,Chief Product Officer,MyFitnessPal,myfitnesspal.com,MyFitnessPal,2026-11-19T11:15:36.142+00:00,in-sales-nav
 66caa3805de3050001cc2868,Nicole,La***y,Director of Product Design,MyFitnessPal,myfitnesspal.com,MyFitnessPal,2026-11-08T06:37:44.000+00:00,held-off-persona
 57d861cea6da987813eef4e9,Giustina,Cl***h,Director of Product Management,MyFitnessPal,myfitnesspal.com,MyFitnessPal,2026-11-11T20:20:15.000+00:00,in-sales-nav
-66f7182c1f1450000136944e,Will,Sun,Director of Product Management,MyFitnessPal,myfitnesspal.com,MyFitnessPal,2026-11-05T09:54:46.000+00:00,candidate
+66f7182c1f1450000136944e,Will,Sun,Director of Product Management,MyFitnessPal,myfitnesspal.com,MyFitnessPal,2026-11-05T09:54:46.000+00:00,enriched
 67279dc02dc7e80001f06579,Nicholas,Sc***l,"Principal Product Manager, Ads",MyFitnessPal,myfitnesspal.com,MyFitnessPal,2026-11-09T11:07:25.000+00:00,held-off-persona
-5f9072ce2ae252000122df0d,Christina,To,Senior Product Manager,MyFitnessPal,myfitnesspal.com,MyFitnessPal,2026-11-08T08:26:25.000+00:00,candidate
-683ec42c351b6e0001e0b1ea,Kelsey,Va***n,Senior Product Manager,MyFitnessPal,myfitnesspal.com,MyFitnessPal,2026-11-01T21:16:51.000+00:00,candidate
-60f6b8080792d000019050c8,Victoria,Ta***o,Senior Product Manager,MyFitnessPal,myfitnesspal.com,MyFitnessPal,2026-11-07T02:22:59.000+00:00,candidate
-6acfd23878a562000171dd84,Pat,Do***e,Senior Product Manager,MyFitnessPal,myfitnesspal.com,MyFitnessPal,2026-11-07T12:01:24.568+00:00,candidate
+5f9072ce2ae252000122df0d,Christina,To,Senior Product Manager,MyFitnessPal,myfitnesspal.com,MyFitnessPal,2026-11-08T08:26:25.000+00:00,enriched
+683ec42c351b6e0001e0b1ea,Kelsey,Va***n,Senior Product Manager,MyFitnessPal,myfitnesspal.com,MyFitnessPal,2026-11-01T21:16:51.000+00:00,enriched
+60f6b8080792d000019050c8,Victoria,Ta***o,Senior Product Manager,MyFitnessPal,myfitnesspal.com,MyFitnessPal,2026-11-07T02:22:59.000+00:00,enriched
+6acfd23878a562000171dd84,Pat,Do***e,Senior Product Manager,MyFitnessPal,myfitnesspal.com,MyFitnessPal,2026-11-07T12:01:24.568+00:00,enriched
 54a53c8c746869344236d587,Samantha,Li***d,Sr. Product Marketing Manager,MyFitnessPal,myfitnesspal.com,MyFitnessPal,2026-10-19T18:19:31.000+00:00,held-off-persona
-65b799f5bfb09a0001ea04cb,Megan,Ov***n,Head of AI Nutrition Coach,MyFitnessPal,myfitnesspal.com,MyFitnessPal,2026-11-12T09:09:33.000+00:00,candidate
-610b635e4f6cb40001216486,Ana,Pi***l,"Product, Monetization & Expansion",MyFitnessPal,myfitnesspal.com,MyFitnessPal,2026-10-22T22:22:20.000+00:00,candidate
+65b799f5bfb09a0001ea04cb,Megan,Ov***n,Head of AI Nutrition Coach,MyFitnessPal,myfitnesspal.com,MyFitnessPal,2026-11-12T09:09:33.000+00:00,enriched
+610b635e4f6cb40001216486,Ana,Pi***l,"Product, Monetization & Expansion",MyFitnessPal,myfitnesspal.com,MyFitnessPal,2026-10-22T22:22:20.000+00:00,enriched
 5ffecb5420057e00013864a0,Thos,Ni***s,Senior Vice President Product Management,Lose It!,loseit.com,Lose It!,2026-11-12T00:27:00.000+00:00,in-sales-nav
-6ad3d0385d243300017a3860,Sarah,Mo***n,"Director, Product",Lose It!,loseit.com,Lose It!,2026-10-17T12:04:48.114+00:00,candidate
-6700f0cc3bb8c20001b79707,Burton,Ho***n,Principal Product Manager,Lose It!,loseit.com,Lose It!,2026-10-23T01:04:54.000+00:00,candidate
+6ad3d0385d243300017a3860,Sarah,Mo***n,"Director, Product",Lose It!,loseit.com,Lose It!,2026-10-17T12:04:48.114+00:00,enriched
+6700f0cc3bb8c20001b79707,Burton,Ho***n,Principal Product Manager,Lose It!,loseit.com,Lose It!,2026-10-23T01:04:54.000+00:00,enriched
 66f5bdf441eaaa0001d421d6,Taylor,Sm***s,"Senior Director, Product",Lose It!,loseit.com,Lose It!,2026-11-12T11:27:54.000+00:00,in-sales-nav
 5f0bff80841e3500018bc100,Billy,Hu***t,"Vice President, Commerce Partnerships",Lose It!,loseit.com,Lose It!,2026-11-10T14:38:44.000+00:00,in-sales-nav
-66ed9e45e94b4a00017c58f0,Nate,Si***a,Vice President of Product Development,The Beachbody Company,bodi.com,BODi,2026-11-12T09:52:49.000+00:00,candidate
-61f4a62a74efa40001bb35be,Stephanie,Sa***s,"VP, Fitness Progamming",The Beachbody Company,bodi.com,BODi,2026-11-01T23:55:41.096+00:00,candidate
-5ac19b40a6da981c8c6bd21a,Jeffrey,Sc***t,"Group Vice President Fitness, Nutrition, Results",The Beachbody Company,bodi.com,BODi,2026-10-31T16:20:44.000+00:00,candidate
-60b7705d55802f00012fa5ac,Arturo,Ga***a,Head Coach,The Beachbody Company,bodi.com,BODi,2026-09-30T11:30:43.000+00:00,candidate
-58741308f65125e0aac8a7a3,Rob,Ca***g,Director of Product Management,The Beachbody Company,bodi.com,BODi,2026-11-05T14:16:57.000+00:00,candidate
-60cca40787f2600001ccad3b,Nicholas,Wi***y,Director of Product Management,The Beachbody Company,bodi.com,BODi,2026-11-07T21:55:56.174+00:00,candidate
-54a73a88746869705a4c5321,Yi,Ch***g,Director of Product Development,The Beachbody Company,bodi.com,BODi,2026-11-12T15:44:11.237+00:00,candidate
-5f4ffea0c5bad7000104ad53,Jenny,Pa***r,"Vice President, Content Development",The Beachbody Company,bodi.com,BODi,2026-10-27T11:16:23.000+00:00,candidate
-66ed9d39d15b5e00016cbe6f,Mike,Fa***l,Executive Director of Product Management,The Beachbody Company,bodi.com,BODi,2026-11-03T01:32:25.000+00:00,candidate
-6aa70579c08b5d0001128250,Hunter,Ow***s,Senior Product Manager,The Beachbody Company,bodi.com,BODi,2026-11-06T05:56:38.253+00:00,candidate
-61fe3981ed30050001edab31,Ashlei,Mi***l,Senior Product Manager,The Beachbody Company,bodi.com,BODi,2026-10-22T16:05:16.000+00:00,candidate
-5f07c6c0485ed400014e4f35,Campbell,Mc***r,Senior Product Manager (Remote),The Beachbody Company,bodi.com,BODi,2026-11-05T08:52:22.000+00:00,candidate
+66ed9e45e94b4a00017c58f0,Nate,Si***a,Vice President of Product Development,The Beachbody Company,bodi.com,BODi,2026-11-12T09:52:49.000+00:00,enriched
+61f4a62a74efa40001bb35be,Stephanie,Sa***s,"VP, Fitness Progamming",The Beachbody Company,bodi.com,BODi,2026-11-01T23:55:41.096+00:00,enriched
+5ac19b40a6da981c8c6bd21a,Jeffrey,Sc***t,"Group Vice President Fitness, Nutrition, Results",The Beachbody Company,bodi.com,BODi,2026-10-31T16:20:44.000+00:00,enriched
+60b7705d55802f00012fa5ac,Arturo,Ga***a,Head Coach,The Beachbody Company,bodi.com,BODi,2026-09-30T11:30:43.000+00:00,enriched
+58741308f65125e0aac8a7a3,Rob,Ca***g,Director of Product Management,The Beachbody Company,bodi.com,BODi,2026-11-05T14:16:57.000+00:00,enriched
+60cca40787f2600001ccad3b,Nicholas,Wi***y,Director of Product Management,The Beachbody Company,bodi.com,BODi,2026-11-07T21:55:56.174+00:00,enriched
+54a73a88746869705a4c5321,Yi,Ch***g,Director of Product Development,The Beachbody Company,bodi.com,BODi,2026-11-12T15:44:11.237+00:00,enriched
+5f4ffea0c5bad7000104ad53,Jenny,Pa***r,"Vice President, Content Development",The Beachbody Company,bodi.com,BODi,2026-10-27T11:16:23.000+00:00,enriched
+66ed9d39d15b5e00016cbe6f,Mike,Fa***l,Executive Director of Product Management,The Beachbody Company,bodi.com,BODi,2026-11-03T01:32:25.000+00:00,enriched
+6aa70579c08b5d0001128250,Hunter,Ow***s,Senior Product Manager,The Beachbody Company,bodi.com,BODi,2026-11-06T05:56:38.253+00:00,enriched
+61fe3981ed30050001edab31,Ashlei,Mi***l,Senior Product Manager,The Beachbody Company,bodi.com,BODi,2026-10-22T16:05:16.000+00:00,enriched
+5f07c6c0485ed400014e4f35,Campbell,Mc***r,Senior Product Manager (Remote),The Beachbody Company,bodi.com,BODi,2026-11-05T08:52:22.000+00:00,enriched
 5f7d7306d3f9050001249596,Kyle,Ry***n,Executive Director - Product Manager Financial Applications,The Beachbody Company,bodi.com,BODi,2026-11-08T08:51:55.000+00:00,held-off-persona
-62e3692becdc7f0001a1aac5,Vijay,Mu***n,Executive Director ★ Head of Commerce and Acquisition Product,The Beachbody Company,bodi.com,BODi,2025-06-24T21:28:39.359+00:00,candidate
+62e3692becdc7f0001a1aac5,Vijay,Mu***n,Executive Director ★ Head of Commerce and Acquisition Product,The Beachbody Company,bodi.com,BODi,2025-06-24T21:28:39.359+00:00,enriched
 54a971867468692d1ce15a13,Steven,Se***o,"Director, Digital Product Operations and Quality Assurance",The Beachbody Company,bodi.com,BODi,2026-10-08T03:41:07.000+00:00,held-off-persona
 6a7c0d3fa902730001f5d521,Jayson,Pi***n,Executive Director - Planning and Master Product Data,The Beachbody Company,bodi.com,BODi,2026-11-10T15:07:05.000+00:00,held-off-persona
 54a59c487468693b8c9da49d,Daphne,Bl***d,CEO at Daphne's Fitness,The Beachbody Company,bodi.com,BODi,2026-11-03T09:40:40.000+00:00,held-off-persona
@@ -184,9 +184,56 @@ apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,l
 5db276f06009240001cce7e1,Taylor,Sk***r,"Senior Director, Enterprise Product (Order Management and SKU Master Data)",The Beachbody Company,bodi.com,BODi,2026-10-22T07:43:34.000+00:00,held-off-persona
 608e47fc733d8c0001c9a6ef,Rebecca,Jo***s,CEO and Founder of Rebecca Jones LLC- Online Fitness and Nutrition Coach,The Beachbody Company,bodi.com,BODi,2026-11-05T18:12:28.000+00:00,held-off-persona
 600c66964c55120001862613,Soo,Kim,"Senior Manager, Product Data Management",The Beachbody Company,bodi.com,BODi,2026-04-17T03:10:06.959+00:00,held-off-persona
-57e0b506a6da982430dfe0d4,Brandon,Co***y,Product Manager,The Beachbody Company,bodi.com,BODi,2026-10-21T23:20:53.000+00:00,candidate
-67acfd94e19ffa00010961e0,Nitin,Ba***l,Product Manager,Jefit Inc.,jefit.com,Jefit,2026-11-11T11:54:46.166+00:00,candidate
-66b2787305553b000126639b,Xiaotong,Ya***g,Product Manager,Jefit Inc.,jefit.com,Jefit,2026-11-02T23:49:41.000+00:00,candidate
-67c053f876c21f00019aa11f,John,Ra***y,VP of Product,Centr,centr.com,Centr,2026-11-05T12:41:46.000+00:00,candidate
+57e0b506a6da982430dfe0d4,Brandon,Co***y,Product Manager,The Beachbody Company,bodi.com,BODi,2026-10-21T23:20:53.000+00:00,enriched
+67acfd94e19ffa00010961e0,Nitin,Ba***l,Product Manager,Jefit Inc.,jefit.com,Jefit,2026-11-11T11:54:46.166+00:00,enriched
+66b2787305553b000126639b,Xiaotong,Ya***g,Product Manager,Jefit Inc.,jefit.com,Jefit,2026-11-02T23:49:41.000+00:00,enriched
+67c053f876c21f00019aa11f,John,Ra***y,VP of Product,Centr,centr.com,Centr,2026-11-05T12:41:46.000+00:00,enriched
 66fe2dfe9e5f100001bd70b0,Lacey,Li***k,Director of Product Marketing,Centr,centr.com,Centr,2026-10-10T19:54:34.584+00:00,held-off-persona
-5fc8acfc99505b00018b88c9,Laura,Ru***z,Product Manager,Centr,centr.com,Centr,2026-11-01T02:52:32.000+00:00,candidate
+5fc8acfc99505b00018b88c9,Laura,Ru***z,Product Manager,Centr,centr.com,Centr,2026-11-01T02:52:32.000+00:00,enriched
+67a671f65c64ac0001362503,Ryan,Be***t,Senior Vice President Marketing,"Hydrow, Inc.",hydrow.com,Hydrow,2026-11-11T13:46:53.000+00:00,held-off-persona
+5f75b6d7dee34f0001bfb6c2,Adam,Cr***t,Chief Production Officer,"Hydrow, Inc.",hydrow.com,Hydrow,2026-11-04T10:23:40.769+00:00,in-sales-nav
+611a85aaa4ab5f00011d2d19,Manuel,Ro***o,President / Chief Commercial Officer,"Hydrow, Inc.",hydrow.com,Hydrow,2026-11-12T08:37:08.699+00:00,held-off-persona
+54a2c24274686930c2fad23a,Jenna,Fu***k,Director of Digital Products & Ecommerce,"Hydrow, Inc.",hydrow.com,Hydrow,2026-11-11T23:40:40.000+00:00,enriched
+6109aff9556161000165f5de,Matt,Le***r,Chief Rowing Strategy Officer,"Hydrow, Inc.",hydrow.com,Hydrow,2026-11-11T12:15:49.000+00:00,in-sales-nav
+67798b3430597e0001ad7036,Michael,O'***n,Vice President of Global Supply Chain,"Hydrow, Inc.",hydrow.com,Hydrow,2026-11-11T19:51:32.000+00:00,held-off-persona
+681909acfefa670001b5fdcf,Margaux,Do***e,Director of Influencer and Affiliate Marketing,"Hydrow, Inc.",hydrow.com,Hydrow,2026-11-12T03:45:39.000+00:00,held-off-persona
+54a4f4547468692abf16de70,Jill,Wo***r,Director of Field Service and Hardware Operations,"Hydrow, Inc.",hydrow.com,Hydrow,2026-11-01T00:47:06.000+00:00,held-off-persona
+67003361d5a79e00013ace19,Holly,Le***n,"Director, Lifecycle Marketing","Hydrow, Inc.",hydrow.com,Hydrow,2026-10-26T22:28:35.526+00:00,held-off-persona
+54a7433e74686975f8386424,Andrea,Bu***h,"Senior Director, Production Operations","Hydrow, Inc.",hydrow.com,Hydrow,2026-10-24T11:13:13.411+00:00,in-sales-nav
+6089e33cc36ae1000102fca8,George,Pe***n,"Director, Technical Support & Systems","Hydrow, Inc.",hydrow.com,Hydrow,2026-11-03T21:24:50.704+00:00,held-off-persona
+6ad0a72f2c3cce00013a3803,Moe,Al***i,"Director, Strategy & Analytics","Hydrow, Inc.",hydrow.com,Hydrow,2026-11-12T20:54:37.914+00:00,in-sales-nav
+68da9febb10cf500012a6b6d,John,St***o,President and Chief Executive Officer,"Hydrow, Inc.",hydrow.com,Hydrow,2026-11-06T21:40:02.000+00:00,in-sales-nav
+61006f778a2c6f00016ebfd4,Frances,Ho***r,Director,"Hydrow, Inc.",hydrow.com,Hydrow,2026-10-23T00:36:29.000+00:00,enriched
+66f51fe19f3b710001d248da,Melissa,Ko***a,"SVP, Customer Experience","Hydrow, Inc.",hydrow.com,Hydrow,2026-11-15T09:08:10.900+00:00,enriched
+60008708830e7c0001f8c6ea,Sarah,St***y,Head of Copywriting,"Hydrow, Inc.",hydrow.com,Hydrow,2026-11-12T09:35:26.000+00:00,held-off-persona
+64c2298bc96b4e0001e5cf30,Micro,Lin,Director of Regional Manufacturing,"Hydrow, Inc.",hydrow.com,Hydrow,2026-11-05T18:36:49.000+00:00,held-off-persona
+66f5a7e0e039b600015d6826,Matt,Sp***l,Co-Founder and CEO,Trainwell,trainwell.net,Trainwell,2026-11-03T11:33:42.000+00:00,enriched
+6700a46e78663e0001425ef3,John,La***e,Chief Operating Officer,Trainwell,trainwell.net,Trainwell,2026-11-07T00:26:56.000+00:00,enriched
+66f27c8e02ae4a0001b944ae,Gregory,St***t,Chief Executive Officer,Ladder,joinladder.com,Ladder,2026-11-11T06:00:01.860+00:00,in-sales-nav
+5d52e882a3ae612df086dfc9,David,To***u,Co-Founder,Ladder,joinladder.com,Ladder,2026-11-12T11:03:20.000+00:00,enriched
+66f69d893fa2860001205e1e,Tom,Di***n,Co-Founder & President,Ladder,joinladder.com,Ladder,2026-11-19T00:39:28.951+00:00,enriched
+66fccfecb95e9b0001c1e70e,Sam,Pa***e,VP of Finance,Ladder,joinladder.com,Ladder,2026-11-16T12:53:45.649+00:00,held-off-persona
+66fb1eae5e6a7b0001fb3e56,Maddie,Mc***e,Head of Lifecycle Marketing,Ladder,joinladder.com,Ladder,2026-11-16T19:18:07.642+00:00,held-off-persona
+54a4ac957468693209b3ef59,Will,Cr***y,Co-Founder,Ladder,joinladder.com,Ladder,2026-11-12T05:13:27.000+00:00,enriched
+6841692458e4320001a54fc3,Philip,Ed***l,"VP, Brand & Creative",Ladder,joinladder.com,Ladder,2026-11-11T06:34:11.000+00:00,held-off-persona
+66f69fb1e1977c0001779b64,Jonny,Ar***n,Co-Founder and Vice President of Operations,Ladder,joinladder.com,Ladder,2026-10-23T00:40:18.000+00:00,in-sales-nav
+66f62a122e45b80001641cc0,Andrew,Hu***r,Vice President of Engineering,Ladder,joinladder.com,Ladder,2026-11-11T18:51:06.000+00:00,in-sales-nav
+6ab651993436ac0001e0cf65,Miranda,Ka***e,"VP, Growth",Ladder,joinladder.com,Ladder,2026-11-16T08:55:24.289+00:00,held-off-persona
+67d3e502f8297f0001405067,Jeremy,Hsu,Senior Art Director,Ladder,joinladder.com,Ladder,2026-10-29T08:14:18.000+00:00,held-off-persona
+6acd1ab1c9c7070001e78040,Collin,Wa***r,Head of Commercial,Ladder,joinladder.com,Ladder,2026-09-20T05:01:18.000+00:00,held-off-persona
+6196b2139ed75600017c2a7c,William,Ma***s,Founder,Ladder,joinladder.com,Ladder,2026-10-25T11:41:19.000+00:00,enriched
+54a545d37468692fa2792a8b,Jique,Me***g,VP,Ladder,joinladder.com,Ladder,2026-10-10T06:55:06.081+00:00,enriched
+6ad52366a6b1c100012c0a91,Nicholas,La***r,Founder & CEO,Ladder,joinladder.com,Ladder,2026-10-18T19:51:58.610+00:00,enriched
+69a8329c00b4b20001b19ba9,Math,Ma***5,Head,Ladder,joinladder.com,Ladder,2026-10-23T05:01:39.873+00:00,enriched
+653b7b0e1c7abf00015b4c02,Claire,Sm***h,Director of Sales,Ladder,joinladder.com,Ladder,2026-10-08T04:07:55.000+00:00,held-off-persona
+66fcb03b1b49660001723c50,Allen,Ch***n,Co-founder & CEO,Fitbod,fitbod.me,Fitbod,2026-11-07T20:26:17.000+00:00,in-sales-nav
+610486d62cb48d0001cb2525,Katrina,Ki***c,Head of Lifecycle Marketing,Fitbod,fitbod.me,Fitbod,2026-11-11T20:20:44.000+00:00,held-off-persona
+66fa27cb9f894400017b0e08,Ummair,Wa***d,VP of Engineering,Fitbod,fitbod.me,Fitbod,2026-11-04T02:25:35.286+00:00,in-sales-nav
+6ac231b466bba1000142ca63,Abhilash,Ku***i,Head of Design,Fitbod,fitbod.me,Fitbod,2026-11-13T17:09:08.468+00:00,held-off-persona
+67004483dafc410001204130,Alisa,Ca***n,Head of Customer Success,Fitbod,fitbod.me,Fitbod,2026-11-09T05:42:20.000+00:00,in-sales-nav
+658ddcd8b05fbc000109371e,Rebecca,Fi***s,Director of Customer Support and Implementation,Daxko Exercise,exercise.com,Exercise.com,2026-10-27T10:58:40.000+00:00,held-off-persona
+60fe85ce64925c0001103605,Philip,Mo***n,Director of Customer Success,Daxko Exercise,exercise.com,Exercise.com,2026-10-26T03:13:57.000+00:00,enriched
+66ec599f6f7cb30001dad924,Tyler,Sp***l,VP of Support & Testing,Daxko Exercise,exercise.com,Exercise.com,2026-11-05T08:20:24.000+00:00,held-off-persona
+601fd5ebbc463800014e3501,Sarah,Mi***r,Director of Trainer Success,Daxko Exercise,exercise.com,Exercise.com,2026-10-26T21:33:50.297+00:00,enriched
+6afd4c65fab8a80001e6eb68,Ying,Lin,Founder & CEO,Jefit Inc.,jefit.com,Jefit,2026-11-10T21:27:00.000+00:00,enriched
+6ad2e8409c961b0001959e38,Jack,Te***y,Director,Jefit Inc.,jefit.com,Jefit,2026-08-07T15:04:03.000+00:00,enriched

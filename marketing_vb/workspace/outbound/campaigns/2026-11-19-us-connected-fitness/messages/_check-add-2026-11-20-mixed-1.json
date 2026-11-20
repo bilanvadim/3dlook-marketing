@@ -1,0 +1,9 @@
+{
+ "campaign": "2026-11-19-us-connected-fitness",
+ "checked": 9,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "add-2026-11-20-mixed-1",
+ "generated": "2026-11-20T10:26:48",
+ "hard": [],
+ "soft": []
+}

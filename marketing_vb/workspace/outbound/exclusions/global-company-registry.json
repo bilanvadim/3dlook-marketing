@@ -3992,6 +3992,14 @@
       "product": "fitxpress",
       "date": "2026-11-19",
       "status": "active"
+    },
+    "exercise-com": {
+      "display_name": "Exercise.com",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-11-19-us-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
     }
   }
 }
