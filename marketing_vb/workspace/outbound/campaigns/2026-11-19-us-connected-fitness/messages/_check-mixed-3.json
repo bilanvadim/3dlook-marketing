@@ -1,0 +1,35 @@
+{
+ "campaign": "2026-11-19-us-connected-fitness",
+ "checked": 33,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-3",
+ "generated": "2026-11-20T09:51:08",
+ "hard": [],
+ "soft": [
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«on the member s phone…»: greg-nuckols-92545595, jasonbhwang, js531, justin-fauci"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«there is no integration fee…»: bentbartlett, jmcluff, js531, keith-kraker"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«at the first check in…»: bmaloley, jake-grundstein, js531, trent-ward-12b992b2"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«the member profile through the…»: alisa-aguirre, an-li-5662b365, chris-muir, deepakmm"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«record to the member profile…»: chris-muir, john-ybarra-mba, rkekelis"
+  ]
+ ]
+}

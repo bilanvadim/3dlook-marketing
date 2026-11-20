@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-19",
+  "last_updated": "2026-11-20",
   "companies": {
     "safariland": {
       "covered_by_profile": null,
@@ -768,17 +768,17 @@
     "echelon": {
       "display_name": "Echelon",
       "covered_by_profile": "nick",
-      "campaign_id": "2026-08-07-us-digital-fitness",
+      "campaign_id": "2026-11-19-us-connected-fitness",
       "product": "fitxpress",
-      "date": "2026-08-07",
+      "date": "2026-11-19",
       "status": "active"
     },
     "fitbod": {
       "display_name": "Fitbod",
       "covered_by_profile": "nick",
-      "campaign_id": "2026-08-07-us-digital-fitness",
+      "campaign_id": "2026-11-19-us-connected-fitness",
       "product": "fitxpress",
-      "date": "2026-08-07",
+      "date": "2026-11-19",
       "status": "active"
     },
     "found": {
@@ -792,41 +792,41 @@
     "future": {
       "display_name": "Future",
       "covered_by_profile": "nick",
-      "campaign_id": "2026-08-07-us-digital-fitness",
+      "campaign_id": "2026-11-19-us-connected-fitness",
       "product": "fitxpress",
-      "date": "2026-08-07",
+      "date": "2026-11-19",
       "status": "active"
     },
     "hydrow": {
       "display_name": "Hydrow",
       "covered_by_profile": "nick",
-      "campaign_id": "2026-08-07-us-digital-fitness",
+      "campaign_id": "2026-11-19-us-connected-fitness",
       "product": "fitxpress",
-      "date": "2026-08-07",
+      "date": "2026-11-19",
       "status": "active"
     },
     "ifit": {
       "display_name": "iFIT",
       "covered_by_profile": "nick",
-      "campaign_id": "2026-08-07-us-digital-fitness",
+      "campaign_id": "2026-11-19-us-connected-fitness",
       "product": "fitxpress",
-      "date": "2026-08-07",
+      "date": "2026-11-19",
       "status": "active"
     },
     "ladder": {
       "display_name": "Ladder",
       "covered_by_profile": "nick",
-      "campaign_id": "2026-08-07-us-digital-fitness",
+      "campaign_id": "2026-11-19-us-connected-fitness",
       "product": "fitxpress",
-      "date": "2026-08-07",
+      "date": "2026-11-19",
       "status": "active"
     },
     "myfitnesspal": {
       "display_name": "MyFitnessPal",
       "covered_by_profile": "nick",
-      "campaign_id": "2026-08-07-us-digital-fitness",
+      "campaign_id": "2026-11-19-us-connected-fitness",
       "product": "fitxpress",
-      "date": "2026-08-07",
+      "date": "2026-11-19",
       "status": "active"
     },
     "personify-health": {
@@ -848,17 +848,17 @@
     "tonal": {
       "display_name": "Tonal",
       "covered_by_profile": "nick",
-      "campaign_id": "2026-08-07-us-digital-fitness",
+      "campaign_id": "2026-11-19-us-connected-fitness",
       "product": "fitxpress",
-      "date": "2026-08-07",
+      "date": "2026-11-19",
       "status": "active"
     },
     "trainwell": {
       "display_name": "Trainwell",
       "covered_by_profile": "nick",
-      "campaign_id": "2026-08-07-us-digital-fitness",
+      "campaign_id": "2026-11-19-us-connected-fitness",
       "product": "fitxpress",
-      "date": "2026-08-07",
+      "date": "2026-11-19",
       "status": "active"
     },
     "chequp": {
@@ -3888,6 +3888,110 @@
       "covered_by_profile": null,
       "status": "existing_customer_excluded",
       "note": "customer — never enters outbound (exclusions/README.md)"
+    },
+    "bodi": {
+      "display_name": "BODi",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-11-19-us-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "caliber": {
+      "display_name": "Caliber",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-11-19-us-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "carbon-diet-coach": {
+      "display_name": "Carbon Diet Coach",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-11-19-us-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "centr": {
+      "display_name": "Centr",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-11-19-us-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "ergatta": {
+      "display_name": "Ergatta",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-11-19-us-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "everfit": {
+      "display_name": "Everfit",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-11-19-us-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "interactive-strength": {
+      "display_name": "Interactive Strength",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-11-19-us-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "jefit": {
+      "display_name": "Jefit",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-11-19-us-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "lose-it": {
+      "display_name": "Lose It!",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-11-19-us-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "macrofactor": {
+      "display_name": "MacroFactor",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-11-19-us-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "peloton": {
+      "display_name": "Peloton",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-11-19-us-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "rp-strength": {
+      "display_name": "RP Strength",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-11-19-us-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "trainerize": {
+      "display_name": "Trainerize",
+      "covered_by_profile": "nick",
+      "campaign_id": "2026-11-19-us-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
     }
   }
 }

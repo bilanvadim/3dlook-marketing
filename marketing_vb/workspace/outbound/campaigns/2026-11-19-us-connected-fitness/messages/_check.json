@@ -1,0 +1,130 @@
+{
+ "campaign": "2026-11-19-us-connected-fitness",
+ "checked": 109,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": null,
+ "generated": "2026-11-20T09:56:32",
+ "hard": [],
+ "soft": [
+  [
+   "card wording as copy",
+   "campaign ×10",
+   "«on the member s phone…»: christina-to, greg-nuckols-92545595, jasonbhwang, joeli-spencer-5bab67167"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×9",
+   "«there is no integration fee…»: bentbartlett, ericreimers, jmcluff, joeli-spencer-5bab67167"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×8",
+   "«at the first check in…»: becca-valente-31b59424, bmaloley, jacob-wax-b2218295, jake-grundstein"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×7",
+   "«to the member profile through…»: alisa-aguirre, an-li-5662b365, bethraewendt, chris-muir"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«at the next check in…»: andrew-sugerman, barbarathornethomsen, burtonhohman, josephrodonis"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«platform depends on that app…»: deepakmm, heidi-jones-ny, jasonbhwang, jondwang"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«where the body changed stays…»: elizabeth-palmer-97820997, jmcluff, nicholasjrobinson, thosniles"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«30 and day 90 retention…»: anapischl, jake-grundstein, nicholasjrobinson, robcanning"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«to compare at the next…»: barbarathornethomsen, burtonhohman, josephrodonis, stephanie-raterman"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«a comparable cohort keeps the…»: mirelacialai, nicholasjrobinson, robcanning, thosniles"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«at onboarding and at the…»: becca-valente-31b59424, nicholasjrobinson, robcanning, trent-ward-12b992b2"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«the member s own phone…»: jenna-moore-ms-cscs-a99827a1, joncilley, mirelacialai, stephanie-raterman"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«a body check in under…»: jakequan, nicholasrwilley, theodorelui"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«back to the platform depends…»: heidi-jones-ny, jasonbhwang, nicholasrwilley"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«check in to the next…»: robcanning, robert-benjamin-a7906b104, vptaylo"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«could review girths and lengths…»: elizabeth-gray-94237a106, jeffrey-scott-nasm-cpt-nasm-cnc-8b171447, kevin-j-custer-14a2b76"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«front and side with pose…»: jrafferty, oaktownolivia, taylor-smyrnos"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«height and where provided weight…»: greg-nuckols-92545595, lindsay-pontello, meganstaggoverton"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«layer stays fixed to protect…»: deepakmm, nickcaldwell, rkekelis"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«links each record to the…»: chris-muir, john-ybarra-mba, zekebrustkern"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«the member app s progress…»: amartanna-cpa-ca, luanaperez, matt-lehrer-67664014"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«the member promise or roadmap item a measured check-in woul…»: andrew-sugerman, tworetzky"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«what a member sees at the first check-in today beyond weigh…»: annakatedavis, jrafferty"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«what the team would need to see before body data shapes a p…»: greg-nuckols-92545595, meganstaggoverton"
+  ]
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "campaign": "2026-11-19-us-connected-fitness",
+ "checked": 28,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-2",
+ "generated": "2026-11-20T09:49:45",
+ "hard": [],
+ "soft": [
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«at the next check in…»: andrew-sugerman, josephrodonis, stephanie-raterman"
+  ]
+ ]
+}

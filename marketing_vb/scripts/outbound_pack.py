@@ -365,6 +365,23 @@ def group_map(cdir: Path) -> dict[str, str]:
     return out
 
 
+def group_name_forms(cdir: Path) -> dict[str, set[str]]:
+    """group name -> every name form of the shortlist rows in it, brackets included.
+
+    group_map cuts "(FORME, CLMBR)" off "Interactive Strength (FORME, CLMBR)", so the gate
+    only knew the holding name, which the account facts ban in copy (2026-11-20)."""
+    gmap = group_map(cdir)
+    out: dict[str, set[str]] = {}
+    for r in shortlist(cdir):
+        name = pick(r, "company_name", "company")
+        if not name:
+            continue
+        grp = gmap.get(norm_company(PIPE.clean_company(name)))
+        if grp:
+            out.setdefault(grp, set()).update(company_names(name))
+    return out
+
+
 def group_of(row: dict, gmap: dict[str, str]) -> str:
     g = (row.get("group") or "").strip()
     if g:
@@ -749,16 +766,36 @@ def person_flags(p: dict, raw: dict, profile: str, grp: str,
     return flags
 
 
+HEADLINE_FILLER = {"at", "bei", "chez", "of", "and", "the", "a", "an", "in", "for", "to",
+                   "inc", "llc", "ltd", "co", "corp", "company"}
+HEADLINE_ABBREV = {"sr": "senior", "snr": "senior", "jr": "junior", "dir": "director",
+                   "mgr": "manager", "mgmt": "management", "mngr": "manager",
+                   "vp": "vice president", "svp": "senior vice president",
+                   "evp": "executive vice president", "avp": "assistant vice president",
+                   "gm": "general manager", "md": "managing director"}
+
+
+def _headline_words(s: str) -> set[str]:
+    out = set()
+    for w in re.findall(r"[^\W_]+", (s or "").lower()):
+        out.update(HEADLINE_ABBREV.get(w, w).split())
+    return out - HEADLINE_FILLER
+
+
 def headline_if_new(headline: str, title: str, company: str) -> str:
-    """The headline only when it says something the title does not."""
+    """The headline only when it has a word the title and the company name do not.
+
+    It used to cut everything after "at"/"@" and drop any headline that contained the
+    title or was 80% like it. That hid "VP, Data Product" under the title "VP, Product",
+    "... | Onboarding & Activation" after a repeated title, and the brand list after
+    "Founder & CEO @ Interactive Strength" (2026-11-20, us-connected-fitness, QC caught it).
+    Abbreviations are expanded first, so "Sr. Director" against "Senior Director" adds nothing.
+    """
     h = clip(headline, 100)
-    bare = re.sub(r"\b(at|@|bei|chez)\b.*$", "", h, flags=re.I).strip(" |-·,")
-    t = title.lower()
-    if not bare or bare.lower() in t or t in bare.lower():
+    if not h:
         return ""
-    if difflib.SequenceMatcher(None, bare.lower(), t).ratio() > 0.8:
-        return ""
-    return h
+    extra = _headline_words(h) - _headline_words(title) - _headline_words(company)
+    return h if extra else ""
 
 
 def cmd_compact(args) -> int:
@@ -1843,9 +1880,29 @@ CALL_WORDS = re.compile(
 # Sentences that may share wording at one company: the product description (the card makes
 # every M1 say what comes back) and the data-handling forms from compliance.md.
 PRODUCT_SENT = re.compile(r"(?i)fitxpress|smart scales|two photos|2 photos|weight estimate|80\+|"
-                          r"\bsdks?\b|\bapi\b|body composition|3d model")
+                          r"\bsdks?\b|\bapi\b|body composition|3d model|\bscan id\b")
 DATA_FORMS = re.compile(r"(?i)deleted after processing|blurred|obscured at capture|encrypt|\btls\b|"
                         r"random identifiers?|legal@3dlook")
+PRODUCT_NAMES = {"fitxpress": ("fitxpress", "3dlook"),
+                 "mobile_tailor": ("mobile tailor", "3dlook")}
+# A label in front of a number or a link, 2026-11-20 (QC 11/20): "For scale: 112,100…" ×3,
+# "The scale so far is 112,100…" ×3 and "The page for this use case:" before all 17 URLs of
+# one batch. A short lead-in that only announces what follows reads as a template.
+LABEL_LEADIN = re.compile(
+    r"(?:^|(?<=[.!?]\s)|(?<=\n))((?:[A-Z][\w'’]*)(?:\s+[\w'’]+){0,5})\s*:\s+(?=https?://|www\.|\d)"
+    r"|(?i:\bthe scale so far\b|\bfor scale\b)", re.M)
+LABEL_OK = re.compile(r"(?i)calendar|book|slot|schedule|talk|call|chat|\btime\b")      # the call line may say "My calendar:"
+# British spelling in a US campaign, 2026-11-20: personalised ×3, standardised, white-labelled.
+# Explicit stems only: a pattern on "-ise" or "-lled" hits exercise, franchise, called, filled.
+BRITISH = re.compile(
+    r"(?i)\b(?:personali|standardi|organi|optimi|recogni|prioriti|customi|reali|minimi|maximi|"
+    r"summari|finali|normali|visuali|categori|digitali|moneti|utili|speciali|centrali|locali|"
+    r"authori|characteri|modernis|synchroni|capitali|emphasi|incentivi|operationali|"
+    r"contextuali|individuali|initiali|stabili|tokeni|anonymi|democrati|industriali)"
+    r"s(?:e|ed|es|ing|ation|ations)\b"
+    r"|\banaly[s](?:e|ed|es|ing)\b"
+    r"|\b(?:label|model|travel|cancel|signal|counsel|level|fuel)l(?:ed|ing)\b"
+    r"|\b(?:colour|behaviour|favour|honour|programme|centre|licence|catalogue)s?\b")
 NAME_SUFFIX = re.compile(r"(?i)[\s-]+(health|healthcare|medical|clinic|australia|uk|usa|us|europe|"
                          r"group|inc\.?|ltd\.?|pty ltd|life|financial|americas|america|insurance|"
                          r"assurance|holdings|company|co\.?)$")
@@ -1862,7 +1919,12 @@ def company_names(g: str) -> set[str]:
     low = g.lower().strip()
     names = {low} | {k.replace("-", " ") for k in PIPE.company_keys(g)}
     outside = re.sub(r"\([^)]*\)", " ", low).strip()
-    names |= {x.strip().lower() for x in re.findall(r"\(([^)]*)\)", g)}
+    # Bracket text is a list of brands or former names: "Interactive Strength (FORME, CLMBR)"
+    # must accept "FORME" alone, since its account facts ban the holding name (2026-11-20).
+    for inner in re.findall(r"\(([^)]*)\)", g):
+        names.add(inner.strip().lower())
+        names |= {p.strip().lower() for p in re.split(r"\s*[,/;]\s*|\s+or\s+", inner)
+                  if len(p.strip()) >= 3}
     short = re.sub(r"^the\s+", "", outside)
     while True:
         cut = NAME_SUFFIX.sub("", short).strip()
@@ -1951,7 +2013,9 @@ def question_targets(hyp_text: str) -> list[tuple[str, set[str]]]:
 MANDATED_STEMS = ("in most enterprise deployments", "fitxpress is not a medical device",
                   "we support hipaa-governed deployments",
                   "for most evaluated measurements", "for most of the evaluated",
-                  "3dlook has worked with 100+", "112,100 scans", "one weight-management platform ran")
+                  "3dlook has worked with 100+", "112,100 scans", "one weight-management platform ran",
+                  # 2026-11-20: the live page's repeatability form and the "what it is not" line
+                  "repeated scans typically differ", "provides structured body data")
 
 
 def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> int:
@@ -1967,6 +2031,7 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
         else:
             people = [p for p in people if p["person_id"] in ids]
     gmap = group_map(cdir)
+    gforms = group_name_forms(cdir)
     owner = OWNER.get(profile, "")
     link = calendar_link(profile)
     banned = fm.get("banned_terms") or []
@@ -2008,6 +2073,15 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
             bodies[(pid, n)] = b
             lens[n].append(len(b))
             tag = f"{pid} M{n}"
+            for lm in LABEL_LEADIN.finditer(b):
+                if not LABEL_OK.search(lm.group(0)):
+                    soft.append(("label before a number or link", tag,
+                                 f"«{clip(lm.group(0).strip(), 40)}»: say it in a sentence or drop it"))
+                    break
+            if profile == "nick":
+                bm = BRITISH.search(b)
+                if bm:
+                    soft.append(("British spelling in a US campaign", tag, f"«{bm.group(0)}»"))
             if len(b) > caps_of(fm)[n]:
                 hard.append(("too long", tag, f"{len(b)} / {caps_of(fm)[n]}"))
             lines = [x.strip() for x in b.splitlines() if x.strip()]
@@ -2113,8 +2187,18 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
         # the name is fine, so this stays a note.
         g = group_of(p, gmap)
         m1_low = (msgs.get(1) or "").lower()
+        # The product by name, 2026-11-20 (us-connected-fitness, QC 11/20, Vadim): 11 Peloton
+        # M1s said "a body scan" and "80+ body measurements" and never FitXpress or 3DLOOK,
+        # which the product-specific check above accepts.
+        if m1_low and not any(nm in m1_low for nm in PRODUCT_NAMES.get(
+                str(fm.get("product", "fitxpress")).lower(), ("fitxpress", "3dlook"))):
+            (hard if strict else soft).append(
+                ("no product name in Message 1", f"{pid} M1",
+                 "name FitXpress or 3DLOOK (Mobile Tailor for mobile_tailor) in Message 1"))
         if m1_low and g and g != "?":
-            names = company_names(g)        # copy says "9am" for 9amHealth, "Guardian" for Guardian Life
+            # copy says "9am" for 9amHealth, "Guardian" for Guardian Life, "FORME" for
+            # "Interactive Strength (FORME, CLMBR)"
+            names = company_names(g) | gforms.get(g, set())
             if not any(nm and nm in m1_low for nm in names):
                 (hard if strict else soft).append(
                     ("no company line", f"{pid} M1",
@@ -2224,13 +2308,57 @@ def run_check(cdir: Path, batch: str | None = None, quiet_ok: bool = False) -> i
                     # (QC 2026-11-05: Munich Re 7/7 on one alitheia sentence). The product
                     # description and the data-handling forms may share wording, never a whole
                     # sentence; everything else may not share a near-copy either.
+                    # 2026-11-20, Vadim «і дослівно теж можна»: colleagues may get the same
+                    # sentence when it fits each of them, so this is a note, never a failure.
                     same = re.sub(r"\W+", " ", sa).strip() == re.sub(r"\W+", " ", sb).strip()
                     free = not (PRODUCT_SENT.search(ra) or DATA_FORMS.search(ra))
                     if strict and (same or (ratio >= 0.9 and free)):
-                        hard.append(("same sentence at one company", f"{g}: {pa} / {pb}",
-                                     f"«{clip(ra, 60)}»: reword one of them"))
+                        soft.append(("same sentence at one company", f"{g}: {pa} / {pb}",
+                                     f"«{clip(ra, 60)}»: allowed when it fits both (Vadim 2026-11-20)"))
                     else:
                         soft.append(("near-duplicate sentence", f"{g}: {pa} / {pb}", f"«{clip(sa, 50)}»"))
+    # Message 2 across companies, 2026-11-20 (us-connected-fitness, QC 11/20, Vadim): four
+    # batches could not see each other, and Eric Reimers (Trainerize) got Brandon Cowley's
+    # (BODi) Message 2, Heidi Jones (Echelon) Danaé Hirsch's (iFIT). Mandated, product and
+    # data-handling sentences may repeat across companies; any other whole sentence may not,
+    # and neither may a whole body (greeting, call line and signature left out).
+    m2_sents: dict[str, set[tuple[str, str]]] = defaultdict(set)
+    m2_core: list[tuple[str, str, str]] = []
+    for p in people:
+        b = bodies.get((p["person_id"], 2))
+        if not b:
+            continue
+        g = group_of(p, gmap)
+        paras = [x.strip() for x in b.split("\n\n") if x.strip()]
+        core = re.sub(r"https?://\S+", "", " ".join(paras[1:-2] if len(paras) > 3 else paras[1:-1]))
+        norm = re.sub(r"\W+", " ", core.lower()).strip()
+        if norm:
+            m2_core.append((g, p["person_id"], norm))
+        for s in re.split(r"(?<=[.?!])\s+", core):
+            s = s.strip()
+            low = s.lower()
+            if len(s) <= 40 or any(v in low for v in verbatim) or any(st in low for st in MANDATED_STEMS) \
+                    or any(q in low for q in quoted) or PRODUCT_SENT.search(s) or DATA_FORMS.search(s):
+                continue
+            m2_sents[re.sub(r"\W+", " ", low).strip()].add((g, p["person_id"]))
+    for s, who in m2_sents.items():
+        groups = {g for g, _ in who}
+        if len(groups) >= 2:
+            pairs = sorted(who)
+            (hard if strict else soft).append(
+                ("same Message 2 sentence at two companies",
+                 ", ".join(f"{g}: {pid}" for g, pid in pairs[:4]),
+                 f"«{clip(s, 60)}»: reword all but one"))
+    for i in range(len(m2_core)):
+        for j in range(i + 1, len(m2_core)):
+            (ga, pa, ca), (gb, pb, cb) = m2_core[i], m2_core[j]
+            if ga == gb:
+                continue
+            sm = difflib.SequenceMatcher(None, ca, cb)
+            if sm.real_quick_ratio() >= 0.9 and sm.quick_ratio() >= 0.9 and sm.ratio() >= 0.9:
+                (hard if strict else soft).append(
+                    ("Message 2 repeated at another company", f"{ga}: {pa} / {gb}: {pb}",
+                     "the two bodies are the same: give one its own value point"))
     # Sentence openings within a company, 2026-10-07 (eu-weight-loss-nutrition): the card's
     # sample easy out went into ~30 messages and one product-sentence opening into 10 of 15
     # people at one network. Their endings differed, so the whole-sentence check above

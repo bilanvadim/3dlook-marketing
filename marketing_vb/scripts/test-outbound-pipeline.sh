@@ -649,6 +649,42 @@ print(m.icp_segment(pathlib.Path("brand-assets/product-info/icp-detail.md"), sys
 grep_check "ICP §1 for fitxpress is the FitXpress segment" "^## 1\. Telehealth" python3 -c "$ICP_SEG" fitxpress
 check "ICP §1 for fitxpress carries no Mobile Tailor segment -> 1" 1 sh -c "python3 -c '$ICP_SEG' fitxpress | grep -q 'MTM Brands'"
 grep_check "ICP §1 for mobile_tailor is the MTM segment" "^## 1\. MTM Brands" python3 -c "$ICP_SEG" mobile_tailor
+# compact used to drop any headline that contained the title or was 80% like it, and cut
+# everything after "at"/"@": "VP, Data Product" vanished under the title "VP, Product" and
+# a P1 went out on the wrong function (2026-11-20, us-connected-fitness).
+HL='import importlib.util as u, sys
+s = u.spec_from_file_location("op", "scripts/outbound_pack.py"); m = u.module_from_spec(s); s.loader.exec_module(m)
+print(m.headline_if_new(sys.argv[1], sys.argv[2], sys.argv[3]) or "<dropped>")'
+grep_check "headline near the title but adds a word -> kept" "^VP, Data Product$" python3 -c "$HL" "VP, Data Product" "VP, Product" "Ladder"
+grep_check "headline repeats the title, then adds -> kept" "Onboarding" python3 -c "$HL" "Senior Product Manager | Discovery | Onboarding & Activation" "Senior Product Manager" "Everfit"
+grep_check "text after @ that adds brands -> kept" "Ergatta" python3 -c "$HL" "Founder & CEO @ Interactive Strength | Wattbike, Ergatta" "Founder & CEO" "Interactive Strength Inc."
+grep_check "title + company only -> dropped" "^<dropped>$" python3 -c "$HL" "VP of Product at Peloton Interactive" "VP of Product" "Peloton Interactive"
+grep_check "abbreviation of the title -> dropped" "^<dropped>$" python3 -c "$HL" "Sr. Director of Engineering @ Peloton" "Senior Director of Engineering" "Peloton Interactive"
+# A brand list in brackets: account facts banned the holding name, so M1 named "FORME"
+# alone and the gate failed it as "no company line" (2026-11-20).
+CN='import importlib.util as u, sys
+s = u.spec_from_file_location("op", "scripts/outbound_pack.py"); m = u.module_from_spec(s); s.loader.exec_module(m)
+print("yes" if sys.argv[2] in m.company_names(sys.argv[1]) else "no")'
+grep_check "bracket brand list: each brand is a name form" "^yes$" python3 -c "$CN" "Interactive Strength (FORME, CLMBR)" "forme"
+grep_check "bracket brand list: the second brand too" "^yes$" python3 -c "$CN" "Interactive Strength (FORME, CLMBR)" "clmbr"
+grep_check "short fragments are not name forms" "^no$" python3 -c "$CN" "Acme (A, B)" "a"
+BR='import importlib.util as u, sys
+s = u.spec_from_file_location("op", "scripts/outbound_pack.py"); m = u.module_from_spec(s); s.loader.exec_module(m)
+print("yes" if m.BRITISH.search(sys.argv[1]) else "no")'
+grep_check "British: personalised is caught" "^yes$" python3 -c "$BR" "builds personalised guidance"
+grep_check "British: white-labelled is caught" "^yes$" python3 -c "$BR" "white-labelled screens"
+grep_check "British: exercise and franchise are not" "^no$" python3 -c "$BR" "exercise at a franchise, called and filled"
+grep_check "British: the brand Centr is not centre" "^no$" python3 -c "$BR" "Centr members"
+# The gate groups people under "Interactive Strength" (brackets cut), so it must take the
+# name forms from the shortlist row, brackets included.
+GNF_DIR=$(mktemp -d)
+printf 'company_name,website\n"Interactive Strength (FORME, CLMBR)",https://x.example\nPeloton,https://y.example\n' > "$GNF_DIR/companies.csv"
+GNF='import importlib.util as u, pathlib, sys
+s = u.spec_from_file_location("op", "scripts/outbound_pack.py"); m = u.module_from_spec(s); s.loader.exec_module(m)
+f = m.group_name_forms(pathlib.Path(sys.argv[1]))
+print("yes" if "forme" in f.get("Interactive Strength", set()) else "no")'
+grep_check "group name forms keep the bracket brands" "^yes$" python3 -c "$GNF" "$GNF_DIR"
+rm -rf "$GNF_DIR"
 
 cat > "$CAMP/$P/decisions.csv" <<'EOF'
 person_id,decision,priority,angle,wave,reason
@@ -883,15 +919,15 @@ BS="$CAMP/$P/messages/_batch-strict.md"
       "A scan between check-ins could show change before members lose interest.
 
 Open to a call on where it fits? $CAL"
-  msg finn-gade Finn "Noticed the retention work at Groupco. Two photos in the app give each member a fresh set of body measurements. Where does churn start for your members today?" \
+  msg finn-gade Finn "Noticed the retention work at Groupco. Two photos in FitXpress give each member a fresh set of body measurements. Where does churn start for your members today?" \
       "Members who see their waist change tend to stay longer.
 
 Would a short talk on retention help? Pick a time at $CAL"
-  msg dan-eriksson Dan "Caught my eye: growth at Gamma depends on month two. Two phone photos return 80+ body measurements in the app. What keeps a new member past the first month?" \
+  msg dan-eriksson Dan "Caught my eye: growth at Gamma depends on month two. With FitXpress, two phone photos return 80+ body measurements in the app. What keeps a new member past the first month?" \
       "Visible change in month two can protect payback.
 
 Happy to walk through it on a call: $CAL"
-  msg cara-dahl Cara "Curious who at Groupco owns body-progress features in the app. A body scan from two photos returns 80+ measurements for each member. Who would be the right person to ask?" \
+  msg cara-dahl Cara "Curious who at Groupco owns body-progress features in the app. A 3DLOOK body scan from two photos returns 80+ measurements for each member. Who would be the right person to ask?" \
       "If it sits with product, a name is enough.
 
 Open to a short call either way? $CAL"; } > "$BS"
@@ -916,9 +952,28 @@ mutate "a call line that offers no call" "$BS" '^Open to a call on where it fits
 grep_check "strict: a link with no call offer fails" "✗ no call offer by the link" \
   $OP split-messages --campaign $P --in messages/_batch-strict.md
 cp "$BS.good" "$BS"
+# 2026-11-20 (us-connected-fitness, QC 11/20, Vadim): 11 Peloton M1s never named the product.
+mutate "the product out of Anna's M1" "$BS" 'FitXpress returns 80\+ body measurements from two photos taken in the app\.' 'It returns 80+ body measurements from two photos taken in the app.'
+grep_check "strict: an M1 that never names the product fails" "✗ no product name in Message 1" \
+  $OP split-messages --campaign $P --in messages/_batch-strict.md
+cp "$BS.good" "$BS"
+# 2026-11-20: parallel batches gave two companies one Message 2 (Trainerize = BODi).
+mutate "Anna's value line for Dan at Gamma" "$BS" '^Visible change in month two can protect payback\.$' 'A scan between check-ins could show change before members lose interest.'
+grep_check "strict: one Message 2 sentence at two companies fails" "✗ same Message 2 sentence at two companies" \
+  $OP split-messages --campaign $P --in messages/_batch-strict.md
+grep_check "strict: and the whole body is flagged" "✗ Message 2 repeated at another company" \
+  $OP split-messages --campaign $P --in messages/_batch-strict.md
+cp "$BS.good" "$BS"
+mutate "a label before a number" "$BS" '^Visible change in month two can protect payback\.$' 'Visible change in month two can protect payback.\n\nFor scale: 112,100 scans in 2025.'
+grep_check "a label before a number is noted" "label before a number or link" \
+  $OP split-messages --campaign $P --in messages/_batch-strict.md
+cp "$BS.good" "$BS"
 mutate "one sentence for Anna" "$BS" '^A scan between check-ins could show change before members lose interest\.$' 'Members who notice change early tend to renew their plan for another season.'
 mutate "the same sentence for Finn" "$BS" '^Members who see their waist change tend to stay longer\.$' 'Members who notice change early tend to renew their plan for another season.'
-grep_check "strict: the same sentence at one company fails" "✗ same sentence at one company" \
+# 2026-11-20, Vadim «і дослівно теж можна»: the same sentence for two colleagues is a note now.
+check "strict: the same sentence at one company passes -> 0" 0 \
+  $OP split-messages --campaign $P --in messages/_batch-strict.md
+grep_check "strict: and it is still noted" "same sentence at one company" \
   $OP split-messages --campaign $P --in messages/_batch-strict.md
 mutate "that sentence quoted in the rules" "$CAMP/$P/hypothesis.md" '^(- No client is named anywhere in cold copy\.)$' \
   '\1\n- Value line, verbatim: "Members who notice change early tend to renew their plan for another season."'
