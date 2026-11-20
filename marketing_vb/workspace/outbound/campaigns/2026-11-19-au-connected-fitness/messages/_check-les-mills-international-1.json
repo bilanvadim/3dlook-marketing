@@ -1,0 +1,3085 @@
+{
+ "campaign": "2026-11-19-au-connected-fitness",
+ "checked": 39,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "les-mills-international-1",
+ "generated": "2026-11-20T21:21:03",
+ "hard": [],
+ "soft": [
+  [
+   "pricing word",
+   "steven-renata-44133bb M1",
+   "Which tier would a view like that belong in?"
+  ],
+  [
+   "pricing word",
+   "steven-renata-44133bb M2",
+   "Hi Steven, A pilot is the plain way to settle the tier."
+  ],
+  [
+   "pricing word",
+   "jessica-farrow-1a000423 M1",
+   "A 3D progress view is the kind of feature that could sit in a paid tier."
+  ],
+  [
+   "pricing word",
+   "jessica-farrow-1a000423 M2",
+   "Hi Jessica, Whichever tier it lands in, a pilot would show how it behaves."
+  ],
+  [
+   "pricing word",
+   "elliot-de-lautour-063048a0 M2",
+   "Hi Elliot, A one-cohort pilot would give the tier question an answer."
+  ],
+  [
+   "pricing word",
+   "marina-nola-0796a1 M1",
+   "3D Body Progress tracking sits on the Pro plan, as a feature a paid tier can carry."
+  ],
+  [
+   "pricing word",
+   "marina-nola-0796a1 M2",
+   "A pilot with one cohort would test the tier idea, and Base-to-Premium conversion is among the counts."
+  ],
+  [
+   "M1 closing ask repeated",
+   "Les Mills International ×4",
+   "«how does your team test a new onboarding step on…»: cam--adams, rhea-s-66014110, andrewyarham, elliot-smith-b4b3a1244"
+  ],
+  [
+   "M1 closing ask repeated",
+   "Les Mills International ×2",
+   "«would a body scan belong at onboarding or at the…»: amberataylor, kim-walker-9978336"
+  ],
+  [
+   "M1 closing ask repeated",
+   "Les Mills International ×2",
+   "«which membership level would 3d progress views be…»: jeremycarreon, elliot-de-lautour-063048a0"
+  ],
+  [
+   "M1 closing ask repeated",
+   "Les Mills International ×2",
+   "«what does a member see at the first progress chec…»: alice-huangxin-liang-977558b4, adam-lazarus-2a24a247"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Les Mills International ×12",
+   "«open to a quick chat?»: lisa-osborne-24996268, steven-renata-44133bb, mheyns, alex-hopkins-0a1a6959"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Les Mills International ×21",
+   "«worth a quick chat?»: llori-valenzuela-79580b1, jason-paris-3404565, gandalf-archer-1bb8876, phillip-mills-0784428"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Les Mills International ×6",
+   "«might be worth a quick chat?»: james-graham-25b12b42, jessica-farrow-1a000423, carlo-tonin, laura-oldeman-b36b216b"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / llori-valenzuela-79580b1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / sally-berlin-8793099",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / steven-renata-44133bb",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / james-graham-25b12b42",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / elinor-quayle-b3bb2113",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / mheyns",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / keryn-mckenzie-714b9554",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / gemma-lynskey-60413028",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / alex-hopkins-0a1a6959",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / sam-hambling",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / tom-o-connor-78b60b30",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / lacey-churcher-84519360",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / carlo-tonin",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / micayla-wright-a5a306155",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / cam--adams",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / amberataylor",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / andrew-flavell-dr-eng-59a3a9",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / jeremycarreon",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: lisa-osborne-24996268 / laura-oldeman-b36b216b",
+   "«a weight entry on its own leaves out waist and le…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / kim-walker-9978336",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / chris-richardson-bb6a3aa1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / andrewyarham",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / derek-tomes-687445145",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / malcolm-black-onzm-3a221238",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / elliot-smith-b4b3a1244",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / elliot-de-lautour-063048a0",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / marina-nola-0796a1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / alysha-kennedy",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lisa-osborne-24996268 / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: lisa-osborne-24996268 / jason-paris-3404565",
+   "«fitxpress is a white-label scan inside the app: t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: lisa-osborne-24996268 / sarah-ostergaard-40931a93",
+   "«fitxpress is a white-label scan inside the app: t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: lisa-osborne-24996268 / alice-huangxin-liang-977558b4",
+   "«fitxpress is a white-label scan inside the app: t…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / sally-berlin-8793099",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / steven-renata-44133bb",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / james-graham-25b12b42",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / elinor-quayle-b3bb2113",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / mheyns",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / keryn-mckenzie-714b9554",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / gemma-lynskey-60413028",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / alex-hopkins-0a1a6959",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / sam-hambling",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / tom-o-connor-78b60b30",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / lacey-churcher-84519360",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / carlo-tonin",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / micayla-wright-a5a306155",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / cam--adams",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / amberataylor",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / andrew-flavell-dr-eng-59a3a9",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / jeremycarreon",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: llori-valenzuela-79580b1 / laura-oldeman-b36b216b",
+   "«a weight entry on its own leaves out waist and le…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / kim-walker-9978336",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / chris-richardson-bb6a3aa1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / andrewyarham",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / derek-tomes-687445145",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / malcolm-black-onzm-3a221238",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / elliot-smith-b4b3a1244",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / elliot-de-lautour-063048a0",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / marina-nola-0796a1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / alysha-kennedy",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: llori-valenzuela-79580b1 / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: jason-paris-3404565 / tom-o-connor-78b60b30",
+   "«Hi Jason, Since April 2026 the LES MILLS+ workouts have had…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: jason-paris-3404565 / elinor-quayle-b3bb2113",
+   "«fitxpress is a white-label scan that runs in the…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: jason-paris-3404565 / cam--adams",
+   "«fitxpress is a white-label scan that runs in the…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: jason-paris-3404565 / amberataylor",
+   "«fitxpress is a white-label scan that runs in the…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: jason-paris-3404565 / andrew-flavell-dr-eng-59a3a9",
+   "«fitxpress is a white-label scan that runs in the…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: jason-paris-3404565 / jeremycarreon",
+   "«fitxpress is a white-label scan that runs in the…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: jason-paris-3404565 / laura-oldeman-b36b216b",
+   "«fitxpress is a white-label scan that runs in the…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: jason-paris-3404565 / chris-richardson-bb6a3aa1",
+   "«fitxpress is a white-label scan that runs in the…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: jason-paris-3404565 / alice-huangxin-liang-977558b4",
+   "«fitxpress is a white-label scan that runs in the…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: jason-paris-3404565 / andrewyarham",
+   "«fitxpress is a white-label scan that runs in the…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: jason-paris-3404565 / elliot-smith-b4b3a1244",
+   "«fitxpress is a white-label scan that runs in the…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: jason-paris-3404565 / adam-lazarus-2a24a247",
+   "«fitxpress is a white-label scan that runs in the…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: jason-paris-3404565 / sophie-hall-5b165273",
+   "«fitxpress is a white-label scan that runs in the…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: gandalf-archer-1bb8876 / steven-renata-44133bb",
+   "«fitxpress is a white-label scan in the app: two g…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: gandalf-archer-1bb8876 / jessica-farrow-1a000423",
+   "«fitxpress is a white-label scan in the app: two g…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: gandalf-archer-1bb8876 / cam--adams",
+   "«fitxpress is a white-label scan in the app: two g…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: gandalf-archer-1bb8876 / rhea-s-66014110",
+   "«fitxpress is a white-label scan in the app: two g…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: gandalf-archer-1bb8876 / jeremycarreon",
+   "«fitxpress is a white-label scan in the app: two g…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: gandalf-archer-1bb8876 / chris-richardson-bb6a3aa1",
+   "«fitxpress is a white-label scan in the app: two g…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: gandalf-archer-1bb8876 / alice-huangxin-liang-977558b4",
+   "«fitxpress is a white-label scan in the app: two g…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: gandalf-archer-1bb8876 / andrewyarham",
+   "«fitxpress is a white-label scan in the app: two g…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: gandalf-archer-1bb8876 / malcolm-black-onzm-3a221238",
+   "«fitxpress is a white-label scan in the app: two g…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: gandalf-archer-1bb8876 / elliot-de-lautour-063048a0",
+   "«fitxpress is a white-label scan in the app: two g…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: gandalf-archer-1bb8876 / marina-nola-0796a1",
+   "«fitxpress is a white-label scan in the app: two g…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: gandalf-archer-1bb8876 / adam-lazarus-2a24a247",
+   "«fitxpress is a white-label scan in the app: two g…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: gandalf-archer-1bb8876 / laura-oldeman-b36b216b",
+   "«A weight figure leaves out waist and fat mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: phillip-mills-0784428 / jessica-farrow-1a000423",
+   "«members in the pilot scan at onboarding and at th…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: sally-berlin-8793099 / gemma-lynskey-60413028",
+   "«hi sally, les mills+ has shipped roughly monthly…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / steven-renata-44133bb",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / james-graham-25b12b42",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / elinor-quayle-b3bb2113",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / mheyns",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / keryn-mckenzie-714b9554",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / alex-hopkins-0a1a6959",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / sam-hambling",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / tom-o-connor-78b60b30",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / lacey-churcher-84519360",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / carlo-tonin",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / micayla-wright-a5a306155",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / cam--adams",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / amberataylor",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / andrew-flavell-dr-eng-59a3a9",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / jeremycarreon",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: sally-berlin-8793099 / laura-oldeman-b36b216b",
+   "«a weight entry on its own leaves out waist and le…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / kim-walker-9978336",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / chris-richardson-bb6a3aa1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / andrewyarham",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / derek-tomes-687445145",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / malcolm-black-onzm-3a221238",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / elliot-smith-b4b3a1244",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / elliot-de-lautour-063048a0",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / marina-nola-0796a1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / alysha-kennedy",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sally-berlin-8793099 / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / james-graham-25b12b42",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / elinor-quayle-b3bb2113",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / mheyns",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / keryn-mckenzie-714b9554",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / gemma-lynskey-60413028",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / alex-hopkins-0a1a6959",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / sam-hambling",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / tom-o-connor-78b60b30",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / lacey-churcher-84519360",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / carlo-tonin",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / micayla-wright-a5a306155",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / cam--adams",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / amberataylor",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / andrew-flavell-dr-eng-59a3a9",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / jeremycarreon",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: steven-renata-44133bb / laura-oldeman-b36b216b",
+   "«a weight entry on its own leaves out waist and le…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / kim-walker-9978336",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / chris-richardson-bb6a3aa1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / andrewyarham",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / derek-tomes-687445145",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / malcolm-black-onzm-3a221238",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / elliot-smith-b4b3a1244",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / elliot-de-lautour-063048a0",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / marina-nola-0796a1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / alysha-kennedy",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: steven-renata-44133bb / jessica-farrow-1a000423",
+   "«FitXpress is a white-label scan inside the app: two guided…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: steven-renata-44133bb / rhea-s-66014110",
+   "«fitxpress is a white-label scan inside the app: t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: steven-renata-44133bb / alice-huangxin-liang-977558b4",
+   "«one member cohort scans at the first check-in, a…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / elinor-quayle-b3bb2113",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / mheyns",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / keryn-mckenzie-714b9554",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / gemma-lynskey-60413028",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / alex-hopkins-0a1a6959",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / sam-hambling",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / tom-o-connor-78b60b30",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / lacey-churcher-84519360",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / carlo-tonin",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / micayla-wright-a5a306155",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / cam--adams",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / amberataylor",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / andrew-flavell-dr-eng-59a3a9",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / jeremycarreon",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: james-graham-25b12b42 / laura-oldeman-b36b216b",
+   "«a weight entry on its own leaves out waist and le…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / kim-walker-9978336",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / chris-richardson-bb6a3aa1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / andrewyarham",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / derek-tomes-687445145",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / malcolm-black-onzm-3a221238",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / elliot-smith-b4b3a1244",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / elliot-de-lautour-063048a0",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / marina-nola-0796a1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / alysha-kennedy",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: james-graham-25b12b42 / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: james-graham-25b12b42 / alice-huangxin-liang-977558b4",
+   "«hi james, a one-cohort pilot would show what memb…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elinor-quayle-b3bb2113 / mheyns",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elinor-quayle-b3bb2113 / keryn-mckenzie-714b9554",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elinor-quayle-b3bb2113 / gemma-lynskey-60413028",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elinor-quayle-b3bb2113 / alex-hopkins-0a1a6959",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elinor-quayle-b3bb2113 / sam-hambling",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elinor-quayle-b3bb2113 / tom-o-connor-78b60b30",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elinor-quayle-b3bb2113 / lacey-churcher-84519360",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elinor-quayle-b3bb2113 / carlo-tonin",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elinor-quayle-b3bb2113 / micayla-wright-a5a306155",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elinor-quayle-b3bb2113 / cam--adams",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elinor-quayle-b3bb2113 / amberataylor",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elinor-quayle-b3bb2113 / andrew-flavell-dr-eng-59a3a9",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elinor-quayle-b3bb2113 / jeremycarreon",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: elinor-quayle-b3bb2113 / laura-oldeman-b36b216b",
+   "«a weight entry on its own leaves out waist and le…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elinor-quayle-b3bb2113 / kim-walker-9978336",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elinor-quayle-b3bb2113 / chris-richardson-bb6a3aa1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elinor-quayle-b3bb2113 / andrewyarham",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elinor-quayle-b3bb2113 / derek-tomes-687445145",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elinor-quayle-b3bb2113 / malcolm-black-onzm-3a221238",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elinor-quayle-b3bb2113 / elliot-smith-b4b3a1244",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elinor-quayle-b3bb2113 / elliot-de-lautour-063048a0",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elinor-quayle-b3bb2113 / marina-nola-0796a1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elinor-quayle-b3bb2113 / alysha-kennedy",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elinor-quayle-b3bb2113 / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elinor-quayle-b3bb2113 / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elinor-quayle-b3bb2113 / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: elinor-quayle-b3bb2113 / alice-huangxin-liang-977558b4",
+   "«fitxpress is a white-label scan: two guided photo…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: mheyns / keryn-mckenzie-714b9554",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: mheyns / gemma-lynskey-60413028",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: mheyns / alex-hopkins-0a1a6959",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: mheyns / sam-hambling",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: mheyns / tom-o-connor-78b60b30",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: mheyns / lacey-churcher-84519360",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: mheyns / carlo-tonin",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: mheyns / micayla-wright-a5a306155",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: mheyns / cam--adams",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: mheyns / amberataylor",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: mheyns / andrew-flavell-dr-eng-59a3a9",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: mheyns / jeremycarreon",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: mheyns / laura-oldeman-b36b216b",
+   "«a weight entry on its own leaves out waist and le…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: mheyns / kim-walker-9978336",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: mheyns / chris-richardson-bb6a3aa1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: mheyns / andrewyarham",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: mheyns / derek-tomes-687445145",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: mheyns / malcolm-black-onzm-3a221238",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: mheyns / elliot-smith-b4b3a1244",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: mheyns / elliot-de-lautour-063048a0",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: mheyns / marina-nola-0796a1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: mheyns / alysha-kennedy",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: mheyns / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: mheyns / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: mheyns / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: jessica-farrow-1a000423 / rhea-s-66014110",
+   "«fitxpress is a white-label scan inside the app: t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: jessica-farrow-1a000423 / jeremycarreon",
+   "«fitxpress is a white-label scan inside the app: t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: jessica-farrow-1a000423 / andrewyarham",
+   "«fitxpress is a white-label scan inside the app: t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: jessica-farrow-1a000423 / malcolm-black-onzm-3a221238",
+   "«fitxpress is a white-label scan inside the app: t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: jessica-farrow-1a000423 / elliot-de-lautour-063048a0",
+   "«fitxpress is a white-label scan inside the app: t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: jessica-farrow-1a000423 / marina-nola-0796a1",
+   "«fitxpress is a white-label scan inside the app: t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: jessica-farrow-1a000423 / adam-lazarus-2a24a247",
+   "«fitxpress is a white-label scan inside the app: t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: jessica-farrow-1a000423 / charlotte-lovell",
+   "«fitxpress is a white-label scan inside the app: t…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: keryn-mckenzie-714b9554 / gemma-lynskey-60413028",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: keryn-mckenzie-714b9554 / alex-hopkins-0a1a6959",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: keryn-mckenzie-714b9554 / sam-hambling",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: keryn-mckenzie-714b9554 / tom-o-connor-78b60b30",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: keryn-mckenzie-714b9554 / lacey-churcher-84519360",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: keryn-mckenzie-714b9554 / carlo-tonin",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: keryn-mckenzie-714b9554 / micayla-wright-a5a306155",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: keryn-mckenzie-714b9554 / cam--adams",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: keryn-mckenzie-714b9554 / amberataylor",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: keryn-mckenzie-714b9554 / andrew-flavell-dr-eng-59a3a9",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: keryn-mckenzie-714b9554 / jeremycarreon",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: keryn-mckenzie-714b9554 / laura-oldeman-b36b216b",
+   "«a weight entry on its own leaves out waist and le…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: keryn-mckenzie-714b9554 / kim-walker-9978336",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: keryn-mckenzie-714b9554 / chris-richardson-bb6a3aa1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: keryn-mckenzie-714b9554 / andrewyarham",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: keryn-mckenzie-714b9554 / derek-tomes-687445145",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: keryn-mckenzie-714b9554 / malcolm-black-onzm-3a221238",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: keryn-mckenzie-714b9554 / elliot-smith-b4b3a1244",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: keryn-mckenzie-714b9554 / elliot-de-lautour-063048a0",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: keryn-mckenzie-714b9554 / marina-nola-0796a1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: keryn-mckenzie-714b9554 / alysha-kennedy",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: keryn-mckenzie-714b9554 / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: keryn-mckenzie-714b9554 / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: keryn-mckenzie-714b9554 / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: gemma-lynskey-60413028 / alex-hopkins-0a1a6959",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: gemma-lynskey-60413028 / sam-hambling",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: gemma-lynskey-60413028 / tom-o-connor-78b60b30",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: gemma-lynskey-60413028 / lacey-churcher-84519360",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: gemma-lynskey-60413028 / carlo-tonin",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: gemma-lynskey-60413028 / micayla-wright-a5a306155",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: gemma-lynskey-60413028 / cam--adams",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: gemma-lynskey-60413028 / amberataylor",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: gemma-lynskey-60413028 / andrew-flavell-dr-eng-59a3a9",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: gemma-lynskey-60413028 / jeremycarreon",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: gemma-lynskey-60413028 / laura-oldeman-b36b216b",
+   "«a weight entry on its own leaves out waist and le…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: gemma-lynskey-60413028 / kim-walker-9978336",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: gemma-lynskey-60413028 / chris-richardson-bb6a3aa1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: gemma-lynskey-60413028 / andrewyarham",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: gemma-lynskey-60413028 / derek-tomes-687445145",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: gemma-lynskey-60413028 / malcolm-black-onzm-3a221238",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: gemma-lynskey-60413028 / elliot-smith-b4b3a1244",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: gemma-lynskey-60413028 / elliot-de-lautour-063048a0",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: gemma-lynskey-60413028 / marina-nola-0796a1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: gemma-lynskey-60413028 / alysha-kennedy",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: gemma-lynskey-60413028 / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: gemma-lynskey-60413028 / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: gemma-lynskey-60413028 / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: alex-hopkins-0a1a6959 / sam-hambling",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: alex-hopkins-0a1a6959 / tom-o-connor-78b60b30",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: alex-hopkins-0a1a6959 / lacey-churcher-84519360",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: alex-hopkins-0a1a6959 / carlo-tonin",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: alex-hopkins-0a1a6959 / micayla-wright-a5a306155",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: alex-hopkins-0a1a6959 / cam--adams",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: alex-hopkins-0a1a6959 / amberataylor",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: alex-hopkins-0a1a6959 / andrew-flavell-dr-eng-59a3a9",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: alex-hopkins-0a1a6959 / jeremycarreon",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: alex-hopkins-0a1a6959 / laura-oldeman-b36b216b",
+   "«a weight entry on its own leaves out waist and le…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: alex-hopkins-0a1a6959 / kim-walker-9978336",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: alex-hopkins-0a1a6959 / chris-richardson-bb6a3aa1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: alex-hopkins-0a1a6959 / andrewyarham",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: alex-hopkins-0a1a6959 / derek-tomes-687445145",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: alex-hopkins-0a1a6959 / malcolm-black-onzm-3a221238",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: alex-hopkins-0a1a6959 / elliot-smith-b4b3a1244",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: alex-hopkins-0a1a6959 / elliot-de-lautour-063048a0",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: alex-hopkins-0a1a6959 / marina-nola-0796a1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: alex-hopkins-0a1a6959 / alysha-kennedy",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: alex-hopkins-0a1a6959 / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: alex-hopkins-0a1a6959 / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: alex-hopkins-0a1a6959 / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sam-hambling / tom-o-connor-78b60b30",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sam-hambling / lacey-churcher-84519360",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sam-hambling / carlo-tonin",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sam-hambling / micayla-wright-a5a306155",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sam-hambling / cam--adams",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sam-hambling / amberataylor",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sam-hambling / andrew-flavell-dr-eng-59a3a9",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sam-hambling / jeremycarreon",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: sam-hambling / laura-oldeman-b36b216b",
+   "«a weight entry on its own leaves out waist and le…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sam-hambling / kim-walker-9978336",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sam-hambling / chris-richardson-bb6a3aa1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sam-hambling / andrewyarham",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sam-hambling / derek-tomes-687445145",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sam-hambling / malcolm-black-onzm-3a221238",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sam-hambling / elliot-smith-b4b3a1244",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sam-hambling / elliot-de-lautour-063048a0",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sam-hambling / marina-nola-0796a1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sam-hambling / alysha-kennedy",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sam-hambling / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sam-hambling / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: sam-hambling / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: tom-o-connor-78b60b30 / lacey-churcher-84519360",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: tom-o-connor-78b60b30 / carlo-tonin",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: tom-o-connor-78b60b30 / micayla-wright-a5a306155",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: tom-o-connor-78b60b30 / cam--adams",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: tom-o-connor-78b60b30 / amberataylor",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: tom-o-connor-78b60b30 / andrew-flavell-dr-eng-59a3a9",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: tom-o-connor-78b60b30 / jeremycarreon",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: tom-o-connor-78b60b30 / laura-oldeman-b36b216b",
+   "«a weight entry on its own leaves out waist and le…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: tom-o-connor-78b60b30 / kim-walker-9978336",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: tom-o-connor-78b60b30 / chris-richardson-bb6a3aa1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: tom-o-connor-78b60b30 / andrewyarham",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: tom-o-connor-78b60b30 / derek-tomes-687445145",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: tom-o-connor-78b60b30 / malcolm-black-onzm-3a221238",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: tom-o-connor-78b60b30 / elliot-smith-b4b3a1244",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: tom-o-connor-78b60b30 / elliot-de-lautour-063048a0",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: tom-o-connor-78b60b30 / marina-nola-0796a1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: tom-o-connor-78b60b30 / alysha-kennedy",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: tom-o-connor-78b60b30 / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: tom-o-connor-78b60b30 / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: tom-o-connor-78b60b30 / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lacey-churcher-84519360 / carlo-tonin",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lacey-churcher-84519360 / micayla-wright-a5a306155",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lacey-churcher-84519360 / cam--adams",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lacey-churcher-84519360 / amberataylor",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lacey-churcher-84519360 / andrew-flavell-dr-eng-59a3a9",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lacey-churcher-84519360 / jeremycarreon",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: lacey-churcher-84519360 / laura-oldeman-b36b216b",
+   "«a weight entry on its own leaves out waist and le…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lacey-churcher-84519360 / kim-walker-9978336",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lacey-churcher-84519360 / chris-richardson-bb6a3aa1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lacey-churcher-84519360 / andrewyarham",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lacey-churcher-84519360 / derek-tomes-687445145",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lacey-churcher-84519360 / malcolm-black-onzm-3a221238",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lacey-churcher-84519360 / elliot-smith-b4b3a1244",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lacey-churcher-84519360 / elliot-de-lautour-063048a0",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lacey-churcher-84519360 / marina-nola-0796a1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lacey-churcher-84519360 / alysha-kennedy",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lacey-churcher-84519360 / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lacey-churcher-84519360 / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: lacey-churcher-84519360 / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: carlo-tonin / micayla-wright-a5a306155",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: carlo-tonin / cam--adams",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: carlo-tonin / amberataylor",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: carlo-tonin / andrew-flavell-dr-eng-59a3a9",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: carlo-tonin / jeremycarreon",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: carlo-tonin / laura-oldeman-b36b216b",
+   "«a weight entry on its own leaves out waist and le…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: carlo-tonin / kim-walker-9978336",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: carlo-tonin / chris-richardson-bb6a3aa1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: carlo-tonin / andrewyarham",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: carlo-tonin / derek-tomes-687445145",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: carlo-tonin / malcolm-black-onzm-3a221238",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: carlo-tonin / elliot-smith-b4b3a1244",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: carlo-tonin / elliot-de-lautour-063048a0",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: carlo-tonin / marina-nola-0796a1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: carlo-tonin / alysha-kennedy",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: carlo-tonin / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: carlo-tonin / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: carlo-tonin / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: micayla-wright-a5a306155 / cam--adams",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: micayla-wright-a5a306155 / amberataylor",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: micayla-wright-a5a306155 / andrew-flavell-dr-eng-59a3a9",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: micayla-wright-a5a306155 / jeremycarreon",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: micayla-wright-a5a306155 / laura-oldeman-b36b216b",
+   "«a weight entry on its own leaves out waist and le…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: micayla-wright-a5a306155 / kim-walker-9978336",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: micayla-wright-a5a306155 / chris-richardson-bb6a3aa1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: micayla-wright-a5a306155 / andrewyarham",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: micayla-wright-a5a306155 / derek-tomes-687445145",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: micayla-wright-a5a306155 / malcolm-black-onzm-3a221238",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: micayla-wright-a5a306155 / elliot-smith-b4b3a1244",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: micayla-wright-a5a306155 / elliot-de-lautour-063048a0",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: micayla-wright-a5a306155 / marina-nola-0796a1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: micayla-wright-a5a306155 / alysha-kennedy",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: micayla-wright-a5a306155 / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: micayla-wright-a5a306155 / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: micayla-wright-a5a306155 / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: cam--adams / amberataylor",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: cam--adams / andrew-flavell-dr-eng-59a3a9",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: cam--adams / jeremycarreon",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: cam--adams / laura-oldeman-b36b216b",
+   "«a weight entry on its own leaves out waist and le…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: cam--adams / kim-walker-9978336",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: cam--adams / chris-richardson-bb6a3aa1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: cam--adams / andrewyarham",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: cam--adams / derek-tomes-687445145",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: cam--adams / malcolm-black-onzm-3a221238",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: cam--adams / elliot-smith-b4b3a1244",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: cam--adams / elliot-de-lautour-063048a0",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: cam--adams / marina-nola-0796a1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: cam--adams / alysha-kennedy",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: cam--adams / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: cam--adams / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: cam--adams / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: cam--adams / alice-huangxin-liang-977558b4",
+   "«fitxpress is a white-label scan: two guided photo…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: cam--adams / rhea-s-66014110",
+   "«How does your team test a new onboarding step on one member…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: amberataylor / andrew-flavell-dr-eng-59a3a9",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: amberataylor / jeremycarreon",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: amberataylor / laura-oldeman-b36b216b",
+   "«a weight entry on its own leaves out waist and le…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: amberataylor / kim-walker-9978336",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: amberataylor / chris-richardson-bb6a3aa1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: amberataylor / andrewyarham",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: amberataylor / derek-tomes-687445145",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: amberataylor / malcolm-black-onzm-3a221238",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: amberataylor / elliot-smith-b4b3a1244",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: amberataylor / elliot-de-lautour-063048a0",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: amberataylor / marina-nola-0796a1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: amberataylor / alysha-kennedy",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: amberataylor / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: amberataylor / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: amberataylor / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: amberataylor / alice-huangxin-liang-977558b4",
+   "«fitxpress is a white-label scan: two guided photo…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: andrew-flavell-dr-eng-59a3a9 / jeremycarreon",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: andrew-flavell-dr-eng-59a3a9 / laura-oldeman-b36b216b",
+   "«a weight entry on its own leaves out waist and le…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: andrew-flavell-dr-eng-59a3a9 / kim-walker-9978336",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: andrew-flavell-dr-eng-59a3a9 / chris-richardson-bb6a3aa1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: andrew-flavell-dr-eng-59a3a9 / andrewyarham",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: andrew-flavell-dr-eng-59a3a9 / derek-tomes-687445145",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: andrew-flavell-dr-eng-59a3a9 / malcolm-black-onzm-3a221238",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: andrew-flavell-dr-eng-59a3a9 / elliot-smith-b4b3a1244",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: andrew-flavell-dr-eng-59a3a9 / elliot-de-lautour-063048a0",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: andrew-flavell-dr-eng-59a3a9 / marina-nola-0796a1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: andrew-flavell-dr-eng-59a3a9 / alysha-kennedy",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: andrew-flavell-dr-eng-59a3a9 / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: andrew-flavell-dr-eng-59a3a9 / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: andrew-flavell-dr-eng-59a3a9 / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: andrew-flavell-dr-eng-59a3a9 / alice-huangxin-liang-977558b4",
+   "«fitxpress is a white-label body scan: two guided…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: rhea-s-66014110 / andrewyarham",
+   "«fitxpress is a white-label body scan for the app:…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: rhea-s-66014110 / malcolm-black-onzm-3a221238",
+   "«fitxpress is a white-label body scan for the app:…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: rhea-s-66014110 / elliot-de-lautour-063048a0",
+   "«fitxpress is a white-label body scan for the app:…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: rhea-s-66014110 / marina-nola-0796a1",
+   "«fitxpress is a white-label body scan for the app:…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: rhea-s-66014110 / elliot-smith-b4b3a1244",
+   "«How does your team test a new onboarding step on one member…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: jeremycarreon / laura-oldeman-b36b216b",
+   "«a weight entry on its own leaves out waist and le…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: jeremycarreon / kim-walker-9978336",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: jeremycarreon / chris-richardson-bb6a3aa1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: jeremycarreon / andrewyarham",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: jeremycarreon / derek-tomes-687445145",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: jeremycarreon / malcolm-black-onzm-3a221238",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: jeremycarreon / elliot-smith-b4b3a1244",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: jeremycarreon / elliot-de-lautour-063048a0",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: jeremycarreon / marina-nola-0796a1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: jeremycarreon / alysha-kennedy",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: jeremycarreon / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: jeremycarreon / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: jeremycarreon / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: jeremycarreon / alice-huangxin-liang-977558b4",
+   "«fitxpress is a white-label scan in the app: two g…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: laura-oldeman-b36b216b / chris-richardson-bb6a3aa1",
+   "«fitxpress is a white-label scan: two guided photo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: laura-oldeman-b36b216b / alice-huangxin-liang-977558b4",
+   "«fitxpress is a white-label scan: two guided photo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: laura-oldeman-b36b216b / andrewyarham",
+   "«fitxpress is a white-label scan: two guided photo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: laura-oldeman-b36b216b / elliot-smith-b4b3a1244",
+   "«fitxpress is a white-label scan: two guided photo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: laura-oldeman-b36b216b / adam-lazarus-2a24a247",
+   "«fitxpress is a white-label scan: two guided photo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: laura-oldeman-b36b216b / kim-walker-9978336",
+   "«a weight figure alone leaves out waist and lean m…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: laura-oldeman-b36b216b / derek-tomes-687445145",
+   "«a weight figure alone leaves out waist and lean m…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: laura-oldeman-b36b216b / malcolm-black-onzm-3a221238",
+   "«a weight figure alone leaves out waist and lean m…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: laura-oldeman-b36b216b / elliot-de-lautour-063048a0",
+   "«a weight figure alone leaves out waist and lean m…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: laura-oldeman-b36b216b / marina-nola-0796a1",
+   "«a weight figure alone leaves out waist and lean m…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: laura-oldeman-b36b216b / alysha-kennedy",
+   "«a weight figure alone leaves out waist and lean m…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: laura-oldeman-b36b216b / charlotte-lovell",
+   "«a weight figure alone leaves out waist and lean m…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: laura-oldeman-b36b216b / sophie-hall-5b165273",
+   "«a weight figure alone leaves out waist and lean m…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: kim-walker-9978336 / chris-richardson-bb6a3aa1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: kim-walker-9978336 / andrewyarham",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: kim-walker-9978336 / derek-tomes-687445145",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: kim-walker-9978336 / malcolm-black-onzm-3a221238",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: kim-walker-9978336 / elliot-smith-b4b3a1244",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: kim-walker-9978336 / elliot-de-lautour-063048a0",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: kim-walker-9978336 / marina-nola-0796a1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: kim-walker-9978336 / alysha-kennedy",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: kim-walker-9978336 / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: kim-walker-9978336 / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: kim-walker-9978336 / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: kim-walker-9978336 / alice-huangxin-liang-977558b4",
+   "«the member takes two guided photos on their own p…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: chris-richardson-bb6a3aa1 / alice-huangxin-liang-977558b4",
+   "«fitxpress is a white-label scan for les mills+: t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: chris-richardson-bb6a3aa1 / andrewyarham",
+   "«fitxpress is a white-label scan for les mills+: t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: chris-richardson-bb6a3aa1 / adam-lazarus-2a24a247",
+   "«fitxpress is a white-label scan for les mills+: t…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: chris-richardson-bb6a3aa1 / derek-tomes-687445145",
+   "«A weight entry leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: chris-richardson-bb6a3aa1 / malcolm-black-onzm-3a221238",
+   "«A weight entry leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: chris-richardson-bb6a3aa1 / elliot-smith-b4b3a1244",
+   "«A weight entry leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: chris-richardson-bb6a3aa1 / elliot-de-lautour-063048a0",
+   "«A weight entry leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: chris-richardson-bb6a3aa1 / marina-nola-0796a1",
+   "«A weight entry leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: chris-richardson-bb6a3aa1 / alysha-kennedy",
+   "«A weight entry leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: chris-richardson-bb6a3aa1 / charlotte-lovell",
+   "«A weight entry leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: chris-richardson-bb6a3aa1 / sophie-hall-5b165273",
+   "«A weight entry leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: alice-huangxin-liang-977558b4 / andrewyarham",
+   "«fitxpress is a white-label scan inside the app: t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: alice-huangxin-liang-977558b4 / elliot-smith-b4b3a1244",
+   "«fitxpress is a white-label scan inside the app: t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: alice-huangxin-liang-977558b4 / adam-lazarus-2a24a247",
+   "«fitxpress is a white-label scan inside the app: t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: alice-huangxin-liang-977558b4 / sophie-hall-5b165273",
+   "«fitxpress is a white-label scan inside the app: t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: andrewyarham / malcolm-black-onzm-3a221238",
+   "«fitxpress is a white-label scan: two guided photo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: andrewyarham / elliot-smith-b4b3a1244",
+   "«fitxpress is a white-label scan: two guided photo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: andrewyarham / elliot-de-lautour-063048a0",
+   "«fitxpress is a white-label scan: two guided photo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Les Mills International: andrewyarham / adam-lazarus-2a24a247",
+   "«fitxpress is a white-label scan: two guided photo…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: andrewyarham / derek-tomes-687445145",
+   "«A weight entry alone leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: andrewyarham / marina-nola-0796a1",
+   "«A weight entry alone leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: andrewyarham / alysha-kennedy",
+   "«A weight entry alone leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: andrewyarham / charlotte-lovell",
+   "«A weight entry alone leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: andrewyarham / sophie-hall-5b165273",
+   "«A weight entry alone leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: derek-tomes-687445145 / malcolm-black-onzm-3a221238",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: derek-tomes-687445145 / elliot-smith-b4b3a1244",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: derek-tomes-687445145 / elliot-de-lautour-063048a0",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: derek-tomes-687445145 / marina-nola-0796a1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: derek-tomes-687445145 / alysha-kennedy",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: derek-tomes-687445145 / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: derek-tomes-687445145 / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: derek-tomes-687445145 / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: malcolm-black-onzm-3a221238 / elliot-smith-b4b3a1244",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: malcolm-black-onzm-3a221238 / elliot-de-lautour-063048a0",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: malcolm-black-onzm-3a221238 / marina-nola-0796a1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: malcolm-black-onzm-3a221238 / alysha-kennedy",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: malcolm-black-onzm-3a221238 / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: malcolm-black-onzm-3a221238 / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: malcolm-black-onzm-3a221238 / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elliot-smith-b4b3a1244 / elliot-de-lautour-063048a0",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elliot-smith-b4b3a1244 / marina-nola-0796a1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elliot-smith-b4b3a1244 / alysha-kennedy",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elliot-smith-b4b3a1244 / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elliot-smith-b4b3a1244 / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elliot-smith-b4b3a1244 / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elliot-de-lautour-063048a0 / marina-nola-0796a1",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elliot-de-lautour-063048a0 / alysha-kennedy",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elliot-de-lautour-063048a0 / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elliot-de-lautour-063048a0 / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: elliot-de-lautour-063048a0 / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: marina-nola-0796a1 / alysha-kennedy",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: marina-nola-0796a1 / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: marina-nola-0796a1 / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: marina-nola-0796a1 / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: alysha-kennedy / adam-lazarus-2a24a247",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: alysha-kennedy / charlotte-lovell",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: alysha-kennedy / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: adam-lazarus-2a24a247 / charlotte-lovell",
+   "«A weight entry alone leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: adam-lazarus-2a24a247 / sophie-hall-5b165273",
+   "«A weight entry alone leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills International: charlotte-lovell / sophie-hall-5b165273",
+   "«A weight entry on its own leaves out waist and lean mass ch…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "sentence opening repeated",
+   "Les Mills International ×28",
+   "«a weight entry on its…»: alex-hopkins-0a1a6959, alysha-kennedy, amberataylor, andrew-flavell-dr-eng-59a3a9"
+  ],
+  [
+   "sentence opening repeated",
+   "Les Mills International ×33",
+   "«fitxpress is a white label…»: adam-lazarus-2a24a247, alex-hopkins-0a1a6959, alice-huangxin-liang-977558b4, amberataylor"
+  ],
+  [
+   "sentence opening repeated",
+   "Les Mills International ×31",
+   "«two guided photos on the…»: adam-lazarus-2a24a247, alice-huangxin-liang-977558b4, alysha-kennedy, amberataylor"
+  ],
+  [
+   "sentence opening repeated",
+   "Les Mills International ×3",
+   "«delivery is web and mobile…»: james-graham-25b12b42, llori-valenzuela-79580b1, sophie-hall-5b165273"
+  ],
+  [
+   "sentence opening repeated",
+   "Les Mills International ×3",
+   "«where would a body check…»: chris-richardson-bb6a3aa1, derek-tomes-687445145, jason-paris-3404565"
+  ],
+  [
+   "sentence opening repeated",
+   "Les Mills International ×3",
+   "«one member cohort scans at…»: jason-paris-3404565, jessica-farrow-1a000423, steven-renata-44133bb"
+  ],
+  [
+   "sentence opening repeated",
+   "Les Mills International ×3",
+   "«les mills+ has shipped roughly…»: gemma-lynskey-60413028, mheyns, sally-berlin-8793099"
+  ],
+  [
+   "sentence opening repeated",
+   "Les Mills International ×4",
+   "«the member takes two guided…»: alex-hopkins-0a1a6959, kim-walker-9978336, mheyns, sally-berlin-8793099"
+  ],
+  [
+   "sentence opening repeated",
+   "Les Mills International ×3",
+   "«each scan has a randomly…»: andrew-flavell-dr-eng-59a3a9, mheyns, sally-berlin-8793099"
+  ],
+  [
+   "sentence opening repeated",
+   "Les Mills International ×4",
+   "«3d body progress tracking sits…»: elliot-de-lautour-063048a0, jessica-farrow-1a000423, marina-nola-0796a1, steven-renata-44133bb"
+  ],
+  [
+   "sentence opening repeated",
+   "Les Mills International ×6",
+   "«might be worth a quick…»: carlo-tonin, derek-tomes-687445145, james-graham-25b12b42, jessica-farrow-1a000423"
+  ],
+  [
+   "sentence opening repeated",
+   "Les Mills International ×3",
+   "«les mills+ ships roughly monthly…»: alex-hopkins-0a1a6959, andrewyarham, lacey-churcher-84519360"
+  ],
+  [
+   "sentence opening repeated",
+   "Les Mills International ×5",
+   "«fitxpress a white label body…»: alysha-kennedy, charlotte-lovell, lacey-churcher-84519360, malcolm-black-onzm-3a221238"
+  ],
+  [
+   "sentence opening repeated",
+   "Les Mills International ×4",
+   "«how does your team test…»: andrewyarham, cam--adams, elliot-smith-b4b3a1244, rhea-s-66014110"
+  ],
+  [
+   "sentence opening repeated",
+   "Les Mills International ×3",
+   "«one cohort scans at onboarding…»: alice-huangxin-liang-977558b4, chris-richardson-bb6a3aa1, jeremycarreon"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "Les Mills International ×2",
+   "«les mills+ carries…»: alysha-kennedy, gandalf-archer-1bb8876"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "Les Mills International ×5",
+   "«les mills+ has…»: gemma-lynskey-60413028, malcolm-black-onzm-3a221238, mheyns, rhea-s-66014110"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "Les Mills International ×2",
+   "«les mills+ premium…»: jeremycarreon, steven-renata-44133bb"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "Les Mills International ×2",
+   "«les mills+ ships…»: alex-hopkins-0a1a6959, lacey-churcher-84519360"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "Les Mills International ×2",
+   "«since april 2026…»: jason-paris-3404565, tom-o-connor-78b60b30"
+  ],
+  [
+   "M1 product sentence shared",
+   "Les Mills International ×4",
+   "«the member takes two guided photos…»: alex-hopkins-0a1a6959, kim-walker-9978336, mheyns, sally-berlin-8793099"
+  ],
+  [
+   "M1 product sentence shared",
+   "Les Mills International ×6",
+   "«two guided photos on the member's…»: alysha-kennedy, gemma-lynskey-60413028, keryn-mckenzie-714b9554, lacey-churcher-84519360"
+  ],
+  [
+   "M1 product sentence shared",
+   "Les Mills International ×5",
+   "«x a white label body scan…»: alysha-kennedy, charlotte-lovell, lacey-churcher-84519360, malcolm-black-onzm-3a221238"
+  ],
+  [
+   "M1 product sentence shared",
+   "Les Mills International ×8",
+   "«x is a white label body…»: alex-hopkins-0a1a6959, andrew-flavell-dr-eng-59a3a9, marina-nola-0796a1, mheyns"
+  ],
+  [
+   "M1 product sentence shared",
+   "Les Mills International ×24",
+   "«x is a white label scan…»: adam-lazarus-2a24a247, alice-huangxin-liang-977558b4, amberataylor, andrewyarham"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×29",
+   "«on the member s phone…»: adam-lazarus-2a24a247, alice-huangxin-liang-977558b4, alysha-kennedy, amberataylor"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×17",
+   "«linked to the member profile…»: alex-hopkins-0a1a6959, andrew-flavell-dr-eng-59a3a9, andrewyarham, carlo-tonin"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×13",
+   "«at the first check in…»: adam-lazarus-2a24a247, alice-huangxin-liang-977558b4, amberataylor, andrewyarham"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«at onboarding or at the…»: amberataylor, chris-richardson-bb6a3aa1, elinor-quayle-b3bb2113, jason-paris-3404565"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«onboarding consent and results screens…»: amberataylor, cam--adams, derek-tomes-687445145, elinor-quayle-b3bb2113"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«supported ios and android integrations…»: adam-lazarus-2a24a247, amberataylor, james-graham-25b12b42, marina-nola-0796a1"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«a new onboarding step on…»: andrewyarham, cam--adams, elliot-smith-b4b3a1244, rhea-s-66014110"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«at onboarding and at the…»: alice-huangxin-liang-977558b4, jeremycarreon, jessica-farrow-1a000423, phillip-mills-0784428"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«the member s own phone…»: andrew-flavell-dr-eng-59a3a9, elinor-quayle-b3bb2113, laura-oldeman-b36b216b, phillip-mills-0784428"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«and the brand chooses what…»: laura-oldeman-b36b216b, lisa-osborne-24996268, sarah-ostergaard-40931a93"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×4",
+   "«how the product team tests a new onboarding step on one mem…»: andrewyarham, cam--adams, elliot-smith-b4b3a1244, rhea-s-66014110"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«what members ask the brand for most around progress»: james-graham-25b12b42, lacey-churcher-84519360"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«how a structured scan record would reach the member profile»: laura-oldeman-b36b216b, mheyns"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«whether a body scan belongs at onboarding or at the first c…»: amberataylor, kim-walker-9978336"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«which paid tier or membership level 3D progress views would…»: elliot-de-lautour-063048a0, jeremycarreon"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«what a member sees at the first progress check-in today»: adam-lazarus-2a24a247, alice-huangxin-liang-977558b4"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×4",
+   "«how does your team test a new onboarding step on one member…»: andrewyarham, cam--adams, elliot-smith-b4b3a1244, rhea-s-66014110"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«would a body scan belong at onboarding or at the first chec…»: amberataylor, kim-walker-9978336"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«which membership level would 3d progress views belong in»: elliot-de-lautour-063048a0, jeremycarreon"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«what does a member see at the first progress check in today»: adam-lazarus-2a24a247, alice-huangxin-liang-977558b4"
+  ]
+ ]
+}

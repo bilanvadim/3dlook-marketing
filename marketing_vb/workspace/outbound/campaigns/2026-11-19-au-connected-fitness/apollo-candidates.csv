@@ -1,71 +1,260 @@
 apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,last_refreshed_at,status
-54ab172e7468690b758fb81e,Vlad,St***v,Head of Engineering,Les Mills International,lesmills.com,Les Mills International,2026-11-09T20:21:09.284+00:00,candidate
-6117a56fb5d4ea000196e0c2,Jason,Pa***s,Chief Executive Officer,Les Mills International,lesmills.com,Les Mills International,2026-11-15T13:45:21.461+00:00,candidate
-610c2c8c3f826d0001c57420,Glen,St***y,CEO,Les Mills International,lesmills.com,Les Mills International,2026-10-22T15:44:29.000+00:00,candidate
-6afad8be30553b0001a5ebff,Sally,Be***n,CTO,Les Mills International,lesmills.com,Les Mills International,2026-11-18T14:55:51.012+00:00,candidate
-5d3a9f7a80f93ed953c9174c,Ricardo,La***o,CEO,Les Mills International,lesmills.com,Les Mills International,2026-10-31T09:49:29.000+00:00,candidate
-54a45b1e74686938acde5341,Thomas,Th***n,Chief Executive Officer,Les Mills International,lesmills.com,Les Mills International,2026-11-12T14:27:38.120+00:00,candidate
-63b72d3ec925e60001a47110,Amber,Ta***r,Digital Product Chief & Officer,Les Mills International,lesmills.com,Les Mills International,2026-11-04T06:24:50.889+00:00,candidate
-60e57128575930000106f7c0,Sarah,Os***d,Head of Training RPM,Les Mills International,lesmills.com,Les Mills International,2026-10-22T19:19:32.000+00:00,candidate
-58baddc6f651253614bb64a3,Michelle,Ta***m,"Head of Product, B2B",Les Mills International,lesmills.com,Les Mills International,2026-11-01T15:52:40.852+00:00,candidate
-670bd61fca47100001c01ccd,Andrew,Fl***l,Fractional CTO,Les Mills International,lesmills.com,Les Mills International,2026-11-11T17:37:47.000+00:00,candidate
-66f4235f465bdd0001f658cf,Martin,Fr***n,CEO - Europe,Les Mills International,lesmills.com,Les Mills International,2026-11-05T20:10:49.000+00:00,candidate
-66f55e05ebe4910001bd4d91,Micah,Ca***y,Head of Digital Operations,Les Mills International,lesmills.com,Les Mills International,2026-11-06T06:43:31.000+00:00,candidate
-66db0ca49359260001cf67fd,Justine,Da***s,Global Business Development Manager,Les Mills International,lesmills.com,Les Mills International,2026-11-09T18:35:12.000+00:00,candidate
-54a3e3117468692cf078e71a,Rhea,Sa***s,Business Analyst/Product Owner,Les Mills International,lesmills.com,Les Mills International,2026-11-07T16:06:45.955+00:00,candidate
-54c16b0c746869163925ce09,Jeremy,Ca***n,Product Manager,Les Mills International,lesmills.com,Les Mills International,2026-11-04T21:05:23.000+00:00,candidate
-54abe0937468692ca1016513,Laura,Ol***n,Product Manager,Les Mills International,lesmills.com,Les Mills International,2026-10-23T00:05:07.000+00:00,candidate
-5de6386da94fe80001c02fb1,Kim,Wa***r,Product Manager,Les Mills International,lesmills.com,Les Mills International,2026-11-05T09:02:57.000+00:00,candidate
-60e13a790d2a000001ccd070,James,Gr***m,CEO - Global Markets (Interim),Les Mills International,lesmills.com,Les Mills International,2026-10-22T21:59:13.000+00:00,candidate
-62ea57e56d582c00015a7049,Nadine,We***n,Product Manager,Les Mills International,lesmills.com,Les Mills International,2026-10-25T21:01:53.000+00:00,candidate
-66115fa835bc9b0007fa1d8f,Brian,Ji,CEO | Greater China & Korea,Les Mills International,lesmills.com,Les Mills International,2026-10-22T13:31:57.000+00:00,candidate
-5ff98b0b7368540001cf22c8,Phillip,Mi***s,Founder & Executive Director,Les Mills International,lesmills.com,Les Mills International,2026-10-22T16:07:51.000+00:00,candidate
-57e0b983a6da987d5c3b372e,Chris,Ri***n,Immersive Product Manager,Les Mills International,lesmills.com,Les Mills International,2026-11-03T23:54:31.000+00:00,candidate
-6599264f2bb2a70001275b96,Alice,Li***g,Senior Product Manager,Les Mills International,lesmills.com,Les Mills International,2026-10-22T09:13:35.000+00:00,candidate
-609cd990fe615e0001eae686,Andrew,Ya***m,Senior Product Manager,Les Mills International,lesmills.com,Les Mills International,2026-10-29T02:13:12.000+00:00,candidate
-5e853728ea00ea0001c3253c,Derek,To***s,Senior Product Manager,Les Mills International,lesmills.com,Les Mills International,2026-11-02T03:43:07.000+00:00,candidate
-5f586818721b7500015cfd10,Malcolm,On***m,Chairman and Consultant (formerly Chairman and CEO),Les Mills International,lesmills.com,Les Mills International,2026-11-04T03:57:26.000+00:00,candidate
-64271741d5bf0e000133e0a8,Elliot,Sm***h,Associate Product Manager,Les Mills International,lesmills.com,Les Mills International,2026-11-02T12:56:17.000+00:00,candidate
-54a49cf17468692abff12855,Elliot,La***r,Product Manager & Music Specialist,Les Mills International,lesmills.com,Les Mills International,2026-10-03T09:40:18.000+00:00,candidate
-57d9abb6a6da987252911b09,Marina,No***a,Chief Product and Marketing Officer,Les Mills International,lesmills.com,Les Mills International,2026-11-10T11:18:11.042+00:00,candidate
-57d6f138a6da986ad1ab864c,Fraser,Be***k,Head of Mind Body Training,Les Mills International,lesmills.com,Les Mills International,2026-11-12T08:00:59.328+00:00,candidate
-5dd766abbf2fa80001d10e70,Alex,Ho***s,Head of B2B Engineering,Les Mills International,lesmills.com,Les Mills International,2026-11-05T01:25:01.000+00:00,candidate
-54a45d567468692fa25df441,Alysha,Ke***y,Head Producer - Product and Brand,Les Mills International,lesmills.com,Les Mills International,2026-11-05T10:10:48.000+00:00,candidate
-6198e721b07ea90001908791,Cam,Ad***s,Director of Digital Product,Les Mills International,lesmills.com,Les Mills International,2026-10-28T13:23:40.000+00:00,candidate
-65e038d6f6fdfe000105e115,Adam,La***s,Product Development Manager,Les Mills International,lesmills.com,Les Mills International,2026-10-22T15:24:53.000+00:00,candidate
-606aee585f2fd1000135fbc2,Charlotte,Lo***l,Digital Product Marketing Manager,Les Mills International,lesmills.com,Les Mills International,2026-10-03T14:11:38.000+00:00,candidate
-5ad1ed1da6da988404a4d646,Sophie,Ha***l,Senior Global Brand Partnerships Lead; Product,Les Mills International,lesmills.com,Les Mills International,2026-10-30T05:31:29.000+00:00,candidate
-5e4ba2833b1fdf008c605175,Dan,Co***n,Winning Together Coaching Director,Les Mills International,lesmills.com,Les Mills International,2026-10-22T11:35:26.000+00:00,candidate
-60c381429ed1860001f174f5,Daniel,Pa***e,Personal Training & Gym Floor Manager Les Mills,Les Mills International,lesmills.com,Les Mills International,2026-10-22T02:22:32.000+00:00,candidate
-5ab298c4a6da98f7785ff6c3,Lisa,Os***e,PD,Les Mills International,lesmills.com,Les Mills International,2026-10-04T00:13:12.000+00:00,candidate
-57e054f8a6da981c6db81943,Jaegill,Hy***n,BDM,Les Mills International,lesmills.com,Les Mills International,2026-10-13T03:40:36.212+00:00,candidate
-55712ec8736964621ee60100,Kendra,Wr***y,GFM,Les Mills International,lesmills.com,Les Mills International,2026-10-22T23:41:46.000+00:00,candidate
-62ea441b63198100014e3145,Sean,Pa***r,PTM,Les Mills International,lesmills.com,Les Mills International,2026-10-23T00:06:15.000+00:00,candidate
-61275277042a8b000137e815,Ish,Ch***e,Head of Fitness,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-07T20:22:09.068+00:00,candidate
-606b3d8ae8b7540001a65ae3,Brett,Su***n,CEO,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-11-10T12:36:31.000+00:00,candidate
-557137717369644890640500,Brent,Na***n,Head of Technology,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-22T09:19:17.000+00:00,candidate
-6021b13be4530000010203dc,Anise,El***n,Corporate Partnerships Manager,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-04T09:00:10.000+00:00,candidate
-62f6643eef923a0001ae4f15,Tevita,Si***o,General Manager,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-04T01:42:10.240+00:00,candidate
-5e69776cca2782000182b244,Karin,Pe***n,General Manager,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-28T07:14:19.231+00:00,candidate
-5adb1a2aa6da9861f08bfa00,Stephanie,Ca***l,Chief Executive Officer Les Mills Property,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-11-13T18:38:03.740+00:00,candidate
-54a96a1774686930add37f12,Susan,Re***a,Fitness Manager,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-29T04:33:54.000+00:00,candidate
-54a13b0269702dc8e4d33801,Giles,Br***t,Group Fitness Manager,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-03T09:11:19.000+00:00,candidate
-66863ed173a6e70001be43e5,Eru,Sh***d,Group Fitness Manager,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-31T05:18:29.000+00:00,candidate
-5570a28e73696418e3df1400,Sophia,Si***h,Group Fitness Manager - Les Mills Howick,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-11-05T02:41:54.000+00:00,candidate
-54a4dc777468692abfc93169,Ethan,Mo***n,Group Fitness Manager - LM Taranaki St.,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-22T22:57:16.000+00:00,candidate
-54a577337468692abf7ea197,Richard,Ra***a,Group Fitness Manager,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-22T02:21:52.000+00:00,candidate
-54a263017468693a7e59191f,Jo,Ar***d,Group Fitness Manager,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-22T21:23:08.000+00:00,candidate
-68511cec4f08cd000158780d,Natasha,Vi***t,Group Fitness Manager,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-22T13:45:39.000+00:00,candidate
-64ff2b10a059a8000117543b,Sophie,St***h,Group Fitness Manager,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-02T20:09:43.444+00:00,candidate
-66967ab9d89264000111ab6c,Clint,Pa***l,National Security Manager City Fitness,Cityfitness,cityfitness.co.nz,CityFitness,2026-10-22T18:15:12.000+00:00,candidate
-62ec7ed7bdd5e30001619673,Christopher,Sm***t,Regional Director of Fitness,Cityfitness,cityfitness.co.nz,CityFitness,2026-10-02T22:08:11.000+00:00,candidate
-64330f6d06f794000165b401,Abhishek,Ke***r,Regional Director of Fitness,Cityfitness,cityfitness.co.nz,CityFitness,2026-10-23T09:39:01.733+00:00,candidate
-5b369632a6da980beabbfe8c,Timothy,Ri***s,Fitness Manager,Cityfitness,cityfitness.co.nz,CityFitness,2026-11-04T11:58:47.000+00:00,candidate
-6953b17d791bf00001ef4a04,Denzil,Ho***n,Cluster Fitness Manager,Cityfitness,cityfitness.co.nz,CityFitness,2026-10-04T09:05:50.000+00:00,candidate
-62ebc196ff639a0001caac6d,Phil,To***y,Fitness Manager,Cityfitness,cityfitness.co.nz,CityFitness,2026-10-28T11:01:37.704+00:00,candidate
-54c290007468697af7280daa,Josh,Pa***i,Cluster Fitness Manager,Cityfitness,cityfitness.co.nz,CityFitness,2026-10-23T00:25:21.000+00:00,candidate
-62eb5d5187819e0001f75f95,Rocheal,He***y,Group Fitness Cluster Manager,Cityfitness,cityfitness.co.nz,CityFitness,2026-10-22T17:33:50.000+00:00,candidate
-62eb84a6331ae900017403a6,Anna,Mc***e,Group Fitness and Abundance Manager Cityfitness,Cityfitness,cityfitness.co.nz,CityFitness,2026-10-03T13:15:30.000+00:00,candidate
-66346c1c99280f0007a8ff4f,Delilah,Ja***n,BMedSt/MD Student,Studio Pilates International,studiopilates.com,Studio Pilates International,2026-11-10T19:03:31.771+00:00,candidate
-65d5d87db721570001507666,Stephanie,Cl***k,Head of Member Experience,12WBT,12wbt.com,Michelle Bridges 12WBT,2026-10-06T18:31:47.000+00:00,candidate
-69a67579967c070001681a16,Jane,We***n,Head of Corporate Partnerships,12WBT,12wbt.com,Michelle Bridges 12WBT,2026-10-28T04:48:34.348+00:00,candidate
+54ab172e7468690b758fb81e,Vlad,St***v,Head of Engineering,Les Mills International,lesmills.com,Les Mills International,2026-11-09T20:21:09.284+00:00,held-off-persona
+6117a56fb5d4ea000196e0c2,Jason,Pa***s,Chief Executive Officer,Les Mills International,lesmills.com,Les Mills International,2026-11-15T13:45:21.461+00:00,in-sales-nav
+6afad8be30553b0001a5ebff,Sally,Be***n,CTO,Les Mills International,lesmills.com,Les Mills International,2026-11-18T14:55:51.012+00:00,in-sales-nav
+63b72d3ec925e60001a47110,Amber,Ta***r,Digital Product Chief & Officer,Les Mills International,lesmills.com,Les Mills International,2026-11-04T06:24:50.889+00:00,enriched
+60e57128575930000106f7c0,Sarah,Os***d,Head of Training RPM,Les Mills International,lesmills.com,Les Mills International,2026-10-22T19:19:32.000+00:00,enriched
+670bd61fca47100001c01ccd,Andrew,Fl***l,Fractional CTO,Les Mills International,lesmills.com,Les Mills International,2026-11-11T17:37:47.000+00:00,enriched
+54a3e3117468692cf078e71a,Rhea,Sa***s,Business Analyst/Product Owner,Les Mills International,lesmills.com,Les Mills International,2026-11-07T16:06:45.955+00:00,enriched
+54c16b0c746869163925ce09,Jeremy,Ca***n,Product Manager,Les Mills International,lesmills.com,Les Mills International,2026-11-04T21:05:23.000+00:00,enriched
+54abe0937468692ca1016513,Laura,Ol***n,Product Manager,Les Mills International,lesmills.com,Les Mills International,2026-10-23T00:05:07.000+00:00,enriched
+5de6386da94fe80001c02fb1,Kim,Wa***r,Product Manager,Les Mills International,lesmills.com,Les Mills International,2026-11-05T09:02:57.000+00:00,enriched
+60e13a790d2a000001ccd070,James,Gr***m,CEO - Global Markets (Interim),Les Mills International,lesmills.com,Les Mills International,2026-10-22T21:59:13.000+00:00,in-sales-nav
+5ff98b0b7368540001cf22c8,Phillip,Mi***s,Founder & Executive Director,Les Mills International,lesmills.com,Les Mills International,2026-10-22T16:07:51.000+00:00,in-sales-nav
+57e0b983a6da987d5c3b372e,Chris,Ri***n,Immersive Product Manager,Les Mills International,lesmills.com,Les Mills International,2026-11-03T23:54:31.000+00:00,enriched
+6599264f2bb2a70001275b96,Alice,Li***g,Senior Product Manager,Les Mills International,lesmills.com,Les Mills International,2026-10-22T09:13:35.000+00:00,enriched
+609cd990fe615e0001eae686,Andrew,Ya***m,Senior Product Manager,Les Mills International,lesmills.com,Les Mills International,2026-10-29T02:13:12.000+00:00,enriched
+5e853728ea00ea0001c3253c,Derek,To***s,Senior Product Manager,Les Mills International,lesmills.com,Les Mills International,2026-11-02T03:43:07.000+00:00,enriched
+5f586818721b7500015cfd10,Malcolm,On***m,Chairman and Consultant (formerly Chairman and CEO),Les Mills International,lesmills.com,Les Mills International,2026-11-04T03:57:26.000+00:00,enriched
+64271741d5bf0e000133e0a8,Elliot,Sm***h,Associate Product Manager,Les Mills International,lesmills.com,Les Mills International,2026-11-02T12:56:17.000+00:00,enriched
+54a49cf17468692abff12855,Elliot,La***r,Product Manager & Music Specialist,Les Mills International,lesmills.com,Les Mills International,2026-10-03T09:40:18.000+00:00,enriched
+57d9abb6a6da987252911b09,Marina,No***a,Chief Product and Marketing Officer,Les Mills International,lesmills.com,Les Mills International,2026-11-10T11:18:11.042+00:00,enriched
+57d6f138a6da986ad1ab864c,Fraser,Be***k,Head of Mind Body Training,Les Mills International,lesmills.com,Les Mills International,2026-11-12T08:00:59.328+00:00,held-off-persona
+5dd766abbf2fa80001d10e70,Alex,Ho***s,Head of B2B Engineering,Les Mills International,lesmills.com,Les Mills International,2026-11-11T17:18:29.000+00:00,in-sales-nav
+54a45d567468692fa25df441,Alysha,Ke***y,Head Producer - Product and Brand,Les Mills International,lesmills.com,Les Mills International,2026-11-05T10:10:48.000+00:00,enriched
+6198e721b07ea90001908791,Cam,Ad***s,Director of Digital Product,Les Mills International,lesmills.com,Les Mills International,2026-10-28T13:23:40.000+00:00,in-sales-nav
+65e038d6f6fdfe000105e115,Adam,La***s,Product Development Manager,Les Mills International,lesmills.com,Les Mills International,2026-10-22T15:24:53.000+00:00,enriched
+606aee585f2fd1000135fbc2,Charlotte,Lo***l,Digital Product Marketing Manager,Les Mills International,lesmills.com,Les Mills International,2026-10-03T14:11:38.000+00:00,enriched
+5ad1ed1da6da988404a4d646,Sophie,Ha***l,Senior Global Brand Partnerships Lead; Product,Les Mills International,lesmills.com,Les Mills International,2026-10-30T05:31:29.000+00:00,enriched
+5e4ba2833b1fdf008c605175,Dan,Co***n,Winning Together Coaching Director,Les Mills International,lesmills.com,Les Mills International,2026-10-22T11:35:26.000+00:00,held-off-persona
+60c381429ed1860001f174f5,Daniel,Pa***e,Personal Training & Gym Floor Manager Les Mills,Les Mills International,lesmills.com,Les Mills International,2026-10-22T02:22:32.000+00:00,held-off-persona
+5ab298c4a6da98f7785ff6c3,Lisa,Os***e,PD,Les Mills International,lesmills.com,Les Mills International,2026-10-04T00:13:12.000+00:00,in-sales-nav
+55712ec8736964621ee60100,Kendra,Wr***y,GFM,Les Mills International,lesmills.com,Les Mills International,2026-10-22T23:41:46.000+00:00,held-off-persona
+62ea441b63198100014e3145,Sean,Pa***r,PTM,Les Mills International,lesmills.com,Les Mills International,2026-10-23T00:06:15.000+00:00,held-off-persona
+61275277042a8b000137e815,Ish,Ch***e,Head of Fitness,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-07T20:22:09.068+00:00,in-sales-nav
+606b3d8ae8b7540001a65ae3,Brett,Su***n,CEO,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-11-10T12:36:31.000+00:00,in-sales-nav
+557137717369644890640500,Brent,Na***n,Head of Technology,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-22T09:19:17.000+00:00,in-sales-nav
+6021b13be4530000010203dc,Anise,El***n,Corporate Partnerships Manager,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-04T09:00:10.000+00:00,enriched
+62f6643eef923a0001ae4f15,Tevita,Si***o,General Manager,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-04T01:42:10.240+00:00,enriched
+5e69776cca2782000182b244,Karin,Pe***n,General Manager,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-28T07:14:19.231+00:00,in-sales-nav
+5adb1a2aa6da9861f08bfa00,Stephanie,Ca***l,Chief Executive Officer Les Mills Property,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-11-13T18:38:03.740+00:00,enriched
+54a96a1774686930add37f12,Susan,Re***a,Fitness Manager,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-29T04:33:54.000+00:00,held-off-persona
+54a13b0269702dc8e4d33801,Giles,Br***t,Group Fitness Manager,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-03T09:11:19.000+00:00,held-off-persona
+66863ed173a6e70001be43e5,Eru,Sh***d,Group Fitness Manager,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-31T05:18:29.000+00:00,held-off-persona
+5570a28e73696418e3df1400,Sophia,Si***h,Group Fitness Manager - Les Mills Howick,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-11-05T02:41:54.000+00:00,held-off-persona
+54a4dc777468692abfc93169,Ethan,Mo***n,Group Fitness Manager - LM Taranaki St.,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-22T22:57:16.000+00:00,held-off-persona
+54a577337468692abf7ea197,Richard,Ra***a,Group Fitness Manager,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-22T02:21:52.000+00:00,held-off-persona
+54a263017468693a7e59191f,Jo,Ar***d,Group Fitness Manager,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-22T21:23:08.000+00:00,held-off-persona
+68511cec4f08cd000158780d,Natasha,Vi***t,Group Fitness Manager,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-22T13:45:39.000+00:00,held-off-persona
+64ff2b10a059a8000117543b,Sophie,St***h,Group Fitness Manager,Les Mills New Zealand,lesmills.co.nz,Les Mills New Zealand,2026-10-02T20:09:43.444+00:00,held-off-persona
+66967ab9d89264000111ab6c,Clint,Pa***l,National Security Manager City Fitness,Cityfitness,cityfitness.co.nz,CityFitness,2026-10-22T18:15:12.000+00:00,held-off-persona
+62ec7ed7bdd5e30001619673,Christopher,Sm***t,Regional Director of Fitness,Cityfitness,cityfitness.co.nz,CityFitness,2026-10-02T22:08:11.000+00:00,held-off-persona
+64330f6d06f794000165b401,Abhishek,Ke***r,Regional Director of Fitness,Cityfitness,cityfitness.co.nz,CityFitness,2026-10-23T09:39:01.733+00:00,in-sales-nav
+5b369632a6da980beabbfe8c,Timothy,Ri***s,Fitness Manager,Cityfitness,cityfitness.co.nz,CityFitness,2026-11-04T11:58:47.000+00:00,held-off-persona
+6953b17d791bf00001ef4a04,Denzil,Ho***n,Cluster Fitness Manager,Cityfitness,cityfitness.co.nz,CityFitness,2026-10-04T09:05:50.000+00:00,held-off-persona
+62ebc196ff639a0001caac6d,Phil,To***y,Fitness Manager,Cityfitness,cityfitness.co.nz,CityFitness,2026-10-28T11:01:37.704+00:00,held-off-persona
+54c290007468697af7280daa,Josh,Pa***i,Cluster Fitness Manager,Cityfitness,cityfitness.co.nz,CityFitness,2026-10-23T00:25:21.000+00:00,held-off-persona
+62eb5d5187819e0001f75f95,Rocheal,He***y,Group Fitness Cluster Manager,Cityfitness,cityfitness.co.nz,CityFitness,2026-10-22T17:33:50.000+00:00,held-off-persona
+62eb84a6331ae900017403a6,Anna,Mc***e,Group Fitness and Abundance Manager Cityfitness,Cityfitness,cityfitness.co.nz,CityFitness,2026-10-03T13:15:30.000+00:00,held-off-persona
+66346c1c99280f0007a8ff4f,Delilah,Ja***n,BMedSt/MD Student,Studio Pilates International,studiopilates.com,Studio Pilates International,2026-11-10T19:03:31.771+00:00,held-off-persona
+65d5d87db721570001507666,Stephanie,Cl***k,Head of Member Experience,12WBT,12wbt.com,Michelle Bridges 12WBT,2026-10-06T18:31:47.000+00:00,messaged-vadim
+69a67579967c070001681a16,Jane,We***n,Head of Corporate Partnerships,12WBT,12wbt.com,Michelle Bridges 12WBT,2026-10-28T04:48:34.348+00:00,messaged-vadim
+60d311cba5623b0001d24ab2,Belinda,Wh***n,Chief Executive Officer,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-10-31T06:25:40.000+00:00,in-sales-nav
+5c6e2dc880f93e1d2738e70b,Sue,Mc***a,National Business Development Manager,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-11-05T21:48:36.724+00:00,enriched
+5c38a11aa3ae6141cf8e4421,Samantha,Ho***y,Fitness and Operations Manager,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-09-23T09:43:28.000+00:00,held-off-persona
+54a4cf497468693442133365,Zoe,Ki***y,Fernwood Morayfield,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-10-23T01:10:54.000+00:00,messaged-vadim
+69db92824ad55a0001669809,Shaye,Ha***y,Fernwood Fitness Manager,Fernwood Fitness,fernwoodfitness.com.au,Fernwood Fitness,2026-10-30T21:22:30.000+00:00,held-off-persona
+57d44fb6a6da9853bed0849e,Sally,Ku***r,Head Coach,Fitstop,fitstop.com,Fitstop,2026-10-04T05:26:29.000+00:00,messaged-vadim
+62e28c57e2b9390001ef15f3,Tobias,Cl***n,Business Development Manager,Fitstop,fitstop.com,Fitstop,2026-09-22T09:41:23.000+00:00,enriched
+66fac39578dcdd0001033a05,Riley,Wo***k,General Manager,Fitstop,fitstop.com,Fitstop,2026-10-05T03:38:02.000+00:00,in-sales-nav
+622835d1d6c30b0001b0c0a0,Sam,Ra***h,Fitness Manager,Fitstop,fitstop.com,Fitstop,2026-09-23T09:17:58.000+00:00,held-off-persona
+57dad525a6da984a44df38b8,Olivia,Ho***n,Managing Owner,Fitstop,fitstop.com,Fitstop,2026-01-28T01:23:13.146+00:00,messaged-vadim
+608770247d9cc50001df5b3f,Natasha,Wi***y,Fitness Manager,Fitstop,fitstop.com,Fitstop,2026-09-20T21:02:56.000+00:00,held-off-persona
+6217520b280fa60001b6c3b7,Karen,Sc***n,Business Development Manager / Owner,Jetts Australia,jetts.com.au,Jetts Fitness,2026-11-06T13:52:22.258+00:00,messaged-vadim
+60a1a39c020b09000117ad6d,Ben,Ma***n,General Manager,Jetts Australia,jetts.com.au,Jetts Fitness,2026-11-04T11:29:42.000+00:00,enriched
+62d9a0229d1c700001f76118,Samantha,Ja***e,General Manager,Jetts Australia,jetts.com.au,Jetts Fitness,2026-09-23T09:44:46.000+00:00,enriched
+673eea04bd656800016bc40c,Mark,Co***e,Managing Business,Jetts Australia,jetts.com.au,Jetts Fitness,2026-10-15T09:08:04.979+00:00,held-off-persona
+6714fecfbf96c300016c87c5,Kalani,Ba***s,Fitness Manager,Jetts Australia,jetts.com.au,Jetts Fitness,2026-10-23T01:42:57.000+00:00,held-off-persona
+6027555b9023ab00011cb096,Tim,We***t,Managing Director - CoFounder,UBX,ubxtraining.com,UBX,2026-11-10T11:56:19.000+00:00,in-sales-nav
+54a5bfa37468692fa2a070a5,David,Ne***d,Chief Technology Officer,UBX,ubxtraining.com,UBX,2026-10-22T17:31:22.000+00:00,enriched
+654092d3085c0800019acab2,Michael,Jo***n,CEO,UBX,ubxtraining.com,UBX,2026-11-07T02:23:33.000+00:00,in-sales-nav
+54c193037468691639b76423,John,Cu***y,General Manager Digital,UBX,ubxtraining.com,UBX,2026-10-17T23:30:49.000+00:00,enriched
+54a448fd7468693442c56f3b,Matt,Ei***t,Head of Fitness,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-11-03T08:51:43.000+00:00,in-sales-nav
+60ebac7a1773410001961219,Harry,Ko***u,CEO and Managing Director,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-11-05T22:46:19.000+00:00,messaged-vadim
+684fdf4b609e130001eb5230,Jenn,Ya***g,Head Coach,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-10-22T07:57:37.000+00:00,enriched
+57d8b371a6da98595d3ff3b5,Stephen,De***s,Business Development Manager - Plus Fitness,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-10-22T02:55:22.000+00:00,enriched
+612695ed1c11a7000170e782,Niki,Tw***t,General Manager,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-11-01T10:16:32.378+00:00,enriched
+562a035fa6da987b1c0077a9,Lauren,No***n,General Manager | Boutiques,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-11-03T01:52:06.122+00:00,in-sales-nav
+611457a53aba8200019b2d63,Leah,Do***e,General Manager Marketing,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-11-11T21:21:27.000+00:00,held-off-persona
+5d5af3c8a3ae61a9c0ab78a7,Ross,Su***d,Senior General Manager,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-10-19T06:28:20.476+00:00,held-off-persona
+5ef7c57e4dc1210001a1ad9c,Lauren,Je***s,Fitness Product Manager,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-10-26T23:31:30.153+00:00,enriched
+54a4f1737468692cf0f60370,Paul,Ab***i,Franchise Business Performance Manager,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-10-22T18:37:02.000+00:00,held-off-persona
+54ec35b9746869444c8f4766,Jodie,Si***s,General Manager People and Culture,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-11-08T21:16:55.000+00:00,held-off-persona
+60dd45587ae93b00017e096a,Rick,Jo***n,"General Manager Facilities, Project & Logistics",Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-11-05T08:39:02.009+00:00,held-off-persona
+54a561607468692cf0a48193,Nathan,El***t,Head of Franchising - Plus Fitness,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-10-31T08:09:34.000+00:00,held-off-persona
+5d5c4dc780f93eeae60f8349,Michael,Cu***o,"Senior General Manager - Fitness, Innovation & Projects",Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-11-08T16:35:03.000+00:00,in-sales-nav
+62aad55e51702e000149a3f7,Matt,Mu***r,"Senior General Manager - Plus Fitness Corporate, Rebalance & Groundup",Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-10-23T01:09:00.000+00:00,in-sales-nav
+646106d1a94a3c00016cb559,Brylee,Dr***d,General Club Manager - Ringwood,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-10-22T11:54:48.000+00:00,held-off-persona
+62eaaf5ea6a6f30001f7d9f8,Jade,Wi***x,Fitness Manager,Viva Leisure,vivaleisure.com.au,Viva Leisure,2026-10-04T01:13:50.000+00:00,held-off-persona
+57d5b17da6da98536ee5f407,Kimberly,Lu***h,Founder and CEO,KX Pilates,kx.com.au,KX Pilates,2026-11-04T00:33:39.178+00:00,enriched
+660fc438e6a97700075d93d7,Selina,Br***e,CEO,KX Pilates,kx.com.au,KX Pilates,2026-11-11T00:42:47.589+00:00,enriched
+54a46cc17468692fa2619f46,Warren,Ai***y,Head of Technology,KX Pilates,kx.com.au,KX Pilates,2026-11-01T19:59:52.527+00:00,in-sales-nav
+6424644493fab60001826194,Amie,Sk***r,General Manager Operations,KX Pilates,kx.com.au,KX Pilates,2026-11-11T17:44:19.559+00:00,held-off-persona
+5e73f5dc4a36700001820758,Kirsty,Me***i,Studio Owner/General Manager,KX Pilates,kx.com.au,KX Pilates,2026-10-06T08:13:49.534+00:00,held-off-persona
+60ae4dbc38613400015245b4,Brooke,Da***y,Product Innovation Manager,KX Pilates,kx.com.au,KX Pilates,2026-11-04T07:55:08.000+00:00,in-sales-nav
+54c18a517468697af717141f,Eloise,Ce***r,"Co-Founder United Ride, Studio Owner Richmond, Camberwell, Brighton, Hampton, Docklands, Mosman, DW",KX Pilates,kx.com.au,KX Pilates,2026-09-23T09:20:52.932+00:00,enriched
+5e7f78c4998acf000193fb66,Amy,Ca***n,Product Engagement Partner,KX Pilates,kx.com.au,KX Pilates,2026-09-22T09:26:48.000+00:00,enriched
+66f1a4d43fa17400019e42c6,Ben,Wo***d,Founder and CEO,REVL Training,revltraining.com,REVL Training,2026-10-17T02:06:48.803+00:00,in-sales-nav
+66fab80378dcdd0001feea9a,Cassie,Gr***n,Head of Programming,REVL Training,revltraining.com,REVL Training,2026-10-29T22:13:31.351+00:00,enriched
+64ff3a9477defa0001de238a,Jake,He***y,Head of Product,REVL Training,revltraining.com,REVL Training,2026-10-14T01:22:06.042+00:00,enriched
+6811eaf788c8de00016bb61e,J,Rt,Head of Technology,REVL Training,revltraining.com,REVL Training,2026-10-30T21:20:46.000+00:00,in-sales-nav
+66fa6e6db517080001878cc9,Andrew,Si***s,Franchise Founder and CEO,Vision Personal Training Franchises Australia & New Zealand,visionpersonaltraining.com,Vision Personal Training,2026-10-24T07:50:48.000+00:00,messaged-vadim
+5ad3acdda6da98cdea9e8a0f,Jack,Sm***h,Managing Director,Vision Personal Training Franchises Australia & New Zealand,visionpersonaltraining.com,Vision Personal Training,2026-11-04T11:55:33.000+00:00,messaged-vadim
+606a887dd10e0600012bbaff,Rebecca,Ca***n,General Manager,Vision Personal Training Franchises Australia & New Zealand,visionpersonaltraining.com,Vision Personal Training,2026-10-27T13:42:22.000+00:00,messaged-vadim
+5b29a463a6da988ac857ae76,Kyle,Jo***n,General Manager,Vision Personal Training Franchises Australia & New Zealand,visionpersonaltraining.com,Vision Personal Training,2026-10-22T03:11:54.000+00:00,in-sales-nav
+5aa79b66a6da98a307ca8f22,Victor,Ra***z,General Manager Operations,Vision Personal Training Franchises Australia & New Zealand,visionpersonaltraining.com,Vision Personal Training,2026-10-23T02:49:26.000+00:00,in-sales-nav
+631f0b8a5578e60001570122,Thomas,Mc***n,General Manger,Vision Personal Training Franchises Australia & New Zealand,visionpersonaltraining.com,Vision Personal Training,2026-10-22T18:40:36.000+00:00,in-sales-nav
+671fdb3b7edc930001613674,Matt,To***e,Head of Programming,THE YARD GYM,theyardgym.com.au,The Yard Gym,2026-10-26T03:56:27.000+00:00,enriched
+642593f38dbcd60001fce388,Dan,Bo***a,CEO/ Founder,THE YARD GYM,theyardgym.com.au,The Yard Gym,2026-11-06T22:57:47.000+00:00,in-sales-nav
+5570a9917369647c3bb80200,Jessica,Bu***n,Head of Digital,THE YARD GYM,theyardgym.com.au,The Yard Gym,2026-11-08T23:34:08.000+00:00,enriched
+642a92a38c0a9e0001d30944,Tiarne,Bo***a,Creative Director/ Founder,THE YARD GYM,theyardgym.com.au,The Yard Gym,2026-11-04T07:50:05.010+00:00,enriched
+66f1734159ebdc0001026843,Justin,As***y,Founder / CEO,One Playground,oneplayground.com.au,One Playground,2026-10-31T10:53:20.470+00:00,in-sales-nav
+6368ea25daa75b000153c625,Tom,Me***n,Head of Education,One Playground,oneplayground.com.au,One Playground,2026-10-28T23:27:18.000+00:00,enriched
+5f5e43fdc9bef10001fcb626,Emma,Jo***s,Head Coach,One Playground,oneplayground.com.au,One Playground,2026-11-02T06:32:54.215+00:00,enriched
+57d9a484a6da98724a5c10d1,Nick,Wh***y,Head Coach,One Playground,oneplayground.com.au,One Playground,2026-11-07T02:15:32.421+00:00,enrich-skipped
+5d0ba37af6512562707c7b5c,Amie,He***n,Head Coach,One Playground,oneplayground.com.au,One Playground,2026-10-27T13:29:10.000+00:00,enriched
+60766040182ee70001291aa9,Clint,Se***n,Head of Technology,One Playground,oneplayground.com.au,One Playground,2026-11-09T23:22:34.051+00:00,in-sales-nav
+66fb9e0e84e2920001c40248,Serra,Bu***n,Creative Director | Co-Founder,One Playground,oneplayground.com.au,One Playground,2026-11-01T12:14:51.507+00:00,messaged-vadim
+666193d8566d0a00011612ee,Laura,Ba***a,Head of Group Fitness,One Playground,oneplayground.com.au,One Playground,2026-10-31T23:31:56.196+00:00,in-sales-nav
+54a5f58f7468692abf72f6b6,Daniel,Bo***n,Strategic Corporate & Partnerships Manager (New Gym Openings),One Playground,oneplayground.com.au,One Playground,2026-10-22T15:48:16.000+00:00,enriched
+60c00276a6f0e10001f6cded,Matt,Du***n,Head of Coaching,One Playground,oneplayground.com.au,One Playground,2026-10-25T17:29:56.000+00:00,held-off-persona
+60bdf3aa6a2e740001b858c0,Jessica,Co***n,Head of Digital Product Delivery,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-10-28T22:11:34.793+00:00,in-sales-nav
+66f3fc61dcc5f60001ecce32,Joanne,Po***r,Head of Partnerships and Activations,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-11-05T19:25:40.000+00:00,in-sales-nav
+57d5a904a6da98538e82ccb2,Mitchell,Du***n,Fitness Director and Personal Trainer,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-10-25T17:40:18.000+00:00,enriched
+613aeb100f2a200001d1db47,Tane,Ha***r,Product Manager,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-11-02T11:00:48.000+00:00,enriched
+57d52dada6da98537a47462e,Nicole,Gr***r,National Group Fitness Manager,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-11-03T11:29:32.000+00:00,enriched
+5f74d50a16e3d70001f71988,George,Re***d,Executive General Manager,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-11-09T23:42:14.905+00:00,in-sales-nav
+557098f573696466137b7e00,Rikki,Fe***k,General Manager - Operations,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-11-08T02:27:36.000+00:00,in-sales-nav
+66fcd60136c0c100016b2f43,Brett,Le***s,Product Manager | Sales & Marketing,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-11-04T21:24:57.000+00:00,enriched
+60cba28bb086640001187c6b,Shaun,Ma***s,General Manager Property and Procurement,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-10-28T16:34:27.123+00:00,held-off-persona
+60cc6a0decdb5c0001742ac6,Luc,Mc***n,Product Manager - Core CRM & Billing,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-11-01T20:42:12.000+00:00,enriched
+60f75cecf22bc90001d0a12b,Amie,Le***r,Head of Marketing - Fitness First,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-11-01T18:36:58.000+00:00,held-off-persona
+607e9f99ad3b0500015abd85,Tim,Ki***g,Executive General Manager - People & Culture,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-11-01T18:21:53.000+00:00,held-off-persona
+6254f2eea2f65900019a972c,Rob,Wa***n,Chief Technology & Security Officer,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-10-17T23:35:52.000+00:00,enriched
+68830a387c4fb70001662602,Sara,Du***h,Executive General Manager Marketing & PR ANZ,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-11-06T10:52:52.000+00:00,held-off-persona
+57e0f04aa6da987d7c311235,Sophie,We***r,General Manager Marketing Goodlife Health Clubs,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-11-09T12:34:53.000+00:00,held-off-persona
+611075f415ee4d0001de544d,Andy,Ch***n,Executive General Manager-Fitness and Lifestyle Group Australia,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-11-12T17:23:04.857+00:00,held-off-persona
+618896e4eccf380001d5318c,Joe,Wh***e,Head of IT Operations,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-10-31T06:26:08.000+00:00,held-off-persona
+66fabcbd78dcdd000100b0b0,Jordan,Cu***n,Territory Personal Training Manager (vic/wa/sa),Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-10-22T20:38:05.000+00:00,held-off-persona
+64259a1c3dbf6d0001bda168,Jason,Ca***r,Fitness Manager,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-10-23T00:13:10.000+00:00,held-off-persona
+66fac11678dcdd0001024e1f,Aaron,Tu***e,Fitness Manager,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-11-13T21:01:09.012+00:00,held-off-persona
+60d1bea375b95c00018b6140,Matthew,Fe***n,Group Fitness Manager,Fitness and Lifestyle Group,fitlg.com,Fitness and Lifestyle Group,2026-10-30T20:25:56.000+00:00,held-off-persona
+60691b9e6606e800018de299,Tahnee,Do***n,National Fitness Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-11-03T07:19:32.000+00:00,enriched
+60b8ae7532764600015af219,David,Ma***l,National Franchise Business & Development Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-10-08T08:43:14.000+00:00,enriched
+662db9cbebf1870007829012,Gary,Tr***n,Head Coach,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-10-22T13:40:58.000+00:00,enriched
+60d416aacb1e9400015e28f4,Ashley,Go***e,Head Coach,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-10-04T01:20:21.000+00:00,enriched
+5e8e217279016f0001eae2bf,Melissa,Fr***r,Managing Director,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-10-13T14:17:38.067+00:00,messaged-vadim
+62d11d3d8901bf0001c076c1,Kyle,Ma***e,Club Manager / Head Coach,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-11-03T23:43:41.925+00:00,enriched
+5aeb930ea6da98017fc47f8b,James,Br***n,National Group Fitness Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-10-03T19:56:22.000+00:00,enriched
+624d37a0835e7500015e59c5,Luke,Ko***s,Club General Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-11-11T20:05:47.778+00:00,enriched
+57e11f46a6da987da422496a,Mayank,Ba***a,Club General Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-11-07T07:48:21.000+00:00,enriched
+631f0e7513e4a100013a4376,Clay,Wi***s,Club General Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-10-26T04:23:46.000+00:00,enriched
+680e0ffe5a87250001d85984,Justin,Be***s,Club General Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-10-27T09:09:12.000+00:00,enriched
+61911214c42fad0001a37dab,Mackenzie,Pi***o,Club General Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-10-09T05:31:16.000+00:00,enriched
+63fc93901dbb0f0001944e9e,Bec,Gi***s,Club General Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-10-03T08:40:07.000+00:00,enriched
+605b3b343268de00011de4aa,Haydn,Wi***s,Club General Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-10-22T00:42:08.000+00:00,enriched
+60b8ae4b3532c2000169c338,Narelle,Mu***y,Club General Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-09-23T07:45:31.000+00:00,enriched
+57e11989a6da987ddc72917d,Mark,He***e,Club General Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-10-23T08:52:07.000+00:00,enriched
+57df6be7a6da980af979dea9,Genesis,Cu***n,Club General Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-10-03T23:18:32.000+00:00,enriched
+68087e8dfc256e0001ec8cb9,Peta,Ba***y,Group Fitness Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-10-08T08:23:22.000+00:00,enriched
+66a67f083330c40001febd5b,Anna,Ve***s,Group Fitness Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-10-22T23:50:45.000+00:00,enriched
+54a3f6e274686932090e9421,Jeannie,Ma***n,Group Fitness Manager,Genesis Fitness Clubs,genesisfitness.com.au,Genesis Health + Fitness,2026-10-22T14:17:00.000+00:00,enriched
+60ed18815826750001c17fba,Andrew,Ho***r,Founder & Managing Director,Revo Fitness,revofitness.com.au,Revo Fitness,2026-11-09T21:53:02.000+00:00,in-sales-nav
+5e680d7b1f6f1800014a0d29,Kalen,Co***n,Head of Fitness Operations,Revo Fitness,revofitness.com.au,Revo Fitness,2026-10-28T21:02:22.000+00:00,in-sales-nav
+60c1cdeb6925a10001d612bc,Jordan,Ch***r,Founder,Revo Fitness,revofitness.com.au,Revo Fitness,2026-11-14T02:13:45.809+00:00,enriched
+6199c00cfe0aaa0001d18bc5,Kayla,Br***e,Business Development Manager - Revo Fitness,Revo Fitness,revofitness.com.au,Revo Fitness,2026-10-15T00:15:29.630+00:00,enriched
+642c1c761365ac000119a7dc,Rob,Fl***t,PT Head Coach,Virgin Active Australia,virginactive.com.au,Virgin Active Australia,2026-11-04T11:22:19.000+00:00,held-off-persona
+54a5582e74686938ac76cf90,Alice,Sc***t,Pilates Head Coach,Virgin Active Australia,virginactive.com.au,Virgin Active Australia,2026-10-08T07:05:41.000+00:00,held-off-persona
+54a13b3469702d231f1c8801,John,Mc***y,General Manager,Virgin Active Australia,virginactive.com.au,Virgin Active Australia,2026-11-08T07:52:12.000+00:00,in-sales-nav
+57e15544a6da987da42393f5,Aaron,Se***y,Product Manager,Virgin Active Australia,virginactive.com.au,Virgin Active Australia,2026-10-30T21:02:22.000+00:00,enriched
+5d5cfb7580f93ef6b0be2a5e,Bill,Liu,Club General Manager,Virgin Active Australia,virginactive.com.au,Virgin Active Australia,2026-11-03T16:01:41.907+00:00,held-off-persona
+54c21ea37468691639951e7b,Emma,Cl***d,Club General Manager,Virgin Active Australia,virginactive.com.au,Virgin Active Australia,2026-11-03T16:01:55.786+00:00,held-off-persona
+631dcbbf962e2d0001bfac02,Katie,Pym,Exercise Experience Manager,Virgin Active Australia,virginactive.com.au,Virgin Active Australia,2026-09-23T08:45:45.000+00:00,held-off-persona
+5d4f058bf65125d24fde28df,Luke,Br***d,Fitness Manager,Virgin Active Australia,virginactive.com.au,Virgin Active Australia,2026-10-22T22:54:22.000+00:00,held-off-persona
+5f6820c5d7c74c00019e1608,Kristy-Lee,Ro***g,Fitness Director,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-10-31T04:49:43.000+00:00,enriched
+64ecee589c1ac70001e28303,Jessie,Bo***n,General Manager,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-11-08T15:16:10.411+00:00,in-sales-nav
+54a741e27468696220edcb23,Brad,Wh***a,National Group Fitness Manager,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-10-08T07:38:12.000+00:00,enriched
+5e81f2d6cdbf8a00011894e1,Darren,Me***r,General Manager of Fitness Cartel,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-10-25T17:35:31.000+00:00,in-sales-nav
+642aea0ec8ae1800017dd87f,Josh,Ac***n,Club General Manager,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-11-01T10:16:32.378+00:00,held-off-persona
+6198c4f9b3633d0001f8c989,Shayne,C,Club General Manager,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-10-27T13:18:32.000+00:00,held-off-persona
+6a82c57f8486a0000110119d,Connor,Be***i,Club General Manager,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-10-26T04:10:53.107+00:00,held-off-persona
+6ab609feedcb100001f15a6d,Simone,To***d,Club General Manager,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-11-02T06:49:25.751+00:00,held-off-persona
+57d8eb70a6da98723277f1d2,TJ,Gr***t,Chief Operating Officer & Co-Founder,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-11-06T17:13:20.000+00:00,in-sales-nav
+6129def9f9ba870001cc3a7b,Nick,Ki***s,Club General Manager,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-10-25T17:21:25.000+00:00,held-off-persona
+5adb15a3a6da9862c35bd045,Jay,Me***r,General Manager - Business Performance,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-10-22T05:51:45.000+00:00,in-sales-nav
+63aee7b68c61420001aad03d,Beck,Gr***n,Group Fitness Manager,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-10-17T09:49:34.000+00:00,held-off-persona
+6ab09c7a0a024e0001b4f3b8,Thalia,Me***s,Group Fitness Manager,Fitness Cartel Australia & New Zealand,fitnesscartel.com.au,Fitness Cartel,2026-10-04T04:23:23.000+00:00,held-off-persona
+5f596376c1a70b0001677fa0,Sam,Me***a,National Fitness and Business Development Manager,TotalFusion Australia,totalfusion.com.au,TotalFusion,2026-10-22T21:43:00.000+00:00,in-sales-nav
+643163a2f373af0001bd71b0,Thiago,Me***s,Head of Training and Development,TotalFusion Australia,totalfusion.com.au,TotalFusion,2026-11-10T22:21:02.964+00:00,enriched
+68334c3efc05b900013e1f71,Dom,Kao,Business Development Manager,TotalFusion Australia,totalfusion.com.au,TotalFusion,2026-10-08T05:32:22.000+00:00,enriched
+613058cdfdbca7000173cdd9,Liam,Co***e,General Manager,TotalFusion Australia,totalfusion.com.au,TotalFusion,2026-10-29T08:50:25.000+00:00,in-sales-nav
+66e7973a2ed20200013b49b2,Matt,Bu***r,General Manager,TotalFusion Australia,totalfusion.com.au,TotalFusion,2026-09-18T13:08:02.000+00:00,in-sales-nav
+54a640797468693676da2cce,Helen,He***y,Head of Group Fitness,TotalFusion Australia,totalfusion.com.au,TotalFusion,2026-10-22T14:37:46.000+00:00,enriched
+6a246b913799d600014f76d1,Ayden,Ol***r,General Manager Total Fusion Morningside,TotalFusion Australia,totalfusion.com.au,TotalFusion,2026-10-20T11:49:41.135+00:00,held-off-persona
+60069c0ada18500001b9852d,Damien,Ma***s,Chief Executive Officer,Sweat,sweat.com,Sweat,2026-10-30T10:28:12.443+00:00,in-sales-nav
+67b812dd91428f000122014e,Chris,To***o,Head of Product & CX,Sweat,sweat.com,Sweat,2026-10-18T10:46:41.000+00:00,in-sales-nav
+60eb8bda32233c000112e5f2,Claire,Se***r,"Director, Product and Content",Sweat,sweat.com,Sweat,2026-10-22T19:04:29.000+00:00,enriched
+57e1e84da6da980926c81928,Becky,Wa***s,App Product Manager,Sweat,sweat.com,Sweat,2026-10-22T14:24:53.000+00:00,messaged-vadim
+5d4d0557f65125dfa671a8a9,Betty,Ka***s,Senior Product Manager,Sweat,sweat.com,Sweat,2026-11-02T17:58:51.000+00:00,enriched
+6620bdcef3a3410007467375,Laura,He***w,"Co-Founder, CEO",KIC,kicwellness.com,KIC,2026-10-19T23:11:21.209+00:00,in-sales-nav
+605b01989cd7b200010e66d4,Steph,Sm***h,Co-Founder,KIC,kicwellness.com,KIC,2026-10-23T16:13:58.090+00:00,messaged-vadim
+60e7d49bb51d1f00016fc272,Charlie,Ca***i,Head of Technology & Platform,KIC,kicwellness.com,KIC,2026-11-12T02:15:18.077+00:00,in-sales-nav
+659fc8750845350001fa31a4,Tom,Gr***w,Senior Product Manager,KIC,kicwellness.com,KIC,2026-10-31T15:21:43.766+00:00,messaged-vadim
+54a61aa27468692fa248dac2,Amy,Ni***l,General Manager,Move With Us,movewithus.com,CSB,2026-11-18T13:53:27.523+00:00,enriched
+5ae9fba4a6da98eb5b0f36f5,Ryan,Br***s,Product Manager & Scrum Master,Move With Us,movewithus.com,CSB,2026-11-14T12:23:00.664+00:00,enriched
+5abe71a3a6da98fd9aca0ece,Jason,El***s,CTO,Your Reformer,yourreformer.com.au,Your Reformer,2026-11-08T23:00:08.000+00:00,in-sales-nav
+57d451cea6da9853ee9623fb,Suyesh,Ba***a,Product Owner,Your Reformer,yourreformer.com.au,Your Reformer,2026-11-06T23:47:37.000+00:00,messaged-vadim
+57d5d624a6da9853a0acbcb1,Lizzie,Ru***l,Business Development Manager,Your Reformer,yourreformer.com.au,Your Reformer,2026-10-22T19:44:14.000+00:00,enriched
+54a4dbc874686938ac025969,Emma,St***y,Founder,Your Reformer,yourreformer.com.au,Your Reformer,2026-11-15T18:40:32.579+00:00,in-sales-nav
+5ffc2cb45a52850001ac5ddb,Ben,St***y,Managing Director,Your Reformer,yourreformer.com.au,Your Reformer,2026-11-06T17:28:23.000+00:00,in-sales-nav
+6969623a01e3c600019847af,Allie,Ma***s,Head of Digital Growth,Your Reformer,yourreformer.com.au,Your Reformer,2026-10-13T07:04:38.000+00:00,enriched
+5ee9abaa36b49f00beb161cf,Melanie,We***r,Product Design Manager,Your Reformer,yourreformer.com.au,Your Reformer,2026-10-11T13:05:53.000+00:00,enriched
+65433911b6e01c0001899357,Melissa,Bl***k,Business Development- Commercial,Your Reformer,yourreformer.com.au,Your Reformer,2026-11-10T18:24:09.363+00:00,enriched
+60e13a4dd90e5a00011a74da,Jarron,Ai***n,CEO & Founder,Hapana,hapana.com,Hapana,2026-11-05T05:10:25.000+00:00,in-sales-nav
+6007e2f692b977000143fde1,Tais,Ma***i,Product Owner,Hapana,hapana.com,Hapana,2026-10-29T15:29:39.000+00:00,enriched
+61007b98771b580001caf819,Lakshmi,Ko***a,Head of Product,Hapana,hapana.com,Hapana,2026-10-29T03:20:37.246+00:00,messaged-vadim
+5aab1feda6da98273d847da4,Holly,Br***r,Product Manager,Hapana,hapana.com,Hapana,2026-11-03T14:30:10.446+00:00,enriched
+67e56f6bc820b50001d769d9,Tori,Cl***m,Founder,Peaches Pilates,peachespilates.com,Peaches Pilates,2026-11-06T10:04:43.470+00:00,in-sales-nav
+66f6c54f5aebae00015fe9d0,Teah,Fo***t,Head of Operations and Partnerships,Peaches Pilates,peachespilates.com,Peaches Pilates,2026-11-08T08:09:44.709+00:00,in-sales-nav
+557058f3736964524f1c0600,Julian,Ga***h,Co-Founder,GRAVL,gravl.ai,Gravl,2026-11-09T10:09:41.000+00:00,in-sales-nav
+54c27e6f7468697af7b148a0,Emma,Se***d,Founder,Barre Body,barrebody.com.au,Barre Body,2026-10-30T06:16:46.853+00:00,enriched
+6169213ff973f10001f5c492,Siobhan,W,Accounts & Partnerships Manager,Barre Body,barrebody.com.au,Barre Body,2026-11-14T02:26:36.619+00:00,enriched
+6ad44a3a18da51000104c926,Jordan,Mc***y,Founder & CEO,CONDITN. Training,conditn.com,CONDITN Training,2026-10-29T01:46:56.000+00:00,in-sales-nav
+62ec30fe01b5790001347e91,Andres,Ga***s,Head Coach,CONDITN. Training,conditn.com,CONDITN Training,2026-09-18T12:52:08.000+00:00,enriched
+6851d2c5cf8f360001a28bd6,Daniel,Ca***i,Co-Founder - Conditn. Training,CONDITN. Training,conditn.com,CONDITN Training,2026-10-28T08:52:31.025+00:00,in-sales-nav
+67f12af66228680001b44a33,James,Mc***y,Group Executive General Manager,CONDITN. Training,conditn.com,CONDITN Training,2026-11-12T03:15:06.674+00:00,enriched
+642983b81a939e00016cadf5,Sebastian,Dr***i,Head Strength Coach,CONDITN. Training,conditn.com,CONDITN Training,2026-11-10T05:16:34.291+00:00,enriched
+565e63d5a6da98120200e07d,Alex,Lo***y,Business Manager,CONDITN. Training,conditn.com,CONDITN Training,2026-09-18T13:02:57.000+00:00,enriched
+55c7e418736964111b71da00,Todd,Mc***y,Managing Director,BlueFit,bluefit.com.au,BlueFit,2026-10-19T08:40:35.000+00:00,enriched
+54a7716a7468696220124835,Andrew,Hu***d,Managing Director,BlueFit,bluefit.com.au,BlueFit,2026-10-15T12:42:45.323+00:00,enriched
+5b355a19a6da980d6b21ad20,Ryan,O'***r,Business Development Manager & Facility Manager,BlueFit,bluefit.com.au,BlueFit,2026-11-04T03:15:08.000+00:00,enriched
+61132da87c194a00019974ae,Brett,Mc***n,General Manager,BlueFit,bluefit.com.au,BlueFit,2026-11-12T08:57:43.789+00:00,enriched
+57d774cfa6da984fbab09c7e,Lee,Je***a,General Manager - Leisure,BlueFit,bluefit.com.au,BlueFit,2026-10-06T05:07:22.000+00:00,enriched
+60ffd34cb0f12b000127265d,Matt,Fr***t,General Manager - Health Clubs,BlueFit,bluefit.com.au,BlueFit,2026-10-03T13:34:25.000+00:00,enriched
+55708b067369641fee9f0300,Leonie,Sh***w,"General Manager - Community Engagement, Events & Programs",BlueFit,bluefit.com.au,BlueFit,2026-11-11T23:01:54.000+00:00,enriched
+67c53c705d8fa400013c0eaf,Roland,Ka***y,General Manager - Digital and Information Technology BlueFit Group,BlueFit,bluefit.com.au,BlueFit,2026-10-03T08:12:59.000+00:00,enriched
+605ca7f66aef080001b141d7,Kate,Ra***y,Regional General Manager - Oceania,GymMaster,gymmaster.com,GymMaster,2026-11-11T17:39:35.000+00:00,enriched
+647239d71eedcb0001a403c3,Aaron,Sm***h,"Regional General Manager - Europe, Middle East, Africa & Asia",GymMaster,gymmaster.com,GymMaster,2026-10-31T20:08:19.927+00:00,in-sales-nav
+66faefbe00509800019b2998,Emily,Sm***t,Co-Founder & CEO,Clubworx Pty Ltd,clubworx.com,Clubworx,2026-11-11T22:05:44.000+00:00,enriched
+5fb12e1ffab6b4000130677e,Ben,Qu***y,Founder and CEO,Gym Mate,gymmate.com.au,Gym Mate,2026-11-02T22:34:35.000+00:00,in-sales-nav
+5e8978c62eeca400014e2d3f,Melissa,Ca***o,General Manager,Planet Fitness Australia,planetfitnessaustralia.com.au,Planet Fitness Australia,2026-10-22T10:08:45.000+00:00,in-sales-nav
+61b42903819b2e00014fa598,Jonathon,Al***k,General Manager,Planet Fitness Australia,planetfitnessaustralia.com.au,Planet Fitness Australia,2026-10-22T13:17:09.000+00:00,enriched
+6870993cc84dd50001cc60a8,Cade,Ra***d,General Manager,Planet Fitness Australia,planetfitnessaustralia.com.au,Planet Fitness Australia,2026-10-31T04:47:25.069+00:00,enriched
+61020ee91cc28c000160547e,Emily,Sa***f,General Manager,Planet Fitness Australia,planetfitnessaustralia.com.au,Planet Fitness Australia,2026-10-28T23:17:29.000+00:00,enriched
+642497feaf32790001a8c290,Sameer,Ali,General Manager,Planet Fitness Australia,planetfitnessaustralia.com.au,Planet Fitness Australia,2026-10-22T14:58:52.000+00:00,enriched
+6ab60a098147f10001995fe3,Ami,Sc***z,General Manager,Planet Fitness Australia,planetfitnessaustralia.com.au,Planet Fitness Australia,2026-10-04T04:27:45.000+00:00,in-sales-nav
+5e278aeb38eb070098ed5da1,Daniel,Mi***r,Assistant General Manager,Planet Fitness Australia,planetfitnessaustralia.com.au,Planet Fitness Australia,2026-10-22T03:36:01.000+00:00,held-off-persona
+5f029426492d7f00017619a2,Tilly,Se***b,Assistant General Manager,Planet Fitness Australia,planetfitnessaustralia.com.au,Planet Fitness Australia,2026-10-07T05:45:48.000+00:00,held-off-persona
+65a15f648b1cbe00018e6805,Kate,Ma***e,General Club Manager,Planet Fitness Australia,planetfitnessaustralia.com.au,Planet Fitness Australia,2026-10-04T06:35:08.000+00:00,held-off-persona
+68f2a7c3f105850001dde989,Chrissie,Br***n,Fitness Manager,Planet Fitness Australia,planetfitnessaustralia.com.au,Planet Fitness Australia,2026-10-31T13:42:33.447+00:00,held-off-persona
+6acf18fd571cd70001bbadbb,Kat,He***y,General Manager,STRONG Pilates,strongpilates.com.au,STRONG Pilates,2026-07-18T12:12:37.959+00:00,in-sales-nav

@@ -1,5 +1,5 @@
 {
-  "scope_hash": "b75bc87358fd80f2",
+  "scope_hash": "cbe2107ad318a61b",
   "sections": [
     "anti-cases (where it does not work)",
     "sub-segment",
@@ -9,6 +9,6 @@
     "validation criteria (step 2 will check)",
     "vertical"
   ],
-  "stamped_at": "2026-11-19T10:20:37Z",
+  "stamped_at": "2026-11-20T20:14:33Z",
   "note": "Written when the company list was built. If the hypothesis scope changes after this, the list no longer answers it."
 }

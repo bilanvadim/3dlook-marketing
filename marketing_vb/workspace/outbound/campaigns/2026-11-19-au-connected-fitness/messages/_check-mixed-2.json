@@ -1,0 +1,530 @@
+{
+ "campaign": "2026-11-19-au-connected-fitness",
+ "checked": 30,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-2",
+ "generated": "2026-11-20T21:21:26",
+ "hard": [],
+ "soft": [
+  [
+   "M1 closing ask repeated",
+   "KX Pilates ×2",
+   "«what do members at your studios ask about their p…»: kara-spice-36b619240, eloise-censor-a7983749"
+  ],
+  [
+   "M2 closing ask repeated",
+   "CityFitness ×5",
+   "«open to a short chat?»: joe-erskine-6ab72061, stuart-davenport-952894, sam-wagstaff-7306728a, jodie-preston-9053298a"
+  ],
+  [
+   "M2 closing ask repeated",
+   "KX Pilates ×5",
+   "«open to a short chat?»: brooke-daubney-59653a34, francis-dowdle-13b43360, kara-spice-36b619240, eloise-censor-a7983749"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Les Mills New Zealand ×2",
+   "«open to a short call?»: brent-nathan-ab97354, donald-horsburgh-0498464"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Les Mills New Zealand ×3",
+   "«open to a short chat?»: anise-elliott-neilson, tevitas, stephanie-campbell-4b2a7b19"
+  ],
+  [
+   "M2 closing ask repeated",
+   "BlueFit ×4",
+   "«open to a short chat?»: todd-mchardy-53676619, andrew-hungerford-67673a33, ryan-o-connor-bb716136, leonie-s-0b807698"
+  ],
+  [
+   "M2 closing ask repeated",
+   "BlueFit ×2",
+   "«might be worth a quick chat?»: matt-frost-, roland-k-2810a11a"
+  ],
+  [
+   "near-duplicate sentence",
+   "CityFitness: joe-erskine-6ab72061 / jodie-preston-9053298a",
+   "«hi joe, across your region, cityfitness members c…»"
+  ],
+  [
+   "same sentence at one company",
+   "CityFitness: joe-erskine-6ab72061 / david-vonder-28817770",
+   "«A weight figure misses change at the waist and in lean mass.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "CityFitness: joe-erskine-6ab72061 / abhishek-ketkar-2a4543296",
+   "«A weight figure misses change at the waist and in lean mass.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "CityFitness: joe-erskine-6ab72061 / lisa-brown-9a2476136",
+   "«fitxpress adds a scan to the member app: two guid…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "CityFitness: joe-erskine-6ab72061 / mark-hurdle-781781315",
+   "«fitxpress adds a scan to the member app: two guid…»"
+  ],
+  [
+   "same sentence at one company",
+   "CityFitness: david-vonder-28817770 / jodie-preston-9053298a",
+   "«Weight alone misses change at the waist and in lean mass.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "CityFitness: david-vonder-28817770 / abhishek-ketkar-2a4543296",
+   "«Weight alone misses change at the waist and in lean mass.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "CityFitness: stuart-davenport-952894 / lisa-brown-9a2476136",
+   "«Hi Stuart, The CityFitness app is where members check in on…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "CityFitness: stuart-davenport-952894 / sam-wagstaff-7306728a",
+   "«fitxpress adds a scan: two guided photos on the m…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "CityFitness: stuart-davenport-952894 / abhishek-ketkar-2a4543296",
+   "«fitxpress adds a scan: two guided photos on the m…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "CityFitness: sam-wagstaff-7306728a / lisa-brown-9a2476136",
+   "«fitxpress adds a scan to the cityfitness app: two…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "CityFitness: sam-wagstaff-7306728a / abhishek-ketkar-2a4543296",
+   "«fitxpress adds a scan to the cityfitness app: two…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "CityFitness: sam-wagstaff-7306728a / mark-hurdle-781781315",
+   "«fitxpress adds a scan to the cityfitness app: two…»"
+  ],
+  [
+   "same sentence at one company",
+   "CityFitness: jodie-preston-9053298a / abhishek-ketkar-2a4543296",
+   "«Weight alone misses change at the waist or in lean mass.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "CityFitness: jodie-preston-9053298a / lisa-brown-9a2476136",
+   "«fitxpress adds a scan to the member app: two guid…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "CityFitness: jodie-preston-9053298a / mark-hurdle-781781315",
+   "«fitxpress adds a scan to the member app: two guid…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "CityFitness: lisa-brown-9a2476136 / abhishek-ketkar-2a4543296",
+   "«fitxpress adds a scan to the app: two guided phot…»"
+  ],
+  [
+   "same sentence at one company",
+   "KX Pilates: warren-ainsley-6519a666 / aaronsmithkx",
+   "«Weight alone misses change at the waist and hip.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "KX Pilates: warren-ainsley-6519a666 / francis-dowdle-13b43360",
+   "«Weight alone misses change at the waist and hip.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "KX Pilates: warren-ainsley-6519a666 / eloise-censor-a7983749",
+   "«weight alone misses change at the waist and hip.»"
+  ],
+  [
+   "same sentence at one company",
+   "KX Pilates: brooke-daubney-59653a34 / amy-cashman-767703133",
+   "«A weight entry and progress photos leave out what changed a…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "KX Pilates: brooke-daubney-59653a34 / aaronsmithkx",
+   "«fitxpress adds a scan to your app: two guided pho…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "KX Pilates: brooke-daubney-59653a34 / francis-dowdle-13b43360",
+   "«fitxpress adds a scan to your app: two guided pho…»"
+  ],
+  [
+   "same sentence at one company",
+   "KX Pilates: aaronsmithkx / francis-dowdle-13b43360",
+   "«Weight alone misses change at the waist and hip.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "KX Pilates: aaronsmithkx / eloise-censor-a7983749",
+   "«weight alone misses change at the waist and hip.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "KX Pilates: aaronsmithkx / kara-spice-36b619240",
+   "«fitxpress adds a scan to the kx pilates app: two…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "KX Pilates: francis-dowdle-13b43360 / eloise-censor-a7983749",
+   "«weight alone misses change at the waist and hip.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "KX Pilates: francis-dowdle-13b43360 / kara-spice-36b619240",
+   "«fitxpress adds a scan to the kx pilates app: two…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "KX Pilates: kara-spice-36b619240 / eloise-censor-a7983749",
+   "«fitxpress adds a scan to the kx pilates app: two…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "KX Pilates: kara-spice-36b619240 / amy-cashman-767703133",
+   "«fitxpress adds a scan to the kx pilates app: two…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "KX Pilates: eloise-censor-a7983749 / amy-cashman-767703133",
+   "«fitxpress adds a scan to the kx pilates app: two…»"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills New Zealand: brent-nathan-ab97354 / donald-horsburgh-0498464",
+   "«A weight figure leaves out change at the waist and in lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills New Zealand: brent-nathan-ab97354 / ish-cheyne",
+   "«A weight figure leaves out change at the waist and in lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills New Zealand: brent-nathan-ab97354 / brett-sutton-43285123",
+   "«A weight figure leaves out change at the waist and in lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills New Zealand: brent-nathan-ab97354 / anise-elliott-neilson",
+   "«A weight figure leaves out change at the waist and in lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills New Zealand: brent-nathan-ab97354 / tevitas",
+   "«A weight figure leaves out change at the waist and in lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills New Zealand: brent-nathan-ab97354 / stephanie-campbell-4b2a7b19",
+   "«A weight figure leaves out change at the waist and in lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills New Zealand: donald-horsburgh-0498464 / ish-cheyne",
+   "«A weight figure leaves out change at the waist and in lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills New Zealand: donald-horsburgh-0498464 / brett-sutton-43285123",
+   "«A weight figure leaves out change at the waist and in lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills New Zealand: donald-horsburgh-0498464 / anise-elliott-neilson",
+   "«A weight figure leaves out change at the waist and in lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills New Zealand: donald-horsburgh-0498464 / tevitas",
+   "«A weight figure leaves out change at the waist and in lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills New Zealand: donald-horsburgh-0498464 / stephanie-campbell-4b2a7b19",
+   "«A weight figure leaves out change at the waist and in lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills New Zealand: ish-cheyne / brett-sutton-43285123",
+   "«A weight figure leaves out change at the waist and in lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills New Zealand: ish-cheyne / anise-elliott-neilson",
+   "«A weight figure leaves out change at the waist and in lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills New Zealand: ish-cheyne / tevitas",
+   "«A weight figure leaves out change at the waist and in lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills New Zealand: ish-cheyne / stephanie-campbell-4b2a7b19",
+   "«A weight figure leaves out change at the waist and in lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills New Zealand: brett-sutton-43285123 / anise-elliott-neilson",
+   "«A weight figure leaves out change at the waist and in lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills New Zealand: brett-sutton-43285123 / tevitas",
+   "«A weight figure leaves out change at the waist and in lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills New Zealand: brett-sutton-43285123 / stephanie-campbell-4b2a7b19",
+   "«A weight figure leaves out change at the waist and in lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills New Zealand: anise-elliott-neilson / tevitas",
+   "«A weight figure leaves out change at the waist and in lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills New Zealand: anise-elliott-neilson / stephanie-campbell-4b2a7b19",
+   "«A weight figure leaves out change at the waist and in lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Les Mills New Zealand: tevitas / stephanie-campbell-4b2a7b19",
+   "«A weight figure leaves out change at the waist and in lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "BlueFit: todd-mchardy-53676619 / andrew-hungerford-67673a33",
+   "«fitxpress adds a scan inside the app: two guided…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BlueFit: todd-mchardy-53676619 / leonie-s-0b807698",
+   "«fitxpress adds a scan inside the app: two guided…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BlueFit: todd-mchardy-53676619 / roland-k-2810a11a",
+   "«fitxpress adds a scan inside the app: two guided…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BlueFit: todd-mchardy-53676619 / brett-mcewin-70972ab7",
+   "«what would you want a member to see at their firs…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "BlueFit: andrew-hungerford-67673a33 / leonie-s-0b807698",
+   "«fitxpress adds a scan to the member app: two guid…»"
+  ],
+  [
+   "same sentence at one company",
+   "BlueFit: andrew-hungerford-67673a33 / ryan-o-connor-bb716136",
+   "«If the member app sits with head office, a pointer to whoev…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "BlueFit: ryan-o-connor-bb716136 / lee-jeka-688a369b",
+   "«A weight entry and progress photos leave out what changed a…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "BlueFit: ryan-o-connor-bb716136 / roland-k-2810a11a",
+   "«A weight entry and progress photos leave out what changed a…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "BlueFit: brett-mcewin-70972ab7 / matt-frost-",
+   "«Weight alone misses change at the waist and in lean mass.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "BlueFit: brett-mcewin-70972ab7 / leonie-s-0b807698",
+   "«weight alone misses change at the waist and in le…»"
+  ],
+  [
+   "same sentence at one company",
+   "BlueFit: lee-jeka-688a369b / roland-k-2810a11a",
+   "«A weight entry and progress photos leave out what moved at…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "BlueFit: matt-frost- / leonie-s-0b807698",
+   "«weight alone misses change at the waist and in le…»"
+  ],
+  [
+   "sentence opening repeated",
+   "CityFitness ×5",
+   "«fitxpress adds a scan to…»: jodie-preston-9053298a, joe-erskine-6ab72061, lisa-brown-9a2476136, mark-hurdle-781781315"
+  ],
+  [
+   "sentence opening repeated",
+   "KX Pilates ×4",
+   "«weight alone misses change at…»: aaronsmithkx, eloise-censor-a7983749, francis-dowdle-13b43360, warren-ainsley-6519a666"
+  ],
+  [
+   "sentence opening repeated",
+   "CityFitness ×3",
+   "«weight alone misses change at…»: abhishek-ketkar-2a4543296, david-vonder-28817770, jodie-preston-9053298a"
+  ],
+  [
+   "sentence opening repeated",
+   "CityFitness ×5",
+   "«two guided photos on the…»: abhishek-ketkar-2a4543296, lisa-brown-9a2476136, mark-hurdle-781781315, sam-wagstaff-7306728a"
+  ],
+  [
+   "sentence opening repeated",
+   "KX Pilates ×6",
+   "«fitxpress adds a scan to…»: aaronsmithkx, amy-cashman-767703133, brooke-daubney-59653a34, eloise-censor-a7983749"
+  ],
+  [
+   "sentence opening repeated",
+   "KX Pilates ×6",
+   "«two guided photos on the…»: aaronsmithkx, amy-cashman-767703133, brooke-daubney-59653a34, eloise-censor-a7983749"
+  ],
+  [
+   "sentence opening repeated",
+   "Les Mills New Zealand ×7",
+   "«a weight figure leaves out…»: anise-elliott-neilson, brent-nathan-ab97354, brett-sutton-43285123, donald-horsburgh-0498464"
+  ],
+  [
+   "sentence opening repeated",
+   "Les Mills New Zealand ×3",
+   "«fitxpress is a white label…»: anise-elliott-neilson, donald-horsburgh-0498464, stephanie-campbell-4b2a7b19"
+  ],
+  [
+   "sentence opening repeated",
+   "Les Mills New Zealand ×5",
+   "«two guided photos on the…»: anise-elliott-neilson, brett-sutton-43285123, donald-horsburgh-0498464, ish-cheyne"
+  ],
+  [
+   "sentence opening repeated",
+   "BlueFit ×6",
+   "«two guided photos on the…»: brett-mcewin-70972ab7, lee-jeka-688a369b, leonie-s-0b807698, roland-k-2810a11a"
+  ],
+  [
+   "sentence opening repeated",
+   "BlueFit ×4",
+   "«fitxpress adds a scan to…»: andrew-hungerford-67673a33, brett-mcewin-70972ab7, leonie-s-0b807698, ryan-o-connor-bb716136"
+  ],
+  [
+   "sentence opening repeated",
+   "BlueFit ×3",
+   "«a weight entry and progress…»: lee-jeka-688a369b, roland-k-2810a11a, ryan-o-connor-bb716136"
+  ],
+  [
+   "sentence opening repeated",
+   "BlueFit ×3",
+   "«weight alone misses change at…»: brett-mcewin-70972ab7, leonie-s-0b807698, matt-frost-"
+  ],
+  [
+   "M1 product sentence shared",
+   "BlueFit ×4",
+   "«x adds a scan to the…»: andrew-hungerford-67673a33, brett-mcewin-70972ab7, leonie-s-0b807698, ryan-o-connor-bb716136"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "CityFitness ×2",
+   "«the cityfitness app…»: lisa-brown-9a2476136, stuart-davenport-952894"
+  ],
+  [
+   "M1 product sentence shared",
+   "CityFitness ×5",
+   "«x adds a scan to the…»: jodie-preston-9053298a, joe-erskine-6ab72061, lisa-brown-9a2476136, mark-hurdle-781781315"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "KX Pilates ×2",
+   "«kx pilates members…»: francis-dowdle-13b43360, warren-ainsley-6519a666"
+  ],
+  [
+   "M1 product sentence shared",
+   "KX Pilates ×5",
+   "«x adds a scan to the…»: aaronsmithkx, amy-cashman-767703133, eloise-censor-a7983749, francis-dowdle-13b43360"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "Les Mills New Zealand ×2",
+   "«the les mills…»: brent-nathan-ab97354, donald-horsburgh-0498464"
+  ],
+  [
+   "M1 product sentence shared",
+   "Les Mills New Zealand ×3",
+   "«x is a white label scan…»: anise-elliott-neilson, donald-horsburgh-0498464, stephanie-campbell-4b2a7b19"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×23",
+   "«on the member s phone…»: aaronsmithkx, abhishek-ketkar-2a4543296, amy-cashman-767703133, anise-elliott-neilson"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×8",
+   "«a weight figure leaves out…»: anise-elliott-neilson, brent-nathan-ab97354, brett-sutton-43285123, donald-horsburgh-0498464"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«a weight entry and progress…»: amy-cashman-767703133, brooke-daubney-59653a34, lee-jeka-688a369b, mark-hurdle-781781315"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«linked to the member profile…»: abhishek-ketkar-2a4543296, amy-cashman-767703133, brett-sutton-43285123, brooke-daubney-59653a34"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«at the first check in…»: brett-mcewin-70972ab7, brett-sutton-43285123, brooke-daubney-59653a34, lee-jeka-688a369b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«a check in taken at…»: amy-cashman-767703133, ish-cheyne, leonie-s-0b807698"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×5",
+   "«what members at their studio ask about progress between cla…»: eloise-censor-a7983749, jodie-preston-9053298a, joe-erskine-6ab72061, kara-spice-36b619240"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«how a third-party SDK step enters the app's onboarding flow»: brent-nathan-ab97354, warren-ainsley-6519a666"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«whether a body scan belongs at onboarding or at the first c…»: brooke-daubney-59653a34, lee-jeka-688a369b"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«whether a check-in taken at home between classes would help…»: amy-cashman-767703133, ish-cheyne"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«what instructors at their location use to review a member's…»: ryan-o-connor-bb716136, sam-wagstaff-7306728a"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«what a member sees at the first progress check-in today»: brett-mcewin-70972ab7, todd-mchardy-53676619"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«what do members at your studios ask about their progress be…»: eloise-censor-a7983749, kara-spice-36b619240"
+  ]
+ ]
+}

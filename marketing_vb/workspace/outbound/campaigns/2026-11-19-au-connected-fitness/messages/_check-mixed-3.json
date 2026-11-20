@@ -1,0 +1,485 @@
+{
+ "campaign": "2026-11-19-au-connected-fitness",
+ "checked": 35,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-3",
+ "generated": "2026-11-20T21:21:06",
+ "hard": [],
+ "soft": [
+  [
+   "pricing word",
+   "diana-williams-b39b456 M2",
+   "Hi Diana, The scan runs on the member's phone, and 3D progress views could sit in FWD's paid tier if Fernwood…"
+  ],
+  [
+   "pricing word",
+   "sue-mckenna-0685aa120 M1",
+   "It could sit in FWD's paid tier."
+  ],
+  [
+   "M1 closing ask repeated",
+   "Planet Fitness Australia ×2",
+   "«what do members at your club ask about progress b…»: melissa-cannavo-a8331b16b, cade-raymond-b62890350"
+  ],
+  [
+   "M1 closing ask repeated",
+   "Planet Fitness Australia ×2",
+   "«how do members at your club track their workouts…»: ami-schultz-a1a15835b, emily-elle-mosca"
+  ],
+  [
+   "M2 closing ask repeated",
+   "CSB ×3",
+   "«might be worth a quick chat?»: lionel-key-0b69a71, amynicol1, ryan-briggs-6b234740"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Your Reformer ×4",
+   "«might be worth a quick chat?»: emma-stallworthy, allie-mairs-a44271341, melaniewebster2, melissa-blakelock-109460283"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Fernwood Fitness ×2",
+   "«might be worth a quick chat?»: diana-williams-b39b456, lauren-channon-847212b7"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Virgin Active Australia ×3",
+   "«might be worth a quick chat?»: upsonpaul, john-mcclory, aaron-sealy-664835b8"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Hapana ×4",
+   "«might be worth a quick chat?»: adamfaludi, sasharoyal, tais-marmentini-654890125, holly-brazier"
+  ],
+  [
+   "M2 closing ask repeated",
+   "TotalFusion ×2",
+   "«might be worth a quick chat?»: matt-butler-6754b5a7, liam-cole-672411208"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Planet Fitness Australia ×6",
+   "«might be worth a quick chat?»: melissa-cannavo-a8331b16b, ami-schultz-a1a15835b, jonathon-alcock-206118220, cade-raymond-b62890350"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Fitness Cartel ×2",
+   "«worth a quick chat?»: darren-mellor-a81123141, kristy-lee-roodenburg-088566349"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Fitness Cartel ×2",
+   "«might be worth a quick chat?»: jay-meyer-246167321, brad-wharakura"
+  ],
+  [
+   "same sentence at one company",
+   "Your Reformer: emma-stallworthy / lizzie-russell-157109122",
+   "«Between check-ins, body progress often rests on a weight en…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Your Reformer: emma-stallworthy / allie-mairs-a44271341",
+   "«Between check-ins, body progress often rests on a weight en…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Your Reformer: emma-stallworthy / melaniewebster2",
+   "«between check-ins, body progress often rests on a…»"
+  ],
+  [
+   "same sentence at one company",
+   "Your Reformer: emma-stallworthy / melissa-blakelock-109460283",
+   "«Between check-ins, body progress often rests on a weight en…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Your Reformer: lizzie-russell-157109122 / allie-mairs-a44271341",
+   "«Between check-ins, body progress often rests on a weight en…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Your Reformer: lizzie-russell-157109122 / melaniewebster2",
+   "«between check-ins, body progress often rests on a…»"
+  ],
+  [
+   "same sentence at one company",
+   "Your Reformer: lizzie-russell-157109122 / melissa-blakelock-109460283",
+   "«Between check-ins, body progress often rests on a weight en…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Your Reformer: allie-mairs-a44271341 / melaniewebster2",
+   "«between check-ins, body progress often rests on a…»"
+  ],
+  [
+   "same sentence at one company",
+   "Your Reformer: allie-mairs-a44271341 / melissa-blakelock-109460283",
+   "«Between check-ins, body progress often rests on a weight en…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Your Reformer: melaniewebster2 / melissa-blakelock-109460283",
+   "«between check-ins, progress in an at-home program…»"
+  ],
+  [
+   "same sentence at one company",
+   "CSB: lionel-key-0b69a71 / amynicol1",
+   "«Body change between check-ins is hard to compare when every…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Fernwood Fitness: diana-williams-b39b456 / lauren-channon-847212b7",
+   "«Between sessions, body change is hard to compare without a…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Fernwood Fitness: diana-williams-b39b456 / sue-mckenna-0685aa120",
+   "«Between sessions, body change is hard to compare without a…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Fernwood Fitness: lauren-channon-847212b7 / sue-mckenna-0685aa120",
+   "«Between sessions, body change is hard to compare without a…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Virgin Active Australia: upsonpaul / john-mcclory",
+   "«between those moments, body progress often rests…»"
+  ],
+  [
+   "same sentence at one company",
+   "Virgin Active Australia: upsonpaul / b56180b1",
+   "«Between those moments, body progress often rests on a weigh…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Virgin Active Australia: john-mcclory / b56180b1",
+   "«between visits, progress tends to be a weight ent…»"
+  ],
+  [
+   "same sentence at one company",
+   "Hapana: adamfaludi / benjamincochrane",
+   "«Between check-ins, member progress often rests on a weight…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hapana: adamfaludi / holly-brazier",
+   "«what do gyms and studios on hapana ask for most a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Hapana: benjamincochrane / holly-brazier",
+   "«fitxpress is a white-label scan: web and mobile s…»"
+  ],
+  [
+   "same sentence at one company",
+   "Hapana: sasharoyal / tais-marmentini-654890125",
+   "«In a member app, progress between check-ins often rests on…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "TotalFusion: matt-butler-6754b5a7 / helen-mob-healey-00b89678",
+   "«between classes, progress tends to rest on a weig…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "TotalFusion: matt-butler-6754b5a7 / liam-cole-672411208",
+   "«between classes, progress tends to rest on a weig…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Planet Fitness Australia: melissa-cannavo-a8331b16b / jonathon-alcock-206118220",
+   "«between sessions, progress often rests on a weigh…»"
+  ],
+  [
+   "same sentence at one company",
+   "Planet Fitness Australia: melissa-cannavo-a8331b16b / cade-raymond-b62890350",
+   "«Between sessions, progress often rests on a weight entry an…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Planet Fitness Australia: melissa-cannavo-a8331b16b / emily-elle-mosca",
+   "«Between sessions, progress often rests on a weight entry an…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Planet Fitness Australia: melissa-cannavo-a8331b16b / sameer-ali-7a9586232",
+   "«between sessions, progress often rests on a weigh…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Planet Fitness Australia: melissa-cannavo-a8331b16b / ami-schultz-a1a15835b",
+   "«fitxpress is a white-label scan a brand can place…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Planet Fitness Australia: ami-schultz-a1a15835b / cade-raymond-b62890350",
+   "«fitxpress is a white-label scan a brand can place…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Planet Fitness Australia: ami-schultz-a1a15835b / emily-elle-mosca",
+   "«fitxpress is a white-label scan a brand can place…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Planet Fitness Australia: ami-schultz-a1a15835b / sameer-ali-7a9586232",
+   "«fitxpress is a white-label scan a brand can place…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Planet Fitness Australia: jonathon-alcock-206118220 / cade-raymond-b62890350",
+   "«between trainer sessions, progress tends to be a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Planet Fitness Australia: jonathon-alcock-206118220 / emily-elle-mosca",
+   "«between trainer sessions, progress tends to be a…»"
+  ],
+  [
+   "same sentence at one company",
+   "Planet Fitness Australia: jonathon-alcock-206118220 / sameer-ali-7a9586232",
+   "«Between trainer sessions, progress tends to be a weight ent…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Planet Fitness Australia: cade-raymond-b62890350 / emily-elle-mosca",
+   "«Between sessions, progress often rests on a weight entry an…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Planet Fitness Australia: cade-raymond-b62890350 / sameer-ali-7a9586232",
+   "«between sessions, progress often rests on a weigh…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Planet Fitness Australia: emily-elle-mosca / sameer-ali-7a9586232",
+   "«between sessions, body progress often rests on a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Fitness Cartel: darren-mellor-a81123141 / kristy-lee-roodenburg-088566349",
+   "«between pt sessions and classes, a weight entry l…»"
+  ],
+  [
+   "sentence opening repeated",
+   "Your Reformer ×5",
+   "«fitxpress is a white label…»: emma-stallworthy, jasellis, lizzie-russell-157109122, melaniewebster2"
+  ],
+  [
+   "sentence opening repeated",
+   "CSB ×3",
+   "«might be worth a quick…»: amynicol1, lionel-key-0b69a71, ryan-briggs-6b234740"
+  ],
+  [
+   "sentence opening repeated",
+   "Your Reformer ×4",
+   "«between check ins body progress…»: allie-mairs-a44271341, emma-stallworthy, lizzie-russell-157109122, melissa-blakelock-109460283"
+  ],
+  [
+   "sentence opening repeated",
+   "Your Reformer ×5",
+   "«two guided photos on the…»: allie-mairs-a44271341, emma-stallworthy, lizzie-russell-157109122, melaniewebster2"
+  ],
+  [
+   "sentence opening repeated",
+   "Your Reformer ×4",
+   "«might be worth a quick…»: allie-mairs-a44271341, emma-stallworthy, melaniewebster2, melissa-blakelock-109460283"
+  ],
+  [
+   "sentence opening repeated",
+   "Fernwood Fitness ×3",
+   "«between sessions body change is…»: diana-williams-b39b456, lauren-channon-847212b7, sue-mckenna-0685aa120"
+  ],
+  [
+   "sentence opening repeated",
+   "Fernwood Fitness ×3",
+   "«two guided photos on the…»: diana-williams-b39b456, lauren-channon-847212b7, sue-mckenna-0685aa120"
+  ],
+  [
+   "sentence opening repeated",
+   "Virgin Active Australia ×3",
+   "«two guided photos on the…»: b56180b1, john-mcclory, upsonpaul"
+  ],
+  [
+   "sentence opening repeated",
+   "Virgin Active Australia ×3",
+   "«might be worth a quick…»: aaron-sealy-664835b8, john-mcclory, upsonpaul"
+  ],
+  [
+   "sentence opening repeated",
+   "Hapana ×4",
+   "«might be worth a quick…»: adamfaludi, holly-brazier, sasharoyal, tais-marmentini-654890125"
+  ],
+  [
+   "sentence opening repeated",
+   "Hapana ×3",
+   "«fitxpress is a white label…»: benjamincochrane, sasharoyal, tais-marmentini-654890125"
+  ],
+  [
+   "sentence opening repeated",
+   "TotalFusion ×3",
+   "«two guided photos on the…»: liam-cole-672411208, matt-butler-6754b5a7, thiago-meneses-b65088244"
+  ],
+  [
+   "sentence opening repeated",
+   "Planet Fitness Australia ×6",
+   "«fitxpress is a white label…»: ami-schultz-a1a15835b, cade-raymond-b62890350, emily-elle-mosca, jonathon-alcock-206118220"
+  ],
+  [
+   "sentence opening repeated",
+   "Planet Fitness Australia ×6",
+   "«two guided photos on the…»: ami-schultz-a1a15835b, cade-raymond-b62890350, emily-elle-mosca, jonathon-alcock-206118220"
+  ],
+  [
+   "sentence opening repeated",
+   "Planet Fitness Australia ×3",
+   "«what do members at your…»: cade-raymond-b62890350, melissa-cannavo-a8331b16b, sameer-ali-7a9586232"
+  ],
+  [
+   "sentence opening repeated",
+   "Planet Fitness Australia ×6",
+   "«might be worth a quick…»: ami-schultz-a1a15835b, cade-raymond-b62890350, emily-elle-mosca, jonathon-alcock-206118220"
+  ],
+  [
+   "sentence opening repeated",
+   "Planet Fitness Australia ×3",
+   "«members would take the scan…»: ami-schultz-a1a15835b, emily-elle-mosca, sameer-ali-7a9586232"
+  ],
+  [
+   "M1 product sentence shared",
+   "CSB ×2",
+   "«x adds a scan inside the…»: amynicol1, lionel-key-0b69a71"
+  ],
+  [
+   "M1 product sentence shared",
+   "Fernwood Fitness ×2",
+   "«x is a white label scan…»: lauren-channon-847212b7, sue-mckenna-0685aa120"
+  ],
+  [
+   "M1 product sentence shared",
+   "Fitness Cartel ×2",
+   "«x adds a scan in the…»: brad-wharakura, kristy-lee-roodenburg-088566349"
+  ],
+  [
+   "M1 product sentence shared",
+   "Hapana ×3",
+   "«x is a white label scan…»: benjamincochrane, sasharoyal, tais-marmentini-654890125"
+  ],
+  [
+   "M1 product sentence shared",
+   "Planet Fitness Australia ×6",
+   "«x is a white label scan…»: ami-schultz-a1a15835b, cade-raymond-b62890350, emily-elle-mosca, jonathon-alcock-206118220"
+  ],
+  [
+   "M2 value-line opening shared",
+   "Planet Fitness Australia ×3",
+   "«members would take…»: ami-schultz-a1a15835b, emily-elle-mosca, sameer-ali-7a9586232"
+  ],
+  [
+   "M1 product sentence shared",
+   "TotalFusion ×2",
+   "«x adds a scan in the…»: helen-mob-healey-00b89678, thiago-meneses-b65088244"
+  ],
+  [
+   "M1 product sentence shared",
+   "TotalFusion ×2",
+   "«x is a white label scan…»: liam-cole-672411208, matt-butler-6754b5a7"
+  ],
+  [
+   "M1 product sentence shared",
+   "Virgin Active Australia ×2",
+   "«x adds a scan inside the…»: b56180b1, upsonpaul"
+  ],
+  [
+   "M1 product sentence shared",
+   "Your Reformer ×5",
+   "«x is a white label scan…»: emma-stallworthy, jasellis, lizzie-russell-157109122, melaniewebster2"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×26",
+   "«on the member s phone…»: adamfaludi, allie-mairs-a44271341, ami-schultz-a1a15835b, amynicol1"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«linked to the member profile…»: amynicol1, b56180b1, jasellis, ryan-briggs-6b234740"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«at the first check in…»: amynicol1, benjamincochrane, emma-stallworthy, ryan-briggs-6b234740"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«at onboarding and at the…»: benjamincochrane, emma-stallworthy, ryan-briggs-6b234740"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«onboarding consent and results screens…»: jasellis, melaniewebster2, tais-marmentini-654890125"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«one timestamped record and the…»: diana-williams-b39b456, emily-elle-mosca, melaniewebster2"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«supported ios and android integrations…»: b56180b1, lizzie-russell-157109122, sue-mckenna-0685aa120"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«whoever owns the member app…»: cade-raymond-b62890350, jay-meyer-246167321, jonathon-alcock-206118220"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×6",
+   "«what members at their studio ask about progress between cla…»: cade-raymond-b62890350, jay-meyer-246167321, john-mcclory, lauren-channon-847212b7"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«what members ask the brand for most around progress»: adamfaludi, holly-brazier"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«what the platform's customers ask for around member progress»: adamfaludi, holly-brazier"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«whether a check-in taken at home between classes would help…»: brad-wharakura, helen-mob-healey-00b89678"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«how the product team tests a new onboarding step on one mem…»: darren-mellor-a81123141, ryan-briggs-6b234740"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«what coaches look at before setting a member's next program…»: kristy-lee-roodenburg-088566349, thiago-meneses-b65088244"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«would a check in taken at home between classes help instruc…»: brad-wharakura, helen-mob-healey-00b89678"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«what do members at your club ask about progress between the…»: cade-raymond-b62890350, melissa-cannavo-a8331b16b"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«how do members at your club track their workouts between vi…»: ami-schultz-a1a15835b, emily-elle-mosca"
+  ]
+ ]
+}

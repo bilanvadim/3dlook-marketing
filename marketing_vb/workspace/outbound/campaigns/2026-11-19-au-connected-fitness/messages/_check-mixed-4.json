@@ -1,0 +1,305 @@
+{
+ "campaign": "2026-11-19-au-connected-fitness",
+ "checked": 42,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-4",
+ "generated": "2026-11-20T21:21:07",
+ "hard": [],
+ "soft": [
+  [
+   "M2 closing ask repeated",
+   "Barre Body ×2",
+   "«might be worth a quick chat?»: matthewkane, siobhanwhitby"
+  ],
+  [
+   "M2 closing ask repeated",
+   "GymMaster ×2",
+   "«might be worth a quick chat?»: asmithnz, kate-rawnsley-shirtcliff-07926923"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Studio Pilates International ×2",
+   "«might be worth a quick chat?»: john-l-scott-8380a045, winterjade"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Revo Fitness ×2",
+   "«open to a quick chat?»: jordan-checker-876b6516b, kayla-braithwaite-a34753209"
+  ],
+  [
+   "same sentence at one company",
+   "Barre Body: matthewkane / siobhanwhitby",
+   "«Strength and posture change between those check-ins is easy…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "GymMaster: asmithnz / kate-rawnsley-shirtcliff-07926923",
+   "«A weight entry leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Jetts Fitness: eddieswinnen / ben-mason-86563b22",
+   "«Between sessions, a weight entry leaves out waist and lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Jetts Fitness: eddieswinnen / samantha-jane-a3012b166",
+   "«Between sessions, a weight entry leaves out waist and lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Jetts Fitness: ben-mason-86563b22 / samantha-jane-a3012b166",
+   "«Between sessions, a weight entry leaves out waist and lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Studio Pilates International: john-l-scott-8380a045 / tanya-winter-b9b52524",
+   "«Between classes, a weight entry leaves out waist and lean m…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Studio Pilates International: john-l-scott-8380a045 / winterjade",
+   "«Between classes, a weight entry leaves out waist and lean m…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Studio Pilates International: tanya-winter-b9b52524 / winterjade",
+   "«Between classes, a weight entry leaves out waist and lean m…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Sweat: robert-ware-5b867a48 / claireseidler",
+   "«A weight figure on its own leaves out waist and lean mass c…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Sweat: robert-ware-5b867a48 / bettykarikis",
+   "«A weight figure on its own leaves out waist and lean mass c…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Sweat: claireseidler / bettykarikis",
+   "«A weight figure on its own leaves out waist and lean mass c…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Peaches Pilates: chris-hole / tori-clapham-902869195",
+   "«Between classes, a weight entry leaves out waist and lean m…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Peaches Pilates: chris-hole / teah-foot-3065b5244",
+   "«Between classes, a weight entry leaves out waist and lean m…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Peaches Pilates: tori-clapham-902869195 / teah-foot-3065b5244",
+   "«Between classes, a weight entry leaves out waist and lean m…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "STRONG Pilates: kat-hegarty-097099b6 / carl-planicka-14b39b421",
+   "«Between classes, a weight entry leaves out waist and lean m…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "CONDITN Training: jordan-mccreary-5456aba4 / daniel-capilli-b27623308",
+   "«A weight figure leaves out change at the waist and in lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Revo Fitness: kalen-coughlan-a0a626177 / jordan-checker-876b6516b",
+   "«Between club visits, a weight entry leaves out waist and le…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Revo Fitness: kalen-coughlan-a0a626177 / kayla-braithwaite-a34753209",
+   "«Between club visits, a weight entry leaves out waist and le…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Revo Fitness: jordan-checker-876b6516b / kayla-braithwaite-a34753209",
+   "«Between club visits, a weight entry leaves out waist and le…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "REVL Training: cassie-green-057597147 / jake-hendry-877168224",
+   "«A weight entry misses how waist and hip change across a blo…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "The Yard Gym: matt-towe-a3a845308 / jessica-buxton-a7722883",
+   "«A weight entry leaves out how waist and hip change as a blo…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "The Yard Gym: matt-towe-a3a845308 / tiarne-bova-b65456247",
+   "«A weight entry leaves out how waist and hip change as a blo…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "The Yard Gym: jessica-buxton-a7722883 / tiarne-bova-b65456247",
+   "«A weight entry leaves out how waist and hip change as a blo…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "One Playground: atmerriman / danielbowden411",
+   "«fitxpress is a white-label scan: two guided photo…»"
+  ],
+  [
+   "sentence opening repeated",
+   "Jetts Fitness ×3",
+   "«between sessions a weight entry…»: ben-mason-86563b22, eddieswinnen, samantha-jane-a3012b166"
+  ],
+  [
+   "sentence opening repeated",
+   "Studio Pilates International ×3",
+   "«between classes a weight entry…»: john-l-scott-8380a045, tanya-winter-b9b52524, winterjade"
+  ],
+  [
+   "sentence opening repeated",
+   "Sweat ×3",
+   "«a weight figure on its…»: bettykarikis, claireseidler, robert-ware-5b867a48"
+  ],
+  [
+   "sentence opening repeated",
+   "Peaches Pilates ×3",
+   "«between classes a weight entry…»: chris-hole, teah-foot-3065b5244, tori-clapham-902869195"
+  ],
+  [
+   "sentence opening repeated",
+   "Revo Fitness ×3",
+   "«between club visits a weight…»: jordan-checker-876b6516b, kalen-coughlan-a0a626177, kayla-braithwaite-a34753209"
+  ],
+  [
+   "sentence opening repeated",
+   "The Yard Gym ×3",
+   "«a weight entry leaves out…»: jessica-buxton-a7722883, matt-towe-a3a845308, tiarne-bova-b65456247"
+  ],
+  [
+   "M1 product sentence shared",
+   "Barre Body ×2",
+   "«x is a white label scan…»: matthewkane, siobhanwhitby"
+  ],
+  [
+   "M1 product sentence shared",
+   "One Playground ×2",
+   "«x is a white label scan…»: atmerriman, danielbowden411"
+  ],
+  [
+   "M1 product sentence shared",
+   "Sweat ×2",
+   "«x uses two guided photos on…»: bettykarikis, robert-ware-5b867a48"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×30",
+   "«on the member s phone…»: amy-hembrow-b435634a, asmithnz, atmerriman, bdquinney"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×15",
+   "«at the first check in…»: amy-hembrow-b435634a, bettykarikis, chris-hole, daniel-capilli-b27623308"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×11",
+   "«30 and day 90 retention…»: amy-hembrow-b435634a, chris-hole, eddieswinnen, jake-hendry-877168224"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×11",
+   "«phone with no hardware and…»: daniel-capilli-b27623308, jake-hendry-877168224, jessica-buxton-a7722883, kat-hegarty-097099b6"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×10",
+   "«member s phone with no…»: daniel-capilli-b27623308, emily-robinson-9b7a2011a, jake-hendry-877168224, jessica-buxton-a7722883"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×9",
+   "«supported ios and android integrations…»: bdquinney, daniel-capilli-b27623308, danielbowden411, emilysmart"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×8",
+   "«onboarding consent and results screens…»: claireseidler, daniel-capilli-b27623308, emmaseibold, johncuskelly"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«a measured body check in…»: bdquinney, emilysmart, kate-rawnsley-shirtcliff-07926923, kayla-braithwaite-a34753209"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«at onboarding and at the…»: bettykarikis, chris-hole, james-mccreary, jessica-buxton-a7722883"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«hardware and no club visit…»: asmithnz, ben-mason-86563b22, daniel-capilli-b27623308, james-mccreary"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«linked to the member profile…»: bettykarikis, daniel-capilli-b27623308, jake-hendry-877168224, julian-gargicevich"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«a new onboarding step on…»: bettykarikis, jake-hendry-877168224, james-mccreary, jessica-buxton-a7722883"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«the coach and the member…»: atmerriman, carl-planicka-14b39b421, cassie-green-057597147, matt-towe-a3a845308"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×6",
+   "«whether a body scan belongs at onboarding or at the first c…»: daniel-capilli-b27623308, emmaseibold, kat-hegarty-097099b6, tiarne-bova-b65456247"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×4",
+   "«how the product team tests a new onboarding step on one mem…»: bettykarikis, jake-hendry-877168224, james-mccreary, jessica-buxton-a7722883"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×3",
+   "«what a member sees at the first progress check-in today»: eddieswinnen, matthewkane, riley-woodcock"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«what members ask the brand for most around progress»: emilysmart, kate-rawnsley-shirtcliff-07926923"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«what the platform's customers ask for around member progress»: emilysmart, kate-rawnsley-shirtcliff-07926923"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«what members at their studio ask about progress between cla…»: ben-mason-86563b22, jordan-checker-876b6516b"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«what coaches look at before setting a member's next program…»: cassie-green-057597147, matt-towe-a3a845308"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«would a body scan belong at onboarding in the app or at the…»: daniel-capilli-b27623308, kat-hegarty-097099b6"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«how does your product team test a new onboarding step on on…»: bettykarikis, jake-hendry-877168224"
+  ]
+ ]
+}

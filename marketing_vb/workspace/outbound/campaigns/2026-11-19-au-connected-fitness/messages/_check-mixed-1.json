@@ -1,0 +1,655 @@
+{
+ "campaign": "2026-11-19-au-connected-fitness",
+ "checked": 28,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-1",
+ "generated": "2026-11-20T21:21:04",
+ "hard": [],
+ "soft": [
+  [
+   "M1 closing ask repeated",
+   "Genesis Health + Fitness ×2",
+   "«what do members at your club ask about progress b…»: kyle-mackenzie-245947138, clay-williams-75bb18205"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Viva Leisure ×6",
+   "«might be worth a quick chat?»: nathan-elliott-cfe-871a0b30, lauren-nolan-416261b7, michael-cunico-13b01017b, matt-muller-19769920b"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Fitness and Lifestyle Group ×8",
+   "«might be worth a quick chat?»: joanne-power, george-reed-b8bb6779, rikki-feliciak-226245b3, luke-sampson-searle"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Viva Leisure ×2",
+   "«open to a quick chat?»: gordon-martin-cfe-b502295b, stephen-defries-044202a2"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Fitness and Lifestyle Group ×2",
+   "«worth a quick chat to explore?»: lee-calvert-328b047b, brettandrewlewis"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Genesis Health + Fitness ×5",
+   "«might be worth a quick chat?»: tahneedonkin, david-maskill-8b0836a5, luke-koulaxizellis-54515195, clay-williams-75bb18205"
+  ],
+  [
+   "M2 closing ask repeated",
+   "Genesis Health + Fitness ×4",
+   "«open to a quick chat?»: kyle-mackenzie-245947138, james-brennan-593a2923, mayank-badamia-774783b4, mackenzie-pirlo-1008a3b0"
+  ],
+  [
+   "same sentence at one company",
+   "Viva Leisure: nathan-elliott-cfe-871a0b30 / lee-hanrahan-74430824",
+   "«A weight entry leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Viva Leisure: nathan-elliott-cfe-871a0b30 / michael-cunico-13b01017b",
+   "«A weight entry leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Viva Leisure: nathan-elliott-cfe-871a0b30 / matt-muller-19769920b",
+   "«A weight entry leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Viva Leisure: nathan-elliott-cfe-871a0b30 / stephen-defries-044202a2",
+   "«A weight entry leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Viva Leisure: nathan-elliott-cfe-871a0b30 / niki-twitchett-b00a4a215",
+   "«a weight entry leaves out waist and lean mass cha…»"
+  ],
+  [
+   "same sentence at one company",
+   "Viva Leisure: nathan-elliott-cfe-871a0b30 / lauren-jeffries-b2275a169",
+   "«A weight entry leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Viva Leisure: nathan-elliott-cfe-871a0b30 / gordon-martin-cfe-b502295b",
+   "«fitxpress is a white-label scan in a member app:…»"
+  ],
+  [
+   "same sentence at one company",
+   "Viva Leisure: lee-hanrahan-74430824 / michael-cunico-13b01017b",
+   "«A weight entry leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Viva Leisure: lee-hanrahan-74430824 / matt-muller-19769920b",
+   "«A weight entry leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Viva Leisure: lee-hanrahan-74430824 / stephen-defries-044202a2",
+   "«A weight entry leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Viva Leisure: lee-hanrahan-74430824 / niki-twitchett-b00a4a215",
+   "«a weight entry leaves out waist and lean mass cha…»"
+  ],
+  [
+   "same sentence at one company",
+   "Viva Leisure: lee-hanrahan-74430824 / lauren-jeffries-b2275a169",
+   "«A weight entry leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Viva Leisure: lee-hanrahan-74430824 / lauren-nolan-416261b7",
+   "«two guided photos on the member's phone return 80…»"
+  ],
+  [
+   "same sentence at one company",
+   "Viva Leisure: gordon-martin-cfe-b502295b / lauren-nolan-416261b7",
+   "«Between sessions, a weight figure leaves out waist and lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Viva Leisure: gordon-martin-cfe-b502295b / michael-cunico-13b01017b",
+   "«fitxpress is a white-label scan inside a member a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Viva Leisure: gordon-martin-cfe-b502295b / matt-muller-19769920b",
+   "«fitxpress is a white-label scan inside a member a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Viva Leisure: gordon-martin-cfe-b502295b / stephen-defries-044202a2",
+   "«fitxpress is a white-label scan inside a member a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Viva Leisure: gordon-martin-cfe-b502295b / niki-twitchett-b00a4a215",
+   "«fitxpress is a white-label scan inside a member a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Viva Leisure: gordon-martin-cfe-b502295b / lauren-jeffries-b2275a169",
+   "«fitxpress is a white-label scan inside a member a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Viva Leisure: lauren-nolan-416261b7 / stephen-defries-044202a2",
+   "«two guided photos on the member's phone return 80…»"
+  ],
+  [
+   "same sentence at one company",
+   "Viva Leisure: michael-cunico-13b01017b / matt-muller-19769920b",
+   "«A weight entry leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Viva Leisure: michael-cunico-13b01017b / stephen-defries-044202a2",
+   "«A weight entry leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Viva Leisure: michael-cunico-13b01017b / niki-twitchett-b00a4a215",
+   "«a weight entry leaves out waist and lean mass cha…»"
+  ],
+  [
+   "same sentence at one company",
+   "Viva Leisure: michael-cunico-13b01017b / lauren-jeffries-b2275a169",
+   "«A weight entry leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Viva Leisure: matt-muller-19769920b / stephen-defries-044202a2",
+   "«A weight entry leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Viva Leisure: matt-muller-19769920b / niki-twitchett-b00a4a215",
+   "«a weight entry leaves out waist and lean mass cha…»"
+  ],
+  [
+   "same sentence at one company",
+   "Viva Leisure: matt-muller-19769920b / lauren-jeffries-b2275a169",
+   "«A weight entry leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Viva Leisure: stephen-defries-044202a2 / niki-twitchett-b00a4a215",
+   "«a weight entry leaves out waist and lean mass cha…»"
+  ],
+  [
+   "same sentence at one company",
+   "Viva Leisure: stephen-defries-044202a2 / lauren-jeffries-b2275a169",
+   "«A weight entry leaves out waist and lean mass change.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Viva Leisure: niki-twitchett-b00a4a215 / lauren-jeffries-b2275a169",
+   "«a weight entry between classes leaves out waist a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Fitness and Lifestyle Group: joanne-power / george-reed-b8bb6779",
+   "«a weight entry or a progress photo leaves out wai…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Fitness and Lifestyle Group: joanne-power / lee-calvert-328b047b",
+   "«a weight entry or a progress photo leaves out wai…»"
+  ],
+  [
+   "same sentence at one company",
+   "Fitness and Lifestyle Group: joanne-power / rikki-feliciak-226245b3",
+   "«A weight entry or a progress photo leaves out waist and lea…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Fitness and Lifestyle Group: joanne-power / luke-sampson-searle",
+   "«A weight entry or a progress photo leaves out waist and lea…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Fitness and Lifestyle Group: joanne-power / brettandrewlewis",
+   "«A weight entry or a progress photo leaves out waist and lea…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Fitness and Lifestyle Group: joanne-power / lucmccann",
+   "«A weight entry or a progress photo leaves out waist and lea…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Fitness and Lifestyle Group: joanne-power / rob-waldron",
+   "«A weight entry or a progress photo leaves out waist and lea…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Fitness and Lifestyle Group: george-reed-b8bb6779 / rikki-feliciak-226245b3",
+   "«a weight entry and a progress photo miss waist an…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Fitness and Lifestyle Group: george-reed-b8bb6779 / luke-sampson-searle",
+   "«a weight entry and a progress photo miss waist an…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Fitness and Lifestyle Group: george-reed-b8bb6779 / brettandrewlewis",
+   "«a weight entry and a progress photo miss waist an…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Fitness and Lifestyle Group: george-reed-b8bb6779 / lucmccann",
+   "«a weight entry and a progress photo miss waist an…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Fitness and Lifestyle Group: george-reed-b8bb6779 / rob-waldron",
+   "«a weight entry and a progress photo miss waist an…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Fitness and Lifestyle Group: george-reed-b8bb6779 / nicole-grainger-433b5610a",
+   "«fitxpress is a white-label scan inside the app.»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Fitness and Lifestyle Group: george-reed-b8bb6779 / tane-harmer-67b8a8133",
+   "«the member takes two guided photos on their own p…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Fitness and Lifestyle Group: lee-calvert-328b047b / rikki-feliciak-226245b3",
+   "«weight and photos leave out waist and lean mass c…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Fitness and Lifestyle Group: lee-calvert-328b047b / luke-sampson-searle",
+   "«weight and photos leave out waist and lean mass c…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Fitness and Lifestyle Group: lee-calvert-328b047b / tane-harmer-67b8a8133",
+   "«weight and photos leave out waist and lean mass c…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Fitness and Lifestyle Group: lee-calvert-328b047b / brettandrewlewis",
+   "«weight and photos leave out waist and lean mass c…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Fitness and Lifestyle Group: lee-calvert-328b047b / lucmccann",
+   "«weight and photos leave out waist and lean mass c…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Fitness and Lifestyle Group: lee-calvert-328b047b / rob-waldron",
+   "«weight and photos leave out waist and lean mass c…»"
+  ],
+  [
+   "same sentence at one company",
+   "Fitness and Lifestyle Group: rikki-feliciak-226245b3 / luke-sampson-searle",
+   "«A weight entry or a progress photo leaves out waist and lea…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Fitness and Lifestyle Group: rikki-feliciak-226245b3 / brettandrewlewis",
+   "«A weight entry or a progress photo leaves out waist and lea…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Fitness and Lifestyle Group: rikki-feliciak-226245b3 / lucmccann",
+   "«A weight entry or a progress photo leaves out waist and lea…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Fitness and Lifestyle Group: rikki-feliciak-226245b3 / rob-waldron",
+   "«A weight entry or a progress photo leaves out waist and lea…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Fitness and Lifestyle Group: rikki-feliciak-226245b3 / nicole-grainger-433b5610a",
+   "«fitxpress is a white-label scan in the member app.»"
+  ],
+  [
+   "same sentence at one company",
+   "Fitness and Lifestyle Group: luke-sampson-searle / brettandrewlewis",
+   "«A weight entry or a progress photo leaves out waist and lea…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Fitness and Lifestyle Group: luke-sampson-searle / lucmccann",
+   "«A weight entry or a progress photo leaves out waist and lea…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Fitness and Lifestyle Group: luke-sampson-searle / rob-waldron",
+   "«A weight entry or a progress photo leaves out waist and lea…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Fitness and Lifestyle Group: tane-harmer-67b8a8133 / nicole-grainger-433b5610a",
+   "«the member takes two guided photos on their own p…»"
+  ],
+  [
+   "same sentence at one company",
+   "Fitness and Lifestyle Group: brettandrewlewis / lucmccann",
+   "«A weight entry or a progress photo leaves out waist and lea…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Fitness and Lifestyle Group: brettandrewlewis / rob-waldron",
+   "«A weight entry or a progress photo leaves out waist and lea…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Fitness and Lifestyle Group: lucmccann / rob-waldron",
+   "«A weight entry or a progress photo leaves out waist and lea…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Genesis Health + Fitness: tahneedonkin / kyle-mackenzie-245947138",
+   "«fitxpress is a white-label scan inside the member…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Genesis Health + Fitness: tahneedonkin / james-brennan-593a2923",
+   "«fitxpress is a white-label scan inside the member…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Genesis Health + Fitness: tahneedonkin / mayank-badamia-774783b4",
+   "«fitxpress is a white-label scan inside the member…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Genesis Health + Fitness: tahneedonkin / clay-williams-75bb18205",
+   "«fitxpress is a white-label scan inside the member…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Genesis Health + Fitness: tahneedonkin / david-maskill-8b0836a5",
+   "«two guided photos at home return 80+ body measure…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Genesis Health + Fitness: david-maskill-8b0836a5 / luke-koulaxizellis-54515195",
+   "«between visits, a weight entry leaves out waist a…»"
+  ],
+  [
+   "same sentence at one company",
+   "Genesis Health + Fitness: david-maskill-8b0836a5 / bec-giles",
+   "«Between visits, a weight entry leaves out waist and lean ma…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Genesis Health + Fitness: david-maskill-8b0836a5 / kyle-mackenzie-245947138",
+   "«two guided photos on the member's phone return 80…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Genesis Health + Fitness: david-maskill-8b0836a5 / clay-williams-75bb18205",
+   "«two guided photos on the member's phone return 80…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Genesis Health + Fitness: kyle-mackenzie-245947138 / mayank-badamia-774783b4",
+   "«a weight entry and progress photos leave out wais…»"
+  ],
+  [
+   "same sentence at one company",
+   "Genesis Health + Fitness: kyle-mackenzie-245947138 / mackenzie-pirlo-1008a3b0",
+   "«A weight entry and progress photos leave out waist and lean…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Genesis Health + Fitness: kyle-mackenzie-245947138 / james-brennan-593a2923",
+   "«fitxpress is a white-label scan that runs in a me…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Genesis Health + Fitness: kyle-mackenzie-245947138 / clay-williams-75bb18205",
+   "«fitxpress is a white-label scan that runs in a me…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Genesis Health + Fitness: kyle-mackenzie-245947138 / luke-koulaxizellis-54515195",
+   "«two guided photos on the member's phone return 80…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Genesis Health + Fitness: kyle-mackenzie-245947138 / bec-giles",
+   "«two guided photos on the member's phone return 80…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Genesis Health + Fitness: james-brennan-593a2923 / mayank-badamia-774783b4",
+   "«fitxpress is a white-label scan in the member app.»"
+  ],
+  [
+   "same sentence at one company",
+   "Genesis Health + Fitness: james-brennan-593a2923 / clay-williams-75bb18205",
+   "«FitXpress is a white-label scan in the member app.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Genesis Health + Fitness: luke-koulaxizellis-54515195 / bec-giles",
+   "«Hi Luke, Members at participating Genesis clubs book classe…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Genesis Health + Fitness: luke-koulaxizellis-54515195 / mackenzie-pirlo-1008a3b0",
+   "«fitxpress is a white-label scan in the member app…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Genesis Health + Fitness: luke-koulaxizellis-54515195 / clay-williams-75bb18205",
+   "«if the fitness program is run from head office, p…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Genesis Health + Fitness: mayank-badamia-774783b4 / mackenzie-pirlo-1008a3b0",
+   "«weight entries and progress photos between visits…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Genesis Health + Fitness: mayank-badamia-774783b4 / clay-williams-75bb18205",
+   "«fitxpress is a white-label scan that runs inside…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Genesis Health + Fitness: mackenzie-pirlo-1008a3b0 / bec-giles",
+   "«fitxpress is a white-label scan inside a member a…»"
+  ],
+  [
+   "sentence opening repeated",
+   "Viva Leisure ×6",
+   "«a weight entry leaves out…»: lauren-jeffries-b2275a169, lee-hanrahan-74430824, matt-muller-19769920b, michael-cunico-13b01017b"
+  ],
+  [
+   "sentence opening repeated",
+   "Viva Leisure ×8",
+   "«fitxpress is a white label…»: gordon-martin-cfe-b502295b, lauren-jeffries-b2275a169, lee-hanrahan-74430824, matt-muller-19769920b"
+  ],
+  [
+   "sentence opening repeated",
+   "Viva Leisure ×9",
+   "«two guided photos on the…»: gordon-martin-cfe-b502295b, lauren-jeffries-b2275a169, lauren-nolan-416261b7, lee-hanrahan-74430824"
+  ],
+  [
+   "sentence opening repeated",
+   "Viva Leisure ×6",
+   "«might be worth a quick…»: lauren-jeffries-b2275a169, lauren-nolan-416261b7, matt-muller-19769920b, michael-cunico-13b01017b"
+  ],
+  [
+   "sentence opening repeated",
+   "Fitness and Lifestyle Group ×7",
+   "«a weight entry or a…»: brettandrewlewis, joanne-power, lucmccann, luke-sampson-searle"
+  ],
+  [
+   "sentence opening repeated",
+   "Fitness and Lifestyle Group ×5",
+   "«fitxpress is a white label…»: george-reed-b8bb6779, joanne-power, lee-calvert-328b047b, nicole-grainger-433b5610a"
+  ],
+  [
+   "sentence opening repeated",
+   "Fitness and Lifestyle Group ×4",
+   "«two guided photos on the…»: brettandrewlewis, joanne-power, lee-calvert-328b047b, rikki-feliciak-226245b3"
+  ],
+  [
+   "sentence opening repeated",
+   "Fitness and Lifestyle Group ×8",
+   "«might be worth a quick…»: george-reed-b8bb6779, joanne-power, lucmccann, luke-sampson-searle"
+  ],
+  [
+   "sentence opening repeated",
+   "Fitness and Lifestyle Group ×5",
+   "«the member takes two guided…»: george-reed-b8bb6779, lucmccann, luke-sampson-searle, nicole-grainger-433b5610a"
+  ],
+  [
+   "sentence opening repeated",
+   "Genesis Health + Fitness ×9",
+   "«fitxpress is a white label…»: bec-giles, clay-williams-75bb18205, david-maskill-8b0836a5, james-brennan-593a2923"
+  ],
+  [
+   "sentence opening repeated",
+   "Genesis Health + Fitness ×5",
+   "«might be worth a quick…»: bec-giles, clay-williams-75bb18205, david-maskill-8b0836a5, luke-koulaxizellis-54515195"
+  ],
+  [
+   "sentence opening repeated",
+   "Genesis Health + Fitness ×6",
+   "«two guided photos on the…»: bec-giles, clay-williams-75bb18205, david-maskill-8b0836a5, kyle-mackenzie-245947138"
+  ],
+  [
+   "M1 product sentence shared",
+   "Fitness and Lifestyle Group ×5",
+   "«the member takes two guided photos…»: george-reed-b8bb6779, lucmccann, luke-sampson-searle, nicole-grainger-433b5610a"
+  ],
+  [
+   "M1 product sentence shared",
+   "Fitness and Lifestyle Group ×2",
+   "«two guided photos on the member's…»: joanne-power, rikki-feliciak-226245b3"
+  ],
+  [
+   "M1 product sentence shared",
+   "Fitness and Lifestyle Group ×3",
+   "«x is a white label scan…»: george-reed-b8bb6779, nicole-grainger-433b5610a, rikki-feliciak-226245b3"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "Genesis Health + Fitness ×2",
+   "«members at participating…»: bec-giles, luke-koulaxizellis-54515195"
+  ],
+  [
+   "M1 product sentence shared",
+   "Genesis Health + Fitness ×2",
+   "«the member takes two guided photos…»: james-brennan-593a2923, mayank-badamia-774783b4"
+  ],
+  [
+   "M1 product sentence shared",
+   "Genesis Health + Fitness ×3",
+   "«two guided photos on the member's…»: clay-williams-75bb18205, david-maskill-8b0836a5, kyle-mackenzie-245947138"
+  ],
+  [
+   "M1 product sentence shared",
+   "Genesis Health + Fitness ×9",
+   "«x is a white label scan…»: bec-giles, clay-williams-75bb18205, david-maskill-8b0836a5, james-brennan-593a2923"
+  ],
+  [
+   "M1 product sentence shared",
+   "Viva Leisure ×2",
+   "«two guided photos on the member's…»: lauren-nolan-416261b7, lee-hanrahan-74430824"
+  ],
+  [
+   "M1 product sentence shared",
+   "Viva Leisure ×8",
+   "«x is a white label scan…»: gordon-martin-cfe-b502295b, lauren-jeffries-b2275a169, lee-hanrahan-74430824, matt-muller-19769920b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×15",
+   "«on the member s phone…»: brettandrewlewis, clay-williams-75bb18205, david-maskill-8b0836a5, gordon-martin-cfe-b502295b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«linked to the member profile…»: brettandrewlewis, gordon-martin-cfe-b502295b, lucmccann, luke-sampson-searle"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«the member s own phone…»: bec-giles, gordon-martin-cfe-b502295b, luke-koulaxizellis-54515195, matt-muller-19769920b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«in the brand s own…»: gordon-martin-cfe-b502295b, lee-calvert-328b047b, mackenzie-pirlo-1008a3b0, mayank-badamia-774783b4"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«supported ios and android integrations…»: david-maskill-8b0836a5, joanne-power, rob-waldron, stephen-defries-044202a2"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«and at the first check…»: brettandrewlewis, matt-muller-19769920b, tane-harmer-67b8a8133"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«and the brand chooses what…»: lauren-jeffries-b2275a169, michael-cunico-13b01017b, nicole-grainger-433b5610a"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«at onboarding or at the…»: brettandrewlewis, george-reed-b8bb6779, matt-muller-19769920b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«at the first progress check…»: george-reed-b8bb6779, lauren-nolan-416261b7, tane-harmer-67b8a8133"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«onboarding consent and results screens…»: george-reed-b8bb6779, lauren-nolan-416261b7, luke-sampson-searle"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×3",
+   "«what a member sees at the first progress check-in today»: george-reed-b8bb6779, lauren-nolan-416261b7, tane-harmer-67b8a8133"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×3",
+   "«whether a body scan belongs at onboarding or at the first c…»: brettandrewlewis, george-reed-b8bb6779, matt-muller-19769920b"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×3",
+   "«what members at their studio ask about progress between cla…»: clay-williams-75bb18205, kyle-mackenzie-245947138, niki-twitchett-b00a4a215"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«how the company judges a third-party feature before rolling…»: lee-calvert-328b047b, lee-hanrahan-74430824"
+  ],
+  [
+   "card question target as the question",
+   "campaign ×2",
+   "«how often a member's progress gets reviewed against their g…»: lauren-jeffries-b2275a169, tahneedonkin"
+  ],
+  [
+   "M1 question repeated",
+   "campaign ×2",
+   "«what do members at your club ask about progress between vis…»: clay-williams-75bb18205, kyle-mackenzie-245947138"
+  ]
+ ]
+}
