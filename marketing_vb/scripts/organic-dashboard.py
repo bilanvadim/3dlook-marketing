@@ -142,10 +142,10 @@ PIPELINES = {"67834452": "FitXpress",          # Health & Fitness
 # ------------------------------------------------------------------ page rules
 
 GROUPS = ["Homepage", "FitXpress pages", "Health & fitness content", "Mobile Tailor pages", "Apparel content",
-          "Wrist Measurement", "Body scanning content", "Other pages"]
+          "Wrist Measurement pages", "Body scanning content", "Other pages"]
 PRODUCT_OF_GROUP = {"FitXpress pages": "FitXpress", "Health & fitness content": "FitXpress",
                     "Mobile Tailor pages": "Mobile Tailor", "Apparel content": "Mobile Tailor",
-                    "Wrist Measurement": "Wrist Measurement",
+                    "Wrist Measurement pages": "Wrist Measurement",
                     "Homepage": "General", "Body scanning content": "General", "Other pages": "General"}
 SITE_PRODUCTS = [*PRODUCTS, "General"]          # "General" = homepage, general body-scanning content, rest
 
@@ -180,7 +180,7 @@ def page_group(path: str) -> str:
     if path == "/":
         return "Homepage"
     if WRIST.search(path):
-        return "Wrist Measurement"
+        return "Wrist Measurement pages"   # must differ from the product name: both feed clicks|<name>
     if FX_PATH.match(path):
         return "FitXpress pages"
     if MT_PATH.match(path):
@@ -1472,7 +1472,7 @@ def write_charts(sid: str, meta: dict, tabs: dict, v: dict) -> None:
 
 # ------------------------------------------------------------------ Telegram
 
-def report_text(r: dict, v: dict, sid: str) -> str:
+def report_text(r: dict, v: dict, sid: str, looker_url: str = "") -> str:
     weeks, W = r["weeks"], r["A"].W
     wk = weeks[-1]
     prev = weeks[-5:-1]
@@ -1522,7 +1522,9 @@ def report_text(r: dict, v: dict, sid: str) -> str:
             lines.append(f"…ще {len(moves) - 15}, див. вкладку Rankings")
     else:
         lines.append("Позиції: за тиждень ніщо не зрушило на 3+ місця (Google при 5+ показах, Ahrefs).")
-    lines += ["", f"https://docs.google.com/spreadsheets/d/{sid}/edit"]
+    lines += ["", f"Таблиця: https://docs.google.com/spreadsheets/d/{sid}/edit"]
+    if looker_url:                               # kept in the state file, like the Sheet ID: the repo is public
+        lines.append(f"Looker: {looker_url}")
     return "\n".join(lines)
 
 
@@ -1553,7 +1555,7 @@ def run(args) -> int:
           f"hubspot contacts {hs['raw_contacts']} → inbound {len(hs['contacts'])} (dropped {hs['dropped']}), "
           f"deals {len(hs['deals'])}, MT sign-ups {len(hs['signups'])}, ahrefs snapshots {len(ahr)}", file=sys.stderr)
     if args.dry_run:
-        print(report_text(r, v, state.get("spreadsheet_id", "<not created>")))
+        print(report_text(r, v, state.get("spreadsheet_id", "<not created>"), state.get("looker_url", "")))
         return 0
     sid, meta = ensure_sheet(state)
     write_sheet(sid, meta, v)
@@ -1562,7 +1564,7 @@ def run(args) -> int:
         wk = r["weeks"][-1].isoformat()
         if state.get("last_reported_week") == wk and not args.force_notify:
             print(f"week {wk} already reported, not sending", file=sys.stderr)
-        elif send(report_text(r, v, sid)):
+        elif send(report_text(r, v, sid, state.get("looker_url", ""))):
             state["last_reported_week"] = wk
             save_state(state)
     return 0
