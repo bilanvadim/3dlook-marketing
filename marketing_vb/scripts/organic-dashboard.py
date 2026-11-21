@@ -24,7 +24,9 @@ WHAT IT WRITES (one Google Sheet, owned by vadim.bilan@3dlook.me; sharing is don
                     a link to the HubSpot record (no names or emails: the Sheet is open to the whole domain)
   Rankings      keyword x country: Ahrefs position now, change, Google avg position, last 12 weeks
   Rank history  every keyword x country x week (long format)
-  Top pages     last 4 weeks, top 50 pages by Google clicks, with GA4 organic sessions
+  Top pages     last 4 weeks against the 4 before: the 50 biggest pages of either period, so a page
+                that lost its clicks stays in the list; with GA4 organic sessions
+  Events        launches, tracking changes and outages (site-events.csv), to explain jumps in the charts
   About         definitions
 
 SOURCES AND DEFINITIONS
@@ -92,6 +94,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 KEYWORDS_CSV = HERE.parent / "workspace/research/seo-fitxpress-2026-09/rank-keywords.csv"
+EVENTS_CSV = HERE.parent / "workspace/research/seo-fitxpress-2026-09/site-events.csv"
 STATE = Path.home() / ".hermes" / ".organic-dashboard-state.json"
 HANDRAISERS = HERE / "hubspot-handraisers.py"
 MT_SELFSERVE = HERE / "mt-selfserve-report.py"
@@ -128,6 +131,9 @@ CORE_COUNTRIES = ("^(usa|gbr|can|aus|nzl|irl|deu|fra|nld|bel|lux|aut|che|esp|prt
 # PAGE_ALERT_POS+ positions with PAGE_ALERT_MIN_IMPR+ impressions in both periods.
 PAGE_ALERT_MIN_CLICKS, PAGE_ALERT_DROP, PAGE_ALERT_MIN_LOSS = 8, 0.30, 5
 PAGE_ALERT_POS, PAGE_ALERT_MIN_IMPR = 3.0, 100
+# Brand queries. Search Console hides rare queries, so a query filter never sees them: "non-brand" is the
+# site total minus these and therefore includes the hidden queries.
+BRAND_QUERY = "3d[ -]?loo?k"
 INTERNAL_FILTERS = ["Internal Traffic", "Developer Traffic"]
 AI_SOURCE = (r"(chatgpt|openai|perplexity|claude\.ai|anthropic|gemini\.google|bard\.google|copilot|deepseek|"
              r"grok|you\.com|meta\.ai|mistral)")
@@ -466,6 +472,25 @@ def collect_gsc_core(start: _dt.date, end: _dt.date) -> list[tuple]:
     return out
 
 
+def collect_gsc_brand(start: _dt.date, end: _dt.date) -> list[tuple]:
+    """(day, clicks, impressions) for queries naming the brand (BRAND_QUERY), whole site."""
+    out = []
+    for a, b in month_chunks(start, end):
+        for r in gsc(a, b, ["date"], [{"dimension": "query", "operator": "includingRegex",
+                                        "expression": BRAND_QUERY}]):
+            out.append((_dt.date.fromisoformat(r["keys"][0]), r["clicks"], r["impressions"]))
+    return out
+
+
+def load_events() -> list[list]:
+    """[date, area, event], newest first. Hand-kept: the Sheet tab is rewritten from this file."""
+    if not EVENTS_CSV.exists():
+        return []
+    with EVENTS_CSV.open(encoding="utf-8") as f:
+        rows = [[r["date"].strip(), r["area"].strip(), r["event"].strip()] for r in csv.DictReader(f)]
+    return sorted(rows, reverse=True)
+
+
 def collect_gsc_keywords(start: _dt.date, end: _dt.date, kws: list[dict]) -> list[tuple]:
     """(day, query, country, clicks, impressions, position*impressions) for the tracked keywords."""
     words = sorted({k["keyword"] for k in kws})
@@ -670,7 +695,7 @@ class Agg:
             self.Q[quarter_key(day)][key] += value
 
 
-def build(end: _dt.date, gsc_pages, gsc_arab, gsc_kw, ga, hs, ahr, kws, state, gsc_core=()) -> dict:
+def build(end: _dt.date, gsc_pages, gsc_arab, gsc_kw, ga, hs, ahr, kws, state, gsc_core=(), gsc_brand=()) -> dict:
     weeks = []
     w = HISTORY_START
     while w + _dt.timedelta(days=6) <= end:
@@ -681,6 +706,7 @@ def build(end: _dt.date, gsc_pages, gsc_arab, gsc_kw, ga, hs, ahr, kws, state, g
         g = page_group(path)
         A.add(day, "clicks", clicks)
         A.add(day, "clicks_ex_arab", clicks)
+        A.add(day, "clicks_nonbrand", clicks)
         A.add(day, f"clicks|{g}", clicks)
         A.add(day, f"clicks|{PRODUCT_OF_GROUP[g]}", clicks)
         A.add(day, "impr", impr)
@@ -689,6 +715,9 @@ def build(end: _dt.date, gsc_pages, gsc_arab, gsc_kw, ga, hs, ahr, kws, state, g
         A.add(day, "clicks_ex_arab", -clicks)
     for day, clicks, _ in gsc_core:
         A.add(day, "clicks_core", clicks)
+    for day, clicks, _ in gsc_brand:
+        A.add(day, "clicks_brand", clicks)
+        A.add(day, "clicks_nonbrand", -clicks)
     for day, path, s, e, _ in ga["landing"]:
         p = page_product(path)
         A.add(day, "org_sessions", s)
@@ -730,12 +759,17 @@ def build(end: _dt.date, gsc_pages, gsc_arab, gsc_kw, ga, hs, ahr, kws, state, g
             A.add(s["day"], "mt_signups_organic")
 
     since = weeks[-4]
+    before = weeks[-8] if len(weeks) >= 8 else since
     top = defaultdict(lambda: defaultdict(float))
     for day, path, clicks, impr, posw in gsc_pages:
         if since <= day <= end:
             top[path]["clicks"] += clicks
             top[path]["impr"] += impr
             top[path]["posw"] += posw
+        elif before <= day < since:
+            top[path]["prev_clicks"] += clicks
+            top[path]["prev_impr"] += impr
+            top[path]["prev_posw"] += posw
     for day, path, s, e, k in ga["landing"]:
         if since <= day <= end:
             top[path]["sessions"] += s
@@ -781,14 +815,14 @@ def build(end: _dt.date, gsc_pages, gsc_arab, gsc_kw, ga, hs, ahr, kws, state, g
             a["impr"] += impr
             a["posw"] += posw
     return {"weeks": weeks, "A": A, "forms": forms, "top": top, "gkw": gkw, "ahr": ahr, "kws": kws,
-            "end": end, "overview": state.get("overview", {}), "work": [c for c in hs["contacts"] if c["work"]],
+            "end": end, "events": load_events(), "overview": state.get("overview", {}), "work": [c for c in hs["contacts"] if c["work"]],
             "page_alerts": page_alerts}
 
 
 # ------------------------------------------------------------------ sheet values
 
 TABS = ["Dashboard", "Weekly", "Monthly", "Leads by form", "Contacts by page", "Recent contacts", "Rankings",
-        "Rank history", "Top pages", "About", "_chart"]
+        "Rank history", "Top pages", "Events", "About", "_chart"]
 PAGE_DAYS, PAGE_TOP, RECENT_DAYS = 365, 30, 90
 BLUE, ORANGE, AQUA, YELLOW, MAGENTA, GRAY = "#143DFF", "#EB6834", "#1BAF7A", "#EDA100", "#E87BA4", "#A8A8A8"
 NAVY, INK, MUTED, LINE = "#050F40", "#1A1A1A", "#666666", "#E5E5E5"
@@ -829,7 +863,8 @@ def tab_values(r: dict) -> dict:
                 n(a["work"]), *[n(a[f"work|{p}"]) for p in [*PRODUCTS, "Not assigned"]], n(a["work_organic"]),
                 *[n(a[f"work_organic|{p}"]) for p in PRODUCTS], n(a["personal"]),
                 n(a["mt_signups"]), n(a["mt_signups_organic"]),
-                *[v for p in PRODUCTS for v in (n(a[f"deals|{p}"]), n(a[f"deals_organic|{p}"]))]]
+                *[v for p in PRODUCTS for v in (n(a[f"deals|{p}"]), n(a[f"deals_organic|{p}"]))],
+                n(a["clicks_brand"]), n(a["clicks_nonbrand"])]
 
     metric_hdr = ["Google clicks: whole site", "Google clicks: whole site excl. Arabic-speaking countries",
                   "Google clicks: Arabic-speaking countries (consumer queries, not ICP)",
@@ -844,7 +879,8 @@ def tab_values(r: dict) -> dict:
                   *[f"Work-email contacts from organic search or AI: {p}" for p in PRODUCTS],
                   "Inbound contacts, personal email", "Mobile Tailor self-serve sign-ups",
                   "MT sign-ups from organic search or AI",
-                  *[h for p in PRODUCTS for h in (f"New deals: {p}", f"New deals from organic search or AI: {p}")]]
+                  *[h for p in PRODUCTS for h in (f"New deals: {p}", f"New deals from organic search or AI: {p}")],
+                  "Google clicks: brand queries (3dlook)", "Google clicks: non-brand and hidden queries"]
     out["Weekly"] = [["Week (Mon)", *metric_hdr, "Note"]] + [
         [wk.isoformat(), *metric_cols(W[wk], wk + _dt.timedelta(days=6) >= GA4_LEADS_SINCE,
                                       ga4_ok(wk, wk + _dt.timedelta(days=6))),
@@ -996,12 +1032,18 @@ def tab_values(r: dict) -> dict:
                          (url or "").replace(SITE, "") or None, gp, gi, gc])
     out["Rank history"] = rows
 
-    top = sorted(r["top"].items(), key=lambda kv: (-kv[1]["clicks"], kv[0]))[:50]
+    # the 50 biggest pages of either period: a page that lost its clicks must stay visible
+    top = sorted(r["top"].items(), key=lambda kv: (-max(kv[1]["clicks"], kv[1]["prev_clicks"]), kv[0]))[:50]
+    top.sort(key=lambda kv: (-kv[1]["clicks"], kv[0]))
     out["Top pages"] = [["Page", "Group", "Product", "Google clicks", "Google impressions", "Google avg position",
-                         "GA4 organic sessions", "GA4 engaged organic sessions", "GA4 key events (organic)"]] + [
+                         "GA4 organic sessions", "GA4 engaged organic sessions", "GA4 key events (organic)",
+                         "Google clicks: previous 4 weeks", "Google clicks: change",
+                         "Google avg position: previous 4 weeks"]] + [
         [path, page_group(path), page_product(path), n(a["clicks"]), n(a["impr"]),
          round(a["posw"] / a["impr"], 1) if a["impr"] else None, n(a["sessions"]), n(a["engaged"]),
-         n(a["key_events"])] for path, a in top]
+         n(a["key_events"]), n(a["prev_clicks"]), n(a["clicks"] - a["prev_clicks"]),
+         round(a["prev_posw"] / a["prev_impr"], 1) if a["prev_impr"] else None] for path, a in top]
+    out["Events"] = [["Date", "Area", "Event"], *r["events"]]
 
     # ---- Dashboard
     last4, prev4 = weeks[-4:], weeks[-8:-4]
@@ -1330,7 +1372,7 @@ def write_sheet(sid: str, meta: dict, v: dict) -> None:
     widths = {"Weekly": (100, nweekly, 105), "Monthly": (120, len(v["Monthly"][0]), 105),
               "Leads by form": (100, len(v["Leads by form"][0]), 115),
               "Contacts by page": None, "Recent contacts": None,
-              "Rank history": None, "Rankings": None, "Top pages": None}
+              "Rank history": None, "Rankings": None, "Top pages": None, "Events": (100, 3, 130)}
     for t, spec in widths.items():
         sh = tabs[t]
         reqs.append({"updateSheetProperties": {"properties": {"sheetId": sh, "gridProperties": {"frozenRowCount": 1}},
@@ -1360,9 +1402,10 @@ def write_sheet(sid: str, meta: dict, v: dict) -> None:
         width(RH, i, i + 1, px)
     fmt(RH, 1, size["Rank history"][0], 0, 1, {"numberFormat": {"type": "DATE", "pattern": "d mmm yyyy"}}, "userEnteredFormat.numberFormat")
     TP = tabs["Top pages"]
-    for i, px in enumerate([440, 180, 130, 100, 110, 100, 110, 120, 110]):
+    for i, px in enumerate([440, 180, 130, 100, 110, 100, 110, 120, 110, 110, 100, 110]):
         width(TP, i, i + 1, px)
-    fmt(TP, 1, size["Top pages"][0], 3, 9, {"numberFormat": {"type": "NUMBER", "pattern": "#,##0.#"}}, "userEnteredFormat.numberFormat")
+    width(tabs["Events"], 2, 3, 700)
+    fmt(TP, 1, size["Top pages"][0], 3, 12, {"numberFormat": {"type": "NUMBER", "pattern": "#,##0.#"}}, "userEnteredFormat.numberFormat")
     CP = tabs["Contacts by page"]
     for i, px in enumerate([420, 130, 130, 100, 100, 100, 90, 420, 100]):
         width(CP, i, i + 1, px)
@@ -1544,12 +1587,13 @@ def run(args) -> int:
     gsc_pages = collect_gsc_pages(HISTORY_START, end)
     gsc_arab = collect_gsc_arab(HISTORY_START, end)
     gsc_core = collect_gsc_core(HISTORY_START, end)
+    gsc_brand = collect_gsc_brand(HISTORY_START, end)
     gsc_kw = collect_gsc_keywords(HISTORY_START, end, kws)
     ga = collect_ga4(HISTORY_START, end)
     hs = collect_hubspot(HISTORY_START, end)
     ahr = collect_ahrefs(kws, sundays, state, use_api=not args.no_ahrefs)
     save_state(state)                            # keep the paid-for Ahrefs snapshots even if the Sheet fails
-    r = build(end, gsc_pages, gsc_arab, gsc_kw, ga, hs, ahr, kws, state, gsc_core)
+    r = build(end, gsc_pages, gsc_arab, gsc_kw, ga, hs, ahr, kws, state, gsc_core, gsc_brand)
     v = tab_values(r)
     print(f"gsc page rows {len(gsc_pages)}, keyword rows {len(gsc_kw)}, ga4 landing rows {len(ga['landing'])}, "
           f"hubspot contacts {hs['raw_contacts']} → inbound {len(hs['contacts'])} (dropped {hs['dropped']}), "
