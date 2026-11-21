@@ -1,0 +1,93 @@
+{
+ "generated": "2026-11-21T05:40:21+00:00",
+ "items": [
+  {
+   "id": "a8b36233-683d-47c7-9a92-34779997a6c7",
+   "title": "Banner Health Invests in Layer Health to Expand AI-Powered Clinical Registries",
+   "date": "2026-11-20",
+   "tags": [
+    "Investments and Partnerships",
+    "Operational Efficiency",
+    "Health System & Health Provider",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/banner-health-invests-in-layer-health-to-expand-ai-powered-clinical-registries"
+  },
+  {
+   "id": "de5c9f27-827e-44a5-8ccd-3c8a8fa331b3",
+   "title": "Cigna Group Foundation Commits $31.5M to Expand Community Health Programs Across 10 States",
+   "date": "2026-11-20",
+   "tags": [
+    "Community Health / Public Health",
+    "Mental & Behavioral Health",
+    "Payer (Insurer)",
+    "Association, Non Profit & Academia",
+    "Care Coordination / Navigation / Care Access"
+   ],
+   "url": "https://hlth.com/insights/news/cigna-group-foundation-commits-31-5m-to-expand-community-health-programs-across-10-states"
+  },
+  {
+   "id": "a7aeb306-2b6c-487d-99fc-5503a4f9ec7e",
+   "title": "Tennr and OpenAI Partner to Test AI Agents for Prior Authorization Automation",
+   "date": "2026-11-20",
+   "tags": [
+    "Operational Efficiency",
+    "Health System & Health Provider",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services",
+    "Policy and Regulation"
+   ],
+   "url": "https://hlth.com/insights/news/tennr-and-openai-partner-to-test-ai-agents-for-prior-authorization-automation"
+  }
+ ],
+ "analyses": {
+  "a8b36233-683d-47c7-9a92-34779997a6c7": {
+   "id": "a8b36233-683d-47c7-9a92-34779997a6c7",
+   "score": 0,
+   "segment": "—",
+   "what": "Banner Health інвестувала в Layer Health і на кілька років розгортає її AI-платформу для клінічних реєстрів (кардіологія, хірургія, онкологія, інсульт) у 33 лікарнях. На старті планують автоматизувати близько 60% ручної роботи з даними для реєстрів, але це прогноз, а не результат.",
+   "why": "Це AI для обробки EHR і реєстрів у великій лікарняній мережі. Ні дані про тіло, ні BMI, ні програми ваги тут не фігурують.",
+   "play": "none",
+   "companies": [
+    "Banner Health",
+    "Layer Health",
+    "American Heart Association",
+    "American College of Surgeons",
+    "American College of Cardiology"
+   ],
+   "_date": "2026-11-20"
+  },
+  "de5c9f27-827e-44a5-8ccd-3c8a8fa331b3": {
+   "id": "de5c9f27-827e-44a5-8ccd-3c8a8fa331b3",
+   "score": 0,
+   "segment": "—",
+   "what": "The Cigna Group Foundation виділяє $31.5M на 3 роки на гранти некомерційним організаціям у 10 штатах США. Напрями: психічне здоров'я молоді, добробут ветеранів, підтримка людей зі складними захворюваннями та їхніх доглядальників.",
+   "why": "Це благодійність фонду в психічному здоров'ї та community health. З wellness rewards, верифікацією чи андеррайтингом Cigna (ICP §4) новина ніяк не пов'язана.",
+   "play": "none",
+   "companies": [
+    "The Cigna Group Foundation",
+    "Cigna",
+    "Boys & Girls Clubs of America"
+   ],
+   "_date": "2026-11-20"
+  },
+  "a7aeb306-2b6c-487d-99fc-5503a4f9ec7e": {
+   "id": "a7aeb306-2b6c-487d-99fc-5503a4f9ec7e",
+   "score": 0,
+   "segment": "—",
+   "what": "Tennr разом з OpenAI запускає пілот AI-агентів, які подають запити на prior authorization у порталах страховиків, під контролем персоналу. Вимірюваних результатів поки немає.",
+   "why": "Це автоматизація адміністративних процесів у роботі зі страховиками. BMI чи метрики тіла в статті не згадуються, тому зв'язку з FitXpress немає.",
+   "play": "none",
+   "companies": [
+    "Tennr",
+    "OpenAI",
+    "Abridge",
+    "Oscar Health",
+    "Color Health"
+   ],
+   "_date": "2026-11-20"
+  }
+ },
+ "posts": []
+}
