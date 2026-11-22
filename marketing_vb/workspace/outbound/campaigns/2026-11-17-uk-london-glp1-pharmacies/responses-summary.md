@@ -1,50 +1,63 @@
-# Responses Summary — 2026-11-17-uk-london-glp1-pharmacies (as of 2026-11-20)
+# Responses Summary — 2026-11-17-uk-london-glp1-pharmacies (as of 2026-11-21)
 
 ## Counts
-- Total responses: 2
+- Total responses: 3
 - Interested: 0 (0%)
 - Maybe-later: 0
 - Referrals: 0
-- Decline: 1 (50%)
+- Decline: 1 (33%)
 - Negative: 0 (0%)
-- Questions: 0
+- Questions: 0 (требуют личного ответа)
 - OOO: 0
-- Other/unclear: 1 (50%) — left the company, no successor named
+- Other/unclear: 2 (67%) — both «left the company», no successor named
 
 ## Interested — for sales handoff
 
-None this round.
+None this batch.
 
 ## Questions — Vadim needs to reply personally
 
-None this round.
+None this batch.
 
 ## Negative responses — pattern check
 
-No negative responses. The decline (Niamh McMillan, Chief Pharmacist, HeliosX) is clean
-and polite, not a pattern signal: she replied to Message 1 saying HeliosX already runs live photo
-capture backed by a registered Class I medical device for height/weight assessment, so FitXpress's
-two-photo flow is redundant for them. This reads as a real competitive/product fit mismatch
-(they already own an equivalent in-house device), not a messaging problem.
+0 negative responses. Nothing to flag on messaging tone.
 
-The second response (Yvonne Lim, Superintendent Pharmacist, My London Pharmacy) is not a product
-signal at all: she replied to Message 1 saying she has left the company and can't help, with no
-successor named. Per `outbound-reply-kit.md`'s "left the company" rule, this classifies as
-other/unclear (not referral, since no name was given; not decline, since there was no opinion on
-the product). No reply draft — nothing to answer, and no named person to redirect to. My London
-Pharmacy itself stays a live target; the contact record for Yvonne should be marked stale so a
-future campaign finds the current Superintendent Pharmacist instead of re-contacting her.
+## Other / unclear detail
+
+### Yvonne Lim — Superintendent Pharmacist — My London Pharmacy
+- Replied to: Message 1
+- Their message: «Sorry I can't help you as I have left the company.»
+- No successor named, no door left open. Per `outbound-reply-kit.md` «left the company» rule (no
+  named successor → `other/unclear`, not referral, not decline).
+- Full thread: `messages/yvonne-lim-ba1b7119a.md`
+
+### Tannaz Sohrabi — Superintendent Pharmacist — The Family Chemist
+- Replied to: Message 1
+- Their message: «I no longer work for The Family Chemist so please reach out to their current
+  team to discuss whether their stance on using your technology has changed.»
+- No specific successor named, only a generic pointer to «their current team». Same pattern as
+  Yvonne Lim → `other/unclear`, no `referral_to`, no draft.
+- Full thread: `messages/tannaz-s-18b67011b.md`
+
+## Decline detail
+
+### Niamh McMillan — Chief Pharmacist — HeliosX
+- Replied to: Message 1
+- Their message: «We don't do photo uploads - we have live photo capture and a registered class I
+  medical device that sits behind the live photo capture to assess height and weight. This is
+  therefore not of interest but thank you.»
+- Direct decline, no door left open, no question. No draft per reply-kit (decline → sheet marks
+  «не відповідаємо»).
+- Full thread: `messages/niamh-mcmillan.md`
 
 ## Recommendations
 
-- Decline (Niamh McMillan / HeliosX): no sales handoff, no reply draft. Add HeliosX / Niamh
-  McMillan to the exclusion registry so no future FitXpress campaign re-contacts her (company
-  already owns a registered medical device doing the same job — unlikely to become a fit within
-  the standard 6-month window).
-- Other/unclear (Yvonne Lim / My London Pharmacy): no reply draft, no referral to chase (no name
-  given). Exclude Yvonne Lim personally from future sends (she has left), but do not exclude My
-  London Pharmacy as a company — it still qualifies as an ICP target and should be re-approached
-  under a current contact in a later campaign, respecting the one-company-one-profile-per-6-months
-  rule.
-- No pattern worth flagging from n=2; one clean competitive decline, one departure with no product
-  signal either way.
+- Both left-company replies point at the pharmacy, not at a named person. Nothing to add to
+  `followup_draft` / `referral_to` for either. The exclusion registry (step 9) should still record
+  the company-level outcome so `The Family Chemist` and `My London Pharmacy` are not re-targeted
+  blind within the 6-month window; it needs a fresh contact found first for either to go further.
+- Niamh's decline is informative for product positioning, not messaging: HeliosX already runs its
+  own live-capture + Class I device flow, so this is a genuine fit mismatch, not a tone problem.
+  No change needed to the opener angle for other GLP-1 pharmacy prospects.
+- Small sample (n=3); no pattern conclusions beyond the above.
