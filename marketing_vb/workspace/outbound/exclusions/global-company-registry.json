@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-20",
+  "last_updated": "2026-11-22",
   "companies": {
     "safariland": {
       "covered_by_profile": null,
@@ -4015,7 +4015,10 @@
       "campaign_id": "2026-11-19-au-connected-fitness",
       "product": "fitxpress",
       "date": "2026-11-19",
-      "status": "active"
+      "status": "active",
+      "also_covered_by": [
+        "katya"
+      ]
     },
     "cityfitness": {
       "display_name": "CityFitness",
@@ -4109,6 +4112,158 @@
       "display_name": "Tammy Fit",
       "covered_by_profile": "vadim",
       "campaign_id": "2026-11-19-au-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "academia-gavi-es-24h": {
+      "display_name": "Academia Gaviões 24h",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-19-latam-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "action-black": {
+      "display_name": "Action Black",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-19-latam-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "allp-fit": {
+      "display_name": "Allp Fit",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-19-latam-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "bigg": {
+      "display_name": "BIGG",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-19-latam-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "bodytech-colombia": {
+      "display_name": "Bodytech Colombia",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-19-latam-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "bodytech-company": {
+      "display_name": "Bodytech Company",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-19-latam-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "cia-athletica": {
+      "display_name": "Cia Athletica",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-19-latam-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "fitco": {
+      "display_name": "Fitco",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-19-latam-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "megatlon": {
+      "display_name": "Megatlon",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-19-latam-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "nextfit": {
+      "display_name": "Nextfit",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-19-latam-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "pacto-solu-es": {
+      "display_name": "Pacto Soluções",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-19-latam-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "panobianco": {
+      "display_name": "Panobianco",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-19-latam-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "pratique-fitness": {
+      "display_name": "Pratique Fitness",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-19-latam-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "selfit": {
+      "display_name": "Selfit",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-19-latam-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "smart-fit": {
+      "display_name": "Smart Fit",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-19-latam-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "spinning-center-gym": {
+      "display_name": "Spinning Center Gym",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-19-latam-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "sport-city": {
+      "display_name": "Sport City",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-19-latam-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "sportclub": {
+      "display_name": "SportClub",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-19-latam-connected-fitness",
+      "product": "fitxpress",
+      "date": "2026-11-19",
+      "status": "active"
+    },
+    "tecnofit": {
+      "display_name": "Tecnofit",
+      "covered_by_profile": "katya",
+      "campaign_id": "2026-11-19-latam-connected-fitness",
       "product": "fitxpress",
       "date": "2026-11-19",
       "status": "active"

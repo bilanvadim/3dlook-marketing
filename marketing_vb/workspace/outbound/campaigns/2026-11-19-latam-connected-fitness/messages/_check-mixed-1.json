@@ -1,0 +1,935 @@
+{
+ "campaign": "2026-11-19-latam-connected-fitness",
+ "checked": 26,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-1",
+ "generated": "2026-11-22T10:10:46",
+ "hard": [],
+ "soft": [
+  [
+   "pricing word",
+   "bruno-ciolli M1",
+   "Hi Bruno, You bring analytics and pricing experience to the commercial side of Allp Fit."
+  ],
+  [
+   "pricing word",
+   "bruno-ciolli M2",
+   "Hi Bruno, For a premium tier, 3D Body Progress compares the scans Allp Fit selects, and 3D Goal Visualization…"
+  ],
+  [
+   "call ask in Message 1?",
+   "marcelo-vianna-a99724115 M1",
+   "referral_call: the call belongs in Message 2"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allp Fit: bruno-ciolli / andersonfranconeves",
+   "«between in-club assessments, a member app has few…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allp Fit: bruno-ciolli / fabianoveloso",
+   "«fitxpress is a white-label scan in the app your m…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allp Fit: bruno-ciolli / luana-luiza-402309185",
+   "«fitxpress is a white-label scan in the app your m…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allp Fit: bruno-ciolli / jeanpcpierre",
+   "«fitxpress is a white-label scan in the app your m…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allp Fit: bruno-ciolli / gabriel-moura-c",
+   "«fitxpress is a white-label scan in the app your m…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allp Fit: bruno-ciolli / thaypfx",
+   "«fitxpress sends each scan through the api with a…»"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: bruno-ciolli / ricardoferamaral",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: bruno-ciolli / douglas-cassimiro",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: bruno-ciolli / guilherme-messias-68b34b353",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: bruno-ciolli / guilherme-th%c3%a9",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: bruno-ciolli / emerson-maida",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: bruno-ciolli / cristianogfontes",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allp Fit: thaypfx / ricardoferamaral",
+   "«a body check-in done in a club needs a visit and…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allp Fit: thaypfx / jeanpcpierre",
+   "«a body check-in done in a club needs a visit and…»"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: thaypfx / emerson-maida",
+   "«A body check-in done in a club needs a visit and a trainer…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: thaypfx / fabianoveloso",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: thaypfx / luana-luiza-402309185",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: thaypfx / douglas-cassimiro",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: thaypfx / guilherme-messias-68b34b353",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: thaypfx / andersonfranconeves",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: thaypfx / gabriel-moura-c",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: thaypfx / guilherme-th%c3%a9",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: thaypfx / cristianogfontes",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allp Fit: ricardoferamaral / jeanpcpierre",
+   "«a body check-in still means a club visit and a tr…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allp Fit: ricardoferamaral / emerson-maida",
+   "«a body check-in still means a club visit and a tr…»"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: ricardoferamaral / douglas-cassimiro",
+   "«New members at one club scan at onboarding and at the first…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: ricardoferamaral / guilherme-messias-68b34b353",
+   "«New members at one club scan at onboarding and at the first…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: ricardoferamaral / gabriel-moura-c",
+   "«We would count scan completion, retakes, onboarding complet…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: ricardoferamaral / cristianogfontes",
+   "«We would count scan completion, retakes, onboarding complet…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: ricardoferamaral / fabianoveloso",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: ricardoferamaral / luana-luiza-402309185",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: ricardoferamaral / andersonfranconeves",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: ricardoferamaral / guilherme-th%c3%a9",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allp Fit: fabianoveloso / jeanpcpierre",
+   "«fitxpress adds a white-label scan to the app your…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allp Fit: fabianoveloso / gabriel-moura-c",
+   "«fitxpress adds a white-label scan to the app your…»"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: fabianoveloso / luana-luiza-402309185",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: fabianoveloso / douglas-cassimiro",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: fabianoveloso / guilherme-messias-68b34b353",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: fabianoveloso / andersonfranconeves",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: fabianoveloso / guilherme-th%c3%a9",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: fabianoveloso / emerson-maida",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: fabianoveloso / cristianogfontes",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allp Fit: luana-luiza-402309185 / guilherme-messias-68b34b353",
+   "«fitxpress adds a white-label scan to the app your…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allp Fit: luana-luiza-402309185 / andersonfranconeves",
+   "«fitxpress adds a white-label scan to the app your…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allp Fit: luana-luiza-402309185 / jeanpcpierre",
+   "«fitxpress adds a white-label scan to the app your…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allp Fit: luana-luiza-402309185 / gabriel-moura-c",
+   "«fitxpress adds a white-label scan to the app your…»"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: luana-luiza-402309185 / douglas-cassimiro",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: luana-luiza-402309185 / guilherme-th%c3%a9",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: luana-luiza-402309185 / emerson-maida",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: luana-luiza-402309185 / cristianogfontes",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allp Fit: douglas-cassimiro / guilherme-messias-68b34b353",
+   "«its new members scan at onboarding and at the fir…»"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: douglas-cassimiro / jeanpcpierre",
+   "«Its new members scan at onboarding and at the first check-i…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: douglas-cassimiro / gabriel-moura-c",
+   "«We would count scan completion, retakes, onboarding complet…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: douglas-cassimiro / cristianogfontes",
+   "«We would count scan completion, retakes, onboarding complet…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: douglas-cassimiro / andersonfranconeves",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: douglas-cassimiro / guilherme-th%c3%a9",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: douglas-cassimiro / emerson-maida",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allp Fit: guilherme-messias-68b34b353 / andersonfranconeves",
+   "«fitxpress adds the same white-label scan to the a…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allp Fit: guilherme-messias-68b34b353 / jeanpcpierre",
+   "«members on that plan scan at onboarding and at th…»"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: guilherme-messias-68b34b353 / gabriel-moura-c",
+   "«We would count scan completion, retakes, onboarding complet…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: guilherme-messias-68b34b353 / cristianogfontes",
+   "«We would count scan completion, retakes, onboarding complet…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: guilherme-messias-68b34b353 / guilherme-th%c3%a9",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: guilherme-messias-68b34b353 / emerson-maida",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: andersonfranconeves / jeanpcpierre",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: andersonfranconeves / gabriel-moura-c",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: andersonfranconeves / guilherme-th%c3%a9",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: andersonfranconeves / emerson-maida",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: andersonfranconeves / cristianogfontes",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allp Fit: jeanpcpierre / emerson-maida",
+   "«a body check-in needs a club visit and a trainer…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allp Fit: jeanpcpierre / gabriel-moura-c",
+   "«fitxpress is a white-label scan inside the app yo…»"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: jeanpcpierre / cristianogfontes",
+   "«We would count scan completion, retakes, onboarding complet…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: jeanpcpierre / guilherme-th%c3%a9",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Allp Fit: gabriel-moura-c / emerson-maida",
+   "«fitxpress is a white-label scan for the app your…»"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: gabriel-moura-c / cristianogfontes",
+   "«The count covers scan completion, retakes, onboarding compl…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: gabriel-moura-c / guilherme-th%c3%a9",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: guilherme-th%c3%a9 / emerson-maida",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: guilherme-th%c3%a9 / cristianogfontes",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Allp Fit: emerson-maida / cristianogfontes",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: luizurquiza / dudunetto",
+   "«FitXpress is a white-label scan inside the app your members…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: luizurquiza / ricardo-fagundes-98219090",
+   "«we would measure scan completion, retakes, onboar…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: luizurquiza / alan-barcellos-28253019b",
+   "«we would measure scan completion, retakes, onboar…»"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: luizurquiza / marcelo-vianna-a99724115",
+   "«We would measure scan completion, retakes, onboarding compl…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: luizurquiza / elisangela-ornellas-953a8824",
+   "«we would measure scan completion, retakes, onboar…»"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: luizurquiza / melina-de-souza-barbosa",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: luizurquiza / b%c3%a1rbara-valente-01898386",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: luizurquiza / karina-borba-rocha-580152220",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: luizurquiza / diogoevangelista",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: luizurquiza / tamiris-losso",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: luizurquiza / amanda-ferrari-6b21251aa",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: luizurquiza / gabrielle-weiss-86962b152",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: ricardo-fagundes-98219090 / melina-de-souza-barbosa",
+   "«fitxpress is a white-label scan inside the app yo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: ricardo-fagundes-98219090 / karina-borba-rocha-580152220",
+   "«fitxpress is a white-label scan inside the app yo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: ricardo-fagundes-98219090 / elisangela-ornellas-953a8824",
+   "«fitxpress is a white-label scan inside the app yo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: ricardo-fagundes-98219090 / tamiris-losso",
+   "«fitxpress is a white-label scan inside the app yo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: ricardo-fagundes-98219090 / gabrielle-weiss-86962b152",
+   "«fitxpress is a white-label scan inside the app yo…»"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: ricardo-fagundes-98219090 / alan-barcellos-28253019b",
+   "«We would compare scan completion, retakes, onboarding compl…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: ricardo-fagundes-98219090 / marcelo-vianna-a99724115",
+   "«we would compare scan completion, retakes, onboar…»"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: ricardo-fagundes-98219090 / dudunetto",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: ricardo-fagundes-98219090 / b%c3%a1rbara-valente-01898386",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: ricardo-fagundes-98219090 / diogoevangelista",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: ricardo-fagundes-98219090 / amanda-ferrari-6b21251aa",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: dudunetto / melina-de-souza-barbosa",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: dudunetto / b%c3%a1rbara-valente-01898386",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: dudunetto / karina-borba-rocha-580152220",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: dudunetto / alan-barcellos-28253019b",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: dudunetto / marcelo-vianna-a99724115",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: dudunetto / diogoevangelista",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: dudunetto / elisangela-ornellas-953a8824",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: dudunetto / tamiris-losso",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: dudunetto / amanda-ferrari-6b21251aa",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: dudunetto / gabrielle-weiss-86962b152",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: melina-de-souza-barbosa / karina-borba-rocha-580152220",
+   "«fitxpress is a white-label scan inside the app yo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: melina-de-souza-barbosa / marcelo-vianna-a99724115",
+   "«fitxpress is a white-label scan inside the app yo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: melina-de-souza-barbosa / elisangela-ornellas-953a8824",
+   "«fitxpress is a white-label scan inside the app yo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: melina-de-souza-barbosa / tamiris-losso",
+   "«fitxpress is a white-label scan inside the app yo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: melina-de-souza-barbosa / gabrielle-weiss-86962b152",
+   "«fitxpress is a white-label scan inside the app yo…»"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: melina-de-souza-barbosa / b%c3%a1rbara-valente-01898386",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: melina-de-souza-barbosa / alan-barcellos-28253019b",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: melina-de-souza-barbosa / diogoevangelista",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: melina-de-souza-barbosa / amanda-ferrari-6b21251aa",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: b%c3%a1rbara-valente-01898386 / elisangela-ornellas-953a8824",
+   "«how do clubs plan the slots for body check-ins to…»"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: b%c3%a1rbara-valente-01898386 / karina-borba-rocha-580152220",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: b%c3%a1rbara-valente-01898386 / alan-barcellos-28253019b",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: b%c3%a1rbara-valente-01898386 / marcelo-vianna-a99724115",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: b%c3%a1rbara-valente-01898386 / diogoevangelista",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: b%c3%a1rbara-valente-01898386 / tamiris-losso",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: b%c3%a1rbara-valente-01898386 / amanda-ferrari-6b21251aa",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: b%c3%a1rbara-valente-01898386 / gabrielle-weiss-86962b152",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: karina-borba-rocha-580152220 / tamiris-losso",
+   "«hi karina, you are an operations manager at bodyt…»"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: karina-borba-rocha-580152220 / gabrielle-weiss-86962b152",
+   "«Hi Karina, You are an operations manager at Bodytech Compan…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: karina-borba-rocha-580152220 / marcelo-vianna-a99724115",
+   "«fitxpress is a white-label scan inside the app yo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: karina-borba-rocha-580152220 / elisangela-ornellas-953a8824",
+   "«fitxpress is a white-label scan inside the app yo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: karina-borba-rocha-580152220 / amanda-ferrari-6b21251aa",
+   "«fitxpress is a white-label scan inside the app yo…»"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: karina-borba-rocha-580152220 / alan-barcellos-28253019b",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: karina-borba-rocha-580152220 / diogoevangelista",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: alan-barcellos-28253019b / amanda-ferrari-6b21251aa",
+   "«fitxpress is a white-label scan for that app: 2 p…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: alan-barcellos-28253019b / marcelo-vianna-a99724115",
+   "«we would compare scan completion, retakes, onboar…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: alan-barcellos-28253019b / elisangela-ornellas-953a8824",
+   "«we would compare scan completion, retakes, onboar…»"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: alan-barcellos-28253019b / diogoevangelista",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: alan-barcellos-28253019b / tamiris-losso",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: alan-barcellos-28253019b / gabrielle-weiss-86962b152",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: marcelo-vianna-a99724115 / tamiris-losso",
+   "«fitxpress is a white-label scan inside the app yo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: marcelo-vianna-a99724115 / gabrielle-weiss-86962b152",
+   "«fitxpress is a white-label scan inside the app yo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: marcelo-vianna-a99724115 / elisangela-ornellas-953a8824",
+   "«we would track scan completion, retakes, onboardi…»"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: marcelo-vianna-a99724115 / diogoevangelista",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: marcelo-vianna-a99724115 / amanda-ferrari-6b21251aa",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: diogoevangelista / elisangela-ornellas-953a8824",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: diogoevangelista / tamiris-losso",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: diogoevangelista / amanda-ferrari-6b21251aa",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: diogoevangelista / gabrielle-weiss-86962b152",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: elisangela-ornellas-953a8824 / tamiris-losso",
+   "«fitxpress is a white-label scan inside the app yo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: elisangela-ornellas-953a8824 / gabrielle-weiss-86962b152",
+   "«fitxpress is a white-label scan inside the app yo…»"
+  ],
+  [
+   "same sentence at one company",
+   "Bodytech Company: elisangela-ornellas-953a8824 / amanda-ferrari-6b21251aa",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: tamiris-losso / gabrielle-weiss-86962b152",
+   "«hi tamiris, you work in operations management at…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: tamiris-losso / amanda-ferrari-6b21251aa",
+   "«fitxpress is a white-label scan inside the app yo…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Bodytech Company: amanda-ferrari-6b21251aa / gabrielle-weiss-86962b152",
+   "«fitxpress adds a white-label scan to that app: 2…»"
+  ],
+  [
+   "sentence opening repeated",
+   "Allp Fit ×7",
+   "«fitxpress is a white label…»: bruno-ciolli, cristianogfontes, douglas-cassimiro, emerson-maida"
+  ],
+  [
+   "sentence opening repeated",
+   "Allp Fit ×10",
+   "«2 photos on the member's…»: andersonfranconeves, bruno-ciolli, cristianogfontes, fabianoveloso"
+  ],
+  [
+   "sentence opening repeated",
+   "Allp Fit ×13",
+   "«fitxpress provides structured body data…»: andersonfranconeves, bruno-ciolli, cristianogfontes, douglas-cassimiro"
+  ],
+  [
+   "sentence opening repeated",
+   "Allp Fit ×3",
+   "«this page shows how fitness…»: bruno-ciolli, guilherme-th%c3%a9, luana-luiza-402309185"
+  ],
+  [
+   "sentence opening repeated",
+   "Allp Fit ×4",
+   "«if the member app owner…»: bruno-ciolli, emerson-maida, guilherme-messias-68b34b353, luana-luiza-402309185"
+  ],
+  [
+   "sentence opening repeated",
+   "Allp Fit ×3",
+   "«i can also walk you…»: bruno-ciolli, emerson-maida, luana-luiza-402309185"
+  ],
+  [
+   "sentence opening repeated",
+   "Bodytech Company ×11",
+   "«fitxpress is a white label…»: alan-barcellos-28253019b, diogoevangelista, dudunetto, elisangela-ornellas-953a8824"
+  ],
+  [
+   "sentence opening repeated",
+   "Bodytech Company ×8",
+   "«2 photos on the member's…»: alan-barcellos-28253019b, amanda-ferrari-6b21251aa, diogoevangelista, elisangela-ornellas-953a8824"
+  ],
+  [
+   "sentence opening repeated",
+   "Bodytech Company ×13",
+   "«fitxpress provides structured body data…»: alan-barcellos-28253019b, amanda-ferrari-6b21251aa, b%c3%a1rbara-valente-01898386, diogoevangelista"
+  ],
+  [
+   "sentence opening repeated",
+   "Allp Fit ×4",
+   "«we would count scan completion…»: douglas-cassimiro, guilherme-messias-68b34b353, jeanpcpierre, ricardoferamaral"
+  ],
+  [
+   "sentence opening repeated",
+   "Allp Fit ×6",
+   "«the criteria are set before…»: cristianogfontes, douglas-cassimiro, gabriel-moura-c, guilherme-messias-68b34b353"
+  ],
+  [
+   "sentence opening repeated",
+   "Allp Fit ×3",
+   "«i can go through the…»: cristianogfontes, fabianoveloso, ricardoferamaral"
+  ],
+  [
+   "sentence opening repeated",
+   "Allp Fit ×3",
+   "«fitxpress adds a white label…»: andersonfranconeves, fabianoveloso, luana-luiza-402309185"
+  ],
+  [
+   "sentence opening repeated",
+   "Bodytech Company ×3",
+   "«2 photos on their phone…»: gabrielle-weiss-86962b152, karina-borba-rocha-580152220, melina-de-souza-barbosa"
+  ],
+  [
+   "sentence opening repeated",
+   "Bodytech Company ×3",
+   "«if the member app owner…»: b%c3%a1rbara-valente-01898386, gabrielle-weiss-86962b152, karina-borba-rocha-580152220"
+  ],
+  [
+   "sentence opening repeated",
+   "Bodytech Company ×4",
+   "«on a call i can…»: amanda-ferrari-6b21251aa, b%c3%a1rbara-valente-01898386, elisangela-ornellas-953a8824, tamiris-losso"
+  ],
+  [
+   "sentence opening repeated",
+   "Bodytech Company ×3",
+   "«you are an operations manager…»: amanda-ferrari-6b21251aa, gabrielle-weiss-86962b152, karina-borba-rocha-580152220"
+  ],
+  [
+   "M1 product sentence shared",
+   "Allp Fit ×3",
+   "«x adds a white label scan…»: andersonfranconeves, fabianoveloso, luana-luiza-402309185"
+  ],
+  [
+   "M1 product sentence shared",
+   "Allp Fit ×7",
+   "«x is a white label scan…»: bruno-ciolli, cristianogfontes, douglas-cassimiro, emerson-maida"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "Bodytech Company ×3",
+   "«you are an…»: amanda-ferrari-6b21251aa, gabrielle-weiss-86962b152, karina-borba-rocha-580152220"
+  ],
+  [
+   "M1 product sentence shared",
+   "Bodytech Company ×11",
+   "«x is a white label scan…»: alan-barcellos-28253019b, diogoevangelista, dudunetto, elisangela-ornellas-953a8824"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×11",
+   "«30 and day 90 retention…»: alan-barcellos-28253019b, cristianogfontes, douglas-cassimiro, elisangela-ornellas-953a8824"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×10",
+   "«at the first check in…»: alan-barcellos-28253019b, cristianogfontes, douglas-cassimiro, elisangela-ornellas-953a8824"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×8",
+   "«at onboarding and at the…»: cristianogfontes, douglas-cassimiro, elisangela-ornellas-953a8824, guilherme-messias-68b34b353"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×8",
+   "«the member s own phone…»: alan-barcellos-28253019b, andersonfranconeves, b%c3%a1rbara-valente-01898386, bruno-ciolli"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×6",
+   "«linked to the member profile…»: bruno-ciolli, cristianogfontes, fabianoveloso, luana-luiza-402309185"
+  ]
+ ]
+}

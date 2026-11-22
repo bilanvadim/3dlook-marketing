@@ -1,0 +1,190 @@
+{
+ "campaign": "2026-11-19-latam-connected-fitness",
+ "checked": 15,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-5",
+ "generated": "2026-11-22T10:10:53",
+ "hard": [],
+ "soft": [
+  [
+   "pricing word",
+   "fernandoduartemenezes M1",
+   "Hi Fernando, Selfit's High Value, Low Price model suggests a body check-in that needs no extra hardware."
+  ],
+  [
+   "pricing word",
+   "ggarciacardone M2",
+   "3D Goal Visualization can sit in the same premium tier."
+  ],
+  [
+   "same sentence at one company",
+   "Fitco: andrea-ruiz-cs-kam / mayoralexander",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Fitco: andrea-ruiz-cs-kam / josenobile",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Fitco: andrea-ruiz-cs-kam / dom%c3%a9nica-castagnetto",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Fitco: mayoralexander / dom%c3%a9nica-castagnetto",
+   "«We would count scan completion and retakes, then compare on…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Fitco: mayoralexander / josenobile",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Fitco: josenobile / dom%c3%a9nica-castagnetto",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Megatlon: fernando-storchi-303121124 / marco-storchi-68112a15b",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Selfit: eduardoliedbraun / fernandoduartemenezes",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Selfit: eduardoliedbraun / matheus-gonzaga-aa094420",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Selfit: eduardoliedbraun / diego-brayner-b7976167",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Selfit: eduardoliedbraun / weldon-neto-a61223178",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Selfit: fernandoduartemenezes / matheus-gonzaga-aa094420",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Selfit: fernandoduartemenezes / diego-brayner-b7976167",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Selfit: fernandoduartemenezes / weldon-neto-a61223178",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Selfit: matheus-gonzaga-aa094420 / diego-brayner-b7976167",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Selfit: matheus-gonzaga-aa094420 / weldon-neto-a61223178",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Selfit: diego-brayner-b7976167 / weldon-neto-a61223178",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Sport City: axel-mendoza-874a586a / jos%c3%a9-antonio-su%c3%a1rez-l%c3%b3pez-38b2282ab",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Sport City: axel-mendoza-874a586a / ggarciacardone",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Sport City: axel-mendoza-874a586a / gabriel-ramos-24a16221a",
+   "«We could go through it together on a call.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Sport City: jos%c3%a9-antonio-su%c3%a1rez-l%c3%b3pez-38b2282ab / gabriel-ramos-24a16221a",
+   "«the included assessment repeats on a schedule tie…»"
+  ],
+  [
+   "same sentence at one company",
+   "Sport City: jos%c3%a9-antonio-su%c3%a1rez-l%c3%b3pez-38b2282ab / ggarciacardone",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "sentence opening repeated",
+   "Fitco ×4",
+   "«fitxpress provides structured body data…»: andrea-ruiz-cs-kam, dom%c3%a9nica-castagnetto, josenobile, mayoralexander"
+  ],
+  [
+   "sentence opening repeated",
+   "Selfit ×5",
+   "«fitxpress provides structured body data…»: diego-brayner-b7976167, eduardoliedbraun, fernandoduartemenezes, matheus-gonzaga-aa094420"
+  ],
+  [
+   "sentence opening repeated",
+   "Selfit ×3",
+   "«a short call is the…»: diego-brayner-b7976167, eduardoliedbraun, matheus-gonzaga-aa094420"
+  ],
+  [
+   "sentence opening repeated",
+   "Sport City ×4",
+   "«fitxpress provides structured body data…»: axel-mendoza-874a586a, gabriel-ramos-24a16221a, ggarciacardone, jos%c3%a9-antonio-su%c3%a1rez-l%c3%b3pez-38b2282ab"
+  ],
+  [
+   "sentence opening repeated",
+   "Sport City ×3",
+   "«we could go through it…»: axel-mendoza-874a586a, gabriel-ramos-24a16221a, jos%c3%a9-antonio-su%c3%a1rez-l%c3%b3pez-38b2282ab"
+  ],
+  [
+   "M1 product sentence shared",
+   "Fitco ×2",
+   "«x is a white label sdk…»: dom%c3%a9nica-castagnetto, josenobile"
+  ],
+  [
+   "M1 product sentence shared",
+   "Selfit ×2",
+   "«x adds a check in on…»: diego-brayner-b7976167, fernandoduartemenezes"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "Sport City ×2",
+   "«sport city's included…»: axel-mendoza-874a586a, gabriel-ramos-24a16221a"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×5",
+   "«30 and day 90 retention…»: dom%c3%a9nica-castagnetto, eduardoliedbraun, fernandoduartemenezes, ggarciacardone"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«and at the first check…»: eduardoliedbraun, fernandoduartemenezes, ggarciacardone, mayoralexander"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«linked to the member profile…»: axel-mendoza-874a586a, fernandoduartemenezes, jos%c3%a9-antonio-su%c3%a1rez-l%c3%b3pez-38b2282ab"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×3",
+   "«the member s own phone…»: diego-brayner-b7976167, ggarciacardone, jos%c3%a9-antonio-su%c3%a1rez-l%c3%b3pez-38b2282ab"
+  ]
+ ]
+}

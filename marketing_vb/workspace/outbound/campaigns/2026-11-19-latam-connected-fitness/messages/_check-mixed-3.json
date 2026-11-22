@@ -1,0 +1,715 @@
+{
+ "campaign": "2026-11-19-latam-connected-fitness",
+ "checked": 30,
+ "source": "people-validated.csv (send == SEND)",
+ "batch": "mixed-3",
+ "generated": "2026-11-22T10:10:50",
+ "hard": [],
+ "soft": [
+  [
+   "M2 closing ask repeated",
+   "Tecnofit ×6",
+   "«would a call be a good way to go through the deta…»: matheusdelvalle, josé-eduardo-hunzicker-antunes, rodolfo-jesus-506556203, andersonbc"
+  ],
+  [
+   "near-duplicate sentence",
+   "Tecnofit: matheusdelvalle / andersonbc",
+   "«hi matheus, in your student app, a student sees t…»"
+  ],
+  [
+   "same sentence at one company",
+   "Tecnofit: matheusdelvalle / josé-eduardo-hunzicker-antunes",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Tecnofit: matheusdelvalle / rodolfo-jesus-506556203",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Tecnofit: matheusdelvalle / maganhotte",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Tecnofit: matheusdelvalle / rafaelalaurencini",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Tecnofit: josé-eduardo-hunzicker-antunes / rodolfo-jesus-506556203",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Tecnofit: josé-eduardo-hunzicker-antunes / andersonbc",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Tecnofit: josé-eduardo-hunzicker-antunes / maganhotte",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Tecnofit: josé-eduardo-hunzicker-antunes / rafaelalaurencini",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Tecnofit: rodolfo-jesus-506556203 / andersonbc",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Tecnofit: rodolfo-jesus-506556203 / maganhotte",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Tecnofit: rodolfo-jesus-506556203 / rafaelalaurencini",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Tecnofit: andersonbc / maganhotte",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Tecnofit: andersonbc / rafaelalaurencini",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Tecnofit: maganhotte / rafaelalaurencini",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "BIGG: martin-bottini-3a789014 / octaviobarticciotto",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "BIGG: martin-bottini-3a789014 / gigio-mazzoni-ba358797",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "BIGG: martin-bottini-3a789014 / martin-miauro",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "BIGG: martin-bottini-3a789014 / bautistaleivar",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "BIGG: martin-bottini-3a789014 / francisco-bosch-b0a07233",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "BIGG: martin-bottini-3a789014 / guido-giambruni-295a2a1a2",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "BIGG: octaviobarticciotto / bautistaleivar",
+   "«fitxpress adds a body check-in to the bigg app: t…»"
+  ],
+  [
+   "same sentence at one company",
+   "BIGG: octaviobarticciotto / gigio-mazzoni-ba358797",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "BIGG: octaviobarticciotto / martin-miauro",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "BIGG: octaviobarticciotto / francisco-bosch-b0a07233",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "BIGG: octaviobarticciotto / guido-giambruni-295a2a1a2",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "BIGG: gigio-mazzoni-ba358797 / martin-miauro",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "BIGG: gigio-mazzoni-ba358797 / bautistaleivar",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "BIGG: gigio-mazzoni-ba358797 / francisco-bosch-b0a07233",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "BIGG: gigio-mazzoni-ba358797 / guido-giambruni-295a2a1a2",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "BIGG: martin-miauro / guido-giambruni-295a2a1a2",
+   "«a plan with no body measurement beside it is hard…»"
+  ],
+  [
+   "same sentence at one company",
+   "BIGG: martin-miauro / bautistaleivar",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "BIGG: martin-miauro / francisco-bosch-b0a07233",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "BIGG: bautistaleivar / francisco-bosch-b0a07233",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "BIGG: bautistaleivar / guido-giambruni-295a2a1a2",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "BIGG: francisco-bosch-b0a07233 / guido-giambruni-295a2a1a2",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Spinning Center Gym: xioma / cesar-casallas-8178b07b",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Spinning Center Gym: xioma / ruben-baquero-48b325b3",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Spinning Center Gym: xioma / mauricio-amaya-16644a91",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Spinning Center Gym: xioma / adrian-duque-32b348111",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Spinning Center Gym: xioma / ronald-augusto-campos-836064252",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Spinning Center Gym: xioma / marcela-palencia-rodríguez-5706a5288",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Spinning Center Gym: cesar-casallas-8178b07b / ruben-baquero-48b325b3",
+   "«hi cesar, spinning center includes an assessment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Spinning Center Gym: cesar-casallas-8178b07b / adrian-duque-32b348111",
+   "«hi cesar, spinning center includes an assessment…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Spinning Center Gym: cesar-casallas-8178b07b / marcela-palencia-rodríguez-5706a5288",
+   "«hi cesar, spinning center includes an assessment…»"
+  ],
+  [
+   "same sentence at one company",
+   "Spinning Center Gym: cesar-casallas-8178b07b / ronald-augusto-campos-836064252",
+   "«FitXpress adds a body check-in inside your app.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Spinning Center Gym: cesar-casallas-8178b07b / mauricio-amaya-16644a91",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Spinning Center Gym: ruben-baquero-48b325b3 / adrian-duque-32b348111",
+   "«hi ruben, at spinning center, the assessment with…»"
+  ],
+  [
+   "same sentence at one company",
+   "Spinning Center Gym: ruben-baquero-48b325b3 / marcela-palencia-rodríguez-5706a5288",
+   "«Hi Ruben, At Spinning Center, the assessment with a persona…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Spinning Center Gym: ruben-baquero-48b325b3 / mauricio-amaya-16644a91",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Spinning Center Gym: ruben-baquero-48b325b3 / ronald-augusto-campos-836064252",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Spinning Center Gym: mauricio-amaya-16644a91 / ronald-augusto-campos-836064252",
+   "«hi mauricio, spinning center includes the assessm…»"
+  ],
+  [
+   "same sentence at one company",
+   "Spinning Center Gym: mauricio-amaya-16644a91 / adrian-duque-32b348111",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Spinning Center Gym: mauricio-amaya-16644a91 / marcela-palencia-rodríguez-5706a5288",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Spinning Center Gym: adrian-duque-32b348111 / marcela-palencia-rodríguez-5706a5288",
+   "«hi adrian, at spinning center, the assessment wit…»"
+  ],
+  [
+   "same sentence at one company",
+   "Spinning Center Gym: adrian-duque-32b348111 / ronald-augusto-campos-836064252",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Spinning Center Gym: ronald-augusto-campos-836064252 / marcela-palencia-rodríguez-5706a5288",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Panobianco: rafael-panobianco-466a721a8 / vilma-brasileiro-694677439",
+   "«hi rafael, the app panobianco members use shows e…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Panobianco: rafael-panobianco-466a721a8 / celiamizukosi",
+   "«hi rafael, the app panobianco members use shows e…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Panobianco: rafael-panobianco-466a721a8 / rafael-lucena-46119741b",
+   "«a new body measurement waits for the next club vi…»"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: rafael-panobianco-466a721a8 / fcastromit",
+   "«A new body measurement waits for the next club visit.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: rafael-panobianco-466a721a8 / thyago-alves-carneiro-dos-santos-1b9436128",
+   "«A new body measurement waits for the next club visit.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Panobianco: rafael-panobianco-466a721a8 / natalia-mayumi-ba61ba224",
+   "«fitxpress adds a 2-photo body check-in on the mem…»"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: rafael-panobianco-466a721a8 / guirocha79",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: rafael-panobianco-466a721a8 / wanderson-almeida-1ba352108",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: rafael-panobianco-466a721a8 / tamires-macedo-23965888",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: vilma-brasileiro-694677439 / celiamizukosi",
+   "«Hi Vilma, In the app Panobianco members use, a member sees…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Panobianco: vilma-brasileiro-694677439 / rafael-lucena-46119741b",
+   "«a new body measurement waits for the next club vi…»"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: vilma-brasileiro-694677439 / fcastromit",
+   "«A new body measurement waits for the next club visit.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: vilma-brasileiro-694677439 / thyago-alves-carneiro-dos-santos-1b9436128",
+   "«A new body measurement waits for the next club visit.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Panobianco: vilma-brasileiro-694677439 / guirocha79",
+   "«fitxpress adds a check-in on the member's own pho…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Panobianco: vilma-brasileiro-694677439 / natalia-mayumi-ba61ba224",
+   "«fitxpress adds a check-in on the member's own pho…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Panobianco: vilma-brasileiro-694677439 / tamires-macedo-23965888",
+   "«fitxpress adds a check-in on the member's own pho…»"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: vilma-brasileiro-694677439 / wanderson-almeida-1ba352108",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Panobianco: rafael-lucena-46119741b / fcastromit",
+   "«a new body measurement waits for the next visit t…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Panobianco: rafael-lucena-46119741b / guirocha79",
+   "«fitxpress adds a body check-in on the member's ow…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Panobianco: rafael-lucena-46119741b / thyago-alves-carneiro-dos-santos-1b9436128",
+   "«fitxpress adds a body check-in on the member's ow…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Panobianco: rafael-lucena-46119741b / natalia-mayumi-ba61ba224",
+   "«fitxpress adds a body check-in on the member's ow…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Panobianco: rafael-lucena-46119741b / tamires-macedo-23965888",
+   "«fitxpress adds a body check-in on the member's ow…»"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: rafael-lucena-46119741b / wanderson-almeida-1ba352108",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: rafael-lucena-46119741b / celiamizukosi",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: guirocha79 / fcastromit",
+   "«2 photos return 80+ body measurements and body composition…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Panobianco: guirocha79 / tamires-macedo-23965888",
+   "«2 photos return 80+ body measurements and body co…»"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: guirocha79 / thyago-alves-carneiro-dos-santos-1b9436128",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: guirocha79 / wanderson-almeida-1ba352108",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: guirocha79 / natalia-mayumi-ba61ba224",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: guirocha79 / celiamizukosi",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: fcastromit / thyago-alves-carneiro-dos-santos-1b9436128",
+   "«A new body measurement waits for the next club visit.»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Panobianco: fcastromit / tamires-macedo-23965888",
+   "«2 photos return 80+ body measurements and body co…»"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: fcastromit / wanderson-almeida-1ba352108",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: fcastromit / natalia-mayumi-ba61ba224",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: fcastromit / celiamizukosi",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Panobianco: thyago-alves-carneiro-dos-santos-1b9436128 / natalia-mayumi-ba61ba224",
+   "«fitxpress adds a body check-in inside that app, u…»"
+  ],
+  [
+   "near-duplicate sentence",
+   "Panobianco: thyago-alves-carneiro-dos-santos-1b9436128 / celiamizukosi",
+   "«fitxpress adds a body check-in inside that app, u…»"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: thyago-alves-carneiro-dos-santos-1b9436128 / wanderson-almeida-1ba352108",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: thyago-alves-carneiro-dos-santos-1b9436128 / tamires-macedo-23965888",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "near-duplicate sentence",
+   "Panobianco: wanderson-almeida-1ba352108 / tamires-macedo-23965888",
+   "«hi wanderson, in the app panobianco members use,…»"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: wanderson-almeida-1ba352108 / natalia-mayumi-ba61ba224",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: wanderson-almeida-1ba352108 / celiamizukosi",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: natalia-mayumi-ba61ba224 / tamires-macedo-23965888",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: natalia-mayumi-ba61ba224 / celiamizukosi",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "same sentence at one company",
+   "Panobianco: tamires-macedo-23965888 / celiamizukosi",
+   "«FitXpress provides structured body data for coaching and pr…»: allowed when it fits both (Vadim 2026-11-20)"
+  ],
+  [
+   "sentence opening repeated",
+   "Tecnofit ×3",
+   "«the student takes 2 photos…»: andersonbc, matheusdelvalle, rodolfo-jesus-506556203"
+  ],
+  [
+   "sentence opening repeated",
+   "Tecnofit ×6",
+   "«fitxpress provides structured body data…»: andersonbc, josé-eduardo-hunzicker-antunes, maganhotte, matheusdelvalle"
+  ],
+  [
+   "sentence opening repeated",
+   "Tecnofit ×6",
+   "«would a call be a…»: andersonbc, josé-eduardo-hunzicker-antunes, maganhotte, matheusdelvalle"
+  ],
+  [
+   "sentence opening repeated",
+   "BIGG ×3",
+   "«the member takes 2 photos…»: martin-bottini-3a789014, martin-miauro, octaviobarticciotto"
+  ],
+  [
+   "sentence opening repeated",
+   "BIGG ×7",
+   "«fitxpress provides structured body data…»: bautistaleivar, francisco-bosch-b0a07233, gigio-mazzoni-ba358797, guido-giambruni-295a2a1a2"
+  ],
+  [
+   "sentence opening repeated",
+   "BIGG ×7",
+   "«a call would show how…»: bautistaleivar, francisco-bosch-b0a07233, gigio-mazzoni-ba358797, guido-giambruni-295a2a1a2"
+  ],
+  [
+   "sentence opening repeated",
+   "Spinning Center Gym ×3",
+   "«the member takes 2 photos…»: cesar-casallas-8178b07b, ronald-augusto-campos-836064252, xioma"
+  ],
+  [
+   "sentence opening repeated",
+   "Spinning Center Gym ×7",
+   "«fitxpress provides structured body data…»: adrian-duque-32b348111, cesar-casallas-8178b07b, marcela-palencia-rodríguez-5706a5288, mauricio-amaya-16644a91"
+  ],
+  [
+   "sentence opening repeated",
+   "Spinning Center Gym ×6",
+   "«i can walk through the…»: adrian-duque-32b348111, marcela-palencia-rodríguez-5706a5288, mauricio-amaya-16644a91, ronald-augusto-campos-836064252"
+  ],
+  [
+   "sentence opening repeated",
+   "Spinning Center Gym ×4",
+   "«at spinning center the assessment…»: adrian-duque-32b348111, marcela-palencia-rodríguez-5706a5288, ronald-augusto-campos-836064252, ruben-baquero-48b325b3"
+  ],
+  [
+   "sentence opening repeated",
+   "BIGG ×4",
+   "«fitxpress adds a body check…»: bautistaleivar, gigio-mazzoni-ba358797, guido-giambruni-295a2a1a2, octaviobarticciotto"
+  ],
+  [
+   "sentence opening repeated",
+   "Panobianco ×4",
+   "«a new body measurement waits…»: fcastromit, rafael-lucena-46119741b, rafael-panobianco-466a721a8, vilma-brasileiro-694677439"
+  ],
+  [
+   "sentence opening repeated",
+   "Panobianco ×10",
+   "«fitxpress provides structured body data…»: celiamizukosi, fcastromit, guirocha79, natalia-mayumi-ba61ba224"
+  ],
+  [
+   "sentence opening repeated",
+   "Panobianco ×10",
+   "«a call would show how…»: celiamizukosi, fcastromit, guirocha79, natalia-mayumi-ba61ba224"
+  ],
+  [
+   "sentence opening repeated",
+   "Panobianco ×3",
+   "«in the app panobianco members…»: celiamizukosi, vilma-brasileiro-694677439, wanderson-almeida-1ba352108"
+  ],
+  [
+   "sentence opening repeated",
+   "Panobianco ×5",
+   "«fitxpress adds a check in…»: fcastromit, guirocha79, tamires-macedo-23965888, vilma-brasileiro-694677439"
+  ],
+  [
+   "sentence opening repeated",
+   "Panobianco ×3",
+   "«2 photos return 80+ body…»: fcastromit, guirocha79, vilma-brasileiro-694677439"
+  ],
+  [
+   "sentence opening repeated",
+   "Panobianco ×3",
+   "«fitxpress adds a body check…»: celiamizukosi, rafael-lucena-46119741b, thyago-alves-carneiro-dos-santos-1b9436128"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "BIGG ×2",
+   "«bigg's app picks…»: francisco-bosch-b0a07233, guido-giambruni-295a2a1a2"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "BIGG ×2",
+   "«bigg's app sets…»: martin-bottini-3a789014, martin-miauro"
+  ],
+  [
+   "M1 product sentence shared",
+   "BIGG ×4",
+   "«x adds a body check in…»: bautistaleivar, gigio-mazzoni-ba358797, guido-giambruni-295a2a1a2, octaviobarticciotto"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "Panobianco ×3",
+   "«in the app…»: celiamizukosi, vilma-brasileiro-694677439, wanderson-almeida-1ba352108"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "Panobianco ×2",
+   "«the app panobianco…»: natalia-mayumi-ba61ba224, rafael-panobianco-466a721a8"
+  ],
+  [
+   "M1 product sentence shared",
+   "Panobianco ×3",
+   "«2 photos return 80+ body measurements…»: fcastromit, guirocha79, vilma-brasileiro-694677439"
+  ],
+  [
+   "M1 product sentence shared",
+   "Panobianco ×2",
+   "«x adds a 2 photo body…»: natalia-mayumi-ba61ba224, rafael-panobianco-466a721a8"
+  ],
+  [
+   "M1 product sentence shared",
+   "Panobianco ×3",
+   "«x adds a body check in…»: celiamizukosi, rafael-lucena-46119741b, thyago-alves-carneiro-dos-santos-1b9436128"
+  ],
+  [
+   "M1 product sentence shared",
+   "Panobianco ×4",
+   "«x adds a check in on…»: guirocha79, tamires-macedo-23965888, vilma-brasileiro-694677439, wanderson-almeida-1ba352108"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "Spinning Center Gym ×5",
+   "«at spinning center…»: adrian-duque-32b348111, marcela-palencia-rodríguez-5706a5288, ronald-augusto-campos-836064252, ruben-baquero-48b325b3"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "Spinning Center Gym ×2",
+   "«spinning center includes…»: cesar-casallas-8178b07b, mauricio-amaya-16644a91"
+  ],
+  [
+   "M1 product sentence shared",
+   "Spinning Center Gym ×2",
+   "«the member takes 2 photos on…»: cesar-casallas-8178b07b, ronald-augusto-campos-836064252"
+  ],
+  [
+   "M1 product sentence shared",
+   "Spinning Center Gym ×2",
+   "«x adds a body check in…»: cesar-casallas-8178b07b, ronald-augusto-campos-836064252"
+  ],
+  [
+   "M1 opener shared (first three words)",
+   "Tecnofit ×2",
+   "«in your student…»: matheusdelvalle, rafaelalaurencini"
+  ],
+  [
+   "M1 product sentence shared",
+   "Tecnofit ×2",
+   "«the student takes 2 photos on…»: andersonbc, matheusdelvalle"
+  ],
+  [
+   "M1 product sentence shared",
+   "Tecnofit ×2",
+   "«x is a body scan sdk…»: andersonbc, rodolfo-jesus-506556203"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×17",
+   "«linked to the member profile…»: adrian-duque-32b348111, cesar-casallas-8178b07b, fcastromit, gigio-mazzoni-ba358797"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×12",
+   "«the member s own phone…»: adrian-duque-32b348111, bautistaleivar, guirocha79, marcela-palencia-rodríguez-5706a5288"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«of a member s progress…»: bautistaleivar, cesar-casallas-8178b07b, martin-bottini-3a789014, rafael-lucena-46119741b"
+  ],
+  [
+   "card wording as copy",
+   "campaign ×4",
+   "«whoever decides member app features…»: bautistaleivar, martin-bottini-3a789014, octaviobarticciotto, vilma-brasileiro-694677439"
+  ]
+ ]
+}

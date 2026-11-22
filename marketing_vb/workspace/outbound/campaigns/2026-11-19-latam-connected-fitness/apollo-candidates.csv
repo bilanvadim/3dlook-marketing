@@ -1,270 +1,420 @@
 apollo_id,first_name,last_name_obfuscated,title,apollo_org,domain,company_name,last_refreshed_at,status
-54a290ee7468693cdd0e522c,Edgard,Co***a,Chief Executive Officer - CEO,Smart Fit,smartfit.com.br,Smart Fit,2026-11-08T16:43:52.000+00:00,candidate
-63165e147b243b0001e136cd,Diogo,Co***a,CEO,Smart Fit,smartfit.com.br,Smart Fit,2026-11-09T20:03:48.475+00:00,candidate
-6731869cd9037900017919aa,Rafael,Sa***s,Gerente de Operações Regional,Smart Fit,smartfit.com.br,Smart Fit,2026-10-10T04:49:34.000+00:00,candidate
-66bb87f42b5c4e00013a0191,Samanta,Sa***s,Gerente de Operações Regional,Smart Fit,smartfit.com.br,Smart Fit,2026-10-09T19:53:05.000+00:00,candidate
-557056177369647101921e00,Wellington,Qu***z,Gerente de Operações Regional,Smart Fit,smartfit.com.br,Smart Fit,2026-10-13T11:18:18.000+00:00,candidate
-62441ef6848a0d0001dabdef,Atauata,Si***a,Gerente de Operações Regional,Smart Fit,smartfit.com.br,Smart Fit,2026-10-06T15:27:09.000+00:00,candidate
-682f65164e0b1400017e4661,Flavia,Pi***s,Gerente de Operações de TI,Smart Fit,smartfit.com.br,Smart Fit,2026-11-02T21:57:07.524+00:00,candidate
-64242d44bc19660001d5852c,Felipe,Ca***o,Gerente de Operações de Franquia,Smart Fit,smartfit.com.br,Smart Fit,2026-10-08T18:47:04.000+00:00,candidate
-611a74e75cdacd00014c2cf2,Alexandre,Gr***n,Global CTO,Smart Fit,smartfit.com.br,Smart Fit,2026-10-28T19:04:44.000+00:00,candidate
-6acd9895c09a2d0001f1cde0,Suder,Su***r,sócio,Smart Fit,smartfit.com.br,Smart Fit,2026-09-19T12:07:00.744+00:00,candidate
-630d9124aa89370001f141ac,Paola,Da***n,Gerente de Operaciones Colombia y Panamá,Smart Fit,smartfit.com.br,Smart Fit,2026-10-30T06:48:04.000+00:00,candidate
-5e7e026253d6980001cc7229,Miriane,Bi***r,Gerente Técnica Smart Fit,Smart Fit,smartfit.com.br,Smart Fit,2026-09-27T23:47:11.686+00:00,candidate
-60c2440f11e8370001e2e35c,Leandro,As***o,Operations Director,Smart Fit,smartfit.com.br,Smart Fit,2026-11-06T09:48:49.763+00:00,candidate
-6048d42db9078f0001a58a23,Saturno,So***a,Technical Director,Smart Fit,smartfit.com.br,Smart Fit,2026-10-12T21:06:30.653+00:00,candidate
-66f95ba04404b30001ff1818,Flavia,So***a,Director of Operations,Smart Fit,smartfit.com.br,Smart Fit,2026-11-05T07:08:06.876+00:00,candidate
-54a7489274686975f8da5126,Francisco,Am***l,Sócio | Investidor,Smart Fit,smartfit.com.br,Smart Fit,2026-11-01T07:20:01.000+00:00,candidate
-635415984f7ce700017729df,Lucas,Fl***o,Gerente Técnico - Smart Fit,Smart Fit,smartfit.com.br,Smart Fit,2026-10-29T21:26:04.000+00:00,candidate
-57df85c9a6da980ad8f1cde5,Marcelo,Al***s,Sócio Gestor,Smart Fit,smartfit.com.br,Smart Fit,2026-10-14T15:32:00.000+00:00,candidate
-66f80946a0ad48000104cf72,Mauro,Vi***a,Product Owner,Smart Fit,smartfit.com.br,Smart Fit,2026-11-01T05:38:23.000+00:00,candidate
-60f8f532c019db000181ab60,Antero,Fi***o,Sócio de Franquia,Smart Fit,smartfit.com.br,Smart Fit,2026-11-01T21:26:45.000+00:00,candidate
-57db87b4a6da9868537510e4,Ariane,D'***o,Senior Product Manager | Jornada Social,Smart Fit,smartfit.com.br,Smart Fit,2026-11-04T05:54:32.000+00:00,candidate
-613853933200b00001b183e3,Ciro,Vo***e,Technical Product Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-08T10:41:44.570+00:00,candidate
-5ef27fcc2d13c90001c8c4a0,Gabriela,Si***a,Coordenadora de Parcerias e Patrocínios,Smart Fit,smartfit.com.br,Smart Fit,2026-11-02T08:09:43.000+00:00,candidate
-57db2474a6da984bb0e0dd36,Emerson,Gu***s,COO - Diretor Operacional Franquias - ES. (Grupo ES Fitness),Smart Fit,smartfit.com.br,Smart Fit,2026-10-31T19:12:52.000+00:00,candidate
-68dabcb6d4c64900013b5432,Isabel,To***n,Coordinadora De Alianzas y Patrocinios,Smart Fit,smartfit.com.br,Smart Fit,2026-11-01T08:54:20.000+00:00,candidate
-68b742b3143fc3000142c783,Joel,Fu***s,Coordinador Sistemas e Innovación,Smart Fit,smartfit.com.br,Smart Fit,2026-11-10T11:40:12.964+00:00,candidate
-57d38062f651252c29f1b6be,Phillipp,Ol***a,Product Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-30T21:22:03.000+00:00,candidate
-5e63fe0be8f8b3000184c536,Matheus,Ca***o,Product Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-29T01:06:53.000+00:00,candidate
-57e1a534a6da985747c6b04e,Daniel,To***i,Product Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-01T06:58:41.000+00:00,candidate
-6acde83bc47a1e000113fc55,Alvaro,Fo***i,Product Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-12T14:30:13.875+00:00,candidate
-6742d6e40f726a00013cdbbd,Livia,Ba***a,Product Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-27T00:22:25.000+00:00,candidate
-5e8bfc7652a77e00011e8939,Thalita,Mi***a,Product Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-24T01:26:05.000+00:00,candidate
-621f845e44b4550001d7b79c,Kevin,Lo***z,IT Coordinator,Smart Fit,smartfit.com.br,Smart Fit,2026-10-29T03:06:56.000+00:00,candidate
-5d667b3ff651258867e8dbf1,Cami,Ch***o,Sócia Proprietária Studio Velocity Vitória,Smart Fit,smartfit.com.br,Smart Fit,2026-10-30T07:37:28.000+00:00,candidate
-5e71970b8030240001605de8,Beatriz,Lu***o,Product Owner (PO) - Líder Squad,Smart Fit,smartfit.com.br,Smart Fit,2026-10-06T18:55:19.000+00:00,candidate
-6aed66407d2b0900011c195d,Diogo,Co***a,Executive Director,Smart Fit,smartfit.com.br,Smart Fit,2026-10-29T21:28:24.000+00:00,candidate
-66adc75ba932150001d0b2a2,Gabriel,Au***o,Analista de Parcerias e Patrocínios Sênior,Smart Fit,smartfit.com.br,Smart Fit,2026-10-27T14:08:10.000+00:00,candidate
-62338d2befaef700011986b0,Carolina,Be***t,Product Manager - Global,Smart Fit,smartfit.com.br,Smart Fit,2026-10-08T18:11:47.000+00:00,candidate
-6650f7e0b46a3100019d5c39,Cibele,Si***a,Product Manager Jr,Smart Fit,smartfit.com.br,Smart Fit,2026-11-11T17:23:25.072+00:00,candidate
-6480b20dfa6b7c00017cd4f8,Aredilto,Ju***r,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-31T07:27:49.000+00:00,candidate
-667319530df64500012ed7a4,Jefferson,Cu***a,Operations Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-06T18:34:19.186+00:00,candidate
-5e7764818ce4c50001a37557,Renata,Ol***a,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-09-20T21:59:11.000+00:00,candidate
-61964a1bbfcca700014c2426,Adriana,As***o,Operations Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-02T11:42:14.000+00:00,candidate
-69f30ea2fb938d0001ee6114,Bruno,Si***a,Payments & Billing Product Manager (Technical Focus),Smart Fit,smartfit.com.br,Smart Fit,2026-10-31T16:15:21.000+00:00,candidate
-61383acf821f8e000156f840,Ligia,Te***s,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-04T02:18:22.000+00:00,candidate
-54a3106174686935bec7b951,Aline,Wy***e,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-04T10:58:58.219+00:00,candidate
-54a2ec047468693a7e184a47,Stefano,Vi***s,Group Product Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-31T05:35:15.000+00:00,candidate
-69884f5ba5e7d800016be14b,Jenniffer,Go***s,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-09-17T16:26:28.708+00:00,candidate
-6168f43bcaf08a0001fb945e,Diana,So***a,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-24T04:48:34.000+00:00,candidate
-54a3c9dd7468692cf001e112,Eliane,Ca***o,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-28T20:13:27.000+00:00,candidate
-58b77980f65125f3e779ce2d,Leo,To***s,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-07T01:58:31.000+00:00,candidate
-650dbbeb725ec60001fbf16f,Julian,So***n,Especialista em Expansão Internacional e Inovação,Smart Fit,smartfit.com.br,Smart Fit,2026-10-21T18:16:06.000+00:00,candidate
-64c7ae65a7f5ca000115e1ed,Fernando,Tr***o,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-02T13:42:16.000+00:00,candidate
-63a84f719d9103000158997e,Savio,,Partner,Smart Fit,smartfit.com.br,Smart Fit,2026-10-29T00:28:57.000+00:00,candidate
-613ad9531df00c000148b0b4,Raissa,Co***i,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-09-18T13:24:36.000+00:00,candidate
-5f6b04c35acb600001f0a63d,Jaqueline,Pa***a,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-02T16:11:35.000+00:00,candidate
-6721cd815bf6d40001560f10,Inajara,He***e,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-06T15:24:53.000+00:00,candidate
-64297415962af20001165993,Isadora,Me***s,Operations Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-03T02:39:51.000+00:00,candidate
-6887c501a61f1c000134372b,Liliam,Su***o,Operations Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-09-04T22:17:13.424+00:00,candidate
-63d64f9444da6d0001d6a433,Jonathan,Pe***i,Technical Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-29T12:01:50.000+00:00,candidate
-6357d19982fb880001f3972c,Tiago,Se***e,Operations Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-29T12:29:16.000+00:00,candidate
-64c7982aa9d7db00016d6ba3,Talita,Co***o,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-28T21:03:05.000+00:00,candidate
-64d6ad9f27bb560001215793,Pedro,Fi***s,Sr Product Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-02T15:37:48.000+00:00,candidate
-69be13e52f1306000174b74a,Veronica,Fe***i,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-09-19T02:07:52.000+00:00,candidate
-55dd1106f3e5bb57a40012ae,Carolina,Vi***o,Senior Product Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-26T20:19:19.000+00:00,candidate
-6480b4b41bcb0d0001d6075b,Carla,Cr***z,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-13T05:41:24.000+00:00,candidate
-5aa81bcaa6da98ccbdb154e7,Paulo,Si***s,Technical Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-06T14:17:54.000+00:00,candidate
-672069fb75ffcf0001dd6985,Diego,Ol***a,Associate Product Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-25T15:49:38.000+00:00,candidate
-6006e6cc26f78c000139e9ae,Roberta,Gi***z,"Group Product Manager, Growth",Smart Fit,smartfit.com.br,Smart Fit,2026-10-01T14:44:41.000+00:00,candidate
-642ab215f70205000182b53b,Edler,Fa***d,Regional Operations Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-28T04:25:12.144+00:00,candidate
-61b453e14e563800012dc61e,Alanys,Ol***a,Ticket Operations Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-28T19:05:43.000+00:00,candidate
-614d441f1bde26000161de66,Fabricio,Go***s,National Operations Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-02T16:01:22.000+00:00,candidate
-687b99615d143f0001510309,Pedro,Ma***o,Regional Operations Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-15T06:54:41.000+00:00,candidate
-6167d663d762250001c2e0c1,Lizeth,Mu***z,Lic. Comunicación Social,Smart Fit,smartfit.com.br,Smart Fit,2026-10-09T10:29:08.169+00:00,candidate
-674335144c84de000194d479,Pablo,Ro***z,Director Programa Fitness,Smart Fit,smartfit.com.br,Smart Fit,2026-06-21T05:15:08.000+00:00,candidate
-6650b9183bc4180001f44509,Sebastian,Ma***e,Regional Operations Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-03T03:00:29.000+00:00,candidate
-54c275b07468697af750df9b,Nathalia,Li***a,Head Martech & Data,Smart Fit,smartfit.com.br,Smart Fit,2026-10-26T20:17:40.371+00:00,candidate
-5dd0eb3a0ebc7b00016b25f1,Luiza,Di***s,Coordenadora de Produtos | Staff Product Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-06T08:42:29.000+00:00,candidate
-6116bcd0f519ef0001d7031f,Valter,So***l,"Gerente de TI Latam - Segurança, Infraestrutura, Operações, Projetos, Expansão.",Smart Fit,smartfit.com.br,Smart Fit,2026-11-03T02:20:37.158+00:00,candidate
-54eba506746869431148f704,Dafny,Do***a,General Product Manager na Smart Fit,Smart Fit,smartfit.com.br,Smart Fit,2026-11-14T09:11:20.730+00:00,candidate
-6425c5885e22ec00015e1063,Camila,Oy***o,Técnico en Trabajo Social,Smart Fit,smartfit.com.br,Smart Fit,2026-10-23T17:11:32.729+00:00,candidate
-60e29ea1078ae80001f71dec,Raissa,Bi***r,Global Head of Mkt and Product,Smart Fit,smartfit.com.br,Smart Fit,2026-11-13T03:04:15.200+00:00,candidate
-63e3b620ab17c0000159b0b9,Larissa,Luz,Product Manager de Meios de Pagamentos,Smart Fit,smartfit.com.br,Smart Fit,2026-09-30T07:20:21.000+00:00,candidate
-663cf4f2c9cfef00010c381f,Vanessa,Re***a,Social Data Intelligence & Insights Specialist,Smart Fit,smartfit.com.br,Smart Fit,2026-11-04T01:00:40.000+00:00,candidate
-6258645d531146000115081c,Mariane,Fa***o,HR Business Partner,Smart Fit,smartfit.com.br,Smart Fit,2026-10-29T11:55:38.000+00:00,candidate
-68a213f06811a2000194c1ab,Amine,Li***i,Head of IT,Smart Fit,smartfit.com.br,Smart Fit,2026-10-14T17:54:58.000+00:00,candidate
-57d9e478a6da987668f4a2f1,Jackson,Ca***o,HR Business Partner Especialista,Smart Fit,smartfit.com.br,Smart Fit,2026-11-02T15:16:24.000+00:00,candidate
-63591841dd990000018ec08b,Marina,Ma***s,Analista Pleno de Social Media | BEON Studios,Smart Fit,smartfit.com.br,Smart Fit,2026-11-01T05:13:45.000+00:00,candidate
-5d27729df65125afcb95c75b,Cliff,Ma***l,Product Marketing Coordinator - Brazil & Latam Partner,Smart Fit,smartfit.com.br,Smart Fit,2026-09-19T06:32:46.000+00:00,candidate
-5d3b931b80f93e58355483cc,Rodolfo,Ru***m,Sr. Digital Analytics - Brazil & Latam Partner,Smart Fit,smartfit.com.br,Smart Fit,2026-11-01T16:30:34.000+00:00,candidate
-5ffa3616aea59b0001f0590e,Isabel,Fi***o,Head of IT Business Applications,Smart Fit,smartfit.com.br,Smart Fit,2026-11-05T19:56:44.000+00:00,candidate
-69fc4a755fef940001a7e081,Imran,Ma***g,"Hello! I’m MD Imran, a Student of Smart Success IT School, Currently Learning the Foundations of Digital Marketing. I’m Passionate About Building a Career in the World",Smart Fit,smartfit.com.br,Smart Fit,2026-09-21T23:22:01.000+00:00,candidate
-61975895be0f0000011c493f,Jeanny,Nu***s,Associate Product Marketing Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-07-31T11:12:01.000+00:00,candidate
-614e957f3ca1a100016e0dcc,Vera,Pa***n,IT Project Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-07T01:31:38.870+00:00,candidate
-6284840fba5e5a00018784e5,Renato,Ne***s,IT Project Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-24T06:43:25.354+00:00,candidate
-68779c355481840001d030d1,Tiago,Ru***z,IT Project Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-14T11:34:42.000+00:00,candidate
-57d37c67f651252c29f17970,Caique,Pi***o,"Technology, Data & AI Manager",Smart Fit,smartfit.com.br,Smart Fit,2026-10-17T00:47:40.920+00:00,candidate
-54a5bfb674686932098a4ca5,Camilo,Sa***r,"CEO Cluster Andino (CO, PE, EC, PA, CR, HO)",Smart Fit,smartfit.com.br,Smart Fit,2026-10-29T14:36:29.000+00:00,candidate
-66a5bb3c78fdbe00013d6386,Yasmin,Ma***s,Gerente de Produtos e Receitas Adicionais,Smart Fit,smartfit.com.br,Smart Fit,2026-09-18T03:48:13.000+00:00,candidate
-64805c25dcdc1c0001495e7d,Ingrid,Ca***a,Gerente Pleno Academia Smart Fit,Smart Fit,smartfit.com.br,Smart Fit,2026-11-02T06:37:40.000+00:00,candidate
-6ad715339326fa0001d7ef4a,Higor,Du***e,Gerente de Fitness,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-27T11:47:40.000+00:00,candidate
-64c7bcea6777ba0001214e17,Nayana,Ro***a,Gerente Técnica,Bluefit Academia,bluefit.com.br,Bluefit,2026-09-18T05:07:59.000+00:00,candidate
-60fe05cadfd72e0001940a3f,Diego,Ta***s,Diretor de Operações | Franquia Bluefit,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-02T05:09:05.000+00:00,candidate
-6481f280c65347000147b516,Edson,Sa***s,Gerente de Operações Regional,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-01T14:17:26.000+00:00,candidate
-67d269cdfb05050001b5b78e,Alessandra,Se***f,CEO,Bluefit Academia,bluefit.com.br,Bluefit,2026-11-01T21:32:50.000+00:00,candidate
-54a53ce474686938acf12e88,Marcel,Va***i,Diretor Executivo de Expansão,Bluefit Academia,bluefit.com.br,Bluefit,2026-11-02T03:55:40.000+00:00,candidate
-67229d493a72740001aad373,Rafael,Se***i,Diretor Executivo Jurídico e Compliance | General Counsel,Bluefit Academia,bluefit.com.br,Bluefit,2026-11-01T15:01:08.402+00:00,candidate
-54a3e6ba7468693676104b1c,Talita,Ar***o,Sócia Bluefit Brasília,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-28T19:13:28.000+00:00,candidate
-68339160691f82000123cee8,Tarcisio,Ol***a,Technical Coordinator,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-07T00:57:32.000+00:00,candidate
-57daa9a5a6da984a3c2555ce,Marcelle,Mo***o,Gerente Geral Técnica,Bluefit Academia,bluefit.com.br,Bluefit,2026-09-30T00:06:03.000+00:00,candidate
-57dc7efaa6da987d6817417d,Luciane,Ga***a,GRO Gerente Regional de Operações,Bluefit Academia,bluefit.com.br,Bluefit,2026-09-23T04:55:29.000+00:00,candidate
-69d7593e6eaf430001f5039a,Adriano,So***a,Operational Manager,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-14T06:08:11.000+00:00,candidate
-5cec26a8f65125f94a89cd50,Tiago,Na***o,Gerente Regional de Operações MS - MT,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-28T19:46:10.000+00:00,candidate
-5d5ef137a3ae612dd7cf9545,Igor,So***a,Gerente Executivo Técnico,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-24T02:43:29.000+00:00,candidate
-662a10a3ba33520007f88cea,Bruna,Ra***o,General Operations Manager,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-23T23:58:37.000+00:00,candidate
-54ec16867468694311c54c4d,Marcelo,Sa***i,Sócio Administrador Bluefit Aquarius e Vale Sul,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-28T20:44:49.000+00:00,candidate
-66b7617fe2bed60001a8e03d,Fabricio,So***o,Gerente Regional Técnico,Bluefit Academia,bluefit.com.br,Bluefit,2026-09-19T06:07:35.000+00:00,candidate
-5d66a0cef65125a12c4e236e,Daisy,Ma***s,General Operations Manager,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-15T06:57:23.000+00:00,candidate
-615d20a951ab700001c98b07,Patricia,Ro***a,General Operations Manager,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-12T21:01:11.475+00:00,candidate
-5f536d371237a600012e8bd6,Solange,Al***s,Regional Operations Manager,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-24T05:50:08.000+00:00,candidate
-6434115cdac1050001c72ffd,Juliana,Sa***o,Regional Operations Manager,Bluefit Academia,bluefit.com.br,Bluefit,2026-11-01T22:17:50.000+00:00,candidate
-68af2f8b0b89730001ac37ce,Gabriel,Be***i,Regional Operations Manager,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-13T21:52:54.000+00:00,candidate
-625ad8d562990300014bd195,Caio,Mi***a,Regional Operations Manager,Bluefit Academia,bluefit.com.br,Bluefit,2026-11-04T23:06:43.326+00:00,candidate
-5be98729f65125960e7a437b,Emanuel,Mo***a,"Sócio Proprietário - Bluefit Venâncio, DF Plaza, Samambaia, Messejana e Caucaia",Bluefit Academia,bluefit.com.br,Bluefit,2026-10-30T22:47:58.000+00:00,candidate
-6358bf1e546acf0001461928,Julia,Fa***i,HR Business Partner,Bluefit Academia,bluefit.com.br,Bluefit,2025-07-02T13:35:56.032+00:00,candidate
-6353ec195dc39e00014c1c93,Sarah,Mo***s,Gerente de Marketing | Social Media · Design · Videomaker,Bluefit Academia,bluefit.com.br,Bluefit,2026-11-04T18:29:12.691+00:00,candidate
-60d42126c3e0bd00014c4fc0,Laryssa,Ana,Analista G&G SR. - Business Partner,Bluefit Academia,bluefit.com.br,Bluefit,2026-09-19T03:09:00.000+00:00,candidate
-64ed0e90a4d6ff0001890cd4,Elson,Te***o,Head de Dados e IA,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-14T12:09:44.000+00:00,candidate
-68237c43a3c3040001ccec8f,Fernando,Me***s,CEO - Chief Executive Officer,SELFIT Academias,selfitacademias.com.br,Selfit,2026-11-05T13:57:12.000+00:00,candidate
-57ddc2e6a6da987aec21fb46,Eduardo,Br***n,Operations Director,SELFIT Academias,selfitacademias.com.br,Selfit,2026-11-01T00:49:29.000+00:00,candidate
-614d558cf6430c00013882a1,Bianca,D`***a,Technical Coordinator,SELFIT Academias,selfitacademias.com.br,Selfit,2026-09-19T22:58:12.000+00:00,candidate
-54a2f6f974686938253d8d4a,Matheus,Go***a,Sócio Franqueado (Investidor),SELFIT Academias,selfitacademias.com.br,Selfit,2026-11-16T12:53:53.782+00:00,candidate
-54a26cae74686935be5ff721,Diego,Br***r,Sócio de Franquia,SELFIT Academias,selfitacademias.com.br,Selfit,2026-10-06T16:06:33.000+00:00,candidate
-54a297d37468693318e01d2e,Nilton,Ca***o,IT Coordinator,SELFIT Academias,selfitacademias.com.br,Selfit,2026-11-12T15:17:21.076+00:00,candidate
-6167dcdaae58ac0001481bfe,Esdras,Li***a,Technical Manager,SELFIT Academias,selfitacademias.com.br,Selfit,2026-11-02T19:51:11.000+00:00,candidate
-64243eb80d84600001877f4c,Jose,Ma***o,Technical Manager,SELFIT Academias,selfitacademias.com.br,Selfit,2026-10-07T10:32:44.000+00:00,candidate
-6068e504b61b420001e56b52,Sabrina,Bo***s,Technical Manager,SELFIT Academias,selfitacademias.com.br,Selfit,2026-11-02T18:29:26.000+00:00,candidate
-6734802ad3fb940001034d25,Agnes,So***a,Technical Manager,SELFIT Academias,selfitacademias.com.br,Selfit,2026-10-10T16:18:04.000+00:00,candidate
-6481e4bc8d75000001606816,Fernando,An***s,Technical Manager,SELFIT Academias,selfitacademias.com.br,Selfit,2026-11-01T03:26:42.000+00:00,candidate
-698da83bf13fe9000166e50c,Jose,Ma***o,Technical Manager,SELFIT Academias,selfitacademias.com.br,Selfit,2026-10-08T13:10:32.000+00:00,candidate
-665b759a240e670001527615,Ryan,Je***n,Technical Manager,SELFIT Academias,selfitacademias.com.br,Selfit,2026-11-05T11:04:15.000+00:00,candidate
-6ab09ec184c374000140d53f,Washington,Ju***r,Technical Manager,SELFIT Academias,selfitacademias.com.br,Selfit,2026-10-30T21:49:06.841+00:00,candidate
-6481beab421fa30001e834ce,Julia,Si***a,Technical Manager,SELFIT Academias,selfitacademias.com.br,Selfit,2026-10-28T20:00:32.000+00:00,candidate
-69fab296f99e4c00012807d8,Vinicius,Pa***o,Technical Manager,SELFIT Academias,selfitacademias.com.br,Selfit,2026-10-29T01:58:46.000+00:00,candidate
-697daddd5a1a760001f2e909,Bruno,Ce***r,Technical Manager,SELFIT Academias,selfitacademias.com.br,Selfit,2026-10-07T03:33:41.000+00:00,candidate
-5e6695aaa143b3000140110f,Diego,Vi***r,3x Startup Founder,SELFIT Academias,selfitacademias.com.br,Selfit,2026-11-01T00:08:23.300+00:00,candidate
-6153e388e349c70001ac136f,Weldon,Ne***o,Coordenador de Treinamento,SELFIT Academias,selfitacademias.com.br,Selfit,2026-09-24T05:50:39.000+00:00,candidate
-68e2bcdf8171e500016e33b8,Gustavo,Me***s,Chief Executive Officer,Academia Gaviões 24h,academiagavioes.com.br,Academia Gaviões 24h,2026-11-02T18:41:23.000+00:00,candidate
-5e78671c22a69100011b56b7,Bruno,Vi***o,Head of Operations,Academia Gaviões 24h,academiagavioes.com.br,Academia Gaviões 24h,2026-10-06T16:18:36.000+00:00,candidate
-69b5c3c523f6500001c4840d,Priscila,Ag***r,CEO na Franquia Academia Gaviões 24 Horas,Academia Gaviões 24h,academiagavioes.com.br,Academia Gaviões 24h,2026-11-07T11:20:24.000+00:00,candidate
-5fe2203f717f1f0001c88587,Rodrigo,Al***s,Business Development Manager,Academia Gaviões 24h,academiagavioes.com.br,Academia Gaviões 24h,2026-11-12T12:48:05.611+00:00,candidate
-6855b457e4f46e00015427d0,Daniel,Ag***r,Executivo de Tecnologia / Sócio Proprietário,Academia Gaviões 24h,academiagavioes.com.br,Academia Gaviões 24h,2026-11-06T00:33:33.000+00:00,candidate
-54abbf177468692a6b1f820a,Giselle,Vi***a,Operational Manager,Academia Gaviões 24h,academiagavioes.com.br,Academia Gaviões 24h,2026-10-07T09:15:13.000+00:00,candidate
-64ef0c5f2ef3b00001e4b88e,Guilherme,Ol***a,Operational Manager,Academia Gaviões 24h,academiagavioes.com.br,Academia Gaviões 24h,2026-10-07T19:57:03.000+00:00,candidate
-5e6354ebf6194a0001047654,Michelle,Eu***o,Owner Partner,Academia Gaviões 24h,academiagavioes.com.br,Academia Gaviões 24h,2026-10-06T15:51:02.000+00:00,candidate
-69da087ae4150500013f276a,Francielle,Wa***e,Social Media Analyst,Academia Gaviões 24h,academiagavioes.com.br,Academia Gaviões 24h,2026-10-27T00:21:05.000+00:00,candidate
-54c29ea97468697af71e42b1,Wellington,Mo***a,IT Manager,Academia Gaviões 24h,academiagavioes.com.br,Academia Gaviões 24h,2026-10-16T07:45:09.000+00:00,candidate
-684dd96f6c68600001b58308,Samuel,Cr***z,Gerente de TI Sênior - Head de TI e Transformação Digital,Academia Gaviões 24h,academiagavioes.com.br,Academia Gaviões 24h,2026-10-18T02:57:35.000+00:00,candidate
-6ad70d359325d4000170db33,Erick,Ca***n,Nutritionist,Academia Gaviões 24h,academiagavioes.com.br,Academia Gaviões 24h,2026-11-04T00:38:32.000+00:00,candidate
-66e7215e2ef1600001bf7ccf,Glauber,Ma***a,COO (Chief Operating Officer),Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-11-04T02:30:42.000+00:00,candidate
-5f0d02ca9205530001771bd4,Tadeu,Pr***e,CEO,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-11-02T23:07:23.000+00:00,candidate
-660af82bca59eb00078271c8,Adriano,Ma***a,Operations Director,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-09T14:18:07.000+00:00,candidate
-6490422fc1eb3400015931ca,Vladmir,Te***),Sócio/Coordenador,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-11-01T04:03:55.000+00:00,candidate
-668cfa989e765d00016ee5ac,Eduardo,Ma***s,Consultor de Inovação,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-11-02T05:11:56.000+00:00,candidate
-6a85c0c216b5e70001a5667e,Diego,Sa***o,Sócio e Mentor,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-27T04:51:45.043+00:00,candidate
-672b9d5c7611bb0001a1749d,Anderson,Te***a,Partner,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-11-01T22:27:23.000+00:00,candidate
-5ac86c69a6da98411c460e62,Vladimir,Si***a,Sócio-Diretor dos Estúdios Personal Class,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-16T00:20:13.000+00:00,candidate
-6aad188113dc890001878584,Daniel,Ri***o,Operational Manager,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-01T01:31:45.000+00:00,candidate
-68ca58723180b40001304684,Ionara,Ca***o,Operational Manager,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-10T12:04:22.000+00:00,candidate
-6741941207b6b30001319af2,Dayth,Ba***a,Operational Manager,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-02T05:14:15.000+00:00,candidate
-684d1a85dd752f0001d926c8,Bryan,Ro***a,Gerente Líder de Equipe na Pratique Fitness,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-13T14:36:41.000+00:00,candidate
-64595993de06170001aed800,Narriman,Ro***a,Social Media Content Creator,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-18T08:23:33.000+00:00,candidate
-67209b04534a7500011e784d,Roseane,Fa***a,Nutritionist,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-09T18:26:56.000+00:00,candidate
-614d61e2042aea00018b2f10,Fernanda,Qu***a,Nutritionist,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-21T02:54:03.807+00:00,candidate
-66a6981ab2f3d50001ac02bb,Natalie,Ha***s,Nutritionist,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-31T00:54:18.000+00:00,candidate
-67205651c1aa700001f3daee,Debora,Di***z,Nutritionist,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-06T15:05:52.000+00:00,candidate
-69cf9431b63f890001d2cec5,Fernanda,Sa***s,Nutritionist,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-10T05:29:56.000+00:00,candidate
-673a1947266f8a0001ecf312,Samanta,Fe***a,Nutritionist,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-01T11:18:52.000+00:00,candidate
-64ef16dac9a8e00001bc356d,Isabelle,Vi***a,Nutritionist,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-07T00:43:15.000+00:00,candidate
-64809961149dea0001c221ff,Geraldinho,Pr***e,Gestor Na Academia Pratique Fitness,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-13T10:13:46.000+00:00,candidate
-57dfc10ea6da980acde44e92,Slim,Da***e,CEO,Sport City,sportcity.com.mx,Sport City,2026-10-25T09:40:15.000+00:00,candidate
-5e7adb5490939d0001258cb9,Axel,Me***a,Fitness Director,Sport City,sportcity.com.mx,Sport City,2026-10-18T21:41:10.851+00:00,candidate
-613ad56f6ada54000193290c,Fernando,He***z,Líder de Alianzas Comerciales Jr,Sport City,sportcity.com.mx,Sport City,2026-10-18T00:12:58.423+00:00,candidate
-6232226dae6b8400014fc812,Chalee,Du***d,Social Media Manager,Sport City,sportcity.com.mx,Sport City,2025-10-20T13:08:36.782+00:00,candidate
-671c9ca405a0f500019a1b6e,Gabriela,Za***o,Directora de Business Development y Marketing,Sport City,sportcity.com.mx,Sport City,2026-11-13T20:54:50.275+00:00,candidate
-6798a38c0c1f6f000121c2d7,Xico,Ra***s,Social Media Coordinator,Sport City,sportcity.com.mx,Sport City,2026-10-14T23:55:29.000+00:00,candidate
-679ec3ace029ac00012ff44d,Rodrigo,Ca***o,Head Coach Fitness Trainer,Sport City,sportcity.com.mx,Sport City,2026-07-27T04:56:52.842+00:00,candidate
-62c8fd01ae11880001cd1de7,Gabriel,Ra***s,General Manager of Operations,Sport City,sportcity.com.mx,Sport City,2026-06-22T21:57:33.000+00:00,candidate
-54ec2595746869444ce01059,Tayrin,Az***a,Graduate in Nutrition,Sport City,sportcity.com.mx,Sport City,2026-10-15T18:17:14.000+00:00,candidate
-674397a03404fb00019d98f5,Jonathan,Lo***z,Nutritionist,Sport City,sportcity.com.mx,Sport City,2026-11-04T03:00:40.000+00:00,candidate
-671c7539057ee90001af2698,Giselle,Ga***a,Subdirección de Producto y MKT,Sport City,sportcity.com.mx,Sport City,2026-10-29T13:38:08.000+00:00,candidate
-5c37a3fb80f93e847bd6741c,Rocio,Na***o,Nutritionist,Sport City,sportcity.com.mx,Sport City,2026-11-12T05:13:41.289+00:00,candidate
-613af66dc31cbf000197de58,Paulina,Ma***n,Nutricionista en Sport City,Sport City,sportcity.com.mx,Sport City,2026-11-10T08:20:17.186+00:00,candidate
-54eb13a774686931e20ff407,Cecilia,Ga***o,Nutritionist,Sport City,sportcity.com.mx,Sport City,2026-10-15T01:59:26.000+00:00,candidate
-57db3253a6da984bac22129b,Jesica,Ga***a,Nutritionist,Sport City,sportcity.com.mx,Sport City,2026-10-16T19:07:49.723+00:00,candidate
-5d53385780f93e8e80167b94,Issamar,An***l,Nutritionist,Sport City,sportcity.com.mx,Sport City,2026-11-10T12:52:44.275+00:00,candidate
-673595a28fa8fe000127fe36,Luis,En***s,Operations,Sport City,sportcity.com.mx,Sport City,2026-06-22T22:46:19.000+00:00,candidate
-63a551f50044f400019367de,Katya,Go***z,Nutricionista en Sport City,Sport City,sportcity.com.mx,Sport City,2026-11-02T05:02:00.522+00:00,candidate
-6429af1824825100019cf05d,Sara,Ch***z,Nutritionist,Sport City,sportcity.com.mx,Sport City,2026-08-30T00:09:54.000+00:00,candidate
-57dbac42a6da98686b296d1c,Beatriz,Ad***e,Nutritionist,Sport City,sportcity.com.mx,Sport City,2026-10-14T00:10:50.543+00:00,candidate
-57dbb26da6da98689b421530,Olga,Hd***z,Operations Management,Sport City,sportcity.com.mx,Sport City,2026-06-20T20:43:42.000+00:00,candidate
-683bdeb93d033d000113bfd5,Lorena,Cr***z,Nutritionist,Sport City,sportcity.com.mx,Sport City,2026-08-14T04:23:35.000+00:00,candidate
-677216720161b5000141e232,Alicia,Ba***t,Nutritionist,Sport City,sportcity.com.mx,Sport City,2026-10-11T02:21:09.870+00:00,candidate
-635536c79c3ae00001bc48d9,Erick,Ri***s,Nutritionist,Sport City,sportcity.com.mx,Sport City,2026-06-24T07:48:59.000+00:00,candidate
-645a1fa03909d4000177f7e3,Ruben,Le***e,Nutrition,Sport City,sportcity.com.mx,Sport City,2026-09-30T15:03:21.829+00:00,candidate
-63daece7c712b6000144e92e,Carola,Pr***a,Nutritionist,Sport City,sportcity.com.mx,Sport City,2026-10-18T16:55:30.929+00:00,candidate
-636e484efa58b30001617cd0,Tomasz,Ml***k,Założyciel i Szef Firmy,Sport City,sportcity.com.mx,Sport City,2026-10-25T19:56:24.000+00:00,candidate
-66ef3130408fa1000192ebe4,Fernando,St***i,Fundador & CEO,Megatlon,megatlon.com,Megatlon,2026-11-02T10:38:45.000+00:00,candidate
-600ce5a92deff700013592e2,Marco,St***i,Director of Operations,Megatlon,megatlon.com,Megatlon,2026-10-28T19:44:45.000+00:00,candidate
-54a44d5874686936765bcd3c,Pablo,Ga***i,Operations Manager,Megatlon,megatlon.com,Megatlon,2026-11-04T14:36:09.000+00:00,candidate
-696a4ac7900c9a0001b08a69,Sport,Cl***b,Gerente de Fitness,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-17T02:16:32.000+00:00,candidate
-66fe65f7cf38fb00018750db,Gerardo,Di***z,Director de Operaciones de Sucursal,SportClub Oficial,sportclub.com.ar,SportClub,2026-11-01T10:30:36.000+00:00,candidate
-61386ead39f2b80001f8d6e9,Renata,Ca***s,Ejecutiva de Alianzas,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-12T06:07:51.000+00:00,candidate
-54c1d7fd746869163991cd4f,Romina,Ra***e,Area Comercial-Alianzas Empresas,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-10T07:02:40.000+00:00,candidate
-668f068da12ef40001c6f16b,Matias,Po***r,Jefe Comercial Alianzas con Clubes,SportClub Oficial,sportclub.com.ar,SportClub,2026-11-08T09:05:27.912+00:00,candidate
-64807fedf91f1d00013f09aa,Natalia,Ge***z,Atecion al Socio,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-06T22:55:49.000+00:00,candidate
-54a2f0c97468693318831448,Pablo,Si***i,Product Manager,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-31T05:35:18.000+00:00,candidate
-5efb0dd1dcae85000111a72a,Danila,Ma***i,New Business Development,SportClub Oficial,sportclub.com.ar,SportClub,2026-11-02T16:33:35.000+00:00,candidate
-695ac2a303ed9c0001e259e7,Ignacio,Ca***a,Analista Comercial de Alianzas con Clubes,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-14T13:00:58.000+00:00,candidate
-5d6b0691f6512508fb1d3848,Pablo,Fe***h,Partner,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-07T10:53:36.000+00:00,candidate
-614d9852de836b0001d0b167,Candela,Cu***a,Social Media Manager,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-26T20:07:39.000+00:00,candidate
-5d6abfb7f5106c0001d74bda,Gustavo,Pr***o,Partner Manager,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-13T15:59:55.248+00:00,candidate
-61eb81ca33a28e000119aa7c,Diego,Pa***o,Managing Partner,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-08T21:59:03.000+00:00,candidate
-6480c2a0cf944e0001cfc003,Merlina,Mu***i,Nutricionista SportClub Norcenter,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-13T16:21:52.000+00:00,candidate
-61275ee17eff950001973d6a,Angeles,La***s,Nutritionist,SportClub Oficial,sportclub.com.ar,SportClub,2026-09-23T12:58:07.000+00:00,candidate
-5ee4c03ca1314d0001d5f9c7,Ana,Ca***o,Nutritionist,SportClub Oficial,sportclub.com.ar,SportClub,2026-09-20T10:14:13.000+00:00,candidate
-61f56233e4a2910001525268,Silvina,Fa***i,Nutritionist,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-26T20:15:00.000+00:00,candidate
-63dabb6ab246770001faa636,Jimena,Ca***i,Graduate in Nutrition,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-14T03:14:11.000+00:00,candidate
-6735babacc00ef000109ad7c,Alejandro,Go***z,Jefe Técnico de Depósito,SportClub Oficial,sportclub.com.ar,SportClub,2026-09-20T10:14:01.000+00:00,candidate
-66ee48020e5743000124ce8f,Emilio,Ga***a,Licenciado en Nutrición,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-25T14:19:57.000+00:00,candidate
-6a6e9fd75b76db00019e2b39,Luana,Or***z,Nutritionist,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-10T03:48:53.000+00:00,candidate
-6ad1ec0d8236ef0001d5b5ed,Anderson,Ci***n,CTO,Tecnofit,tecnofit.com.br,Tecnofit,2026-11-06T22:19:47.530+00:00,candidate
-5f106b198839dc0001c1511a,Gustavo,Ar***o,Chief Operating Officer,Tecnofit,tecnofit.com.br,Tecnofit,2026-11-04T00:17:01.000+00:00,candidate
-60dc6e2df4e47d000196db84,Jose,An***s,Head de Parcerias,Tecnofit,tecnofit.com.br,Tecnofit,2026-10-25T15:26:36.000+00:00,candidate
-54a79409746869682948b241,Matheus,Va***e,Head of Product and Engineering,Tecnofit,tecnofit.com.br,Tecnofit,2026-11-02T07:58:38.000+00:00,candidate
-54a2ceba7468693cddd5573e,Rafaela,La***i,Product Manager,Tecnofit,tecnofit.com.br,Tecnofit,2026-11-04T15:34:38.000+00:00,candidate
-601b917a723d160001bc2319,Antonio,Ju***r,Chairperson & Co-founder,Tecnofit,tecnofit.com.br,Tecnofit,2026-11-05T09:54:38.000+00:00,candidate
-69ba67fd6b2aeb0001e7804e,Luiz,La***s,Bdr/sdr - Business Development Representative Pleno,Tecnofit,tecnofit.com.br,Tecnofit,2026-10-06T15:35:36.000+00:00,candidate
-5f594cae602b83000127f582,Fernanda,Sa***s,BDR | Business Development Representative Pleno II | Tecnofit,Tecnofit,tecnofit.com.br,Tecnofit,2026-11-04T17:05:54.000+00:00,candidate
-614ebef9b1672100019fe9c4,Kauana,Ma***s,Analista de Social Media Pleno I,Tecnofit,tecnofit.com.br,Tecnofit,2026-10-15T07:16:10.000+00:00,candidate
-5ffd6d57f8276700015636f0,Gleidson,Fi***o,Chief Technical Officer - CTO,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-10-16T07:15:39.000+00:00,candidate
-6851bccb39e1c8000143a668,Leonardo,Bo***s,CEO,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-11-01T08:56:31.000+00:00,candidate
-66fac9ed0e98b7000182a6de,Tiberio,Le***s,Sócio-Conselheiro de Marketing,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-11-04T16:34:46.000+00:00,candidate
-613ad4779ac72a0001476357,Diego,Di***s,Product Manager,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-11-01T11:12:48.000+00:00,candidate
-5dbcde7894a886000131cdab,Lailan,Ma***s,Product Manager,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-10-11T20:04:59.000+00:00,candidate
-6481b93ea260ae0001565051,Moises,Ra***s,Product Manager,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-11-02T13:32:50.000+00:00,candidate
-60e4a7ed1dca760001d5775b,Leonan,So***a,Product Manager,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-10-24T01:27:12.000+00:00,candidate
-612175f3e4d5bb000164c507,Elias,Ju***r,Product Manager,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-10-09T21:00:25.000+00:00,candidate
-5dd5058b5e352e0001734fab,Felipe,Sa***i,Product Manager Products,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-11-02T20:23:01.000+00:00,candidate
-6153ddd7affea600013037d9,Eduardo,Ol***a,Product Manager Múltiplas Squads,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-10-30T22:52:09.000+00:00,candidate
-6480c30c598ca10001a03db5,Laura,Mo***a,Social Media Manager,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-11-02T16:11:52.000+00:00,candidate
-613852eda153260001c901e0,Adriano,Ol***a,IT Infrastructure Coordinator,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-10-29T12:01:40.000+00:00,candidate
-54a90b7174686930ad7ba50a,Delcio,Pi***o,Product Manager de Educação e Coordenador do Time de Educação,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-09-29T15:52:39.000+00:00,candidate
-5f5679f5f0a7da00016c4d04,Julia,Qu***z,Product Marketing Manager,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-10-26T20:19:49.000+00:00,candidate
-60cb4a74cf2fa4000138f0aa,Sebastiao,Lo***o,Chief Executive Officer,Evo Evolução Urbana,evo.com.br,EVO,2026-10-31T15:16:41.000+00:00,candidate
-621fa2132b385300017b0b2b,Andre,Ca***i,Sócio & Membro do Conselho,Evo Evolução Urbana,evo.com.br,EVO,2026-10-06T19:40:12.000+00:00,candidate
-60a46f23d776300001b58af6,David,Br***n,Partner and Board Member,Evo Evolução Urbana,evo.com.br,EVO,2026-11-01T06:41:49.000+00:00,candidate
-57dbf639a6da98687b474665,Julyane,Ba***i,Gerente de Qualidade e Assistência Técnica,Evo Evolução Urbana,evo.com.br,EVO,2026-10-07T23:39:57.000+00:00,candidate
-6701796464d3ab0001d2bd86,Jaison,Sa,Sócio Cofundador da Aurum,Next Fit,nextfit.com.br,Nextfit,2026-10-26T21:51:04.721+00:00,candidate
-60f0ba36dabfba0001b91cd4,Douglas,Wa***e,CEO,Next Fit,nextfit.com.br,Nextfit,2026-07-28T00:46:22.993+00:00,candidate
-5d61f71480f93e6671277fa5,Alexandre,Ma***m,CPO (Diretor de Produtos),Next Fit,nextfit.com.br,Nextfit,2026-10-29T00:37:26.000+00:00,candidate
-64a828629e4f910001fc99fd,Thais,Go***s,Product Manager,Next Fit,nextfit.com.br,Nextfit,2026-10-07T10:49:50.000+00:00,candidate
-60bc32b859577d00010031a3,Vanessa,Ug***i,Product Manager,Next Fit,nextfit.com.br,Nextfit,2026-10-23T17:54:43.000+00:00,candidate
-5e8ae44d7bfe670001dfba33,Yan,Fa***s,Product Manager,Next Fit,nextfit.com.br,Nextfit,2026-09-21T11:28:39.000+00:00,candidate
-5e8fb9cae4ea750001b1a9ed,Kevin,Ma***s,Group Product Manager,Next Fit,nextfit.com.br,Nextfit,2026-10-14T15:15:58.000+00:00,candidate
-658d0c4665f02c00017e047b,Gabriel,Sa***r,Social Media,Next Fit,nextfit.com.br,Nextfit,2026-10-29T00:53:14.000+00:00,candidate
-57d98635a6da98726264369b,Isamara,Le***l,Associate Product Manager (APM),Next Fit,nextfit.com.br,Nextfit,2026-09-19T06:10:07.000+00:00,candidate
-61296376f62ef5000187ff11,Renan,So***a,HR Business Partner - Pleno,Next Fit,nextfit.com.br,Nextfit,2026-10-31T09:55:50.000+00:00,candidate
-640f3bcc703588000125f6a9,Diogo,Ol***a,Product Manger,Next Fit,nextfit.com.br,Nextfit,2026-11-02T03:54:01.000+00:00,candidate
+54a290ee7468693cdd0e522c,Edgard,Co***a,Chief Executive Officer,Smart Fit,smartfit.com.br,Smart Fit,2026-11-20T16:02:54.642+00:00,in-sales-nav
+63165e147b243b0001e136cd,Diogo,Co***a,CEO,Smart Fit,smartfit.com.br,Smart Fit,2026-11-09T20:03:48.475+00:00,in-sales-nav
+5e7e026253d6980001cc7229,Miriane,Bi***r,Gerente Técnica,Smart Fit,smartfit.com.br,Smart Fit,2026-11-03T06:27:49.000+00:00,enriched
+6731869cd9037900017919aa,Rafael,Sa***s,Gerente de Operações Regional,Smart Fit,smartfit.com.br,Smart Fit,2026-10-10T04:49:34.000+00:00,held-off-persona
+66bb87f42b5c4e00013a0191,Samanta,Sa***s,Gerente de Operações Regional,Smart Fit,smartfit.com.br,Smart Fit,2026-10-09T19:53:05.000+00:00,held-off-persona
+557056177369647101921e00,Wellington,Qu***z,Gerente de Operações Regional,Smart Fit,smartfit.com.br,Smart Fit,2026-10-13T11:18:18.000+00:00,held-off-persona
+611a74e75cdacd00014c2cf2,Alexandre,Gr***n,Global CTO,Smart Fit,smartfit.com.br,Smart Fit,2026-10-28T19:04:44.000+00:00,held-off-persona
+62441ef6848a0d0001dabdef,Atauata,Si***a,Gerente de Operações Regional,Smart Fit,smartfit.com.br,Smart Fit,2026-10-06T15:27:09.000+00:00,held-off-persona
+682f65164e0b1400017e4661,Flavia,Pi***s,Gerente de Operações de TI,Smart Fit,smartfit.com.br,Smart Fit,2026-11-02T21:57:07.524+00:00,held-off-persona
+64242d44bc19660001d5852c,Felipe,Ca***o,Gerente de Operações de Franquia,Smart Fit,smartfit.com.br,Smart Fit,2026-10-08T18:47:04.000+00:00,held-off-persona
+630d9124aa89370001f141ac,Paola,Da***n,Gerente de Operaciones Colombia y Panamá,Smart Fit,smartfit.com.br,Smart Fit,2026-10-30T06:48:04.000+00:00,enriched
+60c2440f11e8370001e2e35c,Leandro,As***o,Operations Director,Smart Fit,smartfit.com.br,Smart Fit,2026-11-06T09:48:49.763+00:00,enriched
+66f95ba04404b30001ff1818,Flavia,So***a,Director of Operations,Smart Fit,smartfit.com.br,Smart Fit,2026-11-05T07:08:06.876+00:00,in-sales-nav
+6048d42db9078f0001a58a23,Saturno,So***a,Technical Director,Smart Fit,smartfit.com.br,Smart Fit,2026-10-12T21:06:30.653+00:00,held-off-persona
+66f80946a0ad48000104cf72,Mauro,Vi***a,Product Owner,Smart Fit,smartfit.com.br,Smart Fit,2026-11-01T05:38:23.000+00:00,enriched
+635415984f7ce700017729df,Lucas,Fl***o,Gerente Técnico - Smart Fit,Smart Fit,smartfit.com.br,Smart Fit,2026-10-29T21:26:04.000+00:00,enriched
+54a7489274686975f8da5126,Francisco,Am***l,Sócio | Investidor,Smart Fit,smartfit.com.br,Smart Fit,2026-11-01T07:20:01.000+00:00,held-off-persona
+57df85c9a6da980ad8f1cde5,Marcelo,Al***s,Sócio Gestor,Smart Fit,smartfit.com.br,Smart Fit,2026-10-14T15:32:00.000+00:00,held-off-persona
+613853933200b00001b183e3,Ciro,Vo***e,Technical Product Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-08T10:41:44.570+00:00,enriched
+57db87b4a6da9868537510e4,Ariane,D'***o,Senior Product Manager | Jornada Social,Smart Fit,smartfit.com.br,Smart Fit,2026-11-09T12:19:16.000+00:00,enriched
+60f8f532c019db000181ab60,Antero,Fi***o,Sócio de Franquia,Smart Fit,smartfit.com.br,Smart Fit,2026-11-01T21:26:45.000+00:00,held-off-persona
+57db2474a6da984bb0e0dd36,Emerson,Gu***s,COO - Diretor Operacional Franquias - ES. (Grupo ES Fitness),Smart Fit,smartfit.com.br,Smart Fit,2026-11-13T05:23:06.000+00:00,enriched
+5d39290ef65125d691126a63,Cristian,Al***e,CEO | Cono Sur (cl/ar/py/uy),Smart Fit,smartfit.com.br,Smart Fit,2026-11-10T03:06:54.000+00:00,enriched
+57d38062f651252c29f1b6be,Phillipp,Ol***a,Product Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-11T22:13:27.000+00:00,enriched
+5ef27fcc2d13c90001c8c4a0,Gabriela,Si***a,Coordenadora de Parcerias e Patrocínios,Smart Fit,smartfit.com.br,Smart Fit,2026-11-19T20:17:23.866+00:00,enriched
+57e1a534a6da985747c6b04e,Daniel,To***i,Product Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-01T06:58:41.000+00:00,enriched
+5e63fe0be8f8b3000184c536,Matheus,Ca***o,Product Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-29T01:06:53.000+00:00,enriched
+6acde83bc47a1e000113fc55,Alvaro,Fo***i,Product Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-12T14:30:13.875+00:00,enriched
+68b742b3143fc3000142c783,Joel,Fu***s,Coordinador Sistemas e Innovación,Smart Fit,smartfit.com.br,Smart Fit,2026-11-10T11:40:12.964+00:00,held-off-persona
+6742d6e40f726a00013cdbbd,Livia,Ba***a,Product Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-27T00:22:25.000+00:00,enriched
+5e8bfc7652a77e00011e8939,Thalita,Mi***a,Product Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-24T01:26:05.000+00:00,enriched
+68dabcb6d4c64900013b5432,Isabel,To***n,Coordinadora De Alianzas y Patrocinios,Smart Fit,smartfit.com.br,Smart Fit,2026-11-01T08:54:20.000+00:00,enriched
+6aed66407d2b0900011c195d,Diogo,Co***a,Executive Director,Smart Fit,smartfit.com.br,Smart Fit,2026-10-29T21:28:24.000+00:00,in-sales-nav
+5e71970b8030240001605de8,Beatriz,Lu***o,Product Owner (PO) - Líder Squad,Smart Fit,smartfit.com.br,Smart Fit,2026-10-06T18:55:19.000+00:00,enriched
+5d667b3ff651258867e8dbf1,Cami,Ch***o,Sócia Proprietária Studio Velocity Vitória,Smart Fit,smartfit.com.br,Smart Fit,2026-10-30T07:37:28.000+00:00,held-off-persona
+5e7764818ce4c50001a37557,Renata,Ol***a,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-05T11:13:47.000+00:00,held-off-persona
+61383acf821f8e000156f840,Ligia,Te***s,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-04T02:18:22.000+00:00,held-off-persona
+667319530df64500012ed7a4,Jefferson,Cu***a,Operations Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-06T18:34:19.186+00:00,enriched
+6480b20dfa6b7c00017cd4f8,Aredilto,Ju***r,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-31T07:27:49.000+00:00,held-off-persona
+61964a1bbfcca700014c2426,Adriana,As***o,Operations Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-02T11:42:14.000+00:00,enriched
+62338d2befaef700011986b0,Carolina,Be***t,Product Manager - Global,Smart Fit,smartfit.com.br,Smart Fit,2026-10-08T18:11:47.000+00:00,enriched
+6650f7e0b46a3100019d5c39,Cibele,Si***a,Product Manager Jr,Smart Fit,smartfit.com.br,Smart Fit,2026-11-11T17:23:25.072+00:00,held-off-persona
+66adc75ba932150001d0b2a2,Gabriel,Au***o,Analista de Parcerias e Patrocínios Sênior,Smart Fit,smartfit.com.br,Smart Fit,2026-10-27T14:08:10.000+00:00,held-off-persona
+54a3106174686935bec7b951,Aline,Wy***e,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-04T10:58:58.219+00:00,held-off-persona
+69884f5ba5e7d800016be14b,Jenniffer,Go***s,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-09-17T16:26:28.708+00:00,held-off-persona
+69f30ea2fb938d0001ee6114,Bruno,Si***a,Payments & Billing Product Manager (Technical Focus),Smart Fit,smartfit.com.br,Smart Fit,2026-11-08T02:50:11.000+00:00,enriched
+6168f43bcaf08a0001fb945e,Diana,So***a,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-24T04:48:34.000+00:00,held-off-persona
+54a2ec047468693a7e184a47,Stefano,Vi***s,Group Product Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-31T05:35:15.000+00:00,enriched
+64c7ae65a7f5ca000115e1ed,Fernando,Tr***o,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-02T13:42:16.000+00:00,held-off-persona
+54a3c9dd7468692cf001e112,Eliane,Ca***o,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-28T20:13:27.000+00:00,held-off-persona
+613ad9531df00c000148b0b4,Raissa,Co***i,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-11T07:13:29.000+00:00,held-off-persona
+5fdb3832c5afc50001d97fb3,Rodrigo,Ma***s,General Product Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-12T06:24:38.000+00:00,enriched
+58b77980f65125f3e779ce2d,Leo,To***s,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-07T01:58:31.000+00:00,held-off-persona
+63a84f719d9103000158997e,Savio,,Partner,Smart Fit,smartfit.com.br,Smart Fit,2026-10-29T00:28:57.000+00:00,enriched
+5f6b04c35acb600001f0a63d,Jaqueline,Pa***a,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-02T16:11:35.000+00:00,held-off-persona
+6721cd815bf6d40001560f10,Inajara,He***e,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-06T15:24:53.000+00:00,held-off-persona
+64c7982aa9d7db00016d6ba3,Talita,Co***o,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-28T21:03:05.000+00:00,held-off-persona
+64297415962af20001165993,Isadora,Me***s,Operations Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-09T06:19:32.000+00:00,enriched
+6480b4b41bcb0d0001d6075b,Carla,Cr***z,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-13T05:41:24.000+00:00,held-off-persona
+6357d19982fb880001f3972c,Tiago,Se***e,Operations Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-29T12:29:16.000+00:00,enriched
+69be13e52f1306000174b74a,Veronica,Fe***i,Operational Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-04T01:46:45.000+00:00,held-off-persona
+64d6ad9f27bb560001215793,Pedro,Fi***s,Sr Product Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-02T15:37:48.000+00:00,enriched
+63d64f9444da6d0001d6a433,Jonathan,Pe***i,Technical Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-29T12:01:50.000+00:00,held-off-persona
+55dd1106f3e5bb57a40012ae,Carolina,Vi***o,Senior Product Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-26T20:19:19.000+00:00,enriched
+650dbbeb725ec60001fbf16f,Julian,So***n,Especialista em Expansão Internacional e Inovação,Smart Fit,smartfit.com.br,Smart Fit,2026-10-21T18:16:06.000+00:00,held-off-persona
+5aa81bcaa6da98ccbdb154e7,Paulo,Si***s,Technical Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-06T14:17:54.000+00:00,held-off-persona
+672069fb75ffcf0001dd6985,Diego,Ol***a,Associate Product Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-25T15:49:38.000+00:00,held-off-persona
+6006e6cc26f78c000139e9ae,Roberta,Gi***z,"Group Product Manager, Growth",Smart Fit,smartfit.com.br,Smart Fit,2026-10-01T14:44:41.000+00:00,enriched
+61b453e14e563800012dc61e,Alanys,Ol***a,Ticket Operations Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-28T19:05:43.000+00:00,held-off-persona
+614d441f1bde26000161de66,Fabricio,Go***s,National Operations Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-02T16:01:22.000+00:00,held-off-persona
+642ab215f70205000182b53b,Edler,Fa***d,Regional Operations Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-28T04:25:12.144+00:00,held-off-persona
+687b99615d143f0001510309,Pedro,Ma***o,Regional Operations Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-15T06:54:41.000+00:00,held-off-persona
+6650b9183bc4180001f44509,Sebastian,Ma***e,Regional Operations Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-03T03:00:29.000+00:00,held-off-persona
+6167d663d762250001c2e0c1,Lizeth,Mu***z,Lic. Comunicación Social,Smart Fit,smartfit.com.br,Smart Fit,2026-10-09T10:29:08.169+00:00,held-off-persona
+54c275b07468697af750df9b,Nathalia,Li***a,Head Martech & Data,Smart Fit,smartfit.com.br,Smart Fit,2026-11-08T16:30:44.000+00:00,held-off-persona
+5dd0eb3a0ebc7b00016b25f1,Luiza,Di***s,Coordenadora de Produtos | Staff Product Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-06T08:42:29.000+00:00,held-off-persona
+6116bcd0f519ef0001d7031f,Valter,So***l,"Gerente de TI Latam - Segurança, Infraestrutura, Operações, Projetos, Expansão.",Smart Fit,smartfit.com.br,Smart Fit,2026-11-11T08:18:20.000+00:00,in-sales-nav
+54eba506746869431148f704,Dafny,Do***a,General Product Manager na Smart Fit,Smart Fit,smartfit.com.br,Smart Fit,2026-11-14T09:11:20.730+00:00,held-off-persona
+60e29ea1078ae80001f71dec,Raissa,Bi***r,Global Head of Mkt and Product,Smart Fit,smartfit.com.br,Smart Fit,2026-11-13T03:04:15.200+00:00,held-off-persona
+6425c5885e22ec00015e1063,Camila,Oy***o,Técnico en Trabajo Social,Smart Fit,smartfit.com.br,Smart Fit,2026-10-23T17:11:32.729+00:00,held-off-persona
+6258645d531146000115081c,Mariane,Fa***o,HR Business Partner,Smart Fit,smartfit.com.br,Smart Fit,2026-10-29T11:55:38.000+00:00,held-off-persona
+663cf4f2c9cfef00010c381f,Vanessa,Re***a,Social Data Intelligence & Insights Specialist,Smart Fit,smartfit.com.br,Smart Fit,2026-11-11T16:59:36.000+00:00,held-off-persona
+5e7a7533e0c9810001647765,Jayne,Bo***s,HR Business Partner Pleno,Smart Fit,smartfit.com.br,Smart Fit,2026-11-08T12:42:55.000+00:00,held-off-persona
+57d9e478a6da987668f4a2f1,Jackson,Ca***o,HR Business Partner Especialista,Smart Fit,smartfit.com.br,Smart Fit,2026-11-02T15:16:24.000+00:00,held-off-persona
+5d27729df65125afcb95c75b,Cliff,Ma***l,Product Marketing Coordinator - Brazil & Latam Partner,Smart Fit,smartfit.com.br,Smart Fit,2026-11-04T01:55:03.000+00:00,held-off-persona
+63591841dd990000018ec08b,Marina,Ma***s,Analista Pleno de Social Media | BEON Studios,Smart Fit,smartfit.com.br,Smart Fit,2026-11-01T05:13:45.000+00:00,held-off-persona
+5ffa3616aea59b0001f0590e,Isabel,Fi***o,Head of IT Business Applications,Smart Fit,smartfit.com.br,Smart Fit,2026-11-05T19:56:44.000+00:00,held-off-persona
+614e957f3ca1a100016e0dcc,Vera,Pa***n,IT Project Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-11-07T01:31:38.870+00:00,held-off-persona
+6284840fba5e5a00018784e5,Renato,Ne***s,IT Project Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-24T06:43:25.354+00:00,held-off-persona
+68779c355481840001d030d1,Tiago,Ru***z,IT Project Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-14T11:34:42.000+00:00,held-off-persona
+54a5bfb674686932098a4ca5,Camilo,Sa***r,"CEO Cluster Andino (CO, PE, EC, PA, CR, HO)",Smart Fit,smartfit.com.br,Smart Fit,2026-11-11T08:19:14.000+00:00,in-sales-nav
+66a5bb3c78fdbe00013d6386,Yasmin,Ma***s,Gerente de Produtos e Receitas Adicionais,Smart Fit,smartfit.com.br,Smart Fit,2026-11-03T08:20:57.000+00:00,held-off-persona
+60cb540b0c9b4f00014c6a5f,Moreno,An***e,Head de Tecnologia,Smart Fit,smartfit.com.br,Smart Fit,2026-11-12T06:27:29.000+00:00,in-sales-nav
+64805c25dcdc1c0001495e7d,Ingrid,Ca***a,Gerente Pleno Academia Smart Fit,Smart Fit,smartfit.com.br,Smart Fit,2026-11-02T06:37:40.000+00:00,held-off-persona
+60d44633a6b78400019b374d,Leidy,Fe***o,Nutritionist,Smart Fit,smartfit.com.br,Smart Fit,2026-11-05T10:59:26.000+00:00,held-off-persona
+66d3842f2c62cf0001054ad8,Madalena,Br***z,Nutritionist,Smart Fit,smartfit.com.br,Smart Fit,2026-11-04T14:39:55.000+00:00,held-off-persona
+61304c27210fa50001e9e781,Nayla,Me***s,Nutritionist,Smart Fit,smartfit.com.br,Smart Fit,2026-10-06T17:45:41.000+00:00,held-off-persona
+674ba516bf7a730001622623,Hugo,Mi***a,Nutritionist,Smart Fit,smartfit.com.br,Smart Fit,2026-10-29T02:43:42.000+00:00,held-off-persona
+6a25fe447f2d510001f8d647,Juliana,M,Tiktok Manager,Smart Fit,smartfit.com.br,Smart Fit,2026-10-06T17:01:14.000+00:00,held-off-persona
+61293fcc7cfb8a0001c3835f,Caroline,Li***s,Nutricionista Autônoma,Smart Fit,smartfit.com.br,Smart Fit,2026-10-06T13:55:53.000+00:00,held-off-persona
+6ad715339326fa0001d7ef4a,Higor,Du***e,Gerente de Fitness,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-27T11:47:40.000+00:00,enriched
+67d269cdfb05050001b5b78e,Alessandra,Se***f,CEO,Bluefit Academia,bluefit.com.br,Bluefit,2026-11-01T21:32:50.000+00:00,enriched
+64c7bcea6777ba0001214e17,Nayana,Ro***a,Gerente Técnica,Bluefit Academia,bluefit.com.br,Bluefit,2026-11-03T03:07:45.000+00:00,enriched
+60fe05cadfd72e0001940a3f,Diego,Ta***s,Diretor de Operações | Franquia Bluefit,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-02T05:09:05.000+00:00,enriched
+6481f280c65347000147b516,Edson,Sa***s,Gerente de Operações Regional,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-01T14:17:26.000+00:00,enriched
+6480beef03e6c900011e38fd,Gustavo,An***s,Interim Chief Executive Officer,Bluefit Academia,bluefit.com.br,Bluefit,2026-11-12T02:45:40.000+00:00,enriched
+54a53ce474686938acf12e88,Marcel,Va***i,Diretor Executivo de Expansão,Bluefit Academia,bluefit.com.br,Bluefit,2026-11-02T03:55:40.000+00:00,held-off-persona
+67229d493a72740001aad373,Rafael,Se***i,Diretor Executivo Jurídico e Compliance | General Counsel,Bluefit Academia,bluefit.com.br,Bluefit,2026-11-16T19:52:40.041+00:00,held-off-persona
+54a3e6ba7468693676104b1c,Talita,Ar***o,Sócia Bluefit Brasília,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-28T19:13:28.000+00:00,enriched
+68339160691f82000123cee8,Tarcisio,Ol***a,Technical Coordinator,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-07T00:57:32.000+00:00,held-off-persona
+57daa9a5a6da984a3c2555ce,Marcelle,Mo***o,Gerente Geral Técnica,Bluefit Academia,bluefit.com.br,Bluefit,2026-11-14T13:15:16.000+00:00,enriched
+69d7593e6eaf430001f5039a,Adriano,So***a,Operational Manager,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-14T06:08:11.000+00:00,held-off-persona
+57dc7efaa6da987d6817417d,Luciane,Ga***a,GRO Gerente Regional de Operações,Bluefit Academia,bluefit.com.br,Bluefit,2026-11-08T12:47:49.000+00:00,held-off-persona
+662a10a3ba33520007f88cea,Bruna,Ra***o,General Operations Manager,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-23T23:58:37.000+00:00,enriched
+615d20a951ab700001c98b07,Patricia,Ro***a,General Operations Manager,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-12T21:01:11.475+00:00,enriched
+5cec26a8f65125f94a89cd50,Tiago,Na***o,Gerente Regional de Operações MS - MT,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-28T19:46:10.000+00:00,held-off-persona
+5d5ef137a3ae612dd7cf9545,Igor,So***a,Gerente Executivo Técnico,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-24T02:43:29.000+00:00,enriched
+66b7617fe2bed60001a8e03d,Fabricio,So***o,Gerente Regional Técnico,Bluefit Academia,bluefit.com.br,Bluefit,2026-11-04T00:43:46.000+00:00,held-off-persona
+54ec16867468694311c54c4d,Marcelo,Sa***i,Sócio Administrador Bluefit Aquarius e Vale Sul,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-28T20:44:49.000+00:00,held-off-persona
+6434115cdac1050001c72ffd,Juliana,Sa***o,Regional Operations Manager,Bluefit Academia,bluefit.com.br,Bluefit,2026-11-01T22:17:50.000+00:00,held-off-persona
+5f536d371237a600012e8bd6,Solange,Al***s,Regional Operations Manager,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-24T05:50:08.000+00:00,held-off-persona
+68af2f8b0b89730001ac37ce,Gabriel,Be***i,Regional Operations Manager,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-13T21:52:54.000+00:00,held-off-persona
+625ad8d562990300014bd195,Caio,Mi***a,Regional Operations Manager,Bluefit Academia,bluefit.com.br,Bluefit,2026-11-04T23:06:43.326+00:00,held-off-persona
+5d60b53bf6512528a3273110,Lana,Sa***o,Regional Operations Manager,Bluefit Academia,bluefit.com.br,Bluefit,2026-11-05T20:04:21.000+00:00,held-off-persona
+5be98729f65125960e7a437b,Emanuel,Mo***a,"Sócio Proprietário - Bluefit Venâncio, DF Plaza, Samambaia, Messejana e Caucaia",Bluefit Academia,bluefit.com.br,Bluefit,2026-10-30T22:47:58.000+00:00,held-off-persona
+6358bf1e546acf0001461928,Julia,Fa***i,HR Business Partner,Bluefit Academia,bluefit.com.br,Bluefit,2025-07-02T13:35:56.032+00:00,held-off-persona
+6353ec195dc39e00014c1c93,Sarah,Mo***s,Gerente de Marketing | Social Media · Design · Videomaker,Bluefit Academia,bluefit.com.br,Bluefit,2026-11-04T18:29:12.691+00:00,held-off-persona
+60d42126c3e0bd00014c4fc0,Laryssa,Ana,Analista G&G SR. - Business Partner,Bluefit Academia,bluefit.com.br,Bluefit,2026-11-04T01:38:50.000+00:00,held-off-persona
+64ed0e90a4d6ff0001890cd4,Elson,Te***o,Head de Dados e IA,Bluefit Academia,bluefit.com.br,Bluefit,2026-10-14T12:09:44.000+00:00,enriched
+68237c43a3c3040001ccec8f,Fernando,Me***s,CEO - Chief Executive Officer,SELFIT Academias,selfitacademias.com.br,Selfit,2026-11-05T13:57:12.000+00:00,enriched
+57ddc2e6a6da987aec21fb46,Eduardo,Br***n,Operations Director,SELFIT Academias,selfitacademias.com.br,Selfit,2026-11-11T02:02:32.000+00:00,in-sales-nav
+614d558cf6430c00013882a1,Bianca,D`***a,Technical Coordinator,SELFIT Academias,selfitacademias.com.br,Selfit,2026-11-04T15:17:48.000+00:00,enriched
+54a2f6f974686938253d8d4a,Matheus,Go***a,Sócio Franqueado (Investidor),SELFIT Academias,selfitacademias.com.br,Selfit,2026-11-16T12:53:53.782+00:00,enriched
+54a26cae74686935be5ff721,Diego,Br***r,Sócio de Franquia,SELFIT Academias,selfitacademias.com.br,Selfit,2026-11-03T19:07:32.000+00:00,enriched
+54a297d37468693318e01d2e,Nilton,Ca***o,IT Coordinator,SELFIT Academias,selfitacademias.com.br,Selfit,2026-11-12T15:17:21.076+00:00,held-off-persona
+6167dcdaae58ac0001481bfe,Esdras,Li***a,Technical Manager,SELFIT Academias,selfitacademias.com.br,Selfit,2026-11-02T19:51:11.000+00:00,held-off-persona
+6481e4bc8d75000001606816,Fernando,An***s,Technical Manager,SELFIT Academias,selfitacademias.com.br,Selfit,2026-11-01T03:26:42.000+00:00,held-off-persona
+64243eb80d84600001877f4c,Jose,Ma***o,Technical Manager,SELFIT Academias,selfitacademias.com.br,Selfit,2026-11-11T05:31:09.000+00:00,held-off-persona
+6734802ad3fb940001034d25,Agnes,So***a,Technical Manager,SELFIT Academias,selfitacademias.com.br,Selfit,2026-10-10T16:18:04.000+00:00,held-off-persona
+6481beab421fa30001e834ce,Julia,Si***a,Technical Manager,SELFIT Academias,selfitacademias.com.br,Selfit,2026-10-28T20:00:32.000+00:00,held-off-persona
+6068e504b61b420001e56b52,Sabrina,Bo***s,Technical Manager,SELFIT Academias,selfitacademias.com.br,Selfit,2026-11-02T18:29:26.000+00:00,held-off-persona
+698da83bf13fe9000166e50c,Jose,Ma***o,Technical Manager,SELFIT Academias,selfitacademias.com.br,Selfit,2026-10-08T13:10:32.000+00:00,held-off-persona
+665b759a240e670001527615,Ryan,Je***n,Technical Manager,SELFIT Academias,selfitacademias.com.br,Selfit,2026-11-05T11:04:15.000+00:00,held-off-persona
+69fab296f99e4c00012807d8,Vinicius,Pa***o,Technical Manager,SELFIT Academias,selfitacademias.com.br,Selfit,2026-10-29T01:58:46.000+00:00,held-off-persona
+6ab09ec184c374000140d53f,Washington,Ju***r,Technical Manager,SELFIT Academias,selfitacademias.com.br,Selfit,2026-10-30T21:49:06.841+00:00,held-off-persona
+5e6695aaa143b3000140110f,Diego,Vi***r,3x Startup Founder,SELFIT Academias,selfitacademias.com.br,Selfit,2026-11-16T14:11:24.105+00:00,enriched
+697daddd5a1a760001f2e909,Bruno,Ce***r,Technical Manager,SELFIT Academias,selfitacademias.com.br,Selfit,2026-10-07T03:33:41.000+00:00,held-off-persona
+6153e388e349c70001ac136f,Weldon,Ne***o,Coordenador de Treinamento,SELFIT Academias,selfitacademias.com.br,Selfit,2026-11-09T05:23:50.000+00:00,enriched
+68e2bcdf8171e500016e33b8,Gustavo,Me***s,Chief Executive Officer,Academia Gaviões 24h,academiagavioes.com.br,Academia Gaviões 24h,2026-11-05T02:36:24.000+00:00,in-sales-nav
+69b5c3c523f6500001c4840d,Priscila,Ag***r,CEO na Franquia Academia Gaviões 24 Horas,Academia Gaviões 24h,academiagavioes.com.br,Academia Gaviões 24h,2026-11-11T04:06:02.000+00:00,enriched
+5fe2203f717f1f0001c88587,Rodrigo,Al***s,Business Development Manager,Academia Gaviões 24h,academiagavioes.com.br,Academia Gaviões 24h,2026-11-12T12:48:05.611+00:00,enriched
+54abbf177468692a6b1f820a,Giselle,Vi***a,Operational Manager,Academia Gaviões 24h,academiagavioes.com.br,Academia Gaviões 24h,2026-10-07T09:15:13.000+00:00,held-off-persona
+64ef0c5f2ef3b00001e4b88e,Guilherme,Ol***a,Operational Manager,Academia Gaviões 24h,academiagavioes.com.br,Academia Gaviões 24h,2026-10-07T19:57:03.000+00:00,held-off-persona
+6855b457e4f46e00015427d0,Daniel,Ag***r,Executivo de Tecnologia / Sócio Proprietário,Academia Gaviões 24h,academiagavioes.com.br,Academia Gaviões 24h,2026-11-08T17:12:13.000+00:00,held-off-persona
+5e6354ebf6194a0001047654,Michelle,Eu***o,Owner Partner,Academia Gaviões 24h,academiagavioes.com.br,Academia Gaviões 24h,2026-10-06T15:51:02.000+00:00,enriched
+54c29ea97468697af71e42b1,Wellington,Mo***a,IT Manager,Academia Gaviões 24h,academiagavioes.com.br,Academia Gaviões 24h,2026-10-16T07:45:09.000+00:00,held-off-persona
+69da087ae4150500013f276a,Francielle,Wa***e,Social Media Analyst,Academia Gaviões 24h,academiagavioes.com.br,Academia Gaviões 24h,2026-10-27T00:21:05.000+00:00,held-off-persona
+684dd96f6c68600001b58308,Samuel,Cr***z,Gerente de TI Sênior - Head de TI e Transformação Digital,Academia Gaviões 24h,academiagavioes.com.br,Academia Gaviões 24h,2026-11-09T01:50:07.000+00:00,enriched
+6ad70d359325d4000170db33,Erick,Ca***n,Nutritionist,Academia Gaviões 24h,academiagavioes.com.br,Academia Gaviões 24h,2026-11-04T00:38:32.000+00:00,held-off-persona
+66e7215e2ef1600001bf7ccf,Glauber,Ma***a,COO (Chief Operating Officer),Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-11-04T02:30:42.000+00:00,enriched
+5f0d02ca9205530001771bd4,Tadeu,Pr***e,CEO,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-11-05T04:05:52.000+00:00,in-sales-nav
+660af82bca59eb00078271c8,Adriano,Ma***a,Operations Director,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-11-20T14:19:52.285+00:00,in-sales-nav
+6490422fc1eb3400015931ca,Vladmir,Te***),Sócio/Coordenador,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-11-01T04:03:55.000+00:00,held-off-persona
+668cfa989e765d00016ee5ac,Eduardo,Ma***s,Consultor de Inovação,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-11-02T05:11:56.000+00:00,held-off-persona
+672b9d5c7611bb0001a1749d,Anderson,Te***a,Partner,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-11-10T22:48:49.000+00:00,in-sales-nav
+6aad188113dc890001878584,Daniel,Ri***o,Operational Manager,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-01T01:31:45.000+00:00,held-off-persona
+68ca58723180b40001304684,Ionara,Ca***o,Operational Manager,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-10T12:04:22.000+00:00,held-off-persona
+6741941207b6b30001319af2,Dayth,Ba***a,Operational Manager,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-02T05:14:15.000+00:00,held-off-persona
+5ac86c69a6da98411c460e62,Vladimir,Si***a,Sócio-Diretor dos Estúdios Personal Class,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-16T00:20:13.000+00:00,held-off-persona
+684d1a85dd752f0001d926c8,Bryan,Ro***a,Gerente Líder de Equipe na Pratique Fitness,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-11-11T05:32:21.000+00:00,held-off-persona
+64595993de06170001aed800,Narriman,Ro***a,Social Media Content Creator,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-18T08:23:33.000+00:00,held-off-persona
+5c652b52a3ae611b9ec51e62,Tatiana,Ma***s,Nutritionist,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-11-06T10:40:21.000+00:00,held-off-persona
+67209b04534a7500011e784d,Roseane,Fa***a,Nutritionist,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-09T18:26:56.000+00:00,held-off-persona
+614d61e2042aea00018b2f10,Fernanda,Qu***a,Nutritionist,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-21T02:54:03.807+00:00,held-off-persona
+66a6981ab2f3d50001ac02bb,Natalie,Ha***s,Nutritionist,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-31T00:54:18.000+00:00,held-off-persona
+67205651c1aa700001f3daee,Debora,Di***z,Nutritionist,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-06T15:05:52.000+00:00,held-off-persona
+69cf9431b63f890001d2cec5,Fernanda,Sa***s,Nutritionist,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-10T05:29:56.000+00:00,held-off-persona
+673a1947266f8a0001ecf312,Samanta,Fe***a,Nutritionist,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-01T11:18:52.000+00:00,held-off-persona
+64ef16dac9a8e00001bc356d,Isabelle,Vi***a,Nutritionist,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-07T00:43:15.000+00:00,held-off-persona
+64809961149dea0001c221ff,Geraldinho,Pr***e,Gestor Na Academia Pratique Fitness,Pratique Fitness,pratiquefitness.com.br,Pratique Fitness,2026-10-13T10:13:46.000+00:00,held-off-persona
+5e7adb5490939d0001258cb9,Axel,Me***a,Fitness Director,Sport City,sportcity.com.mx,Sport City,2026-10-18T21:41:10.851+00:00,enriched
+685993e14dfe660001af06b6,Jose,Lo***z,Director General Adjunto,Sport City,sportcity.com.mx,Sport City,2026-11-08T17:14:37.000+00:00,enriched
+613ad56f6ada54000193290c,Fernando,He***z,Líder de Alianzas Comerciales Jr,Sport City,sportcity.com.mx,Sport City,2026-10-18T00:12:58.423+00:00,held-off-persona
+671c9ca405a0f500019a1b6e,Gabriela,Za***o,Directora de Business Development y Marketing,Sport City,sportcity.com.mx,Sport City,2026-11-19T13:56:35.888+00:00,held-off-persona
+6798a38c0c1f6f000121c2d7,Xico,Ra***s,Social Media Coordinator,Sport City,sportcity.com.mx,Sport City,2026-11-18T04:55:43.288+00:00,held-off-persona
+679ec3ace029ac00012ff44d,Rodrigo,Ca***o,Head Coach Fitness Trainer,Sport City,sportcity.com.mx,Sport City,2026-07-27T04:56:52.842+00:00,held-off-persona
+62c8fd01ae11880001cd1de7,Gabriel,Ra***s,General Manager of Operations,Sport City,sportcity.com.mx,Sport City,2026-06-22T21:57:33.000+00:00,enriched
+54ec2595746869444ce01059,Tayrin,Az***a,Graduate in Nutrition,Sport City,sportcity.com.mx,Sport City,2026-10-15T18:17:14.000+00:00,held-off-persona
+674397a03404fb00019d98f5,Jonathan,Lo***z,Nutritionist,Sport City,sportcity.com.mx,Sport City,2026-11-04T03:00:40.000+00:00,held-off-persona
+671c7539057ee90001af2698,Giselle,Ga***a,Subdirección de Producto y MKT,Sport City,sportcity.com.mx,Sport City,2026-10-29T13:38:08.000+00:00,enriched
+5c37a3fb80f93e847bd6741c,Rocio,Na***o,Nutritionist,Sport City,sportcity.com.mx,Sport City,2026-11-12T05:13:41.289+00:00,held-off-persona
+613af66dc31cbf000197de58,Paulina,Ma***n,Nutricionista en Sport City,Sport City,sportcity.com.mx,Sport City,2026-11-10T08:20:17.186+00:00,held-off-persona
+54eb13a774686931e20ff407,Cecilia,Ga***o,Nutritionist,Sport City,sportcity.com.mx,Sport City,2026-10-15T01:59:26.000+00:00,held-off-persona
+6739827e57b828000128592d,Giselle,Ar***a,Graduate in Nutrition,Sport City,sportcity.com.mx,Sport City,2026-11-13T10:06:49.000+00:00,held-off-persona
+57db3253a6da984bac22129b,Jesica,Ga***a,Nutritionist,Sport City,sportcity.com.mx,Sport City,2026-10-16T19:07:49.723+00:00,held-off-persona
+5d53385780f93e8e80167b94,Issamar,An***l,Nutritionist,Sport City,sportcity.com.mx,Sport City,2026-11-10T12:52:44.275+00:00,held-off-persona
+673595a28fa8fe000127fe36,Luis,En***s,Operations,Sport City,sportcity.com.mx,Sport City,2026-11-14T19:31:02.000+00:00,enriched
+63a551f50044f400019367de,Katya,Go***z,Nutricionista en Sport City,Sport City,sportcity.com.mx,Sport City,2026-11-02T05:02:00.522+00:00,held-off-persona
+6429af1824825100019cf05d,Sara,Ch***z,Nutritionist,Sport City,sportcity.com.mx,Sport City,2026-08-30T00:09:54.000+00:00,held-off-persona
+57dbac42a6da98686b296d1c,Beatriz,Ad***e,Nutritionist,Sport City,sportcity.com.mx,Sport City,2026-10-14T00:10:50.543+00:00,held-off-persona
+683bdeb93d033d000113bfd5,Lorena,Cr***z,Nutritionist,Sport City,sportcity.com.mx,Sport City,2026-08-14T04:23:35.000+00:00,held-off-persona
+677216720161b5000141e232,Alicia,Ba***t,Nutritionist,Sport City,sportcity.com.mx,Sport City,2026-11-10T01:24:14.000+00:00,held-off-persona
+635536c79c3ae00001bc48d9,Erick,Ri***s,Nutritionist,Sport City,sportcity.com.mx,Sport City,2026-06-24T07:48:59.000+00:00,held-off-persona
+645a1fa03909d4000177f7e3,Ruben,Le***e,Nutrition,Sport City,sportcity.com.mx,Sport City,2026-09-30T15:03:21.829+00:00,held-off-persona
+63daece7c712b6000144e92e,Carola,Pr***a,Nutritionist,Sport City,sportcity.com.mx,Sport City,2026-10-18T16:55:30.929+00:00,held-off-persona
+54aa5c9274686908c8dfd801,Paulo,Es***a,Nutritionist,Sport City,sportcity.com.mx,Sport City,2026-11-13T15:07:25.000+00:00,held-off-persona
+6742060bcdac7c00010d8583,Antonio,Ol***a,Ep Ard,Sport City,sportcity.com.mx,Sport City,2026-11-13T11:42:25.000+00:00,held-off-persona
+66ef3130408fa1000192ebe4,Fernando,St***i,Fundador & CEO,Megatlon,megatlon.com,Megatlon,2026-11-02T10:38:45.000+00:00,in-sales-nav
+600ce5a92deff700013592e2,Marco,St***i,Director of Operations,Megatlon,megatlon.com,Megatlon,2026-10-28T19:44:45.000+00:00,in-sales-nav
+54a44d5874686936765bcd3c,Pablo,Ga***i,Operations Manager,Megatlon,megatlon.com,Megatlon,2026-11-04T14:36:09.000+00:00,enriched
+66879955ecc99800019027af,Joan,Ma***l,IT Manager,Megatlon,megatlon.com,Megatlon,2026-11-19T15:36:51.909+00:00,held-off-persona
+696a4ac7900c9a0001b08a69,Sport,Cl***b,Gerente de Fitness,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-17T02:16:32.000+00:00,enriched
+66fe65f7cf38fb00018750db,Gerardo,Di***z,Director de Operaciones de Sucursal,SportClub Oficial,sportclub.com.ar,SportClub,2026-11-01T10:30:36.000+00:00,enriched
+61386ead39f2b80001f8d6e9,Renata,Ca***s,Ejecutiva de Alianzas,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-12T06:07:51.000+00:00,enriched
+54c1d7fd746869163991cd4f,Romina,Ra***e,Area Comercial-Alianzas Empresas,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-10T07:02:40.000+00:00,held-off-persona
+64807fedf91f1d00013f09aa,Natalia,Ge***z,Atecion al Socio,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-06T22:55:49.000+00:00,held-off-persona
+668f068da12ef40001c6f16b,Matias,Po***r,Jefe Comercial Alianzas con Clubes,SportClub Oficial,sportclub.com.ar,SportClub,2026-11-08T09:05:27.912+00:00,held-off-persona
+54a2f0c97468693318831448,Pablo,Si***i,Product Manager,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-31T05:35:18.000+00:00,enriched
+5efb0dd1dcae85000111a72a,Danila,Ma***i,New Business Development,SportClub Oficial,sportclub.com.ar,SportClub,2026-11-02T16:33:35.000+00:00,enriched
+5d6b0691f6512508fb1d3848,Pablo,Fe***h,Partner,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-07T10:53:36.000+00:00,enriched
+614d9852de836b0001d0b167,Candela,Cu***a,Social Media Manager,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-26T20:07:39.000+00:00,held-off-persona
+5d6abfb7f5106c0001d74bda,Gustavo,Pr***o,Managing Partner,SportClub Oficial,sportclub.com.ar,SportClub,2026-11-04T14:45:06.000+00:00,enriched
+61eb81ca33a28e000119aa7c,Diego,Pa***o,Managing Partner,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-08T21:59:03.000+00:00,enriched
+6480c2a0cf944e0001cfc003,Merlina,Mu***i,Nutricionista SportClub Norcenter,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-13T16:21:52.000+00:00,held-off-persona
+61275ee17eff950001973d6a,Angeles,La***s,Nutritionist,SportClub Oficial,sportclub.com.ar,SportClub,2026-11-08T16:18:36.000+00:00,held-off-persona
+5ee4c03ca1314d0001d5f9c7,Ana,Ca***o,Nutritionist,SportClub Oficial,sportclub.com.ar,SportClub,2026-11-05T10:50:50.000+00:00,held-off-persona
+61f56233e4a2910001525268,Silvina,Fa***i,Nutritionist,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-26T20:15:00.000+00:00,held-off-persona
+63dabb6ab246770001faa636,Jimena,Ca***i,Graduate in Nutrition,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-14T03:14:11.000+00:00,held-off-persona
+6735babacc00ef000109ad7c,Alejandro,Go***z,Jefe Técnico de Depósito,SportClub Oficial,sportclub.com.ar,SportClub,2026-11-05T10:52:51.000+00:00,held-off-persona
+66ee48020e5743000124ce8f,Emilio,Ga***a,Licenciado en Nutrición,SportClub Oficial,sportclub.com.ar,SportClub,2026-10-25T14:19:57.000+00:00,held-off-persona
+6ad1ec0d8236ef0001d5b5ed,Anderson,Ci***n,CTO,Tecnofit,tecnofit.com.br,Tecnofit,2026-11-06T22:19:47.530+00:00,enriched
+60dc6e2df4e47d000196db84,Jose,An***s,Head de Parcerias,Tecnofit,tecnofit.com.br,Tecnofit,2026-10-25T15:26:36.000+00:00,enriched
+54a79409746869682948b241,Matheus,Va***e,Head of Product and Engineering,Tecnofit,tecnofit.com.br,Tecnofit,2026-11-07T11:47:46.000+00:00,in-sales-nav
+601b917a723d160001bc2319,Antonio,Ju***r,Chairperson & Co-founder,Tecnofit,tecnofit.com.br,Tecnofit,2026-11-05T09:54:38.000+00:00,enriched
+54a2ceba7468693cddd5573e,Rafaela,La***i,Product Manager,Tecnofit,tecnofit.com.br,Tecnofit,2026-11-11T21:28:48.000+00:00,enriched
+69ba67fd6b2aeb0001e7804e,Luiz,La***s,Bdr/sdr - Business Development Representative Pleno,Tecnofit,tecnofit.com.br,Tecnofit,2026-10-06T15:35:36.000+00:00,held-off-persona
+5f594cae602b83000127f582,Fernanda,Sa***s,BDR | Business Development Representative Pleno II | Tecnofit,Tecnofit,tecnofit.com.br,Tecnofit,2026-11-06T00:11:58.000+00:00,held-off-persona
+614ebef9b1672100019fe9c4,Kauana,Ma***s,Analista de Social Media Pleno I,Tecnofit,tecnofit.com.br,Tecnofit,2026-10-15T07:16:10.000+00:00,held-off-persona
+5ffd6d57f8276700015636f0,Gleidson,Fi***o,Chief Technical Officer - CTO,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-10-16T07:15:39.000+00:00,enriched
+6481b93ea260ae0001565051,Moises,Ra***s,Gerente de Produto (PM),Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-11-02T13:32:50.000+00:00,enriched
+6851bccb39e1c8000143a668,Leonardo,Bo***s,CEO,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-11-11T09:43:26.000+00:00,enriched
+613ad4779ac72a0001476357,Diego,Di***s,Product Manager,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-11-01T11:12:48.000+00:00,enriched
+5dbcde7894a886000131cdab,Lailan,Ma***s,Product Manager,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-10-11T20:04:59.000+00:00,enriched
+60e4a7ed1dca760001d5775b,Leonan,So***a,Product Manager,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-10-24T01:27:12.000+00:00,enriched
+612175f3e4d5bb000164c507,Elias,Ju***r,Product Manager,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-10-09T21:00:25.000+00:00,enriched
+66fac9ed0e98b7000182a6de,Tiberio,Le***s,Sócio-Conselheiro de Marketing,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-11-04T16:34:46.000+00:00,held-off-persona
+5dd5058b5e352e0001734fab,Felipe,Sa***i,Product Manager Products,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-11-02T20:23:01.000+00:00,enriched
+6153ddd7affea600013037d9,Eduardo,Ol***a,Product Manager Múltiplas Squads,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-10-30T22:52:09.000+00:00,enriched
+6480c30c598ca10001a03db5,Laura,Mo***a,Social Media Manager,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-11-02T16:11:52.000+00:00,held-off-persona
+613852eda153260001c901e0,Adriano,Ol***a,IT Infrastructure Coordinator,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-10-29T12:01:40.000+00:00,enriched
+54a90b7174686930ad7ba50a,Delcio,Pi***o,Product Manager de Educação e Coordenador do Time de Educação,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-09-29T15:52:39.000+00:00,enriched
+5f5679f5f0a7da00016c4d04,Julia,Qu***z,Product Marketing Manager,Pacto Soluções Tecnológicas Ltda,sistemapacto.com.br,Pacto Soluções,2026-10-26T20:19:49.000+00:00,enriched
+60cb4a74cf2fa4000138f0aa,Sebastiao,Lo***o,Chief Executive Officer,Evo Evolução Urbana,evo.com.br,EVO,2026-11-03T20:49:29.000+00:00,enriched
+621fa2132b385300017b0b2b,Andre,Ca***i,Sócio & Membro do Conselho,Evo Evolução Urbana,evo.com.br,EVO,2026-10-06T19:40:12.000+00:00,enriched
+60a46f23d776300001b58af6,David,Br***n,Partner and Board Member,Evo Evolução Urbana,evo.com.br,EVO,2026-11-11T09:38:13.000+00:00,enriched
+57dbf639a6da98687b474665,Julyane,Ba***i,Gerente de Qualidade e Assistência Técnica,Evo Evolução Urbana,evo.com.br,EVO,2026-10-07T23:39:57.000+00:00,held-off-persona
+60f0ba36dabfba0001b91cd4,Douglas,Wa***e,CEO,Next Fit,nextfit.com.br,Nextfit,2026-11-16T13:43:26.913+00:00,enriched
+5d61f71480f93e6671277fa5,Alexandre,Ma***m,CPO (Diretor de Produtos),Next Fit,nextfit.com.br,Nextfit,2026-10-29T00:37:26.000+00:00,enriched
+64a828629e4f910001fc99fd,Thais,Go***s,Product Manager,Next Fit,nextfit.com.br,Nextfit,2026-10-07T10:49:50.000+00:00,enriched
+60bc32b859577d00010031a3,Vanessa,Ug***i,Product Manager,Next Fit,nextfit.com.br,Nextfit,2026-10-23T17:54:43.000+00:00,enriched
+5e8fb9cae4ea750001b1a9ed,Kevin,Ma***s,Group Product Manager,Next Fit,nextfit.com.br,Nextfit,2026-11-15T10:41:49.120+00:00,enriched
+5e8ae44d7bfe670001dfba33,Yan,Fa***s,Senior Product Manager,Next Fit,nextfit.com.br,Nextfit,2026-11-06T09:31:03.000+00:00,enriched
+658d0c4665f02c00017e047b,Gabriel,Sa***r,Social Media,Next Fit,nextfit.com.br,Nextfit,2026-10-29T00:53:14.000+00:00,held-off-persona
+57d98635a6da98726264369b,Isamara,Le***l,Associate Product Manager (APM),Next Fit,nextfit.com.br,Nextfit,2026-11-04T00:52:31.000+00:00,held-off-persona
+61296376f62ef5000187ff11,Renan,So***a,HR Business Partner - Pleno,Next Fit,nextfit.com.br,Nextfit,2026-11-03T16:53:42.000+00:00,held-off-persona
+640f3bcc703588000125f6a9,Diogo,Ol***a,Product Manger,Next Fit,nextfit.com.br,Nextfit,2026-11-02T03:54:01.000+00:00,held-off-persona
+62e12ba53f1a0e0001ba8101,Dudu,Ne***o,Sócio - Diretor Técnico,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-29T04:11:42.000+00:00,enriched
+6036a07d0cb0ab0001a2877f,Luiz,Ur***a,CEO,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-09T13:47:22.000+00:00,in-sales-nav
+68f0f4620fb28c0001ebd693,Melina,Ba***a,Gerente Técnica,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-14T11:11:57.000+00:00,enriched
+5e6bf707a45d8900014b529f,Guilherme,Mu***z,Professor/Personal Trainer/Avaliação Física,Bodytech Company,bodytech.com.br,Bodytech Company,2026-09-29T22:11:37.000+00:00,held-off-persona
+5de830ebdae99600016637cb,Bernardo,Ro***i,Gerente de Operações Regional,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-09T05:19:49.000+00:00,held-off-persona
+61383901dee6a90001a02363,Alexandre,Sa***a,Gerente de Operações Regional,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-20T14:57:29.315+00:00,held-off-persona
+54a513e5746869344280147b,Diogo,Fi***i,Gerente de Operações Regional,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-14T09:17:56.000+00:00,held-off-persona
+54c178077468697af7958113,Ricardo,Fa***s,Diretor Executivo de Franquias,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-02T22:21:27.314+00:00,in-sales-nav
+6794d362c24b6300015663b6,Barbara,Va***e,Gerente de Operações de Negócios,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-09T16:09:36.000+00:00,enriched
+6422e5ed01897f00018976dd,Karina,Ro***a,Gerente de Operações Bodytech Company,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-29T01:50:42.000+00:00,enriched
+5f69d60cfa174300016d7f65,Alan,Ba***s,Gerente de Operações e Produtos,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-09T17:56:50.868+00:00,enriched
+64ece2f2661df50001789242,Rayane,Pa***o,Coordenador Técnico Kids,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-02T17:02:02.000+00:00,held-off-persona
+60f6fdb5cff93f00019eb719,Marcelo,Vi***a,Operations Director,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-10T12:13:09.000+00:00,enriched
+60ba047064cecb0001fd003c,Eduardo,Ne***o,Technical Director,Bodytech Company,bodytech.com.br,Bodytech Company,2025-10-02T00:55:10.887+00:00,held-off-persona
+612bf98f9de87000015d6c37,Rodrigo,Co***a,Coordenador Técnico e Suporte Administrativo,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-29T12:11:35.000+00:00,held-off-persona
+658c0a47beff49000102446b,Diogo,Ev***a,Coordenador Técnico | Líder de Equipe,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-04T01:30:48.000+00:00,enriched
+5d40455e80f93e119bc95d29,Mariana,Si***a,Coordenadora Técnica de Atividades Aquáticas e Infantils,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-14T13:12:47.000+00:00,held-off-persona
+6481eb79b579900001a21263,Flavio,Mo***a,Technical Coordinator,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-04T02:08:12.000+00:00,held-off-persona
+613ae61e23d80200017d1127,Pedro,Ca***o,Technical Coordinator,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-02T09:29:40.000+00:00,held-off-persona
+632b51eae03a2700011a041e,Eduardo,Ro***o,Technical Coordinator,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-02T11:29:19.000+00:00,held-off-persona
+57d797e4a6da9809c2396f82,Walnir,Cr***z,Technical Coordinator,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-07T12:09:08.000+00:00,held-off-persona
+5f4c5dbd2f61a50001900206,Kelly,Ol***a,Technical Coordinator,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-01T12:09:41.000+00:00,held-off-persona
+54c2540c746869163941b58d,Silmara,Fr***s,Technical Coordinator,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-14T16:14:51.000+00:00,held-off-persona
+5e8ac7f3c468260001483f09,Silmara,Pr***l,Technical Coordinator,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-01T21:48:51.000+00:00,held-off-persona
+5f0dab3d39bcc100014f8288,Augusto,Br***a,Technical Coordinator,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-20T21:45:30.616+00:00,held-off-persona
+674e1b0d6229d40001b16638,Fernanda,Mu***i,Technical Coordinator,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-14T03:59:12.000+00:00,held-off-persona
+6426c8c5f8d9df0001374261,Robson,La***o,Technical Coordinator,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-07T10:18:32.000+00:00,held-off-persona
+61eb98e89924a90001ee5181,Leonardo,Nu***s,Technical Coordinator,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-02T14:52:30.000+00:00,held-off-persona
+677646d1ba282300019e07e5,Leopoldo,Ma***s,Technical Coordinator,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-02T04:10:08.000+00:00,held-off-persona
+57dd0647a6da987b15655208,Thaynara,So***s,Technical Coordinator,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-07T08:38:00.000+00:00,held-off-persona
+57d8af02a6da985945240010,Luiz,Br***o,Technical Coordinator,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-29T12:02:46.000+00:00,held-off-persona
+68778371a4057d000122442c,Victor,So***s,Technical Coordinator,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-13T23:33:40.000+00:00,held-off-persona
+685240d19e072900010a365f,Igor,Ra***n,Technical Coordinator,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-06T13:38:59.000+00:00,held-off-persona
+5b3bc397a6da98a10abcd716,Kelly,Ca***l,Technical Coordinator,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-10T04:56:09.000+00:00,held-off-persona
+69afa9a6741f7c000143eb43,Brayan,Ch***s,Technical Coordinator,Bodytech Company,bodytech.com.br,Bodytech Company,2026-09-30T12:00:34.000+00:00,held-off-persona
+5f071ef4d1e0dc000191f2a4,Isaac,Mo***a,Technical Coordinator,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-10T06:08:06.000+00:00,held-off-persona
+626a52111990a2000137fc9e,Samuel,Go***s,Technical Coordinator,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-12T06:37:10.000+00:00,held-off-persona
+619e086465b5800001e7ab6f,Renan,Li***a,"Personal Trainer, Fundador",Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-19T04:59:41.940+00:00,held-off-persona
+65990a7f204856000131c7f0,Rafael,Sc***r,Sócio Conselheiro FHS Part,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-06T09:39:43.000+00:00,held-off-persona
+6215b1e147cf030001d7cef4,Andre,Ol***a,"Coordenador Técnico Bodytech Leblon Unidades 1, e 3",Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-04T14:33:55.000+00:00,held-off-persona
+667478a1f204e200011839e8,Leticia,Ro***a,Analista de Parcerias / Marketing de Influência,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-08T23:21:46.725+00:00,held-off-persona
+57df8f2ea6da980ac6bd946a,Elisangela,Or***s,Operations Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-09T05:04:17.000+00:00,enriched
+5c58e67980f93ea3caf77ad1,Camila,Ri***o,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-28T19:09:38.000+00:00,held-off-persona
+54a39ec57468693b8cd75505,Leonardo,Co***a,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-04T01:28:01.000+00:00,held-off-persona
+662b5455a262230007bb24cf,Eduardo,Qu***z,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-10T12:01:47.000+00:00,held-off-persona
+5f0afa43c9953f0001306264,Tamiris,Lo***o,Operations Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-03T15:02:52.000+00:00,enriched
+57de65b0a6da987ae494bba5,Rafaella,Ba***o,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-13T12:42:02.332+00:00,held-off-persona
+6878c7f63ee98e0001eb0cbb,Luciana,Ma***s,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-14T12:49:51.000+00:00,held-off-persona
+669e111424b396000136b921,Luanna,Fe***s,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-06T16:56:49.000+00:00,held-off-persona
+5d41bc2480f93e954c3a70af,Paulo,Pa***o,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-06T09:53:22.000+00:00,held-off-persona
+665ebd2db916130001b218b3,Tassia,Ca***o,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-03T06:54:20.000+00:00,held-off-persona
+612a587e025a6900017ed4c0,Larissa,Pa***n,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-04T01:29:58.000+00:00,held-off-persona
+602b3a856570380001ab6774,Gianlucas,Bi***o,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-15T06:37:26.000+00:00,held-off-persona
+5f6d9e9540a6850001038ce1,Aline,An***e,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-09T01:04:06.000+00:00,held-off-persona
+64805a0a6c5e1f0001ccefc0,Francyel,So***a,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-10T14:14:32.000+00:00,held-off-persona
+664e30d44ca8550001336fe3,Gabrielle,Fe***s,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-13T05:13:09.000+00:00,held-off-persona
+6432c14f612e4b00013af06b,Mariana,Bo***a,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-20T20:24:41.837+00:00,held-off-persona
+5f5c8cdce2f29e000181cd6b,Laudiane,Es***o,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-01T09:13:11.000+00:00,held-off-persona
+638f6f970765090001146809,Amanda,Fe***i,Operations Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-08T15:05:59.000+00:00,enriched
+68c740038478240001149967,Vania,Va***s,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-19T06:11:22.000+00:00,held-off-persona
+5e62967a7a098f0001c6c787,Marcos,Ba***s,Technical Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-23T17:18:43.000+00:00,held-off-persona
+67ce35f98dd542000179a21e,Vivian,Ol***a,Technical Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-29T20:28:54.000+00:00,held-off-persona
+66f9445d0aae410001c761d3,Fernanda,Pr***a,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-02T13:42:07.000+00:00,held-off-persona
+685ba2042ca3d7000148a051,Juliana,Ma***s,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-02T09:53:48.000+00:00,held-off-persona
+68f043386e8e250001b3969e,Bruno,Li***a,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-06T21:35:44.000+00:00,held-off-persona
+5d604aa9f651255c7d98c499,Rogerio,Mo***a,Technical Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-29T02:22:10.000+00:00,held-off-persona
+6212665cc60c240001d4749a,Hugo,Lo***s,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-03T02:34:47.000+00:00,held-off-persona
+655ed5db9195c200012aec6c,Gabrielle,We***s,Operations Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-02T05:48:05.000+00:00,enriched
+5ac3c986a6da9814f200cd52,Cristiano,Fr***s,Technical Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-03T15:15:12.000+00:00,held-off-persona
+68dcdcf4b1ec87000131c4b2,Alexandra,Al***r,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-13T14:40:58.000+00:00,held-off-persona
+6481d93b7f4b850001172bfd,Jessica,Te***a,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-08T17:16:03.000+00:00,held-off-persona
+57df22aaa6da9839c7ce70c6,Aryanne,Qu***z,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-07T13:31:45.000+00:00,held-off-persona
+57dd5110a6da987b6db06fc7,Marcelo,Gu***o,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-13T19:04:47.000+00:00,held-off-persona
+668178f41366a00001998317,Ohana,La***a,Operations Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-08T16:08:51.000+00:00,held-off-persona
+695ae3a44049aa000114674c,Victoria,Va***e,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-04T01:35:32.000+00:00,held-off-persona
+63596c3e3f957300015a7cb0,Rafaela,Fe***a,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-08T18:30:28.000+00:00,held-off-persona
+5e728056a6c60f00014a9bef,Monica,Al***s,Technical Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-10T06:33:56.000+00:00,held-off-persona
+621da09e61a92a000148b284,David,So***a,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-14T08:07:32.000+00:00,held-off-persona
+6481d8eae85f240001d5ed96,Aline,Fe***a,Operational Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-07T03:08:01.000+00:00,held-off-persona
+5e8405fc51d7b70001d532de,Carla,Cr***z,Technical Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-13T15:47:09.000+00:00,held-off-persona
+6481fc0d4945f20001b1d6d8,Henrique,Du***r,Technical Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-16T19:03:43.250+00:00,held-off-persona
+6426fc6cb1fdb5000172ff5f,Nadia,Ro***s,General Operations Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-24T01:27:21.000+00:00,held-off-persona
+54a715a0746869730aaab613,Koga,Ad***o,IT Manager,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-13T11:11:45.000+00:00,held-off-persona
+60e446f04491f00001b57109,Bruno,Fr***o,Director of Marketing and Technology,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-31T06:10:38.000+00:00,held-off-persona
+5e7973838d3c2f0001db7430,Bruno,Ca***r,Technical Fitness Coordinator,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-06T18:24:04.000+00:00,held-off-persona
+57df9e26a6da980ad27ad679,Paula,Va***o,Gerente Fitness em Academia.,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-29T00:22:58.000+00:00,held-off-persona
+613b037a0f2a200001d217af,Cassia,Re***l,Coordenaçao Técnica,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-03T07:35:50.000+00:00,held-off-persona
+6ab86ace4832ae0001cdcc77,Julio,Ma***o,Gerente Operacional — Bodytech Asa Sul,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-14T16:10:23.000+00:00,held-off-persona
+6239612db73f4f00016fffe7,Maria,Li***a,Nutritionist,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-13T23:47:19.000+00:00,held-off-persona
+67bef4561f62740001cd87f1,Rafael,Ro***s,Gerente Operacionaal,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-31T06:05:22.000+00:00,held-off-persona
+5d47df6680f93eac3e4c224d,Bruna,Co***a,Nutritionist,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-14T04:34:36.000+00:00,held-off-persona
+60b4fea22bb3a20001a5dc83,Marcela,Go***s,Nutritionist,Bodytech Company,bodytech.com.br,Bodytech Company,2026-11-02T22:48:46.000+00:00,held-off-persona
+6ad484fb5679390001f6efea,Icaro,Mo***s,Coordenador de Treinamento,Bodytech Company,bodytech.com.br,Bodytech Company,2026-10-14T08:17:32.000+00:00,held-off-persona
+67b8c56bd760d600019b44b4,Douglas,Ca***o,Co-Diretor de Operações,Allp Fit,allpfit.com.br,Allp Fit,2026-11-15T05:49:55.112+00:00,in-sales-nav
+6610e885248cc8000706d9ae,Anderson,Fr***o,Founder & CEO Allp Fit Academias,Allp Fit,allpfit.com.br,Allp Fit,2026-11-02T14:58:53.000+00:00,enriched
+6afe9a85f5186100016c862c,Felipe,Sa***s,Gerente de Operações Regional,Allp Fit,allpfit.com.br,Allp Fit,2026-11-09T06:30:55.000+00:00,held-off-persona
+688c7c709502fb0001da2f4e,Jean,Pi***e,Operations Director,Allp Fit,allpfit.com.br,Allp Fit,2026-10-06T17:57:41.000+00:00,enriched
+60d16b07ce1e1300018831e5,Ricardo,Am***l,"Group Product Manager, IT Head",Allp Fit,allpfit.com.br,Allp Fit,2026-10-30T23:54:08.000+00:00,in-sales-nav
+6199be2f77a49500014a5c62,Gabriel,Mo***a,Product Owner,Allp Fit,allpfit.com.br,Allp Fit,2026-10-12T06:44:19.000+00:00,enriched
+65e8b7021b8cd300073668a0,Guilherme,The,Product Owner,Allp Fit,allpfit.com.br,Allp Fit,2026-10-06T21:04:08.000+00:00,enriched
+6740b5308393940001cf7e42,Wellington,Bo***s,Executive Director,Allp Fit,allpfit.com.br,Allp Fit,2026-11-04T01:24:29.000+00:00,held-off-persona
+64638fa8d87e9e00010afe7a,Emerson,Ma***a,"Gerente de Massificados, Parcerias e Distribuição",Allp Fit,allpfit.com.br,Allp Fit,2026-10-24T06:25:54.000+00:00,enriched
+54a29f6d7468693fdaa2fb30,Luiz,Sa***s,Sócio Allpfit Academia Jd. Myrna,Allp Fit,allpfit.com.br,Allp Fit,2026-10-09T16:11:45.000+00:00,held-off-persona
+69857067f9f7b30001000524,Jose,Sl***a,Technical Manager,Allp Fit,allpfit.com.br,Allp Fit,2026-10-24T01:06:42.000+00:00,held-off-persona
+64764f0b57a649000191df17,Cristiano,F,Desenvolvimento de Novos Produtos - Health Tech | IA | PMO | Inovação,Allp Fit,allpfit.com.br,Allp Fit,2026-10-06T20:31:53.000+00:00,enriched
+64c155da30129a0001196e4e,Ursula,Ol***a,Busines Partner,Allp Fit,allpfit.com.br,Allp Fit,2026-09-29T16:43:45.000+00:00,enriched
+64ebc7a900e122000105560e,Agop,Tc***n,Head de Marketing Ops,Allp Fit,allpfit.com.br,Allp Fit,2026-10-25T14:42:31.000+00:00,held-off-persona
+6830b4a3988e3c0001f148e6,Aniele,Ca***s,Social Media na Agência Allp Comunicação,Allp Fit,allpfit.com.br,Allp Fit,2026-10-29T12:26:39.000+00:00,held-off-persona
+5e665fe1cbfd260001932dbd,Livia,Ma***a,Analista Sênior de Marketing e Social Media,Allp Fit,allpfit.com.br,Allp Fit,2026-11-04T15:19:50.000+00:00,held-off-persona
+618b562bfda3e10001089150,Thaysson,Co***o,Head Operações,Allp Fit,allpfit.com.br,Allp Fit,2026-10-28T20:14:28.000+00:00,in-sales-nav
+670009b5bc86df000115f4f9,Felipe,Pa***s,Chief Operations Officer,Action Black,actionblack.co,Action Black,2026-11-19T13:24:53.169+00:00,in-sales-nav
+57dd67dda6da987b0159e8c2,Esteban,Lo***a,CTO,Action Black,actionblack.co,Action Black,2026-11-14T21:49:53.742+00:00,enriched
+55704b7873696438735f7100,Wilder,To***s,CEO Action Black,Action Black,actionblack.co,Action Black,2026-11-07T16:49:59.000+00:00,in-sales-nav
+66c4a1501d13240001983e3d,Diego,Bu***e,Co-Founder,Action Black,actionblack.co,Action Black,2026-11-10T09:24:50.000+00:00,in-sales-nav
+669bdb6ad4817300014765c8,Laura,Go***z,Technical Coordinator,Action Black,actionblack.co,Action Black,2026-10-14T08:06:09.000+00:00,held-off-persona
+63167820aa84760001fc1983,Natasha,Va***a,Co-Founder & CINO,Action Black,actionblack.co,Action Black,2026-11-14T08:04:04.189+00:00,in-sales-nav
+54a557037468693b8c0a5690,Richard,La***i,Diretor Executivo Cia Athletica,Companhia Athletica,ciaathletica.com.br,Cia Athletica,2026-11-09T13:32:06.805+00:00,enriched
+6111657f7b243d0001a3c035,Viviane,Ro***e,Gerente de Operações e Experiência do Cliente,Companhia Athletica,ciaathletica.com.br,Cia Athletica,2026-10-23T22:53:08.000+00:00,enriched
+654605b8775a9200018e4747,Bia,Be***i,Gestora de dep. de Avaliação Física e Personal Trainer,Companhia Athletica,ciaathletica.com.br,Cia Athletica,2026-11-02T14:21:45.000+00:00,held-off-persona
+54ebad9574686943115e490c,Felipe,Ma***l,Technical Manager,Companhia Athletica,ciaathletica.com.br,Cia Athletica,2026-10-14T05:31:36.000+00:00,enriched
+5f560bb05d47c20001371c9c,Jorge,Al***s,Operational Manager,Companhia Athletica,ciaathletica.com.br,Cia Athletica,2026-10-10T21:23:50.000+00:00,enriched
+54ec3d20746869444cf8896c,Carla,Tr***o,Technical Manager,Companhia Athletica,ciaathletica.com.br,Cia Athletica,2026-10-11T12:20:04.000+00:00,enriched
+64248afca7ccfa0001dd8871,Jabim,Li***a,Technical Manager,Companhia Athletica,ciaathletica.com.br,Cia Athletica,2026-11-02T19:07:16.000+00:00,held-off-persona
+5abf6906a6da98cf21569f58,Ricardo,Re***s,Technical Manager,Companhia Athletica,ciaathletica.com.br,Cia Athletica,2026-10-14T06:45:02.000+00:00,held-off-persona
+57e06783a6da981c347168e7,Filipe,Le***l,Technical Manager,Companhia Athletica,ciaathletica.com.br,Cia Athletica,2026-11-02T13:21:30.000+00:00,held-off-persona
+645a597e5aaf8f00017d130a,Eduardo,Co***a,Technical Manager,Companhia Athletica,ciaathletica.com.br,Cia Athletica,2026-10-13T22:07:21.000+00:00,held-off-persona
+57e1ec8ea6da98090683f051,Luis,Co***a,Technical Manager,Companhia Athletica,ciaathletica.com.br,Cia Athletica,2026-10-13T15:33:29.000+00:00,held-off-persona
+613a1ae7fc933f0001519e54,Daniel,Sc***g,IT Manager,Companhia Athletica,ciaathletica.com.br,Cia Athletica,2026-10-20T17:34:02.161+00:00,held-off-persona
+66f816782273520001fe1484,Wallace,Fo***a,IT Manager,Companhia Athletica,ciaathletica.com.br,Cia Athletica,2026-11-18T09:52:10.707+00:00,held-off-persona
+57d4f9a9a6da98537a45af4e,Givanildo,Sa***s,IT Manager,Companhia Athletica,ciaathletica.com.br,Cia Athletica,2026-11-01T06:14:59.000+00:00,held-off-persona
+54a5786a74686938ac50d397,Giane,Bau,Gerente área Técnica Departamento Aquatico,Companhia Athletica,ciaathletica.com.br,Cia Athletica,2026-10-13T20:15:52.000+00:00,held-off-persona
+54ab1ad074686906303f6d1f,Givanildo,Br,IT Manager,Companhia Athletica,ciaathletica.com.br,Cia Athletica,2026-11-02T22:40:28.000+00:00,held-off-persona
+6108240fd481a800014a6023,Fernanda,Nu***s,IT Manager,Companhia Athletica,ciaathletica.com.br,Cia Athletica,2026-10-14T15:48:30.000+00:00,held-off-persona
+66a61252ed1aff0001f96960,Lilian,Es***o,Nutritionist,Companhia Athletica,ciaathletica.com.br,Cia Athletica,2026-10-14T06:59:22.000+00:00,held-off-persona
+5d4b806af65125cc7c90cf31,Ramon,Gu***o,Co-founder,BIGG Desarrollos,bigg.com.ar,BIGG,2026-10-01T20:28:03.000+00:00,enriched
+54a72c367468696de72b001c,Ruben,Gr***o,Managing Partner,BIGG Desarrollos,bigg.com.ar,BIGG,2026-10-29T21:15:01.000+00:00,enriched
+576aba97f3e5bb72d43dd5db,Jose,No***e,Chief Technology Officer,FITCO,fitcolatam.com,Fitco,2026-11-11T22:54:57.000+00:00,in-sales-nav
+687b8b108c5c040001d75a26,Alexander,Ma***r,CEO,FITCO,fitcolatam.com,Fitco,2026-11-19T22:16:04.721+00:00,in-sales-nav
+67150d740eaad10001611806,Domenica,Ca***o,Product Manager,FITCO,fitcolatam.com,Fitco,2026-11-18T13:43:43.213+00:00,enriched
+695b60a959db770001b045d4,Ivo,Pa***n,Operational Manager,Grupo Competition,competition.com.br,Competition Academia,2026-10-14T15:58:55.000+00:00,other-employer
+6741dfea9275960001aefe19,Julieta,An***i,Partner,BIGG Fit,bigg.fit,BIGG,2026-10-24T00:39:09.000+00:00,enriched
+66f9231e60e6500001876e35,Bautista,Le***r,Socio Gerente · BIGG Puerto Madero,BIGG Fit,bigg.fit,BIGG,2026-10-22T05:40:52.000+00:00,enriched
+54a6fd2074686968293dcc0a,Francisco,Bo***h,Gerente de Marketing & Business Development,BIGG Fit,bigg.fit,BIGG,2026-11-09T13:49:25.000+00:00,enriched
+662d4672848a1f00072e993d,Andres,Mo***o,Managing Partner,BIGG Fit,bigg.fit,BIGG,2026-10-08T00:28:45.000+00:00,enriched
+5fdb41e1eefd1d0001f78a5f,Guido,Gi***i,Presidente | Dirección de Operaciones y Negocio,BIGG Fit,bigg.fit,BIGG,2026-11-14T13:01:19.000+00:00,enriched
+61841ed1e5989a00010d067d,Guilherme,Ro***a,Chief Operations Officer (COO),Panobianco Academia,panobianco.com,Panobianco,2026-09-29T22:20:48.877+00:00,enriched
+54a7a3177468696829006e47,Rafael,Ra***y,Chief Operations Officer,Panobianco Academia,panobianco.com,Panobianco,2026-11-03T16:25:42.000+00:00,enriched
+6ab6094dc53c9d0001ea6806,Felipe,Ca***o,Chief Executive Officer,Panobianco Academia,panobianco.com,Panobianco,2026-10-27T15:41:01.000+00:00,enriched
+645a4539a06c4f000150ec73,Thyago,Sa***s,CEO,Panobianco Academia,panobianco.com,Panobianco,2026-10-31T05:32:38.000+00:00,enriched
+5e7bd372f30a5e00012d9738,Wanderson,Al***a,Gerente de Operações Regional,Panobianco Academia,panobianco.com,Panobianco,2026-11-04T02:28:25.000+00:00,enriched
+63ef7caccec05b0001cee0c3,Natalia,Ma***i,Gerente de Operações de Filiais,Panobianco Academia,panobianco.com,Panobianco,2026-10-08T22:26:09.000+00:00,enriched
+54a5b8b07468692abf99e7a2,Tamires,Ma***o,Regional Operations Manager,Panobianco Academia,panobianco.com,Panobianco,2026-10-06T14:20:47.000+00:00,enriched
+606c985e3fd10300016d0d5f,Celia,Mi***i,Digital Marketing and Communication Head,Panobianco Academia,panobianco.com,Panobianco,2026-10-20T05:57:31.000+00:00,enriched
