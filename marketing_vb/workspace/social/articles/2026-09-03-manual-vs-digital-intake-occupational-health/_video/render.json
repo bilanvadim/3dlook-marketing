@@ -1,0 +1,204 @@
+{
+  "formats": {
+    "reel": {
+      "file": "2026-09-03-manual-vs-digital-intake-occupational-health-reel.mp4",
+      "where": "3dlook-marketing-private/social-video/2026-09-03-manual-vs-digital-intake-occupational-health/2026-09-03-manual-vs-digital-intake-occupational-health-reel.mp4",
+      "sheet": "reel-sheet.jpg",
+      "ratio": "9:16",
+      "use": "Instagram Reels / Stories",
+      "width": 1080,
+      "height": 1920,
+      "duration": 19.2,
+      "bytes": 3985949,
+      "sha256": "2022a8d874afe21a",
+      "quality": "delivery",
+      "spec_sha": "be387edfbeffd6e0",
+      "template_sha": "04825e1f7b0a1e55"
+    },
+    "feed": {
+      "file": "2026-09-03-manual-vs-digital-intake-occupational-health-feed.mp4",
+      "where": "3dlook-marketing-private/social-video/2026-09-03-manual-vs-digital-intake-occupational-health/2026-09-03-manual-vs-digital-intake-occupational-health-feed.mp4",
+      "sheet": "feed-sheet.jpg",
+      "ratio": "4:5",
+      "use": "LinkedIn company page, Facebook, Instagram feed",
+      "width": 1080,
+      "height": 1350,
+      "duration": 19.2,
+      "bytes": 3535590,
+      "sha256": "0a6377f5365390c6",
+      "quality": "delivery",
+      "spec_sha": "be387edfbeffd6e0",
+      "template_sha": "04825e1f7b0a1e55"
+    }
+  },
+  "rendered_at": "2026-11-22T17:43:38+00:00",
+  "hyperframes": "0.9.1",
+  "url": "3dlook.ai/content-hub",
+  "sound": {
+    "rendered_at": "2026-11-22T17:43:50+00:00",
+    "earshot": "0.4.1",
+    "cues": [
+      {
+        "role": "land",
+        "sound": "pro_pop_in/round",
+        "at": 0.35,
+        "start": 0.349,
+        "end": 0.52,
+        "seed": 276866903,
+        "gain_db": -8.75,
+        "bed_db": 8.0,
+        "clean": true,
+        "warnings": [],
+        "over_bed_db": 10.1
+      },
+      {
+        "role": "whoosh",
+        "sound": "whoosh_fast/crisp",
+        "at": 4.687,
+        "start": 4.238,
+        "end": 4.938,
+        "seed": 420116625,
+        "gain_db": -3.87,
+        "bed_db": 9.0,
+        "clean": true,
+        "warnings": [],
+        "capped_db": 0.2,
+        "over_bed_db": 7.8
+      },
+      {
+        "role": "tick",
+        "sound": "pro_hover_tick/ping",
+        "at": 5.05,
+        "start": 5.049,
+        "end": 5.088,
+        "seed": 2094108523,
+        "gain_db": -3.85,
+        "bed_db": 3.0,
+        "clean": true,
+        "warnings": [],
+        "capped_db": 6.8
+      },
+      {
+        "role": "pop",
+        "sound": "ui_pop/soft",
+        "at": 9.804,
+        "start": 9.802,
+        "end": 9.982,
+        "seed": 1,
+        "gain_db": -6.85,
+        "bed_db": 8.5,
+        "clean": true,
+        "warnings": [],
+        "over_bed_db": 8.6
+      },
+      {
+        "role": "pop",
+        "sound": "ui_pop/soft",
+        "at": 10.804,
+        "start": 10.802,
+        "end": 10.987,
+        "seed": 15839,
+        "gain_db": -8.54,
+        "bed_db": 8.5,
+        "clean": true,
+        "warnings": [],
+        "over_bed_db": 9.7
+      },
+      {
+        "role": "pop",
+        "sound": "ui_pop/soft",
+        "at": 11.804,
+        "start": 11.802,
+        "end": 11.984,
+        "seed": 23758,
+        "gain_db": -6.97,
+        "bed_db": 8.5,
+        "clean": true,
+        "warnings": [],
+        "over_bed_db": 8.4
+      },
+      {
+        "role": "whoosh",
+        "sound": "whoosh_fast/crisp",
+        "at": 15.587,
+        "start": 15.136,
+        "end": 15.836,
+        "seed": 420132463,
+        "gain_db": -7.03,
+        "bed_db": 9.0,
+        "clean": true,
+        "warnings": [],
+        "over_bed_db": 9.4
+      },
+      {
+        "role": "ding",
+        "sound": "notify/mid_tine",
+        "at": 16.2,
+        "start": 16.197,
+        "end": 16.622,
+        "seed": 1,
+        "gain_db": -6.57,
+        "bed_db": 8.5,
+        "clean": true,
+        "warnings": [],
+        "over_bed_db": 8.0
+      }
+    ],
+    "bed": {
+      "licence": "CC BY 4.0",
+      "title": "Happy Beats / Business Moves Vol. 11",
+      "author": "Sascha Ende",
+      "source_url": "https://ende.app/en",
+      "file": "happy-beats-business-moves-vol-11-by-ende-dot-app.mp3",
+      "start_s": 28.62,
+      "beat_fit": {
+        "start_s": 28.62,
+        "tempo_bpm": 114.84,
+        "mean_miss_ms": 59,
+        "window_intensity": 0.95,
+        "miss_ms": {
+          "land@0.35": 3,
+          "whoosh@4.687": 126,
+          "tick@5.05": 34,
+          "pop@9.804": 17,
+          "pop@10.804": 62,
+          "pop@11.804": 118,
+          "whoosh@15.587": 15,
+          "ding@16.2": 63
+        }
+      }
+    },
+    "mix": {
+      "peak_dbfs": -1.01,
+      "true_peak_dbtp": -1.0,
+      "lufs_i": -14.2,
+      "limiter_max_db": 3.1
+    },
+    "formats": {
+      "reel": {
+        "file": "2026-09-03-manual-vs-digital-intake-occupational-health-reel-sound.mp4",
+        "where": "3dlook-marketing-private/social-video/2026-09-03-manual-vs-digital-intake-occupational-health/2026-09-03-manual-vs-digital-intake-occupational-health-reel-sound.mp4",
+        "ratio": "9:16",
+        "use": "Instagram Reels / Stories",
+        "width": 1080,
+        "height": 1920,
+        "duration": 19.2,
+        "bytes": 4463165,
+        "sha256": "1024065393625727",
+        "video_sha": "2022a8d874afe21a"
+      },
+      "feed": {
+        "file": "2026-09-03-manual-vs-digital-intake-occupational-health-feed-sound.mp4",
+        "where": "3dlook-marketing-private/social-video/2026-09-03-manual-vs-digital-intake-occupational-health/2026-09-03-manual-vs-digital-intake-occupational-health-feed-sound.mp4",
+        "ratio": "4:5",
+        "use": "LinkedIn company page, Facebook, Instagram feed",
+        "width": 1080,
+        "height": 1350,
+        "duration": 19.2,
+        "bytes": 4012806,
+        "sha256": "c4937d0e209ee544",
+        "video_sha": "0a6377f5365390c6"
+      }
+    }
+  }
+}

@@ -6,7 +6,7 @@
     "source_file": "workspace/seo/articles/2026-09-03-manual-vs-digital-intake-occupational-health/published-live-2026-09-21.md",
     "source_status": "published",
     "published_url": "https://3dlook.ai/content-hub/manual-vs-digital-intake-occupational-health-screening/",
-    "date": "2026-09-23"
+    "date": "2026-11-22"
   },
   "profiles": [
     {
@@ -100,5 +100,23 @@
       "reason": "posts_per_week: 0"
     }
   ],
-  "ready_for_review": true
+  "ready_for_review": true,
+  "video": {
+    "copy": "workspace/social/articles/2026-09-03-manual-vs-digital-intake-occupational-health/_video/video.json",
+    "status": "rendered",
+    "formats": {
+      "reel": {
+        "file": "2026-09-03-manual-vs-digital-intake-occupational-health-reel.mp4",
+        "ratio": "9:16",
+        "duration": 19.2,
+        "use": "Instagram Reels / Stories"
+      },
+      "feed": {
+        "file": "2026-09-03-manual-vs-digital-intake-occupational-health-feed.mp4",
+        "ratio": "4:5",
+        "duration": 19.2,
+        "use": "LinkedIn company page, Facebook, Instagram feed"
+      }
+    }
+  }
 }

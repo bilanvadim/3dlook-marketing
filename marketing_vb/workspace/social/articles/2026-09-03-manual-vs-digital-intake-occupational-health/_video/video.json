@@ -1,0 +1,8 @@
+{
+  "eyebrow": "Occupational health",
+  "hook": "Manual intake competes with testing for the same appointment.",
+  "stat": {"value": "<45 sec", "label": "for a guided two-photo scan that captures body measurements", "source": "FitXpress guided smartphone scan"},
+  "points": ["Move eligible steps ahead of the visit", "Keep equipment-based testing on-site", "Define a manual fallback before launch"],
+  "close": "When manual intake still fits, and when digital does",
+  "from_profiles": ["twitter-company", "instagram-company", "facebook-company", "linkedin-vadim"]
+}

@@ -1,7 +1,7 @@
 # Review digest — 2026-09-03-manual-vs-digital-intake-occupational-health
 
 Article: `workspace/seo/articles/2026-09-03-manual-vs-digital-intake-occupational-health/published-live-2026-09-21.md`
-Date: 2026-09-23
+Date: 2026-11-22
 Profiles: 9
 
 ---
@@ -233,6 +233,29 @@ Happy to share the full comparison article.
 > **Format:** text
 > **Adaptation:** No visual needed — native platform format.
 > **Keep:** n/a
+
+---
+
+## Video (HyperFrames)
+
+**Eyebrow:** Occupational health
+
+**Hook:** Manual intake competes with testing for the same appointment.
+
+**Stat:** <45 sec: for a guided two-photo scan that captures body measurements (Source: FitXpress guided smartphone scan)
+
+**Points:**
+- Move eligible steps ahead of the visit
+- Keep equipment-based testing on-site
+- Define a manual fallback before launch
+
+**Close:** When manual intake still fits, and when digital does → Read the full article
+
+**4:5** (19.2 s, LinkedIn company page, Facebook, Instagram feed): `3dlook-marketing-private/social-video/2026-09-03-manual-vs-digital-intake-occupational-health/2026-09-03-manual-vs-digital-intake-occupational-health-feed.mp4` · frames `_video/feed-sheet.jpg`
+
+**9:16** (19.2 s, Instagram Reels / Stories): `3dlook-marketing-private/social-video/2026-09-03-manual-vs-digital-intake-occupational-health/2026-09-03-manual-vs-digital-intake-occupational-health-reel.mp4` · frames `_video/reel-sheet.jpg`
+
+**Sound:** Happy Beats / Business Moves Vol. 11 (Sascha Ende, CC BY 4.0, no credit shown) · -14.2 LUFS · `3dlook-marketing-private/social-video/2026-09-03-manual-vs-digital-intake-occupational-health/2026-09-03-manual-vs-digital-intake-occupational-health-feed-sound.mp4` · `3dlook-marketing-private/social-video/2026-09-03-manual-vs-digital-intake-occupational-health/2026-09-03-manual-vs-digital-intake-occupational-health-reel-sound.mp4`
 
 
 ---
