@@ -73,6 +73,7 @@ tools: Read, Write, Grep, Bash
 - **Internal links (§11):** присутствуют 4 направления (up/side/down/trust). Отсутствует — добавь из плана.
 - **Down link на лендинг (`brand-assets/content-strategy/landing-map.md`):** URL совпадает с «Link now» строки хаба, стоит в первых 30% тела (считай по словам прозы), анкор из колонки «Anchors» и читается частью предложения. Стоит ниже — перенеси выше, не дублируй. Primary keyword лендинга не в H1/title статьи.
 - **FAQ (§14):** секция есть, ответы 2-5 предложений, включает «what FitXpress does not do» / «used for decisioning?» где relevant.
+- **Два CTA (`blog-style-guide.md` §5, с 2026-11-23):** ранний в первых 30% тела (считай по словам прозы) ведёт на лендинг; финальный в последней секции. Нет раннего — добавь, лишний mid-body CTA — убери (контекстная ссылка на лендинг в предложении — не CTA). Опубликованные до 2026-11-23 статьи под правило не переписываются.
 - **CTA (§15):** соответствует intent (soft/evaluation/direct), не форсированный demo в TOFU. «Book a demo» ведёт на `{лендинг}#demo` или «Demo button now» из карты, не на `/contact-us/` и не на форму статьи.
 
 ### Pass 3c — AI-tells sweep + self-check (обязательный)

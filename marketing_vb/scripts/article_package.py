@@ -303,6 +303,8 @@ def build_checklist(slug: str):
                      or l.lower().startswith("**scope note")
                      for l in top)
 
+    cta_ok, cta_note = _cta_placement(body, targets)
+
     g_len = _gate(lint, "prose length").get("info", {})
     words, target = g_len.get("prose_words"), g_len.get("target")
     g_links = _gate(lint, "internal links").get("info", {}).get("directions", {})
@@ -369,6 +371,7 @@ def build_checklist(slug: str):
                               if m1_title_only else "")),
         item("sentence_length", _gate(lint, "sentence").get("ok"),
              f"mean {_gate(lint, 'sentence').get('info', {}).get('mean_words')}"),
+        item("cta_placement", cta_ok, cta_note),
         item("faq_present", faq_at >= 0 and faq_qs >= 2,
              f"FAQ: {faq_qs} вопросов"),
         item("boundary_section", is_mt or not_do or scope_note,
@@ -388,6 +391,37 @@ def build_checklist(slug: str):
         "art_dir": art_dir, "final": final, "meta": _meta,
     }
     return items, ctx
+
+
+def _cta_placement(body: str, targets: dict):
+    """Two CTAs per article (blog-style-guide.md §5, Vadim 2026-11-23).
+
+    Mechanical half only: a link to the hub landing (pack `internal_link_targets.down`)
+    inside the first 30% of the body words, and one inside the last H2 section.
+    Whether the early link is a standalone CTA block and whether there is a stray
+    mid-body CTA is judgment (seo-editor, seo-publisher `cta_type`).
+    """
+    want = targets.get("down")
+    want = [want] if isinstance(want, str) else (want or [])
+    downs = {str(u).split("#")[0].strip() for u in want if str(u).startswith("http")}
+    if not downs:
+        return True, "n/a: в паке нет down-лендинга"
+    text = re.sub(r"<!--.*?-->", "", body, flags=re.S)
+    # image/cover concept lines are not prose; they would shift the 30% mark
+    text = "\n".join(l for l in text.splitlines()
+                     if not re.match(r"^\s*\((?:Cover|Image)", l, re.I))
+    total = len(re.findall(r"\w+", text)) or 1
+    links = [(m.start(), m.group(1).split("#")[0])
+             for m in re.finditer(r"\]\((https://3dlook\.ai/[^)\s]+)\)", text)]
+    pos = [round(100 * len(re.findall(r"\w+", text[:at])) / total, 1)
+           for at, url in links if url in downs]
+    last_h2 = max((m.start() for m in re.finditer(r"^## ", text, re.M)), default=-1)
+    closing = last_h2 >= 0 and any(at > last_h2 for at, url in links if url in downs)
+    early = any(p <= 30 for p in pos)
+    note = (f"ссылки на лендинг на {pos}% тела; ранний ≤30%: "
+            f"{'да' if early else 'НЕТ'}; финальный в последней H2: "
+            f"{'да' if closing else 'НЕТ'} (blog-style-guide §5, два CTA)")
+    return early and closing, note
 
 
 def _stop_rule(items, judgment_fails=0):

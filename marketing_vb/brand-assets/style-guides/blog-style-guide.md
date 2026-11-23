@@ -64,7 +64,7 @@ Apply this block to any new FX use-case article. MT articles do not use it.
 **Standard conclusion pattern:**
 1. **One-paragraph recap.** Reframe the main argument in plain terms.
 2. **Business value summary.** What changes operationally.
-3. **`### Next Steps` subsection (FX) or `## Final Thoughts` (MT older).** Single demo or contact CTA.
+3. **`### Next Steps` subsection (FX) or `## Final Thoughts` (MT older).** The closing demo or contact CTA, the second of the two CTAs (§5). The first sits in the first 30% of the body.
 4. **FAQ section (FX standard, optional MT).** 5–8 Q&A pairs in bold-question + plain-paragraph format. Repeat target keywords naturally in questions.
 
 ---
@@ -167,7 +167,16 @@ Use them when the argument is structurally a comparison. Don't force a table whe
 - Compliance-buyer audience (insurance, pharmacy, telehealth, employer wellness, Medicare Advantage) → **demo only**, never self-serve trial
 - MT/apparel audience → demo or trial both acceptable, depending on the buyer profile
 
-**One CTA per article. No banner-style "subscribe to our newsletter" mid-body.**
+**Two CTAs per article (Vadim, 2026-11-23). Every new article and every refresh:**
+
+1. **Early CTA, inside the first 30% of the article body** (counted by prose words). A short standalone block after the short answer or the first H2 section: one or two sentences, then a link with an action label. It goes to the hub's landing (the "Link now" column of `brand-assets/content-strategy/landing-map.md`), not to the demo form. The down link (landing-map rule 1) may sit inside this block or in a sentence before it.
+2. **Closing CTA, at the end** (`### Next Steps` or the last section). Demo or contact, linked as landing-map rule 4 says (`{landing}#demo`, or the "Demo button now" column).
+
+The wording of both follows intent: TOFU soft, MOFU evaluation, BOFU direct (`content-strategy-guidelines.md` §15). A TOFU article gets no demo push: both CTAs are soft links to the landing.
+
+No other CTAs: no mid-body CTA, no banner, no "subscribe to our newsletter" block. A contextual in-sentence link to the landing elsewhere in the body is an internal link, not a CTA. The eBook or checklist offer of landing-map rule 5 stays allowed when the plan names it, because it is a different offer.
+
+Published articles are not rewritten for this rule. `accuracy-drives-roi-digital-health` keeps its three CTAs (Review 1, 2026-11-02).
 
 ---
 

@@ -359,7 +359,7 @@ ________________
 
 
 15. Conversion guidance
-Each article needs a CTA that matches intent.
+Each article needs a CTA that matches intent. Two per article (Vadim, 2026-11-23): an early CTA in the first 30% of the body, linking to the hub landing, and a closing CTA at the end. Placement rules: `brand-assets/style-guides/blog-style-guide.md` §5.
 TOFU
 Use soft CTAs:
 * Learn how FitXpress supports structured body data capture.

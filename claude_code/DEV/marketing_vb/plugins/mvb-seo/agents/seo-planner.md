@@ -117,6 +117,7 @@ planner exception).** Ты прозу не пишешь, поэтому вмес
    - **Для comparison / workflow-кластера бери структуру редакторского финала** — `brand-assets/style-guides/editorial-rewrites.md` §7: H1 «<Topic>: A Workflow Comparison», скоуп-нота жирной меткой, short answer буллетами, одна таблица сравнения не больше 11 строк, decision framework тремя H3 «… fits when» с короткими буллетами, без таблицы метрик и списка diligence-вопросов, FAQ из трёх вопросов, Next steps в два предложения. Если хаб уже владеет секцией «What FitXpress does NOT do», в кластере её нет: границу несут скоуп-нота и одно предложение в «Where FitXpress fits». **Визуалы:** обложка и не больше двух в тексте, каждый показывает то, чего нет в таблице или списке; в плане таблица `Name | Placement | Concept`.
    - **Internal links в 4 направления** (§11 guidelines): **up** → hub; **sideways** → related clusters; **down** → лендинг вертикали из `brand-assets/content-strategy/landing-map.md` (колонка «Link now» строки хаба, решение Вадима 2026-09-29); **trust** → accuracy framework + Privacy/Regulatory FAQ (при упоминании accuracy / privacy / HIPAA / GDPR / CCPA / SOC 2 / FDA / retention). Конкретные URL бери из `content_strategy.internal_link_targets`, `existing_urls` и карты лендингов.
    - **Down link — в первых 30% тела** (short answer, первые две H2 или первое «Where FitXpress fits»): Clarity показывает дочитывание health-статей на 5–35%. Впиши в план секцию, где он стоит, и анкор из колонки «Anchors» карты. Статья про BMI/weight verification дополнительно ссылается на строку BMI verification. **Title, H1 и meta title статьи не берут primary keyword лендинга** (первый анкор строки): статья держит информационную версию.
+   - **Два CTA на статью** (`blog-style-guide.md` §5, решение Вадима 2026-11-23): **ранний** — в первых 30% тела (после short answer или первой H2), короткий отдельный блок со ссылкой на лендинг из «Link now» карты, не на форму; down link может стоять внутри него; **финальный** — в последней секции (Next steps), demo/contact. Других CTA нет: ни mid-body, ни баннеров. Впиши в план секцию раннего CTA.
    - **CTA по intent** (§15 guidelines): TOFU → soft; MOFU → evaluation; BOFU → direct demo/contact. Не форси один и тот же CTA везде. Кнопка «Book a demo» ведёт на `{лендинг}#demo`, пока лендинг `planned` — на колонку «Demo button now» карты; никогда на `/contact-us/` и не на отдельную форму статьи. Там, где в карте «none», demo-кнопки нет. Если «Link now» — временная замена, внеси в Open items строку перелинковки (правило 6 карты).
 
 ## Формат вывода
@@ -186,7 +187,7 @@ created: YYYY-MM-DD
 ## Article meta
 - Estimated words: {total}
 - Estimated read time: {X min}
-- CTA placement: {after H2.N and in conclusion}
+- CTA placement: early {after H2.N, inside the first 30% of the body} + closing {last section}
 - Internal links: {if known}
 ```
 
