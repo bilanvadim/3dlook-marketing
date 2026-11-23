@@ -1061,8 +1061,9 @@ def tab_values(r: dict) -> dict:
     d = [[TITLE],
          [f"FitXpress · Mobile Tailor · Wrist Measurement. Weeks run Monday to Sunday; data through Sunday "
           f"{fmt_day(end)} {end.year}; updated {_dt.date.today().isoformat()}. Sources: Google Search Console, "
-          f"GA4 (internal traffic excluded), HubSpot, Ahrefs. Definitions: tab About. Since March 2026 HubSpot "
-          f"under-reports contacts from organic search and AI (cookie banner): tab About, “Attribution caveat”."],
+          f"GA4 (internal traffic excluded), HubSpot, Ahrefs. Definitions: tab About. From March to 23 Oct 2026 "
+          f"HubSpot under-reported contacts from organic search and AI (cookie banner, now fixed): tab About, "
+          f"“Attribution caveat”."],
          [],
          ["Last 4 weeks vs previous 4", f"{fmt_day(last4[0])} – {fmt_day(end)}",
           f"{fmt_day(prev4[0])} – {fmt_day(prev4[-1] + _dt.timedelta(days=6))}", "Change"],
@@ -1236,13 +1237,15 @@ ABOUT = [
                  "position = Ahrefs organic keywords for 3dlook.ai on the Sunday of the week, top 100, “—” = not "
                  "in Ahrefs' top 100; Ahrefs tracks only some of our keywords, so Google is the main source. "
                  "Volume and KD = Ahrefs, monthly, US or UK. Keyword list: rank-keywords.csv in the marketing repo."],
-    ["Attribution caveat", "Since the cookie banner changed on 4 Feb 2026, HubSpot tracks a visitor only after "
-                           "they click Accept. Someone who accepts on a later page (often Contact us) gets HubSpot "
+    ["Attribution caveat", "Applies to 4 Feb – 23 Oct 2026 only. In that period the cookie banner let HubSpot track "
+                           "a visitor only after they clicked Accept. Someone who accepted on a later page (often Contact us) got HubSpot "
                            "original source Direct, even if they came from Google or ChatGPT. Work-email Direct "
                            "contacts whose first page view came from our own site went from about 13 a month (Jul "
                            "2024 – Jan 2026) to about 26 (Mar – Sep 2026). Estimate: HubSpot shows 30–45% fewer "
-                           "contacts from organic search than really came, from March 2026 on. This applies to "
-                           "the HubSpot contact, deal and sign-up rows. Google clicks (Search Console) and GA4 "
+                           "contacts from organic search than really came, from March to 23 Oct 2026. On 23 Oct 2026 "
+                           "the banner was limited to the EU and UK; in the four weeks after, such Direct contacts were "
+                           "back to about 11 a month, so contacts from 26 Oct 2026 on are attributed normally. This applies to "
+                           "the HubSpot contact, deal and sign-up rows of that period. Google clicks (Search Console) and GA4 "
                            "sessions are not affected; the decline in Google clicks is real. GA4 Direct sessions "
                            "tripled from July 2026 because of bot traffic (Singapore, US, China)."],
     ["Targets", "From the FitXpress SEO plan (2026-09-25), section 6. Mobile Tailor and Wrist have no targets yet."],
