@@ -3,6 +3,7 @@ date,area,event
 2026-02-04,Tracking,Cookie banner starts blocking HubSpot tracking until opt-in: organic contacts under-reported as Direct
 2026-02-05,Tracking,GA4 stops recording (outage until 2026-06-25)
 2026-06-25,Tracking,GA4 recording again
+2026-09-20,Search,"Automated US desktop impressions end (5 zero-click queries, ~9K impressions a week): impressions fall and CTR rises without any change in clicks"
 2026-10-01,Tracking,GA4 internal and developer traffic filters switched on
 2026-10-07,Tracking,GA4 generate_lead event starts
 2026-10-19,Search,Arabic-language consumer cluster is back: whole-site clicks rise without buyer-market growth
