@@ -3,139 +3,212 @@ slug: ai-body-scanning-for-fitness
 workspace: ai-body-scanning-for-fitness-refresh
 product: fitxpress
 stage: seo-editor
-input: draft-v1-writer.md
+round: Review 1 (EDIT round)
+input: v1/final.md + review-1.md + review-1-decisions.md
 output: final.md
-date: 2026-11-18
-verdict: PASS (article_lint, 10/10 gates)
+date: 2026-11-23
+verdict: PASS (article_lint 10/10, detector CLEAN)
+previous_report: v1/editor-report.md
 ---
 
-# Editor report: ai-body-scanning-for-fitness (refresh in place)
+# Editor report: ai-body-scanning-for-fitness, Review 1 round
 
-## Gates on final.md
+`review-1-decisions.md` is applied item by item to `final.md`. Nothing outside items A1, A2, A3, B1, B2, B3, and D3 changed. A body diff against `v1/final.md` touches only those items. The sections listed in decision E (short answer apart from B2 and the CTA, member journey apart from the example, S5, S7, the three FAQs, the scope note, Next steps) were not edited. Nothing in them was polished. The decisions file changed on disk during the round: A1's last bullet now cites the new `blog-style-guide.md` §5 two-CTA rule. I re-read it in full, and it needed no further change: the S6 landing link is a plain contextual sentence, not a CTA.
 
-`python3 scripts/article_lint.py workspace/seo/articles/ai-body-scanning-for-fitness-refresh/final.md`, **VERDICT: PASS**, all ten gates.
+## Result per decision
 
-| Measure | Writer draft | Final |
+| ID | Status in decisions | Result |
 |---|---|---|
-| Prose words (target 1,950, band 1,657-2,242) | 1,954 | 2,068 |
-| Sentences / mean words / p90 | 133 / 12.8 / 20 | 139 / 13.1 / 20 |
-| Over 25 / over 35 words | 0 / 0 | 0 / 0 |
-| Detector (`--channel article`) | CLEAN, 0.0 | CLEAN, 0.0, no soft markers |
-| Rhythm variation | 0.42 | 0.46 |
-| Links: up / side / down / trust | 1 / 5 / 1 / 2 | 1 / 5 / 1 / 2 |
-| Landing CTAs (share of prose before the link) | 15% / 59% / end | 15.4% / 60.0% / end, demo `#form` |
-| Claim IDs cited | 21 | 20 (FXS-LIFECYCLE dropped with the 3D model line) |
+| A1 | ACCEPT, VERBATIM | Done verbatim. The short-answer landing paragraph is unchanged. The two-sentence CTA paragraph follows it, then `[Explore FitXpress for fitness apps](https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/)` on its own line. It goes to the landing, not `#form`, at 15.7% of the body. Text only, no box. |
+| A2 | ACCEPT, CHANGED | New H2 verbatim. The section is 220 words with headings (v1: 307), the top of the 180-220 range. Two-sentence answer-first opening carrying FIT-CAPTURE and FIT-SDK. One sentence on in-club hardware, with BIA expanded at first use. Three H3 lists of three bullets each; the own-brand bullet was dropped. The pitch and outputs sentences were removed, with FXS-SPEED and FXS-OUTPUTS. The closing keeps both required sentences and the comparison link, and ends on the map anchor "mobile alternative to a gym body scanner" (69.0%). No heading reuses the landing H1. |
+| A3 | ACCEPT, VERBATIM | Inserted verbatim between "Scheduled check-ins." and "Coach review.". No gate failed on it, and no word was changed. |
+| B1 | ACCEPT | S4 went from 254 to 225 words with the H2. Adjust and Kidman are kept with their qualifiers, links, and claim comments. ACSM is cut to two sentences. Both internal links are kept, one sentence each. The verbatim question comes after the statistics, then "None of these sources tested body scans." and the measured-with-own-members sentence. The hypothesis is not repeated: the S4 sentence "A record of that change can give the member a reason to return…" was cut, and S8 keeps its own wording. |
+| B2 | ACCEPT concern, REJECT wording | The bullet is replaced verbatim with the canon line. The reviewer's "typically … after capture" is not used. |
+| B3 | ACCEPT | Primary-outcome wording added. The secondary metrics list is verbatim, in order, in one sentence. The reason is in the article's own words: "Return rates measure engagement; the secondary metrics also capture the friction a new step adds." No landing FAQ wording is used. The rest of S8 is unchanged. |
+| D3 | ACCEPT, VERBATIM | `meta_description` in the final.md frontmatter is replaced verbatim. meta.md and publish-package.md are not touched (out of scope for this round); see Open items. |
 
-The draft also passed every gate. The editing work was judgment: fixing the 3D-model claim, hedging unsupported lines, removing repeats, and breaking up the template structure.
+### What changed beyond the literal instruction, and why
 
-## QC fix pass (2026-11-18, QC 17/20)
+- **A2, length cuts.** Three cuts brought the section from 241 to 220 words:
+  - "A club can keep its device for visits and use phone scans between them." It is not on the decision's keep list, and it echoed the landing's comparison close in meaning ("An in-gym scanner still suits members who visit the club; FitXpress covers the check-ins between visits.").
+  - The lead-in "The choice turns on where members train and what each check-in has to record." The opening now states where a phone scan fits.
+  - "are not measured and" in the third progress-photo bullet. Bullet 2 already says the app needs no measurements.
+- **B1, Adjust.** "They count all app users, and paying members may behave differently." became part of the preceding sentence: "The figures are global and use 2022 data from all app users." The three qualifiers the decision names are kept. The paying-members caveat was cut for length.
+- **B1, ACSM.** The ACSM paragraph now leads with the finding ("Wearable technology ranked first and mobile exercise apps second in the American College of Sports Medicine (ACSM) 2027 Worldwide Fitness Trends, released October 20, 2026."). This keeps the sentence at 25 words. With the release date first it ran to 26. This also resolves the v1 QC open item: the ACSM paragraph's last two sentences stated a difference without a consequence, and they are now cut.
 
-The QC report is `workspace/_quality/seo/2026-11-18-ai-body-scanning-for-fitness-refresh.md`. The coordinator asked for items 1-5.
+## Deviations from VERBATIM lines and from the decision text
 
-1. **S7 evidence bullet, claims ambiguity.** It now reads: "FitXpress publishes its figures for body measurements: accuracy against expert pattern-maker tape measurements, and scan-to-scan repeatability. Its composition estimates are derived from those measurements." FIT-OUTPUTS-NOTE is added to the markers.
-2. **S7 answer.** It now reads: "FitXpress by 3DLOOK captures two smartphone photos inside the app through the FitXpress SDK. The API then delivers 80+ body measurements and body composition estimates to the app." There is no superiority claim.
-3. **S6 opening.** The answer now covers any studio: the scan runs in the studio's app or on its website, per the FIT-SDK web SDK. It states what the scan returns and drops the "hardware-free … no extra hardware" repeat. The H3 is now "A phone scan fits when".
-4. **Landing echoes.** Claim IDs are unchanged.
-   - The coach review no longer says "the same record"; the coach checks the change between two of the member's scans.
-   - The S6 bullet now reads "reviews scan results remotely".
-   - The S3 white-label close and the S7 SDK / recommended-setup sentences are reworded.
-   - S8 now argues why the comparison group and a pre-set threshold matter (season, campaign, another release). It no longer restates the landing's pilot steps.
-   - The onboarding-completion point is kept once (the S3 trade-off) and cut from S8.
-   - A 7-word n-gram check against `published-live-2026-11-13.md` now finds only canonical claim text: capture conditions, Pro plan feature names, output names, the NDA line, and FIT-OUTPUTS-NOTE.
-5. **Premium tier.** A hedged outcome line is added: "A cohort test can also show whether those views change how many members upgrade."
+No gate failed on any VERBATIM line, and no word inside a VERBATIM quote was changed. Three placement or wording choices, recorded so they can be checked:
 
-Also fixed: the S3 actor is now consistently "the product team" (QC C, actor drift).
+1. **B1 question, placement.** The question keeps every word, including the capital "Does". It sits after a colon in a lead sentence: "The question an app team can test is narrower: Does showing structured body progress increase the likelihood that a member returns for another check-in?" The lead gives it the "question a team tests" framing the decision asks for, without "this article", which is a hard ban. The full sentence is 25 words, within the gate. To make the question a standalone sentence, end the lead with a full stop instead ("…is narrower."); this has no gate impact.
+2. **A2, "an alternative" instead of "the alternative".** The bullet is an instruction, not a quote block. The sentence reads "…is an alternative to a hardware 3D body scanner". This keeps v1 coordinator decision 7, which replaced "the main alternative" to remove a ranking or market-share reading. The sentence still answers the AEO prompt plainly.
+3. **A2, "when it fits" is sentence 2, not sentence 1.** One sentence carrying the phone, the app or website, the hardware alternative, and the home/between-visits condition runs to 35 words. Following editorial-rewrites §1, sentence 1 is the answer (25 words) and sentence 2 is the condition: "It fits members who train at home or between club visits." Both claim comments sit at the end of that two-sentence paragraph.
 
-QC items not addressed in this pass (outside the 1-5 brief), now open items:
-- The ACSM paragraph's last two sentences state a difference without a product-team consequence.
-- The publish-package meta description differs from `meta_description` in final.md.
-- The package CTA positions and word count are stale. Use 15.4% / 60.0% / end and 2,068 words.
-- The hub's "seven in ten users… stop using a fitness app" framing differs from this page's Kidman wording.
+## Passes on the changed text
 
-## Fix pass after the package STOP (2026-11-18)
+- **Hard bans / detector:** CLEAN, with no hard_fails and no house_rule_violations.
+- **Terminology guardrails (judgment rows):**
+  - No `buyer`, `customer`, `organization`, `we/our`, or cluster labels in the new text.
+  - No corrective "X, not Y" or "rather than". The S6 trend-line sentence is a kept v1 sentence, and "does not report usage" is a qualifier.
+  - `you` appears only implied, in the CTA imperative, which is a practical block.
+  - The new link sentences use meaning-bearing anchors.
+- **Abbreviations:** ACSM and BIA are expanded at first use. No new abbreviation.
+- **Sentence length:** no new sentence is over 25 words.
+- **Landing echoes:** I ran a 7-word n-gram check of every changed paragraph against `workspace/pages/for-connected-and-digital-fitness/published-live-2026-11-13.md` and `published-live-2026-11-19.md`. It found no overlap. Landing copy appears only in the verbatim CTA, the verbatim B2 line, and the map anchors.
+- **Self-check** (also in the final.md frontmatter). These still read machine-like after the first apply, and are fixed:
+  - The trimmed Adjust paragraph ended on three clipped sentences.
+  - "For a single app" was vague.
+  - The B3 reason called premium conversion friction.
+- **Residual, accepted:**
+  - The S6 answer sentence and the phone-scan bullet repeat "train at home or between club visits". A2 requires both.
+  - The A3 example's last sentence echoes the frozen S3 line "The product team also decides what members and coaches see."
+  - "for fitness apps" appears 4 times: map anchors plus the verbatim CTA label.
 
-`article_package.py assemble` stopped on `boundary_section` and `scope_note_early`. Changes:
+## Gate outputs (final.md, after all edits)
 
-- Added a bold-label scope note after the intro, before the short answer. It sits at body line 12, inside the check's 40-line window, in the editorial-rewrites §7 shape. The text, verbatim: "**Scope note.** The scope is body scanning in fitness and coaching apps: member check-ins, progress views, and coach review. FitXpress is not a medical device. Interpretation of results and training decisions stay with the app and its coaches. The scan does not diagnose or assess health risk."
-- Removed the S2 bullet "What it does not do" (S2 now has four bullets) and the S5 boundary paragraph. The boundary is now stated once, in the scope note, and "FitXpress is not a medical device." appears once.
-- The scope note avoids "this article": the detector fails it everywhere, scope notes included.
-- Gates after the fix: lint PASS (10 of 10), 1,992 prose words, mean 13.1, 0 sentences over 25, detector CLEAN at 0.0.
-- I did not run `article_package.py` or any link check against 3dlook.ai. The package's 40-line scope-note test was reproduced locally on final.md and returns True.
-- Plan deviation: the plan said "no scope note; the medical-device line once in Section 5". The coordinator's fix overrides that.
+`python3 scripts/article_lint.py workspace/seo/articles/ai-body-scanning-for-fitness-refresh/final.md --report` (exit 0):
 
-## Coordinator decisions applied
+```
+workspace/seo/articles/ai-body-scanning-for-fitness-refresh/final.md
+mode: article
 
-1. **3D model.** The plain "a 3D model" is gone from the S2 output bullet and from the S5 output paragraph. The base output list is now 80+ body measurements, body composition estimates, and BMI/BMR as calculated metrics. 3D appears only as "3D Body Progress tracking and 3D Goal Visualization are features of the FitXpress Pro plan" (S3, FIT-PLAN). The Image 1 concept marks the 3D progress view as a Pro plan feature, and the cover concept now says "flat body silhouettes".
-2. **ACSM.** The Newswise link and the professional-survey framing stay. The ranking "reflects how widely more than 1,400 fitness professionals observe each trend, and it does not report usage."
-3. **"A record inside the platform."** Kept.
-4. **S3 opening.** Kept.
-5. **FAQ 1 heading.** The 17-word heading is now "Is a phone body scan the same as a DXA scan?" (10 words). DXA is expanded at its first body use, in the S7 bullet "Evidence with its reference": "…such as expert tape measurement or dual-energy X-ray absorptiometry (DXA)…". Gate 8 passes.
-6. **S8.** The four bold-label paragraphs are now three short prose paragraphs (about 120 words), focused on the decisions. They no longer mirror the landing's step layout. One change of substance: the test now fixes **one baseline placement**. In the draft, "test one placement, onboarding or the first check-in" sat next to a hypothesis that needed scans at both points.
-7. **Judgment lines.**
-   - "matters most in online coaching" is now a description: the coach may never meet the member, and the record gives the coach a view of body change.
-   - "the main alternative" is now "a hardware-free alternative". It carries no ranking or market-share claim.
-   - The lean mass line is now a limit of the estimates: "Lean mass is one of those estimates, and it is not a direct measure of muscle." It moved into the evidence-limits paragraph.
+[ok  ] hard bans (detect-ai-tells)
+         . detector_words: 2411
+         . ai_density: 0.0
+         . verdict: CLEAN
+         . rhythm_variation: 0.45
+[ok  ] prose length
+         prose words 2086 vs target 1950 (band 1657-2242)
+         . prose_words: 2086
+         . target: 1950
+[ok  ] claim traceability
+         . claims_used: ['FIT-ACSM', 'FIT-ADJUST', 'FIT-BODY-PROGRESS', 'FIT-CAPTURE', 'FIT-EVIDENCE-LIMIT', 'FIT-KIDMAN', 'FIT-OUTPUTS-NOTE', 'FIT-PLAN', 'FIT-RTPV', 'FIT-SDK', 'FIT-WHITELABEL', 'FXS-ACCURACY', 'FXS-DELIVERY', 'FXS-IDS', 'FXS-MEDICAL', 'FXS-OUTPUTS', 'FXS-POPULATION', 'FXS-REPEAT', 'FXS-SCOPE', 'FXS-SPEED']
+         . claims_known: 24
+[ok  ] banned claims
+[ok  ] superseded figures
+[ok  ] internal links
+         . links_total: 14
+         . links_distinct: 9
+         . asset_urls: 0
+         . directions: {'up': 1, 'sideways': 5, 'down': 1, 'trust': 2}
+[ok  ] keyword placement
+         . keyword: ai body scanning for fitness
+         . occurrences: 2
+         . h2_count: 9
+         . in_first_paragraph: False
+[ok  ] abbreviations (M1)
+[ok  ] accuracy discipline
+         . accuracy_figures_present: True
+         . links_to_framework: True
+[ok  ] sentence length
+         . limits: article (mean <= 16, <= 6% over 25, <= 1 over 35)
+         . sentences: 138
+         . mean_words: 13.4
+         . p90_words: 21
+         . over_25: 0 (0.0%)
+         . over_35: 0
+         . near_duplicate_pairs: none
+         . repeated_phrases: ['for fitness apps x4', 'body composition estimates x4', 'the product team x3', 'inside the app x3', 'change between two x3', 'a fitness app x3']
 
-The three landing CTAs, the absence of competitor and client names, the verbatim §5 accuracy wording with the framework link in the same paragraph, "FitXpress is not a medical device." stated directly, and the Assel Sekerova byline (still an open item) are all unchanged.
+--- shape (descriptive, not gated) ---
+prose words 2086 across 9 H2 sections
+      173  AI body scanning for fitness: the short answer
+      394  Where does a body scan sit in a fitness app's member
+      225  How visible progress may affect fitness app retentio
+      247  What a phone body scan produces, and what it does no
+      220  When should fitness programs use phone scanning inst
+      234  What should a fitness app look for in smartphone bod
+      176  How to test a body scan with a member cohort
+      181  Frequently asked questions
+       38  Next steps
+  links 14 total, 9 distinct, by direction: {'up': 1, 'sideways': 5, 'down': 1, 'trust': 2}
+  primary keyword 'ai body scanning for fitness': 2 occurrences
+  claim markers 34: {'FIT-ACSM': 1, 'FIT-ADJUST': 1, 'FIT-BODY-PROGRESS': 2, 'FIT-CAPTURE': 3, 'FIT-EVIDENCE-LIMIT': 2, 'FIT-KIDMAN': 1, 'FIT-OUTPUTS-NOTE': 2, 'FIT-PLAN': 1, 'FIT-RTPV': 1, 'FIT-SDK': 2, 'FIT-WHITELABEL': 2, 'FXS-ACCURACY': 2, 'FXS-DELIVERY': 3, 'FXS-IDS': 1, 'FXS-MEDICAL': 1, 'FXS-OUTPUTS': 3, 'FXS-POPULATION': 1, 'FXS-REPEAT': 2, 'FXS-SCOPE': 1, 'FXS-SPEED': 2}
+  approved but uncited: FXS-GDPR, FXS-HIPAA, FXS-LIFECYCLE, FXS-RETENTION
 
-## What else changed (by pass)
+VERDICT: PASS
+Mechanics are clean. Judgment is still open: run quality-controller on whether
+the argument holds and whether each section earns its place.
+```
 
-- **Pass 1, citations.** Adjust, JMIR, and ACSM/Newswise each appear once. The accuracy framework is linked twice on purpose, once from each figure paragraph (repeatability, accuracy). accuracy-formulations §3.2 asks for this, and so does your "link in the same paragraph" rule. This is the one exception to dedup.
-- **Pass 2, flow.** The S4 H2 is now hedged: "How visible progress may affect fitness app retention". Its earlier wording stated a finding, while the section's own limit is that no source tested body scans (editorial-rewrites §4). The S8 lead repeated the intro's cohort-test sentence and was cut. The link sentences no longer all read "X covers Y".
-- **Pass 3, voice.**
-  - Added one expert trade-off in S3: a baseline at onboarding vs at the first check-in.
-  - Added two stated positions: separate trend lines per method (S6), and fallback-path results reported separately (S8).
-  - The tape-measure claim is hedged ("usually need a second person").
-  - The boundary paragraph uses positive scoping: "Interpreting a change for the member stays with the app and its coaches."
-- **Pass 3c.** Pass 1 introduced "The platform decides", an anthropomorphism hard fail. It now reads "The product team decides". The self-check is in the final.md frontmatter.
-- **Pass 3d, repetition.**
-  - The capture-conditions list now appears once (S3), and S8 refers to it.
-  - Reduced: "inside the app" x3, "come back" x2, "calculated … calculated", "onboarding, onboarding", and "a fitness app" from 4 to 3.
-  - Gate hints still printed: "the first check-in" x3 and "body composition estimates" x3. Both are topic phrases and stay.
-- **Pass 4.**
-  - M1: the FAQ 3 anchor "…FAQ" is now "FitXpress data, privacy, and security answers", removing the bare abbreviation.
-  - Banned words: none.
-  - M2: there is one negation per sentence.
-  - Numbers: all traced to `approved_claims`.
-  - Primary keyword: in the H1 and the S2 H2.
+`python3 brand-assets/style-guides/scripts/detect-ai-tells.py workspace/seo/articles/ai-body-scanning-for-fitness-refresh/final.md --channel article --summary` (exit 0; `--channel article` is the article profile; the default channel also returns CLEAN 0.0):
 
-## Guardrails audit
+```
+SEO / blog article · en · 2411 words
+AI density: 0.0/1000 (budget 6.0) -> low
+VERDICT: CLEAN — check the positive side (voice, varied rhythm, a stated boundary) and ship.
+```
 
-| Rule | Result |
-|---|---|
-| #1 substantiation | pass: unsourced comparatives hedged or removed |
-| #2 one number everywhere | pass |
-| #3 reserved words | pass: only in the §1.9 disclaimer |
-| #4 bare percentages | pass |
-| #5 caveats | pass: Adjust read as app users, Kidman as a median, ACSM as a survey, "None of these sources tested body scans." |
-| #6 medical framing | pass: "FitXpress is not a medical device." |
-| #7 conditional equivalence | pass: FAQ 1, the guardrail sentence verbatim |
-| #8 diligence register | pass |
-| #9 reframe | pass: as a statement (intro, S5) |
-| #10 structure | pass |
-| #11 flag, don't decide | see the open items below |
-| M1 abbreviations | pass: SDK, API, BMR, ACSM, BIA, and DXA expanded; BMI and iOS bare; "IDs" kept bare inside the verbatim compliance sentence |
-| M2 stacked negation | pass |
-| M3 terminology pass | pass, with one judgment flag (item 2 below) |
+Landing-link placement, from `article_package._cta_placement` run on the body: links at 13.1% (S2 down link), 15.7% (A1 CTA), 69.0% (S6 contextual link), 99.0% and 99.5% (Next steps, demo `#form`). Early link at 30% or less: yes. Closing link in the last H2: yes.
 
-## Open items for the publish package
+| Measure | v1 (2026-11-18) | Review 1 round |
+|---|---|---|
+| Prose words (decision target about 2,000-2,150; band 1,657-2,242) | 2,068 | 2,086 |
+| Sentences / mean / p90 | 139 / 13.1 / 20 | 138 / 13.4 / 21 |
+| Over 25 / over 35 | 0 / 0 | 0 / 0 |
+| Detector | CLEAN 0.0, rhythm 0.44 | CLEAN 0.0, rhythm 0.45 |
+| S4 retention (words incl. H2) | 254 | 225 |
+| S6 hardware (words incl. H2/H3) | 307 | 220 |
+| S8 pilot | 142 | 176 |
+| Claim IDs cited | 20 | 20 (FXS-SPEED and FXS-OUTPUTS left S6 but are still cited in S2/S5/S7) |
 
-These are defects or decisions I found but did not resolve, plus deliberate deviations someone has to sign off.
+## Open items for the package
 
-1. **Byline.** The frontmatter names Assel Sekerova; the live byline is Dana Vioreanu (2024). This is her call.
-2. **Adjust source is on a vendor's blog** (`adjust.com/blog/…`). Terminology §1.3 says to avoid vendor blogs. Adjust is a mobile-measurement company, not a competitor, and this is its own benchmark data. FIT-ADJUST is approved in the pack and the landing uses the same source, so it stays. Asselya should confirm, or replace it with a neutral source carrying the same figures.
-3. **ACSM link** goes to ACSM's release on Newswise. If `https://www.acsm.org/2027-fitness-trends/` resolves at publish (it returns 403 from the VPS), the publisher may swap to it. The text does not change.
-4. **Two links to the accuracy framework** in consecutive S5 paragraphs. This is deliberate (see Pass 1). If Asselya prefers one, drop the link from the accuracy paragraph, as her 2026-09-11 final did.
-5. **DXA is first expanded in S7**, as an example reference method ("expert tape measurement or dual-energy X-ray absorptiometry (DXA)"), so that FAQ 1 can carry a short heading. Asselya should confirm the example reads right. The next sentence makes clear that FitXpress's figures are tied to tape measurement.
-6. **S8 is in prose, without bold labels**, at about 130 words against the plan's 210. The total length (2,068) stays inside the band.
-7. **Pilot design differs from the landing.** The article recommends fixing one baseline placement per test. The landing's pilot step 2 has one cohort scan "at onboarding and the first check-in". The two are compatible (the landing's version is the onboarding-baseline case) but can read as different advice. Align the wording if Asselya sees a conflict.
-8. **The S4 H2 differs from the plan**: "How visible progress may affect fitness app retention". This does not affect the meta title or description.
-9. **Re-check at publish:** `/fitxpress/for-connected-and-digital-fitness/` returns 200 and the `#form` anchor exists (verified 2026-11-18).
-10. **Post-publish internal links** (refresh-gap-analysis §6, not the editor's job):
-    - Add a down-link from the hub `ai-in-fitness-industry`.
-    - Add a link from `glp-1-muscle-loss-fitness-apps`.
-    - Update the old-title anchor on `remote-body-measurement-online-fitness-coaching` to the new H1.
+1. **D3 meta description in meta.md and publish-package.md.** Both still carry the v1 description. The publisher replaces it with the verbatim D3 text, which is already in the final.md frontmatter. Per the instruction, I did not touch either file.
+2. **Package CTA, position, and length lines are stale.** The `cta_type` and `landing_link` checklist lines describe a "hardware-alternative section" link at 60.0% as a CTA. Current state:
+   - 2,086 prose words.
+   - CTA 1 is the A1 block at 15.7%. The S2 down link "body scanning for fitness apps" is at 13.1%.
+   - The S6 link at 69.0% is a contextual internal link under the new `blog-style-guide.md` §5, not a CTA.
+   - CTA 2 is Next steps, landing plus `#form`.
+   - The S6 H2 is now "When should fitness programs use phone scanning instead of in-club hardware?".
+   The context pack's `internal_link_targets.down` note ("CTA 1 … CTA 2 mid, CTA 3 end") predates the two-CTA rule.
+3. **A1 rendering note for the web team.** "Explore FitXpress for fitness apps" may be rendered as a button. The markdown is a plain link on its own line.
+4. **B2 rationale vs the live landing (for Vadim / landing owner).** The decisions file says the live landing says "results in under 45 seconds", not "after capture". The 2026-11-19 snapshot hero says "with results in under 45 seconds after capture" (`workspace/pages/for-connected-and-digital-fitness/published-live-2026-11-19.md`, line 11). The article follows canon (`tech-spec.md` line 71, `proof-points.md` line 50), so the article is correct. But the landing hero carries a capture-split variant the canon rules out, and the reviewer cited the landing as her reason. Decide whether the landing hero aligns to "under 45 seconds from the photos to structured results". The article does not change either way.
+5. **C1, answer to the reviewer.** "3DLOOK's accuracy claims have not been peer-reviewed or externally validated through a third-party clinical study." is canon VERBATIM (`accuracy-formulations.md` §1.9) and is unchanged. If newer validation documentation exists, the canon changes first (Vadim), then the article.
+6. **D2 meta title.** v1 is kept: "AI Body Scanning for Fitness: Where a Phone Scan Fits". The reviewer's title contains the landing's primary keyword (landing-map rule 3). If a brand suffix is wanted, the publisher offers one variant of 60 characters or less without the keyword, for example "AI Body Scanning for Fitness: Member Journey | 3DLOOK".
+7. **S4 length against the decision's baseline.** The decisions file gives v1 S4 as "about 330" words. By `article_lint` it was 254 (raw `wc` 267). The mandated content alone is about 200 words: Adjust with qualifiers, Kidman with qualifier, two-sentence ACSM, two link sentences, the question, and the two kept sentences. The section now runs 225 with the H2. If it should be tighter, the next cut is "Early in a program, weight can change slowly while body measurements shift." because the intro already shows that scene. The weight-loss link sentence would then need its own antecedent.
+8. **Resolved in the QC fix pass below (fix 3, coordinator override).** Original note: **Repeat across a frozen section (for QC awareness).** The A3 example ends "The app determines which results to show and how to use them." The S3 closing paragraph (section E, frozen) says "The product team also decides what members and coaches see." If QC flags it, the fix in a later round is to cut the S3 sentence, not the verbatim example.
+9. **Demo anchor in the landing map.** The Hub 1 row says "Demo button now: same page", which by rule 4 implies `#demo`. The live landing anchor is `#form` (snapshot 2026-11-13), and Next steps uses `#form` (unchanged). Re-check `#form` at publish, as v1 already noted. The map owner may want the Hub 1 row to state `#form`, as the insurance row does.
+10. **Carried from v1 (decision F):**
+    - Byline (Assel Sekerova vs the live Dana Vioreanu).
+    - Adjust vendor-blog source (terminology §1.3).
+    - ACSM link swap from Newswise to acsm.org if it resolves at publish.
+    - Illustrations for Kristina (the cover and Image 1 concepts are unchanged; no concept refers to the hardware section).
+    - 3 post-publish inbound-link edits: hub `ai-in-fitness-industry`, `glp-1-muscle-loss-fitness-apps`, and the anchor on `remote-body-measurement-online-fitness-coaching`.
+    - The hub's "seven in ten users… stop using a fitness app" framing vs this page's Kidman wording.
+    - Two framework links in S5 (deliberate).
+    - DXA first expanded in S7.
+    - The pilot-design wording vs the landing's pilot step 2. Still compatible, but B3 now adds secondary metrics the landing also lists. The wording is the article's own.
+11. **FAQPage JSON-LD** is unchanged: the FAQ questions did not change.
+
+## QC fix pass 2026-11-23 (QC 18/20)
+
+QC report: `workspace/_quality/seo/2026-11-23-ai-body-scanning-for-fitness-refresh-review-1.md`. The coordinator agreed with it, and I applied its five fixes exactly as given. Fixes 2 and 3 edit section-E text under the coordinator's override, because the A3 example had re-created the repeats. The A3 example is unchanged.
+
+1. S6 opening: "It fits members who train at home or between club visits." became "It fits members who train away from the club, at home or between visits." The bullet "Members train at home or between club visits." is unchanged.
+2. S3 Coach review: the lead "Before planning the next training block," is cut. The sentence is now "The coach can check the change between two of the member's scans." The rest of the paragraph is unchanged.
+3. S3 closing paragraph: "The product team also decides what members and coaches see." is deleted. FIT-WHITELABEL stays.
+4. S4: "A product team can test a narrower question." The question follows verbatim, as a standalone sentence.
+5. S6 last sentence: "Integration details and plans are on the FitXpress page for a [mobile alternative to a gym body scanner](landing)." The anchor is unchanged.
+
+Gates after the fixes:
+- `article_lint.py --report`: PASS, all 10 gates. 2,074 prose words. 138 sentences, mean 13.3, p90 21, 0 over 25, 0 over 35. near_duplicate_pairs none.
+- `detect-ai-tells.py --channel article --summary`: CLEAN, density 0.0, rhythm 0.45.
+- Landing links at 13.2% / 15.8% (CTA) / 68.9% / 99.0% / 99.5%.
+- An internal 7-gram check leaves only the two accepted repeats: the intro and the A2-prescribed S6 phrase "a guided scan on the member's own phone", and the canonical output phrase in S2 and S7.
+- S6 is now 225 words with headings against A2's 180-220. Fix 1 adds 3 words. This is the coordinator's wording, and the flag is in meta.md open item 10.
+
+Package: meta.md open item 9 (S3 repeat) is marked resolved. The cta_type and landing_link positions are refreshed to 15.8 / 13.2 / 68.9. Open item 10 now also carries the S6 length. `python3 scripts/article_package.py assemble ai-body-scanning-for-fitness-refresh` rebuilt publish-package.md: mechanics 19/19, judgment 8/8, STOP-rule OK, 2,074 words.
 
 ## Inputs
 
-I read `draft-v1-writer.md`, `writer-notes.md`, `plan.md`, `refresh-gap-analysis.md`, the context pack, the live landing snapshot (`workspace/pages/for-connected-and-digital-fitness/published-live-2026-11-13.md`, for the overlap check), and the canon files: terminology-guardrails (full pass), hard-bans-card, editorial-guardrails, editorial-rewrites, accuracy-formulations, compliance, ai-tells-sweep, landing-map, content-strategy-guidelines §8/9/11/14/15, about-me, and the relevant parts of blog-style-guide. I did not read `plan-audit.md`: the seo-editor prompt routes it to the publisher and to people, not to the editor.
+I read `review-1-decisions.md` in full, twice (it changed mid-round), along with `review-1.md`, `final.md` / `v1/final.md`, `v1/editor-report.md`, and the context pack (claim texts for FXS-SPEED, FIT-CAPTURE, FIT-SDK, FIT-ADJUST, FIT-KIDMAN, and FIT-ACSM). I also read:
+- `hard-bans-card.md`
+- `terminology-guardrails.md` Part 1
+- `editorial-rewrites.md` §1-8
+- `landing-map.md`
+- `blog-style-guide.md` §5
+- `tech-spec.md` line 71 and `proof-points.md` line 50
+- the landing snapshots of 2026-11-13 and 2026-11-19
+- `refresh-gap-analysis.md` around line 103
+`plan.md` was background only and was not changed. Untouched: meta.md, publish-package.md, plan.md, and v1/. Nothing was committed.
