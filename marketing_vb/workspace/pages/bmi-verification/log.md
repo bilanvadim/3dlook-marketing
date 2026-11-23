@@ -71,3 +71,25 @@
   button pattern), legal@ instead of privacy@ (we asked for privacy@, as on the fitness page), «in this flow» height
   hedge (height verification is on the 2027 roadmap), extra «scale photo» row in the methods table (scope).
 - Russian reply drafted: `reply-2026-11-16-asselya-v7-ru.md`. Vadim: «спочатку висновки тут покажи», then «коміт та пуш та відправ у слак» → SENT as a text reply in thread 1792656114.772339 (ts 1794838086.310489), no files.
+
+## 2026-11-23: check of Asselya's mockup v8 (Vadim: «Асселя скинула сторінку бми в канал маркетинг. перевір»)
+
+- Source: same thread 1792656114.772339, broadcast reply 2026-11-23 (ts 1795450109.538419, mentions Vadim + Kristina):
+  «версия с учётом последних комментариев», file `3dlook-bmi-verification-mockup-v8.html` (F0CL27H6S2X, 186,502 bytes)
+  → `asselya-v8-2026-11-23.html`, text `asselya-v8-2026-11-23.txt`.
+- v7 → v8 diff = text only (10 changed HTML lines, no layout/CSS change). All 7 items of the 11-16 reply applied:
+  (1) bariatric card → `/content-hub/bariatric-pre-qualification-mobile-3d-body-scanning/` (200; anchor kept «Explore
+  bariatric programs ↗»); (2) RTPV line in «Pose and clothing information»; (3) Erakulis added, order UK Meds, Yazen,
+  Knosis, Warrior, BeMap, Healthyr, Burlington, Erakulis; (4) meta description 148; (5) «FitXpress is 3DLOOK's
+  body-scanning software, available as web and mobile SDKs and an API» in «What is BMI verification?»; (6) H2 «What
+  FitXpress returns»; (7) «becomes the baseline for follow-up».
+- Links: all internal targets 200; CDC returns 403 to curl (bot block, same source as before). `/fitxpress/for-
+  bariatric-programs/`, `/fitxpress/for-glp-1-programs/`, `/for-online-pharmacies/` still 404 (not linked).
+- Detector `--channel page`: no hard bans, AI density 0.0; direct address 18.5/1,000 (was 19.5; soft); 2 «emoji» =
+  ✳ ✓ UI glyphs in the mock; acronym hits are mockup labels. «review» 22, «supplied height» 7 (soft, left).
+- Still open before publication: liveness card still «Coming soon» (roadmap: ready for release; Vadim 11-18 «буде
+  готова» by 23–25.11 → product confirmation needed); production schema Service + FAQPage + BreadcrumbList; shared
+  form `FX | LP | Demo` at `#demo`; drop noindex + mockup banner. When `/for-online-pharmacies/` ships, the pharmacy
+  card's route stays on the compliance guide (it owns «online pharmacy BMI verification»); the landing gets linked
+  from the card text or a second link — decide then.
+- No judge round (text-only fixes of the agreed list). Reply `reply-2026-11-23-asselya-v8-ru.md` SENT on Vadim's «відправ відповідь потім коміт та пуш» as a text reply in thread 1792656114.772339 (ts 1795455160.671859).
