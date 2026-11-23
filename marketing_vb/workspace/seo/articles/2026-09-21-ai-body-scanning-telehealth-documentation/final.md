@@ -57,8 +57,8 @@ changes_summary: |
   - I: five measures kept; "Each of those is something the program measures..." and "Baselines
     taken before launch..." cut (now steps 4 and 1); five-step numbered framework added in the
     decision's order; FX-012 limitation kept.
-  - J: closing CTA links the telehealth landing with the anchor "book a demo of FitXpress for
-    telehealth intake" (pricing deep link removed). No other promotional text.
+  - J (Vadim 2026-11-23: "як Аселя хоче"): closing CTA links the pricing demo deep link (#bd-modal-personalized), anchor "book a demo of FitXpress for
+    telehealth intake". The landing links stay at ~9% (early) and ~42% (E1). No other promotional text.
   - K: FAQ 4 opens with the protocol condition and the Body Progress / scan ID sentence; the
     dataset, below-1-cm and framework-link sentences are unchanged. FAQ 5 added verbatim.
   - L, M: no new AI mentions, no client count, no roadmap features; all seven required URLs present,
@@ -255,7 +255,7 @@ No. FitXpress provides remote body-data capture and structured scan outputs thro
 
 ## Next steps
 
-Compare the inputs the program collects today against what the record has to carry at review, and name the fields that arrive inconsistently. Then [book a demo of FitXpress for telehealth intake](https://3dlook.ai/structured-body-data-for-telehealth-digital-health-programs/).
+Compare the inputs the program collects today against what the record has to carry at review, and name the fields that arrive inconsistently. Then [book a demo of FitXpress for telehealth intake](https://3dlook.ai/pricing/#bd-modal-personalized).
 
 Related reading:
 

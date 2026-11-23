@@ -8,7 +8,7 @@ category: Telehealth
 ## Judgment checklist
 
 - [x] intro_hook: opens on a concrete failure (three body-data inputs, three formats, one record) and names the cost in sentence 4 of the first section.
-- [x] cta_type: BOFU direct. Early CTA = reviewer's in-sentence landing link after the scope note; closing CTA = "book a demo of FitXpress for telehealth intake" in Next steps (last H2, after the FAQ). No mid-body CTA block.
+- [x] cta_type: BOFU direct. Early CTA = reviewer's in-sentence landing link after the scope note (~9%); closing CTA = "book a demo of FitXpress for telehealth intake" in Next steps (last H2, after the FAQ) → https://3dlook.ai/pricing/#bd-modal-personalized (Vadim 2026-11-23: as the reviewer asked; the page script opens the demo popup from the hash). No mid-body CTA; the E1 landing link is an in-sentence internal link.
 - [x] landing_link: down link = telehealth landing (landing-map Hub 2, "Link now"), first at ~9% of the body (inside 30%). Anchor "body scanning API for telehealth platforms" (landing-map rule 2) sits on the contextual E1 link at ~42%. The early link uses the reviewer's own anchor, not a map anchor. Demo = "same page" per the map; the pricing deep link is open question 1.
 - [x] anchors_sources: 11 links, anchors are descriptive and distinct (landing anchors differ per spot); all 11 go to 3dlook.ai, so there is no external source at all (same as v1, see Open items); no vendor blogs.
 - [x] cannibalization: BMI verification is a link only (pharmacy guide); hub and engagement article are Related reading; no GLP-1 monitoring or engagement section; the Hub 2 landing keyword is absent from title, H1 and meta (landing-map rule 3).
@@ -52,7 +52,7 @@ category: Telehealth
 12. G, deviation 3 (split into two sentences). The decision's two clauses were 37 words joined, so they are two sentences and sit as the closing paragraph of S7. HIPAA and GDPR are now first used and expanded there, so S8's HIPAA sentence lost its expansion.
 13. H. S8 opens with the photo sentence (FX-015, "within 30 days"). Output retention ends "or a deletion request applies". GDPR sentence is the canonical verbatim form. Reason: canon wording; privacy FAQ link kept, nothing restated.
 14. I. Five measures kept; the five-step pilot framework added in the decision's order. Two sentences cut as duplicates of steps 1 and 4. FX-012 population limitation kept. No numbers or outcome claims.
-15. J. Closing CTA now links the telehealth landing with the anchor "book a demo of FitXpress for telehealth intake"; the pricing deep link is removed. Reason: blog-style-guide section 5 and landing-map rule 4. Open question 1.
+15. J. Closing CTA keeps the pricing demo deep link https://3dlook.ai/pricing/#bd-modal-personalized, as the reviewer asked (Vadim's ruling 2026-11-23; verified: the page script opens the bd-modal-personalized popup from the hash), with the new anchor "book a demo of FitXpress for telehealth intake". This is an approved exception to blog-style-guide section 5 / landing-map rule 4 (closing CTA to the landing) for this article. The mid-article touchpoint is the in-sentence landing link in E1, not a CTA block (section 5: no mid-body CTA).
 16. K. FAQ 4 opens with the capture-protocol condition and the Body Progress by scan ID sentence; the dataset, below-1-cm and framework-link sentences are unchanged. FAQ 5 added verbatim. FAQ 1-3 unchanged.
 17. Section order (coordinator). FAQ moved above Next steps; Related reading stays under Next steps. Reason: house order, and the closing CTA must sit in the last H2 (blog-style-guide section 5). No wording changed.
 18. QC fix pass (QC 16/20, coordinator rulings in the QC report). Eight wording fixes: the S6 hedge rewritten and the correction sentence moved to the end of the paragraph; "not a clinical diagnostic tool" opens its S7 paragraph; the compliance sentence names who stays responsible; E1 names the program as the actor for record mapping and EHR work; "Between visits" says the program links each scan ID to its own patient record; the pilot says why the baseline comes first; "Before clinician review" names the clinical team. Reason: repetition, vague actors (review §3). No external source added (HHS blocked automated access), see Open items.
@@ -101,15 +101,15 @@ Positions are the share of body text before the link (script measure may differ 
 | /content-hub/fitxpress-admin-panel-launch/ | Admin Panel launch announcement | FitXpress Admin Panel for scan management | ~44% |
 | /content-hub/fitxpress-data-privacy-security-regulatory-faq/ | FitXpress data, privacy, security, and regulatory FAQ | Data handling, retention, and access | ~72% |
 | /content-hub/mobile-body-scanning-accuracy/ | mobile body scanning accuracy framework | FAQ 4 | ~92% |
-| /structured-body-data-for-telehealth-digital-health-programs/ | book a demo of FitXpress for telehealth intake | Next steps (closing CTA) | ~98% (script 97.7%) |
+| /pricing/#bd-modal-personalized | book a demo of FitXpress for telehealth intake | Next steps (closing CTA) | ~98% |
 | /content-hub/the-potential-of-ai-in-telehealth/ | AI in telehealth: workflows, privacy, patient experience, and remote body data use cases | Related reading | end |
 | /content-hub/mobile-body-scanning-patient-engagement/ | How mobile body scanning improves patient engagement | Related reading | end |
 
-Handoff note for the web team: the early link sentence can render as written (it is a sentence with an inline link, not a button block). Closing CTA anchor text: "book a demo of FitXpress for telehealth intake". If Vadim picks the pricing deep link, change only that URL.
+Handoff note for the web team: the early link sentence can render as written (it is a sentence with an inline link, not a button block). Closing CTA anchor text: "book a demo of FitXpress for telehealth intake". The closing CTA goes to https://3dlook.ai/pricing/#bd-modal-personalized (Vadim 2026-11-23); check the demo popup opens after publishing.
 
 ## Remaining approval questions
 
-1. Vadim: closing CTA target. Telehealth landing (current, blog-style-guide section 5 and landing-map rule 4) or the pricing demo deep link https://3dlook.ai/pricing/#bd-modal-personalized that the reviewer asked for (verified working 2026-11-23: the page script opens the bd-modal-personalized popup from the hash). Only the URL would change.
+1. Closing CTA target: DECIDED (Vadim 2026-11-23): the pricing demo deep link https://3dlook.ai/pricing/#bd-modal-personalized, as the reviewer asked. Re-check at publish that the popup opens.
 2. Product: which technical processing fields appear in the API response and which in the Admin Panel. The article says only that not every field appears everywhere.
 3. Product: is the Admin Panel still selected-clients-only with no public sign-up? The launch post was last updated 2026-07-08.
 4. Carried from v1: three inbound-link spots on glp-1-market and the-potential-of-ai-in-telehealth; illustrations (the Doc's Illustrations tab is empty).
@@ -174,7 +174,7 @@ Verdict: holds. All mandatory fixes (A to M) are in, product claims are verified
 
 ## Open items
 
-- Closing CTA target: Vadim decides landing vs pricing deep link (question 1).
+- Closing CTA: pricing demo deep link (Vadim 2026-11-23). The package checklist line cta_placement reports "closing landing link not in last H2" by design: the closing CTA goes to pricing, the landing links sit at ~9% and ~42%.
 - Product: API-response vs Admin Panel technical fields (question 2); Admin Panel still selected-clients-only (question 3). FX-013 and FX-014 rest on a launch post last updated 2026-07-08.
 - Carried from v1: three inbound-link spots on glp-1-market and the-potential-of-ai-in-telehealth; illustrations tab empty.
 - Reviewer notice: B sentence carries the API/SDK expansion; E2 H3 has "for scan management"; FAQ sits above Next steps.

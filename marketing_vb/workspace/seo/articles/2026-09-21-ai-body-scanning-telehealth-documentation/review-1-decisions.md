@@ -196,6 +196,10 @@ Keep v1's point that both routes leave a retrievable record with a timestamp, bu
   link, only the URL changes.
 - Do not add any other promotional paragraph.
 
+**Vadim's ruling, 2026-11-23 (after the round): "застосовуй як Аселя хоче".** The closing CTA links
+`https://3dlook.ai/pricing/#bd-modal-personalized`, as the reviewer asked. Anchor unchanged. Exception
+to §5 / landing-map rule 4 for this article only; the rule itself is not changed.
+
 ## K. FAQ: ACCEPT.
 
 - KEEP the four questions word for word. Update answers only where this round changed a claim:
