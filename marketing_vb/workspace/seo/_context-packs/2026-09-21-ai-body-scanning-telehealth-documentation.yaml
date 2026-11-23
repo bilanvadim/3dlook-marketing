@@ -77,6 +77,24 @@ context_pack:
       source: "accuracy-formulations.md §5 'Population limitation' (verbatim); proof-points.md Dataset table row 'Population not established'. Approved for publication by Vadim 2026-09-11 (editor's final of the occupational-health intake article)."
       note: "Added by coordinator 2026-09-21 at edit stage: seo-editor placed it in the pilot-design section (the third sentence fits a workflow article per §5's own usage note). Carries no figures."
 
+    # --- Added 2026-11-23 by the coordinator for Review 1 (Asselya), see review-1-decisions.md §V ---
+    - id: FX-013
+      text: "FitXpress Admin Panel, first version (publicly documented): aggregates scans made with the client's API keys; scans are separated into tabs by API-key environment (for example primary and sandbox keys); records can be sorted (date, gender, height, weight, age, result status) and filtered (gender, date, result); result statuses are Success, Failed and Pending; an individual scan view shows the scan details and measurement information, with 80+ measurements on request; selected records can be downloaded as CSV; API Settings show the main API key, scan allowance, billing history and the next charging date."
+      source: "Live launch post https://3dlook.ai/content-hub/fitxpress-admin-panel-launch/ (published 2026-06-02, updated 2026-07-08, read 2026-11-23); roadmap.md row 'Admin panel: photo-deletion date, failed-scan messages' = Live."
+      note: "Do NOT name the other environment tabs from the post (they carry client or integration names). Do NOT mention the Clothes Detector results the post shows in the scan view: roadmap.md keeps clothing information at the 2026-10-07 safer level until release. Canon framing first (tech-spec.md, Vadim 2026-09-23): optional, complementary interface for monitoring and exporting results; does not replace API/SDK integration."
+    - id: FX-014
+      text: "The first version of the FitXpress Admin Panel is available to selected FitXpress clients; there is no public sign-up, and client credentials are provided directly by the 3DLOOK team."
+      source: "Live launch post, section 'Availability' (read 2026-11-23)."
+      note: "Status may have changed since 2026-07-08: open question to product in review-1-decisions.md §V."
+    - id: FX-015
+      text: "Photos are deleted immediately after processing, or within 30 days following processing, per the customer's instructions; any retained photo is automatically blurred and face obfuscation is applied at capture. Measurements, body composition data and 3D models are retained on an ongoing basis unless the customer agreement says otherwise or a deletion request applies."
+      source: "compliance.md §3 (live trust FAQ, 2026-09-16); CLAUDE.md §12."
+      note: "Write 'within 30 days', not 'up to 30 days'. Link the privacy FAQ instead of restating more."
+    - id: FX-016
+      text: "Body Progress compares two scans by their scan IDs, chosen by the customer. 3DLOOK does not track individuals or determine whether two scans belong to the same person. The customer controls scan scheduling, the integration, patient association, documentation requirements and clinical review."
+      source: "compliance.md §4 and §6-7; CLAUDE.md §12."
+      note: "Write 'the program compares scans it selects' or 'scan-to-scan comparison', never 'FitXpress tracks each patient over time'. Progress data is informational, not diagnostic."
+
   claims_NOT_to_use_here:
     - "UK Meds case / a full BMI-verification eligibility workflow explanation — WRONG page. online-pharmacy-bmi-verification-a-2026-compliance-guide (section 'How to verify BMI remotely in a telehealth workflow', live since 2026-08-24) owns telehealth BMI verification and eligibility-support workflow. This documentation article links to it, never re-explains the workflow (Hub 2 boundary update, content-plan.md:136)."
     - "Yazen named — Vadim's 2026-09-19 decision ('язен не згадуємо') applies by default to any weight-loss-platform case in FitXpress content. If a customer example is needed here at all, write 'a weight-loss management platform', no geo attached. This documentation article likely does not need a named case at all — it can illustrate with a generic telehealth-program scenario."
