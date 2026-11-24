@@ -20,6 +20,8 @@ WHAT IT WRITES (one Google Sheet, owned by vadim.bilan@3dlook.me; sharing is don
                 contacts by original source (AI assistants apart from organic) and deals from AI
   Leads by form GA4 generate_lead by form_name, weekly, since the event exists (2026-10-07)
   Contacts by page  work-email contacts by first page seen, last 12 months: top 30 pages, source split, forms
+  Lead path         work-email contacts of the last 24 months by month and first page seen, with the
+                    HubSpot lifecycle stage they stand at now (MQL, SQL, opportunity, customer)
   Recent contacts   every work-email contact of the last 90 days: source, first page, first form, fx_vertical,
                     a link to the HubSpot record (no names or emails: the Sheet is open to the whole domain)
   Rankings      keyword x country: Ahrefs position now, change, Google avg position, last 12 weeks
@@ -565,7 +567,7 @@ def collect_hubspot(start: _dt.date, end: _dt.date) -> dict:
     window = [{"propertyName": "createdate", "operator": "GTE", "value": lo},
               {"propertyName": "createdate", "operator": "LT", "value": hi}]
     props = sorted(set(hr.PROPS) | {"createdate", "hs_analytics_source", "hs_analytics_source_data_1",
-                                     "icp_segment", "fx_vertical"})
+                                     "icp_segment", "fx_vertical", "lifecyclestage"})
     contacts = hubspot_search("CONTACT", [{"filters": window + [{"propertyName": "first_conversion_event_name",
                                                                   "operator": "HAS_PROPERTY"}]}], props)
     inbound, dropped = [], defaultdict(int)
@@ -605,7 +607,8 @@ def collect_hubspot(start: _dt.date, end: _dt.date) -> dict:
                         "organic": src in ("ORGANIC_SEARCH", "AI_REFERRALS"),
                         "source": SOURCE_LABEL.get(src, "Not set"), "source_detail": p.get("hs_analytics_source_data_1"),
                         "page": page_label(p.get("hs_analytics_first_url")), "form": form or None,
-                        "fx_vertical": p.get("fx_vertical"), "id": p["_id"]})
+                        "fx_vertical": p.get("fx_vertical"), "id": p["_id"],
+                        "stage": p.get("lifecyclestage")})
 
     deals = []
     for d in hubspot_search("DEAL", [{"filters": window}],
@@ -821,7 +824,7 @@ def build(end: _dt.date, gsc_pages, gsc_arab, gsc_kw, ga, hs, ahr, kws, state, g
 
 # ------------------------------------------------------------------ sheet values
 
-TABS = ["Dashboard", "Weekly", "Monthly", "Leads by form", "Contacts by page", "Recent contacts", "Rankings",
+TABS = ["Dashboard", "Weekly", "Monthly", "Leads by form", "Contacts by page", "Lead path", "Recent contacts", "Rankings",
         "Rank history", "Top pages", "Events", "About", "_chart"]
 PAGE_DAYS, PAGE_TOP, RECENT_DAYS = 365, 30, 90
 BLUE, ORANGE, AQUA, YELLOW, MAGENTA, GRAY = "#143DFF", "#EB6834", "#1BAF7A", "#EDA100", "#E87BA4", "#A8A8A8"
@@ -845,6 +848,43 @@ def pct_change(cur, prev):
     if not prev or cur is None:
         return None
     return (cur - prev) / prev
+
+
+# HubSpot lifecycle stage -> how far the contact got. Churned (56837266) was a customer. Disqualified
+# (54977858), Other, Contact (44205152) and Subscriber say nothing about the stage reached before.
+STAGE_RANK = {"lead": 1, "marketingqualifiedlead": 2, "salesqualifiedlead": 3, "opportunity": 4, "customer": 5,
+              "evangelist": 5, "56837266": 5}
+PATH_MONTHS = 24
+
+
+def path_start(end: _dt.date) -> _dt.date:
+    """First day of the month PATH_MONTHS - 1 months before the month of `end`."""
+    k = end.year * 12 + end.month - 1 - (PATH_MONTHS - 1)
+    return _dt.date(k // 12, k % 12 + 1, 1)
+
+
+def lead_path_rows(contacts: list[dict], end: _dt.date) -> list[list]:
+    """Month x first page, long format (for Looker): how many work-email contacts and how far they got."""
+    start = path_start(end)
+    agg = defaultdict(lambda: [0, 0, 0, 0, 0, 0])
+    for c in contacts:
+        if not c["work"] or not start <= c["day"] <= end:
+            continue
+        rank = STAGE_RANK.get(c.get("stage") or "", 0)
+        a = agg[(c["day"].replace(day=1), c["page"] or "(not set)")]
+        a[0] += 1
+        for i, need in enumerate((2, 3, 4, 5), start=1):
+            a[i] += rank >= need
+        a[5] += rank == 0
+    rows = [["Month", "First page seen", "Page group", "Product of the page", "Leads (work email)",
+             "MQL or further", "SQL or further", "Opportunity or further", "Customers (incl. churned)",
+             "Disqualified, Other or no stage"]]
+    for (month, page), a in sorted(agg.items(), key=lambda kv: (kv[0][0], -kv[1][0], kv[0][1])):
+        on_site = page.startswith("/")
+        group = (page_group(page) if on_site else "(not set)" if page == "(not set)" else
+                 "Meetings link" if page.startswith("meetings.hubspot.com") else "Other site")
+        rows.append([month.isoformat(), page, group, page_product(page) if on_site else None, *a])
+    return rows
 
 
 def tab_values(r: dict) -> dict:
@@ -1222,6 +1262,13 @@ ABOUT = [
                          "(any source), top 30 pages. First form = the first form or meeting they converted on. "
                          "A page outside 3dlook.ai is shown with its host. Small numbers: read it as a list of "
                          "what brought people in, not as conversion rates."],
+    ["Lead path", "Work-email inbound contacts of the last 24 months, one row per month and first page HubSpot saw "
+                  "them on, with the lifecycle stage they stand at today. “SQL or further” = SQL, Opportunity, "
+                  "Customer or Churned now. It is the current stage, not history: a contact disqualified after "
+                  "SQL counts as Disqualified, so the SQL figures are a lower bound. They also depend on how "
+                  "consistently sales set the stages. Only the first page counts: an article read on a later "
+                  "visit gets nothing. Feb 4 – Oct 23, 2026: the cookie banner hid the first page for part of "
+                  "the contacts (they show /contact-us/)."],
     ["Recent contacts", "Every work-email inbound contact of the last 90 days, newest first. Source detail = "
                         "HubSpot's drill-down (the AI assistant's site, the referring domain, the import type). FX "
                         "vertical is set by the shared FitXpress landing form. No names or emails here; HubSpot = a "
@@ -1374,7 +1421,7 @@ def write_sheet(sid: str, meta: dict, v: dict) -> None:
     nweekly = len(v["Weekly"][0])
     widths = {"Weekly": (100, nweekly, 105), "Monthly": (120, len(v["Monthly"][0]), 105),
               "Leads by form": (100, len(v["Leads by form"][0]), 115),
-              "Contacts by page": None, "Recent contacts": None,
+              "Contacts by page": None, "Lead path": (100, 10, 120), "Recent contacts": None,
               "Rank history": None, "Rankings": None, "Top pages": None, "Events": (100, 3, 130)}
     for t, spec in widths.items():
         sh = tabs[t]
@@ -1400,6 +1447,8 @@ def write_sheet(sid: str, meta: dict, v: dict) -> None:
         "userEnteredFormat.numberFormat")
     fmt(tabs["Monthly"], 1, size["Monthly"][0], 0, 1, {"numberFormat": {"type": "DATE", "pattern": "mmm yyyy"}},
         "userEnteredFormat.numberFormat")
+    fmt(tabs["Lead path"], 1, size["Lead path"][0], 0, 1, {"numberFormat": {"type": "DATE", "pattern": "mmm yyyy"}},
+        "userEnteredFormat.numberFormat")
     RH = tabs["Rank history"]
     for i, px in enumerate([110, 50, 260, 60, 90, 300, 110, 110, 100]):
         width(RH, i, i + 1, px)
@@ -1408,6 +1457,7 @@ def write_sheet(sid: str, meta: dict, v: dict) -> None:
     for i, px in enumerate([440, 180, 130, 100, 110, 100, 110, 120, 110, 110, 100, 110]):
         width(TP, i, i + 1, px)
     width(tabs["Events"], 2, 3, 700)
+    width(tabs["Lead path"], 1, 2, 420)
     fmt(TP, 1, size["Top pages"][0], 3, 12, {"numberFormat": {"type": "NUMBER", "pattern": "#,##0.#"}}, "userEnteredFormat.numberFormat")
     CP = tabs["Contacts by page"]
     for i, px in enumerate([420, 130, 130, 100, 100, 100, 90, 420, 100]):
@@ -1593,11 +1643,14 @@ def run(args) -> int:
     gsc_brand = collect_gsc_brand(HISTORY_START, end)
     gsc_kw = collect_gsc_keywords(HISTORY_START, end, kws)
     ga = collect_ga4(HISTORY_START, end)
-    hs = collect_hubspot(HISTORY_START, end)
+    hs_long = collect_hubspot(min(HISTORY_START, path_start(end)), end)   # Lead path needs 24 months
+    hs = {**hs_long, **{k: [x for x in hs_long[k] if x["day"] >= HISTORY_START]
+                        for k in ("contacts", "deals", "signups")}}
     ahr = collect_ahrefs(kws, sundays, state, use_api=not args.no_ahrefs)
     save_state(state)                            # keep the paid-for Ahrefs snapshots even if the Sheet fails
     r = build(end, gsc_pages, gsc_arab, gsc_kw, ga, hs, ahr, kws, state, gsc_core, gsc_brand)
     v = tab_values(r)
+    v["Lead path"] = lead_path_rows(hs_long["contacts"], end)
     print(f"gsc page rows {len(gsc_pages)}, keyword rows {len(gsc_kw)}, ga4 landing rows {len(ga['landing'])}, "
           f"hubspot contacts {hs['raw_contacts']} → inbound {len(hs['contacts'])} (dropped {hs['dropped']}), "
           f"deals {len(hs['deals'])}, MT sign-ups {len(hs['signups'])}, ahrefs snapshots {len(ahr)}", file=sys.stderr)
