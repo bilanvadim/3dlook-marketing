@@ -28,6 +28,7 @@ context_pack:
     - id: FXS-SPEED
       text: "Two photos (front + side); structured outputs in under 45 seconds."
       source: "proof-points.md, Speed table"
+      note: "REVIEW 1 (2026-11-24, R1-5): the only public timing definition is tech-spec.md 'under 45 seconds from the photos to structured results'. Write it in that form; no 'returns ... in under 45 seconds', no processing-only or capture-only split, no 'typically'."
     - id: FXS-OUTPUTS
       text: "80+ body measurements; body composition outputs: BMI, BMR, fat %, lean mass, fat mass, essential fat, beneficial fat."
       source: "proof-points.md, Output coverage (verbatim)"
@@ -43,7 +44,7 @@ context_pack:
     - id: FXS-REPEAT
       text: "For most evaluated measurements, repeated scans showed typical scan-to-scan differences of less than 1 cm"
       source: "accuracy-formulations.md §1.2"
-      note: "SECONDARY, for the 'why cadence/comparability matters' section. Write '< 1 cm' / 'below 1 cm', locked convention. Directly relevant: it's the reason scan-to-scan entries in a progress record are comparable at all."
+      note: "SECONDARY, for the 'why cadence/comparability matters' section. Write '< 1 cm' / 'below 1 cm', locked convention. Directly relevant: it's the reason scan-to-scan entries in a progress record are comparable at all. REVIEW 1 (R1-6): the paragraph carrying it also carries the NDA line (accuracy-formulations.md §1.8 / §5 short form: 'Detailed methodology is available under a non-disclosure agreement.') and the framework link. No accuracy percentage in that paragraph."
     - id: FXS-POPULATION
       text: "FitXpress was not specifically trained on data representing people with physical disabilities, and its measurement performance has not been established for this population. This matters when a disability affects the standard standing pose or capture sequence. In those cases, the program needs a documented alternative measurement path."
       source: "accuracy-formulations.md §5; Vadim approval 2026-09-11"
@@ -62,7 +63,7 @@ context_pack:
     - id: FXS-LIFECYCLE
       text: "Submitted data: front/side photos + gender + height + optional weight. Generated data: body measurements, weight/BMI-related outputs, body composition estimates, a 3D model, scan-to-scan comparison outputs. Technical data: capture-quality/pose-validation flags, clothing classification, face-obfuscation confirmation, processing logs with timestamps and request metadata."
       source: "compliance.md §3"
-      note: "SECOND ANCHOR CLAIM. This three-part breakdown (submitted / generated / technical) is close to the article's actual spine — 'what goes into the record' maps almost directly onto it. Do not invent record fields beyond this list plus FXS-OUTPUTS."
+      note: "SECOND ANCHOR CLAIM. This three-part breakdown (submitted / generated / technical) is close to the article's actual spine — 'what goes into the record' maps almost directly onto it. Do not invent record fields beyond this list plus FXS-OUTPUTS. REVIEW 1 (2026-11-24, R1-1, R1-3) NARROWS THIS FOR THE ARTICLE: the 'Technical data' list stays the canon of what the system records (compliance.md §3), but tech-spec.md (superseded on new pages since 2026-10-07) and roadmap.md (Clothing Detector: no payload flags or classes) forbid describing it as part of the returned record. In this article the third group is FXS-RECORD-STATUS only. Photos are the capture input and are not kept as entry fields (FXS-PHOTOS)."
     - id: FXS-RETENTION
       text: "Measurements, body composition data and 3D models are retained on an ongoing basis unless the customer agreement says otherwise; deletion is by scan identifier on the customer's request."
       source: "compliance.md §3/§4"
@@ -75,6 +76,38 @@ context_pack:
       text: "FitXpress is not a medical device."
       source: "compliance.md; Vadim 2026-09-11 (4th-state rule)"
       note: "Direct statement, never 'positioned as'."
+    # ---------------- added 2026-11-24 for Review 1 (coordinator, from the sources named on each line) ----------------
+    - id: FXS-RECORD-STATUS
+      text: "For each scan, FitXpress returns a processing status, a timestamp and the scan identifier. The program records what it controls itself: the version of the capture instructions and whether a manual fallback stood in for the scan."
+      source: "tech-spec.md Clothing Detector status line ('the returned record is described as processing status and timestamps', superseded on new pages since 2026-10-07); compliance.md §3-§4 (deletion and Body Progress by scan identifier); review-1 R1-1"
+      note: "The ONLY description of the third group ('Logged about the capture'). Never: capture-quality flags, pose-validation flags or results, clothing classification or any clothing information, face-obfuscation confirmation, request metadata, 'failed pose validation', 'usable pose'. Face obfuscation belongs to the privacy FAQ. The second sentence is the program's own logging, a recommendation, not a FitXpress output."
+    - id: FXS-RTPV
+      text: "During capture, Real-Time Pose Validation (RTPV) gives pose and framing guidance."
+      source: "tech-spec.md (2026-10-07 safer level) + roadmap.md row 'Real-Time Pose Validation (RTPV)': Live"
+      note: "Optional, at most once, in 'The capture log'. RTPV output is never described as part of the record. No voice prompts (roadmap.md: native apps still in testing). No '2.0'."
+    - id: FXS-PHOTOS
+      text: "Photos are the input to the capture. Gender, height and an optional self-reported weight stay in the entry as their own fields; the stored entry holds the outputs, and photo handling follows the deployment terms the program agreed."
+      source: "compliance.md §3 lifecycle table (photos deleted immediately after processing or within 30 days, per the customer's instructions; outputs stored); review-1 R1-3"
+      note: "No retention periods in the article body; the privacy section links the FAQ. Never say a photo stays in the entry as a field."
+    - id: FXS-MUSCLE-FIELDS
+      text: "Lean mass and fat mass estimates sit in every entry, next to the weight figure. Circumferences at the waist, hips, thighs and upper arms show where the change happened. A scan-to-scan comparison places two entries the program selects side by side. These figures support clinician review."
+      source: "tech-spec.md 'Body composition outputs' (lean body mass, fat body mass) and 'Circumferences' (waist, low hips, thigh, bicep = upper arm); compliance.md §4 Body Progress (two scans the customer selects); the live sibling https://3dlook.ai/content-hub/glp-1-muscle-loss-fitness-apps/ uses 'waist, hip, thigh, and upper-arm circumferences'; review-1 R1-4"
+      note: "For the new H2 'What programs measure when the question is muscle loss'. Body sites verified against tech-spec.md: all four are in the list. Composition figures are estimates. No fat % or lean-mass accuracy numbers (roadmap.md: no body-composition figures until the lab report)."
+    - id: FXS-MUSCLE-LIMITS
+      text: "FitXpress does not assess muscle strength, muscle function or sarcopenia. Where a protocol names dual-energy X-ray absorptiometry (DXA) or bioelectrical impedance analysis (BIA), that method stays in place."
+      source: "compliance.md §7 scope (no diagnosis or clinical assessment); FXS-MEDICAL; banned_claims 'replaces DXA, BIA'; review-1 R1-4"
+      note: "DXA and BIA are expanded HERE, at first prose use. The FAQ H3 and answer then use the short forms DXA and BIA (M1)."
+    - id: FXS-CLIENTS
+      text: "3DLOOK has worked with 100+ clients."
+      source: "CLAUDE.md §1 (public form only '100+ clients', Vadim 2026-09-30); proof-points.md"
+      note: "Optional, early CTA only, only if it fits the sentence. No other client-count form, no client names in this article."
+  external_sources:
+    - id: EXT-NEELAND
+      cite: "Neeland, Linge, Birkenfeld (2024), Diabetes, Obesity and Metabolism, PMID 38937282; link https://pubmed.ncbi.nlm.nih.gov/38937282/ (journal page 403s)"
+      verbatim_abstract:
+        - "changes in lean mass may not always reflect changes in muscle mass as the former measure includes not only muscle but also organs, bone, fluids, and water in fat tissue."
+      source: "approved for and cited live on https://3dlook.ai/content-hub/glp-1-muscle-loss-fitness-apps/ (pack 2026-09-19-glp-1-fitness-apps-body-composition-tracking.yaml EXT-NEELAND); review-1 R1-4 allows an approved neutral source on lean mass in GLP-1 treatment"
+      note: "Use ONLY the lean-mass-vs-muscle point, attributed in words, one link (PubMed). NO percentages or ranges from the review (R1-4: no lean-mass-loss figures from trials). Not in our own voice. Asselya may strike it: Open item."
 
   banned_claims:
     - "most accurate body scanning / best-in-class without a specific benchmark"
@@ -93,6 +126,9 @@ context_pack:
     - "naming Yazen or any customer by name in this article, its meta, alt text, FAQ or publish package — decision carried over from the 2026-09-19 sibling pack ('язен не згадуємо'). If a case reference is useful, anonymize: 'a weight-loss management platform', no geo."
     - "dosing, prescribing, or medication-effectiveness claims about GLP-1 drugs themselves — FitXpress has nothing to say about the drug, only the body-data layer around it"
     - "content-plan labels (hub, cluster, pillar, supporting content, bridge) in headings or body text"
+    - "REVIEW 1: capture-quality / pose-validation flags, clothing classification, face-obfuscation confirmation or request metadata as part of the record or the delivered entry; 'failed pose validation'; 'usable pose' (tech-spec.md 2026-10-07 level, roadmap.md Clothing Detector)"
+    - "REVIEW 1: lean-mass-loss percentages or any trial figure; fat % or lean-mass accuracy numbers (roadmap.md: no body-composition figures until the lab report); an explanation of why muscle loss happens (owned by glp-1-muscle-loss-fitness-apps)"
+    - "REVIEW 1: CTA or demo link to /pricing/, /contact-us/ or a form made for this article (landing-map rule 4)"
 
   banned_words:
     - comprehensive
@@ -136,6 +172,7 @@ context_pack:
     - bariatric-pre-qualification-mobile-3d-body-scanning
     - fitxpress-data-privacy-security-regulatory-faq
     - manual-vs-digital-intake-occupational-health-screening
+    - glp-1-muscle-loss-fitness-apps   # live 2026-10-29, owns the GLP-1 muscle-loss intent (Review 1)
     - fitxpress-admin-panel-launch   # DELTA, confirmed live this session (published-articles-inventory.md:224); company-announcement post, the row's named link anchor
 
   recently_published:   # from stable + one in-flight note
