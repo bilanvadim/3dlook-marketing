@@ -5,7 +5,7 @@ Vadim in the Slack DM on 2026-11-24 («Пост для Лены», D0CC6GESJ90 t
 «подивись і підготуй візуал або відео до нього». The angle (consent, GDPR, photo retention) fits Olena's EU brief
 and is new against Nick (retention), Katya (logging cadence) and Vadim (check-in records).
 
-Status: video built and sent to Vadim; nothing sent to Hlib yet.
+Status: sent to Hlib on 2026-11-24 (Vadim «відправ глібу все»): DM ts 1795520991.125819 (ru review + final text in a code block) and the sound video F0CLMHN6K52 (ts 1795521006.817519). Hlib publishes from Olena's account.
 
 ## Files
 

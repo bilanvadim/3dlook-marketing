@@ -5,7 +5,7 @@ article_slug: none
 landing: https://3dlook.ai/fitxpress/for-connected-and-digital-fitness/
 product: fitxpress
 format: text + video (video/olena-fitness-consent-feed-1080x1350.mp4)
-status: draft
+status: sent-to-hlib
 created: 2026-11-24
 based_on: post/hlib-draft-v1.md (Hlib Hlazovyi)
 ---
