@@ -1,0 +1,40 @@
+{
+  "bed": {
+    "licence": "CC BY 4.0",
+    "title": "Happy Beats / Business Moves Vol. 1",
+    "author": "Sascha Ende",
+    "source_url": "https://ende.app/en",
+    "file": "happy-beats-business-moves-vol-1-by-ende-dot-app.mp3",
+    "start_s": 129.93,
+    "beat_fit": {
+      "start_s": 129.93,
+      "tempo_bpm": 120.19,
+      "mean_miss_ms": 111,
+      "window_intensity": 0.93,
+      "miss_ms": {
+        "land@0.53": 59,
+        "whoosh@3.987": 97,
+        "tick@4.35": 233,
+        "pop@7.004": 75,
+        "whoosh@9.587": 0,
+        "pop@10.304": 218,
+        "pop@10.754": 168,
+        "pop@11.204": 119,
+        "whoosh@15.187": 97,
+        "pop@16.604": 16,
+        "pop@17.024": 63,
+        "pop@17.444": 142,
+        "whoosh@19.787": 204,
+        "ding@20.4": 182
+      }
+    }
+  },
+  "mix": {
+    "peak_dbfs": -1.01,
+    "true_peak_dbtp": -1.0,
+    "lufs_i": -14.2,
+    "limiter_max_db": 3.1
+  },
+  "cues": 14,
+  "file": "2026-11-24-olena-fitness-consent-feed-sound.mp4"
+}
