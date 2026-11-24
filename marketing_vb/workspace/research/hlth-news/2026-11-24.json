@@ -1,0 +1,90 @@
+{
+ "generated": "2026-11-24T05:40:20+00:00",
+ "items": [
+  {
+   "id": "06b01749-da78-444e-bf65-480c73ca1c4d",
+   "title": "DiMe Launches Framework to Guide AI Investment in Healthcare Navigation",
+   "date": "2026-11-23",
+   "tags": [
+    "Association, Non Profit & Academia",
+    "Health System & Health Provider",
+    "Care Coordination / Navigation / Care Access",
+    "Artificial Intelligence / Machine Learning"
+   ],
+   "url": "https://hlth.com/insights/news/dime-launches-framework-to-guide-ai-investment-in-healthcare-navigation"
+  },
+  {
+   "id": "5d08682a-233e-4971-99cb-6fd7e830bf93",
+   "title": "Philips Launches Cloud-Based Imaging Platform to Integrate AI and Advanced Visualization",
+   "date": "2026-11-23",
+   "tags": [
+    "Operational Efficiency",
+    "Health System & Health Provider",
+    "Diagnostics",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/philips-launches-cloud-based-imaging-platform-to-integrate-ai-and-advanced-visualization"
+  },
+  {
+   "id": "6e290027-7ba0-4947-b528-be6270dcc242",
+   "title": "Aetna Launches Maternal Care Program to Support Mothers and Babies From Pregnancy Through Infancy",
+   "date": "2026-11-23",
+   "tags": [
+    "Mental & Behavioral Health",
+    "Payer (Insurer)",
+    "Women's Health",
+    "Care Coordination / Navigation / Care Access"
+   ],
+   "url": "https://hlth.com/insights/news/aetna-launches-maternal-care-program-to-support-mothers-and-babies-from-pregnancy-through-infancy"
+  }
+ ],
+ "analyses": {
+  "06b01749-da78-444e-bf65-480c73ca1c4d": {
+   "id": "06b01749-da78-444e-bf65-480c73ca1c4d",
+   "score": 0,
+   "segment": "—",
+   "what": "DiMe опублікувала відкритий фреймворк для оцінки AI-інвестицій у навігацію пацієнтів і координацію догляду. Партнери: Intel, AHIP, Epic, Mass General Brigham. Він складається з трьох інструментів: Unified Care Journey, Impact-Utility-Trust Checklist та AI Opportunity Cards.",
+   "why": "Мова про пропущені направлення й координацію між провайдерами в health systems. Body data тут ні до чого, а сам DiMe — некомерційна асоціація, не покупець.",
+   "play": "none",
+   "companies": [
+    "Digital Medicine Society (DiMe)",
+    "Intel",
+    "AHIP",
+    "Epic",
+    "Mass General Brigham",
+    "Google for Health"
+   ],
+   "_date": "2026-11-23"
+  },
+  "5d08682a-233e-4971-99cb-6fd7e830bf93": {
+   "id": "5d08682a-233e-4971-99cb-6fd7e830bf93",
+   "score": 0,
+   "segment": "—",
+   "what": "Philips запустила Advanced Image Insights on HealthSuite. Це хмарна платформа на AWS для радіології: вона збирає imaging AI і візуалізацію в робочому процесі PACS і переносить результати в структуровані звіти.",
+   "why": "Це радіологія та оркестрація imaging AI у лікарнях. Жоден сегмент FitXpress чи Mobile Tailor тут не зачеплено.",
+   "play": "none",
+   "companies": [
+    "Philips",
+    "Amazon Web Services (AWS)",
+    "Radiological Society of North America (RSNA)"
+   ],
+   "_date": "2026-11-23"
+  },
+  "6e290027-7ba0-4947-b528-be6270dcc242": {
+   "id": "6e290027-7ba0-4947-b528-be6270dcc242",
+   "score": 1,
+   "segment": "FitXpress §4 Health Plans / Employer Wellness",
+   "what": "Aetna запустила програму Aetna For You and Baby для своїх застрахованих. Вона охоплює пренатальний візит у першому триместрі, післяпологовий візит у межах 12 тижнів, скринінг депресії та щонайменше шість візитів дитини до лікаря за перші 15 місяців. Aetna розраховує підтримати понад 1 млн немовлят за 5 років.",
+   "why": "Aetna (CVS Health) є серед прикладів у §4, але програма стосується візитів, скринінгу депресії та педіатрії. Про вагу, BMI чи body-метрики в статті не сказано, тож приводу для outreach немає. Компанія до того ж замала як акаунт лише в масштабі enterprise, а відповідного хука немає.",
+   "play": "none",
+   "companies": [
+    "Aetna",
+    "CVS Health",
+    "CDC"
+   ],
+   "_date": "2026-11-23"
+  }
+ },
+ "posts": []
+}
