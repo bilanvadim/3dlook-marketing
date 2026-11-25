@@ -1,0 +1,89 @@
+{
+ "generated": "2026-11-25T05:40:20+00:00",
+ "items": [
+  {
+   "id": "5e158440-605f-495b-9821-0dde995cbd77",
+   "title": "Innovaccer Integrates Grok Voice to Expand AI-Powered Healthcare Automation",
+   "date": "2026-11-24",
+   "tags": [
+    "Patient Engagement / Experience",
+    "Operational Efficiency",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/innovaccer-integrates-grok-voice-to-expand-ai-powered-healthcare-automation"
+  },
+  {
+   "id": "abac829e-cf49-45a0-8ede-7b200d2caf00",
+   "title": "Paradromics Partners With NVIDIA to Advance AI-Powered Brain-Computer Interfaces",
+   "date": "2026-11-24",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Investments and Partnerships",
+    "Digital Medicine",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/paradromics-partners-with-nvidia-to-advance-ai-powered-brain-computer-interfaces"
+  },
+  {
+   "id": "1c912513-36c1-469d-9e81-85ee30325745",
+   "title": "DocGo to Sell Cardiac RMS Monitoring Business for Up to $25M",
+   "date": "2026-11-24",
+   "tags": [
+    "Telehealth / Virtual Care / Remote Patient Monitoring",
+    "Investments and Partnerships",
+    "Health System & Health Provider",
+    "Health Tech, Solutions & Services",
+    "Chronic Condition Management"
+   ],
+   "url": "https://hlth.com/insights/news/docgo-to-sell-cardiac-rms-monitoring-business-for-up-to-25m"
+  }
+ ],
+ "analyses": {
+  "5e158440-605f-495b-9821-0dde995cbd77": {
+   "id": "5e158440-605f-495b-9821-0dde995cbd77",
+   "score": 0,
+   "segment": "—",
+   "what": "Innovaccer інтегрував Grok Voice у свою платформу Gravity Voice AI. Мета — автоматизувати розмови з пацієнтами, прийом направлень і запис на прийом для health systems і payers у США.",
+   "why": "Голосовий AI для адмін-операцій лікарень і payers. Body data тут ніде не фігурує, тож точки входу для FitXpress немає.",
+   "play": "none",
+   "companies": [
+    "Innovaccer",
+    "Grok"
+   ],
+   "_date": "2026-11-24"
+  },
+  "abac829e-cf49-45a0-8ede-7b200d2caf00": {
+   "id": "abac829e-cf49-45a0-8ede-7b200d2caf00",
+   "score": 0,
+   "segment": "—",
+   "what": "Paradromics співпрацює з NVIDIA (Jetson, Holoscan), щоб пришвидшити обробку нейросигналів в імплантованому BCI Connexus. Пристрій відновлює мовлення в людей з тяжкими моторними порушеннями.",
+   "why": "Новина про імплантовані brain-computer interfaces. До вимірювань тіла й до сегментів ICP 3DLOOK вона не має стосунку.",
+   "play": "none",
+   "companies": [
+    "Paradromics",
+    "NVIDIA"
+   ],
+   "_date": "2026-11-24"
+  },
+  "1c912513-36c1-469d-9e81-85ee30325745": {
+   "id": "1c912513-36c1-469d-9e81-85ee30325745",
+   "score": 1,
+   "segment": "—",
+   "what": "DocGo продає бізнес Cardiac RMS з моніторингу імплантованих кардіопристроїв компанії Medical Monitoring Corp за суму до $25M. За собою DocGo залишає Virtual Care Management для хронічних хвороб: його об'єднають із RPM від Hicuity Health, а ще DocGo бере участь у CMS ACCESS Model.",
+   "why": "RPM для хронічних хвороб дотичний до сегмента, але в статті немає жодного слова про вагу, ожиріння чи body composition. Ще одна проблема: йдеться про угоду M&A, а такі компанії ICP виключає, тож конкретного приводу для outbound немає.",
+   "play": "none",
+   "companies": [
+    "DocGo",
+    "Cardiac RMS",
+    "Medical Monitoring Corp",
+    "Hicuity Health",
+    "Centers for Medicare & Medicaid Services"
+   ],
+   "caveat": "Угоду щойно оголосили, і її ще не закрито. За universal exclusion criteria компанії в процесі M&A виключаються.",
+   "_date": "2026-11-24"
+  }
+ },
+ "posts": []
+}
