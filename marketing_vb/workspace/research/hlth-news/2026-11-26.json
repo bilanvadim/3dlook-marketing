@@ -1,0 +1,90 @@
+{
+ "generated": "2026-11-26T05:40:17+00:00",
+ "items": [
+  {
+   "id": "4bf5e3fb-a021-4199-81ad-061c7d79cc64",
+   "title": "NHS Launches World's Largest AI-Assisted Breast Cancer Screening Trial",
+   "date": "2026-11-25",
+   "tags": [
+    "Cancer Care",
+    "Government",
+    "Association, Non Profit & Academia",
+    "Diagnostics",
+    "Artificial Intelligence / Machine Learning"
+   ],
+   "url": "https://hlth.com/insights/news/nhs-launches-world-s-largest-ai-assisted-breast-cancer-screening-trial"
+  },
+  {
+   "id": "c94a9caa-573a-4b57-8ddb-06ff6ae4a8c6",
+   "title": "MHRA and NICE Launch Regulatory Sandbox for AI-Powered Mental Health Technologies",
+   "date": "2026-11-25",
+   "tags": [
+    "Mental & Behavioral Health",
+    "Government",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services",
+    "Policy and Regulation"
+   ],
+   "url": "https://hlth.com/insights/news/mhra-and-nice-launch-regulatory-sandbox-for-ai-powered-mental-health-technologies"
+  },
+  {
+   "id": "5cf67e88-8d96-4119-b1c7-7a6b27cfc0ef",
+   "title": "Leash Biosciences Raises $11M to Advance AI-Powered Drug Discovery",
+   "date": "2026-11-25",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Investments and Partnerships",
+    "Drug Discovery / Pharma / Biotech",
+    "Startup",
+    "Artificial Intelligence / Machine Learning"
+   ],
+   "url": "https://hlth.com/insights/news/leash-biosciences-raises-11m-to-advance-ai-powered-drug-discovery"
+  }
+ ],
+ "analyses": {
+  "4bf5e3fb-a021-4199-81ad-061c7d79cc64": {
+   "id": "4bf5e3fb-a021-4199-81ad-061c7d79cc64",
+   "score": 0,
+   "segment": "—",
+   "what": "NHS запустила EDITH — £10 млн дослідження AI-скринінгу раку грудей на мамограмах: майже 700 000 жінок, 30 центрів скринінгу, 3 роки. Рекрутинг почався 23.11.2026 в Addenbrooke's Hospital.",
+   "why": "Це AI для читання мамограм і навантаження на радіологів, вимірювання тіла тут немає. До BCRL-сегмента (моніторинг лімфедеми після лікування) не стосується.",
+   "play": "none",
+   "companies": [
+    "NHS",
+    "Addenbrooke's Hospital",
+    "University of Warwick",
+    "University of Cambridge",
+    "Cambridge University Hospitals NHS Foundation Trust",
+    "National Institute for Health and Care Research (NIHR)"
+   ],
+   "_date": "2026-11-25"
+  },
+  "c94a9caa-573a-4b57-8ddb-06ff6ae4a8c6": {
+   "id": "c94a9caa-573a-4b57-8ddb-06ff6ae4a8c6",
+   "score": 0,
+   "segment": "—",
+   "what": "MHRA і NICE запустили регуляторну пісочницю для AI-технологій у психічному здоров'ї, щоб допомогти розробникам розібратися з вимогами до безпеки, ефективності та нагляду.",
+   "why": "Це регулювання AI в mental health, а не ліків від ожиріння чи GLP-1 і не перевірки BMI в онлайн-аптеках. Тригера для UK-кампаній немає.",
+   "play": "none",
+   "companies": [
+    "MHRA",
+    "NICE"
+   ],
+   "_date": "2026-11-25"
+  },
+  "5cf67e88-8d96-4119-b1c7-7a6b27cfc0ef": {
+   "id": "5cf67e88-8d96-4119-b1c7-7a6b27cfc0ef",
+   "score": 0,
+   "segment": "—",
+   "what": "Leash Biosciences (Salt Lake City) залучила $11 млн seed (оцінка $30 млн) на AI-платформу для пошуку ліків з автоматизованими лабораторними скринінгами; має дві внутрішні онкологічні програми.",
+   "why": "Це drug discovery на ранній доклінічній стадії, і тіло пацієнта тут ніде не вимірюють. Жодного ICP-сегмента 3DLOOK.",
+   "play": "none",
+   "companies": [
+    "Leash Biosciences",
+    "Springtide Ventures"
+   ],
+   "_date": "2026-11-25"
+  }
+ },
+ "posts": []
+}
