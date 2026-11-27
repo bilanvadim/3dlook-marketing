@@ -670,10 +670,38 @@ def topic_section(slug: str) -> str:
     angles the article's own pack already spent. Empty for an ordinary pack."""
     meta = pack_meta(slug)
     aeo = meta.get("aeo") or {}
+    vid = meta.get("video") or {}
     src_slug = meta.get("source_slug")
-    if not aeo and not src_slug:
+    if not aeo and not src_slug and not vid:
         return ""
-    out = ["", "## The question this pack answers", ""]
+    if vid:
+        # A video pack (2026-11-27, Vadim: posts that promote a published YouTube video).
+        # The video is the thing the posts send people to; the article of record below
+        # stays the source of every fact and number the video repeats.
+        out = ["", "## The video this pack promotes", "",
+               "Every post in this pack sends the reader to ONE published video. The article",
+               "of record below is where the facts and numbers come from; the video retells",
+               "them, so a post may only state what both carry, plus the product lines listed",
+               "here.", "",
+               f"- **Title:** {vid.get('title', '')}",
+               f"- **URL (the link in every post):** {vid.get('url', '')}",
+               f"- **Length:** {vid.get('length', '')}"]
+        if vid.get("published"):
+            out.append(f"- **Published:** {vid['published']}")
+        if vid.get("promo_clip"):
+            out.append(f"- **Promo clip attached to each post:** {vid['promo_clip']}")
+        out.append("")
+        if vid.get("chapters"):
+            out += ["Chapters (as in the YouTube description):", ""]
+            out += [f"- {c}" for c in vid["chapters"]] + [""]
+        if vid.get("covers"):
+            out += ["What the video shows (each post picks its own part):", ""]
+            out += [f"- {c}" for c in vid["covers"]] + [""]
+        if vid.get("rules"):
+            out += ["Rules for this pack:", ""]
+            out += [f"- {r}" for r in vid["rules"]] + [""]
+    else:
+        out = ["", "## The question this pack answers", ""]
     if aeo:
         out += ["This pack is built around ONE question, not around the article. The article",
                 "of record below is only where the facts come from.", "",
@@ -945,7 +973,7 @@ profile: {profile}
 platform: {(plat_block and re.search(r"^platform:\s*(\S+)", plat_block, re.M).group(1)) if plat_block and re.search(r"^platform:\s*(\S+)", plat_block, re.M) else ""}
 article_slug: {pslug}
 product: fitxpress
-format: <one of: text | text + photo | carousel | infographic | lead magnet | poll | screenshot>
+format: <one of: text | text + photo | carousel | infographic | lead magnet | poll | screenshot | video>
 status: draft
 created: {date.today().isoformat()}
 ---
@@ -1361,9 +1389,11 @@ def build_digest(slug: str):
     elif v.get("error"):
         parts.append(f"## Video (HyperFrames)\n\n⚠️ {v['error']}\n")
     aeo = meta.get("aeo") or {}
+    pvid = meta.get("video") or {}
     out = (f"# Review digest — {slug}\n\n"
            + (f"Question (HubSpot AEO #{aeo.get('recommendation_id', '?')}): "
               f"{aeo.get('question', '')}\n" if aeo else "")
+           + (f"Video promoted: {pvid.get('title', '')} ({pvid.get('url', '')})\n" if pvid else "")
            + f"Article: `{os.path.relpath(src, PROJ)}`\n"
            f"Date: {date.today().isoformat()}\n"
            f"Profiles: {n}\n\n---\n\n" + "\n---\n\n".join(parts) + "\n\n---\n")

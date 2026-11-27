@@ -65,7 +65,7 @@ PROJ = os.path.dirname(HERE)                                  # …/marketing_vb
 sys.path.insert(0, HERE)
 from social_pack import (                                     # noqa: E402
     split_frontmatter, extract_body, pack_profiles, resolve_source,
-    published_slug, budget_for, hard_max_for, is_personal_linkedin,
+    published_slug, budget_for, hard_max_for, is_personal_linkedin, pack_meta,
 )
 DETECTOR = os.path.join(PROJ, "brand-assets", "style-guides", "scripts", "detect-ai-tells.py")
 CONFIG = os.path.join(PROJ, "brand-assets", "social-profiles-config.md")
@@ -74,7 +74,7 @@ LI_PROMPTS = os.path.join(PROJ, "brand-assets", "linkedin-post-prompts.md")
 
 REQUIRED_FM = ("profile", "platform", "article_slug", "product", "status", "created")
 DESIGN_FIELDS = ("Article visual:", "Format:", "Adaptation:", "Keep:")
-FORMATS = ("text", "text + photo", "carousel", "infographic", "lead magnet", "poll", "screenshot")
+FORMATS = ("text", "text + photo", "carousel", "infographic", "lead magnet", "poll", "screenshot", "video")
 
 EMOJI = re.compile(
     "[" "\U0001F300-\U0001FAFF" "\U00002600-\U000027BF" "\U0001F1E6-\U0001F1FF"
@@ -324,7 +324,7 @@ def lint(path: str, source_text: str = "", source_slug: str = ""):
             raw = fmt.group(1).strip().strip("`")
             head = re.split(r"\s*[({\[]", raw, 1)[0].strip().lower()
             if head not in FORMATS:
-                W("design_tip", f"format `{head}` is not one of the seven allowed formats")
+                W("design_tip", f"format `{head}` is not one of the allowed formats")
             elif fm.get("format") and fm["format"].strip().lower() != head:
                 W("design_tip", f"design tip says `{head}`, frontmatter says "
                                 f"`{fm['format']}` — the manifest reads the frontmatter")
@@ -516,6 +516,12 @@ def main(argv=None) -> int:
         if src:
             source_text = open(src, encoding="utf-8", errors="replace").read()
             source_slug = published_slug(slug) or ""
+            # A video pack (2026-11-27) may also state what its `_pack.json` video block
+            # carries: the length, the chapter timestamps, the URL. Facts still come from
+            # the article; this only stops "1:26" reading as an unsourced number.
+            vid = pack_meta(slug).get("video") if slug else None
+            if vid:
+                source_text += "\n\n" + json.dumps(vid, ensure_ascii=False)
 
     results = [lint(x, source_text, source_slug) for x in paths if os.path.exists(x)
                or not a.all]
