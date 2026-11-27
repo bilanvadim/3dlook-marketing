@@ -9,7 +9,7 @@ release", "in testing" or "planned" is either left out or phrased as coming ("is
 "in development"), never in the present tense as a capability. When a status changes, update
 this file in the same commit as the copy that uses it.
 
-## Feature status as of 2026-10-21
+## Feature status as of 2026-10-21 (MT rows corrected by Vadim 2026-11-27)
 
 | Area | Feature | Status | How to write about it |
 |---|---|---|---|
@@ -23,11 +23,12 @@ this file in the same commit as the copy that uses it.
 | FitXpress | Clinical validation study | Not started | Don't mention as running |
 | FitXpress | Height verification, DEXA reference data | Moved to 2027 | Don't claim or imply |
 | MT + FX | Real-Time Pose Validation (RTPV) | Live | Approved wording in `tech-spec.md` |
-| MT + FX | RTPV 2.0 (new flow) | Internal testing | Don't name "2.0" publicly |
+| MT + FX | RTPV 2.0 (new flow) | **Mobile Tailor widget: Live** (Vadim 2026-11-27: «новий флоу вже є. то роадмап відстає»; onboarding with gender/height/weight, alone or with a friend, phone-on-table guide, live pose overlay, clothing confirmation). FitXpress SDKs: internal testing as of the Q3 update, not reconfirmed | Don't name "2.0" publicly. MT: OK to show and describe the flow |
 | MT + FX | Real-time voice guidance during capture | Web ready; iOS/Android in testing | OK for web flows; for native apps write "coming" |
 | MT + FX | Localization versioning, updated measurement guides | Planned Q4 2026 | Don't claim |
 | Mobile Tailor | Widget redesign, pre-populated widget fields, "Scan now" in admin | Live | OK |
-| Mobile Tailor | Welcome-screen customization, logo in emails | Ready for release, not live | Don't claim yet |
+| Mobile Tailor | Logo in emails (company logo in the scan-link email template) | **Live** (Vadim 2026-11-27: «лого в листах також є») | OK |
+| Mobile Tailor | Welcome-screen customization | Ready for release, not live (not reconfirmed 2026-11-27) | Don't claim yet |
 | Mobile Tailor | Widget localization (languages) | Planned Q4 2026 | Don't claim multi-language widget |
 | Mobile Tailor | Data-deletion settings | Planned Q4 2026 | Don't claim |
 | Wrist | Wrist measurement as a separate product | Final stage of development; anchor client live since Sep 2026 | Approved homepage wording (SDK, under 10 s; 2026-10-22) stands. No accuracy figures publicly |
