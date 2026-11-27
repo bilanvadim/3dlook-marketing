@@ -1,0 +1,85 @@
+{
+ "generated": "2026-11-27T05:40:16+00:00",
+ "items": [
+  {
+   "id": "25057464-1093-4ac1-a0cd-4e2b798b1364",
+   "title": "DeepHealth Receives FDA Clearance for AI Tool Predicting Five-Year Breast Cancer Risk",
+   "date": "2026-11-26",
+   "tags": [
+    "Cancer Care",
+    "Diagnostics",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/deephealth-receives-fda-clearance-for-ai-tool-predicting-five-year-breast-cancer-risk"
+  },
+  {
+   "id": "21ffbe63-c528-4c16-8ca9-89b66c4b9031",
+   "title": "WebMD Ignite Partners With OpenAI to Bring ChatGPT Advertising to Health Systems",
+   "date": "2026-11-26",
+   "tags": [
+    "Patient Engagement / Experience",
+    "Operational Efficiency",
+    "Health System & Health Provider",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/webmd-ignite-partners-with-openai-to-bring-chatgpt-advertising-to-health-systems"
+  },
+  {
+   "id": "4f5ed743-6d60-4749-b075-98f680ad67b5",
+   "title": "Sanofi to Acquire Insmed for $41B to Expand Respiratory Disease Portfolio",
+   "date": "2026-11-26",
+   "tags": [
+    "Life Sciences (Pharma & Biotech)",
+    "Pharmaceutical and Life Science Innovation",
+    "Investments and Partnerships",
+    "Chronic Condition Management"
+   ],
+   "url": "https://hlth.com/insights/news/sanofi-to-acquire-insmed-for-41b-to-expand-respiratory-disease-portfolio"
+  }
+ ],
+ "analyses": {
+  "25057464-1093-4ac1-a0cd-4e2b798b1364": {
+   "id": "25057464-1093-4ac1-a0cd-4e2b798b1364",
+   "score": 0,
+   "segment": "—",
+   "what": "DeepHealth (дочірня компанія RadNet) отримала FDA 510(k) clearance для Mammo Risk. Це AI-інструмент, який за наявними 3D-мамограмами прогнозує ризик раку грудей на 3–5 років. Тепер він комерційно доступний у США.",
+   "why": "Це радіологічна AI-діагностика за мамограмами. Вимірювання тіла тут не потрібні, і з сегментом BCRL (§10, моніторинг лімфедеми) новина не пов'язана.",
+   "play": "none",
+   "companies": [
+    "DeepHealth",
+    "RadNet",
+    "American Medical Association"
+   ],
+   "_date": "2026-11-26"
+  },
+  "21ffbe63-c528-4c16-8ca9-89b66c4b9031": {
+   "id": "21ffbe63-c528-4c16-8ca9-89b66c4b9031",
+   "score": 0,
+   "segment": "—",
+   "what": "WebMD Ignite разом з OpenAI запускає рекламу в ChatGPT для health systems. WebMD Ignite відповідає за стратегію, креатив і аналітику кампаній, перший тест — кардіологія в академічному медичному центрі.",
+   "why": "Новина про маркетинговий канал для залучення пацієнтів у health systems. Ці компанії не входять в ICP, і body data тут не потрібні.",
+   "play": "none",
+   "companies": [
+    "WebMD Ignite",
+    "OpenAI"
+   ],
+   "_date": "2026-11-26"
+  },
+  "4f5ed743-6d60-4749-b075-98f680ad67b5": {
+   "id": "4f5ed743-6d60-4749-b075-98f680ad67b5",
+   "score": 0,
+   "segment": "—",
+   "what": "Sanofi купує Insmed приблизно за $41B, щоб розширити портфель препаратів від респіраторних і рідкісних захворювань (Brinsupri, Arikayce, пайплайн TPIP). Угоду планують закрити в 1H 2027.",
+   "why": "Це фармацевтичне M&A у респіраторній терапії. Ні з weight-loss/GLP-1, ні з вимірюваннями тіла угода не пов'язана.",
+   "play": "none",
+   "companies": [
+    "Sanofi",
+    "Insmed"
+   ],
+   "_date": "2026-11-26"
+  }
+ },
+ "posts": []
+}
