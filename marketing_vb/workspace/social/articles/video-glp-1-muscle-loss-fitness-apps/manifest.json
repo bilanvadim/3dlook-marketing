@@ -1,0 +1,73 @@
+{
+  "article": {
+    "slug": "glp-1-muscle-loss-fitness-apps",
+    "title": "GLP-1 Muscle Loss: What Fitness Apps Can Track Beyond Scale Weight",
+    "product": "fitxpress",
+    "source_file": "workspace/seo/articles/2026-09-19-glp-1-fitness-apps-body-composition-tracking/published-live-2026-11-06.md",
+    "source_status": "published",
+    "published_url": "https://3dlook.ai/content-hub/glp-1-muscle-loss-fitness-apps/",
+    "date": "2026-11-27"
+  },
+  "profiles": [
+    {
+      "profile_id": "instagram-company",
+      "platform": "instagram",
+      "handle": "@3dlook.ai",
+      "post_file": "instagram-company/post.md",
+      "format": "video",
+      "status": "ready",
+      "character_count_body": 707,
+      "qc_score": "16/20"
+    },
+    {
+      "profile_id": "facebook-company",
+      "platform": "facebook",
+      "handle": "3DLOOK",
+      "post_file": "facebook-company/post.md",
+      "format": "video",
+      "status": "ready",
+      "character_count_body": 1129,
+      "qc_score": "16/20"
+    },
+    {
+      "profile_id": "linkedin-company",
+      "platform": "linkedin",
+      "handle": "3DLOOK",
+      "post_file": "linkedin-company/post.md",
+      "format": "video",
+      "status": "ready",
+      "word_count_body": 241
+    }
+  ],
+  "profiles_skipped": [
+    {
+      "profile_id": "linkedin-whitney",
+      "reason": "posts_per_week: 0"
+    },
+    {
+      "profile_id": "twitter-company",
+      "reason": "not in this pack (_pack.json profiles)"
+    },
+    {
+      "profile_id": "linkedin-katerina",
+      "reason": "not in this pack (_pack.json profiles)"
+    },
+    {
+      "profile_id": "linkedin-vadim",
+      "reason": "not in this pack (_pack.json profiles)"
+    },
+    {
+      "profile_id": "linkedin-nick",
+      "reason": "not in this pack (_pack.json profiles)"
+    },
+    {
+      "profile_id": "linkedin-olena",
+      "reason": "not in this pack (_pack.json profiles)"
+    },
+    {
+      "profile_id": "linkedin-katya",
+      "reason": "not in this pack (_pack.json profiles)"
+    }
+  ],
+  "ready_for_review": true
+}

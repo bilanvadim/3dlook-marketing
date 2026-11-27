@@ -1,0 +1,50 @@
+{
+  "slug": "video-glp-1-muscle-loss-fitness-apps",
+  "kind": "video",
+  "source_slug": "2026-09-19-glp-1-fitness-apps-body-composition-tracking",
+  "published_slug": "glp-1-muscle-loss-fitness-apps",
+  "profiles": [
+    "linkedin-company",
+    "instagram-company",
+    "facebook-company"
+  ],
+  "video": {
+    "title": "GLP-1 Muscle Loss: What Fitness Apps Can Track",
+    "url": "https://www.youtube.com/watch?v=iaj0FWcAV80",
+    "length": "6:01",
+    "published": "2026-11-27, 3DLOOK YouTube channel (@3DLOOK)",
+    "promo_clip": "a 25-30 s teaser cut from the video itself (its own voice, scan footage and burned captions, ending on a \u00abFull video on YouTube\u00bb card): 4:5 for LinkedIn and Facebook, 9:16 Reel for Instagram. It is the post's visual: frontmatter `format: video`, and the Design tip names this clip as the visual instead of an article image.",
+    "chapters": [
+      "0:00 Intro",
+      "0:21 What FitXpress is",
+      "1:26 What the research says about lean mass",
+      "2:31 What your progress view can show",
+      "3:28 How to keep check-ins comparable",
+      "4:15 What the numbers cover",
+      "5:11 Test it in a pilot",
+      "5:50 Next step"
+    ],
+    "covers": [
+      "Opening: a member on a GLP-1 medication steps on the scale and the number drops again. The app logs the loss, but that number can't show what made up the change: fat, lean mass, or fluid.",
+      "What FitXpress is, shown on real scan footage: not an app members download; it runs inside the fitness app. Two phone photos (front and side), pose and framing checked in real time, structured results back in under 45 seconds: 80+ body measurements, a 3D model, and body composition estimates (body fat percentage, fat mass, lean mass).",
+      "Two product views the video shows: the app can show two scans side by side, as 3D models and measurements; and a member can set a goal weight and see a 3D model of their body at that weight, \u00aba goal to work toward, not a forecast of treatment results\u00bb.",
+      "The research: the 2024 Neeland, Linge and Birkenfeld review (both ranges), lean mass is not muscle, and the 2025 joint advisory (strength training alongside adequate protein); a fitness app supports the training part, the rest stays with nutrition and medical care.",
+      "A progress view in four rows: weight trend, body measurements, fat and lean mass estimates (labeled as estimates, lean mass is not muscle mass), and the training record the app already keeps; what to do when weight falls but the waist doesn't.",
+      "Comparable check-ins: a baseline at onboarding or the start of a strength program, check-ins at set points, the same clothing, time of day and setting.",
+      "What the numbers cover and what they don't, and a pilot with five signals: capture completion and retakes, valid baseline and follow-up scans, on-schedule check-ins, progress-view opens."
+    ],
+    "rules": [
+      "The post's job is to get the right reader (product and growth leads at fitness and coaching apps whose members are on GLP-1 treatment) to watch the video. Name what they will see in it, concretely; never summarise the whole video so that watching becomes pointless.",
+      "The link in every post is the YouTube URL above. Instagram captions don't carry clickable links: point to the link in bio there. The article URL may appear only as a second, optional link on LinkedIn or Facebook.",
+      "No accuracy figures in any post (Vadim, 2026-11-18: accuracy numbers are hard-out for social). The video's 4:15 chapter may be named as \u00abwhat the numbers cover and what they don't\u00bb, without the numbers.",
+      "Goal visualization: always as a goal the member sets and works toward, never as a prediction, forecast or expected treatment result.",
+      "Body Progress: \u00abthe app can show two scans side by side\u00bb. Never \u00abFitXpress tracks members / patients over time\u00bb.",
+      "Do not repeat the article pack's entry points (table below): those posts went out 2026-11-06 about the same article. The new thing here is the video: real scan footage, the product views, six minutes.",
+      "No people named from the video footage and no customer names. No clinical outcome claims: nothing about preventing muscle loss or better results."
+    ]
+  },
+  "drafter_model": "opus",
+  "qc_policy": "sampled",
+  "generated": "2026-11-27",
+  "article_of_record": "workspace/seo/articles/2026-09-19-glp-1-fitness-apps-body-composition-tracking/published-live-2026-11-06.md"
+}
