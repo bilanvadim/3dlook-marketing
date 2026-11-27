@@ -13,7 +13,7 @@
     "url": "https://www.youtube.com/watch?v=iaj0FWcAV80",
     "length": "6:01",
     "published": "2026-11-27, 3DLOOK YouTube channel (@3DLOOK)",
-    "promo_clip": "a 25-30 s teaser cut from the video itself (its own voice, scan footage and burned captions, ending on a \u00abFull video on YouTube\u00bb card): 4:5 for LinkedIn and Facebook, 9:16 Reel for Instagram. It is the post's visual: frontmatter `format: video`, and the Design tip names this clip as the visual instead of an article image.",
+    "promo_clip": "a 26.7 s teaser cut from the video itself (its own voice, scan footage and burned captions, ending on a \u00abFull video on YouTube\u00bb card with the title and youtube.com/@3DLOOK): 4:5 `video-glp-1-muscle-loss-fitness-apps-teaser-feed.mp4` for LinkedIn and Facebook, 9:16 `video-glp-1-muscle-loss-fitness-apps-teaser-reel.mp4` for the Instagram Reel. Files: Google Drive \u00ab3DLOOK YouTube videos\u00bb / GLP-1 / v3 / \u00abpromo teaser (social posts)\u00bb (folder 1PLgEjaXy8Ep_aFHdlNVBeA68GnFnL7Sc) and the private repo social-video/video-glp-1-muscle-loss-fitness-apps/. It is the post's visual: frontmatter `format: video`, and the Design tip names the clip instead of an article image.",
     "chapters": [
       "0:00 Intro",
       "0:21 What FitXpress is",
@@ -41,7 +41,8 @@
       "Body Progress: \u00abthe app can show two scans side by side\u00bb. Never \u00abFitXpress tracks members / patients over time\u00bb.",
       "Do not repeat the article pack's entry points (table below): those posts went out 2026-11-06 about the same article. The new thing here is the video: real scan footage, the product views, six minutes.",
       "No people named from the video footage and no customer names. No clinical outcome claims: nothing about preventing muscle loss or better results."
-    ]
+    ],
+    "teaser_source": "3dlook-marketing-private video/long/2026-11-24-glp1-muscle-loss-fitness-apps/promo.yaml (vshorts.py, 9:16 and --format feed)"
   },
   "drafter_model": "opus",
   "qc_policy": "sampled",

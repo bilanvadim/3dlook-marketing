@@ -42,7 +42,7 @@ here.
 - **URL (the link in every post):** https://www.youtube.com/watch?v=iaj0FWcAV80
 - **Length:** 6:01
 - **Published:** 2026-11-27, 3DLOOK YouTube channel (@3DLOOK)
-- **Promo clip attached to each post:** a 25-30 s teaser cut from the video itself (its own voice, scan footage and burned captions, ending on a «Full video on YouTube» card): 4:5 for LinkedIn and Facebook, 9:16 Reel for Instagram. It is the post's visual: frontmatter `format: video`, and the Design tip names this clip as the visual instead of an article image.
+- **Promo clip attached to each post:** a 26.7 s teaser cut from the video itself (its own voice, scan footage and burned captions, ending on a «Full video on YouTube» card with the title and youtube.com/@3DLOOK): 4:5 `video-glp-1-muscle-loss-fitness-apps-teaser-feed.mp4` for LinkedIn and Facebook, 9:16 `video-glp-1-muscle-loss-fitness-apps-teaser-reel.mp4` for the Instagram Reel. Files: Google Drive «3DLOOK YouTube videos» / GLP-1 / v3 / «promo teaser (social posts)» (folder 1PLgEjaXy8Ep_aFHdlNVBeA68GnFnL7Sc) and the private repo social-video/video-glp-1-muscle-loss-fitness-apps/. It is the post's visual: frontmatter `format: video`, and the Design tip names the clip instead of an article image.
 
 Chapters (as in the YouTube description):
 
