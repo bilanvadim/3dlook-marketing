@@ -1,0 +1,86 @@
+{
+ "generated": "2026-11-28T05:40:21+00:00",
+ "items": [
+  {
+   "id": "b6f7a1a2-426b-4f3c-9238-008c01b48dc5",
+   "title": "Waystar Expands Google Cloud Partnership to Bring AI-Powered Revenue Cycle Management to Healthcare",
+   "date": "2026-11-27",
+   "tags": [
+    "Interoperability / Data Management",
+    "Operational Efficiency",
+    "Artificial Intelligence / Machine Learning",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/waystar-expands-google-cloud-partnership-to-bring-ai-powered-revenue-cycle-management-to-healthcare"
+  },
+  {
+   "id": "60b44b06-a4ad-4fa2-b5b3-28d7bca8671c",
+   "title": "athenaInstitute Report Highlights Growing Chronic Disease Burden and Primary Care Challenges in Rural America",
+   "date": "2026-11-27",
+   "tags": [
+    "Community Health / Public Health",
+    "Government",
+    "Health System & Health Provider",
+    "Primary Care",
+    "Chronic Condition Management"
+   ],
+   "url": "https://hlth.com/insights/news/athenainstitute-report-highlights-growing-chronic-disease-burden-and-primary-care-challenges-in-rural-america"
+  },
+  {
+   "id": "65d23fd1-88e3-4004-a049-6c31b1fd81c3",
+   "title": "Neuralink Receives FDA Approval to Launch Pivotal Brain Implant Trial for ALS Patients",
+   "date": "2026-11-27",
+   "tags": [
+    "Emerging Technology",
+    "Government",
+    "Clinical Trial Solutions",
+    "Diagnostics",
+    "Health Tech, Solutions & Services"
+   ],
+   "url": "https://hlth.com/insights/news/neuralink-receives-fda-approval-to-launch-pivotal-brain-implant-trial-for-als-patients"
+  }
+ ],
+ "analyses": {
+  "b6f7a1a2-426b-4f3c-9238-008c01b48dc5": {
+   "id": "b6f7a1a2-426b-4f3c-9238-008c01b48dc5",
+   "score": 0,
+   "segment": "—",
+   "what": "Waystar розширює партнерство з Google Cloud: AltitudeAI для revenue cycle management інтегрують у Gemini for Healthcare. Через MCP-коннектор персонал зможе запускати перевірки страхового eligibility і аналізувати claims запитами природною мовою.",
+   "why": "Це фінансові процеси провайдерів (claims, страхове eligibility), а не дані про тіло. Немає зв'язку з FitXpress чи Mobile Tailor.",
+   "play": "none",
+   "companies": [
+    "Waystar",
+    "Google Cloud"
+   ],
+   "_date": "2026-11-27"
+  },
+  "60b44b06-a4ad-4fa2-b5b3-28d7bca8671c": {
+   "id": "60b44b06-a4ad-4fa2-b5b3-28d7bca8671c",
+   "score": 1,
+   "segment": "—",
+   "what": "Звіт athenaInstitute (athenahealth) за даними 12,3 млн сільських пацієнтів США: значно вищий рівень хронічних хвороб, особливо серед millennials, і зростання навантаження на primary care та фінансовий тиск на сільські практики.",
+   "why": "Загальний тренд хронічних хвороб у primary care. Про ожиріння чи метрики тіла у статті нічого, тож це максимум фон для контенту.",
+   "play": "content_only",
+   "companies": [
+    "athenaInstitute",
+    "athenahealth"
+   ],
+   "_date": "2026-11-27"
+  },
+  "65d23fd1-88e3-4004-a049-6c31b1fd81c3": {
+   "id": "65d23fd1-88e3-4004-a049-6c31b1fd81c3",
+   "score": 0,
+   "segment": "—",
+   "what": "Neuralink отримала дозвіл FDA на pivotal trial LINK для свого мозкового імпланта N1 у дорослих з ALS у США. Пристрій лишається досліджуваним.",
+   "why": "Мозкові імпланти й неврологія. Хоча це клінічне дослідження, антропометрії в ньому немає, тож для 3DLOOK воно не релевантне.",
+   "play": "none",
+   "companies": [
+    "Neuralink",
+    "Paradromics",
+    "Precision Neuroscience"
+   ],
+   "_date": "2026-11-27"
+  }
+ },
+ "posts": []
+}
