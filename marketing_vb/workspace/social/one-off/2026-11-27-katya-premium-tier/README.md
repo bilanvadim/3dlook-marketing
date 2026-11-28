@@ -4,7 +4,7 @@ Hlib Hlazovyi wrote a LinkedIn post for Kateryna Boichuk (`linkedin-katya`, Isra
 the Slack DM on 2026-11-27 (D0CC6GESJ90 ts 1795797379.267719, then «Для Кати Бойчук»), with no image. Vadim (11-28):
 «треба перевірити та підготувати візуали або відео для них».
 
-Status: draft. Video sent to Vadim's Telegram on 2026-11-28 (msg 6847) for review; nothing sent to Hlib yet.
+Status: sent to Hlib on 2026-11-28 (Vadim «відправ глібу»): DM ts 1795860697.582789 (ru review of both posts + final texts in code blocks) and the sound video F0CMMT384LA (ts 1795860718.791899, video/mp4). Video first went to Vadim's Telegram (msg 6847). Hlib publishes from the profile owner's account.
 
 ## Files
 

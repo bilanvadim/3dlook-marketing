@@ -4,7 +4,7 @@ Hlib Hlazovyi wrote a LinkedIn post for Vadim (`linkedin-vadim`, Australia) and 
 («Привет, вот пост для Вадима», D0CC6GESJ90 ts 1795796463.709559), with no image. Vadim (11-28): «треба перевірити та
 підготувати візуали або відео для них».
 
-Status: draft. Video sent to Vadim's Telegram on 2026-11-28 (msg 6846) for review; nothing sent to Hlib yet.
+Status: sent to Hlib on 2026-11-28 (Vadim «відправ глібу»): DM ts 1795860697.582789 (ru review of both posts + final texts in code blocks) and the sound video F0CMPV9141F (ts 1795860707.004849, video/mp4). Video first went to Vadim's Telegram (msg 6846). Hlib publishes from the profile owner's account.
 
 ## Files
 
@@ -23,8 +23,8 @@ Status: draft. Video sent to Vadim's Telegram on 2026-11-28 (msg 6846) for revie
 
 **Main issue: the same idea as Vadim's own post of 11-20** (`../2026-11-20-vadim-fitness-records`): "a progress view
 is only as reliable as the records behind it", "the fix I'd push for", "one timestamped record". Hlib's draft repeats
-the thesis, the "fix I would push for" line and the product sentence a week later on the same profile. If the 11-20
-post is live, a second one with the same point reads as a rerun.
+the thesis, the "fix I would push for" line and the product sentence a week later on the same profile. The 11-20
+post is live (Vadim, 2026-11-28), so a second one with the same point would read as a rerun.
 
 The edit keeps Hlib's material (gaps, a note added later, the coach or member looking back, one record on the
 member profile, his eight-week question) and moves the lesson to something the 11-20 post doesn't say: **the order
