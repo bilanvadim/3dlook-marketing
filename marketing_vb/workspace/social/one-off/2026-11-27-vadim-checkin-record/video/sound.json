@@ -1,0 +1,41 @@
+{
+  "bed": {
+    "licence": "CC BY 4.0",
+    "title": "Happy Beats / Business Moves Vol. 1",
+    "author": "Sascha Ende",
+    "source_url": "https://ende.app/en",
+    "file": "happy-beats-business-moves-vol-1-by-ende-dot-app.mp3",
+    "start_s": 129.33,
+    "beat_fit": {
+      "start_s": 129.33,
+      "tempo_bpm": 120.19,
+      "mean_miss_ms": 111,
+      "window_intensity": 0.93,
+      "miss_ms": {
+        "land@0.53": 160,
+        "whoosh@3.987": 198,
+        "tick@4.35": 165,
+        "pop@7.004": 176,
+        "whoosh@10.337": 150,
+        "pop@10.724": 38,
+        "pop@11.684": 1,
+        "pop@12.964": 218,
+        "whoosh@16.587": 102,
+        "pop@17.804": 117,
+        "pop@18.304": 118,
+        "pop@18.724": 38,
+        "pop@19.144": 41,
+        "whoosh@21.187": 5,
+        "ding@21.8": 119
+      }
+    }
+  },
+  "mix": {
+    "peak_dbfs": -1.01,
+    "true_peak_dbtp": -1.0,
+    "lufs_i": -14.3,
+    "limiter_max_db": 3.0
+  },
+  "cues": 15,
+  "file": "2026-11-27-vadim-checkin-record-feed-sound.mp4"
+}

@@ -1,0 +1,40 @@
+{
+  "bed": {
+    "licence": "CC BY 4.0",
+    "title": "Happy Beats / Business Moves Vol. 12",
+    "author": "Sascha Ende",
+    "source_url": "https://ende.app/en",
+    "file": "happy-beats-business-moves-vol-12-by-ende-dot-app.mp3",
+    "start_s": 25.12,
+    "beat_fit": {
+      "start_s": 25.12,
+      "tempo_bpm": 109.96,
+      "mean_miss_ms": 109,
+      "window_intensity": 0.93,
+      "miss_ms": {
+        "land@0.53": 4,
+        "whoosh@3.987": 186,
+        "tick@4.35": 4,
+        "pop@6.004": 21,
+        "pop@7.504": 116,
+        "whoosh@9.937": 134,
+        "pop@10.604": 256,
+        "pop@11.704": 276,
+        "whoosh@16.787": 98,
+        "pop@18.004": 28,
+        "pop@18.424": 110,
+        "pop@18.844": 224,
+        "whoosh@21.187": 63,
+        "ding@21.8": 8
+      }
+    }
+  },
+  "mix": {
+    "peak_dbfs": -1.01,
+    "true_peak_dbtp": -1.0,
+    "lufs_i": -14.3,
+    "limiter_max_db": 3.1
+  },
+  "cues": 14,
+  "file": "2026-11-27-katya-premium-tier-feed-sound.mp4"
+}
